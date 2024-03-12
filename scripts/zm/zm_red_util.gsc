@@ -87,9 +87,9 @@ function function_b4759cf8() {
     self function_207cca50();
     if (zm_utility::is_trials()) {
         level.var_d0d80ff8 zm_red_challenges_hud::set_state(self, #"trials");
-    } else {
-        level.var_d0d80ff8 zm_red_challenges_hud::set_state(self, #"visible");
+        return;
     }
+    level.var_d0d80ff8 zm_red_challenges_hud::set_state(self, #"visible");
 }
 
 // Namespace zm_red_util/zm_red_util
@@ -196,9 +196,9 @@ function show_text(text, n_display_time = 0, str_waittill = undefined, var_3de28
 function function_b952264e(var_3de28ed8 = 1) {
     if (var_3de28ed8) {
         self set_challenge_text(#"");
-    } else {
-        self function_f0d355fc(#"");
+        return;
     }
+    self function_f0d355fc(#"");
 }
 
 // Namespace zm_red_util/zm_red_util
@@ -317,9 +317,9 @@ function private function_ee58ddd4(is_scroll = 0) {
     if (isplayer(e_activator)) {
         if (is_scroll) {
             e_activator thread function_eb6f144(self.script_string, mdl_collectible);
-        } else {
-            e_activator thread function_8916aa62(self.script_string);
+            return;
         }
+        e_activator thread function_8916aa62(self.script_string);
     }
 }
 

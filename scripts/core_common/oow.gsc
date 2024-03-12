@@ -15,16 +15,16 @@ function autoexec __init__system__() {
 }
 
 // Namespace oob/oow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x11c620ed, Offset: 0x100
 // Size: 0x5c
 function __init__() {
-    level.oow = {#height_max:2147483647, #height_min:2147483647};
+    level.oow = {#height_max:2147483647, #height_min:-2147483647};
     callback::on_game_playing(&on_game_playing);
 }
 
 // Namespace oob/oow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43b466d5, Offset: 0x168
 // Size: 0x174
 function on_game_playing() {
@@ -51,7 +51,7 @@ function on_game_playing() {
 }
 
 // Namespace oob/oow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaab2194b, Offset: 0x2e8
 // Size: 0x118
 function function_e8f5803d() {
@@ -71,7 +71,7 @@ function function_e8f5803d() {
 }
 
 // Namespace oob/oow
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x98cb7091, Offset: 0x408
 // Size: 0x9e
 function function_eb7eb3d4() {
@@ -91,7 +91,7 @@ function function_eb7eb3d4() {
 }
 
 // Namespace oob/oow
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdb9d8081, Offset: 0x4b0
 // Size: 0x1dc
 function kill_entity(entity) {

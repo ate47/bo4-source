@@ -294,104 +294,104 @@ function function_ab7f70b9(e_player) {
     }
     switch (str_zone) {
     case #"zone_starting_area_center":
-        var_601fee0 = #"hash_4a67009994e6a476";
+        str_display = #"hash_4a67009994e6a476";
         break;
     case #"zone_starting_area_tunnel":
     case #"zone_starting_area_odin":
     case #"zone_starting_area_ra":
     case #"zone_starting_area_danu":
     case #"zone_starting_area_zeus":
-        var_601fee0 = #"hash_1567549ec3ba97d4";
+        str_display = #"hash_1567549ec3ba97d4";
         break;
     case #"zone_danu_top_floor":
-        var_601fee0 = #"hash_5c1dcbfe0b5001dd";
+        str_display = #"hash_5c1dcbfe0b5001dd";
         break;
     case #"zone_danu_ground_floor":
     case #"zone_danu_hallway":
-        var_601fee0 = #"hash_7a9264bacc159479";
+        str_display = #"hash_7a9264bacc159479";
         break;
     case #"zone_danu_basement":
-        var_601fee0 = #"hash_397ee221838b64ee";
+        str_display = #"hash_397ee221838b64ee";
         break;
     case #"zone_ra_top_floor":
-        var_601fee0 = #"hash_6803828af6a2f994";
+        str_display = #"hash_6803828af6a2f994";
         break;
     case #"zone_ra_hallway":
     case #"zone_ra_ground_floor":
-        var_601fee0 = #"hash_42941b7294416898";
+        str_display = #"hash_42941b7294416898";
         break;
     case #"zone_ra_basement":
-        var_601fee0 = #"hash_f06f1d12b9e06bb";
+        str_display = #"hash_f06f1d12b9e06bb";
         break;
     case #"zone_odin_top_floor":
-        var_601fee0 = #"hash_2a27c4b2d37ac547";
+        str_display = #"hash_2a27c4b2d37ac547";
         break;
     case #"zone_odin_ground_floor":
     case #"zone_odin_hallway":
-        var_601fee0 = #"hash_6edbbd092bc3117f";
+        str_display = #"hash_6edbbd092bc3117f";
         break;
     case #"zone_odin_basement":
-        var_601fee0 = #"hash_6182c3f17fbe7e38";
+        str_display = #"hash_6182c3f17fbe7e38";
         break;
     case #"zone_zeus_top_floor":
-        var_601fee0 = #"hash_9a1707dc944a3bc";
+        str_display = #"hash_9a1707dc944a3bc";
         break;
     case #"zone_zeus_hallway":
     case #"zone_zeus_ground_floor":
-        var_601fee0 = #"hash_2795247ad0a93910";
+        str_display = #"hash_2795247ad0a93910";
         break;
     case #"zone_zeus_basement":
         if (level flag::get(#"hash_26c0c05d0a3e382f")) {
-            var_601fee0 = #"hash_1d78b48769eec427";
+            str_display = #"hash_1d78b48769eec427";
         } else {
-            var_601fee0 = #"hash_3bf0a3cc4bf210d3";
+            str_display = #"hash_3bf0a3cc4bf210d3";
         }
         break;
     case #"zone_danu_ra_bridge":
-        var_601fee0 = #"hash_340eafe8d0baeac2";
+        str_display = #"hash_340eafe8d0baeac2";
         break;
     case #"zone_odin_zeus_bridge":
-        var_601fee0 = #"hash_3eb632726bcfd3b8";
+        str_display = #"hash_3eb632726bcfd3b8";
         break;
     case #"zone_danu_ra_tunnel":
-        var_601fee0 = #"hash_75825b791d3a7f4d";
+        str_display = #"hash_75825b791d3a7f4d";
         break;
     case #"zone_danu_tunnel":
-        var_601fee0 = #"hash_384dc630decdd5e5";
+        str_display = #"hash_384dc630decdd5e5";
         break;
     case #"zone_ra_tunnel":
-        var_601fee0 = #"hash_1ad73836208cbff4";
+        str_display = #"hash_1ad73836208cbff4";
         break;
     case #"zone_fallen_hero":
-        var_601fee0 = #"hash_26bd00647976ee13";
+        str_display = #"hash_26bd00647976ee13";
         break;
     case #"zone_odin_tunnel":
-        var_601fee0 = #"hash_2e1e7d63d11c4a1b";
+        str_display = #"hash_2e1e7d63d11c4a1b";
         break;
     case #"zone_odin_zeus_tunnel":
-        var_601fee0 = #"hash_553f97cb9500b3bf";
+        str_display = #"hash_553f97cb9500b3bf";
         break;
     case #"zone_zeus_tunnel":
-        var_601fee0 = #"hash_622a5e1614b58b7c";
+        str_display = #"hash_622a5e1614b58b7c";
         break;
     case #"zone_cursed_room":
-        var_601fee0 = #"hash_68fd9aced4fcdecc";
+        str_display = #"hash_68fd9aced4fcdecc";
         break;
     case #"zone_flooded_crypt":
-        var_601fee0 = #"hash_140d9887b328fc9a";
+        str_display = #"hash_140d9887b328fc9a";
         break;
     case #"zone_body_pit":
-        var_601fee0 = #"hash_7a784e915fb4da82";
+        str_display = #"hash_7a784e915fb4da82";
         break;
     case #"zone_pap_room":
     case #"hash_3c2efff9d599c329":
     case #"zone_pap_room_balcony_flooded_crypt":
-        var_601fee0 = #"hash_54ab01103f8534bd";
+        str_display = #"hash_54ab01103f8534bd";
         break;
     default:
-        var_601fee0 = undefined;
+        str_display = undefined;
         break;
     }
-    return var_601fee0;
+    return str_display;
 }
 

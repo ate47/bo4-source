@@ -79,9 +79,9 @@ function private function_cfb0f4d() {
             level.var_b69d170f = 1;
             level.var_bb641599 = 0;
             level notify(#"hash_2b35a48172d1e0c2");
-        } else {
-            zm_trial_util::function_dace284(level.var_59f4d3a6);
+            continue;
         }
+        zm_trial_util::function_dace284(level.var_59f4d3a6);
     }
 }
 

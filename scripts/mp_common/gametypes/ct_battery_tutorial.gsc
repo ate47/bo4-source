@@ -97,36 +97,38 @@ function function_c9ff0dce() {
         } else if (level.var_ad7c0539 === 7) {
             self ct_vo::play_vo(#"hash_216720671b1b0bd8", 1);
         }
-    } else if (self.team == #"axis" && isdefined(level.var_ad7c0539)) {
+        return;
+    }
+    if (self.team == #"axis" && isdefined(level.var_ad7c0539)) {
         if (isdefined(level.var_66b3c127)) {
             switch (level.var_ad7c0539) {
             case 2:
                 self thread function_58c62280(0, 1);
-                break;
+                return;
             case 3:
                 self thread function_58c62280(1, 1);
-                break;
+                return;
             case 4:
                 self thread function_58c62280(1, 0);
-                break;
+                return;
             case 5:
                 self thread function_58c62280(0, 1);
-                break;
+                return;
             case 6:
                 self thread function_58c62280(0, 0);
-                break;
+                return;
             case 7:
                 self thread function_58c62280(1, 1);
-                break;
+                return;
             case 8:
                 self thread function_58c62280(1, 0);
-                break;
+                return;
             case 10:
                 self thread function_58c62280(1, 0);
-                break;
+                return;
             default:
                 self thread function_58c62280(0, 1);
-                break;
+                return;
             }
         }
     }
@@ -212,17 +214,23 @@ function function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon,
                 var_c361acde kill();
             }
         }
-    } else if (self.team == #"axis") {
+        return;
+    }
+    if (self.team == #"axis") {
         self.isinuse = 0;
         if (self.targetname === "war_machine_victim") {
             if (weapon === getweapon(#"hero_pineapplegun") || weapon === getweapon(#"hero_pineapple_grenade") || isplayer(attacker)) {
                 level flag::set("gib_done");
             }
-        } else if (level.var_ad7c0539 === 8) {
+            return;
+        }
+        if (level.var_ad7c0539 === 8) {
             if (isdefined(attacker) && isplayer(attacker) && (weapon == getweapon(#"hero_pineapplegun") || weapon == getweapon(#"hero_pineapple_grenade"))) {
                 level flag::set("window_hit");
             }
-        } else if (level.var_ad7c0539 === 10) {
+            return;
+        }
+        if (level.var_ad7c0539 === 10) {
             e_player = ct_utils::get_player();
             if (!(isdefined(e_player.var_51ff7a58) && e_player.var_51ff7a58) && isalive(e_player) && level.var_ff7ed5c8 < 900) {
                 function_86610592();
@@ -1143,9 +1151,8 @@ function function_c8eefe3b(var_c361acde) {
 function function_2aab1550(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
     if (isdefined(eattacker) && eattacker == self) {
         return 0;
-    } else {
-        return idamage;
     }
+    return idamage;
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1217,11 +1224,8 @@ function function_ae3fa0e0() {
         if (n_dist < level.var_32564e34) {
             level notify(#"hash_3635e0f04dfda961");
             level.var_146b6c = undefined;
-            goto LOC_000000d4;
         }
-    LOC_000000d4:
     }
-LOC_000000d4:
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1279,14 +1283,18 @@ function function_58c62280(b_keyline, b_ignoreall) {
     }
     if (level.var_ad7c0539 == 2 || level.var_ad7c0539 == 3) {
         self thread function_f9803d74();
-    } else if (level.var_ad7c0539 === 5) {
+        return;
+    }
+    if (level.var_ad7c0539 === 5) {
         if (s_loc.script_noteworthy === "war_machine_victim") {
             self.ignoreall = 1;
             self.targetname = "war_machine_victim";
             self thread function_f9803d74();
             self thread function_a40b5f9c();
         }
-    } else if (level.var_ad7c0539 === 6) {
+        return;
+    }
+    if (level.var_ad7c0539 === 6) {
         if (s_loc.script_noteworthy === "war_machine_aoe_pair") {
             self.ignoreme = 0;
             self.ignoreall = 0;
@@ -1304,24 +1312,30 @@ function function_58c62280(b_keyline, b_ignoreall) {
             s_goal = struct::get(s_loc.target);
             self thread ct_utils::function_1e7b75f2(s_goal);
         }
-    } else if (level.var_ad7c0539 === 7) {
+        return;
+    }
+    if (level.var_ad7c0539 === 7) {
         self thread function_f9803d74();
         self thread function_35ea89f8(s_loc);
-    } else if (level.var_ad7c0539 === 8) {
+        return;
+    }
+    if (level.var_ad7c0539 === 8) {
         s_goal = struct::get(s_loc.target);
         self thread ct_utils::function_5b59f3b7(s_goal.origin, s_goal.angles, 16);
-    } else if (level.var_ad7c0539 === 10) {
+        return;
+    }
+    if (level.var_ad7c0539 === 10) {
         if (s_loc.script_noteworthy === "scorestreak_target") {
             self thread function_f9803d74();
             s_goal = struct::get(s_loc.target);
             self thread ct_utils::function_5b59f3b7(s_goal.origin, s_goal.angles, 32);
-        } else {
-            self.ignoreme = 0;
-            self.ignoreall = 0;
-            self thread function_f9803d74();
-            self thread reinforce_enemy(s_loc);
-            self ct_utils::function_b5e31ad(level.players[0], 150, 250);
+            return;
         }
+        self.ignoreme = 0;
+        self.ignoreall = 0;
+        self thread function_f9803d74();
+        self thread reinforce_enemy(s_loc);
+        self ct_utils::function_b5e31ad(level.players[0], 150, 250);
     }
 }
 
@@ -1332,9 +1346,9 @@ function function_58c62280(b_keyline, b_ignoreall) {
 function function_f9803d74() {
     if (math::cointoss()) {
         self thread ct_bots::function_35e77034(getweapon(#"ar_accurate_t8"), 1);
-    } else {
-        self thread ct_bots::function_35e77034(getweapon(#"smg_accurate_t8"), 1);
+        return;
     }
+    self thread ct_bots::function_35e77034(getweapon(#"smg_accurate_t8"), 1);
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1563,11 +1577,11 @@ function grenade_rock_watcher(s_loc) {
         level.var_e72728b8 = array(#"eq_cluster_semtex_grenade", #"hero_pineapplegun");
         ct_vo::function_3ca1b77d();
         level.players[0] ct_vo::play_vo(#"hash_652da27d15a2fbe3", 1);
-    } else {
-        ct_vo::function_3ca1b77d();
-        if (!ct_vo::function_5d127774()) {
-            level.players[0] ct_vo::play_vo(#"hash_34021a82d739daed", 1);
-        }
+        return;
+    }
+    ct_vo::function_3ca1b77d();
+    if (!ct_vo::function_5d127774()) {
+        level.players[0] ct_vo::play_vo(#"hash_34021a82d739daed", 1);
     }
 }
 
@@ -1634,12 +1648,11 @@ function grenade_room_watcher(vol_room, waypoint) {
         level notify(#"stop_room_nag");
         self waittill(#"explode");
         level flag::set("grenade_room_explode");
-        goto LOC_00000182;
-    } else if (!ct_vo::function_5d127774() && !level flag::get("grenade_room")) {
-        level.players[0] ct_vo::play_vo(#"hash_34021a82d739daed", 1);
-    LOC_00000182:
+        return;
     }
-LOC_00000182:
+    if (!ct_vo::function_5d127774() && !level flag::get("grenade_room")) {
+        level.players[0] ct_vo::play_vo(#"hash_34021a82d739daed", 1);
+    }
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1732,9 +1745,11 @@ function function_45f567b0(s_loc, waypoint) {
                 }
                 grenade waittill(#"explode");
                 level thread function_ac588971();
-                break;
+                return;
             }
-        } else if (!ct_vo::function_5d127774()) {
+            continue;
+        }
+        if (!ct_vo::function_5d127774()) {
             level.players[0] ct_vo::play_vo(#"hash_34021a82d739daed", 1);
         }
     }
@@ -1832,7 +1847,7 @@ function window_barriers() {
         t_trig = trigger::wait_till("trigger_window_barriers");
         if (t_trig.who === self) {
             level notify(#"start_war_machine_arc_window_collision");
-            break;
+            return;
         }
     }
 }
@@ -1852,7 +1867,7 @@ function function_76f5d2dc(str_s_target) {
         if (n_dist <= 20) {
             level flag::set("wall_target_hit");
             self thread function_abc3a00d();
-            break;
+            return;
         }
     }
 }

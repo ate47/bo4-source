@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace vehicle/vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a666064, Offset: 0xc0
 // Size: 0x32
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace vehicle/vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabaf1b7, Offset: 0x100
 // Size: 0x378
 function vehicle_rumble(localclientnum) {

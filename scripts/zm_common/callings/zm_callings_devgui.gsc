@@ -41,7 +41,9 @@ function function_1d4f22e4(cmd) {
             setdvar(#"zm_active_daily_calling", taskid);
             setdvar(#"zm_active_event_calling", 0);
             setdvar(#"hash_acdd08b365cb62f", 1);
-        } else if (strstartswith(cmd, "<unknown string>")) {
+            return;
+        }
+        if (strstartswith(cmd, "<unknown string>")) {
             str = strreplace(cmd, "<unknown string>", "<unknown string>");
             var_762ca590 = hash(str);
             if (!getdvarint(#"hash_11da02ca40639de5", 0)) {
@@ -62,20 +64,26 @@ function function_1d4f22e4(cmd) {
                     iprintln(self.name + "<unknown string>" + function_9e72a96(var_762ca590) + "<unknown string>");
                 }
             }
-        } else if (strstartswith(cmd, "<unknown string>")) {
+            return;
+        }
+        if (strstartswith(cmd, "<unknown string>")) {
             str = strreplace(cmd, "<unknown string>", "<unknown string>");
             arr = strtok(str, "<unknown string>");
             interval = arr[0];
             interval = int(interval);
             if (!getdvarint(#"hash_11da02ca40639de5", 0)) {
                 iprintln("<unknown string>" + self.name);
-            } else if (!getdvarint(#"hash_66c8247d6d84d328", 0) || !getdvarint(#"hash_5341de25cb0d6f66", 0) || !getdvarint(#"hash_47067c5d4fe9075e", 0)) {
-                iprintln("<unknown string>");
-            } else if (!isdefined(self.var_96d6f6d1)) {
-                iprintln(self.name + "<unknown string>");
-            } else {
-                self thread function_8a37e046(interval);
+                return;
             }
+            if (!getdvarint(#"hash_66c8247d6d84d328", 0) || !getdvarint(#"hash_5341de25cb0d6f66", 0) || !getdvarint(#"hash_47067c5d4fe9075e", 0)) {
+                iprintln("<unknown string>");
+                return;
+            }
+            if (!isdefined(self.var_96d6f6d1)) {
+                iprintln(self.name + "<unknown string>");
+                return;
+            }
+            self thread function_8a37e046(interval);
         }
     #/
 }

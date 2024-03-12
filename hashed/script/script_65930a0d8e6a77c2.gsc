@@ -165,13 +165,13 @@ function trap_damage(t_trap) {
             t_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         self.b_trap_kill = 1;
-    } else {
-        self dodamage(n_damage, t_trap.origin);
-        if (b_stun && !(isdefined(self.var_6e294228) && self.var_6e294228)) {
-            self.var_6e294228 = 1;
-            self thread function_a023d131();
-            self thread ai::stun(5);
-        }
+        return;
+    }
+    self dodamage(n_damage, t_trap.origin);
+    if (b_stun && !(isdefined(self.var_6e294228) && self.var_6e294228)) {
+        self.var_6e294228 = 1;
+        self thread function_a023d131();
+        self thread ai::stun(5);
     }
 }
 

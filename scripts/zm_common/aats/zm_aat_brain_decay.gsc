@@ -101,7 +101,7 @@ function function_8e97a3a4(attacker, weapon) {
         a_ai_zombies[i] function_fef86dd4(var_3c9de13d, 20000, attacker, weapon);
         n_flung_zombies++;
         if (-1 && n_flung_zombies >= 3) {
-            break;
+            return;
         }
     }
 }
@@ -118,12 +118,12 @@ function private function_fef86dd4(var_c5ad44f1, n_damage, e_attacker, weapon) {
     self dodamage(n_damage, v_curr_zombie_origin, e_attacker, e_attacker, undefined, "MOD_AAT", 0, weapon);
     if (isalive(self)) {
         self zombie_utility::setup_zombie_knockdown(var_c5ad44f1);
-    } else {
-        n_random_x = randomfloatrange(-3, 3);
-        n_random_y = randomfloatrange(-3, 3);
-        self startragdoll(1);
-        self launchragdoll(60 * vectornormalize(v_curr_zombie_origin - var_c5ad44f1 + (n_random_x, n_random_y, 10)), "torso_lower");
+        return;
     }
+    n_random_x = randomfloatrange(-3, 3);
+    n_random_y = randomfloatrange(-3, 3);
+    self startragdoll(1);
+    self launchragdoll(60 * vectornormalize(v_curr_zombie_origin - var_c5ad44f1 + (n_random_x, n_random_y, 10)), "torso_lower");
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay
@@ -261,8 +261,8 @@ function zombie_death_gib(e_attacker, weapon) {
     gibserverutils::giblegs(self);
     if (isdefined(level.headshots_only) && level.headshots_only || zm_trial_headshots_only::is_active()) {
         self kill();
-    } else {
-        self dodamage(self.health, self.origin, e_attacker, undefined, undefined, "MOD_AAT", 0, weapon);
+        return;
     }
+    self dodamage(self.health, self.origin, e_attacker, undefined, undefined, "MOD_AAT", 0, weapon);
 }
 

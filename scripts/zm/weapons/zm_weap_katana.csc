@@ -65,7 +65,9 @@ function function_ea3e4435(localclientnum, oldval, newval, bnewent, binitialsnap
         } else if (self hasdobj(localclientnum)) {
             self.var_d3d459f[localclientnum] = playtagfxset(localclientnum, "weapon_katana_smoke_3p", self);
         }
-    } else if (self getlocalclientnumber() === localclientnum) {
+        return;
+    }
+    if (self getlocalclientnumber() === localclientnum) {
         self postfx::stoppostfxbundle(#"hash_34ce6f9f022458f8");
         self thread function_82ee4d9d(localclientnum);
         a_e_players = getlocalplayers();
@@ -74,7 +76,9 @@ function function_ea3e4435(localclientnum, oldval, newval, bnewent, binitialsnap
                 e_player notify(#"hash_49e404aa0d33e9ac");
             }
         }
-    } else if (isdefined(self.var_d3d459f[localclientnum])) {
+        return;
+    }
+    if (isdefined(self.var_d3d459f[localclientnum])) {
         foreach (fx in self.var_d3d459f[localclientnum]) {
             stopfx(localclientnum, fx);
         }
@@ -137,7 +141,9 @@ function function_29c31d8d(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_74fd1bb2db3d91ee");
             self.var_7804a42c = self playloopsound(#"hash_4f7953dcf02e2ba7");
         }
-    } else if (isdefined(self.var_7804a42c)) {
+        return;
+    }
+    if (isdefined(self.var_7804a42c)) {
         self playsound(localclientnum, #"hash_76e75d7b16257c11");
         self stoploopsound(self.var_7804a42c);
         self.var_7804a42c = undefined;

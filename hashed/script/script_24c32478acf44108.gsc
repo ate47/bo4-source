@@ -318,8 +318,7 @@ function slowdown(str_type, var_a47cf2b2) {
     if (!isdefined(self.a_n_slowdown_timeouts[str_type]) || self.a_n_slowdown_timeouts[str_type] < n_timeout) {
         self.a_n_slowdown_timeouts[str_type] = n_timeout;
     }
-    n_slowdowns = self.a_n_slowdown_timeouts.size;
-    while (n_slowdowns) {
+    for (n_slowdowns = self.a_n_slowdown_timeouts.size; n_slowdowns; n_slowdowns = self.a_n_slowdown_timeouts.size) {
         str_lowest_type = undefined;
         n_lowest_rate = 10;
         self function_e01e1ea1();
@@ -349,7 +348,6 @@ function slowdown(str_type, var_a47cf2b2) {
             }
         }
         self function_e01e1ea1();
-        n_slowdowns = self.a_n_slowdown_timeouts.size;
     }
     self asmsetanimationrate(1);
 }

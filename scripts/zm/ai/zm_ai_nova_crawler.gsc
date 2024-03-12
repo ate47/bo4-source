@@ -245,18 +245,16 @@ function private function_d79b3357(entity, origin) {
 // Size: 0x1cc
 function private function_4632879c(entity) {
     effectarea = spawn("trigger_radius", entity.origin, 0, 125, 100);
-    gas_time = 0;
-    while (gas_time <= 7) {
+    for (gas_time = 0; gas_time <= 7; gas_time = gas_time + 1) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] istouching(effectarea)) {
                 players[i] clientfield::set_to_player("nova_crawler_gas_cloud_postfx_clientfield", 1);
-            } else {
-                players[i] clientfield::set_to_player("nova_crawler_gas_cloud_postfx_clientfield", 0);
+                continue;
             }
+            players[i] clientfield::set_to_player("nova_crawler_gas_cloud_postfx_clientfield", 0);
         }
         wait(1);
-        gas_time = gas_time + 1;
     }
     players = getplayers();
     for (i = 0; i < players.size; i++) {
@@ -292,13 +290,13 @@ function function_c5b157a6(einflictor, attacker, idamage, smeansofdeath, weapon,
     self thread zombie_utility::zombie_gib(idamage, attacker, vdir, self gettagorigin("j_spine4"), smeansofdeath, shitloc, undefined, undefined, weapon);
     if (isdefined(self.var_c858954a) && self.var_c858954a && zm_utility::is_explosive_damage(smeansofdeath)) {
         gibserverutils::annihilate(self);
-    } else {
-        if (smeansofdeath == "MOD_PISTOL_BULLET" || smeansofdeath == "MOD_RIFLE_BULLET") {
-            self.can_explode = 1;
-        } else {
-            self.can_explode = 0;
-        }
-        zm_spawner::zombie_death_animscript(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime);
+        return;
     }
+    if (smeansofdeath == "MOD_PISTOL_BULLET" || smeansofdeath == "MOD_RIFLE_BULLET") {
+        self.can_explode = 1;
+    } else {
+        self.can_explode = 0;
+    }
+    zm_spawner::zombie_death_animscript(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime);
 }
 

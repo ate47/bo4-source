@@ -317,11 +317,10 @@ function function_3f15613f() {
         str_prompt = zm_utility::function_d6046228(#"hash_546b9ae85f7a9448", #"hash_38d87fd576702a44");
         self sethintstring(str_prompt);
         return 1;
-    } else {
-        str_prompt = "";
-        self sethintstring(str_prompt);
-        return 0;
     }
+    str_prompt = "";
+    self sethintstring(str_prompt);
+    return 0;
 }
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
@@ -410,10 +409,10 @@ function function_dc380897() {
         arrayremovevalue(level.var_3089454f, self.vessel);
         self.vessel delete();
         level flag::set(#"hash_11d64d1f93c196cc");
-    } else {
-        arrayremovevalue(level.var_3089454f, self.vessel);
-        self.vessel delete();
+        return;
     }
+    arrayremovevalue(level.var_3089454f, self.vessel);
+    self.vessel delete();
 }
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
@@ -498,7 +497,7 @@ function function_8c273b51() {
     while (1) {
         if (zm_hms_util::any_player_in_zone("lighthouse_level_4") && level.pablo_npc zm_audio::can_speak()) {
             level zm_orange_pablo::function_e44c7c0c(#"hash_17b44ac72ae4b92f");
-            break;
+            return;
         }
         wait(1);
     }

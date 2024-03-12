@@ -238,7 +238,9 @@ function function_d62a70b4() {
             level notify(#"hash_40475441c5bdca82");
             callback::remove_on_round_end(&function_d62a70b4);
         }
-    } else if (function_1cc0b38a()) {
+        return;
+    }
+    if (function_1cc0b38a()) {
         level.var_2ae5b6fb = 1;
         /#
             iprintln("<unknown string>" + level.var_2ae5b6fb);

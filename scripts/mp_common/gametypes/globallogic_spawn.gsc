@@ -51,7 +51,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc2b3c015, Offset: 0x398
 // Size: 0x236
 function __init__() {
@@ -88,116 +88,81 @@ function getmpspawnpoints() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x525ef529, Offset: 0x608
 // Size: 0x7cc
 function function_82ca1565(spawnpoint, gametype) {
     switch (gametype) {
     case #"ffa":
         return (isdefined(spawnpoint.ffa) && spawnpoint.ffa);
-        break;
     case #"sd":
         return (isdefined(spawnpoint.sd) && spawnpoint.sd);
-        break;
     case #"ctf":
         return (isdefined(spawnpoint.ctf) && spawnpoint.ctf);
-        break;
     case #"dom":
         return (isdefined(spawnpoint.domination) && spawnpoint.domination);
-        break;
     case #"dem":
         return (isdefined(spawnpoint.demolition) && spawnpoint.demolition);
-        break;
     case #"gg":
         return (isdefined(spawnpoint.gg) && spawnpoint.gg);
-        break;
     case #"tdm":
         return (isdefined(spawnpoint.tdm) && spawnpoint.tdm);
-        break;
     case #"infil":
         return (isdefined(spawnpoint.infiltration) && spawnpoint.infiltration);
-        break;
     case #"control":
         return (isdefined(spawnpoint.control) && spawnpoint.control);
-        break;
     case #"uplink":
         return (isdefined(spawnpoint.uplink) && spawnpoint.uplink);
-        break;
     case #"kc":
         return (isdefined(spawnpoint.kc) && spawnpoint.kc);
-        break;
     case #"koth":
         return (isdefined(spawnpoint.hardpoint) && spawnpoint.hardpoint);
-        break;
     case #"frontline":
         return (isdefined(spawnpoint.frontline) && spawnpoint.frontline);
-        break;
     case #"dom_flag_a":
         return (isdefined(spawnpoint.domination_flag_a) && spawnpoint.domination_flag_a);
-        break;
     case #"dom_flag_b":
         return (isdefined(spawnpoint.domination_flag_b) && spawnpoint.domination_flag_b);
-        break;
     case #"dom_flag_c":
         return (isdefined(spawnpoint.domination_flag_c) && spawnpoint.domination_flag_c);
-        break;
     case #"hash_6056c310624d5afd":
         return (isdefined(spawnpoint.demolition_attacker_a) && spawnpoint.demolition_attacker_a);
-        break;
     case #"hash_6056c010624d55e4":
         return (isdefined(spawnpoint.demolition_attacker_b) && spawnpoint.demolition_attacker_b);
-        break;
     case #"hash_6ef2d89ce8ee9a32":
         return (isdefined(spawnpoint.demolition_remove_a) && spawnpoint.demolition_remove_a);
-        break;
     case #"hash_6ef2d79ce8ee987f":
         return (isdefined(spawnpoint.demolition_remove_b) && spawnpoint.demolition_remove_b);
-        break;
     case #"dem_overtime":
         return (isdefined(spawnpoint.demolition_overtime) && spawnpoint.demolition_overtime);
-        break;
     case #"hash_7cb9d0a58715cebe":
         return (isdefined(spawnpoint.demolition_start_spawn) && spawnpoint.demolition_start_spawn);
-        break;
     case #"hash_6d83e5f1bdefa7dd":
         return (isdefined(spawnpoint.demolition_defender_a) && spawnpoint.demolition_defender_a);
-        break;
     case #"hash_6d83e2f1bdefa2c4":
         return (isdefined(spawnpoint.demolition_defender_b) && spawnpoint.demolition_defender_b);
-        break;
     case #"control_attack_add_0":
         return (isdefined(spawnpoint.control_attack_add_a) && spawnpoint.control_attack_add_a);
-        break;
     case #"control_attack_add_1":
         return (isdefined(spawnpoint.control_attack_add_b) && spawnpoint.control_attack_add_b);
-        break;
     case #"control_attack_remove_0":
         return (isdefined(spawnpoint.control_attack_remove_a) && spawnpoint.control_attack_remove_a);
-        break;
     case #"control_attack_remove_1":
         return (isdefined(spawnpoint.control_attack_remove_b) && spawnpoint.control_attack_remove_b);
-        break;
     case #"control_defend_add_0":
         return (isdefined(spawnpoint.registerlast_mapshouldstun) && spawnpoint.registerlast_mapshouldstun);
-        break;
     case #"control_defend_add_1":
         return (isdefined(spawnpoint.control_defend_add_b) && spawnpoint.control_defend_add_b);
-        break;
     case #"control_defend_remove_0":
         return (isdefined(spawnpoint.control_defend_remove_a) && spawnpoint.control_defend_remove_a);
-        break;
     case #"control_defend_remove_1":
         return (isdefined(spawnpoint.control_defend_remove_b) && spawnpoint.control_defend_remove_b);
-        break;
     case #"ct":
         return (isdefined(spawnpoint.ct) && spawnpoint.ct);
-        break;
     case #"escort":
         return (isdefined(spawnpoint.escort) && spawnpoint.escort);
-        break;
     case #"bounty":
         return (isdefined(spawnpoint.bounty) && spawnpoint.bounty);
-        break;
     default:
         /#
             assertmsg("<unknown string>" + gametype + "<unknown string>" + spawnpoint.origin[0] + "<unknown string>" + spawnpoint.origin[1] + "<unknown string>" + spawnpoint.origin[2]);
@@ -208,7 +173,7 @@ function function_82ca1565(spawnpoint, gametype) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x83e9ca7f, Offset: 0xde0
 // Size: 0x94
 function addsupportedspawnpointtype(spawnpointtype, team) {
@@ -233,7 +198,7 @@ function function_c40af6fa() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd05117af, Offset: 0xea8
 // Size: 0xaa
 function function_d3d4ff67(spawn) {
@@ -247,7 +212,7 @@ function function_d3d4ff67(spawn) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1de0395, Offset: 0xf60
 // Size: 0x244
 function addspawnsforteamname(teamname, searchentity, &spawnarray, &startspawns) {
@@ -262,18 +227,18 @@ function addspawnsforteamname(teamname, searchentity, &spawnarray, &startspawns)
             }
             teamname = util::get_team_mapping(teamname);
             if (isdefined(var_a24ffdcc.team)) {
-                jumpiffalse(teamname != var_a24ffdcc.team) LOC_00000196;
-            } else {
-            LOC_00000196:
-                usespawnarray = isdefined(spawn._human_were) ? spawn._human_were : 0 ? startspawns : spawnarray;
-                if (!isdefined(usespawnarray[teamname])) {
-                    usespawnarray[teamname] = [];
+                if (teamname != var_a24ffdcc.team) {
+                    continue;
                 }
-                if (!isdefined(spawn.enabled)) {
-                    spawn.enabled = -1;
-                }
-                array::add(usespawnarray[teamname], spawn);
             }
+            usespawnarray = isdefined(spawn._human_were) ? spawn._human_were : 0 ? startspawns : spawnarray;
+            if (!isdefined(usespawnarray[teamname])) {
+                usespawnarray[teamname] = [];
+            }
+            if (!isdefined(spawn.enabled)) {
+                spawn.enabled = -1;
+            }
+            array::add(usespawnarray[teamname], spawn);
         }
     }
 }
@@ -305,7 +270,7 @@ function function_d400d613(targetname, typesarray) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbc6dd3, Offset: 0x1380
 // Size: 0x68a
 function private function_68312709() {
@@ -330,15 +295,15 @@ function private function_68312709() {
                     enablespawnpointlist("auto_normal", util::getteammask(team));
                 }
             }
-        } else {
-            teamforspawns = spawning::function_1bc642b7() ? util::getotherteam(spawnteam) : spawnteam;
-            addspawnpoints(teamforspawns, spawnstoadd[spawnteam], "auto_normal");
-            otherteam = util::getotherteam(teamforspawns);
-            addspawnpoints(otherteam, spawnstoadd[spawnteam], "fallback");
-            enablespawnpointlist("auto_normal", util::getteammask(teamforspawns));
-            foreach (spawnpoint in spawnstoadd[spawnteam]) {
-                array::add(level.spawnpoints, spawnpoint, 0);
-            }
+            continue;
+        }
+        teamforspawns = spawning::function_1bc642b7() ? util::getotherteam(spawnteam) : spawnteam;
+        addspawnpoints(teamforspawns, spawnstoadd[spawnteam], "auto_normal");
+        otherteam = util::getotherteam(teamforspawns);
+        addspawnpoints(otherteam, spawnstoadd[spawnteam], "fallback");
+        enablespawnpointlist("auto_normal", util::getteammask(teamforspawns));
+        foreach (spawnpoint in spawnstoadd[spawnteam]) {
+            array::add(level.spawnpoints, spawnpoint, 0);
         }
     }
     if (!isdefined(level.spawn_start)) {
@@ -353,18 +318,18 @@ function private function_68312709() {
                 }
                 level.spawn_start[team] = arraycombine(level.spawn_start[team], startspawns[spawnteam], 0, 0);
             }
-        } else {
-            teamforspawns = spawning::function_1bc642b7() ? util::getotherteam(spawnteam) : spawnteam;
-            if (!isdefined(level.spawn_start[teamforspawns])) {
-                level.spawn_start[teamforspawns] = [];
-            }
-            level.spawn_start[teamforspawns] = arraycombine(level.spawn_start[teamforspawns], startspawns[spawnteam], 0, 0);
+            continue;
         }
+        teamforspawns = spawning::function_1bc642b7() ? util::getotherteam(spawnteam) : spawnteam;
+        if (!isdefined(level.spawn_start[teamforspawns])) {
+            level.spawn_start[teamforspawns] = [];
+        }
+        level.spawn_start[teamforspawns] = arraycombine(level.spawn_start[teamforspawns], startspawns[spawnteam], 0, 0);
     }
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x47e42e74, Offset: 0x1a18
 // Size: 0x382
 function function_8acd9309() {
@@ -403,7 +368,7 @@ function function_8acd9309() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf17171b8, Offset: 0x1da8
 // Size: 0xfc
 function addspawns() {
@@ -426,7 +391,7 @@ function addspawns() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb49ebb05, Offset: 0x1eb0
 // Size: 0x16c
 function calculate_map_center() {
@@ -450,7 +415,7 @@ function calculate_map_center() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x65121bf7, Offset: 0x2028
 // Size: 0x244
 function timeuntilspawn(includeteamkilldelay) {
@@ -492,7 +457,7 @@ function timeuntilspawn(includeteamkilldelay) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xca6f5c04, Offset: 0x2278
 // Size: 0xa8
 function allteamshaveexisted() {
@@ -508,7 +473,7 @@ function allteamshaveexisted() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a9e60ad, Offset: 0x2328
 // Size: 0x152
 function function_38527849() {
@@ -534,7 +499,7 @@ function function_38527849() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4b91a67d, Offset: 0x2488
 // Size: 0x112
 function mayspawn() {
@@ -557,7 +522,7 @@ function mayspawn() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8592bfb9, Offset: 0x25a8
 // Size: 0x82
 function function_ac5b273c(minimumwait) {
@@ -569,7 +534,7 @@ function function_ac5b273c(minimumwait) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f9893b8, Offset: 0x2638
 // Size: 0x154
 function timeuntilwavespawn(minimumwait) {
@@ -589,7 +554,7 @@ function timeuntilwavespawn(minimumwait) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a0f7387, Offset: 0x2798
 // Size: 0x46
 function stoppoisoningandflareonspawn() {
@@ -601,7 +566,7 @@ function stoppoisoningandflareonspawn() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x47555e96, Offset: 0x27e8
 // Size: 0x110
 function spawnplayerprediction() {
@@ -618,7 +583,7 @@ function spawnplayerprediction() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x59daf4ce, Offset: 0x2900
 // Size: 0x1bc
 function playmatchstartaudio(team) {
@@ -642,13 +607,13 @@ function playmatchstartaudio(team) {
     }
     if (team == game.attackers) {
         self globallogic_audio::leader_dialog_on_player(level.leaderdialog.offenseorderdialog);
-    } else {
-        self globallogic_audio::leader_dialog_on_player(level.leaderdialog.defenseorderdialog);
+        return;
     }
+    self globallogic_audio::leader_dialog_on_player(level.leaderdialog.defenseorderdialog);
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdb2f2cee, Offset: 0x2ac8
 // Size: 0x1fc
 function doinitialspawnmessaging(params = undefined) {
@@ -682,7 +647,7 @@ function doinitialspawnmessaging(params = undefined) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcf1d9aad, Offset: 0x2cd0
 // Size: 0xe
 function resetattackersthisspawnlist() {
@@ -690,7 +655,7 @@ function resetattackersthisspawnlist() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdee70e85, Offset: 0x2ce8
 // Size: 0xc54
 function spawnplayer() {
@@ -749,12 +714,12 @@ function spawnplayer() {
         if (isdefined(specialist)) {
             self function_6c3348ac(specialist);
         }
-        var_be574bd8 = self function_b568258e();
+        var_be574bd8 = self getcharacterlootid();
         outfitindex = self getcharacteroutfit();
         gender = self getplayergendertype();
-        warpaintoutfitindex = self function_3d1a97c6();
-        var_8fa79650 = self function_564cfaeb();
-        decallootid = self function_e1c06cd0();
+        warpaintoutfitindex = self getcharacterwarpaintoutfit();
+        var_8fa79650 = self getcharacterwarpaintlootid();
+        decallootid = self getcharacterdecallootid();
         var_b3d9cfaa = self function_11d0e790();
         var_f8e6b703 = self match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
         if (isdefined(var_f8e6b703)) {
@@ -835,7 +800,7 @@ function spawnplayer() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x250207f, Offset: 0x3948
 // Size: 0x5e
 function on_end_game() {
@@ -843,7 +808,7 @@ function on_end_game() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9b433e8d, Offset: 0x39b0
 // Size: 0x4c
 function spawnspectator(origin, angles) {
@@ -853,7 +818,7 @@ function spawnspectator(origin, angles) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfe43b1e5, Offset: 0x3a08
 // Size: 0x2c
 function respawn_asspectator(origin, angles) {
@@ -861,7 +826,7 @@ function respawn_asspectator(origin, angles) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3abde065, Offset: 0x3a40
 // Size: 0x2ec
 function function_3ee5119e() {
@@ -893,7 +858,7 @@ function function_3ee5119e() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x565c6e13, Offset: 0x3d38
 // Size: 0x1c4
 function in_spawnspectator(origin, angles) {
@@ -924,7 +889,7 @@ function in_spawnspectator(origin, angles) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8b91414, Offset: 0x3f08
 // Size: 0x5a
 function spectatorthirdpersonness() {
@@ -961,7 +926,7 @@ function forcespawn(time) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2735df5, Offset: 0x40c8
 // Size: 0x64
 function kickifdontspawn() {
@@ -977,7 +942,7 @@ function kickifdontspawn() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x72cc8ec2, Offset: 0x4138
 // Size: 0x29c
 function kickifidontspawninternal() {
@@ -1019,7 +984,7 @@ function kickifidontspawninternal() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x88687a2, Offset: 0x43e0
 // Size: 0x34
 function kickwait(waittime) {
@@ -1052,7 +1017,7 @@ function spawninterroundintermission() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe67396c, Offset: 0x4598
 // Size: 0x174
 function spawnintermission(usedefaultcallback, endgame) {
@@ -1079,7 +1044,7 @@ function spawnintermission(usedefaultcallback, endgame) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcf9dfdd5, Offset: 0x4718
 // Size: 0xc8
 function spawnqueuedclientonteam(team) {
@@ -1100,7 +1065,7 @@ function spawnqueuedclientonteam(team) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe39e628e, Offset: 0x47e8
 // Size: 0x130
 function spawnqueuedclient(dead_player_team, killer) {
@@ -1125,7 +1090,7 @@ function spawnqueuedclient(dead_player_team, killer) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8bba0ed2, Offset: 0x4920
 // Size: 0xc6
 function allteamsnearscorelimit() {
@@ -1144,7 +1109,7 @@ function allteamsnearscorelimit() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x604a43d0, Offset: 0x49f0
 // Size: 0x6e
 function shouldshowrespawnmessage() {
@@ -1164,7 +1129,7 @@ function shouldshowrespawnmessage() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8f59740e, Offset: 0x4a68
 // Size: 0x64
 function default_spawnmessage() {
@@ -1175,7 +1140,7 @@ function default_spawnmessage() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c27aa2e, Offset: 0x4ad8
 // Size: 0x28
 function showspawnmessage() {
@@ -1185,7 +1150,7 @@ function showspawnmessage() {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd280b453, Offset: 0x4b08
 // Size: 0x1f4
 function spawnclient(timealreadypassed) {
@@ -1221,7 +1186,7 @@ function spawnclient(timealreadypassed) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfd81883c, Offset: 0x4d08
 // Size: 0x500
 function waitandspawnclient(timealreadypassed) {
@@ -1306,7 +1271,7 @@ function waitandspawnclient(timealreadypassed) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x71ab88a7, Offset: 0x5210
 // Size: 0xe2
 function function_6c23d45b(time, notifyname) {
@@ -1328,14 +1293,14 @@ function function_6c23d45b(time, notifyname) {
 }
 
 // Namespace globallogic_spawn/globallogic_spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb23bc270, Offset: 0x5300
 // Size: 0x54
 function waitrespawnorsafespawnbutton() {
     self endon(#"disconnect", #"end_respawn");
     while (1) {
         if (self usebuttonpressed()) {
-            break;
+            return;
         }
         waitframe(1);
     }

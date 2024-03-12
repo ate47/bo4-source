@@ -157,9 +157,9 @@ function simple_explosion(attacker) {
     physics_explosion_and_rumble(self.origin, 255, 1);
     if (isdefined(attacker)) {
         self dodamage(self.health + 10000, self.origin + offset, attacker);
-    } else {
-        self dodamage(self.health + 10000, self.origin + offset);
+        return;
     }
+    self dodamage(self.health + 10000, self.origin + offset);
 }
 
 // Namespace destructible/destructible
@@ -196,9 +196,9 @@ function complex_explosion(attacker, max_radius) {
     physics_explosion_and_rumble(self.origin, max_radius, 1);
     if (isdefined(attacker)) {
         self dodamage(20000, self.origin + offset, attacker);
-    } else {
-        self dodamage(20000, self.origin + offset);
+        return;
     }
+    self dodamage(20000, self.origin + offset);
 }
 
 // Namespace destructible/destructible
@@ -281,9 +281,9 @@ function destructible_car_grenade_stuck_explode(missile) {
     missile waittill(#"explode");
     if (isdefined(owner)) {
         self dodamage(self.health + 10000, self.origin + (0, 0, 1), owner);
-    } else {
-        self dodamage(self.health + 10000, self.origin + (0, 0, 1));
+        return;
     }
+    self dodamage(self.health + 10000, self.origin + (0, 0, 1));
 }
 
 // Namespace destructible/destructible

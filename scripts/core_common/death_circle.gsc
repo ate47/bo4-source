@@ -46,7 +46,7 @@ function __init__() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5293009a, Offset: 0x5c8
 // Size: 0xfc
 function init() {
@@ -310,15 +310,15 @@ function function_55bf22ef() {
 }
 
 // Namespace death_circle/death_circle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa27f32d4, Offset: 0x1870
 // Size: 0x5c
 function function_b57e3cde(enabled) {
     if (enabled) {
         self flagsys::set(#"hash_3bd867e0639cb28e");
-    } else {
-        self flagsys::clear(#"hash_3bd867e0639cb28e");
+        return;
     }
+    self flagsys::clear(#"hash_3bd867e0639cb28e");
 }
 
 // Namespace death_circle/death_circle
@@ -656,59 +656,59 @@ function private function_dc15ad60() {
                 player clientfield::set("outsidedeathcircle", 0);
                 player hide_effects();
                 player function_ce0f27e0();
-            } else {
-                distsq = distance2dsquared(player.origin, origin);
-                if (distsq > radiussq && !player function_dca12a73()) {
-                    level.var_a8077fea[level.var_a8077fea.size] = player;
-                    if (!isdefined(player.var_b8328141)) {
-                        player.var_b8328141 = time + level.deathcircle.var_55ad5e4;
-                    }
-                    damage = level.deathcircle.damage;
-                    if (!isdefined(player.var_6cd69660)) {
-                        player.var_6cd69660 = 0;
-                    }
-                    if (player.var_6cd69660 == 0 && time + level.deathcircle.var_55ad5e4 < player.var_b8328141) {
-                        player.var_b8328141 = time + level.deathcircle.var_55ad5e4;
-                    } else if (player.var_6cd69660 != 0 && time + level.deathcircle.var_c3bf31b < player.var_b8328141) {
-                        player.var_b8328141 = time + level.deathcircle.var_c3bf31b;
-                    }
-                    if (time >= player.var_b8328141) {
-                        player.var_6cd69660 = player.var_6cd69660 + level.deathcircle.var_18fa918d;
-                        player.var_b8328141 = time + level.deathcircle.var_c3bf31b;
-                    }
-                    player.deathcircledamage = damage + player.var_6cd69660;
-                    if (player.deathcircledamage >= level.var_ab9cd581) {
-                        intensity = 3;
-                    } else if (player.deathcircledamage >= level.var_6c870a00) {
-                        intensity = 2;
-                    } else {
-                        intensity = 1;
-                    }
-                    player function_60d14da8(1);
-                    player clientfield::set("outsidedeathcircle", 1);
-                    player show_effects(intensity);
-                    player function_8bd303cc();
-                    if (dodamage) {
-                        damage = player.deathcircledamage;
-                        if (player hasperk(#"specialty_outlander")) {
-                            damage = int(ceil(damage * 0.5));
-                        }
-                        if (isdefined(player.var_a62dbeca)) {
-                            damage = int(min(player.var_a62dbeca, damage));
-                        }
-                        player dodamage(damage, origin, level.deathcircle, undefined, undefined, "MOD_DEATH_CIRCLE");
-                        player stats::function_d40764f3(#"hash_3498c2a577aa328e", int(damage));
-                        player match_record::function_34800eec(#"hash_3498c2a577aa328e", int(damage));
-                    }
-                } else {
-                    player function_60d14da8(0);
-                    player clientfield::set("outsidedeathcircle", 0);
-                    player hide_effects();
-                    player function_ce0f27e0();
-                    player.var_6cd69660 = 0;
+                continue;
+            }
+            distsq = distance2dsquared(player.origin, origin);
+            if (distsq > radiussq && !player function_dca12a73()) {
+                level.var_a8077fea[level.var_a8077fea.size] = player;
+                if (!isdefined(player.var_b8328141)) {
                     player.var_b8328141 = time + level.deathcircle.var_55ad5e4;
                 }
+                damage = level.deathcircle.damage;
+                if (!isdefined(player.var_6cd69660)) {
+                    player.var_6cd69660 = 0;
+                }
+                if (player.var_6cd69660 == 0 && time + level.deathcircle.var_55ad5e4 < player.var_b8328141) {
+                    player.var_b8328141 = time + level.deathcircle.var_55ad5e4;
+                } else if (player.var_6cd69660 != 0 && time + level.deathcircle.var_c3bf31b < player.var_b8328141) {
+                    player.var_b8328141 = time + level.deathcircle.var_c3bf31b;
+                }
+                if (time >= player.var_b8328141) {
+                    player.var_6cd69660 = player.var_6cd69660 + level.deathcircle.var_18fa918d;
+                    player.var_b8328141 = time + level.deathcircle.var_c3bf31b;
+                }
+                player.deathcircledamage = damage + player.var_6cd69660;
+                if (player.deathcircledamage >= level.var_ab9cd581) {
+                    intensity = 3;
+                } else if (player.deathcircledamage >= level.var_6c870a00) {
+                    intensity = 2;
+                } else {
+                    intensity = 1;
+                }
+                player function_60d14da8(1);
+                player clientfield::set("outsidedeathcircle", 1);
+                player show_effects(intensity);
+                player function_8bd303cc();
+                if (dodamage) {
+                    damage = player.deathcircledamage;
+                    if (player hasperk(#"specialty_outlander")) {
+                        damage = int(ceil(damage * 0.5));
+                    }
+                    if (isdefined(player.var_a62dbeca)) {
+                        damage = int(min(player.var_a62dbeca, damage));
+                    }
+                    player dodamage(damage, origin, level.deathcircle, undefined, undefined, "MOD_DEATH_CIRCLE");
+                    player stats::function_d40764f3(#"hash_3498c2a577aa328e", int(damage));
+                    player match_record::function_34800eec(#"hash_3498c2a577aa328e", int(damage));
+                }
+                continue;
             }
+            player function_60d14da8(0);
+            player clientfield::set("outsidedeathcircle", 0);
+            player hide_effects();
+            player function_ce0f27e0();
+            player.var_6cd69660 = 0;
+            player.var_b8328141 = time + level.deathcircle.var_55ad5e4;
         }
         if (dodamage) {
             var_f4d9a132 = gettime() + int(level.deathcircle.damageinterval * 1000);
@@ -818,7 +818,7 @@ function hide_effects() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc10f75e6, Offset: 0x3c40
 // Size: 0x48a
 function function_27d5d349() {
@@ -846,13 +846,13 @@ function function_27d5d349() {
             match_record::set_stat(#"death_circle", i, #"wait_sec", isdefined(circle.var_23216f37) ? circle.var_23216f37 : circle.waitsec);
             match_record::set_stat(#"death_circle", i, #"scale_sec", isdefined(circle.var_a301393a) ? circle.var_a301393a : circle.scalesec);
             match_record::set_stat(#"death_circle", i, #"final", 1);
-            break;
+            return;
         }
     }
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73c1a6c1, Offset: 0x40d8
 // Size: 0x7c
 function function_49443399() {
@@ -875,7 +875,7 @@ function function_9956f107() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3f66c07d, Offset: 0x41a0
 // Size: 0xe6
 function function_d66a3de1() {
@@ -896,7 +896,7 @@ function function_d66a3de1() {
 }
 
 // Namespace death_circle/death_circle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53cdf0f0, Offset: 0x4290
 // Size: 0x84
 function function_4dc40125() {
@@ -976,14 +976,14 @@ function private debug_loop() {
         while (1) {
             if (getdvarint(#"deathcircle_debug", 0)) {
                 var_36b41a8 = getdvarint(#"hash_411ea20c685d88c1", 1);
-                var_9f6ad7bb = getdvarint(#"hash_31a5138991bbbf63", -1);
+                debugindex = getdvarint(#"hash_31a5138991bbbf63", -1);
                 var_a15ea324 = getdvarint(#"hash_118a6d37e5aa4589", 0);
                 maxindex = level.deathcircles.size - 1;
-                if (var_9f6ad7bb >= 0) {
-                    circle = level.deathcircles[var_9f6ad7bb];
+                if (debugindex >= 0) {
+                    circle = level.deathcircles[debugindex];
                     if (isdefined(circle)) {
-                        color = circle_color(var_9f6ad7bb, maxindex);
-                        draw_circle(circle, var_9f6ad7bb, var_36b41a8, color, var_a15ea324);
+                        color = circle_color(debugindex, maxindex);
+                        draw_circle(circle, debugindex, var_36b41a8, color, var_a15ea324);
                     }
                 } else {
                     minimaporigins = getentarray("<unknown string>", "<unknown string>");
@@ -1100,10 +1100,10 @@ function private devgui_shuffle(count) {
                 shuffle_circles();
                 level.var_47947565[i] = level.deathcircles[level.deathcircles.size - 1].tracepos;
             }
-        } else {
-            level.var_47947565 = undefined;
-            shuffle_circles();
+            return;
         }
+        level.var_47947565 = undefined;
+        shuffle_circles();
     #/
 }
 

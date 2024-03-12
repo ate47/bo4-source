@@ -92,9 +92,8 @@ function is_active() {
 function private height_check(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     if (isdefined(attacker.origin) && isdefined(self.origin) && attacker.origin[2] > self.origin[2] + 40) {
         return damage;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace namespace_e01afe67/namespace_e01afe67
@@ -124,16 +123,16 @@ function private function_6a8979c9() {
     #/
     foreach (weapon in self getweaponslist(1)) {
         if (zm_loadout::is_hero_weapon(weapon) || isdefined(weapon.isriotshield) && weapon.isriotshield) {
-            self function_28602a03(weapon);
+            self lockweapon(weapon);
         } else if (!namespace_83dc3729::is_active() || !isarray(level.var_af806901) || !isdefined(level.var_af806901[weapon.name])) {
             self unlockweapon(weapon);
         }
         if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
             if (self function_635f9c02(weapon)) {
-                self function_28602a03(weapon.dualwieldweapon);
-            } else {
-                self unlockweapon(weapon.dualwieldweapon);
+                self lockweapon(weapon.dualwieldweapon);
+                continue;
             }
+            self unlockweapon(weapon.dualwieldweapon);
         }
     }
 }

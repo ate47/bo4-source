@@ -45,7 +45,9 @@ function player_keyline_render(localclientnum, oldval, newval, bnewent, binitial
     if (newval && !(isdefined(self.var_a7656c04) && self.var_a7656c04)) {
         self.var_a7656c04 = 1;
         self playrenderoverridebundle(#"hash_1c90592671f4c6e9");
-    } else if (isdefined(self.var_a7656c04) && self.var_a7656c04) {
+        return;
+    }
+    if (isdefined(self.var_a7656c04) && self.var_a7656c04) {
         self.var_a7656c04 = 0;
         self stoprenderoverridebundle(#"hash_1c90592671f4c6e9");
     }
@@ -62,7 +64,9 @@ function enemy_keyline_render(localclientnum, oldval, newval, bnewent, binitials
     if (newval && !(isdefined(self.var_a7656c04) && self.var_a7656c04)) {
         self.var_a7656c04 = 1;
         self playrenderoverridebundle(#"hash_1dced6114b72a678");
-    } else if (isdefined(self.var_a7656c04) && self.var_a7656c04) {
+        return;
+    }
+    if (isdefined(self.var_a7656c04) && self.var_a7656c04) {
         self.var_a7656c04 = 0;
         self stoprenderoverridebundle(#"hash_1dced6114b72a678");
     }
@@ -80,9 +84,9 @@ function enemyobj_keyline_render(localclientnum, oldval, newval, bnewent, biniti
         self playrenderoverridebundle(#"hash_46b7dcb7342c64a2");
         self mapshaderconstant(localclientnum, 0, "scriptVector3", 1.5, 1, 1, 1);
         self mapshaderconstant(localclientnum, 0, "scriptVector4", 0.6, 0, 0, 0);
-    } else {
-        self stoprenderoverridebundle(#"hash_46b7dcb7342c64a2");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_46b7dcb7342c64a2");
 }
 
 // Namespace ct_core/ct_core
@@ -92,9 +96,9 @@ function enemyobj_keyline_render(localclientnum, oldval, newval, bnewent, biniti
 function objective_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval > 0) {
         self playrenderoverridebundle(#"rob_objective");
-    } else {
-        self stoprenderoverridebundle(#"rob_objective");
+        return;
     }
+    self stoprenderoverridebundle(#"rob_objective");
 }
 
 // Namespace ct_core/ct_core
@@ -107,9 +111,9 @@ function actor_keyline_render(localclientnum, oldval, newval, bnewent, binitials
     }
     if (newval) {
         self playrenderoverridebundle(#"hash_1dced6114b72a678");
-    } else {
-        self stoprenderoverridebundle(#"hash_1dced6114b72a678");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_1dced6114b72a678");
 }
 
 // Namespace ct_core/ct_core
@@ -122,9 +126,9 @@ function enemy_vehicle_keyline_render(localclientnum, oldval, newval, bnewent, b
     }
     if (newval) {
         self playrenderoverridebundle(#"rob_sonar_set_enemyequip");
-    } else {
-        self stoprenderoverridebundle(#"rob_sonar_set_enemyequip");
+        return;
     }
+    self stoprenderoverridebundle(#"rob_sonar_set_enemyequip");
 }
 
 // Namespace ct_core/ct_core
@@ -134,9 +138,9 @@ function enemy_vehicle_keyline_render(localclientnum, oldval, newval, bnewent, b
 function set_vip(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 2) {
         self function_79ea07a3(1);
-    } else {
-        self function_79ea07a3(0);
+        return;
     }
+    self function_79ea07a3(0);
 }
 
 // Namespace ct_core/ct_core
@@ -146,9 +150,9 @@ function set_vip(local_client_num, oldval, newval, bnewent, binitialsnap, fieldn
 function enemy_on_radar(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self enableonradar();
-    } else {
-        self disableonradar();
+        return;
     }
+    self disableonradar();
 }
 
 // Namespace ct_core/ct_core
@@ -160,9 +164,9 @@ function animate_spawn_beacon(localclientnum, oldval, newval, bnewent, binitials
         self playrenderoverridebundle(#"rob_sonar_set_enemyequip");
         self useanimtree("generic");
         self setanimrestart(#"o_spawn_beacon_deploy", 1, 0, 1);
-    } else {
-        self stoprenderoverridebundle(#"rob_sonar_set_enemyequip");
-        playfx(localclientnum, "explosions/fx_exp_dest_barrel_lg", self.origin);
+        return;
     }
+    self stoprenderoverridebundle(#"rob_sonar_set_enemyequip");
+    playfx(localclientnum, "explosions/fx_exp_dest_barrel_lg", self.origin);
 }
 

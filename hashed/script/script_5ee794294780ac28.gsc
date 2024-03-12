@@ -114,10 +114,10 @@ function private on_ai_killed(params) {
         player.var_e47444a5[player.var_e47444a5.size] = w_root;
         if (player.var_e47444a5.size == level.var_60aa7ebf) {
             player zm_trial_util::function_63060af4(1);
-        } else {
-            player zm_trial_util::function_2190356a(player.var_e47444a5.size);
-            player zm_trial_util::function_c2cd0cba(level.var_60aa7ebf);
+            return;
         }
+        player zm_trial_util::function_2190356a(player.var_e47444a5.size);
+        player zm_trial_util::function_c2cd0cba(level.var_60aa7ebf);
     }
 }
 

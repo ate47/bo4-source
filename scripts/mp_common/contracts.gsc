@@ -105,24 +105,24 @@ function contract_kills(data) {
         switch (weapon.statname) {
         case #"dart":
             player function_fd9fb79b(#"contract_mp_dart_kills");
-            break;
+            return;
         case #"ac130":
             player function_fd9fb79b(#"contract_mp_gunship_kills");
-            break;
+            return;
         case #"recon_car":
             player function_fd9fb79b(#"contract_mp_rcxd_kills");
-            break;
+            return;
         case #"planemortar":
             player function_fd9fb79b(#"contract_mp_lightning_strike");
-            break;
+            return;
         case #"remote_missile":
             player function_fd9fb79b(#"contract_mp_hellstorm_kills");
-            break;
+            return;
         case #"ai_tank_marker":
             player function_fd9fb79b(#"contract_mp_mantis_kills");
-            break;
+            return;
         default:
-            break;
+            return;
         }
     }
 }
@@ -212,7 +212,9 @@ function on_ekia(weapon) {
     if (var_97f022b3 >= 5) {
         if (loadout_primary_weapon === weapon && var_2d9746d0 >= 5) {
             player function_fd9fb79b(#"hash_d18e3651f508489");
-        } else if (loadout_secondary_weapon === weapon && var_31d860d9 >= 5) {
+            return;
+        }
+        if (loadout_secondary_weapon === weapon && var_31d860d9 >= 5) {
             player function_fd9fb79b(#"hash_469703d9a67cf0dd");
         }
     }

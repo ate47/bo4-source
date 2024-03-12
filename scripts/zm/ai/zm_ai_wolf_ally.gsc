@@ -154,7 +154,9 @@ function private function_6ca1cd82(entity, player, duration, color) {
                     /#
                         line(locomotion_target, var_bf50a54d, (1, 1, 0));
                     #/
-                } else if (isdefined(self.favoriteenemy)) {
+                    continue;
+                }
+                if (isdefined(self.favoriteenemy)) {
                     /#
                         line(self.favoriteenemy getcentroid(), var_bf50a54d, (1, 1, 0));
                     #/
@@ -219,18 +221,18 @@ function private get_favorite_enemy(entity) {
         if (isdefined(player_owner)) {
             var_53a7e303 = distancesquared(player_owner.origin, targets[i].origin);
             height_difference = abs(player_owner.origin[2] - targets[i].origin[2]);
-            jumpiffalse(var_53a7e303 > 202500 || height_difference > 180) LOC_00000172;
-        } else {
-        LOC_00000172:
-            if (!function_bd0a9007(entity, targets[i])) {
+            if (var_53a7e303 > 202500 || height_difference > 180) {
                 continue;
             }
-            if (isdefined(targets[i].var_15da7e3f) && gettime() < targets[i].var_15da7e3f + 1000) {
-                continue;
-            }
-            targets[i].var_eadd94e6 = distancesquared(entity.origin, targets[i].origin);
-            valid_targets[valid_targets.size] = targets[i];
         }
+        if (!function_bd0a9007(entity, targets[i])) {
+            continue;
+        }
+        if (isdefined(targets[i].var_15da7e3f) && gettime() < targets[i].var_15da7e3f + 1000) {
+            continue;
+        }
+        targets[i].var_eadd94e6 = distancesquared(entity.origin, targets[i].origin);
+        valid_targets[valid_targets.size] = targets[i];
     }
     if (valid_targets.size > 0) {
         if (valid_targets.size > 1) {
@@ -277,7 +279,9 @@ function private function_af59b7a5(entity) {
                 entity setgoal(locomotion_target);
             }
         }
-    } else if (isdefined(player_owner.last_valid_position)) {
+        return;
+    }
+    if (isdefined(player_owner.last_valid_position)) {
         var_3050773c = distance2d(entity.origin, player_owner.last_valid_position);
         var_7f215628 = abs(entity.origin[2] - player_owner.last_valid_position[2]);
         var_b270b65e = 450 / 2;
@@ -299,11 +303,15 @@ function private function_af59b7a5(entity) {
                     entity setgoal(player_owner.last_valid_position);
                 }
             }
-        } else if (var_3050773c <= 300 && entity.var_951e8469 < 1.5) {
+            return;
+        }
+        if (var_3050773c <= 300 && entity.var_951e8469 < 1.5) {
             player_owner.var_15da7e3f = undefined;
             entity.var_951e8469 = entity.var_951e8469 + float(function_60d95f53()) / 1000;
             entity setgoal(entity.origin);
-        } else if (gettime() > entity.next_move_time) {
+            return;
+        }
+        if (gettime() > entity.next_move_time) {
             entity pick_new_movement_point();
         }
     }
@@ -319,9 +327,9 @@ function private function_dba8e076(entity) {
         players = getplayers();
         if (players.size > 0) {
             entity.var_93a62fe = arraygetclosest(entity.origin, players);
-        } else {
-            entity.var_93a62fe = undefined;
+            return;
         }
+        entity.var_93a62fe = undefined;
     }
 }
 
@@ -441,7 +449,7 @@ function private function_f7c7a416(entity) {
                         break;
                     }
                 }
-                hit_enemy dodamage(n_base_damage, entity.origin, var_743a2772, entity, undefined, "MOD_MELEE", 0, level.var_78032351);
+                hit_enemy dodamage(n_base_damage, entity.origin, var_743a2772, entity, undefined, "MOD_MELEE", 0, level.weapondefault);
                 if (!isalive(hit_enemy)) {
                     if (randomfloat(1) <= 0.8) {
                         hit_enemy zombie_utility::gib_random_part();

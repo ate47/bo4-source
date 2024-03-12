@@ -29,7 +29,7 @@ function autoexec init() {
 }
 
 // Namespace globallogic_actor/globallogic_actor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3de9faec, Offset: 0x1b0
 // Size: 0x24
 function callback_actorspawned(spawner) {
@@ -37,7 +37,7 @@ function callback_actorspawned(spawner) {
 }
 
 // Namespace globallogic_actor/globallogic_actor
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x6bcffa6c, Offset: 0x1e0
 // Size: 0xf3a
 function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, boneindex, modelindex, surfacetype, vsurfacenormal) {
@@ -206,18 +206,18 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
             lpattackguid = eattacker getguid();
             lpattackname = eattacker.name;
             lpattackerteam = eattacker.pers[#"team"];
-        } else {
-            lpattacknum = -1;
-            var_c8fa9c41 = 0;
-            lpattackguid = "";
-            lpattackname = "";
-            lpattackerteam = "world";
+            return;
         }
+        lpattacknum = -1;
+        var_c8fa9c41 = 0;
+        lpattackguid = "";
+        lpattackname = "";
+        lpattackerteam = "world";
     }
 }
 
 // Namespace globallogic_actor/globallogic_actor
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x583a502d, Offset: 0x1128
 // Size: 0x224
 function callback_actorkilled(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -247,7 +247,7 @@ function callback_actorkilled(einflictor, eattacker, idamage, smeansofdeath, wea
 }
 
 // Namespace globallogic_actor/globallogic_actor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f2f2e7, Offset: 0x1358
 // Size: 0x3c
 function callback_actorcloned(original) {

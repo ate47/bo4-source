@@ -117,7 +117,8 @@ function private _calculateadjustedpathsegments(params) {
                 currentdistance = currentdistance + distancetonextpoint;
                 currentpoint = nextpoint;
                 continue;
-            } else if (totaldistance >= segmentlength) {
+            }
+            if (totaldistance >= segmentlength) {
                 distancetonextadjusted = segmentlength - currentdistance;
                 ratiotonextadjusted = distancetonextadjusted / distancetonextpoint;
                 currentpoint = lerpvector(currentpoint, nextpoint, ratiotonextadjusted);
@@ -285,25 +286,25 @@ function private _evaluateadjustedpath(params) {
             if (isdefined(previouspointdanger) && previouspointdanger.inner < currentpointdanger.inner && previouspointdanger.outer > 15) {
                 params.adjustedpathsegment--;
             }
-        } else {
-            if (currentpointdanger.outer <= 50 && currentpointdanger.inner <= 15) {
-                if (isdefined(nextpointdanger) && nextpointdanger.inner <= 15) {
+            return;
+        }
+        if (currentpointdanger.outer <= 50 && currentpointdanger.inner <= 15) {
+            if (isdefined(nextpointdanger) && nextpointdanger.inner <= 15) {
+                params.adjustedpathsegment++;
+            }
+        }
+        if (currentpathsegment == params.adjustedpathsegment) {
+            foreach (bot in params.bots) {
+                if (strategiccommandutility::isvalidbot(bot) && isalive(bot) && !bot haspath() && (!isdefined(bot.enemy) || !bot cansee(bot.enemy))) {
                     params.adjustedpathsegment++;
+                    break;
                 }
             }
-            if (currentpathsegment == params.adjustedpathsegment) {
-                foreach (bot in params.bots) {
-                    if (strategiccommandutility::isvalidbot(bot) && isalive(bot) && !bot haspath() && (!isdefined(bot.enemy) || !bot cansee(bot.enemy))) {
-                        params.adjustedpathsegment++;
-                        break;
-                    }
-                }
-            }
-            if (currentpathsegment == params.adjustedpathsegment) {
-                if (currentpointdanger.inner > 15) {
-                    if (isdefined(previouspointdanger) && previouspointdanger.inner < currentpointdanger.inner && previouspointdanger.outer > 15) {
-                        params.adjustedpathsegment--;
-                    }
+        }
+        if (currentpathsegment == params.adjustedpathsegment) {
+            if (currentpointdanger.inner > 15) {
+                if (isdefined(previouspointdanger) && previouspointdanger.inner < currentpointdanger.inner && previouspointdanger.outer > 15) {
+                    params.adjustedpathsegment--;
                 }
             }
         }
@@ -360,18 +361,18 @@ function private _setgoalpoint(bot, point, likelyenemyposition) {
             if (seatnum == 0) {
                 vehicle setgoal(point);
             }
-        } else {
-            navmeshpoint = getclosestpointonnavmesh(point, 200);
-            if (!isdefined(navmeshpoint)) {
-                navmeshpoint = point;
-            }
-            bot setgoal(navmeshpoint);
-            if (isdefined(likelyenemyposition) && isvec(likelyenemyposition)) {
-                bot.var_2925fedc = likelyenemyposition;
-            } else {
-                bot.var_2925fedc = undefined;
-            }
+            return;
         }
+        navmeshpoint = getclosestpointonnavmesh(point, 200);
+        if (!isdefined(navmeshpoint)) {
+            navmeshpoint = point;
+        }
+        bot setgoal(navmeshpoint);
+        if (isdefined(likelyenemyposition) && isvec(likelyenemyposition)) {
+            bot.var_2925fedc = likelyenemyposition;
+            return;
+        }
+        bot.var_2925fedc = undefined;
     }
 }
 
@@ -384,14 +385,14 @@ function private function_a1574a8d(bot, trigger, likelyenemyposition) {
         if (bot isinvehicle()) {
             vehicle = bot getvehicleoccupied();
             vehicle setgoal(trigger);
-        } else {
-            bot setgoal(trigger);
-            if (isdefined(likelyenemyposition) && isvec(likelyenemyposition)) {
-                bot.var_2925fedc = likelyenemyposition;
-            } else {
-                bot.var_2925fedc = undefined;
-            }
+            return;
         }
+        bot setgoal(trigger);
+        if (isdefined(likelyenemyposition) && isvec(likelyenemyposition)) {
+            bot.var_2925fedc = likelyenemyposition;
+            return;
+        }
+        bot.var_2925fedc = undefined;
     }
 }
 
@@ -748,11 +749,11 @@ function private strategyclearareatoattackobjectupdate(planner, params) {
                 }
                 bot.goalradius = 512;
             }
-        } else {
-            _cleargameobject(bot);
-            bot.goalradius = var_ba6c6b41;
-            _setgoalpoint(bot, currentcenter, function_d065f4fd(params.adjustedpath, currentpathsegment, 3));
+            continue;
         }
+        _cleargameobject(bot);
+        bot.goalradius = var_ba6c6b41;
+        _setgoalpoint(bot, currentcenter, function_d065f4fd(params.adjustedpath, currentpathsegment, 3));
     }
     if (isdefined(params.object) && params.object.trigger istriggerenabled()) {
         return 3;
@@ -790,10 +791,10 @@ function private strategyclearareatodefendobjectupdate(planner, params) {
             if (currentpathsegment >= params.adjustedpath.size - 2) {
                 _setgoalpoint(bot, params.object.origin);
                 bot.goalradius = 512;
-            } else {
-                _setgoalpoint(bot, currentcenter);
-                bot.goalradius = var_ba6c6b41;
+                continue;
             }
+            _setgoalpoint(bot, currentcenter);
+            bot.goalradius = var_ba6c6b41;
         }
     }
     if (params.object.trigger istriggerenabled()) {
@@ -834,10 +835,10 @@ function private strategyclearareatoescortupdate(planner, params) {
                     _setgoalpoint(bot, escort.origin);
                     bot.goalradius = 512;
                 }
-            } else {
-                _setgoalpoint(bot, currentcenter);
-                bot.goalradius = var_ba6c6b41;
+                continue;
             }
+            _setgoalpoint(bot, currentcenter);
+            bot.goalradius = var_ba6c6b41;
         }
     }
     return 3;
@@ -877,10 +878,10 @@ function private strategyclearareatoobjectiveupdate(planner, params) {
                 if (isdefined(params.objective[#"radius"])) {
                     bot.goalradius = params.objective[#"radius"];
                 }
-            } else {
-                _setgoalpoint(bot, currentcenter, function_d065f4fd(params.adjustedpath, currentpathsegment, 3));
-                bot.goalradius = var_ba6c6b41;
+                continue;
             }
+            _setgoalpoint(bot, currentcenter, function_d065f4fd(params.adjustedpath, currentpathsegment, 3));
+            bot.goalradius = var_ba6c6b41;
         }
     }
     if (isdefined(params.objective) && objective_state(params.objective[#"id"]) == "active") {
@@ -1100,7 +1101,6 @@ function private function_2083115a(planner, constants) {
             return 1;
         case #"escortbiped":
             return 1;
-            break;
         }
     }
     return 0;
@@ -1201,31 +1201,30 @@ function private function_942e45dc(planner, params) {
                     botchains[botchains.size] = var_ced34a87;
                 }
             }
-            jumpcmp(botchains.size < 0) LOC_00000358;
-            bot thread bot_chain::function_cf70f2fe(botchains[randomint(botchains.size)]);
-            if (!isdefined(crumb.var_2777474d)) {
-                crumb.var_2777474d = [];
-            } else if (!isarray(crumb.var_2777474d)) {
-                crumb.var_2777474d = array(crumb.var_2777474d);
-            }
-            crumb.var_2777474d[botnum] = 1;
-        } else {
-        LOC_00000358:
-            component = crumb.var_36f0c06d;
-            targetvol = undefined;
-            if (isdefined(component)) {
-                if (isdefined(component.var_2956bff4)) {
-                    targetvol = component.var_2956bff4;
-                } else if (isdefined(component.e_objective) && isdefined(component.e_objective.mdl_gameobject)) {
-                    targetvol = component.e_objective.mdl_gameobject.trigger;
+            if (botchains.size > 0) {
+                bot thread bot_chain::function_cf70f2fe(botchains[randomint(botchains.size)]);
+                if (!isdefined(crumb.var_2777474d)) {
+                    crumb.var_2777474d = [];
+                } else if (!isarray(crumb.var_2777474d)) {
+                    crumb.var_2777474d = array(crumb.var_2777474d);
                 }
-            } else if (isdefined(crumb.trigger)) {
-                targetvol = crumb.trigger;
-            }
-            if (isdefined(targetvol)) {
-                bot setgoal(targetvol);
+                crumb.var_2777474d[botnum] = 1;
                 continue;
             }
+        }
+        component = crumb.var_36f0c06d;
+        targetvol = undefined;
+        if (isdefined(component)) {
+            if (isdefined(component.var_2956bff4)) {
+                targetvol = component.var_2956bff4;
+            } else if (isdefined(component.e_objective) && isdefined(component.e_objective.mdl_gameobject)) {
+                targetvol = component.e_objective.mdl_gameobject.trigger;
+            }
+        } else if (isdefined(crumb.trigger)) {
+            targetvol = crumb.trigger;
+        }
+        if (isdefined(targetvol)) {
+            bot setgoal(targetvol);
         }
     }
     return 1;
@@ -1357,9 +1356,9 @@ function private strategyrushattackobjectinit(planner, params) {
     foreach (bot in params.bots) {
         if (params.object.triggertype == "proximity") {
             function_a1574a8d(bot, params.object.trigger);
-        } else {
-            _assigngameobject(bot, params.object);
+            continue;
         }
+        _assigngameobject(bot, params.object);
     }
     return 1;
 }

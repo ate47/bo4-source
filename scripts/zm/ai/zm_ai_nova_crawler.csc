@@ -54,9 +54,9 @@ function function_d8505ab6(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_c81db9a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self thread postfx::playpostfxbundle(#"hash_2083fc2cc0fee308");
-    } else {
-        self postfx::exitpostfxbundle(#"hash_2083fc2cc0fee308");
+        return;
     }
+    self postfx::exitpostfxbundle(#"hash_2083fc2cc0fee308");
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
@@ -66,9 +66,9 @@ function function_c81db9a1(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_f8947dfe(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self thread function_4b3c6d28();
-    } else {
-        self postfx::exitpostfxbundle(#"hash_78fa24e9920e1e07");
+        return;
     }
+    self postfx::exitpostfxbundle(#"hash_78fa24e9920e1e07");
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler

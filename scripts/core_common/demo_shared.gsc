@@ -154,7 +154,8 @@ function add_actor_bookmark_kill_time() {
         if (!self.actor_bookmark_kill_times[i]) {
             oldest_index = i;
             break;
-        } else if (oldest_time > self.actor_bookmark_kill_times[i]) {
+        }
+        if (oldest_time > self.actor_bookmark_kill_times[i]) {
             oldest_index = i;
             oldest_time = self.actor_bookmark_kill_times[i];
         }
@@ -187,7 +188,8 @@ function watch_actor_bookmarks() {
             for (time_index = 0; time_index < level.actor_bookmark_kill_times_count; time_index++) {
                 if (!isdefined(player.actor_bookmark_kill_times) || !player.actor_bookmark_kill_times[time_index]) {
                     break;
-                } else if (oldest_allowed > player.actor_bookmark_kill_times[time_index]) {
+                }
+                if (oldest_allowed > player.actor_bookmark_kill_times[time_index]) {
                     player.actor_bookmark_kill_times[time_index] = 0;
                     break;
                 }

@@ -48,9 +48,9 @@ function force_stream_magicbox(localclientnum, oldval, newval, bnewent, binitial
     var_d80c44f = self zbarriergetpiece(2);
     if (newval) {
         forcestreamxmodel(var_d80c44f.model);
-    } else {
-        stopforcestreamingxmodel(var_d80c44f.model);
+        return;
     }
+    stopforcestreamingxmodel(var_d80c44f.model);
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -61,9 +61,9 @@ function force_stream_magicbox_leave(localclientnum, oldval, newval, bnewent, bi
     var_e6289732 = self zbarriergetpiece(1);
     if (newval) {
         forcestreamxmodel(var_e6289732.model);
-    } else {
-        stopforcestreamingxmodel(var_e6289732.model);
+        return;
     }
+    stopforcestreamingxmodel(var_e6289732.model);
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -196,7 +196,9 @@ function function_b4b9937(localclientnum, newval, str_state) {
                     self function_be97e893(localclientnum);
                 }
             }
-        } else if (isdefined(self) && str_state == "leave") {
+            return;
+        }
+        if (isdefined(self) && str_state == "leave") {
             util::playfxontag(localclientnum, level._effect[#"hash_19f4dd97cbb87594"], self.var_ed9e4472, "tag_fx");
         }
     }
@@ -280,7 +282,9 @@ function function_b5807489(localclientnum, oldval, newval, bnewent, binitialsnap
             mdl_piece = self zbarriergetpiece(1);
             mdl_piece.tag_origin = mdl_piece gettagorigin("tag_origin");
             self.var_788272f2 = util::playfxontag(localclientnum, level._effect[#"fire_runner"], mdl_piece, "tag_origin");
-        } else if (isdefined(self.var_788272f2)) {
+            return;
+        }
+        if (isdefined(self.var_788272f2)) {
             stopfx(localclientnum, self.var_788272f2);
         }
     }

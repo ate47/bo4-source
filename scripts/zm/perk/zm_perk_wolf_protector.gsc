@@ -134,9 +134,9 @@ function on_ai_killed(s_params) {
             player.var_841cdb3 = 1;
             player thread function_ce74ad2e();
             player thread function_f3cd6eac();
-        } else {
-            player.var_841cdb3++;
+            return;
         }
+        player.var_841cdb3++;
     }
 }
 
@@ -156,9 +156,9 @@ function on_ai_damaged(s_params) {
             player.var_841cdb3 = 0;
             player thread function_ce74ad2e();
             player thread function_f3cd6eac();
-        } else {
-            player.var_2dc0d63c = player.var_2dc0d63c + var_c7364922;
+            return;
         }
+        player.var_2dc0d63c = player.var_2dc0d63c + var_c7364922;
     }
 }
 

@@ -236,11 +236,11 @@ function function_a87e7c22(subtarget) {
             wait(0.1);
             self stoprenderoverridebundle(#"hash_20bdbaa0db5eb57d", bone);
         }
-    } else {
-        self playrenderoverridebundle(#"hash_20bdbaa0db5eb57d");
-        wait(0.15);
-        self stoprenderoverridebundle(#"hash_20bdbaa0db5eb57d");
+        return;
     }
+    self playrenderoverridebundle(#"hash_20bdbaa0db5eb57d");
+    wait(0.15);
+    self stoprenderoverridebundle(#"hash_20bdbaa0db5eb57d");
 }
 
 // Namespace vehicle/vehicle_shared
@@ -349,7 +349,7 @@ function stop_exhaust(localclientnum) {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5ec2d3c3, Offset: 0x2568
 // Size: 0x88
 function boost_think(localclientnum) {
@@ -425,10 +425,9 @@ function function_5ce3e74e(localclientnum, var_1ca9b241) {
             if (isdefined(var_1ca9b241)) {
                 stopfx(localclientnum, var_1ca9b241);
             }
-            break;
-        } else {
-            waitframe(1);
+            return;
         }
+        waitframe(1);
     }
 }
 
@@ -477,10 +476,10 @@ function aircraft_dustkick() {
             speed = length(velocity);
             waittime = mapfloat(10, 100, 1, 0.2, speed);
             wait(waittime);
-        } else {
-            wait(1);
             continue;
         }
+        wait(1);
+        continue;
     }
 }
 
@@ -522,14 +521,14 @@ function addanimtolist(animitem, &liston, &listoff, playwhenoff, id, maxid) {
                 listoff = array(listoff);
             }
             listoff[listoff.size] = animitem;
-        } else {
-            if (!isdefined(liston)) {
-                liston = [];
-            } else if (!isarray(liston)) {
-                liston = array(liston);
-            }
-            liston[liston.size] = animitem;
+            return;
         }
+        if (!isdefined(liston)) {
+            liston = [];
+        } else if (!isarray(liston)) {
+            liston = array(liston);
+        }
+        liston[liston.size] = animitem;
     }
 }
 
@@ -636,7 +635,6 @@ function function_7927d9b1(settings, groupid) {
         return settings.var_98404a23;
     case 4:
         return settings.var_8e9936d5;
-        break;
     }
 }
 
@@ -876,9 +874,9 @@ function field_toggle_lights_group_handler4(localclientnum, oldval, newval, bnew
 function function_7baff7f6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self function_e1a2a256(1);
-    } else {
-        self function_e1a2a256(0);
+        return;
     }
+    self function_e1a2a256(0);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -958,7 +956,9 @@ function lights_flicker(localclientnum, duration = 8, var_5db078ba = 1) {
                 self lights_group_toggle(localclientnum, i, 0);
             }
         }
-    } else if (!state) {
+        return;
+    }
+    if (!state) {
         self lights_on(localclientnum);
         if (isdefined(settings) && isdefined(settings.lightgroups_numgroups)) {
             for (i = 0; i < settings.lightgroups_numgroups; i++) {
@@ -992,11 +992,17 @@ function flicker_lights(localclientnum, oldval, newval, bnewent, binitialsnap, f
     if (newval == 0) {
         self notify(#"cancel_flicker");
         self lights_off(localclientnum);
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         self thread lights_flicker(localclientnum);
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self thread lights_flicker(localclientnum, 20);
-    } else if (newval == 3) {
+        return;
+    }
+    if (newval == 3) {
         self notify(#"cancel_flicker");
     }
 }
@@ -1039,9 +1045,9 @@ function function_e5f88559(localclientnum, name) {
                 foreach (handleelement in handle) {
                     stopfx(localclientnum, handleelement);
                 }
-            } else {
-                stopfx(localclientnum, handle);
+                return;
             }
+            stopfx(localclientnum, handle);
         }
     }
 }
@@ -1114,9 +1120,9 @@ function field_toggle_sounds(localclientnum, oldval, newval, bnewent, binitialsn
     if (newval) {
         self disablevehiclesounds();
         self function_dcec5385();
-    } else {
-        self enablevehiclesounds();
+        return;
     }
+    self enablevehiclesounds();
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1156,12 +1162,16 @@ function toggle_flir_postfxbundle(localclientnum, oldval, newval, bnewent, binit
             player thread postfx::stoppostfxbundle("pstfx_flir");
         }
         update_ui_fullscreen_filter_model(localclientnum, 0);
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         if (player shouldchangescreenpostfx(localclientnum)) {
             player thread postfx::playpostfxbundle(#"pstfx_infrared");
             update_ui_fullscreen_filter_model(localclientnum, 2);
         }
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         should_change = 1;
         if (player shouldchangescreenpostfx(localclientnum)) {
             player thread postfx::playpostfxbundle(#"pstfx_flir");
@@ -1207,7 +1217,9 @@ function set_static_postfxbundle(localclientnum, oldval, newval, bnewent, biniti
         if (player postfx::function_556665f2(#"hash_15d46f4ad6539103")) {
             player thread postfx::stoppostfxbundle(#"hash_15d46f4ad6539103");
         }
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         var_8efa62c3 = 1;
         vehicle = getplayervehicle(player);
         if (isdefined(vehicle)) {
@@ -1256,7 +1268,9 @@ function field_toggle_treadfx(localclientnum, oldval, newval, bnewent, binitials
         } else {
             self kill_treads_forever();
         }
-    } else if (newval) {
+        return;
+    }
+    if (newval) {
         /#
             println("<unknown string>");
         #/
@@ -1271,15 +1285,15 @@ function field_toggle_treadfx(localclientnum, oldval, newval, bnewent, binitials
             #/
             self kill_treads_forever();
         }
-    } else {
-        /#
-            println("<unknown string>");
-        #/
-        if (isdefined(self.csf_no_tread)) {
-            self.csf_no_tread = 0;
-        }
-        self kill_treads_forever();
+        return;
     }
+    /#
+        println("<unknown string>");
+    #/
+    if (isdefined(self.csf_no_tread)) {
+        self.csf_no_tread = 0;
+    }
+    self kill_treads_forever();
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1292,15 +1306,15 @@ function field_use_engine_damage_sounds(localclientnum, oldval, newval, bnewent,
         case 0:
             self.engine_damage_low = 0;
             self.engine_damage_high = 0;
-            break;
+            return;
         case 1:
             self.engine_damage_low = 1;
             self.engine_damage_high = 0;
-            break;
+            return;
         case 1:
             self.engine_damage_low = 0;
             self.engine_damage_high = 1;
-            break;
+            return;
         }
     }
 }
@@ -1361,9 +1375,9 @@ function private function_2d24296(localclientnum, oldval, newval, bnewent, binit
         } else {
             self function_a29f490a();
         }
-    } else {
-        self function_f753359a();
+        return;
     }
+    self function_f753359a();
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1396,7 +1410,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
             }
             switch (newval) {
             case 0:
-                break;
+                continue;
             case 1:
                 if (isdefined(var_b5ddf091.warning) && isdefined(var_b5ddf091.tag_warning)) {
                     handle = util::playfxontag(localclientnum, var_b5ddf091.warning, self, var_b5ddf091.tag_warning);
@@ -1407,7 +1421,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                     self.fx_handles[#"malfunction"][self.fx_handles[#"malfunction"].size] = handle;
                 }
-                break;
+                continue;
             case 2:
                 if (isdefined(var_b5ddf091.active) && isdefined(var_b5ddf091.var_2f451e59)) {
                     handle = util::playfxontag(localclientnum, var_b5ddf091.active, self, var_b5ddf091.var_2f451e59);
@@ -1418,7 +1432,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                     self.fx_handles[#"malfunction"][self.fx_handles[#"malfunction"].size] = handle;
                 }
-                break;
+                continue;
             case 3:
                 if (isdefined(var_b5ddf091.fatal) && isdefined(var_b5ddf091.var_ceeccc7a)) {
                     handle = util::playfxontag(localclientnum, var_b5ddf091.fatal, self, var_b5ddf091.var_ceeccc7a);
@@ -1429,7 +1443,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                     self.fx_handles[#"malfunction"][self.fx_handles[#"malfunction"].size] = handle;
                 }
-                break;
+                continue;
             }
         }
     }
@@ -1454,16 +1468,16 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         switch (newval) {
         case 0:
-            break;
+            return;
         case 1:
             self.var_30141f5c = self playloopsound(var_ca456b21);
-            break;
+            return;
         case 2:
         case 3:
             if (oldval != 2 && oldval != 3) {
                 self.var_30141f5c = self playloopsound(var_b10574a9);
             }
-            break;
+            return;
         }
     }
 }
@@ -1527,7 +1541,9 @@ function function_18758bfa(localclientnum, oldval, newval, bnewent, binitialsnap
                 arrayremovevalue(self.fx_handles[#"smolder"], handle, 0);
             }
         }
-    } else if (isdefined(self.fx_handles) && isdefined(self.fx_handles[#"smolder"])) {
+        return;
+    }
+    if (isdefined(self.fx_handles) && isdefined(self.fx_handles[#"smolder"])) {
         foreach (handle in self.fx_handles[#"smolder"]) {
             stopfx(localclientnum, handle);
         }
@@ -1631,22 +1647,22 @@ function field_update_alert_level(localclientnum, oldval, newval, bnewent, binit
     settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     switch (newval) {
     case 0:
-        break;
+        return;
     case 1:
         if (isdefined(settings.unawarelightfx1)) {
             self.alert_light_fx_handles[0] = util::playfxontag(localclientnum, settings.unawarelightfx1, self, settings.lighttag1);
         }
-        break;
+        return;
     case 2:
         if (isdefined(settings.alertlightfx1)) {
             self.alert_light_fx_handles[0] = util::playfxontag(localclientnum, settings.alertlightfx1, self, settings.lighttag1);
         }
-        break;
+        return;
     case 3:
         if (isdefined(settings.combatlightfx1)) {
             self.alert_light_fx_handles[0] = util::playfxontag(localclientnum, settings.combatlightfx1, self, settings.lighttag1);
         }
-        break;
+        return;
     }
 }
 
@@ -1661,13 +1677,13 @@ function field_toggle_exhaustfx_handler(localclientnum, oldval, newval, bnewent,
         } else {
             self stop_exhaust(localclientnum);
         }
-    } else {
-        if (isdefined(self.csf_no_exhaust)) {
-            self.csf_no_exhaust = 0;
-        }
-        self stop_exhaust(localclientnum);
-        self play_exhaust(localclientnum);
+        return;
     }
+    if (isdefined(self.csf_no_exhaust)) {
+        self.csf_no_exhaust = 0;
+    }
+    self stop_exhaust(localclientnum);
+    self play_exhaust(localclientnum);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1677,13 +1693,17 @@ function field_toggle_exhaustfx_handler(localclientnum, oldval, newval, bnewent,
 function field_toggle_lights_handler(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self lights_off(localclientnum);
-    } else if (newval == 2) {
-        self lights_on(localclientnum, #"allies");
-    } else if (newval == 3) {
-        self lights_on(localclientnum, #"axis");
-    } else {
-        self lights_on(localclientnum);
+        return;
     }
+    if (newval == 2) {
+        self lights_on(localclientnum, #"allies");
+        return;
+    }
+    if (newval == 3) {
+        self lights_on(localclientnum, #"axis");
+        return;
+    }
+    self lights_on(localclientnum);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1737,9 +1757,9 @@ function function_d7a2c2f(localclientnum, oldval, newval, bnewent, binitialsnap,
         self notify(#"light_disable");
         self stop_stun_fx(localclientnum);
         self start_stun_fx(localclientnum);
-    } else {
-        self stop_stun_fx(localclientnum);
+        return;
     }
+    self stop_stun_fx(localclientnum);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2061,7 +2081,7 @@ function play_flare_hit_fx(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x1cc99b9f, Offset: 0x8eb0
 // Size: 0x5c
 function set_static_amount(staticamount) {

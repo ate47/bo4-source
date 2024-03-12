@@ -64,7 +64,9 @@ function function_9452b8f1(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval) {
         self.boltfx = function_239993de(localclientnum, "zm_ai/fx8_avo_elec_projectile", self, "tag_origin");
-    } else if (isdefined(self.boltfx)) {
+        return;
+    }
+    if (isdefined(self.boltfx)) {
         stopfx(localclientnum, self.boltfx);
         self.boltfx = undefined;
     }
@@ -81,7 +83,9 @@ function function_1d2d070c(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval) {
         self.phase_fx = function_239993de(localclientnum, "zm_ai/fx8_cata_elec_aura", self, "j_spine4");
-    } else if (isdefined(self.phase_fx)) {
+        return;
+    }
+    if (isdefined(self.phase_fx)) {
         stopfx(localclientnum, self.phase_fx);
         self.phase_fx = undefined;
     }
@@ -106,15 +110,15 @@ function private function_ae4cd3d4(localclientnum, oldval, newval, bnewent, bini
     switch (newval) {
     case 3:
         self.health_fx = function_239993de(localclientnum, "zm_ai/fx8_avo_elec_aura_main", self.jammer_interface, "j_spine4");
-        break;
+        return;
     case 2:
         self.health_fx = function_239993de(localclientnum, "zm_ai/fx8_cata_water_aura", self.jammer_interface, "j_spine4");
-        break;
+        return;
     case 1:
         self.health_fx = function_239993de(localclientnum, "zm_ai/fx8_avo_elec_aura_weakened", self.jammer_interface, "j_spine4");
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 

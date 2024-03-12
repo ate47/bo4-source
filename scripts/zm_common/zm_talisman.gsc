@@ -41,12 +41,12 @@ function on_player_connect() {
     }
     var_88049519 = 0;
     if (isdefined(s_talisman) && zm_custom::function_ff4557dc(s_talisman) && n_remaining > 0) {
-        var_240061ef = s_talisman.namehash;
-        if (isdefined(level.var_e1074d3e[var_240061ef])) {
-            if (isdefined(level.var_e1074d3e[var_240061ef].activate_talisman) && !(isdefined(level.var_e1074d3e[var_240061ef].is_activated[self.clientid]) && level.var_e1074d3e[var_240061ef].is_activated[self.clientid])) {
-                self thread function_954b9083(var_240061ef);
-                self thread [[ level.var_e1074d3e[var_240061ef].activate_talisman ]]();
-                level.var_e1074d3e[var_240061ef].is_activated[self.clientid] = 1;
+        str_talisman = s_talisman.namehash;
+        if (isdefined(level.var_e1074d3e[str_talisman])) {
+            if (isdefined(level.var_e1074d3e[str_talisman].activate_talisman) && !(isdefined(level.var_e1074d3e[str_talisman].is_activated[self.clientid]) && level.var_e1074d3e[str_talisman].is_activated[self.clientid])) {
+                self thread function_954b9083(str_talisman);
+                self thread [[ level.var_e1074d3e[str_talisman].activate_talisman ]]();
+                level.var_e1074d3e[str_talisman].is_activated[self.clientid] = 1;
                 self recordmapevent(30, gettime(), self.origin, level.round_number, s_talisman.var_2f8e25b8, isdefined(self.health) ? self.health : 0);
                 var_88049519 = 1;
             }
@@ -73,10 +73,10 @@ function on_player_disconnect() {
     s_talisman = getunlockableiteminfofromindex(var_e18c5d7, 4);
     var_ea4558f5 = function_b143666d(var_e18c5d7, 4);
     if (isdefined(s_talisman)) {
-        var_240061ef = s_talisman.namehash;
-        if (isdefined(level.var_e1074d3e[var_240061ef])) {
-            if (isdefined(level.var_e1074d3e[var_240061ef].activate_talisman) && isdefined(level.var_e1074d3e[var_240061ef].is_activated[self.clientid]) && level.var_e1074d3e[var_240061ef].is_activated[self.clientid]) {
-                level.var_e1074d3e[var_240061ef].is_activated[self.clientid] = 0;
+        str_talisman = s_talisman.namehash;
+        if (isdefined(level.var_e1074d3e[str_talisman])) {
+            if (isdefined(level.var_e1074d3e[str_talisman].activate_talisman) && isdefined(level.var_e1074d3e[str_talisman].is_activated[self.clientid]) && level.var_e1074d3e[str_talisman].is_activated[self.clientid]) {
+                level.var_e1074d3e[str_talisman].is_activated[self.clientid] = 0;
             }
         }
     }
@@ -86,9 +86,9 @@ function on_player_disconnect() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x203e3ee, Offset: 0x598
 // Size: 0xf2
-function register_talisman(var_240061ef, activate_talisman) {
+function register_talisman(str_talisman, activate_talisman) {
     /#
-        assert(isdefined(var_240061ef), "<unknown string>");
+        assert(isdefined(str_talisman), "<unknown string>");
     #/
     /#
         assert(isdefined(activate_talisman), "<unknown string>");
@@ -96,10 +96,10 @@ function register_talisman(var_240061ef, activate_talisman) {
     if (!isdefined(level.var_e1074d3e)) {
         level.var_e1074d3e = [];
     }
-    if (!isdefined(level.var_e1074d3e[var_240061ef])) {
-        level.var_e1074d3e[var_240061ef] = spawnstruct();
-        level.var_e1074d3e[var_240061ef].activate_talisman = activate_talisman;
-        level.var_e1074d3e[var_240061ef].is_activated = array();
+    if (!isdefined(level.var_e1074d3e[str_talisman])) {
+        level.var_e1074d3e[str_talisman] = spawnstruct();
+        level.var_e1074d3e[str_talisman].activate_talisman = activate_talisman;
+        level.var_e1074d3e[str_talisman].is_activated = array();
     }
 }
 
@@ -107,13 +107,13 @@ function register_talisman(var_240061ef, activate_talisman) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x13f1ec65, Offset: 0x698
 // Size: 0xfc
-function private function_954b9083(var_240061ef) {
+function private function_954b9083(str_talisman) {
     level endon(#"game_ended");
     self endon(#"disconnect");
     level waittill(#"start_zombie_round_logic");
     wait(getdvarint(#"hash_4e0eefe07702cb87", 60));
-    self stats::inc_stat(#"talisman_stats", var_240061ef, #"used", #"statvalue", 1);
+    self stats::inc_stat(#"talisman_stats", str_talisman, #"used", #"statvalue", 1);
     self zm_stats::increment_challenge_stat(#"talisman_used");
-    self reportlootconsume(var_240061ef, 1);
+    self reportlootconsume(str_talisman, 1);
 }
 

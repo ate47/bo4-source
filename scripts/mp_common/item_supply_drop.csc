@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace item_supply_drop/item_supply_drop
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3ca2d2ab, Offset: 0x188
 // Size: 0xe4
 function private __init__() {
@@ -26,19 +26,19 @@ function private __init__() {
 }
 
 // Namespace item_supply_drop/item_supply_drop
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc42d3e62, Offset: 0x278
 // Size: 0x94
 function supply_drop_parachute(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_336cece53ae2342f");
-    } else {
-        self stoprenderoverridebundle(#"hash_336cece53ae2342f");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_336cece53ae2342f");
 }
 
 // Namespace item_supply_drop/item_supply_drop
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x24b46875, Offset: 0x318
 // Size: 0x26c
 function supply_drop_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -56,7 +56,9 @@ function supply_drop_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
         playfx(localclientnum, "killstreaks/fx8_agr_drop_box_wz", self.origin, anglestoforward(self.angles), anglestoup(self.angles));
         playsound(localclientnum, #"hash_49b7275f4ddde9b8", self.origin);
         self.var_3a55f5cf = 1;
-    } else if (isdefined(self.fxent)) {
+        return;
+    }
+    if (isdefined(self.fxent)) {
         if (isdefined(self.fxent.supplydropfx)) {
             stopfx(localclientnum, self.fxent.supplydropfx);
         }

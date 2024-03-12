@@ -22,7 +22,7 @@
 #namespace globallogic_ui;
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x1a0
 // Size: 0x4
 function init() {
@@ -30,7 +30,7 @@ function init() {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcb400193, Offset: 0x1b0
 // Size: 0xae
 function setupcallbacks() {
@@ -98,7 +98,7 @@ function freegameplayhudelems() {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x8b3ac9cb, Offset: 0x4f8
 // Size: 0xc6
 function private function_34a60b2f(original_team, var_5002c793) {
@@ -113,7 +113,7 @@ function private function_34a60b2f(original_team, var_5002c793) {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfdb0c944, Offset: 0x5c8
 // Size: 0x464
 function menuautoassign(comingfrommenu, var_4c542e39) {
@@ -179,7 +179,7 @@ function menuautoassign(comingfrommenu, var_4c542e39) {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x23302ec8, Offset: 0xa38
 // Size: 0xec
 function updateobjectivetext() {
@@ -189,13 +189,13 @@ function updateobjectivetext() {
     }
     if (level.scorelimit > 0 || level.roundscorelimit > 0) {
         self setclientcgobjectivetext(util::getobjectivescoretext(self.pers[#"team"]));
-    } else {
-        self setclientcgobjectivetext(util::getobjectivetext(self.pers[#"team"]));
+        return;
     }
+    self setclientcgobjectivetext(util::getobjectivetext(self.pers[#"team"]));
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66615a8a, Offset: 0xb30
 // Size: 0x1c
 function closemenus() {
@@ -203,7 +203,7 @@ function closemenus() {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x55dbb3b9, Offset: 0xb58
 // Size: 0x2f4
 function beginclasschoice(comingfrommenu) {
@@ -242,7 +242,7 @@ function beginclasschoice(comingfrommenu) {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc7358ad, Offset: 0xe58
 // Size: 0x8c
 function showmainmenuforteam() {
@@ -255,7 +255,7 @@ function showmainmenuforteam() {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabe7a0ce, Offset: 0xef0
 // Size: 0x2bc
 function menuteam(team) {
@@ -295,7 +295,7 @@ function menuteam(team) {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x602be0a1, Offset: 0x11b8
 // Size: 0x1d4
 function menuspectator() {
@@ -323,7 +323,7 @@ function menuspectator() {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x551a46ae, Offset: 0x1398
 // Size: 0x6c0
 function menuclass(response, forcedclass, updatecharacterindex, closemenus) {
@@ -406,7 +406,7 @@ function menuclass(response, forcedclass, updatecharacterindex, closemenus) {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x21afc0c9, Offset: 0x1a60
 // Size: 0x2fc
 function function_9ed118fe(characterindex) {
@@ -446,7 +446,7 @@ function function_9ed118fe(characterindex) {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xec720f87, Offset: 0x1d68
 // Size: 0x5c
 function menuautocontrolplayer() {
@@ -457,7 +457,7 @@ function menuautocontrolplayer() {
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa38e33cd, Offset: 0x1dd0
 // Size: 0x16c
 function menupositiondraft(response, intpayload) {
@@ -465,7 +465,9 @@ function menupositiondraft(response, intpayload) {
         if (self draft::function_904deeb2()) {
             self player_role::clear();
         }
-    } else if (response == "randomcharacter") {
+        return;
+    }
+    if (response == "randomcharacter") {
         self player_role::clear();
         draft::assign_remaining_players(self);
         if (!(isdefined(level.inprematchperiod) && level.inprematchperiod)) {
@@ -474,17 +476,23 @@ function menupositiondraft(response, intpayload) {
                 self closeingamemenu();
             }
         }
-    } else if (response == "ready") {
+        return;
+    }
+    if (response == "ready") {
         self draft::client_ready();
-    } else if (response == "opendraft") {
+        return;
+    }
+    if (response == "opendraft") {
         self draft::open();
-    } else if (response == "closedraft") {
+        return;
+    }
+    if (response == "closedraft") {
         self draft::close();
     }
 }
 
 // Namespace globallogic_ui/globallogic_ui
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b0e94d4, Offset: 0x1f48
 // Size: 0x54
 function removespawnmessageshortly(delay) {

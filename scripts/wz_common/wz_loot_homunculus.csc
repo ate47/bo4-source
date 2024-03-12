@@ -13,7 +13,9 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
             if (isdefined(localclientnum)) {
                 if (eventstruct.state === 1) {
                     level thread function_5aaf5515(localclientnum, dynent);
-                } else if (eventstruct.state === 3) {
+                    return;
+                }
+                if (eventstruct.state === 3) {
                     if (dynent.targetname == "spring_event_homunculus") {
                         playfx(localclientnum, "player/fx8_plyr_emote_homunc_green_end", dynent.origin + vectorscale((0, 0, 1), 40), anglestoforward(dynent.angles));
                     } else if (dynent.targetname == "zombie_apoc_homunculus") {

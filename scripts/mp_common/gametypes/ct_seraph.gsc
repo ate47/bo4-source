@@ -167,10 +167,10 @@ function function_ba542258(mode) {
     self loadout::function_cdb86a18();
     if (level.ctdifficulty == 0) {
         namespace_56b8c026::setup();
-    } else {
-        ct_bots::function_a64b7003(1, 5);
-        level.var_7c65ae0d = undefined;
+        return;
     }
+    ct_bots::function_a64b7003(1, 5);
+    level.var_7c65ae0d = undefined;
 }
 
 // Namespace ct_seraph/ct_seraph
@@ -510,7 +510,6 @@ function spawn_robot(var_fd15f2f7) {
             ai_tank::function_9b13ebf(robot);
             robot thread function_e1e9b6fc();
             return robot;
-            break;
         }
         waitframe(1);
     }
@@ -638,11 +637,13 @@ function function_e5352267() {
     if (isdefined(level.var_a360ed5b)) {
         e_player thread ct_utils::function_b42ce622(#"downloading");
         level.var_cbcb0078 = 1;
-    } else if (level.var_33682199 == 0) {
-        e_player thread ct_utils::function_b42ce622(#"awaitingconnection");
-    } else {
-        e_player thread ct_utils::function_b42ce622(#"connection_lost");
+        return;
     }
+    if (level.var_33682199 == 0) {
+        e_player thread ct_utils::function_b42ce622(#"awaitingconnection");
+        return;
+    }
+    e_player thread ct_utils::function_b42ce622(#"connection_lost");
 }
 
 // Namespace ct_seraph/ct_seraph

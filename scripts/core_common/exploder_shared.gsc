@@ -45,13 +45,17 @@ function __main__() {
             }
             if (ents[i].model == "fx" && (!isdefined(ents[i].targetname) || ents[i].targetname != "exploderchunk")) {
                 ents[i] hide();
-            } else if (isdefined(ents[i].targetname) && ents[i].targetname == "exploder") {
+                continue;
+            }
+            if (isdefined(ents[i].targetname) && ents[i].targetname == "exploder") {
                 ents[i] hide();
                 ents[i] notsolid();
                 if (isdefined(ents[i].script_disconnectpaths)) {
                     ents[i] connectpaths();
                 }
-            } else if (isdefined(ents[i].targetname) && ents[i].targetname == "exploderchunk") {
+                continue;
+            }
+            if (isdefined(ents[i].targetname) && ents[i].targetname == "exploderchunk") {
                 ents[i] hide();
                 ents[i] notsolid();
                 if (isdefined(ents[i].spawnflags) && (ents[i].spawnflags & 1) == 1) {
@@ -151,9 +155,9 @@ function __main__() {
         }
         if (isdefined(exploder.targetname) && isdefined(acceptabletargetnames[exploder.targetname])) {
             ent.v[#"exploder_type"] = exploder.targetname;
-        } else {
-            ent.v[#"exploder_type"] = "normal";
+            continue;
         }
+        ent.v[#"exploder_type"] = "normal";
     }
     level.createfxexploders = [];
     for (i = 0; i < level.createfxent.size; i++) {
@@ -205,9 +209,9 @@ function exploder_before_load(num) {
 function exploder(exploder_id) {
     if (isint(exploder_id)) {
         activate_exploder(exploder_id);
-    } else {
-        activate_radiant_exploder(exploder_id);
+        return;
     }
+    activate_radiant_exploder(exploder_id);
 }
 
 // Namespace exploder/exploder_shared
@@ -577,11 +581,13 @@ function activate_individual_exploder(num) {
     }
     if (self.v[#"exploder_type"] == "exploder") {
         self thread brush_show();
-    } else if (self.v[#"exploder_type"] == "exploderchunk" || self.v[#"exploder_type"] == "exploderchunk visible") {
-        self thread brush_throw();
-    } else {
-        self thread brush_delete();
+        return;
     }
+    if (self.v[#"exploder_type"] == "exploderchunk" || self.v[#"exploder_type"] == "exploderchunk visible") {
+        self thread brush_throw();
+        return;
+    }
+    self thread brush_delete();
 }
 
 // Namespace exploder/exploder_shared

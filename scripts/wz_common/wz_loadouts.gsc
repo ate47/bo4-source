@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9d6f2fa4, Offset: 0xe0
 // Size: 0x206
 function private __init__() {
@@ -40,7 +40,7 @@ function private __init__() {
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x25e817c0, Offset: 0x2f0
 // Size: 0x6a
 function _get_item(itemname) {
@@ -51,7 +51,7 @@ function _get_item(itemname) {
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7d6ef93, Offset: 0x368
 // Size: 0xbc
 function function_a9b8fa06() {
@@ -73,7 +73,7 @@ function function_a9b8fa06() {
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a1af9e1, Offset: 0x430
 // Size: 0x1da
 function function_3fed57dd() {
@@ -97,28 +97,28 @@ function function_3fed57dd() {
         switch (level.deathcircleindex) {
         case 0:
             self function_58190f52();
-            break;
+            return;
         case 1:
             self function_6667abef();
-            break;
+            return;
         case 2:
             self function_7376c60d();
-            break;
+            return;
         case 3:
             self function_1f091d2f();
-            break;
+            return;
         case 4:
             self function_2d31b980();
-            break;
+            return;
         default:
             self function_58190f52();
-            break;
+            return;
         }
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7e5a4ad1, Offset: 0x618
 // Size: 0x16fa
 function function_9de0644f() {
@@ -187,7 +187,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            break;
+            return;
         case 2:
             smg = _get_item(#"smg_capacity_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(smg);
@@ -229,7 +229,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            break;
+            return;
         case 3:
             smg = _get_item(#"smg_standard_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(smg);
@@ -257,7 +257,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            break;
+            return;
         case 4:
             pistol = _get_item(#"pistol_burst_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(pistol);
@@ -292,7 +292,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            break;
+            return;
         case 5:
             pistol = _get_item(#"pistol_burst_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(pistol);
@@ -324,7 +324,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            break;
+            return;
         default:
             pistol = _get_item(#"pistol_burst_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(pistol);
@@ -352,13 +352,13 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            break;
+            return;
         }
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9d68a5c1, Offset: 0x1d20
 // Size: 0x224
 function private function_58190f52() {
@@ -370,20 +370,24 @@ function private function_58190f52() {
         ammo = _get_item(#"ammo_type_45_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(ammo);
         self item_world::function_de2018e3(ammo, self, var_fa3df96);
-    } else if (gametype == #"warzone_heavy_metal") {
+        return;
+    }
+    if (gametype == #"warzone_heavy_metal") {
         weapon = _get_item(#"lmg_spray_t8_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(weapon);
         self item_world::function_de2018e3(weapon, self, var_fa3df96);
         ammo = _get_item(#"ammo_type_556_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(ammo);
         self item_world::function_de2018e3(ammo, self, var_fa3df96);
-    } else if (gametype == #"hash_135cf8c5c6396f04") {
+        return;
+    }
+    if (gametype == #"hash_135cf8c5c6396f04") {
         function_f56a5599();
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa5529d52, Offset: 0x1f50
 // Size: 0x61c
 function private function_6667abef() {
@@ -415,7 +419,9 @@ function private function_6667abef() {
         health.count = 5;
         var_fa3df96 = self item_inventory::function_e66dcff5(health);
         self item_world::function_de2018e3(health, self, var_fa3df96);
-    } else if (gametype == #"warzone_heavy_metal") {
+        return;
+    }
+    if (gametype == #"warzone_heavy_metal") {
         weapon = _get_item(#"lmg_spray_t8_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(weapon);
         weapon.attachments = [];
@@ -441,13 +447,15 @@ function private function_6667abef() {
         health = _get_item(#"health_item_large");
         var_fa3df96 = self item_inventory::function_e66dcff5(health);
         self item_world::function_de2018e3(health, self, var_fa3df96);
-    } else if (gametype == #"hash_135cf8c5c6396f04") {
+        return;
+    }
+    if (gametype == #"hash_135cf8c5c6396f04") {
         function_f56a5599();
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x4348f358, Offset: 0x2578
 // Size: 0x2fc
 function private function_7376c60d() {
@@ -463,7 +471,9 @@ function private function_7376c60d() {
         health.count = 5;
         var_fa3df96 = self item_inventory::function_e66dcff5(health);
         self item_world::function_de2018e3(health, self, var_fa3df96);
-    } else if (gametype == #"warzone_heavy_metal") {
+        return;
+    }
+    if (gametype == #"warzone_heavy_metal") {
         weapon = _get_item(#"lmg_standard_t8_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(weapon);
         self item_world::function_de2018e3(weapon, self, var_fa3df96);
@@ -474,13 +484,15 @@ function private function_7376c60d() {
         health.count = 2;
         var_fa3df96 = self item_inventory::function_e66dcff5(health);
         self item_world::function_de2018e3(health, self, var_fa3df96);
-    } else if (gametype == #"hash_135cf8c5c6396f04") {
+        return;
+    }
+    if (gametype == #"hash_135cf8c5c6396f04") {
         function_f56a5599();
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfd0f2ae1, Offset: 0x2880
 // Size: 0x61c
 function private function_1f091d2f() {
@@ -506,7 +518,9 @@ function private function_1f091d2f() {
         armorshard.count = 5;
         var_fa3df96 = self item_inventory::function_e66dcff5(armorshard);
         self item_world::function_de2018e3(armorshard, self, var_fa3df96);
-    } else if (gametype == #"warzone_heavy_metal") {
+        return;
+    }
+    if (gametype == #"warzone_heavy_metal") {
         weapon = _get_item(#"lmg_standard_t8_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(weapon);
         weapon.attachments = [];
@@ -536,13 +550,15 @@ function private function_1f091d2f() {
         armor = _get_item(#"armor_item_large");
         var_fa3df96 = self item_inventory::function_e66dcff5(armor);
         self item_world::function_de2018e3(armor, self, var_fa3df96);
-    } else if (gametype == #"hash_135cf8c5c6396f04") {
+        return;
+    }
+    if (gametype == #"hash_135cf8c5c6396f04") {
         function_f56a5599();
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x932664e1, Offset: 0x2ea8
 // Size: 0x7dc
 function private function_2d31b980() {
@@ -574,7 +590,9 @@ function private function_2d31b980() {
         armorshard.count = 5;
         var_fa3df96 = self item_inventory::function_e66dcff5(armorshard);
         self item_world::function_de2018e3(armorshard, self, var_fa3df96);
-    } else if (gametype == #"warzone_heavy_metal") {
+        return;
+    }
+    if (gametype == #"warzone_heavy_metal") {
         weapon = _get_item(#"lmg_standard_t8_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(weapon);
         weapon.attachments = [];
@@ -615,13 +633,15 @@ function private function_2d31b980() {
         armorshard.count = 5;
         var_fa3df96 = self item_inventory::function_e66dcff5(armorshard);
         self item_world::function_de2018e3(armorshard, self, var_fa3df96);
-    } else if (gametype == #"hash_135cf8c5c6396f04") {
+        return;
+    }
+    if (gametype == #"hash_135cf8c5c6396f04") {
         function_f56a5599();
     }
 }
 
 // Namespace wz_loadouts/wz_loadouts
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1e19c61, Offset: 0x3690
 // Size: 0x32c
 function private function_f56a5599() {

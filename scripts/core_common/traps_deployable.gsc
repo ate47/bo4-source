@@ -61,7 +61,7 @@ class class_7b5e0861 {
             self.var_c59ba447 = self.m_health - int(self.m_health / 3);
         }
         self.m_empdamage = bundle.empdamage;
-        self.var_f81e0192 = bundle.var_980063fb;
+        self.var_f81e0192 = bundle.str_place;
         self.var_b4662b52 = bundle.var_6e2ae4a5;
         self.m_placeimmediately = bundle.placeimmediately;
         self.var_31e7e66a = bundle.var_d6011052;
@@ -180,11 +180,11 @@ function function_5726a711() {
                     printerror("<unknown string>" + var_5e63b00d.scriptbundlename);
                 #/
             }
-        } else {
-            /#
-                printerror("<unknown string>");
-            #/
+            continue;
         }
+        /#
+            printerror("<unknown string>");
+        #/
     }
 }
 
@@ -515,11 +515,11 @@ function function_186e3cc4(var_3af54106, owner, team) {
         if (isdefined(var_a8539bf6.mdl_gameobject)) {
             var_a8539bf6.mdl_gameobject thread gameobjects::check_gameobject_reenable();
         }
-    } else {
-        /#
-            printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
-        #/
+        return;
     }
+    /#
+        printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
+    #/
 }
 
 // Namespace traps_deployable/traps_deployable
@@ -533,11 +533,11 @@ function activate_trap(var_3af54106, origin, angles) {
     self._traps_deployable.var_18bbaaf9 = 1;
     if (function_77a3b730(type) && isdefined(level._traps_deployable.traptypes[type].onactivatetrap)) {
         player [[ level._traps_deployable.traptypes[type].onactivatetrap ]](var_3af54106, origin, angles);
-    } else {
-        /#
-            printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
-        #/
+        return;
     }
+    /#
+        printerror("<unknown string>" + var_3af54106.m_name + "<unknown string>");
+    #/
 }
 
 // Namespace traps_deployable/traps_deployable
@@ -633,14 +633,14 @@ function function_a879466e(var_3af54106, origin, angles) {
             placeable.is_placeable = 1;
             placeable.var_25404db4 = 1;
             placeable placeables::function_613a226a(1);
-        } else {
-            placeable = player placeables::spawnplaceable(level._traps_deployable.traptypes[type].onplacecallback, level._traps_deployable.traptypes[type].oncancelcallback, onmovecallback, level._traps_deployable.traptypes[type].onshutdowncallback, level._traps_deployable.traptypes[type].ondeathcallback, level._traps_deployable.traptypes[type].onempcallback, level._traps_deployable.traptypes[type].ondamagecallback, level._traps_deployable.traptypes[type].var_d0dd7e76, var_3af54106.m_model, var_3af54106.var_e84fc5dc, var_3af54106.var_28f1ce55, var_3af54106.m_spawnsentity, var_3af54106.var_656cbe2d, var_3af54106.m_timeout, var_3af54106.m_health, var_3af54106.m_empdamage, var_3af54106.var_f81e0192, var_3af54106.var_b4662b52, var_3af54106.m_placeimmediately, level._traps_deployable.traptypes[type].damagewrapper);
-            placeable.var_3af54106 = var_3af54106;
-            placeable.is_placeable = 1;
-            placeable.var_25404db4 = 1;
-            placeable placeables::function_613a226a(1);
-            placeable notsolid();
+            return;
         }
+        placeable = player placeables::spawnplaceable(level._traps_deployable.traptypes[type].onplacecallback, level._traps_deployable.traptypes[type].oncancelcallback, onmovecallback, level._traps_deployable.traptypes[type].onshutdowncallback, level._traps_deployable.traptypes[type].ondeathcallback, level._traps_deployable.traptypes[type].onempcallback, level._traps_deployable.traptypes[type].ondamagecallback, level._traps_deployable.traptypes[type].var_d0dd7e76, var_3af54106.m_model, var_3af54106.var_e84fc5dc, var_3af54106.var_28f1ce55, var_3af54106.m_spawnsentity, var_3af54106.var_656cbe2d, var_3af54106.m_timeout, var_3af54106.m_health, var_3af54106.m_empdamage, var_3af54106.var_f81e0192, var_3af54106.var_b4662b52, var_3af54106.m_placeimmediately, level._traps_deployable.traptypes[type].damagewrapper);
+        placeable.var_3af54106 = var_3af54106;
+        placeable.is_placeable = 1;
+        placeable.var_25404db4 = 1;
+        placeable placeables::function_613a226a(1);
+        placeable notsolid();
     }
 }
 
@@ -752,7 +752,7 @@ function function_59a79a68(var_3af54106, damage_callback, destroyed_callback, em
         if (level.teambased) {
             isvalidattacker = isdefined(attacker.team) && attacker.team != self.team;
         }
-        if (!isvalidattacker) {
+        if (isvalidattacker) {
         }
         if (weapon.isemp && type == "MOD_GRENADE_SPLASH") {
             emp_damage_to_apply = var_3af54106.m_empdamage;

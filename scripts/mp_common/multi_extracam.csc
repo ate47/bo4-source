@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace multi_extracam/multi_extracam
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83a5c634, Offset: 0x108
 // Size: 0x24
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace multi_extracam/multi_extracam
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x51e5382b, Offset: 0x138
 // Size: 0x16e
 function multi_extracam_init(localclientnum) {

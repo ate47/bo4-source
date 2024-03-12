@@ -74,21 +74,21 @@ function private function_aa232314(oldval, newval) {
             if (isdefined(var_2deafbea.var_36c77790)) {
                 self.var_14407070.var_36c77790 = var_2deafbea.var_36c77790;
             }
-        } else {
-            self.var_dc148218 = 0;
-            self.var_ead9cdbf = undefined;
-            if (isdefined(self.var_14407070) && isdefined(self.var_14407070.var_36c77790)) {
-                if (isplayer(self)) {
-                    self playlocalsound(self.var_14407070.var_36c77790);
-                }
-            }
-            if (isdefined(self.var_14407070) && isdefined(self.var_14407070.var_801118b0)) {
-                if (isplayer(self)) {
-                    self stoploopsound(0.5);
-                }
-            }
-            self.var_14407070 = undefined;
+            return;
         }
+        self.var_dc148218 = 0;
+        self.var_ead9cdbf = undefined;
+        if (isdefined(self.var_14407070) && isdefined(self.var_14407070.var_36c77790)) {
+            if (isplayer(self)) {
+                self playlocalsound(self.var_14407070.var_36c77790);
+            }
+        }
+        if (isdefined(self.var_14407070) && isdefined(self.var_14407070.var_801118b0)) {
+            if (isplayer(self)) {
+                self stoploopsound(0.5);
+            }
+        }
+        self.var_14407070 = undefined;
     }
 }
 

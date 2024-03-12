@@ -32,7 +32,9 @@ function function_f65638a4(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         s_fx = struct::get("fire_extinguisher_l_fx_struct", "targetname");
         playfx(localclientnum, level._effect[#"hash_604a40ef1ed899a4"], s_fx.origin, anglestoforward(s_fx.angles));
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         s_fx = struct::get("fire_extinguisher_r_fx_struct", "targetname");
         playfx(localclientnum, level._effect[#"hash_604a40ef1ed899a4"], s_fx.origin, anglestoforward(s_fx.angles));
     }

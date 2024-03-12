@@ -62,37 +62,35 @@ function function_8aff1931(localclientnum, menu_data) {
         waitresult = level waittill(#"blackjackreserve");
         if (isdefined(waitresult.open) && !waitresult.open) {
             function_99278be8(localclientnum, menu_data);
-        } else {
-            switch (waitresult.status) {
-            case #"opencrate":
-                if (waitresult.result) {
-                    switch (hash(waitresult.crateid)) {
-                    case #"1000":
-                        level thread function_f559e439(localclientnum, menu_data, "loot_case");
-                        break;
-                    case #"1001":
-                        level thread function_f559e439(localclientnum, menu_data, "loot_crate");
-                        break;
-                    }
-                    goto LOC_00000174;
+            continue;
+        }
+        switch (waitresult.status) {
+        case #"opencrate":
+            if (waitresult.result) {
+                switch (hash(waitresult.crateid)) {
+                case #"1000":
+                    level thread function_f559e439(localclientnum, menu_data, "loot_case");
+                    break;
+                case #"1001":
+                    level thread function_f559e439(localclientnum, menu_data, "loot_crate");
+                    break;
                 }
-            LOC_00000174:
-                break;
-            case #"playsound":
-                level.var_ca61b442 = playsound(localclientnum, waitresult.soundalias);
-                break;
-            case #"stopplaysound":
-                stopsound(level.var_ca61b442);
-                level.var_ca61b442 = playsound(localclientnum, waitresult.soundalias);
-                break;
-            case #"stopsound":
-                stopsound(level.var_ca61b442);
-                level.var_ca61b442 = undefined;
-                break;
-            default:
-                level thread function_f559e439(localclientnum, menu_data, waitresult.status);
-                break;
             }
+            break;
+        case #"playsound":
+            level.var_ca61b442 = playsound(localclientnum, waitresult.soundalias);
+            break;
+        case #"stopplaysound":
+            stopsound(level.var_ca61b442);
+            level.var_ca61b442 = playsound(localclientnum, waitresult.soundalias);
+            break;
+        case #"stopsound":
+            stopsound(level.var_ca61b442);
+            level.var_ca61b442 = undefined;
+            break;
+        default:
+            level thread function_f559e439(localclientnum, menu_data, waitresult.status);
+            break;
         }
     }
 }
@@ -276,13 +274,13 @@ function function_fa73161a(localclientnum, menu_data, state) {
             if (level.var_cf24a85f.var_f56984dc === "idle") {
                 var_9e40a851 = scene::function_67e52759(level.var_cf24a85f.var_82406a05, undefined, 0, 1);
                 level scene::play(level.var_cf24a85f.var_82406a05, var_9e40a851);
-            } else {
-                break;
+                continue;
             }
-        } while(randomint(2) == 1);
+            break;
+        } while (randomint(2) == 1);
         do {
             level scene::play(level.var_cf24a85f.var_82406a05, "Idle");
-        } while(randomint(2) == 1 || level.var_cf24a85f.var_f56984dc !== "idle");
+        } while (randomint(2) == 1 || level.var_cf24a85f.var_f56984dc !== "idle");
     }
 }
 

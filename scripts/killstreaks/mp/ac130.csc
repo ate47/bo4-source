@@ -74,7 +74,9 @@ function function_555656fe(localclientnum, oldval, newval, bnewent, binitialsnap
         if (self postfx::function_556665f2(postfxbundle) == 0) {
             self codeplaypostfxbundle(postfxbundle);
         }
-    } else if (self postfx::function_556665f2(postfxbundle)) {
+        return;
+    }
+    if (self postfx::function_556665f2(postfxbundle)) {
         self codestoppostfxbundle(postfxbundle);
     }
 }
@@ -90,13 +92,13 @@ function function_db40057d(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         playsound(0, #"hash_731251c4b03b5b09", (0, 0, 0));
-        break;
+        return;
     case 2:
         playsound(0, #"hash_731251c4b03b5b09", (0, 0, 0));
-        break;
+        return;
     case 3:
         playsound(0, #"hash_731251c4b03b5b09", (0, 0, 0));
-        break;
+        return;
     }
 }
 

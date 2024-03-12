@@ -163,7 +163,7 @@ function electric_cherry_laststand() {
                 }
                 wait(0.1);
                 if (isalive(self) && isalive(a_zombies[i])) {
-                    a_zombies[i] dodamage(1000, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.var_78032351);
+                    a_zombies[i] dodamage(1000, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.weapondefault);
                 }
             }
         }
@@ -183,11 +183,13 @@ function electric_cherry_death_fx() {
         } else {
             self clientfield::set("tesla_shock_eyes_fx", 1);
         }
-    } else if (isvehicle(self)) {
-        self clientfield::set("tesla_death_fx_veh", 1);
-    } else {
-        self clientfield::set("tesla_death_fx", 1);
+        return;
     }
+    if (isvehicle(self)) {
+        self clientfield::set("tesla_death_fx_veh", 1);
+        return;
+    }
+    self clientfield::set("tesla_death_fx", 1);
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
@@ -204,9 +206,9 @@ function electric_cherry_shock_fx() {
     self waittill(#"stun_fx_end");
     if (isvehicle(self)) {
         self clientfield::set("tesla_shock_eyes_fx_veh", 0);
-    } else {
-        self clientfield::set("tesla_shock_eyes_fx", 0);
+        return;
     }
+    self clientfield::set("tesla_shock_eyes_fx", 0);
 }
 
 // Namespace zm_perk_electric_cherry/zm_perk_electric_cherry
@@ -315,7 +317,7 @@ function electric_cherry_reload_attack() {
                     }
                     wait(0.1);
                     if (isdefined(a_zombies[i]) && isalive(a_zombies[i])) {
-                        a_zombies[i] dodamage(perk_dmg, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.var_78032351);
+                        a_zombies[i] dodamage(perk_dmg, self.origin, self, self, "none", "MOD_UNKNOWN", 0, level.weapondefault);
                     }
                 }
             }
@@ -353,7 +355,7 @@ function check_for_reload_complete(weapon) {
         if (current_weapon == weapon) {
             arrayremovevalue(self.wait_on_reload, weapon);
             self notify("weapon_reload_complete_" + weapon.name);
-            break;
+            return;
         }
     }
 }
@@ -370,7 +372,7 @@ function weapon_replaced_monitor(weapon) {
         if (!isinarray(primaryweapons, weapon)) {
             self notify("player_lost_weapon_" + weapon.name);
             arrayremovevalue(self.wait_on_reload, weapon);
-            break;
+            return;
         }
     }
 }

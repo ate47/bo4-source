@@ -247,7 +247,7 @@ function function_5de626dc(var_a1258c6b) {
             [[ prompt ]]->set_clientnum(self, var_a1258c6b getentitynumber());
             self thread function_263a2944(prompt, var_a1258c6b);
             self thread function_c025efba(prompt, var_a1258c6b);
-            break;
+            return;
         }
     }
 }
@@ -930,7 +930,9 @@ function function_b16f016a() {
     self.var_5c574004--;
     if (self.var_5c574004 < 0) {
         self.var_5c574004 = 0;
-    } else if (self.var_5c574004 > 99999) {
+        return;
+    }
+    if (self.var_5c574004 > 99999) {
         self.var_5c574004 = 99999;
     }
 }

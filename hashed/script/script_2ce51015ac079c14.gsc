@@ -30,19 +30,25 @@ class cplayer_insertion_choice : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"groundvehicle" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"halojump" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else if (#"heli" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"groundvehicle" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"halojump" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        if (#"heli" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 3);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cplayer_insertion_choice/player_insertion_choice

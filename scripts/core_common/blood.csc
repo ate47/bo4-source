@@ -99,15 +99,21 @@ function private update_lightbar(localclientnum) {
     if (!(isdefined(self.nobloodlightbarchange) && self.nobloodlightbarchange)) {
         if (self.stage3amount > 0) {
             setcontrollerlightbarcolorpulsing(localclientnum, (1, 0, 0), 600);
-        } else if (self.stage2amount == 1) {
-            setcontrollerlightbarcolorpulsing(localclientnum, vectorscale((1, 0, 0), 0.8), 1200);
-        } else if ((!sessionmodeiscampaigngame() || codegetuimodelclientfield(self, "playerAbilities.inRange")) && getgadgetpower(localclientnum) == 1) {
-            setcontrollerlightbarcolorpulsing(localclientnum, (1, 1, 0), 2000);
-        } else if (isdefined(level.controllercolor) && isdefined(level.controllercolor[localclientnum])) {
-            setcontrollerlightbarcolor(localclientnum, level.controllercolor[localclientnum]);
-        } else {
-            setcontrollerlightbarcolor(localclientnum);
+            return;
         }
+        if (self.stage2amount == 1) {
+            setcontrollerlightbarcolorpulsing(localclientnum, vectorscale((1, 0, 0), 0.8), 1200);
+            return;
+        }
+        if ((!sessionmodeiscampaigngame() || codegetuimodelclientfield(self, "playerAbilities.inRange")) && getgadgetpower(localclientnum) == 1) {
+            setcontrollerlightbarcolorpulsing(localclientnum, (1, 1, 0), 2000);
+            return;
+        }
+        if (isdefined(level.controllercolor) && isdefined(level.controllercolor[localclientnum])) {
+            setcontrollerlightbarcolor(localclientnum, level.controllercolor[localclientnum]);
+            return;
+        }
+        setcontrollerlightbarcolor(localclientnum);
     }
 }
 
@@ -261,17 +267,19 @@ function function_672c739(localclientnum, shockrifle) {
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color R", 4);
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color G", 4);
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color B", 4);
-    } else if (util::function_2c435484()) {
+        return;
+    }
+    if (util::function_2c435484()) {
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Enable Tint", 1);
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color R", 0.15);
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color G", 0.13);
         function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color B", 0.24);
-    } else {
-        function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Enable Tint", 1);
-        function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color R", 0.3);
-        function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color G", 0.025);
-        function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color B", 0);
+        return;
     }
+    function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Enable Tint", 1);
+    function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color R", 0.3);
+    function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color G", 0.025);
+    function_4238734d(localclientnum, #"hash_73c750f53749d44d", "Tint Color B", 0);
 }
 
 // Namespace blood/blood
@@ -478,13 +486,15 @@ function private function_55d01d42() {
     if (isdefined(fields) && (isdefined(fields.digitalblood) ? fields.digitalblood : 0)) {
         self.pstfx_blood = #"hash_21152915158b09dd";
         self.wound_rob = "rob_wound_blood_splatter_reaper";
-    } else if (util::is_mature()) {
+        return;
+    }
+    if (util::is_mature()) {
         self.pstfx_blood = #"hash_263a0659c7ff81ad";
         self.wound_rob = "rob_wound_blood_splatter";
-    } else {
-        self.pstfx_blood = #"hash_44dcb6ac5e8787e0";
-        self.wound_rob = "rob_wound_blood_splatter";
+        return;
     }
+    self.pstfx_blood = #"hash_44dcb6ac5e8787e0";
+    self.wound_rob = "rob_wound_blood_splatter";
 }
 
 // Namespace blood/blood
@@ -759,9 +769,9 @@ function private function_436ee4c2(localclientnum, pstfx_blood) {
     if (!isdefined(self) || !(isdefined(self.nobloodlightbarchange) && self.nobloodlightbarchange)) {
         if (isdefined(level.controllercolor) && isdefined(level.controllercolor[localclientnum])) {
             setcontrollerlightbarcolor(localclientnum, level.controllercolor[localclientnum]);
-        } else {
-            setcontrollerlightbarcolor(localclientnum);
+            return;
         }
+        setcontrollerlightbarcolor(localclientnum);
     }
 }
 

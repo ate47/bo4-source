@@ -44,7 +44,9 @@ function function_7e1a12ce(radius) {
                 }
                 info.var_d1e06a5f[entnum] = gettime();
                 info.var_2fae95e[entnum] = info.var_2fae95e[entnum] + var_dd3b2438;
-            } else if (isdefined(info.var_d1e06a5f[entnum])) {
+                continue;
+            }
+            if (isdefined(info.var_d1e06a5f[entnum])) {
                 resettime = int(max(enemy function_348ab5dd(), 250));
                 if (gettime() - info.var_d1e06a5f[entnum] > resettime) {
                     info.var_d1e06a5f[entnum] = undefined;

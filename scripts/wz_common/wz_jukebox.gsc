@@ -30,15 +30,15 @@ function function_2bf3c36e() {
         foreach (dynent in dynents) {
             dynent.onuse = &function_1f3a1c47;
         }
-    } else {
-        waitframe(1);
-        foreach (dynent in dynents) {
-            setdynentenabled(dynent, 0);
-        }
-        item_world::function_4de3ca98();
-        foreach (dynent in dynents) {
-            setdynentenabled(dynent, 0);
-        }
+        return;
+    }
+    waitframe(1);
+    foreach (dynent in dynents) {
+        setdynentenabled(dynent, 0);
+    }
+    item_world::function_4de3ca98();
+    foreach (dynent in dynents) {
+        setdynentenabled(dynent, 0);
     }
 }
 

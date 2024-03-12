@@ -151,9 +151,9 @@ function damage(trap) {
     }
     if (isdefined(self.var_5475b4ad)) {
         self [[ self.var_5475b4ad ]](trap);
-    } else {
-        level notify(#"trap_kill", {#trap:trap, #victim:self});
-        self dodamage(self.health + 666, self.origin, trap);
+        return;
     }
+    level notify(#"trap_kill", {#trap:trap, #victim:self});
+    self dodamage(self.health + 666, self.origin, trap);
 }
 

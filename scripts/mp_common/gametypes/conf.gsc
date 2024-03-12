@@ -100,31 +100,31 @@ function onuse(player) {
         if (!tacinsertboost) {
             player globallogic_score::giveteamscoreforobjective(player.team, level.teamscoreperkilldenied);
         }
-    } else {
+        return;
+    }
+    /#
         /#
-            /#
-                assert(isdefined(player.lastkillconfirmedtime));
-            #/
-            /#
-                assert(isdefined(player.lastkillconfirmedcount));
-            #/
+            assert(isdefined(player.lastkillconfirmedtime));
         #/
-        player.pers[#"killsconfirmed"]++;
-        player.killsconfirmed = player.pers[#"killsconfirmed"];
-        player globallogic_score::giveteamscoreforobjective(player.team, level.teamscoreperkillconfirmed);
-        if (!tacinsertboost) {
-            currenttime = gettime();
-            if (player.lastkillconfirmedtime + 4000 > currenttime) {
-                player.lastkillconfirmedcount++;
-                if (player.lastkillconfirmedcount >= 3) {
-                    scoreevents::processscoreevent(#"kill_confirmed_multi", player, undefined, undefined);
-                    player.lastkillconfirmedcount = 0;
-                }
-            } else {
-                player.lastkillconfirmedcount = 1;
+        /#
+            assert(isdefined(player.lastkillconfirmedcount));
+        #/
+    #/
+    player.pers[#"killsconfirmed"]++;
+    player.killsconfirmed = player.pers[#"killsconfirmed"];
+    player globallogic_score::giveteamscoreforobjective(player.team, level.teamscoreperkillconfirmed);
+    if (!tacinsertboost) {
+        currenttime = gettime();
+        if (player.lastkillconfirmedtime + 4000 > currenttime) {
+            player.lastkillconfirmedcount++;
+            if (player.lastkillconfirmedcount >= 3) {
+                scoreevents::processscoreevent(#"kill_confirmed_multi", player, undefined, undefined);
+                player.lastkillconfirmedcount = 0;
             }
-            player.lastkillconfirmedtime = currenttime;
+        } else {
+            player.lastkillconfirmedcount = 1;
         }
+        player.lastkillconfirmedtime = currenttime;
     }
 }
 

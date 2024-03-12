@@ -25,8 +25,8 @@ function function_81669a8b(localclientnum, oldval, newval, bnewent, binitialsnap
     self endon(#"death");
     if (newval) {
         self enableonradar();
-    } else {
-        self disableonradar();
+        return;
     }
+    self disableonradar();
 }
 

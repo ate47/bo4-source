@@ -194,9 +194,9 @@ function hackedpostfunction(hacker) {
         heligunner.killstreak_duration = heligunner killstreak_hacking::get_hacked_timeout_duration_ms();
         heligunner.killstreak_end_time = hacker killstreak_hacking::set_vehicle_drivable_time_starting_now(heligunner);
         heligunner.killstreakendtime = int(heligunner.killstreak_end_time);
-    } else {
-        heligunner.killstreak_timer_start_using_hacked_time = 1;
+        return;
     }
+    heligunner.killstreak_timer_start_using_hacked_time = 1;
 }
 
 // Namespace ac130/ac130
@@ -1190,8 +1190,7 @@ function getoriginoffsets(goalnode) {
     numtraces = 0;
     maxtraces = 40;
     traceoffset = vectorscale((0, 0, -1), 196);
-    traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self);
-    while (distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && numtraces < maxtraces) {
+    for (traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self); distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && numtraces < maxtraces; traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self)) {
         /#
             println("<unknown string>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
         #/
@@ -1204,7 +1203,6 @@ function getoriginoffsets(goalnode) {
             endorigin = endorigin + vectorscale((0, 0, 1), 128);
         }
         numtraces++;
-        traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self);
     }
     offsets = [];
     offsets[#"start"] = startorigin;

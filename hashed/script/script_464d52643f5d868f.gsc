@@ -165,10 +165,8 @@ function function_1646f141(var_e8ba54a2 = 0) {
     while (level.var_20cff6f0) {
         waitframe(1);
     }
-    var_7ffb217b = getentarray("catwalk_event_zombie", "script_noteworthy");
-    while (var_7ffb217b.size > 0) {
+    for (var_7ffb217b = getentarray("catwalk_event_zombie", "script_noteworthy"); var_7ffb217b.size > 0; var_7ffb217b = getentarray("catwalk_event_zombie", "script_noteworthy")) {
         waitframe(1);
-        var_7ffb217b = getentarray("catwalk_event_zombie", "script_noteworthy");
     }
     level flag::wait_till_timeout(61, "trig_catwalk_event_completed");
     level thread function_e11ac4f5();
@@ -179,11 +177,11 @@ function function_1646f141(var_e8ba54a2 = 0) {
 // Checksum 0xbdaca8b9, Offset: 0x1428
 // Size: 0xac
 function function_dc212e9f() {
-    var_4947b277 = getent("catwalk_wires", "targetname");
+    mdl_wire = getent("catwalk_wires", "targetname");
     bundle = #"p8_fxanim_zm_esc_wires_catwalk_bundle";
-    var_4947b277 thread scene::play(bundle, "LOOP", var_4947b277);
+    mdl_wire thread scene::play(bundle, "LOOP", mdl_wire);
     level flag::wait_till(#"catwalk_door_open");
-    var_4947b277 thread scene::play(bundle, "SHOCKED", var_4947b277);
+    mdl_wire thread scene::play(bundle, "SHOCKED", mdl_wire);
 }
 
 // Namespace namespace_f2502da8/namespace_f2502da8
@@ -289,7 +287,9 @@ function function_7b6777c5(t_spawner) {
                 waitframe(1);
             }
             e_enemy zombie_brutus_util::brutus_spawn(250, 0);
-        } else if (isdefined(level.var_2b94ce72) && level.var_2b94ce72) {
+            continue;
+        }
+        if (isdefined(level.var_2b94ce72) && level.var_2b94ce72) {
             while (!isdefined(e_enemy)) {
                 e_enemy = zombie_utility::spawn_zombie(level.dog_spawners[0], undefined, var_adad907f);
                 waitframe(1);
@@ -297,13 +297,17 @@ function function_7b6777c5(t_spawner) {
             level notify(#"hash_744c6105bcd18f3a", {#ai_dog:e_enemy});
             e_enemy thread zm_escape_util::function_7273c33d(var_adad907f);
             e_enemy ai::set_behavior_attribute("sprint", 1);
-        } else if (var_adad907f.script_noteworthy == "spawn_location" && !(isdefined(level.var_a2831281) && level.var_a2831281) && !(isdefined(level.var_2b94ce72) && level.var_2b94ce72)) {
+            continue;
+        }
+        if (var_adad907f.script_noteworthy == "spawn_location" && !(isdefined(level.var_a2831281) && level.var_a2831281) && !(isdefined(level.var_2b94ce72) && level.var_2b94ce72)) {
             while (!isdefined(e_enemy)) {
                 e_enemy = zombie_utility::spawn_zombie(level.zombie_spawners[0], undefined, var_adad907f);
                 waitframe(1);
             }
             e_enemy thread zm_escape_util::function_24d3ec02("catwalk_event_zombie", 1);
-        } else if (var_adad907f.script_noteworthy == "dog_location" && !(isdefined(level.var_15747fb1) && level.var_15747fb1)) {
+            continue;
+        }
+        if (var_adad907f.script_noteworthy == "dog_location" && !(isdefined(level.var_15747fb1) && level.var_15747fb1)) {
             while (!isdefined(e_enemy)) {
                 e_enemy = zombie_utility::spawn_zombie(level.dog_spawners[0]);
                 waitframe(1);
@@ -354,20 +358,20 @@ function function_17ccf041() {
                 if (isdefined(ai_zombie.var_45cec07d)) {
                     arrayremovevalue(var_57662f94, ai_zombie);
                     var_8778c04e++;
-                } else {
-                    b_can_see = 0;
-                    foreach (player in util::get_active_players()) {
-                        if (player cansee(ai_zombie)) {
-                            b_can_see = 1;
-                        }
-                        if (player util::is_player_looking_at(ai_zombie.origin, 0.5, 0, player) && distance(player.origin, ai_zombie.origin) < 500) {
-                            b_can_see = 1;
-                        }
+                    continue;
+                }
+                b_can_see = 0;
+                foreach (player in util::get_active_players()) {
+                    if (player cansee(ai_zombie)) {
+                        b_can_see = 1;
                     }
-                    if (b_can_see) {
-                        arrayremovevalue(var_57662f94, ai_zombie);
-                        var_8778c04e++;
+                    if (player util::is_player_looking_at(ai_zombie.origin, 0.5, 0, player) && distance(player.origin, ai_zombie.origin) < 500) {
+                        b_can_see = 1;
                     }
+                }
+                if (b_can_see) {
+                    arrayremovevalue(var_57662f94, ai_zombie);
+                    var_8778c04e++;
                 }
             }
             a_ai_zombies = var_57662f94;

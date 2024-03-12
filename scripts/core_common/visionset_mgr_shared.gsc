@@ -67,11 +67,11 @@ function activate(type, name, player, opt_param_1, opt_param_2, opt_param_3) {
     }
     if (isdefined(state.lerp_thread)) {
         state thread lerp_thread_wrapper(state.lerp_thread, opt_param_1, opt_param_2, opt_param_3);
-    } else {
-        players = getplayers();
-        for (player_index = 0; player_index < players.size; player_index++) {
-            state set_state_active(players[player_index], 1);
-        }
+        return;
+    }
+    players = getplayers();
+    for (player_index = 0; player_index < players.size; player_index++) {
+        state set_state_active(players[player_index], 1);
     }
 }
 
@@ -210,7 +210,7 @@ function ramp_in_thread_per_player(player, duration) {
     while (1) {
         lerp = calc_ramp_in_lerp(start_time, end_time);
         if (1 <= lerp) {
-            break;
+            return;
         }
         self set_state_active(player, lerp);
         waitframe(1);
@@ -625,9 +625,9 @@ function activate_per_player(type, name, player, opt_param_1, opt_param_2, opt_p
     }
     if (isdefined(state.lerp_thread)) {
         state thread lerp_thread_per_player_wrapper(state.lerp_thread, player, opt_param_1, opt_param_2, opt_param_3);
-    } else {
-        state set_state_active(player, 1);
+        return;
     }
+    state set_state_active(player, 1);
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared

@@ -93,12 +93,12 @@ function private refill_ammo() {
 // Size: 0x118
 function private lock_shield() {
     foreach (weapon in zm_loadout::function_5a5a742a("tactical_grenade")) {
-        self function_28602a03(weapon, 1, 1);
+        self lockweapon(weapon, 1, 1);
         if (weapon.dualwieldweapon != level.weaponnone) {
-            self function_28602a03(weapon.dualwieldweapon, 1, 1);
+            self lockweapon(weapon.dualwieldweapon, 1, 1);
         }
         if (weapon.altweapon != level.weaponnone) {
-            self function_28602a03(weapon.altweapon, 1, 1);
+            self lockweapon(weapon.altweapon, 1, 1);
         }
     }
 }
@@ -113,17 +113,17 @@ function private function_33f0ddd3(s_event) {
             return;
         }
         if (zm_loadout::is_lethal_grenade(s_event.weapon) || zm_loadout::is_tactical_grenade(s_event.weapon, 1)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
             if (s_event.weapon.dualwieldweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.dualwieldweapon, 1, 1);
+                self lockweapon(s_event.weapon.dualwieldweapon, 1, 1);
             }
             if (s_event.weapon.altweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.altweapon, 1, 1);
+                self lockweapon(s_event.weapon.altweapon, 1, 1);
             }
-        } else {
-            waitframe(1);
-            self setweaponammostock(s_event.weapon, 0);
+            return;
         }
+        waitframe(1);
+        self setweaponammostock(s_event.weapon, 0);
     }
 }
 
@@ -142,12 +142,12 @@ function private function_29ee24dd() {
         w_current = self getcurrentweapon();
         if (s_waitresult._notify == "melee_reload") {
             self setweaponammoclip(w_current, w_current.clipsize);
-        } else {
-            a_weapons = self getweaponslist(0);
-            foreach (weapon in a_weapons) {
-                if (!(zm_loadout::is_lethal_grenade(weapon) || zm_loadout::is_hero_weapon(weapon))) {
-                    self setweaponammostock(weapon, 0);
-                }
+            continue;
+        }
+        a_weapons = self getweaponslist(0);
+        foreach (weapon in a_weapons) {
+            if (!(zm_loadout::is_lethal_grenade(weapon) || zm_loadout::is_hero_weapon(weapon))) {
+                self setweaponammostock(weapon, 0);
             }
         }
     }
@@ -190,14 +190,13 @@ function private reset_ammo(var_f2c84b6b) {
     foreach (weapon in a_weapons) {
         if (zm_loadout::is_hero_weapon(weapon) || zm_loadout::is_lethal_grenade(weapon)) {
             continue;
-        } else {
-            self setweaponammostock(weapon, 0);
-            if (isdefined(var_f2c84b6b)) {
-                self setweaponammoclip(weapon, weapon.clipsize);
-            } else {
-                self setweaponammoclip(weapon, 0);
-            }
         }
+        self setweaponammostock(weapon, 0);
+        if (isdefined(var_f2c84b6b)) {
+            self setweaponammoclip(weapon, weapon.clipsize);
+            continue;
+        }
+        self setweaponammoclip(weapon, 0);
     }
 }
 

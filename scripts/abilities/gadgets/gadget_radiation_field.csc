@@ -70,15 +70,15 @@ function self_destruct_start(localclientnum, oldval, newval, bnewent, binitialsn
             }
         }
         level thread function_95252d1f(localclientnum, var_7e4d34a7, self);
-    } else {
-        self notify(#"stop_sounds");
-        if (isdefined(isfirstperson) && isfirstperson && isdefined(self)) {
-            self function_3caac9e(localclientnum);
-        }
-        if (isdefined(localplayer.var_a5afc54b)) {
-            function_196e7c4b(localclientnum, localplayer.var_a5afc54b);
-            localplayer.var_a5afc54b = undefined;
-        }
+        return;
+    }
+    self notify(#"stop_sounds");
+    if (isdefined(isfirstperson) && isfirstperson && isdefined(self)) {
+        self function_3caac9e(localclientnum);
+    }
+    if (isdefined(localplayer.var_a5afc54b)) {
+        function_196e7c4b(localclientnum, localplayer.var_a5afc54b);
+        localplayer.var_a5afc54b = undefined;
     }
 }
 
@@ -103,7 +103,9 @@ function function_e9e14905(localclientnum, sound, islocal) {
     self waittill(#"death", #"stop_sounds");
     if (isdefined(islocal) && islocal) {
         function_d48752e(localclientnum, sound);
-    } else if (isdefined(self) && isdefined(sound)) {
+        return;
+    }
+    if (isdefined(self) && isdefined(sound)) {
         self stoploopsound(sound);
     }
 }
@@ -129,15 +131,15 @@ function self_destruct_end(localclientnum, oldval, newval, bnewent, binitialsnap
             self util::waittill_dobj(localclientnum);
             playsound(localclientnum, "mpl_rad_field_meltdown_3d", self.origin + vectorscale((0, 0, 1), 30));
         }
-    } else {
-        if (isdefined(isfirstperson) && isfirstperson && isdefined(self)) {
-            self function_3caac9e(localclientnum);
-        }
-        player = function_5c10bd79(localclientnum);
-        if (isdefined(player.var_a5afc54b)) {
-            function_196e7c4b(localclientnum, player.var_a5afc54b);
-            player.var_a5afc54b = undefined;
-        }
+        return;
+    }
+    if (isdefined(isfirstperson) && isfirstperson && isdefined(self)) {
+        self function_3caac9e(localclientnum);
+    }
+    player = function_5c10bd79(localclientnum);
+    if (isdefined(player.var_a5afc54b)) {
+        function_196e7c4b(localclientnum, player.var_a5afc54b);
+        player.var_a5afc54b = undefined;
     }
 }
 
@@ -156,7 +158,7 @@ function function_671d7ad5(localclientnum, attacker_entnum) {
     while (1) {
         player = function_5c10bd79(localclientnum);
         if (!isdefined(player) || !isalive(player)) {
-            break;
+            return;
         }
         dist2 = distance2dsquared(player.origin, self.origin);
         if (dist2 > var_4c6480bf) {
@@ -383,22 +385,22 @@ function function_e6cf396d(localclientnum, oldval, newval, bnewent, binitialsnap
                 function_fe0ad36e(localclientnum, level.var_2e0bd467.var_13ce982a);
             }
         }
-    } else {
-        self notify(#"stop_sounds");
-        player = function_5c10bd79(localclientnum);
-        if (isdefined(player)) {
-            if (player getentitynumber() == var_7e4d34a7) {
-                player function_3caac9e(localclientnum);
-            }
-            if (isdefined(player.var_a5afc54b)) {
-                function_196e7c4b(localclientnum, player.var_a5afc54b);
-                player.var_a5afc54b = undefined;
-            }
-        }
-        /#
-            function_1a7aaaa8(localclientnum, "<unknown string>" + self getentitynumber());
-        #/
+        return;
     }
+    self notify(#"stop_sounds");
+    player = function_5c10bd79(localclientnum);
+    if (isdefined(player)) {
+        if (player getentitynumber() == var_7e4d34a7) {
+            player function_3caac9e(localclientnum);
+        }
+        if (isdefined(player.var_a5afc54b)) {
+            function_196e7c4b(localclientnum, player.var_a5afc54b);
+            player.var_a5afc54b = undefined;
+        }
+    }
+    /#
+        function_1a7aaaa8(localclientnum, "<unknown string>" + self getentitynumber());
+    #/
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field
@@ -422,11 +424,11 @@ function function_6a1db576(localclientnum, var_7e4d34a7, var_3880aff8) {
         #/
         stopfx(localclientnum, level.var_d0df06e9[localclientnum][var_7e4d34a7]);
         level.var_d0df06e9[localclientnum][var_7e4d34a7] = undefined;
-    } else {
-        /#
-            function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
-        #/
+        return;
     }
+    /#
+        function_1a7aaaa8(localclientnum, "<unknown string>" + var_3880aff8);
+    #/
 }
 
 // Namespace gadget_radiation_field/gadget_radiation_field

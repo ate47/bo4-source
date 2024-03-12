@@ -73,11 +73,11 @@ class cscriptbundleobjectbase {
             #/
             self._n_clientnum = e_ent.localclientnum;
             self._e_array[self._n_clientnum] = e_ent;
-        } else {
-            self._e_array = [];
-            if (isdefined(localclientnum)) {
-                self._n_clientnum = localclientnum;
-            }
+            return;
+        }
+        self._e_array = [];
+        if (isdefined(localclientnum)) {
+            self._n_clientnum = localclientnum;
         }
     }
 
@@ -111,16 +111,13 @@ class cscriptbundlebase {
     function error(condition, str_msg) {
         if (condition) {
             if (self._testing) {
-                goto LOC_00000082;
-            }
-            /#
+            } else {
                 /#
-                    assertmsg(self._s.type + "<unknown string>" + function_9e72a96(self._str_name) + "<unknown string>" + str_msg);
-                LOC_00000082:
+                    /#
+                        assertmsg(self._s.type + "<unknown string>" + function_9e72a96(self._str_name) + "<unknown string>" + str_msg);
+                    #/
                 #/
-            LOC_00000082:
-            #/
-        LOC_00000082:
+            }
             thread [[ self ]]->on_error();
             return 1;
         }

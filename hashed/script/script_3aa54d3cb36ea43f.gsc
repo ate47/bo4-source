@@ -129,12 +129,12 @@ function function_7640eac2() {
                 i = 0;
                 util::wait_network_frame();
             }
-        } else {
-            var_e8ab126e = distancesquared(var_31f7011a[i].origin, var_d7eff26a.origin);
-            if (var_e8ab126e < var_56feeec4) {
-                var_56feeec4 = var_e8ab126e;
-                var_b2aa54a9 = var_d7eff26a;
-            }
+            continue;
+        }
+        var_e8ab126e = distancesquared(var_31f7011a[i].origin, var_d7eff26a.origin);
+        if (var_e8ab126e < var_56feeec4) {
+            var_56feeec4 = var_e8ab126e;
+            var_b2aa54a9 = var_d7eff26a;
         }
     }
     self zm_ai_utility::function_a8dc3363(var_b2aa54a9);
@@ -309,16 +309,12 @@ function function_5685dac6() {
     switch (n_player_count) {
     case 1:
         return 1;
-        break;
     case 2:
         return 2;
-        break;
     case 3:
         return 2;
-        break;
     case 4:
         return 3;
-        break;
     }
 }
 

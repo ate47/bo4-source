@@ -291,24 +291,23 @@ function path_detour(node) {
         if (isdefined(self.script_crashtypeoverride) && self.script_crashtypeoverride === "ground_vehicle_on_spline") {
             self.nd_crash_path = detourpath;
             self thread vehicle_death::ground_vehicle_crash();
-        } else {
-            self notify(#"crashpath", detourpath);
-            detourpath.derailed = 1;
-            self notify(#"newpath");
-            self setswitchnode(node, detourpath);
-        }
-        return;
-    } else {
-        if (crash_derailed_check(detourpath)) {
             return;
         }
-        if (isdefined(detourpath.script_vehicledetourgroup)) {
-            if (!isdefined(self.script_vehicledetourgroup)) {
-                return;
-            }
-            if (detourpath.script_vehicledetourgroup != self.script_vehicledetourgroup) {
-                return;
-            }
+        self notify(#"crashpath", detourpath);
+        detourpath.derailed = 1;
+        self notify(#"newpath");
+        self setswitchnode(node, detourpath);
+        return;
+    }
+    if (crash_derailed_check(detourpath)) {
+        return;
+    }
+    if (isdefined(detourpath.script_vehicledetourgroup)) {
+        if (!isdefined(self.script_vehicledetourgroup)) {
+            return;
+        }
+        if (detourpath.script_vehicledetourgroup != self.script_vehicledetourgroup) {
+            return;
         }
     }
 }
@@ -383,9 +382,9 @@ function sort_by_startingpos(guysarray) {
     for (i = 0; i < guysarray.size; i++) {
         if (isdefined(guysarray[i].script_startingposition)) {
             firstarray[firstarray.size] = guysarray[i];
-        } else {
-            secondarray[secondarray.size] = guysarray[i];
+            continue;
         }
+        secondarray[secondarray.size] = guysarray[i];
     }
     return arraycombine(firstarray, secondarray, 1, 0);
 }
@@ -717,11 +716,11 @@ function get_on_path(path_start, str_key = "targetname", distance = 0) {
             /#
                 assertmsg("<unknown string>" + self.targetname);
             #/
-        } else {
-            /#
-                assertmsg("<unknown string>");
-            #/
+            return;
         }
+        /#
+            assertmsg("<unknown string>");
+        #/
         return;
     }
     if (isdefined(self.hasstarted)) {
@@ -788,7 +787,7 @@ function create_from_spawngroup_and_go_path(spawngroup) {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xd0875de8, Offset: 0x39a0
 // Size: 0x5c
 function get_on_and_go_path(path_start, distance = 0) {
@@ -1493,16 +1492,17 @@ function setup_spawners(a_veh_spawners) {
 function _vehicle_life() {
     if (isdefined(self.destructibledef)) {
         self.health = 99999;
-    } else {
-        type = self.vehicletype;
-        if (isdefined(self.script_startinghealth)) {
-            self.health = self.script_startinghealth;
-        } else if (!self.var_dd74f4a9) {
-            return;
-        } else {
-            self.health = self.healthdefault;
-        }
+        return;
     }
+    type = self.vehicletype;
+    if (isdefined(self.script_startinghealth)) {
+        self.health = self.script_startinghealth;
+        return;
+    }
+    if (!self.var_dd74f4a9) {
+        return;
+    }
+    self.health = self.healthdefault;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1657,9 +1657,8 @@ function setup_level_vars() {
 function attacker_is_on_my_team(attacker) {
     if (isdefined(attacker) && isdefined(attacker.team) && isdefined(self.team) && !util::function_fbce7263(attacker.team, self.team)) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1676,9 +1675,8 @@ function bullet_shielded(type) {
     }
     if (self.script_bulletshield) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1822,7 +1820,7 @@ function wait_till_stable() {
             timer = gettime() + 400;
         }
         if (gettime() > timer) {
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -2120,7 +2118,7 @@ function toggle_ambient_anim_group(groupid, on) {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd4587a85, Offset: 0x7d20
 // Size: 0x54
 function toggle_control_bone_group(groupid, on) {
@@ -2169,7 +2167,7 @@ function do_death_dynents(special_status = 1) {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x81355994, Offset: 0x7ed8
 // Size: 0xae
 function do_gib_dynents() {
@@ -2209,60 +2207,60 @@ function should_update_damage_fx_level(currenthealth, damage, maxhealth) {
     afterdamagelevel = undefined;
     switch (isdefined(settings.damagestate_numstates) ? settings.damagestate_numstates : 0) {
     case 6:
-        jumpiffalse(settings.damagestate_lv6_ratio >= afterdamageratio) LOC_0000018c;
-        afterdamagelevel = 6;
-        currentlevel = 6;
-        if (settings.damagestate_lv6_ratio < currentratio) {
-            currentlevel = 5;
+        if (settings.damagestate_lv6_ratio >= afterdamageratio) {
+            afterdamagelevel = 6;
+            currentlevel = 6;
+            if (settings.damagestate_lv6_ratio < currentratio) {
+                currentlevel = 5;
+            }
+            break;
         }
-        break;
     case 5:
-    LOC_0000018c:
-        jumpiffalse(settings.damagestate_lv5_ratio >= afterdamageratio) LOC_000001d0;
-        afterdamagelevel = 5;
-        currentlevel = 5;
-        if (settings.damagestate_lv5_ratio < currentratio) {
-            currentlevel = 4;
+        if (settings.damagestate_lv5_ratio >= afterdamageratio) {
+            afterdamagelevel = 5;
+            currentlevel = 5;
+            if (settings.damagestate_lv5_ratio < currentratio) {
+                currentlevel = 4;
+            }
+            break;
         }
-        break;
     case 4:
-    LOC_000001d0:
-        jumpiffalse(settings.damagestate_lv4_ratio >= afterdamageratio) LOC_00000214;
-        afterdamagelevel = 4;
-        currentlevel = 4;
-        if (settings.damagestate_lv4_ratio < currentratio) {
-            currentlevel = 3;
+        if (settings.damagestate_lv4_ratio >= afterdamageratio) {
+            afterdamagelevel = 4;
+            currentlevel = 4;
+            if (settings.damagestate_lv4_ratio < currentratio) {
+                currentlevel = 3;
+            }
+            break;
         }
-        break;
     case 3:
-    LOC_00000214:
-        jumpiffalse(settings.damagestate_lv3_ratio >= afterdamageratio) LOC_00000258;
-        afterdamagelevel = 3;
-        currentlevel = 3;
-        if (settings.damagestate_lv3_ratio < currentratio) {
-            currentlevel = 2;
+        if (settings.damagestate_lv3_ratio >= afterdamageratio) {
+            afterdamagelevel = 3;
+            currentlevel = 3;
+            if (settings.damagestate_lv3_ratio < currentratio) {
+                currentlevel = 2;
+            }
+            break;
         }
-        break;
     case 2:
-    LOC_00000258:
-        jumpiffalse(settings.damagestate_lv2_ratio >= afterdamageratio) LOC_0000029c;
-        afterdamagelevel = 2;
-        currentlevel = 2;
-        if (settings.damagestate_lv2_ratio < currentratio) {
-            currentlevel = 1;
+        if (settings.damagestate_lv2_ratio >= afterdamageratio) {
+            afterdamagelevel = 2;
+            currentlevel = 2;
+            if (settings.damagestate_lv2_ratio < currentratio) {
+                currentlevel = 1;
+            }
+            break;
         }
-        break;
     case 1:
-    LOC_0000029c:
-        jumpiffalse(settings.damagestate_lv1_ratio >= afterdamageratio) LOC_000002de;
-        afterdamagelevel = 1;
-        currentlevel = 1;
-        if (settings.damagestate_lv1_ratio < currentratio) {
-            currentlevel = 0;
+        if (settings.damagestate_lv1_ratio >= afterdamageratio) {
+            afterdamagelevel = 1;
+            currentlevel = 1;
+            if (settings.damagestate_lv1_ratio < currentratio) {
+                currentlevel = 0;
+            }
+            break;
         }
-        break;
     default:
-    LOC_000002de:
         break;
     }
     if (!isdefined(currentlevel) || !isdefined(afterdamagelevel)) {
@@ -2318,9 +2316,9 @@ function function_ea56e00e(vehicle) {
     target = get_target(vehicle);
     if (!isdefined(target)) {
         vehicle setgoal(vehicle.origin, 0, vehicle.goalradius, vehicle.goalheight);
-    } else {
-        vehicle setgoal(target.origin, 1);
+        return;
     }
+    vehicle setgoal(target.origin, 1);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2410,30 +2408,29 @@ function attack_group_think() {
         }
         if (valid_targets.size == 0) {
             wait(0.5);
-        } else {
-            for (;;) {
-                current_target = undefined;
-                if (valid_targets.size != 0) {
-                    current_target = self get_nearest_target(valid_targets);
-                } else {
-                    self notify(#"killed all targets");
-                }
-                if (current_target.health <= 0) {
-                    arrayremovevalue(valid_targets, current_target);
-                    continue;
-                } else {
-                    self turretsettarget(0, current_target, vectorscale((0, 0, 1), 50));
-                    if (isdefined(self.fire_delay_min) && isdefined(self.fire_delay_max)) {
-                        if (self.fire_delay_max < self.fire_delay_min) {
-                            self.fire_delay_max = self.fire_delay_min;
-                        }
-                        wait(randomintrange(self.fire_delay_min, self.fire_delay_max));
-                    } else {
-                        wait(randomintrange(4, 6));
-                    }
-                    self fireweapon();
-                }
+            continue;
+        }
+        for (;;) {
+            current_target = undefined;
+            if (valid_targets.size != 0) {
+                current_target = self get_nearest_target(valid_targets);
+            } else {
+                self notify(#"killed all targets");
             }
+            if (current_target.health <= 0) {
+                arrayremovevalue(valid_targets, current_target);
+                continue;
+            }
+            self turretsettarget(0, current_target, vectorscale((0, 0, 1), 50));
+            if (isdefined(self.fire_delay_min) && isdefined(self.fire_delay_max)) {
+                if (self.fire_delay_max < self.fire_delay_min) {
+                    self.fire_delay_max = self.fire_delay_min;
+                }
+                wait(randomintrange(self.fire_delay_min, self.fire_delay_max));
+            } else {
+                wait(randomintrange(4, 6));
+            }
+            self fireweapon();
         }
     }
 }
@@ -2484,8 +2481,7 @@ function debug_vehicle() {
 function debug_vehicle_paths() {
     /#
         self endon(#"death", #"newpath", #"endpath", #"reached_dynamic_path_end");
-        nextnode = self.currentnode;
-        while (1) {
+        for (nextnode = self.currentnode; 1; nextnode = self.nextnode) {
             if (getdvarint(#"debug_vehicle_paths", 0) > 0) {
                 recordline(self.origin, self.currentnode.origin, (1, 0, 0), "<unknown string>", self);
                 recordline(self.origin, nextnode.origin, (0, 1, 0), "<unknown string>", self);
@@ -2493,7 +2489,6 @@ function debug_vehicle_paths() {
             }
             waitframe(1);
             if (isdefined(self.nextnode) && self.nextnode != nextnode) {
-                nextnode = self.nextnode;
             }
         }
     #/
@@ -2550,9 +2545,9 @@ function vehicle_get_occupant_team() {
 function toggle_exhaust_fx(on) {
     if (!on) {
         self clientfield::set("toggle_exhaustfx", 1);
-    } else {
-        self clientfield::set("toggle_exhaustfx", 0);
+        return;
     }
+    self clientfield::set("toggle_exhaustfx", 0);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2562,9 +2557,9 @@ function toggle_exhaust_fx(on) {
 function toggle_tread_fx(on) {
     if (on) {
         self clientfield::set("toggle_treadfx", 1);
-    } else {
-        self clientfield::set("toggle_treadfx", 0);
+        return;
     }
+    self clientfield::set("toggle_treadfx", 0);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2574,9 +2569,9 @@ function toggle_tread_fx(on) {
 function toggle_sounds(on) {
     if (!on) {
         self clientfield::set("toggle_sounds", 1);
-    } else {
-        self clientfield::set("toggle_sounds", 0);
+        return;
     }
+    self clientfield::set("toggle_sounds", 0);
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2608,9 +2603,9 @@ function event_handler[event_9430cf9f] function_c8effed1(eventstruct) {
                 } else {
                     eventstruct.vehicle function_bbc1d940(1);
                 }
-            } else {
-                eventstruct.vehicle function_bbc1d940(1);
+                return;
             }
+            eventstruct.vehicle function_bbc1d940(1);
         }
     }
 }
@@ -3024,7 +3019,7 @@ function stop_monitor_damage_as_occupant() {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x1f20aa63, Offset: 0xa730
 // Size: 0x100
 function monitor_damage_as_occupant(player) {
@@ -3053,7 +3048,7 @@ function kill_vehicle(attackingplayer, weapon = level.weaponnone) {
 }
 
 // Namespace vehicle/vehicle_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa685e3b3, Offset: 0xa8d0
 // Size: 0x2c
 function function_eb183ffe(attackingplayer, weapon) {
@@ -3099,10 +3094,10 @@ function enable_laser(b_enable, n_index) {
     if (b_enable) {
         self laseron();
         self thread laser_death_watcher();
-    } else {
-        self laseroff();
-        self notify(#"laser_death_thread_stop");
+        return;
     }
+    self laseroff();
+    self notify(#"laser_death_thread_stop");
 }
 
 // Namespace vehicle/vehicle_shared
@@ -3260,12 +3255,10 @@ function private function_bbd487c2() {
     self endon(#"death", #"enter_vehicle");
     e_player endon(#"disconnect");
     level endon(#"game_ended");
-    b_do_delete = 0;
-    while (!b_do_delete) {
+    for (b_do_delete = 0; !b_do_delete; b_do_delete = 1) {
         wait(5);
         dist = distance2d(self.origin, e_player.origin);
         if (isalive(e_player) && dist > 3000) {
-            b_do_delete = 1;
         }
     }
     self thread util::auto_delete();
@@ -3900,9 +3893,9 @@ function function_78cfd053() {
     for (n = 0; n < var_c96543ab; n++) {
         if (n == 0) {
             var_8ac0fa8[n] = var_c56865cf;
-        } else {
-            var_8ac0fa8[n] = var_c56865cf - var_70fdf0cb * n;
+            continue;
         }
+        var_8ac0fa8[n] = var_c56865cf - var_70fdf0cb * n;
     }
     var_8ac0fa8[var_8ac0fa8.size] = 0;
     while (1) {

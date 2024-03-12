@@ -190,10 +190,10 @@ function private_mannequin_step1_setup(var_5ea5c94d) {
                 level flag::set(#"hash_7524c96c167377ef");
                 level.countdown_clock namespace_7d8e6ec3::function_9b1511fa();
                 level thread visit_prototype_minigun();
-            } else {
-                reset_codes();
                 continue;
             }
+            reset_codes();
+            continue;
         }
     }
 }
@@ -369,10 +369,10 @@ function function_a51b6403(is_opening) {
     if (is_opening) {
         self playsound("evt_bunker_door_interior_open");
         self moveto(self.v_start_pos + vectorscale((0, 0, -1), 128), 1);
-    } else {
-        self playsound("evt_bunker_door_interior_close");
-        self moveto(self.v_start_pos, 1);
+        return;
     }
+    self playsound("evt_bunker_door_interior_close");
+    self moveto(self.v_start_pos, 1);
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
@@ -402,12 +402,12 @@ function function_1e88595a() {
         if (!e_who zm_score::can_player_purchase(self.s_unitrigger.cost)) {
             zm_utility::play_sound_on_ent("no_purchase");
             e_who zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-        } else {
-            e_who zm_score::minus_to_player_score(self.s_unitrigger.cost);
-            e_who thread adam_activated_vo();
-            var_6ba58f5f = 1;
+            continue;
         }
-    } while(!var_6ba58f5f);
+        e_who zm_score::minus_to_player_score(self.s_unitrigger.cost);
+        e_who thread adam_activated_vo();
+        var_6ba58f5f = 1;
+    } while (!var_6ba58f5f);
     self.var_1a612d42 = e_who;
     level flag::set(#"hash_6202f3e00d7008b0");
 }
@@ -433,7 +433,7 @@ function function_eaa63f5b(n_minutes = 1) {
             /#
                 iprintlnbold("<unknown string>");
             #/
-            break;
+            return;
         }
         wait(10);
     }
@@ -583,7 +583,6 @@ function timer_actual(kills, time) {
                     }
                     if (sighttracepassed(self.origin + vectorscale((0, 0, 1), 30), e_player.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
                         e_player zm_audio::create_and_play_dialog(#"kill", #"streak_adam");
-                        continue;
                     }
                 }
             }

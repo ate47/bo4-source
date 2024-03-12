@@ -56,21 +56,21 @@ function setup_craftfoundry(craftfoundry) {
             craftfoundry.blueprints = [];
             switch (craftfoundry.var_2a2adea3) {
             case 8:
-                craftfoundry.blueprints[7] = function_b18074d0(craftfoundry.var_b81b4995);
+                craftfoundry.blueprints[7] = function_b18074d0(craftfoundry.blueprint08);
             case 7:
-                craftfoundry.blueprints[6] = function_b18074d0(craftfoundry.var_5e039567);
+                craftfoundry.blueprints[6] = function_b18074d0(craftfoundry.blueprint07);
             case 6:
-                craftfoundry.blueprints[5] = function_b18074d0(craftfoundry.var_b84049db);
+                craftfoundry.blueprints[5] = function_b18074d0(craftfoundry.blueprint06);
             case 5:
-                craftfoundry.blueprints[4] = function_b18074d0(craftfoundry.var_5dee9539);
+                craftfoundry.blueprints[4] = function_b18074d0(craftfoundry.blueprint05);
             case 4:
-                craftfoundry.blueprints[3] = function_b18074d0(craftfoundry.var_93b280c0);
+                craftfoundry.blueprints[3] = function_b18074d0(craftfoundry.blueprint04);
             case 3:
-                craftfoundry.blueprints[2] = function_b18074d0(craftfoundry.var_a980ac5c);
+                craftfoundry.blueprints[2] = function_b18074d0(craftfoundry.blueprint03);
             case 2:
-                craftfoundry.blueprints[1] = function_b18074d0(craftfoundry.var_339dfcd);
+                craftfoundry.blueprints[1] = function_b18074d0(craftfoundry.blueprint02);
             case 1:
-                craftfoundry.blueprints[0] = function_b18074d0(craftfoundry.var_110b7b70);
+                craftfoundry.blueprints[0] = function_b18074d0(craftfoundry.blueprint01);
                 break;
             }
         }

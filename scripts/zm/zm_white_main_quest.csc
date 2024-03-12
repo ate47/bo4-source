@@ -56,9 +56,9 @@ function init_fx() {
 function function_a4630e54(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx_sparks = util::playfxontag(localclientnum, level._effect[#"fx8_quest_mannequin_initial_sparks"], self, "tag_head");
-    } else {
-        stopfx(localclientnum, self.fx_sparks);
+        return;
     }
+    stopfx(localclientnum, self.fx_sparks);
 }
 
 // Namespace white_main_quest/zm_white_main_quest
@@ -68,9 +68,9 @@ function function_a4630e54(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_a290f1b0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx_charge = util::playfxontag(localclientnum, level._effect[#"fx8_quest_mannequin_charging"], self, "tag_origin");
-    } else {
-        killfx(localclientnum, self.fx_charge);
+        return;
     }
+    killfx(localclientnum, self.fx_charge);
 }
 
 // Namespace white_main_quest/zm_white_main_quest
@@ -80,9 +80,9 @@ function function_a290f1b0(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_ac3315e5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx = util::playfxontag(localclientnum, level._effect[#"fx8_quest_mannequin_explode_main"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.fx);
+        return;
     }
+    stopfx(localclientnum, self.fx);
 }
 
 // Namespace white_main_quest/zm_white_main_quest
@@ -92,9 +92,9 @@ function function_ac3315e5(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx = util::playfxontag(localclientnum, level._effect[#"fx8_power_wisp_lg"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.fx);
+        return;
     }
+    stopfx(localclientnum, self.fx);
 }
 
 // Namespace white_main_quest/zm_white_main_quest
@@ -134,7 +134,9 @@ function server_carry_fail_feedback(localclientnum, oldval, newval, bnewent, bin
 function server_carry_audio_feedback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.var_c0f636f9 = self playloopsound(#"hash_54b2fc41dcb6bc56");
-    } else if (isdefined(self.var_c0f636f9)) {
+        return;
+    }
+    if (isdefined(self.var_c0f636f9)) {
         self stoploopsound(self.var_c0f636f9);
         self.var_c0f636f9 = undefined;
     }
@@ -147,9 +149,9 @@ function server_carry_audio_feedback(localclientnum, oldval, newval, bnewent, bi
 function soul_release(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         util::playfxontag(localclientnum, level._effect[#"pap_projectile"], self, "tag_origin");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"pap_projectile_end"], self, "tag_origin");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"pap_projectile_end"], self, "tag_origin");
 }
 
 // Namespace white_main_quest/zm_white_main_quest
@@ -167,9 +169,9 @@ function function_9bc657a7(localclientnum, oldval, newval, bnewent, binitialsnap
 function registerooze_gate_colcontrolrobotmelee(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_675f4b19e646ca6c"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.fx);
+        return;
     }
+    stopfx(localclientnum, self.fx);
 }
 
 // Namespace white_main_quest/zm_white_main_quest

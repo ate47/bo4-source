@@ -133,7 +133,9 @@ function function_9ed71eeb(localclientnum, oldval, newval, bnewent, binitialsnap
             self stoploopsound(self.var_b10399e);
             self.var_b10399e = undefined;
         }
-    } else if (!isdefined(self.var_b10399e)) {
+        return;
+    }
+    if (!isdefined(self.var_b10399e)) {
         self playsound(localclientnum, #"hash_6845d8009f05e81c");
         self.var_b10399e = self playloopsound(#"hash_205cc527b5726b4d");
     }
@@ -149,9 +151,9 @@ function keyline_model(localclientnum, oldval, newval, bnewent, binitialsnap, fi
     }
     if (newval) {
         self playrenderoverridebundle(#"rob_sonar_set_friendly");
-    } else {
-        self stoprenderoverridebundle(#"rob_sonar_set_friendly");
+        return;
     }
+    self stoprenderoverridebundle(#"rob_sonar_set_friendly");
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -180,10 +182,10 @@ function function_75ac8f21(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xc0
 function function_3298ba0(n_index) {
     if (isdefined(level.var_7987392b) && isarray(level.var_7987392b)) {
-        foreach (var_99f92cf4 in level.var_7987392b) {
-            if (isdefined(var_99f92cf4)) {
-                if (var_99f92cf4.var_f147da98 == n_index) {
-                    return var_99f92cf4;
+        foreach (mdl_bowl in level.var_7987392b) {
+            if (isdefined(mdl_bowl)) {
+                if (mdl_bowl.var_f147da98 == n_index) {
+                    return mdl_bowl;
                 }
             }
         }
@@ -200,9 +202,9 @@ function function_250bbf4e(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     if (newval) {
-        var_99f92cf4 = self function_3298ba0(newval);
-        if (isdefined(var_99f92cf4)) {
-            var_99f92cf4 playrenderoverridebundle(#"rob_sonar_set_friendly");
+        mdl_bowl = self function_3298ba0(newval);
+        if (isdefined(mdl_bowl)) {
+            mdl_bowl playrenderoverridebundle(#"rob_sonar_set_friendly");
         }
     }
 }
@@ -213,9 +215,9 @@ function function_250bbf4e(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xf8
 function cleanup_challenges(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(level.var_7987392b) && isarray(level.var_7987392b)) {
-        foreach (var_99f92cf4 in level.var_7987392b) {
-            if (isdefined(var_99f92cf4)) {
-                var_99f92cf4 stoprenderoverridebundle(#"rob_sonar_set_friendly");
+        foreach (mdl_bowl in level.var_7987392b) {
+            if (isdefined(mdl_bowl)) {
+                mdl_bowl stoprenderoverridebundle(#"rob_sonar_set_friendly");
             }
         }
     }
@@ -240,11 +242,11 @@ function function_c63a4f32(localclientnum, oldval, newval, bnewent, binitialsnap
             return;
         }
         n_index = self.var_c68d7a3e;
-        var_99f92cf4 = self function_3298ba0(newval);
-        if (!isdefined(var_99f92cf4)) {
+        mdl_bowl = self function_3298ba0(newval);
+        if (!isdefined(mdl_bowl)) {
             return;
         }
-        e_fx = spawn(localclientnum, var_99f92cf4.origin, "script_model");
+        e_fx = spawn(localclientnum, mdl_bowl.origin, "script_model");
         e_fx setmodel(#"tag_origin");
         e_fx playsound(localclientnum, "zmb_sq_souls_release");
         e_fx.sfx_id = e_fx playloopsound(#"zmb_sq_souls_lp");
@@ -286,10 +288,10 @@ function fake_physicslaunch(target_pos, power, var_4862f668) {
 function rob_coals(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         self thread function_4eff20ff();
-    } else {
-        self notify(#"hash_6bc81dae92c4902e");
-        self thread function_23333a90();
+        return;
     }
+    self notify(#"hash_6bc81dae92c4902e");
+    self thread function_23333a90();
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -305,7 +307,7 @@ function function_4eff20ff() {
     self function_78233d29("rob_zm_red_cin_coals", "", "Tint", 1);
     while (1) {
         if (!isdefined(self)) {
-            break;
+            return;
         }
         self function_78233d29("rob_zm_red_cin_coals", "", "Alpha", level.var_75ca8fda);
         level.var_75ca8fda = level.var_75ca8fda + level.var_6437d5e7;

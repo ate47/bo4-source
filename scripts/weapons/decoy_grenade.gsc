@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2553359, Offset: 0x158
 // Size: 0x6c
 function init_shared() {
@@ -31,7 +31,7 @@ function init_shared() {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x24590163, Offset: 0x1d0
 // Size: 0x3e
 function function_41625261(watcher) {
@@ -40,7 +40,7 @@ function function_41625261(watcher) {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3a9efc3, Offset: 0x218
 // Size: 0x124
 function on_spawn(watcher) {
@@ -59,7 +59,7 @@ function on_spawn(watcher) {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66fdb79f, Offset: 0x348
 // Size: 0x68
 function play_footsteps() {
@@ -72,7 +72,7 @@ function play_footsteps() {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x896658f, Offset: 0x3b8
 // Size: 0x1e8
 function function_e9d18b65() {
@@ -91,22 +91,22 @@ function function_e9d18b65() {
             if (var_fa7f044f >= weapon.clipsize) {
                 var_fa7f044f = 0;
                 grenade function_7c24c60f(weapon.reloadtime);
-            } else {
-                wait(weapon.firetime);
+                continue;
             }
+            wait(weapon.firetime);
         }
         if (var_fa7f044f >= weapon.clipsize) {
             var_fa7f044f = 0;
             grenade function_7c24c60f(weapon.reloadtime);
-        } else {
-            burst_delay = randomfloatrange(grenade.var_f64cb8d.var_c8670194, grenade.var_f64cb8d.var_ebc63eca);
-            wait(burst_delay);
+            continue;
         }
+        burst_delay = randomfloatrange(grenade.var_f64cb8d.var_c8670194, grenade.var_f64cb8d.var_ebc63eca);
+        wait(burst_delay);
     }
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4dbc3a84, Offset: 0x5a8
 // Size: 0x8a
 function function_7c24c60f(reloadtime) {
@@ -120,7 +120,7 @@ function function_7c24c60f(reloadtime) {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x291b619b, Offset: 0x640
 // Size: 0x92
 function function_a5871d04(grenade) {
@@ -134,7 +134,7 @@ function function_a5871d04(grenade) {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x24ebb561, Offset: 0x6e0
 // Size: 0x1aa
 function on_damage(watcher) {

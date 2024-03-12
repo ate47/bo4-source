@@ -8,7 +8,7 @@
 class cfull_screen_movie : cluielem {
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 0, eflags: 0x8
+    // Params 0, eflags: 0x9 linked
     // Checksum 0x8a3213f, Offset: 0x3b8
     // Size: 0x14
     __constructor() {
@@ -16,7 +16,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 0, eflags: 0x90 class_linked
+    // Params 0, eflags: 0x91 linked class_linked
     // Checksum 0xb1e92033, Offset: 0x858
     // Size: 0x14
     __destructor() {
@@ -24,7 +24,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0x99db496b, Offset: 0x820
     // Size: 0x30
     function set_moviekey(localclientnum, value) {
@@ -32,7 +32,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0xe353861d, Offset: 0x7e8
     // Size: 0x30
     function registerplayer_callout_traversal(localclientnum, value) {
@@ -40,7 +40,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0x570d7d89, Offset: 0x7b0
     // Size: 0x30
     function set_playoutromovie(localclientnum, value) {
@@ -48,7 +48,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0xb255d71a, Offset: 0x778
     // Size: 0x30
     function set_additive(localclientnum, value) {
@@ -56,7 +56,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0xe7b811cb, Offset: 0x740
     // Size: 0x30
     function set_looping(localclientnum, value) {
@@ -64,7 +64,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0x4afb6c5b, Offset: 0x708
     // Size: 0x30
     function set_showblackscreen(localclientnum, value) {
@@ -72,7 +72,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0xf88e0bb3, Offset: 0x6d0
     // Size: 0x30
     function set_moviename(localclientnum, value) {
@@ -80,7 +80,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 1, eflags: 0x0
+    // Params 1, eflags: 0x1 linked
     // Checksum 0x884ffaae, Offset: 0x698
     // Size: 0x2c
     function open(localclientnum) {
@@ -88,7 +88,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 1, eflags: 0x0
+    // Params 1, eflags: 0x1 linked
     // Checksum 0xad0b02b2, Offset: 0x588
     // Size: 0x104
     function function_fa582112(localclientnum) {
@@ -103,7 +103,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 1, eflags: 0x0
+    // Params 1, eflags: 0x1 linked
     // Checksum 0xb5de22c, Offset: 0x558
     // Size: 0x24
     function register_clientside(uid) {
@@ -111,7 +111,7 @@ class cfull_screen_movie : cluielem {
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 8, eflags: 0x0
+    // Params 8, eflags: 0x1 linked
     // Checksum 0xe1c5b283, Offset: 0x3d8
     // Size: 0x174
     function setup_clientfields(uid, var_f7b454f9, var_d5b04ae3, var_e4decd0, var_e545d4b9, var_78184b90, var_8ba396cb, var_ea38d488) {
@@ -128,7 +128,7 @@ class cfull_screen_movie : cluielem {
 }
 
 // Namespace full_screen_movie/full_screen_movie
-// Params 8, eflags: 0x0
+// Params 8, eflags: 0x1 linked
 // Checksum 0xaadd2040, Offset: 0x108
 // Size: 0x94
 function register(uid, var_f7b454f9, var_d5b04ae3, var_e4decd0, var_e545d4b9, var_78184b90, var_8ba396cb, var_ea38d488) {

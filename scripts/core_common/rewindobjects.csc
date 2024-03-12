@@ -36,30 +36,29 @@ function initrewindobjectwatchers(localclientnum) {
 // Size: 0x18c
 function watchrewindableevents(localclientnum) {
     for (;;) {
-        for (;;) {
-            if (isdefined(level.rewindwatcherarray[localclientnum])) {
-                rewindwatcherkeys = getarraykeys(level.rewindwatcherarray[localclientnum]);
-                for (i = 0; i < rewindwatcherkeys.size; i++) {
-                    rewindwatcher = level.rewindwatcherarray[localclientnum][rewindwatcherkeys[i]];
-                    if (!isdefined(rewindwatcher)) {
+        if (isdefined(level.rewindwatcherarray[localclientnum])) {
+            rewindwatcherkeys = getarraykeys(level.rewindwatcherarray[localclientnum]);
+            for (i = 0; i < rewindwatcherkeys.size; i++) {
+                rewindwatcher = level.rewindwatcherarray[localclientnum][rewindwatcherkeys[i]];
+                if (!isdefined(rewindwatcher)) {
+                    continue;
+                }
+                if (!isdefined(rewindwatcher.event)) {
+                    continue;
+                }
+                timekeys = getarraykeys(rewindwatcher.event);
+                for (j = 0; j < timekeys.size; j++) {
+                    timekey = timekeys[j];
+                    if (rewindwatcher.event[timekey].inprogress == 1) {
                         continue;
                     }
-                    if (!isdefined(rewindwatcher.event)) {
-                        continue;
-                    }
-                    timekeys = getarraykeys(rewindwatcher.event);
-                    for (j = 0; j < timekeys.size; j++) {
-                        timekey = timekeys[j];
-                        if (rewindwatcher.event[timekey].inprogress == 1) {
-                            continue;
-                        }
-                        if (getservertime(0) >= timekey) {
-                            rewindwatcher thread startrewindableevent(localclientnum, timekey);
-                        }
+                    if (getservertime(0) >= timekey) {
+                        rewindwatcher thread startrewindableevent(localclientnum, timekey);
                     }
                 }
             }
         }
+        wait(0.1);
     }
 }
 
@@ -87,10 +86,10 @@ function startrewindableevent(localclientnum, timekey) {
             starttime = timekey + int(timedfunction.starttimesec * 1000);
             if (starttime > getservertime(0)) {
                 allfunctionsstarted = 0;
-            } else {
-                self.event[timekey].timedfunction[timedfunctionkey] = 1;
-                level thread [[ timedfunction.func ]](localclientnum, starttime, timedfunction.starttimesec, self.event[timekey].data);
+                continue;
             }
+            self.event[timekey].timedfunction[timedfunctionkey] = 1;
+            level thread [[ timedfunction.func ]](localclientnum, starttime, timedfunction.starttimesec, self.event[timekey].data);
         }
         wait(0.1);
     }
@@ -232,10 +231,9 @@ function servertimedmoveto(localclientnum, startpoint, endpoint, starttime, dura
         }
         self moveto(endpoint, movetime, 0, 0);
         return 1;
-    } else {
-        self.origin = endpoint;
-        return 0;
     }
+    self.origin = endpoint;
+    return 0;
 }
 
 // Namespace rewindobjects/rewindobjects
@@ -258,10 +256,9 @@ function servertimedrotateto(localclientnum, angles, starttime, duration, timein
         rotatetime = duration - timeelapsed;
         self rotateto(angles, rotatetime, timein, timeout);
         return 1;
-    } else {
-        self.angles = angles;
-        return 0;
     }
+    self.angles = angles;
+    return 0;
 }
 
 // Namespace rewindobjects/rewindobjects

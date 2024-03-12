@@ -30,9 +30,9 @@ function function_25101093(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self postfx::stoppostfxbundle("pstfx_wz_snowball_hit");
         self postfx::playpostfxbundle("pstfx_wz_snowball_hit");
-    } else {
-        self postfx::exitpostfxbundle("pstfx_wz_snowball_hit");
+        return;
     }
+    self postfx::exitpostfxbundle("pstfx_wz_snowball_hit");
 }
 
 // Namespace zm_weap_snowball/zm_weap_snowball
@@ -43,8 +43,8 @@ function function_43d8c5f8(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self postfx::stoppostfxbundle("pstfx_wz_snowball_hit_yellow");
         self postfx::playpostfxbundle("pstfx_wz_snowball_hit_yellow");
-    } else {
-        self postfx::exitpostfxbundle("pstfx_wz_snowball_hit_yellow");
+        return;
     }
+    self postfx::exitpostfxbundle("pstfx_wz_snowball_hit_yellow");
 }
 

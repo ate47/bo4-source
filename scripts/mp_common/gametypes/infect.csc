@@ -31,7 +31,9 @@ function function_fd78da38(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                 }
             }
-        } else if (self flag::exists(#"friendly")) {
+            return;
+        }
+        if (self flag::exists(#"friendly")) {
             self renderoverridebundle::stop_bundle(#"friendly", sessionmodeiscampaigngame() ? #"hash_1cbf6d26721c59a7" : #"hash_1c90592671f4c6e9", 0);
         }
     }

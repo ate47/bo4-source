@@ -157,7 +157,7 @@ function uninterruptedobitfeedkills(attacker, weapon) {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 5, eflags: 0x0
+// Params 5, eflags: 0x1 linked
 // Checksum 0x294d3c02, Offset: 0xaa0
 // Size: 0x64
 function function_c046c773(waitduration, event, player, victim, weapon) {
@@ -173,9 +173,8 @@ function function_c046c773(waitduration, event, player, victim, weapon) {
 function isregisteredevent(type) {
     if (isdefined(level.scoreinfo[type])) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace scoreevents/scoreevents_shared
@@ -288,7 +287,9 @@ function givecratecapturemedal(crate, capturer) {
                     processscoreevent(#"share_care_package", crate.owner, undefined, undefined);
                 }
             }
-        } else if (capturer != crate.owner) {
+            return;
+        }
+        if (capturer != crate.owner) {
             crate.owner playlocalsound(#"mpl_crate_enemy_steals");
             if (!isdefined(crate.hacker)) {
                 processscoreevent(#"capture_enemy_crate", capturer, undefined, undefined);
@@ -428,7 +429,7 @@ function player_spawned() {
 }
 
 // Namespace scoreevents/scoreevents_shared
-// Params 3, eflags: 0x0
+// Params 3, eflags: 0x1 linked
 // Checksum 0x92e2b475, Offset: 0x1678
 // Size: 0xc4
 function function_f40d64cc(attacker, vehicle, weapon) {

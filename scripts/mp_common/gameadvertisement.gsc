@@ -7,7 +7,7 @@
 #namespace gameadvertisement;
 
 // Namespace gameadvertisement/gameadvertisement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa47b6e1c, Offset: 0x88
 // Size: 0x11c
 function init() {
@@ -26,7 +26,7 @@ function init() {
 }
 
 // Namespace gameadvertisement/gameadvertisement
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd8b5ac7c, Offset: 0x1b0
 // Size: 0x34
 function setadvertisedstatus(onoff) {
@@ -37,7 +37,7 @@ function setadvertisedstatus(onoff) {
 }
 
 // Namespace gameadvertisement/gameadvertisement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb92ce72b, Offset: 0x1f0
 // Size: 0x128
 function sessionadvertisementcheck() {
@@ -48,8 +48,7 @@ function sessionadvertisementcheck() {
         return;
     }
     level endon(#"game_end");
-    currentadvertisedstatus = undefined;
-    while (1) {
+    for (currentadvertisedstatus = undefined; 1; currentadvertisedstatus = advertise) {
         sessionadvertcheckwait = getdvarint(#"sessionadvertcheckwait", 1);
         wait(sessionadvertcheckwait);
         advertise = [[ level.var_a962eeb6 ]]();
@@ -59,12 +58,11 @@ function sessionadvertisementcheck() {
             #/
             setadvertisedstatus(advertise);
         }
-        currentadvertisedstatus = advertise;
     }
 }
 
 // Namespace gameadvertisement/gameadvertisement
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3cea9f8d, Offset: 0x320
 // Size: 0x1aa
 function teamscorelimitcheck(rulescorepercent, debug_count) {
@@ -96,7 +94,7 @@ function teamscorelimitcheck(rulescorepercent, debug_count) {
 }
 
 // Namespace gameadvertisement/gameadvertisement
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe75ee0dd, Offset: 0x4d8
 // Size: 0x64
 function timelimitcheck(ruletimeleft) {
@@ -111,7 +109,7 @@ function timelimitcheck(ruletimeleft) {
 }
 
 // Namespace gameadvertisement/gameadvertisement
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1934e19d, Offset: 0x548
 // Size: 0x402
 function default_rules() {
@@ -311,29 +309,29 @@ function sessionadvertismentupdatedebughud() {
                     sessionadverthud_3b = undefined;
                     sessionadverthud_4a = undefined;
                     sessionadverthud_4b = undefined;
+                    continue;
+                }
+                if (level.sessionadvertstatus == 1) {
+                    sessionadverthud_0.color = (1, 1, 1);
                 } else {
-                    if (level.sessionadvertstatus == 1) {
-                        sessionadverthud_0.color = (1, 1, 1);
-                    } else {
-                        sessionadverthud_0.color = vectorscale((1, 0, 0), 0.9);
-                    }
-                    sessionadverthud_0 settext(level.sessionadverthud_0_text);
-                    if (level.sessionadverthud_1a_text != "<unknown string>") {
-                        sessionadverthud_1a settext(level.sessionadverthud_1a_text);
-                        sessionadverthud_1b setvalue(level.sessionadverthud_1b_text);
-                    }
-                    if (level.sessionadverthud_2a_text != "<unknown string>") {
-                        sessionadverthud_2a settext(level.sessionadverthud_2a_text);
-                        sessionadverthud_2b setvalue(level.sessionadverthud_2b_text);
-                    }
-                    if (level.sessionadverthud_3a_text != "<unknown string>") {
-                        sessionadverthud_3a settext(level.sessionadverthud_3a_text);
-                        sessionadverthud_3b setvalue(level.sessionadverthud_3b_text);
-                    }
-                    if (level.sessionadverthud_4a_text != "<unknown string>") {
-                        sessionadverthud_4a settext(level.sessionadverthud_4a_text);
-                        sessionadverthud_4b setvalue(level.sessionadverthud_4b_text);
-                    }
+                    sessionadverthud_0.color = vectorscale((1, 0, 0), 0.9);
+                }
+                sessionadverthud_0 settext(level.sessionadverthud_0_text);
+                if (level.sessionadverthud_1a_text != "<unknown string>") {
+                    sessionadverthud_1a settext(level.sessionadverthud_1a_text);
+                    sessionadverthud_1b setvalue(level.sessionadverthud_1b_text);
+                }
+                if (level.sessionadverthud_2a_text != "<unknown string>") {
+                    sessionadverthud_2a settext(level.sessionadverthud_2a_text);
+                    sessionadverthud_2b setvalue(level.sessionadverthud_2b_text);
+                }
+                if (level.sessionadverthud_3a_text != "<unknown string>") {
+                    sessionadverthud_3a settext(level.sessionadverthud_3a_text);
+                    sessionadverthud_3b setvalue(level.sessionadverthud_3b_text);
+                }
+                if (level.sessionadverthud_4a_text != "<unknown string>") {
+                    sessionadverthud_4a settext(level.sessionadverthud_4a_text);
+                    sessionadverthud_4b setvalue(level.sessionadverthud_4b_text);
                 }
             }
         }

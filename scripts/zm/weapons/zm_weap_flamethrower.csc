@@ -47,18 +47,18 @@ function flamethrower_tornado_fx(localclientnum, oldval, newval, bnewent, biniti
             self thread function_ea05550b(localclientnum);
         }
         self thread function_4e325cd6(localclientnum);
-    } else {
-        if (isdefined(self.n_tornado_fx)) {
-            stopfx(localclientnum, self.n_tornado_fx);
-            self.n_tornado_fx = undefined;
-        }
-        if (isdefined(self.var_180064c2)) {
-            self playsound(localclientnum, #"hash_51812161eb23c96f");
-            self stoploopsound(self.var_180064c2);
-            self.var_180064c2 = undefined;
-        }
-        self notify(#"hash_4a10e61d27734104");
+        return;
     }
+    if (isdefined(self.n_tornado_fx)) {
+        stopfx(localclientnum, self.n_tornado_fx);
+        self.n_tornado_fx = undefined;
+    }
+    if (isdefined(self.var_180064c2)) {
+        self playsound(localclientnum, #"hash_51812161eb23c96f");
+        self stoploopsound(self.var_180064c2);
+        self.var_180064c2 = undefined;
+    }
+    self notify(#"hash_4a10e61d27734104");
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
@@ -109,9 +109,9 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 function flamethrower_wind_blast_flash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {
         playviewmodelfx(localclientnum, level._effect[#"wind_blast_flash"], "tag_flash");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"hash_34db403668f7f353"], self, "tag_flash");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"hash_34db403668f7f353"], self, "tag_flash");
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
@@ -121,8 +121,8 @@ function flamethrower_wind_blast_flash(localclientnum, oldval, newval, bnewent, 
 function flamethrower_tornado_blast_flash(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {
         playviewmodelfx(localclientnum, level._effect[#"tornado_blast_flash"], "tag_flash");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"tornado_blast_flash"], self, "tag_flash");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"tornado_blast_flash"], self, "tag_flash");
 }
 

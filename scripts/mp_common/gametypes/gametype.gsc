@@ -8,7 +8,7 @@
 #namespace gametype;
 
 // Namespace gametype/gametype
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe724b7d0, Offset: 0xc8
 // Size: 0x16e
 function init() {
@@ -28,7 +28,7 @@ function init() {
 }
 
 // Namespace gametype/gametype
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xef3b58d4, Offset: 0x240
 // Size: 0x7c
 function on_start_game_type() {
@@ -44,7 +44,7 @@ function on_start_game_type() {
 }
 
 // Namespace gametype/gametype
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8673dc05, Offset: 0x2c8
 // Size: 0x7c
 function on_round_switch() {
@@ -59,7 +59,7 @@ function on_round_switch() {
 }
 
 // Namespace gametype/gametype
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xc4cca1cd, Offset: 0x350
 // Size: 0x20
 function private function_788fb510(value) {
@@ -70,7 +70,7 @@ function private function_788fb510(value) {
 }
 
 // Namespace gametype/gametype
-// Params a, eflags: 0x1 linked
+// Params a, eflags: 0x0
 // Checksum 0x704f31f2, Offset: 0x378
 // Size: 0x1ec
 function setvisiblescoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8, col9, col10) {
@@ -86,20 +86,20 @@ function setvisiblescoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, c
     col10 = function_788fb510(col10);
     if (!level.rankedmatch) {
         setscoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, "sbtimeplayed", "shotshit", "shotsmissed", "victory");
-    } else {
-        setscoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8, col9, col10);
+        return;
     }
+    setscoreboardcolumns(col1, col2, col3, col4, col5, col6, col7, col8, col9, col10);
 }
 
 // Namespace gametype/gametype
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a6c199, Offset: 0x570
 // Size: 0x8c
 function function_f2f4dfa7() {
     if (isdefined(level.var_d1455682.switchsides) && level.var_d1455682.switchsides && game.switchedsides) {
         util::set_team_mapping(game.defenders, game.attackers);
-    } else {
-        util::set_team_mapping(game.attackers, game.defenders);
+        return;
     }
+    util::set_team_mapping(game.attackers, game.defenders);
 }
 

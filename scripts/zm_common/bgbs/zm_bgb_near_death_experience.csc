@@ -44,7 +44,9 @@ function function_f177aa9f(localclientnum, oldval, newval, bnewent, binitialsnap
             }
             self.var_5dacba16[localclientnum] = util::playfxontag(localclientnum, "zombie/fx_bgb_near_death_3p", self, "j_spine4");
         }
-    } else if (isdefined(self.var_5dacba16) && isdefined(self.var_5dacba16[localclientnum])) {
+        return;
+    }
+    if (isdefined(self.var_5dacba16) && isdefined(self.var_5dacba16[localclientnum])) {
         stopfx(localclientnum, self.var_5dacba16[localclientnum]);
         self.var_5dacba16[localclientnum] = undefined;
     }
@@ -60,7 +62,9 @@ function function_70565a6d(localclientnum, oldval, newval, bnewent, binitialsnap
             deletefx(localclientnum, level.var_d066b29d[localclientnum]);
         }
         level.var_d066b29d[localclientnum] = playfxoncamera(localclientnum, "zombie/fx_bgb_near_death_1p", (0, 0, 0), (1, 0, 0));
-    } else if (isdefined(level.var_d066b29d[localclientnum])) {
+        return;
+    }
+    if (isdefined(level.var_d066b29d[localclientnum])) {
         stopfx(localclientnum, level.var_d066b29d[localclientnum]);
         level.var_d066b29d[localclientnum] = undefined;
     }

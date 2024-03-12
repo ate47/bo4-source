@@ -32,9 +32,8 @@ function register_bgcache(poolname, var_b693fec6, uniqueid, version, func_callba
 function get(field_name) {
     if (self == level) {
         return codegetworldclientfield(field_name);
-    } else {
-        return codegetclientfield(self, field_name);
     }
+    return codegetclientfield(self, field_name);
 }
 
 // Namespace clientfield/clientfield_shared
@@ -46,7 +45,7 @@ function get_to_player(field_name) {
 }
 
 // Namespace clientfield/clientfield_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb9a60c7, Offset: 0x2a0
 // Size: 0x22
 function get_player_uimodel(field_name) {

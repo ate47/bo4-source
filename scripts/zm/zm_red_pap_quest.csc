@@ -50,9 +50,9 @@ function function_f2332be2(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_11d62eb0(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self thread postfx::playpostfxbundle(#"pstfx_watertransition");
-    } else {
-        self thread postfx::exitpostfxbundle(#"pstfx_watertransition");
+        return;
     }
+    self thread postfx::exitpostfxbundle(#"pstfx_watertransition");
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -62,9 +62,9 @@ function function_11d62eb0(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_e83bf3a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self thread postfx::playpostfxbundle(#"pstfx_slowed");
-    } else {
-        self thread postfx::exitpostfxbundle(#"pstfx_slowed");
+        return;
     }
+    self thread postfx::exitpostfxbundle(#"pstfx_slowed");
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -91,9 +91,9 @@ function crystal_explosion_func(localclientnum, oldval, newval, bnewent, binitia
 function function_5783c958(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self thread postfx::playpostfxbundle(#"pstfx_shock_charge");
-    } else {
-        self thread postfx::exitpostfxbundle(#"pstfx_shock_charge");
+        return;
     }
+    self thread postfx::exitpostfxbundle(#"pstfx_shock_charge");
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -103,8 +103,8 @@ function function_5783c958(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_6c40f793(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         forcestreamxmodel(#"hash_d8483cb5cc65489");
-    } else {
-        stopforcestreamingxmodel(#"hash_d8483cb5cc65489");
+        return;
     }
+    stopforcestreamingxmodel(#"hash_d8483cb5cc65489");
 }
 

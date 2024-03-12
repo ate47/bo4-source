@@ -62,9 +62,9 @@ function __init__() {
 function function_abff2ba8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {
         playviewmodelfx(localclientnum, level._effect[#"hash_143a6ec5331de8ec"], "tag_flash");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"hash_14407ac5332268fe"], self, "tag_flash");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"hash_14407ac5332268fe"], self, "tag_flash");
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -74,9 +74,9 @@ function function_abff2ba8(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_cde26b0e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (self zm_utility::function_f8796df3(localclientnum)) {
         playviewmodelfx(localclientnum, level._effect[#"hash_37498552cad06776"], "tag_flash");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"hash_37429952caca6ac4"], self, "tag_flash");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"hash_37429952caca6ac4"], self, "tag_flash");
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -174,7 +174,7 @@ function flash_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         } else if (isdefined(self gettagorigin("tag_flash"))) {
             self.fx_muzzle_flash = util::playfxontag(localclientnum, level._effect[var_a1f103c8], self, "tag_flash");
         }
-        break;
+        return;
     }
 }
 
@@ -214,12 +214,12 @@ function function_f11b8d1d(localclientnum, oldval, newval, bnewent, binitialsnap
             sndorigin = self gettagorigin(str_tag);
             playsound(0, #"zmb_vocals_zombie_skull_scream", sndorigin);
         }
-    } else {
-        if (isdefined(self.var_ff2eebc7)) {
-            deletefx(localclientnum, self.var_ff2eebc7, 1);
-        }
-        self.var_ff2eebc7 = undefined;
+        return;
     }
+    if (isdefined(self.var_ff2eebc7)) {
+        deletefx(localclientnum, self.var_ff2eebc7, 1);
+    }
+    self.var_ff2eebc7 = undefined;
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -243,15 +243,15 @@ function beacon_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
         if (isdefined(self.b_beacon_fx) && self.b_beacon_fx) {
             self.n_beacon_fx = util::playfxontag(localclientnum, level._effect[#"scepter_bubble"], self, "tag_origin");
         }
-    } else {
-        self.b_beacon_fx = undefined;
-        if (isdefined(self.n_beacon_fx)) {
-            deletefx(localclientnum, self.n_beacon_fx, 1);
-            util::playfxontag(localclientnum, level._effect[#"hash_4c17911c3aed59ae"], self, "tag_origin");
-            self.n_beacon_fx = undefined;
-        }
-        arrayremovevalue(level.var_9b66c01, self);
+        return;
     }
+    self.b_beacon_fx = undefined;
+    if (isdefined(self.n_beacon_fx)) {
+        deletefx(localclientnum, self.n_beacon_fx, 1);
+        util::playfxontag(localclientnum, level._effect[#"hash_4c17911c3aed59ae"], self, "tag_origin");
+        self.n_beacon_fx = undefined;
+    }
+    arrayremovevalue(level.var_9b66c01, self);
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -307,12 +307,12 @@ function revive_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
             sndorigin = self gettagorigin("J_Eyeball_LE");
             self playsound(localclientnum, #"hash_29c60da797dd7b3");
         }
-    } else {
-        if (isdefined(self.var_a776839a)) {
-            deletefx(localclientnum, self.var_a776839a, 1);
-        }
-        self.var_a776839a = undefined;
+        return;
     }
+    if (isdefined(self.var_a776839a)) {
+        deletefx(localclientnum, self.var_a776839a, 1);
+    }
+    self.var_a776839a = undefined;
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -324,13 +324,13 @@ function scepter_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsna
         switch (newvalue) {
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_scepter_melee_rumble");
-            break;
+            return;
         case 5:
             self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_rumble");
-            break;
+            return;
         case 6:
             self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_hit_rumble");
-            break;
+            return;
         }
     }
 }

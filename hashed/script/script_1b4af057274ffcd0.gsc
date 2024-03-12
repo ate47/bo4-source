@@ -86,7 +86,7 @@ function private function_80c4721f(commander) {
                 case #"electric_door":
                 case #"local_electric_door":
                 case #"electric_buyable_door":
-                    goto LOC_000002e4;
+                    continue;
                 }
             }
             var_6f43058[#"cost"] = doorblocker.zombie_cost;
@@ -96,7 +96,6 @@ function private function_80c4721f(commander) {
             }
             var_6f43058[#"__unsafe__"][#"blocker"] = doorblocker;
             blockers[blockers.size] = var_6f43058;
-        LOC_000002e4:
         }
     }
     blackboard::setstructblackboardattribute(commander, #"zm_blockers", blockers);

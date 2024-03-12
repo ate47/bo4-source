@@ -83,9 +83,9 @@ function private function_a19d7104(settingsbundle) {
             /#
                 println("<unknown string>" + settingsbundle.name);
             #/
-        } else {
-            level.var_532264f5[settingsbundle.name][var_e8d7c6d7.weaponid] = {#var_fac896db:var_e8d7c6d7.var_97b22faa, #var_8e22aa87:var_e8d7c6d7.var_fc420d71, #var_fff93f95:var_e8d7c6d7.var_628192b0, #var_c6cc6205:var_e8d7c6d7.damagescale};
+            continue;
         }
+        level.var_532264f5[settingsbundle.name][var_e8d7c6d7.weaponid] = {#var_fac896db:var_e8d7c6d7.var_97b22faa, #var_8e22aa87:var_e8d7c6d7.var_fc420d71, #var_fff93f95:var_e8d7c6d7.var_628192b0, #var_c6cc6205:var_e8d7c6d7.damagescale};
     }
     settingsbundle.var_6199bcd5 = 1;
 }

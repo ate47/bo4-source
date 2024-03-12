@@ -203,16 +203,16 @@ function establish_gondola_door_definition(mdl_door) {
     switch (str_identifier) {
     case #"roof left":
         self.door_roof_left = mdl_door;
-        break;
+        return;
     case #"roof right":
         self.door_roof_right = mdl_door;
-        break;
+        return;
     case #"docks left":
         self.door_docks_left = mdl_door;
-        break;
+        return;
     case #"docks right":
         self.door_docks_right = mdl_door;
-        break;
+        return;
     }
 }
 
@@ -226,16 +226,16 @@ function establish_gondola_gate_definition(mdl_gate) {
     switch (str_identifier) {
     case #"roof left":
         self.gate_roof_left = mdl_gate;
-        break;
+        return;
     case #"roof right":
         self.gate_roof_right = mdl_gate;
-        break;
+        return;
     case #"docks left":
         self.gate_docks_left = mdl_gate;
-        break;
+        return;
     case #"docks right":
         self.gate_docks_right = mdl_gate;
-        break;
+        return;
     }
 }
 
@@ -248,16 +248,16 @@ function establish_gondola_landing_door_definition(mdl_door) {
     switch (str_identifier) {
     case #"roof left":
         self.landing_door_roof_left = mdl_door;
-        break;
+        return;
     case #"roof right":
         self.landing_door_roof_right = mdl_door;
-        break;
+        return;
     case #"docks left":
         self.landing_door_docks_left = mdl_door;
-        break;
+        return;
     case #"docks right":
         self.landing_door_docks_right = mdl_door;
-        break;
+        return;
     }
 }
 
@@ -270,16 +270,16 @@ function establish_gondola_landing_gate_definition(mdl_gate) {
     switch (str_identifier) {
     case #"roof left":
         self.landing_gate_roof_left = mdl_gate;
-        break;
+        return;
     case #"roof right":
         self.landing_gate_roof_right = mdl_gate;
-        break;
+        return;
     case #"docks left":
         self.landing_gate_docks_left = mdl_gate;
-        break;
+        return;
     case #"docks right":
         self.landing_gate_docks_right = mdl_gate;
-        break;
+        return;
     }
 }
 
@@ -781,9 +781,8 @@ function function_dc269d0d(a_zombies, e_gondola) {
     a_zombies = util::get_array_of_closest(e_gondola.origin, a_zombies, undefined, 1, 256);
     if (a_zombies.size > 0) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
@@ -795,7 +794,9 @@ function function_6a4544e() {
     var_1b66809c = array_players_on_gondola();
     if (var_1b66809c.size == 1) {
         var_1b66809c[0] zm_audio::create_and_play_dialog(#"gondola", #"ride_solo", undefined, 1);
-    } else if (var_1b66809c.size > 1) {
+        return;
+    }
+    if (var_1b66809c.size > 1) {
         level zm_vo::play_banter("gondola_banter", undefined, var_1b66809c);
     }
 }
@@ -892,7 +893,7 @@ function private function_da48c149(s_pos) {
             self setorigin(s_pos.origin);
         }
         var_75c89236++;
-    } while(var_75c89236 < 5);
+    } while (var_75c89236 < 5);
 }
 
 // Namespace zm_escape_travel/zm_escape_travel

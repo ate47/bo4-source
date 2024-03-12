@@ -166,9 +166,9 @@ function private update_players(local_client_num) {
         function_26ff990a(local_client_num);
         if (isdemoplaying()) {
             waitframe(1);
-        } else {
-            wait(var_40425722);
+            continue;
         }
+        wait(var_40425722);
     }
 }
 

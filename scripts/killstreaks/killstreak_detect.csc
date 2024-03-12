@@ -10,7 +10,7 @@
 #namespace killstreak_detect;
 
 // Namespace killstreak_detect/killstreak_detect
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xd19fc647, Offset: 0x170
 // Size: 0x29c
 function init_shared() {
@@ -134,9 +134,9 @@ function function_d859c344(local_client_num, newval) {
         if (isdefined(show_enemy) && show_enemy) {
             self renderoverridebundle::function_c8d97b8e(local_client_num, #"enemy", bundle.var_d3413870 + "enemy");
         }
-    } else {
-        self renderoverridebundle::function_c8d97b8e(local_client_num, #"friendly", #"hash_7d4b6b0d84ddafa3");
+        return;
     }
+    self renderoverridebundle::function_c8d97b8e(local_client_num, #"friendly", #"hash_7d4b6b0d84ddafa3");
 }
 
 // Namespace killstreak_detect/killstreak_detect

@@ -140,7 +140,7 @@ function private function_4dbf2663() {
                     }
                 }
             }
-        } while(row < var_e1617d73 && round != 0);
+        } while (row < var_e1617d73 && round != 0);
     }
     level.var_6d87ac05 = level.var_c556bb2e[0];
 }

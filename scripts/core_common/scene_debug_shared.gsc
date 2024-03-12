@@ -273,7 +273,9 @@ function display_scene_menu(str_type, str_scene) {
                             println("<unknown string>" + toupper(str_type) + "<unknown string>" + var_72acc069 + "<unknown string>" + s_scenedef.name);
                             var_72acc069++;
                         }
-                    } else if (function_c0f30783(s_scenedef)) {
+                        continue;
+                    }
+                    if (function_c0f30783(s_scenedef)) {
                         array::add_sorted(names, s_scenedef.name, 0);
                     }
                 }
@@ -538,9 +540,9 @@ function private _scene_list_settext(strings, n_selected, str_title, b_shot_menu
         }
         if (b_shot_menu) {
             debug2dtext((150, 410 + 400, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, var_444abf97);
-        } else {
-            debug2dtext((150, 410 + 400, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, var_444abf97);
+            return;
         }
+        debug2dtext((150, 410 + 400, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, var_444abf97);
     #/
 }
 
@@ -687,12 +689,16 @@ function debug_display(debug_frames) {
             if (!b_found) {
                 return;
             }
-        } else if (isdefined(self.last_scene_state_instance)) {
+            return;
+        }
+        if (isdefined(self.last_scene_state_instance)) {
             foreach (str_scene, str_state in self.last_scene_state_instance) {
                 print_scene_debug(debug_frames, i, str_scene, str_state);
                 i++;
             }
-        } else if (isdefined(self.scriptbundlename)) {
+            return;
+        }
+        if (isdefined(self.scriptbundlename)) {
             if (ishash(self.scriptbundlename)) {
                 str_scene = function_9e72a96(self.scriptbundlename);
             } else {
@@ -726,9 +732,8 @@ function debug_display_origin() {
     /#
         if (self == level) {
             return (0, 0, 0);
-        } else {
-            return self.origin;
         }
+        return self.origin;
     #/
 }
 
@@ -770,10 +775,10 @@ function move_to_scene(str_scene, b_reverse_dir) {
             } else {
                 error_on_screen("<unknown string>");
             }
-        } else {
-            s_scene = level.debug_current_scene_instances[level.debug_current_scene_index];
-            level.host set_origin(s_scene.origin);
+            return;
         }
+        s_scene = level.debug_current_scene_instances[level.debug_current_scene_index];
+        level.host set_origin(s_scene.origin);
     #/
 }
 

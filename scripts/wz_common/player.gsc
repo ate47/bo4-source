@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x83b4b058, Offset: 0xc8
 // Size: 0x24
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace wz_player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x34345af, Offset: 0xf8
 // Size: 0x24
 function on_player_spawned() {
@@ -30,7 +30,7 @@ function on_player_spawned() {
 }
 
 // Namespace wz_player/player
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4d69926e, Offset: 0x128
 // Size: 0xfa
 function on_grenade_fired(params) {
@@ -40,17 +40,17 @@ function on_grenade_fired(params) {
     case #"flare_gun":
         grenade function_4861487f(weapon, self);
         grenade thread function_cd8ee3c5();
-        break;
+        return;
     case #"flare_gun_veh":
         grenade function_4861487f(weapon, self);
         grenade thread function_f3edce9a();
     default:
-        break;
+        return;
     }
 }
 
 // Namespace wz_player/player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5faa724f, Offset: 0x230
 // Size: 0x56
 function function_4861487f(weapon, player) {
@@ -64,7 +64,7 @@ function function_4861487f(weapon, player) {
 }
 
 // Namespace wz_player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xffe0fc7, Offset: 0x290
 // Size: 0x124
 function function_cd8ee3c5() {
@@ -81,7 +81,7 @@ function function_cd8ee3c5() {
 }
 
 // Namespace wz_player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1eda065e, Offset: 0x3c0
 // Size: 0x1cc
 function function_f3edce9a() {
@@ -100,7 +100,7 @@ function function_f3edce9a() {
 }
 
 // Namespace wz_player/player
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe49c317b, Offset: 0x598
 // Size: 0x18
 function grenade_safe_to_throw(player, weapon) {
@@ -108,7 +108,7 @@ function grenade_safe_to_throw(player, weapon) {
 }
 
 // Namespace wz_player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x124a5fc8, Offset: 0x5b8
 // Size: 0x64
 function makegrenadedudanddestroy() {

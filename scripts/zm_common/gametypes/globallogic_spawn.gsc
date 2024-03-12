@@ -144,9 +144,9 @@ function spawnplayerprediction() {
         wait(0.5);
         if (isdefined(level.onspawnplayerunified) && getdvarint(#"scr_disableunifiedspawning", 0) == 0) {
             spawning::onspawnplayer_unified(1);
-        } else {
-            self [[ level.onspawnplayer ]](1);
+            continue;
         }
+        self [[ level.onspawnplayer ]](1);
     }
 }
 
@@ -453,10 +453,8 @@ function spawnintermission(usedefaultcallback) {
                 self playlocalsound(#"mus_contract_complete");
             }
             self closeingamemenu();
-            waittime = 4;
-            while (waittime) {
+            for (waittime = 4; waittime; waittime = waittime - 0.25) {
                 wait(0.25);
-                waittime = waittime - 0.25;
             }
         }
     }
@@ -680,7 +678,7 @@ function waitrespawnorsafespawnbutton() {
     self endon(#"disconnect", #"end_respawn");
     while (1) {
         if (self usebuttonpressed()) {
-            break;
+            return;
         }
         waitframe(1);
     }

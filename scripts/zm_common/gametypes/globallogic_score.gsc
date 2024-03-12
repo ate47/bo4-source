@@ -32,15 +32,16 @@ function gethighestscoringplayer() {
         if (!isdefined(winner) || players[i].score > winner.score) {
             winner = players[i];
             tie = 0;
-        } else if (players[i].score == winner.score) {
+            continue;
+        }
+        if (players[i].score == winner.score) {
             tie = 1;
         }
     }
     if (tie || !isdefined(winner)) {
         return undefined;
-    } else {
-        return winner;
     }
+    return winner;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -72,9 +73,8 @@ function roundtonearestfive(score) {
     rounding = score % 5;
     if (rounding <= 2) {
         return (score - rounding);
-    } else {
-        return (score + 5 - rounding);
     }
+    return score + 5 - rounding;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -404,7 +404,6 @@ function onteamscore(score, team) {
         foreach (team in iswinning) {
             if (isdefined(level.waswinning[team])) {
                 if (level.waswinning.size == 1) {
-                    continue;
                 }
             }
         }
@@ -416,7 +415,6 @@ function onteamscore(score, team) {
                     continue;
                 }
                 if (level.waswinning.size > 1) {
-                    continue;
                 }
             }
         }

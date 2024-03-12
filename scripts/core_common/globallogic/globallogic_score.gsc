@@ -709,7 +709,9 @@ function specialistmedalachievement(weapon, scoreevents) {
         if (var_e716a62e >= 10) {
             self giveachievement("mp_trophy_special_issue_weaponry");
         }
-    } else if (isdefined(baseweapon.var_76ce72e8) && baseweapon.var_76ce72e8 && isdefined(scoreevents) && isdefined(scoreevents.var_fcd2ff3a) && scoreevents.var_fcd2ff3a) {
+        return;
+    }
+    if (isdefined(baseweapon.var_76ce72e8) && baseweapon.var_76ce72e8 && isdefined(scoreevents) && isdefined(scoreevents.var_fcd2ff3a) && scoreevents.var_fcd2ff3a) {
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_swat_grenade_multikill_x2_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"stats_cluster_semtex_multikill_x2_summary");
         var_e716a62e = var_e716a62e + self stats::get_stat_global(#"hash_3427f2d4181d570");
@@ -739,7 +741,9 @@ function function_8279d8bf(weapon, scoreevents) {
     baseweapon = weapons::getbaseweapon(weapon);
     if (isdefined(ability) && baseweapon.issignatureweapon === 1) {
         self function_be7a08a8(ability, 1);
-    } else if (isdefined(equipment) && isdefined(scoreevents) && baseweapon.var_76ce72e8 === 1 && scoreevents.var_fcd2ff3a === 1) {
+        return;
+    }
+    if (isdefined(equipment) && isdefined(scoreevents) && baseweapon.var_76ce72e8 === 1 && scoreevents.var_fcd2ff3a === 1) {
         self function_be7a08a8(equipment, 1);
     }
 }
@@ -786,7 +790,7 @@ function register_kill_callback(weapon, callback) {
 }
 
 // Namespace globallogic_score/globallogic_score
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x2901cc3e, Offset: 0x3930
 // Size: 0x8a
 function function_a458dbe1(status_effect_name, callback) {
@@ -809,7 +813,7 @@ function function_86f90713(weapon, callback) {
 }
 
 // Namespace globallogic_score/globallogic_score
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x728e9cb6, Offset: 0x3a20
 // Size: 0x4e
 function function_82fb1afa(weapon, callback) {
@@ -818,7 +822,7 @@ function function_82fb1afa(weapon, callback) {
 }
 
 // Namespace globallogic_score/globallogic_score
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xd38a4a6, Offset: 0x3a78
 // Size: 0x4e
 function function_2b2c09db(weapon, callback) {
@@ -836,7 +840,7 @@ function function_5b0c227a(weapon, callback) {
 }
 
 // Namespace globallogic_score/globallogic_score
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x6bb540f2, Offset: 0x3b28
 // Size: 0x4e
 function function_b150f9ac(weapon, callback) {

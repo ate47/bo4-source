@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_perk_paranoia/wz_perk_paranoia
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc842275a, Offset: 0xe0
 // Size: 0x24
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace wz_perk_paranoia/wz_perk_paranoia
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ea69ef8, Offset: 0x110
 // Size: 0x9a
 function function_930e5d42(localclientnum) {
@@ -37,7 +37,7 @@ function function_930e5d42(localclientnum) {
 }
 
 // Namespace wz_perk_paranoia/wz_perk_paranoia
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x51b0fbec, Offset: 0x1b8
 // Size: 0x132
 function private function_dbd63244() {
@@ -46,24 +46,22 @@ function private function_dbd63244() {
     #/
     if (self function_da43934d()) {
         return self geteye();
-    } else {
-        stance = self getstance();
-        switch (stance) {
-        case #"prone":
-            return (self.origin + vectorscale((0, 0, 1), 11));
-        case #"crouch":
-            return (self.origin + vectorscale((0, 0, 1), 40));
-        case #"stand":
-            return (self.origin + vectorscale((0, 0, 1), 60));
-        default:
-            return (self.origin + vectorscale((0, 0, 1), 60));
-            break;
-        }
+    }
+    stance = self getstance();
+    switch (stance) {
+    case #"prone":
+        return (self.origin + vectorscale((0, 0, 1), 11));
+    case #"crouch":
+        return (self.origin + vectorscale((0, 0, 1), 40));
+    case #"stand":
+        return (self.origin + vectorscale((0, 0, 1), 60));
+    default:
+        return (self.origin + vectorscale((0, 0, 1), 60));
     }
 }
 
 // Namespace wz_perk_paranoia/wz_perk_paranoia
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x48682c0d, Offset: 0x2f8
 // Size: 0x1a
 function private function_c9d3a835() {
@@ -71,7 +69,7 @@ function private function_c9d3a835() {
 }
 
 // Namespace wz_perk_paranoia/wz_perk_paranoia
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd921a945, Offset: 0x320
 // Size: 0x626
 function private function_3e9077b(localclientnum) {

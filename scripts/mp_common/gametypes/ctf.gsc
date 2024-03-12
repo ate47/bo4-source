@@ -228,9 +228,8 @@ function minutesandsecondsstring(milliseconds) {
     seconds = floor(float(milliseconds) / 1000);
     if (seconds < 10) {
         return (minutes + ":0" + seconds);
-    } else {
-        return (minutes + ":" + seconds);
     }
+    return minutes + ":" + seconds;
 }
 
 // Namespace ctf/ctf
@@ -246,13 +245,13 @@ function onendround(var_c1e98979) {
             game.overtime_first_winner = winning_team;
             game.ctf_overtime_time_to_beat = globallogic_utils::gettimepassed();
         }
-    } else {
-        game.overtime_second_winner[#"ctf"] = winning_team;
-        game.overtime_best_time[#"ctf"] = globallogic_utils::gettimepassed();
-        globallogic_score::updateteamscorebyroundswon();
-        if (winning_team === #"allies" || winning_team === #"axis") {
-            [[ level._setteamscore ]](winning_team, game.stat[#"roundswon"][winning_team] + 1);
-        }
+        return;
+    }
+    game.overtime_second_winner[#"ctf"] = winning_team;
+    game.overtime_best_time[#"ctf"] = globallogic_utils::gettimepassed();
+    globallogic_score::updateteamscorebyroundswon();
+    if (winning_team === #"allies" || winning_team === #"axis") {
+        [[ level._setteamscore ]](winning_team, game.stat[#"roundswon"][winning_team] + 1);
     }
 }
 
@@ -331,9 +330,9 @@ function updategametypedvars() {
     level.teamkillscoremultiplier = getgametypesetting(#"teamkillscore");
     if (level.flagtouchreturntime >= 0 && level.flagtouchreturntime != 63) {
         level.touchreturn = 1;
-    } else {
-        level.touchreturn = 0;
+        return;
     }
+    level.touchreturn = 0;
 }
 
 // Namespace ctf/ctf
@@ -555,11 +554,11 @@ function function_d1b40f6e(flagteam, var_f1930417) {
     switch (flagteam) {
     case #"allies":
         level clientfield::set_world_uimodel("CTFLevelInfo.flagStateAllies", var_f1930417);
-        break;
+        return;
     case #"axis":
     default:
         level clientfield::set_world_uimodel("CTFLevelInfo.flagStateAxis", var_f1930417);
-        break;
+        return;
     }
 }
 
@@ -575,11 +574,11 @@ function function_18d7960(flagteam, player) {
     switch (flagteam) {
     case #"allies":
         level clientfield::set_world_uimodel("CTFLevelInfo.flagCarrierAllies", entnum);
-        break;
+        return;
     case #"axis":
     default:
         level clientfield::set_world_uimodel("CTFLevelInfo.flagCarrierAxis", entnum);
-        break;
+        return;
     }
 }
 
@@ -706,67 +705,66 @@ function onpickup(player) {
         #/
         util::function_5a68c330(12, player.team, player getentitynumber());
         return;
-    } else {
-        bb::function_95a5b5c2("ctf_flagpickup", undefined, team, player.origin);
-        player recordgameevent("pickup");
-        util::function_5a68c330(9, player.team, player getentitynumber());
-        scoreevents::processscoreevent(#"flag_grab", player, undefined, undefined);
-        demo::bookmark(#"event", gettime(), player);
-        potm::bookmark(#"event", gettime(), player);
-        util::printandsoundoneveryone(otherteam, undefined, #"", undefined, "mp_obj_taken", "mp_enemy_obj_taken");
-        level thread popups::displayteammessagetoteam(#"hash_6b94e754d048dae9", player, team, undefined, undefined);
-        level thread popups::displayteammessagetoteam(#"hash_25ed0737f009ca72", player, otherteam, undefined, undefined);
-        globallogic_audio::leader_dialog("ctfFriendlyFlagTaken", team, undefined, "ctf_flag");
-        globallogic_audio::leader_dialog("ctfEnemyFlagTaken", otherteam, undefined, "ctf_flag_enemy");
-        player.isflagcarrier = 1;
-        player.flagcarried = self;
-        player playlocalsound(#"mpl_flag_pickup_plr");
-        player clientfield::set("ctf_flag_carrier", 1);
-        player clientfield::set("ctf_flag_carried", 1);
-        self gameobjects::set_flags(0);
-        self gameobjects::set_owner_team(util::get_enemy_team(self.team));
-        function_18d7960(team, player);
-        function_d1b40f6e(team, 2);
-        var_beb30c2b = anglestoforward(player.angles) * -1;
-        var_1ac1d901 = anglestoforward(player gettagangles("tag_stowed_back"));
-        up = vectorcross(var_beb30c2b, var_1ac1d901);
-        var_fb082d39 = axistoangles(var_1ac1d901, up * -1);
-        self.var_94885886 = util::spawn_model(level.var_537d7278[team].friendly, player gettagorigin("tag_stowed_back"), var_fb082d39);
-        self.var_94885886 setinvisibletoall();
-        self.var_94885886 setvisibletoteam(team);
-        self.var_94885886 setinvisibletoplayer(player);
-        self.var_94885886 linkto(player, "tag_stowed_back");
-        self.var_fa01a5fa = util::spawn_model(level.var_537d7278[team].enemy, player gettagorigin("tag_stowed_back"), var_fb082d39);
-        self.var_fa01a5fa setinvisibletoall();
-        self.var_fa01a5fa setvisibletoteam(otherteam);
-        self.var_fa01a5fa setinvisibletoplayer(player);
-        self.var_fa01a5fa linkto(player, "tag_stowed_back");
-        flag_allies = getplayers(util::get_enemy_team(self.team));
-        foreach (var_ba17692e in flag_allies) {
-            objective_setinvisibletoplayer(self.objectiveid, var_ba17692e);
-        }
-        globallogic_audio::play_2d_on_team("mpl_flagget_sting_friend", otherteam);
-        globallogic_audio::play_2d_on_team("mpl_flagget_sting_enemy", team);
-        if (level.enemycarriervisible) {
-            self gameobjects::set_visible_team(#"any");
-        } else {
-            self gameobjects::set_visible_team(#"enemy");
-        }
-        self gameobjects::set_2d_icon(#"friendly", level.iconkill2d);
-        self gameobjects::set_3d_icon(#"friendly", level.iconkill3d);
-        self gameobjects::set_2d_icon(#"enemy", level.iconescort2d);
-        self gameobjects::set_3d_icon(#"enemy", level.iconescort3d);
-        player thread claim_trigger(level.flaghints[otherteam]);
-        update_hints();
-        /#
-            print(team + "<unknown string>");
-        #/
-        ss = level.spawnsystem;
-        player_team_mask = util::getteammask(otherteam);
-        enemy_team_mask = util::getteammask(team);
-        player.spawn_influencer_friendly_carrier = player influencers::create_entity_influencer("ctf_carrier_friendly", player_team_mask);
-        player.spawn_influencer_enemy_carrier = player influencers::create_entity_influencer("ctf_carrier_enemy", enemy_team_mask);
     }
+    bb::function_95a5b5c2("ctf_flagpickup", undefined, team, player.origin);
+    player recordgameevent("pickup");
+    util::function_5a68c330(9, player.team, player getentitynumber());
+    scoreevents::processscoreevent(#"flag_grab", player, undefined, undefined);
+    demo::bookmark(#"event", gettime(), player);
+    potm::bookmark(#"event", gettime(), player);
+    util::printandsoundoneveryone(otherteam, undefined, #"", undefined, "mp_obj_taken", "mp_enemy_obj_taken");
+    level thread popups::displayteammessagetoteam(#"hash_6b94e754d048dae9", player, team, undefined, undefined);
+    level thread popups::displayteammessagetoteam(#"hash_25ed0737f009ca72", player, otherteam, undefined, undefined);
+    globallogic_audio::leader_dialog("ctfFriendlyFlagTaken", team, undefined, "ctf_flag");
+    globallogic_audio::leader_dialog("ctfEnemyFlagTaken", otherteam, undefined, "ctf_flag_enemy");
+    player.isflagcarrier = 1;
+    player.flagcarried = self;
+    player playlocalsound(#"mpl_flag_pickup_plr");
+    player clientfield::set("ctf_flag_carrier", 1);
+    player clientfield::set("ctf_flag_carried", 1);
+    self gameobjects::set_flags(0);
+    self gameobjects::set_owner_team(util::get_enemy_team(self.team));
+    function_18d7960(team, player);
+    function_d1b40f6e(team, 2);
+    var_beb30c2b = anglestoforward(player.angles) * -1;
+    var_1ac1d901 = anglestoforward(player gettagangles("tag_stowed_back"));
+    up = vectorcross(var_beb30c2b, var_1ac1d901);
+    var_fb082d39 = axistoangles(var_1ac1d901, up * -1);
+    self.var_94885886 = util::spawn_model(level.var_537d7278[team].friendly, player gettagorigin("tag_stowed_back"), var_fb082d39);
+    self.var_94885886 setinvisibletoall();
+    self.var_94885886 setvisibletoteam(team);
+    self.var_94885886 setinvisibletoplayer(player);
+    self.var_94885886 linkto(player, "tag_stowed_back");
+    self.var_fa01a5fa = util::spawn_model(level.var_537d7278[team].enemy, player gettagorigin("tag_stowed_back"), var_fb082d39);
+    self.var_fa01a5fa setinvisibletoall();
+    self.var_fa01a5fa setvisibletoteam(otherteam);
+    self.var_fa01a5fa setinvisibletoplayer(player);
+    self.var_fa01a5fa linkto(player, "tag_stowed_back");
+    flag_allies = getplayers(util::get_enemy_team(self.team));
+    foreach (var_ba17692e in flag_allies) {
+        objective_setinvisibletoplayer(self.objectiveid, var_ba17692e);
+    }
+    globallogic_audio::play_2d_on_team("mpl_flagget_sting_friend", otherteam);
+    globallogic_audio::play_2d_on_team("mpl_flagget_sting_enemy", team);
+    if (level.enemycarriervisible) {
+        self gameobjects::set_visible_team(#"any");
+    } else {
+        self gameobjects::set_visible_team(#"enemy");
+    }
+    self gameobjects::set_2d_icon(#"friendly", level.iconkill2d);
+    self gameobjects::set_3d_icon(#"friendly", level.iconkill3d);
+    self gameobjects::set_2d_icon(#"enemy", level.iconescort2d);
+    self gameobjects::set_3d_icon(#"enemy", level.iconescort3d);
+    player thread claim_trigger(level.flaghints[otherteam]);
+    update_hints();
+    /#
+        print(team + "<unknown string>");
+    #/
+    ss = level.spawnsystem;
+    player_team_mask = util::getteammask(otherteam);
+    enemy_team_mask = util::getteammask(team);
+    player.spawn_influencer_friendly_carrier = player influencers::create_entity_influencer("ctf_carrier_friendly", player_team_mask);
+    player.spawn_influencer_enemy_carrier = player influencers::create_entity_influencer("ctf_carrier_enemy", enemy_team_mask);
 }
 
 // Namespace ctf/ctf
@@ -1027,9 +1025,9 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
                 if (victim_dist_to_zone_origin < level.defaultoffenseradiussq || dist_to_zone_origin < level.defaultoffenseradiussq) {
                     if (victim.team == flag_zone.team) {
                         attacker thread challenges::killedbasedefender(flag_zone.trigger);
-                    } else {
-                        attacker thread challenges::killedbaseoffender(flag_zone.trigger, weapon);
+                        continue;
                     }
+                    attacker thread challenges::killedbaseoffender(flag_zone.trigger, weapon);
                 }
             }
         }
@@ -1093,9 +1091,9 @@ function update_hints() {
     }
     if (isdefined(axis_flag.carrier) && allied_flag gameobjects::is_object_away_from_home()) {
         level.flaghints[#"allies"] turn_on();
-    } else {
-        level.flaghints[#"allies"] turn_off();
+        return;
     }
+    level.flaghints[#"allies"] turn_off();
 }
 
 // Namespace ctf/ctf

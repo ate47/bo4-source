@@ -161,11 +161,11 @@ function function_efae9657(localclientnum, var_630fc8b) {
             self waittill(#"underwater_end");
             self function_33eae096(localclientnum, 0);
             b_underwater = 0;
-        } else {
-            self waittill(#"underwater_begin");
-            self function_33eae096(localclientnum, 1);
-            b_underwater = 1;
+            continue;
         }
+        self waittill(#"underwater_begin");
+        self function_33eae096(localclientnum, 1);
+        b_underwater = 1;
     }
 }
 
@@ -179,16 +179,16 @@ function function_33eae096(localclientnum, b_underwater) {
         self thread postfx::playpostfxbundle(#"hash_5249b3ef8b2f1988");
         setsoundcontext("water_global", "under");
         self thread function_3353845b(localclientnum);
-    } else {
-        self notify(#"hash_32c7af154e6c4ded");
-        if (self clientfield::get_to_player("" + #"boiler_fx")) {
-            setpbgactivebank(localclientnum, 4);
-        } else {
-            setpbgactivebank(localclientnum, 1);
-        }
-        self thread postfx::stoppostfxbundle(#"hash_5249b3ef8b2f1988");
-        setsoundcontext("water_global", "over");
+        return;
     }
+    self notify(#"hash_32c7af154e6c4ded");
+    if (self clientfield::get_to_player("" + #"boiler_fx")) {
+        setpbgactivebank(localclientnum, 4);
+    } else {
+        setpbgactivebank(localclientnum, 1);
+    }
+    self thread postfx::stoppostfxbundle(#"hash_5249b3ef8b2f1988");
+    setsoundcontext("water_global", "over");
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -258,16 +258,16 @@ function function_5b0384a(localclientnum, oldval, newval, bnewent, binitialsnap,
     case 0:
         level scene::stop(#"p8_fxanim_zm_zod_cargo_hold_net_bundle", 1);
         level scene::delete_scene_spawned_ents(localclientnum, #"p8_fxanim_zm_zod_cargo_hold_net_bundle");
-        break;
+        return;
     case 1:
         level thread scene::init(#"p8_fxanim_zm_zod_cargo_hold_net_bundle");
-        break;
+        return;
     case 2:
         level thread scene::play(#"p8_fxanim_zm_zod_cargo_hold_net_bundle", "Shot 2");
-        break;
+        return;
     case 3:
         level thread scene::play(#"p8_fxanim_zm_zod_cargo_hold_net_bundle", "Shot 3");
-        break;
+        return;
     }
 }
 
@@ -288,9 +288,9 @@ function function_53da552d(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_94a217a5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_a5777754(localclientnum, "bunk_room");
-    } else {
-        function_73b1f242(localclientnum, "bunk_room");
+        return;
     }
+    function_73b1f242(localclientnum, "bunk_room");
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -312,10 +312,10 @@ function function_f31c22d6(localclientnum, oldval, newval, bnewent, binitialsnap
         foreach (index in level.var_24cb6ae8) {
             hidevolumedecal(index);
         }
-    } else {
-        foreach (index in level.var_24cb6ae8) {
-            unhidevolumedecal(index);
-        }
+        return;
+    }
+    foreach (index in level.var_24cb6ae8) {
+        unhidevolumedecal(index);
     }
 }
 
@@ -328,10 +328,10 @@ function function_1e917f6a(localclientnum, oldval, newval, bnewent, binitialsnap
         foreach (index in level.var_ec4c3b67) {
             hidevolumedecal(index);
         }
-    } else {
-        foreach (index in level.var_ec4c3b67) {
-            unhidevolumedecal(index);
-        }
+        return;
+    }
+    foreach (index in level.var_ec4c3b67) {
+        unhidevolumedecal(index);
     }
 }
 
@@ -348,11 +348,11 @@ function update_wave_water_height(localclientnum, oldval, newval, bnewent, binit
     }
     if (self flag::get("update_water")) {
         self thread update_wave_water(localclientnum);
-    } else {
-        var_b965688c = function_67b634e6(self.origin);
-        setwavewaterheight(var_b965688c, self.origin[2]);
-        elmids(var_b965688c, self.angles[2] * -1);
+        return;
     }
+    var_b965688c = function_67b634e6(self.origin);
+    setwavewaterheight(var_b965688c, self.origin[2]);
+    elmids(var_b965688c, self.angles[2] * -1);
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -375,9 +375,9 @@ function change_wave_water_height(localclientnum, oldval, newval, bnewent, binit
         } else {
             self flag::clear("water_drained");
         }
-    } else {
-        self flag::clear("update_water");
+        return;
     }
+    self flag::clear("update_water");
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -445,9 +445,9 @@ function set_gravity(n_wait) {
             function_a1c09ed(-800 * inversion * anglestoup(self.angles));
         }
         level.var_566ca3af = 0;
-    } else {
-        level.var_566ca3af++;
+        return;
     }
+    level.var_566ca3af++;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -460,9 +460,9 @@ function sfx_waterdrain_fore(localclientnum, oldval, newval, bnewent, binitialsn
     str_suffix = "_fore";
     if (newval) {
         function_46a22d9e(str_suffix, str_notify, a_origin);
-    } else {
-        function_f1d5b30a(str_suffix, str_notify, a_origin);
+        return;
     }
+    function_f1d5b30a(str_suffix, str_notify, a_origin);
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -475,9 +475,9 @@ function sfx_waterdrain_aft(localclientnum, oldval, newval, bnewent, binitialsna
     str_suffix = "_aft";
     if (newval) {
         function_46a22d9e(str_suffix, str_notify, a_origin);
-    } else {
-        function_f1d5b30a(str_suffix, str_notify, a_origin);
+        return;
     }
+    function_f1d5b30a(str_suffix, str_notify, a_origin);
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -512,7 +512,9 @@ function pap_projectile_fx(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.var_353ff2a)) {
             self.var_353ff2a = self playloopsound(#"hash_2ac2bbbfef2face4");
         }
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         if (isdefined(self.var_4b7a5b1b)) {
             stopfx(localclientnum, self.var_4b7a5b1b);
         }
@@ -542,7 +544,9 @@ function sentinel_artifact_activated(localclientnum, oldval, newval, bnewent, bi
         self.fx = util::playfxontag(localclientnum, level._effect[#"sentinel_aura"], self, "tag_fx_x_pos");
         self playrenderoverridebundle(#"hash_1589a47f2fdc6c67");
         self.sfx_id = self playloopsound(#"hash_66df9cab2c64f968");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         if (isdefined(self.sfx_id)) {
             self stoploopsound(self.sfx_id);
         }
@@ -559,14 +563,14 @@ function sentinel_artifact_activated(localclientnum, oldval, newval, bnewent, bi
         self.fx = util::playfxontag(localclientnum, level._effect[#"sentinel_glow"], self, "tag_fx_x_pos");
         waitframe(1);
         self playrenderoverridebundle(#"hash_111d3e86bf2007e4");
-    } else {
-        if (isdefined(self.fx)) {
-            stopfx(localclientnum, self.fx);
-            self.fx = undefined;
-        }
-        self playsound(localclientnum, #"hash_5de064f33e9e49b8");
-        self playsound(localclientnum, #"hash_3d8fef5997663b17");
+        return;
     }
+    if (isdefined(self.fx)) {
+        stopfx(localclientnum, self.fx);
+        self.fx = undefined;
+    }
+    self playsound(localclientnum, #"hash_5de064f33e9e49b8");
+    self playsound(localclientnum, #"hash_3d8fef5997663b17");
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -576,9 +580,9 @@ function sentinel_artifact_activated(localclientnum, oldval, newval, bnewent, bi
 function sndactorunderwater(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self setsoundentcontext("water", "under");
-    } else {
-        self setsoundentcontext("water", "over");
+        return;
     }
+    self setsoundentcontext("water", "over");
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -638,8 +642,8 @@ function water_splashies(localclientnum, oldval, newval, bnewent, binitialsnap, 
 function water_drippies(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self postfx::playpostfxbundle(#"pstfx_sprite_rain_loop_sparse");
-    } else {
-        self postfx::stoppostfxbundle(#"pstfx_sprite_rain_loop_sparse");
+        return;
     }
+    self postfx::stoppostfxbundle(#"pstfx_sprite_rain_loop_sparse");
 }
 

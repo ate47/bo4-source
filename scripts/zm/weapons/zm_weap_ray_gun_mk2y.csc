@@ -36,9 +36,9 @@ function function_e1fdbb4b(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         if (self zm_utility::function_f8796df3(localclientnum)) {
             self.var_92a2b5f2 = playviewmodelfx(localclientnum, level._effect[#"hash_7772ff2676425bfb"], "tag_flash");
-        } else {
-            self.var_92a2b5f2 = util::playfxontag(localclientnum, level._effect[#"hash_776cf326763ddbe9"], self, "tag_flash");
+            return;
         }
+        self.var_92a2b5f2 = util::playfxontag(localclientnum, level._effect[#"hash_776cf326763ddbe9"], self, "tag_flash");
     }
 }
 

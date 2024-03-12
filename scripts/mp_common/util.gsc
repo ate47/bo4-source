@@ -6,7 +6,7 @@
 #namespace util;
 
 // Namespace util/util
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5883daa4, Offset: 0x188
 // Size: 0x90
 function within_fov(start_origin, start_angles, end_origin, fov) {
@@ -110,9 +110,9 @@ function printonplayers(text, team) {
             if (isdefined(players[i].pers[#"team"]) && players[i].pers[#"team"] == team) {
                 players[i] iprintln(text);
             }
-        } else {
-            players[i] iprintln(text);
+            continue;
         }
+        players[i] iprintln(text);
     }
 }
 
@@ -139,10 +139,14 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             if (isdefined(playerteam)) {
                 if (playerteam == team && isdefined(printfriendly) && printfriendly != #"") {
                     player iprintln(printfriendly, printarg);
-                } else if (isdefined(printenemy) && printenemy != #"") {
+                    continue;
+                }
+                if (isdefined(printenemy) && printenemy != #"") {
                     if (isdefined(enemyteam) && playerteam == enemyteam) {
                         player iprintln(printenemy, printarg);
-                    } else if (!isdefined(enemyteam) && playerteam != team) {
+                        continue;
+                    }
+                    if (!isdefined(enemyteam) && playerteam != team) {
                         player iprintln(printenemy, printarg);
                     }
                 }
@@ -154,45 +158,51 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             #/
             level.players[0] playlocalsound(soundfriendly);
         }
-    } else {
-        /#
-            assert(shoulddosounds);
-        #/
-        if (shoulddoenemysounds) {
-            for (i = 0; i < level.players.size; i++) {
-                player = level.players[i];
-                playerteam = player.pers[#"team"];
-                if (isdefined(playerteam)) {
-                    if (playerteam == team) {
-                        if (isdefined(printfriendly) && printfriendly != #"") {
-                            player iprintln(printfriendly, printarg);
-                        }
-                        player playlocalsound(soundfriendly);
-                    } else if (isdefined(enemyteam) && playerteam == enemyteam || !isdefined(enemyteam) && playerteam != team) {
-                        if (isdefined(printenemy) && printenemy != #"") {
-                            player iprintln(printenemy, printarg);
-                        }
-                        player playlocalsound(soundenemy);
+        return;
+    }
+    /#
+        assert(shoulddosounds);
+    #/
+    if (shoulddoenemysounds) {
+        for (i = 0; i < level.players.size; i++) {
+            player = level.players[i];
+            playerteam = player.pers[#"team"];
+            if (isdefined(playerteam)) {
+                if (playerteam == team) {
+                    if (isdefined(printfriendly) && printfriendly != #"") {
+                        player iprintln(printfriendly, printarg);
                     }
+                    player playlocalsound(soundfriendly);
+                    continue;
+                }
+                if (isdefined(enemyteam) && playerteam == enemyteam || !isdefined(enemyteam) && playerteam != team) {
+                    if (isdefined(printenemy) && printenemy != #"") {
+                        player iprintln(printenemy, printarg);
+                    }
+                    player playlocalsound(soundenemy);
                 }
             }
-        } else {
-            for (i = 0; i < level.players.size; i++) {
-                player = level.players[i];
-                playerteam = player.pers[#"team"];
-                if (isdefined(playerteam)) {
-                    if (playerteam == team) {
-                        if (isdefined(printfriendly) && printfriendly != #"") {
-                            player iprintln(printfriendly, printarg);
-                        }
-                        player playlocalsound(soundfriendly);
-                    } else if (isdefined(printenemy) && printenemy != #"") {
-                        if (isdefined(enemyteam) && playerteam == enemyteam) {
-                            player iprintln(printenemy, printarg);
-                        } else if (!isdefined(enemyteam) && playerteam != team) {
-                            player iprintln(printenemy, printarg);
-                        }
-                    }
+        }
+        return;
+    }
+    for (i = 0; i < level.players.size; i++) {
+        player = level.players[i];
+        playerteam = player.pers[#"team"];
+        if (isdefined(playerteam)) {
+            if (playerteam == team) {
+                if (isdefined(printfriendly) && printfriendly != #"") {
+                    player iprintln(printfriendly, printarg);
+                }
+                player playlocalsound(soundfriendly);
+                continue;
+            }
+            if (isdefined(printenemy) && printenemy != #"") {
+                if (isdefined(enemyteam) && playerteam == enemyteam) {
+                    player iprintln(printenemy, printarg);
+                    continue;
+                }
+                if (!isdefined(enemyteam) && playerteam != team) {
+                    player iprintln(printenemy, printarg);
                 }
             }
         }
@@ -211,7 +221,7 @@ function _playlocalsound(soundalias) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x42d2e35a, Offset: 0xc00
 // Size: 0x8c
 function getotherteam(team) {
@@ -243,7 +253,7 @@ function getteamenum(team) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d0b987b, Offset: 0xd10
 // Size: 0x74
 function getteammask(team) {
@@ -299,7 +309,7 @@ function getfx(fx) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7ef6af5, Offset: 0xf30
 // Size: 0x52
 function add_trigger_to_ent(ent) {
@@ -310,7 +320,7 @@ function add_trigger_to_ent(ent) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x308aecad, Offset: 0xf90
 // Size: 0x72
 function remove_trigger_from_ent(ent) {
@@ -327,7 +337,7 @@ function remove_trigger_from_ent(ent) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1aad6d12, Offset: 0x1010
 // Size: 0x70
 function ent_already_in_trigger(trig) {
@@ -344,7 +354,7 @@ function ent_already_in_trigger(trig) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xddaf38fd, Offset: 0x1088
 // Size: 0x4c
 function trigger_thread_death_monitor(ent, ender) {
@@ -399,7 +409,7 @@ function iskillstreaksenabled() {
 }
 
 // Namespace util/util
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x964f2d33, Offset: 0x12d8
 // Size: 0xa4
 function private function_78e3e07b(team, index, objective_strings) {
@@ -413,7 +423,7 @@ function private function_78e3e07b(team, index, objective_strings) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89012573, Offset: 0x1388
 // Size: 0x23a
 function function_e17a230f(team) {
@@ -438,17 +448,17 @@ function function_e17a230f(team) {
             if (isdefined(var_53c9b682.var_47177317) && var_53c9b682.var_47177317 && isdefined(game.overtime_first_winner) && team != game.overtime_first_winner) {
                 continue;
             }
-            jumpiffalse(isdefined(var_53c9b682.var_76fa703c) && var_53c9b682.var_76fa703c && isdefined(game.overtime_first_winner) && team == game.overtime_first_winner) LOC_0000020c;
-        } else {
-        LOC_0000020c:
-            function_78e3e07b(team, index, var_53c9b682);
-            return;
+            if (isdefined(var_53c9b682.var_76fa703c) && var_53c9b682.var_76fa703c && isdefined(game.overtime_first_winner) && team == game.overtime_first_winner) {
+                continue;
+            }
         }
+        function_78e3e07b(team, index, var_53c9b682);
+        return;
     }
 }
 
 // Namespace util/util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x89473fa5, Offset: 0x15d0
 // Size: 0x90
 function function_9540d9b6() {
@@ -461,7 +471,7 @@ function function_9540d9b6() {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6b4bd86f, Offset: 0x1668
 // Size: 0x3e
 function setobjectivetext(team, text) {
@@ -469,7 +479,7 @@ function setobjectivetext(team, text) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x46a70c5d, Offset: 0x16b0
 // Size: 0x3e
 function setobjectivescoretext(team, text) {
@@ -477,7 +487,7 @@ function setobjectivescoretext(team, text) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa6bd59d2, Offset: 0x16f8
 // Size: 0x3e
 function function_db4846b(team, text) {
@@ -485,7 +495,7 @@ function function_db4846b(team, text) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6afc51a5, Offset: 0x1740
 // Size: 0x2c
 function getobjectivetext(team) {
@@ -493,7 +503,7 @@ function getobjectivetext(team) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9738a88d, Offset: 0x1778
 // Size: 0x2c
 function getobjectivescoretext(team) {
@@ -501,7 +511,7 @@ function getobjectivescoretext(team) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd0da889d, Offset: 0x17b0
 // Size: 0x2c
 function function_4a118b30(team) {
@@ -509,7 +519,7 @@ function function_4a118b30(team) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcf84b607, Offset: 0x17e8
 // Size: 0x76
 function registerroundswitch(minvalue, maxvalue) {
@@ -519,7 +529,7 @@ function registerroundswitch(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x14ed0f00, Offset: 0x1868
 // Size: 0x76
 function registerroundlimit(minvalue, maxvalue) {
@@ -529,7 +539,7 @@ function registerroundlimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x55670a7f, Offset: 0x18e8
 // Size: 0x76
 function registerroundwinlimit(minvalue, maxvalue) {
@@ -539,7 +549,7 @@ function registerroundwinlimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6305e3b8, Offset: 0x1968
 // Size: 0x76
 function registerscorelimit(minvalue, maxvalue) {
@@ -549,7 +559,7 @@ function registerscorelimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x107cf3e8, Offset: 0x19e8
 // Size: 0x76
 function registerroundscorelimit(minvalue, maxvalue) {
@@ -559,7 +569,7 @@ function registerroundscorelimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x55895ff2, Offset: 0x1a68
 // Size: 0x8a
 function registertimelimit(minvalue, maxvalue) {
@@ -572,7 +582,7 @@ function registertimelimit(minvalue, maxvalue) {
 }
 
 // Namespace util/util
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xd52bdefa, Offset: 0x1b00
 // Size: 0x12e
 function registernumlives(minvalue, maxvalue, teamlivesminvalue = minvalue, teamlivesmaxvalue = maxvalue) {
@@ -585,7 +595,7 @@ function registernumlives(minvalue, maxvalue, teamlivesminvalue = minvalue, team
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcdb53bdc, Offset: 0x1c38
 // Size: 0x82
 function getplayerfromclientnum(clientnum) {
@@ -613,7 +623,7 @@ function ispressbuild() {
 }
 
 // Namespace util/util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x72ab00db, Offset: 0x1d28
 // Size: 0x1e
 function isflashbanged() {
@@ -648,7 +658,7 @@ function self_delete() {
 }
 
 // Namespace util/util
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4bd7875d, Offset: 0x1e48
 // Size: 0x4a
 function use_button_pressed() {
@@ -691,7 +701,7 @@ function show_hint_text(str_text_to_show, b_should_blink = 0, str_turn_off_notif
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1d568f28, Offset: 0x2060
 // Size: 0xd6
 function hide_hint_text(b_fade_before_hiding = 1) {
@@ -708,7 +718,7 @@ function hide_hint_text(b_fade_before_hiding = 1) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3d84e9ae, Offset: 0x2140
 // Size: 0x94
 function fade_hint_text_after_time(n_display_time, str_turn_off_notify) {
@@ -718,7 +728,7 @@ function fade_hint_text_after_time(n_display_time, str_turn_off_notify) {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa83199e5, Offset: 0x21e0
 // Size: 0x8c
 function hide_hint_text_listener(n_time) {
@@ -728,13 +738,15 @@ function hide_hint_text_listener(n_time) {
 }
 
 // Namespace util/util
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7f3df9a, Offset: 0x2278
 // Size: 0x7c
 function set_team_radar(team, value) {
     if (team == #"allies") {
         setmatchflag("radar_allies", value);
-    } else if (team == #"axis") {
+        return;
+    }
+    if (team == #"axis") {
         setmatchflag("radar_axis", value);
     }
 }
@@ -751,10 +763,8 @@ function is_objective_game(game_type) {
     case #"tdm":
     case #"clean":
         return 0;
-        break;
     default:
         return 1;
-        break;
     }
 }
 
@@ -775,7 +785,7 @@ function isprop() {
 }
 
 // Namespace util/util
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf2b78747, Offset: 0x2418
 // Size: 0x30
 function function_6f4ff113(team) {
@@ -814,7 +824,7 @@ function function_ff74bf7(team) {
 }
 
 // Namespace util/util
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7199e2e7, Offset: 0x2590
 // Size: 0x168
 function function_5a68c330(var_e0dd85aa, s_team, n_clientnum, extradata = 0) {

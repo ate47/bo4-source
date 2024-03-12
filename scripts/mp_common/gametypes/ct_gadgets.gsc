@@ -113,7 +113,9 @@ function function_4d6c7d92(var_e8ee1cd1, n_time = 0) {
     gadget = self._gadgets_player[var_e8ee1cd1];
     if (isdefined(gadget) && !function_f2f3407(gadget.name)) {
         self gadgetpowerset(var_e8ee1cd1, 0);
-    } else if (!(isdefined(self.var_5c519f98[var_e8ee1cd1]) && self.var_5c519f98[var_e8ee1cd1])) {
+        return;
+    }
+    if (!(isdefined(self.var_5c519f98[var_e8ee1cd1]) && self.var_5c519f98[var_e8ee1cd1])) {
         self.var_5c519f98[var_e8ee1cd1] = 1;
         var_d5b8c6cf = self._gadgets_player[var_e8ee1cd1].gadget_powermax;
         n_steps = 10;
@@ -343,7 +345,7 @@ function function_350dd8ec(str_weapon) {
         if (isalive(e_player)) {
             wpn = e_player getcurrentweapon();
             if (wpn.name == str_weapon) {
-                break;
+                return;
             }
         }
         waitframe(1);

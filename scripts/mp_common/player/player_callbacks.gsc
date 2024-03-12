@@ -8,7 +8,7 @@
 #namespace player;
 
 // Namespace player/player_callbacks
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xe36fdaed, Offset: 0xa8
 // Size: 0xd4
 function callback_playermelee(eattacker, idamage, weapon, vorigin, vdir, boneindex, shieldhit, frombehind) {
@@ -22,7 +22,7 @@ function callback_playermelee(eattacker, idamage, weapon, vorigin, vdir, boneind
 }
 
 // Namespace player/player_callbacks
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x52ca70b2, Offset: 0x188
 // Size: 0x15c
 function function_74b6d714(attacker, effectname, var_894859a2, var_ab5b905e, weapon) {
@@ -44,7 +44,7 @@ function function_74b6d714(attacker, effectname, var_894859a2, var_ab5b905e, wea
 }
 
 // Namespace player/player_callbacks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x11011243, Offset: 0x2f0
 // Size: 0x84
 function callback_playershielddamageblocked(damage) {
@@ -57,7 +57,7 @@ function callback_playershielddamageblocked(damage) {
 }
 
 // Namespace player/player_callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ef73803, Offset: 0x380
 // Size: 0xd0
 function callback_playermigrated() {
@@ -77,7 +77,7 @@ function callback_playermigrated() {
 }
 
 // Namespace player/player_callbacks
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x9e8fa8fd, Offset: 0x458
 // Size: 0x90
 function callback_playerlaststand(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {

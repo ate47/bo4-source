@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd34dd1e7, Offset: 0x118
 // Size: 0x4e
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8cbdf1c6, Offset: 0x170
 // Size: 0x1bc
 function init() {
@@ -50,15 +50,15 @@ function init() {
         wait(0.15);
         level thread update_player_times();
         level thread function_badbaae6();
-    } else {
-        callback::on_connect(&on_free_player_connect);
-        wait(0.15);
-        level thread update_player_times();
+        return;
     }
+    callback::on_connect(&on_free_player_connect);
+    wait(0.15);
+    level thread update_player_times();
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd2e2bc, Offset: 0x338
 // Size: 0x1c
 function on_player_connect() {
@@ -66,7 +66,7 @@ function on_player_connect() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8095f6d6, Offset: 0x360
 // Size: 0x1c
 function on_free_player_connect() {
@@ -74,7 +74,7 @@ function on_free_player_connect() {
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6a6b1c6d, Offset: 0x388
 // Size: 0x24
 function on_joined_team(params) {
@@ -82,7 +82,7 @@ function on_joined_team(params) {
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40fe6f89, Offset: 0x3b8
 // Size: 0x24
 function on_joined_spectators(params) {
@@ -90,7 +90,7 @@ function on_joined_spectators(params) {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc68d6773, Offset: 0x3e8
 // Size: 0x10e
 function init_played_time() {
@@ -106,7 +106,7 @@ function init_played_time() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x176e0350, Offset: 0x500
 // Size: 0x68
 function function_badbaae6() {
@@ -115,16 +115,15 @@ function function_badbaae6() {
         waitframe(1);
     }
     for (;;) {
-        for (;;) {
-            if (game.state == "playing") {
-                function_351a57a9();
-            }
+        if (game.state == "playing") {
+            function_351a57a9();
         }
+        wait(1);
     }
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x61fd82c, Offset: 0x570
 // Size: 0x78
 function update_player_times() {
@@ -142,7 +141,7 @@ function update_player_times() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1a238d09, Offset: 0x5f0
 // Size: 0x4b6
 function update_played_time() {
@@ -190,7 +189,7 @@ function update_played_time() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb276cf32, Offset: 0xab0
 // Size: 0x36
 function update_time() {
@@ -201,7 +200,7 @@ function update_time() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x32423392, Offset: 0xaf0
 // Size: 0x68
 function update_balance_dvar() {
@@ -237,7 +236,7 @@ function change(team) {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x42d55e4e, Offset: 0xce0
 // Size: 0x158
 function count_players() {
@@ -259,7 +258,7 @@ function count_players() {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x412ca5fe, Offset: 0xe40
 // Size: 0x21c
 function track_free_played_time() {
@@ -276,23 +275,22 @@ function track_free_played_time() {
     self.timeplayed[#"total"] = 0;
     self.timeplayed[#"alive"] = 0;
     for (;;) {
-        for (;;) {
-            if (game.state == "playing") {
-                team = self.pers[#"team"];
-                if (isdefined(team) && isdefined(level.teams[team]) && self.sessionteam != #"spectator") {
-                    if (!isdefined(self.timeplayed[team])) {
-                        self.timeplayed[team] = 0;
-                    }
-                    self.timeplayed[team]++;
-                    self.timeplayed[#"total"]++;
-                    if (isalive(self)) {
-                        self.timeplayed[#"alive"]++;
-                    }
-                } else {
-                    self.timeplayed[#"other"]++;
+        if (game.state == "playing") {
+            team = self.pers[#"team"];
+            if (isdefined(team) && isdefined(level.teams[team]) && self.sessionteam != #"spectator") {
+                if (!isdefined(self.timeplayed[team])) {
+                    self.timeplayed[team] = 0;
                 }
+                self.timeplayed[team]++;
+                self.timeplayed[#"total"]++;
+                if (isalive(self)) {
+                    self.timeplayed[#"alive"]++;
+                }
+            } else {
+                self.timeplayed[#"other"]++;
             }
         }
+        wait(1);
     }
 }
 
@@ -325,7 +323,7 @@ function get_flag_carry_model(teamref) {
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe10fafc5, Offset: 0x1148
 // Size: 0x70
 function getteamindex(team) {
@@ -345,7 +343,7 @@ function getteamindex(team) {
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa67466e4, Offset: 0x11c0
 // Size: 0xba
 function getenemyteam(player_team) {
@@ -362,7 +360,7 @@ function getenemyteam(player_team) {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x163d4f68, Offset: 0x1288
 // Size: 0x138
 function getenemyplayers() {
@@ -424,7 +422,7 @@ function waituntilteamchange(player, callback, arg, end_condition1, end_conditio
 }
 
 // Namespace teams/teams
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4aaa9a6d, Offset: 0x15a0
 // Size: 0xea
 function waituntilteamchangesingleton(player, singletonstring, callback, arg, end_condition1, end_condition2, end_condition3) {
@@ -447,24 +445,24 @@ function waituntilteamchangesingleton(player, singletonstring, callback, arg, en
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdab65cee, Offset: 0x1698
 // Size: 0x74
 function hidetosameteam() {
     if (isdefined(self)) {
         if (level.teambased) {
             self setvisibletoallexceptteam(self.team);
-        } else {
-            self setvisibletoall();
-            if (isdefined(self.owner)) {
-                self setinvisibletoplayer(self.owner);
-            }
+            return;
+        }
+        self setvisibletoall();
+        if (isdefined(self.owner)) {
+            self setinvisibletoplayer(self.owner);
         }
     }
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x621a7084, Offset: 0x1718
 // Size: 0x1c
 function function_9dd75dad(team) {
@@ -472,7 +470,7 @@ function function_9dd75dad(team) {
 }
 
 // Namespace teams/teams
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd1e1bc40, Offset: 0x1740
 // Size: 0x40
 function is_all_dead(team) {
@@ -486,7 +484,7 @@ function is_all_dead(team) {
 }
 
 // Namespace teams/teams
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa400ad6a, Offset: 0x1788
 // Size: 0x16a
 function function_596bfb16() {

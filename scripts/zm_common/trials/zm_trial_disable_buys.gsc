@@ -228,9 +228,9 @@ function private function_fcf197fa(targetname, show) {
                                 } else {
                                     var_1d6a70e8 ghost();
                                 }
-                                break;
+                                continue;
                             default:
-                                break;
+                                continue;
                             }
                         }
                     }

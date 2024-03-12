@@ -4,7 +4,7 @@
 #namespace wz_firing_range;
 
 // Namespace wz_firing_range/wz_firing_range
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe585e823, Offset: 0x80
 // Size: 0xb8
 function init_targets(targetname) {
@@ -17,7 +17,7 @@ function init_targets(targetname) {
 }
 
 // Namespace wz_firing_range/wz_firing_range
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x72974d9a, Offset: 0x140
 // Size: 0x152
 function private init_target() {
@@ -35,7 +35,7 @@ function private init_target() {
         structs[structs.size] = struct;
         totalms = totalms + struct.script_int;
         struct = struct::get(struct.target, "targetname");
-    } while(struct != var_dc0e8c88);
+    } while (struct != var_dc0e8c88);
     /#
         assert(structs.size == 2);
     #/
@@ -45,7 +45,7 @@ function private init_target() {
 }
 
 // Namespace wz_firing_range/wz_firing_range
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x4baa7e07, Offset: 0x2a0
 // Size: 0x94
 function private function_5bab934a(struct, var_d1d733b4) {
@@ -58,7 +58,7 @@ function private function_5bab934a(struct, var_d1d733b4) {
 }
 
 // Namespace wz_firing_range/wz_firing_range
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa521a7ad, Offset: 0x340
 // Size: 0x1e0
 function private follow_path() {

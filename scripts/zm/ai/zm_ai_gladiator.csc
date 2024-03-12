@@ -57,11 +57,13 @@ function private function_918ce680(localclientnum, pos, surface, notetrack, bone
     earthquake(localclientnum, n_scale, 0.1, pos, n_dist);
     if (n_scale <= 0.25 && n_scale > 0.2) {
         function_36e4ebd4(localclientnum, "anim_med");
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
-        function_36e4ebd4(localclientnum, "damage_light");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
+        function_36e4ebd4(localclientnum, "damage_light");
+        return;
+    }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -80,7 +82,9 @@ function private function_5dae94f(localclientnum, oldval, newval, bnewent, binit
 function private function_f5a07d57(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         util::playfxontag(localclientnum, level._effect[#"fx8_destroyer_arm_spurt"], self, "j_shouldertwist_le");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         util::playfxontag(localclientnum, level._effect[#"fx8_destroyer_arm_spurt"], self, "tag_shoulder_ri_fx");
     }
 }
@@ -92,7 +96,9 @@ function private function_f5a07d57(localclientnum, oldval, newval, bnewent, bini
 function private function_49fab171(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_c047d899 = util::playfxontag(localclientnum, level._effect[#"fx8_destroyer_axe_trail"], self, "tag_origin");
-    } else if (isdefined(self.var_c047d899)) {
+        return;
+    }
+    if (isdefined(self.var_c047d899)) {
         stopfx(localclientnum, self.var_c047d899);
     }
 }

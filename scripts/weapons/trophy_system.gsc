@@ -264,45 +264,45 @@ function trophyactive(owner) {
                 continue;
             }
             if (grenade.weapon == self.weapon) {
-                jumpiffalse(isdefined(self.trophysystemstationary) && !self.trophysystemstationary && isdefined(grenade.trophysystemstationary) && grenade.trophysystemstationary) LOC_000001e4;
-            } else {
-            LOC_000001e4:
-                if (!isdefined(grenade.owner) && ismissile(grenade)) {
-                    grenade.owner = getmissileowner(grenade);
+                if (isdefined(self.trophysystemstationary) && !self.trophysystemstationary && isdefined(grenade.trophysystemstationary) && grenade.trophysystemstationary) {
+                    continue;
                 }
-                if (isdefined(grenade.owner)) {
-                    if (level.teambased) {
-                        if (!grenade.owner util::isenemyteam(owner.team)) {
-                            continue;
-                        }
-                    } else if (grenade.owner == owner) {
+            }
+            if (!isdefined(grenade.owner) && ismissile(grenade)) {
+                grenade.owner = getmissileowner(grenade);
+            }
+            if (isdefined(grenade.owner)) {
+                if (level.teambased) {
+                    if (!grenade.owner util::isenemyteam(owner.team)) {
                         continue;
                     }
-                    if (bullettracepassed(grenade.origin, self.origin + vectorscale((0, 0, 1), 29), 0, self, grenade, 0, 1)) {
-                        grenade notify(#"death");
-                        if (isdefined(level.var_ccfcde75)) {
-                            owner [[ level.var_ccfcde75 ]](self, grenade);
+                } else if (grenade.owner == owner) {
+                    continue;
+                }
+                if (bullettracepassed(grenade.origin, self.origin + vectorscale((0, 0, 1), 29), 0, self, grenade, 0, 1)) {
+                    grenade notify(#"death");
+                    if (isdefined(level.var_ccfcde75)) {
+                        owner [[ level.var_ccfcde75 ]](self, grenade);
+                    }
+                    var_84c1f04c = grenade.origin - self.origin;
+                    if (var_84c1f04c == (0, 0, 0)) {
+                        var_84c1f04c = (1, 0, 0);
+                    }
+                    fxup = anglestoup(self.angles);
+                    if (fxup == (0, 0, 0)) {
+                        fxup = (0, 0, 1);
+                    }
+                    playfx(level.trophylongflashfx, self.origin + vectorscale((0, 0, 1), 15), var_84c1f04c, fxup);
+                    owner thread projectileexplode(grenade, self);
+                    index--;
+                    self playsound(#"wpn_trophy_alert");
+                    if (getdvarint(#"player_sustainammo", 0) == 0) {
+                        if (!isdefined(self.ammo)) {
+                            self.ammo = 0;
                         }
-                        var_84c1f04c = grenade.origin - self.origin;
-                        if (var_84c1f04c == (0, 0, 0)) {
-                            var_84c1f04c = (1, 0, 0);
-                        }
-                        fxup = anglestoup(self.angles);
-                        if (fxup == (0, 0, 0)) {
-                            fxup = (0, 0, 1);
-                        }
-                        playfx(level.trophylongflashfx, self.origin + vectorscale((0, 0, 1), 15), var_84c1f04c, fxup);
-                        owner thread projectileexplode(grenade, self);
-                        index--;
-                        self playsound(#"wpn_trophy_alert");
-                        if (getdvarint(#"player_sustainammo", 0) == 0) {
-                            if (!isdefined(self.ammo)) {
-                                self.ammo = 0;
-                            }
-                            self.ammo--;
-                            if (self.ammo <= 0) {
-                                self thread trophysystemdetonate();
-                            }
+                        self.ammo--;
+                        if (self.ammo <= 0) {
+                            self thread trophysystemdetonate();
                         }
                     }
                 }
@@ -546,9 +546,9 @@ function ammo_weapon_pickup(ammo) {
         if (isdefined(self._trophy_system_ammo1)) {
             self._trophy_system_ammo2 = self._trophy_system_ammo1;
             self._trophy_system_ammo1 = ammo;
-        } else {
-            self._trophy_system_ammo1 = ammo;
+            return;
         }
+        self._trophy_system_ammo1 = ammo;
     }
 }
 

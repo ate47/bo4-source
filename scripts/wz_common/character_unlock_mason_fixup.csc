@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_mason_fixup/character_unlock_mason_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ca7d546, Offset: 0xc8
 // Size: 0x74
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_mason_fixup/character_unlock_mason_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1577602f, Offset: 0x148
 // Size: 0x152
 function function_d95e620c() {

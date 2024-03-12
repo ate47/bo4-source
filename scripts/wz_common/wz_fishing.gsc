@@ -50,10 +50,10 @@ function __init__() {
             }
         }
         level thread function_c0cfa434();
-    } else {
-        foreach (rock in fishing_rocks) {
-            function_e2a06860(rock, 2);
-        }
+        return;
+    }
+    foreach (rock in fishing_rocks) {
+        function_e2a06860(rock, 2);
     }
 }
 
@@ -123,9 +123,9 @@ function function_c0cfa434() {
 function function_12747006(boast) {
     if (self util::is_female()) {
         self function_c6775cf9("f_" + boast);
-    } else {
-        self function_c6775cf9("m_" + boast);
+        return;
     }
+    self function_c6775cf9("m_" + boast);
 }
 
 // Namespace wz_fishing/wz_fishing
@@ -270,7 +270,7 @@ function function_ee4ce537(dynent) {
             if (!self function_15049d95()) {
                 self function_ed446f40(dynent);
                 self notify(#"hash_21d06dbd3684fc31");
-                break;
+                return;
             }
         }
         waitframe(1);
@@ -395,7 +395,7 @@ function function_16e4e507(dynent) {
                 self thread function_54a3ec41(dynent);
                 self waittill(#"fishing_end_minigame");
                 self thread function_ed446f40(dynent);
-                break;
+                return;
             }
         }
         waitframe(1);
@@ -446,7 +446,7 @@ function function_176e516(dynent) {
             self function_12747006("fishing_cancel");
             self waittill(#"fishing_end_minigame");
             self function_ed446f40(dynent);
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -466,7 +466,9 @@ function function_54a3ec41(dynent) {
             dynent.dropping_item = 1;
             dynent function_e8c63c15(self);
         }
-    } else if (isdefined(dynent.buoy)) {
+        return;
+    }
+    if (isdefined(dynent.buoy)) {
         dynent.buoy notify(#"fishing_done");
     }
 }

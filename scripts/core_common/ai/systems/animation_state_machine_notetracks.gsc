@@ -33,9 +33,9 @@ function private handlenotetrack(entity, notetrack) {
     }
     if (isfunctionptr(notetrackhandler)) {
         [[ notetrackhandler ]](entity);
-    } else {
-        entity setblackboardattribute(notetrackhandler.blackboardattributename, notetrackhandler.blackboardvalue);
+        return;
     }
+    entity setblackboardattribute(notetrackhandler.blackboardattributename, notetrackhandler.blackboardvalue);
 }
 
 // Namespace animationstatenetwork/animation_state_machine_notetracks

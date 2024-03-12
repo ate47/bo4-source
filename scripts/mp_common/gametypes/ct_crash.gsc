@@ -131,7 +131,9 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
         if (!isbot(self)) {
             self thread ct_utils::function_ee4639dd(-10);
         }
-    } else if (isplayer(einflictor) && einflictor.team == #"allies") {
+        return;
+    }
+    if (isplayer(einflictor) && einflictor.team == #"allies") {
         einflictor thread ct_utils::function_d471f8fa(5, undefined, 1);
         if (isdefined(level.var_93f322c9) && level.var_93f322c9) {
             einflictor ct_utils::function_785eb2ca();

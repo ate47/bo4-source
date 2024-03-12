@@ -61,9 +61,9 @@ function registeranimationmocomp(mocompname, startfuncptr, updatefuncptr, termin
             assert(isfunctionptr(terminatefuncptr), "<unknown string>");
         #/
         level._animationmocomps[mocompname][#"asm_mocomp_terminate"] = terminatefuncptr;
-    } else {
-        level._animationmocomps[mocompname][#"asm_mocomp_terminate"] = &animationmocompemptyfunc;
+        return;
     }
+    level._animationmocomps[mocompname][#"asm_mocomp_terminate"] = &animationmocompemptyfunc;
 }
 
 // Namespace animationstatenetwork/animation_state_machine_mocomp

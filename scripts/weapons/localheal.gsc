@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace locaheal/localheal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc7c78316, Offset: 0x1d8
 // Size: 0x25c
 function init_shared() {
@@ -49,7 +49,7 @@ function init_shared() {
 }
 
 // Namespace locaheal/localheal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2fb3f84c, Offset: 0x440
 // Size: 0xe4
 function function_d58bf295(params) {
@@ -64,7 +64,7 @@ function function_d58bf295(params) {
 }
 
 // Namespace locaheal/localheal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43d8b747, Offset: 0x530
 // Size: 0x4e
 function function_a5b7c42d() {
@@ -76,7 +76,7 @@ function function_a5b7c42d() {
 }
 
 // Namespace locaheal/localheal
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x35f57238, Offset: 0x588
 // Size: 0x108
 function function_2100fa40(attacker, victim, weapon, attackerweapon, meansofdeath) {
@@ -90,7 +90,7 @@ function function_2100fa40(attacker, victim, weapon, attackerweapon, meansofdeat
 }
 
 // Namespace locaheal/localheal
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1e72664d, Offset: 0x698
 // Size: 0x62
 function function_4afb5c9d(attacker, victim, weapon, attackerweapon) {
@@ -99,7 +99,7 @@ function function_4afb5c9d(attacker, victim, weapon, attackerweapon) {
 }
 
 // Namespace locaheal/localheal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa00e04dc, Offset: 0x708
 // Size: 0x1c4
 function on_player_damaged(params) {
@@ -113,15 +113,15 @@ function on_player_damaged(params) {
         player.localheal.var_21de13e3 = max(player.localheal.var_21de13e3 - var_852b4a29, 0);
         if (player.localheal.var_21de13e3 > 0) {
             player player::function_2a67df65("cleanse_buff", player.localheal.var_21de13e3 * 25, undefined, 1);
-        } else {
-            player player::function_b933de24("cleanse_buff", 1);
-            player thread function_c04c8002();
+            return;
         }
+        player player::function_b933de24("cleanse_buff", 1);
+        player thread function_c04c8002();
     }
 }
 
 // Namespace locaheal/localheal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x650bad78, Offset: 0x8d8
 // Size: 0x72
 function function_c04c8002() {
@@ -136,7 +136,7 @@ function function_c04c8002() {
 }
 
 // Namespace locaheal/localheal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd1918ce1, Offset: 0x958
 // Size: 0x134
 function on_player_killed(params) {
@@ -161,7 +161,7 @@ function has_target() {
 }
 
 // Namespace locaheal/localheal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xee0d7053, Offset: 0xae0
 // Size: 0x4c
 function function_c075723c(str_field_name, n_value) {
@@ -171,7 +171,7 @@ function function_c075723c(str_field_name, n_value) {
 }
 
 // Namespace locaheal/localheal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6c4da0bc, Offset: 0xb38
 // Size: 0x4c
 function function_c7dcfe36(slot, value) {
@@ -181,7 +181,7 @@ function function_c7dcfe36(slot, value) {
 }
 
 // Namespace locaheal/localheal
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe58cd126, Offset: 0xb90
 // Size: 0x3ec
 function regen_health(weapon, source_player, var_7b8559d4) {
@@ -228,7 +228,7 @@ function regen_health(weapon, source_player, var_7b8559d4) {
 }
 
 // Namespace locaheal/localheal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdff27df0, Offset: 0xf88
 // Size: 0x1d0
 function function_903b9495(weapon, source_player) {
@@ -248,7 +248,7 @@ function function_903b9495(weapon, source_player) {
 }
 
 // Namespace locaheal/localheal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc44513d3, Offset: 0x1160
 // Size: 0x6e
 function function_9fe3d492() {
@@ -277,7 +277,7 @@ function function_ee175021(array, entnum) {
 }
 
 // Namespace locaheal/localheal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5fe823f1, Offset: 0x1288
 // Size: 0x21c
 function gadget_on(slot, weapon) {
@@ -303,7 +303,7 @@ function gadget_on(slot, weapon) {
 }
 
 // Namespace locaheal/localheal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7a9aec62, Offset: 0x14b0
 // Size: 0x38
 function gadget_off(slot, weapon) {
@@ -312,7 +312,7 @@ function gadget_off(slot, weapon) {
 }
 
 // Namespace locaheal/localheal
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc32689bb, Offset: 0x14f0
 // Size: 0x34c
 function function_6628dc23(slot, weapon) {
@@ -357,7 +357,7 @@ function function_6628dc23(slot, weapon) {
 }
 
 // Namespace locaheal/localheal
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x42efabbf, Offset: 0x1848
 // Size: 0x1e6
 function function_45fd00c6() {

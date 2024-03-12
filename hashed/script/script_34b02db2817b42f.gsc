@@ -39,7 +39,9 @@ function preload() {
     foreach (part in a_parts) {
         if (part.classname == "trigger_damage_new") {
             level.var_74170866.s_fireplace.var_7126b6eb = part;
-        } else if (part.classname == "info_volume") {
+            continue;
+        }
+        if (part.classname == "info_volume") {
             level.var_74170866.s_fireplace.var_72807128 = part;
         }
     }
@@ -104,14 +106,14 @@ function private function_5b4f9f76(e_player) {
 // Checksum 0x623023be, Offset: 0x9c8
 // Size: 0x14
 function start_quest() {
-    function_b60df00d();
+    start_step_1();
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
 // Params 0, eflags: 0x5 linked
 // Checksum 0xc610916a, Offset: 0x9e8
 // Size: 0x114
-function private function_b60df00d() {
+function private start_step_1() {
     level thread function_cbeb9a33();
     /#
         iprintlnbold("<unknown string>");
@@ -171,7 +173,7 @@ function function_4b4ede() {
                 e_door setcandamage(0);
                 e_door notify(#"burn_cabinet");
             }
-            break;
+            return;
         }
     }
 }
@@ -202,7 +204,7 @@ function private function_9d66ea6f(e_item, e_player) {
     e_player playsound("evt_canister_pickup");
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mod_phase", 3, e_player);
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mk2z_ammo", 1, e_player);
-    function_87e09347();
+    start_step_2();
     if (zm_utility::is_classic()) {
         level.var_74170866.e_player zm_hms_util::function_51b752a9("vox_ww_z_ammo_pickup", 0);
         if (!zm_white_main_quest::function_6cebbce1()) {
@@ -215,7 +217,7 @@ function private function_9d66ea6f(e_item, e_player) {
 // Params 0, eflags: 0x5 linked
 // Checksum 0x47b32c8a, Offset: 0x11d8
 // Size: 0xe4
-function private function_87e09347() {
+function private start_step_2() {
     /#
         iprintlnbold("<unknown string>");
     #/
@@ -254,7 +256,7 @@ function private run_step_2() {
     wait(1);
     exploder::exploder("fxexp_mk2_Z_fire_chimney_" + level.var_74170866.s_fireplace.script_string + "_house");
     pixendevent();
-    function_b99d76c0();
+    start_step_3();
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
@@ -306,7 +308,7 @@ function function_20b366ef() {
 // Params 0, eflags: 0x5 linked
 // Checksum 0x22cdc4a6, Offset: 0x1758
 // Size: 0x72
-function private function_b99d76c0() {
+function private start_step_3() {
     s_sc = level.var_74170866.s_fireplace;
     s_sc zm_unitrigger::create("", 96);
     s_sc thread function_473f437();
@@ -328,7 +330,7 @@ function private function_473f437() {
             level.var_74170866.var_fead3ae9.var_b9989e12 = hash(self.script_noteworthy);
             namespace_bd74bbd2::start(level.var_74170866.var_fead3ae9.var_b9989e12);
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            break;
+            return;
         }
     }
 }
@@ -360,7 +362,7 @@ function private function_b9a31cb(e_item, e_player) {
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mk2z_ammo", 2, e_player);
     e_player.var_f7694097 = 3;
     e_player playsound("evt_canister_pickup");
-    function_a36c4a5e();
+    start_step_4();
     if (!zm_white_main_quest::function_6cebbce1() && zm_utility::is_classic()) {
         e_player zm_white_util::function_491673da(#"hash_3fa02403cbe89e77");
     }
@@ -405,7 +407,7 @@ function private function_2ac1278b() {
         if (function_18a1849f(e_player)) {
             namespace_bd74bbd2::start(self.var_b9989e12);
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            break;
+            return;
         }
     }
 }
@@ -419,18 +421,18 @@ function cleanup_step_3() {
     if (isdefined(level.var_74170866.var_fead3ae9)) {
         namespace_bd74bbd2::end(hash(level.var_74170866.s_fireplace.script_noteworthy));
         level.var_74170866.var_fead3ae9 delete();
-    } else {
-        s_sc = level.var_74170866.s_fireplace;
-        s_sc notify(#"stop_think");
-        zm_unitrigger::unregister_unitrigger(s_sc.s_unitrigger);
+        return;
     }
+    s_sc = level.var_74170866.s_fireplace;
+    s_sc notify(#"stop_think");
+    zm_unitrigger::unregister_unitrigger(s_sc.s_unitrigger);
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
 // Params 0, eflags: 0x5 linked
 // Checksum 0x90941f28, Offset: 0x1eb8
 // Size: 0x3a
-function private function_a36c4a5e() {
+function private start_step_4() {
     level.var_74170866.e_player thread function_cba90c3c();
     level.var_74170866.n_step = 4;
 }
@@ -495,7 +497,7 @@ function private restart_quest(var_e19b7aed = 1) {
     }
     level.var_74170866.e_player = undefined;
     if (var_e19b7aed) {
-        function_b60df00d();
+        start_step_1();
     }
 }
 

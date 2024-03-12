@@ -32,9 +32,9 @@ function __init__() {
 function function_b245ef9e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_green", #"wz/fx8_zombie_eye_glow_green_wz");
-    } else {
-        self zm_utility::function_704f7c0e(localclientnum);
+        return;
     }
+    self zm_utility::function_704f7c0e(localclientnum);
 }
 
 // Namespace zm_holiday_event/zm_holiday_event
@@ -48,15 +48,15 @@ function function_9a20c93e(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"zmb_sq_souls_release");
             self.var_2a145797 = self playloopsound(#"zmb_sq_souls_lp");
         }
-    } else {
-        if (isdefined(self.var_c9d177e8)) {
-            killfx(localclientnum, self.var_c9d177e8);
-            self.var_c9d177e8 = undefined;
-        }
-        if (isdefined(self.var_2a145797)) {
-            self stoploopsound(self.var_2a145797);
-            self.var_2a145797 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_c9d177e8)) {
+        killfx(localclientnum, self.var_c9d177e8);
+        self.var_c9d177e8 = undefined;
+    }
+    if (isdefined(self.var_2a145797)) {
+        self stoploopsound(self.var_2a145797);
+        self.var_2a145797 = undefined;
     }
 }
 

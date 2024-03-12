@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x626fdfa3, Offset: 0x420
 // Size: 0x104
 function __init__() {
@@ -38,7 +38,7 @@ function __init__() {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4e939638, Offset: 0x530
 // Size: 0x54c
 function init_clientfields() {
@@ -64,7 +64,7 @@ function init_clientfields() {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcda4ce1d, Offset: 0xa88
 // Size: 0x8c
 function on_localclient_connect(localclientnum) {
@@ -75,7 +75,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7f1acb3e, Offset: 0xb20
 // Size: 0x16
 function private function_a4c14f8c(value) {
@@ -83,7 +83,7 @@ function private function_a4c14f8c(value) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x93a1fddd, Offset: 0xb40
 // Size: 0x18
 function private function_ff16ec5f(value) {
@@ -91,7 +91,7 @@ function private function_ff16ec5f(value) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x222e4c4b, Offset: 0xb60
 // Size: 0x16
 function private function_76a4b21e(value) {
@@ -99,7 +99,7 @@ function private function_76a4b21e(value) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3c8b53cb, Offset: 0xb80
 // Size: 0x1ac
 function private function_6c4ae982(localclientnum) {
@@ -134,7 +134,7 @@ function private function_6c4ae982(localclientnum) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8c78ccda, Offset: 0xd38
 // Size: 0x19c
 function function_ed1567cc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -148,31 +148,33 @@ function function_ed1567cc(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         self playsound(0, #"hash_329be5a324e42ee1");
         level notify(#"hash_5975d5f569535c41");
-    } else if (1) {
+        return;
+    }
+    if (1) {
         self function_d309e55a("tag_cargo_ramp_control_animate", 0);
         self function_d309e55a("tag_door_left_control_animate", 0);
         self function_d309e55a("tag_door_right_control_animate", 0);
-    } else {
-        self function_d309e55a("tag_ramp_control_animate", 0);
+        return;
     }
+    self function_d309e55a("tag_ramp_control_animate", 0);
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2c27231d, Offset: 0xee0
 // Size: 0x8c
 function function_ba7d9848(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (1) {
         if (newval) {
             self function_d309e55a("tag_landing_gear_control_animate", 1);
-        } else {
-            self function_d309e55a("tag_landing_gear_control_animate", 0);
+            return;
         }
+        self function_d309e55a("tag_landing_gear_control_animate", 0);
     }
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc0882fe7, Offset: 0xf78
 // Size: 0x7c
 function function_ded53cc6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -182,7 +184,7 @@ function function_ded53cc6(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa4660a0b, Offset: 0x1000
 // Size: 0x94
 function function_ea3cc318(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -194,7 +196,7 @@ function function_ea3cc318(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace player_insertion/player_insertion
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xeeed1fd6, Offset: 0x10a0
 // Size: 0x6c
 function private function_8c515e6(player) {
@@ -207,7 +209,7 @@ function private function_8c515e6(player) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe2c4dd3b, Offset: 0x1118
 // Size: 0x17c
 function function_a67b1f40(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -220,18 +222,22 @@ function function_a67b1f40(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 0) {
         player camerasetupdatecallback();
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         self camerasetupdatecallback(&function_cbe63de1);
         self thread function_8c515e6(player);
         player function_ec94346();
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self camerasetupdatecallback(&function_c8ea4bcc);
         self thread function_8c515e6(player);
     }
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4d7ce365, Offset: 0x12a0
 // Size: 0x154
 function function_7bac6764(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -243,18 +249,22 @@ function function_7bac6764(localclientnum, oldval, newval, bnewent, binitialsnap
     value = function_76a4b21e(newval);
     if (value == 0) {
         player camerasetupdatecallback();
-    } else if (value == 1) {
+        return;
+    }
+    if (value == 1) {
         self camerasetupdatecallback(&function_cbe63de1);
         self thread function_8c515e6(player);
         player function_ec94346();
-    } else if (value == 2) {
+        return;
+    }
+    if (value == 2) {
         self camerasetupdatecallback(&function_c8ea4bcc);
         self thread function_8c515e6(player);
     }
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8ce427d6, Offset: 0x1400
 // Size: 0x84
 function infil_plane(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -263,7 +273,7 @@ function infil_plane(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xacfc63ce, Offset: 0x1490
 // Size: 0xbc
 function infil_ent(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -274,7 +284,7 @@ function infil_ent(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace player_insertion/player_insertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x27856247, Offset: 0x1558
 // Size: 0x1a4
 function function_cbe63de1(localclientnum, delta_t) {
@@ -305,7 +315,7 @@ function function_cbe63de1(localclientnum, delta_t) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xdf7937fb, Offset: 0x1708
 // Size: 0x21c
 function function_c8ea4bcc(localclientnum, delta_t) {
@@ -337,7 +347,7 @@ function function_c8ea4bcc(localclientnum, delta_t) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x33444006, Offset: 0x1930
 // Size: 0x3c
 function function_84ba1c41(local_client_num, eventstruct) {
@@ -347,7 +357,7 @@ function function_84ba1c41(local_client_num, eventstruct) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8ad0a71f, Offset: 0x1978
 // Size: 0x94
 function function_f9e5d4d3(local_client_num, eventstruct) {
@@ -359,7 +369,7 @@ function function_f9e5d4d3(local_client_num, eventstruct) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb410683f, Offset: 0x1a18
 // Size: 0x74
 function function_ec94346() {
@@ -369,7 +379,7 @@ function function_ec94346() {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xecb9981, Offset: 0x1a98
 // Size: 0x6c
 function function_c9a18304(local_client_num, eventstruct) {
@@ -380,7 +390,7 @@ function function_c9a18304(local_client_num, eventstruct) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8a4109db, Offset: 0x1b10
 // Size: 0xba
 function function_81ac0c1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -393,7 +403,7 @@ function function_81ac0c1(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb92cc1d0, Offset: 0x1bd8
 // Size: 0xda
 function function_73a03a18(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -407,7 +417,7 @@ function function_73a03a18(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xbbf34631, Offset: 0x1cc0
 // Size: 0xba
 function function_35aed89d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -420,7 +430,7 @@ function function_35aed89d(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x19ad8dd3, Offset: 0x1d88
 // Size: 0xda
 function function_f1c37912(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -434,7 +444,7 @@ function function_f1c37912(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace player_insertion/player_insertion
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb289453a, Offset: 0x1e70
 // Size: 0x23c
 function function_65cca2e1(localclientnum, var_1e7db62f) {
@@ -460,22 +470,22 @@ function function_65cca2e1(localclientnum, var_1e7db62f) {
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9249d699, Offset: 0x20b8
 // Size: 0xd4
 function infil_compass(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         level thread function_65cca2e1(localclientnum, 0);
         function_c8ae746a(localclientnum, 0, 1);
-    } else {
-        self notify(#"hash_503cb9224ca331c" + 0);
-        function_c8ae746a(localclientnum, 0, 0);
-        function_71fec565(localclientnum, 0);
+        return;
     }
+    self notify(#"hash_503cb9224ca331c" + 0);
+    function_c8ae746a(localclientnum, 0, 0);
+    function_71fec565(localclientnum, 0);
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xff9152fc, Offset: 0x2198
 // Size: 0x14e
 function function_4da7bee9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -489,44 +499,44 @@ function function_4da7bee9(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         if (value) {
             level thread function_65cca2e1(localclientnum, var_1e7db62f);
-        } else {
-            self notify(#"hash_503cb9224ca331c" + var_1e7db62f);
-            function_c8ae746a(localclientnum, var_1e7db62f, 0);
-            function_71fec565(localclientnum, var_1e7db62f);
+            continue;
         }
+        self notify(#"hash_503cb9224ca331c" + var_1e7db62f);
+        function_c8ae746a(localclientnum, var_1e7db62f, 0);
+        function_71fec565(localclientnum, var_1e7db62f);
     }
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x754ef2e8, Offset: 0x22f0
 // Size: 0xf8
 function inside_infiltration_vehicle(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.infiltrationVehicle"), newval);
     if (newval) {
         self function_811196d1(1);
-    } else {
-        self notify(#"hash_70483f3d5a2f87f0");
-        self function_811196d1(0);
-        self camerasetupdatecallback();
-        level notify(#"hash_413d64e47311dcf8");
+        return;
     }
+    self notify(#"hash_70483f3d5a2f87f0");
+    self function_811196d1(0);
+    self camerasetupdatecallback();
+    level notify(#"hash_413d64e47311dcf8");
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xaa5f99ef, Offset: 0x23f0
 // Size: 0x84
 function private function_c9851cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self codeplaypostfxbundle("pstfx_heat_distortion");
-    } else {
-        self codestoppostfxbundle("pstfx_heat_distortion");
+        return;
     }
+    self codestoppostfxbundle("pstfx_heat_distortion");
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xb0e7aed2, Offset: 0x2480
 // Size: 0x64
 function private function_9767bbd8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -534,7 +544,7 @@ function private function_9767bbd8(localclientnum, oldval, newval, bnewent, bini
 }
 
 // Namespace player_insertion/player_insertion
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0x698cc300, Offset: 0x24f0
 // Size: 0x132
 function private function_c0c7c219(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -545,11 +555,11 @@ function private function_c0c7c219(localclientnum, oldval, newval, bnewent, bini
             stopfx(localclientnum, self.var_227361c6);
         }
         self.var_227361c6 = playfx(localclientnum, #"hash_28b5c6ccaabb4afe", self.origin);
-    } else {
-        if (isdefined(self.var_227361c6)) {
-            stopfx(localclientnum, self.var_227361c6);
-        }
-        self.var_227361c6 = playfx(localclientnum, #"hash_45086f1ffcabbf47", self.origin);
+        return;
     }
+    if (isdefined(self.var_227361c6)) {
+        stopfx(localclientnum, self.var_227361c6);
+    }
+    self.var_227361c6 = playfx(localclientnum, #"hash_45086f1ffcabbf47", self.origin);
 }
 

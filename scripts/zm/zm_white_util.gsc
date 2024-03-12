@@ -538,9 +538,8 @@ function function_358da2a7(e_player) {
             self sethintstring(zm_utility::function_d6046228(#"hash_314a7588b45256eb", #"hash_6831cfd35264e1"), w_give.displayname);
         }
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_white_util/zm_white_util
@@ -621,7 +620,9 @@ function function_c05cc102(s_params) {
     s_waitresult = s_params.projectile waittill(#"projectile_impact_explode", #"explode", #"death");
     if (isdefined(s_params.projectile) && s_waitresult._notify == "death") {
         level notify(#"hash_3042a9bf2f57ea0a", {#var_814c9389:s_params.projectile.origin, #attacker:self});
-    } else if (s_waitresult._notify == "projectile_impact_explode") {
+        return;
+    }
+    if (s_waitresult._notify == "projectile_impact_explode") {
         level notify(#"hash_3042a9bf2f57ea0a", {#var_814c9389:s_waitresult.position, #attacker:self});
     }
 }

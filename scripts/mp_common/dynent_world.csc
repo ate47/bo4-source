@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dynent_world/dynent_world
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb4888501, Offset: 0x100
 // Size: 0x8c
 function __init__() {

@@ -130,9 +130,9 @@ function function_51e0947e() {
     if (!isdefined(self.var_836ebde0) || self.var_836ebde0 == 0) {
         self.var_836ebde0 = 1;
         self clientfield::set_to_player("" + #"hash_31b61c511ced94d7", 1);
-    } else {
-        self.var_836ebde0++;
+        return;
     }
+    self.var_836ebde0++;
 }
 
 // Namespace zm_bgb_dividend_yield/zm_bgb_dividend_yield

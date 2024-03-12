@@ -60,28 +60,28 @@ function player_contract_event(event_name, param1 = undefined, param2 = undefine
                 self [[ event_func ]]();
             }
         }
-        break;
+        return;
     case 1:
         foreach (event_func in level.player_contract_events[event_name].events) {
             if (isdefined(event_func)) {
                 self [[ event_func ]](param1);
             }
         }
-        break;
+        return;
     case 2:
         foreach (event_func in level.player_contract_events[event_name].events) {
             if (isdefined(event_func)) {
                 self [[ event_func ]](param1, param2);
             }
         }
-        break;
+        return;
     case 3:
         foreach (event_func in level.player_contract_events[event_name].events) {
             if (isdefined(event_func)) {
                 self [[ event_func ]](param1, param2, param3);
             }
         }
-        break;
+        return;
     }
 }
 
@@ -380,10 +380,8 @@ function function_d589391f() {
         level.var_e054dd5c = 0;
     }
     level endon(#"game_ended");
-    players = getplayers();
-    while (players.size == 0 || gamestate::is_state("pregame")) {
+    for (players = getplayers(); players.size == 0 || gamestate::is_state("pregame"); players = getplayers()) {
         wait(1);
-        players = getplayers();
     }
     while (1) {
         wait(0.1);

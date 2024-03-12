@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_ajax/character_unlock_ajax
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbae04bde, Offset: 0xe0
 // Size: 0x34
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_ajax/character_unlock_ajax
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2dc6be34, Offset: 0x120
 // Size: 0xbc
 function function_2613aeec(enabled) {
@@ -37,7 +37,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_ajax/character_unlock_ajax
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf5f3103, Offset: 0x1e8
 // Size: 0xcc
 function function_1c4b5097(item) {
@@ -51,7 +51,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_ajax/character_unlock_ajax
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x666a84fa, Offset: 0x2c0
 // Size: 0x124
 function on_drop_item(params) {
@@ -72,7 +72,7 @@ function on_drop_item(params) {
 }
 
 // Namespace character_unlock_ajax/character_unlock_ajax
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdf581e33, Offset: 0x3f0
 // Size: 0xd4
 function on_item_use(params) {
@@ -88,7 +88,7 @@ function on_item_use(params) {
 }
 
 // Namespace character_unlock_ajax/character_unlock_ajax
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x547d726c, Offset: 0x4d0
 // Size: 0xf8
 function private function_b854ffba() {

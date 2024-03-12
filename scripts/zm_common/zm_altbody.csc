@@ -94,11 +94,11 @@ function toggle_player_altbody(localclientnum, oldval, newval, bnewent, binitial
             if (isdefined(callback)) {
                 self [[ callback ]](localclientnum);
             }
-        } else {
-            callback = level.altbody_exit_callbacks[level.altbody_name];
-            if (isdefined(callback)) {
-                self [[ callback ]](localclientnum);
-            }
+            return;
+        }
+        callback = level.altbody_exit_callbacks[level.altbody_name];
+        if (isdefined(callback)) {
+            self [[ callback ]](localclientnum);
         }
     }
 }
@@ -117,11 +117,11 @@ function toggle_player_altbody_3p(localclientnum, oldval, newval, bnewent, binit
         if (isdefined(callback)) {
             self [[ callback ]](localclientnum);
         }
-    } else {
-        callback = level.altbody_exit_3p_callbacks[level.altbody_name];
-        if (isdefined(callback)) {
-            self [[ callback ]](localclientnum);
-        }
+        return;
+    }
+    callback = level.altbody_exit_3p_callbacks[level.altbody_name];
+    if (isdefined(callback)) {
+        self [[ callback ]](localclientnum);
     }
 }
 

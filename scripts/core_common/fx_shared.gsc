@@ -79,7 +79,8 @@ function play(str_fx, v_origin = (0, 0, 0), v_angles = (0, 0, 0), time_to_delete
     if ((!isdefined(time_to_delete_or_notify) || !isstring(time_to_delete_or_notify) && !ishash(time_to_delete_or_notify) && time_to_delete_or_notify == -1) && isdefined(b_link_to_self) && b_link_to_self && isdefined(str_tag)) {
         playfxontag(get(str_fx), self, str_tag, b_ignore_pause_world);
         return self;
-    } else if (isdefined(time_to_delete_or_notify)) {
+    }
+    if (isdefined(time_to_delete_or_notify)) {
         m_fx = util::spawn_model("tag_origin", v_origin, v_angles);
         if (isdefined(b_link_to_self) && b_link_to_self) {
             if (isdefined(str_tag)) {
@@ -94,9 +95,8 @@ function play(str_fx, v_origin = (0, 0, 0), v_angles = (0, 0, 0), time_to_delete
         playfxontag(get(str_fx), m_fx, "tag_origin", b_ignore_pause_world);
         m_fx thread _play_fx_delete(self, time_to_delete_or_notify);
         return m_fx;
-    } else {
-        playfx(get(str_fx), v_origin, anglestoforward(v_angles), anglestoup(v_angles), b_ignore_pause_world);
     }
+    playfx(get(str_fx), v_origin, anglestoforward(v_angles), anglestoup(v_angles), b_ignore_pause_world);
 }
 
 // Namespace fx/fx_shared

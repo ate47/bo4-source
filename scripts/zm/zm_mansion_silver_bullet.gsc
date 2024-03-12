@@ -96,7 +96,7 @@ function function_766980a4() {
         s_result = level waittill(#"blueprint_completed");
         if (s_result.produced == getweapon(#"hash_1d4928987b5f4f6e")) {
             level zm_ui_inventory::function_7df6bb60(#"hash_26da6ef83af4ba62", 1);
-            break;
+            return;
         }
     }
 }
@@ -156,7 +156,8 @@ function function_8051ebe7(e_player, w_weapon, var_7e18912e) {
     }
     if (e_player zm_weapons::has_upgrade(w_weapon)) {
         return 5500;
-    } else if (e_player zm_weapons::has_weapon_or_upgrade(w_weapon)) {
+    }
+    if (e_player zm_weapons::has_weapon_or_upgrade(w_weapon)) {
         return function_bdddc37c(w_weapon);
     }
 }
@@ -170,11 +171,10 @@ function function_bdddc37c(w_weapon) {
     if (isdefined(var_2af07147)) {
         if (var_2af07147 == getweapon("pistol_topbreak_t8")) {
             return 380;
-        } else {
-            n_cost = zm_weapons::get_weapon_cost(var_2af07147) * 0.75;
-            if (isdefined(n_cost)) {
-                return zm_utility::round_up_to_ten(int(n_cost));
-            }
+        }
+        n_cost = zm_weapons::get_weapon_cost(var_2af07147) * 0.75;
+        if (isdefined(n_cost)) {
+            return zm_utility::round_up_to_ten(int(n_cost));
         }
     }
 }
@@ -273,9 +273,8 @@ function function_252cf612(player) {
             }
         }
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace mansion_silver_bullet/zm_mansion_silver_bullet
@@ -311,21 +310,21 @@ function function_dad1960c() {
             if (isdefined(var_ff915b1d) && var_ff915b1d) {
                 player zm_score::minus_to_player_score(n_cost);
             }
-        } else {
-            /#
-                foreach (e_player in level.players) {
-                    if (isdefined(e_player.hud_bullet)) {
-                        e_player.hud_bullet destroy();
-                    }
-                }
-            #/
-            if (!level.var_c9fce264) {
-                player thread zm_vo::function_a2bd5a0c(#"hash_400e358c3529b05f", 1);
-                level.var_c9fce264 = 1;
-            }
-            player function_4e849ab();
-            player flag::set(#"hash_56504ef435e17076");
+            continue;
         }
+        /#
+            foreach (e_player in level.players) {
+                if (isdefined(e_player.hud_bullet)) {
+                    e_player.hud_bullet destroy();
+                }
+            }
+        #/
+        if (!level.var_c9fce264) {
+            player thread zm_vo::function_a2bd5a0c(#"hash_400e358c3529b05f", 1);
+            level.var_c9fce264 = 1;
+        }
+        player function_4e849ab();
+        player flag::set(#"hash_56504ef435e17076");
     }
 }
 

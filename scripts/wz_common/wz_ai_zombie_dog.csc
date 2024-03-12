@@ -61,15 +61,15 @@ function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname
         array::add(self.var_93471229, util::playfxontag(localclientnum, level._effect[#"hash_55d6ab2c7eecbad4"], self, "tag_eye"));
         array::add(self.var_93471229, util::playfxontag(localclientnum, level._effect[#"dog_eye_glow"], self, "j_eyeball_le"));
         self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, 1, 1);
-    } else {
-        if (isdefined(self.var_93471229)) {
-            foreach (fxhandle in self.var_93471229) {
-                deletefx(localclientnum, fxhandle);
-            }
-        }
-        util::playfxontag(localclientnum, level._effect[#"dog_gib"], self, "j_spine2");
-        physicsexplosionsphere(localclientnum, self.origin, 150, 0, 0.15);
+        return;
     }
+    if (isdefined(self.var_93471229)) {
+        foreach (fxhandle in self.var_93471229) {
+            deletefx(localclientnum, fxhandle);
+        }
+    }
+    util::playfxontag(localclientnum, level._effect[#"dog_gib"], self, "j_spine2");
+    physicsexplosionsphere(localclientnum, self.origin, 150, 0, 0.15);
 }
 
 // Namespace zombie_dog_util/wz_ai_zombie_dog

@@ -43,9 +43,9 @@ function __init__() {
 function function_4c32ce00(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self playrenderoverridebundle("rob_tricannon_character_ice");
-    } else {
-        self stoprenderoverridebundle("rob_tricannon_character_ice");
+        return;
     }
+    self stoprenderoverridebundle("rob_tricannon_character_ice");
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
@@ -60,7 +60,7 @@ function function_af90fb8c(localclientnum, oldval, newval, bnewent, binitialsnap
                 s_result = self waittill(#"notetrack", #"death");
                 if (s_result.notetrack === "fire" || s_result.notetrack === "rechamber") {
                     playviewmodelfx(localclientnum, level._effect[#"hash_48c846b3b589b3f9"], "tag_flash2");
-                    break;
+                    return;
                 }
             }
         }
@@ -82,11 +82,13 @@ function function_39fb4ba9(localclientnum, oldval, newval, bnewent, binitialsnap
             } else {
                 playviewmodelfx(localclientnum, level._effect[#"hash_4b54be230d4f57e9"], "tag_flash");
             }
-        } else if (b_packed === 1) {
-            util::playfxontag(localclientnum, level._effect[#"hash_720e50199e045f64"], self, "tag_flash");
-        } else {
-            util::playfxontag(localclientnum, level._effect[#"hash_4b5aca230d53d7fb"], self, "tag_flash");
+            return;
         }
+        if (b_packed === 1) {
+            util::playfxontag(localclientnum, level._effect[#"hash_720e50199e045f64"], self, "tag_flash");
+            return;
+        }
+        util::playfxontag(localclientnum, level._effect[#"hash_4b5aca230d53d7fb"], self, "tag_flash");
     }
 }
 

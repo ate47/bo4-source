@@ -42,10 +42,10 @@ function private function_190ae9a1(localclientnum, oldval, newval, bnewent, bini
 function function_87dc06ae(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         self thread function_2d6416dc(localclientnum);
-    } else {
-        self notify(#"hash_319d2bba47dac2c4");
-        self function_a6907b54(localclientnum);
+        return;
     }
+    self notify(#"hash_319d2bba47dac2c4");
+    self function_a6907b54(localclientnum);
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8

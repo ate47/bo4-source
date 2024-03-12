@@ -83,9 +83,13 @@ function init_fan_trap_trigs() {
             if (isdefined(a_e_trap[i].script_string)) {
                 if (a_e_trap[i].script_string == "fan_trap_rumble") {
                     var_7c68fa38.t_rumble = a_e_trap[i];
-                } else if (a_e_trap[i].script_string == "fxanim_fan") {
-                    var_7c68fa38.var_6dead4d5 = a_e_trap[i];
-                } else if (a_e_trap[i].script_string == "trap_control_panel") {
+                    continue;
+                }
+                if (a_e_trap[i].script_string == "fxanim_fan") {
+                    var_7c68fa38.mdl_fan = a_e_trap[i];
+                    continue;
+                }
+                if (a_e_trap[i].script_string == "trap_control_panel") {
                     if (!isdefined(var_7c68fa38.var_cd6ebde4)) {
                         var_7c68fa38.var_cd6ebde4 = [];
                     } else if (!isarray(var_7c68fa38.var_cd6ebde4)) {
@@ -147,12 +151,12 @@ function activate_zm_fan_trap() {
     level.trapped_track[#"fan"] = 1;
     self.in_use = 1;
     self thread zm_traps::trap_damage();
-    self.var_6dead4d5 thread scene::init(#"p8_fxanim_zm_esc_trap_fan_play", self.var_6dead4d5);
+    self.mdl_fan thread scene::init(#"p8_fxanim_zm_esc_trap_fan_play", self.mdl_fan);
     self thread fan_trap_timeout();
     self thread fan_trap_rumble_think();
     self waittill(#"trap_finished");
     self.in_use = undefined;
-    self.var_6dead4d5 thread scene::play(#"p8_fxanim_zm_esc_trap_fan_play", self.var_6dead4d5);
+    self.mdl_fan thread scene::play(#"p8_fxanim_zm_esc_trap_fan_play", self.mdl_fan);
     a_players = getplayers();
     foreach (e_player in a_players) {
         if (isdefined(e_player.fan_trap_rumble) && e_player.fan_trap_rumble) {
@@ -182,11 +186,13 @@ function function_5758997a(t_damage) {
     self endon(#"death");
     if (zm_utility::is_standard()) {
         self dodamage(25, self.origin, undefined, t_damage);
-    } else if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
-        radiusdamage(self.origin, 10, self.health + 100, self.health + 100, t_damage);
-    } else {
-        self dodamage(50, self.origin, undefined, t_damage);
+        return;
     }
+    if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
+        radiusdamage(self.origin, 10, self.health + 100, self.health + 100, t_damage);
+        return;
+    }
+    self dodamage(50, self.origin, undefined, t_damage);
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -201,45 +207,44 @@ function function_9c2d463d(t_damage) {
     if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"boss") {
         t_damage notify(#"trap_finished");
         return;
-    } else {
-        if (isdefined(self.var_238b3806) && self.var_238b3806) {
-            return;
+    }
+    if (isdefined(self.var_238b3806) && self.var_238b3806) {
+        return;
+    }
+    if (level.round_number < 40) {
+        self.marked_for_death = 1;
+        self clientfield::set("fan_trap_blood_fx", 1);
+        level notify(#"hash_528d7b7f7d6c51a1", {#e_player:t_damage.activated_by_player});
+        self zombie_utility::gib_random_parts();
+        playsoundatposition("zmb_trap_fan_grind", self.origin);
+        self thread stop_fan_trap_blood_fx();
+        self dodamage(self.health + 1000, t_damage.origin, undefined, t_damage);
+        if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
+            t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+            t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
-        if (level.round_number < 40) {
-            self.marked_for_death = 1;
-            self clientfield::set("fan_trap_blood_fx", 1);
-            level notify(#"hash_528d7b7f7d6c51a1", {#e_player:t_damage.activated_by_player});
-            self zombie_utility::gib_random_parts();
-            playsoundatposition("zmb_trap_fan_grind", self.origin);
-            self thread stop_fan_trap_blood_fx();
-            self dodamage(self.health + 1000, t_damage.origin, undefined, t_damage);
-            if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
-                t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-            }
-        } else {
-            if (isdefined(self.var_1adc13ad) && self.var_1adc13ad) {
-                return;
-            }
-            self.var_1adc13ad = 1;
-            self clientfield::set("fan_trap_blood_fx", 1);
-            while (isalive(self) && self istouching(t_damage) && isdefined(t_damage.in_use) && t_damage.in_use) {
-                self function_1395e596();
-                self dodamage(self.maxhealth * 0.3, t_damage.origin, undefined, t_damage);
-                playsoundatposition("zmb_trap_fan_grind", self.origin);
-                wait(0.1);
-            }
-            if (isalive(self)) {
-                self clientfield::set("fan_trap_blood_fx", 0);
-                self.var_1adc13ad = undefined;
-            } else {
-                level notify(#"hash_528d7b7f7d6c51a1", {#e_player:t_damage.activated_by_player});
-                if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
-                    t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                    t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-                }
-            }
-        }
+        return;
+    }
+    if (isdefined(self.var_1adc13ad) && self.var_1adc13ad) {
+        return;
+    }
+    self.var_1adc13ad = 1;
+    self clientfield::set("fan_trap_blood_fx", 1);
+    while (isalive(self) && self istouching(t_damage) && isdefined(t_damage.in_use) && t_damage.in_use) {
+        self function_1395e596();
+        self dodamage(self.maxhealth * 0.3, t_damage.origin, undefined, t_damage);
+        playsoundatposition("zmb_trap_fan_grind", self.origin);
+        wait(0.1);
+    }
+    if (isalive(self)) {
+        self clientfield::set("fan_trap_blood_fx", 0);
+        self.var_1adc13ad = undefined;
+        return;
+    }
+    level notify(#"hash_528d7b7f7d6c51a1", {#e_player:t_damage.activated_by_player});
+    if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
+        t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+        t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
     }
 }
 
@@ -280,10 +285,8 @@ function private function_1395e596() {
 // Size: 0x66
 function fan_trap_timeout() {
     self endon(#"trap_finished");
-    n_duration = 0;
-    while (n_duration < 25) {
+    for (n_duration = 0; n_duration < 25; n_duration = n_duration + 0.05) {
         wait(0.05);
-        n_duration = n_duration + 0.05;
     }
     self notify(#"trap_finished");
 }
@@ -317,11 +320,11 @@ function fan_trap_rumble(e_player) {
             e_player clientfield::set_to_player("rumble_fan_trap", 1);
             e_player.fan_trap_rumble = 1;
             wait(0.25);
-        } else {
-            e_player clientfield::set_to_player("rumble_fan_trap", 0);
-            e_player.fan_trap_rumble = 0;
-            break;
+            continue;
         }
+        e_player clientfield::set_to_player("rumble_fan_trap", 0);
+        e_player.fan_trap_rumble = 0;
+        return;
     }
 }
 
@@ -340,18 +343,18 @@ function fan_trap_damage() {
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {
             s_result.activator thread player_fan_trap_damage();
-        } else {
-            if (isdefined(s_result.activator.is_brutus) && s_result.activator.is_brutus) {
-                self notify(#"trap_finished");
-                return;
-            }
-            if (isdefined(self.var_238b3806) && self.var_238b3806) {
-                return;
-            }
-            if (!isdefined(s_result.activator.marked_for_death)) {
-                s_result.activator.marked_for_death = 1;
-                s_result.activator thread zombie_fan_trap_death();
-            }
+            continue;
+        }
+        if (isdefined(s_result.activator.is_brutus) && s_result.activator.is_brutus) {
+            self notify(#"trap_finished");
+            return;
+        }
+        if (isdefined(self.var_238b3806) && self.var_238b3806) {
+            return;
+        }
+        if (!isdefined(s_result.activator.marked_for_death)) {
+            s_result.activator.marked_for_death = 1;
+            s_result.activator thread zombie_fan_trap_death();
         }
     }
 }
@@ -364,11 +367,13 @@ function player_fan_trap_damage() {
     self endon(#"death");
     if (zm_utility::is_standard()) {
         self dodamage(25, self.origin);
-    } else if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
-        radiusdamage(self.origin, 10, self.health + 100, self.health + 100);
-    } else {
-        self dodamage(50, self.origin);
+        return;
     }
+    if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
+        radiusdamage(self.origin, 10, self.health + 100, self.health + 100);
+        return;
+    }
+    self dodamage(50, self.origin);
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -545,7 +550,7 @@ function function_9699194a(t_damage) {
         return;
     }
     if (self.var_6f84b820 === #"miniboss" || self.var_6f84b820 === #"boss") {
-        goto LOC_00000462;
+        return;
     }
     if (isdefined(self.var_238b3806) && self.var_238b3806) {
         return;
@@ -569,32 +574,28 @@ function function_9699194a(t_damage) {
                 t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
             }
         }
-    } else {
-        self clientfield::set("acid_trap_death_fx", 1);
-        while (isalive(self) && self istouching(t_damage) && isdefined(t_damage.in_use) && t_damage.in_use) {
-            self function_1395e596();
-            self.var_143964f0 = self.var_12745932;
-            self.var_12745932 = 1;
-            self dodamage(self.maxhealth * 0.2, t_damage.origin, t_damage.activated_by_player, t_damage);
-            wait(0.3);
-        }
-        if (isalive(self)) {
-            self clientfield::set("acid_trap_death_fx", 0);
-            self.var_1adc13ad = undefined;
-            self.var_12745932 = self.var_143964f0;
-            self.var_143964f0 = undefined;
-        } else {
-            level notify(#"hash_317f58ba0d580c27", {#e_player:t_damage.activated_by_player});
-            if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
-                t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-            LOC_00000462:
-            }
-        LOC_00000462:
-        }
-    LOC_00000462:
+        return;
     }
-LOC_00000462:
+    self clientfield::set("acid_trap_death_fx", 1);
+    while (isalive(self) && self istouching(t_damage) && isdefined(t_damage.in_use) && t_damage.in_use) {
+        self function_1395e596();
+        self.var_143964f0 = self.var_12745932;
+        self.var_12745932 = 1;
+        self dodamage(self.maxhealth * 0.2, t_damage.origin, t_damage.activated_by_player, t_damage);
+        wait(0.3);
+    }
+    if (isalive(self)) {
+        self clientfield::set("acid_trap_death_fx", 0);
+        self.var_1adc13ad = undefined;
+        self.var_12745932 = self.var_143964f0;
+        self.var_143964f0 = undefined;
+        return;
+    }
+    level notify(#"hash_317f58ba0d580c27", {#e_player:t_damage.activated_by_player});
+    if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
+        t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+        t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+    }
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -652,9 +653,13 @@ function function_6dbbc97() {
             if (isdefined(a_e_targets[i].script_string)) {
                 if (a_e_targets[i].script_string == "spinning_trap_rumble") {
                     var_fe861167.t_rumble = a_e_targets[i];
-                } else if (a_e_targets[i].script_string == "fxanim_spinning_trap") {
+                    continue;
+                }
+                if (a_e_targets[i].script_string == "fxanim_spinning_trap") {
                     var_fe861167.mdl_trap = a_e_targets[i];
-                } else if (a_e_targets[i].script_string == "trap_control_panel") {
+                    continue;
+                }
+                if (a_e_targets[i].script_string == "trap_control_panel") {
                     if (!isdefined(var_fe861167.var_cd6ebde4)) {
                         var_fe861167.var_cd6ebde4 = [];
                     } else if (!isarray(var_fe861167.var_cd6ebde4)) {
@@ -753,11 +758,13 @@ function function_7e74aa5(t_damage) {
     self endon(#"death", #"disconnect");
     if (zm_utility::is_standard()) {
         self dodamage(5, self.origin, undefined, t_damage);
-    } else if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
-        radiusdamage(self.origin, 10, self.health + 100, self.health + 100, t_damage);
-    } else {
-        self dodamage(50, self.origin, undefined, t_damage);
+        return;
     }
+    if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
+        radiusdamage(self.origin, 10, self.health + 100, self.health + 100, t_damage);
+        return;
+    }
+    self dodamage(50, self.origin, undefined, t_damage);
 }
 
 // Namespace zm_escape_traps/zm_escape_traps
@@ -772,74 +779,75 @@ function function_1f7e661f(t_damage) {
     if (self.var_6f84b820 === #"miniboss" || self.var_6f84b820 === #"boss") {
         t_damage notify(#"trap_finished");
         return;
-    } else {
-        if (isdefined(self.var_238b3806) && self.var_238b3806 || isdefined(self.var_bd4627e1) && self.var_bd4627e1) {
-            return;
+    }
+    if (isdefined(self.var_238b3806) && self.var_238b3806 || isdefined(self.var_bd4627e1) && self.var_bd4627e1) {
+        return;
+    }
+    if (isdefined(self.var_1adc13ad) && self.var_1adc13ad) {
+        return;
+    }
+    self.var_1adc13ad = 1;
+    if (isai(self) && !isvehicle(self)) {
+        self clientfield::set("spinning_trap_blood_fx", 1);
+    }
+    self playsound(#"hash_42c6cc2204b7fbbd");
+    v_hook = t_damage.mdl_trap gettagorigin("tag_weapon_3");
+    n_dist = distance2d(self.origin, v_hook);
+    if (!(isdefined(t_damage.var_705682df) && t_damage.var_705682df) && self.var_6f84b820 === #"basic" && n_dist <= 128 && self.team != #"allies") {
+        t_damage.var_705682df = 1;
+        self.var_bd4627e1 = 1;
+        self clientfield::set("spinning_trap_eye_fx", 1);
+        var_e72c9959 = util::spawn_model("tag_origin", t_damage.mdl_trap gettagorigin("tag_weapon_3"), t_damage.mdl_trap gettagangles("tag_weapon_3"));
+        var_e72c9959 linkto(t_damage.mdl_trap, "tag_weapon_3");
+        self thread function_864365ef(t_damage, var_e72c9959);
+        a_e_players = util::get_array_of_closest(self.origin, getplayers());
+        if (isdefined(a_e_players[0]) && distance2dsquared(a_e_players[0].origin, self.origin) < 400 * 400) {
+            a_e_players[0] zm_audio::create_and_play_dialog(#"spin_trap", #"hook", undefined, 1);
         }
-        if (isdefined(self.var_1adc13ad) && self.var_1adc13ad) {
-            return;
-        }
-        self.var_1adc13ad = 1;
-        if (isai(self) && !isvehicle(self)) {
-            self clientfield::set("spinning_trap_blood_fx", 1);
-        }
-        self playsound(#"hash_42c6cc2204b7fbbd");
-        v_hook = t_damage.mdl_trap gettagorigin("tag_weapon_3");
-        n_dist = distance2d(self.origin, v_hook);
-        if (!(isdefined(t_damage.var_705682df) && t_damage.var_705682df) && self.var_6f84b820 === #"basic" && n_dist <= 128 && self.team != #"allies") {
-            t_damage.var_705682df = 1;
-            self.var_bd4627e1 = 1;
-            self clientfield::set("spinning_trap_eye_fx", 1);
-            var_e72c9959 = util::spawn_model("tag_origin", t_damage.mdl_trap gettagorigin("tag_weapon_3"), t_damage.mdl_trap gettagangles("tag_weapon_3"));
-            var_e72c9959 linkto(t_damage.mdl_trap, "tag_weapon_3");
-            self thread function_864365ef(t_damage, var_e72c9959);
-            a_e_players = util::get_array_of_closest(self.origin, getplayers());
-            if (isdefined(a_e_players[0]) && distance2dsquared(a_e_players[0].origin, self.origin) < 400 * 400) {
-                a_e_players[0] zm_audio::create_and_play_dialog(#"spin_trap", #"hook", undefined, 1);
-            }
+        return;
+    }
+    if (isai(self) && !isvehicle(self)) {
+        self thread a_a_arms();
+    }
+    if (self.var_6f84b820 === #"basic" && !isvehicle(self)) {
+        str_tag = t_damage.mdl_trap get_closest_tag(self.origin);
+        if (str_tag === "tag_weapon_1") {
+            self zombie_utility::makezombiecrawler(1);
+        } else if (str_tag === "tag_weapon_4") {
+            gibserverutils::gibhead(self);
+        } else if (str_tag === "tag_weapon_3" && randomint(100) < 75) {
+            gibserverutils::annihilate(self);
         } else {
-            if (isai(self) && !isvehicle(self)) {
-                self thread a_a_arms();
-            }
-            if (self.var_6f84b820 === #"basic" && !isvehicle(self)) {
-                str_tag = t_damage.mdl_trap get_closest_tag(self.origin);
-                if (str_tag === "tag_weapon_1") {
-                    self zombie_utility::makezombiecrawler(1);
-                } else if (str_tag === "tag_weapon_4") {
-                    gibserverutils::gibhead(self);
-                } else if (str_tag === "tag_weapon_3" && randomint(100) < 75) {
-                    gibserverutils::annihilate(self);
-                } else {
-                    n_lift_height = randomintrange(8, 64);
-                    v_away_from_source = vectornormalize(self.origin - t_damage.origin);
-                    v_away_from_source = v_away_from_source * 128;
-                    v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
-                    a_trace = physicstraceex(self.origin + vectorscale((0, 0, 1), 32), self.origin + v_away_from_source, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
-                    self setplayercollision(0);
-                    self startragdoll();
-                    self launchragdoll(150 * anglestoup(self.angles) + (v_away_from_source[0], v_away_from_source[1], 0));
-                }
-                level notify(#"hash_148b3ce521088846", {#e_player:t_damage.activated_by_player});
-                self dodamage(self.health + 1000, self.origin, undefined, t_damage);
-                if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
-                    t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                    t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-                }
-            } else if (self.var_6f84b820 === #"popcorn") {
-                level notify(#"hash_148b3ce521088846", {#e_player:t_damage.activated_by_player});
-                self dodamage(self.health + 1000, self.origin, undefined, t_damage);
-                if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
-                    t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                    t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-                }
-            } else {
-                self dodamage(self.maxhealth * 0.2, self.origin, undefined, t_damage);
-                wait(0.25);
-                if (isdefined(self)) {
-                    self.var_1adc13ad = undefined;
-                }
-            }
+            n_lift_height = randomintrange(8, 64);
+            v_away_from_source = vectornormalize(self.origin - t_damage.origin);
+            v_away_from_source = v_away_from_source * 128;
+            v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
+            a_trace = physicstraceex(self.origin + vectorscale((0, 0, 1), 32), self.origin + v_away_from_source, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+            self setplayercollision(0);
+            self startragdoll();
+            self launchragdoll(150 * anglestoup(self.angles) + (v_away_from_source[0], v_away_from_source[1], 0));
         }
+        level notify(#"hash_148b3ce521088846", {#e_player:t_damage.activated_by_player});
+        self dodamage(self.health + 1000, self.origin, undefined, t_damage);
+        if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
+            t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+            t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+        }
+        return;
+    }
+    if (self.var_6f84b820 === #"popcorn") {
+        level notify(#"hash_148b3ce521088846", {#e_player:t_damage.activated_by_player});
+        self dodamage(self.health + 1000, self.origin, undefined, t_damage);
+        if (isdefined(t_damage.activated_by_player) && isplayer(t_damage.activated_by_player)) {
+            t_damage.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+            t_damage.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+        }
+        return;
+    }
+    self dodamage(self.maxhealth * 0.2, self.origin, undefined, t_damage);
+    wait(0.25);
+    if (isdefined(self)) {
+        self.var_1adc13ad = undefined;
     }
 }
 
@@ -855,7 +863,9 @@ function private get_closest_tag(v_pos) {
     for (i = 0; i < self.var_e60684da.size; i++) {
         if (!isdefined(var_59add9df)) {
             var_59add9df = self.var_e60684da[i];
-        } else if (distance2dsquared(v_pos, self gettagorigin(self.var_e60684da[i])) < distance2dsquared(v_pos, self gettagorigin(var_59add9df))) {
+            continue;
+        }
+        if (distance2dsquared(v_pos, self gettagorigin(self.var_e60684da[i])) < distance2dsquared(v_pos, self gettagorigin(var_59add9df))) {
             var_59add9df = self.var_e60684da[i];
         }
     }
@@ -881,10 +891,8 @@ function private function_c846fd12() {
 // Size: 0x66
 function function_4a15e725() {
     self endon(#"trap_finished");
-    n_duration = 0;
-    while (n_duration < 25) {
+    for (n_duration = 0; n_duration < 25; n_duration = n_duration + 0.05) {
         wait(0.05);
-        n_duration = n_duration + 0.05;
     }
     self notify(#"trap_finished");
 }
@@ -918,11 +926,11 @@ function spinning_trap_rumble(e_player) {
             e_player clientfield::set_to_player("rumble_spinning_trap", 1);
             e_player.b_spinning_trap_rumble = 1;
             wait(0.25);
-        } else {
-            e_player clientfield::set_to_player("rumble_spinning_trap", 0);
-            e_player.b_spinning_trap_rumble = undefined;
-            break;
+            continue;
         }
+        e_player clientfield::set_to_player("rumble_spinning_trap", 0);
+        e_player.b_spinning_trap_rumble = undefined;
+        return;
     }
 }
 
@@ -1013,7 +1021,9 @@ function function_e3f8ed75() {
                 if (!isinarray(self.var_e7bb2f7b, var_c2a3bbf[i])) {
                     self.var_e7bb2f7b[self.var_e7bb2f7b.size] = var_c2a3bbf[i];
                 }
-            } else if (var_c2a3bbf[i].script_string === "trap_control_panel") {
+                continue;
+            }
+            if (var_c2a3bbf[i].script_string === "trap_control_panel") {
                 if (!isdefined(self.var_cd6ebde4)) {
                     self.var_cd6ebde4 = [];
                 } else if (!isarray(self.var_cd6ebde4)) {
@@ -1042,15 +1052,15 @@ function zapper_light_red() {
     case #"zm_spinning_trap":
         exploder::exploder("fxexp_spinning_trap_light_red");
         exploder::kill_exploder("fxexp_spinning_trap_light_green");
-        break;
+        return;
     case #"zm_fan_trap":
         exploder::exploder("fxexp_fan_trap_light_red");
         exploder::kill_exploder("fxexp_fan_trap_light_green");
-        break;
+        return;
     case #"zm_acid_trap":
         exploder::exploder("fxexp_acid_trap_light_red");
         exploder::kill_exploder("fxexp_acid_trap_light_green");
-        break;
+        return;
     }
 }
 
@@ -1068,15 +1078,15 @@ function zapper_light_green() {
     case #"zm_spinning_trap":
         exploder::kill_exploder("fxexp_spinning_trap_light_red");
         exploder::exploder("fxexp_spinning_trap_light_green");
-        break;
+        return;
     case #"zm_fan_trap":
         exploder::kill_exploder("fxexp_fan_trap_light_red");
         exploder::exploder("fxexp_fan_trap_light_green");
-        break;
+        return;
     case #"zm_acid_trap":
         exploder::kill_exploder("fxexp_acid_trap_light_red");
         exploder::exploder("fxexp_acid_trap_light_green");
-        break;
+        return;
     }
 }
 
@@ -1086,16 +1096,16 @@ function zapper_light_green() {
 // Size: 0x188
 function trap_move_switch() {
     self zapper_light_red();
-    foreach (var_fe043be4 in self.var_e7bb2f7b) {
-        var_fe043be4 rotatepitch(-180, 0.5);
-        var_fe043be4 playsound(#"amb_sparks_l_b");
+    foreach (mdl_handle in self.var_e7bb2f7b) {
+        mdl_handle rotatepitch(-180, 0.5);
+        mdl_handle playsound(#"amb_sparks_l_b");
     }
     wait(0.5);
     self notify(#"switch_activated");
     self waittill(#"available");
     self zapper_light_green();
-    foreach (var_fe043be4 in self.var_e7bb2f7b) {
-        var_fe043be4 rotatepitch(180, 0.5);
+    foreach (mdl_handle in self.var_e7bb2f7b) {
+        mdl_handle rotatepitch(180, 0.5);
     }
 }
 

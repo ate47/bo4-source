@@ -35,15 +35,15 @@ function freeze_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
         playsound(localclientnum, #"hash_68f3e5dbc3422363", self.origin);
         audio::playloopat("zmb_trap_acid_loop", self.origin);
         self.var_91180673 = util::playfxontag(localclientnum, level._effect[#"freeze_spray"], self, "tag_origin");
-    } else {
-        playsound(localclientnum, #"hash_4da8231bc8767676", self.origin);
-        audio::stoploopat("zmb_trap_acid_loop", self.origin);
-        if (isdefined(self.var_91180673)) {
-            stopfx(localclientnum, self.var_91180673);
-            self.var_91180673 = undefined;
-        }
-        playfx(localclientnum, level._effect[#"hash_4131e133ed64bb15"], self.origin);
+        return;
     }
+    playsound(localclientnum, #"hash_4da8231bc8767676", self.origin);
+    audio::stoploopat("zmb_trap_acid_loop", self.origin);
+    if (isdefined(self.var_91180673)) {
+        stopfx(localclientnum, self.var_91180673);
+        self.var_91180673 = undefined;
+    }
+    playfx(localclientnum, level._effect[#"hash_4131e133ed64bb15"], self.origin);
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
@@ -54,7 +54,9 @@ function freeze_trap_death_fx(localclientnum, oldval, newval, bnewent, binitials
     if (newval == 1) {
         self.n_freeze_trap_death_fx = util::playfxontag(localclientnum, level._effect[#"hash_4dbed2be32ca74bc"], self, "tag_stowed_back");
         playsound(localclientnum, #"hash_4d4c9f8ad239b61f", self.origin);
-    } else if (isdefined(self.n_freeze_trap_death_fx)) {
+        return;
+    }
+    if (isdefined(self.n_freeze_trap_death_fx)) {
         stopfx(localclientnum, self.n_freeze_trap_death_fx);
         self.n_freeze_trap_death_fx = undefined;
     }
@@ -80,21 +82,21 @@ function player_freeze_trap_post_fx(localclientnum, oldval, newval, bnewent, bin
         self thread function_4443ecea(localclientnum);
         self thread postfx::playpostfxbundle(#"pstfx_frost_loop_fullscreen");
         self postfx::function_c8b5f318(#"pstfx_frost_loop_fullscreen", #"reveal threshold", 0.825);
-    } else {
-        while (isalive(self) && self.var_b2ea9ecc > 0.5) {
-            self.var_b2ea9ecc = self.var_b2ea9ecc - 0.325 / 20;
-            if (self.var_b2ea9ecc < 0.5) {
-                self.var_b2ea9ecc = 0.5;
-            }
-            self postfx::function_c8b5f318(#"pstfx_frost_loop_fullscreen", #"reveal threshold", self.var_b2ea9ecc);
-            wait(0.05);
-        }
-        if (isdefined(self.var_f08ae416)) {
-            self stoploopsound(self.var_f08ae416);
-            self.var_f08ae416 = undefined;
-        }
-        self notify(#"player_freeze_trap_post_fx_complete");
+        return;
     }
+    while (isalive(self) && self.var_b2ea9ecc > 0.5) {
+        self.var_b2ea9ecc = self.var_b2ea9ecc - 0.325 / 20;
+        if (self.var_b2ea9ecc < 0.5) {
+            self.var_b2ea9ecc = 0.5;
+        }
+        self postfx::function_c8b5f318(#"pstfx_frost_loop_fullscreen", #"reveal threshold", self.var_b2ea9ecc);
+        wait(0.05);
+    }
+    if (isdefined(self.var_f08ae416)) {
+        self stoploopsound(self.var_f08ae416);
+        self.var_f08ae416 = undefined;
+    }
+    self notify(#"player_freeze_trap_post_fx_complete");
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap

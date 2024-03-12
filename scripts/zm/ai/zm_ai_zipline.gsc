@@ -147,15 +147,13 @@ function function_dc61ccae(vnd_start, var_6f06d19d, var_ca144d1e) {
                     record3dtext("<unknown string>" + var_c246e8d5, var_8e89eaf2 + var_c246e8d5, (1, 1, 1), "<unknown string>");
                 #/
             }
-            var_31120f24 = vnd_start;
-            while (isdefined(var_31120f24.target)) {
+            for (var_31120f24 = vnd_start; isdefined(var_31120f24.target); var_31120f24 = var_bb4eaebf) {
                 var_bb4eaebf = getvehiclenode(var_31120f24.target, "targetname");
                 /#
                     sphere(var_31120f24.origin, 5, (1, 1, 0), 1, 0, 8, 1);
                     sphere(var_bb4eaebf.origin, 5, (1, 1, 0), 1, 0, 8, 1);
                     line(var_31120f24.origin, var_bb4eaebf.origin, (1, 1, 0));
                 #/
-                var_31120f24 = var_bb4eaebf;
             }
         }
     }

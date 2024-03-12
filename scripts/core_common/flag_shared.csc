@@ -97,9 +97,9 @@ function clear(str_flag) {
 function toggle(str_flag) {
     if (get(str_flag)) {
         clear(str_flag);
-    } else {
-        set(str_flag);
+        return;
     }
+    set(str_flag);
 }
 
 // Namespace flag/flag_shared
@@ -280,10 +280,10 @@ function wait_till_clear_any_timeout(n_timeout, a_flags) {
 function delete(str_flag) {
     if (isdefined(self.flag[str_flag])) {
         self.flag[str_flag] = undefined;
-    } else {
-        /#
-            println("<unknown string>" + str_flag);
-        #/
+        return;
     }
+    /#
+        println("<unknown string>" + str_flag);
+    #/
 }
 

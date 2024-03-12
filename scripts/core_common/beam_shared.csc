@@ -23,7 +23,9 @@ function launch(ent_1, str_tag1, ent_2, str_tag2, str_beam_type, var_ee0708f0) {
                 }
             }
         }
-    } else if (isdefined(s_beam)) {
+        return;
+    }
+    if (isdefined(s_beam)) {
         s_beam.beam_id = beamlaunch(self.localclientnum, ent_1, str_tag1, ent_2, str_tag2, str_beam_type);
         self thread _kill_on_ent_death(self.localclientnum, s_beam, ent_1, ent_2);
         return s_beam.beam_id;
@@ -64,7 +66,9 @@ function kill(ent_1, str_tag1, ent_2, str_tag2, str_beam_type) {
                 }
             }
         }
-    } else if (isdefined(s_beam)) {
+        return;
+    }
+    if (isdefined(s_beam)) {
         s_beam notify(#"kill");
         beamkill(self.localclientnum, s_beam.beam_id);
     }

@@ -172,13 +172,15 @@ function private function_4c4946d4(local_client_num, localplayerteam, var_52fe68
             if (entity flag::exists(#"shoutcaster_flag")) {
                 entity renderoverridebundle::stop_bundle(#"shoutcaster_flag", rob, 0);
             }
-        } else if (var_faa7a3fb == 2 && localplayerteam == entity.team || var_faa7a3fb == 1 && localplayerteam != entity.team) {
+            continue;
+        }
+        if (var_faa7a3fb == 2 && localplayerteam == entity.team || var_faa7a3fb == 1 && localplayerteam != entity.team) {
             if (entity flag::exists(#"shoutcaster_flag")) {
                 entity renderoverridebundle::stop_bundle(#"shoutcaster_flag", rob, 0);
             }
-        } else {
-            entity function_a0b844f1(local_client_num, robkey, rob);
+            continue;
         }
+        entity function_a0b844f1(local_client_num, robkey, rob);
     }
 }
 
@@ -324,13 +326,13 @@ function private shoutcaster_monitor_player_pucks(localclientnum) {
                     } else if (function_7ed4edd3(player.name)) {
                         function_35248a94(localclientnum, player.name);
                     }
-                } else {
-                    if (function_7ed4edd3(player.name)) {
-                        function_35248a94(localclientnum, player.name);
-                    }
-                    if (function_2b07633f(player.name)) {
-                        function_69b179ea(localclientnum);
-                    }
+                    continue;
+                }
+                if (function_7ed4edd3(player.name)) {
+                    function_35248a94(localclientnum, player.name);
+                }
+                if (function_2b07633f(player.name)) {
+                    function_69b179ea(localclientnum);
                 }
             }
         }

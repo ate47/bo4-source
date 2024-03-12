@@ -65,7 +65,9 @@ function charindex_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         self.player_exert_id = newval;
         self._first_frame_exert_id_recieved = 1;
         self notify(#"sndendexertoverride");
-    } else if (!isdefined(self._first_frame_exert_id_recieved)) {
+        return;
+    }
+    if (!isdefined(self._first_frame_exert_id_recieved)) {
         self._first_frame_exert_id_recieved = 1;
         self thread delay_set_exert_id(newval);
     }
@@ -78,9 +80,9 @@ function charindex_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fie
 function isspeaking_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!bnewent) {
         self.isspeaking = newval;
-    } else {
-        self.isspeaking = 0;
+        return;
     }
+    self.isspeaking = 0;
 }
 
 // Namespace zm_audio/zm_audio
@@ -195,7 +197,6 @@ function function_42e50d5() {
         case #"hero_scepter_lv2":
         case #"hero_scepter_lv1":
             return 1;
-            break;
         }
     }
     return 0;
@@ -229,15 +230,21 @@ function sndmeleeswipe(localclientnum, notifystring) {
         }
         if (isdefined(self.is_player_zombie) && self.is_player_zombie) {
             playsound(0, #"zmb_melee_whoosh_zmb_plr", self.origin);
-        } else if (currentweapon.statname === #"bowie_knife") {
-            playsound(0, #"zmb_bowie_swing_plr", self.origin);
-        } else if (currentweapon.name == "spoon_zm_alcatraz") {
-            playsound(0, #"zmb_spoon_swing_plr", self.origin);
-        } else if (currentweapon.name == "spork_zm_alcatraz") {
-            playsound(0, #"zmb_spork_swing_plr", self.origin);
-        } else {
-            playsound(0, #"zmb_melee_whoosh_plr", self.origin);
+            continue;
         }
+        if (currentweapon.statname === #"bowie_knife") {
+            playsound(0, #"zmb_bowie_swing_plr", self.origin);
+            continue;
+        }
+        if (currentweapon.name == "spoon_zm_alcatraz") {
+            playsound(0, #"zmb_spoon_swing_plr", self.origin);
+            continue;
+        }
+        if (currentweapon.name == "spork_zm_alcatraz") {
+            playsound(0, #"zmb_spork_swing_plr", self.origin);
+            continue;
+        }
+        playsound(0, #"zmb_melee_whoosh_plr", self.origin);
     }
 }
 
@@ -271,7 +278,9 @@ function sndzmblaststand(localclientnum, oldval, newval, bnewent, binitialsnap, 
         playsound(localclientnum, #"hash_5e980fdf2497d9a1", (0, 0, 0));
         self.var_63de16a = self playloopsound(#"hash_7b41cf42e1b9847b");
         self.inlaststand = 1;
-    } else if (isdefined(self.inlaststand) && self.inlaststand) {
+        return;
+    }
+    if (isdefined(self.inlaststand) && self.inlaststand) {
         playsound(localclientnum, #"hash_1526662237d7780f", (0, 0, 0));
         self stoploopsound(self.var_63de16a);
         self.inlaststand = 0;

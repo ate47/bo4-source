@@ -23,7 +23,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d4f78e2, Offset: 0x2c8
 // Size: 0x74
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd11dcc2a, Offset: 0x348
 // Size: 0x284
 function wasp_initialize() {
@@ -73,7 +73,7 @@ function wasp_initialize() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ef630b3, Offset: 0x5d8
 // Size: 0x2d4
 function defaultrole() {
@@ -99,7 +99,7 @@ function defaultrole() {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6b0dec7e, Offset: 0x8b8
 // Size: 0x3ac
 function state_death_update(params) {
@@ -152,14 +152,14 @@ function state_death_update(params) {
             break;
         }
         self vehicle_death::deletewhensafe();
-    } else {
-        params.death_type = death_type;
-        vehicle_ai::defaultstate_death_update(params);
+        return;
     }
+    params.death_type = death_type;
+    vehicle_ai::defaultstate_death_update(params);
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x655c1c3d, Offset: 0xc70
 // Size: 0x66c
 function state_emped_update(params) {
@@ -200,13 +200,11 @@ function state_emped_update(params) {
     self.abnormal_status.emped = 0;
     self vehicle::toggle_emp_fx(0);
     self vehicle_ai::emp_startup_fx();
-    bootup_timer = 1.6;
-    while (bootup_timer > 0) {
+    for (bootup_timer = 1.6; bootup_timer > 0; bootup_timer = bootup_timer - 0.8) {
         self vehicle::lights_on();
         wait(0.4);
         self vehicle::lights_off();
         wait(0.4);
-        bootup_timer = bootup_timer - 0.8;
     }
     self vehicle::lights_on();
     if (isdefined(self.position_before_fall)) {
@@ -240,7 +238,7 @@ function state_emped_update(params) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xebfdc373, Offset: 0x12e8
 // Size: 0x4c
 function function_d34735d1() {
@@ -252,7 +250,7 @@ function function_d34735d1() {
 }
 
 // Namespace wasp/wasp
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x121b6536, Offset: 0x1340
 // Size: 0x5ae
 function fall_and_bounce(killonimpact_speed, killonimpact_time, killonimpact = 0) {
@@ -317,7 +315,7 @@ function fall_and_bounce(killonimpact_speed, killonimpact_time, killonimpact = 0
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdead018a, Offset: 0x18f8
 // Size: 0x266
 function init_guard_points() {
@@ -379,7 +377,7 @@ function guard_points_debug() {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93def103, Offset: 0x1c78
 // Size: 0x330
 function get_guard_points(owner) {
@@ -417,7 +415,7 @@ function get_guard_points(owner) {
 }
 
 // Namespace wasp/wasp
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x158d0b9b, Offset: 0x1fb0
 // Size: 0x126
 function state_guard_can_enter(from_state, to_state, connection) {
@@ -437,7 +435,7 @@ function state_guard_can_enter(from_state, to_state, connection) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9a88bc48, Offset: 0x20e0
 // Size: 0x4c
 function state_guard_enter(params) {
@@ -448,7 +446,7 @@ function state_guard_enter(params) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x460f89a3, Offset: 0x2138
 // Size: 0x72
 function update_main_guard() {
@@ -458,7 +456,7 @@ function update_main_guard() {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7f737520, Offset: 0x21b8
 // Size: 0x3e
 function state_guard_exit(params) {
@@ -468,7 +466,7 @@ function state_guard_exit(params) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbe54cad2, Offset: 0x2200
 // Size: 0x64
 function test_get_back_point(point) {
@@ -482,7 +480,7 @@ function test_get_back_point(point) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb901fa0e, Offset: 0x2270
 // Size: 0xd4
 function test_get_back_queryresult(queryresult) {
@@ -491,7 +489,8 @@ function test_get_back_queryresult(queryresult) {
         testresult = test_get_back_point(point.origin);
         if (testresult == 1) {
             return point.origin;
-        } else if (testresult == 0) {
+        }
+        if (testresult == 0) {
             waitframe(1);
         }
     }
@@ -499,7 +498,7 @@ function test_get_back_queryresult(queryresult) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ca0cc9, Offset: 0x2350
 // Size: 0x848
 function state_guard_update(params) {
@@ -512,125 +511,125 @@ function state_guard_update(params) {
         if (isdefined(self.enemy) && distancesquared(self.owner.origin, self.enemy.origin) < 1000 * 1000 && self seerecently(self.enemy, 1) && ispointinnavvolume(self.origin, "navvolume_small")) {
             self vehicle_ai::evaluate_connections();
             wait(1);
-        } else {
-            owner = self.owner;
-            if (!isdefined(owner)) {
-                wait(1);
-                continue;
+            continue;
+        }
+        owner = self.owner;
+        if (!isdefined(owner)) {
+            wait(1);
+            continue;
+        }
+        usepathfinding = 1;
+        onnavvolume = ispointinnavvolume(self.origin, "navvolume_small");
+        if (!onnavvolume) {
+            getbackpoint = undefined;
+            pointonnavvolume = self getclosestpointonnavvolume(self.origin, 500);
+            if (isdefined(pointonnavvolume)) {
+                if (test_get_back_point(pointonnavvolume) == 1) {
+                    getbackpoint = pointonnavvolume;
+                }
             }
-            usepathfinding = 1;
-            onnavvolume = ispointinnavvolume(self.origin, "navvolume_small");
-            if (!onnavvolume) {
-                getbackpoint = undefined;
-                pointonnavvolume = self getclosestpointonnavvolume(self.origin, 500);
-                if (isdefined(pointonnavvolume)) {
-                    if (test_get_back_point(pointonnavvolume) == 1) {
-                        getbackpoint = pointonnavvolume;
-                    }
-                }
-                if (!isdefined(getbackpoint)) {
-                    queryresult = positionquery_source_navigation(self.origin, 0, 1500, 200, 80, self);
-                    getbackpoint = test_get_back_queryresult(queryresult);
-                }
-                if (!isdefined(getbackpoint)) {
-                    queryresult = positionquery_source_navigation(self.origin, 0, 300, 700, 30, self);
-                    getbackpoint = test_get_back_queryresult(queryresult);
-                }
-                if (isdefined(getbackpoint)) {
-                    if (distancesquared(getbackpoint, self.origin) > 20 * 20) {
-                        self.current_pathto_pos = getbackpoint;
-                        usepathfinding = 0;
-                        self.vehaircraftcollisionenabled = 0;
-                    } else {
-                        onnavvolume = 1;
-                    }
+            if (!isdefined(getbackpoint)) {
+                queryresult = positionquery_source_navigation(self.origin, 0, 1500, 200, 80, self);
+                getbackpoint = test_get_back_queryresult(queryresult);
+            }
+            if (!isdefined(getbackpoint)) {
+                queryresult = positionquery_source_navigation(self.origin, 0, 300, 700, 30, self);
+                getbackpoint = test_get_back_queryresult(queryresult);
+            }
+            if (isdefined(getbackpoint)) {
+                if (distancesquared(getbackpoint, self.origin) > 20 * 20) {
+                    self.current_pathto_pos = getbackpoint;
+                    usepathfinding = 0;
+                    self.vehaircraftcollisionenabled = 0;
                 } else {
-                    stuckcount++;
-                    if (stuckcount == 1) {
-                        stucklocation = self.origin;
-                    } else if (stuckcount > 10) {
+                    onnavvolume = 1;
+                }
+            } else {
+                stuckcount++;
+                if (stuckcount == 1) {
+                    stucklocation = self.origin;
+                } else if (stuckcount > 10) {
+                    /#
                         /#
-                            /#
-                                assert(0, "<unknown string>" + self.origin);
-                            #/
-                            v_box_min = (self.radius * -1, self.radius * -1, self.radius * -1);
-                            v_box_max = (self.radius, self.radius, self.radius);
-                            box(self.origin, v_box_min, v_box_max, self.angles[1], (1, 0, 0), 1, 0, 1000000);
-                            if (isdefined(stucklocation)) {
-                                line(stucklocation, self.origin, (1, 0, 0), 1, 1, 1000000);
-                            }
+                            assert(0, "<unknown string>" + self.origin);
                         #/
-                        self kill();
-                    }
-                }
-            }
-            if (onnavvolume) {
-                self update_main_guard();
-                if (owner.main_guard === self) {
-                    guardpoints = get_guard_points(owner);
-                    if (guardpoints.size < 1) {
-                        wait(1);
-                        continue;
-                    }
-                    stuckcount = 0;
-                    self.vehaircraftcollisionenabled = 1;
-                    if (guardpoints.size <= pointindex) {
-                        pointindex = randomint(int(min(self._guard_points.size, guardpoints.size)));
-                        timenotatgoal = gettime();
-                    }
-                    self.current_pathto_pos = guardpoints[pointindex];
-                } else {
-                    main_guard = owner.main_guard;
-                    if (isalive(main_guard) && isdefined(main_guard.current_pathto_pos)) {
-                        query_position = main_guard.current_pathto_pos;
-                        queryresult = positionquery_source_navigation(query_position, 20, 140, 100, 20, self, 15);
-                        if (queryresult.data.size > 0) {
-                            self.current_pathto_pos = queryresult.data[queryresult.data.size - 1].origin;
+                        v_box_min = (self.radius * -1, self.radius * -1, self.radius * -1);
+                        v_box_max = (self.radius, self.radius, self.radius);
+                        box(self.origin, v_box_min, v_box_max, self.angles[1], (1, 0, 0), 1, 0, 1000000);
+                        if (isdefined(stucklocation)) {
+                            line(stucklocation, self.origin, (1, 0, 0), 1, 1, 1000000);
                         }
-                    }
+                    #/
+                    self kill();
                 }
             }
-            if (isdefined(self.current_pathto_pos)) {
-                distancetogoalsq = distancesquared(self.current_pathto_pos, self.origin);
-                if (!onnavvolume || distancetogoalsq > 60 * 60) {
-                    if (distancetogoalsq > 600 * 600) {
-                        self setspeed(self.settings.defaultmovespeed * 2);
-                    } else if (distancetogoalsq < 100 * 100) {
-                        self setspeed(self.settings.defaultmovespeed * 0.3);
-                    } else {
-                        self setspeed(self.settings.defaultmovespeed);
-                    }
-                    timenotatgoal = gettime();
-                } else {
-                    if (util::timesince(timenotatgoal) > 4) {
-                        pointindex = randomint(self._guard_points.size);
-                        timenotatgoal = gettime();
-                    }
-                    wait(0.2);
+        }
+        if (onnavvolume) {
+            self update_main_guard();
+            if (owner.main_guard === self) {
+                guardpoints = get_guard_points(owner);
+                if (guardpoints.size < 1) {
+                    wait(1);
                     continue;
                 }
-                if (self function_a57c34b7(self.current_pathto_pos, 1, usepathfinding)) {
-                    self playsound(#"veh_wasp_direction");
-                    self vehclearlookat();
-                    self notify(#"fire_stop");
-                    self thread path_update_interrupt();
-                    if (onnavvolume) {
-                        self vehicle_ai::waittill_pathing_done(1);
-                    } else {
-                        self vehicle_ai::waittill_pathing_done();
+                stuckcount = 0;
+                self.vehaircraftcollisionenabled = 1;
+                if (guardpoints.size <= pointindex) {
+                    pointindex = randomint(int(min(self._guard_points.size, guardpoints.size)));
+                    timenotatgoal = gettime();
+                }
+                self.current_pathto_pos = guardpoints[pointindex];
+            } else {
+                main_guard = owner.main_guard;
+                if (isalive(main_guard) && isdefined(main_guard.current_pathto_pos)) {
+                    query_position = main_guard.current_pathto_pos;
+                    queryresult = positionquery_source_navigation(query_position, 20, 140, 100, 20, self, 15);
+                    if (queryresult.data.size > 0) {
+                        self.current_pathto_pos = queryresult.data[queryresult.data.size - 1].origin;
                     }
+                }
+            }
+        }
+        if (isdefined(self.current_pathto_pos)) {
+            distancetogoalsq = distancesquared(self.current_pathto_pos, self.origin);
+            if (!onnavvolume || distancetogoalsq > 60 * 60) {
+                if (distancetogoalsq > 600 * 600) {
+                    self setspeed(self.settings.defaultmovespeed * 2);
+                } else if (distancetogoalsq < 100 * 100) {
+                    self setspeed(self.settings.defaultmovespeed * 0.3);
                 } else {
-                    wait(0.5);
+                    self setspeed(self.settings.defaultmovespeed);
+                }
+                timenotatgoal = gettime();
+            } else {
+                if (util::timesince(timenotatgoal) > 4) {
+                    pointindex = randomint(self._guard_points.size);
+                    timenotatgoal = gettime();
+                }
+                wait(0.2);
+                continue;
+            }
+            if (self function_a57c34b7(self.current_pathto_pos, 1, usepathfinding)) {
+                self playsound(#"veh_wasp_direction");
+                self vehclearlookat();
+                self notify(#"fire_stop");
+                self thread path_update_interrupt();
+                if (onnavvolume) {
+                    self vehicle_ai::waittill_pathing_done(1);
+                } else {
+                    self vehicle_ai::waittill_pathing_done();
                 }
             } else {
                 wait(0.5);
             }
+            continue;
         }
+        wait(0.5);
     }
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ab3363f, Offset: 0x2ba0
 // Size: 0x84
 function state_combat_enter(params) {
@@ -644,7 +643,7 @@ function state_combat_enter(params) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x60cc05a5, Offset: 0x2c30
 // Size: 0x53c
 function turretfireupdate() {
@@ -700,14 +699,14 @@ function turretfireupdate() {
             } else {
                 wait(randomfloatrange(0.5, 1.5));
             }
-        } else {
-            wait(0.4);
+            continue;
         }
+        wait(0.4);
     }
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa56cc5d2, Offset: 0x3178
 // Size: 0x23c
 function path_update_interrupt() {
@@ -742,7 +741,7 @@ function path_update_interrupt() {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2481772f, Offset: 0x33c0
 // Size: 0x2b8
 function wait_till_something_happens(timeout) {
@@ -753,37 +752,37 @@ function wait_till_something_happens(timeout) {
     while (time > 0) {
         if (isdefined(self.current_pathto_pos)) {
             if (distancesquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
-                break;
+                return;
             }
         }
         if (isdefined(self.enemy)) {
             if (!self cansee(self.enemy)) {
                 cant_see_count++;
                 if (cant_see_count >= 3) {
-                    break;
+                    return;
                 }
             } else {
                 cant_see_count = 0;
             }
             if (distance2dsquared(self.origin, self.enemy.origin) < 250 * 250) {
-                break;
+                return;
             }
             goalheight = self.enemy.origin[2] + 0.5 * (self.settings.engagementheightmin + self.settings.engagementheightmax);
             distfrompreferredheight = abs(self.origin[2] - goalheight);
             if (distfrompreferredheight > 100) {
-                break;
+                return;
             }
             if (isplayer(self.enemy) && self.enemy islookingat(self)) {
                 if (math::cointoss()) {
                     wait(randomfloatrange(0.1, 0.5));
                 }
                 self drop_leader();
-                break;
+                return;
             }
         }
         if (isdefined(self.leader) && isdefined(self.leader.current_pathto_pos)) {
             if (distancesquared(self.origin, self.leader.current_pathto_pos) > 165 * 165) {
-                break;
+                return;
             }
         }
         wait(0.3);
@@ -792,7 +791,7 @@ function wait_till_something_happens(timeout) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd696c95e, Offset: 0x3680
 // Size: 0x3e
 function drop_leader() {
@@ -803,7 +802,7 @@ function drop_leader() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfc2e5a67, Offset: 0x36c8
 // Size: 0x1de
 function update_leader() {
@@ -839,13 +838,13 @@ function update_leader() {
             }
             guy.followers[guy.followers.size] = self;
             self.leader = guy;
-            break;
+            return;
         }
     }
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xde755e27, Offset: 0x38b0
 // Size: 0x140
 function should_fly_forward(distancetogoalsq) {
@@ -870,7 +869,7 @@ function should_fly_forward(distancetogoalsq) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1e36cdd, Offset: 0x39f8
 // Size: 0x134
 function function_739ac4a0(params) {
@@ -892,7 +891,7 @@ function function_739ac4a0(params) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x114e98cb, Offset: 0x3b38
 // Size: 0x842
 function state_combat_update(params) {
@@ -904,110 +903,110 @@ function state_combat_update(params) {
         self update_leader();
         if (isdefined(self.inpain) && self.inpain || isdefined(self.isstunned) && self.isstunned) {
             wait(0.1);
-        } else {
-            if (self.enable_guard === 1) {
+            continue;
+        }
+        if (self.enable_guard === 1) {
+            self vehicle_ai::evaluate_connections();
+        }
+        if (isdefined(self.enemy) && isalive(self)) {
+            self turretsettarget(0, self.enemy);
+            self vehlookat(self.enemy);
+            self wait_till_something_happens(randomfloatrange(2, 5));
+        }
+        if (!isdefined(self.enemy)) {
+            self vehclearlookat();
+            aiarray = getaiteamarray("all");
+            foreach (ai in aiarray) {
+                self getperfectinfo(ai);
+            }
+            players = getplayers("all");
+            foreach (player in players) {
+                self getperfectinfo(player);
+            }
+            wait(1);
+        }
+        usepathfinding = 1;
+        onnavvolume = ispointinnavvolume(self.origin, "navvolume_small");
+        if (!onnavvolume) {
+            getbackpoint = undefined;
+            if (self.aggresive_navvolume_recover === 1) {
                 self vehicle_ai::evaluate_connections();
             }
-            if (isdefined(self.enemy) && isalive(self)) {
-                self turretsettarget(0, self.enemy);
-                self vehlookat(self.enemy);
-                self wait_till_something_happens(randomfloatrange(2, 5));
-            }
-            if (!isdefined(self.enemy)) {
-                self vehclearlookat();
-                aiarray = getaiteamarray("all");
-                foreach (ai in aiarray) {
-                    self getperfectinfo(ai);
+            pointonnavvolume = self getclosestpointonnavvolume(self.origin, 100);
+            if (isdefined(pointonnavvolume)) {
+                if (sighttracepassed(self.origin, pointonnavvolume, 0, self)) {
+                    getbackpoint = pointonnavvolume;
                 }
-                players = getplayers("all");
-                foreach (player in players) {
-                    self getperfectinfo(player);
-                }
-                wait(1);
             }
-            usepathfinding = 1;
-            onnavvolume = ispointinnavvolume(self.origin, "navvolume_small");
-            if (!onnavvolume) {
+            if (!isdefined(getbackpoint)) {
+                queryresult = positionquery_source_navigation(self.origin, 0, 200, 100, 2 * self.radius, self);
+                positionquery_filter_sight(queryresult, self.origin, (0, 0, 0), self, 1);
                 getbackpoint = undefined;
-                if (self.aggresive_navvolume_recover === 1) {
-                    self vehicle_ai::evaluate_connections();
-                }
-                pointonnavvolume = self getclosestpointonnavvolume(self.origin, 100);
-                if (isdefined(pointonnavvolume)) {
-                    if (sighttracepassed(self.origin, pointonnavvolume, 0, self)) {
-                        getbackpoint = pointonnavvolume;
+                foreach (point in queryresult.data) {
+                    if (point.visibility === 1) {
+                        getbackpoint = point.origin;
+                        break;
                     }
-                }
-                if (!isdefined(getbackpoint)) {
-                    queryresult = positionquery_source_navigation(self.origin, 0, 200, 100, 2 * self.radius, self);
-                    positionquery_filter_sight(queryresult, self.origin, (0, 0, 0), self, 1);
-                    getbackpoint = undefined;
-                    foreach (point in queryresult.data) {
-                        if (point.visibility === 1) {
-                            getbackpoint = point.origin;
-                            break;
-                        }
-                    }
-                }
-                if (isdefined(getbackpoint)) {
-                    self.current_pathto_pos = getbackpoint;
-                    usepathfinding = 0;
-                } else {
-                    stuckcount++;
-                    if (stuckcount == 1) {
-                        stucklocation = self.origin;
-                    } else if (stuckcount > 10) {
-                        /#
-                            v_box_min = (self.radius * -1, self.radius * -1, self.radius * -1);
-                            v_box_max = (self.radius, self.radius, self.radius);
-                            box(self.origin, v_box_min, v_box_max, self.angles[1], (1, 0, 0), 1, 0, 1000000);
-                            if (isdefined(stucklocation)) {
-                                line(stucklocation, self.origin, (1, 0, 0), 1, 1, 1000000);
-                            }
-                        #/
-                        self kill();
-                    }
-                }
-            } else {
-                stuckcount = 0;
-                if (self.goalforced) {
-                    goalpos = self getclosestpointonnavvolume(self.goalpos, 100);
-                    if (isdefined(goalpos)) {
-                        self.current_pathto_pos = goalpos;
-                        usepathfinding = 1;
-                    } else {
-                        self.current_pathto_pos = self.goalpos;
-                        usepathfinding = 0;
-                    }
-                } else if (isdefined(self.enemy)) {
-                    self.current_pathto_pos = getnextmoveposition_tactical();
-                    usepathfinding = 1;
-                } else {
-                    self.current_pathto_pos = getnextmoveposition_wander();
-                    usepathfinding = 1;
                 }
             }
-            if (isdefined(self.current_pathto_pos)) {
-                distancetogoalsq = distancesquared(self.current_pathto_pos, self.origin);
-                if (!onnavvolume || distancetogoalsq > 75 * 75) {
-                    if (distancetogoalsq > 2000 * 2000) {
-                        self setspeed(self.settings.defaultmovespeed * 2);
-                    }
-                    if (self function_a57c34b7(self.current_pathto_pos, 1, usepathfinding)) {
-                        if (isdefined(self.enemy)) {
-                            self playsound(#"veh_wasp_direction");
-                        } else {
-                            self playsound(#"veh_wasp_vox");
+            if (isdefined(getbackpoint)) {
+                self.current_pathto_pos = getbackpoint;
+                usepathfinding = 0;
+            } else {
+                stuckcount++;
+                if (stuckcount == 1) {
+                    stucklocation = self.origin;
+                } else if (stuckcount > 10) {
+                    /#
+                        v_box_min = (self.radius * -1, self.radius * -1, self.radius * -1);
+                        v_box_max = (self.radius, self.radius, self.radius);
+                        box(self.origin, v_box_min, v_box_max, self.angles[1], (1, 0, 0), 1, 0, 1000000);
+                        if (isdefined(stucklocation)) {
+                            line(stucklocation, self.origin, (1, 0, 0), 1, 1, 1000000);
                         }
-                        if (should_fly_forward(distancetogoalsq)) {
-                            self vehclearlookat();
-                            self notify(#"fire_stop");
-                            self.noshoot = 1;
-                        }
-                        self thread path_update_interrupt();
-                        self vehicle_ai::waittill_pathing_done();
-                        self.noshoot = undefined;
+                    #/
+                    self kill();
+                }
+            }
+        } else {
+            stuckcount = 0;
+            if (self.goalforced) {
+                goalpos = self getclosestpointonnavvolume(self.goalpos, 100);
+                if (isdefined(goalpos)) {
+                    self.current_pathto_pos = goalpos;
+                    usepathfinding = 1;
+                } else {
+                    self.current_pathto_pos = self.goalpos;
+                    usepathfinding = 0;
+                }
+            } else if (isdefined(self.enemy)) {
+                self.current_pathto_pos = getnextmoveposition_tactical();
+                usepathfinding = 1;
+            } else {
+                self.current_pathto_pos = getnextmoveposition_wander();
+                usepathfinding = 1;
+            }
+        }
+        if (isdefined(self.current_pathto_pos)) {
+            distancetogoalsq = distancesquared(self.current_pathto_pos, self.origin);
+            if (!onnavvolume || distancetogoalsq > 75 * 75) {
+                if (distancetogoalsq > 2000 * 2000) {
+                    self setspeed(self.settings.defaultmovespeed * 2);
+                }
+                if (self function_a57c34b7(self.current_pathto_pos, 1, usepathfinding)) {
+                    if (isdefined(self.enemy)) {
+                        self playsound(#"veh_wasp_direction");
+                    } else {
+                        self playsound(#"veh_wasp_vox");
                     }
+                    if (should_fly_forward(distancetogoalsq)) {
+                        self vehclearlookat();
+                        self notify(#"fire_stop");
+                        self.noshoot = 1;
+                    }
+                    self thread path_update_interrupt();
+                    self vehicle_ai::waittill_pathing_done();
+                    self.noshoot = undefined;
                 }
             }
         }
@@ -1015,7 +1014,7 @@ function state_combat_update(params) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa3c03c07, Offset: 0x4388
 // Size: 0x2e2
 function getnextmoveposition_wander() {
@@ -1025,7 +1024,7 @@ function getnextmoveposition_wander() {
     vehicle_ai::positionquery_filter_outofgoalanchor(queryresult);
     self.isonnav = queryresult.centeronnav;
     best_point = undefined;
-    best_score = 999999;
+    best_score = -999999;
     foreach (point in queryresult.data) {
         randomscore = randomfloatrange(0, 100);
         disttooriginscore = point.disttoorigin2d * 0.2;
@@ -1054,7 +1053,7 @@ function getnextmoveposition_wander() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x30d86fb0, Offset: 0x4678
 // Size: 0x107e
 function getnextmoveposition_tactical() {
@@ -1133,7 +1132,7 @@ function getnextmoveposition_tactical() {
     self vehicle_ai::positionquery_filter_engagementdist(queryresult, self.enemy, self.settings.engagementdistmin, self.settings.engagementdistmax);
     self vehicle_ai::positionquery_filter_engagementheight(queryresult, self.enemy, self.settings.engagementheightmin, self.settings.engagementheightmax);
     best_point = undefined;
-    best_score = 999999;
+    best_score = -999999;
     foreach (point in queryresult.data) {
         /#
             if (!isdefined(point._scoredebug)) {
@@ -1228,7 +1227,7 @@ function getnextmoveposition_tactical() {
 }
 
 // Namespace wasp/wasp
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x51b46b07, Offset: 0x5700
 // Size: 0xd2
 function drone_callback_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -1237,7 +1236,7 @@ function drone_callback_damage(einflictor, eattacker, idamage, idflags, smeansof
 }
 
 // Namespace wasp/wasp
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc6b1c6f5, Offset: 0x57e0
 // Size: 0x86
 function drone_allowfriendlyfiredamage(einflictor, eattacker, smeansofdeath, weapon) {
@@ -1248,7 +1247,7 @@ function drone_allowfriendlyfiredamage(einflictor, eattacker, smeansofdeath, wea
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe8a3cd7d, Offset: 0x5870
 // Size: 0xb4
 function wasp_driving(params) {
@@ -1263,7 +1262,7 @@ function wasp_driving(params) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdf35cc82, Offset: 0x5930
 // Size: 0x82
 function wasp_manage_camera_swaps() {
@@ -1275,7 +1274,7 @@ function wasp_manage_camera_swaps() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc8d8692e, Offset: 0x59c0
 // Size: 0x150
 function wasp_towers_on_load() {
@@ -1304,7 +1303,7 @@ function wasp_tower_init(str_tower_targetnames, n_spawn_count) {
 }
 
 // Namespace wasp/wasp
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xf7eeebee, Offset: 0x5c20
 // Size: 0x14e
 function private _wasp_tower_init(wasp_tower, n_spawn_count) {
@@ -1323,7 +1322,7 @@ function private _wasp_tower_init(wasp_tower, n_spawn_count) {
 }
 
 // Namespace wasp/wasp
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7bdba76f, Offset: 0x5d78
 // Size: 0x156
 function private wasp_tower_spawn(sp_wasp, n_spawn_count) {
@@ -1359,7 +1358,7 @@ function wasp_tower_launch(str_tower_targetnames, n_spawn_count) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x1ea6ddd, Offset: 0x5fd0
 // Size: 0x1b8
 function private _wasp_tower_launch(wasp_tower) {
@@ -1382,7 +1381,7 @@ function private _wasp_tower_launch(wasp_tower) {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf1eef697, Offset: 0x6190
 // Size: 0xca
 function function_bbe2568c(a_ents) {
@@ -1397,7 +1396,7 @@ function function_bbe2568c(a_ents) {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd7f928d, Offset: 0x6268
 // Size: 0x9c
 function private wasp_tower_wakeup() {

@@ -72,10 +72,10 @@ function play_siege(str_anim, n_rate = 1) {
     self function_cf6be307(str_anim, "default", n_rate, b_loop);
     if (b_loop) {
         self waittill(#"stop_siege_anim");
-    } else {
-        n_length = function_658484f7(str_anim);
-        wait(n_length);
+        return;
     }
+    n_length = function_658484f7(str_anim);
+    wait(n_length);
 }
 
 // Namespace animation/animation_shared
@@ -264,7 +264,7 @@ function _blend_out(animation, n_blend, n_rate, n_start_time) {
         n_time_left = n_server_length - n_current_time;
         if (n_time_left <= n_blend) {
             self stopanimscripted(n_blend);
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -323,13 +323,15 @@ function teleport(animation, v_origin_or_ent, v_angles_or_tag, time = 0) {
     v_ang = getstartangles(s.origin, s.angles, animation, time);
     if (isactor(self)) {
         self forceteleport(v_pos, v_ang);
-    } else if (isplayer(self)) {
+        return;
+    }
+    if (isplayer(self)) {
         self setorigin(v_pos);
         self setplayerangles(v_ang);
-    } else {
-        self.origin = v_pos;
-        self.angles = v_ang;
+        return;
     }
+    self.origin = v_pos;
+    self.angles = v_ang;
 }
 
 // Namespace animation/animation_shared
@@ -413,9 +415,9 @@ function set_death_anim(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_b
     if (isdefined(animation)) {
         self.skipdeath = 1;
         self thread _do_death_anim(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, n_blend_out, n_lerp);
-    } else {
-        self.skipdeath = 0;
+        return;
     }
+    self.skipdeath = 0;
 }
 
 // Namespace animation/animation_shared
@@ -485,9 +487,9 @@ function call_notetrack_handler(str_note, param1, param2) {
             args = handler[2];
             if (passnotifyparams) {
                 self [[ func ]](param1, param2);
-            } else {
-                util::single_func_argarray(self, func, args);
+                continue;
             }
+            util::single_func_argarray(self, func, args);
         }
     }
 }
@@ -533,9 +535,9 @@ function handle_notetracks(animation) {
         if (isdefined(str_note)) {
             if (str_note != "end" && str_note != "loop_end") {
                 self thread call_notetrack_handler(str_note, waitresult.param1, waitresult.param2);
-            } else {
-                return;
+                continue;
             }
+            return;
         }
     }
 }
@@ -548,16 +550,16 @@ function cracks_on(str_type) {
     switch (str_type) {
     case #"red":
         clientfield::set("cracks_on", 1);
-        break;
+        return;
     case #"green":
         clientfield::set("cracks_on", 3);
-        break;
+        return;
     case #"blue":
         clientfield::set("cracks_on", 2);
-        break;
+        return;
     case #"all":
         clientfield::set("cracks_on", 4);
-        break;
+        return;
     }
 }
 
@@ -569,16 +571,16 @@ function cracks_off(str_type) {
     switch (str_type) {
     case #"red":
         clientfield::set("cracks_off", 1);
-        break;
+        return;
     case #"green":
         clientfield::set("cracks_off", 3);
-        break;
+        return;
     case #"blue":
         clientfield::set("cracks_off", 2);
-        break;
+        return;
     case #"all":
         clientfield::set("cracks_off", 4);
-        break;
+        return;
     }
 }
 
@@ -590,9 +592,9 @@ function enable_headlook(b_on = 1) {
     if (isactor(self)) {
         if (b_on) {
             self lookatentity(level.players[0]);
-        } else {
-            self lookatentity();
+            return;
         }
+        self lookatentity();
     }
 }
 
@@ -604,9 +606,9 @@ function enable_headlook_notorso(b_on = 1) {
     if (isactor(self)) {
         if (b_on) {
             self lookatentity(level.players[0], 1);
-        } else {
-            self lookatentity();
+            return;
         }
+        self lookatentity();
     }
 }
 
@@ -629,22 +631,22 @@ function attach_weapon(weaponobject, tag = "tag_weapon_right") {
         } else {
             ai::gun_recall();
         }
-    } else {
-        if (!is_valid_weapon(weaponobject)) {
-            weaponobject = self.last_item;
+        return;
+    }
+    if (!is_valid_weapon(weaponobject)) {
+        weaponobject = self.last_item;
+    }
+    if (is_valid_weapon(weaponobject)) {
+        if (self.item != level.weaponnone) {
+            detach_weapon();
         }
-        if (is_valid_weapon(weaponobject)) {
-            if (self.item != level.weaponnone) {
-                detach_weapon();
-            }
-            /#
-                assert(isdefined(weaponobject.worldmodel));
-            #/
-            self attach(weaponobject.worldmodel, tag);
-            self setentityweapon(weaponobject);
-            self.gun_removed = undefined;
-            self.last_item = weaponobject;
-        }
+        /#
+            assert(isdefined(weaponobject.worldmodel));
+        #/
+        self attach(weaponobject.worldmodel, tag);
+        self setentityweapon(weaponobject);
+        self.gun_removed = undefined;
+        self.last_item = weaponobject;
     }
 }
 
@@ -655,16 +657,16 @@ function attach_weapon(weaponobject, tag = "tag_weapon_right") {
 function detach_weapon(weaponobject, tag = "tag_weapon_right") {
     if (isactor(self)) {
         ai::gun_remove();
-    } else {
-        if (!is_valid_weapon(weaponobject)) {
-            weaponobject = self.item;
-        }
-        if (is_valid_weapon(weaponobject)) {
-            self detach(weaponobject.worldmodel, tag);
-            self setentityweapon(level.weaponnone);
-        }
-        self.gun_removed = 1;
+        return;
     }
+    if (!is_valid_weapon(weaponobject)) {
+        weaponobject = self.item;
+    }
+    if (is_valid_weapon(weaponobject)) {
+        self detach(weaponobject.worldmodel, tag);
+        self setentityweapon(level.weaponnone);
+    }
+    self.gun_removed = 1;
 }
 
 // Namespace animation/animation_shared
@@ -697,24 +699,24 @@ function function_eb0aa7cf(n_pulse = 100, bone) {
     n_pulse = float(n_pulse);
     if (n_pulse == 0) {
         self physicslaunch(var_8ef160cb);
-    } else {
-        var_cc487a10 = self gettagangles(bone);
-        var_236556ec = vectorscale((0, 0, 1), 100);
-        color = (1, 0, 0);
-        if (isdefined(var_cc487a10)) {
-            var_236556ec = vectorscale(anglestoforward(var_cc487a10), n_pulse);
-            color = (0, 1, 0);
-        } else {
-            x_dir = math::cointoss() ? 1 : -1;
-            y_dir = math::cointoss() ? 1 : -1;
-            z_dir = math::cointoss() ? 1 : -1;
-            var_236556ec = vectorscale((x_dir, y_dir, z_dir), n_pulse);
-            color = (1, 1, 0);
-        }
-        self physicslaunch(var_8ef160cb, var_236556ec);
-        /#
-            util::draw_arrow_time(var_8ef160cb, var_8ef160cb + var_236556ec, color, 2);
-        #/
+        return;
     }
+    var_cc487a10 = self gettagangles(bone);
+    var_236556ec = vectorscale((0, 0, 1), 100);
+    color = (1, 0, 0);
+    if (isdefined(var_cc487a10)) {
+        var_236556ec = vectorscale(anglestoforward(var_cc487a10), n_pulse);
+        color = (0, 1, 0);
+    } else {
+        x_dir = math::cointoss() ? 1 : -1;
+        y_dir = math::cointoss() ? 1 : -1;
+        z_dir = math::cointoss() ? 1 : -1;
+        var_236556ec = vectorscale((x_dir, y_dir, z_dir), n_pulse);
+        color = (1, 1, 0);
+    }
+    self physicslaunch(var_8ef160cb, var_236556ec);
+    /#
+        util::draw_arrow_time(var_8ef160cb, var_8ef160cb + var_236556ec, color, 2);
+    #/
 }
 

@@ -78,9 +78,7 @@ function hellstorm_deploy(localclientnum, oldval, newval, bnewent, binitialsnap,
     if (newval) {
         self useanimtree("generic");
         self setanim(#"hash_4b6a7686ae8c1f16", 1);
-        goto LOC_000000be;
     }
-LOC_000000be:
 }
 
 // Namespace remotemissile/remotemissile_shared
@@ -114,9 +112,9 @@ function function_90b75549(localclientnum) {
 function function_3e76ad59(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self function_d309e55a("tag_brake_control_animate", 1);
-    } else {
-        self function_d309e55a("tag_brake_control_animate", 0);
+        return;
     }
+    self function_d309e55a("tag_brake_control_animate", 0);
 }
 
 // Namespace remotemissile/remotemissile_shared
@@ -240,13 +238,13 @@ function function_d260edc9(localclientnum) {
         if (isdefined(self.weapon) && self.weapon.statname == #"remote_missile") {
             function_a837926b(localclientnum, postfxbundle);
         }
-    } else {
-        if (isdefined(player.clouds_fx)) {
-            killfx(localclientnum, player.clouds_fx);
-        }
-        if (function_148ccc79(localclientnum, postfxbundle)) {
-            codestoppostfxbundlelocal(localclientnum, postfxbundle);
-        }
+        return;
+    }
+    if (isdefined(player.clouds_fx)) {
+        killfx(localclientnum, player.clouds_fx);
+    }
+    if (function_148ccc79(localclientnum, postfxbundle)) {
+        codestoppostfxbundlelocal(localclientnum, postfxbundle);
     }
 }
 
@@ -264,13 +262,13 @@ function function_c65b18ed(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!function_148ccc79(localclientnum, postfxbundle) && (!function_1cbf351b(localclientnum) || function_93e0f729(localclientnum) === function_27673a7(localclientnum)) && !shoutcaster::function_2e6e4ee0(localclientnum)) {
             function_a837926b(localclientnum, postfxbundle);
         }
-    } else {
-        if (isdefined(player.clouds_fx)) {
-            killfx(localclientnum, player.clouds_fx);
-        }
-        if (function_148ccc79(localclientnum, postfxbundle)) {
-            codestoppostfxbundlelocal(localclientnum, postfxbundle);
-        }
+        return;
+    }
+    if (isdefined(player.clouds_fx)) {
+        killfx(localclientnum, player.clouds_fx);
+    }
+    if (function_148ccc79(localclientnum, postfxbundle)) {
+        codestoppostfxbundlelocal(localclientnum, postfxbundle);
     }
 }
 

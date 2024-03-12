@@ -84,7 +84,9 @@ function private function_1685cc9b() {
         self waittill(#"hash_b0cc77b1ab98c08");
         if (self.var_8f30dd57 == level.var_519131bc) {
             self zm_trial_util::function_63060af4(1);
-        } else if (self.var_8f30dd57 < level.var_519131bc) {
+            continue;
+        }
+        if (self.var_8f30dd57 < level.var_519131bc) {
             self zm_trial_util::function_2190356a(self.var_8f30dd57);
         }
     }

@@ -53,7 +53,7 @@ function end_killcam() {
 }
 
 // Namespace killcam/killcam_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x14b2d212, Offset: 0x338
 // Size: 0x42
 function function_2f7579f(weaponnamehash) {
@@ -224,11 +224,8 @@ function deathcam(victim) {
         var_e1f8d08d = getentbynum(var_9a73aefe);
         if (isdefined(var_e1f8d08d)) {
             self setcurrentspectatorclient(var_e1f8d08d);
-            goto LOC_00000176;
         }
-    LOC_00000176:
     }
-LOC_00000176:
     self.sessionstate = "dead";
     self.spectatorclient = -1;
     self.killcamentity = -1;
@@ -730,29 +727,28 @@ function cancel_on_use() {
 function cancel_on_use_specific_button(pressingbuttonfunc, finishedfunc) {
     self endon(#"death_delay_finished", #"disconnect", #"game_ended");
     for (;;) {
-        for (;;) {
-            if (!self [[ pressingbuttonfunc ]]()) {
-                waitframe(1);
-                continue;
-            }
-            buttontime = 0;
-            while (self [[ pressingbuttonfunc ]]()) {
-                buttontime = buttontime + 0.05;
-                waitframe(1);
-            }
-            if (buttontime >= 0.5) {
-                continue;
-            }
-            buttontime = 0;
-            while (!self [[ pressingbuttonfunc ]]() && buttontime < 0.5) {
-                buttontime = buttontime + 0.05;
-                waitframe(1);
-            }
-            if (buttontime >= 0.5) {
-                continue;
-            }
-            self [[ finishedfunc ]]();
+        if (!self [[ pressingbuttonfunc ]]()) {
+            waitframe(1);
+            continue;
         }
+        buttontime = 0;
+        while (self [[ pressingbuttonfunc ]]()) {
+            buttontime = buttontime + 0.05;
+            waitframe(1);
+        }
+        if (buttontime >= 0.5) {
+            continue;
+        }
+        buttontime = 0;
+        while (!self [[ pressingbuttonfunc ]]() && buttontime < 0.5) {
+            buttontime = buttontime + 0.05;
+            waitframe(1);
+        }
+        if (buttontime >= 0.5) {
+            continue;
+        }
+        self [[ finishedfunc ]]();
+        return;
     }
 }
 

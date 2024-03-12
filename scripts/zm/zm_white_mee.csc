@@ -84,10 +84,10 @@ function function_5850fbee(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1 || !zm_utility::is_classic()) {
         var_17b2e8dd hide();
         var_f6289db0 hide();
-    } else {
-        var_17b2e8dd show();
-        var_f6289db0 show();
+        return;
     }
+    var_17b2e8dd show();
+    var_f6289db0 show();
 }
 
 // Namespace zm_white_mee/zm_white_mee

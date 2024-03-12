@@ -123,10 +123,10 @@ function dev_cac_camera(on) {
             setdvar(#"cg_thirdpersonangle", 185);
             setdvar(#"cg_thirdpersonrange", 138);
             setdvar(#"cg_fov", 20);
-        } else {
-            self setclientthirdperson(0);
-            setdvar(#"cg_fov", getdvarstring(#"cg_fov_default"));
+            return;
         }
+        self setclientthirdperson(0);
+        setdvar(#"cg_fov", getdvarstring(#"cg_fov_default"));
     #/
 }
 

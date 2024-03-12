@@ -66,11 +66,11 @@ function enable_laser(b_enable, n_index) {
         _get_turret_data(n_index).has_laser = 1;
         self laseron();
         self thread laser_death_watcher();
-    } else {
-        _get_turret_data(n_index).has_laser = undefined;
-        self laseroff();
-        self notify(#"laser_death_thread_stop");
+        return;
     }
+    _get_turret_data(n_index).has_laser = undefined;
+    self laseroff();
+    self notify(#"laser_death_thread_stop");
 }
 
 // Namespace turret/turret_shared
@@ -145,10 +145,10 @@ function enable_emp(b_enable, n_index) {
     if (b_enable) {
         _get_turret_data(n_index).can_emp = 1;
         self thread emp_watcher(n_index);
-    } else {
-        _get_turret_data(n_index).can_emp = undefined;
-        self notify(#"emp_thread_stop");
+        return;
     }
+    _get_turret_data(n_index).can_emp = undefined;
+    self notify(#"emp_thread_stop");
 }
 
 // Namespace turret/turret_shared
@@ -215,10 +215,10 @@ function _set_turret_needs_user(n_index, b_needs_user) {
     if (b_needs_user) {
         s_turret.b_needs_user = 1;
         self thread watch_for_flash_and_stun(n_index);
-    } else {
-        self notify(#"watch_for_flash_and_stun_end");
-        s_turret.b_needs_user = 0;
+        return;
     }
+    self notify(#"watch_for_flash_and_stun_end");
+    s_turret.b_needs_user = 0;
 }
 
 // Namespace turret/turret_shared
@@ -280,9 +280,9 @@ function set_on_target_angle(n_angle, n_index) {
     if (!isdefined(n_angle)) {
         if (s_turret.str_guidance_type != "none") {
             n_angle = 10;
-        } else {
-            n_angle = 2;
+            return;
         }
+        n_angle = 2;
     }
 }
 
@@ -376,9 +376,9 @@ function clear_target(n_index) {
     s_turret.e_target = undefined;
     if (!isdefined(n_index) || n_index == 0) {
         self turretcleartarget(0);
-    } else {
-        self turretcleartarget(n_index);
+        return;
     }
+    self turretcleartarget(n_index);
 }
 
 // Namespace turret/turret_shared
@@ -493,9 +493,9 @@ function _shoot_turret_at_target(e_target, n_time, v_offset, n_index, b_just_onc
         _waittill_turret_on_target(e_target, n_index);
         if (b_just_once) {
             fire(n_index);
-        } else {
-            fire_for_time(n_time, n_index);
+            return;
         }
+        fire_for_time(n_time, n_index);
     }
 }
 
@@ -508,10 +508,10 @@ function _waittill_turret_on_target(e_target, n_index) {
         wait(isdefined(self.waittill_turret_on_target_delay) ? self.waittill_turret_on_target_delay : 0.5);
         if (!isdefined(n_index) || n_index == 0) {
             self waittill(#"turret_on_target");
-        } else {
-            self waittill(#"gunner_turret_on_target");
+            continue;
         }
-    } while(isdefined(e_target) && !can_hit_target(e_target, n_index));
+        self waittill(#"gunner_turret_on_target");
+    } while (isdefined(e_target) && !can_hit_target(e_target, n_index));
 }
 
 // Namespace turret/turret_shared
@@ -533,9 +533,9 @@ function enable(n_index, b_user_required, v_offset) {
         self notify("turret_enabled" + _index(n_index));
         if (isdefined(b_user_required) && !b_user_required) {
             _set_turret_needs_user(n_index, 0);
-        } else {
-            _set_turret_needs_user(n_index, 1);
+            return;
         }
+        _set_turret_needs_user(n_index, 1);
     }
 }
 
@@ -579,11 +579,11 @@ function pause(time, n_index) {
     }
     if (isdefined(s_turret.pause)) {
         s_turret.pause_time = s_turret.pause_time + time;
-    } else {
-        s_turret.pause = 1;
-        s_turret.pause_time = time;
-        stop(n_index);
+        return;
     }
+    s_turret.pause = 1;
+    s_turret.pause_time = time;
+    stop(n_index);
 }
 
 // Namespace turret/turret_shared
@@ -806,9 +806,8 @@ function _user_check(n_index) {
     if (does_need_user(n_index)) {
         b_has_user = does_have_user(n_index);
         return b_has_user;
-    } else {
-        return 1;
     }
+    return 1;
 }
 
 // Namespace turret/turret_shared
@@ -1191,11 +1190,8 @@ function track_lens_flare() {
                     e_target util::waittill_player_not_looking_at(self gettagorigin("TAG_LASER"));
                 }
                 self toggle_lensflare(0);
-                goto LOC_0000014e;
             }
-        LOC_0000014e:
         }
-    LOC_0000014e:
         wait(0.5);
     }
 }

@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace weaponobjects/weaponobjects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf62dd5aa, Offset: 0x170
 // Size: 0x84
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace weaponobjects/weaponobjects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2ee9978, Offset: 0x200
 // Size: 0x112
 function setupscriptmovercompassicons() {
@@ -44,7 +44,7 @@ function setupscriptmovercompassicons() {
 }
 
 // Namespace weaponobjects/weaponobjects
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b5cbcd0, Offset: 0x320
 // Size: 0x7a
 function setupmissilecompassicons() {

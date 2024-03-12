@@ -132,12 +132,12 @@ function function_13febd4b(e_holder, w_item) {
         level flag::set(#"hash_7d230fa8f283c105");
         level zm_ui_inventory::function_7df6bb60("zm_orange_zipquest_crank_1", 1);
         self playsound(#"hash_3ec95ad193e1c377");
-        break;
+        return;
     case #"hash_7ca6d96b2bfb822c":
         level.var_1537d233++;
         level zm_ui_inventory::function_7df6bb60("zm_orange_zipquest_crank_2", 1);
         self playsound(#"hash_3ec95ad193e1c377");
-        break;
+        return;
     }
 }
 
@@ -164,16 +164,18 @@ function function_29c3aabf(e_player) {
             self sethintstring(#"hash_3d93f7957f6855e5");
             return 1;
         }
-    } else if (level.var_1537d233 <= 0) {
+        return;
+    }
+    if (level.var_1537d233 <= 0) {
         self sethintstring(#"hash_63c5fccb2c10781b");
         return 1;
-    } else if (function_8b1a219a()) {
+    }
+    if (function_8b1a219a()) {
         self sethintstring(#"hash_2e2afc1b8f8fa0eb");
         return 1;
-    } else {
-        self sethintstring(#"hash_46db6b04cc24e375");
-        return 1;
     }
+    self sethintstring(#"hash_46db6b04cc24e375");
+    return 1;
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
@@ -380,17 +382,18 @@ function function_e82679f8(e_player) {
     if (isdefined(e_player.var_7b2ac934) && e_player.var_7b2ac934) {
         self sethintstring(#"hash_44fe179e1e8f80ad");
         return 1;
-    } else if (e_player.var_bf8dfaf4 || level flag::get("fasttravel_disabled") && !isinarray(level.var_4a04c327, s_zipline_use.str_location) || e_player util::is_ads() || e_player.var_7dc2d507 === 1) {
+    }
+    if (e_player.var_bf8dfaf4 || level flag::get("fasttravel_disabled") && !isinarray(level.var_4a04c327, s_zipline_use.str_location) || e_player util::is_ads() || e_player.var_7dc2d507 === 1) {
         return 0;
-    } else if (function_8b1a219a()) {
+    }
+    if (function_8b1a219a()) {
         zone = zm_orange_zones::function_ab7f70b9(undefined, s_zipline_use.str_destination);
         self sethintstring(#"hash_1c90be4081261de3", zone);
         return 1;
-    } else {
-        zone = zm_orange_zones::function_ab7f70b9(undefined, s_zipline_use.str_destination);
-        self sethintstring(#"hash_498ce6b1275c33fd", zone);
-        return 1;
     }
+    zone = zm_orange_zones::function_ab7f70b9(undefined, s_zipline_use.str_destination);
+    self sethintstring(#"hash_498ce6b1275c33fd", zone);
+    return 1;
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
@@ -399,7 +402,6 @@ function function_e82679f8(e_player) {
 // Size: 0x2a8
 function function_d41f7e0e() {
     level endon(#"end_game");
-LOC_00000028:
     while (1) {
         s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
@@ -426,24 +428,24 @@ LOC_00000028:
         case #"aft_to_beach":
             if (!level flag::get(#"hash_7def3e555eba842c")) {
                 continue;
+            } else {
+                break;
             }
-            break;
         case #"lighthouse_to_fore":
-        LOC_00000188:
             if (!level flag::get(#"hash_e29d662bb90e4bc")) {
                 continue;
+            } else {
+                break;
             }
-            break;
         case #"station_to_sun_deck":
-        LOC_000001b8:
             if (!level flag::get(#"hash_7d9f8ec3cb9af87e")) {
                 continue;
+            } else {
+                break;
             }
-            break;
         case #"dock":
         case #"lighthouse_to_facility":
         case #"fore":
-        LOC_000001e8:
             if (!level flag::get(#"hash_7d9f8ec3cb9af87e")) {
                 continue;
             } else {
@@ -588,12 +590,10 @@ function function_fc9707f4(vnd_start, s_zipline_use) {
         var_2e07b8ff = self getweaponslistprimaries();
         if (isdefined(var_2e07b8ff) && var_2e07b8ff.size > 0) {
             self switchtoweapon(var_2e07b8ff[0]);
-            var_5a7831c4 = 0;
-            while (!var_5a7831c4) {
+            for (var_5a7831c4 = 0; !var_5a7831c4; var_5a7831c4 = 1) {
                 waitframe(1);
                 w_current = self getcurrentweapon();
                 if (w_current == var_2e07b8ff[0]) {
-                    var_5a7831c4 = 1;
                 }
             }
         }

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace teamset_allies/teamset_allies
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8e78520, Offset: 0x180
 // Size: 0xc4
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace teamset_allies/teamset_allies
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a030325, Offset: 0x250
 // Size: 0x13a
 function init(team) {

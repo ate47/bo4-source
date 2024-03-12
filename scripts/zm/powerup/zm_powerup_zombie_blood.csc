@@ -66,7 +66,9 @@ function toggle_player_zombie_blood_fx(localclientnum, oldval, newval, bnewent, 
             self playsound(localclientnum, #"hash_7a3f11d83a3345c7");
             self.var_f83eefc6 = self playloopsound(#"hash_e994a747679fc33");
         }
-    } else if (isdefined(self.var_f83eefc6)) {
+        return;
+    }
+    if (isdefined(self.var_f83eefc6)) {
         self playsound(localclientnum, #"hash_5460a8de45586842");
         self stoploopsound(self.var_f83eefc6);
     }

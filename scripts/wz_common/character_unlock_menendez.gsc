@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_menendez/character_unlock_menendez
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x711e648a, Offset: 0x100
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_menendez/character_unlock_menendez
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x942365d2, Offset: 0x140
 // Size: 0x5c
 function function_2613aeec(enabled) {
@@ -37,7 +37,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_menendez/character_unlock_menendez
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7ec4c15, Offset: 0x1a8
 // Size: 0x1d4
 function on_player_killed() {
@@ -74,7 +74,7 @@ function on_player_killed() {
 }
 
 // Namespace character_unlock_menendez/character_unlock_menendez
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe8a2dd15, Offset: 0x388
 // Size: 0x24
 function private function_15d026c0() {
@@ -82,7 +82,7 @@ function private function_15d026c0() {
 }
 
 // Namespace character_unlock_menendez/character_unlock_menendez
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xe3cba42c, Offset: 0x3b8
 // Size: 0xb4
 function private function_b00fd65d() {

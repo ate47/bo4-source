@@ -360,9 +360,9 @@ function waitremotecontrol() {
         } else {
             dart waittill(#"remote_weapon_end");
         }
-    } else {
-        dart waittill(#"dart_left");
+        return;
     }
+    dart waittill(#"dart_left");
 }
 
 // Namespace dart/dart
@@ -470,9 +470,8 @@ function darpredictedcollision() {
         self notify(#"veh_collision", waitresult);
         if (waitresult.stype == "glass") {
             continue;
-        } else {
-            break;
         }
+        return;
     }
 }
 
@@ -494,7 +493,7 @@ function watchcollision() {
         dart setspeedimmediate(0);
         dart vehicle_death::death_fx();
         dart thread stop_remote_weapon();
-        break;
+        return;
     }
 }
 

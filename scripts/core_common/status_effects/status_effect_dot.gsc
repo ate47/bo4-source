@@ -166,16 +166,16 @@ function private function_ae0405e2(applicant) {
     if (self.var_82e80202 == self.var_8df76e2f) {
         self.var_82e80202 = 0;
         self dot_report(applicant);
-    } else {
-        self.var_82e80202++;
-        if (isdefined(self.owner)) {
-            self.owner.var_dbffaa32 = undefined;
-        }
-        if (isdefined(applicant) && (!isdefined(self.owner) || self.owner != applicant)) {
-            applicant.var_dbffaa32 = undefined;
-            if (isdefined(applicant.owner) && isplayer(applicant.owner)) {
-                applicant.owner.var_dbffaa32 = undefined;
-            }
+        return;
+    }
+    self.var_82e80202++;
+    if (isdefined(self.owner)) {
+        self.owner.var_dbffaa32 = undefined;
+    }
+    if (isdefined(applicant) && (!isdefined(self.owner) || self.owner != applicant)) {
+        applicant.var_dbffaa32 = undefined;
+        if (isdefined(applicant.owner) && isplayer(applicant.owner)) {
+            applicant.owner.var_dbffaa32 = undefined;
         }
     }
 }

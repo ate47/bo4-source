@@ -97,7 +97,9 @@ function private function_25c6cba0(entity, origin) {
         distance_sq = distancesquared(origin, players[i] getcentroid());
         if (isdefined(entity.b_in_water) && entity.b_in_water && isdefined(players[i].b_in_water) && players[i].b_in_water && distance_sq <= 250000) {
             players[i] status_effect::status_effect_apply(level.var_f8eb6737, undefined, players[i], 0);
-        } else if (distance_sq <= 32400) {
+            continue;
+        }
+        if (distance_sq <= 32400) {
             players[i] clientfield::increment_to_player("zombie_electric_burst_postfx_clientfield");
         }
     }

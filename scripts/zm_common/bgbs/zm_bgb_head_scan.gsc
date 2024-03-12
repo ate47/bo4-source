@@ -70,7 +70,6 @@ function function_ce76fa9f(inflictor, attacker, damage, flags, meansofdeath, wea
         break;
     default:
         return damage;
-        break;
     }
     return damage;
 }

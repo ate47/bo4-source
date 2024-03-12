@@ -349,7 +349,6 @@ class phalanx {
                 return array((-32, -96, 0), (32, -96, 0));
             case #"phalanx_tier3":
                 return array();
-                break;
             }
             break;
         case #"phalanx_reverse_wedge":
@@ -360,7 +359,6 @@ class phalanx {
                 return array(vectorscale((0, -1, 0), 96));
             case #"phalanx_tier3":
                 return array();
-                break;
             }
             break;
         case #"phalanx_diagonal_left":
@@ -371,7 +369,6 @@ class phalanx {
                 return array(vectorscale((1, 0, 0), 64), (16, -64, 0), (-48, -128, 0), (-112, -192, 0));
             case #"phalanx_tier3":
                 return array();
-                break;
             }
             break;
         case #"phalanx_diagonal_right":
@@ -382,7 +379,6 @@ class phalanx {
                 return array(vectorscale((-1, 0, 0), 64), (-16, -64, 0), (48, -128, 0), (112, -192, 0));
             case #"phalanx_tier3":
                 return array();
-                break;
             }
             break;
         case #"phalanx_forward":
@@ -393,7 +389,6 @@ class phalanx {
                 return array((-32, -64, 0), (32, -64, 0), (96, -64, 0), (160, -64, 0));
             case #"phalanx_tier3":
                 return array();
-                break;
             }
             break;
         case #"phalanx_column":
@@ -404,7 +399,6 @@ class phalanx {
                 return array(vectorscale((0, -1, 0), 128), (-64, -128, 0), vectorscale((0, -1, 0), 192), (-64, -192, 0));
             case #"phalanx_tier3":
                 return array(vectorscale((1, 0, 0), 64), vectorscale((1, -1, 0), 64), (64, -128, 0), (64, -192, 0));
-                break;
             }
             break;
         case #"phalanx_column_right":
@@ -415,7 +409,6 @@ class phalanx {
                 return array();
             case #"phalanx_tier3":
                 return array();
-                break;
             }
             break;
         default:

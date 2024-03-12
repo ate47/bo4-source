@@ -42,12 +42,12 @@ function add_nationality_names(str_nationality) {
     switch (str_nationality) {
     case #"american":
         american_names();
-        break;
+        return;
     default:
         /#
             assertmsg("Miller" + str_nationality);
         #/
-        break;
+        return;
     }
 }
 
@@ -285,56 +285,57 @@ function get_name_for_nationality(nationality) {
     }
     if (isdefined(level._override_rank_func)) {
         self [[ level._override_rank_func ]](lastname);
-    } else if (isdefined(self.airank) && self.airank == "none") {
+        return;
+    }
+    if (isdefined(self.airank) && self.airank == "none") {
         self.propername = lastname;
         return;
-    } else {
-        rank = randomint(100);
-        if (nationality == "seal") {
-            if (rank > 20) {
-                fullname = "PO " + lastname;
-                self.airank = "petty officer";
-            } else if (rank > 10) {
-                fullname = "CPO " + lastname;
-                self.airank = "chief petty officer";
-            } else {
-                fullname = "Lt. " + lastname;
-                self.airank = "lieutenant";
-            }
-        } else if (nationality == "navy") {
-            if (rank > 60) {
-                fullname = "SN " + lastname;
-                self.airank = "seaman";
-            } else if (rank > 20) {
-                fullname = "PO " + lastname;
-                self.airank = "petty officer";
-            } else {
-                fullname = "CPO " + lastname;
-                self.airank = "chief petty officer";
-            }
-        } else if (nationality == "police") {
-            fullname = "Officer " + lastname;
-            self.airank = "police officer";
-        } else if (nationality == "agent") {
-            fullname = "Agent " + lastname;
-            self.airank = "special agent";
-        } else if (nationality == "security") {
-            fullname = "Officer " + lastname;
-        } else if (nationality == "singapore_police") {
-            fullname = "Officer " + lastname;
-            self.airank = "police officer";
-        } else if (rank > 20) {
-            fullname = "Pvt. " + lastname;
-            self.airank = "private";
-        } else if (rank > 10) {
-            fullname = "Cpl. " + lastname;
-            self.airank = "corporal";
-        } else {
-            fullname = "Sgt. " + lastname;
-            self.airank = "sergeant";
-        }
-        self.propername = fullname;
     }
+    rank = randomint(100);
+    if (nationality == "seal") {
+        if (rank > 20) {
+            fullname = "PO " + lastname;
+            self.airank = "petty officer";
+        } else if (rank > 10) {
+            fullname = "CPO " + lastname;
+            self.airank = "chief petty officer";
+        } else {
+            fullname = "Lt. " + lastname;
+            self.airank = "lieutenant";
+        }
+    } else if (nationality == "navy") {
+        if (rank > 60) {
+            fullname = "SN " + lastname;
+            self.airank = "seaman";
+        } else if (rank > 20) {
+            fullname = "PO " + lastname;
+            self.airank = "petty officer";
+        } else {
+            fullname = "CPO " + lastname;
+            self.airank = "chief petty officer";
+        }
+    } else if (nationality == "police") {
+        fullname = "Officer " + lastname;
+        self.airank = "police officer";
+    } else if (nationality == "agent") {
+        fullname = "Agent " + lastname;
+        self.airank = "special agent";
+    } else if (nationality == "security") {
+        fullname = "Officer " + lastname;
+    } else if (nationality == "singapore_police") {
+        fullname = "Officer " + lastname;
+        self.airank = "police officer";
+    } else if (rank > 20) {
+        fullname = "Pvt. " + lastname;
+        self.airank = "private";
+    } else if (rank > 10) {
+        fullname = "Cpl. " + lastname;
+        self.airank = "corporal";
+    } else {
+        fullname = "Sgt. " + lastname;
+        self.airank = "sergeant";
+    }
+    self.propername = fullname;
 }
 
 // Namespace name/name_shared
@@ -344,9 +345,8 @@ function get_name_for_nationality(nationality) {
 function is_seal_member(str_classname) {
     if (issubstr(str_classname, "_seal_")) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace name/name_shared
@@ -356,9 +356,8 @@ function is_seal_member(str_classname) {
 function is_navy_member(str_classname) {
     if (issubstr(str_classname, "_navy_")) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace name/name_shared
@@ -368,9 +367,8 @@ function is_navy_member(str_classname) {
 function is_police_member(str_classname) {
     if (issubstr(str_classname, "_lapd_") || issubstr(str_classname, "_swat_")) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace name/name_shared
@@ -391,9 +389,8 @@ function is_security_member(str_classname) {
 function is_special_agent_member(str_classname) {
     if (issubstr(str_classname, "_sstactical_")) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace name/name_shared
@@ -412,28 +409,28 @@ function getrankfromname(name) {
     switch (shortrank) {
     case #"hash_61c7340e20b9c509":
         self.airank = "private";
-        break;
+        return;
     case #"hash_5827a20dd30caea2":
         self.airank = "private";
-        break;
+        return;
     case #"hash_2116fd90943206f0":
         self.airank = "corporal";
-        break;
+        return;
     case #"hash_1b74eb18c9f1846d":
         self.airank = "sergeant";
-        break;
+        return;
     case #"hash_12acac191dfe13b9":
         self.airank = "lieutenant";
-        break;
+        return;
     case #"hash_21327d909449a828":
         self.airank = "captain";
-        break;
+        return;
     default:
         /#
             println("Agent " + shortrank + "<unknown string>");
         #/
         self.airank = "private";
-        break;
+        return;
     }
 }
 

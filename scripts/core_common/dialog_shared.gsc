@@ -274,11 +274,15 @@ function water_vox() {
                     self.voxemergebreath = 1;
                 }
             }
-        } else if (self.voxdrowning) {
+            continue;
+        }
+        if (self.voxdrowning) {
             self thread play_dialog("exertEmergeGasp", 20, mpdialog_value("playerExertBuffer", 0));
             self.voxdrowning = 0;
             self.voxemergebreath = 0;
-        } else if (self.voxemergebreath) {
+            continue;
+        }
+        if (self.voxemergebreath) {
             self thread play_dialog("exertEmergeBreath", 20, mpdialog_value("playerExertBuffer", 0));
             self.voxemergebreath = 0;
         }
@@ -631,10 +635,10 @@ function heavy_weapon_success_reaction() {
         }
         distsq = distancesquared(self.origin, player.origin);
         if (distsq > allyradiussq) {
-            break;
+            return;
         }
         player play_dialog("heroWeaponSuccessReaction", 1);
-        break;
+        return;
     }
 }
 
@@ -733,7 +737,6 @@ function get_death_vox(weapon, meansofdeath) {
             return "exertDeathDrowned";
         case #"mod_dot_self":
             return "exertDeathDrowned";
-            break;
         }
     }
     if (isdefined(weapon) && meansofdeath !== "MOD_MELEE_WEAPON_BUTT") {
@@ -745,7 +748,6 @@ function get_death_vox(weapon, meansofdeath) {
             return "exertDeathBurned";
         case #"hero_lightninggun_arc":
             return "exertDeathElectrocuted";
-            break;
         }
     }
     return "exertDeath";
@@ -924,12 +926,10 @@ function get_player_dialog_alias(dialogkey) {
 function count_keys(&keycounts, bundle, dialogkey) {
     i = 0;
     field = dialogkey + i;
-    fieldvalue = bundle.(field);
-    while (isdefined(fieldvalue)) {
+    for (fieldvalue = bundle.(field); isdefined(fieldvalue); fieldvalue = bundle.(field)) {
         aliasarray[i] = fieldvalue;
         i++;
         field = dialogkey + i;
-        fieldvalue = bundle.(field);
     }
     if (!isdefined(keycounts[bundle.name])) {
         keycounts[bundle.name] = [];
@@ -952,9 +952,8 @@ function get_random_key(dialogkey) {
     keycount = level.var_f53efe5c[bundlename][dialogkey];
     if (keycount > 0) {
         return (dialogkey + randomint(keycount));
-    } else {
-        return (dialogkey + 0);
     }
+    return dialogkey + 0;
 }
 
 // Namespace dialog_shared/dialog_shared
@@ -1550,7 +1549,6 @@ function response_key() {
             return "<unknown string>";
         case #"trapper":
             return "<unknown string>";
-            break;
         }
         return "<unknown string>";
     #/
@@ -1569,7 +1567,7 @@ function play_conv_self_other() {
         foreach (player in players) {
             if (player != self && isalive(player)) {
                 player play_test_dialog("<unknown string>" + self response_key() + num);
-                break;
+                return;
             }
         }
     #/
@@ -1613,7 +1611,7 @@ function play_conv_other_other() {
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
                 player play_test_dialog("<unknown string>" + firstplayer response_key() + num);
-                break;
+                return;
             }
         }
     #/

@@ -88,16 +88,16 @@ function function_b6a3df03() {
     switch (var_501f80dc) {
     case #"hash_3c428518d68f7f04":
         var_e84f96c4.var_374f0c4e = struct::get("scene_shower_to_warden_house", "script_string");
-        break;
+        return;
     case #"hash_1e3fbddd6a0b1088":
         var_e84f96c4.var_374f0c4e = struct::get("scene_warden_house_to_shower", "script_string");
-        break;
+        return;
     case #"hash_5422169ef482ba21":
         var_e84f96c4.var_374f0c4e = struct::get("scene_cafeteria_to_west_side", "script_string");
-        break;
+        return;
     case #"hash_40b0def60178b997":
         var_e84f96c4.var_374f0c4e = struct::get("scene_west_side_to_cafeteria", "script_string");
-        break;
+        return;
     }
 }
 
@@ -367,7 +367,9 @@ function function_429e121c(var_5cc91e3c, var_8d5d092c, var_67cba496, var_374f0c4
             }
         }
         level thread function_eef4fa8c(var_8d5d092c, var_418e2265);
-    } else if (isplayer(var_418e2265)) {
+        return;
+    }
+    if (isplayer(var_418e2265)) {
         var_418e2265.var_a5a050c1 = undefined;
     }
 }

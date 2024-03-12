@@ -199,11 +199,11 @@ function function_a60cb756(var_b4666218, var_e9f8c8f3) {
                 if (isdefined(var_e9f8c8f3) && var_e9f8c8f3) {
                     self.var_d6723cbc = self enableinvulnerability();
                 }
-            } else {
-                self val::reset(#"zm_grappler", "ignoreme");
-                if (!(isdefined(self.var_d6723cbc) && self.var_d6723cbc) && isdefined(var_e9f8c8f3) && var_e9f8c8f3) {
-                    self disableinvulnerability();
-                }
+                return;
+            }
+            self val::reset(#"zm_grappler", "ignoreme");
+            if (!(isdefined(self.var_d6723cbc) && self.var_d6723cbc) && isdefined(var_e9f8c8f3) && var_e9f8c8f3) {
+                self disableinvulnerability();
             }
         }
     }

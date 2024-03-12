@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace weapons/weapons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefd6a036, Offset: 0xd8
 // Size: 0x34
 function __init__() {
@@ -84,7 +84,9 @@ function bestweapon_get() {
                 best_key = key;
                 most_kills = kill_count;
                 most_spawns = spawned_with;
-            } else if (kill_count == most_kills && spawned_with > most_spawns) {
+                continue;
+            }
+            if (kill_count == most_kills && spawned_with > most_spawns) {
                 best_index = index;
                 best_key = key;
                 most_kills = kill_count;

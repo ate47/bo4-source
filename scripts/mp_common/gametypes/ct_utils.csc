@@ -72,9 +72,9 @@ function vision_pulse(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         self function_116b95e5(#"hash_3b4e3282e8a33852", #"hash_2efccfad2b32081a", 2500);
         self function_116b95e5(#"hash_3b4e3282e8a33852", #"hash_33856c0e283a93e2", 8);
         self function_116b95e5(#"hash_3b4e3282e8a33852", #"pulse width", 200);
-    } else {
-        self postfx::stoppostfxbundle(#"hash_3b4e3282e8a33852");
+        return;
     }
+    self postfx::stoppostfxbundle(#"hash_3b4e3282e8a33852");
 }
 
 // Namespace ct_utils/ct_utils
@@ -85,10 +85,10 @@ function screen_blur(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     self endon(#"death");
     if (newval > 0) {
         self postfx::playpostfxbundle(#"pstfx_gaussian_blur");
-    } else {
-        self postfx::stoppostfxbundle(#"pstfx_gaussian_blur");
-        self postfx::stoppostfxbundle(#"pstfx_gaussian_blur");
+        return;
     }
+    self postfx::stoppostfxbundle(#"pstfx_gaussian_blur");
+    self postfx::stoppostfxbundle(#"pstfx_gaussian_blur");
 }
 
 // Namespace ct_utils/ct_utils
@@ -101,39 +101,39 @@ function area_arrows_specialist(localclientnum, oldval, newval, bnewent, binitia
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "nomad_area_4";
         level.var_8c3d6a40 = 1;
-        break;
+        return;
     case 2:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "crash_area_";
-        break;
+        return;
     case 3:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         level.var_84c5e66d = "seraph_area_";
-        break;
+        return;
     case 4:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "firebreak_tut_finale_arrow";
         level.var_8c3d6a40 = 1;
-        break;
+        return;
     case 5:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         level.var_84c5e66d = "ajax_enemy_arrows";
         level.var_8c3d6a40 = 1;
-        break;
+        return;
     case 6:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "torque_tut_finale_arrow";
         level.var_8c3d6a40 = 1;
-        break;
+        return;
     case 7:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "hardpoint_chevrons";
         level.var_8c3d6a40 = 1;
-        break;
+        return;
     default:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][0];
         level.var_84c5e66d = "area_";
-        break;
+        return;
     }
 }
 
@@ -159,9 +159,9 @@ function area_arrows(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
         level.var_6158c164 = [];
         level.var_c39096f2 = struct::get_array(var_b29c151c, "targetname");
         if (level.var_c39096f2.size > 0) {
-            foreach (var_b76d09c9 in level.var_c39096f2) {
-                forward = anglestoforward(var_b76d09c9.angles);
-                fxhandle = playfx(localclientnum, level.var_57b466e9, var_b76d09c9.origin, forward);
+            foreach (s_arrow in level.var_c39096f2) {
+                forward = anglestoforward(s_arrow.angles);
+                fxhandle = playfx(localclientnum, level.var_57b466e9, s_arrow.origin, forward);
                 level.var_6158c164[level.var_6158c164.size] = fxhandle;
             }
         }
@@ -179,9 +179,9 @@ function function_59ace802(localclientnum) {
                 stopfx(localclientnum, var_25a339e5);
             }
         }
-    } else {
-        level.var_6158c164 = [];
+        return;
     }
+    level.var_6158c164 = [];
 }
 
 // Namespace ct_utils/ct_utils
@@ -216,9 +216,9 @@ function collisionbox_render(localclientnum, oldval, newval, bnewent, binitialsn
         self mapshaderconstant(localclientnum, 0, "scriptVector3", 1.5, 1, 1, 0.2);
         self mapshaderconstant(localclientnum, 0, "scriptVector4", 0.6, 0, 0, 0);
         self thread function_3827fca4(localclientnum);
-    } else {
-        self stoprenderoverridebundle(#"hash_46b7dcb7342c64a2");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_46b7dcb7342c64a2");
 }
 
 // Namespace ct_utils/ct_utils
@@ -241,9 +241,9 @@ function highlight_sphere(localclientnum, oldval, newval, bnewent, binitialsnap,
         e_player function_116b95e5(#"postfx_hitzone", #"repeat", var_ada6226c);
         e_player function_116b95e5(#"postfx_hitzone", #"normal", level.var_e8dfdfe5[0], level.var_e8dfdfe5[1], level.var_e8dfdfe5[2]);
         level.var_e8dfdfe5 = undefined;
-    } else {
-        e_player postfx::stoppostfxbundle(#"postfx_hitzone");
+        return;
     }
+    e_player postfx::stoppostfxbundle(#"postfx_hitzone");
 }
 
 // Namespace ct_utils/ct_utils
@@ -253,9 +253,9 @@ function highlight_sphere(localclientnum, oldval, newval, bnewent, binitialsnap,
 function highlight_sphere_normal(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         level.var_e8dfdfe5 = self.origin;
-    } else {
-        level.var_e8dfdfe5 = undefined;
+        return;
     }
+    level.var_e8dfdfe5 = undefined;
 }
 
 // Namespace ct_utils/ct_utils
@@ -286,8 +286,8 @@ function postfx_hitzone(localclientnum, oldval, newval, bnewent, binitialsnap, f
         e_player thread postfx::playpostfxbundle(#"postfx_hitzone");
         e_player function_116b95e5(#"postfx_hitzone", #"hash_5c3f421a5caa272e", self.origin[0], self.origin[1], self.origin[2]);
         e_player function_116b95e5(#"postfx_hitzone", #"hash_62391b4192aefdd1", 64);
-    } else {
-        e_player postfx::stoppostfxbundle(#"postfx_hitzone");
+        return;
     }
+    e_player postfx::stoppostfxbundle(#"postfx_hitzone");
 }
 

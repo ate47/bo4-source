@@ -96,10 +96,8 @@ function get_active_vortex_count() {
 // Size: 0x68
 function private stop_vortex_fx_after_time(vortex_fx_handle, vortex_position, vortex_explosion_fx, n_vortex_time) {
     n_starttime = gettime();
-    n_curtime = gettime() - n_starttime;
-    while (n_curtime < n_vortex_time) {
+    for (n_curtime = gettime() - n_starttime; n_curtime < n_vortex_time; n_curtime = gettime() - n_starttime) {
         waitframe(1);
-        n_curtime = gettime() - n_starttime;
     }
 }
 
@@ -168,7 +166,9 @@ function start_timed_vortex(effect_version, v_vortex_origin, n_vortex_radius, n_
                     params.weapon = weapon;
                     ai_zombie vehicle_ai::set_state("idgun_death", params);
                 }
-            } else if (!(isdefined(ai_zombie.interdimensional_gun_kill) && ai_zombie.interdimensional_gun_kill) && !ai_zombie.ignorevortices) {
+                continue;
+            }
+            if (!(isdefined(ai_zombie.interdimensional_gun_kill) && ai_zombie.interdimensional_gun_kill) && !ai_zombie.ignorevortices) {
                 ai_zombie.damageorigin = v_vortex_origin;
                 if (isdefined(should_shield) && should_shield) {
                     ai_zombie.allowdeath = 0;
@@ -210,9 +210,9 @@ function vortex_z_extension(a_ai_zombies, v_vortex_origin, n_vortex_radius) {
     while (i < a_ai_zombies_extended_filtered.size) {
         if (a_ai_zombies_extended_filtered[i].origin[2] < v_vortex_origin[2] && bullettracepassed(a_ai_zombies_extended_filtered[i].origin + vectorscale((0, 0, 1), 5), v_vortex_origin + vectorscale((0, 0, 1), 20), 0, self, undefined, 0, 0)) {
             i++;
-        } else {
-            arrayremovevalue(a_ai_zombies_extended_filtered, a_ai_zombies_extended_filtered[i]);
+            continue;
         }
+        arrayremovevalue(a_ai_zombies_extended_filtered, a_ai_zombies_extended_filtered[i]);
     }
     return a_ai_zombies_extended_filtered;
 }
@@ -236,24 +236,24 @@ function private vortex_explosion(v_vortex_explosion_origin, eattacker, n_vortex
         if (!ai_zombie.ignorevortices) {
             if (isdefined(ai_zombie.interdimensional_gun_kill) && ai_zombie.interdimensional_gun_kill) {
                 ai_zombie hide();
-            } else {
-                ai_zombie.interdimensional_gun_kill = undefined;
-                ai_zombie.interdimensional_gun_kill_vortex_explosion = 1;
-                ai_zombie.veh_idgun_allow_damage = 1;
-                if (isdefined(eattacker)) {
-                    ai_zombie dodamage(ai_zombie.health + 10000, ai_zombie.origin, eattacker, undefined, undefined, "MOD_EXPLOSIVE");
-                } else {
-                    ai_zombie dodamage(ai_zombie.health + 10000, ai_zombie.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE");
-                }
-                n_radius_sqr = n_vortex_radius * n_vortex_radius;
-                n_distance_sqr = distancesquared(ai_zombie.origin, v_vortex_explosion_origin);
-                n_dist_mult = n_distance_sqr / n_radius_sqr;
-                v_fling = vectornormalize(ai_zombie.origin - v_vortex_explosion_origin);
-                v_fling = (v_fling[0], v_fling[1], abs(v_fling[2]));
-                v_fling = vectorscale(v_fling, 100 + 100 * n_dist_mult);
-                ai_zombie startragdoll();
-                ai_zombie launchragdoll(v_fling);
+                continue;
             }
+            ai_zombie.interdimensional_gun_kill = undefined;
+            ai_zombie.interdimensional_gun_kill_vortex_explosion = 1;
+            ai_zombie.veh_idgun_allow_damage = 1;
+            if (isdefined(eattacker)) {
+                ai_zombie dodamage(ai_zombie.health + 10000, ai_zombie.origin, eattacker, undefined, undefined, "MOD_EXPLOSIVE");
+            } else {
+                ai_zombie dodamage(ai_zombie.health + 10000, ai_zombie.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE");
+            }
+            n_radius_sqr = n_vortex_radius * n_vortex_radius;
+            n_distance_sqr = distancesquared(ai_zombie.origin, v_vortex_explosion_origin);
+            n_dist_mult = n_distance_sqr / n_radius_sqr;
+            v_fling = vectornormalize(ai_zombie.origin - v_vortex_explosion_origin);
+            v_fling = (v_fling[0], v_fling[1], abs(v_fling[2]));
+            v_fling = vectorscale(v_fling, 100 + 100 * n_dist_mult);
+            ai_zombie startragdoll();
+            ai_zombie launchragdoll(v_fling);
         }
     }
 }
@@ -278,9 +278,9 @@ function player_vortex_visionset(name) {
 function idgun_add_vehicle_death_state() {
     if (isairborne(self)) {
         self vehicle_ai::add_state("idgun_death", &state_idgun_flying_crush_enter, &state_idgun_flying_crush_update, undefined);
-    } else {
-        self vehicle_ai::add_state("idgun_death", &state_idgun_crush_enter, &state_idgun_crush_update, undefined);
+        return;
     }
+    self vehicle_ai::add_state("idgun_death", &state_idgun_crush_enter, &state_idgun_crush_update, undefined);
 }
 
 // Namespace zombie_vortex/zombie_vortex

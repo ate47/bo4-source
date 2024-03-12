@@ -361,9 +361,9 @@ function apply_filter(localclientnum, filter, filterset = "framebuffer") {
             } else {
                 self.currentdrfilter[filterset] = undefined;
             }
-        } else {
-            self addduplicaterenderoption(type, value, -1, culling);
+            continue;
         }
+        self addduplicaterenderoption(type, value, -1, culling);
     }
 }
 
@@ -420,7 +420,7 @@ function set_entity_thermal(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x83ee9896, Offset: 0x1ac0
 // Size: 0x34
 function set_player_threat_detected(localclientnum, on_off) {
@@ -428,7 +428,7 @@ function set_player_threat_detected(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xcb9120ac, Offset: 0x1b00
 // Size: 0x14
 function set_hacker_tool_hacked(localclientnum, on_off) {
@@ -436,7 +436,7 @@ function set_hacker_tool_hacked(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x2564dd9e, Offset: 0x1b20
 // Size: 0x14
 function set_hacker_tool_hacking(localclientnum, on_off) {
@@ -444,7 +444,7 @@ function set_hacker_tool_hacking(localclientnum, on_off) {
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x88415731, Offset: 0x1b40
 // Size: 0x14
 function set_hacker_tool_breaching(localclientnum, on_off) {
@@ -479,8 +479,8 @@ function set_entity_draft_unselected(localclientnum, on_off) {
     }
     if (isdefined(on_off) && on_off) {
         self playrenderoverridebundle(rob);
-    } else {
-        self stoprenderoverridebundle(rob);
+        return;
     }
+    self stoprenderoverridebundle(rob);
 }
 

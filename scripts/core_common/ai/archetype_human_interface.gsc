@@ -7,7 +7,7 @@
 
 // Namespace humaninterface/archetype_human_interface
 // Params 0, eflags: 0x1 linked
-// Checksum 0x29eea6ac, Offset: 0xd8
+// Checksum 0xd85a0c51, Offset: 0xd8
 // Size: 0x60c
 function registerhumaninterfaceattributes() {
     ai::registermatchedinterface(#"human", #"can_be_meleed", 1, array(1, 0), &aiutility::meleeattributescallback);

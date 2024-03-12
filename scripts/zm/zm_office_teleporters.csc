@@ -122,22 +122,22 @@ function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap,
     case 1:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_69091fb60c4fb574"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        break;
+        return;
     case 2:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_690922b60c4fba8d"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        break;
+        return;
     case 3:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_690921b60c4fb8da"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        break;
+        return;
     case 4:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_44687d6082f9a0a4"], self, "tag_origin");
         self thread play_packa_special_looper(localclientnum);
-        break;
+        return;
     case 5:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_2e43973bc23c661d"], self, "tag_origin");
-        break;
+        return;
     }
 }
 
@@ -158,9 +158,9 @@ function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
     }
     if (newval > 0) {
         var_dabe3ecb.effect_id = util::playfxontag(localclientnum, level._effect[#"portal_ready"], var_dabe3ecb, "tag_origin");
-    } else {
-        var_dabe3ecb.effect_id = util::playfxontag(localclientnum, level._effect[#"portal_cooldown"], var_dabe3ecb, "tag_origin");
+        return;
     }
+    var_dabe3ecb.effect_id = util::playfxontag(localclientnum, level._effect[#"portal_cooldown"], var_dabe3ecb, "tag_origin");
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -213,10 +213,10 @@ function cage_portal_fx(localclientnum, oldval, newval, bnewent, binitialsnap, f
             self.fx_ids = array(self.fx_ids);
         }
         self.fx_ids[self.fx_ids.size] = var_330a603a;
-    } else {
-        foreach (fx_id in self.fx_ids) {
-            deletefx(localclientnum, fx_id);
-        }
+        return;
+    }
+    foreach (fx_id in self.fx_ids) {
+        deletefx(localclientnum, fx_id);
     }
 }
 
@@ -254,11 +254,13 @@ function groom_lake_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fi
         }
         if (newval > 1) {
             fx_pos.portalfx = util::playfxontag(localclientnum, level._effect[#"hash_578fbb9b0cbfb223"], fx_pos, "tag_origin");
-        } else if (newval == 1) {
-            fx_pos.portalfx = util::playfxontag(localclientnum, level._effect[#"hash_7329d5e1b8fc021a"], fx_pos, "tag_origin");
-        } else {
-            fx_pos.portalfx = util::playfxontag(localclientnum, level._effect[#"hash_710b1e3e51e84426"], fx_pos, "tag_origin");
+            continue;
         }
+        if (newval == 1) {
+            fx_pos.portalfx = util::playfxontag(localclientnum, level._effect[#"hash_7329d5e1b8fc021a"], fx_pos, "tag_origin");
+            continue;
+        }
+        fx_pos.portalfx = util::playfxontag(localclientnum, level._effect[#"hash_710b1e3e51e84426"], fx_pos, "tag_origin");
     }
 }
 
@@ -285,10 +287,10 @@ function war_room_map_control(localclientnum, oldval, newval, bnewent, binitials
     if (newval) {
         wait(1);
         self playrenderoverridebundle("rob_zm_off_table_plotting_map");
-    } else {
-        playfx(localclientnum, level._effect[#"hash_3ae2cb0d50ae8e3e"], self.origin, (1, 0, 0), (0, 0, 1));
-        wait(1);
-        self stoprenderoverridebundle("rob_zm_off_table_plotting_map");
+        return;
     }
+    playfx(localclientnum, level._effect[#"hash_3ae2cb0d50ae8e3e"], self.origin, (1, 0, 0), (0, 0, 1));
+    wait(1);
+    self stoprenderoverridebundle("rob_zm_off_table_plotting_map");
 }
 

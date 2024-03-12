@@ -111,9 +111,9 @@ function private function_3ecc52d9(var_d3547bb1, lanenum) {
     }
     tpoint = getclosesttacpoint(self.origin);
     if (!isdefined(tpoint)) {
-        var_9f855ac9 = getclosestpointonnavmesh(self.origin, 600);
-        if (isdefined(var_9f855ac9)) {
-            tpoint = getclosesttacpoint(var_9f855ac9);
+        navpos = getclosestpointonnavmesh(self.origin, 600);
+        if (isdefined(navpos)) {
+            tpoint = getclosesttacpoint(navpos);
         }
     }
     if (isdefined(tpoint)) {
@@ -146,33 +146,33 @@ function private function_a702eb04(params, goal) {
             var_6369695a = params.var_bb5fa5a7[i];
             if (!isdefined(var_6369695a) || var_6369695a.path.size == 0) {
                 bot setgoal(goal);
-            } else {
-                goalinfo = bot function_4794d6a3();
-                tpoint = getclosesttacpoint(bot.origin);
-                if (!isdefined(tpoint) && isdefined(goalinfo.regionid) && !goalinfo.isatgoal) {
-                    continue;
-                }
-                var_65733efe = -1;
-                if (isdefined(tpoint)) {
-                    var_65733efe = tpoint.region;
-                }
-                for (var_91fc28f4 = var_6369695a.var_91fc28f4; var_91fc28f4 < var_6369695a.path.size; var_91fc28f4++) {
-                    if (var_65733efe === var_6369695a.path[var_91fc28f4]) {
-                        break;
-                    }
-                }
-                if (var_91fc28f4 < var_6369695a.path.size - 2) {
-                    bot.var_d494450c = undefined;
-                    bot setgoal(var_6369695a.path[var_91fc28f4 + 1]);
-                    if (var_91fc28f4 > var_6369695a.var_91fc28f4) {
-                        var_6369695a.var_91fc28f4 = var_91fc28f4;
-                    }
-                } else {
-                    bot.var_d494450c = undefined;
-                    bot setgoal(goal);
-                    var_c19c4223++;
+                continue;
+            }
+            goalinfo = bot function_4794d6a3();
+            tpoint = getclosesttacpoint(bot.origin);
+            if (!isdefined(tpoint) && isdefined(goalinfo.regionid) && !goalinfo.isatgoal) {
+                continue;
+            }
+            var_65733efe = -1;
+            if (isdefined(tpoint)) {
+                var_65733efe = tpoint.region;
+            }
+            for (var_91fc28f4 = var_6369695a.var_91fc28f4; var_91fc28f4 < var_6369695a.path.size; var_91fc28f4++) {
+                if (var_65733efe === var_6369695a.path[var_91fc28f4]) {
+                    break;
                 }
             }
+            if (var_91fc28f4 < var_6369695a.path.size - 2) {
+                bot.var_d494450c = undefined;
+                bot setgoal(var_6369695a.path[var_91fc28f4 + 1]);
+                if (var_91fc28f4 > var_6369695a.var_91fc28f4) {
+                    var_6369695a.var_91fc28f4 = var_91fc28f4;
+                }
+                continue;
+            }
+            bot.var_d494450c = undefined;
+            bot setgoal(goal);
+            var_c19c4223++;
         }
     }
     if (var_c19c4223 == params.bots.size) {
@@ -577,15 +577,15 @@ function private function_2b5c33a8(planner, constants) {
                     var_e2b90cdd = array(var_e2b90cdd);
                 }
                 var_e2b90cdd[var_e2b90cdd.size] = flag;
-            } else {
-                var_44114a0e = var_44114a0e + "a";
-                if (!isdefined(var_d637f1b0)) {
-                    var_d637f1b0 = [];
-                } else if (!isarray(var_d637f1b0)) {
-                    var_d637f1b0 = array(var_d637f1b0);
-                }
-                var_d637f1b0[var_d637f1b0.size] = flag;
+                continue;
             }
+            var_44114a0e = var_44114a0e + "a";
+            if (!isdefined(var_d637f1b0)) {
+                var_d637f1b0 = [];
+            } else if (!isarray(var_d637f1b0)) {
+                var_d637f1b0 = array(var_d637f1b0);
+            }
+            var_d637f1b0[var_d637f1b0.size] = flag;
         }
         if (!isdefined(bot.bot.var_44114a0e) || var_44114a0e != bot.bot.var_44114a0e) {
             bot.bot.var_44114a0e = var_44114a0e;

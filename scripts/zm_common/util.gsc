@@ -92,17 +92,19 @@ function playsoundonplayers(sound, team) {
         if (isdefined(level.players[0])) {
             level.players[0] playlocalsound(sound);
         }
-    } else if (isdefined(team)) {
+        return;
+    }
+    if (isdefined(team)) {
         for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
             if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
                 player playlocalsound(sound);
             }
         }
-    } else {
-        for (i = 0; i < level.players.size; i++) {
-            level.players[i] playlocalsound(sound);
-        }
+        return;
+    }
+    for (i = 0; i < level.players.size; i++) {
+        level.players[i] playlocalsound(sound);
     }
 }
 
@@ -200,9 +202,9 @@ function printonplayers(text, team) {
             if (isdefined(players[i].pers[#"team"]) && players[i].pers[#"team"] == team) {
                 players[i] iprintln(text);
             }
-        } else {
-            players[i] iprintln(text);
+            continue;
         }
+        players[i] iprintln(text);
     }
 }
 
@@ -229,10 +231,14 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             if (isdefined(playerteam)) {
                 if (playerteam == team && isdefined(printfriendly) && printfriendly != #"") {
                     player iprintln(printfriendly, printarg);
-                } else if (isdefined(printenemy) && printenemy != #"") {
+                    continue;
+                }
+                if (isdefined(printenemy) && printenemy != #"") {
                     if (isdefined(enemyteam) && playerteam == enemyteam) {
                         player iprintln(printenemy, printarg);
-                    } else if (!isdefined(enemyteam) && playerteam != team) {
+                        continue;
+                    }
+                    if (!isdefined(enemyteam) && playerteam != team) {
                         player iprintln(printenemy, printarg);
                     }
                 }
@@ -244,45 +250,51 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             #/
             level.players[0] playlocalsound(soundfriendly);
         }
-    } else {
-        /#
-            assert(shoulddosounds);
-        #/
-        if (shoulddoenemysounds) {
-            for (i = 0; i < level.players.size; i++) {
-                player = level.players[i];
-                playerteam = player.pers[#"team"];
-                if (isdefined(playerteam)) {
-                    if (playerteam == team) {
-                        if (isdefined(printfriendly) && printfriendly != #"") {
-                            player iprintln(printfriendly, printarg);
-                        }
-                        player playlocalsound(soundfriendly);
-                    } else if (isdefined(enemyteam) && playerteam == enemyteam || !isdefined(enemyteam) && playerteam != team) {
-                        if (isdefined(printenemy) && printenemy != #"") {
-                            player iprintln(printenemy, printarg);
-                        }
-                        player playlocalsound(soundenemy);
+        return;
+    }
+    /#
+        assert(shoulddosounds);
+    #/
+    if (shoulddoenemysounds) {
+        for (i = 0; i < level.players.size; i++) {
+            player = level.players[i];
+            playerteam = player.pers[#"team"];
+            if (isdefined(playerteam)) {
+                if (playerteam == team) {
+                    if (isdefined(printfriendly) && printfriendly != #"") {
+                        player iprintln(printfriendly, printarg);
                     }
+                    player playlocalsound(soundfriendly);
+                    continue;
+                }
+                if (isdefined(enemyteam) && playerteam == enemyteam || !isdefined(enemyteam) && playerteam != team) {
+                    if (isdefined(printenemy) && printenemy != #"") {
+                        player iprintln(printenemy, printarg);
+                    }
+                    player playlocalsound(soundenemy);
                 }
             }
-        } else {
-            for (i = 0; i < level.players.size; i++) {
-                player = level.players[i];
-                playerteam = player.pers[#"team"];
-                if (isdefined(playerteam)) {
-                    if (playerteam == team) {
-                        if (isdefined(printfriendly) && printfriendly != #"") {
-                            player iprintln(printfriendly, printarg);
-                        }
-                        player playlocalsound(soundfriendly);
-                    } else if (isdefined(printenemy) && printenemy != #"") {
-                        if (isdefined(enemyteam) && playerteam == enemyteam) {
-                            player iprintln(printenemy, printarg);
-                        } else if (!isdefined(enemyteam) && playerteam != team) {
-                            player iprintln(printenemy, printarg);
-                        }
-                    }
+        }
+        return;
+    }
+    for (i = 0; i < level.players.size; i++) {
+        player = level.players[i];
+        playerteam = player.pers[#"team"];
+        if (isdefined(playerteam)) {
+            if (playerteam == team) {
+                if (isdefined(printfriendly) && printfriendly != #"") {
+                    player iprintln(printfriendly, printarg);
+                }
+                player playlocalsound(soundfriendly);
+                continue;
+            }
+            if (isdefined(printenemy) && printenemy != #"") {
+                if (isdefined(enemyteam) && playerteam == enemyteam) {
+                    player iprintln(printenemy, printarg);
+                    continue;
+                }
+                if (!isdefined(enemyteam) && playerteam != team) {
+                    player iprintln(printenemy, printarg);
                 }
             }
         }

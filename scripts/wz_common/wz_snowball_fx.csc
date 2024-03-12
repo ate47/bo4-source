@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x90968e05, Offset: 0x128
 // Size: 0x94
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe8f6516a, Offset: 0x1c8
 // Size: 0x74
 function on_localclient_connect(localclientnum) {
@@ -36,7 +36,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfd88480b, Offset: 0x248
 // Size: 0x5bc
 function function_b6992be(localclientnum) {

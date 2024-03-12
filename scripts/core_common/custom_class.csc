@@ -154,9 +154,9 @@ function toggle_locked_weapon_shader(localclientnum, is_item_unlocked = 1) {
     }
     if (is_item_unlocked != 1) {
         enablefrontendlockedweaponoverlay(localclientnum, 1);
-    } else {
-        enablefrontendlockedweaponoverlay(localclientnum, 0);
+        return;
     }
+    enablefrontendlockedweaponoverlay(localclientnum, 0);
 }
 
 // Namespace customclass/custom_class
@@ -215,9 +215,9 @@ function custom_class_attachment_select_focus(localclientnum) {
             wait_preload_weapon(localclientnum);
             update_weapon_script_model(localclientnum, weapon_name, weaponattachmentintersection, 0);
         }
-    } else {
-        level thread transition_camera(localclientnum, base_weapon_slot, "cam_cac_attachments", "cam_cac", initialdelay, lerpduration, attachment, weapon_name, weaponattachmentintersection);
+        return;
     }
+    level thread transition_camera(localclientnum, base_weapon_slot, "cam_cac_attachments", "cam_cac", initialdelay, lerpduration, attachment, weapon_name, weaponattachmentintersection);
 }
 
 // Namespace customclass/custom_class
@@ -441,9 +441,9 @@ function function_998e2be7(localclientnum, weapon_options_param) {
     }
     if (isdefined(weapon_options[5])) {
         function_162e1121(localclientnum, int(weapon_options[5]));
-    } else {
-        function_162e1121(localclientnum, 0);
+        return;
     }
+    function_162e1121(localclientnum, 0);
 }
 
 // Namespace customclass/custom_class
@@ -489,12 +489,12 @@ function setup_paintshop_bg(localclientnum, camera) {
             killradiantexploder(localclientnum, "lights_paintshop");
             killradiantexploder(localclientnum, "weapon_kick");
             playradiantexploder(localclientnum, "lights_paintshop_zoom");
-        } else {
-            hide_paintshop_bg(localclientnum);
-            killradiantexploder(localclientnum, "lights_paintshop_zoom");
-            playradiantexploder(localclientnum, "lights_paintshop");
-            playradiantexploder(localclientnum, "weapon_kick");
+            return;
         }
+        hide_paintshop_bg(localclientnum);
+        killradiantexploder(localclientnum, "lights_paintshop_zoom");
+        playradiantexploder(localclientnum, "lights_paintshop");
+        playradiantexploder(localclientnum, "weapon_kick");
     }
 }
 

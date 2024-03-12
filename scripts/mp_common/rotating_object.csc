@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace rotating_object/rotating_object
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x647e233b, Offset: 0xf8
 // Size: 0x24
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace rotating_object/rotating_object
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd1b7a9, Offset: 0x128
 // Size: 0x5c
 function init(localclientnum) {
@@ -32,7 +32,7 @@ function init(localclientnum) {
 }
 
 // Namespace rotating_object/rotating_object
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x98a39874, Offset: 0x190
 // Size: 0x212
 function rotating_object_think() {

@@ -119,16 +119,16 @@ function function_d85bd834() {
     switch (level.var_ab11c23d.var_3931cef9) {
     case 0:
         level.var_ab11c23d thread function_1aeab14e();
-        break;
+        return;
     case 1:
         level.var_ab11c23d thread lighthouse_freakout();
-        break;
+        return;
     case 2:
         level.var_ab11c23d thread function_92b102fc();
-        break;
+        return;
     case 3:
         level.var_ab11c23d thread function_dbad2f5a();
-        break;
+        return;
     }
 }
 
@@ -223,14 +223,14 @@ function function_45489835(str_flag) {
     switch (str_flag) {
     case #"power_on1":
         playsoundatposition(#"hash_5f9ff903d1e07acb", (0, 0, 0));
-        break;
+        return;
     case #"power_on2":
         playsoundatposition(#"hash_7bb9774ddb11bc9f", (0, 0, 0));
         playsoundatposition(#"hash_957e90e703a238a", (1311, -1971, 1102));
-        break;
+        return;
     case #"power_on3":
         playsoundatposition(#"hash_4760ffee46ef7f74", (0, 0, 0));
-        break;
+        return;
     }
 }
 
@@ -248,7 +248,7 @@ function function_320f5fb3() {
         if (isdefined(level.var_9a8dee15)) {
             level.var_9a8dee15 thread zm_orange_util::function_51b752a9(#"vox_power_switch_1_activate");
         }
-        break;
+        return;
     case 2:
         level thread zm_orange_pap::function_56db9cdc();
         if (zm_custom::function_901b751c(#"zmpowerstate") != 2) {
@@ -257,7 +257,7 @@ function function_320f5fb3() {
             level thread zm_orange_util::function_fd24e47f("vox_power_switch_2_activate");
         }
         level thread zm_orange_util::function_3d6809e9();
-        break;
+        return;
     case 3:
         level.var_6ed7c585 = 1;
         level thread zm_orange_pap::function_2401694f();
@@ -265,7 +265,7 @@ function function_320f5fb3() {
             wait(3);
             level.var_1c53964e thread zm_hms_util::function_6a0d675d("vox_power_switch_3_activate");
         }
-        break;
+        return;
     }
 }
 
@@ -299,13 +299,13 @@ function function_1baa684c(str_flag) {
     switch (str_flag) {
     case #"power_on1":
         level.var_3428b470 = struct::get("power_intro_1");
-        break;
+        return;
     case #"power_on2":
         level.var_3428b470 = struct::get("power_intro_2");
-        break;
+        return;
     case #"power_on3":
         level.var_3428b470 = struct::get("power_intro_3");
-        break;
+        return;
     }
 }
 
@@ -324,7 +324,7 @@ function function_ad646ef8(n_state) {
         switch (e_lighthouse.var_58df9892) {
         case 0:
             array::thread_all(level.var_f92c8836, &function_76adab5e);
-            break;
+            return;
         case 1:
             e_lighthouse notify(#"hash_6e9ab520bd7ba3c");
             function_d85bd834();
@@ -335,34 +335,34 @@ function function_ad646ef8(n_state) {
             e_lighthouse.activated_by_player = undefined;
             e_lighthouse.v_trap_target = undefined;
             e_lighthouse thread function_74b930af(n_cooldown, 2);
-            break;
+            return;
         case 2:
             array::thread_all(level.var_f92c8836, &function_76adab5e);
-            break;
+            return;
         case 3:
             e_lighthouse notify(#"hash_78fc5bbd712046b0");
             e_lighthouse thread function_71399d9c();
-            break;
+            return;
         case 4:
             e_lighthouse thread function_ef69a891(e_lighthouse.var_a5a067c5, e_lighthouse.var_d9ae30d6);
-            break;
+            return;
         case 5:
             e_lighthouse thread function_72ff128e(e_lighthouse.v_trap_target);
-            break;
+            return;
         case 6:
             e_lighthouse thread shoot_trap_target(e_lighthouse.v_trap_target, e_lighthouse.var_d9ae30d6);
-            break;
+            return;
         case 7:
             e_lighthouse.v_trap_target = undefined;
             e_lighthouse thread function_ea089392();
             e_lighthouse thread function_74b930af(3, 4);
-            break;
+            return;
         case 8:
             e_lighthouse thread function_74a24d00();
-            break;
+            return;
         case 9:
             e_lighthouse thread function_76ff758d();
-            break;
+            return;
         }
     }
 }
@@ -386,10 +386,8 @@ function function_74b930af(n_time, n_state) {
 // Size: 0x21c
 function function_71399d9c() {
     self endon(#"death", #"hash_1aa56851d9d4ec0d");
-    vh_target = spawner::simple_spawn_single(getent("virgil", "targetname"));
-    while (!isdefined(vh_target)) {
+    for (vh_target = spawner::simple_spawn_single(getent("virgil", "targetname")); !isdefined(vh_target); vh_target = spawner::simple_spawn_single(getent("virgil", "targetname"))) {
         waitframe(1);
-        vh_target = spawner::simple_spawn_single(getent("virgil", "targetname"));
     }
     vh_target.origin = self.var_223285b1.origin;
     vh_target.b_moving = 0;
@@ -644,8 +642,8 @@ function electrocute_player() {
 function trap_switch_init() {
     self.var_223285b1 = getvehiclenode(self.var_40d27c6d, "targetname");
     a_pieces = zm_hms_util::function_bffcedde(self.target, "targetname", "script_noteworthy");
-    self.var_c275b624 = a_pieces[#"switch"];
-    self.var_307df34b = a_pieces[#"light"];
+    self.mdl_switch = a_pieces[#"switch"];
+    self.mdl_light = a_pieces[#"light"];
     self.s_panel = struct::get(self.target);
     self zm_unitrigger::create(&function_85d3d607, 64);
     self thread function_72d528e6();
@@ -702,10 +700,12 @@ function function_72d528e6() {
         }
         if (zm_utility::is_player_valid(e_who) && level.var_ab11c23d.var_58df9892 === 2) {
             if (level flag::get(#"half_price_traps")) {
-                if (self.var_c275b624 zm_traps::trap_purchase(e_who, int(500))) {
+                if (self.mdl_switch zm_traps::trap_purchase(e_who, int(500))) {
                     e_who function_2ad3b642(self);
                 }
-            } else if (self.var_c275b624 zm_traps::trap_purchase(e_who, 1000)) {
+                continue;
+            }
+            if (self.mdl_switch zm_traps::trap_purchase(e_who, 1000)) {
                 e_who function_2ad3b642(self);
             }
         }
@@ -718,10 +718,10 @@ function function_72d528e6() {
 // Size: 0x64
 function function_f7e6bf61(b_on) {
     if (b_on) {
-        self.var_c275b624 rotatepitch(180, 0.5);
-    } else {
-        self.var_c275b624 rotatepitch(-180, 0.5);
+        self.mdl_switch rotatepitch(180, 0.5);
+        return;
     }
+    self.mdl_switch rotatepitch(-180, 0.5);
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -731,14 +731,14 @@ function function_f7e6bf61(b_on) {
 function function_76adab5e() {
     switch (level.var_ab11c23d.var_58df9892) {
     case 0:
-        self.var_307df34b setmodel("p8_zm_off_trap_switch_light");
-        break;
+        self.mdl_light setmodel("p8_zm_off_trap_switch_light");
+        return;
     case 3:
-        self.var_307df34b setmodel("p8_zm_off_trap_switch_light_red_on");
-        break;
+        self.mdl_light setmodel("p8_zm_off_trap_switch_light_red_on");
+        return;
     case 2:
-        self.var_307df34b setmodel("p8_zm_off_trap_switch_light_green_on");
-        break;
+        self.mdl_light setmodel("p8_zm_off_trap_switch_light_green_on");
+        return;
     }
 }
 
@@ -767,16 +767,16 @@ function function_2853c44e(e_trap) {
     self clientfield::increment("" + #"hash_5af1cd27f90895ae", 1);
     if (isdefined(self.var_5475b4ad)) {
         self [[ self.var_5475b4ad ]](e_trap);
-    } else {
-        [[ level.var_db63b33b ]]->waitinqueue(self);
-        level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
-        level notify(#"hash_5e2619172b4487dd", {#n_count:1});
-        if (isdefined(level.var_ab11c23d.activated_by_player) && isplayer(level.var_ab11c23d.activated_by_player)) {
-            level.var_ab11c23d.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            level.var_ab11c23d.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-        }
-        self dodamage(20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
+        return;
     }
+    [[ level.var_db63b33b ]]->waitinqueue(self);
+    level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+    level notify(#"hash_5e2619172b4487dd", {#n_count:1});
+    if (isdefined(level.var_ab11c23d.activated_by_player) && isplayer(level.var_ab11c23d.activated_by_player)) {
+        level.var_ab11c23d.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+        level.var_ab11c23d.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+    }
+    self dodamage(20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -813,7 +813,7 @@ function soapstone_watcher() {
                     level.s_soapstone.s_placement.var_28f1732d clientfield::set("soapstone_start_fx", 2);
                     level.s_soapstone.s_placement.var_28f1732d setmodel("p8_zm_ora_soapstone_01_hot");
                 }
-                break;
+                return;
             }
         }
         wait(0.1);

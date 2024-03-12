@@ -49,10 +49,10 @@ function function_61a426a5() {
             if (isdefined(debug_pos)) {
                 zombie_apoc_homunculus.origin = points[debug_pos].origin;
                 zombie_apoc_homunculus.angles = points[debug_pos].angles;
-            } else {
-                zombie_apoc_homunculus.origin = points[randindex].origin;
-                zombie_apoc_homunculus.angles = points[randindex].angles;
+                return;
             }
+            zombie_apoc_homunculus.origin = points[randindex].origin;
+            zombie_apoc_homunculus.angles = points[randindex].angles;
         }
     }
 }

@@ -348,10 +348,9 @@ function private get_favorite_enemy(tiger) {
     }
     if (!is_target_valid(tiger, least_hunted)) {
         return undefined;
-    } else {
-        least_hunted.hunted_by = least_hunted.hunted_by + 1;
-        return least_hunted;
     }
+    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    return least_hunted;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -920,9 +919,9 @@ function function_345c8845(entity, mocompanim, mocompanimblendouttime, mocompani
     if (isdefined(entity.favoriteenemy)) {
         if (distancesquared(entity.favoriteenemy.origin, entity.origin) <= 64 * 64 && function_1b7345aa(entity, entity.favoriteenemy)) {
             entity animmode("angle deltas");
-        } else {
-            entity animmode("normal");
+            return;
         }
+        entity animmode("normal");
     }
 }
 
@@ -943,9 +942,9 @@ function function_c0d6be15(entity, mocompanim, mocompanimblendouttime, mocompani
         to_enemy = entity.favoriteenemy.origin - entity.origin;
         angles_to_enemy = vectortoangles(to_enemy);
         entity orientmode("face angle", angles_to_enemy);
-    } else {
-        entity orientmode("face enemy");
+        return;
     }
+    entity orientmode("face enemy");
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -959,9 +958,9 @@ function function_dc8e2d7d(entity, mocompanim, mocompanimblendouttime, mocompani
         entity orientmode("face angle", angles_to_enemy);
         if (distancesquared(entity.favoriteenemy.origin, entity.origin) <= 64 * 64 && function_1b7345aa(entity, entity.favoriteenemy)) {
             entity animmode("angle deltas");
-        } else {
-            entity animmode("zonly_physics");
+            return;
         }
+        entity animmode("zonly_physics");
     }
 }
 

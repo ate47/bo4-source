@@ -385,9 +385,9 @@ function private function_cf402986(einflictor, eattacker, idamage, smeansofdeath
 function private function_e4ef4e27(entity, attribute, oldvalue, value) {
     if (value == "low") {
         entity thread namespace_9ff9f642::slowdown("stoker_undewater_slow_type");
-    } else {
-        entity thread namespace_9ff9f642::function_520f4da5("stoker_undewater_slow_type");
+        return;
     }
+    entity thread namespace_9ff9f642::function_520f4da5("stoker_undewater_slow_type");
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -550,9 +550,9 @@ function private function_31f887b5(behaviortreeentity) {
             if (var_bd66486b == "knockdown") {
                 zombie zombie_utility::setup_zombie_knockdown(behaviortreeentity);
                 zombie.knockdown_type = "knockdown_shoved";
-            } else {
-                zombie zombie_utility::function_fc0cb93d(behaviortreeentity);
+                continue;
             }
+            zombie zombie_utility::function_fc0cb93d(behaviortreeentity);
         }
     }
     behaviortreeentity.var_ccb2e201 = 0;
@@ -881,7 +881,9 @@ function private function_253c9e38(entity) {
     if (timeelapsed > getdvarint(#"hash_3dfb66f92268c90f", entity ai::function_9139c839().var_d33d95d0)) {
         if (timeelapsed > entity ai::function_9139c839().var_73070557 && entity.var_41f51cb4 == "stoker_ranged_attack" && isdefined(entity.var_c6e0686b) && entity.var_c6e0686b <= entity ai::function_9139c839().var_20266c0d * entity ai::function_9139c839().var_20266c0d) {
             entity.var_86f9cdcd = 1;
-        } else if (!entity.var_aca87abc && !entity.var_86f9cdcd && isdefined(entity getblackboardattribute("_locomotion_speed")) && entity getblackboardattribute("_locomotion_speed") != "locomotion_speed_sprint" && function_ac53cb4e(entity) && !entity.var_81d3587d && function_5878b360(entity)) {
+            return;
+        }
+        if (!entity.var_aca87abc && !entity.var_86f9cdcd && isdefined(entity getblackboardattribute("_locomotion_speed")) && entity getblackboardattribute("_locomotion_speed") != "locomotion_speed_sprint" && function_ac53cb4e(entity) && !entity.var_81d3587d && function_5878b360(entity)) {
             /#
                 function_752a64b8("<unknown string>");
             #/
@@ -1114,16 +1116,12 @@ function function_6dd277e7() {
     switch (n_player_count) {
     case 1:
         return 1;
-        break;
     case 2:
         return 2;
-        break;
     case 3:
         return 2;
-        break;
     case 4:
         return 3;
-        break;
     }
 }
 

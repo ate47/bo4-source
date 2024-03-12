@@ -9,12 +9,10 @@ function function_755c26d1() {
     level.var_1a7a3f05 = spawnstruct();
     i = 0;
     level.var_1a7a3f05.var_23e0aef1 = [];
-    var_23e0aef1 = getentarray("vol_tregion_lane_" + i, "targetname");
-    while (isdefined(var_23e0aef1) && isarray(var_23e0aef1) && var_23e0aef1.size > 0) {
+    for (var_23e0aef1 = getentarray("vol_tregion_lane_" + i, "targetname"); isdefined(var_23e0aef1) && isarray(var_23e0aef1) && var_23e0aef1.size > 0; var_23e0aef1 = getentarray("vol_tregion_lane_" + i, "targetname")) {
         level.var_1a7a3f05.var_23e0aef1[i] = var_23e0aef1;
         waitframe(1);
         i++;
-        var_23e0aef1 = getentarray("vol_tregion_lane_" + i, "targetname");
     }
     level.var_1a7a3f05.var_7c70464e = i;
 }
@@ -60,7 +58,7 @@ function private function_871ecf05() {
     for (i = 1; i < 128; i++) {
         info = function_b507a336(i);
         if (!isdefined(info)) {
-            break;
+            return;
         }
         function_e563d6b7(i, 1);
     }
@@ -85,7 +83,7 @@ function private function_c5b9e623(volumes, score) {
     for (i = 1; i < 128; i++) {
         info = function_b507a336(i);
         if (!isdefined(info)) {
-            break;
+            return;
         }
         desired = 0;
         foreach (volume in volumes) {

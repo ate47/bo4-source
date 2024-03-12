@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x1fa2e33c, Offset: 0x150
 // Size: 0xc4
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xefbeb200, Offset: 0x220
 // Size: 0x22
 function gadget_combat_efficiency_is_inuse(slot) {
@@ -39,7 +39,7 @@ function gadget_combat_efficiency_is_inuse(slot) {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x607ef7f1, Offset: 0x250
 // Size: 0x22
 function gadget_combat_efficiency_is_flickering(slot) {
@@ -70,7 +70,9 @@ function function_57b485b3(attacker, time, var_f231d134, var_77cc3ee4, objective
     if (function_db4ccff2(attacker, undefined, var_f231d134)) {
         if (objectivekill) {
             scoreevents::processscoreevent(#"battle_command_ultimate_command", attacker, undefined, var_77cc3ee4);
-        } else if (attacker == attacker.var_649d2b1f) {
+            return;
+        }
+        if (attacker == attacker.var_649d2b1f) {
             scoreevents::processscoreevent(#"hash_1c12195e708977c5", attacker, undefined, var_77cc3ee4);
         }
     }
@@ -90,7 +92,7 @@ function function_a30493ef(attacker, lastkilltime, var_f231d134, var_77cc3ee4) {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 5, eflags: 0x0
+// Params 5, eflags: 0x1 linked
 // Checksum 0x8901546f, Offset: 0x568
 // Size: 0xce
 function function_db4ccff2(attacker, victim, weapon, attackerweapon, meansofdeath) {
@@ -119,7 +121,7 @@ function function_92308e92(attacker, victim, weapon, attackerweapon) {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xb8343db8, Offset: 0x6b8
 // Size: 0xa6
 function gadget_combat_efficiency_on_activate(slot, weapon) {
@@ -133,7 +135,7 @@ function gadget_combat_efficiency_on_activate(slot, weapon) {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x119dfb62, Offset: 0x768
 // Size: 0x10c
 function gadget_combat_efficiency_on_off(slot, weapon) {
@@ -148,7 +150,7 @@ function gadget_combat_efficiency_on_off(slot, weapon) {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xcd16060f, Offset: 0x880
 // Size: 0x156
 function function_6a9d7105(slot, weapon) {
@@ -163,11 +165,11 @@ function function_6a9d7105(slot, weapon) {
         current_power = self gadgetpowerget(slot);
         self gadgetpowerset(slot, min(current_power + var_122b9df7, 100));
         waitframe(1);
-    } while(self._gadget_combat_efficiency);
+    } while (self._gadget_combat_efficiency);
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x3863906c, Offset: 0x9e0
 // Size: 0x14
 function gadget_combat_efficiency_ready(slot, weapon) {
@@ -191,7 +193,7 @@ function set_gadget_combat_efficiency_status(weapon, status, time) {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xaf4a458b, Offset: 0xac8
 // Size: 0xf6
 function function_f53ac86e() {
@@ -202,9 +204,9 @@ function function_f53ac86e() {
             player clientfield::set_player_uimodel("hudItems.combatEfficiencyActive", enabled);
             if (enabled) {
                 player.var_649d2b1f = self;
-            } else {
-                player.var_649d2b1f = undefined;
+                continue;
             }
+            player.var_649d2b1f = undefined;
         }
     }
 }

@@ -93,12 +93,12 @@ function function_8b09185(localclientnum, oldval, newval, bnewent, binitialsnap,
                 }
             }
         }
-    } else {
-        foreach (var_9d4544e1 in level.var_a791c3be[0]) {
-            foreach (var_97af50b7 in var_9d4544e1) {
-                if (isdefined(var_97af50b7)) {
-                    hidevolumedecal(var_97af50b7);
-                }
+        return;
+    }
+    foreach (var_9d4544e1 in level.var_a791c3be[0]) {
+        foreach (var_97af50b7 in var_9d4544e1) {
+            if (isdefined(var_97af50b7)) {
+                hidevolumedecal(var_97af50b7);
             }
         }
     }
@@ -121,12 +121,12 @@ function function_1a723508(localclientnum, oldval, newval, bnewent, binitialsnap
                 }
             }
         }
-    } else {
-        foreach (var_9d4544e1 in level.var_a791c3be[1]) {
-            foreach (var_97af50b7 in var_9d4544e1) {
-                if (isdefined(var_97af50b7)) {
-                    hidevolumedecal(var_97af50b7);
-                }
+        return;
+    }
+    foreach (var_9d4544e1 in level.var_a791c3be[1]) {
+        foreach (var_97af50b7 in var_9d4544e1) {
+            if (isdefined(var_97af50b7)) {
+                hidevolumedecal(var_97af50b7);
             }
         }
     }
@@ -149,12 +149,12 @@ function function_e34446ad(localclientnum, oldval, newval, bnewent, binitialsnap
                 }
             }
         }
-    } else {
-        foreach (var_9d4544e1 in level.var_a791c3be[2]) {
-            foreach (var_97af50b7 in var_9d4544e1) {
-                if (isdefined(var_97af50b7)) {
-                    hidevolumedecal(var_97af50b7);
-                }
+        return;
+    }
+    foreach (var_9d4544e1 in level.var_a791c3be[2]) {
+        foreach (var_97af50b7 in var_9d4544e1) {
+            if (isdefined(var_97af50b7)) {
+                hidevolumedecal(var_97af50b7);
             }
         }
     }
@@ -177,12 +177,12 @@ function function_f4fe6a21(localclientnum, oldval, newval, bnewent, binitialsnap
                 }
             }
         }
-    } else {
-        foreach (var_9d4544e1 in level.var_a791c3be[3]) {
-            foreach (var_97af50b7 in var_9d4544e1) {
-                if (isdefined(var_97af50b7)) {
-                    hidevolumedecal(var_97af50b7);
-                }
+        return;
+    }
+    foreach (var_9d4544e1 in level.var_a791c3be[3]) {
+        foreach (var_97af50b7 in var_9d4544e1) {
+            if (isdefined(var_97af50b7)) {
+                hidevolumedecal(var_97af50b7);
             }
         }
     }
@@ -204,13 +204,13 @@ function function_1edcfaa9(localclientnum, oldval, newval, bnewent, binitialsnap
                 }
             }
         }
-    } else {
-        for (i = 0; i < level.var_97a6ac9f.size; i++) {
-            foreach (var_9d4544e1 in level.var_97a6ac9f[i]) {
-                foreach (var_97af50b7 in var_9d4544e1) {
-                    if (isdefined(var_97af50b7)) {
-                        hidevolumedecal(var_97af50b7);
-                    }
+        return;
+    }
+    for (i = 0; i < level.var_97a6ac9f.size; i++) {
+        foreach (var_9d4544e1 in level.var_97a6ac9f[i]) {
+            foreach (var_97af50b7 in var_9d4544e1) {
+                if (isdefined(var_97af50b7)) {
+                    hidevolumedecal(var_97af50b7);
                 }
             }
         }
@@ -239,12 +239,12 @@ function function_813aa911(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         util::playfxontag(localclientnum, level._effect[#"hash_1a9940efe1d3ed25"], self, "tag_origin");
-        break;
+        return;
     case 2:
         util::playfxontag(localclientnum, level._effect[#"hash_7cd0c2ae0222691"], self, "tag_origin");
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -279,8 +279,8 @@ function function_6736abbe(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_36123d34(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newval) {
         forcestreamxmodel(#"hash_1a8e66a7966f8086");
-    } else {
-        stopforcestreamingxmodel(#"hash_1a8e66a7966f8086");
+        return;
     }
+    stopforcestreamingxmodel(#"hash_1a8e66a7966f8086");
 }
 

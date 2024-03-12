@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace dart_wz/dart_wz
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9c9fda0b, Offset: 0x190
 // Size: 0xdc
 function __init__() {
@@ -28,7 +28,7 @@ function __init__() {
 }
 
 // Namespace dart_wz/dart_wz
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4ea6136d, Offset: 0x278
 // Size: 0x7e
 function function_a94aaca4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -41,24 +41,24 @@ function function_a94aaca4(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace dart_wz/dart_wz
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x22ce330b, Offset: 0x300
 // Size: 0xc6
 function function_2d1ff9c7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self thread dart_static_postfx(localclientnum);
-    } else {
-        self notify(#"hash_16c59bda348653cd");
-        if (isdefined(self.var_ed19a23) && self.var_ed19a23) {
-            filter::disable_filter_vehicle_hijack_oor(self, 0);
-            function_32a729d9(localclientnum, 0);
-            self.var_ed19a23 = undefined;
-        }
+        return;
+    }
+    self notify(#"hash_16c59bda348653cd");
+    if (isdefined(self.var_ed19a23) && self.var_ed19a23) {
+        filter::disable_filter_vehicle_hijack_oor(self, 0);
+        function_32a729d9(localclientnum, 0);
+        self.var_ed19a23 = undefined;
     }
 }
 
 // Namespace dart_wz/dart_wz
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x831ea2d6, Offset: 0x3d0
 // Size: 0x6c
 function private function_32a729d9(localclientnum, value) {
@@ -69,7 +69,7 @@ function private function_32a729d9(localclientnum, value) {
 }
 
 // Namespace dart_wz/dart_wz
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xedce0dd4, Offset: 0x448
 // Size: 0x25e
 function private dart_static_postfx(localclientnum) {
@@ -109,7 +109,7 @@ function private dart_static_postfx(localclientnum) {
 }
 
 // Namespace dart_wz/dart_wz
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x427cfec3, Offset: 0x6b0
 // Size: 0x182
 function timeout_beep(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

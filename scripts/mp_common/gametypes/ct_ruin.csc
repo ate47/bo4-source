@@ -24,8 +24,8 @@ function event_handler[gametype_init] main(eventstruct) {
 function follow_path_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.fx = util::playfxontag(localclientnum, #"zombie/fx_trail_blood_soul_zmb", self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.fx);
+        return;
     }
+    stopfx(localclientnum, self.fx);
 }
 

@@ -234,8 +234,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             x = originalposition[0];
             y = originalposition[1];
             lowestz = var_69d15ad0[#"position"][2];
-            z = originalposition[2];
-            while (z > lowestz) {
+            for (z = originalposition[2]; z > lowestz; z = z - randomintrange(20, 30)) {
                 newpos = (x, y, z);
                 water_depth = get_water_depth(newpos);
                 if (function_a66ba8cc(water_depth) || is_under_water(newpos)) {
@@ -244,7 +243,6 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
                     break;
                 }
                 level thread function_42b9fdbe(var_f483ab45, newpos, wall_normal, int(customsettings.var_b79d64a9), team);
-                z = z - randomintrange(20, 30);
             }
             var_bc9ec158 = 0.6 * var_69d15ad0[#"fraction"];
             if (var_bc9ec158 > 0) {
@@ -366,9 +364,9 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
                     locations[#"normal"][locindex] = (0, 0, 1);
                     locations[#"steam"][locindex] = 1;
                     locations[#"loc"][locindex] = locations[#"loc"][locindex] - (0, 0, water_depth);
-                } else {
-                    locations[#"normal"][locindex] = var_9417df90[#"normal"];
+                    continue;
                 }
+                locations[#"normal"][locindex] = var_9417df90[#"normal"];
             }
         }
     }
@@ -419,7 +417,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
             continue;
         }
         if (is_round_reset()) {
-            break;
+            return;
         }
         if (isdefined(locations[#"smallfire"][lockey])) {
             fireweapon = var_c0fe81f1;
@@ -716,7 +714,6 @@ function getpotentialtargets(owner, customsettings) {
         foreach (team, _ in level.teams) {
             if (customsettings.var_14e16318 === 1 || util::function_fbce7263(team, owner_team)) {
                 potential_targets = arraycombine(potential_targets, getplayers(team), 0, 0);
-                continue;
             }
         }
         if (isdefined(customsettings.var_4e1d1f97) && customsettings.var_4e1d1f97) {

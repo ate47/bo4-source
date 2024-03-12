@@ -165,9 +165,9 @@ function reset(str_id, str_name) {
     if (!n_index) {
         if (isdefined(self.values) && isdefined(self.values[str_name]) && self.values[str_name].size > 0) {
             _set_value(str_name, self.values[str_name][0].value);
-        } else {
-            _set_default(str_name);
+            return;
         }
+        _set_default(str_name);
     }
 }
 
@@ -229,9 +229,9 @@ function private _set_value(str_name, value) {
     if (isdefined(s_value) && isdefined(s_value.func)) {
         call_on = s_value.call_on === "$self" ? self : s_value.call_on;
         util::single_func_argarray(call_on, s_value.func, _replace_values(s_value.a_args, value));
-    } else {
-        self.(str_name) = value;
+        return;
     }
+    self.(str_name) = value;
 }
 
 // Namespace val/values_shared
@@ -272,9 +272,9 @@ function private set_takedamage(b_value = 1) {
         } else {
             self enableinvulnerability();
         }
-    } else {
-        self.takedamage = b_value;
+        return;
     }
+    self.takedamage = b_value;
 }
 
 // Namespace val/values_shared
@@ -300,9 +300,8 @@ function default_allowdeath() {
 function private validate_takedamage() {
     if (isplayer(self)) {
         return !self getinvulnerability();
-    } else {
-        return self.takedamage;
     }
+    return self.takedamage;
 }
 
 // Namespace val/values_shared
@@ -318,11 +317,13 @@ function private set_takeweapons(b_value = 1) {
                 self animation::detach_weapon();
             }
         }
-    } else if (isplayer(self)) {
-        self player::give_back_weapons();
-    } else {
-        self animation::attach_weapon();
+        return;
     }
+    if (isplayer(self)) {
+        self player::give_back_weapons();
+        return;
+    }
+    self animation::attach_weapon();
 }
 
 // Namespace val/values_shared
@@ -332,9 +333,9 @@ function private set_takeweapons(b_value = 1) {
 function private set_disableweapons(b_value = 1) {
     if (b_value) {
         self disableweapons();
-    } else {
-        self enableweapons();
+        return;
     }
+    self enableweapons();
 }
 
 // Namespace val/values_shared
@@ -344,9 +345,9 @@ function private set_disableweapons(b_value = 1) {
 function private set_disableoffhandweapons(b_value = 1) {
     if (b_value) {
         self disableoffhandweapons();
-    } else {
-        self enableoffhandweapons();
+        return;
     }
+    self enableoffhandweapons();
 }
 
 // Namespace val/values_shared
@@ -360,11 +361,13 @@ function private set_ignoreme(b_value = 1) {
         } else {
             self.ignoreme = 1;
         }
-    } else if (function_ffa5b184(self)) {
-        self.var_becd4d91 = 0;
-    } else {
-        self.ignoreme = 0;
+        return;
     }
+    if (function_ffa5b184(self)) {
+        self.var_becd4d91 = 0;
+        return;
+    }
+    self.ignoreme = 0;
 }
 
 // Namespace val/values_shared
@@ -388,9 +391,9 @@ function private set_hide(b_value = 1) {
         } else {
             self ghost();
         }
-    } else {
-        self show();
+        return;
     }
+    self show();
 }
 
 // Namespace val/values_shared
@@ -400,9 +403,9 @@ function private set_hide(b_value = 1) {
 function private set_health_regen(b_value = 1) {
     if (b_value) {
         self.heal.enabled = 1;
-    } else {
-        self.heal.enabled = 0;
+        return;
     }
+    self.heal.enabled = 0;
 }
 
 // Namespace val/values_shared
@@ -412,9 +415,9 @@ function private set_health_regen(b_value = 1) {
 function private set_disable_health_regen_delay(b_value = 1) {
     if (b_value) {
         self.disable_health_regen_delay = 1;
-    } else {
-        self.disable_health_regen_delay = 0;
+        return;
     }
+    self.disable_health_regen_delay = 0;
 }
 
 // Namespace val/values_shared
@@ -424,9 +427,9 @@ function private set_disable_health_regen_delay(b_value = 1) {
 function private set_ignore_health_regen_delay(b_value = 1) {
     if (b_value) {
         self.ignore_health_regen_delay = 1;
-    } else {
-        self.ignore_health_regen_delay = 0;
+        return;
     }
+    self.ignore_health_regen_delay = 0;
 }
 
 // Namespace val/values_shared

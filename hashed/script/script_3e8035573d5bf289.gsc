@@ -47,7 +47,9 @@ function function_f1d9de41(player) {
 function function_386c20ef(player) {
     if (isdefined(player.lives) && player.lives < 5) {
         player.lives++;
-    } else if (player zm_laststand::function_618fd37e() < 5) {
+        return;
+    }
+    if (player zm_laststand::function_618fd37e() < 5) {
         player zm_laststand::function_3a00302e();
     }
 }

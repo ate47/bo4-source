@@ -98,7 +98,7 @@ function function_95600a05(actionparams) {
 // Params 1, eflags: 0x0
 // Checksum 0x424b512f, Offset: 0x5e0
 // Size: 0x106
-function function_9393f3df(actionparams) {
+function throw_chakram(actionparams) {
     weapon = actionparams.weapon;
     dualwieldweapon = weapon.dualwieldweapon;
     while (!self bot_action::function_cf788c22() && self bot::weapon_loaded(dualwieldweapon)) {
@@ -486,7 +486,7 @@ function zombie_scan_for_threats(actionparams) {
     while (!self bot_action::function_cf788c22() && self bot_action::is_target_enemy(actionparams) && actionparams.targetvisible == targetvisible) {
         trigger = function_d41104ab(bot::get_interact());
         if (isdefined(trigger) && self bot::function_914feddd() && function_f59547eb(trigger)) {
-            break;
+            return;
         }
         if (targetvisible && self bot_action::function_ee402bf6(actionparams)) {
             self bot_action::function_8a2b82ad(actionparams);

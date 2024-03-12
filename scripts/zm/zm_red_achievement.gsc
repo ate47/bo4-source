@@ -318,9 +318,9 @@ function private function_f31369ae() {
             } else if (e_player !== s_result.attacker || isdefined(e_player.var_298cc14d) && e_player.var_298cc14d) {
                 return;
             }
-        } else {
-            return;
+            continue;
         }
+        return;
     }
     if (isdefined(e_player)) {
         e_player.var_298cc14d = 1;

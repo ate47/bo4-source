@@ -251,9 +251,9 @@ function function_51e0947e() {
     if (!isdefined(self.var_7a276c72) || self.var_7a276c72 == 0) {
         self.var_7a276c72 = 1;
         self clientfield::set_to_player("zm_bgb_near_death_experience_1p_fx", 1);
-    } else {
-        self.var_7a276c72++;
+        return;
     }
+    self.var_7a276c72++;
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience

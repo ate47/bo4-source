@@ -223,9 +223,8 @@ function function_626095c1(object) {
     var_35b81369 = vectordot(v_cross, anglestoup(object.angles));
     if (var_35b81369 >= 0) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace namespace_cc08081f/namespace_cc08081f
@@ -476,10 +475,10 @@ function function_8352562a() {
             exploder::stop_exploder("fxexp_script_projector_off");
             if (var_e578920c < 6) {
                 self.in_use = 0;
-            } else {
-                wait(0.1);
-                break;
+                continue;
             }
+            wait(0.1);
+            break;
         }
     }
     zm_unitrigger::unregister_unitrigger(self);
@@ -494,7 +493,7 @@ function function_de798ee4() {
     for (i = 0; i < level.var_ea514bc4.size; i++) {
         if (level.var_ea514bc4[i].in_inventory) {
             level.var_19e44f3d = level.var_ea514bc4[i];
-            break;
+            return;
         }
     }
 }
@@ -620,24 +619,24 @@ function function_93040a5d() {
         b_player_damaged = waitresult function_ce7e594b();
         if (!b_player_damaged || isdefined(level.var_215e60c4.in_use) && level.var_215e60c4.in_use) {
             wait(1);
-        } else {
-            level.var_215e60c4.in_use = 1;
-            if (var_28999578.size > 0) {
-                alias = var_4854a91b + var_28999578[0];
-                arrayremoveindex(var_28999578, 0);
-            } else {
-                alias = "vox_tedd_melee_final_tedd_0";
-                level.var_5da5aff4 = 1;
-            }
-            foreach (player in getplayers()) {
-                zm_hms_util::function_e308175e(alias, level.var_215e60c4.origin, player);
-                if (level.var_5da5aff4) {
-                    level flag::set(#"hash_398e4b1e72edb4ee");
-                }
-            }
-            wait(2);
-            level.var_215e60c4.in_use = 0;
+            continue;
         }
+        level.var_215e60c4.in_use = 1;
+        if (var_28999578.size > 0) {
+            alias = var_4854a91b + var_28999578[0];
+            arrayremoveindex(var_28999578, 0);
+        } else {
+            alias = "vox_tedd_melee_final_tedd_0";
+            level.var_5da5aff4 = 1;
+        }
+        foreach (player in getplayers()) {
+            zm_hms_util::function_e308175e(alias, level.var_215e60c4.origin, player);
+            if (level.var_5da5aff4) {
+                level flag::set(#"hash_398e4b1e72edb4ee");
+            }
+        }
+        wait(2);
+        level.var_215e60c4.in_use = 0;
     }
 }
 
@@ -715,9 +714,9 @@ function function_4bda6193() {
             }
             wait(2);
             level.var_215e60c4.in_use = 0;
-        } else {
-            wait(1);
+            continue;
         }
+        wait(1);
     }
 }
 
@@ -741,7 +740,7 @@ function function_74174ce1(str_state) {
     case #"screen_off":
         self function_35e95fba();
         self showpart("tag_screen_on_play");
-        break;
+        return;
     case #"screen_on":
         self function_35e95fba();
         self showpart("tag_screen_on_noise");
@@ -751,15 +750,15 @@ function function_74174ce1(str_state) {
         wait(30);
         self hidepart("tag_screen_on_tone");
         self showpart("tag_screen_off");
-        break;
+        return;
     case #"screen_on_noise":
         self function_35e95fba();
         self showpart("tag_screen_on_noise");
-        break;
+        return;
     case #"screen_on_tone":
         self function_35e95fba();
         self showpart("tag_screen_on_tone");
-        break;
+        return;
     }
 }
 

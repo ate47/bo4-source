@@ -46,9 +46,9 @@ function private on_begin(var_93fc795f, var_a7c52900, var_c8a36f90) {
                 player thread function_9c988cd8(var_93fc795f, var_a7c52900, 0);
                 break;
             }
-        } else {
-            player thread movement_watcher(var_93fc795f, var_a7c52900);
+            continue;
         }
+        player thread movement_watcher(var_93fc795f, var_a7c52900);
     }
 }
 
@@ -100,7 +100,9 @@ function private function_6b13a114(var_93fc795f, var_a7c52900) {
     self playsoundtoplayer(#"hash_6df374d848ba6a60", self);
     if (var_93fc795f === "health") {
         self dodamage(var_a7c52900, self.origin);
-    } else if (var_93fc795f === "points") {
+        return;
+    }
+    if (var_93fc795f === "points") {
         self zm_score::minus_to_player_score(var_a7c52900, 1);
     }
 }

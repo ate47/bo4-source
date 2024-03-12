@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_ruin/character_unlock_ruin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac1ac890, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_ruin/character_unlock_ruin
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x52df74c, Offset: 0x130
 // Size: 0x4c
 function function_2613aeec(enabled) {
@@ -37,7 +37,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_ruin/character_unlock_ruin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xad249d5e, Offset: 0x188
 // Size: 0x13a
 function function_cb514c8b() {
@@ -52,16 +52,18 @@ function function_cb514c8b() {
     for (x = 1; x < var_885c7eef.size; x++) {
         if (isdefined(var_5901fe7f) && var_5901fe7f) {
             item_world::consume_item(var_885c7eef[x]);
-        } else if (distance2d(var_885c7eef[x].origin, var_8a9122c8.origin) < 4000) {
-            item_world::consume_item(var_885c7eef[x]);
-        } else {
-            var_5901fe7f = 1;
+            continue;
         }
+        if (distance2d(var_885c7eef[x].origin, var_8a9122c8.origin) < 4000) {
+            item_world::consume_item(var_885c7eef[x]);
+            continue;
+        }
+        var_5901fe7f = 1;
     }
 }
 
 // Namespace character_unlock_ruin/character_unlock_ruin
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5580879, Offset: 0x2d0
 // Size: 0x154
 function on_player_killed() {

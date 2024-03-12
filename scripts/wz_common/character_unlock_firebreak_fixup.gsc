@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_firebreak_fixup/character_unlock_firebreak_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc0b9589a, Offset: 0xc8
 // Size: 0x64
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_firebreak_fixup/character_unlock_firebreak_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8541243b, Offset: 0x138
 // Size: 0xb2
 function function_d95e620c() {

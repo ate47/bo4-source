@@ -87,14 +87,14 @@ function function_95de8f96(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_ee968813(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.fx_trail = util::playfxontag(localclientnum, level._effect[#"hash_4d733389a8e35a7c"], self, "tag_origin");
-        if (!isdefined(self.snd_looper)) {
-        }
-    } else {
-        if (isdefined(self.fx_trail)) {
-            stopfx(localclientnum, self.fx_trail);
-        }
         if (isdefined(self.snd_looper)) {
         }
+        return;
+    }
+    if (isdefined(self.fx_trail)) {
+        stopfx(localclientnum, self.fx_trail);
+    }
+    if (isdefined(self.snd_looper)) {
     }
 }
 
@@ -118,17 +118,17 @@ function function_61659b2f(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_76feff9b8f93c3d9");
             self.var_6450813b = self playloopsound(#"hash_117558f0dda6471f");
         }
-    } else {
-        if (isdefined(self.var_cc9c5baa)) {
-            stopfx(localclientnum, self.var_cc9c5baa);
-        }
-        if (isdefined(self.var_6450813b)) {
-            self playsound(localclientnum, #"hash_ae4b548c1d4a748");
-            self stoploopsound(self.var_6450813b);
-            self.var_6450813b = undefined;
-        }
-        util::playfxontag(localclientnum, level._effect[#"hash_b784dd4d224f7e"], self, "j_spine4");
+        return;
     }
+    if (isdefined(self.var_cc9c5baa)) {
+        stopfx(localclientnum, self.var_cc9c5baa);
+    }
+    if (isdefined(self.var_6450813b)) {
+        self playsound(localclientnum, #"hash_ae4b548c1d4a748");
+        self stoploopsound(self.var_6450813b);
+        self.var_6450813b = undefined;
+    }
+    util::playfxontag(localclientnum, level._effect[#"hash_b784dd4d224f7e"], self, "j_spine4");
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
@@ -140,13 +140,13 @@ function swordpistol_rumble(localclientnum, oldvalue, newvalue, bnewent, binitia
         switch (newvalue) {
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_swordpistol_melee_rumble");
-            break;
+            return;
         case 4:
             self playrumbleonentity(localclientnum, "zm_weap_swordpistol_shoot_rumble");
-            break;
+            return;
         case 5:
             self playrumbleonentity(localclientnum, "zm_weap_swordpistol_special_rumble");
-            break;
+            return;
         }
     }
 }

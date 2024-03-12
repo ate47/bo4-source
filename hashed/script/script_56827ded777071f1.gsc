@@ -91,7 +91,9 @@ function function_eac89317() {
         if (isdefined(s_notify.var_be3f58a)) {
             if (s_notify._notify === "traps_activated") {
                 function_bb013f42(s_notify.var_be3f58a);
-            } else if (s_notify._notify === "traps_available") {
+                continue;
+            }
+            if (s_notify._notify === "traps_available") {
                 function_75046566(s_notify.var_be3f58a);
             }
         }

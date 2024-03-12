@@ -120,18 +120,18 @@ function private function_686ab596() {
             case #"riot":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "riot");
                 ai setteam(#"team3");
-                break;
+                continue;
             case #"panic":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "panic");
-                break;
+                continue;
             case #"calm":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "calm");
-                break;
+                continue;
             case #"run":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "run");
-                break;
+                continue;
             default:
-                break;
+                continue;
             }
         }
         wait(0.05);

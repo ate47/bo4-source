@@ -67,19 +67,19 @@ function dog_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname
         array::add(self.var_93471229, util::playfxontag(localclientnum, level._effect[#"hash_33fd6545401e3622"], self, "j_spine2"));
         array::add(self.var_93471229, util::playfxontag(localclientnum, level._effect[#"hash_63f497890003547"], self, "j_neck"));
         array::add(self.var_93471229, util::playfxontag(localclientnum, level._effect[#"hash_55d6ab2c7eecbad4"], self, "tag_eye"));
-    } else {
-        if (isdefined(self.var_a9305c6e)) {
-            self stoploopsound(self.var_a9305c6e);
-        }
-        self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_off_luminance(), self zm::get_eyeball_color());
-        self zm::deletezombieeyes(localclientnum);
-        if (isdefined(self.var_93471229)) {
-            foreach (fxhandle in self.var_93471229) {
-                deletefx(localclientnum, fxhandle);
-            }
-        }
-        util::playfxontag(localclientnum, level._effect[#"dog_gib"], self, "j_spine2");
+        return;
     }
+    if (isdefined(self.var_a9305c6e)) {
+        self stoploopsound(self.var_a9305c6e);
+    }
+    self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_off_luminance(), self zm::get_eyeball_color());
+    self zm::deletezombieeyes(localclientnum);
+    if (isdefined(self.var_93471229)) {
+        foreach (fxhandle in self.var_93471229) {
+            deletefx(localclientnum, fxhandle);
+        }
+    }
+    util::playfxontag(localclientnum, level._effect[#"dog_gib"], self, "j_spine2");
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -98,10 +98,10 @@ function dog_round_fog_bank(localclientnum, oldval, newval, bnewent, binitialsna
     if (newval == 1) {
         e_player = getlocalplayers()[localclientnum];
         e_player thread function_33593a44(localclientnum, 1, 2);
-    } else {
-        e_player = getlocalplayers()[localclientnum];
-        e_player thread function_33593a44(localclientnum, 2, 1);
+        return;
     }
+    e_player = getlocalplayers()[localclientnum];
+    e_player thread function_33593a44(localclientnum, 2, 1);
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -119,7 +119,9 @@ function private function_33593a44(localclientnum, var_312d65d1, var_68f7ce2e, n
             n_blend = n_blend + n_increment;
             wait(0.05);
         }
-    } else if (var_312d65d1 == 2 && var_68f7ce2e == 1) {
+        return;
+    }
+    if (var_312d65d1 == 2 && var_68f7ce2e == 1) {
         while (n_blend < 1) {
             function_be93487f(localclientnum, var_312d65d1 | var_68f7ce2e, n_blend, 1 - n_blend, 0, 0);
             n_blend = n_blend + n_increment;

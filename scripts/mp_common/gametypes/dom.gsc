@@ -99,7 +99,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x361cd092, Offset: 0xfb8
 // Size: 0x5e
 function function_58306805() {
@@ -113,7 +113,7 @@ function function_58306805() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb21c798d, Offset: 0x1020
 // Size: 0xb8
 function function_eac6cecb() {
@@ -124,7 +124,7 @@ function function_eac6cecb() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x946ebfda, Offset: 0x10e0
 // Size: 0x66
 function function_a8da260c() {
@@ -135,7 +135,7 @@ function function_a8da260c() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xefe111cc, Offset: 0x1150
 // Size: 0xfc
 function onstartgametype() {
@@ -151,7 +151,7 @@ function onstartgametype() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe34f4a54, Offset: 0x1258
 // Size: 0x3cc
 function function_de560341() {
@@ -200,7 +200,7 @@ function function_de560341() {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5132b5f, Offset: 0x1630
 // Size: 0x11c
 function onendround(var_c1e98979) {
@@ -219,7 +219,7 @@ function onendround(var_c1e98979) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa800f2af, Offset: 0x1758
 // Size: 0x19a
 function setup_zone_exclusions() {
@@ -246,7 +246,7 @@ function setup_zone_exclusions() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa02f473f, Offset: 0x1900
 // Size: 0x1fa
 function updategametypedvars() {
@@ -262,7 +262,7 @@ function updategametypedvars() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2e17cd4e, Offset: 0x1b08
 // Size: 0x9e4
 function domflags() {
@@ -300,15 +300,19 @@ function domflags() {
         }
         if (trigger.script_label == "_a") {
             level.flags[0] = trigger;
-        } else if (trigger.script_label == "_b") {
-            level.flags[1] = trigger;
-        } else if (trigger.script_label == "_c") {
-            level.flags[2] = trigger;
-        } else {
-            /#
-                util::error("<unknown string>" + trigger.script_label);
-            #/
+            continue;
         }
+        if (trigger.script_label == "_b") {
+            level.flags[1] = trigger;
+            continue;
+        }
+        if (trigger.script_label == "_c") {
+            level.flags[2] = trigger;
+            continue;
+        }
+        /#
+            util::error("<unknown string>" + trigger.script_label);
+        #/
     }
     level.domflags = [];
     for (fi = 0; fi < level.flags.size; fi++) {
@@ -379,7 +383,7 @@ function domflags() {
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xaf68ae67, Offset: 0x24f8
 // Size: 0x122
 function getunownedflagneareststart(team, excludeflag) {
@@ -435,7 +439,7 @@ function domdebug() {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2488af0a, Offset: 0x28a8
 // Size: 0xf6
 function onbeginuse(sentient) {
@@ -454,7 +458,7 @@ function onbeginuse(sentient) {
 }
 
 // Namespace dom/dom
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x60baab55, Offset: 0x29a8
 // Size: 0x2d2
 function onuseupdate(team, progress, change) {
@@ -479,17 +483,19 @@ function onuseupdate(team, progress, change) {
         foreach (player in players) {
             if (player.team == team) {
                 player playsoundtoplayer(#"hash_3cca41b3702f764a", player);
-            } else {
-                player playsoundtoplayer(#"hash_2bb2a0ec776ba8f7", player);
+                continue;
             }
+            player playsoundtoplayer(#"hash_2bb2a0ec776ba8f7", player);
         }
-    } else if (change == 0 && !self.currentlyunoccupied) {
+        return;
+    }
+    if (change == 0 && !self.currentlyunoccupied) {
         self.currentlyunoccupied = 1;
     }
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd838fc23, Offset: 0x2c88
 // Size: 0x140
 function ondecaycomplete() {
@@ -508,7 +514,7 @@ function ondecaycomplete() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x602b6092, Offset: 0x2dd0
 // Size: 0x4c
 function flushobjectiveflagdialog() {
@@ -518,7 +524,7 @@ function flushobjectiveflagdialog() {
 }
 
 // Namespace dom/dom
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x53891ba3, Offset: 0x2e28
 // Size: 0xe4
 function statusdialog(dialog, team, objectivekey) {
@@ -540,7 +546,7 @@ function statusdialog(dialog, team, objectivekey) {
 }
 
 // Namespace dom/dom
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8d1efbea, Offset: 0x2f18
 // Size: 0x5a
 function onenduse(team, player, success) {
@@ -551,7 +557,7 @@ function onenduse(team, player, success) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e27a494, Offset: 0x2f80
 // Size: 0x1e4
 function flagcapturedfromneutral(team) {
@@ -573,7 +579,7 @@ function flagcapturedfromneutral(team) {
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5c772e63, Offset: 0x3170
 // Size: 0x21e
 function flagcapturedfromteam(team, oldteam) {
@@ -598,7 +604,7 @@ function flagcapturedfromteam(team, oldteam) {
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc655c6d9, Offset: 0x3398
 // Size: 0x144
 function flagneutralized(team, oldteam) {
@@ -607,15 +613,15 @@ function flagneutralized(team, oldteam) {
     if (getteamflagcount(team) == level.flags.size) {
         statusdialog("lost_all", oldteam, "objective_all");
         flushobjectiveflagdialog();
-    } else {
-        statusdialog("lost" + self.label, oldteam, "objective" + self.label);
-        globallogic_audio::flush_objective_dialog("objective_all");
-        globallogic_audio::play_2d_on_team("mpl_flagcapture_sting_enemy", oldteam);
+        return;
     }
+    statusdialog("lost" + self.label, oldteam, "objective" + self.label);
+    globallogic_audio::flush_objective_dialog("objective_all");
+    globallogic_audio::play_2d_on_team("mpl_flagcapture_sting_enemy", oldteam);
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbb7355fc, Offset: 0x34e8
 // Size: 0x226
 function getdomflagusestring(label, neutralized) {
@@ -665,7 +671,7 @@ function getdomflagusestring(label, neutralized) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x74a7dce5, Offset: 0x3718
 // Size: 0x454
 function onusewithneutralizingflag(sentient) {
@@ -721,7 +727,7 @@ function onusewithneutralizingflag(sentient) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xced43ec3, Offset: 0x3b78
 // Size: 0x3c4
 function onusewithoutneutralizingflag(sentient) {
@@ -774,7 +780,7 @@ function onusewithoutneutralizingflag(sentient) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2afaa392, Offset: 0x3f48
 // Size: 0xbc
 function onuse(sentient) {
@@ -793,7 +799,7 @@ function onuse(sentient) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3fef3e3, Offset: 0x4010
 // Size: 0x4c
 function totaldomination(team) {
@@ -803,7 +809,7 @@ function totaldomination(team) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17b51c8f, Offset: 0x4068
 // Size: 0x90
 function watchforbflagcap() {
@@ -817,7 +823,7 @@ function watchforbflagcap() {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x169bb298, Offset: 0x4100
 // Size: 0x40
 function endwatchforbflagcapaftertime(time) {
@@ -827,7 +833,7 @@ function endwatchforbflagcapaftertime(time) {
 }
 
 // Namespace dom/dom
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x1bed7ac9, Offset: 0x4148
 // Size: 0x3a4
 function function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, lastownerteam, isbflag, neutralizing) {
@@ -877,7 +883,7 @@ function function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, lastownerteam, is
 }
 
 // Namespace dom/dom
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x254a469d, Offset: 0x44f8
 // Size: 0x128
 function give_capture_credit(touchlist, string, lastownerteam, isbflag, neutralizing) {
@@ -895,7 +901,7 @@ function give_capture_credit(touchlist, string, lastownerteam, isbflag, neutrali
 }
 
 // Namespace dom/dom
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x31a21eec, Offset: 0x4628
 // Size: 0x4b4
 function function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing, time, var_a84f97bf, var_af8f6146) {
@@ -948,7 +954,7 @@ function function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing,
 }
 
 // Namespace dom/dom
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xacb95542, Offset: 0x4ae8
 // Size: 0x248
 function give_neutralized_credit(touchlist, string, lastownerteam, isbflag) {
@@ -980,7 +986,7 @@ function give_neutralized_credit(touchlist, string, lastownerteam, isbflag) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4d3dd249, Offset: 0x4d38
 // Size: 0x610
 function updatedomscores() {
@@ -1067,7 +1073,7 @@ function updatedomscores() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x722e97bc, Offset: 0x5350
 // Size: 0x35e
 function onscoreclosemusic() {
@@ -1117,7 +1123,7 @@ function onscoreclosemusic() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19f73506, Offset: 0x56b8
 // Size: 0xb0
 function on_round_switch() {
@@ -1129,7 +1135,7 @@ function on_round_switch() {
 }
 
 // Namespace dom/dom
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xebac2b56, Offset: 0x5770
 // Size: 0xcd4
 function function_610d3790(einflictor, victim, idamage, weapon) {
@@ -1252,11 +1258,10 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
                         }
                         victim recordkillmodifier("assaulting");
                         break;
-                    } else {
-                        /#
-                            attacker iprintlnbold("<unknown string>");
-                        #/
                     }
+                    /#
+                        attacker iprintlnbold("<unknown string>");
+                    #/
                 }
             }
         }
@@ -1280,7 +1285,7 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
 }
 
 // Namespace dom/dom
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x7d81d1f4, Offset: 0x6450
 // Size: 0xfc
 function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
@@ -1296,7 +1301,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf7c8a55b, Offset: 0x6558
 // Size: 0x198
 function function_a800815(victim, attacker) {
@@ -1318,7 +1323,7 @@ function function_a800815(victim, attacker) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f5ce938, Offset: 0x66f8
 // Size: 0x92
 function function_d3a438fb(entity) {
@@ -1331,7 +1336,7 @@ function function_d3a438fb(entity) {
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe372c12a, Offset: 0x6798
 // Size: 0x1a6
 function killwhilecontesting(flag, weapon) {
@@ -1360,7 +1365,7 @@ function killwhilecontesting(flag, weapon) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x103a4baf, Offset: 0x6948
 // Size: 0xae
 function updateattackermultikills() {
@@ -1380,7 +1385,7 @@ function updateattackermultikills() {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ac0e941, Offset: 0x6a00
 // Size: 0x78
 function getteamflagcount(team) {
@@ -1394,7 +1399,7 @@ function getteamflagcount(team) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a3ad082, Offset: 0x6a80
 // Size: 0x1a
 function getflagteam() {
@@ -1402,7 +1407,7 @@ function getflagteam() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9098ae0d, Offset: 0x6aa8
 // Size: 0xf2
 function getboundaryflags() {
@@ -1475,14 +1480,14 @@ function getownedandboundingflagspawns(team) {
             for (s = 0; s < level.flags[i].nearbyspawns.size; s++) {
                 spawns[spawns.size] = level.flags[i].nearbyspawns[s];
             }
-        } else {
-            for (j = 0; j < level.flags[i].adjflags.size; j++) {
-                if (level.flags[i].adjflags[j] getflagteam() == team) {
-                    for (s = 0; s < level.flags[i].nearbyspawns.size; s++) {
-                        spawns[spawns.size] = level.flags[i].nearbyspawns[s];
-                    }
-                    continue;
+            continue;
+        }
+        for (j = 0; j < level.flags[i].adjflags.size; j++) {
+            if (level.flags[i].adjflags[j] getflagteam() == team) {
+                for (s = 0; s < level.flags[i].nearbyspawns.size; s++) {
+                    spawns[spawns.size] = level.flags[i].nearbyspawns[s];
                 }
+                continue;
             }
         }
     }
@@ -1506,7 +1511,7 @@ function getownedflagspawns(team) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb5dc2bf8, Offset: 0x7060
 // Size: 0x5b2
 function flagsetup() {
@@ -1529,11 +1534,11 @@ function flagsetup() {
         }
         if (isdefined(closestdesc.flag)) {
             globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + closestdesc.script_linkname + "" is nearby more than one flag; is there a unique descriptor near each flag?");
-        } else {
-            flags[i].descriptor = closestdesc;
-            closestdesc.flag = flags[i];
-            descriptorsbylinkname[closestdesc.script_linkname] = closestdesc;
+            continue;
         }
+        flags[i].descriptor = closestdesc;
+        closestdesc.flag = flags[i];
+        descriptorsbylinkname[closestdesc.script_linkname] = closestdesc;
     }
     if (!isdefined(level.maperrors) || level.maperrors.size == 0) {
         for (i = 0; i < flags.size; i++) {
@@ -1546,14 +1551,14 @@ function flagsetup() {
                 otherdesc = descriptorsbylinkname[adjdescs[j]];
                 if (!isdefined(otherdesc) || otherdesc.targetname != "flag_descriptor") {
                     globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + flags[i].descriptor.script_linkname + "" linked to "" + adjdescs[j] + "" which does not exist as a script_linkname of any other entity with a targetname of flag_descriptor (or, if it does, that flag_descriptor has not been assigned to a flag)");
-                } else {
-                    adjflag = otherdesc.flag;
-                    if (adjflag == flags[i]) {
-                        globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + flags[i].descriptor.script_linkname + "" linked to itself");
-                    } else {
-                        flags[i].adjflags[flags[i].adjflags.size] = adjflag;
-                    }
+                    continue;
                 }
+                adjflag = otherdesc.flag;
+                if (adjflag == flags[i]) {
+                    globallogic_utils::add_map_error("flag_descriptor with script_linkname "" + flags[i].descriptor.script_linkname + "" linked to itself");
+                    continue;
+                }
+                flags[i].adjflags[flags[i].adjflags.size] = adjflag;
             }
         }
     }
@@ -1585,7 +1590,7 @@ function flagsetup() {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x885671f5, Offset: 0x7620
 // Size: 0x23c
 function createflagspawninfluencers() {
@@ -1611,7 +1616,7 @@ function createflagspawninfluencers() {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3edff0f, Offset: 0x7868
 // Size: 0x2cc
 function update_spawn_influencers(team) {
@@ -1633,20 +1638,20 @@ function update_spawn_influencers(team) {
             enableinfluencer(self.var_7f85bfce, 0);
             enableinfluencer(self.var_b56facb1, 0);
         }
-    } else {
-        enableinfluencer(self.neutral_flag_influencer, 0);
-        enableinfluencer(self.owned_flag_influencer, 1);
-        enableinfluencer(self.enemy_flag_influencer, 1);
-        if (isdefined(self function_58306805())) {
-            enableinfluencer(self.var_b0f6f826, 0);
-            enableinfluencer(self.var_7f85bfce, 1);
-            enableinfluencer(self.var_b56facb1, 1);
-            setinfluencerteammask(self.var_7f85bfce, util::getteammask(team));
-            setinfluencerteammask(self.var_b56facb1, util::getotherteamsmask(team));
-        }
-        setinfluencerteammask(self.owned_flag_influencer, util::getteammask(team));
-        setinfluencerteammask(self.enemy_flag_influencer, util::getotherteamsmask(team));
+        return;
     }
+    enableinfluencer(self.neutral_flag_influencer, 0);
+    enableinfluencer(self.owned_flag_influencer, 1);
+    enableinfluencer(self.enemy_flag_influencer, 1);
+    if (isdefined(self function_58306805())) {
+        enableinfluencer(self.var_b0f6f826, 0);
+        enableinfluencer(self.var_7f85bfce, 1);
+        enableinfluencer(self.var_b56facb1, 1);
+        setinfluencerteammask(self.var_7f85bfce, util::getteammask(team));
+        setinfluencerteammask(self.var_b56facb1, util::getotherteamsmask(team));
+    }
+    setinfluencerteammask(self.owned_flag_influencer, util::getteammask(team));
+    setinfluencerteammask(self.enemy_flag_influencer, util::getotherteamsmask(team));
 }
 
 // Namespace dom/dom
@@ -1673,7 +1678,7 @@ function function_bde5689e(team, flag_team, label) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd96fb32e, Offset: 0x7c50
 // Size: 0xf2
 function dominated_challenge_check() {
@@ -1719,7 +1724,7 @@ function dominated_check() {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1959e290, Offset: 0x7e48
 // Size: 0x14e
 function updatecapsperminute(lastownerteam) {
@@ -1746,7 +1751,7 @@ function updatecapsperminute(lastownerteam) {
 }
 
 // Namespace dom/dom
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x60d745ff, Offset: 0x7fa0
 // Size: 0x62
 function isscoreboosting(player, flag) {
@@ -1763,7 +1768,7 @@ function isscoreboosting(player, flag) {
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x52f5c8b1, Offset: 0x8010
 // Size: 0xa6
 function on_touch_use(sentient) {
@@ -1776,7 +1781,7 @@ function on_touch_use(sentient) {
 }
 
 // Namespace dom/dom
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a58488c, Offset: 0x80c0
 // Size: 0x23a
 function onupdateuserate() {
@@ -1799,16 +1804,16 @@ function onupdateuserate() {
             }
         }
         self.contested = 1;
-    } else {
-        if (previousstate == 1) {
-            self notify(#"contest_over");
-        }
-        self.contested = 0;
+        return;
     }
+    if (previousstate == 1) {
+        self notify(#"contest_over");
+    }
+    self.contested = 0;
 }
 
 // Namespace dom/dom
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6811f7d, Offset: 0x8308
 // Size: 0x26e
 function function_1609a882(var_c1e98979) {

@@ -10,7 +10,7 @@
 #namespace killstreak_vehicle;
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0a671b8, Offset: 0x128
 // Size: 0x134
 function init() {
@@ -36,7 +36,7 @@ function init_killstreak(bundle) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x73591017, Offset: 0x2f8
 // Size: 0xbc
 function spawned(localclientnum, bundle) {
@@ -50,7 +50,7 @@ function spawned(localclientnum, bundle) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd7b76ce, Offset: 0x3c0
 // Size: 0x78
 function demo_think(localclientnum) {
@@ -65,7 +65,7 @@ function demo_think(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x82532e1a, Offset: 0x440
 // Size: 0x114
 function boost_blur(localclientnum) {
@@ -78,7 +78,7 @@ function boost_blur(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6745f869, Offset: 0x560
 // Size: 0x50
 function boost_think(localclientnum) {
@@ -90,7 +90,7 @@ function boost_think(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6cbeeb4c, Offset: 0x5b8
 // Size: 0x34
 function shutdown_think(localclientnum) {
@@ -115,7 +115,7 @@ function play_boost_fx(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe3bef2b9, Offset: 0x6a0
 // Size: 0xa0
 function stunnedhandler(localclientnum) {
@@ -130,7 +130,7 @@ function stunnedhandler(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7baeb94c, Offset: 0x748
 // Size: 0x5c
 function notstunnedhandler(localclientnum) {
@@ -141,7 +141,7 @@ function notstunnedhandler(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbb5edda3, Offset: 0x7b0
 // Size: 0x90
 function play_stunned_fx_handler(localclientnum) {
@@ -155,7 +155,7 @@ function play_stunned_fx_handler(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ca28fca, Offset: 0x848
 // Size: 0x70
 function enginestutterhandler(localclientnum) {
@@ -169,7 +169,7 @@ function enginestutterhandler(localclientnum) {
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xb5ec124a, Offset: 0x8c0
 // Size: 0x11c
 function ondrivingfxcollision(localclientnum, player, hip, hitn, hit_intensity) {
@@ -187,7 +187,7 @@ function ondrivingfxcollision(localclientnum, player, hip, hitn, hit_intensity) 
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf5bcb5be, Offset: 0x9e8
 // Size: 0x14
 function ondrivingfxjumplanding(localclientnum, player) {

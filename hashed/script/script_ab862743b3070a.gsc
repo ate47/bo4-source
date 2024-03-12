@@ -90,10 +90,10 @@ function dog_spawner_init() {
     for (i = 0; i < level.dog_spawners.size; i++) {
         if (zm_spawner::is_spawner_targeted_by_blocker(level.dog_spawners[i])) {
             level.dog_spawners[i].is_enabled = 0;
-        } else {
-            level.dog_spawners[i].is_enabled = 1;
-            level.dog_spawners[i].script_forcespawn = 1;
+            continue;
         }
+        level.dog_spawners[i].is_enabled = 1;
+        level.dog_spawners[i].script_forcespawn = 1;
     }
     /#
         assert(level.dog_spawners.size > 0);
@@ -143,9 +143,9 @@ function waiting_for_next_dog_spawn(count, max) {
     }
     if (isdefined(count) && isdefined(max)) {
         wait(max(default_wait - count / max, 0.05));
-    } else {
-        wait(max(default_wait - 0.5, 0.05));
+        return;
     }
+    wait(max(default_wait - 0.5, 0.05));
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -262,9 +262,8 @@ function function_a5abd591() {
     }
     if (!zm_utility::is_player_valid(var_d6c885ef)) {
         return undefined;
-    } else {
-        return var_d6c885ef;
     }
+    return var_d6c885ef;
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -286,7 +285,9 @@ function get_favorite_enemy() {
         }
         if (!isdefined(least_hunted)) {
             least_hunted = player;
-        } else if (player.hunted_by < least_hunted.hunted_by) {
+            continue;
+        }
+        if (player.hunted_by < least_hunted.hunted_by) {
             least_hunted = player;
         }
     }
@@ -554,10 +555,10 @@ function dog_death() {
         if (isdefined(self)) {
             self delete();
         }
-    } else {
-        bhtnactionstartevent(self, "death");
-        self notify(#"bhtn_action_notify", {#action:"death"});
+        return;
     }
+    bhtnactionstartevent(self, "death");
+    self notify(#"bhtn_action_notify", {#action:"death"});
 }
 
 // Namespace zombie_dog_util/ai_dog_util
@@ -760,8 +761,8 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
     } else if (isdefined(level.dog_spawn_func)) {
         s_spawn_loc = [[ level.dog_spawn_func ]]();
     } else if (level.zm_loc_types[#"dog_location"].size > 0) {
-        var_5f3b05e8 = e_target zm_zonemgr::get_player_zone();
-        if (!isdefined(var_5f3b05e8)) {
+        str_target_zone = e_target zm_zonemgr::get_player_zone();
+        if (!isdefined(str_target_zone)) {
             return undefined;
         }
         var_24f5d9f8 = [];
@@ -770,10 +771,10 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
         } else if (!isarray(var_24f5d9f8)) {
             var_24f5d9f8 = array(var_24f5d9f8);
         }
-        if (!isinarray(var_24f5d9f8, var_5f3b05e8)) {
-            var_24f5d9f8[var_24f5d9f8.size] = var_5f3b05e8;
+        if (!isinarray(var_24f5d9f8, str_target_zone)) {
+            var_24f5d9f8[var_24f5d9f8.size] = str_target_zone;
         }
-        var_4cb112e = level.zones[var_5f3b05e8];
+        var_4cb112e = level.zones[str_target_zone];
         adj_zone_names = getarraykeys(var_4cb112e.adjacent_zones);
         foreach (str_zone in adj_zone_names) {
             if (var_4cb112e.adjacent_zones[str_zone].is_connected) {
@@ -785,9 +786,9 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
                 if (!isinarray(var_24f5d9f8, level.zones[str_zone].name)) {
                     var_24f5d9f8[var_24f5d9f8.size] = level.zones[str_zone].name;
                 }
-            } else {
-                arrayremovevalue(adj_zone_names, level.zones[str_zone].name);
+                continue;
             }
+            arrayremovevalue(adj_zone_names, level.zones[str_zone].name);
         }
         foreach (str_zone in adj_zone_names) {
             s_zone = level.zones[str_zone];
@@ -819,7 +820,9 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
                         var_e99dec8e = array(var_e99dec8e);
                     }
                     var_e99dec8e[var_e99dec8e.size] = v_loc;
-                } else if (n_sqr_dist > 376996) {
+                    continue;
+                }
+                if (n_sqr_dist > 376996) {
                     if (!isdefined(var_22b984bd)) {
                         var_22b984bd = [];
                     } else if (!isarray(var_22b984bd)) {
@@ -906,7 +909,6 @@ function function_71e3c90d() {
             return 20;
         }
         return 10;
-        break;
     }
 }
 

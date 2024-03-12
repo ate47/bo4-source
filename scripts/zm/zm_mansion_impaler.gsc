@@ -63,11 +63,11 @@ function init() {
 // Checksum 0xdbbc2a32, Offset: 0x7a8
 // Size: 0x1e4
 function register_steps() {
-    zm_sq::register(#"zm_mansion_impaler", #"step_1", #"impaler_step_1", &function_cdfe68a2, &cleanup_step_1);
-    zm_sq::register(#"zm_mansion_impaler", #"step_2", #"impaler_step_2", &function_a03f8d25, &cleanup_step_2);
-    zm_sq::register(#"zm_mansion_impaler", #"step_3", #"impaler_step_3", &function_aa79a199, &cleanup_step_3);
-    zm_sq::register(#"zm_mansion_impaler", #"step_4", #"impaler_step_4", &function_86e35a69, &cleanup_step_4);
-    zm_sq::register(#"zm_mansion_impaler", #"step_5", #"impaler_step_5", &function_e35c1359, &cleanup_step_5);
+    zm_sq::register(#"zm_mansion_impaler", #"step_1", #"impaler_step_1", &init_step_1, &cleanup_step_1);
+    zm_sq::register(#"zm_mansion_impaler", #"step_2", #"impaler_step_2", &init_step_2, &cleanup_step_2);
+    zm_sq::register(#"zm_mansion_impaler", #"step_3", #"impaler_step_3", &init_step_3, &cleanup_step_3);
+    zm_sq::register(#"zm_mansion_impaler", #"step_4", #"impaler_step_4", &init_step_4, &cleanup_step_4);
+    zm_sq::register(#"zm_mansion_impaler", #"step_5", #"impaler_step_5", &init_step_5, &cleanup_step_5);
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler
@@ -117,11 +117,11 @@ function function_355450a4() {
 // Size: 0xe4
 function function_edb1add2() {
     level flag::wait_till("all_players_spawned");
-    self.var_ce3d3ff6 = util::spawn_model(self.model, self.origin, self.angles);
+    self.mdl_candle = util::spawn_model(self.model, self.origin, self.angles);
     util::wait_network_frame();
-    self.var_ce3d3ff6 clientfield::set("" + #"candle_light", 1);
-    self.var_ce3d3ff6 setcandamage(1);
-    self.var_ce3d3ff6.health = 10000;
+    self.mdl_candle clientfield::set("" + #"candle_light", 1);
+    self.mdl_candle setcandamage(1);
+    self.mdl_candle.health = 10000;
     self thread function_d84548e7();
 }
 
@@ -129,7 +129,7 @@ function function_edb1add2() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xea4814fe, Offset: 0xd30
 // Size: 0x4c
-function function_cdfe68a2(var_a276c861) {
+function init_step_1(var_a276c861) {
     if (!var_a276c861) {
         while (level.var_e93e5852 < 6) {
             wait(1);
@@ -145,7 +145,7 @@ function function_cdfe68a2(var_a276c861) {
 function cleanup_step_1(var_5ea5c94d, ended_early) {
     a_s_candles = struct::get_array("s_burn");
     foreach (s_candle in a_s_candles) {
-        s_candle.var_ce3d3ff6 clientfield::set("" + #"candle_light", 0);
+        s_candle.mdl_candle clientfield::set("" + #"candle_light", 0);
     }
     level notify(#"hash_785f94bb8c05dc05");
 }
@@ -154,7 +154,7 @@ function cleanup_step_1(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf857be6a, Offset: 0xe70
 // Size: 0x17c
-function function_a03f8d25(var_a276c861) {
+function init_step_2(var_a276c861) {
     if (!var_a276c861) {
         s_monolith = struct::get("s_monolith");
         s_monolith.var_f4ecfb70 = util::spawn_model("tag_origin", s_monolith.origin, s_monolith.angles);
@@ -195,7 +195,7 @@ function cleanup_step_2(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x603bd3fe, Offset: 0x1190
 // Size: 0x684
-function function_aa79a199(var_a276c861) {
+function init_step_3(var_a276c861) {
     if (!var_a276c861) {
         s_cemetery = struct::get("s_possess");
         if (isdefined(level.monolith_ghost)) {
@@ -260,7 +260,7 @@ function cleanup_step_3(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x688362a8, Offset: 0x18f0
 // Size: 0x134
-function function_86e35a69(var_a276c861) {
+function init_step_4(var_a276c861) {
     if (!var_a276c861) {
         var_1c3e934b = struct::get("s_imp_enter");
         array::thread_all(struct::get_array("s_imp_symbol"), &function_e7423237);
@@ -284,7 +284,7 @@ function cleanup_step_4(var_5ea5c94d, ended_early) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xeba4b1ef, Offset: 0x1a88
 // Size: 0x64
-function function_e35c1359(var_a276c861) {
+function init_step_5(var_a276c861) {
     level thread function_886c88e();
     level thread open_crypt();
     if (!var_a276c861) {
@@ -308,8 +308,8 @@ function cleanup_step_5(var_5ea5c94d, ended_early) {
     exploder::exploder("exp_lgt_crypt_normal");
     mansion_util::function_5904a8e1();
     var_14d5aa56 = getentarray("imp_floor_symbols", "script_noteworthy");
-    foreach (var_9e7c3935 in var_14d5aa56) {
-        var_9e7c3935 delete();
+    foreach (mdl_symbol in var_14d5aa56) {
+        mdl_symbol delete();
     }
 }
 
@@ -321,11 +321,11 @@ function function_d84548e7() {
     level endon(#"hash_785f94bb8c05dc05");
     while (1) {
         s_notify = undefined;
-        s_notify = self.var_ce3d3ff6 waittill(#"damage");
+        s_notify = self.mdl_candle waittill(#"damage");
         if (s_notify.mod === "MOD_MELEE") {
-            self.var_ce3d3ff6 clientfield::set("" + #"candle_light", 0);
+            self.mdl_candle clientfield::set("" + #"candle_light", 0);
             level.var_e93e5852++;
-            break;
+            return;
         }
     }
 }
@@ -353,9 +353,8 @@ function registerremaining_retreat_() {
 function function_32606f19() {
     if (isdefined(self.bgb) && self.bgb != #"none") {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler
@@ -368,11 +367,11 @@ function function_89d75db(e_player) {
             return 0;
         }
         return 1;
-    } else if (!(isdefined(level.is_forever_solo_game) && level.is_forever_solo_game) && isdefined(e_player.var_34b7151c) && e_player.var_34b7151c == level.round_number) {
-        return 0;
-    } else {
-        return 1;
     }
+    if (!(isdefined(level.is_forever_solo_game) && level.is_forever_solo_game) && isdefined(e_player.var_34b7151c) && e_player.var_34b7151c == level.round_number) {
+        return 0;
+    }
+    return 1;
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler
@@ -498,7 +497,7 @@ function function_4802a272() {
     do {
         var_80296afc = self function_4a51430a(160, 1);
         waitframe(1);
-    } while(!isalive(var_80296afc));
+    } while (!isalive(var_80296afc));
     n_player_index = var_80296afc zm_characters::function_d35e4c92();
     switch (n_player_index) {
     case 10:
@@ -531,7 +530,7 @@ function function_4802a272() {
     do {
         var_80296afc = self function_4a51430a();
         waitframe(1);
-    } while(!isalive(var_80296afc));
+    } while (!isalive(var_80296afc));
     n_player_index = var_80296afc zm_characters::function_d35e4c92();
     var_5e246f88 = undefined;
     switch (n_player_index) {
@@ -560,7 +559,7 @@ function function_4802a272() {
     do {
         var_80296afc = self function_4a51430a();
         waitframe(1);
-    } while(!isalive(var_80296afc));
+    } while (!isalive(var_80296afc));
     n_player_index = var_80296afc zm_characters::function_d35e4c92();
     var_5e246f88 = undefined;
     switch (n_player_index) {
@@ -823,15 +822,15 @@ function function_7de84c26(v_drop, n_drop) {
         var_8dd283dd = #"p8_zm_man_jewelry_bracelet";
         break;
     }
-    var_ce72b8cb = util::spawn_model(var_8dd283dd, v_drop + vectorscale((0, 0, 1), 12));
+    mdl_drop = util::spawn_model(var_8dd283dd, v_drop + vectorscale((0, 0, 1), 12));
     util::wait_network_frame();
-    var_ce72b8cb clientfield::set("" + #"jewelry_dropped", 1);
-    var_ce72b8cb bobbing((0, 0, 1), 2, 3);
+    mdl_drop clientfield::set("" + #"jewelry_dropped", 1);
+    mdl_drop bobbing((0, 0, 1), 2, 3);
     /#
     #/
-    var_ffba68db = var_ce72b8cb zm_unitrigger::create(undefined, 64, &function_3c1f242b, 1, 1);
+    var_ffba68db = mdl_drop zm_unitrigger::create(undefined, 64, &function_3c1f242b, 1, 1);
     var_ffba68db.script_int = n_drop;
-    var_ffba68db.var_ce72b8cb = var_ce72b8cb;
+    var_ffba68db.mdl_drop = mdl_drop;
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler
@@ -840,7 +839,7 @@ function function_7de84c26(v_drop, n_drop) {
 // Size: 0x218
 function function_3c1f242b() {
     level endon(#"hash_38fe2a57d5f9d6ba");
-    var_ce72b8cb = self.stub.var_ce72b8cb;
+    mdl_drop = self.stub.mdl_drop;
     n_loc = self.stub.script_int;
     while (1) {
         waitresult = undefined;
@@ -861,13 +860,13 @@ function function_3c1f242b() {
                 str_flag = #"hash_67e414588696c3df";
                 break;
             }
-            if (isdefined(var_ce72b8cb)) {
-                playsoundatposition(#"hash_6b3b011b2d22c586", var_ce72b8cb.origin);
+            if (isdefined(mdl_drop)) {
+                playsoundatposition(#"hash_6b3b011b2d22c586", mdl_drop.origin);
             }
             e_player thread zm_audio::create_and_play_dialog(#"component_pickup", #"generic");
             level flag::set(str_flag);
-            if (isdefined(var_ce72b8cb)) {
-                var_ce72b8cb delete();
+            if (isdefined(mdl_drop)) {
+                mdl_drop delete();
             }
             zm_unitrigger::unregister_unitrigger(self.stub);
         }
@@ -880,8 +879,8 @@ function function_3c1f242b() {
 // Size: 0x304
 function function_e7423237() {
     level endon(#"hash_38fe2a57d5f9d6ba");
-    var_9e7c3935 = getent(self.target, "targetname");
-    var_9e7c3935 clientfield::set("" + #"hash_3d5a64bed5e39d24", 1);
+    mdl_symbol = getent(self.target, "targetname");
+    mdl_symbol clientfield::set("" + #"hash_3d5a64bed5e39d24", 1);
     var_ffba68db = self zm_unitrigger::create(undefined, 80, &function_9f0de8b3, 1, 1);
     var_ffba68db.script_int = self.script_int;
     switch (self.script_int) {
@@ -906,13 +905,13 @@ function function_e7423237() {
     util::wait_network_frame();
     wpn_betty_explo_vox bobbing((0, 0, 1), 2, 3);
     wpn_betty_explo_vox clientfield::set("" + #"jewelry_dropped", 1);
-    var_9e7c3935 clientfield::set("" + #"hash_3d5a64bed5e39d24", 0);
+    mdl_symbol clientfield::set("" + #"hash_3d5a64bed5e39d24", 0);
     level flag::wait_till(#"hash_61263135b6fb6340");
     if (isdefined(wpn_betty_explo_vox)) {
         wpn_betty_explo_vox delete();
     }
-    if (isdefined(var_9e7c3935)) {
-        var_9e7c3935 delete();
+    if (isdefined(mdl_symbol)) {
+        mdl_symbol delete();
     }
 }
 
@@ -1249,9 +1248,9 @@ function function_615d8c38(params) {
             self zombie_utility::gib_random_parts();
             gibserverutils::annihilate(self);
             self crossbow_kill(self.health, e_player, e_bolt, str_hitloc, str_meansofdeath);
-            break;
+            return;
         }
-        break;
+        return;
     case #"catalyst":
         switch (str_hitloc) {
         case #"head":
@@ -1265,14 +1264,14 @@ function function_615d8c38(params) {
             self zombie_utility::gib_random_parts();
             gibserverutils::annihilate(self);
             self crossbow_kill(self.health, e_player, e_bolt, str_hitloc, str_meansofdeath);
-            break;
+            return;
         }
-        break;
+        return;
     case #"nosferatu":
         self zombie_utility::gib_random_parts();
         gibserverutils::annihilate(self);
         self crossbow_kill(self.health, e_player, e_bolt, str_hitloc, str_meansofdeath);
-        break;
+        return;
     }
 }
 

@@ -201,7 +201,7 @@ function private function_413cffae(n_interval, e_player) {
         e_player function_27cd9d6(0.15);
         do {
             weapon = array::random(self.var_ea033f4a);
-        } while(e_player hasweapon(weapon));
+        } while (e_player hasweapon(weapon));
         e_player zm_weapons::weapon_give(weapon);
         e_player.var_89d523af = weapon;
         if (zm_weapons::is_weapon_upgraded(weapon)) {
@@ -249,10 +249,8 @@ function function_579553d8(n_interval) {
 function function_27cd9d6(var_41f1a085 = 0) {
     self endon(#"disconnect", #"hash_14795fd12c6dae32");
     level endon(#"hash_7646638df88a3656");
-    n_time = 0;
-    while (!isalive(self) || self laststand::player_is_in_laststand() || self isusingoffhand() || self function_55acff10() || self zm_laststand::is_reviving_any() || n_time < var_41f1a085) {
+    for (n_time = 0; !isalive(self) || self laststand::player_is_in_laststand() || self isusingoffhand() || self function_55acff10() || self zm_laststand::is_reviving_any() || n_time < var_41f1a085; n_time = n_time + float(function_60d95f53()) / 1000) {
         waitframe(1);
-        n_time = n_time + float(function_60d95f53()) / 1000;
     }
 }
 

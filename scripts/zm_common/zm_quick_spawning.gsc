@@ -187,7 +187,9 @@ function function_367e3573(force = 0) {
         if (!var_403bc67a) {
             if (!isdefined(var_1ae24209)) {
                 var_1ae24209 = ai_enemy;
-            } else if (ai_enemy.var_c6e0686b > var_1ae24209.var_c6e0686b) {
+                continue;
+            }
+            if (ai_enemy.var_c6e0686b > var_1ae24209.var_c6e0686b) {
                 var_1ae24209 = ai_enemy;
             }
         }

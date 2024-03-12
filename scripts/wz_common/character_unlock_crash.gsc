@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9691128, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe718012d, Offset: 0x130
 // Size: 0x19c
 function function_2613aeec(enabled) {
@@ -38,14 +38,14 @@ function function_2613aeec(enabled) {
         callback::on_item_use(&on_item_use);
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
             item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 3);
-        } else {
-            item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 10);
+            return;
         }
+        item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 10);
     }
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x841bd559, Offset: 0x2d8
 // Size: 0x15c
 function function_1c4b5097(item) {
@@ -67,7 +67,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xadf214b7, Offset: 0x440
 // Size: 0x124
 function on_drop_item(params) {
@@ -90,7 +90,7 @@ function on_drop_item(params) {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41f669a3, Offset: 0x570
 // Size: 0xdc
 function on_item_pickup(params) {
@@ -106,7 +106,7 @@ function on_item_pickup(params) {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd0260cca, Offset: 0x658
 // Size: 0xd4
 function on_item_use(params) {
@@ -122,7 +122,7 @@ function on_item_use(params) {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x508ebb24, Offset: 0x738
 // Size: 0xf0
 function private function_687146d() {
@@ -138,7 +138,7 @@ function private function_687146d() {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5d3ac5da, Offset: 0x830
 // Size: 0x1e2
 function function_4ac25840(dead_team) {
@@ -162,7 +162,7 @@ function function_4ac25840(dead_team) {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x2be49eb0, Offset: 0xa20
 // Size: 0x80
 function private function_c816ea5b() {

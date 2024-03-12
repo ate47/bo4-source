@@ -189,9 +189,9 @@ function function_3a6ce932() {
 // Size: 0x136
 function function_135e7d64(e_player) {
     s_parent = self.stub.related_parent;
-    var_d4c288fb = getent(s_parent.target, "targetname");
-    b_have = level flag::get(var_d4c288fb.model + "_picked_up");
-    b_placed = level flag::get(var_d4c288fb.model + "_placed");
+    mdl_stub = getent(s_parent.target, "targetname");
+    b_have = level flag::get(mdl_stub.model + "_picked_up");
+    b_placed = level flag::get(mdl_stub.model + "_placed");
     var_5168e40f = e_player zm_utility::is_player_looking_at(s_parent.origin, 0.96, 0);
     return isdefined(b_have) && b_have && isdefined(var_5168e40f) && var_5168e40f && isdefined(b_placed) && !b_placed;
 }
@@ -212,10 +212,8 @@ function function_ad85b216() {
     }
     playsoundatposition("zmb_ee_brewing_done", (0, 0, 0));
     s_loc = struct::get("s_perk_drop");
-    perk = zm_powerups::specific_powerup_drop("free_perk", s_loc.origin, #"allies", undefined, undefined, 1, 1);
-    while (!isdefined(perk)) {
+    for (perk = zm_powerups::specific_powerup_drop("free_perk", s_loc.origin, #"allies", undefined, undefined, 1, 1); !isdefined(perk); perk = zm_powerups::specific_powerup_drop("free_perk", s_loc.origin, #"allies", undefined, undefined, 1, 1)) {
         waitframe(1);
-        perk = zm_powerups::specific_powerup_drop("free_perk", s_loc.origin, #"allies", undefined, undefined, 1, 1);
     }
 }
 
@@ -311,7 +309,7 @@ function function_294c9ea7(str_triggers) {
         t_exit = trigger::wait_till(str_triggers, "targetname", self);
         if (t_exit != t_entrance && !(isdefined(self.var_62b59590) && self.var_62b59590) && zm_utility::is_player_valid(self, 0, 0)) {
             self flag::set(#"hash_481ca29c700e04dd");
-            break;
+            return;
         }
     }
 }
@@ -481,9 +479,9 @@ function function_2ea36422() {
 // Checksum 0x8a299c6d, Offset: 0x2060
 // Size: 0x258
 function function_5d0d1807() {
-    var_9788a49a = getentarray("elevated_flames", "targetname");
+    a_mdl_fire = getentarray("elevated_flames", "targetname");
     level thread scene::init("special_rounds_scene_alt", "targetname");
-    foreach (model in var_9788a49a) {
+    foreach (model in a_mdl_fire) {
         model clientfield::set("" + #"hash_5afda864f8b64f5c", 1);
     }
     level waittill(#"hash_7b9245ff51f3d4f7");
@@ -492,7 +490,7 @@ function function_5d0d1807() {
         playfx(level._effect[#"hash_3ecc995bb97331ac"], s_scene.origin);
         s_scene scene::stop(1);
     }
-    foreach (model in var_9788a49a) {
+    foreach (model in a_mdl_fire) {
         model clientfield::set("" + #"hash_5afda864f8b64f5c", 0);
     }
 }
@@ -512,10 +510,10 @@ function function_1eddbf9e() {
             if (var_c265cd7f == level.players.size) {
                 level thread function_c74f4cf4();
             }
-        } else {
-            var_c265cd7f--;
-            level notify(#"hash_5bc627cff03bad5");
+            continue;
         }
+        var_c265cd7f--;
+        level notify(#"hash_5bc627cff03bad5");
     }
 }
 
@@ -551,7 +549,9 @@ function function_def71ac3() {
         if (self.var_b3122c84 == #"hash_4a67009994e6a476" && !(isdefined(self.var_a4ab5d88) && self.var_a4ab5d88)) {
             self.var_a4ab5d88 = 1;
             level notify(#"hash_46267aa0f17a3c00", {#var_8571ab76:1});
-        } else if (isdefined(self.var_a4ab5d88) && self.var_a4ab5d88) {
+            continue;
+        }
+        if (isdefined(self.var_a4ab5d88) && self.var_a4ab5d88) {
             self.var_a4ab5d88 = 0;
             level notify(#"hash_46267aa0f17a3c00", {#var_8571ab76:0});
         }

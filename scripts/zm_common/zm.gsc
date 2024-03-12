@@ -454,7 +454,7 @@ function function_9a8ab40f() {
                 var_183929a8++;
             }
         }
-    } while(a_players.size > var_183929a8);
+    } while (a_players.size > var_183929a8);
 }
 
 // Namespace zm/zm
@@ -499,7 +499,7 @@ function initialblack() {
     }
     do {
         waitframe(1);
-    } while(!self isclientuivisibilityflagset("hud_visible"));
+    } while (!self isclientuivisibilityflagset("hud_visible"));
     val::set(#"initial_black", "hide");
     val::set(#"initial_black", "takedamage", 0);
     val::set(#"initial_black", "ignoreme");
@@ -1277,9 +1277,9 @@ function register_actor_damage_callback(func, var_61bac8c = 0) {
     }
     if (var_61bac8c) {
         array::push_front(level.actor_damage_callbacks, func);
-    } else {
-        level.actor_damage_callbacks[level.actor_damage_callbacks.size] = func;
+        return;
     }
+    level.actor_damage_callbacks[level.actor_damage_callbacks.size] = func;
 }
 
 // Namespace zm/zm
@@ -1501,7 +1501,9 @@ function function_51133aa1() {
         if (response == "restart_level_zm") {
             level thread zm_gametype::zm_map_restart();
             wait(666);
-        } else if (response == "resume_end_game") {
+            continue;
+        }
+        if (response == "resume_end_game") {
             level notify(#"resume_end_game");
         }
     }
@@ -1673,9 +1675,9 @@ function end_game() {
         player zm_stats::function_ae547e45("boas_score", player.score);
         if (isdefined(level.var_211e3a53)) {
             player zm_stats::function_ae547e45("boas_gameType", level.var_211e3a53);
-        } else {
-            player zm_stats::function_ae547e45("boas_gameType", util::get_game_type());
+            continue;
         }
+        player zm_stats::function_ae547e45("boas_gameType", util::get_game_type());
     }
     zm_stats::function_ea5b4947(1);
     bb::logroundevent("end_game");
@@ -1766,7 +1768,7 @@ function check_end_game_intermission_delay() {
     if (isdefined(level.disable_intermission)) {
         while (1) {
             if (!isdefined(level.disable_intermission)) {
-                break;
+                return;
             }
             wait(0.01);
         }
@@ -1881,14 +1883,14 @@ function intermission() {
         level notify(#"play_potm");
         level waittill(#"potm_finished");
         wait(2.25);
-    } else {
-        wait(5.25);
-        players = getplayers();
-        for (i = 0; i < players.size; i++) {
-            players[i] clientfield::set("zmbLastStand", 0);
-        }
-        level thread zombie_game_over_death();
+        return;
     }
+    wait(5.25);
+    players = getplayers();
+    for (i = 0; i < players.size; i++) {
+        players[i] clientfield::set("zmbLastStand", 0);
+    }
+    level thread zombie_game_over_death();
 }
 
 // Namespace zm/zm
@@ -1944,11 +1946,13 @@ function default_exit_level() {
         }
         if (isdefined(zombies[i].find_exit_point)) {
             zombies[i] thread [[ zombies[i].find_exit_point ]]();
-        } else if (zombies[i].ignoreme) {
-            zombies[i] thread default_delayed_exit();
-        } else {
-            zombies[i] thread default_find_exit_point();
+            continue;
         }
+        if (zombies[i].ignoreme) {
+            zombies[i] thread default_delayed_exit();
+            continue;
+        }
+        zombies[i] thread default_find_exit_point();
     }
 }
 

@@ -66,11 +66,8 @@ function on_player_spawned() {
             return;
         }
         if (isdefined(self)) {
-            goto LOC_00000064;
         }
-    LOC_00000064:
     }
-LOC_00000064:
 }
 
 // Namespace music/music_shared

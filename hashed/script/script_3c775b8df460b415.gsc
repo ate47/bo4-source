@@ -89,9 +89,9 @@ function private movement_watcher() {
             } else {
                 wait(0.2);
             }
-        } else {
-            waitframe(1);
+            continue;
         }
+        waitframe(1);
     }
 }
 

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_torque/character_unlock_torque
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7373fb73, Offset: 0xd0
 // Size: 0x34
 function __init__() {
@@ -22,16 +22,16 @@ function __init__() {
 }
 
 // Namespace character_unlock_torque/character_unlock_torque
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcada640, Offset: 0x110
 // Size: 0xcc
 function function_2613aeec(enabled) {
     if (enabled) {
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
             item_world_fixup::function_e70fa91c(#"ammo_stash_parent_dlc1", #"supply_drop_stash_cu02", 2);
-        } else {
-            item_world_fixup::function_e70fa91c(#"ammo_stash_parent_dlc1", #"supply_drop_stash_cu02", 6);
+            return;
         }
+        item_world_fixup::function_e70fa91c(#"ammo_stash_parent_dlc1", #"supply_drop_stash_cu02", 6);
     }
 }
 

@@ -534,27 +534,27 @@ function private function_bcd35efc() {
                     assertmsg("<unknown string>");
                 #/
             #/
+            continue;
+        }
+        player zm_trial_util::function_d37a769(player.var_42a4759e.var_8c5bddf5);
+        player zm_score::function_c1f146ff(player.var_42a4759e.score);
+        player.score_total = player.var_42a4759e.score_total;
+        if (isdefined(player.var_42a4759e.loadout)) {
+            player zm_weapons::player_give_loadout(player.var_42a4759e.loadout, 1, 0);
         } else {
-            player zm_trial_util::function_d37a769(player.var_42a4759e.var_8c5bddf5);
-            player zm_score::function_c1f146ff(player.var_42a4759e.score);
-            player.score_total = player.var_42a4759e.score_total;
-            if (isdefined(player.var_42a4759e.loadout)) {
-                player zm_weapons::player_give_loadout(player.var_42a4759e.loadout, 1, 0);
-            } else {
-                player takeallweapons();
-                player zm_loadout::give_start_weapon(1);
-                player zm_loadout::init_player_offhand_weapons();
-            }
-            if (isarray(player.var_67ba1237) && !isinarray(player.var_67ba1237, #"specialty_additionalprimaryweapon") && isdefined(player.var_42a4759e.var_8c5bddf5.var_1596d94c)) {
-                player zm_weapons::weapon_take(player.var_42a4759e.var_8c5bddf5.var_1596d94c);
-                player.var_42a4759e.var_8c5bddf5.var_1596d94c = undefined;
-            }
-            player zm_trial_util::function_7f999aa0(player.var_42a4759e.var_8c5bddf5);
-            player function_23baf070(player.var_42a4759e.loadout);
-            for (slot = 0; slot < 3; slot++) {
-                if (isdefined(player._gadgets_player[slot])) {
-                    player gadgetcharging(slot, 1);
-                }
+            player takeallweapons();
+            player zm_loadout::give_start_weapon(1);
+            player zm_loadout::init_player_offhand_weapons();
+        }
+        if (isarray(player.var_67ba1237) && !isinarray(player.var_67ba1237, #"specialty_additionalprimaryweapon") && isdefined(player.var_42a4759e.var_8c5bddf5.var_1596d94c)) {
+            player zm_weapons::weapon_take(player.var_42a4759e.var_8c5bddf5.var_1596d94c);
+            player.var_42a4759e.var_8c5bddf5.var_1596d94c = undefined;
+        }
+        player zm_trial_util::function_7f999aa0(player.var_42a4759e.var_8c5bddf5);
+        player function_23baf070(player.var_42a4759e.loadout);
+        for (slot = 0; slot < 3; slot++) {
+            if (isdefined(player._gadgets_player[slot])) {
+                player gadgetcharging(slot, 1);
             }
         }
     }
@@ -609,7 +609,7 @@ function private function_4dbf2663() {
                     }
                 }
             }
-        } while(row < var_e1617d73 && round != 0);
+        } while (row < var_e1617d73 && round != 0);
     }
     level.var_6d87ac05 = level.var_c556bb2e[0];
 }
@@ -629,7 +629,7 @@ function private function_17b04fd7() {
         }
         if (all_players_spawned) {
             waitframe(1);
-            break;
+            return;
         }
         waitframe(1);
     }

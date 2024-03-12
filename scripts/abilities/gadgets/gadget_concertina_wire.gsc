@@ -122,7 +122,7 @@ function function_c5f0b9e7(func) {
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xa5649c0d, Offset: 0xb30
 // Size: 0x1a
 function function_d700c081(func) {
@@ -735,13 +735,9 @@ function function_f067d867(concertinawire) {
         if (isdefined(player.prevposition)) {
             distancemoved = distance2d(player.prevposition, player.origin);
             if (distancemoved < 0.0001) {
-                goto LOC_0000061a;
-            }
-            if (!isdefined(player.var_45650309) || gettime() > player.var_45650309 + 350 && distancemoved > 0.5) {
+            } else if (!isdefined(player.var_45650309) || gettime() > player.var_45650309 + 350 && distancemoved > 0.5) {
                 var_e8c58890 = 1;
-            LOC_0000061a:
             }
-        LOC_0000061a:
         } else {
             var_e8c58890 = 1;
         }
@@ -885,15 +881,11 @@ function function_82c4beb0(einflictor, eattacker, idamage, idflags, smeansofdeat
     }
     shotstokill = killstreak_bundles::get_shots_to_kill(weapon, smeansofdeath, level.var_87226c31.bundle);
     if (shotstokill == 0) {
-        goto LOC_000003ae;
-    }
-    if (shotstokill > 0) {
+    } else if (shotstokill > 0) {
         idamage = self.startinghealth / shotstokill + 1;
     } else {
         idamage = 0;
-    LOC_000003ae:
     }
-LOC_000003ae:
     return int(idamage);
 }
 
@@ -924,13 +916,13 @@ function function_34d706ae(watcher, var_db52b808, origin, angles, var_796be15d, 
     watcher.objectarray[watcher.objectarray.size] = var_bf8e4260;
     var_bf8e4260.var_2ee191cc = [];
     var_bf8e4260.var_2dd485d4 = [];
-    var_2358ae9 = anglestoright(angles);
-    var_8a455f75 = origin - width * 0.5 * var_2358ae9;
+    rightangles = anglestoright(angles);
+    var_8a455f75 = origin - width * 0.5 * rightangles;
     var_2d71f8ca = int(width / 32);
     for (index = 0; index < var_2d71f8ca; index++) {
         var_a4879492 = deployable::function_d60e5a06(var_8a455f75, 32);
         array::add(var_bf8e4260.var_2ee191cc, var_a4879492);
-        var_8a455f75 = var_8a455f75 + var_2358ae9 * 64;
+        var_8a455f75 = var_8a455f75 + rightangles * 64;
     }
     var_bf8e4260.var_86a21346 = &function_82c4beb0;
     var_bf8e4260.angles = angles;

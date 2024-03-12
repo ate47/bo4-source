@@ -46,9 +46,9 @@ function function_42ed4af0() {
     self.ai.patrol.state = 2;
     if (isdefined(self.script_owner)) {
         self function_325c6829(self.script_owner.origin);
-    } else {
-        self function_325c6829(self.origin);
+        return;
     }
+    self function_325c6829(self.origin);
 }
 
 // Namespace ai_patrol/patrol
@@ -312,7 +312,9 @@ function update_patrol() {
 function update_enemy() {
     if (isdefined(self.ai.hasseenfavoriteenemy) && self.ai.hasseenfavoriteenemy) {
         self.ai.patrol.state = 0;
-    } else if (self.ai.patrol.state == 0) {
+        return;
+    }
+    if (self.ai.patrol.state == 0) {
         self.ai.patrol.state = 2;
     }
 }
@@ -406,13 +408,13 @@ function private function_7c779aaf() {
     self waittill(#"death", #"state_changed");
     if (isdefined(self)) {
         self function_3ec67269();
-    } else {
-        if (isdefined(fx_marker)) {
-            fx_marker delete();
-        }
-        if (isdefined(hud_marker)) {
-            hud_marker delete();
-        }
+        return;
+    }
+    if (isdefined(fx_marker)) {
+        fx_marker delete();
+    }
+    if (isdefined(hud_marker)) {
+        hud_marker delete();
     }
 }
 

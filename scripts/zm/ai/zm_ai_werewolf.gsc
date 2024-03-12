@@ -454,18 +454,18 @@ function function_ccbee20() {
     self endon(#"death");
     a_s_spawn_locs = struct::get_array("werewolf_location", "script_noteworthy");
     if (isarray(a_s_spawn_locs)) {
-        i = 0;
-        while (i < a_s_spawn_locs.size) {
+        for (i = 0; i < a_s_spawn_locs.size; i++) {
             if (!zm_zonemgr::zone_is_enabled(a_s_spawn_locs[i].zone_name)) {
                 arrayremoveindex(a_s_spawn_locs, i);
-            } else if (isdefined(a_s_spawn_locs[i].var_39512f0e) && level flag::get(a_s_spawn_locs[i].var_39512f0e)) {
+                continue;
+            }
+            if (isdefined(a_s_spawn_locs[i].var_39512f0e) && level flag::get(a_s_spawn_locs[i].var_39512f0e)) {
                 if (a_s_spawn_locs[i].var_39512f0e === "power_on3" && zm_custom::function_901b751c("zmPowerState") == 2 && zm_custom::function_901b751c(#"zmpowerdoorstate") == 0) {
                     i++;
                 } else {
                     arrayremoveindex(a_s_spawn_locs, i);
                 }
-            } else {
-                i++;
+                continue;
             }
         }
         if (a_s_spawn_locs.size < 1) {
@@ -492,12 +492,12 @@ function function_ccbee20() {
                 i = 0;
                 util::wait_network_frame();
             }
-        } else {
-            var_e8ab126e = distancesquared(var_31f7011a[i].origin, var_d7eff26a.origin);
-            if (var_e8ab126e < var_56feeec4) {
-                var_56feeec4 = var_e8ab126e;
-                var_b2aa54a9 = var_d7eff26a;
-            }
+            continue;
+        }
+        var_e8ab126e = distancesquared(var_31f7011a[i].origin, var_d7eff26a.origin);
+        if (var_e8ab126e < var_56feeec4) {
+            var_56feeec4 = var_e8ab126e;
+            var_b2aa54a9 = var_d7eff26a;
         }
     }
     self zm_ai_utility::function_a8dc3363(var_b2aa54a9);
@@ -773,7 +773,8 @@ function private werewolftargetservice(entity) {
         }
         entity setgoal(entity.origin);
         return 0;
-    } else if (isdefined(entity.var_93a62fe)) {
+    }
+    if (isdefined(entity.var_93a62fe)) {
         targetpos = getclosestpointonnavmesh(entity.var_93a62fe.origin, 100, self getpathfindingradius());
         if (!isdefined(targetpos)) {
             targetpos = entity.origin;
@@ -1224,7 +1225,9 @@ function function_8b63ee0e(entity, mocompanim, mocompanimblendouttime, mocompani
             #/
             adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * entity.meleeinfo.var_8b9a15a6;
             entity forceteleport(adjustedorigin);
-        } else if (isdefined(entity.enemy)) {
+            return;
+        }
+        if (isdefined(entity.enemy)) {
             entity orientmode("face enemy");
         }
     }
@@ -1457,29 +1460,29 @@ function function_96640dc5(eventstruct) {
         } else {
             level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 4);
         }
-        break;
+        return;
     case #"pain":
     case #"shake":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 3, 1);
-        break;
+        return;
     case #"howl":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 3, 1);
-        break;
+        return;
     case #"growl_anim":
         level thread zm_audio::zmbaivox_playvox(self, "growl", 1, 3, 1);
-        break;
+        return;
     case #"attack_leap":
     case #"attack_melee":
         level thread zm_audio::zmbaivox_playvox(self, "attack", 1, 2, 1);
-        break;
+        return;
     case #"sprint":
     case #"ambient":
     case #"growl":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 0, 1);
-        break;
+        return;
     default:
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 0, 2);
-        break;
+        return;
     }
 }
 

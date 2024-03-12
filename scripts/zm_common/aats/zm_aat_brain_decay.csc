@@ -57,26 +57,26 @@ function function_791e18ed(localclientnum, oldval, newval, bnewent, binitialsnap
         if (isdefined(self.var_4703d488)) {
             self [[ self.var_4703d488 ]](localclientnum, newval);
         }
-    } else {
-        if (isdefined(self.var_8c12ae9)) {
-            stopfx(localclientnum, self.var_8c12ae9);
-            self.var_8c12ae9 = undefined;
-        }
-        if (isdefined(self.var_4bc659c4)) {
-            stopfx(localclientnum, self.var_4bc659c4);
-            self.var_4bc659c4 = undefined;
-        }
-        if (isdefined(self.var_8dfe2b97)) {
-            stopfx(localclientnum, self.var_8dfe2b97);
-            self.var_8dfe2b97 = undefined;
-        }
-        if (isdefined(self.var_67857d4d)) {
-            self stoploopsound(self.var_67857d4d);
-            self.var_67857d4d = undefined;
-        }
-        if (isdefined(self.var_4703d488)) {
-            self [[ self.var_4703d488 ]](localclientnum, newval);
-        }
+        return;
+    }
+    if (isdefined(self.var_8c12ae9)) {
+        stopfx(localclientnum, self.var_8c12ae9);
+        self.var_8c12ae9 = undefined;
+    }
+    if (isdefined(self.var_4bc659c4)) {
+        stopfx(localclientnum, self.var_4bc659c4);
+        self.var_4bc659c4 = undefined;
+    }
+    if (isdefined(self.var_8dfe2b97)) {
+        stopfx(localclientnum, self.var_8dfe2b97);
+        self.var_8dfe2b97 = undefined;
+    }
+    if (isdefined(self.var_67857d4d)) {
+        self stoploopsound(self.var_67857d4d);
+        self.var_67857d4d = undefined;
+    }
+    if (isdefined(self.var_4703d488)) {
+        self [[ self.var_4703d488 ]](localclientnum, newval);
     }
 }
 

@@ -155,7 +155,7 @@ function widows_wine_contact_explosion() {
             var_ca6267ad = 3;
             break;
         case #"boss":
-            goto LOC_00000268;
+            continue;
         default:
             var_3e5502b5 = #"hash_54016f8b03c9745e";
             var_ca6267ad = 12;
@@ -169,7 +169,6 @@ function widows_wine_contact_explosion() {
             ai_target thread widows_wine_slow_zombie(self, var_3e5502b5, var_ca6267ad);
         }
         waitframe(1);
-    LOC_00000268:
     }
     if (!self hasperk(#"specialty_widowswine")) {
         return;
@@ -208,14 +207,13 @@ function function_c6366dbe() {
                 var_ca6267ad = 3;
                 break;
             case #"boss":
-                goto LOC_00000262;
+                continue;
             default:
                 var_3e5502b5 = #"hash_54016f8b03c9745e";
                 var_ca6267ad = 12;
                 break;
             }
             ai thread widows_wine_slow_zombie(self, var_3e5502b5, var_ca6267ad);
-        LOC_00000262:
         }
         wait(0.1);
     }
@@ -232,9 +230,9 @@ function function_10519783(var_c34665fc) {
     }
     if (isplayer(self)) {
         self clientfield::set("winters_wail_slow_field", 0);
-    } else {
-        array::thread_all(level.players, &clientfield::set, "winters_wail_slow_field", 0);
+        return;
     }
+    array::thread_all(level.players, &clientfield::set, "winters_wail_slow_field", 0);
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
@@ -333,7 +331,9 @@ function widows_wine_vehicle_behavior(attacker, weapon) {
             self._override_raps_combat_speed = 5;
             wait(6);
             self dodamage(self.health + 1000, self.origin, attacker, undefined, "none", "MOD_EXPLOSIVE", 0, weapon);
-        } else if (self.archetype == #"parasite") {
+            return;
+        }
+        if (self.archetype == #"parasite") {
             waitframe(1);
             self dodamage(self.maxhealth, self.origin);
         }

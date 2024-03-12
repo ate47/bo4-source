@@ -11,7 +11,7 @@
 #namespace airsupport;
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43a920fa, Offset: 0x1a8
 // Size: 0x1e4
 function init_shared() {
@@ -47,7 +47,7 @@ function init_shared() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8611dcb4, Offset: 0x398
 // Size: 0x1e
 function function_3675de8b() {
@@ -57,7 +57,7 @@ function function_3675de8b() {
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x11c20f4b, Offset: 0x3c0
 // Size: 0x134
 function function_83904681(location, usedcallback, killstreakname) {
@@ -83,7 +83,7 @@ function function_83904681(location, usedcallback, killstreakname) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd21936f, Offset: 0x500
 // Size: 0x7e
 function endselectionongameend() {
@@ -93,7 +93,7 @@ function endselectionongameend() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x314563be, Offset: 0x588
 // Size: 0x7e
 function endselectiononhostmigration() {
@@ -103,7 +103,7 @@ function endselectiononhostmigration() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe5a211c5, Offset: 0x610
 // Size: 0x1c6
 function endselectionthink() {
@@ -133,7 +133,7 @@ function endselectionthink() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1771538, Offset: 0x7e0
 // Size: 0xd4
 function clearuplocationselection() {
@@ -155,7 +155,7 @@ function stoploopsoundaftertime(time) {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x877b46c2, Offset: 0x908
 // Size: 0x6a
 function calculatefalltime(flyheight) {
@@ -165,7 +165,7 @@ function calculatefalltime(flyheight) {
 }
 
 // Namespace airsupport/airsupport
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7f0b17e7, Offset: 0x980
 // Size: 0x8a
 function calculatereleasetime(flytime, flyheight, flyspeed, bombspeedscale) {
@@ -176,7 +176,7 @@ function calculatereleasetime(flytime, flyheight, flyspeed, bombspeedscale) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x198b0bbc, Offset: 0xa18
 // Size: 0x118
 function getminimumflyheight() {
@@ -239,7 +239,7 @@ function callstrike(flightplan) {
 }
 
 // Namespace airsupport/airsupport
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x80473f5c, Offset: 0xf08
 // Size: 0x174
 function planestrike(owner, requireddeathcount, pathstart, pathend, bombtime, flytime, flyspeed, bombspeedscale, direction, planespawnedfunction) {
@@ -263,7 +263,7 @@ function planestrike(owner, requireddeathcount, pathstart, pathend, bombtime, fl
 }
 
 // Namespace airsupport/airsupport
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x62c3a75c, Offset: 0x1088
 // Size: 0x90
 function determinegroundpoint(player, position) {
@@ -282,7 +282,7 @@ function determinetargetpoint(player, position) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25c6b1c7, Offset: 0x1178
 // Size: 0x1a
 function getmintargetheight() {
@@ -290,7 +290,7 @@ function getmintargetheight() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd51230a, Offset: 0x11a0
 // Size: 0x1a
 function getmaxtargetheight() {
@@ -298,7 +298,7 @@ function getmaxtargetheight() {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7fdf8ab0, Offset: 0x11c8
 // Size: 0x8e
 function clamptarget(target) {
@@ -314,7 +314,7 @@ function clamptarget(target) {
 }
 
 // Namespace airsupport/airsupport
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xbd43d04c, Offset: 0x1260
 // Size: 0x82
 function _insidecylinder(point, base, radius, height) {
@@ -331,7 +331,7 @@ function _insidecylinder(point, base, radius, height) {
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x47677ae, Offset: 0x12f0
 // Size: 0x8a
 function _insidenoflyzonebyindex(point, index, disregardheight) {
@@ -343,7 +343,7 @@ function _insidenoflyzonebyindex(point, index, disregardheight) {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb2426288, Offset: 0x1388
 // Size: 0xe8
 function getnoflyzoneheight(point) {
@@ -364,7 +364,7 @@ function getnoflyzoneheight(point) {
 }
 
 // Namespace airsupport/airsupport
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x73958686, Offset: 0x1478
 // Size: 0x86
 function insidenoflyzones(point, disregardheight) {
@@ -378,7 +378,7 @@ function insidenoflyzones(point, disregardheight) {
 }
 
 // Namespace airsupport/airsupport
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe933c3ac, Offset: 0x1508
 // Size: 0x13c
 function crossesnoflyzone(start, end) {
@@ -396,7 +396,7 @@ function crossesnoflyzone(start, end) {
 }
 
 // Namespace airsupport/airsupport
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xef0b6039, Offset: 0x1650
 // Size: 0x132
 function crossesnoflyzones(start, end) {
@@ -415,7 +415,7 @@ function crossesnoflyzones(start, end) {
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7cbe3681, Offset: 0x1790
 // Size: 0x114
 function getnoflyzoneheightcrossed(start, end, minheight) {
@@ -433,7 +433,7 @@ function getnoflyzoneheightcrossed(start, end, minheight) {
 }
 
 // Namespace airsupport/airsupport
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x599916d, Offset: 0x18b0
 // Size: 0x76
 function _shouldignorenoflyzone(noflyzone, noflyzones) {
@@ -449,7 +449,7 @@ function _shouldignorenoflyzone(noflyzone, noflyzones) {
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x646876d, Offset: 0x1930
 // Size: 0x6e
 function _shouldignorestartgoalnoflyzone(noflyzone, startnoflyzones, goalnoflyzones) {
@@ -466,7 +466,7 @@ function _shouldignorestartgoalnoflyzone(noflyzone, startnoflyzones, goalnoflyzo
 }
 
 // Namespace airsupport/airsupport
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6769d825, Offset: 0x19a8
 // Size: 0x110
 function gethelipath(start, goal) {
@@ -489,7 +489,7 @@ function gethelipath(start, goal) {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4357e71d, Offset: 0x1ac0
 // Size: 0xa4
 function function_a43d04ef(goalorigin) {
@@ -500,14 +500,14 @@ function function_a43d04ef(goalorigin) {
         distsq = distancesquared(self.origin, goalorigin);
         if (distsq <= distthresholdsq) {
             self notify(#"fallback_goal");
-            break;
+            return;
         }
         waitframe(1);
     }
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8b02c85, Offset: 0x1b70
 // Size: 0xbc
 function function_fabf8bc5(goalorigin) {
@@ -520,14 +520,14 @@ function function_fabf8bc5(goalorigin) {
         distsq = distancesquared(self.origin, goalorigin);
         if (distsq <= distthresholdsq) {
             self notify(#"fallback_goal");
-            break;
+            return;
         }
         waitframe(1);
     }
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x83d05ad1, Offset: 0x1c38
 // Size: 0x19c
 function function_e0e908c3(var_dbd23dc, path, stopatgoal) {
@@ -543,7 +543,9 @@ function function_e0e908c3(var_dbd23dc, path, stopatgoal) {
         }
         self setgoal(path[0], 1, stopatgoal);
         self function_a57c34b7(path[0], stopatgoal, 1);
-    } else if (issentient(self)) {
+        return;
+    }
+    if (issentient(self)) {
         while (1) {
             var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
             if (!var_baa92af9) {
@@ -559,7 +561,7 @@ function function_e0e908c3(var_dbd23dc, path, stopatgoal) {
 }
 
 // Namespace airsupport/airsupport
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x1efdb704, Offset: 0x1de0
 // Size: 0x2ce
 function function_f1b7b432(path, donenotify, stopatgoal, var_135dc5d1, var_96e5d7f = 0) {
@@ -603,7 +605,7 @@ function function_f1b7b432(path, donenotify, stopatgoal, var_135dc5d1, var_96e5d
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x672c9c5f, Offset: 0x20b8
 // Size: 0x152
 function followpath(path, donenotify, stopatgoal) {
@@ -668,7 +670,7 @@ function append_array(dst, src) {
 }
 
 // Namespace airsupport/airsupport
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x5171bd15, Offset: 0x23b8
 // Size: 0xf2
 function calculatepath_r(start, end, points, startnoflyzones, goalnoflyzones, depth) {
@@ -689,7 +691,7 @@ function calculatepath_r(start, end, points, startnoflyzones, goalnoflyzones, de
 }
 
 // Namespace airsupport/airsupport
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1dc79204, Offset: 0x24b8
 // Size: 0x168
 function calculatepath(start, end, startnoflyzones, goalnoflyzones) {
@@ -716,7 +718,7 @@ function calculatepath(start, end, startnoflyzones, goalnoflyzones) {
 }
 
 // Namespace airsupport/airsupport
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x2e53a694, Offset: 0x2628
 // Size: 0x1ae
 function _getstrikepathstartandend(goal, yaw, halfdistance) {
@@ -739,7 +741,7 @@ function _getstrikepathstartandend(goal, yaw, halfdistance) {
 }
 
 // Namespace airsupport/airsupport
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xbe55a858, Offset: 0x27e0
 // Size: 0x17e
 function getstrikepath(target, height, halfdistance, yaw) {
@@ -835,7 +837,7 @@ function entlosradiusdamage(ent, pos, radius, max, min, owner, einflictor) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xef84aeb8, Offset: 0x2df8
 // Size: 0x70
 function getmapcenter() {
@@ -847,7 +849,7 @@ function getmapcenter() {
 }
 
 // Namespace airsupport/airsupport
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9ef47c6a, Offset: 0x2e70
 // Size: 0x1f4
 function getrandommappoint(x_offset, y_offset, map_x_percentage, map_y_percentage) {
@@ -882,7 +884,7 @@ function getmaxmapwidth() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x311096dc, Offset: 0x3158
 // Size: 0x19c
 function initrotatingrig() {
@@ -899,7 +901,7 @@ function initrotatingrig() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x125a9022, Offset: 0x3300
 // Size: 0x2e
 function rotaterig() {
@@ -910,7 +912,7 @@ function rotaterig() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ab699ba, Offset: 0x3338
 // Size: 0x10e
 function swayrig() {
@@ -928,7 +930,7 @@ function swayrig() {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6fd0371b, Offset: 0x3450
 // Size: 0x3c
 function stoprotation(time) {
@@ -938,7 +940,7 @@ function stoprotation(time) {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb454017, Offset: 0x3498
 // Size: 0xb8
 function flattenyaw(goal) {
@@ -954,7 +956,7 @@ function flattenyaw(goal) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x306356d3, Offset: 0x3558
 // Size: 0x6c
 function flattenroll() {
@@ -966,7 +968,7 @@ function flattenroll() {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x54e9842b, Offset: 0x35d0
 // Size: 0x28e
 function leave(duration) {
@@ -989,9 +991,9 @@ function leave(duration) {
                 }
             }
             tries--;
-        } else {
-            tries = 0;
+            continue;
         }
+        tries = 0;
     }
     self thread flattenyaw(self.angles[1] + yaw);
     if (self.angles[2] != 0) {
@@ -1115,9 +1117,9 @@ function debug_print3d_simple(message, ent, offset, frames) {
         if (isdefined(level.airsupport_debug) && level.airsupport_debug == 1) {
             if (isdefined(frames)) {
                 thread draw_text(message, vectorscale((1, 1, 1), 0.8), ent, offset, frames);
-            } else {
-                thread draw_text(message, vectorscale((1, 1, 1), 0.8), ent, offset, 0);
+                return;
             }
+            thread draw_text(message, vectorscale((1, 1, 1), 0.8), ent, offset, 0);
         }
     #/
 }
@@ -1133,14 +1135,14 @@ function draw_text(msg, color, ent, offset, frames) {
                 print3d(ent.origin + offset, msg, color, 0.5, 4);
                 waitframe(1);
             }
-        } else {
-            for (i = 0; i < frames; i++) {
-                if (!isdefined(ent)) {
-                    break;
-                }
-                print3d(ent.origin + offset, msg, color, 0.5, 4);
-                waitframe(1);
+            return;
+        }
+        for (i = 0; i < frames; i++) {
+            if (!isdefined(ent)) {
+                return;
             }
+            print3d(ent.origin + offset, msg, color, 0.5, 4);
+            waitframe(1);
         }
     #/
 }
@@ -1286,7 +1288,7 @@ function getpointonline(startpoint, endpoint, ratio) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x995c4e82, Offset: 0x46b0
 // Size: 0x8a
 function cantargetplayerwithspecialty() {
@@ -1299,7 +1301,7 @@ function cantargetplayerwithspecialty() {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe54ab859, Offset: 0x4748
 // Size: 0x1d4
 function monitorspeed(spawnprotectiontime) {
@@ -1333,7 +1335,7 @@ function monitorspeed(spawnprotectiontime) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4c41d8ae, Offset: 0x4928
 // Size: 0x1a
 function clearmonitoredspeed() {
@@ -1343,7 +1345,7 @@ function clearmonitoredspeed() {
 }
 
 // Namespace airsupport/airsupport
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa13dd549, Offset: 0x4950
 // Size: 0x94
 function function_9e2054b0(var_65885f89) {
@@ -1356,7 +1358,7 @@ function function_9e2054b0(var_65885f89) {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf9c9a6c4, Offset: 0x49f0
 // Size: 0x9a
 function waitforlocationselection() {
@@ -1370,7 +1372,7 @@ function waitforlocationselection() {
 }
 
 // Namespace airsupport/airsupport
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7906ad32, Offset: 0x4a98
 // Size: 0x2b2
 function function_deb91ef4() {

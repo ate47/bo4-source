@@ -24,9 +24,9 @@ function init() {
 function soul_release(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         util::playfxontag(localclientnum, level._effect[#"hash_171687586f676b43"], self, "tag_origin");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"hash_7567992d6a81fd89"], self, "tag_origin");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"hash_7567992d6a81fd89"], self, "tag_origin");
 }
 
 // Namespace zm_orange_ww_quest/zm_orange_ww_quest

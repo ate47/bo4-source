@@ -312,12 +312,12 @@ function stop_or_start_fx(localclientnum, fxname, tag, start) {
                 render_debug_sphere(tag, (0, 1, 0), fxname);
             }
         #/
-    } else {
-        stop_fx_on_tag(localclientnum, fxname, tag);
-        /#
-            render_debug_sphere(tag, (1, 0, 0), fxname);
-        #/
+        return;
     }
+    stop_fx_on_tag(localclientnum, fxname, tag);
+    /#
+        render_debug_sphere(tag, (1, 0, 0), fxname);
+    #/
 }
 
 // Namespace microwave_turret/microwave_turret_shared

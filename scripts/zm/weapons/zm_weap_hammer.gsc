@@ -103,11 +103,15 @@ function private function_c3f6fd96() {
         }
         if (wpn_cur == level.hero_weapon[#"hammer"][0]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_10c853c67454fff6");
-        } else if (wpn_cur == level.hero_weapon[#"hammer"][1]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"hammer"][1]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_2745ea06a4f8e7fd");
             self thread function_82466b73(wpn_cur);
             self thread function_478a4910(wpn_cur);
-        } else if (wpn_cur == level.hero_weapon[#"hammer"][2]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"hammer"][2]) {
             if (!self gamepadusedlast()) {
                 self zm_hero_weapon::show_hint(wpn_cur, #"hash_78fab15695ef9758");
             } else {
@@ -328,9 +332,9 @@ function function_9799924f(e_target, weapon = level.weaponnone, var_3e3892a7, v_
         } else {
             self playrumbleonentity("shotgun_fire");
         }
-    } else {
-        e_target dodamage(n_damage, self.origin, self, self, "none", "MOD_MELEE", 0, weapon);
+        return;
     }
+    e_target dodamage(n_damage, self.origin, self, self, "none", "MOD_MELEE", 0, weapon);
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -493,14 +497,14 @@ function storm_check(player) {
             case #"basic":
             case #"enhanced":
                 self thread function_97429d68();
-                break;
+                return;
             case #"boss":
                 self dodamage(1, var_75ccefac, player, player);
-                break;
+                return;
             case #"popcorn":
                 self.var_bc973222 = 1;
                 self dodamage(self.health + 100, var_75ccefac, player, player);
-                break;
+                return;
             }
         }
     }
@@ -703,7 +707,7 @@ function _throttle_bullet_trace_think() {
     do {
         level.bullet_traces_this_frame = 0;
         util::wait_network_frame();
-    } while(1);
+    } while (1);
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -840,16 +844,16 @@ function hammer_rumble(n_index) {
         switch (n_index) {
         case 1:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            break;
+            return;
         case 2:
             playrumbleonposition("zm_weap_hammer_slam_rumble", self.origin);
-            break;
+            return;
         case 3:
             playrumbleonposition("zm_weap_hammer_storm_rumble", self.origin);
-            break;
+            return;
         case 4:
             self clientfield::increment_to_player("" + #"hammer_rumble", 4);
-            break;
+            return;
         }
     }
 }

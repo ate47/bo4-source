@@ -177,9 +177,9 @@ function setup_warzone_fx(local_client_num) {
                         function_ca8ebccf(local_client_num, visual, fxid[zonestate], zi, zonestate, attackers);
                         zonestate = 1;
                         function_ca8ebccf(local_client_num, visual, fxid[zonestate], zi, zonestate, attackers);
-                    } else {
-                        function_ca8ebccf(local_client_num, visual, fxid, zi, zonestate, attackers);
+                        continue;
                     }
+                    function_ca8ebccf(local_client_num, visual, fxid, zi, zonestate, attackers);
                 }
             }
         }
@@ -202,12 +202,14 @@ function private function_ca8ebccf(local_client_num, visual, fxid, zi, zonestate
     if (isdefined(fxhandle)) {
         if (zonestate == 2) {
             setfxteam(local_client_num, fxhandle, attackers);
-        } else if (zonestate == 1) {
+            return;
+        }
+        if (zonestate == 1) {
             defenders = util::get_other_team(attackers);
             setfxteam(local_client_num, fxhandle, defenders);
-        } else {
-            setfxteam(local_client_num, fxhandle, "free");
+            return;
         }
+        setfxteam(local_client_num, fxhandle, "free");
     }
 }
 

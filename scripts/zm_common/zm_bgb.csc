@@ -107,21 +107,21 @@ function private bgb_finalize() {
             /#
                 println("<unknown string>" + v.name + "<unknown string>");
             #/
-        } else {
-            if (!isdefined(var_5415dfb9.bgbrarity)) {
-                var_5415dfb9.bgbrarity = 0;
-            }
-            v.rarity = var_5415dfb9.bgbrarity;
-            if (0 == v.rarity || 1 == v.rarity) {
-                v.consumable = 0;
-            } else {
-                v.consumable = 1;
-            }
-            v.camo_index = var_5415dfb9.var_daefc551;
-            v.flying_gumball_tag = "tag_gumball_" + v.limit_type;
-            v.var_c0362ae9 = "tag_gumball_" + v.limit_type + "_" + level.var_afb8293c[v.rarity];
-            level.bgb_item_index_to_name[v.item_index] = v.name;
+            continue;
         }
+        if (!isdefined(var_5415dfb9.bgbrarity)) {
+            var_5415dfb9.bgbrarity = 0;
+        }
+        v.rarity = var_5415dfb9.bgbrarity;
+        if (0 == v.rarity || 1 == v.rarity) {
+            v.consumable = 0;
+        } else {
+            v.consumable = 1;
+        }
+        v.camo_index = var_5415dfb9.var_daefc551;
+        v.flying_gumball_tag = "tag_gumball_" + v.limit_type;
+        v.var_c0362ae9 = "tag_gumball_" + v.limit_type + "_" + level.var_afb8293c[v.rarity];
+        level.bgb_item_index_to_name[v.item_index] = v.name;
     }
 }
 

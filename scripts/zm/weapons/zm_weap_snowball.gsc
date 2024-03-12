@@ -27,9 +27,9 @@ function autoexec __init__system__() {
 // Size: 0x284
 function __init__() {
     level.w_snowball = getweapon(#"snowball");
-    level.var_f8934665 = getweapon(#"snowball_upgraded");
-    level.var_bf70d56c = getweapon(#"snowball_yellow");
-    level.var_d879215 = getweapon(#"snowball_yellow_upgraded");
+    level.w_snowball_upgraded = getweapon(#"snowball_upgraded");
+    level.w_snowball_yellow = getweapon(#"snowball_yellow");
+    level.w_snowball_yellow_upgraded = getweapon(#"snowball_yellow_upgraded");
     zm::function_84d343d(#"snowball", &function_5ff12a45);
     zm::function_84d343d(#"snowball_upgraded", &function_5ff12a45);
     zm::function_84d343d(#"snowball_yellow", &function_ee240a8e);
@@ -50,7 +50,7 @@ function __init__() {
 function on_grenade_fired(s_params) {
     self endon(#"death");
     level endon(#"end_game");
-    if (s_params.weapon != level.w_snowball && s_params.weapon != level.var_f8934665 && s_params.weapon != level.var_bf70d56c && s_params.weapon != level.var_d879215) {
+    if (s_params.weapon != level.w_snowball && s_params.weapon != level.w_snowball_upgraded && s_params.weapon != level.w_snowball_yellow && s_params.weapon != level.w_snowball_yellow_upgraded) {
         return;
     }
     s_waitresult = undefined;
@@ -58,11 +58,11 @@ function on_grenade_fired(s_params) {
     a_e_players = getplayers();
     a_e_players = arraysortclosest(a_e_players, s_waitresult.position, 4, 0, 64);
     foreach (e_player in a_e_players) {
-        if (s_params.weapon == level.w_snowball || s_params.weapon == level.var_f8934665) {
+        if (s_params.weapon == level.w_snowball || s_params.weapon == level.w_snowball_upgraded) {
             e_player thread function_6e2124f7();
-        } else {
-            e_player thread function_2291fc03();
+            continue;
         }
+        e_player thread function_2291fc03();
     }
     var_566b3847 = getentitiesinradius(s_waitresult.position, 5);
     foreach (var_c006f5e9 in var_566b3847) {

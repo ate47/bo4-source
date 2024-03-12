@@ -50,7 +50,9 @@ function function_1d5b8b9f(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         self.var_d476c975 = util::playfxontag(localclientnum, level._effect[#"trap_light_green"], self, "light_fx_tag");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_16c041ae = util::playfxontag(localclientnum, level._effect[#"trap_light_red"], self, "light_fx_tag");
     }
 }
@@ -75,7 +77,9 @@ function function_b3f0f5cd(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self.var_fca46d00 = util::playfxontag(localclientnum, level._effect[#"trap_light_green"], self, "j_light_lt");
         self.var_f7653c4b = util::playfxontag(localclientnum, level._effect[#"trap_light_green"], self, "j_light_rt");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_7504a327 = util::playfxontag(localclientnum, level._effect[#"trap_light_red"], self, "j_light_lt");
         self.var_5a0ff99d = util::playfxontag(localclientnum, level._effect[#"trap_light_red"], self, "j_light_rt");
     }

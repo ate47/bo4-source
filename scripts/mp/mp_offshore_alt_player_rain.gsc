@@ -60,7 +60,9 @@ function function_5d400be9() {
                     player.var_325b468a = 1;
                     player clientfield::increment_to_player("toggle_player_rain");
                 }
-            } else if (isdefined(player.var_325b468a) && player.var_325b468a) {
+                continue;
+            }
+            if (isdefined(player.var_325b468a) && player.var_325b468a) {
                 player.var_325b468a = 0;
                 player clientfield::increment_to_player("toggle_player_rain");
             }

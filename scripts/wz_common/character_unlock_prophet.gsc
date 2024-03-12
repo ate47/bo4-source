@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_prophet/character_unlock_prophet
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a266336, Offset: 0x100
 // Size: 0x34
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_prophet/character_unlock_prophet
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b2664b0, Offset: 0x140
 // Size: 0xcc
 function function_2613aeec(enabled) {
@@ -38,7 +38,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_prophet/character_unlock_prophet
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x22095c88, Offset: 0x218
 // Size: 0x54
 function function_1c4b5097(item) {
@@ -49,7 +49,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_prophet/character_unlock_prophet
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x815d8e5, Offset: 0x278
 // Size: 0xce
 function on_drop_item(params) {
@@ -65,7 +65,7 @@ function on_drop_item(params) {
 }
 
 // Namespace character_unlock_prophet/character_unlock_prophet
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6cf27334, Offset: 0x350
 // Size: 0x17e
 function function_798820a9(item) {
@@ -89,7 +89,7 @@ function function_798820a9(item) {
 }
 
 // Namespace character_unlock_prophet/character_unlock_prophet
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1286263e, Offset: 0x4d8
 // Size: 0x160
 function function_4ac25840(params) {

@@ -393,9 +393,9 @@ function block_elev_doors_internal(block, suffix) {
         for (i = 0; i < elevator_door_safety_clip.size; i++) {
             if (block) {
                 elevator_door_safety_clip[i] solid();
-            } else {
-                elevator_door_safety_clip[i] notsolid();
+                continue;
             }
+            elevator_door_safety_clip[i] notsolid();
         }
     }
 }
@@ -529,9 +529,9 @@ function enable_callboxes() {
             } else {
                 call_boxes[j] sethintstring(#"hash_2f56b9d8ac49ff92");
             }
-        } else {
-            call_boxes[j] triggerenable(0);
+            continue;
         }
+        call_boxes[j] triggerenable(0);
     }
 }
 
@@ -789,12 +789,12 @@ function close_elev_doors() {
                 unlinktraversal(nd_elev2_in_war_room);
                 self thread function_eee9c340(0);
             }
-        } else {
-            nd_elev2_in_level1 = getnode("nd_elev2_in_level1", "targetname");
-            if (isdefined(nd_elev2_in_level1)) {
-                unlinktraversal(nd_elev2_in_level1);
-                self thread function_eee9c340(1);
-            }
+            return;
+        }
+        nd_elev2_in_level1 = getnode("nd_elev2_in_level1", "targetname");
+        if (isdefined(nd_elev2_in_level1)) {
+            unlinktraversal(nd_elev2_in_level1);
+            self thread function_eee9c340(1);
         }
     }
 }
@@ -845,42 +845,42 @@ function open_elev_doors() {
                 linktraversal(nd_elev2_in_war_room);
             }
         }
-    } else {
-        for (j = 0; j < self.doors_outer_up.size; j++) {
-            newpos1 = self.doors_outer_up[j].startpos + self.doors_outer_up[j].script_vector;
-            self.doors_outer_up[j] thread relink_elev_doors(newpos1, self, 0);
+        return;
+    }
+    for (j = 0; j < self.doors_outer_up.size; j++) {
+        newpos1 = self.doors_outer_up[j].startpos + self.doors_outer_up[j].script_vector;
+        self.doors_outer_up[j] thread relink_elev_doors(newpos1, self, 0);
+    }
+    if (isdefined(self.doors_up)) {
+        for (i = 0; i < self.doors_up.size; i++) {
+            pos2 = self.doors_up[i].startpos + self.doors_up[i].script_vector;
+            newpos2 = (pos2[0], pos2[1], self.doors_up[i].origin[2]);
+            self.doors_up[i] thread relink_elev_doors(newpos2, self, 1);
+            playsoundatposition(#"evt_elevator_freight_door_open", newpos2);
         }
-        if (isdefined(self.doors_up)) {
-            for (i = 0; i < self.doors_up.size; i++) {
-                pos2 = self.doors_up[i].startpos + self.doors_up[i].script_vector;
-                newpos2 = (pos2[0], pos2[1], self.doors_up[i].origin[2]);
-                self.doors_up[i] thread relink_elev_doors(newpos2, self, 1);
-                playsoundatposition(#"evt_elevator_freight_door_open", newpos2);
-            }
+    }
+    if (isdefined(self.doors_down)) {
+        for (k = 0; k < self.doors_down.size; k++) {
+            pos4 = self.doors_down[k].startpos + self.doors_down[k].script_vector;
+            newpos4 = (pos4[0], pos4[1], self.doors_down[k].origin[2]);
+            self.doors_down[k] thread relink_elev_doors(newpos4, self, 1);
+            playsoundatposition(#"evt_elevator_freight_door_open", newpos4);
         }
-        if (isdefined(self.doors_down)) {
-            for (k = 0; k < self.doors_down.size; k++) {
-                pos4 = self.doors_down[k].startpos + self.doors_down[k].script_vector;
-                newpos4 = (pos4[0], pos4[1], self.doors_down[k].origin[2]);
-                self.doors_down[k] thread relink_elev_doors(newpos4, self, 1);
-                playsoundatposition(#"evt_elevator_freight_door_open", newpos4);
-            }
-            nd_elev1_in_war_room = getnode("nd_elev1_in_war_room", "targetname");
-            if (isdefined(nd_elev1_in_war_room)) {
-                linktraversal(nd_elev1_in_war_room);
-            }
+        nd_elev1_in_war_room = getnode("nd_elev1_in_war_room", "targetname");
+        if (isdefined(nd_elev1_in_war_room)) {
+            linktraversal(nd_elev1_in_war_room);
         }
-        if (isdefined(self.doors)) {
-            for (m = 0; m < self.doors.size; m++) {
-                pos3 = self.doors[m].startpos + self.doors[m].script_vector;
-                newpos3 = (pos3[0], pos3[1], self.doors[m].origin[2]);
-                self.doors[m] thread relink_elev_doors(newpos3, self, 1);
-                playsoundatposition(#"hash_5ef3b0941ea2aa74", newpos3);
-            }
-            nd_elev2_in_level1 = getnode("nd_elev2_in_level1", "targetname");
-            if (isdefined(nd_elev2_in_level1)) {
-                linktraversal(nd_elev2_in_level1);
-            }
+    }
+    if (isdefined(self.doors)) {
+        for (m = 0; m < self.doors.size; m++) {
+            pos3 = self.doors[m].startpos + self.doors[m].script_vector;
+            newpos3 = (pos3[0], pos3[1], self.doors[m].origin[2]);
+            self.doors[m] thread relink_elev_doors(newpos3, self, 1);
+            playsoundatposition(#"hash_5ef3b0941ea2aa74", newpos3);
+        }
+        nd_elev2_in_level1 = getnode("nd_elev2_in_level1", "targetname");
+        if (isdefined(nd_elev2_in_level1)) {
+            linktraversal(nd_elev2_in_level1);
         }
     }
 }
@@ -1080,7 +1080,7 @@ function private function_da48c149(s_pos) {
             self setorigin(s_pos.origin);
         }
         var_75c89236++;
-    } while(var_75c89236 < 5);
+    } while (var_75c89236 < 5);
 }
 
 // Namespace zm_office_elevators/zm_office_elevators

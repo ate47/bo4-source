@@ -45,9 +45,9 @@ function private on_end(round_reset) {
         if (!level flag::get(level.var_5bfd847e)) {
             if (zm_utility::get_story() == 1) {
                 zm_trial::fail(#"hash_ad3c47f53414b85");
-            } else {
-                zm_trial::fail(#"hash_765b6a6e9523c15a");
+                return;
             }
+            zm_trial::fail(#"hash_765b6a6e9523c15a");
         }
     }
 }

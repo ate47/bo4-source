@@ -71,10 +71,10 @@ function function_8b96ace8(b_walk = 1) {
                 a_ai[i].zombie_move_speed_restore = a_ai[i].zombie_move_speed;
                 a_ai[i].var_b518759e = 1;
                 a_ai[i] zombie_utility::set_zombie_run_cycle_override_value("walk");
-            } else {
-                a_ai[i].var_b518759e = undefined;
-                a_ai[i] zombie_utility::set_zombie_run_cycle_restore_from_override();
+                continue;
             }
+            a_ai[i].var_b518759e = undefined;
+            a_ai[i] zombie_utility::set_zombie_run_cycle_restore_from_override();
         }
     }
 }

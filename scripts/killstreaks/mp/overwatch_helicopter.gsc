@@ -410,34 +410,33 @@ function function_82fb79e3(startnode, protectdest, hardpointtype, heli_team) {
 function function_5c15f6d6() {
     self endon(#"death", #"crashing", #"leaving");
     for (;;) {
-        for (;;) {
-            if (isdefined(self.protectdest) && isdefined(self.heligoalpos)) {
-                self vehclearlookat();
-                if (self.var_eaf98cf === self.protectdest && self.var_d9b0ae19 === self.heligoalpos) {
-                    wait(1);
-                    continue;
-                }
-                self.var_eaf98cf = self.protectdest;
-                self.var_d9b0ae19 = self.heligoalpos;
-                var_5eb30267 = (self.protectdest[0] - self.heligoalpos[0], self.protectdest[1] - self.heligoalpos[1], 0);
-                var_5eb30267 = vectornormalize(var_5eb30267);
-                angles = vectortoangles(var_5eb30267);
-                var_d24d4fe2 = isdefined(self.leftgunner) && isalive(self.leftgunner);
-                var_ccfa6c33 = isdefined(self.var_e8b1fa34) && isalive(self.var_e8b1fa34);
-                if (var_d24d4fe2 && var_ccfa6c33) {
-                    if (randomint(100) > 50) {
-                        yaw = angles[1] + 90;
-                    } else {
-                        yaw = angles[1] - 90;
-                    }
-                } else if (var_d24d4fe2) {
+        if (isdefined(self.protectdest) && isdefined(self.heligoalpos)) {
+            self vehclearlookat();
+            if (self.var_eaf98cf === self.protectdest && self.var_d9b0ae19 === self.heligoalpos) {
+                wait(1);
+                continue;
+            }
+            self.var_eaf98cf = self.protectdest;
+            self.var_d9b0ae19 = self.heligoalpos;
+            var_5eb30267 = (self.protectdest[0] - self.heligoalpos[0], self.protectdest[1] - self.heligoalpos[1], 0);
+            var_5eb30267 = vectornormalize(var_5eb30267);
+            angles = vectortoangles(var_5eb30267);
+            var_d24d4fe2 = isdefined(self.leftgunner) && isalive(self.leftgunner);
+            var_ccfa6c33 = isdefined(self.var_e8b1fa34) && isalive(self.var_e8b1fa34);
+            if (var_d24d4fe2 && var_ccfa6c33) {
+                if (randomint(100) > 50) {
                     yaw = angles[1] + 90;
                 } else {
                     yaw = angles[1] - 90;
                 }
-                self setgoalyaw(yaw);
+            } else if (var_d24d4fe2) {
+                yaw = angles[1] + 90;
+            } else {
+                yaw = angles[1] - 90;
             }
+            self setgoalyaw(yaw);
         }
+        wait(1);
     }
 }
 
@@ -631,13 +630,13 @@ function function_64b435c4(ai) {
             tag = ai gettagorigin("tag_flash");
             if (isdefined(tag)) {
                 playfxontag(sniper_glint, ai, "tag_flash");
-            } else {
-                type = isdefined(ai.classname) ? "" + ai.classname : "";
-                /#
-                    println("<unknown string>" + type + "<unknown string>");
-                #/
-                playfxontag(sniper_glint, ai, "tag_eye");
+                continue;
             }
+            type = isdefined(ai.classname) ? "" + ai.classname : "";
+            /#
+                println("<unknown string>" + type + "<unknown string>");
+            #/
+            playfxontag(sniper_glint, ai, "tag_eye");
         }
     }
 }

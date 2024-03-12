@@ -704,8 +704,8 @@ function killwrapper(attacker) {
     self.tokubetsukogekita = undefined;
     if (isdefined(attacker) && util::function_fbce7263(self.team, attacker.team)) {
         self kill(self.origin, attacker);
-    } else {
-        self kill();
+        return;
     }
+    self kill();
 }
 

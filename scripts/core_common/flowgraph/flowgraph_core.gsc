@@ -9,60 +9,43 @@ function private call_func(func, arg_count, args) {
     switch (arg_count) {
     case 0:
         return self [[ func ]]();
-        break;
     case 1:
         return self [[ func ]](args[0]);
-        break;
     case 2:
         return self [[ func ]](args[0], args[1]);
-        break;
     case 3:
         return self [[ func ]](args[0], args[1], args[2]);
-        break;
     case 4:
         return self [[ func ]](args[0], args[1], args[2], args[3]);
-        break;
     case 5:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4]);
-        break;
     case 6:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5]);
-        break;
     case 7:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
-        break;
     case 8:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
-        break;
     case 9:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8]);
-        break;
     case 10:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9]);
-        break;
     case 11:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10]);
-        break;
     case 12:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10], args[11]);
-        break;
     case 13:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10], args[11], args[12]);
-        break;
     case 14:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10], args[11], args[12], args[13]);
-        break;
     case 15:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10], args[11], args[12], args[13], args[14]);
-        break;
     case 16:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10], args[11], args[12], args[13], args[14], args[15]);
-        break;
     default:
         /#
             assertmsg("<unknown string>");
         #/
-        break;
+        return;
     }
 }
 
@@ -116,27 +99,25 @@ function private evaluate_constant(input_def) {
                 assert(isdefined(val.key));
             #/
             return getent(val.value, val.key);
-            goto LOC_00000216;
+        } else {
+            /#
+                assert(val == "<unknown string>" || val == "<unknown string>");
+            #/
+            if (val == "self") {
+                return self.target;
+            } else {
+                return self.target.target;
+            }
         }
-        /#
-            assert(val == "<unknown string>" || val == "<unknown string>");
-        #/
-        if (val == "self") {
-            return self.target;
-            goto LOC_00000216;
-        }
-        return self.target.target;
     case #"struct":
     case #"array":
     case #"class":
     case #"null":
     case #"exec":
-    LOC_00000216:
         /#
             assertmsg("<unknown string>");
         #/
         return undefined;
-        break;
     }
     /#
         assertmsg("<unknown string>" + input_def.type + "<unknown string>");
@@ -187,7 +168,9 @@ function private is_auto_exec_node(node_def) {
                 if (isdefined(input_def.connections) && input_def.connections.size > 0) {
                     return 0;
                 }
-            } else if (!isdefined(input_def.constvalue)) {
+                continue;
+            }
+            if (!isdefined(input_def.constvalue)) {
                 return 0;
             }
         }
@@ -318,9 +301,9 @@ function kick(outputs = [], block = 0) {
                 node_inst = self.owner.nodes[connection_def.node.uuid];
                 if (block) {
                     node_inst exec();
-                } else {
-                    node_inst thread exec();
+                    continue;
                 }
+                node_inst thread exec();
             }
         }
     }

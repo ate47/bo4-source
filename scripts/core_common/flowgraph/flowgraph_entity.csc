@@ -71,7 +71,7 @@ function lerpshaderconstantovertime(x, e_entity, i_script_vector, f_start_x, f_s
         n_delta_val_z = lerpfloat(f_start_z, f_end_z, n_lerp_val);
         n_delta_val_w = lerpfloat(f_start_w, f_end_w, n_lerp_val);
         e_entity mapshaderconstant(self.owner.localclientnum, 0, "scriptVector" + i_script_vector, n_delta_val_x, n_delta_val_y, n_delta_val_z, n_delta_val_w);
-    } while(n_current_time < f_time);
+    } while (n_current_time < f_time);
 }
 
 // Namespace flowgraph_entity/flowgraph_entity

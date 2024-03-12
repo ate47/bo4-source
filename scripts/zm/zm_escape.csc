@@ -120,11 +120,11 @@ function rumble_gondola(localclientnum, oldval, newval, bnewent, binitialsnap, f
             }
             wait(0.25);
         }
-    } else {
-        self notify(#"hash_6d7afe7c92e095d8");
-        if (isinarray(getlocalplayers(), self)) {
-            self playrumbleonentity(localclientnum, "damage_heavy");
-        }
+        return;
+    }
+    self notify(#"hash_6d7afe7c92e095d8");
+    if (isinarray(getlocalplayers(), self)) {
+        self playrumbleonentity(localclientnum, "damage_heavy");
     }
 }
 
@@ -141,9 +141,9 @@ function function_1bccf046(localclientnum, oldval, newval, bnewent, binitialsnap
             self playrumbleonentity(localclientnum, "reload_small");
             wait(0.25);
         }
-    } else {
-        self notify(#"hash_2e4f137d472e68e9");
+        return;
     }
+    self notify(#"hash_2e4f137d472e68e9");
 }
 
 // Namespace zm_escape/zm_escape
@@ -174,10 +174,9 @@ function function_a104a4cb(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x60
 function function_516663f8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
-        goto LOC_0000005e;
+        return;
     }
     level notify(#"hash_46a6202f04dd1722");
-LOC_0000005e:
 }
 
 // Namespace zm_escape/zm_escape
@@ -199,9 +198,9 @@ function private function_37c86e6e(localclientnum) {
 function function_d8b90aba(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         level thread function_b2b92c61(localclientnum);
-    } else {
-        level notify(#"hash_63732bb5f380f042");
+        return;
     }
+    level notify(#"hash_63732bb5f380f042");
 }
 
 // Namespace zm_escape/zm_escape
@@ -250,12 +249,10 @@ function function_5e901c8c(localclientnum, oldval, newval, bnewent, binitialsnap
             return;
         }
         if (self zm_utility::function_f8796df3(localclientnum)) {
-            goto LOC_00000100;
+            return;
         }
         self.var_7a27c968 = util::playfxontag(localclientnum, level._effect[#"hash_6dcb1f6ae15079d5"], self, "j_head");
-    LOC_00000100:
     }
-LOC_00000100:
 }
 
 // Namespace zm_escape/zm_escape
@@ -265,9 +262,9 @@ LOC_00000100:
 function set_player_pbg_bank(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         setpbgactivebank(localclientnum, 4);
-    } else {
-        setpbgactivebank(localclientnum, 1);
+        return;
     }
+    setpbgactivebank(localclientnum, 1);
 }
 
 // Namespace zm_escape/zm_escape
@@ -291,13 +288,13 @@ function startzmbspawnersoundloops() {
                 waitframe(1);
             }
         }
-    } else {
-        /#
-            if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>");
-            }
-        #/
+        return;
     }
+    /#
+        if (getdvarint(#"debug_audio", 0) > 0) {
+            println("<unknown string>");
+        }
+    #/
 }
 
 // Namespace zm_escape/zm_escape

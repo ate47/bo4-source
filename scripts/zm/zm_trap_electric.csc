@@ -37,9 +37,9 @@ function trap_fx_monitor(localclientnum, oldval, newval, bnewent, binitialsnap, 
     exploder_name = "trap_electric_" + fieldname;
     if (newval) {
         exploder::exploder(exploder_name);
-    } else {
-        exploder::stop_exploder(exploder_name);
+        return;
     }
+    exploder::stop_exploder(exploder_name);
 }
 
 // Namespace zm_trap_electric/zm_trap_electric
@@ -62,15 +62,15 @@ function electrocute_ai(localclientnum, oldval, newval, bnewent, binitialsnap, f
         if (isdefined(self) && isdefined(self.n_shock_eyes_fx)) {
             setfxignorepause(localclientnum, self.n_shock_fx, 1);
         }
-    } else {
-        if (isdefined(self.n_shock_eyes_fx)) {
-            deletefx(localclientnum, self.n_shock_eyes_fx, 1);
-            self.n_shock_eyes_fx = undefined;
-        }
-        if (isdefined(self.n_shock_fx)) {
-            deletefx(localclientnum, self.n_shock_fx, 1);
-            self.n_shock_fx = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.n_shock_eyes_fx)) {
+        deletefx(localclientnum, self.n_shock_eyes_fx, 1);
+        self.n_shock_eyes_fx = undefined;
+    }
+    if (isdefined(self.n_shock_fx)) {
+        deletefx(localclientnum, self.n_shock_fx, 1);
+        self.n_shock_fx = undefined;
     }
 }
 

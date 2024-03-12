@@ -98,8 +98,7 @@ function event_handler[missile_fire] function_bfb94991(eventstruct) {
 // Checksum 0xf8b90a9c, Offset: 0x518
 // Size: 0x152
 function on_weapon_change(params) {
-    weapon = params.weapon;
-    while (weapon.lockontype == "AP Multi") {
+    for (weapon = params.weapon; weapon.lockontype == "AP Multi"; weapon = self getcurrentweapon()) {
         abort = 0;
         while (!(self playerads() == 1)) {
             waitframe(1);
@@ -110,7 +109,7 @@ function on_weapon_change(params) {
             }
         }
         if (abort) {
-            break;
+            return;
         }
         self thread aplockloop(weapon);
         while (self playerads() == 1) {
@@ -118,7 +117,6 @@ function on_weapon_change(params) {
         }
         self notify(#"ap_off");
         self clearaptarget(weapon);
-        weapon = self getcurrentweapon();
     }
 }
 
@@ -143,7 +141,7 @@ function aplockloop(weapon) {
                     }
                 }
             }
-        } while(!done);
+        } while (!done);
         inlockingstate = 0;
         do {
             done = 1;
@@ -171,7 +169,7 @@ function aplockloop(weapon) {
                     target.aptarget heatseekingmissile::function_5e6cd0ab(self getcurrentweapon(), self);
                 }
             }
-        } while(!done);
+        } while (!done);
         if (!inlockingstate) {
             do {
                 done = 1;
@@ -192,7 +190,7 @@ function aplockloop(weapon) {
                         break;
                     }
                 }
-            } while(!done);
+            } while (!done);
         }
         if (self.multilocklist.size >= getdvarint(#"scr_max_simlocks", 0) || self.multilocklist.size >= self getweaponammoclip(weapon)) {
             continue;
@@ -228,7 +226,9 @@ function getbesttarget(weapon) {
                     }
                 }
             }
-        } else if (self insideapreticlenolock(targetsall[idx])) {
+            continue;
+        }
+        if (self insideapreticlenolock(targetsall[idx])) {
             if (isdefined(targetsall[idx].owner) && self != targetsall[idx].owner) {
                 if (self locksighttest(targetsall[idx])) {
                     targetsvalid[targetsvalid.size] = targetsall[idx];
@@ -336,7 +336,7 @@ function seekersound(alias, looping, id) {
         do {
             self playlocalsound(alias);
             wait(time);
-        } while(looping);
+        } while (looping);
         self stoprumble("stinger_lock_rumble");
     }
 }

@@ -179,9 +179,9 @@ function give_fallback_weapon(immediate = 0) {
     self giveweapon(fallback_weapon);
     if (immediate && had_weapon) {
         self switchtoweaponimmediate(fallback_weapon);
-    } else {
-        self switchtoweapon(fallback_weapon);
+        return;
     }
+    self switchtoweapon(fallback_weapon);
 }
 
 // Namespace zm_melee_weapon/zm_melee_weapon
@@ -357,76 +357,95 @@ function melee_weapon_think(weapon, cost, flourish_fn, vo_dialog_id, flourish_we
         player = waitresult.activator;
         if (!zm_utility::is_player_valid(player)) {
             player thread zm_utility::ignore_triggers(0.5);
-        } else if (player zm_utility::in_revive_trigger()) {
+            continue;
+        }
+        if (player zm_utility::in_revive_trigger()) {
             wait(0.1);
-        } else if (player isthrowinggrenade()) {
+            continue;
+        }
+        if (player isthrowinggrenade()) {
             wait(0.1);
-        } else if (player zm_utility::is_drinking()) {
+            continue;
+        }
+        if (player zm_utility::is_drinking()) {
             wait(0.1);
-        } else if (zm_trial_disable_buys::is_active()) {
+            continue;
+        }
+        if (zm_trial_disable_buys::is_active()) {
             wait(0.1);
-        } else {
-            player_has_weapon = player hasweapon(weapon);
-            if (player_has_weapon || player zm_loadout::has_powerup_weapon()) {
-                wait(0.1);
-            } else if (player isswitchingweapons()) {
-                wait(0.1);
-            } else {
-                current_weapon = player getcurrentweapon();
-                if (zm_loadout::is_placeable_mine(current_weapon) || zm_equipment::is_equipment(current_weapon)) {
-                    wait(0.1);
-                } else if (player laststand::player_is_in_laststand() || isdefined(player.intermission) && player.intermission) {
-                    wait(0.1);
-                } else if (isdefined(player.check_override_melee_wallbuy_purchase)) {
-                    jumpiffalse(player [[ player.check_override_melee_wallbuy_purchase ]](vo_dialog_id, flourish_weapon, weapon, flourish_fn, self)) LOC_0000042c;
-                } else if (!player_has_weapon) {
-                    cost = self.stub.cost;
-                    if (isdefined(player.var_dc25727a)) {
-                        foreach (func_override in player.var_dc25727a) {
-                            n_cost = player [[ func_override ]](weapon, self);
-                            if (isdefined(n_cost)) {
-                                if (n_cost < cost) {
-                                    cost = n_cost;
-                                }
-                            }
+            continue;
+        }
+        player_has_weapon = player hasweapon(weapon);
+        if (player_has_weapon || player zm_loadout::has_powerup_weapon()) {
+            wait(0.1);
+            continue;
+        }
+        if (player isswitchingweapons()) {
+            wait(0.1);
+            continue;
+        }
+        current_weapon = player getcurrentweapon();
+        if (zm_loadout::is_placeable_mine(current_weapon) || zm_equipment::is_equipment(current_weapon)) {
+            wait(0.1);
+            continue;
+        }
+        if (player laststand::player_is_in_laststand() || isdefined(player.intermission) && player.intermission) {
+            wait(0.1);
+            continue;
+        }
+        if (isdefined(player.check_override_melee_wallbuy_purchase)) {
+            if (player [[ player.check_override_melee_wallbuy_purchase ]](vo_dialog_id, flourish_weapon, weapon, flourish_fn, self)) {
+                continue;
+            }
+        }
+        if (!player_has_weapon) {
+            cost = self.stub.cost;
+            if (isdefined(player.var_dc25727a)) {
+                foreach (func_override in player.var_dc25727a) {
+                    n_cost = player [[ func_override ]](weapon, self);
+                    if (isdefined(n_cost)) {
+                        if (n_cost < cost) {
+                            cost = n_cost;
                         }
                     }
-                    if (player zm_score::can_player_purchase(cost)) {
-                        if (self.first_time_triggered == 0) {
-                            model = getent(self.target, "targetname");
-                            if (isdefined(model)) {
-                                model thread melee_weapon_show(player);
-                            } else if (isdefined(self.clientfieldname)) {
-                                level clientfield::set(self.clientfieldname, 1);
-                            }
-                            if (zm_utility::get_story() != 1 && !isdefined(model)) {
-                                var_6ff4b667 = struct::get(self.target, "targetname");
-                                if (isdefined(var_6ff4b667) && isdefined(var_6ff4b667.target)) {
-                                    var_8d0ce13b = getent(var_6ff4b667.target, "targetname");
-                                    var_8d0ce13b clientfield::set("wallbuy_reveal_fx", 1);
-                                    var_8d0ce13b clientfield::set("wallbuy_ambient_fx", 0);
-                                }
-                            }
-                            self.first_time_triggered = 1;
-                            if (isdefined(self.stub)) {
-                                self.stub.first_time_triggered = 1;
-                            }
-                        }
-                        level notify(#"weapon_bought", {#weapon:weapon, #player:player});
-                        player zm_score::minus_to_player_score(cost);
-                        player zm_stats::function_c0c6ab19(#"wallbuys", 1, 1);
-                        player zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);
-                        player contracts::increment_zm_contract(#"contract_zm_weapons_bought", 1, #"zstandard");
-                        player contracts::increment_zm_contract(#"contract_zm_wallbuys", 1, #"zstandard");
-                        player thread give_melee_weapon(vo_dialog_id, flourish_weapon, weapon, flourish_fn, self);
-                    } else {
-                        zm_utility::play_sound_on_ent("no_purchase");
-                        player zm_audio::create_and_play_dialog(#"general", #"outofmoney", 1);
-                    }
-                } else if (!(isdefined(level._allow_melee_weapon_switching) && level._allow_melee_weapon_switching)) {
-                    self setinvisibletoplayer(player);
                 }
             }
+            if (player zm_score::can_player_purchase(cost)) {
+                if (self.first_time_triggered == 0) {
+                    model = getent(self.target, "targetname");
+                    if (isdefined(model)) {
+                        model thread melee_weapon_show(player);
+                    } else if (isdefined(self.clientfieldname)) {
+                        level clientfield::set(self.clientfieldname, 1);
+                    }
+                    if (zm_utility::get_story() != 1 && !isdefined(model)) {
+                        var_6ff4b667 = struct::get(self.target, "targetname");
+                        if (isdefined(var_6ff4b667) && isdefined(var_6ff4b667.target)) {
+                            var_8d0ce13b = getent(var_6ff4b667.target, "targetname");
+                            var_8d0ce13b clientfield::set("wallbuy_reveal_fx", 1);
+                            var_8d0ce13b clientfield::set("wallbuy_ambient_fx", 0);
+                        }
+                    }
+                    self.first_time_triggered = 1;
+                    if (isdefined(self.stub)) {
+                        self.stub.first_time_triggered = 1;
+                    }
+                }
+                level notify(#"weapon_bought", {#weapon:weapon, #player:player});
+                player zm_score::minus_to_player_score(cost);
+                player zm_stats::function_c0c6ab19(#"wallbuys", 1, 1);
+                player zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);
+                player contracts::increment_zm_contract(#"contract_zm_weapons_bought", 1, #"zstandard");
+                player contracts::increment_zm_contract(#"contract_zm_wallbuys", 1, #"zstandard");
+                player thread give_melee_weapon(vo_dialog_id, flourish_weapon, weapon, flourish_fn, self);
+            } else {
+                zm_utility::play_sound_on_ent("no_purchase");
+                player zm_audio::create_and_play_dialog(#"general", #"outofmoney", 1);
+            }
+            continue;
+        }
+        if (!(isdefined(level._allow_melee_weapon_switching) && level._allow_melee_weapon_switching)) {
+            self setinvisibletoplayer(player);
         }
     }
 }

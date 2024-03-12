@@ -77,7 +77,9 @@ function init() {
                 }
                 if (isdefined(level._custom_perks[a_keys[i]].perk_machine_power_override_thread)) {
                     level thread [[ level._custom_perks[a_keys[i]].perk_machine_power_override_thread ]]();
-                } else if (isdefined(level._custom_perks[a_keys[i]].alias) && isdefined(level._custom_perks[a_keys[i]].radiant_machine_name) && isdefined(level._custom_perks[a_keys[i]].machine_light_effect)) {
+                    continue;
+                }
+                if (isdefined(level._custom_perks[a_keys[i]].alias) && isdefined(level._custom_perks[a_keys[i]].radiant_machine_name) && isdefined(level._custom_perks[a_keys[i]].machine_light_effect)) {
                     level thread perk_machine_think(a_keys[i], level._custom_perks[a_keys[i]]);
                 }
             }
@@ -288,9 +290,9 @@ function turn_perk_off(ishidden) {
             newmachine notsolid();
         }
         self delete();
-    } else {
-        perk_fx(undefined, 1);
+        return;
     }
+    perk_fx(undefined, 1);
 }
 
 // Namespace zm_perks/zm_perks
@@ -319,21 +321,23 @@ function perk_fx(fx, turnofffx) {
         if (isdefined(self.b_keep_when_turned_off) && self.b_keep_when_turned_off && isdefined(self.s_fxloc)) {
             self.s_fxloc delete();
         }
-    } else {
-        wait(3);
-        if (!isdefined(self)) {
-            return;
-        }
-        if (!(isdefined(self.b_keep_when_turned_off) && self.b_keep_when_turned_off)) {
-            if (isdefined(self) && !(isdefined(self.perk_fx) && self.perk_fx)) {
-                playfxontag(level._effect[fx], self, "tag_origin");
-                self.perk_fx = 1;
-            }
-        } else if (isdefined(self) && !isdefined(self.s_fxloc)) {
-            self.s_fxloc = util::spawn_model("tag_origin", self.origin);
-            playfxontag(level._effect[fx], self.s_fxloc, "tag_origin");
+        return;
+    }
+    wait(3);
+    if (!isdefined(self)) {
+        return;
+    }
+    if (!(isdefined(self.b_keep_when_turned_off) && self.b_keep_when_turned_off)) {
+        if (isdefined(self) && !(isdefined(self.perk_fx) && self.perk_fx)) {
+            playfxontag(level._effect[fx], self, "tag_origin");
             self.perk_fx = 1;
         }
+        return;
+    }
+    if (isdefined(self) && !isdefined(self.s_fxloc)) {
+        self.s_fxloc = util::spawn_model("tag_origin", self.origin);
+        playfxontag(level._effect[fx], self.s_fxloc, "tag_origin");
+        self.perk_fx = 1;
     }
 }
 
@@ -362,22 +366,22 @@ function electric_perks_dialog() {
             dist = distancesquared(players[i].origin, self.origin);
             if (dist > 4900) {
                 timer = 0;
-            } else {
-                if (dist < 4900 && timer < 3) {
-                    wait(0.5);
-                    timer++;
+                continue;
+            }
+            if (dist < 4900 && timer < 3) {
+                wait(0.5);
+                timer++;
+            }
+            if (dist < 4900 && timer == 3) {
+                if (!isdefined(players[i])) {
+                    continue;
                 }
-                if (dist < 4900 && timer == 3) {
-                    if (!isdefined(players[i])) {
-                        continue;
-                    }
-                    players[i] thread zm_utility::do_player_vo("vox_start", 5);
-                    wait(3);
-                    self notify(#"warning_dialog");
-                    /#
-                        iprintlnbold("<unknown string>");
-                    #/
-                }
+                players[i] thread zm_utility::do_player_vo("vox_start", 5);
+                wait(3);
+                self notify(#"warning_dialog");
+                /#
+                    iprintlnbold("<unknown string>");
+                #/
             }
         }
     }
@@ -509,59 +513,66 @@ function vending_trigger_think() {
         }
         if (!var_f2a92d5e) {
             wait(0.1);
-        } else {
-            index = zm_utility::get_player_index(player);
-            if (!vending_trigger_can_player_use(player, 1)) {
-                wait(0.1);
-            } else if (player hasperk(perk) || player has_perk_paused(perk)) {
-                cheat = 0;
-                /#
-                    if (getdvarint(#"zombie_cheat", 0) >= 5) {
-                        cheat = 1;
-                    }
-                #/
-                jumpiffalse(cheat != 1) LOC_00000216;
+            continue;
+        }
+        index = zm_utility::get_player_index(player);
+        if (!vending_trigger_can_player_use(player, 1)) {
+            wait(0.1);
+            continue;
+        }
+        if (player hasperk(perk) || player has_perk_paused(perk)) {
+            cheat = 0;
+            /#
+                if (getdvarint(#"zombie_cheat", 0) >= 5) {
+                    cheat = 1;
+                }
+            #/
+            if (cheat != 1) {
                 zm_utility::play_sound_on_ent("no_purchase");
-            } else if (isdefined(level.custom_perk_validation)) {
-                valid = self [[ level.custom_perk_validation ]](player);
-                jumpiftrue(valid) LOC_00000248;
-            } else {
-            LOC_00000248:
-                current_cost = cost;
-                if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_1;
-                }
-                if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_2;
-                }
-                if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_3;
-                }
-                if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_4;
-                }
-                if (!player zm_score::can_player_purchase(current_cost)) {
-                    zm_utility::play_sound_on_ent("no_purchase");
-                    player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-                } else if (!player zm_utility::can_player_purchase_perk()) {
-                    zm_utility::play_sound_on_ent("no_purchase");
-                } else {
-                    sound = "evt_bottle_dispense";
-                    playsoundatposition(sound, self.origin);
-                    player zm_score::minus_to_player_score(current_cost);
-                    bb::logpurchaseevent(player, self, current_cost, perk, 0, "_perk", "_purchased");
-                    perkhash = -1;
-                    if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].alias)) {
-                        perkhash = level._custom_perks[perk].alias;
-                    }
-                    player recordmapevent(29, gettime(), self.origin, level.round_number, perkhash);
-                    player.perk_purchased = perk;
-                    player notify(#"perk_purchased", {#perk:perk});
-                    self thread zm_audio::sndperksjingles_player(1);
-                    self thread vending_trigger_post_think(player, perk);
-                }
+                continue;
             }
         }
+        if (isdefined(level.custom_perk_validation)) {
+            valid = self [[ level.custom_perk_validation ]](player);
+            if (!valid) {
+                continue;
+            }
+        }
+        current_cost = cost;
+        if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
+            current_cost = current_cost - player.talisman_perk_reducecost_1;
+        }
+        if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
+            current_cost = current_cost - player.talisman_perk_reducecost_2;
+        }
+        if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
+            current_cost = current_cost - player.talisman_perk_reducecost_3;
+        }
+        if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
+            current_cost = current_cost - player.talisman_perk_reducecost_4;
+        }
+        if (!player zm_score::can_player_purchase(current_cost)) {
+            zm_utility::play_sound_on_ent("no_purchase");
+            player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
+            continue;
+        }
+        if (!player zm_utility::can_player_purchase_perk()) {
+            zm_utility::play_sound_on_ent("no_purchase");
+            continue;
+        }
+        sound = "evt_bottle_dispense";
+        playsoundatposition(sound, self.origin);
+        player zm_score::minus_to_player_score(current_cost);
+        bb::logpurchaseevent(player, self, current_cost, perk, 0, "_perk", "_purchased");
+        perkhash = -1;
+        if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].alias)) {
+            perkhash = level._custom_perks[perk].alias;
+        }
+        player recordmapevent(29, gettime(), self.origin, level.round_number, perkhash);
+        player.perk_purchased = perk;
+        player notify(#"perk_purchased", {#perk:perk});
+        self thread zm_audio::sndperksjingles_player(1);
+        self thread vending_trigger_post_think(player, perk);
     }
 }
 
@@ -688,7 +699,7 @@ function function_a7ae070c(var_16c042b8, var_b169f6df = 0) {
 function vending_set_hintstring(perk) {
     switch (perk) {
     case #"specialty_armorvest":
-        break;
+        return;
     }
 }
 
@@ -977,7 +988,9 @@ function perk_pause_all_perks(power_zone) {
     foreach (trigger in vending_machines) {
         if (!isdefined(power_zone)) {
             perk_pause(trigger.script_noteworthy);
-        } else if (isdefined(trigger.script_int) && trigger.script_int == power_zone) {
+            continue;
+        }
+        if (isdefined(trigger.script_int) && trigger.script_int == power_zone) {
             perk_pause(trigger.script_noteworthy);
         }
     }
@@ -992,7 +1005,9 @@ function perk_unpause_all_perks(power_zone) {
     foreach (trigger in vending_machines) {
         if (!isdefined(power_zone)) {
             perk_unpause(trigger.script_noteworthy);
-        } else if (isdefined(trigger.script_int) && trigger.script_int == power_zone) {
+            continue;
+        }
+        if (isdefined(trigger.script_int) && trigger.script_int == power_zone) {
             perk_unpause(trigger.script_noteworthy);
         }
     }
@@ -1073,11 +1088,13 @@ function perk_machine_removal(machine, replacement_model) {
             for (i = 0; i < parts.size; i++) {
                 if (isdefined(parts[i].classname) && parts[i].classname == "script_model") {
                     machine_model = parts[i];
-                } else if (isdefined(parts[i].script_noteworthy && parts[i].script_noteworthy == "clip")) {
-                    model_clip = parts[i];
-                } else {
-                    parts[i] delete();
+                    continue;
                 }
+                if (isdefined(parts[i].script_noteworthy && parts[i].script_noteworthy == "clip")) {
+                    model_clip = parts[i];
+                    continue;
+                }
+                parts[i] delete();
             }
         }
         if (isdefined(replacement_model) && isdefined(machine_model)) {
@@ -1123,9 +1140,9 @@ function perk_machine_spawn_init() {
                     a_s_spawn_pos[a_s_spawn_pos.size] = struct;
                 }
             }
-        } else {
-            a_s_spawn_pos[a_s_spawn_pos.size] = struct;
+            continue;
         }
+        a_s_spawn_pos[a_s_spawn_pos.size] = struct;
     }
     if (a_s_spawn_pos.size == 0) {
         return;
@@ -1292,9 +1309,9 @@ function check_player_has_perk(perk) {
             if (distancesquared(players[i].origin, self.origin) < dist) {
                 if (!players[i] hasperk(perk) && self vending_trigger_can_player_use(players[i], 1) && !players[i] has_perk_paused(perk) && !players[i] zm_utility::in_revive_trigger() && !zm_equipment::is_equipment_that_blocks_purchase(players[i] getcurrentweapon()) && !players[i] zm_equipment::hacker_active()) {
                     self setinvisibletoplayer(players[i], 0);
-                } else {
-                    self setinvisibletoplayer(players[i], 1);
+                    continue;
                 }
+                self setinvisibletoplayer(players[i], 1);
             }
         }
         wait(0.1);
@@ -1394,7 +1411,9 @@ function function_81bc6765(var_481d50cb, var_b0ab4cec) {
         if (function_ad1814a1(self.var_eabca645[var_b0ab4cec], var_b0ab4cec)) {
             self clientfield::set_player_uimodel("hudItems.extraPerkVapor." + self.var_eabca645[var_b0ab4cec] + ".itemIndex", getitemindexfromref(var_b0ab4cec));
         }
-    } else if (var_481d50cb < 4) {
+        return;
+    }
+    if (var_481d50cb < 4) {
         self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".itemIndex", getitemindexfromref(var_b0ab4cec));
     }
 }
@@ -1414,7 +1433,9 @@ function function_2ac7579(var_481d50cb, var_dc149467 = 0, var_b0ab4cec) {
         if (function_ad1814a1(self.var_eabca645[var_b0ab4cec], var_b0ab4cec)) {
             self clientfield::set_player_uimodel("hudItems.extraPerkVapor." + self.var_eabca645[var_b0ab4cec] + ".state", var_dc149467);
         }
-    } else if (var_481d50cb < 4) {
+        return;
+    }
+    if (var_481d50cb < 4) {
         self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".state", var_dc149467);
     }
 }
@@ -1443,7 +1464,9 @@ function function_13880aa5(var_481d50cb, var_87eb3522 = 0, var_b0ab4cec) {
         if (function_ad1814a1(self.var_eabca645[var_b0ab4cec], var_b0ab4cec)) {
             self clientfield::set_player_uimodel("hudItems.extraPerkVapor." + self.var_eabca645[var_b0ab4cec] + ".progress", var_87eb3522);
         }
-    } else if (var_481d50cb < 4) {
+        return;
+    }
+    if (var_481d50cb < 4) {
         self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".progress", var_87eb3522);
     }
 }
@@ -1463,9 +1486,9 @@ function function_f2ff97a6(var_481d50cb, var_c3d1c893 = 0, var_b0ab4cec) {
         if (function_ad1814a1(self.var_eabca645[var_b0ab4cec], var_b0ab4cec)) {
             self clientfield::set_player_uimodel("hudItems.extraPerkVapor." + self.var_eabca645[var_b0ab4cec] + ".chargeCount", var_c3d1c893);
         }
-    } else {
-        self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".chargeCount", var_c3d1c893);
+        return;
     }
+    self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".chargeCount", var_c3d1c893);
 }
 
 // Namespace zm_perks/zm_perks
@@ -1483,9 +1506,9 @@ function function_f0ac059f(var_481d50cb, b_active = 0, var_b0ab4cec) {
         if (function_ad1814a1(self.var_eabca645[var_b0ab4cec], var_b0ab4cec)) {
             self clientfield::set_player_uimodel("hudItems.extraPerkVapor." + self.var_eabca645[var_b0ab4cec] + ".timerActive", b_active);
         }
-    } else {
-        self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".timerActive", b_active);
+        return;
     }
+    self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".timerActive", b_active);
 }
 
 // Namespace zm_perks/zm_perks
@@ -1503,9 +1526,9 @@ function function_c8c7bc5(var_481d50cb, b_active = 0, var_b0ab4cec) {
         if (function_ad1814a1(self.var_eabca645[var_b0ab4cec], var_b0ab4cec)) {
             self clientfield::set_player_uimodel("hudItems.extraPerkVapor." + self.var_eabca645[var_b0ab4cec] + ".specialEffectActive", b_active);
         }
-    } else {
-        self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".specialEffectActive", b_active);
+        return;
     }
+    self clientfield::set_player_uimodel("hudItems.perkVapor." + var_481d50cb + ".specialEffectActive", b_active);
 }
 
 // Namespace zm_perks/zm_perks
@@ -1634,7 +1657,7 @@ function check_for_change() {
         if (player getstance() == "prone") {
             player zm_score::add_to_player_score(100);
             zm_utility::play_sound_at_pos("purchase", player.origin);
-            break;
+            return;
         }
         wait(0.1);
     }
@@ -2048,14 +2071,14 @@ function function_8c7cee86() {
                     var_ae36fbfd[0] = array(var_ae36fbfd[0]);
                 }
                 var_ae36fbfd[0][var_ae36fbfd[0].size] = var_7a9ec77b;
-            } else {
-                if (!isdefined(var_ae36fbfd[var_7a9ec77b.script_int + 1])) {
-                    var_ae36fbfd[var_7a9ec77b.script_int + 1] = [];
-                } else if (!isarray(var_ae36fbfd[var_7a9ec77b.script_int + 1])) {
-                    var_ae36fbfd[var_7a9ec77b.script_int + 1] = array(var_ae36fbfd[var_7a9ec77b.script_int + 1]);
-                }
-                var_ae36fbfd[var_7a9ec77b.script_int + 1][var_ae36fbfd[var_7a9ec77b.script_int + 1].size] = var_7a9ec77b;
+                continue;
             }
+            if (!isdefined(var_ae36fbfd[var_7a9ec77b.script_int + 1])) {
+                var_ae36fbfd[var_7a9ec77b.script_int + 1] = [];
+            } else if (!isarray(var_ae36fbfd[var_7a9ec77b.script_int + 1])) {
+                var_ae36fbfd[var_7a9ec77b.script_int + 1] = array(var_ae36fbfd[var_7a9ec77b.script_int + 1]);
+            }
+            var_ae36fbfd[var_7a9ec77b.script_int + 1][var_ae36fbfd[var_7a9ec77b.script_int + 1].size] = var_7a9ec77b;
         }
         foreach (var_ec770e5d in var_ae36fbfd) {
             s_loc = array::random(var_ec770e5d);
@@ -2191,85 +2214,88 @@ function function_f5da744e() {
         }
         if (!vending_trigger_can_player_use(player, 1) || zm_trial_disable_buys::is_active() || zm_trial_disable_perks::is_active() || !zm_custom::function_901b751c(#"zmperksactive")) {
             wait(0.1);
-        } else {
-            perk = player.var_47654123[n_slot] ? #"specialty_mystery" : player.var_c27f1e90[n_slot];
-            if (!isdefined(player.var_c27f1e90) || player.var_c27f1e90.size <= n_slot) {
-                return;
-            }
-            if (player.var_47654123[n_slot] && !isdefined(player function_5ea0c6cf())) {
-                return;
-            }
-            if (player hasperk(perk) || player has_perk_paused(perk)) {
-                cheat = 0;
-                /#
-                    if (getdvarint(#"zombie_cheat", 0) >= 5) {
-                        cheat = 1;
-                    }
-                #/
-                jumpiffalse(cheat != 1) LOC_000002c6;
+            continue;
+        }
+        perk = player.var_47654123[n_slot] ? #"specialty_mystery" : player.var_c27f1e90[n_slot];
+        if (!isdefined(player.var_c27f1e90) || player.var_c27f1e90.size <= n_slot) {
+            return;
+        }
+        if (player.var_47654123[n_slot] && !isdefined(player function_5ea0c6cf())) {
+            return;
+        }
+        if (player hasperk(perk) || player has_perk_paused(perk)) {
+            cheat = 0;
+            /#
+                if (getdvarint(#"zombie_cheat", 0) >= 5) {
+                    cheat = 1;
+                }
+            #/
+            if (cheat != 1) {
                 zm_utility::play_sound_on_ent("no_purchase");
-            } else if (isdefined(level.custom_perk_validation)) {
-                valid = self [[ level.custom_perk_validation ]](player);
-                jumpiftrue(valid) LOC_000002f8;
-            } else {
-            LOC_000002f8:
-                if (isdefined(level._custom_perks)) {
-                    if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].cost) && isdefined(level._custom_perks[perk].hint_string)) {
-                        n_cost = level function_44915d1(perk, n_slot);
-                    }
-                }
-                current_cost = n_cost;
-                if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_1;
-                }
-                if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_2;
-                }
-                if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_3;
-                }
-                if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
-                    current_cost = current_cost - player.talisman_perk_reducecost_4;
-                }
-                current_cost = player namespace_e38c57c1::function_863dc0ef(current_cost);
-                current_cost = int(max(current_cost, 0));
-                if (!player zm_score::can_player_purchase(current_cost)) {
-                    zm_utility::play_sound_on_ent("no_purchase");
-                    player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-                } else {
-                    player thread zm_audio::create_and_play_dialog(#"altar", #"interact");
-                    playsoundatposition(#"hash_489cdfeed1ac55bd", self.origin);
-                    if (level.var_c3e5c4cd == 1 && !self.var_3cfb2018) {
-                        playsoundatposition(#"hash_1e20f59360c2377e", self.origin);
-                    }
-                    player zm_score::minus_to_player_score(current_cost);
-                    bb::logpurchaseevent(player, self, current_cost, perk, 0, "_perk", "_purchased");
-                    if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].alias)) {
-                        perkhash = level._custom_perks[perk].alias;
-                    }
-                    if (!ishash(perkhash)) {
-                        /#
-                            assertmsg("<unknown string>");
-                        #/
-                        perkhash = -1;
-                    }
-                    n_round_number = level.round_number;
-                    if (!isint(n_round_number)) {
-                        /#
-                            assertmsg("<unknown string>");
-                        #/
-                        n_round_number = 0;
-                    }
-                    player recordmapevent(29, gettime(), self.origin, n_round_number, perkhash);
-                    player.perk_purchased = perk;
-                    player notify(#"perk_purchased", {#perk:perk});
-                    if (player.var_47654123[n_slot]) {
-                        perk = player function_5ea0c6cf();
-                    }
-                    self thread taking_cover_tanks_(player, perk, n_slot, self.stub.var_3468124);
-                }
+                continue;
             }
         }
+        if (isdefined(level.custom_perk_validation)) {
+            valid = self [[ level.custom_perk_validation ]](player);
+            if (!valid) {
+                continue;
+            }
+        }
+        if (isdefined(level._custom_perks)) {
+            if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].cost) && isdefined(level._custom_perks[perk].hint_string)) {
+                n_cost = level function_44915d1(perk, n_slot);
+            }
+        }
+        current_cost = n_cost;
+        if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
+            current_cost = current_cost - player.talisman_perk_reducecost_1;
+        }
+        if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
+            current_cost = current_cost - player.talisman_perk_reducecost_2;
+        }
+        if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
+            current_cost = current_cost - player.talisman_perk_reducecost_3;
+        }
+        if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
+            current_cost = current_cost - player.talisman_perk_reducecost_4;
+        }
+        current_cost = player namespace_e38c57c1::function_863dc0ef(current_cost);
+        current_cost = int(max(current_cost, 0));
+        if (!player zm_score::can_player_purchase(current_cost)) {
+            zm_utility::play_sound_on_ent("no_purchase");
+            player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
+            continue;
+        }
+        player thread zm_audio::create_and_play_dialog(#"altar", #"interact");
+        playsoundatposition(#"hash_489cdfeed1ac55bd", self.origin);
+        if (level.var_c3e5c4cd == 1 && !self.var_3cfb2018) {
+            playsoundatposition(#"hash_1e20f59360c2377e", self.origin);
+        }
+        player zm_score::minus_to_player_score(current_cost);
+        bb::logpurchaseevent(player, self, current_cost, perk, 0, "_perk", "_purchased");
+        if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].alias)) {
+            perkhash = level._custom_perks[perk].alias;
+        }
+        if (!ishash(perkhash)) {
+            /#
+                assertmsg("<unknown string>");
+            #/
+            perkhash = -1;
+        }
+        n_round_number = level.round_number;
+        if (!isint(n_round_number)) {
+            /#
+                assertmsg("<unknown string>");
+            #/
+            n_round_number = 0;
+        }
+        player recordmapevent(29, gettime(), self.origin, n_round_number, perkhash);
+        player.perk_purchased = perk;
+        player notify(#"perk_purchased", {#perk:perk});
+        if (player.var_47654123[n_slot]) {
+            perk = player function_5ea0c6cf();
+        }
+        self thread taking_cover_tanks_(player, perk, n_slot, self.stub.var_3468124);
     }
 }
 
@@ -2320,13 +2346,13 @@ function taking_cover_tanks_(player, perk, n_slot, var_3468124) {
         if (isdefined(level.var_c4bedce3)) {
             player [[ level.var_c4bedce3 ]](perk);
         }
-    } else {
-        if (player.var_47654123[n_slot]) {
-            player function_81bc6765(n_slot, level._custom_perks[#"specialty_mystery"].alias);
-            player function_2ac7579(n_slot, 0);
-        }
-        player function_fb633f9d(n_slot, 0);
+        return;
     }
+    if (player.var_47654123[n_slot]) {
+        player function_81bc6765(n_slot, level._custom_perks[#"specialty_mystery"].alias);
+        player function_2ac7579(n_slot, 0);
+    }
+    player function_fb633f9d(n_slot, 0);
 }
 
 // Namespace zm_perks/zm_perks
@@ -2370,22 +2396,22 @@ function function_d11d4952() {
             dist = distancesquared(players[i].origin, self.origin);
             if (dist > 4900) {
                 timer = 0;
-            } else {
-                if (dist < 4900 && timer < 3) {
-                    wait(0.5);
-                    timer++;
+                continue;
+            }
+            if (dist < 4900 && timer < 3) {
+                wait(0.5);
+                timer++;
+            }
+            if (dist < 4900 && timer == 3) {
+                if (!isdefined(players[i])) {
+                    continue;
                 }
-                if (dist < 4900 && timer == 3) {
-                    if (!isdefined(players[i])) {
-                        continue;
-                    }
-                    players[i] thread zm_utility::do_player_vo("vox_start", 5);
-                    wait(3);
-                    self notify(#"warning_dialog");
-                    /#
-                        iprintlnbold("<unknown string>");
-                    #/
-                }
+                players[i] thread zm_utility::do_player_vo("vox_start", 5);
+                wait(3);
+                self notify(#"warning_dialog");
+                /#
+                    iprintlnbold("<unknown string>");
+                #/
             }
         }
     }
@@ -2563,7 +2589,7 @@ function function_329ae65e(perk, n_slot) {
         s_result = undefined;
         s_result = self waittill(perk_str);
         result = s_result._notify;
-    } while(!(isdefined(s_result.var_613b7621) && s_result.var_613b7621) && self lost_perk_override(perk));
+    } while (!(isdefined(s_result.var_613b7621) && s_result.var_613b7621) && self lost_perk_override(perk));
     var_ac32c1b8 = 0;
     self perks::perk_unsetperk(perk);
     if (isdefined(self.var_47654123[n_slot]) && self.var_47654123[n_slot] && self.var_c27f1e90[n_slot] == perk) {
@@ -2665,9 +2691,9 @@ function function_59fb56ff(b_show) {
             assert(isdefined(self.var_3468124), "<unknown string>");
         #/
         self.var_e80aca0a = 0;
-        if (isdefined(self.var_3468124.var_73bd396b)) {
-            self.var_3468124.var_73bd396b show();
-            self.var_3468124.var_73bd396b solid();
+        if (isdefined(self.var_3468124.mdl_altar)) {
+            self.var_3468124.mdl_altar show();
+            self.var_3468124.mdl_altar solid();
         }
         if (isdefined(self.clip)) {
             self.clip show();
@@ -2677,23 +2703,23 @@ function function_59fb56ff(b_show) {
             self.bump show();
             self.bump solid();
         }
-    } else {
-        /#
-            assert(isdefined(self.var_3468124), "<unknown string>");
-        #/
-        self.var_e80aca0a = 1;
-        if (isdefined(self.var_3468124.var_73bd396b)) {
-            self.var_3468124.var_73bd396b ghost();
-            self.var_3468124.var_73bd396b notsolid();
-        }
-        if (isdefined(self.clip)) {
-            self.clip ghost();
-            self.clip notsolid();
-        }
-        if (isdefined(self.bump)) {
-            self.bump ghost();
-            self.bump notsolid();
-        }
+        return;
+    }
+    /#
+        assert(isdefined(self.var_3468124), "<unknown string>");
+    #/
+    self.var_e80aca0a = 1;
+    if (isdefined(self.var_3468124.mdl_altar)) {
+        self.var_3468124.mdl_altar ghost();
+        self.var_3468124.mdl_altar notsolid();
+    }
+    if (isdefined(self.clip)) {
+        self.clip ghost();
+        self.clip notsolid();
+    }
+    if (isdefined(self.bump)) {
+        self.bump ghost();
+        self.bump notsolid();
     }
 }
 
@@ -2742,7 +2768,9 @@ function function_29387491(var_16c042b8, n_slot) {
             self.var_47654123[n_slot] = 0;
         }
         self thread function_9bdf581f(var_16c042b8, n_slot);
-    } else if (!self function_80cb4982()) {
+        return;
+    }
+    if (!self function_80cb4982()) {
         self thread function_a7ae070c(var_16c042b8);
     }
 }
@@ -2853,7 +2881,7 @@ function function_8b413937(var_3468124) {
     } else {
         var_3468124 function_a30c73b9("on");
         waitframe(1);
-        var_3468124.var_73bd396b clientfield::set("" + #"hash_cf74c35ecc5a49", 1);
+        var_3468124.mdl_altar clientfield::set("" + #"hash_cf74c35ecc5a49", 1);
     }
     var_3468124 function_a1bad730();
     if (level.var_c3e5c4cd == 2 && var_3468124.script_int == 2) {
@@ -2866,8 +2894,8 @@ function function_8b413937(var_3468124) {
 // Checksum 0xfd9f4101, Offset: 0xb730
 // Size: 0x64
 function function_72c30be7(var_dd74d130, var_3468124) {
-    var_3468124.var_73bd396b = var_dd74d130[#"prop 1"];
-    var_3468124.var_73bd396b clientfield::set("" + #"hash_cf74c35ecc5a49", 1);
+    var_3468124.mdl_altar = var_dd74d130[#"prop 1"];
+    var_3468124.mdl_altar clientfield::set("" + #"hash_cf74c35ecc5a49", 1);
 }
 
 // Namespace zm_perks/zm_perks
@@ -2879,7 +2907,7 @@ function function_a30c73b9(str_state) {
     if (!isdefined(s_statue)) {
         return;
     }
-    if (!isdefined(self.var_73bd396b)) {
+    if (!isdefined(self.mdl_altar)) {
         if (isdefined(self.script_int)) {
             if (level.var_c3e5c4cd == 1) {
                 switch (self.script_int) {
@@ -2925,13 +2953,13 @@ function function_a30c73b9(str_state) {
         /#
             assert(isdefined(var_1d373a09), "<unknown string>");
         #/
-        self.var_73bd396b = util::spawn_model(var_1d373a09, s_statue.origin, s_statue.angles);
+        self.mdl_altar = util::spawn_model(var_1d373a09, s_statue.origin, s_statue.angles);
         if (isdefined(var_30a7cd8c) && var_30a7cd8c) {
             waitframe(1);
-            self.var_73bd396b clientfield::set("" + #"hash_50eb488e58f66198", 1);
+            self.mdl_altar clientfield::set("" + #"hash_50eb488e58f66198", 1);
         }
     }
-    self.var_73bd396b thread scene::play(self.var_2839b015, str_state, self.var_73bd396b);
+    self.mdl_altar thread scene::play(self.var_2839b015, str_state, self.mdl_altar);
 }
 
 // Namespace zm_perks/zm_perks
@@ -2964,8 +2992,8 @@ function function_e9df56d1() {
     if (!isdefined(self.var_31cb501c)) {
         return;
     }
-    self.var_73bd396b scene::play(self.var_2839b015, self.var_31cb501c[self.var_2a08e958], self.var_73bd396b);
-    self.var_73bd396b thread scene::play(self.var_2839b015, self.var_2977c27, self.var_73bd396b);
+    self.mdl_altar scene::play(self.var_2839b015, self.var_31cb501c[self.var_2a08e958], self.mdl_altar);
+    self.mdl_altar thread scene::play(self.var_2839b015, self.var_2977c27, self.mdl_altar);
     self.var_2a08e958++;
     if (self.var_2a08e958 == self.var_31cb501c.size) {
         self.var_2a08e958 = 0;
@@ -2977,11 +3005,11 @@ function function_e9df56d1() {
 // Checksum 0xb7eedad1, Offset: 0xbd30
 // Size: 0xf6
 function function_efd2c9e6() {
-    if (!isdefined(self.var_73bd396b)) {
+    if (!isdefined(self.mdl_altar)) {
         return;
     }
     if (level.var_c3e5c4cd == 1) {
-        self.var_73bd396b thread scene::play(self.var_2839b015, "disable", self.var_73bd396b);
+        self.mdl_altar thread scene::play(self.var_2839b015, "disable", self.mdl_altar);
     }
     n_slot = self.script_int;
     foreach (e_player in level.activeplayers) {
@@ -2995,11 +3023,11 @@ function function_efd2c9e6() {
 // Checksum 0x6feeb693, Offset: 0xbe30
 // Size: 0x170
 function function_1e721859() {
-    if (!isdefined(self.var_73bd396b)) {
+    if (!isdefined(self.mdl_altar)) {
         return;
     }
     if (level.var_c3e5c4cd == 1) {
-        self.var_73bd396b thread scene::play(self.var_2839b015, "on", self.var_73bd396b);
+        self.mdl_altar thread scene::play(self.var_2839b015, "on", self.mdl_altar);
     }
     self.var_2977c27 = "on";
     n_slot = self.script_int;
@@ -3024,9 +3052,8 @@ function function_adc671f5(n_slot) {
         if (s_altar.script_int == n_slot) {
             if (s_altar.var_2977c27 == "on") {
                 return 1;
-            } else {
-                return 0;
             }
+            return 0;
         }
     }
     /#
@@ -3137,12 +3164,12 @@ function function_fb633f9d(n_slot, n_state) {
             if (level function_adc671f5(n_slot)) {
                 self clientfield::set_to_player(str_clientfield, self getentitynumber() + 1);
             }
-        } else {
-            if (!level function_adc671f5(n_slot) && n_state != 7) {
-                return;
-            }
-            self clientfield::set_to_player(str_clientfield, n_state);
+            return;
         }
+        if (!level function_adc671f5(n_slot) && n_state != 7) {
+            return;
+        }
+        self clientfield::set_to_player(str_clientfield, n_state);
     }
 }
 
@@ -3288,11 +3315,15 @@ function function_28ac0614(var_bbb2c705, var_613b7621 = 0) {
                 self waittilltimeout(var_bbb2c705, #"instakill_player");
             }
         }
-    } else if (level.enable_magic && isdefined(zm_custom::function_901b751c(#"zmperksactive")) && zm_custom::function_901b751c(#"zmperksactive")) {
+        return;
+    }
+    if (level.enable_magic && isdefined(zm_custom::function_901b751c(#"zmperksactive")) && zm_custom::function_901b751c(#"zmperksactive")) {
         for (i = 3; i >= 0; i--) {
             if (zm_trial_disable_perks::is_active()) {
                 self zm_trial_disable_perks::lose_perk(self.var_c27f1e90[i]);
-            } else if (isinarray(self.var_466b927f, self.var_c27f1e90[i])) {
+                continue;
+            }
+            if (isinarray(self.var_466b927f, self.var_c27f1e90[i])) {
                 self notify(self.var_c27f1e90[i] + "_stop", {#var_613b7621:var_613b7621});
             }
         }
@@ -3493,9 +3524,9 @@ function function_b2dfd295(perk, var_8c7df7fc) {
             self thread function_f9385a02(perk, var_c3f41835);
         }
         self thread function_9bdf581f(perk, var_c3f41835);
-    } else {
-        self thread function_a7ae070c(perk);
+        return;
     }
+    self thread function_a7ae070c(perk);
 }
 
 // Namespace zm_perks/zm_perks
@@ -3941,9 +3972,9 @@ function function_869a50c0(n_slot) {
                 return;
             }
             self function_29387491(var_16c042b8, n_slot);
-        } else {
-            self function_cc24f525();
+            return;
         }
+        self function_cc24f525();
     #/
 }
 
@@ -3960,11 +3991,11 @@ function function_413a7dd7(n_slot) {
                 return;
             }
             self notify(var_16c042b8 + "<unknown string>", {#var_613b7621:1});
-        } else {
-            foreach (var_16c042b8 in self.var_c27f1e90) {
-                if (isinarray(self.var_466b927f, var_16c042b8)) {
-                    self notify(var_16c042b8 + "<unknown string>", {#var_613b7621:1});
-                }
+            return;
+        }
+        foreach (var_16c042b8 in self.var_c27f1e90) {
+            if (isinarray(self.var_466b927f, var_16c042b8)) {
+                self notify(var_16c042b8 + "<unknown string>", {#var_613b7621:1});
             }
         }
     #/
@@ -3978,10 +4009,10 @@ function function_a18c6089(n_slot) {
     /#
         if (n_slot < 4) {
             self function_9b641809(n_slot);
-        } else {
-            for (i = 0; i < 4; i++) {
-                self function_9b641809(i);
-            }
+            return;
+        }
+        for (i = 0; i < 4; i++) {
+            self function_9b641809(i);
         }
     #/
 }

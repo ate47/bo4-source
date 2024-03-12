@@ -80,23 +80,23 @@ function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap
             self.var_1550c80f = util::playfxontag(localclientnum, level._effect[#"hemera_proj_death_head"], self, "j_eyeball_le");
         }
         self playsound(localclientnum, #"hash_70717b71f19db790");
-    } else {
-        if (isdefined(self) && isdefined(self.var_d3316606)) {
-            deletefx(localclientnum, self.var_d3316606);
-            self.var_d3316606 = undefined;
+        return;
+    }
+    if (isdefined(self) && isdefined(self.var_d3316606)) {
+        deletefx(localclientnum, self.var_d3316606);
+        self.var_d3316606 = undefined;
+    }
+    if (isdefined(self) && isdefined(self.var_1550c80f)) {
+        deletefx(localclientnum, self.var_1550c80f);
+        self.var_1550c80f = undefined;
+    }
+    if (isdefined(self)) {
+        self playsound(localclientnum, #"hash_3fbc22745dc90009");
+        if (isdefined(self gettagorigin("j_spine4"))) {
+            util::playfxontag(localclientnum, level._effect[#"hash_1c1dafe5ebd971f8"], self, "j_spine4");
+            return;
         }
-        if (isdefined(self) && isdefined(self.var_1550c80f)) {
-            deletefx(localclientnum, self.var_1550c80f);
-            self.var_1550c80f = undefined;
-        }
-        if (isdefined(self)) {
-            self playsound(localclientnum, #"hash_3fbc22745dc90009");
-            if (isdefined(self gettagorigin("j_spine4"))) {
-                util::playfxontag(localclientnum, level._effect[#"hash_1c1dafe5ebd971f8"], self, "j_spine4");
-            } else {
-                util::playfxontag(localclientnum, level._effect[#"hash_1c1dafe5ebd971f8"], self, zm_utility::function_467efa7b());
-            }
-        }
+        util::playfxontag(localclientnum, level._effect[#"hash_1c1dafe5ebd971f8"], self, zm_utility::function_467efa7b());
     }
 }
 
@@ -130,7 +130,9 @@ function function_c6d1bdb0(localclientnum, oldval, newval, bnewent, binitialsnap
             if (viewmodelhastag(localclientnum, "tag_flash")) {
                 playviewmodelfx(localclientnum, level._effect[#"hash_b9d4268e0a3bccc"], "tag_flash");
             }
-        } else if (isdefined(self gettagorigin("tag_flash"))) {
+            return;
+        }
+        if (isdefined(self gettagorigin("tag_flash"))) {
             util::playfxontag(localclientnum, level._effect[#"hash_ba44e68e0a9efde"], self, "tag_flash");
         }
     }
@@ -159,7 +161,9 @@ function function_68e9fdbb(localclientnum, oldval, newval, bnewent, binitialsnap
             if (viewmodelhastag(localclientnum, "tag_flash")) {
                 self.fx_muzzle_flash = playviewmodelfx(localclientnum, level._effect[#"hash_3115c2658b6e4e0"], "tag_flash");
             }
-        } else if (isdefined(self gettagorigin("tag_flash"))) {
+            return;
+        }
+        if (isdefined(self gettagorigin("tag_flash"))) {
             self.fx_muzzle_flash = util::playfxontag(localclientnum, level._effect[#"hash_318682658bd17f2"], self, "tag_flash");
         }
     }

@@ -42,7 +42,7 @@ function gadget_combat_efficiency_enabled() {
 }
 
 // Namespace ability_util/ability_util
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x1b8df94a, Offset: 0x190
 // Size: 0xb2
 function function_43cda488() {
@@ -131,11 +131,11 @@ function gadget_power_reset(gadgetweapon) {
             self gadgetpowerreset(slot);
             self gadgetcharging(slot, 1);
         }
-    } else {
-        for (slot = 0; slot < 3; slot++) {
-            self gadgetpowerreset(slot);
-            self gadgetcharging(slot, 1);
-        }
+        return;
+    }
+    for (slot = 0; slot < 3; slot++) {
+        self gadgetpowerreset(slot);
+        self gadgetcharging(slot, 1);
     }
 }
 
@@ -150,11 +150,11 @@ function function_36a15b60(gadgetweapon) {
             self gadgetpowerset(slot, 100);
             self gadgetcharging(slot, 0);
         }
-    } else {
-        for (slot = 0; slot < 3; slot++) {
-            self gadgetpowerset(slot, 100);
-            self gadgetcharging(slot, 0);
-        }
+        return;
+    }
+    for (slot = 0; slot < 3; slot++) {
+        self gadgetpowerset(slot, 100);
+        self gadgetcharging(slot, 0);
     }
 }
 
@@ -168,10 +168,10 @@ function function_1a38f0b0(gadgetweapon) {
         if (isdefined(slot) && slot >= 0 && slot < 3) {
             self function_820a63e9(slot, 0);
         }
-    } else {
-        for (slot = 0; slot < 3; slot++) {
-            self function_820a63e9(slot, 0);
-        }
+        return;
+    }
+    for (slot = 0; slot < 3; slot++) {
+        self function_820a63e9(slot, 0);
     }
 }
 
@@ -186,11 +186,11 @@ function function_e8aa75b8(gadgetweapon) {
             self gadgetpowerreset(slot);
             self function_820a63e9(slot, 1);
         }
-    } else {
-        for (slot = 0; slot < 3; slot++) {
-            self gadgetpowerreset(slot);
-            self function_820a63e9(slot, 1);
-        }
+        return;
+    }
+    for (slot = 0; slot < 3; slot++) {
+        self gadgetpowerreset(slot);
+        self function_820a63e9(slot, 1);
     }
 }
 
@@ -324,7 +324,9 @@ function gadget_reset(gadgetweapon, changedclass, roundbased, firstround, change
             if (!deployed) {
                 self gadgetcharging(slot, 1);
             }
-        } else if (resetonclasschange || resetonfirstround || resetonroundswitch || resetonteamchanged) {
+            return;
+        }
+        if (resetonclasschange || resetonfirstround || resetonroundswitch || resetonteamchanged) {
             self gadgetpowerreset(slot, isfirstspawn);
             self.pers[#"herogadgetnotified"][slot] = 0;
             if (!deployed) {
@@ -421,9 +423,9 @@ function aoe_friendlies(weapon, aoe) {
             util::record_elapsed_time(profile_start_time, profile_elapsed_times);
             waitframe(1);
             profile_start_time = util::get_start_time();
-        } else {
-            waitframe(1);
+            continue;
         }
+        waitframe(1);
     }
     if (profile_script) {
         util::note_elapsed_times(profile_elapsed_times, "util aoe friendlies");

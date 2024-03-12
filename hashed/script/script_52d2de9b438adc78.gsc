@@ -139,7 +139,7 @@ function markerupdatethread(context) {
     player thread markercleanupthread(context);
     while (1) {
         if (player flagsys::get(#"marking_done")) {
-            break;
+            return;
         }
         ksbundle = killstreak_bundles::get_bundle(context);
         minrange = 20;
@@ -336,11 +336,11 @@ function event_handler[grenade_fire] function_cb63f633(eventstruct) {
     }
     if (isdefined(self.markerposition)) {
         grenade thread function_d5ca3f62(self);
-    } else {
-        grenade notify(#"death");
-        waittillframeend();
-        grenade delete();
+        return;
     }
+    grenade notify(#"death");
+    waittillframeend();
+    grenade delete();
 }
 
 // Namespace ir_strobe/namespace_f0840611

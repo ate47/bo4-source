@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe8e356b3, Offset: 0x1e0
 // Size: 0x242
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x76a326f3, Offset: 0x430
 // Size: 0x11e
 function handle_zombie_risers(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -48,7 +48,7 @@ function handle_zombie_risers(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x7f35cc64, Offset: 0x558
 // Size: 0x10c
 function rise_dust_fx(clientnum, billow_fx, burst_fx) {
@@ -64,7 +64,7 @@ function rise_dust_fx(clientnum, billow_fx, burst_fx) {
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc8815eb2, Offset: 0x670
 // Size: 0x194
 function zombie_eyes_clientfield_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -93,7 +93,7 @@ function zombie_eyes_clientfield_cb(localclientnum, oldval, newval, bnewent, bin
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x64c98ad8, Offset: 0x810
 // Size: 0xb2
 function function_bee29da4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -107,7 +107,7 @@ function function_bee29da4(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x6f994d0, Offset: 0x8d0
 // Size: 0xb4
 function function_3acc8ce4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

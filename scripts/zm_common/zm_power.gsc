@@ -75,9 +75,9 @@ function electric_switch_init() {
     trigs = getentarray("use_elec_switch", "targetname");
     if (isdefined(level.temporary_power_switch_logic)) {
         array::thread_all(trigs, level.temporary_power_switch_logic, trigs);
-    } else {
-        array::thread_all(trigs, &electric_switch);
+        return;
     }
+    array::thread_all(trigs, &electric_switch);
 }
 
 // Namespace zm_power/zm_power
@@ -97,11 +97,11 @@ function electric_switch() {
                 master_switch = ent;
                 switch (ent.script_noteworthy) {
                 case #"elec_switch":
-                    break;
+                    continue;
                 case #"hash_47bde376753a03c9":
-                    break;
+                    continue;
                 case #"artifact_mind":
-                    break;
+                    continue;
                 }
             }
         }
@@ -281,7 +281,9 @@ function standard_powered_items() {
         foreach (door in zombie_doors) {
             if (isdefined(door.script_noteworthy) && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
                 add_powered_item(&door_power_on, &door_power_off, &door_range, &cost_door, 0, 0, door);
-            } else if (isdefined(door.script_noteworthy) && door.script_noteworthy == "local_electric_door") {
+                continue;
+            }
+            if (isdefined(door.script_noteworthy) && door.script_noteworthy == "local_electric_door") {
                 power_sources = 0;
                 if (!(isdefined(level.power_local_doors_globally) && level.power_local_doors_globally)) {
                     power_sources = 1;
@@ -402,7 +404,9 @@ function change_power(delta, origin, radius) {
             self [[ self.power_on_func ]](origin, radius);
         }
         self.powered_count++;
-    } else if (delta < 0) {
+        return;
+    }
+    if (delta < 0) {
         if (self.power) {
             self.power = 0;
             self [[ self.power_off_func ]](origin, radius);
@@ -436,7 +440,9 @@ function revert_power(delta, origin, radius, powered_list) {
             self.power = 1;
             self [[ self.power_on_func ]](origin, radius);
         }
-    } else if (delta < 0) {
+        return;
+    }
+    if (delta < 0) {
         self.powered_count--;
         /#
             assert(self.powered_count >= 0, "<unknown string>");
@@ -480,7 +486,9 @@ function move_local_power(localpower, origin) {
         if (ispowered && !waspowered) {
             powered change_power(1, origin, localpower.radius);
             localpower.enabled_list[localpower.enabled_list.size] = powered;
-        } else if (!ispowered && waspowered) {
+            continue;
+        }
+        if (!ispowered && waspowered) {
             powered revert_power(-1, localpower.origin, localpower.radius, localpower.enabled_list);
             arrayremovevalue(localpower.enabled_list, powered, 0);
         }
@@ -592,18 +600,18 @@ function global_power(on_off) {
             self [[ self.power_on_func ]]();
         }
         self.powered_count++;
-    } else {
-        /#
-            println("<unknown string>");
-        #/
-        self.powered_count--;
-        /#
-            assert(self.powered_count >= 0, "<unknown string>");
-        #/
-        if (self.powered_count == 0 && self.power) {
-            self.power = 0;
-            self [[ self.power_off_func ]]();
-        }
+        return;
+    }
+    /#
+        println("<unknown string>");
+    #/
+    self.powered_count--;
+    /#
+        assert(self.powered_count >= 0, "<unknown string>");
+    #/
+    if (self.powered_count == 0 && self.power) {
+        self.power = 0;
+        self [[ self.power_off_func ]]();
     }
 }
 
@@ -878,12 +886,16 @@ function turn_power_on_and_open_doors(power_zone) {
             }
             if (!isdefined(power_zone) && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
                 door notify(#"power_on");
-            } else if (isdefined(door.script_int) && door.script_int == power_zone && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
+                continue;
+            }
+            if (isdefined(door.script_int) && door.script_int == power_zone && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
                 door notify(#"power_on");
                 if (isdefined(level.temporary_power_switch_logic)) {
                     door.power_on = 1;
                 }
-            } else if (isdefined(door.script_int) && door.script_int == power_zone && door.script_noteworthy === "local_electric_door") {
+                continue;
+            }
+            if (isdefined(door.script_int) && door.script_int == power_zone && door.script_noteworthy === "local_electric_door") {
                 door notify(#"local_power_on");
             }
         }
@@ -912,7 +924,9 @@ function turn_power_off_and_close_doors(power_zone) {
             }
             if (!isdefined(power_zone) && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
                 door notify(#"power_on");
-            } else if (isdefined(door.script_int) && door.script_int == power_zone && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
+                continue;
+            }
+            if (isdefined(door.script_int) && door.script_int == power_zone && (door.script_noteworthy == "electric_door" || door.script_noteworthy == "electric_buyable_door")) {
                 door notify(#"power_on");
                 if (isdefined(level.temporary_power_switch_logic)) {
                     door.power_on = 0;
@@ -920,7 +934,9 @@ function turn_power_off_and_close_doors(power_zone) {
                     door notify(#"kill_door_think");
                     door thread zm_blockers::door_think();
                 }
-            } else if (isdefined(door.script_noteworthy) && door.script_noteworthy == "local_electric_door") {
+                continue;
+            }
+            if (isdefined(door.script_noteworthy) && door.script_noteworthy == "local_electric_door") {
                 door notify(#"local_power_on");
             }
         }

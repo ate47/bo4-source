@@ -15,9 +15,9 @@ function initweapon(weapon) {
     self.weaponinfo[weapon.name].hasclip = 1;
     if (isdefined(weapon.clipmodel)) {
         self.weaponinfo[weapon.name].useclip = 1;
-    } else {
-        self.weaponinfo[weapon.name].useclip = 0;
+        return;
     }
+    self.weaponinfo[weapon.name].useclip = 0;
 }
 
 // Namespace init/init
@@ -206,8 +206,8 @@ function firstinit() {
     anim.grenadetimers[#"ai_frag_grenade_sp"] = randomintrange(0, 20000);
     anim.grenadetimers[#"ai_flash_grenade_sp"] = randomintrange(0, 20000);
     anim.numgrenadesinprogresstowardsplayer = 0;
-    anim.lastgrenadelandednearplayertime = 1000000;
-    anim.lastfraggrenadetoplayerstart = 1000000;
+    anim.lastgrenadelandednearplayertime = -1000000;
+    anim.lastfraggrenadetoplayerstart = -1000000;
     thread setnextplayergrenadetime();
     if (!isdefined(level.flag)) {
         level.flag = [];

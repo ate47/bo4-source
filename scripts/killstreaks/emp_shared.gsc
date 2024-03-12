@@ -36,7 +36,7 @@ function init_shared() {
 }
 
 // Namespace emp/emp_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x35077f94, Offset: 0x370
 // Size: 0x118
 function fx_flesh_hit_neck_fatal(params) {
@@ -53,7 +53,7 @@ function fx_flesh_hit_neck_fatal(params) {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8895cee9, Offset: 0x490
 // Size: 0xe8
 function initturretvehicle() {
@@ -71,7 +71,7 @@ function initturretvehicle() {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x602e8074, Offset: 0x580
 // Size: 0x2c
 function onplayerspawned() {
@@ -80,7 +80,7 @@ function onplayerspawned() {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5760e475, Offset: 0x5b8
 // Size: 0x3e
 function onplayerconnect() {
@@ -110,7 +110,7 @@ function deployempturret(emp) {
 }
 
 // Namespace emp/emp_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb0ddb460, Offset: 0x7f0
 // Size: 0x4c
 function doneempfx(fxtagorigin) {
@@ -119,7 +119,7 @@ function doneempfx(fxtagorigin) {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43c11e68, Offset: 0x848
 // Size: 0x3a
 function playempfx() {
@@ -150,7 +150,7 @@ function oncancelplacement(emp) {
 }
 
 // Namespace emp/emp_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xfc1f2145, Offset: 0x978
 // Size: 0x5c
 function onturretdeath(inflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -169,7 +169,7 @@ function ondeathafterframeend(attacker, weapon) {
 }
 
 // Namespace emp/emp_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbf8404dd, Offset: 0xa28
 // Size: 0x9c
 function ondeath(attacker, weapon) {
@@ -191,7 +191,7 @@ function onshutdown(emp) {
 }
 
 // Namespace emp/emp_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40fe52b9, Offset: 0xb00
 // Size: 0x11c
 function shutdownemp(emp) {
@@ -216,7 +216,7 @@ function shutdownemp(emp) {
 }
 
 // Namespace emp/emp_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x80cfadb4, Offset: 0xc28
 // Size: 0x54
 function stopemp(currentteam, currentownerentnum, originalteam, killstreakid) {
@@ -225,7 +225,7 @@ function stopemp(currentteam, currentownerentnum, originalteam, killstreakid) {
 }
 
 // Namespace emp/emp_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2e2a293c, Offset: 0xc88
 // Size: 0x60
 function stopempeffect(team, ownerentnum) {
@@ -235,7 +235,7 @@ function stopempeffect(team, ownerentnum) {
 }
 
 // Namespace emp/emp_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa8a0ac76, Offset: 0xcf0
 // Size: 0x34
 function stopemprule(killstreakoriginalteam, killstreakid) {
@@ -243,7 +243,7 @@ function stopemprule(killstreakoriginalteam, killstreakid) {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3114ff4f, Offset: 0xd30
 // Size: 0x1c
 function hasactiveemp() {
@@ -251,7 +251,7 @@ function hasactiveemp() {
 }
 
 // Namespace emp/emp_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc6d7eda4, Offset: 0xd58
 // Size: 0x28
 function teamhasactiveemp(team) {
@@ -259,7 +259,7 @@ function teamhasactiveemp(team) {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x59e14cae, Offset: 0xd88
 // Size: 0x190
 function getenemies() {
@@ -285,7 +285,7 @@ function getenemies() {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2c4ef1c8, Offset: 0xf20
 // Size: 0x10
 function function_d12cde1c() {
@@ -293,7 +293,7 @@ function function_d12cde1c() {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd6e3d472, Offset: 0xf38
 // Size: 0x16a
 function enemyempactive() {
@@ -332,7 +332,7 @@ function enemyempowner() {
 }
 
 // Namespace emp/emp_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x50216cc6, Offset: 0x1160
 // Size: 0x244
 function emp_jamenemies(empent, hacked) {
@@ -363,7 +363,7 @@ function emp_jamenemies(empent, hacked) {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc370014d, Offset: 0x13b0
 // Size: 0xbc
 function emptracker() {
@@ -377,7 +377,7 @@ function emptracker() {
 }
 
 // Namespace emp/emp_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85553954, Offset: 0x1478
 // Size: 0xa0
 function updateemp() {

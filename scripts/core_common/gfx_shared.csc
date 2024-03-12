@@ -72,9 +72,9 @@ function setstage(localclientnum, bundle, filterid, stageprefix, stagelength, ac
                 }
                 lerpratio = math::clamp(lerpratio, 0, 1);
                 values[chanidx] = startvalue[chanidx] + lerpratio * delta;
-            } else {
-                values[chanidx] = startvalue[chanidx];
+                continue;
             }
+            values[chanidx] = startvalue[chanidx];
         }
         [[ setconstants ]](localclientnum, bundle.(constprefix + "name"), filterid, values);
     }
@@ -168,7 +168,6 @@ function getshaderconstantindex(codeconstname) {
         return 24;
     case #"scriptvector7":
         return 28;
-        break;
     }
     return -1;
 }

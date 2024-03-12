@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x536a4cf1, Offset: 0x128
 // Size: 0xdc
 function private __init__() {
@@ -32,7 +32,7 @@ function private __init__() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6b05437, Offset: 0x210
 // Size: 0x50
 function function_1c601b99() {
@@ -42,7 +42,7 @@ function function_1c601b99() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x42faecf6, Offset: 0x268
 // Size: 0x176
 function private function_c83057f0() {
@@ -54,19 +54,19 @@ function private function_c83057f0() {
             }
             if (gettime() >= homunculus.despawn_time) {
                 homunculus function_7bfc867f();
-            } else {
-                if (homunculus.attacking === 1) {
-                    continue;
-                }
-                if (function_9ce07f7c(homunculus)) {
-                    homunculus thread function_bb17ec5a();
-                } else {
-                    if (homunculus.dancing !== 1) {
-                        homunculus thread function_b053b486();
-                    }
-                    waitframe(1);
-                }
+                continue;
             }
+            if (homunculus.attacking === 1) {
+                continue;
+            }
+            if (function_9ce07f7c(homunculus)) {
+                homunculus thread function_bb17ec5a();
+                continue;
+            }
+            if (homunculus.dancing !== 1) {
+                homunculus thread function_b053b486();
+            }
+            waitframe(1);
         }
         arrayremovevalue(level.var_2da60c10, undefined);
         waitframe(1);
@@ -74,7 +74,7 @@ function private function_c83057f0() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4e96b17e, Offset: 0x3e8
 // Size: 0xc2
 function private function_9ce07f7c(homunculus) {
@@ -88,7 +88,7 @@ function private function_9ce07f7c(homunculus) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5012b9e5, Offset: 0x4b8
 // Size: 0x13a
 function private function_90cc805b(homunculus) {
@@ -108,7 +108,7 @@ function private function_90cc805b(homunculus) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x422a0f67, Offset: 0x600
 // Size: 0x68
 function private function_62318121(homunculus, ent) {
@@ -180,14 +180,16 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
                 homunculus notify(#"hash_3e410dbcd9e66000");
                 homunculus.spawning = undefined;
             }
-        } else if (isdefined(homunculus)) {
+            return;
+        }
+        if (isdefined(homunculus)) {
             homunculus delete();
         }
     }
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4adf6540, Offset: 0xbf8
 // Size: 0xa8
 function function_1dba4a2() {
@@ -203,7 +205,7 @@ function function_1dba4a2() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x14fc4615, Offset: 0xca8
 // Size: 0x316
 function private function_bb17ec5a() {
@@ -249,7 +251,7 @@ function private function_bb17ec5a() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xed94aaf2, Offset: 0xfc8
 // Size: 0x54
 function private function_b053b486() {
@@ -259,7 +261,7 @@ function private function_b053b486() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4b01b59f, Offset: 0x1028
 // Size: 0x19c
 function private drop_to_ground(b_immediate = 0) {
@@ -269,7 +271,9 @@ function private drop_to_ground(b_immediate = 0) {
     if (b_immediate) {
         self.mover moveto(var_a75fe4be, 0.01);
         self.mover waittill(#"movedone");
-    } else if (abs(self.origin[2] - var_a75fe4be[2]) > 1) {
+        return;
+    }
+    if (abs(self.origin[2] - var_a75fe4be[2]) > 1) {
         n_time = 0.25;
         self.mover scene::stop();
         self.mover moveto(var_a75fe4be, 0.25);
@@ -278,7 +282,7 @@ function private drop_to_ground(b_immediate = 0) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8549e760, Offset: 0x11d0
 // Size: 0xb4
 function private jump(scene_ents) {
@@ -290,7 +294,7 @@ function private jump(scene_ents) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x35d526b1, Offset: 0x1290
 // Size: 0x9c
 function private face_target(target) {
@@ -301,7 +305,7 @@ function private face_target(target) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xba0c4bc8, Offset: 0x1338
 // Size: 0x204
 function private function_c8f642f6(enemy, n_time) {
@@ -326,7 +330,7 @@ function private function_c8f642f6(enemy, n_time) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x62057a98, Offset: 0x1548
 // Size: 0xc4
 function function_7bfc867f() {
@@ -339,7 +343,7 @@ function function_7bfc867f() {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4ecce242, Offset: 0x1618
 // Size: 0x138
 function function_bd59a592(zombie) {
@@ -362,7 +366,7 @@ function function_bd59a592(zombie) {
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x898019fd, Offset: 0x1758
 // Size: 0xf4
 function function_127fb8f3(homunculus, attackingplayer) {

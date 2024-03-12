@@ -70,10 +70,10 @@ function snowpile_swap(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 function spleen_carry_sound(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         self.var_b93060b3 = self playloopsound(#"hash_59783b8d2accba79");
-    } else {
-        self playsound(localclientnum, #"hash_37f5db96bc2147cd");
-        self stoploopsound(self.var_b93060b3);
-        self.var_b93060b3 = undefined;
+        return;
     }
+    self playsound(localclientnum, #"hash_37f5db96bc2147cd");
+    self stoploopsound(self.var_b93060b3);
+    self.var_b93060b3 = undefined;
 }
 

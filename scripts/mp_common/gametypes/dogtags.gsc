@@ -10,7 +10,7 @@
 #namespace dogtags;
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd453b5eb, Offset: 0x188
 // Size: 0x5c
 function init() {
@@ -20,7 +20,7 @@ function init() {
 }
 
 // Namespace dogtags/dogtags
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xc6749b7, Offset: 0x1f0
 // Size: 0x838
 function spawn_dog_tag(victim, attacker, on_use_function, objectives_for_attacker_and_victim_only) {
@@ -81,7 +81,7 @@ function spawn_dog_tag(victim, attacker, on_use_function, objectives_for_attacke
 }
 
 // Namespace dogtags/dogtags
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcdfba4, Offset: 0xa30
 // Size: 0xbc
 function show_to_team(gameobject, show_team) {
@@ -93,7 +93,7 @@ function show_to_team(gameobject, show_team) {
 }
 
 // Namespace dogtags/dogtags
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x45af69b7, Offset: 0xaf8
 // Size: 0xbc
 function show_to_enemy_teams(gameobject, friend_team) {
@@ -105,7 +105,7 @@ function show_to_enemy_teams(gameobject, friend_team) {
 }
 
 // Namespace dogtags/dogtags
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x38ac0186, Offset: 0xbc0
 // Size: 0x28c
 function onuse(player) {
@@ -149,7 +149,7 @@ function onuse(player) {
 }
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd770bd2e, Offset: 0xe58
 // Size: 0x12c
 function reset_tags() {
@@ -168,7 +168,7 @@ function reset_tags() {
 }
 
 // Namespace dogtags/dogtags
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e750025, Offset: 0xf90
 // Size: 0x2c
 function onpickup(event) {
@@ -176,7 +176,7 @@ function onpickup(event) {
 }
 
 // Namespace dogtags/dogtags
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x90fbd89b, Offset: 0xfc8
 // Size: 0x1e4
 function clear_on_victim_disconnect(victim) {
@@ -201,7 +201,7 @@ function clear_on_victim_disconnect(victim) {
 }
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6616acf0, Offset: 0x11b8
 // Size: 0xf2
 function on_spawn_player() {
@@ -221,7 +221,7 @@ function on_spawn_player() {
 }
 
 // Namespace dogtags/dogtags
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdfb28a0, Offset: 0x12b8
 // Size: 0x80
 function team_updater(tags) {
@@ -255,7 +255,7 @@ function time_out(victim) {
 }
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x918da1d7, Offset: 0x14b0
 // Size: 0x220
 function bounce() {
@@ -278,7 +278,7 @@ function bounce() {
 }
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9db65f, Offset: 0x16d8
 // Size: 0x34
 function checkallowspectating() {
@@ -288,7 +288,7 @@ function checkallowspectating() {
 }
 
 // Namespace dogtags/dogtags
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x1b03feda, Offset: 0x1718
 // Size: 0x154
 function should_spawn_tags(einflictor, attacker, idamage, smeansofdeath, sweapon, vdir, shitloc, psoffsettime, deathanimduration) {
@@ -311,7 +311,7 @@ function should_spawn_tags(einflictor, attacker, idamage, smeansofdeath, sweapon
 }
 
 // Namespace dogtags/dogtags
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb811f260, Offset: 0x1878
 // Size: 0xac
 function onusedogtag(player) {
@@ -327,7 +327,7 @@ function onusedogtag(player) {
 }
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2424184b, Offset: 0x1930
 // Size: 0x1c
 function dt_respawn() {
@@ -335,7 +335,7 @@ function dt_respawn() {
 }
 
 // Namespace dogtags/dogtags
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x974a9213, Offset: 0x1958
 // Size: 0x7a
 function waittillcanspawnclient() {
@@ -344,9 +344,9 @@ function waittillcanspawnclient() {
         if (isdefined(self) && (self.sessionstate == "spectator" || !isalive(self))) {
             self.pers[#"lives"] = 1;
             self thread [[ level.spawnclient ]]();
-        } else {
-            return;
+            continue;
         }
+        return;
     }
 }
 

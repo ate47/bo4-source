@@ -57,9 +57,9 @@ function vehicle_is_firing_function(localclientnum, oldval, newval, bnewent, bin
     #/
     if (newval == 0) {
         self.isfiring = 0;
-    } else {
-        self.isfiring = 1;
+        return;
     }
+    self.isfiring = 1;
 }
 
 // Namespace helicopter_sounds/helicopter_sounds_shared
@@ -249,9 +249,9 @@ function init_heli_sounds_heli_guard() {
 function sound_linkto(parent, tag) {
     if (isdefined(tag)) {
         self linkto(parent, tag);
-    } else {
-        self linkto(parent, "tag_body");
+        return;
     }
+    self linkto(parent, "tag_body");
 }
 
 // Namespace helicopter_sounds/helicopter_sounds_shared
@@ -371,11 +371,11 @@ function start_helicopter_sounds(localclientnum) {
                 iprintlnbold("<unknown string>" + self.vehicletype + "<unknown string>");
             }
         #/
-    } else {
-        /#
-            println("<unknown string>");
-        #/
+        return;
     }
+    /#
+        println("<unknown string>");
+    #/
 }
 
 // Namespace helicopter_sounds/helicopter_sounds_shared
@@ -405,14 +405,14 @@ function heli_sound_play(heli_bone) {
     switch (heli_bone.sound_type) {
     case #"engine":
         heli_bone.run playloopsound(heli_bone.run.alias, 2);
-        break;
+        return;
     case #"wind":
-        break;
+        return;
     default:
         /#
             println("<unknown string>" + heli_bone.type + "<unknown string>");
         #/
-        break;
+        return;
     }
 }
 
@@ -714,9 +714,9 @@ function aircraft_dustkick(localclientnum) {
             /#
                 if (isdefined(self.vehicletype)) {
                     println("<unknown string>" + trace[#"surfacetype"] + "<unknown string>" + self.vehicletype);
-                } else {
-                    println("<unknown string>" + trace[#"surfacetype"] + "<unknown string>");
+                    return;
                 }
+                println("<unknown string>" + trace[#"surfacetype"] + "<unknown string>");
             #/
             return;
         }
@@ -734,7 +734,8 @@ function play_targeting_sound(play, sound, handle) {
     sound_ent = get_lock_sound_ent();
     if (play) {
         return sound_ent playloopsound(sound);
-    } else if (isdefined(handle)) {
+    }
+    if (isdefined(handle)) {
         sound_ent stopallloopsounds(0.1);
         return undefined;
     }
@@ -772,7 +773,9 @@ function play_leaving_battlefield_alarm(play) {
     sound_ent = get_leaving_sound_ent();
     if (play) {
         self.leavingbattlefieldsound = sound_ent playloopsound(#"veh_helicopter_alarm");
-    } else if (isdefined(self.leavingbattlefieldsound) && self.leavingbattlefieldsound) {
+        return;
+    }
+    if (isdefined(self.leavingbattlefieldsound) && self.leavingbattlefieldsound) {
         sound_ent stopallloopsounds(0.1);
     }
 }

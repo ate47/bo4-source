@@ -41,7 +41,7 @@ function init() {
         function_456e91dd();
         zm_crafting::function_ca244624(#"hash_586280338ab7ad11");
     }
-    function_b60df00d();
+    start_step_1();
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
@@ -75,7 +75,7 @@ function function_269676a2() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xf585a13a, Offset: 0x7e8
 // Size: 0x54
-function function_b60df00d() {
+function start_step_1() {
     zm_crafting::function_d1f16587(#"hash_586280338ab7ad11", &modkit_crafted);
     level flag::init(#"ww_modkit_crafted");
 }

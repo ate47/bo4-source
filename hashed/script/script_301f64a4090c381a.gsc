@@ -62,27 +62,27 @@ function function_9af806be(var_c5b25bc5) {
     case 1:
         self player::function_2a67df65(#"fl1", -50);
         self zm_utility::set_max_health();
-        break;
+        return;
     case 2:
         self perks::perk_setperk(#"hash_53010725c65a98a5");
-        break;
+        return;
     case 3:
         self player::function_2a67df65(#"db1", 50);
         self zm_utility::set_max_health();
-        break;
+        return;
     case 4:
         self perks::perk_setperk(#"hash_130074ec6de7a431");
-        break;
+        return;
     case 5:
         self perks::perk_setperk(#"hash_1bc7d0ea42d1d0a8");
-        break;
+        return;
     case 6:
         self zm_laststand::function_3a00302e(1);
         if (!isdefined(self.n_regen_delay)) {
             self.n_regen_delay = zombie_utility::function_d2dfacfd("player_health_regen_delay");
         }
         self.n_regen_delay = self.n_regen_delay + 1;
-        break;
+        return;
     }
 }
 
@@ -99,23 +99,23 @@ function function_2a94cd59() {
         switch (var_c5b25bc5) {
         case 1:
             self player::function_b933de24(#"fl1");
-            break;
+            return;
         case 2:
             self perks::perk_unsetperk(#"hash_53010725c65a98a5");
-            break;
+            return;
         case 3:
             self player::function_b933de24(#"db1");
-            break;
+            return;
         case 4:
             self perks::perk_unsetperk(#"hash_130074ec6de7a431");
-            break;
+            return;
         case 5:
             self perks::perk_unsetperk(#"hash_1bc7d0ea42d1d0a8");
-            break;
+            return;
         case 6:
             self zm_laststand::function_409dc98e(1, 0);
             self.n_regen_delay = self.n_regen_delay - 1;
-            break;
+            return;
         }
     #/
 }
@@ -197,7 +197,6 @@ function function_cbf286b0() {
         return 0.25;
     case 4:
         return -0.25;
-        break;
     }
     return 0;
 }

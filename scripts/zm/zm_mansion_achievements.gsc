@@ -63,7 +63,9 @@ function on_ai_killed(params) {
             if (str_zone === "zone_dining_room" && str_weapon === #"stake_knife") {
                 e_attacker notify(#"hash_4505abb76e48700a");
             }
-        } else if (self.archetype == #"werewolf") {
+            return;
+        }
+        if (self.archetype == #"werewolf") {
             str_zone = self zm_utility::get_current_zone();
             if (isdefined(params.weapon) && isdefined(params.weapon.name)) {
                 str_weapon = params.weapon.name;
@@ -179,7 +181,7 @@ function function_a46f4413() {
                 iprintlnbold("<unknown string>");
             #/
             zm_utility::giveachievement_wrapper("ZM_MANSION_CRAFTING", 1);
-            break;
+            return;
         }
     }
 }
@@ -188,14 +190,14 @@ function function_a46f4413() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xc803cfbd, Offset: 0xc28
 // Size: 0x88
-function function_8dc740fa(var_c75beecc) {
+function function_8dc740fa(str_blueprint) {
     while (1) {
         waitresult = undefined;
         waitresult = level waittill(#"blueprint_completed");
-        if (waitresult.blueprint.name === var_c75beecc) {
+        if (waitresult.blueprint.name === str_blueprint) {
             level.var_f5ad5bac++;
             level notify(#"crafting_table_completed");
-            break;
+            return;
         }
     }
 }

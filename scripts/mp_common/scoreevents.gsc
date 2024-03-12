@@ -29,7 +29,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ae0b442, Offset: 0x660
 // Size: 0x44
 function __init__() {
@@ -38,7 +38,7 @@ function __init__() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe72af501, Offset: 0x6b0
 // Size: 0x64
 function init() {
@@ -48,7 +48,7 @@ function init() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x65fc9b33, Offset: 0x720
 // Size: 0x1da
 function function_4013aee1(status_effect, var_3bc85d80) {
@@ -57,22 +57,23 @@ function function_4013aee1(status_effect, var_3bc85d80) {
     }
     switch (status_effect.setype) {
     case 2:
-        jumpiffalse(var_3bc85d80 == "begin") LOC_000001ae;
-        jumpiffalse(status_effect.var_3d1ed4bd == getweapon(#"concussion_grenade")) LOC_000001ae;
-        processscoreevent(#"concussed_enemy", status_effect.var_4b22e697, status_effect.owner, status_effect.var_3d1ed4bd);
-        status_effect.var_4b22e697.var_9d19aa30 = (isdefined(status_effect.var_4b22e697.var_9d19aa30) ? status_effect.var_4b22e697.var_9d19aa30 : 0) + 1;
-        if (status_effect.var_4b22e697.var_9d19aa30 == 2 && isdefined(level.playgadgetsuccess)) {
-            status_effect.var_4b22e697 thread [[ level.playgadgetsuccess ]](getweapon(#"concussion_grenade"), undefined, undefined, undefined);
+        if (var_3bc85d80 == "begin") {
+            if (status_effect.var_3d1ed4bd == getweapon(#"concussion_grenade")) {
+                processscoreevent(#"concussed_enemy", status_effect.var_4b22e697, status_effect.owner, status_effect.var_3d1ed4bd);
+                status_effect.var_4b22e697.var_9d19aa30 = (isdefined(status_effect.var_4b22e697.var_9d19aa30) ? status_effect.var_4b22e697.var_9d19aa30 : 0) + 1;
+                if (status_effect.var_4b22e697.var_9d19aa30 == 2 && isdefined(level.playgadgetsuccess)) {
+                    status_effect.var_4b22e697 thread [[ level.playgadgetsuccess ]](getweapon(#"concussion_grenade"), undefined, undefined, undefined);
+                }
+                return;
+            }
         }
-        break;
     default:
-    LOC_000001ae:
-        break;
+        return;
     }
 }
 
 // Namespace scoreevents/scoreevents
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc661171c, Offset: 0x908
 // Size: 0x54
 function on_player_spawned() {
@@ -82,7 +83,7 @@ function on_player_spawned() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x74ef9aa9, Offset: 0x968
 // Size: 0x1f6
 function private on_weapon_change(params) {
@@ -123,7 +124,7 @@ function scoreeventtablelookup(index, scoreeventcolumn) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd391185f, Offset: 0xc18
 // Size: 0x84
 function registerscoreeventcallback(callback, func) {
@@ -137,7 +138,7 @@ function registerscoreeventcallback(callback, func) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x78e1edca, Offset: 0xca8
 // Size: 0x442c
 function scoreeventplayerkill(data, time) {
@@ -423,10 +424,10 @@ function scoreeventplayerkill(data, time) {
             for (i = 0; i < victimvisionpulsearray.size; i++) {
                 player = victimvisionpulsearray[i];
                 if (player == attacker) {
-                    if (victimvisionpulseactivatetime + 300 > time - level.var_2e3031be.gadget_pulse_duration) {
+                    if (victimvisionpulseactivatetime + 300 > time - level.weaponvisionpulse.gadget_pulse_duration) {
                         distancetopulse = distance(victimvisionpulseoriginarray[i], victimvisionpulseorigin);
-                        ratio = distancetopulse / level.var_2e3031be.gadget_pulse_max_range;
-                        timing = ratio * level.var_2e3031be.gadget_pulse_duration;
+                        ratio = distancetopulse / level.weaponvisionpulse.gadget_pulse_max_range;
+                        timing = ratio * level.weaponvisionpulse.gadget_pulse_duration;
                         if (victimvisionpulseactivatetime + 300 > time - timing) {
                             break;
                         }
@@ -442,20 +443,20 @@ function scoreeventplayerkill(data, time) {
                 attacker notify(#"hero_shutdown_gadget", {#victim:victim, #gadget:victimheroability});
             }
         }
-        if (victimlastvisionpulsedtime != 0 && victimlastvisionpulsedtime > time - level.var_2e3031be.var_9d776ba6) {
+        if (victimlastvisionpulsedtime != 0 && victimlastvisionpulsedtime > time - level.weaponvisionpulse.var_9d776ba6) {
             if (isdefined(victimlastvisionpulsedby) && attacker != victimlastvisionpulsedby && attacker util::isenemyplayer(victimlastvisionpulsedby) == 0) {
                 if (function_9aef690a(weapon)) {
-                    processscoreevent(#"hash_bad79b50f40ce0b", victimlastvisionpulsedby, victim, level.var_2e3031be);
+                    processscoreevent(#"hash_bad79b50f40ce0b", victimlastvisionpulsedby, victim, level.weaponvisionpulse);
                 } else {
-                    processscoreevent(#"vision_pulse_assist", victimlastvisionpulsedby, victim, level.var_2e3031be);
+                    processscoreevent(#"vision_pulse_assist", victimlastvisionpulsedby, victim, level.weaponvisionpulse);
                 }
                 processscoreevent(#"hash_6d41ba237c04cb10", attacker, victim, weapon);
             } else {
-                attacker hero_ability_kill_event(level.var_2e3031be, get_equipped_hero_ability(victimheroabilityname));
+                attacker hero_ability_kill_event(level.weaponvisionpulse, get_equipped_hero_ability(victimheroabilityname));
                 attacker specialistmedalachievement();
                 attacker thread specialiststatabilityusage(4, 0);
                 if (attackerisroulette && !victimisthieforroulette && victimheroabilityname === "gadget_vision_pulse") {
-                    processscoreevent(#"kill_enemy_with_their_hero_ability", attacker, victim, level.var_2e3031be);
+                    processscoreevent(#"kill_enemy_with_their_hero_ability", attacker, victim, level.weaponvisionpulse);
                 }
             }
             if (isdefined(level.playgadgetsuccess) && isdefined(victimlastvisionpulsedby)) {
@@ -464,7 +465,7 @@ function scoreeventplayerkill(data, time) {
                     var_9194a036 = [[ level.var_ac6052e9 ]]("visionPulseSuccessLineCount", 0);
                 }
                 if (victimlastvisionpulsedby.visionpulsekill == (isdefined(var_9194a036) ? var_9194a036 : 3)) {
-                    victimlastvisionpulsedby thread [[ level.playgadgetsuccess ]](level.var_2e3031be, undefined, undefined, undefined);
+                    victimlastvisionpulsedby thread [[ level.playgadgetsuccess ]](level.weaponvisionpulse, undefined, undefined, undefined);
                 }
             }
         }
@@ -689,9 +690,9 @@ function scoreeventplayerkill(data, time) {
                         if (isdefined(scoregiven)) {
                             beingmicrowavedby challenges::earnedmicrowaveassistscore(scoregiven);
                         }
-                    } else {
-                        attackermicrowavedvictim = 1;
+                        continue;
                     }
+                    attackermicrowavedvictim = 1;
                 }
             }
             if (attackermicrowavedvictim === 1 && weapon.name != "microwave_turret") {
@@ -808,7 +809,7 @@ function scoreeventplayerkill(data, time) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x14a75aab, Offset: 0x50e0
 // Size: 0x2a
 function get_equipped_hero_ability(ability_name) {
@@ -819,7 +820,7 @@ function get_equipped_hero_ability(ability_name) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc95657c0, Offset: 0x5118
 // Size: 0x284
 function heavyweaponkill(attacker, victim, weapon) {
@@ -872,7 +873,7 @@ function heavyweaponkill(attacker, victim, weapon) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xbb44661f, Offset: 0x53a8
 // Size: 0x1a4
 function killedheavyweaponenemy(attacker, victim, weapon, victim_weapon, victim_gadget_power) {
@@ -913,7 +914,7 @@ function killedheavyweaponenemy(attacker, victim, weapon, victim_weapon, victim_
 }
 
 // Namespace scoreevents/scoreevents
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xbc438bbd, Offset: 0x5558
 // Size: 0x39c
 function specificweaponkill(attacker, victim, weapon, killstreak, inflictor) {
@@ -980,7 +981,7 @@ function specificweaponkill(attacker, victim, weapon, killstreak, inflictor) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x216e6a72, Offset: 0x5900
 // Size: 0x174
 function function_8fe4629e(killcount, weapon) {
@@ -1003,7 +1004,7 @@ function function_8fe4629e(killcount, weapon) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x11282d5d, Offset: 0x5a80
 // Size: 0x3bc
 function multikill(killcount, weapon) {
@@ -1058,7 +1059,7 @@ function multikill(killcount, weapon) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5c8a5008, Offset: 0x5e48
 // Size: 0x12c
 function multiheroabilitykill(killcount, weapon) {
@@ -1071,7 +1072,7 @@ function multiheroabilitykill(killcount, weapon) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2d6785ea, Offset: 0x5f80
 // Size: 0x1b2
 function is_weapon_valid(meansofdeath, weapon, weaponclass, killstreak) {
@@ -1098,7 +1099,7 @@ function is_weapon_valid(meansofdeath, weapon, weaponclass, killstreak) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x2ef3fa19, Offset: 0x6140
 // Size: 0x1084
 function updatemultikills(weapon, weaponclass, killstreak, victim) {
@@ -1353,7 +1354,7 @@ function updatemultikills(weapon, weaponclass, killstreak, victim) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4af85a5, Offset: 0x71d0
 // Size: 0x146
 function resetrecentkillvariables() {
@@ -1388,7 +1389,7 @@ function resetrecentkillvariables() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x588bd323, Offset: 0x7320
 // Size: 0x38
 function function_179829ab(timeout) {
@@ -1398,7 +1399,7 @@ function function_179829ab(timeout) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xf91e3a45, Offset: 0x7360
 // Size: 0x2be
 function updateoneshotmultikills(victim, weapon, firsttimedamaged, meansofdeath) {
@@ -1444,7 +1445,7 @@ function updateoneshotmultikills(victim, weapon, firsttimedamaged, meansofdeath)
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb646cb94, Offset: 0x7628
 // Size: 0x21e
 function get_distance_for_weapon(weapon, weaponclass) {
@@ -1500,7 +1501,7 @@ function get_distance_for_weapon(weapon, weaponclass) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x127f51ca, Offset: 0x7850
 // Size: 0x1e4
 function ongameend(data) {
@@ -1529,7 +1530,7 @@ function ongameend(data) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf13121ad, Offset: 0x7a40
 // Size: 0xc4
 function specialistmedalachievement() {
@@ -1546,7 +1547,7 @@ function specialistmedalachievement() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3c3dd1d9, Offset: 0x7b10
 // Size: 0x246
 function specialiststatabilityusage(usagesinglegame, multitrackperlife) {
@@ -1571,21 +1572,21 @@ function specialiststatabilityusage(usagesinglegame, multitrackperlife) {
         if (self.pers[#"specialiststatabilityusage"] >= 2) {
             self challenges::processspecialistchallenge("multikill_ability");
         }
-    } else {
-        if (!isdefined(self.specialiststatabilityusage)) {
-            self.specialiststatabilityusage = 0;
-        }
-        self.specialiststatabilityusage++;
-        self function_179829ab(4);
-        if (self.specialiststatabilityusage >= 2) {
-            self challenges::processspecialistchallenge("multikill_ability");
-        }
+        return;
+    }
+    if (!isdefined(self.specialiststatabilityusage)) {
         self.specialiststatabilityusage = 0;
     }
+    self.specialiststatabilityusage++;
+    self function_179829ab(4);
+    if (self.specialiststatabilityusage >= 2) {
+        self challenges::processspecialistchallenge("multikill_ability");
+    }
+    self.specialiststatabilityusage = 0;
 }
 
 // Namespace scoreevents/scoreevents
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x75c046ed, Offset: 0x7d60
 // Size: 0x6e
 function function_9aef690a(weapon) {
@@ -1594,7 +1595,7 @@ function function_9aef690a(weapon) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86f38928, Offset: 0x7dd8
 // Size: 0x4c
 function multikillmedalachievement() {
@@ -1605,7 +1606,7 @@ function multikillmedalachievement() {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28b2d241, Offset: 0x7e30
 // Size: 0x82
 function function_c01cb128(entity, sensor_darts) {
@@ -1616,7 +1617,7 @@ function function_c01cb128(entity, sensor_darts) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xfd8b0544, Offset: 0x7ec0
 // Size: 0x13a
 function function_c28e2c05(entity_origin, sensor_darts, var_e13a103a) {
@@ -1637,7 +1638,7 @@ function function_c28e2c05(entity_origin, sensor_darts, var_e13a103a) {
 }
 
 // Namespace scoreevents/scoreevents
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd7a75b18, Offset: 0x8008
 // Size: 0x82
 function function_3932ffa2(sensor_darts) {
@@ -1683,10 +1684,10 @@ function function_43ee1b3d(attacker, victim, attackerweapon) {
     }
     if (isdefined(var_71eedb0b) && isdefined(var_a3aba5a9) && var_a3aba5a9) {
         if (smartcover.owner == attacker) {
-            processscoreevent(#"deployable_cover_kill", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
-        } else {
-            processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.var_8d86ade8);
+            processscoreevent(#"deployable_cover_kill", var_71eedb0b, victim, level.smartcoversettings.smartcoverweapon);
+            return;
         }
+        processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.smartcoverweapon);
     }
 }
 

@@ -62,13 +62,11 @@ function wound_apply(var_756fda07, weapon, applicant) {
 function function_a54d41f7(starttime) {
     self notify(#"hash_77a943337c92549a");
     self endon(#"hash_77a943337c92549a", #"endstatuseffect");
-    var_1420e67b = self.endtime;
-    while (self.endtime > gettime()) {
+    for (var_1420e67b = self.endtime; self.endtime > gettime(); var_1420e67b = self.endtime) {
         waitframe(1);
         if (self.endtime != var_1420e67b) {
             timesincestart = gettime() - starttime;
             self.owner function_eb1cd20(starttime, self.duration + timesincestart, self.namehash);
-            var_1420e67b = self.endtime;
         }
     }
 }

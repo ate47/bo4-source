@@ -37,18 +37,18 @@ function function_f4515ba8(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         self thread function_8847b8aa(localclientnum);
         self.var_2be01485 = undefined;
-    } else {
-        self notify(#"hash_395dfda1274cd506");
-        if (isdefined(self.var_62f2a054)) {
-            stopfx(localclientnum, self.var_62f2a054);
-            self.var_62f2a054 = undefined;
+        return;
+    }
+    self notify(#"hash_395dfda1274cd506");
+    if (isdefined(self.var_62f2a054)) {
+        stopfx(localclientnum, self.var_62f2a054);
+        self.var_62f2a054 = undefined;
+    }
+    if (isdefined(self.var_803e161e)) {
+        foreach (n_fx_id in self.var_803e161e) {
+            stopfx(localclientnum, n_fx_id);
         }
-        if (isdefined(self.var_803e161e)) {
-            foreach (n_fx_id in self.var_803e161e) {
-                stopfx(localclientnum, n_fx_id);
-            }
-            self.var_803e161e = undefined;
-        }
+        self.var_803e161e = undefined;
     }
 }
 

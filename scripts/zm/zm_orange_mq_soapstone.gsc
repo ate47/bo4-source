@@ -153,35 +153,35 @@ function function_88a86ef8(n_position) {
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 0;
         }
-        break;
+        return;
     case 1:
         if (level.s_soapstone.var_d143df71 != 1) {
             s_position = struct::get("bear_digit_1", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 1;
         }
-        break;
+        return;
     case 2:
         if (level.s_soapstone.var_d143df71 != 2) {
             s_position = struct::get("bear_digit_2", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 2;
         }
-        break;
+        return;
     case 3:
         if (level.s_soapstone.var_d143df71 != 3) {
             s_position = struct::get("bear_digit_3", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 3;
         }
-        break;
+        return;
     case 4:
         if (level.s_soapstone.var_d143df71 != 4) {
             s_position = struct::get("bear_digit_4", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 4;
         }
-        break;
+        return;
     }
 }
 

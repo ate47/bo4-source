@@ -156,7 +156,7 @@ function function_d611b306() {
         i++;
         if (i == 2) {
             self.barrage = 0;
-            break;
+            return;
         }
         wait(randomfloatrange(45, 200));
     }

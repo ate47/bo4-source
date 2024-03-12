@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65a0a06d, Offset: 0x110
 // Size: 0x14
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x805949b, Offset: 0x130
 // Size: 0x42
 function private function_37f04b09() {
@@ -35,7 +35,7 @@ function private function_37f04b09() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x275d83b5, Offset: 0x180
 // Size: 0x4c
 function private function_94003d29() {
@@ -47,7 +47,7 @@ function private function_94003d29() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40e2c6f1, Offset: 0x1d8
 // Size: 0xe
 function function_f37f02fc() {
@@ -65,7 +65,7 @@ function private function_b6b94df8() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3163c761, Offset: 0x228
 // Size: 0x34
 function set_overtime() {
@@ -74,7 +74,7 @@ function set_overtime() {
 }
 
 // Namespace match/match
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1cf40c0a, Offset: 0x268
 // Size: 0x2c
 function set_flag(flag) {
@@ -82,7 +82,7 @@ function set_flag(flag) {
 }
 
 // Namespace match/match
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9fba52b9, Offset: 0x2a0
 // Size: 0x2a
 function get_flag(flag) {
@@ -98,7 +98,7 @@ function clear_flag(flag) {
 }
 
 // Namespace match/match
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfb6355e9, Offset: 0x310
 // Size: 0x2c
 function function_897438f4(var_c1e98979) {
@@ -106,7 +106,7 @@ function function_897438f4(var_c1e98979) {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93282f88, Offset: 0x348
 // Size: 0x1a
 function function_3624d032() {
@@ -114,7 +114,7 @@ function function_3624d032() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa33dddfe, Offset: 0x370
 // Size: 0x64
 function function_c10174e7() {
@@ -128,7 +128,7 @@ function function_c10174e7() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1ad56f2e, Offset: 0x3e0
 // Size: 0x1a
 function get_winning_team() {
@@ -147,7 +147,7 @@ function is_winning_team(team) {
 }
 
 // Namespace match/match
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xadb23937, Offset: 0x460
 // Size: 0x11e
 function function_a2b53e17(player) {
@@ -166,7 +166,7 @@ function function_a2b53e17(player) {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1709a958, Offset: 0x588
 // Size: 0x24
 function function_75f97ac7() {
@@ -177,7 +177,7 @@ function function_75f97ac7() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86df0dd8, Offset: 0x5b8
 // Size: 0x46
 function function_517c0ce0() {
@@ -196,7 +196,7 @@ function function_b5f4c9d8() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2320205a, Offset: 0x630
 // Size: 0x52
 function get_winner() {
@@ -215,7 +215,7 @@ function set_winner(team_or_player) {
 }
 
 // Namespace match/match
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x321224b0, Offset: 0x6c8
 // Size: 0x2c
 function function_af2e264f(winner) {
@@ -232,7 +232,7 @@ function function_870759fb() {
 }
 
 // Namespace match/match
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbd9c1a11, Offset: 0x748
 // Size: 0x2c
 function function_35702443(platoon) {
@@ -248,7 +248,7 @@ function function_d30d1a2e() {
 }
 
 // Namespace match/match
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x64b3f478, Offset: 0x7a8
 // Size: 0x10a
 function function_6d0354e3() {

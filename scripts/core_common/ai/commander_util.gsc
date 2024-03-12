@@ -13,12 +13,12 @@ function function_2c38e191(team) {
         if (isdefined(level.alliescommander)) {
             plannercommanderutility::function_2974807c(level.alliescommander);
         }
-        break;
+        return;
     case #"axis":
         if (isdefined(level.axiscommander)) {
             plannercommanderutility::function_2974807c(level.axiscommander);
         }
-        break;
+        return;
     }
 }
 
@@ -32,12 +32,12 @@ function pause_commander(team) {
         if (isdefined(level.alliescommander)) {
             plannercommanderutility::pausecommander(level.alliescommander);
         }
-        break;
+        return;
     case #"axis":
         if (isdefined(level.axiscommander)) {
             plannercommanderutility::pausecommander(level.axiscommander);
         }
-        break;
+        return;
     }
 }
 

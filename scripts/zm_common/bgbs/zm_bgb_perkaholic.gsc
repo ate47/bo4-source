@@ -57,9 +57,9 @@ function activation() {
             var_16c042b8 = self zm_perks::function_b2cba45a();
             if (isdefined(var_16c042b8)) {
                 self.var_1eba264f = 1;
-            } else {
-                return;
+                continue;
             }
+            return;
         }
     }
 }

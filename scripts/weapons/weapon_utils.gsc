@@ -45,7 +45,6 @@ function isexplosivedamage(meansofdeath) {
     case #"mod_grenade_splash":
     case #"mod_projectile_splash":
         return 1;
-        break;
     }
     return 0;
 }

@@ -218,7 +218,7 @@ function private function_33935d5f() {
             if (isdefined(self.badplace_name)) {
                 badplace_delete(self.badplace_name);
             }
-            break;
+            return;
         }
     }
 }
@@ -323,9 +323,8 @@ function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39ac
         wait(var_c625106d);
         if (isdefined(var_86163b89) && var_86163b89) {
             continue;
-        } else {
-            zm_audio::function_bca32e49("m_quest", var_39acfdda);
         }
+        zm_audio::function_bca32e49("m_quest", var_39acfdda);
     }
 }
 
@@ -350,10 +349,8 @@ function private function_1a05e10c(str_notify, var_f13787ad, var_ca8a3a53) {
     self notify("588886ce796505cd");
     self endon("588886ce796505cd");
     level endon(#"end_game", #"boss_battle_done");
-    b_success = 0;
-    while (!b_success) {
+    for (b_success = 0; !b_success; b_success = zm_audio::function_bca32e49(var_f13787ad, var_ca8a3a53)) {
         level waittill(str_notify);
-        b_success = zm_audio::function_bca32e49(var_f13787ad, var_ca8a3a53);
     }
 }
 

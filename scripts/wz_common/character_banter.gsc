@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_banter/character_banter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x397520a, Offset: 0xd8
 // Size: 0x52
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_banter/character_banter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x40799cd3, Offset: 0x138
 // Size: 0xc4
 function on_joined_team(params) {
@@ -38,13 +38,13 @@ function on_joined_team(params) {
         if (!isdefined(players)) {
             level.var_8dcd4dc8[self.team] = array(self);
         }
-    } else {
-        arrayinsert(players, self, randomint(players.size + 1));
+        return;
     }
+    arrayinsert(players, self, randomint(players.size + 1));
 }
 
 // Namespace character_banter/character_banter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40f754d4, Offset: 0x208
 // Size: 0x9c
 function on_player_disconnect() {
@@ -54,13 +54,15 @@ function on_player_disconnect() {
     players = level.var_8dcd4dc8[self.team];
     if (getplayers(self.team).size <= 1) {
         level.var_8dcd4dc8[self.team] = [];
-    } else if (isarray(players)) {
+        return;
+    }
+    if (isarray(players)) {
         arrayremovevalue(players, self);
     }
 }
 
 // Namespace character_banter/character_banter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76df9325, Offset: 0x2b0
 // Size: 0x1aa
 function start() {
@@ -88,7 +90,7 @@ function start() {
 }
 
 // Namespace character_banter/character_banter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc247d500, Offset: 0x468
 // Size: 0x11c
 function function_bb3ec038() {
@@ -111,7 +113,7 @@ function function_bb3ec038() {
 }
 
 // Namespace character_banter/character_banter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4e92aa22, Offset: 0x590
 // Size: 0x1d0
 function function_4d9b2d83(players, lookup) {
@@ -144,7 +146,7 @@ function function_4d9b2d83(players, lookup) {
 }
 
 // Namespace character_banter/character_banter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc15a21f2, Offset: 0x768
 // Size: 0x42
 function stop() {

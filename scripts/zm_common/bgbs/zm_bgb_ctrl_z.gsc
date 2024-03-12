@@ -49,14 +49,14 @@ function enable() {
                     var_87cb7224 = array(var_87cb7224);
                 }
                 var_87cb7224[var_87cb7224.size] = ai;
-            } else {
-                if (!isdefined(var_db50d438)) {
-                    var_db50d438 = [];
-                } else if (!isarray(var_db50d438)) {
-                    var_db50d438 = array(var_db50d438);
-                }
-                var_db50d438[var_db50d438.size] = ai;
+                continue;
             }
+            if (!isdefined(var_db50d438)) {
+                var_db50d438 = [];
+            } else if (!isarray(var_db50d438)) {
+                var_db50d438 = array(var_db50d438);
+            }
+            var_db50d438[var_db50d438.size] = ai;
         }
         a_ai_targets = arraycombine(var_87cb7224, var_db50d438, 0, 0);
     }
@@ -123,7 +123,7 @@ function turn_z(player) {
             player zm_stats::increment_challenge_stat(#"zombie_hunter_brain_decay");
             self.var_443d78cc = player;
         }
-        self thread zm_aat_brain_decay::function_8e97a3a4(player, level.var_78032351);
+        self thread zm_aat_brain_decay::function_8e97a3a4(player, level.weapondefault);
         self thread zm_aat_brain_decay::zombie_kill_tracker(player);
     }
 }

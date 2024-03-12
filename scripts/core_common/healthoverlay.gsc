@@ -121,73 +121,73 @@ function player_health_regen_t7() {
                 self notify(#"challenge_survived_from_death");
                 self.atbrinkofdeath = undefined;
             }
-        } else {
-            if (player.health <= 0) {
-                return;
+            continue;
+        }
+        if (player.health <= 0) {
+            return;
+        }
+        if (isdefined(player.laststand) && player.laststand) {
+            continue;
+        }
+        wasveryhurt = veryhurt;
+        ratio = player.health / maxhealth;
+        if (ratio <= level.healthoverlaycutoff) {
+            veryhurt = 1;
+            self.atbrinkofdeath = 1;
+            self.isneardeath = 1;
+            if (!wasveryhurt) {
+                hurttime = gettime();
             }
-            if (isdefined(player.laststand) && player.laststand) {
+        } else {
+            self.isneardeath = 0;
+        }
+        if (player.health >= oldhealth) {
+            regentime = 5000;
+            if (player hasperk(#"specialty_healthregen")) {
+                regentime = int(regentime / getdvarfloat(#"perk_healthregenmultiplier", 0));
+            }
+            if (gettime() - hurttime < regentime) {
                 continue;
             }
-            wasveryhurt = veryhurt;
-            ratio = player.health / maxhealth;
-            if (ratio <= level.healthoverlaycutoff) {
-                veryhurt = 1;
-                self.atbrinkofdeath = 1;
-                self.isneardeath = 1;
-                if (!wasveryhurt) {
-                    hurttime = gettime();
-                }
-            } else {
-                self.isneardeath = 0;
+            if (regentime <= 0) {
+                continue;
             }
-            if (player.health >= oldhealth) {
-                regentime = 5000;
+            if (gettime() - lastsoundtime_recover > regentime) {
+                lastsoundtime_recover = gettime();
+                self notify(#"snd_breathing_better");
+            }
+            if (veryhurt) {
+                newhealth = ratio;
+                veryhurttime = 3000;
                 if (player hasperk(#"specialty_healthregen")) {
-                    regentime = int(regentime / getdvarfloat(#"perk_healthregenmultiplier", 0));
+                    veryhurttime = int(veryhurttime / getdvarfloat(#"perk_healthregenmultiplier", 0));
                 }
-                if (gettime() - hurttime < regentime) {
-                    continue;
+                if (gettime() > hurttime + veryhurttime) {
+                    newhealth = newhealth + regenrate;
                 }
-                if (regentime <= 0) {
-                    continue;
-                }
-                if (gettime() - lastsoundtime_recover > regentime) {
-                    lastsoundtime_recover = gettime();
-                    self notify(#"snd_breathing_better");
-                }
-                if (veryhurt) {
-                    newhealth = ratio;
-                    veryhurttime = 3000;
-                    if (player hasperk(#"specialty_healthregen")) {
-                        veryhurttime = int(veryhurttime / getdvarfloat(#"perk_healthregenmultiplier", 0));
-                    }
-                    if (gettime() > hurttime + veryhurttime) {
-                        newhealth = newhealth + regenrate;
-                    }
-                } else if (usetrueregen) {
-                    newhealth = ratio + regenrate;
-                } else {
-                    newhealth = 1;
-                }
-                if (newhealth >= 1) {
-                    self player::reset_attacker_list();
-                    newhealth = 1;
-                }
-                if (newhealth <= 0) {
-                    return;
-                }
-                player setnormalhealth(newhealth);
-                change = player.health - oldhealth;
-                if (change > 0) {
-                    player decay_player_damages(change);
-                }
-                oldhealth = player.health;
+            } else if (usetrueregen) {
+                newhealth = ratio + regenrate;
             } else {
-                oldhealth = player.health;
-                hurttime = gettime();
-                player.breathingstoptime = hurttime + 6000;
+                newhealth = 1;
             }
+            if (newhealth >= 1) {
+                self player::reset_attacker_list();
+                newhealth = 1;
+            }
+            if (newhealth <= 0) {
+                return;
+            }
+            player setnormalhealth(newhealth);
+            change = player.health - oldhealth;
+            if (change > 0) {
+                player decay_player_damages(change);
+            }
+            oldhealth = player.health;
+            continue;
         }
+        oldhealth = player.health;
+        hurttime = gettime();
+        player.breathingstoptime = hurttime + 6000;
     }
 }
 
@@ -410,13 +410,13 @@ function private heal(var_dc77251f) {
     if (player.health >= player.var_66cb03ad && var_dc77251f.old_health < player.var_66cb03ad) {
         player player::reset_attacker_list();
         player player::function_d1768e8e();
-    } else {
-        change = player.health - var_dc77251f.old_health;
-        if (change > 0) {
-            player decay_player_damages(change);
-            if (sessionmodeismultiplayergame()) {
-                player stats::function_dad108fa(#"total_heals", change);
-            }
+        return;
+    }
+    change = player.health - var_dc77251f.old_health;
+    if (change > 0) {
+        player decay_player_damages(change);
+        if (sessionmodeismultiplayergame()) {
+            player stats::function_dad108fa(#"total_heals", change);
         }
     }
 }
@@ -447,9 +447,9 @@ function private function_69e7b01c(ratio) {
     if (ratio <= level.healthoverlaycutoff) {
         self.atbrinkofdeath = 1;
         self.isneardeath = 1;
-    } else {
-        self.isneardeath = 0;
+        return;
     }
+    self.isneardeath = 0;
 }
 
 // Namespace healthoverlay/healthoverlay
@@ -626,14 +626,16 @@ function player_heartbeat_sound(healthcap) {
         }
         if (player.health >= healthcap) {
             self.hearbeatwait = 0.3;
-        } else if (player.healthregentime <= 0 && gettime() > player.breathingstoptime) {
+            continue;
+        }
+        if (player.healthregentime <= 0 && gettime() > player.breathingstoptime) {
             self.hearbeatwait = 0.3;
-        } else {
-            player playlocalsound(#"mpl_player_heartbeat");
-            wait(self.hearbeatwait);
-            if (self.hearbeatwait <= 0.6) {
-                self.hearbeatwait = self.hearbeatwait + 0.1;
-            }
+            continue;
+        }
+        player playlocalsound(#"mpl_player_heartbeat");
+        wait(self.hearbeatwait);
+        if (self.hearbeatwait <= 0.6) {
+            self.hearbeatwait = self.hearbeatwait + 0.1;
         }
     }
 }

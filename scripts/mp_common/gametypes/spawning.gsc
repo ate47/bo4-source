@@ -5,7 +5,7 @@
 #namespace spawning;
 
 // Namespace spawning/spawning
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x81bf78ac, Offset: 0xb0
 // Size: 0x138
 function getteamstartspawnname(team, spawnpointnamebase) {

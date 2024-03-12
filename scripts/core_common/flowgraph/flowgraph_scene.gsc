@@ -14,8 +14,8 @@ function playscenefunc(x, e_entity, sb_name, b_thread) {
     }
     if (b_thread) {
         target thread scene::play(sb_name);
-    } else {
-        target scene::play(sb_name);
+        return;
     }
+    target scene::play(sb_name);
 }
 

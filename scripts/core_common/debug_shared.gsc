@@ -55,9 +55,9 @@ function devgui_debug_key_value() {
                     if (n_dist_sq <= n_draw_dist_sq) {
                         n_scale = mapfloat(0, 6250000, 0.5, 5, n_dist_sq);
                         ent thread debug_key_value(string(debug_key_value), undefined, n_scale);
-                    } else {
-                        ent notify(#"debug_key_value");
+                        continue;
                     }
+                    ent notify(#"debug_key_value");
                 }
             } else {
                 level notify(#"debug_key_value");

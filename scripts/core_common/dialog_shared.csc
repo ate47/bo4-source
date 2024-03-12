@@ -86,7 +86,9 @@ function play_boost_vox(localclientnum, oldval, newval, bnewent, binitialsnap, f
     if (newval == 1) {
         level.booststartentnum = entitynumber;
         self thread play_boost_start_vox(localclientnum);
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         level.boostresponseentnum = entitynumber;
         self thread play_boost_start_response_vox(localclientnum);
     }

@@ -908,9 +908,9 @@ function private mocomprobotproceduraltraversalupdate(entity, mocompanim, mocomp
                 angles = traversal.angles;
             }
             entity forceteleport(currentpos, angles, 0);
-        } else {
-            entity animmode("normal_nogravity", 0);
+            return;
         }
+        entity animmode("normal_nogravity", 0);
     }
 }
 
@@ -1346,7 +1346,6 @@ function private robotlocomotionspeed() {
             return "locomotion_speed_run";
         case #"sprint":
             return "locomotion_speed_sprint";
-            break;
         }
     } else if (ai::getaiattribute(entity, "sprint")) {
         return "locomotion_speed_sprint";
@@ -1571,9 +1570,9 @@ function private toggledesiredstance(entity) {
     currentstance = entity getblackboardattribute("_stance");
     if (currentstance == "stand") {
         entity setblackboardattribute("_desired_stance", "crouch");
-    } else {
-        entity setblackboardattribute("_desired_stance", "stand");
+        return;
     }
+    entity setblackboardattribute("_desired_stance", "stand");
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2075,7 +2074,6 @@ function private shouldtakeovercondition(entity) {
         return isinarray(array("level_2", "level_3"), entity ai::get_behavior_attribute("rogue_control"));
     case 2:
         return (entity ai::get_behavior_attribute("rogue_control") == "level_3");
-        break;
     }
     return 0;
 }
@@ -2664,9 +2662,13 @@ function private function_ce50548d() {
 function private _trygibbinghead(entity, damage, hitloc, isexplosive) {
     if (isexplosive && randomfloatrange(0, 1) <= 0.5) {
         gibserverutils::gibhead(entity);
-    } else if (isinarray(array("head", "neck", "helmet"), hitloc) && randomfloatrange(0, 1) <= 1) {
+        return;
+    }
+    if (isinarray(array("head", "neck", "helmet"), hitloc) && randomfloatrange(0, 1) <= 1) {
         gibserverutils::gibhead(entity);
-    } else if (entity.health - damage <= 0 && randomfloatrange(0, 1) <= 0.25) {
+        return;
+    }
+    if (entity.health - damage <= 0 && randomfloatrange(0, 1) <= 0.25) {
         gibserverutils::gibhead(entity);
     }
 }
@@ -2685,18 +2687,26 @@ function private _trygibbinglimb(entity, damage, hitloc, isexplosive, ondeath) {
         } else {
             gibserverutils::gibleftarm(entity);
         }
-    } else if (isinarray(array("left_hand", "left_arm_lower", "left_arm_upper"), hitloc)) {
+        return;
+    }
+    if (isinarray(array("left_hand", "left_arm_lower", "left_arm_upper"), hitloc)) {
         gibserverutils::gibleftarm(entity);
-    } else if (ondeath && isinarray(array("right_hand", "right_arm_lower", "right_arm_upper"), hitloc)) {
+        return;
+    }
+    if (ondeath && isinarray(array("right_hand", "right_arm_lower", "right_arm_upper"), hitloc)) {
         gibserverutils::gibrightarm(entity);
-    } else if (robotsoldierbehavior::robotismindcontrolled() == "mind_controlled" && isinarray(array("right_hand", "right_arm_lower", "right_arm_upper"), hitloc)) {
+        return;
+    }
+    if (robotsoldierbehavior::robotismindcontrolled() == "mind_controlled" && isinarray(array("right_hand", "right_arm_lower", "right_arm_upper"), hitloc)) {
         gibserverutils::gibrightarm(entity);
-    } else if (ondeath && randomfloatrange(0, 1) <= 0.25) {
+        return;
+    }
+    if (ondeath && randomfloatrange(0, 1) <= 0.25) {
         if (math::cointoss()) {
             gibserverutils::gibleftarm(entity);
-        } else {
-            gibserverutils::gibrightarm(entity);
+            return;
         }
+        gibserverutils::gibrightarm(entity);
     }
 }
 
@@ -2715,22 +2725,28 @@ function private _trygibbinglegs(entity, damage, hitloc, isexplosive, attacker =
     if (entity.health - damage <= 0 && entity.allowdeath && isexplosive && randomfloatrange(0, 1) <= 0.5) {
         gibserverutils::giblegs(entity);
         entity startragdoll();
-    } else if (cangiblegs && isinarray(array("left_leg_upper", "left_leg_lower", "left_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
+        return;
+    }
+    if (cangiblegs && isinarray(array("left_leg_upper", "left_leg_lower", "left_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
         if (entity.health - damage > 0) {
             becomecrawler(entity);
         }
         gibserverutils::gibleftleg(entity);
-    } else if (cangiblegs && isinarray(array("right_leg_upper", "right_leg_lower", "right_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
+        return;
+    }
+    if (cangiblegs && isinarray(array("right_leg_upper", "right_leg_lower", "right_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
         if (entity.health - damage > 0) {
             becomecrawler(entity);
         }
         gibserverutils::gibrightleg(entity);
-    } else if (entity.health - damage <= 0 && entity.allowdeath && randomfloatrange(0, 1) <= 0.25) {
+        return;
+    }
+    if (entity.health - damage <= 0 && entity.allowdeath && randomfloatrange(0, 1) <= 0.25) {
         if (math::cointoss()) {
             gibserverutils::gibleftleg(entity);
-        } else {
-            gibserverutils::gibrightleg(entity);
+            return;
         }
+        gibserverutils::gibrightleg(entity);
     }
 }
 
@@ -2980,7 +2996,9 @@ function private robotsoldierspawnsetup() {
     #/
     if (getdvarint(#"ai_robotforcecrawler", 0) == 1) {
         entity ai::set_behavior_attribute("force_crawler", "gib_legs");
-    } else if (getdvarint(#"ai_robotforcecrawler", 0) == 2) {
+        return;
+    }
+    if (getdvarint(#"ai_robotforcecrawler", 0) == 2) {
         entity ai::set_behavior_attribute("force_crawler", "remove_legs");
     }
 }
@@ -3132,13 +3150,21 @@ function robotequipminiraps(entity, attribute, oldvalue, value) {
 function robotlights(entity, attribute, oldvalue, value) {
     if (value == 3) {
         clientfield::set("robot_lights", 3);
-    } else if (value == 0) {
+        return;
+    }
+    if (value == 0) {
         clientfield::set("robot_lights", 0);
-    } else if (value == 1) {
+        return;
+    }
+    if (value == 1) {
         clientfield::set("robot_lights", 1);
-    } else if (value == 2) {
+        return;
+    }
+    if (value == 2) {
         clientfield::set("robot_lights", 2);
-    } else if (value == 4) {
+        return;
+    }
+    if (value == 4) {
         clientfield::set("robot_lights", 4);
     }
 }
@@ -3155,9 +3181,13 @@ function randomgibroguerobot(entity) {
         } else if (math::cointoss()) {
             gibserverutils::gibleftarm(entity);
         }
-    } else if (math::cointoss()) {
+        return;
+    }
+    if (math::cointoss()) {
         gibserverutils::gibleftarm(entity);
-    } else if (math::cointoss()) {
+        return;
+    }
+    if (math::cointoss()) {
         gibserverutils::gibrightarm(entity);
     }
 }
@@ -3172,7 +3202,7 @@ function roguecontrolattributecallback(entity, attribute, oldvalue, value) {
         if (entity.controllevel <= 0) {
             forcerobotsoldiermindcontrollevel1();
         }
-        break;
+        return;
     case #"forced_level_2":
         if (entity.controllevel <= 1) {
             forcerobotsoldiermindcontrollevel2();
@@ -3181,7 +3211,7 @@ function roguecontrolattributecallback(entity, attribute, oldvalue, value) {
                 randomgibroguerobot(entity);
             }
         }
-        break;
+        return;
     case #"forced_level_3":
         if (entity.controllevel <= 2) {
             forcerobotsoldiermindcontrollevel3();
@@ -3190,7 +3220,7 @@ function roguecontrolattributecallback(entity, attribute, oldvalue, value) {
                 randomgibroguerobot(entity);
             }
         }
-        break;
+        return;
     }
 }
 
@@ -3206,19 +3236,19 @@ function robotmovemodeattributecallback(entity, attribute, oldvalue, value) {
     }
     switch (value) {
     case #"normal":
-        break;
+        return;
     case #"rambo":
         entity.ignorepathenemyfightdist = 1;
-        break;
+        return;
     case #"marching":
         entity.ignorepathenemyfightdist = 1;
         entity setblackboardattribute("_move_mode", "marching");
-        break;
+        return;
     case #"rusher":
         if (!entity ai::get_behavior_attribute("can_become_rusher")) {
             entity ai::set_behavior_attribute("move_mode", oldvalue);
         }
-        break;
+        return;
     }
 }
 
@@ -3261,9 +3291,9 @@ function robotforcecrawler(entity, attribute, oldvalue, value) {
         destructserverutils::destructrandompieces(entity);
         if (value == "gib_legs") {
             becomecrawler(entity);
-        } else {
-            robotsoldierbehavior::robotbecomecrawler(entity);
+            return;
         }
+        robotsoldierbehavior::robotbecomecrawler(entity);
     }
 }
 
@@ -3278,11 +3308,11 @@ function roguecontrolforcegoalattributecallback(entity, attribute, oldvalue, val
     roguecontrolled = isinarray(array("level_2", "level_3"), entity ai::get_behavior_attribute("rogue_control"));
     if (!roguecontrolled) {
         entity ai::set_behavior_attribute("rogue_control_force_goal", undefined);
-    } else {
-        entity.favoriteenemy = undefined;
-        entity clearpath();
-        entity function_a57c34b7(entity ai::get_behavior_attribute("rogue_control_force_goal"));
+        return;
     }
+    entity.favoriteenemy = undefined;
+    entity clearpath();
+    entity function_a57c34b7(entity ai::get_behavior_attribute("rogue_control_force_goal"));
 }
 
 // Namespace robotsoldierserverutils/archetype_robot
@@ -3293,13 +3323,13 @@ function roguecontrolspeedattributecallback(entity, attribute, oldvalue, value) 
     switch (value) {
     case #"walk":
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
-        break;
+        return;
     case #"run":
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_run");
-        break;
+        return;
     case #"sprint":
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_sprint");
-        break;
+        return;
     }
 }
 
@@ -3311,10 +3341,10 @@ function robottraversalattributecallback(entity, attribute, oldvalue, value) {
     switch (value) {
     case #"normal":
         entity.manualtraversemode = 0;
-        break;
+        return;
     case #"procedural":
         entity.manualtraversemode = 1;
-        break;
+        return;
     }
 }
 
@@ -3325,9 +3355,9 @@ function robottraversalattributecallback(entity, attribute, oldvalue, value) {
 function disablesprintcallback(entity, attribute, oldvalue, value) {
     if (value) {
         entity.disablesprint = 1;
-    } else {
-        entity.disablesprint = 0;
+        return;
     }
+    entity.disablesprint = 0;
 }
 
 // Namespace robotsoldierserverutils/archetype_robot
@@ -3337,8 +3367,8 @@ function disablesprintcallback(entity, attribute, oldvalue, value) {
 function forcesprintcallback(entity, attribute, oldvalue, value) {
     if (value) {
         entity.forcesprint = 1;
-    } else {
-        entity.forcesprint = 0;
+        return;
     }
+    entity.forcesprint = 0;
 }
 

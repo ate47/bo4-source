@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ab93690, Offset: 0x120
 // Size: 0x34
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3393bf68, Offset: 0x160
 // Size: 0xd4
 function function_2613aeec(enabled) {
@@ -40,7 +40,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb4ca0ec7, Offset: 0x240
 // Size: 0x18c
 function function_19a80b40(var_a0ffe134) {
@@ -73,7 +73,7 @@ function function_19a80b40(var_a0ffe134) {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x749c1723, Offset: 0x3d8
 // Size: 0x1e4
 function function_8bf71bd6() {
@@ -109,7 +109,7 @@ function function_8bf71bd6() {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x10f20f09, Offset: 0x5c8
 // Size: 0xdc
 function function_1c4b5097(item) {
@@ -125,7 +125,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x10b8cb3d, Offset: 0x6b0
 // Size: 0x1e2
 function function_4ac25840(dead_team) {
@@ -149,7 +149,7 @@ function function_4ac25840(dead_team) {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x623e0ba, Offset: 0x8a0
 // Size: 0xe0
 function private function_587e512e() {
@@ -163,7 +163,7 @@ function private function_587e512e() {
 }
 
 // Namespace character_unlock_nikolai/character_unlock_nikolai
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xef8070e3, Offset: 0x988
 // Size: 0x80
 function private function_c816ea5b() {

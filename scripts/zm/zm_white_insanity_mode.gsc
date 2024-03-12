@@ -94,7 +94,7 @@ function init_quest() {
             do {
                 vh_wisp = spawner::simple_spawn_single(getent("veh_insanity_mode_wisp", "targetname"));
                 waitframe(1);
-            } while(!isdefined(vh_wisp));
+            } while (!isdefined(vh_wisp));
             vh_wisp.origin = nd_start.origin;
             vh_wisp.angles = nd_start.angles;
             arrayremovevalue(level.ai[#"axis"], vh_wisp);
@@ -112,9 +112,9 @@ function init_quest() {
         zm_sq::register(#"insanity_mode", #"step_3", #"insanity_mode_step3", &insanity_mode_step3_setup, &insanity_mode_step3_cleanup);
         zm_sq::register(#"insanity_mode", #"step_4", #"insanity_mode_step4", &insanity_mode_step4_setup, &insanity_mode_step4_cleanup);
         zm_sq::start(#"insanity_mode");
-    } else {
-        function_52a6a332();
+        return;
     }
+    function_52a6a332();
 }
 
 // Namespace zm_white_insanity_mode/zm_white_insanity_mode
@@ -512,7 +512,9 @@ function function_69a6d31a(b_show) {
     foreach (s_containment in var_d190efa8) {
         if (b_show) {
             s_containment.e_model = util::spawn_model(s_containment.model, s_containment.origin, s_containment.angles);
-        } else if (isdefined(s_containment.e_model)) {
+            continue;
+        }
+        if (isdefined(s_containment.e_model)) {
             s_containment.e_model delete();
         }
     }
@@ -520,9 +522,9 @@ function function_69a6d31a(b_show) {
     foreach (e_clip in var_bdd13992) {
         if (b_show) {
             e_clip solid();
-        } else {
-            e_clip notsolid();
+            continue;
         }
+        e_clip notsolid();
     }
     var_76a02192 = getentarray("insanity_mode_no_starting_powerups", "targetname");
     if (isdefined(level.var_5fa2f970)) {
@@ -537,10 +539,10 @@ function function_69a6d31a(b_show) {
                 if (!isinarray(level.var_5fa2f970, vol_no_powerups)) {
                     level.var_5fa2f970[level.var_5fa2f970.size] = vol_no_powerups;
                 }
-            } else {
-                vol_no_powerups hide();
-                arrayremovevalue(level.var_5fa2f970, vol_no_powerups);
+                continue;
             }
+            vol_no_powerups hide();
+            arrayremovevalue(level.var_5fa2f970, vol_no_powerups);
         }
     }
 }
@@ -595,9 +597,8 @@ function function_4f84973a() {
 function get_upgrade(weapon) {
     if (isdefined(level.zombie_weapons[weapon]) && isdefined(level.zombie_weapons[weapon].upgrade_name)) {
         return zm_weapons::get_upgrade_weapon(weapon, 0);
-    } else {
-        return zm_weapons::get_upgrade_weapon(weapon, 1);
     }
+    return zm_weapons::get_upgrade_weapon(weapon, 1);
 }
 
 // Namespace zm_white_insanity_mode/zm_white_insanity_mode
@@ -638,7 +639,7 @@ function function_7cb78bcd() {
                     a_e_players = getplayers();
                     var_6620353d notify(#"trigger", {#is_forced:1, #activator:a_e_players[0]});
                 }
-                break;
+                continue;
             }
         }
     }

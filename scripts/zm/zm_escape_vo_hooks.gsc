@@ -193,9 +193,8 @@ function function_480ec8c(player) {
     if (!(isdefined(player.var_b5fbfab4) && player.var_b5fbfab4)) {
         self sethintstring(#"");
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_escape_vo_hooks/zm_escape_vo_hooks
@@ -411,9 +410,8 @@ function private function_a78a3261() {
             }
             if (var_be632f74 == 0) {
                 continue;
-            } else {
-                break;
             }
+            break;
         }
         if (isdefined(level.var_105462b6)) {
             level.var_105462b6 thread zm_audio::create_and_play_dialog(#"gondola", #"call");
@@ -434,9 +432,9 @@ function function_818b85eb() {
     if (!self flag::get(#"hash_1308e79a11093c1e")) {
         self flag::set(#"hash_1308e79a11093c1e");
         self thread zm_audio::create_and_play_dialog(#"hellhole", #"enter_first");
-    } else {
-        self thread zm_audio::create_and_play_dialog(#"hellhole", #"enter");
+        return;
     }
+    self thread zm_audio::create_and_play_dialog(#"hellhole", #"enter");
 }
 
 // Namespace zm_escape_vo_hooks/zm_escape_vo_hooks

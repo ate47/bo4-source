@@ -100,7 +100,9 @@ function event_handler[missile_fire] function_a3d258b6(eventstruct) {
     if (weapon.lockontype == "Legacy Single") {
         if (isplayer(self) && isdefined(self.stingertarget) && self.stingerlockfinalized) {
             self.stingertarget function_a439ae56(missile, weapon, self);
-        } else if (isdefined(target)) {
+            return;
+        }
+        if (isdefined(target)) {
             target function_a439ae56(missile, weapon, self);
         }
     }
@@ -192,7 +194,7 @@ function on_weapon_change(params) {
             continue;
         }
         if (!weapon.noadslockoncheck && !stingerwaitforads()) {
-            break;
+            return;
         }
         self thread stingerirtloop(weapon);
         if (weapon.noadslockoncheck) {
@@ -250,7 +252,9 @@ function stingerirtloop(weapon) {
                 setfriendlyflags(weapon, self.stingertarget);
             }
             thread looplocallocksound(game.locked_on_sound, 0.75);
-        } else if (isdefined(self.stingerlockstarted) && self.stingerlockstarted) {
+            continue;
+        }
+        if (isdefined(self.stingerlockstarted) && self.stingerlockstarted) {
             if (!self isstillvalidtarget(self.stingertarget, self.stingersubtarget, weapon) || self insidestingerreticlelocked(self.stingertarget, self.stingersubtarget, weapon) == 0) {
                 self setweaponlockonpercent(weapon, 0);
                 self clearirtarget();
@@ -283,59 +287,67 @@ function stingerirtloop(weapon) {
             self notify(#"stop_lockon_sound");
             self.stingerlockfinalized = 1;
             self weaponlockfinalize(self.stingertarget, 0, self.stingersubtarget);
-        } else {
-            result = self getbeststingertarget(weapon);
-            besttarget = result[#"target"];
-            bestsubtarget = result[#"subtarget"];
-            if (!isdefined(besttarget) || isdefined(self.stingertarget) && self.stingertarget != besttarget) {
-                /#
-                    self destroylockoncanceledmessage();
-                #/
-                if (self.stingerlockdetected == 1) {
-                    self weaponlockfree();
-                    self.stingerlockdetected = 0;
-                }
-            } else if (!self locksighttest(besttarget)) {
-                /#
-                    self destroylockoncanceledmessage();
-                #/
-            } else if (isdefined(besttarget.lockondelay) && besttarget.lockondelay) {
-                /#
-                    self displaylockoncanceledmessage();
-                #/
-            } else if (!targetwithinrangeofplayspace(besttarget)) {
-                /#
-                    self displaylockoncanceledmessage();
-                #/
-            } else if (!function_1b76fb42(besttarget, weapon)) {
-                /#
-                    self displaylockoncanceledmessage();
-                #/
-            } else {
-                /#
-                    self destroylockoncanceledmessage();
-                #/
-                if (self insidestingerreticlelocked(besttarget, bestsubtarget, weapon) == 0) {
-                    if (self.stingerlockdetected == 0) {
-                        self weaponlockdetect(besttarget, 0, bestsubtarget);
-                    }
-                    self.stingerlockdetected = 1;
-                    if (isdefined(weapon)) {
-                        setfriendlyflags(weapon, besttarget);
-                    }
-                } else {
-                    self.stingerlockdetected = 0;
-                    initlockfield(besttarget);
-                    self.stingertarget = besttarget;
-                    self.stingersubtarget = bestsubtarget;
-                    self.stingerlockstarttime = gettime();
-                    self.stingerlockstarted = 1;
-                    self.stingerlostsightlinetime = 0;
-                    self weaponlockstart(besttarget, 0, bestsubtarget);
-                    self thread looplocalseeksound(game.locking_on_sound, 0.6);
-                }
-            }
+            continue;
         }
+        result = self getbeststingertarget(weapon);
+        besttarget = result[#"target"];
+        bestsubtarget = result[#"subtarget"];
+        if (!isdefined(besttarget) || isdefined(self.stingertarget) && self.stingertarget != besttarget) {
+            /#
+                self destroylockoncanceledmessage();
+            #/
+            if (self.stingerlockdetected == 1) {
+                self weaponlockfree();
+                self.stingerlockdetected = 0;
+            }
+            continue;
+        }
+        if (!self locksighttest(besttarget)) {
+            /#
+                self destroylockoncanceledmessage();
+            #/
+            continue;
+        }
+        if (isdefined(besttarget.lockondelay) && besttarget.lockondelay) {
+            /#
+                self displaylockoncanceledmessage();
+            #/
+            continue;
+        }
+        if (!targetwithinrangeofplayspace(besttarget)) {
+            /#
+                self displaylockoncanceledmessage();
+            #/
+            continue;
+        }
+        if (!function_1b76fb42(besttarget, weapon)) {
+            /#
+                self displaylockoncanceledmessage();
+            #/
+            continue;
+        }
+        /#
+            self destroylockoncanceledmessage();
+        #/
+        if (self insidestingerreticlelocked(besttarget, bestsubtarget, weapon) == 0) {
+            if (self.stingerlockdetected == 0) {
+                self weaponlockdetect(besttarget, 0, bestsubtarget);
+            }
+            self.stingerlockdetected = 1;
+            if (isdefined(weapon)) {
+                setfriendlyflags(weapon, besttarget);
+            }
+            continue;
+        }
+        self.stingerlockdetected = 0;
+        initlockfield(besttarget);
+        self.stingertarget = besttarget;
+        self.stingersubtarget = bestsubtarget;
+        self.stingerlockstarttime = gettime();
+        self.stingerlockstarted = 1;
+        self.stingerlostsightlinetime = 0;
+        self weaponlockstart(besttarget, 0, bestsubtarget);
+        self thread looplocalseeksound(game.locking_on_sound, 0.6);
     }
 }
 
@@ -473,7 +485,9 @@ function getbeststingertarget(weapon) {
                             }
                         }
                     }
-                } else if (self insidestingerreticledetect(target, subtarget, weapon)) {
+                    continue;
+                }
+                if (self insidestingerreticledetect(target, subtarget, weapon)) {
                     if (isdefined(target.owner) && self != target.owner || isplayer(target) && self != target) {
                         if (!isdefined(self.is_valid_target_for_stinger_override) || self [[ self.is_valid_target_for_stinger_override ]](target)) {
                             if (!isentity(target) || isalive(target)) {
@@ -654,9 +668,9 @@ function playsoundforlocalplayer(alias) {
         if (isdefined(sound_target)) {
             sound_target playsoundtoplayer(alias, self);
         }
-    } else {
-        self playlocalsound(alias);
+        return;
     }
+    self playlocalsound(alias);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -778,10 +792,10 @@ function lockingon(target, lock) {
                 self thread [[ level.playkillstreakthreat ]](target);
             }
         }
-    } else {
-        self notify(#"locking_on_cleared");
-        target.locking_on = target.locking_on & ~(1 << clientnum);
+        return;
     }
+    self notify(#"locking_on_cleared");
+    target.locking_on = target.locking_on & ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -810,10 +824,10 @@ function lockedon(target, lock) {
             self notify(#"lock_on_acquired");
             self thread watchclearlockedon(target, clientnum);
         }
-    } else {
-        self notify(#"locked_on_cleared");
-        target.locked_on = target.locked_on & ~(1 << clientnum);
+        return;
     }
+    self notify(#"locked_on_cleared");
+    target.locked_on = target.locked_on & ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -829,10 +843,10 @@ function targetinghacking(target, lock) {
         target notify(#"locking on hacking");
         target.locking_on_hacking = target.locking_on_hacking | 1 << clientnum;
         self thread watchclearhacking(target, clientnum);
-    } else {
-        self notify(#"locking_on_hacking_cleared");
-        target.locking_on_hacking = target.locking_on_hacking & ~(1 << clientnum);
+        return;
     }
+    self notify(#"locking_on_hacking_cleared");
+    target.locking_on_hacking = target.locking_on_hacking & ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -909,7 +923,9 @@ function setfriendlyflags(weapon, target) {
                     }
                 }
             }
-        } else if (isdefined(level.callback_set_missiles_remaining)) {
+            return;
+        }
+        if (isdefined(level.callback_set_missiles_remaining)) {
             self settargetedmissilesremaining(weapon, [[ level.callback_set_missiles_remaining ]](weapon, target));
         }
     }
@@ -989,7 +1005,7 @@ function watchclearlockedon(target, clientnum) {
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
-// Params 3, eflags: 0x0
+// Params 3, eflags: 0x1 linked
 // Checksum 0x2e47d006, Offset: 0x36b0
 // Size: 0x250
 function missiletarget_lockonmonitor(player, endon1, endon2) {
@@ -1001,27 +1017,26 @@ function missiletarget_lockonmonitor(player, endon1, endon2) {
         self endon(endon2);
     }
     for (;;) {
-        for (;;) {
-            if (target_istarget(self)) {
-                if (self missiletarget_ismissileincoming()) {
-                    self clientfield::set("heli_warn_fired", 1);
-                    self clientfield::set("heli_warn_locked", 0);
-                    self clientfield::set("heli_warn_targeted", 0);
-                } else if (isdefined(self.locked_on) && self.locked_on) {
-                    self clientfield::set("heli_warn_locked", 1);
-                    self clientfield::set("heli_warn_fired", 0);
-                    self clientfield::set("heli_warn_targeted", 0);
-                } else if (isdefined(self.locking_on) && self.locking_on) {
-                    self clientfield::set("heli_warn_targeted", 1);
-                    self clientfield::set("heli_warn_fired", 0);
-                    self clientfield::set("heli_warn_locked", 0);
-                } else {
-                    self clientfield::set("heli_warn_fired", 0);
-                    self clientfield::set("heli_warn_targeted", 0);
-                    self clientfield::set("heli_warn_locked", 0);
-                }
+        if (target_istarget(self)) {
+            if (self missiletarget_ismissileincoming()) {
+                self clientfield::set("heli_warn_fired", 1);
+                self clientfield::set("heli_warn_locked", 0);
+                self clientfield::set("heli_warn_targeted", 0);
+            } else if (isdefined(self.locked_on) && self.locked_on) {
+                self clientfield::set("heli_warn_locked", 1);
+                self clientfield::set("heli_warn_fired", 0);
+                self clientfield::set("heli_warn_targeted", 0);
+            } else if (isdefined(self.locking_on) && self.locking_on) {
+                self clientfield::set("heli_warn_targeted", 1);
+                self clientfield::set("heli_warn_fired", 0);
+                self clientfield::set("heli_warn_locked", 0);
+            } else {
+                self clientfield::set("heli_warn_fired", 0);
+                self clientfield::set("heli_warn_targeted", 0);
+                self clientfield::set("heli_warn_locked", 0);
             }
         }
+        wait(0.1);
     }
 }
 
@@ -1190,36 +1205,35 @@ function missiletarget_proximitydetonate(missile, attacker, weapon, endon1, endo
     }
     flaredistancesq = 12250000;
     for (;;) {
-        for (;;) {
-            if (!isdefined(self)) {
-                center = lastcenter;
-            } else {
-                center = self.origin;
-            }
-            lastcenter = center;
-            curdist = distancesquared(missile.origin, center);
-            if (curdist < flaredistancesq && isdefined(self.numflares) && self.numflares > 0) {
-                self.numflares--;
-                self thread missiletarget_playflarefx();
-                self challenges::trackassists(attacker, 0, 1);
-                newtarget = self missiletarget_deployflares(missile.origin, missile.angles);
-                missile missile_settarget(newtarget, isdefined(target_getoffset(newtarget)) ? target_getoffset(newtarget) : (0, 0, 0));
-                missiletarget = newtarget;
-                scoreevents::processscoreevent(#"flare_assist", attacker, undefined, weapon);
-                self notify(#"flare_deployed");
-                return;
-            }
-            if (curdist < mindist) {
-                mindist = curdist;
-            }
-            if (curdist > mindist) {
-                if (curdist > misseddistancesq) {
-                    return;
-                }
-                missile thread _missiledetonate(attacker, weapon, 500, 600, 600, allowdirectdamage);
-                return;
-            }
+        if (!isdefined(self)) {
+            center = lastcenter;
+        } else {
+            center = self.origin;
         }
+        lastcenter = center;
+        curdist = distancesquared(missile.origin, center);
+        if (curdist < flaredistancesq && isdefined(self.numflares) && self.numflares > 0) {
+            self.numflares--;
+            self thread missiletarget_playflarefx();
+            self challenges::trackassists(attacker, 0, 1);
+            newtarget = self missiletarget_deployflares(missile.origin, missile.angles);
+            missile missile_settarget(newtarget, isdefined(target_getoffset(newtarget)) ? target_getoffset(newtarget) : (0, 0, 0));
+            missiletarget = newtarget;
+            scoreevents::processscoreevent(#"flare_assist", attacker, undefined, weapon);
+            self notify(#"flare_deployed");
+            return;
+        }
+        if (curdist < mindist) {
+            mindist = curdist;
+        }
+        if (curdist > mindist) {
+            if (curdist > misseddistancesq) {
+                return;
+            }
+            missile thread _missiledetonate(attacker, weapon, 500, 600, 600, allowdirectdamage);
+            return;
+        }
+        waitframe(1);
     }
 }
 

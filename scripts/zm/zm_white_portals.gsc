@@ -241,7 +241,8 @@ function player_teleporting() {
         }
         if (player_used == 1) {
             continue;
-        } else if (zm_utility::is_player_valid(user, 0, 1)) {
+        }
+        if (zm_utility::is_player_valid(user, 0, 1)) {
             self thread teleport_player(user);
         }
     }
@@ -405,9 +406,9 @@ function cooldown_portal_timer(e_user) {
 function function_cb7c6fc7(e_user, b_show = 1) {
     if (b_show) {
         e_user clientfield::set_to_player(self.script_noteworthy, 2);
-    } else {
-        e_user clientfield::set_to_player(self.script_noteworthy, 1);
+        return;
     }
+    e_user clientfield::set_to_player(self.script_noteworthy, 1);
 }
 
 // Namespace zm_white_portals/zm_white_portals
@@ -483,9 +484,8 @@ function find_portal_destination(var_210b4680) {
     }
     if (var_98ceafca.size > 0) {
         return array::random(var_98ceafca);
-    } else {
-        return self;
     }
+    return self;
 }
 
 // Namespace zm_white_portals/zm_white_portals
@@ -643,9 +643,9 @@ function function_1f034d46(destination) {
     self.var_b940d6ea = destination;
     if (isdefined(self.var_b940d6ea)) {
         self.var_f4bf0819 = undefined;
-    } else {
-        self.var_f4bf0819 = undefined;
+        return;
     }
+    self.var_f4bf0819 = undefined;
 }
 
 // Namespace zm_white_portals/zm_white_portals
@@ -705,7 +705,9 @@ function portal_init() {
     foreach (e in var_c60b7f6d) {
         if (e.script_noteworthy === "model") {
             self.e_model = e;
-        } else if (e.script_noteworthy === "info_volume") {
+            continue;
+        }
+        if (e.script_noteworthy === "info_volume") {
             self.e_volume = e;
         }
     }
@@ -912,10 +914,12 @@ function function_99407d66(e_player) {
     if (e_player zm_utility::is_drinking()) {
         self sethintstring("");
         return 0;
-    } else if (self.stub.related_parent.b_active === 0 && level.var_868c98df === 0) {
+    }
+    if (self.stub.related_parent.b_active === 0 && level.var_868c98df === 0) {
         self sethintstring(#"hash_5fb23a325b41e010");
         return 1;
-    } else if (self.stub.related_parent.b_active === 1) {
+    }
+    if (self.stub.related_parent.b_active === 1) {
         if (function_26ddb915()) {
             self sethintstring(#"hash_79fc5d02a880a44b");
             return 1;
@@ -929,13 +933,14 @@ function function_99407d66(e_player) {
             self sethintstring(#"hash_6801c3df1d9b2a37");
             return 1;
         }
-    } else if (function_8b1a219a()) {
+        return;
+    }
+    if (function_8b1a219a()) {
         self sethintstring(#"hash_57748c9a86bf5e92");
         return 1;
-    } else {
-        self sethintstring(#"hash_45755e67c1efbdb6");
-        return 1;
     }
+    self sethintstring(#"hash_45755e67c1efbdb6");
+    return 1;
 }
 
 // Namespace zm_white_portals/zm_white_portals
@@ -950,7 +955,6 @@ function function_360c6be0() {
             foreach (player in level.players) {
                 if (isalive(player) && player istouching(self.e_volume)) {
                     e_user = player;
-                    continue;
                 }
             }
             waitframe(1);
@@ -1143,9 +1147,8 @@ function function_35babccd(ent) {
         if (ent istouching(level.var_b4fcac11[index])) {
             ent.floor_num = index + 1;
             return ent.floor_num;
-        } else {
-            index = (index + 1) % var_4e37b34;
         }
+        index = (index + 1) % var_4e37b34;
     }
     /#
         println("<unknown string>");

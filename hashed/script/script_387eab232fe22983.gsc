@@ -107,16 +107,12 @@ function function_1f269f0f() {
     switch (getplayers().size) {
     case 1:
         return 1;
-        break;
     case 2:
         return 2;
-        break;
     case 3:
         return 2;
-        break;
     case 4:
         return 3;
-        break;
     }
 }
 
@@ -191,10 +187,9 @@ function get_favorite_enemy() {
     }
     if (!zm_utility::is_player_valid(least_hunted)) {
         return undefined;
-    } else {
-        least_hunted.hunted_by = least_hunted.hunted_by + 1;
-        return least_hunted;
     }
+    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    return least_hunted;
 }
 
 // Namespace zombie_werewolf_util/ai_werewolf_util

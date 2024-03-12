@@ -66,7 +66,7 @@ function function_5309464a(var_5ea5c94d) {
 // Checksum 0x26797bc7, Offset: 0x480
 // Size: 0x1c
 function function_ae270d9e(var_5ea5c94d, ended_early) {
-    if (!var_5ea5c94d) {
+    if (var_5ea5c94d) {
     }
 }
 
@@ -110,9 +110,9 @@ function function_39c9e020() {
     if (a_e_players.size > 0) {
         e_player = array::random(a_e_players);
         e_player thread zm_orange_util::function_51b752a9(#"hash_ebd07fabb769017");
-    } else {
-        level thread zm_orange_util::function_fd24e47f(#"hash_ebd07fabb769017");
+        return;
     }
+    level thread zm_orange_util::function_fd24e47f(#"hash_ebd07fabb769017");
 }
 
 // Namespace zm_orange_mq_sendoff/zm_orange_mq_sendoff
@@ -207,10 +207,8 @@ function function_39d9b290() {
 // Checksum 0x93491629, Offset: 0xd60
 // Size: 0x1cc
 function function_bf106bdf() {
-    vh_wisp = spawner::simple_spawn_single(getent("virgil", "targetname"));
-    while (!isdefined(vh_wisp)) {
+    for (vh_wisp = spawner::simple_spawn_single(getent("virgil", "targetname")); !isdefined(vh_wisp); vh_wisp = spawner::simple_spawn_single(getent("virgil", "targetname"))) {
         waitframe(1);
-        vh_wisp = spawner::simple_spawn_single(getent("virgil", "targetname"));
     }
     vh_wisp clientfield::set("" + #"wisp_fx", 1);
     nd_start = getvehiclenode("portal_wisp_start", "targetname");

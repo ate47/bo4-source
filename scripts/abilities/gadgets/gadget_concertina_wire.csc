@@ -62,10 +62,10 @@ function function_3a927971(localclientnum, oldval, newval, bnewent, binitialsnap
     if (2 == newval || 3 == newval) {
         self function_d309e55a("wire_02", 1);
         self function_d309e55a("wire_03", 1);
-    } else {
-        self function_d309e55a("wire_02", 0);
-        self function_d309e55a("wire_03", 0);
+        return;
     }
+    self function_d309e55a("wire_02", 0);
+    self function_d309e55a("wire_03", 0);
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -91,9 +91,9 @@ function function_6873a657(localclientnum, oldval, newval, bnewent, binitialsnap
         if (var_f56117a2 < currentanimtime || bnewent) {
             self setanimtime(level.var_87226c31.bundle.deployanim, var_f56117a2);
         }
-    } else {
-        self setanimtime(level.var_87226c31.bundle.deployanim, var_f56117a2);
+        return;
     }
+    self setanimtime(level.var_87226c31.bundle.deployanim, var_f56117a2);
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -111,7 +111,7 @@ function function_1c2930c7(localclientnum) {
         waitframe(1);
         player = function_5c10bd79(localclientnum);
         if (!isdefined(player)) {
-            break;
+            return;
         }
         var_b43e8dc2 = player function_287dcf4b(level.var_87226c31.bundle.var_63aab046, level.var_87226c31.bundle.maxwidth, 0, 0, level.var_87226c31.var_3e7344ee);
         if (!isdefined(var_b43e8dc2) && !var_ccfe777) {
@@ -127,9 +127,9 @@ function function_1c2930c7(localclientnum) {
         if (isdefined(level.var_87226c31.bundle.var_8fa9aac4) ? level.var_87226c31.bundle.var_8fa9aac4 : 0) {
             if (var_b43e8dc2.var_bf9ca9b0) {
                 previewmodel = player function_8fb44aff(localclientnum, var_b43e8dc2.origin, var_b43e8dc2.angles, var_b43e8dc2.isvalid, 0, 1);
-            } else {
-                previewmodel = player function_8fb44aff(localclientnum, var_b43e8dc2.origin, var_b43e8dc2.angles, var_b43e8dc2.isvalid, 2, 3);
+                continue;
             }
+            previewmodel = player function_8fb44aff(localclientnum, var_b43e8dc2.origin, var_b43e8dc2.angles, var_b43e8dc2.isvalid, 2, 3);
         }
     }
 }

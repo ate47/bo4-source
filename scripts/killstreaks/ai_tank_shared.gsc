@@ -40,7 +40,7 @@
 #namespace ai_tank;
 
 // Namespace ai_tank/ai_tank_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xfc27c278, Offset: 0x7a0
 // Size: 0x42c
 function init_shared(bundlename) {
@@ -928,9 +928,9 @@ function state_driving_update(params) {
             driver util::waittill_vehicle_move_up_button_pressed();
             if (self.cobra === 0) {
                 self cobra_raise();
-            } else {
-                self cobra_retract();
+                continue;
             }
+            self cobra_retract();
         }
     }
 }
@@ -1023,34 +1023,33 @@ function function_f358791() {
     self endon(#"death", #"change_state");
     wait(1);
     for (;;) {
-        for (;;) {
-            if (isdefined(self.isstunned) && self.isstunned) {
-                self.favoriteenemy = undefined;
-                waitframe(1);
-                continue;
-            }
-            targets = [];
-            targetsmissile = [];
-            players = level.players;
-            foreach (player in players) {
-                if (self cantargetplayer(player)) {
-                    targets[targets.size] = player;
-                }
-            }
-            tanks = getentarray("talon", "targetname");
-            foreach (tank in tanks) {
-                if (self cantargettank(tank)) {
-                    targets[targets.size] = tank;
-                }
-            }
-            actors = getactorarray();
-            foreach (actor in actors) {
-                if (self cantargetactor(actor)) {
-                    targets[targets.size] = actor;
-                }
-            }
-            self.favoriteenemy = function_b2cc6703(targets);
+        if (isdefined(self.isstunned) && self.isstunned) {
+            self.favoriteenemy = undefined;
+            waitframe(1);
+            continue;
         }
+        targets = [];
+        targetsmissile = [];
+        players = level.players;
+        foreach (player in players) {
+            if (self cantargetplayer(player)) {
+                targets[targets.size] = player;
+            }
+        }
+        tanks = getentarray("talon", "targetname");
+        foreach (tank in tanks) {
+            if (self cantargettank(tank)) {
+                targets[targets.size] = tank;
+            }
+        }
+        actors = getactorarray();
+        foreach (actor in actors) {
+            if (self cantargetactor(actor)) {
+                targets[targets.size] = actor;
+            }
+        }
+        self.favoriteenemy = function_b2cc6703(targets);
+        waitframe(1);
     }
 }
 
@@ -1067,13 +1066,17 @@ function function_b2cc6703(targets) {
         targets[idx].var_629a6b13[entnum] = 0;
         if (isdefined(targets[idx].type) && targets[idx].type == "dog") {
             update_dog_threat(targets[idx]);
-        } else if (isactor(targets[idx])) {
-            update_actor_threat(targets[idx]);
-        } else if (isplayer(targets[idx])) {
-            update_player_threat(targets[idx]);
-        } else {
-            update_non_player_threat(targets[idx]);
+            continue;
         }
+        if (isactor(targets[idx])) {
+            update_actor_threat(targets[idx]);
+            continue;
+        }
+        if (isplayer(targets[idx])) {
+            update_player_threat(targets[idx]);
+            continue;
+        }
+        update_non_player_threat(targets[idx]);
     }
     var_8ec7f501 = undefined;
     highest = -1;
@@ -1303,9 +1306,9 @@ function turretfireupdate() {
                 }
             }
             wait(1);
-        } else {
-            wait(1);
+            continue;
         }
+        wait(1);
     }
 }
 
@@ -1431,14 +1434,14 @@ function damage_armor_activati_(entity, tacpoints) {
         foreach (tacpoint in tacpoints) {
             if (function_d15dd929(radius, tacpoint.origin)) {
                 array::add(validpoints, tacpoint);
-            } else {
-                /#
-                    record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "tag_turret");
-                #/
-                /#
-                    recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "tag_turret");
-                #/
+                continue;
             }
+            /#
+                record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "tag_turret");
+            #/
+            /#
+                recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "tag_turret");
+            #/
         }
     }
     return validpoints;
@@ -1479,73 +1482,97 @@ function state_combat_update(params) {
     heatseekingmissile::initlockfield(self);
     iterationlimit = getdvarint(#"hkai_pathfinditerationlimit", 1800);
     for (;;) {
-        for (;;) {
-            if (isdefined(self.isstunned) && self.isstunned || isdefined(self.var_b61a6415) && self.var_b61a6415) {
-                waitframe(1);
-                continue;
+        if (isdefined(self.isstunned) && self.isstunned || isdefined(self.var_b61a6415) && self.var_b61a6415) {
+            waitframe(1);
+            continue;
+        }
+        newpos = undefined;
+        cansee = 0;
+        if (isdefined(level.var_6cfbe5a)) {
+            [[ level.var_6cfbe5a ]]->waitinqueue(self);
+        }
+        if (isdefined(self.enemy)) {
+            var_f4cf81b8 = self gettagorigin("tag_flash");
+            enemyeyepos = self.enemy geteye();
+            cansee = sighttracepassed(var_f4cf81b8, enemyeyepos, 0, self, self.enemy);
+        }
+        if (isdefined(self.enemy) && cansee) {
+            var_8f3583cf = ai::t_cylinder(self.origin, 100, 200);
+            tacpoints = tacticalquery("tank_robot_tacquery_combat", self.enemy.origin, self, var_8f3583cf);
+            tacpoints = damage_armor_activati_(self, tacpoints);
+            if (isdefined(tacpoints) && tacpoints.size > 0) {
+                newpos = getclosestpointonnavmesh(tacpoints[0].origin, self.goalradius, self getpathfindingradius(), self.var_6e9e073d);
             }
-            newpos = undefined;
-            cansee = 0;
+        } else {
+            if (isdefined(self.enemy)) {
+                enemy = self.enemy;
+            } else {
+                enemy = self function_37cc249f();
+            }
+            if (isdefined(enemy)) {
+                var_4e35e079 = getclosestpointonnavmesh(enemy.origin, 500, self getpathfindingradius(), self.var_6e9e073d);
+                var_2a54124d = 0;
+                if (isdefined(var_4e35e079)) {
+                    path = generatenavmeshpath(self.origin, var_4e35e079, self, undefined, undefined, iterationlimit);
+                    if (isdefined(path) && path.status === "succeeded") {
+                        var_2a54124d = 1;
+                    }
+                }
+                if (var_2a54124d) {
+                    newpos = var_4e35e079;
+                } else {
+                    searchradius = 800;
+                    var_6dc80cbb = 100;
+                    origin = getclosestpointonnavmesh(self.origin, var_6dc80cbb, self.var_6e9e073d);
+                    forwardpos = enemy.origin;
+                    if (isdefined(origin)) {
+                        cylinder = ai::t_cylinder(origin, searchradius, 500);
+                        var_8f3583cf = ai::t_cylinder(self.origin, 100, 200);
+                        tacpoints = tacticalquery("tank_robot_tacquery_seek", origin, cylinder, self, var_8f3583cf, forwardpos);
+                        tacpoints = damage_armor_activati_(self, tacpoints);
+                        if (isdefined(tacpoints) && tacpoints.size > 0) {
+                            newpos = getclosestpointonnavmesh(tacpoints[0].origin, self.goalradius, self getpathfindingradius(), self.var_6e9e073d);
+                        }
+                    }
+                }
+            } else {
+                newpos = function_4ae23c85();
+            }
+        }
+        foundpath = 0;
+        if (isdefined(newpos)) {
+            self.var_640af0c9 = newpos;
+            if (!ispointonnavmesh(self.origin, self)) {
+                getbackpoint = getclosestpointonnavmesh(self.origin, 500, self getpathfindingradius(), self.var_6e9e073d);
+                if (isdefined(getbackpoint)) {
+                    self.origin = getbackpoint;
+                }
+            }
+            path = generatenavmeshpath(self.origin, newpos, self, undefined, undefined, iterationlimit);
+            if (isdefined(path) && path.status === "succeeded") {
+                foundpath = 1;
+            }
+            if (foundpath) {
+                /#
+                    recordsphere(newpos, 3, (0, 1, 0), "tag_turret");
+                #/
+                self function_a57c34b7(newpos, 0, 1);
+                self setbrake(0);
+                self asmrequestsubstate(#"locomotion@movement");
+                result = undefined;
+                result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
+            } else {
+                /#
+                    recordsphere(newpos, 3, (1, 0, 0), "tag_turret");
+                #/
+            }
+        }
+        if (!foundpath) {
             if (isdefined(level.var_6cfbe5a)) {
                 [[ level.var_6cfbe5a ]]->waitinqueue(self);
             }
-            if (isdefined(self.enemy)) {
-                var_f4cf81b8 = self gettagorigin("tag_flash");
-                enemyeyepos = self.enemy geteye();
-                cansee = sighttracepassed(var_f4cf81b8, enemyeyepos, 0, self, self.enemy);
-            }
-            if (isdefined(self.enemy) && cansee) {
-                var_8f3583cf = ai::t_cylinder(self.origin, 100, 200);
-                tacpoints = tacticalquery("tank_robot_tacquery_combat", self.enemy.origin, self, var_8f3583cf);
-                tacpoints = damage_armor_activati_(self, tacpoints);
-                if (isdefined(tacpoints) && tacpoints.size > 0) {
-                    newpos = getclosestpointonnavmesh(tacpoints[0].origin, self.goalradius, self getpathfindingradius(), self.var_6e9e073d);
-                }
-            } else {
-                if (isdefined(self.enemy)) {
-                    enemy = self.enemy;
-                } else {
-                    enemy = self function_37cc249f();
-                }
-                if (isdefined(enemy)) {
-                    var_4e35e079 = getclosestpointonnavmesh(enemy.origin, 500, self getpathfindingradius(), self.var_6e9e073d);
-                    var_2a54124d = 0;
-                    if (isdefined(var_4e35e079)) {
-                        path = generatenavmeshpath(self.origin, var_4e35e079, self, undefined, undefined, iterationlimit);
-                        if (isdefined(path) && path.status === "succeeded") {
-                            var_2a54124d = 1;
-                        }
-                    }
-                    if (var_2a54124d) {
-                        newpos = var_4e35e079;
-                    } else {
-                        searchradius = 800;
-                        var_6dc80cbb = 100;
-                        origin = getclosestpointonnavmesh(self.origin, var_6dc80cbb, self.var_6e9e073d);
-                        forwardpos = enemy.origin;
-                        if (isdefined(origin)) {
-                            cylinder = ai::t_cylinder(origin, searchradius, 500);
-                            var_8f3583cf = ai::t_cylinder(self.origin, 100, 200);
-                            tacpoints = tacticalquery("tank_robot_tacquery_seek", origin, cylinder, self, var_8f3583cf, forwardpos);
-                            tacpoints = damage_armor_activati_(self, tacpoints);
-                            if (isdefined(tacpoints) && tacpoints.size > 0) {
-                                newpos = getclosestpointonnavmesh(tacpoints[0].origin, self.goalradius, self getpathfindingradius(), self.var_6e9e073d);
-                            }
-                        }
-                    }
-                } else {
-                    newpos = function_4ae23c85();
-                }
-            }
-            foundpath = 0;
+            newpos = function_4ae23c85();
             if (isdefined(newpos)) {
-                self.var_640af0c9 = newpos;
-                if (!ispointonnavmesh(self.origin, self)) {
-                    getbackpoint = getclosestpointonnavmesh(self.origin, 500, self getpathfindingradius(), self.var_6e9e073d);
-                    if (isdefined(getbackpoint)) {
-                        self.origin = getbackpoint;
-                    }
-                }
                 path = generatenavmeshpath(self.origin, newpos, self, undefined, undefined, iterationlimit);
                 if (isdefined(path) && path.status === "succeeded") {
                     foundpath = 1;
@@ -1559,41 +1586,15 @@ function state_combat_update(params) {
                     self asmrequestsubstate(#"locomotion@movement");
                     result = undefined;
                     result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
-                } else {
-                    /#
-                        recordsphere(newpos, 3, (1, 0, 0), "tag_turret");
-                    #/
                 }
             }
-            if (!foundpath) {
-                if (isdefined(level.var_6cfbe5a)) {
-                    [[ level.var_6cfbe5a ]]->waitinqueue(self);
-                }
-                newpos = function_4ae23c85();
-                if (isdefined(newpos)) {
-                    path = generatenavmeshpath(self.origin, newpos, self, undefined, undefined, iterationlimit);
-                    if (isdefined(path) && path.status === "succeeded") {
-                        foundpath = 1;
-                    }
-                    if (foundpath) {
-                        /#
-                            recordsphere(newpos, 3, (0, 1, 0), "tag_turret");
-                        #/
-                        self function_a57c34b7(newpos, 0, 1);
-                        self setbrake(0);
-                        self asmrequestsubstate(#"locomotion@movement");
-                        result = undefined;
-                        result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
-                    }
-                }
-            }
-            if (foundpath) {
-                continue;
-            };
+        }
+        if (!foundpath) {
             self function_d4c687c9();
             self setbrake(1);
             vehicle_ai::clearallmovement(1);
             self asmrequestsubstate(#"hash_236f963ae1728eb3");
+            wait(1);
         }
     }
 }

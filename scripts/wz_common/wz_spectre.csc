@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3241bb37, Offset: 0x1b0
 // Size: 0x14c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9a6fbb72, Offset: 0x308
 // Size: 0x2a4
 function function_14430aff(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -57,19 +57,19 @@ function function_14430aff(localclientnum, oldval, newval, bnewent, binitialsnap
     if (self function_d2503806(#"hash_79bdfb09e317953")) {
         if (self ishidden()) {
             self function_f6e99a8d(#"hash_79bdfb09e317953");
-        } else {
-            self stoprenderoverridebundle(#"hash_79bdfb09e317953");
-            if (function_5c10bd79(localclientnum) == self) {
-                playsound(localclientnum, #"hash_1e69f4ab3ad9d506");
-            } else {
-                self playsound(localclientnum, #"hash_6920e6c1de254c0a");
-            }
+            return;
         }
+        self stoprenderoverridebundle(#"hash_79bdfb09e317953");
+        if (function_5c10bd79(localclientnum) == self) {
+            playsound(localclientnum, #"hash_1e69f4ab3ad9d506");
+            return;
+        }
+        self playsound(localclientnum, #"hash_6920e6c1de254c0a");
     }
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x1e8d82a6, Offset: 0x5b8
 // Size: 0xcc
 function private function_49c88376(localclientnum, value) {
@@ -79,16 +79,16 @@ function private function_49c88376(localclientnum, value) {
         if (self hasdobj(localclientnum)) {
             playtagfxset(localclientnum, "tagfx8_plyr_spectre_transformation_wz_1p", self);
         }
-    } else {
-        wait(0.1);
-        if (self hasdobj(localclientnum)) {
-            playtagfxset(localclientnum, "tagfx8_plyr_spectre_transformation_wz_3p", self);
-        }
+        return;
+    }
+    wait(0.1);
+    if (self hasdobj(localclientnum)) {
+        playtagfxset(localclientnum, "tagfx8_plyr_spectre_transformation_wz_3p", self);
     }
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xf4404c02, Offset: 0x690
 // Size: 0xa4
 function private function_4695335(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

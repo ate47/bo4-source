@@ -177,12 +177,12 @@ function function_d987f765() {
             if (isdefined(s_waitresult.var_264cf1f9.hasriotshield) && s_waitresult.var_264cf1f9.hasriotshield && isdefined(s_waitresult.var_264cf1f9.player_shield_reset_health)) {
                 s_waitresult.var_264cf1f9 [[ s_waitresult.var_264cf1f9.player_shield_reset_health ]]();
             }
-        } else {
-            players = getplayers();
-            foreach (e_player in players) {
-                if (isdefined(e_player) && isdefined(e_player.hasriotshield) && e_player.hasriotshield && isdefined(e_player.player_shield_reset_health)) {
-                    e_player [[ e_player.player_shield_reset_health ]]();
-                }
+            continue;
+        }
+        players = getplayers();
+        foreach (e_player in players) {
+            if (isdefined(e_player) && isdefined(e_player.hasriotshield) && e_player.hasriotshield && isdefined(e_player.player_shield_reset_health)) {
+                e_player [[ e_player.player_shield_reset_health ]]();
             }
         }
     }
@@ -508,7 +508,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
         case #"enhanced":
             if (test_range_squared < fling_range_squared) {
                 if (distancesquared(test_origin, radial_origin) > cylinder_radius_squared) {
-                    break;
+                    continue;
                 }
                 level.riotshield_fling_enemies[level.riotshield_fling_enemies.size] = e_target;
                 dist_mult = (fling_range_squared - test_range_squared) / fling_range_squared;
@@ -521,14 +521,14 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 level.riotshield_fling_vecs[level.riotshield_fling_vecs.size] = fling_vec;
             } else if (var_606a8462 && test_range_squared < knockdown_range_squared) {
                 if (distancesquared(test_origin, radial_origin) > var_8f9e26e4) {
-                    break;
+                    continue;
                 }
                 level.riotshield_knockdown_enemies[level.riotshield_knockdown_enemies.size] = e_target;
                 if (var_606a8462 && test_range_squared < gib_range_squared) {
                     level.riotshield_knockdown_gib[level.riotshield_knockdown_gib.size] = 1;
                 }
             }
-            break;
+            continue;
         case #"heavy":
         case #"miniboss":
             if (self hasperk(#"specialty_mod_shield")) {
@@ -543,7 +543,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 level.var_21ffc192[level.var_21ffc192.size] = e_target;
                 e_target dodamage(3000, self.origin, self, self, "", "MOD_IMPACT");
             }
-            break;
+            continue;
         case #"popcorn":
             if (test_range_squared < fling_range_squared) {
                 if (!isdefined(level.var_21ffc192)) {
@@ -554,7 +554,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 level.var_21ffc192[level.var_21ffc192.size] = e_target;
                 e_target dodamage(e_target.health + 100, self.origin, self, self, "", "MOD_IMPACT");
             }
-            break;
+            continue;
         default:
             if (!isdefined(level.var_21ffc192)) {
                 level.var_21ffc192 = [];
@@ -563,7 +563,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
             }
             level.var_21ffc192[level.var_21ffc192.size] = e_target;
             e_target dodamage(3000, self.origin, self, self, "", "MOD_IMPACT");
-            break;
+            continue;
         }
     }
 }
@@ -712,11 +712,11 @@ function function_a9109d26() {
                 self zm_weapons::give_fallback_weapon();
                 self switchtoweaponimmediate(undefined, 1);
                 self playsound(#"wpn_riotshield_zm_destroy");
-            } else {
-                self switchtoweaponimmediate(undefined, 1);
-                self playsound(#"wpn_riotshield_zm_destroy");
-                self waittill(#"weapon_change");
+                return;
             }
+            self switchtoweaponimmediate(undefined, 1);
+            self playsound(#"wpn_riotshield_zm_destroy");
+            self waittill(#"weapon_change");
         }
     }
 }

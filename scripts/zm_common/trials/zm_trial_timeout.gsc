@@ -126,7 +126,7 @@ function function_35cda2d8(params) {
     if (isai(params.eattacker) || isai(params.einflictor)) {
         return 1;
     }
-    if (params.weapon === level.var_78032351) {
+    if (params.weapon === level.weapondefault) {
         return 1;
     }
     if (zm_loadout::is_melee_weapon(params.weapon) || zm_weapons::function_35746b9c(params.weapon)) {

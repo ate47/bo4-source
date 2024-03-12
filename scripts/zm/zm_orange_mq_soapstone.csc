@@ -44,7 +44,9 @@ function soapstone_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     }
     if (newval == 1) {
         self.fx_glow = util::playfxontag(localclientnum, level._effect[#"soapstone_cold"], self, "tag_origin");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.fx_glow = util::playfxontag(localclientnum, level._effect[#"soapstone_hot"], self, "tag_origin");
     }
 }

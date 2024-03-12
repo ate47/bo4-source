@@ -29,7 +29,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xec75a2c3, Offset: 0x280
 // Size: 0x214
 function __init__() {
@@ -57,7 +57,7 @@ function __init__() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc688a448, Offset: 0x4a0
 // Size: 0x50
 function function_1c601b99() {
@@ -67,7 +67,7 @@ function function_1c601b99() {
 }
 
 // Namespace uav/uav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd8e9e83f, Offset: 0x4f8
 // Size: 0x114
 function function_bff5c062(uav, attackingplayer) {
@@ -83,7 +83,7 @@ function function_bff5c062(uav, attackingplayer) {
 }
 
 // Namespace uav/uav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa20cb3e2, Offset: 0x618
 // Size: 0x240
 function fx_flesh_hit_neck_fatal(params) {
@@ -119,7 +119,7 @@ function fx_flesh_hit_neck_fatal(params) {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa2302da0, Offset: 0x860
 // Size: 0x1e
 function function_3675de8b() {
@@ -129,7 +129,7 @@ function function_3675de8b() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb088c90a, Offset: 0x888
 // Size: 0x1e4
 function initrotatingrig() {
@@ -150,7 +150,7 @@ function initrotatingrig() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x302b4dc5, Offset: 0xa78
 // Size: 0x2e
 function rotaterig() {
@@ -161,7 +161,7 @@ function rotaterig() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xecfad563, Offset: 0xab0
 // Size: 0x10e
 function swayrig() {
@@ -179,7 +179,7 @@ function swayrig() {
 }
 
 // Namespace uav/uav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x57dbb2bc, Offset: 0xbc8
 // Size: 0x2c
 function hackedprefunction(hacker) {
@@ -188,7 +188,7 @@ function hackedprefunction(hacker) {
 }
 
 // Namespace uav/uav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xda74e824, Offset: 0xc00
 // Size: 0xd4
 function configureteampost(owner, ishacked) {
@@ -203,7 +203,7 @@ function configureteampost(owner, ishacked) {
 }
 
 // Namespace uav/uav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x863c45b2, Offset: 0xce0
 // Size: 0x1e
 function function_f724cfe4(health) {
@@ -212,7 +212,7 @@ function function_f724cfe4(health) {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x24f49cee, Offset: 0xd08
 // Size: 0x6a8
 function activateuav() {
@@ -235,7 +235,7 @@ function activateuav() {
         level.spawneduavs = array(level.spawneduavs);
     }
     level.spawneduavs[level.spawneduavs.size] = uav;
-    uav setmodel(level.killstreakbundle[#"uav"].var_c6eab8b5);
+    uav setmodel(level.killstreakbundle[#"uav"].ksmodel);
     uav.weapon = getweapon("uav");
     uav setweapon(uav.weapon);
     uav.targetname = "uav";
@@ -273,7 +273,7 @@ function activateuav() {
 }
 
 // Namespace uav/uav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x61e7d19c, Offset: 0x13b8
 // Size: 0x7c
 function onlowhealth(attacker, weapon) {
@@ -285,7 +285,7 @@ function onlowhealth(attacker, weapon) {
 }
 
 // Namespace uav/uav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe0e161e4, Offset: 0x1440
 // Size: 0x2c
 function onteamchange(entnum, event) {
@@ -293,7 +293,7 @@ function onteamchange(entnum, event) {
 }
 
 // Namespace uav/uav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x43f6be5, Offset: 0x1478
 // Size: 0x30c
 function destroyuav(attacker, weapon) {
@@ -332,7 +332,7 @@ function destroyuav(attacker, weapon) {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa225e115, Offset: 0x1790
 // Size: 0x5e
 function onplayerconnect() {
@@ -344,7 +344,7 @@ function onplayerconnect() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b4f4516, Offset: 0x17f8
 // Size: 0x68
 function onplayerspawned() {
@@ -355,7 +355,7 @@ function onplayerspawned() {
 }
 
 // Namespace uav/uav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf0752e48, Offset: 0x1868
 // Size: 0x1c
 function onplayerjoinedteam(params) {
@@ -363,7 +363,7 @@ function onplayerjoinedteam(params) {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x789f3816, Offset: 0x1890
 // Size: 0x13c
 function ontimeout() {
@@ -387,7 +387,7 @@ function ontimeout() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x892c9d92, Offset: 0x19d8
 // Size: 0x34
 function ontimecheck() {
@@ -395,7 +395,7 @@ function ontimecheck() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7157532e, Offset: 0x1a18
 // Size: 0x74
 function startuavfx() {
@@ -408,7 +408,7 @@ function startuavfx() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe535c77, Offset: 0x1a98
 // Size: 0x84
 function playafterburnerfx() {
@@ -422,7 +422,7 @@ function playafterburnerfx() {
 }
 
 // Namespace uav/uav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7a4be9a7, Offset: 0x1b28
 // Size: 0x20
 function hasuav(team_or_entnum) {
@@ -430,7 +430,7 @@ function hasuav(team_or_entnum) {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb1efdd6c, Offset: 0x1b50
 // Size: 0xd8
 function addactiveuav() {
@@ -453,7 +453,7 @@ function addactiveuav() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81221b6e, Offset: 0x1c30
 // Size: 0x54
 function removeactiveuav() {
@@ -463,7 +463,7 @@ function removeactiveuav() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1e6c5a69, Offset: 0x1c90
 // Size: 0x200
 function resetactiveuav() {
@@ -500,7 +500,7 @@ function resetactiveuav() {
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c8cbe83, Offset: 0x1e98
 // Size: 0x2ac
 function uavtracker() {
@@ -514,26 +514,26 @@ function uavtracker() {
                 setteamspyplane(team, int(min(activeuavs, 2)));
                 util::set_team_radar(team, activeuavsandsatellites > 0);
             }
-        } else {
-            for (i = 0; i < level.players.size; i++) {
-                player = level.players[i];
-                /#
-                    assert(isdefined(player.entnum));
-                #/
-                if (!isdefined(player.entnum)) {
-                    player.entnum = player getentitynumber();
-                }
-                activeuavs = level.activeuavs[player.entnum];
-                activeuavsandsatellites = activeuavs + (isdefined(level.activesatellites) ? level.activesatellites[player.entnum] : 0);
-                player setclientuivisibilityflag("radar_client", activeuavsandsatellites > 0);
-                player.hasspyplane = int(min(activeuavs, 2));
+            continue;
+        }
+        for (i = 0; i < level.players.size; i++) {
+            player = level.players[i];
+            /#
+                assert(isdefined(player.entnum));
+            #/
+            if (!isdefined(player.entnum)) {
+                player.entnum = player getentitynumber();
             }
+            activeuavs = level.activeuavs[player.entnum];
+            activeuavsandsatellites = activeuavs + (isdefined(level.activesatellites) ? level.activesatellites[player.entnum] : 0);
+            player setclientuivisibilityflag("radar_client", activeuavsandsatellites > 0);
+            player.hasspyplane = int(min(activeuavs, 2));
         }
     }
 }
 
 // Namespace uav/uav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa304612b, Offset: 0x2150
 // Size: 0x88
 function hidealluavstosameteam() {

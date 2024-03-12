@@ -191,7 +191,7 @@ function function_dc818f99() {
             self zm_trial_util::function_97444b02();
             do {
                 waitframe(1);
-            } while(self actionslotonebuttonpressed() || self actionslotfourbuttonpressed() || self actionslottwobuttonpressed() || self actionslotthreebuttonpressed());
+            } while (self actionslotonebuttonpressed() || self actionslotfourbuttonpressed() || self actionslottwobuttonpressed() || self actionslotthreebuttonpressed());
             continue;
         }
         n_index = 0;
@@ -221,9 +221,9 @@ function function_dc818f99() {
 function function_ea17bc2a(n_index) {
     if (self bgb::get_bgb_available(self.bgb_pack[n_index])) {
         self function_763a8a50(n_index);
-    } else {
-        self function_23b7cdd8(n_index);
+        return;
     }
+    self function_23b7cdd8(n_index);
 }
 
 // Namespace bgb_pack/zm_bgb_pack
@@ -233,9 +233,9 @@ function function_ea17bc2a(n_index) {
 function function_763a8a50(n_index) {
     if (self function_4f8aa77a(n_index)) {
         self thread function_23b7cdd8(n_index);
-    } else {
-        self activate_elixir(n_index);
+        return;
     }
+    self activate_elixir(n_index);
 }
 
 // Namespace bgb_pack/zm_bgb_pack
@@ -385,19 +385,18 @@ function function_c47c57e8() {
     self notify(#"hash_25f0b773a3164732");
     self endon(#"hash_25f0b773a3164732", #"disconnect");
     for (;;) {
+        if (!self secondaryoffhandbuttonpressed()) {
+            wait(0.05);
+            continue;
+        }
+        self.var_8ef176f3 = 1;
         for (;;) {
+            wait(0.05);
             if (!self secondaryoffhandbuttonpressed()) {
-                wait(0.05);
-                continue;
-            }
-            self.var_8ef176f3 = 1;
-            for (;;) {
-                wait(0.05);
-                if (!self secondaryoffhandbuttonpressed()) {
-                    break;
-                }
+                break;
             }
         }
+        self.var_8ef176f3 = 0;
     }
 }
 
@@ -410,19 +409,18 @@ function function_619ee0f4() {
     self endon(#"hash_2ee12d1cd927db0c", #"disconnect");
     self.zmb_weapons_mastery_lmg = 0;
     for (;;) {
+        if (!self secondaryoffhandbuttonpressed()) {
+            wait(0.05);
+            continue;
+        }
+        self.zmb_weapons_mastery_lmg = 1;
         for (;;) {
+            wait(0.05);
             if (!self secondaryoffhandbuttonpressed()) {
-                wait(0.05);
-                continue;
-            }
-            self.zmb_weapons_mastery_lmg = 1;
-            for (;;) {
-                wait(0.05);
-                if (!self secondaryoffhandbuttonpressed()) {
-                    break;
-                }
+                break;
             }
         }
+        self.zmb_weapons_mastery_lmg = 0;
     }
 }
 
@@ -435,19 +433,18 @@ function function_261a46f4() {
     self endon(#"hash_5f9bde10649db4f9", #"disconnect");
     self.var_6e1ea617 = 0;
     for (;;) {
+        if (!self actionslotfourbuttonpressed()) {
+            wait(0.05);
+            continue;
+        }
+        self.var_6e1ea617 = 1;
         for (;;) {
+            wait(0.05);
             if (!self actionslotfourbuttonpressed()) {
-                wait(0.05);
-                continue;
-            }
-            self.var_6e1ea617 = 1;
-            for (;;) {
-                wait(0.05);
-                if (!self actionslotfourbuttonpressed()) {
-                    break;
-                }
+                break;
             }
         }
+        self.var_6e1ea617 = 0;
     }
 }
 
@@ -541,8 +538,8 @@ function function_6f7d5230(n_index) {
 // Size: 0x5dc
 function slot_cooldown(n_index) {
     self endon(#"disconnect");
-    var_ce5ed2e9 = self.bgb_pack[n_index];
-    self waittill("bgb_update_take_" + var_ce5ed2e9);
+    str_elixir = self.bgb_pack[n_index];
+    self waittill("bgb_update_take_" + str_elixir);
     if (!self bgb::get_bgb_available(self.bgb_pack[n_index])) {
         if (!isdefined(self.var_82971641) || self.var_82971641.size == 0 || !isdefined(self.var_2b74c8fe) || self.var_2b74c8fe.size == 0) {
             self function_b2308cd(n_index, 3);
@@ -558,7 +555,7 @@ function slot_cooldown(n_index) {
     if (zm_utility::is_standard()) {
         n_cooldown = 180;
     } else {
-        n_rarity = level.bgb[var_ce5ed2e9].rarity;
+        n_rarity = level.bgb[str_elixir].rarity;
         switch (n_rarity) {
         case 2:
             n_cooldown = 30;
@@ -603,8 +600,8 @@ function slot_cooldown(n_index) {
     if (self hasperk(#"specialty_mod_cooldown")) {
         n_cooldown = n_cooldown * 0.9;
     }
-    if (isdefined(level.bgb[var_ce5ed2e9].var_81f8ab0f)) {
-        n_cooldown = level.bgb[var_ce5ed2e9].var_81f8ab0f;
+    if (isdefined(level.bgb[str_elixir].var_81f8ab0f)) {
+        n_cooldown = level.bgb[str_elixir].var_81f8ab0f;
     }
     /#
         if (isdefined(level.var_7c3d4959) && level.var_7c3d4959) {
@@ -698,9 +695,8 @@ function private function_d84ec5ee(var_707fd977) {
 function function_b29fc421() {
     if (isdefined(level.var_7c3d4959) && level.var_7c3d4959) {
         return 10;
-    } else {
-        return 30;
     }
+    return 30;
 }
 
 // Namespace bgb_pack/zm_bgb_pack
@@ -719,9 +715,9 @@ function function_b18274fd() {
                 var_b8c2f693 = self function_be89decb();
                 self.bgb_pack[x] = var_b8c2f693;
                 self function_7b91e81c(x, level.bgb[var_b8c2f693].item_index);
-            } else {
-                self function_b2308cd(x, 3);
+                continue;
             }
+            self function_b2308cd(x, 3);
         }
     }
 }
@@ -824,7 +820,9 @@ function function_a1f97e79(var_707fd977, n_index, var_10b7b97a) {
                 self function_b2308cd(x, 2);
                 self function_1d5d39b0(x, 0);
             }
-        } else if ((self.var_2d8082a0[x] <= 0 || isdefined(var_10b7b97a) && var_10b7b97a) && self function_834d35e(x) == 2) {
+            continue;
+        }
+        if ((self.var_2d8082a0[x] <= 0 || isdefined(var_10b7b97a) && var_10b7b97a) && self function_834d35e(x) == 2) {
             self notify("end_slot_cooldown" + x);
             self function_1d5d39b0(x, 1);
             self function_b2308cd(x, 0);

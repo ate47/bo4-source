@@ -74,7 +74,7 @@ function zombie_coast_adjust_percent() {
             level.var_b0a3611a = level.var_b0a3611a - 0.05;
             if (level.var_b0a3611a <= 0.1) {
                 level.var_b0a3611a = 0.1;
-                break;
+                return;
             }
         }
     }
@@ -129,16 +129,16 @@ function zombie_entered_water() {
 function zombie_water_move_slow() {
     switch (self.zombie_move_speed) {
     case #"walk":
-        break;
+        return;
     case #"run":
         self thread zombie_utility::set_zombie_run_cycle("walk");
-        break;
+        return;
     case #"sprint":
         self thread zombie_utility::set_zombie_run_cycle("run");
-        break;
+        return;
     case #"super_sprint":
         self thread zombie_utility::set_zombie_run_cycle("sprint");
-        break;
+        return;
     }
 }
 
@@ -207,15 +207,15 @@ function zombie_water_move_normal() {
     switch (self.zombie_move_speed) {
     case #"walk":
         self thread zombie_utility::set_zombie_run_cycle("run");
-        break;
+        return;
     case #"run":
         self thread zombie_utility::set_zombie_run_cycle("sprint");
-        break;
+        return;
     case #"sprint":
         self thread zombie_utility::set_zombie_run_cycle("super_sprint");
-        break;
+        return;
     case #"super_sprint":
-        break;
+        return;
     }
 }
 
@@ -472,20 +472,18 @@ function function_bad6907c() {
         var_2e07b8ff = self getweaponslistprimaries();
         if (isdefined(var_2e07b8ff) && var_2e07b8ff.size > 0) {
             self switchtoweapon(var_2e07b8ff[0], 1);
-            var_5a7831c4 = 0;
-            while (!var_5a7831c4) {
+            for (var_5a7831c4 = 0; !var_5a7831c4; var_5a7831c4 = 1) {
                 waitframe(1);
                 w_current = self getcurrentweapon();
                 if (w_current == var_2e07b8ff[0]) {
-                    var_5a7831c4 = 1;
                 }
             }
         }
     }
     foreach (weapon in self getweaponslist(1)) {
-        self function_28602a03(weapon, 1, 0);
+        self lockweapon(weapon, 1, 0);
         if (weapon.dualwieldweapon != level.weaponnone) {
-            self function_28602a03(weapon.dualwieldweapon, 1, 0);
+            self lockweapon(weapon.dualwieldweapon, 1, 0);
         }
     }
     self.e_tag = util::spawn_model("tag_origin", self.origin, self.angles);
@@ -506,9 +504,9 @@ function function_bad6907c() {
         } else {
             self allowmelee(0);
         }
-    } else {
-        self allowmelee(1);
+        return;
     }
+    self allowmelee(1);
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -577,9 +575,8 @@ function function_872ec0b2(t_ice) {
         s_notify = t_ice waittill(#"damage");
         if (s_notify.attacker === self) {
             continue;
-        } else {
-            self notify(#"hash_53bfad7081c69dee");
         }
+        self notify(#"hash_53bfad7081c69dee");
     }
 }
 
@@ -594,20 +591,20 @@ function function_6cadbaff() {
         self playrumbleonentity("damage_heavy");
         self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
         self notify(#"hash_53bfad7081c69dee");
-    } else {
-        self waittill(#"weapon_melee", #"weapon_melee_power");
-        self playrumbleonentity("damage_light");
-        self clientfield::set_to_player("" + #"hash_67340426cd141891", 2);
-        self playsound(#"hash_1a3cd046cb0b437f");
-        self waittill(#"weapon_melee", #"weapon_melee_power");
-        self playrumbleonentity("damage_light");
-        self clientfield::set_to_player("" + #"hash_67340426cd141891", 1);
-        self playsound(#"hash_1a3cd146cb0b4532");
-        self waittill(#"weapon_melee", #"weapon_melee_power");
-        self playrumbleonentity("damage_heavy");
-        self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
-        self notify(#"hash_53bfad7081c69dee");
+        return;
     }
+    self waittill(#"weapon_melee", #"weapon_melee_power");
+    self playrumbleonentity("damage_light");
+    self clientfield::set_to_player("" + #"hash_67340426cd141891", 2);
+    self playsound(#"hash_1a3cd046cb0b437f");
+    self waittill(#"weapon_melee", #"weapon_melee_power");
+    self playrumbleonentity("damage_light");
+    self clientfield::set_to_player("" + #"hash_67340426cd141891", 1);
+    self playsound(#"hash_1a3cd146cb0b4532");
+    self waittill(#"weapon_melee", #"weapon_melee_power");
+    self playrumbleonentity("damage_heavy");
+    self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
+    self notify(#"hash_53bfad7081c69dee");
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -620,11 +617,11 @@ function function_8eb7b0f7() {
         wait(3);
         self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
         self notify(#"hash_53bfad7081c69dee");
-    } else {
-        wait(5);
-        self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
-        self notify(#"hash_53bfad7081c69dee");
+        return;
     }
+    wait(5);
+    self clientfield::set_to_player("" + #"hash_67340426cd141891", 0);
+    self notify(#"hash_53bfad7081c69dee");
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -769,9 +766,9 @@ function function_615d3be0() {
         self.e_tag waittill(#"movedone");
         if (isdefined(var_98698d94.target)) {
             var_98698d94 = struct::get(var_98698d94.target, "targetname");
-        } else {
-            return;
+            continue;
         }
+        return;
     }
 }
 

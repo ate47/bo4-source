@@ -63,7 +63,9 @@ function private function_7d5fa1ae(localclientnum, oldval, newval, bnewent, bini
 function private function_c6aa29ea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_cc8c05d5 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_elbow_amb"], self, "tag_elbow_weakspot_le");
-    } else if (isdefined(self.var_cc8c05d5)) {
+        return;
+    }
+    if (isdefined(self.var_cc8c05d5)) {
         stopfx(localclientnum, self.var_cc8c05d5);
         self.var_cc8c05d5 = undefined;
     }
@@ -76,7 +78,9 @@ function private function_c6aa29ea(localclientnum, oldval, newval, bnewent, bini
 function private function_caf74103(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_e844c6a2 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_elbow_amb"], self, "tag_elbow_weakspot_ri");
-    } else if (isdefined(self.var_e844c6a2)) {
+        return;
+    }
+    if (isdefined(self.var_e844c6a2)) {
         stopfx(localclientnum, self.var_e844c6a2);
         self.var_e844c6a2 = undefined;
     }
@@ -89,7 +93,9 @@ function private function_caf74103(localclientnum, oldval, newval, bnewent, bini
 function private function_bc64a2a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_81531422 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_sack_amb"], self, "tag_eggsack_weakspot_le_fx");
-    } else if (isdefined(self.var_81531422)) {
+        return;
+    }
+    if (isdefined(self.var_81531422)) {
         stopfx(localclientnum, self.var_81531422);
         self.var_81531422 = undefined;
     }
@@ -102,7 +108,9 @@ function private function_bc64a2a(localclientnum, oldval, newval, bnewent, binit
 function private function_c4fff539(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_40cb39ba = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_sack_amb"], self, "tag_eggsack_weakspot_ri_fx");
-    } else if (isdefined(self.var_40cb39ba)) {
+        return;
+    }
+    if (isdefined(self.var_40cb39ba)) {
         stopfx(localclientnum, self.var_40cb39ba);
         self.var_40cb39ba = undefined;
     }
@@ -115,7 +123,9 @@ function private function_c4fff539(localclientnum, oldval, newval, bnewent, bini
 function private function_de0a50df(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_2beadf7 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_jaw_amb"], self, "tag_jaw");
-    } else if (isdefined(self.var_2beadf7)) {
+        return;
+    }
+    if (isdefined(self.var_2beadf7)) {
         stopfx(localclientnum, self.var_2beadf7);
         self.var_2beadf7 = undefined;
     }
@@ -148,9 +158,9 @@ function private function_192c82f8(localclientnum, oldval, newval, bnewent, bini
     }
     if (newval) {
         self setanim(#"ai_t8_zm_zod_bltfthr_backsacs_add", 1, 0.1, 1);
-    } else {
-        self clearanim(#"ai_t8_zm_zod_bltfthr_backsacs_add", 0.2);
+        return;
     }
+    self clearanim(#"ai_t8_zm_zod_bltfthr_backsacs_add", 0.2);
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -160,7 +170,9 @@ function private function_192c82f8(localclientnum, oldval, newval, bnewent, bini
 function private function_e47c2324(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_f2668f6d = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_chaos_missle"], self, "tag_origin");
-    } else if (isdefined(self.var_f2668f6d)) {
+        return;
+    }
+    if (isdefined(self.var_f2668f6d)) {
         stopfx(localclientnum, self.var_f2668f6d);
     }
 }
@@ -220,10 +232,12 @@ function function_958ba8d1(localclientnum, pos, surface, notetrack, bone) {
     earthquake(localclientnum, n_scale, 0.1, pos, n_dist);
     if (n_scale <= 0.25 && n_scale > 0.2) {
         function_36e4ebd4(localclientnum, "anim_med");
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
-        function_36e4ebd4(localclientnum, "damage_light");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
+        function_36e4ebd4(localclientnum, "damage_light");
+        return;
+    }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 

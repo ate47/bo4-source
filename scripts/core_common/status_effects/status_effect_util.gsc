@@ -436,7 +436,7 @@ function function_2ba2756c(var_eeb47fb8) {
 }
 
 // Namespace status_effect/status_effect_util
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x320eb5bb, Offset: 0x1778
 // Size: 0xd0
 function function_7f14a56f(status_effect_type) {
@@ -514,13 +514,13 @@ function private update_duration(var_756fda07, var_b0144580, var_ab5b905e, appli
             }
             self.endtime = time + self.duration;
         }
-    } else {
-        self.duration = var_7a1fa72a;
-        if (maxduration && self.duration > maxduration) {
-            self.duration = maxduration;
-        }
-        self.endtime = time + self.duration;
+        return;
     }
+    self.duration = var_7a1fa72a;
+    if (maxduration && self.duration > maxduration) {
+        self.duration = maxduration;
+    }
+    self.endtime = time + self.duration;
 }
 
 // Namespace status_effect/status_effect_util
@@ -565,13 +565,13 @@ function private function_57f33b96(var_756fda07, var_b0144580, var_ab5b905e, app
             }
             self.endtime = time + var_7a1fa72a;
         }
-    } else {
-        self.duration = var_7a1fa72a;
-        if (maxduration && self.duration > maxduration) {
-            self.duration = maxduration;
-        }
-        self.endtime = time + var_7a1fa72a;
+        return;
     }
+    self.duration = var_7a1fa72a;
+    if (maxduration && self.duration > maxduration) {
+        self.duration = maxduration;
+    }
+    self.endtime = time + var_7a1fa72a;
 }
 
 // Namespace status_effect/status_effect_util

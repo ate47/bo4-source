@@ -18,7 +18,7 @@
 #namespace spawn;
 
 // Namespace spawn/spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd2122efe, Offset: 0x1f8
 // Size: 0x1dc
 function function_f468d9a5(spawnpoint) {
@@ -36,7 +36,7 @@ function function_f468d9a5(spawnpoint) {
 }
 
 // Namespace spawn/spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x940329bb, Offset: 0x3e0
 // Size: 0x438
 function function_e93291ff() {
@@ -87,7 +87,7 @@ function function_e93291ff() {
 }
 
 // Namespace spawn/spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12d33907, Offset: 0x820
 // Size: 0x90
 function function_cb5864fc() {
@@ -99,7 +99,7 @@ function function_cb5864fc() {
 }
 
 // Namespace spawn/spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb366675e, Offset: 0x8b8
 // Size: 0x4c8
 function override_spawn(ispredictedspawn) {
@@ -143,7 +143,8 @@ function override_spawn(ispredictedspawn) {
                 dest.spawns[spawnindex].spawntime = spawntime;
                 spawn = dest.spawns[spawnindex];
                 break;
-            } else if (dest.spawns[spawnindex].spawntime < var_e34bb789) {
+            }
+            if (dest.spawns[spawnindex].spawntime < var_e34bb789) {
                 var_f5bb80c2 = spawnindex;
                 var_e34bb789 = dest.spawns[spawnindex].spawntime;
             }
@@ -170,7 +171,7 @@ function override_spawn(ispredictedspawn) {
 }
 
 // Namespace spawn/spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b997133, Offset: 0xd88
 // Size: 0xc4
 function function_bb9099b9() {
@@ -181,14 +182,14 @@ function function_bb9099b9() {
     if (game.state == "pregame") {
         if (isdefined(level.var_fd167bf6)) {
             self luinotifyevent(#"create_prematch_timer", 2, level.var_fd167bf6, level.var_5654073f);
-        } else {
-            self luinotifyevent(#"hash_2a9f7ecda8e925f6", 0);
+            return;
         }
+        self luinotifyevent(#"hash_2a9f7ecda8e925f6", 0);
     }
 }
 
 // Namespace spawn/spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xffd58764, Offset: 0xe58
 // Size: 0x174
 function on_spawn_player(predictedspawn) {
@@ -218,7 +219,7 @@ function on_spawn_player(predictedspawn) {
 }
 
 // Namespace spawn/spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b163d49, Offset: 0xfd8
 // Size: 0x13c
 function function_ea62f5af() {
@@ -234,7 +235,7 @@ function function_ea62f5af() {
 }
 
 // Namespace spawn/spawn
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86c7f388, Offset: 0x1120
 // Size: 0x104
 function function_8cef1872() {
@@ -251,7 +252,7 @@ function function_8cef1872() {
 }
 
 // Namespace spawn/spawn
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9331f3b, Offset: 0x1230
 // Size: 0x564
 function private function_c263fd97() {
@@ -323,14 +324,14 @@ function private function_c263fd97() {
     if (game.state == "pregame") {
         if (isdefined(level.var_fd167bf6)) {
             self luinotifyevent(#"create_prematch_timer", 2, level.var_fd167bf6, level.var_5654073f);
-        } else {
-            self luinotifyevent(#"hash_2a9f7ecda8e925f6", 0);
+            return;
         }
+        self luinotifyevent(#"hash_2a9f7ecda8e925f6", 0);
     }
 }
 
 // Namespace spawn/spawn
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe04f7d11, Offset: 0x17a0
 // Size: 0xc4
 function private function_3b1d0553(dest) {
@@ -342,7 +343,7 @@ function private function_3b1d0553(dest) {
 }
 
 // Namespace spawn/spawn
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x75cb4d3b, Offset: 0x1870
 // Size: 0xae
 function private function_178abfd(struct) {
@@ -358,7 +359,7 @@ function private function_178abfd(struct) {
 }
 
 // Namespace spawn/spawn
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9cd465a0, Offset: 0x1928
 // Size: 0x64
 function function_1390f875(num_lives) {

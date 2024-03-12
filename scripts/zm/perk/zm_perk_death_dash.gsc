@@ -129,48 +129,48 @@ function private function_607b1eb0() {
         if (self.var_d675d730.var_d566ea4 === 1 || !function_69153101()) {
             self function_3d5b29a6();
             waitframe(1);
-        } else {
-            if (self.var_d675d730.var_af84e9df) {
-                if (self.var_d675d730.var_ec50ac8e < 1) {
-                    var_77aee2d6 = (gettime() - self.var_d675d730.var_40cb1997) / 1000;
-                    self.var_d675d730.var_ec50ac8e = math::clamp(var_77aee2d6 / 3, 0, 1);
-                    if (self.var_d675d730.var_ec50ac8e >= 1) {
-                        self clientfield::set("death_dash_charged", 1);
-                        self clientfield::set_to_player("death_dash_charging_postfx", 1);
-                    }
-                }
-                if (self hasperk(#"specialty_mod_death_dash") && self.var_d675d730.var_f658b938 < 1) {
-                    var_77aee2d6 = (gettime() - self.var_d675d730.var_40cb1997) / 1000;
-                    self.var_d675d730.var_f658b938 = math::clamp(var_77aee2d6 / 6, 0, 1);
-                    if (self.var_d675d730.var_f658b938 >= 1) {
-                        self clientfield::set("death_dash_charged_mod", 1);
-                        self clientfield::set_to_player("death_dash_charged_mod_postfx", 1);
-                    }
-                }
-            }
-            if (!self.var_d675d730.var_af84e9df && self getstance() === "crouch" && !self zm_utility::is_jumping() && !self stancebuttonpressed()) {
-                self.var_d675d730.var_af84e9df = 1;
-                self.var_d675d730.var_40cb1997 = gettime();
-                self.var_d675d730.var_ec50ac8e = 0;
-                self.var_d675d730.var_f658b938 = 0;
-                self clientfield::set("death_dash_charging", 1);
-                self clientfield::set_to_player("death_dash_charging_postfx", 1);
-            }
-            if (self.var_d675d730.var_af84e9df && self getstance() != "crouch") {
-                self.var_d675d730.var_af84e9df = 0;
-                self function_3d5b29a6();
-            }
-            if (self.var_d675d730.var_af84e9df && self stancebuttonpressed()) {
-                self.var_d675d730.var_af84e9df = self function_f3d1b75c();
-                if (self.var_d675d730.var_af84e9df && self.var_d675d730.var_ec50ac8e > 0.2) {
-                    self notify(#"hash_1790edc896f02840");
-                } else {
-                    self.var_d675d730.var_af84e9df = 0;
-                }
-                self function_3d5b29a6();
-            }
-            waitframe(1);
+            continue;
         }
+        if (self.var_d675d730.var_af84e9df) {
+            if (self.var_d675d730.var_ec50ac8e < 1) {
+                var_77aee2d6 = (gettime() - self.var_d675d730.var_40cb1997) / 1000;
+                self.var_d675d730.var_ec50ac8e = math::clamp(var_77aee2d6 / 3, 0, 1);
+                if (self.var_d675d730.var_ec50ac8e >= 1) {
+                    self clientfield::set("death_dash_charged", 1);
+                    self clientfield::set_to_player("death_dash_charging_postfx", 1);
+                }
+            }
+            if (self hasperk(#"specialty_mod_death_dash") && self.var_d675d730.var_f658b938 < 1) {
+                var_77aee2d6 = (gettime() - self.var_d675d730.var_40cb1997) / 1000;
+                self.var_d675d730.var_f658b938 = math::clamp(var_77aee2d6 / 6, 0, 1);
+                if (self.var_d675d730.var_f658b938 >= 1) {
+                    self clientfield::set("death_dash_charged_mod", 1);
+                    self clientfield::set_to_player("death_dash_charged_mod_postfx", 1);
+                }
+            }
+        }
+        if (!self.var_d675d730.var_af84e9df && self getstance() === "crouch" && !self zm_utility::is_jumping() && !self stancebuttonpressed()) {
+            self.var_d675d730.var_af84e9df = 1;
+            self.var_d675d730.var_40cb1997 = gettime();
+            self.var_d675d730.var_ec50ac8e = 0;
+            self.var_d675d730.var_f658b938 = 0;
+            self clientfield::set("death_dash_charging", 1);
+            self clientfield::set_to_player("death_dash_charging_postfx", 1);
+        }
+        if (self.var_d675d730.var_af84e9df && self getstance() != "crouch") {
+            self.var_d675d730.var_af84e9df = 0;
+            self function_3d5b29a6();
+        }
+        if (self.var_d675d730.var_af84e9df && self stancebuttonpressed()) {
+            self.var_d675d730.var_af84e9df = self function_f3d1b75c();
+            if (self.var_d675d730.var_af84e9df && self.var_d675d730.var_ec50ac8e > 0.2) {
+                self notify(#"hash_1790edc896f02840");
+            } else {
+                self.var_d675d730.var_af84e9df = 0;
+            }
+            self function_3d5b29a6();
+        }
+        waitframe(1);
     }
 }
 

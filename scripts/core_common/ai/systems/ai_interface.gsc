@@ -20,13 +20,13 @@ function private _checkvalue(archetype, attributename, value) {
         attribute = level.__ai_interface[archetype][attributename];
         switch (attribute[#"type"]) {
         case #"_interface_entity":
-            break;
+            return;
         case #"_interface_match":
             possiblevalues = attribute[#"values"];
             /#
                 assert(!isarray(possiblevalues) || isinarray(possiblevalues, value), "<unknown string>" + value + "<unknown string>" + attributename + "<unknown string>");
             #/
-            break;
+            return;
         case #"_interface_numeric":
             maxvalue = attribute[#"max_value"];
             minvalue = attribute[#"min_value"];
@@ -36,19 +36,19 @@ function private _checkvalue(archetype, attributename, value) {
             /#
                 assert(!isdefined(maxvalue) && !isdefined(minvalue) || value <= maxvalue && value >= minvalue, "<unknown string>" + value + "<unknown string>" + minvalue + "<unknown string>" + maxvalue + "<unknown string>");
             #/
-            break;
+            return;
         case #"_interface_vector":
             if (isdefined(value)) {
                 /#
                     assert(isvec(value), "<unknown string>" + attributename + "<unknown string>" + value + "<unknown string>");
                 #/
             }
-            break;
+            return;
         default:
             /#
                 assert("<unknown string>" + attribute[#"type"] + "<unknown string>" + attributename + "<unknown string>");
             #/
-            break;
+            return;
         }
     #/
 }
@@ -204,7 +204,7 @@ function registermatchedinterface(archetype, attribute, defaultvalue, possibleva
 }
 
 // Namespace ai/ai_interface
-// Params 6, eflags: 0x0
+// Params 6, eflags: 0x1 linked
 // Checksum 0xc0361b74, Offset: 0xd68
 // Size: 0x33c
 function registernumericinterface(archetype, attribute, defaultvalue, minimum, maximum, callbackfunction) {

@@ -116,9 +116,9 @@ function treasure_chest_init(start_chest_name) {
         level.chests[i] get_chest_pieces();
         if (isdefined(level.chests[i].zombie_cost)) {
             level.chests[i].old_cost = level.chests[i].zombie_cost;
-        } else {
-            level.chests[i].old_cost = 950;
+            continue;
         }
+        level.chests[i].old_cost = 950;
     }
     if (!level.enable_magic || zm_custom::function_901b751c(#"zmmysteryboxstate") == 0) {
         foreach (chest in level.chests) {
@@ -172,13 +172,15 @@ function init_starting_chest_location(start_chest_name) {
                     level.chests[i] thread function_2db086bf();
                     start_chest_found = 1;
                 }
-            } else if (start_chest_found || !isdefined(level.chests[i].script_noteworthy) || !issubstr(level.chests[i].script_noteworthy, start_chest_name)) {
-                level.chests[i] hide_chest();
-            } else {
-                level.chest_index = i;
-                level.chests[i] thread function_2db086bf();
-                start_chest_found = 1;
+                continue;
             }
+            if (start_chest_found || !isdefined(level.chests[i].script_noteworthy) || !issubstr(level.chests[i].script_noteworthy, start_chest_name)) {
+                level.chests[i] hide_chest();
+                continue;
+            }
+            level.chest_index = i;
+            level.chests[i] thread function_2db086bf();
+            start_chest_found = 1;
         }
     }
     if (!isdefined(level.pandora_show_func)) {
@@ -508,9 +510,9 @@ function default_pandora_fx_func() {
     if (isdefined(self) && isdefined(self.pandora_light)) {
         if (self.zbarrier.script_string === "t8_magicbox") {
             playfxontag(level._effect[#"hash_2ff87d61167ea531"], self.pandora_light, "tag_origin");
-        } else {
-            playfxontag(level._effect[#"lght_marker"], self.pandora_light, "tag_origin");
+            return;
         }
+        playfxontag(level._effect[#"lght_marker"], self.pandora_light, "tag_origin");
     }
 }
 
@@ -527,9 +529,9 @@ function default_pandora_show_func(anchor, anchortarget, pieces) {
     }
     if (self.zbarrier.script_string === "t8_magicbox") {
         playfx(level._effect[#"hash_4048cb4967032c4a"], self.pandora_light.origin);
-    } else {
-        playfx(level._effect[#"lght_marker_flare"], self.pandora_light.origin);
+        return;
     }
+    playfx(level._effect[#"lght_marker_flare"], self.pandora_light.origin);
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -657,9 +659,9 @@ function treasure_chest_think() {
         }
     }
     if (zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
-        if (level.registerupdateyawevenwhilestationary_activate !== level.round_number) {
+        if (level.var_fc02e2df !== level.round_number) {
             level.var_40f4f72d = 1;
-            level.registerupdateyawevenwhilestationary_activate = level.round_number;
+            level.var_fc02e2df = level.round_number;
         } else {
             level.var_40f4f72d = level.var_40f4f72d + 1;
         }
@@ -824,10 +826,8 @@ function function_e4dcca48() {
     if (isdefined(var_63f52acb)) {
         var_63f52acb endon(#"death");
     }
-    var_1e99deea = undefined;
-    while (!isdefined(var_1e99deea)) {
+    for (var_1e99deea = undefined; !isdefined(var_1e99deea); var_1e99deea = zm_unitrigger::function_f1794fbf(self.unitrigger_stub, var_369ce419)) {
         util::wait_network_frame();
-        var_1e99deea = zm_unitrigger::function_f1794fbf(self.unitrigger_stub, var_369ce419);
     }
     var_1e99deea endon(#"kill_trigger");
     while (1) {
@@ -844,7 +844,7 @@ function function_e4dcca48() {
                 var_63f52acb clientfield::set("powerup_fx", 1);
             }
             var_369ce419 thread zm_audio::create_and_play_dialog(#"magicbox", #"share");
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -1033,9 +1033,9 @@ function fire_sale_fix() {
         for (i = 0; i < level.chests.size; i++) {
             if (i == level.chest_index) {
                 level.chests[i].was_temp = undefined;
-            } else {
-                level.chests[i].was_temp = 1;
+                continue;
             }
+            level.chests[i].was_temp = 1;
         }
         while (isdefined(self._box_open) && self._box_open) {
             wait(0.1);
@@ -1242,8 +1242,11 @@ function function_4aa1f177(player) {
         foreach (weapon in a_weapons) {
             if (var_d07a7ff9) {
                 var_7ed75e97 = level.zombie_weapons[weapon].tier;
-                jumpiftrue(isinarray(var_1b439d59, var_7ed75e97)) LOC_00000458;
-            } else if (function_db355791(player, weapon)) {
+                if (!isinarray(var_1b439d59, var_7ed75e97)) {
+                    continue;
+                }
+            }
+            if (function_db355791(player, weapon)) {
                 return weapon;
             }
         }
@@ -1306,9 +1309,9 @@ function decide_hide_show_hint(endon_notify, second_endon_notify, onlyplayer, ca
             for (i = 0; i < players.size; i++) {
                 if (players[i] can_buy_weapon(var_5429ee1f) && (!isdefined(can_buy_weapon_extra_check_func) || players[i] [[ can_buy_weapon_extra_check_func ]](self.weapon)) && !players[i] bgb::is_enabled(#"zm_bgb_disorderly_combat")) {
                     self setinvisibletoplayer(players[i], 0);
-                } else {
-                    self setinvisibletoplayer(players[i], 1);
+                    continue;
                 }
+                self setinvisibletoplayer(players[i], 1);
             }
         }
         if (use_choke) {
@@ -1533,11 +1536,17 @@ function treasure_chest_weapon_spawn(chest, player, respin) {
     for (i = 0; i < var_943077fe; i++) {
         if (i < var_943077fe * 0.5) {
             waitframe(1);
-        } else if (i < var_943077fe * 0.75) {
+            continue;
+        }
+        if (i < var_943077fe * 0.75) {
             wait(0.1);
-        } else if (i < var_943077fe * 0.875) {
+            continue;
+        }
+        if (i < var_943077fe * 0.875) {
             wait(0.2);
-        } else if (i < var_943077fe * 0.95) {
+            continue;
+        }
+        if (i < var_943077fe * 0.95) {
             wait(0.3);
         }
     }
@@ -1960,10 +1969,8 @@ function function_4873c058() {
             if (!isdefined(chest.zone_name)) {
                 var_bbab3105 = vectornormalize(anglestoright(chest.zbarrier.angles)) * -64;
                 chest.zone_name = zm_zonemgr::get_zone_from_position(chest.zbarrier.origin + var_bbab3105, 1);
-                n_z_offset = 8;
-                while (!isdefined(chest.zone_name) && n_z_offset <= 64) {
+                for (n_z_offset = 8; !isdefined(chest.zone_name) && n_z_offset <= 64; n_z_offset = n_z_offset + 8) {
                     chest.zone_name = zm_zonemgr::get_zone_from_position(chest.zbarrier.origin + var_bbab3105 + (0, 0, n_z_offset), 1);
-                    n_z_offset = n_z_offset + 8;
                 }
                 if (!isdefined(chest.zone_name)) {
                     /#
@@ -2041,7 +2048,7 @@ function function_50b92d6a(n_timeout) {
     do {
         s_notify = undefined;
         s_notify = level waittill(#"hash_e39eca74fa250b4");
-    } while(s_notify.s_magic_box.zbarrier == self || s_notify.s_magic_box != level.chests[level.chest_index]);
+    } while (s_notify.s_magic_box.zbarrier == self || s_notify.s_magic_box != level.chests[level.chest_index]);
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -2217,38 +2224,38 @@ function process_magic_box_zbarrier_state(state) {
         self showzbarrierpiece(0);
         self thread function_15cd8d85();
         self.state = "away";
-        break;
+        return;
     case #"arriving":
         self showzbarrierpiece(1);
         self thread function_24ce1c91();
         self.state = "arriving";
-        break;
+        return;
     case #"initial":
         self showzbarrierpiece(1);
         self thread function_f6a827d1();
         thread zm_unitrigger::register_static_unitrigger(self.owner.unitrigger_stub, &magicbox_unitrigger_think);
         self.state = "initial";
-        break;
+        return;
     case #"open":
         self showzbarrierpiece(2);
         self thread function_12804472();
         self.state = "open";
-        break;
+        return;
     case #"close":
         self showzbarrierpiece(2);
         self thread function_cd5d65b0();
         self.state = "close";
-        break;
+        return;
     case #"leaving":
         self showzbarrierpiece(1);
         self thread function_65b1adcb();
         self.state = "leaving";
-        break;
+        return;
     default:
         if (isdefined(level.custom_magicbox_state_handler)) {
             self [[ level.custom_magicbox_state_handler ]](state);
         }
-        break;
+        return;
     }
 }
 
@@ -2269,7 +2276,7 @@ function function_35c66b27(str_state) {
             #/
         }
         self.var_8cab0622 scene::play();
-        break;
+        return;
     case #"arriving":
         if (!isdefined(self.var_8cab0622)) {
             a_str_tokens = strtok2(self.script_noteworthy, "zbarrier");
@@ -2282,7 +2289,7 @@ function function_35c66b27(str_state) {
         self.var_8cab0622 scene::stop(1);
     default:
         self process_magic_box_zbarrier_state(str_state);
-        break;
+        return;
     }
 }
 

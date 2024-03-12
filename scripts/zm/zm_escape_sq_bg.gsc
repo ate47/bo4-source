@@ -138,14 +138,14 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
         }
         if (!(isdefined(var_a2a0a44e.b_collected) && var_a2a0a44e.b_collected) && distancesquared(var_a2a0a44e.origin, e_grenade.origin) < 100 * 100) {
             var_a2a0a44e.b_collected = 1;
-            var_6e6ec518 = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
-            var_6e6ec518.n_grenade_charge_power = n_grenade_charge_power;
+            mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
+            mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
             var_a2a0a44e notify(#"caught_by_tomahawk");
             var_a2a0a44e.origin = e_grenade.origin;
-            var_a2a0a44e linkto(var_6e6ec518);
+            var_a2a0a44e linkto(mdl_tomahawk);
             var_a2a0a44e clientfield::set("" + #"hash_3c8cd47650fbb324", 2);
-            self thread zm_weap_tomahawk::tomahawk_return_player(var_6e6ec518, undefined, 800);
-            self thread give_player_macguffin_upon_receipt(var_6e6ec518, var_a2a0a44e);
+            self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
+            self thread give_player_macguffin_upon_receipt(mdl_tomahawk, var_a2a0a44e);
             return 1;
         }
     }
@@ -156,9 +156,9 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa92ad890, Offset: 0xa80
 // Size: 0xc8
-function give_player_macguffin_upon_receipt(var_6e6ec518, var_a2a0a44e) {
+function give_player_macguffin_upon_receipt(mdl_tomahawk, var_a2a0a44e) {
     v_org = self.origin;
-    while (isdefined(var_6e6ec518)) {
+    while (isdefined(mdl_tomahawk)) {
         waitframe(1);
     }
     var_a2a0a44e notify(#"sq_bg_macguffin_received_by_player");
@@ -183,7 +183,8 @@ function check_sq_bg_progress() {
         if (n_macguffins_collected >= n_macguffins_total) {
             level notify(#"all_macguffins_acquired");
             break;
-        } else if (isplayer(e_player)) {
+        }
+        if (isplayer(e_player)) {
             e_player thread play_sq_bg_collected_vo();
         }
     }
@@ -210,9 +211,9 @@ function play_sq_bg_collected_vo() {
 function give_sq_bg_reward(var_dd7441ab) {
     t_near = spawn("trigger_radius", var_dd7441ab.origin, 0, 196, 64);
     t_near thread sq_bg_spawn_rumble();
-    var_4d0b3b87 = zm_utility::spawn_weapon_model(getweapon(#"ww_blundergat_t8"), undefined, var_dd7441ab.origin + vectorscale((0, 0, 1), 6), var_dd7441ab.angles);
-    var_4d0b3b87 clientfield::set("" + #"bg_spawn_fx", 1);
-    var_4d0b3b87 thread scene::play(#"p8_fxanim_zm_esc_blundergat_fireplace_hover_bundle", var_4d0b3b87);
+    mdl_reward = zm_utility::spawn_weapon_model(getweapon(#"ww_blundergat_t8"), undefined, var_dd7441ab.origin + vectorscale((0, 0, 1), 6), var_dd7441ab.angles);
+    mdl_reward clientfield::set("" + #"bg_spawn_fx", 1);
+    mdl_reward thread scene::play(#"p8_fxanim_zm_esc_blundergat_fireplace_hover_bundle", mdl_reward);
     while (isdefined(self)) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
@@ -230,16 +231,15 @@ function give_sq_bg_reward(var_dd7441ab) {
                     self setvisibletoplayer(e_active_player);
                     if (function_8b1a219a()) {
                         self sethintstringforplayer(e_player, #"hash_13148440ddb20104");
-                    } else {
-                        self sethintstringforplayer(e_player, #"hash_3d510922bc950f08");
+                        continue;
                     }
+                    self sethintstringforplayer(e_player, #"hash_3d510922bc950f08");
                 }
                 continue;
-            } else {
-                var_4d0b3b87 thread function_d61275a7();
-                e_player take_old_weapon_and_give_reward();
-                self delete();
             }
+            mdl_reward thread function_d61275a7();
+            e_player take_old_weapon_and_give_reward();
+            self delete();
         }
     }
     t_near delete();

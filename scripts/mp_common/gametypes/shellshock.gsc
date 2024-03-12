@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace shellshock/shellshock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8b696526, Offset: 0x150
 // Size: 0x3e
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace shellshock/shellshock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x198
 // Size: 0x4
 function init() {
@@ -33,7 +33,7 @@ function init() {
 }
 
 // Namespace shellshock/shellshock
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdfafde90, Offset: 0x1a8
 // Size: 0x1b4
 function on_damage(cause, damage, weapon) {

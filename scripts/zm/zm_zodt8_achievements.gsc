@@ -51,7 +51,9 @@ function on_ai_killed(params) {
             if (isdefined(params.einflictor) && params.einflictor.archetype === #"catalyst" && isdefined(params.einflictor.var_85387c5b) && params.einflictor.var_85387c5b) {
                 params.eattacker thread function_4060b2c6();
             }
-        } else if (self.archetype == #"stoker") {
+            return;
+        }
+        if (self.archetype == #"stoker") {
             if (isdefined(self.var_6f3ba226) && self.var_6f3ba226) {
                 params.eattacker thread function_79182658();
             }

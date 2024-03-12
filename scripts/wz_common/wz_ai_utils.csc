@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf7cf87, Offset: 0x140
 // Size: 0x31e
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x27761fbd, Offset: 0x468
 // Size: 0x12c
 function function_46c950(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -51,7 +51,7 @@ function function_46c950(localclientnum, oldval, newval, bnewent, binitialsnap, 
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc1e63882, Offset: 0x5a0
 // Size: 0x3c
 function function_645efd58() {
@@ -62,7 +62,7 @@ function function_645efd58() {
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xc49e8812, Offset: 0x5e8
 // Size: 0x246
 function function_5c69ac3b(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -81,14 +81,16 @@ function function_5c69ac3b(localclientnum, oldval, newval, bnewent, binitialsnap
             self.var_26a0bda1 = playfx(localclientnum, level._effect[#"hash_7fe086085cbbacac"], self.origin);
         }
         self playsound(localclientnum, #"hash_7d0432d3e280bce1", self.origin);
-    } else if (isdefined(self.var_26a0bda1)) {
+        return;
+    }
+    if (isdefined(self.var_26a0bda1)) {
         stopfx(localclientnum, self.var_26a0bda1);
         self.var_26a0bda1 = undefined;
     }
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdb2edd47, Offset: 0x838
 // Size: 0x1ca
 function function_7e5339f3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -96,22 +98,28 @@ function function_7e5339f3(localclientnum, oldval, newval, bnewent, binitialsnap
         if (newval == 1) {
             util::playfxontag(localclientnum, level._effect[#"hash_4fbab83578c5a7e7"], self, "tag_origin");
             self playsound(localclientnum, level.var_86e1b0cc, self.origin);
-        } else if (newval == 2) {
+            return;
+        }
+        if (newval == 2) {
             self.var_8ddb3e81 = util::playfxontag(localclientnum, level._effect[#"hash_19f4dd97cbb87594"], self, "tag_origin");
             self playsound(localclientnum, level.var_96add4a1, self.origin);
-        } else if (newval == 3) {
+            return;
+        }
+        if (newval == 3) {
             if (isdefined(self.var_8ddb3e81)) {
                 stopfx(localclientnum, self.var_8ddb3e81);
                 self.var_8ddb3e81 = undefined;
             }
-        } else if (newval == 4) {
+            return;
+        }
+        if (newval == 4) {
             self.var_8ddb3e81 = util::playfxontag(localclientnum, level._effect[#"hash_19f4dd97cbb87594"], self, "tag_origin");
         }
     }
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x53871b8b, Offset: 0xa10
 // Size: 0x17e
 function function_88a28ed1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -121,16 +129,16 @@ function function_88a28ed1(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"zmb_sq_souls_release");
             self.var_2a145797 = self playloopsound(#"zmb_sq_souls_lp");
         }
-    } else {
-        if (isdefined(self.var_39557fca)) {
-            stopfx(localclientnum, self.var_39557fca);
-            self.var_39557fca = undefined;
-        }
-        if (isdefined(self.var_2a145797)) {
-            self playsound(localclientnum, #"zmb_sq_souls_impact");
-            self stoploopsound(self.var_2a145797);
-            self.var_2a145797 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_39557fca)) {
+        stopfx(localclientnum, self.var_39557fca);
+        self.var_39557fca = undefined;
+    }
+    if (isdefined(self.var_2a145797)) {
+        self playsound(localclientnum, #"zmb_sq_souls_impact");
+        self stoploopsound(self.var_2a145797);
+        self.var_2a145797 = undefined;
     }
 }
 

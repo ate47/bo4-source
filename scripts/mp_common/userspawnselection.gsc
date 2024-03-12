@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x141db61d, Offset: 0x210
 // Size: 0x1fc
 function __init__() {
@@ -50,7 +50,7 @@ function __init__() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5d2825a3, Offset: 0x418
 // Size: 0x94
 function function_127864f2(player) {
@@ -74,7 +74,7 @@ function function_93076e1d() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3de5d77e, Offset: 0x508
 // Size: 0x3e
 function function_a316ca82(player) {
@@ -86,7 +86,7 @@ function function_a316ca82(player) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaadbb2d3, Offset: 0x550
 // Size: 0x76
 function onplayerspawned() {
@@ -100,7 +100,7 @@ function onplayerspawned() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1bc00038, Offset: 0x5d0
 // Size: 0x62
 function registeravailablespawnbeacon(spawnbeaconid, spawnbeacon) {
@@ -111,7 +111,7 @@ function registeravailablespawnbeacon(spawnbeaconid, spawnbeacon) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x380c41f5, Offset: 0x640
 // Size: 0xac
 function removespawnbeacon(spawnbeaconid) {
@@ -126,7 +126,7 @@ function removespawnbeacon(spawnbeaconid) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ec1bbf6, Offset: 0x6f8
 // Size: 0xe
 function isspawnselectenabled() {
@@ -184,7 +184,7 @@ function getspawngroupwithscriptnoteworthy(script_noteworthy) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf117be9e, Offset: 0x970
 // Size: 0x64
 function changeusability(isusable) {
@@ -194,7 +194,7 @@ function changeusability(isusable) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d65d456, Offset: 0x9e0
 // Size: 0x54
 function changevisibility(isvisible) {
@@ -214,7 +214,7 @@ function changeteam(teamname) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ccab1e1, Offset: 0xaf0
 // Size: 0xa8
 function setspawngroupsenabled() {
@@ -236,7 +236,7 @@ function canplayerusespawngroup(spawngroupindex) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x35e4a40f, Offset: 0xbb8
 // Size: 0x2a
 function setspawngroupforplayer(selectedspawngroupindex) {
@@ -244,7 +244,7 @@ function setspawngroupforplayer(selectedspawngroupindex) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x956ed024, Offset: 0xbf0
 // Size: 0x180
 function function_b9573d36() {
@@ -282,7 +282,7 @@ function fillspawnlists() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc231ab9, Offset: 0xe30
 // Size: 0x70
 function clearcacheforplayer() {
@@ -295,7 +295,7 @@ function clearcacheforplayer() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76cc352f, Offset: 0xea8
 // Size: 0x16
 function clearcacheforallplayers() {
@@ -321,7 +321,7 @@ function getlastchosenspawngroupforplayer() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc11fc3db, Offset: 0xf70
 // Size: 0x34
 function onroundchange() {
@@ -340,7 +340,7 @@ function function_5cd68e00() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9e291558, Offset: 0xff0
 // Size: 0x12
 function supressspawnselectionmenuforallplayers() {
@@ -348,7 +348,7 @@ function supressspawnselectionmenuforallplayers() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77029ba6, Offset: 0x1010
 // Size: 0x164
 function shouldshowspawnselectionmenu() {
@@ -361,7 +361,7 @@ function shouldshowspawnselectionmenu() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3cc78e38, Offset: 0x1180
 // Size: 0x1e
 function activatespawnselectionmenu() {
@@ -369,7 +369,7 @@ function activatespawnselectionmenu() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ae89e93, Offset: 0x11a8
 // Size: 0x80
 function openspawnselect() {
@@ -383,7 +383,7 @@ function openspawnselect() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa421c4f7, Offset: 0x1230
 // Size: 0x38
 function closespawnselect() {
@@ -392,7 +392,7 @@ function closespawnselect() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xca49b1a9, Offset: 0x1270
 // Size: 0x28
 function function_fed7687f() {
@@ -400,7 +400,7 @@ function function_fed7687f() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeff11d6e, Offset: 0x12a0
 // Size: 0x90
 function closespawnselectionmenuforallplayers() {
@@ -411,7 +411,7 @@ function closespawnselectionmenuforallplayers() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76895681, Offset: 0x1338
 // Size: 0x54
 function function_b55c5868() {
@@ -421,7 +421,7 @@ function function_b55c5868() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66e309ee, Offset: 0x1398
 // Size: 0x184
 function waitforspawnselection() {
@@ -456,7 +456,7 @@ function waitforspawnselection() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd68e5371, Offset: 0x1528
 // Size: 0x84
 function watchforselectiontimeout() {
@@ -472,7 +472,7 @@ function watchforselectiontimeout() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb7413c09, Offset: 0x15b8
 // Size: 0x1c
 function private on_player_disconnect() {
@@ -480,7 +480,7 @@ function private on_player_disconnect() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf5963afe, Offset: 0x15e0
 // Size: 0x206
 function filter_spawnpoints(spawnpoints) {
@@ -518,7 +518,7 @@ function filter_spawnpoints(spawnpoints) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x576bf9a, Offset: 0x17f0
 // Size: 0x5a2
 function private function_259770ba(e_player) {
@@ -582,7 +582,7 @@ function private function_259770ba(e_player) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe4e28a86, Offset: 0x1da0
 // Size: 0x20
 function private getclientfieldprefix(id) {
@@ -590,7 +590,7 @@ function private getclientfieldprefix(id) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5731836d, Offset: 0x1dc8
 // Size: 0x17c
 function private registerclientfields() {
@@ -606,7 +606,7 @@ function private registerclientfields() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc9a29857, Offset: 0x1f50
 // Size: 0x2c
 function waitandenablespawngroups() {
@@ -623,7 +623,7 @@ function function_4f78b01d(shoulddisable) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9190a893, Offset: 0x1fc0
 // Size: 0x12e
 function on_start_gametype() {
@@ -646,7 +646,7 @@ function on_start_gametype() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x44168803, Offset: 0x20f8
 // Size: 0x200
 function private setupspawnlistforspawngroup(spawngroupkey, spawnlistname, team) {
@@ -681,7 +681,7 @@ function private setupspawnlistforspawngroup(spawngroupkey, spawnlistname, team)
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x5e33657a, Offset: 0x2300
 // Size: 0x176
 function private setupspawngroup(spawngroup) {
@@ -700,7 +700,7 @@ function private setupspawngroup(spawngroup) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x41923b79, Offset: 0x2480
 // Size: 0x98
 function getteamclientfieldvalue(team) {

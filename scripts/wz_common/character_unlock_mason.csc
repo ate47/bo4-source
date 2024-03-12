@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_mason/character_unlock_mason
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xed85136e, Offset: 0x168
 // Size: 0xc4
 function __init__() {
@@ -28,21 +28,21 @@ function __init__() {
 }
 
 // Namespace character_unlock_mason/character_unlock_mason
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdb357237, Offset: 0x238
 // Size: 0xcc
 function function_2613aeec(enabled) {
     if (enabled) {
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
             item_world_fixup::function_e70fa91c(#"wz_escape_supply_stash_parent", #"supply_stash_cu19", 1);
-        } else {
-            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu19", 6);
+            return;
         }
+        item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu19", 6);
     }
 }
 
 // Namespace character_unlock_mason/character_unlock_mason
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeb86e553, Offset: 0x310
 // Size: 0x174
 function on_localclient_connect(localclientnum) {
@@ -53,7 +53,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace character_unlock_mason/character_unlock_mason
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf9a23f1e, Offset: 0x490
 // Size: 0x18c
 function private function_6a0a79cf(localclientnum) {

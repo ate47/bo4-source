@@ -93,16 +93,16 @@ function private function_6a8979c9() {
     #/
     foreach (weapon in self getweaponslist(1)) {
         if (isdefined(level.var_3e2ac3b6[weapon.name])) {
-            self function_28602a03(weapon);
+            self lockweapon(weapon);
         } else if (!namespace_83dc3729::is_active() || !isarray(level.var_af806901) || !isdefined(level.var_af806901[weapon.name])) {
             self unlockweapon(weapon);
         }
         if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
             if (self function_635f9c02(weapon)) {
-                self function_28602a03(weapon.dualwieldweapon);
-            } else {
-                self unlockweapon(weapon.dualwieldweapon);
+                self lockweapon(weapon.dualwieldweapon);
+                continue;
             }
+            self unlockweapon(weapon.dualwieldweapon);
         }
     }
 }

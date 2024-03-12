@@ -596,11 +596,13 @@ function visionset_update_cb(localclientnum, type) {
         } else {
             visionsetnakedlerp(localclientnum, curr_info.visionset_to, level._fv2vs_prev_visionsets[localclientnum], state.curr_lerp);
         }
-    } else if (curr_info.visionset_type == 6) {
-        visionsetlaststandlerp(localclientnum, curr_info.visionset_to, curr_info.visionset_from, state.curr_lerp);
-    } else {
-        visionsetnakedlerp(localclientnum, curr_info.visionset_to, curr_info.visionset_from, state.curr_lerp);
+        return;
     }
+    if (curr_info.visionset_type == 6) {
+        visionsetlaststandlerp(localclientnum, curr_info.visionset_to, curr_info.visionset_from, state.curr_lerp);
+        return;
+    }
+    visionsetnakedlerp(localclientnum, curr_info.visionset_to, curr_info.visionset_from, state.curr_lerp);
 }
 
 // Namespace visionset_mgr/visionset_mgr_shared
@@ -682,12 +684,12 @@ function overlay_update_cb(localclientnum, type) {
     }
     switch (curr_info.style) {
     case 0:
-        break;
+        return;
     case 1:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp <= state.curr_lerp) {
             player thread postfx::playpostfxbundle(curr_info.bundle);
         }
-        break;
+        return;
     case 2:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp != state.curr_lerp) {
             if (isdefined(level.vsmgr_filter_custom_enable[curr_info.material_name])) {
@@ -700,32 +702,32 @@ function overlay_update_cb(localclientnum, type) {
                 }
             }
         }
-        break;
+        return;
     case 3:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp <= state.curr_lerp) {
             setblurbylocalclientnum(localclientnum, curr_info.magnitude, curr_info.transition_in);
         }
-        break;
+        return;
     case 4:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp <= state.curr_lerp) {
             setelectrified(localclientnum, curr_info.duration * state.curr_lerp);
         }
-        break;
+        return;
     case 5:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp <= state.curr_lerp) {
             setburn(localclientnum, curr_info.duration * state.curr_lerp);
         }
-        break;
+        return;
     case 6:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp != state.curr_lerp) {
             set_poison_overlay(state.curr_lerp);
         }
-        break;
+        return;
     case 7:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp <= state.curr_lerp) {
             level thread filter::settransported(player);
         }
-        break;
+        return;
     case 8:
         if (state.force_update || state.prev_slot != state.curr_slot || state.prev_lerp <= state.curr_lerp) {
             if (isdefined(curr_info.should_offset)) {
@@ -742,7 +744,7 @@ function overlay_update_cb(localclientnum, type) {
                 enablespeedblur(localclientnum, curr_info.amount, curr_info.inner_radius, curr_info.outer_radius);
             }
         }
-        break;
+        return;
     }
 }
 

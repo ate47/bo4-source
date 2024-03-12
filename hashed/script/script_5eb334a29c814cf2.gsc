@@ -113,8 +113,8 @@ function private function_80bc397d() {
     var_8f538918 = getaiarchetypearray(#"zod_companion");
     if (var_8f538918.size == 0 && (level.players.size == 1 || isdefined(self.var_20f86af4) && self.var_20f86af4)) {
         self thread zm_laststand::wait_and_revive();
-    } else {
-        self thread zm_laststand::function_3699b145();
+        return;
     }
+    self thread zm_laststand::function_3699b145();
 }
 

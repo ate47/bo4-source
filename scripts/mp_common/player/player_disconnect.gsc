@@ -9,7 +9,7 @@
 #namespace player;
 
 // Namespace player/player_disconnect
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4949b86b, Offset: 0x110
 // Size: 0x70c
 function callback_playerdisconnect() {
@@ -94,7 +94,7 @@ function callback_playerdisconnect() {
 }
 
 // Namespace player/player_disconnect
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3b709e2, Offset: 0x828
 // Size: 0x2c6
 function private function_79915d44() {
@@ -125,8 +125,8 @@ function private function_79915d44() {
                 break;
             }
         }
-    } else {
-        self.pers[#"nemesis_xuid"] = "";
+        return;
     }
+    self.pers[#"nemesis_xuid"] = "";
 }
 

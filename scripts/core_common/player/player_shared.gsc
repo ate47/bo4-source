@@ -229,28 +229,28 @@ function generate_weapon_data() {
     if (isdefined(self.gun_removed) && self.gun_removed && isdefined(self._weapons)) {
         self._generated_weapons = arraycopy(self._weapons);
         self._generated_current_weapon = self._current_weapon;
-    } else {
-        w_current = self getcurrentweapon();
-        if (w_current != level.weaponnone) {
-            self._generated_current_weapon = w_current;
+        return;
+    }
+    w_current = self getcurrentweapon();
+    if (w_current != level.weaponnone) {
+        self._generated_current_weapon = w_current;
+    }
+    a_weapon_list = self getweaponslist();
+    if (self._generated_current_weapon == level.weaponnone) {
+        if (isdefined(a_weapon_list[0])) {
+            self._generated_current_weapon = a_weapon_list[0];
         }
-        a_weapon_list = self getweaponslist();
-        if (self._generated_current_weapon == level.weaponnone) {
-            if (isdefined(a_weapon_list[0])) {
-                self._generated_current_weapon = a_weapon_list[0];
-            }
+    }
+    foreach (weapon in a_weapon_list) {
+        if (isdefined(weapon.dniweapon) && weapon.dniweapon) {
+            continue;
         }
-        foreach (weapon in a_weapon_list) {
-            if (isdefined(weapon.dniweapon) && weapon.dniweapon) {
-                continue;
-            }
-            if (!isdefined(self._generated_weapons)) {
-                self._generated_weapons = [];
-            } else if (!isarray(self._generated_weapons)) {
-                self._generated_weapons = array(self._generated_weapons);
-            }
-            self._generated_weapons[self._generated_weapons.size] = get_weapondata(weapon);
+        if (!isdefined(self._generated_weapons)) {
+            self._generated_weapons = [];
+        } else if (!isarray(self._generated_weapons)) {
+            self._generated_weapons = array(self._generated_weapons);
         }
+        self._generated_weapons[self._generated_weapons.size] = get_weapondata(weapon);
     }
 }
 
@@ -368,9 +368,9 @@ function switch_to_primary_weapon(b_immediate = 0) {
     if (is_valid_weapon(weapon)) {
         if (b_immediate) {
             self switchtoweaponimmediate(weapon);
-        } else {
-            self switchtoweapon(weapon);
+            return;
         }
+        self switchtoweapon(weapon);
     }
 }
 
@@ -383,9 +383,9 @@ function function_1bff13a1(b_immediate = 0) {
     if (is_valid_weapon(weapon)) {
         if (b_immediate) {
             self switchtoweaponimmediate(weapon);
-        } else {
-            self switchtoweapon(weapon);
+            return;
         }
+        self switchtoweapon(weapon);
     }
 }
 
@@ -464,25 +464,25 @@ function allow_stance_change(b_allow = 1) {
         self allowprone(1);
         self allowcrouch(1);
         self allowstand(1);
-    } else {
-        str_stance = self getstance();
-        switch (str_stance) {
-        case #"prone":
-            self allowprone(1);
-            self allowcrouch(0);
-            self allowstand(0);
-            break;
-        case #"crouch":
-            self allowprone(0);
-            self allowcrouch(1);
-            self allowstand(0);
-            break;
-        case #"stand":
-            self allowprone(0);
-            self allowcrouch(0);
-            self allowstand(1);
-            break;
-        }
+        return;
+    }
+    str_stance = self getstance();
+    switch (str_stance) {
+    case #"prone":
+        self allowprone(1);
+        self allowcrouch(0);
+        self allowstand(0);
+        return;
+    case #"crouch":
+        self allowprone(0);
+        self allowcrouch(1);
+        self allowstand(0);
+        return;
+    case #"stand":
+        self allowprone(0);
+        self allowcrouch(0);
+        self allowstand(1);
+        return;
     }
 }
 
@@ -766,8 +766,7 @@ function function_2abc116(string, defaultval) {
     #/
     if (isdefined(self) && isdefined(self.pers) && isdefined(self.pers[string])) {
         return self.pers[string];
-    } else {
-        return defaultval;
     }
+    return defaultval;
 }
 

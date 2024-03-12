@@ -74,10 +74,10 @@ function init_elevator(var_fd98a47c) {
             elevator.var_e87f4c9 = button.origin - elevator.origin;
             elevator.var_8273f574 = dynent;
             elevator.var_8ba5c861 = dynent;
-        } else {
-            elevator.var_ec68615b = dynent;
-            elevator.var_d98394f7 = dynent;
+            continue;
         }
+        elevator.var_ec68615b = dynent;
+        elevator.var_d98394f7 = dynent;
     }
 }
 
@@ -132,9 +132,8 @@ function function_211e7277(point, var_8bd17d7d) {
                 n_forward = n_forward * vectorscale((1, 1, 0), 32);
                 move_pos = move_pos + n_forward;
                 break;
-            } else {
-                var_93a4284 = 0;
             }
+            var_93a4284 = 0;
         }
         check_count++;
     }
@@ -172,27 +171,27 @@ function function_777e012d(t_damage) {
                 switch (device.weapon.name) {
                 case #"eq_tripwire":
                     device [[ level.var_2e06b76a ]]();
-                    break;
+                    continue;
                 case #"trophy_system":
                     device [[ level.var_4f3822f4 ]]();
-                    break;
+                    continue;
                 case #"cymbal_monkey":
                     device [[ level.var_7c5c96dc ]]();
-                    break;
+                    continue;
                 case #"homunculus":
                     device [[ level.var_cc310d06 ]]();
-                    break;
+                    continue;
                 case #"eq_sensor":
                     device [[ level.var_9911d36f ]]();
-                    break;
+                    continue;
                 case #"eq_concertina_wire":
                     device [[ level.var_94029383 ]]();
-                    break;
+                    continue;
                 case #"gadget_supplypod":
                     device notify(#"death");
-                    break;
+                    continue;
                 default:
-                    break;
+                    continue;
                 }
             }
         }
@@ -218,7 +217,9 @@ function elevator_kill_player(t_damage) {
                 if (isdefined(point)) {
                     e_player function_211e7277(point, var_8bd17d7d);
                 }
-            } else if (level flagsys::get(#"insertion_teleport_completed") || level.script === "mp_alcatraz") {
+                continue;
+            }
+            if (level flagsys::get(#"insertion_teleport_completed") || level.script === "mp_alcatraz") {
                 e_player.var_1a776c13 = 1;
                 e_player suicide();
             }
@@ -274,12 +275,12 @@ function function_26ab1b5e(t_damage) {
                             if (isdefined(point)) {
                                 player function_211e7277(point, var_8bd17d7d);
                             }
-                        } else {
-                            var_1c8ad6c7 = level flagsys::get(#"insertion_teleport_completed");
-                            if (var_1c8ad6c7) {
-                                player.var_1a776c13 = 1;
-                                player suicide();
-                            }
+                            continue;
+                        }
+                        var_1c8ad6c7 = level flagsys::get(#"insertion_teleport_completed");
+                        if (var_1c8ad6c7) {
+                            player.var_1a776c13 = 1;
+                            player suicide();
                         }
                     }
                 }

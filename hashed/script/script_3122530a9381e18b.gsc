@@ -109,14 +109,14 @@ function private function_a8e75297(w_weapon) {
 // Checksum 0x9c89994a, Offset: 0x7c0
 // Size: 0x14
 function start_quest() {
-    function_b60df00d();
+    start_step_1();
 }
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
 // Params 0, eflags: 0x5 linked
 // Checksum 0xdaf39163, Offset: 0x7e0
 // Size: 0x21a
-function private function_b60df00d() {
+function private start_step_1() {
     level thread function_cbeb9a33();
     if (!isdefined(level.var_9eccff99.s_start)) {
         level.var_9eccff99.s_start = zm_hms_util::function_4e7f5b2e("mk2v_start");
@@ -185,7 +185,7 @@ function private function_9d66ea6f(e_item, e_player) {
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mod_phase", 0, e_player);
     zm_ui_inventory::function_7df6bb60("zm_white_ww_mk2v_ammo", 1, e_player);
     e_player thread function_130ea633();
-    function_87e09347();
+    start_step_2();
 }
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
@@ -206,7 +206,7 @@ function function_130ea633() {
 // Params 0, eflags: 0x5 linked
 // Checksum 0x40ae0443, Offset: 0xde0
 // Size: 0xea
-function private function_87e09347() {
+function private start_step_2() {
     if (zm_white_main_quest::function_6cebbce1()) {
         /#
             iprintlnbold("<unknown string>");
@@ -273,11 +273,11 @@ function private function_6d765bb3() {
                 println(level.var_9eccff99.e_player.name + "<unknown string>");
             }
         #/
-        function_b99d76c0();
+        start_step_3();
         level notify(#"hash_141539da9edb11ab");
-    } else {
-        level.var_9eccff99.var_685c8f1e[level.var_9eccff99.var_f8f50111] function_22b5323d();
+        return;
     }
+    level.var_9eccff99.var_685c8f1e[level.var_9eccff99.var_f8f50111] function_22b5323d();
 }
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
@@ -299,7 +299,7 @@ function cleanup_step_2() {
 // Params 0, eflags: 0x5 linked
 // Checksum 0xb4ba0e56, Offset: 0x1368
 // Size: 0xa2
-function private function_b99d76c0() {
+function private start_step_3() {
     s_gen = struct::get("mk2v_gen");
     s_gen zm_unitrigger::create("", 96);
     s_gen thread function_195e54c();
@@ -324,7 +324,7 @@ function private function_195e54c() {
             namespace_bd74bbd2::start(#"sc_mk2v");
             level notify(#"hash_2df7109d3c756d8e");
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            break;
+            return;
         }
     }
 }
@@ -358,7 +358,7 @@ function private function_e90f6026(e_item, e_player) {
     e_player thread function_9d800221();
     e_player playsound("evt_rgun_frame_pickup");
     function_e09a7418();
-    function_a36c4a5e();
+    start_step_4();
 }
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
@@ -425,7 +425,7 @@ function private function_2ac1278b() {
         if (function_18a1849f(e_player)) {
             namespace_bd74bbd2::start(#"sc_mk2v");
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            break;
+            return;
         }
     }
 }
@@ -439,18 +439,18 @@ function cleanup_step_3() {
     if (isdefined(level.var_9eccff99.var_fead3ae9)) {
         namespace_bd74bbd2::end(#"sc_mk2v");
         level.var_9eccff99.var_fead3ae9 delete();
-    } else {
-        s_gen = struct::get("mk2v_gen");
-        s_gen notify(#"stop_think");
-        zm_unitrigger::unregister_unitrigger(s_gen.s_unitrigger);
+        return;
     }
+    s_gen = struct::get("mk2v_gen");
+    s_gen notify(#"stop_think");
+    zm_unitrigger::unregister_unitrigger(s_gen.s_unitrigger);
 }
 
 // Namespace namespace_ca03bbb4/namespace_ca03bbb4
 // Params 0, eflags: 0x5 linked
 // Checksum 0x6f919564, Offset: 0x1b28
 // Size: 0x3a
-function private function_a36c4a5e() {
+function private start_step_4() {
     level.var_9eccff99.e_player thread function_cba90c3c();
     level.var_9eccff99.n_step = 4;
 }
@@ -524,7 +524,7 @@ function private restart_quest(var_e19b7aed = 1) {
     }
     level.var_9eccff99.e_player = undefined;
     if (var_e19b7aed) {
-        function_b60df00d();
+        start_step_1();
     }
 }
 

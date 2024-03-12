@@ -265,7 +265,7 @@ function function_2f5993d6() {
     for (i = 0; i < level.var_5a599dbf.size; i++) {
         if (level.var_5a599dbf[i].in_inventory) {
             level.var_fcbb6a6b = level.var_5a599dbf[i];
-            break;
+            return;
         }
     }
 }
@@ -324,9 +324,9 @@ function function_54db89ef() {
             var_ab007509++;
             if (var_ab007509 < 7) {
                 self.in_use = 0;
-            } else {
-                break;
+                continue;
             }
+            break;
         }
     }
     zm_unitrigger::unregister_unitrigger(self);

@@ -8,7 +8,7 @@
 #namespace hud_message;
 
 // Namespace hud_message/hud_message
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4b84ca17, Offset: 0xc0
 // Size: 0x7b4
 function init() {
@@ -69,7 +69,7 @@ function private function_4e36b458(winner) {
 }
 
 // Namespace hud_message/hud_message
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa9df2ede, Offset: 0x930
 // Size: 0x1e
 function function_82f36142(var_c1e98979) {
@@ -85,19 +85,18 @@ function function_82f36142(var_c1e98979) {
 }
 
 // Namespace hud_message/hud_message
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xccb3eb68, Offset: 0x9b8
 // Size: 0x4e
 function private function_460b0309(game_end) {
     if (game_end) {
         return game.strings[#"draw"];
-    } else {
-        return game.strings[#"round_draw"];
     }
+    return game.strings[#"round_draw"];
 }
 
 // Namespace hud_message/hud_message
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x6206be2d, Offset: 0xa10
 // Size: 0x2d2
 function function_a2f30ab4(var_68c25772, var_c1e98979, game_end, outcome) {
@@ -139,7 +138,7 @@ function function_a2f30ab4(var_68c25772, var_c1e98979, game_end, outcome) {
 }
 
 // Namespace hud_message/hud_message
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x419dd2c0, Offset: 0xcf0
 // Size: 0x78
 function private function_555e3f9f() {
@@ -153,7 +152,7 @@ function private function_555e3f9f() {
 }
 
 // Namespace hud_message/hud_message
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7855f196, Offset: 0xd70
 // Size: 0x814
 function teamoutcomenotify(outcome) {
@@ -231,7 +230,9 @@ function teamoutcomenotify(outcome) {
             var_277c7d47 = 0;
         }
         self luinotifyevent(#"show_outcome", 7, var_14f94126, outcometext, int(matchbonus), winnerenum, var_277c7d47, int(float(winningtime) / 1000), int(float(losingtime) / 1000));
-    } else if (level.gametype == "ball" && !outcome::get_flag(outcome, "tie") && game.roundsplayed < level.roundlimit && isdefined(game.round_time_to_beat) && !overtime::is_overtime_round()) {
+        return;
+    }
+    if (level.gametype == "ball" && !outcome::get_flag(outcome, "tie") && game.roundsplayed < level.roundlimit && isdefined(game.round_time_to_beat) && !overtime::is_overtime_round()) {
         winningtime = game.round_time_to_beat;
         if (!isdefined(losingtime)) {
             losingtime = 0;
@@ -241,24 +242,24 @@ function teamoutcomenotify(outcome) {
             var_277c7d47 = 0;
         }
         self luinotifyevent(#"show_outcome", 7, var_14f94126, outcometext, int(matchbonus), winnerenum, var_277c7d47, int(float(winningtime) / 1000), int(float(losingtime) / 1000));
-    } else {
-        if (team == #"spectator" && outcome.var_7d5c2c5f) {
-            if (outcome.var_c1e98979 == 6) {
-                var_14f94126 = game.strings[#"cod_caster_team_eliminated"];
-            }
-            var_14f94126 = game.strings[#"cod_caster_team_wins"];
-            var_277c7d47 = 0;
+        return;
+    }
+    if (team == #"spectator" && outcome.var_7d5c2c5f) {
+        if (outcome.var_c1e98979 == 6) {
+            var_14f94126 = game.strings[#"cod_caster_team_eliminated"];
         }
-        self luinotifyevent(#"show_outcome", 5, var_14f94126, outcometext, int(matchbonus), winnerenum, var_277c7d47);
-        if (var_277c7d47 && game.roundsplayed < level.roundlimit) {
-            self luinotifyevent(#"hash_84895967cf4425c");
-            wait(1);
-        }
+        var_14f94126 = game.strings[#"cod_caster_team_wins"];
+        var_277c7d47 = 0;
+    }
+    self luinotifyevent(#"show_outcome", 5, var_14f94126, outcometext, int(matchbonus), winnerenum, var_277c7d47);
+    if (var_277c7d47 && game.roundsplayed < level.roundlimit) {
+        self luinotifyevent(#"hash_84895967cf4425c");
+        wait(1);
     }
 }
 
 // Namespace hud_message/hud_message
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfb88fc0, Offset: 0x1590
 // Size: 0x1bc
 function outcomenotify(outcome) {
@@ -273,13 +274,13 @@ function outcomenotify(outcome) {
     if (isdefined(team) && team == #"spectator" && outcome.var_7d5c2c5f) {
         outcometext = game.strings[#"cod_caster_team_wins"];
         self luinotifyevent(#"show_outcome", 5, outcome.var_14f94126, outcometext, matchbonus, outcome::get_winner(outcome), 0);
-    } else {
-        self luinotifyevent(#"show_outcome", 4, outcome.var_14f94126, outcometext, matchbonus, numclients);
+        return;
     }
+    self luinotifyevent(#"show_outcome", 4, outcome.var_14f94126, outcometext, matchbonus, numclients);
 }
 
 // Namespace hud_message/hud_message
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5eac8a31, Offset: 0x1758
 // Size: 0x2c
 function hide_outcome() {
@@ -287,7 +288,7 @@ function hide_outcome() {
 }
 
 // Namespace hud_message/hud_message
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x7ac177be, Offset: 0x1790
 // Size: 0x96
 function private function_d756b48a(var_c1e98979, winner_text, loser_text, var_94d579fc, var_1e8a2bef) {
@@ -295,7 +296,7 @@ function private function_d756b48a(var_c1e98979, winner_text, loser_text, var_94
 }
 
 // Namespace hud_message/hud_message
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x75d070ba, Offset: 0x1830
 // Size: 0x44
 function function_2b2308c6(var_c1e98979, var_76f0c6e5, var_767536e4) {
@@ -303,7 +304,7 @@ function function_2b2308c6(var_c1e98979, var_76f0c6e5, var_767536e4) {
 }
 
 // Namespace hud_message/hud_message
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xac57479c, Offset: 0x1880
 // Size: 0x4c
 function function_5d9d54a9(var_c1e98979, var_76f0c6e5) {
@@ -311,7 +312,7 @@ function function_5d9d54a9(var_c1e98979, var_76f0c6e5) {
 }
 
 // Namespace hud_message/hud_message
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4e5eec66, Offset: 0x18d8
 // Size: 0x54
 function function_36419c2(var_c1e98979, winner_text, loser_text) {
@@ -319,7 +320,7 @@ function function_36419c2(var_c1e98979, winner_text, loser_text) {
 }
 
 // Namespace hud_message/hud_message
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7065955c, Offset: 0x1938
 // Size: 0xee
 function function_5b0c08ec(player, outcome) {
@@ -336,7 +337,7 @@ function function_5b0c08ec(player, outcome) {
 }
 
 // Namespace hud_message/hud_message
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2994be15, Offset: 0x1a30
 // Size: 0x84
 function can_bg_draw(outcome) {

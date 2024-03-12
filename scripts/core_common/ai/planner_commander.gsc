@@ -589,7 +589,7 @@ function private _plan(commander, &blackboard) {
             [[ level.strategic_command_throttle ]]->waitinqueue(commander);
             commander.strategizestarttime = getrealtime();
         }
-    } while(planner::getblackboardattribute(commander.planner, #"idle_doppelbots").size > 0);
+    } while (planner::getblackboardattribute(commander.planner, #"idle_doppelbots").size > 0);
     commander.plan = var_80d439bc;
     commander.planstarttime = planstarttime;
     commander.planfinishtime = gettime();
@@ -624,13 +624,13 @@ function private _reclaimescortparameters(commander, &blackboard) {
                 switch (order) {
                 case #"order_escort_mainguard":
                     player[#"escortmainguard"] = arraycombine(player[#"escortmainguard"], squadbots, 1, 0);
-                    break;
+                    continue;
                 case #"order_escort_rearguard":
                     player[#"escortrearguard"] = arraycombine(player[#"escortrearguard"], squadbots, 1, 0);
-                    break;
+                    continue;
                 case #"order_escort_vanguard":
                     player[#"escortvanguard"] = arraycombine(player[#"escortvanguard"], squadbots, 1, 0);
-                    break;
+                    continue;
                 }
             }
             if (getrealtime() - commander.strategizestarttime > commander.maxframetime) {

@@ -31,17 +31,21 @@ class cct_shared_desc : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"hash_3319eaa2c590a2ac" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"hash_2ac3b79c708dcfd5" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"hash_3319eaa2c590a2ac" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        if (#"hash_2ac3b79c708dcfd5" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_desc/ct_shared_desc

@@ -113,34 +113,33 @@ function function_f358791() {
     self endon(#"death", #"change_state");
     wait(1);
     for (;;) {
-        for (;;) {
-            if (isdefined(self.isstunned) && self.isstunned) {
-                self.favoriteenemy = undefined;
-                waitframe(1);
-                continue;
-            }
-            targets = [];
-            targetsmissile = [];
-            players = level.players;
-            foreach (player in players) {
-                if (self cantargetplayer(player)) {
-                    targets[targets.size] = player;
-                }
-            }
-            tanks = getentarray("talon", "targetname");
-            foreach (tank in tanks) {
-                if (self cantargettank(tank)) {
-                    targets[targets.size] = tank;
-                }
-            }
-            actors = getactorarray();
-            foreach (actor in actors) {
-                if (self cantargetactor(actor)) {
-                    targets[targets.size] = actor;
-                }
-            }
-            self.var_dac49144 = function_b2cc6703(targets);
+        if (isdefined(self.isstunned) && self.isstunned) {
+            self.favoriteenemy = undefined;
+            waitframe(1);
+            continue;
         }
+        targets = [];
+        targetsmissile = [];
+        players = level.players;
+        foreach (player in players) {
+            if (self cantargetplayer(player)) {
+                targets[targets.size] = player;
+            }
+        }
+        tanks = getentarray("talon", "targetname");
+        foreach (tank in tanks) {
+            if (self cantargettank(tank)) {
+                targets[targets.size] = tank;
+            }
+        }
+        actors = getactorarray();
+        foreach (actor in actors) {
+            if (self cantargetactor(actor)) {
+                targets[targets.size] = actor;
+            }
+        }
+        self.var_dac49144 = function_b2cc6703(targets);
+        wait(1);
     }
 }
 
@@ -157,13 +156,17 @@ function function_b2cc6703(targets) {
         targets[idx].var_629a6b13[entnum] = 0;
         if (isdefined(targets[idx].type) && targets[idx].type == "dog") {
             update_dog_threat(targets[idx]);
-        } else if (isactor(targets[idx])) {
-            update_actor_threat(targets[idx]);
-        } else if (isplayer(targets[idx])) {
-            update_player_threat(targets[idx]);
-        } else {
-            update_non_player_threat(targets[idx]);
+            continue;
         }
+        if (isactor(targets[idx])) {
+            update_actor_threat(targets[idx]);
+            continue;
+        }
+        if (isplayer(targets[idx])) {
+            update_player_threat(targets[idx]);
+            continue;
+        }
+        update_non_player_threat(targets[idx]);
     }
     var_8ec7f501 = undefined;
     highest = -1;
@@ -506,26 +509,25 @@ function state_combat_update(params) {
     self thread function_5ebe7443();
     self thread attackthread();
     for (;;) {
-        for (;;) {
-            if (isdefined(self.ignoreall) && self.ignoreall) {
-                wait(1);
-                continue;
-            }
-            if (isdefined(self.owner) && isdefined(level.var_fdf0dff2) && ![[ level.var_fdf0dff2 ]](self.owner)) {
-                wait(1);
-                continue;
-            }
-            if (!ispointinnavvolume(self.origin, "navvolume_small")) {
-                var_f524eafc = getclosestpointonnavvolume(self.origin, "navvolume_small", 2000);
-                if (isdefined(var_f524eafc)) {
-                    self.origin = var_f524eafc;
-                }
-            }
-            protectdest = function_ede09a4e(self.owner);
-            if (isdefined(protectdest)) {
-                self function_a57c34b7(protectdest, 1, 1);
+        if (isdefined(self.ignoreall) && self.ignoreall) {
+            wait(1);
+            continue;
+        }
+        if (isdefined(self.owner) && isdefined(level.var_fdf0dff2) && ![[ level.var_fdf0dff2 ]](self.owner)) {
+            wait(1);
+            continue;
+        }
+        if (!ispointinnavvolume(self.origin, "navvolume_small")) {
+            var_f524eafc = getclosestpointonnavvolume(self.origin, "navvolume_small", 2000);
+            if (isdefined(var_f524eafc)) {
+                self.origin = var_f524eafc;
             }
         }
+        protectdest = function_ede09a4e(self.owner);
+        if (isdefined(protectdest)) {
+            self function_a57c34b7(protectdest, 1, 1);
+        }
+        wait(1);
     }
 }
 

@@ -30,17 +30,21 @@ class cct_shared_desc : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"hash_3319eaa2c590a2ac" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"hash_2ac3b79c708dcfd5" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"hash_3319eaa2c590a2ac" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"hash_2ac3b79c708dcfd5" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_desc/ct_shared_desc

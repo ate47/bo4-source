@@ -6,7 +6,7 @@
 #namespace tracker;
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x5f665aa7, Offset: 0xb8
 // Size: 0x14
 function init_shared() {
@@ -14,7 +14,7 @@ function init_shared() {
 }
 
 // Namespace tracker/tracker_shared
-// Params 0, eflags: 0x4
+// Params 0, eflags: 0x5 linked
 // Checksum 0x3dfb760d, Offset: 0xd8
 // Size: 0x3c
 function private registerclientfields() {

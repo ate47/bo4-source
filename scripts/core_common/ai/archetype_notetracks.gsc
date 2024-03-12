@@ -200,9 +200,9 @@ function private notetrackfirebullet(animationentity) {
             animationentity notify(#"shoot");
             if (!isdefined(animationentity.ai.bulletsinclip)) {
                 animationentity.ai.bulletsinclip = 0;
-            } else {
-                animationentity.ai.bulletsinclip--;
+                return;
             }
+            animationentity.ai.bulletsinclip--;
         }
     }
 }
@@ -230,7 +230,9 @@ function private notetrackdropshield(animationentity) {
 function private notetrackgrenadethrow(animationentity) {
     if (archetype_human_cover::shouldthrowgrenadeatcovercondition(animationentity, 1)) {
         animationentity grenadethrow();
-    } else if (isdefined(animationentity.grenadethrowposition)) {
+        return;
+    }
+    if (isdefined(animationentity.grenadethrowposition)) {
         arm_offset = archetype_human_cover::temp_get_arm_offset(animationentity, animationentity.grenadethrowposition);
         throw_vel = animationentity canthrowgrenadepos(arm_offset, animationentity.grenadethrowposition);
         if (isdefined(throw_vel)) {

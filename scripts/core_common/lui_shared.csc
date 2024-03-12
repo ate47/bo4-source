@@ -233,14 +233,14 @@ function addmenuexploders(menu_name, localclientnum, exploder) {
             }
             menu_data.exploders[menu_data.exploders.size] = expl;
         }
-    } else {
-        if (!isdefined(menu_data.exploders)) {
-            menu_data.exploders = [];
-        } else if (!isarray(menu_data.exploders)) {
-            menu_data.exploders = array(menu_data.exploders);
-        }
-        menu_data.exploders[menu_data.exploders.size] = exploder;
+        return;
     }
+    if (!isdefined(menu_data.exploders)) {
+        menu_data.exploders = [];
+    } else if (!isarray(menu_data.exploders)) {
+        menu_data.exploders = array(menu_data.exploders);
+    }
+    menu_data.exploders[menu_data.exploders.size] = exploder;
 }
 
 // Namespace lui/lui_shared
@@ -402,15 +402,15 @@ function setup_menu(localclientnum, menu_data, previous_menu) {
                     } else {
                         level thread [[ extracam_data.camera_function ]](localclientnum, menu_data.menu_name, extracam_data);
                     }
-                } else {
-                    camera_ent = multi_extracam::extracam_init_index(localclientnum, extracam_data.target_name, extracam_data.extracam_index);
-                    if (isdefined(camera_ent)) {
-                        if (isdefined(extracam_data.xcam_frame)) {
-                            camera_ent playextracamxcam(extracam_data.xcam, 0, extracam_data.sub_xcam, extracam_data.xcam_frame);
-                        } else {
-                            camera_ent playextracamxcam(extracam_data.xcam, 0, extracam_data.sub_xcam);
-                        }
+                    continue;
+                }
+                camera_ent = multi_extracam::extracam_init_index(localclientnum, extracam_data.target_name, extracam_data.extracam_index);
+                if (isdefined(camera_ent)) {
+                    if (isdefined(extracam_data.xcam_frame)) {
+                        camera_ent playextracamxcam(extracam_data.xcam, 0, extracam_data.sub_xcam, extracam_data.xcam_frame);
+                        continue;
                     }
+                    camera_ent playextracamxcam(extracam_data.xcam, 0, extracam_data.sub_xcam);
                 }
             }
         }
@@ -475,7 +475,9 @@ function client_menus(localclientnum) {
         updateonly = statechange && menu_index !== 0;
         if (updateonly) {
             clientmenustack[i].state = state;
-        } else if (status === "closed" && isdefined(menu_index)) {
+            continue;
+        }
+        if (status === "closed" && isdefined(menu_index)) {
             /#
                 /#
                     assert(menu_index == 0);
@@ -485,7 +487,9 @@ function client_menus(localclientnum) {
                 popped = array::pop(clientmenustack, 0, 0);
                 setup_menu(localclientnum, clientmenustack[0], popped);
             }
-        } else if (status === "opened" && !isdefined(menu_index)) {
+            continue;
+        }
+        if (status === "opened" && !isdefined(menu_index)) {
             menu_data = spawnstruct();
             menu_data.menu_name = menu_name;
             menu_data.state = state;
@@ -495,7 +499,9 @@ function client_menus(localclientnum) {
             lastmenu = clientmenustack.size < 0 ? clientmenustack[0] : undefined;
             setup_menu(localclientnum, menu_data, lastmenu);
             array::push_front(clientmenustack, menu_data);
-        } else if (isdefined(menu_index) && statechange) {
+            continue;
+        }
+        if (isdefined(menu_index) && statechange) {
             /#
                 assert(menu_index == 0);
             #/
@@ -525,9 +531,9 @@ function screen_fade(n_time, n_target_alpha = 1, n_start_alpha = 0, str_color = 
         foreach (player in level.players) {
             player thread _screen_fade(n_time, n_target_alpha, n_start_alpha, str_color, b_force_close_menu);
         }
-    } else {
-        self thread _screen_fade(n_time, n_target_alpha, n_start_alpha, str_color, b_force_close_menu);
+        return;
     }
+    self thread _screen_fade(n_time, n_target_alpha, n_start_alpha, str_color, b_force_close_menu);
 }
 
 // Namespace lui/lui_shared
@@ -557,9 +563,9 @@ function screen_close_menu() {
         foreach (player in level.players) {
             player thread _screen_close_menu();
         }
-    } else {
-        self thread _screen_close_menu();
+        return;
     }
+    self thread _screen_close_menu();
 }
 
 // Namespace lui/lui_shared

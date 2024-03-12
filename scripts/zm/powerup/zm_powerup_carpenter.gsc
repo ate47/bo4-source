@@ -61,7 +61,9 @@ function get_closest_window_repair(windows, origin) {
         if (!isdefined(current_window)) {
             current_window = windows[i];
             shortest_distance = distancesquared(current_window.origin, origin);
-        } else if (distancesquared(windows[i].origin, origin) < shortest_distance) {
+            continue;
+        }
+        if (distancesquared(windows[i].origin, origin) < shortest_distance) {
             current_window = windows[i];
             shortest_distance = distancesquared(windows[i].origin, origin);
         }
@@ -120,10 +122,10 @@ function start_carpenter(var_264cf1f9, var_ea1d8f06 = 1) {
                         window [[ window._post_carpenter_callback ]]();
                     }
                 }
-            } else {
-                while (isdefined(last_repaired_chunk) && last_repaired_chunk.state == "mid_repair") {
-                    waitframe(1);
-                }
+                continue;
+            }
+            while (isdefined(last_repaired_chunk) && last_repaired_chunk.state == "mid_repair") {
+                waitframe(1);
             }
         }
     }

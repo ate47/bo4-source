@@ -137,7 +137,7 @@ function function_f7dd380e() {
     do {
         waitframe(5);
         reached_score = function_efa3251f();
-    } while(!reached_score);
+    } while (!reached_score);
     wait(3);
 }
 
@@ -323,9 +323,9 @@ function function_34fc666e() {
     exploder::exploder("exp_lgt_spawn_flavor");
     if (util::isfirstround()) {
         exploder::exploder("exp_lgt_spawn_fire");
-    } else {
-        exploder::exploder("fxexp_fuel_tank_exp_aftermath");
+        return;
     }
+    exploder::exploder("fxexp_fuel_tank_exp_aftermath");
 }
 
 // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
@@ -425,28 +425,28 @@ function kill_equipment(rocket_kill_trig) {
             switch (device.weapon.name) {
             case #"eq_tripwire":
                 device [[ level.var_2e06b76a ]]();
-                break;
+                continue;
             case #"trophy_system":
                 device [[ level.var_4f3822f4 ]]();
-                break;
+                continue;
             case #"cymbal_monkey":
                 device [[ level.var_7c5c96dc ]]();
-                break;
+                continue;
             case #"homunculus":
                 device [[ level.var_cc310d06 ]]();
-                break;
+                continue;
             case #"eq_sensor":
                 device [[ level.var_9911d36f ]]();
-                break;
+                continue;
             case #"eq_concertina_wire":
                 device [[ level.var_94029383 ]]();
-                break;
+                continue;
             case #"gadget_supplypod":
                 device notify(#"death");
-                break;
+                continue;
             default:
                 device dodamage(10000, device.origin);
-                break;
+                continue;
             }
         }
     }

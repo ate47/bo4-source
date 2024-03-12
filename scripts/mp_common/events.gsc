@@ -47,9 +47,9 @@ function add_score_event(score, notify_string, client_notify_string) {
     if (level.scorelimit > 0) {
         if (level.teambased) {
             level thread score_team_event_monitor(score, notify_string, client_notify_string);
-        } else {
-            level thread score_event_monitor(score, notify_string, client_notify_string);
+            return;
         }
+        level thread score_event_monitor(score, notify_string, client_notify_string);
     }
 }
 
@@ -65,9 +65,9 @@ function add_round_score_event(score, notify_string, client_notify_string) {
         roundscoretobeat = level.roundscorelimit * game.roundsplayed + score;
         if (level.teambased) {
             level thread score_team_event_monitor(roundscoretobeat, notify_string, client_notify_string);
-        } else {
-            level thread score_event_monitor(roundscoretobeat, notify_string, client_notify_string);
+            return;
         }
+        level thread score_event_monitor(roundscoretobeat, notify_string, client_notify_string);
     }
 }
 

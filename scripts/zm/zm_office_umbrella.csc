@@ -40,8 +40,8 @@ function function_87d68f99(localclientnum, oldval, newval, bnewent, binitialsnap
 function narrative_room(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_a5777754(localclientnum, "lab_supply");
-    } else {
-        function_73b1f242(localclientnum, "lab_supply");
+        return;
     }
+    function_73b1f242(localclientnum, "lab_supply");
 }
 

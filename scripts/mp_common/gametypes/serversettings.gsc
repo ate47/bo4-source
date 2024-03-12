@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb7d84789, Offset: 0xf8
 // Size: 0x34
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfb86e627, Offset: 0x138
 // Size: 0x48e
 function init() {
@@ -66,7 +66,7 @@ function init() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc68787ec, Offset: 0x5d0
 // Size: 0x5e
 function on_start_gametype() {
@@ -79,7 +79,7 @@ function on_start_gametype() {
 }
 
 // Namespace serversettings/serversettings
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1f585955, Offset: 0x638
 // Size: 0x1dc
 function update() {
@@ -108,7 +108,7 @@ function update() {
 }
 
 // Namespace serversettings/serversettings
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb8695216, Offset: 0x820
 // Size: 0x23e
 function constrain_gametype(gametype) {
@@ -119,23 +119,33 @@ function constrain_gametype(gametype) {
             if (isdefined(entity.script_gametype_dm) && entity.script_gametype_dm != 1) {
                 entity delete();
             }
-        } else if (gametype == "tdm") {
+            continue;
+        }
+        if (gametype == "tdm") {
             if (isdefined(entity.script_gametype_tdm) && entity.script_gametype_tdm != 1) {
                 entity delete();
             }
-        } else if (gametype == "ctf") {
+            continue;
+        }
+        if (gametype == "ctf") {
             if (isdefined(entity.script_gametype_ctf) && entity.script_gametype_ctf != 1) {
                 entity delete();
             }
-        } else if (gametype == "hq") {
+            continue;
+        }
+        if (gametype == "hq") {
             if (isdefined(entity.script_gametype_hq) && entity.script_gametype_hq != 1) {
                 entity delete();
             }
-        } else if (gametype == "sd") {
+            continue;
+        }
+        if (gametype == "sd") {
             if (isdefined(entity.script_gametype_sd) && entity.script_gametype_sd != 1) {
                 entity delete();
             }
-        } else if (gametype == "koth") {
+            continue;
+        }
+        if (gametype == "koth") {
             if (isdefined(entity.script_gametype_koth) && entity.script_gametype_koth != 1) {
                 entity delete();
             }
@@ -144,7 +154,7 @@ function constrain_gametype(gametype) {
 }
 
 // Namespace serversettings/serversettings
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb053baf2, Offset: 0xa68
 // Size: 0x1be
 function constrain_map_size(mapsize) {
@@ -155,15 +165,21 @@ function constrain_map_size(mapsize) {
             if (isdefined(entity.script_mapsize_08) && entity.script_mapsize_08 != 1) {
                 entity delete();
             }
-        } else if (int(mapsize) == 16) {
+            continue;
+        }
+        if (int(mapsize) == 16) {
             if (isdefined(entity.script_mapsize_16) && entity.script_mapsize_16 != 1) {
                 entity delete();
             }
-        } else if (int(mapsize) == 32) {
+            continue;
+        }
+        if (int(mapsize) == 32) {
             if (isdefined(entity.script_mapsize_32) && entity.script_mapsize_32 != 1) {
                 entity delete();
             }
-        } else if (int(mapsize) == 64) {
+            continue;
+        }
+        if (int(mapsize) == 64) {
             if (isdefined(entity.script_mapsize_64) && entity.script_mapsize_64 != 1) {
                 entity delete();
             }

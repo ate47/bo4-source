@@ -409,7 +409,9 @@ function private function_7d162bd0(projectile, entity) {
             wait(0.25);
             var_b12a43cc.in_use = 0;
         }
-    } else if (isdefined(result.player)) {
+        return;
+    }
+    if (isdefined(result.player)) {
         result.player clientfield::increment_to_player("gegenees_damage_cf");
     }
 }
@@ -570,7 +572,7 @@ function private function_60164697() {
     time = gettime() + 2000;
     while (1) {
         if (gettime() > time) {
-            break;
+            return;
         }
         self playrumbleonentity("damage_heavy");
         waitframe(1);
@@ -748,9 +750,9 @@ function private function_d5d3aa77(entity) {
 function private function_4334cc3b(entity) {
     if (self.var_c63e2811 > gettime()) {
         self setblackboardattribute("_gegenees_shield", "shield_up");
-    } else {
-        self setblackboardattribute("_gegenees_shield", "shield_down");
+        return;
     }
+    self setblackboardattribute("_gegenees_shield", "shield_down");
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -803,9 +805,9 @@ function function_d645d2ec(entity, mocompanim, mocompanimblendouttime, mocompani
         to_enemy = entity.locked_enemy.origin - entity.origin;
         angles_to_enemy = vectortoangles(to_enemy);
         entity orientmode("face angle", angles_to_enemy);
-    } else {
-        entity orientmode("face current");
+        return;
     }
+    entity orientmode("face current");
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees

@@ -68,10 +68,10 @@ function function_4017174b(localclientnum, w_weapon) {
         n_old_ammo = n_ammo;
         if (n_ammo == 0) {
             self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, 0, 0, 0);
-        } else {
-            n_shader_val = 4 - n_ammo;
-            self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, 1, n_shader_val, 0);
+            continue;
         }
+        n_shader_val = 4 - n_ammo;
+        self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, 1, n_shader_val, 0);
     }
 }
 

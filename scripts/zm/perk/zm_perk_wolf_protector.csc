@@ -82,11 +82,11 @@ function wolf_protector_fx(localclientnum, oldval, newval, bnewent, binitialsnap
         self._eyeglow_tag_override = "tag_eye";
         self zm::createzombieeyes(localclientnum);
         self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_on_luminance(), self zm::get_eyeball_color());
-    } else {
-        self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_off_luminance(), self zm::get_eyeball_color());
-        self zm::deletezombieeyes(localclientnum);
-        util::playfxontag(localclientnum, level._effect[#"hash_674126a125f46aae"], self, "j_spine4");
+        return;
     }
+    self mapshaderconstant(localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_off_luminance(), self zm::get_eyeball_color());
+    self zm::deletezombieeyes(localclientnum);
+    util::playfxontag(localclientnum, level._effect[#"hash_674126a125f46aae"], self, "j_spine4");
 }
 
 // Namespace zm_perk_wolf_protector/zm_perk_wolf_protector

@@ -122,7 +122,9 @@ function entityspawned(localclientnum) {
             self thread sticky_grenade::spawned(localclientnum);
             break;
         }
-    } else if (self.type == "vehicle" || self.type == "helicopter" || self.type == "plane") {
+        return;
+    }
+    if (self.type == "vehicle" || self.type == "helicopter" || self.type == "plane") {
         if (isdefined(level._customvehiclecbfunc)) {
             self thread [[ level._customvehiclecbfunc ]](localclientnum);
         }
@@ -130,9 +132,7 @@ function entityspawned(localclientnum) {
         self thread vehicle::field_toggle_lights_handler(localclientnum, undefined, 0, 1);
         if (self.type == "plane" || self.type == "helicopter") {
             self thread vehicle::aircraft_dustkick();
-            goto LOC_0000025e;
         }
-    LOC_0000025e:
         if (self.type == "helicopter") {
         }
         if (self.archetype === #"bat") {
@@ -140,17 +140,23 @@ function entityspawned(localclientnum) {
                 self thread [[ level._customactorcbfunc ]](localclientnum);
             }
         }
-    } else if (self.type == "actor") {
+        return;
+    }
+    if (self.type == "actor") {
         if (isdefined(level._customactorcbfunc)) {
             self thread [[ level._customactorcbfunc ]](localclientnum);
         }
-    } else if (self.type == "scriptmover") {
+        return;
+    }
+    if (self.type == "scriptmover") {
         if (isdefined(self.weapon)) {
             if (isdefined(level.var_6b11d5f6)) {
                 self thread [[ level.var_6b11d5f6 ]](localclientnum);
             }
         }
-    } else if (self.type == "NA") {
+        return;
+    }
+    if (self.type == "NA") {
         if (isdefined(self.weapon)) {
             if (isdefined(level.var_6b11d5f6)) {
                 self thread [[ level.var_6b11d5f6 ]](localclientnum);

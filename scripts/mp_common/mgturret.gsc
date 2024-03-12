@@ -95,16 +95,12 @@ function turret_suppression_fire(targets) {
         self.suppresionfire = 1;
     }
     for (;;) {
-        for (;;) {
-            while (self.suppresionfire) {
-                self turretsettarget(0, targets[randomint(targets.size)]);
-                wait(2 + randomfloat(2));
-            }
-            self turretcleartarget(0);
-        LOC_000000ba:
-            if (self.suppresionfire) {
-                continue;
-            };
+        while (self.suppresionfire) {
+            self turretsettarget(0, targets[randomint(targets.size)]);
+            wait(2 + randomfloat(2));
+        }
+        self turretcleartarget(0);
+        while (!self.suppresionfire) {
             wait(1);
         }
     }
@@ -117,11 +113,14 @@ function turret_suppression_fire(targets) {
 function burst_fire_settings(setting) {
     if (setting == "delay") {
         return 0.2;
-    } else if (setting == "delay_range") {
+    }
+    if (setting == "delay_range") {
         return 0.5;
-    } else if (setting == "burst") {
+    }
+    if (setting == "burst") {
         return 0.5;
-    } else if (setting == "burst_range") {
+    }
+    if (setting == "burst_range") {
         return 4;
     }
 }
@@ -198,32 +197,31 @@ function burst_fire_unmanned() {
     turretstate = "start";
     self.script_shooting = 0;
     for (;;) {
-        for (;;) {
-            if (isdefined(self.manual_targets)) {
-                self turretcleartarget(0);
-                self turretsettarget(0, self.manual_targets[randomint(self.manual_targets.size)]);
-            }
-            duration = (pauseuntiltime - gettime()) * 0.001;
-            if (duration <= 0) {
-                if (turretstate != "fire") {
-                    turretstate = "fire";
-                    self playsound(#"mpl_turret_alert");
-                    self thread do_shoot();
-                    self.script_shooting = 1;
-                }
-                duration = turret_burst + randomfloat(turret_burst_range);
-                self thread turret_timer(duration);
-                self waittill(#"turretstatechange");
-                self.script_shooting = 0;
-                duration = turret_delay + randomfloat(turret_delay_range);
-                pauseuntiltime = gettime() + int(duration * 1000);
-                continue;
-            }
-            if (turretstate != "aim") {
-                turretstate = "aim";
-            }
-            self thread turret_timer(duration);
+        if (isdefined(self.manual_targets)) {
+            self turretcleartarget(0);
+            self turretsettarget(0, self.manual_targets[randomint(self.manual_targets.size)]);
         }
+        duration = (pauseuntiltime - gettime()) * 0.001;
+        if (duration <= 0) {
+            if (turretstate != "fire") {
+                turretstate = "fire";
+                self playsound(#"mpl_turret_alert");
+                self thread do_shoot();
+                self.script_shooting = 1;
+            }
+            duration = turret_burst + randomfloat(turret_burst_range);
+            self thread turret_timer(duration);
+            self waittill(#"turretstatechange");
+            self.script_shooting = 0;
+            duration = turret_delay + randomfloat(turret_delay_range);
+            pauseuntiltime = gettime() + int(duration * 1000);
+            continue;
+        }
+        if (turretstate != "aim") {
+            turretstate = "aim";
+        }
+        self thread turret_timer(duration);
+        self waittill(#"turretstatechange");
     }
 }
 

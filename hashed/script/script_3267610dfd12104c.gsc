@@ -169,7 +169,7 @@ function function_c213f1b5(var_31c68e48) {
     switch (var_e4204b3) {
     case #"open_areas":
         function_fdabbb8a();
-        break;
+        return;
     case #"boxing_gym_final_circle":
     case #"turbine_final_circle":
     case #"construction_final_circle":
@@ -189,12 +189,12 @@ function function_c213f1b5(var_31c68e48) {
     case #"hijacked_final_circle":
     case #"graveyard_final_circle":
         function_69e60a10(var_e4204b3);
-        break;
+        return;
     default:
         /#
             println("<unknown string>" + var_e4204b3 + "<unknown string>");
         #/
-        break;
+        return;
     }
 }
 
@@ -205,70 +205,70 @@ function function_c213f1b5(var_31c68e48) {
 function function_9d313516(var_6b4cdf43) {
     switch (var_6b4cdf43) {
     case 0:
-        break;
+        return;
     case 1:
         level.var_5c8bbb85 = (29566, 24509, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 2:
         level.var_5c8bbb85 = (-29567, 24509, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 3:
         level.var_5c8bbb85 = (29566, -33018, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 4:
         level.var_5c8bbb85 = (-29567, -33018, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 5:
         level.var_5c8bbb85 = (29566, -4254, 0);
         level.var_2a9f2129 = 115055;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 6:
         level.var_5c8bbb85 = (-29567, -4254, 0);
         level.var_2a9f2129 = 115055;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 7:
         level.var_5c8bbb85 = (-1544, -33018, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 112090;
-        break;
+        return;
     case 8:
         level.var_5c8bbb85 = (-1544, 24509, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 112090;
-        break;
+        return;
     case 9:
         level.var_5c8bbb85 = (-1544, -4254, 0);
         level.var_2a9f2129 = 57527;
         level.var_6d8a1d51 = 56045;
-        break;
+        return;
     case 10:
         function_1e92e76c();
-        break;
+        return;
     case 11:
         function_3ac2e00();
-        break;
+        return;
     case 12:
         function_9c000dd6();
-        break;
+        return;
     case 13:
         function_69e60a10("graveyard_final_circle");
-        break;
+        return;
     case 14:
         function_69e60a10("nuketown_island_final_circle");
-        break;
+        return;
     case 15:
         function_69e60a10("hijacked_final_circle");
-        break;
+        return;
     default:
         return;
     }
@@ -283,22 +283,22 @@ function function_1e92e76c() {
     switch (location) {
     case 1:
         function_69e60a10("hydro_final_circle");
-        break;
+        return;
     case 2:
         function_69e60a10("factory_final_circle");
-        break;
+        return;
     case 3:
         function_69e60a10("fracking_final_circle");
-        break;
+        return;
     case 4:
         function_69e60a10("construction_final_circle");
-        break;
+        return;
     case 5:
         function_69e60a10("docks_final_circle");
-        break;
+        return;
     case 6:
         function_69e60a10("turbine_final_circle");
-        break;
+        return;
     }
 }
 
@@ -311,19 +311,19 @@ function function_3ac2e00() {
     switch (location) {
     case 1:
         function_69e60a10("diner_final_circle");
-        break;
+        return;
     case 2:
         function_69e60a10("lighthouse_final_circle");
-        break;
+        return;
     case 3:
         function_69e60a10("boxing_gym_final_circle");
-        break;
+        return;
     case 4:
         function_69e60a10("asylum_final_circle");
-        break;
+        return;
     case 5:
         function_69e60a10("graveyard_final_circle");
-        break;
+        return;
     }
 }
 
@@ -336,19 +336,19 @@ function function_9c000dd6() {
     switch (location) {
     case 1:
         function_69e60a10("nuketown_island_final_circle");
-        break;
+        return;
     case 2:
         function_69e60a10("clearing_final_circle");
-        break;
+        return;
     case 3:
         function_69e60a10("array_final_circle");
-        break;
+        return;
     case 4:
         function_69e60a10("estates_final_circle");
-        break;
+        return;
     case 5:
         function_69e60a10("hijacked_final_circle");
-        break;
+        return;
     }
 }
 

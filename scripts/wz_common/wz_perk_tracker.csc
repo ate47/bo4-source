@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_perk_tracker/wz_perk_tracker
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa3aa220b, Offset: 0x110
 // Size: 0x74
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace wz_perk_tracker/wz_perk_tracker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4762ee26, Offset: 0x190
 // Size: 0x24
 function on_player_connect(localclientnum) {
@@ -32,7 +32,7 @@ function on_player_connect(localclientnum) {
 }
 
 // Namespace wz_perk_tracker/wz_perk_tracker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x99e22e6a, Offset: 0x1c0
 // Size: 0x1fa
 function tracker(localclientnum) {
@@ -48,15 +48,15 @@ function tracker(localclientnum) {
         foreach (player in players) {
             if (tracked >= 10 || !isalive(player) || player function_83973173() || isdefined(getplayervehicle(player))) {
                 player.tracker_last_pos = undefined;
-            } else {
-                tracked++;
-                if (!isdefined(player.tracker_last_pos)) {
-                    player.tracker_last_pos = player.origin;
-                }
-                positionandrotationstruct = player gettrackerfxposition(localclientnum);
-                if (isdefined(positionandrotationstruct)) {
-                    player tracker_playfx(localclientnum, positionandrotationstruct);
-                }
+                continue;
+            }
+            tracked++;
+            if (!isdefined(player.tracker_last_pos)) {
+                player.tracker_last_pos = player.origin;
+            }
+            positionandrotationstruct = player gettrackerfxposition(localclientnum);
+            if (isdefined(positionandrotationstruct)) {
+                player tracker_playfx(localclientnum, positionandrotationstruct);
             }
         }
         players = undefined;
@@ -64,7 +64,7 @@ function tracker(localclientnum) {
 }
 
 // Namespace wz_perk_tracker/wz_perk_tracker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a38efec, Offset: 0x3c8
 // Size: 0x26e
 function gettrackerfxposition(localclientnum) {
@@ -105,7 +105,7 @@ function gettrackerfxposition(localclientnum) {
 }
 
 // Namespace wz_perk_tracker/wz_perk_tracker
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2ef12d9, Offset: 0x640
 // Size: 0x5e
 function tracker_playfx(localclientnum, positionandrotationstruct) {

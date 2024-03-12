@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x74501f25, Offset: 0x650
 // Size: 0xac
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc444dd6c, Offset: 0x708
 // Size: 0x7fa
 function init() {
@@ -92,7 +92,7 @@ function init() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x25348645, Offset: 0xf10
 // Size: 0x2ba
 function function_6e084fd3(var_37ecca7, taacombundle) {
@@ -157,7 +157,7 @@ function function_6e084fd3(var_37ecca7, taacombundle) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x23d02350, Offset: 0x11d8
 // Size: 0xc6
 function set_leader_gametype_dialog(startgamedialogkey, starthcgamedialogkey, offenseorderdialogkey, defenseorderdialogkey, var_2888cc9d, var_826b3c1a) {
@@ -171,7 +171,7 @@ function set_leader_gametype_dialog(startgamedialogkey, starthcgamedialogkey, of
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x769dc38a, Offset: 0x12a8
 // Size: 0x1c
 function function_5e0a6842() {
@@ -179,7 +179,7 @@ function function_5e0a6842() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x682bd8f0, Offset: 0x12d0
 // Size: 0x1c
 function function_dfd17bd3() {
@@ -187,7 +187,7 @@ function function_dfd17bd3() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf82bd0f0, Offset: 0x12f8
 // Size: 0x1c4
 function announce_round_winner(delay) {
@@ -206,16 +206,16 @@ function announce_round_winner(delay) {
             leader_dialog("roundEncourageWon", winner);
             leader_dialog_for_other_teams("roundEncourageLost", winner);
         }
-    } else {
-        foreach (team, _ in level.teams) {
-            thread sound::play_on_players("mus_round_draw" + "_" + level.teampostfix[team]);
-        }
-        leader_dialog("roundDraw");
+        return;
     }
+    foreach (team, _ in level.teams) {
+        thread sound::play_on_players("mus_round_draw" + "_" + level.teampostfix[team]);
+    }
+    leader_dialog("roundDraw");
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc2366958, Offset: 0x14c8
 // Size: 0xe4
 function announce_game_winner(outcome) {
@@ -223,15 +223,15 @@ function announce_game_winner(outcome) {
     if (level.teambased) {
         if (outcome::get_flag(outcome, "tie") || !match::function_c10174e7()) {
             leader_dialog("gameDraw");
-        } else {
-            leader_dialog("gameWon", outcome::get_winner(outcome));
-            leader_dialog_for_other_teams("gameLost", outcome::get_winner(outcome));
+            return;
         }
+        leader_dialog("gameWon", outcome::get_winner(outcome));
+        leader_dialog_for_other_teams("gameLost", outcome::get_winner(outcome));
     }
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x64764e1d, Offset: 0x15b8
 // Size: 0xc
 function function_57678746(outcome) {
@@ -239,21 +239,25 @@ function function_57678746(outcome) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x466ee563, Offset: 0x15d0
 // Size: 0x9c
 function function_6374b97e(tie) {
     if (tie) {
         self set_music_on_player("matchDraw");
-    } else if (match::function_a2b53e17(self)) {
+        return;
+    }
+    if (match::function_a2b53e17(self)) {
         self set_music_on_player("matchWin");
-    } else if (!level.splitscreen) {
+        return;
+    }
+    if (!level.splitscreen) {
         self set_music_on_player("matchLose");
     }
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6f153a47, Offset: 0x1678
 // Size: 0x80
 function flush_dialog() {
@@ -263,7 +267,7 @@ function flush_dialog() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1c510760, Offset: 0x1700
 // Size: 0x56
 function flush_dialog_on_player() {
@@ -279,7 +283,7 @@ function flush_dialog_on_player() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc2b8147f, Offset: 0x1760
 // Size: 0x96
 function flush_killstreak_dialog_on_player(killstreakid) {
@@ -322,7 +326,7 @@ function flush_objective_dialog(objectivekey) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x506261c5, Offset: 0x1938
 // Size: 0x9a
 function flush_objective_dialog_on_player(objectivekey) {
@@ -332,7 +336,7 @@ function flush_objective_dialog_on_player(objectivekey) {
     for (i = self.leaderdialogqueue.size - 1; i >= 0; i--) {
         if (objectivekey === self.leaderdialogqueue[i].objectivekey) {
             arrayremoveindex(self.leaderdialogqueue, i);
-            break;
+            return;
         }
     }
 }
@@ -348,7 +352,7 @@ function flush_leader_dialog_key(dialogkey) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5d800dd9, Offset: 0x1a70
 // Size: 0x8e
 function flush_leader_dialog_key_on_player(dialogkey) {
@@ -366,7 +370,7 @@ function flush_leader_dialog_key_on_player(dialogkey) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x377ce410, Offset: 0x1b08
 // Size: 0x6c
 function play_taacom_dialog(dialogkey, killstreaktype, killstreakid, soundevent, var_8a6b001a, weapon, priority) {
@@ -374,7 +378,7 @@ function play_taacom_dialog(dialogkey, killstreaktype, killstreakid, soundevent,
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x351fde93, Offset: 0x1b80
 // Size: 0x1d4
 function killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, pilotindex, soundevent, var_8a6b001a, weapon, priority) {
@@ -411,13 +415,13 @@ function killstreak_dialog_on_player(dialogkey, killstreaktype, killstreakid, pi
     }
     if (self.playingdialog === 1 && dialogkey == "arrive") {
         self thread wait_for_player_dialog();
-    } else {
-        self thread play_next_killstreak_dialog();
+        return;
     }
+    self thread play_next_killstreak_dialog();
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a998354, Offset: 0x1d60
 // Size: 0x6c
 function wait_for_player_dialog() {
@@ -430,7 +434,7 @@ function wait_for_player_dialog() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x97f12c48, Offset: 0x1dd8
 // Size: 0x38c
 function play_next_killstreak_dialog() {
@@ -447,8 +451,7 @@ function play_next_killstreak_dialog() {
         self.currentkillstreakdialog = undefined;
         return;
     }
-    dialogalias = undefined;
-    while (!isdefined(dialogalias) && self.killstreakdialogqueue.size > 0) {
+    for (dialogalias = undefined; !isdefined(dialogalias) && self.killstreakdialogqueue.size > 0; dialogalias = self get_dialog_bundle_alias(taacombundle, nextdialog.dialogkey)) {
         nextdialog = self.killstreakdialogqueue[0];
         arrayremoveindex(self.killstreakdialogqueue, 0);
         if (isdefined(nextdialog.killstreaktype)) {
@@ -466,8 +469,7 @@ function play_next_killstreak_dialog() {
                     dialogalias = self get_dialog_bundle_alias(killstreakbundle, nextdialog.dialogkey);
                 }
             }
-        } else {
-            dialogalias = self get_dialog_bundle_alias(taacombundle, nextdialog.dialogkey);
+            continue;
         }
     }
     if (!isdefined(dialogalias)) {
@@ -487,7 +489,7 @@ function play_next_killstreak_dialog() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xec603e0, Offset: 0x2170
 // Size: 0x5c
 function wait_next_killstreak_dialog(waittime) {
@@ -498,7 +500,7 @@ function wait_next_killstreak_dialog(waittime) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x8ddc32b7, Offset: 0x21d8
 // Size: 0x64
 function function_30f16f29(soundevent, var_8a6b001a, weapon) {
@@ -508,7 +510,7 @@ function function_30f16f29(soundevent, var_8a6b001a, weapon) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x9e958abd, Offset: 0x2248
 // Size: 0xe0
 function leader_dialog_for_other_teams(dialogkey, skipteam, objectivekey, killstreakid, dialogbufferkey) {
@@ -523,7 +525,7 @@ function leader_dialog_for_other_teams(dialogkey, skipteam, objectivekey, killst
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x98567c30, Offset: 0x2330
 // Size: 0x160
 function leader_dialog(dialogkey, team, excludelist, objectivekey, killstreakid, dialogbufferkey) {
@@ -545,7 +547,7 @@ function leader_dialog(dialogkey, team, excludelist, objectivekey, killstreakid,
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xc4548117, Offset: 0x2498
 // Size: 0x3c4
 function leader_dialog_on_player(dialogkey, objectivekey, killstreakid, dialogbufferkey, introdialog) {
@@ -611,7 +613,7 @@ function leader_dialog_on_player(dialogkey, objectivekey, killstreakid, dialogbu
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb3b31b0e, Offset: 0x2868
 // Size: 0x2b4
 function play_next_leader_dialog() {
@@ -657,7 +659,7 @@ function play_next_leader_dialog() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf90bbd5f, Offset: 0x2b28
 // Size: 0x5c
 function wait_next_leader_dialog(dialogbuffer) {
@@ -668,7 +670,7 @@ function wait_next_leader_dialog(dialogbuffer) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a98b65, Offset: 0x2b90
 // Size: 0x6a4
 function dialogkey_priority(dialogkey) {
@@ -779,13 +781,12 @@ function dialogkey_priority(dialogkey) {
     case #"domfriendlysecuringc":
     case #"domfriendlysecuringa":
         return 1;
-        break;
     }
     return undefined;
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4b22e369, Offset: 0x3240
 // Size: 0x24
 function play_equipment_destroyed_on_player() {
@@ -793,7 +794,7 @@ function play_equipment_destroyed_on_player() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa0a8d6bd, Offset: 0x3270
 // Size: 0x24
 function play_equipment_hacked_on_player() {
@@ -801,7 +802,7 @@ function play_equipment_hacked_on_player() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x385457a3, Offset: 0x32a0
 // Size: 0x7a
 function get_commander_dialog_alias(dialogkey) {
@@ -813,7 +814,7 @@ function get_commander_dialog_alias(dialogkey) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28b0e6c2, Offset: 0x3328
 // Size: 0x84
 function get_dialog_bundle_alias(dialogbundle, dialogkey) {
@@ -832,7 +833,7 @@ function get_dialog_bundle_alias(dialogbundle, dialogkey) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb92929d0, Offset: 0x33b8
 // Size: 0xd4
 function is_team_winning(checkteam) {
@@ -848,7 +849,7 @@ function is_team_winning(checkteam) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x57f6e58a, Offset: 0x3498
 // Size: 0xc0
 function announce_team_is_winning() {
@@ -894,7 +895,7 @@ function get_round_switch_dialog(switchtype) {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xad8adee3, Offset: 0x36b8
 // Size: 0x5c
 function on_end_game() {
@@ -904,7 +905,7 @@ function on_end_game() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6212b761, Offset: 0x3720
 // Size: 0x16c
 function announcercontroller() {
@@ -920,14 +921,14 @@ function announcercontroller() {
         foreach (team, _ in level.teams) {
             leader_dialog("roundTimeWarning", team, undefined, undefined);
         }
-    } else {
-        level waittill(#"match_ending_vox");
-        leader_dialog("roundTimeWarning");
+        return;
     }
+    level waittill(#"match_ending_vox");
+    leader_dialog("roundTimeWarning");
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a039bfd, Offset: 0x3898
 // Size: 0x64
 function sndmusicfunctions() {
@@ -938,7 +939,7 @@ function sndmusicfunctions() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a0e0dd8, Offset: 0x3908
 // Size: 0xa6
 function sndmusicsetrandomizer() {
@@ -956,7 +957,7 @@ function sndmusicsetrandomizer() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4b032dbf, Offset: 0x39b8
 // Size: 0x104
 function sndmusicunlock() {
@@ -985,7 +986,7 @@ function sndmusicunlock() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbbfc0251, Offset: 0x3ac8
 // Size: 0xac
 function sndmusictimesout() {
@@ -993,13 +994,13 @@ function sndmusictimesout() {
     level waittill(#"match_ending_very_soon");
     if (isdefined(level.gametype) && level.gametype == "sd") {
         level thread set_music_on_team("timeOutQuiet");
-    } else {
-        level thread set_music_on_team("timeOut");
+        return;
     }
+    level thread set_music_on_team("timeOut");
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x777dc260, Offset: 0x3b80
 // Size: 0x74
 function sndmusichalfway() {
@@ -1009,7 +1010,7 @@ function sndmusichalfway() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd3dcf8fb, Offset: 0x3c00
 // Size: 0xfc
 function sndmusictimelimitwatcher() {
@@ -1029,7 +1030,7 @@ function sndmusictimelimitwatcher() {
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x3b81e367, Offset: 0x3d08
 // Size: 0x198
 function set_music_on_team(state, team = "both", wait_time = 0, save_state = 0, return_state = 0) {
@@ -1039,14 +1040,16 @@ function set_music_on_team(state, team = "both", wait_time = 0, save_state = 0, 
     foreach (player in level.players) {
         if (team == "both") {
             player thread set_music_on_player(state, wait_time, save_state, return_state);
-        } else if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
+            continue;
+        }
+        if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
             player thread set_music_on_player(state, wait_time, save_state, return_state);
         }
     }
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb363e462, Offset: 0x3ea8
 // Size: 0x104
 function set_music_on_player(state, wait_time = 0, save_state = 0, return_state = 0) {
@@ -1090,7 +1093,7 @@ function set_music_global(state, wait_time = 0, save_state = 0, return_state = 0
 }
 
 // Namespace globallogic_audio/globallogic_audio
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd38ea1f0, Offset: 0x4088
 // Size: 0x13c
 function function_85818e24(var_9c1ed9ea, team) {
@@ -1110,8 +1113,8 @@ function function_85818e24(var_9c1ed9ea, team) {
             }
             music::setmusicstate(var_9c1ed9ea + game.musicset, player);
         }
-    } else {
-        music::setmusicstate(var_9c1ed9ea + game.musicset);
+        return;
     }
+    music::setmusicstate(var_9c1ed9ea + game.musicset);
 }
 

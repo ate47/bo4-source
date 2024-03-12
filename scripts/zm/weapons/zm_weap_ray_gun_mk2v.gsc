@@ -162,15 +162,15 @@ function private get_closest_tag(v_pos) {
     for (i = 0; i < var_9aabd9de.size; i++) {
         if (!isdefined(tag_closest)) {
             tag_closest = var_9aabd9de[i];
-        } else {
-            var_abe265db = self gettagorigin(var_9aabd9de[i]);
-            var_2cd7818f = self gettagorigin(tag_closest);
-            if (!isdefined(var_abe265db) || !isdefined(var_2cd7818f)) {
-                continue;
-            }
-            if (distancesquared(v_pos, var_abe265db) < distancesquared(v_pos, var_2cd7818f)) {
-                tag_closest = var_9aabd9de[i];
-            }
+            continue;
+        }
+        var_abe265db = self gettagorigin(var_9aabd9de[i]);
+        var_2cd7818f = self gettagorigin(tag_closest);
+        if (!isdefined(var_abe265db) || !isdefined(var_2cd7818f)) {
+            continue;
+        }
+        if (distancesquared(v_pos, var_abe265db) < distancesquared(v_pos, var_2cd7818f)) {
+            tag_closest = var_9aabd9de[i];
         }
     }
     return tolower(tag_closest);
@@ -229,9 +229,9 @@ function function_3ac73c92(e_player, b_upgraded) {
         self thread function_58fb8f5e(e_player, b_upgraded);
         self.var_a8f3f795 = 0;
         self notify(#"hash_3def847106434aab");
-    } else {
-        self thread function_3821f26e();
+        return;
     }
+    self thread function_3821f26e();
 }
 
 // Namespace zm_weap_ray_gun_mk2v/zm_weap_ray_gun_mk2v

@@ -5,7 +5,7 @@
 #namespace killstreak_detect;
 
 // Namespace killstreak_detect/killstreak_detect
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xd9d84755, Offset: 0xd0
 // Size: 0x114
 function init_shared() {

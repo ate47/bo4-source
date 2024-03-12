@@ -117,7 +117,7 @@ function electrocute_actor(ai) {
     case #"basic":
     case #"enhanced":
         ai thread tesla_death(self);
-        break;
+        return;
     }
 }
 
@@ -160,7 +160,7 @@ function tesla_death(player) {
             player stats::inc_stat(#"item_stats", weapon.name, #"hash_657e22dcdd18da77", #"statvalue", 1);
         }
     }
-    self dodamage(self.health + 1, self.origin, player, undefined, undefined, "MOD_ELECTROCUTED", 0, level.var_78032351);
+    self dodamage(self.health + 1, self.origin, player, undefined, undefined, "MOD_ELECTROCUTED", 0, level.weapondefault);
 }
 
 // Namespace zm_bgb_pop_shocks/zm_bgb_pop_shocks

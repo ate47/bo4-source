@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x516d429d, Offset: 0xf8
 // Size: 0x94
 function private __init__() {
@@ -23,7 +23,7 @@ function private __init__() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x12aa450e, Offset: 0x198
 // Size: 0x54
 function function_c85f904d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

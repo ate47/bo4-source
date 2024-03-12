@@ -45,7 +45,9 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (eventstruct.ent.targetname === "array_broadcast") {
         if (eventstruct.state === 0) {
             eventstruct.ent thread broadcast_off();
-        } else if (eventstruct.state === 1 || eventstruct.state === 2) {
+            return;
+        }
+        if (eventstruct.state === 1 || eventstruct.state === 2) {
             waitframe(1);
             if (level clientfield::get("array_broadcast") == 1) {
                 if (level.var_c055f451 == 1) {
@@ -55,7 +57,9 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                 } else if (level.var_15a926e9 == 0) {
                     level thread function_fb90d490();
                 }
-            } else if (level.var_c055f451 == 0) {
+                return;
+            }
+            if (level.var_c055f451 == 0) {
                 level.var_c055f451 = 1;
                 exploder::exploder(#"fxexp_radar_activation");
                 playsound(0, "evt_power_up", (4292, 18990, 6528));
@@ -141,11 +145,11 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
             foreach (struct in var_5be26843) {
                 if (var_ffe2b6da == 0) {
                     struct.var_7a993bec = playsound(0, #"hash_6ee08a10b9c18ba7", struct.origin);
-                } else {
-                    var_94450cf4 = var_ffe2b6da - 1;
-                    sound_alias = #"hash_5ae0628f3d30469e" + var_94450cf4;
-                    struct.var_7a993bec = playsound(0, sound_alias, struct.origin);
+                    continue;
                 }
+                var_94450cf4 = var_ffe2b6da - 1;
+                sound_alias = #"hash_5ae0628f3d30469e" + var_94450cf4;
+                struct.var_7a993bec = playsound(0, sound_alias, struct.origin);
             }
             var_e668b651 = 0;
             while (!var_e668b651) {
@@ -170,11 +174,11 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
             foreach (struct in var_5be26843) {
                 if (var_ffe2b6da == 0) {
                     struct.var_7a993bec = playsound(0, #"hash_6ee08a10b9c18ba7", struct.origin);
-                } else {
-                    var_94450cf4 = var_ffe2b6da - 1;
-                    sound_alias = #"hash_59821865a3dff39c" + var_94450cf4;
-                    struct.var_7a993bec = playsound(0, sound_alias, struct.origin);
+                    continue;
                 }
+                var_94450cf4 = var_ffe2b6da - 1;
+                sound_alias = #"hash_59821865a3dff39c" + var_94450cf4;
+                struct.var_7a993bec = playsound(0, sound_alias, struct.origin);
             }
             var_e668b651 = 0;
             while (!var_e668b651) {

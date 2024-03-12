@@ -193,24 +193,24 @@ function status_effects_devgui_think() {
             cmd = getdvarstring(#"scr_status_effects_devgui_cmd");
             if (cmd == "<unknown string>") {
                 waitframe(1);
-            } else {
-                pid = getdvarint(#"scr_status_effects_devgui_player", 0);
-                switch (cmd) {
-                case #"set_active":
-                    status_effects_set_active_effect(pid);
-                    break;
-                case #"give_grenade":
-                    status_effects_give_grenade(pid);
-                    break;
-                case #"clear_all":
-                    function_64ba1c7e(pid);
-                default:
-                    break;
-                }
-                setdvar(#"scr_status_effects_devgui_cmd", "<unknown string>");
-                setdvar(#"scr_status_effects_devgui_arg", "<unknown string>");
-                wait(0.5);
+                continue;
             }
+            pid = getdvarint(#"scr_status_effects_devgui_player", 0);
+            switch (cmd) {
+            case #"set_active":
+                status_effects_set_active_effect(pid);
+                break;
+            case #"give_grenade":
+                status_effects_give_grenade(pid);
+                break;
+            case #"clear_all":
+                function_64ba1c7e(pid);
+            default:
+                break;
+            }
+            setdvar(#"scr_status_effects_devgui_cmd", "<unknown string>");
+            setdvar(#"scr_status_effects_devgui_arg", "<unknown string>");
+            wait(0.5);
         }
     #/
 }

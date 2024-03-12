@@ -505,16 +505,12 @@ function function_fc977dee() {
     switch (getplayers().size) {
     case 1:
         return 3;
-        break;
     case 2:
         return 5;
-        break;
     case 3:
         return 7;
-        break;
     case 4:
         return 10;
-        break;
     }
 }
 
@@ -589,10 +585,9 @@ function get_favorite_enemy() {
     }
     if (!zm_utility::is_player_valid(e_least_hunted)) {
         return undefined;
-    } else {
-        e_least_hunted.hunted_by = e_least_hunted.hunted_by + 1;
-        return e_least_hunted;
     }
+    e_least_hunted.hunted_by = e_least_hunted.hunted_by + 1;
+    return e_least_hunted;
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
@@ -603,12 +598,10 @@ function function_4c71848e() {
     self endon(#"death");
     a_s_spawn_locs = level.zm_loc_types[#"nosferatu_location"];
     if (isarray(a_s_spawn_locs)) {
-        i = 0;
-        while (i < a_s_spawn_locs.size) {
+        for (i = 0; i < a_s_spawn_locs.size; i++) {
             if (isdefined(a_s_spawn_locs[i].scriptbundlename)) {
                 arrayremoveindex(a_s_spawn_locs, i);
-            } else {
-                i++;
+                continue;
             }
         }
         if (a_s_spawn_locs.size < 1) {
@@ -635,12 +628,12 @@ function function_4c71848e() {
                 i = 0;
                 util::wait_network_frame();
             }
-        } else {
-            var_e8ab126e = distancesquared(var_31f7011a[i].origin, var_d7eff26a.origin);
-            if (var_e8ab126e < var_56feeec4) {
-                var_56feeec4 = var_e8ab126e;
-                var_b2aa54a9 = var_d7eff26a;
-            }
+            continue;
+        }
+        var_e8ab126e = distancesquared(var_31f7011a[i].origin, var_d7eff26a.origin);
+        if (var_e8ab126e < var_56feeec4) {
+            var_56feeec4 = var_e8ab126e;
+            var_b2aa54a9 = var_d7eff26a;
         }
     }
     self zm_ai_utility::function_a8dc3363(var_b2aa54a9);
@@ -756,13 +749,13 @@ function private function_76d6482e(entity) {
             iprintln("<unknown string>" + var_c9528359 + "<unknown string>");
         #/
         entity thread function_13b48cdd(var_c9528359, queryresult);
-    } else {
-        /#
-            if (var_c9528359 == 0) {
-                iprintlnbold("<unknown string>");
-            }
-        #/
+        return;
     }
+    /#
+        if (var_c9528359 == 0) {
+            iprintlnbold("<unknown string>");
+        }
+    #/
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
@@ -781,7 +774,7 @@ function function_13b48cdd(var_c9528359, queryresult) {
                 ai = function_74f25f8a(1, undefined);
                 var_18f8f237--;
                 waitframe(1);
-            } while(!isdefined(ai) && var_18f8f237);
+            } while (!isdefined(ai) && var_18f8f237);
         }
         /#
             if (!var_18f8f237 && !isdefined(ai)) {
@@ -859,25 +852,25 @@ function function_201862b(eventstruct) {
         } else {
             level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 4);
         }
-        break;
+        return;
     case #"pain":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 3);
-        break;
+        return;
     case #"scream":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 3, 1);
-        break;
+        return;
     case #"leap":
     case #"attack_melee":
     case #"attack_bite":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 2, 1);
-        break;
+        return;
     case #"sprint":
     case #"ambient":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 0, 1);
-        break;
+        return;
     default:
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 0, 2);
-        break;
+        return;
     }
 }
 

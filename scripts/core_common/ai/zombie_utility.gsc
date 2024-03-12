@@ -14,7 +14,7 @@
 #namespace zombie_utility;
 
 // Namespace zombie_utility/zombie_utility
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b27d219, Offset: 0x3f8
 // Size: 0xda
 function zombiespawnsetup() {
@@ -34,7 +34,7 @@ function zombiespawnsetup() {
 }
 
 // Namespace zombie_utility/zombie_utility
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xdf2d0548, Offset: 0x4e0
 // Size: 0x2ce
 function get_closest_valid_player(origin, ignore_player, ignore_laststand_players = 0) {
@@ -689,11 +689,9 @@ function showdebugproc(frompoint, topoint, color, printtime) {
     /#
         self endon(#"death");
         timer = printtime * 20;
-        i = 0;
-        while (i < timer) {
+        for (i = 0; i < timer; i = i + 1) {
             waitframe(1);
             line(frompoint, topoint, color);
-            i = i + 1;
         }
     #/
 }
@@ -1007,12 +1005,11 @@ function isnodedontcrouch() {
 function doesnodeallowstance(stance) {
     if (stance == "stand") {
         return !self isnodedontstand();
-    } else {
-        /#
-            assert(stance == "<unknown string>");
-        #/
-        return !self isnodedontcrouch();
     }
+    /#
+        assert(stance == "<unknown string>");
+    #/
+    return !self isnodedontcrouch();
 }
 
 // Namespace zombie_utility/zombie_utility
@@ -1090,9 +1087,9 @@ function dumpanimarray() {
         foreach (k, v in self.a.array) {
             if (isarray(v)) {
                 println("<unknown string>" + k + "<unknown string>" + v.size + "<unknown string>");
-            } else {
-                println("<unknown string>" + k + "<unknown string>", v);
+                continue;
             }
+            println("<unknown string>" + k + "<unknown string>", v);
         }
     #/
 }
@@ -1302,9 +1299,9 @@ function set_orient_mode(mode, val1) {
     #/
     if (isdefined(val1)) {
         self orientmode(mode, val1);
-    } else {
-        self orientmode(mode);
+        return;
     }
+    self orientmode(mode);
 }
 
 // Namespace zombie_utility/zombie_utility
@@ -1675,8 +1672,7 @@ function round_spawn_failsafe_debug_draw() {
     self notify("26c0d7279ed843c6");
     self endon("26c0d7279ed843c6");
     self endon(#"death");
-    prevorigin = self.origin;
-    while (1) {
+    for (prevorigin = self.origin; 1; prevorigin = self.origin) {
         if (isdefined(level.toggle_keyline_always) && level.toggle_keyline_always) {
             self clientfield::set("zombie_keyline_render", 1);
             wait(1);
@@ -1690,10 +1686,9 @@ function round_spawn_failsafe_debug_draw() {
         }
         if (distancesquared(self.origin, prevorigin) < 576) {
             self clientfield::set("zombie_keyline_render", 1);
-        } else {
-            self clientfield::set("zombie_keyline_render", 0);
+            continue;
         }
-        prevorigin = self.origin;
+        self clientfield::set("zombie_keyline_render", 0);
     }
 }
 
@@ -1708,8 +1703,7 @@ function round_spawn_failsafe() {
     if (isdefined(level.debug_keyline_zombies) && level.debug_keyline_zombies) {
         self thread round_spawn_failsafe_debug_draw();
     }
-    v_prev_origin = self.origin;
-    while (1) {
+    for (v_prev_origin = self.origin; 1; v_prev_origin = self.origin) {
         if (!function_d2dfacfd(#"zombie_use_failsafe")) {
             return;
         }
@@ -1740,7 +1734,7 @@ function round_spawn_failsafe() {
                 self.var_e700d5e2 = 1;
                 self dodamage(self.health + 100, (0, 0, 0));
             }
-            break;
+            return;
         }
         var_25e376fd = 0;
         if (isdefined(level.var_62fc4786)) {
@@ -1769,9 +1763,8 @@ function round_spawn_failsafe() {
                 self.var_e700d5e2 = 1;
                 self dodamage(self.health + 100, (0, 0, 0));
             }
-            break;
+            return;
         }
-        v_prev_origin = self.origin;
     }
 }
 
@@ -1798,9 +1791,9 @@ function ai_calculate_health(base_health, round_number) {
                 var_d082c739 = old_health;
                 break;
             }
-        } else {
-            var_d082c739 = int(var_d082c739 + function_d2dfacfd(#"zombie_health_increase"));
+            continue;
         }
+        var_d082c739 = int(var_d082c739 + function_d2dfacfd(#"zombie_health_increase"));
     }
     return var_d082c739;
 }
@@ -2035,17 +2028,18 @@ function function_f9c50a93(move_speed, is_easy) {
     }
     if (move_speed <= 35) {
         return "walk";
-    } else if (move_speed <= 70) {
-        return "run";
-    } else if (move_speed <= 236) {
-        return "sprint";
-    } else {
-        return "super_sprint";
     }
+    if (move_speed <= 70) {
+        return "run";
+    }
+    if (move_speed <= 236) {
+        return "sprint";
+    }
+    return "super_sprint";
 }
 
 // Namespace zombie_utility/zombie_utility
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf735e031, Offset: 0x59f8
 // Size: 0x32a
 function setup_zombie_knockdown(var_5f02306b, var_43b3242) {
@@ -2070,7 +2064,9 @@ function setup_zombie_knockdown(var_5f02306b, var_43b3242) {
     if (dot >= 0.5) {
         self.knockdown_direction = "front";
         self.getup_direction = "getup_back";
-    } else if (dot < 0.5 && dot > -0.5) {
+        return;
+    }
+    if (dot < 0.5 && dot > -0.5) {
         dot = vectordot(zombie_to_entity_2d, zombie_right_2d);
         if (dot > 0) {
             self.knockdown_direction = "right";
@@ -2083,10 +2079,10 @@ function setup_zombie_knockdown(var_5f02306b, var_43b3242) {
             self.knockdown_direction = "left";
             self.getup_direction = "getup_belly";
         }
-    } else {
-        self.knockdown_direction = "back";
-        self.getup_direction = "getup_belly";
+        return;
     }
+    self.knockdown_direction = "back";
+    self.getup_direction = "getup_belly";
 }
 
 // Namespace zombie_utility/zombie_utility
@@ -2102,9 +2098,9 @@ function function_fc0cb93d(entity) {
     dot = vectordot(zombie_to_entity_2d, zombie_right_2d);
     if (dot < 0) {
         self.push_direction = "right";
-    } else {
-        self.push_direction = "left";
+        return;
     }
+    self.push_direction = "left";
 }
 
 // Namespace zombie_utility/zombie_utility
@@ -2386,7 +2382,6 @@ function zombie_should_gib(amount, attacker, type) {
         return 0;
     case #"mod_melee":
         return 0;
-        break;
     }
     if (type == "MOD_PISTOL_BULLET" || type == "MOD_RIFLE_BULLET") {
         if (!isdefined(attacker) || !isplayer(attacker)) {
@@ -2507,9 +2502,9 @@ function damage_over_time(dmg, delay, attacker, means_of_death) {
             }
             if (isdefined(attacker)) {
                 self dodamage(dmg, var_223fc6f5, attacker, self, self.damagelocation, means_of_death, 4096, self.damageweapon);
-            } else {
-                self dodamage(dmg, var_223fc6f5);
+                continue;
             }
+            self dodamage(dmg, var_223fc6f5);
         }
     }
 }
@@ -2543,15 +2538,21 @@ function derive_damage_refs(point) {
     }
     if (closesttag == "J_SpineLower" || closesttag == "J_SpineUpper" || closesttag == "J_Spine4") {
         gibserverutils::gibrightarm(self);
-    } else if (closesttag == "J_Shoulder_LE" || closesttag == "J_Elbow_LE" || closesttag == "J_Wrist_LE") {
+        return;
+    }
+    if (closesttag == "J_Shoulder_LE" || closesttag == "J_Elbow_LE" || closesttag == "J_Wrist_LE") {
         if (!gibserverutils::isgibbed(self, 16)) {
             gibserverutils::gibleftarm(self);
         }
-    } else if (closesttag == "J_Shoulder_RI" || closesttag == "J_Elbow_RI" || closesttag == "J_Wrist_RI") {
+        return;
+    }
+    if (closesttag == "J_Shoulder_RI" || closesttag == "J_Elbow_RI" || closesttag == "J_Wrist_RI") {
         if (!gibserverutils::isgibbed(self, 32)) {
             gibserverutils::gibrightarm(self);
         }
-    } else if (closesttag == "J_Hip_LE" || closesttag == "J_Knee_LE" || closesttag == "J_Ankle_LE") {
+        return;
+    }
+    if (closesttag == "J_Hip_LE" || closesttag == "J_Knee_LE" || closesttag == "J_Ankle_LE") {
         if (isdefined(self.nocrawler) && self.nocrawler || isdefined(level.var_41259f0d) && level.var_41259f0d || isdefined(level.var_9b91564e) && (isdefined(level.num_crawlers) ? level.num_crawlers : 0) >= level.var_9b91564e) {
             return;
         }
@@ -2560,7 +2561,9 @@ function derive_damage_refs(point) {
             gibserverutils::gibrightleg(self);
         }
         self function_df5afb5e(1);
-    } else if (closesttag == "J_Hip_RI" || closesttag == "J_Knee_RI" || closesttag == "J_Ankle_RI") {
+        return;
+    }
+    if (closesttag == "J_Hip_RI" || closesttag == "J_Knee_RI" || closesttag == "J_Ankle_RI") {
         if (isdefined(self.nocrawler) && self.nocrawler || isdefined(level.var_41259f0d) && level.var_41259f0d || isdefined(level.var_9b91564e) && (isdefined(level.num_crawlers) ? level.num_crawlers : 0) >= level.var_9b91564e) {
             return;
         }
@@ -2677,26 +2680,26 @@ function gib_random_part() {
     switch (gib_index) {
     case 0:
         self zombie_head_gib();
-        break;
+        return;
     case 1:
         gibserverutils::gibrightleg(self);
-        break;
+        return;
     case 2:
         gibserverutils::gibleftleg(self);
-        break;
+        return;
     case 3:
         gibserverutils::gibrightarm(self);
-        break;
+        return;
     case 4:
         gibserverutils::gibleftarm(self);
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
 // Namespace zombie_utility/zombie_utility
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x52a25b7a, Offset: 0x7c50
 // Size: 0x1a4
 function gib_random_parts() {

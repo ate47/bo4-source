@@ -157,14 +157,14 @@ function function_7dc6049e(vehicle, seatindex = undefined) {
         self waittill(#"spawned_player");
         if (isdefined(vehicle) && isdefined(seatindex) && !vehicle isvehicleseatoccupied(seatindex)) {
             vehicle usevehicle(self, seatindex);
-        } else {
-            for (i = 0; i < 11; i++) {
-                if (vehicle function_dcef0ba1(i)) {
-                    var_3693c73b = vehicle function_defc91b2(i);
-                    if (isdefined(var_3693c73b) && var_3693c73b >= 0 && !vehicle isvehicleseatoccupied(i)) {
-                        vehicle usevehicle(self, i);
-                        break;
-                    }
+            continue;
+        }
+        for (i = 0; i < 11; i++) {
+            if (vehicle function_dcef0ba1(i)) {
+                var_3693c73b = vehicle function_defc91b2(i);
+                if (isdefined(var_3693c73b) && var_3693c73b >= 0 && !vehicle isvehicleseatoccupied(i)) {
+                    vehicle usevehicle(self, i);
+                    break;
                 }
             }
         }
@@ -538,23 +538,20 @@ function function_23c46f6e() {
         } else if (isdefined(gameobject.inuse) && gameobject.inuse && self.claimtrigger !== gameobject.trigger) {
             self clear_interact();
         }
-    } else {
-        if (self function_914feddd()) {
-            goto LOC_00000172;
-        }
-        if (self function_43a720c7()) {
-            goto LOC_00000172;
-        }
-        if (self has_interact()) {
-            /#
-                self botprinterror("<unknown string>");
-            #/
-            self clear_interact();
-        LOC_00000172:
-        }
-    LOC_00000172:
+        return;
     }
-LOC_00000172:
+    if (self function_914feddd()) {
+        return;
+    }
+    if (self function_43a720c7()) {
+        return;
+    }
+    if (self has_interact()) {
+        /#
+            self botprinterror("<unknown string>");
+        #/
+        self clear_interact();
+    }
 }
 
 // Namespace bot/bot
@@ -655,7 +652,9 @@ function update_swim() {
     swimheight = self.origin[2] - bottomtrace[#"position"][2];
     if (swimheight < 25) {
         self bottapbutton(67);
-    } else if (swimheight > 45) {
+        return;
+    }
+    if (swimheight > 45) {
         self bottapbutton(68);
     }
 }
@@ -914,7 +913,6 @@ function in_combat() {
     case #"combat_state_in_combat":
     case #"combat_state_has_visible_enemy":
         return 1;
-        break;
     }
     return 0;
 }
@@ -1027,10 +1025,10 @@ function allow_all(allow) {
     if (allow) {
         self ai::set_behavior_attribute("control", "commander");
         self clearforcedgoal();
-    } else {
-        self ai::set_behavior_attribute("control", "autonomous");
-        self setgoal(self.origin, 1);
+        return;
     }
+    self ai::set_behavior_attribute("control", "autonomous");
+    self setgoal(self.origin, 1);
 }
 
 // Namespace bot/bot
@@ -1110,13 +1108,15 @@ function function_b78e1ebf(lefthand = 0) {
     self bottapbutton(buttonbit);
     if (isdefined(level.var_32ae304)) {
         self [[ level.var_32ae304 ]](lefthand);
-    } else if (weapon function_7f23578e()) {
+        return;
+    }
+    if (weapon function_7f23578e()) {
         var_51cee2ad = gettime() + randomintrange(self.bot.var_b2b8f0b6, self.bot.var_e8c941d6);
         if (lefthand) {
             self.bot.var_af11e334 = var_51cee2ad;
-        } else {
-            self.bot.var_51cee2ad = var_51cee2ad;
+            return;
         }
+        self.bot.var_51cee2ad = var_51cee2ad;
     }
 }
 
@@ -1561,9 +1561,9 @@ function devgui_invulnerable(host, botarg, cmdarg) {
     foreach (bot in bots) {
         if (cmdarg == "on") {
             bot val::set(#"devgui", "takedamage", 0);
-        } else {
-            bot val::reset(#"devgui", "takedamage");
+            continue;
         }
+        bot val::reset(#"devgui", "takedamage");
     }
 }
 
@@ -1591,9 +1591,9 @@ function devgui_set_target(botarg, cmdarg) {
             if (target != bot) {
                 bot setentitytarget(target);
             }
-        } else {
-            bot clearentitytarget();
+            continue;
         }
+        bot clearentitytarget();
     }
 }
 
@@ -1605,10 +1605,13 @@ function devgui_goal(botarg, cmdarg) {
     switch (cmdarg) {
     case #"set":
         self function_bbc3f17e(botarg, 0);
+        return;
     case #"me":
         self devgui_goal_me(botarg);
+        return;
     case #"force":
         self function_bbc3f17e(botarg, 1);
+        return;
     case #"clear":
         self devgui_goal_clear(botarg);
         return;
@@ -1735,7 +1738,7 @@ function function_5524bfd5(companionname) {
 function function_263ca697() {
     /#
         weapon = self getcurrentweapon();
-        setdvar(#"bot_spawn_weapon", function_a16a090d(weapon.rootweapon));
+        setdvar(#"bot_spawn_weapon", getweaponname(weapon.rootweapon));
         setdvar(#"hash_c6e51858c88a5ee", util::function_2146bd83(weapon));
         bots = get_bots();
         foreach (bot in bots) {
@@ -1856,9 +1859,9 @@ function function_1744d303(trigger, color, channel) {
             recordcircle(bottom, radius, color, channel, self);
             recordcircle(top, radius, color, channel, self);
             recordline(bottom, top, color, channel, self);
-        } else {
-            function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel, self);
+            return;
         }
+        function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel, self);
     #/
 }
 
@@ -1912,7 +1915,9 @@ function function_301f229d(team) {
             if (!(isdefined(player.revivetrigger.beingrevived) && player.revivetrigger.beingrevived)) {
                 var_9e7013f[var_9e7013f.size] = player;
             }
-        } else if (isbot(player)) {
+            continue;
+        }
+        if (isbot(player)) {
             if (!(isdefined(player.is_reviving_any) && player.is_reviving_any) && player ai::get_behavior_attribute("revive")) {
                 var_52e61055[var_52e61055.size] = player;
             }
@@ -1995,10 +2000,10 @@ function populate_bots() {
         maxallies = getdvarint(#"bot_maxallies", 0);
         maxaxis = getdvarint(#"bot_maxaxis", 0);
         level thread monitor_bot_team_population(maxallies, maxaxis);
-    } else {
-        maxfree = getdvarint(#"bot_maxfree", 0);
-        level thread monitor_bot_population(maxfree);
+        return;
     }
+    maxfree = getdvarint(#"bot_maxfree", 0);
+    level thread monitor_bot_population(maxfree);
 }
 
 // Namespace bot/bot
@@ -2033,11 +2038,9 @@ function monitor_bot_team_population(maxallies, maxaxis) {
 // Size: 0xfa
 function fill_balanced_teams(maxallies, maxaxis) {
     allies = getplayers(#"allies");
-    axis = getplayers(#"axis");
-    while ((allies.size < maxallies || axis.size < maxaxis) && add_balanced_bot(allies, maxallies, axis, maxaxis)) {
+    for (axis = getplayers(#"axis"); (allies.size < maxallies || axis.size < maxaxis) && add_balanced_bot(allies, maxallies, axis, maxaxis); axis = getplayers(#"axis")) {
         waitframe(1);
         allies = getplayers(#"allies");
-        axis = getplayers(#"axis");
     }
 }
 
@@ -2050,18 +2053,18 @@ function monitor_bot_population(maxfree) {
     if (!maxfree) {
         return;
     }
-    players = getplayers();
-    while (players.size < maxfree) {
+    for (players = getplayers(); players.size < maxfree; players = getplayers()) {
         add_bot();
         waitframe(1);
-        players = getplayers();
     }
     while (1) {
         wait(3);
         players = getplayers();
         if (players.size < maxfree) {
             add_bot();
-        } else if (players.size > maxfree) {
+            continue;
+        }
+        if (players.size > maxfree) {
             remove_best_bot(players);
         }
     }

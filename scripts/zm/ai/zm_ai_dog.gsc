@@ -283,10 +283,9 @@ function private get_favorite_enemy(dog) {
     }
     if (!is_target_valid(dog, least_hunted)) {
         return undefined;
-    } else {
-        least_hunted.hunted_by = least_hunted.hunted_by + 1;
-        return least_hunted;
     }
+    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    return least_hunted;
 }
 
 // Namespace zm_ai_dog/zm_ai_dog
@@ -367,9 +366,9 @@ function zombiedogtargetservice(behaviortreeentity) {
             }
             if (isdefined(level.no_target_override)) {
                 [[ level.no_target_override ]](behaviortreeentity);
-            } else {
-                behaviortreeentity setgoal(behaviortreeentity.origin);
+                return;
             }
+            behaviortreeentity setgoal(behaviortreeentity.origin);
             return;
         }
     }

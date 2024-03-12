@@ -21,14 +21,14 @@ function trophy_state_change(localclientnum, oldval, newval, bnewent, binitialsn
     switch (newval) {
     case 1:
         self thread trophy_rolling_anim(localclientnum);
-        break;
+        return;
     case 2:
         self thread trophy_stationary_anim(localclientnum);
-        break;
+        return;
     case 3:
-        break;
+        return;
     case 0:
-        break;
+        return;
     }
 }
 
@@ -40,14 +40,14 @@ function trophy_state_change_recon(localclientnum, oldval, newval, bnewent, bini
     switch (newval) {
     case 1:
         self thread trophy_rolling_anim(localclientnum);
-        break;
+        return;
     case 2:
         self thread trophy_stationary_anim(localclientnum);
-        break;
+        return;
     case 3:
-        break;
+        return;
     case 0:
-        break;
+        return;
     }
 }
 

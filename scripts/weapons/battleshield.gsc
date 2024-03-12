@@ -19,9 +19,9 @@ function autoexec __init__system__() {
 // Checksum 0x5ef3e880, Offset: 0xf0
 // Size: 0xdc
 function __init__() {
-    level.var_2e115fb9 = getweapon(#"sig_buckler");
-    level.var_b9d2a7a9 = getweapon(#"sig_buckler_lh");
-    level.var_f1ab9c51 = getweapon(#"sig_shield_turret");
+    level.weaponsigbuckler = getweapon(#"sig_buckler");
+    level.weaponsigbucklerlh = getweapon(#"sig_buckler_lh");
+    level.weaponsigshieldturret = getweapon(#"sig_shield_turret");
     level.var_69aaf8f = getdvarfloat(#"hash_27445ccf68d30520", 5);
     ability_player::register_gadget_activation_callbacks(11, &function_e31bc59d, &linkcable_off_tele);
 }

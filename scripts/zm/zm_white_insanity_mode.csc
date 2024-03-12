@@ -31,13 +31,13 @@ function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(0, #"hash_7867b5508ce25848");
             self.sfx = self playloopsound(#"hash_2c5ad3d4cdc507c");
         }
-    } else {
-        stopfx(localclientnum, self.fx);
-        if (isdefined(self.sfx)) {
-            self playsound(0, #"hash_6e263590089ef88e");
-            self stoploopsound(self.sfx);
-            self.sfx = undefined;
-        }
+        return;
+    }
+    stopfx(localclientnum, self.fx);
+    if (isdefined(self.sfx)) {
+        self playsound(0, #"hash_6e263590089ef88e");
+        self stoploopsound(self.sfx);
+        self.sfx = undefined;
     }
 }
 

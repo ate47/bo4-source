@@ -107,7 +107,8 @@ function function_f2fd92d1() {
     }
     if (isdefined(target_pos_onnavmesh)) {
         return target_pos_onnavmesh;
-    } else if (isdefined(self.current_pathto_pos)) {
+    }
+    if (isdefined(self.current_pathto_pos)) {
         return self.current_pathto_pos;
     }
 }
@@ -196,23 +197,22 @@ function function_3e16dec3(params) {
     self endon(#"death");
     self endon(#"change_state");
     for (;;) {
-        for (;;) {
-            if (isdefined(self.favoriteenemy)) {
-                if (isdefined(self.settings.var_cfe1cc83)) {
-                    self playloopsound(self.settings.var_cfe1cc83);
-                }
-                self.current_pathto_pos = self function_f2fd92d1();
-                if (isdefined(self.current_pathto_pos)) {
-                    self setspeed(self.settings.var_9eff22ee);
-                    self setbrake(0);
-                    self function_a57c34b7(self.current_pathto_pos, 1, 1);
-                    self waittill_pathing_done(1);
-                    continue;
-                }
-            } else {
-                self function_55be8453();
+        if (isdefined(self.favoriteenemy)) {
+            if (isdefined(self.settings.var_cfe1cc83)) {
+                self playloopsound(self.settings.var_cfe1cc83);
             }
+            self.current_pathto_pos = self function_f2fd92d1();
+            if (isdefined(self.current_pathto_pos)) {
+                self setspeed(self.settings.var_9eff22ee);
+                self setbrake(0);
+                self function_a57c34b7(self.current_pathto_pos, 1, 1);
+                self waittill_pathing_done(1);
+                continue;
+            }
+        } else {
+            self function_55be8453();
         }
+        waitframe(1);
     }
 }
 
@@ -236,9 +236,9 @@ function function_ef0bfb9d() {
                 if (isdefined(target.archetype)) {
                     target zombie_utility::setup_zombie_knockdown(self);
                     target.knockdown_type = "knockdown_shoved";
-                } else {
-                    target dodamage(self.settings.var_274be2d6, self.origin, self, self, "", "MOD_IMPACT", 0);
+                    continue;
                 }
+                target dodamage(self.settings.var_274be2d6, self.origin, self, self, "", "MOD_IMPACT", 0);
             }
         }
         physicsexplosionsphere(self.origin, 200, 100, 2);
@@ -311,21 +311,20 @@ function function_419f8ccb() {
     self endon(#"death");
     self endon(#"change_state");
     for (;;) {
-        for (;;) {
-            if (self function_78b6454d()) {
+        if (self function_78b6454d()) {
+            self vehicle_ai::set_state("death");
+        }
+        if (isdefined(self.favoriteenemy)) {
+            distfromplayer = distancesquared(self.origin, self.favoriteenemy.origin);
+            if (distfromplayer < self.settings.var_2c001f55 * self.settings.var_2c001f55 && !(isdefined(self.var_8d5279eb) && self.var_8d5279eb)) {
+                self.fxent clientfield::set("towers_boss_dust_ball_fx", 2);
+                self.var_8d5279eb = 1;
+            }
+            if (distfromplayer < self.settings.var_7e3165c1 * self.settings.var_7e3165c1) {
                 self vehicle_ai::set_state("death");
             }
-            if (isdefined(self.favoriteenemy)) {
-                distfromplayer = distancesquared(self.origin, self.favoriteenemy.origin);
-                if (distfromplayer < self.settings.var_2c001f55 * self.settings.var_2c001f55 && !(isdefined(self.var_8d5279eb) && self.var_8d5279eb)) {
-                    self.fxent clientfield::set("towers_boss_dust_ball_fx", 2);
-                    self.var_8d5279eb = 1;
-                }
-                if (distfromplayer < self.settings.var_7e3165c1 * self.settings.var_7e3165c1) {
-                    self vehicle_ai::set_state("death");
-                }
-            }
         }
+        waitframe(1);
     }
 }
 

@@ -692,7 +692,7 @@ function private function_6f7a6cbc(params) {
         foreach (swat in self.script_owner.swat_team) {
             if (isdefined(swat) && isalive(swat) && swat != self) {
                 swat thread registerrein_amb("swat_destroyed");
-                break;
+                return;
             }
         }
     }
@@ -993,10 +993,10 @@ function private function_8de67419(leavenode) {
             }
             waitframe(1);
         }
-    } else {
-        self function_60d50ea4();
-        self notify(#"hash_2bf34763927dd61b");
+        return;
     }
+    self function_60d50ea4();
+    self notify(#"hash_2bf34763927dd61b");
 }
 
 // Namespace swat_team/swat_team
@@ -1110,7 +1110,7 @@ function function_656691ab() {
                 self function_9ffc1856(self.heligoalpos, 1);
             }
             self notify(#"hash_340ab3c2b94ff86a");
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -1129,9 +1129,9 @@ function function_9ffc1856(goalpos, stop) {
         } else {
             self function_a57c34b7(goalpos, stop, 0);
         }
-    } else {
-        self setgoal(goalpos, stop);
+        return;
     }
+    self setgoal(goalpos, stop);
 }
 
 // Namespace swat_team/swat_team
@@ -1943,16 +1943,16 @@ function private registerrein_amb(type) {
     switch (type) {
     case #"swat_arrive":
         self playsound("vox_swa" + self.voxid + "_ult_swat_arrive");
-        break;
+        return;
     case #"swat_destroyed":
         self playsound("vox_swa" + self.voxid + "_ult_swat_destroyed");
-        break;
+        return;
     case #"swat_engaging":
         self playsound("vox_swa" + self.voxid + "_ult_swat_engaging");
-        break;
+        return;
     case #"swat_kill":
         self playsound("vox_swa" + self.voxid + "_ult_swat_kill");
-        break;
+        return;
     case #"swat_ready":
         self playsound("vox_swa" + self.voxid + "_ult_swat_ready");
     case #"generic_pain":
@@ -1965,22 +1965,22 @@ function private registerrein_amb(type) {
         } else if (self.voxid == 4) {
             self playsound(array::random(level.var_383a6948));
         }
-        break;
+        return;
     case #"flash_pain":
         if (randomint(100) > 50) {
             self playsound("vox_swa" + self.voxid + "_ult_swat_electro");
         } else {
             self playsound("vox_swa" + self.voxid + "_ult_swat_blind");
         }
-        break;
+        return;
     case #"fire_pain":
         self playsound("vox_swa" + self.voxid + "_ult_swat_burn_dead");
-        break;
+        return;
     case #"stab_pain":
         self playsound("vox_swa" + self.voxid + "_ult_swat_stabbed");
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -2153,11 +2153,13 @@ function function_8821879c(killstreak_id) {
                     } else {
                         self.var_6c0553ea.remoteweapon function_944f0911(#"hash_60c7465070c7985c");
                     }
-                } else if (!self gamepadusedlast()) {
-                    self.var_6c0553ea.remoteweapon function_944f0911(#"hash_600af0ac4af0b090");
-                } else {
-                    self.var_6c0553ea.remoteweapon function_944f0911(#"hash_60c7465070c7985c");
+                    continue;
                 }
+                if (!self gamepadusedlast()) {
+                    self.var_6c0553ea.remoteweapon function_944f0911(#"hash_600af0ac4af0b090");
+                    continue;
+                }
+                self.var_6c0553ea.remoteweapon function_944f0911(#"hash_60c7465070c7985c");
             }
         }
     }
@@ -2223,7 +2225,7 @@ function swat_loop(killstreak_id) {
                 self.var_6c0553ea.remoteweapon.usetrigger delete();
                 self.var_6c0553ea.remoteweapon = undefined;
             }
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -2247,9 +2249,9 @@ function private function_2d44c54f(var_eca4744a, var_56bd1bef, nodes) {
         withinfov = vectordot(var_eca4744a, vectornormalize(node.origin - var_56bd1bef) > cos(30));
         if (withinfov && function_96c81b85(tacpoint, node.origin)) {
             node.score = 100;
-        } else {
-            node.score = 0;
+            continue;
         }
+        node.score = 0;
     }
     return array::merge_sort(nodes, &sort_by_score);
 }
@@ -2284,14 +2286,14 @@ function function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced = 0) 
                 break;
             }
         }
-    } else {
-        points = function_b777d194(var_56bd1bef);
-        for (i = 0; i < 2; i++) {
-            if (owner.swat_team[i] == swat) {
-                swat setgoal(points[i]);
-                swat.var_ecdaf39 = points[i];
-                return;
-            }
+        return;
+    }
+    points = function_b777d194(var_56bd1bef);
+    for (i = 0; i < 2; i++) {
+        if (owner.swat_team[i] == swat) {
+            swat setgoal(points[i]);
+            swat.var_ecdaf39 = points[i];
+            return;
         }
     }
 }
@@ -2378,44 +2380,50 @@ function function_4c2ed78d(owner, forced = 0) {
                 waitframe(1);
                 continue;
             }
-            jumpiffalse(isdefined(nearbyplayer)) LOC_00000688;
-            if (gettime() < swat.ai.var_b3e4c4fe) {
-                waitframe(1);
-                continue;
-            }
-            tacpoint = getclosesttacpoint(nearbyplayer.origin);
-            jumpiffalse(isdefined(tacpoint)) LOC_00000688;
-            newpos = getclosestpointonnavmesh(tacpoint.origin, 200, self getpathfindingradius(), 1);
-            if (isdefined(newpos) && function_7b3ad3fe(swat, newpos)) {
-                swat setgoal(newpos, 1);
-                swat.ai.var_b3e4c4fe = randomintrange(4500, 6500);
-                continue;
-            }
-            cylinder = ai::t_cylinder(swat.origin, 1200, 200);
-            var_8f3583cf = ai::t_cylinder(swat.origin, 150, 200);
-            var_5af32875 = ai::t_cylinder(swat.origin, 300, 200);
-            tacpoints = tacticalquery("swat_tacquery_seek", swat.origin, cylinder, swat, var_8f3583cf, tacpoint.origin, var_5af32875);
-            jumpiffalse(isdefined(tacpoints) && tacpoints.size) LOC_00000688;
-            swat setgoal(tacpoints[0].origin, 1);
-            swat.ai.var_b3e4c4fe = randomintrange(4500, 6500);
-        } else if (!isdefined(var_56bd1bef)) {
-            waitframe(1);
-        } else {
-            var_eca4744a = vectornormalize(var_56bd1bef - owner_origin);
-            tacpoint = getclosesttacpoint(var_56bd1bef);
-            shouldmove = 0;
-            if (isdefined(tacpoint)) {
-                if (forced) {
-                    shouldmove = 1;
-                } else if (isdefined(swat.var_ecdaf39)) {
-                    shouldmove = distancesquared(var_56bd1bef, swat.var_ecdaf39) >= 600 * 600;
-                } else {
-                    shouldmove = distancesquared(var_56bd1bef, swat.origin) >= 600 * 600;
+            if (isdefined(nearbyplayer)) {
+                if (gettime() < swat.ai.var_b3e4c4fe) {
+                    waitframe(1);
+                    continue;
+                }
+                tacpoint = getclosesttacpoint(nearbyplayer.origin);
+                if (isdefined(tacpoint)) {
+                    newpos = getclosestpointonnavmesh(tacpoint.origin, 200, self getpathfindingradius(), 1);
+                    if (isdefined(newpos) && function_7b3ad3fe(swat, newpos)) {
+                        swat setgoal(newpos, 1);
+                        swat.ai.var_b3e4c4fe = randomintrange(4500, 6500);
+                        continue;
+                    } else {
+                        cylinder = ai::t_cylinder(swat.origin, 1200, 200);
+                        var_8f3583cf = ai::t_cylinder(swat.origin, 150, 200);
+                        var_5af32875 = ai::t_cylinder(swat.origin, 300, 200);
+                        tacpoints = tacticalquery("swat_tacquery_seek", swat.origin, cylinder, swat, var_8f3583cf, tacpoint.origin, var_5af32875);
+                        if (isdefined(tacpoints) && tacpoints.size) {
+                            swat setgoal(tacpoints[0].origin, 1);
+                            swat.ai.var_b3e4c4fe = randomintrange(4500, 6500);
+                            continue;
+                        }
+                    }
                 }
             }
-            if (shouldmove) {
-                function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced);
+        }
+        if (!isdefined(var_56bd1bef)) {
+            waitframe(1);
+            continue;
+        }
+        var_eca4744a = vectornormalize(var_56bd1bef - owner_origin);
+        tacpoint = getclosesttacpoint(var_56bd1bef);
+        shouldmove = 0;
+        if (isdefined(tacpoint)) {
+            if (forced) {
+                shouldmove = 1;
+            } else if (isdefined(swat.var_ecdaf39)) {
+                shouldmove = distancesquared(var_56bd1bef, swat.var_ecdaf39) >= 600 * 600;
+            } else {
+                shouldmove = distancesquared(var_56bd1bef, swat.origin) >= 600 * 600;
             }
+        }
+        if (shouldmove) {
+            function_a4ab9672(swat, owner, var_eca4744a, var_56bd1bef, forced);
         }
     }
 }
@@ -2731,12 +2739,12 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
                 scoreevents::processscoreevent(#"hash_7e7146503217ca9c", attacker, victim, getweapon(#"swat_team"));
             }
         }
-    } else {
-        foreach (swat in attacker.swat_team) {
-            if (isdefined(swat) && isdefined(swat.enemy) && swat.enemy == victim && swat attackedrecently(victim, 3)) {
-                scoreevents::processscoreevent(#"hash_1f0ecf369a09e682", attacker, victim, getweapon(#"swat_team"));
-                return;
-            }
+        return;
+    }
+    foreach (swat in attacker.swat_team) {
+        if (isdefined(swat) && isdefined(swat.enemy) && swat.enemy == victim && swat attackedrecently(victim, 3)) {
+            scoreevents::processscoreevent(#"hash_1f0ecf369a09e682", attacker, victim, getweapon(#"swat_team"));
+            return;
         }
     }
 }

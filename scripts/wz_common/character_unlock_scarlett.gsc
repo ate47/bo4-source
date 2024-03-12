@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_scarlett/character_unlock_scarlett
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6356142d, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_scarlett/character_unlock_scarlett
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x65db0b3a, Offset: 0x130
 // Size: 0x34
 function function_2613aeec(enabled) {
@@ -34,7 +34,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_scarlett/character_unlock_scarlett
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc57b9ff0, Offset: 0x170
 // Size: 0x12c
 function on_player_killed() {

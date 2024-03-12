@@ -44,7 +44,7 @@ function player_any_player_in_laststand() {
 }
 
 // Namespace laststand/laststand_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x164ba657, Offset: 0x170
 // Size: 0x130
 function is_facing(facee, requireddot = 0.9) {
@@ -114,7 +114,7 @@ function drawcylinder(pos, rad, height) {
 }
 
 // Namespace laststand/laststand_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x65cf9ede, Offset: 0x6d8
 // Size: 0x74
 function function_d4c9e1b5() {

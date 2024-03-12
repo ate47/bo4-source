@@ -80,7 +80,7 @@ function electric_cherry_reload_attack_fx(localclientnum, oldval, newval, bnewen
     case 2:
     case 3:
         self.electric_cherry_reload_fx = util::playfxontag(localclientnum, level._effect[#"electric_cherry_explode"], self, "tag_origin");
-        break;
+        return;
     }
 }
 
@@ -108,15 +108,15 @@ function tesla_death_fx_callback(localclientnum, oldval, newval, bnewent, biniti
         if (isdefined(self.n_death_fx)) {
             setfxignorepause(localclientnum, self.n_death_fx, 1);
         }
-    } else {
-        if (isdefined(self.n_death_fx)) {
-            deletefx(localclientnum, self.n_death_fx, 1);
-            self.n_death_fx = undefined;
-        }
-        if (isdefined(self.var_16e53a57)) {
-            self stoploopsound(self.var_16e53a57);
-            self.var_16e53a57 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.n_death_fx)) {
+        deletefx(localclientnum, self.n_death_fx, 1);
+        self.n_death_fx = undefined;
+    }
+    if (isdefined(self.var_16e53a57)) {
+        self stoploopsound(self.var_16e53a57);
+        self.var_16e53a57 = undefined;
     }
 }
 
@@ -148,19 +148,19 @@ function tesla_shock_eyes_fx_callback(localclientnum, oldval, newval, bnewent, b
         if (isdefined(self) && isdefined(self.n_shock_eyes_fx)) {
             setfxignorepause(localclientnum, self.n_shock_fx, 1);
         }
-    } else {
-        if (isdefined(self.n_shock_eyes_fx)) {
-            deletefx(localclientnum, self.n_shock_eyes_fx, 1);
-            self.n_shock_eyes_fx = undefined;
-        }
-        if (isdefined(self.n_shock_fx)) {
-            deletefx(localclientnum, self.n_shock_fx, 1);
-            self.n_shock_fx = undefined;
-        }
-        if (isdefined(self.var_16e53a57)) {
-            self stoploopsound(self.var_16e53a57);
-            self.var_16e53a57 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.n_shock_eyes_fx)) {
+        deletefx(localclientnum, self.n_shock_eyes_fx, 1);
+        self.n_shock_eyes_fx = undefined;
+    }
+    if (isdefined(self.n_shock_fx)) {
+        deletefx(localclientnum, self.n_shock_fx, 1);
+        self.n_shock_fx = undefined;
+    }
+    if (isdefined(self.var_16e53a57)) {
+        self stoploopsound(self.var_16e53a57);
+        self.var_16e53a57 = undefined;
     }
 }
 

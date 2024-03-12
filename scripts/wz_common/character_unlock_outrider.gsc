@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_outrider/character_unlock_outrider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f57908d, Offset: 0xe0
 // Size: 0x34
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_outrider/character_unlock_outrider
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f8e31f7, Offset: 0x120
 // Size: 0x74
 function function_2613aeec(enabled) {
@@ -35,7 +35,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_outrider/character_unlock_outrider
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4ea6b22d, Offset: 0x1a0
 // Size: 0xc4
 function function_1c4b5097(item) {
@@ -50,7 +50,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_outrider/character_unlock_outrider
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe09047c6, Offset: 0x270
 // Size: 0x84
 function function_c915e2a7() {

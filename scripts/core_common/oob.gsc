@@ -447,8 +447,8 @@ function private disableplayeroob(disabled) {
     if (disabled) {
         self resetoobtimer();
         self.oobdisabled = 1;
-    } else {
-        self.oobdisabled = 0;
+        return;
     }
+    self.oobdisabled = 0;
 }
 

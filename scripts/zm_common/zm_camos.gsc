@@ -119,9 +119,8 @@ function function_4f727cf5(weapon, weaponoptions, var_b07a5171 = 0) {
         }
         self.var_3f021416[weapon] = var_c44040bf;
         return var_c44040bf;
-    } else {
-        return level.pack_a_punch_camo_index;
     }
+    return level.pack_a_punch_camo_index;
 }
 
 // Namespace zm_camos/zm_camos
@@ -194,7 +193,9 @@ function function_7b29c2d2(weapon) {
         self thread activecamo::function_896ac347(weapon, #"rapid_kills", 1);
         self.var_88ebd633.var_d9449a3 = 0;
         self notify(#"hash_7e9b17b054c01cb3");
-    } else if (self.var_88ebd633.var_d9449a3 == 1) {
+        return;
+    }
+    if (self.var_88ebd633.var_d9449a3 == 1) {
         self thread function_160898c();
     }
 }
@@ -228,7 +229,9 @@ function function_432cf6d(weapon) {
         self thread activecamo::function_896ac347(weapon, #"rapid_headshots", 1);
         self.var_88ebd633.var_bcacb3a3 = 0;
         self notify(#"hash_3dbf3a8521ba1621");
-    } else if (self.var_88ebd633.var_bcacb3a3 == 1) {
+        return;
+    }
+    if (self.var_88ebd633.var_bcacb3a3 == 1) {
         self thread function_d01affa9();
     }
 }
@@ -254,9 +257,9 @@ function function_4092decc(weapon) {
         if (zm_pap_util::function_7352d8cc(weapon)) {
             self activecamo::function_896ac347(weapon, #"pap_weapon_double_packed", 1);
         }
-    } else {
-        self function_a24c564f(#"reset_pack", weapon);
+        return;
     }
+    self function_a24c564f(#"reset_pack", weapon);
 }
 
 // Namespace zm_camos/zm_camos

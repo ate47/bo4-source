@@ -210,9 +210,9 @@ function claymore_detonation(e_planter) {
             wait(0.4);
             if (isdefined(self.owner)) {
                 self detonate(self.owner);
-            } else {
-                self detonate(undefined);
+                return;
             }
+            self detonate(undefined);
             return;
         }
     }

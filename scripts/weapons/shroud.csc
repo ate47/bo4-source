@@ -52,11 +52,11 @@ function private function_37bf13ad(localclientnum, oldval, newval, bnewent, bini
     switch (newval) {
     case 0:
     default:
-        break;
+        return;
     case 1:
         self thread function_a252eaf0(localclientnum, self getentitynumber(), self.team);
         self thread function_e3a084cd(localclientnum, bwastimejump);
-        break;
+        return;
     }
 }
 
@@ -83,10 +83,10 @@ function private function_90fc4e4c() {
         if (!var_7f14472d) {
             self.var_981be9e8 disableonradar();
             self.var_981be9e8 function_811196d1(1);
-        } else {
-            self.var_981be9e8 enableonradar();
-            self.var_981be9e8 function_811196d1(0);
+            return;
         }
+        self.var_981be9e8 enableonradar();
+        self.var_981be9e8 function_811196d1(0);
     }
 }
 
@@ -148,8 +148,7 @@ function private function_e3a084cd(localclientnum, bwastimejump) {
     var_18452954 = getservertime(localclientnum);
     startorigin = self.origin;
     var_dc3f8ecd = startorigin;
-    var_3d3d7bb1 = 0;
-    while (var_3d3d7bb1 < 250) {
+    for (var_3d3d7bb1 = 0; var_3d3d7bb1 < 250; var_3d3d7bb1 = 0) {
         var_dc3f8ecd = self.origin;
         var_450cbe48 = getservertime(localclientnum);
         elapsedtime = var_450cbe48 - var_18452954;
@@ -157,8 +156,7 @@ function private function_e3a084cd(localclientnum, bwastimejump) {
         parent = self getlinkedent();
         if (isdefined(parent) || var_dc3f8ecd == self.origin) {
             var_3d3d7bb1 = var_3d3d7bb1 + getservertime(localclientnum) - var_450cbe48;
-        } else {
-            var_3d3d7bb1 = 0;
+            continue;
         }
     }
     if (isdefined(self.var_7ec0e2d1)) {
@@ -229,9 +227,7 @@ function private function_25f0bf77(localclientnum) {
         while (i < endpoint) {
             player = players[i];
             if (!isdefined(player)) {
-                goto LOC_00000322;
-            }
-            if (player.team == self.team) {
+            } else if (player.team == self.team) {
                 if (!isdefined(player.var_981be9e8)) {
                     player.var_981be9e8 = spawn(localclientnum, player.origin, "script_model", player getentitynumber(), self.team);
                     player.var_981be9e8 setmodel(#"tag_origin");
@@ -242,9 +238,7 @@ function private function_25f0bf77(localclientnum) {
                     player thread function_27e74bc4();
                 }
                 player function_90fc4e4c();
-            LOC_00000322:
             }
-        LOC_00000322:
             i++;
         }
         if (i == players.size) {

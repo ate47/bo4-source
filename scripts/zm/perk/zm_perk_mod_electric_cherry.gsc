@@ -49,11 +49,13 @@ function electric_cherry_death_fx() {
         } else {
             self clientfield::set("tesla_shock_eyes_fx", 1);
         }
-    } else if (isvehicle(self)) {
-        self clientfield::set("tesla_death_fx_veh", 1);
-    } else {
-        self clientfield::set("tesla_death_fx", 1);
+        return;
     }
+    if (isvehicle(self)) {
+        self clientfield::set("tesla_death_fx_veh", 1);
+        return;
+    }
+    self clientfield::set("tesla_death_fx", 1);
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
@@ -70,9 +72,9 @@ function electric_cherry_shock_fx() {
     self waittill(#"stun_fx_end");
     if (isvehicle(self)) {
         self clientfield::set("tesla_shock_eyes_fx_veh", 0);
-    } else {
-        self clientfield::set("tesla_shock_eyes_fx", 0);
+        return;
     }
+    self clientfield::set("tesla_shock_eyes_fx", 0);
 }
 
 // Namespace zm_perk_mod_electric_cherry/zm_perk_mod_electric_cherry
@@ -135,7 +137,7 @@ function check_for_reload_complete(weapon, n_clip_current, n_clip_max) {
         current_weapon = self getcurrentweapon();
         if (current_weapon == weapon && !weapon.isabilityweapon) {
             self thread function_97a7641d(weapon, n_clip_current, n_clip_max);
-            break;
+            return;
         }
     }
 }

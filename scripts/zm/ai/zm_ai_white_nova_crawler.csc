@@ -41,7 +41,9 @@ function private function_582a3075(localclientnum) {
     if (isdefined(self.var_9fde8624)) {
         if (self.var_9fde8624 == #"blue_nova_crawler") {
             self._effect[#"hash_219e13e8868d7af4"] = "zm_ai/fx8_nova_crawler_mq_explode";
-        } else if (self.var_9fde8624 == #"ranged_nova_crawler") {
+            return;
+        }
+        if (self.var_9fde8624 == #"ranged_nova_crawler") {
             self._effect[#"hash_219e13e8868d7af4"] = "zm_ai/fx8_nova_crawler_elec_explode";
             self._effect[#"nova_crawler_phase_teleport_end_fx"] = "zm_ai/fx8_nova_crawler_elec_teleport_appear";
         }
@@ -55,7 +57,9 @@ function private function_582a3075(localclientnum) {
 function private function_be621cc7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newval === 1) {
         self.var_f09d143c = util::playfxontag(localclientnum, level._effect[#"fx8_nova_crawler_zombie_buff"], self, "j_spine4");
-    } else if (isdefined(self.var_f09d143c)) {
+        return;
+    }
+    if (isdefined(self.var_f09d143c)) {
         stopfx(localclientnum, self.var_f09d143c);
         self.var_f09d143c = undefined;
     }
@@ -104,7 +108,9 @@ function function_9ed375e1(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval) {
         self.spore_fx = function_239993de(localclientnum, "zm_ai/fx8_nova_crawler_gas_projectile", self, "tag_origin");
-    } else if (isdefined(self.spore_fx)) {
+        return;
+    }
+    if (isdefined(self.spore_fx)) {
         stopfx(localclientnum, self.spore_fx);
         self.spore_fx = undefined;
     }

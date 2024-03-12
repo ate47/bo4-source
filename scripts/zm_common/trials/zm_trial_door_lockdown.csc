@@ -69,7 +69,9 @@ function private zm_trial_door_lockdown(localclientnum, oldval, newval, bnewent,
             break;
         }
         self.var_958e3374 = playfx(localclientnum, var_b1e1a2db, self.origin - vectorscale((0, 0, 1), 48), v_forward);
-    } else if (isdefined(self.var_958e3374)) {
+        return;
+    }
+    if (isdefined(self.var_958e3374)) {
         stopfx(localclientnum, self.var_958e3374);
         self.var_958e3374 = undefined;
     }

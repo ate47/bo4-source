@@ -65,13 +65,13 @@ function function_c13d6f7d() {
         foreach (n_index in var_699f8485) {
             hidestaticmodel(n_index);
         }
-    } else {
-        foreach (n_index in var_699f8485) {
-            hidestaticmodel(n_index);
-        }
-        foreach (n_index in var_21034fe0) {
-            hidestaticmodel(n_index);
-        }
+        return;
+    }
+    foreach (n_index in var_699f8485) {
+        hidestaticmodel(n_index);
+    }
+    foreach (n_index in var_21034fe0) {
+        hidestaticmodel(n_index);
     }
 }
 

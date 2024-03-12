@@ -32,10 +32,8 @@ function init() {
 // Size: 0xa4
 function cliff_forge_vo() {
     level flag::wait_till(#"hash_7943879f3be8ccc6");
-    a_players = function_6645d04c();
-    while (a_players.size == 0) {
+    for (a_players = function_6645d04c(); a_players.size == 0; a_players = function_6645d04c()) {
         wait(1.6);
-        a_players = function_6645d04c();
     }
     e_player = array::random(a_players);
     e_player zm_vo::function_a2bd5a0c("vox_cliff_forge_enter");
@@ -47,21 +45,21 @@ function cliff_forge_vo() {
 // Size: 0x214
 function function_6645d04c() {
     a_players = [];
-    var_b97b1d5c = array("bridge", "center", "forge", "lower", "upper");
-    foreach (str_location in var_b97b1d5c) {
+    a_str_locations = array("bridge", "center", "forge", "lower", "upper");
+    foreach (str_location in a_str_locations) {
         var_1a34f5a1 = zm_zonemgr::get_players_in_zone("zone_cliff_tombs_" + str_location, 1);
         a_players = arraycombine(a_players, var_1a34f5a1, 0, 0);
     }
     if (a_players.size > 0) {
-        var_8dc80509 = arraycopy(a_players);
-        var_9e594b37 = struct::get("cliff_forge_vo");
+        a_players_copy = arraycopy(a_players);
+        s_vo = struct::get("cliff_forge_vo");
         foreach (player in a_players) {
-            n_dist_sq = distance2dsquared(var_9e594b37.origin, player.origin);
+            n_dist_sq = distance2dsquared(s_vo.origin, player.origin);
             if (n_dist_sq > 1245456) {
-                arrayremovevalue(var_8dc80509, player);
+                arrayremovevalue(a_players_copy, player);
             }
         }
-        a_players = var_8dc80509;
+        a_players = a_players_copy;
     }
     return a_players;
 }
@@ -348,8 +346,8 @@ function function_ab7f70b9(e_player) {
     if (!isdefined(str_zone)) {
         return undefined;
     }
-    var_601fee0 = function_27028b8e(str_zone);
-    return var_601fee0;
+    str_display = function_27028b8e(str_zone);
+    return str_display;
 }
 
 // Namespace zm_red_zones/zm_red_zones
@@ -365,106 +363,106 @@ function function_27028b8e(str_zone) {
     }
     switch (str_zone) {
     case #"zone_amphitheater":
-        var_601fee0 = #"hash_654702bdca18105";
+        str_display = #"hash_654702bdca18105";
         break;
     case #"zone_amphitheater_backstage":
-        var_601fee0 = #"hash_10a873392c5d4565";
+        str_display = #"hash_10a873392c5d4565";
         break;
     case #"zone_cliff_tombs_lower":
     case #"zone_cliff_tombs_forge":
     case #"zone_cliff_tombs_center":
     case #"zone_cliff_tombs_bridge":
     case #"zone_cliff_tombs_upper":
-        var_601fee0 = #"hash_50916c74fe22e63b";
+        str_display = #"hash_50916c74fe22e63b";
         break;
     case #"zone_drakaina_arena":
-        var_601fee0 = #"hash_78d4c8eb48aabd66";
+        str_display = #"hash_78d4c8eb48aabd66";
         break;
     case #"zone_eastern_plaza":
-        var_601fee0 = #"hash_65a67d1c5af364c7";
+        str_display = #"hash_65a67d1c5af364c7";
         break;
     case #"zone_bathhouse_outside":
     case #"zone_bathhouse_inside":
-        var_601fee0 = #"hash_27a6b15e094c02f1";
+        str_display = #"hash_27a6b15e094c02f1";
         break;
     case #"zone_spartan_east_to_treasuries":
     case #"zone_intersection_of_treasuries_upper":
     case #"zone_intersection_of_treasuries_lower":
-        var_601fee0 = #"hash_4785d4d350f36326";
+        str_display = #"hash_4785d4d350f36326";
         break;
     case #"zone_monument_of_craterus_lower":
     case #"zone_monument_of_craterus_upper":
-        var_601fee0 = #"hash_70363674b3e9a47c";
+        str_display = #"hash_70363674b3e9a47c";
         break;
     case #"zone_river_lower":
     case #"zone_river_upper":
-        var_601fee0 = #"hash_3a319fea8f608182";
+        str_display = #"hash_3a319fea8f608182";
         break;
     case #"zone_serpent_pass_upper":
     case #"zone_serpent_pass_bridge":
     case #"zone_serpent_pass_center":
     case #"zone_serpent_pass_lower":
-        var_601fee0 = #"hash_4f55839413fe0046";
+        str_display = #"hash_4f55839413fe0046";
         break;
     case #"zone_stoa_of_athenians_to_spartan_upper":
     case #"zone_spartan_monument_west":
     case #"zone_spartan_monument_east":
     case #"zone_spartan_monument_upper":
-        var_601fee0 = #"hash_303ce0aa4cf6a23e";
+        str_display = #"hash_303ce0aa4cf6a23e";
         break;
     case #"zone_stoa_of_the_athenians_east":
     case #"zone_stoa_of_the_athenians_west":
-        var_601fee0 = #"hash_12a9743a3b9f2236";
+        str_display = #"hash_12a9743a3b9f2236";
         break;
     case #"zone_temple_to_stoa_of_the_athenians":
-        var_601fee0 = #"hash_2910970920dd3ee3";
+        str_display = #"hash_2910970920dd3ee3";
         break;
     case #"zone_temple_of_apollo_left_path":
     case #"zone_temple_of_apollo_right_path":
     case #"zone_temple_of_apollo_back":
     case #"zone_temple_of_apollo":
-        var_601fee0 = #"hash_106d425e41e8c240";
+        str_display = #"hash_106d425e41e8c240";
         break;
     case #"zone_offering":
-        var_601fee0 = #"hash_6268d50ff53b29d4";
+        str_display = #"hash_6268d50ff53b29d4";
         break;
     case #"zone_upper_road_west":
     case #"zone_upper_road_east":
     case #"zone_portico":
-        var_601fee0 = #"hash_32a859886bcbfb10";
+        str_display = #"hash_32a859886bcbfb10";
         break;
     case #"zone_western_plaza":
-        var_601fee0 = #"hash_187fe3987a160b42";
+        str_display = #"hash_187fe3987a160b42";
         break;
     case #"zone_boss_plateau_1":
-        var_601fee0 = #"hash_63b3c5fb5611240f";
+        str_display = #"hash_63b3c5fb5611240f";
         break;
     case #"zone_boss_plateau_2":
-        var_601fee0 = #"hash_63b3c4fb5611225c";
+        str_display = #"hash_63b3c4fb5611225c";
         break;
     case #"zone_boss_plateau_3":
-        var_601fee0 = #"hash_63b3c6fb561125c2";
+        str_display = #"hash_63b3c6fb561125c2";
         break;
     case #"zone_ww_quest_earth":
-        var_601fee0 = #"hash_4903463b3bfd1f8f";
+        str_display = #"hash_4903463b3bfd1f8f";
         break;
     case #"zone_ww_quest_death":
-        var_601fee0 = #"hash_77ea88b9440ad045";
+        str_display = #"hash_77ea88b9440ad045";
         break;
     case #"zone_ww_quest_light":
-        var_601fee0 = #"hash_5e05f18694a561c7";
+        str_display = #"hash_5e05f18694a561c7";
         break;
     case #"zone_ww_quest_air":
-        var_601fee0 = #"hash_286cefa4bc6e994f";
+        str_display = #"hash_286cefa4bc6e994f";
         break;
     default:
-        var_601fee0 = undefined;
+        str_display = undefined;
         break;
     }
-    if (isdefined(var_601fee0) && !array::contains(level.var_ed58a4e6, var_601fee0)) {
-        array::add(level.var_ed58a4e6, var_601fee0, 0);
+    if (isdefined(str_display) && !array::contains(level.var_ed58a4e6, str_display)) {
+        array::add(level.var_ed58a4e6, str_display, 0);
     }
-    return var_601fee0;
+    return str_display;
 }
 
 // Namespace zm_red_zones/zm_red_zones
@@ -499,10 +497,8 @@ function function_f7a190a8(str_wait_flag, var_ab660f9a, str_location, var_39acfd
     if (isdefined(var_ab660f9a)) {
         wait(var_ab660f9a);
     }
-    var_33625d75 = function_ab7f70b9(self);
-    while (var_33625d75 === str_location) {
+    for (var_33625d75 = function_ab7f70b9(self); var_33625d75 === str_location; var_33625d75 = function_ab7f70b9(self)) {
         wait(0.5);
-        var_33625d75 = function_ab7f70b9(self);
     }
     self thread zm_audio::function_713192b1(str_location, var_39acfdda);
 }

@@ -237,7 +237,9 @@ function private onspawned() {
         self freezecontrols(1);
         self thread function_9b85340e();
         self setlowready(1);
-    } else if (game.state == "playing") {
+        return;
+    }
+    if (game.state == "playing") {
         self clientfield::set_to_player("realtime_multiplay", 1);
     }
 }
@@ -302,7 +304,7 @@ function function_5439aa67() {
     self endon(#"death", #"revived");
     while (isdefined(self)) {
         if (self function_cf8de58d()) {
-            self dodamage(10000, self.origin, undefined, undefined, undefined, "MOD_UNKNOWN", 0, level.var_1b72f911);
+            self dodamage(10000, self.origin, undefined, undefined, undefined, "MOD_UNKNOWN", 0, level.shockrifleweapon);
             return;
         }
         waitframe(1);
@@ -820,9 +822,9 @@ function private function_9698aa74(winner) {
         if (!player laststand_mp::is_cheating()) {
             if (player.team == winner) {
                 player scoreevents::processscoreevent(#"round_won", player);
-            } else {
-                player scoreevents::processscoreevent(#"round_lost", player);
+                continue;
             }
+            player scoreevents::processscoreevent(#"round_lost", player);
         }
     }
 }
@@ -890,9 +892,9 @@ function private function_cd23eebc(player) {
     thread globallogic_audio::leader_dialog("bountyCashAcquiredEnemy", util::getotherteam(player.team));
     if (level.var_16fd9420) {
         self thread function_319af5a2(player);
-    } else {
-        player clientfield::set_to_player("bountyBagMoney", 1);
+        return;
     }
+    player clientfield::set_to_player("bountyBagMoney", 1);
 }
 
 // Namespace bounty/bounty
@@ -1082,11 +1084,9 @@ function private function_f878f4bf(var_fa5724d5, context) {
     level.var_ad7774db thread function_acf3ff19();
     waitresult = undefined;
     waitresult = level.var_ad7774db waittill(#"hash_5677d0c5246418e5");
-    prevprogress = 0;
-    while (waitresult._notify == "timeout" && level.var_ad7774db.curprogress > prevprogress) {
+    for (prevprogress = 0; waitresult._notify == "timeout" && level.var_ad7774db.curprogress > prevprogress; prevprogress = level.var_ad7774db.curprogress) {
         waitresult = undefined;
         waitresult = level.var_ad7774db waittilltimeout(0.25, #"hash_5677d0c5246418e5");
-        prevprogress = level.var_ad7774db.curprogress;
     }
     if (!isdefined(level.var_ad7774db)) {
         return;
@@ -1390,7 +1390,7 @@ function private function_656691ab() {
                 self function_9ffc1856(self.heligoalpos, 1);
             }
             self notify(#"hash_340ab3c2b94ff86a");
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -1409,9 +1409,9 @@ function function_9ffc1856(goalpos, stop) {
         } else {
             self function_a57c34b7(goalpos, stop, 0);
         }
-    } else {
-        self setgoal(goalpos, stop);
+        return;
     }
+    self setgoal(goalpos, stop);
 }
 
 // Namespace bounty/bounty
@@ -1436,10 +1436,10 @@ function private function_8de67419(leavenode) {
             }
             waitframe(1);
         }
-    } else {
-        self function_60d50ea4();
-        self notify(#"hash_2bf34763927dd61b");
+        return;
     }
+    self function_60d50ea4();
+    self notify(#"hash_2bf34763927dd61b");
 }
 
 // Namespace bounty/bounty

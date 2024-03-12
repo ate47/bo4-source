@@ -368,7 +368,9 @@ function onscoreclosemusic() {
             if (score > topscore) {
                 runnerupscore = topscore;
                 topscore = score;
-            } else if (score > runnerupscore) {
+                continue;
+            }
+            if (score > runnerupscore) {
                 runnerupscore = score;
             }
         }
@@ -421,9 +423,9 @@ function update_objective_hint_message(attackersmsg, defendersmsg) {
     foreach (team, _ in level.teams) {
         if (team == game.attackers) {
             game.strings["objective_hint_" + team] = attackersmsg;
-        } else {
-            game.strings["objective_hint_" + team] = defendersmsg;
+            continue;
         }
+        game.strings["objective_hint_" + team] = defendersmsg;
     }
 }
 
@@ -529,9 +531,9 @@ function function_7913d068(var_fae892d1) {
         if (player util::isprop()) {
             level.hide_timer mp_prop_timer::set_isprop(player, 1);
             level.prop_controls mp_prop_controls::open(player, 1);
-        } else {
-            level.hide_timer mp_prop_timer::set_isprop(player, 0);
+            continue;
         }
+        level.hide_timer mp_prop_timer::set_isprop(player, 0);
     }
     while (1) {
         foreach (player in level.players) {
@@ -906,9 +908,9 @@ function onspawnplayer(predictedspawn) {
     if (!function_5a6214bd()) {
         if (self util::isprop()) {
             self function_ad2b0245();
-        } else {
-            self function_c2958208();
+            return;
         }
+        self function_c2958208();
     }
 }
 
@@ -1025,9 +1027,9 @@ function handleprop() {
 function on_player_loadout() {
     if (self util::isprop()) {
         self setmovespeedscale(level.phsettings.propspeedscale);
-    } else {
-        self setmovespeedscale(1);
+        return;
     }
+    self setmovespeedscale(1);
 }
 
 // Namespace prop/prop
@@ -1899,7 +1901,7 @@ function waittillrecoveredhealth(time, interval) {
         }
         wait(interval);
         if (self.health == self.maxhealth && fullhealthtime >= time) {
-            break;
+            return;
         }
     }
 }
@@ -2161,15 +2163,15 @@ function stillalivexp() {
             switch (player.prop.info.propsize) {
             case 150:
                 scoreevents::processscoreevent("still_alive_medium_bonus", player);
-                break;
+                continue;
             case 250:
                 scoreevents::processscoreevent("still_alive_large_bonus", player);
-                break;
+                continue;
             case 350:
                 scoreevents::processscoreevent("still_alive_extra_large_bonus", player);
-                break;
+                continue;
             default:
-                break;
+                continue;
             }
         }
     }
@@ -2410,9 +2412,7 @@ function function_9c2f28fb() {
             music = game.music["spawn_" + team];
         }
         if (game.roundsplayed == 0) {
-            goto LOC_0000011c;
         }
-    LOC_0000011c:
         self.pers[#"music"].spawn = 1;
     }
     if (level.splitscreen) {
@@ -2524,7 +2524,9 @@ function function_dcc71445(attacker, smeansofdeath, weapon) {
                 bestplayer = player;
                 bestplayermeansofdeath = self.attackerdamage[player.clientid].meansofdeath;
                 bestplayerweapon = self.attackerdamage[player.clientid].weapon;
-            } else if (isdefined(bestplayer) && self.attackerdamage[player.clientid].lasttimedamaged > self.attackerdamage[bestplayer.clientid].lasttimedamaged) {
+                continue;
+            }
+            if (isdefined(bestplayer) && self.attackerdamage[player.clientid].lasttimedamaged > self.attackerdamage[bestplayer.clientid].lasttimedamaged) {
                 bestplayer = player;
                 bestplayermeansofdeath = self.attackerdamage[player.clientid].meansofdeath;
                 bestplayerweapon = self.attackerdamage[player.clientid].weapon;
@@ -2591,16 +2593,18 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, sweapon, v
             }
             if (assailant == attacker) {
                 assailant playhitmarker("mpl_hit_alert");
-            } else {
-                assailant playhitmarker("mpl_hit_alert_escort");
+                continue;
             }
+            assailant playhitmarker("mpl_hit_alert_escort");
         }
     }
     foreach (player in level.players) {
         if (player != attacker && player util::isprop() && isalive(player) && victim util::isprop()) {
             scoreevents::processscoreevent("prop_survived", player);
             [[ level.var_37d62931 ]](player, 1);
-        } else if (player != attacker && player function_84793f03() && victim.team == game.defenders) {
+            continue;
+        }
+        if (player != attacker && player function_84793f03() && victim.team == game.defenders) {
             scoreevents::processscoreevent("prop_killed", player, victim);
         }
     }
@@ -2631,9 +2635,9 @@ function waittillcanspawnclient() {
         if (isdefined(self) && isdefined(self.curclass) && (self.sessionstate == "spectator" || !isalive(self))) {
             self.pers[#"lives"] = 1;
             self globallogic_spawn::spawnclient();
-        } else {
-            return;
+            continue;
         }
+        return;
     }
 }
 
@@ -2647,9 +2651,8 @@ function function_4b2f60ed() {
         if ((isdefined(player.var_d290c555) ? player.var_d290c555 : 0) > 0) {
             if (isdefined(var_69a1e246)) {
                 return undefined;
-            } else {
-                var_69a1e246 = player;
             }
+            var_69a1e246 = player;
         }
     }
     return var_69a1e246;
@@ -2822,9 +2825,8 @@ function function_79f19f00(spawn_origin) {
 function gamehasstarted() {
     if (level.teambased) {
         return globallogic_spawn::allteamshaveexisted();
-    } else {
-        return (level.maxplayercount > 1 || !util::isoneround() && !util::isfirstround());
     }
+    return level.maxplayercount > 1 || !util::isoneround() && !util::isfirstround();
 }
 
 // Namespace prop/prop
@@ -2955,7 +2957,9 @@ function function_cd48b338(eattacker, einflictor, weapon, meansofdeath, damage, 
                 self prop_controls::function_d04b961(einflictor, self, meansofdeath, damage, damageorigin, weapon);
             }
         }
-    } else if (isdefined(level.shellshockonplayerdamage)) {
+        return;
+    }
+    if (isdefined(level.shellshockonplayerdamage)) {
         [[ level.shellshockonplayerdamage ]](meansofdeath, damage, weapon);
     }
 }
@@ -3029,7 +3033,9 @@ function function_a3f4820(time) {
         if (isdefined(player.pers[#"team"])) {
             if (player.pers[#"team"] == game.defenders) {
                 player function_ad2b0245();
-            } else if (player.pers[#"team"] == game.attackers) {
+                continue;
+            }
+            if (player.pers[#"team"] == game.attackers) {
                 player function_c2958208();
             }
         }
@@ -3130,10 +3136,10 @@ function function_416db484(isvisible) {
         if (isdefined(self.var_a920bfdd)) {
             self.var_a920bfdd delete();
         }
-    } else {
-        self notsolid();
-        self thread function_832a882d(game.defenders, 1);
+        return;
     }
+    self notsolid();
+    self thread function_832a882d(game.defenders, 1);
 }
 
 // Namespace prop/prop
@@ -3190,13 +3196,13 @@ function function_9c1a133a(isvisible) {
                 }
             }
         }
-    } else {
-        if (isdefined(self.prop)) {
-            self.prop notsolid();
-            self.prop hidefromteam(game.attackers);
-        }
-        self thread function_832a882d(game.attackers, 0);
+        return;
     }
+    if (isdefined(self.prop)) {
+        self.prop notsolid();
+        self.prop hidefromteam(game.attackers);
+    }
+    self thread function_832a882d(game.attackers, 0);
 }
 
 // Namespace prop/prop
@@ -3220,8 +3226,8 @@ function function_5099a828() {
         }
     #/
     thread function_f6f7aa90(label);
-    level.var_1103f74e.var_4e2b3e3a = function_a62b65f8();
-    level.var_1103f74e.var_4e2b3e3a = array::randomize(level.var_1103f74e.var_4e2b3e3a);
+    level.var_1103f74e.targetlocations = function_a62b65f8();
+    level.var_1103f74e.targetlocations = array::randomize(level.var_1103f74e.targetlocations);
     level.var_1103f74e.nextindex = 0;
     if (!level.var_1103f74e.var_1455c6df) {
         thread function_9340d662();
@@ -3241,17 +3247,17 @@ function function_5099a828() {
 // Size: 0x134
 function function_a62b65f8() {
     var_55d0a272 = 90000;
-    var_4e2b3e3a = [];
+    targetlocations = [];
     alllocations = spawning::get_spawnpoint_array("mp_tdm_spawn");
     hunters = getlivingplayersonteam(game.attackers);
     hunter = hunters[0];
     foreach (location in alllocations) {
         distsq = distancesquared(location.origin, hunter.origin);
         if (distsq > var_55d0a272) {
-            var_4e2b3e3a[var_4e2b3e3a.size] = location;
+            targetlocations[targetlocations.size] = location;
         }
     }
-    return var_4e2b3e3a;
+    return targetlocations;
 }
 
 // Namespace prop/prop
@@ -3270,7 +3276,7 @@ function function_9340d662() {
     var_57466b3 = 40;
     var_b61ad6e2 = 4;
     model = function_7b05fd28();
-    numtargets = min(level.var_1103f74e.var_4e2b3e3a.size, var_57466b3);
+    numtargets = min(level.var_1103f74e.targetlocations.size, var_57466b3);
     level.var_1103f74e.targets = [];
     num = 0;
     for (i = 0; i < numtargets; i++) {
@@ -3382,10 +3388,10 @@ function function_fbe5e14d(location) {
 // Checksum 0xbf2aa2f3, Offset: 0xd150
 // Size: 0x264
 function function_e63a6b8b() {
-    if (level.var_1103f74e.nextindex >= level.var_1103f74e.var_4e2b3e3a.size) {
+    if (level.var_1103f74e.nextindex >= level.var_1103f74e.targetlocations.size) {
         level.var_1103f74e.nextindex = 0;
     }
-    location = level.var_1103f74e.var_4e2b3e3a[level.var_1103f74e.nextindex];
+    location = level.var_1103f74e.targetlocations[level.var_1103f74e.nextindex];
     if (!isdefined(location.var_59abaf85)) {
         dir = level.mapcenter - location.origin;
         dist = distance(level.mapcenter, location.origin);
@@ -3507,7 +3513,9 @@ function function_2e77fae3(delaytime) {
     for (i = 0; i < 3; i++) {
         if (isdefined(var_1d660206[i]) && isdefined(var_1d660206[i].var_5f355eed) && var_1d660206[i].var_5f355eed > 0) {
             level.var_1103f74e.var_e72e24b4[i].alpha = 1;
-        } else if (isdefined(level.var_1103f74e.var_e72e24b4) && isdefined(level.var_1103f74e.var_e72e24b4[i]) && level.var_1103f74e.var_e72e24b4[i].alpha > 0) {
+            continue;
+        }
+        if (isdefined(level.var_1103f74e.var_e72e24b4) && isdefined(level.var_1103f74e.var_e72e24b4[i]) && level.var_1103f74e.var_e72e24b4[i].alpha > 0) {
             level.var_1103f74e.var_e72e24b4[i].alpha = 0;
         }
     }
@@ -3727,10 +3735,10 @@ function _updateclonepathing() {
 // Checksum 0x2490f31e, Offset: 0xe610
 // Size: 0x8e
 function function_e9d33a1c() {
-    if (level.var_1103f74e.nextindex >= level.var_1103f74e.var_4e2b3e3a.size) {
+    if (level.var_1103f74e.nextindex >= level.var_1103f74e.targetlocations.size) {
         level.var_1103f74e.nextindex = 0;
     }
-    location = level.var_1103f74e.var_4e2b3e3a[level.var_1103f74e.nextindex];
+    location = level.var_1103f74e.targetlocations[level.var_1103f74e.nextindex];
     level.var_1103f74e.nextindex++;
     return location.origin;
 }
@@ -3782,8 +3790,8 @@ function private set_ui_team() {
     wait(0.05);
     if (game.attackers == #"allies") {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
-    } else {
-        clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
+        return;
     }
+    clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
 }
 

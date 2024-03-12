@@ -136,40 +136,40 @@ function private function_1e5c0d3b() {
             self.dial_model show();
             self.dial_model playsound("zmb_vessel_drop");
             wait(0.2);
-        } else {
-            self.dial_model playsound("zmb_quest_dial_turn");
-            b_left = e_who lavapit_breach_(self.dial_model);
-            if (b_left) {
-                self.dial_model rotatepitch(36, 0.2, 0.03, 0.06);
-                wait(0.2);
-                self.n_value++;
-            } else {
-                self.dial_model rotatepitch(-36, 0.2, 0.03, 0.06);
-                wait(0.2);
-                self.n_value--;
-            }
-            wait(0.2);
-            if (self.n_value > 9) {
-                self.n_value = 0;
-            }
-            if (self.n_value < 0) {
-                self.n_value = 9;
-            }
-            if (self.n_value == self.var_7bb4ff56) {
-                /#
-                    if (getdvarint(#"zm_debug_ee", 0)) {
-                        if (getdvarint(#"zm_debug_ee", 0)) {
-                            iprintlnbold("<unknown string>" + self.script_noteworthy + "<unknown string>");
-                            println("<unknown string>" + self.script_noteworthy + "<unknown string>");
-                        }
-                    }
-                #/
-                self.b_correct = 1;
-                self.dial_model playsound("zmb_quest_dial_success");
-            } else {
-                self.b_correct = 0;
-            }
+            continue;
         }
+        self.dial_model playsound("zmb_quest_dial_turn");
+        b_left = e_who lavapit_breach_(self.dial_model);
+        if (b_left) {
+            self.dial_model rotatepitch(36, 0.2, 0.03, 0.06);
+            wait(0.2);
+            self.n_value++;
+        } else {
+            self.dial_model rotatepitch(-36, 0.2, 0.03, 0.06);
+            wait(0.2);
+            self.n_value--;
+        }
+        wait(0.2);
+        if (self.n_value > 9) {
+            self.n_value = 0;
+        }
+        if (self.n_value < 0) {
+            self.n_value = 9;
+        }
+        if (self.n_value == self.var_7bb4ff56) {
+            /#
+                if (getdvarint(#"zm_debug_ee", 0)) {
+                    if (getdvarint(#"zm_debug_ee", 0)) {
+                        iprintlnbold("<unknown string>" + self.script_noteworthy + "<unknown string>");
+                        println("<unknown string>" + self.script_noteworthy + "<unknown string>");
+                    }
+                }
+            #/
+            self.b_correct = 1;
+            self.dial_model playsound("zmb_quest_dial_success");
+            continue;
+        }
+        self.b_correct = 0;
     }
 }
 
@@ -189,9 +189,8 @@ function private lavapit_breach_(object) {
     var_35b81369 = vectordot(v_cross, anglestoup(v_angles));
     if (var_35b81369 >= 0) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_orange_mq_dials/zm_orange_mq_dials
@@ -226,16 +225,16 @@ function function_66365668(n_code) {
     switch (self.script_noteworthy) {
     case #"orange_code":
         self showpart("tag_orange_" + n_code);
-        break;
+        return;
     case #"blue_code":
         self showpart("tag_blue_" + n_code);
-        break;
+        return;
     case #"yellow_code":
         self showpart("tag_yellow_" + n_code);
-        break;
+        return;
     case #"violet_code":
         self showpart("tag_violet_" + n_code);
-        break;
+        return;
     }
 }
 

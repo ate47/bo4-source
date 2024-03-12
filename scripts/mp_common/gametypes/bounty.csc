@@ -31,9 +31,9 @@ function event_handler[gametype_init] main(eventstruct) {
 function private function_44cacd61(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self function_cf7d552d(localclientnum);
-    } else {
-        self function_3a4e5f28();
+        return;
     }
+    self function_3a4e5f28();
 }
 
 // Namespace bounty/bounty
@@ -89,9 +89,9 @@ function private function_bd48b229(localclientnum, fxarray) {
 function function_a1b40aa4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_9e9a0604(localclientnum);
-    } else {
-        function_3f258626(localclientnum);
+        return;
     }
+    function_3f258626(localclientnum);
 }
 
 // Namespace bounty/bounty

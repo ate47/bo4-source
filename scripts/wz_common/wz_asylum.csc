@@ -42,13 +42,13 @@ function toilet_ee_play(localclientnum, oldval, newval, bnewent, binitialsnap, f
             switch (newval) {
             case 1:
                 playsound(localclientnum, #"hash_563cb1fd34cb48ea", s_sound.origin);
-                break;
+                return;
             case 2:
                 playsound(localclientnum, #"hash_30b0e4167d2bd505", s_sound.origin);
-                break;
+                return;
             case 3:
                 playsound(localclientnum, #"hash_7672866383ae1956", s_sound.origin);
-                break;
+                return;
             }
         }
     }

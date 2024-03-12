@@ -201,11 +201,15 @@ function registerscoreinfo(type, row, lp, xp, sp, hs, res, var_e775f7ed, dp, is_
         if (isdefined(var_65181181) && var_65181181) {
             level.scoreinfo[type][#"hash_691aeaca4a1866e3"] = var_65181181;
         }
-    } else if (sessionmodeiscampaigngame()) {
+        return;
+    }
+    if (sessionmodeiscampaigngame()) {
         if (isdefined(res) && res) {
             level.scoreinfo[type][#"res"] = res;
         }
-    } else if (sessionmodeiszombiesgame()) {
+        return;
+    }
+    if (sessionmodeiszombiesgame()) {
         if (isdefined(res) && res) {
             level.scoreinfo[type][#"res"] = res;
         }
@@ -597,12 +601,12 @@ function event_handler[player_rankup] codecallback_rankup(eventstruct) {
     if (sessionmodeiswarzonegame()) {
         self stats::function_62b271d8(#"rank", self.pers[#"rank"]);
         self stats::function_62b271d8(#"plevel", self.pers[#"plevel"]);
-    } else {
-        self luinotifyevent(#"rank_up", 3, eventstruct.rank, eventstruct.prestige, eventstruct.unlock_tokens_added);
-        self function_b552ffa9(#"rank_up", 3, eventstruct.rank, eventstruct.prestige, eventstruct.unlock_tokens_added);
-        if (isdefined(level.playpromotionreaction)) {
-            self thread [[ level.playpromotionreaction ]]();
-        }
+        return;
+    }
+    self luinotifyevent(#"rank_up", 3, eventstruct.rank, eventstruct.prestige, eventstruct.unlock_tokens_added);
+    self function_b552ffa9(#"rank_up", 3, eventstruct.rank, eventstruct.prestige, eventstruct.unlock_tokens_added);
+    if (isdefined(level.playpromotionreaction)) {
+        self thread [[ level.playpromotionreaction ]]();
     }
 }
 
@@ -635,9 +639,8 @@ function getrank() {
     rankid = self.pers[#"rank"];
     if (rankxp < getrankinfominxp(rankid) + getrankinfoxpamt(rankid)) {
         return rankid;
-    } else {
-        return getrankforxp(rankxp);
     }
+    return getrankforxp(rankxp);
 }
 
 // Namespace rank/rank_shared

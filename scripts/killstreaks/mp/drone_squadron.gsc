@@ -646,7 +646,9 @@ function watchshutdown() {
             }
             drone_squadron thread function_f9ec0116(drone_squadron, leavenode);
         }
-    } else if (isalive(drone_squadron)) {
+        return;
+    }
+    if (isalive(drone_squadron)) {
         if (isdefined(drone_squadron.wing_drone)) {
             drone_squadron.wing_drone = array::remove_undefined(drone_squadron.wing_drone);
             foreach (wing_drone in drone_squadron.wing_drone) {
@@ -810,11 +812,11 @@ function private function_bef71297(player, target) {
         player.var_49c8cc7f = target;
         objective_onentity(player.var_99033e70, target);
         objective_setvisibletoplayer(player.var_99033e70, player);
-    } else {
-        player.var_49c8cc7f = undefined;
-        objective_clearentity(player.var_99033e70);
-        objective_setinvisibletoall(player.var_99033e70);
+        return;
     }
+    player.var_49c8cc7f = undefined;
+    objective_clearentity(player.var_99033e70);
+    objective_setinvisibletoall(player.var_99033e70);
 }
 
 // Namespace drone_squadron/drone_squadron
@@ -841,11 +843,11 @@ function private function_d43ba50b(player, target) {
         player.var_bfbfc356 = target;
         objective_onentity(player.var_ce69b6d1, target);
         objective_setvisibletoplayer(player.var_ce69b6d1, player);
-    } else {
-        player.var_bfbfc356 = undefined;
-        objective_clearentity(player.var_ce69b6d1);
-        objective_setinvisibletoall(player.var_ce69b6d1);
+        return;
     }
+    player.var_bfbfc356 = undefined;
+    objective_clearentity(player.var_ce69b6d1);
+    objective_setinvisibletoall(player.var_ce69b6d1);
 }
 
 // Namespace drone_squadron/drone_squadron

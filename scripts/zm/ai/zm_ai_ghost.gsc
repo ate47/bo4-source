@@ -123,8 +123,8 @@ function private function_fe6a9772() {
 function function_cea6c2e0(entity, attribute, oldvalue, value) {
     if (value === 1) {
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_run");
-    } else {
-        entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
+        return;
     }
+    entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
 }
 

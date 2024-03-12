@@ -36,9 +36,9 @@ function function_c0d2e1a2(localclientnum, oldval, newval, bnewent, binitialsnap
             self thread function_cd5f9803(localclientnum);
             self playrenderoverridebundle(#"hash_46a64e44ebfa3078");
         }
-    } else {
-        level notify(#"hash_5a7453176272efff");
+        return;
     }
+    level notify(#"hash_5a7453176272efff");
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
@@ -59,8 +59,8 @@ function private function_cd5f9803(localclientnum) {
 function private function_e634058b(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue) {
         self thread postfx::playpostfxbundle(#"hash_2b92b9e84c59cfe4");
-    } else {
-        self thread postfx::exitpostfxbundle(#"hash_2b92b9e84c59cfe4");
+        return;
     }
+    self thread postfx::exitpostfxbundle(#"hash_2b92b9e84c59cfe4");
 }
 

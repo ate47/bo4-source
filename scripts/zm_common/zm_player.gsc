@@ -97,13 +97,13 @@ function updateplayernum(player) {
             }
             player.playernum = game._team1_num;
             game._team1_num = player.playernum + 1;
-        } else {
-            if (!isdefined(game._team2_num)) {
-                game._team2_num = 0;
-            }
-            player.playernum = game._team2_num;
-            game._team2_num = player.playernum + 1;
+            return;
         }
+        if (!isdefined(game._team2_num)) {
+            game._team2_num = 0;
+        }
+        player.playernum = game._team2_num;
+        game._team2_num = player.playernum + 1;
     }
 }
 
@@ -137,8 +137,7 @@ function getfreespawnpoint(spawnpoints, player) {
         }
     }
     if (isdefined(player) && isdefined(player.team)) {
-        i = 0;
-        while (isdefined(spawnpoints) && i < spawnpoints.size) {
+        for (i = 0; isdefined(spawnpoints) && i < spawnpoints.size; i++) {
             if (side_selection == 1) {
                 if (player.team != #"allies" && isdefined(spawnpoints[i].script_int) && spawnpoints[i].script_int == 1) {
                     arrayremovevalue(spawnpoints, spawnpoints[i]);
@@ -149,14 +148,17 @@ function getfreespawnpoint(spawnpoints, player) {
                 } else {
                     i++;
                 }
-            } else if (player.team == #"allies" && isdefined(spawnpoints[i].script_int) && spawnpoints[i].script_int == 1) {
+                continue;
+            }
+            if (player.team == #"allies" && isdefined(spawnpoints[i].script_int) && spawnpoints[i].script_int == 1) {
                 arrayremovevalue(spawnpoints, spawnpoints[i]);
                 i = 0;
-            } else if (player.team != #"allies" && isdefined(spawnpoints[i].script_int) && spawnpoints[i].script_int == 2) {
+                continue;
+            }
+            if (player.team != #"allies" && isdefined(spawnpoints[i].script_int) && spawnpoints[i].script_int == 2) {
                 arrayremovevalue(spawnpoints, spawnpoints[i]);
                 i = 0;
-            } else {
-                i++;
+                continue;
             }
         }
     }
@@ -527,9 +529,9 @@ function function_8ef51109(var_fb6fa3e1, var_bbbf9a69) {
             } else {
                 zm_trial::fail(#"hash_272fae998263208b", var_57807cdc);
             }
-        } else {
-            level notify(#"end_game");
+            return;
         }
+        level notify(#"end_game");
     }
 }
 
@@ -558,11 +560,13 @@ function function_3799b373(var_fb6fa3e1, var_bbbf9a69 = 0) {
             if (!e_player laststand::player_is_in_laststand()) {
                 var_7ff2e79a = 1;
             }
-        } else if (e_player laststand::player_is_in_laststand() && e_player zm_laststand::function_618fd37e() <= 0) {
-            var_2af2f14d = 1;
-        } else {
-            return 1;
+            continue;
         }
+        if (e_player laststand::player_is_in_laststand() && e_player zm_laststand::function_618fd37e() <= 0) {
+            var_2af2f14d = 1;
+            continue;
+        }
+        return 1;
     }
     if (var_bbbf9a69 && var_2af2f14d && var_7ff2e79a) {
         return 1;
@@ -846,8 +850,7 @@ function player_monitor_travel_dist() {
     self notify(#"stop_player_monitor_travel_dist");
     self endon(#"stop_player_monitor_travel_dist", #"disconnect");
     n_current_distance = 0;
-    prevpos = self.origin;
-    while (isdefined(self)) {
+    for (prevpos = self.origin; isdefined(self); prevpos = self.origin) {
         wait(0.1);
         if (self.var_16735873 !== 1) {
             n_distance = distance(self.origin, prevpos);
@@ -857,7 +860,6 @@ function player_monitor_travel_dist() {
                 n_current_distance = self.pers[#"distance_traveled"];
             }
         }
-        prevpos = self.origin;
     }
 }
 
@@ -1267,54 +1269,55 @@ function check_for_valid_spawn_near_team(revivee, return_struct) {
     if (isdefined(level.check_for_valid_spawn_near_team_callback)) {
         spawn_location = [[ level.check_for_valid_spawn_near_team_callback ]](revivee, return_struct);
         return spawn_location;
-    } else {
-        players = getplayers();
-        spawn_points = zm_gametype::get_player_spawns_for_gametype();
-        closest_group = undefined;
-        closest_distance = 100000000;
-        backup_group = undefined;
-        backup_distance = 100000000;
-        if (spawn_points.size == 0) {
-            return undefined;
-        }
-        a_enabled_zone_entities = zm_zonemgr::get_active_zones_entities();
-        for (i = 0; i < players.size; i++) {
-            if (zm_utility::is_player_valid(players[i], undefined, 1) && (players[i] != self || players.size == 1)) {
-                for (j = 0; j < spawn_points.size; j++) {
-                    if (isdefined(spawn_points[j].script_int)) {
-                        ideal_distance = spawn_points[j].script_int;
-                    } else {
-                        ideal_distance = 1000;
-                    }
-                    if (zm_utility::check_point_in_enabled_zone(spawn_points[j].origin, 1, a_enabled_zone_entities) == 0) {
-                        continue;
-                    }
-                    if (spawn_points[j].locked == 0) {
-                        plyr_dist = distancesquared(players[i].origin, spawn_points[j].origin);
-                        if (plyr_dist < ideal_distance * ideal_distance) {
-                            if (plyr_dist < closest_distance) {
-                                closest_distance = plyr_dist;
-                                closest_group = j;
-                            }
-                        } else if (plyr_dist < backup_distance) {
-                            backup_group = j;
-                            backup_distance = plyr_dist;
-                        }
-                    }
-                }
-            }
-            if (!isdefined(closest_group)) {
-                closest_group = backup_group;
-            }
-            if (isdefined(closest_group)) {
-                spawn_location = get_valid_spawn_location(revivee, spawn_points, closest_group, return_struct);
-                if (isdefined(spawn_location)) {
-                    return spawn_location;
-                }
-            }
-        }
+    }
+    players = getplayers();
+    spawn_points = zm_gametype::get_player_spawns_for_gametype();
+    closest_group = undefined;
+    closest_distance = 100000000;
+    backup_group = undefined;
+    backup_distance = 100000000;
+    if (spawn_points.size == 0) {
         return undefined;
     }
+    a_enabled_zone_entities = zm_zonemgr::get_active_zones_entities();
+    for (i = 0; i < players.size; i++) {
+        if (zm_utility::is_player_valid(players[i], undefined, 1) && (players[i] != self || players.size == 1)) {
+            for (j = 0; j < spawn_points.size; j++) {
+                if (isdefined(spawn_points[j].script_int)) {
+                    ideal_distance = spawn_points[j].script_int;
+                } else {
+                    ideal_distance = 1000;
+                }
+                if (zm_utility::check_point_in_enabled_zone(spawn_points[j].origin, 1, a_enabled_zone_entities) == 0) {
+                    continue;
+                }
+                if (spawn_points[j].locked == 0) {
+                    plyr_dist = distancesquared(players[i].origin, spawn_points[j].origin);
+                    if (plyr_dist < ideal_distance * ideal_distance) {
+                        if (plyr_dist < closest_distance) {
+                            closest_distance = plyr_dist;
+                            closest_group = j;
+                        }
+                        continue;
+                    }
+                    if (plyr_dist < backup_distance) {
+                        backup_group = j;
+                        backup_distance = plyr_dist;
+                    }
+                }
+            }
+        }
+        if (!isdefined(closest_group)) {
+            closest_group = backup_group;
+        }
+        if (isdefined(closest_group)) {
+            spawn_location = get_valid_spawn_location(revivee, spawn_points, closest_group, return_struct);
+            if (isdefined(spawn_location)) {
+                return spawn_location;
+            }
+        }
+    }
+    return undefined;
 }
 
 // Namespace zm_player/zm_player
@@ -1340,11 +1343,11 @@ function get_valid_spawn_location(revivee, spawn_points, closest_group, return_s
             if (positionwouldtelefrag(spawn_array[k].origin)) {
                 spawn_array[k].plyr = undefined;
                 break;
-            } else if (isdefined(return_struct) && return_struct) {
-                return spawn_array[k];
-            } else {
-                return spawn_array[k].origin;
             }
+            if (isdefined(return_struct) && return_struct) {
+                return spawn_array[k];
+            }
+            return spawn_array[k].origin;
         }
     }
     for (k = 0; k < spawn_array.size; k++) {
@@ -1355,9 +1358,8 @@ function get_valid_spawn_location(revivee, spawn_points, closest_group, return_s
             spawn_array[k].plyr = revivee getentitynumber();
             if (isdefined(return_struct) && return_struct) {
                 return spawn_array[k];
-            } else {
-                return spawn_array[k].origin;
             }
+            return spawn_array[k].origin;
         }
     }
     if (isdefined(return_struct) && return_struct) {
@@ -1498,17 +1500,17 @@ function play_door_dialog() {
             dist = distancesquared(players[i].origin, self.origin);
             if (dist > 4900) {
                 timer = 0;
-            } else {
-                while (dist < 4900 && timer < 3) {
-                    wait(0.5);
-                    timer++;
-                }
-                if (dist > 4900 && timer >= 3) {
-                    self playsound(#"door_deny");
-                    players[i] zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-                    wait(3);
-                    self notify(#"warning_dialog");
-                }
+                continue;
+            }
+            while (dist < 4900 && timer < 3) {
+                wait(0.5);
+                timer++;
+            }
+            if (dist > 4900 && timer >= 3) {
+                self playsound(#"door_deny");
+                players[i] zm_audio::create_and_play_dialog(#"general", #"outofmoney");
+                wait(3);
+                self notify(#"warning_dialog");
             }
         }
     }
@@ -1914,11 +1916,11 @@ function player_intermission() {
                 self screen_fade_in(2, undefined, undefined, 1);
                 wait(3);
                 self lui::screen_fade_out(2, undefined, undefined, 1);
-            } else {
-                self screen_fade_in(2, undefined, undefined, 1);
-                if (points.size == 1) {
-                    return;
-                }
+                continue;
+            }
+            self screen_fade_in(2, undefined, undefined, 1);
+            if (points.size == 1) {
+                return;
             }
         }
     }
@@ -2007,16 +2009,16 @@ function slowdown(str_type, var_a47cf2b2) {
         foreach (str_index, n_slowdown_timeout in self.a_n_slowdown_timeouts) {
             if (isdefined(n_timeout) && n_slowdown_timeout <= n_time) {
                 self.a_n_slowdown_timeouts[str_index] = undefined;
+                continue;
+            }
+            if (str_index == str_type && isdefined(var_a47cf2b2)) {
+                n_rate = var_a47cf2b2;
             } else {
-                if (str_index == str_type && isdefined(var_a47cf2b2)) {
-                    n_rate = var_a47cf2b2;
-                } else {
-                    n_rate = level.var_f27112f9[str_index].n_rate;
-                }
-                if (n_rate < n_lowest_rate) {
-                    str_lowest_type = str_index;
-                    n_lowest_rate = n_rate;
-                }
+                n_rate = level.var_f27112f9[str_index].n_rate;
+            }
+            if (n_rate < n_lowest_rate) {
+                str_lowest_type = str_index;
+                n_lowest_rate = n_rate;
             }
         }
         if (isdefined(str_lowest_type)) {

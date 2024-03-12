@@ -30,7 +30,7 @@ function function_be562a72() {
         level.var_b0436df5 = 2000;
         level.var_30675389 = 3000;
         level.var_39c7b92c = 1;
-        break;
+        return;
     case 1:
         level.var_df0a0911 = "bot_tacstate_easy_mp_ct";
         level.var_eea9be19 = 50;
@@ -39,7 +39,7 @@ function function_be562a72() {
         level.var_b0436df5 = 2000;
         level.var_30675389 = 3000;
         level.var_39c7b92c = 1;
-        break;
+        return;
     case 2:
         level.var_df0a0911 = "bot_tacstate_mp_ct";
         level.var_eea9be19 = 100;
@@ -47,7 +47,7 @@ function function_be562a72() {
         level.var_b0436df5 = 500;
         level.var_30675389 = 1000;
         level.var_39c7b92c = 0;
-        break;
+        return;
     case 3:
         level.var_df0a0911 = "bot_tacstate_mp_ct";
         level.var_eea9be19 = 150;
@@ -55,7 +55,7 @@ function function_be562a72() {
         level.var_b0436df5 = 400;
         level.var_30675389 = 500;
         level.var_39c7b92c = 0;
-        break;
+        return;
     }
 }
 

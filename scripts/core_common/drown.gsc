@@ -146,22 +146,22 @@ function watch_player_drowning() {
                     self clientfield::set_to_player("drown_stage", self.drownstage);
                 }
             }
-        } else {
-            if (isdefined(level.var_ee30f81d) && isdefined(self.wasunderwater) && self.wasunderwater) {
-                if (self.drownstage > 0) {
-                    thread [[ level.var_ee30f81d ]](self, 1);
-                } else if (gettime() > (isdefined(self.var_cdefe788) ? self.var_cdefe788 : 0) + underwaterbreathtime) {
-                    thread [[ level.var_ee30f81d ]](self, 0);
-                }
-            }
-            self.drownstage = 0;
-            self clientfield::set_to_player("drown_stage", 0);
-            self.lastwaterdamagetime = self getlastoutwatertime();
-            self deactivate_player_health_visionset();
-            var_c1e8fa5d = 4000;
-            self.wasunderwater = 0;
-            return;
+            continue;
         }
+        if (isdefined(level.var_ee30f81d) && isdefined(self.wasunderwater) && self.wasunderwater) {
+            if (self.drownstage > 0) {
+                thread [[ level.var_ee30f81d ]](self, 1);
+            } else if (gettime() > (isdefined(self.var_cdefe788) ? self.var_cdefe788 : 0) + underwaterbreathtime) {
+                thread [[ level.var_ee30f81d ]](self, 0);
+            }
+        }
+        self.drownstage = 0;
+        self clientfield::set_to_player("drown_stage", 0);
+        self.lastwaterdamagetime = self getlastoutwatertime();
+        self deactivate_player_health_visionset();
+        var_c1e8fa5d = 4000;
+        self.wasunderwater = 0;
+        return;
     }
 }
 

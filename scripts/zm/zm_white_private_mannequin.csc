@@ -35,8 +35,8 @@ function __main__() {
 function function_a1ee0828(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         forcestreamxmodel("c_t8_zmb_dlc3_mannequin_male_damage_ally_ready_pose");
-    } else {
-        stopforcestreamingxmodel("c_t8_zmb_dlc3_mannequin_male_damage_ally_ready_pose");
+        return;
     }
+    stopforcestreamingxmodel("c_t8_zmb_dlc3_mannequin_male_damage_ally_ready_pose");
 }
 

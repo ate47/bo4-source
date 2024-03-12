@@ -44,8 +44,8 @@ function init_clientfields() {
 function elemental_shard_glow(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx_glow = util::playfxontag(localclientnum, level._effect[#"elemental_shard_glow"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.fx_glow);
+        return;
     }
+    stopfx(localclientnum, self.fx_glow);
 }
 

@@ -356,7 +356,9 @@ function getbestspawnpoint(remotemissilespawnpoints) {
             }
             if (spawnpoint.spawnscore > bestspawn.spawnscore) {
                 bestspawn = spawnpoint;
-            } else if (spawnpoint.spawnscore == bestspawn.spawnscore) {
+                continue;
+            }
+            if (spawnpoint.spawnscore == bestspawn.spawnscore) {
                 if (math::cointoss()) {
                     bestspawn = spawnpoint;
                 }
@@ -643,9 +645,7 @@ function handledamage(killstreak_id) {
                 if (isdefined(level.var_feddd85a)) {
                     self.owner [[ level.var_feddd85a ]](attacker, weapon);
                 }
-                goto LOC_000001fa;
             }
-        LOC_000001fa:
             self.owner sendkillstreakdamageevent(int(damage));
         }
         self influencers::remove_influencers();
@@ -730,12 +730,11 @@ function missile_sound_impact(player, distance) {
     self endon(#"death", #"stop_impact_sound");
     player endon(#"disconnect", #"remotemissile_done", #"joined_team", #"joined_spectators");
     for (;;) {
-        for (;;) {
-            if (self.origin[2] - player.origin[2] < distance / 0.525) {
-                self playsound(#"wpn_remote_missile_inc");
-                return;
-            }
+        if (self.origin[2] - player.origin[2] < distance / 0.525) {
+            self playsound(#"wpn_remote_missile_inc");
+            return;
         }
+        waitframe(1);
     }
 }
 
@@ -1015,24 +1014,28 @@ function targeting_hud_think(rocket) {
                             player.var_bbe80eed[ti].state = 1;
                         }
                     }
-                } else {
-                    if (!isdefined(target.missileiconindex)) {
-                        target.missileiconindex = rocket.iconindexother;
-                        rocket.iconindexother = (rocket.iconindexother + 1) % 3;
-                    }
-                    index = target.missileiconindex;
-                    if (index == 0) {
-                        level.remote_missile_targets remote_missile_targets::set_extra_target_1(self, target getentitynumber());
-                    } else if (index == 1) {
-                        level.remote_missile_targets remote_missile_targets::set_extra_target_2(self, target getentitynumber());
-                    } else if (index == 2) {
-                        level.remote_missile_targets remote_missile_targets::set_extra_target_2(self, target getentitynumber());
-                    } else {
-                        /#
-                            assertmsg("<unknown string>");
-                        #/
-                    }
+                    continue;
                 }
+                if (!isdefined(target.missileiconindex)) {
+                    target.missileiconindex = rocket.iconindexother;
+                    rocket.iconindexother = (rocket.iconindexother + 1) % 3;
+                }
+                index = target.missileiconindex;
+                if (index == 0) {
+                    level.remote_missile_targets remote_missile_targets::set_extra_target_1(self, target getentitynumber());
+                    continue;
+                }
+                if (index == 1) {
+                    level.remote_missile_targets remote_missile_targets::set_extra_target_2(self, target getentitynumber());
+                    continue;
+                }
+                if (index == 2) {
+                    level.remote_missile_targets remote_missile_targets::set_extra_target_2(self, target getentitynumber());
+                    continue;
+                }
+                /#
+                    assertmsg("<unknown string>");
+                #/
             }
         }
         enemies = getplayers();
@@ -1067,9 +1070,9 @@ function missile_deploy_watch(rocket) {
     while (1) {
         if (self attackbuttonpressed() || rocket.origin[2] < var_dc54c0bd) {
             self thread missile_deploy(rocket, 0);
-        } else {
-            waitframe(1);
+            continue;
         }
+        waitframe(1);
     }
 }
 

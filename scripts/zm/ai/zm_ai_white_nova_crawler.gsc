@@ -350,9 +350,9 @@ function private function_debf98ad(location, radius, duration) {
 function private function_80c8bbd3(entity) {
     if (entity function_b06bbbba()) {
         function_f2ce2a46(entity);
-    } else {
-        entity zm_behavior::zombiefindflesh(entity);
+        return;
     }
+    entity zm_behavior::zombiefindflesh(entity);
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
@@ -367,9 +367,9 @@ function private function_f2ce2a46(entity) {
     var_46503089 = 700 / 2;
     if (var_5e1a56a9 < 200 || var_5e1a56a9 > 500 || var_5e1a56a9 > var_46503089 && !entity isingoal(entity.origin) || !entity can_see_enemy() || entity function_68469a59()) {
         entity zm_behavior::zombiefindflesh(entity);
-    } else {
-        entity setgoal(entity.origin);
+        return;
     }
+    entity setgoal(entity.origin);
 }
 
 // Namespace zm_ai_white_nova_crawler/zm_ai_white_nova_crawler
@@ -1097,9 +1097,9 @@ function private function_13d38964(entity) {
                     if (isdefined(spore)) {
                         function_a7cc9606(entity, spore);
                         entity thread shoot_spore(spore, zombie);
-                    } else {
-                        break;
+                        continue;
                     }
+                    return;
                 }
             }
         }

@@ -84,11 +84,11 @@ function private function_9e0e99e1() {
                     if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
                         self unlockweapon(weapon.dualwieldweapon);
                     }
-                } else {
-                    self function_28602a03(weapon);
-                    if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
-                        self function_28602a03(weapon.dualwieldweapon, 1, 1);
-                    }
+                    continue;
+                }
+                self lockweapon(weapon);
+                if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
+                    self lockweapon(weapon.dualwieldweapon, 1, 1);
                 }
             }
             var_407eb07 = 1;
@@ -106,18 +106,20 @@ function private function_33f0ddd3(s_event) {
         var_f2b6fe6e = 0;
         if (self.b_in_water === 1) {
             var_f2b6fe6e = 1;
-        } else if (!var_f2b6fe6e) {
+            return;
+        }
+        if (!var_f2b6fe6e) {
             foreach (weapon in self getweaponslist(1)) {
                 if (zm_loadout::function_2ff6913(weapon) == 1) {
                     self unlockweapon(weapon);
                     if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
                         self unlockweapon(weapon.dualwieldweapon);
                     }
-                } else {
-                    self function_28602a03(weapon);
-                    if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
-                        self function_28602a03(weapon.dualwieldweapon, 1, 1);
-                    }
+                    continue;
+                }
+                self lockweapon(weapon);
+                if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
+                    self lockweapon(weapon.dualwieldweapon, 1, 1);
                 }
             }
         }

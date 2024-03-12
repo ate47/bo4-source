@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xac586286, Offset: 0x1c0
 // Size: 0x214
 function __init__() {
@@ -39,7 +39,7 @@ function __init__() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe571041c, Offset: 0x3e0
 // Size: 0x24
 function start_beams() {
@@ -47,7 +47,7 @@ function start_beams() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd12e856d, Offset: 0x410
 // Size: 0x12c
 function private function_4467066e(params) {
@@ -65,7 +65,7 @@ function private function_4467066e(params) {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3fa46083, Offset: 0x548
 // Size: 0x28c
 function private function_f82142f8(isspectre) {
@@ -102,7 +102,7 @@ function private function_f82142f8(isspectre) {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x845746aa, Offset: 0x7e0
 // Size: 0x2c
 function private function_9299d039() {
@@ -112,7 +112,7 @@ function private function_9299d039() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe203af7d, Offset: 0x818
 // Size: 0x40
 function private function_1edd6e9e(isspectre) {
@@ -123,7 +123,7 @@ function private function_1edd6e9e(isspectre) {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xeb9f8c1f, Offset: 0x860
 // Size: 0x1c0
 function private function_ef53914c() {
@@ -148,7 +148,7 @@ function private function_ef53914c() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4face8c3, Offset: 0xa28
 // Size: 0x25c
 function private give_max_ammo(weaponslot) {
@@ -170,12 +170,12 @@ function private give_max_ammo(weaponslot) {
         currentammostock = self getweaponammostock(ammoitem.weapon);
         var_9b9ba643 = var_2f399b51 - currentammostock;
         self function_fc9f8b05(weapon, var_9b9ba643);
-        break;
+        return;
     }
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x5fc0cefd, Offset: 0xc90
 // Size: 0x6c
 function private function_124f7ba3() {
@@ -186,7 +186,7 @@ function private function_124f7ba3() {
 }
 
 // Namespace wz_spectre/wz_spectre
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd54b1c9a, Offset: 0xd08
 // Size: 0xcc
 function private function_de83cc91(params) {

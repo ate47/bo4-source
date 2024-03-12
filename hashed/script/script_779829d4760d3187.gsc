@@ -84,14 +84,14 @@ function function_53935f3d(var_5ea5c94d, ended_early) {
         zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
         level.var_33d3e84a = 1;
         level flag::set(#"hash_67df8b68575ba704");
-    } else {
-        zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
-        level.var_33d3e84a = 1;
-        playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
-        level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
-        wait(3);
-        zm_hms_util::function_e308175e(#"hash_40c5232d4f3e85b", level.mcnamara.origin);
+        return;
     }
+    zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
+    level.var_33d3e84a = 1;
+    playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
+    level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
+    wait(3);
+    zm_hms_util::function_e308175e(#"hash_40c5232d4f3e85b", level.mcnamara.origin);
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a
@@ -114,14 +114,14 @@ function function_fe3de565(var_5ea5c94d, ended_early) {
         zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
         level.var_33d3e84a = 2;
         level flag::set(#"hash_10d5bcbc42acc9b");
-    } else {
-        zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
-        level.var_33d3e84a = 2;
-        playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
-        level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
-        wait(3);
-        zm_hms_util::function_e308175e(#"hash_338550de989ad1a7", level.mcnamara.origin);
+        return;
     }
+    zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
+    level.var_33d3e84a = 2;
+    playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
+    level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
+    wait(3);
+    zm_hms_util::function_e308175e(#"hash_338550de989ad1a7", level.mcnamara.origin);
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a
@@ -144,14 +144,14 @@ function function_3409e90e(var_5ea5c94d, ended_early) {
         zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
         level.var_33d3e84a = 3;
         level flag::set(#"hash_1fa9f2f17d2cb5f9");
-    } else {
-        zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
-        level.var_33d3e84a = 3;
-        playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
-        level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
-        wait(3);
-        zm_hms_util::function_e308175e(#"hash_182892c4bb99b96a", level.mcnamara.origin);
+        return;
     }
+    zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
+    level.var_33d3e84a = 3;
+    playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
+    level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
+    wait(3);
+    zm_hms_util::function_e308175e(#"hash_182892c4bb99b96a", level.mcnamara.origin);
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a
@@ -174,14 +174,14 @@ function function_c2bd8b3d(var_5ea5c94d, ended_early) {
         zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
         level.var_33d3e84a = 4;
         level flag::set(#"hash_36e8f27bbd8b02d5");
-    } else {
-        zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
-        level.var_33d3e84a = 4;
-        playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
-        level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
-        wait(3);
-        zm_hms_util::function_e308175e(#"hash_1d3964f5cb0069af", level.mcnamara.origin);
+        return;
     }
+    zm_unitrigger::unregister_unitrigger(level.var_774c21fa.s_unitrigger);
+    level.var_33d3e84a = 4;
+    playsoundatposition(#"hash_61901dee5b81dba2", level.var_774c21fa.origin);
+    level.var_38ea4233 clientfield::increment_to_player("" + #"hash_7eefa4acee4c1d55", 1);
+    wait(3);
+    zm_hms_util::function_e308175e(#"hash_1d3964f5cb0069af", level.mcnamara.origin);
 }
 
 // Namespace namespace_ba52581a/namespace_ba52581a

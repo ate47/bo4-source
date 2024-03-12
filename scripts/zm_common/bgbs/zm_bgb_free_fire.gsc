@@ -78,12 +78,12 @@ function function_1ff1beff() {
             if (self hasperk("specialty_freefire")) {
                 self perks::perk_unsetperk("specialty_freefire");
             }
-        } else {
-            if (!self hasperk("specialty_freefire")) {
-                self perks::perk_setperk("specialty_freefire");
-            }
-            self function_9d347621(w_check);
+            continue;
         }
+        if (!self hasperk("specialty_freefire")) {
+            self perks::perk_setperk("specialty_freefire");
+        }
+        self function_9d347621(w_check);
     }
 }
 

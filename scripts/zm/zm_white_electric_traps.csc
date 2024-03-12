@@ -49,9 +49,13 @@ function init_clientfields() {
 function function_946acaec(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 2) {
         self.blinking_fx = util::playfxontag(localclientnum, level._effect[#"hash_6d40a3f1944d81b2"], self, "tag_origin");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         self.blinking_fx = util::playfxontag(localclientnum, level._effect[#"hash_3d339d7ae7b008d3"], self, "tag_origin");
-    } else if (isdefined(self.blinking_fx)) {
+        return;
+    }
+    if (isdefined(self.blinking_fx)) {
         deletefx(localclientnum, self.blinking_fx);
     }
 }
@@ -76,15 +80,15 @@ function electrocute_ai(localclientnum, oldval, newval, bnewent, binitialsnap, f
         if (isdefined(self) && isdefined(self.n_shock_eyes_fx)) {
             setfxignorepause(localclientnum, self.n_shock_fx, 1);
         }
-    } else {
-        if (isdefined(self.n_shock_eyes_fx)) {
-            deletefx(localclientnum, self.n_shock_eyes_fx, 1);
-            self.n_shock_eyes_fx = undefined;
-        }
-        if (isdefined(self.n_shock_fx)) {
-            deletefx(localclientnum, self.n_shock_fx, 1);
-            self.n_shock_fx = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.n_shock_eyes_fx)) {
+        deletefx(localclientnum, self.n_shock_eyes_fx, 1);
+        self.n_shock_eyes_fx = undefined;
+    }
+    if (isdefined(self.n_shock_fx)) {
+        deletefx(localclientnum, self.n_shock_fx, 1);
+        self.n_shock_fx = undefined;
     }
 }
 

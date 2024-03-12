@@ -176,9 +176,9 @@ function trap_init() {
     for (i = 0; i < components.size; i++) {
         if (isdefined(components[i].script_string) && components[i].script_string == "use_this_angle") {
             self.use_this_angle = components[i];
-        } else {
-            self._trap_fx_structs[self._trap_fx_structs.size] = components[i];
+            continue;
         }
+        self._trap_fx_structs[self._trap_fx_structs.size] = components[i];
     }
     if (!isdefined(self.zombie_cost)) {
         self.zombie_cost = 1000;
@@ -229,20 +229,24 @@ function trap_main() {
 function function_783f63e9(var_1c9c3123 = 1) {
     if (zm_trial_disable_buys::is_active()) {
         self trap_set_string(#"hash_55d25caf8f7bbb2f");
-    } else if (isdefined(self.var_fc36786e) && self.var_fc36786e || isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
+        return;
+    }
+    if (isdefined(self.var_fc36786e) && self.var_fc36786e || isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
         self trap_set_string(#"zombie/trap_locked");
-    } else if (zm_utility::is_standard() || namespace_b28d86fd::is_active()) {
+        return;
+    }
+    if (zm_utility::is_standard() || namespace_b28d86fd::is_active()) {
         cheat_too_friendly_s_ = zm_utility::function_d6046228(#"hash_24a438482954901", #"hash_61d85c966dd9e83f");
         self trap_set_string(cheat_too_friendly_s_);
         if (var_1c9c3123) {
             self trap_lights_green();
         }
-    } else {
-        cheat_too_friendly_s_ = zm_utility::function_d6046228(#"hash_23c1c09e94181fdb", #"hash_6e8ef1b690e98e51");
-        self trap_set_string(cheat_too_friendly_s_, self.zombie_cost);
-        if (var_1c9c3123) {
-            self trap_lights_green();
-        }
+        return;
+    }
+    cheat_too_friendly_s_ = zm_utility::function_d6046228(#"hash_23c1c09e94181fdb", #"hash_6e8ef1b690e98e51");
+    self trap_set_string(cheat_too_friendly_s_, self.zombie_cost);
+    if (var_1c9c3123) {
+        self trap_lights_green();
     }
 }
 
@@ -282,11 +286,10 @@ function trap_purchase(e_player, n_cost) {
     if (e_player zm_score::can_player_purchase(n_cost)) {
         e_player zm_score::minus_to_player_score(n_cost);
         return 1;
-    } else {
-        self playsound(#"zmb_trap_deny");
-        e_player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-        return 0;
     }
+    self playsound(#"zmb_trap_deny");
+    e_player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
+    return 0;
 }
 
 // Namespace zm_traps/zm_traps
@@ -340,9 +343,9 @@ function private update_trigger_visibility() {
             if (distancesquared(player.origin, self.origin) < 16384) {
                 if (player zm_utility::is_drinking()) {
                     self setinvisibletoplayer(player, 1);
-                } else {
-                    self setinvisibletoplayer(player, 0);
+                    continue;
                 }
+                self setinvisibletoplayer(player, 0);
             }
         }
         wait(0.25);
@@ -356,14 +359,14 @@ function private update_trigger_visibility() {
 function trap_lights_red() {
     if (isdefined(level._custom_traps[self._trap_type]) && isdefined(level._custom_traps[self._trap_type].var_75734507)) {
         self [[ level._custom_traps[self._trap_type].var_75734507 ]]();
-    } else {
-        for (i = 0; i < self._trap_lights.size; i++) {
-            light = self._trap_lights[i];
-            str_light_red = light.targetname + "_red";
-            str_light_green = light.targetname + "_green";
-            exploder::kill_exploder(str_light_green);
-            exploder::exploder(str_light_red);
-        }
+        return;
+    }
+    for (i = 0; i < self._trap_lights.size; i++) {
+        light = self._trap_lights[i];
+        str_light_red = light.targetname + "_red";
+        str_light_green = light.targetname + "_green";
+        exploder::kill_exploder(str_light_green);
+        exploder::exploder(str_light_red);
     }
 }
 
@@ -374,17 +377,17 @@ function trap_lights_red() {
 function trap_lights_green() {
     if (isdefined(level._custom_traps) && isdefined(level._custom_traps[self._trap_type]) && isdefined(level._custom_traps[self._trap_type].var_53d35f37)) {
         self [[ level._custom_traps[self._trap_type].var_53d35f37 ]]();
-    } else {
-        for (i = 0; i < self._trap_lights.size; i++) {
-            light = self._trap_lights[i];
-            if (isdefined(light.var_1cc6f364)) {
-                continue;
-            }
-            str_light_red = light.targetname + "_red";
-            str_light_green = light.targetname + "_green";
-            exploder::kill_exploder(str_light_red);
-            exploder::exploder(str_light_green);
+        return;
+    }
+    for (i = 0; i < self._trap_lights.size; i++) {
+        light = self._trap_lights[i];
+        if (isdefined(light.var_1cc6f364)) {
+            continue;
         }
+        str_light_red = light.targetname + "_red";
+        str_light_green = light.targetname + "_green";
+        exploder::kill_exploder(str_light_red);
+        exploder::exploder(str_light_green);
     }
 }
 
@@ -397,11 +400,13 @@ function trap_set_string(string, param1, param2) {
         for (i = 0; i < self._trap_use_trigs.size; i++) {
             if (!isdefined(param1)) {
                 self._trap_use_trigs[i] sethintstring(string);
-            } else if (!isdefined(param2)) {
-                self._trap_use_trigs[i] sethintstring(string, param1);
-            } else {
-                self._trap_use_trigs[i] sethintstring(string, param1, param2);
+                continue;
             }
+            if (!isdefined(param2)) {
+                self._trap_use_trigs[i] sethintstring(string, param1);
+                continue;
+            }
+            self._trap_use_trigs[i] sethintstring(string, param1, param2);
         }
     }
 }
@@ -416,9 +421,9 @@ function trap_move_switches() {
         self._trap_switches[i] rotatepitch(180, 0.5);
         if (isdefined(self._trap_type) && self._trap_type == "fire") {
             self._trap_switches[i] playsound(#"evt_switch_flip_trap_fire");
-        } else {
-            self._trap_switches[i] playsound(#"evt_switch_flip_trap");
+            continue;
         }
+        self._trap_switches[i] playsound(#"evt_switch_flip_trap");
     }
     self._trap_switches[0] waittill(#"rotatedone");
     self notify(#"switch_activated");
@@ -465,13 +470,11 @@ function trap_activate_rotating() {
     }
     wait(5);
     step = 1.5;
-    t = 0;
-    while (t < self._trap_duration) {
+    for (t = 0; t < self._trap_duration; t = t + step) {
         for (i = 0; i < self._trap_movers.size; i++) {
             self._trap_movers[i] rotateyaw(360, step);
         }
         wait(step);
-        t = t + step;
     }
     for (i = 0; i < self._trap_movers.size; i++) {
         self._trap_movers[i] rotateyaw(360, 5, 0, 4.5);
@@ -498,15 +501,15 @@ function trap_activate_flipper() {
 function trap_audio_fx(trap) {
     if (isdefined(level._custom_traps) && isdefined(level._custom_traps[trap.script_noteworthy]) && isdefined(level._custom_traps[trap.script_noteworthy].audio)) {
         self [[ level._custom_traps[trap.script_noteworthy].audio ]](trap);
-    } else {
-        sound_origin = undefined;
-        trap waittilltimeout(trap._trap_duration, #"trap_done");
-        if (isdefined(sound_origin)) {
-            playsoundatposition(#"wpn_zmb_electrap_stop", sound_origin.origin);
-            sound_origin stoploopsound();
-            waitframe(1);
-            sound_origin delete();
-        }
+        return;
+    }
+    sound_origin = undefined;
+    trap waittilltimeout(trap._trap_duration, #"trap_done");
+    if (isdefined(sound_origin)) {
+        playsoundatposition(#"wpn_zmb_electrap_stop", sound_origin.origin);
+        sound_origin stoploopsound();
+        waitframe(1);
+        sound_origin delete();
     }
 }
 
@@ -542,24 +545,26 @@ function trap_damage() {
             if (ent.health <= 1 && !(isdefined(ent.var_acc576f0) && ent.var_acc576f0)) {
                 ent thread function_783361ed(self);
             }
-        } else if (!isdefined(ent.marked_for_death)) {
+            continue;
+        }
+        if (!isdefined(ent.marked_for_death)) {
             if (isdefined(level._custom_traps) && isdefined(level._custom_traps[self._trap_type]) && isdefined(level._custom_traps[self._trap_type].damage)) {
                 ent thread [[ level._custom_traps[self._trap_type].damage ]](self);
-            } else {
-                switch (self._trap_type) {
-                case #"rocket":
-                    ent thread zombie_trap_death(self, 100);
-                    break;
-                case #"rotating":
-                    ent thread zombie_trap_death(self, 200);
-                    break;
-                case #"werewolfer":
-                    ent thread zombie_trap_death(self, 100);
-                    break;
-                default:
-                    ent thread zombie_trap_death(self, randomint(100));
-                    break;
-                }
+                continue;
+            }
+            switch (self._trap_type) {
+            case #"rocket":
+                ent thread zombie_trap_death(self, 100);
+                break;
+            case #"rotating":
+                ent thread zombie_trap_death(self, 200);
+                break;
+            case #"werewolfer":
+                ent thread zombie_trap_death(self, 100);
+                break;
+            default:
+                ent thread zombie_trap_death(self, randomint(100));
+                break;
             }
         }
     }
@@ -639,11 +644,11 @@ function player_fire_damage() {
         if (!self hasperk(#"specialty_armorvest") || self.health - 100 < 1) {
             radiusdamage(self.origin, 10, self.health + 100, self.health + 100);
             self.is_burning = undefined;
-        } else {
-            self dodamage(50, self.origin);
-            wait(0.1);
-            self.is_burning = undefined;
+            return;
         }
+        self dodamage(50, self.origin);
+        wait(0.1);
+        self.is_burning = undefined;
     }
 }
 
@@ -810,20 +815,20 @@ function trap_dialog() {
             dist = distancesquared(players[i].origin, self.origin);
             if (dist > 4900) {
                 timer = 0;
-            } else {
-                if (dist < 4900 && timer < 3) {
-                    wait(0.5);
-                    timer++;
-                }
-                if (!isdefined(players[i])) {
-                    continue;
-                }
-                if (dist < 4900 && timer == 3) {
-                    index = zm_utility::get_player_index(players[i]);
-                    plr = "plr_" + index + "_";
-                    wait(3);
-                    self notify(#"warning_dialog");
-                }
+                continue;
+            }
+            if (dist < 4900 && timer < 3) {
+                wait(0.5);
+                timer++;
+            }
+            if (!isdefined(players[i])) {
+                continue;
+            }
+            if (dist < 4900 && timer == 3) {
+                index = zm_utility::get_player_index(players[i]);
+                plr = "plr_" + index + "_";
+                wait(3);
+                self notify(#"warning_dialog");
             }
         }
     }
@@ -925,14 +930,14 @@ function trap_model_type_init() {
         self._trap_light_model_green = "zombie_trap_switch_light_on_green";
         self._trap_light_model_red = "zombie_trap_switch_light_on_red";
         self._trap_switch_model = "zombie_trap_switch_handle";
-        break;
+        return;
     case #"default":
     default:
         self._trap_light_model_off = "zombie_zapper_cagelight";
         self._trap_light_model_green = "zombie_zapper_cagelight";
         self._trap_light_model_red = "zombie_zapper_cagelight";
         self._trap_switch_model = "zombie_zapper_handle";
-        break;
+        return;
     }
 }
 

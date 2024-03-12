@@ -142,7 +142,7 @@ function guns() {
             var_fb1db24c = zm_weapons::get_guns();
             do {
                 w_random = array::random(var_fb1db24c);
-            } while(w_random == level.weaponnone || isdefined(array::find(var_4cd7f83c, w_random)));
+            } while (w_random == level.weaponnone || isdefined(array::find(var_4cd7f83c, w_random)));
             if (is_weapon_upgraded) {
                 w_random = zm_white_insanity_mode::get_upgrade(w_random);
             }
@@ -494,23 +494,22 @@ function shed() {
         /#
             iprintlnbold("<unknown string>");
         #/
-    } else {
-        a_e_zombie_doors = getentarray("zombie_door", "targetname");
-        foreach (var_6620353d in a_e_zombie_doors) {
-            if (isdefined(var_6620353d.script_flag) && var_6620353d.script_flag == "yellow_backyard_to_ammo_door") {
-                if (!(isdefined(var_6620353d.has_been_opened) && var_6620353d.has_been_opened)) {
-                    a_e_players = getplayers();
-                    var_6620353d notify(#"trigger", {#is_forced:1, #activator:a_e_players[0]});
-                    /#
-                        iprintlnbold("<unknown string>");
-                    #/
-                    break;
-                } else {
-                    /#
-                        iprintlnbold("<unknown string>");
-                    #/
-                }
+        return;
+    }
+    a_e_zombie_doors = getentarray("zombie_door", "targetname");
+    foreach (var_6620353d in a_e_zombie_doors) {
+        if (isdefined(var_6620353d.script_flag) && var_6620353d.script_flag == "yellow_backyard_to_ammo_door") {
+            if (!(isdefined(var_6620353d.has_been_opened) && var_6620353d.has_been_opened)) {
+                a_e_players = getplayers();
+                var_6620353d notify(#"trigger", {#is_forced:1, #activator:a_e_players[0]});
+                /#
+                    iprintlnbold("<unknown string>");
+                #/
+                return;
             }
+            /#
+                iprintlnbold("<unknown string>");
+            #/
         }
     }
 }

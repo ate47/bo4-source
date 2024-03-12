@@ -45,7 +45,9 @@ function init_clientfields() {
 function function_c95aa114(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.blinking_fx = util::playfxontag(localclientnum, level._effect[#"hash_5cd079f7090da957"], self, "tag_light");
-    } else if (isdefined(self.blinking_fx)) {
+        return;
+    }
+    if (isdefined(self.blinking_fx)) {
         deletefx(localclientnum, self.blinking_fx);
     }
 }

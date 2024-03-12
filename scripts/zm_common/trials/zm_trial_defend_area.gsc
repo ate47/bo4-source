@@ -263,12 +263,12 @@ function private function_ff66b979() {
     foreach (player in getplayers()) {
         if (!isdefined(player.var_e5cde66)) {
             player thread damage_watcher(0);
-        } else {
-            timer_delta = var_a0328dd5 - player.var_e5cde66.start_time;
-            timeout = int(max(player.var_e5cde66.timeout - float(timer_delta) / 1000, 0));
-            player thread function_1802ad1e(player.var_e5cde66.challenge, player.var_e5cde66.var_2d5ebf67, player.var_e5cde66.var_530e040f, timeout);
-            player thread damage_watcher(0);
+            continue;
         }
+        timer_delta = var_a0328dd5 - player.var_e5cde66.start_time;
+        timeout = int(max(player.var_e5cde66.timeout - float(timer_delta) / 1000, 0));
+        player thread function_1802ad1e(player.var_e5cde66.challenge, player.var_e5cde66.var_2d5ebf67, player.var_e5cde66.var_530e040f, timeout);
+        player thread damage_watcher(0);
     }
 }
 

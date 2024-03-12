@@ -72,7 +72,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level.onspawnplayer = &onspawnplayer;
     level.var_cdb8ae2c = &function_a8da260c;
     player::function_cf3aa03d(&onplayerkilled);
-    level.var_b7d7d172 = getweapon(#"clean_drop");
+    level.cleandropweapon = getweapon(#"clean_drop");
     level.var_c5e28dc5 = getgametypesetting(#"hash_5cc4c3042b7d4935");
     stockpileorders = isdefined(level.var_c5e28dc5) && level.var_c5e28dc5 ? undefined : "stockpileOrders";
     globallogic_audio::set_leader_gametype_dialog("startStockpile", "hcStartStockpile", stockpileorders, stockpileorders, "bbStartStockpile", "hcbbStartStockpile");
@@ -245,9 +245,9 @@ function function_8695993b() {
 function function_fccce038() {
     if (self.carriedtacos > 0) {
         self clientfield::set("taco_carry", 1);
-    } else {
-        self clientfield::set("taco_carry", 0);
+        return;
     }
+    self clientfield::set("taco_carry", 0);
 }
 
 // Namespace clean/clean
@@ -332,7 +332,7 @@ function function_903c4eff(victim, attacker, pos, yawangle) {
     }
     dropangles = (-70, yawangle, 0);
     force = anglestoforward(dropangles) * randomfloatrange(getdvarfloat(#"dropmin", 220), getdvarfloat(#"dropmax", 300));
-    self.var_2581d0d = victim magicmissile(level.var_b7d7d172, pos, force);
+    self.var_2581d0d = victim magicmissile(level.cleandropweapon, pos, force);
     self.var_2581d0d hide();
     self.var_2581d0d notsolid();
     self thread function_8cb72ba4();
@@ -350,7 +350,7 @@ function function_8cb72ba4() {
     self.var_2581d0d endon(#"death", #"stationary");
     while (1) {
         if (!isdefined(self.var_2581d0d)) {
-            break;
+            return;
         }
         if (self.var_2581d0d oob::istouchinganyoobtrigger() || self.var_2581d0d gameobjects::is_touching_any_trigger_key_value("trigger_hurt_new", "classname", self.trigger.origin[2], self.trigger.origin[2] + 32)) {
             self thread registermp_multi_kill_medals_interface();
@@ -581,7 +581,6 @@ function function_e3e1cf54(var_696c0ca5 = -1) {
         return ((var_696c0ca5 + 1) % level.cleandeposithubs.size);
     case 1:
         return function_579aa766(var_696c0ca5, &registerexert_immolation_control);
-        break;
     }
     return registerexert_immolation_control(var_696c0ca5);
 }

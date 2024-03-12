@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace arena/arena
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x409b928e, Offset: 0x100
 // Size: 0x8e
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace arena/arena
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8a582088, Offset: 0x198
 // Size: 0x13e
 function on_connect() {
@@ -48,7 +48,7 @@ function on_connect() {
 }
 
 // Namespace arena/arena
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c2994d2, Offset: 0x2e0
 // Size: 0x1b4
 function function_b856a952(team) {
@@ -70,7 +70,7 @@ function function_b856a952(team) {
 }
 
 // Namespace arena/arena
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a940d94, Offset: 0x4a0
 // Size: 0x9c
 function on_disconnect() {
@@ -113,14 +113,14 @@ function update_arena_challenge_seasons() {
             }
             if (challengeseason == 0) {
                 self stats::set_stat(#"arenachallengeseasons", i, currentseason);
-                break;
+                return;
             }
         }
     }
 }
 
 // Namespace arena/arena
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7adfa597, Offset: 0x7b8
 // Size: 0x204
 function match_end() {
@@ -141,15 +141,17 @@ function match_end() {
     }
     if (match::get_flag("tie") || !isdefined(game.outcome.team)) {
         function_a357a2b8(0);
-    } else if (game.outcome.team == #"allies") {
-        function_a357a2b8(1);
-    } else {
-        function_a357a2b8(-1);
+        return;
     }
+    if (game.outcome.team == #"allies") {
+        function_a357a2b8(1);
+        return;
+    }
+    function_a357a2b8(-1);
 }
 
 // Namespace arena/arena
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe59d1acf, Offset: 0x9c8
 // Size: 0x6
 function function_51203700() {
@@ -157,7 +159,7 @@ function function_51203700() {
 }
 
 // Namespace arena/arena
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe746a95e, Offset: 0x9d8
 // Size: 0x14
 function on_game_playing() {

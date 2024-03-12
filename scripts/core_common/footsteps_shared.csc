@@ -16,7 +16,7 @@ function missing_ai_footstep_callback() {
 }
 
 // Namespace footsteps/footsteps_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1ca85fdf, Offset: 0xd8
 // Size: 0x8a
 function registeraitypefootstepcb(archetype, callback) {

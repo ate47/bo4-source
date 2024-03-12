@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_bruno/character_unlock_bruno
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1b2b97f0, Offset: 0x110
 // Size: 0x34
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_bruno/character_unlock_bruno
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcbb8e06b, Offset: 0x150
 // Size: 0x5c
 function function_2613aeec(enabled) {
@@ -36,7 +36,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_bruno/character_unlock_bruno
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f486ad2, Offset: 0x1b8
 // Size: 0xfc
 function on_player_downed() {

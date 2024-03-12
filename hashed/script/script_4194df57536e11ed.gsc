@@ -61,7 +61,7 @@ function register(uid) {
 }
 
 // Namespace initial_black/initial_black
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xdc183c4b, Offset: 0x100
 // Size: 0x38
 function open(player, persistent = 0) {
@@ -69,7 +69,7 @@ function open(player, persistent = 0) {
 }
 
 // Namespace initial_black/initial_black
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xcf13dac7, Offset: 0x140
 // Size: 0x1c
 function close(player) {

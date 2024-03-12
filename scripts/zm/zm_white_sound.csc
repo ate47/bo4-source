@@ -36,13 +36,13 @@ function startzmbspawnersoundloops() {
                 waitframe(1);
             }
         }
-    } else {
-        /#
-            if (getdvarint(#"debug_audio", 0) > 0) {
-                println("<unknown string>");
-            }
-        #/
+        return;
     }
+    /#
+        if (getdvarint(#"debug_audio", 0) > 0) {
+            println("<unknown string>");
+        }
+    #/
 }
 
 // Namespace zm_white_sound/zm_white_sound

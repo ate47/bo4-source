@@ -155,9 +155,9 @@ function defcon_sign_lights() {
             }
             if (isdefined(level.defcon_level) && level.defcon_level > 0 && level.defcon_level <= defcon.size) {
                 sign setmodel(defcon[level.defcon_level]);
-            } else {
-                sign setmodel(defcon[1]);
+                continue;
             }
+            sign setmodel(defcon[1]);
         }
     }
 }
@@ -412,9 +412,9 @@ function pack_door_solid_thread() {
             self solid();
             if (self.angles != self.start_angles) {
                 self connectpaths();
-            } else {
-                self disconnectpaths();
+                return;
             }
+            self disconnectpaths();
             return;
         }
         wait(1);

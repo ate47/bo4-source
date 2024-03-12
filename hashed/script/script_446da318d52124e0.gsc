@@ -39,25 +39,37 @@ class cct_timer_mod_ticks : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"plus" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"minus" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
-        } else if (#"plus_destroyedobj" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
-        } else if (#"plus_dogkill" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
-        } else if (#"hash_654551b30d95836c" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
-        } else if (#"plus_multikill" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"plus" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        if (#"minus" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            return;
+        }
+        if (#"plus_destroyedobj" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            return;
+        }
+        if (#"plus_dogkill" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            return;
+        }
+        if (#"hash_654551b30d95836c" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
+            return;
+        }
+        if (#"plus_multikill" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks

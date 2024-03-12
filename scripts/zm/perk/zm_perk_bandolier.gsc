@@ -118,7 +118,9 @@ function set_ammo(b_max_ammo = 1) {
                     var_88f48290 = var_45193587 + var_67f27715;
                 }
                 self setweaponammostock(weapon, var_88f48290);
-            } else if (self getweaponammostock(weapon) > weapon.startammo) {
+                continue;
+            }
+            if (self getweaponammostock(weapon) > weapon.startammo) {
                 self setweaponammostock(weapon, weapon.startammo);
             }
         }

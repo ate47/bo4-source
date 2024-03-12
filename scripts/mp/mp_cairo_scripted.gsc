@@ -125,7 +125,7 @@ function function_69cdac99() {
         do {
             var_fc58d99c = randomintrange(0, 26);
             waitframe(1);
-        } while(var_fc58d99c === var_2f96b0dd);
+        } while (var_fc58d99c === var_2f96b0dd);
         var_2f96b0dd = var_fc58d99c;
         if (isdefined(var_c7ecf728[var_fc58d99c])) {
             var_34f4feb8 = var_df74694e;

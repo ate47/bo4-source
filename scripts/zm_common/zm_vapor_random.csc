@@ -34,7 +34,9 @@ function random_vapor_altar_available_fx(localclientnum, oldval, newval, bnewent
         if (!isdefined(self.var_476bef54)) {
             self.var_476bef54 = util::playfxontag(localclientnum, level._effect[#"random_vapor_altar_available"], self, "tag_origin");
         }
-    } else if (isdefined(self.var_476bef54)) {
+        return;
+    }
+    if (isdefined(self.var_476bef54)) {
         stopfx(localclientnum, self.var_476bef54);
     }
 }

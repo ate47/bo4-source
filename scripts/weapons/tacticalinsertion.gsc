@@ -10,7 +10,7 @@
 #namespace tacticalinsertion;
 
 // Namespace tacticalinsertion/tacticalinsertion
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xa151324a, Offset: 0x190
 // Size: 0x8c
 function init_shared() {
@@ -309,9 +309,8 @@ function cancel_button_think() {
 function canceltackinsertionbutton() {
     if (level.console) {
         return self changeseatbuttonpressed();
-    } else {
-        return self jumpbuttonpressed();
     }
+    return self jumpbuttonpressed();
 }
 
 // Namespace tacticalinsertion/tacticalinsertion

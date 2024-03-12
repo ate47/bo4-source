@@ -195,10 +195,10 @@ function function_31ad5b3d(b_up) {
                 if (var_4784577e == 0) {
                     array::push_front(a_e_valid, e_target);
                 }
-            } else {
-                var_f9486bd2++;
-                array::push_front(a_e_valid, e_target);
+                continue;
             }
+            var_f9486bd2++;
+            array::push_front(a_e_valid, e_target);
         }
         if (isdefined(level.var_5b7d4d8d) && level.var_5b7d4d8d && var_4784577e > 0) {
             if (var_f9486bd2 == var_99588c0f.size) {
@@ -489,9 +489,9 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, b_char
             e_target dodamage(n_damage, self.origin, self, undefined, "none", "MOD_UNKNOWN", 0, weapon);
             break;
         }
-    } else {
-        e_target dodamage(n_damage, self.origin, self, undefined, "none", "MOD_UNKNOWN", 0, weapon);
+        return;
     }
+    e_target dodamage(n_damage, self.origin, self, undefined, "none", "MOD_UNKNOWN", 0, weapon);
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia
@@ -646,9 +646,8 @@ function function_1d315fcd(e_target) {
     n_dot = self math::get_dot_right(e_target.origin);
     if (n_dot > 0) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_weap_hand_gaia/zm_weap_hand_gaia

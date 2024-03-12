@@ -56,55 +56,55 @@ function function_255e9614(command, key) {
     switch (key) {
     case #"+attack":
         function_9024fce3(&attackbuttonpressed, command);
-        break;
+        return;
     case #"+toggleads_throw":
         function_9024fce3(&adsbuttonpressed, command);
-        break;
+        return;
     case #"+changeseat":
         function_9024fce3(&changeseatbuttonpressed, command);
-        break;
+        return;
     case #"+usereload":
         function_9024fce3(&usebuttonpressed, command);
-        break;
+        return;
     case #"+smoke":
         function_9024fce3(&secondaryoffhandbuttonpressed, command);
-        break;
+        return;
     case #"+frag":
         function_9024fce3(&fragbuttonpressed, command);
-        break;
+        return;
     case #"+actionslot 1":
         function_9024fce3(&actionslotonebuttonpressed, command);
-        break;
+        return;
     case #"+actionslot 2":
         function_9024fce3(&actionslottwobuttonpressed, command);
-        break;
+        return;
     case #"+actionslot 3":
         function_9024fce3(&actionslotthreebuttonpressed, command);
-        break;
+        return;
     case #"+actionslot 4":
         function_9024fce3(&actionslotfourbuttonpressed, command);
-        break;
+        return;
     case #"-actionslot 1":
         function_21e5a72f(&actionslotonebuttonpressed, command);
-        break;
+        return;
     case #"-actionslot 2":
         function_21e5a72f(&actionslottwobuttonpressed, command);
-        break;
+        return;
     case #"-actionslot 3":
         function_21e5a72f(&actionslotthreebuttonpressed, command);
-        break;
+        return;
     case #"-actionslot 4":
         function_21e5a72f(&actionslotfourbuttonpressed, command);
-        break;
+        return;
     case #"+stance":
         function_21e5a72f(&stancebuttonpressed, command);
-        break;
+        return;
     case #"+breath_sprint":
         function_21e5a72f(&sprintbuttonpressed, command);
-        break;
+        return;
     case #"+melee":
         function_21e5a72f(&meleebuttonpressed, command);
-        break;
+        return;
     }
 }
 
@@ -356,17 +356,29 @@ function propinputwatch() {
         waittillframeend();
         if (msg == "lock") {
             self function_22f362d7();
-        } else if (msg == "spin") {
+            continue;
+        }
+        if (msg == "spin") {
             self function_9bc7ac53();
-        } else if (msg == "changeProp") {
+            continue;
+        }
+        if (msg == "changeProp") {
             self propchange();
-        } else if (msg == "setToSlope") {
+            continue;
+        }
+        if (msg == "setToSlope") {
             self function_e8d4d2b();
-        } else if (msg == "propAbility") {
+            continue;
+        }
+        if (msg == "propAbility") {
             self propability();
-        } else if (msg == "cloneProp") {
+            continue;
+        }
+        if (msg == "cloneProp") {
             self function_88cea693();
-        } else if (msg == "hide") {
+            continue;
+        }
+        if (msg == "hide") {
             self function_2b14e8b1();
         }
     }
@@ -382,9 +394,9 @@ function function_22f362d7() {
     }
     if (self.lock) {
         self unlockprop();
-    } else {
-        self function_fb28c6d5();
+        return;
     }
+    self lockprop();
 }
 
 // Namespace prop_controls/_prop_controls
@@ -570,21 +582,21 @@ function function_e8d4d2b() {
                 self.var_a4da95c7.label = #"hash_3cd8ecbf9f39b3e9";
             }
         }
-    } else {
-        self.var_98d22839 = 0;
-        if (isdefined(self.lock) && self.lock) {
-            self.propent unlink();
-            self.propent.angles = (self.angles[0], self.propent.angles[1], self.angles[2]);
-            self.propent.origin = self.propanchor.origin;
-            self.propent linkto(self.propanchor);
+        return;
+    }
+    self.var_98d22839 = 0;
+    if (isdefined(self.lock) && self.lock) {
+        self.propent unlink();
+        self.propent.angles = (self.angles[0], self.propent.angles[1], self.angles[2]);
+        self.propent.origin = self.propanchor.origin;
+        self.propent linkto(self.propanchor);
+    }
+    if (prop::useprophudserver()) {
+        if (self is_player_gamepad_enabled()) {
+            self.var_a4da95c7.label = #"hash_7f59350f5f223501";
+            return;
         }
-        if (prop::useprophudserver()) {
-            if (self is_player_gamepad_enabled()) {
-                self.var_a4da95c7.label = #"hash_7f59350f5f223501";
-            } else {
-                self.var_a4da95c7.label = #"hash_4c7fbb5c1ccd5107";
-            }
-        }
+        self.var_a4da95c7.label = #"hash_4c7fbb5c1ccd5107";
     }
 }
 
@@ -733,9 +745,9 @@ function function_c0665212(shouldignore) {
         if (isdefined(player.prop)) {
             if (shouldignore) {
                 player.prop notsolid();
-            } else {
-                player.prop solid();
+                continue;
             }
+            player.prop solid();
         }
     }
 }
@@ -751,9 +763,9 @@ function function_5b73beef(shouldignore) {
                 if (isdefined(clone)) {
                     if (shouldignore) {
                         clone notsolid();
-                    } else {
-                        clone solid();
+                        continue;
                     }
+                    clone solid();
                 }
             }
         }
@@ -772,16 +784,12 @@ function get_ground_normal(var_67b8306d, debug) {
     }
     tracepoints = array(self.origin);
     if (getdvarint(#"hash_32aee631b4444f90", 1)) {
-        i = -1;
-        while (i <= 1) {
-            j = -1;
-            while (j <= 1) {
+        for (i = -1; i <= 1; i = i + 2) {
+            for (j = -1; j <= 1; j = j + 2) {
                 corner = ignore getpointinbounds(i, j, 0);
                 corner = (corner[0], corner[1], self.origin[2]);
                 tracepoints[tracepoints.size] = corner;
-                j = j + 2;
             }
-            i = i + 2;
         }
     }
     function_c0665212(1);
@@ -798,9 +806,9 @@ function get_ground_normal(var_67b8306d, debug) {
             if (debug) {
                 if (tracehit) {
                     line(point, point + trace[#"normal"] * 30, (0, 1, 0));
-                } else {
-                    sphere(point, 3, (1, 0, 0));
+                    continue;
                 }
+                sphere(point, 3, (1, 0, 0));
             }
         #/
     }
@@ -813,14 +821,13 @@ function get_ground_normal(var_67b8306d, debug) {
             }
         #/
         return avgnormal;
-    } else {
-        /#
-            if (debug) {
-                sphere(self.origin, 5, (1, 0, 0));
-            }
-        #/
-        return undefined;
     }
+    /#
+        if (debug) {
+            sphere(self.origin, 5, (1, 0, 0));
+        }
+    #/
+    return undefined;
 }
 
 // Namespace prop_controls/_prop_controls
@@ -891,7 +898,7 @@ function unlockprop() {
 // Params 0, eflags: 0x0
 // Checksum 0x54cd4e, Offset: 0x3070
 // Size: 0x144
-function function_fb28c6d5() {
+function lockprop() {
     if (!canlock()) {
         return;
     }
@@ -1008,7 +1015,8 @@ function canlock() {
             function_6de7bc19(1, "<unknown string>", self);
         #/
         return 1;
-    } else if (!self isonground() || self iswallrunning()) {
+    }
+    if (!self isonground() || self iswallrunning()) {
         trace1 = self function_97f02d5c();
         frac = trace1[#"fraction"];
         org1 = trace1[#"position"];
@@ -1063,12 +1071,11 @@ function canlock() {
             function_6de7bc19(1, "<unknown string>", self, org1, "<unknown string>", org2, "<unknown string>", point, "<unknown string>" + distance(org1, point));
         #/
         return 1;
-    } else {
-        /#
-            function_6de7bc19(1, "<unknown string>", self);
-        #/
-        return 1;
     }
+    /#
+        function_6de7bc19(1, "<unknown string>", self);
+    #/
+    return 1;
 }
 
 // Namespace prop_controls/_prop_controls
@@ -1093,7 +1100,9 @@ function function_be19060b() {
             }
             self.thirdpersonrange = self.thirdpersonrange - var_fc464c9b;
             self setclientthirdperson(1);
-        } else if (zoom == "zoomout") {
+            continue;
+        }
+        if (zoom == "zoomout") {
             var_70fc228b = math::clamp(self.prop.info.proprange + 50, 50, 360);
             if (self.thirdpersonrange + var_fc464c9b > var_70fc228b) {
                 continue;
@@ -1112,12 +1121,12 @@ function function_138e42e4() {
     switch (self.currentability) {
     case #"flash":
         self.var_5478a045.label = #"mp_ph_flash";
-        break;
+        return;
     default:
         /#
             assertmsg("<unknown string>");
         #/
-        break;
+        return;
     }
 }
 
@@ -1132,18 +1141,18 @@ function setnewabilitycount(var_8c8fd413, count) {
             count = level.phsettings.propnumflashes;
         }
         function_59c73c21(count);
-        break;
+        return;
     case #"clone":
         if (!isdefined(count)) {
             count = level.phsettings.propnumclones;
         }
         function_85a28bcc(count);
-        break;
+        return;
     default:
         /#
             assertmsg("<unknown string>" + var_8c8fd413);
         #/
-        break;
+        return;
     }
 }
 
@@ -1217,9 +1226,9 @@ function function_fdb58854() {
         }
         if (!isdefined(var_ccb1dd7)) {
             var_ccb1dd7 = clone;
-        } else {
-            clones[clones.size] = clone;
+            continue;
         }
+        clones[clones.size] = clone;
     }
     /#
         assert(isdefined(var_ccb1dd7));
@@ -1248,7 +1257,7 @@ function cloneprop() {
     var_6e55957c.fakehealth = 50;
     var_6e55957c.health = 99999;
     var_6e55957c.maxhealth = 99999;
-    var_6e55957c.var_76fd297e = self;
+    var_6e55957c.playerowner = self;
     var_6e55957c thread prop::function_aa8db165(&damageclonewatch);
     var_6e55957c setplayercollision(0);
     var_6e55957c makesentient();
@@ -1296,8 +1305,8 @@ function damageclonewatch(damage, attacker, direction_vec, point, meansofdeath, 
 function function_d1a1cc8d() {
     if (isdefined(self.lastattacker)) {
         scoreevents::processscoreevent("clone_destroyed", self.lastattacker);
-        if (isdefined(self.var_76fd297e)) {
-            scoreevents::processscoreevent("clone_was_destroyed", self.var_76fd297e);
+        if (isdefined(self.playerowner)) {
+            scoreevents::processscoreevent("clone_was_destroyed", self.playerowner);
         }
     }
     if (!isdefined(self.isdying)) {
@@ -1336,14 +1345,14 @@ function function_d8b858d4(var_2953b091, var_522acf74, var_abbedf2e) {
     overlay.vertalign = "fullscreen";
     overlay.alpha = 0;
     waitframe(1);
-    if (var_522acf74 > 0) {
+    if (var_522acf74 < 0) {
     }
     overlay.alpha = 1;
     self prop::function_1ee6f124(var_522acf74);
     self useservervisionset(1);
     self setvisionsetforplayer("blackout_ph", var_522acf74);
     self prop::function_1ee6f124(var_2953b091 - var_abbedf2e - var_522acf74);
-    if (var_abbedf2e > 0) {
+    if (var_abbedf2e < 0) {
     }
     overlay.alpha = 0;
     self useservervisionset(0);
@@ -1474,7 +1483,7 @@ function function_58699cee(index) {
             function_45534e6c(1);
             function_d08dcbaf(0);
             function_44a27dd6(1);
-            break;
+            return;
         }
     }
 }
@@ -1491,14 +1500,14 @@ function function_e896a36a(issolid) {
                     player.prop setcontents(player.prop.var_7ccb9924);
                 }
                 player.prop solid();
-            } else {
-                if (!isdefined(player.prop.var_7ccb9924)) {
-                    player.prop.var_7ccb9924 = player.prop setcontents(0);
-                } else {
-                    player.prop setcontents(0);
-                }
-                player.prop notsolid();
+                continue;
             }
+            if (!isdefined(player.prop.var_7ccb9924)) {
+                player.prop.var_7ccb9924 = player.prop setcontents(0);
+            } else {
+                player.prop setcontents(0);
+            }
+            player.prop notsolid();
         }
     }
 }
@@ -1517,14 +1526,14 @@ function function_45534e6c(issolid) {
                             clone setcontents(clone.var_fc18a70a);
                         }
                         clone solid();
-                    } else {
-                        if (!isdefined(clone.var_fc18a70a)) {
-                            clone.var_fc18a70a = clone setcontents(0);
-                        } else {
-                            clone setcontents(0);
-                        }
-                        clone notsolid();
+                        continue;
                     }
+                    if (!isdefined(clone.var_fc18a70a)) {
+                        clone.var_fc18a70a = clone setcontents(0);
+                    } else {
+                        clone setcontents(0);
+                    }
+                    clone notsolid();
                 }
             }
         }
@@ -1543,10 +1552,10 @@ function function_d08dcbaf(issolid) {
         if (issolid) {
             player setcontents(level.phsettings.var_b5f21379);
             player solid();
-        } else {
-            player setcontents(0);
-            player notsolid();
+            continue;
         }
+        player setcontents(0);
+        player notsolid();
     }
 }
 
@@ -1562,10 +1571,10 @@ function function_44a27dd6(issolid) {
         if (issolid) {
             player setcontents(level.phsettings.var_b5f21379);
             player solid();
-        } else {
-            player setcontents(0);
-            player notsolid();
+            continue;
         }
+        player setcontents(0);
+        player notsolid();
     }
 }
 
@@ -1644,11 +1653,11 @@ function function_2b14e8b1() {
         if (prop::useprophudserver()) {
             self.var_8e3b5c8c.label = #"hash_54ba1311175de71e";
         }
-    } else {
-        self clientfield::set_to_player("PROP.hide_prop", 0);
-        if (prop::useprophudserver()) {
-            self.var_8e3b5c8c.label = #"hash_fb73fdc2aff963f";
-        }
+        return;
+    }
+    self clientfield::set_to_player("PROP.hide_prop", 0);
+    if (prop::useprophudserver()) {
+        self.var_8e3b5c8c.label = #"hash_fb73fdc2aff963f";
     }
 }
 

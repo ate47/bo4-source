@@ -82,7 +82,9 @@ function equal(var_a, var_b) {
 function function_5cb6d7c8(x, b_1, b_2) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1), 1);
     }
 }
@@ -94,9 +96,13 @@ function function_5cb6d7c8(x, b_1, b_2) {
 function function_4902305f(x, b_1, b_2, b_3) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1, 0), 1);
-    } else if (isdefined(b_3) && b_3) {
+        return;
+    }
+    if (isdefined(b_3) && b_3) {
         self flowgraph::kick(array(undefined, 0, 0, 1), 1);
     }
 }
@@ -108,11 +114,17 @@ function function_4902305f(x, b_1, b_2, b_3) {
 function function_3b225c4(x, b_1, b_2, b_3, b_4) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0, 0, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1, 0, 0), 1);
-    } else if (isdefined(b_3) && b_3) {
+        return;
+    }
+    if (isdefined(b_3) && b_3) {
         self flowgraph::kick(array(undefined, 0, 0, 1, 0), 1);
-    } else if (isdefined(b_4) && b_4) {
+        return;
+    }
+    if (isdefined(b_4) && b_4) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 1), 1);
     }
 }
@@ -124,13 +136,21 @@ function function_3b225c4(x, b_1, b_2, b_3, b_4) {
 function function_f82f0ebe(x, b_1, b_2, b_3, b_4, b_5) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1, 0, 0, 0), 1);
-    } else if (isdefined(b_3) && b_3) {
+        return;
+    }
+    if (isdefined(b_3) && b_3) {
         self flowgraph::kick(array(undefined, 0, 0, 1, 0, 0), 1);
-    } else if (isdefined(b_4) && b_4) {
+        return;
+    }
+    if (isdefined(b_4) && b_4) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 1, 0), 1);
-    } else if (isdefined(b_5) && b_5) {
+        return;
+    }
+    if (isdefined(b_5) && b_5) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 1), 1);
     }
 }
@@ -142,15 +162,25 @@ function function_f82f0ebe(x, b_1, b_2, b_3, b_4, b_5) {
 function function_3f431ce5(x, b_1, b_2, b_3, b_4, b_5, b_6) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_3) && b_3) {
+        return;
+    }
+    if (isdefined(b_3) && b_3) {
         self flowgraph::kick(array(undefined, 0, 0, 1, 0, 0, 0), 1);
-    } else if (isdefined(b_4) && b_4) {
+        return;
+    }
+    if (isdefined(b_4) && b_4) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 1, 0, 0), 1);
-    } else if (isdefined(b_5) && b_5) {
+        return;
+    }
+    if (isdefined(b_5) && b_5) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 1, 0), 1);
-    } else if (isdefined(b_6) && b_6) {
+        return;
+    }
+    if (isdefined(b_6) && b_6) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 0, 1), 1);
     }
 }
@@ -162,17 +192,29 @@ function function_3f431ce5(x, b_1, b_2, b_3, b_4, b_5, b_6) {
 function function_2d817962(x, b_1, b_2, b_3, b_4, b_5, b_6, b_7) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0, 0, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1, 0, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_3) && b_3) {
+        return;
+    }
+    if (isdefined(b_3) && b_3) {
         self flowgraph::kick(array(undefined, 0, 0, 1, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_4) && b_4) {
+        return;
+    }
+    if (isdefined(b_4) && b_4) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 1, 0, 0, 0), 1);
-    } else if (isdefined(b_5) && b_5) {
+        return;
+    }
+    if (isdefined(b_5) && b_5) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 1, 0, 0), 1);
-    } else if (isdefined(b_6) && b_6) {
+        return;
+    }
+    if (isdefined(b_6) && b_6) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 0, 1, 0), 1);
-    } else if (isdefined(b_7) && b_7) {
+        return;
+    }
+    if (isdefined(b_7) && b_7) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 0, 0, 1), 1);
     }
 }
@@ -184,19 +226,33 @@ function function_2d817962(x, b_1, b_2, b_3, b_4, b_5, b_6, b_7) {
 function function_c8fcb052(x, b_1, b_2, b_3, b_4, b_5, b_6, b_7, b_8) {
     if (isdefined(b_1) && b_1) {
         self flowgraph::kick(array(undefined, 1, 0, 0, 0, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_2) && b_2) {
+        return;
+    }
+    if (isdefined(b_2) && b_2) {
         self flowgraph::kick(array(undefined, 0, 1, 0, 0, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_3) && b_3) {
+        return;
+    }
+    if (isdefined(b_3) && b_3) {
         self flowgraph::kick(array(undefined, 0, 0, 1, 0, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_4) && b_4) {
+        return;
+    }
+    if (isdefined(b_4) && b_4) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 1, 0, 0, 0, 0), 1);
-    } else if (isdefined(b_5) && b_5) {
+        return;
+    }
+    if (isdefined(b_5) && b_5) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 1, 0, 0, 0), 1);
-    } else if (isdefined(b_6) && b_6) {
+        return;
+    }
+    if (isdefined(b_6) && b_6) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 0, 1, 0, 0), 1);
-    } else if (isdefined(b_7) && b_7) {
+        return;
+    }
+    if (isdefined(b_7) && b_7) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 0, 0, 1, 0), 1);
-    } else if (isdefined(b_8) && b_8) {
+        return;
+    }
+    if (isdefined(b_8) && b_8) {
         self flowgraph::kick(array(undefined, 0, 0, 0, 0, 0, 0, 0, 1), 1);
     }
 }
@@ -212,10 +268,8 @@ function forloop(x, i_begin, i_end) {
     if (i_end < i_begin) {
         i_step = -1;
     }
-    i = i_begin;
-    while (i != i_end) {
+    for (i = i_begin; i != i_end; i = i + i_step) {
         self flowgraph::kick(array(1, i), 1);
-        i = i + i_step;
     }
 }
 

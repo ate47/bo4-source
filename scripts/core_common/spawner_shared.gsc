@@ -84,12 +84,12 @@ function global_ai_array() {
                 }
             }
         }
-    } else {
-        foreach (array in level.ai) {
-            for (i = array.size - 1; i >= 0; i--) {
-                if (!isdefined(array[i])) {
-                    arrayremoveindex(array, i);
-                }
+        return;
+    }
+    foreach (array in level.ai) {
+        for (i = array.size - 1; i >= 0; i--) {
+            if (!isdefined(array[i])) {
+                arrayremoveindex(array, i);
             }
         }
     }
@@ -336,9 +336,9 @@ function spawn_think_action(spawner) {
                 self thread go_to_node();
             }
         }
-    } else {
-        self thread set_goalradius_based_on_settings();
+        return;
     }
+    self thread set_goalradius_based_on_settings();
 }
 
 // Namespace spawner/spawner_shared
@@ -352,9 +352,9 @@ function function_27fb21d8(s_scene) {
     e_goal = getent(self.target, "targetname");
     if (isdefined(e_goal)) {
         self setgoal(e_goal);
-    } else {
-        self thread go_to_node();
+        return;
     }
+    self thread go_to_node();
 }
 
 // Namespace spawner/spawner_shared
@@ -614,30 +614,29 @@ function crawl_target_and_init_flags(ent, get_func) {
     targets = [];
     index = 0;
     for (;;) {
-        for (;;) {
-            if (!isdefined(ent.crawled)) {
-                ent.crawled = 1;
-                level thread remove_crawled(ent);
-                if (isdefined(ent.script_flag_set)) {
-                    if (!isdefined(level.flag[ent.script_flag_set])) {
-                        level flag::init(ent.script_flag_set);
-                    }
-                }
-                if (isdefined(ent.script_flag_wait)) {
-                    if (!isdefined(level.flag[ent.script_flag_wait])) {
-                        level flag::init(ent.script_flag_wait);
-                    }
-                }
-                if (isdefined(ent.target)) {
-                    new_targets = [[ get_func ]](ent.target);
-                    array::add(targets, new_targets);
+        if (!isdefined(ent.crawled)) {
+            ent.crawled = 1;
+            level thread remove_crawled(ent);
+            if (isdefined(ent.script_flag_set)) {
+                if (!isdefined(level.flag[ent.script_flag_set])) {
+                    level flag::init(ent.script_flag_set);
                 }
             }
-            index++;
-            if (index >= targets.size) {
-                break;
+            if (isdefined(ent.script_flag_wait)) {
+                if (!isdefined(level.flag[ent.script_flag_wait])) {
+                    level flag::init(ent.script_flag_wait);
+                }
+            }
+            if (isdefined(ent.target)) {
+                new_targets = [[ get_func ]](ent.target);
+                array::add(targets, new_targets);
             }
         }
+        index++;
+        if (index >= targets.size) {
+            return;
+        }
+        ent = targets[index];
     }
 }
 
@@ -708,7 +707,9 @@ function set_goalradius_based_on_settings(node) {
     waittillframeend();
     if (isdefined(self.script_radius)) {
         self.goalradius = self.script_radius;
-    } else if (isdefined(node) && node_has_radius(node)) {
+        return;
+    }
+    if (isdefined(node) && node_has_radius(node)) {
         self.goalradius = node.radius;
     }
 }
@@ -1047,10 +1048,10 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
             self notify(#"hash_66551cac93d16401");
             return e_spawned;
         }
-    } else {
-        self notify(#"hash_66551cac93d16401");
-        return e_spawned;
+        return;
     }
+    self notify(#"hash_66551cac93d16401");
+    return e_spawned;
 }
 
 // Namespace spawner/spawner_shared
@@ -1071,10 +1072,10 @@ function function_d4a13039() {
 function teleport_spawned(v_origin = self.origin, v_angles = self.angles, b_reset_entity = 1) {
     if (isactor(self)) {
         self forceteleport(v_origin, v_angles, 1, b_reset_entity);
-    } else {
-        self.origin = v_origin;
-        self.angles = v_angles;
+        return;
     }
+    self.origin = v_origin;
+    self.angles = v_angles;
 }
 
 // Namespace spawner/spawner_shared
@@ -1307,7 +1308,7 @@ function add_archetype_spawn_function(archetype, spawn_func, ...) {
 }
 
 // Namespace spawner/spawner_shared
-// Params 3, eflags: 0x21 linked
+// Params 3, eflags: 0x20
 // Checksum 0x365d1ec1, Offset: 0x4b30
 // Size: 0x1a4
 function function_89a2cd87(archetype, spawn_func, ...) {

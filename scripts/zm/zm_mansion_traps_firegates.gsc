@@ -135,9 +135,13 @@ function function_bd8eddac() {
     foreach (e_element in a_e_elements) {
         if (e_element.script_noteworthy === "trap_console") {
             self.var_3d6b88c4[self.var_3d6b88c4.size] = e_element;
-        } else if (e_element.script_noteworthy === "trap_lever") {
+            continue;
+        }
+        if (e_element.script_noteworthy === "trap_lever") {
             self.var_872ce8b7[self.var_872ce8b7.size] = e_element;
-        } else if (e_element.script_noteworthy === "bulletclip") {
+            continue;
+        }
+        if (e_element.script_noteworthy === "bulletclip") {
             e_element notsolid();
             self.bulletclip = e_element;
         }
@@ -146,7 +150,9 @@ function function_bd8eddac() {
     foreach (s_element in a_s_elements) {
         if (s_element.script_noteworthy === "source_trig_pos") {
             self.var_3a2026c0[self.var_3a2026c0.size] = s_element;
-        } else if (s_element.script_noteworthy === "energy_source") {
+            continue;
+        }
+        if (s_element.script_noteworthy === "energy_source") {
             self.var_a768e132[self.var_a768e132.size] = s_element;
         }
     }
@@ -227,7 +233,9 @@ function function_5b8a557f() {
                     level thread zm_traps::trap_activate(e_trap, e_player);
                 }
             }
-        } else if (level.var_940ee624 > 0) {
+            continue;
+        }
+        if (level.var_940ee624 > 0) {
             e_player thread function_1bcb6813();
             e_trap.var_23aecef0 = 1;
             mdl_trap = arraygetclosest(self.stub.origin, level.var_ba53c5c5);
@@ -313,9 +321,9 @@ function function_a8f79714() {
     }
     if (math::cointoss()) {
         array::add(level.var_4f17d729, function_2a5a929("greenhouse"));
-    } else {
-        array::add(level.var_4f17d729, function_2a5a929("gardens"));
+        return;
     }
+    array::add(level.var_4f17d729, function_2a5a929("gardens"));
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
@@ -324,12 +332,10 @@ function function_a8f79714() {
 // Size: 0x1a6
 function function_2a5a929(str_location, var_b7eee573) {
     a_s_locs = struct::get_array("s_firegate_energy_src_" + str_location, "targetname");
-    var_d0ed2a4c = 0;
-    while (!var_d0ed2a4c) {
+    for (var_d0ed2a4c = 0; !var_d0ed2a4c; var_d0ed2a4c = 1) {
         s_loc = array::random(a_s_locs);
         if (!isdefined(s_loc.b_occupied)) {
             s_loc.b_occupied = 1;
-            var_d0ed2a4c = 1;
         }
     }
     str_prompt = zm_utility::function_d6046228(#"hash_78bf6e69946b64ca", #"hash_7042b50d373a6fce");
@@ -385,9 +391,9 @@ function function_7b170638(var_8163cc4, b_found) {
     if (isdefined(var_7a0a29e3)) {
         if (b_found) {
             level zm_ui_inventory::function_7df6bb60(var_7a0a29e3, 1);
-        } else {
-            level zm_ui_inventory::function_7df6bb60(var_7a0a29e3, 2);
+            return;
         }
+        level zm_ui_inventory::function_7df6bb60(var_7a0a29e3, 2);
     }
 }
 
@@ -552,11 +558,14 @@ function function_5ad19000(e_trap) {
     self endon(#"death");
     if (self.var_6f84b820 === #"popcorn") {
         return;
-    } else if (self.var_9fde8624 === #"catalyst_plasma" && e_trap flag::get(#"friendly") == 0) {
+    }
+    if (self.var_9fde8624 === #"catalyst_plasma" && e_trap flag::get(#"friendly") == 0) {
         return;
-    } else if (self.team === #"allies") {
+    }
+    if (self.team === #"allies") {
         return;
-    } else if (self.var_6f84b820 === #"miniboss" || self.var_6f84b820 === #"heavy" || self.var_6f84b820 === #"boss") {
+    }
+    if (self.var_6f84b820 === #"miniboss" || self.var_6f84b820 === #"heavy" || self.var_6f84b820 === #"boss") {
         if (self.archetype === #"blight_father") {
             e_trap deactivate_trap();
         }
@@ -567,20 +576,20 @@ function function_5ad19000(e_trap) {
             return;
         }
         self dodamage(self.health * 0.1, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
-    } else {
-        self thread zombie_death::flame_death_fx();
-        if (isdefined(self.var_5475b4ad)) {
-            self [[ self.var_5475b4ad ]](e_trap);
-        } else {
-            [[ level.var_db63b33b ]]->waitinqueue(self);
-            level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
-            if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
-                e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-                e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-            }
-            self dodamage(20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
-        }
+        return;
     }
+    self thread zombie_death::flame_death_fx();
+    if (isdefined(self.var_5475b4ad)) {
+        self [[ self.var_5475b4ad ]](e_trap);
+        return;
+    }
+    [[ level.var_db63b33b ]]->waitinqueue(self);
+    level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+    if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
+        e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+        e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+    }
+    self dodamage(20000, e_trap.origin, undefined, e_trap, undefined, "MOD_BURNED", 0, undefined);
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
@@ -608,9 +617,9 @@ function function_21fd7c39() {
         s_notify = self.bulletclip waittill(#"damage");
         if (s_notify.weapon === level.var_74cf08b1 || s_notify.weapon === level.var_4b14202f) {
             b_friendly = 1;
-        } else {
-            self.bulletclip.health = 100000;
+            continue;
         }
+        self.bulletclip.health = 100000;
     }
     self flag::set(#"friendly");
     if (s_notify.weapon === level.var_4b14202f) {
@@ -620,7 +629,9 @@ function function_21fd7c39() {
         if (isalive(e_player) && !(isdefined(e_player.var_a46d8eee) && e_player.var_a46d8eee)) {
             e_player thread function_1eeda1e5();
         }
-    } else if (s_notify.weapon === level.var_74cf08b1) {
+        return;
+    }
+    if (s_notify.weapon === level.var_74cf08b1) {
         self thread function_7d9e84f9("green");
     }
 }
@@ -666,19 +677,19 @@ function private function_e714e3a8(str_state = "off") {
         self hidepart("light_green");
         self hidepart("light_red");
         self showpart("light_off");
-        break;
+        return;
     case #"green":
         self clientfield::set("" + #"trap_light", 1);
         self hidepart("light_off");
         self hidepart("light_red");
         self showpart("light_green");
-        break;
+        return;
     case #"red":
         self clientfield::set("" + #"trap_light", 2);
         self hidepart("light_green");
         self hidepart("light_off");
         self showpart("light_red");
-        break;
+        return;
     }
 }
 

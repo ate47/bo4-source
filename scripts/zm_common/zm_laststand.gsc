@@ -149,9 +149,9 @@ function registerfxanim_warehouse_explo(pause_enabled) {
         }
         if (isdefined(level.var_a53a05b5) && level.var_a53a05b5 == slot) {
             self zm_hero_weapon::function_76505465(slot, pause_enabled);
-        } else {
-            self function_19ed70ca(slot, pause_enabled);
+            continue;
         }
+        self function_19ed70ca(slot, pause_enabled);
     }
 }
 
@@ -394,14 +394,16 @@ function laststand_disable_player_weapons() {
         if (weapon == level.weaponrevivetool || weapon === self.weaponrevivetool) {
             self zm_stats::increment_client_stat("failed_sacrifices");
             self zm_stats::increment_player_stat("failed_sacrifices");
-        } else if (weapon.isperkbottle) {
+            continue;
+        }
+        if (weapon.isperkbottle) {
             self takeweapon(weapon);
             self.lastactiveweapon = level.weaponnone;
             continue;
-        } else if (isdefined(zm_utility::get_gamemode_var("item_meat_weapon")) && weapon == zm_utility::get_gamemode_var("item_meat_weapon")) {
+        }
+        if (isdefined(zm_utility::get_gamemode_var("item_meat_weapon")) && weapon == zm_utility::get_gamemode_var("item_meat_weapon")) {
             self takeweapon(weapon);
             self.lastactiveweapon = level.weaponnone;
-            continue;
         }
     }
     self notify(#"weapons_taken_for_last_stand");
@@ -434,7 +436,7 @@ function laststand_enable_player_weapons(b_bled_out) {
         }
         do {
             waitframe(1);
-        } while(self isswitchingweapons());
+        } while (self isswitchingweapons());
     }
     self.laststandpistol = undefined;
     self notify(#"hash_9b426cce825928d");
@@ -462,9 +464,8 @@ function laststand_has_players_weapons_returned() {
 function function_cbfcda16() {
     if (level.players.size > 1) {
         return level.default_laststandpistol;
-    } else {
-        return level.default_solo_laststandpistol;
     }
+    return level.default_solo_laststandpistol;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -507,7 +508,6 @@ function function_aac4b2c9(weapon) {
 function function_6155752d() {
     self endon(#"disconnect");
     self.var_d84718d1 = [];
-LOC_00000028:
     while (1) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change_complete");
@@ -779,9 +779,9 @@ function bleed_out() {
     if (isdefined(level.is_zombie_level) && level.is_zombie_level) {
         self thread [[ level.player_becomes_zombie ]]();
         self.statusicon = "hud_status_dead";
-    } else {
-        self val::reset(#"laststand", "ignoreme");
+        return;
     }
+    self val::reset(#"laststand", "ignoreme");
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -841,9 +841,9 @@ function function_4d3cb10() {
             if (isdefined(e_player.var_240cf7be) && e_player.var_240cf7be) {
                 if (var_9156a121) {
                     e_player function_3d685b5f(int(max(0, e_player.var_d66589da - e_player.var_308dc243)));
-                } else {
-                    e_player function_3d685b5f(int(max(0, e_player.var_5d4c5daf - e_player.var_308dc243)));
+                    continue;
                 }
+                e_player function_3d685b5f(int(max(0, e_player.var_5d4c5daf - e_player.var_308dc243)));
             }
         }
     }
@@ -917,9 +917,9 @@ function function_b7c101fa() {
         self.var_d66589da = int(var_48f2f554);
         self.var_5d4c5daf = int(var_48f2f554);
         self function_3d685b5f(var_48f2f554);
-    } else {
-        self function_3d685b5f(self_revive_count);
+        return;
     }
+    self function_3d685b5f(self_revive_count);
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -1084,7 +1084,9 @@ function revive_trigger_think(t_secondary) {
                     t_revive setrevivehintstring(#"hash_12272c5573321d90", self.team);
                     break;
                 }
-            } else if (e_player can_revive_via_override(self) || e_player can_revive(self) || n_depth > 20) {
+                continue;
+            }
+            if (e_player can_revive_via_override(self) || e_player can_revive(self) || n_depth > 20) {
                 t_revive setrevivehintstring(#"hash_12272c5573321d90", self.team);
                 break;
             }
@@ -1137,7 +1139,8 @@ function revive_trigger_think(t_secondary) {
                 self thread revive_success(e_reviver);
                 self notify(#"stop_revive_trigger");
                 return;
-            } else if (isdefined(e_reviver)) {
+            }
+            if (isdefined(e_reviver)) {
                 e_reviver zm_vo::vo_stop();
             }
         }
@@ -1199,9 +1202,9 @@ function revive_give_back_weapons(w_reviver, w_revive_tool) {
     self enableweaponcycling();
     if (w_reviver != level.weaponnone && !zm_loadout::is_placeable_mine(w_reviver) && !zm_equipment::is_equipment(w_reviver) && !w_reviver.isflourishweapon && self hasweapon(w_reviver)) {
         self zm_weapons::switch_back_primary_weapon(w_reviver, 0, 1);
-    } else {
-        self zm_weapons::switch_back_primary_weapon();
+        return;
     }
+    self zm_weapons::switch_back_primary_weapon();
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -1587,16 +1590,19 @@ function revive_hud_think() {
                     continue;
                 }
                 if (util::get_game_type() == "vs") {
-                    jumpiffalse(players[i].team != playertorevive.team) LOC_0000019e;
-                } else if (zm_utility::is_encounter()) {
+                    if (players[i].team != playertorevive.team) {
+                        continue;
+                    }
+                }
+                if (zm_utility::is_encounter()) {
                     if (players[i].sessionteam != playertorevive.sessionteam) {
                         continue;
                     }
-                    jumpiffalse(isdefined(level.hide_revive_message) && level.hide_revive_message) LOC_000001fe;
-                } else {
-                LOC_000001fe:
-                    players[i] thread laststand::revive_hud_show_n_fade(#"hash_453f3038b87fbc77", 3, playertorevive);
+                    if (isdefined(level.hide_revive_message) && level.hide_revive_message) {
+                        continue;
+                    }
                 }
+                players[i] thread laststand::revive_hud_show_n_fade(#"hash_453f3038b87fbc77", 3, playertorevive);
             }
             playertorevive.revivetrigger.createtime = undefined;
             wait(3.5);
@@ -1727,8 +1733,8 @@ function instakill_player() {
         level.var_1c957023 self_revive_visuals::close(self);
         waitframe(4);
         bleed_out();
-    } else {
-        self dodamage(self.maxhealth + 666, self.origin);
+        return;
     }
+    self dodamage(self.maxhealth + 666, self.origin);
 }
 

@@ -55,21 +55,29 @@ class cct_shared_aar_medals : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"medal_gold" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"medal_silver" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
-        } else if (#"medal_bronze" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
-        } else if (#"medal_none" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"medal_gold" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        if (#"medal_silver" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            return;
+        }
+        if (#"medal_bronze" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            return;
+        }
+        if (#"medal_none" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals

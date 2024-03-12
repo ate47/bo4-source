@@ -61,10 +61,10 @@ function burning_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
     if (newval) {
         self function_a6cb96f(localclientnum);
         self function_adae7d84(localclientnum);
-    } else {
-        self function_8227cec3(localclientnum);
-        self function_68a11df6(localclientnum);
+        return;
     }
+    self function_8227cec3(localclientnum);
+    self function_68a11df6(localclientnum);
 }
 
 // Namespace burnplayer/burnplayer
@@ -74,10 +74,10 @@ function burning_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
 function burning_corpse_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self set_corpse_burning(localclientnum);
-    } else {
-        self function_8227cec3(localclientnum);
-        self function_68a11df6(localclientnum);
+        return;
     }
+    self function_8227cec3(localclientnum);
+    self function_68a11df6(localclientnum);
 }
 
 // Namespace burnplayer/burnplayer

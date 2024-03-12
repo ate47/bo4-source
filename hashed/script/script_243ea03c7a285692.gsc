@@ -78,7 +78,7 @@ class crevive_hud : cluielem {
 }
 
 // Namespace revive_hud/revive_hud
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xc88c96a8, Offset: 0xe0
 // Size: 0x40
 function register(uid) {

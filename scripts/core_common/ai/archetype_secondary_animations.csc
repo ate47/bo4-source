@@ -161,7 +161,6 @@ function private secondaryfacialanimationthink(localclientnum) {
     self endon(#"death");
     self endon(#"stopfacialthread");
     self._currentfacestate = "inactive";
-LOC_000000ec:
     while (isdefined(self.archetype)) {
         if (self.archetype == #"human" && self clientfield::get("facial_dial")) {
             self._currentfacestate = "inactive";
@@ -174,7 +173,7 @@ LOC_000000ec:
         forcenewanim = 0;
         switch (asmstatus) {
         case #"asm_status_terminated":
-            
+            return;
         case #"asm_status_inactive":
             if (isdefined(animoverride)) {
                 scriptedanim = self getprimarydeltaanim();
@@ -239,7 +238,7 @@ LOC_000000ec:
             self._currentfacestate = nextfacestate;
         }
         if (self._currentfacestate == "death") {
-            break;
+            return;
         }
         wait(0.25);
     }

@@ -44,9 +44,9 @@ function autoexec init() {
 function mannequincollisionservice(entity) {
     if (isdefined(entity.enemy) && distancesquared(entity.origin, entity.enemy.origin) > 300 * 300) {
         entity collidewithactors(0);
-    } else {
-        entity collidewithactors(1);
+        return;
     }
+    entity collidewithactors(1);
 }
 
 // Namespace mannequinbehavior/archetype_mannequin

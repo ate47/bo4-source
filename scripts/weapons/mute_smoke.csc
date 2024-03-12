@@ -75,7 +75,7 @@ function function_12e09509(localclientnum = 0) {
         }
         if (!var_5929417d) {
             if (!isdefined(var_46e1fb08) || !isdefined(var_37b85cb5) || !isdefined(var_618fb067)) {
-                break;
+                return;
             }
             var_46e1fb08 hide();
             var_37b85cb5 hide();
@@ -194,9 +194,9 @@ function function_baebe8c4(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_24dbaaee(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         audio::snd_set_snapshot("cod_mute_smoke_enemy");
-    } else {
-        audio::snd_set_snapshot("default");
+        return;
     }
+    audio::snd_set_snapshot("default");
 }
 
 // Namespace mute_smoke/mute_smoke
@@ -209,9 +209,9 @@ function function_7aeda665(localclientnum, oldval, newval, bnewent, binitialsnap
     if (var_f0120993 && !player function_83973173()) {
         if (newval == 0) {
             player stoprenderoverridebundle("rob_mute_smoke_outline");
-        } else {
-            player playrenderoverridebundle("rob_mute_smoke_outline");
+            return;
         }
+        player playrenderoverridebundle("rob_mute_smoke_outline");
     }
 }
 
@@ -227,9 +227,9 @@ function function_12d5587e(localclientnum, oldval, newval, bnewent, binitialsnap
             local_player = function_5c10bd79(localclientnum);
             local_player notify("stop_watching_enemy_visibility" + player getentitynumber());
             player duplicate_render::set_hacker_tool_hacked(localclientnum, 0);
-        } else {
-            local_player thread function_a189ab2e(localclientnum, player);
+            return;
         }
+        local_player thread function_a189ab2e(localclientnum, player);
     }
 }
 

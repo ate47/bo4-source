@@ -58,10 +58,10 @@ class throttle {
                 if (self.processed_ < self.processlimit_ && self.queue_[firstqueueindex] === entity) {
                     firstinqueue = 1;
                     self.queue_[firstqueueindex] = undefined;
-                } else {
-                    self.var_3cd6b18f[self.var_3cd6b18f.size] = entity;
-                    wait(self.updaterate_);
+                    continue;
                 }
+                self.var_3cd6b18f[self.var_3cd6b18f.size] = entity;
+                wait(self.updaterate_);
             }
         }
         self.processed_++;

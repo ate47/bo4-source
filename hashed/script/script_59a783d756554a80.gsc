@@ -229,9 +229,9 @@ function function_d7b93e68(e_player, n_index) {
     if (isdefined(n_index)) {
         level play_pentagon_announcer_vox(#"hash_33a55493071f7af6");
         e_player thread zm_audio::create_and_play_dialog(#"generic", #"response_negative", undefined, 1);
-    } else {
-        level thread play_pentagon_announcer_vox(#"hash_33a55493071f7af6");
+        return;
     }
+    level thread play_pentagon_announcer_vox(#"hash_33a55493071f7af6");
 }
 
 // Namespace namespace_8f53e87b/namespace_8f53e87b

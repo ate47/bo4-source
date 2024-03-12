@@ -195,7 +195,9 @@ function function_7f9eb7f() {
     waitresult = self waittill(#"death", #"death_started");
     if (!isdefined(self)) {
         arrayremovevalue(owner.mini_turrets, undefined);
-    } else if (self.damagetaken > self.health) {
+        return;
+    }
+    if (self.damagetaken > self.health) {
         arrayremovevalue(owner.mini_turrets, self);
     }
 }
@@ -397,15 +399,13 @@ function turret_laser_watch() {
 function setup_death_watch_for_new_targets() {
     turretvehicle = self;
     turretvehicle endon(#"death");
-    old_target = undefined;
-    while (1) {
+    for (old_target = undefined; 1; old_target = waitresult.target) {
         waitresult = undefined;
         waitresult = turretvehicle waittill(#"has_new_target");
         if (isdefined(old_target)) {
             old_target notify(#"abort_death_watch");
         }
         waitresult.target thread target_death_watch(turretvehicle);
-        old_target = waitresult.target;
     }
 }
 

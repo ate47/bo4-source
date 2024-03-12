@@ -65,9 +65,9 @@ function function_eaeb557() {
                     }
                 }
             }
-        } else {
-            function_e2a06860(e_homunculus, 3);
+            continue;
         }
+        function_e2a06860(e_homunculus, 3);
     }
 }
 

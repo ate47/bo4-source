@@ -512,23 +512,23 @@ function function_946c1972(eventstruct) {
         } else {
             level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 4);
         }
-        break;
+        return;
     case #"fakedeath":
         level thread zm_audio::zmbaivox_playvox(self, "pain", 1, 3);
-        break;
+        return;
     case #"pain":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 3);
-        break;
+        return;
     case #"melee_vox":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 1, 2, 1);
-        break;
+        return;
     case #"sprint":
     case #"ambient":
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 0, 1);
-        break;
+        return;
     default:
         level thread zm_audio::zmbaivox_playvox(self, notify_string, 0, 2);
-        break;
+        return;
     }
 }
 
@@ -557,28 +557,27 @@ function private function_6ae10cf1(cmd) {
         switch (cmd) {
         case #"skeleton_spawn":
             zm_devgui::spawn_archetype("<unknown string>");
-            break;
+            return;
         case #"hash_12e2063dc669bbe0":
             zm_devgui::spawn_archetype("<unknown string>");
-            break;
+            return;
         case #"hash_65bce5ef69a7ff3e":
             zm_devgui::spawn_archetype("<unknown string>");
-            break;
+            return;
         case #"hash_57892c7b7a106128":
             zm_devgui::spawn_archetype("<unknown string>");
-            break;
+            return;
         case #"hash_3889ece40febdc1e":
             function_2d69eef6("<unknown string>");
-            break;
+            return;
         case #"hash_1d61c627e61ca434":
             function_2d69eef6("<unknown string>");
-            break;
+            return;
         case #"hash_2a2ceb9249805ca7":
             function_2d69eef6("<unknown string>");
-            break;
+            return;
         default:
             return 0;
-            break;
         }
     #/
 }

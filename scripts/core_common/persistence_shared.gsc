@@ -116,9 +116,8 @@ function get_recent_stat(isglobal, index, statname) {
     if (isglobal) {
         modename = level.var_12323003;
         return self stats::get_stat(#"gamehistory", modename, #"matchhistory", index, statname);
-    } else {
-        return self stats::get_stat(#"playerstatsbygametype", level.var_12323003, #"prevscores", index, statname);
     }
+    return self stats::get_stat(#"playerstatsbygametype", level.var_12323003, #"prevscores", index, statname);
 }
 
 // Namespace persistence/persistence_shared
@@ -144,9 +143,9 @@ function set_recent_stat(isglobal, index, statname, value) {
     if (isglobal) {
         modename = level.var_12323003;
         self stats::set_stat(#"gamehistory", modename, #"matchhistory", "" + index, statname, value);
-    } else {
-        self stats::set_stat(#"playerstatsbygametype", level.var_12323003, #"prevscores", index, statname, value);
+        return;
     }
+    self stats::set_stat(#"playerstatsbygametype", level.var_12323003, #"prevscores", index, statname, value);
 }
 
 // Namespace persistence/persistence_shared
@@ -227,10 +226,10 @@ function initialize_match_stats() {
     }
     if (isdefined(level.var_12323003)) {
         self gamehistorystartmatch(level.var_12323003);
-    } else {
-        level.var_12323003 = level.gametype;
-        self gamehistorystartmatch(getgametypeenumfromname(level.gametype, level.hardcoremode));
+        return;
     }
+    level.var_12323003 = level.gametype;
+    self gamehistorystartmatch(getgametypeenumfromname(level.gametype, level.hardcoremode));
 }
 
 // Namespace persistence/player_challengecomplete
@@ -325,9 +324,13 @@ function challenge_complete(eventstruct) {
             }
             if (getdvarint(#"scr_debugchallenges", 0) == 1) {
                 iprintlnbold(challengestring + "<unknown string>" + maxval + "<unknown string>" + herostring);
-            } else if (getdvarint(#"scr_debugchallenges", 0) == 2) {
+                return;
+            }
+            if (getdvarint(#"scr_debugchallenges", 0) == 2) {
                 self iprintlnbold(challengestring + "<unknown string>" + maxval + "<unknown string>" + herostring);
-            } else if (getdvarint(#"scr_debugchallenges", 0) == 3) {
+                return;
+            }
+            if (getdvarint(#"scr_debugchallenges", 0) == 3) {
                 iprintln(challengestring + "<unknown string>" + maxval + "<unknown string>" + herostring);
             }
         }

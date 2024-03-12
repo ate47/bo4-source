@@ -52,7 +52,7 @@
 #namespace player;
 
 // Namespace player/player_killed
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa7de1e79, Offset: 0x698
 // Size: 0x2ae
 function function_df36a02d(attacker, weapon, mod) {
@@ -90,7 +90,7 @@ function function_df36a02d(attacker, weapon, mod) {
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xff984379, Offset: 0x950
 // Size: 0x116
 function function_7622d447(attacker) {
@@ -108,7 +108,7 @@ function function_7622d447(attacker) {
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfa76e3f3, Offset: 0xa70
 // Size: 0x138
 function function_ca27b62b(attacker, player) {
@@ -131,7 +131,7 @@ function function_ca27b62b(attacker, player) {
 }
 
 // Namespace player/player_killed
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xee83462, Offset: 0xbb0
 // Size: 0x26e
 function function_284c61bd(attacker, meansofdeath, bledout = 0) {
@@ -167,7 +167,7 @@ function function_284c61bd(attacker, meansofdeath, bledout = 0) {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xeaaf795e, Offset: 0xe28
 // Size: 0xda
 function private function_66cec679() {
@@ -184,7 +184,7 @@ function private function_66cec679() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb593dc4b, Offset: 0xf10
 // Size: 0x176
 function private function_448f7ed2() {
@@ -207,7 +207,7 @@ function private function_448f7ed2() {
 }
 
 // Namespace player/player_killed
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0x10161b5e, Offset: 0x1090
 // Size: 0x3104
 function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration, enteredresurrect = 0) {
@@ -318,7 +318,9 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
                     bestplayer = player;
                     bestplayermeansofdeath = self.attackerdamage[player.clientid].meansofdeath;
                     bestplayerweapon = self.attackerdamage[player.clientid].weapon;
-                } else if (isdefined(bestplayer) && self.attackerdamage[player.clientid].damage > self.attackerdamage[bestplayer.clientid].damage) {
+                    continue;
+                }
+                if (isdefined(bestplayer) && self.attackerdamage[player.clientid].damage > self.attackerdamage[bestplayer.clientid].damage) {
                     bestplayer = player;
                     bestplayermeansofdeath = self.attackerdamage[player.clientid].meansofdeath;
                     bestplayerweapon = self.attackerdamage[player.clientid].weapon;
@@ -444,9 +446,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
             lpattacknum = attacker getentitynumber();
             dokillcam = 1;
             if (var_8efc9727 && smeansofdeath == "MOD_GRENADE" && level.friendlyfire == 0) {
-                goto LOC_00001528;
-            }
-            if (var_8efc9727) {
+            } else if (var_8efc9727) {
                 wasteamkill = 1;
                 self team_kill(einflictor, attacker, smeansofdeath, weapon, shitloc);
             } else {
@@ -458,13 +458,9 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
                 if (bledout == 0 || level.var_81ca6158 === 1) {
                     if (level.teambased) {
                         awardassists = 1;
-                    LOC_00001528:
                     }
-                LOC_00001528:
                 }
-            LOC_00001528:
             }
-        LOC_00001528:
             if ((smeansofdeath == "MOD_HEAD_SHOT" || smeansofdeath == "MOD_IMPACT" && shitloc == "head") && !wasteamkill && !isdefined(killstreaks::get_killstreak_for_weapon(weapon))) {
                 scoreevents::processscoreevent(#"headshot", attacker, self, weapon);
                 attacker contracts::player_contract_event(#"headshot");
@@ -779,7 +775,9 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
             } else {
                 function_93115f65();
             }
-        } else if (!(isdefined(self.var_686890d5) && self.var_686890d5)) {
+            return;
+        }
+        if (!(isdefined(self.var_686890d5) && self.var_686890d5)) {
             self thread [[ level.spawnspectator ]](self.origin + vectorscale((0, 0, 1), 60), self.angles);
         }
         return;
@@ -839,7 +837,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd51ef74, Offset: 0x41a0
 // Size: 0x90
 function function_d5c8119d() {
@@ -854,7 +852,7 @@ function function_d5c8119d() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a5cebf4, Offset: 0x4238
 // Size: 0x38
 function function_9956f107() {
@@ -865,7 +863,7 @@ function function_9956f107() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe911c4e7, Offset: 0x4278
 // Size: 0x102
 function function_73da2f89() {
@@ -889,7 +887,7 @@ function function_73da2f89() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xde6f117a, Offset: 0x4388
 // Size: 0x15e
 function private function_93115f65() {
@@ -920,7 +918,7 @@ function private function_93115f65() {
 }
 
 // Namespace player/player_killed
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xfb8ad2f4, Offset: 0x44f0
 // Size: 0x37c
 function private function_caabcf70(victim, var_aedb48f4, laststandparams, var_a1d415ee) {
@@ -958,7 +956,7 @@ function private function_caabcf70(victim, var_aedb48f4, laststandparams, var_a1
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x11cd057a, Offset: 0x4878
 // Size: 0x18c
 function private function_7b0f4389() {
@@ -979,14 +977,14 @@ function private function_7b0f4389() {
                 self userspawnselection::function_b55c5868();
                 self userspawnselection::waitforspawnselection();
             }
-        } else {
-            self userspawnselection::activatespawnselectionmenu();
+            return;
         }
+        self userspawnselection::activatespawnselectionmenu();
     }
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xa67e2a0e, Offset: 0x4a10
 // Size: 0x38
 function private function_d1be915f() {
@@ -1000,7 +998,7 @@ function private function_d1be915f() {
 }
 
 // Namespace player/player_killed
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x1634faf1, Offset: 0x4a50
 // Size: 0x116
 function private watch_death(weapon, attacker, smeansofdeath, deathanimduration) {
@@ -1020,7 +1018,7 @@ function private watch_death(weapon, attacker, smeansofdeath, deathanimduration)
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x5a476565, Offset: 0x4b70
 // Size: 0x10e
 function private function_b029639e(attacker, einflictor, weapon, smeansofdeath, shitloc) {
@@ -1042,7 +1040,7 @@ function private function_b029639e(attacker, einflictor, weapon, smeansofdeath, 
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x14aeb3dc, Offset: 0x4c88
 // Size: 0x434
 function private update_killstreaks(attacker, weapon) {
@@ -1091,7 +1089,7 @@ function private update_killstreaks(attacker, weapon) {
 }
 
 // Namespace player/player_killed
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xa0d833ef, Offset: 0x50c8
 // Size: 0x3fc
 function private function_abbc84ad(attacker, weapon, smeansofdeath, inflictor) {
@@ -1138,7 +1136,7 @@ function private function_abbc84ad(attacker, weapon, smeansofdeath, inflictor) {
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xf08eae7, Offset: 0x54d0
 // Size: 0x534
 function function_a3030357(attacker, einflictor, weapon, smeansofdeath, var_bee367e6 = undefined) {
@@ -1197,23 +1195,23 @@ function function_a3030357(attacker, einflictor, weapon, smeansofdeath, var_bee3
                 potm::kill_bookmark(self, self, einflictor, var_50d1e41a, overrideentitycamera);
             }
         }
-    } else {
-        obituary(self, attacker, weapon, smeansofdeath);
-        demo::kill_bookmark(attacker, self, einflictor, var_50d1e41a, overrideentitycamera);
-        if (!var_e9d49a33) {
-            if (level.gametype === "bounty") {
-                if (isdefined(var_bee367e6)) {
-                    potm::function_66d09fea(#"bh_kill", var_bee367e6, self, einflictor, var_50d1e41a, overrideentitycamera);
-                }
-            } else {
-                potm::kill_bookmark(attacker, self, einflictor, var_50d1e41a, overrideentitycamera);
+        return;
+    }
+    obituary(self, attacker, weapon, smeansofdeath);
+    demo::kill_bookmark(attacker, self, einflictor, var_50d1e41a, overrideentitycamera);
+    if (!var_e9d49a33) {
+        if (level.gametype === "bounty") {
+            if (isdefined(var_bee367e6)) {
+                potm::function_66d09fea(#"bh_kill", var_bee367e6, self, einflictor, var_50d1e41a, overrideentitycamera);
             }
+            return;
         }
+        potm::kill_bookmark(attacker, self, einflictor, var_50d1e41a, overrideentitycamera);
     }
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbff70dc, Offset: 0x5a10
 // Size: 0x62
 function function_c0f28ff9(attacker, weapon) {
@@ -1228,7 +1226,7 @@ function function_c0f28ff9(attacker, weapon) {
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x481ec24a, Offset: 0x5a80
 // Size: 0x370
 function private suicide(einflictor, attacker, smeansofdeath, weapon, shitloc) {
@@ -1272,7 +1270,7 @@ function private suicide(einflictor, attacker, smeansofdeath, weapon, shitloc) {
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x76a5178b, Offset: 0x5df8
 // Size: 0x34c
 function private team_kill(einflictor, attacker, smeansofdeath, weapon, shitloc) {
@@ -1316,7 +1314,7 @@ function private team_kill(einflictor, attacker, smeansofdeath, weapon, shitloc)
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3d6ba7a3, Offset: 0x6150
 // Size: 0x8c
 function private wait_and_suicide() {
@@ -1328,7 +1326,7 @@ function private wait_and_suicide() {
 }
 
 // Namespace player/player_killed
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0xad58c403, Offset: 0x61e8
 // Size: 0x2fc
 function private function_48a1200f(einflictor, attacker, weapon, lpattackteam) {
@@ -1364,7 +1362,7 @@ function private function_48a1200f(einflictor, attacker, weapon, lpattackteam) {
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1d48dbe1, Offset: 0x64f0
 // Size: 0x114
 function function_f632c17e(weapon) {
@@ -1381,13 +1379,12 @@ function function_f632c17e(weapon) {
     case #"ac130_chaingun":
     case #"hash_7b24d0d0d2823bca":
         return 1;
-        break;
     }
     return 0;
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xf414f30, Offset: 0x6610
 // Size: 0x414
 function private function_4e3e8bee(einflictor, attacker, smeansofdeath, weapon, var_e7a369ea) {
@@ -1432,7 +1429,7 @@ function private function_4e3e8bee(einflictor, attacker, smeansofdeath, weapon, 
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x659a797c, Offset: 0x6a30
 // Size: 0x22c
 function private kill(einflictor, attacker, smeansofdeath, weapon, shitloc) {
@@ -1456,7 +1453,7 @@ function private kill(einflictor, attacker, smeansofdeath, weapon, shitloc) {
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6cae3624, Offset: 0x6c68
 // Size: 0x24
 function private should_allow_postgame_death(smeansofdeath) {
@@ -1467,7 +1464,7 @@ function private should_allow_postgame_death(smeansofdeath) {
 }
 
 // Namespace player/player_killed
-// Params 9, eflags: 0x5 linked
+// Params 9, eflags: 0x4
 // Checksum 0xeddd478, Offset: 0x6c98
 // Size: 0x17c
 function private post_game_death(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
@@ -1491,7 +1488,7 @@ function private post_game_death(einflictor, attacker, idamage, smeansofdeath, w
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x55494fb7, Offset: 0x6e20
 // Size: 0x6a0
 function private function_395ef176() {
@@ -1534,33 +1531,33 @@ function private function_395ef176() {
             level.var_9161927e[self.team]--;
         }
         function_c49fc862(self.team);
-    } else {
-        clientfield::set_player_uimodel("hudItems.playerLivesCount", level.numlives - self.var_a7d7e50a);
-        if (isdefined(level.var_4348a050) && level.var_4348a050) {
-            var_e6caaa48 = level.playerlives[#"allies"];
-            var_5724b72f = level.playerlives[#"axis"];
-            if (level.gametype == "sd" && userspawnselection::function_127864f2(self)) {
-                return;
-            }
-            if (self.team == #"allies") {
-                var_e6caaa48 = var_e6caaa48 - 1;
-            } else if (self.team == #"axis") {
-                var_5724b72f = var_5724b72f - 1;
-            }
-            if (var_e6caaa48 > 0 && var_5724b72f > 0) {
-                foreach (player in level.activeplayers) {
-                    if (!isdefined(player)) {
-                        continue;
-                    }
-                    player luinotifyevent(#"hash_6b67aa04e378d681", 3, 2, var_e6caaa48, var_5724b72f);
+        return;
+    }
+    clientfield::set_player_uimodel("hudItems.playerLivesCount", level.numlives - self.var_a7d7e50a);
+    if (isdefined(level.var_4348a050) && level.var_4348a050) {
+        var_e6caaa48 = level.playerlives[#"allies"];
+        var_5724b72f = level.playerlives[#"axis"];
+        if (level.gametype == "sd" && userspawnselection::function_127864f2(self)) {
+            return;
+        }
+        if (self.team == #"allies") {
+            var_e6caaa48 = var_e6caaa48 - 1;
+        } else if (self.team == #"axis") {
+            var_5724b72f = var_5724b72f - 1;
+        }
+        if (var_e6caaa48 > 0 && var_5724b72f > 0) {
+            foreach (player in level.activeplayers) {
+                if (!isdefined(player)) {
+                    continue;
                 }
+                player luinotifyevent(#"hash_6b67aa04e378d681", 3, 2, var_e6caaa48, var_5724b72f);
             }
         }
     }
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcce66119, Offset: 0x74c8
 // Size: 0x46
 function private function_5c5a8dad(lives) {
@@ -1571,7 +1568,7 @@ function private function_5c5a8dad(lives) {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x13e8f127, Offset: 0x7518
 // Size: 0x254
 function private start_generator_captureshouldshowpain() {
@@ -1584,9 +1581,7 @@ function private start_generator_captureshouldshowpain() {
     }
     if (game.lives[self.team] > 0) {
         if (isdefined(level.competitiveteamlives) && level.competitiveteamlives) {
-            goto LOC_00000166;
-        }
-        if (self.attackers.size < 1) {
+        } else if (self.attackers.size < 1) {
             return;
         } else {
             foreach (attacker in self.attackers) {
@@ -1601,14 +1596,14 @@ function private start_generator_captureshouldshowpain() {
             if (!(isdefined(removelives) && removelives)) {
                 return;
             }
-        LOC_00000166:
         }
-    LOC_00000166:
         game.lives[self.team]--;
         if (self.pers[#"lives"] == 0) {
             self function_5c5a8dad(game.lives[self.team]);
         }
-    } else if (self.pers[#"lives"]) {
+        return;
+    }
+    if (self.pers[#"lives"]) {
         self.pers[#"lives"]--;
         level callback::callback(#"hash_e702d557e24bb6", {#player:self});
         self function_5c5a8dad(self.pers[#"lives"]);
@@ -1616,7 +1611,7 @@ function private start_generator_captureshouldshowpain() {
 }
 
 // Namespace player/player_killed
-// Params 10, eflags: 0x5 linked
+// Params 10, eflags: 0x4
 // Checksum 0x2ae76091, Offset: 0x7778
 // Size: 0x37c
 function private create_body(attacker, idamage, smeansofdeath, weapon, shitloc, vdir, vattackerorigin, deathanimduration, einflictor, body) {
@@ -1661,7 +1656,7 @@ function private create_body(attacker, idamage, smeansofdeath, weapon, shitloc, 
 }
 
 // Namespace player/player_killed
-// Params 4, eflags: 0x5 linked
+// Params 4, eflags: 0x4
 // Checksum 0x5dc0baef, Offset: 0x7b00
 // Size: 0xa4
 function private should_drop_weapon_on_death(wasteamkill, wassuicide, current_weapon, smeansofdeath) {
@@ -1684,7 +1679,7 @@ function private should_drop_weapon_on_death(wasteamkill, wassuicide, current_we
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x99355f9f, Offset: 0x7bb0
 // Size: 0x2c
 function private function_8826f676() {
@@ -1694,7 +1689,7 @@ function private function_8826f676() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x456b414e, Offset: 0x7be8
 // Size: 0x44
 function private function_f9dc085a() {
@@ -1708,7 +1703,7 @@ function private function_f9dc085a() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x12111e7c, Offset: 0x7c38
 // Size: 0x94
 function private function_3c238bc5() {
@@ -1721,7 +1716,7 @@ function private function_3c238bc5() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x6aafd0e8, Offset: 0x7cd8
 // Size: 0x1dc
 function private function_dd602974() {
@@ -1745,7 +1740,7 @@ function private function_dd602974() {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe9f1d993, Offset: 0x7ec0
 // Size: 0xe2
 function function_821200bb() {
@@ -1757,17 +1752,17 @@ function function_821200bb() {
             exceeded = teamkills - level.var_fe3ff9c1 - 1;
             return (level.var_ca1c5097 + level.var_2c3d094b * exceeded);
         }
-    } else {
-        if (level.minimumallowedteamkills < 0 || teamkills <= level.minimumallowedteamkills) {
-            return 0;
-        }
-        exceeded = teamkills - level.minimumallowedteamkills;
-        return (level.teamkillspawndelay * exceeded);
+        return;
     }
+    if (level.minimumallowedteamkills < 0 || teamkills <= level.minimumallowedteamkills) {
+        return 0;
+    }
+    exceeded = teamkills - level.minimumallowedteamkills;
+    return level.teamkillspawndelay * exceeded;
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x59957515, Offset: 0x7fb0
 // Size: 0xdc
 function private function_78a6af2d(var_821200bb) {
@@ -1792,7 +1787,7 @@ function private function_78a6af2d(var_821200bb) {
 }
 
 // Namespace player/player_killed
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2d732386, Offset: 0x8098
 // Size: 0xf4
 function function_a932bf9c() {
@@ -1806,7 +1801,7 @@ function function_a932bf9c() {
             self.pers[#"teamkills_nostats"] = self.pers[#"teamkills_nostats"] - reductionpersecond;
             if (self.pers[#"teamkills_nostats"] < level.minimumallowedteamkills) {
                 self.pers[#"teamkills_nostats"] = level.minimumallowedteamkills;
-                break;
+                return;
             }
         }
         wait(1);
@@ -1814,7 +1809,7 @@ function function_a932bf9c() {
 }
 
 // Namespace player/player_killed
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x6ae9e516, Offset: 0x8198
 // Size: 0x10e
 function private ignore_team_kills(weapon, smeansofdeath, einflictor) {
@@ -1837,7 +1832,7 @@ function private ignore_team_kills(weapon, smeansofdeath, einflictor) {
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x872dc50, Offset: 0x82b0
 // Size: 0xb6
 function private is_explosive_ragdoll(weapon, inflictor) {
@@ -1858,7 +1853,7 @@ function private is_explosive_ragdoll(weapon, inflictor) {
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd3bcd3d8, Offset: 0x8370
 // Size: 0x1b4
 function private start_explosive_ragdoll(dir, weapon) {
@@ -1886,7 +1881,7 @@ function private start_explosive_ragdoll(dir, weapon) {
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xf2e48dfa, Offset: 0x8530
 // Size: 0x4c
 function private start_death_from_above_ragdoll(dir) {
@@ -1898,7 +1893,7 @@ function private start_death_from_above_ragdoll(dir) {
 }
 
 // Namespace player/player_killed
-// Params 6, eflags: 0x5 linked
+// Params 6, eflags: 0x4
 // Checksum 0x1034d48f, Offset: 0x8588
 // Size: 0x17c
 function private delayed_ragdoll(ent, shitloc, vdir, weapon, einflictor, smeansofdeath) {
@@ -1933,7 +1928,7 @@ function private delayed_ragdoll(ent, shitloc, vdir, weapon, einflictor, smeanso
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd7ce6776, Offset: 0x8710
 // Size: 0x32c
 function private update_attacker(attacker, weapon) {
@@ -1978,7 +1973,7 @@ function private update_attacker(attacker, weapon) {
 }
 
 // Namespace player/player_killed
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xbf9dd843, Offset: 0x8a48
 // Size: 0x78
 function private update_inflictor(einflictor) {
@@ -1992,7 +1987,7 @@ function private update_inflictor(einflictor) {
 }
 
 // Namespace player/player_killed
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xd24875fc, Offset: 0x8ac8
 // Size: 0xea
 function private update_weapon(einflictor, weapon) {
@@ -2007,7 +2002,7 @@ function private update_weapon(einflictor, weapon) {
 }
 
 // Namespace player/player_killed
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0x7a61e260, Offset: 0x8bc0
 // Size: 0xf8
 function private function_e8decd0b(attacker, weapon, victim, einflictor, smeansofdeath) {
@@ -2023,7 +2018,7 @@ function private function_e8decd0b(attacker, weapon, victim, einflictor, smeanso
 }
 
 // Namespace player/player_killed
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd4b05c93, Offset: 0x8cc0
 // Size: 0x5da
 function updatekillstreak(einflictor, attacker, weapon) {
@@ -2084,34 +2079,34 @@ function updatekillstreak(einflictor, attacker, weapon) {
 }
 
 // Namespace player/player_killed
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0xba4fa33e, Offset: 0x92a8
 // Size: 0x132
 function function_ff3ec0d4(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     foreach (callback in level.var_da2045d0) {
         if (callback.threaded) {
             self thread [[ callback.callback ]](einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration);
-        } else {
-            profilestart();
-            self [[ callback.callback ]](einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration);
-            profilestop();
+            continue;
         }
+        profilestart();
+        self [[ callback.callback ]](einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration);
+        profilestop();
     }
 }
 
 // Namespace player/player_killed
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1767c030, Offset: 0x93e8
 // Size: 0xe2
 function function_b8871aa2(einflictor, victim, idamage, weapon) {
     foreach (callback in level.var_fa66fada) {
         if (callback.threaded) {
             self thread [[ callback.callback ]](einflictor, victim, idamage, weapon);
-        } else {
-            profilestart();
-            self [[ callback.callback ]](einflictor, victim, idamage, weapon);
-            profilestop();
+            continue;
         }
+        profilestart();
+        self [[ callback.callback ]](einflictor, victim, idamage, weapon);
+        profilestop();
     }
 }
 

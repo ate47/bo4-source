@@ -186,9 +186,9 @@ function private function_f301de44(trigger, color, channel) {
             recordcircle(bottom, radius, color, channel);
             recordcircle(top, radius, color, channel);
             recordline(bottom, top, color, channel);
-        } else {
-            function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel);
+            return;
         }
+        function_af72dbc5(trigger.origin, mins, maxs, trigger.angles[0], color, channel);
     #/
 }
 

@@ -4,7 +4,7 @@
 #namespace hostmigration;
 
 // Namespace hostmigration/hostmigration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x70
 // Size: 0x4
 function callback_hostmigrationsave() {
@@ -12,7 +12,7 @@ function callback_hostmigrationsave() {
 }
 
 // Namespace hostmigration/hostmigration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x80
 // Size: 0x4
 function callback_prehostmigrationsave() {
@@ -20,7 +20,7 @@ function callback_prehostmigrationsave() {
 }
 
 // Namespace hostmigration/hostmigration
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8535c902, Offset: 0x90
 // Size: 0x1e0
 function callback_hostmigration() {

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace laststand_warzone/laststand_warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b7a17a5, Offset: 0x280
 // Size: 0x1fc
 function __init__() {
@@ -37,7 +37,7 @@ function __init__() {
 }
 
 // Namespace laststand_warzone/laststand_warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x93751cbe, Offset: 0x488
 // Size: 0xd0
 function wait_and_set_revive_shader_constant() {
@@ -53,7 +53,7 @@ function wait_and_set_revive_shader_constant() {
 }
 
 // Namespace laststand_warzone/laststand_warzone
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x32e2a262, Offset: 0x560
 // Size: 0x19c
 function laststand_bleed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -68,7 +68,9 @@ function laststand_bleed(localclientnum, oldval, newval, bnewent, binitialsnap, 
                 self.var_63796ff0 = function_239993de(localclientnum, "player/fx8_plyr_blood_drip_last_stand", self, "j_spine4");
             }
         }
-    } else if (isdefined(self.var_63796ff0)) {
+        return;
+    }
+    if (isdefined(self.var_63796ff0)) {
         stopfx(localclientnum, self.var_63796ff0);
     }
 }

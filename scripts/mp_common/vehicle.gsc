@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace vehicle/vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x110
 // Size: 0x4
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace vehicle/vehicle
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7b172931, Offset: 0x120
 // Size: 0xec
 function player_is_occupant_invulnerable(attacker, smeansofdeath) {
@@ -44,7 +44,7 @@ function player_is_occupant_invulnerable(attacker, smeansofdeath) {
 }
 
 // Namespace vehicle/vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85c78ebc, Offset: 0x218
 // Size: 0x84
 function player_is_driver() {
@@ -76,7 +76,7 @@ function initvehiclemap() {
 }
 
 // Namespace vehicle/vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb81df56e, Offset: 0x340
 // Size: 0xec
 function vehiclemainthread() {
@@ -94,7 +94,7 @@ function vehiclemainthread() {
 }
 
 // Namespace vehicle/vehicle
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x96397ba5, Offset: 0x438
 // Size: 0x1fe
 function vehiclespawnthread(veh_name, origin, angles, time_interval) {
@@ -128,7 +128,7 @@ function vehiclespawnthread(veh_name, origin, angles, time_interval) {
 }
 
 // Namespace vehicle/vehicle
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9dfe5e60, Offset: 0x640
 // Size: 0x1b8
 function vehicleteamthread() {
@@ -158,7 +158,7 @@ function vehicleteamthread() {
 }
 
 // Namespace vehicle/vehicle
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc7f821d5, Offset: 0x800
 // Size: 0xea
 function watchplayerexitrequestthread(player) {

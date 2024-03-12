@@ -392,9 +392,9 @@ function function_fd9117cc() {
         self rank_weapon(weapon, var_c300ee65);
         if (weapon == currentweapon) {
             self function_10723c01(weapon, weapon.rootweapon.var_e2f5d985);
-        } else {
-            self function_10723c01(weapon, weapon.rootweapon.var_791bc2f7);
+            continue;
         }
+        self function_10723c01(weapon, weapon.rootweapon.var_791bc2f7);
     }
     self.bot.var_469cfe53 = var_c300ee65;
 }
@@ -422,13 +422,13 @@ function function_9480d296() {
             /#
                 self botprinterror("<unknown string>" + function_9e72a96(actionname));
             #/
-        } else {
-            actionparams = {#action:action};
-            /#
-                actionparams.debug = [];
-            #/
-            paramslist[paramslist.size] = actionparams;
+            continue;
         }
+        actionparams = {#action:action};
+        /#
+            actionparams.debug = [];
+        #/
+        paramslist[paramslist.size] = actionparams;
     }
 }
 
@@ -871,9 +871,9 @@ function function_1879a202(weapon, var_c300ee65) {
 function function_791f5097(weapon, var_c300ee65) {
     if (self getcurrentweapon() != weapon) {
         self set_weapon_rank(weapon, 999, "Scorestreak weapon");
-    } else {
-        self set_weapon_rank(weapon, -1000, "Don't use scorestreak weapon that is already equipped");
+        return;
     }
+    self set_weapon_rank(weapon, -1000, "Don't use scorestreak weapon that is already equipped");
 }
 
 // Namespace bot_action/bot_action
@@ -936,9 +936,9 @@ function factor_ammo(weapon, var_c300ee65) {
             if (!self gadgetisready(slot)) {
                 self set_weapon_rank(weapon, undefined, "Gadget not ready");
             }
-        } else {
-            self set_weapon_rank(weapon, -1000, "No ammo");
+            return;
         }
+        self set_weapon_rank(weapon, -1000, "No ammo");
     }
 }
 
@@ -949,9 +949,12 @@ function factor_ammo(weapon, var_c300ee65) {
 function factor_damage_range(weapon, var_c300ee65) {
     if (!isdefined(self.enemy)) {
         return;
-    } else if (var_c300ee65.distsq < weapon.maxdamagerange * weapon.maxdamagerange) {
+    }
+    if (var_c300ee65.distsq < weapon.maxdamagerange * weapon.maxdamagerange) {
         self modify_weapon_rank(weapon, 1, "In max damage range");
-    } else if (var_c300ee65.distsq >= weapon.mindamagerange * weapon.mindamagerange) {
+        return;
+    }
+    if (var_c300ee65.distsq >= weapon.mindamagerange * weapon.mindamagerange) {
         if (weapon.weapclass == "spread") {
             self set_weapon_rank(weapon, undefined, "Outside of spread min damage range");
             return;
@@ -969,7 +972,9 @@ function factor_lockon(weapon, var_c300ee65) {
         if (weapon.lockontype != "None") {
             self modify_weapon_rank(weapon, 3, "Lockon Target");
         }
-    } else if (weapon.requirelockontofire) {
+        return;
+    }
+    if (weapon.requirelockontofire) {
         self set_weapon_rank(weapon, undefined, "Requires Lockon");
     }
 }
@@ -984,9 +989,9 @@ function factor_dumbfire_range(weapon, var_c300ee65) {
     }
     if (var_c300ee65.distsq < 2250000) {
         self modify_weapon_rank(weapon, 1, "In Dumbfire Range");
-    } else {
-        self modify_weapon_rank(weapon, -1, "Outside Dumbfire Range");
+        return;
     }
+    self modify_weapon_rank(weapon, -1, "Outside Dumbfire Range");
 }
 
 // Namespace bot_action/bot_action
@@ -999,11 +1004,13 @@ function factor_rocketlauncher_overkill(weapon, var_c300ee65) {
     }
     if (!isdefined(var_c300ee65.maxhealth)) {
         self set_weapon_rank(weapon, undefined, "Max Health is undefined");
-    } else if (var_c300ee65.maxhealth >= 400) {
-        self modify_weapon_rank(weapon, 2, "Enemy Max Health " + var_c300ee65.maxhealth + " >= " + 400);
-    } else {
-        self modify_weapon_rank(weapon, -1, "Enemy Max Health " + var_c300ee65.maxhealth + " < " + 400);
+        return;
     }
+    if (var_c300ee65.maxhealth >= 400) {
+        self modify_weapon_rank(weapon, 2, "Enemy Max Health " + var_c300ee65.maxhealth + " >= " + 400);
+        return;
+    }
+    self modify_weapon_rank(weapon, -1, "Enemy Max Health " + var_c300ee65.maxhealth + " < " + 400);
 }
 
 // Namespace bot_action/bot_action
@@ -2333,7 +2340,7 @@ function function_5aa9dd1b(actionparams) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf907344, Offset: 0x8ec0
 // Size: 0x296
-function function_90c011d5(actionparams) {
+function throw_offhand(actionparams) {
     weapon = actionparams.weapon;
     self function_ccdcc5d9(weapon);
     slot = self gadgetgetslot(weapon);
@@ -2450,9 +2457,9 @@ function set_target_aim(actionparams) {
     }
     if (self.bot.var_67b4ea54) {
         function_d4102d11(actionparams);
-    } else {
-        function_9c6ca396(actionparams);
+        return;
     }
+    function_9c6ca396(actionparams);
 }
 
 // Namespace bot_action/bot_action
@@ -2621,9 +2628,9 @@ function function_ab6b1fc9(actionparams) {
     subtargets = target_getsubtargets(target);
     if (subtargets[0] != 0) {
         actionparams.aimpoint = target_getorigin(target, subtargets[0]);
-    } else {
-        actionparams.aimpoint = target_getorigin(target);
+        return;
     }
+    actionparams.aimpoint = target_getorigin(target);
 }
 
 // Namespace bot_action/bot_action
@@ -2635,9 +2642,9 @@ function function_a3dfc4aa(actionparams) {
     weapon = actionparams.weapon;
     if (isdefined(aimpoint) && isdefined(weapon)) {
         actionparams.var_cb785841 = self botgetprojectileaimangles(weapon, aimpoint);
-    } else {
-        actionparams.var_cb785841 = undefined;
+        return;
     }
+    actionparams.var_cb785841 = undefined;
 }
 
 // Namespace bot_action/bot_action
@@ -2648,9 +2655,9 @@ function function_d136dabe(actionparams) {
     aimpoint = actionparams.aimpoint;
     if (isdefined(aimpoint)) {
         actionparams.bullettrace = bullettrace(self geteye(), aimpoint, 1, self);
-    } else {
-        actionparams.bullettrace = undefined;
+        return;
     }
+    actionparams.bullettrace = undefined;
 }
 
 // Namespace bot_action/bot_action
@@ -2662,9 +2669,9 @@ function function_9004d3ca(actionparams) {
     weapon = actionparams.weapon;
     if (isdefined(var_cb785841) && isdefined(weapon)) {
         actionparams.var_e6ba3ec9 = self function_6e8a2d86(weapon, var_cb785841.var_478aeacd);
-    } else {
-        actionparams.var_e6ba3ec9 = undefined;
+        return;
     }
+    actionparams.var_e6ba3ec9 = undefined;
 }
 
 // Namespace bot_action/bot_action
@@ -3048,13 +3055,15 @@ function function_2b8f7067() {
                         if (!array::contains(v_start_hardpoint_navmesh_collision, currentpoint)) {
                             v_start_hardpoint_navmesh_collision[v_start_hardpoint_navmesh_collision.size] = currentpoint;
                         }
-                    } else if (!function_96c81b85(var_7607a546, point.origin + vectorscale((0, 0, 1), 60))) {
+                        continue;
+                    }
+                    if (!function_96c81b85(var_7607a546, point.origin + vectorscale((0, 0, 1), 60))) {
                         if (!array::contains(var_4a39f740, currentpoint)) {
                             var_4a39f740[var_4a39f740.size] = currentpoint;
                         }
-                    } else {
-                        var_b43277fd[var_b43277fd.size] = point;
+                        continue;
                     }
+                    var_b43277fd[var_b43277fd.size] = point;
                 }
             }
             var_b43277fd = array::remove_index(var_b43277fd, 0);
@@ -3080,14 +3089,14 @@ function function_2b8f7067() {
         var_e125ba43 = "Neighboring Region Entrance";
         debugcolor = (1, 0, 0);
         self look_at_point(lookpoint, var_e125ba43, debugcolor);
-    } else {
-        node = self bot::get_position_node();
-        if (isdefined(node)) {
-            self function_412e04fa(node);
-        } else {
-            self function_c17972fc();
-        }
+        return;
     }
+    node = self bot::get_position_node();
+    if (isdefined(node)) {
+        self function_412e04fa(node);
+        return;
+    }
+    self function_c17972fc();
 }
 
 // Namespace bot_action/bot_action
@@ -3296,7 +3305,6 @@ function function_fe0b0c29(slot) {
         return self ai::get_behavior_attribute("allowsecondaryoffhand");
     case 2:
         return self ai::get_behavior_attribute("allowspecialoffhand");
-        break;
     }
     return 0;
 }

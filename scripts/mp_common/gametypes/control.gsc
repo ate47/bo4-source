@@ -304,7 +304,9 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
         if (var_1cfdf798 && var_376742ed) {
             attacker challenges::function_82bb78f7(weapon);
         }
-    } else if (var_376742ed) {
+        return;
+    }
+    if (var_376742ed) {
         victim function_580fd2d5(attacker, weapon);
     }
 }
@@ -602,9 +604,9 @@ function get_zone_array() {
                         break;
                     }
                 }
-            } else {
-                globallogic_utils::add_map_error("Zone with no script_index set");
+                continue;
             }
+            globallogic_utils::add_map_error("Zone with no script_index set");
         }
     } else {
         zones = getentarray("control_zone_center", "targetname");
@@ -640,9 +642,9 @@ function update_objective_hint_message(attackersmsg, defendersmsg) {
     foreach (team, _ in level.teams) {
         if (team == game.attackers) {
             game.strings["objective_hint_" + team] = attackersmsg;
-        } else {
-            game.strings["objective_hint_" + team] = defendersmsg;
+            continue;
         }
+        game.strings["objective_hint_" + team] = defendersmsg;
     }
 }
 
@@ -860,7 +862,6 @@ function private give_held_credit(touchlist, team) {
     foreach (touch in touchlist) {
         player = gameobjects::function_73944efe(touchlist, touch);
         if (!isdefined(player)) {
-            continue;
         }
     }
 }
@@ -903,10 +904,10 @@ function private checkifshouldupdatedefenderstatusplayback(sentient) {
 function private checkifshouldupdatestatusplayback(sentient) {
     if (isdefined(level.neutralzone) && level.neutralzone) {
         self.needsallstatusplayback = 1;
-    } else {
-        checkifshouldupdateattackerstatusplayback(sentient);
-        checkifshouldupdatedefenderstatusplayback(sentient);
+        return;
     }
+    checkifshouldupdateattackerstatusplayback(sentient);
+    checkifshouldupdatedefenderstatusplayback(sentient);
 }
 
 // Namespace mission_koth/control
@@ -1020,17 +1021,17 @@ function private process_zone_capture_audio(zone, capture_team) {
             }
             play_objective_audio(soundkey, team);
             thread sound::play_on_players(game.objective_gained_sound, team);
-        } else {
-            soundkey = "controlZ" + zone.zone_index + 1 + "LostDef";
-            play_objective_audio(soundkey, team);
-            if (level.nzones == 0) {
-                soundkey = "controlAllZonesCapDef";
-            } else {
-                soundkey = "controlLastZoneDef";
-            }
-            play_objective_audio(soundkey, team);
-            thread sound::play_on_players(game.objective_lost_sound, team);
+            continue;
         }
+        soundkey = "controlZ" + zone.zone_index + 1 + "LostDef";
+        play_objective_audio(soundkey, team);
+        if (level.nzones == 0) {
+            soundkey = "controlAllZonesCapDef";
+        } else {
+            soundkey = "controlLastZoneDef";
+        }
+        play_objective_audio(soundkey, team);
+        thread sound::play_on_players(game.objective_lost_sound, team);
     }
 }
 
@@ -1270,11 +1271,11 @@ function private function_5a9598f0(player, string, capturetime, capture_team, la
             player stats::function_dad108fa(#"captures_in_capture_area", 1);
             player contracts::increment_contract(#"contract_mp_objective_capture");
         }
-    } else {
-        /#
-            player iprintlnbold("NA");
-        #/
+        return;
     }
+    /#
+        player iprintlnbold("NA");
+    #/
 }
 
 // Namespace mission_koth/control
@@ -1434,14 +1435,18 @@ function player_use_loop(gameobject) {
             wait(1);
             if (gameobject.curprogress > prev_progress) {
                 any_capture_progress = 1;
-            } else if (gameobject.curprogress < prev_progress) {
+                continue;
+            }
+            if (gameobject.curprogress < prev_progress) {
                 any_decay_progress = 1;
             }
         }
         if (isdefined(gameobject.userate) && gameobject.userate != 0 && gameobject.claimteam != "none") {
             if (any_capture_progress && player.pers[#"team"] == game.attackers && attacker_capture_multiplier > fast_capture_threshold) {
                 scoreevents::processscoreevent(#"fast_capture_progress", player, undefined, undefined);
-            } else if (any_decay_progress && defend_decay_multiplier > fast_decay_threshold) {
+                continue;
+            }
+            if (any_decay_progress && defend_decay_multiplier > fast_decay_threshold) {
                 scoreevents::processscoreevent(#"fast_decay_progress", player, undefined, undefined);
             }
         }
@@ -1502,19 +1507,23 @@ function private update_team_userate_clientfield(zone) {
     if (is_zone_contested(zone)) {
         clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 0);
         zone.lastteamtoownzone = "contested";
-    } else if (zone.touchlist[game.attackers].size > 0) {
+        return;
+    }
+    if (zone.touchlist[game.attackers].size > 0) {
         if (isplayerinzonewithrole(zone.touchlist[game.attackers], "objective")) {
             clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 1);
         }
         zone.lastteamtoownzone = game.attackers;
-    } else if (zone.touchlist[game.defenders].size > 0 && zone.curprogress > 0) {
+        return;
+    }
+    if (zone.touchlist[game.defenders].size > 0 && zone.curprogress > 0) {
         if (isplayerinzonewithrole(zone.touchlist[game.defenders], "objective")) {
             clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 2);
         }
         zone.lastteamtoownzone = game.defenders;
-    } else {
-        clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 0);
+        return;
     }
+    clientfield::set_world_uimodel("hudItems.missions.captureMultiplierStatus", 0);
 }
 
 // Namespace mission_koth/control
@@ -1668,9 +1677,9 @@ function on_use_update(team, progress, change) {
         foreach (player in players) {
             if (player.team == game.attackers) {
                 player playsoundtoplayer(#"hash_3cca41b3702f764a", player);
-            } else {
-                player playsoundtoplayer(#"hash_2bb2a0ec776ba8f7", player);
+                continue;
             }
+            player playsoundtoplayer(#"hash_2bb2a0ec776ba8f7", player);
         }
     } else if (change == 0 && !self.currentlyunoccupied) {
         level.numzonesoccupied--;
@@ -1717,9 +1726,9 @@ function on_use_update(team, progress, change) {
             self update_team_client_field();
             self.var_8b62ad00 = 1;
         }
-    } else {
-        self.var_8b62ad00 = undefined;
+        return;
     }
+    self.var_8b62ad00 = undefined;
 }
 
 // Namespace mission_koth/control
@@ -1739,7 +1748,9 @@ function on_use_update_neutral(team, progress, change) {
                     play_objective_audio("warLosingProgressOfs", util::getotherteam(team));
                     self.needsallstatusplayback = 0;
                 }
-            } else if (change < 0) {
+                return;
+            }
+            if (change < 0) {
                 play_objective_audio("warLosingProgressOfs", team);
                 play_objective_audio("warLosingProgressDef", util::getotherteam(team));
                 self.needsallstatusplayback = 0;
@@ -1756,9 +1767,9 @@ function private set_ui_team() {
     wait(0.05);
     if (game.attackers == #"allies" || isdefined(level.neutralzone) && level.neutralzone) {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
-    } else {
-        clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
+        return;
     }
+    clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
 }
 
 // Namespace mission_koth/control
@@ -1791,15 +1802,15 @@ function update_timer(zoneindex, change) {
     if (change > 0 || is_zone_contested(level.zones[zoneindex].gameobject)) {
         level.zonepauseinfo[zoneindex] = 1;
         pause_time();
-    } else {
-        level.zonepauseinfo[zoneindex] = 0;
-        for (zi = 0; zi < level.zones.size; zi++) {
-            if (isdefined(level.zonepauseinfo[zi]) && level.zonepauseinfo[zi]) {
-                return;
-            }
-        }
-        resume_time();
+        return;
     }
+    level.zonepauseinfo[zoneindex] = 0;
+    for (zi = 0; zi < level.zones.size; zi++) {
+        if (isdefined(level.zonepauseinfo[zi]) && level.zonepauseinfo[zi]) {
+            return;
+        }
+    }
+    resume_time();
 }
 
 // Namespace mission_koth/control

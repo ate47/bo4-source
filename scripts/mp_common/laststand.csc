@@ -57,7 +57,9 @@ function laststand_postfx(localclientnum, oldval, newval, bnewent, binitialsnap,
             }
             player thread function_8960f852(oldval, newval);
         }
-    } else if (self postfx::function_556665f2("pstfx_drowning")) {
+        return;
+    }
+    if (self postfx::function_556665f2("pstfx_drowning")) {
         postfx::stoppostfxbundle("pstfx_drowning");
     }
 }
@@ -71,12 +73,12 @@ function laststand_bleed(localclientnum, oldval, newval, bnewent, binitialsnap, 
     if (newval != oldval && newval) {
         self util::waittill_dobj(localclientnum);
         self.var_63796ff0 = function_239993de(localclientnum, "player/fx8_plyr_blood_drip_last_stand", self, "j_spine4");
-    } else {
-        if (isdefined(self.var_63796ff0)) {
-            stopfx(localclientnum, self.var_63796ff0);
-        }
-        self notify(#"hash_7698972484f247e8");
+        return;
     }
+    if (isdefined(self.var_63796ff0)) {
+        stopfx(localclientnum, self.var_63796ff0);
+    }
+    self notify(#"hash_7698972484f247e8");
 }
 
 // Namespace laststand/laststand

@@ -90,23 +90,27 @@ function function_53d38216(einflictor, attacker, idamage, smeansofdeath, weapon,
         self.var_6b6241ac = undefined;
         self.var_45cac770 = undefined;
         self thread ct_utils::function_ee4639dd(-5);
-    } else if (isdefined(level.var_a8f06531) && level.var_a8f06531) {
+        return;
+    }
+    if (isdefined(level.var_a8f06531) && level.var_a8f06531) {
         potm::bookmark(#"ct_recon", gettime(), attacker);
         if (isdefined(smeansofdeath) && smeansofdeath == "MOD_MELEE_WEAPON_BUTT") {
             level flag::set("ct_player_success");
         } else {
             level flag::set("ct_fail_objective_killed");
         }
-    } else if (self !== level.ai_vip) {
+        return;
+    }
+    if (self !== level.ai_vip) {
         if (isplayer(einflictor)) {
             einflictor thread function_cf613da7();
             einflictor thread ct_utils::function_785eb2ca();
             var_e8d6f89 = ct_bots::function_2a8fc6b2();
             if (var_e8d6f89 > 1) {
                 einflictor ct_utils::function_d471f8fa(10, undefined, 1);
-            } else {
-                ct_utils::function_c314f6b1(10);
+                return;
             }
+            ct_utils::function_c314f6b1(10);
         }
     }
 }
@@ -189,10 +193,10 @@ function function_633915de(gamedifficulty) {
     if (level flag::get("ct_player_success")) {
         b_success = 1;
         level notify(#"combattraining_logic_finished", {#success:1});
-    } else {
-        b_success = 0;
-        level notify(#"combattraining_logic_finished", {#success:0});
+        return;
     }
+    b_success = 0;
+    level notify(#"combattraining_logic_finished", {#success:0});
 }
 
 // Namespace ct_recon/ct_recon
@@ -270,10 +274,8 @@ function function_7e7652be() {
     level.ai_vip = self;
     self clientfield::set("set_vip", 2);
     self thread function_78a1b9ef();
-    var_70ff5c3a = ct_utils::function_4a23fd2b();
-    while (var_70ff5c3a > 1) {
+    for (var_70ff5c3a = ct_utils::function_4a23fd2b(); var_70ff5c3a > 1; var_70ff5c3a = ct_utils::function_4a23fd2b()) {
         waitframe(1);
-        var_70ff5c3a = ct_utils::function_4a23fd2b();
     }
     if (level flag::get("ct_fail_timeover")) {
         return;
@@ -312,7 +314,7 @@ function function_2015250b() {
         if (isdefined(waitresult.mod) && waitresult.mod == "MOD_MELEE_WEAPON_BUTT") {
             e_player = getplayers(#"allies")[0];
             self dodamage(300, self.origin, e_player, undefined, "none", "MOD_MELEE_WEAPON_BUTT");
-            break;
+            return;
         }
     }
 }
@@ -334,7 +336,7 @@ function function_eb0c2a6a(n_delay) {
             continue;
         }
         entity ct_bots::function_3895c193();
-        break;
+        return;
     }
 }
 

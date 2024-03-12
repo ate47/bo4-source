@@ -25,9 +25,9 @@ function init_shared() {
 function shock_rifle_shocked(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.playerIsShocked"), 1);
-    } else {
-        setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.playerIsShocked"), 0);
+        return;
     }
+    setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.playerIsShocked"), 0);
 }
 
 // Namespace shockrifle/shockrifle
@@ -48,8 +48,8 @@ function shock_rifle_damage(localclientnum, oldval, newval, bnewent, binitialsna
 function shock_rifle_sound(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self playloopsound("wpn_shockrifle_electrocution");
-    } else {
-        self stopallloopsounds();
+        return;
     }
+    self stopallloopsounds();
 }
 

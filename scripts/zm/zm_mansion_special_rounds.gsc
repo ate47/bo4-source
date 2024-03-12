@@ -270,9 +270,9 @@ function function_2438d55e(s_spawn_loc) {
         } else if (isdefined(s_spawn_loc.scriptbundlename)) {
             level scene::play(s_spawn_loc.scriptbundlename, "Shot 1", self);
         }
-    } else {
-        wait(1);
+        return;
     }
+    wait(1);
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -292,10 +292,10 @@ function function_18f5f327(s_spawn_loc) {
         switch (s_spawn_loc.scriptbundlename) {
         case #"aib_t8_zm_mnsn_nfrtu_trvrs_grnd_climbout_01":
             self zm_spawner::function_45bb11e4(s_spawn_loc);
-            break;
+            return;
         case #"aib_t8_zm_mnsn_nfrtu_undercroft_spawn_01":
             self zm_spawner::do_zombie_rise(s_spawn_loc);
-            break;
+            return;
         }
     }
 }
@@ -323,10 +323,9 @@ function get_favorite_enemy() {
     }
     if (!zm_utility::is_player_valid(least_hunted)) {
         return undefined;
-    } else {
-        least_hunted.hunted_by = least_hunted.hunted_by + 1;
-        return least_hunted;
     }
+    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    return least_hunted;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -338,9 +337,8 @@ function function_27e8f915(s_loc, e_target, b_invert = 0) {
     var_23525cb = s_loc.zone_name === str_player_zone;
     if (!b_invert) {
         return var_23525cb;
-    } else {
-        return !var_23525cb;
     }
+    return !var_23525cb;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -358,10 +356,10 @@ function function_5618c56d(a_locs) {
                     level.var_c4437092 = loc;
                     return loc;
                 }
-            } else {
-                level.var_c4437092 = loc;
-                return loc;
+                continue;
             }
+            level.var_c4437092 = loc;
+            return loc;
         }
     }
     return undefined;
@@ -462,7 +460,8 @@ function function_50ec1ddf() {
         if (zm_zonemgr::zone_is_enabled(s_spawn_loc.zone_name)) {
             if (!isdefined(s_spawn_loc.var_39512f0e) || level flag::get(s_spawn_loc.var_39512f0e) == 0) {
                 return s_spawn_loc;
-            } else if (s_spawn_loc.var_39512f0e === "power_on3" && zm_custom::function_901b751c("zmPowerState") == 2 && zm_custom::function_901b751c(#"zmpowerdoorstate") == 0) {
+            }
+            if (s_spawn_loc.var_39512f0e === "power_on3" && zm_custom::function_901b751c("zmPowerState") == 2 && zm_custom::function_901b751c(#"zmpowerdoorstate") == 0) {
                 return s_spawn_loc;
             }
         }
@@ -531,13 +530,13 @@ function function_84c5200d(entity) {
             iprintln("<unknown string>" + var_a9e4d1ee + "<unknown string>");
         #/
         entity thread function_d1371239(var_a9e4d1ee);
-    } else {
-        /#
-            if (var_a9e4d1ee == 0) {
-                iprintlnbold("<unknown string>");
-            }
-        #/
+        return;
     }
+    /#
+        if (var_a9e4d1ee == 0) {
+            iprintlnbold("<unknown string>");
+        }
+    #/
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -552,7 +551,7 @@ function function_d1371239(var_a9e4d1ee) {
             ai = zombie_dog_util::function_62db7b1c(1, undefined);
             var_18f8f237--;
             waitframe(1);
-        } while(!isdefined(ai) && var_18f8f237);
+        } while (!isdefined(ai) && var_18f8f237);
         /#
             if (!var_18f8f237 && !isdefined(ai)) {
                 iprintlnbold("<unknown string>");

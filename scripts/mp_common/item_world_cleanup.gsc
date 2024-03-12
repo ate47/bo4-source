@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x9bcbebba, Offset: 0x110
 // Size: 0x1c
 function private __init__() {
@@ -28,7 +28,7 @@ function private __init__() {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd7c1c63, Offset: 0x138
 // Size: 0x152
 function private _cleanup() {
@@ -46,7 +46,7 @@ function private _cleanup() {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x87d26a27, Offset: 0x298
 // Size: 0x114
 function private function_b465b436(deathcircle, var_898879a6) {
@@ -67,7 +67,7 @@ function private function_b465b436(deathcircle, var_898879a6) {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x60e2dc3d, Offset: 0x3b8
 // Size: 0x676
 function private function_35e11623(deathcircle, var_898879a6) {
@@ -141,7 +141,7 @@ function private function_35e11623(deathcircle, var_898879a6) {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x7406a97f, Offset: 0xa38
 // Size: 0x1f4
 function private function_b7c5f376(deathcircle, var_898879a6) {
@@ -159,8 +159,11 @@ function private function_b7c5f376(deathcircle, var_898879a6) {
         supplydrop = dropitem getlinkedent();
         if (isdefined(supplydrop)) {
             var_da05d0b2 = supplydrop getlinkedent();
-            jumpiffalse(isdefined(var_da05d0b2) && isdefined(var_da05d0b2.var_5d0810d7) && var_da05d0b2.var_5d0810d7) LOC_00000144;
-        } else if (function_3703bc36(dropitem, var_898879a6, 1)) {
+            if (isdefined(var_da05d0b2) && isdefined(var_da05d0b2.var_5d0810d7) && var_da05d0b2.var_5d0810d7) {
+                continue;
+            }
+        }
+        if (function_3703bc36(dropitem, var_898879a6, 1)) {
             dropitem.hidetime = gettime();
             item_world::function_a54d07e6(dropitem, undefined);
             dropitem delete();
@@ -172,7 +175,7 @@ function private function_b7c5f376(deathcircle, var_898879a6) {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x844668b9, Offset: 0xc38
 // Size: 0x15c
 function private function_6ef5c287(deathcircle, var_898879a6) {
@@ -198,7 +201,7 @@ function private function_6ef5c287(deathcircle, var_898879a6) {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xec8a7563, Offset: 0xda0
 // Size: 0x574
 function private function_ada16428(deathcircle, var_898879a6) {
@@ -281,7 +284,7 @@ function private function_ada16428(deathcircle, var_898879a6) {
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x519fcfa7, Offset: 0x1320
 // Size: 0x88
 function private function_213a12e4() {
@@ -292,15 +295,15 @@ function private function_213a12e4() {
                 b_occupied = 1;
                 break;
             }
-        } else {
-            break;
+            continue;
         }
+        break;
     }
     return b_occupied;
 }
 
 // Namespace item_world_cleanup/item_world_cleanup
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0x1c93a41f, Offset: 0x13b0
 // Size: 0xd0
 function private function_3703bc36(entity, deathcircle, var_7e2f7f1f = 0) {

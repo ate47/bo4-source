@@ -195,33 +195,39 @@ function thundergun_get_enemies_in_range() {
         dot = vectordot(forward_view_angles, normal);
         if (0 > dot) {
             zombies[i] thundergun_debug_print("dot", (1, 0, 0));
-        } else {
-            radial_origin = pointonsegmentnearesttopoint(view_pos, end_pos, test_origin);
-            if (distancesquared(test_origin, radial_origin) > cylinder_radius_squared) {
-                zombies[i] thundergun_debug_print("cylinder", (1, 0, 0));
-            } else if (0 == zombies[i] damageconetrace(view_pos, self)) {
-                zombies[i] thundergun_debug_print("cone", (1, 0, 0));
-            } else if (test_range_squared < fling_range_squared) {
-                level.thundergun_fling_enemies[level.thundergun_fling_enemies.size] = zombies[i];
-                dist_mult = (fling_range_squared - test_range_squared) / fling_range_squared;
-                fling_vec = vectornormalize(test_origin - view_pos);
-                if (5000 < test_range_squared) {
-                    fling_vec = fling_vec + vectornormalize(test_origin - radial_origin);
-                }
-                fling_vec = (fling_vec[0], fling_vec[1], abs(fling_vec[2]));
-                fling_vec = vectorscale(fling_vec, 100 + 100 * dist_mult);
-                level.thundergun_fling_vecs[level.thundergun_fling_vecs.size] = fling_vec;
-                zombies[i] thread setup_thundergun_vox(self, 1, 0, 0);
-            } else if (test_range_squared < gib_range_squared) {
-                level.thundergun_knockdown_enemies[level.thundergun_knockdown_enemies.size] = zombies[i];
-                level.thundergun_knockdown_gib[level.thundergun_knockdown_gib.size] = 1;
-                zombies[i] thread setup_thundergun_vox(self, 0, 1, 0);
-            } else {
-                level.thundergun_knockdown_enemies[level.thundergun_knockdown_enemies.size] = zombies[i];
-                level.thundergun_knockdown_gib[level.thundergun_knockdown_gib.size] = 0;
-                zombies[i] thread setup_thundergun_vox(self, 0, 0, 1);
-            }
+            continue;
         }
+        radial_origin = pointonsegmentnearesttopoint(view_pos, end_pos, test_origin);
+        if (distancesquared(test_origin, radial_origin) > cylinder_radius_squared) {
+            zombies[i] thundergun_debug_print("cylinder", (1, 0, 0));
+            continue;
+        }
+        if (0 == zombies[i] damageconetrace(view_pos, self)) {
+            zombies[i] thundergun_debug_print("cone", (1, 0, 0));
+            continue;
+        }
+        if (test_range_squared < fling_range_squared) {
+            level.thundergun_fling_enemies[level.thundergun_fling_enemies.size] = zombies[i];
+            dist_mult = (fling_range_squared - test_range_squared) / fling_range_squared;
+            fling_vec = vectornormalize(test_origin - view_pos);
+            if (5000 < test_range_squared) {
+                fling_vec = fling_vec + vectornormalize(test_origin - radial_origin);
+            }
+            fling_vec = (fling_vec[0], fling_vec[1], abs(fling_vec[2]));
+            fling_vec = vectorscale(fling_vec, 100 + 100 * dist_mult);
+            level.thundergun_fling_vecs[level.thundergun_fling_vecs.size] = fling_vec;
+            zombies[i] thread setup_thundergun_vox(self, 1, 0, 0);
+            continue;
+        }
+        if (test_range_squared < gib_range_squared) {
+            level.thundergun_knockdown_enemies[level.thundergun_knockdown_enemies.size] = zombies[i];
+            level.thundergun_knockdown_gib[level.thundergun_knockdown_gib.size] = 1;
+            zombies[i] thread setup_thundergun_vox(self, 0, 1, 0);
+            continue;
+        }
+        level.thundergun_knockdown_enemies[level.thundergun_knockdown_enemies.size] = zombies[i];
+        level.thundergun_knockdown_gib[level.thundergun_knockdown_gib.size] = 0;
+        zombies[i] thread setup_thundergun_vox(self, 0, 0, 1);
     }
 }
 
@@ -311,14 +317,14 @@ function zombie_knockdown(player, gib) {
     }
     if (isdefined(level.override_thundergun_damage_func)) {
         self [[ level.override_thundergun_damage_func ]](player, gib);
-    } else {
-        damage = zombie_utility::function_d2dfacfd(#"thundergun_knockdown_damage");
-        self playsound(#"fly_thundergun_forcehit");
-        self.thundergun_handle_pain_notetracks = &handle_thundergun_pain_notetracks;
-        self dodamage(damage, player.origin, player);
-        self animcustom(&playthundergunpainanim);
-        self zombie_utility::setup_zombie_knockdown(player);
+        return;
     }
+    damage = zombie_utility::function_d2dfacfd(#"thundergun_knockdown_damage");
+    self playsound(#"fly_thundergun_forcehit");
+    self.thundergun_handle_pain_notetracks = &handle_thundergun_pain_notetracks;
+    self dodamage(damage, player.origin, player);
+    self animcustom(&playthundergunpainanim);
+    self zombie_utility::setup_zombie_knockdown(player);
 }
 
 // Namespace zm_weap_thundergun/zm_weap_thundergun
@@ -416,10 +422,10 @@ function thundergun_sound_thread() {
         result = self waittill(#"grenade_fire", #"death", #"player_downed", #"weapon_change", #"grenade_pullback", #"disconnect");
         if ((result._notify == "weapon_change" || result._notify == "grenade_fire") && self getcurrentweapon() == level.w_thundergun) {
             self playloopsound(#"tesla_idle", 0.25);
-        } else {
-            self notify(#"weap_away");
-            self stoploopsound(0.25);
+            continue;
         }
+        self notify(#"weap_away");
+        self stoploopsound(0.25);
     }
 }
 
@@ -432,7 +438,7 @@ function setup_thundergun_vox(player, fling, gib, knockdown) {
         return;
     }
     if (!fling && (gib || knockdown)) {
-        if (25 > randomintrange(1, 100)) {
+        if (25 < randomintrange(1, 100)) {
         }
     }
     if (fling) {

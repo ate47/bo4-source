@@ -76,15 +76,17 @@ function private function_d00809d8(localclientnum, pos, surface, notetrack, bone
         } else {
             function_36e4ebd4(localclientnum, "anim_med");
         }
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
+        return;
+    }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
         if (is_large) {
             function_36e4ebd4(localclientnum, "anim_med");
         } else {
             function_36e4ebd4(localclientnum, "damage_light");
         }
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -102,7 +104,9 @@ function private function_8745f9df(localclientnum, oldval, newval, bnewent, bini
 function private function_ae96bf9a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_7c984f = util::playfxontag(localclientnum, level._effect[#"fx8_gegenees_shield_guard"], self, "tag_shield_fx");
-    } else if (isdefined(self.var_7c984f)) {
+        return;
+    }
+    if (isdefined(self.var_7c984f)) {
         stopfx(localclientnum, self.var_7c984f);
         self.var_7c984f = undefined;
     }
@@ -115,7 +119,9 @@ function private function_ae96bf9a(localclientnum, oldval, newval, bnewent, bini
 function private function_33dedae1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_645626ad = util::playfxontag(localclientnum, level._effect[#"fx8_gegenees_spear_tip_flame"], self, "tag_spear_tip_fx");
-    } else if (isdefined(self.var_645626ad)) {
+        return;
+    }
+    if (isdefined(self.var_645626ad)) {
         killfx(localclientnum, self.var_645626ad);
         self.var_645626ad = undefined;
     }
@@ -128,7 +134,9 @@ function private function_33dedae1(localclientnum, oldval, newval, bnewent, bini
 function private function_421757ab(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_55203ff4 = util::playfxontag(localclientnum, level._effect[#"fx8_gegenees_spear_tip_tell"], self, "tag_spear_tip_fx");
-    } else if (isdefined(self.var_55203ff4)) {
+        return;
+    }
+    if (isdefined(self.var_55203ff4)) {
         stopfx(localclientnum, self.var_55203ff4);
         self.var_55203ff4 = undefined;
     }
@@ -169,11 +177,13 @@ function private function_ce49549a(localclientnum, oldval, newval, bnewent, bini
     earthquake(localclientnum, n_scale, 0.1, self.origin, n_dist);
     if (n_scale <= 0.25 && n_scale > 0.2) {
         function_36e4ebd4(localclientnum, "anim_med");
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
-        function_36e4ebd4(localclientnum, "damage_light");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
+        function_36e4ebd4(localclientnum, "damage_light");
+        return;
+    }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees

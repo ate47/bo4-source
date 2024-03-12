@@ -5,7 +5,7 @@
 #namespace bouncingbetty;
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x7779ae5f, Offset: 0xb8
 // Size: 0x1b4
 function init_shared(localclientnum) {
@@ -22,7 +22,7 @@ function init_shared(localclientnum) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 7, eflags: 0x0
+// Params 7, eflags: 0x1 linked
 // Checksum 0x9c7c4b9d, Offset: 0x278
 // Size: 0xda
 function bouncingbetty_state_change(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -34,15 +34,15 @@ function bouncingbetty_state_change(localclientnum, oldval, newval, bnewent, bin
     switch (newval) {
     case 1:
         self thread bouncingbetty_detonating(localclientnum);
-        break;
+        return;
     case 2:
         self thread bouncingbetty_deploying(localclientnum);
-        break;
+        return;
     }
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xc37d7fa3, Offset: 0x360
 // Size: 0x3c
 function bouncingbetty_deploying(localclientnum) {
@@ -51,7 +51,7 @@ function bouncingbetty_deploying(localclientnum) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x82d99c47, Offset: 0x3a8
 // Size: 0x10c
 function bouncingbetty_detonating(localclientnum) {
@@ -65,7 +65,7 @@ function bouncingbetty_detonating(localclientnum) {
 }
 
 // Namespace bouncingbetty/bouncingbetty
-// Params 3, eflags: 0x0
+// Params 3, eflags: 0x1 linked
 // Checksum 0xb016c6ca, Offset: 0x4c0
 // Size: 0x20e
 function watchforexplosionnotetracks(localclientnum, up, forward) {

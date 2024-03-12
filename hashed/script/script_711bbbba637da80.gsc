@@ -104,30 +104,33 @@ function function_f968291b(localclientnum, oldval, newval, bnewent, binitialsnap
                     self.var_6bcee88f = self playloopsound(#"hash_17c6685aa5756f85");
                 }
                 return;
-            } else if (s_result._notify == #"hash_593064545176ab53") {
+            }
+            if (s_result._notify == #"hash_593064545176ab53") {
                 self.var_b55b7d2c = util::playfxontag(localclientnum, level._effect[#"portal_loop"], self, "tag_origin");
                 self.var_767d572c = util::playfxontag(localclientnum, level._effect[#"portal_trails"], self, "tag_origin");
                 if (!isdefined(self.var_6bcee88f)) {
                     self playsound(localclientnum, #"hash_e0f8121b60150f3");
                     self.var_6bcee88f = self playloopsound(#"hash_17c6685aa5756f85");
                 }
-            } else {
-                if (isdefined(self.var_b55b7d2c)) {
-                    killfx(localclientnum, self.var_b55b7d2c);
-                    self.var_b55b7d2c = undefined;
-                }
-                if (isdefined(self.var_767d572c)) {
-                    killfx(localclientnum, self.var_767d572c);
-                    self.var_767d572c = undefined;
-                }
-                if (isdefined(self.var_6bcee88f)) {
-                    self playsound(localclientnum, #"hash_bfec406f9040c46");
-                    self stoploopsound(self.var_6bcee88f);
-                    self.var_6bcee88f = undefined;
-                }
+                continue;
+            }
+            if (isdefined(self.var_b55b7d2c)) {
+                killfx(localclientnum, self.var_b55b7d2c);
+                self.var_b55b7d2c = undefined;
+            }
+            if (isdefined(self.var_767d572c)) {
+                killfx(localclientnum, self.var_767d572c);
+                self.var_767d572c = undefined;
+            }
+            if (isdefined(self.var_6bcee88f)) {
+                self playsound(localclientnum, #"hash_bfec406f9040c46");
+                self stoploopsound(self.var_6bcee88f);
+                self.var_6bcee88f = undefined;
             }
         }
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         if (!isdefined(self.var_b55b7d2c)) {
             self.var_b55b7d2c = util::playfxontag(localclientnum, level._effect[#"portal_loop"], self, "tag_origin");
         }
@@ -206,10 +209,10 @@ function function_a2368263(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         self.show_function = &function_915f2843;
         self.hide_function = &function_e2730196;
-    } else {
-        arrayremovevalue(level.var_22a393d4, self);
-        self notify(#"hash_6ab654a4c018818c");
+        return;
     }
+    arrayremovevalue(level.var_22a393d4, self);
+    self notify(#"hash_6ab654a4c018818c");
 }
 
 // Namespace namespace_a9aa9d72/namespace_a9aa9d72
@@ -274,24 +277,24 @@ function function_58397147(localclientnum, oldval, newval, bnewent, binitialsnap
             self function_78233d29(var_2cf005a1, "", "Brightness", 0);
             self function_78233d29(var_2cf005a1, "", "Alpha", 0);
         }
-    } else {
-        arrayremovevalue(level.var_22a393d4, self);
-        self.show_function = undefined;
-        self.hide_function = undefined;
-        self show();
-        if (self isai()) {
-            if (!isdefined(self.var_f2d4633f)) {
-                self playsound(localclientnum, #"hash_2023f5976ef8d19b");
-                self.var_f2d4633f = self playloopsound(#"hash_42d25612dd54c9fa");
-            }
-        }
-        if (self isai() && self.archetype == #"ghost") {
-            util::playfxontag(localclientnum, level._effect[#"hash_2f996104bd7c64fb"], self, "j_spinelower");
-        }
-        self function_78233d29(var_2cf005a1, "", "Brightness", 1);
-        self function_78233d29(var_2cf005a1, "", "Alpha", 1);
-        self notify(#"hash_6ab654a4c018818c");
+        return;
     }
+    arrayremovevalue(level.var_22a393d4, self);
+    self.show_function = undefined;
+    self.hide_function = undefined;
+    self show();
+    if (self isai()) {
+        if (!isdefined(self.var_f2d4633f)) {
+            self playsound(localclientnum, #"hash_2023f5976ef8d19b");
+            self.var_f2d4633f = self playloopsound(#"hash_42d25612dd54c9fa");
+        }
+    }
+    if (self isai() && self.archetype == #"ghost") {
+        util::playfxontag(localclientnum, level._effect[#"hash_2f996104bd7c64fb"], self, "j_spinelower");
+    }
+    self function_78233d29(var_2cf005a1, "", "Brightness", 1);
+    self function_78233d29(var_2cf005a1, "", "Alpha", 1);
+    self notify(#"hash_6ab654a4c018818c");
 }
 
 // Namespace namespace_a9aa9d72/namespace_a9aa9d72
@@ -405,7 +408,9 @@ function function_e3248f02(localclientnum, oldval, newval, bnewent, binitialsnap
     self endon(#"death", #"hash_65bbc5b33653977d");
     if (newval == 1) {
         playsound(localclientnum, #"hash_34358d231bfdb367", self geteye());
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         playsound(localclientnum, #"hash_b3995a8c1142a1c", self geteye());
     }
 }
@@ -425,9 +430,9 @@ function function_fdd08c0e(localclientnum, oldval, newval, bnewent, binitialsnap
             exploder::kill_exploder("fxexp_buoy_light_0" + n_val);
             self.var_351e0bdc = undefined;
         }
-    } else {
-        self notify(#"hash_59d521ca45c97f9d");
+        return;
     }
+    self notify(#"hash_59d521ca45c97f9d");
 }
 
 // Namespace namespace_a9aa9d72/namespace_a9aa9d72
@@ -470,7 +475,9 @@ function function_da095cb3(localclientnum, oldval, newval, bnewent, binitialsnap
             self.var_25af2af1 = self playloopsound(#"hash_39ff4d3373413768");
         }
         self.var_19e6dc6f = util::playfxontag(localclientnum, level._effect[#"hash_45f8b28452411669"], self, "tag_origin");
-    } else if (isdefined(self.var_25af2af1)) {
+        return;
+    }
+    if (isdefined(self.var_25af2af1)) {
         self playsound(localclientnum, #"hash_7bebc063b1a89fbc");
         self stoploopsound(self.var_25af2af1);
         self.var_25af2af1 = undefined;
@@ -537,42 +544,42 @@ function function_8fd8b982(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1);
-        break;
+        return;
     case 1:
         self playrenderoverridebundle(#"hash_68ee9247aaae4517");
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1);
-        break;
+        return;
     case 2:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.2);
-        break;
+        return;
     case 3:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.3);
-        break;
+        return;
     case 4:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.4);
-        break;
+        return;
     case 5:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.5);
-        break;
+        return;
     case 6:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.6);
-        break;
+        return;
     case 7:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.7);
-        break;
+        return;
     case 8:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.8);
-        break;
+        return;
     case 9:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.9);
-        break;
+        return;
     case 10:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 2);
-        break;
+        return;
     }
 }
 
@@ -584,43 +591,43 @@ function function_acafe26b(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1);
-        break;
+        return;
     case 1:
         self playrenderoverridebundle(#"hash_24cdaac09819f0e");
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Brightness", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Alpha", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1);
-        break;
+        return;
     case 2:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.2);
-        break;
+        return;
     case 3:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.3);
-        break;
+        return;
     case 4:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.4);
-        break;
+        return;
     case 5:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.5);
-        break;
+        return;
     case 6:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.6);
-        break;
+        return;
     case 7:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.7);
-        break;
+        return;
     case 8:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.8);
-        break;
+        return;
     case 9:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.9);
-        break;
+        return;
     case 10:
         self playrenderoverridebundle(#"hash_24cdaac09819f0e");
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Brightness", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Alpha", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 2);
-        break;
+        return;
     }
 }
 
@@ -634,34 +641,34 @@ function function_ab71f1f5(localclientnum, oldval, newval, bnewent, binitialsnap
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 2);
-        break;
+        return;
     case 1:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.9);
-        break;
+        return;
     case 2:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.8);
-        break;
+        return;
     case 3:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.7);
-        break;
+        return;
     case 4:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.6);
-        break;
+        return;
     case 5:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.5);
-        break;
+        return;
     case 6:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.4);
-        break;
+        return;
     case 7:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.3);
-        break;
+        return;
     case 8:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.2);
-        break;
+        return;
     case 9:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.1);
-        break;
+        return;
     case 10:
         self playrenderoverridebundle(#"hash_68ee9247aaae4517");
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
@@ -677,24 +684,26 @@ function function_ab71f1f5(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x1b6
 function function_2380f2d5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 0) {
-        if (isdefined(self.var_2ef4fed9)) {
-            self.var_2ef4fed9 delete();
+        if (isdefined(self.mdl_paper)) {
+            self.mdl_paper delete();
         }
-    } else if (isdefined(self.var_2ef4fed9)) {
-        self.var_d2f68d5d = newval;
-    } else {
-        self.var_2ef4fed9 = util::spawn_model(localclientnum, #"hash_11298e91093a52ac", self.origin, self.angles);
-        self.var_2ef4fed9.var_d2f68d5d = newval;
-        self.var_2ef4fed9.show_function = &function_9fcac487;
-        self.var_2ef4fed9.hide_function = &function_ffd0f7c6;
-        self.var_2ef4fed9 function_ffd0f7c6(localclientnum);
-        if (!isdefined(level.var_22a393d4)) {
-            level.var_22a393d4 = [];
-        } else if (!isarray(level.var_22a393d4)) {
-            level.var_22a393d4 = array(level.var_22a393d4);
-        }
-        level.var_22a393d4[level.var_22a393d4.size] = self.var_2ef4fed9;
+        return;
     }
+    if (isdefined(self.mdl_paper)) {
+        self.var_d2f68d5d = newval;
+        return;
+    }
+    self.mdl_paper = util::spawn_model(localclientnum, #"hash_11298e91093a52ac", self.origin, self.angles);
+    self.mdl_paper.var_d2f68d5d = newval;
+    self.mdl_paper.show_function = &function_9fcac487;
+    self.mdl_paper.hide_function = &function_ffd0f7c6;
+    self.mdl_paper function_ffd0f7c6(localclientnum);
+    if (!isdefined(level.var_22a393d4)) {
+        level.var_22a393d4 = [];
+    } else if (!isarray(level.var_22a393d4)) {
+        level.var_22a393d4 = array(level.var_22a393d4);
+    }
+    level.var_22a393d4[level.var_22a393d4.size] = self.mdl_paper;
 }
 
 // Namespace namespace_a9aa9d72/namespace_a9aa9d72
@@ -704,10 +713,10 @@ function function_2380f2d5(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_5a22e018(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
     if (newval > 0) {
-        while (!isdefined(self.var_2ef4fed9)) {
+        while (!isdefined(self.mdl_paper)) {
             waitframe(1);
         }
-        self.var_2ef4fed9.var_bd47f18 = newval;
+        self.mdl_paper.var_bd47f18 = newval;
     }
 }
 
@@ -718,10 +727,10 @@ function function_5a22e018(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_8db3d8a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self endon(#"death");
     if (newval > 0) {
-        while (!isdefined(self.var_2ef4fed9)) {
+        while (!isdefined(self.mdl_paper)) {
             waitframe(1);
         }
-        self.var_2ef4fed9.var_f99adaa5 = newval;
+        self.mdl_paper.var_f99adaa5 = newval;
     }
 }
 
@@ -773,7 +782,9 @@ function function_9fcac487(localclientnum) {
             if (self haspart(localclientnum, "tag_nixie_number_3_0")) {
                 self showpart(localclientnum, "tag_nixie_number_3_0");
             }
-        } else if (self haspart(localclientnum, "tag_nixie_number_3_" + self.var_f99adaa5)) {
+            return;
+        }
+        if (self haspart(localclientnum, "tag_nixie_number_3_" + self.var_f99adaa5)) {
             self showpart(localclientnum, "tag_nixie_number_3_" + self.var_f99adaa5);
         }
     }
@@ -787,10 +798,10 @@ function function_6c3e8bde(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         forcestreamxmodel(#"hash_4c06bc763e373f0f");
         forcestreamxmodel(#"hash_11298e91093a52ac");
-    } else {
-        stopforcestreamingxmodel(#"hash_4c06bc763e373f0f");
-        stopforcestreamingxmodel(#"hash_11298e91093a52ac");
+        return;
     }
+    stopforcestreamingxmodel(#"hash_4c06bc763e373f0f");
+    stopforcestreamingxmodel(#"hash_11298e91093a52ac");
 }
 
 // Namespace namespace_a9aa9d72/namespace_a9aa9d72
@@ -832,8 +843,8 @@ function function_5cb2858d(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_5fbccf1d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         self playrenderoverridebundle(#"hash_37d4ef63a7510b78");
-    } else {
-        self stoprenderoverridebundle(#"hash_37d4ef63a7510b78");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_37d4ef63a7510b78");
 }
 

@@ -88,13 +88,15 @@ function monitor_smoke(local_client_num) {
                     player.var_d3f60df1 = var_d3f60df1;
                     player function_4fc900e1(local_client_num);
                 }
-            } else if (isdefined(player.var_d3f60df1)) {
+                continue;
+            }
+            if (isdefined(player.var_d3f60df1)) {
                 player.var_d3f60df1 = undefined;
                 player function_4fc900e1(local_client_num);
             }
         }
         if (waitresult._notify != "timeout") {
-            break;
+            return;
         }
     }
 }
@@ -106,14 +108,14 @@ function monitor_smoke(local_client_num) {
 function function_ffbaa2ce(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self thread monitor_smoke(local_client_num);
-    } else {
-        self notify(#"monitor_smoke");
-        players = getplayers(local_client_num);
-        foreach (player in players) {
-            if (isdefined(player) && isalive(player)) {
-                player.var_d3f60df1 = undefined;
-                player function_4fc900e1(local_client_num);
-            }
+        return;
+    }
+    self notify(#"monitor_smoke");
+    players = getplayers(local_client_num);
+    foreach (player in players) {
+        if (isdefined(player) && isalive(player)) {
+            player.var_d3f60df1 = undefined;
+            player function_4fc900e1(local_client_num);
         }
     }
 }

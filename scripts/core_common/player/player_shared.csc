@@ -75,9 +75,9 @@ function on_player_spawned(localclientnum) {
 function function_f22aa227(localclientnum) {
     if (level.var_7315d934 === 1) {
         self function_9f517895(localclientnum);
-    } else {
-        self function_8656d7d1(localclientnum);
+        return;
     }
+    self function_8656d7d1(localclientnum);
 }
 
 // Namespace player/player_shared
@@ -95,9 +95,9 @@ function private function_8656d7d1(localclientnum) {
     var_87e3f0d8 = function_27673a7(localclientnum);
     if (player.team !== var_87e3f0d8.team) {
         player function_e2d964e8();
-    } else {
-        player function_f71119e0(0);
+        return;
     }
+    player function_f71119e0(0);
 }
 
 // Namespace player/player_shared
@@ -137,9 +137,9 @@ function private function_9f517895(localclientnum) {
     var_f3108b8 = function_5c10bd79(localclientnum);
     if (player.team !== var_87e3f0d8.team && !player isplayerswimmingunderwater() && !var_f3108b8 isplayerswimmingunderwater()) {
         player function_e2d964e8();
-    } else {
-        player function_f71119e0(0);
+        return;
     }
+    player function_f71119e0(0);
 }
 
 // Namespace player/player_shared
@@ -152,9 +152,9 @@ function private function_e2d964e8() {
     }
     if (isdefined(level.var_20369084)) {
         self function_9535c165(level.var_20369084, "cold_blooded");
-    } else {
-        self function_bd70f43d();
+        return;
     }
+    self function_bd70f43d();
 }
 
 // Namespace player/player_shared
@@ -165,10 +165,10 @@ function function_9535c165(var_2af183d0, clientfield) {
     if (self clientfield::get(clientfield) > 0) {
         self function_994b4121();
         self enable_rob(var_2af183d0);
-    } else {
-        self disable_rob(var_2af183d0);
-        self function_bd70f43d();
+        return;
     }
+    self disable_rob(var_2af183d0);
+    self function_bd70f43d();
 }
 
 // Namespace player/player_shared
@@ -241,15 +241,15 @@ function function_f9e445ee(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         setdepthoffield(localclientnum, 0, 0, 512, 512, 4, 0);
-        break;
+        return;
     case 1:
         setdepthoffield(localclientnum, 0, 0, 512, 4000, 4, 0);
-        break;
+        return;
     case 2:
         setdepthoffield(localclientnum, 0, 128, 512, 4000, 6, 1.8);
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 

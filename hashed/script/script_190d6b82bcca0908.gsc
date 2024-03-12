@@ -39,15 +39,17 @@ class czm_game_over : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"gatewayopened" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"gatewayopened" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace czm_game_over/zm_game_over

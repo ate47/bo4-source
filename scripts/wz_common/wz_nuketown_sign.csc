@@ -74,8 +74,7 @@ function nuked_population_sign_think(localclientnum) {
                 players[players.size] = player;
             }
         }
-        dial = ones + tens * 10;
-        while (players.size < dial) {
+        for (dial = ones + tens * 10; players.size < dial; dial = ones + tens * 10) {
             ones--;
             if (ones < 0) {
                 ones = 9;
@@ -84,7 +83,6 @@ function nuked_population_sign_think(localclientnum) {
             }
             var_3c0c17f2 rotateroll(0 - step, time);
             var_3c0c17f2 waittill(#"rotatedone");
-            dial = ones + tens * 10;
         }
         while (players.size > dial) {
             ones++;

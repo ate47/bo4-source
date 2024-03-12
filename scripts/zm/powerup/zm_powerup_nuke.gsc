@@ -74,17 +74,17 @@ function nuke_powerup(drop_item, player_team, var_264cf1f9) {
         }
         if (isdefined(zombies[i].nuke_damage_func)) {
             zombies[i] thread [[ zombies[i].nuke_damage_func ]]();
-        } else {
-            if (zm_utility::is_magic_bullet_shield_enabled(zombies[i])) {
-                continue;
-            }
-            zombies[i].marked_for_death = 1;
-            if (!(isdefined(zombies[i].nuked) && zombies[i].nuked) && !zm_utility::is_magic_bullet_shield_enabled(zombies[i])) {
-                zombies[i].nuked = 1;
-                zombies_nuked[zombies_nuked.size] = zombies[i];
-                zombies[i] clientfield::set("zm_nuked", 1);
-                zombies[i] zombie_utility::set_zombie_run_cycle_override_value("walk");
-            }
+            continue;
+        }
+        if (zm_utility::is_magic_bullet_shield_enabled(zombies[i])) {
+            continue;
+        }
+        zombies[i].marked_for_death = 1;
+        if (!(isdefined(zombies[i].nuked) && zombies[i].nuked) && !zm_utility::is_magic_bullet_shield_enabled(zombies[i])) {
+            zombies[i].nuked = 1;
+            zombies_nuked[zombies_nuked.size] = zombies[i];
+            zombies[i] clientfield::set("zm_nuked", 1);
+            zombies[i] zombie_utility::set_zombie_run_cycle_override_value("walk");
         }
     }
     for (i = 0; i < zombies_nuked.size; i++) {
@@ -107,10 +107,10 @@ function nuke_powerup(drop_item, player_team, var_264cf1f9) {
     level notify(#"nuke_complete");
     if (zm_powerups::function_cfd04802(#"nuke") && isplayer(var_264cf1f9)) {
         var_264cf1f9 zm_score::player_add_points("nuke_powerup", 400, undefined, undefined, undefined, undefined, 1);
-    } else {
-        foreach (e_player in level.players) {
-            e_player zm_score::player_add_points("nuke_powerup", 400, undefined, undefined, undefined, undefined, 1);
-        }
+        return;
+    }
+    foreach (e_player in level.players) {
+        e_player zm_score::player_add_points("nuke_powerup", 400, undefined, undefined, undefined, undefined, 1);
     }
 }
 

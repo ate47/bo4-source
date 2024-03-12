@@ -265,39 +265,38 @@ function spectate_player_watcher() {
         if (self.pers[#"team"] != "spectator" || level.gameended) {
             self val::reset(#"spectate", "freezecontrols");
             self.watchingactiveclient = 0;
-            break;
-        } else {
-            /#
-                if (!level.splitscreen && !level.hardcoremode && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<unknown string>" && !isdefined(self.perkhudelem)) {
-                    if (level.perksenabled == 1) {
-                        self hud::showperks();
-                    }
-                }
-            #/
-            count = 0;
-            for (i = 0; i < level.players.size; i++) {
-                if (level.players[i].team != "spectator") {
-                    count++;
-                    break;
-                }
-            }
-            if (count > 0) {
-                if (!self.watchingactiveclient) {
-                    self val::reset(#"spectate", "freezecontrols");
-                    /#
-                        println("<unknown string>");
-                    #/
-                }
-                self.watchingactiveclient = 1;
-            } else {
-                if (self.watchingactiveclient) {
-                    [[ level.onspawnspectator ]]();
-                    self val::set(#"spectate", "freezecontrols", 1);
-                }
-                self.watchingactiveclient = 0;
-            }
-            wait(0.5);
+            return;
         }
+        /#
+            if (!level.splitscreen && !level.hardcoremode && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<unknown string>" && !isdefined(self.perkhudelem)) {
+                if (level.perksenabled == 1) {
+                    self hud::showperks();
+                }
+            }
+        #/
+        count = 0;
+        for (i = 0; i < level.players.size; i++) {
+            if (level.players[i].team != "spectator") {
+                count++;
+                break;
+            }
+        }
+        if (count > 0) {
+            if (!self.watchingactiveclient) {
+                self val::reset(#"spectate", "freezecontrols");
+                /#
+                    println("<unknown string>");
+                #/
+            }
+            self.watchingactiveclient = 1;
+        } else {
+            if (self.watchingactiveclient) {
+                [[ level.onspawnspectator ]]();
+                self val::set(#"spectate", "freezecontrols", 1);
+            }
+            self.watchingactiveclient = 0;
+        }
+        wait(0.5);
     }
 }
 
@@ -516,9 +515,9 @@ function choosenextbestnemesis() {
                 break;
             }
         }
-    } else {
-        self.pers[#"nemesis_xuid"] = "";
+        return;
     }
+    self.pers[#"nemesis_xuid"] = "";
 }
 
 // Namespace globallogic_player/globallogic_player

@@ -298,13 +298,13 @@ function function_8aea12() {
 function function_31085f45() {
     if (level.chest_moves > 1) {
         zm_magicbox::default_box_move_logic();
-    } else {
-        level.chests = array::randomize(level.chests);
-        for (i = 0; i < level.chests.size; i++) {
-            if (level.chests[i].script_noteworthy == "level1_chest1" || level.chests[i].script_noteworthy == "level1_chest2" || level.chests[i].script_noteworthy == "level1_chest3" || level.chests[i].script_noteworthy == "level2_chest3") {
-                level.chest_index = i;
-                break;
-            }
+        return;
+    }
+    level.chests = array::randomize(level.chests);
+    for (i = 0; i < level.chests.size; i++) {
+        if (level.chests[i].script_noteworthy == "level1_chest1" || level.chests[i].script_noteworthy == "level1_chest2" || level.chests[i].script_noteworthy == "level1_chest3" || level.chests[i].script_noteworthy == "level2_chest3") {
+            level.chest_index = i;
+            return;
         }
     }
 }

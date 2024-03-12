@@ -152,12 +152,12 @@ function function_cd7ed6c5(var_a99ac828, startat, toplevel) {
         while (isdefined(var_a99ac828[startat])) {
             if (isdefined(level.zdraw.commands[var_a99ac828[startat]])) {
                 startat = [[ level.zdraw.commands[var_a99ac828[startat]] ]](var_a99ac828, startat + 1);
-            } else {
-                if (isdefined(toplevel) && toplevel) {
-                    function_96c207f("<unknown string>" + var_a99ac828[startat]);
-                }
-                return startat;
+                continue;
             }
+            if (isdefined(toplevel) && toplevel) {
+                function_96c207f("<unknown string>" + var_a99ac828[startat]);
+            }
+            return startat;
         }
         return startat;
     #/
@@ -178,14 +178,14 @@ function function_3a2c5c6b(var_a99ac828, startat) {
                     sphere(center, level.zdraw.radius, level.zdraw.color, level.zdraw.alpha, 1, level.zdraw.sides, level.zdraw.duration);
                     level.zdraw.var_eeef5e89 = (0, 0, 0);
                 }
-            } else {
-                var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
-                if (var_769ff4d7 > startat) {
-                    startat = var_769ff4d7;
-                } else {
-                    return startat;
-                }
+                continue;
             }
+            var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
+            if (var_769ff4d7 > startat) {
+                startat = var_769ff4d7;
+                continue;
+            }
+            return startat;
         }
         return startat;
     #/
@@ -206,14 +206,14 @@ function function_da7503f4(var_a99ac828, startat) {
                     debugstar(center, level.zdraw.duration, level.zdraw.color);
                     level.zdraw.var_eeef5e89 = (0, 0, 0);
                 }
-            } else {
-                var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
-                if (var_769ff4d7 > startat) {
-                    startat = var_769ff4d7;
-                } else {
-                    return startat;
-                }
+                continue;
             }
+            var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
+            if (var_769ff4d7 > startat) {
+                startat = var_769ff4d7;
+                continue;
+            }
+            return startat;
         }
         return startat;
     #/
@@ -238,14 +238,14 @@ function function_25fd7d2a(var_a99ac828, startat) {
                     level.zdraw.linestart = lineend;
                     level.zdraw.var_eeef5e89 = (0, 0, 0);
                 }
-            } else {
-                var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
-                if (var_769ff4d7 > startat) {
-                    startat = var_769ff4d7;
-                } else {
-                    return startat;
-                }
+                continue;
             }
+            var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
+            if (var_769ff4d7 > startat) {
+                startat = var_769ff4d7;
+                continue;
+            }
+            return startat;
         }
         return startat;
     #/
@@ -275,14 +275,14 @@ function function_b5cdeec6(var_a99ac828, startat) {
                     print3d(center, level.zdraw.text, level.zdraw.color, level.zdraw.alpha, level.zdraw.scale, level.zdraw.duration);
                     level.zdraw.var_eeef5e89 = (0, 0, 0);
                 }
-            } else {
-                var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
-                if (var_769ff4d7 > startat) {
-                    startat = var_769ff4d7;
-                } else {
-                    return startat;
-                }
+                continue;
             }
+            var_769ff4d7 = function_cd7ed6c5(var_a99ac828, startat);
+            if (var_769ff4d7 > startat) {
+                startat = var_769ff4d7;
+                continue;
+            }
+            return startat;
         }
         return startat;
     #/

@@ -38,7 +38,7 @@ function event_handler[event_10eed35b] function_d8f1209f(eventstruct) {
 }
 
 // Namespace character_banter/character_banter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4cabdff7, Offset: 0x240
 // Size: 0x12e
 function function_86492662(player1, player2) {
@@ -58,7 +58,7 @@ function function_86492662(player1, player2) {
 }
 
 // Namespace character_banter/character_banter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x5600264b, Offset: 0x378
 // Size: 0xc4
 function play_banter(player1, player2, alias1, alias2) {
@@ -75,7 +75,7 @@ function play_banter(player1, player2, alias1, alias2) {
 }
 
 // Namespace character_banter/character_banter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc6d9d101, Offset: 0x448
 // Size: 0xaa
 function function_7b99157b() {

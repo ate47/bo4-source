@@ -42,11 +42,13 @@ function private on_begin(var_30dbb2e5, var_f2c84b6b) {
     foreach (player in getplayers()) {
         if (var_30dbb2e5 === "ammo") {
             player thread reset_ammo(var_f2c84b6b);
-        } else if (var_30dbb2e5 === "zombie_fists") {
-            player thread reset_loadout(1);
-        } else {
-            player thread reset_loadout();
+            continue;
         }
+        if (var_30dbb2e5 === "zombie_fists") {
+            player thread reset_loadout(1);
+            continue;
+        }
+        player thread reset_loadout();
     }
 }
 
@@ -84,7 +86,9 @@ function private reset_ammo(var_f2c84b6b) {
         if (zm_loadout::is_hero_weapon(weapon)) {
             n_slot = self gadgetgetslot(weapon);
             self gadgetpowerset(n_slot, 0);
-        } else if (zm_loadout::is_lethal_grenade(weapon)) {
+            continue;
+        }
+        if (zm_loadout::is_lethal_grenade(weapon)) {
             n_slot = self gadgetgetslot(weapon);
             if (weapon == getweapon(#"tomahawk_t8") || weapon == getweapon(#"tomahawk_t8_upgraded")) {
                 while (self function_36dfc05f(n_slot)) {
@@ -99,14 +103,14 @@ function private reset_ammo(var_f2c84b6b) {
             } else {
                 self gadgetpowerset(n_slot, 0);
             }
-        } else {
-            self setweaponammostock(weapon, 0);
-            if (isdefined(var_f2c84b6b)) {
-                self setweaponammoclip(weapon, weapon.clipsize);
-            } else {
-                self setweaponammoclip(weapon, 0);
-            }
+            continue;
         }
+        self setweaponammostock(weapon, 0);
+        if (isdefined(var_f2c84b6b)) {
+            self setweaponammoclip(weapon, weapon.clipsize);
+            continue;
+        }
+        self setweaponammoclip(weapon, 0);
     }
 }
 

@@ -252,13 +252,15 @@ function function_f3e2696f(ent, weapon, weapon_options, timeout, var_1e89628f, v
         if (result.weapon == weapon) {
             if (result._notify == #"offhand_end") {
                 break;
-            } else if (result._notify == #"grenade_pullback") {
+            }
+            if (result._notify == #"grenade_pullback") {
                 var_f3b15ce0 = 1;
                 if (isdefined(var_1e89628f)) {
                     self [[ var_1e89628f ]](ent);
                 }
                 continue;
-            } else if (result._notify == #"offhand_fire") {
+            }
+            if (result._notify == #"offhand_fire") {
                 if (isdefined(var_1d78d31)) {
                     self [[ var_1d78d31 ]](ent);
                 }

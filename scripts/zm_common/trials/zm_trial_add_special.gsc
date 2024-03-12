@@ -69,9 +69,8 @@ function is_active(str_archetype) {
     challenge = zm_trial::function_a36e8c38(#"add_special");
     if (isdefined(str_archetype)) {
         return (isdefined(challenge) && level.var_1c7412f9 === str_archetype);
-    } else {
-        return isdefined(challenge);
     }
+    return isdefined(challenge);
 }
 
 // Namespace zm_trial_add_special/zm_trial_add_special
@@ -104,9 +103,9 @@ function function_1b1d71e7(var_8997f0f2) {
     foreach (str_archetype in a_str_archetypes) {
         if (str_archetype === level.var_1c7412f9) {
             var_8997f0f2[str_archetype] = level.var_e34a018e;
-        } else {
-            var_8997f0f2[str_archetype] = 0;
+            continue;
         }
+        var_8997f0f2[str_archetype] = 0;
     }
     return var_8997f0f2;
 }

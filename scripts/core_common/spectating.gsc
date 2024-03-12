@@ -122,11 +122,11 @@ function set_permissions() {
         break;
     case 3:
         self.spectatorteam = #"invalid";
-        jumpiffalse(self issplitscreen() && self other_local_player_still_alive()) LOC_0000025e;
-        self allowspectateteam(#"none", 0);
-        break;
+        if (self issplitscreen() && self other_local_player_still_alive()) {
+            self allowspectateteam(#"none", 0);
+            break;
+        }
     case 1:
-    LOC_0000025e:
         self.spectatorteam = #"invalid";
         if (!level.teambased) {
             self allowspectateallteams(1);
@@ -159,10 +159,10 @@ function set_permissions() {
         if (isdefined(level.spectateoverride[team].allowenemyspectate)) {
             if (level.spectateoverride[team].allowenemyspectate == #"all") {
                 self allowspectateallteams(1);
-            } else {
-                self allowspectateallteams(0);
-                self allowspectateteam(level.spectateoverride[team].allowenemyspectate, 1);
+                return;
             }
+            self allowspectateallteams(0);
+            self allowspectateteam(level.spectateoverride[team].allowenemyspectate, 1);
         }
     }
 }
@@ -178,29 +178,29 @@ function function_4c37bb21(var_2b7584f0) {
         if (var_2b7584f0) {
             self setcurrentspectatorclient(var_156b3879);
         }
-    } else {
-        spectator_team = undefined;
-        players = getplayers(self.team);
-        foreach (player in players) {
-            if (player == self) {
-                continue;
-            }
-            if (player.spectatorteam != #"invalid") {
-                spectator_team = player.spectatorteam;
+        return;
+    }
+    spectator_team = undefined;
+    players = getplayers(self.team);
+    foreach (player in players) {
+        if (player == self) {
+            continue;
+        }
+        if (player.spectatorteam != #"invalid") {
+            spectator_team = player.spectatorteam;
+            break;
+        }
+    }
+    if (!isdefined(spectator_team)) {
+        foreach (team, count in level.alivecount) {
+            if (count > 0) {
+                self.spectatorteam = team;
                 break;
             }
         }
-        if (!isdefined(spectator_team)) {
-            foreach (team, count in level.alivecount) {
-                if (count > 0) {
-                    self.spectatorteam = team;
-                    break;
-                }
-            }
-        }
-        if (isdefined(spectator_team)) {
-            self.spectatorteam = spectator_team;
-        }
+    }
+    if (isdefined(spectator_team)) {
+        self.spectatorteam = spectator_team;
     }
 }
 
@@ -389,9 +389,9 @@ function function_2b728d67(attacker) {
         self.spectatorclient = -1;
         self.spectatorteam = var_156b3879.team;
         self setcurrentspectatorclient(var_156b3879);
-    } else {
-        self.spectatorteam = self.team;
+        return;
     }
+    self.spectatorteam = self.team;
 }
 
 // Namespace spectating/spectating

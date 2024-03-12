@@ -173,21 +173,21 @@ function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap,
     case 1:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_69091fb60c4fb574"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        break;
+        return;
     case 2:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_690922b60c4fba8d"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        break;
+        return;
     case 3:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_690921b60c4fb8da"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        break;
+        return;
     case 4:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_44687d6082f9a0a4"], self, "tag_origin");
-        break;
+        return;
     case 5:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_2e43973bc23c661d"], self, "tag_origin");
-        break;
+        return;
     }
 }
 
@@ -205,7 +205,9 @@ function portal_ready_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
     }
     if (newval > 1) {
         var_dabe3ecb.effect_id = util::playfxontag(localclientnum, level._effect[#"portal_ready"], var_dabe3ecb, "tag_origin");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         var_dabe3ecb.effect_id = util::playfxontag(localclientnum, level._effect[#"portal_cooldown"], var_dabe3ecb, "tag_origin");
     }
 }
@@ -274,7 +276,9 @@ function portal_maps_initialize_lights(localclientnum, oldval, newval, bnewent, 
 function portal_map_indicator_green_house_backyard(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_green_house_backyard");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_green_house_backyard");
     }
 }
@@ -286,7 +290,9 @@ function portal_map_indicator_green_house_backyard(localclientnum, oldval, newva
 function portal_map_indicator_red_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_red_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_red_house");
     }
 }
@@ -298,7 +304,9 @@ function portal_map_indicator_red_house(localclientnum, oldval, newval, bnewent,
 function portal_map_indicator_yellow_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_yellow_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_yellow_house");
     }
 }
@@ -310,7 +318,9 @@ function portal_map_indicator_yellow_house(localclientnum, oldval, newval, bnewe
 function portal_map_indicator_prisoner_holding(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_prisoner_holding");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_prisoner_holding");
     }
 }
@@ -322,7 +332,9 @@ function portal_map_indicator_prisoner_holding(localclientnum, oldval, newval, b
 function portal_map_indicator_street_middle(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_street_middle");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_street_middle");
     }
 }
@@ -334,7 +346,9 @@ function portal_map_indicator_street_middle(localclientnum, oldval, newval, bnew
 function portal_map_indicator_transfusion_facility(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_transfusion_facility");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_transfusion_facility");
     }
 }
@@ -346,7 +360,9 @@ function portal_map_indicator_transfusion_facility(localclientnum, oldval, newva
 function portal_map_indicator_diner(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_diner");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_diner");
     }
 }
@@ -358,7 +374,9 @@ function portal_map_indicator_diner(localclientnum, oldval, newval, bnewent, bin
 function portal_map_indicator_beds(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_beds");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_beds");
     }
 }
@@ -370,7 +388,9 @@ function portal_map_indicator_beds(localclientnum, oldval, newval, bnewent, bini
 function portal_map_indicator_power(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_power");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_power");
     }
 }
@@ -382,7 +402,9 @@ function portal_map_indicator_power(localclientnum, oldval, newval, bnewent, bin
 function portal_map_indicator_storage(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_8353316a(localclientnum, "tag_storage");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         level function_af29dda9(localclientnum, "tag_storage");
     }
 }
@@ -430,7 +452,7 @@ function get_portals(localclientnum) {
 function function_73460c84(var_4749e403) {
     for (var_455a6779 = 0; var_455a6779 < var_4749e403; var_455a6779++) {
         if (isdefined(self.model)) {
-            break;
+            return;
         }
         waitframe(1);
     }

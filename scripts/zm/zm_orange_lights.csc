@@ -44,7 +44,9 @@ function ship_lights_control(localclientnum, oldval, newval, bnewent, binitialsn
     if (newval == 1) {
         exploder::exploder("fxexp_script_ship_power");
         exploder::exploder("fx_power_on2");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         exploder::stop_exploder("fxexp_script_ship_power");
         exploder::stop_exploder("fx_power_on2");
     }
@@ -59,7 +61,9 @@ function lighthouse_lights_control(localclientnum, oldval, newval, bnewent, bini
         exploder::exploder("fxexp_script_lighthouse_interior_power");
         exploder::exploder("fxexp_script_docks_power");
         exploder::exploder("fx_power_on1");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         exploder::stop_exploder("fxexp_script_lighthouse_interior_power");
         exploder::exploder("fxexp_script_docks_power");
         exploder::stop_exploder("fx_power_on1");
@@ -76,7 +80,9 @@ function facility_lights_control(localclientnum, oldval, newval, bnewent, biniti
         exploder::exploder("fxexp_script_facility_power_on_fx");
         exploder::exploder("fxexp_script_infusion_default");
         exploder::exploder("fxexp_script_facility_power_off");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         exploder::stop_exploder("fxexp_script_facility_power_on");
         exploder::stop_exploder("fxexp_script_facility_power_on_fx");
         exploder::stop_exploder("fxexp_script_infusion_default");
@@ -92,7 +98,9 @@ function infusion_lights_hot(localclientnum, oldval, newval, bnewent, binitialsn
     if (newval == 1) {
         exploder::stop_exploder("fxexp_script_infusion_default");
         exploder::exploder("fxexp_script_infusion_hot");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         exploder::stop_exploder("fxexp_script_infusion_hot");
         exploder::exploder("fxexp_script_infusion_default");
     }
@@ -106,7 +114,9 @@ function infusion_lights_cold(localclientnum, oldval, newval, bnewent, binitials
     if (newval == 1) {
         exploder::stop_exploder("fxexp_script_infusion_default");
         exploder::exploder("fxexp_script_infusion_cold");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         exploder::stop_exploder("fxexp_script_infusion_cold");
         exploder::exploder("fxexp_script_infusion_default");
     }

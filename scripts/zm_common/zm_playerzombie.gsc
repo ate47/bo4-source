@@ -305,13 +305,17 @@ function playerzombie_waitfor_buttonrelease(inputtype) {
             waitframe(1);
         }
         self.buttonpressed_use = 0;
-    } else if (inputtype == "attack") {
+        return;
+    }
+    if (inputtype == "attack") {
         self.buttonpressed_attack = 1;
         while (self attackbuttonpressed()) {
             waitframe(1);
         }
         self.buttonpressed_attack = 0;
-    } else if (inputtype == "ads") {
+        return;
+    }
+    if (inputtype == "ads") {
         self.buttonpressed_ads = 1;
         while (self adsbuttonpressed()) {
             waitframe(1);

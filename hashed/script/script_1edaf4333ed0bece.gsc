@@ -24,7 +24,9 @@ function init() {
 function gear_box_spark_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_91180673 = util::playfxontag(localclientnum, level._effect[#"hash_5bea6497d336bbf"], self, "tag_generator");
-    } else if (isdefined(self.var_91180673)) {
+        return;
+    }
+    if (isdefined(self.var_91180673)) {
         stopfx(localclientnum, self.var_91180673);
         self.var_91180673 = undefined;
     }

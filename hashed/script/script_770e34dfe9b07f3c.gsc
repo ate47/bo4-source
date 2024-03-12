@@ -44,11 +44,11 @@ function private on_begin(var_c4da4541, var_93a137cd) {
     if (isdefined(self.var_93a137cd) && self.var_93a137cd) {
         level.var_41d5077e = 0;
         level thread function_c33c2895();
-    } else {
-        zm_trial_util::function_c2cd0cba(level.var_6f6736a8);
-        foreach (player in getplayers()) {
-            player thread function_a14072bf();
-        }
+        return;
+    }
+    zm_trial_util::function_c2cd0cba(level.var_6f6736a8);
+    foreach (player in getplayers()) {
+        player thread function_a14072bf();
     }
 }
 

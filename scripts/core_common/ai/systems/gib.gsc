@@ -55,18 +55,18 @@ function private function_3aa023f1(name, entity) {
             /#
                 assertmsg("<unknown string>" + gibflag);
             #/
-        } else {
-            gibstruct = spawnstruct();
-            gibstruct.gibmodel = definition.(gibpiece + "_gibmodel");
-            gibstruct.gibtag = definition.(gibpiece + "_gibtag");
-            gibstruct.gibfx = definition.(gibpiece + "_gibfx");
-            gibstruct.gibfxtag = definition.(gibpiece + "_gibeffecttag");
-            gibstruct.gibdynentfx = definition.(gibpiece + "_gibdynentfx");
-            gibstruct.var_42c89fa1 = definition.(gibpiece + "_gibcinematicfx");
-            gibstruct.gibsound = definition.(gibpiece + "_gibsound");
-            gibstruct.gibhidetag = definition.(gibpiece + "_gibhidetag");
-            gibpieces[gibflag] = gibstruct;
+            continue;
         }
+        gibstruct = spawnstruct();
+        gibstruct.gibmodel = definition.(gibpiece + "_gibmodel");
+        gibstruct.gibtag = definition.(gibpiece + "_gibtag");
+        gibstruct.gibfx = definition.(gibpiece + "_gibfx");
+        gibstruct.gibfxtag = definition.(gibpiece + "_gibeffecttag");
+        gibstruct.gibdynentfx = definition.(gibpiece + "_gibdynentfx");
+        gibstruct.var_42c89fa1 = definition.(gibpiece + "_gibcinematicfx");
+        gibstruct.gibsound = definition.(gibpiece + "_gibsound");
+        gibstruct.gibhidetag = definition.(gibpiece + "_gibhidetag");
+        gibpieces[gibflag] = gibstruct;
     }
     level.var_ad0f5efa[name] = gibpieces;
     return gibpieces;
@@ -98,13 +98,13 @@ function private _annihilate(entity) {
 function private _getgibextramodel(entity, gibflag) {
     if (gibflag == 4) {
         return (isdefined(entity.gib_data) ? entity.gib_data.hatmodel : entity.hatmodel);
-    } else if (gibflag == 8) {
-        return (isdefined(entity.gib_data) ? entity.gib_data.head : entity.head);
-    } else {
-        /#
-            assertmsg("<unknown string>");
-        #/
     }
+    if (gibflag == 8) {
+        return (isdefined(entity.gib_data) ? entity.gib_data.head : entity.head);
+    }
+    /#
+        assertmsg("<unknown string>");
+    #/
 }
 
 // Namespace gibserverutils/gib

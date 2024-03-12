@@ -273,7 +273,6 @@ function private canchangestanceatcovercondition(entity) {
         return aiutility::isstanceallowedatnode("crouch", entity.node);
     case #"crouch":
         return aiutility::isstanceallowedatnode("stand", entity.node);
-        break;
     }
     return 0;
 }
@@ -448,10 +447,10 @@ function private coverchangestanceactionstart(entity, asmstatename) {
     switch (entity getblackboardattribute("_stance")) {
     case #"stand":
         entity setblackboardattribute("_desired_stance", "crouch");
-        break;
+        return;
     case #"crouch":
         entity setblackboardattribute("_desired_stance", "stand");
-        break;
+        return;
     }
 }
 

@@ -10,7 +10,7 @@
 #namespace load;
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcc9d1527, Offset: 0x208
 // Size: 0x144
 function main() {
@@ -36,7 +36,7 @@ function main() {
 }
 
 // Namespace load/load
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x493558b8, Offset: 0x358
 // Size: 0xae
 function setfootstepeffect(name, fx) {
@@ -78,7 +78,7 @@ function footsteps() {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18a4c39c, Offset: 0x640
 // Size: 0xb2
 function init_traverse() {
@@ -86,16 +86,16 @@ function init_traverse() {
     if (isdefined(point)) {
         self.traverse_height = point.origin[2];
         point delete();
-    } else {
-        point = struct::get(self.target, "targetname");
-        if (isdefined(point)) {
-            self.traverse_height = point.origin[2];
-        }
+        return;
+    }
+    point = struct::get(self.target, "targetname");
+    if (isdefined(point)) {
+        self.traverse_height = point.origin[2];
     }
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6216fd30, Offset: 0x700
 // Size: 0x8e
 function setup_traversals() {
@@ -109,7 +109,7 @@ function setup_traversals() {
 }
 
 // Namespace load/load
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3793b7b5, Offset: 0x798
 // Size: 0x94
 function register_clientfields() {

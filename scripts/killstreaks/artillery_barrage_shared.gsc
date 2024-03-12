@@ -368,9 +368,9 @@ function function_8c164ce0(path) {
             if (!var_11f31e2c) {
                 var_11f31e2c = 1;
                 util::debug_sphere(point, radius, (0, 1, 0), alpha, var_342eb58c);
-            } else {
-                util::debug_sphere(point, radius, (0, 0, 1), alpha, var_342eb58c);
+                continue;
             }
+            util::debug_sphere(point, radius, (0, 0, 1), alpha, var_342eb58c);
         }
     #/
 }

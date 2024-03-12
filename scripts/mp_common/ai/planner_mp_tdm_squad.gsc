@@ -8,7 +8,7 @@
 #namespace plannermptdmsquad;
 
 // Namespace plannermptdmsquad/planner_mp_tdm_squad
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaaae6df0, Offset: 0xa8
 // Size: 0x32
 function createsquadplanner(team) {

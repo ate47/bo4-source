@@ -27,7 +27,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_medals/wz_medals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacf45832, Offset: 0x148
 // Size: 0x44
 function __init__() {
@@ -36,7 +36,7 @@ function __init__() {
 }
 
 // Namespace wz_medals/wz_medals
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x198
 // Size: 0x4
 function __main__() {
@@ -44,7 +44,7 @@ function __main__() {
 }
 
 // Namespace wz_medals/wz_medals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4265f897, Offset: 0x1a8
 // Size: 0xec
 function function_843da215(params) {
@@ -59,7 +59,7 @@ function function_843da215(params) {
 }
 
 // Namespace wz_medals/wz_medals
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6408d57, Offset: 0x2a0
 // Size: 0x10c
 function function_f4837321(params) {

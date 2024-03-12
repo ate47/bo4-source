@@ -79,9 +79,9 @@ function function_dae1df4d(e_powerup, player) {
         if (player hasweapon(w_weapon)) {
             if (zm_loadout::is_lethal_grenade(w_weapon)) {
                 player thread function_3ecbd9d(w_weapon);
-            } else {
-                player zm_weapons::ammo_give(w_weapon, 0);
+                continue;
             }
+            player zm_weapons::ammo_give(w_weapon, 0);
         }
     }
     if (player hasperk(#"specialty_widowswine")) {
@@ -105,37 +105,37 @@ function full_ammo_powerup(drop_item, player) {
     level notify(#"zmb_max_ammo_level");
     foreach (player in players) {
         if (isdefined(level.check_player_is_ready_for_ammo)) {
-            jumpiffalse([[ level.check_player_is_ready_for_ammo ]](player) == 0) LOC_0000010c;
-        } else {
-        LOC_0000010c:
-            a_w_weapons = player getweaponslist(0);
-            player.var_655c0753 = undefined;
-            player notify(#"zmb_max_ammo");
-            player zm_placeable_mine::disable_all_prompts_for_player();
-            foreach (w_weapon in a_w_weapons) {
-                if (level.headshots_only && zm_loadout::is_lethal_grenade(w_weapon)) {
-                    continue;
-                }
-                if (isdefined(level.zombie_include_equipment) && isdefined(level.zombie_include_equipment[w_weapon]) && !(isdefined(level.zombie_equipment[w_weapon].refill_max_ammo) && level.zombie_equipment[w_weapon].refill_max_ammo)) {
-                    continue;
-                }
-                if (isdefined(level.zombie_weapons_no_max_ammo) && isdefined(level.zombie_weapons_no_max_ammo[w_weapon.name])) {
-                    continue;
-                }
-                if (zm_loadout::is_hero_weapon(w_weapon)) {
-                    continue;
-                }
-                if (player hasweapon(w_weapon)) {
-                    if (zm_loadout::is_lethal_grenade(w_weapon)) {
-                        player thread function_3ecbd9d(w_weapon);
-                    } else {
-                        player zm_weapons::ammo_give(w_weapon, 0);
-                    }
-                }
+            if ([[ level.check_player_is_ready_for_ammo ]](player) == 0) {
+                continue;
             }
-            if (player hasperk(#"specialty_widowswine")) {
-                player zm_perk_widows_wine::reset_charges();
+        }
+        a_w_weapons = player getweaponslist(0);
+        player.var_655c0753 = undefined;
+        player notify(#"zmb_max_ammo");
+        player zm_placeable_mine::disable_all_prompts_for_player();
+        foreach (w_weapon in a_w_weapons) {
+            if (level.headshots_only && zm_loadout::is_lethal_grenade(w_weapon)) {
+                continue;
             }
+            if (isdefined(level.zombie_include_equipment) && isdefined(level.zombie_include_equipment[w_weapon]) && !(isdefined(level.zombie_equipment[w_weapon].refill_max_ammo) && level.zombie_equipment[w_weapon].refill_max_ammo)) {
+                continue;
+            }
+            if (isdefined(level.zombie_weapons_no_max_ammo) && isdefined(level.zombie_weapons_no_max_ammo[w_weapon.name])) {
+                continue;
+            }
+            if (zm_loadout::is_hero_weapon(w_weapon)) {
+                continue;
+            }
+            if (player hasweapon(w_weapon)) {
+                if (zm_loadout::is_lethal_grenade(w_weapon)) {
+                    player thread function_3ecbd9d(w_weapon);
+                    continue;
+                }
+                player zm_weapons::ammo_give(w_weapon, 0);
+            }
+        }
+        if (player hasperk(#"specialty_widowswine")) {
+            player zm_perk_widows_wine::reset_charges();
         }
     }
     level thread full_ammo_on_hud(drop_item, player.team);
@@ -154,9 +154,9 @@ function function_3ecbd9d(w_weapon) {
         }
         self notify(#"hash_3d73720d4588203c");
         self gadgetpowerset(n_slot, 100);
-    } else {
-        self gadgetpowerset(n_slot, 100);
+        return;
     }
+    self gadgetpowerset(n_slot, 100);
 }
 
 // Namespace zm_powerup_full_ammo/zm_powerup_full_ammo

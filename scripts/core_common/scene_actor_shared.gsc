@@ -73,9 +73,9 @@ class csceneactor : csceneobject {
         self._e notify(#"hash_6e7fd8207fd988c6", {#str_scene:self._o_scene._str_name});
         if (isdefined(self._e) && !(isdefined(self._e.skipscenedeath) && self._e.skipscenedeath)) {
             self thread do_death_anims();
-        } else {
-            csceneobject::function_1e19d813();
+            return;
         }
+        csceneobject::function_1e19d813();
     }
 
     // Namespace csceneactor/scene_actor_shared
@@ -89,7 +89,9 @@ class csceneactor : csceneobject {
                     if (isdefined(self._e.scenegoal)) {
                         self._e setgoal(self._e.scenegoal);
                         self._e.scenegoal = undefined;
-                    } else if (self._b_set_goal) {
+                        return;
+                    }
+                    if (self._b_set_goal) {
                         self._e setgoal(self._e.origin);
                     }
                 }
@@ -224,9 +226,9 @@ class cscenefakeactor : csceneobject, csceneactor {
             if (!(isdefined(self._s.removeweapon) && self._s.removeweapon)) {
                 if (isdefined(weapon)) {
                     self._e animation::attach_weapon(weapon);
-                } else {
-                    self._e animation::attach_weapon(getweapon(#"ar_accurate_t8"));
+                    return;
                 }
+                self._e animation::attach_weapon(getweapon(#"ar_accurate_t8"));
             }
         }
     }

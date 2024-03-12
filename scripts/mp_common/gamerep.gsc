@@ -5,7 +5,7 @@
 #namespace gamerep;
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xabbe4376, Offset: 0x130
 // Size: 0xcc
 function init() {
@@ -24,7 +24,7 @@ function init() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb2c28396, Offset: 0x208
 // Size: 0x2e
 function isgamerepinitialized() {
@@ -35,7 +35,7 @@ function isgamerepinitialized() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x95f379f3, Offset: 0x240
 // Size: 0x2e
 function isgamerepenabled() {
@@ -49,7 +49,7 @@ function isgamerepenabled() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x23186311, Offset: 0x278
 // Size: 0x1306
 function gamerepinitializeparams() {
@@ -147,7 +147,7 @@ function gamerepinitializeparams() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6619fdf, Offset: 0x1588
 // Size: 0x346
 function gamerepplayerconnected() {
@@ -169,7 +169,9 @@ function gamerepplayerconnected() {
         game.gamerep[#"players"][name][#"xpstart"] = self rank::getrankxpstat();
         game.gamerep[#"playernames"][game.gamerep[#"playercount"]] = name;
         game.gamerep[#"playercount"]++;
-    } else if (!game.gamerep[#"players"][name][#"connected"]) {
+        return;
+    }
+    if (!game.gamerep[#"players"][name][#"connected"]) {
         game.gamerep[#"players"][name][#"joinattempts"]++;
         game.gamerep[#"players"][name][#"connected"] = 1;
         game.gamerep[#"players"][name][#"xpstart"] = self rank::getrankxpstat();
@@ -177,7 +179,7 @@ function gamerepplayerconnected() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe75d1da5, Offset: 0x18d8
 // Size: 0xd6
 function gamerepplayerdisconnected() {
@@ -196,7 +198,7 @@ function gamerepplayerdisconnected() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe346407b, Offset: 0x19b8
 // Size: 0x1ae
 function gamerepupdatenonpersistentplayerinformation() {
@@ -216,7 +218,7 @@ function gamerepupdatenonpersistentplayerinformation() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf41ec176, Offset: 0x1b70
 // Size: 0x526
 function gamerepupdatepersistentplayerinformation() {
@@ -248,7 +250,7 @@ function gamerepupdatepersistentplayerinformation() {
 }
 
 // Namespace gamerep/gamerep
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x394fd709, Offset: 0x20a0
 // Size: 0x8c
 function getparamvalueforplayer(playername, paramname) {
@@ -261,7 +263,7 @@ function getparamvalueforplayer(playername, paramname) {
 }
 
 // Namespace gamerep/gamerep
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x371b179a, Offset: 0x2138
 // Size: 0x11a
 function isgamerepparamvalid(paramname) {
@@ -285,7 +287,7 @@ function isgamerepparamvalid(paramname) {
 }
 
 // Namespace gamerep/gamerep
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2bcf134a, Offset: 0x2260
 // Size: 0x34
 function isgamerepparamignoredforreporting(paramname) {
@@ -296,7 +298,7 @@ function isgamerepparamignoredforreporting(paramname) {
 }
 
 // Namespace gamerep/gamerep
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x558e7b11, Offset: 0x22a0
 // Size: 0x124
 function getgamerepparamlimit(paramname) {
@@ -315,7 +317,7 @@ function getgamerepparamlimit(paramname) {
 }
 
 // Namespace gamerep/gamerep
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7a7e68f8, Offset: 0x23d0
 // Size: 0xac
 function setmaximumparamvalueforcurrentgame(paramname, value) {
@@ -329,7 +331,7 @@ function setmaximumparamvalueforcurrentgame(paramname, value) {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfca4449e, Offset: 0x2488
 // Size: 0x86
 function gamerepupdateinformationforround() {
@@ -344,7 +346,7 @@ function gamerepupdateinformationforround() {
 }
 
 // Namespace gamerep/gamerep
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55819833, Offset: 0x2518
 // Size: 0x2dc
 function gamerepanalyzeandreport() {
@@ -382,7 +384,7 @@ function gamerepanalyzeandreport() {
 }
 
 // Namespace gamerep/gamerep
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xafcb09fe, Offset: 0x2800
 // Size: 0x9c
 function gamerepprepareandreport(paramname) {

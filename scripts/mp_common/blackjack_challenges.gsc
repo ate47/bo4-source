@@ -233,37 +233,28 @@ function get_hero_weapon_mask(attacker, weapon) {
     switch (weapon.name) {
     case #"hero_minigun":
         return 1;
-        break;
     case #"hero_flamethrower":
         return 2;
-        break;
     case #"hero_lightninggun":
     case #"hero_lightninggun_arc":
         return 4;
-        break;
     case #"hero_firefly_swarm":
     case #"hero_chemicalgelgun":
         return 8;
-        break;
     case #"hero_pineapple_grenade":
     case #"hero_pineapplegun":
         return 16;
-        break;
     case #"hero_bowlauncher2":
     case #"hero_bowlauncher3":
     case #"hero_bowlauncher4":
     case #"hero_bowlauncher":
         return 64;
-        break;
     case #"hero_gravityspikes":
         return 128;
-        break;
     case #"hero_annihilator":
         return 256;
-        break;
     default:
         return 0;
-        break;
     }
 }
 
@@ -278,31 +269,22 @@ function get_hero_ability_mask(ability) {
     switch (ability.name) {
     case #"gadget_clone":
         return 1;
-        break;
     case #"gadget_heat_wave":
         return 2;
-        break;
     case #"gadget_resurrect":
         return 8;
-        break;
     case #"gadget_armor":
         return 16;
-        break;
     case #"gadget_camo":
         return 32;
-        break;
     case #"gadget_vision_pulse":
         return 64;
-        break;
     case #"gadget_speed_burst":
         return 128;
-        break;
     case #"gadget_combat_efficiency":
         return 256;
-        break;
     default:
         return 0;
-        break;
     }
 }
 

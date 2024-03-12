@@ -5,7 +5,7 @@
 #namespace display_transition;
 
 // Namespace display_transition/display_transition
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e444534, Offset: 0xa8
 // Size: 0x14
 function init_shared() {
@@ -13,7 +13,7 @@ function init_shared() {
 }
 
 // Namespace display_transition/display_transition
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x44415d71, Offset: 0xc8
 // Size: 0x5c
 function private registerclientfields() {
@@ -23,7 +23,7 @@ function private registerclientfields() {
 }
 
 // Namespace display_transition/display_transition
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3b512973, Offset: 0x130
 // Size: 0xd4
 function function_c73ec9a(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -32,7 +32,9 @@ function function_c73ec9a(local_client_num, oldval, newval, bnewent, binitialsna
         if (!isplaying) {
             self codeplaypostfxbundle(#"hash_1e4c3120a3e08628");
         }
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         if (isplaying) {
             self postfx::stoppostfxbundle(#"hash_1e4c3120a3e08628");
         }

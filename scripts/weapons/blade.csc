@@ -37,7 +37,9 @@ function on_weapon_change(params) {
         localplayer = function_5c10bd79(localclientnum);
         if (self == localplayer) {
             function_c0c566d4(localclientnum);
-        } else if (localplayer util::isenemyplayer(self)) {
+            return;
+        }
+        if (localplayer util::isenemyplayer(self)) {
             handle = self playloopsound("gdt_spectre_blade_loop");
             self thread function_c980da51(handle);
         }

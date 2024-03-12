@@ -119,9 +119,9 @@ function clone_give_weapon(weapon) {
 function clone_animate(animtype) {
     if (self.isactor) {
         self thread clone_actor_animate(animtype);
-    } else {
-        self thread clone_mover_animate(animtype);
+        return;
     }
+    self thread clone_mover_animate(animtype);
 }
 
 // Namespace zm_clone/zm_clone
@@ -133,11 +133,11 @@ function clone_actor_animate(animtype) {
     switch (animtype) {
     case #"laststand":
         self setanimstatefromasd("laststand");
-        break;
+        return;
     case #"idle":
     default:
         self setanimstatefromasd("idle");
-        break;
+        return;
     }
 }
 
@@ -150,20 +150,20 @@ function clone_mover_animate(animtype) {
     switch (animtype) {
     case #"laststand":
         self setanim(#"pb_laststand_idle");
-        break;
+        return;
     case #"afterlife":
         self setanim(#"pb_afterlife_laststand_idle");
-        break;
+        return;
     case #"chair":
         self setanim(#"ai_actor_elec_chair_idle");
-        break;
+        return;
     case #"falling":
         self setanim(#"pb_falling_loop");
-        break;
+        return;
     case #"idle":
     default:
         self setanim(#"pb_stand_alert");
-        break;
+        return;
     }
 }
 

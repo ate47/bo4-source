@@ -58,9 +58,9 @@ function function_7abfa551(localclientnum, oldval, newval, bnewent, binitialsnap
             str_tag = "tag_origin";
         }
         self function_c36aebed(localclientnum, str_tag);
-    } else {
-        self function_b4d21494(localclientnum);
+        return;
     }
+    self function_b4d21494(localclientnum);
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst
@@ -75,9 +75,9 @@ function function_a98c42a3(localclientnum, oldval, newval, bnewent, binitialsnap
             str_tag = "tag_origin";
         }
         self function_c36aebed(localclientnum, str_tag);
-    } else {
-        self function_b4d21494(localclientnum);
+        return;
     }
+    self function_b4d21494(localclientnum);
 }
 
 // Namespace zm_aat_plasmatic_burst/zm_aat_plasmatic_burst

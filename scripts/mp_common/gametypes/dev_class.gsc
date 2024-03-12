@@ -14,8 +14,7 @@ function dev_cac_init() {
         dev_cac_camera_on = 0;
         level thread dev_cac_gdt_update_think();
         var_b7b0fdc0 = getdvarint(#"hash_158f81eb73a459bd", 0);
-        var_1db243f1 = getdvarint(#"hash_729117f20b736ab4", 0);
-        for (;;) {
+        for (var_1db243f1 = getdvarint(#"hash_729117f20b736ab4", 0); ; var_1db243f1 = deathfxindex) {
             wait(0.5);
             reset = 1;
             if (getdvarstring(#"scr_disable_cac_2") != "<unknown string>") {
@@ -119,7 +118,6 @@ function dev_cac_init() {
             if (var_1db243f1 != deathfxindex) {
                 host function_a85d2581(host getcurrentweapon(), deathfxindex);
             }
-            var_1db243f1 = deathfxindex;
         }
     #/
 }
@@ -135,10 +133,10 @@ function dev_cac_camera(on) {
             setdvar(#"cg_thirdpersonangle", 185);
             setdvar(#"cg_thirdpersonrange", 138);
             setdvar(#"cg_fov", 20);
-        } else {
-            self setclientthirdperson(0);
-            setdvar(#"cg_fov", getdvarstring(#"cg_fov_default"));
+            return;
         }
+        self setclientthirdperson(0);
+        setdvar(#"cg_fov", getdvarstring(#"cg_fov_default"));
     #/
 }
 

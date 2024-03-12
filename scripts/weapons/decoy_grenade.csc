@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8f3d22f3, Offset: 0xf8
 // Size: 0x4c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1253dca7, Offset: 0x150
 // Size: 0x74
 function function_52b6cd8b(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -32,7 +32,7 @@ function function_52b6cd8b(localclientnum, oldvalue, newvalue, bnewent, binitial
 }
 
 // Namespace decoygrenade/decoy_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xabe72f71, Offset: 0x1d0
 // Size: 0x60
 function monitor_footsteps(localclientnum) {

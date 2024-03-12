@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xed29eefd, Offset: 0x178
 // Size: 0x94
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2384bc33, Offset: 0x218
 // Size: 0x94
 function function_fe37390(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -32,7 +32,7 @@ function function_fe37390(localclientnum, oldvalue, newvalue, bnewent, binitials
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2613172b, Offset: 0x2b8
 // Size: 0x156
 function function_6f48ad35(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -40,16 +40,16 @@ function function_6f48ad35(localclientnum, oldvalue, newvalue, bnewent, binitial
         self codeplaypostfxbundle(#"hash_7c7ea03189fe65d8");
         self.var_d8c2003e = playfxoncamera(localclientnum, "wz/fx8_plyr_pstfx_barrier_lvl_01_wz", (0, 0, 0), (1, 0, 0), (0, 0, 1));
         self.var_7b79495b = function_239993de(localclientnum, "wz/fx8_player_outside_circle", self, "tag_origin");
-    } else {
-        self codestoppostfxbundle(#"hash_7c7ea03189fe65d8");
-        if (isdefined(self.var_d8c2003e)) {
-            deletefx(localclientnum, self.var_d8c2003e, 1);
-            self.var_d8c2003e = undefined;
-        }
-        if (isdefined(self.var_7b79495b)) {
-            killfx(localclientnum, self.var_7b79495b);
-            self.var_7b79495b = undefined;
-        }
+        return;
+    }
+    self codestoppostfxbundle(#"hash_7c7ea03189fe65d8");
+    if (isdefined(self.var_d8c2003e)) {
+        deletefx(localclientnum, self.var_d8c2003e, 1);
+        self.var_d8c2003e = undefined;
+    }
+    if (isdefined(self.var_7b79495b)) {
+        killfx(localclientnum, self.var_7b79495b);
+        self.var_7b79495b = undefined;
     }
 }
 

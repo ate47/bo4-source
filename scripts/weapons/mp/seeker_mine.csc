@@ -39,15 +39,17 @@ function function_3ade2b96(localclientnum, oldval, newval, bnewent, binitialsnap
         if (self function_21c0fa55()) {
             setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.playerIsShocked"), 1);
         }
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         if (self function_21c0fa55() && function_d17ae3cc(localclientnum)) {
             camfx = playfxoncamera(localclientnum, "player/fx8_plyr_pstfx_paralyze_screen");
             self thread function_a6451cfe(localclientnum, camfx);
         }
-    } else {
-        self.var_3ade2b96 = 0;
-        self notify(#"hash_43f06be9944cddc1");
+        return;
     }
+    self.var_3ade2b96 = 0;
+    self notify(#"hash_43f06be9944cddc1");
 }
 
 // Namespace seeker_mine_mp/seeker_mine

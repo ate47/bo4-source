@@ -350,12 +350,14 @@ function function_c2d403f(n_index) {
                     self clientfield::set("" + #"hash_5dd642a0bd6e6cb9", 1);
                     self.b_frozen = 0;
                 }
-            } else if (isinarray(level.var_16972e5c, s_notify.weapon.name)) {
+                continue;
+            }
+            if (isinarray(level.var_16972e5c, s_notify.weapon.name)) {
                 self clientfield::set("" + #"hash_5dd642a0bd6e6cb9", 2);
                 self.b_frozen = 1;
-            } else {
-                self.b_near = 1;
+                continue;
             }
+            self.b_near = 1;
         }
     }
 }
@@ -370,52 +372,52 @@ function function_a4fa2df0(n_index) {
     if (level.var_9e3c632e > 2) {
         self moveto(level.var_e70fa660[n_index].origin, 0.3, 0.1, 0.1);
         self.b_primed = 1;
-    } else {
-        self.zone = "";
-        while (!self.b_frozen) {
-            zone = "";
-            do {
-                zone = array::random(level.var_9928b94b[n_index]);
-                waitframe(1);
-            } while(zone == self.zone);
-            /#
+        return;
+    }
+    self.zone = "";
+    while (!self.b_frozen) {
+        zone = "";
+        do {
+            zone = array::random(level.var_9928b94b[n_index]);
+            waitframe(1);
+        } while (zone == self.zone);
+        /#
+            if (getdvarint(#"zm_debug_ee", 0)) {
                 if (getdvarint(#"zm_debug_ee", 0)) {
-                    if (getdvarint(#"zm_debug_ee", 0)) {
-                        iprintlnbold("<unknown string>" + zone);
-                        println("<unknown string>" + zone);
-                    }
-                }
-            #/
-            self.zone = zone;
-            a_locations = struct::get_array("dog_location", "script_noteworthy");
-            var_a4cd10ea = [];
-            foreach (loc in a_locations) {
-                if (loc.targetname === self.zone + "_spawns") {
-                    if (!isdefined(var_a4cd10ea)) {
-                        var_a4cd10ea = [];
-                    } else if (!isarray(var_a4cd10ea)) {
-                        var_a4cd10ea = array(var_a4cd10ea);
-                    }
-                    if (!isinarray(var_a4cd10ea, loc)) {
-                        var_a4cd10ea[var_a4cd10ea.size] = loc;
-                    }
+                    iprintlnbold("<unknown string>" + zone);
+                    println("<unknown string>" + zone);
                 }
             }
-            loc = array::random(var_a4cd10ea);
-            var_3a253a6f = max(distance(self.origin, loc.origin) / 1000, 1);
-            self moveto(loc.origin + vectorscale((0, 0, 1), 50), var_3a253a6f, 0.2, 0.2);
-            wait(var_3a253a6f);
-            self.b_near = 0;
-            while (!self.b_near) {
-                a_players = zm_vo::function_347f7d34();
-                foreach (player in a_players) {
-                    distance = distance(player.origin, self.origin);
-                    if (distance < 300 && player cansee(self)) {
-                        self.b_near = 1;
-                    }
+        #/
+        self.zone = zone;
+        a_locations = struct::get_array("dog_location", "script_noteworthy");
+        var_a4cd10ea = [];
+        foreach (loc in a_locations) {
+            if (loc.targetname === self.zone + "_spawns") {
+                if (!isdefined(var_a4cd10ea)) {
+                    var_a4cd10ea = [];
+                } else if (!isarray(var_a4cd10ea)) {
+                    var_a4cd10ea = array(var_a4cd10ea);
                 }
-                waitframe(1);
+                if (!isinarray(var_a4cd10ea, loc)) {
+                    var_a4cd10ea[var_a4cd10ea.size] = loc;
+                }
             }
+        }
+        loc = array::random(var_a4cd10ea);
+        var_3a253a6f = max(distance(self.origin, loc.origin) / 1000, 1);
+        self moveto(loc.origin + vectorscale((0, 0, 1), 50), var_3a253a6f, 0.2, 0.2);
+        wait(var_3a253a6f);
+        self.b_near = 0;
+        while (!self.b_near) {
+            a_players = zm_vo::function_347f7d34();
+            foreach (player in a_players) {
+                distance = distance(player.origin, self.origin);
+                if (distance < 300 && player cansee(self)) {
+                    self.b_near = 1;
+                }
+            }
+            waitframe(1);
         }
     }
 }

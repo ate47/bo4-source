@@ -435,28 +435,28 @@ function add_to_player_score(points, b_add_to_total = 1, str_awarded_by = "", va
     points = zm_utility::round_up_score(points, 10);
     if (isdefined(level.var_894a83d8) && level.var_894a83d8 || var_e6e61503 || function_e31cf9d5(str_awarded_by)) {
         level thread zm_hero_weapon::function_3fe4a02e(self, points, str_awarded_by);
-    } else {
-        n_points_to_add_to_currency = bgb::add_to_player_score_override(points, str_awarded_by);
-        self.score = self.score + n_points_to_add_to_currency;
-        if (self.score > 4000000) {
-            self.score = 4000000;
-        }
-        self.pers[#"score"] = self.score;
-        self incrementplayerstat("scoreEarned", n_points_to_add_to_currency);
-        self zm_stats::function_301c4be2("boas_scoreEarned", n_points_to_add_to_currency);
-        self zm_stats::function_c0c6ab19(#"zearned", n_points_to_add_to_currency, 1);
-        level notify(#"earned_points", {#points:points, #player:self});
-        level thread zm_hero_weapon::function_3fe4a02e(self, points, str_awarded_by);
-        self contracts::increment_zm_contract(#"contract_zm_points", n_points_to_add_to_currency, #"zstandard");
-        if (zm_utility::is_standard()) {
-            self zm_stats::function_c0c6ab19(#"rush_points", n_points_to_add_to_currency);
-        }
-        if (b_add_to_total) {
-            self.score_total = self.score_total + points;
-            level.score_total = level.score_total + points;
-        }
-        self notify(#"earned_points", {#str_awarded_by:str_awarded_by, #n_points:points});
+        return;
     }
+    n_points_to_add_to_currency = bgb::add_to_player_score_override(points, str_awarded_by);
+    self.score = self.score + n_points_to_add_to_currency;
+    if (self.score > 4000000) {
+        self.score = 4000000;
+    }
+    self.pers[#"score"] = self.score;
+    self incrementplayerstat("scoreEarned", n_points_to_add_to_currency);
+    self zm_stats::function_301c4be2("boas_scoreEarned", n_points_to_add_to_currency);
+    self zm_stats::function_c0c6ab19(#"zearned", n_points_to_add_to_currency, 1);
+    level notify(#"earned_points", {#points:points, #player:self});
+    level thread zm_hero_weapon::function_3fe4a02e(self, points, str_awarded_by);
+    self contracts::increment_zm_contract(#"contract_zm_points", n_points_to_add_to_currency, #"zstandard");
+    if (zm_utility::is_standard()) {
+        self zm_stats::function_c0c6ab19(#"rush_points", n_points_to_add_to_currency);
+    }
+    if (b_add_to_total) {
+        self.score_total = self.score_total + points;
+        level.score_total = level.score_total + points;
+    }
+    self notify(#"earned_points", {#str_awarded_by:str_awarded_by, #n_points:points});
 }
 
 // Namespace zm_score/zm_score
@@ -672,7 +672,6 @@ function function_bc9de425(b_lowest_first = 0) {
             if (player.score == var_f0c1d3c2) {
                 player.var_a8da9faf = player.var_9fc3ee66;
                 player.var_9fc3ee66 = var_51639;
-            } else {
                 continue;
             }
         }

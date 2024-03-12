@@ -409,13 +409,17 @@ function private function_c9153928(entity) {
     entity.shouldreact = 1;
     if (yaw <= 45 || yaw > 315) {
         entity setblackboardattribute("_zombie_react_direction", "front");
-    } else if (yaw > 45 && yaw <= 135) {
-        entity setblackboardattribute("_zombie_react_direction", "left");
-    } else if (yaw > 135 && yaw <= 225) {
-        entity setblackboardattribute("_zombie_react_direction", "back");
-    } else {
-        entity setblackboardattribute("_zombie_react_direction", "right");
+        return;
     }
+    if (yaw > 45 && yaw <= 135) {
+        entity setblackboardattribute("_zombie_react_direction", "left");
+        return;
+    }
+    if (yaw > 135 && yaw <= 225) {
+        entity setblackboardattribute("_zombie_react_direction", "back");
+        return;
+    }
+    entity setblackboardattribute("_zombie_react_direction", "right");
 }
 
 // Namespace mp_ai_zombie/ct_ai_zombie
@@ -560,10 +564,10 @@ function private function_7c7e7339() {
     switch (self.aistate) {
     case 3:
         self.goalradius = 64;
-        break;
+        return;
     default:
         self.goalradius = 32;
-        break;
+        return;
     }
 }
 
@@ -574,9 +578,9 @@ function private function_7c7e7339() {
 function private function_d1e55248(id, value) {
     if (isdefined(value) && value) {
         self val::set(id, "allowoffnavmesh", 1);
-    } else {
-        self val::reset(id, "allowoffnavmesh");
+        return;
     }
+    self val::reset(id, "allowoffnavmesh");
 }
 
 // Namespace mp_ai_zombie/ct_ai_zombie
@@ -795,18 +799,18 @@ function private function_cc9c6a13(state) {
         if (self.var_ef59b90 === 3) {
             function_c9153928(self);
         }
-        break;
+        return;
     case 3:
         self function_d1e55248(#"hash_6e6d6ff06622efa4", 0);
         self pathmode("move allowed");
-        break;
+        return;
     case 5:
         self function_d1e55248(#"hash_5780e28b762b831a", 0);
         val::reset(#"hash_5780e28b762b831a", "ignoreall");
         self pathmode("move allowed");
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -848,9 +852,13 @@ function private function_36151fe3() {
         if (var_31e67a12 && self.isonnavmesh) {
             self function_d1e55248(#"hash_6e6d6ff06622efa4", 0);
             self.var_80780af2 = self.enemy_override.origin;
-        } else if (self.isonnavmesh && isdefined(self.enemy_override.var_acdc8d71) && !self isingoal(self.enemy_override.var_acdc8d71)) {
+            return;
+        }
+        if (self.isonnavmesh && isdefined(self.enemy_override.var_acdc8d71) && !self isingoal(self.enemy_override.var_acdc8d71)) {
             self.var_80780af2 = self.enemy_override.var_acdc8d71;
-        } else if (!self.isonnavmesh || self isatgoal()) {
+            return;
+        }
+        if (!self.isonnavmesh || self isatgoal()) {
             self function_d1e55248(#"hash_6e6d6ff06622efa4", 1);
             self pathmode("dont move", 1);
             self function_a57c34b7(self.enemy_override.origin);
@@ -870,9 +878,9 @@ function private function_36151fe3() {
                 self function_d1e55248(#"hash_6e6d6ff06622efa4", 1);
             }
         }
-    } else {
-        self.var_ef59b90 = 1;
+        return;
     }
+    self.var_ef59b90 = 1;
 }
 
 // Namespace mp_ai_zombie/ct_ai_zombie
@@ -1088,27 +1096,37 @@ function derive_damage_refs(point) {
     for (i = 0; i < level.gib_tags.size; i++) {
         if (!isdefined(closesttag)) {
             closesttag = level.gib_tags[i];
-        } else if (distancesquared(point, self gettagorigin(level.gib_tags[i])) < distancesquared(point, self gettagorigin(closesttag))) {
+            continue;
+        }
+        if (distancesquared(point, self gettagorigin(level.gib_tags[i])) < distancesquared(point, self gettagorigin(closesttag))) {
             closesttag = level.gib_tags[i];
         }
     }
     if (closesttag == "J_SpineLower" || closesttag == "J_SpineUpper" || closesttag == "J_Spine4") {
         gibserverutils::gibrightarm(self);
-    } else if (closesttag == "J_Shoulder_LE" || closesttag == "J_Elbow_LE" || closesttag == "J_Wrist_LE") {
+        return;
+    }
+    if (closesttag == "J_Shoulder_LE" || closesttag == "J_Elbow_LE" || closesttag == "J_Wrist_LE") {
         if (!gibserverutils::isgibbed(self, 16)) {
             gibserverutils::gibleftarm(self);
         }
-    } else if (closesttag == "J_Shoulder_RI" || closesttag == "J_Elbow_RI" || closesttag == "J_Wrist_RI") {
+        return;
+    }
+    if (closesttag == "J_Shoulder_RI" || closesttag == "J_Elbow_RI" || closesttag == "J_Wrist_RI") {
         if (!gibserverutils::isgibbed(self, 32)) {
             gibserverutils::gibrightarm(self);
         }
-    } else if (closesttag == "J_Hip_LE" || closesttag == "J_Knee_LE" || closesttag == "J_Ankle_LE") {
+        return;
+    }
+    if (closesttag == "J_Hip_LE" || closesttag == "J_Knee_LE" || closesttag == "J_Ankle_LE") {
         gibserverutils::gibleftleg(self);
         if (randomint(100) > 75) {
             gibserverutils::gibrightleg(self);
         }
         self function_df5afb5e(1);
-    } else if (closesttag == "J_Hip_RI" || closesttag == "J_Knee_RI" || closesttag == "J_Ankle_RI") {
+        return;
+    }
+    if (closesttag == "J_Hip_RI" || closesttag == "J_Knee_RI" || closesttag == "J_Ankle_RI") {
         gibserverutils::gibrightleg(self);
         if (randomint(100) > 75) {
             gibserverutils::gibleftleg(self);
@@ -1191,7 +1209,6 @@ function zombie_should_gib(amount, attacker, type) {
         return 0;
     case #"mod_melee":
         return 0;
-        break;
     }
     if (type == "MOD_PISTOL_BULLET" || type == "MOD_RIFLE_BULLET") {
         if (!isdefined(attacker) || !isplayer(attacker)) {
@@ -1294,9 +1311,9 @@ function damage_over_time(dmg, delay, attacker, means_of_death) {
         if (isdefined(self)) {
             if (isdefined(attacker)) {
                 self dodamage(dmg, self gettagorigin("j_neck"), attacker, self, self.damagelocation, means_of_death, 4096, self.damageweapon);
-            } else {
-                self dodamage(dmg, self gettagorigin("j_neck"));
+                continue;
             }
+            self dodamage(dmg, self gettagorigin("j_neck"));
         }
     }
 }
@@ -1310,31 +1327,31 @@ function event_handler[bhtn_action_start] function_320145f7(eventstruct) {
     switch (notify_string) {
     case #"death":
         level thread zmbaivox_playvox(self, notify_string, 1, 4);
-        break;
+        return;
     case #"pain":
         level thread zmbaivox_playvox(self, notify_string, 1, 3);
-        break;
+        return;
     case #"behind":
         level thread zmbaivox_playvox(self, notify_string, 1, 3);
-        break;
+        return;
     case #"attack_melee_notetrack":
         level thread zmbaivox_playvox(self, "attack_melee", 1, 2, 1);
-        break;
+        return;
     case #"chase_state_start":
         level thread zmbaivox_playvox(self, "sprint", 1, 2);
-        break;
+        return;
     case #"sprint":
     case #"ambient":
     case #"crawler":
     case #"teardown":
     case #"taunt":
         level thread zmbaivox_playvox(self, notify_string, 0, 1);
-        break;
+        return;
     case #"attack_melee":
-        break;
+        return;
     default:
         level thread zmbaivox_playvox(self, notify_string, 0, 2);
-        break;
+        return;
     }
 }
 

@@ -65,9 +65,9 @@ function function_c621758a() {
             if (var_e052e788 < 200) {
                 scene.scene_ents[#"prop 1"] clientfield::set("buoy_light_fx_changed", 2);
                 scene.scene_ents[#"prop 1"] function_5a6d95();
-            } else {
-                scene.scene_ents[#"prop 1"] clientfield::set("buoy_light_fx_changed", 1);
+                continue;
             }
+            scene.scene_ents[#"prop 1"] clientfield::set("buoy_light_fx_changed", 1);
         }
     }
 }
@@ -84,7 +84,7 @@ function function_5a6d95() {
             if (function_ffdbe8c2(buoy_stash) == 2) {
                 var_63ee2ffd = 1;
                 self clientfield::set("buoy_light_fx_changed", 1);
-                break;
+                return;
             }
             wait(1);
         }

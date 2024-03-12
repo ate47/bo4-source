@@ -50,7 +50,9 @@ function private function_c6b2d4d8(s_event) {
         if (s_event.weapon === getweapon(#"golden_knife")) {
             level.var_bdba6ee8[s_event.weapon] = 0.1;
             self thread aat::acquire(s_event.weapon);
-        } else if (s_event.weapon === getweapon(#"spknifeork")) {
+            return;
+        }
+        if (s_event.weapon === getweapon(#"spknifeork")) {
             level.var_bdba6ee8[s_event.weapon] = 0.2;
             self thread aat::acquire(s_event.weapon);
         }

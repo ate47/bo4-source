@@ -48,11 +48,11 @@ function grab_bonus_points_player(player) {
 // Size: 0xc4
 function function_ec014d54(player) {
     level thread function_56784293(self, player);
-    if (player !== self.var_2b5ec373) {
+    if (player !== self.e_player_owner) {
         player thread zm_powerups::powerup_vo("bonus");
-        if (isdefined(self.var_2b5ec373) && !(isdefined(self.var_2b5ec373.var_a50db39d) && self.var_2b5ec373.var_a50db39d)) {
-            self.var_2b5ec373.var_a50db39d = 1;
-            self.var_2b5ec373 zm_stats::increment_challenge_stat(#"hash_733e96c5baacb1da");
+        if (isdefined(self.e_player_owner) && !(isdefined(self.e_player_owner.var_a50db39d) && self.e_player_owner.var_a50db39d)) {
+            self.e_player_owner.var_a50db39d = 1;
+            self.e_player_owner zm_stats::increment_challenge_stat(#"hash_733e96c5baacb1da");
         }
     }
 }

@@ -163,9 +163,13 @@ function glass_exploder_init() {
         }
         if (ent.v[#"exploder"] == 201 || ent.v[#"exploder"] == 202) {
             ent thread glass_group_exploder_think();
-        } else if (ent.v[#"exploder"] >= 101 && ent.v[#"exploder"] <= 106) {
+            continue;
+        }
+        if (ent.v[#"exploder"] >= 101 && ent.v[#"exploder"] <= 106) {
             single_exploders[single_exploders.size] = ent;
-        } else if (ent.v[#"exploder"] == 301 || ent.v[#"exploder"] == 302) {
+            continue;
+        }
+        if (ent.v[#"exploder"] == 301 || ent.v[#"exploder"] == 302) {
             single_exploders[single_exploders.size] = ent;
         }
     }

@@ -143,14 +143,14 @@ function function_a2f2a9a3() {
                 var_91562d8c = array(var_91562d8c);
             }
             var_91562d8c[var_91562d8c.size] = s_spawn_loc;
-        } else {
-            if (!isdefined(var_f2a95155)) {
-                var_f2a95155 = [];
-            } else if (!isarray(var_f2a95155)) {
-                var_f2a95155 = array(var_f2a95155);
-            }
-            var_f2a95155[var_f2a95155.size] = s_spawn_loc;
+            continue;
         }
+        if (!isdefined(var_f2a95155)) {
+            var_f2a95155 = [];
+        } else if (!isarray(var_f2a95155)) {
+            var_f2a95155 = array(var_f2a95155);
+        }
+        var_f2a95155[var_f2a95155.size] = s_spawn_loc;
     }
     if (var_91562d8c.size) {
         var_d7eff26a = zm_spawner::function_20e7d186(var_91562d8c);

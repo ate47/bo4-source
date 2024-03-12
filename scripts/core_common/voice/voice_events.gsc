@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace voice_events/voice_events
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x86a24483, Offset: 0xf0
 // Size: 0xb8
 function register_handler(event, handlerfunc) {

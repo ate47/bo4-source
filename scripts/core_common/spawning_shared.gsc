@@ -170,11 +170,11 @@ function updateallspawnpoints() {
             addspawnpoints(team, level.teamspawnpoints[team], "normal");
             enablespawnpointlist("normal", util::getteammask(team));
         }
-    } else {
-        foreach (team, _ in level.teams) {
-            addspawnpoints("free", level.teamspawnpoints[team], "normal");
-            enablespawnpointlist("normal", util::getteammask(team));
-        }
+        return;
+    }
+    foreach (team, _ in level.teams) {
+        addspawnpoints("free", level.teamspawnpoints[team], "normal");
+        enablespawnpointlist("normal", util::getteammask(team));
     }
 }
 
@@ -191,10 +191,10 @@ function update_fallback_spawnpoints() {
         foreach (team, _ in level.teams) {
             addspawnpoints(team, level.player_fallback_points[team], "fallback");
         }
-    } else {
-        foreach (team, _ in level.teams) {
-            addspawnpoints("free", level.player_fallback_points[team], "fallback");
-        }
+        return;
+    }
+    foreach (team, _ in level.teams) {
+        addspawnpoints("free", level.player_fallback_points[team], "fallback");
     }
 }
 
@@ -237,7 +237,7 @@ function function_1bc642b7() {
 }
 
 // Namespace spawning/spawning_shared
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xd8a832da, Offset: 0xf90
 // Size: 0x10e
 function add_start_spawn_points(str_team, classname) {
@@ -376,15 +376,15 @@ function onspawnplayer(predictedspawn = 0) {
     }
     if (predictedspawn) {
         self function_e1a7c3d9(spawn_origin, spawn_angles);
-    } else {
-        self spawn(spawn_origin, spawn_angles);
-        self.lastspawntime = gettime();
-        if (!flag::exists("spawn_exploration_active")) {
-            self flag::init("spawn_exploration_active", 1);
-        }
-        if (!spawnresurrect && !spawnoverride) {
-            influencers::create_player_spawn_influencers(spawn_origin);
-        }
+        return;
+    }
+    self spawn(spawn_origin, spawn_angles);
+    self.lastspawntime = gettime();
+    if (!flag::exists("spawn_exploration_active")) {
+        self flag::init("spawn_exploration_active", 1);
+    }
+    if (!spawnresurrect && !spawnoverride) {
+        influencers::create_player_spawn_influencers(spawn_origin);
     }
 }
 
@@ -561,14 +561,14 @@ function clear_and_add_spawn_points(str_team, classnames, ...) {
                 team_array = array(team_array);
             }
             team_array[team_array.size] = util::get_team_mapping(vararg[index]);
-        } else {
-            if (!isdefined(classnames_array)) {
-                classnames_array = [];
-            } else if (!isarray(classnames_array)) {
-                classnames_array = array(classnames_array);
-            }
-            classnames_array[classnames_array.size] = vararg[index];
+            continue;
         }
+        if (!isdefined(classnames_array)) {
+            classnames_array = [];
+        } else if (!isarray(classnames_array)) {
+            classnames_array = array(classnames_array);
+        }
+        classnames_array[classnames_array.size] = vararg[index];
     }
     for (team_index = 0; team_index < team_array.size; team_index++) {
         for (classname_index = 0; classname_index < classnames_array[team_index].size; classname_index++) {
@@ -647,14 +647,14 @@ function private update_explored_start_spawn_points_for_team(team) {
                 }
                 if (player.team === team) {
                     set_player_explored_spawn_point(spawnpoint, player);
-                } else {
-                    clear_spawn_point_explored_for_player(spawnpoint, player);
+                    continue;
                 }
+                clear_spawn_point_explored_for_player(spawnpoint, player);
             }
             spawn_exploration_wait_for_one_frame();
         }
         if (allplayersspawned) {
-            break;
+            return;
         }
         wait(0.5);
     }
@@ -945,7 +945,7 @@ function private rebuild_spawn_points(team) {
 }
 
 // Namespace spawning/spawning_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x7c2cfe8b, Offset: 0x38e8
 // Size: 0x116
 function place_spawn_points(spawnpointname) {
@@ -1236,7 +1236,6 @@ function spawnpoint_debug() {
         adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-    LOC_000001a2:
         while (1) {
             spawnsystem_debug_command = getdvarstring(#"spawnsystem_debug_command");
             switch (spawnsystem_debug_command) {

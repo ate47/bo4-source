@@ -38,9 +38,13 @@ function private function_4c731a08(localclientnum) {
 function function_624041b1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.eyefx = util::playfxontag(localclientnum, "maps/zm_towers/fx8_boss_eye_glow", self, "tag_eye");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.eyefx = util::playfxontag(localclientnum, "maps/zm_towers/fx8_boss_eye_glow_alt", self, "tag_eye");
-    } else if (isdefined(self.eyefx)) {
+        return;
+    }
+    if (isdefined(self.eyefx)) {
         stopfx(localclientnum, self.eyefx);
     }
 }
@@ -53,9 +57,9 @@ function function_e1fb79d0(var_99c2529a, oldval, newval, bnewent, binitialsnap, 
     if (newval == 1) {
         self stoprenderoverridebundle("rob_zm_eyes_red");
         self playrenderoverridebundle(#"hash_782edffb9e72130");
-    } else {
-        self stoprenderoverridebundle(#"hash_782edffb9e72130");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_782edffb9e72130");
 }
 
 // Namespace archetype_elephant/archetype_elephant
@@ -77,7 +81,9 @@ function function_e3038292(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_5f5f6a25(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.fx = util::playfxontag(localclientnum, "maps/zm_towers/fx8_boss_attack_eye_trail", self, "tag_origin");
-    } else if (isdefined(self.fx)) {
+        return;
+    }
+    if (isdefined(self.fx)) {
         stopfx(localclientnum, self.fx);
     }
 }
@@ -89,7 +95,9 @@ function function_5f5f6a25(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_1308296f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.fx = util::playfxontag(localclientnum, "maps/zm_towers/fx8_boss_attack_eye_trail_split", self, "tag_origin");
-    } else if (isdefined(self.fx)) {
+        return;
+    }
+    if (isdefined(self.fx)) {
         stopfx(localclientnum, self.fx);
     }
 }
@@ -150,8 +158,8 @@ function function_fe0bb012(localclientnum, pos, surface, notetrack, bone) {
 function sndtowersbossarmor(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         setsoundcontext("supernicedude", "armor");
-    } else {
-        setsoundcontext("supernicedude", "");
+        return;
     }
+    setsoundcontext("supernicedude", "");
 }
 

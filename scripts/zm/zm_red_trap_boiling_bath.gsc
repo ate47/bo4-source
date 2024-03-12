@@ -137,9 +137,9 @@ function trap_damage(t_trap) {
             t_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
         self.b_trap_kill = 1;
-    } else {
-        self dodamage(n_damage, t_trap.origin);
+        return;
     }
+    self dodamage(n_damage, t_trap.origin);
 }
 
 // Namespace zm_red_trap_boiling_bath/zm_red_trap_boiling_bath
@@ -169,13 +169,17 @@ function function_49d1db63() {
 function function_922c05f() {
     if (level.var_c33299e2 < 4 && !level.var_30ec2c9a && !level.var_4a0ddedd) {
         level exploder::exploder("fxexp_trap_bath");
-    } else if (level.var_c33299e2 == 4 && !level.var_30ec2c9a || level.var_4a0ddedd) {
+        return;
+    }
+    if (level.var_c33299e2 == 4 && !level.var_30ec2c9a || level.var_4a0ddedd) {
         level function_2b2e6b4();
         level exploder::exploder("fxexp_trap_bath_bloody_lvl1");
         level exploder::exploder("exp_lgt_bath_trap");
         level exploder::stop_exploder("fxexp_trap_bath");
         level thread function_3a067395("fxexp_trap_bath_bloody_lvl1");
-    } else if (level.var_c33299e2 == 10 || level.var_30ec2c9a) {
+        return;
+    }
+    if (level.var_c33299e2 == 10 || level.var_30ec2c9a) {
         level function_2b2e6b4();
         level exploder::exploder("fxexp_trap_bath_bloody_lvl2");
         level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl1");
@@ -199,19 +203,19 @@ function function_3a067395(str_exploder) {
         level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl1_linger");
         level.var_4a0ddedd = 0;
         level exploder::stop_exploder("exp_lgt_bath_trap");
-    } else {
-        level.var_30ec2c9a = 1;
-        level exploder::exploder("fxexp_trap_bath_bloody_lvl2_linger");
-        wait(30);
-        level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl2_linger");
-        level.var_30ec2c9a = 0;
-        level.var_4a0ddedd = 1;
-        level exploder::exploder("fxexp_trap_bath_bloody_lvl1_linger");
-        wait(30);
-        level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl1_linger");
-        level.var_4a0ddedd = 0;
-        level exploder::stop_exploder("exp_lgt_bath_trap");
+        return;
     }
+    level.var_30ec2c9a = 1;
+    level exploder::exploder("fxexp_trap_bath_bloody_lvl2_linger");
+    wait(30);
+    level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl2_linger");
+    level.var_30ec2c9a = 0;
+    level.var_4a0ddedd = 1;
+    level exploder::exploder("fxexp_trap_bath_bloody_lvl1_linger");
+    wait(30);
+    level exploder::stop_exploder("fxexp_trap_bath_bloody_lvl1_linger");
+    level.var_4a0ddedd = 0;
+    level exploder::stop_exploder("exp_lgt_bath_trap");
 }
 
 // Namespace zm_red_trap_boiling_bath/zm_red_trap_boiling_bath

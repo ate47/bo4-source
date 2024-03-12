@@ -208,7 +208,7 @@ function destructnumberrandompieces(entity, num_pieces_to_destruct = 0) {
             destructpiece(entity, piece);
             num_pieces_to_destruct--;
             if (num_pieces_to_destruct == 0) {
-                break;
+                return;
             }
         }
     }
@@ -262,7 +262,7 @@ function getpiececount(entity) {
 }
 
 // Namespace destructserverutils/destructible_character
-// Params 12, eflags: 0x0
+// Params 12, eflags: 0x1 linked
 // Checksum 0x56e629c8, Offset: 0x1078
 // Size: 0x138
 function handledamage(einflictor, eattacker, idamage, idflags, smeansofdeath, sweapon, vpoint, vdir, shitloc, psoffsettime, var_a9e3f040, modelindex) {

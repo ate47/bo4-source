@@ -118,7 +118,9 @@ function function_790e5d6() {
             #/
             self zm_utility::giveachievement_wrapper("zm_orange_bells", 0);
             var_a3404ecb = 1;
-        } else if (self.var_c4baf001 == 1) {
+            continue;
+        }
+        if (self.var_c4baf001 == 1) {
             self thread function_a0367a9();
         }
     }

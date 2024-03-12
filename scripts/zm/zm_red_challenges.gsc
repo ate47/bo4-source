@@ -260,27 +260,37 @@ function on_ai_killed(s_params) {
                     level notify(#"zombie_challenge_kill", {#e_player:s_params.eattacker});
                 }
             }
-        } else if (is_challenge_active(12)) {
+            return;
+        }
+        if (is_challenge_active(12)) {
             if (zm_loadout::is_hero_weapon(weapon)) {
                 level notify(#"kill_with_hero_weapon", {#weapon:weapon, #e_player:e_player});
             }
-        } else if (is_challenge_active(8)) {
+            return;
+        }
+        if (is_challenge_active(8)) {
             if (isdefined(weapon) && zm_weapons::is_wonder_weapon(weapon)) {
                 level notify(#"kill_with_god_hand", {#e_player:e_player});
             }
-        } else if (is_challenge_active(9)) {
+            return;
+        }
+        if (is_challenge_active(9)) {
             if (isdefined(weapon) && weapon.inventorytype == #"offhand") {
                 level notify(#"kill_with_equipment", {#means_of_death:means_of_death, #e_player:e_player});
             }
-        } else if (is_challenge_active(13)) {
+            return;
+        }
+        if (is_challenge_active(13)) {
             if (means_of_death == "MOD_MELEE" || isdefined(weapon) && #"zhield_zpear_dw" === weapon.name && "MOD_IMPACT" === means_of_death) {
                 level notify(#"player_melees_zombie", {#e_player:e_player});
             }
-        } else if (is_challenge_active(1) || is_challenge_active(2) || is_challenge_active(3) || is_challenge_active(4) || is_challenge_active(5) || is_challenge_active(6) || is_challenge_active(7)) {
-            level thread function_5e882c6f(e_player, self.origin);
-        } else {
-            function_4ca8c034(e_player, weapon, str_hit_loc, means_of_death);
+            return;
         }
+        if (is_challenge_active(1) || is_challenge_active(2) || is_challenge_active(3) || is_challenge_active(4) || is_challenge_active(5) || is_challenge_active(6) || is_challenge_active(7)) {
+            level thread function_5e882c6f(e_player, self.origin);
+            return;
+        }
+        function_4ca8c034(e_player, weapon, str_hit_loc, means_of_death);
     }
 }
 
@@ -296,7 +306,9 @@ function function_4ca8c034(attacker, weapon, hit_loc, means_of_death) {
         if (means_of_death == "MOD_MELEE" || isdefined(weapon) && #"zhield_zpear_dw" === weapon.name && "MOD_IMPACT" === means_of_death) {
             level notify(#"player_melees_zombie", {#e_player:attacker});
         }
-    } else if (is_challenge_active(0)) {
+        return;
+    }
+    if (is_challenge_active(0)) {
         if (isdefined(weapon)) {
             if (weapon.name == #"zhield_zpear_dw" || weapon.name == #"zhield_zpear_turret") {
                 level notify(#"shield_and_spear_damage", {#e_player:attacker});
@@ -404,20 +416,25 @@ function function_f3059d3b(e_player) {
     if (!e_player zm_red_util::can_see(self.origin, 0, -1)) {
         self sethintstringforplayer(e_player, "");
         return 0;
-    } else if (isdefined(wpn_current.isriotshield) && wpn_current.isriotshield) {
+    }
+    if (isdefined(wpn_current.isriotshield) && wpn_current.isriotshield) {
         self sethintstringforplayer(e_player, "");
         return 0;
-    } else if (level.var_2dffd020 == 0) {
+    }
+    if (level.var_2dffd020 == 0) {
         self sethintstringforplayer(e_player, #"hash_4aa00a9bc891ac28");
         return 1;
-    } else if (zm_trial_disable_buys::is_active()) {
+    }
+    if (zm_trial_disable_buys::is_active()) {
         self sethintstringforplayer(e_player, #"hash_55d25caf8f7bbb2f");
         return 1;
-    } else if (level.var_2dffd020 == 1) {
+    }
+    if (level.var_2dffd020 == 1) {
         str_prompt = zm_utility::function_d6046228(#"hash_6219013948376d70", #"hash_27cdd9110057055c");
         self sethintstringforplayer(e_player, str_prompt, level.var_d3a8f03b);
         return 1;
-    } else if (level.var_2dffd020 == 2) {
+    }
+    if (level.var_2dffd020 == 2) {
         if (level.var_c6ab748f < 0) {
             if (e_player zm_score::can_player_purchase(level.var_48442709)) {
                 str_prompt = zm_utility::function_d6046228(#"hash_7b3248a20689a28d", #"hash_10f3f07d744bca73");
@@ -429,10 +446,9 @@ function function_f3059d3b(e_player) {
             self sethintstringforplayer(e_player, #"hash_21bb55a0a8972155");
         }
         return 1;
-    } else {
-        self sethintstringforplayer(e_player, "");
-        return 0;
     }
+    self sethintstringforplayer(e_player, "");
+    return 0;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -471,7 +487,9 @@ function function_5804d6ff() {
                 level.var_c6ab748f = 0;
                 e_player thread zm_audio::create_and_play_dialog(#"tribute", #"initiate");
             }
-        } else if (level.var_2dffd020 == 2 && level.var_c6ab748f < 0) {
+            continue;
+        }
+        if (level.var_2dffd020 == 2 && level.var_c6ab748f < 0) {
             if (e_player zm_score::can_player_purchase(level.var_48442709)) {
                 e_player playsound(#"hash_73188c838e8d29c7");
                 e_player thread zm_score::minus_to_player_score(level.var_48442709);
@@ -506,7 +524,7 @@ function setup_models() {
         s_info.var_7b63dcba = (0, 0, 0);
         v_dir = anglestoforward(s_info.angles);
         v_pos = s_info.var_1a34d8e + v_dir * 85;
-        s_info.var_8f683ef8 = groundtrace(v_pos, v_pos + vectorscale((0, 0, -1), 400), 0, s_info.var_99f92cf4)[#"position"];
+        s_info.var_8f683ef8 = groundtrace(v_pos, v_pos + vectorscale((0, 0, -1), 400), 0, s_info.mdl_bowl)[#"position"];
     }
     waitframe(1);
     var_e668d197 = 1;
@@ -809,8 +827,7 @@ function function_8d1fd2d8() {
 // Size: 0x18c
 function function_4a88eb80() {
     level endon(#"hash_61075af70fbd9082");
-    var_53a794b0 = gettime() / 1000;
-    while (1) {
+    for (var_53a794b0 = gettime() / 1000; 1; var_53a794b0 = n_time) {
         wait(2);
         n_time = gettime() / 1000;
         foreach (player in getplayers()) {
@@ -826,11 +843,10 @@ function function_4a88eb80() {
             if (b_reward) {
                 player zm_red_util::function_9ab191d3(0);
                 player namespace_f8f28e08::function_53a333a8(level.s_active_challenge.n_id);
-            } else {
-                player zm_red_util::function_9ab191d3(1);
+                continue;
             }
+            player zm_red_util::function_9ab191d3(1);
         }
-        var_53a794b0 = n_time;
     }
 }
 
@@ -952,9 +968,9 @@ function function_1d60215() {
             dt = n_time - player.var_f94035ca;
             if (isdefined(player.var_b05f25ad) && player.var_b05f25ad && dt <= 2) {
                 player namespace_f8f28e08::function_53a333a8(level.s_active_challenge.n_id);
-            } else {
-                player.var_f94035ca = n_time;
+                continue;
             }
+            player.var_f94035ca = n_time;
         }
         wait(2);
     }
@@ -1223,14 +1239,14 @@ function function_bf582bc8(var_ecffa2a8, n_damage) {
     n_start_health = self.health;
     while (is_challenge_active(var_ecffa2a8)) {
         if (self laststand::player_is_in_laststand()) {
-            break;
+            return;
         }
         if (self.sessionstate === "spectator") {
-            break;
+            return;
         }
         if (self.health == self.maxhealth) {
             self namespace_f8f28e08::function_53a333a8(level.s_active_challenge.n_id, undefined, n_damage);
-            break;
+            return;
         } else {
             n_delta = self.health - n_start_health;
             if (n_delta >= 50) {
@@ -1267,13 +1283,17 @@ function function_836d2b5b() {
         }
         if (player.var_6b3806e8 == 0) {
             player thread zm_vo::vo_say(#"hash_52ef2f977320c648", 0, 1, 9999, 1, 1, 1);
-        } else if (player.var_6b3806e8 <= 0.05) {
-            player thread zm_vo::vo_say(#"hash_dc8a9f0c8308e91", 0, 1, 9999, 1, 1, 1);
-        } else if (player.var_6b3806e8 <= 0.3) {
-            player thread zm_vo::vo_say(#"hash_5cf9d72bd1aa0071", 0, 1, 9999, 1, 1, 1);
-        } else {
-            player thread zm_vo::vo_say(#"hash_2d2de7c6c02699d2", 0, 1, 9999, 1, 1, 1);
+            continue;
         }
+        if (player.var_6b3806e8 <= 0.05) {
+            player thread zm_vo::vo_say(#"hash_dc8a9f0c8308e91", 0, 1, 9999, 1, 1, 1);
+            continue;
+        }
+        if (player.var_6b3806e8 <= 0.3) {
+            player thread zm_vo::vo_say(#"hash_5cf9d72bd1aa0071", 0, 1, 9999, 1, 1, 1);
+            continue;
+        }
+        player thread zm_vo::vo_say(#"hash_2d2de7c6c02699d2", 0, 1, 9999, 1, 1, 1);
     }
 }
 
@@ -1378,7 +1398,9 @@ function pause_challenges(b_pause) {
             player zm_red_util::function_7e617e33(0);
         }
         level.var_dc6fce4f = 1;
-    } else if (isdefined(level.var_dc6fce4f) && level.var_dc6fce4f) {
+        return;
+    }
+    if (isdefined(level.var_dc6fce4f) && level.var_dc6fce4f) {
         foreach (player in a_players) {
             if (is_active()) {
                 player zm_red_util::function_b4759cf8();

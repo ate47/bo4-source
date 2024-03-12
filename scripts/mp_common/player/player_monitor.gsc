@@ -10,7 +10,7 @@
 #namespace player_monitor;
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbad82acf, Offset: 0xd0
 // Size: 0x1bc
 function monitor() {
@@ -37,27 +37,35 @@ function monitor() {
 }
 
 // Namespace player_monitor/player_monitor
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9feaf4b0, Offset: 0x298
 // Size: 0x1a2
 function function_d35f877a(player, weapon, statname, value = 0) {
     if (isdefined(player.var_3dc66299)) {
         if (statname == #"shots") {
             player.var_3dc66299.shots = player.var_3dc66299.shots + value;
-        } else if (statname == #"hits") {
+            return;
+        }
+        if (statname == #"hits") {
             player.var_3dc66299.hits = player.var_3dc66299.hits + value;
-        } else if (statname == #"kills") {
+            return;
+        }
+        if (statname == #"kills") {
             player.var_3dc66299.kills = player.var_3dc66299.kills + value;
-        } else if (statname == #"deathsduringuse") {
+            return;
+        }
+        if (statname == #"deathsduringuse") {
             player.var_3dc66299.deathsduringuse = player.var_3dc66299.deathsduringuse + value;
-        } else if (statname == #"headshots") {
+            return;
+        }
+        if (statname == #"headshots") {
             player.var_3dc66299.headshots = player.var_3dc66299.headshots + value;
         }
     }
 }
 
 // Namespace player_monitor/player_monitor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x905ff2d, Offset: 0x448
 // Size: 0x4c
 function function_36185795(params) {
@@ -68,7 +76,7 @@ function function_36185795(params) {
 }
 
 // Namespace player_monitor/player_monitor
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x47da9527, Offset: 0x4a0
 // Size: 0x3da
 function private function_43e771ee(reason) {
@@ -116,7 +124,7 @@ function private function_43e771ee(reason) {
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x426591ef, Offset: 0x888
 // Size: 0x206
 function private function_fa444840() {
@@ -136,24 +144,23 @@ function private function_fa444840() {
         result = self waittill(#"weapon_change_complete", #"death");
         if (result._notify == #"death") {
             self function_43e771ee(result._notify);
-            break;
-        } else {
-            self function_43e771ee(result._notify);
-            if (isdefined(result.weapon)) {
-                self.var_3dc66299.currentweapon = result.weapon;
-                self.var_3dc66299.starttime = function_f8d53445();
-                self.var_3dc66299.shots = 0;
-                self.var_3dc66299.hits = 0;
-                self.var_3dc66299.kills = 0;
-                self.var_3dc66299.deathsduringuse = 0;
-                self.var_3dc66299.headshots = 0;
-            }
+            return;
+        }
+        self function_43e771ee(result._notify);
+        if (isdefined(result.weapon)) {
+            self.var_3dc66299.currentweapon = result.weapon;
+            self.var_3dc66299.starttime = function_f8d53445();
+            self.var_3dc66299.shots = 0;
+            self.var_3dc66299.hits = 0;
+            self.var_3dc66299.kills = 0;
+            self.var_3dc66299.deathsduringuse = 0;
+            self.var_3dc66299.headshots = 0;
         }
     }
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xec0d8697, Offset: 0xa98
 // Size: 0x13e
 function private breadcrumbs() {
@@ -178,7 +185,7 @@ function private breadcrumbs() {
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xbd5a05fc, Offset: 0xbe0
 // Size: 0x3c2
 function private travel_dist() {
@@ -228,7 +235,7 @@ function private travel_dist() {
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x646fbfd3, Offset: 0xfb0
 // Size: 0x160
 function private wall_run() {
@@ -241,20 +248,20 @@ function private wall_run() {
         notification = undefined;
         notification = self waittill(#"wallrun_begin", #"death", #"disconnect", #"stop_player_monitor_wall_run");
         if (notification._notify == "death") {
-            break;
+            return;
         }
         self.lastwallrunstarttime = gettime();
         notification = undefined;
         notification = self waittill(#"wallrun_end", #"death", #"disconnect", #"stop_player_monitor_wall_run");
         self.timespentwallrunninginlife = self.timespentwallrunninginlife + gettime() - self.lastwallrunstarttime;
         if (notification._notify == "death") {
-            break;
+            return;
         }
     }
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xcacbd12b, Offset: 0x1118
 // Size: 0x160
 function private swimming() {
@@ -267,20 +274,20 @@ function private swimming() {
         notification = undefined;
         notification = self waittill(#"swimming_begin", #"death", #"disconnect", #"stop_player_monitor_swimming");
         if (notification._notify == "death") {
-            break;
+            return;
         }
         self.lastswimmingstarttime = gettime();
         notification = undefined;
         notification = self waittill(#"swimming_end", #"death", #"disconnect", #"stop_player_monitor_swimming");
         self.timespentswimminginlife = self.timespentswimminginlife + gettime() - self.lastswimmingstarttime;
         if (notification._notify == "death") {
-            break;
+            return;
         }
     }
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xf42c5aed, Offset: 0x1280
 // Size: 0x154
 function private slide() {
@@ -293,20 +300,20 @@ function private slide() {
         notification = undefined;
         notification = self waittill(#"slide_begin", #"death", #"disconnect", #"stop_player_monitor_slide");
         if (notification._notify == "death") {
-            break;
+            return;
         }
         self.lastslidestarttime = gettime();
         self.numberofslidesinlife++;
         notification = undefined;
         notification = self waittill(#"slide_end", #"death", #"disconnect", #"stop_player_monitor_slide");
         if (notification._notify == "death") {
-            break;
+            return;
         }
     }
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x37e27a91, Offset: 0x13e0
 // Size: 0x154
 function private doublejump() {
@@ -319,20 +326,20 @@ function private doublejump() {
         notification = undefined;
         notification = self waittill(#"doublejump_begin", #"death", #"disconnect", #"stop_player_monitor_doublejump");
         if (notification._notify == "death") {
-            break;
+            return;
         }
         self.lastdoublejumpstarttime = gettime();
         self.numberofdoublejumpsinlife++;
         notification = undefined;
         notification = self waittill(#"doublejump_end", #"death", #"disconnect", #"stop_player_monitor_doublejump");
         if (notification._notify == "death") {
-            break;
+            return;
         }
     }
 }
 
 // Namespace player_monitor/player_monitor
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x40dd465a, Offset: 0x1540
 // Size: 0xe6
 function private inactivity() {

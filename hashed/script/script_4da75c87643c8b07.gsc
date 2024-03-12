@@ -30,9 +30,9 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (eventstruct.ent.targetname === "blast_door") {
         if (eventstruct.state == 0) {
             eventstruct.ent thread function_feb37b9f("red");
-        } else {
-            eventstruct.ent thread function_feb37b9f("green");
+            return;
         }
+        eventstruct.ent thread function_feb37b9f("green");
     }
 }
 

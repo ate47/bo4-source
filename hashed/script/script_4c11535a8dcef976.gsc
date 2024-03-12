@@ -40,7 +40,9 @@ class class_727456f3 {
         if (!self flag::get("elevator_moving")) {
             if (self.m_s_bundle.var_46d9acb0 == "auto_up" || self.m_s_bundle.var_46d9acb0 == "auto_down") {
                 function_f81a904b(var_c0a091bc);
-            } else if (self.var_de7ae77 > 1) {
+                return;
+            }
+            if (self.var_de7ae77 > 1) {
                 function_f81a904b(var_c0a091bc);
             }
         }
@@ -54,7 +56,9 @@ class class_727456f3 {
         if (!self flag::get("elevator_moving")) {
             if (self.m_s_bundle.var_46d9acb0 == "auto_up" || self.m_s_bundle.var_46d9acb0 == "auto_down") {
                 function_b6d6d989(var_c0a091bc);
-            } else if (self.var_de7ae77 < self.m_s_bundle.var_72b13147) {
+                return;
+            }
+            if (self.var_de7ae77 < self.m_s_bundle.var_72b13147) {
                 function_b6d6d989(var_c0a091bc);
             }
         }
@@ -176,7 +180,9 @@ class class_727456f3 {
         wait(isdefined(self.m_s_bundle.var_82e65b20) ? self.m_s_bundle.var_82e65b20 : 0);
         if (isdefined(self.m_s_bundle.var_fd4a26f0) && self.m_s_bundle.var_fd4a26f0 && self.m_s_bundle.var_46d9acb0 == "auto_up") {
             thread function_6ff61192(1);
-        } else if (self.m_s_bundle.var_46d9acb0 == "up_and_down") {
+            return;
+        }
+        if (self.m_s_bundle.var_46d9acb0 == "up_and_down") {
             if (self.var_7c4021f5.size >= 1) {
                 var_c0a091bc = array::pop_front(self.var_7c4021f5);
                 if (var_c0a091bc < self.var_de7ae77) {
@@ -383,7 +389,9 @@ class class_727456f3 {
             if (isdefined(self.var_10b20309) && isdefined(var_e6ad4793) && var_e6ad4793) {
                 self.var_10b20309.mdl_gameobject.interactteam = #"any";
                 self.var_10b20309 gameobjects::enable_object();
-            } else if (!(isdefined(var_e6ad4793) && var_e6ad4793)) {
+                return;
+            }
+            if (!(isdefined(var_e6ad4793) && var_e6ad4793)) {
                 function_a94c7265(var_c0a091bc);
             }
             return;
@@ -481,7 +489,7 @@ class class_727456f3 {
                 self.var_10b20309.mdl_gameobject.interactteam = #"any";
                 self.var_10b20309 gameobjects::enable_object();
                 thread function_64d6a132(self.var_10b20309, 0, 1);
-                break;
+                return;
             }
             waitframe(1);
         }
@@ -707,7 +715,9 @@ function function_a7d817a6() {
     foreach (s_instance in var_78f0e5f1) {
         if (s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_up" || s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_down") {
             thread [[ s_instance.var_1313d6ba ]]->function_cae3f0e7();
-        } else if (s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "up_and_down") {
+            continue;
+        }
+        if (s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "up_and_down") {
             var_af8a8a63 = struct::get_array("elevator_button_inside", "targetname");
             var_d3c75026 = struct::get_array("elevator_button_call", "targetname");
             foreach (var_20aecb28 in var_af8a8a63) {

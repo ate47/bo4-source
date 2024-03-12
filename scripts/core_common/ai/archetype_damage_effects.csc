@@ -281,16 +281,16 @@ function actor_fire_fx(localclientnum, value, burningduration) {
             }
         }
         self.activefx = [];
-        break;
+        return;
     case 1:
         self thread _burnbody(localclientnum);
-        break;
+        return;
     case 2:
         self thread _burnbody(localclientnum);
-        break;
+        return;
     case 3:
         self thread _burnbody(localclientnum, "smolder_");
-        break;
+        return;
     }
 }
 
@@ -314,13 +314,13 @@ function actor_char(localclientnum, oldval, newval, bnewent, binitialsnap, field
     switch (newval) {
     case 1:
         self thread actorcharrampto(localclientnum, 1);
-        break;
+        return;
     case 0:
         self mapshaderconstant(localclientnum, 0, "scriptVector0", 0);
-        break;
+        return;
     case 2:
         self mapshaderconstant(localclientnum, 0, "scriptVector0", maturemask * 1);
-        break;
+        return;
     }
 }
 

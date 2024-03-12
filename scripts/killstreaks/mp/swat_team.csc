@@ -87,7 +87,9 @@ function function_92ec578c(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_8fa6561f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.zmpowerupinstakill_introduction = util::playfxontag(localclientnum, "player/fx8_plyr_shocked_3p", self, "j_spineupper");
-    } else if (isdefined(self.zmpowerupinstakill_introduction)) {
+        return;
+    }
+    if (isdefined(self.zmpowerupinstakill_introduction)) {
         stopfx(localclientnum, self.zmpowerupinstakill_introduction);
     }
 }

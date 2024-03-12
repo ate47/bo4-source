@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19066028, Offset: 0x118
 // Size: 0x5e
 function __init__() {
@@ -51,7 +51,7 @@ function function_2ba5e3e6() {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1f7286a, Offset: 0x1f8
 // Size: 0x7c
 function function_582e5d7c() {
@@ -59,7 +59,7 @@ function function_582e5d7c() {
 }
 
 // Namespace teams/team_assignment
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xeafeb618, Offset: 0x280
 // Size: 0x1f0
 function function_ee150fcc(team, team_players) {
@@ -87,7 +87,7 @@ function function_ee150fcc(team, team_players) {
 }
 
 // Namespace teams/team_assignment
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xc2299f3d, Offset: 0x478
 // Size: 0x9e
 function private function_f18da875(platoon, player_counts) {
@@ -100,7 +100,7 @@ function private function_f18da875(platoon, player_counts) {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf466634f, Offset: 0x520
 // Size: 0x252
 function function_efe5a681(team) {
@@ -138,7 +138,7 @@ function function_efe5a681(team) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7bb79739, Offset: 0x780
 // Size: 0x10a
 function function_ccb3bc7a() {
@@ -157,7 +157,7 @@ function function_ccb3bc7a() {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a2f04b8, Offset: 0x898
 // Size: 0x1a2
 function function_b919f6aa(status) {
@@ -183,7 +183,7 @@ function function_b919f6aa(status) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xff3cb8dc, Offset: 0xa48
 // Size: 0xa2
 function function_5c389625() {
@@ -199,7 +199,7 @@ function function_5c389625() {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x46122ff1, Offset: 0xaf8
 // Size: 0x192
 function function_5d02dd86(party) {
@@ -225,7 +225,7 @@ function function_5d02dd86(party) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x63eaaca1, Offset: 0xc98
 // Size: 0x160
 function private function_650d105d() {
@@ -254,7 +254,7 @@ function private function_650d105d() {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x93c810e2, Offset: 0xe00
 // Size: 0x9c
 function private function_75daeb56(party) {
@@ -271,7 +271,7 @@ function private function_75daeb56(party) {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe0648e22, Offset: 0xea8
 // Size: 0xa2
 function private function_868b679c(party) {
@@ -286,7 +286,7 @@ function private function_868b679c(party) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xefe8ca61, Offset: 0xf58
 // Size: 0x8a
 function private function_1e545bc7() {
@@ -301,7 +301,7 @@ function private function_1e545bc7() {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc450f125, Offset: 0xff0
 // Size: 0x42
 function function_bec6e9a() {
@@ -312,7 +312,7 @@ function function_bec6e9a() {
 }
 
 // Namespace teams/team_assignment
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x844d1522, Offset: 0x1040
 // Size: 0x100
 function function_b55ab4b3(comingfrommenu, var_4c542e39) {
@@ -334,7 +334,7 @@ function function_b55ab4b3(comingfrommenu, var_4c542e39) {
 }
 
 // Namespace teams/team_assignment
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x847c6e75, Offset: 0x1148
 // Size: 0x118
 function function_d22a4fbb(comingfrommenu, var_4c542e39) {
@@ -359,7 +359,7 @@ function function_d22a4fbb(comingfrommenu, var_4c542e39) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd9859199, Offset: 0x1268
 // Size: 0xbc
 function teamscoresequal() {
@@ -367,7 +367,9 @@ function teamscoresequal() {
     foreach (team, _ in level.teams) {
         if (!isdefined(score)) {
             score = getteamscore(team);
-        } else if (score != getteamscore(team)) {
+            continue;
+        }
+        if (score != getteamscore(team)) {
             return 0;
         }
     }
@@ -375,7 +377,7 @@ function teamscoresequal() {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2fcf7703, Offset: 0x1330
 // Size: 0xae
 function teamwithlowestscore() {
@@ -390,7 +392,7 @@ function teamwithlowestscore() {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6fb18401, Offset: 0x13e8
 // Size: 0x7a
 function pickteamfromscores(teams) {
@@ -404,7 +406,7 @@ function pickteamfromscores(teams) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1158f57, Offset: 0x1470
 // Size: 0xce
 function get_splitscreen_team() {
@@ -427,7 +429,7 @@ function get_splitscreen_team() {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf2be96c7, Offset: 0x1548
 // Size: 0xb2
 function teamplayercountsequal(playercounts) {
@@ -435,7 +437,9 @@ function teamplayercountsequal(playercounts) {
     foreach (team, _ in level.teams) {
         if (!isdefined(count)) {
             count = playercounts[team];
-        } else if (count != playercounts[team]) {
+            continue;
+        }
+        if (count != playercounts[team]) {
             return 0;
         }
     }
@@ -443,7 +447,7 @@ function teamplayercountsequal(playercounts) {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8ba8f060, Offset: 0x1608
 // Size: 0xb8
 function function_d078493a(playercounts) {
@@ -459,7 +463,7 @@ function function_d078493a(playercounts) {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb7de8c3f, Offset: 0x16c8
 // Size: 0x10
 function function_321f8eb5(player) {
@@ -467,7 +471,7 @@ function function_321f8eb5(player) {
 }
 
 // Namespace teams/team_assignment
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x90b44a66, Offset: 0x16e0
 // Size: 0xce
 function function_a3e209ba(teamname, comingfrommenu) {
@@ -502,7 +506,7 @@ function function_a3e209ba(teamname, comingfrommenu) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfbb4272b, Offset: 0x17b8
 // Size: 0x1fe
 function function_7d93567f() {
@@ -534,7 +538,7 @@ function function_7d93567f() {
 }
 
 // Namespace teams/team_assignment
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2b8dc4ff, Offset: 0x19c0
 // Size: 0x282
 function private function_94478182(distribution) {
@@ -569,7 +573,7 @@ function private function_94478182(distribution) {
 }
 
 // Namespace teams/team_assignment
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xeca37c2, Offset: 0x1c50
 // Size: 0x13e
 function function_b25f48bf(for_team, var_a9ab69de, var_d9438b7, var_ed0a1ecc) {
@@ -594,7 +598,7 @@ function function_b25f48bf(for_team, var_a9ab69de, var_d9438b7, var_ed0a1ecc) {
 }
 
 // Namespace teams/team_assignment
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xec75617d, Offset: 0x1d98
 // Size: 0xb6
 function private function_78db0e06(var_659f7dc3, var_5002c793) {
@@ -606,7 +610,7 @@ function private function_78db0e06(var_659f7dc3, var_5002c793) {
 }
 
 // Namespace teams/team_assignment
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd602e, Offset: 0x1e58
 // Size: 0x4b4
 function function_a9822793() {
@@ -631,8 +635,7 @@ function function_a9822793() {
                 if (team == #"none") {
                     continue;
                 }
-                current_count = level.maxteamplayers - var_a787dfe7;
-                while (current_count < level.maxteamplayers) {
+                for (current_count = level.maxteamplayers - var_a787dfe7; current_count < level.maxteamplayers; current_count = current_count + function_78db0e06(var_6f782d8f, team)) {
                     var_6f782d8f = function_b25f48bf(team, var_a787dfe7, distribution[platoon], var_ed0a1ecc[platoon]);
                     if (!isdefined(var_6f782d8f)) {
                         break;
@@ -653,7 +656,6 @@ function function_a9822793() {
                             }
                         }
                     }
-                    current_count = current_count + function_78db0e06(var_6f782d8f, team);
                 }
                 var_75aa1f3c[index] = #"none";
             }

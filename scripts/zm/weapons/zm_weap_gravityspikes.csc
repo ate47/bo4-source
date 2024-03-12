@@ -125,20 +125,20 @@ function gravity_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
         if (isdefined(self) && isdefined(self.b_gravity_trap_fx) && self.b_gravity_trap_fx) {
             self.n_gravity_trap_fx = util::playfxontag(localclientnum, level._effect[#"gravityspikes_trap_loop"], self, "tag_origin");
         }
-    } else {
-        self notify(#"vortex_stop");
-        self.b_gravity_trap_fx = undefined;
-        if (isdefined(self.n_gravity_trap_fx)) {
-            deletefx(localclientnum, self.n_gravity_trap_fx, 1);
-            self.n_gravity_trap_fx = undefined;
-        }
-        if (isdefined(self.var_cacf63a9)) {
-            self playsound(0, #"hash_5d0917b44402f070");
-            self stoploopsound(self.var_cacf63a9);
-        }
-        arrayremovevalue(level.a_mdl_gravity_traps, self);
-        util::playfxontag(localclientnum, level._effect[#"gravityspikes_trap_end"], self, "tag_origin");
+        return;
     }
+    self notify(#"vortex_stop");
+    self.b_gravity_trap_fx = undefined;
+    if (isdefined(self.n_gravity_trap_fx)) {
+        deletefx(localclientnum, self.n_gravity_trap_fx, 1);
+        self.n_gravity_trap_fx = undefined;
+    }
+    if (isdefined(self.var_cacf63a9)) {
+        self playsound(0, #"hash_5d0917b44402f070");
+        self stoploopsound(self.var_cacf63a9);
+    }
+    arrayremovevalue(level.a_mdl_gravity_traps, self);
+    util::playfxontag(localclientnum, level._effect[#"gravityspikes_trap_end"], self, "tag_origin");
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
@@ -148,7 +148,9 @@ function gravity_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, 
 function gravity_trap_spike_spark(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.spark_fx_id = util::playfxontag(localclientnum, level._effect[#"gravity_trap_spike_spark"], self, "tag_origin");
-    } else if (isdefined(self.spark_fx_id)) {
+        return;
+    }
+    if (isdefined(self.spark_fx_id)) {
         deletefx(localclientnum, self.spark_fx_id, 1);
     }
 }
@@ -160,7 +162,9 @@ function gravity_trap_spike_spark(localclientnum, oldval, newval, bnewent, binit
 function gravity_trap_location(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.fx_id_location = util::playfxontag(localclientnum, level._effect[#"gravityspikes_location"], self, "tag_origin");
-    } else if (isdefined(self.fx_id_location)) {
+        return;
+    }
+    if (isdefined(self.fx_id_location)) {
         deletefx(localclientnum, self.fx_id_location, 1);
         self.fx_id_location = undefined;
     }
@@ -226,7 +230,7 @@ function ragdoll_impact_watch(localclientnum) {
                 }
                 self hide();
             }
-            break;
+            return;
         }
         v_prev_origin = self.origin;
         n_prev_speed = n_speed;
@@ -250,7 +254,9 @@ function play_sparky_beam_fx(localclientnum, oldval, newval, bnewent, binitialsn
         if (isdefined(mdl_gravity_trap)) {
             self.e_sparky_beam = beamlaunch(localclientnum, mdl_gravity_trap, "tag_origin", self, "j_spineupper", "electric_lightning_dg4_trap");
         }
-    } else if (isdefined(self.e_sparky_beam)) {
+        return;
+    }
+    if (isdefined(self.e_sparky_beam)) {
         beamkill(localclientnum, self.e_sparky_beam);
     }
 }
@@ -273,19 +279,19 @@ function sparky_zombie_fx_cb(localclientnum, oldval, newval, bnewent, binitialsn
         if (isdefined(self.var_499b8f7)) {
             setfxignorepause(localclientnum, self.var_499b8f7, 1);
         }
-    } else {
-        if (isdefined(self.var_16dc5d7c)) {
-            deletefx(localclientnum, self.var_16dc5d7c, 1);
-            self.var_16dc5d7c = undefined;
-        }
-        if (isdefined(self.var_499b8f7)) {
-            deletefx(localclientnum, self.var_499b8f7, 1);
-            self.var_499b8f7 = undefined;
-        }
-        if (isdefined(self.sparky_loop_snd)) {
-            self stoploopsound(self.sparky_loop_snd);
-            self.sparky_loop_snd = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_16dc5d7c)) {
+        deletefx(localclientnum, self.var_16dc5d7c, 1);
+        self.var_16dc5d7c = undefined;
+    }
+    if (isdefined(self.var_499b8f7)) {
+        deletefx(localclientnum, self.var_499b8f7, 1);
+        self.var_499b8f7 = undefined;
+    }
+    if (isdefined(self.sparky_loop_snd)) {
+        self stoploopsound(self.sparky_loop_snd);
+        self.sparky_loop_snd = undefined;
     }
 }
 
@@ -299,12 +305,12 @@ function sparky_zombie_trail_fx_cb(localclientnum, oldval, newval, bnewent, bini
         if (isdefined(self) && isdefined(self.n_trail_fx)) {
             setfxignorepause(localclientnum, self.n_trail_fx, 1);
         }
-    } else {
-        if (isdefined(self.n_trail_fx)) {
-            deletefx(localclientnum, self.n_trail_fx, 1);
-        }
-        self.n_trail_fx = undefined;
+        return;
     }
+    if (isdefined(self.n_trail_fx)) {
+        deletefx(localclientnum, self.n_trail_fx, 1);
+    }
+    self.n_trail_fx = undefined;
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes

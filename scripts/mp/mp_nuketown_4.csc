@@ -142,8 +142,7 @@ function nuked_population_sign_think(localclientnum) {
                 players[players.size] = mannequin;
             }
         }
-        dial = ones + tens * 10;
-        while (level.nuketown_population < dial) {
+        for (dial = ones + tens * 10; level.nuketown_population < dial; dial = ones + tens * 10) {
             ones--;
             if (ones < 0) {
                 ones = 9;
@@ -152,7 +151,6 @@ function nuked_population_sign_think(localclientnum) {
             }
             var_3c0c17f2 rotateroll(0 - step, time);
             var_3c0c17f2 waittill(#"rotatedone");
-            dial = ones + tens * 10;
         }
         while (level.nuketown_population > dial) {
             ones++;
@@ -193,21 +191,21 @@ function dom_flag_base_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     }
 }
 
@@ -223,21 +221,21 @@ function dom_flag_cap_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     }
 }
 

@@ -149,9 +149,9 @@ function getplayer(params) {
             }
             ratreportcommandresult(params._id, 0, "<unknown string>");
             wait(1);
-        } else {
-            return util::gethostplayer();
+            return;
         }
+        return util::gethostplayer();
     #/
 }
 
@@ -271,9 +271,9 @@ function function_be6e2f9f(params) {
         player = getplayer(params);
         if (isdefined(params.amount)) {
             player dodamage(int(params.amount), player getorigin());
-        } else {
-            player dodamage(1, player getorigin());
+            return;
         }
+        player dodamage(1, player getorigin());
     #/
 }
 
@@ -363,9 +363,8 @@ function function_a6d4d86b(params) {
     /#
         if (isdefined(params.var_185699f8)) {
             return getnumconnectedplayers(1);
-        } else {
-            return getnumconnectedplayers(0);
         }
+        return getnumconnectedplayers(0);
     #/
 }
 
@@ -377,9 +376,9 @@ function function_cecf7c3d() {
     /#
         if (isdefined(self.bot)) {
             level.rat.var_cd4fd549 = level.rat.var_cd4fd549 + 1;
-        } else {
-            level.rat.playerskilled = level.rat.playerskilled + 1;
+            return;
         }
+        level.rat.playerskilled = level.rat.playerskilled + 1;
     #/
 }
 
@@ -420,7 +419,7 @@ function function_51706559(params) {
                 player setplayerangles(angles);
             }
             if (!isdefined(params.all)) {
-                break;
+                return;
             }
         }
     #/
@@ -553,9 +552,8 @@ function function_4f3a7675(params) {
         if (isdefined(level.var_5efad16e)) {
             level [[ level.var_5efad16e ]]();
             return 1;
-        } else {
-            return 0;
         }
+        return 0;
     #/
 }
 
@@ -579,9 +577,9 @@ function function_191d6974(params) {
     /#
         if (isdefined(params.name)) {
             level thread function_d04e8397(params.name);
-        } else {
-            ratreportcommandresult(params._id, 0, "<unknown string>");
+            return;
         }
+        ratreportcommandresult(params._id, 0, "<unknown string>");
     #/
 }
 
@@ -605,9 +603,9 @@ function rscsimulatescripterror(params) {
             /#
                 assertmsg("<unknown string>");
             #/
-        } else {
-            thisdoesntexist.orthis = 0;
+            return;
         }
+        thisdoesntexist.orthis = 0;
     #/
 }
 

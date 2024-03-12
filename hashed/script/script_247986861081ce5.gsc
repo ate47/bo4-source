@@ -48,9 +48,9 @@ function challenge_completed() {
     wait(3);
     if (level.var_a7b0c29c.size == 0) {
         function_8bddfcc3();
-    } else {
-        function_1525b94c();
+        return;
     }
+    function_1525b94c();
 }
 
 // Namespace namespace_ff847c6a/namespace_ff847c6a
@@ -69,9 +69,9 @@ function function_bc0ec5b3(b_activate) {
 function function_a5cebb9a(b_show) {
     if (b_show) {
         function_260958b(#"hash_7ed874a0ecdefd90", level.var_b92b8b07.n_index);
-    } else {
-        function_260958b(#"hash_7ed874a0ecdefd90", 0);
+        return;
     }
+    function_260958b(#"hash_7ed874a0ecdefd90", 0);
 }
 
 // Namespace namespace_ff847c6a/namespace_ff847c6a

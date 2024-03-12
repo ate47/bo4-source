@@ -80,7 +80,7 @@ function private function_e997bb0b(var_73d6ae36) {
         foreach (player in getplayers()) {
             /#
                 if (isgodmode(player) || player isinmovemode("<unknown string>", "<unknown string>")) {
-                    goto LOC_0000028a;
+                    continue;
                 }
             #/
             if (player.health > 0 && !player laststand::player_is_in_laststand() && !(isdefined(player.var_eb319d10) && player.var_eb319d10) && !(isdefined(level.intermission) && level.intermission)) {
@@ -89,15 +89,14 @@ function private function_e997bb0b(var_73d6ae36) {
                         player util::stop_magic_bullet_shield();
                     }
                     player dodamage(player.health + 1000, player.origin);
-                } else if (isdefined(player.armor) && player.armor > 0) {
-                    player dodamage(self.var_6633a592 + 5, player.origin);
-                } else {
-                    player dodamage(self.var_6633a592, player.origin);
-                LOC_0000028a:
+                    continue;
                 }
-            LOC_0000028a:
+                if (isdefined(player.armor) && player.armor > 0) {
+                    player dodamage(self.var_6633a592 + 5, player.origin);
+                    continue;
+                }
+                player dodamage(self.var_6633a592, player.origin);
             }
-        LOC_0000028a:
         }
         wait(self.var_ead3a0f2);
     }

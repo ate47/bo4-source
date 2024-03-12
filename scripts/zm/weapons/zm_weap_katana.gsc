@@ -94,12 +94,16 @@ function private function_9a0f234b() {
         if (wpn_cur == level.hero_weapon[#"katana"][0]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_648a5b1eedae58b9");
             self thread function_9fdcf13f();
-        } else if (wpn_cur == level.hero_weapon[#"katana"][1]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"katana"][1]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_52cddac894472d22");
             self thread function_119af40d(wpn_cur);
             self thread function_478a4910(wpn_cur);
             self thread function_9fdcf13f();
-        } else if (wpn_cur == level.hero_weapon[#"katana"][2]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"katana"][2]) {
             if (!self gamepadusedlast()) {
                 self zm_hero_weapon::show_hint(wpn_cur, #"hash_4bf673fe684c7bcd");
             } else {
@@ -155,13 +159,10 @@ function function_4e81317c(einflictor, eattacker, idamage, flags, meansofdeath, 
         switch (self.var_6f84b820) {
         case #"heavy":
             return (0.2 * self.maxhealth);
-            break;
         case #"miniboss":
             return (0.1 * self.maxhealth);
-            break;
         case #"boss":
             return (0.05 * self.maxhealth);
-            break;
         }
     }
     return idamage;
@@ -207,7 +208,9 @@ function function_af221ee1(s_params) {
                         self thread zombie_utility::setup_zombie_knockdown(s_params.eattacker.origin);
                     }
                 }
-            } else if (self.var_6f84b820 == #"miniboss") {
+                return;
+            }
+            if (self.var_6f84b820 == #"miniboss") {
                 if (s_params.shitloc === "head" || s_params.shitloc === "helmet" && isdefined(self.hashelmet) && self.hashelmet) {
                     if (isdefined(self.helmethits && isdefined(self.var_905e4ce2))) {
                         self.helmethits = self.var_905e4ce2;
@@ -316,25 +319,25 @@ function private function_bbe55589(e_player, w_katana, str_hitloc) {
         [[ level.var_3594d33a ]]->waitinqueue(self);
         self dodamage(self.health + 100, e_player.origin, e_player, e_player, str_hitloc, "MOD_MELEE", 0, w_katana);
         self playsound(#"hash_762b44e67bc3761f");
-    } else {
-        switch (self.var_6f84b820) {
-        case #"heavy":
-            n_base_damage = 0.2 * self.maxhealth;
-            break;
-        case #"miniboss":
-            n_base_damage = 0.1 * self.maxhealth;
-            break;
-        case #"boss":
-            n_base_damage = 0.05 * self.maxhealth;
-            break;
-        }
-        self.var_48a548c1 = 1;
-        [[ level.var_3594d33a ]]->waitinqueue(self);
-        n_damage = 750 < n_base_damage ? 750 : n_base_damage;
-        self dodamage(n_damage, e_player.origin, e_player, e_player, str_hitloc, "MOD_MELEE", 0, w_katana);
-        self playsound(#"hash_762b44e67bc3761f");
-        self.var_48a548c1 = undefined;
+        return;
     }
+    switch (self.var_6f84b820) {
+    case #"heavy":
+        n_base_damage = 0.2 * self.maxhealth;
+        break;
+    case #"miniboss":
+        n_base_damage = 0.1 * self.maxhealth;
+        break;
+    case #"boss":
+        n_base_damage = 0.05 * self.maxhealth;
+        break;
+    }
+    self.var_48a548c1 = 1;
+    [[ level.var_3594d33a ]]->waitinqueue(self);
+    n_damage = 750 < n_base_damage ? 750 : n_base_damage;
+    self dodamage(n_damage, e_player.origin, e_player, e_player, str_hitloc, "MOD_MELEE", 0, w_katana);
+    self playsound(#"hash_762b44e67bc3761f");
+    self.var_48a548c1 = undefined;
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
@@ -432,7 +435,7 @@ function function_478a4910(w_katana) {
         s_result = self waittill(#"weapon_melee_juke");
         if (s_result.weapon == w_katana) {
             if (1 === zm_audio::create_and_play_dialog(#"hero_level_2", #"katana")) {
-                break;
+                return;
             }
         }
     }
@@ -449,7 +452,7 @@ function function_68ff89f7(w_katana) {
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon == w_katana) {
             if (1 === zm_audio::create_and_play_dialog(#"hero_level_3", #"katana")) {
-                break;
+                return;
             }
         }
     }

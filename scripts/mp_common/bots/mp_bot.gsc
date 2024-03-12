@@ -39,7 +39,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb073e378, Offset: 0x6f0
 // Size: 0x50a
 function __init__() {
@@ -59,28 +59,28 @@ function __init__() {
     if (!isdefined(level.var_df0a0911)) {
         if (util::function_8570168d()) {
             level.var_df0a0911 = "bot_tacstate_mp_default";
-        } else {
-            switch (getdvarint(#"bot_difficulty", 1)) {
-            case 0:
-                level.var_df0a0911 = "bot_tacstate_mp_easy";
-                break;
-            case 1:
-            default:
-                level.var_df0a0911 = "bot_tacstate_mp_normal";
-                break;
-            case 2:
-                level.var_df0a0911 = "bot_tacstate_mp_hard";
-                break;
-            case 3:
-                level.var_df0a0911 = "bot_tacstate_mp_veteran";
-                break;
-            }
+            return;
+        }
+        switch (getdvarint(#"bot_difficulty", 1)) {
+        case 0:
+            level.var_df0a0911 = "bot_tacstate_mp_easy";
+            return;
+        case 1:
+        default:
+            level.var_df0a0911 = "bot_tacstate_mp_normal";
+            return;
+        case 2:
+            level.var_df0a0911 = "bot_tacstate_mp_hard";
+            return;
+        case 3:
+            level.var_df0a0911 = "bot_tacstate_mp_veteran";
+            return;
         }
     }
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf8d40d33, Offset: 0xc08
 // Size: 0xdc
 function init() {
@@ -100,7 +100,7 @@ function init() {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xef164d93, Offset: 0xcf0
 // Size: 0x37a
 function init_strategic_command() {
@@ -117,28 +117,28 @@ function init_strategic_command() {
         foreach (team in level.teams) {
             plannermpcontrolcommander::createcommander(team);
         }
-        break;
+        return;
     case #"dom_cwl":
     case #"dom_hc":
     case #"dom":
         foreach (team in level.teams) {
             plannermpdomcommander::createcommander(team);
         }
-        break;
+        return;
     case #"koth":
     case #"koth_cwl":
     case #"koth_hc":
         foreach (team in level.teams) {
             plannermpkothcommander::createcommander(team);
         }
-        break;
+        return;
     case #"sd":
     case #"sd_cwl":
     case #"sd_hc":
         foreach (team in level.teams) {
             plannermpsdcommander::createcommander(team);
         }
-        break;
+        return;
     default:
         foreach (team in level.teams) {
             plannermptdmcommander::createcommander(team);
@@ -148,7 +148,7 @@ function init_strategic_command() {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x817fac9a, Offset: 0x1078
 // Size: 0x15c
 function on_bot_connect() {
@@ -174,7 +174,7 @@ function on_bot_connect() {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0da75b, Offset: 0x11e0
 // Size: 0x7fc
 function function_1b0af429() {
@@ -269,7 +269,7 @@ function function_165d8cc2(var_2faf31e0, loadoutitem) {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5ac6750a, Offset: 0x1a40
 // Size: 0x64
 function on_bot_spawned() {
@@ -280,7 +280,7 @@ function on_bot_spawned() {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x43aa39cf, Offset: 0x1ab0
 // Size: 0x84
 function on_bot_killed() {
@@ -296,7 +296,7 @@ function on_bot_killed() {
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3e87980b, Offset: 0x1b40
 // Size: 0x68
 function respawn() {
@@ -343,12 +343,12 @@ function use_killstreak() {
     case #"killstreak_counteruav":
     case #"killstreak_raps":
         self switchtoweapon(useweapon);
-        break;
+        return;
     }
 }
 
 // Namespace bot/mp_bot
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x38a56fe2, Offset: 0x1dd0
 // Size: 0x30c
 function set_rank() {
@@ -363,9 +363,9 @@ function set_rank() {
         if (isdefined(players[i].pers[#"rank"])) {
             if (isbot(players[i])) {
                 bot_ranks[bot_ranks.size] = players[i].pers[#"rank"];
-            } else {
-                human_ranks[human_ranks.size] = players[i].pers[#"rank"];
+                continue;
             }
+            human_ranks[human_ranks.size] = players[i].pers[#"rank"];
         }
     }
     if (!human_ranks.size) {

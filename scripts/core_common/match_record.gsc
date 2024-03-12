@@ -10,7 +10,7 @@
 function function_d92cb558(result, vararg) {
     /#
         pathstr = "<unknown string>";
-        if (!isdefined(result)) {
+        if (isdefined(result)) {
         }
         return pathstr;
     #/
@@ -132,7 +132,7 @@ function set_player_stat(...) {
 }
 
 // Namespace match_record/match_record
-// Params 1, eflags: 0x21 linked
+// Params 1, eflags: 0x20
 // Checksum 0x9acef3dd, Offset: 0x608
 // Size: 0x196
 function function_ded5f5b6(...) {

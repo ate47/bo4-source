@@ -109,9 +109,9 @@ function private function_a1acece9() {
 function private setup_variant_type(params) {
     if (isdefined(level.var_cc1828c) && isdefined(level.var_cc1828c[self.zombie_move_speed])) {
         self.variant_type = randomintrange(0, level.var_cc1828c[self.zombie_move_speed]);
-    } else {
-        self.variant_type = 0;
+        return;
     }
+    self.variant_type = 0;
 }
 
 // Namespace archetype_skeleton/archetype_skeleton

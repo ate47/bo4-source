@@ -18,7 +18,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xed4e8a9b, Offset: 0x1c0
 // Size: 0xbc
 function function_9c8b5737() {
@@ -28,7 +28,7 @@ function function_9c8b5737() {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8e4c59b8, Offset: 0x288
 // Size: 0x1c
 function on_player_connect() {
@@ -36,7 +36,7 @@ function on_player_connect() {
 }
 
 // Namespace armor/armor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6fda5a6, Offset: 0x2b0
 // Size: 0x104
 function setlightarmorhp(newvalue) {
@@ -46,15 +46,15 @@ function setlightarmorhp(newvalue) {
             lightarmorpercent = math::clamp(self.lightarmor.amount / self.lightarmor.max, 0, 1);
             self setcontrolleruimodelvalue("hudItems.armorPercent", lightarmorpercent);
         }
-    } else {
-        self.lightarmor.amount = 0;
-        self.lightarmor.max = 0;
-        self setcontrolleruimodelvalue("hudItems.armorPercent", 0);
+        return;
     }
+    self.lightarmor.amount = 0;
+    self.lightarmor.max = 0;
+    self setcontrolleruimodelvalue("hudItems.armorPercent", 0);
 }
 
 // Namespace armor/armor
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xabce6fa5, Offset: 0x3c0
 // Size: 0x11c
 function setlightarmor(optionalarmorvalue, var_2274e560, var_cdeeec29) {
@@ -80,7 +80,7 @@ function setlightarmor(optionalarmorvalue, var_2274e560, var_cdeeec29) {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb20a9011, Offset: 0x4e8
 // Size: 0x5c
 function removelightarmorondeath() {
@@ -90,7 +90,7 @@ function removelightarmorondeath() {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8dafd7fd, Offset: 0x550
 // Size: 0x2e
 function unsetlightarmor() {
@@ -99,7 +99,7 @@ function unsetlightarmor() {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3f2ad097, Offset: 0x588
 // Size: 0x54
 function removelightarmoronmatchend() {
@@ -117,7 +117,7 @@ function haslightarmor() {
 }
 
 // Namespace armor/armor
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x97ecb6ad, Offset: 0x608
 // Size: 0x190
 function function_a77114f2(einflictor, eattacker, idamage, smeansofdeath, weapon, shitloc) {
@@ -140,7 +140,7 @@ function function_a77114f2(einflictor, eattacker, idamage, smeansofdeath, weapon
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2bfb8385, Offset: 0x7a0
 // Size: 0x78
 function get_armor() {
@@ -158,7 +158,7 @@ function get_armor() {
 }
 
 // Namespace armor/armor
-// Params 13, eflags: 0x1 linked
+// Params 13, eflags: 0x0
 // Checksum 0x3f1ef331, Offset: 0x820
 // Size: 0x28e
 function set_armor(amount, max_armor, armortier, var_2274e560 = 1, var_cdeeec29 = 1, var_5164d2e2 = 1, var_e6683a43 = 1, var_22c3ab38 = 1, var_9f307988 = 1, var_7a80f06e = 1, explosive_damage_scale = 1, var_35e3563e = 1, var_4aad1e44 = undefined) {
@@ -189,7 +189,7 @@ function set_armor(amount, max_armor, armortier, var_2274e560 = 1, var_cdeeec29 
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x35f0cb0e, Offset: 0xab8
 // Size: 0x1e
 function has_armor() {
@@ -234,7 +234,7 @@ function boost_armor(bars_to_give, damage_time_threshold_ms) {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ab1c7fb, Offset: 0xc70
 // Size: 0x34
 function get_empty_bars() {
@@ -245,7 +245,7 @@ function get_empty_bars() {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7cc8947, Offset: 0xcb0
 // Size: 0x3e
 function at_peak_armor_bars() {
@@ -256,7 +256,7 @@ function at_peak_armor_bars() {
 }
 
 // Namespace armor/armor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16d614dd, Offset: 0xcf8
 // Size: 0x8a
 function update_max_armor(bonus_bars = 0) {
@@ -269,7 +269,7 @@ function update_max_armor(bonus_bars = 0) {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc1d74be2, Offset: 0xd90
 // Size: 0x22
 function has_armor_bar_capability() {
@@ -277,7 +277,7 @@ function has_armor_bar_capability() {
 }
 
 // Namespace armor/armor
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf8faa88e, Offset: 0xdc0
 // Size: 0x7a
 function get_max_armor_bars(bonus_bars) {
@@ -296,7 +296,7 @@ function get_armor_bars() {
 }
 
 // Namespace armor/armor
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x326243e3, Offset: 0xe78
 // Size: 0x1da
 function private function_37f4e0e0(smeansofdeath, shitloc) {
@@ -334,7 +334,7 @@ function private function_37f4e0e0(smeansofdeath, shitloc) {
 }
 
 // Namespace armor/armor
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x89858e75, Offset: 0x1060
 // Size: 0x30
 function private function_7538fede(weapon) {
@@ -345,7 +345,7 @@ function private function_7538fede(weapon) {
 }
 
 // Namespace armor/armor
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x3327d3a4, Offset: 0x1098
 // Size: 0x80a
 function apply_damage(weapon, damage, smeansofdeath, eattacker, shitloc) {
@@ -452,7 +452,7 @@ function apply_damage(weapon, damage, smeansofdeath, eattacker, shitloc) {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf5041d98, Offset: 0x18b0
 // Size: 0x14c
 function function_386de852() {
@@ -479,7 +479,7 @@ function function_386de852() {
 }
 
 // Namespace armor/armor
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2faa74df, Offset: 0x1a08
 // Size: 0xa2
 function has_helmet() {

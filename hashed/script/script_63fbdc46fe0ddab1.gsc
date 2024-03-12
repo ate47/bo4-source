@@ -88,19 +88,25 @@ class czm_red_challenges_hud : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"visible" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"visiblepc" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else if (#"trials" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"visible" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"visiblepc" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        if (#"trials" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 3);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud

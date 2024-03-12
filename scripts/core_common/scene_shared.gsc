@@ -208,13 +208,11 @@ function fixup_scenedef(s_scenedef) {
         s_female_bundle.s_male_bundle = s_scenedef;
     }
     if (isdefined(level.scene_sequence_names) && !isdefined(level.scene_sequence_names[s_scenedef.name])) {
-        s_next_bundle = s_scenedef;
-        while (isdefined(s_next_bundle)) {
+        for (s_next_bundle = s_scenedef; isdefined(s_next_bundle); s_next_bundle = undefined) {
             level.scene_sequence_names[s_next_bundle.name] = s_scenedef.name;
             if (isdefined(s_next_bundle.nextscenebundle)) {
                 s_next_bundle = getscriptbundle(s_next_bundle.nextscenebundle);
-            } else {
-                s_next_bundle = undefined;
+                continue;
             }
         }
     } else {
@@ -334,19 +332,19 @@ function function_de24d5c1(n_shot, str_shot_name) {
 function function_77e159df(var_9b4eba84, str_field, var_8e9b7b3d) {
     if (isstruct(var_9b4eba84)) {
         var_9b4eba84.(str_field) = var_8e9b7b3d;
-    } else {
-        var_9b4eba84--;
-        if (!isdefined(self.shots)) {
-            self.shots = [];
-        }
-        if (!isdefined(self.shots[0])) {
-            self.shots[0] = spawnstruct();
-        }
-        if (!isdefined(self.shots[var_9b4eba84])) {
-            self.shots[var_9b4eba84] = spawnstruct();
-        }
-        self.shots[var_9b4eba84].(str_field) = var_8e9b7b3d;
+        return;
     }
+    var_9b4eba84--;
+    if (!isdefined(self.shots)) {
+        self.shots = [];
+    }
+    if (!isdefined(self.shots[0])) {
+        self.shots[0] = spawnstruct();
+    }
+    if (!isdefined(self.shots[var_9b4eba84])) {
+        self.shots[var_9b4eba84] = spawnstruct();
+    }
+    self.shots[var_9b4eba84].(str_field) = var_8e9b7b3d;
 }
 
 // Namespace scene/scene_shared
@@ -742,9 +740,13 @@ function run_instances() {
     foreach (s_instance in struct::get_script_bundle_instances("scene")) {
         if (getscriptbundle(s_instance.scriptbundlename).vmtype === "client") {
             s_instance struct::delete();
-        } else if (isdefined(s_instance.spawnflags) && (s_instance.spawnflags & 2) == 2) {
+            continue;
+        }
+        if (isdefined(s_instance.spawnflags) && (s_instance.spawnflags & 2) == 2) {
             s_instance thread play();
-        } else if (isdefined(s_instance.spawnflags) && (s_instance.spawnflags & 1) == 1) {
+            continue;
+        }
+        if (isdefined(s_instance.spawnflags) && (s_instance.spawnflags & 1) == 1) {
             s_instance thread init();
         }
     }
@@ -781,7 +783,7 @@ function _trigger_play(trig) {
             }
         }
         self thread play(a_ents);
-    } while(isdefined(getscriptbundle(self.scriptbundlename).looping) && getscriptbundle(self.scriptbundlename).looping);
+    } while (isdefined(getscriptbundle(self.scriptbundlename).looping) && getscriptbundle(self.scriptbundlename).looping);
 }
 
 // Namespace scene/scene_shared
@@ -817,9 +819,9 @@ function add_scene_func(str_scenedef, func, var_e21c4c4c = "play", ...) {
     }
     if (var_e21c4c4c === "play" && str_shot !== "play") {
         array::add(level.scene_funcs[str_scenedef][str_shot], array(func, vararg, 1), 0);
-    } else {
-        array::add(level.scene_funcs[str_scenedef][str_shot], array(func, vararg), 0);
+        return;
     }
+    array::add(level.scene_funcs[str_scenedef][str_shot], array(func, vararg), 0);
 }
 
 // Namespace scene/scene_shared
@@ -845,9 +847,9 @@ function function_d8a83a50(str_scenedef, func, var_e21c4c4c = "play", ...) {
     }
     if (var_e21c4c4c === "play" && str_shot !== "play") {
         array::add(level.var_4247a0d6[str_scenedef][str_shot], array(func, vararg, 1), 0);
-    } else {
-        array::add(level.var_4247a0d6[str_scenedef][str_shot], array(func, vararg), 0);
+        return;
     }
+    array::add(level.var_4247a0d6[str_scenedef][str_shot], array(func, vararg), 0);
 }
 
 // Namespace scene/scene_shared
@@ -1036,7 +1038,9 @@ function init_streamer(str_scenedef, var_1b38cf1d, var_b6213032 = 0, b_invulnera
         foreach (player in a_players) {
             if (player.team === #"allies") {
                 player thread function_1f9e783e(s_scenedef.var_a6da2039, str_scenedef);
-            } else if (player.team === #"axis") {
+                continue;
+            }
+            if (player.team === #"axis") {
                 player thread function_1f9e783e(s_scenedef.var_991a84ba, str_scenedef);
             }
         }
@@ -1639,12 +1643,12 @@ function delete_scene_spawned_ents(arg1) {
                 }
             }
         }
-    } else {
-        if (isstring(arg1) || ishash(arg1)) {
-            str_scenedef = arg1;
-        }
-        self _delete_scene_spawned_ents(str_scenedef);
+        return;
     }
+    if (isstring(arg1) || ishash(arg1)) {
+        str_scenedef = arg1;
+    }
+    self _delete_scene_spawned_ents(str_scenedef);
 }
 
 // Namespace scene/scene_shared
@@ -1705,7 +1709,7 @@ function _get_scene_instances(str_value, str_key = "targetname", str_scenedef, b
 }
 
 // Namespace scene/scene_shared
-// Params 5, eflags: 0x0
+// Params 5, eflags: 0x1 linked
 // Checksum 0xbd259cb8, Offset: 0x74b0
 // Size: 0x7c
 function skipto_end(arg1, arg2, arg3, n_time, b_include_players = 1) {
@@ -1759,7 +1763,9 @@ function function_1eab8670(obj, str_shot) {
                 foreach (s_entry in s_shot.entry) {
                     if (isdefined(s_entry.cameraswitcher)) {
                         var_5a162d58 = var_5a162d58 + float(getcamanimtime(s_entry.cameraswitcher)) / 1000;
-                    } else if (isdefined(s_entry.("anim"))) {
+                        continue;
+                    }
+                    if (isdefined(s_entry.("anim"))) {
                         n_anim_length = n_anim_length + getanimlength(s_entry.("anim"));
                     }
                 }
@@ -1882,11 +1888,13 @@ function stop(arg1, arg2, arg3) {
                 }
             }
         }
-    } else if (isstring(arg1) || ishash(arg1)) {
-        _stop_instance(arg2, arg1);
-    } else {
-        _stop_instance(arg1);
+        return;
     }
+    if (isstring(arg1) || ishash(arg1)) {
+        _stop_instance(arg2, arg1);
+        return;
+    }
+    _stop_instance(arg1);
 }
 
 // Namespace scene/scene_shared
@@ -2022,9 +2030,8 @@ function function_128f0294(var_37fa9b04) {
 function is_active(str_scenedef) {
     if (self == level) {
         return (get_active_scenes(str_scenedef).size > 0);
-    } else {
-        return isdefined(get_active_scene(str_scenedef));
     }
+    return isdefined(get_active_scene(str_scenedef));
 }
 
 // Namespace scene/scene_shared
@@ -2065,13 +2072,12 @@ function is_ready(str_scenedef) {
 function get_active_scenes(str_scenedef) {
     if (isdefined(str_scenedef)) {
         return (isdefined(level.active_scenes[str_scenedef]) ? level.active_scenes[str_scenedef] : []);
-    } else {
-        a_scenes = [];
-        foreach (str_scenedef, _ in level.active_scenes) {
-            a_scenes = arraycombine(a_scenes, level.active_scenes[str_scenedef], 0, 0);
-        }
-        return a_scenes;
     }
+    a_scenes = [];
+    foreach (str_scenedef, _ in level.active_scenes) {
+        a_scenes = arraycombine(a_scenes, level.active_scenes[str_scenedef], 0, 0);
+    }
+    return a_scenes;
 }
 
 // Namespace scene/scene_shared
@@ -2084,13 +2090,12 @@ function get_inactive_scenes(str_scenedef) {
     }
     if (isdefined(str_scenedef)) {
         return (isdefined(level.inactive_scenes[str_scenedef]) ? level.inactive_scenes[str_scenedef] : []);
-    } else {
-        a_scenes = [];
-        foreach (str_scenedef, _ in level.inactive_scenes) {
-            a_scenes = arraycombine(a_scenes, level.inactive_scenes[str_scenedef], 0, 0);
-        }
-        return a_scenes;
     }
+    a_scenes = [];
+    foreach (str_scenedef, _ in level.inactive_scenes) {
+        a_scenes = arraycombine(a_scenes, level.inactive_scenes[str_scenedef], 0, 0);
+    }
+    return a_scenes;
 }
 
 // Namespace scene/scene_shared
@@ -2212,7 +2217,9 @@ function function_37592f67(e_scene_root, s_scenedef) {
 function updateigcviewtime(b_in_igc) {
     if (b_in_igc && !isdefined(level.igcstarttime)) {
         level.igcstarttime = gettime();
-    } else if (!b_in_igc && isdefined(level.igcstarttime)) {
+        return;
+    }
+    if (!b_in_igc && isdefined(level.igcstarttime)) {
         igcviewtimesec = gettime() - level.igcstarttime;
         level.igcstarttime = undefined;
         foreach (player in level.players) {
@@ -2526,7 +2533,9 @@ function clear_scene_skipping_ui() {
 function function_63033fc3(str_notify) {
     if (isclass(self) || self == level) {
         array::thread_all(getplayers(), &clear_scene_skipping_ui);
-    } else if (isplayer(self)) {
+        return;
+    }
+    if (isplayer(self)) {
         self clear_scene_skipping_ui();
     }
 }
@@ -2611,19 +2620,19 @@ function _wait_for_ordered_notify(id, group_obj, group_name, str_note) {
         } else if (isdefined(group_obj.pending_notifies) && group_obj.current_count + group_obj.pending_notifies.size == group_obj.count) {
             self thread _fire_ordered_notitifes(group_obj, group_name);
         }
-    } else {
-        if (!isdefined(group_obj.pending_notifies)) {
-            group_obj.pending_notifies = [];
-        }
-        notetrack = spawnstruct();
-        notetrack.id = id;
-        notetrack.str_note = str_note;
-        for (i = 0; i < group_obj.pending_notifies.size && group_obj.pending_notifies[i].id < id; i++) {
-        }
-        arrayinsert(group_obj.pending_notifies, notetrack, i);
-        if (group_obj.current_count + group_obj.pending_notifies.size == group_obj.count) {
-            self thread _fire_ordered_notitifes(group_obj, group_name);
-        }
+        return;
+    }
+    if (!isdefined(group_obj.pending_notifies)) {
+        group_obj.pending_notifies = [];
+    }
+    notetrack = spawnstruct();
+    notetrack.id = id;
+    notetrack.str_note = str_note;
+    for (i = 0; i < group_obj.pending_notifies.size && group_obj.pending_notifies[i].id < id; i++) {
+    }
+    arrayinsert(group_obj.pending_notifies, notetrack, i);
+    if (group_obj.current_count + group_obj.pending_notifies.size == group_obj.count) {
+        self thread _fire_ordered_notitifes(group_obj, group_name);
     }
 }
 
@@ -2955,9 +2964,9 @@ function function_1a1f1be7(var_8826a030) {
 function function_61635c87(b_enable) {
     if (b_enable) {
         self flagsys::set(#"hash_6ce14241f77af1e7");
-    } else {
-        self flagsys::clear(#"hash_6ce14241f77af1e7");
+        return;
     }
+    self flagsys::clear(#"hash_6ce14241f77af1e7");
 }
 
 // Namespace scene/scene_shared

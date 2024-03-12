@@ -99,16 +99,16 @@ function function_6607df78() {
                 if (!(isdefined(ai_zombie.knockdown) && ai_zombie.knockdown)) {
                     ai_zombie ai::stun();
                 }
-                break;
+                continue;
             case #"popcorn":
                 ai_zombie.var_96d5504c = 1;
                 [[ self.var_3dd38cd4 ]]->waitinqueue(ai_zombie);
                 ai_zombie thread zm_perk_death_dash::function_c1c51837(self);
                 ai_zombie.var_96d5504c = undefined;
-                break;
+                continue;
             case #"basic":
                 ai_zombie zombie_utility::setup_zombie_knockdown(self);
-                break;
+                continue;
             }
         }
     }

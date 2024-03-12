@@ -21,8 +21,8 @@ function init_clientfields() {
 function function_9997d53a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         self playrumblelooponentity(localclientnum, "zm_escape_fast_travel");
-    } else {
-        self stoprumble(localclientnum, "zm_escape_fast_travel");
+        return;
     }
+    self stoprumble(localclientnum, "zm_escape_fast_travel");
 }
 

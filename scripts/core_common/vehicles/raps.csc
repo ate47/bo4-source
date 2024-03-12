@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace raps/raps
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x4acad8cf, Offset: 0x118
 // Size: 0x4c
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace raps/raps
-// Params 4, eflags: 0x0
+// Params 4, eflags: 0x1 linked
 // Checksum 0xbb355b35, Offset: 0x170
 // Size: 0x118
 function adjust_side_death_dir_if_trace_fail(origin, side_dir, fxlength, up_dir) {
@@ -41,7 +41,7 @@ function adjust_side_death_dir_if_trace_fail(origin, side_dir, fxlength, up_dir)
 }
 
 // Namespace raps/raps
-// Params 7, eflags: 0x0
+// Params 7, eflags: 0x1 linked
 // Checksum 0xf4c77ef9, Offset: 0x290
 // Size: 0x354
 function do_side_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

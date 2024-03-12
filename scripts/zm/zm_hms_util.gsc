@@ -132,23 +132,23 @@ function function_51b752a9(str_alias, n_variant = int(-1), b_wait_if_busy = 0, v
     }
     if (n_variant < 0) {
         self zm_vo::function_a2bd5a0c(str_alias, 0, b_wait_if_busy);
-    } else {
-        n_index = zm_characters::function_dc232a80();
-        str_vo_alias = str_alias + "_plr_" + n_index + "_" + n_variant;
-        if (b_wait_if_busy) {
-            self notify(#"hash_7efd5bdf8133ff7b");
-            self endon(#"hash_7efd5bdf8133ff7b");
-            var_215d4efb = b_wait_if_busy == 2 ? 1 : 0;
-            while (!zm_audio::can_speak(self.toself, var_215d4efb)) {
-                waitframe(1);
-                waittillframeend();
-            }
-        }
-        if (!zm_audio::can_speak(self.toself)) {
-            return 0;
-        }
-        self zm_audio::do_player_or_npc_playvox(str_vo_alias);
+        return;
     }
+    n_index = zm_characters::function_dc232a80();
+    str_vo_alias = str_alias + "_plr_" + n_index + "_" + n_variant;
+    if (b_wait_if_busy) {
+        self notify(#"hash_7efd5bdf8133ff7b");
+        self endon(#"hash_7efd5bdf8133ff7b");
+        var_215d4efb = b_wait_if_busy == 2 ? 1 : 0;
+        while (!zm_audio::can_speak(self.toself, var_215d4efb)) {
+            waitframe(1);
+            waittillframeend();
+        }
+    }
+    if (!zm_audio::can_speak(self.toself)) {
+        return 0;
+    }
+    self zm_audio::do_player_or_npc_playvox(str_vo_alias);
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -240,9 +240,8 @@ function function_3815943c(a_players) {
     }
     if (valid_players.size > 0) {
         return array::random(valid_players);
-    } else {
-        return;
     }
+    return;
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -342,10 +341,10 @@ function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
     switch (var_58df9892) {
     case 0:
         self sethintstring(#"zombie/trap_locked");
-        break;
+        return;
     case 1:
         self sethintstring(#"zombie/need_power");
-        break;
+        return;
     case 2:
         if (util::get_game_type() == "zstandard") {
             if (function_8b1a219a()) {
@@ -358,13 +357,13 @@ function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
         } else {
             self sethintstring(#"hash_23c1c09e94181fdb", var_1dc9c1bf);
         }
-        break;
+        return;
     case 3:
         self sethintstring(#"zombie/trap_active");
-        break;
+        return;
     case 4:
         self sethintstring(#"zombie/trap_cooldown");
-        break;
+        return;
     }
 }
 
@@ -409,17 +408,17 @@ function function_91a84161(w_weapon, n_total_ammo) {
     if (n_total_ammo == 0) {
         self setweaponammostock(w_weapon, 0);
         self setweaponammoclip(w_weapon, 0);
-    } else {
-        n_clip_size = self getweaponammoclipsize(w_weapon);
-        if (n_total_ammo < n_clip_size) {
-            self setweaponammostock(w_weapon, 0);
-            self setweaponammoclip(w_weapon, n_total_ammo);
-        } else {
-            n_stock_ammo = n_total_ammo - n_clip_size;
-            self setweaponammostock(w_weapon, n_stock_ammo);
-            self setweaponammoclip(w_weapon, n_clip_size);
-        }
+        return;
     }
+    n_clip_size = self getweaponammoclipsize(w_weapon);
+    if (n_total_ammo < n_clip_size) {
+        self setweaponammostock(w_weapon, 0);
+        self setweaponammoclip(w_weapon, n_total_ammo);
+        return;
+    }
+    n_stock_ammo = n_total_ammo - n_clip_size;
+    self setweaponammostock(w_weapon, n_stock_ammo);
+    self setweaponammoclip(w_weapon, n_clip_size);
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -443,10 +442,10 @@ function pause_zombies(b_pause = 1, var_53458a86 = 1) {
         level.disable_nuke_delay_spawning = 1;
         level flag::clear("spawn_zombies");
         level zm_utility::function_9ad5aeb1(1, 1, 0, var_53458a86, 0);
-    } else {
-        level.disable_nuke_delay_spawning = 0;
-        level flag::set("spawn_zombies");
+        return;
     }
+    level.disable_nuke_delay_spawning = 0;
+    level flag::set("spawn_zombies");
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -578,9 +577,8 @@ function any_player_in_zone(a_str_zones) {
             }
         }
         return 0;
-    } else {
-        return zm_zonemgr::any_player_in_zone(a_str_zones);
     }
+    return zm_zonemgr::any_player_in_zone(a_str_zones);
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -601,11 +599,10 @@ function function_a496116d(e_player, n_cost) {
         e_player zm_score::minus_to_player_score(n_cost);
         self zm_utility::play_sound_on_ent("purchase");
         return 1;
-    } else {
-        self zm_utility::play_sound_on_ent("no_purchase");
-        e_player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
-        return 0;
     }
+    self zm_utility::play_sound_on_ent("no_purchase");
+    e_player zm_audio::create_and_play_dialog(#"general", #"outofmoney");
+    return 0;
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -663,8 +660,7 @@ function function_715588b3() {
     while (1) {
         self waittill(#"trigger");
         b_using = 1;
-        n_time = 0;
-        while (n_time < 0.5) {
+        for (n_time = 0; n_time < 0.5; n_time = n_time + 0.1) {
             foreach (player in util::get_active_players()) {
                 if (player util::is_spectating()) {
                     continue;
@@ -679,7 +675,6 @@ function function_715588b3() {
                 break;
             }
             wait(0.1);
-            n_time = n_time + 0.1;
         }
         if (b_using == 1) {
             break;
@@ -754,10 +749,10 @@ function function_df67a12d(category, subcategory) {
                 level.var_e745455[category][subcategory] = level.sndplayervox[category][subcategory];
                 arrayremoveindex(level.sndplayervox[category], subcategory, 1);
             }
-        } else {
-            level.var_e745455[category] = arraycopy(level.sndplayervox[category]);
-            arrayremoveindex(level.sndplayervox, category, 1);
+            return;
         }
+        level.var_e745455[category] = arraycopy(level.sndplayervox[category]);
+        arrayremoveindex(level.sndplayervox, category, 1);
     }
 }
 

@@ -78,11 +78,11 @@ function devgui_notif_getgunleveltablename() {
     /#
         if (sessionmodeiscampaigngame()) {
             return #"gamedata/weapons/cp/cp_gunlevels.csv";
-        } else if (sessionmodeiszombiesgame()) {
-            return #"gamedata/weapons/zm/zm_gunlevels.csv";
-        } else {
-            return #"gamedata/weapons/mp/mp_gunlevels.csv";
         }
+        if (sessionmodeiszombiesgame()) {
+            return #"gamedata/weapons/zm/zm_gunlevels.csv";
+        }
+        return #"gamedata/weapons/mp/mp_gunlevels.csv";
     #/
 }
 
@@ -94,11 +94,11 @@ function devgui_notif_getchallengestablecount() {
     /#
         if (sessionmodeiscampaigngame()) {
             return 4;
-        } else if (sessionmodeiszombiesgame()) {
-            return 4;
-        } else {
-            return 6;
         }
+        if (sessionmodeiszombiesgame()) {
+            return 4;
+        }
+        return 6;
     #/
 }
 
@@ -110,11 +110,11 @@ function devgui_notif_getchallengestablename(tableid) {
     /#
         if (sessionmodeiscampaigngame()) {
             return (#"gamedata/stats/cp/statsmilestones" + tableid + "<unknown string>");
-        } else if (sessionmodeiszombiesgame()) {
-            return (#"gamedata/stats/zm/statsmilestones" + tableid + "<unknown string>");
-        } else {
-            return (#"gamedata/stats/mp/statsmilestones" + tableid + "<unknown string>");
         }
+        if (sessionmodeiszombiesgame()) {
+            return (#"gamedata/stats/zm/statsmilestones" + tableid + "<unknown string>");
+        }
+        return #"gamedata/stats/mp/statsmilestones" + tableid + "<unknown string>";
     #/
 }
 
@@ -230,11 +230,11 @@ function notif_devgui_rank_up_think() {
             rank_number = getdvarint(#"scr_notif_devgui_rank", 0);
             if (rank_number == 0) {
                 waitframe(1);
-            } else {
-                level.players[0] rank::codecallback_rankup({#unlock_tokens_added:1, #prestige:0, #rank:rank_number});
-                setdvar(#"scr_notif_devgui_rank", 0);
-                wait(1);
+                continue;
             }
+            level.players[0] rank::codecallback_rankup({#unlock_tokens_added:1, #prestige:0, #rank:rank_number});
+            setdvar(#"scr_notif_devgui_rank", 0);
+            wait(1);
         }
     #/
 }
@@ -287,33 +287,33 @@ function notif_devgui_gun_rank() {
                 if (weapon[#"reference"] != "<unknown string>") {
                     arrayinsert(a_weapons[#"pistol"], gun, 0);
                 }
-                break;
+                continue;
             case #"weapon_launcher":
                 arrayinsert(a_weapons[#"launcher"], gun, 0);
-                break;
+                continue;
             case #"weapon_assault":
                 arrayinsert(a_weapons[#"assault"], gun, 0);
-                break;
+                continue;
             case #"weapon_tactical":
                 arrayinsert(a_weapons[#"tactical"], gun, 0);
-                break;
+                continue;
             case #"weapon_smg":
                 arrayinsert(a_weapons[#"smg"], gun, 0);
-                break;
+                continue;
             case #"weapon_lmg":
                 arrayinsert(a_weapons[#"lmg"], gun, 0);
-                break;
+                continue;
             case #"weapon_cqb":
                 arrayinsert(a_weapons[#"shotgun"], gun, 0);
-                break;
+                continue;
             case #"weapon_sniper":
                 arrayinsert(a_weapons[#"sniper"], gun, 0);
-                break;
+                continue;
             case #"weapon_knife":
                 arrayinsert(a_weapons[#"knife"], gun, 0);
-                break;
+                continue;
             default:
-                break;
+                continue;
             }
         }
         foreach (group_name, gun_group in a_weapons) {
@@ -340,17 +340,17 @@ function notif_devgui_gun_level_think() {
             weapon_item_index = getdvarint(#"scr_notif_devgui_gun_lvl_item_index", 0);
             if (weapon_item_index == 0) {
                 waitframe(1);
-            } else {
-                xp_reward = getdvarint(#"scr_notif_devgui_gun_lvl_xp", 0);
-                attachment_index = getdvarint(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
-                rank_id = getdvarint(#"scr_notif_devgui_gun_lvl_rank_id", 0);
-                level.players[0] persistence::codecallback_gunchallengecomplete({#rank_id:rank_id, #item_index:weapon_item_index, #attachment_index:attachment_index, #reward:xp_reward});
-                setdvar(#"scr_notif_devgui_gun_lvl_xp", 0);
-                setdvar(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
-                setdvar(#"scr_notif_devgui_gun_lvl_item_index", 0);
-                setdvar(#"scr_notif_devgui_gun_lvl_rank_id", 0);
-                wait(1);
+                continue;
             }
+            xp_reward = getdvarint(#"scr_notif_devgui_gun_lvl_xp", 0);
+            attachment_index = getdvarint(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
+            rank_id = getdvarint(#"scr_notif_devgui_gun_lvl_rank_id", 0);
+            level.players[0] persistence::codecallback_gunchallengecomplete({#rank_id:rank_id, #item_index:weapon_item_index, #attachment_index:attachment_index, #reward:xp_reward});
+            setdvar(#"scr_notif_devgui_gun_lvl_xp", 0);
+            setdvar(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
+            setdvar(#"scr_notif_devgui_gun_lvl_item_index", 0);
+            setdvar(#"scr_notif_devgui_gun_lvl_rank_id", 0);
+            wait(1);
         }
     #/
 }
@@ -402,46 +402,46 @@ function notif_devgui_challenges_think() {
             table = getdvarint(#"scr_notif_devgui_challenge_table", 0);
             if (table < 1 || table > devgui_notif_getchallengestablecount()) {
                 waitframe(1);
-            } else {
-                player = level.players[0];
-                tablename = devgui_notif_getchallengestablename(table);
-                if (row < 1 || row > tablelookuprowcount(tablename)) {
-                    waitframe(1);
-                } else {
-                    type = tablelookupcolumnforrow(tablename, row, 3);
-                    itemindex = 0;
-                    if (type == "<unknown string>") {
-                        type = 0;
-                    } else if (type == "<unknown string>") {
-                        itemindex = 4;
-                        type = 3;
-                    } else if (type == "<unknown string>") {
-                        itemindex = 1;
-                        type = 4;
-                    } else if (type == "<unknown string>") {
-                        type = 2;
-                    } else if (type == "<unknown string>") {
-                        type = 5;
-                    } else {
-                        itemindex = getdvarint(#"scr_challenge_itemindex", 0);
-                        if (itemindex == 0) {
-                            currentweaponname = player.currentweapon.name;
-                            itemindex = getitemindexfromref(currentweaponname);
-                            if (itemindex == 0) {
-                                itemindex = 225;
-                            }
-                        }
-                        type = 1;
-                    }
-                    xpreward = int(tablelookupcolumnforrow(tablename, row, 6));
-                    challengeid = int(tablelookupcolumnforrow(tablename, row, 0));
-                    maxvalue = int(tablelookupcolumnforrow(tablename, row, 2));
-                    player persistence::codecallback_challengecomplete({#challenge_index:challengeid, #item_index:itemindex, #challenge_type:type, #table_number:table - 1, #row:row, #max:maxvalue, #reward:xpreward});
-                    setdvar(#"scr_notif_devgui_challenge_row", 0);
-                    setdvar(#"scr_notif_devgui_challenge_table", 0);
-                    wait(1);
-                }
+                continue;
             }
+            player = level.players[0];
+            tablename = devgui_notif_getchallengestablename(table);
+            if (row < 1 || row > tablelookuprowcount(tablename)) {
+                waitframe(1);
+                continue;
+            }
+            type = tablelookupcolumnforrow(tablename, row, 3);
+            itemindex = 0;
+            if (type == "<unknown string>") {
+                type = 0;
+            } else if (type == "<unknown string>") {
+                itemindex = 4;
+                type = 3;
+            } else if (type == "<unknown string>") {
+                itemindex = 1;
+                type = 4;
+            } else if (type == "<unknown string>") {
+                type = 2;
+            } else if (type == "<unknown string>") {
+                type = 5;
+            } else {
+                itemindex = getdvarint(#"scr_challenge_itemindex", 0);
+                if (itemindex == 0) {
+                    currentweaponname = player.currentweapon.name;
+                    itemindex = getitemindexfromref(currentweaponname);
+                    if (itemindex == 0) {
+                        itemindex = 225;
+                    }
+                }
+                type = 1;
+            }
+            xpreward = int(tablelookupcolumnforrow(tablename, row, 6));
+            challengeid = int(tablelookupcolumnforrow(tablename, row, 0));
+            maxvalue = int(tablelookupcolumnforrow(tablename, row, 2));
+            player persistence::codecallback_challengecomplete({#challenge_index:challengeid, #item_index:itemindex, #challenge_type:type, #table_number:table - 1, #row:row, #max:maxvalue, #reward:xpreward});
+            setdvar(#"scr_notif_devgui_challenge_row", 0);
+            setdvar(#"scr_notif_devgui_challenge_table", 0);
+            wait(1);
         }
     #/
 }
@@ -676,9 +676,9 @@ function function_921657e4() {
         }
         if (isdefined(nextnotifydata.optionalarg)) {
             self luinotifyevent(notifyhash, 3, nextnotifydata.message, nextnotifydata.player getentitynumber(), nextnotifydata.optionalarg);
-        } else {
-            self luinotifyevent(notifyhash, 2, nextnotifydata.message, nextnotifydata.player getentitynumber());
+            continue;
         }
+        self luinotifyevent(notifyhash, 2, nextnotifydata.message, nextnotifydata.player getentitynumber());
     }
 }
 

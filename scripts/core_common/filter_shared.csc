@@ -357,7 +357,7 @@ function disable_filter_ev_interference(player, filterid) {
 }
 
 // Namespace filter/filter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7431af38, Offset: 0x1038
 // Size: 0x3c
 function init_filter_vehicle_hijack_oor(player) {
@@ -366,7 +366,7 @@ function init_filter_vehicle_hijack_oor(player) {
 }
 
 // Namespace filter/filter_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc362ee96, Offset: 0x1080
 // Size: 0x12c
 function enable_filter_vehicle_hijack_oor(player, filterid) {
@@ -387,7 +387,7 @@ function set_filter_vehicle_hijack_oor_noblack(player, filterid) {
 }
 
 // Namespace filter/filter_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb7b8d65c, Offset: 0x1208
 // Size: 0x6c
 function set_filter_vehicle_hijack_oor_amount(player, filterid, amount) {
@@ -396,7 +396,7 @@ function set_filter_vehicle_hijack_oor_amount(player, filterid, amount) {
 }
 
 // Namespace filter/filter_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe979b132, Offset: 0x1280
 // Size: 0x34
 function disable_filter_vehicle_hijack_oor(player, filterid) {
@@ -705,7 +705,7 @@ function disable_filter_sprite_rain(player, filterid) {
 }
 
 // Namespace filter/filter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdedaf4fb, Offset: 0x1ed8
 // Size: 0x3c
 function init_filter_sprite_dirt(player) {
@@ -714,7 +714,7 @@ function init_filter_sprite_dirt(player) {
 }
 
 // Namespace filter/filter_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8cd46fed, Offset: 0x1f20
 // Size: 0x94
 function enable_filter_sprite_dirt(player, filterid) {
@@ -724,7 +724,7 @@ function enable_filter_sprite_dirt(player, filterid) {
 }
 
 // Namespace filter/filter_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa5d241f5, Offset: 0x1fc0
 // Size: 0x44
 function set_filter_sprite_dirt_opacity(player, filterid, opacity) {
@@ -732,7 +732,7 @@ function set_filter_sprite_dirt_opacity(player, filterid, opacity) {
 }
 
 // Namespace filter/filter_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xe6a9b98d, Offset: 0x2010
 // Size: 0xa4
 function set_filter_sprite_dirt_source_position(player, filterid, right, up, distance) {
@@ -751,7 +751,7 @@ function set_filter_sprite_dirt_sun_position(player, filterid, pitch, yaw) {
 }
 
 // Namespace filter/filter_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa591e17, Offset: 0x2140
 // Size: 0x44
 function set_filter_sprite_dirt_seed_offset(player, filterid, offset) {
@@ -759,7 +759,7 @@ function set_filter_sprite_dirt_seed_offset(player, filterid, offset) {
 }
 
 // Namespace filter/filter_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xc173b107, Offset: 0x2190
 // Size: 0x44
 function set_filter_sprite_dirt_elapsed(player, filterid, time) {
@@ -767,7 +767,7 @@ function set_filter_sprite_dirt_elapsed(player, filterid, time) {
 }
 
 // Namespace filter/filter_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1d9e8aa2, Offset: 0x21e0
 // Size: 0x34
 function disable_filter_sprite_dirt(player, filterid) {

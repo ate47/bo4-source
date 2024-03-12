@@ -96,9 +96,9 @@ function function_4d55584c(s_loc) {
     foreach (var_402a204c in var_aa8a2a51) {
         if (var_402a204c iszbarrier()) {
             s_loc.unitrigger_stub.pap_machine = var_402a204c;
-        } else {
-            s_loc.unitrigger_stub.var_d3a15d55 = var_402a204c;
+            continue;
         }
+        s_loc.unitrigger_stub.var_d3a15d55 = var_402a204c;
     }
     s_loc.unitrigger_stub.var_d3a15d55 notsolid();
     hidemiscmodels(s_loc.prefabname);
@@ -150,7 +150,9 @@ function function_11c3f280() {
         level waittill(#"pap_moved");
         if (level.s_pap_quest.a_s_locations[level.s_pap_quest.var_4ee2e2ab] == self) {
             zm_unitrigger::unregister_unitrigger(self.unitrigger_stub);
-        } else if (!(isdefined(self.unitrigger_stub.registered) && self.unitrigger_stub.registered)) {
+            continue;
+        }
+        if (!(isdefined(self.unitrigger_stub.registered) && self.unitrigger_stub.registered)) {
             zm_unitrigger::register_static_unitrigger(self.unitrigger_stub, &function_3efad767);
         }
     }
@@ -241,36 +243,35 @@ function function_668e3f89(e_player) {
             self sethintstring(self.hint_string);
         }
         return var_235457fd;
-    } else {
-        var_d679d54f = !isdefined(level.s_pap_quest.var_69e563d);
-        var_7cee75e6 = level.s_pap_quest.a_s_locations[level.s_pap_quest.var_4ee2e2ab].unitrigger_stub === self.stub;
-        var_cd46bf62 = isdefined(level.s_pap_quest.var_69e563d) && level.s_pap_quest.var_69e563d.unitrigger_stub === self.stub;
-        if (!(isdefined(level.var_efaaea43) && level.var_efaaea43) && var_7cee75e6 || isdefined(level.var_a5340531) && level.var_a5340531 && var_d679d54f || isdefined(level.var_a5340531) && level.var_a5340531 && var_7cee75e6 || isdefined(level.var_a8626e72) && level.var_a8626e72 && var_cd46bf62 || isdefined(level.var_fea7bdae) && level.var_fea7bdae || level flag::exists(#"hash_598d4e6af1cf4c39") && level flag::get(#"hash_598d4e6af1cf4c39") || zm_custom::function_901b751c(#"zmpapenabled") == 2) {
-            return 0;
-        }
-        if (isdefined(level.var_efaaea43) && level.var_efaaea43) {
-            self sethintstring(#"hash_73bbee9df5d3c2b1");
-        } else {
-            switch (level.s_pap_quest.a_s_locations[level.s_pap_quest.var_4ee2e2ab].prefabname) {
-            case #"stairs_pap_location":
-                self sethintstring(#"hash_15783325b3eeefd5");
-                break;
-            case #"poop_deck_pap_location":
-                self sethintstring(#"hash_250613266b9a4223");
-                break;
-            case #"engine_room_pap_location":
-                self sethintstring(#"hash_4c5f8e23d8258199");
-                break;
-            case #"cargo_pap_location":
-                self sethintstring(#"hash_1deb745365a6cfdd");
-                break;
-            default:
-                self sethintstring(#"");
-                break;
-            }
-        }
-        return 1;
     }
+    var_d679d54f = !isdefined(level.s_pap_quest.var_69e563d);
+    var_7cee75e6 = level.s_pap_quest.a_s_locations[level.s_pap_quest.var_4ee2e2ab].unitrigger_stub === self.stub;
+    var_cd46bf62 = isdefined(level.s_pap_quest.var_69e563d) && level.s_pap_quest.var_69e563d.unitrigger_stub === self.stub;
+    if (!(isdefined(level.var_efaaea43) && level.var_efaaea43) && var_7cee75e6 || isdefined(level.var_a5340531) && level.var_a5340531 && var_d679d54f || isdefined(level.var_a5340531) && level.var_a5340531 && var_7cee75e6 || isdefined(level.var_a8626e72) && level.var_a8626e72 && var_cd46bf62 || isdefined(level.var_fea7bdae) && level.var_fea7bdae || level flag::exists(#"hash_598d4e6af1cf4c39") && level flag::get(#"hash_598d4e6af1cf4c39") || zm_custom::function_901b751c(#"zmpapenabled") == 2) {
+        return 0;
+    }
+    if (isdefined(level.var_efaaea43) && level.var_efaaea43) {
+        self sethintstring(#"hash_73bbee9df5d3c2b1");
+    } else {
+        switch (level.s_pap_quest.a_s_locations[level.s_pap_quest.var_4ee2e2ab].prefabname) {
+        case #"stairs_pap_location":
+            self sethintstring(#"hash_15783325b3eeefd5");
+            break;
+        case #"poop_deck_pap_location":
+            self sethintstring(#"hash_250613266b9a4223");
+            break;
+        case #"engine_room_pap_location":
+            self sethintstring(#"hash_4c5f8e23d8258199");
+            break;
+        case #"cargo_pap_location":
+            self sethintstring(#"hash_1deb745365a6cfdd");
+            break;
+        default:
+            self sethintstring(#"");
+            break;
+        }
+    }
+    return 1;
 }
 
 // Namespace zodt8_pap_quest/zm_zodt8_pap_quest
@@ -494,16 +495,16 @@ function function_a48b2870() {
                 switch (s_loc.prefabname) {
                 case #"engine_room_pap_location":
                     var_e636ead7 = 1;
-                    break;
+                    continue;
                 case #"stairs_pap_location":
                     var_942e881a = 1;
-                    break;
+                    continue;
                 case #"cargo_pap_location":
                     var_6a69b27 = 1;
-                    break;
+                    continue;
                 case #"poop_deck_pap_location":
                     var_2380391d = 1;
-                    break;
+                    continue;
                 }
             }
         }

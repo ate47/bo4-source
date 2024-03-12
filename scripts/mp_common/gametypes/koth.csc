@@ -135,9 +135,9 @@ function setup_hardpoint_fx(local_client_num, zone_index, state) {
                     function_ca8ebccf(local_client_num, visual, fxid[state], state);
                     state = 2;
                     function_ca8ebccf(local_client_num, visual, fxid[state], state);
-                } else {
-                    function_ca8ebccf(local_client_num, visual, fxid, state);
+                    continue;
                 }
+                function_ca8ebccf(local_client_num, visual, fxid, state);
             }
         }
     }
@@ -159,11 +159,13 @@ function private function_ca8ebccf(local_client_num, visual, fxid, state) {
     if (isdefined(fxhandle)) {
         if (state == 1) {
             setfxteam(local_client_num, fxhandle, #"allies");
-        } else if (state == 2) {
-            setfxteam(local_client_num, fxhandle, #"axis");
-        } else {
-            setfxteam(local_client_num, fxhandle, "free");
+            return;
         }
+        if (state == 2) {
+            setfxteam(local_client_num, fxhandle, #"axis");
+            return;
+        }
+        setfxteam(local_client_num, fxhandle, "free");
     }
 }
 

@@ -71,19 +71,19 @@ function function_81eaae89(e_player) {
     w_current_weapon = e_player getcurrentweapon();
     foreach (weapon in var_e8145621) {
         if (e_player zm_weapons::can_upgrade_weapon(weapon)) {
-            var_5198244f = zm_weapons::get_upgrade_weapon(weapon, 1);
+            w_upgrade_weapon = zm_weapons::get_upgrade_weapon(weapon, 1);
         } else {
             continue;
         }
-        n_clip = var_5198244f.clipsize;
+        n_clip = w_upgrade_weapon.clipsize;
         n_stock = e_player getweaponammostock(weapon);
         if (w_current_weapon == weapon) {
-            var_147bd2 = var_5198244f;
+            var_147bd2 = w_upgrade_weapon;
         }
         e_player zm_weapons::weapon_take(weapon);
-        e_player zm_weapons::weapon_give(var_5198244f, 1, 1);
-        e_player setweaponammoclip(var_5198244f, n_clip);
-        e_player setweaponammostock(var_5198244f, n_stock);
+        e_player zm_weapons::weapon_give(w_upgrade_weapon, 1, 1);
+        e_player setweaponammoclip(w_upgrade_weapon, n_clip);
+        e_player setweaponammostock(w_upgrade_weapon, n_stock);
     }
     if (isdefined(var_147bd2)) {
         e_player shoulddoinitialweaponraise(var_147bd2, 0);
@@ -135,48 +135,48 @@ function function_35ae342e(e_player) {
     e_player.current_weapon = w_current_weapon;
     var_a56ad7fa = w_current_weapon;
     if (e_player zm_weapons::can_upgrade_weapon(w_current_weapon)) {
-        var_5198244f = zm_weapons::get_upgrade_weapon(w_current_weapon, 1);
+        w_upgrade_weapon = zm_weapons::get_upgrade_weapon(w_current_weapon, 1);
     }
-    if (!isdefined(var_5198244f)) {
+    if (!isdefined(w_upgrade_weapon)) {
         e_player thread function_d0ea0364(w_current_weapon);
         return;
     }
-    n_clip = var_5198244f.clipsize;
+    n_clip = w_upgrade_weapon.clipsize;
     n_stock = e_player getweaponammostock(w_current_weapon);
     e_player zm_weapons::weapon_take(w_current_weapon);
-    e_player zm_weapons::weapon_give(var_5198244f, 1, 1);
-    e_player shoulddoinitialweaponraise(var_5198244f, 0);
-    e_player switchtoweaponimmediate(var_5198244f);
-    e_player setweaponammoclip(var_5198244f, n_clip);
-    e_player setweaponammostock(var_5198244f, n_stock);
+    e_player zm_weapons::weapon_give(w_upgrade_weapon, 1, 1);
+    e_player shoulddoinitialweaponraise(w_upgrade_weapon, 0);
+    e_player switchtoweaponimmediate(w_upgrade_weapon);
+    e_player setweaponammoclip(w_upgrade_weapon, n_clip);
+    e_player setweaponammostock(w_upgrade_weapon, n_stock);
     e_player zm_audio::create_and_play_dialog(#"pap", #"pickup");
-    e_player zm_weapons::play_weapon_vo(var_5198244f);
-    e_player thread function_d0ea0364(var_5198244f);
+    e_player zm_weapons::play_weapon_vo(w_upgrade_weapon);
+    e_player thread function_d0ea0364(w_upgrade_weapon);
 }
 
 // Namespace namespace_47a807c3/namespace_33e4d1e0
 // Params 1, eflags: 0x5 linked
 // Checksum 0x6e3ed17d, Offset: 0x9a0
 // Size: 0x204
-function private function_d0ea0364(var_5198244f) {
-    self notify("picked_up_pap_" + var_5198244f.name);
-    self endon("picked_up_pap_" + var_5198244f.name);
+function private function_d0ea0364(w_upgrade_weapon) {
+    self notify("picked_up_pap_" + w_upgrade_weapon.name);
+    self endon("picked_up_pap_" + w_upgrade_weapon.name);
     wait(30);
-    var_75c77fa = self zm_weapons::get_base_weapon(var_5198244f);
+    var_75c77fa = self zm_weapons::get_base_weapon(w_upgrade_weapon);
     a_w_weapons = self getweaponslist();
     foreach (w_weapon in a_w_weapons) {
         var_2af07147 = self zm_weapons::get_base_weapon(w_weapon);
         if (var_2af07147 == var_75c77fa) {
-            var_2af07147 = self zm_weapons::get_base_weapon(var_5198244f);
-            n_clip = self getweaponammoclip(var_5198244f);
-            n_stock = self getweaponammostock(var_5198244f);
-            self zm_weapons::weapon_take(var_5198244f);
+            var_2af07147 = self zm_weapons::get_base_weapon(w_upgrade_weapon);
+            n_clip = self getweaponammoclip(w_upgrade_weapon);
+            n_stock = self getweaponammostock(w_upgrade_weapon);
+            self zm_weapons::weapon_take(w_upgrade_weapon);
             self zm_weapons::weapon_give(var_2af07147, 1, 0);
             self shoulddoinitialweaponraise(var_2af07147, 0);
             self switchtoweaponimmediate(var_2af07147);
             self setweaponammoclip(var_2af07147, n_clip);
             self setweaponammostock(var_2af07147, n_stock);
-            break;
+            return;
         }
     }
 }

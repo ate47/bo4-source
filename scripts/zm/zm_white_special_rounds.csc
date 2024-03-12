@@ -105,15 +105,15 @@ function portal_map_gas_indicators_init(localclientnum, oldval, newval, bnewent,
                 var_35f97c42 hidepart(localclientnum, str_tag_name + "_clogged");
             }
         }
-    } else {
-        if (!isdefined(level.var_8f14a19)) {
-            level.var_8f14a19 = getentarray(localclientnum, "portal_map", "targetname");
-        }
-        foreach (var_35f97c42 in level.var_8f14a19) {
-            for (i = 0; i < 6; i++) {
-                var_35f97c42 util::waittill_dobj(localclientnum);
-                var_35f97c42 showpart(localclientnum, level.a_str_tag_names[i] + "_clear");
-            }
+        return;
+    }
+    if (!isdefined(level.var_8f14a19)) {
+        level.var_8f14a19 = getentarray(localclientnum, "portal_map", "targetname");
+    }
+    foreach (var_35f97c42 in level.var_8f14a19) {
+        for (i = 0; i < 6; i++) {
+            var_35f97c42 util::waittill_dobj(localclientnum);
+            var_35f97c42 showpart(localclientnum, level.a_str_tag_names[i] + "_clear");
         }
     }
 }
@@ -125,7 +125,9 @@ function portal_map_gas_indicators_init(localclientnum, oldval, newval, bnewent,
 function portal_map_gas_indicator_green_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_green_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_green_house");
     }
 }
@@ -137,7 +139,9 @@ function portal_map_gas_indicator_green_house(localclientnum, oldval, newval, bn
 function portal_map_gas_indicator_hammond_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_hammond_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_hammond_house");
     }
 }
@@ -149,7 +153,9 @@ function portal_map_gas_indicator_hammond_house(localclientnum, oldval, newval, 
 function portal_map_gas_indicator_hoggatt_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_hoggatt_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_hoggatt_house");
     }
 }
@@ -161,7 +167,9 @@ function portal_map_gas_indicator_hoggatt_house(localclientnum, oldval, newval, 
 function portal_map_gas_indicator_obrien_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_obrien_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_obrien_house");
     }
 }
@@ -173,7 +181,9 @@ function portal_map_gas_indicator_obrien_house(localclientnum, oldval, newval, b
 function portal_map_gas_indicator_reinsel_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_reinsel_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_reinsel_house");
     }
 }
@@ -185,7 +195,9 @@ function portal_map_gas_indicator_reinsel_house(localclientnum, oldval, newval, 
 function portal_map_gas_indicator_yellow_house(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_yellow_house");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_yellow_house");
     }
 }
@@ -197,7 +209,9 @@ function portal_map_gas_indicator_yellow_house(localclientnum, oldval, newval, b
 function portal_map_gas_indicator_generators(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 0) {
         function_f05553f1(localclientnum, "tag_generators");
-    } else if (newval == 1) {
+        return;
+    }
+    if (newval == 1) {
         function_a7084ac5(localclientnum, "tag_generators");
     }
 }

@@ -50,22 +50,22 @@ function shrink_globe(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     v_up = vectorscale((1, 0, 0), 360);
     v_forward = vectorscale((0, 0, 1), 360);
     if (newval == 1) {
-        self.var_3a6b24a6 = playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe", self.origin, v_forward, v_up);
+        self.fx_globe = playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe", self.origin, v_forward, v_up);
         if (!isdefined(self.var_66db8b1a)) {
             self playsound(localclientnum, #"hash_fe927ec8b31e2d");
             self.var_66db8b1a = self playloopsound(#"hash_57b1409fb6e001f3");
         }
-    } else {
-        if (isdefined(self.var_3a6b24a6)) {
-            stopfx(localclientnum, self.var_3a6b24a6);
-            self.var_3a6b24a6 = undefined;
-        }
-        playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe_death", self.origin, v_forward, v_up);
-        if (isdefined(self.var_66db8b1a)) {
-            self stoploopsound(self.var_66db8b1a);
-            self.var_66db8b1a = undefined;
-            self playsound(localclientnum, #"hash_12c7ff63913e6a34");
-        }
+        return;
+    }
+    if (isdefined(self.fx_globe)) {
+        stopfx(localclientnum, self.fx_globe);
+        self.fx_globe = undefined;
+    }
+    playfx(localclientnum, "zm_weapons/fx8_www_shrink_globe_death", self.origin, v_forward, v_up);
+    if (isdefined(self.var_66db8b1a)) {
+        self stoploopsound(self.var_66db8b1a);
+        self.var_66db8b1a = undefined;
+        self playsound(localclientnum, #"hash_12c7ff63913e6a34");
     }
 }
 
@@ -108,14 +108,12 @@ function function_847080fa(localclientnum) {
         e_model thread scene::play(var_99d5ab4f, e_model);
     }
     var_1f698175 = 1;
-    var_cf6d072d = 0.02;
-    while (var_1f698175 > 0.1) {
+    for (var_cf6d072d = 0.02; var_1f698175 > 0.1; var_cf6d072d = var_cf6d072d * 1.00433) {
         waitframe(1);
         var_1f698175 = var_1f698175 - var_cf6d072d;
         if (var_1f698175 > 0) {
             e_model setscale(var_1f698175);
         }
-        var_cf6d072d = var_cf6d072d * 1.00433;
     }
     playsound(localclientnum, #"hash_6abe8c2d3548831c", e_model.origin + vectorscale((0, 0, 1), 35));
     playfx(localclientnum, "zm_weapons/fx8_www_shrink_enemy_death", e_model.origin + vectorscale((0, 0, 1), 35));
@@ -150,17 +148,17 @@ function function_751c64a4(localclientnum, oldval, newval, bnewent, binitialsnap
         self.registerplayer_lift_clipbamfupdate = playfx(localclientnum, "zm_weapons/fx8_www_dazed_vortex", self.origin, v_forward, v_up);
         playsound(localclientnum, #"hash_65790bfd14f9d80e", self.sound_origin);
         audio::playloopat(#"hash_23133277b3364bd2", self.sound_origin);
-    } else {
-        if (isdefined(self.registerplayer_lift_clipbamfupdate)) {
-            stopfx(localclientnum, self.registerplayer_lift_clipbamfupdate);
-            self.registerplayer_lift_clipbamfupdate = undefined;
-        }
-        v_origin = self.origin;
-        playsound(localclientnum, #"hash_1bb8f665af965ffb", self.sound_origin);
-        audio::stoploopat(#"hash_23133277b3364bd2", self.sound_origin);
-        wait(1);
-        playfx(localclientnum, "zm_weapons/fx8_www_dazed_vortex_end", v_origin, v_forward, v_up);
+        return;
     }
+    if (isdefined(self.registerplayer_lift_clipbamfupdate)) {
+        stopfx(localclientnum, self.registerplayer_lift_clipbamfupdate);
+        self.registerplayer_lift_clipbamfupdate = undefined;
+    }
+    v_origin = self.origin;
+    playsound(localclientnum, #"hash_1bb8f665af965ffb", self.sound_origin);
+    audio::stoploopat(#"hash_23133277b3364bd2", self.sound_origin);
+    wait(1);
+    playfx(localclientnum, "zm_weapons/fx8_www_dazed_vortex_end", v_origin, v_forward, v_up);
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
@@ -170,7 +168,9 @@ function function_751c64a4(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_7fe3e4c8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_22166a07 = util::playfxontag(localclientnum, "zm_weapons/fx8_www_dazed_bubble_trail", self, "tag_eye");
-    } else if (isdefined(self.var_22166a07)) {
+        return;
+    }
+    if (isdefined(self.var_22166a07)) {
         stopfx(localclientnum, self.var_22166a07);
         self.var_22166a07 = undefined;
     }
@@ -185,7 +185,9 @@ function function_1af615a9(localclientnum, oldval, newval, bnewent, binitialsnap
         sound_origin = self gettagorigin("j_head");
         playsound(localclientnum, #"hash_483ba5ccc74b82ae", sound_origin);
         self.var_3403f7a9 = util::playfxontag(localclientnum, "zm_weapons/fx8_www_dazed_enemy_glow_eye", self, "j_head");
-    } else if (isdefined(self.var_3403f7a9)) {
+        return;
+    }
+    if (isdefined(self.var_3403f7a9)) {
         stopfx(localclientnum, self.var_3403f7a9);
         self.var_3403f7a9 = undefined;
     }
@@ -199,21 +201,21 @@ function function_ac54fdec(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         v_up = vectorscale((1, 0, 0), 360);
         v_forward = vectorscale((0, 0, 1), 360);
-        self.var_177e6833 = playfx(localclientnum, "zm_weapons/fx8_www_spin_tornado", self.origin, v_forward, v_up);
+        self.fx_tornado = playfx(localclientnum, "zm_weapons/fx8_www_spin_tornado", self.origin, v_forward, v_up);
         if (!isdefined(self.sound_origin)) {
             self.sound_origin = self.origin + vectorscale((0, 0, 1), 50);
             playsound(localclientnum, #"hash_2d629f848398a470", self.sound_origin);
             audio::playloopat(#"hash_5a6410f04ce4b3a0", self.sound_origin);
         }
-    } else {
-        if (isdefined(self.sound_origin)) {
-            playsound(localclientnum, #"hash_49211352d3711451", self.sound_origin);
-            audio::stoploopat(#"hash_5a6410f04ce4b3a0", self.sound_origin);
-        }
-        if (isdefined(self.var_177e6833)) {
-            stopfx(localclientnum, self.var_177e6833);
-            self.var_177e6833 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.sound_origin)) {
+        playsound(localclientnum, #"hash_49211352d3711451", self.sound_origin);
+        audio::stoploopat(#"hash_5a6410f04ce4b3a0", self.sound_origin);
+    }
+    if (isdefined(self.fx_tornado)) {
+        stopfx(localclientnum, self.fx_tornado);
+        self.fx_tornado = undefined;
     }
 }
 
@@ -230,18 +232,18 @@ function function_176a239f(localclientnum, oldval, newval, bnewent, binitialsnap
             audio::playloopat(#"hash_31a9e607641ce8eb", self.sound_origin);
             self thread function_872ccd5b(#"hash_31a9e607641ce8eb", #"hash_3ab7968f3d5362bc");
         }
-    } else {
-        if (isdefined(self.sound_origin)) {
-            self notify(#"hash_d35390d5b5c613b");
-            playsound(localclientnum, #"hash_3ab7968f3d5362bc", self.sound_origin);
-            audio::stoploopat(#"hash_31a9e607641ce8eb", self.sound_origin);
-        }
-        if (isdefined(self.var_b875cdb1)) {
-            killfx(localclientnum, self.var_b875cdb1);
-            self.var_b875cdb1 = undefined;
-        }
-        util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_portal_end", self, "tag_origin");
+        return;
     }
+    if (isdefined(self.sound_origin)) {
+        self notify(#"hash_d35390d5b5c613b");
+        playsound(localclientnum, #"hash_3ab7968f3d5362bc", self.sound_origin);
+        audio::stoploopat(#"hash_31a9e607641ce8eb", self.sound_origin);
+    }
+    if (isdefined(self.var_b875cdb1)) {
+        killfx(localclientnum, self.var_b875cdb1);
+        self.var_b875cdb1 = undefined;
+    }
+    util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_portal_end", self, "tag_origin");
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
@@ -329,7 +331,9 @@ function function_84884488(localclientnum) {
             util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_hip_right", self, "j_hip_ri");
             util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_leg_left", self, "j_knee_le");
             util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_leg_right", self, "j_knee_ri");
-        } else if (level.var_4fea6622 < 17) {
+            return;
+        }
+        if (level.var_4fea6622 < 17) {
             if (math::cointoss()) {
                 util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_arm_left", self, "j_elbow_le");
             } else {
@@ -337,9 +341,9 @@ function function_84884488(localclientnum) {
             }
             if (math::cointoss()) {
                 util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_hip_left", self, "j_hip_le");
-            } else {
-                util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_hip_right", self, "j_hip_ri");
+                return;
             }
+            util::playfxontag(localclientnum, "zm_weapons/fx8_www_drag_enemy_ember_hip_right", self, "j_hip_ri");
         }
     }
 }

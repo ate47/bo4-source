@@ -5,7 +5,7 @@
 #namespace flak_drone;
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x12ee718d, Offset: 0xe8
 // Size: 0x64
 function init_shared() {
@@ -16,7 +16,7 @@ function init_shared() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x93a0518f, Offset: 0x158
 // Size: 0x114
 function active_camo_changed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -31,7 +31,7 @@ function active_camo_changed(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace flak_drone/flak_drone
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb2f77ab6, Offset: 0x278
 // Size: 0x15c
 function doreveal(localclientnum, direction) {

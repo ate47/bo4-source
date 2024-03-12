@@ -5,7 +5,7 @@
 #namespace radar_sweeps;
 
 // Namespace radar_sweeps/radar_sweeps
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa43f709, Offset: 0x98
 // Size: 0x218
 function radarsweeps() {
@@ -40,7 +40,7 @@ function radarsweeps() {
 }
 
 // Namespace radar_sweeps/radar_sweeps
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xce3dc8a, Offset: 0x2b8
 // Size: 0x280
 function private doradarsweep(var_bc40925b) {
@@ -53,20 +53,20 @@ function private doradarsweep(var_bc40925b) {
         wait(5);
         setteamspyplane(#"allies", 0);
         setteamspyplane(#"axis", 0);
-    } else {
-        foreach (player in level.players) {
-            player.pers[#"hasradar"] = 1;
-            player.hasspyplane = 1;
-            level.activeuavs[player getentitynumber()] = 1;
-        }
-        level notify(#"uav_update");
-        wait(5);
-        foreach (player in level.players) {
-            player.pers[#"hasradar"] = 0;
-            player.hasspyplane = 0;
-            level.activeuavs[player getentitynumber()] = 0;
-        }
-        level notify(#"uav_update");
+        return;
     }
+    foreach (player in level.players) {
+        player.pers[#"hasradar"] = 1;
+        player.hasspyplane = 1;
+        level.activeuavs[player getentitynumber()] = 1;
+    }
+    level notify(#"uav_update");
+    wait(5);
+    foreach (player in level.players) {
+        player.pers[#"hasradar"] = 0;
+        player.hasspyplane = 0;
+        level.activeuavs[player getentitynumber()] = 0;
+    }
+    level notify(#"uav_update");
 }
 

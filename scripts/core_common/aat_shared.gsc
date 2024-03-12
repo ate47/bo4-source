@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x670565d6, Offset: 0x188
 // Size: 0x1d4
 function private __init__() {
@@ -43,7 +43,7 @@ function private __init__() {
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x3feb439e, Offset: 0x368
 // Size: 0xf8
 function private on_player_connect() {
@@ -63,7 +63,7 @@ function private on_player_connect() {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa7b81afc, Offset: 0x468
 // Size: 0x8c
 function private function_33f0ddd3(s_event) {
@@ -156,7 +156,7 @@ function private aat_set_debug_text(name, success, success_reroll, fail) {
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xabda58d5, Offset: 0xa08
 // Size: 0x82
 function private aat_cooldown_init() {
@@ -179,7 +179,7 @@ function aat_vehicle_damage_monitor(einflictor, eattacker, idamage, idflags, sme
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2749f1d7, Offset: 0xba0
 // Size: 0x6e
 function function_3895d220(weapon) {
@@ -196,7 +196,7 @@ function function_3895d220(weapon) {
 }
 
 // Namespace aat/aat_shared
-// Params d, eflags: 0x1 linked
+// Params d, eflags: 0x0
 // Checksum 0x762ed1e9, Offset: 0xc18
 // Size: 0x6dc
 function aat_response(death, inflictor, attacker, damage, flags, mod, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
@@ -359,7 +359,7 @@ function register(name, percentage, cooldown_time_entity, cooldown_time_attacker
     #/
     level.aat[name] = spawnstruct();
     level.aat[name].name = name;
-    level.aat[name].hash_id = function_129f6487(name);
+    level.aat[name].hash_id = stathash(name);
     level.aat[name].percentage = percentage;
     level.aat[name].cooldown_time_entity = cooldown_time_entity;
     level.aat[name].cooldown_time_attacker = cooldown_time_attacker;
@@ -416,7 +416,7 @@ function register_immunity(name, archetype, immune_trigger, immune_result_direct
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x70bdb19, Offset: 0x1b28
 // Size: 0x172
 function finalize_clientfields() {
@@ -449,7 +449,7 @@ function register_aat_exemption(weapon) {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x36085a03, Offset: 0x1cf0
 // Size: 0x36
 function is_exempt_weapon(weapon) {
@@ -494,7 +494,7 @@ function register_reroll(name, count, active_func, damage_feedback_icon) {
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4eecc1a9, Offset: 0x1f98
 // Size: 0x52
 function function_702fb333(weapon) {
@@ -566,23 +566,23 @@ function acquire(weapon, name, var_77cf85b7) {
     switch (name) {
     case #"zm_aat_brain_decay":
         self.var_b01de37[weapon] = 2;
-        break;
+        return;
     case #"zm_aat_plasmatic_burst":
         self.var_b01de37[weapon] = 3;
-        break;
+        return;
     case #"zm_aat_kill_o_watt":
         self.var_b01de37[weapon] = 4;
-        break;
+        return;
     case #"zm_aat_frostbite":
         self.var_b01de37[weapon] = 1;
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
 // Namespace aat/aat_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc843936c, Offset: 0x24a8
 // Size: 0xb4
 function remove(weapon) {
@@ -601,7 +601,7 @@ function remove(weapon) {
 }
 
 // Namespace aat/aat_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9e81098e, Offset: 0x2568
 // Size: 0xe0
 function watch_weapon_changes() {

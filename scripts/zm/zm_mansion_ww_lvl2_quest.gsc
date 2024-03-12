@@ -55,9 +55,9 @@ function __main__() {
     if (zm_custom::function_901b751c(#"zmwonderweaponisenabled")) {
         level thread function_6b6712e3();
         level thread function_c9e23896();
-        var_35da56ee = zm_crafting::function_b18074d0(#"zblueprint_mansion_ww_lvl2");
-        var_35da56ee.var_670f9944.var_62a98b13 = #"weapon_frame";
-        var_35da56ee.var_2e0a273a.var_62a98b13 = #"prima_materia";
+        w_blueprint = zm_crafting::function_b18074d0(#"zblueprint_mansion_ww_lvl2");
+        w_blueprint.var_670f9944.var_62a98b13 = #"weapon_frame";
+        w_blueprint.var_2e0a273a.var_62a98b13 = #"prima_materia";
         zm_crafting::function_d1f16587(#"zblueprint_mansion_ww_lvl2", &ww_lvl2_crafted);
         callback::on_connect(&function_27b91fdb);
     }
@@ -130,9 +130,9 @@ function function_4a81e337() {
             if (function_216d0545(s_notify)) {
                 level notify(#"hash_2588983e2be22ca5");
             }
-        } else {
-            self.health = 10000;
+            continue;
         }
+        self.health = 10000;
     }
 }
 
@@ -271,9 +271,9 @@ function private function_29f66f1a(var_21839a96, var_57ec466d) {
     level flag::set(#"hash_1462d174d4023e58");
     s_machine = struct::get("s_pr_mach");
     s_start_loc = struct::get(#"s_prima_material_device");
-    var_feb69dca = util::spawn_model(s_start_loc.model, s_start_loc.origin, s_start_loc.angles);
+    mdl_chaos = util::spawn_model(s_start_loc.model, s_start_loc.origin, s_start_loc.angles);
     s_machine scene::play("Start");
-    var_feb69dca thread function_6f29b131();
+    mdl_chaos thread function_6f29b131();
     exploder::exploder("exp_lgt_prima_disp_red_sml");
     exploder::exploder_stop("exp_lgt_prima_disp_green_sml");
     s_machine thread scene::play("init");

@@ -6,7 +6,7 @@
 #namespace tabun;
 
 // Namespace tabun/tabun
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x85f9a127, Offset: 0xe8
 // Size: 0x3bc
 function init_shared() {
@@ -79,9 +79,9 @@ function watchtabungrenadedetonation(owner) {
     }
     if (getdvarint(#"scr_enable_new_tabun", 1)) {
         generatelocations(waitresult.position, owner);
-    } else {
-        singlelocation(waitresult.position, owner);
+        return;
     }
+    singlelocation(waitresult.position, owner);
 }
 
 // Namespace tabun/tabun
@@ -101,17 +101,20 @@ function damageeffectarea(owner, position, radius, height, killcament) {
         owner thread [[ level.dogsonflashdogs ]](gaseffectarea);
     }
     loopwaittime = 0.5;
-    durationoftabun = level.tabungasduration;
-    while (durationoftabun > 0) {
+    for (durationoftabun = level.tabungasduration; durationoftabun > 0; durationoftabun = durationoftabun - loopwaittime) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (level.friendlyfire == 0) {
-                jumpiffalse(players[i] != owner) LOC_00000214;
-                if (!isdefined(owner) || !isdefined(owner.team)) {
-                    continue;
+                if (players[i] != owner) {
+                    if (!isdefined(owner) || !isdefined(owner.team)) {
+                        continue;
+                    }
+                    if (level.teambased && !players[i] util::isenemyteam(owner.team)) {
+                        continue;
+                    }
                 }
-                jumpiffalse(level.teambased && !players[i] util::isenemyteam(owner.team)) LOC_00000214;
-            } else if (!isdefined(players[i].inpoisonarea) || players[i].inpoisonarea == 0) {
+            }
+            if (!isdefined(players[i].inpoisonarea) || players[i].inpoisonarea == 0) {
                 if (players[i] istouching(gaseffectarea) && players[i].sessionstate == "playing") {
                     if (!players[i] hasperk(#"specialty_proximityprotection")) {
                         trace = bullettrace(position, players[i].origin + vectorscale((0, 0, 1), 12), 0, players[i]);
@@ -124,7 +127,6 @@ function damageeffectarea(owner, position, radius, height, killcament) {
             }
         }
         wait(loopwaittime);
-        durationoftabun = durationoftabun - loopwaittime;
     }
     if (level.tabungasduration < level.poisonduration) {
         wait(level.poisonduration - level.tabungasduration);
@@ -338,9 +340,9 @@ function spawnalllocs(owner, startpos) {
         if (locations[#"radius"][i] != level.fx_tabun_radius0) {
             if (freepassused == 0 && locations[#"radius"][i] == level.fx_tabun_radius1) {
                 freepassused = 1;
-            } else {
-                singleeffect = 0;
+                continue;
             }
+            singleeffect = 0;
         }
     }
     onefoot = vectorscale((0, 0, 1), 12);
@@ -348,13 +350,13 @@ function spawnalllocs(owner, startpos) {
     thread playtabunsound(startpos);
     if (singleeffect == 1) {
         singlelocation(startpos, owner);
-    } else {
-        spawntimedfx(level.fx_tabun_3, startpos);
-        for (count = 0; count < 8; count++) {
-            if (isdefined(locations[#"fxtoplay"][count])) {
-                spawntimedfx(locations[#"fxtoplay"][count], locations[#"loc"][count]);
-                thread damageeffectarea(owner, locations[#"loc"][count], locations[#"radius"][count], locations[#"radius"][count], killcament);
-            }
+        return;
+    }
+    spawntimedfx(level.fx_tabun_3, startpos);
+    for (count = 0; count < 8; count++) {
+        if (isdefined(locations[#"fxtoplay"][count])) {
+            spawntimedfx(locations[#"fxtoplay"][count], locations[#"loc"][count]);
+            thread damageeffectarea(owner, locations[#"loc"][count], locations[#"radius"][count], locations[#"radius"][count], killcament);
         }
     }
 }
@@ -448,7 +450,9 @@ function getcenter(locations) {
         }
         if (cury > maxy) {
             maxy = cury;
-        } else if (cury < miny) {
+            continue;
+        }
+        if (cury < miny) {
             miny = cury;
         }
     }

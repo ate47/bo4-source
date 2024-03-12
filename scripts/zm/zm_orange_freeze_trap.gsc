@@ -216,9 +216,9 @@ function function_92f341d0(e_activator, e_volume) {
 function freeze_trap_fx(var_9d9f02b4) {
     if (var_9d9f02b4) {
         exploder::exploder("fxexp_frost_trap");
-    } else {
-        exploder::stop_exploder("fxexp_frost_trap");
+        return;
     }
+    exploder::stop_exploder("fxexp_frost_trap");
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap
@@ -304,22 +304,28 @@ function function_67b12ae8(e_player) {
     if (e_player zm_utility::is_drinking()) {
         self sethintstring("");
         return 0;
-    } else if (s_button.s_trap.var_6b64b967 === 1) {
+    }
+    if (s_button.s_trap.var_6b64b967 === 1) {
         self sethintstring(#"zombie/trap_active");
         return 1;
-    } else if (isdefined(s_button.wait_flag) && !level flag::get(s_button.wait_flag)) {
+    }
+    if (isdefined(s_button.wait_flag) && !level flag::get(s_button.wait_flag)) {
         self sethintstring(#"zombie/trap_locked");
         return 1;
-    } else if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
+    }
+    if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
         self sethintstring(#"zombie/trap_locked");
         return 1;
-    } else if (isdefined(s_button.power_flag) && !level flag::get(s_button.power_flag)) {
+    }
+    if (isdefined(s_button.power_flag) && !level flag::get(s_button.power_flag)) {
         self sethintstring(#"zombie/need_power");
         return 1;
-    } else if (s_button.s_trap.var_41ee2ddc === 0) {
+    }
+    if (s_button.s_trap.var_41ee2ddc === 0) {
         self sethintstring(#"zombie/trap_cooldown");
         return 1;
-    } else if (util::get_game_type() == "zstandard") {
+    }
+    if (util::get_game_type() == "zstandard") {
         if (function_8b1a219a()) {
             self sethintstring(#"hash_61d85c966dd9e83f");
             return 1;
@@ -327,7 +333,9 @@ function function_67b12ae8(e_player) {
             self sethintstring(#"hash_24a438482954901");
             return 1;
         }
-    } else if (function_8b1a219a()) {
+        return;
+    }
+    if (function_8b1a219a()) {
         if (level flag::get(#"half_price_traps")) {
             self sethintstring(#"hash_6e8ef1b690e98e51", int(500));
             return 1;
@@ -335,13 +343,14 @@ function function_67b12ae8(e_player) {
             self sethintstring(#"hash_6e8ef1b690e98e51", 1000);
             return 1;
         }
-    } else if (level flag::get(#"half_price_traps")) {
+        return;
+    }
+    if (level flag::get(#"half_price_traps")) {
         self sethintstring(#"hash_23c1c09e94181fdb", int(500));
         return 1;
-    } else {
-        self sethintstring(#"hash_23c1c09e94181fdb", 1000);
-        return 1;
     }
+    self sethintstring(#"hash_23c1c09e94181fdb", 1000);
+    return 1;
 }
 
 // Namespace zm_orange_freeze_trap/zm_orange_freeze_trap

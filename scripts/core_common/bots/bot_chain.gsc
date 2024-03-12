@@ -106,9 +106,9 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
         foreach (struct in targetstructs) {
             if (active) {
                 line(var_72284260.origin, struct.origin, (0, 1, 0), 1, 0, duration);
-            } else {
-                line(var_72284260.origin, struct.origin, (1, 0.5, 0), 0.7, 0, duration);
+                continue;
             }
+            line(var_72284260.origin, struct.origin, (1, 0.5, 0), 0.7, 0, duration);
         }
         if (isdefined(var_72284260.targetname)) {
             if (active) {
@@ -218,12 +218,16 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
                     nodecolor = (1, 0, 0);
                 }
                 box(goal.origin, vectorscale((-1, -1, 0), 16), vectorscale((1, 1, 0), 16), 0, nodecolor, 1, 1, duration);
-            } else if (goal.classname === "<unknown string>") {
+                continue;
+            }
+            if (goal.classname === "<unknown string>") {
                 maxs = goal getmaxs();
                 mins = goal getmins();
                 box(goal.origin, mins, maxs, 0, (0, 1, 0), 1, 1, duration);
                 line(var_72284260.origin, goal.origin, (0, 1, 0), 1, 0, duration);
-            } else if (goal.variantname === "<unknown string>") {
+                continue;
+            }
+            if (goal.variantname === "<unknown string>") {
                 if (isdefined(goal.radius)) {
                     searchradius = goal.radius;
                 } else {

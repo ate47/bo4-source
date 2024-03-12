@@ -86,13 +86,13 @@ function function_50d4c00a(localclientnum, oldval, newval, bnewent, binitialsnap
             var_d2c301e0 = level.var_16af4504[var_32c41440];
             self thread function_be34e28f(localclientnum, var_d2c301e0);
         }
-    } else {
-        if (self == function_5c10bd79(localclientnum)) {
-            self notify(#"hash_2f1dc2ea83ba9e2");
-            self postfx::exitpostfxbundle("pstfx_zm_last_stand");
-        }
-        level.var_16af4504[self getentitynumber()] = undefined;
+        return;
     }
+    if (self == function_5c10bd79(localclientnum)) {
+        self notify(#"hash_2f1dc2ea83ba9e2");
+        self postfx::exitpostfxbundle("pstfx_zm_last_stand");
+    }
+    level.var_16af4504[self getentitynumber()] = undefined;
 }
 
 // Namespace zm_laststand/zm_laststand

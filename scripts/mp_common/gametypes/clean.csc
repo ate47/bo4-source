@@ -56,7 +56,9 @@ function function_11abf5b2(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         self.var_47b256ef linkto(self);
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self thread function_d1834e16(localclientnum);
     }
 }
@@ -192,11 +194,11 @@ function function_568727a2(localclientnum, oldval, newval, bnewent, binitialsnap
             objective_setstate(localclientnum, objid, "active");
             objective_setposition(localclientnum, objid, self.origin);
         }
-    } else {
-        objid = function_53576950(localclientnum, self getentitynumber());
-        if (isdefined(objid)) {
-            objective_setstate(localclientnum, objid, "invisible");
-        }
+        return;
+    }
+    objid = function_53576950(localclientnum, self getentitynumber());
+    if (isdefined(objid)) {
+        objective_setstate(localclientnum, objid, "invisible");
     }
 }
 

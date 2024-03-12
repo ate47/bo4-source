@@ -361,28 +361,28 @@ function function_1e7eecd7(vehicle, var_44e9a475) {
             self util::function_9a39538a();
             self.hawk.var_a3b23d12 = 1;
             self playsoundtoplayer("gdt_hawk_pov_out", self);
-        } else {
-            if (self function_d89c1628(vehicle)) {
-                self.hawk.controlling = 1;
-                self thread function_1b057db2();
-                vehicle usevehicle(self, 0);
-                self vehicle::set_vehicle_drivable_time(self.var_6b1c6f54, self.var_3dba7204 + self.var_6b1c6f54);
-                vehicle.var_55dded30 = self;
-                vehicle.playercontrolled = 1;
-                self killstreaks::thermal_glow_enemies_only(1);
-                self util::setusingremote("hawk");
-                vehicle playsoundtoplayer("gdt_hawk_pov_in", self);
-                self freezecontrolsallowlook(0);
-                vehicle vehicle_ai::clearallmovement();
-                vehicle function_d4c687c9();
-                if (isdefined(vehicle.var_e9f68b24)) {
-                    self setplayerangles(vehicle.var_e9f68b24);
-                }
-            } else if (!self fragbuttonpressed()) {
-                self.hawk.var_a3b23d12 = 0;
-            }
-            waitframe(1);
+            continue;
         }
+        if (self function_d89c1628(vehicle)) {
+            self.hawk.controlling = 1;
+            self thread function_1b057db2();
+            vehicle usevehicle(self, 0);
+            self vehicle::set_vehicle_drivable_time(self.var_6b1c6f54, self.var_3dba7204 + self.var_6b1c6f54);
+            vehicle.var_55dded30 = self;
+            vehicle.playercontrolled = 1;
+            self killstreaks::thermal_glow_enemies_only(1);
+            self util::setusingremote("hawk");
+            vehicle playsoundtoplayer("gdt_hawk_pov_in", self);
+            self freezecontrolsallowlook(0);
+            vehicle vehicle_ai::clearallmovement();
+            vehicle function_d4c687c9();
+            if (isdefined(vehicle.var_e9f68b24)) {
+                self setplayerangles(vehicle.var_e9f68b24);
+            }
+        } else if (!self fragbuttonpressed()) {
+            self.hawk.var_a3b23d12 = 0;
+        }
+        waitframe(1);
     }
 }
 
@@ -736,42 +736,42 @@ function function_9ace0fb6(targets) {
                 if (isdefined(self.hawk.var_5f360c48)) {
                     self.hawk.var_5f360c48[target getentitynumber()] = undefined;
                 }
-            } else {
-                var_4ef4e267 = target getentitynumber();
-                ti = player.var_13c51aa5[var_4ef4e267];
-                if (!isdefined(ti) && player.var_13c51aa5.size < 6) {
-                    for (var_6665225 = 5; var_6665225 >= 0; var_6665225--) {
-                        if (!isinarray(player.var_13c51aa5, var_6665225)) {
-                            ti = var_6665225;
-                            player.var_13c51aa5[var_4ef4e267] = ti;
-                            break;
-                        }
+                continue;
+            }
+            var_4ef4e267 = target getentitynumber();
+            ti = player.var_13c51aa5[var_4ef4e267];
+            if (!isdefined(ti) && player.var_13c51aa5.size < 6) {
+                for (var_6665225 = 5; var_6665225 >= 0; var_6665225--) {
+                    if (!isinarray(player.var_13c51aa5, var_6665225)) {
+                        ti = var_6665225;
+                        player.var_13c51aa5[var_4ef4e267] = ti;
+                        break;
                     }
                 }
-                if (isdefined(ti)) {
-                    info = player.var_e6013893[ti];
-                    if (!info.var_fb579b3e) {
-                        info.first_visible = time;
-                    }
-                    info.visible = 1;
-                    info.var_1fe906d8 = time;
-                    player clientfield::function_9bf78ef8("hawk_target_lockon" + ti, "target_visible", 1);
-                    tagtime = int(bundle.tag_time * 1000);
-                    if (target hasperk(#"specialty_nokillstreakreticle")) {
-                        tagtime = tagtime * bundle.var_59b7880b;
-                    }
-                    if (info.var_1fe906d8 - info.first_visible > tagtime) {
-                        if (!isdefined(info.var_a7e1d732) || time - info.var_a7e1d732 > var_fe38768b && isdefined(isdefined(player.hawk)) && isdefined(player.hawk.vehicle)) {
-                            target playsoundtoplayer(#"hash_4f43df2a649784d0", target);
-                        }
-                        info.state = 1;
-                        info.var_a7e1d732 = time;
-                    } else if (isdefined(info.var_a7e1d732) && time - info.var_a7e1d732 < int(bundle.var_fb7c1412 * 1000)) {
-                        info.state = 1;
-                        info.var_a7e1d732 = time;
-                    }
-                    player.var_e6013893[ti] = info;
+            }
+            if (isdefined(ti)) {
+                info = player.var_e6013893[ti];
+                if (!info.var_fb579b3e) {
+                    info.first_visible = time;
                 }
+                info.visible = 1;
+                info.var_1fe906d8 = time;
+                player clientfield::function_9bf78ef8("hawk_target_lockon" + ti, "target_visible", 1);
+                tagtime = int(bundle.tag_time * 1000);
+                if (target hasperk(#"specialty_nokillstreakreticle")) {
+                    tagtime = tagtime * bundle.var_59b7880b;
+                }
+                if (info.var_1fe906d8 - info.first_visible > tagtime) {
+                    if (!isdefined(info.var_a7e1d732) || time - info.var_a7e1d732 > var_fe38768b && isdefined(isdefined(player.hawk)) && isdefined(player.hawk.vehicle)) {
+                        target playsoundtoplayer(#"hash_4f43df2a649784d0", target);
+                    }
+                    info.state = 1;
+                    info.var_a7e1d732 = time;
+                } else if (isdefined(info.var_a7e1d732) && time - info.var_a7e1d732 < int(bundle.var_fb7c1412 * 1000)) {
+                    info.state = 1;
+                    info.var_a7e1d732 = time;
+                }
+                player.var_e6013893[ti] = info;
             }
         }
     }
@@ -793,9 +793,9 @@ function function_2d7b62() {
                 level.var_aac98621[ti] remote_missile_target_lockon::set_target_locked(player, player.var_e6013893[ti].state);
                 if (!isalive(target)) {
                     level.var_aac98621[ti] remote_missile_target_lockon::set_killed(player, 1);
-                } else {
-                    level.var_aac98621[ti] remote_missile_target_lockon::set_killed(player, 0);
+                    continue;
                 }
+                level.var_aac98621[ti] remote_missile_target_lockon::set_killed(player, 0);
             }
         }
     }

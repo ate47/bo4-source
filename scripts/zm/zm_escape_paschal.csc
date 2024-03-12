@@ -83,23 +83,23 @@ function function_d36b21ad(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_blue"], self, "tag_origin");
-        break;
+        return;
     case 2:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_green"], self, "tag_origin");
-        break;
+        return;
     case 3:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_white"], self, "tag_origin");
-        break;
+        return;
     case 4:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_orange"], self, "tag_origin");
-        break;
+        return;
     case 5:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_red"], self, "tag_origin");
-        break;
+        return;
     case 0:
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -154,9 +154,9 @@ function function_d598fd7e(localclientnum, oldval, newval, bnewent, binitialsnap
         self.n_fx_id = util::playfxontag(localclientnum, level._effect[#"ritual_gobo"], self, "tag_origin");
         wait(1.6);
         util::playfxontag(localclientnum, level._effect[#"hash_180f832f742958d6"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.n_fx_id);
+        return;
     }
+    stopfx(localclientnum, self.n_fx_id);
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -221,9 +221,9 @@ function function_430edc4e(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         if (isdefined(level._effect[#"air_blast"])) {
             self.var_8eef2f82 = util::playfxontag(localclientnum, level._effect[#"air_blast"], self, "tag_origin");
-            var_6e967983 = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 20), self.angles);
-            var_6e967983 scene::play(#"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", "shot_1");
-            var_6e967983 delete();
+            mdl_ghost = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 20), self.angles);
+            mdl_ghost scene::play(#"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", "shot_1");
+            mdl_ghost delete();
         }
         if (isdefined(level._effect[#"hash_1839aae8f96148af"])) {
             self.var_99f0142a = util::playfxontag(localclientnum, level._effect[#"hash_1839aae8f96148af"], self, "tag_origin");
@@ -270,24 +270,24 @@ function function_a596ea8d(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_71ec8b40875fdf5f");
             self.var_147a3cdc[localclientnum] = self playloopsound(#"hash_7bdc545588111e41");
         }
-    } else {
-        if (isdefined(self.var_86931af3[localclientnum])) {
-            level beam::function_47deed80(localclientnum, self.var_86931af3[localclientnum]);
-            self.var_86931af3[localclientnum] = undefined;
-        }
-        if (isdefined(self.var_d1f92a1c[localclientnum])) {
-            self.var_d1f92a1c[localclientnum] delete();
-            self.var_d1f92a1c[localclientnum] = undefined;
-        }
-        if (isdefined(self.var_95496a89[localclientnum])) {
-            self.var_95496a89[localclientnum] delete();
-            self.var_95496a89[localclientnum] = undefined;
-        }
-        if (isdefined(self.var_147a3cdc[localclientnum])) {
-            self playsound(localclientnum, #"hash_3c3813560a59a64a");
-            self stoploopsound(self.var_147a3cdc[localclientnum]);
-            self.var_147a3cdc[localclientnum] = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_86931af3[localclientnum])) {
+        level beam::function_47deed80(localclientnum, self.var_86931af3[localclientnum]);
+        self.var_86931af3[localclientnum] = undefined;
+    }
+    if (isdefined(self.var_d1f92a1c[localclientnum])) {
+        self.var_d1f92a1c[localclientnum] delete();
+        self.var_d1f92a1c[localclientnum] = undefined;
+    }
+    if (isdefined(self.var_95496a89[localclientnum])) {
+        self.var_95496a89[localclientnum] delete();
+        self.var_95496a89[localclientnum] = undefined;
+    }
+    if (isdefined(self.var_147a3cdc[localclientnum])) {
+        self playsound(localclientnum, #"hash_3c3813560a59a64a");
+        self stoploopsound(self.var_147a3cdc[localclientnum]);
+        self.var_147a3cdc[localclientnum] = undefined;
     }
 }
 
@@ -303,13 +303,21 @@ function function_49b054dd(localclientnum, oldval, newval, bnewent, binitialsnap
     exploder::stop_exploder("lgtexp_wardenhouse_red");
     if (newval == 1) {
         self.var_29749873 = util::playfxontag(localclientnum, level._effect[#"hash_6d3840ae2ba64bdd"], self, "tag_origin");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_29749873 = util::playfxontag(localclientnum, level._effect[#"hash_289e42e25063ac26"], self, "tag_origin");
-    } else if (newval == 3) {
+        return;
+    }
+    if (newval == 3) {
         self.var_29749873 = util::playfxontag(localclientnum, level._effect[#"hash_287c57e25046e96f"], self, "tag_origin");
-    } else if (newval == 4) {
+        return;
+    }
+    if (newval == 4) {
         self.var_29749873 = util::playfxontag(localclientnum, level._effect[#"hash_287868e250431d7b"], self, "tag_origin");
-    } else if (newval == 5) {
+        return;
+    }
+    if (newval == 5) {
         exploder::exploder("lgtexp_wardenhouse_red");
     }
 }
@@ -381,7 +389,9 @@ function function_6357e884(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_2185511c[localclientnum][self.var_2185511c[localclientnum].size] = util::playfxontag(localclientnum, level._effect[#"hash_2928b6d60aaacda6"], self, str_tag);
         var_18407835 = self gettagorigin(str_tag);
         playsound(localclientnum, #"hash_6d26aa0fd4a98020", var_18407835);
-    } else if (self.var_2185511c[localclientnum].size) {
+        return;
+    }
+    if (self.var_2185511c[localclientnum].size) {
         foreach (fx in self.var_2185511c[localclientnum]) {
             deletefx(localclientnum, fx);
         }
@@ -424,9 +434,9 @@ function function_d326587e(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_e83bf3a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self thread postfx::playpostfxbundle(#"pstfx_slowed");
-    } else {
-        self thread postfx::exitpostfxbundle(#"pstfx_slowed");
+        return;
     }
+    self thread postfx::exitpostfxbundle(#"pstfx_slowed");
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -440,15 +450,15 @@ function function_e33e10b9(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_713bf699d03aa7c1");
             self.var_6ca7b3dd = self playloopsound(#"hash_5248e6e3ffed7696");
         }
-    } else {
-        if (isdefined(self.var_91f82333)) {
-            stopfx(localclientnum, self.var_91f82333);
-            self.var_91f82333 = undefined;
-        }
-        if (isdefined(self.var_6ca7b3dd)) {
-            self stoploopsound(self.var_6ca7b3dd);
-            self.var_6ca7b3dd = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_91f82333)) {
+        stopfx(localclientnum, self.var_91f82333);
+        self.var_91f82333 = undefined;
+    }
+    if (isdefined(self.var_6ca7b3dd)) {
+        self stoploopsound(self.var_6ca7b3dd);
+        self.var_6ca7b3dd = undefined;
     }
 }
 
@@ -463,7 +473,9 @@ function function_3537ad19(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         self.var_23647e90 = util::playfxontag(localclientnum, level._effect[#"hash_508055920f327121"], self, "tag_fx_light_02");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_23647e90 = util::playfxontag(localclientnum, level._effect[#"hash_6b3f19f4c90a1b75"], self, "tag_fx_light_01");
     }
 }
@@ -497,7 +509,9 @@ function duffel_prison(localclientnum, oldval, newval, bnewent, binitialsnap, fi
     if (newval == 1) {
         var_e0630bbb = struct::get("p_s_4_bag");
         self.var_c5996c09 = util::spawn_model(localclientnum, #"p8_zm_esc_laundry_bag", var_e0630bbb.origin, var_e0630bbb.angles);
-    } else if (isdefined(self.var_c5996c09)) {
+        return;
+    }
+    if (isdefined(self.var_c5996c09)) {
         self.var_c5996c09 delete();
     }
 }
@@ -511,11 +525,11 @@ function function_5688631d(localclientnum, oldval, newval, bnewent, binitialsnap
         forcestreamxmodel(#"c_t8_zmb_mob_ghoul_body1_rob");
         forcestreamxmodel(#"c_t8_zmb_mob_ghoul_body2_rob");
         forcestreamxmodel(#"c_t8_zmb_mob_ghoul_body3_rob");
-    } else {
-        stopforcestreamingxmodel(#"c_t8_zmb_mob_ghoul_body1_rob");
-        stopforcestreamingxmodel(#"c_t8_zmb_mob_ghoul_body2_rob");
-        stopforcestreamingxmodel(#"c_t8_zmb_mob_ghoul_body3_rob");
+        return;
     }
+    stopforcestreamingxmodel(#"c_t8_zmb_mob_ghoul_body1_rob");
+    stopforcestreamingxmodel(#"c_t8_zmb_mob_ghoul_body2_rob");
+    stopforcestreamingxmodel(#"c_t8_zmb_mob_ghoul_body3_rob");
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -528,12 +542,12 @@ function function_8fe4f2a7(localclientnum, oldval, newval, bnewent, binitialsnap
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 0);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 0);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 0);
-    } else {
-        self playrenderoverridebundle(#"hash_68ee9247aaae4517");
-        self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
-        self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
-        self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1);
+        return;
     }
+    self playrenderoverridebundle(#"hash_68ee9247aaae4517");
+    self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
+    self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
+    self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1);
 }
 
 // Namespace paschal/zm_escape_paschal

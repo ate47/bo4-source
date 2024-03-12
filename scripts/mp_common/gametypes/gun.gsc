@@ -145,7 +145,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace gun/gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae68b79c, Offset: 0x13e8
 // Size: 0xdc
 function function_a8da260c() {
@@ -158,7 +158,7 @@ function function_a8da260c() {
 }
 
 // Namespace gun/gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0x14d0
 // Size: 0x4
 function onconnect() {
@@ -166,7 +166,7 @@ function onconnect() {
 }
 
 // Namespace gun/gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9ed709bb, Offset: 0x14e0
 // Size: 0x8c
 function onstartgametype() {
@@ -177,7 +177,7 @@ function onstartgametype() {
 }
 
 // Namespace gun/gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80b9eba5, Offset: 0x1578
 // Size: 0x194
 function inactivitykick() {
@@ -202,7 +202,7 @@ function inactivitykick() {
 }
 
 // Namespace gun/gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf137785, Offset: 0x1718
 // Size: 0x6c
 function onspawnplayer(predictedspawn) {
@@ -215,7 +215,7 @@ function onspawnplayer(predictedspawn) {
 }
 
 // Namespace gun/gun
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x81ea9961, Offset: 0x1790
 // Size: 0x1f4
 function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
@@ -246,7 +246,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
 }
 
 // Namespace gun/gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8b1508e, Offset: 0x1990
 // Size: 0x3c
 function onendgame(var_c1e98979) {
@@ -255,7 +255,7 @@ function onendgame(var_c1e98979) {
 }
 
 // Namespace gun/gun
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0xd7953c95, Offset: 0x19d8
 // Size: 0x16a
 function addguntoprogression(weaponname, attachment1, attachment2, attachment3, attachment4, attachment5, attachment6, attachment7, attachment8) {
@@ -289,7 +289,7 @@ function addguntoprogression(weaponname, attachment1, attachment2, attachment3, 
 }
 
 // Namespace gun/gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9bb33dee, Offset: 0x1b50
 // Size: 0x4c
 function takeoldweapon(oldweapon) {
@@ -299,7 +299,7 @@ function takeoldweapon(oldweapon) {
 }
 
 // Namespace gun/gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4511776, Offset: 0x1ba8
 // Size: 0x428
 function givecustomloadout(takeoldweapon = 0) {
@@ -351,7 +351,7 @@ function givecustomloadout(takeoldweapon = 0) {
 }
 
 // Namespace gun/gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x303a1678, Offset: 0x1fd8
 // Size: 0x19e
 function promoteplayer(weaponused) {
@@ -375,7 +375,7 @@ function promoteplayer(weaponused) {
 }
 
 // Namespace gun/gun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd0763058, Offset: 0x2180
 // Size: 0x23c
 function demoteplayer(attacker) {
@@ -406,7 +406,7 @@ function demoteplayer(attacker) {
 }
 
 // Namespace gun/gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4322e6d7, Offset: 0x23c8
 // Size: 0x70
 function infiniteammo() {
@@ -419,7 +419,7 @@ function infiniteammo() {
 }
 
 // Namespace gun/gun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa0fee671, Offset: 0x2440
 // Size: 0x10a
 function function_486a8395() {

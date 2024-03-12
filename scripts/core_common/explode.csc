@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace explode/explode
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd34d549a, Offset: 0x100
 // Size: 0xcc
 function __init__() {
@@ -44,7 +44,7 @@ function updatedvars() {
 }
 
 // Namespace explode/explode
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd4c94e3, Offset: 0x2a8
 // Size: 0xfc
 function localplayer_spawned(localclientnum) {
@@ -67,7 +67,7 @@ function localplayer_spawned(localclientnum) {
 }
 
 // Namespace explode/explode
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x125b73c0, Offset: 0x3b0
 // Size: 0xa8
 function watchforplayerfalldamage(localclientnum) {
@@ -82,7 +82,7 @@ function watchforplayerfalldamage(localclientnum) {
 }
 
 // Namespace explode/explode
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x65397af9, Offset: 0x460
 // Size: 0x1cc
 function watchforplayerslide(localclientnum) {
@@ -112,7 +112,7 @@ function watchforplayerslide(localclientnum) {
 }
 
 // Namespace explode/explode
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xf1165d68, Offset: 0x638
 // Size: 0x124
 function dothedirty(localclientnum, right, up, distance, dirtduration, dirtfadetime) {
@@ -127,7 +127,7 @@ function dothedirty(localclientnum, right, up, distance, dirtduration, dirtfadet
 }
 
 // Namespace explode/explode
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xfcd099ec, Offset: 0x768
 // Size: 0xdc
 function do_the_dirty_lerp_helper(currenttime, elapsedtime, localclientnum, dirtduration, right, up, distance, dirtfadetime) {
@@ -141,7 +141,7 @@ function do_the_dirty_lerp_helper(currenttime, elapsedtime, localclientnum, dirt
 }
 
 // Namespace explode/explode
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd6d4cd62, Offset: 0x850
 // Size: 0x3a0
 function watchforexplosion(localclientnum) {

@@ -254,9 +254,9 @@ function private on_vehicle_spawned() {
                             if (isdefined(seat)) {
                                 ai_rider get_in(ai_rider, self, seat, 1);
                             }
-                        } else {
-                            ai_rider get_in(ai_rider, self, undefined, 1);
+                            continue;
                         }
+                        ai_rider get_in(ai_rider, self, undefined, 1);
                     }
                 }
             }
@@ -549,22 +549,22 @@ function unload(seat) {
     switch (seat) {
     case #"driver":
         function_114d7bd3(self);
-        break;
+        return;
     case #"passenger1":
         function_b56639f2(self);
-        break;
+        return;
     case #"gunner1":
         function_2ef91b74(self);
-        break;
+        return;
     case #"crew":
         function_2ca26543(self);
-        break;
+        return;
     default:
         function_114d7bd3(self);
         function_b56639f2(self);
         function_2ca26543(self);
         function_2ef91b74(self);
-        break;
+        return;
     }
 }
 

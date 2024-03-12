@@ -34,11 +34,11 @@ function onempchanged(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     localplayer = function_5c10bd79(localclientnum);
     if (newval == 1) {
         self startempeffects(localplayer);
-    } else {
-        already_distance_monitored = localplayer clientfield::get_to_player("empd_monitor_distance") == 1;
-        if (!already_distance_monitored) {
-            self stopempeffects(localplayer, oldval);
-        }
+        return;
+    }
+    already_distance_monitored = localplayer clientfield::get_to_player("empd_monitor_distance") == 1;
+    if (!already_distance_monitored) {
+        self stopempeffects(localplayer, oldval);
     }
 }
 
@@ -84,10 +84,10 @@ function on_player_spawned(localclientnum) {
     if (curval > 0 && localplayer isempjammed()) {
         startempeffects(localplayer, inkillcam);
         localplayer monitordistance(localclientnum);
-    } else {
-        stopempeffects(localplayer, 0, 1);
-        localplayer notify(#"end_emp_monitor_distance");
+        return;
     }
+    stopempeffects(localplayer, 0, 1);
+    localplayer notify(#"end_emp_monitor_distance");
 }
 
 // Namespace empgrenade/empgrenade
@@ -99,10 +99,10 @@ function onempmonitordistancechanged(localclientnum, oldval, newval, bnewent, bi
     if (newval == 1) {
         startempeffects(localplayer, bwastimejump);
         localplayer monitordistance(localclientnum);
-    } else {
-        stopempeffects(localplayer, oldval, bwastimejump);
-        localplayer notify(#"end_emp_monitor_distance");
+        return;
     }
+    stopempeffects(localplayer, oldval, bwastimejump);
+    localplayer notify(#"end_emp_monitor_distance");
 }
 
 // Namespace empgrenade/empgrenade

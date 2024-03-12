@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5b127090, Offset: 0x220
 // Size: 0x258
 function __init__() {
@@ -42,7 +42,7 @@ function __init__() {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x415fb473, Offset: 0x480
 // Size: 0xda
 function function_330a13a6(params) {
@@ -55,7 +55,7 @@ function function_330a13a6(params) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6dc85a78, Offset: 0x568
 // Size: 0x6e
 function function_bd054816(params) {
@@ -64,13 +64,13 @@ function function_bd054816(params) {
     }
     if (params.using_offhand) {
         function_17d973ec(params.localclientnum);
-    } else {
-        self notify(#"hash_726805ec8cfae188");
+        return;
     }
+    self notify(#"hash_726805ec8cfae188");
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x12167ed6, Offset: 0x5e0
 // Size: 0x252
 function function_6868fab3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -96,7 +96,7 @@ function function_6868fab3(localclientnum, oldval, newval, bnewent, binitialsnap
         arrayinsert(level.tripwire.wires, self, level.tripwire.wires.size);
         self callback::on_shutdown(&function_6230a8a5);
         self thread function_55c50f15();
-        break;
+        return;
     case 2:
     case 3:
         foreach (beam_id in level.tripwire.localclients[localclientnum].beams) {
@@ -106,12 +106,12 @@ function function_6868fab3(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         level.tripwire.localclients[localclientnum].beams = [];
         self thread function_55c50f15();
-        break;
+        return;
     }
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xad6c4c69, Offset: 0x840
 // Size: 0x34
 function function_6230a8a5(localclientnum) {
@@ -119,7 +119,7 @@ function function_6230a8a5(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbbef556d, Offset: 0x880
 // Size: 0x30
 function function_a4b3da97(trace) {
@@ -130,7 +130,7 @@ function function_a4b3da97(trace) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2efb3d0, Offset: 0x8b8
 // Size: 0x3fc
 function function_55c50f15() {
@@ -178,7 +178,7 @@ function function_55c50f15() {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x58369324, Offset: 0xcc0
 // Size: 0xcc
 function function_9233eb94(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -186,13 +186,15 @@ function function_9233eb94(localclientnum, oldval, newval, bnewent, binitialsnap
         self endon(#"death");
         self util::waittill_dobj(localclientnum);
         self.beam_fx = util::playfxontag(localclientnum, #"hash_253c31a9114d6029", self, "tag_origin");
-    } else if (isdefined(self.beam_fx)) {
+        return;
+    }
+    if (isdefined(self.beam_fx)) {
         killfx(localclientnum, self.beam_fx);
     }
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85ac8766, Offset: 0xd98
 // Size: 0x7e
 function function_2a919ef0(localclientnum) {
@@ -210,7 +212,7 @@ function function_2a919ef0(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe20fb4dc, Offset: 0xe20
 // Size: 0x2de
 function function_17d973ec(localclientnum) {
@@ -248,7 +250,7 @@ function function_17d973ec(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x14538828, Offset: 0x1108
 // Size: 0xa4
 function function_b882ca33(localclientnum) {
@@ -261,7 +263,7 @@ function function_b882ca33(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x38c946e8, Offset: 0x11b8
 // Size: 0x82
 function spawn_previs(localclientnum) {
@@ -270,7 +272,7 @@ function spawn_previs(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xb3a73cef, Offset: 0x1248
 // Size: 0xcc
 function function_3e8d9b27(local_client_num, previs_weapon, validlocation) {
@@ -283,7 +285,7 @@ function function_3e8d9b27(local_client_num, previs_weapon, validlocation) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x91dfd9f9, Offset: 0x1320
 // Size: 0x5c
 function function_95d56693() {
@@ -296,7 +298,7 @@ function function_95d56693() {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1971ba56, Offset: 0x1388
 // Size: 0x54c
 function update_previs(localclientnum) {
@@ -337,7 +339,7 @@ function update_previs(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xcc1b842d, Offset: 0x18e0
 // Size: 0x14a
 function function_26c580d9(localclientnum, tripwire, trace, var_f2edf308) {
@@ -357,7 +359,7 @@ function function_26c580d9(localclientnum, tripwire, trace, var_f2edf308) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30d2f1c, Offset: 0x1a38
 // Size: 0x302
 function function_adb3eb2c(localclientnum) {
@@ -397,7 +399,9 @@ function function_adb3eb2c(localclientnum) {
                 killfx(localclientnum, self.var_2045ae5c);
                 self.var_2045ae5c = undefined;
             }
-        } else if (isdefined(var_1eb381e1)) {
+            continue;
+        }
+        if (isdefined(var_1eb381e1)) {
             var_1eb381e1.shoulddraw = 0;
         }
     }
@@ -407,7 +411,7 @@ function function_adb3eb2c(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcf53b3ab, Offset: 0x1d48
 // Size: 0x160
 function function_dc76d0d0(localclientnum) {
@@ -415,7 +419,9 @@ function function_dc76d0d0(localclientnum) {
         beam = level.var_77cae643[i];
         if (beam.shoulddraw && !isdefined(beam.beam_id) && isdefined(beam.ent1) && isdefined(beam.ent2)) {
             level.var_77cae643[i].beam_id = level beam::function_cfb2f62a(localclientnum, beam.ent1, "tag_fx", beam.ent2, "tag_fx", "beam8_plyr_equip_ied_previs");
-        } else if (beam.shoulddraw == 0 && isdefined(beam.beam_id)) {
+            continue;
+        }
+        if (beam.shoulddraw == 0 && isdefined(beam.beam_id)) {
             beam::function_47deed80(localclientnum, beam.beam_id);
             level.var_77cae643[i].beam_id = undefined;
         }
@@ -423,7 +429,7 @@ function function_dc76d0d0(localclientnum) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x781aa01f, Offset: 0x1eb0
 // Size: 0x98
 function function_c51a3b22() {
@@ -436,7 +442,7 @@ function function_c51a3b22() {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf5843350, Offset: 0x1f50
 // Size: 0x48
 function function_6b69576b() {
@@ -446,7 +452,7 @@ function function_6b69576b() {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x14cfa5ee, Offset: 0x1fa0
 // Size: 0xaa
 function function_8c308396(ent1, ent2) {
@@ -459,7 +465,7 @@ function function_8c308396(ent1, ent2) {
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x22628350, Offset: 0x2058
 // Size: 0x6c
 function function_810faece(local_client_num, objective_id) {

@@ -127,9 +127,9 @@ function update_previs(localclientnum, invalid) {
     level.var_9c4cdb79[localclientnum].hitent = trace1[#"entity"];
     if (invalid) {
         player function_bf191832(0, (0, 0, 0), (0, 0, 0));
-    } else {
-        player function_bf191832(1, level.var_9c4cdb79[localclientnum].origin, level.var_9c4cdb79[localclientnum].angles);
+        return;
     }
+    player function_bf191832(1, level.var_9c4cdb79[localclientnum].origin, level.var_9c4cdb79[localclientnum].angles);
 }
 
 // Namespace ir_strobe/namespace_f0840611

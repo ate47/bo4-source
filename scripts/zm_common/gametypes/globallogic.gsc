@@ -825,9 +825,9 @@ function endgame(winner, endreasontext) {
         if ((level.rankedmatch || level.leaguematch) && !player issplitscreen()) {
             if (isdefined(player.setpromotion)) {
                 player stats::set_stat(#"afteractionreportstats", #"lobbypopup", #"promotion");
-            } else {
-                player stats::set_stat(#"afteractionreportstats", #"lobbypopup", #"summary");
+                continue;
             }
+            player stats::set_stat(#"afteractionreportstats", #"lobbypopup", #"summary");
         }
     }
     music::setmusicstate("SILENT");
@@ -1245,11 +1245,11 @@ function updateteamstatus(var_bdfe75a7) {
                 } else {
                     level.deadplayers[team][level.deadplayers[team].size] = player;
                 }
-            } else {
-                level.deadplayers[team][level.deadplayers[team].size] = player;
-                if (player globallogic_spawn::mayspawn()) {
-                    level.playerlives[team]++;
-                }
+                continue;
+            }
+            level.deadplayers[team][level.deadplayers[team].size] = player;
+            if (player globallogic_spawn::mayspawn()) {
+                level.playerlives[team]++;
             }
         }
     }

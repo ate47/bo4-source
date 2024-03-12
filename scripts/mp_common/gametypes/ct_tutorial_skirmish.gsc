@@ -49,11 +49,13 @@ function init() {
         } else {
             level.var_352d65e9 = 0.8;
         }
-    } else if (level.ct_difficulty == "hard") {
-        level.var_352d65e9 = 1.15;
-    } else {
-        level.var_352d65e9 = 1;
+        return;
     }
+    if (level.ct_difficulty == "hard") {
+        level.var_352d65e9 = 1.15;
+        return;
+    }
+    level.var_352d65e9 = 1;
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
@@ -238,9 +240,9 @@ function function_8599f7cb() {
             level.b_movie = 0;
         }
         player function_ea859fe2();
-    } else {
-        level.b_movie = 0;
+        return;
     }
+    level.b_movie = 0;
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
@@ -332,7 +334,7 @@ function function_ea5f46d2() {
 // Params 0, eflags: 0x0
 // Checksum 0x276ecc18, Offset: 0x1568
 // Size: 0x5c
-function function_b2bc66d3() {
+function player_weapons() {
     specialist = self function_76785843();
     var_8be50b09 = self function_b958401e(specialist);
     self give_killstreaks(var_8be50b09);
@@ -424,14 +426,14 @@ function give_killstreaks(var_8be50b09) {
 function function_3ba6ee5d(weapon, amount) {
     if (weapon.iscliponly) {
         self setweaponammoclip(weapon, amount);
-    } else {
-        self setweaponammoclip(weapon, amount);
-        diff = amount - self getweaponammoclip(weapon);
-        /#
-            assert(diff >= 0);
-        #/
-        self setweaponammostock(weapon, diff);
+        return;
     }
+    self setweaponammoclip(weapon, amount);
+    diff = amount - self getweaponammoclip(weapon);
+    /#
+        assert(diff >= 0);
+    #/
+    self setweaponammostock(weapon, diff);
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
@@ -484,40 +486,40 @@ function function_b958401e(n_index) {
 function function_d8cdeb6a(n_index) {
     switch (n_index) {
     case 1:
-        var_6b99a088 = array(#"ar_accurate_t8", #"quickdraw", #"fmj", #"extbarrel");
+        a_str_weapons = array(#"ar_accurate_t8", #"quickdraw", #"fmj", #"extbarrel");
         break;
     case 2:
-        var_6b99a088 = array(#"ar_damage_t8", #"holo", #"damage", #"damage2", #"grip");
+        a_str_weapons = array(#"ar_damage_t8", #"holo", #"damage", #"damage2", #"grip");
         break;
     case 3:
-        var_6b99a088 = array(#"ar_fastfire_t8", #"elo", #"fastreload", #"fastreload2", #"quickdraw", #"quickdraw2");
+        a_str_weapons = array(#"ar_fastfire_t8", #"elo", #"fastreload", #"fastreload2", #"quickdraw", #"quickdraw2");
         break;
     case 4:
-        var_6b99a088 = array(#"ar_modular_t8", #"rf", #"steadyaim", #"mixclip");
+        a_str_weapons = array(#"ar_modular_t8", #"rf", #"steadyaim", #"mixclip");
         break;
     case 5:
-        var_6b99a088 = array(#"ar_stealth_t8", #"damage", #"extbarrel", #"rf", #"uber_bayonet");
+        a_str_weapons = array(#"ar_stealth_t8", #"damage", #"extbarrel", #"rf", #"uber_bayonet");
         break;
     case 6:
-        var_6b99a088 = array(#"ar_damage_t8", #"holo", #"damage", #"damage2");
+        a_str_weapons = array(#"ar_damage_t8", #"holo", #"damage", #"damage2");
         break;
     case 7:
-        var_6b99a088 = array(#"ar_accurate_t8", #"reddot", #"grip", #"grip2", #"steadyaim");
+        a_str_weapons = array(#"ar_accurate_t8", #"reddot", #"grip", #"grip2", #"steadyaim");
         break;
     case 8:
-        var_6b99a088 = array(#"ar_stealth_t8", #"acog", #"suppressed", #"stalker", #"stalker2");
+        a_str_weapons = array(#"ar_stealth_t8", #"acog", #"suppressed", #"stalker", #"stalker2");
         break;
     case 9:
-        var_6b99a088 = array(#"ar_fastfire_t8", #"steadyaim", #"steadyaim2", #"stalker", #"uber_firingunit");
+        a_str_weapons = array(#"ar_fastfire_t8", #"steadyaim", #"steadyaim2", #"stalker", #"uber_firingunit");
         break;
     case 10:
-        var_6b99a088 = array(#"ar_modular_t8", #"reflex", #"suppressed", #"stalker", #"grip", #"quickdraw");
+        a_str_weapons = array(#"ar_modular_t8", #"reflex", #"suppressed", #"stalker", #"grip", #"quickdraw");
         break;
     case 11:
-        var_6b99a088 = array(#"ar_damage_t8", #"fmj", #"fmj2", #"extbarrel");
+        a_str_weapons = array(#"ar_damage_t8", #"fmj", #"fmj2", #"extbarrel");
         break;
     }
-    return var_6b99a088;
+    return a_str_weapons;
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
@@ -606,13 +608,13 @@ function function_8e22d234() {
     level notify(#"hash_27b4c904ffa4ce27");
     level endon(#"hash_27b4c904ffa4ce27");
     a_players = getplayers();
-    var_51029ccb = [];
+    a_scores = [];
     foreach (player in a_players) {
-        var_51029ccb[var_51029ccb.size] = player.score;
+        a_scores[a_scores.size] = player.score;
     }
-    var_51029ccb = array::sort_by_value(var_51029ccb);
+    a_scores = array::sort_by_value(a_scores);
     player = getplayers()[0];
-    if (player.score != var_51029ccb[0]) {
+    if (player.score != a_scores[0]) {
         return;
     }
     if (player function_15e5c1da(#"hash_1ebacadf6dc3dbdf") < level.var_9356f44c) {
@@ -780,20 +782,19 @@ function on_player_damage(einflictor, eattacker, idamage, idflags, smeansofdeath
     if (!isbot(self)) {
         n_damage = idamage * level.var_352d65e9;
         return int(n_damage);
-    } else {
-        return idamage;
     }
+    return idamage;
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 2, eflags: 0x1 linked
 // Checksum 0xbf2d60e9, Offset: 0x36c8
 // Size: 0x82
-function function_5f516f9d(var_129f6487, var_16538d01 = 0) {
+function function_5f516f9d(stathash, var_16538d01 = 0) {
     if (isdefined(var_16538d01) && var_16538d01) {
-        var_129f6487 = #"hash_287942b71dbfe24f";
+        stathash = #"weapon_class_";
     }
-    target = tablelookup(#"gamedata/tables/mp/mp_combat_training_challenges.csv", 2, var_129f6487, 1);
+    target = tablelookup(#"gamedata/tables/mp/mp_combat_training_challenges.csv", 2, stathash, 1);
     return target;
 }
 
@@ -811,7 +812,9 @@ function function_9a022fbc(str_state) {
             [[ lui_menu ]]->set_endalpha(player, 1);
             [[ lui_menu ]]->set_fadeovertime(player, int(2000));
         }
-    } else if (isdefined(lui_menu)) {
+        return;
+    }
+    if (isdefined(lui_menu)) {
         [[ lui_menu ]]->close(player);
     }
 }

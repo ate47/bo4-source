@@ -74,19 +74,24 @@ function function_d1112480(e_player) {
     if (e_player zm_utility::is_drinking()) {
         self sethintstring("");
         return 0;
-    } else if (level.s_apd_trap.var_6b64b967 === 1) {
+    }
+    if (level.s_apd_trap.var_6b64b967 === 1) {
         self sethintstring(#"zombie/trap_active");
         return 1;
-    } else if (isdefined(self.stub.related_parent.power_flag) && !level flag::get(self.stub.related_parent.power_flag)) {
+    }
+    if (isdefined(self.stub.related_parent.power_flag) && !level flag::get(self.stub.related_parent.power_flag)) {
         self sethintstring(#"zombie/need_power");
         return 1;
-    } else if (level flag::get(#"hash_1478cafcd626c361") && !level flag::get(#"circuit_step_complete")) {
+    }
+    if (level flag::get(#"hash_1478cafcd626c361") && !level flag::get(#"circuit_step_complete")) {
         self sethintstring(#"zombie/need_power");
         return 1;
-    } else if (level.s_apd_trap.var_41ee2ddc === 0) {
+    }
+    if (level.s_apd_trap.var_41ee2ddc === 0) {
         self sethintstring(#"zombie/trap_cooldown");
         return 1;
-    } else if (util::get_game_type() == "zstandard") {
+    }
+    if (util::get_game_type() == "zstandard") {
         if (function_8b1a219a()) {
             self sethintstring(#"hash_61d85c966dd9e83f");
             return 1;
@@ -94,13 +99,14 @@ function function_d1112480(e_player) {
             self sethintstring(#"hash_24a438482954901");
             return 1;
         }
-    } else if (function_8b1a219a()) {
+        return;
+    }
+    if (function_8b1a219a()) {
         self sethintstring(#"hash_6e8ef1b690e98e51", 1000);
         return 1;
-    } else {
-        self sethintstring(#"hash_23c1c09e94181fdb", 1000);
-        return 1;
     }
+    self sethintstring(#"hash_23c1c09e94181fdb", 1000);
+    return 1;
 }
 
 // Namespace zm_white_apd_trap/zm_white_apd_trap

@@ -35,7 +35,9 @@ function function_31f57700(localclientnum, oldval, newval, bnewent, binitialsnap
                 self.var_b072e263 = 1;
                 self postfx::playpostfxbundle("pstfx_health_regen");
             }
-        } else if (isdefined(self.var_b072e263) && self.var_b072e263) {
+            return;
+        }
+        if (isdefined(self.var_b072e263) && self.var_b072e263) {
             self stoploopsound(self.var_e5996046);
             self.var_b072e263 = undefined;
             self postfx::exitpostfxbundle("pstfx_health_regen");

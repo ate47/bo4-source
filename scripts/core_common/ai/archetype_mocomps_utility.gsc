@@ -39,8 +39,7 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
     currentposition = traversal.startposition;
     nextposition = currentposition;
     segments = 0;
-    segmenttime = 0;
-    while (segmenttime <= animlength) {
+    for (segmenttime = 0; segmenttime <= animlength; segmenttime = segmenttime + float(function_60d95f53()) / 1000) {
         nexttime = segmenttime + float(function_60d95f53()) / 1000;
         if (nexttime > animlength) {
             nexttime = animlength;
@@ -51,7 +50,6 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
             recordline(currentposition, nextposition, (1, 0.5, 0), "<unknown string>", entity);
         #/
         currentposition = nextposition;
-        segmenttime = segmenttime + float(function_60d95f53()) / 1000;
     }
     /#
         recordsphere(nextposition, 2, (1, 0, 0), "<unknown string>", entity);
@@ -97,8 +95,7 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
     nextposition = currentposition;
     segments = 0;
     deltatoendtotal = (0, 0, 0);
-    segmenttime = section.starttime;
-    while (segmenttime <= section.endtime) {
+    for (segmenttime = section.starttime; segmenttime <= section.endtime; segmenttime = segmenttime + float(function_60d95f53()) / 1000) {
         nexttime = segmenttime + float(function_60d95f53()) / 1000;
         if (nexttime > section.endtime) {
             nexttime = section.endtime;
@@ -121,7 +118,6 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
             #/
         }
         currentposition = nextposition;
-        segmenttime = segmenttime + float(function_60d95f53()) / 1000;
     }
 }
 
@@ -479,7 +475,9 @@ function mocomptraversalproceduralpivotupdate(entity, mocompanim, mocompanimblen
             entity asmsetanimationrate(animationrate);
         }
         entity forceteleport(newentityorigin, traversal.startangles, 0, 0);
-    } else if (isplayer(entity)) {
+        return;
+    }
+    if (isplayer(entity)) {
         entity lerporigin(newentityorigin);
         entity setplayerangles(traversal.startangles);
     }
@@ -845,9 +843,9 @@ function private mocompignorepainfaceenemyinit(entity, mocompanim, mocompanimble
 function private mocompignorepainfaceenemyupdate(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     if (isdefined(entity.enemy) && entity getanimtime(mocompanim) < 0.5) {
         entity orientmode("face enemy");
-    } else {
-        entity orientmode("face angle", entity.angles[1]);
+        return;
     }
+    entity orientmode("face angle", entity.angles[1]);
 }
 
 // Namespace archetype_mocomps_utility/archetype_mocomps_utility

@@ -80,36 +80,36 @@ function function_47274b1e() {
     for (i = 0; i < a_e_socks.size; i++) {
         if (i == 0) {
             level.var_ad702d8c = a_e_socks[i];
-        } else {
-            a_e_socks[i] delete();
+            continue;
         }
+        a_e_socks[i] delete();
     }
     a_e_socks = getentarray("axhead_blood", "targetname");
     a_e_socks = array::randomize(a_e_socks);
     for (i = 0; i < a_e_socks.size; i++) {
         if (i == 0) {
             level.var_578ac6e1 = a_e_socks[i];
-        } else {
-            a_e_socks[i] delete();
+            continue;
         }
+        a_e_socks[i] delete();
     }
     a_e_socks = getentarray("axhead_silver", "targetname");
     a_e_socks = array::randomize(a_e_socks);
     for (i = 0; i < a_e_socks.size; i++) {
         if (i == 0) {
             level.var_c012bd5d = a_e_socks[i];
-        } else {
-            a_e_socks[i] delete();
+            continue;
         }
+        a_e_socks[i] delete();
     }
     a_e_socks = getentarray("axhead_copper", "targetname");
     a_e_socks = array::randomize(a_e_socks);
     for (i = 0; i < a_e_socks.size; i++) {
         if (i == 0) {
             level.a_cachinas = a_e_socks[i];
-        } else {
-            a_e_socks[i] delete();
+            continue;
         }
+        a_e_socks[i] delete();
     }
 }
 
@@ -400,9 +400,8 @@ function function_985dbc38(var_a276c861) {
 function function_6d2ddf57(e_player) {
     if (isdefined(level.var_733d6b98) && e_player == level.var_733d6b98) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow

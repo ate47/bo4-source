@@ -865,7 +865,9 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
             #/
             adjustedorigin = entity.origin + entity.meleeinfo.var_10b8b6d1 * entity.meleeinfo.var_8b9a15a6;
             entity forceteleport(adjustedorigin);
-        } else if (isdefined(entity.enemy)) {
+            return;
+        }
+        if (isdefined(entity.enemy)) {
             entity orientmode("face enemy");
         }
     }

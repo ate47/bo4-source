@@ -61,7 +61,9 @@ function function_e5f05a92() {
                     a_e_touching = array(a_e_touching);
                 }
                 a_e_touching[a_e_touching.size] = e_player;
-            } else if (e_player clientfield::get_to_player("snd_crowd_react") != 8) {
+                continue;
+            }
+            if (e_player clientfield::get_to_player("snd_crowd_react") != 8) {
                 e_player clientfield::set_to_player("snd_crowd_react", 8);
                 if (level clientfield::get("crowd_react") != 3) {
                     level clientfield::set("crowd_react", 3);
@@ -141,7 +143,7 @@ function function_c49fe830() {
         if (zm_utility::is_player_valid(self, 0, 0) && isinarray(var_d4061661, str_zone) && !level.var_c9942395) {
             level thread function_a1379826();
             self thread zm_audio::create_and_play_dialog(#"location_enter", #"arena");
-            break;
+            return;
         }
         wait(1);
     }

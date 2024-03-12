@@ -86,12 +86,12 @@ function function_f99ce12b(localclientnum, oldval, newval, bnewent, binitialsnap
         addzombieboxweapon(getweapon(#"hero_chakram_lv1"), #"wpn_t8_zm_melee_dw_hand_cannon_lvl1_prop_animate", 1);
         addzombieboxweapon(getweapon(#"hero_scepter_lv1"), #"wpn_t8_zm_melee_staff_ra_lvl1_prop_animate", 0);
         addzombieboxweapon(getweapon(#"hero_hammer_lv1"), #"wpn_t8_zm_melee_hammer_lvl1_prop_animate", 0);
-    } else {
-        removezombieboxweapon(getweapon(#"hero_sword_pistol_lv1"));
-        removezombieboxweapon(getweapon(#"hero_chakram_lv1"));
-        removezombieboxweapon(getweapon(#"hero_scepter_lv1"));
-        removezombieboxweapon(getweapon(#"hero_hammer_lv1"));
+        return;
     }
+    removezombieboxweapon(getweapon(#"hero_sword_pistol_lv1"));
+    removezombieboxweapon(getweapon(#"hero_chakram_lv1"));
+    removezombieboxweapon(getweapon(#"hero_scepter_lv1"));
+    removezombieboxweapon(getweapon(#"hero_hammer_lv1"));
 }
 
 // Namespace namespace_b45e3f05/namespace_2d696d7c
@@ -101,9 +101,9 @@ function function_f99ce12b(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_54655580(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self playrenderoverridebundle(#"rob_tricannon_character_ice");
-    } else {
-        self stoprenderoverridebundle(#"rob_tricannon_character_ice");
+        return;
     }
+    self stoprenderoverridebundle(#"rob_tricannon_character_ice");
 }
 
 // Namespace namespace_b45e3f05/namespace_2d696d7c
@@ -119,7 +119,9 @@ function function_bfdd6659(localclientnum, oldval, newval, bnewent, binitialsnap
         } else {
             self.var_37649f83 = util::playfxontag(localclientnum, level._effect[#"hash_13aa43d2bbed472"], self, "tag_fx");
         }
-    } else if (isdefined(self.var_37649f83)) {
+        return;
+    }
+    if (isdefined(self.var_37649f83)) {
         stopfx(localclientnum, self.var_37649f83);
         self.var_37649f83 = undefined;
     }
@@ -132,7 +134,9 @@ function function_bfdd6659(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_ae668ae9(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"car_lights"], self, "tag_body");
-    } else if (isdefined(self.n_trail_fx)) {
+        return;
+    }
+    if (isdefined(self.n_trail_fx)) {
         killfx(localclientnum, self.n_trail_fx);
         self.n_trail_fx = undefined;
     }
@@ -153,7 +157,9 @@ function function_34f5c98(localclientnum, oldval, newval, bnewent, binitialsnap,
         if (isdefined(self)) {
             playfx(localclientnum, level._effect[#"hash_2498ee8a7586b418"], self.origin, anglestoforward(self.angles), anglestoup(self.angles));
         }
-    } else if (isdefined(self.var_f756621f)) {
+        return;
+    }
+    if (isdefined(self.var_f756621f)) {
         stopfx(localclientnum, self.var_f756621f);
     }
 }
@@ -221,11 +227,13 @@ function function_eabe4696(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self util::waittill_dobj(localclientnum);
         self.var_2745e294 = util::playfxontag(localclientnum, level._effect[#"hash_6571250749b2c790"], self, "tag_origin");
-    } else if (newval == 2) {
-        self.var_2745e294 = util::playfxontag(localclientnum, level._effect[#"hash_51ecda6f24a58d05"], self, "tag_origin");
-    } else {
-        playfx(localclientnum, level._effect[#"hash_3ddf14b70581a57"], self.origin);
+        return;
     }
+    if (newval == 2) {
+        self.var_2745e294 = util::playfxontag(localclientnum, level._effect[#"hash_51ecda6f24a58d05"], self, "tag_origin");
+        return;
+    }
+    playfx(localclientnum, level._effect[#"hash_3ddf14b70581a57"], self.origin);
 }
 
 // Namespace namespace_b45e3f05/namespace_2d696d7c
@@ -236,7 +244,9 @@ function function_43425692(localclientnum, oldval, newval, bnewent, binitialsnap
     s_loc = struct::get(#"floaters_fx");
     if (newval == 1) {
         s_loc.fx = playfx(localclientnum, level._effect[#"hash_29d523bd9b3bf58a"], s_loc.origin, anglestoforward(s_loc.angles), anglestoup(s_loc.angles));
-    } else if (isdefined(s_loc.fx)) {
+        return;
+    }
+    if (isdefined(s_loc.fx)) {
         stopfx(localclientnum, s_loc.fx);
     }
 }
@@ -255,7 +265,9 @@ function safe_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
             v_loc = v_loc + v_forward * -8;
             self.fx = playfx(localclientnum, level._effect[#"safe_fx"], v_loc, v_forward, anglestoup(self.angles));
         }
-    } else if (isdefined(self.fx)) {
+        return;
+    }
+    if (isdefined(self.fx)) {
         stopfx(localclientnum, self.fx);
         self.fx = undefined;
     }
@@ -293,7 +305,9 @@ function flare_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
                 }
             }
         }
-    } else if (isdefined(self.fx)) {
+        return;
+    }
+    if (isdefined(self.fx)) {
         stopfx(localclientnum, self.fx);
         self.fx = undefined;
     }
@@ -311,13 +325,13 @@ function function_563778cc(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_1c0ed73a9b21a882"], self, "tag_origin");
-        break;
+        return;
     case 2:
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_4ec5da9e09256102"], self, "tag_origin");
-        break;
+        return;
     case 3:
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_704d3c12d59fb5d7"], self, "tag_origin");
-        break;
+        return;
     }
 }
 
@@ -331,12 +345,16 @@ function fireworks_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         s_loc = a_s_locs[randomint(a_s_locs.size)];
         playfx(localclientnum, level._effect[#"hash_76a20bbf3432c804"], s_loc.origin);
         playsound(0, #"hash_40d3baad4b103e04", s_loc.origin);
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         a_s_locs = struct::get_array(#"hash_5af7eeb066c5efbe", "script_noteworthy");
         s_loc = a_s_locs[randomint(a_s_locs.size)];
         playfx(localclientnum, level._effect[#"hash_4817a1dbc7bf4ca4"], s_loc.origin);
         playsound(0, #"hash_40d3baad4b103e04", s_loc.origin);
-    } else if (newval == 3) {
+        return;
+    }
+    if (newval == 3) {
         a_s_locs = struct::get_array(#"hash_5af7eeb066c5efbe", "script_noteworthy");
         s_loc = a_s_locs[randomint(a_s_locs.size)];
         playfx(localclientnum, level._effect[#"hash_3ddf14b70581a57"], s_loc.origin);

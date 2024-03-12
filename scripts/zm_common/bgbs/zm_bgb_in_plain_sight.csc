@@ -39,12 +39,12 @@ function function_8b05d1ce(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_766f7e280a750ba8");
             self.var_6fc0e881 = self playloopsound(#"hash_38ea108cd6442868");
         }
-    } else {
-        self postfx::stoppostfxbundle(#"hash_1e8cc5b28385a579");
-        if (isdefined(self.var_6fc0e881)) {
-            self playsound(localclientnum, #"hash_5d65ef28d3f9dc1d");
-            self stoploopsound(self.var_6fc0e881);
-        }
+        return;
+    }
+    self postfx::stoppostfxbundle(#"hash_1e8cc5b28385a579");
+    if (isdefined(self.var_6fc0e881)) {
+        self playsound(localclientnum, #"hash_5d65ef28d3f9dc1d");
+        self stoploopsound(self.var_6fc0e881);
     }
 }
 

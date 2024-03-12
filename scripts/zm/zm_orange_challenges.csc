@@ -27,8 +27,8 @@ function main() {
 function function_a1d393ad(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         forcestreamxmodel(#"p8_zm_gla_heart_zombie");
-    } else {
-        stopforcestreamingxmodel(#"p8_zm_gla_heart_zombie");
+        return;
     }
+    stopforcestreamingxmodel(#"p8_zm_gla_heart_zombie");
 }
 

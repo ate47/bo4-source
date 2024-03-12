@@ -56,7 +56,7 @@ function init_shared() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x55dcb611, Offset: 0x780
 // Size: 0x90
 function function_1c601b99() {
@@ -69,7 +69,7 @@ function function_1c601b99() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe677ed1d, Offset: 0x818
 // Size: 0x114
 function function_127fb8f3(turret, attackingplayer) {
@@ -88,7 +88,7 @@ function function_127fb8f3(turret, attackingplayer) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x47e1f2c0, Offset: 0x938
 // Size: 0x244
 function function_bff5c062(turret, attackingplayer) {
@@ -120,7 +120,7 @@ function function_bff5c062(turret, attackingplayer) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8d249dc0, Offset: 0xb88
 // Size: 0x76
 function on_player_spawned() {
@@ -132,7 +132,7 @@ function on_player_spawned() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa43bf41c, Offset: 0xc08
 // Size: 0x126
 function initturret() {
@@ -155,7 +155,7 @@ function initturret() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x208397ef, Offset: 0xd38
 // Size: 0x84a
 function activateturret() {
@@ -262,7 +262,7 @@ function activateturret() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8988c8ed, Offset: 0x1590
 // Size: 0x32
 function function_305bbc35(watcher) {
@@ -271,7 +271,7 @@ function function_305bbc35(watcher) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6e9900bd, Offset: 0x15d0
 // Size: 0x402
 function function_3be2d17f(watcher, player) {
@@ -319,7 +319,7 @@ function function_3be2d17f(watcher, player) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4e740339, Offset: 0x19e0
 // Size: 0x74
 function function_b649601a() {
@@ -330,7 +330,7 @@ function function_b649601a() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7b2d22d, Offset: 0x1a60
 // Size: 0x94
 function function_24910d60() {
@@ -349,7 +349,7 @@ function function_24910d60() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d584ee0, Offset: 0x1b00
 // Size: 0x10c
 function function_7f9eb7f() {
@@ -367,7 +367,7 @@ function function_7f9eb7f() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x27e17539, Offset: 0x1c18
 // Size: 0x930
 function onplaceturret(turret) {
@@ -447,7 +447,7 @@ function onplaceturret(turret) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c7228e1, Offset: 0x2550
 // Size: 0x74
 function respectnottargetedbysentryperk(player) {
@@ -459,7 +459,7 @@ function respectnottargetedbysentryperk(player) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6f0759b, Offset: 0x25d0
 // Size: 0x11c
 function hackedcallbackpre(hacker) {
@@ -476,7 +476,7 @@ function hackedcallbackpre(hacker) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4bacd01, Offset: 0x26f8
 // Size: 0x76
 function hackedcallbackpost(hacker) {
@@ -498,7 +498,7 @@ function play_deploy_anim_after_wait(wait_time) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe45f5820, Offset: 0x27d0
 // Size: 0x94
 function play_deploy_anim() {
@@ -511,7 +511,7 @@ function play_deploy_anim() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x824a09f5, Offset: 0x2870
 // Size: 0x28
 function oncancelplacement(turret) {
@@ -546,7 +546,7 @@ function onpickupturret(turret) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x7db88381, Offset: 0x2a90
 // Size: 0x3a0
 function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -580,7 +580,7 @@ function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, 
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xbc32b838, Offset: 0x2e38
 // Size: 0x74
 function onturretdeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -588,7 +588,7 @@ function onturretdeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vd
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xc14da680, Offset: 0x2eb8
 // Size: 0x84
 function ondeathafterframeend(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -599,7 +599,7 @@ function ondeathafterframeend(einflictor, eattacker, idamage, smeansofdeath, wea
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0xc19ed19d, Offset: 0x2f48
 // Size: 0x4b4
 function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime) {
@@ -661,7 +661,7 @@ function ondeath(einflictor, eattacker, idamage, smeansofdeath, weapon, vdir, sh
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa6f61a9b, Offset: 0x3408
 // Size: 0x28
 function onshutdown(turret) {
@@ -684,7 +684,7 @@ function enableturretafterwait(wait_time) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2fce0af9, Offset: 0x34c0
 // Size: 0xba
 function createturretinfluencer(name) {
@@ -698,7 +698,7 @@ function createturretinfluencer(name) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfe7b5dcb, Offset: 0x3588
 // Size: 0x9a
 function function_3a9dddac() {
@@ -713,7 +713,7 @@ function function_3a9dddac() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc1ff425c, Offset: 0x3630
 // Size: 0x14c
 function turret_watch_owner_events() {
@@ -736,7 +736,7 @@ function turret_watch_owner_events() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2b09e3c6, Offset: 0x3788
 // Size: 0x128
 function turret_laser_watch() {
@@ -756,26 +756,24 @@ function turret_laser_watch() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x52670188, Offset: 0x38b8
 // Size: 0xae
 function setup_death_watch_for_new_targets() {
     turretvehicle = self;
     turretvehicle endon(#"death");
-    old_target = undefined;
-    while (1) {
+    for (old_target = undefined; 1; old_target = waitresult.target) {
         waitresult = undefined;
         waitresult = turretvehicle waittill(#"has_new_target");
         if (isdefined(old_target)) {
             old_target notify(#"abort_death_watch");
         }
         waitresult.target thread target_death_watch(turretvehicle);
-        old_target = waitresult.target;
     }
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe513737c, Offset: 0x3970
 // Size: 0xac
 function target_death_watch(turretvehicle) {
@@ -787,7 +785,7 @@ function target_death_watch(turretvehicle) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x41102ea2, Offset: 0x3a28
 // Size: 0x1c
 function get_killstreak_bundle() {
@@ -795,7 +793,7 @@ function get_killstreak_bundle() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5bab97fb, Offset: 0x3a50
 // Size: 0x8a
 function is_valid_target(potential_target, friendly_team) {
@@ -812,7 +810,7 @@ function is_valid_target(potential_target, friendly_team) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdb86b2f9, Offset: 0x3ae8
 // Size: 0x348
 function function_fefefcc4() {
@@ -858,7 +856,7 @@ function function_fefefcc4() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7ebc5989, Offset: 0x3e38
 // Size: 0x102
 function function_9d86d74c(enemy) {
@@ -874,7 +872,7 @@ function function_9d86d74c(enemy) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf6f78e4, Offset: 0x3f48
 // Size: 0x154
 function function_2034705c(bundle) {
@@ -887,7 +885,7 @@ function function_2034705c(bundle) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9eff7e2f, Offset: 0x40a8
 // Size: 0x82
 function function_fc58f46f() {
@@ -902,7 +900,7 @@ function function_fc58f46f() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe8b6fe58, Offset: 0x4138
 // Size: 0x4a
 function function_bc7568f1() {
@@ -913,7 +911,7 @@ function function_bc7568f1() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfe20c97c, Offset: 0x4190
 // Size: 0x42
 function function_c524c4c8() {
@@ -924,7 +922,7 @@ function function_c524c4c8() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc21563de, Offset: 0x41e0
 // Size: 0x62
 function get_target_offset(target) {
@@ -937,7 +935,7 @@ function get_target_offset(target) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa587753d, Offset: 0x4250
 // Size: 0x188
 function function_b8952a40(turret_index) {
@@ -957,7 +955,7 @@ function function_b8952a40(turret_index) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3df72b5d, Offset: 0x43e0
 // Size: 0xea4
 function turretscanning() {
@@ -1107,7 +1105,7 @@ function turretscanning() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf430d429, Offset: 0x5290
 // Size: 0xb4
 function turretshutdown(killstreakid, team) {
@@ -1126,7 +1124,7 @@ function turretshutdown(killstreakid, team) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xe4b4381f, Offset: 0x5350
 // Size: 0xc4
 function watchturretshutdown(player, killstreakid, team) {
@@ -1138,7 +1136,7 @@ function watchturretshutdown(player, killstreakid, team) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x5133a96d, Offset: 0x5420
 // Size: 0x8c
 function function_d6c5b32b(player, killstreakid, team) {
@@ -1150,18 +1148,14 @@ function function_d6c5b32b(player, killstreakid, team) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfcd26aa9, Offset: 0x54b8
 // Size: 0xfa
 function has_active_enemy(bundle) {
     if (self.var_aac73d6c === 1) {
-        goto LOC_0000002e;
-    }
-    if (!isdefined(self.enemylastseentime)) {
+    } else if (!isdefined(self.enemylastseentime)) {
         return 0;
-    LOC_0000002e:
     }
-LOC_0000002e:
     if (isdefined(self.favoriteenemy)) {
         if (!isalive(self.favoriteenemy)) {
             return 0;
@@ -1182,7 +1176,7 @@ LOC_0000002e:
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x15b0ec65, Offset: 0x55c0
 // Size: 0x34
 function function_be04d904() {
@@ -1191,7 +1185,7 @@ function function_be04d904() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x18ad2416, Offset: 0x5600
 // Size: 0x1c
 function function_21f16a35() {
@@ -1199,7 +1193,7 @@ function function_21f16a35() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x36f9d50f, Offset: 0x5628
 // Size: 0x1cc
 function function_59ce22f9(attacker, callback_data) {
@@ -1227,7 +1221,7 @@ function function_59ce22f9(attacker, callback_data) {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x626338c7, Offset: 0x5800
 // Size: 0x1d4
 function function_31477582() {
@@ -1254,7 +1248,7 @@ function function_31477582() {
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc4305d73, Offset: 0x59e0
 // Size: 0x1f0
 function on_player_killed() {

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_perk_bloody_tracker/wz_perk_bloody_tracker
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x368056d2, Offset: 0x118
 // Size: 0x74
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace wz_perk_bloody_tracker/wz_perk_bloody_tracker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x248000a8, Offset: 0x198
 // Size: 0x24
 function on_player_connect(localclientnum) {
@@ -32,7 +32,7 @@ function on_player_connect(localclientnum) {
 }
 
 // Namespace wz_perk_bloody_tracker/wz_perk_bloody_tracker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcbedd3ab, Offset: 0x1c8
 // Size: 0x1fa
 function bloody_tracker(localclientnum) {
@@ -48,15 +48,15 @@ function bloody_tracker(localclientnum) {
         foreach (player in players) {
             if (tracked >= 10 || !isalive(player) || player function_83973173() || isdefined(getplayervehicle(player))) {
                 player.tracker_last_pos = undefined;
-            } else {
-                tracked++;
-                if (!isdefined(player.tracker_last_pos)) {
-                    player.tracker_last_pos = player.origin;
-                }
-                positionandrotationstruct = player gettrackerfxposition(localclientnum);
-                if (isdefined(positionandrotationstruct)) {
-                    player tracker_playfx(localclientnum, positionandrotationstruct);
-                }
+                continue;
+            }
+            tracked++;
+            if (!isdefined(player.tracker_last_pos)) {
+                player.tracker_last_pos = player.origin;
+            }
+            positionandrotationstruct = player gettrackerfxposition(localclientnum);
+            if (isdefined(positionandrotationstruct)) {
+                player tracker_playfx(localclientnum, positionandrotationstruct);
             }
         }
         players = undefined;
@@ -64,7 +64,7 @@ function bloody_tracker(localclientnum) {
 }
 
 // Namespace wz_perk_bloody_tracker/wz_perk_bloody_tracker
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x20c0c21c, Offset: 0x3d0
 // Size: 0x2ee
 function gettrackerfxposition(localclientnum) {
@@ -114,7 +114,7 @@ function gettrackerfxposition(localclientnum) {
 }
 
 // Namespace wz_perk_bloody_tracker/wz_perk_bloody_tracker
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9844a29d, Offset: 0x6c8
 // Size: 0x5e
 function tracker_playfx(localclientnum, positionandrotationstruct) {

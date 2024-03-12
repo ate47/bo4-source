@@ -41,9 +41,11 @@ function validation() {
     foreach (player in players) {
         if (isdefined(player.var_bdeb0f02) && player.var_bdeb0f02) {
             return 0;
-        } else if (isdefined(level.var_7d8a0369) && self [[ level.var_7d8a0369 ]](player, 1, 1)) {
+        }
+        if (isdefined(level.var_7d8a0369) && self [[ level.var_7d8a0369 ]](player, 1, 1)) {
             return 1;
-        } else if (self zm_laststand::can_revive(player, 1, 1)) {
+        }
+        if (self zm_laststand::can_revive(player, 1, 1)) {
             return 1;
         }
     }

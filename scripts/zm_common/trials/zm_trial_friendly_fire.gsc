@@ -87,7 +87,7 @@ function private on_begin(var_9e0a2a85 = 1) {
     for (i = 0; i < var_6a94fd5e; i++) {
         do {
             bot = bot::add_bot(var_be33ceec);
-        } while(!isdefined(bot));
+        } while (!isdefined(bot));
         bot.var_247fdf5 = 1;
         wait(1);
         if (bot util::is_spectating()) {

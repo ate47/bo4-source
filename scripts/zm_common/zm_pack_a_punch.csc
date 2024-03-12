@@ -54,9 +54,13 @@ function on_localplayer_spawned(localclientnum) {
     n_story = zm_utility::get_story();
     if (isdefined(level.var_59d3631c)) {
         forcestreamxmodel(level.var_59d3631c, 1, 0);
-    } else if (n_story == 1) {
+        return;
+    }
+    if (n_story == 1) {
         forcestreamxmodel(#"p7_zm_vending_packapunch_on", 1, 0);
-    } else if (n_story == 2) {
+        return;
+    }
+    if (n_story == 2) {
         forcestreamxmodel(#"hash_4efdd19dfd268f23", 1, 0);
     }
 }
@@ -75,11 +79,17 @@ function pap_force_stream(localclientnum, oldval, newval, bnewent, binitialsnap,
         } else if (n_story == 2) {
             forcestreamxmodel(#"hash_4efdd19dfd268f23");
         }
-    } else if (isdefined(level.var_59d3631c)) {
+        return;
+    }
+    if (isdefined(level.var_59d3631c)) {
         stopforcestreamingxmodel(level.var_59d3631c);
-    } else if (n_story == 1) {
+        return;
+    }
+    if (n_story == 1) {
         stopforcestreamingxmodel(#"p7_zm_vending_packapunch_on");
-    } else if (n_story == 2) {
+        return;
+    }
+    if (n_story == 2) {
         stopforcestreamingxmodel(#"hash_4efdd19dfd268f23");
     }
 }
@@ -91,15 +101,15 @@ function pap_force_stream(localclientnum, oldval, newval, bnewent, binitialsnap,
 function function_2a80c24d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_f74ad2c1(localclientnum, 4, "fx_tag_mid_jnt");
-    } else {
-        if (isdefined(self.n_pap_idle_fx)) {
-            stopfx(localclientnum, self.n_pap_idle_fx);
-            self.n_pap_idle_fx = undefined;
-        }
-        wait(1);
-        if (isdefined(self.var_4d7e8438)) {
-            self.var_4d7e8438 delete();
-        }
+        return;
+    }
+    if (isdefined(self.n_pap_idle_fx)) {
+        stopfx(localclientnum, self.n_pap_idle_fx);
+        self.n_pap_idle_fx = undefined;
+    }
+    wait(1);
+    if (isdefined(self.var_4d7e8438)) {
+        self.var_4d7e8438 delete();
     }
 }
 
@@ -128,15 +138,15 @@ function private function_f74ad2c1(localclientnum, n_piece_index, str_tag) {
 function pap_working_fx_handler(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         pap_play_fx(localclientnum, 0, "base_jnt");
-    } else {
-        if (isdefined(self.n_pap_fx)) {
-            stopfx(localclientnum, self.n_pap_fx);
-            self.n_pap_fx = undefined;
-        }
-        wait(1);
-        if (isdefined(self.mdl_fx)) {
-            self.mdl_fx delete();
-        }
+        return;
+    }
+    if (isdefined(self.n_pap_fx)) {
+        stopfx(localclientnum, self.n_pap_fx);
+        self.n_pap_fx = undefined;
+    }
+    wait(1);
+    if (isdefined(self.mdl_fx)) {
+        self.mdl_fx delete();
     }
 }
 

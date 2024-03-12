@@ -490,9 +490,9 @@ function private initzmbehaviorsandasm() {
 function function_fb814207(behaviortreeentity) {
     if (isdefined(self.var_72411ccf)) {
         self [[ self.var_72411ccf ]](self);
-    } else {
-        self zombiefindflesh(self);
+        return;
     }
+    self zombiefindflesh(self);
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -573,9 +573,9 @@ function zombiefindflesh(behaviortreeentity) {
         #/
         if (isdefined(level.no_target_override)) {
             [[ level.no_target_override ]](behaviortreeentity);
-        } else {
-            behaviortreeentity setgoal(behaviortreeentity.origin);
+            return;
         }
+        behaviortreeentity setgoal(behaviortreeentity.origin);
         return;
     } else if (isdefined(level.var_d22435d9)) {
         [[ level.var_d22435d9 ]](behaviortreeentity);
@@ -625,27 +625,20 @@ function zombiefindflesh(behaviortreeentity) {
             } else {
                 behaviortreeentity zombieupdategoal();
             }
+        } else if (isdefined(behaviortreeentity.is_rat_test) && behaviortreeentity.is_rat_test) {
+        } else if (zombieshouldmoveawaycondition(behaviortreeentity)) {
         } else {
-            if (isdefined(behaviortreeentity.is_rat_test) && behaviortreeentity.is_rat_test) {
-                goto LOC_000008c2;
-            }
-            if (zombieshouldmoveawaycondition(behaviortreeentity)) {
-                goto LOC_000008c2;
-            }
             behaviortreeentity zombieupdategoal();
-        LOC_000008c2:
         }
-    LOC_000008c2:
     }
-LOC_000008c2:
     if (players.size > 1) {
         for (i = 0; i < behaviortreeentity.ignore_player.size; i++) {
             if (isdefined(behaviortreeentity.ignore_player[i])) {
                 if (!isdefined(behaviortreeentity.ignore_player[i].ignore_counter)) {
                     behaviortreeentity.ignore_player[i].ignore_counter = 0;
-                } else {
-                    behaviortreeentity.ignore_player[i].ignore_counter = behaviortreeentity.ignore_player[i].ignore_counter + 1;
+                    continue;
                 }
+                behaviortreeentity.ignore_player[i].ignore_counter = behaviortreeentity.ignore_player[i].ignore_counter + 1;
             }
         }
     }
@@ -727,11 +720,8 @@ function zombiefindfleshcode(behaviortreeentity) {
             }
         } else if (isdefined(behaviortreeentity.enemy.last_valid_position)) {
             behaviortreeentity zombieupdategoalcode();
-            goto LOC_000003fe;
         }
-    LOC_000003fe:
     }
-LOC_000003fe:
     aiprofile_endentry();
 }
 
@@ -1582,7 +1572,9 @@ function zombieattackableobjectservice(behaviortreeentity) {
     }
     if (!isdefined(behaviortreeentity.attackable)) {
         behaviortreeentity.attackable = zm_attackables::get_attackable();
-    } else if (!(isdefined(behaviortreeentity.attackable.is_active) && behaviortreeentity.attackable.is_active)) {
+        return;
+    }
+    if (!(isdefined(behaviortreeentity.attackable.is_active) && behaviortreeentity.attackable.is_active)) {
         behaviortreeentity.attackable = undefined;
     }
 }
@@ -1936,9 +1928,9 @@ function notetrackboardmelee(animationentity) {
                 }
             }
         }
-    } else {
-        animationentity melee();
+        return;
     }
+    animationentity melee();
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1975,9 +1967,9 @@ function findzombieenemy() {
     self.favoriteenemy = zombie_enemy;
     if (isdefined(self.favoriteenemy)) {
         self setgoal(self.favoriteenemy.origin);
-    } else {
-        self setgoal(self.origin);
+        return;
     }
+    self setgoal(self.origin);
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -2004,16 +1996,13 @@ function zombieupdateblackholebombpullstate(entity) {
     dist_to_bomb = distancesquared(entity.origin, entity.damageorigin);
     if (dist_to_bomb < 16384) {
         entity._black_hole_bomb_collapse_death = 1;
-    } else {
-        if (dist_to_bomb < 1048576) {
-            goto LOC_00000080;
-        }
-        if (dist_to_bomb < 4227136) {
-        LOC_00000080:
-        }
-    LOC_00000080:
+        return;
     }
-LOC_00000080:
+    if (dist_to_bomb < 1048576) {
+        return;
+    }
+    if (dist_to_bomb > 4227136) {
+    }
 }
 
 // Namespace zm_behavior/zm_behavior

@@ -216,8 +216,7 @@ function shard_vo(e_who) {
 // Checksum 0xbee2765f, Offset: 0xe08
 // Size: 0x178
 function function_d6a4619a() {
-    b_hidden = 0;
-    while (!b_hidden) {
+    for (b_hidden = 0; !b_hidden; b_hidden = 1) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon.name === #"ww_tesla_sniper_t8" || s_result.weapon.name === #"ww_tesla_sniper_upgraded_t8") {
@@ -231,7 +230,6 @@ function function_d6a4619a() {
             level.var_d02bca0 = level.var_d02bca0 - 1;
             e_target hide();
             self setcandamage(0);
-            b_hidden = 1;
         }
     }
 }
@@ -250,11 +248,11 @@ function function_9e34b0d4(var_a276c861, var_19e802fa) {
         level.var_e48733ef hide();
         level.var_d02bca0 = 0;
         level.s_fuse.e_model show();
-    } else {
-        wait(3);
-        exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_left");
-        exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_right");
+        return;
     }
+    wait(3);
+    exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_left");
+    exploder::stop_exploder("fxexp_electric_arcs_fx_to_lighthouse_right");
 }
 
 // Namespace zm_orange_mq_fuse/zm_orange_mq_fuse

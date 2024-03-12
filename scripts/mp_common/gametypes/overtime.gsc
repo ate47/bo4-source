@@ -15,7 +15,7 @@ function autoexec main() {
 }
 
 // Namespace overtime/overtime
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8bf4cf92, Offset: 0xc0
 // Size: 0x1c
 function is_overtime_round() {
@@ -26,7 +26,7 @@ function is_overtime_round() {
 }
 
 // Namespace overtime/overtime
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7742f650, Offset: 0xe8
 // Size: 0x1a0
 function round_stats_init() {
@@ -49,7 +49,7 @@ function round_stats_init() {
 }
 
 // Namespace overtime/overtime
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xee9c5d2f, Offset: 0x290
 // Size: 0x30
 function get_rounds_played() {
@@ -60,7 +60,7 @@ function get_rounds_played() {
 }
 
 // Namespace overtime/overtime
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1c3d6f9, Offset: 0x2c8
 // Size: 0x46
 function function_f435f4dd() {

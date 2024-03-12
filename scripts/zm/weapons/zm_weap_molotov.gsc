@@ -54,7 +54,6 @@ function function_32766bb7(inflictor, attacker, damage, flags, meansofdeath, wea
             self.weapon_specific_fire_death_sm_fx = level._effect[#"hash_5dfe974bf370a5f4"];
             var_5d7b4163 = zm_equipment::function_379f6b5d(damage, 3, 0.3, 4, 14);
             return var_5d7b4163;
-            break;
         }
     }
     return -1;

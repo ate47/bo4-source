@@ -51,7 +51,7 @@ function __init__() {
     callback::on_ai_damage(&function_615d8c38);
     callback::on_connect(&function_39ffd9fc);
     callback::on_connect(&function_89ec3604);
-    callback::on_weapon_change(&function_16be57e6);
+    callback::on_weapon_change(&crossbow_weapon_change);
     callback::add_weapon_fired(level.w_crossbow, &function_62d37304);
     callback::add_weapon_fired(level.w_crossbow_upgraded, &function_62d37304);
     callback::add_weapon_fired(level.w_crossbow_charged, &function_62d37304);
@@ -85,7 +85,7 @@ function private function_89ec3604() {
             self clientfield::set("" + #"hash_290836b72f987780", 1);
             b_charged = 0;
             while (self attackbuttonpressed() && is_crossbow(w_current) && !self meleebuttonpressed() && !self laststand::player_is_in_laststand()) {
-                if (!b_charged && function_c6da1395(w_current, self)) {
+                if (!b_charged && is_crossbow_charged(w_current, self)) {
                     self clientfield::set("" + #"hash_290836b72f987780", 0);
                     b_charged = 1;
                 }
@@ -105,7 +105,7 @@ function private function_89ec3604() {
 // Checksum 0x76e26674, Offset: 0xaf8
 // Size: 0x1fe
 function function_51f76fdb(inflictor, attacker, damage, flags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
-    if (isplayer(attacker) && is_crossbow(weapon) && function_c6da1395(weapon, attacker) && attacker zm_powerups::is_insta_kill_active()) {
+    if (isplayer(attacker) && is_crossbow(weapon) && is_crossbow_charged(weapon, attacker) && attacker zm_powerups::is_insta_kill_active()) {
         if (!isactor(self) || !isdefined(inflictor) || smeansofdeath !== "MOD_PROJECTILE") {
             return -1;
         }
@@ -130,9 +130,9 @@ function function_8426ad52(weapon) {
     if (!is_crossbow(weapon)) {
         return 0;
     }
-    var_57b07826 = function_d8effeda(weapon);
-    n_ammo_stock = self getweaponammostock(var_57b07826);
-    n_ammo_clip = self getweaponammoclip(var_57b07826);
+    w_crossbow_base = get_base_crossbow(weapon);
+    n_ammo_stock = self getweaponammostock(w_crossbow_base);
+    n_ammo_clip = self getweaponammoclip(w_crossbow_base);
     if (n_ammo_stock >= 4 && n_ammo_clip > 0 || n_ammo_clip > 5) {
         return 1;
     }
@@ -143,13 +143,13 @@ function function_8426ad52(weapon) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xa148b0bc, Offset: 0xdc8
 // Size: 0xa6
-function function_16be57e6(params) {
-    if (is_crossbow(params.weapon) && !function_c6da1395(params.weapon)) {
+function crossbow_weapon_change(params) {
+    if (is_crossbow(params.weapon) && !is_crossbow_charged(params.weapon)) {
         self clientfield::set("" + #"hash_b38c687db71dae", 1);
         self thread function_7157628d();
-    } else {
-        self notify(#"hash_72be12bd6b55fdab");
+        return;
     }
+    self notify(#"hash_72be12bd6b55fdab");
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -160,7 +160,7 @@ function function_7157628d() {
     self notify("6e0a9e3b0455824");
     self endon("6e0a9e3b0455824");
     self endoncallback(&function_a4d47b95, #"death", #"disconnect", #"hash_72be12bd6b55fdab");
-    self.var_5e9be59f = 0;
+    self.b_crossbow_charged = 0;
     while (1) {
         w_current = self getcurrentweapon();
         if (is_crossbow(w_current) && self ismeleeing()) {
@@ -172,14 +172,14 @@ function function_7157628d() {
             if (is_crossbow(w_current)) {
                 self clientfield::set("" + #"hash_b38c687db71dae", 1);
             }
-        } else if (is_crossbow(w_current) && function_8426ad52(w_current) && self.chargeshotlevel > 1 && !self.var_5e9be59f && self attackbuttonpressed()) {
+        } else if (is_crossbow(w_current) && function_8426ad52(w_current) && self.chargeshotlevel > 1 && !self.b_crossbow_charged && self attackbuttonpressed()) {
             self clientfield::set("" + #"hash_faa2f4808c12f8d", 1);
             self clientfield::set("" + #"hash_b38c687db71dae", 0);
-            self.var_5e9be59f = 1;
-        } else if (self.var_5e9be59f && (self.chargeshotlevel <= 1 || !self attackbuttonpressed())) {
+            self.b_crossbow_charged = 1;
+        } else if (self.b_crossbow_charged && (self.chargeshotlevel <= 1 || !self attackbuttonpressed())) {
             self clientfield::set("" + #"hash_faa2f4808c12f8d", 0);
             self clientfield::set("" + #"hash_b38c687db71dae", 1);
-            self.var_5e9be59f = 0;
+            self.b_crossbow_charged = 0;
         }
         waitframe(1);
     }
@@ -250,7 +250,7 @@ function function_615d8c38(params) {
     case #"left_leg_upper":
         if (isalive(self)) {
             if (self.archetype == #"zombie") {
-                if (function_c6da1395(params.weapon) || self.missinglegs && !(isdefined(self.var_410503e) && self.var_410503e)) {
+                if (is_crossbow_charged(params.weapon) || self.missinglegs && !(isdefined(self.var_410503e) && self.var_410503e)) {
                     self thread function_c805f2f9(params);
                 } else {
                     params.eattacker zm_score::player_add_points("crossbow_crawler", 20);
@@ -262,7 +262,7 @@ function function_615d8c38(params) {
                 self thread function_c805f2f9(params);
             }
         }
-        break;
+        return;
     default:
         if (isalive(self) && !(isdefined(self.var_410503e) && self.var_410503e)) {
             self thread function_c805f2f9(params);
@@ -298,7 +298,7 @@ function function_6d8527c2(var_37fa9b04, str_scene, str_shot) {
             self thread scene::play(str_scene, self);
         }
     } else {
-        self thread function_8194ec6(function_a2c527e5(params.weapon));
+        self thread function_8194ec6(is_crossbow_upgraded(params.weapon));
     }
     self function_e1c4ab06(params);
     self clientfield::set("" + #"hash_37c2ef99d645cf87", 0);
@@ -341,7 +341,7 @@ function function_c805f2f9(params) {
         player.var_7cfd8159 = [];
     }
     player.var_7cfd8159 = array::remove_dead(player.var_7cfd8159);
-    if (isdefined(var_5ff12d5f.var_99100b64) && var_5ff12d5f.var_99100b64 || !function_c6da1395(w_crossbow) || isdefined(self.var_1df64653) && self.var_1df64653 || isdefined(self.var_427e5396) && self.var_427e5396 || isdefined(self.var_2c2980d3) && self.var_2c2980d3 || params.smeansofdeath === "MOD_MELEE" || self.archetype == #"elephant_rider" || self.archetype == #"dust_ball") {
+    if (isdefined(var_5ff12d5f.var_99100b64) && var_5ff12d5f.var_99100b64 || !is_crossbow_charged(w_crossbow) || isdefined(self.var_1df64653) && self.var_1df64653 || isdefined(self.var_427e5396) && self.var_427e5396 || isdefined(self.var_2c2980d3) && self.var_2c2980d3 || params.smeansofdeath === "MOD_MELEE" || self.archetype == #"elephant_rider" || self.archetype == #"dust_ball") {
         if (isdefined(self.var_427e5396) && self.var_427e5396 || isdefined(self.var_2c2980d3) && self.var_2c2980d3) {
             return;
         }
@@ -391,7 +391,7 @@ function function_c805f2f9(params) {
     str_scene = self function_e43d1b24();
     if (isdefined(str_scene) && isalive(self)) {
         self thread scene::play(str_scene, self);
-    } else if (function_a2c527e5(w_crossbow)) {
+    } else if (is_crossbow_upgraded(w_crossbow)) {
         self function_9fa5e527(10);
     } else {
         self function_9fa5e527(5);
@@ -442,7 +442,7 @@ function function_c805f2f9(params) {
 // Checksum 0xba82a2c3, Offset: 0x22e0
 // Size: 0x8c
 function function_8a514a61(v_origin, weapon) {
-    if (function_a2c527e5(weapon)) {
+    if (is_crossbow_upgraded(weapon)) {
         if (distancesquared(self.origin, v_origin) <= 44100) {
             return 1;
         }
@@ -461,21 +461,20 @@ function function_b261e2a0(n_amount, player, v_origin, params) {
     [[ level.var_2e1c9680 ]]->waitinqueue(self);
     if (isdefined(player)) {
         self dodamage(n_amount, v_origin, player, params.einflictor, params.shitloc, params.smeansofdeath, 0, params.weapon);
-    } else {
-        self dodamage(n_amount, v_origin);
+        return;
     }
+    self dodamage(n_amount, v_origin);
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
 // Params 1, eflags: 0x1 linked
 // Checksum 0x892c17c4, Offset: 0x2448
 // Size: 0x40
-function function_d8effeda(weapon) {
-    if (function_a2c527e5(weapon)) {
+function get_base_crossbow(weapon) {
+    if (is_crossbow_upgraded(weapon)) {
         return level.w_crossbow_upgraded;
-    } else {
-        return level.w_crossbow;
     }
+    return level.w_crossbow;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -493,11 +492,11 @@ function is_crossbow(weapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa21abf36, Offset: 0x2500
 // Size: 0x132
-function function_c6da1395(weapon, player) {
+function is_crossbow_charged(weapon, player) {
     if (isdefined(player)) {
-        var_57b07826 = function_d8effeda(weapon);
-        n_ammo_stock = player getweaponammostock(var_57b07826);
-        n_ammo_clip = player getweaponammoclip(var_57b07826);
+        w_crossbow_base = get_base_crossbow(weapon);
+        n_ammo_stock = player getweaponammostock(w_crossbow_base);
+        n_ammo_clip = player getweaponammoclip(w_crossbow_base);
         if ((n_ammo_clip >= 5 || n_ammo_stock >= 4) && (weapon === level.w_crossbow_charged || weapon === level.w_crossbow_charged_upgraded)) {
             return 1;
         }
@@ -514,7 +513,7 @@ function function_c6da1395(weapon, player) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1a03ec7c, Offset: 0x2640
 // Size: 0x3e
-function function_a2c527e5(weapon) {
+function is_crossbow_upgraded(weapon) {
     if (weapon === level.w_crossbow_upgraded || weapon === level.w_crossbow_charged_upgraded) {
         return 1;
     }
@@ -531,7 +530,7 @@ function function_e1c4ab06(params) {
     e_inflictor = params.einflictor;
     w_crossbow = params.weapon;
     params.smeansofdeath = "MOD_ELECTROCUTED";
-    if (function_a2c527e5(w_crossbow)) {
+    if (is_crossbow_upgraded(w_crossbow)) {
         var_832a6071 = 1;
         n_time = 10;
     } else {
@@ -558,7 +557,7 @@ function function_e1c4ab06(params) {
                         player.var_d382ba7a = array::remove_dead(player.var_d382ba7a);
                     }
                     ai.var_427e5396 = 1;
-                    if (function_a2c527e5(w_crossbow)) {
+                    if (is_crossbow_upgraded(w_crossbow)) {
                         ai clientfield::set("" + #"hash_690509b9a2ec2ef3", 2);
                         ai function_9fa5e527(10);
                     } else {
@@ -579,7 +578,6 @@ function function_e1c4ab06(params) {
                         ai function_b261e2a0(int(ai.maxhealth * 0.1), player, v_origin, params);
                     }
                     waitframe(1);
-                } else {
                     continue;
                 }
             }
@@ -620,7 +618,6 @@ function function_144a052b(archetype) {
         return #"hash_3a067a5eb7a19857";
     case #"blight_father":
         return #"hash_280fa271c70412cd";
-        break;
     }
 }
 
@@ -704,7 +701,7 @@ function function_e43d1b24() {
 // Checksum 0x9f57ccda, Offset: 0x31b0
 // Size: 0x3d2
 function function_b3ac0cab(params) {
-    if (!function_a2c527e5(params.weapon)) {
+    if (!is_crossbow_upgraded(params.weapon)) {
         switch (self.archetype) {
         case #"zombie":
             var_a3abe438 = 1;
@@ -793,7 +790,7 @@ function function_62d37304(weapon) {
     self notify("49b4d856fccf9e75");
     self endon("49b4d856fccf9e75");
     self endon(#"disconnect");
-    if (function_c6da1395(weapon, self)) {
+    if (is_crossbow_charged(weapon, self)) {
         self clientfield::increment("" + #"hash_6c3560ab45e186ec");
     }
     if (level flagsys::get(#"hash_cad6742c753621")) {
@@ -813,12 +810,12 @@ function function_62d37304(weapon) {
             s_weapon_object.onfizzleout = &function_74106de1;
         }
     }
-    if (function_c6da1395(weapon, self)) {
-        var_57b07826 = function_d8effeda(weapon);
-        n_ammo_stock = self getweaponammostock(var_57b07826) - 4;
-        n_ammo_stock = math::clamp(n_ammo_stock, 0, var_57b07826.maxammo);
-        n_ammo_clip = self getweaponammoclip(var_57b07826);
-        self setweaponammostock(var_57b07826, n_ammo_stock);
+    if (is_crossbow_charged(weapon, self)) {
+        w_crossbow_base = get_base_crossbow(weapon);
+        n_ammo_stock = self getweaponammostock(w_crossbow_base) - 4;
+        n_ammo_stock = math::clamp(n_ammo_stock, 0, w_crossbow_base.maxammo);
+        n_ammo_clip = self getweaponammoclip(w_crossbow_base);
+        self setweaponammostock(w_crossbow_base, n_ammo_stock);
     }
 }
 

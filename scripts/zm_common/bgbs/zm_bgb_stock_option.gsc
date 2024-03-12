@@ -43,11 +43,11 @@ function enable() {
                 self setweaponammoclip(w_previous, n_clip_size);
                 var_88f48290 = n_stock_size - var_97c3ac3d;
                 self setweaponammostock(w_previous, var_88f48290);
-            } else {
-                var_3a347a66 = n_clip + n_stock_size;
-                self setweaponammoclip(w_previous, var_3a347a66);
-                self setweaponammostock(w_previous, 0);
+                return;
             }
+            var_3a347a66 = n_clip + n_stock_size;
+            self setweaponammoclip(w_previous, var_3a347a66);
+            self setweaponammostock(w_previous, 0);
         }
     }
 }
@@ -95,7 +95,9 @@ function function_1ff1beff() {
             if (self hasperk("specialty_ammodrainsfromstockfirst")) {
                 self perks::perk_unsetperk("specialty_ammodrainsfromstockfirst");
             }
-        } else if (!self hasperk("specialty_ammodrainsfromstockfirst")) {
+            continue;
+        }
+        if (!self hasperk("specialty_ammodrainsfromstockfirst")) {
             self perks::perk_setperk("specialty_ammodrainsfromstockfirst");
         }
     }

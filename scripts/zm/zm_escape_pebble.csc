@@ -58,9 +58,9 @@ function function_33f1dd99(localclientnum, oldval, newval, bnewent, binitialsnap
 function narrative_room(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_a5777754(localclientnum, "broom_closet");
-    } else {
-        function_73b1f242(localclientnum, "broom_closet");
+        return;
     }
+    function_73b1f242(localclientnum, "broom_closet");
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
@@ -70,9 +70,9 @@ function narrative_room(localclientnum, oldval, newval, bnewent, binitialsnap, f
 function attic_room(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_a5777754(localclientnum, "back_room");
-    } else {
-        function_73b1f242(localclientnum, "back_room");
+        return;
     }
+    function_73b1f242(localclientnum, "back_room");
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble
@@ -91,21 +91,23 @@ function function_db9b47b5(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self.var_2d6d5baa = util::playfxontag(localclientnum, level._effect[#"light_red"], self, "tag_eye_rt");
         self.var_ab585fc = util::playfxontag(localclientnum, level._effect[#"light_red"], self, "tag_eye_lt");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_a25a09ff = util::playfxontag(localclientnum, level._effect[#"hash_20080a107a8533e"], self, "tag_origin");
-    } else {
-        if (isdefined(self.var_2d6d5baa)) {
-            killfx(localclientnum, self.var_2d6d5baa);
-            self.var_2d6d5baa = undefined;
-        }
-        if (isdefined(self.var_ab585fc)) {
-            killfx(localclientnum, self.var_ab585fc);
-            self.var_ab585fc = undefined;
-        }
-        if (isdefined(self.var_a25a09ff)) {
-            stopfx(localclientnum, self.var_a25a09ff);
-            self.var_a25a09ff = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_2d6d5baa)) {
+        killfx(localclientnum, self.var_2d6d5baa);
+        self.var_2d6d5baa = undefined;
+    }
+    if (isdefined(self.var_ab585fc)) {
+        killfx(localclientnum, self.var_ab585fc);
+        self.var_ab585fc = undefined;
+    }
+    if (isdefined(self.var_a25a09ff)) {
+        stopfx(localclientnum, self.var_a25a09ff);
+        self.var_a25a09ff = undefined;
     }
 }
 

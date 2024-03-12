@@ -41,10 +41,7 @@ function field_toggle_lensflare(localclientnum, oldval, newval, bnewent, binitia
     if (newval) {
         if (isdefined(settings.lensflare_fx) && isdefined(settings.lensflare_tag)) {
             self.turret_lensflare_id = util::playfxontag(localclientnum, settings.lensflare_fx, self, settings.lensflare_tag);
-            goto LOC_00000114;
         }
-    LOC_00000114:
     }
-LOC_00000114:
 }
 

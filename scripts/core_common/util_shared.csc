@@ -208,14 +208,14 @@ function waittill_multiple_ents(...) {
                 a_notifies = array(a_notifies);
             }
             a_notifies[a_notifies.size] = vararg[i];
-        } else {
-            if (!isdefined(a_ents)) {
-                a_ents = [];
-            } else if (!isarray(a_ents)) {
-                a_ents = array(a_ents);
-            }
-            a_ents[a_ents.size] = vararg[i];
+            continue;
         }
+        if (!isdefined(a_ents)) {
+            a_ents = [];
+        } else if (!isarray(a_ents)) {
+            a_ents = array(a_ents);
+        }
+        a_ents[a_ents.size] = vararg[i];
     }
     s_tracker = spawnstruct();
     s_tracker._wait_count = 0;
@@ -356,63 +356,63 @@ function _single_func(entity, func, a_vars) {
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6], a_vars[7]);
         }
-        break;
+        return;
     case 7:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6]);
         }
-        break;
+        return;
     case 6:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5]);
         }
-        break;
+        return;
     case 5:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4]);
         }
-        break;
+        return;
     case 4:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3]);
         }
-        break;
+        return;
     case 3:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2]);
         }
-        break;
+        return;
     case 2:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1]);
         }
-        break;
+        return;
     case 1:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0]);
         } else {
             return [[ func ]](a_vars[0]);
         }
-        break;
+        return;
     case 0:
         if (isdefined(entity)) {
             return entity [[ func ]]();
         } else {
             return [[ func ]]();
         }
-        break;
+        return;
     default:
         /#
             assertmsg("<unknown string>");
@@ -429,9 +429,9 @@ function _clean_up_arg_array(&a_vars) {
     for (i = a_vars.size - 1; i >= 0; i--) {
         if (a_vars[i] === undefined) {
             arrayremoveindex(a_vars, i, 0);
-        } else {
-            break;
+            continue;
         }
+        return;
     }
 }
 
@@ -476,9 +476,9 @@ function array_ent_thread(entities, func, arg1, arg2, arg3, arg4, arg5) {
                 single_thread(self, func, entity, arg1, arg2, arg3, arg4, arg5);
             }
         }
-    } else {
-        single_thread(self, func, entities, arg1, arg2, arg3, arg4, arg5);
+        return;
     }
+    single_thread(self, func, entities, arg1, arg2, arg3, arg4, arg5);
 }
 
 // Namespace util/util_shared
@@ -491,19 +491,29 @@ function single_thread(entity, func, arg1, arg2, arg3, arg4, arg5, arg6) {
     #/
     if (isdefined(arg6)) {
         entity thread [[ func ]](arg1, arg2, arg3, arg4, arg5, arg6);
-    } else if (isdefined(arg5)) {
-        entity thread [[ func ]](arg1, arg2, arg3, arg4, arg5);
-    } else if (isdefined(arg4)) {
-        entity thread [[ func ]](arg1, arg2, arg3, arg4);
-    } else if (isdefined(arg3)) {
-        entity thread [[ func ]](arg1, arg2, arg3);
-    } else if (isdefined(arg2)) {
-        entity thread [[ func ]](arg1, arg2);
-    } else if (isdefined(arg1)) {
-        entity thread [[ func ]](arg1);
-    } else {
-        entity thread [[ func ]]();
+        return;
     }
+    if (isdefined(arg5)) {
+        entity thread [[ func ]](arg1, arg2, arg3, arg4, arg5);
+        return;
+    }
+    if (isdefined(arg4)) {
+        entity thread [[ func ]](arg1, arg2, arg3, arg4);
+        return;
+    }
+    if (isdefined(arg3)) {
+        entity thread [[ func ]](arg1, arg2, arg3);
+        return;
+    }
+    if (isdefined(arg2)) {
+        entity thread [[ func ]](arg1, arg2);
+        return;
+    }
+    if (isdefined(arg1)) {
+        entity thread [[ func ]](arg1);
+        return;
+    }
+    entity thread [[ func ]]();
 }
 
 // Namespace util/util_shared
@@ -667,9 +677,9 @@ function add_remove_list(&a = [], on_off) {
         if (!isinarray(a, self)) {
             arrayinsert(a, self, a.size);
         }
-    } else {
-        arrayremovevalue(a, self, 0);
+        return;
     }
+    arrayremovevalue(a, self, 0);
 }
 
 // Namespace util/util_shared
@@ -725,10 +735,10 @@ function lerp_dvar(str_dvar, n_start_val = getdvarfloat(str_dvar, 0), n_end_val,
         n_curr_val = lerpfloat(n_start_val, n_end_val, n_time_delta / n_lerp_time);
         if (isdefined(b_saved_dvar) && b_saved_dvar) {
             setsaveddvar(str_dvar, n_curr_val);
-        } else {
-            setdvar(str_dvar, n_curr_val);
+            continue;
         }
-    } while(n_time_delta < n_lerp_time);
+        setdvar(str_dvar, n_curr_val);
+    } while (n_time_delta < n_lerp_time);
 }
 
 // Namespace util/util_shared
@@ -802,10 +812,9 @@ function register_system(ssysname, cbfunc) {
             error("<unknown string>" + ssysname);
         #/
         return;
-    } else {
-        level._systemstates[ssysname] = spawnstruct();
-        level._systemstates[ssysname].callback = cbfunc;
     }
+    level._systemstates[ssysname] = spawnstruct();
+    level._systemstates[ssysname].callback = cbfunc;
 }
 
 // Namespace util/util_shared
@@ -928,7 +937,7 @@ function isenemyteam(team) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x341a2899, Offset: 0x2ac0
 // Size: 0xba
 function isenemyplayer(player) {
@@ -1194,10 +1203,9 @@ function registersystem(ssysname, cbfunc) {
             error("<unknown string>" + ssysname);
         #/
         return;
-    } else {
-        level._systemstates[ssysname] = spawnstruct();
-        level._systemstates[ssysname].callback = cbfunc;
     }
+    level._systemstates[ssysname] = spawnstruct();
+    level._systemstates[ssysname].callback = cbfunc;
 }
 
 // Namespace util/util_shared
@@ -1516,19 +1524,18 @@ function waittill_down_button_pressed() {
 }
 
 // Namespace util/util_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xacae7c1b, Offset: 0x4110
 // Size: 0x6c
 function function_4c1656d5() {
     if (sessionmodeiswarzonegame()) {
         return getdvarfloat(#"hash_4e7a02edee964bf9", 250);
-    } else {
-        return getdvarfloat(#"hash_4ec50cedeed64871", 250);
     }
+    return getdvarfloat(#"hash_4ec50cedeed64871", 250);
 }
 
 // Namespace util/util_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1229f819, Offset: 0x4188
 // Size: 0x124
 function function_16fb0a3b() {
@@ -1538,11 +1545,12 @@ function function_16fb0a3b() {
         } else {
             return getdvarfloat(#"hash_4e7a02edee964bf9", 250);
         }
-    } else if (getdvarint(#"hash_23fac9a913e70c03", 0) > 0) {
-        return getdvarfloat(#"hash_606c79b0e9348eb8", 250);
-    } else {
-        return getdvarfloat(#"hash_4ec50cedeed64871", 250);
+        return;
     }
+    if (getdvarint(#"hash_23fac9a913e70c03", 0) > 0) {
+        return getdvarfloat(#"hash_606c79b0e9348eb8", 250);
+    }
+    return getdvarfloat(#"hash_4ec50cedeed64871", 250);
 }
 
 // Namespace util/util_shared
@@ -1609,13 +1617,13 @@ function cf_team_mapping(localclientnum, oldval, newval, bnewent, binitialsnap, 
     switch (newval) {
     case 0:
         set_team_mapping(#"axis", #"allies");
-        break;
+        return;
     case 1:
         set_team_mapping(#"allies", #"axis");
-        break;
+        return;
     default:
         set_team_mapping(#"allies", #"axis");
-        break;
+        return;
     }
 }
 
@@ -1779,7 +1787,7 @@ function function_26489405() {
 }
 
 // Namespace util/util_shared
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xca020cc2, Offset: 0x4d68
 // Size: 0x7c
 function function_8570168d() {
@@ -1835,7 +1843,7 @@ function script_wait() {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9cf5eadf, Offset: 0x4f98
 // Size: 0x96
 function lock_model(model) {
@@ -1854,7 +1862,7 @@ function lock_model(model) {
 }
 
 // Namespace util/util_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2a8ef3ce, Offset: 0x5038
 // Size: 0x9c
 function unlock_model(model) {
@@ -1882,7 +1890,9 @@ function function_48e57e36(var_1f1d12d8) {
         if (var_1f1d12d8[i] >= "0" && var_1f1d12d8[i] <= "9") {
             decimal = decimal + int(var_1f1d12d8[i]) * base;
             base = base * 16;
-        } else if (var_1f1d12d8[i] >= "a" && var_1f1d12d8[i] <= "f") {
+            continue;
+        }
+        if (var_1f1d12d8[i] >= "a" && var_1f1d12d8[i] <= "f") {
             if (var_1f1d12d8[i] == "a") {
                 number = 10;
             } else if (var_1f1d12d8[i] == "b") {

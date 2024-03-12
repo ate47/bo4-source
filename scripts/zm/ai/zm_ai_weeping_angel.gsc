@@ -107,14 +107,12 @@ function private function_b6824ff0(entity, player, duration, color) {
 // Size: 0x116
 function private function_e5ffb77c(start, end, duration, color) {
     /#
-        current_time = duration * 20;
-        while (current_time > 0) {
+        for (current_time = duration * 20; current_time > 0; current_time = current_time - 1) {
             waitframe(1);
             line(start, end, color, 1, 1);
             sphere(end, 10, color, 1, 0, 8, 1);
             distance = distance(start, end);
             print3d(end + vectorscale((0, 0, 1), 10), "<unknown string>" + distance, color, 1, 1, 1);
-            current_time = current_time - 1;
         }
     #/
 }
@@ -141,25 +139,25 @@ function private function_ad034041(entity) {
         if (player cansee(entity)) {
             function_b6824ff0(entity, player, 0.1, (1, 0, 0));
             var_de85d14d[var_de85d14d.size] = player;
-        } else {
-            function_b6824ff0(entity, player, 0.1, (0, 1, 0));
+            continue;
         }
+        function_b6824ff0(entity, player, 0.1, (0, 1, 0));
     }
     if (var_de85d14d.size > 0) {
         if (!(isdefined(entity.is_inert) && entity.is_inert)) {
             entity namespace_9ff9f642::freeze();
         }
         entity setgoal(entity.origin);
-    } else {
-        if (isdefined(entity.is_inert) && entity.is_inert) {
-            entity namespace_9ff9f642::unfreeze();
-        }
-        if (isdefined(entity.var_72411ccf)) {
-            entity [[ entity.var_72411ccf ]](entity);
-        } else {
-            entity zm_behavior::zombiefindflesh(entity);
-        }
+        return;
     }
+    if (isdefined(entity.is_inert) && entity.is_inert) {
+        entity namespace_9ff9f642::unfreeze();
+    }
+    if (isdefined(entity.var_72411ccf)) {
+        entity [[ entity.var_72411ccf ]](entity);
+        return;
+    }
+    entity zm_behavior::zombiefindflesh(entity);
 }
 
 // Namespace zm_ai_weeping_angel/zm_ai_weeping_angel

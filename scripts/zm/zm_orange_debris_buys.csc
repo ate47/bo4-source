@@ -30,11 +30,11 @@ function function_32f95e3f(localclientnum, oldval, newval, bnewent, binitialsnap
             var_a6b8d2c2 = self zbarriergetpiece(i);
             var_a6b8d2c2 playrenderoverridebundle("rob_zm_orange_debris_clear");
         }
-    } else {
-        for (i = 0; i < self getnumzbarrierpieces(); i++) {
-            var_a6b8d2c2 = self zbarriergetpiece(i);
-            var_a6b8d2c2 stoprenderoverridebundle("rob_zm_orange_debris_clear");
-        }
+        return;
+    }
+    for (i = 0; i < self getnumzbarrierpieces(); i++) {
+        var_a6b8d2c2 = self zbarriergetpiece(i);
+        var_a6b8d2c2 stoprenderoverridebundle("rob_zm_orange_debris_clear");
     }
 }
 

@@ -74,11 +74,11 @@ function main() {
         function_70f4c8c3("outer_walkway_blocker");
         function_70f4c8c3("sunken_path_blocker");
         function_70f4c8c3("cove_to_beach_blocker");
-    } else {
-        function_86270fbf("outer_walkway_blocker");
-        function_86270fbf("sunken_path_blocker");
-        function_86270fbf("cove_to_beach_blocker");
+        return;
     }
+    function_86270fbf("outer_walkway_blocker");
+    function_86270fbf("sunken_path_blocker");
+    function_86270fbf("cove_to_beach_blocker");
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
@@ -104,9 +104,9 @@ function function_70f4c8c3(str_targetname) {
         if (e_blocker.script_noteworthy === "clip") {
             e_blocker connectpaths();
             e_blocker delete();
-        } else {
-            e_blocker setmodel("p8_zm_ora_dynamite_barrier_destroyed");
+            continue;
         }
+        e_blocker setmodel("p8_zm_ora_dynamite_barrier_destroyed");
     }
 }
 
@@ -250,9 +250,9 @@ function function_8427e524() {
             }
             level.var_1daa43ee = 1;
         }
-    } else {
-        level.var_1daa43ee = 1;
+        return;
     }
+    level.var_1daa43ee = 1;
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
@@ -279,7 +279,7 @@ function function_e58f823f() {
         e_target = self.favoriteenemy;
         if (isdefined(e_target) && distancesquared(e_target.origin, self.origin) <= 64 * 64) {
             self thread function_87f8b232();
-            break;
+            return;
         }
         wait(0.1);
     }
@@ -461,15 +461,15 @@ function function_61511fcf(n_index) {
     case 0:
         function_70f4c8c3("outer_walkway_blocker");
         level flag::set(#"hash_52d967f4fc8b12fc");
-        break;
+        return;
     case 1:
         function_70f4c8c3("sunken_path_blocker");
         level flag::set(#"hash_48e7d63b38c5e2da");
-        break;
+        return;
     case 2:
         function_70f4c8c3("cove_to_beach_blocker");
         level flag::set(#"hash_38c97197db36afb7");
-        break;
+        return;
     }
 }
 
@@ -496,8 +496,8 @@ function function_6ecfea46() {
         }
         level.var_1daa43ee = 1;
         zm_ui_inventory::function_7df6bb60("dynamite_bomb_phase", 0);
-    } else {
-        callback::remove_on_ai_spawned(&function_e3203a2);
+        return;
     }
+    callback::remove_on_ai_spawned(&function_e3203a2);
 }
 

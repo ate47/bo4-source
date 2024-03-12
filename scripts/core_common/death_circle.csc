@@ -75,17 +75,17 @@ function function_a380fe5(localclientnum, oldval, newval, bnewent, binitialsnap,
         } else {
             self function_a5edb367(#"none");
         }
-    } else {
-        self function_811196d1(1);
-        self function_bc95cd57(0);
-        if (isdefined(self.var_2c8e49d2)) {
-            self.var_2c8e49d2 stoprenderoverridebundle(#"hash_75168376918f5ab7");
-            self.var_2c8e49d2 delete();
-        }
-        if (isdefined(self.var_29b256b0)) {
-            self.var_29b256b0 stoploopsound(self.var_29b256b0.handle);
-            self.var_29b256b0 delete();
-        }
+        return;
+    }
+    self function_811196d1(1);
+    self function_bc95cd57(0);
+    if (isdefined(self.var_2c8e49d2)) {
+        self.var_2c8e49d2 stoprenderoverridebundle(#"hash_75168376918f5ab7");
+        self.var_2c8e49d2 delete();
+    }
+    if (isdefined(self.var_29b256b0)) {
+        self.var_29b256b0 stoploopsound(self.var_29b256b0.handle);
+        self.var_29b256b0 delete();
     }
 }
 
@@ -266,11 +266,11 @@ function private function_e1273acb(localclientnum, intensity = 0) {
         if (var_4a4e047 >= 10 || player function_21c0fa55() || player clientfield::get("outsidedeathcircle") || !isalive(player) || distance2dsquared(origin, player.origin) > maxdistsq || vectordot(fwd, player.origin - origin) <= 0) {
             player function_de4523(localclientnum);
             player function_9e8e1f4f(localclientnum);
-        } else {
-            player function_de4523(localclientnum, rob, robfade);
-            player function_9e8e1f4f(localclientnum, tagfx);
-            var_4a4e047++;
+            continue;
         }
+        player function_de4523(localclientnum, rob, robfade);
+        player function_9e8e1f4f(localclientnum, tagfx);
+        var_4a4e047++;
     }
 }
 

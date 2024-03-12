@@ -131,9 +131,9 @@ function function_2a76a74e(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_6bc1e300(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         forcestreamxmodel(#"hash_36f02881e6dba006");
-    } else {
-        stopforcestreamingxmodel(#"hash_36f02881e6dba006");
+        return;
     }
+    stopforcestreamingxmodel(#"hash_36f02881e6dba006");
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest

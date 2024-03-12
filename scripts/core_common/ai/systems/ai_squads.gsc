@@ -165,10 +165,10 @@ function private thinksquad(squadname) {
     while (1) {
         if ([[ level._squads[squadname] ]]->think()) {
             wait(0.5);
-        } else {
-            removesquad(squadname);
-            break;
+            continue;
         }
+        removesquad(squadname);
+        return;
     }
 }
 

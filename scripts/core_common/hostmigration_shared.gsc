@@ -18,13 +18,13 @@ function debug_script_structs() {
                 struct = level.struct[i];
                 if (isdefined(struct.targetname)) {
                     println("<unknown string>" + i + "<unknown string>" + struct.targetname);
-                } else {
-                    println("<unknown string>" + i + "<unknown string>" + "<unknown string>");
+                    continue;
                 }
+                println("<unknown string>" + i + "<unknown string>" + "<unknown string>");
             }
-        } else {
-            println("<unknown string>");
+            return;
         }
+        println("<unknown string>");
     #/
 }
 
@@ -38,7 +38,9 @@ function updatetimerpausedness() {
         level.timerstopped = 1;
         level.playabletimerstopped = 1;
         level.timerpausetime = gettime();
-    } else if (level.timerstopped && !shouldbestopped) {
+        return;
+    }
+    if (level.timerstopped && !shouldbestopped) {
         level.timerstopped = 0;
         level.playabletimerstopped = 0;
         level.discardtime = level.discardtime + gettime() - level.timerpausetime;
@@ -212,12 +214,10 @@ function waitlongdurationwithhostmigrationpause(duration) {
         assert(duration > 0);
     #/
     starttime = gettime();
-    endtime = gettime() + int(duration * 1000);
-    while (gettime() < endtime) {
+    for (endtime = gettime() + int(duration * 1000); gettime() < endtime; endtime = endtime + timepassed) {
         waittillhostmigrationstarts(float(endtime - gettime()) / 1000);
         if (isdefined(level.hostmigrationtimer)) {
             timepassed = waittillhostmigrationdone();
-            endtime = endtime + timepassed;
         }
     }
     /#

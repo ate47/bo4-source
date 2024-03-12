@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace item_drop/item_drop
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x839e9db7, Offset: 0x2c8
 // Size: 0x27c
 function __init__() {
@@ -82,7 +82,7 @@ function private function_60c9a9e1() {
 }
 
 // Namespace item_drop/item_drop
-// Params 5, eflags: 0x5 linked
+// Params 5, eflags: 0x4
 // Checksum 0xdef8ed9, Offset: 0x630
 // Size: 0x1ca
 function private function_3b2b6383(origin, angles, normal, var_a6762160, var_ba40b4c1) {
@@ -99,7 +99,7 @@ function private function_3b2b6383(origin, angles, normal, var_a6762160, var_ba4
 }
 
 // Namespace item_drop/item_drop
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x3d5a2684, Offset: 0x808
 // Size: 0x12e
 function private function_feb1473(var_a6762160, var_ba40b4c1) {
@@ -132,7 +132,7 @@ function private function_32b2794(degree) {
 }
 
 // Namespace item_drop/item_drop
-// Params 6, eflags: 0x5 linked
+// Params 6, eflags: 0x4
 // Checksum 0x9ea4e9fe, Offset: 0xa20
 // Size: 0x552
 function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &drop_amount, var_4a5c0085 = 1, var_fee0423a = 0) {
@@ -176,58 +176,58 @@ function private function_44a6883c(&drop_item_id, &drop_items, &drop_count, &dro
             if (drop_count[index] == var_a057551d) {
                 continue;
             }
-            jumpcmp(drop_count[index] < var_a057551d) LOC_0000036a;
-            excess = drop_count[index] - var_a057551d;
-            drop_count[index] = var_a057551d;
-            drop_item_id[var_f55ea9e5] = drop_item_id[index];
-            if (isdefined(drop_items[index])) {
-                drop_items[var_f55ea9e5] = drop_items[index];
+            if (drop_count[index] > var_a057551d) {
+                excess = drop_count[index] - var_a057551d;
+                drop_count[index] = var_a057551d;
+                drop_item_id[var_f55ea9e5] = drop_item_id[index];
+                if (isdefined(drop_items[index])) {
+                    drop_items[var_f55ea9e5] = drop_items[index];
+                }
+                drop_count[var_f55ea9e5] = excess;
+                drop_amount[var_f55ea9e5] = drop_amount[index];
+                var_f55ea9e5++;
+                continue;
             }
-            drop_count[var_f55ea9e5] = excess;
-            drop_amount[var_f55ea9e5] = drop_amount[index];
-            var_f55ea9e5++;
-        } else {
-        LOC_0000036a:
+        }
+        if (!isdefined(drop_count[index]) || drop_count[index] <= 0) {
+            continue;
+        }
+        for (var_604c3ae6 = 0; var_604c3ae6 < index; var_604c3ae6++) {
             if (!isdefined(drop_count[index]) || drop_count[index] <= 0) {
                 continue;
             }
-            for (var_604c3ae6 = 0; var_604c3ae6 < index; var_604c3ae6++) {
-                if (!isdefined(drop_count[index]) || drop_count[index] <= 0) {
-                    continue;
-                }
-                if (drop_item_id[var_604c3ae6] == -1) {
-                    continue;
-                }
-                var_92d652f2 = function_b1702735(drop_item_id[var_604c3ae6]);
-                var_f6a3c690 = var_92d652f2.var_a6762160;
-                var_fa38de52 = item_world_util::get_itemtype(var_f6a3c690);
-                if (itemname != var_fa38de52) {
-                    continue;
-                }
-                excess = drop_count[index];
-                if (var_4a5c0085) {
-                    var_8429965a = var_a057551d - drop_count[var_604c3ae6];
-                    excess = int(min(var_8429965a, drop_count[index]));
-                }
-                drop_count[var_604c3ae6] = drop_count[var_604c3ae6] + excess;
-                drop_count[index] = drop_count[index] - excess;
-                if (drop_count[index] <= 0) {
-                    /#
-                        assert(drop_count[index] == 0);
-                    #/
-                    drop_item_id[index] = -1;
-                    drop_items[index] = undefined;
-                    drop_count[index] = undefined;
-                    drop_amount[index] = undefined;
-                    continue;
-                }
+            if (drop_item_id[var_604c3ae6] == -1) {
+                continue;
+            }
+            var_92d652f2 = function_b1702735(drop_item_id[var_604c3ae6]);
+            var_f6a3c690 = var_92d652f2.var_a6762160;
+            var_fa38de52 = item_world_util::get_itemtype(var_f6a3c690);
+            if (itemname != var_fa38de52) {
+                continue;
+            }
+            excess = drop_count[index];
+            if (var_4a5c0085) {
+                var_8429965a = var_a057551d - drop_count[var_604c3ae6];
+                excess = int(min(var_8429965a, drop_count[index]));
+            }
+            drop_count[var_604c3ae6] = drop_count[var_604c3ae6] + excess;
+            drop_count[index] = drop_count[index] - excess;
+            if (drop_count[index] <= 0) {
+                /#
+                    assert(drop_count[index] == 0);
+                #/
+                drop_item_id[index] = -1;
+                drop_items[index] = undefined;
+                drop_count[index] = undefined;
+                drop_amount[index] = undefined;
+                continue;
             }
         }
     }
 }
 
 // Namespace item_drop/item_drop
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x2265192c, Offset: 0xf80
 // Size: 0x942
 function private function_23b6897(player, position) {
@@ -283,7 +283,8 @@ function private function_23b6897(player, position) {
                     if (isdefined(var_f4b807cb[var_b7e54435].var_a6762160) && var_f4b807cb[var_b7e54435].var_a6762160.itemtype == #"weapon" && distance2dsquared(var_f4b807cb[var_b7e54435].origin, checkpoint) < var_f24d242c) {
                         var_d154a9ba = 1;
                         break;
-                    } else if (distance2dsquared(var_f4b807cb[var_b7e54435].origin, checkpoint) < var_ed81de82) {
+                    }
+                    if (distance2dsquared(var_f4b807cb[var_b7e54435].origin, checkpoint) < var_ed81de82) {
                         var_d154a9ba = 1;
                         break;
                     }
@@ -341,7 +342,7 @@ function private function_23b6897(player, position) {
 }
 
 // Namespace item_drop/item_drop
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xe20a1db8, Offset: 0x18d0
 // Size: 0x1ae
 function private function_2734eea3(player) {
@@ -359,7 +360,7 @@ function private function_2734eea3(player) {
 }
 
 // Namespace item_drop/item_drop
-// Params 6, eflags: 0x5 linked
+// Params 6, eflags: 0x4
 // Checksum 0x7b48eb01, Offset: 0x1a88
 // Size: 0xa26
 function private function_a938fba7(player, position, angles, var_a6762160, var_74e79ee3 = 0, var_ba40b4c1 = 1) {
@@ -498,7 +499,7 @@ function private function_a938fba7(player, position, angles, var_a6762160, var_7
 }
 
 // Namespace item_drop/item_drop
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x837ab8, Offset: 0x24b8
 // Size: 0x5de
 function function_10ececeb(var_e280bfe2 = 1, tracedistance = 24, originheightoffset = 0, min = (0, 0, 0), max = (0, 0, 0)) {
@@ -603,7 +604,7 @@ function event_handler[player_disconnect] codecallback_playerdisconnect(eventstr
 }
 
 // Namespace item_drop/item_drop
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4bcb15ad, Offset: 0x2bb8
 // Size: 0x7e
 function function_f3f9788a(itemtype, percentchance) {
@@ -637,7 +638,7 @@ function function_8a5fd783() {
 }
 
 // Namespace item_drop/item_drop
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x85312b20, Offset: 0x2e48
 // Size: 0x36
 function function_767443cc(player) {
@@ -656,7 +657,7 @@ function function_175940f3(player) {
 }
 
 // Namespace item_drop/item_drop
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x307c2f6e, Offset: 0x2ec8
 // Size: 0x10b6
 function drop_inventory(player) {
@@ -800,23 +801,23 @@ function drop_inventory(player) {
             itemname = var_bf145320.type;
             if (isdefined(level.var_4afb8f5a[itemname])) {
                 itemname = level.var_4afb8f5a[itemname];
-                jumpiffalse(itemname == #"") LOC_00000b9a;
-            } else {
-            LOC_00000b9a:
-                itempoint = function_4ba8fde(itemname);
-                if (!isdefined(itempoint)) {
+                if (itemname == #"") {
                     continue;
                 }
-                if (var_bf145320.chance >= randomfloat(1)) {
-                    itemid = itempoint.id;
-                    item_weapon = item_world_util::function_f4a8d375(itemid);
-                    if (isdefined(item_weapon)) {
-                        drop_items[drop_item_id.size] = item_weapon;
-                    }
-                    drop_count[drop_item_id.size] = 1;
-                    drop_amount[drop_item_id.size] = 1;
-                    drop_item_id[drop_item_id.size] = itemid;
+            }
+            itempoint = function_4ba8fde(itemname);
+            if (!isdefined(itempoint)) {
+                continue;
+            }
+            if (var_bf145320.chance >= randomfloat(1)) {
+                itemid = itempoint.id;
+                item_weapon = item_world_util::function_f4a8d375(itemid);
+                if (isdefined(item_weapon)) {
+                    drop_items[drop_item_id.size] = item_weapon;
                 }
+                drop_count[drop_item_id.size] = 1;
+                drop_amount[drop_item_id.size] = 1;
+                drop_item_id[drop_item_id.size] = itemid;
             }
         }
     }
@@ -880,7 +881,7 @@ function drop_inventory(player) {
 }
 
 // Namespace item_drop/item_drop
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0x5622f03, Offset: 0x3f88
 // Size: 0xb4a
 function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, angles = (0, 0, 0), stashitem = 0, deathstash = 0, targetname = undefined, parentent = undefined, attachments = undefined, var_ba40b4c1 = 1, weaponoptions = undefined, charmindex = undefined, deathfxindex = undefined) {
@@ -1018,7 +1019,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
 }
 
 // Namespace item_drop/item_drop
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x94e0a564, Offset: 0x4ae0
 // Size: 0x25a
 function function_4da960f6(origin, radius, time) {
@@ -1053,7 +1054,7 @@ function function_4da960f6(origin, radius, time) {
 }
 
 // Namespace item_drop/item_drop
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb3f625b0, Offset: 0x4d48
 // Size: 0x8c
 function function_ba4c90d9(item) {

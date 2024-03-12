@@ -100,7 +100,9 @@ function private function_7d5fa1ae(localclientnum, oldval, newval, bnewent, bini
 function private function_c6aa29ea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_cc8c05d5 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_elbow_amb"], self, "tag_elbow_weakspot_le");
-    } else if (isdefined(self.var_cc8c05d5)) {
+        return;
+    }
+    if (isdefined(self.var_cc8c05d5)) {
         stopfx(localclientnum, self.var_cc8c05d5);
         self.var_cc8c05d5 = undefined;
     }
@@ -113,7 +115,9 @@ function private function_c6aa29ea(localclientnum, oldval, newval, bnewent, bini
 function private function_caf74103(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_e844c6a2 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_elbow_amb"], self, "tag_elbow_weakspot_ri");
-    } else if (isdefined(self.var_e844c6a2)) {
+        return;
+    }
+    if (isdefined(self.var_e844c6a2)) {
         stopfx(localclientnum, self.var_e844c6a2);
         self.var_e844c6a2 = undefined;
     }
@@ -126,7 +130,9 @@ function private function_caf74103(localclientnum, oldval, newval, bnewent, bini
 function private function_bc64a2a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_81531422 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_sack_amb"], self, "tag_eggsack_weakspot_le_fx");
-    } else if (isdefined(self.var_81531422)) {
+        return;
+    }
+    if (isdefined(self.var_81531422)) {
         stopfx(localclientnum, self.var_81531422);
         self.var_81531422 = undefined;
     }
@@ -139,7 +145,9 @@ function private function_bc64a2a(localclientnum, oldval, newval, bnewent, binit
 function private function_c4fff539(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_40cb39ba = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_sack_amb"], self, "tag_eggsack_weakspot_ri_fx");
-    } else if (isdefined(self.var_40cb39ba)) {
+        return;
+    }
+    if (isdefined(self.var_40cb39ba)) {
         stopfx(localclientnum, self.var_40cb39ba);
         self.var_40cb39ba = undefined;
     }
@@ -152,7 +160,9 @@ function private function_c4fff539(localclientnum, oldval, newval, bnewent, bini
 function private function_de0a50df(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_2beadf7 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_weakspot_jaw_amb"], self, "tag_jaw");
-    } else if (isdefined(self.var_2beadf7)) {
+        return;
+    }
+    if (isdefined(self.var_2beadf7)) {
         stopfx(localclientnum, self.var_2beadf7);
         self.var_2beadf7 = undefined;
     }
@@ -166,16 +176,16 @@ function private function_2c098ccc(localclientnum, oldval, newval, bnewent, bini
     switch (newval) {
     case 1:
         self.var_32caa02 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_vomit_purchase"], self, "tag_origin");
-        break;
+        return;
     case 2:
         self.var_32caa02 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_vomit_statue_purchase"], self, "tag_origin");
-        break;
+        return;
     case 3:
         self.var_32caa02 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_vomit_box_purchase"], self, "tag_origin");
-        break;
+        return;
     case 4:
         self.var_32caa02 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_vomit_craft_purchase"], self, "tag_origin");
-        break;
+        return;
     default:
         if (isdefined(self.var_32caa02)) {
             stopfx(localclientnum, self.var_32caa02);
@@ -192,9 +202,9 @@ function private function_2c098ccc(localclientnum, oldval, newval, bnewent, bini
 function private tonguegrabpostfx(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue) {
         self thread postfx::playpostfxbundle(#"pstfx_zm_tongue_grab");
-    } else {
-        self postfx::stoppostfxbundle("pstfx_zm_tongue_grab");
+        return;
     }
+    self postfx::stoppostfxbundle("pstfx_zm_tongue_grab");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -207,7 +217,9 @@ function private tonguegrabrumble(localclientnum, oldvalue, newvalue, bnewent, b
             function_36e4ebd4(localclientnum, "grapple_collision");
             function_fe0ad36e(localclientnum, "grapple_reel");
         }
-    } else if (self function_21c0fa55()) {
+        return;
+    }
+    if (self function_21c0fa55()) {
         function_36e4ebd4(localclientnum, "grapple_detach");
         self stoprumble(localclientnum, "grapple_collision");
         self stoprumble(localclientnum, "grapple_reel");
@@ -221,9 +233,13 @@ function private tonguegrabrumble(localclientnum, oldvalue, newvalue, bnewent, b
 function private function_59f8f265(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.var_b0d99f6 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_vomit"], self, "tag_jaw");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_b0d99f6 = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_vomit_object"], self, "tag_jaw");
-    } else if (isdefined(self.var_b0d99f6)) {
+        return;
+    }
+    if (isdefined(self.var_b0d99f6)) {
         stopfx(localclientnum, self.var_b0d99f6);
         self.var_b0d99f6 = undefined;
     }
@@ -254,9 +270,9 @@ function private function_192c82f8(localclientnum, oldval, newval, bnewent, bini
     if (isdefined(self)) {
         if (newval) {
             self setanim(#"ai_t8_zm_zod_bltfthr_backsacs_add", 1, 0.1, 1);
-        } else {
-            self clearanim(#"ai_t8_zm_zod_bltfthr_backsacs_add", 0.2);
+            return;
         }
+        self clearanim(#"ai_t8_zm_zod_bltfthr_backsacs_add", 0.2);
     }
 }
 
@@ -267,7 +283,9 @@ function private function_192c82f8(localclientnum, oldval, newval, bnewent, bini
 function private function_e47c2324(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.var_f2668f6d = util::playfxontag(localclientnum, level._effect[#"fx8_blightfather_chaos_missle"], self, "tag_origin");
-    } else if (isdefined(self.var_f2668f6d)) {
+        return;
+    }
+    if (isdefined(self.var_f2668f6d)) {
         stopfx(localclientnum, self.var_f2668f6d);
     }
 }
@@ -327,11 +345,13 @@ function function_958ba8d1(localclientnum, pos, surface, notetrack, bone) {
     earthquake(localclientnum, n_scale, 0.1, pos, n_dist);
     if (n_scale <= 0.25 && n_scale > 0.2) {
         function_36e4ebd4(localclientnum, "anim_med");
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
-        function_36e4ebd4(localclientnum, "damage_light");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
+        function_36e4ebd4(localclientnum, "damage_light");
+        return;
+    }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -347,13 +367,13 @@ function private function_2d7f68ab(localclientnum, oldval, newval, bnewent, bini
         self postfx::playpostfxbundle("pstfx_zm_caustic_glob");
         self thread function_1a4f64a();
         self notify(#"hash_6bc06e9af30f987");
-    } else {
-        if (isdefined(self.var_185f551)) {
-            stopfx(localclientnum, self.var_185f551);
-        }
-        self postfx::exitpostfxbundle("pstfx_zm_caustic_glob");
-        self notify(#"hash_3af6fe8d4a8fac02");
+        return;
     }
+    if (isdefined(self.var_185f551)) {
+        stopfx(localclientnum, self.var_185f551);
+    }
+    self postfx::exitpostfxbundle("pstfx_zm_caustic_glob");
+    self notify(#"hash_3af6fe8d4a8fac02");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -388,7 +408,7 @@ function function_cf88b888() {
         self function_78233d29("rob_zm_viewarm_vomit", "", "Threshold", var_72840ba5);
         if (var_72840ba5 >= 1) {
             var_893a571 = 1;
-            break;
+            return;
         }
         wait(0.1);
     }
@@ -411,7 +431,7 @@ function function_1ca2497b() {
         if (var_72840ba5 <= 0) {
             self stoprenderoverridebundle("rob_zm_viewarm_vomit");
             var_e935ecce = 1;
-            break;
+            return;
         }
         wait(0.1);
     }

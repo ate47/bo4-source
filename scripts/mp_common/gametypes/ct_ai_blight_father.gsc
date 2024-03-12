@@ -387,9 +387,13 @@ function function_b78adc65(entity) {
     if (entity isragdoll()) {
         if (entity isattached("c_t8_zmb_blightfather_eggsack1_both_noreveal")) {
             entity detach("c_t8_zmb_blightfather_eggsack1_both_noreveal");
-        } else if (entity isattached("c_t8_zmb_blightfather_eggsack1_le_noreveal")) {
+            return;
+        }
+        if (entity isattached("c_t8_zmb_blightfather_eggsack1_le_noreveal")) {
             entity detach("c_t8_zmb_blightfather_eggsack1_le_noreveal");
-        } else if (entity isattached("c_t8_zmb_blightfather_eggsack1_ri_noreveal")) {
+            return;
+        }
+        if (entity isattached("c_t8_zmb_blightfather_eggsack1_ri_noreveal")) {
             entity detach("c_t8_zmb_blightfather_eggsack1_ri_noreveal");
         }
         return;
@@ -641,11 +645,11 @@ function private function_d83ac1e7(entity) {
 function private function_775f8cf2() {
     if (isdefined(self.var_177b7a47) && self.var_177b7a47) {
         return "left_sac_destroyed";
-    } else if (isdefined(self.var_7c54fb46) && self.var_7c54fb46) {
-        return "right_sac_destroyed";
-    } else {
-        return undefined;
     }
+    if (isdefined(self.var_7c54fb46) && self.var_7c54fb46) {
+        return "right_sac_destroyed";
+    }
+    return undefined;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -694,10 +698,10 @@ function private function_40034805(entity, inflictor, attacker, damage, flags, m
     entity clientfield::set("blight_father_weakpoint_l_maggot_sac_fx", 0);
     if (isdefined(entity.var_7c54fb46) && entity.var_7c54fb46) {
         entity detach("c_t8_zmb_blightfather_eggsack1_le_noreveal");
-    } else {
-        entity detach("c_t8_zmb_blightfather_eggsack1_both_noreveal");
-        entity attach("c_t8_zmb_blightfather_eggsack1_ri_noreveal");
+        return;
     }
+    entity detach("c_t8_zmb_blightfather_eggsack1_both_noreveal");
+    entity attach("c_t8_zmb_blightfather_eggsack1_ri_noreveal");
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -709,10 +713,10 @@ function private function_33b2c99e(entity, inflictor, attacker, damage, flags, m
     entity clientfield::set("blight_father_weakpoint_r_maggot_sac_fx", 0);
     if (isdefined(entity.var_177b7a47) && entity.var_177b7a47) {
         entity detach("c_t8_zmb_blightfather_eggsack1_ri_noreveal");
-    } else {
-        entity detach("c_t8_zmb_blightfather_eggsack1_both_noreveal");
-        entity attach("c_t8_zmb_blightfather_eggsack1_le_noreveal");
+        return;
     }
+    entity detach("c_t8_zmb_blightfather_eggsack1_both_noreveal");
+    entity attach("c_t8_zmb_blightfather_eggsack1_le_noreveal");
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father

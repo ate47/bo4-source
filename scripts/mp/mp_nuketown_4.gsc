@@ -330,51 +330,51 @@ function on_game_playing() {
         playsoundatposition("vox_pa_generic_spawn_a_04", (-461, 1547, -121));
         playsoundatposition("vox_pa_generic_spawn_a_04", (345, 1540, -134));
         playsoundatposition("vox_pa_generic_spawn_a_04", (721, 730, 56));
-    } else {
-        playsoundatposition("vox_pa_generic_spawn_b_01", (1356, 159, 165));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (726, 3, 181));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (353, 962, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (-344, 961, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (-507, 672, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (-1183, 84, 89));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (-1118, 873, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (-461, 1547, -121));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (345, 1540, -134));
-        playsoundatposition("vox_pa_generic_spawn_b_01", (721, 730, 56));
-        wait(2);
-        playsoundatposition("vox_pa_generic_spawn_b_02", (1356, 159, 165));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (726, 3, 181));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (353, 962, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (-344, 961, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (-507, 672, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (-1183, 84, 89));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (-1118, 873, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (-461, 1547, -121));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (345, 1540, -134));
-        playsoundatposition("vox_pa_generic_spawn_b_02", (721, 730, 56));
-        wait(2);
-        playsoundatposition("vox_pa_generic_spawn_b_03", (1356, 159, 165));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (726, 3, 181));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (353, 962, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (-344, 961, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (-507, 672, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (-1183, 84, 89));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (-1118, 873, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (-461, 1547, -121));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (345, 1540, -134));
-        playsoundatposition("vox_pa_generic_spawn_b_03", (721, 730, 56));
-        wait(2);
-        playsoundatposition("vox_pa_generic_spawn_b_04", (1356, 159, 165));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (726, 3, 181));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (353, 962, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (-344, 961, 284));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (-507, 672, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (-1183, 84, 89));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (-1118, 873, 201));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (-461, 1547, -121));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (345, 1540, -134));
-        playsoundatposition("vox_pa_generic_spawn_b_04", (721, 730, 56));
+        return;
     }
+    playsoundatposition("vox_pa_generic_spawn_b_01", (1356, 159, 165));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (726, 3, 181));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (353, 962, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (-344, 961, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (-507, 672, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (-1183, 84, 89));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (-1118, 873, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (-461, 1547, -121));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (345, 1540, -134));
+    playsoundatposition("vox_pa_generic_spawn_b_01", (721, 730, 56));
+    wait(2);
+    playsoundatposition("vox_pa_generic_spawn_b_02", (1356, 159, 165));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (726, 3, 181));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (353, 962, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (-344, 961, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (-507, 672, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (-1183, 84, 89));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (-1118, 873, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (-461, 1547, -121));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (345, 1540, -134));
+    playsoundatposition("vox_pa_generic_spawn_b_02", (721, 730, 56));
+    wait(2);
+    playsoundatposition("vox_pa_generic_spawn_b_03", (1356, 159, 165));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (726, 3, 181));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (353, 962, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (-344, 961, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (-507, 672, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (-1183, 84, 89));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (-1118, 873, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (-461, 1547, -121));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (345, 1540, -134));
+    playsoundatposition("vox_pa_generic_spawn_b_03", (721, 730, 56));
+    wait(2);
+    playsoundatposition("vox_pa_generic_spawn_b_04", (1356, 159, 165));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (726, 3, 181));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (353, 962, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (-344, 961, 284));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (-507, 672, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (-1183, 84, 89));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (-1118, 873, 201));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (-461, 1547, -121));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (345, 1540, -134));
+    playsoundatposition("vox_pa_generic_spawn_b_04", (721, 730, 56));
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
@@ -454,70 +454,70 @@ function function_d38af2b() {
         wait(4);
         level scene::play(#"cin_nuketown_4_movie_sh010");
         level scene::play(#"hash_428edf03d5cf177");
-    } else {
-        playsoundatposition("vox_pa_ee_warning", (1356, 159, 165));
-        playsoundatposition("vox_pa_ee_warning", (726, 3, 181));
-        playsoundatposition("vox_pa_ee_warning", (353, 962, 284));
-        playsoundatposition("vox_pa_ee_warning", (-344, 961, 284));
-        playsoundatposition("vox_pa_ee_warning", (-507, 672, 201));
-        playsoundatposition("vox_pa_ee_warning", (-1183, 84, 89));
-        playsoundatposition("vox_pa_ee_warning", (-1118, 873, 201));
-        playsoundatposition("vox_pa_ee_warning", (-461, 1547, -121));
-        playsoundatposition("vox_pa_ee_warning", (345, 1540, -134));
-        playsoundatposition("vox_pa_ee_warning", (721, 730, 56));
-        wait(17);
-        function_36b1fa1c(0);
-        wait(3);
-        function_36b1fa1c(1);
-        wait(2);
-        function_36b1fa1c(2);
-        wait(3);
-        function_36b1fa1c(3);
-        wait(2);
-        function_36b1fa1c(4);
-        wait(2);
-        function_36b1fa1c(5);
-        wait(2);
-        function_36b1fa1c(6);
-        wait(2);
-        function_36b1fa1c(7);
-        wait(3);
-        function_36b1fa1c(8);
-        wait(2);
-        function_36b1fa1c(9);
-        wait(2);
-        function_36b1fa1c(10);
-        wait(3);
-        function_36b1fa1c(11);
-        var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
-        if (isdefined(var_c6970da1)) {
-            var_c6970da1 delete();
-        }
-        level.var_d38af2b = 1;
-        var_2bf87e44 = getentarray("ee_kill", "targetname");
-        foreach (trigger in var_2bf87e44) {
-            trigger triggerenable(1);
-        }
-        var_dfe4b9fe = getentarray("train_clip", "targetname");
-        foreach (ent in var_dfe4b9fe) {
-            ent hide();
-        }
-        exploder::exploder("ending_sequence_lights");
-        level clientfield::set("nuketown_missile_scene", 1);
-        level thread function_f062b7d9(1);
-        level scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle", "shot 1");
-        level clientfield::set("nuketown_missile_scene", 0);
-        level thread function_ff61a79d();
-        level scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle", "shot 2");
-        level thread function_f062b7d9(0);
-        var_1f091880 = getentarray("train_clip", "targetname");
-        foreach (ent in var_1f091880) {
-            ent show();
-        }
-        var_2bf87e44 = getentarray("ee_kill", "targetname");
-        foreach (trigger in var_2bf87e44) {
-            trigger triggerenable(0);
-        }
+        return;
+    }
+    playsoundatposition("vox_pa_ee_warning", (1356, 159, 165));
+    playsoundatposition("vox_pa_ee_warning", (726, 3, 181));
+    playsoundatposition("vox_pa_ee_warning", (353, 962, 284));
+    playsoundatposition("vox_pa_ee_warning", (-344, 961, 284));
+    playsoundatposition("vox_pa_ee_warning", (-507, 672, 201));
+    playsoundatposition("vox_pa_ee_warning", (-1183, 84, 89));
+    playsoundatposition("vox_pa_ee_warning", (-1118, 873, 201));
+    playsoundatposition("vox_pa_ee_warning", (-461, 1547, -121));
+    playsoundatposition("vox_pa_ee_warning", (345, 1540, -134));
+    playsoundatposition("vox_pa_ee_warning", (721, 730, 56));
+    wait(17);
+    function_36b1fa1c(0);
+    wait(3);
+    function_36b1fa1c(1);
+    wait(2);
+    function_36b1fa1c(2);
+    wait(3);
+    function_36b1fa1c(3);
+    wait(2);
+    function_36b1fa1c(4);
+    wait(2);
+    function_36b1fa1c(5);
+    wait(2);
+    function_36b1fa1c(6);
+    wait(2);
+    function_36b1fa1c(7);
+    wait(3);
+    function_36b1fa1c(8);
+    wait(2);
+    function_36b1fa1c(9);
+    wait(2);
+    function_36b1fa1c(10);
+    wait(3);
+    function_36b1fa1c(11);
+    var_c6970da1 = getent("mannequin_destructible_inside_train", "targetname");
+    if (isdefined(var_c6970da1)) {
+        var_c6970da1 delete();
+    }
+    level.var_d38af2b = 1;
+    var_2bf87e44 = getentarray("ee_kill", "targetname");
+    foreach (trigger in var_2bf87e44) {
+        trigger triggerenable(1);
+    }
+    var_dfe4b9fe = getentarray("train_clip", "targetname");
+    foreach (ent in var_dfe4b9fe) {
+        ent hide();
+    }
+    exploder::exploder("ending_sequence_lights");
+    level clientfield::set("nuketown_missile_scene", 1);
+    level thread function_f062b7d9(1);
+    level scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle", "shot 1");
+    level clientfield::set("nuketown_missile_scene", 0);
+    level thread function_ff61a79d();
+    level scene::play(#"p8_fxanim_mp_nt4_missile_launch_bundle", "shot 2");
+    level thread function_f062b7d9(0);
+    var_1f091880 = getentarray("train_clip", "targetname");
+    foreach (ent in var_1f091880) {
+        ent show();
+    }
+    var_2bf87e44 = getentarray("ee_kill", "targetname");
+    foreach (trigger in var_2bf87e44) {
+        trigger triggerenable(0);
     }
 }
 
@@ -531,9 +531,9 @@ function function_f062b7d9(var_d7c49efd) {
         if (isdefined(ent)) {
             if (var_d7c49efd) {
                 ent hide();
-            } else {
-                ent show();
+                continue;
             }
+            ent show();
         }
     }
 }

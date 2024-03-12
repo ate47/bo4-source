@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xba59b9ed, Offset: 0xd0
 // Size: 0x34
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace trophy_system/trophy_system
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7d9d5c73, Offset: 0x110
 // Size: 0x6c
 function function_ccfcde75(trophy, grenade) {

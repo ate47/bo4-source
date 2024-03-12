@@ -42,9 +42,9 @@ function function_9e8baed0(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self.var_a57cfdf7 show();
         playsound(localclientnum, "zmb_spoon_into_tub", self.var_a57cfdf7.origin);
-    } else {
-        self.var_a57cfdf7 hide();
+        return;
     }
+    self.var_a57cfdf7 hide();
 }
 
 // Namespace namespace_273ad667/namespace_273ad667
@@ -67,35 +67,35 @@ function function_f72f97af(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_5f152090f657bfe");
-        break;
+        return;
     case 2:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_6f7a3a7c471df0f2");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_2e86999bc8c4290d");
-        break;
+        return;
     case 3:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_6f7a397c471def3f");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_2e86969bc8c423f4");
-        break;
+        return;
     case 4:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_6f7a387c471ded8c");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_2e86979bc8c425a7");
-        break;
+        return;
     case 5:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_6f7a377c471debd9");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_2e86949bc8c4208e");
-        break;
+        return;
     case 6:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_6f7a367c471dea26");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_2e86959bc8c42241");
-        break;
+        return;
     case 7:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_6f7a357c471de873");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_4a67388210398d52");
-        break;
+        return;
     case 8:
         level.var_a8f38afe[localclientnum] animation::play(#"hash_4e65f766225b67df");
         level.var_a8f38afe[localclientnum] thread animation::play(#"hash_5f152090f657bfe");
-        break;
+        return;
     }
 }
 
@@ -121,16 +121,16 @@ function function_b42c46e3(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_17825742 = util::spawn_model(localclientnum, var_dd9f87c6.model, var_dd9f87c6.origin, var_dd9f87c6.angles);
         self.var_17825742.var_e88acf63 = self.var_17825742 gettagorigin("tag_spork");
         self.var_17825742.var_a9a3211a = self.var_17825742 gettagangles("tag_spork");
-        self.var_87d57162 = util::spawn_model(localclientnum, "wpn_t8_zm_spork_world", self.var_17825742.var_e88acf63, self.var_17825742.var_a9a3211a);
+        self.mdl_spork = util::spawn_model(localclientnum, "wpn_t8_zm_spork_world", self.var_17825742.var_e88acf63, self.var_17825742.var_a9a3211a);
         var_fcec724a = struct::get("s_sp_fx_glint_loc");
         self.var_4e35f286 = playfx(localclientnum, level._effect[#"spk_glint"], var_fcec724a.origin);
-    } else {
-        if (isdefined(self.var_87d57162)) {
-            self.var_87d57162 delete();
-        }
-        if (isdefined(self.var_4e35f286)) {
-            stopfx(localclientnum, self.var_4e35f286);
-        }
+        return;
+    }
+    if (isdefined(self.mdl_spork)) {
+        self.mdl_spork delete();
+    }
+    if (isdefined(self.var_4e35f286)) {
+        stopfx(localclientnum, self.var_4e35f286);
     }
 }
 
@@ -147,28 +147,28 @@ function function_1d683667(localclientnum, oldval, newval, bnewent, binitialsnap
         force_vector = var_10cdf6db.origin - var_90c27c24.origin;
         var_76803b4f = vectornormalize(force_vector);
         var_c0d1f7aa = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
-        break;
+        return;
     case 2:
         var_90c27c24 = struct::get("s_metal_02", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
         force_vector = var_10cdf6db.origin - var_90c27c24.origin;
         var_76803b4f = vectornormalize(force_vector);
         var_b210da28 = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
-        break;
+        return;
     case 3:
         var_90c27c24 = struct::get("s_metal_03", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
         force_vector = var_10cdf6db.origin - var_90c27c24.origin;
         var_76803b4f = vectornormalize(force_vector);
         var_5b63accf = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
-        break;
+        return;
     case 4:
         var_90c27c24 = struct::get("s_metal_04", "targetname");
         var_10cdf6db = struct::get(var_90c27c24.target, "targetname");
         force_vector = var_10cdf6db.origin - var_90c27c24.origin;
         var_76803b4f = vectornormalize(force_vector);
         var_4e9d9343 = createdynentandlaunch(localclientnum, var_90c27c24.model, var_90c27c24.origin, var_90c27c24.angles, hitoffset, 4 * var_76803b4f);
-        break;
+        return;
     }
 }
 

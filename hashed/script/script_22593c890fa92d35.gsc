@@ -47,11 +47,11 @@ function function_d53a8c5b() {
                 zombie_plane thread function_3e59cbbb(zombie_plane_flight_goal);
             }
         }
-    } else {
-        level callback::remove_callback(#"hash_3057417db7f8acdd", &function_d53a8c5b);
-        level callback::remove_callback(#"hash_405e46788e83af41", &function_d53a8c5b);
-        level callback::remove_callback(#"hash_7912e21750e4010d", &function_d53a8c5b);
+        return;
     }
+    level callback::remove_callback(#"hash_3057417db7f8acdd", &function_d53a8c5b);
+    level callback::remove_callback(#"hash_405e46788e83af41", &function_d53a8c5b);
+    level callback::remove_callback(#"hash_7912e21750e4010d", &function_d53a8c5b);
 }
 
 // Namespace namespace_795feefe/namespace_795feefe
@@ -189,9 +189,9 @@ function function_de4b0705() {
                 zombie_plane setspeed(50);
                 return zombie_plane;
             }
-        } else {
-            function_9dc0fa01();
+            return;
         }
+        function_9dc0fa01();
     #/
 }
 

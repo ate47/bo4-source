@@ -163,9 +163,9 @@ function recordkillstreakend(recordstreakindex, totalkills) {
     eventindex = player.killstreakevents[recordstreakindex];
     if (isdefined(eventindex)) {
         player recordkillstreakenddirect(eventindex, recordstreakindex, totalkills);
-    } else {
-        player.killstreakevents[recordstreakindex] = totalkills;
+        return;
     }
+    player.killstreakevents[recordstreakindex] = totalkills;
 }
 
 // Namespace killstreakrules/killstreakrules_shared
@@ -339,7 +339,9 @@ function killstreak_debug_text(text) {
         if (isdefined(level.killstreak_rule_debug)) {
             if (level.killstreak_rule_debug == 1) {
                 iprintln("<unknown string>" + text + "<unknown string>");
-            } else if (level.killstreak_rule_debug == 2) {
+                return;
+            }
+            if (level.killstreak_rule_debug == 2) {
                 iprintlnbold("<unknown string>" + text);
             }
         }

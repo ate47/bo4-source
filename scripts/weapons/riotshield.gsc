@@ -8,7 +8,7 @@
 #namespace riotshield;
 
 // Namespace riotshield/riotshield
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x755a1ca4, Offset: 0x288
 // Size: 0x15c
 function init_shared() {
@@ -390,7 +390,7 @@ function watchdeployedriotshielddamage() {
         self.damagetaken = self.damagetaken + damage;
         if (self.damagetaken >= damagemax) {
             self thread damagethendestroyriotshield(attacker, weapon);
-            break;
+            return;
         }
     }
 }
@@ -487,7 +487,7 @@ function event_handler[grenade_fire] function_4f975761(eventstruct) {
     case #"proximity_grenade":
     case #"sticky_grenade":
         grenade thread check_stuck_to_shield();
-        break;
+        return;
     }
 }
 

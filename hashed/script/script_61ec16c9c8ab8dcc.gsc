@@ -46,17 +46,21 @@ class clower_message : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"visible" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"hash_45bfcb1cd8c9b50a" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"visible" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"hash_45bfcb1cd8c9b50a" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace clower_message/lower_message

@@ -72,75 +72,75 @@ function function_c5d0e538() {
             function_e2a06860(dynent, 1);
         }
         hidemiscmodels("wz_holiday_props");
-    } else {
-        chests = getdynentarray("world_dynent_stash_supply");
-        ammo = getdynentarray("world_dynent_stash_ammo");
-        health = getdynentarray("world_dynent_stash_health");
-        foreach (dynent in chests) {
-            add_helico(dynent, #"hash_34dd887cca7fc6e8");
-        }
-        foreach (dynent in ammo) {
-            add_helico(dynent, #"hash_192aa37d3cdeacd1");
-        }
-        foreach (dynent in health) {
-            add_helico(dynent, #"hash_2a9abddabd506fa5");
-        }
-        var_76c1a919 = getdynent(#"hospital_stash");
-        if (isdefined(var_76c1a919)) {
-            add_helico(var_76c1a919, #"hash_5e132c061625eb87");
-        }
-        var_80d7570e = getdynent(#"hash_ca8b234ad1fea38");
-        if (isdefined(var_80d7570e)) {
-            add_helico(var_80d7570e, #"hash_5e132c061625eb87");
-        }
-        var_e6c8e160 = getdynent(#"zombie_stash_graveyard");
-        if (isdefined(var_e6c8e160)) {
-            add_helico(var_e6c8e160, #"hash_5e132c061625eb87");
-        }
-        var_726be3fe = getdynent(#"zombie_stash_graveyard_quest");
-        if (isdefined(var_726be3fe)) {
-            add_helico(var_726be3fe, #"hash_5e132c061625eb87");
-        }
-        var_e18572a7 = getdynent(#"hash_678a1efded2b597a");
-        if (isdefined(var_e18572a7)) {
-            add_helico(var_e18572a7, #"hash_5e132c061625eb87");
-        }
-        var_676cdb27 = getdynent(#"hash_33f7121f70c3065f");
-        if (isdefined(var_676cdb27)) {
-            add_helico(var_676cdb27, #"hash_5e132c061625eb87");
-        }
-        var_275d4dfc = getdynent(#"hash_2141ecb8d2d86b22");
-        if (isdefined(var_275d4dfc)) {
-            add_helico(var_275d4dfc, #"hash_5e132c061625eb87");
-        }
-        var_667d5645 = getdynent(#"hash_2b546c0315159617");
-        if (isdefined(var_667d5645)) {
-            add_helico(var_667d5645, #"hash_5e132c061625eb87");
-        }
-        var_6d0e8b71 = getdynent(#"hash_1b83b702bbaae298");
-        if (isdefined(var_6d0e8b71)) {
-            add_helico(var_6d0e8b71, #"hash_5e132c061625eb87");
-        }
-        var_b9d1e3a4 = getdynent(#"hash_6a0d13acf3e5687d");
-        if (isdefined(var_b9d1e3a4)) {
-            add_helico(var_b9d1e3a4, #"hash_5e132c061625eb87");
-        }
-        var_facd88e0 = getdynent(#"hash_43d72946b8b0dcb2");
-        if (isdefined(var_facd88e0)) {
-            add_helico(var_facd88e0, #"hash_5e132c061625eb87");
-        }
-        var_cd5ee6fb = getdynent(#"hash_183c9fe8af52fac7");
-        if (isdefined(var_cd5ee6fb)) {
-            add_helico(var_cd5ee6fb, #"hash_5e132c061625eb87");
-        }
-        var_d3db07bc = getdynent(#"hash_468067e2be6e3cfd");
-        if (isdefined(var_d3db07bc)) {
-            add_helico(var_d3db07bc, #"hash_5e132c061625eb87");
-        }
-        var_955bd1d9 = getdynent(#"hash_49e8a607ea22e650");
-        if (isdefined(var_955bd1d9)) {
-            add_helico(var_955bd1d9, #"hash_5e132c061625eb87");
-        }
+        return;
+    }
+    chests = getdynentarray("world_dynent_stash_supply");
+    ammo = getdynentarray("world_dynent_stash_ammo");
+    health = getdynentarray("world_dynent_stash_health");
+    foreach (dynent in chests) {
+        add_helico(dynent, #"hash_34dd887cca7fc6e8");
+    }
+    foreach (dynent in ammo) {
+        add_helico(dynent, #"hash_192aa37d3cdeacd1");
+    }
+    foreach (dynent in health) {
+        add_helico(dynent, #"hash_2a9abddabd506fa5");
+    }
+    var_76c1a919 = getdynent(#"hospital_stash");
+    if (isdefined(var_76c1a919)) {
+        add_helico(var_76c1a919, #"hash_5e132c061625eb87");
+    }
+    var_80d7570e = getdynent(#"hash_ca8b234ad1fea38");
+    if (isdefined(var_80d7570e)) {
+        add_helico(var_80d7570e, #"hash_5e132c061625eb87");
+    }
+    var_e6c8e160 = getdynent(#"zombie_stash_graveyard");
+    if (isdefined(var_e6c8e160)) {
+        add_helico(var_e6c8e160, #"hash_5e132c061625eb87");
+    }
+    var_726be3fe = getdynent(#"zombie_stash_graveyard_quest");
+    if (isdefined(var_726be3fe)) {
+        add_helico(var_726be3fe, #"hash_5e132c061625eb87");
+    }
+    var_e18572a7 = getdynent(#"hash_678a1efded2b597a");
+    if (isdefined(var_e18572a7)) {
+        add_helico(var_e18572a7, #"hash_5e132c061625eb87");
+    }
+    var_676cdb27 = getdynent(#"hash_33f7121f70c3065f");
+    if (isdefined(var_676cdb27)) {
+        add_helico(var_676cdb27, #"hash_5e132c061625eb87");
+    }
+    var_275d4dfc = getdynent(#"hash_2141ecb8d2d86b22");
+    if (isdefined(var_275d4dfc)) {
+        add_helico(var_275d4dfc, #"hash_5e132c061625eb87");
+    }
+    var_667d5645 = getdynent(#"hash_2b546c0315159617");
+    if (isdefined(var_667d5645)) {
+        add_helico(var_667d5645, #"hash_5e132c061625eb87");
+    }
+    var_6d0e8b71 = getdynent(#"hash_1b83b702bbaae298");
+    if (isdefined(var_6d0e8b71)) {
+        add_helico(var_6d0e8b71, #"hash_5e132c061625eb87");
+    }
+    var_b9d1e3a4 = getdynent(#"hash_6a0d13acf3e5687d");
+    if (isdefined(var_b9d1e3a4)) {
+        add_helico(var_b9d1e3a4, #"hash_5e132c061625eb87");
+    }
+    var_facd88e0 = getdynent(#"hash_43d72946b8b0dcb2");
+    if (isdefined(var_facd88e0)) {
+        add_helico(var_facd88e0, #"hash_5e132c061625eb87");
+    }
+    var_cd5ee6fb = getdynent(#"hash_183c9fe8af52fac7");
+    if (isdefined(var_cd5ee6fb)) {
+        add_helico(var_cd5ee6fb, #"hash_5e132c061625eb87");
+    }
+    var_d3db07bc = getdynent(#"hash_468067e2be6e3cfd");
+    if (isdefined(var_d3db07bc)) {
+        add_helico(var_d3db07bc, #"hash_5e132c061625eb87");
+    }
+    var_955bd1d9 = getdynent(#"hash_49e8a607ea22e650");
+    if (isdefined(var_955bd1d9)) {
+        add_helico(var_955bd1d9, #"hash_5e132c061625eb87");
     }
 }
 

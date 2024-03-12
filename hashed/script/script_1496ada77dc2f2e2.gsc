@@ -145,9 +145,9 @@ function private function_69fa75f8() {
             if (s_waitresult._notify != "timeout") {
                 self clientfield::set_to_player("" + #"hash_1b9477ddcf30191f", 0);
                 self function_e0c7d69(1);
-            } else {
-                break;
+                continue;
             }
+            break;
         }
     }
 }

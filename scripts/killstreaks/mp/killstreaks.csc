@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace killstreaks/killstreaks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6983c6e6, Offset: 0xc8
 // Size: 0x24
 function __init__() {

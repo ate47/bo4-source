@@ -115,7 +115,6 @@ function private _gibpartnametogibflag(gibpartname) {
             return 128;
         case #"left leg":
             return 256;
-            break;
         }
     }
 }
@@ -219,7 +218,7 @@ function stopfxbundle(localclientnum, entity, fxscriptbundle) {
 }
 
 // Namespace fxclientutils/fx_character
-// Params 3, eflags: 0x0
+// Params 3, eflags: 0x1 linked
 // Checksum 0xa8ca9a66, Offset: 0xcd0
 // Size: 0x128
 function function_ae92446(localclientnum, entity, fxscriptbundle) {

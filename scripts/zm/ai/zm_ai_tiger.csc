@@ -61,9 +61,9 @@ function function_76110e92(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_3be6531a(localclientnum, turned) {
     if (turned) {
         self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_green", #"hash_5ed7e32b7fd9a111");
-    } else {
-        self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_red", #"hash_76a36b718ab9858d");
+        return;
     }
+    self zm_utility::function_3a020b0f(localclientnum, "rob_zm_eyes_red", #"hash_76a36b718ab9858d");
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger

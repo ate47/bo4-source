@@ -301,7 +301,7 @@ function function_9cc59537() {
                     }
                 }
             }
-        } while(getdvarint(#"hash_68dcd0d52e11b957", 0));
+        } while (getdvarint(#"hash_68dcd0d52e11b957", 0));
     #/
 }
 
@@ -533,7 +533,7 @@ function function_13a77bfa() {
             }
             var_ad802a37 = var_ad802a37 + (0, 28, 0);
             debug2dtext(var_ad802a37, "<unknown string>" + total_spawns, (1, 0.752941, 0.796078), 1, (0, 0, 0), 0.5, 1.3, 12);
-        } while(getdvarint(#"hash_43f2306cde703585", 0));
+        } while (getdvarint(#"hash_43f2306cde703585", 0));
     #/
 }
 
@@ -698,7 +698,6 @@ function function_b2775b52() {
             return (0.545098, 0.270588, 0.0745098);
         default:
             return (1, 0, 1);
-            break;
         }
     #/
 }
@@ -717,9 +716,9 @@ function function_4b227faf() {
             switch (group.scriptbundlename) {
             case #"wz_escape_zodiac":
                 var_dc1ea650 = group;
-                break;
+                continue;
             default:
-                break;
+                continue;
             }
         }
         var_4ff6627b = [];
@@ -758,7 +757,6 @@ function function_df930125(str_type) {
             return (1, 0, 0);
         default:
             return (1, 0.5, 0);
-            break;
         }
     #/
 }

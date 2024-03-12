@@ -93,7 +93,9 @@ function lava_control(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         }
         exploder::exploder("exp_lava_event_ambient");
         exploder::exploder("exp_lava_event_ambient_2");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         foreach (var_59bd23de in level.var_eb7fcc70) {
             var_59bd23de hide();
             var_59bd23de notsolid();
@@ -114,9 +116,13 @@ function function_f490f0e5(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         util::playfxontag(localclientnum, level._effect[#"lantern_moving"], self, "tag_origin");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         util::playfxontag(localclientnum, level._effect[#"lantern_waiting"], self, "tag_origin");
-    } else if (newval == 3) {
+        return;
+    }
+    if (newval == 3) {
         util::playfxontag(localclientnum, level._effect[#"lantern_charging"], self, "tag_origin");
     }
 }
@@ -140,7 +146,9 @@ function function_19f2f0f2(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.var_9480d4b2)) {
             self.var_9480d4b2 = self playloopsound(#"evt_death_circle_strong");
         }
-    } else if (isdefined(self.var_9480d4b2)) {
+        return;
+    }
+    if (isdefined(self.var_9480d4b2)) {
         self stoploopsound(self.var_9480d4b2);
         self.var_9480d4b2 = undefined;
     }
@@ -169,9 +177,9 @@ function play_lantern_explode_fx(localclientnum, oldval, newval, bnewent, biniti
 function function_bd0807f3(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         audio::snd_set_snapshot("cmn_duck_aux_4");
-    } else {
-        audio::snd_set_snapshot("");
+        return;
     }
+    audio::snd_set_snapshot("");
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
@@ -181,8 +189,8 @@ function function_bd0807f3(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_eb481d38(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         setsoundcontext("orange_hell", "active");
-    } else {
-        setsoundcontext("orange_hell", "");
+        return;
     }
+    setsoundcontext("orange_hell", "");
 }
 

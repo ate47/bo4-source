@@ -5,7 +5,7 @@
 #namespace killstreakrules;
 
 // Namespace killstreakrules/killstreakrules
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb3ad4745, Offset: 0x470
 // Size: 0x136c
 function init() {
@@ -145,7 +145,7 @@ function init() {
 }
 
 // Namespace killstreakrules/killstreakrules
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x15a64dec, Offset: 0x17e8
 // Size: 0x10c
 function function_65739e7b(hardpointtype, team, isemped) {

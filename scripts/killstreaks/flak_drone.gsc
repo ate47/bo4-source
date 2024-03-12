@@ -10,7 +10,7 @@
 #namespace flak_drone;
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfd620e44, Offset: 0x1a0
 // Size: 0x7c
 function init_shared() {
@@ -22,7 +22,7 @@ function init_shared() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x954e113a, Offset: 0x228
 // Size: 0x24c
 function initflakdrone() {
@@ -50,7 +50,7 @@ function initflakdrone() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9a16e28a, Offset: 0x480
 // Size: 0xc
 function state_off_enter(params) {
@@ -58,7 +58,7 @@ function state_off_enter(params) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4b392e2, Offset: 0x498
 // Size: 0x460
 function state_off_update(params) {
@@ -80,7 +80,7 @@ function state_off_update(params) {
             positionquery_filter_distancetogoal(queryresult, self);
             vehicle_ai::positionquery_filter_outofgoalanchor(queryresult);
             best_point = undefined;
-            best_score = 999999;
+            best_score = -999999;
             foreach (point in queryresult.data) {
                 randomscore = randomfloatrange(0, 100);
                 disttooriginscore = point.disttoorigin2d * 0.2;
@@ -123,7 +123,7 @@ function state_off_update(params) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x208083d2, Offset: 0x900
 // Size: 0x154
 function updateflakdronespeed() {
@@ -147,7 +147,7 @@ function updateflakdronespeed() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x108424d6, Offset: 0xa60
 // Size: 0xc
 function state_combat_enter(params) {
@@ -155,7 +155,7 @@ function state_combat_enter(params) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92cde640, Offset: 0xa78
 // Size: 0x94
 function state_combat_update(params) {
@@ -166,7 +166,7 @@ function state_combat_update(params) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xa0b7d3cb, Offset: 0xb18
 // Size: 0x532
 function spawnflakrocket(missile, spawnpos, parent) {
@@ -230,7 +230,7 @@ function spawnflakrocket(missile, spawnpos, parent) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbb3b31d3, Offset: 0x1058
 // Size: 0x84
 function cleanupaftermissiledeath(rocket, flak_drone) {
@@ -246,7 +246,7 @@ function cleanupaftermissiledeath(rocket, flak_drone) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x60d12e06, Offset: 0x10e8
 // Size: 0x1cc
 function state_death_update(params) {
@@ -274,13 +274,13 @@ function state_death_update(params) {
         if (isdefined(self)) {
             self delete();
         }
-    } else {
-        self vehicle_death::flipping_shooting_death();
+        return;
     }
+    self vehicle_death::flipping_shooting_death();
 }
 
 // Namespace flak_drone/flak_drone
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x92d6469b, Offset: 0x12c0
 // Size: 0x1e6
 function drone_pain_for_time(time, stablizeparam, restorelookpoint) {
@@ -309,7 +309,7 @@ function drone_pain_for_time(time, stablizeparam, restorelookpoint) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0xf5bd997d, Offset: 0x14b0
 // Size: 0x124
 function drone_pain(eattacker, damagetype, hitpoint, hitdirection, hitlocationinfo, partname) {
@@ -323,7 +323,7 @@ function drone_pain(eattacker, damagetype, hitpoint, hitdirection, hitlocationin
 }
 
 // Namespace flak_drone/flak_drone
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0xab7f08a1, Offset: 0x15e0
 // Size: 0x100
 function flakdronedamageoverride(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -337,7 +337,7 @@ function flakdronedamageoverride(einflictor, eattacker, idamage, idflags, smeans
 }
 
 // Namespace flak_drone/flak_drone
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3025c4b2, Offset: 0x16e8
 // Size: 0x138
 function spawn(parent, ondeathcallback) {
@@ -359,7 +359,7 @@ function spawn(parent, ondeathcallback) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1b246d36, Offset: 0x1828
 // Size: 0xba
 function configureteam(parent, ishacked) {
@@ -375,7 +375,7 @@ function configureteam(parent, ishacked) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbbb849a6, Offset: 0x18f0
 // Size: 0x9c
 function watchgameevents() {
@@ -386,7 +386,7 @@ function watchgameevents() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa7a5be7, Offset: 0x1998
 // Size: 0x64
 function watchdeath() {
@@ -397,7 +397,7 @@ function watchdeath() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb6d9bffe, Offset: 0x1a08
 // Size: 0x64
 function watchparentdeath() {
@@ -408,7 +408,7 @@ function watchparentdeath() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5a99776, Offset: 0x1a78
 // Size: 0xec
 function watchparentmissiles() {
@@ -424,7 +424,7 @@ function watchparentmissiles() {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd7da8a1a, Offset: 0x1b70
 // Size: 0x2c
 function setcamostate(state) {
@@ -432,7 +432,7 @@ function setcamostate(state) {
 }
 
 // Namespace flak_drone/flak_drone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x19fd899e, Offset: 0x1ba8
 // Size: 0x12c
 function shutdown(explode) {
@@ -451,9 +451,9 @@ function shutdown(explode) {
     if (isdefined(drone)) {
         if (explode) {
             drone dodamage(drone.health + 1000, drone.origin, drone, drone, "none", "MOD_EXPLOSIVE");
-        } else {
-            drone delete();
+            return;
         }
+        drone delete();
     }
 }
 

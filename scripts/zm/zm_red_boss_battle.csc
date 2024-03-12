@@ -40,13 +40,13 @@ function function_6e3ecc82(localclientnum, oldval, newval, bnewent, binitialsnap
         if (isdefined(self.fx)) {
             stopfx(localclientnum, self.fx);
         }
-        break;
+        return;
     case 1:
     case 2:
     case 3:
         self util::waittill_dobj(localclientnum);
         self.fx = util::playfxontag(localclientnum, level._effect[#"chaos_bolt_" + newval], self, "tag_origin");
-        break;
+        return;
     }
 }
 
@@ -70,14 +70,14 @@ function function_272aa016(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.sfx_id)) {
             self.sfx_id = self playloopsound(#"hash_5760b615b9b749d2");
         }
-    } else {
-        if (isdefined(self.fx_id)) {
-            stopfx(localclientnum, self.fx_id);
-        }
-        if (isdefined(self.sfx_id)) {
-            self stoploopsound(self.sfx_id);
-            self.sfx_id = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.fx_id)) {
+        stopfx(localclientnum, self.fx_id);
+    }
+    if (isdefined(self.sfx_id)) {
+        self stoploopsound(self.sfx_id);
+        self.sfx_id = undefined;
     }
 }
 
@@ -128,9 +128,9 @@ function function_37d1ee2e(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self thread function_e9aa9e80(localclientnum);
         self thread function_954b9602(localclientnum);
-    } else {
-        self notify(#"hash_5531647ca0352039");
+        return;
     }
+    self notify(#"hash_5531647ca0352039");
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -195,17 +195,17 @@ function function_5091797(localclientnum, oldval, newval, bnewent, binitialsnap,
             self playsound(localclientnum, #"hash_76feff9b8f93c3d9");
             self.var_6450813b = self playloopsound(#"hash_117558f0dda6471f");
         }
-    } else {
-        if (isdefined(self.var_cc9c5baa)) {
-            stopfx(localclientnum, self.var_cc9c5baa);
-        }
-        if (isdefined(self.var_6450813b)) {
-            self playsound(localclientnum, #"hash_ae4b548c1d4a748");
-            self stoploopsound(self.var_6450813b);
-            self.var_6450813b = undefined;
-        }
-        util::playfxontag(localclientnum, level._effect[#"hash_b784dd4d224f7e"], self, str_fx_tag);
+        return;
     }
+    if (isdefined(self.var_cc9c5baa)) {
+        stopfx(localclientnum, self.var_cc9c5baa);
+    }
+    if (isdefined(self.var_6450813b)) {
+        self playsound(localclientnum, #"hash_ae4b548c1d4a748");
+        self stoploopsound(self.var_6450813b);
+        self.var_6450813b = undefined;
+    }
+    util::playfxontag(localclientnum, level._effect[#"hash_b784dd4d224f7e"], self, str_fx_tag);
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle

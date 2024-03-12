@@ -66,12 +66,12 @@ function private on_end(round_reset) {
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "give_weapon") {
         if (zm_loadout::is_melee_weapon(s_event.weapon) || zm_loadout::is_lethal_grenade(s_event.weapon) || zm_loadout::is_tactical_grenade(s_event.weapon, 1)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
             if (s_event.weapon.dualwieldweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.dualwieldweapon, 1, 1);
+                self lockweapon(s_event.weapon.dualwieldweapon, 1, 1);
             }
             if (s_event.weapon.altweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.altweapon, 1, 1);
+                self lockweapon(s_event.weapon.altweapon, 1, 1);
             }
         }
     }
@@ -103,7 +103,7 @@ function private on_weapon_fired(params) {
 // Size: 0x1b4
 function private function_29ee24dd(weapon) {
     self endon(#"disconnect");
-    self function_28602a03(weapon, 1, 1);
+    self lockweapon(weapon, 1, 1);
     self zm_trial_util::function_7dbb1712();
     n_clip_ammo = self getweaponammoclip(weapon);
     n_stock_ammo = self getweaponammostock(weapon);
@@ -114,9 +114,8 @@ function private function_29ee24dd(weapon) {
             w_current = self getcurrentweapon();
             if (s_waitresult._notify == "reload" && weapon != w_current) {
                 continue;
-            } else {
-                break;
             }
+            break;
         }
     }
     if (isdefined(self)) {

@@ -21,7 +21,7 @@ function autoexec main() {
 #namespace zombieclientutils;
 
 // Namespace zombieclientutils/zombie
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcdedfa01, Offset: 0x200
 // Size: 0x17c
 function zombiehandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -40,25 +40,25 @@ function zombiehandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap
 }
 
 // Namespace zombieclientutils/zombie
-// Params 3, eflags: 0x5 linked
+// Params 3, eflags: 0x4
 // Checksum 0xfbc568ae, Offset: 0x388
 // Size: 0xfa
 function private _gibcallback(localclientnum, entity, gibflag) {
     switch (gibflag) {
     case 8:
         playsound(0, #"zmb_zombie_head_gib", self.origin + vectorscale((0, 0, 1), 60));
-        break;
+        return;
     case 16:
     case 32:
     case 128:
     case 256:
         playsound(0, #"zmb_death_gibs", self.origin + vectorscale((0, 0, 1), 30));
-        break;
+        return;
     }
 }
 
 // Namespace zombieclientutils/zombie
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xea329a1b, Offset: 0x490
 // Size: 0x104
 function zombiespecialdayeffectshandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
@@ -72,7 +72,7 @@ function zombiespecialdayeffectshandler(localclientnum, oldvalue, newvalue, bnew
 }
 
 // Namespace zombieclientutils/zombie
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d3e8ba9, Offset: 0x5a0
 // Size: 0x212
 function zombie_override_burn_fx(localclientnum) {
@@ -94,7 +94,7 @@ function zombie_override_burn_fx(localclientnum) {
 }
 
 // Namespace zombieclientutils/zombie
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb30c59d2, Offset: 0x7c0
 // Size: 0x2c
 function zombiespawnsetup(localclientnum) {

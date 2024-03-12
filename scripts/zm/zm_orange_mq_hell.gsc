@@ -182,7 +182,9 @@ function function_af9fb8d1() {
                 n_damage = 10 * e_player.var_1547e779;
                 e_player dodamage(n_damage, e_player.origin);
                 e_player.var_1547e779 = e_player.var_1547e779 * 1.2;
-            } else if (e_player.var_1547e779 > 1) {
+                continue;
+            }
+            if (e_player.var_1547e779 > 1) {
                 e_player.var_1547e779 = 1;
             }
         }
@@ -224,15 +226,15 @@ function lava_control() {
             var_59bd23de solid();
         }
         level.var_71435e8 = 1;
-    } else {
-        setlightingstate(0);
-        level clientfield::set("" + #"lava_control", 0);
-        foreach (var_59bd23de in level.var_eb7fcc70) {
-            var_59bd23de hide();
-            var_59bd23de notsolid();
-        }
-        level.var_71435e8 = 0;
+        return;
     }
+    setlightingstate(0);
+    level clientfield::set("" + #"lava_control", 0);
+    foreach (var_59bd23de in level.var_eb7fcc70) {
+        var_59bd23de hide();
+        var_59bd23de notsolid();
+    }
+    level.var_71435e8 = 0;
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
@@ -256,17 +258,15 @@ function function_7922664f() {
 // Size: 0x212
 function spawn_guide() {
     level endon(#"end_game");
-    var_a41818b5 = spawner::simple_spawn_single(getent("virgil", "targetname"));
-    while (!isdefined(var_a41818b5)) {
+    for (var_a41818b5 = spawner::simple_spawn_single(getent("virgil", "targetname")); !isdefined(var_a41818b5); var_a41818b5 = spawner::simple_spawn_single(getent("virgil", "targetname"))) {
         waitframe(1);
-        var_a41818b5 = spawner::simple_spawn_single(getent("virgil", "targetname"));
     }
     var_a41818b5.origin = level.var_5d5b7e8e.nd_start.origin;
     var_a41818b5.angles = level.var_5d5b7e8e.nd_start.angles;
-    var_a41818b5.var_e70e15ad = util::spawn_model("p8_zm_ora_elemental_vessel", var_a41818b5.origin + vectorscale((0, 0, -1), 10));
-    var_a41818b5.var_e70e15ad linkto(var_a41818b5);
-    var_a41818b5.var_e70e15ad thread rotate_forever(vectorscale((0, 1, 0), 45));
-    var_a41818b5.var_e70e15ad clientfield::set("" + #"lantern_outline", 1);
+    var_a41818b5.mdl_lantern = util::spawn_model("p8_zm_ora_elemental_vessel", var_a41818b5.origin + vectorscale((0, 0, -1), 10));
+    var_a41818b5.mdl_lantern linkto(var_a41818b5);
+    var_a41818b5.mdl_lantern thread rotate_forever(vectorscale((0, 1, 0), 45));
+    var_a41818b5.mdl_lantern clientfield::set("" + #"lantern_outline", 1);
     var_a41818b5 val::set(#"mq_hell", "takedamage", 0);
     var_a41818b5 clientfield::set("" + #"lantern_fx", 1);
     level.var_5d5b7e8e.var_a41818b5 = var_a41818b5;
@@ -433,7 +433,9 @@ function function_93a18905() {
                 if (e_player.var_8ec9550d !== 1) {
                     e_player thread function_87b541aa();
                 }
-            } else if (e_player.var_8ec9550d !== 0) {
+                continue;
+            }
+            if (e_player.var_8ec9550d !== 0) {
                 e_player function_2649e7fc();
             }
         }
@@ -690,7 +692,7 @@ function function_d12badc3(n_radius) {
 function function_2855a4fc(e_item, e_player) {
     level flag::set(#"hash_621acea2fedc0408");
     e_player playrumbleonentity("zm_mansion_atlas_interact_rumble");
-    e_item.var_e70e15ad delete();
+    e_item.mdl_lantern delete();
     /#
         iprintlnbold("<unknown string>");
     #/

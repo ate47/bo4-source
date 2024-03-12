@@ -299,9 +299,8 @@ function function_9e712df(einflictor, eattacker, idamage, idflags, smeansofdeath
         if (zm_utility::is_explosive_damage(smeansofdeath)) {
             if (isplayer(eattacker) || isplayer(einflictor)) {
                 return 0;
-            } else {
-                return int(idamage * 0.5);
             }
+            return int(idamage * 0.5);
         }
     }
 }

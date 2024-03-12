@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_diego/character_unlock_diego
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ea59da7, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_diego/character_unlock_diego
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x347d33cb, Offset: 0x130
 // Size: 0x34
 function function_2613aeec(enabled) {
@@ -34,7 +34,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_diego/character_unlock_diego
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb886eeef, Offset: 0x170
 // Size: 0x11c
 function on_player_downed() {

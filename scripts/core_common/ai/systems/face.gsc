@@ -262,9 +262,9 @@ function private _temp_dialog(str_line, uniquenotify, b_missing_vo = 0) {
         player setluimenudata(player getluimenu("TempDialog"), #"dialogtext", str_line);
         if (b_missing_vo) {
             player setluimenudata(player getluimenu("TempDialog"), #"title", "MISSING VO SOUND");
-        } else {
-            player setluimenudata(player getluimenu("TempDialog"), #"title", "TEMP VO");
+            continue;
         }
+        player setluimenudata(player getluimenu("TempDialog"), #"title", "TEMP VO");
     }
     n_wait_time = (strtok(str_line, " ").size - 1) / 2;
     n_wait_time = math::clamp(n_wait_time, 2, 5);

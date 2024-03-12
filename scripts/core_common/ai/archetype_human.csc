@@ -13,7 +13,7 @@ function autoexec precache() {
 
 // Namespace archetype_human/archetype_human
 // Params 0, eflags: 0x2
-// Checksum 0xa3a30b1f, Offset: 0xa0
+// Checksum 0xdc9f6076, Offset: 0xa0
 // Size: 0x4c
 function autoexec main() {
     clientfield::register("actor", "facial_dial", 1, 1, "int", &humanclientutils::facialdialoguehandler, 0, 1);
@@ -23,12 +23,14 @@ function autoexec main() {
 
 // Namespace humanclientutils/archetype_human
 // Params 7, eflags: 0x1 linked
-// Checksum 0xa6b5609a, Offset: 0xf8
+// Checksum 0xc4664777, Offset: 0xf8
 // Size: 0x94
 function facialdialoguehandler(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue) {
         self.facialdialogueactive = 1;
-    } else if (isdefined(self.facialdialogueactive) && self.facialdialogueactive) {
+        return;
+    }
+    if (isdefined(self.facialdialogueactive) && self.facialdialogueactive) {
         self clearanim(#"faces", 0);
     }
 }

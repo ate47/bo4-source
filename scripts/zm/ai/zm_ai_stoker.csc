@@ -78,43 +78,43 @@ function private stoker_fx_start(localclientnum, oldvalue, newvalue, bnewent, bi
     }
     switch (newvalue) {
     case 1:
-        break;
+        return;
     case 2:
         if (!isdefined(self.currentfx[2])) {
             self.currentfx[2] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_charge_shovel", self, "tag_fx_shovel");
         }
-        break;
+        return;
     case 3:
         if (!isdefined(self.currentfx[3])) {
             self.currentfx[3] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_clavicle_le");
             self playsound(localclientnum, #"hash_2dc7f5a5e2c5af20");
         }
-        break;
+        return;
     case 4:
         if (!isdefined(self.currentfx[4])) {
             self.currentfx[4] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_clavicle_ri");
             self playsound(localclientnum, #"hash_2dc7f5a5e2c5af20");
         }
-        break;
+        return;
     case 5:
         if (!isdefined(self.currentfx[5])) {
             self.currentfx[4] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_head");
             self playsound(localclientnum, #"hash_2dc7f5a5e2c5af20");
         }
-        break;
+        return;
     case 6:
         if (!isdefined(self.currentfx[6])) {
             self.currentfx[6] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_wrist_le");
             self playsound(localclientnum, #"hash_2dc7f5a5e2c5af20");
         }
-        break;
+        return;
     case 7:
         if (!isdefined(self.currentfx[7]) || !isdefined(self.currentfx[7][0])) {
             self.currentfx[7][0] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_projectile_coal_charge_bicep", self, "j_shoulder_le");
             self.currentfx[7][1] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_projectile_coal_charge_forearm", self, "j_elbow_le");
             self.currentfx[7][2] = util::playfxontag(localclientnum, "zm_ai/fx8_stoker_projectile_coal_charge_hand", self, "j_wrist_le");
         }
-        break;
+        return;
     }
 }
 
@@ -131,37 +131,37 @@ function private stoker_fx_stop(localclientnum, oldvalue, newvalue, bnewent, bin
     }
     switch (newvalue) {
     case 1:
-        break;
+        return;
     case 2:
         if (isdefined(self.currentfx[2])) {
             stopfx(localclientnum, self.currentfx[2]);
         }
         self.currentfx[2] = undefined;
-        break;
+        return;
     case 3:
         if (isdefined(self.currentfx[3])) {
             stopfx(localclientnum, self.currentfx[3]);
         }
         self.currentfx[3] = undefined;
-        break;
+        return;
     case 4:
         if (isdefined(self.currentfx[4])) {
             stopfx(localclientnum, self.currentfx[4]);
         }
         self.currentfx[4] = undefined;
-        break;
+        return;
     case 5:
         if (isdefined(self.currentfx[5])) {
             stopfx(localclientnum, self.currentfx[5]);
         }
         self.currentfx[5] = undefined;
-        break;
+        return;
     case 6:
         if (isdefined(self.currentfx[6])) {
             stopfx(localclientnum, self.currentfx[6]);
         }
         self.currentfx[6] = undefined;
-        break;
+        return;
     case 7:
         if (isdefined(self.currentfx[7]) && isdefined(self.currentfx[7][0])) {
             stopfx(localclientnum, self.currentfx[7][0]);
@@ -171,7 +171,7 @@ function private stoker_fx_stop(localclientnum, oldvalue, newvalue, bnewent, bin
             self.currentfx[7][1] = undefined;
             self.currentfx[7][2] = undefined;
         }
-        break;
+        return;
     }
 }
 
@@ -184,7 +184,7 @@ function stoker_death_explosion(localclientnum, oldvalue, newvalue, bnewent, bin
     case 1:
         util::lock_model("c_t8_zmb_titanic_stoker_body1_gibbed");
         self thread function_a88c80a3("c_t8_zmb_titanic_stoker_body1_gibbed");
-        break;
+        return;
     case 2:
         self notify(#"unlock_model");
         v_origin = self gettagorigin("j_shoulder_le");
@@ -194,7 +194,7 @@ function stoker_death_explosion(localclientnum, oldvalue, newvalue, bnewent, bin
         physicsexplosionsphere(localclientnum, v_origin, 400, 0, 3);
         self thread function_d58cd2d5(localclientnum);
         playsound(localclientnum, #"hash_5c4876ace1c2aa10", self gettagorigin("j_shoulder_le"));
-        break;
+        return;
     }
 }
 

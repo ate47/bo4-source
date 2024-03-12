@@ -48,11 +48,11 @@ function __init__() {
     clientfield::register("actor", "" + #"hash_3681b677c0d46042", 16000, 1, "counter");
     clientfield::register("actor", "" + #"hash_25691c415a4aea4c", 16000, 1, "int");
     level.w_hand_charon = getweapon(#"ww_hand_c");
-    level.w_hand_charon_charged = getweapon(#"hash_57674b2a4d9eea50");
+    level.w_hand_charon_charged = getweapon(#"ww_hand_c_charged");
     level.w_hand_charon_uncharged = getweapon(#"ww_hand_c_uncharged");
     level.w_hand_charon_upgraded = getweapon(#"ww_hand_c_upgraded");
     zm_weapons::include_zombie_weapon(#"ww_hand_c", 0);
-    zm_weapons::include_zombie_weapon(#"hash_57674b2a4d9eea50", 0);
+    zm_weapons::include_zombie_weapon(#"ww_hand_c_charged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_c_uncharged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_c_upgraded", 0);
     namespace_9ff9f642::register_slowdown(#"hash_583272dc38f3f8a8", 0.7, 3);
@@ -470,9 +470,9 @@ function function_dced5aef(e_target, weapon = level.weaponnone, v_to_target, n_d
             }
             break;
         }
-    } else {
-        e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, weapon);
+        return;
     }
+    e_target dodamage(n_damage, e_target.origin, self, self, "none", "MOD_UNKNOWN", 0, weapon);
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
@@ -671,9 +671,9 @@ function function_249b5556(n_damage) {
                         break;
                     }
                 }
-            } else {
-                self notify(#"hash_288cb56263c7b7fa");
+                continue;
             }
+            self notify(#"hash_288cb56263c7b7fa");
         }
     }
 }
@@ -700,7 +700,9 @@ function function_ccd87945(e_player) {
     if (level.n_dragged < 5) {
         level.n_dragged++;
         self thread function_31d8c58();
-    } else if (isdefined(e_player) && isalive(self)) {
+        return;
+    }
+    if (isdefined(e_player) && isalive(self)) {
         self dodamage(self.health + 999, self.origin, e_player, e_player, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
     }
 }
@@ -721,18 +723,18 @@ function function_31d8c58() {
     self notsolid();
     self clientfield::set("" + #"hash_25691c415a4aea4c", 1);
     var_f9d1df1d = vectornormalize(anglestoforward(self.angles));
-    var_cdeb4ee4 = util::spawn_model("tag_origin", self.origin, self.angles);
-    var_cdeb4ee4.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, -1, 0), 90));
-    var_cdeb4ee4.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, 1, 0), 90));
-    if (isdefined(var_cdeb4ee4)) {
-        var_cdeb4ee4 thread scene::play(#"aib_vign_cust_zm_red_zmb_ww_drggd_dwn_00", self);
-        var_cdeb4ee4 thread function_8a38ce84();
+    mdl_tag = util::spawn_model("tag_origin", self.origin, self.angles);
+    mdl_tag.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, -1, 0), 90));
+    mdl_tag.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, 1, 0), 90));
+    if (isdefined(mdl_tag)) {
+        mdl_tag thread scene::play(#"aib_vign_cust_zm_red_zmb_ww_drggd_dwn_00", self);
+        mdl_tag thread function_8a38ce84();
     }
-    if (isdefined(var_cdeb4ee4.var_58b95)) {
-        var_cdeb4ee4.var_58b95 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
+    if (isdefined(mdl_tag.var_58b95)) {
+        mdl_tag.var_58b95 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
     }
-    if (isdefined(var_cdeb4ee4.var_31436e10)) {
-        var_cdeb4ee4.var_31436e10 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
+    if (isdefined(mdl_tag.var_31436e10)) {
+        mdl_tag.var_31436e10 thread scene::play(#"hash_1cfca52bdf13d5bf" + randomint(3));
     }
     level.n_dragged--;
     if (level.n_dragged < 0) {
@@ -745,9 +747,9 @@ function function_31d8c58() {
         self.diedinscriptedanim = 1;
         self ghost();
         if (self.archetype === #"skeleton") {
-            self dodamage(self.health + 999, var_cdeb4ee4.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
+            self dodamage(self.health + 999, mdl_tag.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
         } else {
-            self dodamage(self.health + 100, var_cdeb4ee4.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
+            self dodamage(self.health + 100, mdl_tag.origin, self.e_attacker, self.e_attacker, undefined, "MOD_UNKNOWN", 0, level.w_hand_charon);
         }
         wait(0.5);
         if (isalive(self)) {

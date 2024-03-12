@@ -261,9 +261,9 @@ function function_f2d20a04(params) {
                 }
                 if (isdefined(self.enemy) && isplayer(self.enemy)) {
                     wait(randomfloatrange(self.settings.var_77e64d20, self.settings.var_d4e8eb34));
-                } else {
-                    wait(randomfloatrange(self.settings.var_dd6ae92f, self.settings.var_be5db78d));
+                    continue;
                 }
+                wait(randomfloatrange(self.settings.var_dd6ae92f, self.settings.var_be5db78d));
             }
             self setturretspinning(0);
             if (isdefined(self.enemy) && isalive(self.enemy) && self cansee(self.enemy)) {

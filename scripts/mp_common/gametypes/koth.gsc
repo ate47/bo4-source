@@ -106,9 +106,9 @@ function updateobjectivehintmessages(defenderteam, defendmessage, attackmessage)
     foreach (team, _ in level.teams) {
         if (defenderteam == team) {
             game.strings["objective_hint_" + team] = defendmessage;
-        } else {
-            game.strings["objective_hint_" + team] = attackmessage;
+            continue;
         }
+        game.strings["objective_hint_" + team] = attackmessage;
     }
 }
 
@@ -313,14 +313,14 @@ function kothcaptureloop() {
         waitresult = undefined;
         waitresult = level waittill(#"zone_destroyed");
         if (!level.kothmode || level.zonedestroyedbytimer) {
-            break;
+            return;
         }
         thread forcespawnteam(ownerteam);
         if (isdefined(waitresult.destroy_team)) {
             level.zone.gameobject gameobjects::set_owner_team(waitresult.destroy_team);
-        } else {
-            level.zone.gameobject gameobjects::set_owner_team("none");
+            continue;
         }
+        level.zone.gameobject gameobjects::set_owner_team("none");
     }
 }
 
@@ -425,13 +425,17 @@ function updateteamclientfield() {
     ownerteam = self gameobjects::get_owner_team();
     if (isdefined(self.iscontested) && self.iscontested) {
         level clientfield::set("hardpointteam", 3);
-    } else if (ownerteam == #"neutral") {
-        level clientfield::set("hardpointteam", 0);
-    } else if (ownerteam == #"allies") {
-        level clientfield::set("hardpointteam", 1);
-    } else {
-        level clientfield::set("hardpointteam", 2);
+        return;
     }
+    if (ownerteam == #"neutral") {
+        level clientfield::set("hardpointteam", 0);
+        return;
+    }
+    if (ownerteam == #"allies") {
+        level clientfield::set("hardpointteam", 1);
+        return;
+    }
+    level clientfield::set("hardpointteam", 2);
 }
 
 // Namespace koth/koth
@@ -502,9 +506,9 @@ function onbeginuse(sentient) {
     ownerteam = self gameobjects::get_owner_team();
     if (ownerteam == #"neutral") {
         player thread battlechatter::gametype_specific_battle_chatter("hq_protect", player.pers[#"team"]);
-    } else {
-        player thread battlechatter::gametype_specific_battle_chatter("hq_attack", player.pers[#"team"]);
+        return;
     }
+    player thread battlechatter::gametype_specific_battle_chatter("hq_attack", player.pers[#"team"]);
 }
 
 // Namespace koth/koth
@@ -563,14 +567,14 @@ function onzonecapture(sentient) {
                 }
             }
             thread sound::play_on_players(game.objective_gained_sound, team);
-        } else {
-            if (!isdefined(self.lastcaptureteam)) {
-                globallogic_audio::leader_dialog("kothCaptured", team, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
-            } else if (self.lastcaptureteam == team) {
-                globallogic_audio::leader_dialog("kothLost", team, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
-            }
-            thread sound::play_on_players(game.objective_lost_sound, team);
+            continue;
         }
+        if (!isdefined(self.lastcaptureteam)) {
+            globallogic_audio::leader_dialog("kothCaptured", team, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
+        } else if (self.lastcaptureteam == team) {
+            globallogic_audio::leader_dialog("kothLost", team, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
+        }
+        thread sound::play_on_players(game.objective_lost_sound, team);
     }
     self thread awardcapturepoints(capture_team, self.lastcaptureteam);
     self.capturecount++;
@@ -627,11 +631,11 @@ function give_capture_credit(touchlist, string, capturetime, capture_team, lastc
             player stats::function_bb7eedf0(#"captures", 1);
             player stats::function_bb7eedf0(#"captures_in_capture_area", 1);
             player contracts::increment_contract(#"contract_mp_objective_capture");
-        } else {
-            /#
-                player iprintlnbold("<unknown string>");
-            #/
+            continue;
         }
+        /#
+            player iprintlnbold("<unknown string>");
+        #/
     }
 }
 
@@ -761,7 +765,9 @@ function awardcapturepoints(team, lastcaptureteam) {
                 player globallogic_score::incpersstat(#"objectivetime", 1, 0, 1);
                 if (!isdefined(player.var_592f3e3c)) {
                     player.var_592f3e3c = gettime();
-                } else if (player.var_592f3e3c <= gettime() - 5000) {
+                    continue;
+                }
+                if (player.var_592f3e3c <= gettime() - 5000) {
                     player scoreevents::processscoreevent(#"hardpoint_owned", player);
                     player.var_592f3e3c = gettime();
                 }
@@ -861,31 +867,31 @@ function setupzones() {
             }
         }
         if (!isdefined(zone.trig)) {
-            jumpiftrue(errored) LOC_00000206;
-            globallogic_utils::add_map_error("Zone at " + zone.origin + " is not inside any "zonetrigger" trigger");
-        } else {
-        LOC_00000206:
-            /#
-                assert(!errored);
-            #/
-            zone.trigorigin = zone.trig.origin;
-            zone.objectiveanchor = spawn("script_model", zone.origin);
-            visuals = [];
-            visuals[0] = zone;
-            if (isdefined(zone.target)) {
-                othervisuals = getentarray(zone.target, "targetname");
-                for (j = 0; j < othervisuals.size; j++) {
-                    visuals[visuals.size] = othervisuals[j];
-                }
+            if (!errored) {
+                globallogic_utils::add_map_error("Zone at " + zone.origin + " is not inside any "zonetrigger" trigger");
+                continue;
             }
-            objective_name = #"hardpoint";
-            zone.gameobject = gameobjects::create_use_object(#"neutral", zone.trig, visuals, (0, 0, 0), objective_name);
-            zone.gameobject gameobjects::set_objective_entity(zone);
-            zone.gameobject gameobjects::disable_object();
-            zone.gameobject gameobjects::set_model_visibility(0);
-            zone.trig.useobj = zone.gameobject;
-            zone createzonespawninfluencer();
         }
+        /#
+            assert(!errored);
+        #/
+        zone.trigorigin = zone.trig.origin;
+        zone.objectiveanchor = spawn("script_model", zone.origin);
+        visuals = [];
+        visuals[0] = zone;
+        if (isdefined(zone.target)) {
+            othervisuals = getentarray(zone.target, "targetname");
+            for (j = 0; j < othervisuals.size; j++) {
+                visuals[visuals.size] = othervisuals[j];
+            }
+        }
+        objective_name = #"hardpoint";
+        zone.gameobject = gameobjects::create_use_object(#"neutral", zone.trig, visuals, (0, 0, 0), objective_name);
+        zone.gameobject gameobjects::set_objective_entity(zone);
+        zone.gameobject gameobjects::disable_object();
+        zone.gameobject gameobjects::set_model_visibility(0);
+        zone.trig.useobj = zone.gameobject;
+        zone createzonespawninfluencer();
     }
     if (globallogic_utils::print_map_errors()) {
         return 0;

@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x54cfec56, Offset: 0x118
 // Size: 0x84
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x732c6572, Offset: 0x1a8
 // Size: 0x444
 function function_c9509a9c(params) {
@@ -85,7 +85,7 @@ function function_c9509a9c(params) {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x31884b35, Offset: 0x5f8
 // Size: 0x84
 function function_4df181ef() {
@@ -96,7 +96,7 @@ function function_4df181ef() {
 }
 
 // Namespace wz_snowball_fx/wz_snowball_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x72cf504c, Offset: 0x688
 // Size: 0x2c
 function function_8407e8ae(notifyhash) {

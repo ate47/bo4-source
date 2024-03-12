@@ -39,21 +39,21 @@ function dom_flag_base_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_marker_team_r90";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     }
 }
 
@@ -69,21 +69,21 @@ function dom_flag_cap_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_cap_indicator_team_r90";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     }
 }
 
@@ -113,7 +113,7 @@ function helo_spawn_flavor_rope_pulse(localclientnum, oldval, newval, bnewent, b
     while (isdefined(self)) {
         pos = self gettagorigin("tag_ground");
         if (!isdefined(pos)) {
-            break;
+            return;
         }
         ropepulse(pos, 1, 1024, 5, 60);
         wait(randomfloatrange(0.12, 0.25));

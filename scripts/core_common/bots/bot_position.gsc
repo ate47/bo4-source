@@ -138,9 +138,9 @@ function update(tacbundle) {
     if (isdefined(self.bot.var_2ee077ff)) {
         self.bot.var_18fa994c = self.bot.var_2ee077ff;
         self.bot.var_2ee077ff = undefined;
-    } else {
-        self.bot.var_18fa994c = bot::function_7aeb27f1(self.bot.tacbundle.var_1f8a6a2, self.bot.tacbundle.var_2fc77943);
+        return;
     }
+    self.bot.var_18fa994c = bot::function_7aeb27f1(self.bot.tacbundle.var_1f8a6a2, self.bot.tacbundle.var_2fc77943);
 }
 
 // Namespace bot_position/bot_position
@@ -245,11 +245,11 @@ function function_6ee03a5f(failurecount) {
         /#
             self botprintwarning("<unknown string>" + startpos + "<unknown string>" + self.origin);
         #/
-    } else {
-        /#
-            self botprinterror("<unknown string>" + startpos);
-        #/
+        return;
     }
+    /#
+        self botprinterror("<unknown string>" + startpos);
+    #/
 }
 
 // Namespace bot_position/bot_position
@@ -410,7 +410,7 @@ function function_7beea81f(tacbundle) {
         if (isdefined(self function_22d4d2d(params, tacbundle)) && self function_22d4d2d(params, tacbundle)) {
             self.bot.var_87f1dd0b = params.name;
             handled = 1;
-            break;
+            return;
         }
     }
 }
@@ -905,18 +905,18 @@ function function_b33e4e67(center, fillpos, enemy, querylist) {
             /#
                 self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
             #/
-        } else {
-            /#
-                self bot::record_text("<unknown string>" + tacpoints.size + "<unknown string>", (0, 1, 1), "<unknown string>");
-                if (self bot::should_record("<unknown string>")) {
-                    foreach (point in tacpoints) {
-                        recordcircle(point.origin, 15, (0, 1, 1), "<unknown string>", self);
-                    }
-                }
-            #/
-            var_65c3e15e = tacpoints[0];
-            break;
+            continue;
         }
+        /#
+            self bot::record_text("<unknown string>" + tacpoints.size + "<unknown string>", (0, 1, 1), "<unknown string>");
+            if (self bot::should_record("<unknown string>")) {
+                foreach (point in tacpoints) {
+                    recordcircle(point.origin, 15, (0, 1, 1), "<unknown string>", self);
+                }
+            }
+        #/
+        var_65c3e15e = tacpoints[0];
+        break;
     }
     if (!isdefined(var_65c3e15e)) {
         return undefined;

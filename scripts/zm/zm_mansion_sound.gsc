@@ -93,9 +93,13 @@ function private function_63c3fd24() {
             self.stub.related_parent.var_255658de thread function_f2d27140(e_player.registerraz_locationinvalidposmenu);
             self.stub.related_parent.var_255658de.registerraz_locationinvalidposmenu = e_player.registerraz_locationinvalidposmenu;
             e_player.registerraz_locationinvalidposmenu = undefined;
-        } else if (isdefined(self.stub.related_parent.var_255658de)) {
+            continue;
+        }
+        if (isdefined(self.stub.related_parent.var_255658de)) {
             self.stub.related_parent.var_255658de thread function_f2d27140(self.stub.related_parent.var_255658de.registerraz_locationinvalidposmenu);
-        } else if (!(isdefined(e_player.var_57c1fd86) && e_player.var_57c1fd86)) {
+            continue;
+        }
+        if (!(isdefined(e_player.var_57c1fd86) && e_player.var_57c1fd86)) {
             self.stub.related_parent thread function_6aad582c(e_player);
         }
     }
@@ -238,9 +242,11 @@ function function_33864e5d() {
         s_result = self waittill(#"trigger");
         if (!isplayer(s_result.activator) || !isalive(s_result.activator)) {
             continue;
-        } else if (!s_result.activator zm_characters::is_character(s_interact.var_690ea031)) {
+        }
+        if (!s_result.activator zm_characters::is_character(s_interact.var_690ea031)) {
             continue;
-        } else if (!isdefined(s_interact.s_lookat) || s_result.activator util::is_looking_at(s_interact.s_lookat.origin, 0.7)) {
+        }
+        if (!isdefined(s_interact.s_lookat) || s_result.activator util::is_looking_at(s_interact.s_lookat.origin, 0.7)) {
             s_result.activator thread zm_vo::function_a2bd5a0c(s_interact.var_59c8624c);
             break;
         }
@@ -319,19 +325,19 @@ function function_eb112701() {
     level endon(#"end_game");
     s_result = undefined;
     s_result = level waittill(#"bedroom_charged", #"library_charged", #"cellar_charged");
-    var_65c9997c = undefined;
+    mdl_stone = undefined;
     switch (s_result._notify) {
     case #"bedroom_charged":
-        var_65c9997c = getent("gazing_stone_main_hall", "targetname");
+        mdl_stone = getent("gazing_stone_main_hall", "targetname");
         break;
     case #"library_charged":
-        var_65c9997c = getent("gazing_stone_library", "targetname");
+        mdl_stone = getent("gazing_stone_library", "targetname");
         break;
     case #"cellar_charged":
-        var_65c9997c = getent("gazing_stone_cellar", "targetname");
+        mdl_stone = getent("gazing_stone_cellar", "targetname");
         break;
     }
-    e_closest_player = arraygetclosest(var_65c9997c.origin, getplayers());
+    e_closest_player = arraygetclosest(mdl_stone.origin, getplayers());
     if (isalive(e_closest_player)) {
         e_closest_player zm_audio::create_and_play_dialog(#"seer_stone", #"active", undefined, 1);
     }
@@ -377,10 +383,9 @@ function function_e432aeb6(str_category, var_39acfdda) {
         arrayremovevalue(level.var_359223a8, n_voice);
         function_2d4ce142(n_voice);
         return 1;
-    } else {
-        self.var_631a26f0[str_category][var_39acfdda] = undefined;
-        return 0;
     }
+    self.var_631a26f0[str_category][var_39acfdda] = undefined;
+    return 0;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -392,23 +397,23 @@ function private function_2d4ce142(n_voice) {
     case 0:
         zm_audio::play_vo_internal(#"hash_56d727e4dde061ef");
         zm_audio::play_vo_internal(#"hash_73722f29ea1fa41", self);
-        break;
+        return;
     case 1:
         zm_audio::play_vo_internal(#"hash_46c0fcd4eac3143a");
         zm_audio::play_vo_internal(#"hash_2fd88698209e1998", self);
-        break;
+        return;
     case 2:
         zm_audio::play_vo_internal(#"hash_6a18c9d5cea653d4", self);
         zm_audio::play_vo_internal(#"hash_21bcbc16a4e2812a");
-        break;
+        return;
     case 3:
         zm_audio::play_vo_internal(#"hash_19c3a28739527fc8");
         zm_audio::play_vo_internal(#"hash_c3c497c80eba90e", self);
-        break;
+        return;
     case 4:
         zm_audio::play_vo_internal(#"hash_5f99dba5a34a200b");
         zm_audio::play_vo_internal(#"hash_50bc3e7a02399bd5", self);
-        break;
+        return;
     }
 }
 

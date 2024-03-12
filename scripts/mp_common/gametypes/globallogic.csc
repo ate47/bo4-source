@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace globallogic/globallogic
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa7ebff2d, Offset: 0x470
 // Size: 0x9b4
 function __init__() {
@@ -82,7 +82,7 @@ function __init__() {
 }
 
 // Namespace globallogic/globallogic
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x952d2208, Offset: 0xe30
 // Size: 0x24
 function on_player_spawned(localclientnum) {
@@ -90,7 +90,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x9dec24f0, Offset: 0xe60
 // Size: 0x9e
 function on_end_game(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -102,7 +102,7 @@ function on_end_game(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x2b8875f3, Offset: 0xf08
 // Size: 0x76
 function post_game(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -113,7 +113,7 @@ function post_game(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xe982c04d, Offset: 0xf88
 // Size: 0x4e
 function firefly_effect_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -122,7 +122,7 @@ function firefly_effect_cb(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x30942922, Offset: 0xfe0
 // Size: 0x19c
 function annihilate_effect_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -144,7 +144,7 @@ function annihilate_effect_cb(localclientnum, oldval, newval, bnewent, binitials
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x58ea96, Offset: 0x1188
 // Size: 0xdc
 function pineapplegun_effect_cb(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -160,7 +160,7 @@ function pineapplegun_effect_cb(localclientnum, oldval, newval, bnewent, binitia
 }
 
 // Namespace globallogic/globallogic
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf468556, Offset: 0x1270
 // Size: 0x8c
 function play_plant_sound(param1, param2) {
@@ -172,7 +172,7 @@ function play_plant_sound(param1, param2) {
 }
 
 // Namespace globallogic/globallogic
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd079dc7d, Offset: 0x1308
 // Size: 0xdc
 function updateenemyequipment(local_client_num, newval) {
@@ -186,7 +186,7 @@ function updateenemyequipment(local_client_num, newval) {
 }
 
 // Namespace globallogic/globallogic
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x441c5d63, Offset: 0x13f0
 // Size: 0x2c
 function function_116b413e(local_client_num, newval) {
@@ -194,7 +194,7 @@ function function_116b413e(local_client_num, newval) {
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x81ea2e4b, Offset: 0x1428
 // Size: 0x27c
 function function_765b7c63(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -221,7 +221,7 @@ function function_765b7c63(local_client_num, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xa495db5f, Offset: 0x16b0
 // Size: 0xcc
 function function_e1af467(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -230,13 +230,13 @@ function function_e1af467(local_client_num, oldval, newval, bnewent, binitialsna
     }
     if (newval && !self function_6c32d092(local_client_num, #"talent_resistance")) {
         self function_36b630a3(0);
-    } else {
-        self function_36b630a3(1);
+        return;
     }
+    self function_36b630a3(1);
 }
 
 // Namespace globallogic/globallogic
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb75a9a37, Offset: 0x1788
 // Size: 0x6c
 function function_194072a7(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

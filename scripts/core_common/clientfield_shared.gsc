@@ -50,9 +50,9 @@ function set(str_field_name, n_value) {
     }
     if (self == level) {
         codesetworldclientfield(str_field_name, n_value);
-    } else {
-        codesetclientfield(self, str_field_name, n_value);
+        return;
     }
+    codesetclientfield(self, str_field_name, n_value);
 }
 
 // Namespace clientfield/clientfield_shared
@@ -161,13 +161,13 @@ function private _increment(str_field_name, n_increment_count = 1) {
     for (i = 0; i < n_increment_count; i++) {
         if (self == level) {
             codeincrementworldclientfield(str_field_name);
-        } else {
-            waittillframeend();
-            if (isdefined(self.birthtime) && self.birthtime >= level.var_58bc5d04) {
-                util::wait_network_frame();
-            }
-            codeincrementclientfield(self, str_field_name);
+            continue;
         }
+        waittillframeend();
+        if (isdefined(self.birthtime) && self.birthtime >= level.var_58bc5d04) {
+            util::wait_network_frame();
+        }
+        codeincrementclientfield(self, str_field_name);
     }
 }
 
@@ -182,10 +182,10 @@ function increment_uimodel(str_field_name, n_increment_count = 1) {
                 codeincrementuimodelclientfield(player, str_field_name);
             }
         }
-    } else {
-        for (i = 0; i < n_increment_count; i++) {
-            codeincrementuimodelclientfield(self, str_field_name);
-        }
+        return;
+    }
+    for (i = 0; i < n_increment_count; i++) {
+        codeincrementuimodelclientfield(self, str_field_name);
     }
 }
 
@@ -206,9 +206,8 @@ function increment_to_player(str_field_name, n_increment_count = 1) {
 function get(str_field_name) {
     if (self == level) {
         return codegetworldclientfield(str_field_name);
-    } else {
-        return codegetclientfield(self, str_field_name);
     }
+    return codegetclientfield(self, str_field_name);
 }
 
 // Namespace clientfield/clientfield_shared

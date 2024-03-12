@@ -101,9 +101,9 @@ function private finalize_clientfields(localclientnum) {
 function private function_ff287922(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self function_3862d4bd(1);
-    } else {
-        self function_3862d4bd(0);
+        return;
     }
+    self function_3862d4bd(0);
 }
 
 // Namespace zm_trial_util/zm_trial_util
@@ -220,7 +220,7 @@ function private function_d59810a5() {
             setuimodelvalue(level.var_940b67bb, level.var_1420e3f6.name_str);
             setuimodelvalue(level.var_63e5f17c, level.var_1420e3f6.desc_str);
         }
-        break;
+        return;
     }
 }
 

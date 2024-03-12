@@ -140,7 +140,7 @@ function function_8f340c78(params) {
                     function_55e20e75(params._id, origin);
                     angles = (chest.angles[0], chest.angles[1] - 90, chest.angles[2]);
                     function_55e20e75(params._id, angles);
-                    break;
+                    return;
                 }
             }
         }
@@ -299,9 +299,9 @@ function function_ea4b3f00(params) {
                 if (player != host) {
                     player enableinvulnerability();
                 }
-            } else {
-                skip = 0;
+                continue;
             }
+            skip = 0;
         }
     #/
 }
@@ -544,9 +544,8 @@ function function_ff8061ca(params) {
     /#
         if (isdefined(level.power_local_doors_globally)) {
             return 1;
-        } else {
-            return 0;
         }
+        return 0;
     #/
 }
 
@@ -612,9 +611,9 @@ function derriesezombiespawnnavmeshtest(params, inrat) {
             }
             if (size > 0 || failed_attack_spot_size > 0) {
                 ratreportcommandresult(params._id, 0, errmsg);
-            } else {
-                ratreportcommandresult(params._id, 1);
+                return;
             }
+            ratreportcommandresult(params._id, 1);
         }
     #/
 }

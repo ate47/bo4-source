@@ -97,7 +97,7 @@ class cbarricade : cdoor {
                         waitframe(1);
                         self.m_e_door.mdl_gameobject delete();
                         self.m_e_door delete();
-                        break;
+                        return;
                     } else {
                         if (cdoor::is_open()) {
                             cdoor::close();

@@ -100,7 +100,9 @@ function function_39002b98(einflictor, attacker, idamage, smeansofdeath, weapon,
                     level.var_63f34167++;
                 }
                 level notify(#"hash_43f81887f2dadcb6");
-            } else if (smeansofdeath != "MOD_TRIGGER_HURT") {
+                return;
+            }
+            if (smeansofdeath != "MOD_TRIGGER_HURT") {
                 function_d999dbe2(2);
             }
         }
@@ -147,24 +149,24 @@ function function_872c9404(mode) {
                 e_trigger.waypoint gameobjects::set_visible_team("none");
             }
         }
-    } else {
-        for (index = 0; index < var_932b0566.size; index++) {
-            e_trigger = var_932b0566[index];
-            e_model = getent(e_trigger.target, "targetname");
-            var_d3b9972d = getent(e_model.target, "targetname");
-            e_model ghost();
-            e_model connectpaths();
-            e_model notsolid();
-            var_d3b9972d ghost();
-            var_d3b9972d connectpaths();
-            var_d3b9972d notsolid();
-        }
-        a_e_clips = getentarray("clip_destroysite", "targetname");
-        foreach (e_clip in a_e_clips) {
-            e_clip connectpaths();
-            e_clip notsolid();
-            e_clip ghost();
-        }
+        return;
+    }
+    for (index = 0; index < var_932b0566.size; index++) {
+        e_trigger = var_932b0566[index];
+        e_model = getent(e_trigger.target, "targetname");
+        var_d3b9972d = getent(e_model.target, "targetname");
+        e_model ghost();
+        e_model connectpaths();
+        e_model notsolid();
+        var_d3b9972d ghost();
+        var_d3b9972d connectpaths();
+        var_d3b9972d notsolid();
+    }
+    a_e_clips = getentarray("clip_destroysite", "targetname");
+    foreach (e_clip in a_e_clips) {
+        e_clip connectpaths();
+        e_clip notsolid();
+        e_clip ghost();
     }
 }
 
@@ -290,7 +292,7 @@ function function_72e84e64() {
             }
         } else {
             level notify(#"hash_19a2268f375ca51f");
-            break;
+            return;
         }
         var_5c9c3a6e++;
         waitframe(1);

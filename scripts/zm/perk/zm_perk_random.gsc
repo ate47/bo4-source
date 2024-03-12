@@ -108,9 +108,9 @@ function private init_starting_perk_random_machine_location() {
             level.perk_random_machines[i] thread machine_think();
             level.perk_random_machines[i] thread set_perk_random_machine_state("initial");
             b_starting_machine_found = 1;
-        } else {
-            level.perk_random_machines[i] thread wait_for_power();
+            continue;
         }
+        level.perk_random_machines[i] thread wait_for_power();
     }
 }
 
@@ -163,7 +163,8 @@ function perk_random_machine_stub_update_prompt(player) {
     if (!n_power_on) {
         self.hint_string = #"zombie/need_power";
         return 0;
-    } else if (self.stub.trigger_target.state == "idle" || self.stub.trigger_target.state == "vending") {
+    }
+    if (self.stub.trigger_target.state == "idle" || self.stub.trigger_target.state == "vending") {
         n_purchase_limit = player zm_utility::get_player_perk_purchase_limit();
         if (!player zm_utility::can_player_purchase_perk()) {
             self.hint_string = #"hash_4c509a13051ab81";
@@ -193,10 +194,10 @@ function perk_random_machine_stub_update_prompt(player) {
                 return 1;
             }
         }
-    } else {
-        self.hint_string = #"hash_2696440da6a4b627";
-        return 0;
+        return;
     }
+    self.hint_string = #"hash_2696440da6a4b627";
+    return 0;
 }
 
 // Namespace zm_perk_random/zm_perk_random
@@ -378,11 +379,11 @@ function grab_check(player, random_perk) {
             }
             if (player zm_utility::can_player_purchase_perk()) {
                 perk_is_bought = 1;
-            } else {
-                self playsound(#"evt_perk_deny");
-                self notify(#"time_out_or_perk_grab");
-                return;
+                continue;
             }
+            self playsound(#"evt_perk_deny");
+            self notify(#"time_out_or_perk_grab");
+            return;
         }
     }
     player zm_stats::increment_client_stat("grabbed_from_perk_random");
@@ -446,15 +447,15 @@ function machine_selector() {
     if (level.perk_random_machines.size == 1) {
         new_machine = level.perk_random_machines[0];
         new_machine thread machine_think();
-    } else {
-        do {
-            new_machine = level.perk_random_machines[randomint(level.perk_random_machines.size)];
-        } while(new_machine.current_perk_random_machine == 1);
-        new_machine.current_perk_random_machine = 1;
-        self.current_perk_random_machine = 0;
-        wait(10);
-        new_machine thread machine_think();
+        return;
     }
+    do {
+        new_machine = level.perk_random_machines[randomint(level.perk_random_machines.size)];
+    } while (new_machine.current_perk_random_machine == 1);
+    new_machine.current_perk_random_machine = 1;
+    self.current_perk_random_machine = 0;
+    wait(10);
+    new_machine thread machine_think();
 }
 
 // Namespace zm_perk_random/zm_perk_random
@@ -491,9 +492,8 @@ function get_weighted_random_perk(player) {
     for (i = 0; i < keys.size; i++) {
         if (player hasperk(level._random_perk_machine_perk_list[keys[i]])) {
             continue;
-        } else {
-            return level._random_perk_machine_perk_list[keys[i]];
         }
+        return level._random_perk_machine_perk_list[keys[i]];
     }
     return level._random_perk_machine_perk_list[keys[0]];
 }
@@ -600,13 +600,13 @@ function perk_random_idle() {
     self clientfield::set("client_stone_emmissive_blink", 0);
     if (isdefined(level.var_5e48927d)) {
         self [[ level.var_5e48927d ]]();
-    } else {
-        self clientfield::set("lightning_bolt_FX_toggle", 1);
-        while (self.state == "idle") {
-            waitframe(1);
-        }
-        self clientfield::set("lightning_bolt_FX_toggle", 0);
+        return;
     }
+    self clientfield::set("lightning_bolt_FX_toggle", 1);
+    while (self.state == "idle") {
+        waitframe(1);
+    }
+    self clientfield::set("lightning_bolt_FX_toggle", 0);
 }
 
 // Namespace zm_perk_random/zm_perk_random
@@ -659,7 +659,7 @@ function process_perk_random_machine_state(state) {
         self clientfield::set("set_client_light_state", 1);
         self thread perk_random_arrive();
         self.state = "arrive";
-        break;
+        return;
     case #"idle":
         self showzbarrierpiece(5);
         self showzbarrierpiece(2);
@@ -667,13 +667,13 @@ function process_perk_random_machine_state(state) {
         self clientfield::set("set_client_light_state", 1);
         self.state = "idle";
         self thread perk_random_idle();
-        break;
+        return;
     case #"power_off":
         self showzbarrierpiece(2);
         self setzbarrierpiecestate(2, "closing");
         self clientfield::set("set_client_light_state", 0);
         self.state = "power_off";
-        break;
+        return;
     case #"vending":
         self showzbarrierpiece(5);
         self showzbarrierpiece(3);
@@ -681,7 +681,7 @@ function process_perk_random_machine_state(state) {
         self clientfield::set("set_client_light_state", 1);
         self.state = "vending";
         self thread perk_random_vending();
-        break;
+        return;
     case #"leaving":
         self showzbarrierpiece(1);
         self showzbarrierpiece(0);
@@ -690,25 +690,25 @@ function process_perk_random_machine_state(state) {
         self clientfield::set("set_client_light_state", 3);
         self thread perk_random_leaving();
         self.state = "leaving";
-        break;
+        return;
     case #"away":
         self showzbarrierpiece(2);
         self setzbarrierpiecestate(2, "closing");
         self clientfield::set("set_client_light_state", 3);
         self.state = "away";
-        break;
+        return;
     case #"initial":
         self showzbarrierpiece(3);
         self setzbarrierpiecestate(3, "opening");
         self showzbarrierpiece(5);
         self clientfield::set("set_client_light_state", 0);
         self.state = "initial";
-        break;
+        return;
     default:
         if (isdefined(level.var_7453ade8)) {
             self [[ level.var_7453ade8 ]](state);
         }
-        break;
+        return;
     }
 }
 
@@ -726,9 +726,7 @@ function machine_sounds() {
         state_switch = level waittill(#"pmstop", #"pmmove", #"machine_think");
         rndprk_ent stoploopsound(1);
         if (state_switch._notify == "pmstop") {
-            goto LOC_000000fe;
         }
-    LOC_000000fe:
         rndprk_ent delete();
     }
 }
@@ -779,26 +777,26 @@ function wunderfizz_devgui_callback(cmd) {
         switch (cmd) {
         case #"wunderfizz_leaving":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
-            break;
+            return;
         case #"wunderfizz_arriving":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
-            break;
+            return;
         case #"wunderfizz_vending":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
             e_wunderfizz notify(#"bottle_spawned");
-            break;
+            return;
         case #"wunderfizz_idle":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
-            break;
+            return;
         case #"hash_67d324a91b1fd821":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
-            break;
+            return;
         case #"wunderfizz_initial":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
-            break;
+            return;
         case #"wunderfizz_away":
             e_wunderfizz thread set_perk_random_machine_state("<unknown string>");
-            break;
+            return;
         }
     #/
 }

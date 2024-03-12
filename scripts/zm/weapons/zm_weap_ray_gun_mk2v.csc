@@ -106,7 +106,9 @@ function flash_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
             if (viewmodelhastag(localclientnum, "tag_flash")) {
                 self.fx_muzzle_flash = playviewmodelfx(localclientnum, level._effect[#"hash_115fbee47e748af2"], "tag_flash");
             }
-        } else if (isdefined(self gettagorigin("tag_flash"))) {
+            return;
+        }
+        if (isdefined(self gettagorigin("tag_flash"))) {
             self.fx_muzzle_flash = util::playfxontag(localclientnum, level._effect[#"hash_1158b2e47e6e57e0"], self, "tag_flash");
         }
     }
@@ -127,7 +129,9 @@ function function_84a63db9(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.var_12941c1d)) {
             self.var_12941c1d = self playloopsound("zmb_aat_kilowatt_stunned_lp");
         }
-    } else if (isdefined(self.var_d4f84669)) {
+        return;
+    }
+    if (isdefined(self.var_d4f84669)) {
         stopfx(localclientnum, self.var_d4f84669);
         self.var_d4f84669 = undefined;
         stopfx(localclientnum, self.var_38e2508e);

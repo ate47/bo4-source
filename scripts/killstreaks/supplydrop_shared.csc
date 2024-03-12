@@ -67,9 +67,9 @@ function supplydrop_care_package_state(localclientnum, oldval, newval, bnewent, 
     self setupanimtree();
     if (newval == 1) {
         self setanim(#"o_drone_supply_care_idle", 1, 0, 1);
-    } else {
-        self setanim(#"o_drone_supply_care_drop", 1, 0, 0.3);
+        return;
     }
+    self setanim(#"o_drone_supply_care_drop", 1, 0, 0.3);
 }
 
 // Namespace supplydrop/supplydrop_shared
@@ -80,9 +80,7 @@ function supplydrop_ai_tank_state(localclientnum, oldval, newval, bnewent, binit
     self endon(#"death");
     self setupanimtree();
     if (newval == 1) {
-        goto LOC_00000074;
     }
-LOC_00000074:
 }
 
 // Namespace supplydrop/supplydrop_shared
@@ -153,9 +151,9 @@ function setsupplydropthrustersstate(localclientnum, oldval, newval, bnewent, bi
             crate.thrusterfxhandle2 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_03");
             crate.thrusterfxhandle3 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_04");
             crate thread cleanupthrustersthread(localclientnum);
-        } else {
-            crate stopcrateeffects(localclientnum);
+            return;
         }
+        crate stopcrateeffects(localclientnum);
     }
 }
 
@@ -174,9 +172,9 @@ function setaitankhrustersstate(localclientnum, oldval, newval, bnewent, binitia
             crate.thrusterfxhandle2 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_03");
             crate.thrusterfxhandle3 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_04");
             crate thread cleanupthrustersthread(localclientnum);
-        } else {
-            crate stopcrateeffects(localclientnum);
+            return;
         }
+        crate stopcrateeffects(localclientnum);
     }
 }
 
@@ -211,7 +209,9 @@ function marker_state_changed(localclientnum, oldval, newval, bnewent, binitials
             player thread updatemarkerthread(localclientnum);
         }
         player.markerfxhandle = util::playfxontag(localclientnum, player.markerfx, player.markerobj, "tag_origin");
-    } else if (isdefined(player.markerobj)) {
+        return;
+    }
+    if (isdefined(player.markerobj)) {
         player.markerobj delete();
     }
 }

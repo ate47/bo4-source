@@ -60,10 +60,10 @@ function function_a8fa5ac7(var_5ea5c94d) {
 function function_8686db4c(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level.var_c2e6ed5a++;
-    } else {
-        level.var_2363fbdb = 0;
-        function_72d3152();
+        return;
     }
+    level.var_2363fbdb = 0;
+    function_72d3152();
 }
 
 // Namespace namespace_3417f8d2/namespace_3417f8d2
@@ -83,10 +83,10 @@ function function_ebc2f134(var_5ea5c94d) {
 function function_dc7d5745(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level.var_c2e6ed5a++;
-    } else {
-        level.var_2363fbdb = 0;
-        function_72d3152();
+        return;
     }
+    level.var_2363fbdb = 0;
+    function_72d3152();
 }
 
 // Namespace namespace_3417f8d2/namespace_3417f8d2
@@ -106,9 +106,9 @@ function function_d0d114be(var_5ea5c94d) {
 function function_2beb73f6(var_5ea5c94d, ended_early) {
     if (var_5ea5c94d || ended_early) {
         level function_ccd6d7bc();
-    } else {
-        level function_ccd6d7bc();
+        return;
     }
+    level function_ccd6d7bc();
 }
 
 // Namespace namespace_3417f8d2/namespace_3417f8d2

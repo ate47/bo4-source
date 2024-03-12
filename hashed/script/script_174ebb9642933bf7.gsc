@@ -76,7 +76,7 @@ function crawler_round_spawn() {
 // Size: 0x18e
 function spawn_nova_crawler(override_spawn_location = undefined) {
     var_d8d8ce1b = undefined;
-    if (function_4748fb49() < function_59257d57() && !(isdefined(level.var_5e45f817) && level.var_5e45f817) && isdefined(level.zm_loc_types[#"hash_506aba309cfe3f56"]) && level.zm_loc_types[#"hash_506aba309cfe3f56"].size > 0) {
+    if (function_4748fb49() < function_59257d57() && !(isdefined(level.var_5e45f817) && level.var_5e45f817) && isdefined(level.zm_loc_types[#"nova_crawler_location"]) && level.zm_loc_types[#"nova_crawler_location"].size > 0) {
         var_d8d8ce1b = zombie_utility::spawn_zombie(level.nova_crawler_spawner);
         if (isdefined(var_d8d8ce1b)) {
             var_d8d8ce1b.check_point_in_enabled_zone = &zm_utility::check_point_in_playable_area;
@@ -103,12 +103,11 @@ function spawn_nova_crawler(override_spawn_location = undefined) {
 function function_59257d57() {
     if (level flag::exists("nova_crawlers_round") && level flag::get("nova_crawlers_round")) {
         return level.zombie_ai_limit;
-    } else {
-        if (zm_utility::is_trials()) {
-            return (level.var_f4f794bf[level.players.size - 1] * 2);
-        }
-        return level.var_f4f794bf[level.players.size - 1];
     }
+    if (zm_utility::is_trials()) {
+        return (level.var_f4f794bf[level.players.size - 1] * 2);
+    }
+    return level.var_f4f794bf[level.players.size - 1];
 }
 
 // Namespace namespace_df88241c/namespace_a366d2a9
@@ -189,13 +188,13 @@ function function_a5abd591() {
 // Checksum 0xae795b4d, Offset: 0x928
 // Size: 0x2ca
 function private function_9a898f07(e_target) {
-    if (isdefined(level.zm_loc_types[#"hash_506aba309cfe3f56"]) && level.zm_loc_types[#"hash_506aba309cfe3f56"].size > 0) {
+    if (isdefined(level.zm_loc_types[#"nova_crawler_location"]) && level.zm_loc_types[#"nova_crawler_location"].size > 0) {
         var_a6c95035 = [];
-        var_5f3b05e8 = e_target zm_zonemgr::get_player_zone();
-        if (!isdefined(var_5f3b05e8)) {
+        str_target_zone = e_target zm_zonemgr::get_player_zone();
+        if (!isdefined(str_target_zone)) {
             return undefined;
         }
-        target_zone = level.zones[var_5f3b05e8];
+        target_zone = level.zones[str_target_zone];
         var_24f5d9f8 = array(target_zone.name);
         a_str_adj_zones = getarraykeys(target_zone.adjacent_zones);
         foreach (str_zone in a_str_adj_zones) {
@@ -208,7 +207,7 @@ function private function_9a898f07(e_target) {
                 var_24f5d9f8[var_24f5d9f8.size] = str_zone;
             }
         }
-        foreach (loc in level.zm_loc_types[#"hash_506aba309cfe3f56"]) {
+        foreach (loc in level.zm_loc_types[#"nova_crawler_location"]) {
             if (array::contains(var_24f5d9f8, loc.zone_name)) {
                 if (!isdefined(var_a6c95035)) {
                     var_a6c95035 = [];
@@ -239,8 +238,8 @@ function function_87348a88(e_target) {
 function private function_9216fd1f() {
     spawn_locations = [];
     spawn_location = undefined;
-    if (isdefined(level.zm_loc_types[#"hash_506aba309cfe3f56"])) {
-        spawn_locations = level.zm_loc_types[#"hash_506aba309cfe3f56"];
+    if (isdefined(level.zm_loc_types[#"nova_crawler_location"])) {
+        spawn_locations = level.zm_loc_types[#"nova_crawler_location"];
     }
     if (spawn_locations.size > 0) {
         if (!isdefined(spawn_location)) {
@@ -269,36 +268,36 @@ function private function_e2bab5ec(spot) {
         self.custom_riseanim = "ai_t8_zm_quad_traverse_ground_crawlfast";
         self thread zm_spawner::do_zombie_rise(spot);
         self thread rise_anim_watcher();
-    } else {
-        self.anchor = spawn("script_origin", self.origin);
-        self.anchor.angles = self.angles;
-        self linkto(self.anchor);
-        self.anchor thread zm_utility::anchor_delete_failsafe(self);
-        if (!isdefined(spot.angles)) {
-            spot.angles = (0, 0, 0);
-        }
-        self ghost();
-        self.anchor moveto(spot.origin, 0.05);
-        self.anchor waittill(#"movedone");
-        target_org = zombie_utility::get_desired_origin();
-        if (isdefined(target_org)) {
-            anim_ang = vectortoangles(target_org - self.origin);
-            self.anchor rotateto((0, anim_ang[1], 0), 0.05);
-            self.anchor waittill(#"rotatedone");
-        }
-        if (isdefined(level.zombie_spawn_fx)) {
-            playfx(level.zombie_spawn_fx, spot.origin);
-        }
-        self unlink();
-        if (isdefined(self.anchor)) {
-            self.anchor delete();
-        }
-        if (!(isdefined(self.dontshow) && self.dontshow)) {
-            self show();
-        }
-        self notify(#"spawn_complete");
-        self notify(#"risen", {#find_flesh_struct_string:spot.script_string});
+        return;
     }
+    self.anchor = spawn("script_origin", self.origin);
+    self.anchor.angles = self.angles;
+    self linkto(self.anchor);
+    self.anchor thread zm_utility::anchor_delete_failsafe(self);
+    if (!isdefined(spot.angles)) {
+        spot.angles = (0, 0, 0);
+    }
+    self ghost();
+    self.anchor moveto(spot.origin, 0.05);
+    self.anchor waittill(#"movedone");
+    target_org = zombie_utility::get_desired_origin();
+    if (isdefined(target_org)) {
+        anim_ang = vectortoangles(target_org - self.origin);
+        self.anchor rotateto((0, anim_ang[1], 0), 0.05);
+        self.anchor waittill(#"rotatedone");
+    }
+    if (isdefined(level.zombie_spawn_fx)) {
+        playfx(level.zombie_spawn_fx, spot.origin);
+    }
+    self unlink();
+    if (isdefined(self.anchor)) {
+        self.anchor delete();
+    }
+    if (!(isdefined(self.dontshow) && self.dontshow)) {
+        self show();
+    }
+    self notify(#"spawn_complete");
+    self notify(#"risen", {#find_flesh_struct_string:spot.script_string});
 }
 
 // Namespace namespace_df88241c/namespace_a366d2a9

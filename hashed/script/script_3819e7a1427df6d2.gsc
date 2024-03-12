@@ -440,14 +440,14 @@ function addaioverridedamagecallback(entity, callback, addtofront) {
             damageoverrides[damageoverrides.size] = override;
         }
         entity.aioverridedamage = damageoverrides;
-    } else {
-        if (!isdefined(entity.aioverridedamage)) {
-            entity.aioverridedamage = [];
-        } else if (!isarray(entity.aioverridedamage)) {
-            entity.aioverridedamage = array(entity.aioverridedamage);
-        }
-        entity.aioverridedamage[entity.aioverridedamage.size] = callback;
+        return;
     }
+    if (!isdefined(entity.aioverridedamage)) {
+        entity.aioverridedamage = [];
+    } else if (!isarray(entity.aioverridedamage)) {
+        entity.aioverridedamage = array(entity.aioverridedamage);
+    }
+    entity.aioverridedamage[entity.aioverridedamage.size] = callback;
 }
 
 // Namespace aiutility/namespace_7d3e8f59

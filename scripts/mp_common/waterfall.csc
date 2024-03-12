@@ -137,7 +137,7 @@ function trig_enter_waterfall_mist(localplayer) {
         }
         if (isunderwater(localclientnum)) {
             filter::disable_filter_sprite_rain(localplayer, 0);
-            break;
+            return;
         }
         localplayer.rainopacity = localplayer.rainopacity + 0.003;
         if (localplayer.rainopacity > 1) {

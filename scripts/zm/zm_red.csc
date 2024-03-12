@@ -100,7 +100,9 @@ function function_deaba617(localclientnum, oldval, newval, bnewent, binitialsnap
         if (isdefined(self)) {
             self function_78233d29(#"hash_589cf36f110e3f4a", "", "DNI Glow", 1);
         }
-    } else if (isdefined(self)) {
+        return;
+    }
+    if (isdefined(self)) {
         self stoprenderoverridebundle(#"hash_589cf36f110e3f4a");
         self function_78233d29(#"hash_589cf36f110e3f4a", "", "DNI Glow", 0);
     }
@@ -132,7 +134,9 @@ function function_ea4a65c1(localclientnum, oldval, newval, bnewent, binitialsnap
         forcestreammaterial("mtl_postfx_dangerdog_03");
         forcestreammaterial("mtl_postfx_dangerdog_04");
         forcestreammaterial("mtl_postfx_dangerdog_05");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         forcestreammaterial("mtl_postfx_dangerdog_16");
         forcestreammaterial("mtl_postfx_dangerdog_17");
         forcestreammaterial("mtl_postfx_dangerdog_18");
@@ -140,7 +144,9 @@ function function_ea4a65c1(localclientnum, oldval, newval, bnewent, binitialsnap
         forcestreammaterial("mtl_postfx_dangerdog_20");
         forcestreammaterial("mtl_postfx_dangerdog_21");
         forcestreammaterial("mtl_postfx_dangerdog_22");
-    } else if (newval == 3) {
+        return;
+    }
+    if (newval == 3) {
         forcestreammaterial("mtl_postfx_dangerdog_06");
         forcestreammaterial("mtl_postfx_dangerdog_07");
         forcestreammaterial("mtl_postfx_dangerdog_08");
@@ -151,30 +157,30 @@ function function_ea4a65c1(localclientnum, oldval, newval, bnewent, binitialsnap
         forcestreammaterial("mtl_postfx_dangerdog_13");
         forcestreammaterial("mtl_postfx_dangerdog_14");
         forcestreammaterial("mtl_postfx_dangerdog_15");
-    } else {
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_01");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_02");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_03");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_04");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_05");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_06");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_07");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_08");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_09");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_10");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_11");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_12");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_13");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_14");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_15");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_16");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_17");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_18");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_19");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_20");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_21");
-        stopforcestreamingmaterial("mtl_postfx_dangerdog_22");
+        return;
     }
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_01");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_02");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_03");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_04");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_05");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_06");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_07");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_08");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_09");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_10");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_11");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_12");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_13");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_14");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_15");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_16");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_17");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_18");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_19");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_20");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_21");
+    stopforcestreamingmaterial("mtl_postfx_dangerdog_22");
 }
 
 // Namespace zm_red/zm_red
@@ -184,9 +190,9 @@ function function_ea4a65c1(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_adad910c(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_49e717c029b47c98");
-    } else {
-        self stoprenderoverridebundle(#"hash_49e717c029b47c98");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_49e717c029b47c98");
 }
 
 // Namespace zm_red/zm_red

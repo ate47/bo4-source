@@ -156,8 +156,8 @@ function setup_personality_character_exerts() {
 function sndactorunderwater(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self setsoundentcontext("water", "under");
-    } else {
-        self setsoundentcontext("water", "over");
+        return;
     }
+    self setsoundentcontext("water", "over");
 }
 

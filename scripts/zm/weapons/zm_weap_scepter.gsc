@@ -115,13 +115,17 @@ function private function_63e57124() {
             self thread function_4521ac7e(wpn_cur, 1);
             self thread function_4493c71b(wpn_cur, 1);
             playrumbleonposition("grenade_rumble", self.origin);
-        } else if (wpn_cur == level.hero_weapon[#"scepter"][1]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"scepter"][1]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_7ebea2becf0c1aee");
             self thread function_4521ac7e(wpn_cur, 2);
             self thread function_4493c71b(wpn_cur, 2);
             playrumbleonposition("grenade_rumble", self.origin);
             self thread function_eae0296b(#"hero_scepter_lv2", 1);
-        } else if (wpn_cur == level.hero_weapon[#"scepter"][2]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"scepter"][2]) {
             if (!self gamepadusedlast()) {
                 self zm_hero_weapon::show_hint(wpn_cur, #"hash_5ba4f6bd62a74330");
             } else {
@@ -184,7 +188,7 @@ function private function_4521ac7e(w_curr, n_lvl) {
                 self notify(#"ammo_reduction", {#weapon:w_curr});
                 var_43b42a60 = 1;
             }
-        } while(zm_utility::is_player_valid(self) && self attackbuttonpressed() && !self fragbuttonpressed());
+        } while (zm_utility::is_player_valid(self) && self attackbuttonpressed() && !self fragbuttonpressed());
         self clientfield::set("" + #"skull_turret_beam_fire", 0);
         self clientfield::set("" + #"hash_6635e6da6fcfe594", 0);
         self.var_1de56cc8 = undefined;
@@ -215,19 +219,19 @@ function private function_4493c71b(weapon, n_lvl = 1) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0x6bfdc1e6, Offset: 0x1390
 // Size: 0xca
-function private function_eae0296b(var_65b6e624, b_postfx = 0) {
+function private function_eae0296b(str_level, b_postfx = 0) {
     if (b_postfx) {
         self clientfield::increment_to_player("" + #"hash_2964d1cb7c4bd175");
     }
     self.var_a0a1475c = 1;
     self notify(#"hash_11d4cfae418fcfe1");
-    switch (var_65b6e624) {
+    switch (str_level) {
     case #"hero_scepter_lv3":
         self.var_5762241e = 35;
-        break;
+        return;
     default:
         self.var_5762241e = 30;
-        break;
+        return;
     }
 }
 
@@ -274,9 +278,9 @@ function private blood_death_fx(var_14ef0a6c) {
 function function_fe3f086c(e_target, weapon = level.weaponnone) {
     if (isactor(e_target)) {
         self chop_actor(e_target, weapon);
-    } else {
-        self function_5e2c9b64(e_target, weapon);
+        return;
     }
+    self function_5e2c9b64(e_target, weapon);
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -546,15 +550,15 @@ function private get_closest_tag(v_pos) {
     for (i = 0; i < var_9aabd9de.size; i++) {
         if (!isdefined(tag_closest)) {
             tag_closest = var_9aabd9de[i];
-        } else {
-            var_abe265db = self gettagorigin(var_9aabd9de[i]);
-            var_2cd7818f = self gettagorigin(tag_closest);
-            if (!isdefined(var_abe265db) || !isdefined(var_2cd7818f)) {
-                continue;
-            }
-            if (distancesquared(v_pos, var_abe265db) < distancesquared(v_pos, var_2cd7818f)) {
-                tag_closest = var_9aabd9de[i];
-            }
+            continue;
+        }
+        var_abe265db = self gettagorigin(var_9aabd9de[i]);
+        var_2cd7818f = self gettagorigin(tag_closest);
+        if (!isdefined(var_abe265db) || !isdefined(var_2cd7818f)) {
+            continue;
+        }
+        if (distancesquared(v_pos, var_abe265db) < distancesquared(v_pos, var_2cd7818f)) {
+            tag_closest = var_9aabd9de[i];
         }
     }
     return tolower(tag_closest);
@@ -809,7 +813,7 @@ function private function_717a1af2() {
     do {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_4078956b159dd0f3");
-    } while(s_waitresult.weapon != w_beacon);
+    } while (s_waitresult.weapon != w_beacon);
     if (isdefined(self.var_165b5fce)) {
         self gadgetpowerset(self gadgetgetslot(w_beacon), self.var_165b5fce);
         self.saved_spike_power = undefined;
@@ -1017,7 +1021,7 @@ function beacon_smash(player) {
             case #"basic":
             case #"enhanced":
                 player thread function_b67b2aff(zombie, zombie.health, self.origin, level.hero_weapon[#"scepter"][2], launch);
-                break;
+                continue;
             case #"heavy":
             case #"miniboss":
                 if (isalive(zombie) & !(isdefined(zombie.var_25cb9682) && zombie.var_25cb9682)) {
@@ -1026,7 +1030,7 @@ function beacon_smash(player) {
                     }
                     zombie thread function_97429d68(3);
                 }
-                break;
+                continue;
             }
         }
     }
@@ -1228,7 +1232,9 @@ function function_888d5bd9(e_player) {
         if (!isinarray(self.var_bbff3b76, e_player.var_6afa034c)) {
             self.var_bbff3b76[self.var_bbff3b76.size] = e_player.var_6afa034c;
         }
-    } else if (isdefined(self.var_bbff3b76) && isinarray(self.var_bbff3b76, e_player.var_6afa034c)) {
+        return;
+    }
+    if (isdefined(self.var_bbff3b76) && isinarray(self.var_bbff3b76, e_player.var_6afa034c)) {
         arrayremovevalue(self.var_bbff3b76, e_player.var_6afa034c);
         self reset_override();
         self function_89fc5431();
@@ -1341,22 +1347,22 @@ function scepter_rumble(var_b2e05bae) {
         switch (var_b2e05bae) {
         case 1:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            break;
+            return;
         case 2:
             self clientfield::increment_to_player("" + #"scepter_rumble", 2);
-            break;
+            return;
         case 3:
             self playrumbleonentity("zm_weap_scepter_melee_hit_rumble");
-            break;
+            return;
         case 4:
             playrumbleonposition("zm_weap_scepter_plant_rumble", self.origin);
-            break;
+            return;
         case 5:
             self clientfield::increment_to_player("" + #"scepter_rumble", 5);
-            break;
+            return;
         case 6:
             self clientfield::increment_to_player("" + #"scepter_rumble", 6);
-            break;
+            return;
         }
     }
 }

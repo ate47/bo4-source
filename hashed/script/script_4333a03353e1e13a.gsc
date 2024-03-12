@@ -194,9 +194,8 @@ function function_96dcf25a(e_player) {
     if (!isdefined(e_player.var_2e6aa97d)) {
         self sethintstring("ZM_ORANGE/GRAB_HEAT_PACK_FREE");
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace namespace_6036de69/namespace_6036de69
@@ -208,9 +207,13 @@ function function_b1ec88bc() {
         if (v_flinger.str_location === "island" && !zm_utility::is_standard()) {
             v_flinger.var_28a430ac function_c0df509(0);
             v_flinger thread function_26384c47();
-        } else if (v_flinger.str_location === "ship") {
+            continue;
+        }
+        if (v_flinger.str_location === "ship") {
             v_flinger thread function_a6b42ff1();
-        } else if (v_flinger.str_location === "facility") {
+            continue;
+        }
+        if (v_flinger.str_location === "facility") {
             v_flinger thread function_a3780502();
             if (isdefined(v_flinger.var_311f378d)) {
                 v_flinger.var_311f378d zm_unitrigger::create(&function_43a1c155, (153, 293, 102));
@@ -327,10 +330,10 @@ function function_b5fc069b() {
                     self notify(#"launcher_activated");
                 }
             }
-        } else {
-            self thread function_67769412();
-            self notify(#"hash_1a5c6352ea49c8ff");
+            continue;
         }
+        self thread function_67769412();
+        self notify(#"hash_1a5c6352ea49c8ff");
     }
 }
 
@@ -417,11 +420,11 @@ function function_4578fdfd() {
                 self thread function_5fb97eb1();
                 self notify(#"launcher_activated");
             }
-        } else {
-            self.var_28a430ac function_c0df509(s_touching.n_touching);
-            self thread function_d8d2ddc6();
-            self notify(#"hash_1a5c6352ea49c8ff");
+            continue;
         }
+        self.var_28a430ac function_c0df509(s_touching.n_touching);
+        self thread function_d8d2ddc6();
+        self notify(#"hash_1a5c6352ea49c8ff");
     }
 }
 
@@ -831,7 +834,6 @@ function function_42460442() {
         return "j_wrist_le";
     case 3:
         return "j_wrist_ri";
-        break;
     }
 }
 
@@ -902,9 +904,9 @@ function function_60325438(is_visible) {
         if (self.targetname != "flinger_island") {
             self.var_9d07d8dd clientfield::set("gear_box_spark", 0);
         }
-    } else {
-        self.var_9d07d8dd showpart("tag_generator");
+        return;
     }
+    self.var_9d07d8dd showpart("tag_generator");
 }
 
 // Namespace namespace_6036de69/namespace_6036de69

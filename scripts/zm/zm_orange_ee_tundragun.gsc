@@ -108,7 +108,7 @@ function private function_f16c0259() {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         level.var_97da986d.var_af9bf642 = s_notify.inflictor;
-        var_b6d64a72 = isdefined(s_notify.weapon) && (s_notify.weapon.rootweapon === level.w_snowball || s_notify.weapon.rootweapon === level.var_f8934665 || s_notify.weapon.rootweapon === level.var_bf70d56c || s_notify.weapon.rootweapon === level.var_d879215);
+        var_b6d64a72 = isdefined(s_notify.weapon) && (s_notify.weapon.rootweapon === level.w_snowball || s_notify.weapon.rootweapon === level.w_snowball_upgraded || s_notify.weapon.rootweapon === level.w_snowball_yellow || s_notify.weapon.rootweapon === level.w_snowball_yellow_upgraded);
         var_d35fda46 = level.var_97da986d.var_2759714a === level.var_97da986d.var_af9bf642 || level.var_97da986d.var_6f9b20c6 === 0;
         if (var_b6d64a72 && var_d35fda46) {
             var_cf41b762 = self.script_int === level.var_97da986d.var_6f9b20c6;
@@ -130,12 +130,12 @@ function private function_f16c0259() {
                     level notify(#"hash_3dcff814c31d2298");
                     level flag::set(#"hash_478e70a97b556206");
                 }
-            } else {
-                /#
-                    iprintlnbold("<unknown string>");
-                #/
-                function_c19f52ea();
+                continue;
             }
+            /#
+                iprintlnbold("<unknown string>");
+            #/
+            function_c19f52ea();
         }
     }
 }

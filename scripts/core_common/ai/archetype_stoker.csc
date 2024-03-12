@@ -46,11 +46,13 @@ function function_7188417c(localclientnum, pos, surface, notetrack, bone) {
     earthquake(localclientnum, n_scale, 0.1, pos, n_dist);
     if (n_scale <= 0.25 && n_scale > 0.2) {
         function_36e4ebd4(localclientnum, "anim_med");
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
-        function_36e4ebd4(localclientnum, "damage_light");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
+        function_36e4ebd4(localclientnum, "damage_light");
+        return;
+    }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 
 // Namespace archetype_stoker/archetype_stoker

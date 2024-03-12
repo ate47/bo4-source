@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock/character_unlock
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80f724d1, Offset: 0xd8
 // Size: 0x4
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace character_unlock/character_unlock
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xd695a62e, Offset: 0xe8
 // Size: 0x1c
 function function_d2294476(var_2ab9d3bd, replacementcount, var_3afaa57b) {

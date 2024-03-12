@@ -182,9 +182,9 @@ function function_ea998c9(var_458e12fe = 0, var_1798e06d = 0) {
     }
     if (var_458e12fe) {
         self.prompt_and_visibility_func = visibility_func;
-    } else {
-        self triggerenable(1);
+        return;
     }
+    self triggerenable(1);
 }
 
 // Namespace namespace_3f3f1a00/namespace_f78cb90a

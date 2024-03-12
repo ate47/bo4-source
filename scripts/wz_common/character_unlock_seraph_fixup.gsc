@@ -23,7 +23,7 @@ function autoexec function_f031a77f() {
 }
 
 // Namespace character_unlock_seraph_fixup/character_unlock_seraph_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe221e5a3, Offset: 0xf8
 // Size: 0x74
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_seraph_fixup/character_unlock_seraph_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfeb83a64, Offset: 0x178
 // Size: 0x152
 function function_d95e620c() {
@@ -40,7 +40,7 @@ function function_d95e620c() {
 }
 
 // Namespace character_unlock_seraph_fixup/character_unlock_seraph_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xeeec17c2, Offset: 0x2d8
 // Size: 0x54
 function private function_f5a58e15() {

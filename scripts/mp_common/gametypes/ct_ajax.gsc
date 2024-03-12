@@ -95,7 +95,9 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
         if (!isbot(self)) {
             self thread ct_utils::function_ee4639dd(-5);
         }
-    } else if (isdefined(weapon) && weapon == getweapon(#"sig_buckler_turret")) {
+        return;
+    }
+    if (isdefined(weapon) && weapon == getweapon(#"sig_buckler_turret")) {
         e_player = getplayers()[0];
         e_player thread ct_utils::function_d471f8fa(2);
     }
@@ -189,10 +191,10 @@ function function_72e84e64() {
     if (level flag::get("times_up") == 0) {
         level flag::set("mission_success");
         level notify(#"combattraining_logic_finished", {#success:1});
-    } else {
-        level flag::set("mission_failed");
-        level notify(#"combattraining_logic_finished", {#success:0});
+        return;
     }
+    level flag::set("mission_failed");
+    level notify(#"combattraining_logic_finished", {#success:0});
 }
 
 // Namespace ct_ajax/ct_ajax
@@ -208,7 +210,7 @@ function function_7446a885() {
     level.var_cbcb0078 = 0;
     str_name = "s_attack_objective_" + level.var_347db8b6 + 1;
     var_d8e47fe3 = struct::get(str_name, "targetname");
-    var_8caf8b5a = ct_utils::create_waypoint(#"hash_14f53e0433721169", var_d8e47fe3.origin, var_d8e47fe3.angles, #"any", undefined, 0, undefined);
+    attack_waypoint = ct_utils::create_waypoint(#"hash_14f53e0433721169", var_d8e47fe3.origin, var_d8e47fe3.angles, #"any", undefined, 0, undefined);
     level.var_a8a15809 = var_d8e47fe3.origin;
     if (isdefined(level.var_571c3787) && level.var_571c3787) {
         level.var_cbcb0078 = 1;
@@ -240,7 +242,7 @@ function function_7446a885() {
         }
         waitframe(1);
     }
-    var_8caf8b5a gameobjects::set_visible_team("none");
+    attack_waypoint gameobjects::set_visible_team("none");
     level.var_cbcb0078 = 1;
     level flag::clear("attack_event_active");
 }

@@ -598,7 +598,9 @@ function private function_85e8940a(entity) {
             ent dodamage(damage, entity.origin, entity, entity, "none");
             ent status_effect::status_effect_apply(shock_status_effect, undefined, self, 0);
             ent clientfield::increment_to_player("brutus_shock_attack_player", 1);
-        } else if (isai(ent)) {
+            continue;
+        }
+        if (isai(ent)) {
             if (ent.var_6f84b820 === #"basic") {
                 ent zombie_utility::setup_zombie_knockdown(entity);
             }
@@ -807,24 +809,23 @@ function private function_55bb9c72(attacker, damage, weapon, var_81dcad68, damag
             }
         }
         return (damage * (damageoverride ? damagemultiplier : var_81dcad68));
-    } else {
-        if (weaponhasattachment(weapon, "fmj2")) {
-            if (self.var_6f84b820 === #"boss") {
-                damagemultiplier = damagemultiplier * 1.1;
-            } else {
-                damagemultiplier = min(1, damagemultiplier + 0.1);
-            }
-        }
-        self.helmethits++;
-        if (self.helmethits >= self.var_905e4ce2) {
-            self function_530c54e3();
-            if (isdefined(attacker) && isplayer(attacker) && isdefined(level.brutus_points_for_helmet)) {
-                attacker zm_score::add_to_player_score(zm_score::get_points_multiplier(attacker) * zm_utility::round_up_score(level.brutus_points_for_helmet, 5));
-                attacker notify(#"hash_1413599b710f10bd");
-            }
-        }
-        return (damage * damagemultiplier);
     }
+    if (weaponhasattachment(weapon, "fmj2")) {
+        if (self.var_6f84b820 === #"boss") {
+            damagemultiplier = damagemultiplier * 1.1;
+        } else {
+            damagemultiplier = min(1, damagemultiplier + 0.1);
+        }
+    }
+    self.helmethits++;
+    if (self.helmethits >= self.var_905e4ce2) {
+        self function_530c54e3();
+        if (isdefined(attacker) && isplayer(attacker) && isdefined(level.brutus_points_for_helmet)) {
+            attacker zm_score::add_to_player_score(zm_score::get_points_multiplier(attacker) * zm_utility::round_up_score(level.brutus_points_for_helmet, 5));
+            attacker notify(#"hash_1413599b710f10bd");
+        }
+    }
+    return damage * damagemultiplier;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -865,7 +866,8 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
             }
         }
         return (damage * scaler);
-    } else if (shitloc !== "head" && shitloc !== "helmet") {
+    }
+    if (shitloc !== "head" && shitloc !== "helmet") {
         if (weaponhasattachment(weapon, "fmj") && var_9000ab2 < 1) {
             if (self.var_6f84b820 == #"boss") {
                 var_9000ab2 = var_9000ab2 * 1.1;
@@ -874,9 +876,8 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
             }
         }
         return (damage * var_9000ab2);
-    } else {
-        return int(self function_55bb9c72(attacker, damage, weapon, var_81dcad68, var_9000ab2, var_58640bc4));
     }
+    return int(self function_55bb9c72(attacker, damage, weapon, var_81dcad68, var_9000ab2, var_58640bc4));
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus

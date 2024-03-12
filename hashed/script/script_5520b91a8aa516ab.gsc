@@ -87,12 +87,12 @@ class cremote_missile_target_lockon : cluielem {
     // Params 5, eflags: 0x1 linked
     // Checksum 0x6223c699, Offset: 0x2f0
     // Size: 0xe4
-    function setup_clientfields(uid, var_c05c67e2, var_486334bd, var_683d075d, var_a334a5eb) {
+    function setup_clientfields(uid, var_c05c67e2, var_486334bd, var_683d075d, killedcallback) {
         cluielem::setup_clientfields(uid);
         cluielem::add_clientfield("clientnum", 1, 7, "int", var_c05c67e2);
         cluielem::add_clientfield("target_locked", 1, 1, "int", var_486334bd);
         cluielem::add_clientfield("isHawkTag", 13000, 1, "int", var_683d075d);
-        cluielem::add_clientfield("killed", 13000, 1, "int", var_a334a5eb);
+        cluielem::add_clientfield("killed", 13000, 1, "int", killedcallback);
     }
 
 }
@@ -101,9 +101,9 @@ class cremote_missile_target_lockon : cluielem {
 // Params 5, eflags: 0x0
 // Checksum 0xee59b854, Offset: 0xd8
 // Size: 0x70
-function register(uid, var_c05c67e2, var_486334bd, var_683d075d, var_a334a5eb) {
+function register(uid, var_c05c67e2, var_486334bd, var_683d075d, killedcallback) {
     elem = new cremote_missile_target_lockon();
-    [[ elem ]]->setup_clientfields(uid, var_c05c67e2, var_486334bd, var_683d075d, var_a334a5eb);
+    [[ elem ]]->setup_clientfields(uid, var_c05c67e2, var_486334bd, var_683d075d, killedcallback);
     return elem;
 }
 

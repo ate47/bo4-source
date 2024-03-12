@@ -274,9 +274,9 @@ class class_7da27482 {
             } else {
                 self.var_228f64da function_a72ef0c5(self.var_f141235b, self._i_mode);
             }
-        } else {
-            self.var_228f64da function_a7842493();
+            return;
         }
+        self.var_228f64da function_a7842493();
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -303,7 +303,9 @@ class class_7da27482 {
         if (isdefined(params.weapon_right) || isdefined(params.weapon_left)) {
             [[ self ]]->update_model_attachment(params.weapon_right, "tag_weapon_right", params.weapon_right_anim, params.weapon_right_anim_intro, force_updates);
             [[ self ]]->update_model_attachment(params.weapon_left, "tag_weapon_left", params.weapon_left_anim, params.weapon_left_anim_intro, force_updates);
-        } else if (isdefined(params.activeweapon)) {
+            return;
+        }
+        if (isdefined(params.activeweapon)) {
             self.var_228f64da attachweapon(params.activeweapon, isdefined(params.var_b8f20727) ? params.var_b8f20727 : 0);
             function_2e77aae4(self.var_f141235b, self.var_228f64da, isdefined(params.var_b8f20727) ? params.var_b8f20727 : 0, self.var_27af8d38);
             self.var_228f64da useweaponhidetags(params.activeweapon);
@@ -363,9 +365,8 @@ class class_7da27482 {
     function function_8144231c() {
         if (!self.var_c31e86ed && #"female" === getherogender(self.var_1d73bad9, self._i_mode)) {
             return #"pb_fem_frontend_default";
-        } else {
-            return #"pb_male_frontend_default";
         }
+        return #"pb_male_frontend_default";
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -412,9 +413,9 @@ class class_7da27482 {
                         self.var_228f64da animation::play(gesture.outro, self.var_228f64da);
                     }
                     self notify(#"gesture_ended");
-                } else {
-                    self thread function_60b3658e(var_2ec36514, 0);
+                    return;
                 }
+                self thread function_60b3658e(var_2ec36514, 0);
             }
         }
     }
@@ -430,7 +431,9 @@ class class_7da27482 {
         }
         if (isdefined(var_2ec36514)) {
             self.var_228f64da thread animation::play(var_2ec36514, self.var_228f64da);
-        } else if (isdefined(self.var_54430cb6)) {
+            return;
+        }
+        if (isdefined(self.var_54430cb6)) {
             if (self.var_8d2161e9) {
                 self.var_a287debe thread scene::play(self.var_54430cb6, self.var_228f64da);
             }
@@ -659,7 +662,7 @@ class class_7da27482 {
                     foreach (model in var_cf2f5fb7) {
                         var_e2e2ee90 = var_e2e2ee90 & function_c358189(model, var_a9916921, 0);
                     }
-                } while(!var_e2e2ee90);
+                } while (!var_e2e2ee90);
                 function_91cd5499(util::spawn_model(self.var_f141235b, var_867954ad, self._origin, self._angles), 0, 0);
                 self.var_b627749c = 1;
                 [[ self ]]->function_27945cb8(1, 1);
@@ -681,7 +684,7 @@ class class_7da27482 {
             }
             do {
                 waitframe(1);
-            } while(!self.var_ff2bed36 isstreamed(params.var_5bd51249, params.var_13fb1841));
+            } while (!self.var_ff2bed36 isstreamed(params.var_5bd51249, params.var_13fb1841));
         }
         var_ff704b7c = isdefined(params.var_99a89f83) && params.var_99a89f83;
         if (self.var_b627749c) {
@@ -1115,9 +1118,9 @@ class class_7da27482 {
         self.var_ef017bf9 = var_1f64805f;
         if (isdefined(angles)) {
             self.var_228f64da.angles = angles;
-        } else {
-            self.var_228f64da.angles = self._angles;
+            return;
         }
+        self.var_228f64da.angles = self._angles;
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -1605,9 +1608,9 @@ function setup_live_character_customization_target(localclientnum, notifyname) {
 function update_locked_shader(localclientnum, params) {
     if (isdefined(params.isitemunlocked) && params.isitemunlocked != 1) {
         enablefrontendlockedweaponoverlay(localclientnum, 1);
-    } else {
-        enablefrontendlockedweaponoverlay(localclientnum, 0);
+        return;
     }
+    enablefrontendlockedweaponoverlay(localclientnum, 0);
 }
 
 // Namespace character_customization/character_customization

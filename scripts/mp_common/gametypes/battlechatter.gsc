@@ -24,7 +24,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6c1e5889, Offset: 0xc20
 // Size: 0xd5e
 function __init__() {
@@ -133,7 +133,7 @@ function __init__() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x55816367, Offset: 0x1988
 // Size: 0x114
 function function_e9f06034(player, playbreath) {
@@ -146,13 +146,15 @@ function function_e9f06034(player, playbreath) {
     }
     if (playbreath && isdefined(playerbundle.exertemergegasp)) {
         self thread function_a48c33ff(playerbundle.exertemergegasp, 22, mpdialog_value("playerExertBuffer", 0));
-    } else if (!playbreath && isdefined(playerbundle.exertemergebreath)) {
+        return;
+    }
+    if (!playbreath && isdefined(playerbundle.exertemergebreath)) {
         self thread function_a48c33ff(playerbundle.exertemergebreath, 22, mpdialog_value("playerExertBuffer", 0));
     }
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x55f1310f, Offset: 0x1aa8
 // Size: 0xcc
 function function_30146e82(player) {
@@ -175,7 +177,7 @@ function function_30146e82(player) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1efdda6, Offset: 0x1b80
 // Size: 0x3c
 function pick_boost_number() {
@@ -184,7 +186,7 @@ function pick_boost_number() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfaa37321, Offset: 0x1bc8
 // Size: 0x25e
 function on_joined_team(params) {
@@ -216,7 +218,7 @@ function on_joined_team(params) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa97da865, Offset: 0x1e30
 // Size: 0x68
 function set_blops_dialog() {
@@ -228,7 +230,7 @@ function set_blops_dialog() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1098d8bd, Offset: 0x1ea0
 // Size: 0x68
 function set_cdp_dialog() {
@@ -240,7 +242,7 @@ function set_cdp_dialog() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x50b242f4, Offset: 0x1f10
 // Size: 0x1a4
 function on_player_spawned() {
@@ -271,7 +273,7 @@ function on_player_spawned() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd9bcfa84, Offset: 0x20c0
 // Size: 0x86
 function function_58c93260(player) {
@@ -290,7 +292,7 @@ function function_58c93260(player) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6aab3dfa, Offset: 0x2150
 // Size: 0x398
 function function_af2bf286(player) {
@@ -342,7 +344,7 @@ function function_af2bf286(player) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd4c054e9, Offset: 0x24f0
 // Size: 0x366
 function function_44b5e397() {
@@ -407,7 +409,7 @@ function function_44b5e397() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8145ad4f, Offset: 0x2860
 // Size: 0x80
 function dialog_chance(chancekey) {
@@ -421,7 +423,7 @@ function dialog_chance(chancekey) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x92389948, Offset: 0x28e8
 // Size: 0x86
 function mpdialog_value(mpdialogkey, defaultvalue) {
@@ -440,7 +442,7 @@ function mpdialog_value(mpdialogkey, defaultvalue) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb79fe15d, Offset: 0x2978
 // Size: 0x336
 function pain_vox(meansofdeath, weapon) {
@@ -507,7 +509,7 @@ function pain_vox(meansofdeath, weapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc418b2bf, Offset: 0x2cb8
 // Size: 0x9c
 function function_78c16252() {
@@ -526,7 +528,7 @@ function function_78c16252() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xfb7136af, Offset: 0x2d60
 // Size: 0x4c
 function on_player_suicide_or_team_kill(player, type) {
@@ -539,7 +541,7 @@ function on_player_suicide_or_team_kill(player, type) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4d751de8, Offset: 0x2db8
 // Size: 0x3a
 function on_player_near_explodable(object, type) {
@@ -548,7 +550,7 @@ function on_player_near_explodable(object, type) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x727e57a4, Offset: 0x2e00
 // Size: 0x2ec
 function function_551980b7(dialogname) {
@@ -616,7 +618,7 @@ function function_551980b7(dialogname) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53d87648, Offset: 0x30f8
 // Size: 0x3a6
 function function_7139078d() {
@@ -667,7 +669,7 @@ function function_7139078d() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xfe634efd, Offset: 0x34a8
 // Size: 0x6fa
 function function_bd715920(var_28b40381, attacker, eventorigin, eventobject, timedelay) {
@@ -728,7 +730,9 @@ function function_bd715920(var_28b40381, attacker, eventorigin, eventobject, tim
             attacker function_95e44f78(var_28b40381, timedelay);
             return;
         }
-    } else if (isdefined(eventorigin)) {
+        return;
+    }
+    if (isdefined(eventorigin)) {
         players = self getenemies();
         allyradius = mpdialog_value("enemyContactAllyRadius", 0);
         enemydistance = mpdialog_value("enemyContactDistance", 0);
@@ -740,35 +744,35 @@ function function_bd715920(var_28b40381, attacker, eventorigin, eventobject, tim
                 continue;
             }
             if (isdefined(var_4e424b8b) ? var_4e424b8b : 0) {
-                jumpcmp(distancesquared(eventorigin, player.origin) > allyradius * allyradius) LOC_000005c2;
-                if (isdefined(var_494ab587) ? var_494ab587 : 0) {
-                    relativepos = vectornormalize(player.origin - eventorigin);
-                    dir = anglestoforward(self getplayerangles());
-                    dotproduct = vectordot(relativepos, dir);
-                    if (dotproduct > 0) {
+                if (distancesquared(eventorigin, player.origin) < allyradius * allyradius) {
+                    if (isdefined(var_494ab587) ? var_494ab587 : 0) {
+                        relativepos = vectornormalize(player.origin - eventorigin);
+                        dir = anglestoforward(self getplayerangles());
+                        dotproduct = vectordot(relativepos, dir);
+                        if (dotproduct > 0) {
+                            continue;
+                        }
+                    } else {
                         continue;
                     }
-                    goto LOC_000005c2;
                 }
-            } else {
-            LOC_000005c2:
-                if (distancesquared(eventorigin, player.origin) > enemydistance * enemydistance) {
-                    continue;
-                }
-                eyepoint = player geteye();
-                relativepos = vectornormalize(eventorigin - eyepoint);
-                dir = anglestoforward(player getplayerangles());
-                dotproduct = vectordot(relativepos, dir);
-                if (dotproduct > 0) {
-                    if (sighttracepassed(eventorigin, eyepoint, 1, player, eventobject)) {
-                        if (isdefined(var_2f741f8e) ? var_2f741f8e : 0) {
-                            eventobject.var_87b1ba00 = 1;
-                        } else {
-                            self.var_87b1ba00 = 1;
-                        }
-                        player function_95e44f78(var_28b40381, timedelay);
-                        return;
+            }
+            if (distancesquared(eventorigin, player.origin) > enemydistance * enemydistance) {
+                continue;
+            }
+            eyepoint = player geteye();
+            relativepos = vectornormalize(eventorigin - eyepoint);
+            dir = anglestoforward(player getplayerangles());
+            dotproduct = vectordot(relativepos, dir);
+            if (dotproduct > 0) {
+                if (sighttracepassed(eventorigin, eyepoint, 1, player, eventobject)) {
+                    if (isdefined(var_2f741f8e) ? var_2f741f8e : 0) {
+                        eventobject.var_87b1ba00 = 1;
+                    } else {
+                        self.var_87b1ba00 = 1;
                     }
+                    player function_95e44f78(var_28b40381, timedelay);
+                    return;
                 }
             }
         }
@@ -776,7 +780,7 @@ function function_bd715920(var_28b40381, attacker, eventorigin, eventobject, tim
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5a203e53, Offset: 0x3bb0
 // Size: 0x4a4
 function private function_95e44f78(weapon, timedelay) {
@@ -876,7 +880,7 @@ function private function_95e44f78(weapon, timedelay) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xea7d96b1, Offset: 0x4060
 // Size: 0x52e
 function enemy_threat() {
@@ -908,12 +912,16 @@ function enemy_threat() {
                         self play_killstreak_threat(traceresult[#"entity"].killstreaktype);
                         traceresult[#"entity"].var_9ee835dc = 1;
                         self.enemythreattime = gettime();
-                    } else if (isdefined(playerweapon) && (isplayer(traceresult[#"entity"]) || isdefined(traceresult[#"entity"].owner))) {
+                        continue;
+                    }
+                    if (isdefined(playerweapon) && (isplayer(traceresult[#"entity"]) || isdefined(traceresult[#"entity"].owner))) {
                         var_24d3b6ca = isplayer(traceresult[#"entity"]) ? traceresult[#"entity"] : traceresult[#"entity"].owner;
                         var_24d3b6ca function_bd715920(playerweapon, self, traceresult[#"entity"].origin, traceresult[#"entity"]);
                         traceresult[#"entity"].var_9ee835dc = 1;
                         self.enemythreattime = gettime();
-                    } else if (dialog_chance("enemyContactChance")) {
+                        continue;
+                    }
+                    if (dialog_chance("enemyContactChance")) {
                         if (dialog_chance("enemyHeroContactChance")) {
                             self function_551980b7(traceresult[#"entity"] getmpdialogname());
                         } else {
@@ -929,7 +937,7 @@ function enemy_threat() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x91d9224d, Offset: 0x4598
 // Size: 0x2e6
 function killed_by_sniper(sniper) {
@@ -969,7 +977,7 @@ function killed_by_sniper(sniper) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x678aed65, Offset: 0x4888
 // Size: 0x1c2
 function function_d804d2f0(speakingplayer, player, allyradiussq) {
@@ -1003,7 +1011,7 @@ function function_db89c38f(speakingplayer, allyradiussq) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x61b61c, Offset: 0x4b60
 // Size: 0x994
 function function_e6457410(attacker, victim, weapon, inflictor) {
@@ -1120,7 +1128,7 @@ function function_e6457410(attacker, victim, weapon, inflictor) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xfbb5a158, Offset: 0x5500
 // Size: 0x28c
 function player_killed(attacker, killstreaktype, einflictor, weapon, mod) {
@@ -1151,7 +1159,7 @@ function player_killed(attacker, killstreaktype, einflictor, weapon, mod) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x4d33bad4, Offset: 0x5798
 // Size: 0x2fe
 function function_7c107ed4(attacker, weapon, victim, inflictor) {
@@ -1212,7 +1220,7 @@ function function_7c107ed4(attacker, weapon, victim, inflictor) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xad7f8845, Offset: 0x5aa0
 // Size: 0x23c
 function function_a43a3519(waittime, gadgetweapon) {
@@ -1254,7 +1262,7 @@ function function_a43a3519(waittime, gadgetweapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1d468f6, Offset: 0x5ce8
 // Size: 0x3ec
 function function_f5c48bfa(attacker, owner, gadgetweapon, attackerweapon) {
@@ -1331,7 +1339,7 @@ function function_f5c48bfa(attacker, owner, gadgetweapon, attackerweapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x74a07e3d, Offset: 0x60e0
 // Size: 0x4c4
 function say_kill_battle_chatter(attacker, weapon, victim, inflictor, meansofdeath) {
@@ -1378,13 +1386,12 @@ function say_kill_battle_chatter(attacker, weapon, victim, inflictor, meansofdea
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe1863ed2, Offset: 0x65b0
 // Size: 0x3f8
 function grenade_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
-LOC_00000078:
     while (1) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
@@ -1405,16 +1412,15 @@ LOC_00000078:
                     continue;
                 }
                 enemies = self getenemiesinradius(grenade.origin, 250);
-                jumpiffalse(isarray(enemies) && enemies.size > 0) LOC_00000232;
-                foreach (enemy in enemies) {
-                    if (!isplayer(enemy) || enemy hasperk(#"specialty_quieter")) {
-                        continue;
+                if (isarray(enemies) && enemies.size > 0) {
+                    foreach (enemy in enemies) {
+                        if (!isplayer(enemy) || enemy hasperk(#"specialty_quieter")) {
+                            continue;
+                        }
+                        self function_bd715920(weapon, enemy, grenade.origin, grenade);
                     }
-                    self function_bd715920(weapon, enemy, grenade.origin, grenade);
-                    continue;
                 }
             default:
-            LOC_00000232:
                 continue;
             }
         }
@@ -1430,7 +1436,7 @@ LOC_00000078:
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x86de8314, Offset: 0x69b0
 // Size: 0x1c8
 function missile_tracking() {
@@ -1453,7 +1459,7 @@ function missile_tracking() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xdcb21221, Offset: 0x6b80
 // Size: 0x192
 function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
@@ -1487,7 +1493,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x700b9c6e, Offset: 0x6d20
 // Size: 0x1f0
 function sticky_grenade_tracking() {
@@ -1548,15 +1554,15 @@ function heavy_weapon_success_reaction() {
         }
         distsq = distancesquared(self.origin, player.origin);
         if (distsq > allyradiussq) {
-            break;
+            return;
         }
         player play_dialog("heroWeaponSuccessReaction", 2);
-        break;
+        return;
     }
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x319334eb, Offset: 0x72b0
 // Size: 0x324
 function play_promotion_reaction() {
@@ -1605,7 +1611,7 @@ function gametype_specific_battle_chatter(event, team) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb2b82c92, Offset: 0x7628
 // Size: 0x164
 function play_death_vox(body, attacker, weapon, meansofdeath) {
@@ -1617,17 +1623,19 @@ function play_death_vox(body, attacker, weapon, meansofdeath) {
             entitynumber = self getentitynumber();
             body function_661a6cc1(var_27e6026e, entitynumber);
         }
-    } else if (isdefined(dialogkey)) {
+        return;
+    }
+    if (isdefined(dialogkey)) {
         if (body haspart("J_Head")) {
             body playsoundontag(dialogkey, "J_Head");
-        } else {
-            body playsoundontag(dialogkey, "tag_origin");
+            return;
         }
+        body playsoundontag(dialogkey, "tag_origin");
     }
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1bc4e4b7, Offset: 0x7798
 // Size: 0xda
 function function_deea4cc2(meansofdeath) {
@@ -1643,7 +1651,7 @@ function function_deea4cc2(meansofdeath) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbb82e0ea, Offset: 0x7880
 // Size: 0x14e
 function function_5d15920e(dialogkey, playerbundle) {
@@ -1684,7 +1692,7 @@ function function_5d15920e(dialogkey, playerbundle) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6614e6d3, Offset: 0x79d8
 // Size: 0x3c6
 function get_death_vox(weapon, meansofdeath) {
@@ -1721,11 +1729,10 @@ function get_death_vox(weapon, meansofdeath) {
         case #"mod_trigger_hurt":
             if (self getvelocity()[2] < -100) {
                 return playerbundle.var_1dfcabbd;
-                goto LOC_0000021e;
+            } else {
+                return playerbundle.exertdeath;
             }
-            return playerbundle.exertdeath;
         case #"mod_drown":
-        LOC_0000021e:
             return playerbundle.exertdeathdrowned;
         case #"mod_dot":
             if (weapon == getweapon(#"gadget_radiation_field")) {
@@ -1750,14 +1757,13 @@ function get_death_vox(weapon, meansofdeath) {
             return playerbundle.var_53f25688;
         case #"shock_rifle":
             return playerbundle.exertdeathelectrocuted;
-            break;
         }
     }
     return playerbundle.exertdeath;
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x367602d5, Offset: 0x7da8
 // Size: 0x154
 function function_9a20c887(var_27347352) {
@@ -1778,7 +1784,7 @@ function function_9a20c887(var_27347352) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa051d68f, Offset: 0x7f08
 // Size: 0xbc
 function play_killstreak_threat(killstreaktype) {
@@ -1792,7 +1798,7 @@ function play_killstreak_threat(killstreaktype) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x64cdb76f, Offset: 0x7fd0
 // Size: 0xe4
 function function_dd6a6012(killstreaktype, weapon) {
@@ -1806,7 +1812,7 @@ function function_dd6a6012(killstreaktype, weapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x22095fca, Offset: 0x80c0
 // Size: 0xac
 function wait_play_dialog(waittime, dialogkey, dialogflags, dialogbuffer, enemy, endnotify) {
@@ -1822,7 +1828,7 @@ function wait_play_dialog(waittime, dialogkey, dialogflags, dialogbuffer, enemy,
 }
 
 // Namespace battlechatter/battlechatter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6f130c71, Offset: 0x8178
 // Size: 0x1ec
 function function_f57e565f(dialogkey, entity, waittime) {
@@ -1845,7 +1851,7 @@ function function_f57e565f(dialogkey, entity, waittime) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcbf26f14, Offset: 0x8370
 // Size: 0x4c
 function function_1339f3f3(tag = "J_Head") {
@@ -1853,7 +1859,7 @@ function function_1339f3f3(tag = "J_Head") {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xeab3ec8e, Offset: 0x83c8
 // Size: 0x34c
 function play_dialog(dialogkey, dialogflags, dialogbuffer, enemy) {
@@ -1919,7 +1925,7 @@ function play_dialog(dialogkey, dialogflags, dialogbuffer, enemy) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x10df2601, Offset: 0x8720
 // Size: 0xac
 function function_5896274(waittime, dialogalias, dialogflags, dialogbuffer, enemy, endnotify) {
@@ -1935,7 +1941,7 @@ function function_5896274(waittime, dialogalias, dialogflags, dialogbuffer, enem
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x7a430ab7, Offset: 0x87d8
 // Size: 0x2ec
 function function_a48c33ff(dialogalias, dialogflags, dialogbuffer, enemy) {
@@ -1989,7 +1995,7 @@ function function_a48c33ff(dialogalias, dialogflags, dialogbuffer, enemy) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x51dfdcba, Offset: 0x8ad0
 // Size: 0x9e
 function wait_dialog_buffer(dialogbuffer) {
@@ -2005,7 +2011,7 @@ function wait_dialog_buffer(dialogbuffer) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa1f2edb4, Offset: 0x8b78
 // Size: 0x4e
 function stop_dialog() {
@@ -2025,7 +2031,7 @@ function wait_playback_time(soundalias) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc9eb86c6, Offset: 0x8be8
 // Size: 0x112
 function get_player_dialog_alias(dialogkey, meansofdeath) {
@@ -2047,18 +2053,16 @@ function get_player_dialog_alias(dialogkey, meansofdeath) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x1118ca7e, Offset: 0x8d08
 // Size: 0xf8
 function count_keys(&keycounts, bundle, dialogkey) {
     i = 0;
     field = dialogkey + i;
-    fieldvalue = bundle.(field);
-    while (isdefined(fieldvalue)) {
+    for (fieldvalue = bundle.(field); isdefined(fieldvalue); fieldvalue = bundle.(field)) {
         aliasarray[i] = fieldvalue;
         i++;
         field = dialogkey + i;
-        fieldvalue = bundle.(field);
     }
     if (!isdefined(keycounts[bundle.name])) {
         keycounts[bundle.name] = [];
@@ -2067,7 +2071,7 @@ function count_keys(&keycounts, bundle, dialogkey) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30d8e844, Offset: 0x8e08
 // Size: 0xbc
 function get_random_key(dialogkey) {
@@ -2082,7 +2086,7 @@ function get_random_key(dialogkey) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7c8d5ac6, Offset: 0x8ed0
 // Size: 0x92c
 function play_gadget_ready(weapon, userflip = 0) {
@@ -2252,7 +2256,7 @@ function play_gadget_ready(weapon, userflip = 0) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6f2762e2, Offset: 0x9808
 // Size: 0x17c
 function function_1d4b0ec0(dogstate, dog) {
@@ -2288,7 +2292,7 @@ function function_1d4b0ec0(dogstate, dog) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x28d7d433, Offset: 0x9990
 // Size: 0x14f4
 function function_e3ebbf87(var_aa988d26, var_c1132df6) {
@@ -2729,7 +2733,7 @@ function function_e3ebbf87(var_aa988d26, var_c1132df6) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x643ca0dc, Offset: 0xae90
 // Size: 0x124
 function function_fff18afc(dialogkey, var_4d5833c) {
@@ -2750,7 +2754,7 @@ function function_fff18afc(dialogkey, var_4d5833c) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1c1b41fd, Offset: 0xafc0
 // Size: 0x254
 function function_cad61ec(weapon) {
@@ -2797,7 +2801,7 @@ function function_cad61ec(weapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c416a6, Offset: 0xb220
 // Size: 0x2d4
 function function_916b4c72(weapon) {
@@ -2845,7 +2849,7 @@ function function_916b4c72(weapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7e281008, Offset: 0xb500
 // Size: 0xf2
 function function_94b5718c(entity) {
@@ -2863,7 +2867,7 @@ function function_94b5718c(entity) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf3a33169, Offset: 0xb600
 // Size: 0x804
 function play_gadget_activate(weapon) {
@@ -3022,7 +3026,7 @@ function play_gadget_activate(weapon) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xde8e5f8b, Offset: 0xbe10
 // Size: 0x84
 function function_bf68a5ab(var_4d5833c) {
@@ -3034,7 +3038,7 @@ function function_bf68a5ab(var_4d5833c) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0xcbc23040, Offset: 0xbea0
 // Size: 0x298
 function private function_253c2ba4(var_cf210c5b, dialogbuffer) {
@@ -3064,7 +3068,7 @@ function private function_253c2ba4(var_cf210c5b, dialogbuffer) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x82c0039e, Offset: 0xc140
 // Size: 0x28c
 function play_gadget_success(weapon, waitkey, victim, var_5d738b56) {
@@ -3113,7 +3117,7 @@ function play_gadget_success(weapon, waitkey, victim, var_5d738b56) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6d645e06, Offset: 0xc3d8
 // Size: 0x5c6
 function function_4fb91bc7(weapon, var_df17fa82, var_53c10ed8) {
@@ -3219,19 +3223,19 @@ function function_4fb91bc7(weapon, var_df17fa82, var_53c10ed8) {
     }
     if ((isdefined(self.var_d6422943) ? self.var_d6422943 : 0) > gettime()) {
         self thread killstreaks::play_taacom_dialog(taacomdialog);
-    } else {
-        if (var_b3fe42a9 === 1) {
-            if (var_53c10ed8 === 1) {
-                self thread killstreaks::play_taacom_dialog(taacomdialog, undefined, undefined, 5, var_df17fa82, weapon);
-            } else {
-                self thread killstreaks::play_taacom_dialog(taacomdialog, undefined, undefined, 3, var_df17fa82, weapon);
-            }
-        } else {
-            self thread killstreaks::play_taacom_dialog(taacomdialog, undefined, undefined, 4, var_df17fa82);
-        }
-        var_fc9a842 = mpdialog_value("taacomHackedReplyCooldownSec", 0);
-        self.var_d6422943 = gettime() + int(var_fc9a842 * 1000);
+        return;
     }
+    if (var_b3fe42a9 === 1) {
+        if (var_53c10ed8 === 1) {
+            self thread killstreaks::play_taacom_dialog(taacomdialog, undefined, undefined, 5, var_df17fa82, weapon);
+        } else {
+            self thread killstreaks::play_taacom_dialog(taacomdialog, undefined, undefined, 3, var_df17fa82, weapon);
+        }
+    } else {
+        self thread killstreaks::play_taacom_dialog(taacomdialog, undefined, undefined, 4, var_df17fa82);
+    }
+    var_fc9a842 = mpdialog_value("taacomHackedReplyCooldownSec", 0);
+    self.var_d6422943 = gettime() + int(var_fc9a842 * 1000);
 }
 
 // Namespace battlechatter/battlechatter
@@ -3244,7 +3248,7 @@ function play_throw_hatchet() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf6cb22c1, Offset: 0xca00
 // Size: 0xd4
 function function_59f9cdab() {
@@ -3265,7 +3269,7 @@ function function_59f9cdab() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6db26a2c, Offset: 0xcae0
 // Size: 0x192
 function get_enemy_players() {
@@ -3290,7 +3294,7 @@ function get_enemy_players() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7a5b2ca3, Offset: 0xcc80
 // Size: 0xd0
 function get_friendly_players() {
@@ -3306,7 +3310,7 @@ function get_friendly_players() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa62e4235, Offset: 0xcd58
 // Size: 0x100
 function can_play_dialog(teamonly) {
@@ -3320,7 +3324,7 @@ function can_play_dialog(teamonly) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa887944b, Offset: 0xce60
 // Size: 0xe6
 function get_closest_player_enemy(origin = self.origin, teamonly) {
@@ -3336,7 +3340,7 @@ function get_closest_player_enemy(origin = self.origin, teamonly) {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xee30dc9b, Offset: 0xcf50
 // Size: 0xf2
 function get_closest_player_ally(teamonly) {
@@ -3383,7 +3387,7 @@ function check_boost_start_conversation() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xcceb773b, Offset: 0xd210
 // Size: 0x72
 function pick_boost_players(player1, player2) {
@@ -3444,7 +3448,7 @@ function function_72b65730() {
 }
 
 // Namespace battlechatter/battlechatter
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x47fa3b06, Offset: 0xd548
 // Size: 0x54
 function function_e44c3a3c(weapon, attacker, eventorigin, eventobject, timedelay) {
@@ -3607,7 +3611,6 @@ function response_key() {
             return "<unknown string>";
         case #"nomad":
             return "<unknown string>";
-            break;
         }
         return "thiefRevealDelay";
     #/
@@ -3626,7 +3629,7 @@ function play_conv_self_other() {
         foreach (player in players) {
             if (player != self && isalive(player)) {
                 player play_test_dialog("<unknown string>" + self response_key() + num);
-                break;
+                return;
             }
         }
     #/
@@ -3670,7 +3673,7 @@ function play_conv_other_other() {
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
                 player play_test_dialog("<unknown string>" + firstplayer response_key() + num);
-                break;
+                return;
             }
         }
     #/

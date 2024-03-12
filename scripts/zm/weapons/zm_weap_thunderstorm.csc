@@ -61,7 +61,9 @@ function function_ab086ad8(localclientnum, oldval, newval, bnewent, binitialsnap
         } else if (isdefined(self gettagorigin("j_head"))) {
             self.var_1550c80f = util::playfxontag(localclientnum, level._effect[#"hemera_proj_death_head"], self, "j_head");
         }
-    } else if (isdefined(self) && isdefined(self.var_1550c80f)) {
+        return;
+    }
+    if (isdefined(self) && isdefined(self.var_1550c80f)) {
         deletefx(localclientnum, self.var_1550c80f);
         self.var_1550c80f = undefined;
     }
@@ -86,10 +88,10 @@ function function_83e58cf4(localclientnum, oldval, newval, bnewent, binitialsnap
             stopfx(localclientnum, self.var_d00cf6ff);
             self.var_d00cf6ff = undefined;
         }
-        break;
+        return;
     case 1:
         self.var_d00cf6ff = playfx(localclientnum, level._effect[#"electric_storm"], self.origin + vectorscale((0, 0, 1), 180), self.angles);
-        break;
+        return;
     }
 }
 
@@ -109,7 +111,9 @@ function function_6e837718(localclientnum, oldval, newval, bnewent, binitialsnap
     level.var_667af8b4[newval] = self;
     if (isdefined(self gettagorigin("j_h_chest"))) {
         playfx(localclientnum, level._effect[#"pegasus_teleport"], self gettagorigin("j_h_chest"), self gettagangles("j_h_chest"));
-    } else if (newval == 5) {
+        return;
+    }
+    if (newval == 5) {
         playfx(localclientnum, level._effect[#"pegasus_teleport"], self.origin);
     }
 }

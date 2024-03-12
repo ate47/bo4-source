@@ -48,7 +48,7 @@ function init_shared() {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4ed25fc, Offset: 0x970
 // Size: 0xa6
 function on_player_spawned(localclientnum) {
@@ -75,7 +75,7 @@ function setupanimtree() {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xb08ccba3, Offset: 0xa78
 // Size: 0x15c
 function active_camo_changed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -95,7 +95,7 @@ function active_camo_changed(localclientnum, oldval, newval, bnewent, binitialsn
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xeedecbb1, Offset: 0xbe0
 // Size: 0x2b4
 function doreveal(local_client_num, direction) {
@@ -139,7 +139,7 @@ function doreveal(local_client_num, direction) {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd1c52fd0, Offset: 0xea0
 // Size: 0x50
 function heli_comlink_bootup_anim(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -147,7 +147,7 @@ function heli_comlink_bootup_anim(localclientnum, oldval, newval, bnewent, binit
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xcd1d8bca, Offset: 0xef8
 // Size: 0x7c
 function warnmissilelocking(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -158,7 +158,7 @@ function warnmissilelocking(localclientnum, oldval, newval, bnewent, binitialsna
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xfc2eba99, Offset: 0xf80
 // Size: 0x7c
 function warnmissilelocked(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -169,7 +169,7 @@ function warnmissilelocked(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xd76903b0, Offset: 0x1008
 // Size: 0x7c
 function warnmissilefired(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -180,7 +180,7 @@ function warnmissilefired(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf83ea8db, Offset: 0x1090
 // Size: 0x156
 function heli_deletefx(localclientnum) {
@@ -211,7 +211,7 @@ function heli_deletefx(localclientnum) {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xee4b827f, Offset: 0x11f0
 // Size: 0x36a
 function startfx(localclientnum) {
@@ -266,7 +266,7 @@ function startfx(localclientnum) {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1690069f, Offset: 0x1568
 // Size: 0xe2
 function startfx_loop(localclientnum) {
@@ -296,7 +296,7 @@ function trail_fx(localclientnum, trail_fx, trail_tag) {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9fba2765, Offset: 0x16b0
 // Size: 0x54
 function heli_comlink_lights_on_after_wait(localclientnum, wait_time) {
@@ -307,7 +307,7 @@ function heli_comlink_lights_on_after_wait(localclientnum, wait_time) {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7376df39, Offset: 0x1710
 // Size: 0x1ee
 function heli_comlink_lights_on(localclientnum) {
@@ -326,7 +326,7 @@ function heli_comlink_lights_on(localclientnum) {
 }
 
 // Namespace helicopter/helicopter_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9ad2455b, Offset: 0x1908
 // Size: 0x96
 function heli_comlink_lights_off(localclientnum) {

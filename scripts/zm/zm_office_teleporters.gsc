@@ -132,25 +132,45 @@ function function_e1bfdf45() {
     for (i = 0; i < pos.size; i++) {
         if (pos[i].script_string == "bottom_floor_5") {
             level.portal_power = pos[i];
-        } else if (pos[i].script_string == "top_floor_1") {
+            continue;
+        }
+        if (pos[i].script_string == "top_floor_1") {
             level.portal_top[0] = pos[i];
-        } else if (pos[i].script_string == "top_floor_2") {
+            continue;
+        }
+        if (pos[i].script_string == "top_floor_2") {
             level.portal_top[1] = pos[i];
-        } else if (pos[i].script_string == "mid_floor_1") {
+            continue;
+        }
+        if (pos[i].script_string == "mid_floor_1") {
             level.portal_mid[0] = pos[i];
-        } else if (pos[i].script_string == "server_room") {
+            continue;
+        }
+        if (pos[i].script_string == "server_room") {
             level.portal_mid[1] = pos[i];
-        } else if (pos[i].script_string == "mid_floor_2") {
+            continue;
+        }
+        if (pos[i].script_string == "mid_floor_2") {
             level.portal_pack = pos[i];
-        } else if (pos[i].script_string == "bottom_floor_1") {
+            continue;
+        }
+        if (pos[i].script_string == "bottom_floor_1") {
             level.portal_bottom[0] = pos[i];
-        } else if (pos[i].script_string == "bottom_floor_2") {
+            continue;
+        }
+        if (pos[i].script_string == "bottom_floor_2") {
             level.portal_bottom[1] = pos[i];
-        } else if (pos[i].script_string == "bottom_floor_3") {
+            continue;
+        }
+        if (pos[i].script_string == "bottom_floor_3") {
             level.portal_bottom[2] = pos[i];
-        } else if (pos[i].script_string == "bottom_floor_4") {
+            continue;
+        }
+        if (pos[i].script_string == "bottom_floor_4") {
             level.portal_bottom[3] = pos[i];
-        } else if (pos[i].script_string == "bottom_floor_4") {
+            continue;
+        }
+        if (pos[i].script_string == "bottom_floor_4") {
             level.portal_bottom[3] = pos[i];
         }
     }
@@ -214,7 +234,8 @@ function player_teleporting() {
         }
         if (player_used == 1) {
             continue;
-        } else if (zm_utility::is_player_valid(user, 0, 1)) {
+        }
+        if (zm_utility::is_player_valid(user, 0, 1)) {
             self thread teleport_player(user);
         }
     }
@@ -292,10 +313,9 @@ function teleport_player(user) {
     if (level flag::get("dog_round")) {
         util::setclientsysstate("levelNotify", "vis4", user);
         return;
-    } else {
-        user.floor = zm_office_floors::function_35babccd(user);
-        util::setclientsysstate("levelNotify", "vis" + user.floor, user);
     }
+    user.floor = zm_office_floors::function_35babccd(user);
+    util::setclientsysstate("levelNotify", "vis" + user.floor, user);
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -359,9 +379,9 @@ function function_cb7c6fc7(e_user, b_show = 1) {
     }
     if (b_show) {
         e_user clientfield::set_to_player(self.script_noteworthy, 1);
-    } else {
-        e_user clientfield::set_to_player(self.script_noteworthy, 0);
+        return;
     }
+    e_user clientfield::set_to_player(self.script_noteworthy, 0);
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -437,9 +457,8 @@ function find_portal_destination(var_210b4680) {
     }
     if (var_98ceafca.size > 0) {
         return array::random(var_98ceafca);
-    } else {
-        return self;
     }
+    return self;
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -687,9 +706,9 @@ function function_1f034d46(destination) {
     self.var_b940d6ea = destination;
     if (isdefined(self.var_b940d6ea)) {
         self.var_f4bf0819 = zm_office_floors::function_cd2f24b2(zm_zonemgr::get_zone_from_position(self.var_b940d6ea, 1));
-    } else {
-        self.var_f4bf0819 = undefined;
+        return;
     }
+    self.var_f4bf0819 = undefined;
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -766,20 +785,20 @@ function portal_init() {
     case #"portal_conference_level1":
     case #"portal_offices_level1":
         self.n_floor = 1;
-        break;
+        return;
     case #"portal_war_room_server_room":
     case #"portal_panic_room":
     case #"portal_war_room":
     case #"portal_war_room_map":
         self.n_floor = 2;
-        break;
+        return;
     case #"portal_labs_power_room":
     case #"portal_labs_hall2_west":
     case #"portal_labs_hall1_east":
     case #"portal_labs_hall2_east":
     case #"portal_labs_hall1_west":
         self.n_floor = 3;
-        break;
+        return;
     }
 }
 
@@ -875,23 +894,23 @@ function function_79e8b4c6(var_9dff0a2b) {
     switch (self.n_dest) {
     case 0:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 1);
-        break;
+        return;
     case 1:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 4);
-        break;
+        return;
     case 2:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 5);
-        break;
+        return;
     case 4:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 1);
-        break;
+        return;
     case 3:
     case 5:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 2);
-        break;
+        return;
     case 6:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 3);
-        break;
+        return;
     }
 }
 
@@ -963,9 +982,9 @@ function function_c71dfad1(b_enable = 1) {
             } else {
                 s_portal function_79e8b4c6(1);
             }
-        } else {
-            s_portal function_98cd139();
+            continue;
         }
+        s_portal function_98cd139();
     }
 }
 
@@ -998,10 +1017,10 @@ function enable_cage_portal(b_enable = 1) {
         function_60abbae4(1);
         level.var_a23b5c5 playsound(#"hash_123af2d6dc30025a");
         level.var_a23b5c5 movez(150, 1);
-    } else {
-        zm_unitrigger::unregister_unitrigger(level.s_cage_portal.s_unitrigger);
-        function_60abbae4(0);
+        return;
     }
+    zm_unitrigger::unregister_unitrigger(level.s_cage_portal.s_unitrigger);
+    function_60abbae4(0);
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters
@@ -1027,9 +1046,9 @@ function function_a6bb56f6() {
             foreach (e_player in getplayers()) {
                 s_portal function_cb7c6fc7(e_player, 0);
             }
-        } else {
-            s_portal function_cb7c6fc7(e_player, 1);
+            continue;
         }
+        s_portal function_cb7c6fc7(e_player, 1);
     }
 }
 
@@ -1053,9 +1072,9 @@ function function_cc9b97b0() {
 function function_60abbae4(b_enable) {
     if (b_enable) {
         level.s_cage_portal.var_a1cf77d2 clientfield::set("cage_portal_fx", 1);
-    } else {
-        level.s_cage_portal.var_a1cf77d2 clientfield::set("cage_portal_fx", 0);
+        return;
     }
+    level.s_cage_portal.var_a1cf77d2 clientfield::set("cage_portal_fx", 0);
 }
 
 // Namespace zm_office_teleporters/zm_office_teleporters

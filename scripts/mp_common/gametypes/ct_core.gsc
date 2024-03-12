@@ -86,8 +86,8 @@ function function_1dd43d36(spawn_weapon) {
     player setplayerrenderoptions(0);
     var_e6b5e0d7 = getdvar(#"hash_3fb2952874e511c2");
     hands_weapon = ct_utils::function_84adcd1f();
-    var_d0d43f5a = getdvar(#"hash_4b0035c0038e0762");
-    if (isdefined(var_d0d43f5a)) {
+    s_weaponprimary = getdvar(#"hash_4b0035c0038e0762");
+    if (isdefined(s_weaponprimary)) {
         attachments = [];
         for (i = 0; i < 6; i++) {
             if (!isdefined(attachments)) {
@@ -100,7 +100,7 @@ function function_1dd43d36(spawn_weapon) {
             }
         }
         arrayremovevalue(attachments, #"");
-        primary_weapon = getweapon(var_d0d43f5a, attachments);
+        primary_weapon = getweapon(s_weaponprimary, attachments);
         stashweapon = getdvarint(#"hash_48162cd174e3034d", 0) || isdefined(spawn_weapon);
         if (stashweapon) {
             if (!isdefined(player.var_de9764de)) {
@@ -340,7 +340,9 @@ function function_1e84c767() {
             player function_ea859fe2();
             function_588a84ce();
             thread globallogic::end_round(9);
-        } else if (str_state == #"tutorial_started" || str_state == #"tutorial_completed") {
+            return;
+        }
+        if (str_state == #"tutorial_started" || str_state == #"tutorial_completed") {
             player function_3b91934f(player function_76785843(), #"tutorial_completed");
             player function_ea859fe2();
             waitframe(1);
@@ -488,7 +490,9 @@ function function_9a022fbc(str_state) {
             [[ lui_menu ]]->set_endalpha(player, 1);
             [[ lui_menu ]]->set_fadeovertime(player, int(2000));
         }
-    } else if (isdefined(lui_menu)) {
+        return;
+    }
+    if (isdefined(lui_menu)) {
         [[ lui_menu ]]->close(player);
     }
 }

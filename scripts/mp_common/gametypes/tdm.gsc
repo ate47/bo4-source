@@ -140,7 +140,9 @@ function onscoreclosemusic() {
             if (score > topscore) {
                 runnerupscore = topscore;
                 topscore = score;
-            } else if (score > runnerupscore) {
+                continue;
+            }
+            if (score > runnerupscore) {
                 runnerupscore = score;
             }
         }

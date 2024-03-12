@@ -159,9 +159,9 @@ function private mine_watch(wpn_type) {
                 mine run_planted_callbacks(self);
                 self zm_stats::increment_client_stat(fired_weapon.name + "_planted");
                 self zm_stats::increment_player_stat(fired_weapon.name + "_planted");
-            } else {
-                mine thread wait_and_detonate();
+                continue;
             }
+            mine thread wait_and_detonate();
         }
     }
 }
@@ -442,10 +442,12 @@ function private placeable_mine_detonate(attacker, weapon, target) {
     }
     if (isdefined(attacker)) {
         self detonate(attacker);
-    } else if (isdefined(self.owner) && isplayer(self.owner)) {
-        self detonate(self.owner);
-    } else {
-        self detonate();
+        return;
     }
+    if (isdefined(self.owner) && isplayer(self.owner)) {
+        self detonate(self.owner);
+        return;
+    }
+    self detonate();
 }
 

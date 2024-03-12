@@ -217,7 +217,9 @@ function display_scene_menu(str_type, str_scene) {
                             println("<unknown string>" + toupper(str_type) + "<unknown string>" + var_72acc069 + "<unknown string>" + s_scenedef.name);
                             var_72acc069++;
                         }
-                    } else if (function_c0f30783(s_scenedef)) {
+                        continue;
+                    }
+                    if (function_c0f30783(s_scenedef)) {
                         array::add_sorted(names, s_scenedef.name, 0);
                     }
                 }
@@ -549,7 +551,7 @@ function debug_display() {
                     print3d(self.origin - vectorscale((0, 0, 1), 15), self.scriptbundlename, (0.8, 0.2, 0.8), 1, 0.3, debug_frames);
                 } else {
                     self.debug_display = 0;
-                    break;
+                    return;
                 }
                 wait(debug_time);
             }

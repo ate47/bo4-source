@@ -71,7 +71,7 @@ function private function_53627246() {
         }
         if (self.var_6a7521e3 == self.var_ff22cb62) {
             zm_trial_util::function_7d32b7d0(1);
-            break;
+            return;
         }
     }
 }

@@ -125,10 +125,8 @@ function private setup_lighthouse() {
 function function_dbad2f5a() {
     self endon(#"death", #"hash_2b53ed06a97eb26c");
     level.var_ab11c23d notify(#"hash_78fc5bbd712046b0");
-    vh_target = spawner::simple_spawn_single(getent("virgil", "targetname"));
-    while (!isdefined(vh_target)) {
+    for (vh_target = spawner::simple_spawn_single(getent("virgil", "targetname")); !isdefined(vh_target); vh_target = spawner::simple_spawn_single(getent("virgil", "targetname"))) {
         waitframe(1);
-        vh_target = spawner::simple_spawn_single(getent("virgil", "targetname"));
     }
     self.var_da138ae4 = getvehiclenode("trials_lighthouse_start", "targetname");
     vh_target.origin = self.var_da138ae4.origin;
@@ -178,10 +176,10 @@ function function_f223e16f(round_reset) {
         switch (level.var_98138d6b) {
         case 2:
             level thread zm_orange_pap::function_56db9cdc();
-            break;
+            return;
         case 3:
             level thread zm_orange_pap::function_56db9cdc();
-            break;
+            return;
         }
     }
 }
@@ -219,9 +217,8 @@ function function_91f0d131() {
     n_distance = distancesquared(level.var_ab11c23d.vh_target.origin, self.origin);
     if (n_distance < 30000) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_orange_trial_lighthouse_beam/zm_orange_trial_lighthouse_beam
@@ -233,8 +230,10 @@ function private function_33f0ddd3(s_event) {
         var_f2b6fe6e = 0;
         if (self.b_in_water === 1) {
             var_f2b6fe6e = 1;
-        } else if (!var_f2b6fe6e && !zm_loadout::function_2ff6913(s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            return;
+        }
+        if (!var_f2b6fe6e && !zm_loadout::function_2ff6913(s_event.weapon)) {
+            self lockweapon(s_event.weapon, 1, 1);
         }
     }
 }

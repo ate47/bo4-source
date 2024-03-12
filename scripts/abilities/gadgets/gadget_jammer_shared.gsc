@@ -157,7 +157,9 @@ function on_player_killed(params) {
     if (self.var_fe1ebada == params.eattacker) {
         scoreevents::processscoreevent(#"disruptor_kill", self.var_fe1ebada, undefined, level.var_578f7c6d.weapon);
         params.eattacker function_be7a08a8(level.var_578f7c6d.weapon, 1);
-    } else if (isdefined(self.var_fe1ebada.team) && isdefined(params.eattacker.team) && self.var_fe1ebada.team == params.eattacker.team) {
+        return;
+    }
+    if (isdefined(self.var_fe1ebada.team) && isdefined(params.eattacker.team) && self.var_fe1ebada.team == params.eattacker.team) {
         scoreevents::processscoreevent(#"disruptor_assist", self.var_fe1ebada, undefined, level.var_578f7c6d.weapon);
     }
 }
@@ -216,13 +218,15 @@ function private function_87c540c0(jammer, origin, attackingplayer) {
                 attackingplayer damagefeedback::update(undefined, undefined, "resistance", level.var_578f7c6d.weapon);
                 var_480b4b92 = 1;
             }
-        } else if (isplayer(entity)) {
+            continue;
+        }
+        if (isplayer(entity)) {
             thread function_b8c5ab9c(jammer, entity, attackingplayer);
-        } else {
-            var_decc08e9 = thread function_e27c41b4(jammer, entity, attackingplayer);
-            if (var_decc08e9 === 1) {
-                var_545dd758++;
-            }
+            continue;
+        }
+        var_decc08e9 = thread function_e27c41b4(jammer, entity, attackingplayer);
+        if (var_decc08e9 === 1) {
+            var_545dd758++;
         }
     }
     if (var_545dd758 >= 2) {

@@ -57,9 +57,9 @@ function function_5d6ee8e9(var_5ea5c94d) {
                 waitframe(1);
             }
         }
-    } else {
-        var_21569a93 delete();
+        return;
     }
+    var_21569a93 delete();
 }
 
 // Namespace namespace_35b7c648/namespace_35b7c648

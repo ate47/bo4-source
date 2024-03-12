@@ -259,9 +259,8 @@ function function_e44ef704(params) {
 function function_ac94df05(entity) {
     if (!getdvarint(#"survival_prototype", 0)) {
         return (entity.aistate === 3 && (entity.var_9bff71aa < 2 || gettime() - entity.var_7fde19e8 > 1000));
-    } else {
-        return (isdefined(entity.current_state) && entity.current_state.name === #"chase" && (entity.var_9bff71aa < 2 || gettime() - entity.var_7fde19e8 > 1000));
     }
+    return isdefined(entity.current_state) && entity.current_state.name === #"chase" && (entity.var_9bff71aa < 2 || gettime() - entity.var_7fde19e8 > 1000);
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
@@ -271,9 +270,8 @@ function function_ac94df05(entity) {
 function function_7d5cf0e4(entity) {
     if (!getdvarint(#"survival_prototype", 0)) {
         return (entity.aistate === 3);
-    } else {
-        return (isdefined(entity.current_state) && entity.current_state.name == #"chase");
     }
+    return isdefined(entity.current_state) && entity.current_state.name == #"chase";
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro
@@ -285,9 +283,9 @@ function function_c698f66b() {
         if (self.var_15aa1ae0 === 0) {
             if (getdvarint(#"recorder_enablerec", 0)) {
                 record3dtext("<unknown string>", self.origin, (1, 0.5, 0), "<unknown string>", self);
-            } else {
-                print3d(self.origin, "<unknown string>", (1, 0.5, 0), 1, 1);
+                return;
             }
+            print3d(self.origin, "<unknown string>", (1, 0.5, 0), 1, 1);
         }
     #/
 }

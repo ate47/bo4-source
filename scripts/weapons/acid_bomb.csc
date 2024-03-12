@@ -42,14 +42,12 @@ function fx_think(localclientnum) {
     self endon(#"death", #"light_disable");
     self util::waittill_dobj(localclientnum);
     var_18407835 = self.origin;
-    interval = 0.3;
-    for (;;) {
+    for (interval = 0.3; ; interval = math::clamp(interval / 1.2, 0.08, 0.3)) {
         self stop_light_fx(localclientnum);
         self start_light_fx(localclientnum);
         self fullscreen_fx(localclientnum);
         playsound(localclientnum, #"hash_2bb4a8b02a0d697", var_18407835);
         util::server_wait(localclientnum, interval, 0.01, "player_switch");
-        interval = math::clamp(interval / 1.2, 0.08, 0.3);
     }
 }
 

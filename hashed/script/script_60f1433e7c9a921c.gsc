@@ -77,8 +77,7 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
     path = undefined;
     longestpath = 0;
     if (queryresult.data.size > 0) {
-        index = 0;
-        while (index < queryresult.data.size) {
+        for (index = 0; index < queryresult.data.size; index = index + 16) {
             goalpoints = [];
             for (goalindex = index; goalindex - index < 16 && goalindex < queryresult.data.size; goalindex++) {
                 goalpoints[goalpoints.size] = queryresult.data[goalindex].origin;
@@ -90,7 +89,6 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
                     longestpath = pathsegment.pathdistance;
                 }
             }
-            index = index + 16;
         }
     }
     return path;
@@ -119,8 +117,8 @@ function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefine
         if (isdefined(claimed) && var_26b45a5e[i][#"claimed"] != claimed) {
             continue;
         }
-        var_9f855ac9 = getclosestpointonnavmesh(var_deb9ffcf.origin, 200);
-        if (isdefined(var_9f855ac9)) {
+        navpos = getclosestpointonnavmesh(var_deb9ffcf.origin, 200);
+        if (isdefined(navpos)) {
             pathable = 1;
             distance = 0;
             for (botindex = 0; botindex < bots.size; botindex++) {
@@ -131,17 +129,17 @@ function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefine
                 position = getclosestpointonnavmesh(bot.origin, 120, 1.2 * bot getpathfindingradius());
                 if (!isdefined(position)) {
                     pathable = 0;
-                } else {
-                    queryresult = positionquery_source_navigation(var_9f855ac9, 0, 120, 60, 16, bot, 16);
-                    if (queryresult.data.size > 0) {
-                        path = _calculatepositionquerypath(queryresult, position, bot);
-                        if (!isdefined(path)) {
-                            pathable = 0;
-                            break;
-                        }
-                        if (path.pathdistance > distance) {
-                            distance = path.pathdistance;
-                        }
+                    continue;
+                }
+                queryresult = positionquery_source_navigation(navpos, 0, 120, 60, 16, bot, 16);
+                if (queryresult.data.size > 0) {
+                    path = _calculatepositionquerypath(queryresult, position, bot);
+                    if (!isdefined(path)) {
+                        pathable = 0;
+                        break;
+                    }
+                    if (path.pathdistance > distance) {
+                        distance = path.pathdistance;
                     }
                 }
             }
@@ -779,7 +777,9 @@ function private function_edf25221(planner, constants) {
         if (pathabledomflag[#"distance"] < shortestpath) {
             shortestpath = pathabledomflags[i][#"distance"];
             var_fa2c1b88 = i;
-        } else if (pathabledomflag[#"distance"] > longestpath) {
+            continue;
+        }
+        if (pathabledomflag[#"distance"] > longestpath) {
             longestpath = pathabledomflags[i][#"distance"];
             var_67f36fed = i;
         }

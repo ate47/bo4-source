@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xafd5a732, Offset: 0x108
 // Size: 0x34
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa06bcf3a, Offset: 0x148
 // Size: 0xac
 function function_2613aeec(enabled) {
@@ -42,7 +42,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4db9f6ed, Offset: 0x200
 // Size: 0x13a
 function function_4f4cf89e() {
@@ -57,16 +57,18 @@ function function_4f4cf89e() {
     for (x = 1; x < var_daed388.size; x++) {
         if (isdefined(var_5901fe7f) && var_5901fe7f) {
             item_world::consume_item(var_daed388[x]);
-        } else if (distance2d(var_daed388[x].origin, var_8a9122c8.origin) < 500) {
-            item_world::consume_item(var_daed388[x]);
-        } else {
-            var_5901fe7f = 1;
+            continue;
         }
+        if (distance2d(var_daed388[x].origin, var_8a9122c8.origin) < 500) {
+            item_world::consume_item(var_daed388[x]);
+            continue;
+        }
+        var_5901fe7f = 1;
     }
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdada5109, Offset: 0x348
 // Size: 0x1c4
 function on_player_killed() {
@@ -106,7 +108,7 @@ function on_player_killed() {
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x91567650, Offset: 0x518
 // Size: 0xdc
 function function_1c4b5097(item) {
@@ -122,7 +124,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbfaaef94, Offset: 0x600
 // Size: 0x1e2
 function function_4ac25840(dead_team) {
@@ -146,7 +148,7 @@ function function_4ac25840(dead_team) {
 }
 
 // Namespace character_unlock_reznov/character_unlock_reznov
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x11e82b78, Offset: 0x7f0
 // Size: 0x80
 function private function_c816ea5b() {

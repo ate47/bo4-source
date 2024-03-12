@@ -43,12 +43,12 @@ function function_80adaab1(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self.lightfx = util::playfxontag(localclientnum, "light/fx8_light_spot_brutus_flicker", self, "tag_spotlight");
         playfx(localclientnum, "maps/zm_escape/fx8_alcatraz_brut_spawn", self.origin);
-    } else {
-        if (isdefined(self.lightfx)) {
-            stopfx(localclientnum, self.lightfx);
-        }
-        playfx(localclientnum, "maps/zm_escape/fx8_alcatraz_brut_spawn", self.origin);
+        return;
     }
+    if (isdefined(self.lightfx)) {
+        stopfx(localclientnum, self.lightfx);
+    }
+    playfx(localclientnum, "maps/zm_escape/fx8_alcatraz_brut_spawn", self.origin);
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus

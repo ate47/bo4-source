@@ -64,7 +64,9 @@ function __init__() {
 function function_c9df2670(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.n_fx = playfx(localclientnum, level._effect[#"hash_76d2a3efe5f10d90"], self.origin + vectorscale((0, 0, 1), 4), anglestoup(self.angles));
-    } else if (isdefined(self.n_fx)) {
+        return;
+    }
+    if (isdefined(self.n_fx)) {
         stopfx(localclientnum, self.n_fx);
         self.n_fx = undefined;
     }
@@ -249,7 +251,9 @@ function function_3b17ff6f(localclientnum, oldval, newval, bnewent, binitialsnap
             if (viewmodelhastag(localclientnum, "tag_flash")) {
                 self.fx_muzzle_flash = playviewmodelfx(localclientnum, level._effect[#"hash_4ce416875acfbfab"], "tag_flash");
             }
-        } else if (isdefined(self gettagorigin("tag_flash"))) {
+            return;
+        }
+        if (isdefined(self gettagorigin("tag_flash"))) {
             self.fx_muzzle_flash = util::playfxontag(localclientnum, level._effect[#"hash_4cdd0a875ac98c99"], self, "tag_flash");
         }
     }
@@ -270,16 +274,16 @@ function function_a083252d(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_309ccaa2cf6590f1");
             self.var_97807834 = self playloopsound(#"hash_23338cb2b8ef2117");
         }
-    } else {
-        if (isdefined(self.var_8dddfdd2)) {
-            stopfx(localclientnum, self.var_8dddfdd2);
-            self.var_8dddfdd2 = undefined;
-        }
-        if (isdefined(self.var_97807834)) {
-            self playsound(localclientnum, #"hash_73cf0fb013e9af90");
-            self stoploopsound(self.var_97807834);
-            self.var_97807834 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_8dddfdd2)) {
+        stopfx(localclientnum, self.var_8dddfdd2);
+        self.var_8dddfdd2 = undefined;
+    }
+    if (isdefined(self.var_97807834)) {
+        self playsound(localclientnum, #"hash_73cf0fb013e9af90");
+        self stoploopsound(self.var_97807834);
+        self.var_97807834 = undefined;
     }
 }
 

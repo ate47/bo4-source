@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace infection/infection
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xce12b6b1, Offset: 0x140
 // Size: 0xda
 function private __init__() {
@@ -30,7 +30,7 @@ function private __init__() {
 }
 
 // Namespace infection/infection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xef6275d9, Offset: 0x228
 // Size: 0x44
 function on_localclient_connect(localclientnum) {
@@ -40,7 +40,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace infection/infection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x3a1f3b86, Offset: 0x278
 // Size: 0xfe
 function private function_667d34b7(localclientnum) {
@@ -62,7 +62,7 @@ function private function_667d34b7(localclientnum) {
 }
 
 // Namespace infection/infection
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xc5cd0f77, Offset: 0x380
 // Size: 0x114
 function private _infected(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -72,14 +72,14 @@ function private _infected(localclientnum, oldval, newval, bnewent, binitialsnap
         burst_fx = level._effect[#"rise_burst"];
         billow_fx = level._effect[#"rise_billow"];
         self thread rise_dust_fx(localclientnum, billow_fx, burst_fx);
-    } else {
-        self notify(#"hash_4f90e54d76985430");
-        self thread function_e5f3924e(localclientnum);
+        return;
     }
+    self notify(#"hash_4f90e54d76985430");
+    self thread function_e5f3924e(localclientnum);
 }
 
 // Namespace infection/infection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xa9c02ea6, Offset: 0x4a0
 // Size: 0xa8
 function private function_e5f3924e(localclientnum) {
@@ -90,7 +90,7 @@ function private function_e5f3924e(localclientnum) {
 }
 
 // Namespace infection/infection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x25f58a0c, Offset: 0x550
 // Size: 0x1bc
 function private function_325e85a2(localclientnum) {
@@ -106,16 +106,16 @@ function private function_325e85a2(localclientnum) {
                 if (player function_d2503806("rob_wz_zombievision")) {
                     player stoprenderoverridebundle("rob_wz_zombievision");
                 }
-            } else {
-                player playrenderoverridebundle("rob_wz_zombievision");
+                continue;
             }
+            player playrenderoverridebundle("rob_wz_zombievision");
         }
         wait(0.25);
     }
 }
 
 // Namespace infection/infection
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x301f253e, Offset: 0x718
 // Size: 0x10c
 function rise_dust_fx(clientnum, billow_fx, burst_fx) {

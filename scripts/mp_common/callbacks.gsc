@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6a37f4a0, Offset: 0x130
 // Size: 0x14
 function __init__() {
@@ -34,19 +34,19 @@ function __init__() {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x67dba939, Offset: 0x150
 // Size: 0x6c
 function on_prematch_end(func, obj) {
     if (self == level) {
         add_callback(#"prematch_end", func, obj);
-    } else {
-        function_d8abfc3d(#"prematch_end", func, obj);
+        return;
     }
+    function_d8abfc3d(#"prematch_end", func, obj);
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x79c8a58c, Offset: 0x1c8
 // Size: 0x3c
 function on_changed_specialist(func, obj) {
@@ -54,7 +54,7 @@ function on_changed_specialist(func, obj) {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc8e2adec, Offset: 0x210
 // Size: 0x302
 function set_default_callbacks() {

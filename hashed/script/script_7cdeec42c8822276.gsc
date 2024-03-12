@@ -129,10 +129,8 @@ function round_spawning() {
     function_b741acea();
     n_spawn_delay = zm_round_logic::get_zombie_spawn_delay(level.var_37769559);
     while (level.var_bdc8b034.size > 0) {
-        var_404e4288 = zombie_utility::get_current_zombie_count();
-        while (var_404e4288 >= level.zombie_ai_limit) {
+        for (var_404e4288 = zombie_utility::get_current_zombie_count(); var_404e4288 >= level.zombie_ai_limit; var_404e4288 = zombie_utility::get_current_zombie_count()) {
             wait(0.1);
-            var_404e4288 = zombie_utility::get_current_zombie_count();
         }
         while (zombie_utility::get_current_actor_count() >= level.zombie_actor_limit) {
             zombie_utility::clear_all_corpses();

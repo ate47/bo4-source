@@ -78,9 +78,9 @@ function setlowermessage(text, time) {
     if (isdefined(time) && time > 0) {
         level.lower_message lower_message::set_countdowntimeseconds(self, int(time));
         level.lower_message lower_message::set_state(self, #"visible");
-    } else {
-        level.lower_message lower_message::set_state(self, #"hash_45bfcb1cd8c9b50a");
+        return;
     }
+    level.lower_message lower_message::set_state(self, #"hash_45bfcb1cd8c9b50a");
 }
 
 // Namespace hud_message/hud_message_shared

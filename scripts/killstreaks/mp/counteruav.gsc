@@ -31,7 +31,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x88ef36bb, Offset: 0x268
 // Size: 0x28c
 function __init__() {
@@ -65,7 +65,7 @@ function __init__() {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8173a109, Offset: 0x500
 // Size: 0x118
 function fx_flesh_hit_neck_fatal(params) {
@@ -82,7 +82,7 @@ function fx_flesh_hit_neck_fatal(params) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44e05e61, Offset: 0x620
 // Size: 0x68
 function function_3675de8b() {
@@ -95,7 +95,7 @@ function function_3675de8b() {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x44ab2521, Offset: 0x690
 // Size: 0x12c
 function function_bff5c062(cuav, attackingplayer) {
@@ -112,7 +112,7 @@ function function_bff5c062(cuav, attackingplayer) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc038ce35, Offset: 0x7c8
 // Size: 0x5e
 function onplayerconnect() {
@@ -124,19 +124,19 @@ function onplayerconnect() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2980afaf, Offset: 0x830
 // Size: 0x5c
 function onplayerspawned() {
     if (self enemycounteruavactive()) {
         self clientfield::set_to_player("counteruav", 1);
-    } else {
-        self clientfield::set_to_player("counteruav", 0);
+        return;
     }
+    self clientfield::set_to_player("counteruav", 0);
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf379c027, Offset: 0x898
 // Size: 0x1d4
 function initrotatingrig() {
@@ -155,7 +155,7 @@ function initrotatingrig() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf37ae0b, Offset: 0xa78
 // Size: 0x2e
 function rotaterig() {
@@ -166,7 +166,7 @@ function rotaterig() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf7f5cb23, Offset: 0xab0
 // Size: 0x10e
 function swayrig() {
@@ -211,9 +211,7 @@ function movementmanagerthink(teamorentnum) {
                 activecount = level.activecounteruavs[teamorentnum];
             }
             currentindex = level.counter_uav_position_index[teamorentnum];
-            newindex = currentindex;
-            while (newindex == currentindex) {
-                newindex = randomintrange(0, 20);
+            for (newindex = currentindex; newindex == currentindex; newindex = randomintrange(0, 20)) {
             }
             destination = level.counter_uav_positions[newindex];
             level.counter_uav_position_index[teamorentnum] = newindex;
@@ -224,7 +222,7 @@ function movementmanagerthink(teamorentnum) {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3f20a0e7, Offset: 0xe58
 // Size: 0x5a
 function getcurrentposition(teamorentnum) {
@@ -234,7 +232,7 @@ function getcurrentposition(teamorentnum) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0e821c1, Offset: 0xec0
 // Size: 0x2c
 function assignfirstavailableoffsetindex() {
@@ -243,7 +241,7 @@ function assignfirstavailableoffsetindex() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc28f6d15, Offset: 0xef8
 // Size: 0x11e
 function getfirstavailableoffsetindex() {
@@ -268,7 +266,7 @@ function getfirstavailableoffsetindex() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb8649efb, Offset: 0x1020
 // Size: 0x66
 function maintaincouteruaventities() {
@@ -305,7 +303,7 @@ function debugdrawoffsetlist() {
 }
 
 // Namespace counteruav/counteruav
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x226d89d5, Offset: 0x11a8
 // Size: 0x142
 function buildoffsetlist(startoffset, depth, offset_x, offset_y) {
@@ -328,7 +326,7 @@ function buildoffsetlist(startoffset, depth, offset_x, offset_y) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xffaa831c, Offset: 0x12f8
 // Size: 0x6c
 function function_af281272() {
@@ -342,7 +340,7 @@ function function_af281272() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xe0f45759, Offset: 0x1370
 // Size: 0x2c0
 function activatecounteruav() {
@@ -374,7 +372,7 @@ function activatecounteruav() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x40cf2788, Offset: 0x1638
 // Size: 0x1dc
 function function_7c61ce31() {
@@ -391,7 +389,7 @@ function function_7c61ce31() {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc82c41f1, Offset: 0x1820
 // Size: 0x2c
 function hackedprefunction(hacker) {
@@ -400,7 +398,7 @@ function hackedprefunction(hacker) {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xeede84e1, Offset: 0x1858
 // Size: 0x27e
 function spawncounteruav(owner, killstreak_id) {
@@ -427,7 +425,7 @@ function spawncounteruav(owner, killstreak_id) {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x295bc97f, Offset: 0x1ae0
 // Size: 0xd4
 function configureteampost(owner, ishacked) {
@@ -454,7 +452,7 @@ function listenformove() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x842f1f92, Offset: 0x1c40
 // Size: 0x14c
 function counteruavmove() {
@@ -475,7 +473,7 @@ function counteruavmove() {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdceea08a, Offset: 0x1d98
 // Size: 0x54
 function playfx(name) {
@@ -487,7 +485,7 @@ function playfx(name) {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x6c6d85f9, Offset: 0x1df8
 // Size: 0x7c
 function onlowhealth(attacker, weapon) {
@@ -499,7 +497,7 @@ function onlowhealth(attacker, weapon) {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7e2a1304, Offset: 0x1e80
 // Size: 0x2c
 function onteamchange(entnum, event) {
@@ -507,7 +505,7 @@ function onteamchange(entnum, event) {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92b2cfa7, Offset: 0x1eb8
 // Size: 0x1c
 function onplayerjoinedteam(params) {
@@ -515,7 +513,7 @@ function onplayerjoinedteam(params) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc17eb55f, Offset: 0x1ee0
 // Size: 0xd4
 function ontimeout() {
@@ -534,7 +532,7 @@ function ontimeout() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9fb18c34, Offset: 0x1fc0
 // Size: 0x34
 function ontimecheck() {
@@ -542,7 +540,7 @@ function ontimecheck() {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd4388cab, Offset: 0x2000
 // Size: 0x44
 function destroycounteruavbyemp(attacker, arg) {
@@ -550,7 +548,7 @@ function destroycounteruavbyemp(attacker, arg) {
 }
 
 // Namespace counteruav/counteruav
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x11b0454c, Offset: 0x2050
 // Size: 0x1ec
 function destroycounteruav(attacker, weapon) {
@@ -575,7 +573,7 @@ function destroycounteruav(attacker, weapon) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x59c1a944, Offset: 0x2248
 // Size: 0x13c
 function deletecounteruav() {
@@ -599,7 +597,7 @@ function deletecounteruav() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8ac22074, Offset: 0x2390
 // Size: 0x14a
 function enemycounteruavactive() {
@@ -624,7 +622,7 @@ function enemycounteruavactive() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeecdf8a9, Offset: 0x24e8
 // Size: 0x18
 function hasactivecounteruav() {
@@ -632,7 +630,7 @@ function hasactivecounteruav() {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1d5bdb72, Offset: 0x2508
 // Size: 0x20
 function teamhasactivecounteruav(team) {
@@ -640,7 +638,7 @@ function teamhasactivecounteruav(team) {
 }
 
 // Namespace counteruav/counteruav
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x20780f17, Offset: 0x2530
 // Size: 0x20
 function hasindexactivecounteruav(team_or_entnum) {
@@ -648,7 +646,7 @@ function hasindexactivecounteruav(team_or_entnum) {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1bf8ee7a, Offset: 0x2558
 // Size: 0x1b8
 function addactivecounteruav() {
@@ -680,7 +678,7 @@ function addactivecounteruav() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd8cf8a01, Offset: 0x2718
 // Size: 0x54
 function removeactivecounteruav() {
@@ -690,7 +688,7 @@ function removeactivecounteruav() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x8fa436b5, Offset: 0x2778
 // Size: 0x180
 function resetactivecounteruav() {
@@ -722,7 +720,7 @@ function resetactivecounteruav() {
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x507681b6, Offset: 0x2900
 // Size: 0xe4
 function watchcounteruavs() {
@@ -731,15 +729,15 @@ function watchcounteruavs() {
         foreach (player in level.players) {
             if (player enemycounteruavactive()) {
                 player clientfield::set_to_player("counteruav", 1);
-            } else {
-                player clientfield::set_to_player("counteruav", 0);
+                continue;
             }
+            player clientfield::set_to_player("counteruav", 0);
         }
     }
 }
 
 // Namespace counteruav/counteruav
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x42d24198, Offset: 0x29f0
 // Size: 0x88
 function hideallcounteruavstosameteam() {

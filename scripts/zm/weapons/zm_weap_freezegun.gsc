@@ -177,17 +177,19 @@ function freezegun_get_enemies_in_range(is_upgraded) {
         dot = vectordot(forward_view_angles, normal);
         if (0 > dot) {
             ai freezegun_debug_print("dot", (1, 0, 0));
-        } else {
-            radial_origin = pointonsegmentnearesttopoint(view_pos, end_pos, test_origin);
-            if (distancesquared(test_origin, radial_origin) > cylinder_radius_squared) {
-                ai freezegun_debug_print("cylinder", (1, 0, 0));
-            } else if (0 == ai damageconetrace(view_pos, self)) {
-                ai freezegun_debug_print("cone", (1, 0, 0));
-            } else {
-                level.freezegun_enemies[level.freezegun_enemies.size] = ai;
-                level.freezegun_enemies_dist_ratio[level.freezegun_enemies_dist_ratio.size] = (freezegun_outer_range_squared - test_range_squared) / (freezegun_outer_range_squared - freezegun_inner_range_squared);
-            }
+            continue;
         }
+        radial_origin = pointonsegmentnearesttopoint(view_pos, end_pos, test_origin);
+        if (distancesquared(test_origin, radial_origin) > cylinder_radius_squared) {
+            ai freezegun_debug_print("cylinder", (1, 0, 0));
+            continue;
+        }
+        if (0 == ai damageconetrace(view_pos, self)) {
+            ai freezegun_debug_print("cone", (1, 0, 0));
+            continue;
+        }
+        level.freezegun_enemies[level.freezegun_enemies.size] = ai;
+        level.freezegun_enemies_dist_ratio[level.freezegun_enemies_dist_ratio.size] = (freezegun_outer_range_squared - test_range_squared) / (freezegun_outer_range_squared - freezegun_inner_range_squared);
     }
 }
 
@@ -230,9 +232,12 @@ function freezegun_do_shatter(params, shatter_trigger, crumple_trigger) {
     foreach (ai in a_targets) {
         if (!isdefined(ai) || ai.archetype !== #"zombie" && ai.archetype !== #"zombie_dog" && ai.archetype !== #"nova_crawler" || ai getteam() !== level.zombie_team) {
             continue;
-        } else if (isalive(ai)) {
+        }
+        if (isalive(ai)) {
             ai dodamage(freezegun_get_shatter_inner_damage(is_upgraded), ai.origin, params.eattacker, undefined, undefined, "MOD_EXPLOSIVE");
-        } else if (isdefined(ai.shatter_trigger)) {
+            continue;
+        }
+        if (isdefined(ai.shatter_trigger)) {
             ai.shatter_trigger dodamage(freezegun_get_shatter_inner_damage(is_upgraded), ai.origin, params.eattacker, undefined, undefined, "MOD_EXPLOSIVE");
         }
     }
@@ -257,9 +262,9 @@ function freezegun_wait_for_shatter(params, shatter_trigger, crumple_trigger) {
     s_notify = shatter_trigger waittill(#"damage");
     if (isdefined(s_notify.eattacker) && orig_attacker == s_notify.eattacker && s_notify.smeansofdeath == "MOD_PROJECTILE" && (s_notify.weapon == level.w_freezegun || s_notify.weapon == level.w_freezegun_upgraded)) {
         self thread freezegun_do_crumple(params, shatter_trigger, crumple_trigger);
-    } else {
-        self thread freezegun_do_shatter(params, shatter_trigger, crumple_trigger);
+        return;
     }
+    self thread freezegun_do_shatter(params, shatter_trigger, crumple_trigger);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -361,7 +366,9 @@ function function_9a01c5b0() {
     }
     if (isdefined(self.shatter_trigger) && isdefined(self.crumple_trigger)) {
         self freezegun_do_crumple(self.var_606a4641, self.shatter_trigger, self.crumple_trigger);
-    } else if (isdefined(self)) {
+        return;
+    }
+    if (isdefined(self)) {
         if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
             self function_1e71ac1e();
             self function_95a1c464();
@@ -438,9 +445,8 @@ function enemy_killed_by_freezegun() {
 function freezegun_get_cylinder_radius(is_upgraded) {
     if (is_upgraded) {
         return 180;
-    } else {
-        return 120;
     }
+    return 120;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -450,9 +456,8 @@ function freezegun_get_cylinder_radius(is_upgraded) {
 function freezegun_get_inner_range(is_upgraded) {
     if (is_upgraded) {
         return 120;
-    } else {
-        return 60;
     }
+    return 60;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -462,9 +467,8 @@ function freezegun_get_inner_range(is_upgraded) {
 function freezegun_get_outer_range(is_upgraded) {
     if (is_upgraded) {
         return 900;
-    } else {
-        return 600;
     }
+    return 600;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -474,9 +478,8 @@ function freezegun_get_outer_range(is_upgraded) {
 function freezegun_get_inner_damage(is_upgraded) {
     if (is_upgraded) {
         return 3000;
-    } else {
-        return 1500;
     }
+    return 1500;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -486,9 +489,8 @@ function freezegun_get_inner_damage(is_upgraded) {
 function freezegun_get_outer_damage(is_upgraded) {
     if (is_upgraded) {
         return 1500;
-    } else {
-        return 750;
     }
+    return 750;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -498,9 +500,8 @@ function freezegun_get_outer_damage(is_upgraded) {
 function freezegun_get_shatter_range(is_upgraded) {
     if (is_upgraded) {
         return 300;
-    } else {
-        return 180;
     }
+    return 180;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -510,9 +511,8 @@ function freezegun_get_shatter_range(is_upgraded) {
 function freezegun_get_shatter_inner_damage(is_upgraded) {
     if (is_upgraded) {
         return 750;
-    } else {
-        return 500;
     }
+    return 500;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -522,9 +522,8 @@ function freezegun_get_shatter_inner_damage(is_upgraded) {
 function freezegun_get_shatter_outer_damage(is_upgraded) {
     if (is_upgraded) {
         return 500;
-    } else {
-        return 250;
     }
+    return 250;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -551,10 +550,10 @@ function function_1cdfba74(is_upgraded) {
     if (is_upgraded) {
         self clientfield::set("" + #"hash_26d3eeef96a2291e", 1);
         self playsound(#"hash_3bed1320e59a493c");
-    } else {
-        self clientfield::set("" + #"hash_2f305a0bea20d6ed", 1);
-        self playsound(#"hash_3bed1320e59a493c");
+        return;
     }
+    self clientfield::set("" + #"hash_2f305a0bea20d6ed", 1);
+    self playsound(#"hash_3bed1320e59a493c");
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -565,10 +564,10 @@ function function_c61abffb(is_upgraded) {
     if (is_upgraded) {
         self clientfield::set("" + #"hash_32ec41222f58aa75", 1);
         self playsound(#"hash_55070bed4172e08c");
-    } else {
-        self clientfield::set("" + #"hash_757f891a37d3db00", 1);
-        self playsound(#"hash_55070bed4172e08c");
+        return;
     }
+    self clientfield::set("" + #"hash_757f891a37d3db00", 1);
+    self playsound(#"hash_55070bed4172e08c");
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun

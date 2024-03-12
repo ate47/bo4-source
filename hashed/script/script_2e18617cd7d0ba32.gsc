@@ -54,25 +54,37 @@ class cct_shared_objcounter : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"nototal" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"hash_1895dd9cec027130" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else if (#"total" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
-        } else if (#"total_update" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
-        } else if (#"hash_5edcadf19882d66f" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
-        } else if (#"total_init" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"nototal" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"hash_1895dd9cec027130" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        if (#"total" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 3);
+            return;
+        }
+        if (#"total_update" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 4);
+            return;
+        }
+        if (#"hash_5edcadf19882d66f" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 5);
+            return;
+        }
+        if (#"total_init" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 6);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter

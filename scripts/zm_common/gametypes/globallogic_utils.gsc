@@ -105,11 +105,11 @@ function executepostroundevents() {
 function getvalueinrange(value, minvalue, maxvalue) {
     if (value > maxvalue) {
         return maxvalue;
-    } else if (value < minvalue) {
-        return minvalue;
-    } else {
-        return value;
     }
+    if (value < minvalue) {
+        return minvalue;
+    }
+    return value;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -130,7 +130,7 @@ function assertproperplacement() {
                     /#
                         assertmsg("<unknown string>");
                     #/
-                    break;
+                    return;
                 }
             }
         }
@@ -219,9 +219,8 @@ function gettimepassed() {
     }
     if (level.timerstopped) {
         return (level.timerpausetime - level.starttime - level.discardtime);
-    } else {
-        return (gettime() - level.starttime - level.discardtime);
     }
+    return gettime() - level.starttime - level.discardtime;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -259,9 +258,8 @@ function getscoreremaining(team) {
     scorelimit = level.scorelimit;
     if (isplayer(self)) {
         return (scorelimit - globallogic_score::_getplayerscore(self));
-    } else {
-        return (scorelimit - getteamscore(team));
     }
+    return scorelimit - getteamscore(team);
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -277,9 +275,8 @@ function getscoreperminute(team) {
     minutespassed = gettimepassed() / 60000 + 0.0001;
     if (isplayer(self)) {
         return (globallogic_score::_getplayerscore(self) / minutespassed);
-    } else {
-        return (getteamscore(team) / minutespassed);
     }
+    return getteamscore(team) / minutespassed;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -346,7 +343,6 @@ function isheadshot(weapon, shitloc, smeansofdeath, einflictor) {
     case #"mod_impact":
     case #"mod_melee":
         return 0;
-        break;
     }
     return 1;
 }
@@ -381,7 +377,6 @@ function gethitlocheight(shitloc) {
     case #"left_foot":
     case #"right_foot":
         return 5;
-        break;
     }
     return 48;
 }

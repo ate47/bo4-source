@@ -55,9 +55,9 @@ function __init__() {
     level.var_a7010207 = getweapon(#"eq_seeker_mine");
     if (isdefined(level.var_a7010207.customsettings)) {
         level.var_4b3541d4 = getscriptbundle(level.var_a7010207.customsettings);
-    } else {
-        level.var_4b3541d4 = getscriptbundle("seeker_mine_custom_settings");
+        return;
     }
+    level.var_4b3541d4 = getscriptbundle("seeker_mine_custom_settings");
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -284,7 +284,7 @@ function function_5731c02c() {
             self notify(#"abandoned");
             self.abandoned = 1;
             self function_afd97197();
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -712,7 +712,7 @@ function function_7d2591b() {
         progress = (gettime() - starttime) / waittime;
         level.var_9d47488.prompt seeker_mine_prompt::set_progress(self, 1 - progress);
         waitframe(1);
-    } while(progress < 1.2);
+    } while (progress < 1.2);
 }
 
 // Namespace seeker_mine_mp/seeker_mine

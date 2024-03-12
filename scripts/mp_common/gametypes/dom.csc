@@ -108,12 +108,14 @@ function update_base_fx(localclientnum, flag, team) {
     }
     if (team == #"neutral") {
         play_base_fx(localclientnum, flag, fx_name, team);
-    } else if (flag.last_team == #"neutral" || shoutcaster::is_shoutcaster(localclientnum)) {
-        play_base_fx(localclientnum, flag, fx_name, team);
-    } else {
-        setfxteam(localclientnum, flag.base_fx, team);
-        flag.last_team = team;
+        return;
     }
+    if (flag.last_team == #"neutral" || shoutcaster::is_shoutcaster(localclientnum)) {
+        play_base_fx(localclientnum, flag, fx_name, team);
+        return;
+    }
+    setfxteam(localclientnum, flag.base_fx, team);
+    flag.last_team = team;
 }
 
 // Namespace dom/dom
@@ -163,9 +165,8 @@ function get_base_fx(flag, team) {
     }
     if (team == #"neutral") {
         return "ui/fx_dom_marker_neutral";
-    } else {
-        return "ui/fx_dom_marker_team";
     }
+    return "ui/fx_dom_marker_team";
 }
 
 // Namespace dom/dom
@@ -181,8 +182,7 @@ function get_cap_fx(flag, team) {
     }
     if (team == #"neutral") {
         return "ui/fx_dom_cap_indicator_neutral";
-    } else {
-        return "ui/fx_dom_cap_indicator_team";
     }
+    return "ui/fx_dom_cap_indicator_team";
 }
 

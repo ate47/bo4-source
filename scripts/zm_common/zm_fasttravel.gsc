@@ -120,7 +120,7 @@ function wormhole_fx(a_ents) {
     e_wormhole = a_ents[getfirstarraykey(a_ents)];
     do {
         util::wait_network_frame();
-    } while(!e_wormhole isplayinganimscripted());
+    } while (!e_wormhole isplayinganimscripted());
     e_wormhole clientfield::set("" + #"wormhole_fx", zm_utility::get_story());
 }
 
@@ -321,9 +321,9 @@ function function_6cde5436() {
         }
         if (isdefined(self.stub)) {
             player thread function_b9c7ccbb(self.stub, self.stub.var_7b3e65fe);
-        } else {
-            player thread function_b9c7ccbb(self);
+            continue;
         }
+        player thread function_b9c7ccbb(self);
     }
 }
 
@@ -447,7 +447,7 @@ function function_f86439bc() {
                 break;
             }
         }
-    } while(var_e9a9a32a);
+    } while (var_e9a9a32a);
     self.var_f4e33249 = undefined;
 }
 
@@ -666,7 +666,7 @@ function function_79766c56(str_notify) {
         self allowprone(1);
         self.var_f4e33249 = undefined;
         self.var_16735873 = 0;
-        break;
+        return;
     }
 }
 
@@ -1027,14 +1027,15 @@ function function_60d91d03(var_f0bbde5, a_e_players) {
     foreach (e_player in a_e_players) {
         if (isdefined(e_player.var_16735873) && e_player.var_16735873) {
             continue;
-        } else if (abs(var_f0bbde5.origin[2] - e_player.origin[2]) > 60) {
-            continue;
-        } else if (distance2dsquared(var_f0bbde5.origin, e_player.origin) > 4096) {
-            continue;
-        } else {
-            b_safe = 0;
-            break;
         }
+        if (abs(var_f0bbde5.origin[2] - e_player.origin[2]) > 60) {
+            continue;
+        }
+        if (distance2dsquared(var_f0bbde5.origin, e_player.origin) > 4096) {
+            continue;
+        }
+        b_safe = 0;
+        break;
     }
     return b_safe;
 }
@@ -1087,18 +1088,18 @@ function function_dd6276f3(cmd) {
             level.var_2a40310c = 1;
             level thread function_8d419972(0);
         }
-        break;
+        return;
     case #"stop_looping":
         if (isdefined(level.var_2a40310c) && level.var_2a40310c) {
             level.var_2a40310c = 0;
         }
-        break;
+        return;
     case #"play_once":
         if (!(isdefined(level.var_2a40310c) && level.var_2a40310c)) {
             level.var_2a40310c = 1;
             level thread function_8d419972(1);
         }
-        break;
+        return;
     }
 }
 

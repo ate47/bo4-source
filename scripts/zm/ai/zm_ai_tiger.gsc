@@ -339,10 +339,10 @@ function function_8fc19416(notetrack) {
     switch (notetrack) {
     case #"tiger_melee_left":
         self clientfield::increment_to_player("" + #"hash_14c746e550d9f3ca", 2);
-        break;
+        return;
     case #"tiger_melee_right":
         self clientfield::increment_to_player("" + #"hash_14c746e550d9f3ca", 1);
-        break;
+        return;
     }
 }
 
@@ -369,10 +369,9 @@ function get_favorite_enemy() {
     }
     if (!zm_utility::is_player_valid(least_hunted)) {
         return undefined;
-    } else {
-        least_hunted.hunted_by = least_hunted.hunted_by + 1;
-        return least_hunted;
     }
+    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    return least_hunted;
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger

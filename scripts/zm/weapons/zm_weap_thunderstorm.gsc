@@ -41,7 +41,7 @@ function __init__() {
     clientfield::register("scriptmover", "" + #"hash_1187b848bf7868c5", 16000, 1, "int");
     weaponobjects::function_e6400478(#"thunderstorm", &function_72e5d54f, undefined);
     deployable::register_deployable(getweapon(#"thunderstorm"), &function_3b0168a9, undefined, undefined, #"hash_3b6c37d4718707a2");
-    level.var_899f5cb = [];
+    level.a_mdl_pegasus = [];
     level.var_b3b0d9d7 = &function_cd366cf2;
     callback::on_connect(&function_6c5cb6e);
 }
@@ -51,8 +51,8 @@ function __init__() {
 // Checksum 0x2be1f346, Offset: 0x508
 // Size: 0xcc
 function __main__() {
-    level.var_49d60273 = getweapon(#"thunderstorm");
-    level.var_c9bbd599 = getweapon(#"thunderstorm");
+    level.w_thunderstorm = getweapon(#"thunderstorm");
+    level.w_thunderstorm_upgraded = getweapon(#"thunderstorm");
     if (!function_d0671de3()) {
         return;
     }
@@ -90,10 +90,10 @@ function function_6c5cb6e() {
         wpn_cur = s_result.weapon;
         if (wpn_cur == getweapon(#"thunderstorm")) {
             self thread function_feb1573e();
-        } else {
-            self val::reset(#"pegasus_strike", "freezecontrols");
-            self notify(#"hash_2938992396267cf3");
+            continue;
         }
+        self val::reset(#"pegasus_strike", "freezecontrols");
+        self notify(#"hash_2938992396267cf3");
     }
 }
 
@@ -137,9 +137,9 @@ function function_39a41e25(watcher, player) {
         self weaponobjects::onspawnuseweaponobject(watcher, player);
         player.var_7e19c3db = 1;
         player thread function_5f724c2e(self);
-    } else {
-        level thread function_5abeb589(self);
+        return;
     }
+    level thread function_5abeb589(self);
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
@@ -147,7 +147,7 @@ function function_39a41e25(watcher, player) {
 // Checksum 0x4d375117, Offset: 0x988
 // Size: 0x25c
 function function_3b0168a9(v_origin, v_angles, player) {
-    if (isdefined(level.var_899f5cb) && level.var_899f5cb.size >= 2) {
+    if (isdefined(level.a_mdl_pegasus) && level.a_mdl_pegasus.size >= 2) {
         return 0;
     }
     var_78e5d9d1 = (v_origin[0], v_origin[1], v_origin[2] + 40);
@@ -155,7 +155,7 @@ function function_3b0168a9(v_origin, v_angles, player) {
     if (trace[#"fraction"] < 1) {
         return 0;
     }
-    foreach (var_10d4f67d in level.var_899f5cb) {
+    foreach (var_10d4f67d in level.a_mdl_pegasus) {
         n_dist = distance(var_10d4f67d.var_f013d620, player.origin);
         if (n_dist < 600) {
             n_time = gettime() / 1000;
@@ -211,7 +211,7 @@ function function_5f724c2e(e_grenade) {
     e_grenade waittill(#"stationary");
     level thread function_5abeb589(e_grenade, 0);
     var_3fb36683 = 1;
-    if (level.var_899f5cb.size >= 2) {
+    if (level.a_mdl_pegasus.size >= 2) {
         var_3fb36683 = 0;
     }
     if (var_3fb36683) {
@@ -255,7 +255,7 @@ function function_5f724c2e(e_grenade) {
         var_10d4f67d.var_373fe23f = var_373fe23f;
         var_10d4f67d.var_f013d620 = var_f013d620;
         var_10d4f67d.n_created_time = gettime() / 1000;
-        level.var_899f5cb[level.var_899f5cb.size] = var_10d4f67d;
+        level.a_mdl_pegasus[level.a_mdl_pegasus.size] = var_10d4f67d;
         level thread function_b603ab34(self, var_10d4f67d);
         var_10d4f67d thread function_6973e5e8(self getentitynumber() + 1, var_f013d620);
         var_10d4f67d thread function_72085d9();
@@ -292,14 +292,14 @@ function function_5abeb589(e_grenade, var_e6d102c0 = 1) {
 // Checksum 0x726cd1b9, Offset: 0x1158
 // Size: 0xcc
 function function_5d44b698(v_origin) {
-    var_14aca4c7 = util::spawn_model("tag_origin", v_origin);
-    if (isdefined(var_14aca4c7)) {
-        var_14aca4c7.var_abfcb0d9 = 1;
-        var_14aca4c7 zm_utility::create_zombie_point_of_interest(undefined, 16, 10000);
-        var_14aca4c7 zm_utility::create_zombie_point_of_interest_attractor_positions(undefined, 8, 400, 1);
-        var_14aca4c7.var_8305fd51 = #"thunderstorm";
+    mdl_poi = util::spawn_model("tag_origin", v_origin);
+    if (isdefined(mdl_poi)) {
+        mdl_poi.var_abfcb0d9 = 1;
+        mdl_poi zm_utility::create_zombie_point_of_interest(undefined, 16, 10000);
+        mdl_poi zm_utility::create_zombie_point_of_interest_attractor_positions(undefined, 8, 400, 1);
+        mdl_poi.var_8305fd51 = #"thunderstorm";
         self waittill(#"hash_7a19b162c9e303dc");
-        var_14aca4c7 delete();
+        mdl_poi delete();
     }
 }
 
@@ -414,10 +414,10 @@ function function_9c1450b8(var_10d4f67d, n_player_index) {
         var_b1c1c5cf = zm_equipment::function_7d948481(0.1, 0.25, 0.25, 1);
         var_5d7b4163 = zm_equipment::function_379f6b5d(500, var_b1c1c5cf, 1, 4, 50);
         self thread function_7c333a0f(var_10d4f67d, var_5d7b4163, n_player_index);
-        break;
+        return;
     default:
         self thread function_90c53706(var_10d4f67d, n_player_index);
-        break;
+        return;
     }
 }
 
@@ -435,7 +435,7 @@ function function_90c53706(var_10d4f67d, n_player_index) {
     if (self.archetype == #"zombie" || self.archetype == #"skeleton" || self.archetype == #"catalyst") {
         self playsound(#"hash_3fbc22745dc90009");
         gibserverutils::annihilate(self);
-        self dodamage(self.health + 999, self.origin, e_player, e_player, "none", "MOD_UNKNOWN", 0, level.var_49d60273);
+        self dodamage(self.health + 999, self.origin, e_player, e_player, "none", "MOD_UNKNOWN", 0, level.w_thunderstorm);
     }
 }
 
@@ -451,7 +451,7 @@ function function_7c333a0f(var_10d4f67d, var_5d7b4163, n_player_index) {
     while (isalive(self)) {
         self function_97429d68(n_player_index);
         self playsound(#"hash_3a99f739009a77fa");
-        self dodamage(var_5d7b4163, self.origin, e_player, e_player, "none", "MOD_UNKNOWN", 0, level.var_49d60273);
+        self dodamage(var_5d7b4163, self.origin, e_player, e_player, "none", "MOD_UNKNOWN", 0, level.w_thunderstorm);
         wait(0.5);
     }
 }
@@ -542,7 +542,7 @@ function function_97429d68(n_player_index) {
 // Checksum 0xc06cdcec, Offset: 0x2018
 // Size: 0x1a
 function function_d0671de3() {
-    return zm_weapons::is_weapon_included(level.var_49d60273);
+    return zm_weapons::is_weapon_included(level.w_thunderstorm);
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
@@ -564,6 +564,6 @@ function function_72085d9() {
     self waittilltimeout(30, #"hash_90cfd38343f41f2", #"death");
     self zm_utility::deactivate_zombie_point_of_interest();
     self notify(#"hash_7a19b162c9e303dc");
-    arrayremovevalue(level.var_899f5cb, self);
+    arrayremovevalue(level.a_mdl_pegasus, self);
 }
 

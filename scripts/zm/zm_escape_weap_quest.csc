@@ -55,23 +55,23 @@ function function_e4a48a64(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.var_dd081ca4)) {
             self.var_dd081ca4 = self playloopsound(#"hash_f80ff339436a985");
         }
-    } else {
-        if (isdefined(self.var_8eb4e749)) {
-            stopfx(localclientnum, self.var_8eb4e749);
-            self.var_8eb4e749 = undefined;
+        return;
+    }
+    if (isdefined(self.var_8eb4e749)) {
+        stopfx(localclientnum, self.var_8eb4e749);
+        self.var_8eb4e749 = undefined;
+    }
+    self playsound(localclientnum, #"hash_4435f84f2c7dd54f");
+    if (isdefined(self.var_dd081ca4)) {
+        self stoploopsound(self.var_dd081ca4);
+    }
+    self.var_8eb4e749 = util::playfxontag(localclientnum, level._effect[#"hell_portal_close"], self, "tag_origin");
+    wait(0.5);
+    if (isdefined(self)) {
+        if (isdefined(self.var_78ef40db)) {
+            stopfx(localclientnum, self.var_78ef40db);
         }
-        self playsound(localclientnum, #"hash_4435f84f2c7dd54f");
-        if (isdefined(self.var_dd081ca4)) {
-            self stoploopsound(self.var_dd081ca4);
-        }
-        self.var_8eb4e749 = util::playfxontag(localclientnum, level._effect[#"hell_portal_close"], self, "tag_origin");
-        wait(0.5);
-        if (isdefined(self)) {
-            if (isdefined(self.var_78ef40db)) {
-                stopfx(localclientnum, self.var_78ef40db);
-            }
-            self.var_78ef40db = util::playfxontag(localclientnum, level._effect[#"soul_charged"], self, "tag_origin");
-        }
+        self.var_78ef40db = util::playfxontag(localclientnum, level._effect[#"soul_charged"], self, "tag_origin");
     }
 }
 
@@ -85,7 +85,9 @@ function function_b543a4ed(localclientnum, oldval, newval, bnewent, binitialsnap
             stopfx(localclientnum, self.var_f74c7894);
         }
         self.var_f74c7894 = util::playfxontag(localclientnum, level._effect[#"soul_charge_start"], self, "tag_origin");
-    } else if (isdefined(self.var_f74c7894)) {
+        return;
+    }
+    if (isdefined(self.var_f74c7894)) {
         stopfx(localclientnum, self.var_f74c7894);
         self.var_f74c7894 = undefined;
     }
@@ -123,7 +125,9 @@ function function_dfe17a5d(localclientnum, oldval, newval, bnewent, binitialsnap
             killfx(localclientnum, self.n_fx_id);
             self.n_fx_id = undefined;
         }
-    } else if (newval > 0) {
+        return;
+    }
+    if (newval > 0) {
         e_player = getentbynum(localclientnum, newval - 1);
         a_e_players = getlocalplayers();
         if (array::contains(a_e_players, e_player)) {
@@ -142,12 +146,12 @@ function function_724af26a(localclientnum, oldval, newval, bnewent, binitialsnap
             killfx(localclientnum, self.var_e7b65a20);
             self.var_e7b65a20 = undefined;
         }
-    } else {
-        e_player = getentbynum(localclientnum, newval - 1);
-        a_e_players = getlocalplayers();
-        if (array::contains(a_e_players, e_player)) {
-            self.var_e7b65a20 = util::playfxontag(localclientnum, level._effect[#"tomahawk_pickup_upgrade"], self, "tag_origin");
-        }
+        return;
+    }
+    e_player = getentbynum(localclientnum, newval - 1);
+    a_e_players = getlocalplayers();
+    if (array::contains(a_e_players, e_player)) {
+        self.var_e7b65a20 = util::playfxontag(localclientnum, level._effect[#"tomahawk_pickup_upgrade"], self, "tag_origin");
     }
 }
 

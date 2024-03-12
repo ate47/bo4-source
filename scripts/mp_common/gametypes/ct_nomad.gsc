@@ -149,10 +149,14 @@ function function_1779a8c2(einflictor, attacker, idamage, smeansofdeath, weapon,
     if (self.team == #"allies") {
         self function_f71e7ad9();
         self thread ct_utils::function_ee4639dd(-10);
-    } else if (isdefined(einflictor) && isdefined(einflictor.isdog) && einflictor.isdog && isdefined(attacker)) {
+        return;
+    }
+    if (isdefined(einflictor) && isdefined(einflictor.isdog) && einflictor.isdog && isdefined(attacker)) {
         attacker thread ct_utils::function_d471f8fa(5, "DogKill", 1, "_dogkill");
         attacker thread ct_utils::function_329f9ba6(#"hash_4bc9eb282022bb61", 2, "green", 0);
-    } else if (isplayer(einflictor)) {
+        return;
+    }
+    if (isplayer(einflictor)) {
         einflictor ct_utils::function_d471f8fa(1, undefined, 1);
     }
 }
@@ -298,11 +302,11 @@ function function_a898afdc() {
     setmatchflag("bomb_timer_a", 0);
     if (level flag::get("data_downloaded")) {
         level flag::set("mission_success");
-    } else {
-        level flag::set("mission_failed");
-        wait(0.1);
-        level notify(#"combattraining_logic_finished", {#success:0});
+        return;
     }
+    level flag::set("mission_failed");
+    wait(0.1);
+    level notify(#"combattraining_logic_finished", {#success:0});
 }
 
 // Namespace ct_nomad/ct_nomad
@@ -506,9 +510,9 @@ function function_62e9842e(var_4d4513ee) {
             waitframe(1);
         }
         level thread ct_bots::activate_bots(var_7f5c713a - 2, #"axis");
-    } else {
-        level thread ct_bots::activate_bots(var_7f5c713a, #"axis");
+        return;
     }
+    level thread ct_bots::activate_bots(var_7f5c713a, #"axis");
 }
 
 // Namespace ct_nomad/ct_nomad
@@ -610,11 +614,10 @@ function function_795960e7() {
         n_dist = distance(e_player.origin, self.origin);
         if (n_dist > 700 && !e_player cansee(self)) {
             break;
-        } else {
-            var_70eb710b++;
-            if (var_70eb710b >= 3) {
-                break;
-            }
+        }
+        var_70eb710b++;
+        if (var_70eb710b >= 3) {
+            break;
         }
     }
     self setorigin(nd_spawn.origin);

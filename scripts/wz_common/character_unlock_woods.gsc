@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_woods/character_unlock_woods
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa06efe1b, Offset: 0x108
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_woods/character_unlock_woods
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x669b767, Offset: 0x148
 // Size: 0x9c
 function function_2613aeec(enabled) {
@@ -39,7 +39,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_woods/character_unlock_woods
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7d44386d, Offset: 0x1f0
 // Size: 0x1a8
 function function_6cba9a1a() {
@@ -102,7 +102,7 @@ function event_handler[change_seat] function_2aa4e6cf(eventstruct) {
 }
 
 // Namespace character_unlock_woods/character_unlock_woods
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaf17390e, Offset: 0x560
 // Size: 0x140
 function function_6a61388f(vehicle) {
@@ -124,7 +124,7 @@ function function_6a61388f(vehicle) {
 }
 
 // Namespace character_unlock_woods/character_unlock_woods
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9adc1d09, Offset: 0x6a8
 // Size: 0xbc
 function function_1c4b5097(item) {
@@ -137,7 +137,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_woods/character_unlock_woods
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb2f22d94, Offset: 0x770
 // Size: 0x184
 function function_4ac25840(params) {

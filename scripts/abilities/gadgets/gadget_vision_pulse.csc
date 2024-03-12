@@ -11,13 +11,13 @@
 #namespace gadget_vision_pulse;
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xfdd50300, Offset: 0x170
 // Size: 0x1ac
 function init_shared() {
     level.vision_pulse = [];
     level.registerdevgui_dev_cac_fallimp = [];
-    level.var_2e3031be = getweapon(#"gadget_vision_pulse");
+    level.weaponvisionpulse = getweapon(#"gadget_vision_pulse");
     callback::on_localplayer_spawned(&on_localplayer_spawned);
     callback::on_spawned(&on_player_spawned);
     callback::on_player_corpse(&on_player_corpse);
@@ -118,10 +118,9 @@ function stop_postfx(immediate) {
 // Size: 0x44
 function toggle_spectator(localclientnum) {
     if (is_enabled(localclientnum)) {
-        goto LOC_00000042;
+        return;
     }
     stop_postfx(1);
-LOC_00000042:
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -134,7 +133,7 @@ function function_5f4276b8() {
         return;
     }
     while (1) {
-        if (self function_e2f34c3()) {
+        if (self isplayerprone()) {
             self clearanim(#"pt_recon_t8_stand_vision_pulse_goggles_down_loop", 0);
             self setanimknob(#"pt_recon_t8_prone_vision_pulse_goggles_down_loop", 1, 0, 1);
         } else {
@@ -186,7 +185,9 @@ function function_ab898b2d(notifystring) {
     if (self function_21c0fa55()) {
         if (notifystring == "visor_up") {
             stop_postfx();
-        } else if (notifystring == "overlay_on") {
+            return;
+        }
+        if (notifystring == "overlay_on") {
             if (!isdefined(self.var_f0b8faa1)) {
                 stop_postfx();
                 self thread function_3e2cd736(localclientnum);
@@ -208,9 +209,11 @@ function function_ab898b2d(notifystring) {
                     }
                 }
                 extraduration = 3000;
-                thread util::lerp_generic(localclientnum, level.var_2e3031be.gadget_pulse_duration + extraduration, &do_vision_world_pulse_lerp_helper);
+                thread util::lerp_generic(localclientnum, level.weaponvisionpulse.gadget_pulse_duration + extraduration, &do_vision_world_pulse_lerp_helper);
             }
-        } else if (notifystring == "overlay_off") {
+            return;
+        }
+        if (notifystring == "overlay_off") {
             self notify(#"stop_googles");
             self thread function_43c942dc(localclientnum);
             stop_postfx();
@@ -296,7 +299,7 @@ function do_vision_world_pulse_lerp_helper(currenttime, elapsedtime, localclient
     if (!isdefined(self)) {
         return;
     }
-    pulseduration = level.var_2e3031be.gadget_pulse_duration;
+    pulseduration = level.weaponvisionpulse.gadget_pulse_duration;
     if (elapsedtime < pulseduration * 0.1) {
         irisamount = elapsedtime / pulseduration * 0.1;
     } else if (elapsedtime < pulseduration * 0.6) {
@@ -305,7 +308,7 @@ function do_vision_world_pulse_lerp_helper(currenttime, elapsedtime, localclient
         irisamount = 0;
     }
     pulseradius = getvisionpulseradius(localclientnum);
-    pulsemaxradius = level.var_2e3031be.gadget_pulse_max_range;
+    pulsemaxradius = level.weaponvisionpulse.gadget_pulse_max_range;
     if (pulseradius > 0 && self.var_168d7f5c == 0) {
         self.var_168d7f5c = 1;
         playsound(localclientnum, #"hash_151b724086b2955b");
@@ -377,20 +380,20 @@ function do_vision_local_pulse(localclientnum) {
     origin = getrevealpulseorigin(localclientnum);
     self function_78233d29(#"hash_1978eff2ac047e65", "", #"brightness", 1);
     starttime = function_41f5de53(localclientnum);
-    revealtime = level.var_2e3031be.var_b9951041;
-    fadeout_duration = level.var_2e3031be.var_8e0b0827;
+    revealtime = level.weaponvisionpulse.var_b9951041;
+    fadeout_duration = level.weaponvisionpulse.var_8e0b0827;
     jammed = self clientfield::get("gps_jammer_active");
-    var_8ac8d61d = isdefined(level.var_2e3031be.var_5be370e9) ? level.var_2e3031be.var_5be370e9 : 1;
+    var_8ac8d61d = isdefined(level.weaponvisionpulse.var_5be370e9) ? level.weaponvisionpulse.var_5be370e9 : 1;
     var_6f9f5fef = fadeout_duration * (jammed ? var_8ac8d61d : 1);
-    var_42a54adc = var_6f9f5fef * (isdefined(level.var_2e3031be.var_a2d7b97c) ? level.var_2e3031be.var_a2d7b97c : 0.8);
+    var_42a54adc = var_6f9f5fef * (isdefined(level.weaponvisionpulse.var_a2d7b97c) ? level.weaponvisionpulse.var_a2d7b97c : 0.8);
     while (1) {
         elapsedtime = getservertime(localclientnum) - starttime;
         if (elapsedtime >= revealtime) {
             break;
         }
         pulseradius = 0;
-        if (getservertime(localclientnum) - starttime < level.var_2e3031be.gadget_pulse_duration) {
-            pulseradius = (getservertime(localclientnum) - starttime) / level.var_2e3031be.gadget_pulse_duration * 2000;
+        if (getservertime(localclientnum) - starttime < level.weaponvisionpulse.gadget_pulse_duration) {
+            pulseradius = (getservertime(localclientnum) - starttime) / level.weaponvisionpulse.gadget_pulse_duration * 2000;
         }
         t = elapsedtime % fadeout_duration;
         if (t < var_42a54adc) {
@@ -435,7 +438,9 @@ function vision_pulse_changed(localclientnum, oldval, newval, bnewent, binitials
         self function_116b95e5(self.var_1618a13f, #"hash_7c1a0903a45d4d45", 0);
         self function_116b95e5(self.var_1618a13f, #"hash_51ebcff0b5d75894", 0);
         self function_116b95e5(self.var_1618a13f, #"hash_2efccfad2b32081a", 1);
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         self thread function_85790e6c(localclientnum);
     }
 }
@@ -450,13 +455,13 @@ function toggle_postfx(localclientnum, oldval, newval, bnewent, binitialsnap, fi
             if (isdefined(self.var_1618a13f) && self postfx::function_556665f2(self.var_1618a13f)) {
                 self postfx::stoppostfxbundle(self.var_1618a13f);
             }
-        } else {
-            if (!isdefined(self.var_1618a13f)) {
-                self.var_1618a13f = #"hash_5a76eaaf7f7e3de5";
-            }
-            if (!self postfx::function_556665f2(self.var_1618a13f)) {
-                self postfx::playpostfxbundle(self.var_1618a13f);
-            }
+            return;
+        }
+        if (!isdefined(self.var_1618a13f)) {
+            self.var_1618a13f = #"hash_5a76eaaf7f7e3de5";
+        }
+        if (!self postfx::function_556665f2(self.var_1618a13f)) {
+            self postfx::playpostfxbundle(self.var_1618a13f);
         }
     }
 }
@@ -474,14 +479,14 @@ function function_ea179305(localclientnum, enabled) {
             if (self postfx::function_556665f2(self.var_1618a13f)) {
                 self postfx::stoppostfxbundle(self.var_1618a13f);
             }
-        } else {
-            if (self postfx::function_556665f2(#"hash_5a76eaaf7f7e3de5")) {
-                self postfx::stoppostfxbundle(#"hash_5a76eaaf7f7e3de5");
-            }
-            if (!self postfx::function_556665f2(#"hash_1356e810590b8caf")) {
-                self.var_1618a13f = #"hash_1356e810590b8caf";
-                self postfx::playpostfxbundle(self.var_1618a13f);
-            }
+            return;
+        }
+        if (self postfx::function_556665f2(#"hash_5a76eaaf7f7e3de5")) {
+            self postfx::stoppostfxbundle(#"hash_5a76eaaf7f7e3de5");
+        }
+        if (!self postfx::function_556665f2(#"hash_1356e810590b8caf")) {
+            self.var_1618a13f = #"hash_1356e810590b8caf";
+            self postfx::playpostfxbundle(self.var_1618a13f);
         }
     }
 }
@@ -496,14 +501,14 @@ function function_9e2a452e(localclientnum, robname) {
     self endon(#"death", #"disconnect", #"rob_cleanup");
     speed = function_c505bc89(localclientnum);
     maxradius = getvisionpulsemaxradius(localclientnum);
-    fadeout_duration = level.var_2e3031be.var_8e0b0827;
+    fadeout_duration = level.weaponvisionpulse.var_8e0b0827;
     jammed = 0;
     if (isplayer(self)) {
         jammed = self clientfield::get("gps_jammer_active");
     }
-    var_8ac8d61d = isdefined(level.var_2e3031be.var_5be370e9) ? level.var_2e3031be.var_5be370e9 : 1;
+    var_8ac8d61d = isdefined(level.weaponvisionpulse.var_5be370e9) ? level.weaponvisionpulse.var_5be370e9 : 1;
     var_6f9f5fef = fadeout_duration * (jammed ? var_8ac8d61d : 1);
-    var_42a54adc = var_6f9f5fef * (isdefined(level.var_2e3031be.var_a2d7b97c) ? level.var_2e3031be.var_a2d7b97c : 0.8);
+    var_42a54adc = var_6f9f5fef * (isdefined(level.weaponvisionpulse.var_a2d7b97c) ? level.weaponvisionpulse.var_a2d7b97c : 0.8);
     elapsedtime = 0;
     owner = self gadgetpulsegetowner(localclientnum);
     while (1) {
@@ -566,12 +571,12 @@ function set_reveal_enemy(localclientnum, on_off) {
                 self function_78233d29(robname, "", "Alpha", 1);
             }
         }
-    } else {
-        self stoprenderoverridebundle(#"hash_75f4d8048e6adb94");
-        self stoprenderoverridebundle(#"hash_62b3e8ea5469c2f5");
-        self function_9b51bc6(localclientnum, 0);
-        self notify(#"rob_cleanup");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_75f4d8048e6adb94");
+    self stoprenderoverridebundle(#"hash_62b3e8ea5469c2f5");
+    self function_9b51bc6(localclientnum, 0);
+    self notify(#"rob_cleanup");
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -584,7 +589,9 @@ function set_reveal_self(localclientnum, on_off) {
     }
     if (on_off && self function_da43934d()) {
         self thread do_vision_local_pulse(localclientnum);
-    } else if (!on_off) {
+        return;
+    }
+    if (!on_off) {
         if (self function_d2503806(#"hash_1978eff2ac047e65")) {
             self stoprenderoverridebundle(#"hash_1978eff2ac047e65");
         }
@@ -614,10 +621,12 @@ function gadget_visionpulse_reveal(localclientnum, breveal) {
                 self.visionpulserevealself = breveal;
                 self set_reveal_self(localclientnum, breveal);
             }
-        } else if (isalive(self) && self.visionpulsereveal != breveal && owner function_e9fc6a64()) {
+            return;
+        }
+        if (isalive(self) && self.visionpulsereveal != breveal && owner function_e9fc6a64()) {
             if (isdefined(breveal) && breveal) {
                 pulseradius = owner function_692b47c1(localclientnum);
-                pulsemaxradius = level.var_2e3031be.gadget_pulse_max_range;
+                pulsemaxradius = level.weaponvisionpulse.gadget_pulse_max_range;
                 var_168d7f5c = int(pulseradius) / int(pulsemaxradius);
                 if (isdefined(self.var_1d0bc391) && self.var_1d0bc391 > 0 && self.var_1d0bc391 >= var_168d7f5c) {
                     return;
@@ -640,7 +649,9 @@ function gadget_visionpulse_reveal(localclientnum, breveal) {
                 self.var_1d0bc391 = 0;
             }
             self set_reveal_enemy(localclientnum, breveal);
-        } else if (!(isdefined(breveal) && breveal)) {
+            return;
+        }
+        if (!(isdefined(breveal) && breveal)) {
             self.var_1d0bc391 = 0;
         }
     }

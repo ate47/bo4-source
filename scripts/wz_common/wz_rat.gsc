@@ -65,7 +65,7 @@ function function_7eabbc02(params) {
         if (isdefined(level.players)) {
             for (i = 0; i < level.players.size; i++) {
                 if (level.players.size <= remaining) {
-                    break;
+                    return;
                 }
                 if (!isdefined(level.players[i].bot) || level.players[i].team == hostteam || level.players[i].team == "<unknown string>") {
                     continue;
@@ -141,8 +141,11 @@ function function_31980089(params) {
                 continue;
             }
             if (isdefined(params.handler)) {
-                jumpiffalse(params.handler != item.var_a6762160.handler && params.handler != "<unknown string>") LOC_000001e4;
-            } else if (name == "<unknown string>" || item.var_a6762160.name == name) {
+                if (params.handler != item.var_a6762160.handler && params.handler != "<unknown string>") {
+                    continue;
+                }
+            }
+            if (name == "<unknown string>" || item.var_a6762160.name == name) {
                 function_55e20e75(params._id, item.origin);
             }
         }

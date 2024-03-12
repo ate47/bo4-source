@@ -35,9 +35,9 @@ function scriptstruct_debug_render() {
             waitresult = level waittill(#"liveupdate");
             if (isdefined(waitresult.selected_struct)) {
                 level thread render_struct(waitresult.selected_struct);
-            } else {
-                level notify(#"stop_struct_render");
+                continue;
             }
+            level notify(#"stop_struct_render");
         }
     #/
 }

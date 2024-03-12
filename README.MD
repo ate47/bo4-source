@@ -61,6 +61,8 @@ Pools dumped ([List of all the pools](https://github.com/ate47/t8-atian-menu/blo
 | ranktable               | 135 | `/tables/rank/table/`               |
 | prestige                | 136 | `/tables/prestige/`                 |
 | prestigetable           | 137 | `/tables/prestige/table/`           |
+| labelstore              | 143 | `/tables/labelstore/`               |
+| labelstorelist          | 144 | `/tables/labelstore/list/`          |
 | \<unused\>              | 151 | EMPTY                               |
 | rawstring               | 157 | `/strings.csv`                      |
 
@@ -74,3 +76,13 @@ Most of the CSV are extracted without the header, you can have some known or gue
 
 - cells starting with a `#` are hashed. an empty cell with a `#` are empty hashed cells
 - cells starting with a `?` are from unknown types.
+
+## Hashes
+
+Thanks to these people for the hashes.
+
+- Serious and the others from the [t8-src](https://github.com/shiversoftdev/t8-src) repository.
+- Scobalula and the others from the [Greyhound package index](https://github.com/Scobalula/GreyhoundPackageIndex) repository.
+- Jek47
+- Luisete2105
+- All the others I forgot to mention.

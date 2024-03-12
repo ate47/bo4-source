@@ -687,12 +687,11 @@ function private function_5e8518bb(n_boon) {
     self endon(#"death");
     if (self.s_boons[n_boon].var_e7a18e05 <= 0) {
         return;
-    } else {
-        for (n_rounds = self.s_boons[n_boon].var_e7a18e05; n_rounds > 0; n_rounds--) {
-            level waittill(#"start_of_round");
-        }
-        self.s_boons[n_boon].b_available = 1;
     }
+    for (n_rounds = self.s_boons[n_boon].var_e7a18e05; n_rounds > 0; n_rounds--) {
+        level waittill(#"start_of_round");
+    }
+    self.s_boons[n_boon].b_available = 1;
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons

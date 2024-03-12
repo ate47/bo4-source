@@ -40,22 +40,22 @@ function event_handler[level_init] main(eventstruct) {
 function function_9fc8cc9c(localclientnum) {
     do {
         wait(1);
-    } while(!isdefined(getent(localclientnum, "altar_icon_0", "targetname")));
+    } while (!isdefined(getent(localclientnum, "altar_icon_0", "targetname")));
     for (i = 0; i < 4; i++) {
-        var_dcf4ea85 = getent(localclientnum, "altar_icon_" + i, "targetname");
-        if (isdefined(var_dcf4ea85)) {
+        mdl_icon = getent(localclientnum, "altar_icon_" + i, "targetname");
+        if (isdefined(mdl_icon)) {
             switch (i) {
             case 0:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_staminup");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_staminup");
                 continue;
             case 1:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_bandolierbandit");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_bandolierbandit");
                 continue;
             case 2:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_timeslip");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_timeslip");
                 continue;
             case 3:
-                var_dcf4ea85 setmodel(#"p8_zm_vapor_altar_icon_01_deadshot");
+                mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_deadshot");
                 continue;
             }
         }
@@ -70,14 +70,16 @@ function tutorial_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         if (self.model == "p8_fxanim_zm_vapor_altar_zeus_mod") {
-            var_e5c7e01a = getent(0, "zeus_bird_head", "targetname");
-            var_e5c7e01a playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
+            mdl_bird = getent(0, "zeus_bird_head", "targetname");
+            mdl_bird playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         }
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self stoprenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         if (self.model == "p8_fxanim_zm_vapor_altar_zeus_mod") {
-            var_e5c7e01a = getent(0, "zeus_bird_head", "targetname");
-            var_e5c7e01a stoprenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
+            mdl_bird = getent(0, "zeus_bird_head", "targetname");
+            mdl_bird stoprenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         }
     }
 }
@@ -93,7 +95,9 @@ function function_a9c8f9d2(localclientnum, oldval, newval, bnewent, binitialsnap
             e_piece = self zbarriergetpiece(n_index);
             e_piece playrenderoverridebundle(#"hash_2ef4d8e5fdbc8a08");
         }
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         n_pieces = self getnumzbarrierpieces();
         for (n_index = 0; n_index < n_pieces; n_index++) {
             e_piece = self zbarriergetpiece(n_index);
@@ -125,7 +129,9 @@ function function_8057ebca(localclientnum, oldval, newval, bnewent, binitialsnap
         v_forward = anglestoforward(self.angles);
         self.blocker_fx = playfx(localclientnum, level._effect[#"hash_1390e08de02cbdc7"], self.origin, v_forward);
         audio::playloopat(#"hash_7c4e89429c24b4bd", self.origin);
-    } else if (isdefined(self.blocker_fx)) {
+        return;
+    }
+    if (isdefined(self.blocker_fx)) {
         stopfx(localclientnum, self.blocker_fx);
         audio::stoploopat(#"hash_7c4e89429c24b4bd", self.origin);
         playsound(0, #"hash_2f2d6d08b47e6395", self.origin);

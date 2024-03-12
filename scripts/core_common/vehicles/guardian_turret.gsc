@@ -119,10 +119,8 @@ function function_e341abb9(totalfiretime, enemy) {
     wait(0.1);
     weapon = guardian seatgetweapon(0);
     firetime = weapon.firetime;
-    time = 0;
-    while (time < totalfiretime) {
+    for (time = 0; time < totalfiretime; time = time + firetime) {
         wait(firetime);
-        time = time + firetime;
     }
 }
 

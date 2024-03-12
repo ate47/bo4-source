@@ -59,7 +59,9 @@ function function_52d66433(inflictor, attacker, damage, flags, meansofdeath, wea
 function on_weapon_change(s_params) {
     if (is_tesla_gun(s_params.weapon)) {
         clientfield::set_to_player("" + #"hash_611f27e5d51d036f", 1);
-    } else if (is_tesla_gun(s_params.last_weapon)) {
+        return;
+    }
+    if (is_tesla_gun(s_params.last_weapon)) {
         clientfield::set_to_player("" + #"hash_611f27e5d51d036f", 0);
     }
 }

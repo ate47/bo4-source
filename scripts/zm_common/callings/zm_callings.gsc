@@ -101,16 +101,16 @@ function function_f3393d6a() {
                 self function_c3be3572(task.task, #"hash_764a5fc3ba8820d2", task.target, task.xp);
             }
         }
-    } else {
-        self.var_eb15d3ac = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_203c6468[self.var_bf6f8ec3].tcmgametype;
-        str_gametype = util::get_game_type();
-        if (self.var_eb15d3ac == str_gametype) {
-            s_tcm = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_203c6468[self.var_bf6f8ec3];
-            foreach (task in s_tcm.var_272b4041) {
-                self function_c3be3572(task.task, #"hash_647ebc7d24425fee", task.target, task.xp);
-            }
-            self function_c3be3572(s_tcm.tcmgoal, #"tcmgoal", s_tcm.tcmgoaltarget, s_tcm.tcmgoalxp, 0, 0);
+        return;
+    }
+    self.var_eb15d3ac = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_203c6468[self.var_bf6f8ec3].tcmgametype;
+    str_gametype = util::get_game_type();
+    if (self.var_eb15d3ac == str_gametype) {
+        s_tcm = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_203c6468[self.var_bf6f8ec3];
+        foreach (task in s_tcm.var_272b4041) {
+            self function_c3be3572(task.task, #"hash_647ebc7d24425fee", task.target, task.xp);
         }
+        self function_c3be3572(s_tcm.tcmgoal, #"tcmgoal", s_tcm.tcmgoaltarget, s_tcm.tcmgoalxp, 0, 0);
     }
 }
 
@@ -125,12 +125,12 @@ function private function_10a1ac3c(var_d1017f27, var_e06cb519, var_bf6f8ec3) {
         } else {
             return self stats::get_stat(#"playercalling", #"seasons", var_e06cb519, #"callings", var_bf6f8ec3, var_d1017f27.var_30c47a21, #"progress");
         }
-    } else {
-        if (!isdefined(var_d1017f27.var_1020847d)) {
-            var_d1017f27.var_1020847d = 0;
-        }
-        return var_d1017f27.var_1020847d;
+        return;
     }
+    if (!isdefined(var_d1017f27.var_1020847d)) {
+        var_d1017f27.var_1020847d = 0;
+    }
+    return var_d1017f27.var_1020847d;
 }
 
 // Namespace zm_callings/zm_callings
@@ -144,12 +144,12 @@ function private function_66714869(var_d1017f27, var_e06cb519, var_bf6f8ec3, n_i
         } else {
             self stats::inc_stat(#"playercalling", #"seasons", var_e06cb519, #"callings", var_bf6f8ec3, var_d1017f27.var_30c47a21, #"progress", n_inc);
         }
-    } else {
-        if (!isdefined(var_d1017f27.var_1020847d)) {
-            var_d1017f27.var_1020847d = 0;
-        }
-        var_d1017f27.var_1020847d = var_d1017f27.var_1020847d + n_inc;
+        return;
     }
+    if (!isdefined(var_d1017f27.var_1020847d)) {
+        var_d1017f27.var_1020847d = 0;
+    }
+    var_d1017f27.var_1020847d = var_d1017f27.var_1020847d + n_inc;
 }
 
 // Namespace zm_callings/zm_callings
@@ -163,9 +163,9 @@ function private function_a6a40735(var_d1017f27, var_e06cb519, var_bf6f8ec3, n_v
     if (isdefined(var_d1017f27.var_949f9254) && var_d1017f27.var_949f9254 || var_32a60884) {
         if (isdefined(var_d1017f27.var_52ac6e9c) && var_d1017f27.var_52ac6e9c) {
             self stats::set_stat(#"playercalling", #"seasons", var_e06cb519, #"callings", var_bf6f8ec3, var_d1017f27.var_30c47a21, var_d1017f27.var_4a01cb77, #"progress", n_value);
-        } else {
-            self stats::set_stat(#"playercalling", #"seasons", var_e06cb519, #"callings", var_bf6f8ec3, var_d1017f27.var_30c47a21, #"progress", n_value);
+            return;
         }
+        self stats::set_stat(#"playercalling", #"seasons", var_e06cb519, #"callings", var_bf6f8ec3, var_d1017f27.var_30c47a21, #"progress", n_value);
     }
 }
 
@@ -237,10 +237,10 @@ function function_4368582a(var_d1017f27, n_value = 1) {
             #/
             self function_66714869(var_d1017f27, self.var_e06cb519, self.var_bf6f8ec3, n_value);
         }
-    } else {
-        /#
-            return self function_10a1ac3c(var_d1017f27, self.var_e06cb519, self.var_bf6f8ec3);
-        #/
+        return;
     }
+    /#
+        return self function_10a1ac3c(var_d1017f27, self.var_e06cb519, self.var_bf6f8ec3);
+    #/
 }
 

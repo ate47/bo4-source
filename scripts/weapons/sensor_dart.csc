@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xce3d8b2e, Offset: 0x218
 // Size: 0xd4
 function init_shared(localclientnum) {
@@ -27,7 +27,7 @@ function init_shared(localclientnum) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8042f98f, Offset: 0x2f8
 // Size: 0x1a
 function arrow_spawned(localclientnum) {
@@ -35,7 +35,7 @@ function arrow_spawned(localclientnum) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc4582f1a, Offset: 0x320
 // Size: 0x24
 function player_init(localclientnum) {
@@ -43,7 +43,7 @@ function player_init(localclientnum) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 7, eflags: 0x5 linked
+// Params 7, eflags: 0x4
 // Checksum 0xff544c97, Offset: 0x350
 // Size: 0x162
 function private function_73021afc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -63,17 +63,17 @@ function private function_73021afc(localclientnum, oldval, newval, bnewent, bini
     case 0:
     default:
         self disablevisioncircle(localclientnum);
-        break;
+        return;
     case 1:
         self thread function_a252eaf0(localclientnum);
         self thread function_e3a084cd(localclientnum);
         self hideunseencompassicon();
-        break;
+        return;
     }
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7475ba8d, Offset: 0x4c0
 // Size: 0x84
 function private function_a252eaf0(localclientnum) {
@@ -86,7 +86,7 @@ function private function_a252eaf0(localclientnum) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8f6d6c96, Offset: 0x550
 // Size: 0x584
 function private function_e3a084cd(localclientnum) {
@@ -132,9 +132,9 @@ function private function_e3a084cd(localclientnum) {
         parent = self getlinkedent();
         if (isdefined(parent) || var_dc3f8ecd == self.origin) {
             var_3d3d7bb1 = var_3d3d7bb1 + getservertime(localclientnum) - var_450cbe48;
-        } else {
-            var_3d3d7bb1 = 0;
+            continue;
         }
+        var_3d3d7bb1 = 0;
     }
     if (isdefined(self.var_b44c157f)) {
         self.var_b44c157f delete();
@@ -152,7 +152,7 @@ function private function_e3a084cd(localclientnum) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x8d12b6, Offset: 0xae0
 // Size: 0x3c
 function private on_game_ended(localclientnum) {
@@ -161,7 +161,7 @@ function private on_game_ended(localclientnum) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xcf8c795f, Offset: 0xb28
 // Size: 0xcc
 function function_6527a2e9(localclientnum, animname, prevanim) {
@@ -175,7 +175,7 @@ function function_6527a2e9(localclientnum, animname, prevanim) {
 }
 
 // Namespace sensor_dart/sensor_dart
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b68b1de, Offset: 0xc00
 // Size: 0x54
 function function_e140ca2b(localclientnum) {

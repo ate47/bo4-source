@@ -90,9 +90,11 @@ function function_3f8da82c() {
         if (s_notify.weapon === level.w_hand_hemera || s_notify.weapon === level.w_hand_hemera_upgraded) {
             self.var_e34577ca = undefined;
             self thread function_54922a21();
-        } else if (isdefined(self.var_8999a4bf)) {
-            self.var_8999a4bf clientfield::set("" + #"hemera_beam", 0);
-            self.var_8999a4bf delete();
+            continue;
+        }
+        if (isdefined(self.mdl_beam)) {
+            self.mdl_beam clientfield::set("" + #"hemera_beam", 0);
+            self.mdl_beam delete();
         }
     }
 }
@@ -163,7 +165,7 @@ function function_54922a21() {
         while ((self.chargeshotlevel != 2 || !self attackbuttonpressed()) && (self.currentweapon === level.w_hand_hemera || self.currentweapon === level.w_hand_hemera_upgraded)) {
             waitframe(1);
         }
-        self thread function_b27148c8(self.currentweapon);
+        self thread player_charged_shot(self.currentweapon);
         self waittill(#"weapon_fired", #"stop_beaming");
         while (self.chargeshotlevel >= 2) {
             waitframe(1);
@@ -518,9 +520,9 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, b_char
             }
             break;
         }
-    } else {
-        e_target dodamage(n_damage, self.origin, self, undefined, "none", "MOD_UNKNOWN", 0, weapon);
+        return;
     }
+    e_target dodamage(n_damage, self.origin, self, undefined, "none", "MOD_UNKNOWN", 0, weapon);
 }
 
 // Namespace zm_weap_hand_hemera/zm_weap_hand_hemera
@@ -556,13 +558,13 @@ function function_3f079da() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x6331b158, Offset: 0x25c0
 // Size: 0x3b6
-function function_b27148c8(weapon) {
+function player_charged_shot(weapon) {
     self endoncallback(&function_8a56ed15, #"death", #"disconnect", #"weapon_change", #"weapon_fired", #"stop_beaming");
     v_trace = self function_3f079da();
     v_ground = groundtrace(v_trace + vectorscale((0, 0, 1), 200), v_trace + vectorscale((0, 0, -1), 1000), 0, self)[#"position"];
-    if (!isdefined(self.var_8999a4bf)) {
-        self.var_8999a4bf = util::spawn_model("tag_origin", v_ground);
-        if (!isdefined(self.var_8999a4bf)) {
+    if (!isdefined(self.mdl_beam)) {
+        self.mdl_beam = util::spawn_model("tag_origin", v_ground);
+        if (!isdefined(self.mdl_beam)) {
             self notify(#"stop_beaming");
             return;
         }
@@ -571,7 +573,7 @@ function function_b27148c8(weapon) {
     }
     self notify(#"hash_4969a839c4e666dc");
     self clientfield::set("hemera_beam_flash", 1);
-    self.var_8999a4bf clientfield::set("" + #"hemera_beam", 1);
+    self.mdl_beam clientfield::set("" + #"hemera_beam", 1);
     self playsound(#"hash_1f3a25ed02b0fb5f");
     self thread function_1e39fbc5(weapon);
     self thread function_8bf301a6();
@@ -584,14 +586,14 @@ function function_b27148c8(weapon) {
         if (isdefined(v_trace)) {
             v_ground = groundtrace(v_trace + vectorscale((0, 0, 1), 100), v_trace + vectorscale((0, 0, -1), 1000), 0, self)[#"position"];
         }
-        if (isdefined(v_ground) && isdefined(self.var_8999a4bf)) {
-            self.var_8999a4bf moveto(v_ground, 0.3);
+        if (isdefined(v_ground) && isdefined(self.mdl_beam)) {
+            self.mdl_beam moveto(v_ground, 0.3);
         }
     }
     self clientfield::set("hemera_beam_flash", 0);
-    if (isdefined(self.var_8999a4bf)) {
-        self.var_8999a4bf clientfield::set("" + #"hemera_beam", 0);
-        self.var_8999a4bf delete();
+    if (isdefined(self.mdl_beam)) {
+        self.mdl_beam clientfield::set("" + #"hemera_beam", 0);
+        self.mdl_beam delete();
     }
     self notify(#"stop_beaming");
 }
@@ -603,10 +605,10 @@ function function_b27148c8(weapon) {
 function function_8a56ed15(s_notify) {
     self endon(#"death");
     self clientfield::set("hemera_beam_flash", 0);
-    if (isdefined(self.var_8999a4bf)) {
+    if (isdefined(self.mdl_beam)) {
         self playsound(#"hash_7aeea3d29c1624a");
-        self.var_8999a4bf clientfield::set("" + #"hemera_beam", 0);
-        self.var_8999a4bf delete();
+        self.mdl_beam clientfield::set("" + #"hemera_beam", 0);
+        self.mdl_beam delete();
     }
     wait(0.1);
     self.var_e34577ca = undefined;
@@ -632,7 +634,7 @@ function function_a2065170() {
 // Size: 0x214
 function function_8bf301a6() {
     self endon(#"death", #"weapon_change", #"stop_beaming");
-    self.var_8999a4bf endon(#"death");
+    self.mdl_beam endon(#"death");
     if (self.currentweapon === level.w_hand_hemera_upgraded) {
         n_damage = 8500;
         n_range = 10000;
@@ -644,7 +646,7 @@ function function_8bf301a6() {
     while (1) {
         a_e_targets = zm_hero_weapon::function_7c3681f7();
         foreach (e_target in a_e_targets) {
-            if (isalive(e_target) && !(isdefined(e_target.var_8ac7cc49) && e_target.var_8ac7cc49) && !(isdefined(e_target.var_339655cf) && e_target.var_339655cf) && !(isdefined(e_target.var_aea6e035) && e_target.var_aea6e035) && distance2dsquared(self.var_8999a4bf.origin, e_target.origin) <= n_range) {
+            if (isalive(e_target) && !(isdefined(e_target.var_8ac7cc49) && e_target.var_8ac7cc49) && !(isdefined(e_target.var_339655cf) && e_target.var_339655cf) && !(isdefined(e_target.var_aea6e035) && e_target.var_aea6e035) && distance2dsquared(self.mdl_beam.origin, e_target.origin) <= n_range) {
                 self thread function_dced5aef(e_target, level.w_hand_hemera, n_damage, 1);
             }
         }
@@ -668,7 +670,7 @@ function function_1e39fbc5(weapon) {
         }
         w_hand = self getcurrentweapon();
         if (w_hand != weapon) {
-            break;
+            return;
         }
         self setweaponammoclip(weapon, n_ammo);
         if (n_ammo < 1) {

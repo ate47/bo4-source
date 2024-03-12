@@ -107,7 +107,7 @@ function function_eb218e8d() {
             } else {
                 getlocalplayers()[0] serverfield::set("billiard_ball_sunk_sf", self.script_int);
             }
-            break;
+            return;
         }
         waitframe(1);
     }
@@ -148,17 +148,17 @@ function function_68e49445(localclientnum, oldval, newval, bnewent, binitialsnap
         forcestreamxmodel("p8_zm_man_cabinet_billiard_ball_07");
         forcestreamxmodel("p8_zm_man_cabinet_billiard_ball_08");
         forcestreamxmodel("p8_zm_man_cabinet_billiard_ball_09");
-    } else {
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_01");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_02");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_03");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_04");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_05");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_06");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_07");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_08");
-        stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_09");
+        return;
     }
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_01");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_02");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_03");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_04");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_05");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_06");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_07");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_08");
+    stopforcestreamingxmodel("p8_zm_man_cabinet_billiard_ball_09");
 }
 
 // Namespace mansion_storage/zm_mansion_storage
@@ -168,9 +168,9 @@ function function_68e49445(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_2dbadedf(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         forcestreamxmodel("p8_zm_silver_bullet_pile_01");
-    } else {
-        stopforcestreamingxmodel("p8_zm_silver_bullet_pile_01");
+        return;
     }
+    stopforcestreamingxmodel("p8_zm_silver_bullet_pile_01");
 }
 
 // Namespace mansion_storage/zm_mansion_storage

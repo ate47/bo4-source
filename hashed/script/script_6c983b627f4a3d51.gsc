@@ -116,10 +116,10 @@ function function_53bac096(b_hide) {
         foreach (mdl in level.var_bb7822b7) {
             mdl ghost();
         }
-    } else {
-        foreach (mdl in level.var_bb7822b7) {
-            mdl show();
-        }
+        return;
+    }
+    foreach (mdl in level.var_bb7822b7) {
+        mdl show();
     }
 }
 

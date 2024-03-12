@@ -44,15 +44,15 @@ function acid_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         playsound(localclientnum, #"hash_68f3e5dbc3422363", self.origin);
         audio::playloopat("zmb_trap_acid_loop", self.origin);
         self.var_91180673 = util::playfxontag(localclientnum, level._effect[#"acid_spray"], self, "tag_origin");
-    } else {
-        playsound(localclientnum, #"hash_4da8231bc8767676", self.origin);
-        audio::stoploopat("zmb_trap_acid_loop", self.origin);
-        if (isdefined(self.var_91180673)) {
-            stopfx(localclientnum, self.var_91180673);
-            self.var_91180673 = undefined;
-        }
-        playfx(localclientnum, level._effect[#"acid_spray_death"], self.origin);
+        return;
     }
+    playsound(localclientnum, #"hash_4da8231bc8767676", self.origin);
+    audio::stoploopat("zmb_trap_acid_loop", self.origin);
+    if (isdefined(self.var_91180673)) {
+        stopfx(localclientnum, self.var_91180673);
+        self.var_91180673 = undefined;
+    }
+    playfx(localclientnum, level._effect[#"acid_spray_death"], self.origin);
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
@@ -63,7 +63,9 @@ function acid_trap_death_fx(localclientnum, oldval, newval, bnewent, binitialsna
     if (newval == 1) {
         self.n_acid_trap_death_fx = util::playfxontag(localclientnum, level._effect[#"hash_294b19c300d1b482"], self, "tag_stowed_back");
         playsound(localclientnum, #"hash_4d4c9f8ad239b61f", self.origin);
-    } else if (isdefined(self.n_acid_trap_death_fx)) {
+        return;
+    }
+    if (isdefined(self.n_acid_trap_death_fx)) {
         stopfx(localclientnum, self.n_acid_trap_death_fx);
         self.n_acid_trap_death_fx = undefined;
     }
@@ -90,12 +92,12 @@ function player_acid_trap_post_fx(localclientnum, oldval, newval, bnewent, binit
         if (self zm_utility::function_f8796df3(localclientnum)) {
             self.var_7a7fac87 = playviewmodelfx(localclientnum, level._effect[#"hash_5647f8e593893bce"], "j_wrist_ri");
         }
-    } else {
-        self notify(#"player_acid_trap_post_fx_complete");
-        if (isdefined(self.var_431ddde9)) {
-            self stoploopsound(self.var_431ddde9);
-            self.var_431ddde9 = undefined;
-        }
+        return;
+    }
+    self notify(#"player_acid_trap_post_fx_complete");
+    if (isdefined(self.var_431ddde9)) {
+        self stoploopsound(self.var_431ddde9);
+        self.var_431ddde9 = undefined;
     }
 }
 
@@ -162,13 +164,13 @@ function fire_trap_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fie
         playsound(localclientnum, #"hash_370460eab1a33ee6", self.origin);
         audio::playloopat("wpn_fire_trap_loop", self.origin);
         self.var_91180673 = util::playfxontag(localclientnum, level._effect[#"hash_44ccd33973542202"], self, "tag_origin");
-    } else {
-        playsound(localclientnum, #"hash_5d8ec72f0838594e", self.origin);
-        audio::stoploopat("wpn_fire_trap_loop", self.origin);
-        if (isdefined(self.var_91180673)) {
-            stopfx(localclientnum, self.var_91180673);
-            self.var_91180673 = undefined;
-        }
+        return;
+    }
+    playsound(localclientnum, #"hash_5d8ec72f0838594e", self.origin);
+    audio::stoploopat("wpn_fire_trap_loop", self.origin);
+    if (isdefined(self.var_91180673)) {
+        stopfx(localclientnum, self.var_91180673);
+        self.var_91180673 = undefined;
     }
 }
 
@@ -187,9 +189,9 @@ function player_fire_trap_post_fx(localclientnum, oldval, newval, bnewent, binit
         self notify(#"player_fire_trap_post_fx_complete");
         self thread function_33da4ab(localclientnum);
         self thread postfx::playpostfxbundle(#"pstfx_zm_fire_blue_trap");
-    } else {
-        self notify(#"player_fire_trap_post_fx_complete");
+        return;
     }
+    self notify(#"player_fire_trap_post_fx_complete");
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
@@ -264,8 +266,8 @@ function rumble_spinning_trap(localclientnum, oldval, newval, bnewent, binitials
             }
             wait(0.25);
         }
-    } else {
-        self notify(#"hash_6fb55d3438a8d5fa");
+        return;
     }
+    self notify(#"hash_6fb55d3438a8d5fa");
 }
 

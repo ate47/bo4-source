@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_supply_stash/wz_supply_stash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1308362f, Offset: 0x160
 // Size: 0x34
 function __init__() {
@@ -26,19 +26,21 @@ function __init__() {
 }
 
 // Namespace wz_supply_stash/wz_supply_stash
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x2bde5eb2, Offset: 0x1a0
 // Size: 0x124
 function private on_localclient_connect(localclientnum) {
     if (isdefined(getgametypesetting(#"wzenablebountyhuntervehicles")) && getgametypesetting(#"wzenablebountyhuntervehicles") || isdefined(getgametypesetting(#"hash_23e09b48546a7e3b")) && getgametypesetting(#"hash_23e09b48546a7e3b")) {
         level thread function_53d906fd(localclientnum);
-    } else if (isdefined(getgametypesetting("infectionMode")) && getgametypesetting("infectionMode")) {
+        return;
+    }
+    if (isdefined(getgametypesetting("infectionMode")) && getgametypesetting("infectionMode")) {
         level thread function_fd3f6235(localclientnum);
     }
 }
 
 // Namespace wz_supply_stash/wz_supply_stash
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x6c428957, Offset: 0x2d0
 // Size: 0x2bc
 function private function_53d906fd(localclientnum) {
@@ -72,7 +74,7 @@ function private function_53d906fd(localclientnum) {
 }
 
 // Namespace wz_supply_stash/wz_supply_stash
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x24d5c1c7, Offset: 0x598
 // Size: 0x19c
 function private function_fd3f6235(localclientnum) {
@@ -98,7 +100,7 @@ function private function_fd3f6235(localclientnum) {
 }
 
 // Namespace wz_supply_stash/wz_supply_stash
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x31e3e982, Offset: 0x740
 // Size: 0xae
 function update_fx(localclientnum, playfx, state) {
@@ -106,7 +108,9 @@ function update_fx(localclientnum, playfx, state) {
         if (!isdefined(self.var_d3d42148)) {
             self.var_d3d42148 = playfx(localclientnum, #"hash_6bcc939010112ea", self.origin);
         }
-    } else if (isdefined(self.var_d3d42148)) {
+        return;
+    }
+    if (isdefined(self.var_d3d42148)) {
         stopfx(localclientnum, self.var_d3d42148);
         self.var_d3d42148 = undefined;
     }

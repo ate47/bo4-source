@@ -374,7 +374,9 @@ function getbestweightedspawnpoint(spawnpoints) {
                 bestspawnpoints = [];
                 bestspawnpoints[0] = spawnpoints[i];
                 bestweight = spawnpoints[i].weight;
-            } else if (spawnpoints[i].weight == bestweight) {
+                continue;
+            }
+            if (spawnpoints[i].weight == bestweight) {
                 if (positionwouldtelefrag(spawnpoints[i].origin)) {
                     continue;
                 }
@@ -803,11 +805,11 @@ function getallotherplayers() {
             continue;
         }
         if (isdefined(level.var_764e1cfd)) {
-            jumpiftrue([[ level.var_764e1cfd ]](player)) LOC_000000b8;
-        } else {
-        LOC_000000b8:
-            aliveplayers[aliveplayers.size] = player;
+            if (![[ level.var_764e1cfd ]](player)) {
+                continue;
+            }
         }
+        aliveplayers[aliveplayers.size] = player;
     }
     return aliveplayers;
 }
@@ -832,17 +834,20 @@ function getallalliedandenemyplayers(obj) {
                 continue;
             }
             if (isdefined(level.var_764e1cfd)) {
-                jumpiftrue([[ level.var_764e1cfd ]](player)) LOC_00000104;
-            } else if (player.team == self.team) {
-                obj.allies[obj.allies.size] = player;
-            } else {
-                obj.enemies[obj.enemies.size] = player;
+                if (![[ level.var_764e1cfd ]](player)) {
+                    continue;
+                }
             }
+            if (player.team == self.team) {
+                obj.allies[obj.allies.size] = player;
+                continue;
+            }
+            obj.enemies[obj.enemies.size] = player;
         }
-    } else {
-        obj.allies = [];
-        obj.enemies = level.activeplayers;
+        return;
     }
+    obj.allies = [];
+    obj.enemies = level.activeplayers;
 }
 
 // Namespace spawnlogic/spawnlogic
@@ -882,15 +887,15 @@ function spawnpointupdate_zm(spawnpoint) {
             continue;
         }
         if (isdefined(level.var_764e1cfd)) {
-            jumpiftrue([[ level.var_764e1cfd ]](player)) LOC_00000178;
-        } else {
-        LOC_00000178:
-            dist = distance(spawnpoint.origin, player.origin);
-            spawnpoint.distsum[player.team] = spawnpoint.distsum[player.team] + dist;
-            foreach (team, _ in level.teams) {
-                if (team != player.team) {
-                    spawnpoint.enemydistsum[team] = spawnpoint.enemydistsum[team] + dist;
-                }
+            if (![[ level.var_764e1cfd ]](player)) {
+                continue;
+            }
+        }
+        dist = distance(spawnpoint.origin, player.origin);
+        spawnpoint.distsum[player.team] = spawnpoint.distsum[player.team] + dist;
+        foreach (team, _ in level.teams) {
+            if (team != player.team) {
+                spawnpoint.enemydistsum[team] = spawnpoint.enemydistsum[team] + dist;
             }
         }
     }
@@ -942,22 +947,22 @@ function getspawnpoint_nearteam(spawnpoints, favoredspawnpoints, forceallydistan
                     spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>" + int(spawnpoint.weight) + "<unknown string>" + enemydistanceweight + "<unknown string>" + int(enemydistsum) + "<unknown string>" + allieddistanceweight + "<unknown string>" + int(allydistsum) + "<unknown string>" + spawnpoint.numplayersatlastupdate;
                 }
             #/
-        } else {
-            spawnpoint.weight = 0;
-            /#
-                if (level.storespawndata || level.debugspawning) {
-                    spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>";
-                }
-            #/
+            continue;
         }
+        spawnpoint.weight = 0;
+        /#
+            if (level.storespawndata || level.debugspawning) {
+                spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>";
+            }
+        #/
     }
     if (isdefined(favoredspawnpoints)) {
         for (i = 0; i < favoredspawnpoints.size; i++) {
             if (isdefined(favoredspawnpoints[i].weight)) {
                 favoredspawnpoints[i].weight = favoredspawnpoints[i].weight + k_favored_spawn_point_bonus;
-            } else {
-                favoredspawnpoints[i].weight = k_favored_spawn_point_bonus;
+                continue;
             }
+            favoredspawnpoints[i].weight = k_favored_spawn_point_bonus;
         }
     }
     avoidsamespawn(spawnpoints);
@@ -1304,9 +1309,7 @@ function loopbotspawns() {
                     lastvictim = undefined;
                     for (index = 0; index < numkills; index++) {
                         killer = bots[randomint(bots.size)];
-                        victim = bots[randomint(bots.size)];
-                        while (isdefined(lastvictim) && victim == lastvictim) {
-                            victim = bots[randomint(bots.size)];
+                        for (victim = bots[randomint(bots.size)]; isdefined(lastvictim) && victim == lastvictim; victim = bots[randomint(bots.size)]) {
                         }
                         victim thread [[ level.callbackplayerdamage ]](killer, killer, 1000, 0, "<unknown string>", level.weaponnone, (0, 0, 0), (0, 0, 0), "<unknown string>", 0, 0);
                         lastvictim = victim;
@@ -1315,9 +1318,9 @@ function loopbotspawns() {
             }
             if (getdvarstring(#"scr_killbottimer") != "<unknown string>") {
                 wait(getdvarfloat(#"scr_killbottimer", 0));
-            } else {
-                waitframe(1);
+                continue;
             }
+            waitframe(1);
         }
     #/
 }
@@ -1440,7 +1443,7 @@ function spawnweightdebug(spawnpoints) {
             }
             textoffset = vectorscale((0, 0, -1), 12);
             for (i = 0; i < spawnpoints.size; i++) {
-                amnt = 1 * (1 - spawnpoints[i].weight / 100000);
+                amnt = 1 * (1 - spawnpoints[i].weight / -100000);
                 if (amnt < 0) {
                     amnt = 0;
                 }
@@ -1724,11 +1727,11 @@ function spawnpointupdate(spawnpoint) {
             spawnpoint.distsum[team] = distsum[team];
             spawnpoint.enemydistsum[team] = getnonteamsum(team, distsum);
         }
-    } else {
-        spawnpoint.distsum[#"all"] = distsum[#"all"];
-        spawnpoint.enemydistsum[#"all"] = distsum[#"all"];
-        spawnpoint.minenemydist[#"all"] = mindist[#"all"];
+        return;
     }
+    spawnpoint.distsum[#"all"] = distsum[#"all"];
+    spawnpoint.enemydistsum[#"all"] = distsum[#"all"];
+    spawnpoint.minenemydist[#"all"] = mindist[#"all"];
 }
 
 // Namespace spawnlogic/spawnlogic
@@ -1775,7 +1778,9 @@ function lastminutesighttraces(spawnpoint) {
                 secondclosestdistsq = closestdistsq;
                 closest = player;
                 closestdistsq = distsq;
-            } else if (!isdefined(secondclosest) || distsq < secondclosestdistsq) {
+                continue;
+            }
+            if (!isdefined(secondclosest) || distsq < secondclosestdistsq) {
                 secondclosest = player;
                 secondclosestdistsq = distsq;
             }
@@ -1906,9 +1911,9 @@ function avoidspawnreuse(spawnpoints, teambased) {
             } else {
                 spawnpoint.lastspawnedplayer = undefined;
             }
-        } else {
-            spawnpoint.lastspawnedplayer = undefined;
+            continue;
         }
+        spawnpoint.lastspawnedplayer = undefined;
     }
 }
 
@@ -1931,7 +1936,7 @@ function avoidsamespawn(spawnpoints) {
                     spawnpoints[i].spawndata[spawnpoints[i].spawndata.size] = "<unknown string>";
                 }
             #/
-            break;
+            return;
         }
     }
 }

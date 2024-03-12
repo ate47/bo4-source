@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x1720da32, Offset: 0x178
 // Size: 0x64
 function private __init__() {
@@ -24,7 +24,7 @@ function private __init__() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x85974f0, Offset: 0x1e8
 // Size: 0x14
 function ai_init() {
@@ -32,7 +32,7 @@ function ai_init() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1d0207f1, Offset: 0x208
 // Size: 0xc8
 function function_41822a58() {
@@ -45,7 +45,7 @@ function function_41822a58() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbbef4c30, Offset: 0x2d8
 // Size: 0x5b0
 function function_afce0cdb(spawn_loc) {
@@ -131,7 +131,7 @@ function function_f7c5e2f0(point, mins, maxs) {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x17a5ee8, Offset: 0x950
 // Size: 0x128
 function function_77a4c7ab() {
@@ -169,7 +169,7 @@ function function_c5fad73b(type) {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa912df1a, Offset: 0xae8
 // Size: 0x80
 function function_9fc23101(patroller) {
@@ -193,7 +193,7 @@ function function_ff88da82(origin, angles, items) {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5db96e67, Offset: 0xba0
 // Size: 0x23c
 function function_f8e46115(node, oldgoalradius) {
@@ -234,7 +234,7 @@ function function_f8e46115(node, oldgoalradius) {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x63db72a5, Offset: 0xde8
 // Size: 0xcc
 function function_7820dead() {
@@ -253,7 +253,7 @@ function function_7820dead() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6e4cf2e5, Offset: 0xec0
 // Size: 0x1c0
 function function_b25a6169() {
@@ -290,7 +290,7 @@ function function_b25a6169() {
 }
 
 // Namespace wz_ai/wz_ai
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd927a6d8, Offset: 0x1088
 // Size: 0x128
 function function_af46682(patroller) {

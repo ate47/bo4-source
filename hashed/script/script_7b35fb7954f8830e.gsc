@@ -35,7 +35,9 @@ function function_3224694(localclientnum, oldval, newval, bnewent, binitialsnap,
                 self playsound(localclientnum, #"hash_1780eaf4c052b271");
                 self.var_30b8668 = self playloopsound(#"hash_13b5daba3191a299");
             }
-        } else if (newval == 0) {
+            return;
+        }
+        if (newval == 0) {
             if (isdefined(self.fx_handle)) {
                 deletefx(localclientnum, self.fx_handle);
                 self.fx_handle = undefined;
@@ -67,7 +69,9 @@ function function_67fa988c(localclientnum, oldval, newval, bnewent, binitialsnap
     if (isdefined(self)) {
         if (newval == 1) {
             self.fx_handle = util::playfxontag(localclientnum, "zm_weapons/fx8_music_box_open_world", self, "tag_origin");
-        } else if (newval == 0) {
+            return;
+        }
+        if (newval == 0) {
             if (isdefined(self.fx_handle)) {
                 deletefx(localclientnum, self.fx_handle);
                 self.fx_handle = undefined;
@@ -100,7 +104,9 @@ function function_e722a4fd(localclientnum, oldval, newval, bnewent, binitialsnap
     if (isdefined(self)) {
         if (newval == 1) {
             self.fx_id = util::playfxontag(localclientnum, "zm_weapons/fx8_music_box_zombie_flame_trail", self, "j_spine4");
-        } else if (newval == 0) {
+            return;
+        }
+        if (newval == 0) {
             if (isdefined(self.fx_id)) {
                 deletefx(localclientnum, self.fx_id);
                 self.fx_id = undefined;

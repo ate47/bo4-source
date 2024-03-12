@@ -79,16 +79,16 @@ function function_2400dd1d(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, #"hash_5e1e162af8490f1d");
             self.var_2ec16150 = self playloopsound(#"hash_641286598a33d4e3");
         }
-    } else {
-        if (isdefined(self.var_f9c892e3[localclientnum])) {
-            deletefx(localclientnum, self.var_f9c892e3[localclientnum], 0);
-            self.var_f9c892e3[localclientnum] = undefined;
-        }
-        if (isdefined(self.var_2ec16150)) {
-            self playsound(localclientnum, #"hash_73b66a25abec1fe4");
-            self stoploopsound(self.var_2ec16150);
-            self.var_2ec16150 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_f9c892e3[localclientnum])) {
+        deletefx(localclientnum, self.var_f9c892e3[localclientnum], 0);
+        self.var_f9c892e3[localclientnum] = undefined;
+    }
+    if (isdefined(self.var_2ec16150)) {
+        self playsound(localclientnum, #"hash_73b66a25abec1fe4");
+        self stoploopsound(self.var_2ec16150);
+        self.var_2ec16150 = undefined;
     }
 }
 

@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c67c230, Offset: 0xe0
 // Size: 0x1c
 function __init__() {

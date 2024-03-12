@@ -20,7 +20,9 @@ function preload() {
 function function_db7a9c9d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval > 0) {
         self.var_af793e2d = util::playfxontag(localclientnum, level._effect[#"sam_orb"], self, "tag_origin");
-    } else if (isdefined(self.var_af793e2d)) {
+        return;
+    }
+    if (isdefined(self.var_af793e2d)) {
         stopfx(localclientnum, self.var_af793e2d);
     }
 }

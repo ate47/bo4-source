@@ -158,9 +158,9 @@ function stop_bundle(flag, bundle, force_kill) {
         self flag::toggle(flag);
         if (force_kill === 1) {
             self function_f6e99a8d(bundle);
-        } else {
-            self stoprenderoverridebundle(bundle);
+            return;
         }
+        self stoprenderoverridebundle(bundle);
     }
 }
 
@@ -320,7 +320,9 @@ function function_f4eab437(local_client_num, should_play, bundle, var_d9c61b9c) 
         if (!is_playing) {
             self playrenderoverridebundle(bundle);
         }
-    } else if (is_playing) {
+        return;
+    }
+    if (is_playing) {
         self stoprenderoverridebundle(bundle);
     }
 }

@@ -52,9 +52,9 @@ function tomahawk_in_use(localclientnum, oldval, newval, bnewent, binitialsnap, 
     /#
         if (newval == 1) {
             iprintlnbold("<unknown string>");
-        } else {
-            iprintlnbold("<unknown string>");
+            return;
         }
+        iprintlnbold("<unknown string>");
     #/
 }
 
@@ -70,7 +70,9 @@ function play_tomahawk_pickup_fx(localclientnum, oldval, newval, bnewent, biniti
                 stopfx(localclientnum, self.n_fx_id);
                 self.n_fx_id = util::playfxontag(localclientnum, level._effect[#"tomahawk_pickup"], self, "tag_origin");
             }
-        } else if (newval == 2) {
+            return;
+        }
+        if (newval == 2) {
             if (isdefined(self.n_fx_id)) {
                 stopfx(localclientnum, self.n_fx_id);
                 self.n_fx_id = util::playfxontag(localclientnum, level._effect[#"tomahawk_pickup"], self, "tag_origin");
@@ -83,7 +85,9 @@ function play_tomahawk_pickup_fx(localclientnum, oldval, newval, bnewent, biniti
             stopfx(localclientnum, self.n_fx_id);
         }
         self.n_fx_id = util::playfxontag(localclientnum, level._effect[#"tomahawk_pickup"], self, "tag_origin");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         if (isdefined(self.n_fx_id)) {
             stopfx(localclientnum, self.n_fx_id);
         }
@@ -113,11 +117,17 @@ function tomahawk_trail_fx(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"tomahawk_trail"], self, "tag_fx");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"tomahawk_trail_ug"], self, "tag_fx");
-    } else if (newval == 3) {
+        return;
+    }
+    if (newval == 3) {
         self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"tomahawk_charged_trail"], self, "tag_fx");
-    } else if (newval == 4) {
+        return;
+    }
+    if (newval == 4) {
         self.n_trail_fx = util::playfxontag(localclientnum, level._effect[#"hash_f0d62b29afe4b7c"], self, "tag_fx");
     }
 }
@@ -140,7 +150,9 @@ function tomahawk_impact_fx(localclientnum, oldval, newval, bnewent, binitialsna
     if (newval == 1) {
         self.var_d634930c = util::playfxontag(localclientnum, level._effect[#"tomahawk_impact"], self, str_tag);
         util::playfxontag(localclientnum, level._effect[#"tomahawk_fire_dot"], self, var_a4c13d2);
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_d634930c = util::playfxontag(localclientnum, level._effect[#"tomahawk_impact_ug"], self, str_tag);
         util::playfxontag(localclientnum, level._effect[#"tomahawk_fire_dot"], self, var_a4c13d2);
     }
@@ -158,7 +170,9 @@ function tomahawk_charge_up_fx(localclientnum, oldval, newval, bnewent, binitial
     if (newval == 1) {
         self.var_5187b05b = util::playfxontag(localclientnum, level._effect[#"tomahawk_charge_up"], self, "tag_origin");
         self thread function_eea02302();
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         self.var_5187b05b = util::playfxontag(localclientnum, level._effect[#"tomahawk_charge_up_ug"], self, "tag_origin");
         self thread function_eea02302();
     }
@@ -191,10 +205,10 @@ function tomahawk_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsn
         switch (newvalue) {
         case 1:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_catch_rumble");
-            break;
+            return;
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_throw_rumble");
-            break;
+            return;
         }
     }
 }

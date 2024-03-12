@@ -55,9 +55,9 @@ function fog_bank_3_callback(localclientnum, oldval, newval, bnewent, binitialsn
     if (oldval != newval) {
         if (newval == 1) {
             setworldfogactivebank(localclientnum, 4);
-        } else {
-            setworldfogactivebank(localclientnum, 1);
+            return;
         }
+        setworldfogactivebank(localclientnum, 1);
     }
 }
 

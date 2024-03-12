@@ -89,9 +89,9 @@ function zombie_blood_powerup(var_9c0bf2db, e_player) {
             if (e_zombie_blood.e_unique_player == e_player) {
                 e_zombie_blood setvisibletoplayer(e_player);
             }
-        } else {
-            e_zombie_blood setvisibletoplayer(e_player);
+            continue;
         }
+        e_zombie_blood setvisibletoplayer(e_player);
     }
     e_player thread watch_zombie_blood_early_exit();
     while (e_player.zombie_vars[#"zombie_powerup_zombie_blood_time"] >= 0) {
@@ -147,9 +147,9 @@ function make_zombie_blood_entity() {
                 if (self.e_unique_player == e_player) {
                     self setvisibletoplayer(e_player);
                 }
-            } else {
-                self setvisibletoplayer(e_player);
+                continue;
             }
+            self setvisibletoplayer(e_player);
         }
     }
 }

@@ -59,12 +59,12 @@ function function_5095b2c6(func) {
                 #/
                 thread exec_post_system(level.system_funcs[req]);
             }
-        } else {
-            /#
-                assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
-            #/
-            thread exec_post_system(level.system_funcs[func.reqs]);
+            return;
         }
+        /#
+            assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
+        #/
+        thread exec_post_system(level.system_funcs[func.reqs]);
     }
 }
 
@@ -111,12 +111,12 @@ function function_8dfa23e0(func) {
                 #/
                 thread exec_pre_system(level.system_funcs[req]);
             }
-        } else {
-            /#
-                assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
-            #/
-            thread exec_pre_system(level.system_funcs[func.reqs]);
+            return;
         }
+        /#
+            assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
+        #/
+        thread exec_pre_system(level.system_funcs[func.reqs]);
     }
 }
 
@@ -140,7 +140,7 @@ function wait_till(required_systems) {
 }
 
 // Namespace system/system_shared
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb1f4f633, Offset: 0x8a0
 // Size: 0x9a
 function ignore(str_name) {

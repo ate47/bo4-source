@@ -38,10 +38,10 @@ function function_4dfaa84c(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self thread tesla_fx_rail(localclientnum);
         self thread tesla_fx_tube(localclientnum);
-    } else {
-        self notify(#"hash_319d2bba47dac2c4");
-        self clear_tesla_tube_effect(localclientnum);
+        return;
     }
+    self notify(#"hash_319d2bba47dac2c4");
+    self clear_tesla_tube_effect(localclientnum);
 }
 
 // Namespace zm_weap_tesla_gun_t8/zm_weap_tesla_gun_t8

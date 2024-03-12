@@ -64,7 +64,9 @@ function function_43a5b68a(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         self.var_4dc44ba4 = playtagfxset(localclientnum, self.weapon.var_96850284, self);
-    } else if (newval == 0 && oldval == 1 && isdefined(self.var_4dc44ba4)) {
+        return;
+    }
+    if (newval == 0 && oldval == 1 && isdefined(self.var_4dc44ba4)) {
         foreach (fx in self.var_4dc44ba4) {
             stopfx(localclientnum, fx);
         }
@@ -89,7 +91,9 @@ function player_isjammed(localclientnum, oldval, newval, bnewent, binitialsnap, 
         playsound(localclientnum, #"hash_4a43757dd4b02977");
         level.var_6d8e6535[localclientnum] = function_604c9983(localclientnum, #"hash_2be3b9789976a6b");
         self thread function_e9e14905(localclientnum);
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         self postfx::stoppostfxbundle(#"hash_3a2aaa69f5eeab6f");
         if (isdefined(level.var_6d8e6535[localclientnum]) && !bwastimejump) {
             playsound(localclientnum, #"hash_112352517abf5b11");
@@ -117,7 +121,9 @@ function function_e9e14905(localclientnum) {
 function function_4a82368f(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self postfx::playpostfxbundle(#"hash_68b6dee9bf4fbfbe");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         self postfx::stoppostfxbundle(#"hash_68b6dee9bf4fbfbe");
     }
 }

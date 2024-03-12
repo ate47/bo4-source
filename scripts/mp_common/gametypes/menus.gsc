@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace menus/menus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa496ede7, Offset: 0x2c8
 // Size: 0x64
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace menus/menus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9191a0b6, Offset: 0x338
 // Size: 0x1d2
 function init() {
@@ -48,7 +48,7 @@ function init() {
 }
 
 // Namespace menus/menus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7ce467b0, Offset: 0x518
 // Size: 0x54
 function on_player_connect() {
@@ -58,7 +58,7 @@ function on_player_connect() {
 }
 
 // Namespace menus/menus
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa0b0fb4b, Offset: 0x578
 // Size: 0x734
 function on_menu_response(params) {
@@ -103,16 +103,16 @@ function on_menu_response(params) {
         if (!level.gameended) {
             self globallogic::gamehistoryplayerquit();
             level thread globallogic::forceend();
-        } else {
-            if (!function_8b1a219a()) {
-                self closeingamemenu();
-            }
-            if (sessionmodeiswarzonegame()) {
-                level notify(#"hash_197c640e2f684a74");
-            } else {
-                self iprintln(#"hash_6e4cedc56165f367");
-            }
+            return;
         }
+        if (!function_8b1a219a()) {
+            self closeingamemenu();
+        }
+        if (sessionmodeiswarzonegame()) {
+            level notify(#"hash_197c640e2f684a74");
+            return;
+        }
+        self iprintln(#"hash_6e4cedc56165f367");
         return;
     }
     if (response == "autocontrol") {
@@ -144,7 +144,9 @@ function on_menu_response(params) {
             self [[ level.teammenu ]](response);
             break;
         }
-    } else if (menu == game.menu[#"menu_changeclass"] || menu == game.menu[#"menu_changeclass_offline"]) {
+        return;
+    }
+    if (menu == game.menu[#"menu_changeclass"] || menu == game.menu[#"menu_changeclass_offline"]) {
         if (response == "changecharacter" || response == "randomcharacter" || response == "ready" || response == "opendraft" || response == "closedraft") {
             self [[ level.draftmenu ]](response, intpayload);
         } else if (response == "change_specialist") {
@@ -161,22 +163,28 @@ function on_menu_response(params) {
             }
             self [[ level.curclass ]](response, undefined, 1);
         }
-    } else if (menu == "spectate") {
+        return;
+    }
+    if (menu == "spectate") {
         player = util::getplayerfromclientnum(intpayload);
         if (isdefined(player)) {
             self setcurrentspectatorclient(player);
         }
-    } else if (menu == "sprays_and_gestures") {
+        return;
+    }
+    if (menu == "sprays_and_gestures") {
         /#
             iprintlnbold("<unknown string>" + intpayload);
         #/
-    } else if (menu == "callout_items") {
+        return;
+    }
+    if (menu == "callout_items") {
         function_2d1eb0ec(intpayload);
     }
 }
 
 // Namespace menus/menus
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x219ae83, Offset: 0xcb8
 // Size: 0x4de
 function function_2d1eb0ec(intpayload) {
@@ -242,7 +250,7 @@ function function_2d1eb0ec(intpayload) {
 }
 
 // Namespace menus/menus
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xde53988e, Offset: 0x11a0
 // Size: 0x96
 function function_8e00969() {
@@ -258,7 +266,7 @@ function function_8e00969() {
 }
 
 // Namespace menus/menus
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xf9ed237b, Offset: 0x1240
 // Size: 0x3e
 function register_menu_response_callback(menu, callback) {

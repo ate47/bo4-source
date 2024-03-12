@@ -458,9 +458,9 @@ function private function_4660925e(entity) {
 function private gladiatorpickaxe(entity) {
     if (math::cointoss()) {
         entity.var_34cc44de = "left";
-    } else {
-        entity.var_34cc44de = "right";
+        return;
     }
+    entity.var_34cc44de = "right";
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -1061,9 +1061,9 @@ function function_3f7c46a(entity, mocompanim, mocompanimblendouttime, mocompanim
     if (isdefined(entity.favoriteenemy)) {
         if (distancesquared(entity.origin, entity.favoriteenemy.origin) <= 50 * 50) {
             entity animmode("angle deltas");
-        } else {
-            entity animmode("normal");
+            return;
         }
+        entity animmode("normal");
     }
 }
 
@@ -1133,9 +1133,9 @@ function private function_894d3d57(entity) {
             entity notify(#"arm_destroyed");
             entity.axe_model delete();
         }
-    } else {
-        entity destructserverutils::handledamage(entity.damage_info.inflictor, entity.damage_info.attacker, entity.damage_info.damage, entity.damage_info.idflags, entity.damage_info.meansofdeath, entity.damage_info.weapon, entity.damage_info.point, entity.damage_info.dir, hand, entity.damage_info.offsettime, entity.damage_info.boneindex, entity.damage_info.modelindex);
+        return;
     }
+    entity destructserverutils::handledamage(entity.damage_info.inflictor, entity.damage_info.attacker, entity.damage_info.damage, entity.damage_info.idflags, entity.damage_info.meansofdeath, entity.damage_info.weapon, entity.damage_info.point, entity.damage_info.dir, hand, entity.damage_info.offsettime, entity.damage_info.boneindex, entity.damage_info.modelindex);
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -1338,7 +1338,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
     }
     var_ecc54f32 = (0, self.angles[1], 0);
     axe = util::spawn_model("tag_origin", var_23f0c5b3, var_ecc54f32);
-    level notify(#"hash_27a9b4863f38ef7c", {#var_90db0e3c:axe});
+    level notify(#"hash_27a9b4863f38ef7c", {#mdl_axe:axe});
     self.axe_model = axe;
     axe clientfield::set("gladiator_axe_effect", 1);
     /#
@@ -1430,7 +1430,7 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
     trace = physicstrace(axe.origin, move_pos, (-16, -16, -12), (16, 16, 12), self);
     if (trace[#"fraction"] < 1) {
         hit_ent = trace[#"entity"];
-        level notify(#"hash_435816ec8f13c19b", {#hit_ent:hit_ent, #var_90db0e3c:axe, #ai_gladiator:self, #var_f1445bd6:trace});
+        level notify(#"hash_435816ec8f13c19b", {#hit_ent:hit_ent, #mdl_axe:axe, #ai_gladiator:self, #var_f1445bd6:trace});
         if (isdefined(hit_ent)) {
             if (isplayer(hit_ent)) {
                 if (isdefined(hit_ent.hasriotshield) && hit_ent.hasriotshield) {
@@ -1558,7 +1558,9 @@ function private function_5be18f96(display = 1) {
             }
             self.var_fe593357 = 0;
         }
-    } else if (display) {
+        return;
+    }
+    if (display) {
         if (self.has_left_arm && self.var_fe593357) {
             if (self isattached("c_t8_zmb_dlc0_zombie_destroyer_axe1", "tag_weapon_left")) {
                 self detach("c_t8_zmb_dlc0_zombie_destroyer_axe1", "tag_weapon_left");
@@ -1571,7 +1573,9 @@ function private function_5be18f96(display = 1) {
             self attach("c_t8_zmb_dlc0_zombie_destroyer_axe1", "tag_weapon_left");
             self.var_fe593357 = 1;
         }
-    } else if (self.var_88d88318) {
+        return;
+    }
+    if (self.var_88d88318) {
         if (self isattached("c_t8_zmb_dlc0_zombie_destroyer_axe1", "tag_weapon_right")) {
             self detach("c_t8_zmb_dlc0_zombie_destroyer_axe1", "tag_weapon_right");
         }
@@ -1587,9 +1591,9 @@ function private function_8a8841b0() {
     self.var_ba481973 = 1;
     if (self.var_34cc44de === "left") {
         self thread function_fbc2806e("tag_weapon_left", -1);
-    } else {
-        self thread function_fbc2806e("tag_weapon_right");
+        return;
     }
+    self thread function_fbc2806e("tag_weapon_right");
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator

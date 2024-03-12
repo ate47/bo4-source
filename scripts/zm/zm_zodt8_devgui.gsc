@@ -90,21 +90,21 @@ function function_78c32556(cmd) {
             if (isdefined(level.chests) && isdefined(level.chest_index) && isdefined(level.chests[level.chest_index].zbarrier)) {
                 level.chests[level.chest_index].zbarrier thread namespace_b45e3f05::function_8baed388();
             }
-            break;
+            return;
         case #"hide_chests":
             function_7edbb38();
             if (level.chest_index != -1) {
                 chest = level.chests[level.chest_index];
                 chest zm_magicbox::hide_chest(0);
             }
-            break;
+            return;
         case #"show_chests":
             function_7edbb38();
             if (level.chest_index != -1) {
                 chest = level.chests[level.chest_index];
                 chest zm_magicbox::show_chest();
             }
-            break;
+            return;
         }
     #/
 }
@@ -162,11 +162,13 @@ function function_1d9dddd0() {
             } else {
                 zm_zodt8::change_water_height_aft(0);
             }
-        } else if (level.e_clip_water_aft clientfield::get("<unknown string>") != 0) {
-            iprintlnbold("<unknown string>");
-        } else {
-            zm_zodt8::change_water_height_aft(1);
+            return;
         }
+        if (level.e_clip_water_aft clientfield::get("<unknown string>") != 0) {
+            iprintlnbold("<unknown string>");
+            return;
+        }
+        zm_zodt8::change_water_height_aft(1);
     #/
 }
 
@@ -182,11 +184,13 @@ function function_853d8116() {
             } else {
                 zm_zodt8::change_water_height_fore(0);
             }
-        } else if (level.e_clip_water_fore clientfield::get("<unknown string>") != 0) {
-            iprintlnbold("<unknown string>");
-        } else {
-            zm_zodt8::change_water_height_fore(1);
+            return;
         }
+        if (level.e_clip_water_fore clientfield::get("<unknown string>") != 0) {
+            iprintlnbold("<unknown string>");
+            return;
+        }
+        zm_zodt8::change_water_height_fore(1);
     #/
 }
 
@@ -212,16 +216,16 @@ function function_a368f5ed(var_99416cd7) {
             switch (var_99416cd7) {
             case #"decay":
                 namespace_4a807bff::function_ca37502d(e_player);
-                break;
+                continue;
             case #"plasma":
                 namespace_4a807bff::function_1b182e8c(e_player);
-                break;
+                continue;
             case #"purity":
                 namespace_4a807bff::function_b9b7b8c(e_player);
-                break;
+                continue;
             case #"radiance":
                 namespace_4a807bff::function_b3695700(e_player);
-                break;
+                continue;
             }
         }
     #/
@@ -238,13 +242,13 @@ function give_flare(str_color) {
             switch (str_color) {
             case #"red":
                 namespace_b45e3f05::give_flare("<unknown string>");
-                break;
+                continue;
             case #"green":
                 namespace_b45e3f05::give_flare("<unknown string>");
-                break;
+                continue;
             case #"blue":
                 namespace_b45e3f05::give_flare("<unknown string>");
-                break;
+                continue;
             }
         }
     #/

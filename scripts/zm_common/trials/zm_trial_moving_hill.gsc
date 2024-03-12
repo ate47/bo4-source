@@ -156,7 +156,7 @@ function private function_452ec7b3() {
                 }
             }
             waitframe(1);
-        } while(!var_5630b1e);
+        } while (!var_5630b1e);
         wait(self.n_defend_time);
         if (isdefined(s_hill.script_noteworthy)) {
             self.var_247c8132 = struct::get(s_hill.script_noteworthy);
@@ -339,12 +339,12 @@ function private function_ff66b979() {
     foreach (player in getplayers()) {
         if (!isdefined(player.var_356935bb)) {
             player thread damage_watcher();
-        } else {
-            timer_delta = var_a0328dd5 - player.var_356935bb.start_time;
-            timeout = int(max(player.var_356935bb.timeout - float(timer_delta) / 1000, 0));
-            player thread zone_watcher(player.var_356935bb.challenge, player.var_356935bb.var_2d5ebf67, player.var_356935bb.var_530e040f, timeout);
-            player thread damage_watcher();
+            continue;
         }
+        timer_delta = var_a0328dd5 - player.var_356935bb.start_time;
+        timeout = int(max(player.var_356935bb.timeout - float(timer_delta) / 1000, 0));
+        player thread zone_watcher(player.var_356935bb.challenge, player.var_356935bb.var_2d5ebf67, player.var_356935bb.var_530e040f, timeout);
+        player thread damage_watcher();
     }
 }
 

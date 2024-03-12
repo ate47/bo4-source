@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_dempsey/character_unlock_dempsey
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7bf7cd36, Offset: 0x110
 // Size: 0x34
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_dempsey/character_unlock_dempsey
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcc8a7d04, Offset: 0x150
 // Size: 0x2a4
 function function_2613aeec(enabled) {
@@ -44,7 +44,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_dempsey/character_unlock_dempsey
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe370b5be, Offset: 0x400
 // Size: 0x54
 function function_1c4b5097(item) {
@@ -55,7 +55,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_dempsey/character_unlock_dempsey
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2903079, Offset: 0x460
 // Size: 0x104
 function on_player_killed() {
@@ -80,7 +80,7 @@ function on_player_killed() {
 }
 
 // Namespace character_unlock_dempsey/character_unlock_dempsey
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xb3f17ba1, Offset: 0x570
 // Size: 0x24
 function private function_895b40e4() {

@@ -59,9 +59,11 @@ function validation() {
         }
         if (isdefined(player.var_bdeb0f02) && player.var_bdeb0f02) {
             continue;
-        } else if (isdefined(level.var_a538e6dc) && self [[ level.var_a538e6dc ]](player, 1, 1)) {
+        }
+        if (isdefined(level.var_a538e6dc) && self [[ level.var_a538e6dc ]](player, 1, 1)) {
             return 1;
-        } else if (self zm_laststand::can_revive(player, 1, 1)) {
+        }
+        if (self zm_laststand::can_revive(player, 1, 1)) {
             return 1;
         }
     }

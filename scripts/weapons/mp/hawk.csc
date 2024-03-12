@@ -66,9 +66,9 @@ function private function_23a9e4af(localclientnum) {
         self function_a5edb367(#"gold");
         self thread function_2e07be71(localclientnum);
         self thread function_5a1bf101(localclientnum);
-    } else {
-        self function_811196d1(1);
+        return;
     }
+    self function_811196d1(1);
 }
 
 // Namespace hawk_mp/hawk
@@ -167,9 +167,9 @@ function function_6701affc(localclientnum, oldval, newval, bnewent, binitialsnap
     if (isdefined(vehicle) && self == vehicle) {
         if (newval > 0) {
             function_6367489e(localclientnum);
-        } else {
-            function_775073e(localclientnum);
+            return;
         }
+        function_775073e(localclientnum);
     }
 }
 
@@ -317,34 +317,36 @@ function function_5a1bf101(localclientnum) {
         for (ti = 0; ti < 6; ti++) {
             if (getuimodelvalue(var_ebf5b862[ti]) == 0) {
                 var_6c8b920a[ti] = undefined;
-            } else {
-                var_8347ac20 = getuimodelvalue(var_15d793e8[ti]);
-                target_player = getentbynum(localclientnum, var_8347ac20);
-                if (!isdefined(target_player) || !isplayer(target_player)) {
-                    var_6c8b920a[ti] = undefined;
-                } else if (vectordot(var_ca5159f1, target_player.origin - var_1d7ce7ba) < 0) {
-                    var_6c8b920a[ti] = undefined;
-                } else {
-                    if (!isdefined(var_6c8b920a[ti])) {
-                        var_6c8b920a[ti] = now - 100 - 10;
-                    }
-                    var_4759b4d3 = project3dto2d(localclientnum, target_player.origin);
-                    var_20a99afd = project3dto2d(localclientnum, target_player.origin + vectorscale((0, 0, 1), 60));
-                    screen_height = distance2d(var_4759b4d3, var_20a99afd);
-                    var_fcd926d5 = var_59d4144b * screen_height / 60;
-                    var_fcd926d5 = math::clamp(var_fcd926d5, var_e7c561e2, var_98977cea);
-                    setuimodelvalue(var_1f3cc5f9[ti], var_fcd926d5);
-                    cooldown_time = now - var_6c8b920a[ti];
-                    if (var_14569a7a < 1 || cooldown_time > 200) {
-                        if (cooldown_time > 100) {
-                            var_6c8b920a[ti] = now;
-                            var_14569a7a++;
-                            trace = bullettrace(var_1d7ce7ba, target_player.origin + stance_offsets[target_player getstance()], 0, hawk_owner);
-                            if (isdefined(trace)) {
-                                var_d7caaee9 = trace[#"fraction"] < 1;
-                                setuimodelvalue(var_78e27c6d[ti], var_d7caaee9);
-                            }
-                        }
+                continue;
+            }
+            var_8347ac20 = getuimodelvalue(var_15d793e8[ti]);
+            target_player = getentbynum(localclientnum, var_8347ac20);
+            if (!isdefined(target_player) || !isplayer(target_player)) {
+                var_6c8b920a[ti] = undefined;
+                continue;
+            }
+            if (vectordot(var_ca5159f1, target_player.origin - var_1d7ce7ba) < 0) {
+                var_6c8b920a[ti] = undefined;
+                continue;
+            }
+            if (!isdefined(var_6c8b920a[ti])) {
+                var_6c8b920a[ti] = now - 100 - 10;
+            }
+            var_4759b4d3 = project3dto2d(localclientnum, target_player.origin);
+            var_20a99afd = project3dto2d(localclientnum, target_player.origin + vectorscale((0, 0, 1), 60));
+            screen_height = distance2d(var_4759b4d3, var_20a99afd);
+            var_fcd926d5 = var_59d4144b * screen_height / 60;
+            var_fcd926d5 = math::clamp(var_fcd926d5, var_e7c561e2, var_98977cea);
+            setuimodelvalue(var_1f3cc5f9[ti], var_fcd926d5);
+            cooldown_time = now - var_6c8b920a[ti];
+            if (var_14569a7a < 1 || cooldown_time > 200) {
+                if (cooldown_time > 100) {
+                    var_6c8b920a[ti] = now;
+                    var_14569a7a++;
+                    trace = bullettrace(var_1d7ce7ba, target_player.origin + stance_offsets[target_player getstance()], 0, hawk_owner);
+                    if (isdefined(trace)) {
+                        var_d7caaee9 = trace[#"fraction"] < 1;
+                        setuimodelvalue(var_78e27c6d[ti], var_d7caaee9);
                     }
                 }
             }

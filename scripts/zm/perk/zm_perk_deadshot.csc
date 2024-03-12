@@ -75,9 +75,9 @@ function player_deadshot_perk_handler(localclientnum, oldval, newval, bnewent, b
         if (is_local_player(self)) {
             if (newval) {
                 self usealternateaimparams();
-            } else {
-                self clearalternateaimparams();
+                return;
             }
+            self clearalternateaimparams();
         }
     }
 }

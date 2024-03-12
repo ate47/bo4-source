@@ -109,7 +109,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace sas/sas
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2a07eae9, Offset: 0x888
 // Size: 0x3c0
 function givecustomloadout() {
@@ -158,7 +158,7 @@ function givecustomloadout() {
 }
 
 // Namespace sas/sas
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x233c342d, Offset: 0xc50
 // Size: 0xb0
 function giveperks() {
@@ -171,7 +171,7 @@ function giveperks() {
 }
 
 // Namespace sas/sas
-// Params 10, eflags: 0x1 linked
+// Params 10, eflags: 0x0
 // Checksum 0xb43ecb82, Offset: 0xd08
 // Size: 0x126
 function onplayerdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -189,7 +189,7 @@ function onplayerdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, 
 }
 
 // Namespace sas/sas
-// Params 9, eflags: 0x1 linked
+// Params 9, eflags: 0x0
 // Checksum 0x4498351a, Offset: 0xe38
 // Size: 0x494
 function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
@@ -232,20 +232,20 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
             self globallogic_audio::leader_dialog_on_player("sasHumiliated");
             scoreevents::processscoreevent(#"hash_4c6081a9cebf868a", attacker, self, weapon);
         }
-    } else {
-        self.pers[#"humiliated"]++;
-        self.humiliated = self.pers[#"humiliated"];
-        if (level.setbacks == 0) {
-            self globallogic_score::setpointstowin(0);
-        } else {
-            self globallogic_score::givepointstowin(level.setbacks * -1);
-        }
-        self playlocalsound(#"mpl_wager_humiliate");
+        return;
     }
+    self.pers[#"humiliated"]++;
+    self.humiliated = self.pers[#"humiliated"];
+    if (level.setbacks == 0) {
+        self globallogic_score::setpointstowin(0);
+    } else {
+        self globallogic_score::givepointstowin(level.setbacks * -1);
+    }
+    self playlocalsound(#"mpl_wager_humiliate");
 }
 
 // Namespace sas/sas
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7741d0fc, Offset: 0x12d8
 // Size: 0x3c
 function onendgame(var_c1e98979) {
@@ -278,7 +278,7 @@ function setupteam(team) {
 }
 
 // Namespace sas/sas
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcfe716d7, Offset: 0x1438
 // Size: 0x14
 function onstartgametype() {

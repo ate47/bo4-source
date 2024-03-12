@@ -21,11 +21,13 @@ function filter(&array, b_keep_keys, func_filter, ...) {
                 } else {
                     a_new[key] = val;
                 }
-            } else if (isdefined(b_keep_keys) && b_keep_keys) {
-                a_new[key] = val;
-            } else {
-                a_new[a_new.size] = val;
+                continue;
             }
+            if (isdefined(b_keep_keys) && b_keep_keys) {
+                a_new[key] = val;
+                continue;
+            }
+            a_new[a_new.size] = val;
         }
     }
     return a_new;
@@ -91,11 +93,12 @@ function remove_index(array, index, b_keep_keys) {
     foreach (key, val in array) {
         if (key == index) {
             continue;
-        } else if (isdefined(b_keep_keys) && b_keep_keys) {
-            a_new[key] = val;
-        } else {
-            a_new[a_new.size] = val;
         }
+        if (isdefined(b_keep_keys) && b_keep_keys) {
+            a_new[key] = val;
+            continue;
+        }
+        a_new[a_new.size] = val;
     }
     return a_new;
 }
@@ -109,13 +112,15 @@ function delete_all(&array, is_struct) {
         if (isdefined(ent)) {
             if (isdefined(is_struct) && is_struct) {
                 ent struct::delete();
-            } else if (isdefined(ent.__vtable)) {
+                continue;
+            }
+            if (isdefined(ent.__vtable)) {
                 ent._deleted = 1;
                 ent notify(#"death");
                 ent = undefined;
-            } else {
-                ent delete();
+                continue;
             }
+            ent delete();
         }
     }
 }
@@ -148,9 +153,9 @@ function thread_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
             }
             util::single_thread(ent, func, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    } else {
-        util::single_thread(entities, func, arg1, arg2, arg3, arg4, arg5, arg6);
+        return;
     }
+    util::single_thread(entities, func, arg1, arg2, arg3, arg4, arg5, arg6);
 }
 
 // Namespace array/array_shared
@@ -168,9 +173,9 @@ function thread_all_ents(&entities, func, arg1, arg2, arg3, arg4, arg5) {
         foreach (v in entities) {
             util::single_thread(self, func, v, arg1, arg2, arg3, arg4, arg5);
         }
-    } else {
-        util::single_thread(self, func, entities, arg1, arg2, arg3, arg4, arg5);
+        return;
     }
+    util::single_thread(self, func, entities, arg1, arg2, arg3, arg4, arg5);
 }
 
 // Namespace array/array_shared
@@ -188,9 +193,9 @@ function run_all(&entities, func, arg1, arg2, arg3, arg4, arg5, arg6) {
         foreach (ent in entities) {
             util::single_func(ent, func, arg1, arg2, arg3, arg4, arg5, arg6);
         }
-    } else {
-        util::single_func(entities, func, arg1, arg2, arg3, arg4, arg5, arg6);
+        return;
     }
+    util::single_func(entities, func, arg1, arg2, arg3, arg4, arg5, arg6);
 }
 
 // Namespace array/array_shared
@@ -222,7 +227,7 @@ function add(&array, item, allow_dupes = 1) {
 }
 
 // Namespace array/array_shared
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xfef586d1, Offset: 0xc70
 // Size: 0x132
 function add_sorted(&array, item, allow_dupes = 1, func_compare, var_e19f0739 = 0) {
@@ -231,7 +236,7 @@ function add_sorted(&array, item, allow_dupes = 1, func_compare, var_e19f0739 = 
             for (i = 0; i <= array.size; i++) {
                 if (i == array.size || isdefined(func_compare) && ([[ func_compare ]](item, array[i]) || var_e19f0739) || !isdefined(func_compare) && (item <= array[i] || var_e19f0739)) {
                     arrayinsert(array, item, i);
-                    break;
+                    return;
                 }
             }
         }
@@ -500,10 +505,8 @@ function reverse(array) {
 function slice(&array, var_12692bcf = 0, var_d88b3814 = 2147483647, n_increment = 1) {
     var_d88b3814 = min(var_d88b3814, array.size - 1);
     a_ret = [];
-    i = var_12692bcf;
-    while (i <= var_d88b3814) {
+    for (i = var_12692bcf; i <= var_d88b3814; i = i + n_increment) {
         a_ret[a_ret.size] = array[i];
-        i = i + n_increment;
     }
     return a_ret;
 }
@@ -746,8 +749,7 @@ function merge_sort(&current_list, func_sort, param) {
 function merge(left, right, func_sort, param) {
     result = [];
     li = 0;
-    ri = 0;
-    while (li < left.size && ri < right.size) {
+    for (ri = 0; li < left.size && ri < right.size; ri++) {
         b_result = undefined;
         if (isdefined(param)) {
             b_result = [[ func_sort ]](left[li], right[ri], param);
@@ -757,10 +759,9 @@ function merge(left, right, func_sort, param) {
         if (b_result) {
             result[result.size] = left[li];
             li++;
-        } else {
-            result[result.size] = right[ri];
-            ri++;
+            continue;
         }
+        result[result.size] = right[ri];
     }
     while (li < left.size) {
         result[result.size] = left[li];
@@ -774,7 +775,7 @@ function merge(left, right, func_sort, param) {
 }
 
 // Namespace array/array_shared
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0xc2f9394, Offset: 0x2660
 // Size: 0x196
 function bubble_sort(&array, sort_func) {
@@ -825,10 +826,10 @@ function spread_all(&entities, func, arg1, arg2, arg3, arg4, arg5) {
             }
             wait(randomfloatrange(0.0666667, 0.133333));
         }
-    } else {
-        util::single_thread(entities, func, arg1, arg2, arg3, arg4, arg5);
-        wait(randomfloatrange(0.0666667, 0.133333));
+        return;
     }
+    util::single_thread(entities, func, arg1, arg2, arg3, arg4, arg5);
+    wait(randomfloatrange(0.0666667, 0.133333));
 }
 
 // Namespace array/array_shared
@@ -912,9 +913,8 @@ function quick_sort_mid(&array, start, end, compare_func) {
 function _compare_value(val1, val2, b_lowest_first = 1) {
     if (b_lowest_first) {
         return (val1 <= val2);
-    } else {
-        return (val1 > val2);
     }
+    return val1 > val2;
 }
 
 // Namespace array/array_shared
@@ -932,9 +932,8 @@ function function_5b554cb6(val1, val2) {
 function _compare_script_int(e1, e2, b_lowest_first = 1) {
     if (b_lowest_first) {
         return (e1.script_int <= e2.script_int);
-    } else {
-        return (e1.script_int > e2.script_int);
     }
+    return e1.script_int > e2.script_int;
 }
 
 // Namespace array/array_shared

@@ -123,21 +123,21 @@ function turn_revive_on() {
             if (isdefined(machine[i].classname) && machine[i].classname == "script_model") {
                 if (isdefined(machine[i].script_noteworthy) && machine[i].script_noteworthy == "clip") {
                     machine_clip = machine[i];
-                } else {
-                    machine[i] setmodel(level.machine_assets[#"specialty_quickrevive"].on_model);
-                    machine[i] playsound(#"zmb_perks_power_on");
-                    machine[i] vibrate(vectorscale((0, -1, 0), 100), 0.3, 0.4, 3);
-                    machine_model = machine[i];
-                    machine[i] thread zm_perks::perk_fx("revive_light");
-                    exploder::exploder("quick_revive_lgts");
-                    machine[i] notify(#"stop_loopsound");
-                    machine[i] thread zm_perks::play_loop_on_machine();
-                    if (isdefined(machine_triggers[i])) {
-                        machine_clip = machine_triggers[i].clip;
-                    }
-                    if (isdefined(machine_triggers[i])) {
-                        blocker_model = machine_triggers[i].blocker_model;
-                    }
+                    continue;
+                }
+                machine[i] setmodel(level.machine_assets[#"specialty_quickrevive"].on_model);
+                machine[i] playsound(#"zmb_perks_power_on");
+                machine[i] vibrate(vectorscale((0, -1, 0), 100), 0.3, 0.4, 3);
+                machine_model = machine[i];
+                machine[i] thread zm_perks::perk_fx("revive_light");
+                exploder::exploder("quick_revive_lgts");
+                machine[i] notify(#"stop_loopsound");
+                machine[i] thread zm_perks::play_loop_on_machine();
+                if (isdefined(machine_triggers[i])) {
+                    machine_clip = machine_triggers[i].clip;
+                }
+                if (isdefined(machine_triggers[i])) {
+                    blocker_model = machine_triggers[i].blocker_model;
                 }
             }
         }

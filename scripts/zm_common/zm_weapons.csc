@@ -32,7 +32,7 @@ function __init__() {
     callback::on_localclient_connect(&on_player_connect);
     level.weaponnone = getweapon(#"none");
     level.weaponnull = getweapon(#"weapon_null");
-    level.var_78032351 = getweapon(#"defaultweapon");
+    level.weapondefault = getweapon(#"defaultweapon");
     level.weaponbasemelee = getweapon(#"knife");
     if (!isdefined(level.zombie_weapons_upgraded)) {
         level.zombie_weapons_upgraded = [];
@@ -230,8 +230,7 @@ function init_weapons() {
 function load_weapon_spec_from_table(table, first_row) {
     gametype = util::get_game_type();
     index = first_row;
-    row = tablelookuprow(table, index);
-    while (isdefined(row)) {
+    for (row = tablelookuprow(table, index); isdefined(row); row = tablelookuprow(table, index)) {
         weapon_name = checkstringvalid(row[0]);
         if (isinarray(level.var_c60359dc, weapon_name)) {
             index++;
@@ -266,7 +265,6 @@ function load_weapon_spec_from_table(table, first_row) {
             include_upgraded_weapon(weapon_name, upgrade_name, upgrade_in_box, cost, 4500, is_wonder_weapon);
         }
         index++;
-        row = tablelookuprow(table, index);
     }
 }
 

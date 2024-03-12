@@ -63,9 +63,9 @@ function private function_53d906fd(localclientnum) {
                             level function_6b5dfd6c(localclientnum, 0, 1, i, player);
                         }
                     }
-                } else {
-                    level function_6b5dfd6c(localclientnum, 0, 0, i, player);
+                    continue;
                 }
+                level function_6b5dfd6c(localclientnum, 0, 0, i, player);
             }
         }
         wait(0.2);
@@ -108,7 +108,9 @@ function function_6b5dfd6c(localclientnum, playfx, var_484cae2, id, player) {
                 player.var_c1c8ef9c[id].fx_id = playfx(localclientnum, #"hash_3235e29f5bf57d5a", self.origin);
             }
         }
-    } else if (isdefined(player.var_c1c8ef9c[id]) && isdefined(player.var_c1c8ef9c[id].fx_id)) {
+        return;
+    }
+    if (isdefined(player.var_c1c8ef9c[id]) && isdefined(player.var_c1c8ef9c[id].fx_id)) {
         stopfx(localclientnum, player.var_c1c8ef9c[id].fx_id);
         if (isdefined(player.var_c1c8ef9c[id].fxent)) {
             player.var_c1c8ef9c[id].fxent delete();

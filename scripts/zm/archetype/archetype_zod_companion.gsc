@@ -306,15 +306,20 @@ function private zodcompaniontargetservice(entity) {
     closestai = _findclosest(entity, aienemies);
     if (!isdefined(closestplayer.entity) && !isdefined(closestai.entity)) {
         return;
-    } else if (!isdefined(closestai.entity)) {
-        entity.favoriteenemy = closestplayer.entity;
-    } else if (!isdefined(closestplayer.entity)) {
-        entity.favoriteenemy = closestai.entity;
-    } else if (closestai.distancesquared < closestplayer.distancesquared) {
-        entity.favoriteenemy = closestai.entity;
-    } else {
-        entity.favoriteenemy = closestplayer.entity;
     }
+    if (!isdefined(closestai.entity)) {
+        entity.favoriteenemy = closestplayer.entity;
+        return;
+    }
+    if (!isdefined(closestplayer.entity)) {
+        entity.favoriteenemy = closestai.entity;
+        return;
+    }
+    if (closestai.distancesquared < closestplayer.distancesquared) {
+        entity.favoriteenemy = closestai.entity;
+        return;
+    }
+    entity.favoriteenemy = closestplayer.entity;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -756,10 +761,10 @@ function private zodcompanionfinishedsprinttransition(behaviortreeentity) {
     if (behaviortreeentity getblackboardattribute("_locomotion_speed") == "locomotion_speed_walk") {
         behaviortreeentity ai::set_behavior_attribute("sprint", 1);
         behaviortreeentity setblackboardattribute("_locomotion_speed", "locomotion_speed_sprint");
-    } else {
-        behaviortreeentity ai::set_behavior_attribute("sprint", 0);
-        behaviortreeentity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
+        return;
     }
+    behaviortreeentity ai::set_behavior_attribute("sprint", 0);
+    behaviortreeentity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -799,9 +804,13 @@ function private zodcompanionsprinttransitioning(behaviortreeentity) {
 function private _trygibbinghead(entity, damage, hitloc, isexplosive) {
     if (isexplosive && randomfloatrange(0, 1) <= 0.5) {
         gibserverutils::gibhead(entity);
-    } else if (isinarray(array("head", "neck", "helmet"), hitloc) && randomfloatrange(0, 1) <= 1) {
+        return;
+    }
+    if (isinarray(array("head", "neck", "helmet"), hitloc) && randomfloatrange(0, 1) <= 1) {
         gibserverutils::gibhead(entity);
-    } else if (entity.health - damage <= 0 && randomfloatrange(0, 1) <= 0.25) {
+        return;
+    }
+    if (entity.health - damage <= 0 && randomfloatrange(0, 1) <= 0.25) {
         gibserverutils::gibhead(entity);
     }
 }
@@ -820,16 +829,22 @@ function private _trygibbinglimb(entity, damage, hitloc, isexplosive) {
         } else {
             gibserverutils::gibleftarm(entity);
         }
-    } else if (isinarray(array("left_hand", "left_arm_lower", "left_arm_upper"), hitloc)) {
+        return;
+    }
+    if (isinarray(array("left_hand", "left_arm_lower", "left_arm_upper"), hitloc)) {
         gibserverutils::gibleftarm(entity);
-    } else if (entity.health - damage <= 0 && entity.allowdeath && isinarray(array("right_hand", "right_arm_lower", "right_arm_upper"), hitloc)) {
+        return;
+    }
+    if (entity.health - damage <= 0 && entity.allowdeath && isinarray(array("right_hand", "right_arm_lower", "right_arm_upper"), hitloc)) {
         gibserverutils::gibrightarm(entity);
-    } else if (entity.health - damage <= 0 && entity.allowdeath && randomfloatrange(0, 1) <= 0.25) {
+        return;
+    }
+    if (entity.health - damage <= 0 && entity.allowdeath && randomfloatrange(0, 1) <= 0.25) {
         if (math::cointoss()) {
             gibserverutils::gibleftarm(entity);
-        } else {
-            gibserverutils::gibrightarm(entity);
+            return;
         }
+        gibserverutils::gibrightarm(entity);
     }
 }
 
@@ -843,22 +858,28 @@ function private _trygibbinglegs(entity, damage, hitloc, isexplosive, attacker =
     if (entity.health - damage <= 0 && entity.allowdeath && isexplosive && randomfloatrange(0, 1) <= 0.5) {
         gibserverutils::giblegs(entity);
         entity startragdoll();
-    } else if (cangiblegs && isinarray(array("left_leg_upper", "left_leg_lower", "left_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
+        return;
+    }
+    if (cangiblegs && isinarray(array("left_leg_upper", "left_leg_lower", "left_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
         if (entity.health - damage > 0) {
             entity.becomecrawler = 1;
         }
         gibserverutils::gibleftleg(entity);
-    } else if (cangiblegs && isinarray(array("right_leg_upper", "right_leg_lower", "right_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
+        return;
+    }
+    if (cangiblegs && isinarray(array("right_leg_upper", "right_leg_lower", "right_foot"), hitloc) && randomfloatrange(0, 1) <= 1) {
         if (entity.health - damage > 0) {
             entity.becomecrawler = 1;
         }
         gibserverutils::gibrightleg(entity);
-    } else if (entity.health - damage <= 0 && entity.allowdeath && randomfloatrange(0, 1) <= 0.25) {
+        return;
+    }
+    if (entity.health - damage <= 0 && entity.allowdeath && randomfloatrange(0, 1) <= 0.25) {
         if (math::cointoss()) {
             gibserverutils::gibleftleg(entity);
-        } else {
-            gibserverutils::gibrightleg(entity);
+            return;
         }
+        gibserverutils::gibrightleg(entity);
     }
 }
 
@@ -1004,40 +1025,42 @@ function function_dbd6fcc6() {
 function define_new_leader() {
     if (isdefined(level.var_1a612d42) && level.var_1a612d42.eligible_leader) {
         self.leader = level.var_1a612d42;
-    } else {
-        a_potential_leaders = get_potential_leaders(self);
-        closest_leader = undefined;
-        closest_distance = 1000000;
-        if (a_potential_leaders.size == 0) {
-            self.leader = undefined;
-        } else if (getdvarint(#"hash_6d35b5921943876a", 1)) {
-            playerpositions = [];
-            foreach (potential_leader in a_potential_leaders) {
-                if (!isdefined(playerpositions)) {
-                    playerpositions = [];
-                } else if (!isarray(playerpositions)) {
-                    playerpositions = array(playerpositions);
-                }
-                playerpositions[playerpositions.size] = potential_leader.origin;
+        return;
+    }
+    a_potential_leaders = get_potential_leaders(self);
+    closest_leader = undefined;
+    closest_distance = 1000000;
+    if (a_potential_leaders.size == 0) {
+        self.leader = undefined;
+        return;
+    }
+    if (getdvarint(#"hash_6d35b5921943876a", 1)) {
+        playerpositions = [];
+        foreach (potential_leader in a_potential_leaders) {
+            if (!isdefined(playerpositions)) {
+                playerpositions = [];
+            } else if (!isarray(playerpositions)) {
+                playerpositions = array(playerpositions);
             }
-            pathdata = generatenavmeshpath(self.origin, playerpositions, self);
-            if (isdefined(pathdata) && pathdata.status === "succeeded") {
-                goalpos = pathdata.pathpoints[pathdata.pathpoints.size - 1];
-                foreach (potential_leader in a_potential_leaders) {
-                    if (distancesquared(potential_leader.origin, goalpos) < 16 * 16) {
-                        self.leader = potential_leader;
-                        break;
-                    }
-                }
-            }
-        } else {
+            playerpositions[playerpositions.size] = potential_leader.origin;
+        }
+        pathdata = generatenavmeshpath(self.origin, playerpositions, self);
+        if (isdefined(pathdata) && pathdata.status === "succeeded") {
+            goalpos = pathdata.pathpoints[pathdata.pathpoints.size - 1];
             foreach (potential_leader in a_potential_leaders) {
-                dist = pathdistance(self.origin, potential_leader.origin);
-                if (isdefined(dist) && dist < closest_distance) {
-                    closest_distance = dist;
+                if (distancesquared(potential_leader.origin, goalpos) < 16 * 16) {
                     self.leader = potential_leader;
+                    break;
                 }
             }
+        }
+        return;
+    }
+    foreach (potential_leader in a_potential_leaders) {
+        dist = pathdistance(self.origin, potential_leader.origin);
+        if (isdefined(dist) && dist < closest_distance) {
+            closest_distance = dist;
+            self.leader = potential_leader;
         }
     }
 }

@@ -61,7 +61,8 @@ function on_game_playing() {
 function function_2cdcf5c3() {
     if (util::function_94a3be2()) {
         return;
-    } else if (util::isfirstround()) {
+    }
+    if (util::isfirstround()) {
         array::run_all(getentarray("spawn_flavor_veh", "script_noteworthy"), &hide);
         while (!draft::function_d255fb3e()) {
             waitframe(1);

@@ -33,11 +33,11 @@ function function_6799fbc4(localclientnum, oldval, newval, bnewent, binitialsnap
         self.show_function = &function_c06aed2;
         self.hide_function = &function_59cd4ca1;
         self hide();
-    } else {
-        arrayremovevalue(level.var_22a393d4, self);
-        self show();
-        self notify(#"hash_6ab654a4c018818c");
+        return;
     }
+    arrayremovevalue(level.var_22a393d4, self);
+    self show();
+    self notify(#"hash_6ab654a4c018818c");
 }
 
 // Namespace zm_escape_util/zm_escape_util

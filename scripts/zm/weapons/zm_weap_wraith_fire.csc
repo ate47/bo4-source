@@ -39,17 +39,17 @@ function function_87bfd935(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_cd4ce49e = util::playfxontag(localclientnum, "zm_weapons/fx8_equip_mltv_fire_human_torso_loop_zm", self, str_tag);
         self thread function_8847b8aa(localclientnum);
         self.var_2be01485 = level._effect[#"hash_5dfe974bf370a5f4"];
-    } else {
-        if (isdefined(self.var_cd4ce49e)) {
-            stopfx(localclientnum, self.var_cd4ce49e);
-            self.var_cd4ce49e = undefined;
+        return;
+    }
+    if (isdefined(self.var_cd4ce49e)) {
+        stopfx(localclientnum, self.var_cd4ce49e);
+        self.var_cd4ce49e = undefined;
+    }
+    if (isdefined(self.var_803e161e)) {
+        foreach (n_fx_id in self.var_803e161e) {
+            stopfx(localclientnum, n_fx_id);
         }
-        if (isdefined(self.var_803e161e)) {
-            foreach (n_fx_id in self.var_803e161e) {
-                stopfx(localclientnum, n_fx_id);
-            }
-            self.var_803e161e = undefined;
-        }
+        self.var_803e161e = undefined;
     }
 }
 
@@ -67,17 +67,17 @@ function function_f144789c(localclientnum, oldval, newval, bnewent, binitialsnap
             str_tag = "tag_origin";
         }
         self.var_71a7fc1c = util::playfxontag(localclientnum, "zm_weapons/fx8_equip_mltv_fire_human_torso_loop_zm", self, str_tag);
-    } else {
-        if (isdefined(self.var_71a7fc1c)) {
-            stopfx(localclientnum, self.var_71a7fc1c);
-            self.var_71a7fc1c = undefined;
+        return;
+    }
+    if (isdefined(self.var_71a7fc1c)) {
+        stopfx(localclientnum, self.var_71a7fc1c);
+        self.var_71a7fc1c = undefined;
+    }
+    if (isdefined(self.var_803e161e)) {
+        foreach (n_fx_id in self.var_803e161e) {
+            stopfx(localclientnum, n_fx_id);
         }
-        if (isdefined(self.var_803e161e)) {
-            foreach (n_fx_id in self.var_803e161e) {
-                stopfx(localclientnum, n_fx_id);
-            }
-            self.var_803e161e = undefined;
-        }
+        self.var_803e161e = undefined;
     }
 }
 

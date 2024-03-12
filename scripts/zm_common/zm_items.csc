@@ -30,8 +30,8 @@ function __init__() {
 function function_39e7c9dd(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self playrenderoverridebundle("rob_sonar_set_friendly");
-    } else {
-        self stoprenderoverridebundle("rob_sonar_set_friendly");
+        return;
     }
+    self stoprenderoverridebundle("rob_sonar_set_friendly");
 }
 

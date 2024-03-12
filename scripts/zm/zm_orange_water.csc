@@ -58,13 +58,13 @@ function function_e8d94580(localclientnum, oldval, newval, bnewent, binitialsnap
             self thread function_84fcb204(localclientnum);
         }
         self playrenderoverridebundle("rob_tricannon_classified_zombie_ice");
-    } else {
-        if (!self zm_utility::function_f8796df3(localclientnum)) {
-            self thread function_6180e679(localclientnum);
-        }
-        self stoprenderoverridebundle("rob_tricannon_classified_zombie_ice");
-        self notify(#"hash_5ab24a026f132ea4");
+        return;
     }
+    if (!self zm_utility::function_f8796df3(localclientnum)) {
+        self thread function_6180e679(localclientnum);
+    }
+    self stoprenderoverridebundle("rob_tricannon_classified_zombie_ice");
+    self notify(#"hash_5ab24a026f132ea4");
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -132,11 +132,13 @@ function function_40966504(localclientnum, key) {
 function function_3c820626(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval === 1) {
         self thread function_1a2f062a(localclientnum);
-    } else if (newval === 2) {
-        self thread function_7c64a377(localclientnum);
-    } else {
-        self thread function_17e6f9f3(localclientnum);
+        return;
     }
+    if (newval === 2) {
+        self thread function_7c64a377(localclientnum);
+        return;
+    }
+    self thread function_17e6f9f3(localclientnum);
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -259,7 +261,9 @@ function function_6b5ed7f9(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_f809ca21 = 0.9;
         self postfx::function_c8b5f318("pstfx_frost_loop_fullscreen_zmo", #"reveal threshold", self.var_f809ca21);
         self thread util::playfxontag(localclientnum, level._effect[#"hash_28591d0dc8bbbf02"], self, "J_Spine4");
-    } else if (newval === 1) {
+        return;
+    }
+    if (newval === 1) {
         self.var_7c8ad424 = 0;
         self.var_f809ca21 = 0.8;
         self postfx::function_c8b5f318("pstfx_frost_loop_fullscreen_zmo", #"reveal threshold", self.var_f809ca21);

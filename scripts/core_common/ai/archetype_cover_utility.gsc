@@ -853,9 +853,9 @@ function cleanupcovermode(entity) {
         covermode = entity getblackboardattribute("_cover_mode");
         entity setblackboardattribute("_previous_cover_mode", covermode);
         entity setblackboardattribute("_cover_mode", "cover_mode_none");
-    } else {
-        entity setblackboardattribute("_previous_cover_mode", "cover_mode_none");
-        entity setblackboardattribute("_cover_mode", "cover_mode_none");
+        return;
     }
+    entity setblackboardattribute("_previous_cover_mode", "cover_mode_none");
+    entity setblackboardattribute("_cover_mode", "cover_mode_none");
 }
 

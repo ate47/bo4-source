@@ -27,7 +27,9 @@ function function_8532d13f(localclientnum, oldval, newval, bnewent, binitialsnap
         self util::waittill_dobj(localclientnum);
         self.buff_fx = util::playfxontag(localclientnum, level._effect[#"hash_69e92b9c52f7fe12"], self, "tag_origin");
         self.var_573d289 = self playloopsound(#"hash_218e114cfa2b9a4");
-    } else if (isdefined(self.buff_fx)) {
+        return;
+    }
+    if (isdefined(self.buff_fx)) {
         stopfx(localclientnum, self.buff_fx);
     }
 }
@@ -39,8 +41,8 @@ function function_8532d13f(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_804015d2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx = util::playfxontag(localclientnum, level._effect[#"trials_lighthouse_beam"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.fx);
+        return;
     }
+    stopfx(localclientnum, self.fx);
 }
 

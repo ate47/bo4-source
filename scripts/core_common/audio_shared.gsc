@@ -74,9 +74,9 @@ function sndresetsoundsettings() {
     self util::clientnotify("sndDEDe");
     if (!self flag::exists("playing_stinger_fired_at_me")) {
         self flag::init("playing_stinger_fired_at_me", 0);
-    } else {
-        self flag::clear("playing_stinger_fired_at_me");
+        return;
     }
+    self flag::clear("playing_stinger_fired_at_me");
 }
 
 // Namespace audio/audio_shared
@@ -140,7 +140,7 @@ function playtargetmissilesound(alias, looping) {
             do {
                 self playlocalsound(alias);
                 wait(time);
-            } while(looping);
+            } while (looping);
         }
     }
 }

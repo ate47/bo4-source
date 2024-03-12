@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wing_drone/wing_drone
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x2b7c457f, Offset: 0x118
 // Size: 0x64
 function __init__() {
@@ -26,14 +26,14 @@ function __init__() {
 }
 
 // Namespace wing_drone/wing_drone
-// Params 7, eflags: 0x0
+// Params 7, eflags: 0x1 linked
 // Checksum 0x4386b093, Offset: 0x188
 // Size: 0x8c
 function reload(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self function_d309e55a("tag_turret_control_animate", 0);
-    } else {
-        self function_d309e55a("tag_turret_control_animate", 1);
+        return;
     }
+    self function_d309e55a("tag_turret_control_animate", 1);
 }
 

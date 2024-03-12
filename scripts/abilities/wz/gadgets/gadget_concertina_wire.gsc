@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd3e428b0, Offset: 0xe8
 // Size: 0x3c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa241bbd2, Offset: 0x130
 // Size: 0xc
 function onconcertinawireplaced(concertinawire) {

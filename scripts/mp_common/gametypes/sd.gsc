@@ -146,9 +146,9 @@ function onroundswitch() {
         if (aheadteam != game.defenders) {
             game.switchedsides = !game.switchedsides;
         }
-    } else {
-        gametype::on_round_switch();
+        return;
     }
+    gametype::on_round_switch();
 }
 
 // Namespace sd/sd
@@ -367,14 +367,18 @@ function ondeadevent(team) {
         } else {
             globallogic::function_a3e3bd39(game.defenders, 6);
         }
-    } else if (team == game.attackers) {
+        return;
+    }
+    if (team == game.attackers) {
         enemyteam = util::get_enemy_team(team);
         challenges::last_man_defeat_3_enemies(enemyteam);
         if (level.bombplanted) {
             return;
         }
         globallogic::function_a3e3bd39(game.defenders, 6);
-    } else if (team == game.defenders) {
+        return;
+    }
+    if (team == game.defenders) {
         enemyteam = util::get_enemy_team(team);
         challenges::last_man_defeat_3_enemies(enemyteam);
         globallogic::function_a3e3bd39(game.attackers, 6);
@@ -723,10 +727,10 @@ function onuseplantobject(player) {
     for (index = 0; index < level.bombzones.size; index++) {
         if (level.bombzones[index] == self) {
             level.bombzones[index].isplanted = 1;
-        } else {
-            level.bombzones[index] gameobjects::disable_object();
-            level.bombzones[index].waypoint gameobjects::disable_object();
+            continue;
         }
+        level.bombzones[index] gameobjects::disable_object();
+        level.bombzones[index].waypoint gameobjects::disable_object();
     }
     thread sound::play_on_players("mus_sd_planted" + "_" + level.teampostfix[player.pers[#"team"]]);
     player notify(#"bomb_planted");
@@ -1042,9 +1046,9 @@ function private set_ui_team() {
     wait(0.05);
     if (game.attackers == #"allies") {
         clientfield::set_world_uimodel("hudItems.war.attackingTeam", 1);
-    } else {
-        clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
+        return;
     }
+    clientfield::set_world_uimodel("hudItems.war.attackingTeam", 2);
 }
 
 // Namespace sd/sd

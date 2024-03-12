@@ -332,10 +332,10 @@ function function_8bec47d6(b_enable = 1) {
     if (b_enable) {
         level.var_eeb98313 = level.var_fcfbf8c6;
         level.var_fcfbf8c6 = undefined;
-    } else {
-        level.var_fcfbf8c6 = level.var_eeb98313;
-        level.var_eeb98313 = &function_f6d8b425;
+        return;
     }
+    level.var_fcfbf8c6 = level.var_eeb98313;
+    level.var_eeb98313 = &function_f6d8b425;
 }
 
 // Namespace zm_bgb_nowhere_but_there/zm_bgb_nowhere_but_there

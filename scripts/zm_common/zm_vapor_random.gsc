@@ -122,19 +122,19 @@ function function_1a038e0b() {
     zm_unitrigger::register_static_unitrigger(unitrigger_stub, &function_20fe0559);
     zm_unitrigger::function_c4a5fdf5(unitrigger_stub, 1);
     self.unitrigger_stub = unitrigger_stub;
-    if (!isdefined(self.var_73bd396b)) {
-        self.var_73bd396b = util::spawn_model("tag_origin", self.origin, self.angles);
+    if (!isdefined(self.mdl_altar)) {
+        self.mdl_altar = util::spawn_model("tag_origin", self.origin, self.angles);
     }
-    self.var_73bd396b clientfield::set("random_vapor_altar_available", 1);
+    self.mdl_altar clientfield::set("random_vapor_altar_available", 1);
     var_ade6ee77 = getentarray(self.target, "targetname");
     array::run_all(var_ade6ee77, &show);
     a_s_interacts = struct::get_array(self.target);
     foreach (s_interact in a_s_interacts) {
         if (s_interact.script_int === 3) {
             s_interact.n_cost = 5000;
-        } else {
-            s_interact.n_cost = 2000;
+            continue;
         }
+        s_interact.n_cost = 2000;
     }
 }
 
@@ -153,8 +153,8 @@ function function_8dd97732() {
     }
     zm_unitrigger::unregister_unitrigger(self.unitrigger_stub);
     self.b_is_active = undefined;
-    if (isdefined(self.var_73bd396b)) {
-        self.var_73bd396b delete();
+    if (isdefined(self.mdl_altar)) {
+        self.mdl_altar delete();
     }
 }
 
@@ -385,10 +385,10 @@ function function_44481969() {
         if (!isinarray(level.var_8feb4083, var_eed5ca85)) {
             level.var_8feb4083[level.var_8feb4083.size] = var_eed5ca85;
         }
-    } else {
-        level.var_8feb4083 = [];
-        function_7d881772();
+        return;
     }
+    level.var_8feb4083 = [];
+    function_7d881772();
 }
 
 // Namespace zm_vapor_random/zm_vapor_random
@@ -479,9 +479,8 @@ function function_42171e41(player) {
     s_altar.var_46fe01e2 = 0;
     if (s_result._notify == "trigger" && s_result.activator === player) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_vapor_random/zm_vapor_random

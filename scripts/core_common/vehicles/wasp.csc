@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wasp/wasp
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf46e6fd4, Offset: 0x120
 // Size: 0xb4
 function __init__() {
@@ -27,7 +27,7 @@ function __init__() {
 }
 
 // Namespace wasp/wasp
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7d029b94, Offset: 0x1e0
 // Size: 0x1e
 function spawned(localclientnum) {
@@ -35,7 +35,7 @@ function spawned(localclientnum) {
 }
 
 // Namespace wasp/wasp
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x178fb5f9, Offset: 0x208
 // Size: 0xa4
 function handle_lod_display_for_driver(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

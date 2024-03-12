@@ -113,7 +113,9 @@ function private bgb_player_init() {
         }
         if (zm_custom::function_3ac936c6(str_bgb)) {
             var_6e18a410[i] = str_bgb;
-        } else if (str_bgb != #"weapon_null" && self getbgbremaining(str_bgb) > 0) {
+            continue;
+        }
+        if (str_bgb != #"weapon_null" && self getbgbremaining(str_bgb) > 0) {
             self thread zm_custom::function_deae84ba();
         }
     }
@@ -199,19 +201,19 @@ function private bgb_finalize() {
             /#
                 println("<unknown string>" + v.name + "<unknown string>");
             #/
-        } else {
-            if (!isdefined(var_5415dfb9.bgbrarity)) {
-                var_5415dfb9.bgbrarity = 0;
-            }
-            v.rarity = var_5415dfb9.bgbrarity;
-            if (0 == v.rarity || 1 == v.rarity) {
-                v.consumable = 0;
-            } else {
-                v.consumable = 1;
-            }
-            v.camo_index = var_5415dfb9.var_daefc551;
-            v.dlc_index = var_ddcb67f4.dlc;
+            continue;
         }
+        if (!isdefined(var_5415dfb9.bgbrarity)) {
+            var_5415dfb9.bgbrarity = 0;
+        }
+        v.rarity = var_5415dfb9.bgbrarity;
+        if (0 == v.rarity || 1 == v.rarity) {
+            v.consumable = 0;
+        } else {
+            v.consumable = 1;
+        }
+        v.camo_index = var_5415dfb9.var_daefc551;
+        v.dlc_index = var_ddcb67f4.dlc;
     }
 }
 
@@ -292,11 +294,11 @@ function private bgb_devgui_acquire(bgb_name) {
             }
             if (#"none" == bgb_name) {
                 players[i] thread take();
-            } else {
-                players[i] bgb_gumball_anim(bgb_name);
-                if (isdefined(level.bgb[bgb_name].activation_func)) {
-                    players[i] thread run_activation_func(bgb_name);
-                }
+                continue;
+            }
+            players[i] bgb_gumball_anim(bgb_name);
+            if (isdefined(level.bgb[bgb_name].activation_func)) {
+                players[i] thread run_activation_func(bgb_name);
             }
         }
     #/
@@ -335,9 +337,7 @@ function private bgb_set_debug_text(name, activations_remaining) {
             return;
         }
         if (isdefined(activations_remaining)) {
-            goto LOC_00000040;
         }
-    LOC_00000040:
         self notify(#"bgb_set_debug_text_thread");
         self endon(#"bgb_set_debug_text_thread", #"disconnect");
         self.bgb_debug_text fadeovertime(0.05);
@@ -380,9 +380,8 @@ function bgb_print_stats(bgb) {
 function private has_consumable_bgb(bgb) {
     if (!isdefined(self.bgb_stats[bgb]) || !(isdefined(level.bgb[bgb].consumable) && level.bgb[bgb].consumable)) {
         return 0;
-    } else {
-        return 1;
     }
+    return 1;
 }
 
 // Namespace bgb/zm_bgb
@@ -739,8 +738,8 @@ function private bgb_activation_monitor() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xeeb79a51, Offset: 0x2e88
 // Size: 0x18c
-function function_e98aa964(var_3e37f503 = 0, var_8593b089 = self.bgb) {
-    var_ceb582a8 = isdefined(level.bgb[var_8593b089].validation_func) && !self [[ level.bgb[var_8593b089].validation_func ]]();
+function function_e98aa964(var_3e37f503 = 0, str_check = self.bgb) {
+    var_ceb582a8 = isdefined(level.bgb[str_check].validation_func) && !self [[ level.bgb[str_check].validation_func ]]();
     var_e6b14ccc = isdefined(level.var_67713b46) && !self [[ level.var_67713b46 ]]();
     if (!var_3e37f503 && isdefined(self.is_drinking) && self.is_drinking || isdefined(self.bgb_activation_in_progress) && self.bgb_activation_in_progress && !(isdefined(self.var_ec8a9710) && self.var_ec8a9710) || self laststand::player_is_in_laststand() || var_ceb582a8 || var_e6b14ccc || isdefined(self.var_16735873) && self.var_16735873 || isdefined(self.var_30cbff55) && self.var_30cbff55) {
         self clientfield::increment_uimodel("zmhud.bgb_invalid_use");
@@ -928,9 +927,9 @@ function private bgb_set_timer_clientfield(percent, var_5f12e334 = 0) {
     var_f205d85d = self clientfield::get_player_uimodel("zmhud.bgb_timer");
     if (percent < var_f205d85d && 0.1 <= var_f205d85d - percent) {
         self thread function_af43111c(var_f205d85d, percent, var_5f12e334);
-    } else {
-        self clientfield::set_player_uimodel("zmhud.bgb_timer", percent);
+        return;
     }
+    self clientfield::set_player_uimodel("zmhud.bgb_timer", percent);
 }
 
 // Namespace bgb/zm_bgb
@@ -967,7 +966,9 @@ function run_timer(max) {
         if (isdefined(self.var_76c47001)) {
             current = max * self.var_76c47001;
             self.var_76c47001 = undefined;
-        } else if (!(isdefined(self.var_4b0fb2fb) && self.var_4b0fb2fb)) {
+            continue;
+        }
+        if (!(isdefined(self.var_4b0fb2fb) && self.var_4b0fb2fb)) {
             current = current - float(function_60d95f53()) / 1000;
         }
     }
@@ -1235,9 +1236,8 @@ function take() {
 function get_enabled() {
     if (isplayer(self) && isdefined(self.bgb)) {
         return self.bgb;
-    } else {
-        return #"none";
     }
+    return #"none";
 }
 
 // Namespace bgb/zm_bgb
@@ -1297,7 +1297,7 @@ function get_player_dropped_powerup_origin() {
 // Size: 0xbc
 function function_c6cd71d5(str_powerup, v_origin = self get_player_dropped_powerup_origin(), var_22a4c702) {
     e_powerup = zm_powerups::specific_powerup_drop(str_powerup, v_origin, undefined, 0.1, undefined, undefined, 1, 1, 1, 1);
-    e_powerup.var_2b5ec373 = self;
+    e_powerup.e_player_owner = self;
     if (isplayer(self)) {
         self zm_stats::increment_challenge_stat(#"hash_3ebae93ea866519c");
     }
@@ -1477,7 +1477,9 @@ function function_f51e3503(n_max_distance, var_5250f4f6, var_8bc18989) {
                 if (isdefined(var_5250f4f6)) {
                     self thread [[ var_5250f4f6 ]](e_player);
                 }
-            } else if (var_fd14be26 && !var_d9cac58e) {
+                continue;
+            }
+            if (var_fd14be26 && !var_d9cac58e) {
                 arrayremovevalue(self.var_9c42f3fe, e_player);
                 if (isdefined(var_8bc18989)) {
                     self thread [[ var_8bc18989 ]](e_player);

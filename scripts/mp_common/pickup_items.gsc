@@ -208,7 +208,6 @@ function get_item_from_string(item_string) {
         return self get_item_from_string_perk(item_string);
     case #"weapon":
         return self get_item_from_string_weapon(item_string);
-        break;
     }
 }
 
@@ -242,7 +241,6 @@ function pickup_item_respawn_time() {
         return 10;
     case #"weapon":
         return 30;
-        break;
     }
 }
 
@@ -262,7 +260,6 @@ function pickup_item_sound_pickup() {
         return "wpn_weap_pickup_oldschool";
     case #"weapon":
         return "wpn_weap_pickup_oldschool";
-        break;
     }
 }
 
@@ -282,7 +279,6 @@ function pickup_item_sound_respawn() {
         return "wpn_weap_pickup_oldschool";
     case #"weapon":
         return "wpn_weap_pickup_oldschool";
-        break;
     }
 }
 

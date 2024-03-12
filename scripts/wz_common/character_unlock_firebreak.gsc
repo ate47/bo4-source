@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_firebreak/character_unlock_firebreak
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcc779b6d, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_firebreak/character_unlock_firebreak
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4d567ee5, Offset: 0x130
 // Size: 0xec
 function function_2613aeec(enabled) {
@@ -34,14 +34,14 @@ function function_2613aeec(enabled) {
         callback::on_player_killed(&on_player_killed);
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
             item_world_fixup::function_e70fa91c(#"wz_escape_supply_stash_parent", #"supply_stash_cu06", 1);
-        } else {
-            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu06", 6);
+            return;
         }
+        item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu06", 6);
     }
 }
 
 // Namespace character_unlock_firebreak/character_unlock_firebreak
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x848e638a, Offset: 0x228
 // Size: 0x224
 function on_player_killed() {

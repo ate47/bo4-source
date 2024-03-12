@@ -24,8 +24,8 @@ function preload() {
 function soul_release(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval) {
         util::playfxontag(localclientnum, level._effect[#"hash_445a09d57b925de2"], self, "tag_origin");
-    } else {
-        util::playfxontag(localclientnum, level._effect[#"hash_22616c5de5b8bbf4"], self, "tag_origin");
+        return;
     }
+    util::playfxontag(localclientnum, level._effect[#"hash_22616c5de5b8bbf4"], self, "tag_origin");
 }
 

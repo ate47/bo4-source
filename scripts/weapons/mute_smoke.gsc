@@ -240,10 +240,10 @@ function function_40abb79a(in_enemy_mute_smoke, applicant) {
     var_56d6af0e = getstatuseffect(var_65ce58a2);
     if (in_enemy_mute_smoke) {
         player thread function_41470017(var_56d6af0e, applicant);
-    } else {
-        player notify(#"hash_2d871144da153bc1");
-        player status_effect::function_408158ef(var_56d6af0e.setype, var_56d6af0e.var_18d16a6b);
+        return;
     }
+    player notify(#"hash_2d871144da153bc1");
+    player status_effect::function_408158ef(var_56d6af0e.setype, var_56d6af0e.var_18d16a6b);
 }
 
 // Namespace mute_smoke/mute_smoke

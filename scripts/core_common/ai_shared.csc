@@ -92,7 +92,7 @@ function spawned_callback(localclientnum) {
 }
 
 // Namespace ai/ai_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xdb85145, Offset: 0x668
 // Size: 0x52
 function shouldregisterclientfieldforarchetype(archetype) {
@@ -103,7 +103,7 @@ function shouldregisterclientfieldforarchetype(archetype) {
 }
 
 // Namespace ai/ai_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3902e578, Offset: 0x6c8
 // Size: 0xf4
 function function_9139c839() {

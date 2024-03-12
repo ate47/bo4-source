@@ -141,7 +141,9 @@ function _update_health(hacker) {
     killstreak = self;
     if (isdefined(killstreak.hackedhealthupdatecallback)) {
         killstreak [[ killstreak.hackedhealthupdatecallback ]](hacker);
-    } else if (issentient(killstreak)) {
+        return;
+    }
+    if (issentient(killstreak)) {
         hackedhealth = killstreak_bundles::get_hacked_health(killstreak.killstreaktype);
         /#
             assert(isdefined(hackedhealth));
@@ -149,11 +151,11 @@ function _update_health(hacker) {
         if (self.health > hackedhealth) {
             self.health = hackedhealth;
         }
-    } else {
-        /#
-            hacker iprintlnbold("<unknown string>");
-        #/
+        return;
     }
+    /#
+        hacker iprintlnbold("<unknown string>");
+    #/
 }
 
 // Namespace killstreak_hacking/killstreak_hacking

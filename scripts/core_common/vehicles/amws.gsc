@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x7724bfdb, Offset: 0x268
 // Size: 0x34
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x65196629, Offset: 0x2a8
 // Size: 0x2fc
 function amws_initialize() {
@@ -77,7 +77,7 @@ function amws_initialize() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x85c50e09, Offset: 0x5b0
 // Size: 0x2a4
 function defaultrole() {
@@ -101,7 +101,7 @@ function defaultrole() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x828bb6ea, Offset: 0x860
 // Size: 0xac
 function state_death_update(params) {
@@ -118,7 +118,7 @@ function state_death_update(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xe2de9006, Offset: 0x918
 // Size: 0x1ca
 function death_suicide_crash(params) {
@@ -139,7 +139,7 @@ function death_suicide_crash(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xb00c316d, Offset: 0xaf0
 // Size: 0xf0
 function state_driving_update(params) {
@@ -154,15 +154,15 @@ function state_driving_update(params) {
             driver util::waittill_vehicle_move_up_button_pressed();
             if (self.cobra === 0) {
                 self cobra_raise();
-            } else {
-                self cobra_retract();
+                continue;
             }
+            self cobra_retract();
         }
     }
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x9f5dc668, Offset: 0xbe8
 // Size: 0x106
 function cobra_raise() {
@@ -182,7 +182,7 @@ function cobra_raise() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xaf490180, Offset: 0xcf8
 // Size: 0xb2
 function cobra_retract() {
@@ -200,7 +200,7 @@ function cobra_retract() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xb91ea950, Offset: 0xdb8
 // Size: 0xfc
 function state_emped_update(params) {
@@ -213,7 +213,7 @@ function state_emped_update(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xb9c378be, Offset: 0xec0
 // Size: 0x44
 function state_stationary_enter(params) {
@@ -223,7 +223,7 @@ function state_stationary_enter(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x976c9e0e, Offset: 0xf10
 // Size: 0x4dc
 function state_stationary_update(params) {
@@ -291,7 +291,7 @@ function state_stationary_update(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x79b6829d, Offset: 0x13f8
 // Size: 0x24
 function state_stationary_update_wait(wait_time) {
@@ -299,7 +299,7 @@ function state_stationary_update_wait(wait_time) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xf21d6b22, Offset: 0x1428
 // Size: 0x64
 function state_stationary_exit(params) {
@@ -310,7 +310,7 @@ function state_stationary_exit(params) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x4f55d6e9, Offset: 0x1498
 // Size: 0x24
 function state_combat_enter(params) {
@@ -318,7 +318,7 @@ function state_combat_enter(params) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x7362ab19, Offset: 0x14c8
 // Size: 0x2e
 function is_ai_using_minigun() {
@@ -326,7 +326,7 @@ function is_ai_using_minigun() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x301cf474, Offset: 0x1500
 // Size: 0x3b0
 function turretfireupdate() {
@@ -373,14 +373,14 @@ function turretfireupdate() {
             } else {
                 wait(0.5);
             }
-        } else {
-            wait(0.4);
+            continue;
         }
+        wait(0.4);
     }
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xa1af11da, Offset: 0x18b8
 // Size: 0x7a0
 function state_combat_update(params) {
@@ -392,41 +392,82 @@ function state_combat_update(params) {
     heatseekingmissile::initlockfield(self);
     self.lock_evading = 0;
     for (;;) {
-        for (;;) {
-            if (self.lock_evading == 0) {
-                self setspeed(self.settings.defaultmovespeed);
-                self setacceleration(isdefined(self.settings.default_move_acceleration) ? self.settings.default_move_acceleration : 10);
+        if (self.lock_evading == 0) {
+            self setspeed(self.settings.defaultmovespeed);
+            self setacceleration(isdefined(self.settings.default_move_acceleration) ? self.settings.default_move_acceleration : 10);
+        }
+        if (isdefined(self.enemy) && util::iscooldownready("cobra_up") && self.lock_evading == 0) {
+            var_7e7717c8 = distancesquared(self.enemy.origin, self.origin);
+            if (var_7e7717c8 > 200 * 200 && var_7e7717c8 < self.settings.engagementdistmax * 2 * self.settings.engagementdistmax * 2) {
+                if (function_64609aab(self, self.enemy) === 1) {
+                    self vehicle_ai::evaluate_connections();
+                }
             }
-            if (isdefined(self.enemy) && util::iscooldownready("cobra_up") && self.lock_evading == 0) {
-                var_7e7717c8 = distancesquared(self.enemy.origin, self.origin);
-                if (var_7e7717c8 > 200 * 200 && var_7e7717c8 < self.settings.engagementdistmax * 2 * self.settings.engagementdistmax * 2) {
-                    if (function_64609aab(self, self.enemy) === 1) {
-                        self vehicle_ai::evaluate_connections();
+        }
+        if (isdefined(self.settings.engage_enemies_locked_on_me) && self.settings.engage_enemies_locked_on_me && self.locked_on) {
+            self.shouldgotonewposition = 1;
+        } else if (isdefined(self.settings.engage_enemies_locking_on_me) && self.settings.engage_enemies_locking_on_me && self.locking_on) {
+            self.shouldgotonewposition = 1;
+        }
+        self.lock_evading = 0;
+        if (isdefined(self.settings.evade_enemies_locked_on_me) && self.settings.evade_enemies_locked_on_me) {
+            self.lock_evading = self.lock_evading | self.locked_on;
+        }
+        if (isdefined(self.settings.evade_enemies_locking_on_me) && self.settings.evade_enemies_locking_on_me) {
+            self.lock_evading = self.lock_evading | self.locking_on;
+            self.lock_evading = self.lock_evading | self.locking_on_hacking;
+        }
+        if (isdefined(self.inpain) && self.inpain) {
+            wait(0.1);
+        } else if (!isdefined(self.enemy)) {
+            should_slow_down_at_goal = 1;
+            if (self.lock_evading) {
+                self.current_pathto_pos = getnextmoveposition_evasive(self.lock_evading);
+                should_slow_down_at_goal = 0;
+            } else {
+                self.current_pathto_pos = getnextmoveposition_wander();
+            }
+            if (isdefined(self.current_pathto_pos)) {
+                if (self function_a57c34b7(self.current_pathto_pos, should_slow_down_at_goal, 1)) {
+                    self thread path_update_interrupt_by_attacker();
+                    self thread path_update_interrupt();
+                    self vehicle_ai::waittill_pathing_done();
+                    self notify(#"amws_end_interrupt_watch");
+                }
+            }
+            if (isdefined(self.var_23eff037) && self.var_23eff037) {
+                self playsound(#"hash_7698127d41537782");
+                self.var_23eff037 = 0;
+            }
+        } else if (isalive(self)) {
+            self turretsettarget(0, self.enemy);
+            self vehlookat(self.enemy);
+            if (self cansee(self.enemy)) {
+                self.lasttimetargetinsight = gettime();
+                if (!(isdefined(self.var_23eff037) && self.var_23eff037)) {
+                    self playsound(#"hash_7c4742a949425295");
+                    self.var_23eff037 = 1;
+                    wait(0.5);
+                }
+            }
+            if (self.shouldgotonewposition == 0) {
+                if (gettime() > lasttimechangeposition + 1000) {
+                    self.shouldgotonewposition = 1;
+                } else if (gettime() > self.lasttimetargetinsight + 500) {
+                    self.shouldgotonewposition = 1;
+                    if (isdefined(self.var_23eff037) && self.var_23eff037) {
+                        self playsound(#"hash_7698127d41537782");
+                        self.var_23eff037 = 0;
                     }
                 }
             }
-            if (isdefined(self.settings.engage_enemies_locked_on_me) && self.settings.engage_enemies_locked_on_me && self.locked_on) {
-                self.shouldgotonewposition = 1;
-            } else if (isdefined(self.settings.engage_enemies_locking_on_me) && self.settings.engage_enemies_locking_on_me && self.locking_on) {
-                self.shouldgotonewposition = 1;
-            }
-            self.lock_evading = 0;
-            if (isdefined(self.settings.evade_enemies_locked_on_me) && self.settings.evade_enemies_locked_on_me) {
-                self.lock_evading = self.lock_evading | self.locked_on;
-            }
-            if (isdefined(self.settings.evade_enemies_locking_on_me) && self.settings.evade_enemies_locking_on_me) {
-                self.lock_evading = self.lock_evading | self.locking_on;
-                self.lock_evading = self.lock_evading | self.locking_on_hacking;
-            }
-            if (isdefined(self.inpain) && self.inpain) {
-                wait(0.1);
-            } else if (!isdefined(self.enemy)) {
+            if (self.shouldgotonewposition) {
                 should_slow_down_at_goal = 1;
                 if (self.lock_evading) {
                     self.current_pathto_pos = getnextmoveposition_evasive(self.lock_evading);
                     should_slow_down_at_goal = 0;
                 } else {
-                    self.current_pathto_pos = getnextmoveposition_wander();
+                    self.current_pathto_pos = getnextmoveposition_tactical(self.enemy);
                 }
                 if (isdefined(self.current_pathto_pos)) {
                     if (self function_a57c34b7(self.current_pathto_pos, should_slow_down_at_goal, 1)) {
@@ -435,62 +476,20 @@ function state_combat_update(params) {
                         self vehicle_ai::waittill_pathing_done();
                         self notify(#"amws_end_interrupt_watch");
                     }
-                }
-                if (isdefined(self.var_23eff037) && self.var_23eff037) {
-                    self playsound(#"hash_7698127d41537782");
-                    self.var_23eff037 = 0;
-                }
-            } else if (isalive(self)) {
-                self turretsettarget(0, self.enemy);
-                self vehlookat(self.enemy);
-                if (self cansee(self.enemy)) {
-                    self.lasttimetargetinsight = gettime();
-                    if (!(isdefined(self.var_23eff037) && self.var_23eff037)) {
-                        self playsound(#"hash_7c4742a949425295");
-                        self.var_23eff037 = 1;
-                        wait(0.5);
+                    if (isdefined(self.enemy) && util::iscooldownready("rocket", 0.5) && self cansee(self.enemy) && self.gib_rocket !== 1) {
+                        self thread aim_and_fire_rocket_launcher(0.4);
                     }
-                }
-                if (self.shouldgotonewposition == 0) {
-                    if (gettime() > lasttimechangeposition + 1000) {
-                        self.shouldgotonewposition = 1;
-                    } else if (gettime() > self.lasttimetargetinsight + 500) {
-                        self.shouldgotonewposition = 1;
-                        if (isdefined(self.var_23eff037) && self.var_23eff037) {
-                            self playsound(#"hash_7698127d41537782");
-                            self.var_23eff037 = 0;
-                        }
-                    }
-                }
-                if (self.shouldgotonewposition) {
-                    should_slow_down_at_goal = 1;
-                    if (self.lock_evading) {
-                        self.current_pathto_pos = getnextmoveposition_evasive(self.lock_evading);
-                        should_slow_down_at_goal = 0;
-                    } else {
-                        self.current_pathto_pos = getnextmoveposition_tactical(self.enemy);
-                    }
-                    if (isdefined(self.current_pathto_pos)) {
-                        if (self function_a57c34b7(self.current_pathto_pos, should_slow_down_at_goal, 1)) {
-                            self thread path_update_interrupt_by_attacker();
-                            self thread path_update_interrupt();
-                            self vehicle_ai::waittill_pathing_done();
-                            self notify(#"amws_end_interrupt_watch");
-                        }
-                        if (isdefined(self.enemy) && util::iscooldownready("rocket", 0.5) && self cansee(self.enemy) && self.gib_rocket !== 1) {
-                            self thread aim_and_fire_rocket_launcher(0.4);
-                        }
-                        lasttimechangeposition = gettime();
-                        self.shouldgotonewposition = 0;
-                    }
+                    lasttimechangeposition = gettime();
+                    self.shouldgotonewposition = 0;
                 }
             }
         }
+        self state_combat_update_wait(0.5);
     }
 }
 
 // Namespace amws/amws
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x9a5b04d8, Offset: 0x2060
 // Size: 0x160
 function function_64609aab(entity, enemy) {
@@ -512,7 +511,7 @@ function function_64609aab(entity, enemy) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x5304c34c, Offset: 0x21c8
 // Size: 0xdc
 function aim_and_fire_rocket_launcher(aim_time) {
@@ -528,7 +527,7 @@ function aim_and_fire_rocket_launcher(aim_time) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x4910013, Offset: 0x22b0
 // Size: 0x24
 function state_combat_update_wait(wait_time) {
@@ -536,7 +535,7 @@ function state_combat_update_wait(wait_time) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x3ef5ad6, Offset: 0x22e0
 // Size: 0x1c4
 function waittill_weapon_lock_or_timeout(wait_time) {
@@ -566,7 +565,7 @@ function waittill_weapon_lock_or_timeout(wait_time) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xcc25ca2, Offset: 0x24b0
 // Size: 0x74
 function wait_evasion_reaction_time() {
@@ -574,7 +573,7 @@ function wait_evasion_reaction_time() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x834f6613, Offset: 0x2530
 // Size: 0x104
 function firerocketlauncher(enemy) {
@@ -587,14 +586,14 @@ function firerocketlauncher(enemy) {
         wait(1.2);
         if (self.variant == "armored") {
             vehicle_ai::fire_for_rounds(1, 0, enemy);
-        } else {
-            vehicle_ai::fire_for_rounds(2, 0, enemy);
+            return;
         }
+        vehicle_ai::fire_for_rounds(2, 0, enemy);
     }
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x1f8ce197, Offset: 0x2640
 // Size: 0x306
 function getnextmoveposition_wander() {
@@ -610,7 +609,7 @@ function getnextmoveposition_wander() {
     vehicle_ai::positionquery_filter_outofgoalanchor(queryresult);
     positionquery_filter_inclaimedlocation(queryresult, self);
     best_point = undefined;
-    best_score = 999999;
+    best_score = -999999;
     foreach (point in queryresult.data) {
         randomscore = randomfloatrange(0, 100);
         disttooriginscore = point.disttoorigin2d * 0.2;
@@ -645,7 +644,7 @@ function getnextmoveposition_wander() {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xbc0e1905, Offset: 0x2950
 // Size: 0xa22
 function getnextmoveposition_evasive(client_flags) {
@@ -693,7 +692,9 @@ function getnextmoveposition_evasive(client_flags) {
                             point._scoredebug[#"evading_directness"].scorename = "<unknown string>";
                         #/
                         point.score = point.score + 200;
-                    } else if (abs_directness > (isdefined(self.settings.lock_evade_enemy_line_of_sight_directness) ? self.settings.lock_evade_enemy_line_of_sight_directness : 0.9)) {
+                        continue;
+                    }
+                    if (abs_directness > (isdefined(self.settings.lock_evade_enemy_line_of_sight_directness) ? self.settings.lock_evade_enemy_line_of_sight_directness : 0.9)) {
                         /#
                             if (!isdefined(point._scoredebug)) {
                                 point._scoredebug = [];
@@ -729,7 +730,7 @@ function getnextmoveposition_evasive(client_flags) {
         }
     }
     best_point = undefined;
-    best_score = 999999;
+    best_score = -999999;
     foreach (point in queryresult.data) {
         if (point.score > best_score) {
             best_score = point.score;
@@ -760,7 +761,7 @@ function getnextmoveposition_evasive(client_flags) {
 }
 
 // Namespace amws/amws
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x65795b1a, Offset: 0x3380
 // Size: 0xc02
 function getnextmoveposition_tactical(enemy) {
@@ -794,7 +795,7 @@ function getnextmoveposition_tactical(enemy) {
         vehicle_ai::positionquery_filter_distawayfromtarget(queryresult, self.avoidentities, self.avoidentitiesdistance, -500);
     }
     best_point = undefined;
-    best_score = 999999;
+    best_score = -999999;
     foreach (point in queryresult.data) {
         difftoprefereddirectness = abs(point.directness - prefereddirectness);
         directnessscore = mapfloat(0, 1, 100, 0, difftoprefereddirectness);
@@ -907,7 +908,7 @@ function getnextmoveposition_tactical(enemy) {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x2868d87e, Offset: 0x3f90
 // Size: 0x126
 function path_update_interrupt_by_attacker() {
@@ -931,7 +932,7 @@ function path_update_interrupt_by_attacker() {
 }
 
 // Namespace amws/amws
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x5c735f9d, Offset: 0x40c0
 // Size: 0x224
 function path_update_interrupt() {
@@ -972,7 +973,7 @@ function gib(attacker) {
 }
 
 // Namespace amws/amws
-// Params 15, eflags: 0x0
+// Params 15, eflags: 0x1 linked
 // Checksum 0x8f2dd5fb, Offset: 0x4380
 // Size: 0xd2
 function drone_callback_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {

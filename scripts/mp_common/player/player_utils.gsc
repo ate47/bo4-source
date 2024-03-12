@@ -12,7 +12,7 @@
 #namespace player;
 
 // Namespace player/player_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8d3c5801, Offset: 0xf8
 // Size: 0x10a
 function figure_out_friendly_fire(victim, attacker) {
@@ -36,7 +36,7 @@ function figure_out_friendly_fire(victim, attacker) {
 }
 
 // Namespace player/player_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x48bf67ed, Offset: 0x210
 // Size: 0xfc
 function freeze_player_for_round_end() {
@@ -53,7 +53,7 @@ function freeze_player_for_round_end() {
 }
 
 // Namespace player/player_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x465a6e7f, Offset: 0x318
 // Size: 0x124
 function function_c49fc862(team) {
@@ -61,14 +61,14 @@ function function_c49fc862(team) {
         teamid = "team" + level.teamindex[team];
         if (isdefined(level.var_61952d8b[team]) && level.var_61952d8b[team]) {
             clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", level.playerlives[team]);
-        } else {
-            clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", game.lives[team]);
+            return;
         }
+        clientfield::set_world_uimodel("hudItems." + teamid + ".livesCount", game.lives[team]);
     }
 }
 
 // Namespace player/player_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4b51e147, Offset: 0x448
 // Size: 0x6c
 function function_14e61d05() {
@@ -76,7 +76,7 @@ function function_14e61d05() {
 }
 
 // Namespace player/player_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7e817675, Offset: 0x4c0
 // Size: 0x64
 function function_cf3aa03d(func, threaded = 1) {
@@ -84,7 +84,7 @@ function function_cf3aa03d(func, threaded = 1) {
 }
 
 // Namespace player/player_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x3d5c16bf, Offset: 0x530
 // Size: 0x64
 function function_3c5cc656(func, threaded = 1) {

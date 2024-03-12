@@ -310,22 +310,22 @@ function function_e870d33d() {
             } else if (vehicle_used) {
                 wait(0.4);
             }
-        } else {
-            gameobject_link = util::spawn_model("tag_origin", player.origin, var_a3a6eba5);
-            player playerlinkto(gameobject_link);
-            var_79ed7809 = current_weapon.var_40ffe7d2;
-            var_79ed7809 = player function_c0101095(current_weapon, var_6b6455b9, var_79ed7809);
-            player lerpviewangleclamp(0.5, 0.1, 0.1, current_weapon.var_16e90b80, current_weapon.var_27c94b15, current_weapon.var_6cb9946f, var_79ed7809);
-            player function_66f3a713();
-            var_7db1ac70 = 1;
-            while (var_7db1ac70) {
-                if (player adsbuttonpressed() == 0) {
-                    player unlink();
-                    var_7db1ac70 = 0;
-                    continue;
-                }
-                wait(float(function_60d95f53()) / 1000);
+            continue;
+        }
+        gameobject_link = util::spawn_model("tag_origin", player.origin, var_a3a6eba5);
+        player playerlinkto(gameobject_link);
+        var_79ed7809 = current_weapon.var_40ffe7d2;
+        var_79ed7809 = player function_c0101095(current_weapon, var_6b6455b9, var_79ed7809);
+        player lerpviewangleclamp(0.5, 0.1, 0.1, current_weapon.var_16e90b80, current_weapon.var_27c94b15, current_weapon.var_6cb9946f, var_79ed7809);
+        player function_66f3a713();
+        var_7db1ac70 = 1;
+        while (var_7db1ac70) {
+            if (player adsbuttonpressed() == 0) {
+                player unlink();
+                var_7db1ac70 = 0;
+                continue;
             }
+            wait(float(function_60d95f53()) / 1000);
         }
     }
 }
@@ -491,9 +491,9 @@ function stow_on_back(current) {
             self.var_9ed9707e linkto(self, "tag_origin", v_link_offset, var_6a84bf5b);
             self.var_9ed9707e setplayercollision(0);
             self.tag_stowed_back = undefined;
-        } else {
-            self attach(self.tag_stowed_back, "tag_stowed_back", 1);
+            return;
         }
+        self attach(self.tag_stowed_back, "tag_stowed_back", 1);
         return;
     } else if (currentweapon != level.weaponnone) {
         for (idx = 0; idx < self.weapon_array_primary.size; idx++) {
@@ -677,7 +677,6 @@ function isheadshot(shitloc, smeansofdeath) {
     case #"mod_melee_assassinate":
     case #"mod_melee":
         return 0;
-        break;
     }
     return 0;
 }

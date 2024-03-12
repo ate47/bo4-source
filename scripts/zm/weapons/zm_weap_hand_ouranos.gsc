@@ -48,11 +48,11 @@ function __init__() {
     clientfield::register("actor", "" + #"hash_28af05433c1d1a2e", 16000, 1, "counter");
     serverfield::register("ouranos_feather_hit", 16000, getminbitcountfornum(3), "int", &ouranos_feather_hit);
     level.w_hand_ouranos = getweapon(#"ww_hand_o");
-    level.w_hand_ouranos_charged = getweapon(#"hash_730ad7426b976c7c");
+    level.w_hand_ouranos_charged = getweapon(#"ww_hand_o_charged");
     level.w_hand_ouranos_uncharged = getweapon(#"ww_hand_o_uncharged");
     level.w_hand_ouranos_upgraded = getweapon(#"ww_hand_o_upgraded");
     zm_weapons::include_zombie_weapon(#"ww_hand_o", 0);
-    zm_weapons::include_zombie_weapon(#"hash_730ad7426b976c7c", 0);
+    zm_weapons::include_zombie_weapon(#"ww_hand_o_charged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_o_uncharged", 0);
     zm_weapons::include_zombie_weapon(#"ww_hand_o_upgraded", 0);
     callback::on_connect(&on_player_connect);
@@ -91,10 +91,10 @@ function function_3f8da82c() {
         if (s_notify.weapon === level.w_hand_ouranos || s_notify.weapon === level.w_hand_ouranos_upgraded) {
             self.var_e34577ca = undefined;
             self thread function_54922a21();
-        } else {
-            self clientfield::set("" + #"hash_4fb73e88d45af0ef", 0);
-            self clientfield::set("" + #"hash_494799612e85ee2f", 0);
+            continue;
         }
+        self clientfield::set("" + #"hash_4fb73e88d45af0ef", 0);
+        self clientfield::set("" + #"hash_494799612e85ee2f", 0);
     }
 }
 
@@ -162,7 +162,7 @@ function function_54922a21() {
         while ((self.chargeshotlevel != 2 || !self attackbuttonpressed()) && (self.currentweapon === level.w_hand_ouranos || self.currentweapon === level.w_hand_ouranos_upgraded)) {
             waitframe(1);
         }
-        self thread function_b27148c8(self.currentweapon);
+        self thread player_charged_shot(self.currentweapon);
         self waittill(#"weapon_fired", #"stop_beaming");
         while (self.chargeshotlevel >= 2) {
             waitframe(1);
@@ -311,7 +311,7 @@ function function_1fc2378f(e_projectile, ai_zombie, n_damage) {
         v_end = var_2ed6f142 + v_forward * 200;
         n_dist_sq = distance2dsquared(self.origin, v_end);
         if (isdefined(ai_zombie) && distance2dsquared(e_projectile.origin, ai_zombie.origin) <= n_dist_sq) {
-            ai_zombie.var_aed05e5b = 1;
+            ai_zombie.is_close = 1;
             n_dist = distance(e_projectile.origin, ai_zombie.origin);
             n_time = n_dist / 1500;
             if (n_time <= 0.1) {
@@ -506,7 +506,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, v_to_t
         if (e_target.health <= 0) {
             e_target.ignoremelee = 1;
             e_target.marked_for_death = 1;
-            if (isdefined(e_target.var_aed05e5b) && e_target.var_aed05e5b) {
+            if (isdefined(e_target.is_close) && e_target.is_close) {
                 v_fling = anglestoforward(self.angles) * 250 + vectorscale((0, 0, 1), 100);
             } else {
                 v_fling = v_to_target * 250;
@@ -538,13 +538,13 @@ function ouranos_feather_hit(oldval, newval) {
         switch (newval) {
         case 1:
             self thread zm_red_ww_quests::function_759247cd(#"hash_2ffae388c1cf246e");
-            break;
+            return;
         case 2:
             self thread zm_red_ww_quests::function_759247cd(#"hash_4634a6e71b6a75e7");
-            break;
+            return;
         case 3:
             self thread zm_red_ww_quests::function_759247cd(#"hash_3a4532026857cf6");
-            break;
+            return;
         }
     }
 }
@@ -569,7 +569,7 @@ function function_180bae11() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2dde16a6, Offset: 0x2740
 // Size: 0x2d6
-function function_b27148c8(weapon) {
+function player_charged_shot(weapon) {
     self endon(#"death", #"weapon_change");
     self thread function_c7732ae7(weapon);
     self thread function_1e39fbc5(weapon);
@@ -636,7 +636,7 @@ function function_1e39fbc5(weapon) {
         }
         w_hand = self getcurrentweapon();
         if (w_hand != weapon) {
-            break;
+            return;
         }
         self setweaponammoclip(weapon, n_ammo);
         if (n_ammo < 1) {
@@ -680,7 +680,9 @@ function function_c7732ae7(w_curr) {
             if (isalive(e_target) && self is_valid_target(e_target, n_range) && !(isdefined(e_target.var_8ac7cc49) && e_target.var_8ac7cc49)) {
                 self thread function_3719a295(e_target);
                 waitframe(1);
-            } else if (isdefined(e_target) && isdefined(e_target.var_6cec0263) && e_target.var_6cec0263 && isalive(e_target) && !self util::is_player_looking_at(e_target getcentroid(), 0.9, 0, self)) {
+                continue;
+            }
+            if (isdefined(e_target) && isdefined(e_target.var_6cec0263) && e_target.var_6cec0263 && isalive(e_target) && !self util::is_player_looking_at(e_target getcentroid(), 0.9, 0, self)) {
                 e_target.var_6cec0263 = undefined;
                 e_target notify(#"hash_62a477d53a6bbad");
             }
@@ -709,12 +711,14 @@ function function_3719a295(e_target) {
     }
     if (distance2dsquared(self.origin, e_target.origin) <= var_ea0a902e * var_ea0a902e) {
         self thread function_24f525c1(e_target);
-    } else if (distance2dsquared(self.origin, e_target.origin) <= var_d756924a * var_d756924a) {
-        self thread function_7a1456c5(e_target);
-    } else {
-        e_target.var_6cec0263 = undefined;
-        e_target notify(#"starting_slowdown_ai");
+        return;
     }
+    if (distance2dsquared(self.origin, e_target.origin) <= var_d756924a * var_d756924a) {
+        self thread function_7a1456c5(e_target);
+        return;
+    }
+    e_target.var_6cec0263 = undefined;
+    e_target notify(#"starting_slowdown_ai");
 }
 
 // Namespace zm_weap_hand_ouranos/zm_weap_hand_ouranos
@@ -771,11 +775,15 @@ function function_d54becbd() {
         n_rand = randomint(3);
         if (n_rand == 2 && self.archetype !== #"catalyst") {
             self zombie_utility::function_df5afb5e(1);
-        } else if (n_rand == 1) {
+            continue;
+        }
+        if (n_rand == 1) {
             if (!gibserverutils::isgibbed(self, 32)) {
                 gibserverutils::gibleftarm(self);
             }
-        } else if (!gibserverutils::isgibbed(self, 16)) {
+            continue;
+        }
+        if (!gibserverutils::isgibbed(self, 16)) {
             gibserverutils::gibrightarm(self);
         }
     }

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_waterballoon_fx/wz_waterballoon_fx
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5c9c10b2, Offset: 0x130
 // Size: 0x94
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace wz_waterballoon_fx/wz_waterballoon_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x92fdc813, Offset: 0x1d0
 // Size: 0xc4
 function on_localclient_connect(localclientnum) {
@@ -36,7 +36,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace wz_waterballoon_fx/wz_waterballoon_fx
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2d8687fa, Offset: 0x2a0
 // Size: 0x5bc
 function function_4433b7ba(localclientnum) {

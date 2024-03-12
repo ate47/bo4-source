@@ -38,9 +38,9 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
         self.var_eaa7f0ba = zm_trial::function_5769f26a(var_eaa7f0ba);
     }
     if (weapon_name == #"hero_lv3_weapon") {
-        var_789e79cc = array(#"hero_chakram_lv3", #"hero_hammer_lv3", #"hero_scepter_lv3", #"hero_sword_pistol_lv3");
+        hero_lv3_weapons = array(#"hero_chakram_lv3", #"hero_hammer_lv3", #"hero_scepter_lv3", #"hero_sword_pistol_lv3");
         level.var_ab9d0ec6 = [];
-        foreach (var_ae209633 in var_789e79cc) {
+        foreach (var_ae209633 in hero_lv3_weapons) {
             if (!isdefined(level.var_ab9d0ec6)) {
                 level.var_ab9d0ec6 = [];
             } else if (!isarray(level.var_ab9d0ec6)) {
@@ -253,9 +253,9 @@ function private monitor_objective(s_challenge, a_weapons) {
             weapon_upgraded = zm_weapons::get_upgrade_weapon(weapon);
             if (self hasweapon(weapon, 1) || isdefined(level.var_14c8992d) && level.var_14c8992d && isdefined(weapon_upgraded) && self hasweapon(weapon_upgraded, 1)) {
                 objective_setinvisibletoplayer(s_challenge.a_n_objective_ids[weapon.name], self);
-            } else {
-                objective_setvisibletoplayer(s_challenge.a_n_objective_ids[weapon.name], self);
+                continue;
             }
+            objective_setvisibletoplayer(s_challenge.a_n_objective_ids[weapon.name], self);
         }
         waitframe(1);
     }
@@ -305,7 +305,9 @@ function private function_52f6931d() {
                 if (!self hasweapon(weapon, 1) && isdefined(weapon_upgraded) && !self hasweapon(weapon_upgraded, 1)) {
                     return;
                 }
-            } else if (!self hasweapon(weapon, 1)) {
+                continue;
+            }
+            if (!self hasweapon(weapon, 1)) {
                 return;
             }
         }
@@ -327,9 +329,9 @@ function private function_46feb36d() {
                     if (isdefined(self aat::getaatonweapon(weapon))) {
                         self.var_4ced1fcf = 1;
                     }
-                } else {
-                    self.var_4ced1fcf = 1;
+                    continue;
                 }
+                self.var_4ced1fcf = 1;
             }
         }
     }

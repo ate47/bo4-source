@@ -118,9 +118,9 @@ function private function_33f0ddd3(s_event) {
             var_972e1f84 = 1;
         }
         if (!var_972e1f84 && !zm_loadout::function_2ff6913(s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
             if (s_event.weapon.dualwieldweapon != level.weaponnone) {
-                self function_28602a03(s_event.weapon.dualwieldweapon, 1, 1);
+                self lockweapon(s_event.weapon.dualwieldweapon, 1, 1);
             }
         }
     }

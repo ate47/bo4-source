@@ -314,9 +314,9 @@ function private end_play_next(notifyhash) {
     }
     if (isdefined(self.var_556f910a) && self.var_556f910a.size > 0) {
         play_next();
-    } else {
-        self notify(#"hash_296a16c4cf068a53");
+        return;
     }
+    self notify(#"hash_296a16c4cf068a53");
 }
 
 // Namespace voice/voice
@@ -350,14 +350,12 @@ function private clear_queue() {
 function private function_7924f3ca() {
     self endon(#"death", #"disconnect");
     if (isdefined(self.var_556f910a)) {
-        i = 0;
-        while (i < self.var_556f910a.size) {
+        for (i = 0; i < self.var_556f910a.size; i++) {
             if (isdefined(self.var_556f910a[i]) && isdefined(self.var_556f910a[i].scriptkey)) {
                 b_queue = isdefined(self.var_556f910a[i].params) ? self.var_556f910a[i].params.queue : 0;
                 if (!b_queue) {
                     arrayremoveindex(self.var_556f910a, i);
-                } else {
-                    i++;
+                    continue;
                 }
             }
         }
@@ -461,9 +459,13 @@ function play_notetrack(scriptid) {
         foreach (player in getplayers()) {
             if (isdefined(player._scene_object) && isdefined(player._scene_object._o_scene) && isdefined(self._scene_object._o_scene) && player._scene_object._o_scene == self._scene_object._o_scene) {
                 self play_to(soundent, player);
-            } else if (!isdefined(player._scene_object) && isdefined(player.var_e3d6d713) && isdefined(self._scene_object._o_scene) && player.var_e3d6d713 == self._scene_object._o_scene._str_name) {
+                continue;
+            }
+            if (!isdefined(player._scene_object) && isdefined(player.var_e3d6d713) && isdefined(self._scene_object._o_scene) && player.var_e3d6d713 == self._scene_object._o_scene._str_name) {
                 self play_to(soundent, player);
-            } else if (self flagsys::get(#"hash_e2ce599b208682a") && self util::is_on_side(player.team) || self flagsys::get(#"hash_f21f320f68c0457") && !self util::is_on_side(player.team)) {
+                continue;
+            }
+            if (self flagsys::get(#"hash_e2ce599b208682a") && self util::is_on_side(player.team) || self flagsys::get(#"hash_f21f320f68c0457") && !self util::is_on_side(player.team)) {
                 self play_to(soundent, player);
             }
         }
@@ -578,7 +580,7 @@ function function_93932552(s_voice) {
         for (i = 0; i < self.var_556f910a.size; i++) {
             if (priority <= function_8e0c80fb(self.var_556f910a[i]) && priority > function_8e0c80fb(self.var_556f910a[i + 1])) {
                 arrayinsert(self.var_556f910a, s_voice, i + 1);
-                break;
+                return;
             }
         }
     }

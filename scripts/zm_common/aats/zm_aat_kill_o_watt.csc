@@ -46,7 +46,9 @@ function function_846837f(localclientnum, oldval, newval, bnewent, binitialsnap,
         if (!isdefined(self.var_6a8124b)) {
             self.var_6a8124b = self playloopsound("zmb_aat_kilowatt_stunned_lp");
         }
-    } else if (isdefined(self.var_548620a)) {
+        return;
+    }
+    if (isdefined(self.var_548620a)) {
         stopfx(localclientnum, self.var_548620a);
         self.var_548620a = undefined;
         stopfx(localclientnum, self.var_9fddda59);

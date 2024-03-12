@@ -40,7 +40,7 @@ function private on_begin(weapon_name) {
     foreach (player in getplayers()) {
         foreach (var_5a1e3e5b in level.hero_weapon) {
             foreach (w_hero in var_5a1e3e5b) {
-                player function_28602a03(w_hero, 1, 1);
+                player lockweapon(w_hero, 1, 1);
             }
         }
         player zm_trial_util::function_9bf8e274();
@@ -94,7 +94,7 @@ function is_active() {
 function private function_33f0ddd3(s_event) {
     if (s_event.event === "give_weapon") {
         if (zm_loadout::function_59b0ef71("lethal_grenade", s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
         }
     }
 }

@@ -49,8 +49,7 @@ function private function_ee3d20f5(entity, points) {
     path = undefined;
     shortestpath = undefined;
     start = entity getclosestpointonnavvolume(entity.origin, 200);
-    index = 0;
-    while (index < points.size) {
+    for (index = 0; index < points.size; index = index + 16) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
             goalpoints[goalpoints.size] = entity getclosestpointonnavvolume(points[goalindex].origin, 200);
@@ -63,7 +62,6 @@ function private function_ee3d20f5(entity, points) {
                 return path;
             }
         }
-        index = index + 16;
     }
     return path;
 }
@@ -77,8 +75,7 @@ function private _calculatepathtopoints(entity, points) {
     shortestpath = undefined;
     entradius = entity getpathfindingradius();
     var_bb52d328 = getclosestpointonnavmesh(entity.origin, 200, entradius);
-    index = 0;
-    while (index < points.size) {
+    for (index = 0; index < points.size; index = index + 16) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
             if (ispointonnavmesh(points[goalindex].origin, entradius)) {
@@ -96,7 +93,6 @@ function private _calculatepathtopoints(entity, points) {
                 shortestpath = possiblepath.pathdistance;
             }
         }
-        index = index + 16;
     }
     return path;
 }
@@ -184,7 +180,6 @@ function private function_41c81572(var_78caba27) {
         case #"player":
         case #"vehicle":
             return (1, 0.5, 0);
-            break;
         }
         return (1, 0, 0);
     #/
@@ -198,10 +193,10 @@ function private function_741d9796(member, vehicle, commander, var_78caba27) {
     /#
         switch (var_78caba27) {
         case #"bot chain":
-            jumpiffalse(isdefined(member.bot.var_53ffa4c4.startstruct)) LOC_000000d8;
-            return ("<unknown string>" + member.bot.var_53ffa4c4.startstruct.targetname + "<unknown string>");
+            if (isdefined(member.bot.var_53ffa4c4.startstruct)) {
+                return ("<unknown string>" + member.bot.var_53ffa4c4.startstruct.targetname + "<unknown string>");
+            }
         case #"commander":
-        LOC_000000d8:
             foreach (squad in commander.squads) {
                 bots = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
                 if (bots.size > 0 && bots[0][#"entnum"] == member getentitynumber()) {
@@ -227,7 +222,6 @@ function private function_741d9796(member, vehicle, commander, var_78caba27) {
             switch (var_78caba27) {
             case #"spline":
                 return vehicle.attachedpath.targetname;
-                break;
             }
             return;
         }
@@ -375,8 +369,7 @@ function private function_75df771f() {
         yoffset = 100;
         var_2f7868e6 = 850;
         var_608ee9cd = 50;
-        debugmode = getdvarint(#"hash_2010e59417406d5f", 0);
-        while (1) {
+        for (debugmode = getdvarint(#"hash_2010e59417406d5f", 0); 1; debugmode = getdvarint(#"hash_2010e59417406d5f", 0)) {
             waitframe(1);
             var_f3ac248f = getdvarint(#"hash_2010e59417406d5f", 0);
             if (var_f3ac248f != 0) {
@@ -407,12 +400,13 @@ function private function_75df771f() {
                     axis = function_45857dbe(util::get_bot_players(#"axis"));
                     function_df74a8f3(var_1b2a0645, var_d695a79f, axis, level.axiscommander);
                 }
-            } else if (debugmode) {
+                continue;
+            }
+            if (debugmode) {
                 /#
                     iprintlnbold("<unknown string>");
                 #/
             }
-            debugmode = getdvarint(#"hash_2010e59417406d5f", 0);
         }
     #/
 }
@@ -679,9 +673,9 @@ function private function_20610c3(volume, color, channel) {
                 recordcircle(bottom, radius, color, channel);
                 recordcircle(top, radius, color, channel);
                 recordline(bottom, top, color, channel);
-            } else {
-                function_af72dbc5(volume.origin, mins, maxs, volume.angles[0], color, channel);
+                return;
             }
+            function_af72dbc5(volume.origin, mins, maxs, volume.angles[0], color, channel);
         #/
     #/
 }
@@ -783,20 +777,22 @@ function function_700c578d(bundle) {
     foreach (kvp in var_6da809dc) {
         if (!isdefined(bundle.(kvp))) {
             var_389ef689.(kvp) = 0;
-        } else {
-            var_389ef689.(kvp) = bundle.(kvp);
+            continue;
         }
+        var_389ef689.(kvp) = bundle.(kvp);
     }
     if (bundle.("customizecompanions") === 1) {
         for (index = 0; index < var_e3e0ebe5.size; index++) {
             kvp = var_e3e0ebe5[index];
             if (!isdefined(bundle.(kvp))) {
                 var_389ef689.(kvp) = 0;
-            } else if (bundle.(kvp) === "inherit from doppelbot") {
-                var_389ef689.(kvp) = var_389ef689.(var_6da809dc[index]);
-            } else {
-                var_389ef689.(kvp) = bundle.(kvp);
+                continue;
             }
+            if (bundle.(kvp) === "inherit from doppelbot") {
+                var_389ef689.(kvp) = var_389ef689.(var_6da809dc[index]);
+                continue;
+            }
+            var_389ef689.(kvp) = bundle.(kvp);
         }
     } else {
         for (index = 0; index < var_e3e0ebe5.size; index++) {
@@ -842,7 +838,7 @@ function function_704d5fbd(bot, component) {
     }
     switch (component.m_str_type) {
     case #"goto":
-        break;
+        return;
     case #"destroy":
     case #"defend":
         if (function_778568e2(bot)) {
@@ -850,10 +846,9 @@ function function_704d5fbd(bot, component) {
         } else {
             return calculatepathtotrigger(bot, component.var_2956bff4);
         }
-        break;
+        return;
     case #"capturearea":
         return calculatepathtotrigger(bot, component.var_cc67d976);
-        break;
     }
 }
 
@@ -870,18 +865,17 @@ function calculatepathtogameobject(bot, gameobject) {
     }
     if (function_778568e2(bot)) {
         return calculatepathtotrigger(bot, gameobject.trigger);
-    } else {
-        var_e61f062b = bot getpathfindingradius();
-        botposition = getclosestpointonnavmesh(bot.origin, 200, var_e61f062b);
-        if (!isdefined(botposition)) {
-            return;
-        }
-        points = querypointsaroundgameobject(bot, gameobject);
-        if (!isdefined(points) || points.size <= 0) {
-            return;
-        }
-        return _calculatepathtopoints(bot, points);
     }
+    var_e61f062b = bot getpathfindingradius();
+    botposition = getclosestpointonnavmesh(bot.origin, 200, var_e61f062b);
+    if (!isdefined(botposition)) {
+        return;
+    }
+    points = querypointsaroundgameobject(bot, gameobject);
+    if (!isdefined(points) || points.size <= 0) {
+        return;
+    }
+    return _calculatepathtopoints(bot, points);
 }
 
 // Namespace strategiccommandutility/strategic_command
@@ -932,9 +926,8 @@ function calculatepathtoobjective(bot, objective) {
     }
     if (inair) {
         return function_ee3d20f5(vehicle, points);
-    } else {
-        return _calculatepathtopoints(bot, points);
     }
+    return _calculatepathtopoints(bot, points);
 }
 
 // Namespace strategiccommandutility/strategic_command
@@ -1108,20 +1101,22 @@ function function_1e3c1b91(var_b7f15515, var_5e513205) {
             } else {
                 var_389ef689.(kvp) = var_b7f15515.(kvp);
             }
-        } else {
-            var_389ef689.(kvp) = var_5e513205.(kvp);
+            continue;
         }
+        var_389ef689.(kvp) = var_5e513205.(kvp);
     }
     if (var_5e513205.("customizecompanions") === 1) {
         for (index = 0; index < var_e3e0ebe5.size; index++) {
             kvp = var_e3e0ebe5[index];
             if (!isdefined(var_5e513205.(kvp))) {
                 var_389ef689.(kvp) = 0;
-            } else if (var_5e513205.(kvp) === "inherit from doppelbot") {
-                var_389ef689.(kvp) = var_389ef689.(var_6da809dc[index]);
-            } else {
-                var_389ef689.(kvp) = var_5e513205.(kvp);
+                continue;
             }
+            if (var_5e513205.(kvp) === "inherit from doppelbot") {
+                var_389ef689.(kvp) = var_389ef689.(var_6da809dc[index]);
+                continue;
+            }
+            var_389ef689.(kvp) = var_5e513205.(kvp);
         }
     } else {
         for (index = 0; index < var_e3e0ebe5.size; index++) {
@@ -1216,7 +1211,6 @@ function function_4b0c469d(vehicle) {
         return "air";
     case #"4 wheel":
         return "ground";
-        break;
     }
     return "ground";
 }
@@ -1269,7 +1263,6 @@ function function_5c2c9542(entity, component) {
         return component.var_2956bff4;
     case #"capturearea":
         return component.var_cc67d976;
-        break;
     }
 }
 
@@ -1406,7 +1399,6 @@ function function_208c970d(gpbundle, var_832340f2) {
         break;
     default:
         return 0;
-        break;
     }
     return 1;
 }
@@ -1452,7 +1444,6 @@ function function_f867cce0(missioncomponent, commanderteam) {
         break;
     default:
         return 0;
-        break;
     }
     return 1;
 }

@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf1a83948, Offset: 0x1e0
 // Size: 0x84
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7db20e46, Offset: 0x270
 // Size: 0x20
 function private getdatamodelprefix(id) {
@@ -37,7 +37,7 @@ function private getdatamodelprefix(id) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x126c3471, Offset: 0x298
 // Size: 0x1ac
 function setupclientfields() {
@@ -53,7 +53,7 @@ function setupclientfields() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdac280d, Offset: 0x450
 // Size: 0x136
 function setupuimodels() {
@@ -68,7 +68,7 @@ function setupuimodels() {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xd24364f6, Offset: 0x590
 // Size: 0x22c
 function private setupstaticmodelfieldsforspawngroup(spawngroup) {
@@ -90,7 +90,7 @@ function private setupstaticmodelfieldsforspawngroup(spawngroup) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7c2944fa, Offset: 0x7c8
 // Size: 0x12c
 function function_bc7ec9a1(spawngroup) {
@@ -108,7 +108,7 @@ function function_bc7ec9a1(spawngroup) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbe0c6a6e, Offset: 0x900
 // Size: 0x7c
 function setupspawngroup(spawngroup) {
@@ -120,7 +120,7 @@ function setupspawngroup(spawngroup) {
 }
 
 // Namespace userspawnselection/userspawnselection
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x76fb5b83, Offset: 0x988
 // Size: 0xd8
 function setupspawngroups(localclientnum) {

@@ -98,8 +98,7 @@ function aptoggleloop() {
     for (;;) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
-        weapon = waitresult.weapon;
-        while (weapon.lockontype == "AP Single") {
+        for (weapon = waitresult.weapon; weapon.lockontype == "AP Single"; weapon = self getcurrentweapon()) {
             abort = 0;
             while (!(self playerads() == 1)) {
                 waitframe(1);
@@ -118,7 +117,6 @@ function aptoggleloop() {
             }
             self notify(#"ap_off");
             self clearaptarget(weapon);
-            weapon = self getcurrentweapon();
         }
     }
 }
@@ -144,7 +142,7 @@ function aplockloop(weapon) {
                     }
                 }
             }
-        } while(!done);
+        } while (!done);
         inlockingstate = 0;
         do {
             done = 1;
@@ -172,7 +170,7 @@ function aplockloop(weapon) {
                     target.aptarget notify(#"missile_lock", {#weapon:weapon, #attacker:self});
                 }
             }
-        } while(!done);
+        } while (!done);
         if (!inlockingstate) {
             do {
                 done = 1;
@@ -193,7 +191,7 @@ function aplockloop(weapon) {
                         break;
                     }
                 }
-            } while(!done);
+            } while (!done);
         }
         if (self.multilocklist.size >= 1) {
             continue;
@@ -229,7 +227,9 @@ function getbesttarget(weapon) {
                     }
                 }
             }
-        } else if (self insideapreticlenolock(targetsall[idx])) {
+            continue;
+        }
+        if (self insideapreticlenolock(targetsall[idx])) {
             if (isdefined(targetsall[idx].owner) && self != targetsall[idx].owner) {
                 if (self locksighttest(targetsall[idx])) {
                     targetsvalid[targetsvalid.size] = targetsall[idx];
@@ -337,7 +337,7 @@ function seekersound(alias, looping, id) {
         do {
             self playlocalsound(alias);
             wait(time);
-        } while(looping);
+        } while (looping);
         self stoprumble("stinger_lock_rumble");
     }
 }

@@ -65,7 +65,9 @@ function function_7157628d(localclientnum, oldval, newval, bnewent, binitialsnap
         } else {
             self.var_b00e8bda[localclientnum] = playtagfxset(localclientnum, "weapon_zm_scorpion_3p", self);
         }
-    } else if (isdefined(self.var_b00e8bda[localclientnum])) {
+        return;
+    }
+    if (isdefined(self.var_b00e8bda[localclientnum])) {
         foreach (fx in self.var_b00e8bda[localclientnum]) {
             killfx(localclientnum, fx);
         }
@@ -97,7 +99,9 @@ function function_bec8c33(localclientnum, oldval, newval, bnewent, binitialsnap,
         } else {
             self.var_db5b9ebb[localclientnum] = playtagfxset(localclientnum, "weapon_zm_scorpion_charged_3p", self);
         }
-    } else if (isdefined(self.var_db5b9ebb[localclientnum])) {
+        return;
+    }
+    if (isdefined(self.var_db5b9ebb[localclientnum])) {
         foreach (fx in self.var_db5b9ebb[localclientnum]) {
             killfx(localclientnum, fx);
         }
@@ -123,9 +127,9 @@ function function_b6e5e889(localclientnum, oldval, newval, bnewent, binitialsnap
                 self thread function_2509f629(localclientnum, 0);
             }
         }
-    } else {
-        self thread function_a7ca9a9f(localclientnum);
+        return;
     }
+    self thread function_a7ca9a9f(localclientnum);
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -148,7 +152,9 @@ function function_2509f629(localclientnum, var_77e629d2 = 1) {
     wait(0.5);
     if (var_77e629d2 && viewmodelhastag(localclientnum, "tag_flash2")) {
         self.var_33fb8596 = playviewmodelfx(localclientnum, level._effect[#"hash_665c75d58cefe3d1"], "tag_flash2");
-    } else if (!var_77e629d2 && isdefined(self gettagorigin("tag_flash2"))) {
+        return;
+    }
+    if (!var_77e629d2 && isdefined(self gettagorigin("tag_flash2"))) {
         self.var_33fb8596 = util::playfxontag(localclientnum, level._effect[#"hash_666361d58cf5e083"], self, "tag_flash2");
     }
 }
@@ -181,7 +187,9 @@ function function_fc035b41(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         if (self zm_utility::function_5d8fd5f3(localclientnum) && viewmodelhastag(localclientnum, "tag_flash2")) {
             playviewmodelfx(localclientnum, level._effect[#"hash_70d2a1e399efcc91"], "tag_flash2");
-        } else if (isdefined(self gettagorigin("tag_flash2"))) {
+            return;
+        }
+        if (isdefined(self gettagorigin("tag_flash2"))) {
             util::playfxontag(localclientnum, level._effect[#"hash_70d98de399f5c943"], self, "tag_flash2");
         }
     }
@@ -217,22 +225,22 @@ function function_8635aaf9(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, "wpn_scorpion_zombie_impact");
             self.var_f80659e1 = self playloopsound("wpn_scorpion_zombie_lp", 1);
         }
-    } else {
-        self.var_2c2980d3 = undefined;
-        arrayremovevalue(level.var_7cfd8159, self);
-        if (isdefined(self.var_7a5134d5)) {
-            stopfx(localclientnum, self.var_7a5134d5);
-            self.var_7a5134d5 = undefined;
-        }
-        if (isdefined(self.var_f6e0481f)) {
-            stopfx(localclientnum, self.var_f6e0481f);
-            self.var_f6e0481f = undefined;
-        }
-        if (isdefined(self.var_f80659e1)) {
-            self playsound(localclientnum, "wpn_scorpion_zombie_explode");
-            self stoploopsound(self.var_f80659e1);
-            self.var_f80659e1 = undefined;
-        }
+        return;
+    }
+    self.var_2c2980d3 = undefined;
+    arrayremovevalue(level.var_7cfd8159, self);
+    if (isdefined(self.var_7a5134d5)) {
+        stopfx(localclientnum, self.var_7a5134d5);
+        self.var_7a5134d5 = undefined;
+    }
+    if (isdefined(self.var_f6e0481f)) {
+        stopfx(localclientnum, self.var_f6e0481f);
+        self.var_f6e0481f = undefined;
+    }
+    if (isdefined(self.var_f80659e1)) {
+        self playsound(localclientnum, "wpn_scorpion_zombie_explode");
+        self stoploopsound(self.var_f80659e1);
+        self.var_f80659e1 = undefined;
     }
 }
 
@@ -260,15 +268,15 @@ function function_59a204ea(localclientnum, oldval, newval, bnewent, binitialsnap
             self playsound(localclientnum, "wpn_scorpion_zombie_impact");
             self.var_4c74325a = self playloopsound("wpn_scorpion_zombie_lp", 1);
         }
-    } else {
-        self.var_427e5396 = undefined;
-        if (isdefined(self.var_4c76eab4)) {
-            stopfx(localclientnum, self.var_4c76eab4);
-        }
-        if (isdefined(self.var_4c74325a)) {
-            self stoploopsound(self.var_4c74325a);
-            self.var_4c74325a = undefined;
-        }
+        return;
+    }
+    self.var_427e5396 = undefined;
+    if (isdefined(self.var_4c76eab4)) {
+        stopfx(localclientnum, self.var_4c76eab4);
+    }
+    if (isdefined(self.var_4c74325a)) {
+        self stoploopsound(self.var_4c74325a);
+        self.var_4c74325a = undefined;
     }
 }
 

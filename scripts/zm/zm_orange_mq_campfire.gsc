@@ -127,7 +127,9 @@ function function_1ad84248() {
                 level.var_80c25d0a = 115;
             }
             level.var_80c25d0a++;
-        } else if (level.var_96eedc2a >= 4 && level.var_80c25d0a >= 115 && level flag::get(#"hash_18b94410e3b6b0bf")) {
+            continue;
+        }
+        if (level.var_96eedc2a >= 4 && level.var_80c25d0a >= 115 && level flag::get(#"hash_18b94410e3b6b0bf")) {
             var_76f4999d = "mus_campfire_sing_for_my_supper";
             n_wait = float(soundgetplaybacktime(var_76f4999d)) / 1000;
             self.vessel.story = var_76f4999d;
@@ -221,8 +223,7 @@ function function_af39e9d5() {
     level endon(#"end_game", #"hash_18c97556779d2ace");
     var_a28e7c1f = self.origin + vectorscale((0, 0, 1), 2);
     var_ae661658 = self.origin - vectorscale((0, 0, 1), 2);
-    var_4814cac6 = 1;
-    while (!level flag::get(#"hash_43c116bdb3a96e16")) {
+    for (var_4814cac6 = 1; !level flag::get(#"hash_43c116bdb3a96e16"); var_4814cac6 = !var_4814cac6) {
         if (var_4814cac6) {
             self moveto(var_a28e7c1f, 2, 1, 1);
         } else {
@@ -230,7 +231,6 @@ function function_af39e9d5() {
         }
         self rotatevelocity(vectorscale((0, 1, 0), 8), 4);
         self waittill(#"movedone");
-        var_4814cac6 = !var_4814cac6;
     }
 }
 

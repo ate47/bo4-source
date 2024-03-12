@@ -26,7 +26,7 @@ function init() {
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xf2eed308, Offset: 0x288
 // Size: 0xa4
 function on_player_spawned() {
@@ -41,7 +41,7 @@ function on_player_spawned() {
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xda840b45, Offset: 0x338
 // Size: 0x1f0
 function watchkillstreakweapondelay() {
@@ -88,7 +88,7 @@ function usekillstreakweapondrop(hardpointtype) {
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb7789c37, Offset: 0x5b8
 // Size: 0x6dc
 function usecarriedkillstreakweapon(hardpointtype) {
@@ -175,7 +175,7 @@ function usecarriedkillstreakweapon(hardpointtype) {
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfc6756e2, Offset: 0xca0
 // Size: 0x16e
 function usekillstreakweaponfromcrate(hardpointtype) {
@@ -207,7 +207,7 @@ function usekillstreakweaponfromcrate(hardpointtype) {
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x36f227c7, Offset: 0xe18
 // Size: 0x4f4
 function watchkillstreakweaponswitch(killstreakweapon, killstreak_id, isfrominventory) {
@@ -273,12 +273,12 @@ function watchkillstreakweaponswitch(killstreakweapon, killstreak_id, isfrominve
             self killstreaks::remove_used_killstreak(killstreaks::get_killstreak_for_weapon(killstreakweapon), killstreak_id);
             self killstreaks::activate_next();
         }
-        break;
+        return;
     }
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0xf21be0e1, Offset: 0x1318
 // Size: 0x538
 function watchkillstreakweapondeath(killstreakweapon, killstreak_id, isfrominventory) {
@@ -331,7 +331,9 @@ function watchkillstreakweapondeath(killstreakweapon, killstreak_id, isfrominven
         self takeweapon(killstreakweapon);
         self killstreaks::remove_used_killstreak(killstreaktype, killstreak_id);
         self killstreaks::activate_next();
-    } else if (isfrominventory) {
+        return;
+    }
+    if (isfrominventory) {
         killstreakindex = self killstreaks::get_killstreak_index_by_id(killstreak_id);
         if (isdefined(killstreakindex)) {
             self.pers[#"killstreak_ammo_count"][killstreakindex] = self.pers[#"held_killstreak_ammo_count"][killstreakweapon];
@@ -340,7 +342,7 @@ function watchkillstreakweapondeath(killstreakweapon, killstreak_id, isfrominven
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6deb589d, Offset: 0x1858
 // Size: 0xd0
 function watchplayerdeath(killstreakweapon) {
@@ -353,7 +355,7 @@ function watchplayerdeath(killstreakweapon) {
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xddb4ca66, Offset: 0x1930
 // Size: 0x122
 function watchkillstreakremoval(killstreaktype, killstreak_id) {
@@ -367,15 +369,15 @@ function watchkillstreakremoval(killstreaktype, killstreak_id) {
         if (removedkillstreakweapon.name == "inventory_minigun") {
             self.minigunstart = 0;
             self.minigunactive = 0;
-        } else {
-            self.m32start = 0;
-            self.m32active = 0;
+            return;
         }
+        self.m32start = 0;
+        self.m32active = 0;
     }
 }
 
 // Namespace killstreak_weapons/killstreak_weapons
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x283ae5e2, Offset: 0x1a60
 // Size: 0x1b8
 function watchkillstreakroundchange(isfrominventory, killstreak_id) {
@@ -393,10 +395,10 @@ function watchkillstreakroundchange(isfrominventory, killstreak_id) {
             self.pers[#"killstreak_ammo_count"][killstreakindex] = currentammo;
             self.pers[#"held_killstreak_clip_count"][currentweapon] = maxclipsize <= currentammo ? maxclipsize : currentammo;
         }
-    } else {
-        self.pers[#"held_killstreak_ammo_count"][currentweapon] = currentammo;
-        self.pers[#"held_killstreak_clip_count"][currentweapon] = maxclipsize <= currentammo ? maxclipsize : currentammo;
+        return;
     }
+    self.pers[#"held_killstreak_ammo_count"][currentweapon] = currentammo;
+    self.pers[#"held_killstreak_clip_count"][currentweapon] = maxclipsize <= currentammo ? maxclipsize : currentammo;
 }
 
 // Namespace killstreak_weapons/killstreak_weapons

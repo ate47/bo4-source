@@ -68,9 +68,9 @@ function function_c28b3d26() {
             setdvar(#"hash_42bc2c660a3d2ecd", level.var_8f7b54b5);
             if (level.var_8f7b54b5) {
                 function_1b0780eb();
-            } else {
-                function_107f44c0();
+                return;
             }
+            function_107f44c0();
         }
     #/
 }
@@ -340,11 +340,11 @@ function showstartspawnpoints() {
                     showonespawnpoint(spawnpoint, color, "<unknown string>");
                 }
             }
-        } else {
-            color = (1, 0, 1);
-            foreach (spawnpoint in level.spawn_start) {
-                showonespawnpoint(spawnpoint, color, "<unknown string>");
-            }
+            return;
+        }
+        color = (1, 0, 1);
+        foreach (spawnpoint in level.spawn_start) {
+            showonespawnpoint(spawnpoint, color, "<unknown string>");
         }
         return;
     #/

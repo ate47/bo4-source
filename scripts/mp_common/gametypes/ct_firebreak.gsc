@@ -96,7 +96,9 @@ function function_db31e447() {
         self.var_5ab7c19c = s_beacon.angles;
         s_beacon.guard1 = self;
         self.beacon = s_beacon;
-    } else if (!isdefined(s_beacon.guard2)) {
+        return;
+    }
+    if (!isdefined(s_beacon.guard2)) {
         self.var_ef59b90 = 4;
         self.var_59860ee1 = 1000;
         self.var_dd940df3 = 5000;
@@ -127,33 +129,33 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
         if (level.var_20361ed4 > -6) {
             level.var_20361ed4--;
         }
-    } else {
-        if (isdefined(weapon)) {
-            if (weapon.name == #"hero_flamethrower") {
-                level.var_6bac32f8++;
-            }
-            if (weapon.name == #"gadget_radiation_field") {
-                e_player = getplayers()[0];
-                trace = bullettrace(e_player.origin + vectorscale((0, 0, 1), 40), self.origin + vectorscale((0, 0, 1), 40), 0, self);
-                if (trace[#"fraction"] < 1) {
-                    e_player thread ct_utils::function_d471f8fa(15, undefined, 1);
-                    level thread function_db3dc2c2();
-                }
+        return;
+    }
+    if (isdefined(weapon)) {
+        if (weapon.name == #"hero_flamethrower") {
+            level.var_6bac32f8++;
+        }
+        if (weapon.name == #"gadget_radiation_field") {
+            e_player = getplayers()[0];
+            trace = bullettrace(e_player.origin + vectorscale((0, 0, 1), 40), self.origin + vectorscale((0, 0, 1), 40), 0, self);
+            if (trace[#"fraction"] < 1) {
+                e_player thread ct_utils::function_d471f8fa(15, undefined, 1);
+                level thread function_db3dc2c2();
             }
         }
-        if (isdefined(self.beacon)) {
-            s_beacon = self.beacon;
-            self.beacon = undefined;
-            if (s_beacon.guard1 === self) {
-                s_beacon.guard1 = undefined;
-            }
-            if (s_beacon.guard2 === self) {
-                s_beacon.guard2 = undefined;
-            }
+    }
+    if (isdefined(self.beacon)) {
+        s_beacon = self.beacon;
+        self.beacon = undefined;
+        if (s_beacon.guard1 === self) {
+            s_beacon.guard1 = undefined;
         }
-        if (isdefined(level.var_a2cbd584) && level.var_a2cbd584) {
-            attacker ct_utils::function_785eb2ca();
+        if (s_beacon.guard2 === self) {
+            s_beacon.guard2 = undefined;
         }
+    }
+    if (isdefined(level.var_a2cbd584) && level.var_a2cbd584) {
+        attacker ct_utils::function_785eb2ca();
     }
 }
 
@@ -187,14 +189,14 @@ function function_ba542258(mode) {
     self loadout::function_cdb86a18();
     if (level.ctdifficulty == 0) {
         level ct_firebreak_tutorial::setup();
-    } else {
-        level.var_20361ed4 = -1;
-        level.var_f3bb2d59 = 0;
-        level.a_s_beacons = struct::get_array("s_beacon", "targetname");
-        foreach (s_beacon in level.a_s_beacons) {
-            s_beacon.guard1 = undefined;
-            s_beacon.guard2 = undefined;
-        }
+        return;
+    }
+    level.var_20361ed4 = -1;
+    level.var_f3bb2d59 = 0;
+    level.a_s_beacons = struct::get_array("s_beacon", "targetname");
+    foreach (s_beacon in level.a_s_beacons) {
+        s_beacon.guard1 = undefined;
+        s_beacon.guard2 = undefined;
     }
 }
 
@@ -335,10 +337,10 @@ function registerslicendice_enemy_entrance() {
         level waittill(#"beacon_destroyed");
         if (level.a_s_beacons.size > 0) {
             level thread function_965614a5();
-        } else {
-            level thread function_2add9e5f();
-            level notify(#"stop_nag");
+            continue;
         }
+        level thread function_2add9e5f();
+        level notify(#"stop_nag");
     }
     level.var_e6db911d = 1;
 }

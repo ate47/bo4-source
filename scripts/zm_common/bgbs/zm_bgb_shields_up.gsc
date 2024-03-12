@@ -68,7 +68,9 @@ function give_shield() {
             self zm_weapons::weapon_give(level.var_b115fab2);
             self zm_weapons::ammo_give(level.var_b115fab2, 0);
         }
-    } else if (isdefined(self.hasriotshield) && self.hasriotshield && isdefined(self.player_shield_reset_health)) {
+        return;
+    }
+    if (isdefined(self.hasriotshield) && self.hasriotshield && isdefined(self.player_shield_reset_health)) {
         self [[ self.player_shield_reset_health ]]();
         self zm_weapons::ammo_give(self.weaponriotshield, 0);
     }

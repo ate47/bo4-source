@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x880b66b1, Offset: 0x170
 // Size: 0xfa
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x853414dd, Offset: 0x278
 // Size: 0x7a
 function function_294117a0() {
@@ -46,7 +46,7 @@ function function_294117a0() {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x18ab926, Offset: 0x300
 // Size: 0x72
 function function_3711499d(vehicle, deployable_weapon, traceresult) {
@@ -58,7 +58,7 @@ function function_3711499d(vehicle, deployable_weapon, traceresult) {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 15, eflags: 0x1 linked
+// Params 15, eflags: 0x0
 // Checksum 0xbc010a46, Offset: 0x380
 // Size: 0xc2
 function function_371a151b(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -87,7 +87,7 @@ function event_handler[enter_vehicle] codecallback_vehicleenter(eventstruct) {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x878807fc, Offset: 0x538
 // Size: 0x9c
 function watchownerdisconnect(player) {
@@ -120,7 +120,7 @@ function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x69ead853, Offset: 0x6e0
 // Size: 0x300
 function private function_b96833b2(vehicle) {
@@ -157,14 +157,14 @@ function private function_b96833b2(vehicle) {
                 vehicle.var_3de57a77 = undefined;
                 wait(0.5);
             }
-        } else {
-            wait(0.1);
+            continue;
         }
+        wait(0.1);
     }
 }
 
 // Namespace recon_wz/recon_wz
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd1e8091d, Offset: 0x9e8
 // Size: 0xfc
 function private function_ec1a4a6b() {
@@ -184,7 +184,7 @@ function private function_ec1a4a6b() {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x307b6bca, Offset: 0xaf0
 // Size: 0x13c
 function private on_vehicle_killed(params) {
@@ -211,7 +211,7 @@ function private on_vehicle_killed(params) {
 }
 
 // Namespace recon_wz/recon_wz
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb1b7e3f2, Offset: 0xc38
 // Size: 0x9a
 function private function_c7aa9338(array) {

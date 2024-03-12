@@ -56,9 +56,8 @@ function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, wea
     }
     if (!b_result) {
         return damage;
-    } else {
-        return 1;
     }
+    return 1;
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
@@ -68,7 +67,9 @@ function function_5ff12a45(inflictor, attacker, damage, flags, meansofdeath, wea
 function on_weapon_change(s_params) {
     if (function_b7a6f208(s_params.weapon)) {
         self clientfield::set_to_player("" + #"hash_3aad9502fc3b54f2", 1);
-    } else if (function_b7a6f208(s_params.last_weapon)) {
+        return;
+    }
+    if (function_b7a6f208(s_params.last_weapon)) {
         self clientfield::set_to_player("" + #"hash_3aad9502fc3b54f2", 0);
     }
 }

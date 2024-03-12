@@ -81,14 +81,14 @@ function perk_death_perception_visuals(localclientnum, oldval, newval, bnewent, 
             ai function_731d83de(localclientnum);
         }
         self thread function_fff5377e(localclientnum);
-    } else {
-        level.var_1c1febec[localclientnum] = 0;
-        a_ai = function_793a9f3d(localclientnum);
-        foreach (ai in a_ai) {
-            ai stoprenderoverridebundle(#"hash_30651f363ef055e9");
-        }
-        self notify(#"hash_45ed6efeef67b773");
+        return;
     }
+    level.var_1c1febec[localclientnum] = 0;
+    a_ai = function_793a9f3d(localclientnum);
+    foreach (ai in a_ai) {
+        ai stoprenderoverridebundle(#"hash_30651f363ef055e9");
+    }
+    self notify(#"hash_45ed6efeef67b773");
 }
 
 // Namespace zm_perk_death_perception/zm_perk_death_perception

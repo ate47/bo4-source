@@ -38,21 +38,21 @@ function dom_flag_base_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_marker_team_r90";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r250";
         } else {
             return "ui/fx_dom_marker_team_r250";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r90";
         } else {
             return "ui/fx_dom_marker_team_r90";
         }
-        break;
+        return;
     }
 }
 
@@ -68,21 +68,21 @@ function dom_flag_cap_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_cap_indicator_team_r90";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r250";
         } else {
             return "ui/fx_dom_cap_indicator_team_r250";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r90";
         } else {
             return "ui/fx_dom_cap_indicator_team_r90";
         }
-        break;
+        return;
     }
 }
 

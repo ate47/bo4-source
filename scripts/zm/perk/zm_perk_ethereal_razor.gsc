@@ -129,9 +129,9 @@ function function_f86e4c3d() {
             }
             if (var_c34665fc === #"weapon_melee_charge") {
                 self function_1f7c6bb9(w_melee, 20, 40, 1);
-            } else {
-                self function_1f7c6bb9(w_melee, 50, 10);
+                continue;
             }
+            self function_1f7c6bb9(w_melee, 50, 10);
         }
     }
 }
@@ -270,9 +270,9 @@ function on_ai_killed(s_params) {
         if (player function_da33f286()) {
             player.health = math::clamp(player.health + 10, 0, player.var_66cb03ad);
             player.var_ec2fa29e = 1;
-        } else {
-            player.var_53b8e41f = 1;
+            return;
         }
+        player.var_53b8e41f = 1;
     }
 }
 

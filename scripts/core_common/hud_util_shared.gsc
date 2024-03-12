@@ -17,9 +17,9 @@ function setparent(element) {
         self.parent addchild(self);
         if (isdefined(self.point)) {
             self setpoint(self.point, self.relativepoint, self.xoffset, self.yoffset);
-        } else {
-            self setpoint("<unknown string>");
+            return;
         }
+        self setpoint("<unknown string>");
     #/
 }
 
@@ -490,7 +490,9 @@ function showelem() {
             if (self.barframe.alpha != 1) {
                 self.barframe.alpha = 1;
             }
-        } else if (self.alpha != 1) {
+            return;
+        }
+        if (self.alpha != 1) {
             self.alpha = 1;
         }
     #/

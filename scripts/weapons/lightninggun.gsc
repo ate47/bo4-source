@@ -9,7 +9,7 @@
 #namespace lightninggun;
 
 // Namespace lightninggun/lightninggun
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xeea45d89, Offset: 0x128
 // Size: 0x1fc
 function init_shared() {
@@ -48,7 +48,7 @@ function update_dvars() {
 }
 
 // Namespace lightninggun/lightninggun
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x89b0af2b, Offset: 0x3e8
 // Size: 0xbc
 function lightninggun_start_damage_effects(eattacker) {
@@ -69,7 +69,7 @@ function lightninggun_start_damage_effects(eattacker) {
 }
 
 // Namespace lightninggun/lightninggun
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xb5a94ceb, Offset: 0x4b0
 // Size: 0xac
 function lightninggun_arc_killcam(arc_source_pos, arc_target, arc_target_pos, original_killcam_ent, waittime) {
@@ -79,7 +79,7 @@ function lightninggun_arc_killcam(arc_source_pos, arc_target, arc_target_pos, or
 }
 
 // Namespace lightninggun/lightninggun
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x2274b649, Offset: 0x568
 // Size: 0x27e
 function lightninggun_arc_fx(arc_source_pos, arc_target, arc_target_pos, distancesq, original_killcam_ent) {
@@ -120,7 +120,7 @@ function lightninggun_arc_fx(arc_source_pos, arc_target, arc_target_pos, distanc
 }
 
 // Namespace lightninggun/lightninggun
-// Params 8, eflags: 0x1 linked
+// Params 8, eflags: 0x0
 // Checksum 0x270a2ace, Offset: 0x7f0
 // Size: 0x15c
 function lightninggun_arc(delay, eattacker, arc_source, arc_source_origin, arc_source_pos, arc_target, arc_target_pos, distancesq) {
@@ -144,7 +144,7 @@ function lightninggun_arc(delay, eattacker, arc_source, arc_source_origin, arc_s
 }
 
 // Namespace lightninggun/lightninggun
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0xb337d9d0, Offset: 0x958
 // Size: 0x3f0
 function lightninggun_find_arc_targets(eattacker, arc_source, arc_source_origin, arc_source_pos) {
@@ -171,7 +171,7 @@ function lightninggun_find_arc_targets(eattacker, arc_source, arc_source_origin,
         }
         distancesq = distancesquared(enemy.origin, arc_source_origin);
         if (distancesq > level.lightninggun_arc_range_sq) {
-            break;
+            return;
         }
         if (eattacker != enemy && damage::friendlyfirecheck(eattacker, enemy)) {
             if (isdefined(self) && !enemy damageconetrace(arc_source_pos, self)) {
@@ -191,7 +191,7 @@ function lightninggun_find_arc_targets(eattacker, arc_source, arc_source_origin,
 }
 
 // Namespace lightninggun/lightninggun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x3f620d1d, Offset: 0xd50
 // Size: 0x88
 function create_killcam_entity(origin, angles, weapon) {
@@ -203,7 +203,7 @@ function create_killcam_entity(origin, angles, weapon) {
 }
 
 // Namespace lightninggun/lightninggun
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4d04507e, Offset: 0xde0
 // Size: 0x12e
 function killcam_move(start_origin, end_origin, time) {
@@ -216,14 +216,14 @@ function killcam_move(start_origin, end_origin, time) {
         move_to_pos = start_origin + delta * move_to_dist;
         self moveto(move_to_pos, time, 0, time * level.weaponlightninggunkillcamdecelpercent);
         end_angles = vectortoangles(delta);
-    } else {
-        delta = end_origin - self.origin;
-        end_angles = vectortoangles(delta);
+        return;
     }
+    delta = end_origin - self.origin;
+    end_angles = vectortoangles(delta);
 }
 
 // Namespace lightninggun/lightninggun
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xd83279bd, Offset: 0xf18
 // Size: 0x2de
 function lightninggun_damage_response(eattacker, einflictor, weapon, meansofdeath, damage) {
@@ -265,7 +265,7 @@ function lightninggun_damage_response(eattacker, einflictor, weapon, meansofdeat
 }
 
 // Namespace lightninggun/lightninggun
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0xadc7145f, Offset: 0x1200
 // Size: 0x74
 function on_damage_lightninggun(eattacker, einflictor, weapon, meansofdeath, damage) {

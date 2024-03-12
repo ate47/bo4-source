@@ -11,7 +11,7 @@
 #namespace plannermpkothcommander;
 
 // Namespace plannermpkothcommander/planner_mp_koth_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x40dc25db, Offset: 0x168
 // Size: 0x32
 function private createcommanderplanner(team) {
@@ -20,7 +20,7 @@ function private createcommanderplanner(team) {
 }
 
 // Namespace plannermpkothcommander/planner_mp_koth_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x82deeec3, Offset: 0x1a8
 // Size: 0x1c0
 function createcommander(team) {

@@ -28,12 +28,14 @@ function function_9b62d333(n_hour, n_minute) {
     }
     if (self.n_hour == n_hour && self.var_f6197f53 == var_f6197f53) {
         return;
-    } else if (self.n_hour == n_hour && self.var_f6197f53 <= var_f6197f53) {
+    }
+    if (self.n_hour == n_hour && self.var_f6197f53 <= var_f6197f53) {
         while (self.var_f6197f53 != var_f6197f53) {
             function_783891ed();
         }
         return;
-    } else if (self.var_f6197f53 <= var_f6197f53) {
+    }
+    if (self.var_f6197f53 <= var_f6197f53) {
         while (self.n_hour != n_hour) {
             function_64c53556();
         }
@@ -41,23 +43,20 @@ function function_9b62d333(n_hour, n_minute) {
             function_783891ed();
         }
         return;
-    } else {
+    }
+    var_c6781a1b = self.n_hour + 1;
+    if (var_c6781a1b == 12) {
+    }
+    for (var_c6781a1b = 0; var_c6781a1b != n_hour; var_c6781a1b = 0) {
+        function_64c53556();
         var_c6781a1b = self.n_hour + 1;
         if (var_c6781a1b == 12) {
-            var_c6781a1b = 0;
         }
-        while (var_c6781a1b != n_hour) {
-            function_64c53556();
-            var_c6781a1b = self.n_hour + 1;
-            if (var_c6781a1b == 12) {
-                var_c6781a1b = 0;
-            }
-        }
-        while (self.var_f6197f53 != var_f6197f53) {
-            function_783891ed();
-        }
-        return;
     }
+    while (self.var_f6197f53 != var_f6197f53) {
+        function_783891ed();
+    }
+    return;
 }
 
 // Namespace timecard_control/namespace_1bcdb6b6

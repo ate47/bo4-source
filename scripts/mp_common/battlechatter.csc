@@ -39,9 +39,8 @@ function function_b79dc4e7(player) {
     }
     if (teamindex % 2) {
         return "blops_taacom";
-    } else {
-        return "cdp_taacom";
     }
+    return "cdp_taacom";
 }
 
 // Namespace battlechatter/battlechatter
@@ -94,15 +93,15 @@ function function_f1d27638(var_f7f4481f) {
     switch (var_f7f4481f.eventid) {
     case 0:
         thread function_50e36ba7(var_f7f4481f.var_40209f44, var_f7f4481f.weapon, var_f7f4481f.var_3d136cd9, var_f7f4481f.var_7e98b410);
-        break;
+        return;
     case 2:
         thread function_ee8935da(var_f7f4481f.var_3d136cd9);
-        break;
+        return;
     case 3:
     case 4:
     case 5:
         thread function_bf569dab(var_f7f4481f.var_40209f44, var_f7f4481f.var_3d136cd9, var_f7f4481f.eventid, var_f7f4481f.weapon);
-        break;
+        return;
     }
 }
 
@@ -129,11 +128,10 @@ function get_death_vox(meansofdeath, roleindex) {
         case #"mod_burned":
             if (function_fc261b83()) {
                 return "";
-                goto LOC_00000126;
+            } else {
+                return playerbundle.exertdeathburned;
             }
-            return playerbundle.exertdeathburned;
         case #"mod_melee_weapon_butt":
-        LOC_00000126:
             return playerbundle.exertdeathstabbed;
         case #"mod_head_shot":
             return playerbundle.var_207908de;
@@ -151,7 +149,6 @@ function get_death_vox(meansofdeath, roleindex) {
             return playerbundle.exertdeathstabbed;
         case #"mod_electrocuted":
             return playerbundle.exertdeathelectrocuted;
-            break;
         }
     }
     return playerbundle.exertdeath;
@@ -467,7 +464,6 @@ function function_506f762f(weapon) {
     case #"gadget_health_boost":
     case #"gadget_cleanse":
         return 1;
-        break;
     }
     return 0;
 }

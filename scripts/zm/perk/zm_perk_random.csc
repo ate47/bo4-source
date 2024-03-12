@@ -93,12 +93,11 @@ function zone_captured_cb(localclientnum, oldval, newval, bnewent, binitialsnap,
         self.mapped_const = 1;
     }
     if (newval == 1) {
-        goto LOC_000000da;
+        return;
     }
     self.artifact_glow_setting = 1;
     self.machinery_glow_setting = 0;
     self setshaderconstant(localclientnum, 1, self.artifact_glow_setting, 0, self.machinery_glow_setting, 0);
-LOC_000000da:
 }
 
 // Namespace zm_perk_random/zm_perk_random
@@ -110,7 +109,9 @@ function perk_random_machine_rock_emissive(localclientnum, oldval, newval, bnewe
         piece = self zbarriergetpiece(3);
         piece.blinking = 1;
         piece thread rock_emissive_think(localclientnum);
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         self.blinking = 0;
     }
 }
@@ -178,11 +179,17 @@ function set_light_state(localclientnum, oldval, newval, bnewent, binitialsnap, 
     foreach (n_piece_index in a_n_piece_indices) {
         if (newval == 0) {
             perk_random_machine_play_fx(localclientnum, n_piece_index, "tag_animate", undefined);
-        } else if (newval == 3) {
+            continue;
+        }
+        if (newval == 3) {
             perk_random_machine_play_fx(localclientnum, n_piece_index, "tag_animate", level._effect[#"perk_machine_light_red"]);
-        } else if (newval == 1) {
+            continue;
+        }
+        if (newval == 1) {
             perk_random_machine_play_fx(localclientnum, n_piece_index, "tag_animate", level._effect[#"perk_machine_light_green"]);
-        } else if (newval == 2) {
+            continue;
+        }
+        if (newval == 2) {
         }
     }
 }
@@ -211,9 +218,7 @@ function turn_on_active_light_green(localclientnum, oldval, newval, bnewent, bin
         self.artifact_glow_setting = 1;
         self.machinery_glow_setting = 0.7;
         self setshaderconstant(localclientnum, 1, self.artifact_glow_setting, 0, self.machinery_glow_setting, 0);
-        goto LOC_00000096;
     }
-LOC_00000096:
 }
 
 // Namespace zm_perk_random/zm_perk_random
@@ -225,9 +230,7 @@ function turn_on_active_ball_light(localclientnum, oldval, newval, bnewent, bini
         self.artifact_glow_setting = 1;
         self.machinery_glow_setting = 1;
         self setshaderconstant(localclientnum, 1, self.artifact_glow_setting, 0, self.machinery_glow_setting, 0);
-        goto LOC_00000096;
     }
-LOC_00000096:
 }
 
 // Namespace zm_perk_random/zm_perk_random
@@ -237,9 +240,9 @@ LOC_00000096:
 function start_bottle_cycling(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self thread start_vortex_fx(localclientnum);
-    } else {
-        self thread stop_vortex_fx(localclientnum);
+        return;
     }
+    self thread stop_vortex_fx(localclientnum);
 }
 
 // Namespace zm_perk_random/zm_perk_random

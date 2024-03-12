@@ -427,11 +427,11 @@ function jump_pad_enemy_follow_or_ignore(ent_poi) {
         }
         if (isdefined(ignore_poi) && ignore_poi) {
             zombies[i] thread zm_utility::add_poi_to_ignore_list(ent_poi);
-        } else {
-            zombies[i].ignore_cleanup_mgr = 1;
-            zombies[i]._pad_follow = 1;
-            zombies[i] thread stop_chasing_the_sky(ent_poi);
+            continue;
         }
+        zombies[i].ignore_cleanup_mgr = 1;
+        zombies[i]._pad_follow = 1;
+        zombies[i] thread stop_chasing_the_sky(ent_poi);
     }
 }
 
@@ -494,17 +494,13 @@ function jump_pad_player_overrides(st_behavior, int_clean) {
     switch (st_behavior) {
     case #"no_sprint":
         if (!int_clean) {
-            goto LOC_00000060;
         }
-    LOC_00000060:
-        break;
+        return;
     default:
         if (isdefined(level._jump_pad_level_behavior)) {
             self [[ level._jump_pad_level_behavior ]](st_behavior, int_clean);
-            goto LOC_0000008e;
         }
-    LOC_0000008e:
-        break;
+        return;
     }
 }
 

@@ -56,9 +56,9 @@ function function_32ae304(lefthand) {
     var_51cee2ad = gettime() + randomintrange(self.bot.var_b2b8f0b6, self.bot.var_e8c941d6);
     if (lefthand) {
         self.bot.var_af11e334 = var_51cee2ad;
-    } else {
-        self.bot.var_51cee2ad = var_51cee2ad;
+        return;
     }
+    self.bot.var_51cee2ad = var_51cee2ad;
 }
 
 // Namespace ct_bots/ct_bots
@@ -120,7 +120,7 @@ function function_fa0d912f(var_7b4ae7d1) {
                 if (isdefined(fields) && isdefined(fields.var_49a55967) && fields.var_49a55967) {
                     break;
                 }
-            } while(count < var_5ec2386a);
+            } while (count < var_5ec2386a);
             if (!isdefined(fields) || !(isdefined(fields.var_49a55967) && fields.var_49a55967)) {
                 role_index = 1;
             }
@@ -268,7 +268,7 @@ function function_26d45f32(var_4406a529 = 0, var_8c5f03d7 = 1, var_dd200d99 = 1)
         do {
             wpn_current = self getcurrentweapon();
             waitframe(1);
-        } while(isdefined(self) && wpn_current != var_46ccfe18);
+        } while (isdefined(self) && wpn_current != var_46ccfe18);
     }
     if (weapons.size > 0 && isdefined(self)) {
         if (var_dd200d99) {
@@ -299,17 +299,17 @@ function function_52dff030(w_gadget) {
 function function_fd2d220e(var_742b083e = undefined) {
     if (!isdefined(self.var_560765bb)) {
         setdvar(#"hash_48162cd174e3034d", 0);
-    } else {
-        if (isdefined(var_742b083e)) {
-            wait(var_742b083e);
+        return;
+    }
+    if (isdefined(var_742b083e)) {
+        wait(var_742b083e);
+    }
+    if (isdefined(self.var_de9764de)) {
+        foreach (weapon in self.var_de9764de) {
+            self giveweapon(weapon);
         }
-        if (isdefined(self.var_de9764de)) {
-            foreach (weapon in self.var_de9764de) {
-                self giveweapon(weapon);
-            }
-            self takeweapon(ct_utils::function_84adcd1f());
-            self.var_de9764de = undefined;
-        }
+        self takeweapon(ct_utils::function_84adcd1f());
+        self.var_de9764de = undefined;
     }
 }
 
@@ -491,9 +491,9 @@ function debug_bots(var_841324bd) {
                 foreach (nd in level.var_5ec2d86e) {
                     if (!isdefined(nd.e_occupant)) {
                         print3d(nd.origin + vectorscale((0, 0, 1), 10), "<unknown string>", (1, 0, 0), 1, 1);
-                    } else {
-                        print3d(nd.origin + vectorscale((0, 0, 1), 10), "<unknown string>", (0, 0, 1), 1, 1);
+                        continue;
                     }
+                    print3d(nd.origin + vectorscale((0, 0, 1), 10), "<unknown string>", (0, 0, 1), 1, 1);
                 }
             }
             waitframe(1);
@@ -784,22 +784,22 @@ function function_cc9c6a13(current_state) {
     switch (current_state) {
     case 2:
         self.var_2925fedc = undefined;
-        break;
+        return;
     case 1:
         self.var_153a632a = undefined;
-        break;
+        return;
     case 3:
         self.var_f38f922 = undefined;
         self.var_e4cd1c19 = undefined;
-        break;
+        return;
     case 5:
-        break;
+        return;
     case 6:
         self thread function_fad5456d();
-        break;
+        return;
     case 0:
     default:
-        break;
+        return;
     }
 }
 
@@ -817,34 +817,34 @@ function function_b8eff92a(var_edab5327) {
         if (isai(self)) {
             self.ignoreall = 1;
         }
-        break;
+        return;
     case 4:
         if (isai(self)) {
             self.ignoreall = 1;
         }
         self.var_8549731d = gettime();
         self.var_c6e7438 = randomfloatrange(self.var_59860ee1, self.var_dd940df3);
-        break;
+        return;
     case 1:
         if (isai(self)) {
             self.ignoreall = 1;
         }
         self.var_153a632a = gettime();
         self.var_c6e7438 = randomfloatrange(10000, 15000);
-        break;
+        return;
     case 3:
         self.var_f38f922 = gettime();
         self.var_e4cd1c19 = undefined;
-        break;
+        return;
     case 6:
-        break;
+        return;
     case 5:
         self dodamage(self.health + 100, (0, 0, 0));
         self.var_3c5a5d29 = 1;
-        break;
+        return;
     case 0:
     default:
-        break;
+        return;
     }
 }
 
@@ -967,10 +967,9 @@ function function_eca43db6() {
 function get_enemy() {
     if (isalive(self.enemy_override)) {
         return self.enemy_override;
-    } else {
-        a_players = util::get_players(#"allies");
-        return a_players[0];
     }
+    a_players = util::get_players(#"allies");
+    return a_players[0];
 }
 
 // Namespace ct_bots/ct_bots
@@ -1114,9 +1113,9 @@ function bot_chase_state() {
             if (self.var_ef59b90 === 2) {
                 if (isdefined(self.var_9a79d89d)) {
                     self.var_ef59b90 = 4;
-                } else {
-                    self.var_ef59b90 = 1;
+                    return;
                 }
+                self.var_ef59b90 = 1;
             }
         }
     }
@@ -1135,7 +1134,7 @@ function function_9125af5f() {
             self setgoal(self.navmeshpoint, 1);
             self thread function_eff20434();
         }
-        break;
+        return;
     case 2:
         self.resurrect_not_allowed_by = 1;
         level.var_986d14aa = undefined;
@@ -1178,7 +1177,7 @@ function function_9125af5f() {
                 }
             }
         }
-        break;
+        return;
     case 3:
         if (!isdefined(self.navmeshpoint)) {
             self notify(#"hash_5c9e0bd318ff091e");
@@ -1189,10 +1188,10 @@ function function_9125af5f() {
             self thread function_eff20434();
             self thread function_6390598e();
         }
-        break;
+        return;
     case 0:
     default:
-        break;
+        return;
     }
 }
 
@@ -1299,9 +1298,9 @@ function function_a64b7003(var_bf0bb02d = 0, var_61e27031) {
     }
     if (isdefined(var_61e27031) && var_61e27031 <= 17) {
         level.var_4940e931 = var_61e27031;
-    } else {
-        level.var_4940e931 = 17;
+        return;
     }
+    level.var_4940e931 = 17;
 }
 
 // Namespace ct_bots/ct_bots
@@ -1436,7 +1435,7 @@ function function_59458966(nd_spawn, n_state) {
     switch (n_state) {
     case 4:
         self thread function_c2cfffdd(nd_spawn, 1, 1);
-        break;
+        return;
     }
 }
 

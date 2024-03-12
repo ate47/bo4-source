@@ -73,20 +73,16 @@ function update_sound(local_client_num, bnewent, newval, oldval) {
             self._proximity_alarm_snd_ent = spawn(local_client_num, self.origin, "script_origin");
             self thread sndproxalert_entcleanup(local_client_num, self._proximity_alarm_snd_ent);
         }
-    } else {
-        if (newval == 1) {
-            goto LOC_000000f2;
-        }
-        if (newval == 0 && isdefined(oldval) && oldval != newval) {
-            if (isdefined(self._proximity_alarm_snd_ent)) {
-                self._proximity_alarm_snd_ent stopallloopsounds(0.5);
-            LOC_000000f2:
-            }
-        LOC_000000f2:
-        }
-    LOC_000000f2:
+        return;
     }
-LOC_000000f2:
+    if (newval == 1) {
+        return;
+    }
+    if (newval == 0 && isdefined(oldval) && oldval != newval) {
+        if (isdefined(self._proximity_alarm_snd_ent)) {
+            self._proximity_alarm_snd_ent stopallloopsounds(0.5);
+        }
+    }
 }
 
 // Namespace weaponobjects/weaponobjects
@@ -121,7 +117,9 @@ function retrievable_changed(local_client_num, oldval, newval, bnewent, binitial
 function updateretrievable(local_client_num, newval) {
     if (self function_b9b8fbc7()) {
         self duplicate_render::set_item_retrievable(local_client_num, newval);
-    } else if (isdefined(self.currentdrfilter)) {
+        return;
+    }
+    if (isdefined(self.currentdrfilter)) {
         self duplicate_render::set_item_retrievable(local_client_num, 0);
     }
 }

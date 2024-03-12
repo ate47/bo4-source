@@ -59,13 +59,15 @@ function update_applied_aoe_fx(local_client_num, oldval, newval, bnewent, biniti
             if (newval) {
                 self.var_3186a45e = util::playfxontag(local_client_num, fx_info.fx_3p, self, "j_mainroot");
             }
-        } else if (newval) {
+            return;
+        }
+        if (newval) {
             firstperson = !isthirdperson(local_client_num);
             if (firstperson) {
                 playtagfxset(local_client_num, fx_info.fx_1p, self);
-            } else {
-                util::playfxontag(local_client_num, fx_info.fx_3p, self, "j_mainroot");
+                return;
             }
+            util::playfxontag(local_client_num, fx_info.fx_3p, self, "j_mainroot");
         }
     }
 }

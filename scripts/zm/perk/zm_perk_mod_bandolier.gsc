@@ -61,27 +61,30 @@ function function_9335851() {
             w_root = zm_weapons::function_386dacbc(weapon);
             if (var_911fad7c == w_root) {
                 continue;
-            } else if (weaponhasattachment(weapon, "uber") && w_root == getweapon(#"smg_capacity_t8")) {
+            }
+            if (weaponhasattachment(weapon, "uber") && w_root == getweapon(#"smg_capacity_t8")) {
                 continue;
-            } else {
-                n_clip = self getweaponammoclip(weapon);
-                n_clip_size = weapon.clipsize;
-                n_stock_size = self getweaponammostock(weapon);
-                if (isdefined(n_clip) && isdefined(n_clip_size) && n_clip < n_clip_size) {
-                    var_8e477029 = int(ceil(n_clip_size * 0.05));
-                    if (weapon.iscliponly) {
-                        continue;
-                    } else if (n_stock_size >= var_8e477029) {
-                        self setweaponammoclip(weapon, n_clip + var_8e477029);
-                        self setweaponammostock(weapon, n_stock_size - var_8e477029);
-                        if (n_clip + var_8e477029 >= n_clip_size) {
-                            self playsoundtoplayer(#"hash_1306cd3cf0ce7b64", self);
-                        }
-                    } else if (n_stock_size > 0) {
-                        self setweaponammoclip(weapon, n_clip + 1);
-                        self setweaponammostock(weapon, n_stock_size - 1);
+            }
+            n_clip = self getweaponammoclip(weapon);
+            n_clip_size = weapon.clipsize;
+            n_stock_size = self getweaponammostock(weapon);
+            if (isdefined(n_clip) && isdefined(n_clip_size) && n_clip < n_clip_size) {
+                var_8e477029 = int(ceil(n_clip_size * 0.05));
+                if (weapon.iscliponly) {
+                    continue;
+                }
+                if (n_stock_size >= var_8e477029) {
+                    self setweaponammoclip(weapon, n_clip + var_8e477029);
+                    self setweaponammostock(weapon, n_stock_size - var_8e477029);
+                    if (n_clip + var_8e477029 >= n_clip_size) {
                         self playsoundtoplayer(#"hash_1306cd3cf0ce7b64", self);
                     }
+                    continue;
+                }
+                if (n_stock_size > 0) {
+                    self setweaponammoclip(weapon, n_clip + 1);
+                    self setweaponammostock(weapon, n_stock_size - 1);
+                    self playsoundtoplayer(#"hash_1306cd3cf0ce7b64", self);
                 }
             }
         }

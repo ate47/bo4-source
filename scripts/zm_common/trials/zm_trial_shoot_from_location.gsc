@@ -116,7 +116,7 @@ function private function_33f0ddd3(s_event) {
             }
         }
         if (!var_f2b6fe6e && !zm_loadout::function_2ff6913(s_event.weapon)) {
-            self function_28602a03(s_event.weapon, 1, 1);
+            self lockweapon(s_event.weapon, 1, 1);
         }
     }
 }

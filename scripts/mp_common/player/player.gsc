@@ -22,7 +22,7 @@ function autoexec __init__() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4ec05416, Offset: 0x140
 // Size: 0x33c
 function spectate_player_watcher() {
@@ -42,37 +42,36 @@ function spectate_player_watcher() {
                 self val::reset(#"spectate", "disablegadgets");
             }
             self.watchingactiveclient = 0;
-            break;
-        } else {
-            count = 0;
-            for (i = 0; i < level.players.size; i++) {
-                if (level.players[i].team != #"spectator") {
-                    count++;
-                    break;
-                }
-            }
-            if (count > 0) {
-                if (!self.watchingactiveclient) {
-                    self val::reset(#"spectate", "freezecontrols");
-                    self val::reset(#"spectate", "disablegadgets");
-                    self luinotifyevent(#"player_spawned", 0);
-                }
-                self.watchingactiveclient = 1;
-            } else {
-                if (self.watchingactiveclient) {
-                    [[ level.onspawnspectator ]]();
-                    self val::set(#"spectate", "freezecontrols", 1);
-                    self val::set(#"spectate", "disablegadgets", 1);
-                }
-                self.watchingactiveclient = 0;
-            }
-            wait(0.5);
+            return;
         }
+        count = 0;
+        for (i = 0; i < level.players.size; i++) {
+            if (level.players[i].team != #"spectator") {
+                count++;
+                break;
+            }
+        }
+        if (count > 0) {
+            if (!self.watchingactiveclient) {
+                self val::reset(#"spectate", "freezecontrols");
+                self val::reset(#"spectate", "disablegadgets");
+                self luinotifyevent(#"player_spawned", 0);
+            }
+            self.watchingactiveclient = 1;
+        } else {
+            if (self.watchingactiveclient) {
+                [[ level.onspawnspectator ]]();
+                self val::set(#"spectate", "freezecontrols", 1);
+                self val::set(#"spectate", "disablegadgets", 1);
+            }
+            self.watchingactiveclient = 0;
+        }
+        wait(0.5);
     }
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x81746092, Offset: 0x488
 // Size: 0x2c
 function reset_doublexp_timer() {
@@ -81,7 +80,7 @@ function reset_doublexp_timer() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x1001fd38, Offset: 0x4c0
 // Size: 0xbc
 function doublexp_timer() {
@@ -102,7 +101,7 @@ function doublexp_timer() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa12f0f1, Offset: 0x588
 // Size: 0xa4
 function on_player_spawned() {
@@ -125,7 +124,7 @@ function on_player_spawned() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76a64690, Offset: 0x638
 // Size: 0x24
 function on_game_playing() {
@@ -133,7 +132,7 @@ function on_game_playing() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x329f9e03, Offset: 0x668
 // Size: 0x6e
 function function_490dc3d3() {
@@ -141,7 +140,7 @@ function function_490dc3d3() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb96c21ec, Offset: 0x6e0
 // Size: 0xa0
 function function_c3eed624() {
@@ -155,7 +154,7 @@ function function_c3eed624() {
 }
 
 // Namespace player/player
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x986d8aa7, Offset: 0x788
 // Size: 0x290
 function last_valid_position() {

@@ -112,17 +112,19 @@ function on_ai_killed(s_params) {
                         e_powerup setscale(0.3);
                         e_powerup.var_c2bcd604 = 5;
                     }
-                } else if (roll >= 66) {
+                    return;
+                }
+                if (roll >= 66) {
                     e_powerup = zm_powerups::specific_powerup_drop("wolf_bonus_ammo", self.origin, undefined, 0.1, e_attacker.player_owner, 0, 1);
                     if (isdefined(e_powerup)) {
                         e_powerup setscale(0.3);
                     }
-                } else {
-                    e_powerup = zm_powerups::specific_powerup_drop("wolf_bonus_points", self.origin, undefined, 0.1, e_attacker.player_owner, 0, 1);
-                    if (isdefined(e_powerup)) {
-                        e_powerup setscale(0.3);
-                        e_powerup.var_258c5fbc = 10;
-                    }
+                    return;
+                }
+                e_powerup = zm_powerups::specific_powerup_drop("wolf_bonus_points", self.origin, undefined, 0.1, e_attacker.player_owner, 0, 1);
+                if (isdefined(e_powerup)) {
+                    e_powerup setscale(0.3);
+                    e_powerup.var_258c5fbc = 10;
                 }
             }
         }

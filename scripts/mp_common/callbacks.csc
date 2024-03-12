@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6db3a401, Offset: 0x188
 // Size: 0x1c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace callback/callbacks
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbf30ed31, Offset: 0x1b0
 // Size: 0x13e
 function set_default_callbacks() {
@@ -49,7 +49,7 @@ function set_default_callbacks() {
 }
 
 // Namespace callback/callbacks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x20133d28, Offset: 0x2f8
 // Size: 0x7c
 function localclientconnect(localclientnum) {
@@ -63,7 +63,7 @@ function localclientconnect(localclientnum) {
 }
 
 // Namespace callback/callbacks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x1e557b11, Offset: 0x380
 // Size: 0x2c
 function function_27cbba18(localclientnum) {
@@ -71,7 +71,7 @@ function function_27cbba18(localclientnum) {
 }
 
 // Namespace callback/callbacks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7bbbbe82, Offset: 0x3b8
 // Size: 0x44
 function playerlaststand(localclientnum) {
@@ -80,7 +80,7 @@ function playerlaststand(localclientnum) {
 }
 
 // Namespace callback/callbacks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x78c3c59, Offset: 0x408
 // Size: 0x104
 function playerspawned(localclientnum) {
@@ -102,7 +102,7 @@ function playerspawned(localclientnum) {
 }
 
 // Namespace callback/callbacks
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x286919b0, Offset: 0x518
 // Size: 0x304
 function entityspawned(localclientnum) {
@@ -129,7 +129,9 @@ function entityspawned(localclientnum) {
         if (self.weapon.name === "eq_acid_bomb") {
             self thread acid_bomb::spawned(localclientnum);
         }
-    } else if (self.type == "vehicle" || self.type == "helicopter" || self.type == "plane") {
+        return;
+    }
+    if (self.type == "vehicle" || self.type == "helicopter" || self.type == "plane") {
         if (isdefined(level._customvehiclecbfunc)) {
             self thread [[ level._customvehiclecbfunc ]](localclientnum);
         }
@@ -143,15 +145,21 @@ function entityspawned(localclientnum) {
         if (self.type == "helicopter") {
             self thread helicopter::startfx_loop(localclientnum);
         }
-    } else if (self.type == "scriptmover") {
+        return;
+    }
+    if (self.type == "scriptmover") {
         if (isdefined(level.var_83485e06)) {
             self thread [[ level.var_83485e06 ]](localclientnum);
         }
-    } else if (self.type == "actor") {
+        return;
+    }
+    if (self.type == "actor") {
         if (isdefined(level._customactorcbfunc)) {
             self thread [[ level._customactorcbfunc ]](localclientnum);
         }
-    } else if (self.type == "NA") {
+        return;
+    }
+    if (self.type == "NA") {
         if (isdefined(self.weapon)) {
             if (isdefined(level.var_6b11d5f6)) {
                 self thread [[ level.var_6b11d5f6 ]](localclientnum);
@@ -161,7 +169,7 @@ function entityspawned(localclientnum) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4c1a16ac, Offset: 0x828
 // Size: 0x3e
 function entervehicle(localclientnum, vehicle) {
@@ -173,7 +181,7 @@ function entervehicle(localclientnum, vehicle) {
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9ff07299, Offset: 0x870
 // Size: 0x3e
 function exitvehicle(localclientnum, vehicle) {
@@ -185,7 +193,7 @@ function exitvehicle(localclientnum, vehicle) {
 }
 
 // Namespace callback/callbacks
-// Params 12, eflags: 0x1 linked
+// Params 12, eflags: 0x0
 // Checksum 0x54a45bd4, Offset: 0x8b8
 // Size: 0x636
 function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner, exittype, time, height) {
@@ -258,7 +266,9 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         data.flyspeed = 2000;
         data.flytime = planehalfdistance * 2 / data.flyspeed;
         planetype = "airstrike";
-    } else if (type == "n") {
+        return;
+    }
+    if (type == "n") {
         planehalfdistance = 24000;
         data.planehalfdistance = planehalfdistance;
         data.startpoint = pos + vectorscale(anglestoforward(direction), -1 * planehalfdistance);
@@ -271,19 +281,19 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         data.flyspeed = 7000;
         data.flytime = planehalfdistance * 2 / data.flyspeed;
         planetype = "napalm";
-    } else {
-        /#
-            println("<unknown string>");
-            println("<unknown string>");
-            println(type);
-            println("<unknown string>");
-        #/
         return;
     }
+    /#
+        println("<unknown string>");
+        println("<unknown string>");
+        println(type);
+        println("<unknown string>");
+    #/
+    return;
 }
 
 // Namespace callback/callbacks
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xa461ae01, Offset: 0xef8
 // Size: 0x8c
 function creating_corpse(localclientnum, player) {
@@ -296,7 +306,7 @@ function creating_corpse(localclientnum, player) {
 }
 
 // Namespace callback/callbacks
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x46447208, Offset: 0xf90
 // Size: 0xbc
 function callback_stunned(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -315,7 +325,7 @@ function callback_stunned(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace callback/callbacks
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x5d225c5d, Offset: 0x1058
 // Size: 0x96
 function callback_emp(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -325,13 +335,13 @@ function callback_emp(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     #/
     if (newval) {
         self notify(#"emp");
-    } else {
-        self notify(#"not_emp");
+        return;
     }
+    self notify(#"not_emp");
 }
 
 // Namespace callback/callbacks
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8d93c81, Offset: 0x10f8
 // Size: 0x4a
 function callback_proximity(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

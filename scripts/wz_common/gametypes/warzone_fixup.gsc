@@ -27,7 +27,7 @@ function autoexec __init__() {
 }
 
 // Namespace warzone_fixup/warzone_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x51c26bbe, Offset: 0x1a0
 // Size: 0x1c
 function private function_4305a789() {
@@ -35,7 +35,7 @@ function private function_4305a789() {
 }
 
 // Namespace warzone_fixup/warzone_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xfd2d877e, Offset: 0x1c8
 // Size: 0x104
 function private function_c94723bd() {
@@ -50,7 +50,7 @@ function private function_c94723bd() {
 }
 
 // Namespace warzone_fixup/warzone_fixup
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xaf9739ee, Offset: 0x2d8
 // Size: 0xf8
 function private function_9b8d4d02(prematch = 0) {
@@ -59,15 +59,15 @@ function private function_9b8d4d02(prematch = 0) {
         if (var_28f8f6a9.itemtype == #"quest") {
             if (prematch) {
                 item_world_fixup::function_96ff7b88(var_1461de43);
-            } else {
-                item_world_fixup::remove_item(var_1461de43);
+                continue;
             }
+            item_world_fixup::remove_item(var_1461de43);
         }
     }
 }
 
 // Namespace warzone_fixup/warzone_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7827483d, Offset: 0x3d8
 // Size: 0x44
 function private function_d0dc6619() {
@@ -76,7 +76,7 @@ function private function_d0dc6619() {
 }
 
 // Namespace warzone_fixup/warzone_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x428
 // Size: 0x4
 function private function_f16631fc() {
@@ -84,7 +84,7 @@ function private function_f16631fc() {
 }
 
 // Namespace warzone_fixup/warzone_fixup
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x80f724d1, Offset: 0x438
 // Size: 0x4
 function private function_91d1fd09() {

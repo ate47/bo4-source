@@ -21,7 +21,9 @@ function init_clientfields() {
 function function_10675d52(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self.n_fx_id = util::playfxontag(localclientnum, level._effect[#"powerup_on_solo"], self, "tag_origin");
-    } else if (isdefined(self.n_fx_id)) {
+        return;
+    }
+    if (isdefined(self.n_fx_id)) {
         stopfx(localclientnum, self.n_fx_id);
     }
 }
@@ -35,12 +37,12 @@ function function_c6b07c39(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_3c43a180 = util::playfxontag(localclientnum, level._effect[#"hash_62343c2144d3f8d1"], self, "tag_animate");
         forcestreamxmodel(#"p8_zm_esc_nixie_tubes");
         forcestreamxmodel(#"p8_zm_esc_nixie_tubes_on");
-    } else {
-        if (isdefined(self.var_3c43a180)) {
-            stopfx(localclientnum, self.var_3c43a180);
-        }
-        stopforcestreamingxmodel(#"p8_zm_esc_nixie_tubes");
-        stopforcestreamingxmodel(#"p8_zm_esc_nixie_tubes_on");
+        return;
     }
+    if (isdefined(self.var_3c43a180)) {
+        stopfx(localclientnum, self.var_3c43a180);
+    }
+    stopforcestreamingxmodel(#"p8_zm_esc_nixie_tubes");
+    stopforcestreamingxmodel(#"p8_zm_esc_nixie_tubes_on");
 }
 

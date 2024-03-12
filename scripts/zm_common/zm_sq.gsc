@@ -256,34 +256,34 @@ function private run_step(ee, step, var_5ea5c94d) {
         #/
         ee.current_step++;
         level thread run_step(ee, step.next_step, var_5ea5c94d);
-    } else {
-        ee.completed = 1;
-        level flag::set(ee.name + "_completed");
-        if (sessionmodeisonlinegame() && isdefined(ee.record_stat) && ee.record_stat) {
-            players = getplayers();
-            foreach (player in players) {
-                if (isdefined(player.var_897fa11b) && player.var_897fa11b) {
-                    player zm_stats::set_map_stat(#"main_quest_completed", 1);
-                    player zm_stats::function_a6efb963(#"main_quest_completed", 1);
-                    player zm_stats::function_9288c79b(#"main_quest_completed", 1);
-                    n_time_elapsed = gettime() - level.var_21e22beb;
-                    player zm_stats::function_366b6fb9("FASTEST_QUEST_COMPLETION_TIME", n_time_elapsed);
-                    scoreevents::processscoreevent(#"main_ee", player);
-                    if (isdefined(ee.var_35ccab99)) {
-                        player thread [[ ee.var_35ccab99 ]]();
-                    }
+        return;
+    }
+    ee.completed = 1;
+    level flag::set(ee.name + "_completed");
+    if (sessionmodeisonlinegame() && isdefined(ee.record_stat) && ee.record_stat) {
+        players = getplayers();
+        foreach (player in players) {
+            if (isdefined(player.var_897fa11b) && player.var_897fa11b) {
+                player zm_stats::set_map_stat(#"main_quest_completed", 1);
+                player zm_stats::function_a6efb963(#"main_quest_completed", 1);
+                player zm_stats::function_9288c79b(#"main_quest_completed", 1);
+                n_time_elapsed = gettime() - level.var_21e22beb;
+                player zm_stats::function_366b6fb9("FASTEST_QUEST_COMPLETION_TIME", n_time_elapsed);
+                scoreevents::processscoreevent(#"main_ee", player);
+                if (isdefined(ee.var_35ccab99)) {
+                    player thread [[ ee.var_35ccab99 ]]();
                 }
             }
-            zm_stats::set_match_stat(#"main_quest_completed", 1);
-            zm_stats::function_ea5b4947();
         }
-        /#
-            if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
-                iprintlnbold("<unknown string>" + function_9e72a96(ee.name) + "<unknown string>");
-                println("<unknown string>" + function_9e72a96(ee.name) + "<unknown string>");
-            }
-        #/
+        zm_stats::set_match_stat(#"main_quest_completed", 1);
+        zm_stats::function_ea5b4947();
     }
+    /#
+        if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
+            iprintlnbold("<unknown string>" + function_9e72a96(ee.name) + "<unknown string>");
+            println("<unknown string>" + function_9e72a96(ee.name) + "<unknown string>");
+        }
+    #/
 }
 
 // Namespace zm_sq/zm_sq
@@ -418,7 +418,9 @@ function function_614612f(ee_name) {
         ee = level._ee[ee_name];
         if (ee.started) {
             ee.steps[ee.current_step] notify(#"end_early");
-        } else if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
+            return;
+        }
+        if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
             iprintlnbold("<unknown string>" + function_9e72a96(ee_name) + "<unknown string>" + function_9e72a96(ee.steps[ee.current_step].name) + "<unknown string>");
             println("<unknown string>" + function_9e72a96(ee_name) + "<unknown string>" + function_9e72a96(ee.steps[ee.current_step].name) + "<unknown string>");
         }
@@ -465,7 +467,6 @@ function devgui_think() {
     /#
         level notify(#"hash_6d8b1a4c632ecc9");
         level endon(#"hash_6d8b1a4c632ecc9");
-    LOC_00000050:
         while (1) {
             wait(1);
             cmd = getdvarstring(#"hash_319d902ea18eb39");

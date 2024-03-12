@@ -419,9 +419,9 @@ function setsupplydropthrustersstate(localclientnum, oldval, newval, bnewent, bi
             crate.thrusterfxhandle2 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_03");
             crate.thrusterfxhandle3 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_04");
             crate thread cleanupthrustersthread(localclientnum);
-        } else {
-            crate stopcrateeffects(localclientnum);
+            return;
         }
+        crate stopcrateeffects(localclientnum);
     }
 }
 
@@ -440,9 +440,9 @@ function setaitankhrustersstate(localclientnum, oldval, newval, bnewent, binitia
             crate.thrusterfxhandle2 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_03");
             crate.thrusterfxhandle3 = util::playfxontag(localclientnum, params.ksthrusterfx, crate, "tag_thruster_fx_04");
             crate thread cleanupthrustersthread(localclientnum);
-        } else {
-            crate stopcrateeffects(localclientnum);
+            return;
         }
+        crate stopcrateeffects(localclientnum);
     }
 }
 
@@ -477,7 +477,9 @@ function marker_state_changed(localclientnum, oldval, newval, bnewent, binitials
             player thread updatemarkerthread(localclientnum);
         }
         player.markerfxhandle = util::playfxontag(localclientnum, player.markerfx, player.markerobj, "tag_origin");
-    } else if (isdefined(player.markerobj)) {
+        return;
+    }
+    if (isdefined(player.markerobj)) {
         player.markerobj delete();
     }
 }

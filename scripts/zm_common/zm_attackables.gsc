@@ -103,7 +103,9 @@ function private clear_slots() {
     foreach (slot in self.slot) {
         if (!isalive(slot.entity)) {
             slot.entity = undefined;
-        } else if (isdefined(slot.entity.missinglegs) && slot.entity.missinglegs) {
+            continue;
+        }
+        if (isdefined(slot.entity.missinglegs) && slot.entity.missinglegs) {
             slot.entity = undefined;
         }
     }
@@ -150,8 +152,8 @@ function do_damage(damage) {
 function attackable_callback(entity) {
     if (entity.archetype === "thrasher" && (self.scriptbundlename === "zm_island_trap_plant_attackable" || self.scriptbundlename === "zm_island_trap_plant_upgraded_attackable")) {
         self do_damage(self.health);
-    } else {
-        self do_damage(entity.meleeweapon.meleedamage);
+        return;
     }
+    self do_damage(entity.meleeweapon.meleedamage);
 }
 

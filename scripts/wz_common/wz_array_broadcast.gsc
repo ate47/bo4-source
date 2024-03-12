@@ -46,11 +46,11 @@ function function_2bbffff9() {
         foreach (var_2eb2cfa9 in var_8294540) {
             function_e2a06860(var_2eb2cfa9, 3);
         }
-    } else {
-        var_8294540 = getdynentarray("array_broadcast");
-        foreach (var_2eb2cfa9 in var_8294540) {
-            var_2eb2cfa9.onuse = &function_1e224132;
-        }
+        return;
+    }
+    var_8294540 = getdynentarray("array_broadcast");
+    foreach (var_2eb2cfa9 in var_8294540) {
+        var_2eb2cfa9.onuse = &function_1e224132;
     }
 }
 

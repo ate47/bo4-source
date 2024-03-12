@@ -79,10 +79,10 @@ function function_7c4ef26b(predictedspawn) {
         if (isdefined(level.var_e31c5d7a)) {
             self [[ level.var_e31c5d7a ]]();
         }
-    } else {
-        self.n_multikill = 0;
-        self thread function_7dbf5593();
+        return;
     }
+    self.n_multikill = 0;
+    self thread function_7dbf5593();
 }
 
 // Namespace ct_battery/ct_battery
@@ -99,7 +99,9 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
         self notify(#"hash_789b40a7845c0591");
         self.var_6b6241ac = self.last_valid_position;
         self.var_45cac770 = self.angles;
-    } else if (level flag::exists("combat_training_started") && level flag::get("combat_training_started") && self.team == #"axis" && isdefined(level.var_902e7351) && level.var_902e7351) {
+        return;
+    }
+    if (level flag::exists("combat_training_started") && level flag::get("combat_training_started") && self.team == #"axis" && isdefined(level.var_902e7351) && level.var_902e7351) {
         self ct_bots::function_43df30a8();
         e_player = ct_utils::get_player();
         if (isdefined(level.ct_shared_objcounter.n_count)) {
@@ -109,9 +111,9 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
         level thread ct_utils::function_bfa522d1();
         if (weapon === getweapon(#"hero_pineapplegun") || weapon === getweapon(#"hero_pineapple_grenade")) {
             e_player ct_utils::function_d471f8fa(5, undefined, 1);
-        } else {
-            e_player ct_utils::function_d471f8fa(2);
+            return;
         }
+        e_player ct_utils::function_d471f8fa(2);
     }
 }
 
@@ -249,10 +251,8 @@ function registerstart_killstreak_collision_rounds(s_veh) {
     switch (s_veh.script_noteworthy) {
     case #"ct_mini_quadtank":
         return s_veh function_4c8f915a("enemy_mini_quadtank", #"axis");
-        break;
     case #"ct_attack_helicopter":
         return s_veh spawn_attack_helicopter("enemy_attack_chopper", #"axis");
-        break;
     }
 }
 
@@ -368,7 +368,7 @@ function function_62449dad() {
                 self setvehweapon(self.defaultweapon);
                 self waittill(#"turret_on_target");
                 self notify(#"turret_on_target");
-                if (!self.pilotistalking) {
+                if (self.pilotistalking) {
                 }
                 wait(1);
                 wait(level.heli_turret_spinup_delay);
@@ -438,29 +438,28 @@ function function_17786807() {
 function function_303fcbd8() {
     self endon(#"death", #"crashing", #"leaving");
     for (;;) {
-        for (;;) {
-            if (isdefined(self.secondarytarget)) {
-                self.secondarytarget.antithreat = undefined;
-                self.missiletarget = self.secondarytarget;
-                antithreat = 0;
-                while (isdefined(self.missiletarget) && isalive(self.missiletarget)) {
-                    if (self helicopter::target_cone_check(self.missiletarget, level.heli_missile_target_cone)) {
-                        self thread helicopter::missile_support(self.missiletarget, level.heli_missile_rof, 1, undefined);
-                    } else {
-                        break;
-                    }
-                    antithreat = antithreat + 100;
-                    self.missiletarget.antithreat = antithreat;
-                    wait(level.heli_missile_rof);
-                    if (!isdefined(self.secondarytarget) || isdefined(self.secondarytarget) && self.missiletarget != self.secondarytarget) {
-                        break;
-                    }
+        if (isdefined(self.secondarytarget)) {
+            self.secondarytarget.antithreat = undefined;
+            self.missiletarget = self.secondarytarget;
+            antithreat = 0;
+            while (isdefined(self.missiletarget) && isalive(self.missiletarget)) {
+                if (self helicopter::target_cone_check(self.missiletarget, level.heli_missile_target_cone)) {
+                    self thread helicopter::missile_support(self.missiletarget, level.heli_missile_rof, 1, undefined);
+                } else {
+                    break;
                 }
-                if (isdefined(self.missiletarget)) {
-                    self.missiletarget.antithreat = undefined;
+                antithreat = antithreat + 100;
+                self.missiletarget.antithreat = antithreat;
+                wait(level.heli_missile_rof);
+                if (!isdefined(self.secondarytarget) || isdefined(self.secondarytarget) && self.missiletarget != self.secondarytarget) {
+                    break;
                 }
             }
+            if (isdefined(self.missiletarget)) {
+                self.missiletarget.antithreat = undefined;
+            }
         }
+        wait(5);
     }
 }
 
@@ -1038,7 +1037,9 @@ function function_e12a129(v_target) {
             wait(2);
             self.n_multikill = 0;
             self.var_439da772 = 0;
-        } else if (self.n_multikill >= 3) {
+            return;
+        }
+        if (self.n_multikill >= 3) {
             self thread function_f75c4ec2(v_target);
         }
     }

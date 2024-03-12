@@ -38,9 +38,9 @@ function function_7cd6e78c(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.wisp_fx = util::playfxontag(localclientnum, level._effect[#"hash_b0298e980bd8da0"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.wisp_fx);
+        return;
     }
+    stopfx(localclientnum, self.wisp_fx);
 }
 
 // Namespace namespace_825eac6b/namespace_825eac6b
@@ -50,8 +50,8 @@ function function_4b104fc5(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_37e7127e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.var_bb31eb27 = util::playfxontag(localclientnum, level._effect[#"hash_1e4555a911a24ab7"], self, "tag_origin");
-    } else {
-        stopfx(localclientnum, self.var_bb31eb27);
+        return;
     }
+    stopfx(localclientnum, self.var_bb31eb27);
 }
 

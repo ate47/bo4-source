@@ -76,10 +76,10 @@ function function_27ecd662(localclientnum) {
             while (var_b13a6419 + 2000 > gettime() && isdefined(enemy) && enemy.var_b0256c7b) {
                 waitframe(1);
             }
-        } else {
-            objective_setstate(localclientnum, level.var_8b7ba196[localclientnum], "invisible");
-            waitframe(1);
+            continue;
         }
+        objective_setstate(localclientnum, level.var_8b7ba196[localclientnum], "invisible");
+        waitframe(1);
     }
 }
 

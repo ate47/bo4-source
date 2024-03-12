@@ -7,7 +7,7 @@
 #namespace smart_cover;
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x78d3d525, Offset: 0x240
 // Size: 0x264
 function init_shared() {
@@ -31,7 +31,7 @@ function init_shared() {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x219a8e38, Offset: 0x4b0
 // Size: 0x28c
 function setupdvars() {
@@ -50,19 +50,21 @@ function setupdvars() {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x7bc02cc0, Offset: 0x748
 // Size: 0xc6
 function smartcover_start_microwave(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (isdefined(level.smartcoversettings.bundle.var_f4e0e7d7) && level.smartcoversettings.bundle.var_f4e0e7d7 && newval == 1) {
         self thread startmicrowavefx(localclientnum);
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         self notify(#"beam_stop");
     }
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x4570b1f3, Offset: 0x818
 // Size: 0x19c
 function smartcover_placed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -77,7 +79,9 @@ function smartcover_placed(localclientnum, oldval, newval, bnewent, binitialsnap
     self useanimtree("generic");
     if (newval == 1) {
         self setanimrestart(level.smartcoversettings.bundle.deployanim, 1, 0, 1);
-    } else if (bwastimejump) {
+        return;
+    }
+    if (bwastimejump) {
         currentanimtime = self getanimtime(level.smartcoversettings.bundle.deployanim);
         var_f56117a2 = 1 - newval;
         if (var_f56117a2 < currentanimtime) {
@@ -87,7 +91,7 @@ function smartcover_placed(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaca90d1b, Offset: 0x9c0
 // Size: 0xb0
 function function_112e3e89(localclientnum) {
@@ -100,7 +104,7 @@ function function_112e3e89(localclientnum) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd5afd0f6, Offset: 0xa78
 // Size: 0x4e
 function function_fd04d5d5(localclientnum) {
@@ -125,9 +129,9 @@ function function_1c2930c7(localclientnum) {
         waitframe(1);
         player = function_5c10bd79(localclientnum);
         if (!isdefined(player)) {
-            break;
+            return;
         }
-        var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.var_8d86ade8);
+        var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.smartcoverweapon);
         if (!isdefined(var_b43e8dc2) && !var_ccfe777) {
             var_ccfe777 = 1;
             player function_112e3e89(localclientnum);
@@ -142,17 +146,17 @@ function function_1c2930c7(localclientnum) {
         if (isdefined(level.smartcoversettings.bundle.var_8fa9aac4) ? level.smartcoversettings.bundle.var_8fa9aac4 : 0) {
             if (var_b43e8dc2.var_bf9ca9b0) {
                 previewmodel = player function_8fb44aff(localclientnum, var_b43e8dc2.origin, var_b43e8dc2.angles, var_b43e8dc2.isvalid, 0, 1);
-            } else {
-                previewmodel = player function_8fb44aff(localclientnum, var_b43e8dc2.origin, var_b43e8dc2.angles, var_b43e8dc2.isvalid, 2, 3);
-                previewmodel function_dbaf4647(localclientnum);
-                previewmodel function_5a8becdc(localclientnum, player, var_b43e8dc2, 1);
+                continue;
             }
+            previewmodel = player function_8fb44aff(localclientnum, var_b43e8dc2.origin, var_b43e8dc2.angles, var_b43e8dc2.isvalid, 2, 3);
+            previewmodel function_dbaf4647(localclientnum);
+            previewmodel function_5a8becdc(localclientnum, player, var_b43e8dc2, 1);
         }
     }
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xeec8fce6, Offset: 0xe00
 // Size: 0x4c
 function function_59605cb(localclientnum) {
@@ -187,7 +191,7 @@ function function_5d802b86(localclientnum) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x93a55c8b, Offset: 0xf60
 // Size: 0xc
 function on_local_player_spawned(localclientnum) {
@@ -195,7 +199,7 @@ function on_local_player_spawned(localclientnum) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x119aa0de, Offset: 0xf78
 // Size: 0x88
 function function_641491ac(localclientnum, modelname) {
@@ -207,7 +211,7 @@ function function_641491ac(localclientnum, modelname) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4a346657, Offset: 0x1008
 // Size: 0x178
 function function_722fc669(localclientnum) {
@@ -223,7 +227,7 @@ function function_722fc669(localclientnum) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x790dcb58, Offset: 0x1188
 // Size: 0x1b2
 function function_8fb44aff(localclientnum, origin, angles, isvalid, var_eb65925c, var_4b3e5e0a) {
@@ -245,7 +249,7 @@ function function_8fb44aff(localclientnum, origin, angles, isvalid, var_eb65925c
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x2d590ec, Offset: 0x1348
 // Size: 0x70
 function function_d66a0190(row, column) {
@@ -257,7 +261,7 @@ function function_d66a0190(row, column) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x77d40342, Offset: 0x13c0
 // Size: 0xd0
 function function_dbaf4647(localclientnum) {
@@ -271,7 +275,7 @@ function function_dbaf4647(localclientnum) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x11b80931, Offset: 0x1498
 // Size: 0x478
 function function_5a8becdc(localclientnum, player, buildinfo, var_4b1c8937) {
@@ -327,7 +331,7 @@ function debug_trace(origin, trace) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ddeadfe, Offset: 0x1a10
 // Size: 0x508
 function startmicrowavefx(localclientnum) {
@@ -392,7 +396,7 @@ function startmicrowavefx(localclientnum) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x4df9581, Offset: 0x1f20
 // Size: 0x1a8
 function microwavefxhash(trace, origin, name) {
@@ -420,7 +424,7 @@ function microwavefxhash(trace, origin, name) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb4c05205, Offset: 0x20d0
 // Size: 0xd4
 function cleanupfx(localclientnum, microwavefxent) {
@@ -434,7 +438,7 @@ function cleanupfx(localclientnum, microwavefxent) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x6e53822b, Offset: 0x21b0
 // Size: 0xdc
 function play_fx_on_tag(localclientnum, fxname, tag, team) {
@@ -447,7 +451,7 @@ function play_fx_on_tag(localclientnum, fxname, tag, team) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6bd5a195, Offset: 0x2298
 // Size: 0x74
 function stop_fx_on_tag(localclientnum, fxname, tag) {
@@ -472,7 +476,7 @@ function render_debug_sphere(tag, color, fxname) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x9d8e8467, Offset: 0x23b8
 // Size: 0xec
 function stop_or_start_fx(localclientnum, fxname, tag, start, team) {
@@ -485,16 +489,16 @@ function stop_or_start_fx(localclientnum, fxname, tag, start, team) {
                 render_debug_sphere(tag, (0, 1, 0), fxname);
             }
         #/
-    } else {
-        stop_fx_on_tag(localclientnum, fxname, tag);
-        /#
-            render_debug_sphere(tag, (1, 0, 0), fxname);
-        #/
+        return;
     }
+    stop_fx_on_tag(localclientnum, fxname, tag);
+    /#
+        render_debug_sphere(tag, (1, 0, 0), fxname);
+    #/
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 6, eflags: 0x1 linked
+// Params 6, eflags: 0x0
 // Checksum 0x847c0412, Offset: 0x24b0
 // Size: 0x5ec
 function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin, team) {

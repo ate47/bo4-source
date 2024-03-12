@@ -88,7 +88,6 @@ function function_e49dbc72() {
         return 20;
     case 3:
         return 60;
-        break;
     }
     return getdvarfloat(#"player_laststandbleedouttime", 0);
 }

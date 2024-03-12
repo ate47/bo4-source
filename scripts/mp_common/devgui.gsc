@@ -107,21 +107,21 @@ function devgui_player_spawn_think() {
             playername = getdvarstring(#"mp_lockspawn_command_devgui");
             if (playername == "<unknown string>") {
                 waitframe(1);
-            } else {
-                players = getplayers();
-                foreach (player in players) {
-                    if (player.playername != playername) {
-                        continue;
-                    }
-                    player.devguilockspawn = !player.devguilockspawn;
-                    if (player.devguilockspawn) {
-                        player.resurrect_origin = player.origin;
-                        player.resurrect_angles = player.angles;
-                    }
-                }
-                setdvar(#"mp_lockspawn_command_devgui", "<unknown string>");
-                wait(0.5);
+                continue;
             }
+            players = getplayers();
+            foreach (player in players) {
+                if (player.playername != playername) {
+                    continue;
+                }
+                player.devguilockspawn = !player.devguilockspawn;
+                if (player.devguilockspawn) {
+                    player.resurrect_origin = player.origin;
+                    player.resurrect_angles = player.angles;
+                }
+            }
+            setdvar(#"mp_lockspawn_command_devgui", "<unknown string>");
+            wait(0.5);
         }
     #/
 }
@@ -224,15 +224,19 @@ function devgui_player_weapons() {
         a_misc_mp = [];
         var_ef946ce8 = [];
         for (i = 0; i < a_weapons.size; i++) {
-            if (strstartswith(function_a16a090d(a_weapons[i]), "<unknown string>")) {
+            if (strstartswith(getweaponname(a_weapons[i]), "<unknown string>")) {
                 arrayinsert(var_ef946ce8, a_weapons[i], 0);
-            } else if ((weapons::is_primary_weapon(a_weapons[i]) || weapons::is_side_arm(a_weapons[i])) && !killstreaks::is_killstreak_weapon(a_weapons[i])) {
-                arrayinsert(a_weapons_mp, a_weapons[i], 0);
-            } else if (weapons::is_grenade(a_weapons[i])) {
-                arrayinsert(a_grenades_mp, a_weapons[i], 0);
-            } else {
-                arrayinsert(a_misc_mp, a_weapons[i], 0);
+                continue;
             }
+            if ((weapons::is_primary_weapon(a_weapons[i]) || weapons::is_side_arm(a_weapons[i])) && !killstreaks::is_killstreak_weapon(a_weapons[i])) {
+                arrayinsert(a_weapons_mp, a_weapons[i], 0);
+                continue;
+            }
+            if (weapons::is_grenade(a_weapons[i])) {
+                arrayinsert(a_grenades_mp, a_weapons[i], 0);
+                continue;
+            }
+            arrayinsert(a_misc_mp, a_weapons[i], 0);
         }
         player_devgui_base_mp = "<unknown string>";
         menu_index = 1;
@@ -287,7 +291,7 @@ function devgui_add_player_weapons(root, pname, index, a_weapons, weapon_type, m
         if (isdefined(a_weapons)) {
             for (i = 0; i < a_weapons.size; i++) {
                 attachments = a_weapons[i].supportedattachments;
-                name = function_a16a090d(a_weapons[i]);
+                name = getweaponname(a_weapons[i]);
                 if (attachments.size) {
                     devgui_add_player_weap_command(devgui_root + name + "<unknown string>", index, name, i + 1);
                     foreach (att in attachments) {
@@ -295,9 +299,9 @@ function devgui_add_player_weapons(root, pname, index, a_weapons, weapon_type, m
                             devgui_add_player_weap_command(devgui_root + name + "<unknown string>", index, name + "<unknown string>" + att, i + 1);
                         }
                     }
-                } else {
-                    devgui_add_player_weap_command(devgui_root, index, name, i + 1);
+                    continue;
                 }
+                devgui_add_player_weap_command(devgui_root, index, name, i + 1);
             }
         }
     #/
@@ -365,7 +369,7 @@ function devgui_weapon_asset_name_display_think() {
                 continue;
             }
             if (!printlnbold_counter) {
-                iprintlnbold(function_a16a090d(level.players[0] getcurrentweapon()));
+                iprintlnbold(getweaponname(level.players[0] getcurrentweapon()));
             }
             printlnbold_counter++;
             if (printlnbold_counter >= printlnbold_update) {
@@ -382,7 +386,7 @@ function devgui_weapon_asset_name_display_think() {
                 if (!isdefined(var_9643e38d)) {
                     continue;
                 }
-                print3d(var_9643e38d, function_a16a090d(weapon), colors[color_index], 1, 0.15, print_duration);
+                print3d(var_9643e38d, getweaponname(weapon), colors[color_index], 1, 0.15, print_duration);
                 color_index++;
                 if (color_index >= colors.size) {
                     color_index = 0;
@@ -404,7 +408,7 @@ function devgui_weapon_asset_name_display_think() {
                 if (!isdefined(var_9643e38d)) {
                     continue;
                 }
-                print3d(var_9643e38d, function_a16a090d(weapon), colors[color_index], 1, 0.15, print_duration);
+                print3d(var_9643e38d, getweaponname(weapon), colors[color_index], 1, 0.15, print_duration);
                 color_index++;
                 if (color_index >= colors.size) {
                     color_index = 0;
@@ -636,11 +640,11 @@ function devgui_give_weapon(weapon_name) {
             max = weapon.maxammo;
             if (max) {
                 self setweaponammostock(weapon, max);
-            } else {
-                clipammo = self getweaponammoclip(weapon);
-                if (clipammo == 0) {
-                    self setweaponammoclip(weapon, 1);
-                }
+                return;
+            }
+            clipammo = self getweaponammoclip(weapon);
+            if (clipammo == 0) {
+                self setweaponammoclip(weapon, 1);
             }
         }
     #/
@@ -679,24 +683,23 @@ function init_debug_center_screen() {
     /#
         zero_idle_movement = 0;
         for (;;) {
-            for (;;) {
-                if (getdvarint(#"debug_center_screen", 0)) {
-                    if (!isdefined(level.var_7929a046) || level.var_7929a046 == 0) {
-                        thread debug_center_screen();
-                        zero_idle_movement = getdvarint(#"zero_idle_movement", 0);
-                        if (zero_idle_movement == 0) {
-                            setdvar(#"zero_idle_movement", 1);
-                            zero_idle_movement = 1;
-                        }
-                    }
-                } else {
-                    level notify(#"stop center screen debug");
-                    if (zero_idle_movement == 1) {
-                        setdvar(#"zero_idle_movement", 0);
-                        zero_idle_movement = 0;
+            if (getdvarint(#"debug_center_screen", 0)) {
+                if (!isdefined(level.var_7929a046) || level.var_7929a046 == 0) {
+                    thread debug_center_screen();
+                    zero_idle_movement = getdvarint(#"zero_idle_movement", 0);
+                    if (zero_idle_movement == 0) {
+                        setdvar(#"zero_idle_movement", 1);
+                        zero_idle_movement = 1;
                     }
                 }
+            } else {
+                level notify(#"stop center screen debug");
+                if (zero_idle_movement == 1) {
+                    setdvar(#"zero_idle_movement", 0);
+                    zero_idle_movement = 0;
+                }
             }
+            waitframe(1);
         }
     #/
 }
@@ -782,8 +785,7 @@ function function_6a24e58f() {
         cmd = "<unknown string>";
         util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
         for (minutes = 0; minutes < 10; minutes++) {
-            seconds = 0;
-            while (seconds < 60) {
+            for (seconds = 0; seconds < 60; seconds = seconds + 15) {
                 var_99cfbb07 = "<unknown string>" + seconds;
                 totalseconds = minutes * 60 + seconds;
                 if (seconds == 0) {
@@ -795,7 +797,6 @@ function function_6a24e58f() {
                     }
                 }
                 util::add_devgui(path + minutes + "<unknown string>" + var_99cfbb07, cmd + totalseconds);
-                seconds = seconds + 15;
             }
             waitframe(1);
         }
@@ -900,10 +901,8 @@ function function_46b22d99() {
             var_53b4c3ae = getgametypesetting(#"timelimit");
             var_c585681e = 0.25;
             setgametypesetting("<unknown string>", var_c585681e);
-            aborted = 0;
-            while (!level.gameended && !aborted) {
+            for (aborted = 0; !level.gameended && !aborted; aborted = getgametypesetting(#"timelimit") != var_c585681e) {
                 wait(0.5);
-                aborted = getgametypesetting(#"timelimit") != var_c585681e;
             }
             if (!aborted) {
                 setgametypesetting("<unknown string>", var_53b4c3ae);
@@ -1073,7 +1072,7 @@ function function_354e12a4() {
 // Size: 0x1de
 function private function_57edec18() {
     /#
-        if (!isnavvolumeloaded()) {
+        if (isnavvolumeloaded()) {
         }
         util::add_devgui("<unknown string>", "<unknown string>");
         util::add_devgui("<unknown string>", "<unknown string>");

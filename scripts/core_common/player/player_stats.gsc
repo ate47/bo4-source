@@ -227,10 +227,10 @@ function function_baa25a23(statname, value) {
     }
     if (sessionmodeiswarzonegame()) {
         function_e6106f3b(statname, value);
-    } else {
-        self addgametypestat(statname, value);
-        return 1;
+        return;
     }
+    self addgametypestat(statname, value);
+    return 1;
 }
 
 // Namespace stats/player_stats
@@ -243,10 +243,9 @@ function function_d40764f3(statname, value) {
     }
     if (sessionmodeiswarzonegame()) {
         return function_1d354b96(statname, value);
-    } else {
-        self addgametypestat(statname, value);
-        return 1;
     }
+    self addgametypestat(statname, value);
+    return 1;
 }
 
 // Namespace stats/player_stats
@@ -446,12 +445,12 @@ function function_eec52333(weapon, statname, value, classnum, pickedup, forceads
     case #"shots":
     case #"used":
         self function_f95ea9b6(weapon);
-        break;
+        return;
     case #"kills":
         if (weapon.var_ff0b00ba) {
             self function_dad108fa(#"kills_equipment", 1);
         }
-        break;
+        return;
     }
 }
 

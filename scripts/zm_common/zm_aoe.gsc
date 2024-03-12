@@ -256,15 +256,21 @@ function private function_ccf8f659(aoe, forceend = 0) {
         aoe.entity clientfield::set("aoe_state", 1);
         aoe.state = 1;
         aoe.var_be1913ae = gettime() + 100;
-    } else if (aoe.state == 1) {
+        return;
+    }
+    if (aoe.state == 1) {
         aoe.entity clientfield::set("aoe_state", 2);
         aoe.state = 2;
         aoe.var_be1913ae = aoe.endtime;
-    } else if (aoe.state == 2) {
+        return;
+    }
+    if (aoe.state == 2) {
         aoe.entity clientfield::set("aoe_state", 3);
         aoe.state = 3;
         aoe.var_be1913ae = gettime() + var_46f1b5eb.var_f2cd3aad;
-    } else if (aoe.state == 3) {
+        return;
+    }
+    if (aoe.state == 3) {
         aoe.entity clientfield::set("aoe_state", 4);
         aoe.state = 4;
     }

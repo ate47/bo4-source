@@ -334,7 +334,9 @@ function watchforotherkillstreaks() {
                 attacker challenges::addflyswatterstat(hardpointtype, self);
                 return;
             }
-        } else if (hardpointtype == "missile_swarm") {
+            continue;
+        }
+        if (hardpointtype == "missile_swarm") {
             if (self.owner util::isenemyplayer(attacker)) {
                 self.leavenexttime = 1;
             }
@@ -352,7 +354,6 @@ function watchforkills() {
         waitresult = undefined;
         waitresult = self waittill(#"killed");
         if (isplayer(waitresult.victim)) {
-            continue;
         }
     }
 }
@@ -413,9 +414,13 @@ function dostraferuns() {
             if (isdefined(self.owner)) {
                 self thread startstrafe();
             }
-        } else if (noteworthy == "strafe_stop") {
+            continue;
+        }
+        if (noteworthy == "strafe_stop") {
             self stopstrafe();
-        } else if (noteworthy == "strafe_leave") {
+            continue;
+        }
+        if (noteworthy == "strafe_leave") {
             if (self shouldleavemap()) {
                 if (!(isdefined(self.leavenexttime) && self.leavenexttime)) {
                     self killstreaks::play_taacom_dialog_response_on_owner("timeoutConfirmed", "straferun", self.killstreakid);
@@ -472,7 +477,7 @@ function startstrafe() {
                 time = 300;
                 airsupport::debug_line(attackstartvector, trace[#"position"] - vectorscale((0, 0, 1), 20), (1, 0, 0), time, 0);
                 if (count % 30 == 0) {
-                    trace = bullettrace(perfectattackstartvector, (perfectattackstartvector[0], perfectattackstartvector[1], 100000), 0, self, 0, 1);
+                    trace = bullettrace(perfectattackstartvector, (perfectattackstartvector[0], perfectattackstartvector[1], -100000), 0, self, 0, 1);
                     airsupport::debug_line(trace[#"position"] + vectorscale((0, 0, 1), 20), trace[#"position"] - vectorscale((0, 0, 1), 20), (0, 0, 1), time, 0);
                 }
             }

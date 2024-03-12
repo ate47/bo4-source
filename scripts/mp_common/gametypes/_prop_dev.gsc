@@ -439,13 +439,21 @@ function function_4a5dac11() {
             }
             if (msg == "<unknown string>") {
                 self function_92f23bcd(-1);
-            } else if (msg == "<unknown string>") {
+                continue;
+            }
+            if (msg == "<unknown string>") {
                 self function_92f23bcd(1);
-            } else if (msg == "<unknown string>") {
+                continue;
+            }
+            if (msg == "<unknown string>") {
                 self function_cdf89a29(1);
-            } else if (msg == "<unknown string>") {
+                continue;
+            }
+            if (msg == "<unknown string>") {
                 self function_cdf89a29(-1);
-            } else if (msg == "<unknown string>") {
+                continue;
+            }
+            if (msg == "<unknown string>") {
                 function_77511c75();
             }
         }
@@ -558,7 +566,9 @@ function function_75154360(val) {
             self.var_faa235b5 setvalue(self.prop.info.anglesoffset[2]);
             self.var_35eb52f1 setvalue(self.prop.info.propheight);
             self.var_a2f59097 setvalue(self.prop.info.proprange);
-        } else if (hudelem == self.var_3634d14e || hudelem == self.var_a2614669) {
+            return;
+        }
+        if (hudelem == self.var_3634d14e || hudelem == self.var_a2614669) {
             sizes = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
             index = 0;
             for (i = 0; i < sizes.size; i++) {
@@ -579,7 +589,9 @@ function function_75154360(val) {
             self.var_a2614669 setvalue(self.prop.info.propsize);
             self.health = self.prop.info.propsize;
             self.maxhealth = self.health;
-        } else if (hudelem == self.var_5ee5df03) {
+            return;
+        }
+        if (hudelem == self.var_5ee5df03) {
             var_dfa19677 = 0.1;
             var_34b4cc47 = 10;
             var_59913b42 = 0.01;
@@ -587,50 +599,66 @@ function function_75154360(val) {
             self.prop.info.propscale = math::clamp(self.prop.info.propscale, var_dfa19677, var_34b4cc47);
             self.prop setscale(self.prop.info.propscale);
             self.var_5ee5df03 setvalue(self.prop.info.propscale);
-        } else if (hudelem == self.var_66df6677) {
+            return;
+        }
+        if (hudelem == self.var_66df6677) {
             self.prop unlink();
             self.prop.info.xyzoffset = (self.prop.info.xyzoffset[0] + val, self.prop.info.xyzoffset[1], self.prop.info.xyzoffset[2]);
             self.prop.xyzoffset = self.prop.info.xyzoffset;
             self.var_66df6677 setvalue(self.prop.info.xyzoffset[0]);
             function_c2ab2206();
-        } else if (hudelem == self.var_ec9a93) {
+            return;
+        }
+        if (hudelem == self.var_ec9a93) {
             self.prop unlink();
             self.prop.info.xyzoffset = (self.prop.info.xyzoffset[0], self.prop.info.xyzoffset[1] + val, self.prop.info.xyzoffset[2]);
             self.prop.xyzoffset = self.prop.info.xyzoffset;
             self.var_ec9a93 setvalue(self.prop.info.xyzoffset[1]);
             function_c2ab2206();
-        } else if (hudelem == self.var_811d1afa) {
+            return;
+        }
+        if (hudelem == self.var_811d1afa) {
             self.prop unlink();
             self.prop.info.xyzoffset = (self.prop.info.xyzoffset[0], self.prop.info.xyzoffset[1], self.prop.info.xyzoffset[2] + val);
             self.prop.xyzoffset = self.prop.info.xyzoffset;
             self.var_811d1afa setvalue(self.prop.info.xyzoffset[2]);
             function_c2ab2206();
-        } else if (hudelem == self.var_d7336ed8) {
+            return;
+        }
+        if (hudelem == self.var_d7336ed8) {
             self.prop unlink();
             self.prop.info.anglesoffset = (self.prop.info.anglesoffset[0] + val, self.prop.info.anglesoffset[1], self.prop.info.anglesoffset[2]);
             self.prop.anglesoffset = self.prop.info.anglesoffset;
             self.var_d7336ed8 setvalue(self.prop.info.anglesoffset[0]);
             function_c2ab2206();
-        } else if (hudelem == self.var_334e2710) {
+            return;
+        }
+        if (hudelem == self.var_334e2710) {
             self.prop unlink();
             self.prop.info.anglesoffset = (self.prop.info.anglesoffset[0], self.prop.info.anglesoffset[1] + val, self.prop.info.anglesoffset[2]);
             self.prop.anglesoffset = self.prop.info.anglesoffset;
             self.var_334e2710 setvalue(self.prop.info.anglesoffset[1]);
             function_c2ab2206();
-        } else if (hudelem == self.var_faa235b5) {
+            return;
+        }
+        if (hudelem == self.var_faa235b5) {
             self.prop unlink();
             self.prop.info.anglesoffset = (self.prop.info.anglesoffset[0], self.prop.info.anglesoffset[1], self.prop.info.anglesoffset[2] + val);
             self.prop.anglesoffset = self.prop.info.anglesoffset;
             self.var_faa235b5 setvalue(self.prop.info.anglesoffset[2]);
             function_c2ab2206();
-        } else if (hudelem == self.var_35eb52f1) {
+            return;
+        }
+        if (hudelem == self.var_35eb52f1) {
             adjust = 10;
             self.prop.info.propheight = self.prop.info.propheight + adjust * val;
             self.prop.info.propheight = math::clamp(self.prop.info.propheight, -30, 40);
             self.thirdpersonheightoffset = self.prop.info.propheight;
             self setclientthirdperson(1);
             self.var_35eb52f1 setvalue(self.prop.info.propheight);
-        } else if (hudelem == self.var_a2f59097) {
+            return;
+        }
+        if (hudelem == self.var_a2f59097) {
             adjust = 10;
             self.prop.info.proprange = self.prop.info.proprange + adjust * val;
             self.prop.info.proprange = math::clamp(self.prop.info.proprange, 50, 360);
@@ -732,28 +760,28 @@ function function_7a3672a6(propinfo) {
 // Size: 0x264
 function function_2dc5c497(file, propinfo) {
     /#
-        var_74b91a95 = "<unknown string>" + propinfo.modelname + "<unknown string>" + propinfo.propsizetext + "<unknown string>" + propinfo.propscale;
+        propstr = "<unknown string>" + propinfo.modelname + "<unknown string>" + propinfo.propsizetext + "<unknown string>" + propinfo.propscale;
         if (function_cbef3d63(propinfo.xyzoffset)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
+            propstr = propstr + "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>";
+            propstr = propstr + "<unknown string>";
         }
         if (function_cbef3d63(propinfo.anglesoffset)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
+            propstr = propstr + "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>";
+            propstr = propstr + "<unknown string>";
         }
         if (function_a840713e(propinfo)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.propheight;
+            propstr = propstr + "<unknown string>" + propinfo.propheight;
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
+            propstr = propstr + "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
         }
         if (function_7a3672a6(propinfo)) {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + propinfo.proprange;
+            propstr = propstr + "<unknown string>" + propinfo.proprange;
         } else {
-            var_74b91a95 = var_74b91a95 + "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
+            propstr = propstr + "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
         }
-        fprintln(file, var_74b91a95);
+        fprintln(file, propstr);
     #/
 }
 
@@ -763,8 +791,8 @@ function function_2dc5c497(file, propinfo) {
 // Size: 0x5c
 function function_8639a7b0(file, propinfo) {
     /#
-        var_74b91a95 = "<unknown string>" + propinfo.modelname + "<unknown string>";
-        fprintln(file, var_74b91a95);
+        propstr = "<unknown string>" + propinfo.modelname + "<unknown string>";
+        fprintln(file, propstr);
     #/
 }
 
@@ -1182,11 +1210,11 @@ function function_89b4b4c() {
                     origin = origin + dir * 60;
                 }
             }
-        } else {
-            foreach (propent in level.var_98714fa7) {
-                propent.origin = origin;
-                origin = origin + dir * 60;
-            }
+            return;
+        }
+        foreach (propent in level.var_98714fa7) {
+            propent.origin = origin;
+            origin = origin + dir * 60;
         }
     #/
 }

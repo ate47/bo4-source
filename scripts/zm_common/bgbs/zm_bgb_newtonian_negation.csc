@@ -34,10 +34,10 @@ function function_8622e664(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         setdvar(#"phys_gravity_dir", (0, 0, -1));
         self notify(#"hash_747b48d62f4fbad1");
-    } else {
-        setdvar(#"phys_gravity_dir", (0, 0, 1));
-        self thread function_e752a980(localclientnum);
+        return;
     }
+    setdvar(#"phys_gravity_dir", (0, 0, 1));
+    self thread function_e752a980(localclientnum);
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation

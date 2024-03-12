@@ -227,7 +227,9 @@ function onscoreclosemusic() {
             if (score > topscore) {
                 runnerupscore = topscore;
                 topscore = score;
-            } else if (score > runnerupscore) {
+                continue;
+            }
+            if (score > runnerupscore) {
                 runnerupscore = score;
             }
         }
@@ -395,15 +397,17 @@ function function_8d346fd8(winningteam) {
         }
         if (winningteam == "tie") {
             globallogic_score::updatetiestats(players[i]);
-        } else if (players[i].pers[#"team"] == winningteam) {
+            continue;
+        }
+        if (players[i].pers[#"team"] == winningteam) {
             globallogic_score::updatewinstats(players[i]);
-        } else {
-            if (level.rankedmatch && !level.leaguematch && players[i].pers[#"latejoin"] === 1) {
-                globallogic_score::updatelosslatejoinstats(players[i]);
-            }
-            if (!level.disablestattracking) {
-                players[i] stats::set_stat(#"playerstatslist", "cur_win_streak", #"statvalue", 0);
-            }
+            continue;
+        }
+        if (level.rankedmatch && !level.leaguematch && players[i].pers[#"latejoin"] === 1) {
+            globallogic_score::updatelosslatejoinstats(players[i]);
+        }
+        if (!level.disablestattracking) {
+            players[i] stats::set_stat(#"playerstatslist", "cur_win_streak", #"statvalue", 0);
         }
     }
 }

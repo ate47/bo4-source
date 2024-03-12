@@ -50,9 +50,9 @@ function private function_6b82c26d(localclientnum, oldval, newval, bnewent, bini
 function private function_4207e678(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self thread function_3a03717(localclientnum);
-    } else {
-        self notify(#"stop_summon");
+        return;
     }
+    self notify(#"stop_summon");
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu
@@ -79,7 +79,9 @@ function function_3a03717(localclientnum) {
 function private function_a354a47f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.var_b8cc5182 = util::playfxontag(localclientnum, "zm_ai/fx8_nosferatu_dash_eyes", self, "tag_eye");
-    } else if (isdefined(self.var_b8cc5182)) {
+        return;
+    }
+    if (isdefined(self.var_b8cc5182)) {
         stopfx(localclientnum, self.var_b8cc5182);
     }
 }

@@ -62,7 +62,8 @@ function private function_37d90686(bot, path) {
                 currentdistance = currentdistance + distancetonextpoint;
                 currentpoint = nextpoint;
                 continue;
-            } else if (totaldistance >= segmentlength) {
+            }
+            if (totaldistance >= segmentlength) {
                 distancetonextadjusted = segmentlength - currentdistance;
                 ratiotonextadjusted = distancetonextadjusted / distancetonextpoint;
                 currentpoint = lerpvector(currentpoint, nextpoint, ratiotonextadjusted);
@@ -475,9 +476,9 @@ function private function_73f656f5(planner, params) {
     foreach (bot in params.bots) {
         if (strategiccommandutility::isvalidbot(bot)) {
             chest = params.chest[#"__unsafe__"][#"chest"];
-            var_9b3def7 = getclosestpointonnavmesh(params.chest[#"origin"], 200, bot getpathfindingradius());
+            chestpos = getclosestpointonnavmesh(params.chest[#"origin"], 200, bot getpathfindingradius());
             bot bot::set_interact(chest);
-            bot setgoal(var_9b3def7);
+            bot setgoal(chestpos);
             bot.goalradius = 512;
         }
     }
@@ -868,7 +869,7 @@ function private function_393b9c76(planner, constants) {
     }
     path = undefined;
     cost = 0;
-    rank = 2147483647;
+    rank = -2147483647;
     shortestpath = undefined;
     var_c5e003e1 = undefined;
     currentweaponrank = function_1b0a9309(params.bots[0]);
@@ -1096,9 +1097,9 @@ function function_fafff2f(obbs) {
                 foreach (point in obb.points) {
                     sphere(point.origin, 10, (0, 1, 0));
                 }
-            } else {
-                sphere(obb.center, 20, (1, 0, 0));
+                continue;
             }
+            sphere(obb.center, 20, (1, 0, 0));
         }
     #/
 }

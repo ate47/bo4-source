@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace localheal/localheal
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc6cb8b20, Offset: 0x130
 // Size: 0x8c
 function init_shared(localclientnum) {
@@ -50,7 +50,7 @@ function function_eefb5c87(localclientnum, oldval, newval, bnewent, binitialsnap
 }
 
 // Namespace localheal/localheal
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x1a3e3fa9, Offset: 0x3e0
 // Size: 0x7c
 function function_981ad238(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {

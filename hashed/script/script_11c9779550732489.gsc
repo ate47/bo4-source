@@ -49,9 +49,9 @@ function function_e7b6c72b(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval) {
         self.var_8d97f43e show();
-    } else {
-        self.var_8d97f43e hide();
+        return;
     }
+    self.var_8d97f43e hide();
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -65,9 +65,9 @@ function function_2a127860(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval) {
         self.var_c7b21349 show();
-    } else {
-        self.var_c7b21349 hide();
+        return;
     }
+    self.var_c7b21349 hide();
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -82,9 +82,9 @@ function function_f0e07568(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self.var_477a641f show();
         playsound(0, #"hash_52b00c7836adfd1e", var_1eaed254.origin);
-    } else {
-        self.var_477a641f hide();
+        return;
     }
+    self.var_477a641f hide();
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -99,9 +99,9 @@ function function_7353e021(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self.var_a86cb7e0 show();
         playsound(0, #"hash_52b00c7836adfd1e", var_1eaed254.origin);
-    } else {
-        self.var_a86cb7e0 hide();
+        return;
     }
+    self.var_a86cb7e0 hide();
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -116,9 +116,9 @@ function function_3b405536(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self.var_40bb11af show();
         playsound(0, #"hash_52b00c7836adfd1e", var_1eaed254.origin);
-    } else {
-        self.var_40bb11af hide();
+        return;
     }
+    self.var_40bb11af hide();
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -158,8 +158,8 @@ function function_fa6bb35e(localclientnum, oldval, newval, bnewent, binitialsnap
 function totem_fall(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     var_e9af628d = struct::get("mdl_d_w_i_k_t");
     s_destination = struct::get(var_e9af628d.target);
-    var_326289fb = util::spawn_model(localclientnum, #"hash_3964c81546296b78", var_e9af628d.origin, var_e9af628d.angles);
-    var_326289fb moveto(s_destination.origin, 1);
+    mdl_totem = util::spawn_model(localclientnum, #"hash_3964c81546296b78", var_e9af628d.origin, var_e9af628d.angles);
+    mdl_totem moveto(s_destination.origin, 1);
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819

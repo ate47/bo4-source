@@ -30,9 +30,9 @@ function init_shared() {
     clientfield::register("toplayer", "shock_rifle_shocked", 1, 1, "int");
     clientfield::register("toplayer", "shock_rifle_damage", 1, 1, "int");
     clientfield::register("allplayers", "shock_rifle_sound", 1, 1, "int");
-    level.var_1b72f911 = getweapon(#"shock_rifle");
-    if (isdefined(level.var_1b72f911.customsettings)) {
-        level.var_a5ff950 = getscriptbundle(level.var_1b72f911.customsettings);
+    level.shockrifleweapon = getweapon(#"shock_rifle");
+    if (isdefined(level.shockrifleweapon.customsettings)) {
+        level.var_a5ff950 = getscriptbundle(level.shockrifleweapon.customsettings);
     } else {
         level.var_a5ff950 = getscriptbundle("shock_rifle_custom_settings");
     }
@@ -306,10 +306,10 @@ function function_5439aa67(shockcharge) {
     while (isdefined(self)) {
         if (self isplayerswimming()) {
             if (isdefined(shockcharge)) {
-                self dodamage(10000, shockcharge.origin, shockcharge.owner, shockcharge, undefined, "MOD_UNKNOWN", 0, level.var_1b72f911);
-            } else {
-                self dodamage(10000, self.origin, undefined, undefined, undefined, "MOD_UNKNOWN", 0, level.var_1b72f911);
+                self dodamage(10000, shockcharge.origin, shockcharge.owner, shockcharge, undefined, "MOD_UNKNOWN", 0, level.shockrifleweapon);
+                return;
             }
+            self dodamage(10000, self.origin, undefined, undefined, undefined, "MOD_UNKNOWN", 0, level.shockrifleweapon);
             return;
         }
         waitframe(1);
@@ -365,9 +365,9 @@ function function_c80bac1f(shockcharge, var_51415470, var_3ee2edfa) {
     }
     if (isdefined(owner) && util::function_fbce7263(self.team, owner.team)) {
         if (var_51415470) {
-            scoreevents::processscoreevent(#"hash_6f0ec202863eacd", owner, self, level.var_1b72f911);
+            scoreevents::processscoreevent(#"hash_6f0ec202863eacd", owner, self, level.shockrifleweapon);
         } else {
-            scoreevents::processscoreevent(#"tempest_shock_chain", owner, self, level.var_1b72f911);
+            scoreevents::processscoreevent(#"tempest_shock_chain", owner, self, level.shockrifleweapon);
         }
     }
     wait(var_3ee2edfa);
@@ -434,17 +434,17 @@ function function_92eabc2f(ent, var_51415470) {
         }
         var_6fad972 = spawn("script_model", tag);
         var_6fad972 setmodel("tag_origin");
-        beamlaunch(var_3e74fd3b, var_6fad972, "tag_origin", "tag_origin", level.var_1b72f911);
+        beamlaunch(var_3e74fd3b, var_6fad972, "tag_origin", "tag_origin", level.shockrifleweapon);
         level thread function_1c34cd1b(var_3e74fd3b);
         level thread function_1c34cd1b(var_6fad972);
     }
     ent.var_e8bb749a = 1;
     damage = function_e0141557(ent, var_51415470);
-    ent dodamage(damage, self.origin, self.owner, self, undefined, "MOD_UNKNOWN", 0, level.var_1b72f911);
+    ent dodamage(damage, self.origin, self.owner, self, undefined, "MOD_UNKNOWN", 0, level.shockrifleweapon);
     ent.var_beee9523 = 1;
     var_3ee2edfa = ent function_a64504d2();
     params = getstatuseffect(#"shock_rifle_shock");
-    ent status_effect::status_effect_apply(params, level.var_1b72f911, self.owner, 0, int((var_3ee2edfa + level.var_a5ff950.var_772f6a9c) * 1000), undefined, self.origin);
+    ent status_effect::status_effect_apply(params, level.shockrifleweapon, self.owner, 0, int((var_3ee2edfa + level.var_a5ff950.var_772f6a9c) * 1000), undefined, self.origin);
     isplayer = isplayer(ent);
     if (isplayer) {
         ent clientfield::set_to_player("shock_rifle_damage", 1);
@@ -455,9 +455,9 @@ function function_92eabc2f(ent, var_51415470) {
             waitframe(1);
         }
         ent thread function_c80bac1f(self, var_51415470, var_3ee2edfa);
-    } else {
-        ent playsound("wpn_shockrifle_bounce");
+        return;
     }
+    ent playsound("wpn_shockrifle_bounce");
 }
 
 // Namespace shockrifle/shockrifle
@@ -506,7 +506,7 @@ function function_bcc47944(watcher) {
         damage = waitresult.amount;
         type = waitresult.mod;
         idflags = waitresult.flags;
-        if (weapon == level.var_1b72f911) {
+        if (weapon == level.shockrifleweapon) {
             continue;
         }
         damage = weapons::function_74bbb3fa(damage, weapon, self.weapon);

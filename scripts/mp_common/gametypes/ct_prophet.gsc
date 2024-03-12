@@ -93,7 +93,9 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
     }
     if (self.team == #"allies") {
         self thread ct_utils::function_ee4639dd(-10);
-    } else if (isdefined(weapon) && weapon == getweapon(#"shock_rifle")) {
+        return;
+    }
+    if (isdefined(weapon) && weapon == getweapon(#"shock_rifle")) {
         e_player = getplayers()[0];
         e_player thread ct_utils::function_d471f8fa(10);
     }

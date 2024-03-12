@@ -238,11 +238,8 @@ function updatecarryqrdroneplacement(carryqrdrone) {
                 if (self attackbuttonpressed()) {
                     self notify(#"place_carryqrdrone");
                 }
-                goto LOC_00000258;
             }
-        LOC_00000258:
         }
-    LOC_00000258:
         lastcanplacecarryqrdrone = carryqrdrone.canbeplaced;
         waitframe(1);
     }
@@ -306,12 +303,11 @@ function startqrdrone(lifeid, streakname, origin, angles) {
         qrdrone waittill(#"end_remote");
         killstreakrules::killstreakstop("qrdrone", team, killstreak_id);
         return 1;
-    } else {
-        self iprintlnbold(#"mp_too_many_vehicles");
-        self killstreaks::clear_using_remote();
-        killstreakrules::killstreakstop("qrdrone", team, killstreak_id);
-        return 0;
     }
+    self iprintlnbold(#"mp_too_many_vehicles");
+    self killstreaks::clear_using_remote();
+    killstreakrules::killstreakstop("qrdrone", team, killstreak_id);
+    return 0;
 }
 
 // Namespace qrdrone/qrdrone
@@ -639,7 +635,9 @@ function qrdrone_update_damage_fx(health_percent) {
     effect = qrdrone_get_damage_effect(health_percent);
     if (isdefined(effect)) {
         qrdrone_play_single_fx_on_tag(effect, "tag_origin");
-    } else if (isdefined(self.damage_fx_ent)) {
+        return;
+    }
+    if (isdefined(self.damage_fx_ent)) {
         self.damage_fx_ent delete();
     }
 }
@@ -697,9 +695,8 @@ function qrdrone_damagewatcher() {
             self.owner sendkillstreakdamageevent(200);
             self qrdrone_death(attacker, weapon, dir, mod);
             return;
-        } else {
-            qrdrone_update_damage_fx(float(damage_taken) / 225);
         }
+        qrdrone_update_damage_fx(float(damage_taken) / 225);
     }
 }
 
@@ -731,11 +728,8 @@ function qrdrone_death(attacker, weapon, dir, damagetype) {
             attacker stats::function_e24eec31(weapon, #"destroyed_qrdrone", 1);
             attacker challenges::addflyswatterstat(weapon, self);
             attacker stats::function_e24eec31(weapon, #"destroyed_controlled_killstreak", 1);
-            goto LOC_00000166;
         }
-    LOC_00000166:
     }
-LOC_00000166:
     self thread qrdrone_crash_movement(attacker, dir);
     if (weapon.isemp) {
         playfxontag(level.ai_tank_stun_fx, self.emp_fx, "tag_origin");
@@ -842,12 +836,14 @@ function qrdrone_crash_accel() {
             if (randomint(100) > 40) {
                 if (velocity[2] > 150) {
                     self.crash_accel = self.crash_accel * 0.75;
-                } else if (velocity[2] < 40 && count < 60) {
+                    continue;
+                }
+                if (velocity[2] < 40 && count < 60) {
                     if (abs(self.angles[0]) > 30 || abs(self.angles[2]) > 30) {
                         self.crash_accel = randomfloatrange(160, 200);
-                    } else {
-                        self.crash_accel = randomfloatrange(85, 120);
+                        continue;
                     }
+                    self.crash_accel = randomfloatrange(85, 120);
                 }
             }
         }
@@ -872,10 +868,10 @@ function qrdrone_collision() {
             self setvehvelocity(velocity + normal * 70);
             self playsound(#"veh_qrdrone_wall");
             playfx(level._effect[#"quadrotor_nudge"], self.origin);
-        } else {
-            self playsound(#"veh_qrdrone_explo");
-            self notify(#"crash_done");
+            continue;
         }
+        self playsound(#"veh_qrdrone_explo");
+        self notify(#"crash_done");
     }
 }
 
@@ -955,7 +951,7 @@ function qrdrone_staticfade(staticalpha) {
         staticalpha = staticalpha - 0.05;
         if (staticalpha < 0) {
             self.owner set_static_alpha(staticalpha, self);
-            break;
+            return;
         }
         self.owner set_static_alpha(staticalpha, self);
         waitframe(1);
@@ -1217,9 +1213,9 @@ function qrdrone_fireguns(qrdrone) {
             weapon = getweapon(#"qrdrone_turret");
             firetime = weapon.firetime;
             wait(firetime);
-        } else {
-            waitframe(1);
+            continue;
         }
+        waitframe(1);
     }
 }
 
@@ -1317,12 +1313,12 @@ function set_static_alpha(alpha, drone) {
                 self clientfield::set_to_player("static_postfx", 1);
             }
         }
-    } else {
-        self notify(#"stop_signal_failure");
-        drone clientfield::set("qrdrone_out_of_range", 0);
-        self.flashingsignalfailure = 0;
-        self clientfield::set_to_player("static_postfx", 0);
+        return;
     }
+    self notify(#"stop_signal_failure");
+    drone clientfield::set("qrdrone_out_of_range", 0);
+    self.flashingsignalfailure = 0;
+    self clientfield::set_to_player("static_postfx", 0);
 }
 
 // Namespace qrdrone/qrdrone
@@ -1337,11 +1333,13 @@ function flash_signal_failure(drone) {
         drone playsoundtoplayer(#"uin_alert_lockon", self);
         if (i < 5) {
             wait(0.6);
-        } else if (i < 6) {
-            wait(0.5);
-        } else {
-            wait(0.3);
+            continue;
         }
+        if (i < 6) {
+            wait(0.5);
+            continue;
+        }
+        wait(0.3);
     }
 }
 

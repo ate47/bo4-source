@@ -47,17 +47,21 @@ class clower_message : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"visible" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"hash_45bfcb1cd8c9b50a" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"visible" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        if (#"hash_45bfcb1cd8c9b50a" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace clower_message/lower_message

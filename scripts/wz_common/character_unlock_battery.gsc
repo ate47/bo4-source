@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_battery/character_unlock_battery
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbfe0a00d, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_battery/character_unlock_battery
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3d7107d8, Offset: 0x130
 // Size: 0x5c
 function function_2613aeec(enabled) {
@@ -37,7 +37,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_battery/character_unlock_battery
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5fe3311e, Offset: 0x198
 // Size: 0x184
 function on_player_killed() {
@@ -69,7 +69,7 @@ function on_player_killed() {
 }
 
 // Namespace character_unlock_battery/character_unlock_battery
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xd9dbd88f, Offset: 0x328
 // Size: 0xb4
 function private function_b00fd65d() {

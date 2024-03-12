@@ -102,19 +102,19 @@ function function_613448ed(player, bathtub) {
     if (isdefined(level.var_e91bcfae) && level.var_e91bcfae) {
         return;
     }
-    var_47943768 = function_1deb2b38(bathtub);
+    golden_spork = function_1deb2b38(bathtub);
     zombie_arm = getent("zombie_arm", "targetname");
-    if (isdefined(zombie_arm) && isdefined(var_47943768)) {
-        var_47943768.var_cd8fb96 = 1;
+    if (isdefined(zombie_arm) && isdefined(golden_spork)) {
+        golden_spork.var_cd8fb96 = 1;
         var_4805bfaa = (zombie_arm.origin[0], zombie_arm.origin[1], zombie_arm.origin[2] + 24);
-        var_47943768.origin = (zombie_arm.origin[0] + 2, zombie_arm.origin[1] + 1.5, zombie_arm.origin[2] + 15);
-        var_47943768.angles = (0, -50, -90);
-        var_45f173ec = (var_47943768.origin[0], var_47943768.origin[1], var_47943768.origin[2] + 24);
+        golden_spork.origin = (zombie_arm.origin[0] + 2, zombie_arm.origin[1] + 1.5, zombie_arm.origin[2] + 15);
+        golden_spork.angles = (0, -50, -90);
+        var_45f173ec = (golden_spork.origin[0], golden_spork.origin[1], golden_spork.origin[2] + 24);
         zombie_arm show();
         zombie_arm playsound(#"hash_2b9e3e8f3a11bcdb");
         level clientfield::increment("zombie_arm_blood_splash", 1);
         level thread function_ca44f5a5(zombie_arm, var_4805bfaa);
-        level thread function_b413daad(var_47943768, var_45f173ec);
+        level thread function_b413daad(golden_spork, var_45f173ec);
     }
 }
 
@@ -138,8 +138,8 @@ function function_ca44f5a5(zombie_arm, target_pos, var_e77e9de = 0) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xf62ad7bc, Offset: 0x9a0
 // Size: 0x34
-function function_b413daad(var_47943768, target_pos) {
-    var_47943768 moveto(target_pos, 2);
+function function_b413daad(golden_spork, target_pos) {
+    golden_spork moveto(target_pos, 2);
 }
 
 // Namespace namespace_87f097c4/namespace_9d765bae
@@ -192,7 +192,7 @@ function function_7eabf705() {
                 bathtub = struct::get(#"zombie_bathub", "<unknown string>");
                 function_613448ed(players[0], bathtub);
                 level notify(#"hash_671b150516dd9870");
-                break;
+                return;
             }
             waitframe(1);
         }

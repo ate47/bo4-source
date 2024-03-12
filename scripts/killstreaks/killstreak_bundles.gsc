@@ -36,11 +36,11 @@ function register_bundle(type, bundle) {
 function get_bundle(killstreak) {
     if (killstreak.archetype === "raps") {
         return level.killstreakbundle[#"raps_drone"];
-    } else if (killstreak.killstreaktype === "drone_squadron" && sessionmodeiscampaigngame()) {
-        return level.killstreakbundle["drone_squadron" + "_cp"];
-    } else {
-        return level.killstreakbundle[killstreak.killstreaktype];
     }
+    if (killstreak.killstreaktype === "drone_squadron" && sessionmodeiscampaigngame()) {
+        return level.killstreakbundle["drone_squadron" + "_cp"];
+    }
+    return level.killstreakbundle[killstreak.killstreaktype];
 }
 
 // Namespace killstreak_bundles/killstreak_bundles
@@ -310,17 +310,12 @@ function get_emp_grenade_damage(killstreaktype, maxhealth) {
         bundle = level.killstreakbundle[killstreaktype];
         empgrenadestokill = isdefined(bundle.ksempgrenadestokill) ? bundle.ksempgrenadestokill : 0;
         if (empgrenadestokill == 0) {
-            goto LOC_000000b2;
-        }
-        if (empgrenadestokill > 0) {
+        } else if (empgrenadestokill > 0) {
             emp_weapon_damage = maxhealth / empgrenadestokill + 1;
         } else {
             emp_weapon_damage = 0;
-        LOC_000000b2:
         }
-    LOC_000000b2:
     }
-LOC_000000b2:
     return emp_weapon_damage;
 }
 
@@ -331,15 +326,11 @@ LOC_000000b2:
 function function_daad16b8(maxhealth, weapon_damage, var_8cef04) {
     var_8cef04 = isdefined(var_8cef04) ? var_8cef04 : 0;
     if (var_8cef04 == 0) {
-        goto LOC_00000068;
-    }
-    if (var_8cef04 > 0) {
+    } else if (var_8cef04 > 0) {
         weapon_damage = maxhealth / var_8cef04 + 1;
     } else {
         weapon_damage = 0;
-    LOC_00000068:
     }
-LOC_00000068:
     return weapon_damage;
 }
 
@@ -396,20 +387,15 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
         if (isdefined(weapon)) {
             shotstokill = get_shots_to_kill(weapon, type, bundle);
             if (shotstokill == 0) {
-                goto LOC_00000108;
-            }
-            if (shotstokill > 0) {
+            } else if (shotstokill > 0) {
                 if (isdefined(chargeshotlevel) && chargeshotlevel > 0) {
                     shotstokill = shotstokill / chargeshotlevel;
                 }
                 weapon_damage = maxhealth / shotstokill + 1;
             } else {
                 weapon_damage = 0;
-            LOC_00000108:
             }
-        LOC_00000108:
         }
-    LOC_00000108:
         if (!isdefined(weapon_damage)) {
             if (type == "MOD_RIFLE_BULLET" || type == "MOD_PISTOL_BULLET" || type == "MOD_HEAD_SHOT") {
                 hasarmorpiercing = isdefined(attacker) && isplayer(attacker) && attacker hasperk(#"specialty_armorpiercing");
@@ -422,27 +408,18 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
                 if (weapon.weapclass == "spread") {
                     ksshotgunmultiplier = isdefined(bundle.ksshotgunmultiplier) ? bundle.ksshotgunmultiplier : 1;
                     if (ksshotgunmultiplier == 0) {
-                        goto LOC_00000284;
-                    }
-                    if (ksshotgunmultiplier > 0) {
+                    } else if (ksshotgunmultiplier > 0) {
                         weapon_damage = (isdefined(weapon_damage) ? weapon_damage : damage) * ksshotgunmultiplier;
-                    LOC_00000284:
                     }
-                LOC_00000284:
                 }
-            LOC_00000284:
-            } else if (type == "MOD_IMPACT" && isdefined(level.var_1b72f911) && function_6bacfedc(weapon, level.var_1b72f911)) {
+            } else if (type == "MOD_IMPACT" && isdefined(level.shockrifleweapon) && function_6bacfedc(weapon, level.shockrifleweapon)) {
                 var_108f064f = isdefined(bundle.var_4be7d629) ? bundle.var_4be7d629 : 0;
                 if (var_108f064f == 0) {
-                    goto LOC_0000032e;
-                }
-                if (var_108f064f > 0) {
+                } else if (var_108f064f > 0) {
                     weapon_damage = maxhealth / var_108f064f + 1;
                 } else {
                     weapon_damage = 0;
-                LOC_0000032e:
                 }
-            LOC_0000032e:
             } else if ((type == "MOD_PROJECTILE" || type == "MOD_EXPLOSIVE" || type == "MOD_PROJECTILE_SPLASH" && bundle.var_38de4989 === 1) && (!isdefined(weapon.isempkillstreak) || !weapon.isempkillstreak) && (!isdefined(level.weaponpistolenergy) || weapon.statname != level.weaponpistolenergy.statname || level.weaponpistolenergy.statname == level.weaponnone.statname) && (!isdefined(level.weaponspecialcrossbow) || weapon.statname != level.weaponspecialcrossbow.statname || level.weaponspecialcrossbow.statname == level.weaponnone.statname) && weapon.rootweapon.name != #"trophy_system") {
                 if (function_6bacfedc(weapon, level.weaponshotgunenergy)) {
                     weapon_damage = function_daad16b8(maxhealth, weapon_damage, bundle.ksshotgunenergytokill);
@@ -452,20 +429,15 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
                         rocketstokill = bundle.var_b744074b;
                     }
                     if (rocketstokill == 0) {
-                        goto LOC_000005b2;
-                    }
-                    if (rocketstokill > 0) {
+                    } else if (rocketstokill > 0) {
                         if (weapon.rootweapon.name == "launcher_multi") {
                             rocketstokill = rocketstokill * 2;
                         }
                         weapon_damage = maxhealth / rocketstokill + 1;
                     } else {
                         weapon_damage = 0;
-                    LOC_000005b2:
                     }
-                LOC_000005b2:
                 }
-            LOC_000005b2:
             } else if ((type == "MOD_GRENADE" || type == "MOD_GRENADE_SPLASH") && (!isdefined(weapon.isempkillstreak) || !weapon.isempkillstreak)) {
                 weapon_damage = function_14bd8ba5(damage, bundle.ksgrenadedamagemultiplier);
             } else if (type == "MOD_MELEE_WEAPON_BUTT" || type == "MOD_MELEE") {

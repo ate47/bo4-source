@@ -39,7 +39,7 @@ function function_61f478ff() {
                 continue;
             }
             spawn.origin = (3140.85, 913.91, 128.125);
-            break;
+            return;
         }
     }
 }

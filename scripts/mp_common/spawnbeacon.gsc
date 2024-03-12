@@ -37,11 +37,11 @@ function __init__() {
     level.var_4b1d905b = &function_4ddddf03;
     level.var_ae2fe442 = &function_b74804ba;
     level.var_a1ca927c = &function_1f5ed165;
-    globallogic_score::register_kill_callback(level.spawnbeaconsettings.var_c1a364b9, &function_ece8f018);
-    globallogic_score::function_86f90713(level.spawnbeaconsettings.var_c1a364b9, &function_ece8f018);
-    globallogic_score::function_82fb1afa(level.spawnbeaconsettings.var_c1a364b9, &function_5bfd1343);
-    globallogic_score::function_2b2c09db(level.spawnbeaconsettings.var_c1a364b9, &function_3e8ff788);
-    globallogic_score::function_b150f9ac(level.spawnbeaconsettings.var_c1a364b9, &function_cdeb9089);
+    globallogic_score::register_kill_callback(level.spawnbeaconsettings.beaconweapon, &function_ece8f018);
+    globallogic_score::function_86f90713(level.spawnbeaconsettings.beaconweapon, &function_ece8f018);
+    globallogic_score::function_82fb1afa(level.spawnbeaconsettings.beaconweapon, &function_5bfd1343);
+    globallogic_score::function_2b2c09db(level.spawnbeaconsettings.beaconweapon, &function_3e8ff788);
+    globallogic_score::function_b150f9ac(level.spawnbeaconsettings.beaconweapon, &function_cdeb9089);
     deployable::register_deployable(getweapon(#"hash_7ab3f9a730359659"), &function_9aafb7bb, undefined);
     weaponobjects::function_e6400478(#"hash_7ab3f9a730359659", &function_d80ff6a7, 1);
     function_50e42513();
@@ -190,9 +190,9 @@ function function_abb55703(spawnbeacon, var_d8f817bc) {
     }
     if (isdefined(spawnbeacon.owner) && isdefined(self) && !var_d8f817bc) {
         if (spawnbeacon.owner == player) {
-            player thread scoreevents::function_c046c773(0.5, "spawn_beacon_insertion", spawnbeacon.owner, player, level.spawnbeaconsettings.var_c1a364b9);
+            player thread scoreevents::function_c046c773(0.5, "spawn_beacon_insertion", spawnbeacon.owner, player, level.spawnbeaconsettings.beaconweapon);
         } else {
-            scoreevents::processscoreevent(#"spawn_beacon_insertion", spawnbeacon.owner, player, level.spawnbeaconsettings.var_c1a364b9);
+            scoreevents::processscoreevent(#"spawn_beacon_insertion", spawnbeacon.owner, player, level.spawnbeaconsettings.beaconweapon);
         }
         player.var_1a6703cc = gettime();
         player.var_7c18e526 = spawnbeacon.owner;
@@ -275,12 +275,12 @@ function function_b74804ba(origin, angles, player, var_c7a191d5, var_813ea9e) {
         for (i = 0; i < var_4d511d74.size; i++) {
             if (!isdefined(var_4d511d74[i])) {
                 level.spawnbeaconsettings.userspawnbeacons[var_2e194e82] = array::remove_index(var_4d511d74, i, 0);
-            } else {
-                distsqr = distancesquared(origin, var_4d511d74[i].origin);
-                if (distsqr <= testdistance) {
-                    player sethintstring(level.spawnbeaconsettings.settingsbundle.var_c2aa4ca6);
-                    return 0;
-                }
+                continue;
+            }
+            distsqr = distancesquared(origin, var_4d511d74[i].origin);
+            if (distsqr <= testdistance) {
+                player sethintstring(level.spawnbeaconsettings.settingsbundle.var_c2aa4ca6);
+                return 0;
             }
         }
     }

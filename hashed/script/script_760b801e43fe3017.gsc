@@ -100,9 +100,9 @@ function function_a2c43fea(var_d42c8aaa = 2000) {
             }
             if (n_score_total >= var_d42c8aaa) {
                 level.var_894a83d8 = 1;
-            } else {
-                level.var_894a83d8 = undefined;
+                continue;
             }
+            level.var_894a83d8 = undefined;
         }
         waitframe(1);
     }

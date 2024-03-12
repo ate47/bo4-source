@@ -57,7 +57,9 @@ function collision_thread(localclientnum) {
             if (player function_21c0fa55() && self function_973c841f(player)) {
                 self [[ self.driving_fx_collision_override ]](localclientnum, player, hip, hitn, hit_intensity);
             }
-        } else if (isdefined(player) && isdefined(hit_intensity)) {
+            continue;
+        }
+        if (isdefined(player) && isdefined(hit_intensity)) {
             if (hit_intensity > self.heavycollisionspeed) {
                 volume = get_impact_vol_from_speed();
                 var_be2370d6 = self.var_be2370d6;
@@ -70,7 +72,9 @@ function collision_thread(localclientnum) {
                 if (isdefined(self.heavycollisionrumble) && player function_21c0fa55() && self function_973c841f(player)) {
                     player playrumbleonentity(localclientnum, self.heavycollisionrumble);
                 }
-            } else if (hit_intensity > self.lightcollisionspeed) {
+                continue;
+            }
+            if (hit_intensity > self.lightcollisionspeed) {
                 volume = get_impact_vol_from_speed();
                 var_b3195e3c = self.var_b3195e3c;
                 if (isdefined(var_b3195e3c)) {
@@ -100,18 +104,18 @@ function jump_landing_thread(localclientnum) {
         if (isdefined(player)) {
             if (isdefined(self.driving_fx_jump_landing_override)) {
                 self [[ self.driving_fx_jump_landing_override ]](localclientnum, player);
+                continue;
+            }
+            volume = get_impact_vol_from_speed();
+            var_be2370d6 = self.var_be2370d6;
+            if (isdefined(var_be2370d6)) {
+                alias = var_be2370d6;
             } else {
-                volume = get_impact_vol_from_speed();
-                var_be2370d6 = self.var_be2370d6;
-                if (isdefined(var_be2370d6)) {
-                    alias = var_be2370d6;
-                } else {
-                    alias = "veh_default_suspension_lg_hd";
-                }
-                self playsound(localclientnum, alias, undefined, volume);
-                if (isdefined(self.jumplandingrumble) && player function_21c0fa55() && self function_973c841f(player)) {
-                    player playrumbleonentity(localclientnum, self.jumplandingrumble);
-                }
+                alias = "veh_default_suspension_lg_hd";
+            }
+            self playsound(localclientnum, alias, undefined, volume);
+            if (isdefined(self.jumplandingrumble) && player function_21c0fa55() && self function_973c841f(player)) {
+                player playrumbleonentity(localclientnum, self.jumplandingrumble);
             }
         }
     }
@@ -197,7 +201,6 @@ function function_73e08cca(surface) {
     case #"water":
     case #"watershallow":
         return #"hash_7c5d3ac35353f95c";
-        break;
     }
     return undefined;
 }

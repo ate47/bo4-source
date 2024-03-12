@@ -240,9 +240,9 @@ function private function_2f5772bf(cmd) {
                 if (isvehicle(ai)) {
                     ai.origin = trace[#"position"];
                     ai function_a57c34b7(trace[#"position"]);
-                } else {
-                    ai forceteleport(trace[#"position"], player.angles + vectorscale((0, 1, 0), 180));
+                    return;
                 }
+                ai forceteleport(trace[#"position"], player.angles + vectorscale((0, 1, 0), 180));
             }
         }
     #/
@@ -559,9 +559,9 @@ function zombie_spawner_validation() {
             println("<unknown string>" + level.validation_errors_count);
             iprintlnbold("<unknown string>" + level.validation_errors_count);
             level.validation_errors_count = undefined;
-        } else {
-            level.toggle_spawner_validation = !level.toggle_spawner_validation;
+            return;
         }
+        level.toggle_spawner_validation = !level.toggle_spawner_validation;
     #/
 }
 
@@ -614,18 +614,17 @@ function validate_to_wait_point(zone, new_spawn_point_origin, spawn_point) {
                         ispath = self findpath(new_spawn_point_origin, new_wait_point);
                         if (ispath) {
                             return 1;
-                        } else {
-                            level.validation_errors_count++;
-                            thread drawvalidation(new_spawn_point_origin, undefined, new_wait_point, undefined, undefined, self.archetype);
-                            if (isdefined(self.archetype)) {
-                                println("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
-                                iprintlnbold("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
-                            } else {
-                                println("<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
-                                iprintlnbold("<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
-                            }
-                            return 0;
                         }
+                        level.validation_errors_count++;
+                        thread drawvalidation(new_spawn_point_origin, undefined, new_wait_point, undefined, undefined, self.archetype);
+                        if (isdefined(self.archetype)) {
+                            println("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
+                            iprintlnbold("<unknown string>" + function_9e72a96(self.archetype) + "<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
+                        } else {
+                            println("<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
+                            iprintlnbold("<unknown string>" + new_spawn_point_origin + "<unknown string>" + spawn_point.targetname);
+                        }
+                        return 0;
                     }
                 }
             }
@@ -661,7 +660,7 @@ function drawvalidation(origin, zone_name, nav_mesh_wait_point, boards_point, zo
         while (1) {
             if (isdefined(level.toggle_spawner_validation) && level.toggle_spawner_validation) {
                 if (!isdefined(origin)) {
-                    break;
+                    return;
                 }
                 if (isdefined(zone_name)) {
                     circle(origin, 32, (1, 0, 0));
@@ -718,16 +717,18 @@ function zone_adjacencies_validation() {
                 foreach (key in keys) {
                     if (key === str_zone) {
                         draw_zone_adjacencies_validation(level.zones[key], 2, key);
-                    } else if (isdefined(level.zones[str_zone].adjacent_zones[key])) {
+                        continue;
+                    }
+                    if (isdefined(level.zones[str_zone].adjacent_zones[key])) {
                         if (level.zones[str_zone].adjacent_zones[key].is_connected) {
                             offset = offset + 10;
                             draw_zone_adjacencies_validation(level.zones[key], 1, key, level.zones[str_zone], offset);
                         } else {
                             draw_zone_adjacencies_validation(level.zones[key], 0, key);
                         }
-                    } else {
-                        draw_zone_adjacencies_validation(level.zones[key], 0, key);
+                        continue;
                     }
+                    draw_zone_adjacencies_validation(level.zones[key], 0, key);
                 }
                 foreach (zone in level.zones) {
                     function_f4669d7b(level.zones, zone);
@@ -762,7 +763,9 @@ function draw_zone_adjacencies_validation(zone, status, name, current_zone, offs
         if (status == 2) {
             circle(print_origin, 30, (0, 1, 0));
             print3d(print_origin, function_9e72a96(name), (0, 1, 0), 1, 0.5);
-        } else if (status == 1) {
+            return;
+        }
+        if (status == 1) {
             circle(print_origin, 30, (0, 0, 1));
             print3d(print_origin, function_9e72a96(name), (0, 0, 1), 1, 0.5);
             if (isdefined(current_zone.nodes[0])) {
@@ -772,10 +775,10 @@ function draw_zone_adjacencies_validation(zone, status, name, current_zone, offs
                 print_origin = current_zone.volumes[0].origin;
             }
             print3d(print_origin + (0, 20, offset * -1), function_9e72a96(name), (0, 0, 1), 1, 0.5);
-        } else {
-            circle(print_origin, 30, (1, 0, 0));
-            print3d(print_origin, function_9e72a96(name), (1, 0, 0), 1, 0.5);
+            return;
         }
+        circle(print_origin, 30, (1, 0, 0));
+        print3d(print_origin, function_9e72a96(name), (1, 0, 0), 1, 0.5);
     #/
 }
 
@@ -804,9 +807,9 @@ function function_f4669d7b(zones, zone) {
             }
             if (adjacent.is_connected) {
                 line(origin, var_16c82636, (0, 1, 0), 0, 0);
-            } else {
-                line(origin, var_16c82636, (1, 0, 0), 0, 0);
+                continue;
             }
+            line(origin, var_16c82636, (1, 0, 0), 0, 0);
         }
     #/
 }
@@ -867,10 +870,12 @@ function function_bcc8843e(weapon_name, up, root) {
 // Size: 0x264
 function devgui_add_weapon_entry(weapon, root, n_order) {
     /#
-        weapon_name = function_a16a090d(weapon);
+        weapon_name = getweaponname(weapon);
         if (isdefined(root) && root.size) {
             adddebugcommand("<unknown string>" + root + "<unknown string>" + n_order + "<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
-        } else if (getdvarint(#"zm_debug_attachments", 0)) {
+            return;
+        }
+        if (getdvarint(#"zm_debug_attachments", 0)) {
             var_876795bf = weapon.supportedattachments;
             weapon_root = "<unknown string>" + weapon_name + "<unknown string>";
             adddebugcommand(weapon_root + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
@@ -881,9 +886,9 @@ function devgui_add_weapon_entry(weapon, root, n_order) {
                     adddebugcommand(weapon_root + var_29c3a74d + "<unknown string>" + var_29c3a74d + "<unknown string>");
                 }
             }
-        } else {
-            adddebugcommand("<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
+            return;
         }
+        adddebugcommand("<unknown string>" + weapon_name + "<unknown string>" + weapon_name + "<unknown string>");
     #/
 }
 
@@ -895,18 +900,22 @@ function devgui_add_weapon(weapon, upgrade, in_box, cost, weaponvo, weaponvoresp
     /#
         level endon(#"game_ended");
         if (in_box) {
-            level thread function_bcc8843e(function_a16a090d(weapon), "<unknown string>", "<unknown string>");
+            level thread function_bcc8843e(getweaponname(weapon), "<unknown string>", "<unknown string>");
         }
         util::waittill_can_add_debug_command();
         if (zm_loadout::is_offhand_weapon(weapon) && !zm_loadout::is_melee_weapon(weapon)) {
             devgui_add_weapon_entry(weapon, "<unknown string>", 2);
-        } else if (zm_loadout::is_melee_weapon(weapon)) {
-            devgui_add_weapon_entry(weapon, "<unknown string>", 3);
-        } else if (zm_weapons::is_wonder_weapon(weapon)) {
-            devgui_add_weapon_entry(weapon, "<unknown string>", 5);
-        } else {
-            devgui_add_weapon_entry(weapon);
+            return;
         }
+        if (zm_loadout::is_melee_weapon(weapon)) {
+            devgui_add_weapon_entry(weapon, "<unknown string>", 3);
+            return;
+        }
+        if (zm_weapons::is_wonder_weapon(weapon)) {
+            devgui_add_weapon_entry(weapon, "<unknown string>", 5);
+            return;
+        }
+        devgui_add_weapon_entry(weapon);
     #/
 }
 
@@ -1008,9 +1017,9 @@ function zombie_devgui_weapon_give(weapon_name) {
         }
         if (zm_loadout::is_melee_weapon(weapon) && isdefined(zm_melee_weapon::find_melee_weapon(weapon))) {
             self zm_melee_weapon::award_melee_weapon(weapon_name);
-        } else {
-            self function_2d4d7fd9(weapon);
+            return;
         }
+        self function_2d4d7fd9(weapon);
     #/
 }
 
@@ -1270,14 +1279,13 @@ function watch_debug_input(callback) {
         if (isdefined(callback)) {
             level.devgui_dpad_watch = 1;
             for (;;) {
-                for (;;) {
-                    if (self actionslottwobuttonpressed()) {
-                        self thread [[ callback ]]();
-                        while (self actionslottwobuttonpressed()) {
-                            waitframe(1);
-                        }
+                if (self actionslottwobuttonpressed()) {
+                    self thread [[ callback ]]();
+                    while (self actionslottwobuttonpressed()) {
+                        waitframe(1);
                     }
                 }
+                waitframe(1);
             }
         }
     #/
@@ -1985,9 +1993,7 @@ function zombie_devgui_think() {
                     } else {
                         [[ level.custom_devgui ]](cmd);
                     }
-                    goto LOC_00001fb6;
                 }
-            LOC_00001fb6:
                 break;
             }
             setdvar(#"zombie_devgui", "<unknown string>");
@@ -2046,9 +2052,9 @@ function devgui_toggle_show_spawn_locations() {
     /#
         if (!isdefined(level.toggle_show_spawn_locations)) {
             level.toggle_show_spawn_locations = 1;
-        } else {
-            level.toggle_show_spawn_locations = !level.toggle_show_spawn_locations;
+            return;
         }
+        level.toggle_show_spawn_locations = !level.toggle_show_spawn_locations;
     #/
 }
 
@@ -2060,9 +2066,9 @@ function devgui_toggle_show_exterior_goals() {
     /#
         if (!isdefined(level.toggle_show_exterior_goals)) {
             level.toggle_show_exterior_goals = 1;
-        } else {
-            level.toggle_show_exterior_goals = !level.toggle_show_exterior_goals;
+            return;
         }
+        level.toggle_show_exterior_goals = !level.toggle_show_exterior_goals;
     #/
 }
 
@@ -2080,13 +2086,13 @@ function function_567ee21f() {
             foreach (ai in getaiteamarray(#"axis")) {
                 ai pushplayer(1);
             }
-        } else {
-            foreach (player in level.players) {
-                player setclientplayerpushamount(0);
-            }
-            foreach (ai in getaiteamarray(#"axis")) {
-                ai pushplayer(0);
-            }
+            return;
+        }
+        foreach (player in level.players) {
+            player setclientplayerpushamount(0);
+        }
+        foreach (ai in getaiteamarray(#"axis")) {
+            ai pushplayer(0);
         }
     #/
 }
@@ -2280,9 +2286,9 @@ function zombie_devgui_allow_fog() {
             level.fog_disabled_in_noclip = 0;
             setdvar(#"scr_fog_disable", 0);
             setdvar(#"r_fog_disable", 0);
-        } else {
-            thread diable_fog_in_noclip();
+            return;
         }
+        thread diable_fog_in_noclip();
     #/
 }
 
@@ -2314,9 +2320,9 @@ function zombie_devgui_take_money() {
         #/
         if (self.score > 100) {
             self zm_score::player_reduce_points("<unknown string>");
-        } else {
-            self zm_score::player_reduce_points("<unknown string>");
+            return;
         }
+        self zm_score::player_reduce_points("<unknown string>");
     #/
 }
 
@@ -2343,9 +2349,9 @@ function function_dc7312be() {
                 if (isdefined(max) && isdefined(ammo)) {
                     if (ammo > max / 10) {
                         self setweaponammostock(weapon, int(ammo / 2));
-                    } else {
-                        self setweaponammostock(weapon, 0);
+                        return;
                     }
+                    self setweaponammostock(weapon, 0);
                 }
             }
         }
@@ -2396,10 +2402,10 @@ function zombie_devgui_turn_player(index) {
         if (player hasperk(#"specialty_playeriszombie")) {
             println("<unknown string>");
             player zm_turned::turn_to_human();
-        } else {
-            println("<unknown string>");
-            player zm_turned::turn_to_zombie();
+            return;
         }
+        println("<unknown string>");
+        player zm_turned::turn_to_zombie();
     #/
 }
 
@@ -2855,12 +2861,14 @@ function zombie_devgui_invulnerable(playerindex, onoff) {
             for (i = 0; i < players.size; i++) {
                 zombie_devgui_invulnerable(i, onoff);
             }
-        } else if (players.size > playerindex) {
+            return;
+        }
+        if (players.size > playerindex) {
             if (onoff) {
                 players[playerindex] val::set(#"zombie_devgui", "<unknown string>", 0);
-            } else {
-                players[playerindex] val::reset(#"zombie_devgui", "<unknown string>");
+                return;
             }
+            players[playerindex] val::reset(#"zombie_devgui", "<unknown string>");
         }
     #/
 }
@@ -3202,9 +3210,9 @@ function zombie_devgui_give_powerup(powerup_name, now, origin) {
         }
         if (isdefined(origin)) {
             level thread zm_powerups::specific_powerup_drop(powerup_name, origin, undefined, undefined, undefined, undefined, undefined, undefined, undefined, 1);
-        } else {
-            level thread zm_powerups::specific_powerup_drop(powerup_name, trace[#"position"], undefined, undefined, undefined, undefined, undefined, undefined, undefined, 1);
+            return;
         }
+        level thread zm_powerups::specific_powerup_drop(powerup_name, trace[#"position"], undefined, undefined, undefined, undefined, undefined, undefined, undefined, 1);
     #/
 }
 
@@ -3312,9 +3320,7 @@ function zombie_devgui_dog_round(num_dogs) {
         }
         if (!level flag::get("<unknown string>")) {
             setdvar(#"force_dogs", num_dogs);
-            goto LOC_000000c6;
         }
-    LOC_000000c6:
         zombie_devgui_goto_round(level.round_number + 1);
     #/
 }
@@ -3462,7 +3468,7 @@ function function_335cdac(weapon) {
 // Params 2, eflags: 0x0
 // Checksum 0x12633b62, Offset: 0xc248
 // Size: 0x88
-function registerhendricks_under_silo_third_jump_fight_(weapon, var_56c1b8d) {
+function function_72e79f3b(weapon, var_56c1b8d) {
     /#
         xp = 0;
         gunlevels = function_335cdac(weapon);
@@ -3505,7 +3511,7 @@ function function_c8949116() {
                 weapon = player getcurrentweapon();
                 itemindex = getbaseweaponitemindex(weapon);
                 var_56c1b8d = player getcurrentgunrank(itemindex);
-                xp = registerhendricks_under_silo_third_jump_fight_(weapon, var_56c1b8d);
+                xp = function_72e79f3b(weapon, var_56c1b8d);
                 player function_55c6dedd(weapon.name, xp);
             }
         }
@@ -3526,7 +3532,7 @@ function function_9d21f44b() {
                 weapon = player getcurrentweapon();
                 itemindex = getbaseweaponitemindex(weapon);
                 var_56c1b8d = player getcurrentgunrank(itemindex);
-                xp = registerhendricks_under_silo_third_jump_fight_(weapon, var_56c1b8d);
+                xp = function_72e79f3b(weapon, var_56c1b8d);
                 player function_55c6dedd(weapon.name, xp - 50);
             }
         }
@@ -3805,9 +3811,8 @@ function get_upgrade(weapon) {
     /#
         if (isdefined(level.zombie_weapons[weapon]) && isdefined(level.zombie_weapons[weapon].upgrade_name)) {
             return zm_weapons::get_upgrade_weapon(weapon, 0);
-        } else {
-            return zm_weapons::get_upgrade_weapon(weapon, 1);
         }
+        return zm_weapons::get_upgrade_weapon(weapon, 1);
     #/
 }
 
@@ -3846,9 +3851,9 @@ function zombie_devgui_disable_kill_thread_toggle() {
     /#
         if (!(isdefined(level.disable_kill_thread) && level.disable_kill_thread)) {
             level.disable_kill_thread = 1;
-        } else {
-            level.disable_kill_thread = 0;
+            return;
         }
+        level.disable_kill_thread = 0;
     #/
 }
 
@@ -3860,9 +3865,9 @@ function zombie_devgui_check_kill_thread_every_frame_toggle() {
     /#
         if (!(isdefined(level.check_kill_thread_every_frame) && level.check_kill_thread_every_frame)) {
             level.check_kill_thread_every_frame = 1;
-        } else {
-            level.check_kill_thread_every_frame = 0;
+            return;
         }
+        level.check_kill_thread_every_frame = 0;
     #/
 }
 
@@ -3874,9 +3879,9 @@ function zombie_devgui_kill_thread_test_mode_toggle() {
     /#
         if (!(isdefined(level.kill_thread_test_mode) && level.kill_thread_test_mode)) {
             level.kill_thread_test_mode = 1;
-        } else {
-            level.kill_thread_test_mode = 0;
+            return;
         }
+        level.kill_thread_test_mode = 0;
     #/
 }
 
@@ -4015,9 +4020,9 @@ function zombie_devgui_draw_traversals() {
     /#
         if (!isdefined(level.toggle_draw_traversals)) {
             level.toggle_draw_traversals = 1;
-        } else {
-            level.toggle_draw_traversals = !level.toggle_draw_traversals;
+            return;
         }
+        level.toggle_draw_traversals = !level.toggle_draw_traversals;
     #/
 }
 
@@ -4029,9 +4034,9 @@ function zombie_devgui_keyline_always() {
     /#
         if (!isdefined(level.toggle_keyline_always)) {
             level.toggle_keyline_always = 1;
-        } else {
-            level.toggle_keyline_always = !level.toggle_keyline_always;
+            return;
         }
+        level.toggle_keyline_always = !level.toggle_keyline_always;
     #/
 }
 
@@ -4044,10 +4049,10 @@ function robotsupportsovercover_manager_() {
         if (level flag::get("<unknown string>")) {
             level flag::clear("<unknown string>");
             iprintln("<unknown string>");
-        } else {
-            level flag::set("<unknown string>");
-            iprintln("<unknown string>");
+            return;
         }
+        level flag::set("<unknown string>");
+        iprintln("<unknown string>");
     #/
 }
 
@@ -4059,9 +4064,9 @@ function function_92523b12() {
     /#
         if (!isdefined(level.var_5171ee4a)) {
             level.var_5171ee4a = 1;
-        } else {
-            level.var_5171ee4a = !level.var_5171ee4a;
+            return;
         }
+        level.var_5171ee4a = !level.var_5171ee4a;
     #/
 }
 
@@ -4095,13 +4100,15 @@ function wait_for_zombie(crawler) {
                                 } else {
                                     node.bad_traverse = 1;
                                 }
-                            } else if (anim_results[#"animation"] == "<unknown string>") {
+                                continue;
+                            }
+                            if (anim_results[#"animation"] == "<unknown string>") {
                                 teleport = 1;
                             }
                         }
                     }
                 }
-                break;
+                return;
             }
             wait(0.25);
         }
@@ -4199,9 +4206,9 @@ function function_e395a714() {
         foreach (player in level.players) {
             if (level.var_9a11ee76) {
                 player notify(#"hash_d592b5d81b7b3a7");
-            } else {
-                player thread function_fb482cad();
+                continue;
             }
+            player thread function_fb482cad();
         }
         level.var_9a11ee76 = !level.var_9a11ee76;
     #/
@@ -4328,11 +4335,10 @@ function testscriptruntimeerror() {
     /#
         wait(5);
         for (;;) {
-            for (;;) {
-                if (getdvarstring(#"scr_testscriptruntimeerror") != "<unknown string>") {
-                    break;
-                }
+            if (getdvarstring(#"scr_testscriptruntimeerror") != "<unknown string>") {
+                break;
             }
+            wait(1);
         }
         myerror = getdvarstring(#"scr_testscriptruntimeerror");
         setdvar(#"scr_testscriptruntimeerror", "<unknown string>");
@@ -4442,9 +4448,9 @@ function function_1762ff96() {
         level.var_afb69372 = !(isdefined(self.var_afb69372) && self.var_afb69372);
         if (isdefined(level.var_afb69372) && level.var_afb69372) {
             level thread function_b7e34647();
-        } else {
-            level notify(#"hash_2876f101dd7375df");
+            return;
         }
+        level notify(#"hash_2876f101dd7375df");
     #/
 }
 
@@ -4466,11 +4472,11 @@ function function_b7e34647() {
             foreach (zombie in zombies) {
                 if (isdefined(zombie.need_closest_player) && zombie.need_closest_player) {
                     record3dtext("<unknown string>", zombie.origin + vectorscale((0, 0, 1), 72), (1, 0, 0));
-                } else {
-                    record3dtext("<unknown string>", zombie.origin + vectorscale((0, 0, 1), 72), (0, 1, 0));
-                    if (isdefined(zombie.var_26f25576)) {
-                        record3dtext(gettime() - zombie.var_26f25576, zombie.origin + vectorscale((0, 0, 1), 54), (1, 1, 1));
-                    }
+                    continue;
+                }
+                record3dtext("<unknown string>", zombie.origin + vectorscale((0, 0, 1), 72), (0, 1, 0));
+                if (isdefined(zombie.var_26f25576)) {
+                    record3dtext(gettime() - zombie.var_26f25576, zombie.origin + vectorscale((0, 0, 1), 54), (1, 1, 1));
                 }
             }
             waitframe(1);
@@ -4673,19 +4679,29 @@ function function_15ee6847() {
                 teststring = teststring + "<unknown string>" + player getentitynumber() + "<unknown string>";
                 if (player.sessionstate == "<unknown string>") {
                     teststring = teststring + "<unknown string>";
-                } else if (isdefined(self.hostmigrationcontrolsfrozen) && self.hostmigrationcontrolsfrozen) {
-                    teststring = teststring + "<unknown string>";
-                } else if (player zm_player::in_life_brush()) {
-                    teststring = teststring + "<unknown string>";
-                } else if (player zm_player::in_kill_brush()) {
-                    teststring = teststring + "<unknown string>";
-                } else if (!player zm_player::in_enabled_playable_area()) {
-                    teststring = teststring + "<unknown string>";
-                } else if (isdefined(level.player_out_of_playable_area_override) && !(isdefined(player [[ level.player_out_of_playable_area_override ]]()) && player [[ level.player_out_of_playable_area_override ]]())) {
-                    teststring = teststring + "<unknown string>";
-                } else {
-                    teststring = teststring + "<unknown string>";
+                    continue;
                 }
+                if (isdefined(self.hostmigrationcontrolsfrozen) && self.hostmigrationcontrolsfrozen) {
+                    teststring = teststring + "<unknown string>";
+                    continue;
+                }
+                if (player zm_player::in_life_brush()) {
+                    teststring = teststring + "<unknown string>";
+                    continue;
+                }
+                if (player zm_player::in_kill_brush()) {
+                    teststring = teststring + "<unknown string>";
+                    continue;
+                }
+                if (!player zm_player::in_enabled_playable_area()) {
+                    teststring = teststring + "<unknown string>";
+                    continue;
+                }
+                if (isdefined(level.player_out_of_playable_area_override) && !(isdefined(player [[ level.player_out_of_playable_area_override ]]()) && player [[ level.player_out_of_playable_area_override ]]())) {
+                    teststring = teststring + "<unknown string>";
+                    continue;
+                }
+                teststring = teststring + "<unknown string>";
             }
             debug2dtext((400, 100, 0), teststring, (1, 1, 0), undefined, (0, 0, 0), 0.75, 1, 1);
             waitframe(1);
@@ -4729,24 +4745,23 @@ function init_debug_center_screen() {
         devgui_base = "<unknown string>";
         adddebugcommand(devgui_base + "<unknown string>" + "<unknown string>" + "<unknown string>");
         for (;;) {
-            for (;;) {
-                if (getdvarint(#"debug_center_screen", 0)) {
-                    if (!isdefined(level.center_screen_debug_hudelem_active) || level.center_screen_debug_hudelem_active == 0) {
-                        thread debug_center_screen();
-                        zero_idle_movement = getdvarint(#"zero_idle_movement", 0);
-                        if (zero_idle_movement == 0) {
-                            setdvar(#"zero_idle_movement", 1);
-                            zero_idle_movement = 1;
-                        }
-                    }
-                } else {
-                    level notify(#"stop center screen debug");
-                    if (zero_idle_movement == 1) {
-                        setdvar(#"zero_idle_movement", 0);
-                        zero_idle_movement = 0;
+            if (getdvarint(#"debug_center_screen", 0)) {
+                if (!isdefined(level.center_screen_debug_hudelem_active) || level.center_screen_debug_hudelem_active == 0) {
+                    thread debug_center_screen();
+                    zero_idle_movement = getdvarint(#"zero_idle_movement", 0);
+                    if (zero_idle_movement == 0) {
+                        setdvar(#"zero_idle_movement", 1);
+                        zero_idle_movement = 1;
                     }
                 }
+            } else {
+                level notify(#"stop center screen debug");
+                if (zero_idle_movement == 1) {
+                    setdvar(#"zero_idle_movement", 0);
+                    zero_idle_movement = 0;
+                }
             }
+            wait(0.5);
         }
     #/
 }
@@ -4907,9 +4922,9 @@ function function_1b531660() {
         level.var_77e1430c = !level.var_77e1430c;
         if (level.var_77e1430c) {
             callback::on_ai_damage(&function_e7321799);
-        } else {
-            callback::remove_on_ai_damage(&function_e7321799);
+            return;
         }
+        callback::remove_on_ai_damage(&function_e7321799);
     #/
 }
 

@@ -177,9 +177,9 @@ function loop_sound(clientnum) {
     if (isdefined(self.v[#"soundalias"]) && self.v[#"soundalias"] != "nil") {
         if (isdefined(self.v[#"stopable"]) && self.v[#"stopable"]) {
             thread sound::loop_fx_sound(clientnum, self.v[#"soundalias"], self.v[#"origin"], "stop_loop");
-        } else {
-            thread sound::loop_fx_sound(clientnum, self.v[#"soundalias"], self.v[#"origin"]);
+            return;
         }
+        thread sound::loop_fx_sound(clientnum, self.v[#"soundalias"], self.v[#"origin"]);
     }
 }
 
@@ -216,9 +216,9 @@ function loop_thread(clientnum) {
         }
         if (isdefined(self.fxstart)) {
             level waittill("start fx" + self.fxstart);
-        } else {
-            return;
+            continue;
         }
+        return;
     }
 }
 
@@ -283,9 +283,8 @@ function create_trigger(clientnum) {
 function function_3539a829(local_client_num, friendly_fx, enemy_fx, tag) {
     if (self function_4e0ca360()) {
         return util::playfxontag(local_client_num, friendly_fx, self, tag);
-    } else {
-        return util::playfxontag(local_client_num, enemy_fx, self, tag);
     }
+    return util::playfxontag(local_client_num, enemy_fx, self, tag);
 }
 
 // Namespace fx/fx_shared
@@ -295,9 +294,8 @@ function function_3539a829(local_client_num, friendly_fx, enemy_fx, tag) {
 function function_94d3d1d(local_client_num, friendly_fx, enemy_fx, origin) {
     if (self function_4e0ca360()) {
         return playfx(local_client_num, friendly_fx, origin);
-    } else {
-        return playfx(local_client_num, enemy_fx, origin);
     }
+    return playfx(local_client_num, enemy_fx, origin);
 }
 
 // Namespace fx/fx_shared

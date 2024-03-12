@@ -102,8 +102,7 @@ function fx_think(localclientnum, var_1e60ee48) {
     self util::waittill_dobj(localclientnum);
     handle = self playsound(localclientnum, #"wpn_semtex_countdown");
     self thread stop_sound_on_ent_shutdown(handle);
-    interval = 0.3;
-    while (isdefined(self)) {
+    for (interval = 0.3; isdefined(self); interval = math::clamp(interval / 1.2, 0.08, 0.3)) {
         self stop_light_fx(localclientnum);
         localplayer = function_5c10bd79(localclientnum);
         if (!isdefined(localplayer)) {
@@ -115,7 +114,6 @@ function fx_think(localclientnum, var_1e60ee48) {
         self fullscreen_fx(localclientnum, var_1e60ee48);
         util::server_wait(localclientnum, interval, 0.01, "player_switch");
         self util::waittill_dobj(localclientnum);
-        interval = math::clamp(interval / 1.2, 0.08, 0.3);
     }
 }
 
@@ -148,13 +146,11 @@ function function_c879d0fd(localclientnum) {
     self endon(#"light_disable");
     self endon(#"death");
     self util::waittill_dobj(localclientnum);
-    interval = 0.3;
-    for (;;) {
+    for (interval = 0.3; ; interval = math::clamp(interval / 1.2, 0.08, 0.3)) {
         self stop_light_fx(localclientnum);
         self start_light_fx(localclientnum, level._effect[#"hash_61fd92df093ebdb4"]);
         util::server_wait(localclientnum, interval, 0.01, "player_switch");
         self util::waittill_dobj(localclientnum);
-        interval = math::clamp(interval / 1.2, 0.08, 0.3);
     }
 }
 

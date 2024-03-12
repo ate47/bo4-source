@@ -80,9 +80,9 @@ function set_behavior_attribute(attribute, value) {
         if (has_behavior_attribute(attribute)) {
             setaiattribute(self, attribute, value);
         }
-    } else {
-        setaiattribute(self, attribute, value);
+        return;
     }
+    setaiattribute(self, attribute, value);
 }
 
 // Namespace ai/ai_shared
@@ -108,9 +108,8 @@ function has_behavior_attribute(attribute) {
 function is_dead_sentient() {
     if (issentient(self) && !isalive(self)) {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace ai/ai_shared
@@ -544,11 +543,13 @@ function patrol_next_node() {
     }
     if (target_nodes.size == 0 && target_scenes.size == 0) {
         self end_and_clean_patrol_behaviors();
-    } else if (target_nodes.size != 0) {
-        self.currentgoal = array::random(target_nodes);
-    } else {
-        self.currentgoal = array::random(target_scenes);
+        return;
     }
+    if (target_nodes.size != 0) {
+        self.currentgoal = array::random(target_nodes);
+        return;
+    }
+    self.currentgoal = array::random(target_scenes);
 }
 
 // Namespace ai/ai_shared
@@ -621,7 +622,7 @@ function bloody_death(n_delay, hit_loc) {
 }
 
 // Namespace ai/ai_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x1a2b21e0, Offset: 0x2280
 // Size: 0x52
 function shouldregisterclientfieldforarchetype(archetype) {
@@ -800,7 +801,7 @@ function function_41b04632() {
 }
 
 // Namespace ai/ai_shared
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x4ce51463, Offset: 0x2bb8
 // Size: 0x110
 function function_63734291(enemy) {
@@ -840,7 +841,7 @@ function stun(duration = self.var_95d94ac4) {
 }
 
 // Namespace ai/ai_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x69b5623a, Offset: 0x2db0
 // Size: 0x1e
 function is_stunned() {
@@ -856,7 +857,7 @@ function clear_stun() {
 }
 
 // Namespace ai/ai_shared
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x431d9df1, Offset: 0x2df0
 // Size: 0x144
 function function_9139c839() {

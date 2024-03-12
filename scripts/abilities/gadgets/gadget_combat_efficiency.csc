@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xa66815ca, Offset: 0xf8
 // Size: 0x4c
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency
-// Params 7, eflags: 0x0
+// Params 7, eflags: 0x1 linked
 // Checksum 0x4c369a6c, Offset: 0x150
 // Size: 0x126
 function function_24a1439f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -32,7 +32,9 @@ function function_24a1439f(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.var_8db0b9f5)) {
             self.var_8db0b9f5 = self playloopsound(#"hash_1a6eca90431e5c64");
         }
-    } else if (isdefined(self.var_8db0b9f5)) {
+        return;
+    }
+    if (isdefined(self.var_8db0b9f5)) {
         self stoploopsound(self.var_8db0b9f5);
         self playsound(localclientnum, #"hash_529910b20b42ef5b");
         self.var_8db0b9f5 = undefined;

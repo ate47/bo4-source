@@ -37,7 +37,9 @@ function __init__() {
 function on_weapon_change(s_params) {
     if (function_5b0214e(s_params.weapon)) {
         self thread function_54922a21();
-    } else if (function_5b0214e(s_params.last_weapon)) {
+        return;
+    }
+    if (function_5b0214e(s_params.last_weapon)) {
         self notify(#"hash_414b2baf34e01af8");
     }
 }
@@ -62,9 +64,9 @@ function function_54922a21() {
         if (b_charged) {
             self function_a059fe7f();
             wait(1);
-        } else {
-            waitframe(1);
+            continue;
         }
+        waitframe(1);
     }
 }
 
@@ -91,9 +93,8 @@ function function_5b0214e(weapon) {
 function function_60365a28(weapon) {
     if (weapon == level.var_585eeded.var_ba76fe32[#"ray_gun_mk2y"] || weapon == level.var_585eeded.var_ba76fe32[#"ray_gun_mk2y_charged"]) {
         return level.var_585eeded.var_ba76fe32[#"ray_gun_mk2y"];
-    } else {
-        return level.var_585eeded.var_ba76fe32[#"ray_gun_mk2y_upgraded"];
     }
+    return level.var_585eeded.var_ba76fe32[#"ray_gun_mk2y_upgraded"];
 }
 
 // Namespace zm_weap_ray_gun_mk2y/zm_weap_ray_gun_mk2y

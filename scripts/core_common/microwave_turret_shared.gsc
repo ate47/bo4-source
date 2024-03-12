@@ -87,13 +87,12 @@ function turretdebugwatch() {
         turret = self;
         turret endon(#"stop_turret_debug");
         for (;;) {
-            for (;;) {
-                if (getdvarint(#"scr_microwave_turret_debug", 0) != 0) {
-                    turret turretdebug();
-                    waitframe(1);
-                    continue;
-                }
+            if (getdvarint(#"scr_microwave_turret_debug", 0) != 0) {
+                turret turretdebug();
+                waitframe(1);
+                continue;
             }
+            wait(1);
         }
     #/
 }

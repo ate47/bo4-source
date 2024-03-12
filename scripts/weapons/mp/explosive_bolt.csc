@@ -43,14 +43,12 @@ function fx_think(localclientnum) {
     self endon(#"death");
     self endon(#"light_disable");
     self util::waittill_dobj(localclientnum);
-    interval = 0.3;
-    for (;;) {
+    for (interval = 0.3; ; interval = math::clamp(interval / 1.2, 0.08, 0.3)) {
         self stop_light_fx(localclientnum);
         self start_light_fx(localclientnum);
         self fullscreen_fx(localclientnum);
         self playsound(localclientnum, #"wpn_semtex_alert");
         util::server_wait(localclientnum, interval, 0.016, "player_switch");
-        interval = math::clamp(interval / 1.2, 0.08, 0.3);
     }
 }
 

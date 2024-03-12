@@ -27,8 +27,8 @@ function __init__() {
 function reload(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self function_d309e55a("tag_gun_deploy_control_animate", 0);
-    } else {
-        self function_d309e55a("tag_gun_deploy_control_animate", 1);
+        return;
     }
+    self function_d309e55a("tag_gun_deploy_control_animate", 1);
 }
 

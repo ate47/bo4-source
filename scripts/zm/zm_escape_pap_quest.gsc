@@ -106,8 +106,7 @@ function function_124362b5(is_powered) {
         if (self.script_string == "roof") {
             level flag::wait_till("power_on1");
             var_a8d69fbd = getent("pap_shock_box", "script_string");
-            var_24c740a5 = 0;
-            while (!var_24c740a5) {
+            for (var_24c740a5 = 0; !var_24c740a5; var_24c740a5 = 1) {
                 s_result = undefined;
                 s_result = var_a8d69fbd waittill(#"hash_7e1d78666f0be68b");
                 if (isalive(s_result.e_player)) {
@@ -117,8 +116,7 @@ function function_124362b5(is_powered) {
                     } else {
                         var_a8d69fbd notify(#"turn_off");
                     }
-                } else {
-                    var_24c740a5 = 1;
+                    continue;
                 }
             }
             var_a8d69fbd playsound(#"hash_3a18ced95ae72103");
@@ -134,7 +132,7 @@ function function_124362b5(is_powered) {
             level flag::set(#"pap_quest_completed");
             util::delay(30, "game_over", &function_3357bedc);
         }
-        break;
+        return;
     }
 }
 
@@ -249,17 +247,17 @@ function private function_25adf2e0(str_zone, var_410775ce) {
 // Checksum 0x41eb4d63, Offset: 0x12e8
 // Size: 0x160
 function pap_debris(b_show, str_area) {
-    var_6f9dea08 = getentarray("debris_pap_" + str_area, "targetname");
+    a_mdl_debris = getentarray("debris_pap_" + str_area, "targetname");
     if (b_show) {
-        foreach (var_e87b7ad1 in var_6f9dea08) {
-            var_e87b7ad1 solid();
-            var_e87b7ad1 show();
+        foreach (mdl_debris in a_mdl_debris) {
+            mdl_debris solid();
+            mdl_debris show();
         }
-    } else {
-        foreach (var_e87b7ad1 in var_6f9dea08) {
-            var_e87b7ad1 notsolid();
-            var_e87b7ad1 hide();
-        }
+        return;
+    }
+    foreach (mdl_debris in a_mdl_debris) {
+        mdl_debris notsolid();
+        mdl_debris hide();
     }
 }
 
@@ -398,9 +396,7 @@ function function_c0bc0375() {
             self zm_pack_a_punch::set_state_hidden();
             level waittill(#"hash_79b5f8e539d36a49", #"hash_1fc69d74f13da62e", #"hash_6d668f3614ed2393");
             a_e_pack = getentarray("zm_pack_a_punch", "targetname");
-            e_pack = self;
-            while (self == e_pack) {
-                e_pack = array::random(a_e_pack);
+            for (e_pack = self; self == e_pack; e_pack = array::random(a_e_pack)) {
             }
             wait(5);
             switch (e_pack.script_string) {

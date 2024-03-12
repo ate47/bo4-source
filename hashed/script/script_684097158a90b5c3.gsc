@@ -113,11 +113,11 @@ function function_c03b6f46(var_4e77d211, var_3551e3b9) {
         if (zm_utility::is_player_valid(self.enemy)) {
             n_dist_sq = distance2dsquared(self.origin, self.enemy.origin);
             if (n_dist_sq > var_4e77d211 && n_dist_sq < var_3551e3b9) {
-                break;
+                return;
             }
-        } else {
             continue;
         }
+        continue;
     }
 }
 
@@ -313,16 +313,12 @@ function function_45876e23() {
     switch (n_player_count) {
     case 1:
         return 3;
-        break;
     case 2:
         return 4;
-        break;
     case 3:
         return 5;
-        break;
     default:
         return 6;
-        break;
     }
 }
 

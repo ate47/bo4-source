@@ -72,9 +72,9 @@ function on_ai_killed(params) {
                 if (e_attacker.var_957a1762 == 5) {
                     e_attacker playsoundtoplayer(#"hash_6f931d032000253a", e_attacker);
                 }
-            } else {
-                e_attacker reset_counter();
+                return;
             }
+            e_attacker reset_counter();
         }
     }
 }

@@ -11,7 +11,7 @@
 #namespace plannermpdomcommander;
 
 // Namespace plannermpdomcommander/planner_mp_dom_commander
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xcd5775f9, Offset: 0x188
 // Size: 0x32
 function private createcommanderplanner(team) {
@@ -20,7 +20,7 @@ function private createcommanderplanner(team) {
 }
 
 // Namespace plannermpdomcommander/planner_mp_dom_commander
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf46738e5, Offset: 0x1c8
 // Size: 0x1e0
 function createcommander(team) {

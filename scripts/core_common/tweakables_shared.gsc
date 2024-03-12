@@ -265,30 +265,30 @@ function settweakablelastvalue(category, name, value) {
     switch (category) {
     case #"rule":
         level.rules[name].lastvalue = value;
-        break;
+        return;
     case #"game":
         level.gametweaks[name].lastvalue = value;
-        break;
+        return;
     case #"team":
         level.teamtweaks[name].lastvalue = value;
-        break;
+        return;
     case #"player":
         level.playertweaks[name].lastvalue = value;
-        break;
+        return;
     case #"class":
         level.classtweaks[name].lastvalue = value;
-        break;
+        return;
     case #"weapon":
         level.weapontweaks[name].lastvalue = value;
-        break;
+        return;
     case #"killstreak":
         level.hardpointtweaks[name].lastvalue = value;
-        break;
+        return;
     case #"hud":
         level.hudtweaks[name].lastvalue = value;
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -316,7 +316,7 @@ function registertweakable(category, name, dvar, value) {
         level.rules[name].value = value;
         level.rules[name].lastvalue = value;
         level.rules[name].dvar = dvar;
-        break;
+        return;
     case #"game":
         if (!isdefined(level.gametweaks[name])) {
             level.gametweaks[name] = spawnstruct();
@@ -324,7 +324,7 @@ function registertweakable(category, name, dvar, value) {
         level.gametweaks[name].value = value;
         level.gametweaks[name].lastvalue = value;
         level.gametweaks[name].dvar = dvar;
-        break;
+        return;
     case #"team":
         if (!isdefined(level.teamtweaks[name])) {
             level.teamtweaks[name] = spawnstruct();
@@ -332,7 +332,7 @@ function registertweakable(category, name, dvar, value) {
         level.teamtweaks[name].value = value;
         level.teamtweaks[name].lastvalue = value;
         level.teamtweaks[name].dvar = dvar;
-        break;
+        return;
     case #"player":
         if (!isdefined(level.playertweaks[name])) {
             level.playertweaks[name] = spawnstruct();
@@ -340,7 +340,7 @@ function registertweakable(category, name, dvar, value) {
         level.playertweaks[name].value = value;
         level.playertweaks[name].lastvalue = value;
         level.playertweaks[name].dvar = dvar;
-        break;
+        return;
     case #"class":
         if (!isdefined(level.classtweaks[name])) {
             level.classtweaks[name] = spawnstruct();
@@ -348,7 +348,7 @@ function registertweakable(category, name, dvar, value) {
         level.classtweaks[name].value = value;
         level.classtweaks[name].lastvalue = value;
         level.classtweaks[name].dvar = dvar;
-        break;
+        return;
     case #"weapon":
         if (!isdefined(level.weapontweaks[name])) {
             level.weapontweaks[name] = spawnstruct();
@@ -356,7 +356,7 @@ function registertweakable(category, name, dvar, value) {
         level.weapontweaks[name].value = value;
         level.weapontweaks[name].lastvalue = value;
         level.weapontweaks[name].dvar = dvar;
-        break;
+        return;
     case #"killstreak":
         if (!isdefined(level.hardpointtweaks[name])) {
             level.hardpointtweaks[name] = spawnstruct();
@@ -364,7 +364,7 @@ function registertweakable(category, name, dvar, value) {
         level.hardpointtweaks[name].value = value;
         level.hardpointtweaks[name].lastvalue = value;
         level.hardpointtweaks[name].dvar = dvar;
-        break;
+        return;
     case #"hud":
         if (!isdefined(level.hudtweaks[name])) {
             level.hudtweaks[name] = spawnstruct();
@@ -372,7 +372,7 @@ function registertweakable(category, name, dvar, value) {
         level.hudtweaks[name].value = value;
         level.hudtweaks[name].lastvalue = value;
         level.hudtweaks[name].dvar = dvar;
-        break;
+        return;
     }
 }
 
@@ -399,6 +399,6 @@ function updateuitweakables(debug_refresh) {
             }
         }
         wait(randomfloatrange(0.9, 1.1));
-    } while(isdefined(debug_refresh));
+    } while (isdefined(debug_refresh));
 }
 

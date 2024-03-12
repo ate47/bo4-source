@@ -52,7 +52,6 @@ function should_play_sound(mod) {
     case #"mod_melee_assassinate":
     case #"mod_melee":
         return 0;
-        break;
     }
     return 1;
 }
@@ -165,19 +164,12 @@ function hit_alert_sfx_mp(mod, inflictor, perkfeedback, weapon, victim, psoffset
                     }
                 } else if (weapons::isheadshot(shitloc, mod)) {
                     hitalias = #"hash_29ca1afa9209bfc6";
+                } else if (mod == "MOD_MELEE_WEAPON_BUTT") {
+                } else if (shitloc === "riotshield") {
+                    hitalias = #"prj_bullet_impact_shield";
                 } else {
-                    if (mod == "MOD_MELEE_WEAPON_BUTT") {
-                        goto LOC_0000050c;
-                    }
-                    if (shitloc === "riotshield") {
-                        hitalias = #"prj_bullet_impact_shield";
-                    } else {
-                        hitalias = #"hash_205c83ac75849f80";
-                    LOC_0000050c:
-                    }
-                LOC_0000050c:
+                    hitalias = #"hash_205c83ac75849f80";
                 }
-            LOC_0000050c:
                 break;
             case #"heatwave":
                 hitalias = #"mpl_hit_alert_heatwave";
@@ -252,7 +244,7 @@ function function_34fbafdc(weapon, mod) {
     if (isdefined(weapon) && isdefined(weapon.var_965cc0b3) && weapon.var_965cc0b3) {
         return 1;
     }
-    if (isdefined(weapon) && weapon === level.var_1b72f911 && mod === "MOD_DOT") {
+    if (isdefined(weapon) && weapon === level.shockrifleweapon && mod === "MOD_DOT") {
         return 1;
     }
     return 0;
@@ -358,7 +350,9 @@ function update(mod, inflictor, perkfeedback, weapon, victim, psoffsettime, shit
         }
         if (isdefined(self.hud_damagefeedback) && isdefined(level.growing_hitmarker) && isdefined(victim) && (sessionmodeiscampaigngame() || isplayer(victim))) {
             self thread damage_feedback_growth(victim, mod, weapon);
-        } else if (isdefined(self.hud_damagefeedback)) {
+            return;
+        }
+        if (isdefined(self.hud_damagefeedback)) {
             self.hud_damagefeedback.x = -12;
             self.hud_damagefeedback.y = -12;
             self.hud_damagefeedback.alpha = 1;
@@ -382,17 +376,20 @@ function damage_feedback_get_stage(victim, fatal) {
             return 5;
         }
         return 1;
-    } else if (var_7d71342b > 0.74) {
-        return 1;
-    } else if (var_7d71342b > 0.49) {
-        return 2;
-    } else if (var_7d71342b > 0.24) {
-        return 3;
-    } else if (victim.health > 0) {
-        return 4;
-    } else {
-        return 5;
     }
+    if (var_7d71342b > 0.74) {
+        return 1;
+    }
+    if (var_7d71342b > 0.49) {
+        return 2;
+    }
+    if (var_7d71342b > 0.24) {
+        return 3;
+    }
+    if (victim.health > 0) {
+        return 4;
+    }
+    return 5;
 }
 
 // Namespace damagefeedback/damagefeedback_shared
@@ -419,12 +416,12 @@ function damage_feedback_growth(victim, mod, weapon) {
             if (damage_feedback_get_dead(victim, mod, weapon, stage)) {
                 self.hud_damagefeedback setshader(#"damage_feedback_glow_orange", size_x, size_y);
                 self thread kill_hitmarker_fade();
-            } else {
-                self.hud_damagefeedback setshader(#"damage_feedback", size_x, size_y);
-                self.hud_damagefeedback.alpha = 1;
-                self.hud_damagefeedback fadeovertime(1);
-                self.hud_damagefeedback.alpha = 0;
+                return;
             }
+            self.hud_damagefeedback setshader(#"damage_feedback", size_x, size_y);
+            self.hud_damagefeedback.alpha = 1;
+            self.hud_damagefeedback fadeovertime(1);
+            self.hud_damagefeedback.alpha = 0;
         }
     #/
 }
@@ -466,12 +463,12 @@ function update_override(icon, sound, additional_icon) {
         if (isdefined(self.hud_damagefeedback_additional)) {
             if (!isdefined(additional_icon)) {
                 self.hud_damagefeedback_additional.alpha = 0;
-            } else {
-                self.hud_damagefeedback_additional setshader(additional_icon, 24, 48);
-                self.hud_damagefeedback_additional.alpha = 1;
-                self.hud_damagefeedback_additional fadeovertime(1);
-                self.hud_damagefeedback_additional.alpha = 0;
+                return;
             }
+            self.hud_damagefeedback_additional setshader(additional_icon, 24, 48);
+            self.hud_damagefeedback_additional.alpha = 1;
+            self.hud_damagefeedback_additional fadeovertime(1);
+            self.hud_damagefeedback_additional.alpha = 0;
         }
     #/
 }

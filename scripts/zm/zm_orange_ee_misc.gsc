@@ -131,7 +131,6 @@ function trinket_think() {
     foreach (pap in level.var_4d8e32c8) {
         if (pap.script_noteworthy === self.script_noteworthy) {
             pap_lock = pap;
-            continue;
         }
     }
     while (1) {
@@ -144,9 +143,8 @@ function trinket_think() {
             e_who playrumbleonentity("zm_office_drawer_rumble");
             self hide();
             return;
-        } else {
-            waitframe(1);
         }
+        waitframe(1);
     }
 }
 
@@ -213,11 +211,11 @@ function function_a4e86068() {
         if (0) {
             b_delayed = 1;
             wait(1);
-        } else {
-            var_d1ec2571 = level.round_number + 1;
-            b_delayed = 0;
+            continue;
         }
-    } while(b_delayed);
+        var_d1ec2571 = level.round_number + 1;
+        b_delayed = 0;
+    } while (b_delayed);
     var_898a45da = level.var_45827161[var_d1ec2571];
     if (isdefined(var_898a45da)) {
         zm_round_spawning::function_43aed0ca(var_d1ec2571);
@@ -443,13 +441,13 @@ function function_301c7dca(player) {
         str_hint = zm_utility::function_d6046228(#"hash_15b81856e839fed9", #"hash_eb543cd4ec82ae7");
         self sethintstring(str_hint);
         return 1;
-    } else if (isdefined(self.stub.related_parent.b_picked_up) && !self.stub.related_parent.b_picked_up) {
+    }
+    if (isdefined(self.stub.related_parent.b_picked_up) && !self.stub.related_parent.b_picked_up) {
         str_hint = zm_utility::function_d6046228(#"hash_4ed14fd62a0c189c", #"hash_b9eef4c2cef38d0");
         self sethintstring(str_hint);
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -467,9 +465,9 @@ function function_a2993671() {
         level flag::set(#"hash_72bd35eacb1940de");
         player thread zm_orange_util::function_51b752a9("vox_gear_box_pickup", -1, 0, 1);
         zm_ui_inventory::function_7df6bb60("flinger_gear_box_1", 1);
-    } else {
-        zm_ui_inventory::function_7df6bb60("flinger_gear_box_2", 1);
+        return;
     }
+    zm_ui_inventory::function_7df6bb60("flinger_gear_box_2", 1);
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -487,9 +485,9 @@ function function_1856c416() {
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
     if (self.var_db053a52 === 1) {
         zm_ui_inventory::function_7df6bb60("flinger_gear_box_1", 0);
-    } else {
-        zm_ui_inventory::function_7df6bb60("flinger_gear_box_2", 0);
+        return;
     }
+    zm_ui_inventory::function_7df6bb60("flinger_gear_box_2", 0);
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -565,12 +563,12 @@ function function_ab759b3a(player) {
     if (isdefined(self.stub.related_parent.b_picked_up) && self.stub.related_parent.b_picked_up) {
         self sethintstring(zm_utility::function_d6046228(#"hash_494d7fc0d10e2ff6", #"hash_9af968cebf182d2"));
         return 1;
-    } else if (isdefined(self.stub.related_parent.b_picked_up) && !self.stub.related_parent.b_picked_up) {
+    }
+    if (isdefined(self.stub.related_parent.b_picked_up) && !self.stub.related_parent.b_picked_up) {
         self sethintstring(zm_utility::function_d6046228(#"hash_3b3769bc56dab413", #"hash_28eeceb083aa7339"));
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc

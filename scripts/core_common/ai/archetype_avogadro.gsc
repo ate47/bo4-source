@@ -187,11 +187,13 @@ function function_99ce086a(inflictor, attacker, damage, flags, meansofdeath, wea
 function function_dbc638a8(entity) {
     if (entity.health < entity.maxhealth * 0.33) {
         entity clientfield::set("" + #"hash_2eec8fc21495a18c", 1);
-    } else if (entity.health < entity.maxhealth * 0.66) {
-        entity clientfield::set("" + #"hash_2eec8fc21495a18c", 2);
-    } else {
-        entity clientfield::set("" + #"hash_2eec8fc21495a18c", 3);
+        return;
     }
+    if (entity.health < entity.maxhealth * 0.66) {
+        entity clientfield::set("" + #"hash_2eec8fc21495a18c", 2);
+        return;
+    }
+    entity clientfield::set("" + #"hash_2eec8fc21495a18c", 3);
 }
 
 // Namespace archetype_avogadro/archetype_avogadro
@@ -418,12 +420,11 @@ function function_a495d71f(entity) {
                     #/
                     entity.var_1ce249af = 1;
                     return 1;
-                } else {
-                    /#
-                        recordline(entity.origin, endpoint, (1, 0, 0));
-                        recordsphere(endpoint, 15, (1, 0, 0));
-                    #/
                 }
+                /#
+                    recordline(entity.origin, endpoint, (1, 0, 0));
+                    recordsphere(endpoint, 15, (1, 0, 0));
+                #/
             }
         }
     }
@@ -455,9 +456,9 @@ function function_3b8d314c(entity) {
     }
     if (gettime() - entity.var_7fde19e8 > 1000) {
         entity.var_9bff71aa = 0;
-    } else {
-        entity.var_9bff71aa++;
+        return;
     }
+    entity.var_9bff71aa++;
 }
 
 // Namespace archetype_avogadro/archetype_avogadro

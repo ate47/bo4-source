@@ -131,11 +131,11 @@ function on_player_score(new_score, delta_score) {
         if (new_score >= target_value) {
             player increment_cwl_contract(#"contract_wl_score_per_mode");
         }
-    } else {
-        var_2c74fba6 = level.var_9d6b3096[gametype].var_9a5a8dcf;
-        if (old_score < var_2c74fba6 && new_score >= var_2c74fba6) {
-            player increment_cwl_contract(#"hash_1075c38287814aa0");
-        }
+        return;
+    }
+    var_2c74fba6 = level.var_9d6b3096[gametype].var_9a5a8dcf;
+    if (old_score < var_2c74fba6 && new_score >= var_2c74fba6) {
+        player increment_cwl_contract(#"hash_1075c38287814aa0");
     }
 }
 
@@ -152,7 +152,9 @@ function on_ekia(weapon) {
     var_350027d1 = player.pers[#"ekia"];
     if (var_350027d1 == level.var_9d6b3096[gametype].var_f703cb6c) {
         player increment_cwl_contract(#"hash_1d1b3fe36f24b6ac");
-    } else if (var_350027d1 == level.var_9d6b3096[gametype].var_39027dc7) {
+        return;
+    }
+    if (var_350027d1 == level.var_9d6b3096[gametype].var_39027dc7) {
         player increment_cwl_contract(#"hash_63e1c91ddca36b58");
     }
 }

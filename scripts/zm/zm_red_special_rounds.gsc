@@ -84,13 +84,17 @@ function function_990c303a() {
         level.var_4c6c91cf = 0;
         if (level.players.size == 1) {
             level.var_9b1fafcf = 1;
-        } else if (level.round_number <= 10) {
-            level.var_9b1fafcf = 1;
-        } else if (level.round_number <= 17) {
-            level.var_9b1fafcf = 2;
-        } else {
-            level.var_9b1fafcf = 3;
+            continue;
         }
+        if (level.round_number <= 10) {
+            level.var_9b1fafcf = 1;
+            continue;
+        }
+        if (level.round_number <= 17) {
+            level.var_9b1fafcf = 2;
+            continue;
+        }
+        level.var_9b1fafcf = 3;
     }
 }
 
@@ -129,9 +133,8 @@ function function_ec882ff(n_max) {
     if (level.var_4c6c91cf < level.var_9b1fafcf) {
         level.var_4c6c91cf = level.var_4c6c91cf + n_num_to_spawn;
         return n_num_to_spawn;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_red_special_rounds/zm_red_special_rounds
@@ -158,9 +161,8 @@ function function_57fd9735(n_max) {
     if (level.var_4c6c91cf < level.var_9b1fafcf) {
         level.var_4c6c91cf = level.var_4c6c91cf + n_num_to_spawn;
         return n_num_to_spawn;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_red_special_rounds/zm_red_special_rounds

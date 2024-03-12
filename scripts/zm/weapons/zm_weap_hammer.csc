@@ -62,11 +62,11 @@ function lightning_bolt_fx(localclientnum, owner, position) {
         fx = level._effect[#"groundhit_1p"];
         fwd = anglestoforward(owner.angles);
         playfx(localclientnum, fx, position + fwd * 100, fwd);
-    } else {
-        fx = level._effect[#"groundhit_3p"];
-        fwd = anglestoforward(owner.angles);
-        playfx(localclientnum, fx, position, fwd);
+        return;
     }
+    fx = level._effect[#"groundhit_3p"];
+    fwd = anglestoforward(owner.angles);
+    playfx(localclientnum, fx, position, fwd);
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -91,17 +91,17 @@ function hammer_storm(localclientnum, oldval, newval, bnewent, binitialsnap, fie
             self.var_49f8e089 = self playloopsound(#"hash_1fc7648098c65e92");
             self thread function_9f78a957(localclientnum);
         }
-    } else {
-        if (isdefined(self.n_beacon_fx)) {
-            deletefx(localclientnum, self.n_beacon_fx, 0);
-            self.n_beacon_fx = undefined;
-        }
-        self playsound(0, #"hash_15633b83c64a3ebb");
-        if (isdefined(self.var_49f8e089)) {
-            self notify(#"hash_5384bc96a8e66d91");
-            self stoploopsound(self.var_49f8e089);
-            self.var_49f8e089 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.n_beacon_fx)) {
+        deletefx(localclientnum, self.n_beacon_fx, 0);
+        self.n_beacon_fx = undefined;
+    }
+    self playsound(0, #"hash_15633b83c64a3ebb");
+    if (isdefined(self.var_49f8e089)) {
+        self notify(#"hash_5384bc96a8e66d91");
+        self stoploopsound(self.var_49f8e089);
+        self.var_49f8e089 = undefined;
     }
 }
 
@@ -192,9 +192,9 @@ function function_311f3501(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self thread function_7dac3bb6(localclientnum);
         self thread function_85050f7f(localclientnum);
-    } else {
-        self notify(#"hash_5531647ca0352039");
+        return;
     }
+    self notify(#"hash_5531647ca0352039");
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -233,12 +233,12 @@ function function_cd968d6(localclientnum, oldval, newval, bnewent, binitialsnap,
             self.var_89d8285 = util::playfxontag(localclientnum, level._effect[#"lightning_impact"], self, self zm_utility::function_467efa7b());
         }
         self playsound(localclientnum, #"hash_63d588d1f28ecdc1");
-    } else {
-        if (isdefined(self.var_89d8285)) {
-            deletefx(localclientnum, self.var_89d8285, 1);
-        }
-        self.var_89d8285 = undefined;
+        return;
     }
+    if (isdefined(self.var_89d8285)) {
+        deletefx(localclientnum, self.var_89d8285, 1);
+    }
+    self.var_89d8285 = undefined;
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -250,7 +250,7 @@ function hammer_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap
         switch (newvalue) {
         case 4:
             self playrumbleonentity(localclientnum, "zm_weap_hammer_swipe_hit_rumble");
-            break;
+            return;
         }
     }
 }

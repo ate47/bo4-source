@@ -84,10 +84,10 @@ function function_a346a156(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_c5c4890c94eb1c7");
         playsound(localclientnum, #"hash_8fc267f3e184882", self.origin);
-    } else {
-        self stoprenderoverridebundle(#"hash_c5c4890c94eb1c7");
-        playsound(localclientnum, #"hash_f5264369f84b89b", self.origin);
+        return;
     }
+    self stoprenderoverridebundle(#"hash_c5c4890c94eb1c7");
+    playsound(localclientnum, #"hash_f5264369f84b89b", self.origin);
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -101,9 +101,9 @@ function function_72efa790(localclientnum, oldval, newval, bnewent, binitialsnap
     self thread function_f389e70d(localclientnum);
     if (newval == 1) {
         self playrenderoverridebundle(#"hash_6a2d3edbb0f2c98d");
-    } else {
-        self stoprenderoverridebundle(#"hash_6a2d3edbb0f2c98d");
+        return;
     }
+    self stoprenderoverridebundle(#"hash_6a2d3edbb0f2c98d");
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -135,9 +135,9 @@ function function_f389e70d(localclientnum) {
 function function_931bac5a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self mapshaderconstant(localclientnum, 0, "ScriptVector4", 0, 1, 0, 0);
-    } else {
-        self mapshaderconstant(localclientnum, 0, "ScriptVector4", 0, 0, 0, 0);
+        return;
     }
+    self mapshaderconstant(localclientnum, 0, "ScriptVector4", 0, 0, 0, 0);
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -154,18 +154,18 @@ function function_1d15a456(localclientnum, oldval, newval, bnewent, binitialsnap
         audio::playloopat(#"hash_868fc0612e15eaf", self.origin + vectorscale((0, 0, 1), 50));
         audio::stoploopat(#"hash_3fdf4ea8be67182e", self.origin + vectorscale((0, 0, 1), 50));
         playsound(localclientnum, #"hash_c22b771ecbf8bb6", self.origin + vectorscale((0, 0, 1), 50));
-        break;
+        return;
     case 2:
         self.var_aa8c0343 = playfx(localclientnum, level._effect[#"hash_3665813f5609df50"], self.origin, anglestoforward(self.angles));
         audio::stoploopat(#"hash_868fc0612e15eaf", self.origin + vectorscale((0, 0, 1), 50));
         audio::playloopat(#"hash_3fdf4ea8be67182e", self.origin + vectorscale((0, 0, 1), 50));
         playsound(localclientnum, #"hash_24d107d1b3a13829", self.origin + vectorscale((0, 0, 1), 50));
-        break;
+        return;
     case 3:
         self.var_aa8c0343 = playfx(localclientnum, level._effect[#"hash_4cd18caca0e2880b"], self.origin, anglestoforward(self.angles));
         audio::stoploopat(#"hash_868fc0612e15eaf", self.origin + vectorscale((0, 0, 1), 50));
         audio::stoploopat(#"hash_3fdf4ea8be67182e", self.origin + vectorscale((0, 0, 1), 50));
-        break;
+        return;
     }
 }
 
@@ -180,7 +180,7 @@ function function_444660d9(localclientnum, oldval, newval, bnewent, binitialsnap
     self.var_69ab30d0 = undefined;
     switch (newval) {
     case 0:
-        
+        return;
     case 1:
         self.var_69ab30d0 = #"hash_7de33b7647f4c33a";
         break;
@@ -204,12 +204,12 @@ function function_444660d9(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_abea158a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.var_e6b19280 = util::playfxontag(localclientnum, level._effect[#"hash_4d8984a98c0beba2"], self, "tag_fx");
-    } else {
-        if (isdefined(self.var_e6b19280)) {
-            stopfx(localclientnum, self.var_e6b19280);
-        }
-        self.var_e6b19280 = undefined;
+        return;
     }
+    if (isdefined(self.var_e6b19280)) {
+        stopfx(localclientnum, self.var_e6b19280);
+    }
+    self.var_e6b19280 = undefined;
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -219,12 +219,12 @@ function function_abea158a(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_b5901c02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.var_7a21c346 = util::playfxontag(localclientnum, level._effect[#"hash_24ce7f381d2f1ff5"], self, "tag_fx");
-    } else {
-        if (isdefined(self.var_7a21c346)) {
-            stopfx(localclientnum, self.var_7a21c346);
-        }
-        self.var_7a21c346 = undefined;
+        return;
     }
+    if (isdefined(self.var_7a21c346)) {
+        stopfx(localclientnum, self.var_7a21c346);
+    }
+    self.var_7a21c346 = undefined;
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -237,8 +237,8 @@ function function_2a48bf1c(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval) {
         self thread postfx::playpostfxbundle(#"pstfx_zm_man_targeted");
-    } else {
-        self thread postfx::exitpostfxbundle(#"pstfx_zm_man_targeted");
+        return;
     }
+    self thread postfx::exitpostfxbundle(#"pstfx_zm_man_targeted");
 }
 

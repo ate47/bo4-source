@@ -16,7 +16,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_highvaluetarget/wz_highvaluetarget
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5c05c900, Offset: 0x140
 // Size: 0x132
 function __init__() {
@@ -32,7 +32,7 @@ function __init__() {
 }
 
 // Namespace wz_highvaluetarget/wz_highvaluetarget
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0xdda1a9a7, Offset: 0x280
 // Size: 0x1ac
 function target_changed(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -48,7 +48,9 @@ function target_changed(localclientnum, oldval, newval, bnewent, binitialsnap, f
                 if (!self function_d2503806(#"hash_4368c406e6a21060")) {
                     self playrenderoverridebundle(#"hash_4368c406e6a21060");
                 }
-            } else if (self function_d2503806(#"hash_4368c406e6a21060")) {
+                return;
+            }
+            if (self function_d2503806(#"hash_4368c406e6a21060")) {
                 self stoprenderoverridebundle(#"hash_4368c406e6a21060");
             }
         }

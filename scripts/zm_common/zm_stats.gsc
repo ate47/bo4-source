@@ -922,9 +922,9 @@ function increment_challenge_stat(stat_name, amount = 1, var_b68b08b1 = 0) {
         var_ba1fb8c1 = self stats::get_stat_global(stat_name);
         if (isdefined(self.entity_num)) {
             println("blightfathers_killed" + self.entity_num + "catalysts_killed" + function_9e72a96(stat_name) + "catalyst_waters_killed" + var_ba1fb8c1);
-        } else {
-            println("blightfathers_killed" + function_9e72a96(stat_name) + "catalyst_waters_killed" + var_ba1fb8c1);
+            return;
         }
+        println("blightfathers_killed" + function_9e72a96(stat_name) + "catalyst_waters_killed" + var_ba1fb8c1);
     #/
 }
 
@@ -1169,7 +1169,9 @@ function handle_death(einflictor, eattacker, weapon, smeansofdeath) {
             entity function_8f10788e("boas_killed_by_werewolf");
             break;
         }
-    } else if (isplayer(eattacker)) {
+        return;
+    }
+    if (isplayer(eattacker)) {
         if (isdefined(entity.archetype)) {
             switch (entity.archetype) {
             case #"blight_father":
@@ -1836,14 +1838,14 @@ function function_7f377150(s_event_calling_task, n_value = 1) {
             /#
                 println(function_9e72a96(level.var_6ad5a223) + "<unknown string>" + self stats::get_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, "<unknown string>") + "<unknown string>" + function_9e72a96(s_event_calling_task.var_ad971622));
             #/
-        } else {
-            /#
-                progress = var_e4edaaf0 + n_value;
-                target = s_event_calling_task.var_e226ec4f;
-                iprintln(self.name + "<unknown string>" + function_9e72a96(s_event_calling_task.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
-            #/
-            self stats::inc_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, #"progress", n_value);
+            return;
         }
+        /#
+            progress = var_e4edaaf0 + n_value;
+            target = s_event_calling_task.var_e226ec4f;
+            iprintln(self.name + "<unknown string>" + function_9e72a96(s_event_calling_task.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
+        #/
+        self stats::inc_stat(#"hash_3b52e51401f0229c", level.var_6ad5a223, #"progress", n_value);
     }
 }
 
@@ -1893,14 +1895,14 @@ function function_55109709(s_daily_calling_task, n_value = 1) {
             /#
                 iprintln(self.name + "<unknown string>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<unknown string>" + s_daily_calling_task.n_xp + "<unknown string>");
             #/
-        } else {
-            /#
-                progress = var_e4edaaf0 + n_value;
-                target = s_daily_calling_task.var_e226ec4f;
-                iprintln(self.name + "<unknown string>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
-            #/
-            self stats::inc_stat(#"hash_18e3320ccf4091e5", #"progress", n_value);
+            return;
         }
+        /#
+            progress = var_e4edaaf0 + n_value;
+            target = s_daily_calling_task.var_e226ec4f;
+            iprintln(self.name + "<unknown string>" + function_9e72a96(s_daily_calling_task.var_ad971622) + "<unknown string>" + progress + "<unknown string>" + target);
+        #/
+        self stats::inc_stat(#"hash_18e3320ccf4091e5", #"progress", n_value);
     }
 }
 

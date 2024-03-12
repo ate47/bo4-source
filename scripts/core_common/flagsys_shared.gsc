@@ -124,9 +124,9 @@ function set_val(str_flag, b_val) {
     #/
     if (b_val) {
         set(str_flag);
-    } else {
-        clear(str_flag);
+        return;
     }
+    clear(str_flag);
 }
 
 // Namespace flagsys/flagsys_shared
@@ -157,7 +157,7 @@ function wait_till(str_flag) {
 }
 
 // Namespace flagsys/flagsys_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x31f7e990, Offset: 0x648
 // Size: 0x84
 function wait_till_timeout(n_timeout, str_flag) {

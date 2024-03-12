@@ -200,14 +200,14 @@ function function_cb4925e3(tacpoints) {
     foreach (tacpoint in tacpoints) {
         if (function_d15dd929(tacpoint.origin)) {
             array::add(validpoints, tacpoint);
-        } else {
-            /#
-                record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "<unknown string>");
-            #/
-            /#
-                recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
-            #/
+            continue;
         }
+        /#
+            record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "<unknown string>");
+        #/
+        /#
+            recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
+        #/
     }
     return validpoints;
 }
@@ -362,7 +362,9 @@ function update_escort() {
 function update_enemy() {
     if (isdefined(self.ai.hasseenfavoriteenemy) && self.ai.hasseenfavoriteenemy) {
         self.ai.escort.state = 0;
-    } else if (self.ai.escort.state == 0) {
+        return;
+    }
+    if (self.ai.escort.state == 0) {
         self.ai.escort.state = 2;
     }
 }

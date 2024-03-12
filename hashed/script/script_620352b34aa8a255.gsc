@@ -120,9 +120,9 @@ function private damage_monitor(var_a4a28ac7) {
                 self dodamage(var_16e6b8ea, self.origin);
                 wait(1);
             }
-        } else {
-            waitframe(1);
+            continue;
         }
+        waitframe(1);
     }
 }
 

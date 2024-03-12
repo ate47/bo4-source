@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace teamset_axis/teamset_axis
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd3f2a15, Offset: 0x178
 // Size: 0x3c
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace teamset_axis/teamset_axis
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaae717f8, Offset: 0x1c0
 // Size: 0x13a
 function init(team) {

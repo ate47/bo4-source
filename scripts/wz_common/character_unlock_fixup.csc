@@ -15,7 +15,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_fixup/character_unlock_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x360b1254, Offset: 0xe8
 // Size: 0x44
 function __init__() {
@@ -24,7 +24,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_fixup/character_unlock_fixup
-// Params 5, eflags: 0x21 linked
+// Params 5, eflags: 0x20
 // Checksum 0xb3b6fe17, Offset: 0x138
 // Size: 0x20e
 function register_character_unlock(unlock_name, unlock_stat, item, var_f27097cc, ...) {
@@ -50,7 +50,7 @@ function register_character_unlock(unlock_name, unlock_stat, item, var_f27097cc,
 }
 
 // Namespace character_unlock_fixup/character_unlock_fixup
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb056b31, Offset: 0x350
 // Size: 0xae
 function function_90ee7a97(unlock_name, activation_func) {
@@ -75,7 +75,7 @@ function function_90ee7a97(unlock_name, activation_func) {
 }
 
 // Namespace character_unlock_fixup/character_unlock_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa9cde3ce, Offset: 0x408
 // Size: 0xa50
 function function_c67a5089() {
@@ -186,7 +186,7 @@ function function_c67a5089() {
 }
 
 // Namespace character_unlock_fixup/character_unlock_fixup
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xd3287d52, Offset: 0xe60
 // Size: 0x3c
 function function_f53ec921(a, b) {

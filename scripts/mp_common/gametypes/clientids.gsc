@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace clientids/clientids
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1fe180a, Offset: 0xc0
 // Size: 0x44
 function __init__() {
@@ -22,7 +22,7 @@ function __init__() {
 }
 
 // Namespace clientids/clientids
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x53cc0c3e, Offset: 0x110
 // Size: 0x12
 function init() {
@@ -30,7 +30,7 @@ function init() {
 }
 
 // Namespace clientids/clientids
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2f05036b, Offset: 0x130
 // Size: 0x9c
 function on_player_connect() {

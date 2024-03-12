@@ -17,9 +17,9 @@ function private _blackboardsapplyundostate(planner, state) {
     foreach (key, blackboard in planner.blackboards) {
         if (isdefined(state[key])) {
             plannerblackboard::undo(blackboard, state[key]);
-        } else {
-            planner.blackboards[key] = undefined;
+            continue;
         }
+        planner.blackboards[key] = undefined;
     }
 }
 
@@ -315,7 +315,6 @@ function private _planprocessstack(planner) {
     #/
     result = 1;
     waitedinthrottle = 0;
-LOC_00000058:
     while (_planstackhasnodes(planner)) {
         planner.planstarttime = getrealtime();
         nodeentry = _planstackpeeknode(planner);
@@ -850,8 +849,7 @@ function createplannerfromasset(assetname) {
                 #/
                 childnum = htnnode.childindexes[childindex];
                 childnode = plannernodes[childnum];
-                htnchildnode = htnasset.nodes[childnum];
-                while (htnchildnode.type === #"goto") {
+                for (htnchildnode = htnasset.nodes[childnum]; htnchildnode.type === #"goto"; htnchildnode = htnasset.nodes[childnum]) {
                     /#
                         assert(isdefined(htnchildnode.childindexes));
                     #/
@@ -860,7 +858,6 @@ function createplannerfromasset(assetname) {
                     #/
                     childnum = htnchildnode.childindexes[0];
                     childnode = plannernodes[childnum];
-                    htnchildnode = htnasset.nodes[childnum];
                 }
                 planner::addchild(parentnode, childnode);
             }

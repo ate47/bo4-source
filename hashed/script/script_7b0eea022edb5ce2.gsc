@@ -46,7 +46,7 @@ function autoexec __init__system__() {
 // Size: 0x7e
 function __init__() {
     level.var_96059a93 = getweapon(#"zhield_zpear_dw");
-    level.var_85ed93f4 = getweapon(#"hash_136814846f94f0cd");
+    level.var_85ed93f4 = getweapon(#"zhield_zpear_lh");
     level.var_ce3aa8a8 = getweapon(#"zhield_zpear_turret");
 }
 

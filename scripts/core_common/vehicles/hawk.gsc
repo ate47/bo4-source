@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace hawk/hawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27c87b9e, Offset: 0x1f0
 // Size: 0x4c
 function __init__() {
@@ -29,7 +29,7 @@ function __init__() {
 }
 
 // Namespace hawk/hawk
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x39f71f37, Offset: 0x248
 // Size: 0xbc
 function hawk_initialize() {
@@ -79,7 +79,7 @@ function event_handler[exit_vehicle] codecallback_vehicleexit(eventstruct) {
 }
 
 // Namespace hawk/hawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xeff5ab5e, Offset: 0x4c0
 // Size: 0x1b6
 function private function_a2270a7e(vehicle) {
@@ -108,7 +108,7 @@ function private function_a2270a7e(vehicle) {
 }
 
 // Namespace hawk/hawk
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x7141fb08, Offset: 0x680
 // Size: 0x19c
 function private on_vehicle_killed(params) {
@@ -135,7 +135,7 @@ function private on_vehicle_killed(params) {
 }
 
 // Namespace hawk/hawk
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf38e139c, Offset: 0x828
 // Size: 0x5c4
 function hawk_destroy(var_bb2c398b = 0) {

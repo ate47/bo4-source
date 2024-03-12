@@ -12,7 +12,7 @@
 #namespace proximity_grenade;
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xabe22366, Offset: 0x180
 // Size: 0x43c
 function init_shared() {
@@ -69,7 +69,7 @@ function updatedvars() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xbe4142b9, Offset: 0x888
 // Size: 0x34
 function register() {
@@ -77,7 +77,7 @@ function register() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x56b13921, Offset: 0x8c8
 // Size: 0x15e
 function createproximitygrenadewatcher(watcher) {
@@ -101,7 +101,7 @@ function createproximitygrenadewatcher(watcher) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xb97c0f4b, Offset: 0xa30
 // Size: 0x146
 function creategadgetproximitygrenadewatcher(watcher) {
@@ -124,7 +124,7 @@ function creategadgetproximitygrenadewatcher(watcher) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x6401fd0b, Offset: 0xb80
 // Size: 0xfa
 function onspawnproximitygrenadeweaponobject(watcher, owner) {
@@ -141,7 +141,7 @@ function onspawnproximitygrenadeweaponobject(watcher, owner) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x8f54fa73, Offset: 0xc88
 // Size: 0x8a
 function trackonowner(owner) {
@@ -159,7 +159,7 @@ function trackonowner(owner) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xa46c503f, Offset: 0xd20
 // Size: 0x74
 function setupkillcament() {
@@ -170,7 +170,7 @@ function setupkillcament() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x8a217296, Offset: 0xda0
 // Size: 0x4c
 function cleanupkillcamentondeath() {
@@ -179,7 +179,7 @@ function cleanupkillcamentondeath() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 3, eflags: 0x0
+// Params 3, eflags: 0x1 linked
 // Checksum 0xc7defdde, Offset: 0xdf8
 // Size: 0x124
 function proximitydetonate(attacker, weapon, target) {
@@ -200,7 +200,7 @@ function proximitydetonate(attacker, weapon, target) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 7, eflags: 0x0
+// Params 7, eflags: 0x1 linked
 // Checksum 0xe1dbc3ed, Offset: 0xf28
 // Size: 0xcc
 function proximitygrenadedamageplayer(eattacker, einflictor, killcament, weapon, meansofdeath, damage, proximitychain) {
@@ -211,7 +211,7 @@ function proximitygrenadedamageplayer(eattacker, einflictor, killcament, weapon,
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xbd03e9e9, Offset: 0x1000
 // Size: 0xd6
 function getproximitychain() {
@@ -229,7 +229,7 @@ function getproximitychain() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x43e4b69f, Offset: 0x10e0
 // Size: 0x38
 function chainisactive(chain) {
@@ -240,7 +240,7 @@ function chainisactive(chain) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x32f55fea, Offset: 0x1120
 // Size: 0xdc
 function cleanupproximitychainent() {
@@ -265,7 +265,7 @@ function cleanupproximitychainent() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x3d1bb9d9, Offset: 0x1208
 // Size: 0x3e
 function isinchain(player) {
@@ -274,7 +274,7 @@ function isinchain(player) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0xe1019bae, Offset: 0x1250
 // Size: 0x42
 function addplayertochain(player) {
@@ -283,7 +283,7 @@ function addplayertochain(player) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 8, eflags: 0x0
+// Params 8, eflags: 0x1 linked
 // Checksum 0xd0880b2c, Offset: 0x12a0
 // Size: 0x482
 function proximitygrenadechain(eattacker, einflictor, killcament, weapon, meansofdeath, damage, proximitychain, delay) {
@@ -349,7 +349,7 @@ function proximitygrenadechain(eattacker, einflictor, killcament, weapon, meanso
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 8, eflags: 0x0
+// Params 8, eflags: 0x1 linked
 // Checksum 0xefcd460a, Offset: 0x1730
 // Size: 0x1b4
 function chainplayer(eattacker, killcament, weapon, meansofdeath, damage, proximitychain, player, distancesq) {
@@ -374,7 +374,7 @@ function chainplayer(eattacker, killcament, weapon, meansofdeath, damage, proxim
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 2, eflags: 0x0
+// Params 2, eflags: 0x1 linked
 // Checksum 0x56927083, Offset: 0x18f0
 // Size: 0x1c4
 function tesla_play_arc_fx(target, waittime) {
@@ -409,7 +409,7 @@ function debugchainsphere() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 1, eflags: 0x0
+// Params 1, eflags: 0x1 linked
 // Checksum 0x3ebb3e39, Offset: 0x1b08
 // Size: 0x152
 function watchproximitygrenadehitplayer(owner) {
@@ -446,7 +446,7 @@ function performhudeffects(position, distancetogrenade) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 3, eflags: 0x0
+// Params 3, eflags: 0x1 linked
 // Checksum 0xfb5217e, Offset: 0x1d98
 // Size: 0x48c
 function damageplayerinradius(position, eattacker, killcament) {
@@ -521,7 +521,7 @@ function deleteentonownerdeath(owner) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0xaf2eebe4, Offset: 0x22f0
 // Size: 0x36
 function deleteentaftertime() {
@@ -531,7 +531,7 @@ function deleteentaftertime() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x80b19a40, Offset: 0x2330
 // Size: 0x3c
 function deleteentontimeout() {
@@ -541,7 +541,7 @@ function deleteentontimeout() {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 0, eflags: 0x0
+// Params 0, eflags: 0x1 linked
 // Checksum 0x2f3c458b, Offset: 0x2378
 // Size: 0xcc
 function watch_death() {
@@ -574,7 +574,7 @@ function event_handler[grenade_fire] function_b0604bb3(eventstruct) {
 }
 
 // Namespace proximity_grenade/proximity_grenade
-// Params 5, eflags: 0x0
+// Params 5, eflags: 0x1 linked
 // Checksum 0xefe19385, Offset: 0x2508
 // Size: 0x64
 function on_damage(eattacker, einflictor, weapon, meansofdeath, damage) {

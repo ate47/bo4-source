@@ -55,7 +55,9 @@ function init_fx() {
 function function_2a58f409(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.fx_filled = util::playfxontag(localclientnum, level._effect[#"hash_6a86077d83942719"], self, "tag_origin");
-    } else if (isdefined(self.fx_filled)) {
+        return;
+    }
+    if (isdefined(self.fx_filled)) {
         stopfx(localclientnum, self.fx_filled);
     }
 }
@@ -77,7 +79,9 @@ function function_6295ef8c(localclientnum, oldval, newval, bnewent, binitialsnap
 function discharge_pap(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.discharge_fx = playfx(localclientnum, level._effect[#"discharge_pap"], self.origin);
-    } else if (isdefined(self.discharge_fx)) {
+        return;
+    }
+    if (isdefined(self.discharge_fx)) {
         stopfx(localclientnum, self.discharge_fx);
     }
 }
@@ -89,7 +93,9 @@ function discharge_pap(localclientnum, oldval, newval, bnewent, binitialsnap, fi
 function discharge_perk(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.discharge_fx = util::playfxontag(localclientnum, level._effect[#"discharge_perk"], self, "tag_origin");
-    } else if (isdefined(self.discharge_fx)) {
+        return;
+    }
+    if (isdefined(self.discharge_fx)) {
         stopfx(localclientnum, self.discharge_fx);
     }
 }
@@ -101,7 +107,9 @@ function discharge_perk(localclientnum, oldval, newval, bnewent, binitialsnap, f
 function discharge_wallbuy(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
         self.discharge_fx = playfx(localclientnum, level._effect[#"discharge_wallbuy"], self.origin);
-    } else if (isdefined(self.discharge_fx)) {
+        return;
+    }
+    if (isdefined(self.discharge_fx)) {
         stopfx(localclientnum, self.discharge_fx);
     }
 }

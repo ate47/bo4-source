@@ -80,9 +80,9 @@ function function_7cc8a854() {
     foreach (part in level.var_c07e6d20) {
         if (part trigger::is_trigger_of_type("trigger_use_new")) {
             part triggerenable(0);
-        } else {
-            part hide();
+            continue;
         }
+        part hide();
     }
     mdl_clip = getent("mdl_acid_trap_cauldron_piece_clip", "targetname");
     mdl_clip notsolid();
@@ -150,9 +150,9 @@ function function_55d14d78() {
                 part triggerenable(1);
                 part.script_string = "its_a_trap";
                 zm_lockdown_util::function_d67bafb5(part, "lockdown_stub_type_crafting_tables");
-            } else {
-                part show();
+                continue;
             }
+            part show();
         }
         foreach (s_trap_button in level.a_s_trap_buttons) {
             if (s_trap_button.script_int === 3) {
@@ -169,9 +169,9 @@ function function_55d14d78() {
                 part triggerenable(1);
                 part.script_string = "its_a_trap";
                 zm_lockdown_util::function_d67bafb5(part, "lockdown_stub_type_crafting_tables");
-            } else {
-                part show();
+                continue;
             }
+            part show();
         }
         foreach (s_trap_button in level.a_s_trap_buttons) {
             if (s_trap_button.script_int === 4) {
@@ -188,9 +188,9 @@ function function_55d14d78() {
                 part triggerenable(1);
                 part.script_string = "its_a_trap";
                 zm_lockdown_util::function_d67bafb5(part, "lockdown_stub_type_crafting_tables");
-            } else {
-                part show();
+                continue;
             }
+            part show();
         }
         foreach (s_trap_button in level.a_s_trap_buttons) {
             if (s_trap_button.script_int === 1) {
@@ -207,9 +207,9 @@ function function_55d14d78() {
                 part triggerenable(1);
                 part.script_string = "its_a_trap";
                 zm_lockdown_util::function_d67bafb5(part, "lockdown_stub_type_crafting_tables");
-            } else {
-                part show();
+                continue;
             }
+            part show();
         }
         foreach (s_trap_button in level.a_s_trap_buttons) {
             if (s_trap_button.script_int === 2) {

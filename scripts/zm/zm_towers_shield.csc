@@ -61,7 +61,7 @@ function __init__() {
 // Checksum 0xe4f20d02, Offset: 0x9a0
 // Size: 0x16a
 function function_618e1db4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (self.weapon == getweapon(#"hash_2f351450f2e936dc")) {
+    if (self.weapon == getweapon(#"zhield_zword_turret_upgraded")) {
         var_27aa6343 = level._effect[#"hash_7f665a0db122bf39"];
         var_a1f103c8 = level._effect[#"hash_7f6c660db1273f4b"];
     } else {
@@ -72,9 +72,9 @@ function function_618e1db4(localclientnum, oldval, newval, bnewent, binitialsnap
         if (viewmodelhastag(localclientnum, "tag_barrels_fx")) {
             self.fx_firestorm = playviewmodelfx(localclientnum, var_27aa6343, "tag_barrels_fx");
         }
-    } else {
-        self.fx_firestorm = util::playfxontag(localclientnum, var_a1f103c8, self, "tag_barrels_fx");
+        return;
     }
+    self.fx_firestorm = util::playfxontag(localclientnum, var_a1f103c8, self, "tag_barrels_fx");
 }
 
 // Namespace namespace_52d8d460/zm_towers_shield
@@ -93,7 +93,7 @@ function function_311767a6(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x1c4
 function function_467afa20(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     var_515e20e6 = 0;
-    if (self.weapon == getweapon(#"hash_2f351450f2e936dc")) {
+    if (self.weapon == getweapon(#"zhield_zword_turret_upgraded")) {
         var_515e20e6 = 1;
     }
     if (newval) {
@@ -112,7 +112,9 @@ function function_467afa20(localclientnum, oldval, newval, bnewent, binitialsnap
             }
             self.fx_docked = util::playfxontag(localclientnum, var_2f34467b, self, "tag_blade_fx");
         }
-    } else if (isdefined(self.fx_docked)) {
+        return;
+    }
+    if (isdefined(self.fx_docked)) {
         killfx(localclientnum, self.fx_docked);
     }
 }
@@ -198,13 +200,15 @@ function function_8a2b203b(localclientnum, oldval, newval, bnewent, binitialsnap
             self.fx_katar[#"r"] = playviewmodelfx(localclientnum, var_2b01a8ab, "tag_gem_right3_fx");
             self.fx_katar[#"l"] = playviewmodelfx(localclientnum, var_2b01a8ab, "tag_gem_left3_fx");
         }
-    } else if (isdefined(var_c10d7c76)) {
+        return;
+    }
+    if (isdefined(var_c10d7c76)) {
         self.fx_katar[#"flame_3p"] = util::playfxontag(localclientnum, var_c10d7c76, self, "tag_blade_fx");
         if (var_515e20e6) {
             self.var_d16b03db = util::playfxontag(localclientnum, level._effect[#"hash_5a722d93fee71051"], self, "tag_barrels_fx");
-        } else {
-            self.var_d16b03db = util::playfxontag(localclientnum, level._effect[#"charged_eyes"], self, "tag_barrels_fx");
+            return;
         }
+        self.var_d16b03db = util::playfxontag(localclientnum, level._effect[#"charged_eyes"], self, "tag_barrels_fx");
     }
 }
 

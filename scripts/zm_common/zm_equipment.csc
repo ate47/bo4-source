@@ -72,27 +72,29 @@ function play_fx_for_all_clients(fx, tag, storehandles = 0, forward = undefined)
         for (i = 0; i < numlocalplayers; i++) {
             if (storehandles) {
                 self._equipment_activated_fx[i][self._equipment_activated_fx[i].size] = util::playfxontag(i, fx, self, tag);
-            } else {
-                self_for_client = getentbynum(i, self getentitynumber());
-                if (isdefined(self_for_client)) {
-                    util::playfxontag(i, fx, self_for_client, tag);
-                }
+                continue;
+            }
+            self_for_client = getentbynum(i, self getentitynumber());
+            if (isdefined(self_for_client)) {
+                util::playfxontag(i, fx, self_for_client, tag);
             }
         }
-    } else {
-        for (i = 0; i < numlocalplayers; i++) {
-            if (storehandles) {
-                if (isdefined(forward)) {
-                    self._equipment_activated_fx[i][self._equipment_activated_fx[i].size] = playfx(i, fx, self.origin, forward);
-                } else {
-                    self._equipment_activated_fx[i][self._equipment_activated_fx[i].size] = playfx(i, fx, self.origin);
-                }
-            } else if (isdefined(forward)) {
-                playfx(i, fx, self.origin, forward);
+        return;
+    }
+    for (i = 0; i < numlocalplayers; i++) {
+        if (storehandles) {
+            if (isdefined(forward)) {
+                self._equipment_activated_fx[i][self._equipment_activated_fx[i].size] = playfx(i, fx, self.origin, forward);
             } else {
-                playfx(i, fx, self.origin);
+                self._equipment_activated_fx[i][self._equipment_activated_fx[i].size] = playfx(i, fx, self.origin);
             }
+            continue;
         }
+        if (isdefined(forward)) {
+            playfx(i, fx, self.origin, forward);
+            continue;
+        }
+        playfx(i, fx, self.origin);
     }
 }
 

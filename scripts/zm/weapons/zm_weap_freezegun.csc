@@ -52,9 +52,9 @@ function function_16d503c6(localclientnum, oldval, newval, bnewent, binitialsnap
     self thread util::playfxontag(localclientnum, level._effect[#"hash_2f305a0bea20d6ed"], self, "J_SpineLower");
     if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
         self function_3b6be5ed(localclientnum);
-    } else {
-        self hide();
+        return;
     }
+    self hide();
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -69,9 +69,9 @@ function function_89a4ffa9(localclientnum, oldval, newval, bnewent, binitialsnap
     self thread util::playfxontag(localclientnum, level._effect[#"hash_26d3eeef96a2291e"], self, "J_SpineLower");
     if (!(getdvarint(#"splitscreen_playercount", 1) > 2)) {
         self function_3b6be5ed(localclientnum);
-    } else {
-        self hide();
+        return;
     }
+    self hide();
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -111,9 +111,9 @@ function function_407434d9(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_7cdb7d7f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self thread function_3022a1c2(localclientnum);
-    } else {
-        self thread function_2ee2fcd8(localclientnum);
+        return;
     }
+    self thread function_2ee2fcd8(localclientnum);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -179,9 +179,9 @@ function function_d4bf34b7(localclientnum, key) {
 function function_bf0f2e8f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self thread function_de5f3855(localclientnum);
-    } else {
-        self thread function_9babbcd9(localclientnum);
+        return;
     }
+    self thread function_9babbcd9(localclientnum);
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -354,8 +354,8 @@ function private function_c4fded40(localclientnum, tag_name, gibflag, var_44146a
 function function_3b23bb2f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         self playrenderoverridebundle("rob_tricannon_classified_zombie_ice");
-    } else {
-        self stoprenderoverridebundle("rob_tricannon_classified_zombie_ice");
+        return;
     }
+    self stoprenderoverridebundle("rob_tricannon_classified_zombie_ice");
 }
 

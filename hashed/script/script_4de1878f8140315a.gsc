@@ -38,31 +38,49 @@ class cct_shared_ingame_hint : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"green" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else if (#"grey" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
-        } else if (#"red" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
-        } else if (#"green_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
-        } else if (#"grey_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
-        } else if (#"red_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
-        } else if (#"red_paused" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
-        } else if (#"hash_3d131b584420ca82" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"fadeout" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"green" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        if (#"grey" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 3);
+            return;
+        }
+        if (#"red" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 4);
+            return;
+        }
+        if (#"green_fadeout" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 5);
+            return;
+        }
+        if (#"grey_fadeout" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 6);
+            return;
+        }
+        if (#"red_fadeout" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 7);
+            return;
+        }
+        if (#"red_paused" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 8);
+            return;
+        }
+        if (#"hash_3d131b584420ca82" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 9);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint

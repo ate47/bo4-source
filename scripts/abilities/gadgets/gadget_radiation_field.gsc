@@ -44,9 +44,9 @@ function on_ready(slot, weapon) {
     if (player._gadgets_player[2].name === "gadget_radiation_field") {
         if (player function_d79b93e(player._gadgets_player[2].var_44c79c09)) {
             player clientfield::set_player_uimodel("huditems.abilityHoldToActivate", 0);
-        } else {
-            player clientfield::set_player_uimodel("huditems.abilityHoldToActivate", 1);
+            return;
         }
+        player clientfield::set_player_uimodel("huditems.abilityHoldToActivate", 1);
     }
 }
 
@@ -133,10 +133,8 @@ function sndonoverride_eye_() {
     if (isdefined(player.var_e9791ff9)) {
         objective_setprogress(player.var_e9791ff9, redline);
     }
-    dps = player status_effect::function_7f14a56f();
-    while (dps == 0) {
+    for (dps = player status_effect::function_7f14a56f(); dps == 0; dps = player status_effect::function_7f14a56f()) {
         waitframe(1);
-        dps = player status_effect::function_7f14a56f();
     }
     total_time = player.health / dps;
     start_health = player.health;
@@ -159,7 +157,7 @@ function sndonoverride_eye_() {
             objective_setprogress(player.var_e9791ff9, value);
         }
         if (cur_time > total_time) {
-            break;
+            return;
         }
     }
 }
@@ -418,13 +416,13 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
                     var_adf90433.var_44ff1a4 = var_a2755834;
                     var_a3ca7cb2.var_ba5b487b = 1;
                 }
-            } else {
-                var_a3ca7cb2 status_effect::function_408158ef(var_adf90433.setype, var_adf90433.var_18d16a6b);
-                var_a3ca7cb2.var_38103eed = 0;
-                if (isdefined(var_a3ca7cb2.var_ba5b487b) && var_a3ca7cb2.var_ba5b487b) {
-                    function_7e96addd("exertRadiationSelfEnd", var_a3ca7cb2);
-                    var_a3ca7cb2.var_ba5b487b = 0;
-                }
+                continue;
+            }
+            var_a3ca7cb2 status_effect::function_408158ef(var_adf90433.setype, var_adf90433.var_18d16a6b);
+            var_a3ca7cb2.var_38103eed = 0;
+            if (isdefined(var_a3ca7cb2.var_ba5b487b) && var_a3ca7cb2.var_ba5b487b) {
+                function_7e96addd("exertRadiationSelfEnd", var_a3ca7cb2);
+                var_a3ca7cb2.var_ba5b487b = 0;
             }
         }
         vehicles = getentarraybytype(12);
@@ -520,11 +518,9 @@ function function_579fff1b() {
     wait(isdefined(player.gadget_weapon.var_1123a989 / 1000) ? player.gadget_weapon.var_1123a989 / 1000 : 0.5);
     if (player function_d79b93e(player.gadget_weapon.var_44c79c09)) {
         waspressed = player fragbuttonpressed();
-        var_5aea88c3 = waspressed;
-        while ((!var_5aea88c3 || waspressed) && player function_ff04e054()) {
+        for (var_5aea88c3 = waspressed; (!var_5aea88c3 || waspressed) && player function_ff04e054(); var_5aea88c3 = player fragbuttonpressed()) {
             waitframe(1);
             waspressed = var_5aea88c3;
-            var_5aea88c3 = player fragbuttonpressed();
         }
     } else {
         while (player fragbuttonpressed()) {

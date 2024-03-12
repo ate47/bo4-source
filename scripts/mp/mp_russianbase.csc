@@ -41,21 +41,21 @@ function dom_flag_base_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        break;
+        return;
     }
 }
 
@@ -71,21 +71,21 @@ function dom_flag_cap_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        break;
+        return;
     }
 }
 
@@ -130,16 +130,16 @@ function center_explosion_rope_pulse(localclientnum, oldval, newval, bnewent, bi
 // Size: 0x16c
 function function_bfd25720(localclientnum) {
     level endon(#"hash_6a45a7996febf687");
-    var_377722d[0] = (-1680, -43, 618);
-    var_377722d[1] = (-1694, 1548, 771);
-    var_377722d[2] = (-1229, 1645, 293);
-    var_377722d[3] = (129, 1054, 491);
-    var_377722d[4] = (138, -36, 504);
-    var_377722d[5] = (974, -630, 501);
+    a_v_pa[0] = (-1680, -43, 618);
+    a_v_pa[1] = (-1694, 1548, 771);
+    a_v_pa[2] = (-1229, 1645, 293);
+    a_v_pa[3] = (129, 1054, 491);
+    a_v_pa[4] = (138, -36, 504);
+    a_v_pa[5] = (974, -630, 501);
     while (1) {
         wait(randomintrange(120, 180));
-        foreach (var_cca85da in var_377722d) {
-            playsound(localclientnum, #"hash_5e4a6db5676d1cbd", var_cca85da);
+        foreach (v_pa in a_v_pa) {
+            playsound(localclientnum, #"hash_5e4a6db5676d1cbd", v_pa);
         }
     }
 }

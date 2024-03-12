@@ -102,7 +102,9 @@ function teamplayercountsequal(playercounts) {
     foreach (team, _ in level.teams) {
         if (!isdefined(count)) {
             count = playercounts[team];
-        } else if (count != playercounts[team]) {
+            continue;
+        }
+        if (count != playercounts[team]) {
             return 0;
         }
     }
@@ -152,9 +154,10 @@ function menuautoassign(comingfrommenu) {
                     assignment = teamkeys[2];
                     break;
                 case 4:
-                    jumpiffalse(!isdefined(level.forceautoassign) || !level.forceautoassign) LOC_0000018e;
+                    if (!isdefined(level.forceautoassign) || !level.forceautoassign) {
+                        return;
+                    }
                 default:
-                LOC_0000018e:
                     assignment = "";
                     if (isdefined(level.teams[team])) {
                         assignment = team;
@@ -216,7 +219,9 @@ function teamscoresequal() {
     foreach (team, _ in level.teams) {
         if (!isdefined(score)) {
             score = getteamscore(team);
-        } else if (score != getteamscore(team)) {
+            continue;
+        }
+        if (score != getteamscore(team)) {
             return 0;
         }
     }

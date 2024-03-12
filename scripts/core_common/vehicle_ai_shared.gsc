@@ -364,7 +364,7 @@ function javelin_losetargetatrighttimeprojectile(proj, target) {
             }
             if (distsq < 1200 * 1200) {
                 proj missile_settarget(undefined);
-                break;
+                return;
             }
         }
         wait(0.1);
@@ -425,11 +425,9 @@ function waittill_asm_complete(substate_to_wait, timeout = 10) {
     self endon(#"death");
     self thread waittill_asm_terminated();
     self thread waittill_asm_timeout(timeout);
-    substate = undefined;
-    while (!isdefined(substate) || substate != substate_to_wait && substate != "__terminated__" && substate != "__timeout__") {
+    for (substate = undefined; !isdefined(substate) || substate != substate_to_wait && substate != "__terminated__" && substate != "__timeout__"; substate = waitresult.substate) {
         waitresult = undefined;
         waitresult = self waittill(#"asm_complete");
-        substate = waitresult.substate;
     }
     self notify(#"end_asm_terminated_thread");
     self notify(#"end_asm_timeout_thread");
@@ -445,13 +443,13 @@ function throw_off_balance(damagetype, hitpoint, hitdirection, hitlocationinfo) 
         ang_vel = self getangularvelocity();
         ang_vel = ang_vel + (randomfloatrange(-300, 300), randomfloatrange(-300, 300), randomfloatrange(-300, 300));
         self setangularvelocity(ang_vel);
-    } else {
-        ang_vel = self getangularvelocity();
-        yaw_vel = randomfloatrange(-320, 320);
-        yaw_vel = yaw_vel + math::sign(yaw_vel) * 150;
-        ang_vel = ang_vel + (randomfloatrange(-150, 150), yaw_vel, randomfloatrange(-150, 150));
-        self setangularvelocity(ang_vel);
+        return;
     }
+    ang_vel = self getangularvelocity();
+    yaw_vel = randomfloatrange(-320, 320);
+    yaw_vel = yaw_vel + math::sign(yaw_vel) * 150;
+    ang_vel = ang_vel + (randomfloatrange(-150, 150), yaw_vel, randomfloatrange(-150, 150));
+    self setangularvelocity(ang_vel);
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -502,7 +500,9 @@ function nudge_collision() {
         if (isalive(self) && (normal[2] < 0.6 || !empedoroff)) {
             self setvehvelocity(self.velocity + normal * 90);
             self collision_fx(normal);
-        } else if (empedoroff) {
+            continue;
+        }
+        if (empedoroff) {
             if (isdefined(self.bounced)) {
                 self playsound(#"veh_wasp_wall_imp");
                 self setvehvelocity((0, 0, 0));
@@ -518,17 +518,17 @@ function nudge_collision() {
                 self setvehvelocity(self.velocity + normal * 30);
                 self collision_fx(normal);
             }
-        } else {
-            impact_vel = abs(vectordot(velocity, normal));
-            if (normal[2] < 0.6 && impact_vel < 100) {
-                self setvehvelocity(self.velocity + normal * 90);
-                self collision_fx(normal);
-            } else {
-                self playsound(#"veh_wasp_ground_death");
-                self thread vehicle_death::death_fire_loop_audio();
-                self notify(#"crash_done");
-            }
+            continue;
         }
+        impact_vel = abs(vectordot(velocity, normal));
+        if (normal[2] < 0.6 && impact_vel < 100) {
+            self setvehvelocity(self.velocity + normal * 90);
+            self collision_fx(normal);
+            continue;
+        }
+        self playsound(#"veh_wasp_ground_death");
+        self thread vehicle_death::death_fire_loop_audio();
+        self notify(#"crash_done");
     }
 }
 
@@ -585,14 +585,12 @@ function burning_thread(attacker, inflictor) {
     }
     starttime = gettime();
     interval = max(secondsperonedamage, 0.5);
-    damage = 0;
-    while (util::timesince(starttime) < lastingtime) {
+    for (damage = 0; util::timesince(starttime) < lastingtime; damage = damage - damageint) {
         previoustime = gettime();
         wait(interval);
         damage = damage + util::timesince(previoustime) * damagepersecond;
         damageint = int(damage);
         self dodamage(damageint, self.origin, attacker, self, "none", "MOD_BURNED");
-        damage = damage - damageint;
     }
     self.abnormal_status.burning = 0;
     self vehicle::toggle_burn_fx(0);
@@ -804,12 +802,11 @@ function should_emp(vehicle, weapon, meansofdeath, einflictor, eattacker) {
     }
     if (level.teambased) {
         return (vehicle.team != causer.team);
-    } else {
-        if (isdefined(vehicle.owner)) {
-            return (vehicle.owner != causer);
-        }
-        return (vehicle != causer);
     }
+    if (isdefined(vehicle.owner)) {
+        return (vehicle.owner != causer);
+    }
+    return vehicle != causer;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -838,12 +835,11 @@ function should_burn(vehicle, weapon, meansofdeath, einflictor, eattacker) {
     }
     if (level.teambased) {
         return (vehicle.team != causer.team);
-    } else {
-        if (isdefined(vehicle.owner)) {
-            return (vehicle.owner != causer);
-        }
-        return (vehicle != causer);
     }
+    if (isdefined(vehicle.owner)) {
+        return (vehicle.owner != causer);
+    }
+    return vehicle != causer;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -855,9 +851,9 @@ function startinitialstate(defaultstate = "combat") {
     params.isinitialstate = 1;
     if (isdefined(self.script_startstate)) {
         self set_state(self.script_startstate, params);
-    } else {
-        self set_state(defaultstate, params);
+        return;
     }
+    self set_state(defaultstate, params);
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -879,9 +875,9 @@ function stop_scripted(statename) {
     if (isalive(self) && is_instate("scripted")) {
         if (isdefined(statename)) {
             self set_state(statename);
-        } else {
-            self set_state("combat");
+            return;
         }
+        self set_state("combat");
     }
 }
 
@@ -1026,7 +1022,7 @@ function add_utility_connection(from_state_name, to_state_name, checkfunc, defau
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x11eb22e5, Offset: 0x36b0
 // Size: 0x3c
 function function_b94a7666(from_state_name, on_notify) {
@@ -1307,22 +1303,22 @@ function defaultstate_death_update(params) {
     if (self.delete_on_death === 1) {
         default_death(params);
         vehicle_death::deletewhensafe(0.25);
-    } else {
-        death_type = isdefined(get_death_type(params)) ? get_death_type(params) : "default";
-        switch (death_type) {
-        case #"burning":
-            burning_death(params);
-            break;
-        case #"emped":
-            emped_death(params);
-            break;
-        case #"gibbed":
-            gibbed_death(params);
-            break;
-        default:
-            default_death(params);
-            break;
-        }
+        return;
+    }
+    death_type = isdefined(get_death_type(params)) ? get_death_type(params) : "default";
+    switch (death_type) {
+    case #"burning":
+        burning_death(params);
+        return;
+    case #"emped":
+        emped_death(params);
+        return;
+    case #"gibbed":
+        gibbed_death(params);
+        return;
+    default:
+        default_death(params);
+        return;
     }
 }
 
@@ -1541,7 +1537,7 @@ function function_329f45a4(current_state, to_state, connection, params) {
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x83e4756c, Offset: 0x5448
 // Size: 0x6e
 function function_6664e3af(current_state, to_state_name, connection, params) {
@@ -1699,9 +1695,8 @@ function _less_than_val(left, right) {
 function _cmp_val(left, right, descending) {
     if (descending) {
         return _less_than_val(right, left);
-    } else {
-        return _less_than_val(left, right);
     }
+    return _less_than_val(left, right);
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -1806,7 +1801,7 @@ function positionquery_filter_engagementdist(queryresult, enemy, engagementdista
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
-// Params 4, eflags: 0x0
+// Params 4, eflags: 0x1 linked
 // Checksum 0x1f99b204, Offset: 0x6368
 // Size: 0x2e2
 function positionquery_filter_distawayfromtarget(queryresult, targetarray, distance, tooclosepenalty) {

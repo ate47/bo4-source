@@ -73,7 +73,7 @@ function event_handler[gametype_init] main(eventstruct) {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x111113c2, Offset: 0xda8
 // Size: 0x94
 function start_warzone(localclientnum) {
@@ -85,7 +85,7 @@ function start_warzone(localclientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73742a87, Offset: 0xe48
 // Size: 0x340
 function function_7be1ea25() {
@@ -107,7 +107,7 @@ function function_7be1ea25() {
             x = waitresult.xcoord;
             y = waitresult.ycoord;
             var_bfd46ccc = 2147483647;
-            var_cfa5f67b = 2147483647;
+            var_cfa5f67b = -2147483647;
             trace = bullettrace((x, y, var_bfd46ccc), (x, y, var_cfa5f67b), 0, self, 1);
             position = trace[#"position"];
             objective_add(localclientnum, obj_id, "active", #"hash_4d290db83b852838", position, #"none", waitresult.clientnum);
@@ -118,7 +118,7 @@ function function_7be1ea25() {
 }
 
 // Namespace warzone/warzone
-// Params 5, eflags: 0x1 linked
+// Params 5, eflags: 0x0
 // Checksum 0x4586c866, Offset: 0x1190
 // Size: 0xec
 function function_97d0a8af(local_client_num, obj_id, x, y, clientnum) {
@@ -132,7 +132,7 @@ function function_97d0a8af(local_client_num, obj_id, x, y, clientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x346a7fa4, Offset: 0x1288
 // Size: 0xfe
 function function_783be487() {
@@ -152,7 +152,7 @@ function function_783be487() {
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x952d3fac, Offset: 0x1390
 // Size: 0x2e4
 function function_41f9de03() {
@@ -185,7 +185,7 @@ function function_41f9de03() {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x30385fdd, Offset: 0x1680
 // Size: 0x8c
 function on_localclient_connect(localclientnum) {
@@ -196,7 +196,7 @@ function on_localclient_connect(localclientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7533c111, Offset: 0x1718
 // Size: 0x114
 function on_player_spawned(localclientnum) {
@@ -213,7 +213,7 @@ function on_player_spawned(localclientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73370d5e, Offset: 0x1838
 // Size: 0x24
 function function_c6878ba5() {
@@ -221,7 +221,7 @@ function function_c6878ba5() {
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x29709a80, Offset: 0x1868
 // Size: 0x54
 function function_f6b076db() {
@@ -230,7 +230,7 @@ function function_f6b076db() {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xfc47173b, Offset: 0x18c8
 // Size: 0x1c
 function on_killcam_begin(params) {
@@ -238,7 +238,7 @@ function on_killcam_begin(params) {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x48133783, Offset: 0x18f0
 // Size: 0x1c
 function on_killcam_end(params) {
@@ -246,7 +246,7 @@ function on_killcam_end(params) {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe24f15ad, Offset: 0x1918
 // Size: 0x2c0
 function function_f8c70ad7(localclientnum) {
@@ -289,7 +289,7 @@ function function_f8c70ad7(localclientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdd0de4fb, Offset: 0x1be0
 // Size: 0x46
 function function_e8d2d8c5(notifyhash) {
@@ -300,7 +300,7 @@ function function_e8d2d8c5(notifyhash) {
 }
 
 // Namespace warzone/warzone
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc9311b11, Offset: 0x1c30
 // Size: 0x164
 function function_2dba6c5(localclientnum, var_be9954a5) {
@@ -325,13 +325,13 @@ function function_2dba6c5(localclientnum, var_be9954a5) {
     }
     if (isdefined(level.controllercolor[localclientnum])) {
         setcontrollerlightbarcolor(localclientnum, level.controllercolor[localclientnum]);
-    } else {
-        setcontrollerlightbarcolor(localclientnum);
+        return;
     }
+    setcontrollerlightbarcolor(localclientnum);
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x9844698e, Offset: 0x1da0
 // Size: 0x78
 function function_a1aaf8c0() {
@@ -345,18 +345,16 @@ function function_a1aaf8c0() {
 }
 
 // Namespace warzone/warzone
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x869b373d, Offset: 0x1e20
 // Size: 0x4e
 function function_2985ca96(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
-        goto LOC_0000004c;
     }
-LOC_0000004c:
 }
 
 // Namespace warzone/warzone
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x8eb86708, Offset: 0x1e78
 // Size: 0xfc
 function function_a1b40aa4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -373,13 +371,13 @@ function function_a1b40aa4(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         function_9e9a0604(localclientnum);
-    } else {
-        function_3f258626(localclientnum);
+        return;
     }
+    function_3f258626(localclientnum);
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x9c832cf8, Offset: 0x1f80
 // Size: 0x304
 function private function_3dadedf8(localclientnum) {
@@ -393,26 +391,26 @@ function private function_3dadedf8(localclientnum) {
                 continue;
             }
             if (!(isdefined(player.var_374045a0) && player.var_374045a0)) {
-                jumpiffalse(player ishidden() || player isinfreefall() || player function_9a0edd92()) LOC_0000018a;
-            } else {
-            LOC_0000018a:
-                player.var_374045a0 = 1;
-                if (player getlocalclientnumber() === localclientnum) {
-                    setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.bleedingOverTime"), 1);
+                if (player ishidden() || player isinfreefall() || player function_9a0edd92()) {
+                    continue;
                 }
-                if (bleeding >= 10 || !isalive(player)) {
-                    if (isarray(player.var_88b0c4c3)) {
-                        foreach (handle in player.var_88b0c4c3) {
-                            stopfx(localclientnum, handle);
-                        }
-                        player.var_88b0c4c3 = undefined;
+            }
+            player.var_374045a0 = 1;
+            if (player getlocalclientnumber() === localclientnum) {
+                setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.bleedingOverTime"), 1);
+            }
+            if (bleeding >= 10 || !isalive(player)) {
+                if (isarray(player.var_88b0c4c3)) {
+                    foreach (handle in player.var_88b0c4c3) {
+                        stopfx(localclientnum, handle);
                     }
-                } else {
-                    bleeding++;
-                    if (!isdefined(player.var_88b0c4c3)) {
-                        player.var_88b0c4c3 = playtagfxset(localclientnum, "status_effect_bloody_tracker", player);
-                    }
+                    player.var_88b0c4c3 = undefined;
                 }
+                continue;
+            }
+            bleeding++;
+            if (!isdefined(player.var_88b0c4c3)) {
+                player.var_88b0c4c3 = playtagfxset(localclientnum, "status_effect_bloody_tracker", player);
             }
         }
         players = undefined;
@@ -421,7 +419,7 @@ function private function_3dadedf8(localclientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x80fdefa4, Offset: 0x2290
 // Size: 0xae
 function private function_7e3a43c3(localclientnum) {
@@ -441,7 +439,7 @@ function private function_7e3a43c3(localclientnum) {
 }
 
 // Namespace warzone/warzone
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xaa30a1a, Offset: 0x2348
 // Size: 0x46
 function private function_b522ef5c() {

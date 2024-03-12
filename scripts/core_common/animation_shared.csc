@@ -230,30 +230,30 @@ function call_notetrack_handler(str_note) {
             switch (args.size) {
             case 6:
                 self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5]);
-                break;
+                continue;
             case 5:
                 self [[ func ]](args[0], args[1], args[2], args[3], args[4]);
-                break;
+                continue;
             case 4:
                 self [[ func ]](args[0], args[1], args[2], args[3]);
-                break;
+                continue;
             case 3:
                 self [[ func ]](args[0], args[1], args[2]);
-                break;
+                continue;
             case 2:
                 self [[ func ]](args[0], args[1]);
-                break;
+                continue;
             case 1:
                 self [[ func ]](args[0]);
-                break;
+                continue;
             case 0:
                 self [[ func ]]();
-                break;
+                continue;
             default:
                 /#
                     assertmsg("<unknown string>");
                 #/
-                break;
+                continue;
             }
         }
     }
@@ -292,9 +292,9 @@ function handle_notetracks() {
         str_note = waitresult.notetrack;
         if (str_note != "end" && str_note != "loop_end") {
             self thread call_notetrack_handler(str_note);
-        } else {
-            return;
+            continue;
         }
+        return;
     }
 }
 
@@ -306,16 +306,16 @@ function cracks_on(str_type) {
     switch (str_type) {
     case #"red":
         cf_cracks_on(self.localclientnum, 0, 1);
-        break;
+        return;
     case #"green":
         cf_cracks_on(self.localclientnum, 0, 3);
-        break;
+        return;
     case #"blue":
         cf_cracks_on(self.localclientnum, 0, 2);
-        break;
+        return;
     case #"all":
         cf_cracks_on(self.localclientnum, 0, 4);
-        break;
+        return;
     }
 }
 
@@ -327,16 +327,16 @@ function cracks_off(str_type) {
     switch (str_type) {
     case #"red":
         cf_cracks_off(self.localclientnum, 0, 1);
-        break;
+        return;
     case #"green":
         cf_cracks_off(self.localclientnum, 0, 3);
-        break;
+        return;
     case #"blue":
         cf_cracks_off(self.localclientnum, 0, 2);
-        break;
+        return;
     case #"all":
         cf_cracks_off(self.localclientnum, 0, 4);
-        break;
+        return;
     }
 }
 
@@ -348,13 +348,13 @@ function cf_cracks_on(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     switch (newval) {
     case 1:
         shaderanim::animate_crack(localclientnum, "scriptVector1", 0, 3, 0, 1);
-        break;
+        return;
     case 3:
         shaderanim::animate_crack(localclientnum, "scriptVector2", 0, 3, 0, 1);
-        break;
+        return;
     case 2:
         shaderanim::animate_crack(localclientnum, "scriptVector3", 0, 3, 0, 1);
-        break;
+        return;
     case 4:
         shaderanim::animate_crack(localclientnum, "scriptVector1", 0, 3, 0, 1);
         shaderanim::animate_crack(localclientnum, "scriptVector2", 0, 3, 0, 1);
@@ -371,13 +371,13 @@ function cf_cracks_off(localclientnum, oldval, newval, bnewent, binitialsnap, fi
     switch (newval) {
     case 1:
         shaderanim::animate_crack(localclientnum, "scriptVector1", 0, 0, 1, 0);
-        break;
+        return;
     case 3:
         shaderanim::animate_crack(localclientnum, "scriptVector2", 0, 0, 1, 0);
-        break;
+        return;
     case 2:
         shaderanim::animate_crack(localclientnum, "scriptVector3", 0, 0, 1, 0);
-        break;
+        return;
     case 4:
         shaderanim::animate_crack(localclientnum, "scriptVector1", 0, 0, 1, 0);
         shaderanim::animate_crack(localclientnum, "scriptVector2", 0, 0, 1, 0);

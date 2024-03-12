@@ -38,11 +38,13 @@ function __main__() {
 function function_a45824f(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         forcestreamxmodel(#"wpn_t8_pistol_standard_world");
-    } else if (newval == 2) {
-        forcestreamxmodel(#"wpn_t8_wpn_lmg_hades_world");
-    } else {
-        stopforcestreamingxmodel(#"wpn_t8_pistol_standard_world");
-        stopforcestreamingxmodel(#"wpn_t8_wpn_lmg_hades_world");
+        return;
     }
+    if (newval == 2) {
+        forcestreamxmodel(#"wpn_t8_wpn_lmg_hades_world");
+        return;
+    }
+    stopforcestreamingxmodel(#"wpn_t8_pistol_standard_world");
+    stopforcestreamingxmodel(#"wpn_t8_wpn_lmg_hades_world");
 }
 

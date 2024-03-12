@@ -38,35 +38,57 @@ class czm_towers_crowd_meter : cluielem {
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
             [[ self ]]->set_data(localclientnum, "_state", 0);
-        } else if (#"crowd_server_paused" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
-        } else if (#"crowd_loathes" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
-        } else if (#"crowd_hates" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
-        } else if (#"crowd_no_love" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
-        } else if (#"crowd_warm_up" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
-        } else if (#"crowd_likes" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
-        } else if (#"crowd_loves" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
-        } else if (#"crowd_power_up_available_good" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
-        } else if (#"crowd_power_up_available_bad" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
-        } else if (#"crowd_power_up_available_good_partial" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 10);
-        } else if (#"crowd_power_up_available_bad_partial" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 11);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"crowd_server_paused" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 1);
+            return;
+        }
+        if (#"crowd_loathes" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 2);
+            return;
+        }
+        if (#"crowd_hates" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 3);
+            return;
+        }
+        if (#"crowd_no_love" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 4);
+            return;
+        }
+        if (#"crowd_warm_up" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 5);
+            return;
+        }
+        if (#"crowd_likes" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 6);
+            return;
+        }
+        if (#"crowd_loves" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 7);
+            return;
+        }
+        if (#"crowd_power_up_available_good" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 8);
+            return;
+        }
+        if (#"crowd_power_up_available_bad" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 9);
+            return;
+        }
+        if (#"crowd_power_up_available_good_partial" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 10);
+            return;
+        }
+        if (#"crowd_power_up_available_bad_partial" == state_name) {
+            [[ self ]]->set_data(localclientnum, "_state", 11);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter

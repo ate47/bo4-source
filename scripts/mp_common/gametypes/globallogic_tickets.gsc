@@ -26,7 +26,7 @@ function reset_match_start(total_stages) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8e3b6ef0, Offset: 0x108
 // Size: 0xfc
 function reset_stages(total_stages) {
@@ -40,7 +40,7 @@ function reset_stages(total_stages) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x4a371d5c, Offset: 0x210
 // Size: 0xa8
 function reset_tickets() {
@@ -61,7 +61,7 @@ function setup_mission_ticket_logic(team, zone_index) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x9acdb3f5, Offset: 0x328
 // Size: 0x5c
 function setup_stage_start_tickets(team, zone_index) {
@@ -71,7 +71,7 @@ function setup_stage_start_tickets(team, zone_index) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4c98619, Offset: 0x390
 // Size: 0x68
 function get_zone_start_tickets(zone_index) {
@@ -79,7 +79,7 @@ function get_zone_start_tickets(zone_index) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x117ece, Offset: 0x400
 // Size: 0x190
 function watch_time_penalties(team) {
@@ -98,7 +98,7 @@ function watch_time_penalties(team) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3343d6df, Offset: 0x598
 // Size: 0x1a
 function setup_death_penalties(team) {
@@ -106,7 +106,7 @@ function setup_death_penalties(team) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2edf4a4e, Offset: 0x5c0
 // Size: 0x118
 function on_player_killed() {
@@ -130,7 +130,7 @@ function on_player_killed() {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7c0e91a3, Offset: 0x6e0
 // Size: 0x7c
 function set_tickets(team, tickets) {
@@ -140,7 +140,7 @@ function set_tickets(team, tickets) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xc07c548, Offset: 0x768
 // Size: 0xac
 function earn_tickets(team, tickets) {
@@ -151,7 +151,7 @@ function earn_tickets(team, tickets) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe84a3476, Offset: 0x820
 // Size: 0xac
 function lose_tickets(team, tickets) {
@@ -162,7 +162,7 @@ function lose_tickets(team, tickets) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x747c6d53, Offset: 0x8d8
 // Size: 0x192
 function notify_tickets_updated(team, original_total) {
@@ -183,7 +183,7 @@ function notify_tickets_updated(team, original_total) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x4ebf4c8b, Offset: 0xa78
 // Size: 0x64
 function private clamp_tickets(team) {
@@ -211,7 +211,7 @@ function award_stage_win(team, stage) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x97904702, Offset: 0xbc8
 // Size: 0x68
 function get_stage_win_tickets(stage) {
@@ -230,7 +230,7 @@ function get_tickets(team) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7dfd6b19, Offset: 0xc90
 // Size: 0x60
 function get_stage_tickets(team, stage) {
@@ -241,7 +241,7 @@ function get_stage_tickets(team, stage) {
 }
 
 // Namespace tickets/globallogic_tickets
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4a59b41b, Offset: 0xcf8
 // Size: 0x78
 function notify_stage_tickets_updated(team, stage) {

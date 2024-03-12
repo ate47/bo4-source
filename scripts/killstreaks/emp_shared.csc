@@ -115,12 +115,12 @@ function emp_turret_deploy_start(localclientnum, oldval, newval, bnewent, biniti
     }
     if (newval) {
         self thread emp_turret_deploy(localclientnum);
-    } else {
-        self notify(#"kill_fx_cleanup");
-        if (isdefined(self.fxhandle)) {
-            stopfx(localclientnum, self.fxhandle);
-            self.fxhandle = undefined;
-        }
+        return;
+    }
+    self notify(#"kill_fx_cleanup");
+    if (isdefined(self.fxhandle)) {
+        stopfx(localclientnum, self.fxhandle);
+        self.fxhandle = undefined;
     }
 }
 

@@ -103,9 +103,8 @@ function function_1a9dc208() {
     #/
     if (isdefined(playerrole)) {
         return int(playerrole.var_f0886300 * 1000);
-    } else {
-        return 2000;
     }
+    return 2000;
 }
 
 // Namespace drown/drown
@@ -174,8 +173,7 @@ function player_fade_out_drown_fx(localclientnum) {
     self endon(#"player_fade_out_drown_fx");
     self player_init_drown_values();
     fadestarttime = getservertime(localclientnum);
-    currenttime = getservertime(localclientnum);
-    while (currenttime - fadestarttime < 250) {
+    for (currenttime = getservertime(localclientnum); currenttime - fadestarttime < 250; currenttime = getservertime(localclientnum)) {
         ratio = (currenttime - fadestarttime) / 250;
         outerradius = lerpfloat(self.drown_outerradius, 1.41421, ratio);
         innerradius = lerpfloat(self.drown_innerradius, 1.41421, ratio);
@@ -184,7 +182,6 @@ function player_fade_out_drown_fx(localclientnum) {
         filter::set_filter_drowning_damage_inner_radius(localclientnum, 1, innerradius);
         filter::set_filter_drowning_damage_opacity(localclientnum, 1, opacity);
         waitframe(1);
-        currenttime = getservertime(localclientnum);
     }
     self disable_drown(localclientnum);
 }
@@ -197,10 +194,12 @@ function drown_stage_callback(localclientnum, oldval, newval, bnewent, binitials
     if (newval > 0) {
         self enable_drown(localclientnum, newval);
         self thread player_drown_fx(localclientnum, newval);
-    } else if (!bnewent) {
-        self thread player_fade_out_drown_fx(localclientnum);
-    } else {
-        self disable_drown(localclientnum);
+        return;
     }
+    if (!bnewent) {
+        self thread player_fade_out_drown_fx(localclientnum);
+        return;
+    }
+    self disable_drown(localclientnum);
 }
 

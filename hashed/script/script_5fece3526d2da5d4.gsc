@@ -47,91 +47,169 @@ class cct_shared_ingame_objective : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"timer_on" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
-        } else if (#"hash_7b45e6511e6e3303" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
-        } else if (#"dynobj_killtoearnhellstorm" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
-        } else if (#"hash_1f92740e023d0e37" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
-        } else if (#"dynobj_killtoearnrcxd" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
-        } else if (#"hash_2ad0da501b5586a4" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 7);
-        } else if (#"dynobj_killtoearnswat" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 8);
-        } else if (#"hash_4de4402f8698c768" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 9);
-        } else if (#"dynobj_killtoearnseraphchopper" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 10);
-        } else if (#"hash_2f0272e755f4abf7" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 11);
-        } else if (#"dynobj_killtoearnlightningstrike" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 12);
-        } else if (#"hash_71743ffed428ea2f" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 13);
-        } else if (#"dynobj_killsoldiers" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 14);
-        } else if (#"hash_7d5a07e3680ec561" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 15);
-        } else if (#"dynobj_killwithpurifier" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 16);
-        } else if (#"hash_5ba30c4069a3b28" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 17);
-        } else if (#"dynobj_killmantises" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 18);
-        } else if (#"hash_83700757d6b9194" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 19);
-        } else if (#"dynobj_earnmantis" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 20);
-        } else if (#"hash_2a4442540584316a" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 21);
-        } else if (#"dynobj_earnstraferun" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 22);
-        } else if (#"hash_1a051da4d150816" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 23);
-        } else if (#"dynobj_killtoearnnomadks" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 24);
-        } else if (#"hash_21962bee0a15424" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 25);
-        } else if (#"dynobj_killzombies" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 26);
-        } else if (#"hash_29a3c52abd286a3d" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 27);
-        } else if (#"dynobj_earndart" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 28);
-        } else if (#"hash_34061eae676df48d" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 29);
-        } else if (#"dynobj_teamdefend" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 30);
-        } else if (#"hash_4bfdec8101cde9e7" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 31);
-        } else if (#"dynobj_killspawnbeacons" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 32);
-        } else if (#"hash_1a4b4231363359c4" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 33);
-        } else if (#"dynobj_killwiretrappedenemies" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 34);
-        } else if (#"hash_5c25a457d21d00a3" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 35);
-        } else if (#"oneline" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 36);
-        } else if (#"hash_6e90224596225271" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 37);
-        } else if (#"dynobj_killenemies" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 38);
-        } else if (#"hash_75d2922ca26f2a88" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 39);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"fadeout" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        if (#"timer_on" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            return;
+        }
+        if (#"hash_7b45e6511e6e3303" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            return;
+        }
+        if (#"dynobj_killtoearnhellstorm" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            return;
+        }
+        if (#"hash_1f92740e023d0e37" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
+            return;
+        }
+        if (#"dynobj_killtoearnrcxd" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
+            return;
+        }
+        if (#"hash_2ad0da501b5586a4" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 7);
+            return;
+        }
+        if (#"dynobj_killtoearnswat" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 8);
+            return;
+        }
+        if (#"hash_4de4402f8698c768" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 9);
+            return;
+        }
+        if (#"dynobj_killtoearnseraphchopper" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 10);
+            return;
+        }
+        if (#"hash_2f0272e755f4abf7" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 11);
+            return;
+        }
+        if (#"dynobj_killtoearnlightningstrike" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 12);
+            return;
+        }
+        if (#"hash_71743ffed428ea2f" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 13);
+            return;
+        }
+        if (#"dynobj_killsoldiers" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 14);
+            return;
+        }
+        if (#"hash_7d5a07e3680ec561" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 15);
+            return;
+        }
+        if (#"dynobj_killwithpurifier" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 16);
+            return;
+        }
+        if (#"hash_5ba30c4069a3b28" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 17);
+            return;
+        }
+        if (#"dynobj_killmantises" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 18);
+            return;
+        }
+        if (#"hash_83700757d6b9194" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 19);
+            return;
+        }
+        if (#"dynobj_earnmantis" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 20);
+            return;
+        }
+        if (#"hash_2a4442540584316a" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 21);
+            return;
+        }
+        if (#"dynobj_earnstraferun" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 22);
+            return;
+        }
+        if (#"hash_1a051da4d150816" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 23);
+            return;
+        }
+        if (#"dynobj_killtoearnnomadks" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 24);
+            return;
+        }
+        if (#"hash_21962bee0a15424" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 25);
+            return;
+        }
+        if (#"dynobj_killzombies" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 26);
+            return;
+        }
+        if (#"hash_29a3c52abd286a3d" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 27);
+            return;
+        }
+        if (#"dynobj_earndart" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 28);
+            return;
+        }
+        if (#"hash_34061eae676df48d" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 29);
+            return;
+        }
+        if (#"dynobj_teamdefend" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 30);
+            return;
+        }
+        if (#"hash_4bfdec8101cde9e7" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 31);
+            return;
+        }
+        if (#"dynobj_killspawnbeacons" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 32);
+            return;
+        }
+        if (#"hash_1a4b4231363359c4" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 33);
+            return;
+        }
+        if (#"dynobj_killwiretrappedenemies" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 34);
+            return;
+        }
+        if (#"hash_5c25a457d21d00a3" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 35);
+            return;
+        }
+        if (#"oneline" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 36);
+            return;
+        }
+        if (#"hash_6e90224596225271" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 37);
+            return;
+        }
+        if (#"dynobj_killenemies" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 38);
+            return;
+        }
+        if (#"hash_75d2922ca26f2a88" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 39);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective

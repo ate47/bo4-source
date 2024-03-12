@@ -54,9 +54,9 @@ function private on_end(round_reset) {
 function private on_weapon_fired(params) {
     if (zm_weapons::is_explosive_weapon(params.weapon)) {
         self zm_score::player_reduce_points("take_specified", level.var_d34d02af * 2);
-    } else {
-        self zm_score::player_reduce_points("take_specified", level.var_d34d02af);
+        return;
     }
+    self zm_score::player_reduce_points("take_specified", level.var_d34d02af);
 }
 
 // Namespace namespace_983e5028/namespace_983e5028

@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_ix_stanton/character_unlock_ix_stanton
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbd4b4364, Offset: 0xe8
 // Size: 0x34
 function __init__() {
@@ -25,7 +25,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_ix_stanton/character_unlock_ix_stanton
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xccf13011, Offset: 0x128
 // Size: 0xa4
 function function_2613aeec(enabled) {
@@ -37,7 +37,7 @@ function function_2613aeec(enabled) {
 }
 
 // Namespace character_unlock_ix_stanton/character_unlock_ix_stanton
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xed3aca5e, Offset: 0x1d8
 // Size: 0xd4
 function function_1c4b5097(item) {
@@ -52,7 +52,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_ix_stanton/character_unlock_ix_stanton
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3a9e516, Offset: 0x2b8
 // Size: 0xc4
 function on_use_perk(player) {
@@ -72,7 +72,7 @@ function on_use_perk(player) {
 }
 
 // Namespace character_unlock_ix_stanton/character_unlock_ix_stanton
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ea45e33, Offset: 0x388
 // Size: 0x1e2
 function function_4ac25840(dead_team) {
@@ -96,7 +96,7 @@ function function_4ac25840(dead_team) {
 }
 
 // Namespace character_unlock_ix_stanton/character_unlock_ix_stanton
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0x7d9db1db, Offset: 0x578
 // Size: 0x80
 function private function_c816ea5b() {

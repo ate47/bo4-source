@@ -63,35 +63,57 @@ class cct_shared_aar : cluielem {
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
             player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
-        } else if (#"success_fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
-        } else if (#"hash_e4c570778eda419" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
-        } else if (#"fail" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
-        } else if (#"fail_fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
-        } else if (#"win_gold" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
-        } else if (#"win_silver" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
-        } else if (#"win_bronze" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 7);
-        } else if (#"hash_18174a43e0ca3b90" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 8);
-        } else if (#"hash_3327faf4ae535f2b" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 9);
-        } else if (#"hash_32ceb5e1ecc00d78" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 10);
-        } else if (#"hash_71b423d13c228d59" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 11);
-        } else {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            return;
         }
+        if (#"success_fadeout" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            return;
+        }
+        if (#"hash_e4c570778eda419" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            return;
+        }
+        if (#"fail" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            return;
+        }
+        if (#"fail_fadeout" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            return;
+        }
+        if (#"win_gold" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
+            return;
+        }
+        if (#"win_silver" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
+            return;
+        }
+        if (#"win_bronze" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 7);
+            return;
+        }
+        if (#"hash_18174a43e0ca3b90" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 8);
+            return;
+        }
+        if (#"hash_3327faf4ae535f2b" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 9);
+            return;
+        }
+        if (#"hash_32ceb5e1ecc00d78" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 10);
+            return;
+        }
+        if (#"hash_71b423d13c228d59" == state_name) {
+            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 11);
+            return;
+        }
+        /#
+            /#
+                assertmsg("<unknown string>");
+            #/
+        #/
     }
 
     // Namespace cct_shared_aar/ct_shared_aar

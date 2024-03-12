@@ -8,9 +8,9 @@
 function function_ea37c549(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval != 0) {
         self thread function_9b4598a4();
-    } else {
-        self thread function_94ce9f97();
+        return;
     }
+    self thread function_94ce9f97();
 }
 
 // Namespace status_effect_wound/status_effect_wound

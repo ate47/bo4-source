@@ -68,7 +68,7 @@ function testhps() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb71b7348, Offset: 0x390
 // Size: 0x10e
 function timeuntilroundend() {
@@ -92,7 +92,7 @@ function timeuntilroundend() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x80fee7ff, Offset: 0x4a8
 // Size: 0x3c
 function gettimeremaining() {
@@ -100,7 +100,7 @@ function gettimeremaining() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa8f24c3c, Offset: 0x4f0
 // Size: 0x46
 function registerpostroundevent(eventfunc) {
@@ -111,7 +111,7 @@ function registerpostroundevent(eventfunc) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x28e7e3f3, Offset: 0x540
 // Size: 0x58
 function executepostroundevents() {
@@ -130,11 +130,11 @@ function executepostroundevents() {
 function getvalueinrange(value, minvalue, maxvalue) {
     if (value > maxvalue) {
         return maxvalue;
-    } else if (value < minvalue) {
-        return minvalue;
-    } else {
-        return value;
     }
+    if (value < minvalue) {
+        return minvalue;
+    }
+    return value;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -158,26 +158,26 @@ function assertproperplacement() {
                     break;
                 }
             }
-        } else {
-            for (i = 0; i < numplayers - 1; i++) {
-                if (level.placement[#"all"][i].pointstowin < level.placement[#"all"][i + 1].pointstowin) {
-                    println("<unknown string>");
-                    for (j = 0; j < numplayers; j++) {
-                        player = level.placement[#"all"][j];
-                        println("<unknown string>" + j + "<unknown string>" + player.name + "<unknown string>" + player.pointstowin);
-                    }
-                    /#
-                        assertmsg("<unknown string>");
-                    #/
-                    break;
+            return;
+        }
+        for (i = 0; i < numplayers - 1; i++) {
+            if (level.placement[#"all"][i].pointstowin < level.placement[#"all"][i + 1].pointstowin) {
+                println("<unknown string>");
+                for (j = 0; j < numplayers; j++) {
+                    player = level.placement[#"all"][j];
+                    println("<unknown string>" + j + "<unknown string>" + player.name + "<unknown string>" + player.pointstowin);
                 }
+                /#
+                    assertmsg("<unknown string>");
+                #/
+                return;
             }
         }
     #/
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb459de5, Offset: 0x8d0
 // Size: 0x22
 function isvalidclass(c) {
@@ -222,7 +222,7 @@ function stoptickingsound() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb62a9b3e, Offset: 0xa48
 // Size: 0x10c
 function gametimer() {
@@ -248,7 +248,7 @@ function gametimer() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x39180d29, Offset: 0xb60
 // Size: 0x7c
 function disableplayerroundstartdelay() {
@@ -261,7 +261,7 @@ function disableplayerroundstartdelay() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaa863064, Offset: 0xbe8
 // Size: 0x54
 function getroundstartdelay() {
@@ -273,7 +273,7 @@ function getroundstartdelay() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7c0e0ffa, Offset: 0xc48
 // Size: 0x9c
 function applyroundstartdelay() {
@@ -288,7 +288,7 @@ function applyroundstartdelay() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x27108563, Offset: 0xcf0
 // Size: 0x66
 function gettimepassed() {
@@ -297,9 +297,8 @@ function gettimepassed() {
     }
     if (level.timerstopped) {
         return (level.timerpausetime - level.starttime - level.discardtime);
-    } else {
-        return (gettime() - level.starttime - level.discardtime);
     }
+    return gettime() - level.starttime - level.discardtime;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -341,7 +340,7 @@ function resumetimerdiscardoverride(discardtime) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa5c1e111, Offset: 0xe68
 // Size: 0x9e
 function getscoreremaining(team) {
@@ -351,13 +350,12 @@ function getscoreremaining(team) {
     scorelimit = level.scorelimit;
     if (isplayer(self)) {
         return (scorelimit - globallogic_score::_getplayerscore(self));
-    } else {
-        return (scorelimit - getteamscore(team));
     }
+    return scorelimit - getteamscore(team);
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x35b6b5a7, Offset: 0xf10
 // Size: 0x6a
 function getteamscoreforround(team) {
@@ -368,7 +366,7 @@ function getteamscoreforround(team) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x914af0ab, Offset: 0xf88
 // Size: 0xd2
 function getscoreperminute(team) {
@@ -378,13 +376,12 @@ function getscoreperminute(team) {
     minutespassed = gettimepassed() / int(60 * 1000) + 0.0001;
     if (isplayer(self)) {
         return (globallogic_score::_getplayerscore(self) / minutespassed);
-    } else {
-        return (getteamscoreforround(team) / minutespassed);
     }
+    return getteamscoreforround(team) / minutespassed;
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xd43231d0, Offset: 0x1068
 // Size: 0x9a
 function getestimatedtimeuntilscorelimit(team) {
@@ -412,7 +409,7 @@ function rumbler() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4d77e9d3, Offset: 0x1160
 // Size: 0x24
 function waitfortimeornotify(time, notifyname) {
@@ -436,7 +433,7 @@ function waitfortimeornotifynoartillery(time, notifyname) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x466d8b16, Offset: 0x11f8
 // Size: 0x140
 function isheadshot(weapon, shitloc, smeansofdeath, einflictor) {
@@ -492,7 +489,6 @@ function gethitlocheight(shitloc) {
     case #"left_foot":
     case #"right_foot":
         return 5;
-        break;
     }
     return 48;
 }
@@ -511,7 +507,7 @@ function debugline(start, end) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xbf95909, Offset: 0x1518
 // Size: 0x7c
 function isexcluded(entity, entitylist) {
@@ -527,7 +523,7 @@ function isexcluded(entity, entitylist) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x4cd05528, Offset: 0x15a0
 // Size: 0x2a
 function function_4aa8d809(index, string) {
@@ -535,7 +531,7 @@ function function_4aa8d809(index, string) {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x822637ca, Offset: 0x15d8
 // Size: 0x22c
 function function_8d61a6c2(var_c1e98979) {
@@ -597,7 +593,7 @@ function print_map_errors() {
 }
 
 // Namespace globallogic_utils/globallogic_utils
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x79d32cec, Offset: 0x1948
 // Size: 0x22
 function function_308e3379() {

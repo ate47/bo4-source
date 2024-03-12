@@ -35,9 +35,8 @@ function init() {
 function function_47569560() {
     if (currentsessionmode() == 0) {
         return #"zm_lobby_struct";
-    } else {
-        return #"draft_team_struct_allies";
     }
+    return #"draft_team_struct_allies";
 }
 
 // Namespace draft/frontend_draft
@@ -308,10 +307,8 @@ function update_team(localclientnum, characterselected = 0) {
     } else {
         var_dde5862c = function_77ccb73(1);
     }
-    var_e1d25028 = getuimodel(getuimodelforcontroller(localclientnum), "PositionDraftClients");
-    while (!isdefined(var_e1d25028)) {
+    for (var_e1d25028 = getuimodel(getuimodelforcontroller(localclientnum), "PositionDraftClients"); !isdefined(var_e1d25028); var_e1d25028 = getuimodel(getuimodelforcontroller(localclientnum), "PositionDraftClients")) {
         waitframe(1);
-        var_e1d25028 = getuimodel(getuimodelforcontroller(localclientnum), "PositionDraftClients");
     }
     var_d63ec5a3 = function_f39eac8f(var_dde5862c, var_e1d25028);
     while (var_dde5862c.size < 5) {
@@ -385,7 +382,7 @@ function setup_team(localclientnum) {
     for (i = 0; 1; i++) {
         var_3ec3c6aa = function_75442e78(i);
         if (!isdefined(var_3ec3c6aa)) {
-            break;
+            return;
         }
         if (!isdefined(level.draftcharacters[i])) {
             model = util::spawn_model(localclientnum, "tag_origin", var_3ec3c6aa.origin, var_3ec3c6aa.angles);
@@ -441,9 +438,9 @@ function function_9c896b69(localclientnum) {
         if (waitresult._notify == #"hash_6f2435126950e914") {
             level childthread update_team(localclientnum, 1);
             level childthread function_1cf2437c(localclientnum, waitresult.characterindex);
-        } else {
-            level childthread update_team(localclientnum, 0);
+            continue;
         }
+        level childthread update_team(localclientnum, 0);
     }
 }
 
@@ -460,9 +457,8 @@ function function_4f269ca3(var_d0b01271) {
             if (isdefined(gesture) && isdefined(gesture.animation)) {
                 var_bc8cfff8 = 1;
                 break;
-            } else {
-                gesture_index = randomint(350);
             }
+            gesture_index = randomint(350);
         }
         if (var_bc8cfff8) {
             thread [[ var_d0b01271 ]]->play_gesture(gesture_index, 1, 1, 0);
@@ -523,12 +519,36 @@ function function_393e6d42() {
                     }
                 }
             }
-        } else {
-            foreach (var_d0b01271 in level.draftcharacters) {
-                var_2d0192e5 = [[ var_d0b01271 ]]->function_82e05d64();
-                if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.xuid)) {
-                    xuid = xuidtostring(var_2d0192e5.xuid);
-                    if (xuid === waitresult.xuid) {
+            continue;
+        }
+        foreach (var_d0b01271 in level.draftcharacters) {
+            var_2d0192e5 = [[ var_d0b01271 ]]->function_82e05d64();
+            if (isdefined(var_2d0192e5) && isdefined(var_2d0192e5.xuid)) {
+                xuid = xuidtostring(var_2d0192e5.xuid);
+                if (xuid === waitresult.xuid) {
+                    if (waitresult.gesture_index == -1) {
+                        var_d0b01271 notify(#"cancel_gesture");
+                        character_customization::function_bee62aa1(var_d0b01271);
+                        var_d0b01271 cancel_spray();
+                    } else if (function_b72088f(waitresult.gesture_index)) {
+                        thread [[ var_d0b01271 ]]->play_gesture(waitresult.gesture_index, 1, 1, 0);
+                        var_d0b01271 cancel_spray();
+                    } else {
+                        var_d0b01271 notify(#"cancel_gesture");
+                        character_customization::function_bee62aa1(var_d0b01271);
+                        var_d0b01271 thread function_66e7c332(waitresult.gesture_index);
+                        thread [[ var_d0b01271 ]]->play_gesture(-1, 1, 1, 0);
+                    }
+                    break;
+                }
+            }
+        }
+        if (isdefined(level.var_6f1da91a)) {
+            var_3a76595 = level.var_6f1da91a[function_f701ad2a()];
+            if (isdefined(var_3a76595)) {
+                foreach (var_61d77bf6 in var_3a76595) {
+                    if (isdefined(var_61d77bf6) && isdefined(var_61d77bf6.character) && var_61d77bf6.character._xuid === waitresult.xuid) {
+                        var_d0b01271 = var_61d77bf6.character;
                         if (waitresult.gesture_index == -1) {
                             var_d0b01271 notify(#"cancel_gesture");
                             character_customization::function_bee62aa1(var_d0b01271);
@@ -543,30 +563,6 @@ function function_393e6d42() {
                             thread [[ var_d0b01271 ]]->play_gesture(-1, 1, 1, 0);
                         }
                         break;
-                    }
-                }
-            }
-            if (isdefined(level.var_6f1da91a)) {
-                var_3a76595 = level.var_6f1da91a[function_f701ad2a()];
-                if (isdefined(var_3a76595)) {
-                    foreach (var_61d77bf6 in var_3a76595) {
-                        if (isdefined(var_61d77bf6) && isdefined(var_61d77bf6.character) && var_61d77bf6.character._xuid === waitresult.xuid) {
-                            var_d0b01271 = var_61d77bf6.character;
-                            if (waitresult.gesture_index == -1) {
-                                var_d0b01271 notify(#"cancel_gesture");
-                                character_customization::function_bee62aa1(var_d0b01271);
-                                var_d0b01271 cancel_spray();
-                            } else if (function_b72088f(waitresult.gesture_index)) {
-                                thread [[ var_d0b01271 ]]->play_gesture(waitresult.gesture_index, 1, 1, 0);
-                                var_d0b01271 cancel_spray();
-                            } else {
-                                var_d0b01271 notify(#"cancel_gesture");
-                                character_customization::function_bee62aa1(var_d0b01271);
-                                var_d0b01271 thread function_66e7c332(waitresult.gesture_index);
-                                thread [[ var_d0b01271 ]]->play_gesture(-1, 1, 1, 0);
-                            }
-                            break;
-                        }
                     }
                 }
             }

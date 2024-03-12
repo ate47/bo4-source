@@ -42,9 +42,8 @@ function getstructblackboardattribute(struct, attributename) {
         getterfunction = struct.__blackboard[attributename];
         attributevalue = struct [[ getterfunction ]]();
         return attributevalue;
-    } else {
-        return struct.__blackboard[attributename];
     }
+    return struct.__blackboard[attributename];
 }
 
 // Namespace blackboard/blackboard

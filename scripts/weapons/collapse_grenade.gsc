@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xae1169a4, Offset: 0x1a8
 // Size: 0x9c
 function init_shared() {
@@ -32,7 +32,7 @@ function init_shared() {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9a6e9510, Offset: 0x250
 // Size: 0x3e
 function function_41625261(watcher) {
@@ -41,7 +41,7 @@ function function_41625261(watcher) {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x67e26bc8, Offset: 0x298
 // Size: 0x3e4
 function function_5df80e43(watcher, player) {
@@ -74,7 +74,9 @@ function function_5df80e43(watcher, player) {
                 if (time >= var_f4d9a132) {
                     player dodamage(5, grenade.origin, grenade.owner, grenade, undefined, "MOD_DEATH_CIRCLE", 0, grenade_weapon);
                 }
-            } else if (isdefined(player.var_fd6d6c7b) && player.var_fd6d6c7b == var_5ff47c38) {
+                continue;
+            }
+            if (isdefined(player.var_fd6d6c7b) && player.var_fd6d6c7b == var_5ff47c38) {
                 player.var_fd6d6c7b = undefined;
                 player clientfield::set_to_player("playerincollapsegrenade", 0);
             }
@@ -87,7 +89,7 @@ function function_5df80e43(watcher, player) {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x16dc28ca, Offset: 0x688
 // Size: 0x114
 function function_adc9aab9(var_5ff47c38) {
@@ -103,7 +105,7 @@ function function_adc9aab9(var_5ff47c38) {
 }
 
 // Namespace collapsegrenade/collapse_grenade
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf594f8c5, Offset: 0x7a8
 // Size: 0x1aa
 function on_damage(watcher) {

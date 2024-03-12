@@ -60,9 +60,9 @@ function gadget_hero_weapon_on_give(slot, weapon) {
             self setweaponammostock(weapon, stock);
         }
         self hero_handle_ammo_save(slot, weapon);
-    } else {
-        self gadgetcharging(slot, 1);
+        return;
     }
+    self gadgetcharging(slot, 1);
 }
 
 // Namespace hero_weapon/gadget_hero_weapon

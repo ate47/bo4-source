@@ -84,12 +84,9 @@ function function_2691bc1b() {
 // Checksum 0x855f29d0, Offset: 0x830
 // Size: 0x6c
 function function_43ad0547(player) {
-    parent = self getlinkedent();
-    while (isdefined(parent)) {
+    for (parent = self getlinkedent(); isdefined(parent); parent = parent getlinkedent()) {
         if (parent == player) {
             return 1;
-        } else {
-            parent = parent getlinkedent();
         }
     }
     return 0;
@@ -131,7 +128,9 @@ function setuppropplayernames(localclientnum) {
                         player.var_776a1340 = 1;
                     }
                 }
-            } else if (isdefined(player.var_776a1340) && player.var_776a1340) {
+                continue;
+            }
+            if (isdefined(player.var_776a1340) && player.var_776a1340) {
                 player.prop = function_1d9539dd(localclientnum, player);
                 if (isdefined(player.prop)) {
                     player.prop setdrawownername(0, spectating);
@@ -152,9 +151,9 @@ function highlightprop(localclientnum, oldval, newval, bnewent, binitialsnap, fi
         self notify(#"hash_3fe34dcd29fd6a0f");
         self duplicate_render::update_dr_flag(localclientnum, "prop_ally", 0);
         self duplicate_render::update_dr_flag(localclientnum, "prop_clone", 0);
-    } else {
-        self thread function_15e0dfb8(localclientnum, newval);
+        return;
     }
+    self thread function_15e0dfb8(localclientnum, newval);
 }
 
 // Namespace prop/prop
@@ -190,9 +189,9 @@ function function_3c95ba87(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval == 0) {
         self notify(#"hash_3fe34dcd29fd6a0f");
         self duplicate_render::update_dr_flag(localclientnum, "prop_clone", 0);
-    } else {
-        self thread function_29561f83(localclientnum, newval);
+        return;
     }
+    self thread function_29561f83(localclientnum, newval);
 }
 
 // Namespace prop/prop
@@ -206,7 +205,7 @@ function function_29561f83(localclientnum, var_dc9f0c39) {
     while (1) {
         localplayer = function_5c10bd79(localclientnum);
         if (!isdefined(self) || !isdefined(localplayer)) {
-            break;
+            return;
         }
         var_6955388c = self != localplayer && isdefined(self.team) && isdefined(localplayer.team) && self.team == localplayer.team;
         self duplicate_render::update_dr_flag(localclientnum, "prop_clone", var_6955388c);
@@ -225,7 +224,9 @@ function hideprop(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         if (isdefined(self.prop)) {
             self.prop playrenderoverridebundle(#"hash_14be6378dfef6b7");
         }
-    } else if (isdefined(self.prop)) {
+        return;
+    }
+    if (isdefined(self.prop)) {
         self.prop stoprenderoverridebundle(#"hash_14be6378dfef6b7");
     }
 }
@@ -240,9 +241,9 @@ function function_abaafe9a(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!self function_b9fceaaf(localclientnum)) {
             self show();
         }
-    } else {
-        self function_f6c0a66e(localclientnum, newval);
+        return;
     }
+    self function_f6c0a66e(localclientnum, newval);
 }
 
 // Namespace prop/prop
@@ -320,8 +321,8 @@ function function_f6c0a66e(localclientnum, teamint) {
 function function_a1b40aa4(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         function_9e9a0604(localclientnum);
-    } else {
-        function_3f258626(localclientnum);
+        return;
     }
+    function_3f258626(localclientnum);
 }
 

@@ -119,10 +119,10 @@ function arc_damage(source_enemy, player, arc_num, params = level.default_lightn
         }
         if (lc_end_arc_damage(arc_num + 1, player.tesla_enemies_hit, params)) {
             lc_flag_hit(enemies[i], 0);
-        } else {
-            player.tesla_enemies_hit++;
-            enemies[i] arc_damage(self, player, arc_num + 1, params);
+            continue;
         }
+        player.tesla_enemies_hit++;
+        enemies[i] arc_damage(self, player, arc_num + 1, params);
     }
 }
 
@@ -220,17 +220,19 @@ function private lc_flag_hit(enemy, hit) {
                 if (isdefined(enemy[i])) {
                     if (hit) {
                         enemy[i] ai::stun();
-                    } else {
-                        enemy[i] ai::clear_stun();
+                        continue;
                     }
+                    enemy[i] ai::clear_stun();
                 }
             }
-        } else if (isdefined(enemy)) {
+            return;
+        }
+        if (isdefined(enemy)) {
             if (hit) {
                 enemy ai::stun();
-            } else {
-                enemy ai::clear_stun();
+                return;
             }
+            enemy ai::clear_stun();
         }
     }
 }
@@ -305,7 +307,9 @@ function private lc_do_damage(source_enemy, arc_num, player, params) {
         if (isdefined(params.challenge_stat_name) && isdefined(player) && isplayer(player)) {
             player zm_stats::increment_challenge_stat(params.challenge_stat_name);
         }
-    } else if (isdefined(params.n_damage_max)) {
+        return;
+    }
+    if (isdefined(params.n_damage_max)) {
         self thread function_915d4fec(params, origin, player);
     }
 }
@@ -356,15 +360,11 @@ function lc_play_death_fx(arc_num, params) {
         n_fx = 3;
     }
     if (params.no_fx) {
-        goto LOC_00000182;
-    }
-    if (params.clientside_fx && b_can_clientside) {
+    } else if (params.clientside_fx && b_can_clientside) {
         clientfield::set("lc_death_fx", n_fx);
     } else {
         zm_net::network_safe_play_fx_on_tag("tesla_death_fx", 2, level._effect[fx], self, tag);
-    LOC_00000182:
     }
-LOC_00000182:
     if (isdefined(self.tesla_head_gib_func) && !self.head_gibbed && params.should_kill_enemies && !(isdefined(self.no_gib) && self.no_gib)) {
         [[ self.tesla_head_gib_func ]]();
     }

@@ -130,19 +130,19 @@ function updatedebuginfointernal() {
     /#
         if (isdefined(anim.debugent) && anim.debugent == self) {
             doinfo = 1;
-        } else {
-            doinfo = getdvarint(#"ai_debuganimscript", 0) > 0;
-            if (doinfo) {
-                ai_entnum = getdvarint(#"ai_debugentindex", 0);
-                if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
-                    doinfo = 0;
-                }
-            }
-            if (!self.debuginfo.enabled && doinfo) {
-                self.debuginfo.shouldclearonanimscriptchange = 1;
-            }
-            self.debuginfo.enabled = doinfo;
+            return;
         }
+        doinfo = getdvarint(#"ai_debuganimscript", 0) > 0;
+        if (doinfo) {
+            ai_entnum = getdvarint(#"ai_debugentindex", 0);
+            if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
+                doinfo = 0;
+            }
+        }
+        if (!self.debuginfo.enabled && doinfo) {
+            self.debuginfo.shouldclearonanimscriptchange = 1;
+        }
+        self.debuginfo.enabled = doinfo;
     #/
 }
 
@@ -163,9 +163,9 @@ function drawdebugenttext(text, ent, color, channel) {
             indentlevel = vectorscale(vectorscale((0, 0, -1), 10), ent.debuganimscriptlevel);
             print3d(self.origin + vectorscale((0, 0, 1), 70) + indentlevel, text, color);
             ent.debuganimscriptlevel++;
-        } else {
-            recordenttext(text, ent, color, channel);
+            return;
         }
+        recordenttext(text, ent, color, channel);
     #/
 }
 
@@ -230,7 +230,9 @@ function debugaddstateinfo(statename, extrainfo) {
                     break;
                 }
             }
-        } else if (self.debuginfo.states.size > 0) {
+            return;
+        }
+        if (self.debuginfo.states.size > 0) {
             lastindex = self.debuginfo.states.size - 1;
             /#
                 assert(isdefined(self.debuginfo.states[lastindex]));
@@ -274,14 +276,14 @@ function debugpopstate(statename, exitreason) {
                     break;
                 }
             }
-        } else {
-            for (i = self.debuginfo.states.size - 1; i >= 0; i--) {
-                if (self.debuginfo.states[i].statevalid) {
-                    self.debuginfo.states[i].statevalid = 0;
-                    self.debuginfo.states[i].exitreason = exitreason;
-                    self.debuginfo.statelevel--;
-                    break;
-                }
+            return;
+        }
+        for (i = self.debuginfo.states.size - 1; i >= 0; i--) {
+            if (self.debuginfo.states[i].statevalid) {
+                self.debuginfo.states[i].statevalid = 0;
+                self.debuginfo.states[i].exitreason = exitreason;
+                self.debuginfo.statelevel--;
+                return;
             }
         }
     #/
@@ -379,10 +381,10 @@ function debugdrawweightedpoint(entity, point, weight, lowestvalue, highestvalue
         if (weight <= midvalue) {
             redcolor = 1 - abs((weight - lowestvalue) / halfdeltavalue);
             recordcircle(point, 2, (redcolor, 0, 0), "<unknown string>", entity);
-        } else {
-            greencolor = 1 - abs((highestvalue - weight) / halfdeltavalue);
-            recordcircle(point, 2, (0, greencolor, 0), "<unknown string>", entity);
+            return;
         }
+        greencolor = 1 - abs((highestvalue - weight) / halfdeltavalue);
+        recordcircle(point, 2, (0, greencolor, 0), "<unknown string>", entity);
     #/
 }
 

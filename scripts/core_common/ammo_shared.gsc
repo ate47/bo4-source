@@ -81,29 +81,31 @@ function ammo_pouch_think() {
             continue;
         }
         if (weapon.rootweapon == level.weaponsatchelcharge) {
-            jumpiffalse(player weaponobjects::anyobjectsinworld(weapon.rootweapon)) LOC_00000398;
-        } else {
-        LOC_00000398:
-            stock = player getweaponammostock(weapon);
-            if (weapon.isheavyweapon && isdefined(level.overrideammodropheavyweapon) && level.overrideammodropheavyweapon) {
-                ammo = stock + weapon.clipsize;
-                if (ammo > maxammo) {
-                    ammo = maxammo;
-                }
-                player setweaponammostock(weapon, ammo);
-                player.scavenged = 1;
-            } else if (stock < maxammo) {
-                ammo = stock + 1;
-                if (ammo > maxammo) {
-                    ammo = maxammo;
-                } else if (isdefined(loadout)) {
-                    if ("primarygrenade" == player loadout::function_8435f729(weapon)) {
-                        player notify(#"scavenged_primary_grenade");
-                    }
-                }
-                player setweaponammostock(weapon, ammo);
-                player.scavenged = 1;
+            if (player weaponobjects::anyobjectsinworld(weapon.rootweapon)) {
+                continue;
             }
+        }
+        stock = player getweaponammostock(weapon);
+        if (weapon.isheavyweapon && isdefined(level.overrideammodropheavyweapon) && level.overrideammodropheavyweapon) {
+            ammo = stock + weapon.clipsize;
+            if (ammo > maxammo) {
+                ammo = maxammo;
+            }
+            player setweaponammostock(weapon, ammo);
+            player.scavenged = 1;
+            continue;
+        }
+        if (stock < maxammo) {
+            ammo = stock + 1;
+            if (ammo > maxammo) {
+                ammo = maxammo;
+            } else if (isdefined(loadout)) {
+                if ("primarygrenade" == player loadout::function_8435f729(weapon)) {
+                    player notify(#"scavenged_primary_grenade");
+                }
+            }
+            player setweaponammostock(weapon, ammo);
+            player.scavenged = 1;
         }
     }
     for (i = 0; i < primary_weapons.size; i++) {
@@ -117,9 +119,9 @@ function ammo_pouch_think() {
         if (stock < maxammo - clip * 3) {
             ammo = stock + clip * 3;
             player setweaponammostock(weapon, ammo);
-        } else {
-            player setweaponammostock(weapon, maxammo);
+            continue;
         }
+        player setweaponammostock(weapon, maxammo);
     }
 }
 

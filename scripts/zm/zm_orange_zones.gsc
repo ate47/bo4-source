@@ -291,9 +291,8 @@ function function_a2888093(str_zone) {
 function function_94b7a4bd(str_zone) {
     if (str_zone == "security_lobby" || str_zone == "decontamination" || str_zone == "geological_processing" || str_zone == "upper_catwalk" || str_zone == "human_infusion" || str_zone == "specimen_storage") {
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_orange_zones/zm_orange_zones
@@ -329,7 +328,9 @@ function private function_502f97fa() {
                 }
                 if (!isdefined(least_hunted)) {
                     least_hunted = player;
-                } else if (player.hunted_by < least_hunted.hunted_by) {
+                    continue;
+                }
+                if (player.hunted_by < least_hunted.hunted_by) {
                     least_hunted = player;
                 }
             }
@@ -398,115 +399,115 @@ function function_ab7f70b9(e_player, str_zone) {
     switch (str_zone) {
     case #"docks_1":
     case #"docks_2":
-        var_601fee0 = #"hash_99011c41f3d5380";
+        str_display = #"hash_99011c41f3d5380";
         break;
     case #"boathouse":
-        var_601fee0 = #"hash_6b2f9edfc77ea9b2";
+        str_display = #"hash_6b2f9edfc77ea9b2";
         break;
     case #"frozen_crevasse":
-        var_601fee0 = #"hash_1e6b498a976cdcb5";
+        str_display = #"hash_1e6b498a976cdcb5";
         break;
     case #"ice_grotto":
-        var_601fee0 = #"hash_3461ddd73c20a747";
+        str_display = #"hash_3461ddd73c20a747";
         break;
     case #"lighthouse_annex":
-        var_601fee0 = #"hash_43a7944f79cf9bf1";
+        str_display = #"hash_43a7944f79cf9bf1";
         break;
     case #"lagoon":
-        var_601fee0 = #"hash_381e2912fb0376dc";
+        str_display = #"hash_381e2912fb0376dc";
         break;
     case #"lighthouse_cove":
-        var_601fee0 = #"hash_2fb0927a65d8a9e";
+        str_display = #"hash_2fb0927a65d8a9e";
         break;
     case #"lighthouse_station":
-        var_601fee0 = #"hash_1424b8bac646249f";
+        str_display = #"hash_1424b8bac646249f";
         break;
     case #"lighthouse_level_1":
-        var_601fee0 = #"hash_7957c402b1b2ef31";
+        str_display = #"hash_7957c402b1b2ef31";
         break;
     case #"lighthouse_level_2":
-        var_601fee0 = #"hash_7957c102b1b2ea18";
+        str_display = #"hash_7957c102b1b2ea18";
         break;
     case #"lighthouse_level_3":
-        var_601fee0 = #"hash_7957c202b1b2ebcb";
+        str_display = #"hash_7957c202b1b2ebcb";
         break;
     case #"lighthouse_level_4":
-        var_601fee0 = #"hash_7957c702b1b2f44a";
+        str_display = #"hash_7957c702b1b2f44a";
         break;
     case #"lighthouse_approach":
-        var_601fee0 = #"hash_39b4e46fd4bebad5";
+        str_display = #"hash_39b4e46fd4bebad5";
         break;
     case #"beach":
-        var_601fee0 = #"hash_75f05448c75c06f";
+        str_display = #"hash_75f05448c75c06f";
         break;
     case #"hidden_path":
-        var_601fee0 = #"hash_3a98581b802c0296";
+        str_display = #"hash_3a98581b802c0296";
         break;
     case #"gangway":
-        var_601fee0 = #"hash_1797071bcd3e6fe6";
+        str_display = #"hash_1797071bcd3e6fe6";
         break;
     case #"stern":
-        var_601fee0 = #"hash_4c328e01a462f48a";
+        str_display = #"hash_4c328e01a462f48a";
         break;
     case #"navigation":
-        var_601fee0 = #"hash_3d82a67e307a0426";
+        str_display = #"hash_3d82a67e307a0426";
         break;
     case #"sun_deck":
-        var_601fee0 = #"hash_38990c0828e68602";
+        str_display = #"hash_38990c0828e68602";
         break;
     case #"bridge":
-        var_601fee0 = #"hash_5dbcb178cb1573c1";
+        str_display = #"hash_5dbcb178cb1573c1";
         break;
     case #"cargo_hold":
-        var_601fee0 = #"hash_335d7ee067ac0e68";
+        str_display = #"hash_335d7ee067ac0e68";
         break;
     case #"artifact_storage":
-        var_601fee0 = #"hash_63f7af429c316620";
+        str_display = #"hash_63f7af429c316620";
         break;
     case #"main_deck":
-        var_601fee0 = #"hash_75d26f96a738d2a3";
+        str_display = #"hash_75d26f96a738d2a3";
         break;
     case #"forecastle":
-        var_601fee0 = #"hash_3befc74a37bbeb9e";
+        str_display = #"hash_3befc74a37bbeb9e";
         break;
     case #"main_entrance":
-        var_601fee0 = #"hash_520e403cdf1ae8";
+        str_display = #"hash_520e403cdf1ae8";
         break;
     case #"security_lobby":
-        var_601fee0 = #"hash_19a2493217019135";
+        str_display = #"hash_19a2493217019135";
         break;
     case #"geological_processing":
-        var_601fee0 = #"hash_21450c4a4a6646d6";
+        str_display = #"hash_21450c4a4a6646d6";
         break;
     case #"upper_catwalk":
-        var_601fee0 = #"hash_65457ae6fbfe6c32";
+        str_display = #"hash_65457ae6fbfe6c32";
         break;
     case #"human_infusion":
-        var_601fee0 = #"hash_46ef5a594e42c371";
+        str_display = #"hash_46ef5a594e42c371";
         break;
     case #"decontamination":
-        var_601fee0 = #"hash_6571eafdcddb13ab";
+        str_display = #"hash_6571eafdcddb13ab";
         break;
     case #"specimen_storage":
-        var_601fee0 = #"hash_12750e3f1d3659e4";
+        str_display = #"hash_12750e3f1d3659e4";
         break;
     case #"loading_platform":
-        var_601fee0 = #"hash_4f2b74b3fea599ba";
+        str_display = #"hash_4f2b74b3fea599ba";
         break;
     case #"outer_walkway":
-        var_601fee0 = #"hash_778497a569854310";
+        str_display = #"hash_778497a569854310";
         break;
     case #"ice_floe":
-        var_601fee0 = #"hash_550cd5295ec40e4a";
+        str_display = #"hash_550cd5295ec40e4a";
         break;
     case #"sunken_path":
-        var_601fee0 = #"hash_18aaabdeba54214a";
+        str_display = #"hash_18aaabdeba54214a";
         break;
     default:
-        var_601fee0 = undefined;
+        str_display = undefined;
         break;
     }
-    return var_601fee0;
+    return str_display;
 }
 
 // Namespace zm_orange_zones/zm_orange_zones
@@ -545,15 +546,11 @@ function function_f7a190a8(str_wait_flag, var_ab660f9a, str_location, var_39acfd
     if (isdefined(var_ab660f9a)) {
         wait(var_ab660f9a);
     }
-    var_33625d75 = function_ab7f70b9(self);
-    while (var_33625d75 !== str_location) {
+    for (var_33625d75 = function_ab7f70b9(self); var_33625d75 !== str_location; var_33625d75 = function_ab7f70b9(self)) {
         wait(0.5);
-        var_33625d75 = function_ab7f70b9(self);
     }
-    var_33625d75 = function_ab7f70b9(self);
-    while (var_33625d75 === str_location) {
+    for (var_33625d75 = function_ab7f70b9(self); var_33625d75 === str_location; var_33625d75 = function_ab7f70b9(self)) {
         wait(0.5);
-        var_33625d75 = function_ab7f70b9(self);
     }
     self thread zm_audio::function_713192b1(str_location, var_39acfdda);
 }
@@ -586,7 +583,7 @@ function function_9d1d7efd() {
             if (a_players[0] zm_audio::can_speak() && !level flag::get(#"hell_on_earth")) {
                 player = array::random(a_players);
                 player thread zm_orange_util::function_51b752a9(#"hash_14a884c0dda265b2", -1, 0, 1);
-                break;
+                return;
             }
         }
         waitframe(1);

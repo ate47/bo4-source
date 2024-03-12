@@ -241,9 +241,9 @@ function private function_2165e851() {
                     var_a04c5e3b = anglestoforward(npc.angles);
                     npc.var_9a149315 = npc.origin + anglestoforward(npc.angles) * 100;
                     npc setgoal(npc.var_9a149315);
-                } else {
-                    npc setgoal(npc.origin);
+                    continue;
                 }
+                npc setgoal(npc.origin);
             }
             player_index = 0;
             foreach (player in players) {

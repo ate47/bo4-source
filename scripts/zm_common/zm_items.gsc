@@ -157,9 +157,9 @@ function private function_b64c32cf(player) {
                 /#
                     assertmsg("<unknown string>" + item.name + "<unknown string>");
                 #/
-            } else {
-                function_ab3bb6bf(player, item);
+                continue;
             }
+            function_ab3bb6bf(player, item);
         }
     }
 }

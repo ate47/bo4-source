@@ -72,9 +72,9 @@ function on_localplayer_shutdown(localclientnum) {
 function function_95c61f07(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval > 0) {
         self.nonplayeroobusage = 1;
-    } else {
-        self.nonplayeroobusage = undefined;
+        return;
     }
+    self.nonplayeroobusage = undefined;
 }
 
 // Namespace oob/oob
@@ -117,19 +117,19 @@ function onoutofboundschange(localclientnum, oldval, newval, bnewent, binitialsn
             newvalf = 0.5;
         }
         localplayer randomfade(newvalf);
-    } else {
-        if (isdefined(level.oob_timekeep_ms) && isdefined(self.oob_start_time)) {
-            self.oob_end_time = getservertime(0, 1);
-            if (!isdefined(self.oob_active_duration)) {
-                self.oob_active_duration = 0;
-            }
-            self.oob_active_duration = self.oob_active_duration + self.oob_end_time - self.oob_start_time;
-        }
-        if (isdefined(self.nonplayeroobusage) && self.nonplayeroobusage) {
-            self.oob_active_duration = undefined;
-        }
-        stopoutofboundseffects(localclientnum, localplayer);
+        return;
     }
+    if (isdefined(level.oob_timekeep_ms) && isdefined(self.oob_start_time)) {
+        self.oob_end_time = getservertime(0, 1);
+        if (!isdefined(self.oob_active_duration)) {
+            self.oob_active_duration = 0;
+        }
+        self.oob_active_duration = self.oob_active_duration + self.oob_end_time - self.oob_start_time;
+    }
+    if (isdefined(self.nonplayeroobusage) && self.nonplayeroobusage) {
+        self.oob_active_duration = undefined;
+    }
+    stopoutofboundseffects(localclientnum, localplayer);
 }
 
 // Namespace oob/oob

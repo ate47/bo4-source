@@ -72,16 +72,16 @@ function zombshell_aoe(localclientnum, oldval, newval, bnewent, binitialsnap, fi
             self playsound(localclientnum, #"hash_6aa32cc737673479");
             self.var_e3d27e69 = self playloopsound(#"hash_d377c202c27be3f");
         }
-    } else {
-        if (isdefined(self.var_a6da95e6)) {
-            deletefx(localclientnum, self.var_a6da95e6, 0);
-            self.var_a6da95e6 = undefined;
-        }
-        if (isdefined(self.var_e3d27e69)) {
-            self playsound(localclientnum, #"hash_5aa45eab2ab681e8");
-            self stoploopsound(self.var_e3d27e69);
-            self.var_e3d27e69 = undefined;
-        }
+        return;
+    }
+    if (isdefined(self.var_a6da95e6)) {
+        deletefx(localclientnum, self.var_a6da95e6, 0);
+        self.var_a6da95e6 = undefined;
+    }
+    if (isdefined(self.var_e3d27e69)) {
+        self playsound(localclientnum, #"hash_5aa45eab2ab681e8");
+        self stoploopsound(self.var_e3d27e69);
+        self.var_e3d27e69 = undefined;
     }
 }
 

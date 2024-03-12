@@ -68,12 +68,12 @@ function private function_d83c0144(localclientnum, oldval, newval, bnewent, bini
             self playsound(0, #"hash_6804d485c5a3300a");
             self.var_45dc5e53 = self playloopsound(#"hash_2ee9559ba02d2e9e");
         }
-    } else {
-        stopfx(localclientnum, self.fx);
-        if (isdefined(self.var_45dc5e53)) {
-            self stoploopsound(self.var_45dc5e53);
-            self.var_45dc5e53 = undefined;
-        }
+        return;
+    }
+    stopfx(localclientnum, self.fx);
+    if (isdefined(self.var_45dc5e53)) {
+        self stoploopsound(self.var_45dc5e53);
+        self.var_45dc5e53 = undefined;
     }
 }
 

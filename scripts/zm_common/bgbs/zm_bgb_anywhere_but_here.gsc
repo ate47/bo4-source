@@ -202,11 +202,11 @@ function function_886fce8f(b_enable = 1) {
         level.var_e120ae98 = level.var_ddf7e6bc;
         level.var_ddf7e6bc = undefined;
         level.var_40f4bfe0 = undefined;
-    } else {
-        level.var_ddf7e6bc = level.var_e120ae98;
-        level.var_e120ae98 = &function_a124fd99;
-        level.var_40f4bfe0 = 1;
+        return;
     }
+    level.var_ddf7e6bc = level.var_e120ae98;
+    level.var_e120ae98 = &function_a124fd99;
+    level.var_40f4bfe0 = 1;
 }
 
 // Namespace zm_bgb_anywhere_but_here/zm_bgb_anywhere_but_here

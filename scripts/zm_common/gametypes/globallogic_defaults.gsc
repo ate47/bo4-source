@@ -79,15 +79,15 @@ function default_ondeadevent(team) {
         winner = getwinningteamfromloser(team);
         globallogic_utils::logteamwinstring("team eliminated", winner);
         thread globallogic::endgame(winner, eliminatedstring);
-    } else {
-        setdvar(#"ui_text_endreason", game.strings[#"tie"]);
-        globallogic_utils::logteamwinstring("tie");
-        if (level.teambased) {
-            thread globallogic::endgame("tie", game.strings[#"tie"]);
-        } else {
-            thread globallogic::endgame(undefined, game.strings[#"tie"]);
-        }
+        return;
     }
+    setdvar(#"ui_text_endreason", game.strings[#"tie"]);
+    globallogic_utils::logteamwinstring("tie");
+    if (level.teambased) {
+        thread globallogic::endgame("tie", game.strings[#"tie"]);
+        return;
+    }
+    thread globallogic::endgame(undefined, game.strings[#"tie"]);
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
@@ -121,15 +121,14 @@ function default_ononeleftevent(team) {
             }
         #/
         thread globallogic::endgame(winner, #"mp_enemies_eliminated");
-    } else {
-        for (index = 0; index < level.players.size; index++) {
-            player = level.players[index];
-            if (!isalive(player)) {
-                continue;
-            }
-            if (!isdefined(player.pers[#"team"]) || player.pers[#"team"] != team) {
-                continue;
-            }
+        return;
+    }
+    for (index = 0; index < level.players.size; index++) {
+        player = level.players[index];
+        if (!isalive(player)) {
+            continue;
+        }
+        if (!isdefined(player.pers[#"team"]) || player.pers[#"team"] != team) {
         }
     }
 }
@@ -212,11 +211,11 @@ function default_onspawnintermission() {
     spawnpoint = spawnpoints[0];
     if (isdefined(spawnpoint)) {
         self spawn(spawnpoint.origin, spawnpoint.angles);
-    } else {
-        /#
-            util::error("<unknown string>" + spawnpointname + "<unknown string>");
-        #/
+        return;
     }
+    /#
+        util::error("<unknown string>" + spawnpointname + "<unknown string>");
+    #/
 }
 
 // Namespace globallogic_defaults/globallogic_defaults

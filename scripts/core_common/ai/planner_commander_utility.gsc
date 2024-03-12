@@ -144,9 +144,7 @@ function private _assignsquadunclaimeddefendgameobjectparam(planner, squadindex)
     }
     if (isdefined(defendobject)) {
         planner::setblackboardattribute(planner, "gameobjects", array(defendobject), squadindex);
-        goto LOC_00000186;
     }
-LOC_00000186:
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -699,8 +697,7 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
     path = undefined;
     longestpath = 0;
     if (queryresult.data.size > 0) {
-        index = 0;
-        while (index < queryresult.data.size) {
+        for (index = 0; index < queryresult.data.size; index = index + 16) {
             goalpoints = [];
             for (goalindex = index; goalindex - index < 16 && goalindex < queryresult.data.size; goalindex++) {
                 goalpoints[goalpoints.size] = queryresult.data[goalindex].origin;
@@ -712,7 +709,6 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
                     longestpath = pathsegment.pathdistance;
                 }
             }
-            index = index + 16;
         }
     }
     return path;
@@ -757,9 +753,9 @@ function private _updatehistoricalgameobjects(commander) {
             gameobject = assaultobjectentry[#"__unsafe__"][#"object"];
             if (!isdefined(gameobject) || !isdefined(gameobject.trigger) || !gameobject.trigger istriggerenabled()) {
                 destroyedgameobjecttotal++;
-            } else {
-                gameobjecttotal++;
+                continue;
             }
+            gameobjecttotal++;
         }
     }
     gameobjecttotal = gameobjecttotal + destroyedgameobjecttotal;
@@ -803,7 +799,9 @@ function private daemonupdateclients(commander) {
                 cachedclient[#"type"] = "bot";
                 doppelbots[doppelbots.size] = cachedclient;
             }
-        } else if (strategiccommandutility::isvalidplayer(client)) {
+            continue;
+        }
+        if (strategiccommandutility::isvalidplayer(client)) {
             if (!isdefined(cachedclient[#"__unsafe__"])) {
                 cachedclient[#"__unsafe__"] = array();
             }
@@ -854,43 +852,43 @@ function private daemonupdategameobjects(commander) {
             }
             identifier = gameobject gameobjects::get_identifier();
             if (var_fffabd2.size > 0) {
-                jumpiffalse(!isdefined(identifier) || !isdefined(var_fffabd2[identifier])) LOC_000003aa;
+                if (!isdefined(identifier) || !isdefined(var_fffabd2[identifier])) {
+                    continue;
+                }
+            }
+            if (isdefined(identifier) && isdefined(excludedmap[identifier])) {
+                continue;
+            }
+            if (isdefined(gameobject.var_a267844e)) {
+                continue;
+            }
+            cachedgameobject = array();
+            cachedgameobject[#"strategy"] = strategiccommandutility::function_423cfbc1(var_31b80437, undefined, undefined, gameobject);
+            if (strategiccommandutility::function_f59ca353(cachedgameobject[#"strategy"])) {
+                continue;
+            }
+            cachedgameobject[#"claimed"] = 0;
+            cachedgameobject[#"type"] = "gameobject";
+            if (!isdefined(cachedgameobject[#"__unsafe__"])) {
+                cachedgameobject[#"__unsafe__"] = array();
+            }
+            cachedgameobject[#"__unsafe__"][#"object"] = gameobject;
+            if (!isdefined(cachedgameobject[#"__unsafe__"])) {
+                cachedgameobject[#"__unsafe__"] = array();
+            }
+            cachedgameobject[#"__unsafe__"][#"entity"] = gameobject.e_object;
+            if (isdefined(identifier) && (identifier == "air_vehicle" || identifier == "ground_vehicle")) {
+                var_aa8d6440[var_aa8d6440.size] = cachedgameobject;
             } else {
-            LOC_000003aa:
-                if (isdefined(identifier) && isdefined(excludedmap[identifier])) {
-                    continue;
-                }
-                if (isdefined(gameobject.var_a267844e)) {
-                    continue;
-                }
-                cachedgameobject = array();
-                cachedgameobject[#"strategy"] = strategiccommandutility::function_423cfbc1(var_31b80437, undefined, undefined, gameobject);
-                if (strategiccommandutility::function_f59ca353(cachedgameobject[#"strategy"])) {
-                    continue;
-                }
-                cachedgameobject[#"claimed"] = 0;
-                cachedgameobject[#"type"] = "gameobject";
-                if (!isdefined(cachedgameobject[#"__unsafe__"])) {
-                    cachedgameobject[#"__unsafe__"] = array();
-                }
-                cachedgameobject[#"__unsafe__"][#"object"] = gameobject;
-                if (!isdefined(cachedgameobject[#"__unsafe__"])) {
-                    cachedgameobject[#"__unsafe__"] = array();
-                }
-                cachedgameobject[#"__unsafe__"][#"entity"] = gameobject.e_object;
-                if (isdefined(identifier) && (identifier == "air_vehicle" || identifier == "ground_vehicle")) {
-                    var_aa8d6440[var_aa8d6440.size] = cachedgameobject;
-                } else {
-                    gameobjects[gameobjects.size] = cachedgameobject;
-                }
-                if (getrealtime() - commander.var_22765a25 > commander.var_b9dd2f) {
-                    aiprofile_endentry();
-                    pixendevent();
-                    [[ level.strategic_command_throttle ]]->waitinqueue(commander);
-                    commander.var_22765a25 = getrealtime();
-                    pixbeginevent("daemonGameobjects");
-                    aiprofile_beginentry("daemonGameobjects");
-                }
+                gameobjects[gameobjects.size] = cachedgameobject;
+            }
+            if (getrealtime() - commander.var_22765a25 > commander.var_b9dd2f) {
+                aiprofile_endentry();
+                pixendevent();
+                [[ level.strategic_command_throttle ]]->waitinqueue(commander);
+                commander.var_22765a25 = getrealtime();
+                pixbeginevent("daemonGameobjects");
+                aiprofile_beginentry("daemonGameobjects");
             }
         }
         blackboard::setstructblackboardattribute(commander, #"gameobjects", gameobjects);
@@ -920,7 +918,7 @@ function private function_e6443602(commander) {
                 var_5f31ab8b[#"type"] = "escortbiped";
                 break;
             default:
-                goto LOC_00000332;
+                continue;
             }
             var_5f31ab8b[#"strategy"] = strategiccommandutility::function_423cfbc1(var_31b80437, gpbundle.m_s_bundle);
             if (!isdefined(var_5f31ab8b[#"__unsafe__"])) {
@@ -935,9 +933,7 @@ function private function_e6443602(commander) {
                 commander.var_22765a25 = getrealtime();
                 pixbeginevent("daemonMissionComponents");
                 aiprofile_beginentry("daemonMissionComponents");
-            LOC_00000332:
             }
-        LOC_00000332:
         }
         blackboard::setstructblackboardattribute(commander, #"gpbundles", bundles);
     }
@@ -982,11 +978,11 @@ function private function_7706a6fa(commander) {
                     /#
                         println("order_escort_rearguard" + missioncomponent.origin + "<unknown string>");
                     #/
-                    goto LOC_000005fa;
+                    continue;
                 }
                 break;
             default:
-                goto LOC_000005fa;
+                continue;
             }
             var_b313868d[#"strategy"] = strategiccommandutility::function_423cfbc1(var_31b80437, undefined, missioncomponent);
             if (strategiccommandutility::function_f59ca353(var_b313868d[#"strategy"])) {
@@ -1010,9 +1006,7 @@ function private function_7706a6fa(commander) {
                 commander.var_22765a25 = getrealtime();
                 pixbeginevent("daemonMissionComponents");
                 aiprofile_beginentry("daemonMissionComponents");
-            LOC_000005fa:
             }
-        LOC_000005fa:
         }
         blackboard::setstructblackboardattribute(commander, #"missioncomponents", components);
         foreach (componenttype, componentarray in var_35301d62) {
@@ -1080,7 +1074,9 @@ function private daemonupdateobjective(commander) {
                 if (isdefined(furthestobjective)) {
                     objectives[objectives.size] = furthestobjective;
                 }
-            } else if (isdefined(objective.m_a_targets) && objective.m_a_targets.size > 0) {
+                continue;
+            }
+            if (isdefined(objective.m_a_targets) && objective.m_a_targets.size > 0) {
                 foreach (objectiveid in objective.m_a_game_obj) {
                     if (isdefined(objectiveid) && objective_state(objectiveid) == "active") {
                         foreach (target in objective.m_a_targets) {
@@ -1162,9 +1158,9 @@ function private function_a75b29d8(planner, constants) {
         return 0;
     }
     var_90b56683 = strategiccommandutility::function_f4921cb3(constants[#"focus"]);
-    var_3c288f1b = strategy.("doppelbotsfocus");
+    targetfocus = strategy.("doppelbotsfocus");
     foreach (focus in var_90b56683) {
-        if (var_3c288f1b == focus) {
+        if (targetfocus == focus) {
             return 1;
         }
     }
@@ -1296,10 +1292,12 @@ function private function_14c766b3(planner, constant) {
             if (airvehicles && member[#"type"] == "air") {
                 validsquads[validsquads.size] = squad;
                 break;
-            } else if (groundvehicles && member[#"type"] == "ground") {
+            }
+            if (groundvehicles && member[#"type"] == "ground") {
                 validsquads[validsquads.size] = squad;
                 break;
-            } else if (var_eda803e5 && member[#"type"] == "bot") {
+            }
+            if (var_eda803e5 && member[#"type"] == "bot") {
                 validsquads[validsquads.size] = squad;
                 break;
             }

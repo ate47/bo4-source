@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x906e6544, Offset: 0xd0
 // Size: 0x34
 function __init__() {
@@ -22,16 +22,16 @@ function __init__() {
 }
 
 // Namespace character_unlock_crash/character_unlock_crash
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b7541aa, Offset: 0x110
 // Size: 0xcc
 function function_2613aeec(enabled) {
     if (enabled) {
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
             item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 3);
-        } else {
-            item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 10);
+            return;
         }
+        item_world_fixup::function_e70fa91c(#"health_stash_parent", #"health_stash_cu03", 10);
     }
 }
 

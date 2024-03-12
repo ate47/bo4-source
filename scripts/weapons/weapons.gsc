@@ -262,35 +262,35 @@ function function_d571ac59(last_weapon = undefined, immediate = 0, awayfromball 
                         if (self util::gadget_is_in_use(slot)) {
                             if (isdefined(immediate) && immediate) {
                                 self switchtoweaponimmediate(to_weapon);
-                            } else {
-                                self switchtoweapon(to_weapon);
+                                return;
                             }
+                            self switchtoweapon(to_weapon);
                             return;
                         }
                     }
                 } else if (self getammocount(to_weapon) > 0) {
                     if (isdefined(immediate) && immediate) {
                         self switchtoweaponimmediate(to_weapon);
-                    } else {
-                        self switchtoweapon(to_weapon);
+                        return;
                     }
+                    self switchtoweapon(to_weapon);
                     return;
                 }
             } else if (self getammocount(to_weapon) > 0 || to_weapon.ismeleeweapon) {
                 if (isdefined(immediate) && immediate) {
                     self switchtoweaponimmediate(to_weapon);
-                } else {
-                    self switchtoweapon(to_weapon);
+                    return;
                 }
+                self switchtoweapon(to_weapon);
                 return;
             }
         }
     }
     if (isdefined(immediate) && immediate) {
         self switchtoweaponimmediate();
-    } else {
-        self switchtoweapon();
+        return;
     }
+    self switchtoweapon();
 }
 
 // Namespace weapons/weapons
@@ -536,11 +536,11 @@ function function_d2c66128(origin, angles) {
             weaponindex = isdefined(getbaseweaponitemindex(var_9b882d22.item)) ? getbaseweaponitemindex(var_9b882d22.item) : 0;
         }
         self clientfield::set_player_uimodel("hudItems.pickupHintWeaponIndex", weaponindex);
-    } else {
-        objective_setstate(self.var_18f581bc, "invisible");
-        objective_setgamemodeflags(self.var_18f581bc, 0);
-        self clientfield::set_player_uimodel("hudItems.pickupHintWeaponIndex", 0);
+        return;
     }
+    objective_setstate(self.var_18f581bc, "invisible");
+    objective_setgamemodeflags(self.var_18f581bc, 0);
+    self clientfield::set_player_uimodel("hudItems.pickupHintWeaponIndex", 0);
 }
 
 // Namespace weapons/weapons
@@ -626,10 +626,10 @@ function watch_pickup() {
             player.tookweaponfrom[weapon].sweapon = self.sweapon;
             player.tookweaponfrom[weapon].smeansofdeath = self.smeansofdeath;
             player.pickedupweaponkills[weapon] = 0;
-        } else {
-            player.tookweaponfrom[weapon] = undefined;
-            player.pickedupweaponkills[weapon] = undefined;
+            return;
         }
+        player.tookweaponfrom[weapon] = undefined;
+        player.pickedupweaponkills[weapon] = undefined;
     }
 }
 
@@ -807,9 +807,9 @@ function event_handler[missile_fire] function_f075cefa(eventstruct) {
     switch (weapon.statname) {
     case #"sig_bow_quickshot":
         missile thread check_stuck_to_player(1, 0, weapon);
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -862,11 +862,13 @@ function watch_grenade_cancel() {
         }
         if (self isthrowinggrenade()) {
             self waittill(#"weapon_change");
-        } else if (self function_55acff10()) {
-            util::wait_network_frame();
-        } else {
-            break;
+            continue;
         }
+        if (self function_55acff10()) {
+            util::wait_network_frame();
+            continue;
+        }
+        break;
     }
     self.throwinggrenade = 0;
     self.gotpullbacknotify = 0;
@@ -1035,24 +1037,24 @@ function event_handler[grenade_fire] function_e2b6d5a5(eventstruct) {
     switch (weapon.rootweapon.name) {
     case #"tabun_gas":
         grenade thread tabun::watchtabungrenadedetonation(self);
-        break;
+        return;
     case #"eq_sticky_grenade":
     case #"eq_cluster_semtex_grenade":
         grenade thread check_stuck_to_player(1, 1, weapon);
         grenade thread riotshield::check_stuck_to_shield();
-        break;
+        return;
     case #"c4":
     case #"satchel_charge":
         grenade thread check_stuck_to_player(1, 0, weapon);
-        break;
+        return;
     case #"hatchet":
         grenade.lastweaponbeforetoss = self function_fe1f5cc();
         grenade thread check_hatchet_bounce();
         grenade thread check_stuck_to_player(0, 0, weapon);
         self stats::function_e24eec31(weapon, #"used", 1);
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -1399,15 +1401,19 @@ function damage_ent(einflictor, eattacker, idamage, smeansofdeath, weapon, damag
     if (self.isplayer) {
         self.damageorigin = damagepos;
         self.entity thread [[ level.callbackplayerdamage ]](einflictor, eattacker, idamage, 0, smeansofdeath, weapon, damagepos, damagedir, "none", damagepos, 0, 0, undefined);
-    } else if (self.isactor) {
+        return;
+    }
+    if (self.isactor) {
         self.damageorigin = damagepos;
         self.entity thread [[ level.callbackactordamage ]](einflictor, eattacker, idamage, 0, smeansofdeath, weapon, damagepos, damagedir, "none", damagepos, 0, 0, 0, 0, (1, 0, 0));
-    } else if (self.isadestructible) {
+        return;
+    }
+    if (self.isadestructible) {
         self.damageorigin = damagepos;
         self.entity dodamage(idamage, damagepos, eattacker, einflictor, 0, smeansofdeath, 0, weapon);
-    } else {
-        self.entity util::damage_notify_wrapper(idamage, eattacker, (0, 0, 0), (0, 0, 0), "mod_explosive", "", "");
+        return;
     }
+    self.entity util::damage_notify_wrapper(idamage, eattacker, (0, 0, 0), (0, 0, 0), "mod_explosive", "", "");
 }
 
 // Namespace weapons/weapons
@@ -1426,12 +1432,12 @@ function on_damage(eattacker, einflictor, weapon, meansofdeath, damage) {
     case #"eq_slow_grenade":
     case #"concussion_grenade":
         self.lastconcussedby = eattacker;
-        break;
+        return;
     default:
         if (isdefined(level.shellshockonplayerdamage) && isplayer(self)) {
             [[ level.shellshockonplayerdamage ]](meansofdeath, damage, weapon);
         }
-        break;
+        return;
     }
 }
 
@@ -1546,13 +1552,21 @@ function on_weapon_change(params) {
         }
         if (is_primary_weapon(weaponslist[idx])) {
             self.weapon_array_primary[self.weapon_array_primary.size] = weaponslist[idx];
-        } else if (is_side_arm(weaponslist[idx])) {
+            continue;
+        }
+        if (is_side_arm(weaponslist[idx])) {
             self.weapon_array_sidearm[self.weapon_array_sidearm.size] = weaponslist[idx];
-        } else if (is_grenade(weaponslist[idx])) {
+            continue;
+        }
+        if (is_grenade(weaponslist[idx])) {
             self.weapon_array_grenade[self.weapon_array_grenade.size] = weaponslist[idx];
-        } else if (is_inventory(weaponslist[idx])) {
+            continue;
+        }
+        if (is_inventory(weaponslist[idx])) {
             self.weapon_array_inventory[self.weapon_array_inventory.size] = weaponslist[idx];
-        } else if (weaponslist[idx].isprimary) {
+            continue;
+        }
+        if (weaponslist[idx].isprimary) {
             self.weapon_array_primary[self.weapon_array_primary.size] = weaponslist[idx];
         }
     }
@@ -1620,21 +1634,23 @@ function scavenger_think() {
             continue;
         }
         if (weapon.rootweapon == level.weaponsatchelcharge) {
-            jumpiffalse(player weaponobjects::anyobjectsinworld(weapon.rootweapon)) LOC_00000340;
-        } else {
-        LOC_00000340:
-            stock = player getweaponammostock(weapon);
-            if (stock < maxammo) {
-                ammo = stock + 2;
-                if (ammo > maxammo) {
-                    ammo = maxammo;
-                }
-                player setweaponammostock(weapon, ammo);
-                player.scavenged = 1;
-                player thread challenges::scavengedgrenade();
-            } else if (weapon.rootweapon == getweapon(#"trophy_system")) {
-                player trophy_system::ammo_scavenger(weapon);
+            if (player weaponobjects::anyobjectsinworld(weapon.rootweapon)) {
+                continue;
             }
+        }
+        stock = player getweaponammostock(weapon);
+        if (stock < maxammo) {
+            ammo = stock + 2;
+            if (ammo > maxammo) {
+                ammo = maxammo;
+            }
+            player setweaponammostock(weapon, ammo);
+            player.scavenged = 1;
+            player thread challenges::scavengedgrenade();
+            continue;
+        }
+        if (weapon.rootweapon == getweapon(#"trophy_system")) {
+            player trophy_system::ammo_scavenger(weapon);
         }
     }
     for (i = 0; i < primary_weapons.size; i++) {
@@ -1652,10 +1668,10 @@ function scavenger_think() {
             ammo = stock + clip;
             player setweaponammostock(weapon, ammo);
             player.scavenged = 1;
-        } else {
-            player setweaponammostock(weapon, maxammo);
-            player.scavenged = 1;
+            continue;
         }
+        player setweaponammostock(weapon, maxammo);
+        player.scavenged = 1;
     }
     if (player.scavenged) {
         player playsound(#"wpn_ammo_pickup");
@@ -1786,9 +1802,9 @@ function ninebang_doninebang(attacker, weapon, cooktime) {
         attacker magicgrenadeplayer(weapon.grenadeweapon, self.origin, (0, 0, 0));
         if ((i + 1) % 3 == 0) {
             wait(var_9729fdb9);
-        } else {
-            wait(intervaltime);
+            continue;
         }
+        wait(intervaltime);
     }
     if (isdefined(self)) {
         self delete();

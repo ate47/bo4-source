@@ -59,9 +59,9 @@ function strtok_loc(string, par1) {
         if (string[i] == " ") {
             stringlist[stringlist.size] = indexstring;
             indexstring = "";
-        } else {
-            indexstring = indexstring + string[i];
+            continue;
         }
+        indexstring = indexstring + string[i];
     }
     if (indexstring.size) {
         stringlist[stringlist.size] = indexstring;
@@ -120,69 +120,68 @@ function tweakart() {
         filename = undefined;
         tweak_toggle = 1;
         for (;;) {
-            for (;;) {
-                while (getdvarint(#"scr_art_tweak", 0) == 0) {
-                    tweak_toggle = 1;
-                    waitframe(1);
-                }
-                if (tweak_toggle) {
-                    tweak_toggle = 0;
-                    fogsettings = getfogsettings();
-                    setdvar(#"scr_fog_nearplane", fogsettings[0]);
-                    setdvar(#"scr_fog_exp_halfplane", fogsettings[1]);
-                    setdvar(#"scr_fog_exp_halfheight", fogsettings[3]);
-                    setdvar(#"scr_fog_baseheight", fogsettings[2]);
-                    setdvar(#"scr_fog_color", fogsettings[4] + "<unknown string>" + fogsettings[5] + "<unknown string>" + fogsettings[6]);
-                    setdvar(#"scr_fog_color_scale", fogsettings[7]);
-                    setdvar(#"scr_sun_fog_color", fogsettings[8] + "<unknown string>" + fogsettings[9] + "<unknown string>" + fogsettings[10]);
-                    level.fogsundir = [];
-                    level.fogsundir[0] = fogsettings[11];
-                    level.fogsundir[1] = fogsettings[12];
-                    level.fogsundir[2] = fogsettings[13];
-                    setdvar(#"scr_sun_fog_start_angle", fogsettings[14]);
-                    setdvar(#"scr_sun_fog_end_angle", fogsettings[15]);
-                    setdvar(#"scr_fog_max_opacity", fogsettings[16]);
-                }
-                level.fogexphalfplane = getdvarfloat(#"scr_fog_exp_halfplane", 0);
-                level.fogexphalfheight = getdvarfloat(#"scr_fog_exp_halfheight", 0);
-                level.fognearplane = getdvarfloat(#"scr_fog_nearplane", 0);
-                level.fogbaseheight = getdvarfloat(#"scr_fog_baseheight", 0);
-                colors = strtok(getdvarstring(#"scr_fog_color"), "<unknown string>");
-                level.fogcolorred = int(colors[0]);
-                level.fogcolorgreen = int(colors[1]);
-                level.fogcolorblue = int(colors[2]);
-                level.fogcolorscale = getdvarfloat(#"scr_fog_color_scale", 0);
-                colors = strtok(getdvarstring(#"scr_sun_fog_color"), "<unknown string>");
-                level.sunfogcolorred = int(colors[0]);
-                level.sunfogcolorgreen = int(colors[1]);
-                level.sunfogcolorblue = int(colors[2]);
-                level.sunstartangle = getdvarfloat(#"scr_sun_fog_start_angle", 0);
-                level.sunendangle = getdvarfloat(#"scr_sun_fog_end_angle", 0);
-                level.fogmaxopacity = getdvarfloat(#"scr_fog_max_opacity", 0);
-                if (getdvarint(#"scr_art_sun_fog_dir_set", 0)) {
-                    setdvar(#"scr_art_sun_fog_dir_set", 0);
-                    println("<unknown string>");
-                    players = getplayers();
-                    dir = vectornormalize(anglestoforward(players[0] getplayerangles()));
-                    level.fogsundir = [];
-                    level.fogsundir[0] = dir[0];
-                    level.fogsundir[1] = dir[1];
-                    level.fogsundir[2] = dir[2];
-                }
-                fovslidercheck();
-                dumpsettings();
-                if (!getdvarint(#"scr_fog_disable", 0)) {
-                    if (!isdefined(level.fogsundir)) {
-                        level.fogsundir = [];
-                        level.fogsundir[0] = 1;
-                        level.fogsundir[1] = 0;
-                        level.fogsundir[2] = 0;
-                    }
-                    setvolfog(level.fognearplane, level.fogexphalfplane, level.fogexphalfheight, level.fogbaseheight, level.fogcolorred, level.fogcolorgreen, level.fogcolorblue, level.fogcolorscale, level.sunfogcolorred, level.sunfogcolorgreen, level.sunfogcolorblue, level.fogsundir[0], level.fogsundir[1], level.fogsundir[2], level.sunstartangle, level.sunendangle, 0, level.fogmaxopacity);
-                } else {
-                    setexpfog(100000000, 100000001, 0, 0, 0, 0);
-                }
+            while (getdvarint(#"scr_art_tweak", 0) == 0) {
+                tweak_toggle = 1;
+                waitframe(1);
             }
+            if (tweak_toggle) {
+                tweak_toggle = 0;
+                fogsettings = getfogsettings();
+                setdvar(#"scr_fog_nearplane", fogsettings[0]);
+                setdvar(#"scr_fog_exp_halfplane", fogsettings[1]);
+                setdvar(#"scr_fog_exp_halfheight", fogsettings[3]);
+                setdvar(#"scr_fog_baseheight", fogsettings[2]);
+                setdvar(#"scr_fog_color", fogsettings[4] + "<unknown string>" + fogsettings[5] + "<unknown string>" + fogsettings[6]);
+                setdvar(#"scr_fog_color_scale", fogsettings[7]);
+                setdvar(#"scr_sun_fog_color", fogsettings[8] + "<unknown string>" + fogsettings[9] + "<unknown string>" + fogsettings[10]);
+                level.fogsundir = [];
+                level.fogsundir[0] = fogsettings[11];
+                level.fogsundir[1] = fogsettings[12];
+                level.fogsundir[2] = fogsettings[13];
+                setdvar(#"scr_sun_fog_start_angle", fogsettings[14]);
+                setdvar(#"scr_sun_fog_end_angle", fogsettings[15]);
+                setdvar(#"scr_fog_max_opacity", fogsettings[16]);
+            }
+            level.fogexphalfplane = getdvarfloat(#"scr_fog_exp_halfplane", 0);
+            level.fogexphalfheight = getdvarfloat(#"scr_fog_exp_halfheight", 0);
+            level.fognearplane = getdvarfloat(#"scr_fog_nearplane", 0);
+            level.fogbaseheight = getdvarfloat(#"scr_fog_baseheight", 0);
+            colors = strtok(getdvarstring(#"scr_fog_color"), "<unknown string>");
+            level.fogcolorred = int(colors[0]);
+            level.fogcolorgreen = int(colors[1]);
+            level.fogcolorblue = int(colors[2]);
+            level.fogcolorscale = getdvarfloat(#"scr_fog_color_scale", 0);
+            colors = strtok(getdvarstring(#"scr_sun_fog_color"), "<unknown string>");
+            level.sunfogcolorred = int(colors[0]);
+            level.sunfogcolorgreen = int(colors[1]);
+            level.sunfogcolorblue = int(colors[2]);
+            level.sunstartangle = getdvarfloat(#"scr_sun_fog_start_angle", 0);
+            level.sunendangle = getdvarfloat(#"scr_sun_fog_end_angle", 0);
+            level.fogmaxopacity = getdvarfloat(#"scr_fog_max_opacity", 0);
+            if (getdvarint(#"scr_art_sun_fog_dir_set", 0)) {
+                setdvar(#"scr_art_sun_fog_dir_set", 0);
+                println("<unknown string>");
+                players = getplayers();
+                dir = vectornormalize(anglestoforward(players[0] getplayerangles()));
+                level.fogsundir = [];
+                level.fogsundir[0] = dir[0];
+                level.fogsundir[1] = dir[1];
+                level.fogsundir[2] = dir[2];
+            }
+            fovslidercheck();
+            dumpsettings();
+            if (!getdvarint(#"scr_fog_disable", 0)) {
+                if (!isdefined(level.fogsundir)) {
+                    level.fogsundir = [];
+                    level.fogsundir[0] = 1;
+                    level.fogsundir[1] = 0;
+                    level.fogsundir[2] = 0;
+                }
+                setvolfog(level.fognearplane, level.fogexphalfplane, level.fogexphalfheight, level.fogbaseheight, level.fogcolorred, level.fogcolorgreen, level.fogcolorblue, level.fogcolorscale, level.sunfogcolorred, level.sunfogcolorgreen, level.sunfogcolorblue, level.fogsundir[0], level.fogsundir[1], level.fogsundir[2], level.sunstartangle, level.sunendangle, 0, level.fogmaxopacity);
+            } else {
+                setexpfog(100000000, 100000001, 0, 0, 0, 0);
+            }
+            wait(0.1);
         }
     #/
 }

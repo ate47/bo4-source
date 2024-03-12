@@ -21,7 +21,7 @@
 #namespace globallogic_defaults;
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdef64724, Offset: 0x140
 // Size: 0x32
 function getwinningteamfromloser(losing_team) {
@@ -32,7 +32,7 @@ function getwinningteamfromloser(losing_team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b0f49e, Offset: 0x180
 // Size: 0x1bc
 function default_onforfeit(params) {
@@ -71,14 +71,14 @@ function default_ondeadevent(team) {
     if (isdefined(level.teams[team])) {
         round::set_winner(getwinningteamfromloser(team));
         thread globallogic::end_round(6);
-    } else {
-        round::set_flag("tie");
-        thread globallogic::end_round(6);
+        return;
     }
+    round::set_flag("tie");
+    thread globallogic::end_round(6);
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7ea93f66, Offset: 0x430
 // Size: 0x164
 function function_dcf41142(params) {
@@ -98,7 +98,7 @@ function function_dcf41142(params) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x571ee84b, Offset: 0x5a0
 // Size: 0x34
 function function_daa7e9d5() {
@@ -106,7 +106,7 @@ function function_daa7e9d5() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x2b6c3193, Offset: 0x5e0
 // Size: 0xc
 function default_onalivecountchange(team) {
@@ -114,7 +114,7 @@ function default_onalivecountchange(team) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4dbb18b5, Offset: 0x5f8
 // Size: 0x54
 function onendgame(var_c1e98979) {
@@ -125,28 +125,28 @@ function onendgame(var_c1e98979) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9e9371c0, Offset: 0x658
 // Size: 0x140
 function default_ononeleftevent(team) {
     if (!level.teambased) {
         round::set_winner(globallogic_score::gethighestscoringplayer());
         thread globallogic::end_round(6);
-    } else {
-        foreach (player in level.players) {
-            if (!isalive(player)) {
-                continue;
-            }
-            if (!isdefined(player.pers[#"team"]) || player.pers[#"team"] != team) {
-                continue;
-            }
-            player globallogic_audio::leader_dialog_on_player("sudden_death");
+        return;
+    }
+    foreach (player in level.players) {
+        if (!isalive(player)) {
+            continue;
         }
+        if (!isdefined(player.pers[#"team"]) || player.pers[#"team"] != team) {
+            continue;
+        }
+        player globallogic_audio::leader_dialog_on_player("sudden_death");
     }
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1678e43, Offset: 0x7a0
 // Size: 0x2c
 function default_ontimelimit() {
@@ -155,7 +155,7 @@ function default_ontimelimit() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x6dc02c2a, Offset: 0x7d8
 // Size: 0x48
 function default_onscorelimit() {
@@ -168,7 +168,7 @@ function default_onscorelimit() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xb0f5b1b7, Offset: 0x828
 // Size: 0x40
 function default_onroundscorelimit() {
@@ -179,7 +179,7 @@ function default_onroundscorelimit() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x79c854dd, Offset: 0x870
 // Size: 0xdc
 function default_onspawnspectator(origin, angles) {
@@ -196,7 +196,7 @@ function default_onspawnspectator(origin, angles) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8b9b417f, Offset: 0x958
 // Size: 0x94
 function default_onspawnintermission(endgame) {
@@ -206,15 +206,15 @@ function default_onspawnintermission(endgame) {
     spawnpoint = spawning::get_random_intermission_point();
     if (isdefined(spawnpoint)) {
         self spawn(spawnpoint.origin, spawnpoint.angles);
-    } else {
-        /#
-            util::error("<unknown string>");
-        #/
+        return;
     }
+    /#
+        util::error("<unknown string>");
+    #/
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xa8b7c23c, Offset: 0x9f8
 // Size: 0xba
 function default_gettimelimit() {
@@ -227,7 +227,7 @@ function default_gettimelimit() {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x1ec67370, Offset: 0xac0
 // Size: 0x6c
 function default_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon) {
@@ -239,7 +239,7 @@ function default_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon)
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x6210232e, Offset: 0xb38
 // Size: 0x42
 function default_getteamkillscore(einflictor, attacker, smeansofdeath, weapon) {
@@ -247,7 +247,7 @@ function default_getteamkillscore(einflictor, attacker, smeansofdeath, weapon) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x8dd910ae, Offset: 0xb88
 // Size: 0x100
 function get_alive_players(players) {
@@ -270,7 +270,7 @@ function get_alive_players(players) {
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xfe56083f, Offset: 0xc90
 // Size: 0xcc
 function function_108c4b65() {

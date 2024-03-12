@@ -161,9 +161,9 @@ function function_bc7eec87(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_61c6d401(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self playrenderoverridebundle("rob_zm_white_crate_clear");
-    } else {
-        self stoprenderoverridebundle("rob_zm_white_crate_clear");
+        return;
     }
+    self stoprenderoverridebundle("rob_zm_white_crate_clear");
 }
 
 // Namespace zm_white/zm_white
@@ -190,7 +190,9 @@ function portal_map_magicbox_lights_init(localclientnum, oldval, newval, bnewent
 function portal_map_start_chest1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_start_chest1");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_start_chest1");
     }
 }
@@ -202,7 +204,9 @@ function portal_map_start_chest1(localclientnum, oldval, newval, bnewent, biniti
 function portal_map_start_chest2(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_start_chest2");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_start_chest2");
     }
 }
@@ -214,7 +218,9 @@ function portal_map_start_chest2(localclientnum, oldval, newval, bnewent, biniti
 function portal_map_green_backyard_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_green_backyard_chest");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_green_backyard_chest");
     }
 }
@@ -226,7 +232,9 @@ function portal_map_green_backyard_chest(localclientnum, oldval, newval, bnewent
 function portal_map_yellow_backyard_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_yellow_backyard_chest");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_yellow_backyard_chest");
     }
 }
@@ -238,7 +246,9 @@ function portal_map_yellow_backyard_chest(localclientnum, oldval, newval, bnewen
 function portal_map_bunker1_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_bunker1_chest");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_bunker1_chest");
     }
 }
@@ -250,7 +260,9 @@ function portal_map_bunker1_chest(localclientnum, oldval, newval, bnewent, binit
 function portal_map_bunker2_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_bunker2_chest");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_bunker2_chest");
     }
 }
@@ -262,7 +274,9 @@ function portal_map_bunker2_chest(localclientnum, oldval, newval, bnewent, binit
 function portal_map_cul_de_sac_chest(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         function_d901bcc9(localclientnum, "tag_cul_de_sac_chest");
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         function_86b85486(localclientnum, "tag_cul_de_sac_chest");
     }
 }
@@ -282,7 +296,9 @@ function portal_map_fire_sale(localclientnum, oldval, newval, bnewent, binitials
                 var_35f97c42 showpart(localclientnum, var_acb45e05);
             }
         }
-    } else if (newval == 0) {
+        return;
+    }
+    if (newval == 0) {
         foreach (var_35f97c42 in level.var_8f14a19) {
             foreach (var_acb45e05 in level.var_17199db2) {
                 var_35f97c42 util::waittill_dobj(localclientnum);
@@ -327,9 +343,9 @@ function function_86b85486(localclientnum, tag) {
 function power_pbg_control(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejum) {
     if (newval == 1) {
         setpbgactivebank(localclientnum, 4);
-    } else {
-        setpbgactivebank(localclientnum, 1);
+        return;
     }
+    setpbgactivebank(localclientnum, 1);
 }
 
 // Namespace zm_white/zm_white

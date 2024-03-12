@@ -499,9 +499,9 @@ function onmove(placeable) {
     }
     if (isdefined(placeable.weapon) && placeable.weapon.deployable) {
         player thread function_b7fcffdd(placeable);
-    } else {
-        player thread carryplaceable(placeable);
+        return;
     }
+    player thread carryplaceable(placeable);
 }
 
 // Namespace placeables/placeables
@@ -676,14 +676,12 @@ function shutdownoncancelevent(placeable) {
     #/
     vehicle = placeable.vehicle;
     othermodel = placeable.othermodel;
-    var_a94c08f3 = 1;
-    while (var_a94c08f3) {
+    for (var_a94c08f3 = 1; var_a94c08f3; var_a94c08f3 = 0) {
         waitresult = undefined;
         waitresult = placeable waittill(#"cancelled", #"death");
         if ((isdefined(placeable.var_d4083518) ? placeable.var_d4083518 : 0) && waitresult._notify == "death") {
             continue;
         }
-        var_a94c08f3 = 0;
     }
     if (isdefined(placeable.weapon) && placeable.weapon.deployable) {
         if (isdefined(level.var_69959686)) {

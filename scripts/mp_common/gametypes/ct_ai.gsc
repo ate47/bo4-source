@@ -267,7 +267,7 @@ function function_9313dd47(s_loc, n_radius) {
         if (n_dist < n_radius) {
             e_player = getplayers()[0];
             self.var_2925fedc = e_player.origin;
-            break;
+            return;
         }
         waitframe(1);
     }

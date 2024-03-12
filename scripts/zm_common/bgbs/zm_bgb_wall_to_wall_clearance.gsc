@@ -72,8 +72,7 @@ function function_84832f40(w_wallbuy, var_2b6f3563) {
 function override_ammo_cost(w_wallbuy, stub) {
     if (self zm_weapons::has_upgrade(w_wallbuy)) {
         return 500;
-    } else {
-        return 10;
     }
+    return 10;
 }
 

@@ -76,13 +76,13 @@ function function_304304b4() {
             /#
                 print("<unknown string>" + function_9e72a96(var_649b3d1e) + "<unknown string>" + "<unknown string>");
             #/
-        } else {
-            scene::add_scene_func(var_649b3d1e, &function_9b8bc25c);
-            /#
-                scene::add_scene_func(var_649b3d1e, &function_4ee0d67);
-            #/
-            level thread scene::play(var_649b3d1e);
+            continue;
         }
+        scene::add_scene_func(var_649b3d1e, &function_9b8bc25c);
+        /#
+            scene::add_scene_func(var_649b3d1e, &function_4ee0d67);
+        #/
+        level thread scene::play(var_649b3d1e);
     }
 }
 

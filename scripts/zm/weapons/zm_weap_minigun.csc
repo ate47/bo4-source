@@ -47,9 +47,9 @@ function private function_d05553c6(localclientnum, oldvalue, newvalue, bnewent, 
 function private minigun_nuke_rob(localclientnum, oldvalue, newvalue, bnewent, binitialsnap, fieldname, wasdemojump) {
     if (newvalue == 1) {
         self playrenderoverridebundle("rob_zm_going_nuclear");
-    } else {
-        self stoprenderoverridebundle("rob_zm_going_nuclear");
+        return;
     }
+    self stoprenderoverridebundle("rob_zm_going_nuclear");
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
@@ -78,8 +78,8 @@ function minigun_launcher_muzzle_fx(localclientnum, oldval, newval, bnewent, bin
     }
     if (self zm_utility::function_f8796df3(localclientnum)) {
         self.var_83a410ad = playviewmodelfx(localclientnum, level._effect[#"hash_319b0ab74b8b1f3c"], "tag_flash2");
-    } else {
-        self.var_83a410ad = util::playfxontag(localclientnum, level._effect[#"hash_31a216b74b91524e"], self, "tag_flash2");
+        return;
     }
+    self.var_83a410ad = util::playfxontag(localclientnum, level._effect[#"hash_31a216b74b91524e"], self, "tag_flash2");
 }
 

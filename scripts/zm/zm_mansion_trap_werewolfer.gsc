@@ -83,10 +83,10 @@ function function_670dda89() {
     level flag::set(#"hash_6f483dda6f8ab19d");
     level thread function_408fcb87();
     level exploder::exploder("fxexp_ele_trap_activate");
-    if (!isdefined(self.var_fe043be4)) {
-        self.var_fe043be4 = getent("mdl_ww_trap_lever", "targetname");
+    if (!isdefined(self.mdl_handle)) {
+        self.mdl_handle = getent("mdl_ww_trap_lever", "targetname");
     }
-    self.var_fe043be4 rotatepitch(90, 0.5);
+    self.mdl_handle rotatepitch(90, 0.5);
     level.var_4cca20a9 clientfield::set("" + #"hash_17df66ef5f71c0de", 2);
     fx_points = struct::get_array(self.target, "targetname");
     for (i = 0; i < fx_points.size; i++) {
@@ -125,7 +125,7 @@ function function_38b44aab() {
     level notify(#"traps_cooldown", {#var_be3f58a:self.script_string});
     n_cooldown = zm_traps::function_da13db45(self._trap_cooldown_time, self.activated_by_player);
     wait(n_cooldown);
-    self.var_fe043be4 rotatepitch(-90, 0.5);
+    self.mdl_handle rotatepitch(-90, 0.5);
     wait(0.5);
     level.var_4cca20a9 clientfield::set("" + #"hash_17df66ef5f71c0de", 1);
     level notify(#"traps_available", {#var_be3f58a:self.script_string});
@@ -151,52 +151,54 @@ function ai_damage(e_trap) {
     self endon(#"death");
     if (self.var_9fde8624 === #"catalyst_electric") {
         return;
-    } else if (self.team === #"allies") {
+    }
+    if (self.team === #"allies") {
         return;
-    } else if (self.archetype === #"blight_father") {
+    }
+    if (self.archetype === #"blight_father") {
         e_trap notify(#"trap_deactivate");
-    } else {
-        if (isdefined(self.var_3e60a85e) && self.var_3e60a85e) {
-            return;
+        return;
+    }
+    if (isdefined(self.var_3e60a85e) && self.var_3e60a85e) {
+        return;
+    }
+    self.var_3e60a85e = 1;
+    if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
+        e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+        e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+        if (isdefined(e_trap.activated_by_player.var_a8049e3d)) {
+            e_trap.activated_by_player.var_a8049e3d++;
+            e_trap.activated_by_player notify(#"zombie_zapped");
         }
-        self.var_3e60a85e = 1;
-        if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
-            e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-            if (isdefined(e_trap.activated_by_player.var_a8049e3d)) {
-                e_trap.activated_by_player.var_a8049e3d++;
-                e_trap.activated_by_player notify(#"zombie_zapped");
-            }
-        }
-        self fx::play("werewolfer_impact", self.origin, self.angles, "death");
-        playsoundatposition(#"wpn_zmb_electrap_zap", self.origin);
-        if (self.archetype === #"werewolf") {
+    }
+    self fx::play("werewolfer_impact", self.origin, self.angles, "death");
+    playsoundatposition(#"wpn_zmb_electrap_zap", self.origin);
+    if (self.archetype === #"werewolf") {
+        self thread zm_traps::electroctute_death_fx();
+        self thread zm_traps::play_elec_vocals();
+        self function_a3059f6(e_trap);
+    } else if (self.archetype === #"zombie") {
+        refs[0] = "guts";
+        refs[1] = "right_arm";
+        refs[2] = "left_arm";
+        refs[3] = "right_leg";
+        refs[4] = "left_leg";
+        refs[5] = "no_legs";
+        refs[6] = "head";
+        self.a.gib_ref = refs[randomint(refs.size)];
+        if (randomint(100) > 50) {
             self thread zm_traps::electroctute_death_fx();
             self thread zm_traps::play_elec_vocals();
-            self function_a3059f6(e_trap);
-        } else if (self.archetype === #"zombie") {
-            refs[0] = "guts";
-            refs[1] = "right_arm";
-            refs[2] = "left_arm";
-            refs[3] = "right_leg";
-            refs[4] = "left_leg";
-            refs[5] = "no_legs";
-            refs[6] = "head";
-            self.a.gib_ref = refs[randomint(refs.size)];
-            if (randomint(100) > 50) {
-                self thread zm_traps::electroctute_death_fx();
-                self thread zm_traps::play_elec_vocals();
-            }
-            bhtnactionstartevent(self, "electrocute");
-            self notify(#"bhtn_action_notify", {#action:"electrocute"});
-            wait(randomfloat(1.25));
-            self function_a3059f6(e_trap);
-        } else {
-            self function_a3059f6(e_trap);
         }
-        wait(2);
-        self.var_3e60a85e = undefined;
+        bhtnactionstartevent(self, "electrocute");
+        self notify(#"bhtn_action_notify", {#action:"electrocute"});
+        wait(randomfloat(1.25));
+        self function_a3059f6(e_trap);
+    } else {
+        self function_a3059f6(e_trap);
     }
+    wait(2);
+    self.var_3e60a85e = undefined;
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer
@@ -208,20 +210,20 @@ function function_a3059f6(e_trap) {
     [[ level.var_7aa02c24 ]]->waitinqueue(self);
     if (isdefined(self.var_5475b4ad)) {
         self [[ self.var_5475b4ad ]](e_trap);
-    } else {
-        if (self.archetype === #"werewolf") {
-            n_damage = self.health + 100;
-        } else {
-            n_damage = 20000;
-        }
-        if (self.health < n_damage) {
-            level notify(#"trap_kill", {#e_trap:e_trap, #victim:self});
-            if (self.archetype === #"werewolf" && isdefined(e_trap.activated_by_player)) {
-                e_trap.activated_by_player notify(#"hash_510f9114e7a6300c");
-            }
-        }
-        self dodamage(n_damage, e_trap.origin, undefined, e_trap, undefined, "MOD_ELECTROCUTED", 0, undefined);
+        return;
     }
+    if (self.archetype === #"werewolf") {
+        n_damage = self.health + 100;
+    } else {
+        n_damage = 20000;
+    }
+    if (self.health < n_damage) {
+        level notify(#"trap_kill", {#e_trap:e_trap, #victim:self});
+        if (self.archetype === #"werewolf" && isdefined(e_trap.activated_by_player)) {
+            e_trap.activated_by_player notify(#"hash_510f9114e7a6300c");
+        }
+    }
+    self dodamage(n_damage, e_trap.origin, undefined, e_trap, undefined, "MOD_ELECTROCUTED", 0, undefined);
 }
 
 // Namespace zm_trap_werewolfer/zm_mansion_trap_werewolfer

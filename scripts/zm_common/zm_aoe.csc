@@ -151,14 +151,18 @@ function private function_dcc24343(localclientnum, oldval, newval, bnewent, bini
                 function_36e4ebd4(localclientnum, var_46f1b5eb.startrumble);
             }
         }
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         if (isdefined(var_46f1b5eb.loopfx)) {
             self.aoefx = playfx(localclientnum, var_46f1b5eb.loopfx, self.origin, (0, 0, 1));
         }
         if (isdefined(var_46f1b5eb.loopsound)) {
             self.var_e0952422 = self playloopsound(var_46f1b5eb.loopsound);
         }
-    } else if (newval == 3 || newval == 4) {
+        return;
+    }
+    if (newval == 3 || newval == 4) {
         if (isdefined(self.aoefx)) {
             stopfx(localclientnum, self.aoefx);
         }

@@ -20,7 +20,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f8b71a7, Offset: 0xf8
 // Size: 0x6e
 function __init__() {
@@ -31,7 +31,7 @@ function __init__() {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x94ecfb2f, Offset: 0x170
 // Size: 0x8c
 function onsmartcoverplaced(smartcover) {
@@ -40,7 +40,7 @@ function onsmartcoverplaced(smartcover) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xe1301a9, Offset: 0x208
 // Size: 0x104
 function function_a430cceb(attacker, weapon) {
@@ -55,7 +55,7 @@ function function_a430cceb(attacker, weapon) {
 }
 
 // Namespace smart_cover/gadget_smart_cover
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9e3aae50, Offset: 0x318
 // Size: 0x15e
 function function_9a2b3318(origin, angles, player) {

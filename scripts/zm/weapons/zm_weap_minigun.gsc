@@ -100,11 +100,15 @@ function private function_9592c5c1() {
         }
         if (wpn_cur == level.hero_weapon[#"minigun"][0]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_6933501bf415a72c");
-        } else if (wpn_cur == level.hero_weapon[#"minigun"][1]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"minigun"][1]) {
             zm_hero_weapon::show_hint(wpn_cur, #"hash_30df02915fdc6a67");
             self thread function_ebaedcdd(wpn_cur);
             self thread function_478a4910(wpn_cur);
-        } else if (wpn_cur == level.hero_weapon[#"minigun"][2]) {
+            continue;
+        }
+        if (wpn_cur == level.hero_weapon[#"minigun"][2]) {
             if (!self gamepadusedlast()) {
                 self zm_hero_weapon::show_hint(wpn_cur, #"hash_53f4514d440c7816");
             } else {
@@ -170,7 +174,6 @@ function function_34a75fed(inflictor, attacker, damage, flags, meansofdeath, wea
                 return self.health;
             case #"popcorn":
                 return self.health;
-                break;
             }
         }
         break;
@@ -181,7 +184,6 @@ function function_34a75fed(inflictor, attacker, damage, flags, meansofdeath, wea
             case #"basic":
             case #"enhanced":
                 return 0;
-                break;
             }
         }
         break;
@@ -233,7 +235,9 @@ function private function_335a27d1() {
                     e_player.var_1bdf157c = 1;
                     e_player.var_5762241e = 40;
                 }
-            } else if (isdefined(e_player.var_1bdf157c) && e_player.var_1bdf157c) {
+                continue;
+            }
+            if (isdefined(e_player.var_1bdf157c) && e_player.var_1bdf157c) {
                 e_player.var_1bdf157c = undefined;
                 e_player.var_5762241e = undefined;
             }
@@ -351,13 +355,14 @@ function function_9d166ae8(w_minigun) {
                         }
                         e_grenade clientfield::set("minigun_nuke_rob", 1);
                         e_grenade playloopsound("wpn_minigun_nuke_riser");
-                    } else if (s_result._notify == "timeout") {
+                        continue;
+                    }
+                    if (s_result._notify == "timeout") {
                         v_end_pos = e_grenade.origin;
                         e_grenade delete();
                         break;
-                    } else {
-                        e_grenade clientfield::set("minigun_nuke_rob", 0);
                     }
+                    e_grenade clientfield::set("minigun_nuke_rob", 0);
                 }
             }
             if (!isdefined(v_end_pos)) {
@@ -421,7 +426,9 @@ function function_13409329(v_end_pos, w_minigun) {
         }
         if (var_367c14cc[i].var_6f84b820 == #"basic" || var_367c14cc[i].var_6f84b820 == #"enhanced" || var_367c14cc[i].var_6f84b820 == #"popcorn") {
             var_367c14cc[i] thread function_292bb3d7(self, w_minigun, v_end_pos);
-        } else if (var_367c14cc[i].var_6f84b820 == #"miniboss" || var_367c14cc[i].var_6f84b820 == #"boss") {
+            continue;
+        }
+        if (var_367c14cc[i].var_6f84b820 == #"miniboss" || var_367c14cc[i].var_6f84b820 == #"boss") {
             if (isdefined(self.maxhealth)) {
                 var_4fbc5aad = var_367c14cc[i].maxhealth * 0.25;
             } else {

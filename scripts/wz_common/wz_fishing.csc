@@ -37,9 +37,9 @@ function __init__() {
 function function_c06a890a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory.canUseQuickInventory"), 0);
-    } else {
-        setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory.canUseQuickInventory"), 1);
+        return;
     }
+    setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory.canUseQuickInventory"), 1);
 }
 
 // Namespace wz_fishing/wz_fishing
@@ -51,10 +51,10 @@ function fishing_buoy_splash(localclientnum, oldval, newval, bnewent, binitialsn
         if (isdefined(self.var_85dbab0)) {
             stopfx(localclientnum, self.var_85dbab0);
         }
-    } else {
-        self.var_85dbab0 = playfx(localclientnum, "player/fx_plyr_water_splash_sm", self.origin);
-        playsound(localclientnum, #"hash_7ff007fca6ac13d7", self.origin);
+        return;
     }
+    self.var_85dbab0 = playfx(localclientnum, "player/fx_plyr_water_splash_sm", self.origin);
+    playsound(localclientnum, #"hash_7ff007fca6ac13d7", self.origin);
 }
 
 // Namespace wz_fishing/wz_fishing
@@ -66,9 +66,9 @@ function fishing_splash(localclientnum, oldval, newval, bnewent, binitialsnap, f
         if (isdefined(self.var_85dbab0)) {
             stopfx(localclientnum, self.var_85dbab0);
         }
-    } else {
-        self.var_85dbab0 = playfx(localclientnum, "impacts/fx8_bul_impact_water_sm", self.origin);
-        playsound(localclientnum, #"hash_4b98472de9aeb14b", self.origin);
+        return;
     }
+    self.var_85dbab0 = playfx(localclientnum, "impacts/fx8_bul_impact_water_sm", self.origin);
+    playsound(localclientnum, #"hash_4b98472de9aeb14b", self.origin);
 }
 

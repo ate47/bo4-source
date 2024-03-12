@@ -14,7 +14,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace bb/bb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x66495e8c, Offset: 0xf0
 // Size: 0x34
 function __init__() {
@@ -23,7 +23,7 @@ function __init__() {
 }
 
 // Namespace bb/bb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x843731dd, Offset: 0x130
 // Size: 0xa4
 function on_player_spawned() {
@@ -37,7 +37,7 @@ function on_player_spawned() {
 }
 
 // Namespace bb/bb
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x127471fa, Offset: 0x1e0
 // Size: 0x2cc
 function function_bf5cad4e(gamemodedata) {
@@ -71,7 +71,7 @@ function function_95a5b5c2(var_daec1817, label, team, origin, player) {
 }
 
 // Namespace bb/bb
-// Params 14, eflags: 0x1 linked
+// Params 14, eflags: 0x0
 // Checksum 0xdba94d71, Offset: 0x650
 // Size: 0x24c
 function function_c3b9e07f(eattacker, attackerorigin, attackerspecialist, attackerweapon, evictim, victimorigin, victimspecialist, victimweapon, idamage, smeansofdeath, shitloc, death, isusingheropower, killstreak) {
@@ -110,7 +110,7 @@ function function_c3b9e07f(eattacker, attackerorigin, attackerspecialist, attack
 }
 
 // Namespace bb/bb
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x25490e69, Offset: 0x8a8
 // Size: 0x54
 function on_player_death(params) {
@@ -123,7 +123,7 @@ function on_player_death(params) {
 }
 
 // Namespace bb/bb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaecf71e2, Offset: 0x908
 // Size: 0x71c
 function function_6661621a() {
@@ -192,7 +192,7 @@ function function_6661621a() {
 }
 
 // Namespace bb/bb
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xab1d5a32, Offset: 0x1030
 // Size: 0x1dc
 function commit_spawn_data() {
@@ -217,7 +217,7 @@ function commit_spawn_data() {
 }
 
 // Namespace bb/bb
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9143ab7c, Offset: 0x1218
 // Size: 0x2b2
 function function_285f8efd(weapon) {

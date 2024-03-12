@@ -50,7 +50,9 @@ function watch_weapon_changes(localclientnum) {
             for (i = 0; i < w_current.var_21329beb.size; i++) {
                 util::lock_model(w_current.var_21329beb[i]);
             }
-        } else if (w_previous.isriotshield) {
+            continue;
+        }
+        if (w_previous.isriotshield) {
             for (i = 0; i < w_previous.var_21329beb.size; i++) {
                 util::unlock_model(w_previous.var_21329beb[i]);
             }

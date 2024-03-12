@@ -37,7 +37,7 @@ function load(str_filename, str_table_start, b_convert_numbers = 1) {
             }
         }
         n_row++;
-    } while(isdefined(a_row) && a_row.size > 0);
+    } while (isdefined(a_row) && a_row.size > 0);
     return a_table;
 }
 

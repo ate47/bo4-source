@@ -83,7 +83,9 @@ function function_815cc85c(localclientnum) {
 function function_3f3f0d8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         util::playfxontag(localclientnum, "zm_ai/fx8_werewolf_dmg_weakspot", self, "tag_chest_ws");
-    } else if (newval == 2) {
+        return;
+    }
+    if (newval == 2) {
         util::playfxontag(localclientnum, "zm_ai/fx8_werewolf_dmg_weakspot", self, "tag_back_ws");
     }
 }
@@ -114,11 +116,13 @@ function private function_f4b140ab(localclientnum, pos, surface, notetrack, bone
     earthquake(localclientnum, n_scale, 0.1, pos, n_dist);
     if (n_scale <= 0.25 && n_scale > 0.2) {
         function_36e4ebd4(localclientnum, "anim_med");
-    } else if (n_scale <= 0.2 && n_scale > 0.1) {
-        function_36e4ebd4(localclientnum, "damage_light");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    if (n_scale <= 0.2 && n_scale > 0.1) {
+        function_36e4ebd4(localclientnum, "damage_light");
+        return;
+    }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 
 // Namespace zm_ai_werewolf/zm_ai_werewolf
@@ -137,8 +141,8 @@ function private function_e980911c(localclientnum, oldval, newval, bnewent, bini
     earthquake(localclientnum, n_scale, 0.5, self.origin, n_dist, 1);
     if (n_scale >= 0.5) {
         function_36e4ebd4(localclientnum, "zm_shield_break");
-    } else {
-        function_36e4ebd4(localclientnum, "damage_light");
+        return;
     }
+    function_36e4ebd4(localclientnum, "damage_light");
 }
 

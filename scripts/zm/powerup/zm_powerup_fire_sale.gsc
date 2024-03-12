@@ -234,9 +234,9 @@ function sndfiresalemusic_start() {
         }
         if (isdefined(level.player_4_vox_override) && level.player_4_vox_override) {
             struct.sndent playloopsound(#"mus_fire_sale_rich", 1);
-        } else {
-            struct.sndent playloopsound(#"mus_fire_sale", 1);
+            continue;
         }
+        struct.sndent playloopsound(#"mus_fire_sale", 1);
     }
 }
 

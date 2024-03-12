@@ -46,10 +46,10 @@ function private function_97adc67(localclientnum) {
                 if (isthirdperson(localclientnum)) {
                     self show();
                     player hide();
-                } else {
-                    player show();
-                    self hide();
+                    continue;
                 }
+                player show();
+                self hide();
             }
         }
         waitframe(1);
@@ -67,9 +67,9 @@ function private function_a0c1af51(localclientnum, oldval, newval, bnewent, bini
     }
     if (newval) {
         self hideviewlegs();
-    } else {
-        self showviewlegs();
+        return;
     }
+    self showviewlegs();
 }
 
 // Namespace zm_orange_fasttravel_ziplines/zm_orange_fasttravel_ziplines
@@ -84,7 +84,9 @@ function play_blur_post_fx(localclientnum, oldval, newval, bnewent, binitialsnap
         self postfx::function_c8b5f318("pstfx_speedblur", #"blur", 0.05);
         self postfx::function_c8b5f318("pstfx_speedblur", #"inner mask", 0.3);
         self postfx::function_c8b5f318("pstfx_speedblur", #"outer mask", 0.8);
-    } else if (self postfx::function_556665f2("pstfx_speedblur")) {
+        return;
+    }
+    if (self postfx::function_556665f2("pstfx_speedblur")) {
         self postfx::stoppostfxbundle("pstfx_speedblur");
     }
 }

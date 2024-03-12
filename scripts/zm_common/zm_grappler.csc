@@ -67,9 +67,9 @@ function grappler_beam(localclientnum, oldval, newval, bnewent, binitialsnap, fi
     }
     if (newval) {
         thread function_34e3f163(self, "tag_origin", pivot, 0.05);
-    } else {
-        self notify(#"grappler_done");
+        return;
     }
+    self notify(#"grappler_done");
 }
 
 // Namespace zm_grappler/zm_grappler

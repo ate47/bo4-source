@@ -22,7 +22,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace draft/draft
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x44295c9e, Offset: 0x3260
 // Size: 0xb8e
 function __init__() {
@@ -105,7 +105,7 @@ function __init__() {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x61a89dab, Offset: 0x3df8
 // Size: 0x96
 function function_c4dfe16e(localclientnum) {
@@ -129,7 +129,7 @@ function function_75442e78(team, index) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5cc758c1, Offset: 0x3f08
 // Size: 0x272
 function play_intro_cinematic(localclientnum) {
@@ -160,7 +160,7 @@ function play_intro_cinematic(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x77ce5fe7, Offset: 0x4188
 // Size: 0x1ba
 function show_cam(localclientnum, xcam, animname, lerpduration) {
@@ -188,7 +188,7 @@ function show_cam(localclientnum, xcam, animname, lerpduration) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf15e68ec, Offset: 0x4350
 // Size: 0x44
 function stop_cameras(localclientnum) {
@@ -198,7 +198,7 @@ function stop_cameras(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x90093316, Offset: 0x43a0
 // Size: 0x3c
 function function_532dfc0b(localclientnum, lerpduration) {
@@ -206,7 +206,7 @@ function function_532dfc0b(localclientnum, lerpduration) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x86edb503, Offset: 0x43e8
 // Size: 0x3c
 function function_e79c182b(localclientnum, lerpduration) {
@@ -222,7 +222,7 @@ function function_fccaf2ed(localclientnum, lerpduration) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb75654df, Offset: 0x4478
 // Size: 0x7c
 function enable_lights(localclientnum) {
@@ -234,7 +234,7 @@ function enable_lights(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3ffa44b, Offset: 0x4500
 // Size: 0x46
 function function_2c486f35(localclientnum) {
@@ -245,7 +245,7 @@ function function_2c486f35(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 7, eflags: 0x1 linked
+// Params 7, eflags: 0x0
 // Checksum 0x3e6d49c0, Offset: 0x4550
 // Size: 0x114
 function handledraftstage(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
@@ -265,21 +265,23 @@ function handledraftstage(localclientnum, oldval, newval, bnewent, binitialsnap,
 }
 
 // Namespace draft/draft
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x9972830d, Offset: 0x4670
 // Size: 0xfe
 function function_799e0ac1(localclientnum, draftcharacter, masked) {
     if (masked && !(isdefined([[ draftcharacter ]]->function_82e05d64().masked) && [[ draftcharacter ]]->function_82e05d64().masked)) {
         [[ draftcharacter ]]->function_27945cb8(1);
         [[ draftcharacter ]]->function_82e05d64().masked = 1;
-    } else if (!masked && isdefined([[ draftcharacter ]]->function_82e05d64().masked) && [[ draftcharacter ]]->function_82e05d64().masked) {
+        return;
+    }
+    if (!masked && isdefined([[ draftcharacter ]]->function_82e05d64().masked) && [[ draftcharacter ]]->function_82e05d64().masked) {
         [[ draftcharacter ]]->function_27945cb8(0);
         [[ draftcharacter ]]->function_82e05d64().masked = 0;
     }
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6ddc3f11, Offset: 0x4778
 // Size: 0xc4
 function function_236a944e(localclientnum) {
@@ -292,7 +294,7 @@ function function_236a944e(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5e3985d3, Offset: 0x4848
 // Size: 0xac
 function function_26c00d58(localclientnum) {
@@ -303,7 +305,7 @@ function function_26c00d58(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x3c37dc7a, Offset: 0x4900
 // Size: 0xee
 function function_b139ecfb(localclientnum) {
@@ -313,14 +315,14 @@ function function_b139ecfb(localclientnum) {
         var_2d0192e5 = [[ character ]]->function_82e05d64();
         if (var_2d0192e5.islocalclient && var_2d0192e5.showmodel) {
             [[ character ]]->show_model();
-        } else {
-            [[ character ]]->hide_model();
+            continue;
         }
+        [[ character ]]->hide_model();
     }
 }
 
 // Namespace draft/draft
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x72dd7a0c, Offset: 0x49f8
 // Size: 0x14c
 function function_1cf2437c(localclientnum, draftcharacter, oldcharacterindex, var_121d6e9a) {
@@ -330,14 +332,14 @@ function function_1cf2437c(localclientnum, draftcharacter, oldcharacterindex, va
     if ([[ draftcharacter ]]->function_82e05d64().localclientnum === localclientnum && isdefined([[ draftcharacter ]]->function_82e05d64().var_c018da16) && player_role::is_valid([[ draftcharacter ]]->function_82e05d64().var_c018da16.charactertype)) {
         if (isdefined(level.var_aefa616f) && level.var_aefa616f && dialog_shared::dialog_chance("characterSelectMaldivesChance")) {
             [[ draftcharacter ]]->function_82e05d64().player dialog_shared::play_dialog("maldivesCharacterSelectOverride", localclientnum);
-        } else {
-            [[ draftcharacter ]]->function_82e05d64().player dialog_shared::play_dialog("characterSelect", localclientnum);
+            return;
         }
+        [[ draftcharacter ]]->function_82e05d64().player dialog_shared::play_dialog("characterSelect", localclientnum);
     }
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xdf6b0def, Offset: 0x4b50
 // Size: 0x1e14
 function function_bb0565d0(var_de58f286) {
@@ -367,7 +369,7 @@ function function_bb0565d0(var_de58f286) {
 }
 
 // Namespace draft/draft
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x6f612938, Offset: 0x6970
 // Size: 0x44e
 function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
@@ -426,7 +428,7 @@ function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7257a282, Offset: 0x6dc8
 // Size: 0x238
 function function_93a4f3c5(localclientnum, draftcharacter) {
@@ -455,7 +457,7 @@ function function_93a4f3c5(localclientnum, draftcharacter) {
 }
 
 // Namespace draft/draft
-// Params 4, eflags: 0x1 linked
+// Params 4, eflags: 0x0
 // Checksum 0x9258cc10, Offset: 0x7008
 // Size: 0x24
 function function_2dfe152c(localclientnum, draftcharacter, oldweapon, newweapon) {
@@ -463,7 +465,7 @@ function function_2dfe152c(localclientnum, draftcharacter, oldweapon, newweapon)
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x5e942a2e, Offset: 0x7038
 // Size: 0x212
 function function_4ccc033d(localclientnum, draftcharacter) {
@@ -488,7 +490,7 @@ function function_4ccc033d(localclientnum, draftcharacter) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb9977d82, Offset: 0x7258
 // Size: 0x35e
 function function_a1c71160(localclientnum, draftcharacter) {
@@ -522,7 +524,7 @@ function function_a1c71160(localclientnum, draftcharacter) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xb7425e50, Offset: 0x75c0
 // Size: 0xe8
 function function_71a9fb67(localclientnum, draftcharacter) {
@@ -542,7 +544,7 @@ function function_71a9fb67(localclientnum, draftcharacter) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x7d2e19e, Offset: 0x76b0
 // Size: 0x876
 function update_team(localclientnum, var_4123f2c1) {
@@ -626,7 +628,7 @@ function update_team(localclientnum, var_4123f2c1) {
 }
 
 // Namespace draft/draft
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x8e148077, Offset: 0x7f30
 // Size: 0x64
 function function_9e9e1117(localclientnum, draftcharacter) {
@@ -636,7 +638,7 @@ function function_9e9e1117(localclientnum, draftcharacter) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x46bb7470, Offset: 0x7fa0
 // Size: 0x120
 function function_20811f66(localclientnum) {
@@ -649,7 +651,7 @@ function function_20811f66(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x674d06a0, Offset: 0x80c8
 // Size: 0x290
 function setup_team(localclientnum) {
@@ -680,7 +682,7 @@ function setup_team(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9f809250, Offset: 0x8360
 // Size: 0xd0
 function watchupdate(localclientnum) {
@@ -698,7 +700,7 @@ function watchupdate(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x171c576c, Offset: 0x8438
 // Size: 0xa8
 function watchteamchange(localclientnum) {
@@ -714,7 +716,7 @@ function watchteamchange(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x76afa385, Offset: 0x84e8
 // Size: 0xa0
 function watchkillcam() {
@@ -729,7 +731,7 @@ function watchkillcam() {
 }
 
 // Namespace draft/draft
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa48b6017, Offset: 0x8590
 // Size: 0x14c
 function function_9afd868e(localclientnum) {
@@ -752,7 +754,7 @@ function function_9afd868e(localclientnum) {
 }
 
 // Namespace draft/draft
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x97e64986, Offset: 0x86e8
 // Size: 0xb8
 function function_ca03ab69() {
@@ -768,7 +770,7 @@ function function_ca03ab69() {
 }
 
 // Namespace draft/draft
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdd92cc4c, Offset: 0x87a8
 // Size: 0x136
 function function_91858511() {

@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x19a607aa, Offset: 0x148
 // Size: 0x54
 function __init__() {
@@ -33,7 +33,7 @@ function __init__() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x3a76bffd, Offset: 0x1a8
 // Size: 0x5bc
 function finalize_init() {
@@ -71,7 +71,7 @@ function finalize_init() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcac976f5, Offset: 0x770
 // Size: 0x2c
 function on_player_connect() {
@@ -79,7 +79,7 @@ function on_player_connect() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4217176c, Offset: 0x7a8
 // Size: 0xfc
 function on_ai_killed(params) {
@@ -98,7 +98,7 @@ function on_ai_killed(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc5bd8f72, Offset: 0x8b0
 // Size: 0xd4
 function on_vehicle_killed(params) {
@@ -119,7 +119,7 @@ function on_vehicle_killed(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x67dd9ba4, Offset: 0x990
 // Size: 0xcf4
 function on_player_killed() {
@@ -323,7 +323,7 @@ function on_player_killed() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x25b68ec0, Offset: 0x1690
 // Size: 0x3e
 function function_e49226a4() {
@@ -335,7 +335,7 @@ function function_e49226a4() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x73dc0c18, Offset: 0x16d8
 // Size: 0x3e
 function function_db2da6f7() {
@@ -347,7 +347,7 @@ function function_db2da6f7() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x59f5131, Offset: 0x1720
 // Size: 0x8e
 function on_player_damage(params) {
@@ -366,7 +366,7 @@ function on_player_damage(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xaeeb3fc8, Offset: 0x17b8
 // Size: 0x7a
 function on_player_downed() {
@@ -384,7 +384,7 @@ function on_player_downed() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x58b6c8d3, Offset: 0x1840
 // Size: 0xac
 function on_player_revived(params) {
@@ -398,7 +398,7 @@ function on_player_revived(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xbe524383, Offset: 0x18f8
 // Size: 0x7e
 function can_process_contracts() {
@@ -415,7 +415,7 @@ function can_process_contracts() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0x1402ec76, Offset: 0x1980
 // Size: 0x7c
 function increment_wz_contract(var_38280f2f, delta = 1) {
@@ -429,7 +429,7 @@ function increment_wz_contract(var_38280f2f, delta = 1) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 2, eflags: 0x5 linked
+// Params 2, eflags: 0x4
 // Checksum 0x5d03071d, Offset: 0x1a08
 // Size: 0x43c
 function private function_902ef0de(var_38280f2f, delta) {
@@ -481,7 +481,7 @@ function private function_902ef0de(var_38280f2f, delta) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x13860ab7, Offset: 0x1e50
 // Size: 0x84
 function private function_a221f6d7(var_38280f2f) {
@@ -493,13 +493,12 @@ function private function_a221f6d7(var_38280f2f) {
     case #"contract_wz_win_without_healing":
     case #"contract_wz_win_match":
         return 1;
-        break;
     }
     return 0;
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x54337bc5, Offset: 0x1ee0
 // Size: 0x2e
 function private function_a7cdb8f0(var_38280f2f) {
@@ -510,7 +509,7 @@ function private function_a7cdb8f0(var_38280f2f) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0xb53a2, Offset: 0x1f18
 // Size: 0xe4
 function private function_8bb21397(var_38280f2f) {
@@ -528,13 +527,12 @@ function private function_8bb21397(var_38280f2f) {
     case #"hash_6bdbeb895b012fb2":
     case #"hash_6f4d7d1506be4c97":
         return 1;
-        break;
     }
     return 0;
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5b3abb2b, Offset: 0x2008
 // Size: 0x2a
 function function_1d4c6768(slot) {
@@ -545,7 +543,7 @@ function function_1d4c6768(slot) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x58b2eac9, Offset: 0x2040
 // Size: 0x4c
 function function_bd3ddb14(e_player) {
@@ -556,7 +554,7 @@ function function_bd3ddb14(e_player) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xa26b2d4e, Offset: 0x2098
 // Size: 0x54
 function function_d9ae19f0(e_player) {
@@ -568,7 +566,7 @@ function function_d9ae19f0(e_player) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x58767ea6, Offset: 0x20f8
 // Size: 0xaa
 function function_521ac7e5() {
@@ -584,7 +582,7 @@ function function_521ac7e5() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x5d539d31, Offset: 0x21b0
 // Size: 0xaa
 function function_4ec3f8fe() {
@@ -600,7 +598,7 @@ function function_4ec3f8fe() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 2, eflags: 0x1 linked
+// Params 2, eflags: 0x0
 // Checksum 0xebd97f9e, Offset: 0x2268
 // Size: 0x196
 function function_29ab88df(a_players, var_c1735b56) {
@@ -612,23 +610,23 @@ function function_29ab88df(a_players, var_c1735b56) {
             if (var_c1735b56 <= 10) {
                 player increment_wz_contract(#"contract_wz_solo_placement");
             }
-            break;
+            continue;
         case 2:
             if (var_c1735b56 <= 5) {
                 player increment_wz_contract(#"hash_48730ce04835417f");
             }
-            break;
+            continue;
         case 4:
             if (var_c1735b56 <= 3) {
                 player increment_wz_contract(#"contract_wz_quads_placement");
             }
-            break;
+            continue;
         }
     }
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xdc19c19c, Offset: 0x2408
 // Size: 0xa0
 function function_28ba0ba6() {
@@ -639,7 +637,7 @@ function function_28ba0ba6() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe2d6f3cd, Offset: 0x24b0
 // Size: 0xc4
 function function_362499ea(params) {
@@ -656,7 +654,7 @@ function function_362499ea(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x676a988d, Offset: 0x2580
 // Size: 0x64
 function function_cdc4c709() {
@@ -671,7 +669,7 @@ function function_cdc4c709() {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x6fd717b9, Offset: 0x25f0
 // Size: 0x1ac
 function on_player_item_pickup(params) {
@@ -703,7 +701,7 @@ function on_player_item_pickup(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x9865d928, Offset: 0x27a8
 // Size: 0x94
 function function_314e09eb(item) {
@@ -715,7 +713,7 @@ function function_314e09eb(item) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x900fb52b, Offset: 0x2848
 // Size: 0xcc
 function function_9d4c3c52(params) {
@@ -732,7 +730,7 @@ function function_9d4c3c52(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbeaf7e71, Offset: 0x2920
 // Size: 0x24
 function function_9b431779(n_time_played) {
@@ -740,7 +738,7 @@ function function_9b431779(n_time_played) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xaeb15079, Offset: 0x2950
 // Size: 0x378
 function function_7870114(var_38280f2f) {
@@ -822,7 +820,7 @@ function function_7870114(var_38280f2f) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x32bb0032, Offset: 0x2cd0
 // Size: 0x4a4
 function function_e82e67c5(n_time_played) {
@@ -890,7 +888,7 @@ function function_e82e67c5(n_time_played) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4b167387, Offset: 0x3180
 // Size: 0x134
 function get_alive_players(disconnected_player) {
@@ -910,7 +908,7 @@ function get_alive_players(disconnected_player) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 3, eflags: 0x1 linked
+// Params 3, eflags: 0x0
 // Checksum 0x59a61102, Offset: 0x32c0
 // Size: 0x18c
 function on_vehicle_enter(vehicle, player, seatindex) {
@@ -936,7 +934,7 @@ function on_vehicle_enter(vehicle, player, seatindex) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xf82495f3, Offset: 0x3458
 // Size: 0x140
 function function_6fcfeebb(player) {
@@ -961,7 +959,7 @@ function function_6fcfeebb(player) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xb7542498, Offset: 0x35a0
 // Size: 0x9c
 function on_stash_open(params) {
@@ -977,7 +975,7 @@ function on_stash_open(params) {
 }
 
 // Namespace wz_contracts/wz_contracts
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x7f676550, Offset: 0x3648
 // Size: 0x256
 function function_5648f82(team) {
@@ -999,13 +997,13 @@ function function_5648f82(team) {
             switch (teamsize) {
             case 1:
                 player increment_wz_contract(#"contract_wz_solo_placement");
-                break;
+                continue;
             case 2:
                 player increment_wz_contract(#"hash_48730ce04835417f");
-                break;
+                continue;
             case 4:
                 player increment_wz_contract(#"contract_wz_quads_placement");
-                break;
+                continue;
             }
         }
     }

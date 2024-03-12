@@ -250,10 +250,8 @@ function ledge_traversal(endpos, ledgetop, normal) {
     trace = bullettrace(ledgetop, ledgetop - vectorscale((0, 0, 1), 1024), 0, self);
     var_82c7381e = trace[#"position"];
     self botsetmovepoint(endpos);
-    var_ccaaa590 = vectordot(self.origin - var_82c7381e, normal);
-    while (var_ccaaa590 > 20) {
+    for (var_ccaaa590 = vectordot(self.origin - var_82c7381e, normal); var_ccaaa590 > 20; var_ccaaa590 = vectordot(self.origin - var_82c7381e, normal)) {
         waitframe(1);
-        var_ccaaa590 = vectordot(self.origin - var_82c7381e, normal);
     }
     self botsetmovemagnitude(0);
     self bottapbutton(10);
@@ -374,10 +372,8 @@ function edge_approach(edgepos, normal, dist = 0) {
     #/
     self botsetmovepoint(edgepos);
     self botsetmovemagnitude(1);
-    var_459ca70 = vectordot(self.origin - edgepos, normal);
-    while (var_459ca70 > dist) {
+    for (var_459ca70 = vectordot(self.origin - edgepos, normal); var_459ca70 > dist; var_459ca70 = vectordot(self.origin - edgepos, normal)) {
         waitframe(1);
-        var_459ca70 = vectordot(self.origin - edgepos, normal);
     }
 }
 

@@ -58,7 +58,9 @@ function function_eae1fc85(localclientnum, oldval, newval, bnewent, binitialsnap
     s_fix_server_spark_fx = struct::get("fix_server_spark_fx", "targetname");
     if (newval == 1) {
         level.var_6171ce61 = playfx(localclientnum, level._effect[#"server_spark_fx"], s_fix_server_spark_fx.origin);
-    } else if (isdefined(level.var_6171ce61)) {
+        return;
+    }
+    if (isdefined(level.var_6171ce61)) {
         deletefx(localclientnum, level.var_6171ce61);
     }
 }
@@ -70,7 +72,9 @@ function function_eae1fc85(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_85c61737(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         level.var_4a2723a3 scene::play("state_no_power");
-    } else if (isdefined(level.var_be3c5a78)) {
+        return;
+    }
+    if (isdefined(level.var_be3c5a78)) {
         deletefx(localclientnum, level.var_be3c5a78);
     }
 }

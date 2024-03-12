@@ -58,7 +58,9 @@ function ee_schuster_step1_setup(var_5ea5c94d) {
                     var_9dc0380f function_488e39dc();
                 }
             }
-        } else if (e_player zm_characters::is_character(array(#"hash_1aa57ef704f24fa5", #"hash_36bc80636f0fdac4"))) {
+            continue;
+        }
+        if (e_player zm_characters::is_character(array(#"hash_1aa57ef704f24fa5", #"hash_36bc80636f0fdac4"))) {
             foreach (var_9dc0380f in var_66ef9199) {
                 if (var_9dc0380f.var_614bfc5c == 1) {
                     thread function_84471080(var_9dc0380f, e_player);
@@ -66,7 +68,9 @@ function ee_schuster_step1_setup(var_5ea5c94d) {
                     var_9dc0380f function_488e39dc();
                 }
             }
-        } else if (e_player zm_characters::is_character(array(#"hash_305f156156d37e34", #"hash_6df0037e3f390b15"))) {
+            continue;
+        }
+        if (e_player zm_characters::is_character(array(#"hash_305f156156d37e34", #"hash_6df0037e3f390b15"))) {
             foreach (var_9dc0380f in var_66ef9199) {
                 if (var_9dc0380f.var_614bfc5c == 2) {
                     thread function_84471080(var_9dc0380f, e_player);
@@ -74,7 +78,9 @@ function ee_schuster_step1_setup(var_5ea5c94d) {
                     var_9dc0380f function_488e39dc();
                 }
             }
-        } else if (e_player zm_characters::is_character(array(#"hash_22e6f7e13c3a99ef", #"hash_46b92e1337b43236"))) {
+            continue;
+        }
+        if (e_player zm_characters::is_character(array(#"hash_22e6f7e13c3a99ef", #"hash_46b92e1337b43236"))) {
             foreach (var_9dc0380f in var_66ef9199) {
                 if (var_9dc0380f.var_614bfc5c == 3) {
                     thread function_84471080(var_9dc0380f, e_player);
@@ -126,9 +132,9 @@ function function_488e39dc() {
         e_trig.var_6a633cb2 = self;
         if (e_trig.classname == "trigger_use_touch_new") {
             e_trig thread function_20b4f09a();
-        } else {
-            e_trig thread function_938d4207();
+            continue;
         }
+        e_trig thread function_938d4207();
     }
 }
 

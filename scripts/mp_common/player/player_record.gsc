@@ -14,7 +14,7 @@
 #namespace player_record;
 
 // Namespace player_record/player_record
-// Params 1, eflags: 0x5 linked
+// Params 1, eflags: 0x4
 // Checksum 0x42e49b95, Offset: 0x310
 // Size: 0x92
 function private function_685505ce(inputarray) {
@@ -32,7 +32,7 @@ function private function_685505ce(inputarray) {
 }
 
 // Namespace player_record/player_record
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xc6c11f03, Offset: 0x3b0
 // Size: 0x127c
 function function_96d38b95(result) {
@@ -245,7 +245,7 @@ function function_96d38b95(result) {
 }
 
 // Namespace player_record/player_record
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xcb3f5d0c, Offset: 0x1638
 // Size: 0x204
 function record_special_move_data_for_life(killer) {
@@ -263,13 +263,13 @@ function record_special_move_data_for_life(killer) {
             return;
         }
         matchrecordlogspecialmovedataforlife(self, self.lastswimmingstarttime, self.lastwallrunstarttime, self.lastslidestarttime, self.lastdoublejumpstarttime, self.timespentswimminginlife, self.timespentwallrunninginlife, self.numberofdoublejumpsinlife, self.numberofslidesinlife, killer, killer.lastswimmingstarttime, killer.lastwallrunstarttime, killer.lastslidestarttime, killer.lastdoublejumpstarttime);
-    } else {
-        matchrecordlogspecialmovedataforlife(self, self.lastswimmingstarttime, self.lastwallrunstarttime, self.lastslidestarttime, self.lastdoublejumpstarttime, self.timespentswimminginlife, self.timespentwallrunninginlife, self.numberofdoublejumpsinlife, self.numberofslidesinlife);
+        return;
     }
+    matchrecordlogspecialmovedataforlife(self, self.lastswimmingstarttime, self.lastwallrunstarttime, self.lastslidestarttime, self.lastdoublejumpstarttime, self.timespentswimminginlife, self.timespentwallrunninginlife, self.numberofdoublejumpsinlife, self.numberofslidesinlife);
 }
 
 // Namespace player_record/player_record
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x7f4575f5, Offset: 0x1848
 // Size: 0x38c
 function record_global_mp_stats_for_player_at_match_start() {
@@ -305,7 +305,7 @@ function record_global_mp_stats_for_player_at_match_start() {
 }
 
 // Namespace player_record/player_record
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xc2cf6ec0, Offset: 0x1be0
 // Size: 0x36c
 function record_global_mp_stats_for_player_at_match_end() {
@@ -338,7 +338,7 @@ function record_global_mp_stats_for_player_at_match_end() {
 }
 
 // Namespace player_record/player_record
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xd1864143, Offset: 0x1f58
 // Size: 0x2a4
 function record_misc_player_stats() {
@@ -372,7 +372,7 @@ function record_misc_player_stats() {
 }
 
 // Namespace player_record/player_record
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x56918dc5, Offset: 0x2208
 // Size: 0x104
 function function_ea5da381() {
@@ -387,7 +387,7 @@ function function_ea5da381() {
 }
 
 // Namespace player_record/player_record
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x512f9ede, Offset: 0x2318
 // Size: 0x75a
 function function_7569c0fb() {
@@ -436,13 +436,13 @@ function function_7569c0fb() {
     case #"ctf_bb":
         self stats::function_81f5c0fe(#"stat1", self.pers[#"objectivescore"]);
         self stats::function_81f5c0fe(#"stat2", self.ekia);
-        break;
+        return;
     case #"koth":
     case #"koth_cwl":
     case #"koth_bb":
         self stats::function_81f5c0fe(#"stat1", self.pers[#"objectivetime"]);
         self stats::function_81f5c0fe(#"stat2", self.ekia);
-        break;
+        return;
     case #"oic":
     case #"tdm_bb":
     case #"tdm_hc":
@@ -458,9 +458,9 @@ function function_7569c0fb() {
     case #"infect":
         self stats::function_81f5c0fe(#"stat1", self.ekia);
         self stats::function_81f5c0fe(#"stat2", self.deaths);
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 

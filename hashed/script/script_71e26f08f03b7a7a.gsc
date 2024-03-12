@@ -140,11 +140,10 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
             while (var_b7d663a9 < var_64f52ca3.size && replacement.count > 0) {
                 var_efecc884 = var_64f52ca3[var_b7d663a9];
                 if (isdefined(var_7003bde7[var_efecc884])) {
-                    goto LOC_00000566;
+                } else {
+                    var_7003bde7[var_efecc884] = replacement.replacement;
+                    replacement.count--;
                 }
-                var_7003bde7[var_efecc884] = replacement.replacement;
-                replacement.count--;
-            LOC_00000566:
                 var_b7d663a9++;
             }
         }

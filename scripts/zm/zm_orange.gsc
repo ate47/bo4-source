@@ -273,7 +273,8 @@ function assign_lowest_unused_character_index() {
                         return 1;
                     }
                     return 3;
-                } else if (player.characterindex == 3 || player.characterindex == 1) {
+                }
+                if (player.characterindex == 3 || player.characterindex == 1) {
                     if (randomint(100) > 50) {
                         return 0;
                     }
@@ -459,9 +460,9 @@ function function_c3d2b3ee() {
                 break;
             }
         }
-    } else {
-        zm_magicbox::default_box_move_logic();
+        return;
     }
+    zm_magicbox::default_box_move_logic();
 }
 
 // Namespace zm_orange/zm_orange
@@ -502,9 +503,8 @@ function function_486119ea() {
 function function_789961d3() {
     if (isdefined(level.chest_index) && isdefined(level.chests) && isdefined(level.chests[level.chest_index])) {
         return level.chests[level.chest_index].script_noteworthy;
-    } else {
-        return undefined;
     }
+    return undefined;
 }
 
 // Namespace zm_orange/zm_orange
@@ -518,10 +518,13 @@ function function_1f712bb1() {
     switch (var_5b117f94) {
     case #"lighthouse_level_1_chest":
         level.var_af3a53b2 = function_19a4e7cf(1500, var_e503dc79);
+        return;
     case #"navigation_chest":
         level.var_af3a53b2 = function_19a4e7cf(300, var_e503dc79);
+        return;
     case #"human_infusion_chest":
         level.var_af3a53b2 = function_19a4e7cf(1100, var_e503dc79);
+        return;
     default:
         level.var_af3a53b2 = function_19a4e7cf(0, var_e503dc79);
     }
@@ -725,13 +728,13 @@ function function_4dacc177() {
     level waittill(#"start_zombie_round_logic");
     switch (zm_custom::function_901b751c(#"zmpowerstate")) {
     case 1:
-        break;
+        return;
     case 2:
         level flag::set("power_on1");
         level flag::set("power_on2");
         level flag::set("power_on3");
     case 0:
-        break;
+        return;
     default:
         break;
     }

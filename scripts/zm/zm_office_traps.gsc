@@ -56,10 +56,10 @@ function function_af5c24bb(e_holder, w_item) {
     if (function_8b1a219a()) {
         level.var_51823720[0] sethintstring(#"hash_323a35945e51c09a");
         level.var_51823720[1] sethintstring(#"hash_323a35945e51c09a");
-    } else {
-        level.var_51823720[0] sethintstring(#"hash_595a7e6ce85abd6e");
-        level.var_51823720[1] sethintstring(#"hash_595a7e6ce85abd6e");
+        return;
     }
+    level.var_51823720[0] sethintstring(#"hash_595a7e6ce85abd6e");
+    level.var_51823720[1] sethintstring(#"hash_595a7e6ce85abd6e");
 }
 
 // Namespace zm_office_traps/zm_office_traps
@@ -101,7 +101,9 @@ function function_cebfdd08() {
             if (zm_utility::is_player_valid(who)) {
                 if (!isdefined(level.var_e2103f01) || level.var_e2103f01 == 0) {
                     zm_utility::play_sound_at_pos("no_purchase", self.origin);
-                } else if (isdefined(level.var_e2103f01) && level.var_e2103f01 > 0) {
+                    continue;
+                }
+                if (isdefined(level.var_e2103f01) && level.var_e2103f01 > 0) {
                     self playsound("zmb_battery_insert");
                     level flag::set(self.script_flag_wait);
                     level.var_e2103f01 = level.var_e2103f01 - 1;
@@ -113,10 +115,10 @@ function function_cebfdd08() {
                         level zm_ui_inventory::function_7df6bb60(#"hash_48c5bcc6c9fab9d6", 1);
                         level zm_ui_inventory::function_7df6bb60(#"hash_2695edd24ddf6e7b", 1);
                         level flag::clear(#"hash_7b57f5f8bfe10b93");
-                    } else {
-                        level zm_ui_inventory::function_7df6bb60(#"hash_7d940511ce9f0341", 1);
-                        level zm_ui_inventory::function_7df6bb60(#"hash_4a5aa2652a3ee760", 1);
+                        continue;
                     }
+                    level zm_ui_inventory::function_7df6bb60(#"hash_7d940511ce9f0341", 1);
+                    level zm_ui_inventory::function_7df6bb60(#"hash_4a5aa2652a3ee760", 1);
                 }
             }
         }

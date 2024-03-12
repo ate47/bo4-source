@@ -344,7 +344,9 @@ function water_think() {
                     } else {
                         players[i] allowprone(1);
                     }
-                } else if (players[i].inwater) {
+                    continue;
+                }
+                if (players[i].inwater) {
                     players[i].inwater = 0;
                 }
             }
@@ -376,11 +378,11 @@ function calculate_map_center() {
                 /#
                     println("<unknown string>", nodes[index].origin);
                 #/
-            } else {
-                origin = nodes[index].origin;
-                level.nodesmins = math::expand_mins(level.nodesmins, origin);
-                level.nodesmaxs = math::expand_maxs(level.nodesmaxs, origin);
+                continue;
             }
+            origin = nodes[index].origin;
+            level.nodesmins = math::expand_mins(level.nodesmins, origin);
+            level.nodesmaxs = math::expand_maxs(level.nodesmaxs, origin);
         }
         level.mapcenter = math::find_box_center(level.nodesmins, level.nodesmaxs);
         /#
@@ -504,9 +506,12 @@ function shock_onpain() {
         }
         if (mod == "MOD_PROJECTILE") {
             continue;
-        } else if (mod == "MOD_GRENADE_SPLASH" || mod == "MOD_GRENADE" || mod == "MOD_EXPLOSIVE" || mod == "MOD_PROJECTILE_SPLASH") {
+        }
+        if (mod == "MOD_GRENADE_SPLASH" || mod == "MOD_GRENADE" || mod == "MOD_EXPLOSIVE" || mod == "MOD_PROJECTILE_SPLASH") {
             self shock_onexplosion(damage);
-        } else if (getdvarstring(#"blurpain") == "on") {
+            continue;
+        }
+        if (getdvarstring(#"blurpain") == "on") {
             self shellshock(#"pain", 0.5);
         }
     }
@@ -631,7 +636,7 @@ function art_review() {
         }
         level.prematchperiod = 0;
         level waittill(#"forever");
-        break;
+        return;
     }
 }
 

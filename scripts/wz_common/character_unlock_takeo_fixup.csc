@@ -13,7 +13,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_takeo_fixup/character_unlock_takeo_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0xcb4c477c, Offset: 0xc8
 // Size: 0x74
 function __init__() {
@@ -21,7 +21,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_takeo_fixup/character_unlock_takeo_fixup
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x2e263523, Offset: 0x148
 // Size: 0x102
 function function_d95e620c() {

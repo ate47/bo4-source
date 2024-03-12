@@ -18,7 +18,7 @@ function autoexec __init__system__() {
 }
 
 // Namespace character_unlock_recon/character_unlock_recon
-// Params 0, eflags: 0x1 linked
+// Params 0, eflags: 0x0
 // Checksum 0x77353022, Offset: 0x108
 // Size: 0x34
 function __init__() {
@@ -26,7 +26,7 @@ function __init__() {
 }
 
 // Namespace character_unlock_recon/character_unlock_recon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x5137b5de, Offset: 0x148
 // Size: 0x14c
 function function_2613aeec(enabled) {
@@ -36,14 +36,14 @@ function function_2613aeec(enabled) {
         callback::add_callback(#"on_team_eliminated", &function_4ac25840);
         if (isdefined(getgametypesetting(#"hash_17f17e92c2654659")) && getgametypesetting(#"hash_17f17e92c2654659")) {
             item_world_fixup::function_e70fa91c(#"wz_escape_supply_stash_parent", #"supply_stash_cu04", 1);
-        } else {
-            item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu04", 6);
+            return;
         }
+        item_world_fixup::function_e70fa91c(#"supply_stash_parent_dlc1", #"supply_stash_cu04", 6);
     }
 }
 
 // Namespace character_unlock_recon/character_unlock_recon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0x4fce896a, Offset: 0x2a0
 // Size: 0x1a4
 function function_1c4b5097(item) {
@@ -66,7 +66,7 @@ function function_1c4b5097(item) {
 }
 
 // Namespace character_unlock_recon/character_unlock_recon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xe6d497da, Offset: 0x450
 // Size: 0x27a
 function function_4ac25840(dead_team) {
@@ -96,7 +96,7 @@ function function_4ac25840(dead_team) {
 }
 
 // Namespace character_unlock_recon/character_unlock_recon
-// Params 1, eflags: 0x1 linked
+// Params 1, eflags: 0x0
 // Checksum 0xbdbfcb5b, Offset: 0x6d8
 // Size: 0x7c
 function on_player_damage(params) {
@@ -106,7 +106,7 @@ function on_player_damage(params) {
 }
 
 // Namespace character_unlock_recon/character_unlock_recon
-// Params 0, eflags: 0x5 linked
+// Params 0, eflags: 0x4
 // Checksum 0xac5ec841, Offset: 0x760
 // Size: 0x80
 function private function_c816ea5b() {

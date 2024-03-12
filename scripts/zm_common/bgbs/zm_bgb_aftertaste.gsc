@@ -34,9 +34,8 @@ function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undef
     if (isdefined(var_a83ac70f) && isdefined(var_6c1b825d) && var_a83ac70f == var_6c1b825d) {
         var_a83ac70f zm_stats::increment_challenge_stat(#"hash_19d6a97f1553f96f");
         return 1;
-    } else {
-        return 0;
     }
+    return 0;
 }
 
 // Namespace zm_bgb_aftertaste/zm_bgb_aftertaste

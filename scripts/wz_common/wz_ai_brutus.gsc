@@ -140,9 +140,9 @@ function function_6a482c74(params) {
     switch (params.state) {
     case 3:
         self wz_ai_utils::function_9758722("run");
-        break;
+        return;
     default:
-        break;
+        return;
     }
 }
 
@@ -419,13 +419,12 @@ function function_530c54e3() {
 function private function_55bb9c72(attacker, damage, weapon, var_81dcad68, damagemultiplier) {
     if (!(isdefined(self.hashelmet) && self.hashelmet)) {
         return (damage * var_81dcad68);
-    } else {
-        self.helmethits++;
-        if (self.helmethits >= self.var_905e4ce2) {
-            self function_530c54e3();
-        }
-        return (damage * damagemultiplier);
     }
+    self.helmethits++;
+    if (self.helmethits >= self.var_905e4ce2) {
+        self function_530c54e3();
+    }
+    return damage * damagemultiplier;
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus
@@ -507,9 +506,8 @@ function private getclosestnode(entity, nodes) {
     if (isdefined(pathdata) && pathdata.status === "succeeded") {
         goalpos = pathdata.pathpoints[pathdata.pathpoints.size - 1];
         return arraygetclosest(goalpos, var_f122ea68);
-    } else {
-        return arraygetclosest(entity.origin, var_f122ea68);
     }
+    return arraygetclosest(entity.origin, var_f122ea68);
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus

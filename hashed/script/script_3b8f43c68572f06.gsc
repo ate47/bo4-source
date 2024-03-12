@@ -8,7 +8,7 @@
 class crevive_hud : cluielem {
 
     // Namespace crevive_hud/revive_hud
-    // Params 0, eflags: 0x8
+    // Params 0, eflags: 0x9 linked
     // Checksum 0xf160f090, Offset: 0x288
     // Size: 0x14
     __constructor() {
@@ -16,7 +16,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 0, eflags: 0x90 class_linked
+    // Params 0, eflags: 0x91 linked class_linked
     // Checksum 0xbc2fe78d, Offset: 0x508
     // Size: 0x14
     __destructor() {
@@ -24,7 +24,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0xfffa0b09, Offset: 0x4d0
     // Size: 0x30
     function set_fadetime(localclientnum, value) {
@@ -32,7 +32,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0xc098c761, Offset: 0x498
     // Size: 0x30
     function set_clientnum(localclientnum, value) {
@@ -40,7 +40,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 2, eflags: 0x0
+    // Params 2, eflags: 0x1 linked
     // Checksum 0x3d1c9a0e, Offset: 0x460
     // Size: 0x30
     function set_text(localclientnum, value) {
@@ -48,7 +48,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 1, eflags: 0x0
+    // Params 1, eflags: 0x1 linked
     // Checksum 0xb859d4c2, Offset: 0x428
     // Size: 0x2c
     function open(localclientnum) {
@@ -56,7 +56,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 1, eflags: 0x0
+    // Params 1, eflags: 0x1 linked
     // Checksum 0xe11d356f, Offset: 0x398
     // Size: 0x84
     function function_fa582112(localclientnum) {
@@ -67,7 +67,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 1, eflags: 0x0
+    // Params 1, eflags: 0x1 linked
     // Checksum 0xbb6bcae6, Offset: 0x368
     // Size: 0x24
     function register_clientside(uid) {
@@ -75,7 +75,7 @@ class crevive_hud : cluielem {
     }
 
     // Namespace crevive_hud/revive_hud
-    // Params 4, eflags: 0x0
+    // Params 4, eflags: 0x1 linked
     // Checksum 0x218c541, Offset: 0x2a8
     // Size: 0xb4
     function setup_clientfields(uid, textcallback, var_c05c67e2, var_415094af) {
@@ -88,7 +88,7 @@ class crevive_hud : cluielem {
 }
 
 // Namespace revive_hud/revive_hud
-// Params 4, eflags: 0x0
+// Params 4, eflags: 0x1 linked
 // Checksum 0xf79b02de, Offset: 0xc8
 // Size: 0x64
 function register(uid, textcallback, var_c05c67e2, var_415094af) {

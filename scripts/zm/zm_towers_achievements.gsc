@@ -58,7 +58,7 @@ function function_131495a5() {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         w_weapon = s_waitresult.weapon;
-        if (zm_weap_crossbow::function_a2c527e5(w_weapon)) {
+        if (zm_weap_crossbow::is_crossbow_upgraded(w_weapon)) {
             break;
         }
     }
@@ -155,14 +155,14 @@ function function_3cbde7f5(s_params) {
 function function_5180cfce(s_params) {
     e_projectile = s_params.einflictor;
     w_weapon = s_params.weapon;
-    if (!isdefined(w_weapon) || !zm_weap_crossbow::is_crossbow(w_weapon) || zm_weap_crossbow::function_c6da1395(w_weapon)) {
+    if (!isdefined(w_weapon) || !zm_weap_crossbow::is_crossbow(w_weapon) || zm_weap_crossbow::is_crossbow_charged(w_weapon)) {
         return undefined;
     }
     if (!isdefined(e_projectile)) {
         return undefined;
     }
     var_73e48d1a = e_projectile.weapon;
-    if (!isdefined(var_73e48d1a) || !zm_weap_crossbow::is_crossbow(var_73e48d1a) || zm_weap_crossbow::function_c6da1395(var_73e48d1a)) {
+    if (!isdefined(var_73e48d1a) || !zm_weap_crossbow::is_crossbow(var_73e48d1a) || zm_weap_crossbow::is_crossbow_charged(var_73e48d1a)) {
         return undefined;
     }
     return e_projectile;

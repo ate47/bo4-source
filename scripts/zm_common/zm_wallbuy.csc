@@ -83,12 +83,12 @@ function init() {
         }
         if (!isdefined(spawnable_weapon.script_noteworthy) || spawnable_weapon.script_noteworthy == "") {
             spawn_list[spawn_list.size] = spawnable_weapon;
-        } else {
-            matches = strtok(spawnable_weapon.script_noteworthy, ",");
-            for (j = 0; j < matches.size; j++) {
-                if (matches[j] == match_string || matches[j] == match_string_plus_space) {
-                    spawn_list[spawn_list.size] = spawnable_weapon;
-                }
+            continue;
+        }
+        matches = strtok(spawnable_weapon.script_noteworthy, ",");
+        for (j = 0; j < matches.size; j++) {
+            if (matches[j] == match_string || matches[j] == match_string_plus_space) {
+                spawn_list[spawn_list.size] = spawnable_weapon;
             }
         }
     }
@@ -186,7 +186,7 @@ function wallbuy_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
         struct.models[localclientnum].origin = struct.models[localclientnum].parent_struct.origin;
         struct.models[localclientnum].angles = struct.models[localclientnum].parent_struct.angles;
         struct.models[localclientnum] hide();
-        break;
+        return;
     case 1:
         if (binitialsnap) {
             if (!isdefined(struct.models)) {
@@ -212,12 +212,12 @@ function wallbuy_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
             struct.models[localclientnum] show();
             struct.models[localclientnum] moveto(struct.models[localclientnum].parent_struct.origin, 1);
         }
-        break;
+        return;
     case 2:
         if (isdefined(level.var_680d143d)) {
             struct.models[localclientnum] [[ level.var_680d143d ]]();
         }
-        break;
+        return;
     }
 }
 
@@ -232,7 +232,9 @@ function wallbuy_callback_idx(localclientnum, oldval, newval, bnewent, binitials
         if (isdefined(struct.models[localclientnum])) {
             struct.models[localclientnum] hide();
         }
-    } else if (newval > 0) {
+        return;
+    }
+    if (newval > 0) {
         weaponname = level.buildable_wallbuy_weapons[newval - 1];
         weapon = getweapon(weaponname);
         if (!isdefined(struct.models)) {
@@ -289,14 +291,14 @@ function function_51f5fb94(localclientnum, oldval, newval, bnewent, binitialsnap
         if (!isdefined(self.var_907b36d0)) {
             self.var_907b36d0 = util::playfxontag(localclientnum, level._effect[#"wallbuy_ambient_fx"], self, "tag_fx_wall_buy");
         }
-    } else {
-        if (isdefined(self.var_907b36d0)) {
-            stopfx(localclientnum, self.var_907b36d0);
-            self.var_907b36d0 = undefined;
-        }
-        if (!isdefined(self.var_e51fbce7)) {
-            self.var_e51fbce7 = util::playfxontag(localclientnum, level._effect[#"hash_6928ec90dff78e0c"], self, "tag_fx_wall_buy");
-        }
+        return;
+    }
+    if (isdefined(self.var_907b36d0)) {
+        stopfx(localclientnum, self.var_907b36d0);
+        self.var_907b36d0 = undefined;
+    }
+    if (!isdefined(self.var_e51fbce7)) {
+        self.var_e51fbce7 = util::playfxontag(localclientnum, level._effect[#"hash_6928ec90dff78e0c"], self, "tag_fx_wall_buy");
     }
 }
 

@@ -43,9 +43,9 @@ function __init__() {
 function function_81558cdf(player) {
     if (zm_powerups::function_cfd04802(#"small_ammo")) {
         level thread function_d7d24283(self, player);
-    } else {
-        level thread function_8be02874(self, player);
+        return;
     }
+    level thread function_8be02874(self, player);
 }
 
 // Namespace zm_powerup_small_ammo/zm_powerup_small_ammo
@@ -74,11 +74,11 @@ function function_8be02874(drop_item, player) {
     level notify(#"hash_41ccd6a10f7370cc");
     foreach (player in players) {
         if (isdefined(level.check_player_is_ready_for_ammo)) {
-            jumpiffalse([[ level.check_player_is_ready_for_ammo ]](player) == 0) LOC_000000e4;
-        } else {
-        LOC_000000e4:
-            function_ae7afb91(player);
+            if ([[ level.check_player_is_ready_for_ammo ]](player) == 0) {
+                continue;
+            }
         }
+        function_ae7afb91(player);
     }
     level thread function_71bf1101(drop_item, player.team);
 }

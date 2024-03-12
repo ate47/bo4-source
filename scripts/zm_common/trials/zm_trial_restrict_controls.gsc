@@ -44,7 +44,7 @@ function private on_begin(var_bd9d962 = #"invert") {
         foreach (player in getplayers()) {
             player clientfield::set_to_player("" + #"hash_6536ca4fb2858a9f", 1);
         }
-        break;
+        return;
     case #"turret":
         foreach (player in getplayers()) {
             player bgb_pack::function_59004002(#"zm_bgb_anywhere_but_here", 1);
@@ -53,14 +53,14 @@ function private on_begin(var_bd9d962 = #"invert") {
         }
         callback::on_ai_spawned(&function_a5b02a07);
         callback::on_spawned(&function_eaba7c6f);
-        break;
+        return;
     case #"half_speed":
         foreach (player in getplayers()) {
             player setmovespeedscale(0.5);
             player allowsprint(0);
             player allowslide(0);
         }
-        break;
+        return;
     }
 }
 
@@ -175,12 +175,16 @@ function private function_a5b02a07() {
     }
     if (math::cointoss(var_e0e5e1ab)) {
         self zombie_utility::set_zombie_run_cycle("sprint");
-    } else if (n_players > 1) {
-        self zombie_utility::set_zombie_run_cycle("run");
-    } else if (math::cointoss()) {
-        self zombie_utility::set_zombie_run_cycle("run");
-    } else {
-        self zombie_utility::set_zombie_run_cycle("walk");
+        return;
     }
+    if (n_players > 1) {
+        self zombie_utility::set_zombie_run_cycle("run");
+        return;
+    }
+    if (math::cointoss()) {
+        self zombie_utility::set_zombie_run_cycle("run");
+        return;
+    }
+    self zombie_utility::set_zombie_run_cycle("walk");
 }
 

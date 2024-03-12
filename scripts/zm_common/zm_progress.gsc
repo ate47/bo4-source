@@ -158,9 +158,9 @@ function function_48098d30(player, params) {
         playfx(params.fx_name, player getplayercamerapos(), forwarddir, (0, 1, 0));
         if (params.fx_loop > 0) {
             wait(params.fx_loop);
-        } else {
-            return;
+            continue;
         }
+        return;
     }
 }
 
@@ -283,8 +283,7 @@ function progress_think(player, params, var_c060d2c8) {
         self.stub.hint_string = "";
         self sethintstring(self.stub.hint_string);
         return 0;
-    } else {
-        return self.stub function_4335011a(player, params, var_c060d2c8);
     }
+    return self.stub function_4335011a(player, params, var_c060d2c8);
 }
 

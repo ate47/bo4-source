@@ -175,14 +175,14 @@ function function_6f34f900() {
         e_player = s_info.activator;
         if (!isplayer(e_player)) {
             continue;
-        } else if (!e_player issliding()) {
+        }
+        if (!e_player issliding()) {
             continue;
-        } else {
-            var_82cc90a0 = e_player.health;
-            wait(0.85);
-            if (isdefined(e_player) && var_82cc90a0 == e_player.health) {
-                e_player notify(#"hash_731c84be18ae9fa3");
-            }
+        }
+        var_82cc90a0 = e_player.health;
+        wait(0.85);
+        if (isdefined(e_player) && var_82cc90a0 == e_player.health) {
+            e_player notify(#"hash_731c84be18ae9fa3");
         }
     }
 }
@@ -217,25 +217,26 @@ function deactivate_trap(e_trap) {
 function damage(e_trap) {
     if (!isalive(self) || self.archetype === #"tiger" || isvehicle(self)) {
         return;
-    } else if (self.var_6f84b820 === #"miniboss" || self.var_6f84b820 === #"heavy") {
+    }
+    if (self.var_6f84b820 === #"miniboss" || self.var_6f84b820 === #"heavy") {
         e_trap.soul_whale deactivate_trap(e_trap);
         if (isdefined(e_trap.activated_by_player)) {
             e_trap.activated_by_player notify(#"hash_74fc45698491be88");
         }
-    } else {
-        self.marked_for_death = 1;
-        if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
-            e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
-            e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
-        }
-        v_away = self.origin - e_trap.origin;
-        v_away = vectornormalize((v_away[0], v_away[1], 0)) * 64;
-        v_dest = self.origin + v_away;
-        level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
-        self dodamage(self.health + 666, self.origin, e_trap);
-        self thread function_373d49f(v_dest, 0.25, 0, 0.125);
-        self thread zm_towers_util::function_ae1b4f5b(90, 75, 25);
+        return;
     }
+    self.marked_for_death = 1;
+    if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
+        e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
+        e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
+    }
+    v_away = self.origin - e_trap.origin;
+    v_away = vectornormalize((v_away[0], v_away[1], 0)) * 64;
+    v_dest = self.origin + v_away;
+    level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+    self dodamage(self.health + 666, self.origin, e_trap);
+    self thread function_373d49f(v_dest, 0.25, 0, 0.125);
+    self thread zm_towers_util::function_ae1b4f5b(90, 75, 25);
 }
 
 // Namespace namespace_a5b1b1d7/namespace_3c5019f6
@@ -270,11 +271,11 @@ function function_373d49f(v_dest, n_time = 1, n_accel = 0, var_99997505 = 0) {
         var_3fba37cd moveto(v_dest, n_time, n_accel, var_99997505);
         var_3fba37cd waittill(#"movedone");
         var_3fba37cd delete();
-    } else {
-        v_direction = vectornormalize(v_dest);
-        v_force = v_direction * 64;
-        self startragdoll();
-        self launchragdoll(v_force);
+        return;
     }
+    v_direction = vectornormalize(v_dest);
+    v_force = v_direction * 64;
+    self startragdoll();
+    self launchragdoll(v_force);
 }
 
