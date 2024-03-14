@@ -117,11 +117,11 @@ function firesale_chest_is_leaving() {
     for (i = 0; i < level.chests.size; i++) {
         if (i !== level.chest_index) {
             if (level.chests[i].zbarrier.state === "leaving" || level.chests[i].zbarrier.state === "open" || level.chests[i].zbarrier.state === "close" || level.chests[i].zbarrier.state === "closing") {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_powerup_fire_sale/zm_powerup_fire_sale
@@ -217,9 +217,9 @@ function remove_temp_chest(chest_index) {
 // Size: 0x92
 function func_should_drop_fire_sale() {
     if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 0 || zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") == 1 || level.chest_moves < 1 || isdefined(level.disable_firesale_drop) && level.disable_firesale_drop) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_powerup_fire_sale/zm_powerup_fire_sale

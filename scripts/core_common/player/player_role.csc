@@ -26,7 +26,7 @@ function __postload_init__() {
 // Size: 0xb6
 function is_valid(index) {
     if (!isdefined(index)) {
-        return 0;
+        return false;
     }
     /#
         if (getdvarint(#"allowdebugcharacter", 0) == 1) {

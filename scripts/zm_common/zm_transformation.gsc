@@ -312,13 +312,13 @@ function function_fb608075() {
 // Size: 0x98
 function function_5db4f2f5(entity, var_8763d10e) {
     if (!isdefined(entity) || isdefined(entity.var_69a981e6) && entity.var_69a981e6) {
-        return 0;
+        return false;
     }
     entity.var_982f937 = 1;
     if (isdefined(var_8763d10e) && var_8763d10e && function_331869(entity)) {
         function_1afce5aa(entity);
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_transform/zm_transformation
@@ -574,7 +574,7 @@ function private function_fad54d94(id, var_167b5341) {
         foreach (zombie in var_167b5341.var_2939a01a) {
             if (function_a261938f(zombie) && isdefined(var_167b5341.condition) && zombie [[ var_167b5341.condition ]]()) {
                 zombie thread transform(id);
-                return 1;
+                return true;
             }
         }
     }
@@ -592,7 +592,7 @@ function private function_fad54d94(id, var_167b5341) {
                     waitframe(1);
                     level.var_138b37c4 = 0;
                 }
-                return 1;
+                return true;
             }
             level.var_138b37c4++;
             if (level.var_138b37c4 >= 6) {
@@ -601,7 +601,7 @@ function private function_fad54d94(id, var_167b5341) {
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_transform/zm_transformation
@@ -613,7 +613,7 @@ function private update() {
     var_52f926ed = 0;
     level.var_138b37c4 = 0;
     var_f38e5f93 = isdefined(level.var_f38e5f93) ? level.var_f38e5f93 : 1;
-    while (1) {
+    while (true) {
         if (isdefined(var_52f926ed) && var_52f926ed) {
             wait(var_f38e5f93);
         } else {
@@ -686,7 +686,7 @@ function private devgui() {
             adddebugcommand("<unknown string>" + function_9e72a96(id) + "<unknown string>" + function_9e72a96(id) + "<unknown string>");
         }
         registershack_walla = 0;
-        while (1) {
+        while (true) {
             wait(0.2);
             cmd = getdvarstring(#"hash_439ed91bbc9ac4c0", "<unknown string>");
             if (cmd == "<unknown string>") {
@@ -923,7 +923,7 @@ function private function_4a065e66(id, color) {
         self endoncallback(&function_9aa982db, #"death", #"hash_6e3d9f8c484e3d01");
         level endoncallback(&function_9aa982db, #"hash_6e3d9f8c484e3d01");
         self.var_30acf8aa = 1;
-        while (1) {
+        while (true) {
             record3dtext(function_9e72a96(id), self.origin + (0, 0, self.maxs[2]), color);
             waitframe(1);
         }
@@ -939,7 +939,7 @@ function private show_status() {
         level notify(#"hash_53f34619e212c4cd");
         level endoncallback(&function_4bad29d9, #"hash_53f34619e212c4cd");
         setup_status();
-        while (1) {
+        while (true) {
             waitframe(1);
             foreach (var_deb567a8 in level.var_deb567a8) {
                 if (!isdefined(var_deb567a8.id)) {

@@ -188,14 +188,14 @@ function set_dr_flag_not_array(toset, setto = 1) {
         self flag::init(toset);
     }
     if (setto == self.flag[toset]) {
-        return 0;
+        return false;
     }
     if (isdefined(setto) && setto) {
         self flag::set(toset);
     } else {
         self flag::clear(toset);
     }
-    return 1;
+    return true;
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
@@ -305,15 +305,15 @@ function find_dr_filter(filterset = level.drfilters[#"framebuffer"]) {
 function can_use_filter(filter) {
     for (i = 0; i < filter.require.size; i++) {
         if (!self flagsys::get(filter.require[i])) {
-            return 0;
+            return false;
         }
     }
     for (i = 0; i < filter.refuse.size; i++) {
         if (self flagsys::get(filter.refuse[i])) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace duplicate_render/duplicaterender_mgr
@@ -457,12 +457,12 @@ function set_hacker_tool_breaching(localclientnum, on_off) {
 // Size: 0x4e
 function show_friendly_outlines(local_client_num) {
     if (!(isdefined(level.friendlycontentoutlines) && level.friendlycontentoutlines)) {
-        return 0;
+        return false;
     }
     if (shoutcaster::is_shoutcaster(local_client_num)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace duplicate_render/duplicaterender_mgr

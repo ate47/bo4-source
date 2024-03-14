@@ -152,7 +152,7 @@ function function_dbad2f5a() {
 // Size: 0x96
 function private function_b502c51(nd_start) {
     self endon(#"death", #"hash_2b53ed06a97eb26c");
-    while (1) {
+    while (true) {
         self thread vehicle::get_on_and_go_path(nd_start);
         self setspeed(4);
         self.b_moving = 1;
@@ -176,10 +176,10 @@ function function_f223e16f(round_reset) {
         switch (level.var_98138d6b) {
         case 2:
             level thread zm_orange_pap::function_56db9cdc();
-            return;
+            break;
         case 3:
             level thread zm_orange_pap::function_56db9cdc();
-            return;
+            break;
         }
     }
 }
@@ -192,7 +192,7 @@ function private function_1e902f3b() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
     var_407eb07 = 0;
-    while (1) {
+    while (true) {
         var_f2b6fe6e = 0;
         n_distance = distancesquared(level.var_ab11c23d.vh_target.origin, self.origin);
         if (n_distance < 30000) {

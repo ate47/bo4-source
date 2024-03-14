@@ -432,7 +432,7 @@ function function_3cdddd34() {
 function function_3bd89e18() {
     self notify(#"noshield");
     self endon(#"disconnect", #"noshield", #"bled_out");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change", #"hash_459246e5bfcc3713", #"destroy_riotshield");
         if (mansion_util::is_shield(s_notify.weapon)) {
@@ -480,7 +480,7 @@ function function_fa17b8da() {
 // Checksum 0xe0145951, Offset: 0x3290
 // Size: 0x23e
 function function_4972130a() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"component_collected");
         if (isdefined(waitresult.component.e_fx)) {
@@ -531,7 +531,7 @@ function function_5a39ced2(str_type) {
                 #/
             }
         }
-        return;
+        break;
     case #"ww3":
         foreach (player in getplayers()) {
             if (isdefined(player.hud_ww)) {
@@ -540,7 +540,7 @@ function function_5a39ced2(str_type) {
                 #/
             }
         }
-        return;
+        break;
     }
 }
 
@@ -603,9 +603,9 @@ function function_ea36bce3(str_weapon) {
 // Size: 0x24
 function player_out_of_playable_area_monitor_callback() {
     if (isdefined(self.var_f22c83f5) && self.var_f22c83f5) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -626,7 +626,7 @@ function offhand_weapon_give_override(str_weapon) {
         self setweaponammoclip(self zm_loadout::get_player_tactical_grenade(), 0);
         self takeweapon(self zm_loadout::get_player_tactical_grenade());
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -684,7 +684,7 @@ function function_c8ac6f35() {
     for (i = 0; i < level.chests.size; i++) {
         if (level.chests[i].script_noteworthy != "pap_zone_chest" && level.chests[i].script_noteworthy != var_15612e55) {
             level.chest_index = i;
-            return;
+            break;
         }
     }
 }
@@ -737,11 +737,11 @@ function function_d0a9da98(e_player) {
     if (isdefined(self.stub.trigger_target.weapon_out) && self.stub.trigger_target.weapon_out) {
         if (self.stub.trigger_target.zbarrier.weapon == level.var_f086136b) {
             if (e_player hasweapon(level.var_f086136b, 1) || e_player hasweapon(level.var_6fe89212, 1) || e_player hasweapon(level.var_7b9ca97a, 1)) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -776,7 +776,7 @@ function function_802dde1f() {
         level thread zm_round_logic::sndmusiconkillround();
     #/
     level.var_4b5a684c = zm_round_logic::get_zombie_count_for_round(level.round_number, level.players.size);
-    while (1) {
+    while (true) {
         var_7e5b8365 = zombie_utility::get_current_zombie_count() > 0 || level.zombie_total > 0 || level.intermission;
         if (!var_7e5b8365 || level flag::get("end_round_wait")) {
             break;
@@ -909,7 +909,7 @@ function function_df9d5ef() {
             } else {
                 exploder::exploder("exp_lgt_cemeter_alter_ra");
             }
-            continue;
+            break;
         case #"gardens":
             if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_garden_alter_zeus");
@@ -918,7 +918,7 @@ function function_df9d5ef() {
             } else {
                 exploder::exploder("exp_lgt_garden_alter_ra");
             }
-            continue;
+            break;
         case #"cellar":
             if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_cellar_alter_zeus");
@@ -927,7 +927,7 @@ function function_df9d5ef() {
             } else {
                 exploder::exploder("exp_lgt_cellar_alter_ra");
             }
-            continue;
+            break;
         case #"forest_entrance":
             if (s_altar.mdl_altar.model === #"p8_fxanim_zm_vapor_altar_zeus_mod") {
                 exploder::exploder("exp_lgt_forest_alter_zeus");
@@ -936,7 +936,7 @@ function function_df9d5ef() {
             } else {
                 exploder::exploder("exp_lgt_forest_alter_ra");
             }
-            continue;
+            break;
         }
     }
 }
@@ -1076,9 +1076,9 @@ function function_2d164b86() {
 function function_db3037c7() {
     if (self.script_int === 666) {
         self thread function_ba054e47();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -1340,7 +1340,7 @@ function function_ae29ba0f(player) {
         if (!player hasweapon(self.blueprint.components[0]) && isdefined(self.bought) && self.bought) {
             self.hint_string = #"hash_64cb545dd18c607";
         }
-        return;
+        break;
     }
 }
 
@@ -1353,11 +1353,11 @@ function function_cda69f5e(player) {
     case #"zblueprint_chaos_lvl3":
     case #"zblueprint_mansion_ww_lvl2":
         if (!player hasweapon(self.stub.blueprint.components[0]) && isdefined(self.stub.bought) && self.stub.bought) {
-            return 0;
+            return false;
         }
         break;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -1512,9 +1512,9 @@ function function_389e7c22(var_404e4288, var_8dd554ee) {
     ai = zombie_werewolf_util::function_47a88a0c(1, undefined, 1);
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion/zm_mansion
@@ -1747,10 +1747,10 @@ function function_3f147b12(cmd) {
             level thread zm_sq::function_f2dd8601(#"hash_4c0e5e4b34877996", 1);
             level thread zm_sq::function_f2dd8601(#"hash_65636bbec86da22c", 1);
             level thread zm_sq::function_f2dd8601(#"zm_storage_billiards", 1);
-            return;
+            break;
         case #"open_crypt":
             level thread mansion_impaler::open_crypt();
-            return;
+            break;
         case #"open_pap":
             function_1aba9a64();
             return 1;
@@ -1759,65 +1759,65 @@ function function_3f147b12(cmd) {
         case #"hash_3ba92f19a63db88a":
         case #"hash_5c799ac70a138764":
             function_a8dfebca(cmd);
-            return;
+            break;
         case #"hash_66c794063cfbe16b":
             level.var_573d960c = undefined;
-            return;
+            break;
         case #"hash_7010e0191ddfd71e":
             level.players[0] giveweapon(level.var_f086136b);
-            return;
+            break;
         case #"hash_7010df191ddfd56b":
             level.players[0] giveweapon(level.var_6fe89212);
             level notify(#"ww_lvl2_crafted");
-            return;
+            break;
         case #"hash_7010de191ddfd3b8":
             level.players[0] giveweapon(level.var_7b9ca97a);
             level notify(#"ww_lvl3_crafted");
-            return;
+            break;
         case #"hash_7defe9dc837ecdb7":
             level.var_573d960c = 0;
-            return;
+            break;
         case #"hash_49ae48ac61695b43":
             level.var_573d960c = 3;
-            return;
+            break;
         case #"hash_3c30825a658c87fd":
             level.var_573d960c = 2;
-            return;
+            break;
         case #"spin_cycle":
             level.var_573d960c = 1;
-            return;
+            break;
         case #"hash_61784dca9e1bb496":
             level flag::set("zmb_heavy_door_open");
-            return;
+            break;
         case #"hash_265294215e19c2c1":
             level flag::set("rush_perk_altar_cellar");
-            return;
+            break;
         case #"hash_64431ba102b7be4c":
             level flag::set("artifact_mind");
-            return;
+            break;
         case #"hash_1e2d878115c34df1":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_7143ffe29e3ae202":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_50721510760870d3":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_38316c2c32e062e1":
             zm_devgui::zombie_devgui_goto_round(level.var_abe2c289);
-            return;
+            break;
         case #"hash_bb64387472f6f70":
             zm_devgui::zombie_devgui_goto_round(level.var_5657e981);
-            return;
+            break;
         case #"hash_32a1dfdaac71530":
             zm_devgui::zombie_devgui_goto_round(level.var_83b4d39);
-            return;
+            break;
         case #"hash_4d26340ade7eef62":
             foreach (player in level.players) {
                 player mansion_silver_bullet::function_4e849ab();
             }
-            return;
+            break;
         case #"hash_7555d593aa74da8a":
             var_1dfad0cc = zm_crafting::get_component("<unknown string>");
             var_627759fc = zm_crafting::get_component("<unknown string>");
@@ -1827,51 +1827,51 @@ function function_3f147b12(cmd) {
             level.players[0] giveweapon(var_627759fc);
             level.players[0] giveweapon(var_66ba6282);
             level.players[0] giveweapon(var_38f98701);
-            return;
+            break;
         case #"hash_b5647815560c6c6":
             level.var_940ee624 = 100;
             level zm_ui_inventory::function_7df6bb60(#"hash_379a0cb8e272c259", 1);
             level zm_ui_inventory::function_7df6bb60(#"hash_379a09b8e272bd40", 1);
             level zm_ui_inventory::function_7df6bb60(#"hash_379a0ab8e272bef3", 1);
-            return;
+            break;
         case #"hash_5a3bd6ce89f5f995":
             if (level flag::exists("<unknown string>")) {
                 level flag::set("<unknown string>");
             }
-            return;
+            break;
         case #"hash_7af3cd7329aacc60":
             level.var_14a33fde = 1;
-            return;
+            break;
         case #"reset_werewolfer":
             level flag::clear(#"hash_2287cf5d6310237e");
-            return;
+            break;
         case #"hash_682ea0da80525b64":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_5e5988c329d7cffe":
             level notify(#"hash_348748d248801d6b");
-            return;
+            break;
         case #"hash_692c555ad0747a7c":
             bat::function_2e37549f(1, undefined);
-            return;
+            break;
         case #"hash_627749f1d7a46328":
             if (isdefined(level.zm_loc_types[#"werewolf_location"]) && level.zm_loc_types[#"werewolf_location"].size > 0) {
                 s_spawn = array::random(level.zm_loc_types[#"werewolf_location"]);
                 zombie_werewolf_util::function_47a88a0c(1, undefined, 1, s_spawn);
             }
-            return;
+            break;
         case #"hash_5bf31fb6caf6eac5":
             zombie_werewolf_util::function_47a88a0c(1, undefined, 1);
-            return;
+            break;
         case #"hash_141442e4fca71a1d":
             zombie_dog_util::function_62db7b1c(1, undefined);
-            return;
+            break;
         case #"hash_50f5df2c61fab9c0":
             zm_ai_nosferatu::function_74f25f8a(1, undefined);
-            return;
+            break;
         case #"hash_737d2d8656f8cee":
             zm_ai_nosferatu::function_74f25f8a(1, undefined, 1);
-            return;
+            break;
         case #"reset_rings":
             level.mdl_ring_outer rotateto(level.mdl_ring_outer.v_start, 1);
             level.mdl_ring_outer waittill(#"rotatedone");
@@ -1879,23 +1879,23 @@ function function_3f147b12(cmd) {
             level.mdl_ring_middle waittill(#"rotatedone");
             level.mdl_ring_inner.angles rotateto(level.mdl_ring_inner.v_start, 1);
             level.mdl_ring_inner waittill(#"rotatedone");
-            return;
+            break;
         case #"hash_314962c418b83370":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_9d9c5e54ae57d6":
             level.players[0] giveweapon(level.w_crossbow);
-            return;
+            break;
         case #"hash_77792be9b7f894df":
             foreach (player in level.players) {
                 player giveweapon(level.w_crossbow);
             }
-            return;
+            break;
         case #"hash_2b311f89b1f9483a":
             level.var_bc07224f = 1;
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
-            return;
+            break;
         case #"hash_51d8ec3895703755":
             level.var_bc07224f = 1;
             level.var_d4fada4a = 1;
@@ -1909,7 +1909,7 @@ function function_3f147b12(cmd) {
             var_d8f56b29 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_d8f56b29.origin + vectorscale((0, 0, 1), 24), (0, 0, 1), 0.1);
             var_aa527474 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_aa527474.origin + vectorscale((0, 0, 1), 24), (0, 0, 1), 0.1);
             if (cmd !== "<unknown string>") {
-                return;
+                break;
             }
             wait(1);
         case #"hash_369a377d29f023e4":
@@ -1943,157 +1943,157 @@ function function_3f147b12(cmd) {
                     ai kill(ai.origin, level.players[0]);
                 }
             }
-            return;
+            break;
         case #"hash_36298237b468465":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_22d9fdee453c7ffd":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_9b8b2bde7077b5d":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_114557ff111b0d23":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_701981ede51fb6a3":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_59233024a82f6a3":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_1d2f70e6617bd429":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_4819b6f7db3eb7d9":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_68a7b05b1e1aabd9":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_413d5b18f5751f8a":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_6018399b26a3112c":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_4485a0ddf8eb649d":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_13c626edcb44fdf0":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_22e2f365e2153202":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_3d1b999a9efe068f":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_3c7ca5099e1d1256":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_15abb94c74e59368":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_1df86acdb45b3a61":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_c73cd1cb76ef466":
             level thread function_cdb82bab();
-            return;
+            break;
         case #"hash_67005c00c89e63c9":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_67005900c89e5eb0":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_67005a00c89e6063":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_67005f00c89e68e2":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_62d142021a0c6a13":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_62d143021a0c6bc6":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_62d144021a0c6d79":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_62d145021a0c6f2c":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_6154a32fbbcf2a8d":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_6154a02fbbcf2574":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_6154a12fbbcf2727":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_61549e2fbbcf220e":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_5b857bd9fbf0f6d9":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_6f622b829db8e60c":
             level.var_426fec.var_1ed09409 = "<unknown string>";
             level.var_426fec.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_e3411c7ce19a133":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_720c2222cca24e72":
             level.var_2ff50a.var_1ed09409 = "<unknown string>";
             level.var_2ff50a.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_32551178b04964b5":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_af8eded21ec9f40":
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
             level.var_7ccd6341.str_hint = "<unknown string>";
-            return;
+            break;
         case #"hash_4014ef26303c0251":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_79839f0e8f87465":
             if (isdefined(level.var_5c086e54)) {
                 level.var_5c086e54[0] = level.var_d181080c[0].script_int;
@@ -2101,12 +2101,12 @@ function function_3f147b12(cmd) {
                 level.var_5c086e54[2] = level.var_d181080c[2].script_int;
                 level flag::set("<unknown string>");
             }
-            return;
+            break;
         case #"hash_558fa735338f60d9":
             level flag::set(#"forest_open");
             level flag::set(#"cemetery_open");
             level flag::set(#"greenhouse_open");
-            return;
+            break;
         case #"hash_158be57bab31a1fd":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2115,7 +2115,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_15125cf53616f2ab":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2124,7 +2124,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_63a191ef9ddff6a1":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2133,7 +2133,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_4cae1f6081a88091":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2142,7 +2142,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_39764bcce49b936d":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2151,7 +2151,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_68da4019022ea82a":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2160,7 +2160,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_519759be1fb9f671":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2169,7 +2169,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_392566928f90f17":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2178,7 +2178,7 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_1ed2c1cfc4d8f32":
             level.var_584c4114 = getvehiclenode("<unknown string>", "<unknown string>");
             level.var_7ccd6341.var_1ed09409 = "<unknown string>";
@@ -2187,53 +2187,53 @@ function function_3f147b12(cmd) {
             level.var_d4fada4a = 1;
             level.var_71561996 = 1;
             level thread open_sesame();
-            return;
+            break;
         case #"hash_575338253fb36c2":
             function_a72077f8();
-            return;
+            break;
         case #"hash_6c540109ff20f86d":
             level.var_d698a430 = 1;
-            return;
+            break;
         case #"hash_1fd93602bc1b246d":
             level thread function_2527ee2d();
-            return;
+            break;
         case #"hash_5838dc9777787d3d":
             function_ed41e7ca();
-            return;
+            break;
         case #"hash_4cb3ec4adfa4a708":
             level thread function_6802b9c8();
-            return;
+            break;
         case #"hash_42f5013f7892233e":
             level thread function_7a1bd36c();
-            return;
+            break;
         case #"hash_18e5378066aedefa":
         case #"hash_7c40bb2e7b0d29cc":
             level thread function_e907bb3d(cmd);
-            return;
+            break;
         case #"hash_2bf9bc30e54a1470":
             level thread function_ae21a5ee();
-            return;
+            break;
         case #"hash_59e2caf7a91feffb":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_54603db1db9f5ec5":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"hash_2540786a5e16c895":
             level flag::set("<unknown string>");
-            return;
+            break;
         case #"igc_play_outro":
             level scene::init_streamer(#"cin_zm_mansion_outro_butler", #"allies", 0, 0);
             level thread play_outro_igc();
-            return;
+            break;
         case #"hash_2b5e2a1e2bb301d1":
         case #"special_round_fog":
             function_d7bc714e(cmd);
-            return;
+            break;
         case #"hash_3dcf262f16faced0":
             var_cbd5530c = getdvarint(#"hash_3dcf262f16faced0", 0);
             setdvar(#"hash_3dcf262f16faced0", !var_cbd5530c);
-            return;
+            break;
         }
     #/
 }
@@ -2266,15 +2266,15 @@ function function_a8dfebca(cmd) {
         case #"hash_5c799ac70a138764":
             level flag::set("<unknown string>");
             level zm_ui_inventory::function_7df6bb60(#"pap_1", 1);
-            return;
+            break;
         case #"hash_4b566bfdbd45465e":
             level flag::set("<unknown string>");
             level zm_ui_inventory::function_7df6bb60(#"pap_2", 1);
-            return;
+            break;
         case #"hash_3ba92f19a63db88a":
             level flag::set("<unknown string>");
             level zm_ui_inventory::function_7df6bb60(#"pap_3", 1);
-            return;
+            break;
         default:
             level flag::set("<unknown string>");
             level flag::set("<unknown string>");

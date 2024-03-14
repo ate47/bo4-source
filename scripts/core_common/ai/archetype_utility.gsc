@@ -895,10 +895,10 @@ function getangleusingdirection(direction) {
 function wasatcovernode() {
     if (isdefined(self.prevnode)) {
         if (self.prevnode.type == #"cover left" || self.prevnode.type == #"cover right" || self.prevnode.type == #"cover pillar" || self.prevnode.type == #"cover stand" || self.prevnode.type == #"conceal stand" || self.prevnode.type == #"cover crouch" || self.prevnode.type == #"cover crouch window" || self.prevnode.type == #"conceal crouch") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1150,9 +1150,9 @@ function function_ebaa4b7c() {
 // Size: 0x40
 function notstandingcondition(behaviortreeentity) {
     if (behaviortreeentity getblackboardattribute("_stance") != "stand") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1161,9 +1161,9 @@ function notstandingcondition(behaviortreeentity) {
 // Size: 0x40
 function notcrouchingcondition(behaviortreeentity) {
     if (behaviortreeentity getblackboardattribute("_stance") != "crouch") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1221,7 +1221,7 @@ function updatefrustrationlevel(entity) {
     }
     if (!isdefined(entity.enemy)) {
         entity.ai.frustrationlevel = 0;
-        return 0;
+        return false;
     }
     /#
         record3dtext("<unknown string>" + entity.ai.frustrationlevel, entity.origin, (1, 0.5, 0), "<unknown string>");
@@ -1251,19 +1251,19 @@ function updatefrustrationlevel(entity) {
                 entity.ai.frustrationlevel = entity.ai.frustrationlevel + 2;
             }
             entity.ai.frustrationlevel = clampfrustration(entity.ai.frustrationlevel);
-            return 1;
+            return true;
         }
         if (hasattackedenemyrecently) {
             entity.ai.frustrationlevel = entity.ai.frustrationlevel - 2;
             entity.ai.frustrationlevel = clampfrustration(entity.ai.frustrationlevel);
-            return 1;
+            return true;
         } else if (hasseenenemy) {
             entity.ai.frustrationlevel--;
             entity.ai.frustrationlevel = clampfrustration(entity.ai.frustrationlevel);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1282,10 +1282,10 @@ function islastknownenemypositionapproachable(behaviortreeentity) {
     if (isdefined(behaviortreeentity.enemy)) {
         lastknownpositionofenemy = behaviortreeentity lastknownpos(behaviortreeentity.enemy);
         if (behaviortreeentity isingoal(lastknownpositionofenemy) && behaviortreeentity findpath(behaviortreeentity.origin, lastknownpositionofenemy, 1, 0)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1299,11 +1299,11 @@ function tryadvancingonlastknownpositionbehavior(behaviortreeentity) {
             if (behaviortreeentity isingoal(lastknownpositionofenemy) && behaviortreeentity findpath(behaviortreeentity.origin, lastknownpositionofenemy, 1, 0)) {
                 behaviortreeentity function_a57c34b7(lastknownpositionofenemy, lastknownpositionofenemy);
                 setnextfindbestcovertime(behaviortreeentity, undefined);
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1315,10 +1315,10 @@ function trygoingtoclosestnodetoenemybehavior(behaviortreeentity) {
         closestrandomnode = behaviortreeentity findbestcovernodes(behaviortreeentity.engagemaxdist, behaviortreeentity.enemy.origin)[0];
         if (isdefined(closestrandomnode) && behaviortreeentity isingoal(closestrandomnode.origin) && behaviortreeentity findpath(behaviortreeentity.origin, closestrandomnode.origin, 1, 0)) {
             usecovernodewrapper(behaviortreeentity, closestrandomnode);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1331,10 +1331,10 @@ function tryrunningdirectlytoenemybehavior(behaviortreeentity) {
         if (behaviortreeentity isingoal(origin) && behaviortreeentity findpath(behaviortreeentity.origin, origin, 1, 0)) {
             behaviortreeentity function_a57c34b7(origin, origin);
             setnextfindbestcovertime(behaviortreeentity, undefined);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1342,7 +1342,7 @@ function tryrunningdirectlytoenemybehavior(behaviortreeentity) {
 // Checksum 0xdcdfa404, Offset: 0x5bd0
 // Size: 0x16
 function shouldreacttonewenemy(behaviortreeentity) {
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1363,18 +1363,18 @@ function issafefromgrenades(entity) {
             offsetorigin = entity getnodeoffsetposition(entity.node);
             percentradius = distance(entity.grenade.origin, offsetorigin);
             if (entity.grenadeawareness >= percentradius) {
-                return 1;
+                return true;
             }
         } else {
             percentradius = distance(entity.grenade.origin, entity.origin) / entity.grenade.weapon.explosionradius;
             if (entity.grenadeawareness >= percentradius) {
-                return 1;
+                return true;
             }
         }
         entity.knowngrenade = entity.grenade;
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1391,9 +1391,9 @@ function ingrenadeblastradius(entity) {
 // Size: 0x58
 function recentlysawenemy(behaviortreeentity) {
     if (isdefined(behaviortreeentity.enemy) && behaviortreeentity seerecently(behaviortreeentity.enemy, 6)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1402,9 +1402,9 @@ function recentlysawenemy(behaviortreeentity) {
 // Size: 0x34
 function shouldonlyfireaccurately(behaviortreeentity) {
     if (isdefined(behaviortreeentity.accuratefire) && behaviortreeentity.accuratefire) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1413,9 +1413,9 @@ function shouldonlyfireaccurately(behaviortreeentity) {
 // Size: 0x44
 function shouldbeaggressive(behaviortreeentity) {
     if (isdefined(behaviortreeentity.ai.aggressivemode) && behaviortreeentity.ai.aggressivemode) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1534,27 +1534,27 @@ function shouldchoosebettercover(behaviortreeentity) {
 // Size: 0x126
 function choosebettercoverservicecodeversion(behaviortreeentity) {
     if (isdefined(behaviortreeentity.stealth) && behaviortreeentity ai::get_behavior_attribute("stealth")) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.avoid_cover) && behaviortreeentity.avoid_cover) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.knowngrenade)) {
-        return 0;
+        return false;
     }
     if (!issafefromgrenades(behaviortreeentity)) {
         behaviortreeentity.nextfindbestcovertime = 0;
     }
     if (isdefined(behaviortreeentity.keepclaimednode) && behaviortreeentity.keepclaimednode) {
-        return 0;
+        return false;
     }
     newnode = behaviortreeentity choosebettercovernode();
     if (isdefined(newnode)) {
         usecovernodewrapper(behaviortreeentity, newnode);
-        return 1;
+        return true;
     }
     setnextfindbestcovertime(behaviortreeentity, undefined);
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1573,12 +1573,12 @@ function private choosebettercoverservice(behaviortreeentity) {
             goingtodifferentnode = isdefined(node) && (!isdefined(behaviortreeentity.node) || node != behaviortreeentity.node);
             if (goingtodifferentnode) {
                 usecovernodewrapper(behaviortreeentity, node);
-                return 1;
+                return true;
             }
             setnextfindbestcovertime(behaviortreeentity, undefined);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1667,7 +1667,7 @@ function iscoverconcealed(node) {
     if (isdefined(node)) {
         return (node.type == #"conceal crouch" || node.type == #"conceal stand");
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1776,15 +1776,15 @@ function isstanceallowedatnode(stance, node) {
         assert(isdefined(node));
     #/
     if (stance == "stand" && isdefined(node.spawnflags) && (node.spawnflags & 4) == 4) {
-        return 1;
+        return true;
     }
     if (stance == "crouch" && isdefined(node.spawnflags) && (node.spawnflags & 8) == 8) {
-        return 1;
+        return true;
     }
     if (stance == "prone" && isdefined(node.spawnflags) && (node.spawnflags & 16) == 16) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1795,10 +1795,10 @@ function trystoppingservice(behaviortreeentity) {
     if (behaviortreeentity shouldholdgroundagainstenemy()) {
         behaviortreeentity clearpath();
         behaviortreeentity.keepclaimednode = 1;
-        return 1;
+        return true;
     }
     behaviortreeentity.keepclaimednode = 0;
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1807,9 +1807,9 @@ function trystoppingservice(behaviortreeentity) {
 // Size: 0x2e
 function shouldstopmoving(behaviortreeentity) {
     if (behaviortreeentity shouldholdgroundagainstenemy()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1861,7 +1861,7 @@ function setsecondaryweapon(weapon) {
 // Size: 0x1e
 function keepclaimnode(behaviortreeentity) {
     behaviortreeentity.keepclaimednode = 1;
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1870,7 +1870,7 @@ function keepclaimnode(behaviortreeentity) {
 // Size: 0x1e
 function releaseclaimnode(behaviortreeentity) {
     behaviortreeentity.keepclaimednode = 0;
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1905,14 +1905,14 @@ function choosefrontcoverdirection(behaviortreeentity) {
 // Size: 0x1c6
 function shouldtacticalwalk(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (ai::hasaiattribute(behaviortreeentity, "forceTacticalWalk") && ai::getaiattribute(behaviortreeentity, "forceTacticalWalk")) {
-        return 1;
+        return true;
     }
     if (ai::hasaiattribute(behaviortreeentity, "disablesprint") && !ai::getaiattribute(behaviortreeentity, "disablesprint")) {
         if (ai::hasaiattribute(behaviortreeentity, "sprint") && ai::getaiattribute(behaviortreeentity, "sprint")) {
-            return 0;
+            return false;
         }
     }
     goalpos = undefined;
@@ -1924,16 +1924,16 @@ function shouldtacticalwalk(behaviortreeentity) {
     if (isdefined(behaviortreeentity.pathstartpos) && isdefined(goalpos)) {
         pathdist = distancesquared(behaviortreeentity.pathstartpos, goalpos);
         if (pathdist < 9216) {
-            return 1;
+            return true;
         }
     }
     if (behaviortreeentity shouldfacemotion()) {
-        return 0;
+        return false;
     }
     if (!behaviortreeentity issafefromgrenade()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1942,9 +1942,9 @@ function shouldtacticalwalk(behaviortreeentity) {
 // Size: 0x58
 function shouldstealth(behaviortreeentity) {
     if (behaviortreeentity ai::has_behavior_attribute("stealth") && behaviortreeentity ai::get_behavior_attribute("stealth")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1953,9 +1953,9 @@ function shouldstealth(behaviortreeentity) {
 // Size: 0x2e
 function locomotionshouldstealth(behaviortreeentity) {
     if (behaviortreeentity haspath()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -1964,13 +1964,13 @@ function locomotionshouldstealth(behaviortreeentity) {
 // Size: 0x5e
 function shouldstealthresume(behaviortreeentity) {
     if (!shouldstealth(behaviortreeentity)) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.stealth_resume) && behaviortreeentity.stealth_resume) {
         behaviortreeentity.stealth_resume = undefined;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2016,12 +2016,12 @@ function private stealthidleterminate(behaviortreeentity) {
 // Size: 0x88
 function locomotionshouldpatrol(behaviortreeentity) {
     if (shouldstealth(behaviortreeentity)) {
-        return 0;
+        return false;
     }
     if (behaviortreeentity haspath() && behaviortreeentity ai::has_behavior_attribute("patrol") && behaviortreeentity ai::get_behavior_attribute("patrol")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2103,17 +2103,17 @@ function shouldmutexmelee(behaviortreeentity) {
     if (isdefined(behaviortreeentity.enemy)) {
         if (!isplayer(behaviortreeentity.enemy)) {
             if (behaviortreeentity.enemy.meleeattackers) {
-                return 0;
+                return false;
             }
         } else {
             if (!sessionmodeiscampaigngame()) {
-                return 1;
+                return true;
             }
             behaviortreeentity.enemy.meleeattackers = 0;
             return (behaviortreeentity.enemy.meleeattackers < 1);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2130,45 +2130,45 @@ function shouldnormalmelee(behaviortreeentity) {
 // Size: 0x2ee
 function shouldmelee(entity) {
     if (isdefined(entity.ai.lastshouldmeleeresult) && !entity.ai.lastshouldmeleeresult && entity.ai.lastshouldmeleechecktime + 50 >= gettime()) {
-        return 0;
+        return false;
     }
     entity.lastshouldmeleechecktime = gettime();
     entity.lastshouldmeleeresult = 0;
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (!entity.enemy.allowdeath) {
-        return 0;
+        return false;
     }
     if (!isalive(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (!issentient(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isvehicle(entity.enemy) && !(isdefined(entity.enemy.ai.good_melee_target) && entity.enemy.ai.good_melee_target)) {
-        return 0;
+        return false;
     }
     if (isplayer(entity.enemy) && entity.enemy getstance() == "prone") {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, entity.enemy.origin) > 140 * 140) {
-        return 0;
+        return false;
     }
     if (ai::hasaiattribute(entity, "can_melee") && !ai::getaiattribute(entity, "can_melee")) {
-        return 0;
+        return false;
     }
     if (ai::hasaiattribute(entity.enemy, "can_be_meleed") && !ai::getaiattribute(entity.enemy, "can_be_meleed")) {
-        return 0;
+        return false;
     }
     if (!shouldmutexmelee(entity)) {
-        return 0;
+        return false;
     }
     if (shouldnormalmelee(entity) || shouldchargemelee(entity)) {
         entity.ai.lastshouldmeleeresult = 1;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2188,7 +2188,7 @@ function hascloseenemytomeleewithrange(entity, melee_range_sq) {
         assert(isdefined(entity.enemy));
     #/
     if (!entity cansee(entity.enemy)) {
-        return 0;
+        return false;
     }
     predicitedposition = entity.enemy.origin + vectorscale(entity getenemyvelocity(), 0.25);
     distsq = distancesquared(entity.origin, predicitedposition);
@@ -2199,7 +2199,7 @@ function hascloseenemytomeleewithrange(entity, melee_range_sq) {
     if (distsq <= melee_range_sq && entity maymovetopoint(entity.enemy.origin)) {
         return (abs(yawtoenemy) <= 80);
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2212,23 +2212,23 @@ function shouldchargemelee(entity) {
     #/
     currentstance = entity getblackboardattribute("_stance");
     if (currentstance != "stand") {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ai.nextchargemeleetime)) {
         if (gettime() < entity.ai.nextchargemeleetime) {
-            return 0;
+            return false;
         }
     }
     enemydistsq = distancesquared(entity.origin, entity.enemy.origin);
     if (enemydistsq < 64 * 64) {
-        return 0;
+        return false;
     }
     offset = entity.enemy.origin - vectornormalize(entity.enemy.origin - entity.origin) * 36;
     if (enemydistsq < 140 * 140 && entity maymovetopoint(offset, 1, 1)) {
         yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
         return (abs(yawtoenemy) <= 80);
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2368,21 +2368,21 @@ function private setupexplosionanimscale(entity, asmstatename) {
 // Size: 0x14e
 function isbalconydeath(behaviortreeentity) {
     if (!isdefined(behaviortreeentity.node)) {
-        return 0;
+        return false;
     }
     if (!(behaviortreeentity.node.spawnflags & 1024 || behaviortreeentity.node.spawnflags & 2048)) {
-        return 0;
+        return false;
     }
     covermode = behaviortreeentity getblackboardattribute("_cover_mode");
     if (isdefined(behaviortreeentity.node.script_balconydeathchance) && randomint(100) > int(100 * behaviortreeentity.node.script_balconydeathchance)) {
-        return 0;
+        return false;
     }
     distsq = distancesquared(behaviortreeentity.origin, behaviortreeentity.node.origin);
     if (distsq > 64 * 64) {
-        return 0;
+        return false;
     }
     self.b_balcony_death = 1;
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2414,9 +2414,9 @@ function usecurrentposition(entity) {
 // Size: 0x2c
 function isunarmed(behaviortreeentity) {
     if (behaviortreeentity.weapon == level.weaponnone) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2429,7 +2429,7 @@ function preshootlaserandglinton(ai) {
         ai.laserstatus = 0;
     }
     sniper_glint = #"hash_3db1ecb54b192a49";
-    while (1) {
+    while (true) {
         self waittill(#"about_to_fire");
         if (ai.laserstatus !== 1) {
             ai laseron();
@@ -2454,7 +2454,7 @@ function preshootlaserandglinton(ai) {
 // Size: 0x76
 function postshootlaserandglintoff(ai) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"stopped_firing");
         if (ai.laserstatus === 1) {
             ai laseroff();
@@ -2484,7 +2484,7 @@ function private isinphalanxstance(entity) {
     case #"crouch":
         return (currentstance == "crouch");
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2496,10 +2496,10 @@ function private togglephalanxstance(entity) {
     switch (phalanxstance) {
     case #"stand":
         entity setblackboardattribute("_desired_stance", "stand");
-        return;
+        break;
     case #"crouch":
         entity setblackboardattribute("_desired_stance", "crouch");
-        return;
+        break;
     }
 }
 
@@ -2509,18 +2509,18 @@ function private togglephalanxstance(entity) {
 // Size: 0xbe
 function isatattackobject(entity) {
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.attackable) && isdefined(entity.attackable.is_active) && entity.attackable.is_active) {
         if (!isdefined(entity.attackable_slot)) {
-            return 0;
+            return false;
         }
         if (entity isatgoal()) {
             entity.is_at_attackable = 1;
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2529,14 +2529,14 @@ function isatattackobject(entity) {
 // Size: 0xa4
 function shouldattackobject(entity) {
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.attackable) && isdefined(entity.attackable.is_active) && entity.attackable.is_active) {
         if (isdefined(entity.is_at_attackable) && entity.is_at_attackable) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_utility
@@ -2551,14 +2551,14 @@ function meleeattributescallback(entity, attribute, oldvalue, value) {
         } else {
             entity.canmelee = 0;
         }
-        return;
+        break;
     case #"can_be_meleed":
         if (value) {
             entity.canbemeleed = 1;
         } else {
             entity.canbemeleed = 0;
         }
-        return;
+        break;
     }
 }
 
@@ -2574,7 +2574,7 @@ function arrivalattributescallback(entity, attribute, oldvalue, value) {
         } else {
             entity.ai.disablearrivals = 0;
         }
-        return;
+        break;
     }
 }
 
@@ -2600,21 +2600,21 @@ function private generictryreacquireservice(behaviortreeentity) {
     }
     if (!isdefined(behaviortreeentity.enemy)) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (behaviortreeentity haspath()) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (behaviortreeentity seerecently(behaviortreeentity.enemy, 4)) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     dirtoenemy = vectornormalize(behaviortreeentity.enemy.origin - behaviortreeentity.origin);
     forward = anglestoforward(behaviortreeentity.angles);
     if (vectordot(dirtoenemy, forward) < 0.5) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     switch (behaviortreeentity.reacquire_state) {
     case 0:
@@ -2631,15 +2631,15 @@ function private generictryreacquireservice(behaviortreeentity) {
     default:
         if (behaviortreeentity.reacquire_state > 15) {
             behaviortreeentity.reacquire_state = 0;
-            return 0;
+            return false;
         }
         break;
     }
     if (isvec(reacquirepos)) {
         behaviortreeentity function_a57c34b7(reacquirepos);
-        return 1;
+        return true;
     }
     behaviortreeentity.reacquire_state++;
-    return 0;
+    return false;
 }
 

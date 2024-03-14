@@ -82,7 +82,7 @@ function vo() {
     e_enemy = undefined;
     a_vo = zm_audio::get_valid_lines(#"hash_76d06b092be0a0de");
     wait(15);
-    while (1) {
+    while (true) {
         function_c03b6f46(90000, 640000);
         e_enemy = self.enemy;
         wait(randomfloatrange(2, 4));
@@ -108,12 +108,12 @@ function vo() {
 // Size: 0xcc
 function function_c03b6f46(var_4e77d211, var_3551e3b9) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         wait(randomfloatrange(0.666667, 1.33333));
         if (zm_utility::is_player_valid(self.enemy)) {
             n_dist_sq = distance2dsquared(self.origin, self.enemy.origin);
             if (n_dist_sq > var_4e77d211 && n_dist_sq < var_3551e3b9) {
-                return;
+                break;
             }
             continue;
         }
@@ -261,9 +261,9 @@ function function_e4d7ae2b() {
     var_3e8b490d = function_78913059();
     var_10833f75 = function_45876e23();
     if (!(isdefined(level.var_76934955) && level.var_76934955) && (isdefined(level.var_fe2bb2ac) && level.var_fe2bb2ac || var_3e8b490d >= var_10833f75 || !level flag::get("spawn_zombies"))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_gladiator_util/ai_gladiator_util
@@ -349,9 +349,9 @@ function function_60e6998a() {
     ai = function_c9cd31();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombie_gladiator_util/ai_gladiator_util
@@ -362,8 +362,8 @@ function function_bb067153() {
     ai = function_2efc00db();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

@@ -116,10 +116,10 @@ function function_6b437265(team) {
             continue;
         }
         if (team == spawnbeacon.team) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -674,7 +674,7 @@ function createspawngroupforspawnbeacon(associatedspawnbeacon, spawnstoadd) {
         assert(isdefined(associatedspawnbeacon));
     #/
     if (spawnstoadd.size == 0) {
-        return 0;
+        return false;
     }
     team = associatedspawnbeacon.team;
     enemyteam = util::getotherteam(team);
@@ -697,7 +697,7 @@ function createspawngroupforspawnbeacon(associatedspawnbeacon, spawnstoadd) {
         addspawnpoints("free", spawnstoadd, associatedspawnbeacon.spawnlist);
     }
     associatedspawnbeacon.spawns = spawnstoadd;
-    return 1;
+    return true;
 }
 
 // Namespace spawn_beacon/spawnbeacon_shared
@@ -763,7 +763,7 @@ function watchfordamage() {
         spawnbeacon.health = level.var_b8701e49;
     }
     spawnbeacon.maxhealth = spawnbeacon.health;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.attacker) && waitresult.amount > 0 && damagefeedback::dodamagefeedback(waitresult.weapon, waitresult.attacker)) {

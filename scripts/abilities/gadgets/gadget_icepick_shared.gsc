@@ -258,7 +258,7 @@ function on_status_effect(var_756fda07) {
     case 1:
     case 5:
         function_6c031486(self);
-        return;
+        break;
     }
 }
 
@@ -324,24 +324,24 @@ function function_14151f16(entity, canhack) {
 function private function_808efdee(hacker, entity) {
     entityweapon = findweapon(entity);
     if ((!isdefined(entityweapon) || entityweapon == level.weaponnone) && !isplayer(entity)) {
-        return 0;
+        return false;
     }
     if (entity.team == hacker.team) {
-        return 0;
+        return false;
     }
     if (entity.team == #"spectator") {
-        return 0;
+        return false;
     }
     if (isdefined(entity.canthack) && entity.canthack) {
-        return 0;
+        return false;
     }
     if (!isplayer(entity) && !entityweapon.var_18608bfe) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ishacked) && entity.ishacked && !isplayer(entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace icepick/gadget_icepick_shared
@@ -388,7 +388,7 @@ function function_39d1ce95(entity, entityweapon) {
         if (isdefined(level.cratemodelenemy)) {
             streamermodelhint(level.cratemodelenemy, 10);
         }
-        return;
+        break;
     }
 }
 
@@ -550,7 +550,7 @@ function private function_aaf0a382(entities, player, max) {
             var_e8e3cc00 = var_e8e3cc00 + entityweapon.var_df381b5d;
         }
         if (isdefined(max) && var_e8e3cc00 > max) {
-            return;
+            break;
         }
         function_2b2ed159(entity, player);
     }
@@ -978,7 +978,7 @@ function private function_d1f6e8d0(player) {
     var_559f4f0a = getstatuseffect("hacking");
     icepickweapon = getweapon(#"gadget_icepick");
     settingsbundle = function_13f4415c();
-    while (1) {
+    while (true) {
         if (player.var_46fccfba && !var_3e6425fc) {
             player function_124efc19(0);
             player function_de8a54a6(isdefined(settingsbundle.var_3ca119bd) ? settingsbundle.var_3ca119bd : 1);
@@ -1024,7 +1024,7 @@ function private function_6b9d6894(player) {
     if (!isdefined(player.var_3ca20bb9)) {
         player.var_3ca20bb9 = 0;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = player waittill(#"menuresponse");
         switch (waitresult.response) {

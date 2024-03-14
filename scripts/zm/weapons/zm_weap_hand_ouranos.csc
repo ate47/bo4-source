@@ -106,17 +106,17 @@ function function_f89a4434(localclientnum) {
         if (isdefined(vol_center) && istouching(self.origin, vol_center)) {
             if (isdefined(self.enemy)) {
                 self.enemy thread function_1ebdc841(1);
-                return;
+                break;
             }
         } else if (isdefined(vol_cliff) && istouching(self.origin, vol_cliff)) {
             if (isdefined(self.enemy)) {
                 self.enemy thread function_1ebdc841(2);
-                return;
+                break;
             }
         } else if (isdefined(vol_serpent) && istouching(self.origin, vol_serpent)) {
             if (isdefined(self.enemy)) {
                 self.enemy thread function_1ebdc841(3);
-                return;
+                break;
             }
         }
         waitframe(1);

@@ -131,7 +131,7 @@ function private function_7728abc3() {
 // Size: 0x250
 function private function_6ca1cd82(entity, player, duration, color) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitframe(1);
         enabled = getdvarint(#"hash_41b3d8e4a16a265e", 0);
         if (enabled) {
@@ -171,7 +171,7 @@ function private function_6ca1cd82(entity, player, duration, color) {
 // Checksum 0x902f6697, Offset: 0x970
 // Size: 0x66
 function private function_462df450(inflictor, attacker, damage, flags, meansofdamage, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_wolf_ally/zm_ai_wolf_ally
@@ -192,17 +192,17 @@ function private function_bd0a9007(entity, target) {
 // Size: 0x102
 function private function_e0b49b0b(left, right) {
     if (isdefined(left.var_15da7e3f) && !isdefined(right.var_15da7e3f)) {
-        return 1;
+        return true;
     } else if (!isdefined(left.var_15da7e3f) && isdefined(right.var_15da7e3f)) {
-        return 0;
+        return false;
     }
     if (isdefined(left.var_15da7e3f) && isdefined(right.var_15da7e3f) && left.var_15da7e3f > right.var_15da7e3f) {
-        return 1;
+        return true;
     }
     if (isdefined(left.var_eadd94e6) && isdefined(right.var_eadd94e6) && left.var_eadd94e6 > right.var_eadd94e6) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_wolf_ally/zm_ai_wolf_ally
@@ -538,13 +538,13 @@ function private function_87660c12(entity) {
 function function_14a8c157(entity) {
     if (isdefined(entity.enemy) && gettime() > entity.var_84f9cc2e) {
         if (!btapi_shouldchargemelee(entity)) {
-            return 0;
+            return false;
         }
         predictedenemypos = entity.enemy.origin;
         distancesq = distancesquared(entity.origin, entity.enemy.origin);
         var_7e0e6341 = entity ai::function_9139c839();
         if (isdefined(var_7e0e6341) && distancesq < var_7e0e6341.normalmeleedist * var_7e0e6341.normalmeleedist) {
-            return 0;
+            return false;
         }
         if (isplayer(entity.enemy) && distancesq >= 100 * 100) {
             if (entity.enemy issprinting()) {
@@ -554,22 +554,22 @@ function function_14a8c157(entity) {
                     /#
                         record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
                     #/
-                    return 0;
+                    return false;
                 }
             }
         }
         if (abs(entity.origin[2] - entity.enemy.origin[2]) > 64) {
-            return 0;
+            return false;
         }
         if (!entity cansee(entity.enemy)) {
-            return 0;
+            return false;
         }
         if (!tracepassedonnavmesh(entity.origin, entity.enemy.origin, entity getpathfindingradius())) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_wolf_ally/zm_ai_wolf_ally

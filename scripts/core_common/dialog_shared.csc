@@ -136,9 +136,9 @@ function play_boost_start_response_vox(localclientnum) {
 function dialog_chance(chancekey) {
     dialogchance = mpdialog_value(chancekey);
     if (!isdefined(dialogchance) || dialogchance <= 0) {
-        return 0;
+        return false;
     } else if (dialogchance >= 100) {
-        return 1;
+        return true;
     }
     return randomint(100) < dialogchance;
 }
@@ -260,7 +260,7 @@ function play_dialog(dialogkey, localclientnum) {
 // Checksum 0x57295727, Offset: 0x1000
 // Size: 0x4a
 function update_voice_origin(voicebox) {
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!isdefined(self) || !isdefined(voicebox)) {
             return;

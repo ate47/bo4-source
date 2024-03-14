@@ -142,13 +142,13 @@ function addflyswatterstat(weapon, aircraft) {
 function canprocesschallenges() {
     /#
         if (getdvarint(#"scr_debug_challenges", 0)) {
-            return 1;
+            return true;
         }
     #/
     if (level.rankedmatch || level.arenamatch || sessionmodeiscampaigngame()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace challenges/challenges_shared
@@ -232,16 +232,16 @@ function isdamagefromplayercontrolledaitank(eattacker, einflictor, weapon) {
         if (isdefined(eattacker) && isdefined(eattacker.remoteweapon) && isdefined(einflictor)) {
             if (isdefined(einflictor.controlled) && einflictor.controlled) {
                 if (eattacker.remoteweapon == einflictor) {
-                    return 1;
+                    return true;
                 }
             }
         }
     } else if (weapon.name == #"ai_tank_drone_rocket") {
         if (isdefined(einflictor) && !isdefined(einflictor.from_ai)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace challenges/challenges_shared
@@ -253,12 +253,12 @@ function isdamagefromplayercontrolledsentry(eattacker, einflictor, weapon) {
         if (isdefined(eattacker) && isdefined(eattacker.remoteweapon) && isdefined(einflictor)) {
             if (eattacker.remoteweapon == einflictor) {
                 if (isdefined(einflictor.controlled) && einflictor.controlled) {
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace challenges/challenges_shared
@@ -437,7 +437,7 @@ function function_80327323(data) {
 // Size: 0x182
 function ishighestscoringplayer(player) {
     if (!isdefined(player.score) || player.score < 1) {
-        return 0;
+        return false;
     }
     players = level.players;
     if (level.teambased) {
@@ -460,10 +460,10 @@ function ishighestscoringplayer(player) {
             continue;
         }
         if (players[i].score >= highscore) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace challenges/challenges_shared
@@ -476,7 +476,7 @@ function spawnwatcher() {
     self.pers[#"pistolheadshot"] = 0;
     self.pers[#"assaultrifleheadshot"] = 0;
     self.pers[#"killnemesis"] = 0;
-    while (1) {
+    while (true) {
         self waittill(#"spawned_player");
         self.pers[#"longshotsperlife"] = 0;
         self.weaponkills = [];
@@ -497,7 +497,7 @@ function spawnwatcher() {
 function watchfordtp() {
     self endon(#"disconnect", #"death", #"killdtpmonitor");
     self.dtptime = 0;
-    while (1) {
+    while (true) {
         self waittill(#"dtp_end");
         self.dtptime = gettime() + 4000;
     }
@@ -510,7 +510,7 @@ function watchfordtp() {
 function watchformantle() {
     self endon(#"disconnect", #"death", #"killmantlemonitor");
     self.mantletime = 0;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"mantle_start");
         self.mantletime = waitresult.end_time;
@@ -611,9 +611,9 @@ function challengeroundend(data) {
                 player stats::function_d40764f3(#"last_man_defeat_3_enemies", 1);
             }
         }
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -900,14 +900,14 @@ function function_1e064861(type, var_a7674114) {
 // Size: 0x2e8
 function controllerparticipationcheck() {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.pers[#"controllerparticipationchecksskipped"])) {
         self.pers[#"controllerparticipationchecksskipped"] = 0;
     }
     if (self.sessionstate != "playing" || isdefined(self.var_4c45f505) && self.var_4c45f505) {
         self.pers[#"controllerparticipationchecksskipped"]++;
-        return 0;
+        return false;
     }
     self.pers[#"controllerparticipationchecks"]++;
     var_51ba979b = #"failure";
@@ -939,7 +939,7 @@ function controllerparticipationcheck() {
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace challenges/challenges_shared
@@ -1315,17 +1315,17 @@ function teamcompletedchallenge(team, challenge) {
 // Size: 0x52
 function endedearly(winner, tie) {
     if (level.hostforcedend) {
-        return 1;
+        return true;
     }
     if (!isdefined(winner)) {
-        return 1;
+        return true;
     }
     if (level.teambased) {
         if (tie) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace challenges/challenges_shared
@@ -1353,10 +1353,10 @@ function didloserfailchallenge(winner, challenge) {
             continue;
         }
         if (game.challenge[team][challenge]) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace challenges/challenges_shared
@@ -1518,7 +1518,7 @@ function killeddog() {
             distsq = distancesquared(origin, player.origin);
             if (distsq < 57600) {
                 self stats::function_dad108fa(#"killed_dog_close_to_teammate", 1);
-                return;
+                break;
             }
         }
     }
@@ -2112,9 +2112,9 @@ function waitandprocessplayerkilledcallback(data) {
 // Size: 0x6a
 function weaponisknife(weapon) {
     if (weapon == level.weaponbasemelee || weapon == level.weaponbasemeleeheld || weapon.rootweapon.statname == level.weaponballisticknife.statname) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace challenges/challenges_shared
@@ -2139,7 +2139,7 @@ function eventreceived(eventname) {
         } else if (eventname == "kill_enemy_injuring_teammate") {
             self stats::function_d40764f3(#"kill_enemy_injuring_teammate", 1);
         }
-        return;
+        break;
     case #"dm":
         if (eventname == "killstreak_10") {
             self stats::function_d40764f3(#"killstreak_10", 1);
@@ -2150,7 +2150,7 @@ function eventreceived(eventname) {
         } else if (eventname == "killstreak_30") {
             self stats::function_d40764f3(#"killstreak_30", 1);
         }
-        return;
+        break;
     case #"sd":
         if (eventname == "defused_bomb_last_man_alive") {
             self stats::function_d40764f3(#"defused_bomb_last_man_alive", 1);
@@ -2161,23 +2161,23 @@ function eventreceived(eventname) {
         } else if (eventname == "killed_bomb_defuser") {
             self stats::function_d40764f3(#"killed_bomb_defuser", 1);
         }
-        return;
+        break;
     case #"ctf":
         if (eventname == "kill_flag_carrier") {
             self stats::function_d40764f3(#"kill_flag_carrier", 1);
         } else if (eventname == "defend_flag_carrier") {
             self stats::function_d40764f3(#"defend_flag_carrier", 1);
         }
-        return;
+        break;
     case #"dem":
         if (eventname == "killed_bomb_planter") {
             self stats::function_d40764f3(#"killed_bomb_planter", 1);
         } else if (eventname == "killed_bomb_defuser") {
             self stats::function_d40764f3(#"killed_bomb_defuser", 1);
         }
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -2188,7 +2188,7 @@ function eventreceived(eventname) {
 function monitor_player_sprint() {
     self endon(#"disconnect", #"killplayersprintmonitor", #"death");
     self.lastsprinttime = undefined;
-    while (1) {
+    while (true) {
         self waittill(#"sprint_begin");
         self waittill(#"sprint_end");
         self.lastsprinttime = gettime();
@@ -2221,7 +2221,7 @@ function trophy_defense(origin, radius) {
         foreach (entity in entities) {
             if (isdefined(entity.challenge_isscorestreak)) {
                 self stats::function_dad108fa(#"hash_580b295b38c0ee38", 1);
-                return;
+                break;
             }
             weapon = entity.weapon;
             if (isdefined(weapon)) {
@@ -2234,7 +2234,7 @@ function trophy_defense(origin, radius) {
                 }
                 if (should_award) {
                     self stats::function_dad108fa(#"hash_580b295b38c0ee38", 1);
-                    return;
+                    break;
                 }
             }
         }

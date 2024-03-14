@@ -320,14 +320,14 @@ function clamptarget(target) {
 function _insidecylinder(point, base, radius, height) {
     if (isdefined(height)) {
         if (point[2] > base[2] + height) {
-            return 0;
+            return false;
         }
     }
     dist = distance2d(point, base);
     if (dist < radius) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace airsupport/airsupport
@@ -438,14 +438,14 @@ function getnoflyzoneheightcrossed(start, end, minheight) {
 // Size: 0x76
 function _shouldignorenoflyzone(noflyzone, noflyzones) {
     if (!isdefined(noflyzone)) {
-        return 1;
+        return true;
     }
     for (i = 0; i < noflyzones.size; i++) {
         if (isdefined(noflyzones[i]) && noflyzones[i] == noflyzone) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace airsupport/airsupport
@@ -454,15 +454,15 @@ function _shouldignorenoflyzone(noflyzone, noflyzones) {
 // Size: 0x6e
 function _shouldignorestartgoalnoflyzone(noflyzone, startnoflyzones, goalnoflyzones) {
     if (!isdefined(noflyzone)) {
-        return 1;
+        return true;
     }
     if (_shouldignorenoflyzone(noflyzone, startnoflyzones)) {
-        return 1;
+        return true;
     }
     if (_shouldignorenoflyzone(noflyzone, goalnoflyzones)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace airsupport/airsupport
@@ -496,11 +496,11 @@ function function_a43d04ef(goalorigin) {
     self endon(#"death", #"hash_41aaa8d75d168e0a");
     distthresholdsq = 40000;
     wait(20);
-    while (1) {
+    while (true) {
         distsq = distancesquared(self.origin, goalorigin);
         if (distsq <= distthresholdsq) {
             self notify(#"fallback_goal");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -516,11 +516,11 @@ function function_fabf8bc5(goalorigin) {
     if (isdefined(self.var_f766e12d)) {
         distthresholdsq = self.var_f766e12d * self.var_f766e12d;
     }
-    while (1) {
+    while (true) {
         distsq = distancesquared(self.origin, goalorigin);
         if (distsq <= distthresholdsq) {
             self notify(#"fallback_goal");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -533,7 +533,7 @@ function function_fabf8bc5(goalorigin) {
 function function_e0e908c3(var_dbd23dc, path, stopatgoal) {
     self endon(#"death", #"hash_78e76e8d9370e349");
     if (var_dbd23dc) {
-        while (1) {
+        while (true) {
             var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
             if (var_baa92af9) {
                 self util::make_sentient();
@@ -546,7 +546,7 @@ function function_e0e908c3(var_dbd23dc, path, stopatgoal) {
         return;
     }
     if (issentient(self)) {
-        while (1) {
+        while (true) {
             var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
             if (!var_baa92af9) {
                 if (issentient(self)) {
@@ -653,10 +653,10 @@ function clearpath(start, end, startnoflyzone, goalnoflyzone) {
     noflyzones = crossesnoflyzones(start, end);
     for (i = 0; i < noflyzones.size; i++) {
         if (!_shouldignorestartgoalnoflyzone(noflyzones[i], startnoflyzone, goalnoflyzone)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace airsupport/airsupport
@@ -801,7 +801,7 @@ function entlosradiusdamage(ent, pos, radius, max, min, owner, einflictor) {
                 #/
                 dist = dist * 4;
                 if (dist > radius) {
-                    return 0;
+                    return false;
                 }
             } else {
                 /#
@@ -815,7 +815,7 @@ function entlosradiusdamage(ent, pos, radius, max, min, owner, einflictor) {
                     #/
                     dist = dist * 4;
                     if (dist > radius) {
-                        return 0;
+                        return false;
                     }
                 } else {
                     /#
@@ -833,7 +833,7 @@ function entlosradiusdamage(ent, pos, radius, max, min, owner, einflictor) {
     ent.pos = pos;
     ent.damageowner = owner;
     ent.einflictor = einflictor;
-    return 1;
+    return true;
 }
 
 // Namespace airsupport/airsupport
@@ -1139,7 +1139,7 @@ function draw_text(msg, color, ent, offset, frames) {
         }
         for (i = 0; i < frames; i++) {
             if (!isdefined(ent)) {
-                return;
+                break;
             }
             print3d(ent.origin + offset, msg, color, 0.5, 4);
             waitframe(1);
@@ -1294,10 +1294,10 @@ function getpointonline(startpoint, endpoint, ratio) {
 function cantargetplayerwithspecialty() {
     if (self hasperk(#"specialty_nottargetedbyairsupport") || isdefined(self.specialty_nottargetedbyairsupport) && self.specialty_nottargetedbyairsupport) {
         if (!isdefined(self.nottargettedai_underminspeedtimer) || self.nottargettedai_underminspeedtimer < getdvarint(#"perk_nottargetedbyai_graceperiod", 0)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace airsupport/airsupport
@@ -1322,7 +1322,7 @@ function monitorspeed(spawnprotectiontime) {
     if (isdefined(spawnprotectiontime)) {
         wait(spawnprotectiontime);
     }
-    while (1) {
+    while (true) {
         velocity = self getvelocity();
         speedsq = lengthsquared(velocity);
         if (speedsq < minspeedsq) {
@@ -1377,7 +1377,7 @@ function waitforlocationselection() {
 // Size: 0x2b2
 function function_deb91ef4() {
     self endon(#"emp_jammed", #"emp_grenaded", #"disconnect", #"confirm_location", #"cancel_location", #"enter_vehicle");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         menu = waitresult.menu;

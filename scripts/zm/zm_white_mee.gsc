@@ -252,12 +252,12 @@ function function_ce7e594b() {
     foreach (player in level.players) {
         if (isplayer(self.attacker) && !isbot(self.attacker)) {
             if (isinarray(array("MOD_GRENADE", "MOD_GRENADE_SPLASH", "MOD_PROJECTILE_SPLASH", "MOD_EXPLOSIVE", "MOD_BURNED"), self.mod)) {
-                return 0;
+                return false;
             }
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -616,7 +616,7 @@ function function_991eb140() {
 // Checksum 0x82346cdc, Offset: 0x2d48
 // Size: 0x6
 function mee_cleanup() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -746,9 +746,9 @@ function mee_round_spawn() {
     ai = function_293e9585();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -774,10 +774,10 @@ function function_f3cef15a(var_dbce0c44) {
 function function_7f971d26() {
     foreach (player in level.players) {
         if (player cansee(self)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -870,7 +870,7 @@ function function_800ff39e() {
 // Size: 0xfe
 function function_d10bf985() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.is_inert) && self.is_inert) {
             wait(2);
             if (isdefined(self.is_inert) && self.is_inert) {
@@ -893,7 +893,7 @@ function function_d10bf985() {
 // Size: 0x172
 function function_d857924d() {
     self endoncallback(&function_33e0a5d1, #"death");
-    while (1) {
+    while (true) {
         foreach (player in getplayers()) {
             if (player istouching(self) && player clientfield::get_to_player("zm_zone_out_of_bounds") == 0) {
                 player clientfield::set_to_player("zm_zone_out_of_bounds", 1);
@@ -937,10 +937,10 @@ function function_5ebeab8c() {
     foreach (player in getplayers()) {
         dist = distancesquared(self.origin, player.origin);
         if (dist <= 262144) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -953,7 +953,7 @@ function function_ce3168e6(e_player) {
     } else {
         self sethintstring(#"hash_69320c1b3c0f8fdb");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -1003,7 +1003,7 @@ function is_near(str_info) {
 function function_6fa00342(e_follow) {
     self endon(#"follow_complete");
     level endon(#"preamble_started");
-    while (1) {
+    while (true) {
         var_9d88bc68 = anglestoforward(e_follow.angles);
         var_9d88bc68 = 15 * vectornormalize(var_9d88bc68);
         goal_pos = e_follow.origin - var_9d88bc68;
@@ -1030,10 +1030,10 @@ function function_6fa00342(e_follow) {
 function function_66a7e20a() {
     foreach (player in getplayers()) {
         if (player cansee(self)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_mee/zm_white_mee
@@ -1205,12 +1205,12 @@ function track_player_eyes() {
 function private is_weapon_sniper(w_weapon) {
     if (isdefined(w_weapon.issniperweapon) && w_weapon.issniperweapon) {
         if (weaponhasattachment(w_weapon, "elo") || weaponhasattachment(w_weapon, "reflex") || weaponhasattachment(w_weapon, "holo") || weaponhasattachment(w_weapon, "is")) {
-            return 0;
+            return false;
         } else {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_mee/zm_white_mee

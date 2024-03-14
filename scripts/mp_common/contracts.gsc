@@ -105,24 +105,24 @@ function contract_kills(data) {
         switch (weapon.statname) {
         case #"dart":
             player function_fd9fb79b(#"contract_mp_dart_kills");
-            return;
+            break;
         case #"ac130":
             player function_fd9fb79b(#"contract_mp_gunship_kills");
-            return;
+            break;
         case #"recon_car":
             player function_fd9fb79b(#"contract_mp_rcxd_kills");
-            return;
+            break;
         case #"planemortar":
             player function_fd9fb79b(#"contract_mp_lightning_strike");
-            return;
+            break;
         case #"remote_missile":
             player function_fd9fb79b(#"contract_mp_hellstorm_kills");
-            return;
+            break;
         case #"ai_tank_marker":
             player function_fd9fb79b(#"contract_mp_mantis_kills");
-            return;
+            break;
         default:
-            return;
+            break;
         }
     }
 }

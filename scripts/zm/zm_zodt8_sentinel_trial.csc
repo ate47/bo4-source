@@ -227,7 +227,7 @@ function camera_snow(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     self notify("28d26c912677b144");
     self endon("28d26c912677b144");
     if (newval) {
-        while (1) {
+        while (true) {
             if (isalive(self) && self util::function_50ed1561(localclientnum)) {
                 self.var_77f256b5 = playfxoncamera(localclientnum, level._effect[#"step7_snow"], undefined, anglestoforward(self.angles), anglestoup(self.angles));
             }
@@ -378,7 +378,7 @@ function function_9491a41e(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_bcb676b9() {
     self endon(#"hash_6aa4f28f27ab4c64", #"death");
     n_val = 0.1;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittilltimeout(20, #"hash_5010527c7518e767");
         if (isalive(self) && s_result._notify == #"hash_5010527c7518e767") {

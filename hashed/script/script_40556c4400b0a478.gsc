@@ -63,7 +63,7 @@ function private function_5162a3de(cmd) {
                     break;
                 }
             }
-            return;
+            break;
         case #"hash_2e229b658a79d09f":
             brutuses = getaiarchetypearray(#"brutus");
             foreach (brutus in brutuses) {
@@ -71,9 +71,9 @@ function private function_5162a3de(cmd) {
                     brutus kill(undefined, undefined, undefined, undefined, 0, 1);
                 }
             }
-            return;
+            break;
         default:
-            return;
+            break;
         }
     #/
 }

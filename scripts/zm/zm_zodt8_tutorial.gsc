@@ -100,7 +100,7 @@ function init_level_vars() {
 // Checksum 0x3a20759b, Offset: 0x1db8
 // Size: 0x6
 function function_912b7df6() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -129,7 +129,7 @@ function function_99bc766a() {
 // Checksum 0xed27ff2a, Offset: 0x1f10
 // Size: 0x10
 function function_69b9de8b(drop_point) {
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -195,10 +195,10 @@ function function_3b618e30() {
 // Size: 0x2d8
 function tutorial_reset() {
     if (isbot(self)) {
-        return 0;
+        return false;
     }
     if (level flag::get("tutorial_reset") || isdefined(self.var_16735873) && self.var_16735873) {
-        return 1;
+        return true;
     }
     level notify(#"tutorial_reset");
     level flag::set("tutorial_reset");
@@ -226,7 +226,7 @@ function tutorial_reset() {
     self function_e326c0a();
     self setstance("stand");
     level flag::clear("tutorial_reset");
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -311,7 +311,7 @@ function on_player_spawned() {
 // Size: 0x15e
 function function_57bf8455() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         var_f7dae996 = 0;
         a_w_primary = self getweaponslistprimaries();
         foreach (w_primary in a_w_primary) {
@@ -522,11 +522,11 @@ function function_fb2e7309() {
 // Size: 0xa4
 function function_5ea0763f(var_50e34230, activator = undefined) {
     trig = getent(var_50e34230, "targetname");
-    while (1) {
+    while (true) {
         eventstruct = undefined;
         eventstruct = trig waittill(#"trigger");
         if (!isdefined(activator) || activator == eventstruct.activator) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -1255,7 +1255,7 @@ function function_b375d3c3() {
     self waittill(#"player_downed");
     self endon(#"player_revived", #"zombified", #"disconnect");
     max_time = self.bleedout_time;
-    while (1) {
+    while (true) {
         self.bleedout_time = max_time;
         waitframe(1);
     }
@@ -1310,7 +1310,7 @@ function function_e054ad69() {
 // Size: 0x66
 function function_c0a37283() {
     self endon(#"nuke_triggered", #"death");
-    while (1) {
+    while (true) {
         if (self zm_laststand::is_reviving_any()) {
             tutorial_reset();
         }
@@ -1748,7 +1748,7 @@ function function_d1dabace(b_disable = 1) {
 // Checksum 0x14896980, Offset: 0x8e90
 // Size: 0x16
 function private function_86ff864(e_player, player_has_weapon) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1850,7 +1850,7 @@ function function_3d825fe() {
 // Size: 0x72
 function function_78dbf7e8() {
     self endon(#"death", #"crouch_completed");
-    while (1) {
+    while (true) {
         if (self getstance() == "crouch") {
             waitframe(1);
             self notify(#"crouch_completed");
@@ -1866,7 +1866,7 @@ function function_78dbf7e8() {
 // Size: 0x62
 function function_40050d3e() {
     self endon(#"death", #"sprint_completed");
-    while (1) {
+    while (true) {
         if (self issprinting()) {
             self notify(#"sprint_completed");
             return;
@@ -1881,7 +1881,7 @@ function function_40050d3e() {
 // Size: 0x6a
 function function_7b8a4b02() {
     self endon(#"death", #"ads_completed");
-    while (1) {
+    while (true) {
         if (self adsbuttonpressed()) {
             waitframe(1);
             self notify(#"ads_completed");
@@ -1897,7 +1897,7 @@ function function_7b8a4b02() {
 // Size: 0x6a
 function function_568b7e4b() {
     self endon(#"death", #"ads_completed");
-    while (1) {
+    while (true) {
         if (self ismeleeing()) {
             waitframe(1);
             self notify(#"melee_completed");
@@ -1914,7 +1914,7 @@ function function_568b7e4b() {
 function function_44514728() {
     self endon(#"death", #"reload_completed");
     w_pistol = self getcurrentweapon();
-    while (1) {
+    while (true) {
         if (self isreloading()) {
             waitframe(1);
             self notify(#"reload_completed");
@@ -1930,7 +1930,7 @@ function function_44514728() {
 // Size: 0x132
 function function_3a885b9d() {
     self endon(#"death", #"switch_completed");
-    while (1) {
+    while (true) {
         if (!self gamepadusedlast() && self.currentweapon != getweapon(#"pistol_topbreak_t8")) {
             var_1f3a8d84 = 1;
         }
@@ -1954,7 +1954,7 @@ function function_3a885b9d() {
 // Size: 0x6a
 function function_fdea7676() {
     self endon(#"death", #"equipment_completed");
-    while (1) {
+    while (true) {
         if (self isthrowinggrenade()) {
             waitframe(1);
             self notify(#"equipment_completed");
@@ -2127,9 +2127,9 @@ function private function_fcf197fa(targetname, show) {
                                 } else {
                                     var_1d6a70e8 ghost();
                                 }
-                                continue;
+                                break;
                             default:
-                                continue;
+                                break;
                             }
                         }
                     }
@@ -2145,8 +2145,8 @@ function private function_fcf197fa(targetname, show) {
 // Size: 0x58
 function private _open_arcs(blocker) {
     if (isdefined(blocker.script_noteworthy) && (blocker.script_noteworthy == "electric_door" || blocker.script_noteworthy == "local_electric_door")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

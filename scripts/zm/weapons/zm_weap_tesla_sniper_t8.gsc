@@ -82,9 +82,9 @@ function function_de59b16a(e_source, str_mod, var_8e05c280, weapon) {
     if (isplayer(e_source) && str_mod == "MOD_RIFLE_BULLET" && !self ai::is_stunned()) {
         e_source.tesla_enemies_hit = 1;
         self thread function_9f86f360(e_source, 3, 128);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8
@@ -101,9 +101,9 @@ function function_fd1a163d(e_source, damage, meansofdeath, weapon, shitloc) {
         self ai::stun();
         self thread function_487ae8a7(e_source, meansofdeath, weapon, shitloc);
         level thread function_e0525d4e(self, e_source, meansofdeath, weapon, shitloc);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_tesla_sniper_t8/zm_weap_tesla_sniper_t8

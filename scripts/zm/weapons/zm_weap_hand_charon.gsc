@@ -84,7 +84,7 @@ function on_player_connect() {
 // Size: 0x88
 function function_3f8da82c() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         if (s_notify.weapon === level.w_hand_charon_uncharged) {
@@ -217,31 +217,31 @@ function function_b04434cf(b_up) {
 // Size: 0x2b2
 function is_valid_target(e_target, n_range) {
     if (zm_utility::is_magic_bullet_shield_enabled(e_target)) {
-        return 0;
+        return false;
     }
     if (isdefined(e_target.var_2e4247bc) && e_target.var_2e4247bc || isdefined(e_target.var_f9b38410) && e_target.var_f9b38410) {
-        return 0;
+        return false;
     }
     if (isdefined(e_target.var_131a4fb0) && e_target.var_131a4fb0) {
-        return 0;
+        return false;
     }
     if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 32), 0.3, 1, self))) {
-        return 1;
+        return true;
     }
     if (isdefined(e_target.fake_death) && e_target.fake_death) {
-        return 0;
+        return false;
     }
     if (!isalive(e_target)) {
-        return 0;
+        return false;
     }
     if (distance2dsquared(self.origin, e_target.origin) > n_range * n_range) {
-        return 0;
+        return false;
     }
     var_c060d2c8 = !(isdefined(level.var_58f509b6) && level.var_58f509b6);
     if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 28), 0.9, var_c060d2c8, self)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon
@@ -627,7 +627,7 @@ function charon_pool(n_damage) {
 function function_249b5556(n_damage) {
     self endon(#"death");
     self.var_b1224954 endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.var_b1224954 waittill(#"trigger");
         if (isdefined(s_result.activator)) {

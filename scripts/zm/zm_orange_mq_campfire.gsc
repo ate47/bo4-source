@@ -87,7 +87,7 @@ function function_1ad84248() {
         level.var_80c25d0a = 5;
         break;
     }
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         story = #"";
         switch (level.var_80c25d0a) {

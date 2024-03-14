@@ -52,11 +52,11 @@ function private function_37bf13ad(localclientnum, oldval, newval, bnewent, bini
     switch (newval) {
     case 0:
     default:
-        return;
+        break;
     case 1:
         self thread function_a252eaf0(localclientnum, self getentitynumber(), self.team);
         self thread function_e3a084cd(localclientnum, bwastimejump);
-        return;
+        break;
     }
 }
 
@@ -207,7 +207,7 @@ function private function_25f0bf77(localclientnum) {
     function_99c31219(localclientnum);
     var_e74c7608 = 10;
     var_bec8c458 = 0;
-    while (1) {
+    while (true) {
         if (isdefined(self.var_7ec0e2d1) && self.var_7ec0e2d1.team != self.team) {
             self.var_7ec0e2d1.team = self.team;
             localplayer = function_5c10bd79(localclientnum);

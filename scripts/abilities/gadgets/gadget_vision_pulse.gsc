@@ -129,7 +129,7 @@ function gadget_vision_pulse_watch_death(slot, weapon) {
 function gadget_vision_pulse_watch_emp(slot, weapon) {
     self notify(#"vision_pulse_watch_emp");
     self endon(#"vision_pulse_watch_emp", #"disconnect", #"shutdown_vision_pulse");
-    while (1) {
+    while (true) {
         if (self isempjammed()) {
             self notify(#"emp_vp_jammed");
             break;
@@ -149,7 +149,7 @@ function gadget_vision_pulse_watch_emp(slot, weapon) {
 function function_46f384d5() {
     self notify(#"remote_control");
     self endon(#"remote_control", #"disconnect", #"death", #"shutdown_vision_pulse");
-    while (1) {
+    while (true) {
         if (self isremotecontrolling() || self clientfield::get_to_player("remote_missile_screenfx") != 0) {
             self clientfield::set_to_player("toggle_postfx", 1);
             while (self isremotecontrolling() || self clientfield::get_to_player("remote_missile_screenfx") != 0) {
@@ -300,7 +300,7 @@ function gadget_vision_pulse_flicker(slot, weapon) {
     }
     eventtime = self._gadgets_player[slot].gadget_flickertime;
     self set_gadget_vision_pulse_status("^1" + "Flickering.", eventtime);
-    while (1) {
+    while (true) {
         if (!self gadgetflickering(slot)) {
             set_gadget_vision_pulse_status("^2" + "Normal");
             return;

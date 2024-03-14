@@ -92,7 +92,7 @@ function private function_a2270a7e(vehicle) {
     } else {
         str_mode = "mp";
     }
-    while (1) {
+    while (true) {
         if (vehicle depthinwater() > 0 && gettime() - vehicle.birthtime > 350) {
             vehicle dodamage(vehicle.health, vehicle.origin);
         }

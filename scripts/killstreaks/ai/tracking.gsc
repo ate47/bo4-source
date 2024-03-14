@@ -7,9 +7,9 @@
 // Size: 0x26
 function private function_605bb988() {
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace tracking/tracking
@@ -47,7 +47,7 @@ function init_tracking(window) {
 // Size: 0x3e
 function private track_points() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self function_8240e8b4();
         waitframe(1);
     }
@@ -106,7 +106,7 @@ function get_velocity() {
 function debug_tracking() {
     /#
         self endon(#"disconnect");
-        while (1) {
+        while (true) {
             if (function_605bb988()) {
                 velocity = self get_velocity();
                 sphere(self.origin + velocity, 10, (1, 0, 0), 1, 0);

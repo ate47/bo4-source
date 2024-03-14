@@ -199,13 +199,13 @@ function start_deathcam() {
         self.archivetime = 0;
         self.psoffsettime = 0;
         self.spectatekillcam = 0;
-        return 0;
+        return false;
     }
     if (isdefined(self.var_e5681505) && self.var_e5681505) {
-        return 0;
+        return false;
     }
     self thread deathcam(self);
-    return 1;
+    return true;
 }
 
 // Namespace killcam/killcam_shared
@@ -353,10 +353,10 @@ function are_any_players_watching() {
     for (index = 0; index < players.size; index++) {
         player = players[index];
         if (isdefined(player.killcam)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace killcam/killcam_shared
@@ -625,7 +625,7 @@ function end(final) {
 // Size: 0x64
 function check_for_abrupt_end() {
     self endon(#"disconnect", #"end_killcam");
-    while (1) {
+    while (true) {
         if (self.archivetime <= 0) {
             break;
         }
@@ -849,9 +849,9 @@ function spawn_end_of_final_killcam() {
 // Size: 0x30
 function is_entity_weapon(weapon) {
     if (weapon.statname == #"planemortar") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace killcam/killcam_shared

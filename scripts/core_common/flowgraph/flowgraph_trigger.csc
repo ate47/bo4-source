@@ -9,7 +9,7 @@
 // Size: 0xa0
 function ontriggerentered(x, e_trigger) {
     e_trigger endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = e_trigger waittill(#"trigger");
         e_entity = waitresult.activator;

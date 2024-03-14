@@ -113,7 +113,7 @@ function function_6a61388f(vehicle) {
     if (!isdefined(self.var_1e8d9480)) {
         self.var_1e8d9480 = 0;
     }
-    while (1) {
+    while (true) {
         if (self.var_1e8d9480 >= 60 && self character_unlock::function_f0406288(#"woods_unlock")) {
             self character_unlock::function_c8beca5e(#"woods_unlock", #"hash_17a4baf5ec553be7", 1);
             return;

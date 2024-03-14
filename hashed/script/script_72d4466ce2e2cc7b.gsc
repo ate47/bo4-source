@@ -146,7 +146,7 @@ function function_1edfdbc1(localclientnum) {
     while (!(isdefined(level.gameended) && level.gameended)) {
         var_38d92d79 = function_5c10bd79(localclientnum);
         if (!isdefined(var_38d92d79)) {
-            return;
+            break;
         }
         current_health = renderhealthoverlayhealth(localclientnum);
         basehealth = var_38d92d79 getplayerspawnhealth();
@@ -360,7 +360,7 @@ function function_1d13e2db(localclientnum) {
             } else if (_town_mansion_primary_weapons == 0 && previoustime == 1) {
                 previoustime = 0;
                 function_13861db4(3);
-                return;
+                break;
             }
         }
         wait(0.3);
@@ -469,18 +469,18 @@ function function_f5866497(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         function_218c905c(localclientnum, "tie");
-        return;
+        break;
     case 2:
         function_218c905c(localclientnum, "allies");
-        return;
+        break;
     case 3:
         function_218c905c(localclientnum, "axis");
-        return;
+        break;
     case 4:
         level notify(#"hash_7d7ad8f95ddcdcbd");
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

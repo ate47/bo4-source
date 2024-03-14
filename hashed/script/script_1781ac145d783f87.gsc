@@ -80,7 +80,7 @@ function function_aee836e9() {
 // Size: 0xc0
 function function_125dfe69() {
     level endon(#"end_game", #"hash_26c0c05d0a3e382f");
-    while (1) {
+    while (true) {
         level waittill(#"bloodbath_kill");
         level.var_c1549bc8.var_3e762bf6++;
         if (level.var_c1549bc8.var_3e762bf6 >= 831) {
@@ -125,7 +125,7 @@ function function_fb74fc5f() {
         waitframe(1);
     }
     playsoundatposition(#"hash_7f8f5a20e4b87aac", (0, 0, 0));
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_3042a9bf2f57ea0a");
         v_origin = s_waitresult.var_814c9389;
@@ -162,7 +162,7 @@ function function_6cfb44f0() {
 // Size: 0xfe
 function function_77df7138(e_player) {
     if (!isdefined(e_player) || !isdefined(self) || !isdefined(self.stub) || !isdefined(self.stub.related_parent) || !isdefined(self.stub.related_parent.origin)) {
-        return 0;
+        return false;
     }
     var_5168e40f = e_player zm_utility::is_player_looking_at(self.stub.related_parent.origin, 0.96, 0);
     b_have = level flag::get(self.stub.related_parent.model + "_picked_up");
@@ -283,7 +283,7 @@ function function_acbff22d() {
 // Size: 0xb0
 function function_4b01369a() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"trap_activated");
         t_trap = s_waitresult.trap;
@@ -305,11 +305,11 @@ function function_294c9ea7(str_triggers) {
         return;
     }
     t_entrance = trigger::wait_till(str_triggers, "targetname", self);
-    while (1) {
+    while (true) {
         t_exit = trigger::wait_till(str_triggers, "targetname", self);
         if (t_exit != t_entrance && !(isdefined(self.var_62b59590) && self.var_62b59590) && zm_utility::is_player_valid(self, 0, 0)) {
             self flag::set(#"hash_481ca29c700e04dd");
-            return;
+            break;
         }
     }
 }
@@ -320,7 +320,7 @@ function function_294c9ea7(str_triggers) {
 // Size: 0x388
 function function_51817689() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"trap_kill");
         ai_victim = s_waitresult.e_victim;
@@ -393,7 +393,7 @@ function arena_rock() {
 function function_5ca13573() {
     level endon(#"end_game");
     var_bbd88248 = getent("firestorm_detector", "targetname");
-    while (1) {
+    while (true) {
         var_6aa0de02 = undefined;
         var_6aa0de02 = var_bbd88248 waittill(#"damage");
         if (!level flag::get("special_round")) {
@@ -431,7 +431,7 @@ function function_4670ef4d() {
 // Size: 0x5e
 function function_c846dfc3() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"hash_5a1a76d189cf6925");
         if (level.var_c1549bc8.var_7d942960 >= 8) {
             return;
@@ -445,7 +445,7 @@ function function_c846dfc3() {
 // Size: 0x11c
 function function_3ce07a2b() {
     level endon(#"game_end", #"21_guns");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
@@ -502,7 +502,7 @@ function function_5d0d1807() {
 function function_1eddbf9e() {
     level endon(#"end_game", #"hash_205c15aeab8e14c4");
     var_c265cd7f = 0;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"hash_46267aa0f17a3c00");
         if (isdefined(s_result.var_8571ab76) && s_result.var_8571ab76) {
@@ -524,7 +524,7 @@ function function_1eddbf9e() {
 function function_c74f4cf4() {
     level endon(#"end_game", #"hash_5bc627cff03bad5");
     var_22fbe1cc = 0;
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         var_22fbe1cc++;
         if (var_22fbe1cc >= 7) {
@@ -544,7 +544,7 @@ function function_c74f4cf4() {
 function function_def71ac3() {
     self endon(#"disconnect");
     level endon(#"hash_205c15aeab8e14c4");
-    while (1) {
+    while (true) {
         self waittill(#"hash_29bd5874900989d6");
         if (self.var_b3122c84 == #"hash_4a67009994e6a476" && !(isdefined(self.var_a4ab5d88) && self.var_a4ab5d88)) {
             self.var_a4ab5d88 = 1;

@@ -147,7 +147,7 @@ function function_ff75fde6(var_a276c861) {
     array::thread_all(level.var_6d3c8378, &function_abf0bf8c);
     if (!var_a276c861) {
         if (zm_utility::is_trials()) {
-            while (1) {
+            while (true) {
                 b_success = level.var_d5f74526 function_29a3aca4();
                 wait(1);
                 if (b_success) {
@@ -189,7 +189,7 @@ function function_abf0bf8c() {
     self.var_740e1e0e endon(#"death");
     self.var_740e1e0e setcandamage(1);
     self.var_740e1e0e.health = 9999;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self.var_740e1e0e waittill(#"damage");
         if (isplayer(s_waitresult.attacker) && !zm_loadout::is_offhand_weapon(s_waitresult.weapon)) {
@@ -220,14 +220,14 @@ function function_29a3aca4() {
         if (s_waitresult.var_c8407ea2 !== var_1fc5672) {
             s_waitresult.var_740e1e0e clientfield::set("" + #"hash_693891d7b7f47419", 2);
             playsoundatposition("zmb_sk_stones_dest", s_waitresult.var_740e1e0e.origin);
-            return 0;
+            return false;
         }
         s_waitresult.var_740e1e0e clientfield::set("" + #"hash_693891d7b7f47419", 1);
         var_1fc5672++;
         playsoundatposition("zmb_sk_stones_dest_correct", s_waitresult.var_740e1e0e.origin);
     }
     s_waitresult.attacker thread zm_vo::function_a2bd5a0c(#"hash_307199a2e20f6edc", 1);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_a_skeet_fink/zm_mansion_a_skeet_fink
@@ -322,7 +322,7 @@ function function_6941c919() {
     self.t_damage = spawn("trigger_damage_new", self.origin, 0, 8, 8);
     self.t_damage endon(#"death");
     w_shield = getweapon(#"zhield_dw");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self.t_damage waittill(#"damage");
         var_2af07147 = zm_weapons::get_base_weapon(s_waitresult.weapon);
@@ -346,7 +346,7 @@ function function_1dc8ad86() {
     self endon(#"death");
     var_1fc5672 = 0;
     b_fail = 0;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_15ccd1fdda38284a", #"rune_bashed");
         if (s_waitresult._notify == #"hash_15ccd1fdda38284a") {
@@ -433,7 +433,7 @@ function function_15c82a8a(var_a276c861) {
 function private function_eb6f728f() {
     self endon(#"hash_20911f4af4e75472");
     w_stake_knife = getweapon(#"stake_knife");
-    while (1) {
+    while (true) {
         if (level flag::get("round_reset")) {
             level flag::wait_till_clear("round_reset");
             wait(7);
@@ -471,7 +471,7 @@ function function_62856590(var_a276c861, ended_early) {
 // Size: 0x11c
 function function_123eb361(var_88206a50, ent) {
     if (ent.archetype !== #"bat" && ent.archetype !== #"nosferatu") {
-        return 0;
+        return false;
     }
     s_inbetween = struct::get(var_88206a50.target, "targetname");
     var_51e4bd8d = getent(s_inbetween.target, "targetname");
@@ -552,7 +552,7 @@ function function_36194a5f(e_player) {
 // Size: 0x98
 function function_422acb4c() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         e_player = s_waitresult.activator;

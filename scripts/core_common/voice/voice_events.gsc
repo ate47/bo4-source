@@ -174,7 +174,7 @@ function private queue_item(&queue, item) {
 // Size: 0xba
 function private function_accf7a2e(&queue) {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         while (queue.size > 0) {
             item = queue[0];
             arrayremoveindex(queue, 0);

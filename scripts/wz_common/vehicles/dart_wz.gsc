@@ -87,15 +87,15 @@ function private on_item_use(params) {
 // Size: 0x6e
 function private function_1e845317() {
     if (self clientfield::get_to_player("inside_infiltration_vehicle") != 0) {
-        return 0;
+        return false;
     }
     if (self isinvehicle()) {
-        return 0;
+        return false;
     }
     if (!function_3238d10d(self.origin)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dart/dart_wz
@@ -210,7 +210,7 @@ function private function_f35d7cf3(playereyepos, vehicle) {
     endpos = vehicle.origin;
     trace = bullettrace(eyepos, endpos, 1, self, 1, 1);
     if (trace[#"fraction"] < 1) {
-        return 0;
+        return false;
     }
     mins = (vehicle.radius * -1, vehicle.radius * -1, vehicle.radius * -1);
     maxs = (vehicle.radius, vehicle.radius, vehicle.radius);
@@ -267,7 +267,7 @@ function watchremotecontroldeactivate() {
     while (player attackbuttonpressed()) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         if (player attackbuttonpressed()) {
             player thread function_ea9fe221(dart);
             return;
@@ -317,29 +317,29 @@ function private function_d13b1540(vehicle) {
     self vehicle::set_vehicle_drivable_time_starting_now(30000);
     var_5fa298a1 = var_51fede25 - 10000;
     var_5cf8708d = 0;
-    while (1) {
+    while (true) {
         time = gettime();
         if (1 && time >= var_51fede25) {
             self thread function_ea9fe221(vehicle);
-            return;
+            break;
         }
         if (self inlaststand()) {
             self thread function_ea9fe221(vehicle);
-            return;
+            break;
         }
         if (isdefined(self.isjammed) && self.isjammed) {
             self thread function_ea9fe221(vehicle);
-            return;
+            break;
         }
         if (self clientfield::get_to_player("inside_infiltration_vehicle") != 0) {
             self thread function_ea9fe221(vehicle);
-            return;
+            break;
         }
         if (1 && time >= var_5fa298a1 && !(isdefined(var_5cf8708d) && var_5cf8708d)) {
             var_5cf8708d = 1;
             vehicle clientfield::set("dart_wz_timeout_beep", 1);
         }
-        if (1) {
+        if (true) {
             var_aba3faed = distancesquared(self.origin, vehicle.origin);
             if (var_aba3faed > 8000 * 8000) {
                 self thread function_ea9fe221(vehicle);
@@ -388,10 +388,10 @@ function function_3a595d3c() {
     results = bullettrace(camera_pos, camera_pos + dir * 96, 1, self, 1, 1);
     if (isdefined(results)) {
         if (isdefined(results[#"fraction"]) && results[#"fraction"] > 0.99) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace dart/dart_wz
@@ -400,18 +400,18 @@ function function_3a595d3c() {
 // Size: 0xa8
 function private function_c6ac711a(target) {
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
     if (target.classname != "grenade") {
-        return 0;
+        return false;
     }
     if (!isdefined(target.weapon) || target.weapon.name != #"dart") {
-        return 0;
+        return false;
     }
     if (!isdefined(target.owner) || target.owner != self) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dart/dart_wz
@@ -425,7 +425,7 @@ function function_b35c5fa4() {
     player = dart.owner;
     dart endon(#"death");
     player endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = dart waittill(#"veh_predictedcollision");
         if (waitresult.stype == "glass") {
@@ -577,10 +577,10 @@ function private on_vehicle_killed(params) {
 function private function_c7aa9338(array) {
     foreach (ent in array) {
         if (util::function_fbce7263(ent.team, self.team)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace dart/dart_wz
@@ -600,26 +600,26 @@ function getdartmissiletargets() {
 function isvaliddartmissiletarget(ent) {
     player = self;
     if (!isdefined(ent)) {
-        return 0;
+        return false;
     }
     entisplayer = isplayer(ent);
     if (entisplayer && !isalive(ent)) {
-        return 0;
+        return false;
     }
     if (ent.ignoreme === 1) {
-        return 0;
+        return false;
     }
     dart = player getvehicleoccupied();
     if (!isdefined(dart)) {
-        return 0;
+        return false;
     }
     if (distancesquared(dart.origin, ent.origin) > player.dart_killstreak_weapon.lockonmaxrange * player.dart_killstreak_weapon.lockonmaxrange) {
-        return 0;
+        return false;
     }
     if (entisplayer && ent hasperk(#"specialty_nokillstreakreticle")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dart/dart_wz
@@ -629,29 +629,29 @@ function isvaliddartmissiletarget(ent) {
 function isstillvaliddartmissiletarget(ent, weapon) {
     player = self;
     if (!(target_istarget(ent) || isplayer(ent)) && !(isdefined(ent.allowcontinuedlockonafterinvis) && ent.allowcontinuedlockonafterinvis)) {
-        return 0;
+        return false;
     }
     dart = player getvehicleoccupied();
     if (!isdefined(dart)) {
-        return 0;
+        return false;
     }
     entisplayer = isplayer(ent);
     if (entisplayer && !isalive(ent)) {
-        return 0;
+        return false;
     }
     if (ent.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (distancesquared(dart.origin, ent.origin) > player.dart_killstreak_weapon.lockonmaxrange * player.dart_killstreak_weapon.lockonmaxrange) {
-        return 0;
+        return false;
     }
     if (entisplayer && ent hasperk(#"specialty_nokillstreakreticle")) {
-        return 0;
+        return false;
     }
     if (!heatseekingmissile::insidestingerreticlelocked(ent, undefined, weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dart/dart_wz

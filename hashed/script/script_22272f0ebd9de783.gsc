@@ -169,7 +169,7 @@ function function_45a2294f(str_id) {
 // Size: 0xec
 function function_6f34f900() {
     level endon(#"traps_cooldown");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = self waittill(#"trigger");
         e_player = s_info.activator;

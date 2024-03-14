@@ -131,7 +131,7 @@ function private _planexpandaction(planner, action) {
     planner.api = undefined;
     aiprofile_endentry();
     pixendevent();
-    return 1;
+    return true;
 }
 
 // Namespace planner/planner
@@ -158,7 +158,7 @@ function private _planexpandpostcondition(planner, postcondition) {
     planner.api = undefined;
     aiprofile_endentry();
     pixendevent();
-    return 1;
+    return true;
 }
 
 // Namespace planner/planner
@@ -816,25 +816,25 @@ function createplannerfromasset(assetname) {
             switch (node.type) {
             case #"action":
                 plannernodes[nodeindex] = planner::createaction(node.name, node.constants);
-                continue;
+                break;
             case #"postcondition":
                 plannernodes[nodeindex] = planner::createpostcondition(node.name, node.constants);
-                continue;
+                break;
             case #"precondition":
                 plannernodes[nodeindex] = planner::createprecondition(node.name, node.constants);
-                continue;
+                break;
             case #"planner":
                 plannernodes[nodeindex] = planner::createplanner(node.name);
-                continue;
+                break;
             case #"selector":
                 plannernodes[nodeindex] = planner::createselector();
-                continue;
+                break;
             case #"sequence":
                 plannernodes[nodeindex] = planner::createsequence();
-                continue;
+                break;
             case #"goto":
                 plannernodes[nodeindex] = spawnstruct();
-                continue;
+                break;
             }
         }
         for (nodeindex = 0; nodeindex < htnasset.nodes.size; nodeindex++) {

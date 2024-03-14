@@ -169,15 +169,15 @@ function private hide_safe() {
 // Size: 0x132
 function private function_c92a5584(activator) {
     if (!isdefined(activator) || !isstruct(activator.inventory) || !isarray(activator.inventory.items)) {
-        return 0;
+        return false;
     }
     foreach (item in activator.inventory.items) {
         if (!isdefined(item) || !isstruct(item.var_a6762160) || item.var_a6762160.itemtype !== #"cash") {
             continue;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_cash_safe/wz_cash_safe
@@ -210,7 +210,7 @@ function private function_3d49217f(activator) {
 function private function_7c5a1e82(activator, stateindex, var_9bdcfcd8) {
     self clear_prompts(activator);
     if (!isdefined(activator) || !isstruct(activator.inventory) || !isarray(activator.inventory.items)) {
-        return 0;
+        return false;
     }
     var_22aec194 = activator function_2cef7d98();
     if (isdefined(var_22aec194)) {
@@ -223,10 +223,10 @@ function private function_7c5a1e82(activator, stateindex, var_9bdcfcd8) {
             globallogic_score::function_889ed975(activator, scoreamount, 0, 0);
             activator stats::function_bb7eedf0(#"score", scoreamount);
             activator stats::function_b7f80d87(#"score", scoreamount);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_cash_safe/wz_cash_safe
@@ -271,7 +271,7 @@ function private clear_prompts(activator) {
 // Size: 0x168
 function private function_a6eac3b7() {
     /#
-        while (1) {
+        while (true) {
             wait(0.25);
             dvarstr = getdvarstring(#"scr_give_player_score", "<unknown string>");
             if (dvarstr == "<unknown string>") {

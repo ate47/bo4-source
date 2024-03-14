@@ -218,7 +218,7 @@ function function_3353845b(localclientnum) {
     if (self.var_25e6f383 > 10) {
         return;
     }
-    while (1) {
+    while (true) {
         wait(n_waittime);
         if (n_chance >= randomint(100)) {
             if (self.var_655d9e4b === 0 || gettime() - var_d82f94cd >= self.var_655d9e4b) {
@@ -258,16 +258,16 @@ function function_5b0384a(localclientnum, oldval, newval, bnewent, binitialsnap,
     case 0:
         level scene::stop(#"p8_fxanim_zm_zod_cargo_hold_net_bundle", 1);
         level scene::delete_scene_spawned_ents(localclientnum, #"p8_fxanim_zm_zod_cargo_hold_net_bundle");
-        return;
+        break;
     case 1:
         level thread scene::init(#"p8_fxanim_zm_zod_cargo_hold_net_bundle");
-        return;
+        break;
     case 2:
         level thread scene::play(#"p8_fxanim_zm_zod_cargo_hold_net_bundle", "Shot 2");
-        return;
+        break;
     case 3:
         level thread scene::play(#"p8_fxanim_zm_zod_cargo_hold_net_bundle", "Shot 3");
-        return;
+        break;
     }
 }
 

@@ -267,16 +267,16 @@ function function_c8a1552d(var_c1e98979) {
 function shouldplayovertimeround() {
     if (overtime::is_overtime_round()) {
         if (game.overtime_round == 1 || !level.gameended) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     alliesroundswon = util::getroundswon(#"allies");
     axisroundswon = util::getroundswon(#"axis");
     if (util::hitroundlimit() && alliesroundswon == axisroundswon) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace escort/escort
@@ -513,7 +513,7 @@ function debug_draw_blocked_path_kill_radius(center, radius) {
 // Size: 0x78
 function wait_robot_moving() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"robot_moving");
         self recordgameeventnonplayer("robot_start");
         level clientfield::set_world_uimodel("Escort.robotMoving", 1);
@@ -526,7 +526,7 @@ function wait_robot_moving() {
 // Size: 0x88
 function wait_robot_stopped() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"robot_stopped");
         if (self.active) {
             self recordgameeventnonplayer("robot_stop");
@@ -541,7 +541,7 @@ function wait_robot_stopped() {
 // Size: 0x178
 function wait_robot_shutdown() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"robot_shutdown");
         level.moveobject gameobjects::allow_use(#"none");
         objective_setprogress(level.moveobject.objectiveid, -0.05);
@@ -561,7 +561,7 @@ function wait_robot_shutdown() {
 // Size: 0x1e8
 function wait_robot_reboot() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"robot_reboot");
         self recordgameeventnonplayer("robot_repair_complete");
         level.moveobject gameobjects::allow_use(#"friendly");
@@ -623,7 +623,7 @@ function auto_reboot_robot(time) {
 // Size: 0x162
 function watch_robot_damaged() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"robot_damaged");
         percent = min(1, self.shutdowndamage / level.shutdowndamage);
         objective_setprogress(level.moveobject.objectiveid, 1 - percent);
@@ -647,7 +647,7 @@ function watch_robot_damaged() {
 function function_dd7755c1() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         animrate = 1;
         if (isdefined(self.var_85c3882d) && self.var_85c3882d) {
             animrate = animrate - 0.3;
@@ -777,13 +777,13 @@ function spawn_robot(position, angles) {
 // Size: 0x702
 function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
     if (!(isdefined(self.onground) && self.onground)) {
-        return 0;
+        return false;
     }
     if (!isdefined(eattacker)) {
-        return 0;
+        return false;
     }
     if (level.shutdowndamage <= 0 || !self.active || eattacker.team == game.attackers) {
-        return 0;
+        return false;
     }
     level.usestartspawns = 0;
     weapon_damage = killstreak_bundles::get_weapon_damage(level.escortrobotkillstreakbundle, level.shutdowndamage, eattacker, weapon, smeansofdeath, idamage, idflags, undefined);
@@ -791,7 +791,7 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
         weapon_damage = idamage;
     }
     if (!weapon_damage) {
-        return 0;
+        return false;
     }
     self.shutdowndamage = self.shutdowndamage + weapon_damage;
     self notify(#"robot_damaged");
@@ -856,7 +856,7 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
         }
     }
     self.health = self.health + 1;
-    return 1;
+    return true;
 }
 
 // Namespace escort/escort
@@ -864,7 +864,7 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
 // Checksum 0x5709520b, Offset: 0x4178
 // Size: 0x66
 function robot_damage_none(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, modelindex) {
-    return 0;
+    return false;
 }
 
 // Namespace escort/escort
@@ -943,7 +943,7 @@ function move_robot() {
 // Size: 0x1ce
 function function_ba95878f() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         if (self.moving) {
             distance = 0;
             if (self.pathindex > 0) {
@@ -984,7 +984,7 @@ function get_current_goal() {
 // Size: 0xfe
 function reached_closest_nav_mesh_goal_but_still_too_far_and_blocked(goalonnavmesh) {
     if (isdefined(self.immediategoaloverride)) {
-        return 0;
+        return false;
     }
     distsqr = distancesquared(goalonnavmesh, self.origin);
     robotreachedclosestgoalonnavmesh = distsqr <= 24 * 24;
@@ -993,11 +993,11 @@ function reached_closest_nav_mesh_goal_but_still_too_far_and_blocked(goalonnavme
         if (closestgoalonnavmeshtoofarfrompathgoal) {
             robotisblockedfromgettingtopathgoal = self check_if_goal_is_blocked(self.origin, self.patharray[self.pathindex]);
             if (robotisblockedfromgettingtopathgoal) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace escort/escort
@@ -1069,7 +1069,7 @@ function watch_goal_becoming_blocked(goal) {
     self endon(#"end_watch_goal_becoming_blocked_singleton", #"robot_stopped", #"goal");
     level endon(#"game_ended");
     disttogoalsqr = 1e+09;
-    while (1) {
+    while (true) {
         wait(0.1);
         if (isdefined(self.traversestartnode)) {
             self waittill(#"traverse_end");
@@ -1168,7 +1168,7 @@ function check_robot_on_travesal_end() {
 function update_stop_position() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"traverse_end");
         if (!self.moving) {
             self setgoal(self.origin, 1);
@@ -1183,7 +1183,7 @@ function update_stop_position() {
 function robot_wait_next_point() {
     self endon(#"robot_stopped", #"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"goal", #"goal_blocked");
         if (!isdefined(self.watch_becoming_blocked_at_goal_established) || self.watch_becoming_blocked_at_goal_established == 0) {
             self thread watch_becoming_blocked_at_goal();
@@ -1286,10 +1286,10 @@ function is_path_distance_to_goal_too_long(&patharray, toolongthreshold) {
     for (i = 0; i < lastindextocheck; i++) {
         goaldistance = goaldistance + distance(patharray[i], patharray[i + 1]);
         if (goaldistance >= toolongthreshold) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace escort/escort
@@ -1299,7 +1299,7 @@ function is_path_distance_to_goal_too_long(&patharray, toolongthreshold) {
 function debug_reset_robot_to_start() {
     /#
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             if ((isdefined(getdvarint(#"scr_escort_robot_reset_path", 0)) ? getdvarint(#"scr_escort_robot_reset_path", 0) : 0) > 0) {
                 if (isdefined(level.robot)) {
                     pathindex = (isdefined(getdvarint(#"scr_escort_robot_reset_path", 0)) ? getdvarint(#"scr_escort_robot_reset_path", 0) : 0) - 1;
@@ -1371,7 +1371,7 @@ function wait_robot_corpse() {
 // Size: 0x78
 function robot_move_chatter() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         if (self.moving) {
             self playsoundontag("vox_robot_chatter", "J_Head");
         }
@@ -1444,7 +1444,7 @@ function on_update_use_rate_robot_move(team, progress, change) {
 function track_escorting_players() {
     level endon(#"game_ended");
     self.robot endon(#"robot_stopped");
-    while (1) {
+    while (true) {
         foreach (touch in self.touchlist[self.team]) {
             if (!isdefined(touch) || !isdefined(touch.player)) {
                 continue;
@@ -1470,7 +1470,7 @@ function track_escort_time(player) {
     self thread wait_escort_death(player);
     self thread wait_escort_shutdown(player);
     consecutiveescorts = 0;
-    while (1) {
+    while (true) {
         wait(1);
         touching = 0;
         foreach (touch in self.touchlist[self.team]) {
@@ -1575,7 +1575,7 @@ function watch_robot_enter(robot) {
     robot endon(#"death");
     level endon(#"game_ended");
     radiussq = self.trigger.radius * self.trigger.radius;
-    while (1) {
+    while (true) {
         if (robot.moving === 1 && distance2dsquared(self.trigger.origin, robot.origin) < radiussq) {
             level.moveplayers = 0;
             robot.overrideactordamage = &robot_damage_none;
@@ -1714,8 +1714,8 @@ function destroy_supply_crate_blocking_goal(dirtogoal) {
         playsoundatposition(#"wpn_grenade_explode", bestcrate.origin);
         wait(0.1);
         bestcrate supplydrop::cratedelete();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

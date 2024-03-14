@@ -63,7 +63,7 @@ function __main__() {
 // Checksum 0x31934452, Offset: 0x410
 // Size: 0x6a
 function function_e95f47c2() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"start_of_round");
         if (s_result.n_round_number == 17) {
@@ -308,7 +308,7 @@ function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"hash_83ca4038b5f2453", "<unknown string>");
             switch (str_command) {

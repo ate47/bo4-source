@@ -192,9 +192,9 @@ function function_d36196b1(n_round) {
             arrayremoveindex(level.var_f5db924c, n_round, 1);
             arrayremovevalue(level.var_a06c0ea0, n_round);
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_round_spawning/zm_round_spawning
@@ -231,9 +231,9 @@ function function_43aed0ca(n_round, var_b6a3a1ac = 1) {
             level.var_f5db924c[var_bfda0037] = var_a630f8a4;
             array::add_sorted(level.var_a06c0ea0, var_bfda0037, 0);
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_round_spawning/zm_round_spawning
@@ -649,18 +649,18 @@ function function_191ae5ec() {
             /#
                 level.var_f5db924c[level.round_number].b_skipped = 1;
             #/
-            return 0;
+            return false;
         }
         if (zm_custom::function_928e94b9(level.var_45827161[level.round_number].var_d7d3cd31)) {
             if (isdefined(level.var_45827161[level.round_number].m_func_end)) {
                 level [[ level.var_45827161[level.round_number].m_func_end ]](0);
-                return 0;
+                return false;
             }
         }
         level function_f3635804();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_round_spawning/zm_round_spawning
@@ -730,7 +730,7 @@ function private function_bb169fc9(var_a630f8a4) {
 // Size: 0x304
 function private function_979b03db(var_a630f8a4) {
     level endon(#"intermission", #"end_of_round", #"restart_round", #"kill_round");
-    while (1) {
+    while (true) {
         var_404e4288 = zombie_utility::get_current_zombie_count();
         if (var_404e4288 >= level.zombie_ai_limit) {
             wait(0.25);
@@ -1053,7 +1053,7 @@ function private function_d7864087(var_dbce0c44) {
                     function_6eba74f3();
                     continue;
                 }
-                while (1) {
+                while (true) {
                     var_4f8675aa = function_24ccde2(var_fe695913, var_a9facc6);
                     if (!isdefined(var_4f8675aa)) {
                         var_d2e7fe2e = 0;
@@ -1284,7 +1284,7 @@ function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"hash_5996494c7608f933", "<unknown string>");
             switch (str_command) {
@@ -1328,7 +1328,7 @@ function private devgui() {
 // Size: 0x1862
 function private function_fc42d325() {
     /#
-        while (1) {
+        while (true) {
             var_c708e6e1 = 120;
             if (level.var_89976878) {
                 debug2dtext((510, var_c708e6e1, 0), "<unknown string>", (0, 1, 0), 1, (0, 0, 0), 0.8, 1.5, 2);

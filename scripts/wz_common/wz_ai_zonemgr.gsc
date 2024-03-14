@@ -170,7 +170,7 @@ function private function_5a46c509(var_d53fd9d8) {
     /#
         infovolumedebuginit();
         old_value = 0;
-        while (1) {
+        while (true) {
             if (old_value != level.var_e12ea40c) {
                 old_value = level.var_e12ea40c;
                 setdvar(#"g_drawdebuginfovolumes", old_value);
@@ -238,7 +238,7 @@ function function_d0055419() {
             adddebugcommand("<unknown string>");
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_70cb00491d863294", "<unknown string>");
             if (cmd == "<unknown string>") {
@@ -845,7 +845,7 @@ function on_player_spawned() {
 function function_2345f7a7() {
     level endon(#"game_ended", #"hash_329c3f546e49cb9f");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self.ai_zone = undefined;
         if (isdefined(level.var_e147d7b8) && level.var_e147d7b8) {
             foreach (ai_zone in level.var_5b357434) {
@@ -901,7 +901,7 @@ function function_48b0976c() {
 function function_71d1b294() {
     /#
         level endon(#"game_ended", #"hash_329c3f546e49cb9f");
-        while (1) {
+        while (true) {
             if (isdefined(level.var_e147d7b8) && level.var_e147d7b8 && isdefined(level.var_e066667d) && level.var_e066667d && isdefined(level.var_5b357434)) {
                 foreach (ai_zone in level.var_5b357434) {
                     drawpos = ai_zone.minimap.origin;
@@ -1306,7 +1306,7 @@ function function_7b0c014e() {
         level thread wz_ai_utils::debug_ai();
         level thread function_5a46c509(level.ai_zones);
     #/
-    while (1) {
+    while (true) {
         if (isdefined(level.var_8110be92) && level.var_8110be92 && isdefined(level.var_e147d7b8) && level.var_e147d7b8 && isdefined(level.var_5b357434)) {
             foreach (ai_zone in level.var_5b357434) {
                 if (!ai_zone.is_disabled) {
@@ -1437,7 +1437,7 @@ function function_4b95d880() {
 // Checksum 0xed7482de, Offset: 0x6580
 // Size: 0x11c
 function function_c7cab34e() {
-    if (0) {
+    if (false) {
         if (self.var_84b8298c > 0) {
             all_ai = getaiteamarray(#"world");
             if (isdefined(all_ai) && all_ai.size > 0) {
@@ -1445,7 +1445,7 @@ function function_c7cab34e() {
                     if (isalive(ai) && ai.ai_zone === self) {
                         if (!self.is_occupied) {
                             ai kill(undefined, undefined, undefined, undefined, 0, 1);
-                            return;
+                            break;
                         }
                     }
                 }
@@ -1528,10 +1528,10 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
 function function_250e9641(ai_zone, category) {
     for (i = 0; i < ai_zone.zone_category.size; i++) {
         if (ai_zone.zone_category[i] == category) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zonemgr/wz_ai_zonemgr
@@ -1643,7 +1643,7 @@ function function_3effc794(var_9e12dd2e) {
                     ai.is_special = 1;
                     self.special_ai = ai;
                     ai thread wz_ai_utils::function_92c7e9a9(self);
-                    return;
+                    break;
                 }
             }
         }
@@ -1761,7 +1761,7 @@ function function_1c8ea11(category) {
     while (isdefined(level.var_e147d7b8) && level.var_e147d7b8) {
         zone = function_678fdc65(category, var_c8e3e6bc);
         if (!isdefined(zone)) {
-            return;
+            break;
         }
         zone.lock_zone = 1;
         var_c8e3e6bc = zone;
@@ -1839,7 +1839,7 @@ function function_f3e8cf82() {
 function function_49d2e080() {
     /#
         level endon(#"game_ended", #"hash_329c3f546e49cb9f");
-        while (1) {
+        while (true) {
             if (getdvarint(#"scr_print_ai", 0) && isdefined(level.var_e066667d) && level.var_e066667d) {
                 if (isdefined(level.var_e147d7b8) && level.var_e147d7b8) {
                     var_ffabb450 = 0;

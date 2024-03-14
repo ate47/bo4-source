@@ -168,7 +168,7 @@ function add_actor_bookmark_kill_time() {
 // Checksum 0xb703f966, Offset: 0x700
 // Size: 0x1fc
 function watch_actor_bookmarks() {
-    while (1) {
+    while (true) {
         if (!isdefined(level.actorbookmarkparamsinitialized)) {
             wait(0.5);
             continue;

@@ -75,16 +75,16 @@ function function_c9ff0dce() {
         switch (level.var_ad7c0539) {
         case 2:
             self thread function_58c62280(32, 0, 0);
-            return;
+            break;
         case 4:
             level.var_2a5b7055 = self;
-            return;
+            break;
         case 5:
             self thread function_bbb1aed5();
-            return;
+            break;
         default:
             self thread function_58c62280(32, 1, 0);
-            return;
+            break;
         }
     }
 }
@@ -525,7 +525,7 @@ function function_6728bf85() {
 // Size: 0xb0
 function function_40e2147a() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
@@ -632,7 +632,7 @@ function function_cc52d21a(var_260aad25, var_6f8083d4, var_75efba72) {
     n_start_time = gettime() / 1000;
     wait(1);
     level.var_e6db911d = 0;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         dt = n_time - n_start_time;
         if (dt >= var_6f8083d4) {
@@ -712,7 +712,7 @@ function function_f6c6baf3() {
     level thread function_ffd0b345();
     level.var_e72728b8 = array(#"gadget_vision_pulse");
     level.var_5008031d = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = e_player waittill(#"hash_70f03cfbb15356c0");
         e_dart = waitresult.dart;
@@ -761,7 +761,7 @@ function function_f6c6baf3() {
 function function_ffd0b345() {
     level endon(#"combattraining_logic_finished", #"stop_nag");
     var_6ee32682 = 0;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         dt = n_time - var_6ee32682;
         if (isdefined(level.var_5008031d)) {
@@ -871,7 +871,7 @@ function function_94c8f1d8(n_max_zombies) {
     var_856f9e3e = struct::get_array("s_vp_zombie_loc", "targetname");
     var_856f9e3e = array::randomize(var_856f9e3e);
     var_4001313 = 0;
-    while (1) {
+    while (true) {
         a_ai = getaiarray();
         if (a_ai.size < n_max_zombies) {
             s_loc = var_856f9e3e[var_4001313];
@@ -934,20 +934,20 @@ function function_bb44f289(var_7e6c18d7, var_d8036031, var_8a787b15) {
     var_856f9e3e = array::randomize(var_856f9e3e);
     var_4001313 = 0;
     level.var_6f71c916 = var_d8036031;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         a_zombies = function_75c5b3ae();
         var_70ff5c3a = a_zombies.size;
         if (isdefined(var_8a787b15) && var_8a787b15) {
             if (isdefined(e_player.var_d5d10814) && e_player.var_d5d10814) {
-                return;
+                break;
             }
         }
         if (level.var_6f71c916 == 0 && var_70ff5c3a == 0) {
             if (isdefined(var_8a787b15) && var_8a787b15) {
                 level.var_6f71c916 = level.var_6f71c916 + 1;
             } else {
-                return;
+                break;
             }
         }
         a_zombies = function_75c5b3ae();
@@ -1044,7 +1044,7 @@ function function_79d4c106() {
         waitframe(1);
     }
     n_start_time = gettime() / 1000;
-    while (1) {
+    while (true) {
         a_zombies = function_75c5b3ae();
         e_player = getplayers()[0];
         n_time = gettime() / 1000;
@@ -1126,17 +1126,17 @@ function function_58c62280(n_goal_radius, b_ignoreall, b_keyline) {
         } else {
             self thread function_75345caf(s_loc);
         }
-        return;
+        break;
     case 2:
         self thread function_35bd7aef(s_loc);
-        return;
+        break;
     case 3:
         self val::reset(#"bot_spawn", "ignoreall");
         self thread function_9b0a398a(s_loc);
-        return;
+        break;
     case 6:
         self thread function_b1b0c7e9();
-        return;
+        break;
     }
 }
 
@@ -1172,7 +1172,7 @@ function function_1d2b336(s_start_loc) {
     }
     var_f0bbde5 = struct::get(s_start_loc.target, "targetname");
     self thread ct_utils::function_5b59f3b7(var_f0bbde5.origin, var_f0bbde5.angles, 32);
-    while (1) {
+    while (true) {
         n_dist = distance(self.origin, var_f0bbde5.origin);
         if (n_dist < 50) {
             break;
@@ -1247,7 +1247,7 @@ function function_9b0a398a(s_loc) {
     var_3a9de7bb = 0;
     var_e4e157c8 = 0;
     var_49f58f36 = 1;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         e_player = getplayers()[0];
         dt = n_time - n_start_time;

@@ -171,10 +171,10 @@ function private function_3ea6bf0b(gameobject, var_1766c557) {
             continue;
         }
         if (gameobject.numtouching[team] > 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -387,9 +387,9 @@ function private function_cb29a211(commander, squad, constants) {
         assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     #/
     if (gettime() > squad.createtime + constants[#"maxage"]) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -399,18 +399,18 @@ function private function_cb29a211(commander, squad, constants) {
 function private function_e319475e(commander, squad, constants) {
     bots = plannersquadutility::getblackboardattribute(squad, "doppelbots");
     if (!isdefined(bots)) {
-        return 0;
+        return false;
     }
     for (botindex = 0; botindex < bots.size; botindex++) {
         bot = bots[botindex][#"__unsafe__"][#"bot"];
         if (!isdefined(bot)) {
-            return 0;
+            return false;
         }
         if (!isalive(bot)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -423,12 +423,12 @@ function private function_f478ac94(commander, squad, constants) {
         for (i = 0; i < controlzones.size; i++) {
             zone = controlzones[i][#"__unsafe__"][#"controlzone"];
             if (!zone.gameobject.trigger istriggerenabled()) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -442,12 +442,12 @@ function private function_78126acd(commander, squad, constants) {
         foreach (domflag in domflags) {
             object = domflag[#"__unsafe__"][#"domflag"];
             if (hash(squadteam) !== object gameobjects::get_owner_team()) {
-                return 1;
+                return true;
             }
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -462,11 +462,11 @@ function private function_8ee25278(commander, squad, constants) {
         if (isdefined(domflags)) {
             pathabledomflags = function_c0e398c4(bots, domflags, "domFlag");
             if (pathabledomflags.size > 0) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -478,11 +478,11 @@ function private function_eb0a4e86(commander, squad, constants) {
     if (isdefined(kothzone) && kothzone.size > 0) {
         zone = kothzone[0][#"__unsafe__"][#"kothzone"];
         if (zone.gameobject.trigger istriggerenabled()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -502,10 +502,10 @@ function private function_2f04f764(planner, constants) {
             continue;
         }
         if (function_3ea6bf0b(zone.gameobject, commanderteam)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372
@@ -586,10 +586,10 @@ function private function_493ead90(planner, constants) {
     for (i = 0; i < bots.size; i++) {
         bot = bots[0][#"__unsafe__"][#"bot"];
         if (isdefined(bot.isbombcarrier) && bot.isbombcarrier || isdefined(level.multibomb) && level.multibomb) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_e2d53d54/namespace_ff7f7372

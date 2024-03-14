@@ -130,7 +130,7 @@ function assertproperplacement() {
                     /#
                         assertmsg("<unknown string>");
                     #/
-                    return;
+                    break;
                 }
             }
         }
@@ -146,7 +146,7 @@ function isvalidclass(vclass) {
         /#
             assert(!isdefined(vclass));
         #/
-        return 1;
+        return true;
     }
     return isdefined(vclass) && vclass != "";
 }
@@ -159,7 +159,7 @@ function playtickingsound(gametype_tick_sound) {
     self endon(#"death", #"stop_ticking");
     level endon(#"game_ended");
     time = level.bombtimer;
-    while (1) {
+    while (true) {
         self playsound(gametype_tick_sound);
         if (time > 10) {
             time = time - 1;
@@ -301,7 +301,7 @@ function getestimatedtimeuntilscorelimit(team) {
 // Size: 0x48
 function rumbler() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         wait(0.1);
         self playrumbleonentity("damage_heavy");
     }
@@ -337,14 +337,14 @@ function waitfortimeornotifynoartillery(time, notifyname) {
 // Size: 0x86
 function isheadshot(weapon, shitloc, smeansofdeath, einflictor) {
     if (shitloc != "head" && shitloc != "helmet") {
-        return 0;
+        return false;
     }
     switch (smeansofdeath) {
     case #"mod_impact":
     case #"mod_melee":
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -401,10 +401,10 @@ function debugline(start, end) {
 function isexcluded(entity, entitylist) {
     for (index = 0; index < entitylist.size; index++) {
         if (entity == entitylist[index]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_utils/globallogic_utils

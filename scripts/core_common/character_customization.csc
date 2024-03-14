@@ -113,20 +113,20 @@ class class_7da27482 {
     function is_streamed() {
         if (isdefined(self.var_228f64da)) {
             if (!self.var_228f64da isstreamed()) {
-                return 0;
+                return false;
             }
         }
         if (self.var_9896541c && function_d9aed86()) {
-            return 0;
+            return false;
         }
         foreach (ent in self.var_5633914d) {
             if (isdefined(ent)) {
                 if (!ent isstreamed()) {
-                    return 0;
+                    return false;
                 }
             }
         }
-        return 1;
+        return true;
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -825,7 +825,7 @@ class class_7da27482 {
     // Checksum 0x6c9f8702, Offset: 0x1910
     // Size: 0x10
     function function_ef6f931f(params) {
-        return 1;
+        return true;
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -833,7 +833,7 @@ class class_7da27482 {
     // Checksum 0xa88ad8f2, Offset: 0x18f8
     // Size: 0x10
     function function_f941c5de(params) {
-        return 1;
+        return true;
     }
 
     // Namespace namespace_7da27482/character_customization
@@ -1514,34 +1514,34 @@ function function_dd295310(charactermodel, localclientnum, alt_render_mode = 1) 
 // Size: 0x188
 function function_aa5382ed(customization1, customization2, check_xuid = 1) {
     if (isdefined(customization1) != isdefined(customization2)) {
-        return 1;
+        return true;
     } else if (!isdefined(customization1)) {
-        return 0;
+        return false;
     }
     if (check_xuid && customization1.xuid !== customization2.xuid) {
-        return 1;
+        return true;
     }
     if (customization1.charactermode != customization2.charactermode) {
-        return 1;
+        return true;
     }
     if (customization1.charactertype != customization2.charactertype) {
-        return 1;
+        return true;
     }
     if (customization1.characterhead != customization2.characterhead) {
-        return 1;
+        return true;
     }
     if (customization1.outfit != customization2.outfit) {
-        return 1;
+        return true;
     }
     if (customization1.var_cfe86a3e != customization2.var_cfe86a3e) {
-        return 1;
+        return true;
     }
     for (i = 0; i < customization1.outfititems.size; i++) {
         if (customization1.outfititems[i] != customization2.outfititems[i]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace character_customization/character_customization
@@ -1626,7 +1626,7 @@ function function_bcc8bdf4(localclientnum, var_d0b01271, waitresult, params) {
 // Checksum 0x315d426d, Offset: 0x66a0
 // Size: 0xc16
 function updateeventthread(localclientnum, var_d0b01271, notifyname, var_1d7f1597 = &function_bcc8bdf4) {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(notifyname + localclientnum);
         switch (waitresult.event_name) {
@@ -1818,7 +1818,7 @@ function rotation_thread_spawner(localclientnum, var_d0b01271, endonevent) {
 // Size: 0x1f0
 function private update_model_rotation_for_right_stick(localclientnum, var_d0b01271, endonevent) {
     level endon(endonevent);
-    while (1) {
+    while (true) {
         data_lcn = [[ var_d0b01271 ]]->function_690c9509();
         if (localclientnum == data_lcn && localclientactive(data_lcn) && ![[ var_d0b01271 ]]->function_4a271da1()) {
             model = [[ var_d0b01271 ]]->function_217b10ed();
@@ -1927,7 +1927,7 @@ function setup_character_extracam_settings(localclientnum, var_d0b01271, extraca
 // Size: 0x80
 function update_character_extracam(localclientnum, var_d0b01271) {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill("process_character_extracam" + localclientnum);
         setup_character_extracam_settings(localclientnum, var_d0b01271, waitresult.extracam_data_struct);

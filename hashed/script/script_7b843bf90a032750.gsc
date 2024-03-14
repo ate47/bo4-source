@@ -76,7 +76,7 @@ function private function_e997bb0b(var_73d6ae36) {
         n_delay = zm_round_logic::get_delay_between_rounds();
         wait(n_delay + 0);
     }
-    while (1) {
+    while (true) {
         foreach (player in getplayers()) {
             /#
                 if (isgodmode(player) || player isinmovemode("<unknown string>", "<unknown string>")) {

@@ -775,7 +775,7 @@ function private givelastattackerwarning(team) {
     if (level.alivecount[enemyteam] > 2) {
         self.var_66cfa07f = 1;
     }
-    while (1) {
+    while (true) {
         if (self.health != self.maxhealth) {
             fullhealthtime = 0;
         } else {
@@ -1109,7 +1109,7 @@ function private function_4af1c786(helicopter, var_5ad5316d) {
     var_45d0806d = var_5ad5316d;
     lerp_duration = max((helicopter.origin[2] - var_5ad5316d[2] - 600) / 625, 0.8);
     helicopter animation::play(#"ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2", var_45d0806d, (0, helicopter.angles[1], 0), 1, 0.1, 0.2, lerp_duration);
-    while (1) {
+    while (true) {
         helicopter animation::play(#"ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2", var_45d0806d, (0, helicopter.angles[1], 0), 1, 0.1, 0.2, 0.8);
     }
 }
@@ -1155,7 +1155,7 @@ function private function_5db7fc11(helicopter) {
     /#
         assert(isdefined(helicopter.rope));
     #/
-    while (1) {
+    while (true) {
         helicopter.rope animation::play(#"hash_217d8ba9d8489561", helicopter, "tag_origin_animate", 1, 0.1, 0.1, undefined, undefined, undefined, 0);
     }
 }
@@ -1223,7 +1223,7 @@ function function_36f403(helicopter) {
             var_a9a839e2 = getclosestpointonnavvolume(helicopter.origin, "navvolume_big", radius);
             if (isdefined(var_a9a839e2)) {
                 helicopter function_9ffc1856(var_a9a839e2, 0);
-                while (1) {
+                while (true) {
                     /#
                         recordsphere(var_a9a839e2, 8, (0, 0, 1), "bounty_deposit_site_helicopter");
                     #/
@@ -1379,7 +1379,7 @@ function private destroy_heli(helicopter) {
 // Size: 0xfc
 function private function_656691ab() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         var_baa92af9 = ispointinnavvolume(self.origin, "navvolume_big");
         if (var_baa92af9) {
             heli_reset();
@@ -1390,7 +1390,7 @@ function private function_656691ab() {
                 self function_9ffc1856(self.heligoalpos, 1);
             }
             self notify(#"hash_340ab3c2b94ff86a");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -1424,7 +1424,7 @@ function private function_8de67419(leavenode) {
     var_a9a839e2 = getclosestpointonnavvolume(leavenode.origin, "navvolume_big", radius);
     if (isdefined(var_a9a839e2)) {
         self function_9ffc1856(var_a9a839e2, 0);
-        while (1) {
+        while (true) {
             /#
                 recordsphere(var_a9a839e2, 8, (0, 0, 1), "bounty_deposit_site_helicopter");
             #/
@@ -1475,10 +1475,10 @@ function function_8debcb6(origin) {
 function function_a800815(victim, attacker) {
     if (isdefined(level.var_7e7897b8) && (isdefined(level.var_7e7897b8.carrier) && level.var_7e7897b8.carrier == victim || isdefined(victim.var_ea1458aa) && isdefined(victim.var_ea1458aa.var_cba684c2) && victim.var_ea1458aa.var_cba684c2[level.var_7e7897b8 getentitynumber()] === 1)) {
         if (isdefined(level.var_ad7774db) && isdefined(level.var_ad7774db.trigger) && victim istouching(level.var_ad7774db.trigger)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bounty/bounty
@@ -1656,7 +1656,7 @@ function private function_bdba96e1() {
 function private function_6d1352cb(droppoint) {
     self endon(#"death");
     exitpoint = droppoint + droppoint - self.origin;
-    while (1) {
+    while (true) {
         waitframe(1);
         var_39d312c5 = distancesquared(self.origin, droppoint);
         if (var_39d312c5 < 225 * 225) {
@@ -1786,7 +1786,7 @@ function function_b968a61c() {
         wait(1);
         function_b1dcb019();
         wait(1);
-        while (1) {
+        while (true) {
             wait(0.25);
             var_9b37b387 = getdvarint(#"hash_312d65fd43c7008c", 0);
             if (var_9b37b387 <= 0) {

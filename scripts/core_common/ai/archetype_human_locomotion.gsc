@@ -131,7 +131,7 @@ function autoexec registerbehaviorscriptfunctions() {
 // Size: 0x1e
 function private tacticalwalkscanterminate(entity) {
     entity.lasttacticalscantime = gettime();
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -140,17 +140,17 @@ function private tacticalwalkscanterminate(entity) {
 // Size: 0x120
 function private shouldtacticalwalkscan(entity) {
     if (isdefined(entity.lasttacticalscantime) && entity.lasttacticalscantime + 2000 > gettime()) {
-        return 0;
+        return false;
     }
     if (!entity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (entity shouldfacemotion()) {
         if (ai::hasaiattribute(entity, "forceTacticalWalk") && !ai::getaiattribute(entity, "forceTacticalWalk")) {
-            return 0;
+            return false;
         }
     }
     animation = entity asmgetcurrentdeltaanimation();
@@ -158,7 +158,7 @@ function private shouldtacticalwalkscan(entity) {
         animtime = entity getanimtime(animation);
         return (animtime <= 0.05);
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -167,14 +167,14 @@ function private shouldtacticalwalkscan(entity) {
 // Size: 0x13c
 function private continuetacticalwalkscan(entity) {
     if (!entity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (entity shouldfacemotion()) {
         if (ai::hasaiattribute(entity, "forceTacticalWalk") && !ai::getaiattribute(entity, "forceTacticalWalk")) {
-            return 0;
+            return false;
         }
     }
     animation = entity asmgetcurrentdeltaanimation();
@@ -184,7 +184,7 @@ function private continuetacticalwalkscan(entity) {
         normalizedtime = (animtime + 0.2) / animlength;
         return (normalizedtime < 1);
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -204,7 +204,7 @@ function private shouldtacticalwalkpain(entity) {
 // Size: 0x1e
 function private begintacticalwalkpain(entity) {
     entity.startpaintime = gettime();
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -229,14 +229,14 @@ function private bsmlocomotionhasvalidpaininterrupt(entity) {
 // Size: 0xd6
 function private shouldarriveexposed(behaviortreeentity) {
     if (behaviortreeentity ai::get_behavior_attribute("disablearrivals")) {
-        return 0;
+        return false;
     }
     if (behaviortreeentity haspath()) {
         if (isdefined(behaviortreeentity.node) && iscovernode(behaviortreeentity.node) && isdefined(behaviortreeentity.pathgoalpos) && distancesquared(behaviortreeentity.pathgoalpos, behaviortreeentity getnodeoffsetposition(behaviortreeentity.node)) < 8) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -264,24 +264,24 @@ function private preparetomoveawayfromnearbyenemy(behaviortreeentity) {
 function private shouldplanarrivalintocover(behaviortreeentity) {
     goingtocovernode = isdefined(behaviortreeentity.node) && iscovernode(behaviortreeentity.node);
     if (!goingtocovernode) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.pathgoalpos)) {
         if (isdefined(behaviortreeentity.arrivalfinalpos)) {
             if (behaviortreeentity.arrivalfinalpos != behaviortreeentity.pathgoalpos) {
-                return 1;
+                return true;
             } else if (behaviortreeentity.ai.replannedcoverarrival === 0 && isdefined(behaviortreeentity.exitpos) && isdefined(behaviortreeentity.predictedexitpos)) {
                 behaviortreeentity.ai.replannedcoverarrival = 1;
                 exitdir = vectornormalize(behaviortreeentity.predictedexitpos - behaviortreeentity.exitpos);
                 currentdir = vectornormalize(behaviortreeentity.origin - behaviortreeentity.exitpos);
                 if (vectordot(exitdir, currentdir) < cos(30)) {
                     behaviortreeentity.predictedarrivaldirectionvalid = 0;
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -290,10 +290,10 @@ function private shouldplanarrivalintocover(behaviortreeentity) {
 // Size: 0x12e
 function private shouldswitchtotacticalwalkfromrun(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (ai::hasaiattribute(behaviortreeentity, "forceTacticalWalk") && ai::getaiattribute(behaviortreeentity, "forceTacticalWalk")) {
-        return 1;
+        return true;
     }
     goalpos = undefined;
     if (isdefined(behaviortreeentity.arrivalfinalpos)) {
@@ -304,13 +304,13 @@ function private shouldswitchtotacticalwalkfromrun(behaviortreeentity) {
     if (isdefined(behaviortreeentity.pathstartpos) && isdefined(goalpos)) {
         pathdist = distancesquared(behaviortreeentity.pathstartpos, goalpos);
         if (pathdist < 250 * 250) {
-            return 1;
+            return true;
         }
     }
     if (!behaviortreeentity shouldfacemotion()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -319,18 +319,18 @@ function private shouldswitchtotacticalwalkfromrun(behaviortreeentity) {
 // Size: 0x84
 function private humannoncombatlocomotioncondition(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.accuratefire) && behaviortreeentity.accuratefire) {
-        return 1;
+        return true;
     }
     if (behaviortreeentity humanshouldsprint()) {
-        return 1;
+        return true;
     }
     if (isdefined(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -339,18 +339,18 @@ function private humannoncombatlocomotioncondition(behaviortreeentity) {
 // Size: 0x84
 function private humancombatlocomotioncondition(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.accuratefire) && behaviortreeentity.accuratefire) {
-        return 0;
+        return false;
     }
     if (behaviortreeentity humanshouldsprint()) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.enemy)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -362,14 +362,14 @@ function private combatlocomotionstart(behaviortreeentity) {
     randomchance = randomint(100);
     if (randomchance > 50) {
         behaviortreeentity setblackboardattribute("_run_n_gun_variation", "variation_forward");
-        return 1;
+        return true;
     }
     if (randomchance > 25) {
         behaviortreeentity setblackboardattribute("_run_n_gun_variation", "variation_strafe_1");
-        return 1;
+        return true;
     }
     behaviortreeentity setblackboardattribute("_run_n_gun_variation", "variation_strafe_2");
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -378,10 +378,10 @@ function private combatlocomotionstart(behaviortreeentity) {
 // Size: 0x106
 function private noncombatlocomotionupdate(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.enemy) && !(isdefined(behaviortreeentity.accuratefire) && behaviortreeentity.accuratefire) && !behaviortreeentity humanshouldsprint()) {
-        return 0;
+        return false;
     }
     if (!behaviortreeentity asmistransitionrunning()) {
         behaviortreeentity setblackboardattribute("_stance", "stand");
@@ -391,7 +391,7 @@ function private noncombatlocomotionupdate(behaviortreeentity) {
     } else {
         behaviortreeentity.ai.replannedcoverarrival = undefined;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -400,10 +400,10 @@ function private noncombatlocomotionupdate(behaviortreeentity) {
 // Size: 0xd4
 function private combatlocomotionupdate(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (behaviortreeentity humanshouldsprint()) {
-        return 0;
+        return false;
     }
     if (!behaviortreeentity asmistransitionrunning()) {
         behaviortreeentity setblackboardattribute("_stance", "stand");
@@ -414,9 +414,9 @@ function private combatlocomotionupdate(behaviortreeentity) {
         behaviortreeentity.ai.replannedcoverarrival = undefined;
     }
     if (isdefined(behaviortreeentity.enemy)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -425,7 +425,7 @@ function private combatlocomotionupdate(behaviortreeentity) {
 // Size: 0x38
 function private prepareformovement(behaviortreeentity) {
     behaviortreeentity setblackboardattribute("_stance", "stand");
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -434,9 +434,9 @@ function private prepareformovement(behaviortreeentity) {
 // Size: 0x32
 function private isarrivingfour(arrivalangle) {
     if (arrivalangle >= 45 && arrivalangle <= 120) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -445,9 +445,9 @@ function private isarrivingfour(arrivalangle) {
 // Size: 0x32
 function private isarrivingone(arrivalangle) {
     if (arrivalangle >= 120 && arrivalangle <= 165) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -456,9 +456,9 @@ function private isarrivingone(arrivalangle) {
 // Size: 0x32
 function private isarrivingtwo(arrivalangle) {
     if (arrivalangle >= 165 && arrivalangle <= 195) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -467,9 +467,9 @@ function private isarrivingtwo(arrivalangle) {
 // Size: 0x32
 function private isarrivingthree(arrivalangle) {
     if (arrivalangle >= 195 && arrivalangle <= 240) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -478,9 +478,9 @@ function private isarrivingthree(arrivalangle) {
 // Size: 0x32
 function private isarrivingsix(arrivalangle) {
     if (arrivalangle >= 240 && arrivalangle <= 315) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -489,9 +489,9 @@ function private isarrivingsix(arrivalangle) {
 // Size: 0x32
 function private isfacingfour(facingangle) {
     if (facingangle >= 45 && facingangle <= 135) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -500,9 +500,9 @@ function private isfacingfour(facingangle) {
 // Size: 0x32
 function private isfacingeight(facingangle) {
     if (facingangle >= -45 && facingangle <= 45) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -511,9 +511,9 @@ function private isfacingeight(facingangle) {
 // Size: 0x30
 function private isfacingseven(facingangle) {
     if (facingangle >= 0 && facingangle <= 90) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -522,9 +522,9 @@ function private isfacingseven(facingangle) {
 // Size: 0x32
 function private isfacingsix(facingangle) {
     if (facingangle >= -135 && facingangle <= -45) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -533,9 +533,9 @@ function private isfacingsix(facingangle) {
 // Size: 0x30
 function private isfacingnine(facingangle) {
     if (facingangle >= -90 && facingangle <= 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -544,17 +544,17 @@ function private isfacingnine(facingangle) {
 // Size: 0x3fa
 function private shouldtacticalarrivecondition(behaviortreeentity) {
     if (getdvarint(#"enabletacticalarrival", 0) != 1) {
-        return 0;
+        return false;
     }
     if (!isdefined(behaviortreeentity.node)) {
-        return 0;
+        return false;
     }
     if (!(behaviortreeentity.node.type == #"cover left")) {
-        return 0;
+        return false;
     }
     stance = behaviortreeentity getblackboardattribute("_arrival_stance");
     if (stance != "stand") {
-        return 0;
+        return false;
     }
     arrivaldistance = 35;
     /#
@@ -565,38 +565,38 @@ function private shouldtacticalarrivecondition(behaviortreeentity) {
     #/
     nodeoffsetposition = behaviortreeentity getnodeoffsetposition(behaviortreeentity.node);
     if (distance(nodeoffsetposition, behaviortreeentity.origin) > arrivaldistance || distance(nodeoffsetposition, behaviortreeentity.origin) < 25) {
-        return 0;
+        return false;
     }
     entityangles = vectortoangles(behaviortreeentity.origin - nodeoffsetposition);
     if (abs(behaviortreeentity.node.angles[1] - entityangles[1]) < 60) {
-        return 0;
+        return false;
     }
     tacticalfaceangle = behaviortreeentity getblackboardattribute("_tactical_arrival_facing_yaw");
     arrivalangle = behaviortreeentity getblackboardattribute("_locomotion_arrival_yaw");
     if (isarrivingfour(arrivalangle)) {
         if (!isfacingsix(tacticalfaceangle) && !isfacingeight(tacticalfaceangle) && !isfacingfour(tacticalfaceangle)) {
-            return 0;
+            return false;
         }
     } else if (isarrivingone(arrivalangle)) {
         if (!isfacingnine(tacticalfaceangle) && !isfacingseven(tacticalfaceangle)) {
-            return 0;
+            return false;
         }
     } else if (isarrivingtwo(arrivalangle)) {
         if (!isfacingeight(tacticalfaceangle)) {
-            return 0;
+            return false;
         }
     } else if (isarrivingthree(arrivalangle)) {
         if (!isfacingseven(tacticalfaceangle) && !isfacingnine(tacticalfaceangle)) {
-            return 0;
+            return false;
         }
     } else if (isarrivingsix(arrivalangle)) {
         if (!isfacingfour(tacticalfaceangle) && !isfacingeight(tacticalfaceangle) && !isfacingsix(tacticalfaceangle)) {
-            return 0;
+            return false;
         }
     } else {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -614,19 +614,19 @@ function private humanshouldsprint() {
 // Size: 0x53c
 function private planhumanarrivalatcover(behaviortreeentity, arrivalanim) {
     if (behaviortreeentity ai::get_behavior_attribute("disablearrivals")) {
-        return 0;
+        return false;
     }
     behaviortreeentity setblackboardattribute("_desired_stance", "stand");
     if (!isdefined(arrivalanim)) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.node) && isdefined(behaviortreeentity.pathgoalpos)) {
         if (!iscovernode(behaviortreeentity.node)) {
-            return 0;
+            return false;
         }
         nodeoffsetposition = behaviortreeentity getnodeoffsetposition(behaviortreeentity.node);
         if (nodeoffsetposition != behaviortreeentity.pathgoalpos) {
-            return 0;
+            return false;
         }
         if (isdefined(arrivalanim)) {
             isright = behaviortreeentity.node.type == #"cover right";
@@ -653,10 +653,10 @@ function private planhumanarrivalatcover(behaviortreeentity, arrivalanim) {
                     recordline(coverenterpos, postenterpos, (1, 0.5, 0), "<unknown string>", behaviortreeentity);
                 #/
                 if (!behaviortreeentity maymovefrompointtopoint(postenterpos, nodeoffsetposition, 1, 0)) {
-                    return 0;
+                    return false;
                 }
                 if (!behaviortreeentity maymovefrompointtopoint(coverenterpos, postenterpos, 1, 0)) {
-                    return 0;
+                    return false;
                 }
             } else {
                 forwarddir = anglestoforward(angle);
@@ -666,22 +666,22 @@ function private planhumanarrivalatcover(behaviortreeentity, arrivalanim) {
                 right = vectorscale(rightdir, movedeltaarray[1]);
                 coverenterpos = nodeoffsetposition - forward + right;
                 if (!behaviortreeentity maymovefrompointtopoint(coverenterpos, nodeoffsetposition, 1, 1)) {
-                    return 0;
+                    return false;
                 }
             }
             if (!checkcoverarrivalconditions(coverenterpos, nodeoffsetposition)) {
-                return 0;
+                return false;
             }
             if (ispointonnavmesh(coverenterpos, behaviortreeentity)) {
                 /#
                     recordcircle(coverenterpos, 2, (1, 0, 0), "<unknown string>", behaviortreeentity);
                 #/
                 behaviortreeentity function_a57c34b7(coverenterpos, behaviortreeentity.pathgoalpos);
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion
@@ -693,7 +693,7 @@ function private checkcoverarrivalconditions(coverenterpos, coverpos) {
     distsqfromnodetoenterpos = distancesquared(coverpos, coverenterpos);
     awayfromenterpos = distsqtonode >= distsqfromnodetoenterpos + 150;
     if (!awayfromenterpos) {
-        return 0;
+        return false;
     }
     trace = groundtrace(coverenterpos + vectorscale((0, 0, 1), 72), coverenterpos + vectorscale((0, 0, -1), 72), 0, 0, 0);
     if (isdefined(trace[#"position"]) && abs(trace[#"position"][2] - coverpos[2]) > 30) {
@@ -707,9 +707,9 @@ function private checkcoverarrivalconditions(coverenterpos, coverpos) {
                 recordline(coverenterpos, trace[#"position"], (1, 0, 0), "<unknown string>");
             }
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_locomotion/archetype_human_locomotion

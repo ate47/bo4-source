@@ -35,7 +35,7 @@ function private function_e7d2a256(localclientnum) {
 // Size: 0x106
 function private function_20705e4c(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"set_invisible", #"set_visible", #"hash_6ab654a4c018818c");
         switch (waitresult._notify) {

@@ -134,7 +134,7 @@ function function_29543c() {
 // Size: 0x68
 function function_9af564c() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"hash_1413599b710f10bd");
         self thread zm_audio::create_and_play_dialog(#"brutus", #"helm_off", undefined);
     }
@@ -160,7 +160,7 @@ function private function_f34169e8() {
 // Size: 0x90
 function function_65a374eb() {
     level endon(#"hash_40e9ad323fe8402a");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -202,7 +202,7 @@ function function_480ec8c(player) {
 // Checksum 0x4af1df75, Offset: 0xc50
 // Size: 0x13e
 function function_4f89089b() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator) && isalive(s_result.activator)) {
@@ -330,7 +330,7 @@ function private function_5860fce9() {
 function private function_49189399() {
     var_e5bf9843 = getent("t_reached_cellbock_vo", "targetname");
     var_e5bf9843 endon(#"death");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = var_e5bf9843 waittill(#"trigger");
         e_player = s_info.activator;
@@ -356,7 +356,7 @@ function private function_49189399() {
 function function_22101968() {
     var_d756a0b4 = getent("t_infir_full_react", "targetname");
     var_d756a0b4 endon(#"death");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = var_d756a0b4 waittill(#"trigger");
         e_player = s_info.activator;
@@ -385,7 +385,7 @@ function private function_3deb7fb0() {
 // Size: 0x90
 function function_db185b3() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = self waittill(#"trigger");
         e_player = s_info.activator;
@@ -399,7 +399,7 @@ function function_db185b3() {
 // Size: 0x14e
 function private function_a78a3261() {
     for (var_12d0accd = 0; var_12d0accd < 3; var_12d0accd++) {
-        while (1) {
+        while (true) {
             level waittill(#"gondola_moving");
             var_be632f74 = 1;
             foreach (player in getplayers()) {

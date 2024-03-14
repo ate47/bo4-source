@@ -104,31 +104,31 @@ function function_c9ff0dce() {
             switch (level.var_ad7c0539) {
             case 2:
                 self thread function_58c62280(0, 1);
-                return;
+                break;
             case 3:
                 self thread function_58c62280(1, 1);
-                return;
+                break;
             case 4:
                 self thread function_58c62280(1, 0);
-                return;
+                break;
             case 5:
                 self thread function_58c62280(0, 1);
-                return;
+                break;
             case 6:
                 self thread function_58c62280(0, 0);
-                return;
+                break;
             case 7:
                 self thread function_58c62280(1, 1);
-                return;
+                break;
             case 8:
                 self thread function_58c62280(1, 0);
-                return;
+                break;
             case 10:
                 self thread function_58c62280(1, 0);
-                return;
+                break;
             default:
                 self thread function_58c62280(0, 1);
-                return;
+                break;
             }
         }
     }
@@ -258,7 +258,7 @@ function function_9b9525e9() {
     level thread ct_utils::function_9ab507a9("war_machine_wall_bounce_forward_collision", "start_war_machine_wall_bounce_forward_collision", "stop_war_machine_wall_bounce_forward_collision", undefined, 1, 0);
     level thread ct_utils::function_9ab507a9("war_machine_arc_window_collision", "start_war_machine_arc_window_collision", "stop_war_machine_arc_window_collision", undefined, 1, 0);
     level thread ct_utils::function_9ab507a9("war_machine_mantis_collision", "start_war_machine_mantis_collision", "stop_war_machine_mantis_collision", undefined, 1, 0);
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         if (isdefined(e_player)) {
             break;
@@ -906,7 +906,7 @@ function function_f69a6b41() {
 function function_30128519() {
     self notify(#"retry");
     self endon(#"death", #"retry");
-    while (1) {
+    while (true) {
         while (!isdefined(level.var_ff7ed5c8)) {
             waitframe(1);
         }
@@ -1166,7 +1166,7 @@ function function_119c4576(s_loc) {
     wait(0.2);
     self clientfield::set("enemy_vehicle_keyline_render", 1);
     wait(3);
-    while (1) {
+    while (true) {
         if (isalive(level.players[0])) {
             self setgoal(level.players[0]);
         }
@@ -1181,7 +1181,7 @@ function function_119c4576(s_loc) {
 function function_d0bcce1(n_index) {
     self endon(#"death");
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         b_all_dead = 1;
         var_13dd1b4f = getaiteamarray(#"axis");
         foreach (var_c361acde in var_13dd1b4f) {
@@ -1370,7 +1370,7 @@ function function_a40b5f9c() {
     self thread function_807b6bac();
     var_5168e40f = 0;
     wait(3);
-    while (1) {
+    while (true) {
         if (isalive(level.players[0]) && !level.players[0] util::is_player_looking_at(self getcentroid(), 0.7) && !var_5168e40f) {
             level.waypoint = ct_utils::create_waypoint(#"hash_4c8740a012a13b31", self.origin + vectorscale((0, 0, 1), 32), self.angles + vectorscale((0, 1, 0), 90), #"any", undefined, 20, undefined);
             var_5168e40f = 1;
@@ -1467,7 +1467,7 @@ function function_8670e3b1(s_loc) {
     s_goal = struct::get(s_loc.target);
     self setlowready(1);
     self thread function_d91a23c7();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hash_791dd53f2a2f4a6");
         e_player = waitresult.player;
@@ -1521,7 +1521,7 @@ function function_8486a84b() {
     }
     var_9bc826aa = getweapon(#"hero_pineapplegun");
     var_333fa936 = self getweaponammoclipsize(var_9bc826aa);
-    while (1) {
+    while (true) {
         w_current = self getcurrentweapon();
         if (w_current == var_9bc826aa) {
             n_ammo = self getweaponammoclip(w_current);
@@ -1540,7 +1540,7 @@ function function_8486a84b() {
 function grenade_throw_watcher(s_loc) {
     self endon(#"death");
     level endon(#"grenade_rock");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
@@ -1603,7 +1603,7 @@ function function_abd58b32() {
     level endon(#"hash_342ec88b8ca82286");
     self endon(#"death");
     level thread ct_vo::function_14b08e49(array(#"hash_6dd8907f24c397a9"), "stop_grenade_nag");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level.players[0] waittill(#"grenade_fire");
         level notify(#"stop_grenade_nag");
@@ -1621,7 +1621,7 @@ function function_abd58b32() {
 function function_5e9629d8(waypoint) {
     self endon(#"death");
     vol_room = getent("vol_grenade_room", "targetname");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
@@ -1726,7 +1726,7 @@ function function_31bf458c(waypoint) {
 function function_45f567b0(s_loc, waypoint) {
     self endon(#"death");
     level endon(#"boat_enemies_dead");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level.players[0] waittill(#"grenade_fire");
         grenade = waitresult.projectile;
@@ -1745,7 +1745,7 @@ function function_45f567b0(s_loc, waypoint) {
                 }
                 grenade waittill(#"explode");
                 level thread function_ac588971();
-                return;
+                break;
             }
             continue;
         }
@@ -1791,7 +1791,7 @@ function function_232a26ae() {
 function function_88761fc8() {
     self endon(#"death");
     level endon(#"swim_done");
-    while (1) {
+    while (true) {
         if (self isplayerswimming() && level.ct_shared_warning ct_shared_warning::is_open(self)) {
             self ct_utils::function_f272fff4();
             wait(0.1);
@@ -1843,11 +1843,11 @@ function function_f47cc92a() {
 // Size: 0x78
 function window_barriers() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         t_trig = trigger::wait_till("trigger_window_barriers");
         if (t_trig.who === self) {
             level notify(#"start_war_machine_arc_window_collision");
-            return;
+            break;
         }
     }
 }
@@ -1860,14 +1860,14 @@ function function_76f5d2dc(str_s_target) {
     level endon(#"enemy_arrived");
     self endon(#"death");
     s_loc = struct::get(str_s_target, "targetname");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level.players[0] waittill(#"hash_25cbcadbbeb229d8");
         n_dist = distance(s_loc.origin, waitresult.v_pos);
         if (n_dist <= 20) {
             level flag::set("wall_target_hit");
             self thread function_abc3a00d();
-            return;
+            break;
         }
     }
 }
@@ -1934,7 +1934,7 @@ function function_e7a8d041() {
     self endon(#"death", #"explode");
     level endon(#"window_hit");
     var_e5784d10 = getent("vol_window_target", "targetname");
-    while (1) {
+    while (true) {
         if (self istouching(var_e5784d10)) {
             level flag::set("window_hit");
         }

@@ -82,7 +82,7 @@ function private function_65e6d40c(a_str_zones, n_max_zombies = 0) {
             }
         }
     }
-    while (1) {
+    while (true) {
         a_ai_enemies = getaiteamarray(level.zombie_team);
         var_d1d851f3 = 0;
         foreach (ai in a_ai_enemies) {

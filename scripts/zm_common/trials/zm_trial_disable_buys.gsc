@@ -198,9 +198,9 @@ function private function_fa70c8c4() {
 // Size: 0x58
 function private _open_arcs(blocker) {
     if (isdefined(blocker.script_noteworthy) && (blocker.script_noteworthy == "electric_door" || blocker.script_noteworthy == "local_electric_door")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_trial_disable_buys/zm_trial_disable_buys
@@ -228,9 +228,9 @@ function private function_fcf197fa(targetname, show) {
                                 } else {
                                     var_1d6a70e8 ghost();
                                 }
-                                continue;
+                                break;
                             default:
-                                continue;
+                                break;
                             }
                         }
                     }

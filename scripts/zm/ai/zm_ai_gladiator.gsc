@@ -413,31 +413,31 @@ function private function_4f73587a(entity) {
     enemy = entity.favoriteenemy;
     /#
         if (isdefined(entity.var_ff56e34c)) {
-            return 0;
+            return false;
         }
     #/
     if (entity ai::has_behavior_attribute("run")) {
         if (entity ai::get_behavior_attribute("run")) {
             entity setblackboardattribute("_locomotion_speed", "locomotion_speed_run");
-            return 1;
+            return true;
         }
     }
     if (!(isdefined(entity.hasseenfavoriteenemy) && entity.hasseenfavoriteenemy)) {
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
-        return 0;
+        return false;
     }
     if (isdefined(enemy) && isalive(enemy)) {
         dist_sq = distancesquared(entity.origin, enemy.origin);
         if (dist_sq > 360000) {
             entity setblackboardattribute("_locomotion_speed", "locomotion_speed_run");
-            return 1;
+            return true;
         }
         if (dist_sq < 160000) {
             entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -446,9 +446,9 @@ function private function_4f73587a(entity) {
 // Size: 0x30
 function private function_4660925e(entity) {
     if (entity.var_9fde8624 == #"gladiator_destroyer") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -485,50 +485,50 @@ function private function_d1242576() {
 // Size: 0x21e
 function private function_edd0777f(entity) {
     if (!entity ai::get_behavior_attribute("axe_throw")) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (entity.var_9fde8624 != #"gladiator_destroyer") {
-        return 0;
+        return false;
     }
     if (!entity.has_left_arm || !entity.has_right_arm) {
-        return 0;
+        return false;
     }
     if (entity.var_ba481973) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.zombie_poi)) {
-        return 0;
+        return false;
     }
     if (gettime() < entity.var_844453ff) {
-        return 0;
+        return false;
     }
     dist_sq = distancesquared(entity.origin, entity.favoriteenemy.origin);
     if (dist_sq < 57600) {
-        return 0;
+        return false;
     }
     if (dist_sq > 360000) {
-        return 0;
+        return false;
     }
     yaw = abs(zombie_utility::getyawtoenemy());
     if (yaw > 22.5) {
-        return 0;
+        return false;
     }
     if (zm_ai_utility::function_54054394(entity)) {
-        return 0;
+        return false;
     }
     can_see = bullettracepassed(entity.origin + vectorscale((0, 0, 1), 36), entity.favoriteenemy.origin + vectorscale((0, 0, 1), 36), 0, undefined);
     if (!can_see) {
-        return 0;
+        return false;
     }
     /#
         if (entity.favoriteenemy isnotarget()) {
-            return 0;
+            return false;
         }
     #/
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -537,9 +537,9 @@ function private function_edd0777f(entity) {
 // Size: 0x28
 function private function_154454e8(entity) {
     if (self.var_34cc44de === "left") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -548,9 +548,9 @@ function private function_154454e8(entity) {
 // Size: 0x28
 function private function_2b6f49c8(entity) {
     if (self.var_34cc44de === "right") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -560,10 +560,10 @@ function private function_2b6f49c8(entity) {
 function private function_a3329afd(entity) {
     if (self.var_34cc44de === "left") {
         if (isdefined(self.var_d5e9528) && self.var_d5e9528) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -573,10 +573,10 @@ function private function_a3329afd(entity) {
 function private function_d2ab62ae(entity) {
     if (self.var_34cc44de === "right") {
         if (isdefined(self.var_d5e9528) && self.var_d5e9528) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -585,7 +585,7 @@ function private function_d2ab62ae(entity) {
 // Size: 0xd6
 function function_c6c44df1(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        return 1;
+        return true;
     }
     z_diff = abs(entity.origin[2] - entity.favoriteenemy.origin[2]);
     z_max = 48;
@@ -593,9 +593,9 @@ function function_c6c44df1(entity) {
         z_max = 8;
     }
     if (z_diff > z_max) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -604,33 +604,33 @@ function function_c6c44df1(entity) {
 // Size: 0x346
 function function_13f886a2(entity) {
     if (!(isdefined(entity.completed_emerging_into_playable_area) && entity.completed_emerging_into_playable_area)) {
-        return 0;
+        return false;
     }
     if (entity.ignoreall) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (!self.has_left_arm || !self.has_right_arm) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.zombie_poi)) {
-        return 0;
+        return false;
     }
     var_17c3916f = 128 * 128;
     if (self.var_9fde8624 == #"gladiator_marauder") {
         if (gettime() < entity.next_leap_time) {
-            return 0;
+            return false;
         }
         enemy_dist_sq = distancesquared(entity.origin, entity.favoriteenemy.origin);
         if (enemy_dist_sq < 128 * 128) {
-            return 0;
+            return false;
         }
         var_17c3916f = 240 * 240;
         z_diff = abs(entity.origin[2] - entity.favoriteenemy.origin[2]);
         if (z_diff > 72) {
-            return 0;
+            return false;
         }
     } else if (self.var_9fde8624 == #"gladiator_destroyer") {
         z_diff = abs(entity.origin[2] - entity.favoriteenemy.origin[2]);
@@ -639,22 +639,22 @@ function function_13f886a2(entity) {
             z_max = 8;
         }
         if (z_diff > z_max) {
-            return 0;
+            return false;
         }
     }
     if (!(isdefined(level.intermission) && level.intermission)) {
         if (distancesquared(entity.origin, entity.favoriteenemy.origin) > var_17c3916f) {
-            return 0;
+            return false;
         }
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.favoriteenemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
     if (zm_ai_utility::function_54054394(entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -663,19 +663,19 @@ function function_13f886a2(entity) {
 // Size: 0x1f6
 function function_61e7d5f5(entity) {
     if (!(isdefined(entity.completed_emerging_into_playable_area) && entity.completed_emerging_into_playable_area)) {
-        return 0;
+        return false;
     }
     if (entity.ignoreall) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (self.var_9fde8624 != #"gladiator_destroyer") {
-        return 0;
+        return false;
     }
     if (self.has_left_arm && self.has_right_arm) {
-        return 0;
+        return false;
     }
     var_ff38566a = lengthsquared(entity.favoriteenemy getvelocity());
     var_17c3916f = 100 * 100;
@@ -684,17 +684,17 @@ function function_61e7d5f5(entity) {
     }
     if (!(isdefined(level.intermission) && level.intermission)) {
         if (distancesquared(entity.origin, entity.favoriteenemy.origin) > var_17c3916f) {
-            return 0;
+            return false;
         }
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.favoriteenemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
     if (zm_ai_utility::function_54054394(entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -719,9 +719,9 @@ function private function_490a290d(entity) {
 // Size: 0x34
 function private function_8d49edfa(entity) {
     if (isdefined(entity.knockdown) && entity.knockdown) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -730,9 +730,9 @@ function private function_8d49edfa(entity) {
 // Size: 0x34
 function private function_6bbfa1a0(entity) {
     if (isdefined(entity.var_9b959f19) && entity.var_9b959f19) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -742,9 +742,9 @@ function private function_6bbfa1a0(entity) {
 function private function_dd674e3c(entity) {
     locomotionspeed = entity getblackboardattribute("_locomotion_speed");
     if (locomotionspeed === "locomotion_speed_run") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -753,9 +753,9 @@ function private function_dd674e3c(entity) {
 // Size: 0x58
 function private function_7468904d(entity) {
     if (entity getblackboardattribute("_locomotion_speed") === "locomotion_speed_run" && entity haspath()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -764,9 +764,9 @@ function private function_7468904d(entity) {
 // Size: 0x34
 function private gladiatorshouldreact(entity) {
     if (isdefined(entity.var_908a5d30) && entity.var_908a5d30) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -1357,7 +1357,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
     var_6b72740e = undefined;
     var_1fed6c4e = undefined;
     var_285f5e05 = vectortoangles(var_7900b267);
-    while (1) {
+    while (true) {
         enemy = self.favoriteenemy;
         if (isdefined(enemy) && isplayer(enemy) && enemy issliding() && !(isdefined(var_6b72740e) && var_6b72740e)) {
             if (distance2dsquared(enemy.origin, axe.origin) <= 45 * 45) {
@@ -1415,7 +1415,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
 // Size: 0x76
 function function_78b33d6c(spin_dir = 1) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         spin_rate = 0.2;
         self rotateyaw(360 * spin_dir, spin_rate);
         wait(spin_rate);
@@ -1436,17 +1436,17 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
                 if (isdefined(hit_ent.hasriotshield) && hit_ent.hasriotshield) {
                     if (isdefined(hit_ent.hasriotshieldequipped) && hit_ent.hasriotshieldequipped) {
                         if (hit_ent hasperk(#"specialty_shield") || hit_ent zm_utility::is_facing(axe, 0.2)) {
-                            return 1;
+                            return true;
                         }
                     } else if (!isdefined(hit_ent.riotshieldentity)) {
                         if (!hit_ent zm_utility::is_facing(axe, -0.2)) {
-                            return 1;
+                            return true;
                         }
                     }
                 }
                 hit_ent dodamage(50, axe.origin, self, self);
                 hit_ent playsoundtoplayer(#"evt_player_swiped", hit_ent);
-                return 1;
+                return true;
             } else if (isai(hit_ent)) {
                 if (hit_ent.archetype === #"zombie") {
                     if (isalive(hit_ent) && !(isdefined(hit_ent.magic_bullet_shield) && hit_ent.magic_bullet_shield) && !zm_utility::is_magic_bullet_shield_enabled(hit_ent)) {
@@ -1458,10 +1458,10 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
                 }
             }
         } else {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -1471,7 +1471,7 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
 function private function_c3712093(axe, var_a4388d06, var_bb95ea0c) {
     self endon(#"death");
     axe endon(#"death");
-    while (1) {
+    while (true) {
         tag_pos = self gettagorigin(var_a4388d06);
         dist = distance(axe.origin, tag_pos);
         time = dist / var_bb95ea0c;
@@ -1500,7 +1500,7 @@ function private function_137ed431(axe, var_a4388d06, spin_dir) {
     new_yaw = absangleclamp360(axe.angles[1] + 180);
     axe.angles = (0, new_yaw, 0);
     self thread function_c3712093(axe, var_a4388d06, var_bb95ea0c);
-    while (1) {
+    while (true) {
         tag_pos = self gettagorigin(var_a4388d06);
         var_7900b267 = vectornormalize(tag_pos - axe.origin);
         move_pos = axe.origin + var_7900b267 * interval_dist;
@@ -1750,9 +1750,9 @@ function function_831dd6bd() {
             }
         }
         self.nextgoalupdate = gettime() + randomintrange(500, 1000);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gladiator/zm_ai_gladiator
@@ -1765,7 +1765,7 @@ function private function_24a38427() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             string = getdvarstring(#"hash_1a45d40a78c47d72", "j_clavicle_ri");
             cmd = strtok(string, "<unknown string>");

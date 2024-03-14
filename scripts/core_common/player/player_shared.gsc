@@ -417,7 +417,7 @@ function is_valid_weapon(weaponobject) {
 // Size: 0x9c
 function is_spawn_protected() {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.spawntime)) {
         self.spawntime = 0;
@@ -472,17 +472,17 @@ function allow_stance_change(b_allow = 1) {
         self allowprone(1);
         self allowcrouch(0);
         self allowstand(0);
-        return;
+        break;
     case #"crouch":
         self allowprone(0);
         self allowcrouch(1);
         self allowstand(0);
-        return;
+        break;
     case #"stand":
         self allowprone(0);
         self allowcrouch(0);
         self allowstand(1);
-        return;
+        break;
     }
 }
 

@@ -141,7 +141,7 @@ function function_b7608e70(localclientnum, oldval, newval, bnewent, binitialsnap
 function private function_85e7adcf(localclientnum) {
     self endon(#"death", #"hash_eefcf8215207987");
     var_61467197 = level.var_22a393d4.size;
-    while (1) {
+    while (true) {
         if (var_61467197 !== level.var_22a393d4.size) {
             level.var_22a393d4 = array::remove_undefined(level.var_22a393d4, 0);
             foreach (e_vision in level.var_22a393d4) {
@@ -260,7 +260,7 @@ function function_e943883(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Size: 0x170
 function function_a950c92c(localclientnum) {
     self endon(#"death", #"hash_3ed4154ad2e33ec3");
-    while (1) {
+    while (true) {
         level.var_443d1164 = undefined;
         s_result = undefined;
         s_result = level waittill(#"hash_73ff8d0d706c332d", #"hash_527d9fdde8903b80");
@@ -458,7 +458,7 @@ function private function_5ab769d8(localclientnum) {
     self endon(#"death", #"hash_360be32d770a6eb2", #"hash_4ea2d9a0f785e09b");
     self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_hit_rumble");
     wait(0.5);
-    while (1) {
+    while (true) {
         if (isplayer(self) && self function_21c0fa55()) {
             self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_rumble");
         }
@@ -641,7 +641,7 @@ function function_36c349d0(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x162
 function function_7203304d(localclientnum) {
     self endon(#"death", #"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_change", #"hash_479f7dbb037c00bc");
         if (!function_98890cd8(self.weapon)) {
             if (isdefined(self.var_2a2f2afa[localclientnum])) {
@@ -719,13 +719,13 @@ function function_6b58c030(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_98890cd8(w_current, var_94c10bbd = 0) {
     if (!var_94c10bbd) {
         if (w_current == getweapon(#"zhield_spectral_dw") || w_current == getweapon(#"zhield_spectral_dw_upgraded")) {
-            return 1;
+            return true;
         }
     }
     if (w_current == getweapon(#"zhield_spectral_turret") || w_current == getweapon(#"zhield_spectral_turret_upgraded")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield

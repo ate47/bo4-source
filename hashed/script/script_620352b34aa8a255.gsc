@@ -76,7 +76,7 @@ function private function_ad32d69(var_b2c60867, timeout, var_ca735ce8, var_a4a28
     level.var_f995ece6 zm_trial_timer::open(self);
     level.var_f995ece6 zm_trial_timer::set_timer_text(self, var_b2c60867);
     self zm_trial_util::start_timer(timeout - var_ca735ce8);
-    while (1) {
+    while (true) {
         self waittill(#"teleporting");
         self.b_teleporting = 1;
         if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
@@ -104,7 +104,7 @@ function private damage_monitor(var_a4a28ac7) {
     if (isdefined(var_a4a28ac7) && var_a4a28ac7) {
         wait(12);
     }
-    while (1) {
+    while (true) {
         if (self.var_60fa6139 < level.time && self.b_teleporting === 0 && self.sessionstate != "spectator" && !self laststand::player_is_in_laststand() && !(isdefined(self.var_eb319d10) && self.var_eb319d10)) {
             if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
                 level.var_f995ece6 zm_trial_timer::close(self);

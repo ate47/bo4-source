@@ -76,7 +76,7 @@ function __init__() {
 function private function_89ec3604() {
     self endon(#"disconnect");
     self.var_bcc8f4f0 = 0;
-    while (1) {
+    while (true) {
         w_current = self getcurrentweapon();
         if (is_crossbow(w_current) && self function_8426ad52(w_current) && self attackbuttonpressed() && !self ismeleeing()) {
             if (self.var_bcc8f4f0) {
@@ -128,15 +128,15 @@ function function_51f76fdb(inflictor, attacker, damage, flags, smeansofdeath, we
 // Size: 0xba
 function function_8426ad52(weapon) {
     if (!is_crossbow(weapon)) {
-        return 0;
+        return false;
     }
     w_crossbow_base = get_base_crossbow(weapon);
     n_ammo_stock = self getweaponammostock(w_crossbow_base);
     n_ammo_clip = self getweaponammoclip(w_crossbow_base);
     if (n_ammo_stock >= 4 && n_ammo_clip > 0 || n_ammo_clip > 5) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -161,7 +161,7 @@ function function_7157628d() {
     self endon("6e0a9e3b0455824");
     self endoncallback(&function_a4d47b95, #"death", #"disconnect", #"hash_72be12bd6b55fdab");
     self.b_crossbow_charged = 0;
-    while (1) {
+    while (true) {
         w_current = self getcurrentweapon();
         if (is_crossbow(w_current) && self ismeleeing()) {
             self clientfield::set("" + #"hash_b38c687db71dae", 0);
@@ -199,7 +199,7 @@ function function_a4d47b95(str_notify) {
 // Size: 0x92
 function private function_39ffd9fc() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         w_current = s_waitresult.weapon;
@@ -262,7 +262,7 @@ function function_615d8c38(params) {
                 self thread function_c805f2f9(params);
             }
         }
-        return;
+        break;
     default:
         if (isalive(self) && !(isdefined(self.var_410503e) && self.var_410503e)) {
             self thread function_c805f2f9(params);
@@ -444,12 +444,12 @@ function function_c805f2f9(params) {
 function function_8a514a61(v_origin, weapon) {
     if (is_crossbow_upgraded(weapon)) {
         if (distancesquared(self.origin, v_origin) <= 44100) {
-            return 1;
+            return true;
         }
     } else if (distancesquared(self.origin, v_origin) <= 25600) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -483,9 +483,9 @@ function get_base_crossbow(weapon) {
 // Size: 0x66
 function is_crossbow(weapon) {
     if (weapon === level.w_crossbow || weapon === level.w_crossbow_upgraded || weapon === level.w_crossbow_charged || weapon === level.w_crossbow_charged_upgraded) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -498,15 +498,15 @@ function is_crossbow_charged(weapon, player) {
         n_ammo_stock = player getweaponammostock(w_crossbow_base);
         n_ammo_clip = player getweaponammoclip(w_crossbow_base);
         if ((n_ammo_clip >= 5 || n_ammo_stock >= 4) && (weapon === level.w_crossbow_charged || weapon === level.w_crossbow_charged_upgraded)) {
-            return 1;
+            return true;
         }
         if (isdefined(player.chargeshotlevel) && player.chargeshotlevel > 1) {
-            return 1;
+            return true;
         }
     } else if (weapon === level.w_crossbow_charged || weapon === level.w_crossbow_charged_upgraded) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -515,9 +515,9 @@ function is_crossbow_charged(weapon, player) {
 // Size: 0x3e
 function is_crossbow_upgraded(weapon) {
     if (weapon === level.w_crossbow_upgraded || weapon === level.w_crossbow_charged_upgraded) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow
@@ -826,9 +826,9 @@ function function_62d37304(weapon) {
 function function_b0477b86(player, mod, shitloc) {
     w_player = player getcurrentweapon();
     if (is_crossbow(w_player)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_crossbow/zm_weap_crossbow

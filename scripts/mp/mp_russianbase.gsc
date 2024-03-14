@@ -62,7 +62,7 @@ function function_8dc01472() {
     level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_f55fb854, "play");
     level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_53b49689, "done");
     level scene::init(#"hash_520d4c0a17bb9b12");
-    while (1) {
+    while (true) {
         if (math::cointoss()) {
             level scene::play(#"hash_520d4c0a17bb9b12");
         }
@@ -233,7 +233,7 @@ function function_51905d68(s_info) {
 function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {

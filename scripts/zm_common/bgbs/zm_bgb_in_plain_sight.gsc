@@ -40,9 +40,9 @@ function __init__() {
 // Size: 0x42
 function validation() {
     if (self bgb::get_active() || isdefined(self.var_800f306a) && self.var_800f306a) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_in_plain_sight/zm_bgb_in_plain_sight

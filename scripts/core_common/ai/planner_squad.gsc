@@ -247,14 +247,14 @@ function private _executeplan(squad) {
 function private function_9de03b3f(squad) {
     botentries = plannersquadutility::getblackboardattribute(squad, "doppelbots");
     if (!isdefined(botentries)) {
-        return 0;
+        return false;
     }
     foreach (botinfo in botentries) {
         if (isdefined(botinfo[#"__unsafe__"][#"bot"])) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquad/planner_squad

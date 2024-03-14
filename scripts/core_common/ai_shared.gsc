@@ -481,7 +481,7 @@ function patrol(start_path_node) {
     self thread end_patrol_on_enemy_targetting();
     self.currentgoal = start_path_node;
     self.patroller = 1;
-    while (1) {
+    while (true) {
         if (isdefined(self.currentgoal.type) && self.currentgoal.type == "Path") {
             if (self has_behavior_attribute("patrol")) {
                 self set_behavior_attribute("patrol", 1);
@@ -558,7 +558,7 @@ function patrol_next_node() {
 // Size: 0x68
 function end_patrol_on_enemy_targetting() {
     self endon(#"death", #"alerted");
-    while (1) {
+    while (true) {
         if (isdefined(self.should_stop_patrolling) && self.should_stop_patrolling) {
             self end_and_clean_patrol_behaviors();
         }
@@ -627,9 +627,9 @@ function bloody_death(n_delay, hit_loc) {
 // Size: 0x52
 function shouldregisterclientfieldforarchetype(archetype) {
     if (isdefined(level.clientfieldaicheck) && level.clientfieldaicheck && !isarchetypeloaded(archetype)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai/ai_shared
@@ -806,7 +806,7 @@ function function_41b04632() {
 // Size: 0x110
 function function_63734291(enemy) {
     if (!isdefined(enemy)) {
-        return 0;
+        return false;
     }
     var_aba9ee4c = 1;
     if (isdefined(self.var_ffa507cd)) {
@@ -819,10 +819,10 @@ function function_63734291(enemy) {
         dist_squared = distancesquared(self.origin, enemy.origin);
         if (dist_squared >= 562500) {
             enemy notify(#"hash_4853a85e5ddc4a47");
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ai/ai_shared

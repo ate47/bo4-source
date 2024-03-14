@@ -235,14 +235,14 @@ function private coverpeekterminate(entity) {
 function private function_dc503571(entity) {
     if (isdefined(entity.node)) {
         if (entity.node.type == #"cover left" || entity.node.type == #"cover right") {
-            return 1;
+            return true;
         } else if (entity.node.type == #"cover pillar") {
             if (!(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024) || !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_cover_utility
@@ -368,14 +368,14 @@ function private function_f82f8634(entity) {
 function private supportsleancovercondition(entity) {
     if (isdefined(entity.node)) {
         if (entity.node.type == #"cover left" || entity.node.type == #"cover right") {
-            return 1;
+            return true;
         } else if (entity.node.type == #"cover pillar") {
             if (!(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 1024) == 1024) || !(isdefined(entity.node.spawnflags) && (entity.node.spawnflags & 2048) == 2048)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_cover_utility
@@ -514,22 +514,22 @@ function private supportsovercovercondition(entity) {
     stance = entity getblackboardattribute("_stance");
     if (isdefined(entity.node)) {
         if (entity.node.type == #"conceal crouch" || entity.node.type == #"conceal stand") {
-            return 1;
+            return true;
         }
         if (!isinarray(getvalidcoverpeekouts(entity.node), "over")) {
-            return 0;
+            return false;
         }
         if (entity.node.type == #"cover left" || entity.node.type == #"cover right" || entity.node.type == #"cover crouch" || entity.node.type == #"cover crouch window" || entity.node.type == #"conceal crouch") {
             if (stance == "crouch") {
-                return 1;
+                return true;
             }
         } else if (entity.node.type == #"cover stand" || entity.node.type == #"conceal stand") {
             if (stance == "stand") {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_cover_utility
@@ -538,21 +538,21 @@ function private supportsovercovercondition(entity) {
 // Size: 0x1f6
 function private shouldoveratcovercondition(entity) {
     if (!isdefined(entity.node) || !isdefined(entity.node.type) || !isdefined(entity.enemy) || !isdefined(entity.enemy.origin)) {
-        return 0;
+        return false;
     }
     aimtable = iscoverconcealed(entity.node) ? "cover_concealed_over" : "cover_over";
     aimlimitsforcover = entity getaimlimitsfromentry(aimtable);
     yawtoenemyposition = getaimyawtoenemyfromnode(entity, entity.node, entity.enemy);
     legalaimyaw = yawtoenemyposition >= aimlimitsforcover[#"aim_right"] - 10 && yawtoenemyposition <= aimlimitsforcover[#"aim_left"] + 10;
     if (!legalaimyaw) {
-        return 0;
+        return false;
     }
     pitchtoenemyposition = getaimpitchtoenemyfromnode(entity, entity.node, entity.enemy);
     legalaimpitch = pitchtoenemyposition >= aimlimitsforcover[#"aim_up"] + 10 && pitchtoenemyposition <= aimlimitsforcover[#"aim_down"] + 10;
     if (!legalaimpitch) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_cover_utility
@@ -662,7 +662,7 @@ function isatcrouchnode(entity) {
             return (!isstanceallowedatnode("stand", entity.node) && isstanceallowedatnode("crouch", entity.node));
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_cover_utility
@@ -705,12 +705,12 @@ function isexposedatcovercondition(entity) {
 // Size: 0x6c
 function shouldcoveridleonly(entity) {
     if (entity ai::get_behavior_attribute("coverIdleOnly")) {
-        return 1;
+        return true;
     }
     if (isdefined(entity.node.script_onlyidle) && entity.node.script_onlyidle) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_cover_utility

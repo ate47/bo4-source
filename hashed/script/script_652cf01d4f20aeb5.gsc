@@ -170,7 +170,7 @@ function function_d332685() {
 // Size: 0x1b0
 function function_f83bfaa() {
     level endon(#"end_game", #"hash_7220fbbcfb27dbd4");
-    while (1) {
+    while (true) {
         s_results = undefined;
         s_results = self waittill(#"trigger_activated");
         e_who = s_results.e_who;
@@ -352,7 +352,7 @@ function function_36db86a9(e_player) {
 function function_3590cb58() {
     level endon(#"end_game");
     self.var_1a304a2f = struct::get(self.target, "targetname");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         e_who = s_result.e_who;
@@ -431,7 +431,7 @@ function function_bb5cf7f2(e_player) {
 // Size: 0x10a
 function function_6b4a631b() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         var_cb24ec97 = zm_hms_util::function_9258efe1("human_infusion");
         if (zm_utility::is_classic() && level.var_45827161[level.round_number] !== undefined || zm_utility::is_trials() && (level.round_number == 5 || level.round_number == 19)) {
@@ -557,7 +557,7 @@ function sams_box_step6_cleanup(var_5ea5c94d, ended_early) {
 function function_c0510b69(e_player) {
     str_hint = zm_utility::function_d6046228(#"hash_7976ce10c7043db7", #"hash_226401bfc284fb25");
     self sethintstring(str_hint);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_5449c7ba/namespace_5449c7ba

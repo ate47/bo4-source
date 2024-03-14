@@ -897,7 +897,7 @@ function function_7590a833() {
     } else {
         t_trigger sethintstring(#"hash_50fc385a94b3d3f");
     }
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = t_trigger waittill(#"trigger");
         e_player = s_notify.activator;
@@ -1133,21 +1133,21 @@ function function_883e88be(str_enemy) {
             level.var_34bb868f = #"destroyer";
             level.var_c90f6df9 = #"destroyer";
             iprintlnbold("<unknown string>");
-            return;
+            break;
         case #"marauders":
             level.var_58e06b5b = #"marauder";
             level.var_b941799e = #"marauder";
             level.var_34bb868f = #"marauder";
             level.var_c90f6df9 = #"marauder";
             iprintlnbold("<unknown string>");
-            return;
+            break;
         case #"tigers":
             level.var_58e06b5b = #"tigers";
             level.var_b941799e = #"tigers";
             level.var_34bb868f = #"tigers";
             level.var_c90f6df9 = #"tigers";
             iprintlnbold("<unknown string>");
-            return;
+            break;
         }
     #/
 }

@@ -63,7 +63,7 @@ function private function_2e2a518(n_timer, var_f97d1a30) {
     if (!(isdefined(var_f97d1a30) && var_f97d1a30)) {
         wait(12);
     }
-    while (1) {
+    while (true) {
         while (!isalive(self)) {
             self waittill(#"spawned");
             wait(2);

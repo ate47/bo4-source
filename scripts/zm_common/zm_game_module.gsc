@@ -199,7 +199,7 @@ function make_supersprinter() {
 // Size: 0x120
 function create_fireworks(launch_spots, min_wait, max_wait, randomize) {
     level endon(#"stop_fireworks");
-    while (1) {
+    while (true) {
         if (isdefined(randomize) && randomize) {
             launch_spots = array::randomize(launch_spots);
         }

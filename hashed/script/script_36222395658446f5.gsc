@@ -170,7 +170,7 @@ function on_player_connect() {
     self flag::init(#"hash_85d6f56e62aa0c4");
     self flag::init(#"hash_7bcf95ea12236f0d");
     self flag::init(#"hash_548a6763233817f5");
-    while (1) {
+    while (true) {
         var_29b8f3d0 = undefined;
         var_29b8f3d0 = self waittill("new_" + "lethal_grenade");
         w_newweapon = var_29b8f3d0.weapon;
@@ -265,7 +265,7 @@ function function_545c69d8(e_player) {
 // Checksum 0x78b909ab, Offset: 0x17f0
 // Size: 0x330
 function function_3c616882() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -446,7 +446,7 @@ function function_d238a134() {
 // Size: 0x1dc
 function function_a93fd607(e_grenade, n_grenade_charge_power) {
     if (!isdefined(level.var_ca0f81c1) || !self flag::get(#"hash_334221cd7977f5d5")) {
-        return 0;
+        return false;
     }
     if (distancesquared(e_grenade.origin, level.var_ca0f81c1.origin) < 62500 && !self flag::get(#"hash_465b23ced2029d95")) {
         level flag::set(#"hash_6ee51d9a7d37aecc");
@@ -458,9 +458,9 @@ function function_a93fd607(e_grenade, n_grenade_charge_power) {
         level.var_ca0f81c1 delete();
         self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
         self thread function_986bf0d5(mdl_tomahawk, var_bba04f72);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_7c0074b5/namespace_42cc2819
@@ -481,7 +481,7 @@ function function_986bf0d5(mdl_tomahawk, mdl_rock) {
 function function_1d02544f(e_grenade, n_grenade_charge_power) {
     s_rock = struct::get("s_g_r_sp2");
     if (!isdefined(s_rock) || !self flag::get(#"hash_334221cd7977f5d5")) {
-        return 0;
+        return false;
     }
     if (distancesquared(e_grenade.origin, s_rock.origin) < 10000 && !self flag::get(#"hash_3aa12cac41d4ba98")) {
         self clientfield::set_to_player("" + #"hash_11ff39a3100ac894", 0);
@@ -492,9 +492,9 @@ function function_1d02544f(e_grenade, n_grenade_charge_power) {
         var_bba04f72 linkto(mdl_tomahawk);
         self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
         self thread function_f02db707(mdl_tomahawk, var_bba04f72);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_7c0074b5/namespace_42cc2819
@@ -515,7 +515,7 @@ function function_f02db707(mdl_tomahawk, mdl_rock) {
 function function_b74fca4c(e_grenade, n_grenade_charge_power) {
     s_rock = struct::get("s_r_s_sp2");
     if (!isdefined(s_rock) || !self flag::get(#"hash_334221cd7977f5d5")) {
-        return 0;
+        return false;
     }
     if (distancesquared(e_grenade.origin, s_rock.origin) < 10000 && !self flag::get(#"hash_12826eeb0abe1308")) {
         self clientfield::set_to_player("" + #"hash_37c33178198d54e4", 0);
@@ -525,9 +525,9 @@ function function_b74fca4c(e_grenade, n_grenade_charge_power) {
         var_bba04f72 linkto(mdl_tomahawk);
         self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
         self thread function_7694f3cb(mdl_tomahawk, var_bba04f72);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_7c0074b5/namespace_42cc2819
@@ -595,7 +595,7 @@ function function_b07f181b(e_player) {
 // Checksum 0xd07f1546, Offset: 0x3078
 // Size: 0x1a4
 function function_352a977a() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -651,7 +651,7 @@ function function_84ff44c(e_player) {
 // Checksum 0x82596478, Offset: 0x34a0
 // Size: 0x1a4
 function function_139dd88c() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -707,7 +707,7 @@ function function_93cd35c7(e_player) {
 // Checksum 0x6ea95033, Offset: 0x38c8
 // Size: 0x1a4
 function function_34759490(e_player) {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -884,7 +884,7 @@ function function_4c6348bd(e_player) {
 // Checksum 0x1390aa44, Offset: 0x42e8
 // Size: 0x5e4
 function function_858b2d2f() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -1054,7 +1054,7 @@ function function_d89318a3(var_e818669b, var_13de0d8f) {
                 iprintln("<unknown string>" + var_e818669b);
                 break;
             }
-            return;
+            break;
         case #"spin trap":
             switch (var_e818669b) {
             case 10:
@@ -1070,7 +1070,7 @@ function function_d89318a3(var_e818669b, var_13de0d8f) {
                 iprintln("<unknown string>" + var_e818669b);
                 break;
             }
-            return;
+            break;
         case #"fan trap":
             switch (var_e818669b) {
             case 10:
@@ -1086,7 +1086,7 @@ function function_d89318a3(var_e818669b, var_13de0d8f) {
                 iprintln("<unknown string>" + var_e818669b);
                 break;
             }
-            return;
+            break;
         }
     #/
 }

@@ -62,10 +62,10 @@ function private function_5f5a3405() {
 function function_56813755() {
     foreach (value in level.grapple_ids) {
         if (value === 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_grappler/zm_grappler

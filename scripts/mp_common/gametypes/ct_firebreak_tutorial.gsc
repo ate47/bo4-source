@@ -1196,7 +1196,7 @@ function function_ea12b1f9(s_loc) {
     }
     self thread ct_utils::function_5b59f3b7(s_dest.origin, s_dest.angles, 32, 1, 0, 1);
     self thread ct_utils::function_96dda082();
-    while (1) {
+    while (true) {
         self setgoal(self.origin, 1, 1);
         waitframe(1);
     }
@@ -1264,7 +1264,7 @@ function function_b4a84da3(s_loc) {
     }
     self thread ct_utils::function_5b59f3b7(s_dest.origin, s_dest.angles, 32, 1, 0, 1);
     self thread ct_utils::function_96dda082();
-    while (1) {
+    while (true) {
         self setgoal(self.origin, 1, 1);
         waitframe(1);
     }
@@ -1328,7 +1328,7 @@ function function_11c76a66(s_loc) {
     }
     self thread ct_utils::function_5b59f3b7(s_dest.origin, s_dest.angles, 32, 1, 0, 1);
     self thread ct_utils::function_96dda082();
-    while (1) {
+    while (true) {
         self setgoal(self.origin, 1, 1);
         waitframe(1);
     }
@@ -1696,7 +1696,7 @@ function function_6dcf47f6() {
     e_player = ct_utils::get_player();
     e_player endon(#"death");
     var_93024c01 = 190 * 190;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_e1a1f65c)) {
             n_dist_sq = distance2dsquared(self.origin, level.var_e1a1f65c.origin);
             if (n_dist_sq <= var_93024c01) {
@@ -1790,7 +1790,7 @@ function function_9f1d8637(var_f54b52b3) {
     var_3a6cd253 = [];
     var_3a6cd253[2] = "purifier_depleted";
     var_3a6cd253[0] = "reactor_core_depleted";
-    while (1) {
+    while (true) {
         if (!self util::gadget_is_in_use(var_f54b52b3)) {
             if (!(isdefined(self.var_dbe8fddf) && self.var_dbe8fddf)) {
                 self notify(var_3a6cd253[var_f54b52b3]);
@@ -1933,7 +1933,7 @@ function function_2969ccb4(var_43d50d89 = 1, var_463b195d = 1) {
     var_43b8f3ab = getweapon(#"hero_flamethrower");
     var_5b505b10 = self getweaponammoclipsize(var_43b8f3ab);
     n_slot = self gadgetgetslot(var_43b8f3ab);
-    while (1) {
+    while (true) {
         if (isdefined(level.var_e72728b8)) {
             if (!isinarray(level.var_e72728b8, #"hero_flamethrower")) {
                 if (isdefined(var_43d50d89) && var_43d50d89) {
@@ -1968,7 +1968,7 @@ function function_41dcd216() {
             adddebugcommand("<unknown string>");
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_5b3b4d1a60845a9b", "<unknown string>");
             if (cmd == "<unknown string>") {

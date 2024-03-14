@@ -157,21 +157,21 @@ class csceneplayer : csceneobject {
     function function_6c1c67c1() {
         if (csceneobject::is_shared_player()) {
             if (isdefined(self._str_camera)) {
-                return 1;
+                return true;
             }
         } else if (csceneobject::function_527113ae()) {
             if (isdefined(self._str_camera)) {
-                return 1;
+                return true;
             }
             if (isdefined(self._o_scene._a_objects)) {
                 foreach (obj in self._o_scene._a_objects) {
                     if (obj._s.type === "sharedplayer" && [[ obj ]]->function_6c1c67c1()) {
-                        return 1;
+                        return true;
                     }
                 }
             }
         }
-        return 0;
+        return false;
     }
 
     // Namespace csceneplayer/scene_player_shared
@@ -313,16 +313,16 @@ class csceneplayer : csceneobject {
             switch (self.var_55b4f21e.var_6eb7f9a0) {
             case #"bank1":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 0);
-                return;
+                break;
             case #"bank2":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 1);
-                return;
+                break;
             case #"bank3":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 2);
-                return;
+                break;
             case #"bank4":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 3);
-                return;
+                break;
             }
         }
     }
@@ -558,7 +558,7 @@ class csceneplayer : csceneobject {
     // Size: 0x5f6
     function function_d4446494(player) {
         player endon(#"hash_7ba9e3058f933eb", #"hash_feb654ece8faa3d", #"death");
-        while (1) {
+        while (true) {
             s_waitresult = undefined;
             s_waitresult = player waittill(#"hash_940a817baf9765e");
             if (!isdefined(s_waitresult.str_input)) {
@@ -741,10 +741,10 @@ class csceneplayer : csceneobject {
             n_height_diff = abs(player_other.origin[2] - player.origin[2]);
             if (distancesquared(player.origin, player_other.origin) < 16384) {
                 if (var_ec50a0d3.var_9532f6db == "move_up" && player.origin[2] < player_other.origin[2]) {
-                    return 0;
+                    return false;
                 }
                 if (var_ec50a0d3.var_9532f6db == "move_down" && player.origin[2] > player_other.origin[2]) {
-                    return 0;
+                    return false;
                 }
                 var_b52c361d = 0;
                 var_55d77e67 = 0;
@@ -755,14 +755,14 @@ class csceneplayer : csceneobject {
                     var_55d77e67 = 1;
                 }
                 if (var_ec50a0d3.var_9532f6db == "move_left" && var_b52c361d && n_height_diff < 32) {
-                    return 0;
+                    return false;
                 }
                 if (var_ec50a0d3.var_9532f6db == "move_right" && var_55d77e67 && n_height_diff < 32) {
-                    return 0;
+                    return false;
                 }
             }
         }
-        return 1;
+        return true;
     }
 
     // Namespace csceneplayer/scene_player_shared
@@ -787,7 +787,7 @@ class csceneplayer : csceneobject {
         player.var_c3a79d20 = 1;
         thread function_bd3a7030(player, var_ec50a0d3.var_9532f6db);
         self._str_current_anim = csceneobject::get_animation_name(self._str_shot);
-        while (1) {
+        while (true) {
             result = check_input(player, var_ec50a0d3, var_966ea21d);
             if (result === "combat") {
                 n_movement = undefined;
@@ -1016,16 +1016,16 @@ class csceneplayer : csceneobject {
             switch (self.var_55b4f21e.var_143deeac) {
             case #"bank1":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 0);
-                return;
+                break;
             case #"bank2":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 1);
-                return;
+                break;
             case #"bank3":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 2);
-                return;
+                break;
             case #"bank4":
                 player clientfield::set_to_player("player_pbg_bank_scene_system", 3);
-                return;
+                break;
             }
         }
     }

@@ -315,10 +315,10 @@ function iszombiewalking(entity) {
 // Size: 0x8e
 function zombieshoulddisplaypain(entity) {
     if (isdefined(entity.suicidaldeath) && entity.suicidaldeath) {
-        return 0;
+        return false;
     }
     if (!hasasm(entity) || entity function_ebbebf56() < 1) {
-        return 0;
+        return false;
     }
     return !(isdefined(entity.missinglegs) && entity.missinglegs);
 }
@@ -329,9 +329,9 @@ function zombieshoulddisplaypain(entity) {
 // Size: 0x58
 function zombieshouldjukecondition(entity) {
     if (isdefined(entity.juke) && (entity.juke == "left" || entity.juke == "right")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -340,9 +340,9 @@ function zombieshouldjukecondition(entity) {
 // Size: 0x24
 function zombieshouldstumblecondition(entity) {
     if (isdefined(entity.stumble)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -625,15 +625,15 @@ function zombieupdatezigzaggoal() {
 // Size: 0x1fe
 function zombiecrawlercollision(entity) {
     if (!(isdefined(entity.missinglegs) && entity.missinglegs) && !(isdefined(entity.knockdown) && entity.knockdown)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.dontpushtime)) {
         if (gettime() < entity.dontpushtime) {
-            return 1;
+            return true;
         }
     }
     if (!isdefined(level.zombie_team)) {
-        return 0;
+        return false;
     }
     zombies = getaiteamarray(level.zombie_team);
     foreach (zombie in zombies) {
@@ -647,11 +647,11 @@ function zombiecrawlercollision(entity) {
         if (dist_sq < 14400) {
             entity collidewithactors(0);
             entity.dontpushtime = gettime() + 2000;
-            return 1;
+            return true;
         }
     }
     entity collidewithactors(1);
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -661,9 +661,9 @@ function zombiecrawlercollision(entity) {
 function zombietraversalservice(entity) {
     if (isdefined(entity.traversestartnode)) {
         entity collidewithactors(0);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -672,31 +672,31 @@ function zombietraversalservice(entity) {
 // Size: 0x1ca
 function zombieisatattackobject(entity) {
     if (isdefined(entity.missinglegs) && entity.missinglegs) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.favoriteenemy) && isdefined(entity.favoriteenemy.b_is_designated_target) && entity.favoriteenemy.b_is_designated_target) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.aat_turned) && entity.aat_turned) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.attackable) && isdefined(entity.attackable.is_active) && entity.attackable.is_active) {
         if (!isdefined(entity.attackable_slot)) {
-            return 0;
+            return false;
         }
         dist = distance2dsquared(entity.origin, entity.attackable_slot.origin);
         if (dist < 256) {
             height_offset = abs(entity.origin[2] - entity.attackable_slot.origin[2]);
             if (height_offset < 32) {
                 entity.is_at_attackable = 1;
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -705,23 +705,23 @@ function zombieisatattackobject(entity) {
 // Size: 0x134
 function zombieshouldattackobject(entity) {
     if (isdefined(entity.missinglegs) && entity.missinglegs) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.favoriteenemy) && isdefined(entity.favoriteenemy.b_is_designated_target) && entity.favoriteenemy.b_is_designated_target) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.aat_turned) && entity.aat_turned) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.attackable) && isdefined(entity.attackable.is_active) && entity.attackable.is_active) {
         if (isdefined(entity.is_at_attackable) && entity.is_at_attackable) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -752,23 +752,23 @@ function function_997f1224(entity) {
 // Size: 0x396
 function zombieshouldmeleecondition(entity) {
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death) && entity.marked_for_death) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     if (abs(entity.origin[2] - entity.enemy.origin[2]) > (isdefined(entity.var_737e8510) ? entity.var_737e8510 : 64)) {
-        return 0;
+        return false;
     }
     meleedistsq = function_997f1224(entity);
     if (distancesquared(entity.origin, entity.enemy.origin) > meleedistsq) {
-        return 0;
+        return false;
     }
     var_7b871a7d = 1;
     dist2d = distance2dsquared(entity.origin, entity.enemy.origin);
@@ -781,21 +781,21 @@ function zombieshouldmeleecondition(entity) {
     if (var_7b871a7d) {
         yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
         if (abs(yawtoenemy) > (isdefined(entity.var_1c0eb62a) ? entity.var_1c0eb62a : 60)) {
-            return 0;
+            return false;
         }
         if (!entity cansee(entity.enemy)) {
-            return 0;
+            return false;
         }
     }
     if (distancesquared(entity.origin, entity.enemy.origin) < 40 * 40) {
-        return 1;
+        return true;
     }
     if (var_7b871a7d) {
         if (!tracepassedonnavmesh(entity.origin, isdefined(entity.enemy.last_valid_position) ? entity.enemy.last_valid_position : entity.enemy.origin, entity.enemy getpathfindingradius())) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -805,17 +805,17 @@ function zombieshouldmeleecondition(entity) {
 function private function_1b8c9407(entity) {
     /#
         if (getdvarint(#"hash_1a5939d8c37a2e07", 0)) {
-            return 0;
+            return false;
         }
     #/
     var_9fce1294 = blackboard::getblackboardevents("zombie_full_pain");
     if (isdefined(var_9fce1294) && var_9fce1294.size) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_eeb66e64) && ![[ level.var_eeb66e64 ]](entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -850,7 +850,7 @@ function private zombieshouldturn(entity) {
 // Size: 0x22
 function private function_a716a3af(entity) {
     entity.turn_cooldown = gettime() + 1000;
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -859,48 +859,48 @@ function private function_a716a3af(entity) {
 // Size: 0x390
 function zombieshouldjumpmeleecondition(entity) {
     if (!(isdefined(entity.low_gravity) && entity.low_gravity)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     if (entity.enemy isonground()) {
         if (isplayer(entity.enemy) && entity.enemy isplayerswimming()) {
             waterheight = getwaterheight(entity.enemy.origin);
             if (waterheight - entity.enemy.origin[2] < 24) {
-                return 0;
+                return false;
             }
         } else {
-            return 0;
+            return false;
         }
     }
     jumpchance = getdvarfloat(#"zmmeleejumpchance", 0.5);
     if (entity getentitynumber() % 10 / 10 > jumpchance) {
-        return 0;
+        return false;
     }
     predictedposition = entity.enemy.origin + entity.enemy getvelocity() * float(function_60d95f53()) / 1000 * 2;
     jumpdistancesq = pow(getdvarint(#"zmmeleejumpdistance", 180), 2);
     if (distance2dsquared(entity.origin, predictedposition) > jumpdistancesq) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
     heighttoenemy = entity.enemy.origin[2] - entity.origin[2];
     if (heighttoenemy <= getdvarint(#"zmmeleejumpheightdifference", 60)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -909,39 +909,39 @@ function zombieshouldjumpmeleecondition(entity) {
 // Size: 0x250
 function zombieshouldjumpunderwatermelee(entity) {
     if (isdefined(entity.enemyoverride) && isdefined(entity.enemyoverride[1])) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoreall) && entity.ignoreall) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     if (entity.enemy isonground()) {
-        return 0;
+        return false;
     }
     if (entity depthinwater() < 48) {
-        return 0;
+        return false;
     }
     jumpdistancesq = pow(getdvarint(#"zmmeleewaterjumpdistance", 64), 2);
     if (distance2dsquared(entity.origin, entity.enemy.origin) > jumpdistancesq) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
     heighttoenemy = entity.enemy.origin[2] - entity.origin[2];
     if (heighttoenemy <= getdvarint(#"zmmeleejumpunderwaterheightdifference", 48)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -950,16 +950,16 @@ function zombieshouldjumpunderwatermelee(entity) {
 // Size: 0x1a2
 function zombiestumble(entity) {
     if (isdefined(entity.missinglegs) && entity.missinglegs) {
-        return 0;
+        return false;
     }
     if (!(isdefined(entity.canstumble) && entity.canstumble)) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.zombie_move_speed) || entity.zombie_move_speed != "sprint") {
-        return 0;
+        return false;
     }
     if (isdefined(entity.stumble)) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.next_stumble_time)) {
         entity.next_stumble_time = gettime() + randomintrange(9000, 12000);
@@ -973,11 +973,11 @@ function zombiestumble(entity) {
                 }
                 entity.next_stumble_time = undefined;
                 entity.stumble = 1;
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -1064,9 +1064,9 @@ function zombiedeathaction(entity) {
 // Size: 0x50
 function waskilledbyinterdimensionalguncondition(entity) {
     if (isdefined(entity.interdimensional_gun_kill) && !isdefined(entity.killby_interdimensional_gun_hole) && isalive(entity)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -1075,9 +1075,9 @@ function waskilledbyinterdimensionalguncondition(entity) {
 // Size: 0x24
 function wascrushedbyinterdimensionalgunblackholecondition(entity) {
     if (isdefined(entity.killby_interdimensional_gun_hole)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombiebehavior/zombie
@@ -1267,9 +1267,9 @@ function private zombieturnmocompterminate(entity, mocompanim, mocompanimblendou
 // Size: 0x28
 function zombiehaslegs(entity) {
     if (entity.missinglegs === 1) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -1294,21 +1294,21 @@ function zombieshouldproceduraltraverse(entity) {
 // Size: 0xba
 function zombieshouldmeleesuicide(entity) {
     if (!entity ai::get_behavior_attribute("suicidal_behavior")) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.magic_bullet_shield) && entity.magic_bullet_shield) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, entity.enemy.origin) > 40000) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -1365,7 +1365,7 @@ function zombiemoveactionstart(entity, asmstatename) {
 // Size: 0x28
 function function_a82068d7(entity) {
     function_ec25b529(entity);
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie
@@ -1403,7 +1403,7 @@ function zombiemoveactionupdate(entity, asmstatename) {
 // Size: 0x28
 function function_626edd6b(entity) {
     function_26f9b8b1(entity);
-    return 1;
+    return true;
 }
 
 // Namespace zombiebehavior/zombie

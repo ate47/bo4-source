@@ -362,7 +362,7 @@ function turned_enable_player_weapons() {
 // Checksum 0xe3d9a1c4, Offset: 0x1a28
 // Size: 0x178
 function get_farthest_available_zombie(player) {
-    while (1) {
+    while (true) {
         zombies = array::get_all_closest(player.origin, getaiteamarray(level.zombie_team));
         for (x = 0; x < zombies.size; x++) {
             zombie = zombies[x];

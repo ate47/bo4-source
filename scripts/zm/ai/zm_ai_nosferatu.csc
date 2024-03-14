@@ -62,7 +62,7 @@ function private function_4207e678(localclientnum, oldval, newval, bnewent, bini
 function function_3a03717(localclientnum) {
     self notify(#"stop_summon");
     self endon(#"death", #"stop_summon");
-    while (1) {
+    while (true) {
         e_player = function_5c10bd79(localclientnum);
         n_dist = distance(self.origin, e_player.origin);
         if (n_dist < 400) {

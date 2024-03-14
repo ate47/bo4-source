@@ -1265,7 +1265,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
     var_87b53013 = actionparams.action.name;
     scorestreakweapon = actionparams.weapon;
@@ -1281,7 +1281,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
     if (self killstreakrules::iskillstreakallowed(var_87b53013, self.team) == 0) {
         /#
@@ -1292,7 +1292,7 @@ function function_9c943ad6(actionparams, var_af50df89) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
     if (var_af50df89 == self bot::has_visible_enemy()) {
         /#
@@ -1303,9 +1303,9 @@ function function_9c943ad6(actionparams, var_af50df89) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_104c3c75/namespace_104c3c75

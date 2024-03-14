@@ -42,7 +42,7 @@ function function_f71796ca() {
         n_wait = 1;
     }
     self zm_unitrigger::create(undefined, 40);
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition(str_alias, self.origin);
@@ -57,7 +57,7 @@ function function_f71796ca() {
 // Size: 0x78
 function function_e856acd2() {
     level endon(#"hash_2bfc849b35affc0c", #"end_game");
-    while (1) {
+    while (true) {
         wait(randomintrange(20, 60));
         playsoundatposition(#"hash_2c5321deab41da10", self.origin);
     }
@@ -70,7 +70,7 @@ function function_e856acd2() {
 function function_bc327ddf() {
     level endon(#"end_game");
     var_f0f25516 = array(1, 2, 3, 4, 5);
-    for (var_5ffc6bcc = 0; 1; var_5ffc6bcc = 0) {
+    for (var_5ffc6bcc = 0; true; var_5ffc6bcc = 0) {
         s_result = undefined;
         s_result = level waittill(#"hash_66f9802695ce6503");
         if (s_result.var_6831e121 === var_f0f25516[var_5ffc6bcc]) {

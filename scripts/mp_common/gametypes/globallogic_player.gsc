@@ -29,12 +29,12 @@ function __init__() {
 // Size: 0x4e
 function function_4b7bb02c(weapon) {
     if (!killstreaks::is_killstreak_weapon(weapon)) {
-        return 1;
+        return true;
     }
     if (killstreaks::is_killstreak_weapon_assist_allowed(weapon)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_player/globallogic_player

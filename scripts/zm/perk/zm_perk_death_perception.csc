@@ -107,7 +107,7 @@ function function_731d83de(localclientnum) {
 // Size: 0x284
 function function_fff5377e(localclientnum) {
     self endon(#"death", #"hash_45ed6efeef67b773");
-    while (1) {
+    while (true) {
         if (!(isdefined(level.var_dc60105c) && level.var_dc60105c) && !isigcactive(localclientnum)) {
             a_ai = function_793a9f3d(localclientnum);
             a_ai = arraysortclosest(a_ai, self.origin, undefined, undefined, 200);

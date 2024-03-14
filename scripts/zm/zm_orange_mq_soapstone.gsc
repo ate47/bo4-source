@@ -153,35 +153,35 @@ function function_88a86ef8(n_position) {
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 0;
         }
-        return;
+        break;
     case 1:
         if (level.s_soapstone.var_d143df71 != 1) {
             s_position = struct::get("bear_digit_1", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 1;
         }
-        return;
+        break;
     case 2:
         if (level.s_soapstone.var_d143df71 != 2) {
             s_position = struct::get("bear_digit_2", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 2;
         }
-        return;
+        break;
     case 3:
         if (level.s_soapstone.var_d143df71 != 3) {
             s_position = struct::get("bear_digit_3", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 3;
         }
-        return;
+        break;
     case 4:
         if (level.s_soapstone.var_d143df71 != 4) {
             s_position = struct::get("bear_digit_4", "targetname");
             e_dial rotateto(s_position.angles, 1.5, 0.25, 0.25);
             level.s_soapstone.var_d143df71 = 4;
         }
-        return;
+        break;
     }
 }
 
@@ -254,7 +254,7 @@ function function_1c744b3f() {
     foreach (s_soapstone in level.var_9369090c) {
         s_soapstone.s_unitrigger = s_soapstone zm_unitrigger::create("", 128);
     }
-    while (1) {
+    while (true) {
         foreach (s_soapstone in level.var_9369090c) {
             s_soapstone thread function_476d4cb5();
         }
@@ -272,7 +272,7 @@ function function_1c744b3f() {
 function function_557d25c1() {
     level endon(#"hash_3a8a317fc0b5e5b0");
     level.var_6b37a126.s_unitrigger = level.var_6b37a126 zm_unitrigger::create("", 128);
-    while (1) {
+    while (true) {
         level.var_6b37a126 thread function_2b438f6f();
         level waittill(#"soapstone_collected");
     }

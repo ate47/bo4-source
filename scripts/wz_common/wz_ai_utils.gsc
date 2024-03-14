@@ -84,7 +84,7 @@ function function_b4f41a02() {
         }
         util::add_debug_command("<unknown string>");
         util::add_debug_command("<unknown string>");
-        while (1) {
+        while (true) {
             wait(0.1);
             cmd = getdvarstring(#"hash_209287456d55fca1", "<unknown string>");
             if (cmd == "<unknown string>") {
@@ -124,7 +124,7 @@ function debug_ai() {
         level.var_b4702614[4] = "<unknown string>";
         level.var_b4702614[5] = "<unknown string>";
         level.var_b4702614[6] = "<unknown string>";
-        while (1) {
+        while (true) {
             if (isdefined(level.var_e066667d) && level.var_e066667d && isdefined(level.var_91a15ec0)) {
                 axis = getaiteamarray(level.var_91a15ec0);
                 foreach (entity in axis) {
@@ -436,33 +436,33 @@ function function_a679f9b(params) {
 // Size: 0x108
 function is_player_valid(player) {
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     if (!isalive(player)) {
-        return 0;
+        return false;
     }
     if (!isplayer(player)) {
-        return 0;
+        return false;
     }
     if (player.sessionstate == "spectator") {
-        return 0;
+        return false;
     }
     if (player.sessionstate == "intermission") {
-        return 0;
+        return false;
     }
     if (isdefined(player.intermission) && player.intermission) {
-        return 0;
+        return false;
     }
     if (player laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     if (player infection::is_infected()) {
-        return 0;
+        return false;
     }
     if (player.ignoreme || player isnotarget()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
@@ -981,7 +981,7 @@ function get_attackable(entity, var_83917763) {
 // Size: 0x21e
 function get_attackable_slot(entity) {
     if (!isdefined(self.var_b79a8ac7)) {
-        return 0;
+        return false;
     }
     self clear_slots();
     var_4dbfc246 = [];
@@ -992,7 +992,7 @@ function get_attackable_slot(entity) {
         }
     }
     if (var_34bcb139.size == 0) {
-        return 0;
+        return false;
     }
     var_754df93c = entity.origin;
     strteleportst = arraygetclosest(var_754df93c, var_34bcb139);
@@ -1001,14 +1001,14 @@ function get_attackable_slot(entity) {
         if (isdefined(var_acdc8d71)) {
             strteleportst.entity = entity;
             entity.var_b238ef38 = {#position:var_acdc8d71, #slot:strteleportst};
-            return 1;
+            return true;
         }
     } else {
         strteleportst.entity = entity;
         entity.var_b238ef38 = {#position:strteleportst.origin, #slot:strteleportst};
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
@@ -1136,7 +1136,7 @@ function function_16e2f075(params) {
 function function_7a87d2a7(damageduration) {
     level endon(#"game_ended");
     self endon(#"death");
-    while (1) {
+    while (true) {
         var_202d087b = [];
         foreach (ai in level.var_f2e76de4) {
             if (!isdefined(ai) || !isalive(ai)) {

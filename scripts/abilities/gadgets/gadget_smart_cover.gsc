@@ -268,7 +268,7 @@ function function_7ecb04ff(player) {
     player notify(#"hash_51faf1a32d7e36b0");
     player endon(#"hash_51faf1a32d7e36b0");
     player endon(#"death", #"disconnect", #"joined_team", #"changed_specialist");
-    while (1) {
+    while (true) {
         waitframe(1);
         while (level.inprematchperiod) {
             waitframe(1);
@@ -462,7 +462,7 @@ function function_3b96637(watcher, owner) {
 function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {
@@ -514,7 +514,7 @@ function function_37f1dcd1() {
 function ondamage() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.attacker) && isplayer(waitresult.attacker)) {
@@ -770,7 +770,7 @@ function function_127fb8f3(smartcover, attackingplayer) {
     if (isdefined(level.var_1794f85f)) {
         [[ level.var_1794f85f ]](attackingplayer, "disrupted_barricade");
     }
-    return 1;
+    return true;
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -780,7 +780,7 @@ function function_127fb8f3(smartcover, attackingplayer) {
 function function_18dd6b22(smartcover) {
     level endon(#"game_ended");
     smartcover endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = smartcover waittill(#"broken");
         if (waitresult.type == "base_piece_broken") {
@@ -799,10 +799,10 @@ function function_bf4c81d2(origin, maxdistancesq) {
             continue;
         }
         if (distancesquared(smartcover.origin, origin) < maxdistancesq) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -813,7 +813,7 @@ function watchweaponchange() {
     player = self;
     self notify(#"watchweaponchange_singleton");
     self endon(#"watchweaponchange_singleton");
-    while (1) {
+    while (true) {
         if (self weaponswitchbuttonpressed()) {
             if (isdefined(player.smartcover)) {
                 player.smartcover.var_5af6633b = 1;
@@ -842,10 +842,10 @@ function function_57f553e9(&var_85947e0d, maxallowed) {
 // Size: 0x366
 function function_92112113(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(level.smartcoversettings) || !isdefined(level.smartcoversettings.var_f115c746) || !isdefined(victim) || !isdefined(attacker) || !isdefined(attackerweapon) || !isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.iskillstreakweapon) && [[ level.iskillstreakweapon ]](attackerweapon) || attackerweapon == weapon) {
-        return 0;
+        return false;
     }
     foreach (smartcover in level.smartcoversettings.var_f115c746) {
         if (!isdefined(smartcover)) {
@@ -873,12 +873,12 @@ function function_92112113(attacker, victim, weapon, attackerweapon, meansofdeat
     }
     if (isdefined(var_71eedb0b) && isdefined(var_a3aba5a9) && var_a3aba5a9) {
         if (smartcover.owner == attacker) {
-            return 1;
+            return true;
         } else {
             scoreevents::processscoreevent(#"deployable_cover_assist", var_71eedb0b, victim, level.smartcoversettings.smartcoverweapon);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -908,11 +908,11 @@ function private function_4e6d9621(smartcover, origins, radii) {
             }
             radiussqr = combinedradius * combinedradius;
             if (distance < radiussqr) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -921,17 +921,17 @@ function private function_4e6d9621(smartcover, origins, radii) {
 // Size: 0xd2
 function function_e3a901c(origins, radii) {
     if (!isdefined(level.smartcoversettings.var_f115c746)) {
-        return 0;
+        return false;
     }
     foreach (smartcover in level.smartcoversettings.var_f115c746) {
         if (!isdefined(smartcover)) {
             continue;
         }
         if (function_4e6d9621(smartcover, origins, radii)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -1022,7 +1022,7 @@ function turretthink() {
     turret endon(#"death");
     turret.trigger endon(#"death");
     turret.turret_vehicle_entnum = turret getentitynumber();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = turret.trigger waittill(#"trigger");
         ent = waitresult.activator;
@@ -1087,7 +1087,7 @@ function microwaveentity(entity) {
     }
     turret_vehicle_entnum = turret.turret_vehicle_entnum;
     var_2b29cf8c.killcament = turret;
-    while (1) {
+    while (true) {
         if (!isdefined(turret) || !isdefined(turret.trigger) || !turret microwaveturretaffectsentity(entity)) {
             if (!isdefined(entity)) {
                 return;
@@ -1158,40 +1158,40 @@ function microwaveentity(entity) {
 function microwaveturretaffectsentity(entity) {
     turret = self;
     if (!isalive(entity)) {
-        return 0;
+        return false;
     }
     if (!isplayer(entity) && !isai(entity)) {
-        return 0;
+        return false;
     }
     if (entity.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (isdefined(turret.carried) && turret.carried) {
-        return 0;
+        return false;
     }
     if (turret weaponobjects::isstunned()) {
-        return 0;
+        return false;
     }
     if (isdefined(turret.owner) && entity == turret.owner) {
-        return 0;
+        return false;
     }
     if (!damage::friendlyfirecheck(turret.owner, entity, 0)) {
-        return 0;
+        return false;
     }
     if (isplayer(entity) && entity geteye()[2] < turret.origin[2]) {
-        return 0;
+        return false;
     }
     if (isai(entity)) {
         entityheight = entity.maxs[2] - entity.mins[2] + entity.origin[2];
         if (entityheight < turret.origin[2]) {
-            return 0;
+            return false;
         }
     }
     if ((isdefined(level.smartcoversettings.bundle.var_7ba68eb6) ? level.smartcoversettings.bundle.var_7ba68eb6 : 0) > 0 && entity.origin[2] > turret.origin[2] + level.smartcoversettings.bundle.var_7ba68eb6) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, turret.origin) > (isdefined(level.smartcoversettings.bundle.var_b345c668) ? level.smartcoversettings.bundle.var_b345c668 : 0) * (isdefined(level.smartcoversettings.bundle.var_b345c668) ? level.smartcoversettings.bundle.var_b345c668 : 0)) {
-        return 0;
+        return false;
     }
     angles = turret getangles();
     realorigin = turret.origin + vectorscale((0, 0, 1), 30);
@@ -1201,16 +1201,16 @@ function microwaveturretaffectsentity(entity) {
     var_29d7e93f = vectornormalize(shoot_at_pos - realorigin);
     var_2d95367c = vectordot(var_29d7e93f, forward);
     if (var_2d95367c < 0) {
-        return 0;
+        return false;
     }
     entdirection = vectornormalize(shoot_at_pos - origin);
     dot = vectordot(entdirection, forward);
     if (dot < cos(isdefined(level.smartcoversettings.bundle.var_cbd5f27c) ? level.smartcoversettings.bundle.var_cbd5f27c : 0)) {
-        return 0;
+        return false;
     }
     if (entity damageconetrace(origin, turret, forward) <= 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

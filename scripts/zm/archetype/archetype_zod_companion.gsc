@@ -187,12 +187,12 @@ function zodcompanioncanjuke(entity) {
         tooclosejukedistancesqr = 57600;
         foreach (event in jukeevents) {
             if (event.data.entity != entity && distance2dsquared(entity.origin, event.data.origin) <= tooclosejukedistancesqr) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -242,9 +242,9 @@ function zodcompanioncanpreemptivejuke(entity) {
 // Size: 0xb0
 function private _isvalidplayer(player) {
     if (!isdefined(player) || !isalive(player) || !isplayer(player) || player.sessionstate == "spectator" || player.sessionstate == "intermission" || player laststand::player_is_in_laststand() || player.ignoreme) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -344,9 +344,9 @@ function private zodcompanionabletoshootcondition(entity) {
 // Size: 0x2e
 function private zodcompanionshouldtacticalwalk(entity) {
     if (!entity haspath()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -381,23 +381,23 @@ function private zodcompaniontryreacquireservice(entity) {
     }
     if (!isdefined(entity.enemy)) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (entity haspath()) {
-        return 0;
+        return false;
     }
     if (!zodcompanionabletoshootcondition(entity)) {
-        return 0;
+        return false;
     }
     if (entity cansee(entity.enemy) && entity canshootenemy()) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     dirtoenemy = vectornormalize(entity.enemy.origin - entity.origin);
     forward = anglestoforward(entity.angles);
     if (vectordot(dirtoenemy, forward) < 0.5) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     switch (entity.reacquire_state) {
     case 0:
@@ -414,16 +414,16 @@ function private zodcompaniontryreacquireservice(entity) {
     default:
         if (entity.reacquire_state > 15) {
             entity.reacquire_state = 0;
-            return 0;
+            return false;
         }
         break;
     }
     if (isvec(reacquirepos)) {
         entity function_a57c34b7(reacquirepos);
-        return 1;
+        return true;
     }
     entity.reacquire_state++;
-    return 0;
+    return false;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -525,7 +525,7 @@ function private manage_companion_movement(entity) {
 function private zodcompanioncollisionservice(entity) {
     if (isdefined(entity.dontpushtime)) {
         if (gettime() < entity.dontpushtime) {
-            return 1;
+            return true;
         }
     }
     var_26cddecd = 0;
@@ -545,10 +545,10 @@ function private zodcompanioncollisionservice(entity) {
     if (var_26cddecd) {
         entity collidewithactors(0);
         entity.dontpushtime = gettime() + 2000;
-        return 1;
+        return true;
     }
     entity collidewithactors(1);
-    return 0;
+    return false;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -570,18 +570,18 @@ function private function_a2ba1ce8(target_entity, max_distance) {
     entity = self;
     target_location = target_entity.origin;
     if (distancesquared(entity.origin, target_location) > max_distance * max_distance) {
-        return 0;
+        return false;
     }
     path = entity calcapproximatepathtoposition(target_location);
     segmentlength = 0;
     for (index = 1; index < path.size; index++) {
         currentseglength = distance(path[index - 1], path[index]);
         if (currentseglength + segmentlength > max_distance) {
-            return 0;
+            return false;
         }
         segmentlength = segmentlength + currentseglength;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -722,7 +722,7 @@ function zod_companion_revive_player(player) {
 // Size: 0x106
 function zod_companion_monitor_revive_attempt(player) {
     self endon(#"death", #"revive_terminated");
-    while (1) {
+    while (true) {
         if (!isdefined(player)) {
             self zod_companion_revive_cleanup(player);
         }
@@ -776,12 +776,12 @@ function private zodcompanionkeepscurrentmovementmode(behaviortreeentity) {
     var_c351bd17 = 147456;
     dist = distancesquared(behaviortreeentity.origin, behaviortreeentity.companion_anchor_point);
     if (dist > var_202e5b5c && behaviortreeentity getblackboardattribute("_locomotion_speed") == "locomotion_speed_walk") {
-        return 0;
+        return false;
     }
     if (dist < var_c351bd17 && behaviortreeentity getblackboardattribute("_locomotion_speed") == "locomotion_speed_sprint") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zodcompanionbehavior/archetype_zod_companion
@@ -790,9 +790,9 @@ function private zodcompanionkeepscurrentmovementmode(behaviortreeentity) {
 // Size: 0x28
 function private zodcompanionsprinttransitioning(behaviortreeentity) {
     if (behaviortreeentity.sprint_transition_happening === 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 #namespace zodcompanionserverutils;
@@ -994,7 +994,7 @@ function private zodcompanionsoldierspawnsetup() {
 // Size: 0x70
 function manage_companion() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (!self.reviving_a_player) {
             if (!isdefined(self.leader) || !self.leader.eligible_leader) {
                 self define_new_leader();

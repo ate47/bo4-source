@@ -99,7 +99,7 @@ function function_8cc4432b() {
 // Size: 0x174
 function function_ad26976() {
     self endon(#"movedone");
-    while (1) {
+    while (true) {
         vehicles = getentitiesinradius(self.origin, 1536, 12);
         vehicle_corpses = getentitiesinradius(self.origin, 1536, 14);
         foreach (vehicle in vehicles) {
@@ -148,10 +148,10 @@ function is_equipment(entity) {
     if (isdefined(entity.weapon)) {
         weapon = entity.weapon;
         if (weapon.name === #"ability_smart_cover" || weapon.name === #"eq_tripwire" || weapon.name === #"trophy_system" || weapon.name === #"eq_concertina_wire" || weapon.name === #"eq_sensor" || weapon.name === #"cymbal_monkey" || weapon.name === #"gadget_supplypod" || weapon.name === #"homunculus") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_escape_elevators/wz_escape_elevators
@@ -171,27 +171,27 @@ function function_777e012d(t_damage) {
                 switch (device.weapon.name) {
                 case #"eq_tripwire":
                     device [[ level.var_2e06b76a ]]();
-                    continue;
+                    break;
                 case #"trophy_system":
                     device [[ level.var_4f3822f4 ]]();
-                    continue;
+                    break;
                 case #"cymbal_monkey":
                     device [[ level.var_7c5c96dc ]]();
-                    continue;
+                    break;
                 case #"homunculus":
                     device [[ level.var_cc310d06 ]]();
-                    continue;
+                    break;
                 case #"eq_sensor":
                     device [[ level.var_9911d36f ]]();
-                    continue;
+                    break;
                 case #"eq_concertina_wire":
                     device [[ level.var_94029383 ]]();
-                    continue;
+                    break;
                 case #"gadget_supplypod":
                     device notify(#"death");
-                    continue;
+                    break;
                 default:
-                    continue;
+                    break;
                 }
             }
         }
@@ -434,7 +434,7 @@ function function_d7b6ee00(activator, laststate, state) {
 function function_51a020(activator, laststate, state) {
     if (isdefined(self.target)) {
         if (laststate == state) {
-            return 0;
+            return false;
         }
         var_a9309589 = getdynent(self.target);
         currentstate = function_ffdbe8c2(var_a9309589);
@@ -446,20 +446,20 @@ function function_51a020(activator, laststate, state) {
             end = center + right * bounds.maxs[1] * 0.85;
             results = bullettracepassed(start, end, 0, activator);
             if (!results) {
-                return 0;
+                return false;
             }
             center = var_a9309589.origin + vectorscale((0, 0, 1), 40);
             start = center + right * bounds.mins[1] * 0.85;
             end = center + right * bounds.maxs[1] * 0.85;
             results = bullettracepassed(start, end, 0, activator);
             if (!results) {
-                return 0;
+                return false;
             }
         }
         if (currentstate != state) {
             function_e2a06860(var_a9309589, state);
         }
     }
-    return 1;
+    return true;
 }
 

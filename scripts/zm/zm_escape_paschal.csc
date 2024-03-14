@@ -83,23 +83,23 @@ function function_d36b21ad(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_blue"], self, "tag_origin");
-        return;
+        break;
     case 2:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_green"], self, "tag_origin");
-        return;
+        break;
     case 3:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_white"], self, "tag_origin");
-        return;
+        break;
     case 4:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_orange"], self, "tag_origin");
-        return;
+        break;
     case 5:
         self.var_9a53cfaa = util::playfxontag(localclientnum, level._effect[#"energy_red"], self, "tag_origin");
-        return;
+        break;
     case 0:
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

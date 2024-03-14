@@ -150,7 +150,7 @@ function function_4da0eaff() {
 // Size: 0x190
 function function_44748fe7() {
     level endon(#"end_computer");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -193,7 +193,7 @@ function function_f359c8a0(s_key, e_player) {
                 iprintlnbold("mesh_code_display_06");
             #/
             playsoundatposition("zmb_comp_keypad_action_full", self.origin);
-            return;
+            break;
         }
         level.var_f13364b4.var_d7813dfd[level.var_f13364b4.var_b1e1ac14] = s_key.script_int;
         level function_edbb34e5(level.var_f13364b4.var_b1e1ac14, s_key.script_int);
@@ -207,14 +207,14 @@ function function_f359c8a0(s_key, e_player) {
         level.var_18f1ca6e thread function_a196c54b();
         level.var_18f1ca6e thread function_450060dd();
         level.var_18f1ca6e.var_64318fbb = 0;
-        return;
+        break;
     case #"enter":
         if (level.var_f13364b4.var_b1e1ac14 < 4) {
             /#
                 iprintlnbold("<unknown string>" + level.var_f13364b4.var_d7813dfd[0] + level.var_f13364b4.var_d7813dfd[1] + level.var_f13364b4.var_d7813dfd[2] + level.var_f13364b4.var_d7813dfd[3]);
             #/
             playsoundatposition("zmb_comp_keypad_action_full", self.origin);
-            return;
+            break;
         }
         /#
             iprintlnbold("<unknown string>" + level.var_f13364b4.var_d7813dfd[0] + level.var_f13364b4.var_d7813dfd[1] + level.var_f13364b4.var_d7813dfd[2] + level.var_f13364b4.var_d7813dfd[3]);
@@ -222,19 +222,19 @@ function function_f359c8a0(s_key, e_player) {
         n_code = function_352f47ae(level.var_f13364b4.var_d7813dfd);
         function_cd7e0989(n_code);
         level thread reset_computer();
-        return;
+        break;
     case #"clear":
         level thread reset_computer();
         /#
             iprintlnbold("<unknown string>");
         #/
         playsoundatposition("zmb_comp_keypad_action_clear", self.origin);
-        return;
+        break;
     default:
         /#
             iprintlnbold("<unknown string>");
         #/
-        return;
+        break;
     }
 }
 
@@ -815,22 +815,22 @@ function function_52838f02(str_display = "both", b_show = 1) {
             level.var_1e220e78[i] [[ func_visibility ]]();
             level.var_17ff2d5e[i] [[ func_visibility ]]();
         }
-        return;
+        break;
     case #"keypad":
         for (i = 0; i < 4; i++) {
             level.var_1e220e78[i] [[ func_visibility ]]();
         }
-        return;
+        break;
     case #"large":
         for (i = 0; i < 4; i++) {
             level.var_17ff2d5e[i] [[ func_visibility ]]();
         }
-        return;
+        break;
     default:
         /#
             iprintlnbold("<unknown string>");
         #/
-        return;
+        break;
     }
 }
 
@@ -1006,7 +1006,7 @@ function function_5e0b6734(var_b995184a, var_2199b576, var_ec214a86, var_d1201d6
         self.var_2b315dde[1] setmodel("p8_zm_white_computer_system_code_display_small_" + self.var_18e46e05);
         self.var_2b315dde[0] setmodel("p8_zm_white_computer_system_code_display_small_" + self.var_eb2b1293);
     }
-    while (1) {
+    while (true) {
         self.var_9400d2ae++;
         if (self.var_5659075f == 0) {
             if (self.var_eb2b1293 == var_2199b576 && self.var_18e46e05 == var_ec214a86 && self.var_9901ee42 == var_d1201d6b && self.var_87d84bef == var_f3ea62ff) {
@@ -1165,24 +1165,24 @@ function function_a3442c46(s_stage) {
         level.var_cb1cac73 hidepart("tag_stage_04");
         level.var_cb1cac73 hidepart("tag_stage_05");
         exploder::stop_exploder("fxexp_script_computersystem_screen");
-        return;
+        break;
     case #"1":
         level.var_cb1cac73 showpart("tag_stage_01");
         level.var_cb1cac73 showpart("tag_lights");
         exploder::exploder("fxexp_script_computersystem_screen");
-        return;
+        break;
     case #"2":
         level.var_cb1cac73 showpart("tag_stage_02");
-        return;
+        break;
     case #"3":
         level.var_cb1cac73 showpart("tag_stage_03");
-        return;
+        break;
     case #"4":
         level.var_cb1cac73 showpart("tag_stage_04");
-        return;
+        break;
     case #"5":
         level.var_cb1cac73 showpart("tag_stage_05");
-        return;
+        break;
     }
 }
 
@@ -1198,42 +1198,42 @@ function function_6ef53601(var_7e123df8) {
         wait(0.2);
         self function_a196c54b();
         self showpart("tag_blink_cycle_all");
-        return;
+        break;
     case #"dynamic":
         self function_a196c54b();
         self showpart("tag_glitch");
         wait(0.2);
         self function_a196c54b();
         self showpart("tag_dynamic");
-        return;
+        break;
     case #"glitch":
         self function_a196c54b();
         self showpart("tag_glitch");
         wait(0.2);
         self function_a196c54b();
         self showpart("tag_glitch");
-        return;
+        break;
     case #"style1":
         self function_a196c54b();
         self showpart("tag_glitch");
         wait(0.2);
         self function_a196c54b();
         self showpart("tag_style1");
-        return;
+        break;
     case #"style2":
         self function_a196c54b();
         self showpart("tag_glitch");
         wait(0.2);
         self function_a196c54b();
         self showpart("tag_style2");
-        return;
+        break;
     case #"vector":
         self function_a196c54b();
         self showpart("tag_glitch");
         wait(0.2);
         self function_a196c54b();
         self showpart("tag_vector");
-        return;
+        break;
     }
 }
 
@@ -1259,7 +1259,7 @@ function function_450060dd() {
 function function_cafaeead() {
     self endon(#"end_game");
     self.var_64318fbb = 0;
-    while (1) {
+    while (true) {
         if (self.var_64318fbb && !(isdefined(self.var_1549a0a5) && self.var_1549a0a5)) {
             if (!level.countdown_clock.var_4cdc88ae && level.var_f13364b4.var_b1e1ac14 == 0) {
                 level.var_18f1ca6e thread function_67621880();
@@ -1279,7 +1279,7 @@ function function_67621880() {
     self.var_1549a0a5 = 1;
     var_745db666 = array("blink", "dynamic", "style1", "style2");
     self endon(#"end_game", #"hash_3f68e1ecf3892766");
-    while (1) {
+    while (true) {
         var_745db666 = array::randomize(var_745db666);
         self thread function_6ef53601(var_745db666[0]);
         wait(randomfloatrange(5, 10));

@@ -289,7 +289,7 @@ function defend_areas() {
     zm_utility::open_door(array("door_cafeteria_to_times_square", "door_cell_block_floor_3", "door_cafeteria_to_infirmary", "door_shower_to_citadel", "door_model_warden_office_to_warden_house"), undefined, undefined, 1);
     wait(4);
     str_next_defend = array::random(array(#"roof", #"warden_house", #"cafeteria", #"showers"));
-    while (1) {
+    while (true) {
         zm_utility::function_11101458(str_next_defend);
         wait(45);
         s_defend_area = zm_utility::function_a877cd10(str_next_defend);
@@ -389,7 +389,7 @@ function function_84139b27() {
 function function_c3ad6d4a(b_wait_for_player = 0) {
     level endon(#"end_game");
     if (b_wait_for_player) {
-        while (1) {
+        while (true) {
             var_c75ebefb = 0;
             foreach (player in level.activeplayers) {
                 if (player zm_zonemgr::is_player_in_zone(#"zone_studio")) {
@@ -415,7 +415,7 @@ function function_c3ad6d4a(b_wait_for_player = 0) {
 // Size: 0x1e2
 function function_b9cacd48() {
     /#
-        while (1) {
+        while (true) {
             zm_utility::function_11101458("<unknown string>");
             wait(10);
             s_defend_area = zm_utility::function_a877cd10("<unknown string>");
@@ -469,7 +469,7 @@ function function_ac904e5e() {
 // Size: 0x3c0
 function function_b356f6ae() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_4ffec9c5f552e6fc");
         if (isdefined(s_waitresult.e_door) && isdefined(s_waitresult.e_door.script_flag)) {

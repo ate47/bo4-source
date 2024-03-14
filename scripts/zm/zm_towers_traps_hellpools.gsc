@@ -107,7 +107,7 @@ function function_b589dae1() {
     level endon(#"end_game");
     level notify(#"hash_4cb0ebfa7040a193");
     level endon(#"hash_4cb0ebfa7040a193");
-    while (1) {
+    while (true) {
         level waittill(#"host_migration_end");
         foreach (e_hellpool in level.a_e_hellpools) {
             e_hellpool notify(#"hash_5aa6001392300725");
@@ -122,7 +122,7 @@ function function_b589dae1() {
 function private function_a3661fef() {
     level waittill(#"start_zombie_round_logic");
     s_blueprint = zm_crafting::function_b18074d0(#"zblueprint_trap_hellpools");
-    while (1) {
+    while (true) {
         level waittill(#"component_collected");
         foreach (e_player in getplayers()) {
             if (zm_crafting::function_6d1e4410(e_player, s_blueprint)) {

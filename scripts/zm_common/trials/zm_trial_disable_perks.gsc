@@ -91,7 +91,7 @@ function is_active(var_34f09024 = 0) {
 // Size: 0x1a2
 function lose_perk(perk) {
     if (!is_active()) {
-        return 0;
+        return false;
     }
     slot = self zm_perks::function_c1efcc57(perk);
     if (slot != -1 && isdefined(self.var_7864a0f6) && isdefined(self.var_7864a0f6.var_149ec45c[slot]) && self.var_7864a0f6.var_149ec45c[slot] && !self zm_perks::function_e56d8ef4(perk)) {
@@ -103,9 +103,9 @@ function lose_perk(perk) {
             self.var_7864a0f6.var_6fdc9c9c = array(self.var_7864a0f6.var_6fdc9c9c);
         }
         self.var_7864a0f6.var_6fdc9c9c[self.var_7864a0f6.var_6fdc9c9c.size] = slot;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_disable_perks/zm_trial_disable_perks

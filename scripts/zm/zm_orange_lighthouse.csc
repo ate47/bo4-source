@@ -71,7 +71,7 @@ function function_6a10478(localclientnum, oldval, newval, bnewent, binitialsnap,
         self playsound(localclientnum, #"hash_c28cead5117620");
         self.var_190322ee = spawn(0, self.origin, "script_origin");
         self.var_190322ee playloopsound(#"hash_6181b0e69ec35a3b");
-        return;
+        break;
     case 2:
         if (isdefined(self.var_190322ee)) {
             self.var_190322ee stoploopsound(1);
@@ -81,7 +81,7 @@ function function_6a10478(localclientnum, oldval, newval, bnewent, binitialsnap,
         self playsound(localclientnum, #"hash_261c471e4722bb37");
         self.var_190322ee = spawn(0, self.origin, "script_origin");
         self.var_190322ee playloopsound(#"hash_b838aafaa7056a0");
-        return;
+        break;
     case 3:
         if (isdefined(self.var_190322ee)) {
             self.var_190322ee stoploopsound(1);
@@ -91,7 +91,7 @@ function function_6a10478(localclientnum, oldval, newval, bnewent, binitialsnap,
         self playsound(localclientnum, #"hash_153e70c4ae966276");
         self.var_190322ee = spawn(0, self.origin, "script_origin");
         self.var_190322ee playloopsound(#"hash_764437252a54048d");
-        return;
+        break;
     case 4:
         if (isdefined(self.var_190322ee)) {
             self.var_190322ee stoploopsound(1);
@@ -101,7 +101,7 @@ function function_6a10478(localclientnum, oldval, newval, bnewent, binitialsnap,
         self playsound(localclientnum, #"hash_3734fecc702f7cd0");
         self.var_190322ee = spawn(0, self.origin, "script_origin");
         self.var_190322ee playloopsound(#"hash_518712532057a8b");
-        return;
+        break;
     }
 }
 

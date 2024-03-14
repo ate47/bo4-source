@@ -174,7 +174,7 @@ function _fire(lifeid, player, team, killstreak_id) {
             player enableweaponcycling();
             killstreakrules::killstreakstop("remote_missile", team, killstreak_id);
         }
-        return 0;
+        return false;
     }
     if (isdefined(player)) {
         player callback::callback(#"hash_247d67dbf83dbc1a");
@@ -225,7 +225,7 @@ function _fire(lifeid, player, team, killstreak_id) {
     animlen = getanimlength(#"hash_4b6a7686ae8c1f16");
     wait(animlen * 0.7);
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     thread function_203098f4(0.3);
     lui::screen_fade_out(0.1);
@@ -269,7 +269,7 @@ function _fire(lifeid, player, team, killstreak_id) {
         if (isdefined(veh)) {
             veh delete();
         }
-        return 0;
+        return false;
     }
     cam delete();
     player cameraactivate(0);
@@ -301,7 +301,7 @@ function _fire(lifeid, player, team, killstreak_id) {
     player thread sndwatchexplo();
     rocket influencers::create_entity_enemy_influencer("small_vehicle", rocket.team);
     player waittill(#"remotemissle_killstreak_done");
-    return 1;
+    return true;
 }
 
 // Namespace remotemissile/remotemissile_shared
@@ -985,7 +985,7 @@ function targeting_hud_think(rocket) {
     player = self;
     targets = self getvalidtargets(rocket, 1, 6);
     framessincetargetscan = 0;
-    while (1) {
+    while (true) {
         framessincetargetscan++;
         if (framessincetargetscan > 5) {
             targets = self getvalidtargets(rocket, 1, 6);
@@ -1067,7 +1067,7 @@ function missile_deploy_watch(rocket) {
     while (self attackbuttonpressed()) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         if (self attackbuttonpressed() || rocket.origin[2] < var_dc54c0bd) {
             self thread missile_deploy(rocket, 0);
             continue;

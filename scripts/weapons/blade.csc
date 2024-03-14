@@ -67,7 +67,7 @@ function function_c0c566d4(localclientnum) {
     self endon("1904df9d4730174b");
     self endon(#"death");
     self.lunge_rumble = 0;
-    while (1) {
+    while (true) {
         if (function_c5afdb1b(localclientnum) && !self.lunge_rumble) {
             self playrumblelooponentity(localclientnum, "blade_lunge_loop");
             self.lunge_rumble = 1;

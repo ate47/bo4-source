@@ -20,15 +20,15 @@
 function is_winner(outcome, team_or_player) {
     if (isplayer(team_or_player)) {
         if (outcome.players.size && outcome.players[0] == team_or_player) {
-            return 1;
+            return true;
         }
         if (isdefined(outcome.team) && outcome.team == team_or_player.team) {
-            return 1;
+            return true;
         }
     } else if (isdefined(outcome.team) && outcome.team == team_or_player) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -170,7 +170,7 @@ function assertproperplacement() {
                 /#
                     assertmsg("<unknown string>");
                 #/
-                return;
+                break;
             }
         }
     #/
@@ -192,7 +192,7 @@ function playtickingsound(gametype_tick_sound) {
     self endon(#"death", #"stop_ticking");
     level endon(#"game_ended");
     time = level.bombtimer;
-    while (1) {
+    while (true) {
         self playsound(gametype_tick_sound);
         if (time > 10) {
             time = time - 1;
@@ -402,7 +402,7 @@ function getestimatedtimeuntilscorelimit(team) {
 // Size: 0x48
 function rumbler() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         wait(0.1);
         self playrumbleonentity("damage_heavy");
     }
@@ -438,25 +438,25 @@ function waitfortimeornotifynoartillery(time, notifyname) {
 // Size: 0x140
 function isheadshot(weapon, shitloc, smeansofdeath, einflictor) {
     if (shitloc != "head" && shitloc != "helmet") {
-        return 0;
+        return false;
     }
     switch (smeansofdeath) {
     case #"mod_melee_assassinate":
     case #"mod_melee":
-        return 0;
+        return false;
     case #"mod_impact":
         baseweapon = weapons::getbaseweapon(weapon);
         if (!weapon.isballisticknife && baseweapon != level.weaponspecialcrossbow && baseweapon != level.weaponflechette) {
-            return 0;
+            return false;
         }
         break;
     }
     if (killstreaks::is_killstreak_weapon(weapon)) {
         if (!isdefined(einflictor) || !isdefined(einflictor.controlled) || einflictor.controlled == 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -516,10 +516,10 @@ function isexcluded(entity, entitylist) {
     }
     for (index = 0; index < entitylist.size; index++) {
         if (entity == entitylist[index]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_utils/globallogic_utils
@@ -587,9 +587,9 @@ function print_map_errors() {
             util::error("<unknown string>");
         #/
         callback::abort_level();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_utils/globallogic_utils

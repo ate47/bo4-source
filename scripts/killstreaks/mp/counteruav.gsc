@@ -203,7 +203,7 @@ function generaterandompoints(count) {
 // Checksum 0xcf44aa77, Offset: 0xd20
 // Size: 0x12e
 function movementmanagerthink(teamorentnum) {
-    while (1) {
+    while (true) {
         level waittill(#"counter_uav_updated");
         activecount = 0;
         while (level.activecounteruavs[teamorentnum] > 0) {
@@ -345,15 +345,15 @@ function function_af281272() {
 // Size: 0x2c0
 function activatecounteruav() {
     if (self killstreakrules::iskillstreakallowed("counteruav", self.team) == 0) {
-        return 0;
+        return false;
     }
     killstreak_id = self killstreakrules::killstreakstart("counteruav", self.team);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     counteruav = spawncounteruav(self, killstreak_id);
     if (!isdefined(counteruav)) {
-        return 0;
+        return false;
     }
     counteruav clientfield::set("enemyvehicle", 1);
     counteruav.killstreak_id = killstreak_id;
@@ -368,7 +368,7 @@ function activatecounteruav() {
     counteruav killstreaks::play_pilot_dialog_on_owner("arrive", "counteruav", killstreak_id);
     counteruav thread killstreaks::player_killstreak_threat_tracking("counteruav");
     self stats::function_e24eec31(getweapon("counteruav"), #"used", 1);
-    return 1;
+    return true;
 }
 
 // Namespace counteruav/counteruav
@@ -445,7 +445,7 @@ function configureteampost(owner, ishacked) {
 // Size: 0x72
 function listenformove() {
     self endon(#"death", #"leaving");
-    while (1) {
+    while (true) {
         self thread counteruavmove();
         level waittill("counter_uav_move_" + self.team, "counter_uav_move_" + self.ownerentnum);
     }
@@ -607,18 +607,18 @@ function enemycounteruavactive() {
                 continue;
             }
             if (teamhasactivecounteruav(team)) {
-                return 1;
+                return true;
             }
         }
     } else {
         enemies = self teams::getenemyplayers();
         foreach (player in enemies) {
             if (player hasactivecounteruav()) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace counteruav/counteruav
@@ -724,7 +724,7 @@ function resetactivecounteruav() {
 // Checksum 0x507681b6, Offset: 0x2900
 // Size: 0xe4
 function watchcounteruavs() {
-    while (1) {
+    while (true) {
         level waittill(#"counter_uav_updated");
         foreach (player in level.players) {
             if (player enemycounteruavactive()) {

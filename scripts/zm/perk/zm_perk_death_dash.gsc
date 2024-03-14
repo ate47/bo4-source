@@ -109,7 +109,7 @@ function take_perk(b_pause, str_perk, str_result, n_slot) {
 function private function_3b2d1c3e() {
     self endon(#"hash_34c48ce219158e58", #"death");
     self thread function_607b1eb0();
-    while (1) {
+    while (true) {
         self waittill(#"hash_1790edc896f02840");
         if (!self.var_d675d730.var_d566ea4) {
             self thread function_b1d12202();
@@ -125,7 +125,7 @@ function private function_607b1eb0() {
     level endon(#"end_game");
     self endon(#"hash_34c48ce219158e58", #"death");
     self.var_d675d730.var_af84e9df = 0;
-    while (1) {
+    while (true) {
         if (self.var_d675d730.var_d566ea4 === 1 || !function_69153101()) {
             self function_3d5b29a6();
             waitframe(1);
@@ -197,9 +197,9 @@ function private function_f3d1b75c() {
         waitframe(1);
     }
     if (self getstance() === "stand") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash
@@ -237,7 +237,7 @@ function function_aeda9580(var_8e317f6c) {
     self.var_d675d730.var_e09a4919 = gettime();
     var_fa1d6773 = cos(15);
     var_63883896 = 0;
-    while (1) {
+    while (true) {
         var_405918e8 = lerpfloat(0.2, 1, var_63883896 / 3);
         self setvelocity(var_8e317f6c * var_405918e8);
         self setplayerangles(vectortoangles(var_8e317f6c * (1, 1, 0)));
@@ -280,7 +280,7 @@ function function_d5fc01cc() {
 function function_749be7c5() {
     self endon(#"hash_6e2a731bbdb686b8", #"hash_34c48ce219158e58", #"death", #"disconnect", #"bled_out");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         var_baf7d060 = getaiteamarray(level.zombie_team);
         var_a812a69b = self.origin + anglestoforward(self.angles) * 40;
         a_ai_zombies = array::get_all_closest(var_a812a69b, var_baf7d060, undefined, undefined, 80);
@@ -382,7 +382,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self endon(#"hash_21b3435b159fa349", #"disconnect");
     self.var_d675d730.var_471d9402 = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_d675d730.var_775a4a2a, 0, #"perk_dying_wish");
-    while (1) {
+    while (true) {
         wait(0.1);
         self.var_d675d730.var_471d9402 = self.var_d675d730.var_471d9402 - 0.1;
         self.var_d675d730.var_471d9402 = math::clamp(self.var_d675d730.var_471d9402, 0, var_85dcb56c);
@@ -420,21 +420,21 @@ function reset_cooldown() {
 // Size: 0x90
 function private function_69153101() {
     if (zm_trial_restrict_loadout::is_active()) {
-        return 0;
+        return false;
     }
     if (namespace_fcd611c3::is_active()) {
-        return 0;
+        return false;
     }
     if (namespace_b28d86fd::is_active()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_e501f3b5) && level.var_e501f3b5) {
-        return 0;
+        return false;
     }
     if (level.var_2439365b === #"turret") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_perk_death_dash/zm_perk_death_dash

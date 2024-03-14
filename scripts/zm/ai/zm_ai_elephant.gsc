@@ -307,18 +307,18 @@ function private function_7d162bd0(projectile, var_e15d8b1f, var_c3f91959) {
 // Size: 0xa0
 function private function_5ae551a6(enemy, projectile) {
     if (isdefined(enemy.knockdown) && enemy.knockdown) {
-        return 0;
+        return false;
     }
     if (!isdefined(projectile)) {
-        return 0;
+        return false;
     }
     if (gibserverutils::isgibbed(enemy, 384)) {
-        return 0;
+        return false;
     }
     if (distancesquared(enemy.origin, projectile.origin) > 250 * 250) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_elephant/zm_ai_elephant

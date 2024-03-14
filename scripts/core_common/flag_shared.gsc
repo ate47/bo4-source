@@ -175,10 +175,10 @@ function get(str_flag) {
 function get_any(&array) {
     foreach (str_flag in array) {
         if (get(str_flag)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace flag/flag_shared
@@ -188,10 +188,10 @@ function get_any(&array) {
 function get_all(&array) {
     foreach (str_flag in array) {
         if (!get(str_flag)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace flag/flag_shared
@@ -354,7 +354,7 @@ function wait_till_clear_all_timeout(n_timeout, a_flags) {
 // Size: 0xb0
 function wait_till_clear_any(a_flags) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (flag in a_flags) {
             if (!get(flag)) {
                 return flag;
@@ -398,8 +398,8 @@ function delete(str_flag) {
 function script_flag_wait() {
     if (isdefined(self.script_flag_wait)) {
         self wait_till(self.script_flag_wait);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

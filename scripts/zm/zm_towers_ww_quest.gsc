@@ -233,10 +233,10 @@ function function_a58dfad4() {
         switch (s_part.script_noteworthy) {
         case #"rough_statue":
             self.var_9ce49aba = s_part;
-            continue;
+            break;
         case #"serket_spile":
             self.var_b56f9e01 = s_part;
-            continue;
+            break;
         }
     }
 }
@@ -344,7 +344,7 @@ function function_1308049e(e_player) {
 // Size: 0x148
 function function_d7f0e50e() {
     level endon(#"hash_30e0e4bbbfc9b7d8");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = level waittill(#"trap_activated");
         e_trap = s_notify.trap;
@@ -531,7 +531,7 @@ function function_dd053937(b_skipped) {
         level flag::wait_till_any(array(#"hash_d9ce740cc4b8285", #"hash_200151b21f16734f"));
         if (level flag::get(#"hash_200151b21f16734f")) {
             enable_despawn = 1;
-            return;
+            break;
         }
     }
 }
@@ -675,7 +675,7 @@ function function_ac4e38bc(b_skipped) {
         e_player = s_waitresult.who;
         if (isplayer(e_player)) {
             b_planted = 1;
-            return;
+            break;
         }
     }
 }
@@ -886,7 +886,7 @@ function function_d317ceba() {
 // Size: 0x12e
 function function_f250013e() {
     level endon(#"hash_77ff9a8101ea687b", #"fire_sale_on");
-    while (1) {
+    while (true) {
         str_state = self zm_magicbox::get_magic_box_zbarrier_state();
         n_index = array::find(level.chests, self.owner);
         switch (str_state) {
@@ -911,7 +911,7 @@ function function_f250013e() {
 // Size: 0x88
 function function_9b311308() {
     level endon(#"hash_77ff9a8101ea687b");
-    while (1) {
+    while (true) {
         level waittill(#"fire_sale_on");
         self function_2d53ee2a();
         level waittill(#"fire_sale_off");
@@ -1024,7 +1024,7 @@ function function_9da58e50() {
     playsoundatposition(#"hash_f481d0cba05eda5", var_2002b43f.origin);
     var_2002b43f clientfield::set("" + #"hash_3974bea828fbf7f7", 1);
     var_2002b43f clientfield::set("" + #"hash_3a51c9895d4afcf7", 1);
-    while (1) {
+    while (true) {
         var_2002b43f waittill(#"zbarrier_state_change");
         if (var_2002b43f getzbarrierpiecestate(2) === "opening") {
             break;

@@ -16,7 +16,7 @@ function init() {
 function function_c720fa94() {
     var_e323931b = getent("e_doomsday_clock_min_hand", "targetname");
     var_e323931b.position = 0;
-    while (1) {
+    while (true) {
         level waittill(#"update_doomsday_clock");
         level thread update_doomsday_clock(var_e323931b);
     }

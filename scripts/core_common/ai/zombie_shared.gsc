@@ -58,11 +58,11 @@ function lookatanimations(leftanim, rightanim) {
 function handledogsoundnotetracks(note) {
     if (note == "sound_dogstep_run_default" || note == "dogstep_rf" || note == "dogstep_lf") {
         self playsound(#"fly_dog_step_run_default");
-        return 1;
+        return true;
     }
     prefix = getsubstr(note, 0, 5);
     if (prefix != "sound") {
-        return 0;
+        return false;
     }
     alias = "aml" + getsubstr(note, 5);
     if (isalive(self)) {
@@ -70,7 +70,7 @@ function handledogsoundnotetracks(note) {
     } else {
         self thread sound::play_in_space(alias, self gettagorigin("tag_eye"));
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_shared/zombie_shared
@@ -299,27 +299,27 @@ function handlenotetrack(note, flagname, customfunction, var1) {
         return note;
     case #"hash_701bc5c059dfaa52":
         self thread sound::play_in_space("fly_gear_enemy", self gettagorigin("TAG_WEAPON_RIGHT"));
-        return;
+        break;
     case #"hash_5f5e275b9f3b93ee":
         self thread sound::play_in_space("fly_gear_enemy_large", self gettagorigin("TAG_WEAPON_RIGHT"));
-        return;
+        break;
     case #"no death":
         self.a.nodeath = 1;
-        return;
+        break;
     case #"no pain":
         self.allowpain = 0;
-        return;
+        break;
     case #"hash_50c6c08f5de3ec2a":
         self.allowpain = 1;
-        return;
+        break;
     case #"anim_melee = right":
     case #"hash_39ec7b0969bab796":
         self.a.meleestate = "right";
-        return;
+        break;
     case #"hash_1791db148d16d825":
     case #"hash_6b554a9080ec8b07":
         self.a.meleestate = "left";
-        return;
+        break;
     case #"swap taghelmet to tagleft":
         if (isdefined(self.hatmodel)) {
             if (isdefined(self.helmetsidemodel)) {
@@ -330,7 +330,7 @@ function handlenotetrack(note, flagname, customfunction, var1) {
             self attach(self.hatmodel, "TAG_WEAPON_LEFT");
             self.hatmodel = undefined;
         }
-        return;
+        break;
     default:
         if (isdefined(customfunction)) {
             if (!isdefined(var1)) {
@@ -339,7 +339,7 @@ function handlenotetrack(note, flagname, customfunction, var1) {
                 return [[ customfunction ]](note, var1);
             }
         }
-        return;
+        break;
     }
 }
 
@@ -504,7 +504,7 @@ function movetooriginovertime(origin, time) {
 // Checksum 0x85020d4f, Offset: 0x1a30
 // Size: 0x8
 function returntrue() {
-    return 1;
+    return true;
 }
 
 // Namespace zombie_shared/zombie_shared

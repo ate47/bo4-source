@@ -486,7 +486,7 @@ function zombie_scan_for_threats(actionparams) {
     while (!self bot_action::function_cf788c22() && self bot_action::is_target_enemy(actionparams) && actionparams.targetvisible == targetvisible) {
         trigger = function_d41104ab(bot::get_interact());
         if (isdefined(trigger) && self bot::function_914feddd() && function_f59547eb(trigger)) {
-            return;
+            break;
         }
         if (targetvisible && self bot_action::function_ee402bf6(actionparams)) {
             self bot_action::function_8a2b82ad(actionparams);

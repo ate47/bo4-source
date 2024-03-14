@@ -76,7 +76,7 @@ function private dart_static_postfx(localclientnum) {
     self notify("3edfd3cf94760371");
     self endon("3edfd3cf94760371");
     self endon(#"death", #"exit_vehicle", #"hash_16c59bda348653cd");
-    while (1) {
+    while (true) {
         vehicle = getplayervehicle(self);
         if (isdefined(vehicle)) {
             break;
@@ -85,7 +85,7 @@ function private dart_static_postfx(localclientnum) {
     }
     vehicle endon(#"death");
     filter::init_filter_vehicle_hijack_oor(self);
-    while (1) {
+    while (true) {
         var_e96a9222 = self clientfield::get_to_player("dart_wz_out_of_circle") / 31;
         var_2a1bc201 = distance(self.origin, vehicle.origin);
         if (1 && var_2a1bc201 < 7000 && var_e96a9222 <= 0) {
@@ -121,7 +121,7 @@ function timeout_beep(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     interval = 1;
     time = gettime();
     var_ff8d278a = time + 30000 - 4000;
-    while (1) {
+    while (true) {
         var_91e09a3a = 1;
         driver = self getlocalclientdriver();
         if (isdefined(driver)) {

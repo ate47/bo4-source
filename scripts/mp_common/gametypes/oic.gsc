@@ -328,12 +328,12 @@ function giveammo(amount) {
 // Size: 0x56
 function shouldreceivesurvivorbonus() {
     if (isalive(self)) {
-        return 1;
+        return true;
     }
     if (self.hasspawned && self.pers[#"lives"] > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace oic/oic

@@ -34,10 +34,10 @@ function bouncingbetty_state_change(localclientnum, oldval, newval, bnewent, bin
     switch (newval) {
     case 1:
         self thread bouncingbetty_detonating(localclientnum);
-        return;
+        break;
     case 2:
         self thread bouncingbetty_deploying(localclientnum);
-        return;
+        break;
     }
 }
 
@@ -70,7 +70,7 @@ function bouncingbetty_detonating(localclientnum) {
 // Size: 0x20e
 function watchforexplosionnotetracks(localclientnum, up, forward) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         notetrack = undefined;
         notetrack = self waittill(#"explode_1st", #"explode_2nd", #"explode_main");
         switch (notetrack._notify) {

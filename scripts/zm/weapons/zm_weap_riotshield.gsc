@@ -151,7 +151,7 @@ function player_init_shield_health(weapon, var_cd9d17e0 = 0) {
     if (var_cd9d17e0) {
         self givemaxammo(weapon);
     }
-    return 1;
+    return true;
 }
 
 // Namespace riotshield/zm_weap_riotshield
@@ -170,7 +170,7 @@ function player_set_shield_health(damage, max_damage) {
 // Size: 0x1cc
 function function_d987f765() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"carpenter_started");
         if (zm_powerups::function_cfd04802(#"carpenter") && isplayer(s_waitresult.var_264cf1f9)) {
@@ -508,7 +508,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
         case #"enhanced":
             if (test_range_squared < fling_range_squared) {
                 if (distancesquared(test_origin, radial_origin) > cylinder_radius_squared) {
-                    continue;
+                    break;
                 }
                 level.riotshield_fling_enemies[level.riotshield_fling_enemies.size] = e_target;
                 dist_mult = (fling_range_squared - test_range_squared) / fling_range_squared;
@@ -521,14 +521,14 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 level.riotshield_fling_vecs[level.riotshield_fling_vecs.size] = fling_vec;
             } else if (var_606a8462 && test_range_squared < knockdown_range_squared) {
                 if (distancesquared(test_origin, radial_origin) > var_8f9e26e4) {
-                    continue;
+                    break;
                 }
                 level.riotshield_knockdown_enemies[level.riotshield_knockdown_enemies.size] = e_target;
                 if (var_606a8462 && test_range_squared < gib_range_squared) {
                     level.riotshield_knockdown_gib[level.riotshield_knockdown_gib.size] = 1;
                 }
             }
-            continue;
+            break;
         case #"heavy":
         case #"miniboss":
             if (self hasperk(#"specialty_mod_shield")) {
@@ -543,7 +543,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 level.var_21ffc192[level.var_21ffc192.size] = e_target;
                 e_target dodamage(3000, self.origin, self, self, "", "MOD_IMPACT");
             }
-            continue;
+            break;
         case #"popcorn":
             if (test_range_squared < fling_range_squared) {
                 if (!isdefined(level.var_21ffc192)) {
@@ -554,7 +554,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 level.var_21ffc192[level.var_21ffc192.size] = e_target;
                 e_target dodamage(e_target.health + 100, self.origin, self, self, "", "MOD_IMPACT");
             }
-            continue;
+            break;
         default:
             if (!isdefined(level.var_21ffc192)) {
                 level.var_21ffc192 = [];
@@ -563,7 +563,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
             }
             level.var_21ffc192[level.var_21ffc192.size] = e_target;
             e_target dodamage(3000, self.origin, self, self, "", "MOD_IMPACT");
-            continue;
+            break;
         }
     }
 }

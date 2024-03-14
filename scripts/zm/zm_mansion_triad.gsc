@@ -485,7 +485,7 @@ function kp_cleanup() {
 // Checksum 0x65b899ac, Offset: 0x30d0
 // Size: 0x1a0
 function function_55b79f54() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -535,7 +535,7 @@ function function_2aa04f9f() {
     level endon(#"hash_12cb63ce83e1c017");
     self endon(self.script_noteworthy + "_done");
     self.t_dmg = spawn("trigger_damage", self.origin, 0, 46, 64);
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self.t_dmg waittill(#"damage");
         if (isplayer(s_notify.attacker) && mansion_util::is_shield(s_notify.weapon) && s_notify.mod === "MOD_MELEE" && isdefined(s_notify.attacker.is_blue) && s_notify.attacker.is_blue) {
@@ -698,7 +698,7 @@ function function_899525c7() {
 // Checksum 0x34552550, Offset: 0x3f10
 // Size: 0x128
 function function_566d3cd2() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -734,7 +734,7 @@ function function_3c832025() {
 // Size: 0xe0
 function function_40e665ab() {
     self endon(#"extinguish");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (!isplayer(waitresult.activator)) {
@@ -784,7 +784,7 @@ function function_4c8574b3() {
 // Size: 0x368
 function function_265858d6() {
     level endon(#"hash_75774dc13775a414");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1419,7 +1419,7 @@ function forest_stone() {
 // Size: 0x4f4
 function function_31e641f5() {
     level endon(#"hash_106bb5214b1fb1e6");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         b_using = 1;
         n_time = 0;
@@ -1507,7 +1507,7 @@ function function_6f244e() {
 function function_3c07c22e() {
     level endon(#"end_game", #"hash_681be3e1ac458d79", #"hash_106bb5214b1fb1e6");
     self endon(#"death");
-    while (1) {
+    while (true) {
         level waittill(#"hash_597743410e6561dd");
         var_1ef7b21 = randomintrange(20, 40);
         if (randomint(100) < 50) {
@@ -1622,7 +1622,7 @@ function function_b646e75d() {
 // Size: 0xb8
 function function_c9ebaa3() {
     level endon(#"hash_106bb5214b1fb1e6");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1739,7 +1739,7 @@ function private function_3d151222(var_f49ead21, var_5e1197bc) {
             var_fafc280c = hash(str_zone);
             if (array::contains(var_4421515, var_fafc280c)) {
                 e_player thread zm_audio::create_and_play_dialog(var_f49ead21, var_5e1197bc, undefined, 1);
-                return;
+                break;
             }
         }
     }
@@ -1883,7 +1883,7 @@ function function_de7be188(a_ents) {
 // Size: 0x334
 function trigger_forest_entrance() {
     e_door = getent("forest_stone_holder", "targetname");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         e_door playsound(#"hash_4a0656a938f60847");
         b_using = 1;

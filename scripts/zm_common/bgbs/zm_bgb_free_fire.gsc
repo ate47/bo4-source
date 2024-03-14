@@ -55,9 +55,9 @@ function disable() {
 function validation() {
     w_current = self getcurrentweapon();
     if (isdefined(w_current.isheroweapon) && w_current.isheroweapon || zm_weapons::is_wonder_weapon(w_current)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_free_fire/zm_bgb_free_fire
@@ -70,7 +70,7 @@ function function_1ff1beff() {
     if (!(isdefined(w_current.isheroweapon) && w_current.isheroweapon) && !zm_weapons::is_wonder_weapon(w_current)) {
         self perks::perk_setperk("specialty_freefire");
     }
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         w_check = s_notify.weapon;

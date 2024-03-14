@@ -40,12 +40,12 @@ function on_grenade_fired(params) {
     case #"flare_gun":
         grenade function_4861487f(weapon, self);
         grenade thread function_cd8ee3c5();
-        return;
+        break;
     case #"flare_gun_veh":
         grenade function_4861487f(weapon, self);
         grenade thread function_f3edce9a();
     default:
-        return;
+        break;
     }
 }
 
@@ -104,7 +104,7 @@ function function_f3edce9a() {
 // Checksum 0xe49c317b, Offset: 0x598
 // Size: 0x18
 function grenade_safe_to_throw(player, weapon) {
-    return 1;
+    return true;
 }
 
 // Namespace wz_player/player

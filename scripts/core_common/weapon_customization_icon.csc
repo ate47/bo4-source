@@ -42,7 +42,7 @@ function wc_icon_setup(localclientnum) {
 // Size: 0x90
 function update_wc_icon_extracam(localclientnum) {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill("process_wc_icon_extracam_" + localclientnum);
         setup_wc_weapon_model(localclientnum, waitresult.icon);

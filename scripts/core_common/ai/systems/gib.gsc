@@ -113,13 +113,13 @@ function private _getgibextramodel(entity, gibflag) {
 // Size: 0x68
 function private _gibextra(entity, gibflag) {
     if (isgibbed(entity, gibflag)) {
-        return 0;
+        return false;
     }
     if (!_hasgibdef(entity)) {
-        return 0;
+        return false;
     }
     entity thread _gibextrainternal(entity, gibflag);
-    return 1;
+    return true;
 }
 
 // Namespace gibserverutils/gib
@@ -159,13 +159,13 @@ function private _gibextrainternal(entity, gibflag) {
 // Size: 0x88
 function private _gibentity(entity, gibflag) {
     if (isgibbed(entity, gibflag) || !_hasgibpieces(entity, gibflag)) {
-        return 0;
+        return false;
     }
     if (!_hasgibdef(entity)) {
-        return 0;
+        return false;
     }
     entity thread _gibentityinternal(entity, gibflag);
-    return 1;
+    return true;
 }
 
 // Namespace gibserverutils/gib
@@ -289,17 +289,17 @@ function private _setgibbed(entity, gibflag, gibdir) {
 // Size: 0xac
 function annihilate(entity) {
     if (!_hasgibdef(entity)) {
-        return 0;
+        return false;
     }
     gibpiecestruct = function_69db754(entity.gibdef, 2, entity);
     if (isdefined(gibpiecestruct)) {
         if (isdefined(gibpiecestruct.gibfx)) {
             _setgibbed(entity, 2, undefined);
             entity thread _annihilate(entity);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace gibserverutils/gib
@@ -344,14 +344,14 @@ function gibhead(entity) {
 // Size: 0xb8
 function gibleftarm(entity) {
     if (isgibbed(entity, 16)) {
-        return 0;
+        return false;
     }
     if (_gibentity(entity, 32)) {
         destructserverutils::destructleftarmpieces(entity);
         level notify(#"gib", {#area:"left_arm", #attacker:self.attacker, #entity:entity});
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gibserverutils/gib
@@ -360,15 +360,15 @@ function gibleftarm(entity) {
 // Size: 0xd0
 function gibrightarm(entity) {
     if (isgibbed(entity, 32)) {
-        return 0;
+        return false;
     }
     if (_gibentity(entity, 16)) {
         destructserverutils::destructrightarmpieces(entity);
         entity thread shared::dropaiweapon();
         level notify(#"gib", {#area:"right_arm", #attacker:self.attacker, #entity:entity});
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gibserverutils/gib
@@ -379,9 +379,9 @@ function gibleftleg(entity) {
     if (_gibentity(entity, 256)) {
         destructserverutils::destructleftlegpieces(entity);
         level notify(#"gib", {#area:"left_leg", #attacker:self.attacker, #entity:entity});
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gibserverutils/gib
@@ -392,9 +392,9 @@ function gibrightleg(entity) {
     if (_gibentity(entity, 128)) {
         destructserverutils::destructrightlegpieces(entity);
         level notify(#"gib", {#area:"right_leg", #attacker:self.attacker, #entity:entity});
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gibserverutils/gib
@@ -406,9 +406,9 @@ function giblegs(entity) {
         destructserverutils::destructrightlegpieces(entity);
         destructserverutils::destructleftlegpieces(entity);
         level notify(#"gib", {#area:"both_legs", #attacker:self.attacker, #entity:entity});
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gibserverutils/gib

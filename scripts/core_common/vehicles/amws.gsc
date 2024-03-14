@@ -149,7 +149,7 @@ function state_driving_update(params) {
     }
     driver = self getseatoccupant(0);
     if (isplayer(driver)) {
-        while (1) {
+        while (true) {
             driver endon(#"disconnect");
             driver util::waittill_vehicle_move_up_button_pressed();
             if (self.cobra === 0) {
@@ -240,7 +240,7 @@ function state_stationary_update(params) {
     starttime = gettime();
     util::cooldown("rocket", 2);
     evade_now = 0;
-    while (1) {
+    while (true) {
         evade_now = self.settings.evade_enemies_locked_on_me === 1 && self.locked_on || self.settings.evade_enemies_locking_on_me === 1 && self.locking_on;
         if (util::timesince(starttime) > maxtime || evade_now) {
             break;
@@ -341,7 +341,7 @@ function turretfireupdate() {
     self endon(#"death", #"change_state");
     self turretsetontargettolerance(0, 7);
     self turretsetontargettolerance(1, 7);
-    while (1) {
+    while (true) {
         if (self.avoid_shooting_owner === 1 && isdefined(self.owner)) {
             if (self vehicle_ai::owner_in_line_of_fire()) {
                 wait(0.5);
@@ -494,7 +494,7 @@ function state_combat_update(params) {
 // Size: 0x160
 function function_64609aab(entity, enemy) {
     if (!isdefined(enemy) || !isdefined(entity)) {
-        return 0;
+        return false;
     }
     var_31e097c5 = entity.origin + vectorscale((0, 0, 1), 30);
     v_to_enemy = enemy.origin - entity.origin;
@@ -505,9 +505,9 @@ function function_64609aab(entity, enemy) {
     var_ece22384 = sighttracepassed(var_31e097c5, var_3a2b9b1a, 0, entity, enemy);
     var_1159ae8 = sighttracepassed(var_31e097c5 + var_5d132997, var_3a2b9b1a + var_5d132997, 0, entity, enemy);
     if (var_ece22384 === 0 && var_1159ae8 !== 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace amws/amws
@@ -939,7 +939,7 @@ function path_update_interrupt() {
     self notify(#"path_update_interrupt_by_attacker");
     self endon(#"death", #"change_state", #"near_goal", #"reached_end_node", #"amws_end_interrupt_watch", #"path_update_interrupt_by_attacker");
     wait(1);
-    while (1) {
+    while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
                 wait(0.2);

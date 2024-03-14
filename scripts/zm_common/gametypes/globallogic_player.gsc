@@ -261,11 +261,11 @@ function callback_playerconnect() {
 function spectate_player_watcher() {
     self endon(#"disconnect");
     self.watchingactiveclient = 1;
-    while (1) {
+    while (true) {
         if (self.pers[#"team"] != "spectator" || level.gameended) {
             self val::reset(#"spectate", "freezecontrols");
             self.watchingactiveclient = 0;
-            return;
+            break;
         }
         /#
             if (!level.splitscreen && !level.hardcoremode && getdvarint(#"scr_showperksonspawn", 0) == 1 && game.state != "<unknown string>" && !isdefined(self.perkhudelem)) {

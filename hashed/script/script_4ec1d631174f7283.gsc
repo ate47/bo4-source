@@ -52,7 +52,7 @@ function __main__() {
 // Size: 0xa0
 function private function_4d231aa() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         wait(3);
         self setblackboardattribute("_stance", "crouch");
         wait(3);
@@ -111,7 +111,7 @@ function function_1c989dc4() {
 // Size: 0xf0
 function private function_b7f08e2d() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitframe(1);
         enabled = getdvarint(#"hash_6ba94f3ad6709984", 0);
         if (enabled) {
@@ -224,7 +224,7 @@ function private function_ae4d6b1b() {
 // Size: 0x302
 function private function_2165e851() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         waitframe(1);
         players = getplayers();
         if (players.size > 0 && isdefined(level.var_8a8728c6) && isdefined(level.var_41c80f7d) && level.var_41c80f7d) {

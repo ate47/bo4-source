@@ -119,7 +119,7 @@ function blink_fx_and_sound(localclientnum, soundalias) {
     if (!isdefined(self.interval)) {
         self.interval = 1;
     }
-    while (1) {
+    while (true) {
         self playsound(localclientnum, soundalias);
         self spawn_solid_fx(localclientnum);
         util::server_wait(localclientnum, self.interval / 2);
@@ -186,7 +186,7 @@ function loop_local_sound(localclientnum, alias, interval, fx) {
     if (!isdefined(self.interval)) {
         self.interval = interval;
     }
-    while (1) {
+    while (true) {
         self playsound(localclientnum, alias);
         self spawn_solid_fx(localclientnum);
         util::server_wait(localclientnum, self.interval / 2);
@@ -248,7 +248,7 @@ function blink_light(localclientnum) {
 // Size: 0x138
 function collisionhandler(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         hip = waitresult.velocity;
@@ -274,7 +274,7 @@ function collisionhandler(localclientnum) {
 // Size: 0x70
 function enginestutterhandler(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"veh_engine_stutter");
         if (self function_4add50a7()) {
             function_36e4ebd4(localclientnum, "rcbomb_engine_stutter");
@@ -328,7 +328,7 @@ function qrdrone_watch_distance() {
     soundent = spawn(0, self.origin, "script_origin");
     soundent linkto(self);
     self thread qrdrone_staticstopondeath(soundent);
-    while (1) {
+    while (true) {
         if (!self qrdrone_in_range()) {
             staticalpha = 0;
             while (!self qrdrone_in_range()) {
@@ -357,10 +357,10 @@ function qrdrone_watch_distance() {
 function qrdrone_in_range() {
     if (self.origin[2] < self.maxheight && self.origin[2] > self.minheight) {
         if (self isinsideheightlock()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace qrdrone/qrdrone
@@ -374,7 +374,7 @@ function qrdrone_staticfade(staticalpha, sndent, sid) {
         if (staticalpha <= 0) {
             sndent stopallloopsounds(0.5);
             self vehicle::set_static_amount(0);
-            return;
+            break;
         }
         setsoundvolumerate(sid, 0.6);
         setsoundvolume(sid, staticalpha);

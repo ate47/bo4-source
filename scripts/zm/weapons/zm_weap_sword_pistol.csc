@@ -140,13 +140,13 @@ function swordpistol_rumble(localclientnum, oldvalue, newvalue, bnewent, binitia
         switch (newvalue) {
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_swordpistol_melee_rumble");
-            return;
+            break;
         case 4:
             self playrumbleonentity(localclientnum, "zm_weap_swordpistol_shoot_rumble");
-            return;
+            break;
         case 5:
             self playrumbleonentity(localclientnum, "zm_weap_swordpistol_special_rumble");
-            return;
+            break;
         }
     }
 }

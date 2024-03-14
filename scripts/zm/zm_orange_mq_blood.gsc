@@ -331,7 +331,7 @@ function function_9a991dc2(n_index) {
 // Size: 0x266
 function function_c2d403f(n_index) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {

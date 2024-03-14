@@ -84,7 +84,7 @@ function function_5a6d95() {
             if (function_ffdbe8c2(buoy_stash) == 2) {
                 var_63ee2ffd = 1;
                 self clientfield::set("buoy_light_fx_changed", 1);
-                return;
+                break;
             }
             wait(1);
         }

@@ -122,17 +122,17 @@ function function_1792ae3(e_item) {
 // Size: 0x98
 function function_6fb01110(player) {
     if (self.stub.in_use === 1) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.var_b63bccb7)) {
-        return 0;
+        return false;
     }
     if (function_8b1a219a()) {
         self sethintstring(#"hash_6d85deef99bf45a0");
     } else {
         self sethintstring(#"hash_3d0bedfa0fcd62c");
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a5657ff1/namespace_a5657ff1
@@ -144,7 +144,7 @@ function function_f370d99() {
     for (i = 0; i < level.var_5849269a.size; i++) {
         if (level.var_5849269a[i].in_inventory) {
             level.var_b63bccb7 = level.var_5849269a[i];
-            return;
+            break;
         }
     }
 }
@@ -155,7 +155,7 @@ function function_f370d99() {
 // Size: 0x50
 function function_aa07edab() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         self.stub notify(#"play_audio");
     }
@@ -170,7 +170,7 @@ function function_8352562a() {
     var_e578920c = 0;
     screen_a = getent("projecter_screen_a", "targetname");
     screen_b = getent("projecter_screen_b", "targetname");
-    while (1) {
+    while (true) {
         self waittill(#"play_audio");
         screen_b show();
         screen_a hide();
@@ -261,7 +261,7 @@ function function_ed9142aa(player) {
     self usetriggerrequirelookat();
     self setcursorhint("HINT_NOICON");
     self sethintstring("");
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a5657ff1/namespace_a5657ff1
@@ -687,7 +687,7 @@ function function_db17af3a() {
             if (var_8c6394e3 == "walk" || var_8c6394e3 == "run") {
                 self zombie_utility::set_zombie_run_cycle("sprint");
             }
-            return;
+            break;
         }
         wait(0.1);
     }

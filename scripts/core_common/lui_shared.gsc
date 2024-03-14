@@ -369,7 +369,7 @@ function private _play_movie_for_player(str_movie, str_type, show_black_screen, 
         if (issubstr(str_type, "additive")) {
             [[ lui_menu ]]->set_additive(self, 1);
         }
-        while (1) {
+        while (true) {
             n_start_time = gettime();
             if (isdefined(n_timeout)) {
                 waitresult = undefined;
@@ -387,7 +387,7 @@ function private _play_movie_for_player(str_movie, str_type, show_black_screen, 
                 }
                 [[ lui_menu ]]->close(self);
                 self notify(#"movie_done");
-                return;
+                break;
             }
         }
     }
@@ -461,7 +461,7 @@ function private function_1bc580af() {
     if (isdefined(lui_menu)) {
         [[ lui_menu ]]->set_playoutromovie(self, 1);
         [[ lui_menu ]]->set_showblackscreen(self, 1);
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = self waittill(#"menuresponse");
             menu = waitresult.menu;
@@ -471,7 +471,7 @@ function private function_1bc580af() {
                 if (response === #"finished_movie_playback") {
                     [[ lui_menu ]]->close(self);
                     self notify(#"movie_done");
-                    return;
+                    break;
                 }
                 if (response === #"skippable" && isdefined(value)) {
                     [[ lui_menu ]]->registerplayer_callout_traversal(self, value);

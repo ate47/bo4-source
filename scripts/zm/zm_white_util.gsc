@@ -78,9 +78,9 @@ function function_ea6a4006() {
 // Size: 0x3e
 function function_e08cd7b(category, subcategory) {
     if (level flag::get("mee_round")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_util/zm_white_util
@@ -241,7 +241,7 @@ function function_f4a39bc4() {
 // Size: 0x3e
 function function_e95d25() {
     /#
-        while (1) {
+        while (true) {
             level waittill(#"open_sesame");
             function_f4a39bc4();
             wait(1);
@@ -269,7 +269,7 @@ function function_6f635c39(str) {
 // Size: 0x196
 function private function_20681be5() {
     if (self.b_open == 0) {
-        return 0;
+        return false;
     }
     destpos = self.origin - (0, 0, self.var_3de056e7);
     self moveto(destpos, 0.5, 0.05, 0.05);
@@ -281,7 +281,7 @@ function private function_20681be5() {
         level.zones[hash(self.var_d42d6fdf)].adjacent_zones[hash(self.var_61e10b48)].is_connected = 0;
     }
     self.b_open = 0;
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_util/zm_white_util
@@ -304,7 +304,7 @@ function function_364cd8c0(str) {
 // Size: 0x196
 function private function_46ed91c6() {
     if (self.b_open == 1) {
-        return 0;
+        return false;
     }
     destpos = self.origin + (0, 0, self.var_3de056e7);
     self moveto(destpos, 0.5, 0.05, 0.05);
@@ -316,7 +316,7 @@ function private function_46ed91c6() {
         level.zones[hash(self.var_d42d6fdf)].adjacent_zones[hash(self.var_61e10b48)].is_connected = 1;
     }
     self.b_open = 1;
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_util/zm_white_util

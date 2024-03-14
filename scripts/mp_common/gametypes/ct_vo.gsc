@@ -37,7 +37,7 @@ function get_player() {
 // Size: 0x9c
 function function_41e59aeb(a_str_vo, var_3a78a180 = 1, var_35f78012 = 0) {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (!function_5d127774()) {
             break;
         }
@@ -237,7 +237,7 @@ function function_3ca1b77d(var_d9da07d1 = 1) {
     }
     wait(0.1);
     n_start_time = gettime() / 1000;
-    while (1) {
+    while (true) {
         if (isdefined(var_d9da07d1) && var_d9da07d1) {
             if ((!isdefined(e_player.var_a10aaced) || e_player.var_a10aaced == 0) && (!isdefined(e_player.var_9e2e6113) || e_player.var_9e2e6113 <= 0)) {
                 e_player.var_9e2e6113 = 0;
@@ -267,9 +267,9 @@ function function_3ca1b77d(var_d9da07d1 = 1) {
 function function_5d127774() {
     e_player = getplayers()[0];
     if (isalive(e_player) && isdefined(e_player.var_9e2e6113) && e_player.var_9e2e6113 > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ct_vo/ct_vo
@@ -304,7 +304,7 @@ function function_dad9897f(str_vo, var_520123e0 = 45, n_wait = 30) {
         self.var_ca6e5bf1 = str_vo;
         self play_vo(str_vo, 1);
         self.var_ca6e5bf1 = undefined;
-    } while (1);
+    } while (true);
 }
 
 // Namespace ct_vo/ct_vo
@@ -452,7 +452,7 @@ function function_14b08e49(a_str_vo, var_f031f5a) {
         wait(20);
     }
     level.var_3e17f129 = 1;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_29c997df) && level.var_29c997df) {
             function_731eb7ed();
         }
@@ -505,14 +505,14 @@ function function_731eb7ed() {
 // Size: 0x106
 function function_5172b052(str_vo, str_endon_notify) {
     level endon(#"combattraining_logic_finished", str_endon_notify);
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         if (!isalive(e_player)) {
             while (function_5d127774()) {
                 waitframe(1);
             }
             function_831e0584(array(str_vo), 1);
-            while (1) {
+            while (true) {
                 e_player = getplayers()[0];
                 if (isalive(e_player)) {
                     break;
@@ -530,7 +530,7 @@ function function_5172b052(str_vo, str_endon_notify) {
 // Size: 0x13a
 function function_accb34a7(v_target_pos, var_9a9916cf, a_str_vo, str_endon, var_b181ba65) {
     level endon(#"combattraining_logic_finished", str_endon);
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         v_eye = e_player util::get_eye();
         n_dist = distance(v_eye, v_target_pos);
@@ -541,7 +541,7 @@ function function_accb34a7(v_target_pos, var_9a9916cf, a_str_vo, str_endon, var_
                     e_player thread ct_utils::function_61c3d59c(var_b181ba65, undefined);
                 }
                 function_41e59aeb(a_str_vo);
-                return;
+                break;
             }
         }
         waitframe(1);
@@ -595,7 +595,7 @@ function function_dfd7add4() {
         if (sessionmode != 4) {
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_31b5762ac1fb40cf", "<unknown string>");
             if (cmd == "<unknown string>") {

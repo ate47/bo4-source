@@ -69,7 +69,7 @@ function on_game_playing() {
     level util::delay(#"hash_35c1b03137d3be89", "game_ended", &exploder::stop_exploder, "exp_lgt_spawn_flavor");
     level util::delay(#"hash_35c1b03137d3be89", "game_ended", &function_aa8af5cd, level.var_40263d6, "evt_base_alarm");
     if (getgametypesetting(#"allowmapscripting")) {
-        if (1) {
+        if (true) {
             level thread function_3a7aa317();
         }
     }
@@ -183,10 +183,10 @@ function function_efa3251f() {
     }
     foreach (team, _ in level.teams) {
         if (game.stat[#"teamscores"][team] >= int(round_score_limit / 2)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
@@ -301,7 +301,7 @@ function function_971b8aa2(var_ae2faaca) {
 function function_6edeb4c2(rocket) {
     level endon(#"game_ended");
     rocket endon(#"stop_damage", #"death");
-    while (1) {
+    while (true) {
         self kill_equipment(self.rocket_kill_trig);
         waitframe(5);
     }
@@ -334,7 +334,7 @@ function function_34fc666e() {
 // Size: 0x76
 function function_7be405f8() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self.scene_ents = array::remove_undefined(self.scene_ents);
         if (self.scene_ents.size <= 5) {
             return;
@@ -403,10 +403,10 @@ function is_equipment(entity) {
     if (isdefined(entity.weapon)) {
         weapon = entity.weapon;
         if (weapon.name === #"ability_smart_cover" || weapon.name === #"eq_tripwire" || weapon.name === #"trophy_system" || weapon.name === #"eq_concertina_wire" || weapon.name === #"eq_sensor" || weapon.name === #"cymbal_monkey" || weapon.name === #"gadget_supplypod" || weapon.name === #"homunculus") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mp_cosmodrome_scripted/mp_cosmodrome_scripted
@@ -425,28 +425,28 @@ function kill_equipment(rocket_kill_trig) {
             switch (device.weapon.name) {
             case #"eq_tripwire":
                 device [[ level.var_2e06b76a ]]();
-                continue;
+                break;
             case #"trophy_system":
                 device [[ level.var_4f3822f4 ]]();
-                continue;
+                break;
             case #"cymbal_monkey":
                 device [[ level.var_7c5c96dc ]]();
-                continue;
+                break;
             case #"homunculus":
                 device [[ level.var_cc310d06 ]]();
-                continue;
+                break;
             case #"eq_sensor":
                 device [[ level.var_9911d36f ]]();
-                continue;
+                break;
             case #"eq_concertina_wire":
                 device [[ level.var_94029383 ]]();
-                continue;
+                break;
             case #"gadget_supplypod":
                 device notify(#"death");
-                continue;
+                break;
             default:
                 device dodamage(10000, device.origin);
-                continue;
+                break;
             }
         }
     }
@@ -493,7 +493,7 @@ function function_cd7664d5(loc, alias, color) {
 // Checksum 0xf1786b2, Offset: 0x21b8
 // Size: 0xc0
 function function_c42e2ec1() {
-    while (1) {
+    while (true) {
         wait(3);
         function_aa8af5cd(level.var_40263d6, "evt_base_alarm");
         wait(3);

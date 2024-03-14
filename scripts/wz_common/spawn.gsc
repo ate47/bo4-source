@@ -106,17 +106,17 @@ function override_spawn(ispredictedspawn) {
     self.var_7070a94c = 0;
     if (infection::function_74650d7() && self infection::is_infected()) {
         self infection::function_f488681f();
-        return 1;
+        return true;
     }
     if (!isdefined(level.var_7767cea8)) {
         self function_8cef1872();
-        return 0;
+        return false;
     }
     if (level.var_7767cea8.size < 1) {
         self.resurrect_origin = (0, 0, 0);
         self.resurrect_angles = (0, 0, 0);
         self function_8cef1872();
-        return 1;
+        return true;
     }
     teammask = getteammask(self.team);
     for (teamindex = 0; teammask > 1; teamindex++) {
@@ -167,7 +167,7 @@ function override_spawn(ispredictedspawn) {
         self function_8cef1872();
         self thread function_bb9099b9();
     }
-    return 1;
+    return true;
 }
 
 // Namespace spawn/spawn
@@ -286,7 +286,7 @@ function private function_c263fd97() {
     var_45d7d746 = 0;
     var_ccb4a8be = player_free_fall::function_d2a1520c();
     streamermodelhint(var_ccb4a8be, float(var_ffa47239 + var_2ee361bf) / 1000);
-    while (1) {
+    while (true) {
         wait(0.5);
         now = gettime();
         self clientfield::set_player_uimodel("hudItems.streamerLoadFraction", (now - starttime) / (var_ffa47239 + var_2ee361bf));

@@ -217,7 +217,7 @@ function ragdoll_impact_watch(localclientnum) {
     v_prev_origin = self.origin;
     waitframe(1);
     b_first_loop = 1;
-    while (1) {
+    while (true) {
         if (!isdefined(self)) {
             return;
         }
@@ -230,7 +230,7 @@ function ragdoll_impact_watch(localclientnum) {
                 }
                 self hide();
             }
-            return;
+            break;
         }
         v_prev_origin = self.origin;
         n_prev_speed = n_speed;

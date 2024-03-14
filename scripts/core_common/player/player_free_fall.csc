@@ -155,7 +155,7 @@ function function_3f6dfc34(localclientnum) {
     self notify("62720c265d658b90");
     self endon("62720c265d658b90");
     self endon(#"death", #"disconnect", #"freefallend");
-    while (1) {
+    while (true) {
         waitframe(1);
         if (!self postfx::function_556665f2("pstfx_speedblur_wz")) {
             self postfx::playpostfxbundle("pstfx_speedblur_wz");
@@ -184,7 +184,7 @@ function function_cc5ed6ff(pitch, min_pitch, max_pitch, var_2ff50798, var_9988e8
 function printspeed(viewpitch) {
     /#
         self endon(#"death", #"disconnect", #"freefallend");
-        while (1) {
+        while (true) {
             vel = self getvelocity();
             speed = length(vel);
             iprintlnbold("<unknown string>" + speed + "<unknown string>" + viewpitch);
@@ -258,7 +258,7 @@ function function_7c653916(timesec) {
 function function_e8a9e948(localclientnum, var_695a7111) {
     if (self function_21c0fa55()) {
         self endoncallback(&function_1c6573a4, #"death", #"freefallend");
-        while (1) {
+        while (true) {
             vel = self getvelocity();
             speed = length(vel);
             angles = self getcamangles();
@@ -387,7 +387,7 @@ function function_1c6573a4(notifyhash) {
 // Size: 0x80
 function function_ba7365ff(localclientnum, height, fxid) {
     self endon(#"death", #"freefallend");
-    while (1) {
+    while (true) {
         if (self.origin[2] < height) {
             self thread function_ada640c5(localclientnum, fxid);
             return;

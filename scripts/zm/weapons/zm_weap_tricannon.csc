@@ -60,7 +60,7 @@ function function_af90fb8c(localclientnum, oldval, newval, bnewent, binitialsnap
                 s_result = self waittill(#"notetrack", #"death");
                 if (s_result.notetrack === "fire" || s_result.notetrack === "rechamber") {
                     playviewmodelfx(localclientnum, level._effect[#"hash_48c846b3b589b3f9"], "tag_flash2");
-                    return;
+                    break;
                 }
             }
         }

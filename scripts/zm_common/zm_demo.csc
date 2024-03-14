@@ -45,7 +45,7 @@ function watch_predicted_player_changes(localclientnum) {
     level.demolocalclients[localclientnum] = spawnstruct();
     level.demolocalclients[localclientnum].nonpredicted_local_player = function_27673a7(localclientnum);
     level.demolocalclients[localclientnum].predicted_local_player = function_5c10bd79(localclientnum);
-    while (1) {
+    while (true) {
         nonpredicted_local_player = function_27673a7(localclientnum);
         predicted_local_player = function_5c10bd79(localclientnum);
         if (nonpredicted_local_player !== level.demolocalclients[localclientnum].nonpredicted_local_player) {

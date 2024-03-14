@@ -103,7 +103,7 @@ function toggle_bonfire_sale_on() {
 function setup_bonfiresale_audio() {
     wait(2);
     intercom = getentarray("intercom", "targetname");
-    while (1) {
+    while (true) {
         while (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") == 0) {
             wait(0.2);
         }

@@ -118,12 +118,12 @@ function function_70072647() {
 // Size: 0x6e
 function function_98890cd8(w_current) {
     if (w_current === level.var_d7e67022 || w_current === level.var_637136f3) {
-        return 1;
+        return true;
     }
     if (w_current === level.var_4e845c84 || w_current === level.var_58e17ce3) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
@@ -209,7 +209,7 @@ function private function_ebe5f74b() {
     self endon(#"bled_out", #"disconnect", #"hash_1b7c4bada7fa6175");
     self notify("4c9754f8548fd6a6");
     self endon("4c9754f8548fd6a6");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"destroy_riotshield", #"weapon_change");
         if (s_result._notify == "destroy_riotshield" || isdefined(s_result.weapon) && !function_98890cd8(s_result.weapon)) {
@@ -337,7 +337,7 @@ function private function_1e981d89(n_pos) {
         self endon(#"death");
         self notify("<unknown string>");
         self endon("<unknown string>");
-        while (1) {
+        while (true) {
             debugstar(n_pos, 5, (0, 1, 0));
             waitframe(5);
         }
@@ -376,7 +376,7 @@ function function_5f950378() {
         self.var_f7c822b5 = 2;
     }
     var_18138fac = self.var_f7c822b5 * 3;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_22a49f7903e394a5", #"hash_1a22e1dd781f58d6", #"weapon_change", #"weapon_change_complete");
         var_74e62fc6 = self clientfield::get("" + #"hash_e0f652f4a9ad8d5");
@@ -753,7 +753,7 @@ function private function_1b33fb6d(var_155e1cdd) {
     self notify("76bebc69db039874");
     self endon("76bebc69db039874");
     self thread function_804309c();
-    while (1) {
+    while (true) {
         self waittill(#"weapon_fired");
         if (self zm_utility::is_drinking()) {
             continue;
@@ -811,7 +811,7 @@ function private function_423e10ee() {
 function function_d1a7390b(w_curr) {
     self endon(#"disconnect", #"hash_7a5ea8904c04f16b");
     n_dist_sq_max = 173056;
-    while (1) {
+    while (true) {
         var_24bae834 = 0;
         v_position = self getweaponmuzzlepoint();
         v_forward = self getweaponforwarddir();
@@ -1022,9 +1022,9 @@ function function_35d74d73(e_attacker) {
 function private function_6472c628(e_player, mod, shitloc) {
     w_current = e_player getcurrentweapon();
     if (function_98890cd8(w_current)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
@@ -1164,7 +1164,7 @@ function private function_b84d0267() {
     foreach (mdl_shield in a_mdl_shields) {
         mdl_shield hidepart("tag_hellbox_lock");
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"crafting_started");
         if (isdefined(s_result.unitrigger)) {
@@ -1225,28 +1225,28 @@ function function_df8ce6e2(player) {
     player.var_54a51968 = self.target;
     player thread function_e5ca1c8d();
     if (!(isdefined(player.var_5ba94c1e) && player.var_5ba94c1e)) {
-        return 1;
+        return true;
     }
     w_shield = getweapon(#"zhield_spectral_dw");
     w_shield_upgraded = getweapon(#"zhield_spectral_dw_upgraded");
     if (player != self.parent_player) {
-        return 0;
+        return false;
     }
     if (!zm_utility::is_player_valid(player)) {
         player thread zm_utility::ignore_triggers(0.5);
-        return 0;
+        return false;
     }
     if (player hasweapon(w_shield)) {
         player zm_weapons::weapon_take(w_shield);
         player thread zm_weapons::weapon_give(w_shield_upgraded);
         player.weaponriotshield = w_shield_upgraded;
-        return 0;
+        return false;
     }
     if (player zm_crafting::function_2d53738e(w_shield_upgraded)) {
         if (isdefined(self.stub.blueprint.var_54a97edd.isriotshield) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined(player.player_shield_reset_health) && isdefined(player.var_d3345483) && player.var_d3345483) {
             var_d97673ff = 1;
         } else {
-            return 0;
+            return false;
         }
     }
     if (isdefined(var_d97673ff) && var_d97673ff) {
@@ -1259,7 +1259,7 @@ function function_df8ce6e2(player) {
             } else {
                 zm_utility::play_sound_on_ent("no_purchase");
                 player thread zm_audio::create_and_play_dialog("general", "outofmoney");
-                return 0;
+                return false;
             }
         }
         player [[ player.player_shield_reset_health ]](w_shield_upgraded, 0);
@@ -1273,7 +1273,7 @@ function function_df8ce6e2(player) {
             } else {
                 zm_utility::play_sound_on_ent("no_purchase");
                 player thread zm_audio::create_and_play_dialog("general", "outofmoney");
-                return 0;
+                return false;
             }
         }
         if (isdefined(player.hasriotshield) && player.hasriotshield && isdefined(player.weaponriotshield)) {
@@ -1282,7 +1282,7 @@ function function_df8ce6e2(player) {
         player thread zm_weapons::weapon_give(w_shield_upgraded);
     }
     player notify(#"hash_77d44943fb143b18", {#weapon:self.stub.blueprint.var_54a97edd});
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_spectral_shield/zm_weap_spectral_shield
@@ -1326,7 +1326,7 @@ function function_265e517c(e_player) {
         foreach (var_ca89c8f9 in var_824b5a74) {
             if (e_player.var_54a51968 === var_ca89c8f9.var_54a51968) {
                 var_ca89c8f9 setvisibletoplayer(e_player);
-                return;
+                break;
             }
         }
     }
@@ -1394,7 +1394,7 @@ function function_6da92963(cmd) {
                     e_player thread function_804309c();
                 }
             }
-            return;
+            break;
         case #"hash_5a13ac5a96bb700c":
             foreach (e_player in level.players) {
                 if (e_player hasweapon(level.var_4e845c84)) {
@@ -1411,7 +1411,7 @@ function function_6da92963(cmd) {
                     e_player thread function_4df187a9(level.var_58e17ce3);
                 }
             }
-            return;
+            break;
         }
     #/
 }
@@ -1424,7 +1424,7 @@ function function_4df187a9(w_shield) {
     /#
         self notify(#"hash_1f37709e96e62bf2");
         self endon(#"disconnect", #"hash_1f37709e96e62bf2");
-        while (1) {
+        while (true) {
             self thread function_804309c();
             s_result = undefined;
             s_result = self waittill(#"hash_5ac00f85b943ba5f", #"take_weapon");

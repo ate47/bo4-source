@@ -274,38 +274,38 @@ function private update_dog_threat(dog) {
 // Size: 0x1d4
 function cantargetplayer(player) {
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     if (!isalive(player) || player.sessionstate != "playing") {
-        return 0;
+        return false;
     }
     if (player.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (isdefined(self.owner) && player == self.owner) {
-        return 0;
+        return false;
     }
     if (!isdefined(player.team)) {
-        return 0;
+        return false;
     }
     if (level.teambased && player.team == self.team) {
-        return 0;
+        return false;
     }
     if (player.team == #"spectator") {
-        return 0;
+        return false;
     }
     if (!self cansee(player, 2)) {
-        return 0;
+        return false;
     }
     if (player depthinwater() >= 30 || player isplayerswimming()) {
-        return 0;
+        return false;
     }
     var_2910def0 = self targetting_delay::function_1c169b3a(player);
     targetting_delay::function_a4d6d6d8(player, int((isdefined(self.targeting_delay) ? self.targeting_delay : 0.05) * 1000));
     if (!var_2910def0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace lead_drone/lead_drone
@@ -314,18 +314,18 @@ function cantargetplayer(player) {
 // Size: 0x8e
 function cantargettank(tank) {
     if (!isdefined(tank)) {
-        return 0;
+        return false;
     }
     if (!isdefined(tank.team)) {
-        return 0;
+        return false;
     }
     if (!util::function_fbce7263(tank.team, self.team)) {
-        return 0;
+        return false;
     }
     if (isdefined(tank.owner) && self.owner == tank.owner) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace lead_drone/lead_drone
@@ -334,21 +334,21 @@ function cantargettank(tank) {
 // Size: 0x8e
 function cantargetactor(actor) {
     if (!isdefined(actor)) {
-        return 0;
+        return false;
     }
     if (!isactor(actor)) {
-        return 0;
+        return false;
     }
     if (!isalive(actor)) {
-        return 0;
+        return false;
     }
     if (!isdefined(actor.team)) {
-        return 0;
+        return false;
     }
     if (!util::function_fbce7263(actor.team, self.team)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace lead_drone/lead_drone
@@ -379,7 +379,7 @@ function reload() {
 // Size: 0x1c6
 function attackthread() {
     self endon(#"death", #"change_state", #"end_attack_thread");
-    while (1) {
+    while (true) {
         enemy = undefined;
         if (isdefined(self.var_dac49144)) {
             enemy = self.var_dac49144;
@@ -484,7 +484,7 @@ function function_ede09a4e(owner) {
 // Size: 0xce
 function function_5ebe7443() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.protectdest)) {
             /#
                 recordsphere(self.protectdest, 8, (0, 0, 1), "<unknown string>");

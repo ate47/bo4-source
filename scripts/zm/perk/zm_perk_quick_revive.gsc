@@ -104,7 +104,7 @@ function quick_revive_perk_machine_setup(use_trigger, perk_machine, bump_trigger
 function turn_revive_on() {
     level endon(#"stop_quickrevive_logic");
     level flag::wait_till("start_zombie_round_logic");
-    while (1) {
+    while (true) {
         machine = getentarray("vending_revive", "targetname");
         machine_triggers = getentarray("vending_revive", "target");
         for (i = 0; i < machine.size; i++) {

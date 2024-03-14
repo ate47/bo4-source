@@ -31,12 +31,12 @@ function __init__() {
 function function_efa90c79(weapon) {
     if (weapon === level.weaponsigblade) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 6);
-        return 1;
+        return true;
     } else if (weapon === level.weaponsigbladeprojectile) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 7);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace blade/blade
@@ -108,7 +108,7 @@ function function_c5c8d661(weapon) {
     if (self isplayerswimming()) {
         self function_d6805ff5(weapon);
     }
-    while (1) {
+    while (true) {
         ret = undefined;
         ret = self waittill(#"swimming_begin", #"swimming_end");
         switch (ret._notify) {

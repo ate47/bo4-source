@@ -261,9 +261,9 @@ function function_96f55844() {
     navmeshpoint = getclosestpointonnavmesh(self.origin, 64, radius);
     if (isdefined(navmeshpoint)) {
         self setorigin(navmeshpoint);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_position/bot_position
@@ -278,10 +278,10 @@ function function_e336d9() {
         navmeshpoint = getclosestpointonnavmesh(pos.origin, 64, radius);
         if (isdefined(navmeshpoint)) {
             self setorigin(navmeshpoint);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_position/bot_position
@@ -321,13 +321,13 @@ function can_teleport() {
         }
         fwd = anglestoforward(player.angles);
         if (self.team == player.team && vectordot(fwd, self.origin - player.origin) > 0) {
-            return 0;
+            return false;
         }
         if (player cansee(self)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace bot_position/bot_position
@@ -410,7 +410,7 @@ function function_7beea81f(tacbundle) {
         if (isdefined(self function_22d4d2d(params, tacbundle)) && self function_22d4d2d(params, tacbundle)) {
             self.bot.var_87f1dd0b = params.name;
             handled = 1;
-            return;
+            break;
         }
     }
 }
@@ -624,10 +624,10 @@ function function_7ed3ada6(params, tacbundle) {
         }
     #/
     if (nodes.size <= 0) {
-        return 0;
+        return false;
     }
     self function_a57c34b7(nodes[0]);
-    return 1;
+    return true;
 }
 
 // Namespace bot_position/bot_position
@@ -718,15 +718,15 @@ function function_356f5b61(trigger) {
 // Size: 0x118
 function function_ad687b7f(region) {
     if (!isdefined(region)) {
-        return 0;
+        return false;
     }
     regioninfo = function_b507a336(region);
     if (!isdefined(regioninfo)) {
-        return 0;
+        return false;
     }
     tacpoints = tacticalquery("stratcom_tacquery_region", region);
     if (!isdefined(tacpoints) || tacpoints.size == 0) {
-        return 0;
+        return false;
     }
     var_f34dd95d = !isdefined(self.var_d494450c) || gettime() - self.var_d494450c > 3000;
     if (var_f34dd95d) {
@@ -736,7 +736,7 @@ function function_ad687b7f(region) {
             self set_position(var_bd62801f.origin);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace bot_position/bot_position
@@ -801,9 +801,9 @@ function function_b2dbe6b0(trigger, minradius = 0) {
             }
         #/
         self set_position(results.data[0].origin);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_position/bot_position
@@ -816,7 +816,7 @@ function function_d0cf287b(params, tacbundle) {
         /#
             self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
         #/
-        return 0;
+        return false;
     }
     if (isint(center)) {
         /#
@@ -833,7 +833,7 @@ function function_d0cf287b(params, tacbundle) {
             self bot::record_text("<unknown string>" + function_9e72a96(params.center), (1, 0, 0), "<unknown string>");
             self botprinterror(function_9e72a96(params.name) + "<unknown string>" + params.center);
         #/
-        return 0;
+        return false;
     }
     claimnode = undefined;
     if (ispathnode(position)) {
@@ -844,7 +844,7 @@ function function_d0cf287b(params, tacbundle) {
         }
     }
     self set_position(position, claimnode);
-    return 1;
+    return true;
 }
 
 // Namespace bot_position/bot_position
@@ -975,37 +975,37 @@ function function_2ea7762a(tacbundle) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
-        return 0;
+        return false;
     }
     if (self ai::get_behavior_attribute("ignorepathenemyfightdist")) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
-        return 0;
+        return false;
     }
     if (!isdefined(self.enemy)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
-        return 0;
+        return false;
     }
     if (!self cansee(self.enemy)) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
-        return 0;
+        return false;
     }
     distsq = tacbundle.pathenemyfightdist * tacbundle.pathenemyfightdist;
     if (distance2dsquared(self.origin, self.enemy.origin) > distsq) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
         #/
-        return 0;
+        return false;
     }
     /#
         self bot::record_text("<unknown string>", (0, 1, 1), "<unknown string>");
     #/
-    return 1;
+    return true;
 }
 
 // Namespace bot_position/bot_position

@@ -57,7 +57,7 @@ function rotate() {
     if (!isdefined(self.speed)) {
         self.speed = 0.5;
     }
-    while (1) {
+    while (true) {
         if (self.script_noteworthy == "z") {
             self rotateyaw(360, self.speed);
         } else if (self.script_noteworthy == "x") {

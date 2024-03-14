@@ -1645,7 +1645,7 @@ function function_b14863c1() {
     level endon(#"end_game");
     level thread function_cb8a5c29();
     level thread function_c5f9ea85();
-    while (1) {
+    while (true) {
         wait(getdvar(#"hash_83577689a2e58b3", 180));
         function_ea5b4947();
     }
@@ -1656,7 +1656,7 @@ function function_b14863c1() {
 // Checksum 0xd90cce7f, Offset: 0x8150
 // Size: 0xb2
 function function_cb8a5c29() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittilltimeout(60, #"hash_3fdaafe712252cf5", #"trap_kill");
         if (s_result._notify == "timeout") {
@@ -1677,7 +1677,7 @@ function function_c5f9ea85() {
     foreach (player in level.players) {
         player.var_78c18942 = 0;
     }
-    while (1) {
+    while (true) {
         wait(1);
         if (!(isdefined(level.var_b8cbd9e6) && level.var_b8cbd9e6)) {
             foreach (player in level.players) {
@@ -1738,7 +1738,7 @@ function function_ea5b4947(b_end_game = 0) {
 function function_94335f4a(var_1aa5a6d6) {
     level.var_1aa5a6d6 = var_1aa5a6d6;
     level.var_ad5d54b = [];
-    for (n_row = 0; 1; n_row++) {
+    for (n_row = 0; true; n_row++) {
         n_event = tablelookupcolumnforrow(#"gamedata/stats/zm/zm_event_callings.csv", n_row, 0);
         if (!isdefined(n_event) || n_event > var_1aa5a6d6) {
             return;

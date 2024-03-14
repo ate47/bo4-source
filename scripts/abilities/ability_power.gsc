@@ -49,14 +49,14 @@ function function_9d78823f(gadget, weapon) {
 // Size: 0x5a
 function is_weapon_or_variant_same_as_gadget(weapon, gadget) {
     if (weapon == gadget) {
-        return 1;
+        return true;
     }
     if (isdefined(level.var_d0b212bd)) {
         if (level.var_d0b212bd[weapon] === gadget) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ability_power/ability_power
@@ -252,7 +252,7 @@ function power_consume_timer_think(slot, weapon) {
         return;
     }
     time = gettime();
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!isdefined(self._gadgets_player[slot])) {
             return;

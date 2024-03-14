@@ -73,7 +73,7 @@ function function_afce0cdb(spawn_loc) {
     zone.type = spawn_loc.script_noteworthy;
     zone thread function_77a4c7ab();
     patroller = undefined;
-    while (1) {
+    while (true) {
         if (zone.var_c6328f73 < 1) {
             return;
         }
@@ -137,7 +137,7 @@ function function_f7c5e2f0(point, mins, maxs) {
 function function_77a4c7ab() {
     level endon(#"game_ended");
     self.is_occupied = 0;
-    while (1) {
+    while (true) {
         self.is_occupied = 0;
         foreach (player in getplayers()) {
             if (!isdefined(player) || !isalive(player)) {
@@ -263,7 +263,7 @@ function function_b25a6169() {
     self endon("7c5dbe7edcfd4795");
     goalradius = self.goalradius;
     misscount = 5;
-    while (1) {
+    while (true) {
         if (isdefined(self.enemy)) {
             self.goalradius = 1024;
             if (!self cansee(self.enemy)) {

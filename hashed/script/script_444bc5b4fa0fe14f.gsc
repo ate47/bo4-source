@@ -89,7 +89,7 @@ function private on_end(round_reset) {
 // Size: 0x80
 function private function_cb35d440() {
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         level waittill(#"hash_166cac102910cdb3");
         level.var_fb0b57a7++;
         if (level.var_fb0b57a7 <= level.var_88bac0b7) {

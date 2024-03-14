@@ -56,10 +56,10 @@ function private __init__() {
 function private _paramshasbots(params) {
     foreach (bot in params.bots) {
         if (isdefined(bot) && isbot(bot) && ai::getaiattribute(bot, "control") === "commander") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -271,15 +271,15 @@ function function_55cc58c4(planner, var_973c5ec5) {
 function private function_984c7289(planner, constants) {
     controlzones = planner::getblackboardattribute(planner, "mp_controlZones");
     if (!isarray(controlzones) || controlzones.size <= 0) {
-        return 0;
+        return false;
     }
     for (i = 0; i < controlzones.size; i++) {
         zone = controlzones[i][#"__unsafe__"][#"controlzone"];
         if (isdefined(zone) && isdefined(zone.gameobject)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -289,15 +289,15 @@ function private function_984c7289(planner, constants) {
 function private function_3e055926(planner, constants) {
     domflags = planner::getblackboardattribute(planner, "mp_domFlags");
     if (!isarray(domflags) || domflags.size <= 0) {
-        return 0;
+        return false;
     }
     for (i = 0; i < domflags.size; i++) {
         domflag = domflags[i][#"__unsafe__"][#"domflag"];
         if (isdefined(domflag) && domflags[i][#"claimed"] == 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -307,13 +307,13 @@ function private function_3e055926(planner, constants) {
 function private function_ca867965(planner, constants) {
     kothzone = planner::getblackboardattribute(planner, "mp_kothZone");
     if (!isarray(kothzone) || kothzone.size <= 0) {
-        return 0;
+        return false;
     }
     zone = kothzone[0][#"__unsafe__"][#"kothzone"];
     if (isdefined(zone) && isdefined(zone.trig) && zone.trig istriggerenabled()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -323,7 +323,7 @@ function private function_ca867965(planner, constants) {
 function private function_16b44b20(planner, constants) {
     sdbomb = planner::getblackboardattribute(planner, "mp_sdBomb");
     if (!isarray(sdbomb) || sdbomb.size <= 0) {
-        return 0;
+        return false;
     }
     bots = planner::getblackboardattribute(planner, "doppelbots");
     if (isdefined(bots)) {
@@ -344,16 +344,16 @@ function private function_16b44b20(planner, constants) {
                     continue;
                 }
                 if (player getentitynumber() < var_7fe54ea1) {
-                    return 0;
+                    return false;
                 }
             }
         }
     }
     bomb = sdbomb[0][#"__unsafe__"][#"sdbomb"];
     if (isdefined(bomb) && bomb.trigger istriggerenabled()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -363,15 +363,15 @@ function private function_16b44b20(planner, constants) {
 function private function_c1f972ba(planner, constants) {
     bombzones = planner::getblackboardattribute(planner, "mp_sdBombZones");
     if (!isarray(bombzones) || bombzones.size <= 0) {
-        return 0;
+        return false;
     }
     for (i = 0; i < bombzones.size; i++) {
         zone = bombzones[i][#"__unsafe__"][#"sdbombzone"];
         if (isdefined(zone)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -381,13 +381,13 @@ function private function_c1f972ba(planner, constants) {
 function private function_a5c008c(planner, constants) {
     defuseobj = planner::getblackboardattribute(planner, "mp_sdDefuseObj");
     if (!isarray(defuseobj) || defuseobj.size <= 0) {
-        return 0;
+        return false;
     }
     defuse = defuseobj[0][#"__unsafe__"][#"sddefuseobj"];
     if (isdefined(defuse)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -399,10 +399,10 @@ function private function_b6cc50c3(planner, constants) {
     for (i = 0; i < bots.size; i++) {
         bot = bots[0][#"__unsafe__"][#"bot"];
         if (isdefined(bot.isbombcarrier) && bot.isbombcarrier || isdefined(level.multibomb) && level.multibomb) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -412,9 +412,9 @@ function private function_b6cc50c3(planner, constants) {
 function private function_5d508101(planner, constants) {
     lanenum = planner::getblackboardattribute(planner, "mp_laneNum");
     if (!isdefined(lanenum) || lanenum.size == 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576
@@ -425,9 +425,9 @@ function function_f816c9b0(var_973c5ec5, var_5d4457) {
     var_803d2f2a = var_973c5ec5.gameobject.curprogress > 0;
     var_99b927c3 = var_5d4457.gameobject.curprogress > 0;
     if (!var_803d2f2a && var_99b927c3) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576

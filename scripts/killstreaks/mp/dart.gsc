@@ -69,9 +69,9 @@ function wait_for_throw_status() {
     notifystring = undefined;
     notifystring = self waittill(#"death", #"disconnect", #"dart_entered", #"dart_throw_timed_out", #"dart_throw_failed");
     if (notifystring._notify == "dart_entered" || notifystring._notify == "death") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace dart/dart
@@ -84,13 +84,13 @@ function activatedart(killstreaktype) {
         assert(isplayer(player));
     #/
     if (!player killstreakrules::iskillstreakallowed("dart", player.team)) {
-        return 0;
+        return false;
     }
     player disableoffhandweapons();
     missileweapon = player getcurrentweapon();
     if (!(isdefined(missileweapon) && missileweapon.statname == "dart")) {
         player enableoffhandweapons();
-        return 0;
+        return false;
     }
     player thread watchthrow(missileweapon);
     notifystring = undefined;
@@ -102,23 +102,23 @@ function activatedart(killstreaktype) {
             }
             player enableoffhandweapons();
         }
-        return 0;
+        return false;
     }
     if (notifystring._notify == "grenade_fire") {
         var_eafe8f97 = player wait_for_throw_status();
         if (var_eafe8f97 === 0) {
             player enableoffhandweapons();
-            return 0;
+            return false;
         }
     } else if (notifystring._notify == "weapon_change") {
         if (player.waitingondartthrow) {
             player notify(#"dart_putaway");
         }
         player enableoffhandweapons();
-        return 0;
+        return false;
     }
     player waittill(#"dart_end", #"disconnect");
-    return 1;
+    return true;
 }
 
 // Namespace dart/dart
@@ -229,7 +229,7 @@ function watchremotecontroldeactivate() {
     while (dart.remoteowner attackbuttonpressed()) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         if (dart.remoteowner attackbuttonpressed()) {
             dart thread remote_weapons::endremotecontrolweaponuse(1);
             dart.lastusetime = gettime();
@@ -337,7 +337,7 @@ function spawndart(grenade, killstreak_id, spawn_origin) {
 // Size: 0x66
 function debug_origin() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         /#
             sphere(self.origin, 5, (1, 0, 0), 1, 1, 2, 120);
         #/
@@ -464,14 +464,14 @@ function emp_damage_cb(attacker, weapon) {
 // Size: 0x80
 function darpredictedcollision() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         self notify(#"veh_collision", waitresult);
         if (waitresult.stype == "glass") {
             continue;
         }
-        return;
+        break;
     }
 }
 
@@ -484,7 +484,7 @@ function watchcollision() {
     dart endon(#"death");
     dart.owner endon(#"disconnect");
     dart thread darpredictedcollision();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = dart waittill(#"veh_collision");
         if (waitresult.stype === "glass") {
@@ -493,7 +493,7 @@ function watchcollision() {
         dart setspeedimmediate(0);
         dart vehicle_death::death_fx();
         dart thread stop_remote_weapon();
-        return;
+        break;
     }
 }
 
@@ -759,26 +759,26 @@ function getdartmissiletargets() {
 function isvaliddartmissiletarget(ent) {
     player = self;
     if (!isdefined(ent)) {
-        return 0;
+        return false;
     }
     entisplayer = isplayer(ent);
     if (entisplayer && !isalive(ent)) {
-        return 0;
+        return false;
     }
     if (ent.ignoreme === 1) {
-        return 0;
+        return false;
     }
     dart = player getvehicleoccupied();
     if (!isdefined(dart)) {
-        return 0;
+        return false;
     }
     if (distancesquared(dart.origin, ent.origin) > player.dart_killstreak_weapon.lockonmaxrange * player.dart_killstreak_weapon.lockonmaxrange) {
-        return 0;
+        return false;
     }
     if (entisplayer && ent hasperk(#"specialty_nokillstreakreticle")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dart/dart
@@ -788,28 +788,28 @@ function isvaliddartmissiletarget(ent) {
 function isstillvaliddartmissiletarget(ent, weapon) {
     player = self;
     if (!(target_istarget(ent) || isplayer(ent)) && !(isdefined(ent.allowcontinuedlockonafterinvis) && ent.allowcontinuedlockonafterinvis)) {
-        return 0;
+        return false;
     }
     dart = player getvehicleoccupied();
     if (!isdefined(dart)) {
-        return 0;
+        return false;
     }
     entisplayer = isplayer(ent);
     if (entisplayer && !isalive(ent)) {
-        return 0;
+        return false;
     }
     if (ent.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (distancesquared(dart.origin, ent.origin) > player.dart_killstreak_weapon.lockonmaxrange * player.dart_killstreak_weapon.lockonmaxrange) {
-        return 0;
+        return false;
     }
     if (entisplayer && ent hasperk(#"specialty_nokillstreakreticle")) {
-        return 0;
+        return false;
     }
     if (!heatseekingmissile::insidestingerreticlelocked(ent, undefined, weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

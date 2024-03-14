@@ -61,7 +61,7 @@ function private function_dc856fd8() {
     self endon("374b3a40e7866d07");
     self endon(#"disconnect", #"allow_sprint");
     self allowsprint(0);
-    while (1) {
+    while (true) {
         self waittill(#"crafting_fail", #"crafting_success", #"bgb_update");
         if (isalive(self)) {
             self allowsprint(0);
@@ -75,7 +75,7 @@ function private function_dc856fd8() {
 // Size: 0xa2
 function private function_31f500f() {
     self endon(#"disconnect", #"allow_sprint");
-    while (1) {
+    while (true) {
         if (isalive(self) && self sprintbuttonpressed()) {
             self zm_trial_util::function_97444b02();
             while (self sprintbuttonpressed()) {

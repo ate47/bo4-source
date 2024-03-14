@@ -117,7 +117,7 @@ function player_handle_cymbal_monkey() {
     if (!isdefined(max_attract_dist)) {
         max_attract_dist = 3000;
     }
-    while (1) {
+    while (true) {
         grenade = get_thrown_monkey();
         self player_throw_cymbal_monkey(grenade, num_attractors, max_attract_dist, attract_dist_diff);
         waitframe(1);
@@ -158,7 +158,7 @@ function watch_for_emp(actor) {
     if (!zm_utility::should_watch_for_emp()) {
         return;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"emp_detonate");
         if (distancesquared(waitresult.position, self.origin) < waitresult.radius * waitresult.radius) {
@@ -392,10 +392,10 @@ function private function_ab9a9770() {
     if (isdefined(s_trace[#"entity"])) {
         entity = s_trace[#"entity"];
         if (entity ismovingplatform()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_cymbal_monkey/zm_weap_cymbal_monkey
@@ -413,11 +413,11 @@ function function_2f2478f2() {
             }
             if (zm_utility::check_point_in_enabled_zone(point.origin) && bullettracepassed(point.origin + vectorscale((0, 0, 1), 20), v_orig + vectorscale((0, 0, 1), 20), 0, self, undefined, 0, 0)) {
                 self.origin = point.origin;
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_cymbal_monkey/zm_weap_cymbal_monkey
@@ -464,7 +464,7 @@ function grenade_stolen_by_sam(e_grenade, e_actor) {
 // Size: 0x90
 function monkey_cleanup(e_grenade) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (!isdefined(e_grenade)) {
             if (isdefined(self.dud) && self.dud) {
                 wait(6);
@@ -552,7 +552,7 @@ function play_delayed_explode_vox() {
 // Size: 0xd2
 function get_thrown_monkey() {
     self endon(#"starting_monkey_watch", #"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
@@ -573,7 +573,7 @@ function get_thrown_monkey() {
 // Size: 0x1b0
 function monitor_zombie_groans(info) {
     self endon(#"explode");
-    while (1) {
+    while (true) {
         if (!isdefined(self)) {
             return;
         }
@@ -606,7 +606,7 @@ function monitor_zombie_groans(info) {
 // Size: 0x7e
 function play_zombie_groans() {
     self endon(#"monkey_blown_up", #"death");
-    while (1) {
+    while (true) {
         if (isdefined(self)) {
             self playsound(#"zmb_vox_zombie_groan");
             wait(randomfloatrange(2, 3));
@@ -638,7 +638,7 @@ function is_on_navmesh(e_player) {
     }
     if (ispointonnavmesh(self.origin, 60) == 1) {
         self.var_45eaa114 = 1;
-        return 1;
+        return true;
     }
     v_valid_point = getclosestpointonnavmesh(self.origin, 150, 12);
     if (isdefined(v_valid_point)) {
@@ -662,9 +662,9 @@ function is_on_navmesh(e_player) {
             self.mdl_monkey clientfield::set("" + #"hash_60a7e5b79e8064a5", 1);
         }
         self.var_45eaa114 = 1;
-        return 1;
+        return true;
     }
     self.var_45eaa114 = 0;
-    return 0;
+    return false;
 }
 

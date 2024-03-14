@@ -214,10 +214,10 @@ function function_60f79e9c(params) {
 function function_1cc0b38a() {
     foreach (e_player in level.activeplayers) {
         if (zm_utility::is_player_valid(e_player, 0, 1) && !e_player istouching(level.var_83225f64[0])) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_trophies/zm_office_trophies

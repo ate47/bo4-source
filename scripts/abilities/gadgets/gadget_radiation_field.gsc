@@ -119,7 +119,7 @@ function sndonoverride_eye_() {
     total_time = level.radiationfield_bundle.baseduration + level.radiationfield_bundle.var_500496c9;
     redline = 0.75;
     player notify(#"hash_477083bb681cce64");
-    while (1) {
+    while (true) {
         wait(rate);
         cur_time = cur_time + rate;
         percent = min(1, cur_time / total_time);
@@ -147,7 +147,7 @@ function sndonoverride_eye_() {
         return;
     }
     cur_time = 0;
-    while (1) {
+    while (true) {
         wait(rate);
         cur_time = cur_time + rate;
         percent = min(1, 1 - player.health / start_health);
@@ -157,7 +157,7 @@ function sndonoverride_eye_() {
             objective_setprogress(player.var_e9791ff9, value);
         }
         if (cur_time > total_time) {
-            return;
+            break;
         }
     }
 }
@@ -318,7 +318,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
     var_a9e00cb3 = (max_height - min_height) / nsteps;
     player_radius = 10;
     var_1d93ec08 = int(level.radiationfield_bundle.var_533b6b6e * 1000);
-    while (1) {
+    while (true) {
         fwd = vecscale(vectornormalize(anglestoforward(player.angles)), 20);
         player.var_ab42e44e = player.origin;
         player.var_ab42e44e = player.var_ab42e44e + fwd;

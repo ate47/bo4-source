@@ -83,7 +83,7 @@ function zombie_open_sesame() {
 // Size: 0x27a
 function function_97346595() {
     var_2e0b8925 = getdvarint(#"hash_6d3c5317001d4fc6", 0);
-    while (1) {
+    while (true) {
         new_value = getdvarint(#"hash_6d3c5317001d4fc6", 0);
         players = getplayers();
         if (new_value) {

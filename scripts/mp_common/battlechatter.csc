@@ -49,7 +49,7 @@ function function_b79dc4e7(player) {
 // Size: 0xf8
 function function_4bc12499() {
     level endon(#"death");
-    while (1) {
+    while (true) {
         var_7f729179 = undefined;
         var_7f729179 = level waittill(#"play_death_vox");
         players = getlocalplayers();
@@ -93,15 +93,15 @@ function function_f1d27638(var_f7f4481f) {
     switch (var_f7f4481f.eventid) {
     case 0:
         thread function_50e36ba7(var_f7f4481f.var_40209f44, var_f7f4481f.weapon, var_f7f4481f.var_3d136cd9, var_f7f4481f.var_7e98b410);
-        return;
+        break;
     case 2:
         thread function_ee8935da(var_f7f4481f.var_3d136cd9);
-        return;
+        break;
     case 3:
     case 4:
     case 5:
         thread function_bf569dab(var_f7f4481f.var_40209f44, var_f7f4481f.var_3d136cd9, var_f7f4481f.eventid, var_f7f4481f.weapon);
-        return;
+        break;
     }
 }
 
@@ -160,43 +160,43 @@ function get_death_vox(meansofdeath, roleindex) {
 // Size: 0x192
 function function_d804d2f0(localclientnum, speakingplayer, player, allyradiussq) {
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     if (!isdefined(player.origin)) {
-        return 0;
+        return false;
     }
     if (!isalive(player)) {
-        return 0;
+        return false;
     }
     if (player underwater()) {
-        return 0;
+        return false;
     }
     if (player isdriving(localclientnum)) {
-        return 0;
+        return false;
     }
     if (function_e75c64a4(localclientnum)) {
-        return 0;
+        return false;
     }
     if (!isdefined(speakingplayer)) {
-        return 0;
+        return false;
     }
     if (!isdefined(speakingplayer.origin)) {
-        return 0;
+        return false;
     }
     if (player == speakingplayer || player.team != speakingplayer.team) {
-        return 0;
+        return false;
     }
     if (player function_715f2ffc(speakingplayer)) {
-        return 0;
+        return false;
     }
     if (player hasperk(localclientnum, "specialty_quieter")) {
-        return 0;
+        return false;
     }
     distsq = distancesquared(speakingplayer.origin, player.origin);
     if (distsq > allyradiussq) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace battlechatter/battlechatter
@@ -463,9 +463,9 @@ function function_506f762f(weapon) {
     case #"eq_localheal":
     case #"gadget_health_boost":
     case #"gadget_cleanse":
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace battlechatter/battlechatter
@@ -505,12 +505,12 @@ function function_50e36ba7(attacker, weapon, var_5d738b56, seed) {
 // Size: 0x9a
 function function_5d7ad9a9(hacker, originalowner) {
     if (!isdefined(originalowner) || !isplayer(originalowner) || !originalowner function_21c0fa55()) {
-        return 0;
+        return false;
     }
     if (!isdefined(hacker) || !isplayer(hacker) || !isalive(hacker)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace battlechatter/battlechatter

@@ -76,7 +76,7 @@ function is_active() {
 function private movement_watcher(var_93fc795f, var_98de1f93) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         var_197c85d1 = self getvelocity();
         var_9b7f7d9b = length(var_197c85d1);
         if (isalive(self) && !self laststand::player_is_in_laststand() && !self issprinting()) {
@@ -113,43 +113,43 @@ function private function_6b13a114(var_93fc795f, var_a7c52900) {
 // Size: 0x14a
 function private function_26f124d8() {
     if (!isdefined(level.var_1c8f9eba)) {
-        return 1;
+        return true;
     }
     switch (level.var_1c8f9eba) {
     case #"ads":
         var_389b3ef1 = self playerads();
         if (self adsbuttonpressed() && var_389b3ef1 > 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"jump":
         if (self zm_utility::is_jumping()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"slide":
         if (self issliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"crouch":
         if (self getstance() === "crouch") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"prone_random":
     case #"prone":
         if (self getstance() === "prone") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"movement":
     default:
         v_velocity = self getvelocity();
         if (length(v_velocity) != 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 }
 
@@ -163,7 +163,7 @@ function private function_9c988cd8(var_93fc795f, var_98de1f93, var_e898f976 = 0)
     if (!var_e898f976) {
         wait(12);
     }
-    while (1) {
+    while (true) {
         if (var_e898f976) {
             wait(randomfloatrange(10, 25));
         } else {

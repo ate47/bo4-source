@@ -156,41 +156,41 @@ function function_3fb68a86() {
 // Size: 0x236
 function function_a543b380(player) {
     if (!isalive(player) || player.sessionstate != "playing") {
-        return 0;
+        return false;
     }
     if (self.owner === player) {
-        return 0;
+        return false;
     }
     if (!player util::isenemyteam(self.team)) {
-        return 0;
+        return false;
     }
     if (player.team == #"spectator") {
-        return 0;
+        return false;
     }
     if (!player playerads()) {
-        return 0;
+        return false;
     }
     weapon = player getcurrentweapon();
     if (!isdefined(weapon) || !isdefined(weapon.rootweapon)) {
-        return 0;
+        return false;
     }
     if (weapon.rootweapon != getweapon(#"shotgun_semiauto_t8")) {
-        return 0;
+        return false;
     }
     if (!weaponhasattachment(weapon, "uber")) {
-        return 0;
+        return false;
     }
     distsq = distancesquared(self.origin, player.origin);
     if (distsq > 900 * 900) {
-        return 0;
+        return false;
     }
     if (!util::within_fov(self.origin, self.angles, player.origin, cos(45))) {
-        return 0;
+        return false;
     }
     if (!util::within_fov(player.origin, player getplayerangles(), self.origin, cos(45))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypempdog/dog
@@ -414,13 +414,13 @@ function function_1eda333b() {
 // Size: 0xa2
 function function_a3708944(entity) {
     if (isdefined(self.ai.hasseenfavoriteenemy) && self.ai.hasseenfavoriteenemy && isdefined(self.enemy)) {
-        return 0;
+        return false;
     }
     var_da7abcda = function_d68af34c();
     if (var_da7abcda == "escort" && gettime() > self.ai.lookaround.var_268b3fe5) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypempdog/dog
@@ -521,15 +521,15 @@ function absyawtoenemy(enemy) {
 // Size: 0x56
 function can_see_enemy(enemy) {
     if (!isdefined(enemy)) {
-        return 0;
+        return false;
     }
     if (self function_ce6d3545(enemy)) {
-        return 0;
+        return false;
     }
     if (!self targetting_delay::function_1c169b3a(enemy, 0)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypempdog/dog
@@ -579,9 +579,9 @@ function function_3b9e385c(entity) {
 // Size: 0x44
 function function_b2e0da2(entity) {
     if (isdefined(entity.ai.hasseenfavoriteenemy) && entity.ai.hasseenfavoriteenemy) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypempdog/dog
@@ -633,9 +633,9 @@ function private function_bcd7b170(entity) {
 // Size: 0x36
 function function_dc0b544b(entity, enemy) {
     if (entity function_ce6d3545(enemy)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypempdog/dog
@@ -763,10 +763,10 @@ function dogshouldwalk(entity) {
 function dogshouldrun(entity) {
     if (isdefined(self.ai.state)) {
         if (self.ai.state == 0 && self.ai.patrol.state == 1) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypempdog/dog
@@ -775,15 +775,15 @@ function dogshouldrun(entity) {
 // Size: 0xbc
 function function_e382db1f(entity) {
     if (!(isdefined(self.ai.hasseenfavoriteenemy) && self.ai.hasseenfavoriteenemy)) {
-        return 0;
+        return false;
     }
     lastattacker = get_last_attacker();
     if (isdefined(lastattacker) && self.favoriteenemy === lastattacker) {
         if (lastattacker attackedrecently(self, 0.1) && entity.ai.var_4520deec === gettime()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypempdog/dog
@@ -799,7 +799,7 @@ function private function_ac9765d1(entity) {
 // Checksum 0x71497191, Offset: 0x2d78
 // Size: 0x10
 function private dogjukeinitialize(entity) {
-    return 1;
+    return true;
 }
 
 // Namespace archetypempdog/dog
@@ -816,10 +816,10 @@ function private dogpreemptivejuketerminate(entity) {
 // Size: 0x29a
 function function_6c2426d3(entity) {
     if (!isdefined(entity.enemy) || !isplayer(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.nextpreemptivejuke) && entity.nextpreemptivejuke > gettime()) {
-        return 0;
+        return false;
     }
     disttoenemysq = distancesquared(entity.origin, entity.enemy.origin);
     if (disttoenemysq < 1800 * 1800 && disttoenemysq >= 400 * 400) {
@@ -833,12 +833,12 @@ function function_6c2426d3(entity) {
                     record3dtext(acos(dotproduct), entity.origin + vectorscale((0, 0, 1), 10), (0, 1, 0), "<unknown string>");
                 #/
                 if (dotproduct > 0.766) {
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypempdog/dog
@@ -904,22 +904,22 @@ function function_3089bb44(entity) {
                     /#
                         record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
                     #/
-                    return 0;
+                    return false;
                 }
             }
         }
         if (abs(entity.origin[2] - entity.enemy.origin[2]) > 64) {
-            return 0;
+            return false;
         }
         if (!entity cansee(entity.enemy)) {
-            return 0;
+            return false;
         }
         if (!tracepassedonnavmesh(entity.origin, entity.enemy.origin, entity getpathfindingradius())) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypempdog/dog

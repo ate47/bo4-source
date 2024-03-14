@@ -282,7 +282,7 @@ function function_dc0238e4() {
 // Size: 0x128
 function private function_536a70c5() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitframe(1);
         /#
             enabled = getdvarint(#"hash_6f365f1cee0a5d80", 0);
@@ -929,7 +929,7 @@ function private function_5c3c88fe(location) {
 // Size: 0xe2
 function function_6d9aeb0f() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         zombies = getaiteamarray(level.zombie_team);
         foreach (zombie in zombies) {
             if (zombie istouching(self)) {
@@ -946,7 +946,7 @@ function function_6d9aeb0f() {
 // Size: 0x104
 function function_3ec863f5() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         players = getplayers();
         foreach (player in players) {
             if (player istouching(self)) {
@@ -1099,7 +1099,7 @@ function private function_13d38964(entity) {
                         entity thread shoot_spore(spore, zombie);
                         continue;
                     }
-                    return;
+                    break;
                 }
             }
         }

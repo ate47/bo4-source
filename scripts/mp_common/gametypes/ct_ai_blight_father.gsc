@@ -55,7 +55,7 @@ function __init__() {
     clientfield::register("scriptmover", "blight_father_chaos_missile_explosion_clientfield", 1, 1, "int");
     clientfield::register("toplayer", "blight_father_chaos_missile_rumble_clientfield", 1, 1, "counter");
     clientfield::register("scriptmover", "blight_father_gib_explosion", 1, 1, "int");
-    if (-1) {
+    if (true) {
         level.var_445e24c8 = [];
         for (i = 0; i < 12; i++) {
             trigger = spawn("trigger_damage", (0, 0, 0), 0, 40, 40);
@@ -321,7 +321,7 @@ function function_af7555b9(entity) {
     entity notsolid();
     entity clientfield::set("zombie_riser_fx", 0);
     entity notify(#"is_screamed");
-    return 1;
+    return true;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -357,7 +357,7 @@ function function_819f6f9d(entity) {
 // Checksum 0xaaabd11f, Offset: 0x1ea0
 // Size: 0xe
 function function_a2155a63(entity) {
-    return 0;
+    return false;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -374,9 +374,9 @@ function zombieshouldstun(behaviortreeentity) {
 // Size: 0x34
 function zombieshouldknockdown(behaviortreeentity) {
     if (isdefined(behaviortreeentity.knockdown) && behaviortreeentity.knockdown) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -460,13 +460,13 @@ function private function_f2914d65(entity) {
 // Size: 0x1a8
 function private function_3d752709(enemy, target) {
     if (isdefined(enemy.knockdown) && enemy.knockdown) {
-        return 0;
+        return false;
     }
     if (gibserverutils::isgibbed(enemy, 384)) {
-        return 0;
+        return false;
     }
     if (distancesquared(enemy.origin, target.origin) > self ai::function_9139c839().var_2e53b0a6 * self ai::function_9139c839().var_2e53b0a6) {
-        return 0;
+        return false;
     }
     facingvec = anglestoforward(target.angles);
     enemyvec = enemy.origin - target.origin;
@@ -476,9 +476,9 @@ function private function_3d752709(enemy, target) {
     var_c2ee8451 = vectornormalize(var_c2ee8451);
     var_34e02165 = vectordot(var_c2ee8451, var_3e3c8075);
     if (var_34e02165 < 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -487,9 +487,9 @@ function private function_3d752709(enemy, target) {
 // Size: 0x24
 function private blightfathershouldshowpain(entity) {
     if (isdefined(entity.var_fbec06fa)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -927,25 +927,25 @@ function private function_8383fdf9(entity) {
 // Size: 0x534
 function private function_8fe8a946(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (!isplayer(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.var_177b7a47) && entity.var_177b7a47 && isdefined(entity.var_7c54fb46) && entity.var_7c54fb46) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_79b2615b) && level.var_79b2615b != entity && isalive(level.var_79b2615b)) {
-        return 0;
+        return false;
     }
     if (!function_71b8279d(entity) && entity.var_b2a80abc > gettime()) {
-        return 0;
+        return false;
     }
     var_d0651e10 = function_63b7576d();
     if (var_d0651e10 <= 0) {
-        return 0;
+        return false;
     } else if (!(isdefined(entity.var_177b7a47) && entity.var_177b7a47) && !(isdefined(entity.var_7c54fb46) && entity.var_7c54fb46) && var_d0651e10 < 3) {
-        return 0;
+        return false;
     }
     forward = anglestoforward(entity.angles);
     forward2d = vectornormalize((forward[0], forward[1], 0));
@@ -953,7 +953,7 @@ function private function_8fe8a946(entity) {
     var_854904a = vectornormalize((dirtotarget[0], dirtotarget[1], 0));
     dot = vectordot(forward2d, var_854904a);
     if (dot < entity ai::function_9139c839().var_aa503e5a) {
-        return 0;
+        return false;
     }
     if (!(isdefined(entity.var_177b7a47) && entity.var_177b7a47)) {
         tracestart = entity gettagorigin("tag_sac_fx_le");
@@ -961,7 +961,7 @@ function private function_8fe8a946(entity) {
         tracestart = entity gettagorigin("tag_sac_fx_ri");
     }
     if (!bullettracepassed(tracestart, self.favoriteenemy.origin + vectorscale((0, 0, 1), 35), 0, self)) {
-        return 0;
+        return false;
     }
     height = self.maxs[2] - self.mins[2];
     forward = anglestoforward(self.angles);
@@ -971,13 +971,13 @@ function private function_8fe8a946(entity) {
         recordline(self.origin + (0, 0, height), self.origin + var_725b8fb5 + (0, 0, height + entity ai::function_9139c839().var_73212b51), (0, 1, 0));
     #/
     if (!var_edabd3cd) {
-        return 0;
+        return false;
     }
     var_9c2b856b = distancesquared(entity.origin, entity.favoriteenemy.origin);
     if (var_9c2b856b < entity ai::function_9139c839().var_cdf6b76d * entity ai::function_9139c839().var_cdf6b76d || var_9c2b856b > entity ai::function_9139c839().var_652a36f2 * entity ai::function_9139c839().var_652a36f2) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father

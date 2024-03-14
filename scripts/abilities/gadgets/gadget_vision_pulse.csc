@@ -132,7 +132,7 @@ function function_5f4276b8() {
     if (!isplayer(self)) {
         return;
     }
-    while (1) {
+    while (true) {
         if (self isplayerprone()) {
             self clearanim(#"pt_recon_t8_stand_vision_pulse_goggles_down_loop", 0);
             self setanimknob(#"pt_recon_t8_prone_vision_pulse_goggles_down_loop", 1, 0, 1);
@@ -336,9 +336,9 @@ function do_vision_world_pulse_lerp_helper(currenttime, elapsedtime, localclient
 // Size: 0x50
 function vision_pulse_owner_valid(owner) {
     if (isdefined(owner) && isplayer(owner) && isalive(owner)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -386,7 +386,7 @@ function do_vision_local_pulse(localclientnum) {
     var_8ac8d61d = isdefined(level.weaponvisionpulse.var_5be370e9) ? level.weaponvisionpulse.var_5be370e9 : 1;
     var_6f9f5fef = fadeout_duration * (jammed ? var_8ac8d61d : 1);
     var_42a54adc = var_6f9f5fef * (isdefined(level.weaponvisionpulse.var_a2d7b97c) ? level.weaponvisionpulse.var_a2d7b97c : 0.8);
-    while (1) {
+    while (true) {
         elapsedtime = getservertime(localclientnum) - starttime;
         if (elapsedtime >= revealtime) {
             break;
@@ -511,7 +511,7 @@ function function_9e2a452e(localclientnum, robname) {
     var_42a54adc = var_6f9f5fef * (isdefined(level.weaponvisionpulse.var_a2d7b97c) ? level.weaponvisionpulse.var_a2d7b97c : 0.8);
     elapsedtime = 0;
     owner = self gadgetpulsegetowner(localclientnum);
-    while (1) {
+    while (true) {
         waitframe(1);
         if (isdefined(self.visionpulsereveal) && self.visionpulsereveal) {
             currenttime = getservertime(localclientnum);

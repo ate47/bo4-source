@@ -88,7 +88,7 @@ function function_e12fb431() {
 // Checksum 0x17f90583, Offset: 0x7f8
 // Size: 0xbc
 function function_e86e864b() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (zm_orange_util::function_fe8ee9f0(s_result.weapon, 0) && isplayer(s_result.attacker) && !isbot(s_result.attacker)) {
@@ -178,7 +178,7 @@ function function_b9f47977(e_zombie) {
 // Size: 0x2c
 function function_e140ff5c() {
     self endon(#"cleanup_freezegun_triggers");
-    while (1) {
+    while (true) {
         wait(1);
     }
 }
@@ -540,7 +540,7 @@ function function_5b264d4d(s_result) {
 function function_3d9f4eef() {
     self endon(#"disconnect");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"entering_last_stand");
         self.var_5fe30ecb = [];
     }
@@ -561,7 +561,7 @@ function function_2b6fe83b() {
 // Checksum 0xf4dc9c16, Offset: 0x25c0
 // Size: 0x158
 function function_82947e72() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon.name === #"pistol_standard_t8" || s_result.weapon.name === #"pistol_standard_t8_upgraded") {

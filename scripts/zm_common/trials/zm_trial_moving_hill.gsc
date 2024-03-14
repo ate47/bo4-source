@@ -240,7 +240,7 @@ function private zone_watcher(challenge, var_2d5ebf67, var_530e040f, timeout) {
     self zm_utility::function_ba39d198(challenge.var_df62490a, 1);
     self thread start_timer(timeout, var_2d5ebf67);
     var_60fa6139 = level.time + timeout * 1000;
-    while (1) {
+    while (true) {
         zone_valid = self function_2191cc5d();
         if (zone_valid) {
             self.var_4cb0b91f = 1;
@@ -269,7 +269,7 @@ function private zone_watcher(challenge, var_2d5ebf67, var_530e040f, timeout) {
 function private damage_watcher() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656", #"hill_moving", #"host_migration_begin");
-    while (1) {
+    while (true) {
         /#
             if (isgodmode(self) || self isinmovemode("<unknown string>", "<unknown string>")) {
                 waitframe(1);

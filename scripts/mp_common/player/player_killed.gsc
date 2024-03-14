@@ -113,21 +113,21 @@ function function_7622d447(attacker) {
 // Size: 0x138
 function function_ca27b62b(attacker, player) {
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker) && player util::isenemyteam(attacker.team)) {
-        return 0;
+        return false;
     }
     if (self.attackerdamage[player.clientid].damage == 0) {
-        return 0;
+        return false;
     }
     if (isdefined(level.ekiaresetondeath) && level.ekiaresetondeath && isdefined(player.deathtime) && player.deathtime > self.attackerdamage[player.clientid].lastdamagetime) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_c77de7d6) && gettime() > int(level.var_c77de7d6 * 1000) + self.attackerdamage[player.clientid].lastdamagetime) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace player/player_killed
@@ -197,13 +197,13 @@ function private function_448f7ed2() {
             timediff = wavedelay - lasttime;
             var_4e7f2872 = isdefined(level.var_75db41a7) && time >= level.var_75db41a7;
             if (timediff > 5000 && !var_4e7f2872) {
-                return 1;
+                return true;
             }
         }
     } else {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -843,12 +843,12 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
 function function_d5c8119d() {
     var_8e3c3c5b = level.deathcircles.size - 1;
     if (var_8e3c3c5b < 0) {
-        return 0;
+        return false;
     }
     if (level.deathcircleindex === var_8e3c3c5b) {
         return (isdefined(level.deathcircle.scaling) && level.deathcircle.scaling || level.deathcircle.radius <= 0);
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -857,9 +857,9 @@ function function_d5c8119d() {
 // Size: 0x38
 function function_9956f107() {
     if (isdefined(level.deathcircle) && !isdefined(level.deathcircle.nextcircle)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -989,12 +989,12 @@ function private function_7b0f4389() {
 // Size: 0x38
 function private function_d1be915f() {
     if (self isremotecontrolling()) {
-        return 0;
+        return false;
     }
     if (isdefined(self.killstreak_delay_killcam)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace player/player_killed
@@ -1367,10 +1367,10 @@ function private function_48a1200f(einflictor, attacker, weapon, lpattackteam) {
 // Size: 0x114
 function function_f632c17e(weapon) {
     if (isdefined(weapon) && isdefined(level.iskillstreakweapon) && [[ level.iskillstreakweapon ]](weapon)) {
-        return 1;
+        return true;
     }
     if (isdefined(weapon) && isdefined(weapon.statname) && isdefined(level.iskillstreakweapon) && [[ level.iskillstreakweapon ]](getweapon(weapon.statname))) {
-        return 1;
+        return true;
     }
     switch (weapon.name) {
     case #"ar_accurate_t8_swat":
@@ -1378,9 +1378,9 @@ function function_f632c17e(weapon) {
     case #"tank_robot_launcher_turret":
     case #"ac130_chaingun":
     case #"hash_7b24d0d0d2823bca":
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -1458,9 +1458,9 @@ function private kill(einflictor, attacker, smeansofdeath, weapon, shitloc) {
 // Size: 0x24
 function private should_allow_postgame_death(smeansofdeath) {
     if (smeansofdeath == "MOD_POST_GAME") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -1661,21 +1661,21 @@ function private create_body(attacker, idamage, smeansofdeath, weapon, shitloc, 
 // Size: 0xa4
 function private should_drop_weapon_on_death(wasteamkill, wassuicide, current_weapon, smeansofdeath) {
     if (wasteamkill) {
-        return 0;
+        return false;
     }
     if (wassuicide) {
-        return 0;
+        return false;
     }
     if (smeansofdeath == "MOD_TRIGGER_HURT" && !self isonground()) {
-        return 0;
+        return false;
     }
     if (isdefined(current_weapon) && current_weapon.isheavyweapon) {
-        return 0;
+        return false;
     }
     if (smeansofdeath == "MOD_META") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace player/player_killed
@@ -1767,23 +1767,23 @@ function function_821200bb() {
 // Size: 0xdc
 function private function_78a6af2d(var_821200bb) {
     if (isbot(self)) {
-        return 0;
+        return false;
     }
     if (level.friendlyfire == 4) {
         if (self.pers[#"teamkills_nostats"] >= level.var_fe3ff9c1 + level.var_3297fce5) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (var_821200bb && level.minimumallowedteamkills >= 0) {
         if (globallogic_utils::gettimepassed() >= 5000) {
-            return 1;
+            return true;
         }
         if (self.pers[#"teamkills_nostats"] > 1) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -1796,12 +1796,12 @@ function function_a932bf9c() {
     }
     timeperoneteamkillreduction = 20;
     reductionpersecond = 1 / timeperoneteamkillreduction;
-    while (1) {
+    while (true) {
         if (isalive(self)) {
             self.pers[#"teamkills_nostats"] = self.pers[#"teamkills_nostats"] - reductionpersecond;
             if (self.pers[#"teamkills_nostats"] < level.minimumallowedteamkills) {
                 self.pers[#"teamkills_nostats"] = level.minimumallowedteamkills;
-                return;
+                break;
             }
         }
         wait(1);
@@ -1814,21 +1814,21 @@ function function_a932bf9c() {
 // Size: 0x10e
 function private ignore_team_kills(weapon, smeansofdeath, einflictor) {
     if (weapon_utils::ismeleemod(smeansofdeath)) {
-        return 0;
+        return false;
     }
     if (weapon.ignore_team_kills === 1 || weapon.ignoreteamkills === 1) {
-        return 1;
+        return true;
     }
     if (isdefined(einflictor) && einflictor.ignore_team_kills === 1) {
-        return 1;
+        return true;
     }
     if (isdefined(einflictor) && isdefined(einflictor.destroyedby) && isdefined(einflictor.owner) && einflictor.destroyedby != einflictor.owner) {
-        return 1;
+        return true;
     }
     if (isdefined(einflictor) && einflictor.classname == "worldspawn") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed
@@ -1837,19 +1837,19 @@ function private ignore_team_kills(weapon, smeansofdeath, einflictor) {
 // Size: 0xb6
 function private is_explosive_ragdoll(weapon, inflictor) {
     if (!isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (weapon.name == #"destructible_car" || weapon.name == #"explodable_barrel") {
-        return 1;
+        return true;
     }
     if (weapon.projexplosiontype == "grenade") {
         if (isdefined(inflictor) && isdefined(inflictor.stucktoplayer)) {
             if (inflictor.stucktoplayer == self) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_killed

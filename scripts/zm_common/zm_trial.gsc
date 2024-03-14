@@ -57,17 +57,17 @@ function private __init__() {
 // Size: 0x112
 function function_e80e07db(v_prev_origin) {
     if (distancesquared(self.origin, v_prev_origin) > 576) {
-        return 0;
+        return false;
     }
     var_860fbf2a = self zm_utility::get_current_zone();
     if (isarray(level.active_zone_names) && isdefined(var_860fbf2a) && zm_utility::check_point_in_playable_area(self.origin)) {
         foreach (str_zone in level.active_zone_names) {
             if (var_860fbf2a == str_zone) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_trial/zm_trial
@@ -110,13 +110,13 @@ function function_48736df9(var_38f795c7) {
             if (isarray(var_33c64592.challenges)) {
                 foreach (s_challenge in var_33c64592.challenges) {
                     if (s_challenge.name === var_38f795c7 && var_33c64592.round === level.round_number) {
-                        return 1;
+                        return true;
                     }
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial/zm_trial
@@ -629,7 +629,7 @@ function private function_17b04fd7() {
         }
         if (all_players_spawned) {
             waitframe(1);
-            return;
+            break;
         }
         waitframe(1);
     }

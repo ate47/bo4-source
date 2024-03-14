@@ -168,7 +168,7 @@ function init() {
 function function_7e3a43c3() {
     level.var_bcb2da96 = 0;
     util::waitforallclients();
-    while (1) {
+    while (true) {
         for (localclientnum = 0; localclientnum < level.localplayers.size; localclientnum++) {
             player = function_5c10bd79(localclientnum);
             if (isdefined(player)) {
@@ -317,7 +317,7 @@ function box_monitor(clientnum, state, oldstate) {
 // Checksum 0xdeebd28a, Offset: 0x1870
 // Size: 0x84
 function zpo_listener() {
-    while (1) {
+    while (true) {
         int = undefined;
         level waittill(#"zpo", int);
         if (isdefined(int)) {
@@ -333,7 +333,7 @@ function zpo_listener() {
 // Checksum 0x919a454a, Offset: 0x1900
 // Size: 0x6c
 function zpoff_listener() {
-    while (1) {
+    while (true) {
         int = undefined;
         level waittill(#"zpoff", int);
         if (isdefined(int)) {
@@ -619,14 +619,14 @@ function mark_piece_gibbed(piece_index) {
 // Size: 0x64
 function has_gibbed_piece(piece_index) {
     if (!isdefined(self.gibbed_pieces)) {
-        return 0;
+        return false;
     }
     for (i = 0; i < self.gibbed_pieces.size; i++) {
         if (self.gibbed_pieces[i] == piece_index) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm/zm
@@ -716,9 +716,9 @@ function do_hat_gib(model, tag) {
 // Size: 0x24
 function check_should_gib() {
     if (level.gibcount <= level.gibmaxcount) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm/zm
@@ -727,7 +727,7 @@ function check_should_gib() {
 // Size: 0x4a
 function resetgibcounter() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         wait(level.gibresettime);
         level.gibtimer = 0;
         level.gibcount = 0;
@@ -786,7 +786,7 @@ function on_gib_event(localclientnum, type, locations) {
             mark_piece_gibbed(level._zombie_gib_piece_index_left_leg);
             mark_piece_gibbed(level._zombie_gib_piece_index_head);
             mark_piece_gibbed(level._zombie_gib_piece_index_hat);
-            continue;
+            break;
         case 1:
             if (isdefined(self._gib_def.gibspawn1) && isdefined(self._gib_def.gibspawntag1)) {
                 self thread do_gib(self._gib_def.gibspawn1, self._gib_def.gibspawntag1);
@@ -797,7 +797,7 @@ function on_gib_event(localclientnum, type, locations) {
                 }
             }
             mark_piece_gibbed(level._zombie_gib_piece_index_right_arm);
-            continue;
+            break;
         case 2:
             if (isdefined(self._gib_def.gibspawn2) && isdefined(self._gib_def.gibspawntag2)) {
                 self thread do_gib(self._gib_def.gibspawn2, self._gib_def.gibspawntag2);
@@ -808,32 +808,32 @@ function on_gib_event(localclientnum, type, locations) {
                 }
             }
             mark_piece_gibbed(level._zombie_gib_piece_index_left_arm);
-            continue;
+            break;
         case 3:
             if (isdefined(self._gib_def.gibspawn3) && isdefined(self._gib_def.gibspawntag3)) {
                 self thread do_gib(self._gib_def.gibspawn3, self._gib_def.gibspawntag3);
             }
             mark_piece_gibbed(level._zombie_gib_piece_index_right_leg);
-            continue;
+            break;
         case 4:
             if (isdefined(self._gib_def.gibspawn4) && isdefined(self._gib_def.gibspawntag4)) {
                 self thread do_gib(self._gib_def.gibspawn4, self._gib_def.gibspawntag4);
             }
             mark_piece_gibbed(level._zombie_gib_piece_index_left_leg);
-            continue;
+            break;
         case 5:
             self thread do_headshot_gib_fx();
             mark_piece_gibbed(level._zombie_gib_piece_index_head);
-            continue;
+            break;
         case 6:
             self thread do_gib_fx("J_SpineLower");
-            continue;
+            break;
         case 7:
             if (isdefined(self._gib_def.gibspawn5) && isdefined(self._gib_def.gibspawntag5)) {
                 self thread do_hat_gib(self._gib_def.gibspawn5, self._gib_def.gibspawntag5);
             }
             mark_piece_gibbed(level._zombie_gib_piece_index_hat);
-            continue;
+            break;
         }
     }
     self.gibbed = 1;
@@ -1128,7 +1128,7 @@ function last_stand_thread(clientnum) {
         println("<unknown string>" + clientnum);
     #/
     pause = 0.5;
-    for (vol = 0.5; 1; vol = 1) {
+    for (vol = 0.5; true; vol = 1) {
         id = playsound(clientnum, #"chr_heart_beat");
         setsoundvolume(id, vol);
         wait(pause);
@@ -1220,21 +1220,21 @@ function laststand(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
 // Size: 0xac
 function private function_b9c917cc(var_6142f944, str_bundle) {
     if (self function_21c0fa55()) {
-        return 0;
+        return false;
     }
     if (!self function_ca024039()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_dc60105c) && level.var_dc60105c) {
-        return 0;
+        return false;
     }
     if (isigcactive(var_6142f944)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_74b9b03b) && self.var_74b9b03b) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm/zm
@@ -1243,18 +1243,18 @@ function private function_b9c917cc(var_6142f944, str_bundle) {
 // Size: 0xbe
 function private function_a1ab192(var_6142f944, str_bundle) {
     if (!self function_b9c917cc(var_6142f944, str_bundle)) {
-        return 0;
+        return false;
     }
     if (isplayer(self) || self function_21c0fa55() || isdemoplaying()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_dc60105c) && level.var_dc60105c) {
-        return 0;
+        return false;
     }
     if (isigcactive(var_6142f944)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm/zm

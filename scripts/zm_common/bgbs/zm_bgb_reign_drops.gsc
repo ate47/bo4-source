@@ -31,9 +31,9 @@ function __init__() {
 // Size: 0x3a
 function validation() {
     if (level.active_powerups.size >= 9 || !self bgb::function_9d8118f5()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_reign_drops/zm_bgb_reign_drops

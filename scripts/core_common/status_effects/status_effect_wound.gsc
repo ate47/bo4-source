@@ -78,7 +78,7 @@ function function_a54d41f7(starttime) {
 function private function_f6fec56f() {
     self notify(#"hash_35c63d8ef4b4825");
     self endon(#"hash_35c63d8ef4b4825", #"endstatuseffect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.owner waittill(#"fully_healed", #"death", #"disconnect", #"healing_disabled");
         if (waitresult._notify != "fully_healed") {

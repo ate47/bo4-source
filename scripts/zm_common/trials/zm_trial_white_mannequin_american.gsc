@@ -78,7 +78,7 @@ function private on_end(round_reset) {
 // Checksum 0xb480260, Offset: 0x538
 // Size: 0x66
 function function_26edbcdc(inflictor, attacker, damage, flags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_white_mannequin_american/zm_trial_white_mannequin_american
@@ -89,7 +89,7 @@ function private function_545d53bf() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
     var_407eb07 = 0;
-    while (1) {
+    while (true) {
         var_972e1f84 = 0;
         dist = distancesquared(self.origin, level.mannequin_ally.origin);
         if (dist <= 40000) {

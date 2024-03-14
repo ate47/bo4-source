@@ -357,7 +357,7 @@ function add_dynamic_wallbuy(weapon, wallbuy, pristine) {
 // Size: 0x9e0
 function wall_weapon_update_prompt(player) {
     if (!isdefined(player.currentweapon)) {
-        return 0;
+        return false;
     }
     weapon = self.stub.weapon;
     player_has_weapon = player zm_weapons::has_weapon_or_upgrade(weapon);
@@ -370,10 +370,10 @@ function wall_weapon_update_prompt(player) {
     }
     if (isdefined(level.func_override_wallbuy_prompt)) {
         if (!self [[ level.func_override_wallbuy_prompt ]](player, player_has_weapon)) {
-            return 0;
+            return false;
         }
     } else if (zm_trial_disable_buys::is_active()) {
-        return 0;
+        return false;
     } else if (!player_has_weapon) {
         self.stub.cursor_hint = "HINT_WEAPON";
         cost = zm_weapons::get_weapon_cost(weapon);
@@ -490,7 +490,7 @@ function wall_weapon_update_prompt(player) {
     self.stub.cursor_hint = "HINT_WEAPON";
     self.stub.cursor_hint_weapon = weapon;
     self setcursorhint(self.stub.cursor_hint, self.stub.cursor_hint_weapon);
-    return 1;
+    return true;
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
@@ -577,9 +577,9 @@ function weapon_set_first_time_hint(cost, ammo_cost) {
 // Size: 0x3a
 function placeable_mine_can_buy_weapon_extra_check_func(w_weapon) {
     if (isdefined(w_weapon) && w_weapon == self zm_loadout::get_player_placeable_mine()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
@@ -932,10 +932,10 @@ function is_wallbuy(w_to_check) {
     w_base = zm_weapons::get_base_weapon(w_to_check);
     foreach (s_wallbuy in level._spawned_wallbuys) {
         if (s_wallbuy.weapon == w_base) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_wallbuy/zm_wallbuy
@@ -1023,11 +1023,11 @@ function function_782e8955(func_override) {
 function function_284616f8(var_8f48d608 = 0) {
     if (var_8f48d608) {
         if (self bgb::is_enabled(#"zm_bgb_secret_shopper") && !(isdefined(self.currentweapon.ammoregen) && self.currentweapon.ammoregen) && self.currentweapon.type !== "melee") {
-            return 1;
+            return true;
         }
     } else if (self bgb::is_enabled(#"zm_bgb_secret_shopper") && !(isdefined(self.currentweapon.ammoregen) && self.currentweapon.ammoregen)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

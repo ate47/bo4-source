@@ -137,7 +137,7 @@ function getspikelauncheractivespikecount(watcher) {
 function watchspikelauncheritemcountchanged(watcher) {
     self endon(#"death");
     lastitemcount = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         for (weapon = waitresult.weapon; weapon.name == #"spike_launcher"; weapon = self getcurrentweapon()) {

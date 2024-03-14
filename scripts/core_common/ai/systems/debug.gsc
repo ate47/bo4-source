@@ -29,7 +29,7 @@ function __init__() {
 // Size: 0x56
 function debugdvars() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"debug_ai_clear_corpses", 0)) {
                 delete_all_ai_corpses();
             }
@@ -114,7 +114,7 @@ function updatedebuginfo() {
         self.debuginfo = spawnstruct();
         self.debuginfo.enabled = getdvarint(#"ai_debuganimscript", 0) > 0;
         debugclearstate();
-        while (1) {
+        while (true) {
             waitframe(1);
             updatedebuginfointernal();
             waitframe(1);
@@ -283,7 +283,7 @@ function debugpopstate(statename, exitreason) {
                 self.debuginfo.states[i].statevalid = 0;
                 self.debuginfo.states[i].exitreason = exitreason;
                 self.debuginfo.statelevel--;
-                return;
+                break;
             }
         }
     #/

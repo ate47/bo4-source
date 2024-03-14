@@ -101,39 +101,39 @@ function area_arrows_specialist(localclientnum, oldval, newval, bnewent, binitia
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "nomad_area_4";
         level.var_8c3d6a40 = 1;
-        return;
+        break;
     case 2:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "crash_area_";
-        return;
+        break;
     case 3:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         level.var_84c5e66d = "seraph_area_";
-        return;
+        break;
     case 4:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "firebreak_tut_finale_arrow";
         level.var_8c3d6a40 = 1;
-        return;
+        break;
     case 5:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][2];
         level.var_84c5e66d = "ajax_enemy_arrows";
         level.var_8c3d6a40 = 1;
-        return;
+        break;
     case 6:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "torque_tut_finale_arrow";
         level.var_8c3d6a40 = 1;
-        return;
+        break;
     case 7:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][1];
         level.var_84c5e66d = "hardpoint_chevrons";
         level.var_8c3d6a40 = 1;
-        return;
+        break;
     default:
         level.var_57b466e9 = level._effect[#"zoneedgemarker"][0];
         level.var_84c5e66d = "area_";
-        return;
+        break;
     }
 }
 
@@ -191,7 +191,7 @@ function function_59ace802(localclientnum) {
 function function_3827fca4(localclientnum) {
     var_8813211c = getlocalplayers()[0];
     time = 0;
-    while (1) {
+    while (true) {
         time = time + 0.0166667;
         val = distance(var_8813211c.origin, self.origin);
         val = val / 500;

@@ -385,7 +385,7 @@ function function_924f922d(localclientnum, oldval, newval, bnewent, binitialsnap
                 self notify(#"hash_199d88acd54c89d4");
             }
         #/
-        return;
+        break;
     default:
         self.b_force_stream = 0;
         playfx(localclientnum, level._effect[#"hash_11eb6b7dc7db71ad"], self.origin, anglestoforward(self.angles), anglestoup(self.angles));

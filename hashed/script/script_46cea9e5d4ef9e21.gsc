@@ -99,7 +99,7 @@ function _goodlighting_hangar_a() {
 // Checksum 0xaf4d805d, Offset: 0xa18
 // Size: 0x12c
 function function_89f2ec87() {
-    while (1) {
+    while (true) {
         a_mdl_tubes = getentarray("mdl_nixie_tubes", "script_string");
         foreach (mdl_tube in a_mdl_tubes) {
             mdl_tube thread function_e5c8fd1d();
@@ -284,7 +284,7 @@ function function_bad2e505(player) {
 function function_290d172d() {
     function_dae4ab9b(self, 0.05);
     a_s_tubes = struct::get_array("nixie_tubes", "script_noteworthy");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         a_s_tubes = struct::get_array("nixie_tubes", "script_noteworthy");
@@ -393,15 +393,15 @@ function function_a5d20d9b(str_code) {
     switch (str_code) {
     case #"115":
         level thread music_ee();
-        return;
+        break;
     case #"872":
         level thread function_f2f53f97();
-        return;
+        break;
     case #"666":
         level thread function_15aa00e7();
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

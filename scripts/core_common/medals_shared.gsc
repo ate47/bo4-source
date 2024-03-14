@@ -82,15 +82,15 @@ function event_handler[player_medal] codecallback_medal(eventstruct) {
 function function_8570168d() {
     /#
         if (getdvar(#"hash_49e94b7aefac4f49", 0)) {
-            return 1;
+            return true;
         }
     #/
     if (sessionmodeismultiplayergame()) {
         mode = function_bea73b01();
         if (mode == 4) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 

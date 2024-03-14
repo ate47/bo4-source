@@ -316,15 +316,15 @@ function private function_5b8256ca(package, isammo = 0, var_e120a933 = undefined
     }
     cost = int(cost);
     if (!isdefined(cost)) {
-        return 0;
+        return false;
     }
     if (money < cost) {
-        return 0;
+        return false;
     }
     money = money - cost;
     self clientfield::set_to_player("bountyMoney", money);
     self.pers[#"money"] = money;
-    return 1;
+    return true;
 }
 
 // Namespace dynamic_loadout/dynamic_loadout
@@ -388,15 +388,15 @@ function function_ff8ef46b(slot, clientfield, newval) {
 function private function_2b402d5d(package) {
     primary = self.pers[#"dynamic_loadout"].weapons[0];
     if (!isdefined(primary)) {
-        return 0;
+        return false;
     }
     if (!isdefined(primary.name)) {
-        return 0;
+        return false;
     }
     if (primary.name == package.packageitems[0].item) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace dynamic_loadout/dynamic_loadout

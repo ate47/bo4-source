@@ -203,7 +203,7 @@ function spawnkilltrigger() {
 function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
@@ -237,7 +237,7 @@ function vectoangles(vector) {
 // Size: 0x170
 function triggercheck(target) {
     self endon(#"game_ended");
-    while (1) {
+    while (true) {
         result = undefined;
         result = self waittill(#"trigger");
         distance = distance(target.origin, self.origin);
@@ -261,7 +261,7 @@ function triggercheck(target) {
 // Size: 0x40e
 function damagetarget(dir) {
     self endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"damage", level.attacker);
         switch (dir) {
         case 1:
@@ -314,7 +314,7 @@ function damagetarget(dir) {
 // Size: 0xa0
 function damagetargetlights(speaker, alias, exploderhandle) {
     self endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"damage");
         speaker playsound(alias);
         exploder::exploder(exploderhandle);
@@ -363,7 +363,7 @@ function movetarget(dir, dis, speed) {
     self.railpoints[1] = farpos;
     self.preferrednextpos = 1;
     self.playertrigger = 0;
-    while (1) {
+    while (true) {
         nextpos = self.railpoints[self.preferrednextpos];
         if (self.preferrednextpos == 0) {
             self.preferrednextpos = 1;
@@ -382,7 +382,7 @@ function movetarget(dir, dis, speed) {
 // Size: 0x50e
 function rotatetarget(dir, deg, speed, pausetime) {
     self endon(#"game_ended");
-    while (1) {
+    while (true) {
         switch (dir) {
         case 1:
             self rotateyaw(self.angles[2] + deg, speed);

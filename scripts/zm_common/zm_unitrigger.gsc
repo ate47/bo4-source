@@ -73,7 +73,7 @@ function function_fac87205(var_9d80e6ef, var_e0bc0661, var_98f0ce74 = 0, var_85b
 // Size: 0xd0
 function function_69168e61() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -92,7 +92,7 @@ function function_69168e61() {
 // Size: 0xb8
 function function_cf3f2bd8() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1108,7 +1108,7 @@ function private trigger_thread(trigger_func) {
 // Size: 0x47e
 function debug_unitriggers() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"debug_unitrigger", 0) > 0) {
                 for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
                     triggerstub = level._unitriggers.trigger_stubs[i];
@@ -1149,12 +1149,12 @@ function debug_unitriggers() {
                         if (triggerstub.script_height) {
                             line(origin, origin + (0, 0, triggerstub.script_height), color, 0, 1);
                         }
-                        continue;
+                        break;
                     case #"unitrigger_box_use":
                     case #"unitrigger_box":
                         vec = (triggerstub.script_width / 2, triggerstub.script_length / 2, triggerstub.script_height / 2);
                         box(origin, vec * -1, vec, triggerstub.angles[1], color, 1, 0, 1);
-                        continue;
+                        break;
                     }
                 }
             }
@@ -1190,10 +1190,10 @@ function debug_trigger(trigger, var_5ca10e3c, color) {
         switch (trigger.classname) {
         case #"trigger_radius":
         case #"trigger_radius_use":
-            return;
+            break;
         case #"trigger_box_use":
         case #"trigger_box":
-            return;
+            break;
         }
     }
 }
@@ -1209,7 +1209,7 @@ function private function_bb454fe6() {
     while (!isdefined(level.active_zone_names)) {
         wait(0.1);
     }
-    while (1) {
+    while (true) {
         if (isdefined(level.var_dc25ba05) && level.var_dc25ba05) {
             wait(2);
             continue;

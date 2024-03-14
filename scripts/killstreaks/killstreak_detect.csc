@@ -43,29 +43,29 @@ function init_shared() {
 // Size: 0x132
 function function_95f96f3e(local_client_num, bundle, param) {
     if (!self function_4e0ca360()) {
-        return 0;
+        return false;
     }
     if (!(isdefined(level.friendlycontentoutlines) && level.friendlycontentoutlines)) {
-        return 0;
+        return false;
     }
     if (shoutcaster::is_shoutcaster(local_client_num)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle" && self function_4add50a7()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.vision_pulse[local_client_num]) && level.vision_pulse[local_client_num]) {
-        return 0;
+        return false;
     }
     player = function_5c10bd79(local_client_num);
     if (self == player) {
-        return 0;
+        return false;
     }
     if (player.var_33b61b6f === 1) {
         bundle.force_kill = 1;
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace killstreak_detect/killstreak_detect
@@ -74,18 +74,18 @@ function function_95f96f3e(local_client_num, bundle, param) {
 // Size: 0x11c
 function function_7181329a(entity) {
     if (isplayer(entity)) {
-        return 0;
+        return false;
     }
     if (entity.type != "missile" && entity.type != "vehicle" && entity.type != "scriptmover" && entity.type != "actor") {
-        return 0;
+        return false;
     }
     if (self clientfield::get("enemyvehicle") != 0) {
-        return 1;
+        return true;
     }
     if (entity.type != "actor" && self.type !== "vehicle" && self clientfield::get("enemyequip") != 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace killstreak_detect/killstreak_detect
@@ -94,26 +94,26 @@ function function_7181329a(entity) {
 // Size: 0x14e
 function function_903bbed3(local_client_num, bundle) {
     if (self function_4e0ca360()) {
-        return 0;
+        return false;
     }
     if (shoutcaster::is_shoutcaster(local_client_num)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle" && self function_4add50a7()) {
-        return 0;
+        return false;
     }
     if (isdefined(self.isbreachingfirewall) && self.isbreachingfirewall == 1) {
-        return 0;
+        return false;
     }
     if (function_5778f82(local_client_num, #"specialty_showenemyvehicles") && !isplayer(self) && function_7181329a(self)) {
-        return 1;
+        return true;
     }
     player = function_5c10bd79(local_client_num);
     if (isdefined(player) && player.var_33b61b6f === 1) {
         bundle.force_kill = 1;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace killstreak_detect/killstreak_detect

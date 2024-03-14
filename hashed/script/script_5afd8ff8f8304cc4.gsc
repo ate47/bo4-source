@@ -54,8 +54,8 @@ function is_active() {
 // Size: 0x44
 function private function_ecc5a0b9(local_client_num, player, damage) {
     if (int(damage) <= 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

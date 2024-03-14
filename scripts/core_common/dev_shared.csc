@@ -24,7 +24,7 @@ function function_b49b1b6b(localclientnum) {
         var_b49b1b6b = undefined;
         a_effects = array("<unknown string>", "<unknown string>", "<unknown string>");
         var_767a6d22 = 0;
-        while (1) {
+        while (true) {
             n_dist = getdvarint(#"hash_4348ec71a8b13ef1", 0);
             var_114d05f = int(min(getdvarint(#"hash_4ead99200e3cc72c", 0), a_effects.size - 1));
             if (n_dist > 0) {

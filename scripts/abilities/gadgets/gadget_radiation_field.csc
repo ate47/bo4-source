@@ -155,10 +155,10 @@ function function_671d7ad5(localclientnum, attacker_entnum) {
     var_572ced0c = level.var_2e0bd467.var_cbe3d2b8 * level.var_2e0bd467.var_cbe3d2b8;
     var_8acd204b = #"hash_1a49fb45be903460";
     var_daa90ad6 = #"hash_1cc8ef91832fa038";
-    while (1) {
+    while (true) {
         player = function_5c10bd79(localclientnum);
         if (!isdefined(player) || !isalive(player)) {
-            return;
+            break;
         }
         dist2 = distance2dsquared(player.origin, self.origin);
         if (dist2 > var_4c6480bf) {
@@ -254,7 +254,7 @@ function function_7bf69748(localclientnum) {
     var_e60f94d0 = 0;
     var_4c6480bf = level.var_2e0bd467.var_641f6852 * level.var_2e0bd467.var_641f6852;
     var_572ced0c = level.var_2e0bd467.var_cbe3d2b8 * level.var_2e0bd467.var_cbe3d2b8;
-    while (1) {
+    while (true) {
         dist2 = function_68a9578(localclientnum);
         if (dist2 > var_4c6480bf) {
             if (var_e60f94d0) {
@@ -285,7 +285,7 @@ function function_7bf69748(localclientnum) {
 // Size: 0x74
 function function_2e24ef27(owner) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(owner)) {
             tagorigin = owner gettagorigin("tag_fx");
             if (isdefined(tagorigin)) {

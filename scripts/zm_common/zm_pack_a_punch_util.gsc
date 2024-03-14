@@ -126,16 +126,16 @@ function update_hint_string(player) {
                     } else {
                         self sethintstring(#"hash_51194149fb39a693");
                     }
-                    return 1;
+                    return true;
                 } else {
-                    return 0;
+                    return false;
                 }
             } else {
-                return 0;
+                return false;
             }
         } else {
             self sethintstring(#"hash_5b77a8f33d352c37");
-            return 1;
+            return true;
         }
     }
     w_current = player getcurrentweapon();
@@ -144,27 +144,27 @@ function update_hint_string(player) {
         if (zm_utility::is_standard()) {
             if (!zm_custom::function_901b751c(#"zmsuperpapenabled") || !b_weapon_supports_aat) {
                 self sethintstringforplayer(player, #"hash_fea06394ae21371");
-                return 1;
+                return true;
             } else if (isdefined(player.var_486c9d59) && player.var_486c9d59) {
-                return 1;
+                return true;
             }
         }
-        return 0;
+        return false;
     }
     if (zm_trial_disable_buys::is_active()) {
         self sethintstring(#"hash_55d25caf8f7bbb2f");
-        return 1;
+        return true;
     }
     if (namespace_83dc3729::is_active()) {
-        return 0;
+        return false;
     }
     var_cbf27833 = zm_weapons::is_weapon_upgraded(w_current);
     current_cost = pap_machine function_aaf2d8(player, w_current, b_weapon_supports_aat, var_cbf27833);
     if (isdefined(level.var_3e3d6409) && self [[ level.var_3e3d6409 ]](player)) {
         if (isdefined(player.var_486c9d59) && player.var_486c9d59) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
     if (var_cbf27833 && b_weapon_supports_aat) {
         if (isdefined(level.var_e4e8d300) && level.var_e4e8d300) {
@@ -213,7 +213,7 @@ function update_hint_string(player) {
     } else {
         self sethintstring(#"zombie/perk_packapunch", current_cost);
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_pap_util/zm_pack_a_punch_util
@@ -286,24 +286,24 @@ function function_873e8824(inflictor, attacker, damage, flags, meansofdeath, wea
 // Size: 0xfe
 function private can_pack_weapon(weapon, pap_machine) {
     if (weapon.isriotshield) {
-        return 0;
+        return false;
     }
     if (!pap_machine flag::get("pap_waiting_for_user")) {
-        return 1;
+        return true;
     }
     if (!(isdefined(level.b_allow_idgun_pap) && level.b_allow_idgun_pap) && isdefined(level.idgun_weapons)) {
         if (isinarray(level.idgun_weapons, weapon)) {
-            return 0;
+            return false;
         }
     }
     weapon = self zm_weapons::get_nonalternate_weapon(weapon);
     if (!zm_weapons::is_weapon_or_base_included(weapon)) {
-        return 0;
+        return false;
     }
     if (!self zm_weapons::can_upgrade_weapon(weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_pap_util/zm_pack_a_punch_util
@@ -312,19 +312,19 @@ function private can_pack_weapon(weapon, pap_machine) {
 // Size: 0x122
 function private player_use_can_pack_now(pap_machine) {
     if (self laststand::player_is_in_laststand() || isdefined(self.intermission) && self.intermission || self isthrowinggrenade()) {
-        return 0;
+        return false;
     }
     if (!self zm_magicbox::can_buy_weapon(0) || self bgb::is_enabled(#"zm_bgb_disorderly_combat")) {
-        return 0;
+        return false;
     }
     if (self zm_equipment::hacker_active()) {
-        return 0;
+        return false;
     }
     current_weapon = self getcurrentweapon();
     if (!self can_pack_weapon(current_weapon, pap_machine) && !zm_weapons::weapon_supports_aat(current_weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_pap_util/zm_pack_a_punch_util
@@ -375,9 +375,9 @@ function function_c01d9f22(weapon) {
 function function_b81da3fd(weapon) {
     weapon = zm_weapons::function_93cd8e76(weapon);
     if (isdefined(self.var_2843d3cc) && isdefined(self.var_2843d3cc[weapon]) && self.var_2843d3cc[weapon] > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_pap_util/zm_pack_a_punch_util
@@ -387,9 +387,9 @@ function function_b81da3fd(weapon) {
 function function_7352d8cc(weapon) {
     weapon = zm_weapons::function_93cd8e76(weapon);
     if (isdefined(self.var_2843d3cc) && isdefined(self.var_2843d3cc[weapon]) && self.var_2843d3cc[weapon] == 4) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_pap_util/zm_pack_a_punch_util

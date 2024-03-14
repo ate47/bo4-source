@@ -66,7 +66,7 @@ function private on_weapon_fired(params) {
 function private function_a5a431f6() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"ammo_reduction", #"lightning_ball_created");
         self zm_score::player_reduce_points("take_specified", level.var_d34d02af);

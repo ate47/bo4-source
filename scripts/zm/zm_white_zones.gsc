@@ -141,12 +141,12 @@ function is_bunker_zone(str_zone) {
         case #"zone_bunker_apd":
         case #"zone_bunker_storage_entrance":
         case #"zone_bunker_diner":
-            return 1;
+            return true;
         default:
-            return 0;
+            return false;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_zones/zm_white_zones
@@ -163,7 +163,7 @@ function function_29ec1ad7() {
 // Size: 0xb8
 function function_8e0b371() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (isalive(self)) {
             str_location = function_ab7f70b9(self);
             self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"");

@@ -94,7 +94,7 @@ function __init__() {
 // Size: 0x18c
 function function_d20309f1() {
     level flag::wait_till_any(array("start_zombie_round_logic", "start_encounters_match_logic"));
-    while (1) {
+    while (true) {
         var_cdbf6ee2 = get_round_number();
         level.round_number = undefined;
         var_496beb9e = var_cdbf6ee2;
@@ -214,9 +214,9 @@ function private function_f5c01f5() {
             ai.var_a9b2d989 = 1;
         }
         ai thread zombie_utility::round_spawn_failsafe();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_round_logic/zm_round_logic
@@ -270,7 +270,7 @@ function round_spawning() {
     level thread [[ level.var_d8d02d0e ]]();
     zm_round_spawning::function_b2dabfc();
     old_spawn = undefined;
-    while (1) {
+    while (true) {
         var_404e4288 = zombie_utility::get_current_zombie_count();
         var_3cafeff5 = 0;
         while (var_404e4288 >= level.zombie_ai_limit || level.zombie_total <= 0 && !level flag::get(#"infinite_round_spawning")) {
@@ -497,7 +497,7 @@ function register_custom_ai_spawn_check(str_id, func_check, func_get_spawners, f
 // Checksum 0x4823ea0f, Offset: 0x1f30
 // Size: 0xb6
 function round_spawning_test() {
-    while (1) {
+    while (true) {
         spawn_point = array::random(level.zm_loc_types[#"zombie_location"]);
         spawner = array::random(level.zombie_spawners);
         ai = zombie_utility::spawn_zombie(spawner, spawner.targetname, spawn_point);
@@ -751,7 +751,7 @@ function round_think(restart = 0) {
         function_89888d49();
     }
     array::thread_all(level.players, &zm_blockers::rebuild_barrier_reward_reset);
-    while (1) {
+    while (true) {
         zombie_utility::set_zombie_var(#"rebuild_barrier_cap_per_round", min(500, 50 * level.round_number));
         level.pro_tips_start_time = gettime();
         level.zombie_last_run_time = gettime();
@@ -984,7 +984,7 @@ function round_spawn_failsafe_debug() {
         level endon(#"failsafe_debug_stop");
         start = gettime();
         level.chunk_time = 0;
-        while (1) {
+        while (true) {
             level.failsafe_time = gettime() - start;
             if (isdefined(self.lastchunk_destroy_time)) {
                 level.chunk_time = gettime() - self.lastchunk_destroy_time;
@@ -1000,7 +1000,7 @@ function round_spawn_failsafe_debug() {
 // Size: 0x164
 function print_zombie_counts() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"zombiemode_debug_zombie_count", 0)) {
                 if (!isdefined(level.debug_zombie_count_hud)) {
                     level.debug_zombie_count_hud = newdebughudelem();
@@ -1046,7 +1046,7 @@ function round_wait() {
         level thread print_zombie_counts();
         level thread sndmusiconkillround();
     #/
-    while (1) {
+    while (true) {
         if (zombie_utility::get_current_zombie_count() == 0 && level.zombie_total <= 0 && !level.intermission && !level flag::get(#"infinite_round_spawning") && !level flag::get(#"hold_round_end")) {
             return;
         }

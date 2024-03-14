@@ -48,7 +48,7 @@ class cdoor {
     function function_670cd4a3() {
         self endon(#"death");
         self.var_19fde5b7 = [];
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = self waittill(#"grenade_stuck");
             if (isdefined(waitresult.projectile)) {
@@ -321,7 +321,7 @@ class cdoor {
     // Size: 0x1ae
     function function_54605e70() {
         self.m_e_trigger endon(#"death");
-        while (1) {
+        while (true) {
             self.m_e_door waittill(#"damage");
             if (!is_open() && !self flag::get("animating")) {
                 open();
@@ -349,7 +349,7 @@ class cdoor {
     // Size: 0x36e
     function function_2190a0ee(b_reusable, var_23456fbb) {
         self.m_e_door endon(#"hash_190d72393c0a8869", #"delete", #"gameobject_deleted");
-        while (1) {
+        while (true) {
             if (var_23456fbb) {
                 waitresult = undefined;
                 waitresult = self.m_e_door.mdl_gameobject waittill(#"gameobject_end_use_player");
@@ -432,7 +432,7 @@ class cdoor {
         e_fx = undefined;
         v_pos = get_hack_pos();
         v_angles = get_hack_angles();
-        while (1) {
+        while (true) {
             self flag::wait_till("locked");
             if (isdefined(e_fx)) {
                 e_fx delete();
@@ -657,7 +657,7 @@ class cdoor {
         n_delay_max = isdefined(self.m_s_bundle.var_5cac6503) ? self.m_s_bundle.var_5cac6503 : 1;
         if (self.m_s_bundle.door_open_method === "slide" || self.m_s_bundle.door_open_method === "swing") {
             if (b_enable) {
-                while (1) {
+                while (true) {
                     open_internal(b_enable, randomfloatrange(n_delay_min, n_delay_max));
                     wait(randomfloatrange(n_delay_min, n_delay_max));
                     close_internal(b_enable, randomfloatrange(n_delay_min, n_delay_max));
@@ -1043,7 +1043,7 @@ function setup_doors_with_panel() {
 function door_panel_interact(b_is_panel_reusable) {
     self endon(#"death");
     self.mdl_gameobject endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.mdl_gameobject waittill(#"gameobject_end_use_player");
         e_player = waitresult.player;
@@ -1068,7 +1068,7 @@ function door_panel_interact(b_is_panel_reusable) {
             }
             waitframe(1);
             if (isdefined(b_is_panel_reusable) && b_is_panel_reusable) {
-                while (1) {
+                while (true) {
                     b_door_animating = 0;
                     foreach (e_door in a_e_doors) {
                         if (isdefined(e_door) && isdefined(e_door.c_door)) {
@@ -1289,7 +1289,7 @@ function door_open_update(c_door) {
     b_auto_close = isdefined(c_door.m_s_bundle.door_closes) && c_door.m_s_bundle.door_closes && !(isdefined(c_door.m_s_bundle.door_use_trigger) && c_door.m_s_bundle.door_use_trigger);
     b_hold_open = isdefined(c_door.m_s_bundle.door_use_hold) && c_door.m_s_bundle.door_use_hold;
     b_manual_close = isdefined(c_door.m_s_bundle.door_use_trigger) && c_door.m_s_bundle.door_use_trigger && isdefined(c_door.m_s_bundle.door_closes) && c_door.m_s_bundle.door_closes;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = c_door.m_e_trigger waittill(#"trigger");
         e_who = waitresult.activator;
@@ -1350,7 +1350,7 @@ function door_update(c_door) {
     }
     thread door_open_update(c_door);
     [[ c_door ]]->update_use_message();
-    while (1) {
+    while (true) {
         if (c_door flag::get("locked")) {
             c_door flag::wait_till_clear("locked");
         }
@@ -1384,7 +1384,7 @@ function door_update_lock_scripted(c_door) {
     door_str = c_door.var_a2f96f78.targetname;
     c_door.m_e_trigger.targetname = door_str + "_trig";
     c_door.m_e_trigger endon(#"death");
-    while (1) {
+    while (true) {
         c_door.m_e_trigger waittill(#"unlocked");
         [[ c_door ]]->unlock();
     }
@@ -1502,7 +1502,7 @@ function trigger_wait_until_clear(c_door) {
     self.ents_in_trigger = 1;
     str_kill_trigger_notify = "trigger_now_clear";
     self thread trigger_check_for_ents_touching(str_kill_trigger_notify);
-    while (1) {
+    while (true) {
         time = gettime();
         if (self.ents_in_trigger == 1) {
             self.ents_in_trigger = 0;
@@ -1558,7 +1558,7 @@ function door_wait_until_clear(c_door, e_triggerer) {
 // Size: 0x4a
 function trigger_check_for_ents_touching(str_kill_trigger_notify) {
     self endon(#"death", str_kill_trigger_notify);
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         self.ents_in_trigger = 1;
     }
@@ -1570,7 +1570,7 @@ function trigger_check_for_ents_touching(str_kill_trigger_notify) {
 // Size: 0x98
 function door_debug_line(v_origin) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         v_start = v_origin;
         v_end = v_start + vectorscale((0, 0, 1), 1000);
         v_col = (0, 0, 1);
@@ -1711,7 +1711,7 @@ function waittill_door_opened(str_value, str_key = "targetname") {
         return;
     }
     a_e_doors = get_doors(str_value, str_key);
-    while (1) {
+    while (true) {
         var_8c4538df = 1;
         foreach (e_door in a_e_doors) {
             if (!e_door.c_door flag::get("open")) {
@@ -1737,7 +1737,7 @@ function waittill_door_closed(str_value, str_key = "targetname") {
         return;
     }
     a_e_doors = get_doors(str_value, str_key);
-    while (1) {
+    while (true) {
         var_a644cd9e = 1;
         foreach (e_door in a_e_doors) {
             if (e_door.c_door flag::get("open") || e_door.c_door flag::get("animating")) {

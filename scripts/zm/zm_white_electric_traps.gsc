@@ -148,7 +148,7 @@ function function_d12e5ff9(e_player) {
 // Size: 0x2c8
 function electric_trap_think() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         e_who = s_waitresult.activator;
@@ -188,7 +188,7 @@ function electric_trap_think() {
 function function_f118c57a(e_player) {
     level endon(#"end_game");
     function_91ecec97(self.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
-    while (1) {
+    while (true) {
         self waittill(#"hash_5c14ac54b628d28");
         function_91ecec97(self.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
         self.var_6b64b967 = 1;

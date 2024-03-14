@@ -256,21 +256,21 @@ function private function_cbdce009(bolt) {
 // Size: 0x382
 function private function_f8e8c129(entity) {
     if (isdefined(entity.can_shoot) && !entity.can_shoot) {
-        return 0;
+        return false;
     }
     var_99387d40 = blackboard::getblackboardevents(#"hash_27bee30b37f7debe");
     if (var_99387d40.size > 0) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_a35afcb2) && ![[ level.var_a35afcb2 ]](entity)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.bolt)) {
-        return 1;
+        return true;
     }
     bolt = function_66dd488a();
     if (!isdefined(bolt)) {
-        return 0;
+        return false;
     }
     enemy = isdefined(self.attackable) ? self.attackable : self.favoriteenemy;
     if (isdefined(enemy)) {
@@ -295,12 +295,12 @@ function private function_f8e8c129(entity) {
                 if (passed) {
                     function_7e03184e(bolt, entity);
                     entity.bolt = bolt;
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_avogadro/archetype_avogadro

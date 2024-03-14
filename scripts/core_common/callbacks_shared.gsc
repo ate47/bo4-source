@@ -202,7 +202,7 @@ function private function_3f5f097e(ent, event, func, obj, instant) {
                     obj notify(function_862146b3(event, func));
                 }
                 ent._callbacks[event][index] = 0;
-                return;
+                break;
             }
         }
     }
@@ -973,13 +973,13 @@ function callback_weapon_damage(eattacker, einflictor, weapon, meansofdeath, dam
     if (isdefined(level.weapon_damage_callback_array)) {
         if (isdefined(level.weapon_damage_callback_array[weapon])) {
             self thread [[ level.weapon_damage_callback_array[weapon] ]](eattacker, einflictor, weapon, meansofdeath, damage);
-            return 1;
+            return true;
         } else if (isdefined(level.weapon_damage_callback_array[weapon.rootweapon])) {
             self thread [[ level.weapon_damage_callback_array[weapon.rootweapon] ]](eattacker, einflictor, weapon, meansofdeath, damage);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace callback/callbacks_shared
@@ -1001,13 +1001,13 @@ function callback_weapon_fired(weapon) {
     if (isdefined(weapon) && isdefined(level.var_129c2069)) {
         if (isdefined(level.var_129c2069[weapon])) {
             self thread [[ level.var_129c2069[weapon] ]](weapon);
-            return 1;
+            return true;
         } else if (isdefined(level.var_129c2069[weapon.rootweapon])) {
             self thread [[ level.var_129c2069[weapon.rootweapon] ]](weapon);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace callback/gametype_start
@@ -1386,7 +1386,7 @@ function event_handler[ui_menuresponse] codecallback_menuresponse(eventstruct) {
 // Checksum 0xd341ed76, Offset: 0x3a28
 // Size: 0xf8
 function menu_response_queue_pump() {
-    while (1) {
+    while (true) {
         level waittill(#"menuresponse_queue");
         do {
             if (isdefined(level.menuresponsequeue[0].ent)) {

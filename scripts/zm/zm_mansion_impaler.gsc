@@ -319,13 +319,13 @@ function cleanup_step_5(var_5ea5c94d, ended_early) {
 // Size: 0xa8
 function function_d84548e7() {
     level endon(#"hash_785f94bb8c05dc05");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self.mdl_candle waittill(#"damage");
         if (s_notify.mod === "MOD_MELEE") {
             self.mdl_candle clientfield::set("" + #"candle_light", 0);
             level.var_e93e5852++;
-            return;
+            break;
         }
     }
 }
@@ -336,7 +336,7 @@ function function_d84548e7() {
 // Size: 0x100
 function registerremaining_retreat_() {
     level endon(#"hash_3e6c62c9a38d67de");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -415,7 +415,7 @@ function function_92e77dc6() {
     self endon(#"disconnect");
     level.monolith_ghost setinvisibletoplayer(self);
     level.monolith_ghost.mdl_head setinvisibletoplayer(self);
-    while (1) {
+    while (true) {
         if (isdefined(self.b_is_designated_target) && self.b_is_designated_target && !isdefined(level.e_guide) && !(isdefined(self.var_22514848) && self.var_22514848)) {
             self.var_22514848 = 1;
             level.monolith_ghost setvisibletoplayer(self);
@@ -789,7 +789,7 @@ function function_c5a4ae6(v_start, v_end) {
 // Size: 0x148
 function function_5270aabe(e_trigger) {
     level endon(#"hash_aa10db1b6143db9");
-    while (1) {
+    while (true) {
         var_4bb8adfe = array::get_touching(zombie_utility::get_zombie_array(), e_trigger);
         if (isdefined(var_4bb8adfe) && var_4bb8adfe.size) {
             var_680eece8 = arraysortclosest(var_4bb8adfe, self.origin, undefined, 256, undefined);
@@ -841,7 +841,7 @@ function function_3c1f242b() {
     level endon(#"hash_38fe2a57d5f9d6ba");
     mdl_drop = self.stub.mdl_drop;
     n_loc = self.stub.script_int;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -921,7 +921,7 @@ function function_e7423237() {
 // Size: 0x168
 function function_9f0de8b3() {
     level endon(#"hash_38fe2a57d5f9d6ba");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -999,7 +999,7 @@ function on_nosferatu_killed(s_params) {
 // Size: 0xd0
 function function_d7d6b759() {
     level endon(#"hash_38fe2a57d5f9d6ba");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1096,7 +1096,7 @@ function function_486252bc() {
 // Size: 0x118
 function function_d23a6d02() {
     level endon(#"hash_38fe2a57d5f9d6ba");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1248,9 +1248,9 @@ function function_615d8c38(params) {
             self zombie_utility::gib_random_parts();
             gibserverutils::annihilate(self);
             self crossbow_kill(self.health, e_player, e_bolt, str_hitloc, str_meansofdeath);
-            return;
+            break;
         }
-        return;
+        break;
     case #"catalyst":
         switch (str_hitloc) {
         case #"head":
@@ -1264,14 +1264,14 @@ function function_615d8c38(params) {
             self zombie_utility::gib_random_parts();
             gibserverutils::annihilate(self);
             self crossbow_kill(self.health, e_player, e_bolt, str_hitloc, str_meansofdeath);
-            return;
+            break;
         }
-        return;
+        break;
     case #"nosferatu":
         self zombie_utility::gib_random_parts();
         gibserverutils::annihilate(self);
         self crossbow_kill(self.health, e_player, e_bolt, str_hitloc, str_meansofdeath);
-        return;
+        break;
     }
 }
 

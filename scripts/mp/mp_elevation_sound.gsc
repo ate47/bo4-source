@@ -18,7 +18,7 @@ function function_14f3a3c2() {
     if (!isdefined(trigger)) {
         return;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         if (isplayer(waitresult.activator)) {

@@ -230,17 +230,17 @@ function function_70f269cd(localclientnum, newval, str_step) {
     switch (newval) {
     case 0:
         function_ed4ed5e(localclientnum, str_step);
-        return;
+        break;
     case 1:
         function_77072f95(localclientnum, str_step, a_s_points);
-        return;
+        break;
     case 2:
         if (str_step == #"blood") {
             s_final = struct::get(#"hash_74c74fa352fbfa70");
             a_s_points[a_s_points.size - 1] = s_final;
         }
         function_c6f495b3(localclientnum, str_step, a_s_points);
-        return;
+        break;
     }
 }
 
@@ -283,7 +283,7 @@ function function_77072f95(localclientnum, str_step, a_s_points) {
         s_start = s_point;
         s_end = a_s_points[i + 1];
         if (!isdefined(s_end)) {
-            return;
+            break;
         }
         if (isdefined(s_end.target)) {
             s_end = struct::get(s_end.target);
@@ -813,7 +813,7 @@ function function_6d38ea52(localclientnum, oldval, newval, bnewent, binitialsnap
     var_5f70b16e = 0;
     var_1a66f701 = 0;
     n_start_time = gettime();
-    while (1) {
+    while (true) {
         waitframe(1);
         n_current_time = gettime();
         n_time_passed = float(n_current_time - n_start_time) / 1000;
@@ -1558,7 +1558,7 @@ function function_5b807116(localclientnum) {
     self endon("41f2ff915f63437b");
     level endon(#"end_game");
     self endon(#"death", #"hash_7e024090b699d99f");
-    while (1) {
+    while (true) {
         e_player = function_5c10bd79(localclientnum);
         if (isplayer(e_player)) {
             n_dist = distance2dsquared(self.origin, e_player.origin);

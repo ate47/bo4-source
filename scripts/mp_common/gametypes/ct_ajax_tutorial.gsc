@@ -81,23 +81,23 @@ function function_c9ff0dce() {
             case 1:
                 self val::set(#"grenade_bot", "ignoreall", 1);
                 self thread function_58c62280(0);
-                return;
+                break;
             case 2:
                 self val::set(#"grenade_bot", "ignoreall", 1);
                 self.script_accuracy = 0.3;
                 self thread function_58c62280(0);
-                return;
+                break;
             case 6:
                 self thread function_77e3ea7();
                 self thread function_58c62280(1);
-                return;
+                break;
             case 8:
                 self thread function_58c62280(1);
-                return;
+                break;
             default:
                 self val::set(#"grenade_bot", "ignoreall", 1);
                 self thread function_58c62280(1);
-                return;
+                break;
             }
         }
     }
@@ -274,7 +274,7 @@ function function_732cbc35() {
 function function_f29a3861() {
     level endon(#"hash_4d65fa7bba19c892", #"combattraining_logic_finished");
     level.var_fa76e237 = undefined;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_fa76e237) && level.var_fa76e237 > 1) {
             e_player = getplayers()[0];
             e_player ct_utils::function_329f9ba6(#"hash_629d4f9c61888a79", 4, "green", 2, 1);
@@ -290,7 +290,7 @@ function function_f29a3861() {
 // Size: 0x180
 function function_f8ee8801(var_68e5d590, a_str_vo) {
     level endon(#"hash_6c4f5054a4889eb4", #"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (isdefined(level.var_fa76e237)) {
             if (!isdefined(var_68e5d590) || level.var_fa76e237 == var_68e5d590) {
                 var_beeee781 = ct_utils::function_ee33a140();
@@ -352,7 +352,7 @@ function function_f907b408() {
 // Size: 0x1b8
 function function_192a6db2() {
     level endon(#"combattraining_logic_finished", #"hash_59ab222626525669");
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         a_bots = e_player ct_bots::function_dde6edbd();
         foreach (bot in a_bots) {
@@ -406,7 +406,7 @@ function function_593bdda2(n_level, var_e8d6f89, var_eed14f5e, var_ec3da253, var
     wait(0.1);
     if (n_level == 1) {
     }
-    while (1) {
+    while (true) {
         var_beeee781 = ct_utils::function_ee33a140();
         if (var_beeee781 == 1 && level flag::get("grenade_exp")) {
             if (isdefined(level.var_fa76e237) && n_level == 1 && level.var_fa76e237 > n_level) {
@@ -450,7 +450,7 @@ function function_593bdda2(n_level, var_e8d6f89, var_eed14f5e, var_ec3da253, var
         wait(0.1);
         ct_utils::function_b05a86bc(#"axis", 800, 0);
         e_player ct_bots::function_fd2d220e();
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             a_bots = e_player ct_bots::function_dde6edbd();
             if (a_bots.size == 0) {
@@ -494,7 +494,7 @@ function function_c6e7b0d9() {
         waypoint = ct_utils::create_waypoint(undefined, s_loc.origin, s_loc.angles, #"any", undefined, 20, undefined);
         level.var_e72728b8 = array(#"sig_buckler_dw");
         level thread function_f58c42e2();
-        while (1) {
+        while (true) {
             var_beeee781 = ct_utils::function_ee33a140();
             if (var_beeee781 == 1) {
                 break;
@@ -551,12 +551,12 @@ function function_c6e7b0d9() {
 // Size: 0x13e
 function function_f58c42e2() {
     level endon(#"guys_stunned", #"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         waitresult = undefined;
         waitresult = e_player waittill(#"grenade_fire");
         n_start_time = gettime() / 1000;
-        while (1) {
+        while (true) {
             var_beeee781 = ct_utils::function_ee33a140();
             n_time = gettime() / 1000;
             dt = n_time - n_start_time;
@@ -642,7 +642,7 @@ function function_b87295f2() {
     wait(0.5);
     a_str_vo = array(#"hash_7d5741c589233b9b");
     level thread ct_vo::function_14b08e49(a_str_vo, "melee_kill");
-    while (1) {
+    while (true) {
         ct_utils::function_654280be();
         if (isdefined(level.b_melee_kill) && level.b_melee_kill) {
             break;
@@ -700,7 +700,7 @@ function function_9f3ecaf2() {
             e_player thread ct_utils::function_61c3d59c(#"hash_481e857eee7f2a9c", undefined);
             s_loc = struct::get("s_cooked_shield_door_obj", "targetname");
             waypoint = ct_utils::create_waypoint(#"hash_1f1deaa6bff12db8", s_loc.origin, s_loc.angles, #"any", undefined, 40, undefined);
-            while (1) {
+            while (true) {
                 if (!e_player fragbuttonpressed()) {
                     break;
                 }
@@ -741,7 +741,7 @@ function function_9f3ecaf2() {
         if (var_3e7a6a5c) {
             ct_vo::function_3ca1b77d();
             level notify(#"hash_24bd25e0736c3ca3");
-            while (1) {
+            while (true) {
                 e_player = getplayers()[0];
                 a_bots = e_player ct_bots::function_dde6edbd();
                 if (a_bots.size == 0) {
@@ -780,7 +780,7 @@ function function_9f3ecaf2() {
 // Size: 0x78
 function function_c99618be() {
     level endon(#"combattraining_logic_finished", #"hash_2a15358f9e2dbc11");
-    while (1) {
+    while (true) {
         n_frac = ct_utils::function_ee33a140();
         if (n_frac > 0) {
             ct_vo::function_3ca1b77d();
@@ -821,7 +821,7 @@ function function_8c3101de() {
     level.var_47cd3e56 = 0;
     level thread ct_bots::activate_bots(level.var_7b46025.size, #"axis");
     level thread ct_vo::function_14b08e49(array(#"hash_3f3ce103b8badcf0"), "stop_nag");
-    while (1) {
+    while (true) {
         if (isdefined(level.var_d7622168) && level.var_d7622168) {
             break;
         }
@@ -863,15 +863,15 @@ function function_e706a3ca() {
 // Size: 0x24e
 function function_b73895e1() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (isdefined(level.var_5830bda2) && level.var_5830bda2) {
-            return;
+            break;
         }
         e_player = getplayers()[0];
         weapon = e_player getcurrentweapon();
         if (!(weapon.name == "sig_buckler_dw" || weapon.name == "sig_buckler_turret")) {
             e_player thread ct_utils::function_61c3d59c(#"hash_137d47e2a7f7225c", undefined);
-            while (1) {
+            while (true) {
                 weapon = e_player getcurrentweapon();
                 if (weapon.name == "sig_buckler_dw" || weapon.name == "sig_buckler_turret") {
                     e_player = getplayers()[0];
@@ -900,7 +900,7 @@ function function_b73895e1() {
 function function_4e24aa26() {
     level endon(#"hash_4161e19c15c58c8c", #"combattraining_logic_finished");
     var_6ee32682 = 0;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         e_player = getplayers()[0];
         weapon = e_player getcurrentweapon();
@@ -976,7 +976,7 @@ function function_4a9cfde5() {
         }
         wait(0.5);
         level notify(#"hash_24bd25e0736c3ca3");
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             if (!isalive(e_player)) {
                 ct_utils::function_c561377e(undefined);
@@ -1031,7 +1031,7 @@ function function_109c0cc2() {
     callback::on_player_killed_with_params(&ct_utils::function_944e4110);
     level.var_28cfc859 = 50;
     b_success = 0;
-    while (1) {
+    while (true) {
         level notify(#"start_init_killstreak_collision");
         e_player ct_vo::function_831e0584(array("vox_tvoi_tutor_ajax_final_event_2_start_0"), 1);
         level notify(#"stop_init_killstreak_collision");
@@ -1044,7 +1044,7 @@ function function_109c0cc2() {
         if (!b_success) {
             ct_utils::function_c561377e(undefined);
             ct_utils::function_79957328(0.5);
-            while (1) {
+            while (true) {
                 e_player = getplayers()[0];
                 if (isalive(e_player)) {
                     break;
@@ -1094,7 +1094,7 @@ function wait_for_car() {
                 ct_utils::function_c561377e(undefined);
                 ct_utils::function_79957328(0.5);
                 e_player ct_vo::function_831e0584(array("vox_tvoi_tutor_ajax_final_event_2_dead"));
-                while (1) {
+                while (true) {
                     e_player = getplayers()[0];
                     if (isalive(e_player)) {
                         break;
@@ -1336,7 +1336,7 @@ function function_90c6b9d4() {
 function player_grenade_watcher() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         level flag::clear("grenade_exp");
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
@@ -1443,7 +1443,7 @@ function function_58c62280(b_keyline) {
 function function_77e3ea7() {
     self endon(#"death");
     self val::set(#"hash_688274741bd92b3", "ignoreall", 1);
-    while (1) {
+    while (true) {
         var_beeee781 = ct_utils::function_ee33a140();
         if (var_beeee781 > 0) {
             break;
@@ -1461,7 +1461,7 @@ function function_f9eac817() {
     self endon(#"death");
     self notify("7362195890e41eba");
     self endon("7362195890e41eba");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         next_weapon = waitresult.weapon;
@@ -1482,7 +1482,7 @@ function function_4e23716d() {
     wpn_buckler_turret = getweapon(#"sig_buckler_turret");
     wpn_buckler_dw = getweapon(#"sig_buckler_dw");
     var_6af5e1d4 = self getweaponammoclipsize(wpn_buckler_turret);
-    while (1) {
+    while (true) {
         wpn_current = self getcurrentweapon();
         if (wpn_current == wpn_buckler_turret || wpn_current == wpn_buckler_dw) {
             n_ammo = self getweaponammoclip(wpn_current);

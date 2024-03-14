@@ -95,7 +95,7 @@ function function_91b8863c() {
     if (!isdefined(max_attract_dist)) {
         var_c4a5788c = 3000;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"grenade_fire");
         e_grenade = s_result.projectile;
@@ -115,9 +115,9 @@ function function_7b1ec82e(s_result) {
         s_result.projectile.grenade_multiattack_bookmark_count = 1;
         s_result.projectile.weapon = s_result.weapon;
         s_result.projectile.thrower = self;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus
@@ -205,7 +205,7 @@ function function_dcaa7a4a(e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462) 
 function function_1dba4a2() {
     self endon(#"death", #"hash_3e410dbcd9e66000");
     self.mdl_anchor endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.mdl_anchor waittill(#"snddeployvox");
         if (isdefined(waitresult.str_alias)) {
@@ -278,7 +278,7 @@ function function_32b5113(ai_zombie) {
     self endon(#"death");
     ai_zombie endon(#"death");
     if (!zm_utility::check_point_in_playable_area(ai_zombie.origin) || isdefined(ai_zombie.var_8ea10940) && ai_zombie.var_8ea10940 || isdefined(ai_zombie.var_68139d12) && ai_zombie.var_68139d12) {
-        return 0;
+        return false;
     }
     if (!isdefined(ai_zombie.var_6f84b820)) {
         /#
@@ -286,15 +286,15 @@ function function_32b5113(ai_zombie) {
                 println("<unknown string>" + ai_zombie.archetype + "<unknown string>");
             }
         #/
-        return 0;
+        return false;
     }
     n_dist_sq = distancesquared(self.origin, ai_zombie.origin);
     if (n_dist_sq <= 30625) {
         if (bullettracepassed(self.mdl_anchor.origin + vectorscale((0, 0, 1), 16), ai_zombie getcentroid(), 0, self.mdl_anchor, ai_zombie)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus
@@ -304,9 +304,9 @@ function function_32b5113(ai_zombie) {
 function function_cc9535d0(var_c4a5788c, var_bbab4f84, var_2f916462) {
     self endon(#"death", #"explode");
     b_first_loop = 1;
-    while (1) {
+    while (true) {
         b_attacked = 0;
-        while (1) {
+        while (true) {
             a_ai_zombies = self get_zombie_targets();
             if (!a_ai_zombies.size) {
                 if (b_attacked) {
@@ -394,13 +394,13 @@ function function_2c022ba8(e_player, e_grenade) {
         if (self.health <= 0 && self.archetype == #"zombie") {
             gibserverutils::gibhead(self);
         }
-        return;
+        break;
     case #"heavy":
     case #"miniboss":
         self playsound(#"hash_3a99f739009a77fa");
         self dodamage(var_5d7b4163, self.origin, e_player, undefined, undefined, "MOD_UNKNOWN", 0, level.w_homunculus);
         self ai::stun(1.5);
-        return;
+        break;
     }
 }
 
@@ -456,7 +456,7 @@ function private function_45eb4c80() {
 // Size: 0x12a
 function debug_draw_new_attractor_positions() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (attract in self.attractor_positions) {
             passed = bullettracepassed(attract + vectorscale((0, 0, 1), 24), self.origin + vectorscale((0, 0, 1), 24), 0, self);
             if (passed) {
@@ -480,7 +480,7 @@ function debug_draw_new_attractor_positions() {
 function function_6a1f299b(e_parent) {
     self notify(#"fakelinkto");
     self endon(#"fakelinkto", #"death");
-    while (1) {
+    while (true) {
         self.origin = e_parent.origin;
         self.angles = e_parent.angles;
         waitframe(1);
@@ -493,7 +493,7 @@ function function_6a1f299b(e_parent) {
 // Size: 0x68
 function sndattackvox() {
     self endon(#"explode");
-    while (1) {
+    while (true) {
         self waittill(#"sndkillvox");
         wait(0.25);
         self playsound(#"wpn_octobomb_attack_vox");
@@ -523,7 +523,7 @@ function is_on_navmesh(e_player) {
     }
     if (ispointonnavmesh(self.origin, 60) == 1) {
         self.var_45eaa114 = 1;
-        return 1;
+        return true;
     }
     v_valid_point = getclosestpointonnavmesh(self.origin, 150, 12);
     if (isdefined(v_valid_point)) {
@@ -550,10 +550,10 @@ function is_on_navmesh(e_player) {
             self.mdl_anchor.origin = self.origin;
         }
         self.var_45eaa114 = 1;
-        return 1;
+        return true;
     }
     self.var_45eaa114 = 0;
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_homunculus/zm_weap_homunculus

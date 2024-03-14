@@ -292,7 +292,7 @@ function function_72e84e64() {
             }
         } else {
             level notify(#"hash_19a2268f375ca51f");
-            return;
+            break;
         }
         var_5c9c3a6e++;
         waitframe(1);

@@ -146,7 +146,7 @@ function function_d6076798(var_c41947a6 = 0) {
 // Checksum 0xecee2901, Offset: 0xd20
 // Size: 0xc8
 function function_11c3f280() {
-    while (1) {
+    while (true) {
         level waittill(#"pap_moved");
         if (level.s_pap_quest.a_s_locations[level.s_pap_quest.var_4ee2e2ab] == self) {
             zm_unitrigger::unregister_unitrigger(self.unitrigger_stub);
@@ -327,7 +327,7 @@ function function_61748fa3() {
     /#
         iprintlnbold("<unknown string>");
     #/
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (zm_utility::is_trials() && level flag::get("round_reset")) {
             continue;
@@ -495,16 +495,16 @@ function function_a48b2870() {
                 switch (s_loc.prefabname) {
                 case #"engine_room_pap_location":
                     var_e636ead7 = 1;
-                    continue;
+                    break;
                 case #"stairs_pap_location":
                     var_942e881a = 1;
-                    continue;
+                    break;
                 case #"cargo_pap_location":
                     var_6a69b27 = 1;
-                    continue;
+                    break;
                 case #"poop_deck_pap_location":
                     var_2380391d = 1;
-                    continue;
+                    break;
                 }
             }
         }
@@ -620,7 +620,7 @@ function function_83d342c7() {
             return;
         }
         var_4c043770 zm_pack_a_punch::set_state_arriving();
-        while (1) {
+        while (true) {
             for (i = 2; i <= 5; i++) {
                 var_4c043770 function_a2a8d76e(i);
             }
@@ -669,7 +669,7 @@ function function_4944c76f() {
         var_743fd60c = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 40);
         var_56692417 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 20);
         var_1e3527a8 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 0);
-        while (1) {
+        while (true) {
             print3d(var_710f09a8, "<unknown string>" + self getzbarrierpiecestate(0));
             print3d(var_737189c4, "<unknown string>" + self getzbarrierpiecestate(1));
             print3d(var_c1f4ccaf, "<unknown string>" + self getzbarrierpiecestate(2));

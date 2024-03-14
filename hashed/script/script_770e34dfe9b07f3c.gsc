@@ -100,7 +100,7 @@ function private on_end(round_reset) {
 // Size: 0x140
 function private function_c3996268() {
     level endon(#"hash_7646638df88a3656", #"end_game");
-    while (1) {
+    while (true) {
         var_4c755588 = function_34835ec7();
         var_4c755588 flag::wait_till_clear("pap_waiting_for_user");
         if (var_4c755588.pack_player.var_41d5077e === level.var_6f6736a8) {
@@ -119,7 +119,7 @@ function private function_c3996268() {
 // Size: 0xe2
 function private function_34835ec7() {
     level endon(#"hash_7646638df88a3656", #"end_game");
-    while (1) {
+    while (true) {
         var_4d8e32c8 = getentarray("zm_pack_a_punch", "targetname");
         foreach (var_5e879929 in var_4d8e32c8) {
             if (var_5e879929 zm_pack_a_punch::is_on()) {
@@ -139,7 +139,7 @@ function private function_a14072bf() {
     level endon(#"hash_7646638df88a3656");
     self.var_41d5077e = 0;
     self.var_14361e0c = 0.1;
-    while (1) {
+    while (true) {
         self zm_trial_util::function_2190356a(self.var_41d5077e);
         self waittill(#"pap_timeout");
         self.var_41d5077e++;
@@ -161,7 +161,7 @@ function private function_a14072bf() {
 function private function_c33c2895() {
     level endon(#"hash_7646638df88a3656");
     zm_trial_util::function_2976fa44(level.var_6f6736a8);
-    while (1) {
+    while (true) {
         zm_trial_util::function_dace284(level.var_41d5077e);
         level waittill(#"pap_timeout");
         level.var_41d5077e++;

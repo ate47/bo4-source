@@ -471,7 +471,7 @@ function function_57f4f37e(finalsurvivor) {
     setteamspyplane(game.attackers, 1);
     util::set_team_radar(game.attackers, 1);
     var_ed36658a = 0;
-    while (1) {
+    while (true) {
         prevpos = finalsurvivor.origin;
         wait(4);
         if (var_ed36658a) {
@@ -498,14 +498,14 @@ function function_57f4f37e(finalsurvivor) {
 function function_ce8c907e(finalsurvivor) {
     level endon(#"game_ended");
     finalsurvivor endon(#"disconnect", #"death");
-    while (1) {
+    while (true) {
         var_63f8204e = function_4d9c9e8e(game.defenders);
         if (var_63f8204e > 1) {
             level notify(#"hash_c99e3873a00e736");
             waitframe(1);
             setteamspyplane(game.attackers, 1);
             util::set_team_radar(game.attackers, 1);
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -724,7 +724,7 @@ function function_1293b46() {
 // Checksum 0x76f092aa, Offset: 0x2c58
 // Size: 0x92
 function function_a6489256() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"game_ended", #"hash_367e3645fd146620");
         if (isdefined(level.var_43406ee9)) {
@@ -762,7 +762,7 @@ function function_a5abd7ee() {
 // Checksum 0x77cd6556, Offset: 0x2df8
 // Size: 0x86
 function function_3ba09e5e() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"game_ended", #"hash_14fed44cd3ece79d");
         if (isdefined(level.var_6c6b8981)) {
@@ -1052,9 +1052,9 @@ function function_ef516d85(winner, endtype, endreasontext, outcometext, team, wi
             outcometext = game.strings[#"cod_caster_team_wins"];
         }
         self luinotifyevent(#"show_outcome", 5, outcometext, endreasontext, int(matchbonus), winnerenum, notifyroundendtoui);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace infect/infect

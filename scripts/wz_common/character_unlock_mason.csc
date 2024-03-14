@@ -60,7 +60,7 @@ function private function_6a0a79cf(localclientnum) {
     var_d5823792 = 0;
     var_b9d612e8 = 0;
     var_a106daf5 = 0;
-    while (1) {
+    while (true) {
         local_player = function_5c10bd79(localclientnum);
         if (isdefined(local_player)) {
             if (!local_player hasdobj(localclientnum)) {

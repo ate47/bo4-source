@@ -265,7 +265,7 @@ function function_2f5993d6() {
     for (i = 0; i < level.var_5a599dbf.size; i++) {
         if (level.var_5a599dbf[i].in_inventory) {
             level.var_fcbb6a6b = level.var_5a599dbf[i];
-            return;
+            break;
         }
     }
 }
@@ -276,17 +276,17 @@ function function_2f5993d6() {
 // Size: 0x98
 function function_814ee815(player) {
     if (self.stub.in_use === 1) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.var_fcbb6a6b)) {
-        return 0;
+        return false;
     }
     if (function_8b1a219a()) {
         self sethintstring(#"hash_28806e76718dea47");
     } else {
         self sethintstring(#"hash_4a380545b9102af9");
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_87e11242/namespace_87e11242
@@ -295,7 +295,7 @@ function function_814ee815(player) {
 // Size: 0x50
 function function_445e3d3d() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         self.stub notify(#"play_audio");
     }
@@ -308,7 +308,7 @@ function function_445e3d3d() {
 function function_54db89ef() {
     self endon(#"death");
     var_ab007509 = 0;
-    while (1) {
+    while (true) {
         self waittill(#"play_audio");
         if (isdefined(level.var_fcbb6a6b)) {
             s_card = level.var_fcbb6a6b;

@@ -587,7 +587,7 @@ function function_c76f5e7f() {
     if (self.script_noteworthy === #"hash_5db5a7e2cb1cab66" || self.script_noteworthy === #"hash_3f671b17f96b861a") {
         self thread function_bc253abc();
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         if (waitresult.e_who function_4a2a1b87(self)) {
@@ -1002,7 +1002,7 @@ function function_1c841015() {
         level endon(#"hash_7b7d380d73a2ba58");
     #/
     a_flags = array(#"hash_515a88d1cbabc18e", #"hash_1322dd3a3d7411a5", #"hash_2f5be8d749b4e88e", #"hash_33a5d8dd1204080e");
-    while (1) {
+    while (true) {
         foreach (s_spark in level.a_s_sparks) {
             level thread function_bcdb8fc4(s_spark);
             namespace_617a54f4::function_3f808d3d(s_spark.script_noteworthy);
@@ -1055,7 +1055,7 @@ function function_1c841015() {
         function_3a730415();
         level flag::wait_till(#"hash_3e80d503318a5674");
         level flag::set(#"catalyst_encounters_completed");
-        return;
+        break;
     }
 }
 
@@ -1113,35 +1113,35 @@ function function_bcdb8fc4(s_spark) {
 // Size: 0x156
 function function_b6db8da0(s_struct, ai_killed) {
     if (level flag::get(#"hash_27a2746eb30e61c")) {
-        return 0;
+        return false;
     }
     switch (s_struct.script_noteworthy) {
     case #"hash_41a5c5168ffb2a97":
         if (ai_killed.catalyst_type === 1) {
             break;
         }
-        return 0;
+        return false;
     case #"hash_400a481490a4e390":
         if (ai_killed.catalyst_type === 4) {
             break;
         }
-        return 0;
+        return false;
     case #"hash_5562e324d230f057":
         if (ai_killed.catalyst_type === 3) {
             break;
         }
-        return 0;
+        return false;
     case #"hash_41fae186552f1259":
         if (ai_killed.catalyst_type === 2) {
             break;
         }
-        return 0;
+        return false;
     }
     e_volume = getent(s_struct.target, "targetname");
     if (ai_killed istouching(e_volume)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -1285,7 +1285,7 @@ function function_8a0679e4(s_struct, s_portal) {
 // Checksum 0x9ebc34dd, Offset: 0x68b8
 // Size: 0xe
 function return_false(player) {
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -1584,9 +1584,9 @@ function function_ad0eee44(str_element) {
 // Size: 0x7a
 function function_36df874b(s_struct, ai_killed) {
     if (ai_killed.archetype === #"stoker" || ai_killed.archetype === #"blight_father" || ai_killed.archetype === #"catalyst") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -1769,7 +1769,7 @@ function function_b9af308b() {
     level notify(#"hash_4b6c2e61ca9a9e94");
     level endon(#"hash_20ba9a0874996fda", #"hash_4b6c2e61ca9a9e94");
     util::delay_notify(240, #"hash_20ba9a0874996fda", #"hash_4b6c2e61ca9a9e94");
-    while (1) {
+    while (true) {
         wait(1);
         b_wait = 0;
         a_ai = getaiteamarray(level.zombie_team);
@@ -1937,7 +1937,7 @@ function function_9b60ef24() {
     trigger = spawn("trigger_damage", self.origin, 0, 12, 24);
     w_earth = getweapon(#"ww_tricannon_earth_t8");
     var_15b49ebc = getweapon(#"ww_tricannon_earth_t8_upgraded");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = trigger waittill(#"trigger");
         if (isdefined(s_result.activator) && isplayer(s_result.activator)) {
@@ -2033,12 +2033,12 @@ function function_bdddfbe6() {
         s_stub waittill(#"trigger_activated");
         zm_unitrigger::unregister_unitrigger(s_stub.s_unitrigger);
         s_stub struct::delete();
-        return 1;
+        return true;
     } else {
         level.pap_machine.unitrigger_stub.prompt_and_visibility_func = &zm_pap_util::update_hint_string;
         level waittill(#"pap_moved");
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -2048,7 +2048,7 @@ function function_bdddfbe6() {
 function function_fb91462e() {
     self endon(#"death", #"kill_trigger");
     self thread zm_unitrigger::function_69168e61();
-    while (1) {
+    while (true) {
         level waittill(#"hash_14c80c5abb28b07b");
         if (!level flag::get(#"hash_598d4e6af1cf4c39")) {
             break;
@@ -2246,7 +2246,7 @@ function function_63ce4441() {
     }
     var_364a23fa = getent("secret_device", "targetname");
     level thread function_996d1a4c(a_glyphs, var_364a23fa);
-    while (1) {
+    while (true) {
         level flag::wait_till(#"orrery_activated");
         level notify(#"hash_e9d5238dbce48ca");
         level thread function_f016aaf8(a_glyphs, var_364a23fa);
@@ -2254,7 +2254,7 @@ function function_63ce4441() {
         if (level flag::get(#"hash_1a742576c41a0ab9")) {
             level flag::wait_till_any(array(#"planet_step_completed", #"hash_77f76266b597a1f7"));
             if (level flag::get(#"planet_step_completed")) {
-                return;
+                break;
             }
         }
         /#
@@ -2358,7 +2358,7 @@ function function_50b3a576(str_planet_name, n_number) {
     if (n_number == 5 || n_number == 8) {
         util::delay(10, undefined, &spawn_blightfather);
     }
-    while (1) {
+    while (true) {
         function_a5946754(a_s_spawnpoints, 99, n_max_zombies);
     }
     /#
@@ -2551,31 +2551,31 @@ function function_f84f44e5(str_planet_name) {
     switch (str_planet_name) {
     case #"sun":
         self clientfield::set("" + #"planet_light", 1);
-        return;
+        break;
     case #"mercury":
         self clientfield::set("" + #"planet_light", 2);
-        return;
+        break;
     case #"venus":
         self clientfield::set("" + #"planet_light", 3);
-        return;
+        break;
     case #"moon":
         self clientfield::set("" + #"planet_light", 4);
-        return;
+        break;
     case #"mars":
         self clientfield::set("" + #"planet_light", 5);
-        return;
+        break;
     case #"jupiter":
         self clientfield::set("" + #"planet_light", 6);
-        return;
+        break;
     case #"saturn":
         self clientfield::set("" + #"planet_light", 7);
-        return;
+        break;
     case #"uranus":
         self clientfield::set("" + #"planet_light", 8);
-        return;
+        break;
     case #"neptune":
         self clientfield::set("" + #"planet_light", 9);
-        return;
+        break;
     }
 }
 
@@ -2825,9 +2825,9 @@ function function_370a9e5(mdl_planet, v_start, v_end, v_forward) {
         v_angles = self getplayerangles();
         if (abs(abs(v_angles[0]) - abs(-26.6)) + abs(abs(v_angles[1]) - abs(-29.35)) <= 2.2 && abs(abs(v_angles[2]) - abs(0)) <= 1) {
             mdl_planet.origin = v_start + v_forward * 100000;
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     } else {
         v_target = mdl_planet.origin;
     }
@@ -2839,9 +2839,9 @@ function function_370a9e5(mdl_planet, v_start, v_end, v_forward) {
     v_shot = pointonsegmentnearesttopoint(v_start, v_end, v_target);
     n_dist_squared = distancesquared(v_shot, v_target);
     if (n_dist_squared < n_min_dist) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial
@@ -3287,7 +3287,7 @@ function function_365aa198() {
     n_max = zombie_utility::function_d2dfacfd(#"zombie_max_ai");
     var_e8ebec1d = array(#"transform1", #"transform2", #"transform3", #"transform4");
     level.var_8a64ef3a = 0;
-    while (1) {
+    while (true) {
         a_s_spawnpoints = get_spawnpoints(1, 4);
         if (!a_s_spawnpoints.size) {
             wait(0.1);
@@ -4051,7 +4051,7 @@ function function_715588b3() {
     self endon(#"death");
     s_unitrigger = self.stub;
     self thread function_45c58b56(self.stub.related_parent);
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         b_using = 1;
         for (n_time = 0; n_time < 0.5; n_time = n_time + 0.1) {
@@ -4225,7 +4225,7 @@ function function_d4b31d36(v_origin, var_39acfdda, str_category = #"m_quest") {
         waitframe(1);
     } while (b_played !== 1);
     level notify(var_39acfdda + "vo_played");
-    return 1;
+    return true;
 }
 
 // Namespace zodt8_sentinel/zm_zodt8_sentinel_trial

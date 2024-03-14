@@ -84,9 +84,9 @@ function disable() {
 function validation() {
     a_ai_targets = function_880a86b2();
     if (a_ai_targets.size) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_bgb_ctrl_z/zm_bgb_ctrl_z

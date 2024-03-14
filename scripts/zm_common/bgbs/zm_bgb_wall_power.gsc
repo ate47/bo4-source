@@ -43,8 +43,8 @@ function event() {
 // Size: 0x2e
 function validation() {
     if (!zm_custom::function_901b751c(#"zmwallbuysenabled")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

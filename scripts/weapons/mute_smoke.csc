@@ -68,14 +68,14 @@ function function_12e09509(localclientnum = 0) {
     var_618fb067 duplicate_render::set_player_threat_detected(localclientnum, 1);
     var_5929417d = 0;
     var_34bb1a09 = 0;
-    while (1) {
+    while (true) {
         var_fdadca2a = previs_weapon;
         if (getdvarint(#"hash_292cfff396e8aa70", 0) == 0) {
             var_5929417d = 0;
         }
         if (!var_5929417d) {
             if (!isdefined(var_46e1fb08) || !isdefined(var_37b85cb5) || !isdefined(var_618fb067)) {
-                return;
+                break;
             }
             var_46e1fb08 hide();
             var_37b85cb5 hide();
@@ -243,7 +243,7 @@ function function_a189ab2e(localclientnum, enemy) {
     local_player endon(#"death", "stop_watching_enemy_visibility" + enemy getentitynumber());
     enemy endon(#"death", #"disconnect");
     can_see_enemy = 0;
-    while (1) {
+    while (true) {
         var_936b9149 = enemy function_775916af();
         enemy_eye_pos = enemy.origin + (0, 0, var_936b9149);
         player_eye_pos = local_player geteye();

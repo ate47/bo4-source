@@ -118,24 +118,24 @@ function private function_cbd444ad(params) {
 // Size: 0x16a
 function function_35cda2d8(params) {
     if (self.team !== level.zombie_team) {
-        return 1;
+        return true;
     }
     if (isdefined(self.nuked) && self.nuked) {
-        return 1;
+        return true;
     }
     if (isai(params.eattacker) || isai(params.einflictor)) {
-        return 1;
+        return true;
     }
     if (params.weapon === level.weapondefault) {
-        return 1;
+        return true;
     }
     if (zm_loadout::is_melee_weapon(params.weapon) || zm_weapons::function_35746b9c(params.weapon)) {
-        return 1;
+        return true;
     }
     if (params.smeansofdeath === "MOD_IMPACT" || params.smeansofdeath === "MOD_MELEE" || params.smeansofdeath === "MOD_MELEE_ASSASSINATE" || params.smeansofdeath === "MOD_MELEE_WEAPON_BUTT") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_timeout/zm_trial_timeout
@@ -158,7 +158,7 @@ function private function_28663a8f() {
         self waittill(#"completed_emerging_into_playable_area");
     }
     self.b_ignore_cleanup = 1;
-    while (1) {
+    while (true) {
         var_f1b2ce83 = struct::get_array("wait_location", "script_noteworthy");
         var_f1b2ce83 = array::filter(var_f1b2ce83, 0, &function_f22cd3f0, self);
         if (isarray(var_f1b2ce83) && var_f1b2ce83.size) {
@@ -202,7 +202,7 @@ function private function_28663a8f() {
 // Size: 0x176
 function private function_f22cd3f0(s_wait_location, ai_zombie) {
     if (isdefined(s_wait_location.zone_name) && !zm_zonemgr::zone_is_enabled(s_wait_location.zone_name)) {
-        return 0;
+        return false;
     }
     vol_light_side = getent("vol_light_side", "targetname");
     vol_dark_side = getent("vol_dark_side", "targetname");
@@ -212,14 +212,14 @@ function private function_f22cd3f0(s_wait_location, ai_zombie) {
         var_50ee42a5 = istouching(s_wait_location.origin, vol_light_side);
         var_c8b07764 = istouching(s_wait_location.origin, vol_dark_side);
         if (var_9b9fe2ad && var_50ee42a5) {
-            return 1;
+            return true;
         }
         if (var_59248979 && var_c8b07764) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_trial_timeout/zm_trial_timeout
@@ -281,7 +281,7 @@ function private function_14a98a41(str_label, n_time_limit) {
     level endon(#"end_of_round", #"host_migration_begin", #"end_game");
     level.var_489d6aa2 = str_label;
     level.var_869f4c31 = n_time_limit;
-    while (1) {
+    while (true) {
         wait(1);
         level.var_869f4c31--;
     }

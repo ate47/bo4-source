@@ -411,7 +411,7 @@ function demoteplayer(attacker) {
 // Size: 0x70
 function infiniteammo() {
     self endon(#"death", #"disconnect");
-    while (1) {
+    while (true) {
         wait(0.1);
         weapon = self getcurrentweapon();
         self givemaxammo(weapon);
@@ -441,11 +441,11 @@ function function_486a8395() {
         if (ruleweaponsleft >= minweaponsleft) {
             /#
             #/
-            return 0;
+            return false;
         }
     }
     /#
     #/
-    return 1;
+    return true;
 }
 

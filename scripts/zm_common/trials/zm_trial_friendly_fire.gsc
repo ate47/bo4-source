@@ -153,7 +153,7 @@ function private on_player_damage(params) {
 function private function_e2c5e34c() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         self val::reset("zm_trial_friendly_fire", "ignoreme");
         wait(randomintrange(3, 5));
         if (function_e1378d07()) {
@@ -170,10 +170,10 @@ function private function_e2c5e34c() {
 function private function_e1378d07() {
     foreach (player in getplayers()) {
         if (isalive(player) && !isbot(player) && !player laststand::player_is_in_laststand()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_friendly_fire/zm_trial_friendly_fire

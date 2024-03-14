@@ -165,23 +165,23 @@ function on_round_end() {
 // Size: 0xe8
 function can_process_contracts() {
     if (getdvarint(#"contracts_enabled", 0) == 0) {
-        return 0;
+        return false;
     }
     if (getdvarint(#"contracts_enabled_zm", 1) == 0) {
-        return 0;
+        return false;
     }
     /#
         if (getdvarint(#"scr_debug_challenges", 0)) {
-            return 1;
+            return true;
         }
     #/
     if (!level.onlinegame || isdefined(level.var_aa2d5655) && level.var_aa2d5655) {
-        return 0;
+        return false;
     }
     if (util::get_game_type() == "ztutorial") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace contracts/zm_contracts
@@ -309,7 +309,7 @@ function function_ac03f21e() {
 function function_677a89c8() {
     level endon(#"hash_786860db94bcc0f3");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         w_current = s_notify.weapon;
@@ -327,7 +327,7 @@ function function_677a89c8() {
 function function_30dc9a23() {
     self endoncallback(&function_1729afac, #"disconnect", #"perk_vapor_lost");
     var_c16ab86f = 0;
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         if (!self zm_perks::function_9a0e9d65()) {
             var_c16ab86f = 0;
@@ -365,7 +365,7 @@ function function_1729afac(var_c34665fc) {
 function function_9d5cd9ee() {
     self endoncallback(&function_1395d508, #"disconnect", #"destroy_riotshield");
     var_c16ab86f = 0;
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         if (!(isdefined(self.hasriotshield) && self.hasriotshield)) {
             var_c16ab86f = 0;
@@ -403,7 +403,7 @@ function function_1395d508(var_c34665fc) {
 function function_51db541e() {
     self endon(#"disconnect");
     var_c16ab86f = 0;
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         if (!isdefined(self.var_5417136)) {
             continue;
@@ -429,7 +429,7 @@ function function_51db541e() {
 // Size: 0x72
 function function_1d4fae71() {
     self endon(#"disconnect", #"hash_4bf9f2755fe74a0d");
-    while (1) {
+    while (true) {
         if (!isalive(self) || self.var_42a6fc40 != self.var_5417136) {
             self.var_42a6fc40 = undefined;
             return;

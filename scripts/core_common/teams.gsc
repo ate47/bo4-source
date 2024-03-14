@@ -63,9 +63,9 @@ function function_3d288f14() {
 function is_team_empty(team) {
     team_players = getplayers(team);
     if (team_players.size > 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace teams/teams

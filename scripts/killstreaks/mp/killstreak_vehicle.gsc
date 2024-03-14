@@ -136,21 +136,21 @@ function function_5e2ea3ef(owner, ishacked) {
 // Size: 0x7e
 function can_activate(placement) {
     if (!isdefined(placement)) {
-        return 0;
+        return false;
     }
     if (!self isonground()) {
-        return 0;
+        return false;
     }
     if (self util::isusingremote()) {
-        return 0;
+        return false;
     }
     if (killstreaks::is_interacting_with_object()) {
-        return 0;
+        return false;
     }
     if (self oob::istouchinganyoobtrigger()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
@@ -163,18 +163,18 @@ function activate_vehicle(type) {
     #/
     player = self;
     if (!player killstreakrules::iskillstreakallowed(type, player.team)) {
-        return 0;
+        return false;
     }
     if (player usebuttonpressed()) {
-        return 0;
+        return false;
     }
     bundle = level.killstreaks[type].script_bundle;
     if (isdefined(bundle.ksweapon) && isdefined(bundle.ksweapon.deployable) && bundle.ksweapon.deployable && !deployable::function_b3d993e9(bundle.ksweapon, 1)) {
-        return 0;
+        return false;
     }
     killstreak_id = player killstreakrules::killstreakstart(type, player.team, 0, 1);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     vehicle = spawnvehicle(bundle.ksvehicle, player.var_b8878ba9, player.var_ddc03e10, type);
     vehicle deployable::function_dd266e08(player);
@@ -204,10 +204,10 @@ function activate_vehicle(type) {
             vehicle notify(#"remote_weapon_shutdown");
             vehicle function_1f46c433();
         }
-        return 0;
+        return false;
     }
     if (!isdefined(vehicle)) {
-        return 0;
+        return false;
     }
     vehicle setvisibletoall();
     vehicle.activatingkillstreak = 0;
@@ -215,7 +215,7 @@ function activate_vehicle(type) {
     ability_player::function_c22f319e(bundle.ksweapon);
     vehicle thread watch_game_ended();
     vehicle waittill(#"death");
-    return 1;
+    return true;
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
@@ -303,7 +303,7 @@ function function_2cee4434() {
 function watch_exit() {
     vehicle = self;
     vehicle endon(#"shutdown", #"death");
-    while (1) {
+    while (true) {
         timeused = 0;
         while (vehicle.owner usebuttonpressed()) {
             timeused = timeused + level.var_9fee970c;
@@ -426,7 +426,7 @@ function function_584fb7a3() {
 function function_22528515() {
     vehicle = self;
     vehicle endon(#"shutdown");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = vehicle waittill(#"touch");
         ent = waitresult.entity;
@@ -578,12 +578,12 @@ function explode(attacker, weapon) {
 // Size: 0x70
 function function_e9da8b7d(einflictor, eattacker, smeansofdeath, weapon) {
     if (isdefined(eattacker) && eattacker == self.owner) {
-        return 1;
+        return true;
     }
     if (isdefined(einflictor) && einflictor islinkedto(self)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
@@ -711,13 +711,13 @@ function function_b4682bd6(origin, angles) {
     absmins = liftedorigin + mins;
     absmaxs = liftedorigin + maxs;
     if (boundswouldtelefrag(absmins, absmaxs)) {
-        return 0;
+        return false;
     }
     startheight = function_e94c2667();
     mask = 1 | 2 | 4;
     trace = physicstrace(liftedorigin, origin + (0, 0, 1), mins, maxs, self, mask);
     if (trace[#"fraction"] < 1) {
-        return 0;
+        return false;
     }
     size = 2.5;
     height = size * 2;
@@ -725,8 +725,8 @@ function function_b4682bd6(origin, angles) {
     maxs = (size, size, height);
     sweeptrace = physicstrace(self.origin + (0, 0, startheight), liftedorigin, mins, maxs, self, mask);
     if (sweeptrace[#"fraction"] < 1) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

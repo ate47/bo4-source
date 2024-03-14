@@ -61,7 +61,7 @@ function defaultrole() {
 // Size: 0xc0
 function slow_raps_trigger() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         other = waitresult.activator;

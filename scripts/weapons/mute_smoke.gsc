@@ -95,7 +95,7 @@ function function_15263a60(radius) {
             self thread function_9cf45892(var_1ec8a7f0);
         }
     #/
-    while (1) {
+    while (true) {
         fxblocksight(self, radius);
         wait(0.75);
     }
@@ -139,10 +139,10 @@ function function_2ece9391(owner, duration) {
 function function_e2288bb6() {
     foreach (trigger in level.var_438f1f83) {
         if (self istouching(trigger)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mute_smoke/mute_smoke
@@ -151,7 +151,7 @@ function function_e2288bb6() {
 // Size: 0xf8
 function private function_79583198() {
     if (isdefined(self.var_5984154e) && self istouching(self.var_5984154e)) {
-        return 1;
+        return true;
     }
     foreach (trigger in level.var_438f1f83) {
         if (isdefined(self.team) && self.team == trigger.team) {
@@ -159,11 +159,11 @@ function private function_79583198() {
         }
         if (self istouching(trigger)) {
             self.var_5984154e = trigger;
-            return 1;
+            return true;
         }
     }
     self.var_5984154e = undefined;
-    return 0;
+    return false;
 }
 
 // Namespace mute_smoke/mute_smoke
@@ -172,7 +172,7 @@ function private function_79583198() {
 // Size: 0xf8
 function private function_b3862968() {
     if (isdefined(self.var_9b82aa4f) && self istouching(self.var_9b82aa4f)) {
-        return 1;
+        return true;
     }
     foreach (trigger in level.var_438f1f83) {
         if (isdefined(self.team) && self.team != trigger.team) {
@@ -180,11 +180,11 @@ function private function_b3862968() {
         }
         if (self istouching(trigger)) {
             self.var_9b82aa4f = trigger;
-            return 1;
+            return true;
         }
     }
     self.var_9b82aa4f = undefined;
-    return 0;
+    return false;
 }
 
 // Namespace mute_smoke/mute_smoke
@@ -207,7 +207,7 @@ function function_c2e7fcb4() {
     player.in_enemy_mute_smoke = player clientfield::get("in_enemy_mute_smoke") == 1;
     player.var_2118ca55 = player clientfield::get("inFriendlyMuteSmoke") == 1;
     wait(randomfloatrange(0.1, 0.6));
-    while (1) {
+    while (true) {
         in_enemy_mute_smoke = player function_79583198();
         if (player.in_enemy_mute_smoke != in_enemy_mute_smoke) {
             player clientfield::set("in_enemy_mute_smoke", in_enemy_mute_smoke ? 1 : 0);
@@ -253,7 +253,7 @@ function function_40abb79a(in_enemy_mute_smoke, applicant) {
 function function_41470017(var_56d6af0e, applicant) {
     self endon(#"hash_2d871144da153bc1", #"death", #"disconnect");
     self thread status_effect::status_effect_apply(var_56d6af0e, undefined, applicant, 0, 1200);
-    while (1) {
+    while (true) {
         wait(1);
         self thread status_effect::status_effect_apply(var_56d6af0e, undefined, applicant, 1, 1000);
     }

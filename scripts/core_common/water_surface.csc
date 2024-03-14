@@ -54,7 +54,7 @@ function underwaterwatchbegin() {
     self notify(#"underwaterwatchbegin");
     self endon(#"underwaterwatchbegin");
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"underwater_begin");
         if (waitresult.is_teleported) {
@@ -76,7 +76,7 @@ function underwaterwatchend() {
     self notify(#"underwaterwatchend");
     self endon(#"underwaterwatchend");
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"underwater_end");
         if (waitresult.is_teleported) {

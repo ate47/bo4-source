@@ -93,7 +93,7 @@ function private create_use_trigger() {
 function private update_loop() {
     level endon(#"game_ended");
     var_1a1c0d86 = 0;
-    while (1) {
+    while (true) {
         foreach (i, player in getplayers()) {
             if (i % 5 == var_1a1c0d86) {
                 if (!isdefined(player.var_8a022726)) {
@@ -217,7 +217,7 @@ function private function_46502841(trigger_struct) {
     dynent = self.var_a9309589;
     for (success = activator function_2b9e2224(self); success && isdefined(dynent) && self.var_a9309589 === dynent && isdefined(dynent.var_e7823894) && dynent.var_e7823894; success = activator function_2b9e2224(self)) {
         if (isdefined(dynent.canuse) && !dynent [[ dynent.canuse ]](activator)) {
-            return;
+            break;
         }
         self triggerenable(1);
     }
@@ -429,7 +429,7 @@ function private devgui_loop() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             wait(0.25);
             dvarstr = getdvarstring(#"hash_40f9f26f308dd924", "<unknown string>");
             if (dvarstr == "<unknown string>") {
@@ -453,7 +453,7 @@ function private devgui_loop() {
 function private function_6b66543a() {
     /#
         self endon(#"disconnect");
-        while (1) {
+        while (true) {
             waitframe(1);
             waittillframeend();
             if (!getdvarint(#"hash_23e7101285284738", 0)) {

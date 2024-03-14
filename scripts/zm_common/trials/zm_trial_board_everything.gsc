@@ -57,7 +57,7 @@ function private on_end(round_reset) {
 // Size: 0x17a
 function function_4172344e() {
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         level.var_70135c38 = level.exterior_goals.size;
         level.var_3de460b1 = 0;
         foreach (s_barrier in level.exterior_goals) {

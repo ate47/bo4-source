@@ -50,7 +50,7 @@ function force_check_now() {
 function private cleanup_main() {
     level endon(#"end_game");
     n_next_eval = 0;
-    while (1) {
+    while (true) {
         util::wait_network_frame();
         n_time = gettime();
         if (n_time < n_next_eval) {
@@ -199,13 +199,13 @@ function function_cdf5a512(str_archetype, var_7e1eca2) {
 // Size: 0x72
 function private override_cleanup() {
     if (!isdefined(level.var_55a99841)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.archetype) && isdefined(level.var_55a99841[self.archetype])) {
         var_914aeacb = self [[ level.var_55a99841[self.archetype] ]]();
         return (isdefined(var_914aeacb) && var_914aeacb);
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_cleanup/zm_cleanup_mgr
@@ -277,9 +277,9 @@ function private player_ahead_of_me(player) {
     v_dir = player getorigin() - self.origin;
     n_dot = vectordot(v_player_forward, v_dir);
     if (n_dot < 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_cleanup/zm_cleanup_mgr

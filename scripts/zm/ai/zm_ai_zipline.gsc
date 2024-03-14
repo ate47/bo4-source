@@ -104,7 +104,7 @@ function number_b_(var_5c57c958, var_f3e138f3, var_3800dad7, plane_normal) {
 function function_dc61ccae(vnd_start, var_6f06d19d, var_ca144d1e) {
     self endon(#"death");
     self.var_b20b0960 endon(#"death");
-    while (1) {
+    while (true) {
         waitframe(1);
         enabled = getdvarint(#"hash_6e0cbdce6b2104a3", 0);
         if (enabled) {
@@ -181,9 +181,9 @@ function private function_dedfe444(entity) {
         /#
             record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_zipline/zm_ai_zipline

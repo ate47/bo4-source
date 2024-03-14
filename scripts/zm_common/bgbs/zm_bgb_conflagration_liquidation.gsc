@@ -39,8 +39,8 @@ function activation() {
 // Size: 0x9a
 function function_fe4e9412() {
     if (!level flag::get("pap_machine_active") || zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_on") === 1 || isdefined(level.var_56cb3d3a) && level.var_56cb3d3a || !self bgb::function_9d8118f5()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

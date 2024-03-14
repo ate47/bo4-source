@@ -25,8 +25,8 @@ function __init__() {
 // Size: 0x48
 function function_74650d7() {
     if (isdefined(getgametypesetting("infectionMode")) && getgametypesetting("infectionMode")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

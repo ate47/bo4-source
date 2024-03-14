@@ -28,7 +28,7 @@ function __init__() {
 function claymore_spawned(localclientnum) {
     self endon(#"death");
     self util::waittill_dobj(localclientnum);
-    while (1) {
+    while (true) {
         if (isdefined(self.stunned) && self.stunned) {
             wait(0.1);
             continue;

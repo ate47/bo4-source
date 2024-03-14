@@ -132,7 +132,7 @@ function function_127fb8f3(mantis, attackingplayer) {
         mantis thread tank_stun(3, 1);
         mantis thread function_1210a3d6(mantis);
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -306,11 +306,11 @@ function spawn_tank_robot(owner, context, origin) {
 // Size: 0x266
 function function_4c0ed253(location, context) {
     if (!self killstreakrules::iskillstreakallowed("tank_robot", self.team, 1)) {
-        return 0;
+        return false;
     }
     foreach (droplocation in level.droplocations) {
         if (distance2dsquared(droplocation, location) < 3600) {
-            return 0;
+            return false;
         }
     }
     if (context.perform_physics_trace === 1) {
@@ -322,18 +322,18 @@ function function_4c0ed253(location, context) {
         trace = physicstrace(location + vectorscale((0, 0, 1), 5000), location + vectorscale((0, 0, 1), 30), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
         if (trace[#"fraction"] < 1) {
             if (!(isdefined(level.var_66da9c3c) && level.var_66da9c3c)) {
-                return 0;
+                return false;
             }
         }
     }
     result = function_9cc082d2(location + vectorscale((0, 0, 1), 100), 170);
     if (!isdefined(result)) {
-        return 0;
+        return false;
     }
     if (context.check_same_floor === 1 && abs(location[2] - self.origin[2]) > 96) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -408,7 +408,7 @@ function function_5479b133(team, killstreak_id) {
 function function_b60b8174() {
     self endon(#"death", #"changed_specialist", #"disconnect", #"joined_team", #"joined_spectators");
     killstreakweapon = killstreaks::get_killstreak_weapon("tank_robot");
-    while (1) {
+    while (true) {
         quantity = killstreaks::get_killstreak_quantity(killstreakweapon);
         if (quantity === 0) {
             break;
@@ -426,14 +426,14 @@ function function_e1553d5f(location, killstreak_id) {
     team = self.team;
     killstreak_id = self killstreakrules::killstreakstart("tank_robot", team, 0, 1);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     bundle = level.var_400ded61.aitankkillstreakbundle;
     killstreak = killstreaks::get_killstreak_for_weapon(bundle.ksweapon);
     context = spawnstruct();
     if (!isdefined(context)) {
         killstreak_stop_and_assert(killstreak, team, killstreak_id, "Failed to spawn struct for ai tank.");
-        return 0;
+        return false;
     }
     self ability_player::function_c22f319e(bundle.ksweapon);
     context.radius = level.killstreakcorebundle.ksairdropaitankradius;
@@ -451,16 +451,16 @@ function function_e1553d5f(location, killstreak_id) {
     context.var_9fc6cfe9 = 1;
     context.dontdisconnectpaths = 1;
     if (!isdefined(level.var_daa33d93)) {
-        return 0;
+        return false;
     }
     result = [[ level.var_daa33d93 ]](killstreak_id, context, team);
     if (!(isdefined(result) && result)) {
         killstreakrules::killstreakstop("tank_robot", team, killstreak_id);
-        return 0;
+        return false;
     }
     self thread function_e00df756(team, killstreak_id);
     self stats::function_e24eec31(bundle.ksweapon, #"used", 1);
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -485,15 +485,15 @@ function function_b2acf3f2(location, context) {
         /#
             recordsphere(location + vectorscale((0, 0, 1), 10), 2, (1, 0, 0), "tag_turret");
         #/
-        return 0;
+        return false;
     }
     var_8a7edebd = 5;
     depth = getwaterheight(location) - self.origin[2];
     inwater = depth > var_8a7edebd;
     if (inwater) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -540,7 +540,7 @@ function crateland(crate, category, owner, team, context) {
 // Checksum 0x3e65189e, Offset: 0x27e0
 // Size: 0x18
 function is_location_good(location, context) {
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -658,7 +658,7 @@ function function_75c8a0dc(entity, jammer) {
         entity function_903fdcc2();
         entity function_4110f8dd(1);
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -802,7 +802,7 @@ function function_9868e24e(player) {
             }
         }
     }
-    while (1) {
+    while (true) {
         origin = player getplayercamerapos();
         angles = player getplayerangles();
         var_5781dbe = anglestoforward(angles);
@@ -923,7 +923,7 @@ function state_driving_update(params) {
     }
     driver = self getseatoccupant(0);
     if (isplayer(driver)) {
-        while (1) {
+        while (true) {
             driver endon(#"disconnect");
             driver util::waittill_vehicle_move_up_button_pressed();
             if (self.cobra === 0) {
@@ -1190,35 +1190,35 @@ function private update_dog_threat(dog) {
 // Size: 0x1b0
 function cantargetplayer(player) {
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     if (!isalive(player) || player.sessionstate != "playing") {
-        return 0;
+        return false;
     }
     if (player.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (isdefined(self.owner) && player == self.owner) {
-        return 0;
+        return false;
     }
     if (!isdefined(player.team)) {
-        return 0;
+        return false;
     }
     if (level.teambased && player.team == self.team) {
-        return 0;
+        return false;
     }
     if (player.team == #"spectator") {
-        return 0;
+        return false;
     }
     var_2910def0 = self targetting_delay::function_1c169b3a(player);
     targetting_delay::function_a4d6d6d8(player, int((isdefined(self.targeting_delay) ? self.targeting_delay : 0.25) * 1000));
     if (!var_2910def0) {
-        return 0;
+        return false;
     }
     if (player depthinwater() >= 30 || player isplayerswimming()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -1227,18 +1227,18 @@ function cantargetplayer(player) {
 // Size: 0x7a
 function cantargettank(tank) {
     if (!isdefined(tank)) {
-        return 0;
+        return false;
     }
     if (!isdefined(tank.team)) {
-        return 0;
+        return false;
     }
     if (tank.team == self.team) {
-        return 0;
+        return false;
     }
     if (isdefined(tank.owner) && self.owner == tank.owner) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -1247,21 +1247,21 @@ function cantargettank(tank) {
 // Size: 0x80
 function cantargetactor(actor) {
     if (!isdefined(actor)) {
-        return 0;
+        return false;
     }
     if (!isactor(actor)) {
-        return 0;
+        return false;
     }
     if (!isalive(actor)) {
-        return 0;
+        return false;
     }
     if (!isdefined(actor.team)) {
-        return 0;
+        return false;
     }
     if (actor.team == self.team) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -1278,7 +1278,7 @@ function turretfireupdate() {
         return;
     }
     self turretsetontargettolerance(0, 7);
-    while (1) {
+    while (true) {
         if (self.avoid_shooting_owner === 1 && isdefined(self.owner)) {
             if (self vehicle_ai::owner_in_line_of_fire()) {
                 wait(0.1);
@@ -1415,12 +1415,12 @@ function function_37cc249f() {
 function function_d15dd929(radius, origin) {
     result = function_9cc082d2(origin + vectorscale((0, 0, 1), 100), 200);
     if (isdefined(result) && isdefined(result[#"materialflags"]) && result[#"materialflags"] & 2) {
-        return 0;
+        return false;
     }
     if (!ispointonnavmesh(origin, radius, 1)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank_shared
@@ -1633,7 +1633,7 @@ function kill_monitor() {
     self endon(#"death");
     last_kill_vo = 0;
     kill_vo_spacing = 4000;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"killed");
         victim = waitresult.victim;
@@ -2391,7 +2391,7 @@ function tank_rocket_watch(player) {
     if (!self.isstunned) {
         self disabledriverfiring(0);
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = player waittill(#"missile_fire");
         var_e3a3ecd3 = 1;
@@ -2416,7 +2416,7 @@ function tank_rocket_watch(player) {
 // Size: 0x86
 function tank_rocket_watch_ai() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"missile_fire");
         if (isdefined(waitresult.projectile)) {
@@ -2454,9 +2454,9 @@ function function_98a125e6() {
     var_d4b5931f = 30;
     depth = getwaterheight(self.origin) - self.origin[2];
     if (depth > var_d4b5931f) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ai_tank/ai_tank_shared

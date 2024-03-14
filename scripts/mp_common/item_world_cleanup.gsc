@@ -34,7 +34,7 @@ function private __init__() {
 function private _cleanup() {
     level flagsys::wait_till(#"item_world_reset");
     var_314770d8 = array(&function_b465b436, &function_35e11623, &function_b7c5f376, &function_6ef5c287, &function_ada16428);
-    while (1) {
+    while (true) {
         if (isdefined(level.deathcircle)) {
             foreach (func in var_314770d8) {
                 util::wait_network_frame(1);
@@ -308,7 +308,7 @@ function private function_213a12e4() {
 // Size: 0xd0
 function private function_3703bc36(entity, deathcircle, var_7e2f7f1f = 0) {
     if (!isdefined(entity) || !isdefined(deathcircle) || !isfloat(deathcircle.radius)) {
-        return 0;
+        return false;
     }
     var_be38b475 = var_7e2f7f1f ? 5000 : 0;
     return distance2dsquared(entity.origin, deathcircle.origin) >= (deathcircle.radius + var_be38b475) * (deathcircle.radius + var_be38b475);

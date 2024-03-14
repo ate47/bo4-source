@@ -121,7 +121,7 @@ function private function_382da026(localclientnum) {
     self endon("1368c9cad92ba095");
     var_ef2f4cec = spawnstruct();
     level.var_32e10fc2[localclientnum] = var_ef2f4cec;
-    while (1) {
+    while (true) {
         currentplayer = function_5c10bd79(localclientnum);
         if (!isdefined(currentplayer)) {
             waitframe(1);

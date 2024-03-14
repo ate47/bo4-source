@@ -47,13 +47,13 @@ function private _gibcallback(localclientnum, entity, gibflag) {
     switch (gibflag) {
     case 8:
         playsound(0, #"zmb_zombie_head_gib", self.origin + vectorscale((0, 0, 1), 60));
-        return;
+        break;
     case 16:
     case 32:
     case 128:
     case 256:
         playsound(0, #"zmb_death_gibs", self.origin + vectorscale((0, 0, 1), 30));
-        return;
+        break;
     }
 }
 

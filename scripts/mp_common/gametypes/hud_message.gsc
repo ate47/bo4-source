@@ -59,7 +59,7 @@ function init() {
 // Size: 0xa8
 function private function_4e36b458(winner) {
     if (!isdefined(self.pers[#"team"])) {
-        return 0;
+        return false;
     }
     team = self.pers[#"team"];
     if (team != #"spectator" && (!isdefined(team) || !isdefined(level.teams[team]))) {
@@ -78,9 +78,9 @@ function function_82f36142(var_c1e98979) {
     case 8:
     case 9:
     case 10:
-        return 1;
+        return true;
     default:
-        return 0;
+        return false;
     }
 }
 

@@ -42,12 +42,12 @@ function add_nationality_names(str_nationality) {
     switch (str_nationality) {
     case #"american":
         american_names();
-        return;
+        break;
     default:
         /#
             assertmsg("Miller" + str_nationality);
         #/
-        return;
+        break;
     }
 }
 
@@ -377,9 +377,9 @@ function is_police_member(str_classname) {
 // Size: 0x36
 function is_security_member(str_classname) {
     if (issubstr(str_classname, "_security_")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace name/name_shared
@@ -409,28 +409,28 @@ function getrankfromname(name) {
     switch (shortrank) {
     case #"hash_61c7340e20b9c509":
         self.airank = "private";
-        return;
+        break;
     case #"hash_5827a20dd30caea2":
         self.airank = "private";
-        return;
+        break;
     case #"hash_2116fd90943206f0":
         self.airank = "corporal";
-        return;
+        break;
     case #"hash_1b74eb18c9f1846d":
         self.airank = "sergeant";
-        return;
+        break;
     case #"hash_12acac191dfe13b9":
         self.airank = "lieutenant";
-        return;
+        break;
     case #"hash_21327d909449a828":
         self.airank = "captain";
-        return;
+        break;
     default:
         /#
             println("Agent " + shortrank + "<unknown string>");
         #/
         self.airank = "private";
-        return;
+        break;
     }
 }
 
@@ -444,9 +444,9 @@ function issubstr_match_any(str_match, str_search_array) {
     #/
     foreach (str_search in str_search_array) {
         if (issubstr(str_match, str_search)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 

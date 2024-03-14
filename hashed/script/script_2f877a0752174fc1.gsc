@@ -78,7 +78,7 @@ function function_c7d4845() {
 // Checksum 0xaba2be94, Offset: 0x770
 // Size: 0x120
 function function_445e3d3d() {
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -415,17 +415,17 @@ function function_1792ae3(e_item) {
 // Size: 0x98
 function function_6fb01110(player) {
     if (self.stub.in_use === 1) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.var_19e44f3d)) {
-        return 0;
+        return false;
     }
     if (function_8b1a219a()) {
         self sethintstring(#"hash_4a6b20a71fb9496b");
     } else {
         self sethintstring(#"hash_68d7ac4aedcba8f5");
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_cc08081f/namespace_cc08081f
@@ -434,7 +434,7 @@ function function_6fb01110(player) {
 // Size: 0x50
 function function_aa07edab() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         self.stub notify(#"play_audio");
     }
@@ -447,7 +447,7 @@ function function_aa07edab() {
 function function_8352562a() {
     self endon(#"death");
     var_e578920c = 0;
-    while (1) {
+    while (true) {
         self waittill(#"play_audio");
         exploder::exploder("fxexp_script_projector_off");
         exploder::exploder("fxexp_script_projector_on");
@@ -493,7 +493,7 @@ function function_de798ee4() {
     for (i = 0; i < level.var_ea514bc4.size; i++) {
         if (level.var_ea514bc4[i].in_inventory) {
             level.var_19e44f3d = level.var_ea514bc4[i];
-            return;
+            break;
         }
     }
 }
@@ -515,7 +515,7 @@ function function_d38b59bb() {
 // Size: 0x50
 function function_82c13fa8() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         self.stub notify(#"play_audio");
     }
@@ -572,7 +572,7 @@ function function_a0b040d4() {
 // Size: 0x108
 function function_c9271718(player) {
     if (level.var_215e60c4.in_use === 1) {
-        return 0;
+        return false;
     }
     if (level.var_215e60c4.is_on === 1) {
         if (function_8b1a219a()) {
@@ -585,7 +585,7 @@ function function_c9271718(player) {
     } else {
         self sethintstring(#"hash_7dca7ee995ad3d4a");
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_cc08081f/namespace_cc08081f
@@ -594,7 +594,7 @@ function function_c9271718(player) {
 // Size: 0x70
 function function_ee32c750() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         self playsound(#"hash_342cdac10639915e");
         self.stub notify(#"play_audio");
@@ -647,10 +647,10 @@ function function_93040a5d() {
 function function_ce7e594b() {
     foreach (player in level.players) {
         if (isplayer(self.attacker) && !isbot(self.attacker)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_cc08081f/namespace_cc08081f
@@ -689,7 +689,7 @@ function function_4bda6193() {
     }
     a_variants = array::randomize(a_variants);
     n_index = 0;
-    while (1) {
+    while (true) {
         self waittill(#"play_audio");
         if (isdefined(level.var_215e60c4.in_use) && !level.var_215e60c4.in_use) {
             level.var_215e60c4.in_use = 1;
@@ -740,7 +740,7 @@ function function_74174ce1(str_state) {
     case #"screen_off":
         self function_35e95fba();
         self showpart("tag_screen_on_play");
-        return;
+        break;
     case #"screen_on":
         self function_35e95fba();
         self showpart("tag_screen_on_noise");
@@ -750,15 +750,15 @@ function function_74174ce1(str_state) {
         wait(30);
         self hidepart("tag_screen_on_tone");
         self showpart("tag_screen_off");
-        return;
+        break;
     case #"screen_on_noise":
         self function_35e95fba();
         self showpart("tag_screen_on_noise");
-        return;
+        break;
     case #"screen_on_tone":
         self function_35e95fba();
         self showpart("tag_screen_on_tone");
-        return;
+        break;
     }
 }
 

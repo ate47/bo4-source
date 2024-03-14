@@ -96,7 +96,7 @@ function group_mega_round_end_abcd_talking(localclientnum = 0) {
     var_5929417d = 0;
     var_2e40ce22 = 0;
     var_d4d81eb4 = 0;
-    while (1) {
+    while (true) {
         var_fdadca2a = previs_weapon;
         if (!var_5929417d) {
             if (var_2e40ce22 == 1) {

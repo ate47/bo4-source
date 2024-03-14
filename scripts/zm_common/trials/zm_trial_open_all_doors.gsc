@@ -117,7 +117,7 @@ function private function_b2fa4678() {
     level endon(#"hash_7646638df88a3656");
     var_c43a6efa = 0;
     var_58161ed2 = function_e242d7a8();
-    while (1) {
+    while (true) {
         var_54e16eaa = function_d2a5d1f0();
         if (var_54e16eaa != var_c43a6efa) {
             if (var_54e16eaa >= var_58161ed2) {

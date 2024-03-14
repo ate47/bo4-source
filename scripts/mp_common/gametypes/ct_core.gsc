@@ -296,7 +296,7 @@ function function_1e84c767() {
     player = getplayers()[0];
     var_60786cb4 = 0;
     if (util::function_8570168d()) {
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = player waittill(#"menuresponse");
             menu = waitresult.menu;
@@ -366,7 +366,7 @@ function function_a217c7b4(b_success) {
     foreach (entity in axis) {
         entity delete();
     }
-    if (b_success && 1 && isdefined(level.var_38c87b5) && level.var_38c87b5) {
+    if (b_success && true && isdefined(level.var_38c87b5) && level.var_38c87b5) {
         wait(2);
         e_player = getplayers(#"allies")[0];
         e_player val::set(#"potm", "freezecontrols", 1);

@@ -78,13 +78,13 @@ function spawned(type) {
         if (isdefined(bundle.var_502a0e23)) {
             player iprintlnbold(bundle.var_502a0e23);
         }
-        return 0;
+        return false;
     }
     if (!player killstreakrules::iskillstreakallowed(type, player.team)) {
         if (isdefined(bundle) && isdefined(level.var_228e8cd6)) {
             player [[ level.var_228e8cd6 ]](bundle.ksweapon);
         }
-        return 0;
+        return false;
     }
     player tracking::track(2);
     dog = spawn_dog(bundle, player);
@@ -92,13 +92,13 @@ function spawned(type) {
         if (isdefined(bundle) && isdefined(level.var_228e8cd6)) {
             player [[ level.var_228e8cd6 ]](bundle.ksweapon);
         }
-        return 0;
+        return false;
     }
     dog killstreak_bundles::spawned(bundle);
     dog influencers::create_entity_enemy_influencer("dog", player.team);
     ability_player::function_c22f319e(bundle.ksweapon);
     dog clientfield::set("enemyvehicle", 1);
-    return 1;
+    return true;
 }
 
 // Namespace dog/dog_shared
@@ -109,10 +109,10 @@ function function_a38d2d73(tacpoint) {
     players = getplayers();
     foreach (player in players) {
         if (distancesquared(tacpoint.origin, player.origin) <= 150 * 150) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace dog/dog_shared
@@ -123,10 +123,10 @@ function function_4670789f(tacpoint) {
     players = getplayers();
     foreach (player in players) {
         if (function_96c81b85(tacpoint, player.origin)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace dog/dog_shared
@@ -280,24 +280,24 @@ function function_3fda709e(owner, value) {
 // Size: 0xac
 function function_8296c0eb(owner) {
     if (!isdefined(owner)) {
-        return 0;
+        return false;
     }
     if (!isalive(owner)) {
-        return 0;
+        return false;
     }
     if (!isplayer(owner)) {
-        return 0;
+        return false;
     }
     if (owner.sessionstate == "spectator") {
-        return 0;
+        return false;
     }
     if (owner.sessionstate == "intermission") {
-        return 0;
+        return false;
     }
     if (isdefined(level.intermission) && level.intermission) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dog/dog_shared
@@ -335,7 +335,7 @@ function function_458bc8de(dog) {
     dog notify(#"hash_27a4203e237c5098");
     dog endon(#"hash_27a4203e237c5098");
     wait(0.5);
-    while (1) {
+    while (true) {
         if (!(isdefined(level.var_347a87db) && level.var_347a87db) && self offhandspecialbuttonpressed() && !self function_104d7b4d() && !self isusingoffhand()) {
             dog toggle_state(self);
             wait(0.5);

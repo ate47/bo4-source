@@ -61,7 +61,7 @@ function function_5df80e43(watcher, player) {
     var_80994c8c = 225 * 225;
     grenade_weapon = getweapon(#"eq_collapse_grenade");
     var_f4d9a132 = gettime() + 1000;
-    while (1) {
+    while (true) {
         time = gettime();
         a_players = getplayers();
         foreach (player in a_players) {
@@ -112,7 +112,7 @@ function on_damage(watcher) {
     self endon(#"death");
     damagemax = 50;
     self.damagetaken = 0;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage = waitresult.amount;

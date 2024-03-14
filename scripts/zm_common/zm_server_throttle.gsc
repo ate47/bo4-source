@@ -23,7 +23,7 @@ function server_choke_init(id, max) {
 // Checksum 0xefe4b8eb, Offset: 0x108
 // Size: 0x32
 function server_choke_thread(id) {
-    while (1) {
+    while (true) {
         waitframe(1);
         level.zombie_server_choke_ids_count[id] = 0;
     }
@@ -67,9 +67,9 @@ function server_choke_action(id, choke_action, arg1, arg2, arg3) {
 // Size: 0x1c
 function server_entity_valid(entity) {
     if (!isdefined(entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_server_throttle/zm_server_throttle

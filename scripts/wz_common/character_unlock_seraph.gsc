@@ -247,7 +247,7 @@ function private function_c816ea5b() {
 // Size: 0x5e
 function function_f6dc1aa9() {
     /#
-        while (1) {
+        while (true) {
             var_f748425e = self.origin + vectorscale((0, 0, 1), 60);
             sphere(var_f748425e, 5, (1, 1, 0));
             waitframe(1);

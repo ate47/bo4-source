@@ -89,7 +89,7 @@ function private function_1633056a(var_a9dd1993, var_2953986a, var_3790b4e4, var
     }
     wait(1);
     var_407eb07 = 0;
-    while (1) {
+    while (true) {
         if (self function_26f124d8() && var_407eb07) {
             var_9d590e70 = 1;
             if (isdefined(var_3b058622)) {
@@ -150,47 +150,47 @@ function function_936adaa1(weapon) {
 // Size: 0x182
 function function_26f124d8() {
     if (!isdefined(level.var_e91491fb)) {
-        return 1;
+        return true;
     }
     switch (level.var_e91491fb) {
     case #"ads":
         var_389b3ef1 = self playerads();
         if (self adsbuttonpressed() && var_389b3ef1 > 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"jump":
         if (self zm_utility::is_jumping()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"slide":
         if (self issliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"hash_6c6c8f6b349b8751":
         if (self zm_utility::is_jumping() || self issliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"crouch":
         if (self getstance() === "crouch") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"prone":
         if (self getstance() === "prone") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"movement":
     default:
         v_velocity = self getvelocity();
         if (length(v_velocity) != 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 }
 

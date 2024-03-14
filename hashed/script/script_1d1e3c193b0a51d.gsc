@@ -56,7 +56,7 @@ function private on_end(round_reset) {
 function private function_1633056a(var_16e6b8ea = 10) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         if (isalive(self) && !self laststand::player_is_in_laststand() && self function_c81cdba2()) {
             self playsoundtoplayer(#"hash_6df374d848ba6a60", self);
             self dodamage(var_16e6b8ea, self.origin);
@@ -75,36 +75,36 @@ function private function_c81cdba2() {
     case #"ads":
         var_389b3ef1 = self playerads();
         if (self adsbuttonpressed() && var_389b3ef1 > 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"jump":
         if (self zm_utility::is_jumping()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"slide":
         if (self issliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"crouch":
         if (self getstance() === "crouch") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"sprint":
         if (self issprinting()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"movement":
     default:
         v_velocity = self getvelocity();
         if (length(v_velocity) != 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 }
 

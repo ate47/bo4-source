@@ -92,7 +92,7 @@ function private on_end(round_reset) {
 // Size: 0x13c
 function function_a2c43fea(var_d42c8aaa = 2000) {
     level endon(#"hash_7646638df88a3656", #"end_game");
-    while (1) {
+    while (true) {
         n_score_total = 0;
         foreach (player in getplayers()) {
             if (isalive(player)) {
@@ -127,7 +127,7 @@ function private function_ba517920(challenge) {
 // Size: 0xb8
 function private function_69c5df45(challenge) {
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         if (challenge.var_3fd9ed88 >= challenge.var_b49b94ed) {
             level flag::clear(#"infinite_round_spawning");
             level flag::clear(#"pause_round_timeout");

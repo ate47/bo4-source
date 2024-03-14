@@ -133,11 +133,11 @@ function clone_actor_animate(animtype) {
     switch (animtype) {
     case #"laststand":
         self setanimstatefromasd("laststand");
-        return;
+        break;
     case #"idle":
     default:
         self setanimstatefromasd("idle");
-        return;
+        break;
     }
 }
 
@@ -150,20 +150,20 @@ function clone_mover_animate(animtype) {
     switch (animtype) {
     case #"laststand":
         self setanim(#"pb_laststand_idle");
-        return;
+        break;
     case #"afterlife":
         self setanim(#"pb_afterlife_laststand_idle");
-        return;
+        break;
     case #"chair":
         self setanim(#"ai_actor_elec_chair_idle");
-        return;
+        break;
     case #"falling":
         self setanim(#"pb_falling_loop");
-        return;
+        break;
     case #"idle":
     default:
         self setanim(#"pb_stand_alert");
-        return;
+        break;
     }
 }
 

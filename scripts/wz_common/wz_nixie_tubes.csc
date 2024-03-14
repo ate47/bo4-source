@@ -157,7 +157,7 @@ function function_f98a4376(localclientnum) {
     var_4f5b63ea = struct::get("nixie_tube_1");
     var_83aecc80 = struct::get("nixie_tube_2");
     var_31a8a875 = struct::get("nixie_tube_3");
-    while (1) {
+    while (true) {
         local_player = function_5c10bd79(localclientnum);
         if (isdefined(local_player)) {
             var_cd92754b = var_4f5b63ea.var_8f21b4af;
@@ -262,7 +262,7 @@ function function_f98a4376(localclientnum) {
                     var_cd92754b hide();
                     var_59578baf hide();
                     var_ca95ee2a hide();
-                    return;
+                    break;
                 }
             }
         }
@@ -393,14 +393,14 @@ function function_a5d20d9b(str_code) {
     switch (str_code) {
     case #"115":
         self thread music_ee();
-        return;
+        break;
     case #"872":
         self thread fireworks_ee();
-        return;
+        break;
     case #"420":
         self thread function_1451e44e();
     default:
-        return;
+        break;
     }
 }
 

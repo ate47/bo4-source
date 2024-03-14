@@ -33,7 +33,7 @@ function function_cff1656d() {
 // Size: 0x380
 function function_4827d817(weapon) {
     if (weapon.maxammo <= 0) {
-        return 0;
+        return false;
     }
     package = struct::get_script_bundle("bountyhunterpackage", level.bountypackagelist[0]);
     slot = undefined;
@@ -43,7 +43,7 @@ function function_4827d817(weapon) {
         slot = 1;
     }
     if (!isdefined(slot)) {
-        return 0;
+        return false;
     }
     weapindex = self.pers[#"dynamic_loadout"].clientfields[slot].val - 1;
     package = struct::get_script_bundle("bountyhunterpackage", level.bountypackagelist[weapindex]);
@@ -62,7 +62,7 @@ function function_4827d817(weapon) {
         self setweaponammostock(weapon, weapon.clipsize);
     } else {
         if (currentammo >= maxammo) {
-            return 0;
+            return false;
         }
         currentammo = currentammo + var_e6e3de63;
         if (currentammo > maxammo) {
@@ -70,7 +70,7 @@ function function_4827d817(weapon) {
         }
         self setweaponammostock(weapon, int(currentammo * weapon.clipsize) - clipammo);
     }
-    return 1;
+    return true;
 }
 
 // Namespace pickup_ammo/pickup_ammo

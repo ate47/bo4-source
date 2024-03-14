@@ -223,7 +223,7 @@ function function_f1e4097d() {
     level thread intro_msg();
     level.var_a62b1ae0 = getnode("nd_enemy_group_" + level.var_8db5b490 + 1, "targetname");
     level thread function_671e5ede();
-    while (1) {
+    while (true) {
         if (!level.var_cbcb0078 && level flag::get("times_up")) {
             level flag::set("mission_failed");
         }
@@ -279,7 +279,7 @@ function function_671e5ede() {
     level thread ct_utils::function_bfa522d1(0);
     level thread function_3e3366eb();
     level.var_cbcb0078 = 0;
-    while (1) {
+    while (true) {
         if (level flag::get("times_up")) {
             level flag::set("mission_failed");
             break;
@@ -353,7 +353,7 @@ function function_1c8a3d23() {
 // Checksum 0x3a20759b, Offset: 0x16f8
 // Size: 0x6
 function function_b80b4832() {
-    return 0;
+    return false;
 }
 
 // Namespace ct_prophet/ct_prophet
@@ -378,7 +378,7 @@ function function_544df02a(var_468ef41, var_8b84b3ce) {
 // Checksum 0x4e46488f, Offset: 0x17c8
 // Size: 0x7e
 function function_e1086742(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
-    return 0;
+    return false;
 }
 
 // Namespace ct_prophet/ct_prophet

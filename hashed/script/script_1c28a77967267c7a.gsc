@@ -164,12 +164,12 @@ function function_6b8c9160() {
 // Size: 0x90
 function function_3adb94b4(e_zombie) {
     if (isdefined(e_zombie.var_42d5176d) && e_zombie.var_42d5176d || e_zombie.marked_for_death === 1 || e_zombie.var_46d39f48 === 1 || e_zombie.no_gib === 1) {
-        return 0;
+        return false;
     }
     if (isdefined(e_zombie.mdl_trap_mover)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace music_box/namespace_72079786
@@ -181,9 +181,9 @@ function private function_3710157f(e_zombie) {
     self endon(#"death");
     e_zombie endon(#"death");
     if (isdefined(e_zombie)) {
-        while (1) {
+        while (true) {
             if (!isdefined(e_zombie) || !isalive(e_zombie)) {
-                return;
+                break;
             }
             self scene::play(#"ai_zm_ora_zombie_music_box_rise", "rise", e_zombie);
             waitframe(1);
@@ -221,7 +221,7 @@ function function_4ada560e() {
 // Size: 0x12c
 function _second_compass_map_mp_ruins(e_owner) {
     if (ispointonnavmesh(self.origin, 60)) {
-        return 1;
+        return true;
     }
     v_dir = vectornormalize(e_owner.origin - self.origin);
     v_pos = self.origin + v_dir * 32;
@@ -231,10 +231,10 @@ function _second_compass_map_mp_ruins(e_owner) {
         if (var_3fb36683) {
             self.origin = v_valid_point;
             self.var_1a61db89 clientfield::set("" + #"hash_60a7e5b79e8064a5", 1);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace music_box/namespace_72079786

@@ -78,7 +78,7 @@ function private on_end(round_reset) {
 function private function_7f62f098(challenge) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         var_96936cca = self.var_c957540c;
         if (var_96936cca < 0) {
             var_96936cca = 0;
@@ -96,7 +96,7 @@ function private function_7f62f098(challenge) {
 // Size: 0x18e
 function private function_69c5df45(challenge) {
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         /#
             assert(isdefined(challenge));
         #/

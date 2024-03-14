@@ -104,9 +104,9 @@ function function_66cfd7d() {
     var_6ecc1639 = function_ba8172ca();
     var_b3c0e90e = function_cbfb0da4();
     if (var_6ecc1639 >= var_b3c0e90e || !level flag::get("spawn_zombies") || isdefined(level.var_5e45f817) && level.var_5e45f817) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_tiger_util/ai_tiger_util
@@ -205,8 +205,8 @@ function round_spawn() {
     ai = spawn_single();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

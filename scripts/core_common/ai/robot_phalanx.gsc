@@ -141,7 +141,7 @@ class robotphalanx {
     // Size: 0xd4
     function private _updatephalanx() {
         if (self.scattered_) {
-            return 0;
+            return false;
         }
         self.tier1robots_ = _prunedead(self.tier1robots_);
         self.tier2robots_ = _prunedead(self.tier2robots_);
@@ -149,9 +149,9 @@ class robotphalanx {
         self.currentrobotcount_ = self.tier1robots_.size + self.tier2robots_.size + self.tier2robots_.size;
         if (self.currentrobotcount_ <= self.startrobotcount_ - self.breakingpoint_) {
             scatterphalanx();
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
 
     // Namespace robotphalanx/robot_phalanx

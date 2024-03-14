@@ -62,7 +62,7 @@ function path_update_interrupt() {
     self notify(#"path_update_interrupt_by_attacker");
     self endon(#"death", #"change_state", #"near_goal", #"reached_end_node", #"amws_end_interrupt_watch", #"path_update_interrupt_by_attacker");
     wait(1);
-    while (1) {
+    while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
                 wait(0.2);

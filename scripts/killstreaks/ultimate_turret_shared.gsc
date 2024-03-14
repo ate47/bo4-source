@@ -164,14 +164,14 @@ function activateturret() {
         assert(isplayer(player));
     #/
     if (isdefined(player.var_c306ebe3)) {
-        return 0;
+        return false;
     }
     killstreakid = self killstreakrules::killstreakstart("ultimate_turret", player.team, 0, 0);
     if (killstreakid == -1) {
-        return 0;
+        return false;
     }
     if (level.var_43e52789) {
-        return 0;
+        return false;
     }
     bundle = level.killstreakbundle[#"ultimate_turret"];
     var_b6c61913 = 0;
@@ -183,17 +183,17 @@ function activateturret() {
         event = undefined;
         event = turret waittill(#"placed", #"cancelled", #"death");
         if (event._notify != "placed") {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
     turret_team = player.team;
     player.var_c306ebe3 = killstreakid;
     self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 4);
-    if (0) {
+    if (false) {
         var_e454da90 = getweapon(#"ultimate_turret_deploy");
         if (var_e454da90 == level.weaponnone) {
-            return 0;
+            return false;
         }
         player giveweapon(var_e454da90);
         slot = player gadgetgetslot(var_e454da90);
@@ -207,7 +207,7 @@ function activateturret() {
             }
             killstreakrules::killstreakstop("ultimate_turret", turret_team, killstreakid);
             self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 0);
-            return 0;
+            return false;
         }
         player switchtoweapon(var_e454da90);
         player setoffhandvisible(1);
@@ -220,7 +220,7 @@ function activateturret() {
             }
             killstreakrules::killstreakstop("ultimate_turret", turret_team, killstreakid);
             self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 0);
-            return 0;
+            return false;
         }
     }
     if (isdefined(level.var_ed417bb9)) {
@@ -236,7 +236,7 @@ function activateturret() {
         waitresult = undefined;
         waitresult = player waittill(#"ultimate_turret_deployed", #"death", #"weapon_fired");
     }
-    if (isdefined(player) && 0) {
+    if (isdefined(player) && false) {
         player takeweapon(var_e454da90);
     }
     if (waitresult._notify === "weapon_fired") {
@@ -252,13 +252,13 @@ function activateturret() {
             player.var_c306ebe3 = undefined;
         }
         killstreakrules::killstreakstop("ultimate_turret", turret_team, killstreakid);
-        return 0;
+        return false;
     }
     if (waitresult._notify == "ultimate_turret_deployed" && isdefined(waitresult.turret)) {
         waitresult.turret thread watchturretshutdown(player, waitresult.turret.killstreakid, player.team);
     }
     player.var_c306ebe3 = undefined;
-    return 1;
+    return true;
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
@@ -742,7 +742,7 @@ function turret_watch_owner_events() {
 function turret_laser_watch() {
     veh = self;
     veh endon(#"death");
-    while (1) {
+    while (true) {
         laser_should_be_on = !veh.controlled && isdefined(veh.enemy) && !(isdefined(veh.isstunned) && veh.isstunned) && !(isdefined(veh.isjammed) && veh.isjammed);
         if (laser_should_be_on) {
             if (islaseron(veh) == 0) {
@@ -762,7 +762,7 @@ function turret_laser_watch() {
 function setup_death_watch_for_new_targets() {
     turretvehicle = self;
     turretvehicle endon(#"death");
-    for (old_target = undefined; 1; old_target = waitresult.target) {
+    for (old_target = undefined; true; old_target = waitresult.target) {
         waitresult = undefined;
         waitresult = turretvehicle waittill(#"has_new_target");
         if (isdefined(old_target)) {
@@ -799,14 +799,14 @@ function get_killstreak_bundle() {
 function is_valid_target(potential_target, friendly_team) {
     if (isdefined(potential_target)) {
         if (issentient(potential_target) && potential_target.var_d600e174 === 1) {
-            return 0;
+            return false;
         }
         if (!isdefined(potential_target.team) || potential_target.team == friendly_team) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
@@ -820,7 +820,7 @@ function function_fefefcc4() {
     wait(0.8);
     bundle = get_killstreak_bundle();
     var_beeadda8 = isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 300;
-    while (1) {
+    while (true) {
         if (!isdefined(veh.enemy) && !(isdefined(veh.isstunned) && veh.isstunned) && !(isdefined(veh.isjammed) && veh.isjammed)) {
             /#
                 var_beeadda8 = isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 300;
@@ -866,9 +866,9 @@ function function_9d86d74c(enemy) {
     var_6551f24e = anglestoforward(fire_angles);
     target_offset = shoot_at_pos - fire_origin;
     if (lengthsquared(target_offset) < 22 * 22 && vectordot(var_6551f24e, target_offset) < 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ultimate_turret/ultimate_turret_shared
@@ -975,7 +975,7 @@ function turretscanning() {
     veh.maxsightdistsqrd = (isdefined(bundle.var_2aeadfa0) ? bundle.var_2aeadfa0 : 3500) * (isdefined(bundle.var_2aeadfa0) ? bundle.var_2aeadfa0 : 3500);
     veh.var_e812cbe7 = (isdefined(bundle.var_f6853f02) ? bundle.var_f6853f02 : 2500) * (isdefined(bundle.var_f6853f02) ? bundle.var_f6853f02 : 2500);
     veh.var_38e6355c = (isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 500) * (isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 500);
-    while (1) {
+    while (true) {
         /#
             veh.maxsightdistsqrd = (isdefined(bundle.var_2aeadfa0) ? bundle.var_2aeadfa0 : 3500) * (isdefined(bundle.var_2aeadfa0) ? bundle.var_2aeadfa0 : 3500);
             veh.var_e812cbe7 = (isdefined(bundle.var_f6853f02) ? bundle.var_f6853f02 : 2500) * (isdefined(bundle.var_f6853f02) ? bundle.var_f6853f02 : 2500);
@@ -1229,7 +1229,7 @@ function function_31477582() {
     waitframe(1);
     var_463c449d = 386.089 * float(function_60d95f53()) / 1000;
     max_delta = 1;
-    while (1) {
+    while (true) {
         if (!isdefined(self.turret)) {
             wait(1);
             continue;

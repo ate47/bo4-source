@@ -59,7 +59,7 @@ function private on_end(round_reset) {
 function private function_83b71e7c() {
     level endon(#"hash_7646638df88a3656");
     self endon(#"death");
-    while (1) {
+    while (true) {
         level flag::wait_till(level.var_5bfd847e);
         zm_trial_util::function_7d32b7d0(1);
         level flag::wait_till_clear(level.var_5bfd847e);

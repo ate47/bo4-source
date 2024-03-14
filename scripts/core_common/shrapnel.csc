@@ -112,7 +112,7 @@ function private function_989d336d(localclientnum) {
     basehealth = 100;
     playerhealth = renderhealthoverlayhealth(localclientnum, basehealth);
     var_8e5bb835 = playerhealth;
-    while (1) {
+    while (true) {
         if (!isdefined(self.shrapnel_enabled)) {
             self.shrapnel_enabled = 0;
         }
@@ -157,7 +157,7 @@ function private function_989d336d(localclientnum) {
 // Checksum 0xb4078643, Offset: 0x7f0
 // Size: 0x6
 function private function_a6fe4166() {
-    return 0;
+    return false;
 }
 
 // Namespace shrapnel/shrapnel

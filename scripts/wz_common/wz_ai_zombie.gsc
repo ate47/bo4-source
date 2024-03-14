@@ -252,9 +252,9 @@ function custom_melee_fire() {
 function function_cdc822b() {
     self.isonnavmesh = ispointonnavmesh(self.origin, self getpathfindingradius() / 1.0125);
     if (isdefined(self.ai_zone) || isdefined(self.isonnavmesh) && self.isonnavmesh) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -640,9 +640,9 @@ function function_b670d610() {
 // Size: 0x40
 function isheadshot(shitloc) {
     if (isdefined(shitloc) && (shitloc == "head" || shitloc == "helmet")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -748,25 +748,25 @@ function private function_e91d8371(entity) {
 // Size: 0x79e
 function private zombieshouldmelee(entity) {
     if (isdefined(entity.var_8a96267d) && entity.var_8a96267d || isdefined(entity.var_8ba6ede3) && entity.var_8ba6ede3) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.var_4c85ebad) && entity.var_4c85ebad) {
-        return 1;
+        return true;
     }
     if (isdefined(entity.enemy_override)) {
-        return 0;
+        return false;
     }
     if (function_d8b225ae(entity)) {
-        return 1;
+        return true;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (!wz_ai_utils::is_player_valid(entity.enemy) && !function_f41ded83(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     meleedistsq = zombiebehavior::function_997f1224(entity);
     enemy_vehicle = undefined;
@@ -799,38 +799,38 @@ function private zombieshouldmelee(entity) {
         meleedistsq = meleedistsq * entity.var_cbc65493;
     }
     if (abs(entity.origin[2] - test_origin[2]) > (isdefined(entity.var_737e8510) ? entity.var_737e8510 : 64)) {
-        return 0;
+        return false;
     }
     if (function_f41ded83(entity.enemy)) {
         if (distance2dsquared(entity.origin, test_origin) > meleedistsq) {
-            return 0;
+            return false;
         }
     } else if (distancesquared(entity.origin, test_origin) > meleedistsq) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > (isdefined(entity.var_1c0eb62a) ? entity.var_1c0eb62a : 60)) {
-        return 0;
+        return false;
     }
     if (!entity cansee(isdefined(enemy_vehicle) ? enemy_vehicle : entity.enemy)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, test_origin) < 40 * 40) {
         entity.idletime = gettime();
         entity.var_1b250399 = entity.origin;
-        return 1;
+        return true;
     }
     if (isdefined(enemy_vehicle)) {
         entity.idletime = gettime();
         entity.var_1b250399 = entity.origin;
-        return 1;
+        return true;
     }
     if (!function_f41ded83(entity.enemy) && isdefined(self.isonnavmesh) && self.isonnavmesh && !tracepassedonnavmesh(entity.origin, isdefined(entity.enemy.last_valid_position) ? entity.enemy.last_valid_position : entity.enemy.origin, entity.enemy getpathfindingradius())) {
-        return 0;
+        return false;
     }
     entity.idletime = gettime();
     entity.var_1b250399 = entity.origin;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -839,12 +839,12 @@ function private zombieshouldmelee(entity) {
 // Size: 0xbe
 function private function_d8b225ae(entity) {
     if (!isdefined(entity.attackable)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.var_b238ef38) && distance2dsquared(entity.origin, entity.var_b238ef38.position) < 16 * 16 && abs(entity.origin[2] - entity.var_b238ef38.position[2]) < 50) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -893,9 +893,9 @@ function private zombieshouldmove(entity) {
 // Size: 0x34
 function private function_c711d679(entity) {
     if (isdefined(entity.var_1a3ca72b) && entity.var_1a3ca72b) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -922,7 +922,7 @@ function private function_638581d2(entity) {
     entity.var_13138acf = 1;
     entity.var_3f2dc1d = undefined;
     entity.var_ef59b90 = 3;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -949,11 +949,11 @@ function private function_8f57dc52(dynent) {
         dynentstate = function_ffdbe8c2(dynent);
         var_f3fec032 = function_489009c1(dynent);
         if (!dynent.destructible || !dynent.var_e76c7e9f || !isdefined(var_f3fec032) || !isdefined(var_f3fec032.destroyed) || dynentstate === var_f3fec032.destroyed || dynentstate === var_f3fec032.vehicledestroyed || isdefined(dynent.var_993e9bb0) && dynent.var_993e9bb0) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1035,7 +1035,7 @@ function private function_4402c40a(entity) {
     entity.var_8a96267d = undefined;
     entity.is_digging = 1;
     entity pathmode("dont move", 1);
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1047,7 +1047,7 @@ function private function_6a3bcddc(entity) {
     entity notsolid();
     entity clientfield::set("zombie_riser_fx", 0);
     entity notify(#"is_underground");
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1077,7 +1077,7 @@ function private function_98b102d8(entity) {
 // Size: 0x1a
 function private function_6ec0bcc1(entity) {
     entity.shouldreact = undefined;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1096,7 +1096,7 @@ function private zombiemoveactionstart(entity) {
     entity.movetime = gettime();
     entity.moveorigin = entity.origin;
     entity.var_13138acf = 0;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1114,7 +1114,7 @@ function private zombiemoveactionupdate(entity) {
         entity.movetime = gettime();
         entity.moveorigin = entity.origin;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1124,7 +1124,7 @@ function private zombiemoveactionupdate(entity) {
 function private function_f8250d5e(entity) {
     entity.idletime = gettime();
     entity.var_1b250399 = entity.origin;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1154,7 +1154,7 @@ function private function_860d5d8(entity) {
 // Size: 0x1a
 function private function_a0acf641(entity) {
     entity.var_4c4ad20a = undefined;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1185,7 +1185,7 @@ function private function_6a2634da(entity) {
             self.zombie_arms_position = "down";
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1224,10 +1224,10 @@ function function_142c3c86(entity, var_8fde7117) {
         vehicle = entity getvehicleoccupied();
         dist_squared = distancesquared(vehicle.origin, var_8fde7117.origin);
         if (isdefined(vehicle) && vehicle.scriptvehicletype !== "recon_wz" && vehicle.scriptvehicletype !== "dart_wz" && vehicle.scriptvehicletype != "hawk") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1272,7 +1272,7 @@ function function_e261b81d() {
     waitframe(1);
     self.aistate = 1;
     self setgoal(self.origin);
-    while (1) {
+    while (true) {
         self.isonnavmesh = ispointonnavmesh(self.origin, self getpathfindingradius() / 1.0125);
         self.var_6e3313ab = 0;
         if (isdefined(self.ai_zone) && self istouching(self.ai_zone.def)) {
@@ -1377,7 +1377,7 @@ function private setup_awareness(entity) {
 // Size: 0x110
 function private function_cb2c8fea() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"glass_smash");
         origin = undefined;
@@ -1404,7 +1404,7 @@ function private function_cb2c8fea() {
 function private function_7a84e563() {
     level endon(#"game_ended");
     level.var_ee6c4739 = [];
-    while (1) {
+    while (true) {
         waitframe(1);
         if (level.var_ee6c4739.size > 0) {
             event = array::pop(level.var_ee6c4739, 0, 0);
@@ -1420,7 +1420,7 @@ function private function_7a84e563() {
 function private function_25b61968() {
     self endon(#"death");
     self thread function_d1675b11();
-    while (1) {
+    while (true) {
         wait(0.5);
         waitresult = undefined;
         waitresult = self waittill(#"weapon_fired");
@@ -1519,10 +1519,10 @@ function private set_state(entity, state_name) {
 function function_9d0a9f4e(entity, awareness_event) {
     if (isdefined(entity.var_b4b8ad5f)) {
         if (distancesquared(entity.var_b4b8ad5f.position, awareness_event.position) <= 64 * 64) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1531,10 +1531,10 @@ function function_9d0a9f4e(entity, awareness_event) {
 // Size: 0x3a
 function private function_16b8d0ed(event) {
     if (!function_9d0a9f4e(self, event)) {
-        return 0;
+        return false;
     }
     self.var_b4b8ad5f = event;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -1571,7 +1571,7 @@ function private wander_enter(entity) {
 function private function_76f8bf36(entity) {
     entity endon(#"death", #"state_changed");
     origin = entity.origin;
-    while (1) {
+    while (true) {
         if (isdefined(entity.spawn_point) && isdefined(entity.spawn_point.wander_radius)) {
             goal = function_b184324d(entity.spawn_point.origin, int(entity.spawn_point.wander_radius), entity getpathfindingradius() * 1.2, 32);
         } else if (isdefined(entity.cluster)) {
@@ -1747,7 +1747,7 @@ function function_c241ef9a(ai, enemy, var_fb09158c) {
 // Size: 0x100
 function private function_219b823c(entity, target) {
     if (!issentient(target)) {
-        return 0;
+        return false;
     }
     var_a63ddc4 = isdefined(entity.var_6324ed63) && gettime() < entity.var_6324ed63;
     var_27cd0f02 = entity seerecently(target, 5);
@@ -1866,7 +1866,7 @@ function private function_3cf0d017(entity) {
 function function_54fc0f3e() {
     level endon(#"game_ended");
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.current_state) && isdefined(self.current_state.update_func)) {
             [[ self.current_state.update_func ]](self);
         }
@@ -1995,9 +1995,9 @@ function private function_bf21ead1() {
 // Size: 0x36
 function function_21b44b70(currentsurface) {
     if (array::contains(level.var_3ee83e3f, currentsurface)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -2309,7 +2309,7 @@ function function_d4f2933d() {
     level endon(#"game_ended");
     self endon(#"death", #"state_changed");
     self.var_9a79d89d = self.origin;
-    while (1) {
+    while (true) {
         wander_point = function_b184324d(self.origin, 200, 50);
         if (isdefined(wander_point)) {
             self.var_9a79d89d = wander_point;
@@ -2391,7 +2391,7 @@ function private function_34eacecd() {
 function private function_af47322e() {
     level endon(#"game_ended");
     self endon(#"death", #"state_changed");
-    while (1) {
+    while (true) {
         self.var_9a79d89d = self.ai_zone.spawn_points[self.ai_zone.var_96d81013].origin;
         self.ai_zone.var_96d81013++;
         if (self.ai_zone.var_96d81013 >= self.ai_zone.spawn_points.size) {
@@ -2640,16 +2640,16 @@ function turretthink() {
 function microwaveturretaffectsentity(entity) {
     turret = self;
     if (!isalive(entity)) {
-        return 0;
+        return false;
     }
     if (!isplayer(entity)) {
-        return 0;
+        return false;
     }
     if (entity.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, turret.origin) > level.var_f13b4c3b * level.var_f13b4c3b) {
-        return 0;
+        return false;
     }
     angles = turret.angles_to_enemy;
     origin = turret.var_11c3e0a6;
@@ -2658,9 +2658,9 @@ function microwaveturretaffectsentity(entity) {
     forward = anglestoforward(angles);
     dot = vectordot(entdirection, forward);
     if (dot < cos(level.var_d7209a5f)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -2669,9 +2669,9 @@ function microwaveturretaffectsentity(entity) {
 // Size: 0x24
 function private function_839910c5(entity) {
     if (isdefined(entity.var_834b0770)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -2689,9 +2689,9 @@ function private function_f37b0fbd(entity) {
 function private function_b9b03294(entity) {
     startnode = entity.traversestartnode;
     if (!isdefined(startnode) || !isnodeenabled(startnode)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -2750,23 +2750,23 @@ function private zombiegetupactionterminate(behaviortreeentity) {
 // Size: 0x14e
 function private function_bfc25c77(entity) {
     if (!(isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0)) {
-        return 0;
+        return false;
     }
     startnode = entity.traversestartnode;
     if (entity.traversestartnode.type == #"end") {
         startnode = getothernodeinnegotiationpair(entity.traversestartnode);
     }
     if (!isnodeenabled(startnode)) {
-        return 0;
+        return false;
     }
     if (isdefined(startnode) && isdefined(startnode.targetname)) {
         dynentarray = function_c79d31c4(startnode.targetname);
         if (isdefined(dynentarray) && dynentarray.size > 0) {
             entity.dynentarray = dynentarray;
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -2951,7 +2951,7 @@ function zombie_death_event(params) {
 // Size: 0xc8
 function zombie_gib_on_damage() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         self thread zombie_gib(waitresult.amount, waitresult.attacker, waitresult.direction, waitresult.position, waitresult.mod, waitresult.tag_name, waitresult.model_name, waitresult.part_name, waitresult.weapon);
@@ -3118,13 +3118,13 @@ function function_df5afb5e(missinglegs = 0) {
 // Size: 0x270
 function zombie_should_gib(amount, attacker, type) {
     if (!isdefined(type)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_on_fire) && self.is_on_fire) {
-        return 0;
+        return false;
     }
     if (isdefined(self.no_gib) && self.no_gib == 1) {
-        return 0;
+        return false;
     }
     prev_health = amount + self.health;
     if (prev_health <= 0) {
@@ -3148,19 +3148,19 @@ function zombie_should_gib(amount, attacker, type) {
     case #"mod_trigger_hurt":
     case #"mod_suicide":
     case #"mod_falling":
-        return 0;
+        return false;
     case #"mod_melee":
-        return 0;
+        return false;
     }
     if (type == "MOD_PISTOL_BULLET" || type == "MOD_RIFLE_BULLET") {
         if (!isdefined(attacker) || !isplayer(attacker)) {
-            return 0;
+            return false;
         }
         if (weapon == level.weaponnone || isdefined(level.start_weapon) && weapon == level.start_weapon || weapon.isgasweapon) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -3169,11 +3169,11 @@ function zombie_should_gib(amount, attacker, type) {
 // Size: 0x30e
 function head_should_gib(attacker, type, point) {
     if (isdefined(self.head_gibbed) && self.head_gibbed) {
-        return 0;
+        return false;
     }
     if (!isdefined(attacker) || !isplayer(attacker)) {
         if (!(isdefined(attacker.can_gib_zombies) && attacker.can_gib_zombies)) {
-            return 0;
+            return false;
         }
     }
     if (isplayer(attacker)) {
@@ -3184,34 +3184,34 @@ function head_should_gib(attacker, type, point) {
     if (type != "MOD_RIFLE_BULLET" && type != "MOD_PISTOL_BULLET") {
         if (type == "MOD_GRENADE" || type == "MOD_GRENADE_SPLASH") {
             if (distance(point, self gettagorigin("j_head")) > 55) {
-                return 0;
+                return false;
             } else {
-                return 1;
+                return true;
             }
         } else if (type == "MOD_PROJECTILE") {
             if (distance(point, self gettagorigin("j_head")) > 10) {
-                return 0;
+                return false;
             } else {
-                return 1;
+                return true;
             }
         } else if (weapon.weapclass != "spread") {
-            return 0;
+            return false;
         }
     }
     if (!(self.damagelocation == "head" || self.damagelocation == "helmet" || self.damagelocation == "neck")) {
-        return 0;
+        return false;
     }
     if (type == "MOD_PISTOL_BULLET" && weapon.weapclass != "smg" || weapon == level.weaponnone || isdefined(level.start_weapon) && weapon == level.start_weapon || weapon.isgasweapon) {
-        return 0;
+        return false;
     }
     if (sessionmodeiscampaigngame() && type == "MOD_PISTOL_BULLET" && weapon.weapclass != "smg") {
-        return 0;
+        return false;
     }
     low_health_percent = self.health / self.maxhealth * 100;
     if (low_health_percent > 10) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -3243,7 +3243,7 @@ function damage_over_time(dmg, delay, attacker) {
     if (!isplayer(attacker)) {
         attacker = self;
     }
-    while (1) {
+    while (true) {
         if (isdefined(delay)) {
             wait(delay);
         }
@@ -3278,7 +3278,7 @@ function function_2d87c1f1(str_zone, v_loc) {
 // Size: 0x1ae
 function function_4346d61d(str_zone) {
     self endon(#"powerup_grabbed", #"powerup_timedout", #"death");
-    while (1) {
+    while (true) {
         e_player = wz_ai_utils::get_closest_player(str_zone, self.origin);
         if (isdefined(e_player)) {
             n_dist = distance(self.origin, e_player.origin);
@@ -3303,7 +3303,7 @@ function function_4346d61d(str_zone) {
 function powerup_wobble() {
     self endon(#"powerup_grabbed", #"powerup_timedout", #"death");
     playfxontag(#"zombie/fx_powerup_on_green_zmb", self, "tag_origin");
-    while (1) {
+    while (true) {
         waittime = randomfloatrange(2.5, 5);
         yaw = randomint(360);
         if (yaw > 300) {
@@ -3364,31 +3364,31 @@ function event_handler[bhtn_action_start] function_320145f7(eventstruct) {
     switch (notify_string) {
     case #"death":
         level thread zmbaivox_playvox(self, notify_string, 1, 4);
-        return;
+        break;
     case #"pain":
         level thread zmbaivox_playvox(self, notify_string, 1, 3);
-        return;
+        break;
     case #"behind":
         level thread zmbaivox_playvox(self, notify_string, 1, 3);
-        return;
+        break;
     case #"attack_melee_notetrack":
         level thread zmbaivox_playvox(self, "attack_melee", 1, 2, 1);
-        return;
+        break;
     case #"chase_state_start":
         level thread zmbaivox_playvox(self, "sprint", 1, 2);
-        return;
+        break;
     case #"sprint":
     case #"ambient":
     case #"crawler":
     case #"teardown":
     case #"taunt":
         level thread zmbaivox_playvox(self, notify_string, 0, 1);
-        return;
+        break;
     case #"attack_melee":
-        return;
+        break;
     default:
         level thread zmbaivox_playvox(self, notify_string, 0, 2);
-        return;
+        break;
     }
 }
 
@@ -3473,7 +3473,7 @@ function zmbaivox_ambientdelay() {
 // Checksum 0x9af6d36f, Offset: 0xd910
 // Size: 0x24
 function networksafereset() {
-    while (1) {
+    while (true) {
         level._numzmbaivox = 0;
         waitframe(1);
     }
@@ -3488,10 +3488,10 @@ function sndisnetworksafe() {
         level thread networksafereset();
     }
     if (level._numzmbaivox >= 2) {
-        return 0;
+        return false;
     }
     level._numzmbaivox++;
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -3514,7 +3514,7 @@ function function_6c308e81() {
 function play_ambient_zombie_vocals() {
     self endon(#"death");
     self thread function_b8c2c5cc();
-    while (1) {
+    while (true) {
         type = "ambient";
         float = 3;
         if (isdefined(self.aistate)) {
@@ -3549,7 +3549,7 @@ function play_ambient_zombie_vocals() {
 function function_625a781d() {
     self endon(#"death");
     self thread function_c2be61f2();
-    while (1) {
+    while (true) {
         type = "ambient";
         float = 3;
         if (isdefined(self.current_state)) {
@@ -3593,7 +3593,7 @@ function zmbaivox_playdeath() {
 // Size: 0x78
 function function_b8c2c5cc() {
     self endon(#"death", #"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"reset_pathing");
         if (self.aistate == 3) {
             bhtnactionstartevent(self, "chase_state_start");
@@ -3607,7 +3607,7 @@ function function_b8c2c5cc() {
 // Size: 0x88
 function function_c2be61f2() {
     self endon(#"death", #"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"state_changed");
         waitframe(1);
         if (self.current_state.name == #"chase") {
@@ -3627,7 +3627,7 @@ function function_d1675b11() {
         level._zbv_vox_last_update_time = 0;
         level._audio_zbv_shared_ent_list = getaiarchetypearray(#"zombie");
     }
-    while (1) {
+    while (true) {
         wait(1);
         t = gettime();
         if (t > level._zbv_vox_last_update_time + 1000) {
@@ -3686,7 +3686,7 @@ function function_d1675b11() {
 // Checksum 0x937496d1, Offset: 0xe278
 // Size: 0x8
 function function_833ce8c8() {
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie
@@ -3713,9 +3713,9 @@ function function_bb3c1175(params) {
 // Size: 0x2c
 function function_f41ded83(vehicle) {
     if (vehicle.scriptvehicletype === "hawk") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie/wz_ai_zombie

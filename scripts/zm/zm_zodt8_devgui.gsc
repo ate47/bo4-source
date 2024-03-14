@@ -90,21 +90,21 @@ function function_78c32556(cmd) {
             if (isdefined(level.chests) && isdefined(level.chest_index) && isdefined(level.chests[level.chest_index].zbarrier)) {
                 level.chests[level.chest_index].zbarrier thread namespace_b45e3f05::function_8baed388();
             }
-            return;
+            break;
         case #"hide_chests":
             function_7edbb38();
             if (level.chest_index != -1) {
                 chest = level.chests[level.chest_index];
                 chest zm_magicbox::hide_chest(0);
             }
-            return;
+            break;
         case #"show_chests":
             function_7edbb38();
             if (level.chest_index != -1) {
                 chest = level.chests[level.chest_index];
                 chest zm_magicbox::show_chest();
             }
-            return;
+            break;
         }
     #/
 }
@@ -216,16 +216,16 @@ function function_a368f5ed(var_99416cd7) {
             switch (var_99416cd7) {
             case #"decay":
                 namespace_4a807bff::function_ca37502d(e_player);
-                continue;
+                break;
             case #"plasma":
                 namespace_4a807bff::function_1b182e8c(e_player);
-                continue;
+                break;
             case #"purity":
                 namespace_4a807bff::function_b9b7b8c(e_player);
-                continue;
+                break;
             case #"radiance":
                 namespace_4a807bff::function_b3695700(e_player);
-                continue;
+                break;
             }
         }
     #/
@@ -242,13 +242,13 @@ function give_flare(str_color) {
             switch (str_color) {
             case #"red":
                 namespace_b45e3f05::give_flare("<unknown string>");
-                continue;
+                break;
             case #"green":
                 namespace_b45e3f05::give_flare("<unknown string>");
-                continue;
+                break;
             case #"blue":
                 namespace_b45e3f05::give_flare("<unknown string>");
-                continue;
+                break;
             }
         }
     #/

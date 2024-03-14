@@ -101,7 +101,7 @@ function __main__() {
 // Size: 0x172
 function on_player_connect() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         var_29b8f3d0 = undefined;
         var_29b8f3d0 = self waittill("new_" + "lethal_grenade");
         w_newweapon = var_29b8f3d0.weapon;
@@ -125,19 +125,19 @@ function on_player_connect() {
 // Size: 0xb8
 function check_for_zombie_in_wolf_area() {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (self.archetype != "zombie") {
-        return 0;
+        return false;
     }
     for (i = 0; i < level.var_4952e1.size; i++) {
         if (self istouching(level.var_b5ca4338[i])) {
             if (!level.var_4952e1[i].is_charged && !level.var_4952e1[i].var_aa1a7f2e) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_escape_weap_quest/zm_escape_weap_quest
@@ -335,7 +335,7 @@ function soul_catcher_state_manager() {
 function function_ee929ece() {
     self notify(#"wolf_idling");
     self endon(#"wolf_eating", #"hash_1c2dd0a16f7ac134", #"wolf_idling");
-    while (1) {
+    while (true) {
         var_ba0da6c = array::random(level.var_22f00ccf);
         self.s_scene thread scene::play(var_ba0da6c);
         var_c74251a4 = scene::function_8582657c(self.s_scene.scriptbundlename, var_ba0da6c);
@@ -359,11 +359,11 @@ function wolf_head_removal(wolf_head_model_string) {
 // Checksum 0x2850b6ad, Offset: 0x1b78
 // Size: 0x68
 function soul_catchers_charged() {
-    while (1) {
+    while (true) {
         if (level.n_soul_catchers_charged >= level.var_4952e1.size) {
             level flag::set(#"soul_catchers_charged");
             level notify(#"soul_catchers_charged");
-            return;
+            break;
         }
         wait(1);
     }
@@ -376,7 +376,7 @@ function soul_catchers_charged() {
 function soul_catcher_check() {
     self endon(#"hash_13c5316203561c4f");
     self.is_charged = 0;
-    while (1) {
+    while (true) {
         if (self.var_43bd3b5 >= 6) {
             level.n_soul_catchers_charged++;
             self.is_charged = 1;
@@ -404,7 +404,7 @@ function function_e07f0c65(e_activator) {
     for (i = 0; i < a_closest.size; i++) {
         if (!(isdefined(a_closest[i].dontspeak) && a_closest[i].dontspeak)) {
             a_closest[i] thread zm_audio::create_and_play_dialog(#"wolf_head", #"feed");
-            return;
+            break;
         }
     }
 }
@@ -423,7 +423,7 @@ function function_41b1af8c() {
     for (i = 0; i < a_closest.size; i++) {
         if (!(isdefined(a_closest[i].dontspeak) && a_closest[i].dontspeak)) {
             a_closest[i] thread zm_audio::create_and_play_dialog(#"wolf_head", #"comp", level.n_soul_catchers_charged - 1);
-            return;
+            break;
         }
     }
 }
@@ -439,7 +439,7 @@ function first_wolf_encounter_vo(e_activator) {
         if (!(isdefined(a_closest[i].dontspeak) && a_closest[i].dontspeak)) {
             a_closest[i] thread zm_audio::create_and_play_dialog(#"wolf_head", #"feed_first", undefined, 1);
             level.wolf_encounter_vo_played = 1;
-            return;
+            break;
         }
     }
 }
@@ -526,7 +526,7 @@ function function_5fd2c72e() {
 // Checksum 0x5db2867f, Offset: 0x2418
 // Size: 0xde
 function tomahawk_pickup_trigger() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;

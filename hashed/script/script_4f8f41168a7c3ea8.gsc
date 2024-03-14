@@ -67,16 +67,16 @@ function function_a8e278b6(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         self.var_634618de = util::playfxontag(localclientnum, level._effect[#"magma_fireplace"], self, "tag_origin");
-        return;
+        break;
     case 2:
         self.var_634618de = util::playfxontag(localclientnum, level._effect[#"hash_22aea05cb07dd55e"], self, "tag_origin");
-        return;
+        break;
     case 3:
         self.var_634618de = util::playfxontag(localclientnum, level._effect[#"hash_708f71e744396284"], self, "tag_origin");
-        return;
+        break;
     case 4:
         self.var_634618de = util::playfxontag(localclientnum, level._effect[#"hash_70407be743f59f31"], self, "tag_origin");
-        return;
+        break;
     }
 }
 

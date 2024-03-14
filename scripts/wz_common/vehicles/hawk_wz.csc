@@ -84,7 +84,7 @@ function private hawk_think(localclientnum) {
     array::add(level.var_ef287aa1, self, 0);
     self.var_704e7b07 = [];
     self.targets = [];
-    while (1) {
+    while (true) {
         self function_8487fabe(localclientnum);
         self function_76b4c572(localclientnum);
         self function_9ace0fb6(localclientnum);
@@ -351,13 +351,13 @@ function private function_9ace0fb6(localclientnum) {
 function private function_cfd3bed0(var_8712c5b8) {
     if (!(isdefined(var_8712c5b8.visible) && var_8712c5b8.visible)) {
         if (!isdefined(var_8712c5b8.var_1fe906d8)) {
-            return 0;
+            return false;
         }
         if (gettime() - var_8712c5b8.var_1fe906d8 > 500) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace hawk_wz/hawk_wz
@@ -370,11 +370,11 @@ function private function_35046386(target) {
         if (isdefined(hawk) && isdefined(hawk.owner) && function_f95544c4(hawk.owner.team, self.team)) {
             info = hawk.var_704e7b07[var_4ef4e267];
             if (isdefined(info) && info.state == 1) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace hawk_wz/hawk_wz
@@ -460,7 +460,7 @@ function private function_a552c160(localclientnum) {
     self endon(#"death", #"disconnect");
     self.var_d32addbf = [];
     self.var_fad86c46 = [];
-    while (1) {
+    while (true) {
         if (function_a0e351e0(localclientnum)) {
             targets = self function_bba5f8f7();
             self function_d53feb8c(localclientnum, targets);

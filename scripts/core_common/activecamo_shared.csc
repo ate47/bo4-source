@@ -93,7 +93,7 @@ function function_c887f58e() {
     var_472c15e8 = self isplayerprone();
     self function_d309e55a("tag_foregrip_bipod_attach_driver_animate", var_472c15e8);
     waitframe(1);
-    while (1) {
+    while (true) {
         weapon = self function_d2c2b168();
         if (!(isdefined(isdefined(level.var_ab319180[weapon.rootweapon])) && isdefined(level.var_ab319180[weapon.rootweapon]))) {
             return;
@@ -353,7 +353,7 @@ function function_3e27a7cb(localclientnum, tagname) {
 function function_a946fb86(activecamo, stagenum, var_d1460f46) {
     foreach (key, stage in activecamo.info.stages) {
         if (key > stagenum) {
-            return;
+            break;
         }
         if (isdefined(stage.var_9fbd261d)) {
             if (isdefined(stage.var_d04f3816) && stage.var_d04f3816 || key < stagenum && isdefined(stage.var_413aa223) && stage.var_413aa223 || key == stagenum && isdefined(stage.var_2873d2ba) && stage.var_2873d2ba) {
@@ -588,7 +588,7 @@ function function_374e37a0(localclientnum, weaponmodel, var_3594168e, &var_49daa
     stage = {};
     stage.rob = var_3594168e.rob;
     if (!isdefined(stage.rob)) {
-        return 0;
+        return false;
     }
     stage.diffuse2alpha = isdefined(var_3594168e.diffuse2alpha) ? var_3594168e.diffuse2alpha : 0;
     stage.var_2eeeee1b = isdefined(var_3594168e.var_2eeeee1b) ? var_3594168e.var_2eeeee1b : 0;
@@ -618,7 +618,7 @@ function function_374e37a0(localclientnum, weaponmodel, var_3594168e, &var_49daa
     diffuse3alpha = isdefined(var_3594168e.diffuse3alpha) ? var_3594168e.diffuse3alpha : 0;
     weaponmodel function_78233d29(stage.rob, tagname, "Diffuse2 Alpha", diffuse2alpha);
     weaponmodel function_78233d29(stage.rob, tagname, "Diffuse3 Alpha", diffuse3alpha);
-    return 1;
+    return true;
 }
 
 // Namespace activecamo/activecamo_shared

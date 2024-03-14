@@ -135,7 +135,7 @@ function function_9a3871b7(b_pause, str_perk, str_result, n_slot) {
 // Size: 0x1e8
 function function_7424eebb() {
     self endon(#"specialty_camper" + "_take", #"disconnect");
-    while (1) {
+    while (true) {
         if (!self laststand::player_is_in_laststand() && !self util::is_spectating() && !level flag::get("round_reset")) {
             v_current = self.origin;
             if (!isdefined(self.var_3748ec02)) {

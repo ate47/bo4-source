@@ -101,7 +101,7 @@ function function_cec06121(var_264ee2f5) {
         }
         player zm_trial_util::function_7dbb1712(1);
     }
-    while (1) {
+    while (true) {
         var_e4ee403e = struct::get_array("trials_oracle_boon_weapon_spawns");
         var_e4ee403e = array::filter(var_e4ee403e, 0, &function_c55d2b6e);
         var_e4ee403e = array::randomize(var_e4ee403e);
@@ -122,9 +122,9 @@ function function_cec06121(var_264ee2f5) {
 // Size: 0x34
 function function_c55d2b6e(var_9a1edfd9) {
     if (isdefined(var_9a1edfd9.var_ff08ccc) && var_9a1edfd9.var_ff08ccc) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_5c5619de/namespace_5c5619de
@@ -179,7 +179,7 @@ function function_33e89162(mdl_weapon, var_6d4294b0) {
 function function_c99662e7(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_10c127acbe34c506", #"hash_4597718560da3ea2");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_5c5619de/namespace_5c5619de
@@ -188,7 +188,7 @@ function function_c99662e7(player) {
 // Size: 0xba
 function function_ebd0491e() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         player = s_waitresult.activator;

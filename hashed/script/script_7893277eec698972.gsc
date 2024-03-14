@@ -304,22 +304,22 @@ function private function_887ad605() {
         level.var_5c0c2f5a = 10;
         level.var_1626d02a = 20;
         level.var_e5afa71 = 30;
-        return;
+        break;
     case 2:
         level.var_5c0c2f5a = 11;
         level.var_1626d02a = 22;
         level.var_e5afa71 = 33;
-        return;
+        break;
     case 3:
         level.var_5c0c2f5a = 13;
         level.var_1626d02a = 26;
         level.var_e5afa71 = 40;
-        return;
+        break;
     case 4:
         level.var_5c0c2f5a = 15;
         level.var_1626d02a = 31;
         level.var_e5afa71 = 46;
-        return;
+        break;
     }
 }
 
@@ -365,7 +365,7 @@ function function_9eba13c0(var_39acfdda) {
         b_result = player zm_audio::create_and_play_dialog(#"treasure_chest", var_39acfdda);
         if (isdefined(b_result) && b_result) {
             level.var_f9f50915.b_vo_played = 1;
-            return;
+            break;
         }
     }
 }
@@ -682,7 +682,7 @@ function private function_9b8016f1(var_9102824b) {
 // Size: 0x130
 function function_ae6c3cf2() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
@@ -767,18 +767,18 @@ function private function_f4a7fd49(params) {
                 switch (self.catalyst_type) {
                 case 1:
                     level function_4facba35(#"concentrated_decay", self.origin, self getcentroid());
-                    return;
+                    break;
                 case 3:
                     level function_4facba35(#"concentrated_radiance", self.origin, self getcentroid());
-                    return;
+                    break;
                 case 2:
                     level function_4facba35(#"concentrated_plasma", self.origin, self getcentroid());
-                    return;
+                    break;
                 case 4:
                     level function_4facba35(#"concentrated_purity", self.origin, self getcentroid());
-                    return;
+                    break;
                 default:
-                    return;
+                    break;
                 }
             }
         }
@@ -880,7 +880,7 @@ function function_7edbaf3a(v_origin) {
     self waittill(#"movedone");
     self clientfield::set("" + #"hash_1c8f8a5e03b36070", 1);
     wait(randomfloat(2));
-    for (n_wait = 3; 1; n_wait = max(0.25, n_wait - 0.25)) {
+    for (n_wait = 3; true; n_wait = max(0.25, n_wait - 0.25)) {
         wait(n_wait);
         n_move_x = randomfloatrange(0.1, 0.5);
         var_a6fa9fe7 = randomfloatrange(0.1, 0.5);
@@ -975,10 +975,10 @@ function private has_tricannon() {
         case #"ww_tricannon_water_t8":
         case #"ww_tricannon_t8":
         case #"ww_tricannon_air_t8":
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_4a807bff/namespace_19c3f844

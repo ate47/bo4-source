@@ -93,7 +93,7 @@ function on_connect() {
 // Size: 0x4d0
 function private function_63e57124() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_change");
         wpn_cur = waitresult.weapon;
@@ -161,7 +161,7 @@ function private function_304a3c9b(var_c34665fc) {
 // Size: 0x352
 function private function_4521ac7e(w_curr, n_lvl) {
     self endoncallback(&function_304a3c9b, #"hero_weapon_change", #"player_downed", #"disconnect", #"hero_weapon_power_off");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee_power");
         if (s_result.weapon !== w_curr) {
@@ -202,7 +202,7 @@ function private function_4521ac7e(w_curr, n_lvl) {
 // Size: 0xe8
 function private function_4493c71b(weapon, n_lvl = 1) {
     self endon(#"hero_weapon_change", #"bled_out", #"disconnect");
-    while (1) {
+    while (true) {
         if (n_lvl < 3) {
             self waittill(#"weapon_melee_power_left", #"weapon_melee");
         } else {
@@ -228,10 +228,10 @@ function private function_eae0296b(str_level, b_postfx = 0) {
     switch (str_level) {
     case #"hero_scepter_lv3":
         self.var_5762241e = 35;
-        return;
+        break;
     default:
         self.var_5762241e = 30;
-        return;
+        break;
     }
 }
 
@@ -250,7 +250,7 @@ function private function_89fc5431() {
 // Size: 0xa8
 function private function_e874c3e1(weapon) {
     self endon(#"hero_weapon_change", #"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (!zm_trial_restrict_loadout::function_5fbf572(weapon)) {
@@ -417,7 +417,7 @@ function function_be8ae52f(w_curr) {
         break;
     }
     self thread function_254a7556();
-    while (1) {
+    while (true) {
         var_24bae834 = 0;
         v_position = self getweaponmuzzlepoint();
         v_forward = self getweaponforwarddir();
@@ -570,7 +570,7 @@ function private get_closest_tag(v_pos) {
 // Size: 0x68
 function function_254a7556() {
     self endon(#"disconnect", #"laststand", #"stop_damage");
-    while (1) {
+    while (true) {
         self thread scepter_rumble(5);
         wait(0.5);
     }
@@ -647,39 +647,39 @@ function function_37946a1d(s_params) {
 // Size: 0x1b8
 function function_d5c9a81(e_revivee) {
     if (!isdefined(e_revivee.revivetrigger)) {
-        return 0;
+        return false;
     }
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(e_revivee.var_4fc8bf2a) && e_revivee.var_4fc8bf2a) {
-        return 1;
+        return true;
     }
     if (self laststand::player_is_in_laststand() && !isdefined(self.var_6d772cb)) {
-        return 0;
+        return false;
     }
     if (self.team != e_revivee.team) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_zombie) && self.is_zombie) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_7b2f6755) && self.var_7b2f6755) {
-        return 0;
+        return false;
     }
     if (isdefined(level.can_revive_use_depthinwater_test) && level.can_revive_use_depthinwater_test && e_revivee depthinwater() > 10) {
-        return 1;
+        return true;
     }
     if (isdefined(level.can_revive) && ![[ level.can_revive ]](e_revivee)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_1461fd14) && ![[ level.var_1461fd14 ]](e_revivee)) {
-        return 0;
+        return false;
     }
     if (e_revivee zm_player::in_kill_brush() || !e_revivee zm_player::in_enabled_playable_area()) {
-        return 0;
+        return false;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -831,7 +831,7 @@ function private function_717a1af2() {
 // Size: 0x88
 function weapon_drop_watcher() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_switch_started");
         if (zm_loadout::is_hero_weapon(s_waitresult.w_current)) {
@@ -846,7 +846,7 @@ function weapon_drop_watcher() {
 // Size: 0x86
 function weapon_change_watcher() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"hero_weapon_change");
         if (isdefined(s_waitresult.w_previous) && zm_loadout::is_hero_weapon(s_waitresult.w_current)) {
@@ -962,7 +962,7 @@ function function_d14a3750(var_c34665fc) {
 function function_d3dc001e(w_beacon) {
     self endoncallback(&function_e7e5d6f5, #"beacon_retrieved", #"death");
     self.var_80612bea = 1;
-    while (1) {
+    while (true) {
         slot = self gadgetgetslot(w_beacon);
         n_power = self gadgetpowerget(slot);
         if (n_power <= 0) {
@@ -1021,7 +1021,7 @@ function beacon_smash(player) {
             case #"basic":
             case #"enhanced":
                 player thread function_b67b2aff(zombie, zombie.health, self.origin, level.hero_weapon[#"scepter"][2], launch);
-                continue;
+                break;
             case #"heavy":
             case #"miniboss":
                 if (isalive(zombie) & !(isdefined(zombie.var_25cb9682) && zombie.var_25cb9682)) {
@@ -1030,7 +1030,7 @@ function beacon_smash(player) {
                     }
                     zombie thread function_97429d68(3);
                 }
-                continue;
+                break;
             }
         }
     }
@@ -1101,7 +1101,7 @@ function function_f168b337() {
 // Size: 0x180
 function beacon_loop(w_beacon, var_4eaa1f4c) {
     self endon(#"beacon_retrieved", #"death", #"bled_out", #"disconnect");
-    while (1) {
+    while (true) {
         slot = self gadgetgetslot(w_beacon);
         if (self gadgetpowerget(slot) > 0) {
             array::thread_all(level.players, &function_888d5bd9, self);
@@ -1109,7 +1109,7 @@ function beacon_loop(w_beacon, var_4eaa1f4c) {
                 n_frame = self function_15c2525e(var_4eaa1f4c, 0.25);
                 var_adaf2ccb = math::clamp(0.25 - n_frame * 0.05, 0.05, 0.25);
             }
-        } else if (1) {
+        } else if (true) {
             return;
         }
         if (!isdefined(var_adaf2ccb)) {
@@ -1198,11 +1198,11 @@ function check_for_range_and_los(v_attack_source, n_allowed_z_diff, n_radius_sq)
         n_z_diff = self.origin[2] - v_attack_source[2];
         if (!isdefined(n_allowed_z_diff) || abs(n_z_diff) < n_allowed_z_diff) {
             if (distancesquared(self.origin, v_attack_source) < n_radius_sq) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -1247,7 +1247,7 @@ function function_888d5bd9(e_player) {
 // Size: 0x36
 function function_3a00c0a6(perk) {
     self thread zm_perks::function_b2dfd295(perk, &function_cd010531);
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -1347,22 +1347,22 @@ function scepter_rumble(var_b2e05bae) {
         switch (var_b2e05bae) {
         case 1:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            return;
+            break;
         case 2:
             self clientfield::increment_to_player("" + #"scepter_rumble", 2);
-            return;
+            break;
         case 3:
             self playrumbleonentity("zm_weap_scepter_melee_hit_rumble");
-            return;
+            break;
         case 4:
             playrumbleonposition("zm_weap_scepter_plant_rumble", self.origin);
-            return;
+            break;
         case 5:
             self clientfield::increment_to_player("" + #"scepter_rumble", 5);
-            return;
+            break;
         case 6:
             self clientfield::increment_to_player("" + #"scepter_rumble", 6);
-            return;
+            break;
         }
     }
 }

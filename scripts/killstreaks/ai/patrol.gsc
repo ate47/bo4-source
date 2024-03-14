@@ -87,9 +87,9 @@ function function_a78474f2() {
 // Size: 0x2c
 function function_63b383f3() {
     if (self.ai.patrol.state == 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ai_patrol/patrol
@@ -98,9 +98,9 @@ function function_63b383f3() {
 // Size: 0x4e
 function function_6f09c87() {
     if (self.ai.patrol.state == 1 || self.ai.patrol.state == 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ai_patrol/patrol
@@ -221,9 +221,9 @@ function private is_debugging(dvar) {
 function function_38d931e7() {
     goalinfo = self function_4794d6a3();
     if (!isdefined(goalinfo.var_9e404264) || goalinfo.var_9e404264) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ai_patrol/patrol
@@ -232,17 +232,17 @@ function function_38d931e7() {
 // Size: 0xbc
 function function_6b33bfb8(radius) {
     if (self function_38d931e7()) {
-        return 1;
+        return true;
     }
     goalinfo = self function_4794d6a3();
     if (isdefined(goalinfo.overridegoalpos)) {
         var_fca0ef39 = radius;
         var_1ba37935 = var_fca0ef39 * var_fca0ef39;
         if (distancesquared(goalinfo.overridegoalpos, self.origin) <= var_1ba37935) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ai_patrol/patrol

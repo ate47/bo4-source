@@ -175,9 +175,9 @@ function private function_fcf197fa(targetname, b_show) {
                                 } else {
                                     var_1d6a70e8 ghost();
                                 }
-                                continue;
+                                break;
                             default:
-                                continue;
+                                break;
                             }
                         }
                     }

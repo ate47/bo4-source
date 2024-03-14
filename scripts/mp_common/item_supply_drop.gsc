@@ -43,7 +43,7 @@ function private __init__() {
 // Size: 0x4e6
 function private function_eaba72c9() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"wz_supply_drop", 0) > 0) {
                 switch (getdvarint(#"wz_supply_drop", 0)) {
                 case 1:
@@ -342,7 +342,7 @@ function private function_e21ceb1b() {
     extendbounds = vectorscale((1, 1, 1), 10);
     previousorigin = self.origin;
     var_8bc27a4a = 0;
-    while (1) {
+    while (true) {
         var_3769eb50 = getentitiesinradius(self.origin, 128, 1);
         var_15d21979 = abs((previousorigin - self.origin)[2]);
         if (var_15d21979 > 4) {
@@ -457,7 +457,7 @@ function private function_546afbb6() {
     self endon(#"death");
     var_dc66f988 = self getvelocity();
     var_2497a956 = 0;
-    while (1) {
+    while (true) {
         velocity = self getvelocity();
         var_2497a956 = min(var_2497a956, velocity[2]);
         if (abs(velocity[2] - var_dc66f988[2]) > 100) {
@@ -697,7 +697,7 @@ function private function_c2edbefb(path, droppoint, var_86928932 = 1, var_2118f7
             var_f155e743 = distancesquared(path[pathindex], droppoint) < 128 * 128;
         }
         self function_a57c34b7(path[pathindex], var_f155e743 && var_86928932, 0);
-        while (1) {
+        while (true) {
             if (var_f155e743) {
                 if (distancesquared(droppoint, self.origin) < 128 * 128) {
                     if (var_86928932) {
@@ -707,10 +707,10 @@ function private function_c2edbefb(path, droppoint, var_86928932 = 1, var_2118f7
                     if (var_86928932) {
                         wait(1);
                     }
-                    continue;
+                    break;
                 }
             } else if (distancesquared(path[pathindex], self.origin) < 1500 * 1500) {
-                continue;
+                break;
             }
             waitframe(1);
         }
@@ -772,16 +772,16 @@ function private function_261b0e67(spawnpoint, endpoint, droppoint, dropflare = 
             var_f155e743 = distancesquared(var_47736ddd[pathindex], droppoint) < 128 * 128;
         }
         var_7366c0ff function_a57c34b7(var_47736ddd[pathindex], 0, 0);
-        while (1) {
+        while (true) {
             if (var_f155e743) {
                 if (distancesquared(droppoint, var_7366c0ff.origin) < 128 * 128) {
                     if (dropflare) {
                         fx = playfx("wz/fx8_death_circle_cue", var_7366c0ff.origin, (1, 0, 0), (0, 0, 1));
                     }
-                    continue;
+                    break;
                 }
             } else if (distancesquared(var_47736ddd[pathindex], var_7366c0ff.origin) < 1500 * 1500) {
-                continue;
+                break;
             }
             waitframe(1);
         }

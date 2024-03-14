@@ -90,7 +90,7 @@ function start_warzone(localclientnum) {
 // Size: 0x340
 function function_7be1ea25() {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"teammate_waypoint_placed");
         localclientnum = waitresult.localclientnum;
@@ -137,7 +137,7 @@ function function_97d0a8af(local_client_num, obj_id, x, y, clientnum) {
 // Size: 0xfe
 function function_783be487() {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"teammate_waypoint_removed");
         localclientnum = waitresult.localclientnum;
@@ -268,7 +268,7 @@ function function_f8c70ad7(localclientnum) {
     setsoundvolumerate(var_408847b6.var_41266084, 1);
     setsoundvolumerate(var_408847b6.var_2f3960f5, 1);
     var_d15c9ee7 = 0;
-    while (1) {
+    while (true) {
         var_ebe45f6a = self.origin[2];
         if (abs(var_ebe45f6a - var_d15c9ee7) > 50) {
             var_d15c9ee7 = var_ebe45f6a;
@@ -381,7 +381,7 @@ function function_a1b40aa4(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x9c832cf8, Offset: 0x1f80
 // Size: 0x304
 function private function_3dadedf8(localclientnum) {
-    while (1) {
+    while (true) {
         origin = getlocalclientpos(localclientnum);
         players = getplayers(localclientnum);
         players = arraysortclosest(players, origin, undefined, 0, 6000);
@@ -425,7 +425,7 @@ function private function_3dadedf8(localclientnum) {
 function private function_7e3a43c3(localclientnum) {
     self notify("2dfbcba8182d1332");
     self endon("2dfbcba8182d1332");
-    while (1) {
+    while (true) {
         currentplayer = function_5c10bd79(localclientnum);
         if (!isdefined(currentplayer)) {
             waitframe(1);

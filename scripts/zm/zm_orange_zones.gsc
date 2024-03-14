@@ -266,10 +266,10 @@ function function_c3bf42e9() {
     foreach (e_player in getplayers()) {
         str_player_zone = e_player zm_zonemgr::get_player_zone();
         if (isdefined(str_player_zone) && function_94b7a4bd(str_player_zone)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_zones/zm_orange_zones
@@ -374,7 +374,7 @@ function function_29ec1ad7() {
 // Size: 0xb8
 function function_8e0b371() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (isalive(self)) {
             str_location = function_ab7f70b9(self);
             self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"");
@@ -564,7 +564,7 @@ function function_9d1d7efd() {
     var_de23a374 = array("lighthouse_level_1", "lighthouse_level_2", "lighthouse_level_3");
     level waittill(#"start_zombie_round_logic");
     level flag::wait_till(#"pablo_intro");
-    while (1) {
+    while (true) {
         a_players = [];
         foreach (zone in var_de23a374) {
             a_players = arraycombine(a_players, zm_zonemgr::get_players_in_zone(zone, 1), 0, 0);
@@ -574,7 +574,7 @@ function function_9d1d7efd() {
         }
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         a_players = [];
         foreach (zone in var_de23a374) {
             a_players = arraycombine(a_players, zm_zonemgr::get_players_in_zone(zone, 1), 0, 0);
@@ -583,7 +583,7 @@ function function_9d1d7efd() {
             if (a_players[0] zm_audio::can_speak() && !level flag::get(#"hell_on_earth")) {
                 player = array::random(a_players);
                 player thread zm_orange_util::function_51b752a9(#"hash_14a884c0dda265b2", -1, 0, 1);
-                return;
+                break;
             }
         }
         waitframe(1);
@@ -598,7 +598,7 @@ function function_58db1b78() {
     level endon(#"end_game");
     level waittill(#"start_zombie_round_logic");
     var_4d44c98e = getentarray("lighthouse_level_4_ext", "targetname");
-    while (1) {
+    while (true) {
         foreach (vol_ext in var_4d44c98e) {
             foreach (player in getplayers()) {
                 if (player istouching(vol_ext)) {
@@ -621,7 +621,7 @@ function function_cbb8e588() {
     level endon(#"end_game");
     level waittill(#"start_zombie_round_logic");
     blood = getent("mq_blood", "targetname");
-    while (1) {
+    while (true) {
         foreach (player in getplayers()) {
             if (player zm_zonemgr::get_player_zone() === "artifact_storage" && player cansee(blood)) {
                 wait(1);

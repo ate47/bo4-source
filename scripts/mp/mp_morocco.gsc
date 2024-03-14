@@ -39,7 +39,7 @@ function function_61f478ff() {
                 continue;
             }
             spawn.origin = (3140.85, 913.91, 128.125);
-            return;
+            break;
         }
     }
 }
@@ -78,7 +78,7 @@ function spawnkilltrigger() {
 function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);

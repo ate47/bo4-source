@@ -40,16 +40,16 @@ function validation() {
     players = level.players;
     foreach (player in players) {
         if (isdefined(player.var_bdeb0f02) && player.var_bdeb0f02) {
-            return 0;
+            return false;
         }
         if (isdefined(level.var_7d8a0369) && self [[ level.var_7d8a0369 ]](player, 1, 1)) {
-            return 1;
+            return true;
         }
         if (self zm_laststand::can_revive(player, 1, 1)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_bgb_phoenix_up/zm_bgb_phoenix_up
@@ -80,6 +80,6 @@ function activation() {
 // Size: 0x66
 function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undefined) {
     self thread zm_perks::function_b2dfd295(perk, &bgb::function_bd839f2c);
-    return 0;
+    return false;
 }
 

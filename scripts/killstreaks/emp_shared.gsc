@@ -298,23 +298,23 @@ function function_d12cde1c() {
 // Size: 0x16a
 function enemyempactive() {
     if (!function_d12cde1c()) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         foreach (team, _ in level.teams) {
             if (util::function_fbce7263(team, self.team) && teamhasactiveemp(team)) {
-                return 1;
+                return true;
             }
         }
     } else {
         enemies = self getenemies();
         foreach (player in enemies) {
             if (player hasactiveemp()) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace emp/emp_shared
@@ -368,7 +368,7 @@ function emp_jamenemies(empent, hacked) {
 // Size: 0xbc
 function emptracker() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         level waittill(#"emp_updated");
         foreach (player in level.players) {
             player updateemp();

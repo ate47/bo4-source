@@ -334,7 +334,7 @@ function call_box_think(elevator) {
     } else {
         self sethintstring(#"hash_2f56b9d8ac49ff92");
     }
-    while (1) {
+    while (true) {
         who = undefined;
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
@@ -375,12 +375,12 @@ function is_elevator_clear(elevator) {
         for (i = 0; i < elevator_door_safety.size; i++) {
             for (j = 0; j < players.size; j++) {
                 if (players[j] istouching(elevator_door_safety[i])) {
-                    return 0;
+                    return false;
                 }
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
@@ -437,7 +437,7 @@ function elevator_buy_think(elevator) {
     self setcursorhint("HINT_NOICON");
     self usetriggerrequirelookat();
     self sethintstring(level.var_31560d97, elevator.cost);
-    while (1) {
+    while (true) {
         who = undefined;
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
@@ -477,9 +477,9 @@ function elevator_buy_think(elevator) {
 // Size: 0x26
 function can_buy_elevator() {
     if (self zm_utility::in_revive_trigger()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_elevators/zm_office_elevators
@@ -952,7 +952,7 @@ function unlock_players() {
 // Checksum 0x68625a87, Offset: 0x5360
 // Size: 0x140
 function elevator1_3d_audio() {
-    while (1) {
+    while (true) {
         self waittill(#"start_3d_audio");
         ent = spawn("script_origin", self.origin + vectorscale((0, 0, 1), 30));
         ent linkto(self);
@@ -970,7 +970,7 @@ function elevator1_3d_audio() {
 // Checksum 0x26bd163, Offset: 0x54a8
 // Size: 0x118
 function elevator2_3d_audio() {
-    while (1) {
+    while (true) {
         self waittill(#"start_3d_audio");
         ent = spawn("script_origin", self.origin + vectorscale((0, 0, 1), 30));
         ent linkto(self);
@@ -1012,7 +1012,7 @@ function function_dec13a5b() {
     level endon(#"end_game");
     self notify("19e5073d3e85ec91");
     self endon("19e5073d3e85ec91");
-    while (1) {
+    while (true) {
         level waittill(#"host_migration_begin");
         a_players = getplayers();
         foreach (player in a_players) {

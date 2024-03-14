@@ -70,6 +70,6 @@ function is_ray_gun(w_weapon) {
 // Checksum 0x94d382fc, Offset: 0x438
 // Size: 0xe
 function function_215146f5(damage_percent) {
-    return 0;
+    return false;
 }
 

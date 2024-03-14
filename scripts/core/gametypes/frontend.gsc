@@ -92,7 +92,7 @@ function function_83f052f2() {
 function function_5f1dd5aa() {
     /#
         self endon(#"disconnect");
-        while (1) {
+        while (true) {
             ct_cmd = getdvarstring(#"ct_cmd", "<unknown string>");
             if (ct_cmd == "<unknown string>") {
                 wait(0.25);
@@ -114,7 +114,7 @@ function function_5f1dd5aa() {
 function dailychallengedevguithink() {
     /#
         self endon(#"disconnect");
-        while (1) {
+        while (true) {
             daily_challenge_cmd = getdvarint(#"daily_challenge_cmd", 0);
             if (daily_challenge_cmd == 0 || !sessionmodeiszombiesgame()) {
                 wait(1);
@@ -253,7 +253,7 @@ function function_2cdf0184() {
             return;
         }
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             callings_cmd = getdvarstring(#"callings_cmd", "<unknown string>");
             if (callings_cmd == "<unknown string>") {
                 wait(0.25);
@@ -337,7 +337,7 @@ function function_41cd078d() {
 function function_e4ea0153() {
     /#
         setdvar(#"hash_3319d0fd07c9ead8", "<unknown string>");
-        while (1) {
+        while (true) {
             var_8c931e31 = getdvarstring(#"hash_3319d0fd07c9ead8", "<unknown string>");
             if (var_8c931e31 == "<unknown string>") {
                 waitframe(1);

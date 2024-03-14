@@ -356,7 +356,7 @@ function private function_60bb02f3(type) {
     /#
         assert(isdefined(var_46f1b5eb));
     #/
-    while (1) {
+    while (true) {
         if (!var_46f1b5eb.var_9a08bb02.size) {
             waitframe(1);
             continue;
@@ -374,7 +374,7 @@ function private function_60bb02f3(type) {
 function private function_e39c0be4(var_46f1b5eb) {
     /#
         var_46f1b5eb endon(#"hash_343e166e4aa4288e");
-        while (1) {
+        while (true) {
             if (getdvarint(#"zm_debug_aoe", 0)) {
                 if (var_46f1b5eb.var_9a08bb02.size) {
                     var_87bbe4fc = function_87bbe4fc(var_46f1b5eb.type);

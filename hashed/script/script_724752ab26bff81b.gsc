@@ -91,7 +91,7 @@ function function_dd535733() {
 // Checksum 0x30a110ac, Offset: 0xb20
 // Size: 0xf4
 function function_6a2c67c2() {
-    while (1) {
+    while (true) {
         self scene::play("open");
         for (i = 0; i < 4; i++) {
             wait(1);
@@ -187,20 +187,20 @@ function function_46006d68() {
         self zm_unitrigger::create("", 96);
         self thread function_582a4879();
         self.var_53d39cb3 = 1;
-        return;
+        break;
     case 1:
         self.var_21f452ad function_8ebc8dcf(100);
         self thread function_41464ab6();
         self.var_21f452ad playloopsound(#"hash_66d823f29bf8f0ce");
         self.var_53d39cb3 = 2;
         namespace_617a54f4::function_3f808d3d(self.var_b9989e12);
-        return;
+        break;
     case 2:
         self.var_21f452ad function_8ebc8dcf(level.var_276bd207[level.var_f36ca012]);
         self.var_21f452ad playloopsound(#"hash_6edda7357adf8cd9");
         self.var_53d39cb3 = 3;
         self thread function_6e0328a9();
-        return;
+        break;
     }
 }
 
@@ -262,7 +262,7 @@ function is_soul_capture(var_88206a50, ent) {
         var_e93788f1 = var_88206a50.var_c5e93537;
         return (b_killed_by_player && ent istouching(var_e93788f1));
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_a01a2431/namespace_a01a2431
@@ -370,7 +370,7 @@ function function_256cc56e() {
 // Size: 0x4b8
 function function_c3076788(e_player) {
     if (level.var_7629d4e2 === 1) {
-        return 0;
+        return false;
     }
     e_player.var_bec34462 = e_player function_117157d7();
     if (isdefined(e_player.var_bec34462.n_slot)) {
@@ -425,7 +425,7 @@ function function_c3076788(e_player) {
         var_45d63569 = w_take.displayname;
         break;
     case 9:
-        return 0;
+        return false;
     }
     if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"hash_603fdd2e4ae5b2b0") {
         self sethintstring("");
@@ -436,7 +436,7 @@ function function_c3076788(e_player) {
     } else {
         self sethintstring(zm_utility::function_d6046228(str_hint, var_306b9dd6));
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a01a2431/namespace_a01a2431
@@ -445,7 +445,7 @@ function function_c3076788(e_player) {
 // Size: 0xc8
 function function_7d123028() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
@@ -463,37 +463,37 @@ function function_75e61716(e_player) {
     switch (e_player.var_bec34462.n_id) {
     case 0:
         e_player function_3f52f82();
-        return;
+        break;
     case 1:
         e_player function_a9051a62();
-        return;
+        break;
     case 2:
         e_player function_508273b4();
-        return;
+        break;
     case 3:
         e_player function_bdc61146();
-        return;
+        break;
     case 4:
         e_player function_bdc61146();
         e_player function_508273b4();
-        return;
+        break;
     case 5:
         e_player function_a9051a62();
         e_player function_508273b4();
-        return;
+        break;
     case 6:
         e_player function_bdc61146();
         e_player function_3f52f82();
-        return;
+        break;
     case 7:
         e_player take_ray_gun();
         e_player function_508273b4();
-        return;
+        break;
     case 8:
         e_player take_ray_gun();
         e_player function_a9051a62();
         e_player function_508273b4();
-        return;
+        break;
     }
 }
 
@@ -762,10 +762,10 @@ function function_117157d7() {
 function function_8ff10cdc() {
     foreach (s_slot in level.var_cb94d41d.a_s_slots) {
         if (s_slot.n_state == 1) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_a01a2431/namespace_a01a2431
@@ -802,7 +802,7 @@ function private on_disconnect() {
 // Size: 0xa0
 function private pap_timeout_watcher() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = level waittill(#"pap_timeout");
         w_upg = s_notify.var_5e879929.unitrigger_stub.upgrade_weapon;

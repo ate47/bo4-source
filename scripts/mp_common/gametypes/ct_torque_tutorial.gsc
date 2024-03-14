@@ -814,7 +814,7 @@ function function_dbc41f2b() {
     e_player = ct_utils::get_player();
     level.var_7afae51f endoncallback(&function_eeee0be0, #"death");
     e_player endoncallback(&function_eeee0be0, #"death");
-    while (1) {
+    while (true) {
         e_player waittill(#"weapon_fired");
         wait(1);
         level notify(#"rpg_miss");
@@ -886,7 +886,7 @@ function function_159532aa() {
     self endoncallback(&function_9c64562d, #"hash_505598c7196ba834");
     s_escape = struct::get("s_torque_tut_5_razorwire_owner_hide", "targetname");
     self setorigin(s_escape.origin);
-    while (1) {
+    while (true) {
         self setgoal(s_escape.origin, 1, 1);
         wait(0.5);
     }
@@ -1271,7 +1271,7 @@ function function_4740cfb1(s_loc) {
     self.bot.var_e8c941d6 = 250;
     self thread util::magic_bullet_shield();
     self ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32, 1, 0, 1);
-    while (1) {
+    while (true) {
         if (randomint(100) > 50) {
             self bot_stance::crouch();
         } else {
@@ -1339,7 +1339,7 @@ function fin1_escalate() {
 function function_1633d58c() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isdefined(s_notify.attacker) && s_notify.attacker.team == #"axis") {
@@ -1521,7 +1521,7 @@ function function_d8b20bcd(s_loc) {
             self ct_utils::function_5b59f3b7(self.origin, self.angles, 32, 0, 0, 1);
         }
         self flag::wait_till_clear("fixate_on_player");
-    } while (1);
+    } while (true);
 }
 
 // Namespace ct_torque_tutorial/ct_torque_tutorial
@@ -1532,7 +1532,7 @@ function function_a1692d5d() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
     e_player = ct_utils::get_player();
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify.attacker === e_player) {
@@ -1552,7 +1552,7 @@ function function_a1692d5d() {
 function function_e32e98c9(s_loc) {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         a_s_loc = struct::get_array(s_loc.target, "targetname");
         if (a_s_loc.size > 1) {
             s_loc = array::random(a_s_loc);
@@ -1908,7 +1908,7 @@ function function_e96cc63f(n_count = 3, spawnpts, var_810b40e6 = 1, var_4837ee77
         a_s_targets = array::randomize(a_s_targets);
     }
     level.var_a76a5221[str_targetname] = a_s_targets;
-    while (1) {
+    while (true) {
         a_enemies = function_3dd59a93(str_targetname);
         var_d24d310 = 0;
         wait(var_4837ee77);
@@ -2128,7 +2128,7 @@ function function_a20738a(var_fd986e47 = 0) {
 function function_d5935c84() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (razorwire in level.var_87226c31.var_925bbb2) {
             if (!isdefined(razorwire)) {
                 continue;
@@ -2568,7 +2568,7 @@ function on_smartcover_placed(newcover) {
 // Size: 0xb8
 function function_c785404a() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         self dodamage(s_notify.amount, s_notify.position, s_notify.attacker, s_notify.inflictor, s_notify.part_name, s_notify.mod, s_notify.flags, s_notify.weapon);
@@ -2626,7 +2626,7 @@ function function_907568bb(str_volume = "trig_torque_tut_finale_area") {
     e_volume = getent(str_volume, "targetname");
     n_total = 0;
     n_mode = -1;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         var_443af604 = 0;
         a_bots = e_player ct_bots::function_dde6edbd();

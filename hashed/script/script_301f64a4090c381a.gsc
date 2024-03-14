@@ -62,27 +62,27 @@ function function_9af806be(var_c5b25bc5) {
     case 1:
         self player::function_2a67df65(#"fl1", -50);
         self zm_utility::set_max_health();
-        return;
+        break;
     case 2:
         self perks::perk_setperk(#"hash_53010725c65a98a5");
-        return;
+        break;
     case 3:
         self player::function_2a67df65(#"db1", 50);
         self zm_utility::set_max_health();
-        return;
+        break;
     case 4:
         self perks::perk_setperk(#"hash_130074ec6de7a431");
-        return;
+        break;
     case 5:
         self perks::perk_setperk(#"hash_1bc7d0ea42d1d0a8");
-        return;
+        break;
     case 6:
         self zm_laststand::function_3a00302e(1);
         if (!isdefined(self.n_regen_delay)) {
             self.n_regen_delay = zombie_utility::function_d2dfacfd("player_health_regen_delay");
         }
         self.n_regen_delay = self.n_regen_delay + 1;
-        return;
+        break;
     }
 }
 
@@ -99,23 +99,23 @@ function function_2a94cd59() {
         switch (var_c5b25bc5) {
         case 1:
             self player::function_b933de24(#"fl1");
-            return;
+            break;
         case 2:
             self perks::perk_unsetperk(#"hash_53010725c65a98a5");
-            return;
+            break;
         case 3:
             self player::function_b933de24(#"db1");
-            return;
+            break;
         case 4:
             self perks::perk_unsetperk(#"hash_130074ec6de7a431");
-            return;
+            break;
         case 5:
             self perks::perk_unsetperk(#"hash_1bc7d0ea42d1d0a8");
-            return;
+            break;
         case 6:
             self zm_laststand::function_409dc98e(1, 0);
             self.n_regen_delay = self.n_regen_delay - 1;
-            return;
+            break;
         }
     #/
 }
@@ -207,12 +207,12 @@ function function_cbf286b0() {
 // Size: 0x46
 function function_3da195ec(weapon) {
     if (!self function_6a7a1533(5)) {
-        return 0;
+        return false;
     }
     if (aat::is_exempt_weapon(weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_e38c57c1/namespace_e38c57c1
@@ -247,7 +247,7 @@ function devgui() {
         level.var_8e9d88b6[#"bf1"] = 4;
         level.var_8e9d88b6[#"helmets1"] = 5;
         level.var_8e9d88b6[#"season1"] = 6;
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"hash_443a451d4b2f9de2", "<unknown string>");
             switch (str_command) {

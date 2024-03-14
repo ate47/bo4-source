@@ -51,7 +51,7 @@ function on_weapon_change(s_params) {
 function function_54922a21() {
     self endoncallback(&function_a059fe7f, #"death", #"hash_414b2baf34e01af8");
     w_current = self getcurrentweapon();
-    while (1) {
+    while (true) {
         b_charged = 0;
         while (self attackbuttonpressed() && !self meleebuttonpressed() && !self laststand::player_is_in_laststand()) {
             if (!b_charged && isdefined(self.chargeshotlevel) && self.chargeshotlevel > 1) {

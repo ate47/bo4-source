@@ -41,7 +41,7 @@ function on_localclient_connect(localclientnum) {
 // Size: 0x5bc
 function function_b6992be(localclientnum) {
     var_d5823792 = 0;
-    while (1) {
+    while (true) {
         local_player = function_5c10bd79(localclientnum);
         if (isdefined(local_player)) {
             var_965f0bef = local_player clientfield::get_to_player("player_hit_freezing_snowball");

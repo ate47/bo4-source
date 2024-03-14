@@ -69,11 +69,11 @@ function function_9e3ff948() {
             util::wait_network_frame();
         }
     }
-    while (1) {
+    while (true) {
         level waittill(#"hash_71162ec98b670d92");
         var_1a2e422e++;
         if (var_1a2e422e >= 4) {
-            return;
+            break;
         }
     }
 }
@@ -89,7 +89,7 @@ function function_c0862b9e() {
     if (isdefined(level.var_35d6e654)) {
         self thread [[ level.var_35d6e654 ]]();
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.var_6522085c waittill(#"damage");
         if (!isdefined(waitresult.attacker) || !isplayer(waitresult.attacker)) {

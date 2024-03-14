@@ -97,7 +97,7 @@ function private function_2a5b280f(challenge) {
     self.var_a53b9221 = 0;
     var_fa5d7ea0 = 0;
     self zm_trial_util::function_63060af4(0);
-    while (1) {
+    while (true) {
         self function_c9934172();
         if (self.var_a53b9221 >= challenge.var_851a4ca6) {
             if (!var_fa5d7ea0) {

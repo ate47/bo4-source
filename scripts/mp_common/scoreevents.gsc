@@ -64,11 +64,11 @@ function function_4013aee1(status_effect, var_3bc85d80) {
                 if (status_effect.var_4b22e697.var_9d19aa30 == 2 && isdefined(level.playgadgetsuccess)) {
                     status_effect.var_4b22e697 thread [[ level.playgadgetsuccess ]](getweapon(#"concussion_grenade"), undefined, undefined, undefined);
                 }
-                return;
+                break;
             }
         }
     default:
-        return;
+        break;
     }
 }
 

@@ -275,12 +275,12 @@ function private function_c6d69354() {
 // Size: 0x7e
 function private get_start_state() {
     if (zm_custom::function_901b751c(#"zmpapenabled") == 0) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_ef785c4c) && level.var_ef785c4c || zm_custom::function_901b751c(#"zmpapenabled") == 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
@@ -475,10 +475,10 @@ function private function_64416c32(delta, origin, radius) {
             paporigin = paporigin + vectorscale((0, 0, 1), 10000);
         }
         if (distancesquared(paporigin, origin) < radius * radius) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
@@ -569,9 +569,9 @@ function private function_72cf5db2() {
 // Size: 0x36
 function function_ec9ac3b2(e_player, current_weapon) {
     if (e_player namespace_e38c57c1::function_3da195ec(current_weapon)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
@@ -592,22 +592,22 @@ function private function_8a5fe651(pap_machine, current_weapon) {
     if (isdefined(level.pack_a_punch.custom_validation)) {
         valid = pap_machine [[ level.pack_a_punch.custom_validation ]](self);
         if (!valid) {
-            return 0;
+            return false;
         }
     }
     if (!self zm_magicbox::can_buy_weapon(0) || self laststand::player_is_in_laststand() || isdefined(self.intermission) && self.intermission || self isthrowinggrenade() || zm_trial_disable_buys::is_active() || namespace_83dc3729::is_active() || !self zm_weapons::can_upgrade_weapon(current_weapon) && !zm_weapons::weapon_supports_aat(current_weapon)) {
-        return 0;
+        return false;
     }
     if (self isswitchingweapons()) {
         wait(0.1);
         if (!isdefined(self) || isdefined(self) && self isswitchingweapons()) {
-            return 0;
+            return false;
         }
     }
     if (!zm_weapons::is_weapon_or_base_included(current_weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch
@@ -1005,7 +1005,7 @@ function private function_f0fe4bae(s_unitrigger_stub) {
 // Size: 0xf0
 function private shutoffpapsounds(pap_machine, var_884bde3, var_1e9dad36) {
     pap_machine endon(#"pack_removed");
-    while (1) {
+    while (true) {
         pap_machine flag::wait_till("Pack_A_Punch_off");
         level thread turnonpapsounds(pap_machine);
         pap_machine stoploopsound(0.1);
@@ -1156,52 +1156,52 @@ function private process_pap_zbarrier_state(state) {
         self showzbarrierpiece(0);
         self thread pap_initial();
         self.state = "initial";
-        return;
+        break;
     case #"power_off":
         self showzbarrierpiece(0);
         self thread pap_power_off();
         self.state = "power_off";
-        return;
+        break;
     case #"power_on":
         self showzbarrierpiece(0);
         self thread pap_power_on();
         self.state = "power_on";
-        return;
+        break;
     case #"powered":
         self showzbarrierpiece(4);
         self thread pap_powered();
         self.state = "powered";
-        return;
+        break;
     case #"take_gun":
         self showzbarrierpiece(1);
         self showzbarrierpiece(3);
         self thread pap_take_gun();
         self.state = "take_gun";
-        return;
+        break;
     case #"eject_gun":
         self showzbarrierpiece(1);
         self showzbarrierpiece(3);
         self thread pap_eject_gun();
         self.state = "eject_gun";
-        return;
+        break;
     case #"leaving":
         self showzbarrierpiece(5);
         self thread pap_leaving();
         self.state = "leaving";
-        return;
+        break;
     case #"arriving":
         self showzbarrierpiece(0);
         self thread pap_arriving();
         self.state = "arriving";
-        return;
+        break;
     case #"hidden":
         self.state = "hidden";
-        return;
+        break;
     default:
         if (isdefined(level.var_c6c65322)) {
             self [[ level.var_c6c65322 ]](state);
         }
-        return;
+        break;
     }
 }
 
@@ -1213,15 +1213,15 @@ function function_bdbf43e6(str_state) {
     switch (str_state) {
     case #"powered":
         self thread function_ea57e209();
-        return;
+        break;
     case #"take_gun":
         self showzbarrierpiece(2);
         self setzbarrierpiecestate(2, "opening");
-        return;
+        break;
     case #"eject_gun":
         self showzbarrierpiece(2);
         self setzbarrierpiecestate(2, "closing");
-        return;
+        break;
     }
 }
 
@@ -1231,7 +1231,7 @@ function function_bdbf43e6(str_state) {
 // Size: 0x98
 function function_ea57e209() {
     self endon(#"zbarrier_state_change");
-    while (1) {
+    while (true) {
         wait(randomfloatrange(180, 1800));
         self setzbarrierpiecestate(4, "opening");
         wait(randomfloatrange(180, 1800));
@@ -1248,27 +1248,27 @@ function function_41cd6368(str_state) {
     case #"take_gun":
         self thread function_7c1b15f2();
         self.state = "take_gun";
-        return 0;
+        return false;
     case #"eject_gun":
         self thread function_2bb87d58();
         self.state = "eject_gun";
-        return 0;
+        return false;
     case #"arriving":
         self showzbarrierpiece(4);
         self thread function_e0fbd38a();
         self.state = "arriving";
-        return 0;
+        return false;
     case #"leaving":
         self showzbarrierpiece(4);
         self thread function_d896758();
         self.state = "leaving";
-        return 0;
+        return false;
     case #"powered":
         self setzbarrierpiecestate(3, "closed");
         self setzbarrierpiecestate(5, "closed");
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_pack_a_punch/zm_pack_a_punch

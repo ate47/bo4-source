@@ -63,12 +63,12 @@ function private function_73021afc(localclientnum, oldval, newval, bnewent, bini
     case 0:
     default:
         self disablevisioncircle(localclientnum);
-        return;
+        break;
     case 1:
         self thread function_a252eaf0(localclientnum);
         self thread function_e3a084cd(localclientnum);
         self hideunseencompassicon();
-        return;
+        break;
     }
 }
 
@@ -112,7 +112,7 @@ function private function_e3a084cd(localclientnum) {
         var_dc3f8ecd = self.origin;
         var_450cbe48 = getservertime(localclientnum);
         elapsedtime = var_450cbe48 - var_18452954;
-        if (1) {
+        if (true) {
             var_e460f21 = math::clamp(elapsedtime / 500, 0, 1);
             radius = lerpfloat(200, 600, var_e460f21);
             distance = distance2d(self.origin, startorigin);

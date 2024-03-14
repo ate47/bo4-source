@@ -138,7 +138,7 @@ function function_4d230236(w_item, fn_callback) {
 // Checksum 0x6e06e7ad, Offset: 0x738
 // Size: 0x68
 function private function_307756a0() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"player_bled_out");
         player = waitresult.player;

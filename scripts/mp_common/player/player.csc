@@ -43,17 +43,17 @@ function __init__() {
 function function_972e0565(local_client_num, bundle) {
     util::waitforclient(local_client_num);
     if (shoutcaster::is_shoutcaster(local_client_num)) {
-        return 0;
+        return false;
     }
     localplayer = function_5c10bd79(local_client_num);
     if (self == localplayer) {
         curweapon = self function_d2c2b168();
         blade = getweapon(#"sig_blade");
         if (isthirdperson(local_client_num) && curweapon == blade) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player
@@ -168,16 +168,16 @@ function function_bcc9c79c(local_client_num) {
 // Size: 0x8a
 function function_fac25f84(local_client_num, bundle) {
     if (level.gameended) {
-        return 0;
+        return false;
     }
     if (!shoutcaster::is_shoutcaster(local_client_num)) {
-        return 0;
+        return false;
     }
     player = function_5c10bd79(local_client_num);
     if (self == player && !shoutcaster::function_2e6e4ee0(local_client_num)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace player/player

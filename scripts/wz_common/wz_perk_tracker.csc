@@ -36,7 +36,7 @@ function on_player_connect(localclientnum) {
 // Checksum 0x99e22e6a, Offset: 0x1c0
 // Size: 0x1fa
 function tracker(localclientnum) {
-    while (1) {
+    while (true) {
         wait(0.2);
         if (!function_5778f82(localclientnum, #"specialty_tracker")) {
             continue;

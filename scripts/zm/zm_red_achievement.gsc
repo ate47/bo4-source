@@ -86,7 +86,7 @@ function private function_50e46434() {
     if (zm_custom::function_901b751c(#"startround") > 1) {
         return;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"hash_751ac3ddacb1c548", #"between_round_over");
         if (s_result._notify == "between_round_over" && level.round_number > 15) {
@@ -114,7 +114,7 @@ function private function_863d6212() {
     if (!zm_custom::function_901b751c(#"zmwonderweaponisenabled") || zm_utility::is_standard()) {
         return;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_4c8edf52fbfca691");
         if (self flag::get(#"ww_combat_active") || !isdefined(s_result.var_e0ae28d)) {
@@ -139,7 +139,7 @@ function private function_103e6827() {
     if (!zm_custom::function_901b751c(#"zmwonderweaponisenabled") || zm_utility::is_standard()) {
         return;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_175b1370e662293a");
         if (self flag::get(#"ww_combat_active")) {
@@ -164,7 +164,7 @@ function private function_3c39c720() {
     if (!zm_custom::function_901b751c(#"zmwonderweaponisenabled") || zm_utility::is_standard()) {
         return;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_4969a839c4e666dc");
         if (self flag::get(#"ww_combat_active")) {
@@ -214,7 +214,7 @@ function private function_74846734() {
     if (!zm_custom::function_901b751c(#"zmwonderweaponisenabled") || zm_utility::is_standard()) {
         return;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"start_beaming");
         if (self flag::get(#"ww_combat_active")) {
@@ -261,7 +261,7 @@ function private function_8828b419(var_c34665fc) {
 // Size: 0x184
 function private function_84d102f2() {
     self endon(#"disconnect", #"hash_5766f147327163d1");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"hash_4fb1eb2c137a7955", #"hash_1e2d6c34f734996b");
         if (s_result._notify == #"hash_4fb1eb2c137a7955") {

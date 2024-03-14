@@ -238,7 +238,7 @@ function function_977835f8() {
             }
         #/
     }
-    while (1) {
+    while (true) {
         b_complete = 1;
         foreach (s_valve in a_s_valves) {
             if (isinarray(var_810703d4, s_valve)) {
@@ -321,7 +321,7 @@ function function_4f4e423f() {
     s_trigger = spawnstruct();
     s_trigger.origin = mdl_lever.origin - vectorscale((0, 0, 1), 16);
     s_trigger zm_unitrigger::create();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = s_trigger waittill(#"trigger_activated");
         e_player = waitresult.e_who;
@@ -450,7 +450,7 @@ function function_8fd1207a() {
     if (var_2a21fe27.script_int === 7 && !(isdefined(var_2a21fe27.var_ff23b30d) && var_2a21fe27.var_ff23b30d)) {
         self thread function_3702ff38();
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -487,7 +487,7 @@ function function_49200079(n_mod) {
 // Size: 0x104
 function function_3702ff38() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -501,7 +501,7 @@ function function_3702ff38() {
             wait(2);
             e_hand delete();
         }
-        return;
+        break;
     }
 }
 
@@ -539,7 +539,7 @@ function function_7071d9b0() {
             debugstar(level.var_92dc9c0d.origin, 50000, (1, 0.5, 0));
         }
     #/
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = trigger waittill(#"damage");
         if (isdefined(s_result.attacker) && s_result.attacker aat::has_aat(s_result.weapon)) {
@@ -695,7 +695,7 @@ function function_76351c42() {
     self endon(#"disconnect");
     self.var_d883eecd = 0;
     var_f3ca036b = 0;
-    for (n_current_round = level.round_number; 1; n_current_round = level.round_number) {
+    for (n_current_round = level.round_number; true; n_current_round = level.round_number) {
         s_result = undefined;
         s_result = level waittill(#"fasttravel_bought");
         if (s_result.player === self) {
@@ -728,7 +728,7 @@ function fishy_offering_step_1_setup(var_5ea5c94d) {
         e_fish.angles = spot.angles;
         wait(1);
         e_fish show();
-        while (1) {
+        while (true) {
             s_result = undefined;
             s_result = e_fish waittill(#"damage");
             if (isplayer(s_result.attacker) && (util::getweaponclass(s_result.weapon) === #"weapon_sniper" || util::getweaponclass(s_result.weapon) === #"weapon_tactical")) {
@@ -858,7 +858,7 @@ function function_bf250d60() {
     self val::set(#"sea_walkers", "takedamage", 1);
     self val::set(#"sea_walkers", "allowdeath", 1);
     s_landing = struct::get(self.target);
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker)) {
@@ -915,7 +915,7 @@ function function_bf250d60() {
 // Size: 0x218
 function function_ebb2139() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1180,13 +1180,13 @@ function safe_init() {
         switch (struct.script_noteworthy) {
         case #"hash_3e8f0dc79ba8ae20":
             self.var_3abff2c8[self.var_3abff2c8.size] = struct;
-            continue;
+            break;
         case #"hash_238372761f11df6b":
             self.gadget_lgt_exp_train_canals_debug = struct;
-            continue;
+            break;
         case #"s_bn_sp":
             self.var_6f76e7b0 = struct;
-            continue;
+            break;
         }
     }
     a_ents = getentarray(self.target, "targetname");
@@ -1362,7 +1362,7 @@ function function_7f18a333() {
     mdl_car waittill(#"movedone");
     e_block stoploopsound(1);
     exploder::stop_exploder("exp_bubbles_sink");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         e_player = waitresult.e_who;
@@ -1470,7 +1470,7 @@ function function_cd85b198() {
 // Size: 0xd0
 function function_f48b1de4() {
     self endon(#"death", #"car_reset", #"reached_end_node");
-    while (1) {
+    while (true) {
         level waittill(#"klaxon_notify");
         wait(randomfloatrange(0.1, 1));
         self playsound(#"hash_5ae1f398279d453");
@@ -1485,7 +1485,7 @@ function function_f48b1de4() {
 // Size: 0x70
 function function_b9b8f31d() {
     level waittill(#"power_on");
-    while (1) {
+    while (true) {
         trigger = trigger::wait_till("berths_walk_start", "targetname");
         function_f80bde48(trigger.who);
     }
@@ -1655,7 +1655,7 @@ function function_bf9f03e1() {
     w_frost_shield = getweapon(#"zhield_frost_dw");
     self.var_5ba94c1e = 1;
     self thread function_a5214a8d(w_frost_shield);
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_77d44943fb143b18", #"death");
         if (s_result._notify === #"hash_77d44943fb143b18" && s_result.weapon === w_frost_shield) {
@@ -1688,7 +1688,7 @@ function function_9693e041(player) {
 function function_a5214a8d(w_frost_shield) {
     self endon(#"disconnect");
     w_frost_shield_turret = getweapon(#"zhield_frost_turret");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change", #"death");
         if (s_result.weapon === w_frost_shield || s_result.weapon === w_frost_shield_turret) {
@@ -1730,7 +1730,7 @@ function fireworks_show() {
     level.var_fd1d03ff = struct::get_array(#"hash_4f342e0539cf25df");
     level.var_252b49cc = struct::get_array(#"hash_499aa18783aee42a");
     level.var_ba8e1acf = array(#"red", #"green", #"blue");
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         foreach (s_launcher in level.a_s_launchers) {
             s_launcher flag::clear(#"hash_2078d5bf94139877");
@@ -1883,7 +1883,7 @@ function use_flare(e_player) {
 function use_launcher() {
     level endon(#"end_game");
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1915,7 +1915,7 @@ function function_7ae29395() {
     self endoncallback(&function_a65045b6, #"death");
     v_offset = vectorscale((0, 0, -1), 8);
     self.trigger = spawn("trigger_damage", self.origin + v_offset, 0, 2.5, 24.5);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.trigger waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
@@ -2108,13 +2108,13 @@ function fireworks_fx(str_color) {
     switch (str_color) {
     case #"red":
         level clientfield::increment("" + #"fireworks_fx", 1);
-        return;
+        break;
     case #"green":
         level clientfield::increment("" + #"fireworks_fx", 2);
-        return;
+        break;
     case #"blue":
         level clientfield::increment("" + #"fireworks_fx", 3);
-        return;
+        break;
     }
 }
 
@@ -2254,7 +2254,7 @@ function function_2c343fd8() {
     wait(2);
     self clientfield::set("" + #"hash_2c387ea19f228b5d", 0);
     var_5912c181 = getweapon(#"hash_6a9069969e6fa287");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon === var_5912c181) {
@@ -2307,7 +2307,7 @@ function function_9dcc74cf() {
 // Size: 0x100
 function function_8c94faeb() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -2340,7 +2340,7 @@ function function_f003a04b() {
 function function_41ee4286() {
     self endon(#"death");
     s_piano = self.stub.related_parent;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -2384,13 +2384,13 @@ function function_1f7f2030(var_2c2d042a) {
     switch (var_2c2d042a) {
     case 0:
         self setmodel(#"p8_zm_zod_music_sheet_03");
-        return;
+        break;
     case 1:
         self setmodel(#"p8_zm_zod_music_sheet_01");
-        return;
+        break;
     case 2:
         self setmodel(#"p8_zm_zod_music_sheet_04");
-        return;
+        break;
     }
 }
 
@@ -2404,7 +2404,7 @@ function function_6d5cf6b2(str_text, str_endon) {
         if (isdefined(str_endon)) {
             self endon(str_endon);
         }
-        while (1) {
+        while (true) {
             print3d(self.origin, function_9e72a96(str_text), (1, 1, 0), 1, 1, 30);
             wait(0.5);
         }
@@ -2439,7 +2439,7 @@ function function_9a209775(var_a276c861) {
     if (!(isdefined(level.var_7812c982) && level.var_7812c982)) {
         level.var_7812c982 = 1;
         a_s_pianos = struct::get_array(#"ivory_number");
-        while (1) {
+        while (true) {
             foreach (s_piano in a_s_pianos) {
                 s_piano thread function_ff05eb5();
             }
@@ -2476,7 +2476,7 @@ function function_ff05eb5() {
         self waittill(#"hash_2624818b23ab83dc");
     }
     self endoncallback(&function_ff05eb5, #"hash_44c21ffb9cd24f2f");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.t_damage waittill(#"damage");
         if (waitresult.mod !== #"mod_melee" || !isplayer(waitresult.attacker)) {

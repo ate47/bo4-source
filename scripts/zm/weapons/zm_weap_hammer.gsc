@@ -74,15 +74,15 @@ function __init__() {
 // Size: 0xcc
 function function_f820b73(weapon, var_e7c11b0c = 1) {
     if (weapon == level.hero_weapon[#"hammer"][2]) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"hammer"][1] && var_e7c11b0c < 3) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"hammer"][0] && var_e7c11b0c < 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -91,7 +91,7 @@ function function_f820b73(weapon, var_e7c11b0c = 1) {
 // Size: 0x288
 function private function_c3f6fd96() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -147,7 +147,7 @@ function function_1286cbf(s_params) {
 // Size: 0xa8
 function private function_82466b73(weapon) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_melee_power_left");
         if (!zm_trial_restrict_loadout::function_5fbf572(weapon)) {
             continue;
@@ -214,7 +214,7 @@ function storm_think() {
 // Size: 0x98
 function private function_4493c71b(weapon) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_melee_power");
         if (!zm_trial_restrict_loadout::function_5fbf572(weapon, 1)) {
             continue;
@@ -271,7 +271,7 @@ function private set_armor(n_armor) {
 // Size: 0x90
 function private function_7399cd86(weapon) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_melee");
         if (!zm_trial_restrict_loadout::function_5fbf572(weapon)) {
             continue;
@@ -463,7 +463,7 @@ function function_f911e261() {
 function function_fd8e3604() {
     self endon(#"disconnect", #"bled_out", #"death", #"storm_think");
     self.e_storm endon(#"death");
-    while (1) {
+    while (true) {
         a_e_targets = zm_hero_weapon::function_7c3681f7();
         array::thread_all(a_e_targets, &storm_check, self);
         wait(0.05);
@@ -497,14 +497,14 @@ function storm_check(player) {
             case #"basic":
             case #"enhanced":
                 self thread function_97429d68();
-                return;
+                break;
             case #"boss":
                 self dodamage(1, var_75ccefac, player, player);
-                return;
+                break;
             case #"popcorn":
                 self.var_bc973222 = 1;
                 self dodamage(self.health + 100, var_75ccefac, player, player);
-                return;
+                break;
             }
         }
     }
@@ -542,11 +542,11 @@ function check_for_range(v_attack_source, n_allowed_z_diff, n_radius_sq) {
         n_z_diff = self.origin[2] - v_attack_source[2];
         if (abs(n_z_diff) < n_allowed_z_diff) {
             if (distance2dsquared(self.origin, v_attack_source) < n_radius_sq) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -575,7 +575,7 @@ function multiple_watcher(var_b9812c05) {
 // Size: 0x10c
 function staff_lightning_ball_kill_zombies(e_attacker) {
     self endon(#"death", #"stop_killing");
-    while (1) {
+    while (true) {
         a_zombies = staff_lightning_get_valid_targets(e_attacker, self.origin);
         if (isdefined(a_zombies)) {
             foreach (zombie in a_zombies) {
@@ -707,7 +707,7 @@ function _throttle_bullet_trace_think() {
     do {
         level.bullet_traces_this_frame = 0;
         util::wait_network_frame();
-    } while (1);
+    } while (true);
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -735,7 +735,7 @@ function lightning_ball_wait(n_lifetime_after_move) {
     level endon(#"lightning_ball_created");
     self waittill(#"movedone");
     wait(n_lifetime_after_move);
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -744,18 +744,18 @@ function lightning_ball_wait(n_lifetime_after_move) {
 // Size: 0xa6
 function staff_lightning_is_target_valid(ai_zombie) {
     if (!isdefined(ai_zombie)) {
-        return 0;
+        return false;
     }
     if (isdefined(ai_zombie.is_being_zapped) && ai_zombie.is_being_zapped) {
-        return 0;
+        return false;
     }
     if (isdefined(ai_zombie.is_mechz) && ai_zombie.is_mechz) {
-        return 0;
+        return false;
     }
     if (isvehicle(ai_zombie) && isdefined(ai_zombie.takedamage) && !ai_zombie.takedamage) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
@@ -844,16 +844,16 @@ function hammer_rumble(n_index) {
         switch (n_index) {
         case 1:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            return;
+            break;
         case 2:
             playrumbleonposition("zm_weap_hammer_slam_rumble", self.origin);
-            return;
+            break;
         case 3:
             playrumbleonposition("zm_weap_hammer_storm_rumble", self.origin);
-            return;
+            break;
         case 4:
             self clientfield::increment_to_player("" + #"hammer_rumble", 4);
-            return;
+            break;
         }
     }
 }

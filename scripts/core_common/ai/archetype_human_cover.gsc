@@ -121,25 +121,25 @@ function shouldthrowgrenadeatcovercondition(entity, throwifpossible = 0) {
         throwifpossible = 1;
     }
     if (isdefined(level.aidisablegrenadethrows) && level.aidisablegrenadethrows) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (!issentient(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isvehicle(entity.enemy) && isairborne(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.grenadeammo) && entity.grenadeammo <= 0) {
-        return 0;
+        return false;
     }
     if (ai::hasaiattribute(entity, "useGrenades") && !ai::getaiattribute(entity, "useGrenades")) {
-        return 0;
+        return false;
     }
     if (isplayer(entity.enemy) && entity.enemy laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     entityangles = entity.angles;
     if (isdefined(entity.node) && (entity.node.type == #"cover left" || entity.node.type == #"cover right" || entity.node.type == #"cover pillar" || entity.node.type == #"cover stand" || entity.node.type == #"conceal stand" || entity.node.type == #"cover crouch" || entity.node.type == #"cover crouch window" || entity.node.type == #"conceal crouch") && entity isatcovernodestrict()) {
@@ -150,7 +150,7 @@ function shouldthrowgrenadeatcovercondition(entity, throwifpossible = 0) {
     entityforward = anglestoforward(entityangles);
     entityforward = vectornormalize((entityforward[0], entityforward[1], 0));
     if (vectordot(toenemy, entityforward) < 0.5) {
-        return 0;
+        return false;
     }
     if (!throwifpossible) {
         friendlyplayers = getplayers(entity.team);
@@ -158,48 +158,48 @@ function shouldthrowgrenadeatcovercondition(entity, throwifpossible = 0) {
         if (isdefined(friendlyplayers) && friendlyplayers.size) {
             foreach (player in friendlyplayers) {
                 if (distancesquared(entity.enemy.origin, player.origin) <= 640000) {
-                    return 0;
+                    return false;
                 }
             }
         }
         if (isdefined(allplayers) && allplayers.size) {
             foreach (player in allplayers) {
                 if (isdefined(player) && player laststand::player_is_in_laststand() && distancesquared(entity.enemy.origin, player.origin) <= 640000) {
-                    return 0;
+                    return false;
                 }
             }
         }
         grenadethrowinfos = blackboard::getblackboardevents("team_grenade_throw");
         foreach (grenadethrowinfo in grenadethrowinfos) {
             if (grenadethrowinfo.data.grenadethrowerteam === entity.team) {
-                return 0;
+                return false;
             }
         }
         grenadethrowinfos = blackboard::getblackboardevents("human_grenade_throw");
         foreach (grenadethrowinfo in grenadethrowinfos) {
             if (isdefined(grenadethrowinfo.data.grenadethrownat) && isalive(grenadethrowinfo.data.grenadethrownat)) {
                 if (grenadethrowinfo.data.grenadethrower == entity) {
-                    return 0;
+                    return false;
                 }
                 if (isdefined(grenadethrowinfo.data.grenadethrownat) && grenadethrowinfo.data.grenadethrownat == entity.enemy) {
-                    return 0;
+                    return false;
                 }
                 if (isdefined(grenadethrowinfo.data.grenadethrownposition) && isdefined(entity.grenadethrowposition) && distancesquared(grenadethrowinfo.data.grenadethrownposition, entity.grenadethrowposition) <= 1440000) {
-                    return 0;
+                    return false;
                 }
             }
         }
     }
     throw_dist = distance2dsquared(entity.origin, entity lastknownpos(entity.enemy));
     if (throw_dist < 500 * 500 || throw_dist > 1250 * 1250) {
-        return 0;
+        return false;
     }
     arm_offset = temp_get_arm_offset(entity, entity lastknownpos(entity.enemy));
     throw_vel = entity canthrowgrenadepos(arm_offset, entity lastknownpos(entity.enemy));
     if (!isdefined(throw_vel)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
@@ -283,9 +283,9 @@ function private canchangestanceatcovercondition(entity) {
 // Size: 0x2e
 function private shouldreturntosuppressedcover(entity) {
     if (!entity isatgoal()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
@@ -294,32 +294,32 @@ function private shouldreturntosuppressedcover(entity) {
 // Size: 0x18e
 function private shouldreturntocovercondition(entity) {
     if (entity asmistransitionrunning()) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.covershootstarttime)) {
         if (gettime() < entity.covershootstarttime + 800) {
-            return 0;
+            return false;
         }
         if (isdefined(entity.enemy) && isplayer(entity.enemy) && entity.enemy.health < entity.enemy.maxhealth * 0.5) {
             if (gettime() < entity.covershootstarttime + 3000) {
-                return 0;
+                return false;
             }
         }
     }
     if (aiutility::issuppressedatcovercondition(entity)) {
-        return 1;
+        return true;
     }
     if (!entity isatgoal()) {
         if (isdefined(entity.node)) {
             offsetorigin = entity getnodeoffsetposition(entity.node);
             return !entity isposatgoal(offsetorigin);
         }
-        return 1;
+        return true;
     }
     if (!entity issafefromgrenade()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
@@ -328,22 +328,22 @@ function private shouldreturntocovercondition(entity) {
 // Size: 0x14e
 function private shouldadjusttocover(entity) {
     if (!isdefined(entity.node)) {
-        return 0;
+        return false;
     }
     highestsupportedstance = aiutility::gethighestnodestance(entity.node);
     currentstance = entity getblackboardattribute("_stance");
     if (currentstance == "crouch" && highestsupportedstance == "crouch") {
-        return 0;
+        return false;
     }
     covermode = entity getblackboardattribute("_cover_mode");
     previouscovermode = entity getblackboardattribute("_previous_cover_mode");
     if (covermode != "cover_alert" && previouscovermode != "cover_alert" && !entity.keepclaimednode) {
-        return 1;
+        return true;
     }
     if (!aiutility::isstanceallowedatnode(currentstance, entity.node)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
@@ -369,7 +369,7 @@ function private shouldvantageatcovercondition(entity) {
 // Checksum 0x44f445af, Offset: 0x1f30
 // Size: 0xe
 function private supportsvantagecovercondition(entity) {
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_cover/archetype_human_cover
@@ -447,10 +447,10 @@ function private coverchangestanceactionstart(entity, asmstatename) {
     switch (entity getblackboardattribute("_stance")) {
     case #"stand":
         entity setblackboardattribute("_desired_stance", "crouch");
-        return;
+        break;
     case #"crouch":
         entity setblackboardattribute("_desired_stance", "stand");
-        return;
+        break;
     }
 }
 

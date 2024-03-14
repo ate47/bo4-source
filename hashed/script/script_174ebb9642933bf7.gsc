@@ -65,9 +65,9 @@ function crawler_round_spawn() {
     ai = spawn_nova_crawler();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_df88241c/namespace_a366d2a9

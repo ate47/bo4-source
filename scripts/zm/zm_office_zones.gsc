@@ -93,7 +93,7 @@ function function_29ec1ad7() {
 // Size: 0xb8
 function function_8e0b371() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (isalive(self)) {
             str_location = function_ab7f70b9(self);
             self zm_hud::function_29780fb5(isdefined(str_location) ? str_location : #"");

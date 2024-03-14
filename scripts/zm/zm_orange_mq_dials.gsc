@@ -225,16 +225,16 @@ function function_66365668(n_code) {
     switch (self.script_noteworthy) {
     case #"orange_code":
         self showpart("tag_orange_" + n_code);
-        return;
+        break;
     case #"blue_code":
         self showpart("tag_blue_" + n_code);
-        return;
+        break;
     case #"yellow_code":
         self showpart("tag_yellow_" + n_code);
-        return;
+        break;
     case #"violet_code":
         self showpart("tag_violet_" + n_code);
-        return;
+        break;
     }
 }
 

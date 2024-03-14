@@ -47,7 +47,7 @@ function init() {
 // Size: 0xca
 function function_fa00e485(n_round_number) {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"blight_father") && !(isdefined(level.var_153e9058) && level.var_153e9058)) {
             if (isdefined(level.var_9ce0f2a5)) {
@@ -63,7 +63,7 @@ function function_fa00e485(n_round_number) {
 // Size: 0xca
 function function_c1a0ea97(n_round_number) {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"gegenees") && !(isdefined(level.var_153e9058) && level.var_153e9058)) {
             if (isdefined(level.var_9ce0f2a5)) {
@@ -79,7 +79,7 @@ function function_c1a0ea97(n_round_number) {
 // Size: 0xce
 function function_990c303a() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         level.var_4c6c91cf = 0;
         if (level.players.size == 1) {

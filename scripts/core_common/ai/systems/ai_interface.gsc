@@ -20,13 +20,13 @@ function private _checkvalue(archetype, attributename, value) {
         attribute = level.__ai_interface[archetype][attributename];
         switch (attribute[#"type"]) {
         case #"_interface_entity":
-            return;
+            break;
         case #"_interface_match":
             possiblevalues = attribute[#"values"];
             /#
                 assert(!isarray(possiblevalues) || isinarray(possiblevalues, value), "<unknown string>" + value + "<unknown string>" + attributename + "<unknown string>");
             #/
-            return;
+            break;
         case #"_interface_numeric":
             maxvalue = attribute[#"max_value"];
             minvalue = attribute[#"min_value"];
@@ -36,19 +36,19 @@ function private _checkvalue(archetype, attributename, value) {
             /#
                 assert(!isdefined(maxvalue) && !isdefined(minvalue) || value <= maxvalue && value >= minvalue, "<unknown string>" + value + "<unknown string>" + minvalue + "<unknown string>" + maxvalue + "<unknown string>");
             #/
-            return;
+            break;
         case #"_interface_vector":
             if (isdefined(value)) {
                 /#
                     assert(isvec(value), "<unknown string>" + attributename + "<unknown string>" + value + "<unknown string>");
                 #/
             }
-            return;
+            break;
         default:
             /#
                 assert("<unknown string>" + attribute[#"type"] + "<unknown string>" + attributename + "<unknown string>");
             #/
-            return;
+            break;
         }
     #/
 }

@@ -24,7 +24,7 @@ function __init__() {
     callback::on_localplayer_spawned(&on_localplayer_spawned);
     callback::on_spawned(&on_player_spawned);
     level.killtrackerfxenable = 1;
-    if (1) {
+    if (true) {
         level._monitor_tracker = &monitor_tracker_perk;
     }
     level.sitrepscan1_enable = getdvarint(#"scr_sitrepscan1_enable", 2);
@@ -55,7 +55,7 @@ function __init__() {
 // Size: 0xc8
 function updatesitrepscan() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self function_3d033f52(0, level.sitrepscan1_enable, level.sitrepscan1_setdesat, level.sitrepscan1_setsolid, level.sitrepscan1_setoutline, level.sitrepscan1_setlinewidth, level.sitrepscan1_setradius, level.sitrepscan1_setfalloff);
         self function_3d033f52(1, level.sitrepscan2_enable, level.sitrepscan2_setdesat, level.sitrepscan2_setsolid, level.sitrepscan2_setoutline, level.sitrepscan2_setlinewidth, level.sitrepscan2_setradius, level.sitrepscan2_setfalloff);
         wait(1);
@@ -68,7 +68,7 @@ function updatesitrepscan() {
 // Size: 0x364
 function updatedvars() {
     /#
-        while (1) {
+        while (true) {
             level.sitrepscan1_enable = getdvarint(#"scr_sitrepscan1_enable", level.sitrepscan1_enable);
             level.sitrepscan1_setoutline = getdvarint(#"scr_sitrepscan1_setoutline", level.sitrepscan1_setoutline);
             level.sitrepscan1_setsolid = getdvarint(#"scr_sitrepscan1_setsolid", level.sitrepscan1_setsolid);
@@ -147,7 +147,7 @@ function function_92725cf9(local_client_num) {
         return;
     }
     self thread monitor_detectnearbyenemies(local_client_num);
-    if (1) {
+    if (true) {
         self thread monitor_tracker_perk_killcam(local_client_num);
         self thread monitor_tracker_existing_players(local_client_num);
     }
@@ -162,7 +162,7 @@ function on_player_spawned(local_client_num) {
         self thread watch_perks_change(local_client_num);
     #/
     self notify(#"perks_changed");
-    if (1) {
+    if (true) {
         self thread killtrackerfx_on_death(local_client_num);
         self thread monitor_tracker_perk(local_client_num);
     }
@@ -508,7 +508,7 @@ function monitor_detectnearbyenemies(local_client_num) {
     var_55336d8d = level.var_6fc25f5c;
     var_c394e130 = level.var_842a5e1f;
     self.var_7122b2ff = 0;
-    while (1) {
+    while (true) {
         /#
             if (getdvarint(#"hash_340cb17d497f0877", 0) > 0) {
                 level.var_6fc25f5c = getscriptbundle(#"awareness");
@@ -722,7 +722,7 @@ function function_c90f8547(var_8bced359, var_832d6681, delay_time) {
 function function_c2b5b27c(local_client_num) {
     self endon(#"death");
     self.var_7122b2ff = 1;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"awareness_action");
         if (isdefined(waitresult.var_53714565)) {

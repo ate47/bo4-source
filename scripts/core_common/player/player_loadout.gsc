@@ -9,9 +9,9 @@
 // Size: 0x30
 function function_87bcb1b() {
     if (isdefined(level.var_87bcb1b) && level.var_87bcb1b == 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace loadout/player_loadout

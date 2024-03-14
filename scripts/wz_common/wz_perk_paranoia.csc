@@ -81,7 +81,7 @@ function private function_3e9077b(localclientnum) {
         return;
     }
     var_81f254ba = cos(10);
-    while (1) {
+    while (true) {
         var_7cefa3dc = undefined;
         players = getplayers(localclientnum);
         foreach (player in players) {

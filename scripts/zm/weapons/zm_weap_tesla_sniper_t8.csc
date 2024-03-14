@@ -66,7 +66,7 @@ function function_2d6416dc(localclientnum) {
     if (!isdefined(self.var_7ad5becf)) {
         self.var_7ad5becf = [];
     }
-    while (1) {
+    while (true) {
         wait(0.1);
         if (viewmodelhastag(localclientnum, "tag_flash")) {
             n_ammo = getweaponammoclip(localclientnum, w_current);

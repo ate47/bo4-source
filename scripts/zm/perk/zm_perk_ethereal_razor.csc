@@ -118,7 +118,7 @@ function function_58c4bf12(localclientnum) {
     self endon("74273462170704a3");
     self endoncallback(&function_c8066972, #"death");
     self function_c8066972();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"notetrack");
         str_notetrack = waitresult.notetrack;

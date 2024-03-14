@@ -241,14 +241,14 @@ function perk_start_up() {
     }
     timer = 0;
     duration = 0.1;
-    while (1) {
+    while (true) {
         if (isdefined(level._custom_perks[self.script_noteworthy]) && isdefined(level._custom_perks[self.script_noteworthy].machine_light_effect)) {
             self thread vending_machine_flicker_light(level._custom_perks[self.script_noteworthy].machine_light_effect, duration);
         }
         timer = timer + duration;
         duration = duration + 0.2;
         if (timer >= 3) {
-            return;
+            break;
         }
         wait(duration);
     }
@@ -577,11 +577,11 @@ function function_5b123b68(localclientnum, b_show, b_use_offset = 0) {
 function private function_be3ae9c5(n_value, var_51e3f61d = 0) {
     if (n_value < 5) {
         if (var_51e3f61d && n_value == 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_perks/zm_perks
@@ -607,7 +607,7 @@ function function_9b4bc8e7(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_6a0a572d(localclientnum) {
     level endon(#"demo_jump");
     self endon(#"death");
-    while (1) {
+    while (true) {
         wait(randomintrange(5, 20));
         self playsound(localclientnum, #"hash_62f87027921fa5b4");
     }

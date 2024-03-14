@@ -114,7 +114,7 @@ function playing() {
 // Size: 0x20
 function pending() {
     if (!isdefined(self.var_556f910a)) {
-        return 0;
+        return false;
     }
     return self.var_556f910a.size > 0;
 }
@@ -580,7 +580,7 @@ function function_93932552(s_voice) {
         for (i = 0; i < self.var_556f910a.size; i++) {
             if (priority <= function_8e0c80fb(self.var_556f910a[i]) && priority > function_8e0c80fb(self.var_556f910a[i + 1])) {
                 arrayinsert(self.var_556f910a, s_voice, i + 1);
-                return;
+                break;
             }
         }
     }

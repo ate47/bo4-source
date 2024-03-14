@@ -44,8 +44,8 @@ function activation() {
 // Size: 0x40
 function validation() {
     if (self zm_score::can_player_purchase(500) && self bgb::function_9d8118f5()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

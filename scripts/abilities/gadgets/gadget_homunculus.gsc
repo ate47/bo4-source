@@ -47,7 +47,7 @@ function function_1c601b99() {
 // Size: 0x176
 function private function_c83057f0() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         foreach (homunculus in level.var_2da60c10) {
             if (!isdefined(homunculus) || homunculus.spawning === 1) {
                 continue;
@@ -81,10 +81,10 @@ function private function_9ce07f7c(homunculus) {
     var_b1de6a06 = getentitiesinradius(homunculus.origin, 250, 15);
     foreach (actor in var_b1de6a06) {
         if (function_62318121(homunculus, actor)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace gadget_homunculus/gadget_homunculus
@@ -113,12 +113,12 @@ function private function_90cc805b(homunculus) {
 // Size: 0x68
 function private function_62318121(homunculus, ent) {
     if (!isdefined(ent)) {
-        return 0;
+        return false;
     }
     if (ent.archetype == "zombie" && util::function_fbce7263(ent.team, homunculus.team)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gadget_homunculus/grenade_fire
@@ -195,7 +195,7 @@ function private event_handler[grenade_fire] function_4776caf4(eventstruct) {
 function function_1dba4a2() {
     self endon(#"death", #"hash_3e410dbcd9e66000");
     self.mover endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"snddeployvox");
         if (isdefined(waitresult.str_alias)) {
@@ -217,7 +217,7 @@ function private function_bb17ec5a() {
         iprintlnbold("<unknown string>");
     #/
     start_attack = 1;
-    while (1) {
+    while (true) {
         var_c7f2fbb7 = function_90cc805b(self);
         if (!var_c7f2fbb7.size) {
             break;

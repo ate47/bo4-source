@@ -230,12 +230,12 @@ function on_end_round(var_c1e98979) {
 // Size: 0x30
 function function_d126ce1b() {
     if (!isdefined(self.touchtriggers)) {
-        return 1;
+        return true;
     }
     if (self.touchtriggers.size == 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -345,19 +345,19 @@ function on_player_killed(einflictor, attacker, idamage, smeansofdeath, weapon, 
 // Size: 0x180
 function function_a800815(victim, attacker) {
     if (!isdefined(victim.pers) || !isdefined(victim.pers[#"team"])) {
-        return 0;
+        return false;
     }
     if (!isdefined(attacker.pers) || !isdefined(attacker.pers[#"team"])) {
-        return 0;
+        return false;
     }
     if (isdefined(victim.touchtriggers) && victim.touchtriggers.size && attacker.pers[#"team"] != victim.pers[#"team"] && victim.pers[#"team"] == game.attackers) {
         triggerids = getarraykeys(victim.touchtriggers);
         zone = victim.touchtriggers[triggerids[0]].useobj;
         if (zone.curprogress > 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -370,10 +370,10 @@ function function_d3a438fb(entity) {
             continue;
         }
         if (entity istouching(zone.trigger)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -552,24 +552,24 @@ function compare_zone_indicies(zone_a, zone_b) {
     script_index_a = zone_a.script_index;
     script_index_b = zone_b.script_index;
     if (!isdefined(script_index_a) && !isdefined(script_index_b)) {
-        return 0;
+        return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
         /#
             println("kothActiveDialogBuffer" + zone_a.origin);
         #/
-        return 1;
+        return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
         /#
             println("kothActiveDialogBuffer" + zone_b.origin);
         #/
-        return 0;
+        return false;
     }
     if (script_index_a > script_index_b) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -732,7 +732,7 @@ function audio_loop() {
     level endon(#"game_ended");
     self notify(#"audio_loop_singleton");
     self endon(#"audio_loop_singleton");
-    while (1) {
+    while (true) {
         foreach (zone in level.zones) {
             if (is_zone_contested(zone.gameobject)) {
                 playsoundatposition(#"mpl_zone_contested", zone.gameobject.origin);
@@ -751,7 +751,7 @@ function function_23bedaa1() {
     level endon(#"game_ended");
     self notify(#"hash_5e9e72ecc3fc7569");
     self endon(#"hash_5e9e72ecc3fc7569");
-    while (1) {
+    while (true) {
         for (i = 0; i < level.zones.size; i++) {
             update_timer(i, 0);
         }
@@ -1284,9 +1284,9 @@ function private function_5a9598f0(player, string, capturetime, capture_team, la
 // Size: 0x58
 function private is_zone_contested(gameobject) {
     if (gameobject.touchlist[game.attackers].size > 0 && gameobject.touchlist[game.defenders].size > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -1423,7 +1423,7 @@ function player_use_loop(gameobject) {
     if (attacker_capture_multiplier <= fast_capture_threshold && defend_decay_multiplier <= fast_decay_threshold) {
         return;
     }
-    while (1) {
+    while (true) {
         while (!isdefined(gameobject.userate) || isdefined(gameobject.userate) && gameobject.userate == 0 || gameobject.claimteam == "none") {
             wait(0.2);
         }
@@ -1477,10 +1477,10 @@ function private on_begin_use(sentient) {
 function private isuserateelevated(touchlist) {
     foreach (touchinfo in touchlist) {
         if (touchinfo.userate > 1) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -1493,10 +1493,10 @@ function private isplayerinzonewithrole(touchlist, roletype) {
             continue;
         }
         if (isplayer(touchinfo.player) && isdefined(touchinfo.player.playerrole) && touchinfo.player.playerrole.rolename == roletype) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -1596,12 +1596,12 @@ function update_caps_per_minute(lastownerteam) {
 // Size: 0x3e
 function is_score_boosting(player) {
     if (!level.rankedmatch) {
-        return 0;
+        return false;
     }
     if (player.capsperminute > level.playercapturelpm) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mission_koth/control
@@ -1821,7 +1821,7 @@ function function_caff2d60() {
     level endon(#"game_ended");
     self notify(#"hash_2562ed6d6d163c1a");
     self endon(#"hash_2562ed6d6d163c1a");
-    while (1) {
+    while (true) {
         var_af32dd2d = 1;
         for (i = 0; i < level.zones.size; i++) {
             if (!is_zone_contested(level.zones[i].gameobject)) {

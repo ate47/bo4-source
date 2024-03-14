@@ -361,13 +361,13 @@ function _remove_non_riders_from_array(ai) {
 // Size: 0x60
 function ai_should_be_added(ai) {
     if (isalive(ai)) {
-        return 1;
+        return true;
     }
     if (!isdefined(ai)) {
-        return 0;
+        return false;
     }
     if (!isdefined(ai.classname)) {
-        return 0;
+        return false;
     }
     return ai.classname == "script_model";
 }
@@ -449,12 +449,12 @@ function add_proccess_trigger(trigger) {
 // Size: 0x74
 function islastnode(node) {
     if (!isdefined(node.target)) {
-        return 1;
+        return true;
     }
     if (!isdefined(getvehiclenode(node.target, "targetname")) && !isdefined(get_vehiclenode_any_dynamic(node.target))) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -864,7 +864,7 @@ function path_gate_wait_till_open(pathspot) {
 // Checksum 0xae587ff8, Offset: 0x3d08
 // Size: 0xca
 function _spawn_group(spawngroup) {
-    while (1) {
+    while (true) {
         level waittill("spawnvehiclegroup" + spawngroup);
         spawned_vehicles = [];
         for (i = 0; i < level.vehicle_spawners[spawngroup].size; i++) {
@@ -1086,7 +1086,7 @@ function function_e2a44ff1(vehicle) {
 function subtarget_watch(vehicle, subtarget) {
     vehicle endon(#"death");
     target_set(vehicle, (0, 0, 0), subtarget);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = vehicle waittill(#"subtarget_broken");
         if (waitresult.subtarget === subtarget) {
@@ -1197,7 +1197,7 @@ function debug_set_speed(speed, rate, msg) {
     /#
         self notify(#"new debug_vehiclesetspeed");
         self endon(#"new debug_vehiclesetspeed", #"resuming speed", #"death");
-        while (1) {
+        while (true) {
             while (getdvarstring(#"debug_vehiclesetspeed") != "<unknown string>") {
                 print3d(self.origin + vectorscale((0, 0, 1), 192), "<unknown string>" + msg, (1, 1, 1), 1, 3);
                 waitframe(1);
@@ -1519,12 +1519,12 @@ function _vehicle_load_assets() {
 // Size: 0x26
 function is_cheap() {
     if (!isdefined(self.script_cheap)) {
-        return 0;
+        return false;
     }
     if (!self.script_cheap) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1536,7 +1536,7 @@ function play_looped_fx_on_tag(effect, durration, tag) {
     effectorigin = spawn("script_origin", emodel.origin);
     self endon(#"fire_extinguish");
     thread _play_looped_fx_on_tag_origin_update(tag, effectorigin);
-    while (1) {
+    while (true) {
         playfx(effect, effectorigin.origin, effectorigin.upvec);
         wait(durration);
     }
@@ -1700,7 +1700,7 @@ function _vehicle_bad_place() {
         return;
     }
     hasturret = isdefined(self.turretweapon) && self.turretweapon != level.weaponnone;
-    while (1) {
+    while (true) {
         if (!self.script_badplace) {
             while (!self.script_badplace) {
                 wait(0.5);
@@ -1820,7 +1820,7 @@ function wait_till_stable() {
             timer = gettime() + 400;
         }
         if (gettime() > timer) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -2020,7 +2020,7 @@ function maingun_fx() {
         return;
     }
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_fired");
         playfxontag(level.vehicle_deckdust[self.model], self, "tag_engine_exhaust");
         barrel_origin = self gettagorigin("tag_flash");
@@ -2280,9 +2280,9 @@ function update_damage_fx_level(currenthealth, damage, maxhealth) {
     newdamagelevel = should_update_damage_fx_level(currenthealth, damage, maxhealth);
     if (newdamagelevel > 0) {
         self set_damage_fx_level(newdamagelevel);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2465,7 +2465,7 @@ function debug_vehicle() {
         if (getdvarstring(#"debug_vehicle_health") == "<unknown string>") {
             setdvar(#"debug_vehicle_health", 0);
         }
-        while (1) {
+        while (true) {
             if (getdvarint(#"debug_vehicle_health", 0) > 0) {
                 print3d(self.origin, "<unknown string>" + self.health, (1, 1, 1), 1, 3);
             }
@@ -2481,7 +2481,7 @@ function debug_vehicle() {
 function debug_vehicle_paths() {
     /#
         self endon(#"death", #"newpath", #"endpath", #"reached_dynamic_path_end");
-        for (nextnode = self.currentnode; 1; nextnode = self.nextnode) {
+        for (nextnode = self.currentnode; true; nextnode = self.nextnode) {
             if (getdvarint(#"debug_vehicle_paths", 0) > 0) {
                 recordline(self.origin, self.currentnode.origin, (1, 0, 0), "<unknown string>", self);
                 recordline(self.origin, nextnode.origin, (0, 1, 0), "<unknown string>", self);
@@ -2682,12 +2682,12 @@ function function_7f0bbde3() {
 function is_corpse(veh) {
     if (isdefined(veh)) {
         if (isdefined(veh.isacorpse) && veh.isacorpse) {
-            return 1;
+            return true;
         } else if (isdefined(veh.classname) && veh.classname == "script_vehicle_corpse") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2696,16 +2696,16 @@ function is_corpse(veh) {
 // Size: 0x64
 function is_on(vehicle) {
     if (!isdefined(self.viewlockedentity)) {
-        return 0;
+        return false;
     } else if (self.viewlockedentity == vehicle) {
-        return 1;
+        return true;
     }
     if (!isdefined(self.groundentity)) {
-        return 0;
+        return false;
     } else if (self.groundentity == vehicle) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -2785,7 +2785,7 @@ function add_hijack_function(veh_targetname, spawn_func, param1, param2, param3,
 // Checksum 0x5a458f1a, Offset: 0x9aa0
 // Size: 0x164
 function private _watch_for_hijacked_vehicles() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"clonedentity");
         str_targetname = waitresult.clone.targetname;
@@ -2862,7 +2862,7 @@ function monitor_missiles_locked_on_to_me(player, wait_time = 0.1) {
         assert(isdefined(monitored_entity.target_group), "<unknown string>");
     #/
     player endon(#"stop_monitor_missile_locked_on_to_me", #"disconnect", #"joined_team");
-    while (1) {
+    while (true) {
         closest_attacker = player get_closest_attacker_with_missile_locked_on_to_me(monitored_entity);
         player setvehiclelockedonbyent(closest_attacker);
         wait(wait_time);
@@ -2883,7 +2883,7 @@ function watch_freeze_on_flash(duration) {
         veh.owner clientfield::set_to_player("static_postfx", 0);
     }
     veh clientfield::set("stun", 0);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = veh waittill(#"damage", #"death");
         if (waitresult._notify == "death") {
@@ -3031,7 +3031,7 @@ function monitor_damage_as_occupant(player) {
     }
     wait(0.1);
     player update_damage_as_occupant(self.maxhealth - self.health, self.maxhealth);
-    while (1) {
+    while (true) {
         self waittill(#"damage");
         waittillframeend();
         player update_damage_as_occupant(self.maxhealth - self.health, self.maxhealth);
@@ -3061,16 +3061,16 @@ function function_eb183ffe(attackingplayer, weapon) {
 // Size: 0x84
 function player_is_driver() {
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     vehicle = self getvehicleoccupied();
     if (isdefined(vehicle)) {
         seat = vehicle getoccupantseat(self);
         if (isdefined(seat) && seat == 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -3111,7 +3111,7 @@ function vehicle_spawner_tool() {
             return;
         }
         type_index = 0;
-        while (1) {
+        while (true) {
             if (getdvarint(#"debug_vehicle_spawn", 0) > 0) {
                 player = getplayers()[0];
                 dynamic_spawn_hud = newdebughudelem(player);
@@ -3173,7 +3173,7 @@ function spline_debug() {
     /#
         level flag::init("<unknown string>");
         level thread _spline_debug();
-        while (1) {
+        while (true) {
             if (flag::exists("<unknown string>")) {
                 level flag::set_val("<unknown string>", getdvarint(#"g_vehicledrawsplines", 0));
             }
@@ -3188,7 +3188,7 @@ function spline_debug() {
 // Size: 0xb2
 function _spline_debug() {
     /#
-        while (1) {
+        while (true) {
             level flag::wait_till("<unknown string>");
             foreach (nd in getallvehiclenodes()) {
                 nd show_node_debug_info();
@@ -3234,12 +3234,12 @@ function print_debug_info(str_info) {
 // Size: 0xfa
 function function_96b5f1c3(vh_target, n_seat) {
     if (isbot(self) && isdefined(vh_target.var_3a60b519) && vh_target.var_3a60b519) {
-        return 0;
+        return false;
     }
     if (isdefined(vh_target) && isalive(self) && !self laststand::player_is_in_laststand() && isdefined(vh_target function_dcef0ba1(n_seat)) && vh_target function_dcef0ba1(n_seat) && !vh_target isvehicleseatoccupied(n_seat)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -3821,7 +3821,7 @@ function function_d6c00549(owner, var_cc6abdaa) {
     if (isdefined(var_cc6abdaa) && isdefined(var_cc6abdaa.weapon)) {
         if (var_cc6abdaa.weapon.guidedmissiletype === "HeatSeeking" && var_cc6abdaa missile_gettarget() === owner) {
             self thread function_b5f1f39(var_cc6abdaa);
-            return 1;
+            return true;
         }
     } else {
         foreach (missile in level.missileentities) {
@@ -3833,11 +3833,11 @@ function function_d6c00549(owner, var_cc6abdaa) {
             }
             if (missile missile_gettarget() === owner) {
                 self thread function_b5f1f39(missile);
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -3898,7 +3898,7 @@ function function_78cfd053() {
         var_8ac0fa8[n] = var_c56865cf - var_70fdf0cb * n;
     }
     var_8ac0fa8[var_8ac0fa8.size] = 0;
-    while (1) {
+    while (true) {
         self waittill(#"damage");
         foreach (keys, n_health_threshold in var_8ac0fa8) {
             if (self.health > n_health_threshold) {

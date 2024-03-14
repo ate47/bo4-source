@@ -323,9 +323,9 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
 // Size: 0x30
 function function_a800815(victim, attacker) {
     if (victim.isplanting === 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace sd/sd
@@ -440,7 +440,7 @@ function givelastattackerwarning(team) {
     if (level.alivecount[enemyteam] > 2) {
         self.var_66cfa07f = 1;
     }
-    while (1) {
+    while (true) {
         if (self.health != self.maxhealth) {
             fullhealthtime = 0;
         } else {
@@ -1058,20 +1058,20 @@ function private set_ui_team() {
 function sd_iskillboosting() {
     roundsplayed = util::getroundsplayed();
     if (level.playerkillsmax == 0) {
-        return 0;
+        return false;
     }
     if (game.totalkills > level.totalkillsmax * (roundsplayed + 1)) {
-        return 1;
+        return true;
     }
     if (self.kills > level.playerkillsmax * (roundsplayed + 1)) {
-        return 1;
+        return true;
     }
     if (level.teambased && (self.team == #"allies" || self.team == #"axis")) {
         if (game.totalkillsteam[self.team] > level.playerkillsmax * (roundsplayed + 1)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace sd/sd

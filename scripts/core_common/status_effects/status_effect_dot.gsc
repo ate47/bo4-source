@@ -127,7 +127,7 @@ function private function_5236325e(applicant, killcament) {
     self endon(#"endstatuseffect");
     var_6307def9 = 0;
     var_f3fdc692 = 0;
-    while (1) {
+    while (true) {
         self function_1d5bd9af();
         var_85ef8797 = 5;
         mod = "MOD_DOT";

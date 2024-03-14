@@ -413,9 +413,9 @@ function function_c0fa0ecb(weapon) {
     case #"tr_powersemi_t8":
     case #"smg_handling_t8":
         self stats::function_eec52333(weapon, #"hash_4e43a25a3e77ab5f", 1, self.class_num);
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -849,7 +849,7 @@ function function_b9119037(activecamo) {
 function set_stage_activecamo(activecamo, stagenum) {
     setstage = activecamo.stages[stagenum];
     if (!isdefined(setstage)) {
-        return 0;
+        return false;
     }
     activecamo.var_dd54a13b[activecamo.baseweapon].stagenum = stagenum;
     self setactivecamostage(activecamo.weapon, stagenum);
@@ -860,7 +860,7 @@ function set_stage_activecamo(activecamo, stagenum) {
         self debug_print("<unknown string>" + activecamo.info.name + "<unknown string>" + stagenum + "<unknown string>" + (isdefined(setstage.info.var_19b6044e) ? setstage.info.var_19b6044e : "<unknown string>"));
     #/
     self thread function_a80cb651(activecamo, stagenum);
-    return 1;
+    return true;
 }
 
 // Namespace activecamo/activecamo_shared
@@ -876,7 +876,7 @@ function function_a80cb651(activecamo, stagenum) {
         return;
     }
     weapon = activecamo.weapon;
-    while (1) {
+    while (true) {
         if (stage.info.resettimer > 0 && isdefined(stage.info.resetnotify)) {
             stage.resettime = gettime() + stage.info.resettimer;
             s_result = undefined;

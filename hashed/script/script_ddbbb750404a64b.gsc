@@ -81,7 +81,7 @@ function private function_c465c67f() {
     level endon(#"hash_7646638df88a3656");
     self.b_in_zone = 0;
     self zm_trial_util::function_63060af4(0);
-    while (1) {
+    while (true) {
         if (!self.b_in_zone && self zm_zonemgr::is_player_in_zone(level.var_da1e5199)) {
             self zm_trial_util::function_63060af4(1);
             self.b_in_zone = 1;

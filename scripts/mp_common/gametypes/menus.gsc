@@ -256,7 +256,7 @@ function function_2d1eb0ec(intpayload) {
 function function_8e00969() {
     self endon(#"disconnect", #"death");
     if (function_8b1a219a() && sessionmodeiswarzonegame()) {
-        while (1) {
+        while (true) {
             if (self function_1b011462()) {
                 function_2d1eb0ec(31);
             }

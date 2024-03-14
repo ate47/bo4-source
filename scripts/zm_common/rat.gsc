@@ -140,7 +140,7 @@ function function_8f340c78(params) {
                     function_55e20e75(params._id, origin);
                     angles = (chest.angles[0], chest.angles[1] - 90, chest.angles[2]);
                     function_55e20e75(params._id, angles);
-                    return;
+                    break;
                 }
             }
         }

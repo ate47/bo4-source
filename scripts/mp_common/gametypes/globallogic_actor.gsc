@@ -196,7 +196,7 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
             println("<unknown string>" + self getentitynumber() + "<unknown string>" + self.health + "<unknown string>" + eattacker.clientid + "<unknown string>" + isplayer(einflictor) + "<unknown string>" + idamage + "<unknown string>" + shitloc);
         }
     #/
-    if (1) {
+    if (true) {
         lpselfnum = self getentitynumber();
         lpselfteam = self.team;
         lpattackerteam = "";

@@ -73,7 +73,7 @@ function private function_88cb5e47(params) {
         if ([[ var_1d81ef2d.var_62f0c1c ]](var_1d81ef2d.capture_point, self)) {
             [[ var_1d81ef2d.var_32edfed ]](var_1d81ef2d.capture_point, self);
             self clientfield::set("sc_" + var_1d81ef2d.id, 1);
-            return;
+            break;
         }
     }
 }

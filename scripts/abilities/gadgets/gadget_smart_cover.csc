@@ -125,11 +125,11 @@ function function_1c2930c7(localclientnum) {
     level.smartcoversettings.var_aef370a9[localclientnum] = 1;
     function_722fc669(localclientnum);
     var_ccfe777 = 0;
-    while (1) {
+    while (true) {
         waitframe(1);
         player = function_5c10bd79(localclientnum);
         if (!isdefined(player)) {
-            return;
+            break;
         }
         var_b43e8dc2 = player function_287dcf4b(level.smartcoversettings.bundle.var_63aab046, level.smartcoversettings.bundle.maxwidth, 1, 1, level.smartcoversettings.smartcoverweapon);
         if (!isdefined(var_b43e8dc2) && !var_ccfe777) {
@@ -349,7 +349,7 @@ function startmicrowavefx(localclientnum) {
     microwavefxent.fxhashs = [];
     self thread cleanupfx(localclientnum, microwavefxent);
     wait(0.3);
-    while (1) {
+    while (true) {
         /#
             if (getdvarint(#"scr_microwave_turret_fx_debug", 0)) {
                 turret.should_update_fx = 1;
@@ -550,20 +550,20 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin, t
         fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave_sm" : "weapon/fx8_equip_smart_cover_microwave";
         switch (i) {
         case 0:
-            continue;
+            break;
         case 1:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx21", startfx, team);
-            continue;
+            break;
         case 2:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx31", startfx, team);
-            continue;
+            break;
         case 3:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx41", startfx, team);
-            continue;
+            break;
         case 4:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx51", startfx, team);
             self stop_or_start_fx(localclientnum, fxname, "tag_fx52", startfx, team);
-            continue;
+            break;
         }
     }
 }

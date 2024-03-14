@@ -42,7 +42,7 @@ function run_scene_tests() {
         level.scene_test_struct = spawnstruct();
         level.scene_test_struct.origin = (0, 0, 0);
         level.scene_test_struct.angles = (0, 0, 0);
-        while (1) {
+        while (true) {
             str_scene = getdvarstring(#"run_client_scene");
             str_mode = tolower(getdvarstring(#"scene_menu_mode", "<unknown string>"));
             a_toks = strtok(str_scene, "<unknown string>");
@@ -123,7 +123,7 @@ function toggle_scene_menu() {
     /#
         setdvar(#"client_scene_menu", 0);
         n_scene_menu_last = -1;
-        while (1) {
+        while (true) {
             n_scene_menu = getdvarstring(#"client_scene_menu");
             if (n_scene_menu != "<unknown string>") {
                 n_scene_menu = int(n_scene_menu);
@@ -235,7 +235,7 @@ function display_scene_menu(str_type, str_scene) {
         down_pressed = 0;
         held = 0;
         old_selected = selected;
-        while (1) {
+        while (true) {
             if (held) {
                 scene_list_settext(names, selected, str_title, 30);
                 wait(0.5);
@@ -535,7 +535,7 @@ function debug_display() {
         self endon(#"death");
         if (!(isdefined(self.debug_display) && self.debug_display) && self != level) {
             self.debug_display = 1;
-            while (1) {
+            while (true) {
                 level flagsys::wait_till("<unknown string>");
                 debug_frames = randomintrange(5, 15);
                 debug_time = debug_frames / 60;
@@ -551,7 +551,7 @@ function debug_display() {
                     print3d(self.origin - vectorscale((0, 0, 1), 15), self.scriptbundlename, (0.8, 0.2, 0.8), 1, 0.3, debug_frames);
                 } else {
                     self.debug_display = 0;
-                    return;
+                    break;
                 }
                 wait(debug_time);
             }

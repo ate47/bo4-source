@@ -69,9 +69,9 @@ function init_player_zombie_vars() {
 // Size: 0x1e
 function func_should_drop_minigun() {
     if (zm_powerups::minigun_no_drop()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_powerup_weapon_minigun/zm_powerup_weapon_minigun

@@ -147,12 +147,12 @@ function private _ispiecedestructed(localclientnum, entity, stoponpiecedestroyed
 // Size: 0x6e
 function private _shouldplayfx(localclientnum, entity, fxstruct) {
     if (_isgibbed(localclientnum, entity, fxstruct.stopongib)) {
-        return 0;
+        return false;
     }
     if (_ispiecedestructed(localclientnum, entity, fxstruct.stoponpiecedestroyed)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace fxclientutils/fx_character

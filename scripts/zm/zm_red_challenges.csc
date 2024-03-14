@@ -305,9 +305,9 @@ function function_4eff20ff() {
     level.var_6437d5e7 = 0.002;
     self function_78233d29("rob_zm_red_cin_coals", "", "Brightness", 1);
     self function_78233d29("rob_zm_red_cin_coals", "", "Tint", 1);
-    while (1) {
+    while (true) {
         if (!isdefined(self)) {
-            return;
+            break;
         }
         self function_78233d29("rob_zm_red_cin_coals", "", "Alpha", level.var_75ca8fda);
         level.var_75ca8fda = level.var_75ca8fda + level.var_6437d5e7;

@@ -39,7 +39,7 @@ function private function_97adc67(localclientnum) {
     if (!isdefined(self)) {
         return;
     }
-    while (1) {
+    while (true) {
         if (self clientfield::get("clone_control")) {
             players = getlocalplayers();
             foreach (player in players) {

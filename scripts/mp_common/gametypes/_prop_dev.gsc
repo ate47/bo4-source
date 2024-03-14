@@ -116,7 +116,7 @@ function function_93440c52() {
         adddevguicommand("<unknown string>", "<unknown string>");
         adddevguicommand("<unknown string>", "<unknown string>");
         adddevguicommand("<unknown string>", "<unknown string>");
-        while (1) {
+        while (true) {
             if (isdefined(level.prematch_over) && level.prematch_over) {
                 level.allow_teamchange = getdvarint(#"hash_7f436a7b31a003f3", 0);
                 level.var_a7997034 = getdvarint(#"hash_4819c54cbad5ed87", 0) != 0;
@@ -414,7 +414,7 @@ function debugaxis(origin, angles, size, alpha, depthtest, duration) {
 function function_c3c92269() {
     /#
         self endon(#"hash_3ecc0277d544b441");
-        while (1) {
+        while (true) {
             debugaxis(self.origin, self.angles, 100, 1, 0, 1);
             box(self.origin, self getmins(), self getmaxs(), self.angles[1], (1, 0, 1), 1, 0, 1);
             waitframe(1);
@@ -430,7 +430,7 @@ function function_4a5dac11() {
     /#
         self endon(#"hash_3ecc0277d544b441");
         self function_ea8e45a8(0);
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = self waittill(#"up", #"down", #"left", #"right", #"shot");
             msg = waitresult._notify;
@@ -469,7 +469,7 @@ function function_92f23bcd(val) {
         self endon(#"letgo");
         function_ea8e45a8(val);
         wait(0.5);
-        while (1) {
+        while (true) {
             function_ea8e45a8(val);
             wait(0.05);
         }
@@ -506,7 +506,7 @@ function function_cdf89a29(val) {
         self endon(#"letgo");
         function_75154360(val);
         wait(0.05);
-        while (1) {
+        while (true) {
             function_75154360(val);
             wait(0.05);
         }

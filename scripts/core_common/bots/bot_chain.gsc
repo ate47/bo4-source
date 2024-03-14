@@ -65,10 +65,10 @@ function private function_b1487cfa(var_72284260) {
             continue;
         }
         if (isdefined(entity.bot.var_53ffa4c4.var_4de004b7) && entity.bot.var_53ffa4c4.var_4de004b7 == var_72284260) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_chain/bot_chain
@@ -253,7 +253,7 @@ function private function_ea764100() {
         targetstructs = [];
         duration = 10;
         viewdistancesq = 3000 * 3000;
-        while (1) {
+        while (true) {
             waitframe(duration);
             var_b1285611 = getdvarint(#"hash_5bc9f81b4f504592", 0);
             if (!var_b1285611) {
@@ -389,12 +389,12 @@ function private function_ea88f102(entity, goal) {
         assert(isdefined(goal));
     #/
     if (!isdefined(entity.bot.var_53ffa4c4)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.bot.var_53ffa4c4.var_d1e3e893) && entity.bot.var_53ffa4c4.var_d1e3e893 == goal) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_chain/bot_chain
@@ -411,32 +411,32 @@ function private function_ce1ee70(goal, bot) {
     bots = bot bot::get_friendly_bots();
     arrayremovevalue(bots, bot);
     if (!bot.size) {
-        return 0;
+        return false;
     }
     if (ispathnode(goal)) {
         foreach (entity in bots) {
             if (function_ea88f102(entity, goal)) {
-                return 1;
+                return true;
             }
         }
-        return 0;
+        return false;
     } else if (goal.classname === "info_volume") {
         foreach (entity in bots) {
             if (function_ea88f102(entity, goal)) {
-                return 1;
+                return true;
             }
         }
-        return 0;
+        return false;
     }
     /#
         assert(isvec(goal));
     #/
     foreach (entity in bots) {
         if (function_ea88f102(entity, goal)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_chain/bot_chain
@@ -734,8 +734,8 @@ function function_58b429fb() {
         assert(isbot(self));
     #/
     if (isdefined(self.bot.var_53ffa4c4)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

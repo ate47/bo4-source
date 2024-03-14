@@ -268,9 +268,9 @@ function function_3019d870(origin, angles) {
 // Size: 0x48
 function function_c7561b46(target) {
     if (isplayer(target) && target isgrappling()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -279,12 +279,12 @@ function function_c7561b46(target) {
 // Size: 0xf2
 function function_5731c02c() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (!isdefined(self.owner) || !isdefined(self.owner.team) || self.owner.team != self.team || !self.owner hasweapon(level.var_9d47488.weapon) && !(isdefined(self.ishacked) && self.ishacked)) {
             self notify(#"abandoned");
             self.abandoned = 1;
             self function_afd97197();
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -482,7 +482,7 @@ function function_9a66b97b(target, tag, offset = (0, 0, 0), tagpos, seekermine) 
     self endon(#"death");
     target endon(#"death");
     self clientfield::set("seeker_mine_fx", 1);
-    while (1) {
+    while (true) {
         pos = target gettagorigin(tag);
         if (!isdefined(pos)) {
             pos = (0, 0, 0);

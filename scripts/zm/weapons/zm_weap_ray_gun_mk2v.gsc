@@ -96,7 +96,7 @@ function function_4e923311(weapon) {
 // Size: 0x1c4
 function function_8d93c592(w_curr) {
     self endon(#"death", #"stop_damage");
-    while (1) {
+    while (true) {
         v_position = self getweaponmuzzlepoint();
         v_forward = self getweaponforwarddir();
         a_trace = beamtrace(v_position, v_position + v_forward * 20000, 1, self);

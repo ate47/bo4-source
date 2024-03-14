@@ -132,7 +132,7 @@ function function_124362b5(is_powered) {
             level flag::set(#"pap_quest_completed");
             util::delay(30, "game_over", &function_3357bedc);
         }
-        return;
+        break;
     }
 }
 
@@ -375,7 +375,7 @@ function function_c0bc0375() {
     } else {
         level.var_2ba5b206 = level.round_number + randomintrangeinclusive(2, 4);
     }
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (level.round_number >= level.var_2ba5b206 && !zm_utility::is_standard()) {
             exploder::stop_exploder(var_45827936);

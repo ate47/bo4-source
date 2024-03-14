@@ -220,7 +220,7 @@ function function_9b917fd5(is_powered) {
 function player_teleporting() {
     self endon(#"death");
     user = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
@@ -785,20 +785,20 @@ function portal_init() {
     case #"portal_conference_level1":
     case #"portal_offices_level1":
         self.n_floor = 1;
-        return;
+        break;
     case #"portal_war_room_server_room":
     case #"portal_panic_room":
     case #"portal_war_room":
     case #"portal_war_room_map":
         self.n_floor = 2;
-        return;
+        break;
     case #"portal_labs_power_room":
     case #"portal_labs_hall2_west":
     case #"portal_labs_hall1_east":
     case #"portal_labs_hall2_east":
     case #"portal_labs_hall1_west":
         self.n_floor = 3;
-        return;
+        break;
     }
 }
 
@@ -833,7 +833,7 @@ function function_bbc76ca9() {
 function portal_think() {
     self endon(#"death");
     s_portal = self.stub.related_parent;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_user = waitresult.activator;
@@ -894,23 +894,23 @@ function function_79e8b4c6(var_9dff0a2b) {
     switch (self.n_dest) {
     case 0:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 1);
-        return;
+        break;
     case 1:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 4);
-        return;
+        break;
     case 2:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 5);
-        return;
+        break;
     case 4:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 1);
-        return;
+        break;
     case 3:
     case 5:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 2);
-        return;
+        break;
     case 6:
         self.var_a1cf77d2 clientfield::set("portal_dest_fx", 3);
-        return;
+        break;
     }
 }
 
@@ -947,7 +947,7 @@ function function_45a968e4() {
     } else {
         n_cycle_time = 5;
     }
-    while (1) {
+    while (true) {
         self.var_9f43786e = n_cycle_time;
         while (self.var_9f43786e > 0) {
             wait(1);
@@ -1097,9 +1097,9 @@ function function_2143dc13() {
     a_e_players = getplayers();
     foreach (e_player in a_e_players) {
         if (e_player.var_298e4578 === level.a_s_portals[#"portal_panic_room"]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 

@@ -22,7 +22,7 @@ function init_targets(targetname) {
 // Size: 0x152
 function private init_target() {
     if (!isdefined(self.target)) {
-        return 0;
+        return false;
     }
     structs = [];
     totalms = 0;
@@ -30,7 +30,7 @@ function private init_target() {
     struct = var_dc0e8c88;
     do {
         if (!isdefined(struct) || !isint(struct.script_int) || struct.script_int <= 0) {
-            return 0;
+            return false;
         }
         structs[structs.size] = struct;
         totalms = totalms + struct.script_int;
@@ -41,7 +41,7 @@ function private init_target() {
     #/
     self.structs = structs;
     self.totalms = totalms;
-    return 1;
+    return true;
 }
 
 // Namespace wz_firing_range/wz_firing_range
@@ -67,7 +67,7 @@ function private follow_path() {
         waitframe(1);
     }
     endtime = starttime;
-    while (1) {
+    while (true) {
         endtime = endtime + self.structs[0].script_int;
         movetime = function_5bab934a(self.structs[0], endtime);
         self function_49ed8678(self.structs[1].origin, movetime);

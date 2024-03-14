@@ -82,7 +82,7 @@ function spawnkilltrigger() {
 function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
@@ -127,7 +127,7 @@ function function_de525e63() {
 // Size: 0x96
 function function_1f5fd2c5(var_20aecb28) {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = var_20aecb28.mdl_gameobject waittill(#"gameobject_end_use_player");
         e_player = waitresult.player;

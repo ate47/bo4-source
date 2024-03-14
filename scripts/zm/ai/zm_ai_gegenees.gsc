@@ -200,17 +200,17 @@ function registerbehaviorscriptfunctions() {
 // Size: 0xe4
 function private function_d4f5b993(entity, eventname) {
     if (!isdefined(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     var_b3a11ca1 = blackboard::getblackboardevents(eventname);
     if (isdefined(var_b3a11ca1) && var_b3a11ca1.size) {
         foreach (var_8d7c592b in var_b3a11ca1) {
             if (var_8d7c592b.data.favoriteenemy === entity.favoriteenemy) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -275,9 +275,9 @@ function private function_4b8e0aab(entity) {
 // Size: 0x68
 function function_7f34a57c(entity) {
     if (function_697a9b7f(entity) && function_4b8e0aab(entity) && function_d4f5b993(entity, "geg_spear_attack")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -444,11 +444,11 @@ function private function_e0b648bb(entity) {
             dist_sq = distancesquared(entity.origin, entity.zombie_poi[1].origin);
             melee_dist_sq = zombiebehavior::function_997f1224(entity);
             if (dist_sq < melee_dist_sq) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -457,9 +457,9 @@ function private function_e0b648bb(entity) {
 // Size: 0x34
 function private function_d344063a(entity) {
     if (isdefined(entity.var_d64b7af0) && entity.var_d64b7af0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -501,7 +501,7 @@ function private function_3839537e(entity) {
 function private function_75db4aba(entity) {
     /#
         if (isdefined(entity.var_89b5e1e) && entity.var_89b5e1e) {
-            return 1;
+            return true;
         }
     #/
     var_98c55679 = 0;
@@ -512,12 +512,12 @@ function private function_75db4aba(entity) {
         }
     }
     if (!var_98c55679) {
-        return 0;
+        return false;
     }
     if (function_697a9b7f(entity, 300, 1200) && function_180db9a7(entity) && function_d4f5b993(entity, "geg_shield_attack")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -570,9 +570,9 @@ function private function_d82de95f(entity) {
 function private function_60164697() {
     self endon(#"death", #"disconnect");
     time = gettime() + 2000;
-    while (1) {
+    while (true) {
         if (gettime() > time) {
-            return;
+            break;
         }
         self playrumbleonentity("damage_heavy");
         waitframe(1);
@@ -775,13 +775,13 @@ function private function_a953d80d(entity) {
 // Size: 0x1a8
 function private function_3d752709(enemy, target) {
     if (isdefined(enemy.knockdown) && enemy.knockdown) {
-        return 0;
+        return false;
     }
     if (gibserverutils::isgibbed(enemy, 384)) {
-        return 0;
+        return false;
     }
     if (distancesquared(enemy.origin, target.origin) > self ai::function_9139c839().var_ef908ac8 * self ai::function_9139c839().var_ef908ac8) {
-        return 0;
+        return false;
     }
     facingvec = anglestoforward(target.angles);
     enemyvec = enemy.origin - target.origin;
@@ -791,9 +791,9 @@ function private function_3d752709(enemy, target) {
     var_c2ee8451 = vectornormalize(var_c2ee8451);
     var_34e02165 = vectordot(var_c2ee8451, var_3e3c8075);
     if (var_34e02165 < 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_gegenees/zm_ai_gegenees
@@ -1082,7 +1082,7 @@ function private function_c03e8d05() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             string = getdvarstring(#"hash_6e55ca7eb0bc5180", "<unknown string>");
             cmd = strtok(string, "<unknown string>");

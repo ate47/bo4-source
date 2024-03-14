@@ -218,7 +218,7 @@ function private function_33935d5f() {
             if (isdefined(self.badplace_name)) {
                 badplace_delete(self.badplace_name);
             }
-            return;
+            break;
         }
     }
 }
@@ -231,7 +231,7 @@ function private function_92e1954c() {
     self notify("602480c649d8e17f");
     self endon("602480c649d8e17f");
     level endon(#"end_game", #"boss_battle_done");
-    while (1) {
+    while (true) {
         level waittill(#"hash_3aa3137f1bf70773");
         level.var_49328379 = 1;
         wait(30);
@@ -247,7 +247,7 @@ function private function_4d682898() {
     self notify("1d04cafdc26414eb");
     self endon("1d04cafdc26414eb");
     level endon(#"end_game", #"boss_battle_done");
-    while (1) {
+    while (true) {
         level waittill(#"basket_hit");
         level.var_8b66546e = 1;
         wait(30);
@@ -267,7 +267,7 @@ function private function_3d487e02() {
     b_success = 0;
     params = getstatuseffect(#"hash_12a64221f4d27f9b");
     weapon = getweapon(#"eq_molotov");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"aoe_damage");
         if (waitresult.var_159100b7 == "zm_aoe_spear" || waitresult.var_159100b7 == "zm_aoe_spear_small" || waitresult.var_159100b7 == "zm_aoe_spear_big") {
@@ -319,7 +319,7 @@ function private function_95785950(var_c625106d, var_86163b89, n_stage, var_39ac
     self notify("683195b7da79b6b9");
     self endon("683195b7da79b6b9");
     level endon(#"end_game", #"boss_battle_done");
-    while (1) {
+    while (true) {
         wait(var_c625106d);
         if (isdefined(var_86163b89) && var_86163b89) {
             continue;

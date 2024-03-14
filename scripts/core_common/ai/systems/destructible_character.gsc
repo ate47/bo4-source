@@ -208,7 +208,7 @@ function destructnumberrandompieces(entity, num_pieces_to_destruct = 0) {
             destructpiece(entity, piece);
             num_pieces_to_destruct--;
             if (num_pieces_to_destruct == 0) {
-                return;
+                break;
             }
         }
     }

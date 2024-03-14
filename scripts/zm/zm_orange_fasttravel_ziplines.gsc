@@ -132,12 +132,12 @@ function function_13febd4b(e_holder, w_item) {
         level flag::set(#"hash_7d230fa8f283c105");
         level zm_ui_inventory::function_7df6bb60("zm_orange_zipquest_crank_1", 1);
         self playsound(#"hash_3ec95ad193e1c377");
-        return;
+        break;
     case #"hash_7ca6d96b2bfb822c":
         level.var_1537d233++;
         level zm_ui_inventory::function_7df6bb60("zm_orange_zipquest_crank_2", 1);
         self playsound(#"hash_3ec95ad193e1c377");
-        return;
+        break;
     }
 }
 
@@ -185,7 +185,7 @@ function function_29c3aabf(e_player) {
 function function_2713a96a() {
     level endon(#"end_game");
     self endon(#"hash_762e0e4561d25aeb");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -226,7 +226,7 @@ function function_665b4fa6() {
     self.var_3bc09679.play_queue = 0;
     var_ba7236d5 = 0;
     self.var_3bc09679 thread function_e76a1a06();
-    while (1) {
+    while (true) {
         s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
@@ -402,7 +402,7 @@ function function_e82679f8(e_player) {
 // Size: 0x2a8
 function function_d41f7e0e() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
@@ -634,7 +634,7 @@ function function_fc9707f4(vnd_start, s_zipline_use) {
 // Size: 0x158
 function private function_85a2c43b() {
     self.var_b20b0960 endon(#"death");
-    while (1) {
+    while (true) {
         waitframe(1);
         player_velocity = self getvelocity();
         player_forward = anglestoforward(self.angles) * (0, 1, 0);
@@ -666,7 +666,7 @@ function function_a949ddac() {
     self endon(#"disconnect");
     self.var_b20b0960 endon(#"reached_end_node");
     wait(0.5);
-    while (1) {
+    while (true) {
         foreach (ai in getaiteamarray(level.zombie_team)) {
             if (distancesquared(self.origin, ai.origin) < 324) {
                 if (music_box::function_3adb94b4(ai)) {

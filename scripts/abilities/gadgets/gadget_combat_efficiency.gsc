@@ -97,15 +97,15 @@ function function_a30493ef(attacker, lastkilltime, var_f231d134, var_77cc3ee4) {
 // Size: 0xce
 function function_db4ccff2(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(attacker) || !isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker.playerrole) && isdefined(attacker.playerrole.ultimateweapon)) {
         ultweapon = getweapon(attacker.playerrole.ultimateweapon);
         if (attacker ability_util::function_43cda488() && weapon == ultweapon) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace gadget_combat_efficiency/gadget_combat_efficiency

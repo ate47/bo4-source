@@ -66,7 +66,7 @@ function private function_13db986c(var_53c7b205) {
     self endon(#"death");
     level endon(#"hash_7646638df88a3656", #"end_game");
     self waittill(#"hash_7a32b2af2eef5415");
-    while (1) {
+    while (true) {
         if (isalive(self) && !self laststand::player_is_in_laststand()) {
             self dodamage(var_53c7b205, self.origin);
         }

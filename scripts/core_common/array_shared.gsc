@@ -235,7 +235,7 @@ function add_sorted(&array, item, allow_dupes = 1, func_compare, var_e19f0739 = 
             for (i = 0; i <= array.size; i++) {
                 if (i == array.size || isdefined(func_compare) && ([[ func_compare ]](item, array[i]) || var_e19f0739) || !isdefined(func_compare) && (item <= array[i] || var_e19f0739)) {
                     arrayinsert(array, item, i);
-                    return;
+                    break;
                 }
             }
         }
@@ -826,10 +826,10 @@ function wait_till_touching(&a_ents, e_volume) {
 function is_touching(&a_ents, e_volume) {
     foreach (e_ent in a_ents) {
         if (!e_ent istouching(e_volume)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace array/array_shared
@@ -840,10 +840,10 @@ function contains(array_or_val, value) {
     if (isarray(array_or_val)) {
         foreach (element in array_or_val) {
             if (element === value) {
-                return 1;
+                return true;
             }
         }
-        return 0;
+        return false;
     }
     return array_or_val === value;
 }
@@ -854,17 +854,17 @@ function contains(array_or_val, value) {
 // Size: 0xde
 function function_460f3c24(array1, array2) {
     if (!isarray(array1) || !isarray(array2)) {
-        return 0;
+        return false;
     }
     if (array1.size != array2.size) {
-        return 0;
+        return false;
     }
     foreach (key, v in array1) {
         if (v !== array2[key]) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace array/array_shared

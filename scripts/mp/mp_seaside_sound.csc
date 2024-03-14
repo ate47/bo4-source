@@ -14,7 +14,7 @@ function main() {
 // Checksum 0x84cb1318, Offset: 0x88
 // Size: 0x48
 function function_5831bc23() {
-    while (1) {
+    while (true) {
         wait(300);
         playsound(0, #"hash_5727281a9dcec94e", (-587, 2988, 1901));
     }

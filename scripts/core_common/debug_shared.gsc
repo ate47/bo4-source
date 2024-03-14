@@ -44,7 +44,7 @@ function devgui_debug_key_value() {
             util::wait_network_frame();
         }
         level flag::wait_till("<unknown string>");
-        while (1) {
+        while (true) {
             debug_key_value = getdvar(#"debug_key_value", 0);
             if (debug_key_value != 0) {
                 a_ents = getentarray();
@@ -76,7 +76,7 @@ function debug_draw_tuning_sphere() {
         n_sphere_radius = 0;
         v_text_position = (0, 0, 0);
         n_text_scale = 1;
-        while (1) {
+        while (true) {
             n_sphere_radius = getdvarfloat(#"debug_measure_sphere_radius", 0);
             while (n_sphere_radius >= 1) {
                 players = getplayers();
@@ -115,7 +115,7 @@ function debug_key_value(str_key, n_time, n_scale) {
                 __s endon(#"timeout");
                 __s util::delay_notify(n_time, "<unknown string>");
             }
-            while (1) {
+            while (true) {
                 value = self.(str_key);
                 if (isdefined(value)) {
                     print3d(self.origin, isdefined(value) ? "<unknown string>" + value : "<unknown string>", (0, 0, 1), 1, n_scale, 1);

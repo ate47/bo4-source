@@ -67,7 +67,7 @@ function state_off_update(params) {
         wait(0.1);
     }
     self.parent endon(#"death");
-    while (1) {
+    while (true) {
         self setspeed(400);
         if (isdefined(self.inpain) && self.inpain) {
             wait(0.1);
@@ -185,7 +185,7 @@ function spawnflakrocket(missile, spawnpos, parent) {
         debug_draw = getdvarint(#"scr_flak_drone_debug_trails", 0);
         debug_duration = getdvarint(#"scr_flak_drone_debug_trails_duration", 400);
     #/
-    while (1) {
+    while (true) {
         waitframe(1);
         prevdist = curdist;
         if (isdefined(rocket)) {

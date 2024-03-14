@@ -33,20 +33,20 @@ function function_f94325d3() {
         assert(isplayer(player), "<unknown string>");
     #/
     if (isbot(player) || isdefined(level.disablestattracking) && level.disablestattracking) {
-        return 0;
+        return false;
     }
     if (sessionmodeiswarzonegame()) {
         if (getdvarint(#"scr_disable_merits", 0) == 1) {
-            return 0;
+            return false;
         }
         if (!isdefined(game.state) || game.state == "pregame") {
-            return 0;
+            return false;
         }
         if (!isdedicated() && getdvarint(#"wz_stat_testing", 0) == 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace stats/player_stats
@@ -138,10 +138,10 @@ function set_stat(...) {
         assert(vararg.size > 1);
     #/
     if (vararg.size <= 1) {
-        return 0;
+        return false;
     }
     if (!function_f94325d3()) {
-        return 0;
+        return false;
     }
     result = 0;
     if (isdefined(self)) {
@@ -445,12 +445,12 @@ function function_eec52333(weapon, statname, value, classnum, pickedup, forceads
     case #"shots":
     case #"used":
         self function_f95ea9b6(weapon);
-        return;
+        break;
     case #"kills":
         if (weapon.var_ff0b00ba) {
             self function_dad108fa(#"kills_equipment", 1);
         }
-        return;
+        break;
     }
 }
 

@@ -160,7 +160,7 @@ function function_670635f5(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x40
 function function_ce8e5280() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self animation::play("ai_zombie_base_idle_au_v1");
     }
 }

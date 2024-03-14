@@ -35,7 +35,7 @@ function __init__() {
 // Size: 0x56
 function validation() {
     if (isdefined(level.var_375482b5) && level.var_375482b5) {
-        return 0;
+        return false;
     }
     return !(isdefined(self bgb::get_active()) && self bgb::get_active());
 }

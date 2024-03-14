@@ -45,7 +45,7 @@ function create_mp_contracts_devgui(localclientnum) {
         level endon(#"create_mp_contracts_devgui_singleton");
         remove_mp_contracts_devgui(localclientnum);
         waitframe(1);
-        if (0) {
+        if (false) {
             return;
         }
         frontend_slots = 3;
@@ -327,7 +327,7 @@ function watch_devgui() {
     /#
         level notify(#"watch_devgui_client_mp_singleton");
         level endon(#"watch_devgui_client_mp_singleton");
-        while (1) {
+        while (true) {
             wait(0.1);
             if (!dvar_has_value("<unknown string>")) {
                 continue;

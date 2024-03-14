@@ -166,13 +166,13 @@ function private function_e5ed6edb(weapon) {
 // Size: 0x72
 function private function_d0ae71bb(weapon) {
     if (isdefined(self function_79be4786(weapon))) {
-        return 1;
+        return true;
     }
     weaponoptions = self getbuildkitweaponoptions(weapon);
     if (getweaponmodelslot(weaponoptions) != 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_camos/zm_camos

@@ -39,15 +39,15 @@ function function_a1a81955() {
 function is_winner(outcome, team_or_player) {
     if (isplayer(team_or_player)) {
         if (isdefined(outcome.players) && outcome.players.size && outcome.players[0] == team_or_player) {
-            return 1;
+            return true;
         }
         if (isdefined(outcome.team) && outcome.team == team_or_player.team) {
-            return 1;
+            return true;
         }
     } else if (isdefined(outcome.team) && outcome.team == team_or_player) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace outcome/outcome

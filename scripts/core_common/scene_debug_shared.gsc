@@ -52,7 +52,7 @@ function run_scene_tests() {
     /#
         level endon(#"run_scene_tests");
         var_cdb63291 = 0;
-        while (1) {
+        while (true) {
             str_run_scene = getdvarstring(#"run_scene");
             a_toks = strtok(str_run_scene, "<unknown string>");
             str_scene = a_toks[0];
@@ -151,7 +151,7 @@ function toggle_scene_menu() {
     /#
         setdvar(#"scene_menu", 0);
         n_scene_menu_last = -1;
-        while (1) {
+        while (true) {
             n_scene_menu = getdvarstring(#"scene_menu");
             if (n_scene_menu != "<unknown string>") {
                 n_scene_menu = int(n_scene_menu);
@@ -307,7 +307,7 @@ function display_scene_menu(str_type, str_scene) {
         down_pressed = 0;
         held = 0;
         old_selected = selected;
-        while (1) {
+        while (true) {
             if (b_shot_menu) {
                 if (isdefined(level.last_scene_state) && isdefined(level.last_scene_state[str_scene])) {
                     str_title = str_scene + "<unknown string>" + level.last_scene_state[str_scene] + "<unknown string>";
@@ -647,7 +647,7 @@ function test_play(arg1, arg2, str_mode) {
 // Size: 0x11a
 function debug_display_all() {
     /#
-        while (1) {
+        while (true) {
             level flagsys::wait_till("<unknown string>");
             debug_frames = randomintrange(5, 10);
             debug_time = debug_frames / 20;
@@ -801,7 +801,7 @@ function set_origin(v_origin) {
 // Size: 0x7c
 function toggle_postfx_igc_loop() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"scr_postfx_igc_loop", 0)) {
                 array::run_all(level.activeplayers, &clientfield::increment_to_player, "<unknown string>", 1);
                 wait(4);
@@ -817,7 +817,7 @@ function toggle_postfx_igc_loop() {
 // Size: 0x2d6
 function function_42edf155() {
     /#
-        while (1) {
+        while (true) {
             var_45ec9741 = getdvarint(#"hash_1c68b689a2dac0fa", 0);
             if (var_45ec9741 != 0) {
                 position_x = 0;

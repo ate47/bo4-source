@@ -100,7 +100,7 @@ function private function_1d807685() {
         var_d0ba279f = 0;
         var_cd7ab272 = 0;
     #/
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -169,7 +169,7 @@ function private function_7bef3ea0(w_hero) {
 // Size: 0xe8
 function private function_c965a5a9(weapon) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    while (1) {
+    while (true) {
         if (weapon == level.hero_weapon[#"chakram"][2]) {
             self waittill(#"weapon_melee_power");
         } else {
@@ -558,7 +558,7 @@ function private function_3adb0798(e_target, n_kills) {
         var_fc51fa3d = level.hero_weapon_stats[#"chakram"][#"kill_limit"][self.var_72d6f15d];
         var_ece935b3 = var_ece935b3 / 2;
     }
-    while (1) {
+    while (true) {
         if (!isdefined(e_target)) {
             return 0;
         }
@@ -832,19 +832,19 @@ function chakram_rumble(var_b2e05bae) {
         switch (var_b2e05bae) {
         case 1:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            return;
+            break;
         case 2:
             self clientfield::increment_to_player("" + #"chakram_rumble", 2);
-            return;
+            break;
         case 3:
             self playrumbleonentity("zm_weap_chakram_melee_hit_rumble");
-            return;
+            break;
         case 4:
             self clientfield::increment_to_player("" + #"chakram_rumble", 4);
-            return;
+            break;
         case 5:
             self clientfield::increment_to_player("" + #"chakram_rumble", 5);
-            return;
+            break;
         }
     }
 }

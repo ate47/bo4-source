@@ -93,7 +93,7 @@ function function_f968291b(localclientnum, oldval, newval, bnewent, binitialsnap
         self.var_7a00469e = undefined;
     }
     if (newval == 1) {
-        while (1) {
+        while (true) {
             s_result = undefined;
             s_result = self waittill(#"hash_593064545176ab53", #"hash_23e33f0aec28e476", #"hash_6ab654a4c018818c");
             if (s_result._notify == #"hash_6ab654a4c018818c") {
@@ -441,7 +441,7 @@ function function_fdd08c0e(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x15a
 function private function_44181c14(localclientnum, n_val) {
     self endon(#"disconnect", #"hash_59d521ca45c97f9d");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_756fa7ee0161ce3", #"hash_5d32c2a5e7a152f2");
         if (!(isdefined(self.var_351e0bdc) && self.var_351e0bdc)) {
@@ -544,42 +544,42 @@ function function_8fd8b982(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1);
-        return;
+        break;
     case 1:
         self playrenderoverridebundle(#"hash_68ee9247aaae4517");
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1);
-        return;
+        break;
     case 2:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.2);
-        return;
+        break;
     case 3:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.3);
-        return;
+        break;
     case 4:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.4);
-        return;
+        break;
     case 5:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.5);
-        return;
+        break;
     case 6:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.6);
-        return;
+        break;
     case 7:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.7);
-        return;
+        break;
     case 8:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.8);
-        return;
+        break;
     case 9:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.9);
-        return;
+        break;
     case 10:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 2);
-        return;
+        break;
     }
 }
 
@@ -591,43 +591,43 @@ function function_acafe26b(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1);
-        return;
+        break;
     case 1:
         self playrenderoverridebundle(#"hash_24cdaac09819f0e");
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Brightness", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Alpha", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1);
-        return;
+        break;
     case 2:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.2);
-        return;
+        break;
     case 3:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.3);
-        return;
+        break;
     case 4:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.4);
-        return;
+        break;
     case 5:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.5);
-        return;
+        break;
     case 6:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.6);
-        return;
+        break;
     case 7:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.7);
-        return;
+        break;
     case 8:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.8);
-        return;
+        break;
     case 9:
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 1.9);
-        return;
+        break;
     case 10:
         self playrenderoverridebundle(#"hash_24cdaac09819f0e");
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Brightness", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Alpha", 1);
         self function_78233d29(#"hash_24cdaac09819f0e", "", "Tint", 2);
-        return;
+        break;
     }
 }
 
@@ -641,34 +641,34 @@ function function_ab71f1f5(localclientnum, oldval, newval, bnewent, binitialsnap
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Alpha", 1);
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 2);
-        return;
+        break;
     case 1:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.9);
-        return;
+        break;
     case 2:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.8);
-        return;
+        break;
     case 3:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.7);
-        return;
+        break;
     case 4:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.6);
-        return;
+        break;
     case 5:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.5);
-        return;
+        break;
     case 6:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.4);
-        return;
+        break;
     case 7:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.3);
-        return;
+        break;
     case 8:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.2);
-        return;
+        break;
     case 9:
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Tint", 1.1);
-        return;
+        break;
     case 10:
         self playrenderoverridebundle(#"hash_68ee9247aaae4517");
         self function_78233d29(#"hash_68ee9247aaae4517", "", "Brightness", 1);

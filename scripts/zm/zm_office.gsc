@@ -230,7 +230,7 @@ function function_c8ce0a17(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office/zm_office
@@ -243,7 +243,7 @@ function function_e5086229(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office/zm_office
@@ -304,7 +304,7 @@ function function_31085f45() {
     for (i = 0; i < level.chests.size; i++) {
         if (level.chests[i].script_noteworthy == "level1_chest1" || level.chests[i].script_noteworthy == "level1_chest2" || level.chests[i].script_noteworthy == "level1_chest3" || level.chests[i].script_noteworthy == "level2_chest3") {
             level.chest_index = i;
-            return;
+            break;
         }
     }
 }
@@ -342,7 +342,7 @@ function offhand_weapon_give_override(str_weapon) {
         self setweaponammoclip(self zm_loadout::get_player_tactical_grenade(), 0);
         self takeweapon(self zm_loadout::get_player_tactical_grenade());
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office/zm_office
@@ -435,7 +435,7 @@ function metal_detectors() {
 // Checksum 0x30b56929, Offset: 0x2768
 // Size: 0xf6
 function function_4a3d7c9e(trigger) {
-    while (1) {
+    while (true) {
         s_result = trigger trigger::wait_till();
         if (!isdefined(s_result.who)) {
             continue;
@@ -511,7 +511,7 @@ function function_cbc7dc41() {
     foreach (screen in var_458dae44) {
         screen show();
     }
-    while (1) {
+    while (true) {
         foreach (screen in var_458dae44) {
             screen show();
         }
@@ -598,9 +598,9 @@ function function_335eca01() {
 // Size: 0x7a
 function registerquest_key_pickup_explode(e_player) {
     if (e_player != self && e_player laststand::player_is_in_laststand() && !(isdefined(e_player.var_16735873) && e_player.var_16735873) && !zm_office_floors::function_ee59e344(e_player)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office/zm_office
@@ -637,7 +637,7 @@ function private office_devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"zm_office_devgui_cmd", "<unknown string>");
             switch (str_command) {

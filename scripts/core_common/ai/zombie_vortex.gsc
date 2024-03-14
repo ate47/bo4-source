@@ -319,7 +319,7 @@ function state_idgun_crush_update(params) {
     fly_ent = spawn("script_origin", self.origin);
     fly_ent thread flyentdelete(self);
     self linkto(fly_ent);
-    while (1) {
+    while (true) {
         veh_to_black_hole_dist_sqr = distancesquared(self.origin, black_hole_center);
         if (veh_to_black_hole_dist_sqr < 144) {
             self.veh_idgun_allow_damage = 1;
@@ -372,7 +372,7 @@ function state_idgun_flying_crush_update(params) {
 // Size: 0x84
 function switch_to_crush_asm(black_hole_center) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (distancesquared(self.origin, black_hole_center) < 900) {
             self asmrequestsubstate(#"hash_1d57c7f1617da95b");
             return;

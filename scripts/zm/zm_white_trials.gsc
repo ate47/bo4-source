@@ -47,7 +47,7 @@ function main() {
     var_d02e9cd = getent("counter_ones", "targetname");
     var_d02e9cd.start_angles = var_d02e9cd.angles;
     level.var_b691023c = 0;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_dc22f98)) {
             level.fn_custom_round_ai_spawn = level.var_dc22f98;
             level.var_dc22f98 = undefined;
@@ -170,9 +170,9 @@ function function_1bc491ab() {
         level.zombie_total--;
         n_delay = isdefined(zombie_utility::function_d2dfacfd(#"zombie_spawn_delay")) ? zombie_utility::function_d2dfacfd(#"zombie_spawn_delay") : zombie_utility::function_d2dfacfd(#"hash_7d5a25e2463f7fc5");
         wait(n_delay);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_trials/zm_white_trials

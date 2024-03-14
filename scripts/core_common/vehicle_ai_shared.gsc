@@ -34,15 +34,15 @@ function __init__() {
 // Size: 0xb6
 function entityisarchetype(entity, archetype) {
     if (!isdefined(entity)) {
-        return 0;
+        return false;
     }
     if (isplayer(entity) && entity.usingvehicle && isdefined(entity.viewlockedentity) && entity.viewlockedentity.archetype === archetype) {
-        return 1;
+        return true;
     }
     if (isvehicle(entity) && entity.archetype === archetype) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -162,13 +162,13 @@ function __fire_for_rounds_internal(firecount, fireinterval, turretidx, target) 
 // Size: 0x128
 function owner_in_line_of_fire() {
     if (!isdefined(self.owner)) {
-        return 0;
+        return false;
     }
     dist_squared_to_owner = distancesquared(self.owner.origin, self.origin);
     line_of_fire_dot = dist_squared_to_owner > 9216 ? 0.866 : 0.9848;
     gun_angles = self gettagangles(isdefined(self.avoid_shooting_owner_ref_tag) ? self.avoid_shooting_owner_ref_tag : "tag_flash");
     if (!isdefined(gun_angles)) {
-        return 0;
+        return false;
     }
     gun_forward = anglestoforward(gun_angles);
     dot = vectordot(gun_forward, vectornormalize(self.owner.origin - self.origin));
@@ -364,7 +364,7 @@ function javelin_losetargetatrighttimeprojectile(proj, target) {
             }
             if (distsq < 1200 * 1200) {
                 proj missile_settarget(undefined);
-                return;
+                break;
             }
         }
         wait(0.1);
@@ -458,7 +458,7 @@ function throw_off_balance(damagetype, hitpoint, hitdirection, hitlocationinfo) 
 // Size: 0xb0
 function predicted_collision() {
     self endon(#"crash_done", #"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         if (waitresult.normal[2] >= 0.6) {
@@ -489,7 +489,7 @@ function nudge_collision() {
     if (self.notsolid === 1) {
         return;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         velocity = waitresult.velocity;
@@ -538,7 +538,7 @@ function nudge_collision() {
 // Size: 0xfe
 function level_out_for_landing() {
     self endon(#"death", #"change_state", #"landed");
-    while (1) {
+    while (true) {
         velocity = self.velocity;
         self.angles = (self.angles[0] * 0.85, self.angles[1], self.angles[2] * 0.85);
         ang_vel = self getangularvelocity() * 0.85;
@@ -987,7 +987,7 @@ function is_instate(statename) {
     if (isdefined(self.current_role) && isdefined(self.state_machines[self.current_role].current_state)) {
         return (self.state_machines[self.current_role].current_state.name === statename);
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -1309,16 +1309,16 @@ function defaultstate_death_update(params) {
     switch (death_type) {
     case #"burning":
         burning_death(params);
-        return;
+        break;
     case #"emped":
         emped_death(params);
-        return;
+        break;
     case #"gibbed":
         gibbed_death(params);
-        return;
+        break;
     default:
         default_death(params);
-        return;
+        break;
     }
 }
 
@@ -1451,7 +1451,7 @@ function defaultstate_emped_exit(params) {
 // Checksum 0xfa8cc92b, Offset: 0x4f40
 // Size: 0x10
 function defaultstate_emped_reenter(params) {
-    return 1;
+    return true;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -1524,16 +1524,16 @@ function defaultstate_off_exit(params) {
 // Size: 0xa6
 function function_329f45a4(current_state, to_state, connection, params) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.emped) && self.emped || isdefined(self.jammed) && self.jammed) {
-        return 0;
+        return false;
     }
     driver = self getseatoccupant(0);
     if (isplayer(driver)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -1544,10 +1544,10 @@ function function_6664e3af(current_state, to_state_name, connection, params) {
     if (isalive(self)) {
         driver = self getseatoccupant(0);
         if (!isdefined(driver)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -1681,9 +1681,9 @@ function debugscore(entity, num, sorted) {
 // Size: 0x3c
 function _less_than_val(left, right) {
     if (!isdefined(left)) {
-        return 0;
+        return false;
     } else if (!isdefined(right)) {
-        return 1;
+        return true;
     }
     return left < right;
 }
@@ -1899,7 +1899,7 @@ function positionquery_postprocess_removeoutofgoalradius(queryresult, tolerance 
 // Size: 0xb8
 function target_hijackers() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"ccom_lock_being_targeted");
         hijackingplayer = waitresult.hijacking_player;

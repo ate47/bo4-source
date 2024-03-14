@@ -264,17 +264,17 @@ function get_killstreak_bundle() {
 function is_valid_target(potential_target, friendly_team) {
     if (isdefined(potential_target)) {
         if (isplayer(potential_target) && isdefined(potential_target.laststand) && potential_target.laststand) {
-            return 0;
+            return false;
         }
         if (issentient(potential_target) && potential_target.var_d600e174 === 1) {
-            return 0;
+            return false;
         }
         if (!isdefined(potential_target.team) || !util::function_fbce7263(potential_target.team, friendly_team)) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ultimate_turret/ultimate_turret
@@ -288,7 +288,7 @@ function function_fefefcc4() {
     wait(0.8);
     bundle = get_killstreak_bundle();
     var_beeadda8 = isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 300;
-    while (1) {
+    while (true) {
         if (!isdefined(turretvehicle.enemy) && !(isdefined(turretvehicle.isstunned) && turretvehicle.isstunned) && !(isdefined(turretvehicle.isjammed) && turretvehicle.isjammed)) {
             /#
                 var_beeadda8 = isdefined(bundle.var_5fa88c50) ? bundle.var_5fa88c50 : 300;
@@ -334,9 +334,9 @@ function function_9d86d74c(enemy) {
     var_6551f24e = anglestoforward(fire_angles);
     target_offset = shoot_at_pos - fire_origin;
     if (lengthsquared(target_offset) < 22 * 22 && vectordot(var_6551f24e, target_offset) < 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ultimate_turret/ultimate_turret

@@ -104,7 +104,7 @@ function ee_tundragun_step1_cleanup(var_5ea5c94d, ended_early) {
 function private function_f16c0259() {
     self endon(#"death");
     level endon(#"end_game", #"hash_478e70a97b556206");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         level.var_97da986d.var_af9bf642 = s_notify.inflictor;

@@ -131,7 +131,7 @@ function private getfacialanimoverride(localclientnum) {
 // Size: 0xa6
 function private function_176c97f8(substate) {
     if (!isdefined(substate)) {
-        return 0;
+        return false;
     }
     return substate == #"pain" || substate == #"inplace_pain" || substate == #"pain_intro" || substate == #"pain_outro" || substate == #"painrecovery" || substate == #"pronepain";
 }
@@ -142,7 +142,7 @@ function private function_176c97f8(substate) {
 // Size: 0x5e
 function private function_f5dde44(substate) {
     if (!isdefined(substate)) {
-        return 0;
+        return false;
     }
     return substate == #"melee" || substate == #"charge_melee" || substate == #"hash_48dda7ed88efe32f";
 }
@@ -238,7 +238,7 @@ function private secondaryfacialanimationthink(localclientnum) {
             self._currentfacestate = nextfacestate;
         }
         if (self._currentfacestate == "death") {
-            return;
+            break;
         }
         wait(0.25);
     }

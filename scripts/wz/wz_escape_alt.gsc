@@ -716,9 +716,9 @@ function function_4b227faf() {
             switch (group.scriptbundlename) {
             case #"wz_escape_zodiac":
                 var_dc1ea650 = group;
-                continue;
+                break;
             default:
-                continue;
+                break;
             }
         }
         var_4ff6627b = [];

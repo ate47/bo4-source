@@ -123,7 +123,7 @@ function function_f084faed() {
 // Size: 0xce
 function function_3326cf8d() {
     /#
-        while (1) {
+        while (true) {
             var_14d21c2b = getdvarstring(#"scr_set_spawns");
             if (var_14d21c2b != "<unknown string>") {
                 function_f084faed();
@@ -229,7 +229,7 @@ function function_88770699(spawnlist) {
         if (!isdefined(hostplayer)) {
             return;
         }
-        while (1) {
+        while (true) {
             color = (1, 1, 1);
             var_7a594c78 = getdvarstring(#"hash_4c1fd51cfe763a2");
             var_55a94d2c = getdvarstring(#"hash_6d53bd520b4f7853");

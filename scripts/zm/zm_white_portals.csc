@@ -173,21 +173,21 @@ function function_e4ea441(localclientnum, oldval, newval, bnewent, binitialsnap,
     case 1:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_69091fb60c4fb574"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        return;
+        break;
     case 2:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_690922b60c4fba8d"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        return;
+        break;
     case 3:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_690921b60c4fb8da"], self, "tag_origin");
         self.var_81884612 = self playloopsound(#"evt_teleporter_loop", 1.75);
-        return;
+        break;
     case 4:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_44687d6082f9a0a4"], self, "tag_origin");
-        return;
+        break;
     case 5:
         self.effect_id = util::playfxontag(localclientnum, level._effect[#"hash_2e43973bc23c661d"], self, "tag_origin");
-        return;
+        break;
     }
 }
 
@@ -452,7 +452,7 @@ function get_portals(localclientnum) {
 function function_73460c84(var_4749e403) {
     for (var_455a6779 = 0; var_455a6779 < var_4749e403; var_455a6779++) {
         if (isdefined(self.model)) {
-            return;
+            break;
         }
         waitframe(1);
     }

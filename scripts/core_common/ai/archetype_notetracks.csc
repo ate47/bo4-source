@@ -40,7 +40,7 @@ function private addsurfacenotetrackfxhandler(localclientnum, notetrack, surface
 function private handlesurfacenotetrackfx(localclientnum, notetrack, surfacetable) {
     entity = self;
     entity endon(#"death");
-    while (1) {
+    while (true) {
         entity waittill(notetrack);
         fxname = entity getaifxname(localclientnum, surfacetable);
         if (isdefined(fxname)) {

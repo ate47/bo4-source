@@ -98,7 +98,7 @@ function sq_bg_macguffin_think() {
     self.health = 10000;
     self setcandamage(1);
     self setforcenocull();
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker) && (s_result.weapon == getweapon(#"tomahawk_t8") || s_result.weapon == getweapon(#"tomahawk_t8_upgraded"))) {
@@ -127,10 +127,10 @@ function wait_and_hide_sq_bg_macguffin() {
 // Size: 0x210
 function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
     if (!isdefined(level.sq_bg_macguffins) || level.sq_bg_macguffins.size <= 0) {
-        return 0;
+        return false;
     }
     if (!isdefined(e_grenade)) {
-        return 0;
+        return false;
     }
     foreach (var_a2a0a44e in level.sq_bg_macguffins) {
         if (!isdefined(var_a2a0a44e)) {
@@ -146,10 +146,10 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
             var_a2a0a44e clientfield::set("" + #"hash_3c8cd47650fbb324", 2);
             self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
             self thread give_player_macguffin_upon_receipt(mdl_tomahawk, var_a2a0a44e);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_escape_sq_bg/zm_escape_sq_bg
@@ -175,7 +175,7 @@ function give_player_macguffin_upon_receipt(mdl_tomahawk, var_a2a0a44e) {
 function check_sq_bg_progress() {
     n_macguffins_total = level.sq_bg_macguffins.size;
     n_macguffins_collected = 0;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"sq_bg_macguffin_collected");
         e_player = s_result.e_player;
@@ -262,7 +262,7 @@ function private function_d61275a7() {
 // Size: 0x6c
 function sq_bg_spawn_rumble() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {

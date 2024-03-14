@@ -89,7 +89,7 @@ function function_b5f900c3() {
 function function_39c9e020() {
     level endon(#"end_game");
     a_str_zones = array("main_entrance", "loading_platform");
-    while (1) {
+    while (true) {
         if (zm_hms_util::any_player_in_zone(a_str_zones)) {
             break;
         }
@@ -121,7 +121,7 @@ function function_39c9e020() {
 // Size: 0x64
 function sun_deck_watcher() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         if (zm_hms_util::any_player_in_zone("sun_deck")) {
             break;
         }

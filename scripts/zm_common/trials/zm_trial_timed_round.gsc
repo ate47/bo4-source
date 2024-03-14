@@ -123,7 +123,7 @@ function private function_14a98a41(str_label, n_time_limit) {
     level endon(#"end_of_round", #"host_migration_begin");
     level.var_489d6aa2 = str_label;
     level.var_869f4c31 = n_time_limit;
-    while (1) {
+    while (true) {
         wait(1);
         level.var_869f4c31--;
     }

@@ -30,7 +30,7 @@ function __init__() {
 // Size: 0x132
 function ai_puppeteer_think() {
     /#
-        while (1) {
+        while (true) {
             if (getdvar(#"debug_ai_puppeteer", 0) && !(isdefined(level.ai_puppeteer_active) && level.ai_puppeteer_active)) {
                 level.ai_puppeteer_active = 1;
                 level notify(#"kill ai puppeteer");
@@ -80,7 +80,7 @@ function ai_puppet_manager() {
     /#
         level endon(#"kill ai puppeteer");
         self endon(#"death");
-        while (1) {
+        while (true) {
             if (isdefined(level.playercursor[#"position"]) && isdefined(level.ai_puppet) && isdefined(level.ai_puppet.debuglookatenabled) && level.ai_puppet.debuglookatenabled == 1) {
                 level.ai_puppet lookatpos(level.playercursor[#"position"]);
             }
@@ -293,7 +293,7 @@ function ai_puppet_cursor_tracker() {
     /#
         level endon(#"kill ai puppeteer");
         self endon(#"death");
-        while (1) {
+        while (true) {
             forward = anglestoforward(self getplayerangles());
             forward_vector = vectorscale(forward, 4000);
             level.playercursor = physicstrace(self geteye(), self geteye() + forward_vector, (0, 0, 0), (0, 0, 0), self, 8 | 2);

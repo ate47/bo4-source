@@ -40,13 +40,13 @@ function function_6e3ecc82(localclientnum, oldval, newval, bnewent, binitialsnap
         if (isdefined(self.fx)) {
             stopfx(localclientnum, self.fx);
         }
-        return;
+        break;
     case 1:
     case 2:
     case 3:
         self util::waittill_dobj(localclientnum);
         self.fx = util::playfxontag(localclientnum, level._effect[#"chaos_bolt_" + newval], self, "tag_origin");
-        return;
+        break;
     }
 }
 
@@ -150,7 +150,7 @@ function private function_e9aa9e80(localclientnum) {
     }
     self.e_fx = util::spawn_model(localclientnum, #"tag_origin", e_ball.origin);
     self.fx_arc = util::playfxontag(localclientnum, level._effect[#"lightning_arc"], self.e_fx, "tag_origin");
-    while (1) {
+    while (true) {
         str_fx_tag = isdefined(self gettagorigin("j_mainroot")) ? "j_mainroot" : "tag_driver";
         var_a05eed18 = self gettagorigin(str_fx_tag);
         if (isdefined(var_a05eed18)) {

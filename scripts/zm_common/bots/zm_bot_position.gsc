@@ -75,11 +75,11 @@ function function_a3d8f155(params, tacbundle) {
         allies[allies.size] = player;
     }
     if (allies.size <= 0) {
-        return 0;
+        return false;
     }
     closestally = arraygetclosest(self.origin, allies);
     self bot_position::set_position(closestally.origin);
-    return 1;
+    return true;
 }
 
 // Namespace zm_bot_position/zm_bot_position

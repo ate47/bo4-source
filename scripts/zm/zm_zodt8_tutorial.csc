@@ -47,16 +47,16 @@ function function_9fc8cc9c(localclientnum) {
             switch (i) {
             case 0:
                 mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_staminup");
-                continue;
+                break;
             case 1:
                 mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_bandolierbandit");
-                continue;
+                break;
             case 2:
                 mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_timeslip");
-                continue;
+                break;
             case 3:
                 mdl_icon setmodel(#"p8_zm_vapor_altar_icon_01_deadshot");
-                continue;
+                break;
             }
         }
     }

@@ -161,7 +161,7 @@ function private function_69db754(entity, gibflag) {
 // Checksum 0xbbb1e23, Offset: 0xb08
 // Size: 0x240
 function private _annihilatecorpse() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"corpse_explode");
         localclientnum = waitresult.localclientnum;

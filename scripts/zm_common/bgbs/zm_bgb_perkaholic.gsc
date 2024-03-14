@@ -33,15 +33,15 @@ function __init__() {
 // Size: 0x90
 function validation() {
     if (isdefined(self.var_1eba264f) && self.var_1eba264f) {
-        return 0;
+        return false;
     }
     if (zm_trial_disable_perks::is_active() || zm_trial_randomize_perks::is_active()) {
-        return 0;
+        return false;
     }
     if (self zm_perks::function_80cb4982() && self zm_perks::function_9a0e9d65()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_perkaholic/zm_bgb_perkaholic

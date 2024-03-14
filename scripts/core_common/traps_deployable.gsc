@@ -244,12 +244,12 @@ function function_cf4b6e75(var_2d727ba0) {
         /#
             printinfo("<unknown string>" + var_2d727ba0.name);
         #/
-        return 1;
+        return true;
     }
     /#
         printerror("<unknown string>");
     #/
-    return 0;
+    return false;
 }
 
 // Namespace traps_deployable/traps_deployable
@@ -595,7 +595,7 @@ function function_94e3167b(mdl_gameobject) {
 // Checksum 0xd3353a16, Offset: 0x1ea8
 // Size: 0x20
 function function_c26db3e(origin, angles, player) {
-    return 1;
+    return true;
 }
 
 // Namespace traps_deployable/traps_deployable
@@ -727,7 +727,7 @@ function function_59a79a68(var_3af54106, damage_callback, destroyed_callback, em
     /#
         assert(!isvehicle(self) || !issentient(self), "<unknown string>");
     #/
-    while (1) {
+    while (true) {
         weapon_damage = undefined;
         waitresult = undefined;
         waitresult = self waittill(#"damage");
@@ -1264,7 +1264,7 @@ function function_ef942626() {
 function function_3b7cb719() {
     /#
         level.trapddebug = getdvarint(#"scr_trapd_debug", 0);
-        while (1) {
+        while (true) {
             trapddebug = level.trapddebug;
             level.trapddebug = getdvarint(#"scr_trapd_debug", 0);
             if (!(trapddebug === level.trapddebug)) {
@@ -1315,7 +1315,7 @@ function destroy_traps() {
 function debug_init() {
     /#
         thread function_3b7cb719();
-        while (1) {
+        while (true) {
             debugint = getdvarint(#"scr_trapd_int", 0);
             if (debugint) {
                 switch (debugint) {

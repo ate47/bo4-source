@@ -189,20 +189,20 @@ function function_ab5be907(tacbundle, params, node) {
 // Size: 0xbe
 function g_stop_player_too_many_weapons_monitor(name) {
     if (!isdefined(name)) {
-        return 0;
+        return false;
     }
     func = level.botstances[name];
     if (!isdefined(func)) {
         /#
             self botprinterror("<unknown string>" + function_9e72a96(name));
         #/
-        return 0;
+        return false;
     }
     /#
         self bot::record_text("<unknown string>" + function_9e72a96(name), (1, 1, 0), "<unknown string>");
     #/
     self [[ func ]]();
-    return 1;
+    return true;
 }
 
 // Namespace bot_stance/bot_stance

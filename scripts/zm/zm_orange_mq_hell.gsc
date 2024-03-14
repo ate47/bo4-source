@@ -174,7 +174,7 @@ function function_556d1b32() {
 // Size: 0x170
 function function_af9fb8d1() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         n_radius_sqr = self.n_radius * self.n_radius;
         a_e_players = getplayers();
         foreach (e_player in a_e_players) {
@@ -197,7 +197,7 @@ function function_af9fb8d1() {
 // Checksum 0x8019556a, Offset: 0xfd0
 // Size: 0x6
 function no_delay() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell
@@ -278,7 +278,7 @@ function spawn_guide() {
 // Size: 0x4e
 function rotate_forever(v_rotation) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self rotatevelocity(v_rotation, 60);
         wait(60);
     }
@@ -426,7 +426,7 @@ function function_25c6ed8d() {
 // Size: 0x13c
 function function_93a18905() {
     self endoncallback(&function_c1189522, #"death");
-    while (1) {
+    while (true) {
         n_radius_sqr = self.n_radius * self.n_radius;
         foreach (e_player in getplayers()) {
             if (distancesquared(self.origin, e_player.origin) > n_radius_sqr) {
@@ -488,7 +488,7 @@ function function_36eb3c96(var_88206a50, ent) {
         b_in_range = distancesquared(var_88206a50.origin, ent.origin) < level.var_5d5b7e8e.var_a41818b5.e_ring.n_radius * level.var_5d5b7e8e.var_a41818b5.e_ring.n_radius;
         return (b_killed_by_player && b_in_range);
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_mq_hell/zm_orange_mq_hell

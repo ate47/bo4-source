@@ -222,7 +222,7 @@ function function_d4147875(var_5ea5c94d) {
     /#
         println("<unknown string>");
     #/
-    while (1) {
+    while (true) {
         waitframe(1);
         _attack_barrier_sprint = vectornormalize(veh_end.origin - level.sam.origin);
         var_7d910a84 = vectordot(_attack_barrier_sprint, anglestoforward(level.sam.angles));
@@ -267,7 +267,7 @@ function function_895265b1(var_5ea5c94d, ended_early) {
 // Checksum 0x5e723729, Offset: 0x14b8
 // Size: 0xbc
 function function_74963add() {
-    while (1) {
+    while (true) {
         waitframe(1);
         _attack_barrier_sprint = vectornormalize(self.origin - level.sam.origin);
         var_7d910a84 = vectordot(_attack_barrier_sprint, anglestoforward(level.sam.angles));
@@ -311,7 +311,7 @@ function hud_enable() {
 function function_b20c4898() {
     level endon(#"end_game");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self status_effect::status_effect_apply(level.var_583a0efc, undefined, self, 0);
         wait(30);
     }

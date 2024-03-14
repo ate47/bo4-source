@@ -356,10 +356,10 @@ function function_a39e7a56() {
             n_delay = isdefined(zombie_utility::function_d2dfacfd(#"zombie_spawn_delay")) ? zombie_utility::function_d2dfacfd(#"zombie_spawn_delay") : zombie_utility::function_d2dfacfd(#"hash_7d5a25e2463f7fc5");
             level.defend_spawns++;
             wait(n_delay);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_zstandard/zm_orange_zstandard
@@ -397,7 +397,7 @@ function function_84139b27() {
 function function_466fb0ff(str_last_defend) {
     level endon(#"end_game");
     str_next_defend = zm_utility::function_40ef77ab(str_last_defend);
-    for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); 1; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
+    for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); true; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
         util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
         wait(25);
         level thread function_c87db3f7();
@@ -416,7 +416,7 @@ function function_1dcc39ae() {
         str_next_defend = zm_utility::function_40ef77ab("move_down_9");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
-        while (1) {
+        while (true) {
             zm_utility::function_11101458(str_next_defend);
             wait(5);
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);
@@ -568,7 +568,7 @@ function function_4fe4866f() {
 function function_f8dc2ddb(n_obj_id) {
     level endon(#"end_game");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_results = undefined;
         s_results = self waittill(#"hash_702a9c7f10066b19", #"death");
         if (s_results.str_location === "lighthouse_to_facility" || s_results._notify === "death") {

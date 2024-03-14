@@ -72,7 +72,7 @@ function private function_d765daa4(localclientnum) {
     self endon(#"death");
     self endon(#"exit_vehicle");
     self endon(#"hash_16c59bda348653cd");
-    while (1) {
+    while (true) {
         vehicle = getplayervehicle(self);
         if (isdefined(vehicle)) {
             break;
@@ -81,7 +81,7 @@ function private function_d765daa4(localclientnum) {
     }
     vehicle endon(#"death");
     filter::init_filter_vehicle_hijack_oor(self);
-    while (1) {
+    while (true) {
         var_e96a9222 = self clientfield::get_to_player("recon_out_of_circle") / 31;
         var_2a1bc201 = distance(self.origin, vehicle.origin);
         if (var_2a1bc201 < 7000 && var_e96a9222 <= 0) {

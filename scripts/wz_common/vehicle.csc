@@ -86,7 +86,7 @@ function private function_54e9d3c4(localclientnum) {
     self endon(#"death");
     self endon(#"exit_vehicle");
     vehicle = undefined;
-    while (1) {
+    while (true) {
         vehicle = getplayervehicle(self);
         if (isdefined(vehicle)) {
             break;
@@ -117,16 +117,16 @@ function private function_54e9d3c4(localclientnum) {
 function function_3ec2efae(localclientnum) {
     vehicle = getplayervehicle(self);
     if (!isdefined(vehicle) || !vehicle isvehicle()) {
-        return 0;
+        return false;
     }
     if (!isdefined(vehicle.owner)) {
-        return 0;
+        return false;
     }
     if (util::function_fbce7263(vehicle.owner.team, self.team)) {
-        return 0;
+        return false;
     }
     if (!isdefined(vehicle.scriptbundlesettings)) {
-        return 0;
+        return false;
     }
     if (!isdefined(vehicle.settings)) {
         vehicle.settings = struct::get_script_bundle("vehiclecustomsettings", vehicle.scriptbundlesettings);
@@ -134,10 +134,10 @@ function function_3ec2efae(localclientnum) {
     if (isdefined(vehicle.settings) && isdefined(vehicle.settings.var_6754976b) && vehicle.settings.var_6754976b) {
         var_1861e0b1 = vehicle clientfield::get("toggle_horn_sound");
         if (isdefined(var_1861e0b1) && var_1861e0b1) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_vehicle/vehicle
@@ -316,7 +316,7 @@ function private function_b0d51c9(localclientnum, owner) {
 // Checksum 0x76ba0f69, Offset: 0x1370
 // Size: 0x18
 function private function_74272495(localclientnum, owner) {
-    return 1;
+    return true;
 }
 
 // Namespace wz_vehicle/vehicle
@@ -325,7 +325,7 @@ function private function_74272495(localclientnum, owner) {
 // Size: 0xa0
 function private function_69fda304(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"enter_vehicle");
         if (isdefined(waitresult.player)) {
@@ -387,7 +387,7 @@ function private function_732976d8(localclientnum, vehicle) {
     self endon(#"disconnect");
     var_26408b5d = 210 * 210;
     offsetorigin = (0, 0, 210 * 2);
-    while (1) {
+    while (true) {
         if (!isdefined(vehicle) || !isinvehicle(localclientnum, vehicle)) {
             break;
         }
@@ -474,7 +474,7 @@ function private function_a998aede(localclientnum, oldval, newval, bnewent, bini
 // Checksum 0xf7bd962f, Offset: 0x1ab8
 // Size: 0x278
 function private function_8fd2e04f(localclientnum) {
-    while (1) {
+    while (true) {
         if (isarray(level.allvehicles)) {
             player = function_5c10bd79(localclientnum);
             playfx = isdefined(player) && isalive(player) && player function_3ec2efae(localclientnum);

@@ -79,20 +79,20 @@ function __init__() {
 function function_65a59ce0(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
         if (w_current == level.var_c9d375dc.melee_weapon_upgraded) {
-            return 1;
+            return true;
         }
         if (w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (w_current == level.var_c9d375dc.melee_weapon || w_current == level.var_c9d375dc.melee_weapon_upgraded) {
-        return 1;
+        return true;
     }
     if (w_current == level.var_c9d375dc.firestorm_weapon || w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_52d8d460/zm_towers_shield
@@ -102,14 +102,14 @@ function function_65a59ce0(w_current, var_5738ae72 = 0) {
 function function_ed81d8f5(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
         if (w_current == level.var_c9d375dc.melee_weapon_upgraded) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (w_current == level.var_c9d375dc.melee_weapon || w_current == level.var_c9d375dc.melee_weapon_upgraded) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_52d8d460/zm_towers_shield
@@ -119,14 +119,14 @@ function function_ed81d8f5(w_current, var_5738ae72 = 0) {
 function function_a57b8fca(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
         if (w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (w_current == level.var_c9d375dc.firestorm_weapon || w_current == level.var_c9d375dc.firestorm_weapon_upgraded) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_52d8d460/zm_towers_shield
@@ -178,16 +178,16 @@ function function_28f576a9(player) {
 // Size: 0x5d6
 function function_22d79d55(player) {
     if (!(player flag::get(#"hash_4246a36eeaccdedb") && player flag::get(#"hash_1e11ea0627c40424") && player flag::get(#"hash_15ea02b45ed633fa"))) {
-        return 1;
+        return true;
     }
     w_shield = getweapon(#"zhield_zword_dw");
     w_shield_upgraded = getweapon(#"zhield_zword_dw_upgraded");
     if (player != self.parent_player) {
-        return 0;
+        return false;
     }
     if (!zm_utility::is_player_valid(player)) {
         player thread zm_utility::ignore_triggers(0.5);
-        return 0;
+        return false;
     }
     if (player hasweapon(w_shield)) {
         player zm_weapons::weapon_take(w_shield);
@@ -205,13 +205,13 @@ function function_22d79d55(player) {
         }
         self.var_824b5a74[n_ent_num] setinvisibletoall();
         self.var_824b5a74[n_ent_num] setvisibletoplayer(player);
-        return 0;
+        return false;
     }
     if (player zm_crafting::function_2d53738e(w_shield_upgraded)) {
         if (isdefined(self.stub.blueprint.var_54a97edd.isriotshield) && self.stub.blueprint.var_54a97edd.isriotshield && isdefined(player.player_shield_reset_health) && isdefined(player.var_d3345483) && player.var_d3345483) {
             var_d97673ff = 1;
         } else {
-            return 0;
+            return false;
         }
     }
     if (isdefined(var_d97673ff) && var_d97673ff) {
@@ -224,7 +224,7 @@ function function_22d79d55(player) {
             } else {
                 zm_utility::play_sound_on_ent("no_purchase");
                 player thread zm_audio::create_and_play_dialog("general", "outofmoney");
-                return 0;
+                return false;
             }
         }
         player [[ player.player_shield_reset_health ]](w_shield_upgraded, 1);
@@ -238,7 +238,7 @@ function function_22d79d55(player) {
             } else {
                 zm_utility::play_sound_on_ent("no_purchase");
                 player thread zm_audio::create_and_play_dialog("general", "outofmoney");
-                return 0;
+                return false;
             }
         }
         if (isdefined(player.hasriotshield) && player.hasriotshield && isdefined(player.weaponriotshield)) {
@@ -246,7 +246,7 @@ function function_22d79d55(player) {
         }
         player thread zm_weapons::weapon_give(w_shield_upgraded);
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_52d8d460/zm_towers_shield
@@ -255,7 +255,7 @@ function function_22d79d55(player) {
 // Size: 0x30a
 function function_4591fd41() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"destroy_riotshield", #"flame_off", #"weapon_change", #"fake_death");
         if (s_waitresult._notify == "weapon_change") {
@@ -326,7 +326,7 @@ function function_fbe77fa4(weapon) {
 // Size: 0x84
 function function_982a8c76() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_melee");
         waitframe(9);
@@ -520,7 +520,7 @@ function function_693527ec(str_piece) {
     self.var_7788a78c = var_f4c9f09a;
     self.var_5cff93b1 = var_f00b4f9f;
     s_unitrigger = self zm_unitrigger::create(&function_fb466de8, 96);
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
@@ -600,7 +600,7 @@ function function_cf5cc33b(b_skipped = 0) {
         return;
     }
     self.var_12c9426e = [];
-    while (1) {
+    while (true) {
         waitframe(1);
         if (self flag::get_any(array(#"hash_320a1da5bf925c8b", #"hash_3551c4ab09311644"))) {
             return;
@@ -626,7 +626,7 @@ function function_aa1e87dd(b_skipped = 0, var_19e802fa = 0) {
 // Size: 0x228
 function function_a9311397() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
@@ -663,7 +663,7 @@ function function_9bf405ce(b_skipped = 0) {
     }
     self.var_75cd1b31 = [];
     self thread function_4e59dd4b();
-    while (1) {
+    while (true) {
         waitframe(1);
         if (self flag::get_any(array(#"hash_1d380d2c916018c9", #"hash_392f20a71becaec7"))) {
             return;
@@ -691,7 +691,7 @@ function function_4e59dd4b() {
     self endon("6c12dc135f714c68");
     level endon(#"end_game");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"flame_on");
         ai_killed = s_waitresult.ai_killed;
@@ -725,7 +725,7 @@ function function_4284585f(b_skipped = 0) {
     }
     self.var_2f4d7df0 = [];
     callback::on_ai_killed(&function_a11cc995);
-    while (1) {
+    while (true) {
         waitframe(1);
         if (self flag::get_any(array(#"hash_1e015d048e504d45", #"hash_17425b597c04b9c3"))) {
             return;

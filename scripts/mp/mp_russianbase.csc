@@ -41,21 +41,21 @@ function dom_flag_base_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        return;
+        break;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        return;
+        break;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_marker_neutral_r120";
         } else {
             return "ui/fx_dom_marker_team_r120";
         }
-        return;
+        break;
     }
 }
 
@@ -71,21 +71,21 @@ function dom_flag_cap_fx_override(flag, team) {
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        return;
+        break;
     case #"b":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        return;
+        break;
     case #"c":
         if (team == #"neutral") {
             return "ui/fx_dom_cap_indicator_neutral_r120";
         } else {
             return "ui/fx_dom_cap_indicator_team_r120";
         }
-        return;
+        break;
     }
 }
 
@@ -136,7 +136,7 @@ function function_bfd25720(localclientnum) {
     a_v_pa[3] = (129, 1054, 491);
     a_v_pa[4] = (138, -36, 504);
     a_v_pa[5] = (974, -630, 501);
-    while (1) {
+    while (true) {
         wait(randomintrange(120, 180));
         foreach (v_pa in a_v_pa) {
             playsound(localclientnum, #"hash_5e4a6db5676d1cbd", v_pa);

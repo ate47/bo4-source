@@ -52,7 +52,7 @@ function tesla_fx_rail(localclientnum) {
     self endon(#"death", #"hash_319d2bba47dac2c4");
     w_current = getcurrentweapon(localclientnum);
     wait(randomfloatrange(0, 12));
-    while (1) {
+    while (true) {
         wait(randomfloatrange(8, 12));
         if (getweaponammoclip(localclientnum, w_current) > 0 && !ismeleeing(localclientnum)) {
             str_fx = level._effect[#"tesla_viewmodel_rail"];
@@ -72,7 +72,7 @@ function tesla_fx_rail(localclientnum) {
 function tesla_fx_tube(localclientnum) {
     self endon(#"death", #"hash_319d2bba47dac2c4");
     w_current = getcurrentweapon(localclientnum);
-    while (1) {
+    while (true) {
         wait(0.1);
         n_ammo = getweaponammoclip(localclientnum, w_current);
         if (n_ammo <= 0) {

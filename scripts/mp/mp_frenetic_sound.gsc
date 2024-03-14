@@ -15,7 +15,7 @@ function main() {
 // Checksum 0x5b1c5aeb, Offset: 0xa8
 // Size: 0xa8
 function function_f14af27() {
-    while (1) {
+    while (true) {
         wait(300);
         playsoundatposition(#"hash_4eb7a29f1b1a264", (905, 50, 1091));
         playsoundatposition(#"hash_44f8b894cb0ec41e", (1053, 975, 304));
@@ -28,7 +28,7 @@ function function_f14af27() {
 // Checksum 0xf6fc2ed3, Offset: 0x158
 // Size: 0x58
 function function_2878f9d1() {
-    while (1) {
+    while (true) {
         level waittill(#"hash_5b10534e0aa25120");
         playsoundatposition(#"hash_119425eb77c9699a", (905, 50, 1091));
     }

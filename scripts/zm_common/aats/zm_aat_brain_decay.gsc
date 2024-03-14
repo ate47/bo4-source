@@ -101,7 +101,7 @@ function function_8e97a3a4(attacker, weapon) {
         a_ai_zombies[i] function_fef86dd4(var_3c9de13d, 20000, attacker, weapon);
         n_flung_zombies++;
         if (-1 && n_flung_zombies >= 3) {
-            return;
+            break;
         }
     }
 }
@@ -132,27 +132,27 @@ function private function_fef86dd4(var_c5ad44f1, n_damage, e_attacker, weapon) {
 // Size: 0x126
 function function_682e5375() {
     if (isdefined(level.aat[#"zm_aat_brain_decay"].immune_result_direct[self.archetype]) && level.aat[#"zm_aat_brain_decay"].immune_result_direct[self.archetype]) {
-        return 0;
+        return false;
     }
     if (isdefined(self.barricade_enter) && self.barricade_enter) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_traversing) && self.is_traversing) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_69a981e6) && self.var_69a981e6) {
-        return 0;
+        return false;
     }
     if (!(isdefined(self.completed_emerging_into_playable_area) && self.completed_emerging_into_playable_area)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_leaping) && self.is_leaping) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_b897ed83) && !self [[ level.var_b897ed83 ]]()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay

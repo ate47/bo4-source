@@ -322,7 +322,7 @@ function prevent_stuck() {
     wait(2);
     count = 0;
     previous_origin = undefined;
-    while (1) {
+    while (true) {
         if (isdefined(previous_origin) && distancesquared(previous_origin, self.origin) < 0.1 * 0.1 && !(isdefined(level.bzm_worldpaused) && level.bzm_worldpaused)) {
             count++;
         } else {
@@ -345,10 +345,10 @@ function check_detonation_dist(origin, enemy) {
         enemy_look_dir_offst = anglestoforward(enemy.angles) * 30;
         targetpoint = enemy.origin + enemy_look_dir_offst;
         if (distance2dsquared(targetpoint, origin) < self.settings.detonation_distance * self.settings.detonation_distance && (abs(targetpoint[2] - origin[2]) < self.settings.detonation_distance || abs(targetpoint[2] - self.settings.jump_height - origin[2]) < self.settings.detonation_distance)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_bomb/smart_bomb
@@ -405,7 +405,7 @@ function detonate(attacker = self) {
 function detonation_monitor() {
     self endon(#"death", #"change_state");
     lastenemy = undefined;
-    while (1) {
+    while (true) {
         wait(0.2);
         try_detonate();
         if (isdefined(self.var_345c5167)) {
@@ -605,7 +605,7 @@ function path_update_interrupt() {
     self notify(#"path_update_interrupt");
     self endon(#"path_update_interrupt");
     wait(0.1);
-    while (1) {
+    while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
                 wait(0.5);
@@ -652,12 +652,12 @@ function path_update_interrupt() {
 // Size: 0xfa
 function function_bf16c9ed(einflictor, eattacker, smeansofdeath, weapon) {
     if (isdefined(self.owner) && eattacker == self.owner && isdefined(self.settings.friendly_fire) && int(self.settings.friendly_fire) && !weapon.isemp) {
-        return 1;
+        return true;
     }
     if (isdefined(eattacker) && isdefined(eattacker.archetype) && eattacker.archetype != #"bot" && isdefined(smeansofdeath) && smeansofdeath == "MOD_EXPLOSIVE") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_bomb/smart_bomb
@@ -734,7 +734,7 @@ function sndfunctions() {
 // Size: 0x80
 function function_dd7a181d() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"veh_landed");
         if (isdefined(self.sndalias[#"land"])) {
             self playsound(self.sndalias[#"land"]);
@@ -751,7 +751,7 @@ function function_2a91d5ee() {
     if (!sessionmodeiscampaigngame() && !sessionmodeiszombiesgame()) {
         self waittill(#"veh_landed");
     }
-    while (1) {
+    while (true) {
         self waittill(#"veh_inair");
         if (isdefined(self.sndalias[#"inair"])) {
             self playsound(self.sndalias[#"inair"]);
@@ -790,9 +790,9 @@ function function_12857be3() {
 function isdrivableplayervehicle() {
     str_vehicletype = self.vehicletype;
     if (isdefined(str_vehicletype) && self.isplayervehicle) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace smart_bomb/smart_bomb

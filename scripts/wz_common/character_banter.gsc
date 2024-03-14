@@ -73,7 +73,7 @@ function start() {
     globallogic::waitforplayers();
     lookup = function_bb3ec038();
     var_8dcd4dc8 = [];
-    while (1) {
+    while (true) {
         foreach (team, players in level.var_8dcd4dc8) {
             if (isarray(players) && players.size > 1) {
                 foreach (player in players) {
@@ -118,15 +118,15 @@ function function_bb3ec038() {
 // Size: 0x1d0
 function function_4d9b2d83(players, lookup) {
     if (!self isonground()) {
-        return 0;
+        return false;
     }
     assetname = self getmpdialogname();
     if (!isdefined(assetname)) {
-        return 0;
+        return false;
     }
     banters = lookup[assetname];
     if (!isdefined(banters) || banters.size <= 0) {
-        return 0;
+        return false;
     }
     foreach (player in players) {
         if (!isdefined(player) || player == self || !player isonground() || distancesquared(self.origin, player.origin) > 1000000) {
@@ -139,10 +139,10 @@ function function_4d9b2d83(players, lookup) {
         var_a9f3e2d4 = banters[player getmpdialogname()];
         if (isdefined(var_a9f3e2d4)) {
             self function_18aba49d(1, undefined, player);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace character_banter/character_banter

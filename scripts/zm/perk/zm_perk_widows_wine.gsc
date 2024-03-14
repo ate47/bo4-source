@@ -363,9 +363,9 @@ function widows_wine_perk_lost(b_pause, str_perk, str_result, n_slot) {
 // Size: 0x28
 function has_charge() {
     if (isdefined(self.var_a33a5a37) && self.var_a33a5a37 > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_perk_widows_wine/zm_perk_widows_wine
@@ -394,7 +394,7 @@ function function_276e3360() {
 // Size: 0xf0
 function function_bcb4c0e3() {
     self endon(#"stop_widows_wine", #"death");
-    while (1) {
+    while (true) {
         wait(1);
         n_total_charges = self function_fc256a55();
         if (self.var_a33a5a37 < n_total_charges) {
@@ -444,7 +444,7 @@ function reset_charges() {
 // Size: 0x60
 function function_b2e5df58() {
     self endon(#"stop_widows_wine", #"death");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         self reset_charges();
     }

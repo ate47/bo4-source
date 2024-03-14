@@ -243,7 +243,7 @@ function private function_c2a75696() {
         mapname = util::get_map_name();
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             string = getdvarstring(#"warzone_devgui_cmd", "trigger_hurt_new");
             switch (string) {
@@ -357,7 +357,7 @@ function private function_23600e7d() {
     /#
         println("<unknown string>" + level.var_a132ca2b);
     #/
-    while (1) {
+    while (true) {
         /#
             println("<unknown string>");
         #/
@@ -720,9 +720,9 @@ function private function_ec2c9808(response, intpayload) {
 // Size: 0x24
 function function_cc47bb2f() {
     if (game.state == "pregame") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace warzone/warzone
@@ -794,13 +794,13 @@ function on_player_spawned() {
     switch (var_7eb8f61a) {
     case 0:
         self thread player_reinsertion::function_584c9f1();
-        return;
+        break;
     case 1:
         self thread player_reinsertion::function_39a51e47();
-        return;
+        break;
     case 2:
         self thread player_reinsertion::function_3c4884f1();
-        return;
+        break;
     }
 }
 
@@ -948,30 +948,30 @@ function function_3915e148(team, players) {
 // Size: 0x172
 function function_39971b81(var_d3ba512b, var_c0856555) {
     if (isdefined(var_d3ba512b.last_alive) && !isdefined(var_c0856555.last_alive)) {
-        return 1;
+        return true;
     }
     if (isdefined(var_c0856555.last_alive) && !isdefined(var_d3ba512b.last_alive)) {
-        return 0;
+        return false;
     }
     if (isdefined(var_d3ba512b.last_alive) && var_d3ba512b.last_alive.deathtime > var_c0856555.last_alive.deathtime) {
-        return 1;
+        return true;
     }
     if (isdefined(var_d3ba512b.last_alive) && var_c0856555.last_alive.deathtime > var_d3ba512b.last_alive.deathtime) {
-        return 0;
+        return false;
     }
     if (var_d3ba512b.kills > var_c0856555.kills) {
-        return 1;
+        return true;
     }
     if (var_c0856555.kills > var_d3ba512b.kills) {
-        return 0;
+        return false;
     }
     if (var_d3ba512b.damage > var_c0856555.damage) {
-        return 1;
+        return true;
     }
     if (var_c0856555.damage > var_d3ba512b.damage) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace warzone/warzone
@@ -1101,14 +1101,14 @@ function function_61c315e0() {
 // Size: 0xde
 function function_a40b79b1(team) {
     if (!isdefined(team) || teams::is_all_dead(team)) {
-        return 1;
+        return true;
     }
     foreach (player in getplayers(team)) {
         if (isalive(player) && !player laststand::player_is_in_laststand()) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace warzone/warzone
@@ -1117,15 +1117,15 @@ function function_a40b79b1(team) {
 // Size: 0xa8
 function function_eb1c0d37(teams) {
     if (!isdefined(teams)) {
-        return 1;
+        return true;
     }
     foreach (team in teams) {
         if (!isdefined(team) || function_a40b79b1(team)) {
             continue;
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace warzone/warzone
@@ -1377,27 +1377,27 @@ function function_75134917() {
 // Size: 0x154
 function function_c14ef1aa(attacker) {
     if (getdvarint(#"hash_10c3f1c0958c1fba", 0) == 0) {
-        return 0;
+        return false;
     }
     if (!isdedicated()) {
-        return 0;
+        return false;
     }
     if (isalive(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.switching_teams)) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker) && attacker == self) {
-        return 0;
+        return false;
     }
     if (level.teambased && isdefined(attacker) && isdefined(attacker.team) && attacker.team == self.team) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker) && (!isdefined(attacker.team) || attacker.team == "free") && (attacker.classname == "trigger_hurt_new" || attacker.classname == "worldspawn")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace warzone/warzone
@@ -1566,7 +1566,7 @@ function function_22df4165() {
 // Checksum 0x389bcb37, Offset: 0x6db8
 // Size: 0x48
 function function_5db32126() {
-    while (1) {
+    while (true) {
         waitframe(1);
         if (isdefined(level.var_22df4165) && level.var_22df4165) {
             function_e91890a7();
@@ -1779,7 +1779,7 @@ function give_custom_loadout(takeoldweapon = 0) {
 // Checksum 0x259a467b, Offset: 0x7988
 // Size: 0x6
 function function_486a8395() {
-    return 0;
+    return false;
 }
 
 // Namespace warzone/warzone
@@ -1816,9 +1816,9 @@ function private function_8e7ae35(event, params) {
 // Size: 0x1e
 function function_a3e209ba() {
     if (player_insertion::function_6660c1f()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace warzone/warzone
@@ -2109,10 +2109,10 @@ function function_ec375172(player) {
     case 0:
         wait(0.1);
         playfxontag(#"hash_57f2dadebce0586c", player, "j_spine4");
-        return;
+        break;
     case 1:
         wait(0.1);
-        return;
+        break;
     }
 }
 

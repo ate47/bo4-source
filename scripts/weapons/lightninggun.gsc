@@ -38,7 +38,7 @@ function init_shared() {
 // Size: 0xaa
 function update_dvars() {
     /#
-        while (1) {
+        while (true) {
             wait(1);
             level.weaponlightninggunkillcamtime = getdvarfloat(#"scr_lightninggunkillcamtime", 0.35);
             level.weaponlightninggunkillcamdecelpercent = getdvarfloat(#"scr_lightninggunkillcamdecelpercent", 0.25);
@@ -171,7 +171,7 @@ function lightninggun_find_arc_targets(eattacker, arc_source, arc_source_origin,
         }
         distancesq = distancesquared(enemy.origin, arc_source_origin);
         if (distancesq > level.lightninggun_arc_range_sq) {
-            return;
+            break;
         }
         if (eattacker != enemy && damage::friendlyfirecheck(eattacker, enemy)) {
             if (isdefined(self) && !enemy damageconetrace(arc_source_pos, self)) {

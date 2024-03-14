@@ -302,7 +302,7 @@ function function_af2bf286(player) {
     level endon(#"game_ended");
     var_8e76086 = mpdialog_value("warmachineThreatMinDistance", 100);
     var_8e76086 = var_8e76086 * var_8e76086;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = player waittill(#"weapon_fired");
         if (!isdefined(player)) {
@@ -355,7 +355,7 @@ function function_44b5e397() {
     if (isdefined(self.currentweapon)) {
         nextweapon = self.currentweapon;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         if (waitresult.weapon == getweapon(#"hero_pineapplegun")) {
@@ -415,9 +415,9 @@ function function_44b5e397() {
 function dialog_chance(chancekey) {
     dialogchance = mpdialog_value(chancekey);
     if (!isdefined(dialogchance) || dialogchance <= 0) {
-        return 0;
+        return false;
     } else if (dialogchance >= 100) {
-        return 1;
+        return true;
     }
     return randomint(100) < dialogchance;
 }
@@ -626,7 +626,7 @@ function function_7139078d() {
     level endon(#"game_ended");
     self notify("6b96a91e5ff2b8a7");
     self endon("6b96a91e5ff2b8a7");
-    while (1) {
+    while (true) {
         result = undefined;
         result = self waittill(#"bulletwhizby");
         if (self hasperk(#"specialty_quieter")) {
@@ -886,7 +886,7 @@ function private function_95e44f78(weapon, timedelay) {
 function enemy_threat() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_ads");
         if (self hasperk(#"specialty_quieter")) {
             continue;
@@ -982,13 +982,13 @@ function killed_by_sniper(sniper) {
 // Size: 0x1c2
 function function_d804d2f0(speakingplayer, player, allyradiussq) {
     if (!isdefined(player) || !isdefined(player.origin) || !isdefined(speakingplayer) || !isdefined(speakingplayer.origin) || !isalive(player) || player.sessionstate != "playing" || player.playingdialog || player isplayerunderwater() || player isremotecontrolling() || player isinvehicle() || player isweaponviewonlylinked() || player == speakingplayer || player.team != speakingplayer.team || player.playerrole == speakingplayer.playerrole || player hasperk(#"specialty_quieter")) {
-        return 0;
+        return false;
     }
     distsq = distancesquared(speakingplayer.origin, player.origin);
     if (distsq > allyradiussq) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace battlechatter/battlechatter
@@ -1392,7 +1392,7 @@ function say_kill_battle_chatter(attacker, weapon, victim, inflictor, meansofdea
 function grenade_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
@@ -1442,7 +1442,7 @@ function grenade_tracking() {
 function missile_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"missile_fire");
         missile = waitresult.projectile;
@@ -1470,7 +1470,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
         #/
         return;
     }
-    while (1) {
+    while (true) {
         wait(waittime);
         if (waittime > 0.2) {
             waittime = waittime / 2;
@@ -1499,7 +1499,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
 function sticky_grenade_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         grenade = waitresult.projectile;
@@ -1554,10 +1554,10 @@ function heavy_weapon_success_reaction() {
         }
         distsq = distancesquared(self.origin, player.origin);
         if (distsq > allyradiussq) {
-            return;
+            break;
         }
         player play_dialog("heroWeaponSuccessReaction", 2);
-        return;
+        break;
     }
 }
 
@@ -3315,12 +3315,12 @@ function get_friendly_players() {
 // Size: 0x100
 function can_play_dialog(teamonly) {
     if (!isplayer(self) || !isalive(self) || self.playingdialog === 1 || self isplayerunderwater() || self isremotecontrolling() || self isinvehicle() || self isweaponviewonlylinked()) {
-        return 0;
+        return false;
     }
     if (isdefined(teamonly) && !teamonly && self hasperk(#"specialty_quieter")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace battlechatter/battlechatter
@@ -3465,7 +3465,7 @@ function devgui_think() {
         setdvar(#"testalias_player", "rouletteRevealDelay");
         setdvar(#"testalias_taacom", "exertAxeThrow");
         setdvar(#"testalias_commander", "<unknown string>");
-        while (1) {
+        while (true) {
             wait(1);
             player = util::gethostplayer();
             if (!isdefined(player)) {
@@ -3629,7 +3629,7 @@ function play_conv_self_other() {
         foreach (player in players) {
             if (player != self && isalive(player)) {
                 player play_test_dialog("<unknown string>" + self response_key() + num);
-                return;
+                break;
             }
         }
     #/
@@ -3673,7 +3673,7 @@ function play_conv_other_other() {
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
                 player play_test_dialog("<unknown string>" + firstplayer response_key() + num);
-                return;
+                break;
             }
         }
     #/

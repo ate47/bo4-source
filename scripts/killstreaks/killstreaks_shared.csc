@@ -46,7 +46,7 @@ function timeout_beep(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     interval = 1;
     if (newval == 2) {
     }
-    for (interval = 0.133; 1; interval = math::clamp(interval / 1.17, 0.1, 1)) {
+    for (interval = 0.133; true; interval = math::clamp(interval / 1.17, 0.1, 1)) {
         if (isdefined(beepalias)) {
             var_91e09a3a = 1;
             if (var_4f5f9e46 === 1) {

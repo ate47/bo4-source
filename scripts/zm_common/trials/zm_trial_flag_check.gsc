@@ -56,7 +56,7 @@ function private on_end(round_reset) {
 // Size: 0x90
 function private monitor_flag(str_flag) {
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         level flag::wait_till(str_flag);
         zm_trial_util::function_7d32b7d0(1);
         level flag::wait_till_clear(str_flag);

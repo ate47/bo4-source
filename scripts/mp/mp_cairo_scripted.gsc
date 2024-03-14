@@ -121,7 +121,7 @@ function function_69cdac99() {
     var_c7ecf728[25] = "vox_usbr_us_propaganda_radio_9";
     var_df74694e = array((2043, -787, 1), (2344, 599, 150), (865, 878, 216), (-1775, -76, 219));
     var_e7f143a4 = array((1486, 189, 64), (-1802, 1706, 93));
-    while (1) {
+    while (true) {
         do {
             var_fc58d99c = randomintrange(0, 26);
             waitframe(1);

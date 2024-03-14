@@ -45,7 +45,7 @@ function private call_func(func, arg_count, args) {
         /#
             assertmsg("<unknown string>");
         #/
-        return;
+        break;
     }
 }
 
@@ -166,17 +166,17 @@ function private is_auto_exec_node(node_def) {
         foreach (input_def in node_def.inputs) {
             if (input_def.type == #"exec") {
                 if (isdefined(input_def.connections) && input_def.connections.size > 0) {
-                    return 0;
+                    return false;
                 }
                 continue;
             }
             if (!isdefined(input_def.constvalue)) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace flowgraph/flowgraph_core

@@ -75,18 +75,18 @@ function function_79f6f273(params) {
 function function_a543db40(w_weapon, e_player) {
     if (w_weapon === getweapon(#"ww_tricannon_t8")) {
         if (e_player zm_weapons::has_weapon_or_upgrade(getweapon(#"ww_tricannon_t8"))) {
-            return 0;
+            return false;
         } else if (e_player zm_weapons::has_weapon_or_upgrade(getweapon(#"ww_tricannon_air_t8"))) {
-            return 0;
+            return false;
         } else if (e_player zm_weapons::has_weapon_or_upgrade(getweapon(#"ww_tricannon_earth_t8"))) {
-            return 0;
+            return false;
         } else if (e_player zm_weapons::has_weapon_or_upgrade(getweapon(#"ww_tricannon_fire_t8"))) {
-            return 0;
+            return false;
         } else if (e_player zm_weapons::has_weapon_or_upgrade(getweapon(#"ww_tricannon_water_t8"))) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon
@@ -390,13 +390,13 @@ function function_5a24e804(weapon) {
 // Size: 0x2ac
 function function_3e2e539(params) {
     if (params.smeansofdeath === "MOD_PROJECTILE_SPLASH") {
-        return 1;
+        return true;
     }
     if (params.smeansofdeath !== "MOD_PROJECTILE") {
-        return 0;
+        return false;
     }
     if (isdefined(params.einflictor) && isactor(params.einflictor)) {
-        return 0;
+        return false;
     }
     if (isalive(self)) {
         if (self.health <= params.idamage) {
@@ -404,7 +404,7 @@ function function_3e2e539(params) {
             v_launch = (vectornormalize(params.vdir) + v_z_offset) * randomintrange(75, 125);
             self startragdoll(1);
             self launchragdoll(v_launch);
-            return 0;
+            return false;
         }
         if (self.var_6f84b820 === #"heavy" || self.var_6f84b820 === #"miniboss") {
             self ai::stun();
@@ -419,9 +419,9 @@ function function_3e2e539(params) {
         } else {
             self zombie_utility::setup_zombie_knockdown(params.eattacker);
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_tricannon/zm_weap_tricannon

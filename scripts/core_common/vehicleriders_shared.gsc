@@ -85,9 +85,9 @@ function function_196797c9(vehicle) {
         assert(isvehicle(vehicle));
     #/
     if (isdefined(vehicle.vehicleridersbundle)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicleriders_shared
@@ -111,10 +111,10 @@ function private function_41cf7b1d(vehicle) {
     for (seat = 0; seat < var_4301b21d; seat++) {
         position = bundle.objects[seat].position;
         if (issubstr(position, "driver")) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicleriders_shared
@@ -130,10 +130,10 @@ function private function_f7ce77b(vehicle) {
     for (seat = 0; seat < var_4301b21d; seat++) {
         position = bundle.objects[seat].position;
         if (position == "passenger1") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicleriders_shared
@@ -149,10 +149,10 @@ function private function_2453a4a2(vehicle) {
     for (seat = 0; seat < var_4301b21d; seat++) {
         position = bundle.objects[seat].position;
         if (position == "gunner1") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicleriders_shared
@@ -549,22 +549,22 @@ function unload(seat) {
     switch (seat) {
     case #"driver":
         function_114d7bd3(self);
-        return;
+        break;
     case #"passenger1":
         function_b56639f2(self);
-        return;
+        break;
     case #"gunner1":
         function_2ef91b74(self);
-        return;
+        break;
     case #"crew":
         function_2ca26543(self);
-        return;
+        break;
     default:
         function_114d7bd3(self);
         function_b56639f2(self);
         function_2ca26543(self);
         function_2ef91b74(self);
-        return;
+        break;
     }
 }
 
@@ -921,7 +921,7 @@ function exit_variable(ai) {
 // Size: 0x68
 function exit_high_loop_anim(e_parent) {
     self endon(#"death", #"landing");
-    while (1) {
+    while (true) {
         animation::play(self.var_ec30f5da.exithighloopanim, e_parent, "tag_origin");
     }
 }

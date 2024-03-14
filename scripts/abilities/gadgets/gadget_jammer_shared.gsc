@@ -241,33 +241,33 @@ function private function_87c540c0(jammer, origin, attackingplayer) {
 function private function_e27c41b4(jammer, entity, attackingplayer) {
     entity endon(#"death");
     if (!isdefined(entity)) {
-        return 0;
+        return false;
     }
     if (isalive(entity) && isvehicle(entity) && isdefined(level.is_staircase_up)) {
         function_1c430dad(entity, 1);
         function_58f8bf08(jammer, attackingplayer, undefined);
         entity thread [[ level.is_staircase_up ]](attackingplayer, jammer);
-        return 1;
+        return true;
     }
     if (isalive(entity) && isactor(entity)) {
         function_1c430dad(entity, 1);
         function_58f8bf08(jammer, attackingplayer, undefined);
         entity callback::callback(#"hash_7140c3848cbefaa1", {#jammer:jammer, #attackingplayer:attackingplayer});
-        return 1;
+        return true;
     }
     weapon = isdefined(entity.identifier_weapon) ? entity.identifier_weapon : entity.weapon;
     if (!isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_578f7c6d.var_1728e736[weapon.name])) {
         function_1c430dad(entity, 1);
         function_58f8bf08(jammer, attackingplayer, undefined);
         function_2e6238c0(weapon, entity.owner);
         thread [[ level.var_578f7c6d.var_1728e736[weapon.name] ]](entity, attackingplayer);
-        return 1;
+        return true;
     }
     thread function_ca8a005e(jammer, entity, attackingplayer);
-    return 1;
+    return true;
 }
 
 // Namespace jammer/gadget_jammer_shared
@@ -412,24 +412,24 @@ function function_b2e496fa(watcher) {
 // Size: 0x160
 function private function_b16c8865(entity, attackingplayer) {
     if (self == entity) {
-        return 0;
+        return false;
     }
     if (!isplayer(entity) && (!isdefined(entity.model) || entity.model == #"")) {
-        return 0;
+        return false;
     }
     if (isactor(entity) && !(isdefined(entity.var_8f61d7f4) && entity.var_8f61d7f4)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.team) && !util::function_fbce7263(entity.team, attackingplayer.team)) {
-        return 0;
+        return false;
     }
     if (isplayer(entity) && entity function_6c32d092(#"talent_resistance")) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoreemp) ? entity.ignoreemp : 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace jammer/gadget_jammer_shared

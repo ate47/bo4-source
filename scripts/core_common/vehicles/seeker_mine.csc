@@ -36,7 +36,7 @@ function spawned(localclientnum) {
 function private update_light(localclientnum) {
     self endon(#"death");
     self util::waittill_dobj(localclientnum);
-    while (1) {
+    while (true) {
         self.light_fx = util::playfxontag(localclientnum, #"hash_69272c24309abc33", self, "tag_fx_front");
         if (isdefined(self.attacking) && self.attacking) {
             wait(0.25);

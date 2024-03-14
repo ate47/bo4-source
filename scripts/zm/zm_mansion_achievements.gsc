@@ -174,14 +174,14 @@ function function_a46f4413() {
     level thread function_8dc740fa("zblueprint_shield_dual_wield");
     level thread function_8dc740fa("zblueprint_mansion_silver_bullet");
     level thread function_8dc740fa("zblueprint_mansion_a_skeet_fink");
-    while (1) {
+    while (true) {
         level waittill(#"crafting_table_completed");
         if (level.var_f5ad5bac >= 6) {
             /#
                 iprintlnbold("<unknown string>");
             #/
             zm_utility::giveachievement_wrapper("ZM_MANSION_CRAFTING", 1);
-            return;
+            break;
         }
     }
 }
@@ -191,13 +191,13 @@ function function_a46f4413() {
 // Checksum 0xc803cfbd, Offset: 0xc28
 // Size: 0x88
 function function_8dc740fa(str_blueprint) {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"blueprint_completed");
         if (waitresult.blueprint.name === str_blueprint) {
             level.var_f5ad5bac++;
             level notify(#"crafting_table_completed");
-            return;
+            break;
         }
     }
 }

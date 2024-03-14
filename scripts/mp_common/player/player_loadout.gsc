@@ -251,10 +251,10 @@ function private is_attachment_excluded(attachment) {
     numexclusions = level.attachmentexclusions.size;
     for (exclusionindex = 0; exclusionindex < numexclusions; exclusionindex++) {
         if (attachment == level.attachmentexclusions[exclusionindex]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace loadout/player_loadout
@@ -527,9 +527,9 @@ function function_da96d067() {
 // Size: 0x40
 function private function_50797a7f(equipment_name) {
     if (equipment_name == level.weapontacticalinsertion.name && level.disabletacinsert) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace loadout/player_loadout
@@ -562,23 +562,23 @@ function private function_c84c77d8(loadoutslot) {
     case 41:
         self.playerloadoutrestrictions.var_a2ef45f8--;
         if (self.playerloadoutrestrictions.var_a2ef45f8 < 0) {
-            return 0;
+            return false;
         }
         break;
     case 42:
         self.playerloadoutrestrictions.var_cd3db98c--;
         if (self.playerloadoutrestrictions.var_cd3db98c < 0) {
-            return 0;
+            return false;
         }
         break;
     case 43:
         self.playerloadoutrestrictions.var_25a22f4--;
         if (self.playerloadoutrestrictions.var_25a22f4 < 0) {
-            return 0;
+            return false;
         }
         break;
     }
-    return 1;
+    return true;
 }
 
 // Namespace loadout/player_loadout
@@ -822,15 +822,15 @@ function private function_d9035e42(weapon) {
     if (iteminfo.loadoutslotname === "primary") {
         self.playerloadoutrestrictions.numprimaryweapons--;
         if (self.playerloadoutrestrictions.numprimaryweapons < 0) {
-            return 0;
+            return false;
         }
     } else if (iteminfo.loadoutslotname === "secondary") {
         self.playerloadoutrestrictions.var_ab1984e9--;
         if (self.playerloadoutrestrictions.var_ab1984e9 < 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace loadout/player_loadout
@@ -840,10 +840,10 @@ function private function_d9035e42(weapon) {
 function private function_e229fb1(weapon) {
     foreach (attachment in weapon.attachments) {
         if (attachment === "uber") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace loadout/player_loadout
@@ -853,10 +853,10 @@ function private function_e229fb1(weapon) {
 function private function_ad874c55(weapon) {
     foreach (attachment in weapon.attachments) {
         if (attachment === "clantag" || attachment === "killcounter" || attachment === "custom2") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace loadout/player_loadout
@@ -875,27 +875,27 @@ function private function_3aa744b9(slot, weapon) {
     if (slot === "primary") {
         self.playerloadoutrestrictions.var_355c3581 = self.playerloadoutrestrictions.var_355c3581 - num_attachments;
         if (self.playerloadoutrestrictions.var_355c3581 < 0) {
-            return 0;
+            return false;
         }
         if (has_uber || weapon.isdualwield) {
             self.playerloadoutrestrictions.var_882b6b71--;
             if (self.playerloadoutrestrictions.var_882b6b71 < 0) {
-                return 0;
+                return false;
             }
         }
     } else if (slot === "secondary") {
         self.playerloadoutrestrictions.var_934131b6 = self.playerloadoutrestrictions.var_934131b6 - num_attachments;
         if (self.playerloadoutrestrictions.var_934131b6 < 0) {
-            return 0;
+            return false;
         }
         if (has_uber || weapon.isdualwield) {
             self.playerloadoutrestrictions.var_c3fc8c73--;
             if (self.playerloadoutrestrictions.var_c3fc8c73 < 0) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace loadout/player_loadout

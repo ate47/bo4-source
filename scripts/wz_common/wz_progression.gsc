@@ -158,14 +158,14 @@ function give_xp(var_c14ca2e6, xpstat, amount) {
 function function_ec3a8858() {
     player = self;
     if (!isplayer(player)) {
-        return 0;
+        return false;
     }
     if (isdefined(player.inventory) && isdefined(player.inventory.consumed)) {
         if ((isdefined(player.inventory.consumed.size) ? player.inventory.consumed.size : 0) > 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_progression/wz_progression
@@ -916,10 +916,10 @@ function function_35ac33e1(attacker, victim, var_c5948a69 = {}) {
 function function_c7aa9338(array) {
     foreach (ent in array) {
         if (util::function_fbce7263(ent.team, self.team)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_progression/wz_progression
@@ -1247,7 +1247,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
 // Size: 0x5e
 function function_f6dc1aa9() {
     /#
-        while (1) {
+        while (true) {
             var_f748425e = self.origin + vectorscale((0, 0, 1), 45);
             sphere(var_f748425e, 5, (1, 1, 0));
             waitframe(1);

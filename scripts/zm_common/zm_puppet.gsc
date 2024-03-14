@@ -12,7 +12,7 @@ function wait_for_puppet_pickup() {
     /#
         self endon(#"death");
         self.iscurrentlypuppet = 0;
-        while (1) {
+        while (true) {
             if (isdefined(self.ispuppet) && self.ispuppet && !self.iscurrentlypuppet) {
                 self notify(#"stop_zombie_goto_entrance");
                 self.iscurrentlypuppet = 1;

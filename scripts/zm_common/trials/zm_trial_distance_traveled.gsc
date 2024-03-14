@@ -70,7 +70,7 @@ function function_ed4d5d4(var_38282db8) {
     self zm_trial_util::function_c2cd0cba(var_38282db8);
     wait(12);
     var_31409e15 = self.origin;
-    while (1) {
+    while (true) {
         var_abf38d09 = distance(self.origin, var_31409e15) * 0.0254;
         if (isalive(self)) {
             if (self function_e7985d50()) {
@@ -103,14 +103,14 @@ function function_ed4d5d4(var_38282db8) {
 // Size: 0x140
 function function_e7985d50() {
     if (isdefined(self.var_16735873) && self.var_16735873 || self util::function_88c74107() || isdefined(self.var_ffe2c4d7) && self.var_ffe2c4d7 || isdefined(self.var_25c3de32) && self.var_25c3de32) {
-        return 1;
+        return true;
     }
     w_weapon = self getcurrentweapon();
     w_weapon = zm_weapons::get_base_weapon(w_weapon);
     var_f77522bb = self getnormalizedmovement();
     if (isarray(level.var_4220f02a) && self isfiring() && isinarray(level.var_4220f02a, w_weapon) && var_f77522bb == (0, 0, 0)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

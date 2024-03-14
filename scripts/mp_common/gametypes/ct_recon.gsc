@@ -225,7 +225,7 @@ function function_72e84e64() {
     e_player = getplayers(#"allies")[0];
     n_enemies = 10;
     e_player ct_utils::objcounter_init(undefined, n_enemies, n_enemies, 0, 0);
-    while (1) {
+    while (true) {
         if (level flag::get("ct_player_success") || level flag::get("ct_fail_objective_killed")) {
             break;
         }
@@ -282,7 +282,7 @@ function function_7e7652be() {
     }
     e_player = getplayers(#"allies")[0];
     e_player thread function_2c6e57ee();
-    if (1) {
+    if (true) {
         self thread function_2015250b();
     }
     level.var_a8f06531 = 1;
@@ -308,13 +308,13 @@ function function_78a1b9ef() {
 // Size: 0xdc
 function function_2015250b() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.mod) && waitresult.mod == "MOD_MELEE_WEAPON_BUTT") {
             e_player = getplayers(#"allies")[0];
             self dodamage(300, self.origin, e_player, undefined, "none", "MOD_MELEE_WEAPON_BUTT");
-            return;
+            break;
         }
     }
 }
@@ -336,7 +336,7 @@ function function_eb0c2a6a(n_delay) {
             continue;
         }
         entity ct_bots::function_3895c193();
-        return;
+        break;
     }
 }
 

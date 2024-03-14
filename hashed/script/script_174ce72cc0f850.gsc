@@ -63,10 +63,10 @@ function private is_soul_capture(var_88206a50, ent) {
             b_killed_by_player = 1;
         }
         if (b_killed_by_player && e_player istouching(var_88206a50.var_f929d531)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_bd74bbd2/namespace_bd74bbd2

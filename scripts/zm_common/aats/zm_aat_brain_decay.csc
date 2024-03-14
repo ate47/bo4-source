@@ -86,9 +86,9 @@ function function_791e18ed(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x70
 function function_b9c917cc(localclientnum, str_bundle) {
     if (!self function_ca024039() || isdefined(level.var_dc60105c) && level.var_dc60105c || isigcactive(localclientnum)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_aat_brain_decay/zm_aat_brain_decay

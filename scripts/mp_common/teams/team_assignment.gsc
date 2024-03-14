@@ -93,10 +93,10 @@ function function_ee150fcc(team, team_players) {
 function private function_f18da875(platoon, player_counts) {
     foreach (test_platoon, count in player_counts) {
         if (test_platoon != platoon && count >= player_counts[platoon]) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace teams/team_assignment
@@ -106,7 +106,7 @@ function private function_f18da875(platoon, player_counts) {
 function function_efe5a681(team) {
     team_players = getplayers(team);
     if (team_players.size >= level.maxteamplayers) {
-        return 0;
+        return false;
     }
     if (getdvarint(#"hash_aecb27a63d1fcee", 0) == 0) {
         if (platoons::function_382a49e0()) {
@@ -114,11 +114,11 @@ function function_efe5a681(team) {
             if (platoon != #"invalid" && platoon != #"none") {
                 player_counts = platoons::count_players();
                 if (player_counts[platoon] >= level.platoon.max_players) {
-                    return 0;
+                    return false;
                 }
                 if (getdvarint(#"hash_52e8746b313ada90", 0) == 0) {
                     if (function_f18da875(platoon, player_counts)) {
-                        return 0;
+                        return false;
                     }
                 }
             }
@@ -127,14 +127,14 @@ function function_efe5a681(team) {
     var_fa810454 = function_ee150fcc(team, team_players);
     party = self getparty();
     if (party.var_a15e4438 > var_fa810454) {
-        return 0;
+        return false;
     }
     /#
         if (getdvarint(#"hash_2ffea48b89a9ff3f", 0) && self != getplayers()[0] && getplayers()[0].team == team && !isbot(self)) {
-            return 0;
+            return false;
         }
     #/
-    return 1;
+    return true;
 }
 
 // Namespace teams/team_assignment
@@ -261,13 +261,13 @@ function private function_75daeb56(party) {
     /#
         var_f8896168 = getdvarint(#"hash_4cbf229ab691d987", 0);
         if (var_f8896168 && (var_f8896168 != 2 || self ishost())) {
-            return 0;
+            return false;
         }
     #/
     if (isdefined(party) && party.fill == 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace teams/team_assignment
@@ -370,10 +370,10 @@ function teamscoresequal() {
             continue;
         }
         if (score != getteamscore(team)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace teams/team_assignment
@@ -440,10 +440,10 @@ function teamplayercountsequal(playercounts) {
             continue;
         }
         if (count != playercounts[team]) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace teams/team_assignment
@@ -467,7 +467,7 @@ function function_d078493a(playercounts) {
 // Checksum 0xb7de8c3f, Offset: 0x16c8
 // Size: 0x10
 function function_321f8eb5(player) {
-    return 1;
+    return true;
 }
 
 // Namespace teams/team_assignment
@@ -476,33 +476,33 @@ function function_321f8eb5(player) {
 // Size: 0xce
 function function_a3e209ba(teamname, comingfrommenu) {
     if (level.rankedmatch) {
-        return 0;
+        return false;
     }
     if (level.inprematchperiod) {
-        return 0;
+        return false;
     }
     if (teamname != "free") {
-        return 0;
+        return false;
     }
     if (comingfrommenu) {
-        return 0;
+        return false;
     }
     if (self ishost()) {
-        return 0;
+        return false;
     }
     if (level.forceautoassign) {
-        return 0;
+        return false;
     }
     if (isbot(self)) {
-        return 0;
+        return false;
     }
     if (self issplitscreen()) {
-        return 0;
+        return false;
     }
     if (![[ level.var_a3e209ba ]]()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace teams/team_assignment
@@ -769,7 +769,7 @@ function function_58b6d2c9() {
 // Size: 0x144
 function function_1aa0418f() {
     /#
-        while (1) {
+        while (true) {
             wait(3);
             players = getplayers();
             if (players.size > 0 && players[0] isstreamerready()) {

@@ -126,7 +126,7 @@ function function_c49fe830() {
     self endon(#"disconnect");
     level.var_c9942395 = 0;
     var_7529ade9 = array("zone_starting_area_tunnel", "zone_starting_area_center", "zone_starting_area_danu", "zone_starting_area_ra", "zone_starting_area_odin", "zone_starting_area_zeus", "zone_danu_hallway", "zone_ra_hallway", "zone_odin_hallway", "zone_zeus_hallway");
-    while (1) {
+    while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (!isinarray(var_7529ade9, str_zone)) {
             wait(30);
@@ -138,12 +138,12 @@ function function_c49fe830() {
         wait(1);
     }
     var_d4061661 = array("zone_starting_area_center", "zone_starting_area_danu", "zone_starting_area_ra", "zone_starting_area_odin", "zone_starting_area_zeus");
-    while (1) {
+    while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (zm_utility::is_player_valid(self, 0, 0) && isinarray(var_d4061661, str_zone) && !level.var_c9942395) {
             level thread function_a1379826();
             self thread zm_audio::create_and_play_dialog(#"location_enter", #"arena");
-            return;
+            break;
         }
         wait(1);
     }

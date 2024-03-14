@@ -56,7 +56,7 @@ function defcon_sign_setup() {
             }
         }
     }
-    while (1) {
+    while (true) {
         if (function_8b1a219a()) {
             self sethintstring(#"hash_2c6e2897c388e68");
         } else {
@@ -273,20 +273,20 @@ function defcon_pack_poi() {
 function pentagon_ignore_spawner(spawner) {
     if (level flag::get("no_pack_room_spawning")) {
         if (spawner.targetname == "conference_level2_spawns") {
-            return 1;
+            return true;
         }
     }
     if (level flag::get("no_warroom_elevator_spawning")) {
         if (spawner.targetname == "war_room_zone_elevator_spawns") {
-            return 1;
+            return true;
         }
     }
     if (level flag::get("no_labs_elevator_spawning")) {
         if (spawner.targetname == "labs_elevator_spawns") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office_defcon/zm_office_defcon
@@ -304,7 +304,7 @@ function pack_door_init() {
     foreach (door in doors) {
         door disconnectpaths();
     }
-    while (1) {
+    while (true) {
         trigger setcursorhint("HINT_NOICON");
         trigger sethintstring(#"hash_11b82b0d638f6098");
         level waittill(#"defcon_activated", #"player_in_pack");
@@ -354,7 +354,7 @@ function pack_hideaway_init() {
             parts[i] linkto(hideaway);
         }
     }
-    while (1) {
+    while (true) {
         level flag::wait_till("open_pack_hideaway");
         hideaway notsolid();
         hideaway movez(116, 2.5);
@@ -383,13 +383,13 @@ function is_packroom_clear() {
     a_e_players = getplayers();
     foreach (e_player in a_e_players) {
         if (e_player istouching(level.pack_door_slam)) {
-            return 0;
+            return false;
         }
     }
     if (zm_office_teleporters::function_2143dc13()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_defcon/zm_office_defcon
@@ -399,7 +399,7 @@ function is_packroom_clear() {
 function pack_door_solid_thread() {
     self waittill(#"rotatedone");
     self.door_moving = undefined;
-    while (1) {
+    while (true) {
         players = getplayers();
         player_touching = 0;
         for (i = 0; i < players.size; i++) {

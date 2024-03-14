@@ -57,46 +57,46 @@ function is_active() {
 // Size: 0x152
 function function_26f124d8() {
     if (!isdefined(level.var_e91491fb)) {
-        return 1;
+        return true;
     }
     switch (level.var_e91491fb) {
     case #"ads":
         if (self isplayerads()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"jump":
         if (self isplayerjumping()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"slide":
         if (self isplayersliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"hash_6c6c8f6b349b8751":
         if (self isplayerjumping() || self isplayersliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"crouch":
         if (self getstance() === "crouch") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"prone":
         if (self getstance() === "prone") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"movement":
     default:
         v_velocity = self getvelocity();
         if (length(v_velocity) != 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 }
 

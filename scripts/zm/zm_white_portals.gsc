@@ -227,7 +227,7 @@ function teleport_pad_init() {
 function player_teleporting() {
     self endon(#"death");
     user = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
@@ -373,10 +373,10 @@ function function_4f5d4783(str_notify) {
 function function_26ddb915() {
     foreach (player in level.players) {
         if (player.teleporting === 1) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_portals/zm_white_portals
@@ -824,7 +824,7 @@ function function_688df525() {
 // Size: 0x56e
 function function_a09d62f1() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         e_user = waitresult.e_who;

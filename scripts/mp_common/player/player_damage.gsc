@@ -246,24 +246,24 @@ function function_74a5d514(eattacker, idamage, smeansofdeath, weapon, shitloc) {
 // Size: 0xb2
 function private function_31f333c6(einflictor, eattacker, weapon) {
     if (isplayer(einflictor)) {
-        return 1;
+        return true;
     }
     if (!isplayer(eattacker)) {
-        return 0;
+        return false;
     }
     if (isvehicle(einflictor)) {
-        return 0;
+        return false;
     }
     if (weapon.isprimary) {
-        return 1;
+        return true;
     }
     if (weapon.isheroweapon) {
-        return 1;
+        return true;
     }
     if (weapon.islauncher) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage
@@ -497,9 +497,9 @@ function private player_damage_log(einflictor, eattacker, idamage, idflags, smea
 // Size: 0x36
 function private should_allow_postgame_damage(smeansofdeath) {
     if (smeansofdeath == "MOD_TRIGGER_HURT" || smeansofdeath == "MOD_CRUSH") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage
@@ -522,13 +522,13 @@ function private do_post_game_damage(einflictor, eattacker, idamage, idflags, sm
 // Size: 0x1d0
 function private function_b5dadafc(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, boneindex, vsurfacenormal) {
     if (!gamestate::is_state("pregame")) {
-        return 0;
+        return false;
     }
     friendlyfire = isplayer(eattacker) && self util::isenemyplayer(eattacker) == 0;
     if (friendlyfire) {
         idamage = self does_player_completely_avoid_damage(idflags, shitloc, weapon, friendlyfire, 0, smeansofdeath, vpoint, idamage, einflictor, eattacker);
         if (idamage <= 0) {
-            return 0;
+            return false;
         }
     }
     if (damagefeedback::dodamagefeedback(weapon, einflictor, idamage, smeansofdeath)) {
@@ -540,7 +540,7 @@ function private function_b5dadafc(einflictor, eattacker, idamage, idflags, smea
             eattacker thread damagefeedback::update(smeansofdeath, einflictor, perkfeedback, weapon, self, psoffsettime, shitloc, 0, idflags);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace player/player_damage
@@ -579,10 +579,10 @@ function private function_e512b988(player, weapon, smeansofdeath, einflictor, ar
 function private function_e3242ae4(weapon, einflictor) {
     if (weapon.isaikillstreakdamage) {
         if (weapon.name != "ai_tank_drone_rocket" || isdefined(einflictor.firedbyai)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage
@@ -608,7 +608,7 @@ function private does_player_completely_avoid_damage(idflags, shitloc, weapon, f
         angles = self getplayerangles();
         forward = anglestoforward((0, angles[1], 0));
         var_587ddb7b = weapon.statname == #"hero_flamethrower" && weapon.type == "gas" && (smeansofdeath == "MOD_GAS" || smeansofdeath == "MOD_BURNED");
-        if (var_587ddb7b && isdefined(eattacker) && 0) {
+        if (var_587ddb7b && isdefined(eattacker) && false) {
             vpoint = eattacker.origin;
         }
         dirtoplayer = self.origin - vpoint;
@@ -983,30 +983,30 @@ function private update_attacker(einflictor, eattacker, smeansofdeath) {
 // Size: 0x17e
 function private function_811dd365(einflictor, weapon, smeansofdeath) {
     if (!self is_spawn_protected()) {
-        return 0;
+        return false;
     }
     if (weapon.explosionradius == 0) {
-        return 0;
+        return false;
     }
     if (weapons::getbaseweapon(weapon) == level.weaponflechette && weaponhasattachment(weapon, "uber")) {
-        return 0;
+        return false;
     }
     distsqr = isdefined(einflictor) && isdefined(self.lastspawnpoint) ? distancesquared(einflictor.origin, self.lastspawnpoint.origin) : 0;
     if (distsqr < 250 * 250) {
         if (smeansofdeath == "MOD_GRENADE" || smeansofdeath == "MOD_GRENADE_SPLASH") {
-            return 1;
+            return true;
         }
         if (smeansofdeath == "MOD_PROJECTILE" || smeansofdeath == "MOD_PROJECTILE_SPLASH") {
-            return 1;
+            return true;
         }
         if (smeansofdeath == "MOD_EXPLOSIVE") {
-            return 1;
+            return true;
         }
     }
     if (killstreaks::is_killstreak_weapon(weapon)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage
@@ -1017,10 +1017,10 @@ function private function_104e1126(einflictor, eattacker, idamage, idflags, smea
     is_explosive_damage = weapon_utils::isexplosivedamage(smeansofdeath);
     if (is_explosive_damage) {
         if (self function_811dd365(einflictor, weapon, smeansofdeath)) {
-            return 0;
+            return false;
         }
         if (self function_eacd01b7(eattacker, weapon)) {
-            return 0;
+            return false;
         }
     }
     if (isdefined(einflictor) && (smeansofdeath == "MOD_GAS" || is_explosive_damage)) {
@@ -1074,7 +1074,7 @@ function private function_104e1126(einflictor, eattacker, idamage, idflags, smea
             self.explosiveinfo[#"projectile_bounced"] = isdefined(einflictor.bounced);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace player/player_damage
@@ -1083,12 +1083,12 @@ function private function_104e1126(einflictor, eattacker, idamage, idflags, smea
 // Size: 0x84
 function private function_acca46ef() {
     if (!isdefined(level.discardtime) || !isdefined(level.starttime)) {
-        return 0;
+        return false;
     }
     if (level.friendlyfiredelay && level.friendlyfiredelaytime >= float(gettime() - level.starttime - level.discardtime) / 1000) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage
@@ -1097,21 +1097,21 @@ function private function_acca46ef() {
 // Size: 0xb4
 function private function_44b6bb92(eattacker, ignore_round_start_friendly_fire) {
     if (!isalive(eattacker)) {
-        return 0;
+        return false;
     }
     friendlyfire = [[ level.figure_out_friendly_fire ]](self, eattacker);
     if (friendlyfire == 1) {
         if (function_acca46ef() && ignore_round_start_friendly_fire == 0) {
-            return 1;
+            return true;
         }
     }
     if (friendlyfire == 2) {
-        return 1;
+        return true;
     }
     if (friendlyfire == 3) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage
@@ -1122,14 +1122,14 @@ function function_1727a023(ignore_round_start_friendly_fire, attacker) {
     friendlyfire = [[ level.figure_out_friendly_fire ]](self, attacker);
     if (friendlyfire == 1) {
         if (function_acca46ef() && ignore_round_start_friendly_fire == 0) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
     if (friendlyfire == 3) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace player/player_damage

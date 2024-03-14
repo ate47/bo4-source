@@ -134,13 +134,13 @@ function function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon,
             switch (level.var_8ca3c62) {
             case 8:
                 self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_wine_plyr_dead"));
-                return;
+                break;
             case 9:
                 level notify(#"tutorial_goto_end");
                 if (!level flag::get("fin2_enemy_chopper_destroyed")) {
                     self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_score_plyr_dead"));
                 }
-                return;
+                break;
             }
         }
     }
@@ -636,7 +636,7 @@ function function_8868dc7c() {
         function_7065027f();
     }
     level.var_8fce01d = 1;
-    while (1) {
+    while (true) {
         function_64d067e7("s_enemy_seeker_loc_2");
         if (isdefined(level.var_e0532484) && level.var_e0532484) {
             level.var_e0532484 = 0;
@@ -679,12 +679,12 @@ function function_64d067e7(var_e3dee394) {
         waitframe(1);
     }
     level.e_seeker_mine clientfield::set("enemyvehicle", 1);
-    while (1) {
+    while (true) {
         if (!isalive(level.e_seeker_mine)) {
-            return;
+            break;
         }
         if (isdefined(level.var_e0532484) && level.var_e0532484) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -725,7 +725,7 @@ function function_7536db69() {
     waitframe(1);
     self thread ct_utils::function_61c3d59c(#"hash_bf201c60ee31917");
     self thread ct_vo::function_261ed63c("vox_tvoi_tutor_prop_one_enemy_nag", 15, 25);
-    while (1) {
+    while (true) {
         if (level.var_90de2af7.lastattackweapon === var_539244d1) {
             break;
         }
@@ -803,7 +803,7 @@ function function_5b350d94(var_43d50d89 = 1, var_463b195d = 1) {
     var_539244d1 = getweapon(#"shock_rifle");
     n_clipsize = self getweaponammoclipsize(var_539244d1);
     n_slot = self gadgetgetslot(var_539244d1);
-    while (1) {
+    while (true) {
         if (!isinarray(level.var_e72728b8, #"shock_rifle")) {
             if (isdefined(var_43d50d89) && var_43d50d89) {
                 self gadgetpowerset(n_slot, 100);
@@ -954,7 +954,7 @@ function function_3b67dc84(_hash) {
 function function_b559b2a5() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self setgoal(self.origin, 1, 1);
         waitframe(1);
     }
@@ -1034,7 +1034,7 @@ function function_235b259b() {
 // Size: 0x22a
 function function_f4ca14fb(var_a8183c4a = 0) {
     level endon(#"combattraining_logic_finished", #"hash_5d67cd17870cf7b6");
-    while (1) {
+    while (true) {
         self thread ct_vo::function_261ed63c("vox_tvoi_tutor_prop_wine_seeker_deploy_nag", 10, 15);
         if (!(isdefined(var_a8183c4a) && var_a8183c4a)) {
             self thread ct_utils::function_61c3d59c(#"hash_3c3e43ddca2a93c0");
@@ -1341,12 +1341,12 @@ function function_9fb49c9e() {
 // Size: 0x62
 function function_e5964493(e_seeker_mine) {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (!isalive(e_seeker_mine)) {
-            return;
+            break;
         }
         if (e_seeker_mine.var_a5b686b6 > 0) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -1368,7 +1368,7 @@ function function_147ce591() {
     self setplayerangles(s_loc.angles);
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 64);
     self util::magic_bullet_shield();
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         n_dist = distance(self.origin, e_player.origin);
         if (n_dist < 650) {
@@ -1462,7 +1462,7 @@ function dailydaily() {
 function function_df8f80c4(e_target, n_wait_min = 0.1, n_wait_max = 0.5) {
     level endon(#"combattraining_logic_finished");
     self endon(#"death", #"hash_624290b3f2248336");
-    while (1) {
+    while (true) {
         if (isdefined(e_target)) {
             var_add3ed29 = {#aimpoint:e_target.origin};
             self bot_action::aim_at_target(var_add3ed29);
@@ -1497,21 +1497,21 @@ function function_58c62280(b_keyline, var_2f3964e3) {
         level waittill(#"hash_7fb05a5bbcb14d6b");
         self val::reset(#"enemy_bot", "ignoreall");
         self thread ct_utils::function_5b59f3b7(self.origin, self.angles, 200);
-        return;
+        break;
     case 2:
         self thread function_7c64c8be(s_loc);
-        return;
+        break;
     case 3:
         level.var_924c5b44 = self;
-        return;
+        break;
     case 6:
         level.var_90de2af7 = self;
-        return;
+        break;
     case 7:
         self thread function_c4546e73(s_loc);
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -1711,7 +1711,7 @@ function function_9bf1e805(e_player) {
         }
     }
     e_player notify(#"hash_225857690f87699b");
-    while (1) {
+    while (true) {
         if (isdefined(level.var_394c5463) && level.var_394c5463) {
             if (self.var_a5b686b6 > 0) {
                 break;
@@ -2010,7 +2010,7 @@ function function_324c6d8c() {
             adddebugcommand("<unknown string>");
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_42113ca5668d7812", "vox_tvoi_tutor_prop_seeker_enemy_dead_0");
             if (cmd == "vox_tvoi_tutor_prop_seeker_enemy_dead_0") {

@@ -308,10 +308,10 @@ function private function_943e4c08(entity, minplayerdist) {
     if (isdefined(var_6f59ec8b)) {
         pathdata = generatenavmeshpath(var_6f59ec8b, playerpositions, entity);
         if (isdefined(pathdata) && pathdata.status === "succeeded" && pathdata.pathdistance < minplayerdist) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -468,9 +468,9 @@ function private function_eb1f805(entity) {
 // Size: 0x74
 function private function_3006441d(entity) {
     if (!isdefined(entity.var_722a34a3) || !isdefined(entity.var_52e3b294) || distancesquared(entity.var_52e3b294, entity.origin) > 10 * 10) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -495,40 +495,40 @@ function private function_4ec678fe(entity) {
 // Size: 0x2ae
 function function_20fa0d4c(entity) {
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     if (abs(entity.origin[2] - entity.enemy.origin[2]) > 64) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.meleeweapon) && entity.meleeweapon !== level.weaponnone) {
         meleedistsq = entity.meleeweapon.aimeleerange * entity.meleeweapon.aimeleerange;
     }
     if (!isdefined(meleedistsq)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, entity.enemy.origin) > meleedistsq) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
     if (!entity cansee(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, entity.enemy.origin) < 40 * 40) {
-        return 1;
+        return true;
     }
     if (!tracepassedonnavmesh(entity.origin, isdefined(entity.enemy.last_valid_position) ? entity.enemy.last_valid_position : entity.enemy.origin, entity getpathfindingradius())) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -545,24 +545,24 @@ function private function_3536f675(entity) {
 // Size: 0x140
 function private function_3bda3c55(entity) {
     if (!entity ai::get_behavior_attribute("can_ground_slam")) {
-        return 0;
+        return false;
     }
     if (entity.var_96b5e3f1 > gettime()) {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (!(isdefined(entity.favoriteenemy.am_i_valid) && entity.favoriteenemy.am_i_valid)) {
-        return 0;
+        return false;
     }
     if (abs(entity.origin[2] - entity.favoriteenemy.origin[2]) > 72) {
-        return 0;
+        return false;
     }
     if (distance2dsquared(entity.origin, entity.favoriteenemy.origin) > entity ai::function_9139c839().var_b4c77cfb * entity ai::function_9139c839().var_b4c77cfb) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -614,12 +614,12 @@ function private function_85e8940a(entity) {
 // Size: 0xa0
 function private function_fbb311db(entity) {
     if (!isdefined(entity.var_d646708c) || !zm_lockdown_util::function_7bfa8895(entity)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.var_d646708c, entity.origin) > entity ai::function_9139c839().var_98d0b358 * entity ai::function_9139c839().var_98d0b358) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -773,7 +773,7 @@ function smoke_vo(v_pos) {
     var_55c47118 = spawn("trigger_radius", v_pos, 0, 200, 80);
     var_55c47118 endon(#"death");
     var_55c47118 thread function_9a4a6d02();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = var_55c47118 waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
@@ -886,9 +886,9 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
 // Size: 0x40
 function instakill_override(player, mod, shitloc) {
     if (self.archetype === #"brutus") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus
@@ -897,7 +897,7 @@ function instakill_override(player, mod, shitloc) {
 // Size: 0x148
 function function_88efcb() {
     if (!(isdefined(self.completed_emerging_into_playable_area) && self.completed_emerging_into_playable_area)) {
-        return 1;
+        return true;
     }
     if (isdefined(level.var_f47ae5da)) {
         s_spawn_loc = [[ level.var_f47ae5da ]]();
@@ -905,7 +905,7 @@ function function_88efcb() {
         s_spawn_loc = zombie_brutus_util::get_best_brutus_spawn_pos();
     }
     if (!isdefined(s_spawn_loc)) {
-        return 1;
+        return true;
     }
     var_38007f6f = zm_lockdown_util::function_87c1193e(self);
     if (isdefined(var_38007f6f) && zm_lockdown_util::function_c9105448(self, var_38007f6f)) {
@@ -917,6 +917,6 @@ function function_88efcb() {
         self thread zombie_brutus_util::brutus_lockdown_client_effects();
         self playsound(#"zmb_ai_brutus_spawn_2d");
     }
-    return 1;
+    return true;
 }
 

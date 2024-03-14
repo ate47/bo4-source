@@ -116,7 +116,7 @@ function is_active() {
 function function_70594057() {
     level endon(#"hash_7646638df88a3656", #"end_game");
     level waittill(#"zombie_total_set");
-    for (n_kills = 0; 1; n_kills++) {
+    for (n_kills = 0; true; n_kills++) {
         level waittill(#"trap_kill", #"hash_528d7b7f7d6c51a1", #"hash_317f58ba0d580c27", #"hash_148b3ce521088846");
     }
 }

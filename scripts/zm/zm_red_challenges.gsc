@@ -197,7 +197,7 @@ function function_2bb8d916() {
 // Size: 0xa8
 function player_damage_watcher() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         n_damage = waitresult.amount;
@@ -457,7 +457,7 @@ function function_f3059d3b(e_player) {
 // Size: 0x2ec
 function function_5804d6ff() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -543,7 +543,7 @@ function function_756c88b7() {
     level endon(#"game_ended");
     function_9e7dc4fb();
     function_895a4ebf();
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         function_9e7dc4fb();
         function_895a4ebf();
@@ -616,13 +616,13 @@ function function_9e7dc4fb() {
 // Checksum 0xd865674d, Offset: 0x3290
 // Size: 0x130
 function function_7e8e23a6() {
-    if (1) {
+    if (true) {
         n_index = self getentitynumber();
         s_bowl = level.var_3e72dc3c[n_index];
         self clientfield::set_to_player("" + #"hash_4bde11d71410ea67", s_bowl.var_e668d197);
         return s_bowl;
     } else {
-        while (1) {
+        while (true) {
             s_bowl = level.var_3e72dc3c[level.var_c37fe7bc];
             level.var_c37fe7bc++;
             if (level.var_c37fe7bc >= level.var_3e72dc3c.size) {
@@ -645,10 +645,10 @@ function maxis_quest_(s_bowl) {
     a_players = getplayers();
     foreach (player in a_players) {
         if (player.s_tribute_bowl === s_bowl) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -827,7 +827,7 @@ function function_8d1fd2d8() {
 // Size: 0x18c
 function function_4a88eb80() {
     level endon(#"hash_61075af70fbd9082");
-    for (var_53a794b0 = gettime() / 1000; 1; var_53a794b0 = n_time) {
+    for (var_53a794b0 = gettime() / 1000; true; var_53a794b0 = n_time) {
         wait(2);
         n_time = gettime() / 1000;
         foreach (player in getplayers()) {
@@ -959,7 +959,7 @@ function function_1d60215() {
         player thread function_173c3ce8(level.s_active_challenge.n_id, undefined, vol_area);
     }
     level.var_ae2ad596 = zm_utility::function_d7db256e(level.var_c699da9d, undefined, 1);
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         foreach (player in getplayers()) {
             if (!isdefined(player.var_f94035ca)) {
@@ -997,7 +997,7 @@ function function_c106ffd8() {
 // Checksum 0xfb959854, Offset: 0x4988
 // Size: 0x1e
 function function_2dcc7ade(var_893baaf = undefined) {
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1006,9 +1006,9 @@ function function_2dcc7ade(var_893baaf = undefined) {
 // Size: 0x40
 function function_40ccb2dc(var_893baaf = undefined) {
     if (isdefined(level.var_f9e5f55a) && level.var_f9e5f55a) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1018,10 +1018,10 @@ function function_40ccb2dc(var_893baaf = undefined) {
 function function_6e07042a(var_893baaf = undefined) {
     foreach (player in getplayers()) {
         if (player flag::exists(#"hash_664c4b8d9b3d0237") && player flag::get(#"hash_664c4b8d9b3d0237")) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1030,9 +1030,9 @@ function function_6e07042a(var_893baaf = undefined) {
 // Size: 0x34
 function function_69a721d(var_893baaf = undefined) {
     if (level.round_number >= var_893baaf) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1041,9 +1041,9 @@ function function_69a721d(var_893baaf = undefined) {
 // Size: 0x32
 function function_a987b682(var_893baaf = undefined) {
     if (level.gamedifficulty > var_893baaf) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1076,19 +1076,19 @@ function function_863d38d3(n_zone) {
     switch (n_zone) {
     case 1:
         if (function_5c5cb67b() && !function_2d371444()) {
-            return 0;
+            return false;
         }
         break;
     case 2:
         if (!function_5c5cb67b()) {
-            return 0;
+            return false;
         }
         break;
     case 0:
     default:
         break;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1121,10 +1121,10 @@ function function_7fcc1087(var_893baaf = undefined) {
     level.var_4427ebb1 = var_893baaf;
     if (isdefined(level.var_4427ebb1) && isdefined(level.zones[level.var_4427ebb1])) {
         if (level.zones[level.var_4427ebb1].is_enabled) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1133,9 +1133,9 @@ function function_7fcc1087(var_893baaf = undefined) {
 // Size: 0x46
 function function_2d371444(var_893baaf = undefined) {
     if (level flag::get(#"pap_quest_completed")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1144,9 +1144,9 @@ function function_2d371444(var_893baaf = undefined) {
 // Size: 0x42
 function is_challenge_active(var_ecffa2a8) {
     if (isdefined(level.s_active_challenge) && level.s_active_challenge.n_id == var_ecffa2a8) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1155,9 +1155,9 @@ function is_challenge_active(var_ecffa2a8) {
 // Size: 0x1c
 function is_active() {
     if (isdefined(level.s_active_challenge)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1167,9 +1167,9 @@ function is_active() {
 function function_94bdb104(s_struct, ai_killed) {
     n_distance = distance(level.var_cf9c7fdc.origin, ai_killed.origin);
     if (n_distance > 400) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges
@@ -1189,7 +1189,7 @@ function soul_capture(s_struct, ai_killed) {
 function function_5ee56208(var_5acfb6d) {
     self endon(#"death");
     level endon(#"hash_61075af70fbd9082");
-    while (1) {
+    while (true) {
         var_bdf9e3c2 = zm_zonemgr::get_zone_from_position(self.origin);
         if (isdefined(var_bdf9e3c2)) {
             var_72192bfa = zm_red_zones::function_27028b8e(var_bdf9e3c2);
@@ -1212,7 +1212,7 @@ function function_5ee56208(var_5acfb6d) {
 // Size: 0x100
 function function_9ffc76ea(str_notify) {
     level endon(#"hash_61075af70fbd9082");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(str_notify);
         e_player = waitresult.e_player;
@@ -1239,14 +1239,14 @@ function function_bf582bc8(var_ecffa2a8, n_damage) {
     n_start_health = self.health;
     while (is_challenge_active(var_ecffa2a8)) {
         if (self laststand::player_is_in_laststand()) {
-            return;
+            break;
         }
         if (self.sessionstate === "spectator") {
-            return;
+            break;
         }
         if (self.health == self.maxhealth) {
             self namespace_f8f28e08::function_53a333a8(level.s_active_challenge.n_id, undefined, n_damage);
-            return;
+            break;
         } else {
             n_delta = self.health - n_start_health;
             if (n_delta >= 50) {
@@ -1320,7 +1320,7 @@ function player_progress_bar() {
 // Size: 0x104
 function function_a17a600() {
     level endon(#"hash_61075af70fbd9082");
-    while (1) {
+    while (true) {
         wait(60);
         level.var_c94140cf = level.var_8f94c541[level.var_fe19836];
         level.var_fe19836++;
@@ -1339,12 +1339,12 @@ function function_a17a600() {
 // Size: 0x46
 function function_5c5cb67b() {
     if (level.round_number >= 10) {
-        return 1;
+        return true;
     }
     if (level flag::get(#"hash_7943879f3be8ccc6")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_challenges/zm_red_challenges

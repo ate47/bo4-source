@@ -409,12 +409,12 @@ function getunownedflagneareststart(team, excludeflag) {
 // Size: 0x274
 function domdebug() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"scr_domdebug", 0) != 1) {
                 wait(2);
                 continue;
             }
-            while (1) {
+            while (true) {
                 if (getdvarint(#"scr_domdebug", 0) != 1) {
                     break;
                 }
@@ -1306,20 +1306,20 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
 // Size: 0x198
 function function_a800815(victim, attacker) {
     if (!isdefined(victim) || !isdefined(victim.pers) || !isdefined(victim.pers[#"team"])) {
-        return 0;
+        return false;
     }
     if (!isdefined(attacker) || !isdefined(attacker.pers) || !isdefined(attacker.pers[#"team"])) {
-        return 0;
+        return false;
     }
     if (isdefined(victim.touchtriggers) && victim.touchtriggers.size && attacker.pers[#"team"] != victim.pers[#"team"]) {
         triggerids = getarraykeys(victim.touchtriggers);
         domflag = victim.touchtriggers[triggerids[0]].useobj;
         team = victim.pers[#"team"];
         if (team != domflag.ownerteam) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace dom/dom
@@ -1329,10 +1329,10 @@ function function_a800815(victim, attacker) {
 function function_d3a438fb(entity) {
     foreach (flag in level.flags) {
         if (entity istouching(flag)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace dom/dom
@@ -1416,7 +1416,7 @@ function getboundaryflags() {
         for (j = 0; j < level.flags[i].adjflags.size; j++) {
             if (level.flags[i].useobj gameobjects::get_owner_team() != level.flags[i].adjflags[j].useobj gameobjects::get_owner_team()) {
                 bflags[bflags.size] = level.flags[i];
-                continue;
+                break;
             }
         }
     }
@@ -1487,7 +1487,7 @@ function getownedandboundingflagspawns(team) {
                 for (s = 0; s < level.flags[i].nearbyspawns.size; s++) {
                     spawns[spawns.size] = level.flags[i].nearbyspawns[s];
                 }
-                continue;
+                break;
             }
         }
     }
@@ -1692,13 +1692,13 @@ function dominated_challenge_check() {
         } else if (flag_team == #"axis") {
             axis_flags++;
         } else {
-            return 0;
+            return false;
         }
         if (allied_flags > 0 && axis_flags > 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace dom/dom
@@ -1717,10 +1717,10 @@ function dominated_check() {
             axis_flags++;
         }
         if (allied_flags > 0 && axis_flags > 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace dom/dom
@@ -1756,15 +1756,15 @@ function updatecapsperminute(lastownerteam) {
 // Size: 0x62
 function isscoreboosting(player, flag) {
     if (!level.rankedmatch) {
-        return 0;
+        return false;
     }
     if (player.capsperminute > level.playercapturelpm) {
-        return 1;
+        return true;
     }
     if (flag.capsperminute > level.flagcapturelpm) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace dom/dom

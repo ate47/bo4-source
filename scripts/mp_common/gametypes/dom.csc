@@ -58,7 +58,7 @@ function monitor_flag_fx(localclientnum, flag_objective, flag_name) {
     fx_name = get_base_fx(flag, #"neutral");
     play_base_fx(localclientnum, flag, fx_name, #"neutral");
     flag.last_progress = 0;
-    while (1) {
+    while (true) {
         team = serverobjective_getobjectiveteam(localclientnum, flag_objective);
         if (team != flag.last_team) {
             flag update_base_fx(localclientnum, flag, team);

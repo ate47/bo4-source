@@ -114,7 +114,7 @@ function function_43084f6c(player) {
         otherteam = util::getotherteam(player.team);
         foreach (var_f53fe24c in getplayers(otherteam)) {
             if (var_f53fe24c function_d210981e(player.origin)) {
-                return 1;
+                return true;
             }
         }
     } else {
@@ -137,12 +137,12 @@ function function_43084f6c(player) {
                     player.var_c676db5f[player getentitynumber()].cansee = sighttracepassed(playereye, enemyeye, 0, player);
                 }
                 if (isdefined(player.var_c676db5f[player getentitynumber()].cansee) ? player.var_c676db5f[player getentitynumber()].cansee : 0) {
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_player/globallogic_player
@@ -151,20 +151,20 @@ function function_43084f6c(player) {
 // Size: 0x13a
 function function_9f942458(var_6ba44c6, var_fbbdf63c) {
     if (!isplayer(var_fbbdf63c)) {
-        return 0;
+        return false;
     }
     if (!isdefined(var_fbbdf63c.sensor_darts)) {
-        return 0;
+        return false;
     }
     foreach (sensor in var_fbbdf63c.sensor_darts) {
         if (!isdefined(sensor)) {
             continue;
         }
         if (distancesquared(var_6ba44c6.origin, sensor.origin) < ((sessionmodeiswarzonegame() ? 2400 : 800) + 50) * ((sessionmodeiswarzonegame() ? 2400 : 800) + 50)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_player/globallogic_player
@@ -173,13 +173,13 @@ function function_9f942458(var_6ba44c6, var_fbbdf63c) {
 // Size: 0x19a
 function function_eddea888(player) {
     if (!isdefined(player.team)) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         otherteam = util::getotherteam(player.team);
         foreach (attacking_player in getplayers(otherteam)) {
             if (function_9f942458(player, attacking_player)) {
-                return 1;
+                return true;
             }
         }
     } else {
@@ -189,11 +189,11 @@ function function_eddea888(player) {
                 continue;
             }
             if (function_9f942458(player, enemy)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_player/globallogic_player
@@ -202,12 +202,12 @@ function function_eddea888(player) {
 // Size: 0x1c6
 function function_ce33e204(player) {
     if (!isdefined(level.activeuavs) || level.activeuavs.size == 0 || isdefined(level.forceradar) && level.forceradar == 1) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         otherteam = util::getotherteam(player.team);
         if (isdefined(level.activeuavs[otherteam]) && level.activeuavs[otherteam] > 0) {
-            return 1;
+            return true;
         }
     } else {
         enemies = getplayers();
@@ -219,11 +219,11 @@ function function_ce33e204(player) {
                 enemy.entnum = enemy getentitynumber();
             }
             if (isdefined(level.activeuavs[enemy.entnum]) && level.activeuavs[enemy.entnum] > 0) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_player/globallogic_player
@@ -232,12 +232,12 @@ function function_ce33e204(player) {
 // Size: 0x19e
 function private function_5af0c53c(player) {
     if (!isdefined(level.activecounteruavs) || level.activecounteruavs.size == 0) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         otherteam = util::getotherteam(player.team);
         if (isdefined(level.activecounteruavs[otherteam]) && level.activecounteruavs[otherteam] > 0) {
-            return 1;
+            return true;
         }
     } else {
         enemies = getplayers();
@@ -249,11 +249,11 @@ function private function_5af0c53c(player) {
                 enemy.entnum = enemy getentitynumber();
             }
             if (isdefined(level.activecounteruavs[enemy.entnum]) && level.activecounteruavs[enemy.entnum] > 0) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_player/globallogic_player

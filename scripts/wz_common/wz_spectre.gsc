@@ -170,7 +170,7 @@ function private give_max_ammo(weaponslot) {
         currentammostock = self getweaponammostock(ammoitem.weapon);
         var_9b9ba643 = var_2f399b51 - currentammostock;
         self function_fc9f8b05(weapon, var_9b9ba643);
-        return;
+        break;
     }
 }
 

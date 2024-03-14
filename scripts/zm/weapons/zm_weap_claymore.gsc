@@ -51,9 +51,9 @@ function __init__() {
 // Size: 0x3e
 function function_4ed6fbd5(v_origin, v_angles, player) {
     if (!zm_utility::check_point_in_playable_area(v_origin)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_claymore/zm_weap_claymore
@@ -189,7 +189,7 @@ function claymore_detonation(e_planter) {
         self.owner.placeable_mines = array(self.owner.placeable_mines);
     }
     self.owner.placeable_mines[self.owner.placeable_mines.size] = self;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = damagearea waittill(#"trigger");
         ent = waitresult.activator;
@@ -229,7 +229,7 @@ function private should_trigger_claymore(e_mine) {
     objectforward = anglestoforward(e_mine.angles);
     dist = vectordot(dirtopos, objectforward);
     if (dist < 20) {
-        return 0;
+        return false;
     }
     dirtopos = vectornormalize(dirtopos);
     dot = vectordot(dirtopos, objectforward);
@@ -262,7 +262,7 @@ function function_cbb2f05b(watcher) {
     self.health = self.maxhealth;
     self.var_18acfe18 = 0;
     self.var_966835e3 = 150;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;

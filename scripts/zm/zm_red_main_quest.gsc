@@ -257,7 +257,7 @@ function function_40b663e7() {
 // Size: 0xa0
 function function_a9481419() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_flame = struct::get(#"hash_11e79ab8fb768baa");
         function_e9af1fc4(s_flame, 13689);
         if (!(isdefined(self.var_b4f85096) && self.var_b4f85096)) {
@@ -543,7 +543,7 @@ function function_f0f982b() {
     foreach (e_player in a_e_players) {
         if (zm_utility::is_player_valid(e_player)) {
             e_player thread zm_vo::function_a2bd5a0c(#"hash_7c2fc0e6e835e8df");
-            return;
+            break;
         }
     }
 }
@@ -749,7 +749,7 @@ function function_b87e4fa1() {
 function function_47c0d27() {
     self endon(#"death");
     self flag::init(#"hash_1267306c12c34607");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"ww_charon_hit");
         if (isdefined(self)) {
@@ -1102,7 +1102,7 @@ function function_b8911151() {
     self endon("1114015a3e4d9c5d");
     level endon(#"end_game", #"hash_1beb529f935869e4");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"projectile_impact");
         w_weapon = s_waitresult.weapon;
@@ -1329,7 +1329,7 @@ function function_a0e1ae36(var_99fea1a4) {
     self endon(#"gear_connected");
     self flag::init(#"gear_connected");
     self thread function_a0111782(var_99fea1a4);
-    while (1) {
+    while (true) {
         var_2f3fee37 = abs(self.origin[self.n_axis] - var_99fea1a4.origin[self.n_axis]);
         if (var_99fea1a4.var_d5b27ae8 && var_2f3fee37 < 3) {
             n_rotate_angle = 61;
@@ -1351,7 +1351,7 @@ function function_a0e1ae36(var_99fea1a4) {
 // Size: 0x248
 function function_a0111782(var_99fea1a4) {
     self endon(#"gear_connected");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.var_f1560899 waittill(#"damage");
         self.var_f1560899.health = self.var_f1560899.health + s_result.amount;
@@ -1403,7 +1403,7 @@ function function_c8fd26ac() {
 // Size: 0x2b2
 function function_dacc5df9(str_target) {
     self endon(#"gear_connected");
-    for (s_target = struct::get(str_target); 1; s_target = struct::get(s_target.target)) {
+    for (s_target = struct::get(str_target); true; s_target = struct::get(s_target.target)) {
         self.var_d5b27ae8 = 0;
         if (isdefined(s_target.script_int) && s_target.script_int) {
             self.var_d5b27ae8 = 1;
@@ -1446,7 +1446,7 @@ function function_dacc5df9(str_target) {
 // Size: 0x70
 function function_f0c7fe90() {
     self endon(#"stop_gear");
-    while (1) {
+    while (true) {
         if (self.var_b6226b48) {
             self rotateroll(self.n_rotate_angle, 1.6);
             self waittill(#"rotatedone");
@@ -1483,7 +1483,7 @@ function rotate_statue(b_reset = 1) {
     }
     self playsound(#"hash_d9cd3d59940994");
     self playloopsound(#"hash_5abec0ae1cc80274");
-    while (1) {
+    while (true) {
         self rotateyaw(296, 2.9);
         self waittill(#"rotatedone");
     }
@@ -1577,7 +1577,7 @@ function shoot_roots_setup(b_skipped) {
     level.var_5b7d4d8d = 1;
     level.var_f521216c = 1;
     level thread function_2ee0f84b();
-    while (1) {
+    while (true) {
         foreach (mdl_target in a_mdl_targets) {
             zm_weap_hand_gaia::function_6d783edd(mdl_target);
         }
@@ -1604,7 +1604,7 @@ function shoot_roots_setup(b_skipped) {
         if (!b_success) {
             continue;
         }
-        return;
+        break;
     }
 }
 
@@ -1698,10 +1698,10 @@ function function_310741f7(var_1cd2521, n_time_limit) {
         }
         level notify(#"hash_22f69672129581f6", {#e_player:s_result.e_player});
         level waittill(#"hash_768102de761a94ee");
-        return 0;
+        return false;
     }
     level notify(#"hash_1e533dd76c452301", {#e_player:s_result.e_player});
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -1719,7 +1719,7 @@ function function_c538a5b7(mdl_target) {
     }
     mdl_target val::set(#"prophecy_takedamage", "takedamage", 1);
     zm_weap_hand_gaia::function_5fc81f0a(mdl_target);
-    while (1) {
+    while (true) {
         mdl_target.health = 999999;
         s_waitresult = undefined;
         s_waitresult = mdl_target waittill(#"damage", #"hash_580cbae7da0c821d");
@@ -1754,7 +1754,7 @@ function function_f275243f() {
     s_prophecy = level.var_cc9c60d2;
     mdl_chaos = s_prophecy.mdl_chaos;
     v_target = mdl_chaos.origin;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_3ac605b3a73cc198");
         v_hit = s_waitresult.v_origin;
@@ -1783,7 +1783,7 @@ function defeat_gegenees_setup(b_skipped) {
     zm::register_zombie_damage_override_callback(&function_907d5e60);
     s_scene = struct::get(#"aib_vign_cust_zm_red_gegn_crystal_break", "scriptbundlename");
     s_scene.var_6efb24e2 = 1;
-    while (1) {
+    while (true) {
         ai_gegenees = zombie_gegenees_util::spawn_single(1, s_scene);
         if (isdefined(ai_gegenees)) {
             break;
@@ -2074,7 +2074,7 @@ function function_4c903aa5() {
         }
         var_69836136 = "alchemical_symbol_" + str_letter + "_";
         v_angles_original = mdl_ring.angles;
-        while (1) {
+        while (true) {
             mdl_ring.angles = v_angles_original;
             s_prophecy.var_d7ebba27 = 0;
             s_prophecy.var_3dd6bbe9 = 0;
@@ -2270,7 +2270,7 @@ function function_7e47a01a(v_start) {
 // Size: 0x80
 function function_ade40c4a() {
     level endon(#"end_game", #"sundial_puzzle" + "_ended_early", #"hash_1995757cb678aacb");
-    while (1) {
+    while (true) {
         level thread function_3c71e07d();
         level waittill(#"end_of_round");
     }
@@ -2289,7 +2289,7 @@ function function_3c71e07d() {
     v_spear = mdl_spear.origin;
     for (i = 0; i < 2; i++) {
         b_has_spawned = 0;
-        while (1) {
+        while (true) {
             wait(30);
             if (isdefined(s_prophecy.var_d7ebba27) && s_prophecy.var_d7ebba27) {
                 continue;
@@ -2314,7 +2314,7 @@ function function_3c71e07d() {
                 }
             }
             if (b_has_spawned) {
-                continue;
+                break;
             }
         }
     }
@@ -2329,7 +2329,7 @@ function function_3ddff1b4() {
     s_prophecy = level.var_cc9c60d2;
     mdl_spear = s_prophecy.mdl_spear;
     v_spear = mdl_spear.origin;
-    while (1) {
+    while (true) {
         wait(1);
         a_corpses = getcorpsearray();
         a_corpses = arraysortclosest(a_corpses, v_spear, undefined, 0, 150);
@@ -2388,7 +2388,7 @@ function function_8e8da19a() {
     self endon(#"death");
     s_prophecy = level.var_cc9c60d2;
     blind_status_effect = getstatuseffect("blind_zm_catalyst");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
@@ -2516,7 +2516,7 @@ function free_ankh_cleanup(b_skipped, var_19e802fa) {
         foreach (e_player in a_e_players) {
             if (zm_utility::is_player_valid(e_player)) {
                 e_player thread zm_audio::create_and_play_dialog(#"generic", #"response_positive");
-                return;
+                break;
             }
         }
     }
@@ -2550,7 +2550,7 @@ function function_38548080() {
     level endon(#"end_game", #"free_ankh" + "_ended_early", #"hash_6a89add74b46c461");
     s_light = level.var_5299790a;
     mdl_ra = s_light.var_19d2da88;
-    while (1) {
+    while (true) {
         foreach (e_player in util::get_active_players()) {
             if (zm_utility::is_player_valid(e_player) && e_player zm_audio::can_speak()) {
                 n_dist = distance2dsquared(e_player.origin, mdl_ra.origin);
@@ -2571,7 +2571,7 @@ function function_38548080() {
 // Size: 0x80
 function function_aabfb424() {
     level endon(#"end_game", #"free_ankh" + "_ended_early", #"hash_6a89add74b46c461");
-    while (1) {
+    while (true) {
         level waittill(#"hash_5d3012139f083ccb");
         level thread function_49b3f5aa();
     }
@@ -2593,11 +2593,11 @@ function function_49b3f5aa() {
     }
     s_target = struct::get(#"hash_2419db3559d2bbcb");
     v_target = s_target.origin;
-    while (1) {
+    while (true) {
         a_s_spawns = level.zm_loc_types[#"gegenees_location"];
         if (a_s_spawns.size > 0) {
             s_spawn = arraygetclosest(v_target, a_s_spawns);
-            while (1) {
+            while (true) {
                 ai_gegenees = zombie_gegenees_util::spawn_single(1, s_spawn);
                 if (isdefined(ai_gegenees)) {
                     return;
@@ -2624,7 +2624,7 @@ function function_d62a2d14() {
     }
     s_target = struct::get(#"hash_2419db3559d2bbcb");
     v_target = s_target.origin;
-    while (1) {
+    while (true) {
         self waittill(#"gegenees_shield_blast");
         n_dist = distancesquared(self.origin, v_target);
         if (n_dist <= 1200 * 1200 && self util::is_looking_at(v_target, undefined, 1)) {
@@ -2821,8 +2821,8 @@ function function_ecbc541d() {
         }
     }
     s_unitrigger zm_unitrigger::create(&function_4998929a);
-    while (1) {
-        while (1) {
+    while (true) {
+        while (true) {
             s_waitresult = undefined;
             s_waitresult = s_unitrigger waittill(#"trigger_activated");
             e_player = s_waitresult.e_who;
@@ -2891,7 +2891,7 @@ function function_3288a0d2() {
     level thread function_e5352d71();
     t_close = getent("t_light_fuel_ignite_close", "targetname");
     t_far = getent("t_light_fuel_ignite_far", "targetname");
-    while (1) {
+    while (true) {
         t_close triggerenable(1);
         t_far triggerenable(1);
         level clientfield::set("" + #"hash_43972920fa314daa", 1);
@@ -2947,7 +2947,7 @@ function function_e5352d71() {
     var_e41dced6 = 60 / (n_runes + 1);
     foreach (var_740e1e0e in var_8d5cca6b) {
         n_time_left = var_e41dced6;
-        while (1) {
+        while (true) {
             n_start_time = gettime();
             s_waitresult = undefined;
             s_waitresult = level waittilltimeout(n_time_left, #"hash_d0d79bd22a685c1");
@@ -2988,7 +2988,7 @@ function function_202bd7b8() {
     s_light = level.var_5299790a;
     mdl_ra = s_light.var_19d2da88;
     v_ra = mdl_ra.origin;
-    while (1) {
+    while (true) {
         if (!zm_transform::function_abf1dcb4(#"blight_father")) {
             a_ai_blight_father = getaiarchetypearray(#"blight_father");
             a_ai_blight_father = arraysortclosest(a_ai_blight_father, v_ra, undefined, 0, 1024);
@@ -3016,11 +3016,11 @@ function function_a30dee24() {
     level endon(#"end_game", #"defend_ra" + "_ended_early", #"hash_4140f0472ba137c", #"hash_2f511b37fc55c45a");
     s_light = level.var_5299790a;
     a_s_spawns = struct::get_array(#"hash_33fd28ee963853d6");
-    while (1) {
+    while (true) {
         var_2a28e6d4 = getaiarchetypearray(#"skeleton");
         if (var_2a28e6d4.size <= 2) {
             s_spawn = array::random(a_s_spawns);
-            while (1) {
+            while (true) {
                 var_862206ea = zombie_skeleton_util::function_1ea880bd(1, s_spawn, undefined, 0);
                 if (isdefined(var_862206ea)) {
                     break;
@@ -3082,7 +3082,7 @@ function function_e4162ab8() {
     v_source = s_source.origin;
     self.var_67faa700 = 1;
     self setgoal(v_scene, 1);
-    while (1) {
+    while (true) {
         n_dist = distance2dsquared(self.origin, v_scene);
         if (n_dist <= 64 * 64) {
             break;
@@ -3160,9 +3160,9 @@ function function_554bdd28(s_scene, str_scene) {
 // Size: 0x24
 function function_173c692b() {
     if (isdefined(self.var_d3ddc8ed) && self.var_d3ddc8ed) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -3172,7 +3172,7 @@ function function_173c692b() {
 function function_6af7dacb() {
     level endon(#"end_game", #"defend_ra" + "_ended_early", #"hash_4140f0472ba137c");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         e_victim = s_waitresult.activator;
@@ -3247,7 +3247,7 @@ function function_d45f304f() {
     t_far = getent("t_light_fuel_ignite_far", "targetname");
     self thread function_c2d50fdc(t_close);
     self thread function_c2d50fdc(t_far);
-    while (1) {
+    while (true) {
         self waittill(#"hash_465838105ca1e0c2");
         self allowsprint(0);
         self allowslide(0);
@@ -3256,7 +3256,7 @@ function function_d45f304f() {
             self clientfield::set_to_player("" + #"hash_25cfe5e9786d97e7", 1);
         }
         self.var_de9eef5a = 1;
-        while (1) {
+        while (true) {
             self waittill(#"hash_488d86d3e6f92c");
             if (self.var_6e4f26e5 <= 0) {
                 break;
@@ -3280,7 +3280,7 @@ function function_c2d50fdc(var_7ecf0d18) {
     level endon(#"end_game", #"defend_ra" + "_ended_early", #"hash_4140f0472ba137c");
     self endon(#"disconnect");
     var_7ecf0d18 endon(#"death");
-    while (1) {
+    while (true) {
         while (!zm_utility::is_player_valid(self) || self getstance() == "crouch" || self getstance() == "prone" || self issliding() || !self istouching(var_7ecf0d18) || !var_7ecf0d18 istriggerenabled()) {
             waitframe(1);
         }
@@ -3342,7 +3342,7 @@ function function_9f390ef0(var_3561625b = 1) {
 // Size: 0x16e
 function function_e952e361() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         var_92121491 = spawner::simple_spawn_single("sp_light_return");
         if (isdefined(var_92121491)) {
             break;
@@ -3421,7 +3421,7 @@ function function_de6854c2() {
     s_dest = struct::get(#"hash_1ab7c0d94efd8f5b");
     v_dest = s_dest.origin;
     b_played = 0;
-    while (1) {
+    while (true) {
         foreach (e_player in util::get_active_players()) {
             if (zm_utility::is_player_valid(e_player) && e_player zm_audio::can_speak()) {
                 n_dist = distance2dsquared(e_player.origin, v_dest);
@@ -3771,8 +3771,8 @@ function play_think() {
     var_cbf56f63 notsolid();
     var_4ebe6ac0 = 0;
     level thread function_9348c9a4();
-    while (1) {
-        while (1) {
+    while (true) {
+        while (true) {
             function_c170200a();
             s_play.n_players_ready = 0;
             foreach (e_player in util::get_active_players()) {
@@ -3873,7 +3873,7 @@ function play_think() {
             #/
             level thread function_4d79231e();
             music::setmusicstate("none");
-            return;
+            break;
         }
         music::setmusicstate("none");
         playsoundatposition(#"hash_dd13a4fbdd9c86d", (0, 0, 0));
@@ -3967,7 +3967,7 @@ function function_1f96a60e() {
             } else {
                 e_player thread zm_audio::create_and_play_dialog(#"playhouse", #"enter");
             }
-            return;
+            break;
         }
     }
 }
@@ -3991,7 +3991,7 @@ function function_2efcf3bf() {
 // Size: 0x136
 function function_c170200a() {
     level endon(#"end_game", #"play" + "_ended_early");
-    while (1) {
+    while (true) {
         var_24a19a92 = 1;
         foreach (e_player in util::get_active_players()) {
             if (!zm_utility::is_player_valid(e_player) || !e_player function_dc5aa56f() || !is_wonder_weapon(e_player getcurrentweapon(), undefined, 0)) {
@@ -4000,7 +4000,7 @@ function function_c170200a() {
             }
         }
         if (var_24a19a92) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -4012,7 +4012,7 @@ function function_c170200a() {
 // Size: 0x138
 function clear_lockon_after_grappleattackstart() {
     level endon(#"end_game", #"play" + "_ended_early", #"play_all_players_ready");
-    while (1) {
+    while (true) {
         foreach (e_player in util::get_active_players()) {
             if (!zm_utility::is_player_valid(e_player) || !e_player function_dc5aa56f() || !is_wonder_weapon(e_player getcurrentweapon(), undefined, 0)) {
                 level notify(#"hash_2fd7b0f35f31ef25");
@@ -4030,7 +4030,7 @@ function clear_lockon_after_grappleattackstart() {
 function function_9ccbf284() {
     level endon(#"end_game", #"play" + "_ended_early", #"hash_2fd7b0f35f31ef25");
     s_play = level.var_28dcf408;
-    while (1) {
+    while (true) {
         a_e_players = util::get_active_players();
         if (s_play.n_players_ready >= a_e_players.size) {
             return 1;
@@ -4065,9 +4065,9 @@ function function_c3d19eae(death, inflictor, attacker, damage, flags, mod, weapo
 // Size: 0x24
 function function_64b2fedf() {
     if (isdefined(self.var_be2fc36d) && self.var_be2fc36d) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4115,7 +4115,7 @@ function function_9348c9a4() {
     level zm_vo::function_3c173d37((0, 0, 0), 2147483647);
     level zm_audio::sndvoxoverride(1);
     waitframe(1);
-    while (1) {
+    while (true) {
         b_played = 0;
         a_e_players = util::get_active_players();
         a_e_players = array::randomize(a_e_players);
@@ -4147,8 +4147,8 @@ function function_7413c414(str_ww) {
     var_ed2fbe40 = s_play.var_ed2fbe40;
     var_8c827c67 = var_ed2fbe40[str_ww];
     level clientfield::set(var_8c827c67, 1);
-    while (1) {
-        while (1) {
+    while (true) {
+        while (true) {
             var_548144c0 = 0;
             foreach (e_player in util::get_active_players()) {
                 if (e_player function_813c4629(self, str_ww)) {
@@ -4176,7 +4176,7 @@ function function_7413c414(str_ww) {
             continue;
         }
         s_play.n_players_ready++;
-        while (1) {
+        while (true) {
             if (!isdefined(e_player) || !e_player function_813c4629(self, str_ww)) {
                 break;
             }
@@ -4212,18 +4212,18 @@ function function_5d2011fa(s_spotlight, str_ww, n_duration) {
     level endon(#"end_game", #"play" + "_ended_early", #"hash_285de4ce79135552");
     self endon(#"entering_last_stand", #"death");
     if (n_duration <= 0) {
-        return 1;
+        return true;
     }
     n_start_time = gettime();
     while (self function_813c4629(s_spotlight, str_ww)) {
         n_current_time = gettime();
         n_time_passed = float(n_current_time - n_start_time) / 1000;
         if (n_time_passed >= n_duration) {
-            return 1;
+            return true;
         }
         waitframe(1);
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4373,10 +4373,10 @@ function function_3d581a6(str_ww, b_uncharged = 0) {
     }
     foreach (w_ww in a_w_ww) {
         if (self hasweapon(w_ww)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4802,7 +4802,7 @@ function function_5ea46511(str_ww) {
             if (self getweaponammoclip(w_charged) < 5) {
                 self setweaponammoclip(w_charged, 10);
             }
-            return;
+            break;
         }
     }
 }
@@ -4862,7 +4862,7 @@ function function_4f45dd3c() {
     while (!self function_3471a3dc()) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         while (self function_3471a3dc()) {
             waitframe(1);
         }
@@ -4884,7 +4884,7 @@ function function_ad68de97() {
     while (!self function_6a5bdb08()) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         while (self function_6a5bdb08()) {
             waitframe(1);
         }
@@ -4921,7 +4921,7 @@ function function_4462d56a(e_player, str_ww) {
     var_65adf081 clientfield::set(str_cf, 1);
     var_65adf081 thread function_52b56ea3(str_cf);
     var_65adf081 thread function_2593636e(e_player, str_cf);
-    while (1) {
+    while (true) {
         v_origin = e_player.origin;
         a_info = zm_utility::function_b0eeaada(v_origin);
         if (isdefined(a_info)) {
@@ -5009,26 +5009,26 @@ function function_542a6ee4(e_player, str_ww, str_task, n_spotlight, var_d8d4faff
             n_to_kill = n_to_kill + a_s_spawns.size;
             var_d8d4faff = 0;
             level function_37411f7e(a_s_spawns, str_ww, 0, 1, var_d8d4faff);
-            continue;
+            break;
         case #"earth":
             var_8959ce50 = array(#"hash_56c60404554c8d15", #"hash_56c60104554c87fc");
             str_group = array::random(var_8959ce50);
             a_s_spawns = struct::get_array(str_group);
             n_to_kill = n_to_kill + a_s_spawns.size;
             level function_37411f7e(a_s_spawns, str_ww, 0, 1, var_d8d4faff);
-            continue;
+            break;
         case #"air":
             a_s_spawns = struct::get_array(#"hash_6da4b236b2ab84fa");
             n_to_kill = n_to_kill + a_s_spawns.size;
             level function_37411f7e(a_s_spawns, str_ww, 0, 1, var_d8d4faff);
-            continue;
+            break;
         case #"light":
             var_8959ce50 = array(#"hash_5a3fbb7f6ef6cdb8", #"hash_5a3fbe7f6ef6d2d1");
             str_group = array::random(var_8959ce50);
             a_s_spawns = struct::get_array(str_group);
             n_to_kill = n_to_kill + 12;
             level thread function_3c6638c1(a_s_spawns, 12, var_d8d4faff);
-            continue;
+            break;
         }
     }
     while (s_play.var_155837a1[str_ww] < n_to_kill) {
@@ -5065,7 +5065,7 @@ function function_6cdf4b0(str_ww, b_uncharged, b_stationary, var_d8d4faff) {
         b_spartoi = math::cointoss();
         break;
     }
-    while (1) {
+    while (true) {
         if (!b_spartoi) {
             ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, self);
         } else {
@@ -5143,7 +5143,7 @@ function function_d9b360d2(s_spawn) {
     self dontinterpolate();
     self.var_621c2eb4 = util::spawn_model(#"tag_origin", v_origin, v_angles);
     self linkto(self.var_621c2eb4);
-    while (1) {
+    while (true) {
         self setgoal(v_origin, 1);
         waitframe(1);
     }
@@ -5265,7 +5265,7 @@ function function_12ff6bb5(n_act) {
     level endon(#"end_game", #"play" + "_ended_early", #"play_act_completed", #"hash_666e960831b9abc4", #"hash_285de4ce79135552");
     a_s_spawns = struct::get_array(#"hash_408827725d1ed07a");
     a_ai_spawned = [];
-    while (1) {
+    while (true) {
         a_ai_spawned = array::remove_dead(a_ai_spawned);
         if (a_ai_spawned.size < 6 && getaiarray().size < level.zombie_ai_limit) {
             b_spartoi = 0;
@@ -5276,7 +5276,7 @@ function function_12ff6bb5(n_act) {
             if (isdefined(s_spawn.script_noteworthy)) {
                 b_spartoi = 0;
             }
-            while (1) {
+            while (true) {
                 if (!b_spartoi) {
                     ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_spawn);
                 } else {
@@ -5314,7 +5314,7 @@ function function_79a4f7f8() {
     n_random_wait = randomfloatrange(10, 20);
     wait(n_random_wait);
     s_spawn = struct::get(#"hash_55ffe99e3e9981b7");
-    while (1) {
+    while (true) {
         ai_gegenees = zombie_gegenees_util::spawn_single(1, s_spawn);
         if (isdefined(ai_gegenees)) {
             break;
@@ -5523,7 +5523,7 @@ function door_interact_setup(b_skipped) {
     callback::on_disconnect(&function_afd5b72a);
     s_unitrigger = struct::get(#"hash_4054acecbf766067");
     s_unitrigger zm_unitrigger::create(&function_c3735f60, 64);
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = s_unitrigger waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
@@ -5581,7 +5581,7 @@ function function_c3735f60(e_player) {
     } else {
         self sethintstringforplayer(e_player, "");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -5645,7 +5645,7 @@ function isfollowingspalette() {
     }
     s_door = struct::get(#"hash_4054acecbf766067");
     v_door = s_door.origin;
-    while (1) {
+    while (true) {
         waitframe(1);
         if (zm_utility::is_player_valid(self)) {
             n_dist = distance2dsquared(v_door, self.origin);
@@ -5764,7 +5764,7 @@ function mid_igc_setup(b_skipped) {
             }
         }
     }
-    while (1) {
+    while (true) {
         var_b5d11642 = 1;
         foreach (e_player in array(e_stanton, e_bruno)) {
             if (!isdefined(e_player)) {
@@ -6340,7 +6340,7 @@ function function_482dc5ac() {
     s_target = struct::get(#"hash_5c0ec58a74f10a88");
     v_target = s_target.origin;
     s_target struct::delete();
-    while (1) {
+    while (true) {
         foreach (e_player in util::get_active_players()) {
             if (zm_utility::is_player_valid(e_player) && e_player zm_audio::can_speak() && e_player zm_utility::is_player_looking_at(v_target)) {
                 n_dist = distance2dsquared(e_player.origin, v_target);
@@ -6378,7 +6378,7 @@ function function_cecc7973(e_grenade, e_player) {
         if (isdefined(e_grenade)) {
             e_grenade.origin = e_grenade.origin - (0, 0, 2048);
         }
-        return 0;
+        return false;
     }
     if (isdefined(e_player)) {
         s_cleanse = level.var_29e8cce2;
@@ -6391,11 +6391,11 @@ function function_cecc7973(e_grenade, e_player) {
                 if (isdefined(e_grenade)) {
                     e_grenade.origin = e_grenade.origin - (0, 0, 2048);
                 }
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -6408,8 +6408,8 @@ function function_7b4b880f() {
     level endon(#"end_game", #"hash_3970f4ab245a1853");
     self endon(#"disconnect");
     w_thunderstorm = getweapon(#"thunderstorm");
-    while (1) {
-        while (1) {
+    while (true) {
+        while (true) {
             var_291db748 = self._gadgets_player;
             if (isdefined(var_291db748) && isinarray(var_291db748, w_thunderstorm)) {
                 break;
@@ -6418,7 +6418,7 @@ function function_7b4b880f() {
         }
         self ability_util::function_e8aa75b8(w_thunderstorm);
         self.var_69c1f71b = 1;
-        while (1) {
+        while (true) {
             var_291db748 = self._gadgets_player;
             if (isdefined(var_291db748) && !isinarray(var_291db748, w_thunderstorm)) {
                 break;
@@ -6514,7 +6514,7 @@ function function_95210026() {
     foreach (e_player in a_e_players) {
         if (zm_utility::is_player_valid(e_player) && e_player zm_audio::can_speak()) {
             e_player thread zm_audio::create_and_play_dialog(#"ballista", #"stuck");
-            return;
+            break;
         }
     }
 }
@@ -6530,7 +6530,7 @@ function function_a2147cf() {
     self endon(#"disconnect");
     s_cleanse = level.var_29e8cce2;
     mdl_ballista = s_cleanse.mdl_ballista;
-    while (1) {
+    while (true) {
         var_afb3c2b3 = 0;
         while (!self function_9bd33cca()) {
             waitframe(1);
@@ -6628,7 +6628,7 @@ function function_2b23b087() {
     s_stand = struct::get(#"hash_3e111145a5afc255");
     v_strike = s_strike.origin;
     v_stand = s_stand.origin;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_melee_power", #"weapon_melee");
         w_weapon = s_waitresult.weapon;
@@ -6657,7 +6657,7 @@ function function_995ff495() {
     foreach (e_player in util::get_active_players()) {
         if (zm_utility::is_player_valid(e_player) && e_player function_3d581a6(#"air", 0)) {
             e_player thread zm_vo::function_a2bd5a0c(#"hash_6838bb9002545093");
-            return;
+            break;
         }
     }
 }
@@ -6674,7 +6674,7 @@ function teleport_setup(b_skipped) {
         }
     #/
     level thread function_c54d30d5();
-    while (1) {
+    while (true) {
         var_eb75c56d = 0;
         foreach (e_player in util::get_active_players()) {
             str_zone = e_player zm_utility::get_current_zone();
@@ -6693,10 +6693,10 @@ function teleport_setup(b_skipped) {
     s_unitrigger zm_unitrigger::create(&function_72004612);
     s_cleanse = level.var_29e8cce2;
     level thread scene::init_streamer(#"aib_vign_cust_zm_red_boss_intro", #"allies");
-    while (1) {
+    while (true) {
         s_unitrigger waittill(#"trigger_activated");
         if (isdefined(s_cleanse.b_all_players_ready) && s_cleanse.b_all_players_ready) {
-            return;
+            break;
         }
     }
 }
@@ -6799,7 +6799,7 @@ function function_72004612(e_player) {
     }
     s_cleanse = level.var_29e8cce2;
     s_cleanse.b_all_players_ready = b_ready;
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest

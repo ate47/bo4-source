@@ -73,7 +73,7 @@ function on_spawned() {
 // Size: 0x266
 function round_tracking() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         self.a_daily_challenges[3]++;
         self zm_stats::increment_challenge_stat(#"hash_4d3e2513e68c6848", undefined, 1);
@@ -331,7 +331,7 @@ function death_check_for_challenge_updates(e_attacker) {
 // Size: 0x108
 function spent_points_tracking() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         result = undefined;
         result = level waittill(#"spent_points");
         player = result.player;
@@ -351,7 +351,7 @@ function spent_points_tracking() {
 // Size: 0x1b0
 function earned_points_tracking() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         result = undefined;
         result = level waittill(#"earned_points");
         player = result.player;
@@ -474,7 +474,7 @@ function increment_nuked_zombie() {
 // Size: 0x90
 function perk_purchase_tracking() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         str_perk = undefined;
         self waittill(#"perk_purchased", str_perk);
         self zm_stats::increment_challenge_stat(#"zm_daily_purchase_perks");
@@ -490,7 +490,7 @@ function perk_purchase_tracking() {
 // Size: 0x78
 function perk_drink_tracking() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"perk_bought");
         self zm_stats::increment_challenge_stat(#"zm_daily_drink_perks");
         /#
@@ -541,8 +541,8 @@ function on_challenge_complete(params) {
 function is_daily_challenge(n_challenge_index) {
     n_row = tablelookuprownum(#"gamedata/stats/zm/statsmilestones4.csv", 0, n_challenge_index);
     if (n_row > -1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

@@ -35,7 +35,7 @@ function __init__() {
 function function_b3681acb() {
     /#
         if (getdvar(#"hash_62fbe70d500712c1", 0) == 1) {
-            return 1;
+            return true;
         }
     #/
     return level.var_b3681acb && isdefined(level.onlinegame) && level.onlinegame && isdefined(level.rankedmatch) && level.rankedmatch;
@@ -48,19 +48,19 @@ function function_b3681acb() {
 function function_d89ef6af(unlock_name) {
     switch (unlock_name) {
     case #"hash_178221dd8299137b":
-        return 1;
+        return true;
     case #"hash_8c7045e78561cf4":
-        return 1;
+        return true;
     case #"hash_3532d912b12917c9":
-        return 1;
+        return true;
     case #"hash_517bb26004a9c12b":
-        return 1;
+        return true;
     case #"hash_263de5e9fa6d16ea":
-        return 1;
+        return true;
     case #"hash_74709eb5a08139fb":
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace character_unlock/character_unlock
@@ -75,19 +75,19 @@ function function_d7e6fa92(unlock_name) {
         #/
     #/
     if (!isdefined(var_9ba1646c)) {
-        return 0;
+        return false;
     }
     var_2b469a7d = var_9ba1646c.var_2b469a7d;
     if (function_d89ef6af(unlock_name)) {
         if (isdefined(stats::get_stat(#"unlockedtags", var_2b469a7d)) && stats::get_stat(#"unlockedtags", var_2b469a7d)) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (isdefined(stats::get_stat(#"characters", var_2b469a7d, #"unlocked")) && stats::get_stat(#"characters", var_2b469a7d, #"unlocked")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace character_unlock/character_unlock
@@ -96,21 +96,21 @@ function function_d7e6fa92(unlock_name) {
 // Size: 0xe6
 function function_f0406288(unlock_name) {
     if (!level function_b3681acb()) {
-        return 0;
+        return false;
     }
     if (self function_d7e6fa92(unlock_name)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_474dff5e) && isdefined(self.var_474dff5e[unlock_name]) && self.var_474dff5e[unlock_name]) {
-        return 1;
+        return true;
     }
     var_9ba1646c = level.var_7d8da246[unlock_name];
     item_name = var_9ba1646c.required_item;
     required_item = self item_inventory::function_7fe4ce88(item_name);
     if (isdefined(required_item)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace character_unlock/character_unlock
@@ -119,15 +119,15 @@ function function_f0406288(unlock_name) {
 // Size: 0x7a
 function function_c70bcc7a(unlock_name) {
     if (!level function_b3681acb()) {
-        return 0;
+        return false;
     }
     if (self function_d7e6fa92(unlock_name)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.var_c53589da) || !isdefined(self.var_c53589da[unlock_name])) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace character_unlock/character_unlock
@@ -244,21 +244,21 @@ function function_20b0ca2e(unlock_name) {
     switch (var_9ba1646c.var_3845495.size) {
     case 1:
         self luinotifyevent(#"character_unlock_update", var_9ba1646c.var_3845495.size + 2, 0, itemindex, self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[0]]);
-        return;
+        break;
     case 2:
         self luinotifyevent(#"character_unlock_update", var_9ba1646c.var_3845495.size + 2, 0, itemindex, self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[0]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[1]]);
-        return;
+        break;
     case 3:
         self luinotifyevent(#"character_unlock_update", var_9ba1646c.var_3845495.size + 2, 0, itemindex, self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[0]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[1]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[2]]);
-        return;
+        break;
     case 4:
         self luinotifyevent(#"character_unlock_update", var_9ba1646c.var_3845495.size + 2, 0, itemindex, self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[0]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[1]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[2]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[3]]);
-        return;
+        break;
     case 5:
         self luinotifyevent(#"character_unlock_update", var_9ba1646c.var_3845495.size + 2, 0, itemindex, self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[0]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[1]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[2]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[3]], self.var_c53589da[unlock_name].var_e7e238a4[var_93e871fc[4]]);
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

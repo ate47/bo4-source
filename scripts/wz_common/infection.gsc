@@ -327,7 +327,7 @@ function private function_fcd9114b() {
 // Size: 0x9e
 function function_ff850b97() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (self function_fcd9114b()) {
             self.var_8a022726.var_a9309589 dodamage(1, self.origin, self, self, undefined, "MOD_EXPLOSIVE");
             while (self function_fcd9114b()) {
@@ -393,7 +393,7 @@ function private _setup_devgui() {
 // Size: 0x2f4
 function private function_cdd9b388() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"wz_respawn_points", 0)) {
                 wait(1);
             } else {

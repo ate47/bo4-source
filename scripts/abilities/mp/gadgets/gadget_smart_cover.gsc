@@ -65,12 +65,12 @@ function function_9a2b3318(origin, angles, player) {
             if (isdefined(protectedzone)) {
                 dist2 = distance2dsquared(origin, protectedzone.origin);
                 if (dist2 < length2) {
-                    return 0;
+                    return false;
                 }
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace smart_cover/gadget_smart_cover

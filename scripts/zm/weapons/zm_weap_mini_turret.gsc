@@ -51,9 +51,9 @@ function __init__() {
 // Size: 0x78
 function function_2994c93(v_origin, v_angles, player) {
     if (zm_utility::check_point_in_playable_area(v_origin) && zm_utility::check_point_in_enabled_zone(v_origin, 1) && ispointonnavmesh(v_origin)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mini_turret/zm_weap_mini_turret
@@ -379,7 +379,7 @@ function turret_watch_owner_events() {
 function turret_laser_watch() {
     veh = self;
     veh endon(#"death");
-    while (1) {
+    while (true) {
         laser_should_be_on = !veh.controlled && isdefined(veh.enemy);
         if (laser_should_be_on) {
             if (islaseron(veh) == 0) {
@@ -399,7 +399,7 @@ function turret_laser_watch() {
 function setup_death_watch_for_new_targets() {
     turretvehicle = self;
     turretvehicle endon(#"death");
-    for (old_target = undefined; 1; old_target = waitresult.target) {
+    for (old_target = undefined; true; old_target = waitresult.target) {
         waitresult = undefined;
         waitresult = turretvehicle waittill(#"has_new_target");
         if (isdefined(old_target)) {
@@ -433,7 +433,7 @@ function turretscanning() {
     wait(0.8);
     veh playsound(#"mpl_turret_startup");
     veh playloopsound(#"hash_69240c6db92da5bf");
-    while (1) {
+    while (true) {
         if (veh.controlled || !veh.turret_enabled) {
             wait(0.5);
             continue;
@@ -453,7 +453,7 @@ function turretscanning() {
                 veh playsoundtoteam("mpl_turret_alert", veh.team);
             }
             if (veh.turretontarget) {
-                if (1) {
+                if (true) {
                     fire_time = 0.33 > 0.33 ? randomfloatrange(0.33, 0.33) : 0.33;
                     var_fc9f290e = veh.enemy;
                     veh vehicle_ai::fire_for_time(fire_time, 0, veh.enemy);
@@ -522,7 +522,7 @@ function turretscanning() {
 // Size: 0x26
 function has_active_enemy() {
     if (!isdefined(self.enemylastseentime)) {
-        return 0;
+        return false;
     }
     return gettime() < self.enemylastseentime + 1000;
 }
@@ -565,7 +565,7 @@ function function_31477582() {
     waitframe(1);
     var_463c449d = 386.089 * float(function_60d95f53()) / 1000;
     max_delta = 1;
-    while (1) {
+    while (true) {
         if (!isdefined(self.turret)) {
             wait(1);
             continue;

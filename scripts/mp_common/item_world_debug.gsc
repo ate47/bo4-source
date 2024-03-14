@@ -417,7 +417,7 @@ function function_78931318(str_button) {
 // Size: 0x34a4
 function private function_cdd9b388() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_326974dd9b8c3414", 0)) {
                 wait(1);
             } else {
@@ -845,7 +845,7 @@ function private function_cdd9b388() {
                             if (isdefined(item.targetname)) {
                                 print3d(item.origin + vectorscale((0, 0, 1), 32), function_9e72a96(item.targetname), color, 1, 0.3, 20);
                             }
-                            continue;
+                            break;
                         case 2:
                             if (isdefined(item.var_a6762160)) {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
@@ -854,12 +854,12 @@ function private function_cdd9b388() {
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"ammo") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 4:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"weapon") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 5:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"health") {
                                 if (item.var_a6762160.name == "<unknown string>") {
@@ -872,7 +872,7 @@ function private function_cdd9b388() {
                                     sphere(item.origin, radius, color, 1, 0, 10, 20);
                                 }
                             }
-                            continue;
+                            break;
                         case 6:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"armor") {
                                 if (item.var_a6762160.name == "<unknown string>") {
@@ -885,47 +885,47 @@ function private function_cdd9b388() {
                                     sphere(item.origin, radius, color, 1, 0, 10, 20);
                                 }
                             }
-                            continue;
+                            break;
                         case 7:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"equipment") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 8:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"backpack") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 9:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"attachment") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 10:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"generic") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 11:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"killstreak") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 15:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"quest") {
                                 sphere(item.origin, radius, (1, 0.5, 0), 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 16:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"cash") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         case 17:
                             if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"resource") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
-                            continue;
+                            break;
                         }
                     }
                 }
@@ -991,7 +991,7 @@ function private _setup_devgui() {
 function function_91ef342() {
     /#
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             r = undefined;
             r = level waittill(#"devgui_bot");
             switch (r.args[0]) {

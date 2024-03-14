@@ -475,12 +475,12 @@ function function_9dd75dad(team) {
 // Size: 0x40
 function is_all_dead(team) {
     if (level.playerlives[team]) {
-        return 0;
+        return false;
     }
     if (level.alivecount[team]) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace teams/teams

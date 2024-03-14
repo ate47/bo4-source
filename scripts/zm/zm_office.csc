@@ -85,7 +85,7 @@ function function_63a0685c(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xf4
 function function_1ed795b7(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     while (level._power_on == 0) {
-        while (1) {
+        while (true) {
             exploder::stop_exploder("fxexp_script_boardroom_flicker");
             waitframe(1);
             exploder::exploder("fxexp_script_boardroom_flicker");
@@ -102,7 +102,7 @@ function function_1ed795b7(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xb496561a, Offset: 0x940
 // Size: 0xf8
 function function_93f4e0e6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    while (1) {
+    while (true) {
         exploder::stop_exploder("fxexp_script_flicker_dim");
         waitframe(1);
         exploder::exploder("fxexp_script_flicker_always");
@@ -119,7 +119,7 @@ function function_93f4e0e6(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x5277a3d0, Offset: 0xa40
 // Size: 0x4c
 function pentagon_zpo_listener() {
-    while (1) {
+    while (true) {
         level waittill(#"zpo");
         level._power_on = 1;
         level notify(#"tlo");
@@ -131,7 +131,7 @@ function pentagon_zpo_listener() {
 // Checksum 0xe87c363e, Offset: 0xa98
 // Size: 0x124
 function pentagon_tlo_listener() {
-    while (1) {
+    while (true) {
         level waittill(#"tlo");
         level notify(#"por0");
         level notify(#"por1");

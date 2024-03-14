@@ -89,10 +89,10 @@ function get_attackable_slot(entity) {
         if (!isdefined(slot.entity)) {
             slot.entity = entity;
             entity.attackable_slot = slot;
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_attackables/zm_attackables

@@ -246,7 +246,7 @@ function function_72e84e64() {
     n_bomb_timer = int(gettime() + 1000 + int(420 * 1000));
     setmatchflag("bomb_timer_a", 1);
     setbombtimer("A", n_bomb_timer);
-    while (1) {
+    while (true) {
         if (isdefined(level.var_e6db911d) && level.var_e6db911d) {
             e_player = getplayers()[0];
             var_1411e20e = e_player ct_bots::function_dde6edbd();
@@ -348,8 +348,8 @@ function function_836b3d02() {
     level endon(#"combattraining_logic_finished");
     wait(20);
     var_6207d37d = 0;
-    while (1) {
-        if (1) {
+    while (true) {
+        if (true) {
             if (level.var_88024dd9 > 0 && var_6207d37d != 4) {
                 var_6207d37d = 4;
             }
@@ -430,7 +430,7 @@ function function_e268297c(e_captive) {
     self.var_5ab7c19c = v_angles;
     var_e47f9e94 = 0;
     n_start_time = undefined;
-    while (1) {
+    while (true) {
         if (!isalive(self)) {
             e_player = getplayers()[0];
             e_player thread ct_utils::function_d471f8fa(15, undefined, 1);
@@ -441,7 +441,7 @@ function function_e268297c(e_captive) {
             self.var_ef59b90 = 1;
             break;
         }
-        if (1) {
+        if (true) {
             if (level.var_88024dd9 > 0 && !isdefined(level.var_f78f9034)) {
                 break;
             }
@@ -514,7 +514,7 @@ function function_52a2e58a(a_players) {
 // Size: 0x1b4
 function function_e60bbaf4() {
     level.var_cea5b696 = 0;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         a_captives = util::get_active_players(#"allies");
         arrayremovevalue(a_captives, e_player);
@@ -547,7 +547,7 @@ function function_e60bbaf4() {
 function function_9087a4b6() {
     level endon(#"combattraining_logic_finished");
     level.var_3bdcb692 = 0;
-    while (1) {
+    while (true) {
         level waittill(#"friendly_revived");
         level.var_3bdcb692 = 1;
         wait(10);
@@ -649,7 +649,7 @@ function function_3a3bc266() {
 function function_5f17f29() {
     level endon(#"hash_2459a7f38b7c48c2");
     e_player = getplayers()[0];
-    while (1) {
+    while (true) {
         level waittill(#"hash_4467c8999d018835");
         e_player thread ct_utils::function_785eb2ca();
     }

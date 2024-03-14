@@ -187,7 +187,7 @@ function watchhackerplayershutdown(localclientnum, hackerplayer, targetent) {
 function watchforemp(localclientnum) {
     self endon(#"death");
     self endon(#"player_hacking_callback");
-    while (1) {
+    while (true) {
         if (self isempjammed()) {
             setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.blackhat.status"), 3);
         } else {

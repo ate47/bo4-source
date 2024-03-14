@@ -166,17 +166,17 @@ function function_e93cd1bb(event, var_ba01256c, weapon, attacker, victim, var_58
 // Size: 0xd8
 function function_969ea48d(var_ba01256c, weapon) {
     if (!isdefined(var_ba01256c)) {
-        return 0;
+        return false;
     }
     scoreevents = function_3cbc4c6c(var_ba01256c.var_2e4a8800);
     if (!isdefined(scoreevents) || !isdefined(scoreevents.var_1253685d)) {
-        return 0;
+        return false;
     }
     scoreevents::processscoreevent(scoreevents.var_1253685d, self, undefined, weapon);
     if (rank::function_ca5d4a8(scoreevents.var_1253685d)) {
         function_e93cd1bb(scoreevents.var_1253685d, var_ba01256c, weapon, self, undefined, 0);
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -338,11 +338,11 @@ function function_7d830bc(einflictor, attacker, weapon, objectiveobj, var_1bbdd8
     self notify("38c4e69a4b1b634c");
     self endon("38c4e69a4b1b634c");
     if (!isplayer(attacker) || !isplayer(self) || !isdefined(weapon) || !isdefined(objectiveobj) || !isdefined(var_5b1d28ec) || !isdefined(var_1bbdd8b0)) {
-        return 0;
+        return false;
     }
     if (!self istouching(var_5b1d28ec, (var_1bbdd8b0, var_1bbdd8b0, 100))) {
         if (!isdefined(einflictor) || einflictor != attacker || !attacker istouching(var_5b1d28ec, (var_1bbdd8b0, var_1bbdd8b0, 100))) {
-            return 0;
+            return false;
         }
     }
     self.var_60a9eae7 = 1;
@@ -360,7 +360,7 @@ function function_7d830bc(einflictor, attacker, weapon, objectiveobj, var_1bbdd8
             self function_a890cac2(attacker, owningteam, var_25f92d1d.weapon, var_bbe53115, objectiveobj, var_1bbdd8b0);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -919,7 +919,7 @@ function function_bb9f3842() {
         if (!isdefined(level.var_10cd7193)) {
             level.var_10cd7193 = [];
         }
-        while (1) {
+        while (true) {
             if (getdvarint(#"dumpscoreevents", 0) > 0) {
                 var_594354f3 = [];
                 foreach (scoreevent in level.var_10cd7193) {

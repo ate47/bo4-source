@@ -100,11 +100,11 @@ function usekillstreakstraferun(hardpointtype) {
         /#
             println("<unknown string>");
         #/
-        return 0;
+        return false;
     }
     killstreak_id = self killstreakrules::killstreakstart("straferun", self.team, 0, 1);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     plane = spawnvehicle(level.straferunvehicle, startnode.origin, (0, 0, 0), "straferun");
     plane.attackers = [];
@@ -158,7 +158,7 @@ function usekillstreakstraferun(hardpointtype) {
     plane thread function_c24cc26a();
     util::function_5a68c330(21, self.team, self getentitynumber(), level.killstreaks[#"straferun"].uiname);
     aiutility::addaioverridedamagecallback(plane, &function_16abaea4);
-    return 1;
+    return true;
 }
 
 // Namespace straferun/straferun
@@ -187,7 +187,7 @@ function function_c24cc26a() {
         var_2974acb8 = 1;
     }
     var_13d70215 = var_2974acb8 * var_2974acb8;
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!isdefined(self)) {
             return;
@@ -205,7 +205,7 @@ function function_c24cc26a() {
         }
         var_661ad37a = distancesquared(currentnode.origin, self.origin);
         var_4c8f226e = 0;
-        while (1) {
+        while (true) {
             if (!isdefined(currentnode.target)) {
                 continue;
             }
@@ -437,7 +437,7 @@ function dostraferuns() {
 // Size: 0x90
 function function_d4896942() {
     self endon(#"death", #"strafe_stop");
-    while (1) {
+    while (true) {
         self waittill(#"flare_deployed");
         if (!(isdefined(self.leavenexttime) && self.leavenexttime)) {
             self killstreaks::play_pilot_dialog_on_owner("damageEvaded", "straferun", self.killstreakid);
@@ -585,15 +585,15 @@ function stopstrafe() {
 // Size: 0x64
 function shouldleavemap() {
     if (isdefined(self.leavenexttime) && self.leavenexttime) {
-        return 1;
+        return true;
     }
     if (self.numstrafes >= level.straferunmaxstrafes) {
-        return 1;
+        return true;
     }
     if (self.owner.straferunkills >= level.straferunkillsbeforeexit) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace straferun/straferun
@@ -650,9 +650,9 @@ function cantargetentity(entity) {
     heli_turret_point = heli_centroid + 144 * heli_forward_norm;
     visible_amount = entity sightconetrace(heli_turret_point, self);
     if (visible_amount < level.heli_target_recognition) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace straferun/straferun
@@ -724,9 +724,9 @@ function targetinfrontofplane(target) {
     target_delta = vectornormalize(target.origin - self.origin);
     dot = vectordot(forward_dir, target_delta);
     if (dot < 0.5) {
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace straferun/straferun
@@ -928,7 +928,7 @@ function unlinkwhenclose(selectedtarget, targetorigin, plane) {
     self notify(#"unlink_when_close");
     self endon(#"unlink_when_close");
     distsqr = 1000000;
-    while (1) {
+    while (true) {
         if (isdefined(selectedtarget)) {
             if (distancesquared(self.origin, selectedtarget.origin) < distsqr) {
                 self unlink();

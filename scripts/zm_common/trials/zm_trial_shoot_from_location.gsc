@@ -83,7 +83,7 @@ function private function_3658663() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
     var_407eb07 = 0;
-    while (1) {
+    while (true) {
         var_f2b6fe6e = 0;
         foreach (var_3953f2a9 in level.var_7f31a12d) {
             if (self istouching(var_3953f2a9)) {

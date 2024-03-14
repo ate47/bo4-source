@@ -96,7 +96,7 @@ function function_53e45f4e() {
     level endon(#"ww_case_completed");
     self endon(#"death");
     var_8618ad82 = 1250 * 1250;
-    while (1) {
+    while (true) {
         foreach (e_player in getplayers()) {
             if (distance2dsquared(e_player.origin, self.origin) <= var_8618ad82) {
                 b_in_range = 1;
@@ -141,17 +141,17 @@ function function_7706457d(e_player) {
             if (zombie_utility::is_player_valid(e_player) && e_player function_8b4cc6ae(e_lock.origin, 10, 1, e_lock)) {
                 str_prompt = zm_utility::function_d6046228(#"hash_170f427c6f774cc6", #"hash_182213d7353c3062");
                 self sethintstringforplayer(e_player, str_prompt);
-                return 1;
+                return true;
             }
         }
         if (zombie_utility::is_player_valid(e_player) && e_player function_8b4cc6ae(level.s_ww_lock.origin, 50, 0)) {
             str_prompt = zm_utility::function_d6046228(#"hash_74088228890cabc3", #"hash_4428bea407adb029");
             self sethintstringforplayer(e_player, str_prompt);
-            return 1;
+            return true;
         }
     }
     self sethintstringforplayer(e_player, "");
-    return 1;
+    return true;
 }
 
 // Namespace ww_lvl1_quest/zm_mansion_ww_lvl1_quest
@@ -160,7 +160,7 @@ function function_7706457d(e_player) {
 // Size: 0x1cc
 function function_7310e1e0() {
     level endon(#"ww_case_completed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -234,7 +234,7 @@ function function_2325482e() {
 function function_7e7626b5() {
     self endon(#"death");
     level endon(#"ww_case_completed");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         player = s_waitresult.activator;
@@ -267,7 +267,7 @@ function function_9ffdf1be(e_player) {
 // Size: 0xe0
 function function_f4f7650b() {
     level endon(#"ww_obtained");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -332,7 +332,7 @@ function scramble_lock(var_3aadd17) {
 function function_175e4696(var_1e30344b) {
     level endon(#"ww_case_completed");
     self.n_rotation = 0;
-    while (1) {
+    while (true) {
         self waittill(#"rotate_lock");
         self.n_rotation = self.n_rotation + 1;
         if (self.n_rotation == 4) {
@@ -354,7 +354,7 @@ function function_175e4696(var_1e30344b) {
 // Size: 0x1c8
 function function_8476e19() {
     level endon(#"ww_case_completed");
-    while (1) {
+    while (true) {
         level waittill(#"hash_7ed0b257f8849c85");
         level flag::set(#"hash_4c1f880bcc6be2d0");
         if (flag::get_all(array(#"hash_7305c7f343dd8850", #"hash_51efb8481233c40d", #"hash_727b0a70b6f41db2", #"hash_6c453062178e1617"))) {

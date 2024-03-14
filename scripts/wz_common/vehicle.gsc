@@ -79,7 +79,7 @@ function private function_eaba72c9() {
     /#
         self notify("script_model");
         self endon("script_model");
-        while (1) {
+        while (true) {
             if (getdvarint(#"wz_delete_vehicles", 0) > 0) {
                 function_40fc185b();
                 setdvar(#"wz_delete_vehicles", 0);
@@ -182,9 +182,9 @@ function private function_7ae07b7() {
 // Size: 0x36
 function private function_e95a0595() {
     if (self.scriptvehicletype == "helicopter_light" || self.scriptvehicletype == "helicopter_utility") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_vehicle/vehicle
@@ -320,9 +320,9 @@ function private function_d69d0773() {
     }
     if (gettime() - self.var_d6a1af09 >= 250) {
         self.var_d6a1af09 = gettime();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_vehicle/vehicle
@@ -455,7 +455,7 @@ function function_53f7a11f(player) {
     self endon(#"death");
     player endon(#"death", #"exit_vehicle", #"change_seat");
     var_41f2c809 = 0;
-    while (1) {
+    while (true) {
         for (i = 0; i < self.var_9be5a571.size; i++) {
             vehicle = self.var_9be5a571[i];
             if (isdefined(vehicle) && isvehicle(vehicle)) {
@@ -496,7 +496,7 @@ function on_player_corpse() {
 // Size: 0x188
 function function_69c9e9a0() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hash_4aced1739d6627a2");
         vehicle = waitresult.vehicle;
@@ -545,7 +545,7 @@ function private function_7ed26e27(vehicle) {
 // Size: 0x17c
 function private function_e63726f6() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"hash_57887008fa0fd8ad");
         wait(0.75);
         if (self function_2c2c30e0()) {
@@ -631,11 +631,11 @@ function on_vehicle_damage(params) {
                 switch (params.smeansofdeath) {
                 case #"mod_projectile":
                     self playsoundtoplayer(#"hash_4cf0470b5276e61a", occupant);
-                    continue;
+                    break;
                 case #"mod_rifle_bullet":
                 case #"mod_pistol_bullet":
                     self playsoundtoplayer(#"hash_6dd3a55ee3658ca", occupant);
-                    continue;
+                    break;
                 }
             }
         }
@@ -791,7 +791,7 @@ function private function_ea4291d3() {
 function private function_b3caeebc(player) {
     self endon(#"death");
     player endon(#"exit_vehicle", #"death");
-    while (1) {
+    while (true) {
         if (self function_ea4291d3()) {
             player clientfield::set_player_uimodel("vehicle.missileLock", 2);
             self playsoundtoplayer(#"hash_445c9fb1793c4259", player);
@@ -843,7 +843,7 @@ function private function_6aa73a2a(missile, vehicle) {
     vehicle endon(#"death");
     range = 8000 - 10;
     dist = undefined;
-    while (1) {
+    while (true) {
         old_dist = dist;
         dist = distance(missile.origin, self.origin);
         var_38fa5914 = isdefined(old_dist) && dist < old_dist;
@@ -1157,7 +1157,7 @@ function private function_ffdf490c() {
 function function_5bce3f3a(vehicle, seat_index, var_ddd294e3) {
     self endon(#"death", #"disconnect", #"exit_vehicle", #"change_seat");
     vehicle endon(#"death");
-    while (1) {
+    while (true) {
         heatvalue = vehicle getturretheatvalue(seat_index);
         var_62e4ee3 = heatvalue / 100;
         if (var_62e4ee3 < 0) {
@@ -1207,7 +1207,7 @@ function update_turret_fire(vehicle, seat_index, var_c269692d) {
         vehicle disablegunnerfiring(seat_index - 1, 1);
         return;
     }
-    while (1) {
+    while (true) {
         params = undefined;
         params = vehicle waittill(#"gunner_weapon_fired");
         if (params.gunner_index === seat_index) {
@@ -1228,7 +1228,7 @@ function update_turret_fire(vehicle, seat_index, var_c269692d) {
             }
             if (vehicle.var_96c0f900[seat_index] == 0) {
                 vehicle disablegunnerfiring(seat_index - 1, 1);
-                return;
+                break;
             }
         }
     }
@@ -1355,7 +1355,7 @@ function private function_8278ed00() {
 // Size: 0xa0
 function private function_2ec624a6() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"enter_vehicle");
         playfxontag("vehicle/fx8_exhaust_truck_cargo_startup_os", self, "tag_fx_exhaust");
@@ -1597,7 +1597,7 @@ function private function_b8458486(player, eventstruct) {
 function private function_2014e301(player) {
     player endon(#"hash_27646c99772610b4", #"exit_vehicle", #"disconnect", #"death", #"game_ended");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_fired");
         var_3212abd9 = self seatgetweapon(0);
         var_610cfafc = int(var_3212abd9.reloadtime * 1000);
@@ -1815,9 +1815,9 @@ function private function_17949e01() {
     mag = getdvarfloat(#"hash_2612e4b1db15d42e", 150);
     height = getdvarfloat(#"hash_57e0d780126c4f57", 100);
     var_80831eb5 = 0;
-    while (1) {
+    while (true) {
         self waittill(#"beached");
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = self waittill(#"touch", #"unbeached");
             if (waitresult._notify == #"touch" && isdefined(waitresult.pm_flags)) {
@@ -1864,7 +1864,7 @@ function private function_e8e41bbb() {
         self thread function_17949e01();
     }
     fxorg = undefined;
-    while (1) {
+    while (true) {
         speed = length(self getvelocity());
         if (self function_7548ecb2() && speed < 5) {
             if (!self.var_221879dc) {
@@ -2056,7 +2056,7 @@ function private function_b0dd571a() {
     self endon(#"death");
     self waittill(#"enter_vehicle");
     offset = getdvarint(#"hash_626d3139a5fd29ca", -70);
-    while (1) {
+    while (true) {
         waterheight = getwaterheight(self.origin, 100, -10000);
         if (waterheight != -131072) {
             var_19dbcac7 = self.origin[2] + offset - waterheight;
@@ -2087,7 +2087,7 @@ function private function_b0dd571a() {
 // Size: 0x264
 function private function_638d1ade() {
     self endon(#"death", #"hash_41dbbf5434aab9e0");
-    while (1) {
+    while (true) {
         if (isdefined(level.deathcircle) && isdefined(level.deathcircleindex)) {
             radius = level.deathcircle.radius;
             var_b4ed4ca = distance2dsquared(self.origin, level.deathcircle.origin) - radius * radius;
@@ -2197,7 +2197,7 @@ function private function_8bb6a990() {
     self endon(#"death", #"cancel_malfunction", #"hash_3c7ae83e462fe4e2", #"pilot_exit", #"hash_41dbbf5434aab9e0");
     wait(5);
     self clientfield::set("flickerlights", 2);
-    while (1) {
+    while (true) {
         self function_dae7aaf3();
         wait(randomfloatrange(1, 3));
         self function_260f32b3();
@@ -2220,7 +2220,7 @@ function private function_f46dd7b0() {
         self waittill(#"pilot_enter");
     }
     shutdowntime = gettime() + 30000;
-    while (1) {
+    while (true) {
         if (gettime() < shutdowntime) {
             wait(0.5);
             continue;
@@ -2267,7 +2267,7 @@ function function_82224f4b(scale) {
     self notify("43958cae29e09bf1");
     self endon("43958cae29e09bf1");
     self endon(#"death", #"cancel_malfunction", #"cancel_acceleration", #"hash_41dbbf5434aab9e0");
-    while (1) {
+    while (true) {
         accel = anglestoup(self.angles) * scale;
         self setphysacceleration((accel[0], accel[1], -200));
         waitframe(1);
@@ -2710,7 +2710,7 @@ function function_2e3fb54c(params) {
         pitch = abs(targetyaw) * randomfloatrange(0.075, 0.15);
     }
     starttime = gettime();
-    while (1) {
+    while (true) {
         if (abs(yaw) < abs(targetyaw)) {
             yaw = lerpfloat(0, targetyaw, (gettime() - starttime) / 3000);
         }
@@ -2752,18 +2752,18 @@ function function_d344c3f(params) {
 // Size: 0x162
 function function_e291246d(params) {
     self endon(#"death", #"change_state");
-    while (1) {
+    while (true) {
         pilot = self getseatoccupant(0);
         if (!isdefined(pilot)) {
             self vehicle_ai::set_state("spiral");
-            return;
+            break;
         }
         move = pilot getnormalizedmovement();
         if (pilot vehiclemoveupbuttonpressed() || isdefined(move) && (abs(move[0]) > 0.2 || abs(move[1]) > 0.2)) {
             self.var_4e76046a = undefined;
             self returnplayercontrol();
             self vehicle_ai::set_state("driving");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -2795,7 +2795,7 @@ function function_200c3bd0(params) {
 function function_3a7426cf(params) {
     self endon(#"change_state", #"death");
     damagetime = gettime() + 15000;
-    while (1) {
+    while (true) {
         wait(0.25);
         if (self function_479389f3()) {
             self vehicle_ai::set_state("landed");
@@ -2848,11 +2848,11 @@ function function_b705c816(params) {
     if (self vehicle_ai::get_previous_state() === "off") {
         wait(2);
     }
-    while (1) {
+    while (true) {
         if (isdefined(self.emped) && self.emped || isdefined(self.jammed) && self.jammed) {
             params.var_c1273f91 = 1;
             self vehicle_ai::set_state("off", params);
-            return;
+            break;
         }
         if (isdefined(self.var_b3e4af16) && self.var_b3e4af16) {
             waitframe(1);
@@ -2863,12 +2863,12 @@ function function_b705c816(params) {
             params.no_falling = 1;
             params.var_c1273f91 = 1;
             self vehicle_ai::set_state("off", params);
-            return;
+            break;
         }
         move = player getnormalizedmovement();
         if (player vehiclemoveupbuttonpressed() || isdefined(move) && (abs(move[0]) > 0.2 || abs(move[1]) > 0.2)) {
             self vehicle_ai::set_state("driving");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -2914,14 +2914,14 @@ function private function_479389f3() {
     var_df47b913 = [];
     foreach (tag, origin in var_33a206d0) {
         if (!isdefined(origin)) {
-            return 0;
+            return false;
         }
         var_df47b913[tag] = physicstrace(origin + vectorscale((0, 0, 1), 25), origin - vectorscale((0, 0, 1), 75), (0, 0, 0), (0, 0, 0), self, 2);
     }
     var_dc8469e2 = [];
     foreach (tag, origin in var_8fc02d3b) {
         if (!isdefined(origin)) {
-            return 0;
+            return false;
         }
         var_dc8469e2[tag] = physicstrace(origin + vectorscale((0, 0, 1), 25), origin - vectorscale((0, 0, 1), 75), (0, 0, 0), (0, 0, 0), self, 2);
     }
@@ -2960,23 +2960,23 @@ function private function_479389f3() {
         self.var_eb4e4182 = avgnormal;
     }
     if (avgnormal[2] < 0.94) {
-        return 0;
+        return false;
     }
     if (var_e10b67f7.size == 0 || var_d3532cfe.size == 0 || var_d3532cfe.size + var_e10b67f7.size < 3) {
-        return 0;
+        return false;
     }
     if (var_d643c4fc) {
-        return 0;
+        return false;
     }
     var_4c962569 = var_4c962569 / (var_d3532cfe.size + var_e10b67f7.size + 1);
     if (var_4c962569 > 20) {
-        return 0;
+        return false;
     }
     var_b0e8278f = var_b0e8278f / (var_d3532cfe.size + var_e10b67f7.size);
     self.helilandingorigin = var_b0e8278f;
     self.var_6fac6f50 = var_4c962569;
     self.var_67136cb0 = avgnormal;
-    return 1;
+    return true;
 }
 
 // Namespace wz_vehicle/vehicle
@@ -3084,19 +3084,19 @@ function function_9dd58750() {
 // Size: 0xc6
 function function_2513e40c(vehicle, player, seatindex) {
     if (player infection::is_infected()) {
-        return 0;
+        return false;
     }
     if (player item_world::function_8e0d14c1(1)) {
-        return 0;
+        return false;
     }
     if (vehicle.vehicleclass === "boat") {
         if (vehicle function_7548ecb2() && isdefined(vehicle.var_221879dc) && vehicle.var_221879dc) {
             if (seatindex === 0) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace wz_vehicle/vehicle
@@ -3124,19 +3124,19 @@ function function_41a269b3() {
 // Size: 0x128
 function function_32607cfc(vehicle) {
     if (isdefined(vehicle) && isdefined(vehicle.settings) && isdefined(vehicle.settings.var_6754976b) && vehicle.settings.var_6754976b) {
-        return 1;
+        return true;
     }
     /#
         if (getdvarint(#"hash_6a34a21ac687e5ce", 0)) {
-            return 1;
+            return true;
         }
     #/
     if (isdefined(getgametypesetting(#"wzheavymetalheroes")) && getgametypesetting(#"wzheavymetalheroes")) {
-        return 1;
+        return true;
     }
     distancetraveled = self stats::get_stat_global(#"distance_traveled_vehicle_air");
     if (!isdefined(distancetraveled)) {
-        return 0;
+        return false;
     }
     return distancetraveled >= 1647360;
 }
@@ -3293,7 +3293,7 @@ function function_ee42a973(player) {
 function function_33a25ecf(owner) {
     owner endon(#"disconnect");
     self endon(#"death", #"hash_23b61069705a7782");
-    while (1) {
+    while (true) {
         if (!isdefined(self)) {
             return;
         }
@@ -3395,7 +3395,7 @@ function function_4ead318d() {
         /#
             assert(isdefined(self.height));
         #/
-        while (1) {
+        while (true) {
             waitframe(1);
             leftrear = self gettagorigin("<unknown string>");
             leftmiddle = self gettagorigin("<unknown string>");
@@ -3404,7 +3404,7 @@ function function_4ead318d() {
             rightmiddle = self gettagorigin("<unknown string>");
             rightfront = self gettagorigin("<unknown string>");
             if (!isdefined(leftrear)) {
-                return;
+                break;
             }
             line(leftrear + vectorscale((0, 0, 1), 25), leftrear - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
             line(leftmiddle + vectorscale((0, 0, 1), 25), leftmiddle - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);

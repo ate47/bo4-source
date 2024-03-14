@@ -10,7 +10,7 @@
 // Size: 0x58
 function gadget_is_type(slot, type) {
     if (!isdefined(self._gadgets_player) || !isdefined(self._gadgets_player[slot])) {
-        return 0;
+        return false;
     }
     return self._gadgets_player[slot].gadget_type == type;
 }
@@ -50,11 +50,11 @@ function function_43cda488() {
         teammates = getplayers(self.team);
         foreach (player in teammates) {
             if (player gadget_combat_efficiency_enabled()) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ability_util/ability_util
@@ -352,10 +352,10 @@ function gadget_is_active(gadgettype) {
     slot = self gadget_slot_for_type(gadgettype);
     if (slot >= 0 && slot < 3) {
         if (self util::gadget_is_in_use(slot)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ability_util/ability_util
@@ -365,9 +365,9 @@ function gadget_is_active(gadgettype) {
 function gadget_has_type(gadgettype) {
     slot = self gadget_slot_for_type(gadgettype);
     if (slot >= 0 && slot < 3) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ability_util/ability_util
@@ -439,12 +439,12 @@ function aoe_friendlies(weapon, aoe) {
 function aoe_trace_entity(entity, origin, trace_z_offset) {
     entitypoint = entity.origin + (0, 0, trace_z_offset);
     if (!bullettracepassed(origin, entitypoint, 1, self, undefined, 0, 1)) {
-        return 0;
+        return false;
     }
     /#
         thread util::draw_debug_line(origin, entitypoint, 1);
     #/
-    return 1;
+    return true;
 }
 
 // Namespace ability_util/ability_util
@@ -453,8 +453,8 @@ function aoe_trace_entity(entity, origin, trace_z_offset) {
 // Size: 0x4a
 function is_hero_weapon(gadgetweapon) {
     if ((gadgetweapon.isheavyweapon || gadgetweapon.issignatureweapon) && gadgetweapon.gadget_type == 11) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

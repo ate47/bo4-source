@@ -146,7 +146,7 @@ function phone_init() {
 // Size: 0x17e
 function function_a546fd97() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         add_outtime = s_notify.attacker aat::getaatonweapon(s_notify.weapon);

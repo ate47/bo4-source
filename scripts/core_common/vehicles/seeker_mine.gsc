@@ -51,7 +51,7 @@ function __init__() {
 // Size: 0x4a
 function update_dvars() {
     /#
-        while (1) {
+        while (true) {
             wait(1);
             level.var_d3c21969 = getdvarint(#"hash_6b0c29fe436582f0", 0);
         }
@@ -67,9 +67,9 @@ function is_in_water(location) {
     depth = getwaterheight(location) - self.origin[2];
     inwater = depth > var_8a7edebd;
     if (inwater) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -215,10 +215,10 @@ function private function_d39f1cf2() {
     if (isdefined(trace[#"entity"])) {
         entity = trace[#"entity"];
         if (entity ismovingplatform()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -228,9 +228,9 @@ function private function_d39f1cf2() {
 function private function_23d1cec2() {
     result = function_9cc082d2(self.origin + vectorscale((0, 0, 1), 100), 400);
     if (isdefined(result)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -330,11 +330,11 @@ function function_33d3892a() {
         if (isdefined(targetpos)) {
             path = generatenavmeshpath(self.origin, targetpos, self, undefined, undefined, iterationlimit);
             if (isdefined(path) && path.status === "succeeded") {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -343,16 +343,16 @@ function function_33d3892a() {
 // Size: 0x8a
 function chase_enemy() {
     if (isdefined(self.favoriteenemy) && function_9ba314a1(self.favoriteenemy)) {
-        return 0;
+        return false;
     }
     targetpos = function_3acf1c61();
     if (isdefined(targetpos)) {
         if (self function_a57c34b7(targetpos, 0, 1)) {
             self.current_pathto_pos = targetpos;
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -433,7 +433,7 @@ function function_32e99568(params) {
 // Size: 0x86
 function function_13ade03e() {
     self endon(#"death", #"change_state");
-    while (1) {
+    while (true) {
         self animation::play("p8_fxanim_mp_drone_seeker_shock_anim", self.origin, self.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
         waitframe(1);
     }
@@ -509,7 +509,7 @@ function function_c82edc1a() {
 function private function_d00f14e3() {
     self endon(#"death");
     self.ai.var_b0f9c1a3 = gettime();
-    while (1) {
+    while (true) {
         self waittill(#"hash_47fe95a0475dea3d");
         self.ai.var_b0f9c1a3 = gettime() + 2000;
     }
@@ -521,12 +521,12 @@ function private function_d00f14e3() {
 // Size: 0x3c
 function private function_112a6b52() {
     if (!isdefined(self.ai.var_b0f9c1a3)) {
-        return 0;
+        return false;
     }
     if (gettime() <= self.ai.var_b0f9c1a3) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -535,7 +535,7 @@ function private function_112a6b52() {
 // Size: 0x90
 function private function_2651fb42() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (function_112a6b52()) {
             waitframe(2);
             continue;
@@ -554,7 +554,7 @@ function private function_2651fb42() {
 function private function_82e5be34() {
     self endon(#"death");
     self endon(#"change_state");
-    while (1) {
+    while (true) {
         currentdir = anglestoforward(self.angles);
         wait(1);
         newdir = anglestoforward(self.angles);
@@ -573,12 +573,12 @@ function private function_82e5be34() {
 function function_d15dd929(radius, origin) {
     result = function_9cc082d2(origin + vectorscale((0, 0, 1), 100), 200);
     if (isdefined(result) && isdefined(result[#"materialflags"]) && result[#"materialflags"] & 2) {
-        return 0;
+        return false;
     }
     if (!ispointonnavmesh(origin, radius, 1)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -694,9 +694,9 @@ function function_3e16dec3(params) {
 function function_ab9a9770(target) {
     results = groundtrace(target.origin + vectorscale((0, 0, 1), 70), target.origin + vectorscale((0, 0, -1), 100), 0, target);
     if (isdefined(results) && isdefined(results[#"entity"]) && results[#"entity"] ismovingplatform()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -706,74 +706,74 @@ function function_ab9a9770(target) {
 function function_9ba314a1(target) {
     if (isplayer(target)) {
         if (!isalive(target)) {
-            return 1;
+            return true;
         }
         if (isdefined(target.var_4233f7e5) && target.var_4233f7e5) {
-            return 1;
+            return true;
         }
         if (isdefined(target.var_bb257569) && gettime() < target.var_bb257569) {
-            return 1;
+            return true;
         }
         if (isdefined(target.currentweapon)) {
             shield = getweapon(#"sig_buckler_dw");
             if (isdefined(shield) && target.currentweapon == shield) {
-                return 1;
+                return true;
             }
             shield = getweapon(#"sig_buckler_lh");
             if (isdefined(shield) && target.currentweapon == shield) {
-                return 1;
+                return true;
             }
             shield = getweapon(#"sig_shield_turret");
             if (isdefined(shield) && target.currentweapon == shield) {
-                return 1;
+                return true;
             }
         }
         if (function_ab9a9770(target)) {
-            return 1;
+            return true;
         }
         if (isdefined(target.isplanting) && target.isplanting || isdefined(target.isdefusing) && target.isdefusing || target oob::isoutofbounds()) {
-            return 1;
+            return true;
         }
         if (target laststand::player_is_in_laststand()) {
-            return 1;
+            return true;
         }
         if (target isremotecontrolling() || isdefined(target.holding_placeable)) {
-            return 1;
+            return true;
         }
         if (target isinvehicle()) {
-            return 1;
+            return true;
         }
         if (target player::is_spawn_protected()) {
-            return 1;
+            return true;
         }
         if (isdefined(target.var_beee9523) && target.var_beee9523) {
-            return 1;
+            return true;
         }
         if (target isgrappling()) {
-            return 1;
+            return true;
         }
         if (target depthinwater() >= 30 || target isplayerswimming()) {
-            return 1;
+            return true;
         }
         if (isdefined(target.var_dda9b735) && isdefined(target.var_dda9b735.isshocked) && target.var_dda9b735.isshocked) {
-            return 1;
+            return true;
         }
         if (target hasperk(#"specialty_nottargetedbyraps") && !isdefined(level.var_91a1cd89)) {
             distsqtotarget = distancesquared(target.origin, self.origin);
             if (distsqtotarget <= 15625) {
-                return 0;
+                return false;
             }
-            return 1;
+            return true;
         }
     }
     target_pos_onnavmesh = undefined;
     if (isdefined(target)) {
         target_pos_onnavmesh = getclosestpointonnavmesh(target.origin, self.settings.var_c694bbbf * 1.5, self getpathfindingradius() * 1.2, 4194287);
         if (!isdefined(target_pos_onnavmesh)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -788,7 +788,7 @@ function function_3e3b6ce1() {
         self.var_c5c8c31 = undefined;
         wait(delay);
     }
-    while (1) {
+    while (true) {
         if (isdefined(self.favoriteenemy)) {
             target = self.favoriteenemy;
             distsqtotarget = distancesquared(target.origin, self.origin);
@@ -806,7 +806,7 @@ function function_3e3b6ce1() {
                         self playsound(self.settings.var_af34ede3);
                     }
                     self vehicle_ai::set_state("chase");
-                    return;
+                    break;
                 }
             }
         }
@@ -834,7 +834,7 @@ function function_55be8453() {
     self endon(#"death", #"change_state");
     waitframe(2);
     firsttime = 1;
-    while (1) {
+    while (true) {
         if (isdefined(self.favoriteenemy) && function_9ba314a1(self.favoriteenemy)) {
             self.favoriteenemy = undefined;
         }
@@ -889,7 +889,7 @@ function function_55be8453() {
 // Size: 0x212
 function function_d55a99f2(var_4700521d = 500, var_53050fec = 1, var_30336a7c = 0) {
     if (var_53050fec && function_23d1cec2()) {
-        return 1;
+        return true;
     }
     /#
         record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (1, 0, 0));
@@ -900,7 +900,7 @@ function function_d55a99f2(var_4700521d = 500, var_53050fec = 1, var_30336a7c = 
         if (isdefined(trace[#"position"])) {
             newpos = trace[#"position"];
             if (var_30336a7c && !sighttracepassed(self.origin, newpos, 0, self)) {
-                return 0;
+                return false;
             }
             /#
                 record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (0, 0, 1));
@@ -910,9 +910,9 @@ function function_d55a99f2(var_4700521d = 500, var_53050fec = 1, var_30336a7c = 
             #/
         }
         self.origin = newpos;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -940,7 +940,7 @@ function watch_for_timeout(var_9d52f0b7, max_duration) {
 // Size: 0x68
 function function_313aa1b8() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         self playsound(#"veh_wasp_wall_imp");

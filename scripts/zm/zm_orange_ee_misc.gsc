@@ -133,7 +133,7 @@ function trinket_think() {
             pap_lock = pap;
         }
     }
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_who = s_notify.e_who;
@@ -154,7 +154,7 @@ function trinket_think() {
 // Size: 0x1a8
 function function_abf8d5ce() {
     level endon(#"end_game", #"hell_on_earth", #"trinkets_placed", #"hash_198bc172b5af7f25");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_who = s_notify.e_who;
@@ -208,7 +208,7 @@ function function_a4e86068() {
     var_d1ec2571 = level.round_number + 1;
     b_delayed = 0;
     do {
-        if (0) {
+        if (false) {
             b_delayed = 1;
             wait(1);
             continue;
@@ -254,7 +254,7 @@ function function_a092874() {
 // Checksum 0x23a38c27, Offset: 0x1660
 // Size: 0x6
 function trinket_cleanup() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -354,7 +354,7 @@ function sq_glasses() {
 // Size: 0x100
 function function_ea04cfd2() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         player = s_notify.e_who;
@@ -749,12 +749,12 @@ function function_ee63b8a7(var_a276c861, var_19e802fa) {
 function private is_weapon_sniper(w_weapon) {
     if (isdefined(w_weapon.issniperweapon) && w_weapon.issniperweapon || w_weapon.name === #"ww_tesla_sniper_t8" || w_weapon.name === #"ww_tesla_sniper_upgraded_t8") {
         if (weaponhasattachment(w_weapon, "elo") || weaponhasattachment(w_weapon, "reflex") || weaponhasattachment(w_weapon, "holo") || weaponhasattachment(w_weapon, "is")) {
-            return 0;
+            return false;
         } else {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_ee_misc/zm_orange_ee_misc
@@ -836,7 +836,7 @@ function function_8bc27fd3(var_5ea5c94d) {
             zm_hms_util::pause_zombies(1, 0);
         }
         edge_volume = getent("edge_of_the_world", "targetname");
-        while (1) {
+        while (true) {
             foreach (player in getplayers()) {
                 if (player istouching(edge_volume)) {
                     level.edge_player = player;
@@ -974,7 +974,7 @@ function function_cabcfdd2() {
     level endon(#"hash_778a2b8282d704f");
     level endon(#"hash_431a5026505d71aa");
     var_b3ee22cc = 0;
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         var_b3ee22cc++;
         playsoundatposition(#"hash_71d9e237e73ab437", self.origin);

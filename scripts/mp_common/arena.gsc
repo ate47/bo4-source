@@ -113,7 +113,7 @@ function update_arena_challenge_seasons() {
             }
             if (challengeseason == 0) {
                 self stats::set_stat(#"arenachallengeseasons", i, currentseason);
-                return;
+                break;
             }
         }
     }
@@ -155,7 +155,7 @@ function match_end() {
 // Checksum 0xe59d1acf, Offset: 0x9c8
 // Size: 0x6
 function function_51203700() {
-    return 0;
+    return false;
 }
 
 // Namespace arena/arena

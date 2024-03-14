@@ -94,7 +94,7 @@ function function_25a55bd2() {
     } else {
         var_d18535e8 = 4;
     }
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         /#
             if (level.round_number % 2 == 1 && level.round_number > 4 && level.round_number - var_d18535e8 >= 1) {
@@ -156,25 +156,25 @@ function function_a5ed4dd9(var_6c367c57, var_e7c0257b, var_4eec77ed) {
         level.var_abf198ff[1] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[4] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[5] function_b736b1a2(5, 2, 2);
-        return;
+        break;
     case 2:
         level.var_abf198ff[2] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[3] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[6] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[7] function_b736b1a2(5, 2, 2);
-        return;
+        break;
     case 3:
         level.var_abf198ff[1] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[2] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[5] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[6] function_b736b1a2(5, 2, 2);
-        return;
+        break;
     case 4:
         level.var_abf198ff[0] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[3] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[4] function_b736b1a2(5, 2, 2);
         level.var_abf198ff[7] function_b736b1a2(5, 2, 2);
-        return;
+        break;
     case 5:
         level.var_abf198ff[0] function_b736b1a2(3, 2, 2);
         level.var_abf198ff[1] function_b736b1a2(3, 2, 2);
@@ -184,7 +184,7 @@ function function_a5ed4dd9(var_6c367c57, var_e7c0257b, var_4eec77ed) {
         level.var_abf198ff[5] function_b736b1a2(3, 2, 2);
         level.var_abf198ff[6] function_b736b1a2(3, 2, 2);
         level.var_abf198ff[7] function_b736b1a2(3, 2, 2);
-        return;
+        break;
     case 6:
         level.var_abf198ff[0] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[2] function_b736b1a2(10, 10, 10);
@@ -195,7 +195,7 @@ function function_a5ed4dd9(var_6c367c57, var_e7c0257b, var_4eec77ed) {
         level.var_abf198ff[3] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[5] function_b736b1a2(10, 10, 10);
         level.var_abf198ff[7] function_b736b1a2(10, 10, 10);
-        return;
+        break;
     case 7:
         level.var_abf198ff[0] function_b736b1a2(3, 1, 3);
         level.var_abf198ff[4] function_b736b1a2(3, 1, 3);
@@ -209,7 +209,7 @@ function function_a5ed4dd9(var_6c367c57, var_e7c0257b, var_4eec77ed) {
         level.var_abf198ff[3] function_b736b1a2(3, 1, 3);
         level.var_abf198ff[7] function_b736b1a2(3, 1, 3);
         wait(1);
-        return;
+        break;
     }
 }
 
@@ -275,7 +275,7 @@ function function_47b3d2e2() {
 function fire_column_activate(var_6c367c57 = 2, var_e7c0257b = 2, var_5330caa5) {
     self endon(#"deactivate");
     self thread function_97d7f14c();
-    while (1) {
+    while (true) {
         var_5330caa5 thread scene::play("shot 1");
         wait(0.6);
         self.var_94de9684 = 1;
@@ -302,7 +302,7 @@ function function_62725b64() {
     if (level flag::get(#"hash_7ace11fa7fe1a6ce")) {
         return;
     }
-    while (1) {
+    while (true) {
         foreach (e_player in util::get_active_players()) {
             if (!isdefined(e_player)) {
                 continue;
@@ -338,7 +338,7 @@ function function_c36eee2() {
 // Size: 0x78
 function function_97d7f14c() {
     self endon(#"deactivate");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger");
         if (isdefined(s_notify.activator)) {
@@ -385,9 +385,9 @@ function function_a29b80e8(e_victim) {
             e_victim thread function_ccfc8bde();
             switch (e_victim.archetype) {
             case #"zombie":
-                return;
+                break;
             case #"gladiator":
-                return;
+                break;
             }
         }
     }
@@ -425,7 +425,7 @@ function function_ccfc8bde() {
             b_said = e_player zm_audio::create_and_play_dialog(#"flame_hazard", #"unharmed");
             if (isdefined(b_said) && b_said) {
                 level flag::set(#"hash_30c5aa0859123bf6");
-                return;
+                break;
             }
         }
     }

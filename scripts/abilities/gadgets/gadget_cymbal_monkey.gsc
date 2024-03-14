@@ -52,7 +52,7 @@ function private __main__() {
 function private function_a23699fe() {
     level endon(#"game_ended");
     var_cf4e80a7 = 250;
-    while (1) {
+    while (true) {
         for (i = 0; i < level.var_7d95e1ed.size; i++) {
             monkey = level.var_7d95e1ed[i];
             if (!isdefined(monkey) || isdefined(monkey.fuse_lit) && monkey.fuse_lit) {
@@ -80,16 +80,16 @@ function private function_7e60533f(monkey, radius) {
     nearby_players = getentitiesinradius(monkey.origin, radius, 1);
     foreach (player in nearby_players) {
         if (function_17c51c94(monkey, player)) {
-            return 1;
+            return true;
         }
     }
     var_b1de6a06 = getentitiesinradius(monkey.origin, radius, 15);
     foreach (actor in var_b1de6a06) {
         if (function_17c51c94(monkey, actor)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace gadget_cymbal_monkey/gadget_cymbal_monkey
@@ -98,12 +98,12 @@ function private function_7e60533f(monkey, radius) {
 // Size: 0x80
 function private function_17c51c94(monkey, ent) {
     if (!isdefined(ent)) {
-        return 0;
+        return false;
     }
     if ((isplayer(ent) || isactor(ent)) && util::function_fbce7263(ent.team, monkey.team)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace gadget_cymbal_monkey/grenade_fire

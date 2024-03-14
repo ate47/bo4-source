@@ -185,13 +185,13 @@ function function_cfa8ca16(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         self.mdl_base = #"hash_678aaf8e37498e9a";
-        return;
+        break;
     case 2:
         self.mdl_base = #"hash_32a51dafb1c7344f";
-        return;
+        break;
     case 3:
         self.mdl_base = #"hash_597bdc83a7c9e8c";
-        return;
+        break;
     }
 }
 
@@ -612,7 +612,7 @@ function function_ff52ba5a(localclientnum) {
 function function_2585c107() {
     self endon(#"hash_2bb8be6b846aed93");
     level endon(#"intermission");
-    while (1) {
+    while (true) {
         var_79fd35f9 = level.var_90bda347 gettagorigin("tag_origin");
         if (var_79fd35f9[0] != self.var_608d2b77[0] || var_79fd35f9[1] != self.var_608d2b77[1] || var_79fd35f9[2] != self.var_608d2b77[2]) {
             var_f370dc28 = self.var_da4fd8df;
@@ -767,9 +767,9 @@ function function_e3c6c272(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x118
 function function_ae2a3a29(localclientnum) {
     self endon(#"hash_7541447588c20db8", #"death");
-    while (1) {
+    while (true) {
         if (!isalive(self)) {
-            return;
+            break;
         }
         if (self zm_utility::function_f8796df3(localclientnum)) {
             self.var_c605c611 = playfxoncamera(localclientnum, level._effect[#"hash_76da38284b0c73ed"], (0, 0, 0), (1, 0, 0), (0, 0, 1));
@@ -817,9 +817,9 @@ function boss_player_snow_fx(localclientnum, oldval, newval, bnewent, binitialsn
 // Size: 0xe0
 function function_7f21fc5b(localclientnum, str_type) {
     self endon(#"boss_end_snow_fx", #"death");
-    while (1) {
+    while (true) {
         if (!isalive(self)) {
-            return;
+            break;
         }
         self.boss_player_snow_fx = playfxoncamera(localclientnum, level._effect[str_type], (0, 0, 0), anglestoforward(self.angles), anglestoup(self.angles));
         wait(randomfloatrange(0.4, 0.7));

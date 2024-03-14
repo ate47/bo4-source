@@ -32,11 +32,11 @@ function private function_b7de760d() {
         player_insertion::function_a5fd9aa8(insertion);
         foreach (player in insertion.players) {
             if (player == self) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_insertion/bot_insertion
@@ -47,10 +47,10 @@ function private function_58a44f22() {
     teammates = getplayers(self.team);
     foreach (player in teammates) {
         if (isplayer(player) && !isbot(player) && player function_b7de760d()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_insertion/bot_insertion
@@ -237,7 +237,7 @@ function function_13ba9cec(target_point, lead_player, var_282c0a8e) {
         assert(isdefined(var_282c0a8e));
     #/
     if (self isonground()) {
-        return 0;
+        return false;
     }
     goal_angles = [[ var_282c0a8e ]](target_point, lead_player);
     var_8fbb46cd = vectornormalize(self getvelocity());
@@ -249,7 +249,7 @@ function function_13ba9cec(target_point, lead_player, var_282c0a8e) {
     angles = (angleclamp180(angles[0]), angleclamp180(angles[1]), 0);
     self botsetmoveangles(angles);
     self botsetlookangles(angles);
-    return 1;
+    return true;
 }
 
 // Namespace bot_insertion/bot_insertion
@@ -272,7 +272,7 @@ function function_c9a18304(params) {
         angles = (90, angles[1], 0);
         self botsetmoveangles(angles);
         self botsetlookangles(angles);
-        while (1) {
+        while (true) {
             if (length(self getvelocity()) * 0.0568182 > 110) {
                 break;
             }
@@ -283,7 +283,7 @@ function function_c9a18304(params) {
         if (isdefined(var_2706b530)) {
             var_26a66f9d = &function_233a1027;
         }
-        while (1) {
+        while (true) {
             if (!self function_13ba9cec(target_point, var_2706b530, var_26a66f9d)) {
                 return;
             }

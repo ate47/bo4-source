@@ -48,9 +48,9 @@ function perk_unsetperk(str_perk) {
 // Size: 0x4a
 function perk_hasperk(str_perk) {
     if (isdefined(self.var_fb3c9d6a) && isdefined(self.var_fb3c9d6a[str_perk]) && self.var_fb3c9d6a[str_perk] > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace perks/perks

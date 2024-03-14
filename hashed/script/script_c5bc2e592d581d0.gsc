@@ -163,10 +163,10 @@ function private function_8cfcffa3(bot, weapon, ammo = undefined) {
 function private _paramshasbots(params) {
     foreach (bot in params.bots) {
         if (strategiccommandutility::isvalidbot(bot)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_ed876ec/namespace_5bb8bcd5
@@ -935,10 +935,10 @@ function private function_e5a77501(planner, constants) {
             continue;
         }
         if (bot getcurrentweapon().isgadget) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_ed876ec/namespace_5bb8bcd5
@@ -953,7 +953,7 @@ function private function_8e40731d(planner, params) {
             bot.goalheight = 100;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_ed876ec/namespace_5bb8bcd5
@@ -984,7 +984,7 @@ function debug_setup() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_43057e52c6abc0a", 0)) {
                 function_8f74831a();
             }

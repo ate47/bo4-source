@@ -179,7 +179,7 @@ function killstreak_switch_team(owner) {
         killstreakentity notify(#"killstreak_switch_team_singleton");
         killstreakentity endon(#"killstreak_switch_team_singleton", #"death");
         setdvar(#"scr_killstreak_switch_team", "<unknown string>");
-        while (1) {
+        while (true) {
             wait(0.5);
             devgui_int = getdvarint(#"scr_killstreak_switch_team", 0);
             if (devgui_int != 0) {

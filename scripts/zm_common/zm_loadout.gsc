@@ -262,7 +262,7 @@ function function_59b0ef71(slot, weapon) {
 // Size: 0x72
 function function_393977df(slot, weapon) {
     if (!isdefined(weapon) || weapon == level.weaponnone || !isdefined(self.slot_weapons) || !isdefined(self.slot_weapons[slot])) {
-        return 0;
+        return false;
     }
     return self.slot_weapons[slot] == weapon;
 }

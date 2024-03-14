@@ -252,10 +252,10 @@ function function_2270b2c8(var_6d71e83a) {
     if (isarray(var_6d71e83a)) {
         foreach (value in var_6d71e83a) {
             if (!isdefined(value)) {
-                return 1;
+                return true;
             }
         }
-        return 0;
+        return false;
     }
     return !isdefined(var_6d71e83a);
 }
@@ -341,10 +341,10 @@ function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
     switch (var_58df9892) {
     case 0:
         self sethintstring(#"zombie/trap_locked");
-        return;
+        break;
     case 1:
         self sethintstring(#"zombie/need_power");
-        return;
+        break;
     case 2:
         if (util::get_game_type() == "zstandard") {
             if (function_8b1a219a()) {
@@ -357,13 +357,13 @@ function function_b2e1326(var_58df9892, var_1dc9c1bf = 1) {
         } else {
             self sethintstring(#"hash_23c1c09e94181fdb", var_1dc9c1bf);
         }
-        return;
+        break;
     case 3:
         self sethintstring(#"zombie/trap_active");
-        return;
+        break;
     case 4:
         self sethintstring(#"zombie/trap_cooldown");
-        return;
+        break;
     }
 }
 
@@ -375,10 +375,10 @@ function function_fab5fb4d(w_weapon, var_c4c6c433) {
     if (isplayer(self)) {
         var_1590457 = self aat::getaatonweapon(w_weapon, 1);
         if (var_1590457 === var_c4c6c433) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -474,10 +474,10 @@ function function_b8a27acc() {
     a_e_players = getplayers();
     foreach (e_player in a_e_players) {
         if (zm_utility::is_player_valid(e_player) && e_player istouching(self)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_hms_util/zm_hms_util
@@ -657,7 +657,7 @@ function function_6099877a(n_radius = 96, str_endon, str_hint = "", var_a33304ba
 function function_715588b3() {
     self endon(#"death");
     s_unitrigger = self.stub;
-    while (1) {
+    while (true) {
         self waittill(#"trigger");
         b_using = 1;
         for (n_time = 0; n_time < 0.5; n_time = n_time + 0.1) {
@@ -762,7 +762,7 @@ function function_df67a12d(category, subcategory) {
 // Size: 0x7e
 function function_774b42ac() {
     /#
-        while (1) {
+        while (true) {
             a_ents = getentarray();
             debug2dtext((5, 1055, 0), "<unknown string>" + a_ents.size, (0, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
             waitframe(30);
@@ -777,7 +777,7 @@ function function_774b42ac() {
 function private devgui() {
     /#
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"hash_6c7113bf98c41367", "<unknown string>");
             switch (str_command) {

@@ -109,7 +109,7 @@ function on_weapon_change(params) {
             }
         }
         if (abort) {
-            return;
+            break;
         }
         self thread aplockloop(weapon);
         while (self playerads() == 1) {
@@ -309,18 +309,18 @@ function insideapreticlelocked(target) {
 // Size: 0x6e
 function isstillvalidtarget(weapon, ent) {
     if (!isdefined(ent)) {
-        return 0;
+        return false;
     }
     if (!insideapreticlelocked(ent)) {
-        return 0;
+        return false;
     }
     if (!isalive(ent)) {
-        return 0;
+        return false;
     }
     if (!locksighttest(ent)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace multilockap_guidance/multilockapguidance
@@ -348,30 +348,30 @@ function seekersound(alias, looping, id) {
 function locksighttest(target) {
     eyepos = self geteye();
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
     if (!isalive(target)) {
-        return 0;
+        return false;
     }
     pos = target getshootatpos();
     if (isdefined(pos)) {
         passed = bullettracepassed(eyepos, pos, 0, target, undefined, 1, 1);
         if (passed) {
-            return 1;
+            return true;
         }
     }
     pos = target getcentroid();
     if (isdefined(pos)) {
         passed = bullettracepassed(eyepos, pos, 0, target, undefined, 1, 1);
         if (passed) {
-            return 1;
+            return true;
         }
     }
     pos = target.origin;
     passed = bullettracepassed(eyepos, pos, 0, target, undefined, 1, 1);
     if (passed) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

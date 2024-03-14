@@ -66,7 +66,7 @@ function turret_microwave_sound_off_waiter(localclientnum) {
 function turret_microwave_sound_updater() {
     self endon(#"beam_stop");
     self endon(#"death");
-    while (1) {
+    while (true) {
         origin = self gettagorigin("tag_flash");
         if (origin[0] != self.microwave_audio_start[0] || origin[1] != self.microwave_audio_start[1] || origin[2] != self.microwave_audio_start[2]) {
             previousstart = self.microwave_audio_start;
@@ -154,7 +154,7 @@ function startmicrowavefx(localclientnum) {
     self thread updatemicrowaveaim(microwavefxent);
     self thread cleanupfx(localclientnum, microwavefxent);
     wait(0.3);
-    while (1) {
+    while (true) {
         /#
             if (getdvarint(#"scr_microwave_turret_fx_debug", 0)) {
                 turret.should_update_fx = 1;
@@ -209,7 +209,7 @@ function updatemicrowaveaim(microwavefxent) {
     turret endon(#"death");
     turret endon(#"beam_stop");
     last_angles = turret gettagangles("tag_flash");
-    while (1) {
+    while (true) {
         angles = turret gettagangles("tag_flash");
         if (last_angles != angles) {
             turret.should_update_fx = 1;
@@ -373,20 +373,20 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin) {
         fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash_sm" : "killstreaks/fx_sg_distortion_cone_ash";
         switch (i) {
         case 0:
-            continue;
+            break;
         case 1:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx21", startfx);
-            continue;
+            break;
         case 2:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx31", startfx);
-            continue;
+            break;
         case 3:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx41", startfx);
-            continue;
+            break;
         case 4:
             self stop_or_start_fx(localclientnum, fxname, "tag_fx51", startfx);
             self stop_or_start_fx(localclientnum, fxname, "tag_fx52", startfx);
-            continue;
+            break;
         }
     }
 }

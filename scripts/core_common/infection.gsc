@@ -39,9 +39,9 @@ function initialize() {
 // Size: 0x1c
 function function_74650d7() {
     if (isdefined(level.infection)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace infection/infection
@@ -203,7 +203,7 @@ function give_body() {
 function function_da08f4d0() {
     self endon(#"death");
     wait(randomintrange(2, 4));
-    while (1) {
+    while (true) {
         str_alias = #"hash_61fc4fa3eeafcf07";
         n_wait_min = 2;
         n_wait_max = 5;
@@ -235,9 +235,9 @@ function function_882350c() {
 function function_687661ea() {
     xuid = self getxuid();
     if (isdefined(level.infection.var_c4b373ef[xuid]) && level.infection.var_c4b373ef[xuid]) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace infection/infection

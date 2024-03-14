@@ -60,42 +60,42 @@ function function_163442cb(params, w_weapon) {
 // Size: 0x282
 function private function_89769800(params, unitrigger, b_start, var_c060d2c8) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!zm_utility::is_player_valid(self)) {
-        return 0;
+        return false;
     }
     if (self laststand::player_is_in_laststand() || self zm_utility::in_revive_trigger()) {
-        return 0;
+        return false;
     }
     if (!self usebuttonpressed()) {
-        return 0;
+        return false;
     }
     trigger = unitrigger zm_unitrigger::unitrigger_trigger(self);
     if (!isdefined(trigger)) {
-        return 0;
+        return false;
     }
     if (b_start) {
         if (isdefined(params.var_deac51dd) && ![[ params.var_deac51dd ]](self, unitrigger)) {
-            return 0;
+            return false;
         }
     } else if (isdefined(params.var_5301f4f1) && ![[ params.var_5301f4f1 ]](self, unitrigger)) {
-        return 0;
+        return false;
     }
     if (isdefined(params.var_e2ae1db1) && params.var_e2ae1db1 && !self util::is_player_looking_at(trigger.origin, params.var_2b18af9d, var_c060d2c8)) {
-        return 0;
+        return false;
     }
     if (unitrigger.script_unitrigger_type == "unitrigger_radius_use") {
         torigin = unitrigger zm_unitrigger::unitrigger_origin();
         porigin = self geteye();
         radius_sq = 2.25 * unitrigger.radius * unitrigger.radius;
         if (distance2dsquared(torigin, porigin) > radius_sq) {
-            return 0;
+            return false;
         }
     } else if (!isdefined(trigger) || !trigger istouching(self, vectorscale((1, 1, 1), 10))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_progress/zm_progress
@@ -268,9 +268,9 @@ function private function_4335011a(player, params, var_c060d2c8) {
     retval = undefined;
     retval = self waittill(#"progress_succeed", #"progress_failed");
     if (retval._notify == "progress_succeed") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_progress/zm_progress

@@ -58,20 +58,20 @@ function function_b7d4bfd9(var_4fa755f8, var_3f0e790b = 0) {
 // Size: 0xb8
 function function_b9f8bbd9(character_index, session_mode) {
     if (session_mode == 4) {
-        return 0;
+        return false;
     }
     if (!function_f4bf7e3f(character_index, session_mode)) {
-        return 0;
+        return false;
     }
     fields = getcharacterfields(character_index, session_mode);
     if (!isdefined(fields)) {
-        return 0;
+        return false;
     }
     scenes = function_b7d4bfd9(fields, session_mode);
     if (!isdefined(scenes) || scenes.size == 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace frontend/frontend
@@ -80,7 +80,7 @@ function function_b9f8bbd9(character_index, session_mode) {
 // Size: 0xe2
 function function_8d1cae0b(character_index, session_mode) {
     if (!function_b9f8bbd9(character_index, session_mode)) {
-        return 0;
+        return false;
     }
     if (session_mode == 3) {
         fields = getplayerrolefields(character_index, session_mode);
@@ -88,9 +88,9 @@ function function_8d1cae0b(character_index, session_mode) {
     }
     characterfields = getcharacterfields(character_index, session_mode);
     if (isdefined(characterfields.requireddvar) && !getdvarint(characterfields.requireddvar, 0)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace frontend/frontend
@@ -112,7 +112,7 @@ function function_e3efec59(xuid, session_mode) {
     } else {
         var_a2865de6 = getplayerroletemplatecount(session_mode);
         attempts = 0;
-        while (1) {
+        while (true) {
             character_index = randomint(var_a2865de6);
             if (function_8d1cae0b(character_index, session_mode)) {
                 break;
@@ -326,13 +326,13 @@ function setupclientmenus(localclientnum) {
 function blackscreen_watcher() {
     blackscreenuimodel = createuimodel(getglobaluimodel(), "hideWorldForStreamer");
     setuimodelvalue(blackscreenuimodel, 1);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"streamer_change");
         var_d0b01271 = waitresult.var_d0b01271;
         setuimodelvalue(blackscreenuimodel, 1);
         wait(0.1);
-        while (1) {
+        while (true) {
             charready = 1;
             if (isdefined(var_d0b01271)) {
                 charready = [[ var_d0b01271 ]]->is_streamed();
@@ -370,7 +370,7 @@ function handle_inspect_player(localclientnum, menu_name) {
     level thread scene::play("scene_frontend_inspection_camera", "inspection_full");
     level thread function_b885d47c(menu_name, localclientnum);
     level thread function_37304ace(localclientnum, menu_name);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"inspect_player");
         /#
@@ -461,7 +461,7 @@ function update_inspection_character(localclientnum, xuid, menu_name) {
 function function_37304ace(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hash_6d381d5ecca233c6");
         if (isdefined(waitresult.clear_weapon) && waitresult.clear_weapon) {
@@ -552,7 +552,7 @@ function function_c9f8c5e9(localclientnum) {
             var_34415027 = var_663588d + var_2b58d8c0 + scene.prt;
             adddebugcommand(localclientnum, "frontend" + var_34415027 + "cam_eyes" + i + "1e968675840551ec");
         }
-        while (1) {
+        while (true) {
             wait(0.1);
             var_879980c4 = getdvarint(#"hash_563d2a49168a665c", -1);
             if (var_879980c4 != var_408e7d77) {
@@ -812,7 +812,7 @@ function function_92087f1b(localclientnum) {
 function function_622b5dc0(localclientnum) {
     /#
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_af3e02adb15e8ec", 0) > 0) {
                 util::remove_devgui(localclientnum, "<unknown string>" + "<unknown string>");
                 level thread function_fb399a61(localclientnum);
@@ -865,7 +865,7 @@ function function_fb399a61(localclientnum) {
         }
         setdvar(#"char_render", "WZPersonalizeCharacterInspect");
         var_f7a528f2 = "WZPersonalizeCharacterInspect";
-        while (1) {
+        while (true) {
             wait(0.1);
             if (getdvarstring(#"char_render", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"char_render");
@@ -1029,7 +1029,7 @@ function function_db3c4c69(localclientnum) {
         var_c11ba901 = array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>");
         weapon_name = "WZPersonalizeCharacterInspect";
         var_f7a528f2 = "WZPersonalizeCharacterInspect";
-        while (1) {
+        while (true) {
             wait(0.1);
             if (getdvarstring(#"hash_1311d7636a782655", weapon_name) != weapon_name) {
                 weapon_name = getdvarstring(#"hash_1311d7636a782655");
@@ -1123,7 +1123,7 @@ function function_ea9a5e69(localclientnum) {
         }
         setdvar(#"hash_4243dd01393aa940", "WZPersonalizeCharacterInspect");
         var_f7a528f2 = "WZPersonalizeCharacterInspect";
-        while (1) {
+        while (true) {
             wait(0.1);
             if (getdvarstring(#"hash_4243dd01393aa940", var_f7a528f2) != var_f7a528f2) {
                 var_f7a528f2 = getdvarstring(#"hash_4243dd01393aa940");
@@ -1206,7 +1206,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
             case 1:
                 level thread scene::stop(#"scene_frontend_fxtrail_render");
             default:
-                continue;
+                break;
             }
         }
         level notify("<unknown string>" + localclientnum, {#status:"<unknown string>", #menu:"<unknown string>"});
@@ -1610,7 +1610,7 @@ function personalize_characters_watch(localclientnum, menu_name) {
     /#
         assert(isdefined(s_cam));
     #/
-    for (animtime = 0; 1; animtime = 300) {
+    for (animtime = 0; true; animtime = 300) {
         waitresult = undefined;
         waitresult = level waittill("camera_change" + localclientnum);
         pose = waitresult.pose;
@@ -1640,7 +1640,7 @@ function function_d9a44ae1(localclientnum, menu_name) {
         assert(isdefined(s_cam));
     #/
     playmaincamxcam(localclientnum, #"ui_cam_character_customization", 0, "cam_helmet", "", s_cam.origin, s_cam.angles);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill("choose_face_camera_change" + localclientnum);
         region = waitresult.param1;
@@ -1816,7 +1816,7 @@ function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e79
 // Checksum 0x2a3a77c4, Offset: 0x9a10
 // Size: 0x186
 function function_7c77108d(localclientnum, &var_13ef9467, var_63aea26e) {
-    for (i = 0; 1; i++) {
+    for (i = 0; true; i++) {
         target = struct::get(var_63aea26e + i);
         if (!isdefined(target)) {
             break;
@@ -1909,7 +1909,7 @@ function function_79b4e640(localclientnum) {
     self endon("514e2d4456d495c3");
     level endon(#"hash_73b4088ba8bf09ca");
     level endon(#"hash_4cfb73b5657634d1");
-    while (1) {
+    while (true) {
         level waittill(#"hash_5661859119127749");
         if (isdefined(level.var_202758dc) && isdefined(level.var_723bf922)) {
             function_a71254a9(localclientnum, 0, undefined, 1);
@@ -2026,7 +2026,7 @@ function function_f00ff0c7(localclientnum) {
     var_c7581878 = function_7c77108d(localclientnum, level.var_6f1da91a[0], "lobby_player" + var_6aeec2ad + "_");
     var_c7581878 = max(function_7c77108d(localclientnum, level.var_6f1da91a[1], "arena_player_"), var_c7581878);
     level.var_90fa1c3e = var_c7581878;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"lobby_change");
         if (level.lastlobbystate === "matchmaking" || level.lastlobbystate === "zm_online" || level.lastlobbystate === #"lobby_pose") {
@@ -2372,7 +2372,7 @@ function pulse_controller_color() {
     level endon(#"end_controller_pulse");
     delta_t = -0.01;
     t = 1;
-    while (1) {
+    while (true) {
         setallcontrollerslightbarcolor((1 * t, 0.2 * t, 0));
         t = t + delta_t;
         if (t < 0.2 || t > 0.99) {
@@ -2620,7 +2620,7 @@ function function_3e7aaaea(localclientnum, weapon_model, waitresult) {
     var_9d7ee952 = getdvarint(#"hash_41ef264ae8370dc7", 5);
     activecamoinfo = activecamo::function_ae141bf2(waitresult.activecamoindex);
     if (isdefined(activecamoinfo) && activecamoinfo.stages.size > 1) {
-        for (stage = 0; 1; stage = (stage + 1) % activecamoinfo.stages.size) {
+        for (stage = 0; true; stage = (stage + 1) % activecamoinfo.stages.size) {
             if (isdefined(level.var_324c3190[localclientnum])) {
                 weapon_model stoprenderoverridebundle(level.var_324c3190[localclientnum]);
                 level.var_324c3190[localclientnum] = undefined;
@@ -2650,7 +2650,7 @@ function function_98088878(localclientnum, menu_data) {
     playradiantexploder(localclientnum, "fxexp_mtx_ambient" + season);
     weapon_model = getent(localclientnum, "quartermaster_weapon", "targetname");
     var_7ef44086 = struct::get("tag_align_quartermaster_weapon");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"qmweaponupdate");
         if (isdefined(level.var_324c3190[localclientnum])) {
@@ -2817,7 +2817,7 @@ function function_ac9a8cf(localclientnum, menu_name, state) {
 function function_914198cd(localclientnum, var_d0b01271, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill("deathfx_update_" + localclientnum);
         switch (waitresult.event_name) {
@@ -2949,7 +2949,7 @@ function function_73b8462a(localclientnum, menu_name, state) {
     character_index = getuimodelvalue(var_a5454544);
     var_a2865de6 = getplayerroletemplatecount(session_mode);
     attempts = 0;
-    while (1) {
+    while (true) {
         if (!isdefined(character_index)) {
             character_index = 0;
         }

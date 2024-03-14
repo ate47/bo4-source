@@ -98,7 +98,7 @@ function function_eb218e8d() {
     /#
         self thread function_c7673785();
     #/
-    while (1) {
+    while (true) {
         self.health = 99999;
         if (self.origin[2] <= n_elev) {
             setdynentenabled(self, 0);
@@ -107,7 +107,7 @@ function function_eb218e8d() {
             } else {
                 getlocalplayers()[0] serverfield::set("billiard_ball_sunk_sf", self.script_int);
             }
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -120,7 +120,7 @@ function function_eb218e8d() {
 function private function_c7673785() {
     /#
         self endon(#"death");
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_3dcf262f16faced0", 0)) {
                 v_color = function_8a8a409b(self) ? (0, 1, 0) : (1, 0, 0);
                 print3d(self.origin + (0, 0, self.script_int), "<unknown string>" + self.script_int, v_color, undefined, 0.5);

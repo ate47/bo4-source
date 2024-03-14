@@ -306,14 +306,14 @@ function registertrench_dogs_coop_round() {
     case 1:
     default:
         level.var_9a7491e = 1.5;
-        return;
+        break;
     case 2:
     case 3:
         level.var_9a7491e = 2;
-        return;
+        break;
     case 4:
         level.var_9a7491e = 2.5;
-        return;
+        break;
     }
 }
 
@@ -329,14 +329,14 @@ function function_cf680b18() {
     case 1:
     default:
         level.var_cd345b49 = 1.5;
-        return;
+        break;
     case 2:
     case 3:
         level.var_cd345b49 = 2;
-        return;
+        break;
     case 4:
         level.var_cd345b49 = 3;
-        return;
+        break;
     }
 }
 
@@ -346,7 +346,7 @@ function function_cf680b18() {
 // Size: 0x110
 function function_39364bed() {
     str_next_defend = array::random(array(#"billiards_room", #"cellar", #"library"));
-    while (1) {
+    while (true) {
         zm_utility::function_11101458(str_next_defend);
         wait(45);
         s_defend_area = zm_utility::function_a877cd10(str_next_defend);

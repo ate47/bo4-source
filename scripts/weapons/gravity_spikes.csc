@@ -33,7 +33,7 @@ function __init__() {
 // Size: 0x54
 function updatedvars() {
     /#
-        while (1) {
+        while (true) {
             level.dirt_enable_gravity_spikes = getdvarint(#"scr_dirt_enable_gravity_spikes", level.dirt_enable_gravity_spikes);
             wait(1);
         }
@@ -50,7 +50,7 @@ function watchforgravityspikeexplosion() {
     }
     weapon_proximity = getweapon(#"hero_gravityspikes");
     var_55ee3ee6 = getweapon(#"eq_gravityslam");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"explode");
         weapon = waitresult.weapon;

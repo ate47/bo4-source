@@ -54,16 +54,16 @@ function function_2ce5cb7e() {
                 switch (stat.stattype) {
                 case #"playerstatslist":
                     if (!isdefined(stat.var_82670522)) {
-                        continue;
+                        break;
                     }
                     self.pers[#"hvo"][#"base"][stat.var_82670522] = self stats::get_stat_global(stat.var_82670522);
                     self.pers[#"hvo"][#"current"][stat.var_82670522] = self stats::get_stat_global(stat.var_82670522);
-                    continue;
+                    break;
                 case #"razorwireekia":
                     razorwireekia = self stats::get_stat_global(#"stats_concertina_wire_snared_kill") + self stats::get_stat_global(#"stats_concertina_wire_kill");
                     self.pers[#"hvo"][#"base"][stat.stattype] = razorwireekia;
                     self.pers[#"hvo"][#"current"][stat.stattype] = razorwireekia;
-                    continue;
+                    break;
                 case #"highestkillstreak":
                 case #"objectivescore":
                 case #"objectivetime":
@@ -73,7 +73,7 @@ function function_2ce5cb7e() {
                 default:
                     self.pers[#"hvo"][#"base"][stat.stattype] = 0;
                     self.pers[#"hvo"][#"current"][stat.stattype] = 0;
-                    continue;
+                    break;
                 }
             }
         }
@@ -115,27 +115,27 @@ function function_59d3154f() {
             switch (stat.stattype) {
             case #"playerstatslist":
                 if (!isdefined(stat.var_82670522)) {
-                    continue;
+                    break;
                 }
                 var_6fda3763 = self function_d0c02a50(stat, var_aa1fbd8c, stat.stattype);
                 var_d6155829[stat.var_82670522] = var_6fda3763;
-                continue;
+                break;
             case #"razorwireekia":
                 razorwireekia = self stats::get_stat_global(#"stats_concertina_wire_snared_kill") + self stats::get_stat_global(#"stats_concertina_wire_kill");
                 self function_b535c32e(stat, razorwireekia, var_aa1fbd8c);
                 var_d6155829[stat.stattype] = razorwireekia;
-                continue;
+                break;
             case #"objectivescore":
             case #"objectivetime":
             case #"damagedone":
             case #"objectiveekia":
                 var_6fda3763 = self function_b535c32e(stat, self.pers[stat.stattype], var_aa1fbd8c);
                 var_d6155829[stat.stattype] = var_6fda3763;
-                continue;
+                break;
             case #"highestkillstreak":
                 var_6fda3763 = self.pers[#"cur_kill_streak"] - self.pers[#"hvo"][#"current"][#"highestkillstreak"];
                 self function_be94d98b(stat, var_6fda3763, var_aa1fbd8c);
-                continue;
+                break;
             }
         }
     }

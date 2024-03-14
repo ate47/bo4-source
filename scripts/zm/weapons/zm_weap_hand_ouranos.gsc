@@ -82,7 +82,7 @@ function on_player_connect() {
 // Size: 0x108
 function function_3f8da82c() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         if (s_notify.weapon === level.w_hand_ouranos_uncharged) {
@@ -158,7 +158,7 @@ function function_7e141cb5(weapon) {
 // Size: 0xf2
 function function_54922a21() {
     self endon(#"death", #"weapon_change");
-    while (1) {
+    while (true) {
         while ((self.chargeshotlevel != 2 || !self attackbuttonpressed()) && (self.currentweapon === level.w_hand_ouranos || self.currentweapon === level.w_hand_ouranos_upgraded)) {
             waitframe(1);
         }
@@ -243,35 +243,35 @@ function function_56a040a5(b_up) {
 // Size: 0x2ea
 function is_valid_target(e_target, n_range) {
     if (zm_utility::is_magic_bullet_shield_enabled(e_target)) {
-        return 0;
+        return false;
     }
     if (isdefined(e_target.var_827f6f4a) && e_target.var_827f6f4a) {
-        return 0;
+        return false;
     }
     if (isdefined(e_target.marked_for_death) && e_target.marked_for_death) {
-        return 0;
+        return false;
     }
     if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 32), 0.3, 1, self))) {
-        return 1;
+        return true;
     }
     if (isdefined(e_target.fake_death) && e_target.fake_death) {
-        return 0;
+        return false;
     }
     if (!isalive(e_target)) {
-        return 0;
+        return false;
     }
     if (distance2dsquared(self.origin, e_target.origin) > n_range * n_range) {
-        return 0;
+        return false;
     }
     var_c060d2c8 = !(isdefined(level.var_58f509b6) && level.var_58f509b6);
     if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 28), 0.9, var_c060d2c8, self)) {
-        return 0;
+        return false;
     }
     v_org = self gettagorigin("j_head");
     if (isdefined(v_org) && self zm_utility::is_player_looking_at(v_org, 0.9, 1, self)) {
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_hand_ouranos/zm_weap_hand_ouranos
@@ -538,13 +538,13 @@ function ouranos_feather_hit(oldval, newval) {
         switch (newval) {
         case 1:
             self thread zm_red_ww_quests::function_759247cd(#"hash_2ffae388c1cf246e");
-            return;
+            break;
         case 2:
             self thread zm_red_ww_quests::function_759247cd(#"hash_4634a6e71b6a75e7");
-            return;
+            break;
         case 3:
             self thread zm_red_ww_quests::function_759247cd(#"hash_3a4532026857cf6");
-            return;
+            break;
         }
     }
 }
@@ -612,7 +612,7 @@ function function_cf3b7cef() {
 // Size: 0x80
 function function_a2065170() {
     self endon(#"death", #"weapon_change", #"stop_beaming", #"weapon_fired");
-    while (1) {
+    while (true) {
         if (self meleebuttonpressed()) {
             self notify(#"stop_beaming");
         }
@@ -636,7 +636,7 @@ function function_1e39fbc5(weapon) {
         }
         w_hand = self getcurrentweapon();
         if (w_hand != weapon) {
-            return;
+            break;
         }
         self setweaponammoclip(weapon, n_ammo);
         if (n_ammo < 1) {
@@ -674,7 +674,7 @@ function function_c7732ae7(w_curr) {
         n_range = 2150;
     }
     wait(0.3);
-    while (1) {
+    while (true) {
         a_e_targets = zm_hero_weapon::function_7c3681f7();
         foreach (e_target in a_e_targets) {
             if (isalive(e_target) && self is_valid_target(e_target, n_range) && !(isdefined(e_target.var_8ac7cc49) && e_target.var_8ac7cc49)) {
@@ -770,7 +770,7 @@ function function_7a1456c5(e_target) {
 // Size: 0x138
 function function_d54becbd() {
     self endon(#"death", #"stop_slow");
-    while (1) {
+    while (true) {
         wait(randomfloatrange(1, 2.5));
         n_rand = randomint(3);
         if (n_rand == 2 && self.archetype !== #"catalyst") {

@@ -56,7 +56,7 @@ function init_clientfields() {
 function function_3653f153(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self util::waittill_dobj(localclientnum);
-        while (1) {
+        while (true) {
             wait(10);
             function_d11e8e8d(localclientnum);
             function_5200214e(localclientnum);

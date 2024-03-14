@@ -68,7 +68,7 @@ function function_21304ee6(params) {
         wait(0.5);
     }
     guardian startmicrowave();
-    while (1) {
+    while (true) {
         guardian.turretrotscale = 1;
         if (isdefined(guardian.enemy) && isalive(guardian.enemy) && guardian cansee(guardian.enemy)) {
             guardian turretsettarget(0, guardian.enemy);

@@ -86,10 +86,10 @@ function other_local_player_still_alive() {
             continue;
         }
         if (isalive(level.players[index])) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace spectating/spectating
@@ -243,9 +243,9 @@ function set_permissions_for_machine() {
 function function_7d15f599() {
     livesleft = !(level.numlives && !self.pers[#"lives"]);
     if (!level.alivecount[self.team] && !livesleft) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace spectating/spectating

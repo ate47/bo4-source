@@ -70,7 +70,7 @@ function function_ab834b07(player) {
     } else {
         self sethintstring(self.stub.hint_string);
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_util/zm_mansion_util
@@ -231,18 +231,18 @@ function function_ebad0e52(var_88f1eaa8) {
 // Size: 0x76
 function is_valid() {
     if (self zm_utility::in_revive_trigger()) {
-        return 0;
+        return false;
     }
     if (self zm_utility::is_drinking()) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_564dec14) && self.var_564dec14) {
-        return 0;
+        return false;
     }
     if (!zm_utility::is_player_valid(self)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_util/zm_mansion_util
@@ -276,7 +276,7 @@ function waittill_player_nearby(e_player, var_5a365909 = 0) {
             return;
         }
     #/
-    for (var_9d3d31a = 0; 1; var_9d3d31a = 0) {
+    for (var_9d3d31a = 0; true; var_9d3d31a = 0) {
         if (isdefined(e_player)) {
             if (var_5a365909) {
                 if (isdefined(e_player.b_is_designated_target) && e_player.b_is_designated_target && distance2dsquared(self.origin, e_player.origin) <= 150 * 150 && e_player util::is_player_looking_at(self.origin, 0.1, 0, self)) {
@@ -321,7 +321,7 @@ function function_6a523c8c(v_wobble = (0, 0, 1)) {
     if (!isdefined(self.v_start_angles)) {
         self.v_start_angles = self.angles;
     }
-    while (1) {
+    while (true) {
         n_pitch = randomint(4) + 2;
         self moveto(self.origin + v_wobble, 0.35);
         self rotatepitch(n_pitch, 0.35);
@@ -355,7 +355,7 @@ function function_43ac0bb7(str_notify) {
 function function_da5cd631(v_spin = vectorscale((0, 0, 1), 180)) {
     self endon(#"death", #"stop_spin");
     self notify(#"finish_wobble");
-    for (n_wait = 6; 1; n_wait = max(n_wait - 0.25, 0.25)) {
+    for (n_wait = 6; true; n_wait = max(n_wait - 0.25, 0.25)) {
         self rotateto(self.angles + v_spin, n_wait);
         self waittill(#"rotatedone");
     }
@@ -492,7 +492,7 @@ function function_f3d694d6(player) {
     } else {
         self sethintstringforplayer(player, "");
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_util/zm_mansion_util
@@ -514,7 +514,7 @@ function function_4aea06b0(b_disable = 1) {
 // Checksum 0xe50712d, Offset: 0x1fc0
 // Size: 0xe
 function return_false(player) {
-    return 0;
+    return false;
 }
 
 // Namespace mansion_util/zm_mansion_util
@@ -580,10 +580,10 @@ function function_5904a8e1() {
 function function_98ca58fc(e_trigger) {
     foreach (player in util::get_active_players()) {
         if (player istouching(e_trigger) && !player laststand::player_is_in_laststand()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mansion_util/zm_mansion_util
@@ -705,9 +705,9 @@ function function_5f310cf9() {
 // Size: 0x3e
 function is_shield(w_current) {
     if (isdefined(w_current) && isdefined(w_current.isriotshield) && w_current.isriotshield) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mansion_util/zm_mansion_util
@@ -805,7 +805,7 @@ function function_bb613572(a_s_spawns, a_str_endons, n_spawn_delay = 1, n_round 
     var_e8711f44 = 14 + n_players * 2;
     a_sp_zombies = getspawnerarray("spawner_zm_zombie", "targetname");
     var_7c332548 = arraycopy(a_s_spawns);
-    while (1) {
+    while (true) {
         while (getaiteamarray(level.zombie_team).size >= var_e8711f44 || level flag::get(#"hash_29b12646045186fa")) {
             wait(0.5);
         }
@@ -831,10 +831,10 @@ function function_bb613572(a_s_spawns, a_str_endons, n_spawn_delay = 1, n_round 
 function any_player_looking_at(v_origin, n_dot, b_do_trace, e_ignore) {
     foreach (e_player in getplayers()) {
         if (e_player util::is_player_looking_at(v_origin, n_dot, b_do_trace, e_player)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mansion_util/zm_mansion_util

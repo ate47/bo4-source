@@ -94,7 +94,7 @@ function player_init(localclientnum) {
 // Size: 0x108
 function snddoublejump_watcher() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"doublejump_start");
         trace = tracepoint(self.origin, self.origin - vectorscale((0, 0, 1), 100000));
         trace_surface_type = trace[#"surfacetype"];
@@ -266,7 +266,7 @@ function soundrandom_thread(localclientnum, randsound) {
     }
     randsound.playing = 1;
     level thread soundrandom_notifywait(notify_name, randsound);
-    while (1) {
+    while (true) {
         wait(randomfloatrange(randsound.script_wait_min, randsound.script_wait_max));
         if (isdefined(randsound.script_sound) && isdefined(randsound.playing) && randsound.playing) {
             playsound(localclientnum, randsound.script_sound, randsound.origin);
@@ -284,7 +284,7 @@ function soundrandom_thread(localclientnum, randsound) {
 // Checksum 0x9c6fc328, Offset: 0x1520
 // Size: 0x72
 function soundrandom_notifywait(notify_name, randsound) {
-    while (1) {
+    while (true) {
         level waittill(notify_name);
         if (isdefined(randsound.playing) && randsound.playing) {
             randsound.playing = 0;
@@ -552,7 +552,7 @@ function function_a3010aae(ent, on_enter_payload, on_exit_payload) {
 // Size: 0xc6
 function audio_step_trigger(localclientnum) {
     var_887fc615 = self getentitynumber();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (!waitresult.activator trigger::ent_already_in(var_887fc615)) {
@@ -844,7 +844,7 @@ function snd_print_fx_id(fxid, type, ent) {
 // Checksum 0x4cb73f09, Offset: 0x3010
 // Size: 0x10e
 function debug_line_emitter() {
-    while (1) {
+    while (true) {
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
                 line(self.start, self.end, (0, 1, 0));
@@ -866,7 +866,7 @@ function move_sound_along_line() {
     /#
         self thread debug_line_emitter();
     #/
-    while (1) {
+    while (true) {
         self closest_point_on_line_to_point(getlocalclientpos(0), self.start, self.end);
         if (isdefined(self.fake_ent)) {
             self.fake_ent.origin = self.origin;
@@ -943,7 +943,7 @@ function snd_underwater(localclientnum) {
             self underwaterend();
         }
     }
-    while (1) {
+    while (true) {
         underwaternotify = undefined;
         underwaternotify = self waittill(#"underwater_begin", #"underwater_end", #"swimming_begin", #"swimming_end", #"death", #"sndenduwwatcher");
         if (underwaternotify._notify == "death") {
@@ -1144,7 +1144,7 @@ function sndrattle_server(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Checksum 0x28f24a1, Offset: 0x3ce0
 // Size: 0x80
 function sndrattle_grenade_client() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"explode");
         level thread dorattle(waitresult.position, waitresult.weapon.soundrattlerangemin, waitresult.weapon.soundrattlerangemax);
@@ -1223,7 +1223,7 @@ function sndkillcam() {
 // Checksum 0xc4cf332d, Offset: 0x4028
 // Size: 0x40
 function snddeath_activate() {
-    while (1) {
+    while (true) {
         level waittill(#"sndded");
         snd_set_snapshot("mpl_death");
     }
@@ -1234,7 +1234,7 @@ function snddeath_activate() {
 // Checksum 0x17298893, Offset: 0x4070
 // Size: 0x40
 function snddeath_deactivate() {
-    while (1) {
+    while (true) {
         level waittill(#"snddede");
         snd_set_snapshot("default");
     }
@@ -1245,7 +1245,7 @@ function snddeath_deactivate() {
 // Checksum 0xf095c01f, Offset: 0x40b8
 // Size: 0x28
 function sndfinalkillcam_activate() {
-    while (1) {
+    while (true) {
         level waittill(#"sndfks");
     }
 }
@@ -1255,7 +1255,7 @@ function sndfinalkillcam_activate() {
 // Checksum 0x2b630ad4, Offset: 0x40e8
 // Size: 0x28
 function sndfinalkillcam_slowdown() {
-    while (1) {
+    while (true) {
         level waittill(#"sndfksl");
     }
 }
@@ -1265,7 +1265,7 @@ function sndfinalkillcam_slowdown() {
 // Checksum 0x5bd3f2b3, Offset: 0x4118
 // Size: 0x40
 function sndfinalkillcam_deactivate() {
-    while (1) {
+    while (true) {
         level waittill(#"sndfke");
         snd_set_snapshot("default");
     }
@@ -1408,7 +1408,7 @@ function sndsprintbreath(localclientnum) {
         if (!isdefined(var_63112f76) || !isdefined(var_dfb6f570)) {
             return;
         }
-        while (1) {
+        while (true) {
             if (isdefined(self)) {
                 if (self isplayersprinting()) {
                     self thread sndbreathstart(var_63112f76);
@@ -1446,7 +1446,7 @@ function function_d6bc7279(sound) {
     self endon(#"death");
     self endon(#"hash_4e899fa9b2775b4d");
     self.var_29054134 = 1;
-    while (1) {
+    while (true) {
         self playsound(0, sound);
         wait(2.5);
     }
@@ -1482,7 +1482,7 @@ function function_5da61577(localclientnum) {
 // Size: 0xb8
 function function_bd07593a() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (self util::is_on_side(#"allies")) {
             if (self isplayersprinting()) {
                 self playsound(0, #"hash_2dc9c76844261d06");

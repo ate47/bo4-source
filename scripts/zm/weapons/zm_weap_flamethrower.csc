@@ -78,7 +78,7 @@ function function_ea05550b(localclientnum) {
 // Size: 0x15c
 function function_4e325cd6(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     self endon(#"death", #"hash_4a10e61d27734104");
-    while (1) {
+    while (true) {
         a_e_players = getlocalplayers();
         foreach (e_player in a_e_players) {
             if (!e_player util::function_50ed1561(localclientnum)) {

@@ -212,14 +212,14 @@ function analyze(params) {
 // Size: 0xbc
 function function_51cbae24(params) {
     if (params.targetheight < 18) {
-        return 0;
+        return false;
     }
     dir = vectornormalize(params.endpos - params.startpos);
     result = bullettrace(params.startpos, params.startpos + dir * 512, 0, self);
     if (result[#"surfacetype"] == "ladder") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot/bot_traversals

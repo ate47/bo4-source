@@ -43,7 +43,7 @@ function private on_localclient_connect(localclientnum) {
 // Size: 0x2cc
 function private function_53d906fd(localclientnum) {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         player = function_5c10bd79(localclientnum);
         show_fx = level clientfield::get("showSpectreSwordBeams");
         if (isdefined(level.var_5b2a8d88) && isdefined(player)) {

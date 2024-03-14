@@ -228,12 +228,12 @@ function add_fallback_spawnpoints(team, point_class) {
 // Size: 0x3a
 function function_1bc642b7() {
     if (game.switchedsides == 0) {
-        return 0;
+        return false;
     }
     if (level.spawnsystem.var_3709dc53 == 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace spawning/spawning_shared
@@ -262,12 +262,12 @@ function private is_spawn_trapped(team) {
         level.spawntraptriggertime = getgametypesetting(#"spawntraptriggertime");
     #/
     if (!level.rankedmatch) {
-        return 0;
+        return false;
     }
     if (isdefined(level.alivetimesaverage) && isdefined(level.alivetimesaverage[team]) && level.alivetimesaverage[team] != 0 && level.alivetimesaverage[team] < int(level.spawntraptriggertime * 1000)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace spawning/spawning_shared
@@ -285,10 +285,10 @@ function private function_e1a7c3d9(spawn_origin, spawn_angles) {
 // Size: 0x172
 function private use_start_spawns(predictedspawn) {
     if (isdefined(level.alwaysusestartspawns) && level.alwaysusestartspawns) {
-        return 1;
+        return true;
     }
     if (!(isdefined(level.usestartspawns) && level.usestartspawns)) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         spawnteam = self.pers[#"team"];
@@ -296,15 +296,15 @@ function private use_start_spawns(predictedspawn) {
             if (!predictedspawn) {
                 level.usestartspawns = 0;
             }
-            return 0;
+            return false;
         }
     } else if (isdefined(level.spawn_start[#"free"]) && level.aliveplayers[#"free"].size + level.spawningplayers[#"free"].size >= level.spawn_start[#"free"].size) {
         if (!predictedspawn) {
             level.usestartspawns = 0;
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace spawning/spawning_shared
@@ -488,12 +488,12 @@ function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn
 // Size: 0x46
 function private spawn_point_class_name_being_used(name) {
     if (!isdefined(level.spawn_point_class_names)) {
-        return 0;
+        return false;
     }
     if (isinarray(level.spawn_point_class_names, name)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace spawning/spawnpoints_update
@@ -595,7 +595,7 @@ function clear_spawn_points() {
 // Checksum 0x4b0916ec, Offset: 0x2468
 // Size: 0xe6
 function private update_spawn_points() {
-    while (1) {
+    while (true) {
         level flagsys::wait_till("spawnpoints_dirty");
         foreach (team, _ in level.teams) {
             rebuild_spawn_points(team);
@@ -627,7 +627,7 @@ function private update_explored_spawn_points() {
 function private update_explored_start_spawn_points_for_team(team) {
     level notify("update_explored_start_spawn_points_for_team" + string(team));
     level endon("update_explored_start_spawn_points_for_team" + string(team));
-    while (1) {
+    while (true) {
         if (!isdefined(level.spawn_start[team])) {
             wait(0.5);
             continue;
@@ -654,7 +654,7 @@ function private update_explored_start_spawn_points_for_team(team) {
             spawn_exploration_wait_for_one_frame();
         }
         if (allplayersspawned) {
-            return;
+            break;
         }
         wait(0.5);
     }
@@ -667,7 +667,7 @@ function private update_explored_start_spawn_points_for_team(team) {
 function private update_explored_spawn_points_for_team(team, explored_radius_sq) {
     level notify("update_explored_spawn_points_for_team" + string(team));
     level endon("update_explored_spawn_points_for_team" + string(team));
-    while (1) {
+    while (true) {
         if (!isdefined(level.teamspawnpoints[team])) {
             wait(1);
             continue;
@@ -700,15 +700,15 @@ function private update_explored_spawn_points_for_team(team, explored_radius_sq)
 // Size: 0xae
 function private should_update_exploration_for_player(spawnpoint, player) {
     if (!player flag::exists("spawn_exploration_active")) {
-        return 0;
+        return false;
     }
     if (!player flag::get("spawn_exploration_active") || player isplayinganimscripted() || player.sessionstate != "playing") {
-        return 0;
+        return false;
     }
     if (has_player_explored_spawn_point(spawnpoint, player)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace spawning/spawning_shared
@@ -885,7 +885,7 @@ function private _disable_spawn_points() {
     self endon(#"death");
     self notify(#"end_disable_spawn_points");
     self endon(#"end_disable_spawn_points");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         self.spawnpoints_enabled = undefined;
@@ -908,7 +908,7 @@ function private _enable_spawn_points() {
     self endon(#"death");
     self notify(#"end_enable_spawn_points");
     self endon(#"end_enable_spawn_points");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         self.spawnpoints_enabled = 1;
@@ -1236,7 +1236,7 @@ function spawnpoint_debug() {
         adddebugcommand("<unknown string>" + "<unknown string>" + "<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             spawnsystem_debug_command = getdvarstring(#"spawnsystem_debug_command");
             switch (spawnsystem_debug_command) {
             case #"next_best":

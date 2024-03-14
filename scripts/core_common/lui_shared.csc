@@ -447,7 +447,7 @@ function client_menus(localclientnum) {
     level endon(#"disconnect");
     level.var_a14cc36b[localclientnum] = array();
     clientmenustack = level.var_a14cc36b[localclientnum];
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill("menu_change" + localclientnum);
         menu_name = waitresult.menu;
@@ -517,7 +517,7 @@ function client_menus(localclientnum) {
 // Size: 0xb4
 function is_current_menu(localclientnum, menu_name, state = undefined) {
     if (!isdefined(level.var_a14cc36b[localclientnum]) || level.var_a14cc36b[localclientnum].size == 0) {
-        return 0;
+        return false;
     }
     return level.var_a14cc36b[localclientnum][0].menu_name === menu_name && (!isdefined(state) || level.var_a14cc36b[localclientnum][0].state === state);
 }

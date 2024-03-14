@@ -81,10 +81,10 @@ function watchtacinsertshutdown(localclientnum, fxhandle) {
 // Checksum 0xdf34d534, Offset: 0x4e0
 // Size: 0x5c
 function stopflareloopwatcher(looporigin) {
-    while (1) {
+    while (true) {
         if (!isdefined(self) || !isdefined(self.tacticalinsertionfx)) {
             audio::stoploopat("fly_tinsert_beep", looporigin);
-            return;
+            break;
         }
         wait(0.5);
     }
@@ -96,7 +96,7 @@ function stopflareloopwatcher(looporigin) {
 // Size: 0x88
 function checkforplayerswitch(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         level waittill(#"player_switch");
         if (isdefined(self.tacticalinsertionfx)) {
             stopfx(localclientnum, self.tacticalinsertionfx);

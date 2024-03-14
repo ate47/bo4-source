@@ -67,14 +67,14 @@ function main() {
 // Size: 0xb6
 function zombie_coast_adjust_percent() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"between_round_over");
         level waittill(#"between_round_over");
         if (level.var_b0a3611a > 0.1) {
             level.var_b0a3611a = level.var_b0a3611a - 0.05;
             if (level.var_b0a3611a <= 0.1) {
                 level.var_b0a3611a = 0.1;
-                return;
+                break;
             }
         }
     }
@@ -100,7 +100,7 @@ function zombie_check_riser() {
 // Size: 0xbc
 function zombie_water_out() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (e_water in level.a_e_water) {
             if (self istouching(e_water)) {
                 self zombie_entered_water();
@@ -129,16 +129,16 @@ function zombie_entered_water() {
 function zombie_water_move_slow() {
     switch (self.zombie_move_speed) {
     case #"walk":
-        return;
+        break;
     case #"run":
         self thread zombie_utility::set_zombie_run_cycle("walk");
-        return;
+        break;
     case #"sprint":
         self thread zombie_utility::set_zombie_run_cycle("run");
-        return;
+        break;
     case #"super_sprint":
         self thread zombie_utility::set_zombie_run_cycle("sprint");
-        return;
+        break;
     }
 }
 
@@ -148,7 +148,7 @@ function zombie_water_move_slow() {
 // Size: 0xfc
 function zombie_water_in() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self.b_in_water = 0;
         foreach (e_water in level.a_e_water) {
             if (self istouching(e_water)) {
@@ -207,15 +207,15 @@ function zombie_water_move_normal() {
     switch (self.zombie_move_speed) {
     case #"walk":
         self thread zombie_utility::set_zombie_run_cycle("run");
-        return;
+        break;
     case #"run":
         self thread zombie_utility::set_zombie_run_cycle("sprint");
-        return;
+        break;
     case #"sprint":
         self thread zombie_utility::set_zombie_run_cycle("super_sprint");
-        return;
+        break;
     case #"super_sprint":
-        return;
+        break;
     }
 }
 
@@ -241,7 +241,7 @@ function function_ea0c7ed8() {
     self endon("4c2bcc084cb1ca9b");
     level endon(#"end_game", #"freeze_mode");
     self endon(#"death", #"player_frozen");
-    while (1) {
+    while (true) {
         foreach (e_water in level.a_e_water) {
             if (self istouching(e_water) && !self laststand::player_is_in_laststand()) {
                 self function_b52931e7();
@@ -300,7 +300,7 @@ function function_26a271e6() {
 function function_4ab00cab() {
     level endon(#"end_game");
     self endon(#"death", #"player_frozen");
-    while (1) {
+    while (true) {
         wait(0.1);
         foreach (e_water in level.a_e_water) {
             if (!self istouching(e_water) || self laststand::player_is_in_laststand()) {
@@ -339,7 +339,7 @@ function function_6577cacc() {
     if (!isdefined(self.var_36a93d1)) {
         self.var_36a93d1 = 0;
     }
-    while (1) {
+    while (true) {
         wait(1);
         self.var_36a93d1++;
         if (self.var_2e6aa97d === 1) {
@@ -371,7 +371,7 @@ function function_6577cacc() {
 function function_121f8a53() {
     level endon(#"end_game");
     self endon(#"death", #"hash_668824b34b3076bc");
-    while (1) {
+    while (true) {
         self dodamage(20, self.origin);
         wait(1);
     }
@@ -387,7 +387,7 @@ function function_d2dd1f2b() {
     if (!isdefined(self.var_36a93d1) || self.var_36a93d1 == 0) {
         return;
     }
-    while (1) {
+    while (true) {
         wait(1);
         self.var_36a93d1--;
         if (self.var_36a93d1 <= 0) {
@@ -570,7 +570,7 @@ function function_26234f4c(str_notify) {
 // Size: 0x92
 function function_872ec0b2(t_ice) {
     self endon(#"death", #"hash_53bfad7081c69dee");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = t_ice waittill(#"damage");
         if (s_notify.attacker === self) {
@@ -641,7 +641,7 @@ function function_142c254b() {
 function function_e8485ac0() {
     self endon(#"death");
     n_counter = 0;
-    while (1) {
+    while (true) {
         wait(0.1);
         n_counter = n_counter + 0.1;
         if (n_counter >= 1) {
@@ -760,7 +760,7 @@ function function_615d3be0() {
     level endon(#"end_game");
     a_s_float_path = array::get_all_closest(self.origin, level.a_s_float_path);
     var_98698d94 = a_s_float_path[0];
-    while (1) {
+    while (true) {
         var_7c1bf084 = self function_e2d41c8d(var_98698d94);
         self.e_tag moveto(var_98698d94.origin, var_7c1bf084);
         self.e_tag waittill(#"movedone");
@@ -790,7 +790,7 @@ function water_debug_hud_elem_thread(player) {
     /#
         player endon(#"death");
         self thread update_hud_elem(player);
-        while (1) {
+        while (true) {
             if (isdefined(player.b_in_water)) {
                 self setvalue(player.b_in_water);
                 println("<unknown string>" + player getentitynumber() + "<unknown string>");
@@ -807,7 +807,7 @@ function water_debug_hud_elem_thread(player) {
 function update_hud_elem(player) {
     /#
         player endon(#"death");
-        while (1) {
+        while (true) {
             wait(0.1);
             player notify(#"update_frost_state");
         }

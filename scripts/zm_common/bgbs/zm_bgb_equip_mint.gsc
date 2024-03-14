@@ -54,11 +54,11 @@ function validation() {
     n_slot = self gadgetgetslot(var_ac6ee9a0);
     n_power = self gadgetpowerget(n_slot);
     if ((var_ac6ee9a0 == getweapon(#"tomahawk_t8") || var_ac6ee9a0 == getweapon(#"tomahawk_t8_upgraded")) && self function_36dfc05f(n_slot)) {
-        return 0;
+        return false;
     }
     if (n_stock_size < n_clip_size || n_power < 100) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

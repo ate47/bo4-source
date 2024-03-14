@@ -164,7 +164,7 @@ function function_1a9f3a91() {
         self.var_2a62e678 = undefined;
         self.var_64f51f65 = undefined;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change", #"hash_29c66728ccd27f03");
         if (isdefined(self.laststandpistol)) {

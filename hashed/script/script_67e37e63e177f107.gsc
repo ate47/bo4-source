@@ -130,7 +130,7 @@ function function_3f83eb6(params) {
 function function_e452a40c(params) {
     self endon(#"death");
     self setneargoalnotifydist(40);
-    while (1) {
+    while (true) {
         if (!isdefined(self.ai.var_a38db64f)) {
             waitframe(1);
             continue;
@@ -184,9 +184,9 @@ function function_64f7393f(params) {
 // Size: 0x1a
 function function_78b6454d() {
     if (gettime() > self.var_373d5c91) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_77b8863/namespace_77b8863
@@ -224,7 +224,7 @@ function function_ef0bfb9d() {
     self endon(#"death");
     self endon(#"change_state");
     wait(0.5);
-    while (1) {
+    while (true) {
         enemies = util::function_81ccf6d3(self.team);
         alltargets = arraysort(enemies, self function_d3a9800e(), 1);
         zombiesarray = getaiarchetypearray(#"zombie");
@@ -257,10 +257,10 @@ function function_413aacb3(target) {
             continue;
         }
         if (dustball.favoriteenemy === target) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_77b8863/namespace_77b8863

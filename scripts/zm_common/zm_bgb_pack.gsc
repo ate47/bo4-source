@@ -527,9 +527,9 @@ function global_cooldown(n_index) {
 function function_6f7d5230(n_index) {
     if (self.var_bd0d5874 && isdefined(self.bgb_pack[n_index]) && isdefined(level.bgb[self.bgb_pack[n_index]]) && !(isdefined(level.bgb[self.bgb_pack[n_index]].var_8b1ba43c) && level.bgb[self.bgb_pack[n_index]].var_8b1ba43c)) {
         self thread function_23b7cdd8(n_index);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb_pack/zm_bgb_pack
@@ -861,7 +861,7 @@ function function_73d4ab82(slot_index) {
 // Checksum 0xe18eeb8b, Offset: 0x2bf0
 // Size: 0x6
 function function_7a00e117() {
-    return 0;
+    return false;
 }
 
 // Namespace bgb_pack/zm_bgb_pack

@@ -119,16 +119,16 @@ function function_d85bd834() {
     switch (level.var_ab11c23d.var_3931cef9) {
     case 0:
         level.var_ab11c23d thread function_1aeab14e();
-        return;
+        break;
     case 1:
         level.var_ab11c23d thread lighthouse_freakout();
-        return;
+        break;
     case 2:
         level.var_ab11c23d thread function_92b102fc();
-        return;
+        break;
     case 3:
         level.var_ab11c23d thread function_dbad2f5a();
-        return;
+        break;
     }
 }
 
@@ -160,7 +160,7 @@ function function_1aeab14e() {
         self rotateto((10, self.angles[1] + 50, 0), var_14c78bd5);
         wait(var_14c78bd5);
     }
-    while (1) {
+    while (true) {
         self rotateto((10, self.angles[1] + 5, 0), var_223dfca3);
         wait(var_d4cb0c1);
     }
@@ -172,7 +172,7 @@ function function_1aeab14e() {
 // Size: 0xce
 function lighthouse_freakout() {
     self endon(#"death", #"hash_78fc5bbd712046b0");
-    while (1) {
+    while (true) {
         n_time = randomfloatrange(0.5, 1);
         self rotateto((randomintrange(-90, 90), randomintrange(-180, 180), randomintrange(-90, 90)), n_time);
         self waittill(#"rotatedone");
@@ -223,14 +223,14 @@ function function_45489835(str_flag) {
     switch (str_flag) {
     case #"power_on1":
         playsoundatposition(#"hash_5f9ff903d1e07acb", (0, 0, 0));
-        return;
+        break;
     case #"power_on2":
         playsoundatposition(#"hash_7bb9774ddb11bc9f", (0, 0, 0));
         playsoundatposition(#"hash_957e90e703a238a", (1311, -1971, 1102));
-        return;
+        break;
     case #"power_on3":
         playsoundatposition(#"hash_4760ffee46ef7f74", (0, 0, 0));
-        return;
+        break;
     }
 }
 
@@ -248,7 +248,7 @@ function function_320f5fb3() {
         if (isdefined(level.var_9a8dee15)) {
             level.var_9a8dee15 thread zm_orange_util::function_51b752a9(#"vox_power_switch_1_activate");
         }
-        return;
+        break;
     case 2:
         level thread zm_orange_pap::function_56db9cdc();
         if (zm_custom::function_901b751c(#"zmpowerstate") != 2) {
@@ -257,7 +257,7 @@ function function_320f5fb3() {
             level thread zm_orange_util::function_fd24e47f("vox_power_switch_2_activate");
         }
         level thread zm_orange_util::function_3d6809e9();
-        return;
+        break;
     case 3:
         level.var_6ed7c585 = 1;
         level thread zm_orange_pap::function_2401694f();
@@ -265,7 +265,7 @@ function function_320f5fb3() {
             wait(3);
             level.var_1c53964e thread zm_hms_util::function_6a0d675d("vox_power_switch_3_activate");
         }
-        return;
+        break;
     }
 }
 
@@ -299,13 +299,13 @@ function function_1baa684c(str_flag) {
     switch (str_flag) {
     case #"power_on1":
         level.var_3428b470 = struct::get("power_intro_1");
-        return;
+        break;
     case #"power_on2":
         level.var_3428b470 = struct::get("power_intro_2");
-        return;
+        break;
     case #"power_on3":
         level.var_3428b470 = struct::get("power_intro_3");
-        return;
+        break;
     }
 }
 
@@ -324,7 +324,7 @@ function function_ad646ef8(n_state) {
         switch (e_lighthouse.var_58df9892) {
         case 0:
             array::thread_all(level.var_f92c8836, &function_76adab5e);
-            return;
+            break;
         case 1:
             e_lighthouse notify(#"hash_6e9ab520bd7ba3c");
             function_d85bd834();
@@ -335,34 +335,34 @@ function function_ad646ef8(n_state) {
             e_lighthouse.activated_by_player = undefined;
             e_lighthouse.v_trap_target = undefined;
             e_lighthouse thread function_74b930af(n_cooldown, 2);
-            return;
+            break;
         case 2:
             array::thread_all(level.var_f92c8836, &function_76adab5e);
-            return;
+            break;
         case 3:
             e_lighthouse notify(#"hash_78fc5bbd712046b0");
             e_lighthouse thread function_71399d9c();
-            return;
+            break;
         case 4:
             e_lighthouse thread function_ef69a891(e_lighthouse.var_a5a067c5, e_lighthouse.var_d9ae30d6);
-            return;
+            break;
         case 5:
             e_lighthouse thread function_72ff128e(e_lighthouse.v_trap_target);
-            return;
+            break;
         case 6:
             e_lighthouse thread shoot_trap_target(e_lighthouse.v_trap_target, e_lighthouse.var_d9ae30d6);
-            return;
+            break;
         case 7:
             e_lighthouse.v_trap_target = undefined;
             e_lighthouse thread function_ea089392();
             e_lighthouse thread function_74b930af(3, 4);
-            return;
+            break;
         case 8:
             e_lighthouse thread function_74a24d00();
-            return;
+            break;
         case 9:
             e_lighthouse thread function_76ff758d();
-            return;
+            break;
         }
     }
 }
@@ -435,7 +435,7 @@ function function_74a24d00() {
 // Size: 0x60
 function function_18f63949() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (self.b_moving) {
             level.var_ab11c23d function_1b488412(self.origin, 0.1);
         }
@@ -572,7 +572,7 @@ function function_ef69a891(var_a5a067c5, e_activator) {
 // Size: 0x6e
 function function_ea089392() {
     self endon(#"death", #"hash_1aa56851d9d4ec0d");
-    while (1) {
+    while (true) {
         self function_27304b98(self.var_a5a067c5, 2);
         self waittill(#"rotatedone");
     }
@@ -682,7 +682,7 @@ function function_85d3d607(e_player) {
             break;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -691,7 +691,7 @@ function function_85d3d607(e_player) {
 // Size: 0x168
 function function_72d528e6() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -732,13 +732,13 @@ function function_76adab5e() {
     switch (level.var_ab11c23d.var_58df9892) {
     case 0:
         self.mdl_light setmodel("p8_zm_off_trap_switch_light");
-        return;
+        break;
     case 3:
         self.mdl_light setmodel("p8_zm_off_trap_switch_light_red_on");
-        return;
+        break;
     case 2:
         self.mdl_light setmodel("p8_zm_off_trap_switch_light_green_on");
-        return;
+        break;
     }
 }
 
@@ -798,7 +798,7 @@ function soapstone_watcher() {
     self endon(#"trap_done");
     var_76b556c9 = 0;
     var_dac21b13 = 0;
-    while (1) {
+    while (true) {
         if (isdefined(level.s_soapstone) && isdefined(level.s_soapstone.s_placement) && level.s_soapstone.s_placement.e_stone istouching(self)) {
             var_76b556c9 = var_76b556c9 + 0.1;
             if (var_76b556c9 >= 1) {
@@ -813,7 +813,7 @@ function soapstone_watcher() {
                     level.s_soapstone.s_placement.var_28f1732d clientfield::set("soapstone_start_fx", 2);
                     level.s_soapstone.s_placement.var_28f1732d setmodel("p8_zm_ora_soapstone_01_hot");
                 }
-                return;
+                break;
             }
         }
         wait(0.1);
@@ -878,7 +878,7 @@ function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"zm_orange_lighthouse_cmd", "<unknown string>");
             switch (str_command) {
@@ -904,7 +904,7 @@ function private devgui() {
 function function_f6d23861() {
     /#
         self endon(#"death");
-        while (1) {
+        while (true) {
             sphere(self.origin, 100, (1, 0, 0), 0.6, 0, 8, 1);
             waitframe(1);
         }

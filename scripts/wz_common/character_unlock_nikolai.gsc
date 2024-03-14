@@ -189,7 +189,7 @@ function function_3fbc7157(origin, radius) {
     /#
         self notify("<unknown string>");
         self endon("<unknown string>");
-        while (1) {
+        while (true) {
             circle(origin + vectorscale((0, 0, 1), 10), radius, (1, 0, 0), 0, 1, 1);
             waitframe(1);
         }

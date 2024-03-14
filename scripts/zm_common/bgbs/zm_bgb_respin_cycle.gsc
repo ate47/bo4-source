@@ -37,10 +37,10 @@ function validation() {
     for (i = 0; i < level.chests.size; i++) {
         chest = level.chests[i];
         if (isdefined(chest.zbarrier.weapon_model) && isdefined(chest.chest_user) && self == chest.chest_user) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_bgb_respin_cycle/zm_bgb_respin_cycle

@@ -633,14 +633,14 @@ function function_901c5ffe(str_loc, b_on) {
             showmiscmodels("engine_room_chillout_misc_models_not_iced");
             hidemiscmodels("engine_room_chillout_misc_models_iced");
         }
-        return;
+        break;
     case #"st":
         if (b_on) {
             level clientfield::set("state_rooms_chillout_decals", 0);
         } else {
             level clientfield::set("state_rooms_chillout_decals", 1);
         }
-        return;
+        break;
     case #"pro":
         if (b_on) {
             exploder::exploder("fxexp_s_p_bf_w");
@@ -650,7 +650,7 @@ function function_901c5ffe(str_loc, b_on) {
             level clientfield::set("promenade_chillout_decals", 1);
             hidemiscmodels("promenade_chillout_props");
         }
-        return;
+        break;
     case #"pd":
         if (b_on) {
             exploder::exploder("fxexp_pd_bf_w");
@@ -660,7 +660,7 @@ function function_901c5ffe(str_loc, b_on) {
             level clientfield::set("poop_deck_chillout_decals", 1);
             hidemiscmodels("poop_deck_chillout_props");
         }
-        return;
+        break;
     }
 }
 
@@ -1298,7 +1298,7 @@ function function_bb528a4b() {
             self.var_6a30a892 = var_3b922743;
         }
     }
-    while (1) {
+    while (true) {
         b_cancelled = 0;
         s_notify = undefined;
         s_notify = self.e_damage waittill(#"damage");
@@ -1347,7 +1347,7 @@ function function_bb528a4b() {
                 self scene::play(self.str_scene, "pain", self);
                 level thread function_f74b38da("zm_power_on_rumble");
             }
-            return;
+            break;
         }
     }
 }
@@ -1427,7 +1427,7 @@ function function_3d6eaad5() {
     self endon("470dfc850103a920");
     self.var_18acfe18 = 0;
     var_7350b8a6 = 0;
-    while (1) {
+    while (true) {
         b_cancelled = 0;
         s_notify = undefined;
         s_notify = self.e_damage waittill(#"damage");
@@ -1470,7 +1470,7 @@ function function_3d6eaad5() {
                 self scene::play(self.str_scene, "pain", self);
                 level thread function_f74b38da("zm_power_on_rumble");
             }
-            return;
+            break;
         }
     }
 }
@@ -1484,7 +1484,7 @@ function function_ae4a013d() {
     self.var_18acfe18 = 0;
     var_8ce07a9c = 0;
     var_7350b8a6 = 0;
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self.e_damage waittill(#"damage");
         n_damage = s_notify.amount;
@@ -1518,7 +1518,7 @@ function function_ae4a013d() {
             if (var_8ce07a9c) {
                 level notify(#"hash_38f29f9cb03586ea");
             }
-            return;
+            break;
         }
     }
 }
@@ -1549,7 +1549,7 @@ function function_542eeaa7(var_23cac703, var_890ce7a8 = 1) {
     self function_26e02ac9(0);
     self.var_57badb98 = 0;
     n_attack = 0;
-    while (1) {
+    while (true) {
         if (!(isdefined(self.var_575f3097) && self.var_575f3097)) {
             wait(randomfloatrange(9, 13));
         }
@@ -2034,7 +2034,7 @@ function function_f142f73c(var_1ee74d52, var_a3d1842b, var_6df65756) {
 function function_9520ea39(var_a3d1842b, var_6df65756 = 0) {
     level endon(#"hash_14400d2bff068132", #"intermission");
     self endon(#"hash_2bb8be6b846aed93");
-    while (1) {
+    while (true) {
         v_source = self gettagorigin("tag_fx_beam");
         v_target = level.var_90bda347.origin;
         a_beamtrace = beamtrace(v_source, v_target, 0, self, 1, 1);
@@ -2517,7 +2517,7 @@ function function_e3f1b159() {
 // Size: 0xf8
 function function_2b6b4a44() {
     level endon(#"hash_38f29f9cb03586ea", #"spawn_zombies", #"intermission");
-    while (1) {
+    while (true) {
         level notify(#"hash_6986218d09dc1cb2");
         util::wait_network_frame(randomintrange(1, 3));
         level function_e2f134ce();
@@ -2589,7 +2589,7 @@ function function_de60e752(var_533ac894) {
     a_s_spawnpoints = array::filter(a_s_spawnpoints, 0, &function_62b1d725);
     var_c5cc6b59 = array::randomize(a_s_spawnpoints);
     n_index = 0;
-    while (1) {
+    while (true) {
         while (getaiteamarray(level.zombie_team).size >= n_max_active_ai) {
             util::wait_network_frame();
         }
@@ -2634,18 +2634,18 @@ function function_e9b8eaff(e_attacker) {
 // Size: 0xe4
 function function_62b1d725(s_loc) {
     if (!isdefined(s_loc.script_noteworthy)) {
-        return 0;
+        return false;
     }
     if (s_loc.script_noteworthy === "spawn_location") {
-        return 1;
+        return true;
     }
     a_str_tokens = strtok(s_loc.script_noteworthy, " ");
     foreach (str_token in a_str_tokens) {
         if (str_token == "custom_spawner_entry") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_eye/zm_zodt8_eye
@@ -2677,7 +2677,7 @@ function function_f5b2d086() {
     var_e8ebec1d = array(#"hash_7c89b1397a38e3ad", #"hash_7c89ae397a38de94", #"hash_7c89af397a38e047", #"hash_7c89ac397a38db2e");
     level.var_8a64ef3a = 0;
     var_ffd2fe87 = 4 + level.var_f3c4bd00;
-    while (1) {
+    while (true) {
         if (getaiteamarray(level.zombie_team).size > 0 && level.var_8a64ef3a / getaiteamarray(level.zombie_team).size * 100 < var_ffd2fe87) {
             var_6c463143 = 1;
         } else {
@@ -2828,12 +2828,12 @@ function function_f6e1e56f(var_238eb6ec, var_b5a033fe = 0, var_533ac894) {
 // Size: 0x40
 function function_6c4ef5c9(s_loc) {
     if (!isdefined(s_loc.script_noteworthy)) {
-        return 0;
+        return false;
     }
     if (s_loc.script_noteworthy === "stoker_location") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zodt8_eye/zm_zodt8_eye
@@ -2897,7 +2897,7 @@ function function_770486e1(var_61e1a92c) {
     var_2208179c = struct::get_array(#"blightfather_spawn");
     var_7bb1ca00 = level.var_f3c4bd00;
     ai_blightfather = undefined;
-    while (1) {
+    while (true) {
         wait(randomfloatrange(20, 25));
         var_50e016a7 = level.var_83c0592c + var_61e1a92c;
         while (level.var_83c0592c <= var_50e016a7) {
@@ -2933,7 +2933,7 @@ function function_770486e1(var_61e1a92c) {
 function function_98198f98(str_archetype) {
     level endon(#"intermission");
     util::delay_notify(600, #"hash_20ba9a0874996fda");
-    while (1) {
+    while (true) {
         wait(0.5);
         b_wait = 0;
         a_ai = getaiarchetypearray(str_archetype);

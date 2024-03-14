@@ -71,10 +71,10 @@ function function_713b735(floor_num) {
             continue;
         }
         if (function_35babccd(player) == floor_num) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office_floors/zm_office_floors
@@ -182,10 +182,10 @@ function function_9dd97963(ent) {
 // Size: 0xa0
 function function_ee59e344(ent) {
     if (isdefined(level.elevator1.moving_to) && ent istouching(level.var_83225f64[0])) {
-        return 1;
+        return true;
     } else if (isdefined(level.elevator2.moving_to) && ent istouching(level.var_83225f64[1])) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

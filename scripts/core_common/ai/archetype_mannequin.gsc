@@ -63,24 +63,24 @@ function mannequinspawnsetup(entity) {
 // Size: 0x162
 function private mannequinshouldmelee(entity) {
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     if (distance2dsquared(entity.origin, entity.enemy.origin) > 64 * 64) {
-        return 0;
+        return false;
     }
     if (abs(entity.origin[2] - entity.enemy.origin[2]) > 72) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 45) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

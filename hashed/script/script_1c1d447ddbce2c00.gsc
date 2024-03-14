@@ -30,7 +30,7 @@ function nuked_population_sign_think() {
     var_50f6b3f4 rotateroll(n_step, 0.05);
     var_d02e9cd rotateroll(n_step, 0.05);
     level.population_count = 0;
-    while (1) {
+    while (true) {
         if (var_aa6e55d3 < level.total_zombies_killed - level.zombie_total_subtract) {
             n_ones--;
             n_time = set_dvar_float_if_unset("scr_dial_rotate_time", "0.5");

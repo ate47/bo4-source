@@ -115,10 +115,10 @@ function private function_edb72673(origin) {
     goal_pos = getclosestpointonnavmesh(origin, 200, 24);
     if (isdefined(goal_pos)) {
         self function_a57c34b7(goal_pos);
-        return 1;
+        return true;
     }
     self function_a57c34b7(self.origin);
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler
@@ -127,37 +127,37 @@ function private function_edb72673(origin) {
 // Size: 0x26e
 function function_29c22852(entity) {
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.marked_for_death)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.ignoremelee) && entity.ignoremelee) {
-        return 0;
+        return false;
     }
     if (abs(entity.origin[2] - entity.enemy.origin[2]) > 64) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.meleeweapon) && entity.meleeweapon !== level.weaponnone) {
         meleedistsq = entity.meleeweapon.aimeleerange * entity.meleeweapon.aimeleerange;
     }
     if (!isdefined(meleedistsq)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, entity.enemy.origin) > meleedistsq) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(entity.angles[1] - vectortoangles(entity.enemy.origin - entity.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
     if (!entity cansee(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (!tracepassedonnavmesh(entity.origin, isdefined(entity.enemy.last_valid_position) ? entity.enemy.last_valid_position : entity.enemy.origin, entity getpathfindingradius())) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_nova_crawler/zm_ai_nova_crawler

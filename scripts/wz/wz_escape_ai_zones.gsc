@@ -68,26 +68,26 @@ function function_6df0d3b6(zone_name) {
     switch (zone_name) {
     case #"paradegrounds":
         if (isdefined(level.var_f8f715a7) && level.var_f8f715a7) {
-            return 1;
+            return true;
         }
         break;
     case #"cellhouse":
         if (isdefined(level.var_81d13d70) && level.var_81d13d70) {
-            return 1;
+            return true;
         }
         break;
     case #"newindustries":
         if (isdefined(level.var_c62c0fea) && level.var_c62c0fea) {
-            return 1;
+            return true;
         }
         break;
     case #"global":
         if (isdefined(level.var_3195c89b) && level.var_3195c89b) {
-            return 1;
+            return true;
         }
         break;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_escape_ai_zones/wz_escape_ai_zones

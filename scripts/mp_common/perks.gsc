@@ -90,7 +90,7 @@ function monitorgpsjammer() {
     timesincedistancecheck = 0;
     previousorigin = self.origin;
     gpsjammerprotection = 0;
-    while (1) {
+    while (true) {
         /#
             graceperiods = self function_ee4a9054(#"grace_periods");
             minspeed = self function_ee4a9054(#"min_speed");
@@ -185,7 +185,7 @@ function monitorsengrenjammer() {
     timesincedistancecheck = 0;
     previousorigin = self.origin;
     sgjammerprotection = 0;
-    while (1) {
+    while (true) {
         /#
             graceperiods = getdvarint(#"perk_sgjammer_graceperiods", graceperiods);
             minspeed = getdvarint(#"perk_sgjammer_min_speed", minspeed);

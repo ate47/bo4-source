@@ -113,7 +113,7 @@ function gondola_hostmigration() {
     level endon(#"end_game");
     self notify("68c71342bd0612a7");
     self endon("68c71342bd0612a7");
-    while (1) {
+    while (true) {
         level waittill(#"host_migration_begin");
         a_players = getplayers();
         foreach (player in a_players) {
@@ -168,12 +168,12 @@ function link_player_to_gondola() {
 function function_9a8ab327() {
     if (isplayer(self) || isactor(self)) {
         if (isdefined(level.e_gondola) && isdefined(level.e_gondola.t_ride) && self istouching(level.e_gondola.t_ride)) {
-            return 1;
+            return true;
         } else {
-            return 0;
+            return false;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
@@ -182,15 +182,15 @@ function function_9a8ab327() {
 // Size: 0xf6
 function zombie_alcatraz_player_intersection_tracker_override(other_player) {
     if (isdefined(self.afterlife_revived) && self.afterlife_revived || isdefined(other_player.afterlife_revived) && other_player.afterlife_revived) {
-        return 1;
+        return true;
     }
     if (isdefined(self.is_on_gondola) && self.is_on_gondola && isdefined(level.e_gondola.is_moving) && level.e_gondola.is_moving) {
-        return 1;
+        return true;
     }
     if (isdefined(other_player.is_on_gondola) && other_player.is_on_gondola && isdefined(level.e_gondola.is_moving) && level.e_gondola.is_moving) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
@@ -203,16 +203,16 @@ function establish_gondola_door_definition(mdl_door) {
     switch (str_identifier) {
     case #"roof left":
         self.door_roof_left = mdl_door;
-        return;
+        break;
     case #"roof right":
         self.door_roof_right = mdl_door;
-        return;
+        break;
     case #"docks left":
         self.door_docks_left = mdl_door;
-        return;
+        break;
     case #"docks right":
         self.door_docks_right = mdl_door;
-        return;
+        break;
     }
 }
 
@@ -226,16 +226,16 @@ function establish_gondola_gate_definition(mdl_gate) {
     switch (str_identifier) {
     case #"roof left":
         self.gate_roof_left = mdl_gate;
-        return;
+        break;
     case #"roof right":
         self.gate_roof_right = mdl_gate;
-        return;
+        break;
     case #"docks left":
         self.gate_docks_left = mdl_gate;
-        return;
+        break;
     case #"docks right":
         self.gate_docks_right = mdl_gate;
-        return;
+        break;
     }
 }
 
@@ -248,16 +248,16 @@ function establish_gondola_landing_door_definition(mdl_door) {
     switch (str_identifier) {
     case #"roof left":
         self.landing_door_roof_left = mdl_door;
-        return;
+        break;
     case #"roof right":
         self.landing_door_roof_right = mdl_door;
-        return;
+        break;
     case #"docks left":
         self.landing_door_docks_left = mdl_door;
-        return;
+        break;
     case #"docks right":
         self.landing_door_docks_right = mdl_door;
-        return;
+        break;
     }
 }
 
@@ -270,16 +270,16 @@ function establish_gondola_landing_gate_definition(mdl_gate) {
     switch (str_identifier) {
     case #"roof left":
         self.landing_gate_roof_left = mdl_gate;
-        return;
+        break;
     case #"roof right":
         self.landing_gate_roof_right = mdl_gate;
-        return;
+        break;
     case #"docks left":
         self.landing_gate_docks_left = mdl_gate;
-        return;
+        break;
     case #"docks right":
         self.landing_gate_docks_right = mdl_gate;
-        return;
+        break;
     }
 }
 
@@ -391,7 +391,7 @@ function zipline_move_trigger_think() {
     self.in_use = 0;
     self.is_available = 1;
     self setcursorhint("HINT_NOICON");
-    while (1) {
+    while (true) {
         level flag::wait_till("gondola_at_" + self.script_string);
         self setvisibletoall();
         s_result = undefined;
@@ -458,7 +458,7 @@ function zipline_call_trigger_think() {
     } else if (self.script_string == "docks") {
         str_gondola_loc = "roof";
     }
-    while (1) {
+    while (true) {
         self sethintstring("");
         level flag::wait_till("gondola_at_" + str_gondola_loc);
         self notify(#"available");

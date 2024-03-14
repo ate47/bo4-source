@@ -77,8 +77,8 @@ function private range_check(inflictor, attacker, damage, flags, meansofdeath, w
 // Size: 0x62
 function function_23d15bf3(var_f85889ce) {
     if (isplayer(var_f85889ce) && distance2dsquared(var_f85889ce.origin, self.origin) <= 122500) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

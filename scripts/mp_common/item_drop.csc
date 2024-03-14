@@ -44,7 +44,7 @@ function __init__() {
 // Checksum 0xea29315e, Offset: 0x418
 // Size: 0x16c
 function private function_b8f6e02f() {
-    while (1) {
+    while (true) {
         item_world::function_1b11e73c();
         reset = isdefined(level flagsys::get(#"item_world_reset")) && level flagsys::get(#"item_world_reset");
         var_d68d9a4d = level.var_d49a1a10.size;
@@ -63,7 +63,7 @@ function private function_b8f6e02f() {
         }
         level.var_d49a1a10 = [];
         if (reset) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -135,12 +135,12 @@ function private function_67189b6b(localclientnum, newval) {
 // Size: 0x74
 function private function_1a45bc2a(item) {
     if (!isdefined(item)) {
-        return 0;
+        return false;
     }
     if (!isdefined(item.type) || item.type != #"scriptmover" && item.type != #"missile") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_drop/item_drop

@@ -183,7 +183,7 @@ function function_7ea86b26(a_ents) {
 // Size: 0x56
 function function_1220cf5(finger) {
     finger endon(#"stop_damage", #"death");
-    while (1) {
+    while (true) {
         destroy_equipment(finger);
         waitframe(1);
     }
@@ -202,27 +202,27 @@ function destroy_equipment(finger) {
                 switch (device.weapon.name) {
                 case #"eq_tripwire":
                     device [[ level.var_2e06b76a ]]();
-                    continue;
+                    break;
                 case #"trophy_system":
                     device [[ level.var_4f3822f4 ]]();
-                    continue;
+                    break;
                 case #"cymbal_monkey":
                     device [[ level.var_7c5c96dc ]]();
-                    continue;
+                    break;
                 case #"homunculus":
                     device [[ level.var_cc310d06 ]]();
-                    continue;
+                    break;
                 case #"eq_sensor":
                     device [[ level.var_9911d36f ]]();
-                    continue;
+                    break;
                 case #"eq_concertina_wire":
                     device [[ level.var_94029383 ]]();
-                    continue;
+                    break;
                 case #"gadget_supplypod":
                     device notify(#"death");
-                    continue;
+                    break;
                 default:
-                    continue;
+                    break;
                 }
             }
         }
@@ -237,10 +237,10 @@ function is_equipment(entity) {
     if (isdefined(entity.weapon)) {
         weapon = entity.weapon;
         if (weapon.name === #"ability_smart_cover" || weapon.name === #"eq_tripwire" || weapon.name === #"trophy_system" || weapon.name === #"eq_concertina_wire" || weapon.name === #"eq_sensor" || weapon.name === #"cymbal_monkey" || weapon.name === #"gadget_supplypod" || weapon.name === #"homunculus") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mp_austria_scripted/mp_austria_scripted
@@ -341,7 +341,7 @@ function function_3f6f8daa() {
     var_ef876e79[10] = "vox_germ_german_radio_9";
     var_f38c4599 = (2765, 2335, 701);
     speaker = util::spawn_model(#"tag_origin", var_f38c4599);
-    while (1) {
+    while (true) {
         foreach (var_22082d80 in var_ef876e79) {
             if (!isdefined(speaker)) {
                 return;
@@ -407,7 +407,7 @@ function function_77156d1e() {
     var_a6f9d9b4 = array::randomize(var_a6f9d9b4);
     var_f38c4599 = (3950, -957, 686);
     speaker = util::spawn_model(#"tag_origin", var_f38c4599);
-    while (1) {
+    while (true) {
         foreach (list in var_a6f9d9b4) {
             foreach (line in list) {
                 if (!isdefined(speaker)) {

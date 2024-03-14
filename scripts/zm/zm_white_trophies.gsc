@@ -82,7 +82,7 @@ function function_e0aaa050() {
 function function_f37ba127() {
     level endon(#"game_ended", #"hash_5aa1c9627e8626e0");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"hash_13f3f231b45420ef");
         if (waitresult.e_player === self) {
@@ -218,7 +218,7 @@ function function_48f916b(params) {
 function function_5e1138a2() {
     level endon(#"hash_5aa1c9627e8626e0");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"perk_bought");
         if (isdefined(waitresult.n_slot)) {
@@ -250,7 +250,7 @@ function function_5e1138a2() {
 // Size: 0x82
 function perk_watcher() {
     self endon(#"hash_1305a28597a2e439", #"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"perk_bought");
         if (isdefined(waitresult.n_slot)) {
@@ -266,10 +266,10 @@ function perk_watcher() {
 function function_91cfddc4() {
     foreach (bought in self.var_c9f12812) {
         if (!bought) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_trophies/zm_white_trophies
@@ -278,7 +278,7 @@ function function_91cfddc4() {
 // Size: 0x1e2
 function function_df71a9b9() {
     level endon(#"game_ended", #"hash_5aa1c9627e8626e0");
-    while (1) {
+    while (true) {
         waitresults = undefined;
         waitresults = level waittill(#"hash_4543ba0bff75332e");
         e_attacker = waitresults.e_player;

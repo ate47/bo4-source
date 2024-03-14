@@ -108,7 +108,7 @@ function watch_player_drowning() {
         underwaterbreathtime = int([[ level.var_ac6052e9 ]]("underwaterBreathTime", 1) * 1000);
         exertbuffer = [[ level.var_ac6052e9 ]]("playerExertBuffer", 1);
     }
-    while (1) {
+    while (true) {
         waitframe(1);
         underwater = (game.state == "pregame" || game.state == "playing") && self isplayerunderwater();
         var_790acff6 = isdefined(level.var_8e910e84) && level.var_8e910e84 && self inlaststand() && getwaterheight(self.origin) > self getplayercamerapos()[2];

@@ -96,7 +96,7 @@ function function_6868fab3(localclientnum, oldval, newval, bnewent, binitialsnap
         arrayinsert(level.tripwire.wires, self, level.tripwire.wires.size);
         self callback::on_shutdown(&function_6230a8a5);
         self thread function_55c50f15();
-        return;
+        break;
     case 2:
     case 3:
         foreach (beam_id in level.tripwire.localclients[localclientnum].beams) {
@@ -106,7 +106,7 @@ function function_6868fab3(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         level.tripwire.localclients[localclientnum].beams = [];
         self thread function_55c50f15();
-        return;
+        break;
     }
 }
 
@@ -124,9 +124,9 @@ function function_6230a8a5(localclientnum) {
 // Size: 0x30
 function function_a4b3da97(trace) {
     if (trace[#"fraction"] < 1) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
@@ -200,15 +200,15 @@ function function_9233eb94(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_2a919ef0(localclientnum) {
     currentoffhand = function_e9fe14ee(localclientnum);
     if (level.var_c27600b0 != currentoffhand) {
-        return 0;
+        return false;
     }
     if (!function_96d4f30e(localclientnum)) {
-        return 0;
+        return false;
     }
     if (!function_182a2ad3(localclientnum)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace gadget_tripwire/gadget_tripwire
@@ -223,7 +223,7 @@ function function_17d973ec(localclientnum) {
     level.tripwire.localclients[localclientnum].previs = 0;
     var_9480bc93 = 0;
     level.var_41427f32 = undefined;
-    while (1) {
+    while (true) {
         var_9480bc93 = level.tripwire.localclients[localclientnum].previs;
         level.tripwire.localclients[localclientnum].previs = function_2a919ef0(localclientnum);
         if (level.tripwire.localclients[localclientnum].previs) {
@@ -344,18 +344,18 @@ function update_previs(localclientnum) {
 // Size: 0x14a
 function function_26c580d9(localclientnum, tripwire, trace, var_f2edf308) {
     if (isdefined(level.tripwire.localclients[localclientnum].model.hitent) && isplayer(level.tripwire.localclients[localclientnum].model.hitent)) {
-        return 0;
+        return false;
     }
     if (distancesquared(tripwire.origin, self.origin) < 100) {
-        return 0;
+        return false;
     }
     if (distancesquared(tripwire.origin, self.origin) > level.var_c72e8c51.var_831055cb * level.var_c72e8c51.var_831055cb) {
-        return 0;
+        return false;
     }
     if (!self function_a4b3da97(trace) || !self function_a4b3da97(var_f2edf308)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace gadget_tripwire/gadget_tripwire

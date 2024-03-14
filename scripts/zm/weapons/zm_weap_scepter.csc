@@ -174,7 +174,7 @@ function flash_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldna
         } else if (isdefined(self gettagorigin("tag_flash"))) {
             self.fx_muzzle_flash = util::playfxontag(localclientnum, level._effect[var_a1f103c8], self, "tag_flash");
         }
-        return;
+        break;
     }
 }
 
@@ -324,13 +324,13 @@ function scepter_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsna
         switch (newvalue) {
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_scepter_melee_rumble");
-            return;
+            break;
         case 5:
             self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_rumble");
-            return;
+            break;
         case 6:
             self playrumbleonentity(localclientnum, "zm_weap_scepter_ray_hit_rumble");
-            return;
+            break;
         }
     }
 }

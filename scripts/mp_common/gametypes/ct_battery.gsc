@@ -346,7 +346,7 @@ function function_62449dad() {
     level endon(#"game_ended");
     var_df0dfc2d = self.var_6982e1d6 * self.var_6982e1d6;
     level.heli_turretreloadtime = 5;
-    while (1) {
+    while (true) {
         if (isdefined(self.primarytarget)) {
             self.primarytarget.antithreat = undefined;
             self.turrettarget = self.primarytarget;
@@ -604,7 +604,7 @@ function function_ab637f96(waittime, var_f49cf7e0 = 0) {
 function function_40c7d949(n_range = 2000) {
     self endon(#"hash_1ef47c427ec739d7");
     var_d6326c12 = n_range * n_range;
-    while (1) {
+    while (true) {
         if (isdefined(self.primarytarget) && distance2dsquared(self.origin, self.primarytarget.origin) > var_d6326c12) {
             self notify(#"chase_target");
         }
@@ -963,7 +963,7 @@ function function_9be2d75f() {
 // Size: 0x96
 function function_7dbf5593() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"grenade_launcher_fire");
         if (self util::gadget_is_in_use(2)) {
@@ -981,7 +981,7 @@ function function_7dbf5593() {
 // Size: 0xd6
 function function_4674d2e7() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = level waittill(#"hash_788c0d72802f35af");
         var_1c5e8282 = distance(self.origin, s_notify.v_loc);
@@ -1082,7 +1082,7 @@ function function_868cd9ac() {
             adddebugcommand("<unknown string>");
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_16e650a0fe963515", "<unknown string>");
             if (cmd == "<unknown string>") {

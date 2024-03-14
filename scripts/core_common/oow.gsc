@@ -55,7 +55,7 @@ function on_game_playing() {
 // Checksum 0xaab2194b, Offset: 0x2e8
 // Size: 0x118
 function function_e8f5803d() {
-    while (1) {
+    while (true) {
         wait(5);
         foreach (team, _ in level.teams) {
             foreach (player in level.aliveplayers[team]) {
@@ -76,18 +76,18 @@ function function_e8f5803d() {
 // Size: 0x9e
 function function_eb7eb3d4() {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     /#
         if (self isinmovemode("<unknown string>", "<unknown string>")) {
-            return 0;
+            return false;
         }
     #/
     height = self.origin[2];
     if (level.oow.height_min > height || level.oow.height_max < height) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace oob/oow

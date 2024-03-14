@@ -57,7 +57,7 @@ function private function_96da6081() {
 // Checksum 0x4346d985, Offset: 0x730
 // Size: 0x154
 function private function_aba430c2() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator) && isalive(s_result.activator) && !isdefined(s_result.activator.registerraz_locationinvalidposmenu)) {
@@ -77,7 +77,7 @@ function private function_aba430c2() {
 // Checksum 0xb7846acf, Offset: 0x890
 // Size: 0x280
 function private function_63c3fd24() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (!isalive(s_result.activator)) {
@@ -136,7 +136,7 @@ function private function_64834acd() {
     self notify("1a9a8d2140387a89");
     self endon("1a9a8d2140387a89");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self function_21a979f7();
         self waittill(#"hash_44144f80f295a13f");
     }
@@ -148,7 +148,7 @@ function private function_64834acd() {
 // Size: 0x9e
 function private function_21a979f7() {
     self endon(#"hash_53eb32eaa511640c");
-    while (1) {
+    while (true) {
         if (self.angles[0] < 360) {
             self.angles = self.angles + vectorscale((1, 0, 0), 360);
         }
@@ -237,7 +237,7 @@ function function_9ea70701() {
 // Size: 0x15c
 function function_33864e5d() {
     s_interact = self.stub.related_parent;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (!isplayer(s_result.activator) || !isalive(s_result.activator)) {
@@ -364,7 +364,7 @@ function function_70c90053() {
     level endon(#"end_game");
     self endon(#"death", #"flag_gazing_stone_in_use");
     v_stone = self.origin + vectorscale((0, 0, 1), 8);
-    while (1) {
+    while (true) {
         wait(randomintrange(27, 31));
         e_closest_player = arraygetclosest(v_stone, util::get_active_players(), 768);
         if (isalive(e_closest_player) && e_closest_player util::is_player_looking_at(v_stone, 0.6, 0)) {
@@ -397,23 +397,23 @@ function private function_2d4ce142(n_voice) {
     case 0:
         zm_audio::play_vo_internal(#"hash_56d727e4dde061ef");
         zm_audio::play_vo_internal(#"hash_73722f29ea1fa41", self);
-        return;
+        break;
     case 1:
         zm_audio::play_vo_internal(#"hash_46c0fcd4eac3143a");
         zm_audio::play_vo_internal(#"hash_2fd88698209e1998", self);
-        return;
+        break;
     case 2:
         zm_audio::play_vo_internal(#"hash_6a18c9d5cea653d4", self);
         zm_audio::play_vo_internal(#"hash_21bcbc16a4e2812a");
-        return;
+        break;
     case 3:
         zm_audio::play_vo_internal(#"hash_19c3a28739527fc8");
         zm_audio::play_vo_internal(#"hash_c3c497c80eba90e", self);
-        return;
+        break;
     case 4:
         zm_audio::play_vo_internal(#"hash_5f99dba5a34a200b");
         zm_audio::play_vo_internal(#"hash_50bc3e7a02399bd5", self);
-        return;
+        break;
     }
 }
 
@@ -457,7 +457,7 @@ function function_c8d42aba(str_category, var_39acfdda) {
             break;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -471,7 +471,7 @@ function function_4928382a(str_category, var_39acfdda) {
         str_vo = "vox_revive_down_plr_" + var_e04d003f + "_" + randomint(4);
         self zm_audio::play_vo_internal(hash(str_vo));
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -482,9 +482,9 @@ function function_658ce256(str_category, var_39acfdda) {
     if (math::cointoss(16)) {
         zm_audio::play_vo_internal(#"hash_781c84d22590fba6");
         zm_audio::play_vo_internal(#"hash_6a2a0c62daaff8ac", self);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -509,7 +509,7 @@ function function_df8a01f3() {
             break;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -519,9 +519,9 @@ function function_df8a01f3() {
 function function_edae33b5(str_category, var_39acfdda) {
     if (math::cointoss(16)) {
         zm_audio::play_vo_internal(#"hash_41b1b4aa63697b30", self);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -532,9 +532,9 @@ function function_fe8cce7a(str_category, var_39acfdda) {
     if (math::cointoss(16)) {
         zm_audio::play_vo_internal(#"hash_5356fdb821d6dedd");
         zm_audio::play_vo_internal(#"hash_10335b450c3f5187", self);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -545,9 +545,9 @@ function function_bb1888fe(str_category, var_39acfdda) {
     if (math::cointoss(25)) {
         zm_audio::play_vo_internal(#"hash_f5f0d56fe254796");
         zm_audio::play_vo_internal(#"hash_48710f792a0c297c", self);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -558,9 +558,9 @@ function function_f26d178f(str_category, var_39acfdda) {
     if (math::cointoss(16)) {
         zm_audio::play_vo_internal(#"hash_23048fd6c52dd964");
         zm_audio::play_vo_internal(#"hash_5d5ef2b48b533f2", self);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -579,9 +579,9 @@ function function_1f4ab5ec(str_category, var_39acfdda) {
             zm_audio::play_vo_internal(#"hash_c27975b04cf4e48", self);
             break;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_sound/zm_mansion_sound
@@ -592,7 +592,7 @@ function function_a3a92098() {
     level endon(#"cellar_located");
     self endon(#"death");
     var_39ef2390 = getent("cellar_location_vo", "targetname");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = var_39ef2390 waittill(#"trigger");
         if (isalive(s_result.activator) && s_result.activator === self) {

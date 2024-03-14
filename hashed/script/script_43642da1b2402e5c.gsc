@@ -136,7 +136,7 @@ function private function_29ee24dd() {
     level endon(#"hash_7646638df88a3656");
     a_w_weapons = self getweaponslist(0);
     self reset_ammo(1);
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"zmb_max_ammo", #"hash_278526d0bbdb4ce7", #"melee_reload", #"wallbuy_done");
         w_current = self getcurrentweapon();

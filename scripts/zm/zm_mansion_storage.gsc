@@ -189,19 +189,19 @@ function function_ff726bbb(var_2afee46 = 1) {
         case 0:
             e_book linkto(var_d3f97071, "tag_origin");
             e_book.script_noteworthy = "west";
-            continue;
+            break;
         case 1:
             e_book linkto(var_1d305e7f, "tag_origin");
             e_book.script_noteworthy = "east";
-            continue;
+            break;
         case 2:
             e_book linkto(var_db4a4ab3, "tag_origin");
             e_book.script_noteworthy = "west";
-            continue;
+            break;
         case 3:
             e_book linkto(var_bad218e, "tag_origin");
             e_book.script_noteworthy = "east";
-            continue;
+            break;
         }
     }
     if (var_2afee46) {
@@ -215,7 +215,7 @@ function function_ff726bbb(var_2afee46 = 1) {
 // Size: 0x100
 function function_56c97aea() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator)) {
@@ -438,7 +438,7 @@ function function_c63076b4(var_2afee46 = 1) {
 // Size: 0x60
 function function_3e37bb63() {
     self endon(#"busted");
-    while (1) {
+    while (true) {
         self.e_drip clientfield::increment("" + #"barrel_drip");
         wait(self.n_rate);
     }
@@ -450,7 +450,7 @@ function function_3e37bb63() {
 // Size: 0x18a
 function function_85e39c4d() {
     self endon(#"busted");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self.t_trig waittill(#"damage");
         if (isplayer(s_notify.attacker) && s_notify.mod === "MOD_MELEE") {
@@ -571,7 +571,7 @@ function function_f2ca3ec8(s_pos) {
 // Size: 0x110
 function function_b601eebc() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -629,7 +629,7 @@ function function_68e49445() {
     level endoncallback(&function_784a41d1, #"hash_4207012c64662b4d");
     level flagsys::wait_till(#"load_main_complete");
     var_f103be47 = 0;
-    while (1) {
+    while (true) {
         if (var_f103be47) {
             if (!(isdefined(level.zones[#"zone_library_hallway_upper"].is_occupied) && level.zones[#"zone_library_hallway_upper"].is_occupied) && !(isdefined(level.zones[#"zone_library_upper"].is_occupied) && level.zones[#"zone_library_upper"].is_occupied) && !(isdefined(level.zones[#"zone_foyer_westend"].is_occupied) && level.zones[#"zone_foyer_westend"].is_occupied)) {
                 level clientfield::set("" + #"hash_75594bca6b54706e", 0);
@@ -716,7 +716,7 @@ function function_35ab22f4() {
 function function_e061d576() {
     /#
         level endon(#"hash_4207012c64662b4d");
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_3dcf262f16faced0", 0)) {
                 print3d((-1440, -580, 120), "<unknown string>" + level.var_e967a159, (1, 1, 1), 1, 1, 6);
             }
@@ -742,17 +742,17 @@ function function_f21f0537(var_a276c861) {
         } else {
             level thread function_fd9b3e16(randomintrangeinclusive(1, 7));
         }
-        return;
+        break;
     case 2:
         zm_powerups::specific_powerup_drop("bonus_points_player", s_pocket.origin + vectorscale((0, 0, -1), 8), undefined, undefined, undefined, 1);
-        return;
+        break;
     case 3:
         a_players = array::get_all_closest(s_pocket.origin, getplayers());
         a_players[0] magicgrenadetype(getweapon(#"eq_frag_grenade"), s_pocket.origin + vectorscale((0, 0, 1), 12), vectorscale((0, 0, 1), 200));
         a_players[0] zm_audio::create_and_play_dialog(#"grenade", #"react", undefined, 1);
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -857,7 +857,7 @@ function function_cd9f1d74(n_reward) {
 // Size: 0xea
 function function_67c3a7dd() {
     var_163c35fc = self.s_unitrigger;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         player = s_result.e_who;
@@ -893,7 +893,7 @@ function function_7f4f9503(str_bgb) {
 // Size: 0xd8
 function function_907eba72() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         player = s_result.activator;
@@ -943,7 +943,7 @@ function function_cc012e8d(player) {
         self sethintstringforplayer(player, str_prompt);
         break;
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_storage/zm_mansion_storage
@@ -952,7 +952,7 @@ function function_cc012e8d(player) {
 // Size: 0x78
 function function_7b425c11() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self movez(-3, 2);
         wait(1.95);
         self movez(3, 2);
@@ -970,7 +970,7 @@ function function_63c873d9(var_dc2ad9ce) {
     var_dc2ad9ce endon(#"hash_2dd745b383eb50c8");
     wait(4);
     var_dc2ad9ce thread function_840d0d56();
-    while (1) {
+    while (true) {
         a_e_players = util::get_active_players(#"allies");
         for (i = 0; i < a_e_players.size; i++) {
             if (!isdefined(a_e_players[i].var_d2822b91)) {
@@ -1010,7 +1010,7 @@ function function_840d0d56() {
         assert(isdefined(var_e699d494), "<unknown string>" + self.origin);
     #/
     var_8259b1e9 = zm_cleanup::get_adjacencies_to_zone(var_e699d494);
-    while (1) {
+    while (true) {
         n_players_in_zone = 0;
         foreach (str_zone in var_8259b1e9) {
             n_players_in_zone = n_players_in_zone + zm_zonemgr::get_players_in_zone(str_zone, 0);

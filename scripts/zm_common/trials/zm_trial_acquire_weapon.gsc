@@ -248,7 +248,7 @@ function private monitor_objective(s_challenge, a_weapons) {
         objective_setinvisibletoplayer(n_objective_id, self);
     }
     wait(12);
-    while (1) {
+    while (true) {
         foreach (weapon in a_weapons) {
             weapon_upgraded = zm_weapons::get_upgrade_weapon(weapon);
             if (self hasweapon(weapon, 1) || isdefined(level.var_14c8992d) && level.var_14c8992d && isdefined(weapon_upgraded) && self hasweapon(weapon_upgraded, 1)) {
@@ -269,7 +269,7 @@ function private function_fa5e5e08() {
     level endon(#"hash_7646638df88a3656", #"end_game");
     var_629c4c4a = 0;
     zm_trial_util::function_7d32b7d0(0);
-    while (1) {
+    while (true) {
         var_5cb7ddf1 = 0;
         foreach (player in getplayers()) {
             if (isdefined(level.var_19b2578f) && level.var_19b2578f) {
@@ -346,7 +346,7 @@ function private function_e73fbbf7() {
     level endon(#"hash_7646638df88a3656");
     self.var_4ced1fcf = 0;
     var_fa5d7ea0 = 0;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_19b2578f) && level.var_19b2578f) {
             self function_52f6931d();
         } else {

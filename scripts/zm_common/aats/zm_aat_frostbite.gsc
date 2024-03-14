@@ -64,12 +64,12 @@ function private function_a2e05e6(e_attacker) {
     n_current_time = float(gettime()) / 1000;
     if (isplayer(e_attacker)) {
         if (!isdefined(e_attacker.aat_cooldown_start[#"zm_aat_frostbite_explosion"])) {
-            return 1;
+            return true;
         } else if (isdefined(e_attacker.aat_cooldown_start[#"zm_aat_frostbite_explosion"]) && n_current_time >= e_attacker.aat_cooldown_start[#"zm_aat_frostbite_explosion"] + 30) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_aat_frostbite/zm_aat_frostbite

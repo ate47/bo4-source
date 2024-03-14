@@ -292,10 +292,10 @@ function function_18f5f327(s_spawn_loc) {
         switch (s_spawn_loc.scriptbundlename) {
         case #"aib_t8_zm_mnsn_nfrtu_trvrs_grnd_climbout_01":
             self zm_spawner::function_45bb11e4(s_spawn_loc);
-            return;
+            break;
         case #"aib_t8_zm_mnsn_nfrtu_undercroft_spawn_01":
             self zm_spawner::do_zombie_rise(s_spawn_loc);
-            return;
+            break;
         }
     }
 }
@@ -476,10 +476,10 @@ function function_50ec1ddf() {
 function function_e91102ad() {
     foreach (player in getplayers()) {
         if (player util::is_player_looking_at(self.origin + vectorscale((0, 0, 1), 64))) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds
@@ -492,10 +492,10 @@ function function_1a27cc15() {
     foreach (e_entity in var_c9e3c7bc) {
         var_91dfe7f4 = e_entity zm_utility::get_current_zone();
         if (var_91dfe7f4 === var_bdf9e3c2) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_mansion_special_rounds/zm_mansion_special_rounds

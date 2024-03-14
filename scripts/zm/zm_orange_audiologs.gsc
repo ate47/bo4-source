@@ -98,7 +98,7 @@ function function_4164ac1d(e_player) {
 // Size: 0x48
 function function_aef698f1() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         self function_6ad87fb1();
     }
@@ -164,7 +164,7 @@ function function_90b10d7(e_player) {
 // Size: 0x48
 function function_62fea2fe() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         self doa_streak_udem();
     }

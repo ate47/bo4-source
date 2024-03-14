@@ -408,7 +408,7 @@ function function_db21e968(var_36778522, var_6448415b = 0, var_29a34c68 = 800, v
     waitframe(1);
     self endon(#"hash_3bd66153d302d5e3", #"death");
     e_player = ct_utils::get_player();
-    while (1) {
+    while (true) {
         self function_27bf93d(var_719f528b + 50, 1);
         if (var_36778522 > level.a_ai_zombies.size) {
             n_count = var_36778522 - level.a_ai_zombies.size;
@@ -654,7 +654,7 @@ function function_67a32c1c() {
     level.hardpoint_bar luielembar_ct::set_color(self, 0, 1, 0);
     level.var_a3911420 = 1;
     level.hardpoint_bar.user = self;
-    while (1) {
+    while (true) {
         level.hardpoint_bar luielembar_ct::set_bar_percent(self, level.var_33682199);
         level.hardpoint_bar luielembar_ct::function_e5898fd7(self, level.xpos);
         level.hardpoint_bar luielembar_ct::function_58a135d3(self, level.ypos);
@@ -764,7 +764,7 @@ function function_dc3d207e() {
     self endon(#"death");
     self thread function_f7f67b2c();
     self thread function_5ddc2e1a();
-    while (1) {
+    while (true) {
         if (self flag::get("vip_stop")) {
             self setgoal(self.origin, 1);
         } else if (self flag::get("vip_checkpoint_action")) {
@@ -785,7 +785,7 @@ function function_f7f67b2c() {
     self endon(#"death");
     level endon(#"combattraining_logic_finished");
     e_player = ct_utils::get_player();
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         e_player thread function_c633f931();
@@ -802,7 +802,7 @@ function function_5ddc2e1a() {
     self endon(#"death");
     level endon(#"combattraining_logic_finished");
     e_player = ct_utils::get_player();
-    while (1) {
+    while (true) {
         if (!self flag::get("vip_checkpoint_action")) {
             if (!self canpath(self.origin, e_player.origin)) {
                 wait(1.5);
@@ -1195,7 +1195,7 @@ function function_f243b54e() {
     e_player = ct_utils::get_player();
     self.var_553008b4 = undefined;
     var_ec90b5ea = 4096;
-    while (1) {
+    while (true) {
         var_e4dd1a2e = self canpath(self.origin, e_player.origin);
         var_13621637 = self canpath(self.origin, level.ai_vip.origin);
         if (isdefined(self.enemy)) {
@@ -1287,7 +1287,7 @@ function function_d69c54a8() {
             adddebugcommand("<unknown string>");
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_2bdefa89fdfb0546", "<unknown string>");
             if (cmd == "<unknown string>") {

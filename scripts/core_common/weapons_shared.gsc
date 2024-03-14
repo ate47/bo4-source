@@ -56,7 +56,7 @@ function function_867af0b() {
         self endon(#"death");
         player = self;
         gameobject_link = undefined;
-        while (1) {
+        while (true) {
             wait(float(function_60d95f53()) / 1000);
             if (self.sessionstate != "<unknown string>") {
                 continue;
@@ -154,7 +154,7 @@ function function_e870d33d() {
     while (isdefined(player.var_766deb67)) {
         wait(float(function_60d95f53()) / 1000);
     }
-    while (1) {
+    while (true) {
         wait(float(function_60d95f53()) / 1000);
         current_weapon = player getcurrentweapon();
         if (current_weapon == level.weaponnone) {
@@ -296,7 +296,7 @@ function function_e870d33d() {
                 player setorigin(exit_origin);
             }
             if (var_628f1aed) {
-                while (1) {
+                while (true) {
                     wait(float(function_60d95f53()) / 1000);
                     current_weapon = player getcurrentweapon();
                     if (current_weapon == level.weaponnone) {
@@ -641,10 +641,10 @@ function has_lockon(target) {
 function function_9568854f(weapon, attachmentname) {
     foreach (attachment in weapon.attachments) {
         if (attachment == attachmentname) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace weapons/weapons_shared
@@ -671,13 +671,13 @@ function function_74bbb3fa(damage, weapon, target) {
 // Size: 0x84
 function isheadshot(shitloc, smeansofdeath) {
     if (isdefined(shitloc) && (shitloc == "head" || shitloc == "helmet")) {
-        return 1;
+        return true;
     }
     switch (smeansofdeath) {
     case #"mod_melee_assassinate":
     case #"mod_melee":
-        return 0;
+        return false;
     }
-    return 0;
+    return false;
 }
 

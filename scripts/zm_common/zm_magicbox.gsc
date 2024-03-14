@@ -256,20 +256,20 @@ function boxtrigger_update_prompt(player) {
 // Size: 0x4b6
 function boxstub_update_prompt(player) {
     if (isdefined(self.stub.var_dd0d4460) && self.stub.var_dd0d4460) {
-        return 0;
+        return false;
     }
     if (isdefined(self.stub.trigger_target.is_locked) && self.stub.trigger_target.is_locked) {
-        return 0;
+        return false;
     }
     if (!self trigger_visible_to_player(player)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.func_magicbox_update_prompt_use_override)) {
         if (self [[ level.func_magicbox_update_prompt_use_override ]](player)) {
             if (zm_utility::is_standard()) {
-                return 1;
+                return true;
             } else {
-                return 0;
+                return false;
             }
         }
     }
@@ -307,13 +307,13 @@ function boxstub_update_prompt(player) {
         }
     } else if (zm_trial_disable_buys::is_active()) {
         self sethintstring(#"hash_55d25caf8f7bbb2f");
-        return 1;
+        return true;
     } else {
         self setcursorhint("HINT_NOICON");
         self.hint_parm1 = self.stub.trigger_target.zombie_cost;
         self.hint_string = zm_utility::get_hint_string(self, "default_treasure_chest");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -345,7 +345,7 @@ function trigger_visible_to_player(player) {
     }
     if (isdefined(var_5f6b2789.weapon_out) && var_5f6b2789.weapon_out) {
         if (player zm_weapons::has_weapon_or_upgrade(var_5f6b2789.zbarrier.weapon)) {
-            return 0;
+            return false;
         }
     }
     if (isdefined(level.var_2f57e2d2)) {
@@ -354,10 +354,10 @@ function trigger_visible_to_player(player) {
         }
     }
     if (!visible) {
-        return 0;
+        return false;
     }
     self setvisibletoplayer(player);
-    return 1;
+    return true;
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -366,7 +366,7 @@ function trigger_visible_to_player(player) {
 // Size: 0x58
 function magicbox_unitrigger_think() {
     self endon(#"kill_trigger");
-    while (1) {
+    while (true) {
         self.stub.trigger_target notify(#"trigger", self waittill(#"trigger"));
     }
 }
@@ -576,7 +576,7 @@ function treasure_chest_think() {
     self.box_rerespun = undefined;
     self.weapon_out = undefined;
     self thread unregister_unitrigger_on_kill_think();
-    while (1) {
+    while (true) {
         if (!isdefined(self.forced_user)) {
             waitresult = undefined;
             waitresult = self waittill(#"trigger");
@@ -830,7 +830,7 @@ function function_e4dcca48() {
         util::wait_network_frame();
     }
     var_1e99deea endon(#"kill_trigger");
-    while (1) {
+    while (true) {
         self.var_c2f3a87c = 0;
         if (isdefined(var_369ce419) && isdefined(var_63f52acb)) {
             if (var_369ce419 util::is_looking_at(var_63f52acb)) {
@@ -844,7 +844,7 @@ function function_e4dcca48() {
                 var_63f52acb clientfield::set("powerup_fx", 1);
             }
             var_369ce419 thread zm_audio::create_and_play_dialog(#"magicbox", #"share");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -863,7 +863,7 @@ function watch_for_emp_close() {
     if (isdefined(self.zbarrier)) {
         self.zbarrier.var_7672d70d = 0;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"emp_detonate");
         if (distancesquared(waitresult.position, self.origin) < waitresult.radius * waitresult.radius) {
@@ -894,36 +894,36 @@ function watch_for_emp_close() {
 // Size: 0x1b6
 function can_buy_weapon(var_5429ee1f = 1) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (var_5429ee1f && zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
         if ((isdefined(level.var_40f4f72d) ? level.var_40f4f72d : 0) >= zm_custom::function_901b751c(#"zmmysteryboxlimitround")) {
-            return 0;
+            return false;
         }
     }
     if (self zm_utility::is_drinking()) {
-        return 0;
+        return false;
     }
     if (self zm_equipment::hacker_active()) {
-        return 0;
+        return false;
     }
     current_weapon = self getcurrentweapon();
     if (zm_loadout::is_placeable_mine(current_weapon) || zm_equipment::is_equipment_that_blocks_purchase(current_weapon)) {
-        return 0;
+        return false;
     }
     if (self zm_utility::in_revive_trigger()) {
-        return 0;
+        return false;
     }
     if (current_weapon == level.weaponnone) {
-        return 0;
+        return false;
     }
     if (current_weapon.isheroweapon || current_weapon.isgadget || current_weapon.isriotshield) {
-        return 0;
+        return false;
     }
     if (!self zm_laststand::laststand_has_players_weapons_returned()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -1265,7 +1265,7 @@ function function_4aa1f177(player) {
 // Size: 0x32
 function weapon_show_hint_choke() {
     level._weapon_show_hint_choke = 0;
-    while (1) {
+    while (true) {
         waitframe(1);
         level._weapon_show_hint_choke = 0;
     }
@@ -1290,7 +1290,7 @@ function decide_hide_show_hint(endon_notify, second_endon_notify, onlyplayer, ca
     if (isdefined(level._use_choke_weapon_hints) && level._use_choke_weapon_hints == 1) {
         use_choke = 1;
     }
-    while (1) {
+    while (true) {
         last_update = gettime();
         if (isdefined(self.chest_user) && !isdefined(self.box_rerespun)) {
             if (zm_loadout::is_placeable_mine(self.chest_user getcurrentweapon()) || self.chest_user zm_equipment::hacker_active()) {
@@ -1376,7 +1376,7 @@ function treasure_chest_should_move(chest, player) {
         chance_of_joker = 0;
         if (zm_trial::is_trial_mode()) {
             if (level.chest_accessed >= 3 || isdefined(level.var_bb641599) && level.var_bb641599) {
-                return 1;
+                return true;
             }
         }
         if (!isdefined(level.chest_min_move_usage)) {
@@ -1437,10 +1437,10 @@ function treasure_chest_should_move(chest, player) {
             chance_of_joker = 100;
         }
         if (chance_of_joker > random) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -1985,7 +1985,7 @@ function function_4873c058() {
     }
     level.var_9c9ba8d5 = 0;
     var_f6497afb = 0;
-    while (1) {
+    while (true) {
         a_players = getplayers();
         var_27bcd4e3 = 0;
         foreach (chest in level.chests) {
@@ -2097,12 +2097,12 @@ function magic_box_do_teddy_flyaway() {
 function is_chest_active() {
     curr_state = self.zbarrier get_magic_box_zbarrier_state();
     if (level flag::get("moving_chest_now")) {
-        return 0;
+        return false;
     }
     if (curr_state == "open" || curr_state == "close") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -2113,7 +2113,7 @@ function function_15cd8d85() {
     self endon(#"zbarrier_state_change");
     self setzbarrierpiecestate(0, "closed");
     if (self.script_string !== "t8_magicbox") {
-        while (1) {
+        while (true) {
             wait(randomfloatrange(180, 1800));
             self setzbarrierpiecestate(0, "opening");
             wait(randomfloatrange(180, 1800));
@@ -2224,38 +2224,38 @@ function process_magic_box_zbarrier_state(state) {
         self showzbarrierpiece(0);
         self thread function_15cd8d85();
         self.state = "away";
-        return;
+        break;
     case #"arriving":
         self showzbarrierpiece(1);
         self thread function_24ce1c91();
         self.state = "arriving";
-        return;
+        break;
     case #"initial":
         self showzbarrierpiece(1);
         self thread function_f6a827d1();
         thread zm_unitrigger::register_static_unitrigger(self.owner.unitrigger_stub, &magicbox_unitrigger_think);
         self.state = "initial";
-        return;
+        break;
     case #"open":
         self showzbarrierpiece(2);
         self thread function_12804472();
         self.state = "open";
-        return;
+        break;
     case #"close":
         self showzbarrierpiece(2);
         self thread function_cd5d65b0();
         self.state = "close";
-        return;
+        break;
     case #"leaving":
         self showzbarrierpiece(1);
         self thread function_65b1adcb();
         self.state = "leaving";
-        return;
+        break;
     default:
         if (isdefined(level.custom_magicbox_state_handler)) {
             self [[ level.custom_magicbox_state_handler ]](state);
         }
-        return;
+        break;
     }
 }
 
@@ -2276,7 +2276,7 @@ function function_35c66b27(str_state) {
             #/
         }
         self.var_8cab0622 scene::play();
-        return;
+        break;
     case #"arriving":
         if (!isdefined(self.var_8cab0622)) {
             a_str_tokens = strtok2(self.script_noteworthy, "zbarrier");
@@ -2289,7 +2289,7 @@ function function_35c66b27(str_state) {
         self.var_8cab0622 scene::stop(1);
     default:
         self process_magic_box_zbarrier_state(str_state);
-        return;
+        break;
     }
 }
 
@@ -2301,7 +2301,7 @@ function magicbox_host_migration() {
     level endon(#"end_game");
     level notify(#"mb_hostmigration");
     level endon(#"mb_hostmigration");
-    while (1) {
+    while (true) {
         level waittill(#"host_migration_end");
         if (!isdefined(level.chests)) {
             continue;
@@ -2348,7 +2348,7 @@ function function_d81704a5(s_chest) {
 // Size: 0x4e
 function function_338c302b() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         level.var_40f4f72d = 0;
     }

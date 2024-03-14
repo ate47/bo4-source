@@ -25,7 +25,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0x7de9111, Offset: 0x1d8
 // Size: 0x80
 function function_8bca10ba(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    while (1) {
+    while (true) {
         fx = playfx(localclientnum, "blood/fx8_blood_cam_impact_spray_zm", self.origin);
         wait(2);
     }

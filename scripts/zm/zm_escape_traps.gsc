@@ -134,7 +134,7 @@ function function_ea490292() {
     } else {
         level flag::wait_till("power_on");
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"trap_activated");
         if (s_result.trap == self) {
@@ -297,7 +297,7 @@ function fan_trap_timeout() {
 // Size: 0xb8
 function fan_trap_rumble_think() {
     self endon(#"trap_finished");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.t_rumble waittill(#"trigger");
         if (isplayer(s_result.activator)) {
@@ -315,7 +315,7 @@ function fan_trap_rumble_think() {
 function fan_trap_rumble(e_player) {
     e_player endon(#"death", #"disconnect");
     self endon(#"trap_finished");
-    while (1) {
+    while (true) {
         if (e_player istouching(self.t_rumble)) {
             e_player clientfield::set_to_player("rumble_fan_trap", 1);
             e_player.fan_trap_rumble = 1;
@@ -324,7 +324,7 @@ function fan_trap_rumble(e_player) {
         }
         e_player clientfield::set_to_player("rumble_fan_trap", 0);
         e_player.fan_trap_rumble = 0;
-        return;
+        break;
     }
 }
 
@@ -338,7 +338,7 @@ function fan_trap_damage() {
         return;
     }
     self endon(#"fan_trap_finished");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {
@@ -477,7 +477,7 @@ function function_39f2d90f() {
     level flag::wait_till("start_zombie_round_logic");
     self zapper_light_red();
     level flag::wait_till("acid_trap_available");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"trap_activated");
         if (s_result.trap == self) {
@@ -705,7 +705,7 @@ function function_dcd775a() {
     } else {
         level flag::wait_till("power_on");
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"trap_activated");
         if (s_result.trap == self) {
@@ -903,7 +903,7 @@ function function_4a15e725() {
 // Size: 0xb8
 function function_c3ac9950() {
     self endon(#"trap_finished");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.t_rumble waittill(#"trigger");
         if (isplayer(s_result.activator)) {
@@ -921,7 +921,7 @@ function function_c3ac9950() {
 function spinning_trap_rumble(e_player) {
     e_player endon(#"death", #"disconnect");
     self endon(#"trap_finished");
-    while (1) {
+    while (true) {
         if (e_player istouching(self.t_rumble)) {
             e_player clientfield::set_to_player("rumble_spinning_trap", 1);
             e_player.b_spinning_trap_rumble = 1;
@@ -930,7 +930,7 @@ function spinning_trap_rumble(e_player) {
         }
         e_player clientfield::set_to_player("rumble_spinning_trap", 0);
         e_player.b_spinning_trap_rumble = undefined;
-        return;
+        break;
     }
 }
 
@@ -1052,15 +1052,15 @@ function zapper_light_red() {
     case #"zm_spinning_trap":
         exploder::exploder("fxexp_spinning_trap_light_red");
         exploder::kill_exploder("fxexp_spinning_trap_light_green");
-        return;
+        break;
     case #"zm_fan_trap":
         exploder::exploder("fxexp_fan_trap_light_red");
         exploder::kill_exploder("fxexp_fan_trap_light_green");
-        return;
+        break;
     case #"zm_acid_trap":
         exploder::exploder("fxexp_acid_trap_light_red");
         exploder::kill_exploder("fxexp_acid_trap_light_green");
-        return;
+        break;
     }
 }
 
@@ -1078,15 +1078,15 @@ function zapper_light_green() {
     case #"zm_spinning_trap":
         exploder::kill_exploder("fxexp_spinning_trap_light_red");
         exploder::exploder("fxexp_spinning_trap_light_green");
-        return;
+        break;
     case #"zm_fan_trap":
         exploder::kill_exploder("fxexp_fan_trap_light_red");
         exploder::exploder("fxexp_fan_trap_light_green");
-        return;
+        break;
     case #"zm_acid_trap":
         exploder::kill_exploder("fxexp_acid_trap_light_red");
         exploder::exploder("fxexp_acid_trap_light_green");
-        return;
+        break;
     }
 }
 

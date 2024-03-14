@@ -82,7 +82,7 @@ function function_8a349869() {
         self.var_59860ee1 = 8000;
         self.var_dd940df3 = 12000;
         self.var_bab91f2 = 800;
-        while (1) {
+        while (true) {
             n_dist = distance(self.origin, level.var_4d47c040);
             if (n_dist <= self.var_bab91f2) {
                 break;
@@ -99,7 +99,7 @@ function function_8a349869() {
 // Size: 0xdc
 function function_33b2a588() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (isdefined(self.var_78db19c8) && self.var_78db19c8) {
             axis = getaiteamarray(#"axis");
             foreach (entity in axis) {
@@ -273,7 +273,7 @@ function function_a898afdc() {
         level thread function_62e9842e(i);
         level thread function_1ca79c02(var_edc95125);
         n_start_time = gettime() / 1000;
-        while (1) {
+        while (true) {
             if (level flag::get("data_downloaded")) {
                 break;
             }
@@ -358,7 +358,7 @@ function function_86a5d2b9() {
     e_player = getplayers()[0];
     e_player thread function_85eb0847();
     e_player thread function_764aabbc();
-    while (1) {
+    while (true) {
         if (!isalive(e_player)) {
             while (!isalive(e_player)) {
                 waitframe(1);
@@ -382,7 +382,7 @@ function function_86a5d2b9() {
 function function_85eb0847() {
     self endon(#"death");
     level endon(#"hardpoint_completed", #"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         self waittill(#"tripwire_spawn");
         level.var_bd6e4af0++;
         level.var_12cf0f6f = 1;
@@ -395,7 +395,7 @@ function function_85eb0847() {
 // Size: 0xa4
 function function_5b0597d0(var_511a3f1c) {
     level.var_5a623458 = 1;
-    while (1) {
+    while (true) {
         e_player = getplayers(#"allies")[0];
         if (e_player istouching(var_511a3f1c)) {
             break;
@@ -479,7 +479,7 @@ function function_62e9842e(var_4d4513ee) {
     var_7f5c713a = var_e8d6f89[var_4d4513ee];
     level waittill(#"hash_7fb8a9f892ea26f9");
     n_start_time = gettime() / 1000;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         dt = n_time - n_start_time;
         if (dt > 22) {
@@ -590,7 +590,7 @@ function function_f71e7ad9() {
     nd_spawn = var_b74696c9[0];
     self.var_6b6241ac = nd_spawn.origin;
     self.var_45cac770 = nd_spawn.angles;
-    return 1;
+    return true;
 }
 
 // Namespace ct_nomad/ct_nomad
@@ -605,7 +605,7 @@ function function_795960e7() {
     var_b74696c9 = getnodearray(var_7716dee7, "targetname");
     e_player = getplayers()[0];
     var_70eb710b = 0;
-    while (1) {
+    while (true) {
         if (level.var_736740f3 >= var_b74696c9.size) {
             level.var_736740f3 = 0;
         }
@@ -676,12 +676,12 @@ function function_bb7fe568() {
 // Size: 0x52
 function function_f8f42b40() {
     if (isdefined(level.var_b418a53e) && level.var_b418a53e) {
-        return 1;
+        return true;
     }
     if (level flag::get("hardpoint_active") == 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ct_nomad/ct_nomad

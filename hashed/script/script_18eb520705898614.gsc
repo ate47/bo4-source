@@ -165,7 +165,7 @@ function cleanup_step_1(var_a276c861, var_19e802fa) {
 // Checksum 0x9dbf78f1, Offset: 0x1158
 // Size: 0x198
 function function_55b79f54() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -205,7 +205,7 @@ function function_e8f819b0() {
     self.health = 99999;
     self val::set("stick", "takedamage", 1);
     self solid();
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         self.health = self.health + s_notify.amount;
@@ -218,7 +218,7 @@ function function_e8f819b0() {
             s_target = struct::get(self.target);
             var_47323b73 = s_target zm_unitrigger::create(undefined, (92, 92, 100), &function_ff1dea25);
             var_47323b73.var_1f23d8cf = self;
-            return;
+            break;
         }
     }
 }
@@ -229,7 +229,7 @@ function function_e8f819b0() {
 // Size: 0xb8
 function function_ff1dea25() {
     level endon(#"cemetery_done");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -303,7 +303,7 @@ function function_7c9b48a9() {
 // Size: 0xce
 function function_f2071006() {
     self.var_8be24fed endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.var_8be24fed waittill(#"trigger");
         if (s_result.activator util::is_looking_at(self, 0.61, 1)) {
@@ -556,7 +556,7 @@ function private function_d8ca90b7() {
     level endon(#"stick_drag");
     level.var_ead1145a endon(#"disconnect", #"hash_1544918b5f670dae");
     level flag::wait_till(#"hash_7ffc33bb45377f5e");
-    while (1) {
+    while (true) {
         level flag::wait_till(#"stick_ready");
         s_loc = struct::get("stick_drag_loc");
         a_e_drag = getentarray("entity_drag", "targetname");
@@ -696,7 +696,7 @@ function private function_3b71b7a7() {
 function private function_25a79bc1() {
     level endon(#"stone_visible");
     self endon(#"player_downed", #"death", #"hash_1544918b5f670dae");
-    while (1) {
+    while (true) {
         self waittill(#"fasttravel_over", #"hash_3e4335abc3d58a0b", #"hash_55489b8cb6c75352");
         if (self !== level.var_ead1145a) {
             return;
@@ -762,7 +762,7 @@ function private function_e7144c05() {
     self endon(#"disconnect");
     level.e_guide endon(#"death");
     level.e_guide.mdl_head endon(#"death");
-    while (1) {
+    while (true) {
         level.e_guide setinvisibletoplayer(self, 1);
         level.e_guide.mdl_head setinvisibletoplayer(self, 1);
         waitframe(1);
@@ -775,7 +775,7 @@ function private function_e7144c05() {
 // Size: 0x58
 function private function_e84d4271() {
     self endon(#"disconnect", #"tunnel_complete");
-    while (1) {
+    while (true) {
         self playrumbleonentity("hell_tube_rumble");
         wait(0.3);
     }
@@ -809,7 +809,7 @@ function function_c5c7d880() {
     level endoncallback(&function_707f7801, #"stone_visible");
     self endoncallback(&function_707f7801, #"death");
     self.var_54cb40e6 = 1;
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"hash_1fe68a6b935c321d");
         if (zm_utility::is_player_valid(s_notify.reviver)) {
@@ -886,7 +886,7 @@ function function_6f6fef08() {
 // Size: 0x4d4
 function function_31e641f5() {
     level endon(#"cemetery_open");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         b_using = 1;
         n_time = 0;
@@ -960,7 +960,7 @@ function function_e3eb2cfd() {
 // Checksum 0xbdf5c1c2, Offset: 0x4d58
 // Size: 0xb0
 function function_c9ebaa3() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1099,7 +1099,7 @@ function private function_79ad31a0() {
 function trigger_stick_man() {
     level endon(#"cemetery_done");
     level.var_ead1145a endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1314,7 +1314,7 @@ function function_45cfa31(mdl_ghost) {
 function function_48aadc5d() {
     level endon(#"cemetery_open");
     level.var_ead1145a endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1363,7 +1363,7 @@ function private function_aad579ef() {
 function function_9bd05071(player) {
     self endon(#"reached_end_node");
     player endon(#"disconnect");
-    while (1) {
+    while (true) {
         self setspeed(7);
         self waittill(#"reached_node");
         self setspeed(0);
@@ -1885,7 +1885,7 @@ function function_2c554640() {
 // Size: 0xe8
 function turn_to_zombie_damage_() {
     level endon(#"gazed_greenhouse");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (!zm_utility::can_use(s_result.activator) || s_result.activator.characterindex != self.stub.related_parent.n_character_index) {

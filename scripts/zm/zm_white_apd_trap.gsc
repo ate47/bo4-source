@@ -115,7 +115,7 @@ function function_d1112480(e_player) {
 // Size: 0x240
 function function_e14376a3() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -154,7 +154,7 @@ function function_65c804dc() {
     level endon(#"end_game");
     function_91ecec97(level.s_apd_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
     open_panels(level.s_apd_trap.a_s_panels);
-    while (1) {
+    while (true) {
         self waittill(#"hash_1d482aca0464609a");
         function_91ecec97(level.s_apd_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
         level.s_apd_trap.var_6b64b967 = 1;

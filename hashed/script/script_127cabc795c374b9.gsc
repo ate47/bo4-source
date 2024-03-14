@@ -186,13 +186,13 @@ function function_7eabf705() {
         self endon("<unknown string>");
         level endon(#"game_ended");
         level endon(#"hash_671b150516dd9870");
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_7e7b9e2edcf6d1ee", 0)) {
                 players = getplayers();
                 bathtub = struct::get(#"zombie_bathub", "<unknown string>");
                 function_613448ed(players[0], bathtub);
                 level notify(#"hash_671b150516dd9870");
-                return;
+                break;
             }
             waitframe(1);
         }

@@ -258,7 +258,7 @@ function is_soul_capture(var_88206a50, ent) {
         var_e93788f1 = var_88206a50.e_vol;
         return (b_killed_by_player && ent istouching(var_e93788f1));
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_ee_yellow_snow/zm_orange_ee_yellow_snow
@@ -506,7 +506,7 @@ function function_b4b483e7() {
     level endon(#"hash_65989ff1ec5fcff9");
     level endon(#"hash_3ff453a959b4445b");
     level endon(#"hash_4e1c4cd8c0b0a609");
-    while (1) {
+    while (true) {
         /#
             if (level.var_74f3565a >= 22.5) {
                 iprintlnbold("<unknown string>");
@@ -533,7 +533,7 @@ function function_17567d83() {
     if (isdefined(level.var_733d6b98)) {
         level.var_733d6b98 clientfield::set_to_player("spleen_carry_sound", 1);
     }
-    while (1) {
+    while (true) {
         if (isdefined(level.var_733d6b98)) {
             level.var_733d6b98 playsoundtoplayer(#"hash_2c0513350d4300f3", level.var_733d6b98);
         }

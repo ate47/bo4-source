@@ -144,7 +144,7 @@ function player_drown_fx(localclientnum, stage) {
     if (stage == 1) {
         stageduration = 2000;
     }
-    while (1) {
+    while (true) {
         currenttime = getservertime(localclientnum);
         elapsedtime = currenttime - self.drown_start_time;
         stageratio = math::clamp((currenttime - lastoutwatertimestage) / stageduration, 0, 1);

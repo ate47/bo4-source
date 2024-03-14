@@ -105,7 +105,7 @@ function function_1b229077(str_id) {
 // Size: 0x126
 function function_eac89317() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = level waittill(#"traps_activated", #"traps_available", #"traps_cooldown");
         if (isdefined(s_notify.var_be3f58a)) {
@@ -192,6 +192,6 @@ function function_ea998c9(var_458e12fe = 0, var_1798e06d = 0) {
 // Checksum 0x940bb938, Offset: 0xb08
 // Size: 0xe
 function function_504d501c(e_player) {
-    return 0;
+    return false;
 }
 

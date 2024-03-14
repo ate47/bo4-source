@@ -75,7 +75,7 @@ function function_349aed4a(client_num) {
 // Size: 0xf0
 function function_ecd6c9b9(var_240e555b, endon_notify) {
     self endon(endon_notify);
-    while (1) {
+    while (true) {
         for (i = 0; i < var_240e555b.size; i++) {
             self setmodel(var_240e555b[i]);
             wait(3);

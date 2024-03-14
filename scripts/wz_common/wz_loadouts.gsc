@@ -97,22 +97,22 @@ function function_3fed57dd() {
         switch (level.deathcircleindex) {
         case 0:
             self function_58190f52();
-            return;
+            break;
         case 1:
             self function_6667abef();
-            return;
+            break;
         case 2:
             self function_7376c60d();
-            return;
+            break;
         case 3:
             self function_1f091d2f();
-            return;
+            break;
         case 4:
             self function_2d31b980();
-            return;
+            break;
         default:
             self function_58190f52();
-            return;
+            break;
         }
     }
 }
@@ -187,7 +187,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            return;
+            break;
         case 2:
             smg = _get_item(#"smg_capacity_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(smg);
@@ -229,7 +229,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            return;
+            break;
         case 3:
             smg = _get_item(#"smg_standard_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(smg);
@@ -257,7 +257,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            return;
+            break;
         case 4:
             pistol = _get_item(#"pistol_burst_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(pistol);
@@ -292,7 +292,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            return;
+            break;
         case 5:
             pistol = _get_item(#"pistol_burst_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(pistol);
@@ -324,7 +324,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            return;
+            break;
         default:
             pistol = _get_item(#"pistol_burst_t8_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(pistol);
@@ -352,7 +352,7 @@ function function_9de0644f() {
             grapple = _get_item(#"unlimited_grapple_wz_item");
             var_fa3df96 = self item_inventory::function_e66dcff5(grapple);
             self item_world::function_de2018e3(grapple, self, var_fa3df96);
-            return;
+            break;
         }
     }
 }

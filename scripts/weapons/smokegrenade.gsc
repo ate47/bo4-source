@@ -127,7 +127,7 @@ function damageeffectarea(owner, position, radius, height) {
 function smokeblocksight(smokeweapon, radius) {
     self endon(#"death");
     smokeradius = function_79d42bea(smokeweapon);
-    while (1) {
+    while (true) {
         fxblocksight(self, radius);
         /#
             if (getdvarint(#"scr_smokegrenade_debug", 0)) {
@@ -192,7 +192,7 @@ function spawnsmokegrenadetrigger(smokeweapon, duration, owner) {
 // Size: 0x276
 function function_b4a975f1(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(attacker) || !isdefined(victim)) {
-        return 0;
+        return false;
     }
     smoketrigger = victim function_367ce00e();
     if (isdefined(smoketrigger)) {
@@ -209,14 +209,14 @@ function function_b4a975f1(attacker, victim, weapon, attackerweapon, meansofdeat
                     }
                 }
             }
-            return 1;
+            return true;
         } else if (isdefined(smoketrigger.owner) && isplayer(smoketrigger.owner) && isalive(smoketrigger.owner) && util::function_fbce7263(smoketrigger.owner.team, victim.team)) {
             if (level.teambased) {
                 scoreevents::processscoreevent(#"smoke_assist", smoketrigger.owner, undefined, getweapon(#"eq_smoke"));
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace smokegrenade/smokegrenade
@@ -263,21 +263,21 @@ function function_4cc4db89(team, var_7acab93a) {
 // Size: 0x124
 function function_50ef4b12(weapon) {
     if (getweapon(#"eq_smoke") == weapon.rootweapon) {
-        return 1;
+        return true;
     }
     if (getweapon(#"willy_pete") == weapon.rootweapon) {
-        return 1;
+        return true;
     }
     if (getweapon(#"hash_615e6c73989c85b4") == weapon.rootweapon) {
-        return 1;
+        return true;
     }
     if (getweapon(#"hash_7a88daffaea7a9cf") == weapon.rootweapon) {
-        return 1;
+        return true;
     }
     if (getweapon(#"spectre_grenade") == weapon.rootweapon) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace smokegrenade/smokegrenade
@@ -286,16 +286,16 @@ function function_50ef4b12(weapon) {
 // Size: 0x80
 function private function_579815a1(weapon) {
     if (!isdefined(weapon.customsettings)) {
-        return 0;
+        return false;
     }
     var_e6fbac16 = getscriptbundle(weapon.customsettings);
     if (var_e6fbac16.var_8ceb6ac8 === 1) {
-        return 1;
+        return true;
     }
     if (var_e6fbac16.var_6942aad6 === 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace smokegrenade/smokegrenade
@@ -308,7 +308,7 @@ function function_87d0a127(grenadeent, smokeweapon) {
     }
     grenadeteam = grenadeent.team;
     owner = grenadeent.smoketrigger.owner;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = grenadeent waittilltimeout(0.25, #"death");
         if (isdefined(owner)) {
@@ -319,7 +319,7 @@ function function_87d0a127(grenadeent, smokeweapon) {
             }
         }
         if (!isdefined(owner) || !isdefined(grenadeent) || waitresult._notify != "timeout") {
-            return;
+            break;
         }
     }
 }
@@ -333,7 +333,7 @@ function function_8b6ddd71(grenadeent, smokeweapon) {
         return;
     }
     grenadeteam = grenadeent.team;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = grenadeent waittilltimeout(0.25, #"death");
         foreach (player in level.players) {
@@ -362,7 +362,7 @@ function function_8b6ddd71(grenadeent, smokeweapon) {
             }
         }
         if (!isdefined(grenadeent) || waitresult._notify != "timeout" || !isdefined(grenadeent.smoketrigger) && grenadeent.item === getweapon(#"spectre_grenade")) {
-            return;
+            break;
         }
     }
 }

@@ -173,7 +173,7 @@ function function_b7fcffdd(placeable) {
     while (player getcurrentweapon() != placeable.weapon) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = player waittill(#"weapon_fired", #"weapon_switch_started");
         if (waitresult.weapon != placeable.weapon) {
@@ -238,21 +238,21 @@ function innoplacementtrigger() {
     if (isdefined(level.noturretplacementtriggers)) {
         for (i = 0; i < level.noturretplacementtriggers.size; i++) {
             if (placeable istouching(level.noturretplacementtriggers[i])) {
-                return 1;
+                return true;
             }
         }
     }
     if (isdefined(level.fatal_triggers)) {
         for (i = 0; i < level.fatal_triggers.size; i++) {
             if (placeable istouching(level.fatal_triggers[i])) {
-                return 1;
+                return true;
             }
         }
     }
     if (placeable oob::istouchinganyoobtrigger()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace placeables/placeables
@@ -317,7 +317,7 @@ function watchplacement(placeable) {
     lastattempt = -1;
     placeable.canbeplaced = 0;
     waitingforattackbuttonrelease = 1;
-    while (1) {
+    while (true) {
         placement = player canplayerplaceturret();
         placeable.origin = placement[#"origin"];
         placeable.angles = placement[#"angles"];
@@ -434,7 +434,7 @@ function function_e222876f(placeable) {
     #/
     player endon(#"disconnect", #"death");
     placeable endon(#"placed", #"cancelled");
-    while (1) {
+    while (true) {
         if ((isdefined(placeable.var_e3be448) ? placeable.var_e3be448 : 0) && player changeseatbuttonpressed()) {
             placeable notify(#"cancelled");
         } else if (!(isdefined(placeable.var_e3be448) ? placeable.var_e3be448 : 0) && placeable.cancelable && player actionslotfourbuttonpressed()) {
@@ -600,7 +600,7 @@ function watchpickup(player) {
         assert(isdefined(placeable.pickuptrigger));
     #/
     trigger = placeable.pickuptrigger;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         player = waitresult.activator;

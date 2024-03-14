@@ -57,19 +57,19 @@ function pap_chunk_big_rune(localclientnum, oldval, newval, bnewent, binitialsna
     case 2:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_711cbb6b36694a2a"], self.origin, v_forward);
         audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
-        return;
+        break;
     case 3:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_2ad6c6017f084d7a"], self.origin, v_forward);
         audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
-        return;
+        break;
     case 4:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_23bb6df1e8d8a032"], self.origin, v_forward);
         audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
-        return;
+        break;
     case 5:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_14d2dc2c31e6dab9"], self.origin, v_forward);
         audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
-        return;
+        break;
     case 1:
         audio::stoploopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
         if (isdefined(self.var_86adf17d[localclientnum])) {
@@ -77,7 +77,7 @@ function pap_chunk_big_rune(localclientnum, oldval, newval, bnewent, binitialsna
             self.var_86adf17d[localclientnum] = undefined;
             playfx(localclientnum, level._effect[#"hash_79b06b6af34ac1ab"], self.origin, v_forward);
         }
-        return;
+        break;
     }
 }
 
@@ -219,11 +219,11 @@ function function_a2c01e49(localclientnum, var_705d414e, n_state) {
     case 0:
         self showpart(localclientnum, var_73df2d96);
         self hidepart(localclientnum, var_f9d2e2e2);
-        return;
+        break;
     case 1:
         self hidepart(localclientnum, var_73df2d96);
         self showpart(localclientnum, var_f9d2e2e2);
-        return;
+        break;
     }
 }
 
@@ -239,31 +239,31 @@ function pap_machine_rune(localclientnum, oldval, newval, bnewent, binitialsnap,
         var_d7b20a11 function_c976f028(localclientnum, 1, 2);
         var_d7b20a11 function_c976f028(localclientnum, 2, 2);
         var_d7b20a11 function_c976f028(localclientnum, 3, 2);
-        return;
+        break;
     case 2:
         var_d7b20a11 function_c976f028(localclientnum, 0, 0);
         var_d7b20a11 function_c976f028(localclientnum, 1, 1);
         var_d7b20a11 function_c976f028(localclientnum, 2, 1);
         var_d7b20a11 function_c976f028(localclientnum, 3, 1);
-        return;
+        break;
     case 3:
         var_d7b20a11 function_c976f028(localclientnum, 0, 1);
         var_d7b20a11 function_c976f028(localclientnum, 1, 0);
         var_d7b20a11 function_c976f028(localclientnum, 2, 1);
         var_d7b20a11 function_c976f028(localclientnum, 3, 1);
-        return;
+        break;
     case 4:
         var_d7b20a11 function_c976f028(localclientnum, 0, 1);
         var_d7b20a11 function_c976f028(localclientnum, 1, 1);
         var_d7b20a11 function_c976f028(localclientnum, 2, 0);
         var_d7b20a11 function_c976f028(localclientnum, 3, 1);
-        return;
+        break;
     case 5:
         var_d7b20a11 function_c976f028(localclientnum, 0, 1);
         var_d7b20a11 function_c976f028(localclientnum, 1, 1);
         var_d7b20a11 function_c976f028(localclientnum, 2, 1);
         var_d7b20a11 function_c976f028(localclientnum, 3, 0);
-        return;
+        break;
     }
 }
 
@@ -294,15 +294,15 @@ function function_c976f028(localclientnum, var_705d414e, n_state) {
     case 0:
         self showpart(localclientnum, var_73df2d96);
         self hidepart(localclientnum, var_f9d2e2e2);
-        return;
+        break;
     case 1:
         self hidepart(localclientnum, var_73df2d96);
         self showpart(localclientnum, var_f9d2e2e2);
-        return;
+        break;
     case 2:
         self hidepart(localclientnum, var_73df2d96);
         self hidepart(localclientnum, var_f9d2e2e2);
-        return;
+        break;
     }
 }
 

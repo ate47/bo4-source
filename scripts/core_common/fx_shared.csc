@@ -201,7 +201,7 @@ function loop_thread(clientnum) {
     if (isdefined(self.fxstart)) {
         level waittill("start fx" + self.fxstart);
     }
-    while (1) {
+    while (true) {
         create_looper(clientnum);
         if (isdefined(self.timeout)) {
             thread loop_stop(clientnum, self.timeout);
@@ -250,7 +250,7 @@ function create_looper(clientnum) {
 function loop(clientnum) {
     validate(self.v[#"fxid"], self.v[#"origin"]);
     self.looperfx = playfx(clientnum, level._effect[self.v[#"fxid"]], self.v[#"origin"], self.v[#"forward"], self.v[#"up"], self.v[#"delay"], self.v[#"primlightfrac"], self.v[#"lightoriginoffs"]);
-    while (1) {
+    while (true) {
         if (isdefined(self.v[#"delay"])) {
             wait(self.v[#"delay"]);
         }
@@ -308,7 +308,7 @@ function blinky_light(localclientnum, tagname, friendlyfx, enemyfx) {
     self.lighttagname = tagname;
     self util::waittill_dobj(localclientnum);
     self thread blinky_emp_wait(localclientnum);
-    while (1) {
+    while (true) {
         if (isdefined(self.stunned) && self.stunned) {
             wait(0.1);
             continue;

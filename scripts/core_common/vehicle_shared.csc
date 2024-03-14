@@ -116,9 +116,9 @@ function private function_dd27aacd(localclientnum, vehicletype) {
         } else {
             self thread [[ level.vehicletypecallbackarray[vehicletype] ]](localclientnum);
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -260,7 +260,7 @@ function rumble(localclientnum) {
     self.player_touching = 0;
     radius_squared = self.rumbleradius * self.rumbleradius;
     wait(2);
-    while (1) {
+    while (true) {
         if (!isdefined(level.localplayers[localclientnum]) || distancesquared(self.origin, level.localplayers[localclientnum].origin) > radius_squared || self getspeed() == 0) {
             wait(0.2);
             continue;
@@ -420,12 +420,12 @@ function function_5ce3e74e(localclientnum, var_1ca9b241) {
     self endon(#"end_boost");
     self endon(#"veh_boost");
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (!isinvehicle(localclientnum, self)) {
             if (isdefined(var_1ca9b241)) {
                 stopfx(localclientnum, var_1ca9b241);
             }
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -1192,10 +1192,10 @@ function shouldchangescreenpostfx(localclientnum) {
     if (function_1cbf351b(localclientnum)) {
         killcamentity = function_93e0f729(localclientnum);
         if (isdefined(killcamentity) && killcamentity != player) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1306,15 +1306,15 @@ function field_use_engine_damage_sounds(localclientnum, oldval, newval, bnewent,
         case 0:
             self.engine_damage_low = 0;
             self.engine_damage_high = 0;
-            return;
+            break;
         case 1:
             self.engine_damage_low = 1;
             self.engine_damage_high = 0;
-            return;
+            break;
         case 1:
             self.engine_damage_low = 0;
             self.engine_damage_high = 1;
-            return;
+            break;
         }
     }
 }
@@ -1344,18 +1344,18 @@ function private function_f753359a() {
 // Size: 0x7c
 function private function_27b19317(localclientnum) {
     if (!self function_4add50a7()) {
-        return 0;
+        return false;
     }
     if (function_65b9eb0f(localclientnum)) {
-        return 0;
+        return false;
     }
     if (self.vehicleclass === "helicopter") {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_304cf9da) && self.var_304cf9da) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace vehicle/vehicle_shared
@@ -1410,7 +1410,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
             }
             switch (newval) {
             case 0:
-                continue;
+                break;
             case 1:
                 if (isdefined(var_b5ddf091.warning) && isdefined(var_b5ddf091.tag_warning)) {
                     handle = util::playfxontag(localclientnum, var_b5ddf091.warning, self, var_b5ddf091.tag_warning);
@@ -1421,7 +1421,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                     self.fx_handles[#"malfunction"][self.fx_handles[#"malfunction"].size] = handle;
                 }
-                continue;
+                break;
             case 2:
                 if (isdefined(var_b5ddf091.active) && isdefined(var_b5ddf091.var_2f451e59)) {
                     handle = util::playfxontag(localclientnum, var_b5ddf091.active, self, var_b5ddf091.var_2f451e59);
@@ -1432,7 +1432,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                     self.fx_handles[#"malfunction"][self.fx_handles[#"malfunction"].size] = handle;
                 }
-                continue;
+                break;
             case 3:
                 if (isdefined(var_b5ddf091.fatal) && isdefined(var_b5ddf091.var_ceeccc7a)) {
                     handle = util::playfxontag(localclientnum, var_b5ddf091.fatal, self, var_b5ddf091.var_ceeccc7a);
@@ -1443,7 +1443,7 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
                     }
                     self.fx_handles[#"malfunction"][self.fx_handles[#"malfunction"].size] = handle;
                 }
-                continue;
+                break;
             }
         }
     }
@@ -1468,16 +1468,16 @@ function function_7d1d0e65(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         switch (newval) {
         case 0:
-            return;
+            break;
         case 1:
             self.var_30141f5c = self playloopsound(var_ca456b21);
-            return;
+            break;
         case 2:
         case 3:
             if (oldval != 2 && oldval != 3) {
                 self.var_30141f5c = self playloopsound(var_b10574a9);
             }
-            return;
+            break;
         }
     }
 }
@@ -1647,22 +1647,22 @@ function field_update_alert_level(localclientnum, oldval, newval, bnewent, binit
     settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     switch (newval) {
     case 0:
-        return;
+        break;
     case 1:
         if (isdefined(settings.unawarelightfx1)) {
             self.alert_light_fx_handles[0] = util::playfxontag(localclientnum, settings.unawarelightfx1, self, settings.lighttag1);
         }
-        return;
+        break;
     case 2:
         if (isdefined(settings.alertlightfx1)) {
             self.alert_light_fx_handles[0] = util::playfxontag(localclientnum, settings.alertlightfx1, self, settings.lighttag1);
         }
-        return;
+        break;
     case 3:
         if (isdefined(settings.combatlightfx1)) {
             self.alert_light_fx_handles[0] = util::playfxontag(localclientnum, settings.combatlightfx1, self, settings.lighttag1);
         }
-        return;
+        break;
     }
 }
 

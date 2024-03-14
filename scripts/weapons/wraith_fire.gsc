@@ -142,7 +142,7 @@ function get_water_depth(position) {
 // Size: 0x7a
 function function_b66b2f4d() {
     self endon(#"projectile_impact_explode", #"death");
-    while (1) {
+    while (true) {
         self.var_59ba00f5 = self getvelocity();
         wait(float(function_60d95f53()) / 1000);
     }
@@ -417,7 +417,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
             continue;
         }
         if (is_round_reset()) {
-            return;
+            break;
         }
         if (isdefined(locations[#"smallfire"][lockey])) {
             fireweapon = var_c0fe81f1;
@@ -591,9 +591,9 @@ function damageeffectarea(owner, position, killcament, normal, weapon, customset
 // Size: 0x50
 function private is_round_reset() {
     if (level flag::exists("round_reset") && level flag::get("round_reset")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wraith_fire/wraith_fire
@@ -965,18 +965,18 @@ function hitpos(start, end, color) {
 // Size: 0xfc
 function candofiredamage(killcament, victim, resetfiretime) {
     if (isplayer(victim) && victim depthofplayerinwater() >= 1 && !(isdefined(level.var_c62ed297) && level.var_c62ed297)) {
-        return 0;
+        return false;
     }
     if (is_round_reset()) {
-        return 0;
+        return false;
     }
     entnum = victim getentitynumber();
     if (!isdefined(level.var_660293e0[entnum])) {
         level.var_660293e0[entnum] = 1;
         level thread resetfiredamage(entnum, resetfiretime);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wraith_fire/wraith_fire

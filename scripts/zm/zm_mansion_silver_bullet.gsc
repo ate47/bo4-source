@@ -60,7 +60,7 @@ function cleanup(var_5ea5c94d, ended_early) {
 // Size: 0x1d8
 function function_3088962c() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         var_255fe317 = 0;
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change", #"hash_3cc002901b983064");
@@ -91,12 +91,12 @@ function function_3088962c() {
 // Size: 0xa4
 function function_766980a4() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"blueprint_completed");
         if (s_result.produced == getweapon(#"hash_1d4928987b5f4f6e")) {
             level zm_ui_inventory::function_7df6bb60(#"hash_26da6ef83af4ba62", 1);
-            return;
+            break;
         }
     }
 }
@@ -283,7 +283,7 @@ function function_252cf612(player) {
 // Size: 0x330
 function function_dad1960c() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         player = waitresult.e_who;
@@ -335,10 +335,10 @@ function function_dad1960c() {
 function function_ec89dca9() {
     w_current = self getcurrentweapon();
     if (!isdefined(w_current)) {
-        return 1;
+        return true;
     }
     if (zm_loadout::is_hero_weapon(w_current) || zm_equipment::is_equipment(w_current) || isdefined(w_current.isriotshield) && w_current.isriotshield || zm_weapons::is_wonder_weapon(w_current) || w_current == level.weaponnone) {
-        return 1;
+        return true;
     }
     if (self hasperk(#"specialty_extraammo")) {
         n_ammo_max = w_current.maxammo;
@@ -346,9 +346,9 @@ function function_ec89dca9() {
         n_ammo_max = w_current.startammo;
     }
     if (self getweaponammoclip(w_current) == self getweaponammoclipsize(w_current) && self getweaponammostock(w_current) == n_ammo_max && self zm_utility::function_aa45670f(w_current, 0)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mansion_silver_bullet/zm_mansion_silver_bullet
@@ -377,7 +377,7 @@ function function_4e849ab() {
 function pap_watcher() {
     self endon(#"disconnect");
     self.var_1ab0a315 = 1;
-    while (1) {
+    while (true) {
         self waittill(#"packing_weapon");
         if (isdefined(self.currentweapon)) {
             w_current = self.currentweapon;
@@ -405,7 +405,7 @@ function function_5a2bd56f(var_e7b17c0d) {
         __s endon(#"timeout");
         __s util::delay_notify(n_timeout, "timeout");
     }
-    while (1) {
+    while (true) {
         var_54a97edd = undefined;
         var_54a97edd = self waittill(#"weapon_give", #"pap_timeout");
         if (isdefined(var_54a97edd) && zm_weapons::function_93cd8e76(var_54a97edd) === var_e7b17c0d) {

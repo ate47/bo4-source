@@ -115,14 +115,14 @@ function on_player_disconnect() {
 // Size: 0x68
 function is_using_any_gadget() {
     if (!isplayer(self)) {
-        return 0;
+        return false;
     }
     for (i = 0; i < 3; i++) {
         if (self util::gadget_is_in_use(i)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ability_player/ability_player
@@ -954,22 +954,22 @@ function tutorial_hints(slot, weapon, var_8430d11b, var_6c65cb8d, var_eadf8864, 
     self notify("equip_tutorial_text_" + weapon.name);
     self endon(#"disconnect", #"death", "equip_tutorial_text_" + weapon.name);
     self tutorial_init(weapon);
-    while (1) {
+    while (true) {
         if (!self hasweapon(weapon)) {
-            return;
+            break;
         }
         currentslot = self gadgetgetslot(weapon);
         if (currentslot != slot) {
-            return;
+            break;
         }
         if (!self gadgetisready(slot)) {
-            return;
+            break;
         }
         if (self gadgetisprimed(slot)) {
-            return;
+            break;
         }
         if (self util::gadget_is_in_use(slot)) {
-            return;
+            break;
         }
         if (self isinvehicle() || self function_8bc54983() || self scene::is_igc_active() || self isplayinganimscripted()) {
             wait(5);

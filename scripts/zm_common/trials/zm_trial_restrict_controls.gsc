@@ -44,7 +44,7 @@ function private on_begin(var_bd9d962 = #"invert") {
         foreach (player in getplayers()) {
             player clientfield::set_to_player("" + #"hash_6536ca4fb2858a9f", 1);
         }
-        return;
+        break;
     case #"turret":
         foreach (player in getplayers()) {
             player bgb_pack::function_59004002(#"zm_bgb_anywhere_but_here", 1);
@@ -53,14 +53,14 @@ function private on_begin(var_bd9d962 = #"invert") {
         }
         callback::on_ai_spawned(&function_a5b02a07);
         callback::on_spawned(&function_eaba7c6f);
-        return;
+        break;
     case #"half_speed":
         foreach (player in getplayers()) {
             player setmovespeedscale(0.5);
             player allowsprint(0);
             player allowslide(0);
         }
-        return;
+        break;
     }
 }
 
@@ -121,7 +121,7 @@ function private function_3d8fa20a() {
     }
     self setmovespeedscale(0);
     self thread function_dc856fd8();
-    while (1) {
+    while (true) {
         self waittill(#"player_downed");
         self setmovespeedscale(1);
         self waittill(#"player_revived");
@@ -141,7 +141,7 @@ function private function_dc856fd8() {
     self allowjump(0);
     self allowprone(0);
     self allowsprint(0);
-    while (1) {
+    while (true) {
         self waittill(#"crafting_fail", #"crafting_success", #"bgb_update");
         if (isalive(self)) {
             self allowjump(0);

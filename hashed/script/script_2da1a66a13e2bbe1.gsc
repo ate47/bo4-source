@@ -505,7 +505,7 @@ function shed() {
                 /#
                     iprintlnbold("<unknown string>");
                 #/
-                return;
+                break;
             }
             /#
                 iprintlnbold("<unknown string>");

@@ -105,10 +105,10 @@ function teamplayercountsequal(playercounts) {
             continue;
         }
         if (count != playercounts[team]) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_ui/globallogic_ui
@@ -222,10 +222,10 @@ function teamscoresequal() {
             continue;
         }
         if (score != getteamscore(team)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_ui/globallogic_ui

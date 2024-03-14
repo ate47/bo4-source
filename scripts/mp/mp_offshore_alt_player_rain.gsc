@@ -52,7 +52,7 @@ function function_182d285c() {
 // Checksum 0x1af1fca5, Offset: 0x208
 // Size: 0x14c
 function function_5d400be9() {
-    while (1) {
+    while (true) {
         waitframe(1);
         foreach (player in getplayers()) {
             if (isalive(player) && function_325b468a(player)) {
@@ -88,15 +88,15 @@ function function_4235c686(player) {
 // Size: 0x10c
 function function_325b468a(player) {
     if (!isalive(player) || function_4235c686(player)) {
-        return 0;
+        return false;
     } else if (level.var_bd14ecc1.size == 0) {
-        return 1;
+        return true;
     }
     foreach (var_c54eaae9 in level.var_bd14ecc1) {
         if (isalive(player) && isdefined(var_c54eaae9) && player istouching(var_c54eaae9)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 

@@ -291,7 +291,7 @@ function private function_99792b2f() {
     }
     level flag::wait_till("all_players_spawned");
     level flag::wait_till("power_on");
-    while (1) {
+    while (true) {
         while (!isdefined(level.chests)) {
             waitframe(1);
         }
@@ -348,7 +348,7 @@ function function_f53cfc70() {
 function private function_4e1abe8f() {
     self endon(#"death");
     level flag::wait_till("power_on");
-    while (1) {
+    while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (!zm_utility::is_player_valid(self) || !isdefined(str_zone) || !isdefined(level.var_eb91e07c[str_zone]) || level.round_number < level.var_eb91e07c[str_zone] + 3) {
             wait(5);
@@ -391,7 +391,7 @@ function private function_d71a9fa1() {
             level.var_eb91e07c[str_zone] = level.round_number;
         }
     }
-    while (1) {
+    while (true) {
         level waittill(#"between_round_over");
         var_90c5736d = function_99a3da6a();
         foreach (str_zone in var_90c5736d) {
@@ -431,7 +431,7 @@ function private function_e1bfb2de() {
     level flag::wait_till("all_players_spawned");
     level flag::wait_till("power_on");
     wait(5);
-    while (1) {
+    while (true) {
         var_59130748 = 0;
         if (isarray(level.active_powerups) && level.active_powerups.size) {
             foreach (e_powerup in level.active_powerups) {
@@ -460,7 +460,7 @@ function private function_e1bfb2de() {
 // Size: 0xe0
 function custom_door_buy_check(e_door) {
     if (zm_trial_disable_buys::is_active()) {
-        return 0;
+        return false;
     }
     var_b35154c6 = self.score - e_door.zombie_cost;
     if (var_b35154c6 < 0 && abs(var_b35154c6) <= 200) {
@@ -469,7 +469,7 @@ function custom_door_buy_check(e_door) {
             self zm_score::player_add_points("oracle_boon", abs(var_b35154c6), undefined, undefined, undefined, undefined, 1);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
@@ -481,7 +481,7 @@ function private function_1ba093e() {
     pap_machine = getent("zm_pack_a_punch", "targetname");
     level flag::wait_till("all_players_spawned");
     level flag::wait_till("pap_machine_active");
-    while (1) {
+    while (true) {
         self waittill(#"packing_weapon");
         if (isdefined(pap_machine.unitrigger_stub.current_weapon) && zm_weapons::is_wonder_weapon(pap_machine.unitrigger_stub.current_weapon)) {
             continue;
@@ -577,7 +577,7 @@ function private function_de053460(pap_machine) {
 function private function_3fe13b7b() {
     self endon(#"death");
     level flag::wait_till("power_on");
-    while (1) {
+    while (true) {
         self waittill(#"entering_last_stand");
         var_2c7d72cf = arraycopy(self.var_466b927f);
         if (!var_2c7d72cf.size) {
@@ -668,15 +668,15 @@ function private function_c3778d8a(n_boon, n_delay = undefined) {
 // Size: 0x10c
 function private function_3b81466e(n_boon) {
     if (level flag::get(#"hash_1c0b421abe38d4e0") || level flag::get("round_reset")) {
-        return 0;
+        return false;
     }
     if (isdefined(self.s_boons[n_boon].b_available) && self.s_boons[n_boon].b_available && isdefined(self.var_6a885e6e) && !self.var_6a885e6e && self zm_audio::can_speak()) {
         self.s_boons[n_boon].b_available = 0;
         self thread function_5e8518bb(n_boon);
         self thread function_edb554f3();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons

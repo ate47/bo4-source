@@ -10,7 +10,7 @@
 // Size: 0x68
 function playfxatposition(x, fx_effect, v_position, v_forward, v_up, i_time) {
     playfx(self.owner.localclientnum, fx_effect, v_position, v_forward, v_up, i_time);
-    return 1;
+    return true;
 }
 
 // Namespace flowgraph_fx/flowgraph_fx
@@ -19,7 +19,7 @@ function playfxatposition(x, fx_effect, v_position, v_forward, v_up, i_time) {
 // Size: 0x50
 function playfxontagfunc(x, e_entity, fx_effect, str_tagname) {
     util::playfxontag(self.owner.localclientnum, fx_effect, e_entity, str_tagname);
-    return 1;
+    return true;
 }
 
 // Namespace flowgraph_fx/flowgraph_fx
@@ -28,7 +28,7 @@ function playfxontagfunc(x, e_entity, fx_effect, str_tagname) {
 // Size: 0x68
 function function_f4373d13(x, fx_effect, v_offset, v_forward, v_up, i_time) {
     playfxoncamera(self.owner.localclientnum, fx_effect, v_offset, v_forward, v_up, i_time);
-    return 1;
+    return true;
 }
 
 #namespace namespace_84ba1809;
@@ -39,7 +39,7 @@ function function_f4373d13(x, fx_effect, v_offset, v_forward, v_up, i_time) {
 // Size: 0x30
 function playexploder(x, str_name) {
     exploder::exploder(str_name);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_84ba1809/flowgraph_fx
@@ -48,7 +48,7 @@ function playexploder(x, str_name) {
 // Size: 0x30
 function stopexploder(x, str_name) {
     exploder::stop_exploder(str_name);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_84ba1809/flowgraph_fx
@@ -57,6 +57,6 @@ function stopexploder(x, str_name) {
 // Size: 0x30
 function killexploder(x, str_name) {
     exploder::kill_exploder(str_name);
-    return 1;
+    return true;
 }
 

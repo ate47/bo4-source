@@ -283,7 +283,7 @@ function function_72e84e64() {
     setmatchflag("bomb_timer_a", 1);
     setbombtimer("A", n_bomb_timer);
     level.var_a2cbd584 = 0;
-    while (1) {
+    while (true) {
         var_e8d6f89 = ct_bots::function_2a8fc6b2();
         if (var_e8d6f89 == 0 && level.var_f3bb2d59 >= level.var_2392bd18) {
             level flag::set("mission_success");
@@ -371,7 +371,7 @@ function function_3192c7f3() {
 function function_d6c7161f() {
     self endon(#"death");
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         self waittill(#"hash_477083bb681cce64");
         var_326df4eb = undefined;
         foreach (s_beacon in level.a_s_beacons) {
@@ -421,7 +421,7 @@ function function_d6c7161f() {
 // Size: 0xf8
 function function_66a805d4(e_player) {
     e_player endon(#"death", #"hash_4aaf6d6479e7cf20");
-    while (1) {
+    while (true) {
         n_wait = randomfloatrange(0.1, 0.4);
         wait(n_wait);
         n_offset = randomfloatrange(0.2, 60);
@@ -438,7 +438,7 @@ function function_95f8a9b5() {
     level endon(#"combattraining_logic_finished");
     level.var_6bac32f8 = 0;
     var_b01b427f = -1000;
-    while (1) {
+    while (true) {
         if (level.var_6bac32f8 >= 2) {
             e_player = ct_utils::get_player();
             e_player thread ct_utils::function_d471f8fa(10, undefined, 0);
@@ -470,14 +470,14 @@ function function_ce452e0() {
     if (isdefined(level.var_d4722aa0) && level.var_d4722aa0) {
         level.var_d4722aa0 = 0;
         level.var_9e5d6c86 = n_time;
-        return 1;
+        return true;
     }
     dt = n_time - level.var_9e5d6c86;
     if (dt < 50.1) {
-        return 0;
+        return false;
     }
     level.var_9e5d6c86 = n_time;
-    return 1;
+    return true;
 }
 
 // Namespace ct_firebreak/ct_firebreak

@@ -64,7 +64,7 @@ function main() {
     level endon(#"end_game");
     level.var_3c9cfd6f = 1;
     zm_player::register_player_damage_callback(&function_dcebc908);
-    while (1) {
+    while (true) {
         level waittill(#"hash_5d42d8ee7a08b543");
         switch (level.round_number) {
         case 2:

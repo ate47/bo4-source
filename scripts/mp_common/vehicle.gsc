@@ -49,16 +49,16 @@ function player_is_occupant_invulnerable(attacker, smeansofdeath) {
 // Size: 0x84
 function player_is_driver() {
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     vehicle = self getvehicleoccupied();
     if (isdefined(vehicle)) {
         seat = vehicle getoccupantseat(self);
         if (isdefined(seat) && seat == 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle/vehicle
@@ -100,7 +100,7 @@ function vehiclemainthread() {
 function vehiclespawnthread(veh_name, origin, angles, time_interval) {
     level endon(#"game_ended");
     veh_spawner = getent(veh_name + "_spawner", "targetname");
-    while (1) {
+    while (true) {
         vehicle = veh_spawner spawnfromspawner(veh_name, 1, 1, 1);
         if (!isdefined(vehicle)) {
             wait(randomfloatrange(1, 2));
@@ -134,7 +134,7 @@ function vehiclespawnthread(veh_name, origin, angles, time_interval) {
 function vehicleteamthread() {
     vehicle = self;
     vehicle endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = vehicle waittill(#"enter_vehicle");
         player = waitresult.player;
@@ -167,7 +167,7 @@ function watchplayerexitrequestthread(player) {
     vehicle = self;
     vehicle endon(#"death");
     wait(1.5);
-    while (1) {
+    while (true) {
         timeused = 0;
         while (player usebuttonpressed()) {
             timeused = timeused + 0.05;

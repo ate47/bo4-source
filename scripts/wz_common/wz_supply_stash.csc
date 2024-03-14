@@ -44,7 +44,7 @@ function private on_localclient_connect(localclientnum) {
 // Checksum 0x6c428957, Offset: 0x2d0
 // Size: 0x2bc
 function private function_53d906fd(localclientnum) {
-    while (1) {
+    while (true) {
         player = function_5c10bd79(localclientnum);
         playfx = 0;
         if (isdefined(player) && isalive(player)) {
@@ -78,7 +78,7 @@ function private function_53d906fd(localclientnum) {
 // Checksum 0x24d5c1c7, Offset: 0x598
 // Size: 0x19c
 function private function_fd3f6235(localclientnum) {
-    while (1) {
+    while (true) {
         player = function_5c10bd79(localclientnum);
         playfx = 0;
         if (player clientfield::get_to_player("infected") != 1) {

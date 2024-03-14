@@ -124,7 +124,7 @@ function turretthink() {
     turret endon(#"microwave_turret_shutdown", #"death");
     turret.trigger endon(#"death", #"delete");
     turret.turret_vehicle_entnum = turret getentitynumber();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = turret.trigger waittill(#"trigger");
         ent = waitresult.activator;
@@ -180,7 +180,7 @@ function microwaveentity(entity) {
         damagescalar = getdvarfloat(#"specialty_microwaveprotection_damage_scalar", 0.5);
     }
     turretweapon = getweapon(#"microwave_turret");
-    while (1) {
+    while (true) {
         if (!isdefined(turret) || !turret microwaveturretaffectsentity(entity) || !isdefined(turret.trigger)) {
             if (!isdefined(entity)) {
                 return;
@@ -241,28 +241,28 @@ function microwaveentity(entity) {
 function microwaveturretaffectsentity(entity) {
     turret = self;
     if (!isalive(entity)) {
-        return 0;
+        return false;
     }
     if (!isplayer(entity) && !isai(entity)) {
-        return 0;
+        return false;
     }
     if (entity.ignoreme === 1) {
-        return 0;
+        return false;
     }
     if (isdefined(turret.carried) && turret.carried) {
-        return 0;
+        return false;
     }
     if (turret weaponobjects::isstunned()) {
-        return 0;
+        return false;
     }
     if (isdefined(turret.owner) && entity == turret.owner) {
-        return 0;
+        return false;
     }
     if (!damage::friendlyfirecheck(turret.owner, entity, 0)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, turret.origin) > 750 * 750) {
-        return 0;
+        return false;
     }
     angles = turret gettagangles("tag_flash");
     origin = turret gettagorigin("tag_flash");
@@ -271,11 +271,11 @@ function microwaveturretaffectsentity(entity) {
     forward = anglestoforward(angles);
     dot = vectordot(entdirection, forward);
     if (dot < cos(15)) {
-        return 0;
+        return false;
     }
     if (entity damageconetrace(origin, turret, forward) <= 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

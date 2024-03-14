@@ -517,7 +517,7 @@ function function_b3df51ad(a_ents) {
             e_pegasus thread function_213d02bd();
         }
     #/
-    while (1) {
+    while (true) {
         level waittill(#"bombs_away");
         v_drop_point = e_pegasus zm_utility::groundpos(e_pegasus.origin);
         if (v_drop_point[2] > 600 && !function_85593a2(v_drop_point)) {
@@ -576,11 +576,11 @@ function chaos_bolt_thrower(e_target) {
         case 0:
         case 1:
             zm_aoe::function_371b4147(5, #"zm_aoe_chaos_bolt", v_pos);
-            return;
+            break;
         case 2:
         case 3:
             zm_aoe::function_371b4147(6, #"zm_aoe_chaos_bolt_2", v_pos);
-            return;
+            break;
         }
     }
 }
@@ -594,7 +594,7 @@ function private function_9e8c41f4(e_target) {
     e_target endon(#"death");
     str_target_zone = e_target function_732c74f7(3);
     if (!isdefined(str_target_zone)) {
-        return 0;
+        return false;
     }
     b_finished = 0;
     while (!b_finished) {
@@ -618,7 +618,7 @@ function private function_9e8c41f4(e_target) {
         #/
         var_59d19c72 = e_target function_732c74f7(3);
         if (!isdefined(var_59d19c72)) {
-            return 0;
+            return false;
         }
         if (var_59d19c72 == str_target_zone) {
             b_finished = 1;
@@ -627,7 +627,7 @@ function private function_9e8c41f4(e_target) {
         }
         waitframe(1);
     }
-    return 1;
+    return true;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -687,7 +687,7 @@ function function_aa23278d(a_ents) {
 function function_2858e671(var_c34665fc, e_boss) {
     level endon(#"hash_4d25b32acbac5117", #"hash_7646638df88a3656");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(var_c34665fc);
         self.health = 100000;
@@ -997,10 +997,10 @@ function function_9d06f858(var_fb8c33cc) {
         switch (var_fb8c33cc) {
         case #"hash_1bc4862b9138d947":
             level scene::play("fountain_miniboss_ent", "targetname");
-            return;
+            break;
         case #"hash_3f87a91683ebe8e3":
             level scene::play("park_miniboss_ent", "targetname");
-            return;
+            break;
         }
     }
 }
@@ -1041,7 +1041,7 @@ function function_f6306dea() {
         scene::add_scene_func(#"aib_vign_cust_zm_red_boss1_stg1_chaos_atk_01", &function_aa23278d);
         level.var_42ea19b1 = 1;
     }
-    while (1) {
+    while (true) {
         while (level flag::get(#"hash_59553ef93adcfe51")) {
             level flag::set(#"hash_44d76e9e7b9e0ebd");
             wait(0.2);
@@ -1092,7 +1092,7 @@ function function_7a7b5e79() {
     level endon(#"boss_stage_1_done", #"hash_7646638df88a3656");
     _town_pap_quest_complete = 0;
     var_22f02aa3 = struct::get_array("boss_attack_1");
-    for (s_loc = struct::get("first_strike", "script_string"); 1; s_loc = undefined) {
+    for (s_loc = struct::get("first_strike", "script_string"); true; s_loc = undefined) {
         while (level flag::get(#"hash_7be183aa6a4cbe7") || level flag::get(#"hash_6dab61ca45a8eaea")) {
             wait(1);
         }
@@ -1247,10 +1247,10 @@ function private function_ca661e4b(var_956f2977, _town_pap_quest_complete) {
         } else {
             function_84fac8d5(0, 2, self.origin);
         }
-        return;
+        break;
     case 1:
         function_84fac8d5(1, 2, level.s_boss_battle.mdl_perseus.origin);
-        return;
+        break;
     }
 }
 
@@ -1288,7 +1288,7 @@ function function_21ef9bb7(a_ents) {
     if (!function_ffa5b184(e_boss)) {
         e_boss function_2baad8fc();
     }
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = e_boss waittill(#"damage", #"death");
         e_boss.health = 100000;
@@ -1689,7 +1689,7 @@ function function_caa7eeb() {
 function function_662093d4(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_16d3e1ce95636700", #"hash_54d93a685e1f42c");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -1729,7 +1729,7 @@ function function_ce82050b() {
 // Size: 0x1dc
 function private function_123b6625(e_player) {
     if (!isdefined(e_player) || !isdefined(self)) {
-        return 0;
+        return false;
     }
     var_fe34d2c5 = self istouching(level.s_boss_battle.var_35345d3d);
     var_c58285e2 = e_player istouching(level.s_boss_battle.var_35345d3d);
@@ -1738,18 +1738,18 @@ function private function_123b6625(e_player) {
     var_363b4c7a = self istouching(level.s_boss_battle.var_76f4f0e9);
     var_5692580b = e_player istouching(level.s_boss_battle.var_76f4f0e9);
     if (!var_363b4c7a && !var_b517b5b0 && !var_fe34d2c5) {
-        return 0;
+        return false;
     }
     if (var_fe34d2c5 && var_ba5e5578 || var_fe34d2c5 && var_5692580b) {
-        return 0;
+        return false;
     }
     if (var_b517b5b0 && var_5692580b || var_b517b5b0 && var_c58285e2) {
-        return 0;
+        return false;
     }
     if (var_363b4c7a && !var_5692580b) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -1905,7 +1905,7 @@ function private function_2003ebc9(n_island) {
                 var_225a75b4.var_151f9e4b = 1;
                 var_225a75b4.unitrigger_stub thread util::delay_notify(0.1, "cancel_fasttravel_cooldown");
             }
-            continue;
+            break;
         case 2:
             if (var_225a75b4.script_string === "column_to_fountain" || var_225a75b4.script_string === "park_to_fountain") {
                 var_225a75b4.var_5a099a2d = 1;
@@ -1916,7 +1916,7 @@ function private function_2003ebc9(n_island) {
                 var_225a75b4.var_151f9e4b = 1;
                 var_225a75b4.unitrigger_stub thread util::delay_notify(0.1, "cancel_fasttravel_cooldown");
             }
-            continue;
+            break;
         }
     }
 }
@@ -1933,13 +1933,13 @@ function private function_75f1dc3a(n_island) {
                 var_225a75b4.var_5a099a2d = 1;
                 array::thread_all(util::get_players(#"allies"), &zm_red_fasttravel::function_28deccf1, var_225a75b4, 0);
             }
-            continue;
+            break;
         case 2:
             if (var_225a75b4.script_string === "fountain_to_column" || var_225a75b4.script_string === "fountain_to_park") {
                 var_225a75b4.var_5a099a2d = 1;
                 array::thread_all(util::get_players(#"allies"), &zm_red_fasttravel::function_28deccf1, var_225a75b4, 0);
             }
-            continue;
+            break;
         }
     }
 }
@@ -1992,9 +1992,9 @@ function function_b2420fe0(n_island) {
 // Size: 0x50
 function function_a695c70b(s_loc) {
     if (s_loc.script_int === 1 && level flag::get(#"hash_75d9474065de2230")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -2009,10 +2009,10 @@ function private function_c7a3202c(str_target_zone) {
                 iprintlnbold("<unknown string>");
             }
         #/
-        return 0;
+        return false;
     }
     if (var_d1ac344a === self.var_c164e6c7) {
-        return 1;
+        return true;
     }
     switch (self.var_c164e6c7) {
     case 2:
@@ -2040,7 +2040,7 @@ function private function_c7a3202c(str_target_zone) {
     s_anchor = struct::get("angles_to_" + self.var_c164e6c7);
     s_anchor scene::play(var_b0e2bf36, level.s_boss_battle.var_d82d0e73);
     self.var_c164e6c7 = var_d1ac344a;
-    return 1;
+    return true;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -2094,7 +2094,7 @@ function function_766fb0b1(var_fd1c353a) {
 // Checksum 0xc48a0c58, Offset: 0x96c0
 // Size: 0x6
 function return_false() {
-    return 0;
+    return false;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -2163,9 +2163,9 @@ function spawn_miniboss() {
 // Size: 0x30
 function function_6c856fde(e_zombie) {
     if (e_zombie.var_6f84b820 == #"basic") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -2186,7 +2186,7 @@ function function_6401a80e() {
     self notify("1306ae5632c8627a");
     self endon("1306ae5632c8627a");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"hash_1c35eb15aa210d6", #"fasttravel_finished", #"hash_178a3d0115bc972e");
         if (!isdefined(s_notify.var_9fa6220c) || !isdefined(s_notify.var_9fa6220c.script_noteworthy) || s_notify.var_9fa6220c.script_noteworthy != "traverse") {
@@ -2270,7 +2270,7 @@ function function_1722dae1() {
     self endon("4fe6867b112381d6");
     level endon(#"hash_71d7e6a55a1ca9e");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"aoe_damage");
         if (s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt" || s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt_2") {
@@ -2395,21 +2395,21 @@ function function_27486895(cmd) {
         case #"hash_478165f86a3bc512":
             level thread zm_red::function_71a6c3ea();
             level thread function_3a2efd4e(1);
-            return;
+            break;
         case #"hash_a12e7297235e57b":
             level thread function_290d42b8(1);
-            return;
+            break;
         case #"hash_7fe81b8551badbeb":
             level.s_boss_battle.var_5de58d03 = 1;
-            return;
+            break;
         case #"hash_4effcd324e5f7a28":
             setdvar(#"hash_68b9a321eca18c32", 1);
             level thread function_99f0123d();
-            return;
+            break;
         case #"hash_1c090a7b2c262602":
             setdvar(#"hash_68b9a321eca18c32", 0);
             level notify(#"hash_72be9b4e52b943b");
-            return;
+            break;
         }
     #/
 }
@@ -2422,7 +2422,7 @@ function function_d5a70078() {
     /#
         var_cab6e065 = 0;
         var_9df8166f = 0;
-        while (1) {
+        while (true) {
             if (!var_cab6e065 && getdvarint(#"hash_336a4b6a4bdec400", 0)) {
                 var_cab6e065 = 1;
                 function_2003ebc9(1);
@@ -2445,7 +2445,7 @@ function function_213d02bd() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         self endon(#"death");
-        while (1) {
+        while (true) {
             print3d(self.origin, "<unknown string>" + self.health, (1, 1, 0), 1, 2, 3);
             wait(0.1);
         }
@@ -2461,7 +2461,7 @@ function function_99f0123d() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"hash_72be9b4e52b943b");
-        while (1) {
+        while (true) {
             foreach (n_index, e_player in util::get_active_players(#"allies")) {
                 n_y_pos = 480 + 18.7 * n_index;
                 str_hero_weapon = function_9e72a96(e_player.var_b708af7b);

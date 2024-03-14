@@ -131,9 +131,9 @@ function function_28d0cf11(str_script_noteworthy) {
 function function_f79f494e() {
     var_1ce4fa50 = zombie_utility::get_current_zombie_count();
     if (var_1ce4fa50 >= level.zombie_ai_limit) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_escape_util/zm_escape_util
@@ -222,7 +222,7 @@ function function_817220a9(a_ents) {
     if (!zm_utility::is_standard()) {
         var_44ec6b44 thread function_1abf5396(a_ents[#"arm_grasp"]);
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = a_ents[#"arm_grasp"] waittill(#"damage");
         if (isplayer(s_result.attacker) && isalive(s_result.attacker)) {
@@ -248,7 +248,7 @@ function function_817220a9(a_ents) {
 // Size: 0x130
 function function_1abf5396(var_cba19e17) {
     self endon(#"death", #"hash_4a3551167bd870c2");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (isplayer(waitresult.activator) && var_cba19e17.var_ead5d884) {
@@ -267,7 +267,7 @@ function function_1abf5396(var_cba19e17) {
 // Size: 0xb0
 function function_b5ac159d() {
     self.t_arm = spawn("trigger_radius_new", self.origin, 0, 256, 96);
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.t_arm waittill(#"trigger");
         if (isplayer(s_result.activator)) {
@@ -293,7 +293,7 @@ function function_8164716a() {
         }
         if (zm_items::player_has(level.players[0], zm_crafting::get_component(#"hash_1e5657f6a6f09389"))) {
             level flag::set(#"hash_7039457b1cc827de");
-            return;
+            break;
         }
         wait(1);
     }
@@ -330,7 +330,7 @@ function function_6a1500f1() {
     a_bad_zones[7] = "zone_citadel_shower";
     level flag::wait_till("start_zombie_round_logic");
     var_f3b29ae8 = 0;
-    while (1) {
+    while (true) {
         wait(randomfloatrange(1, 20));
         for (i = 0; i < 2; i++) {
             if (isdefined(self function_3477b4e6(a_bad_zones)) && self function_3477b4e6(a_bad_zones)) {
@@ -386,9 +386,9 @@ function function_2d4f5b73() {
 function function_3477b4e6(a_bad_zones) {
     str_zone = self zm_zonemgr::get_player_zone();
     if (isinarray(a_bad_zones, str_zone)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_escape_util/zm_escape_util
@@ -667,9 +667,9 @@ function make_wobble() {
 // Size: 0x60
 function private function_ba62dc81() {
     if (isdefined(level.e_gondola) && isdefined(level.e_gondola.t_ride) && self istouching(level.e_gondola.t_ride)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_escape_util/zm_escape_util
@@ -737,7 +737,7 @@ function function_67710e66(b_enable = 0) {
 // Checksum 0x280c7a2b, Offset: 0x2f68
 // Size: 0x160
 function private function_5d3c7c04() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"brutus_locked", #"unlock_purchased");
         if (s_result.s_stub.targetname !== "crafting_trigger") {

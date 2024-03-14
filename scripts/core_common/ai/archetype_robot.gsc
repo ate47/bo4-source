@@ -592,7 +592,7 @@ function private robotprocedurallandingupdate(entity, asmstatename) {
 // Size: 0xa32
 function private robotcalcproceduraltraversal(entity, asmstatename) {
     if (!isdefined(entity.traversestartnode) || !isdefined(entity.traverseendnode)) {
-        return 1;
+        return true;
     }
     entity.traversal = spawnstruct();
     traversal = entity.traversal;
@@ -687,7 +687,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
     traversal.endtime = traversal.starttime + traversal.curvelength * 1000 / traversal.speedoncurve;
     traversal.totaltime = traversal.endtime - traversal.starttime;
     traversal.landing = 0;
-    return 1;
+    return true;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -751,7 +751,7 @@ function private robotwallruntraverse(entity) {
         endiswallrun = endnode.spawnflags & 2048;
         return (startiswallrun || endiswallrun);
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1115,7 +1115,7 @@ function private archetyperobotblackboardinit() {
 // Size: 0x10a
 function private robotcrawlercanshootenemy(entity) {
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     aimlimits = entity getaimlimitsfromentry("robot_crawler");
     yawtoenemy = angleclamp180(vectortoangles(entity lastknownpos(entity.enemy) - entity.origin)[1] - entity.angles[1]);
@@ -1194,12 +1194,12 @@ function robotcanjuke(entity) {
         tooclosejukedistancesqr = 57600;
         foreach (event in jukeevents) {
             if (distance2dsquared(entity.origin, event.data.origin) <= tooclosejukedistancesqr) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1211,7 +1211,7 @@ function robotcantacticaljuke(entity) {
         jukedirection = aiutility::calculatejukedirection(entity, 50, entity.jukedistance);
         return (jukedirection != "forward");
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1288,7 +1288,7 @@ function private robotcrawlerservice(entity) {
     if (isdefined(entity.crawlerlifetime) && entity.crawlerlifetime <= gettime() && entity.health > 0) {
         entity kill();
     }
-    return 1;
+    return true;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1400,9 +1400,9 @@ function private robotdonttakecover(entity) {
 // Size: 0xb0
 function private _isvalidplayer(player) {
     if (!isdefined(player) || !isalive(player) || !isplayer(player) || player.sessionstate == "spectator" || player.sessionstate == "intermission" || player laststand::player_is_in_laststand() || player.ignoreme) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1590,13 +1590,13 @@ function private robotshouldshutdown(entity) {
 function private robotshouldexplode(entity) {
     if (entity.controllevel >= 3) {
         if (entity ai::get_behavior_attribute("rogue_force_explosion")) {
-            return 1;
+            return true;
         } else if (isdefined(entity.enemy)) {
             enemydistsq = distancesquared(entity.origin, entity.enemy.origin);
             return (enemydistsq < 3600);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1605,7 +1605,7 @@ function private robotshouldexplode(entity) {
 // Size: 0x44
 function private robotshouldadjusttocover(entity) {
     if (!isdefined(entity.node)) {
-        return 0;
+        return false;
     }
     return entity getblackboardattribute("_stance") != "crouch";
 }
@@ -1689,7 +1689,7 @@ function private robotsupportsovercover(entity) {
         }
         return (entity.node.type == #"cover left" || entity.node.type == #"cover right" || entity.node.type == #"cover crouch" || entity.node.type == #"cover crouch window" || entity.node.type == #"conceal crouch");
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1721,7 +1721,7 @@ function private canmovetoenemycondition(entity) {
 // Size: 0xa4
 function private canmoveclosetoenemycondition(entity) {
     if (!isdefined(entity.enemy) || entity.enemy.health <= 0) {
-        return 0;
+        return false;
     }
     queryresult = positionquery_source_navigation(entity.enemy.origin, 0, 120, 120, 20, entity);
     positionquery_filter_inclaimedlocation(queryresult, entity);
@@ -1734,7 +1734,7 @@ function private canmoveclosetoenemycondition(entity) {
 // Size: 0x38
 function private robotstartsprint(entity) {
     entity setblackboardattribute("_locomotion_speed", "locomotion_speed_sprint");
-    return 1;
+    return true;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1743,7 +1743,7 @@ function private robotstartsprint(entity) {
 // Size: 0x38
 function private robotstartsupersprint(entity) {
     entity setblackboardattribute("_locomotion_speed", "locomotion_speed_super_sprint");
-    return 1;
+    return true;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1755,7 +1755,7 @@ function private robottacticalwalkactionstart(entity) {
     aiutility::setcanbeflanked(entity, 0);
     entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
     entity setblackboardattribute("_stance", "stand");
-    return 1;
+    return true;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1867,9 +1867,9 @@ function private movetoplayerupdate(entity, asmstatename) {
 // Size: 0x48
 function private robotshouldchargemelee(entity) {
     if (aiutility::shouldmutexmelee(entity) && robothasenemytomelee(entity)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1884,7 +1884,7 @@ function private robothasenemytomelee(entity) {
             return (abs(yawtoenemy) <= 80);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1894,11 +1894,11 @@ function private robothasenemytomelee(entity) {
 function private robotroguehasenemytomelee(entity) {
     if (isdefined(entity.enemy) && issentient(entity.enemy) && entity.enemy.health > 0 && entity ai::get_behavior_attribute("rogue_control") != "level_3") {
         if (!entity cansee(entity.enemy)) {
-            return 0;
+            return false;
         }
         return (distancesquared(entity.origin, entity.enemy.origin) < 132 * 132);
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1907,9 +1907,9 @@ function private robotroguehasenemytomelee(entity) {
 // Size: 0x48
 function private robotshouldmelee(entity) {
     if (aiutility::shouldmutexmelee(entity) && robothascloseenemytomelee(entity)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1919,7 +1919,7 @@ function private robotshouldmelee(entity) {
 function private robothascloseenemytomelee(entity) {
     if (isdefined(entity.enemy) && issentient(entity.enemy) && entity.enemy.health > 0) {
         if (!entity cansee(entity.enemy)) {
-            return 0;
+            return false;
         }
         enemydistsq = distancesquared(entity.origin, entity.enemy.origin);
         if (enemydistsq < 64 * 64) {
@@ -1927,7 +1927,7 @@ function private robothascloseenemytomelee(entity) {
             return (abs(yawtoenemy) <= 80);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1938,7 +1938,7 @@ function private robotroguehascloseenemytomelee(entity) {
     if (isdefined(entity.enemy) && issentient(entity.enemy) && entity.enemy.health > 0 && entity ai::get_behavior_attribute("rogue_control") != "level_3") {
         return (distancesquared(entity.origin, entity.enemy.origin) < 64 * 64);
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1967,7 +1967,7 @@ function private robottookempdamage(entity) {
         weapon = entity.damageweapon;
         return (entity.damagemod == "MOD_GRENADE_SPLASH" && weapon.rootweapon.name == #"emp_grenade");
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -1977,9 +1977,9 @@ function private robottookempdamage(entity) {
 function private robotnocloseenemyservice(entity) {
     if (isdefined(entity.enemy) && aiutility::shouldmelee(entity)) {
         entity clearpath();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2111,7 +2111,7 @@ function private robotabletoshootcondition(entity) {
 // Size: 0x3c
 function private robotshouldtacticalwalk(entity) {
     if (!entity haspath()) {
-        return 0;
+        return false;
     }
     return !robotismarching(entity);
 }
@@ -2122,10 +2122,10 @@ function private robotshouldtacticalwalk(entity) {
 // Size: 0x5dc
 function private _robotcoverposition(entity) {
     if (entity isflankedatcovernode()) {
-        return 0;
+        return false;
     }
     if (entity shouldholdgroundagainstenemy()) {
-        return 0;
+        return false;
     }
     shouldusecovernode = undefined;
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
@@ -2182,11 +2182,11 @@ function private _robotcoverposition(entity) {
                 entity.robotnode = node;
                 entity.robotnode.robotclaimed = 1;
                 entity pathmode("move delayed", 0, randomfloatrange(0.25, 2));
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2197,16 +2197,16 @@ function private _robotescortposition(entity) {
     if (entity ai::get_behavior_attribute("move_mode") == "escort") {
         escortposition = entity ai::get_behavior_attribute("escort_position");
         if (!isdefined(escortposition)) {
-            return 1;
+            return true;
         }
         if (distance2dsquared(entity.origin, escortposition) <= 22500) {
-            return 1;
+            return true;
         }
         if (isdefined(entity.escortnexttime) && gettime() < entity.escortnexttime) {
-            return 1;
+            return true;
         }
         if (entity getpathmode() == "dont move") {
-            return 1;
+            return true;
         }
         positiononnavmesh = getclosestpointonnavmesh(escortposition, 200);
         if (!isdefined(positiononnavmesh)) {
@@ -2231,9 +2231,9 @@ function private _robotescortposition(entity) {
                 entity.escortnexttime = gettime() + randomintrange(200, 300);
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2244,14 +2244,14 @@ function private _robotrusherposition(entity) {
     if (entity ai::get_behavior_attribute("move_mode") == "rusher") {
         entity pathmode("move allowed");
         if (!isdefined(entity.enemy)) {
-            return 1;
+            return true;
         }
         disttoenemysqr = distance2dsquared(entity.origin, entity.enemy.origin);
         if (disttoenemysqr <= entity.robotrushermaxradius * entity.robotrushermaxradius && disttoenemysqr >= entity.robotrusherminradius * entity.robotrusherminradius) {
-            return 1;
+            return true;
         }
         if (isdefined(entity.rushernexttime) && gettime() < entity.rushernexttime) {
-            return 1;
+            return true;
         }
         positiononnavmesh = getclosestpointonnavmesh(entity.enemy.origin, 200);
         if (!isdefined(positiononnavmesh)) {
@@ -2277,9 +2277,9 @@ function private _robotrusherposition(entity) {
                 entity.rushernexttime = gettime() + randomintrange(500, 1500);
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2289,7 +2289,7 @@ function private _robotrusherposition(entity) {
 function private _robotguardposition(entity) {
     if (entity ai::get_behavior_attribute("move_mode") == "guard") {
         if (entity getpathmode() == "dont move") {
-            return 1;
+            return true;
         }
         if (!isdefined(entity.guardposition) || distancesquared(entity.origin, entity.guardposition) < 60 * 60) {
             entity pathmode("move delayed", 1, randomfloatrange(1, 1.5));
@@ -2322,13 +2322,13 @@ function private _robotguardposition(entity) {
         }
         if (isdefined(entity.guardposition)) {
             entity function_a57c34b7(entity.guardposition);
-            return 1;
+            return true;
         }
     }
     entity.guardposition = undefined;
     entity.intermediateguardposition = undefined;
     entity.intermediateguardtime = undefined;
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2349,37 +2349,37 @@ function private robotpositionservice(entity) {
             entity.robotnode.robotclaimed = undefined;
             entity.robotnode = undefined;
         }
-        return 0;
+        return false;
     }
     if (entity.disablerepath) {
-        return 0;
+        return false;
     }
     if (!robotabletoshootcondition(entity)) {
-        return 0;
+        return false;
     }
     if (entity ai::get_behavior_attribute("phalanx")) {
-        return 0;
+        return false;
     }
     if (aisquads::isfollowingsquadleader(entity)) {
-        return 0;
+        return false;
     }
     if (_robotrusherposition(entity)) {
-        return 1;
+        return true;
     }
     if (_robotguardposition(entity)) {
-        return 1;
+        return true;
     }
     if (_robotescortposition(entity)) {
-        return 1;
+        return true;
     }
     if (!aiutility::issafefromgrenades(entity)) {
         aiutility::releaseclaimnode(entity);
         aiutility::choosebestcovernodeasap(entity);
     }
     if (_robotcoverposition(entity)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2424,33 +2424,33 @@ function private robotpreemptivejuketerminate(entity) {
 function private robottryreacquireservice(entity) {
     movemode = entity ai::get_behavior_attribute("move_mode");
     if (movemode == "rusher" || movemode == "escort" || movemode == "guard") {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.reacquire_state)) {
         entity.reacquire_state = 0;
     }
     if (!isdefined(entity.enemy)) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (entity haspath()) {
-        return 0;
+        return false;
     }
     if (!robotabletoshootcondition(entity)) {
-        return 0;
+        return false;
     }
     if (entity ai::get_behavior_attribute("force_cover")) {
-        return 0;
+        return false;
     }
     if (entity cansee(entity.enemy) && entity canshootenemy()) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     dirtoenemy = vectornormalize(entity.enemy.origin - entity.origin);
     forward = anglestoforward(entity.angles);
     if (vectordot(dirtoenemy, forward) < 0.5) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     switch (entity.reacquire_state) {
     case 0:
@@ -2467,16 +2467,16 @@ function private robottryreacquireservice(entity) {
     default:
         if (entity.reacquire_state > 15) {
             entity.reacquire_state = 0;
-            return 0;
+            return false;
         }
         break;
     }
     if (isvec(reacquirepos)) {
         entity function_a57c34b7(reacquirepos);
-        return 1;
+        return true;
     }
     entity.reacquire_state++;
-    return 0;
+    return false;
 }
 
 // Namespace robotsoldierbehavior/archetype_robot
@@ -2582,7 +2582,7 @@ function private supportsstepoutcondition(entity) {
 // Size: 0xfc
 function private shouldstepincondition(entity) {
     if (!isdefined(entity.steppedoutofcover) || !entity.steppedoutofcover || !isdefined(entity.steppedouttime) || !entity.steppedoutofcover) {
-        return 0;
+        return false;
     }
     exposedtimeinseconds = float(gettime() - entity.steppedouttime) / 1000;
     exceededtime = exposedtimeinseconds >= 4 || exposedtimeinseconds >= 8;
@@ -3202,7 +3202,7 @@ function roguecontrolattributecallback(entity, attribute, oldvalue, value) {
         if (entity.controllevel <= 0) {
             forcerobotsoldiermindcontrollevel1();
         }
-        return;
+        break;
     case #"forced_level_2":
         if (entity.controllevel <= 1) {
             forcerobotsoldiermindcontrollevel2();
@@ -3211,7 +3211,7 @@ function roguecontrolattributecallback(entity, attribute, oldvalue, value) {
                 randomgibroguerobot(entity);
             }
         }
-        return;
+        break;
     case #"forced_level_3":
         if (entity.controllevel <= 2) {
             forcerobotsoldiermindcontrollevel3();
@@ -3220,7 +3220,7 @@ function roguecontrolattributecallback(entity, attribute, oldvalue, value) {
                 randomgibroguerobot(entity);
             }
         }
-        return;
+        break;
     }
 }
 
@@ -3236,19 +3236,19 @@ function robotmovemodeattributecallback(entity, attribute, oldvalue, value) {
     }
     switch (value) {
     case #"normal":
-        return;
+        break;
     case #"rambo":
         entity.ignorepathenemyfightdist = 1;
-        return;
+        break;
     case #"marching":
         entity.ignorepathenemyfightdist = 1;
         entity setblackboardattribute("_move_mode", "marching");
-        return;
+        break;
     case #"rusher":
         if (!entity ai::get_behavior_attribute("can_become_rusher")) {
             entity ai::set_behavior_attribute("move_mode", oldvalue);
         }
-        return;
+        break;
     }
 }
 
@@ -3323,13 +3323,13 @@ function roguecontrolspeedattributecallback(entity, attribute, oldvalue, value) 
     switch (value) {
     case #"walk":
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_walk");
-        return;
+        break;
     case #"run":
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_run");
-        return;
+        break;
     case #"sprint":
         entity setblackboardattribute("_locomotion_speed", "locomotion_speed_sprint");
-        return;
+        break;
     }
 }
 
@@ -3341,10 +3341,10 @@ function robottraversalattributecallback(entity, attribute, oldvalue, value) {
     switch (value) {
     case #"normal":
         entity.manualtraversemode = 0;
-        return;
+        break;
     case #"procedural":
         entity.manualtraversemode = 1;
-        return;
+        break;
     }
 }
 

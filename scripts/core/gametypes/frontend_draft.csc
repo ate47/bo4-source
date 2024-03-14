@@ -210,13 +210,13 @@ function function_93a4f3c5(localclientnum, draftcharacter, characterselected = 0
     if (player_role::is_valid([[ draftcharacter ]]->function_82e05d64().focusedcharacterindex)) {
         var_3f83e0ee = character_customization::function_7474681d(localclientnum, sessionmode, [[ draftcharacter ]]->function_82e05d64().focusedcharacterindex);
         if (!character_customization::function_aa5382ed([[ draftcharacter ]]->function_82e05d64().var_435f68bc, var_3f83e0ee)) {
-            return 0;
+            return false;
         }
         [[ draftcharacter ]]->function_82e05d64().var_435f68bc = var_3f83e0ee;
     } else if (!isdefined([[ draftcharacter ]]->function_82e05d64().var_435f68bc) || character_customization::function_aa5382ed([[ draftcharacter ]]->function_82e05d64().var_435f68bc, [[ draftcharacter ]]->function_82e05d64().var_c018da16)) {
         [[ draftcharacter ]]->function_82e05d64().var_435f68bc = [[ draftcharacter ]]->function_82e05d64().var_c018da16;
     } else {
-        return 0;
+        return false;
     }
     var_e297151a = "scene_frontend_t8_mp_male_team_0";
     [[ draftcharacter ]]->set_character_mode(sessionmode);
@@ -241,10 +241,10 @@ function function_93a4f3c5(localclientnum, draftcharacter, characterselected = 0
         if (isdefined([[ draftcharacter ]]->function_82e05d64().visible) && [[ draftcharacter ]]->function_82e05d64().visible) {
             [[ draftcharacter ]]->function_27945cb8(1);
         }
-        return 0;
+        return false;
     }
     [[ draftcharacter ]]->function_82e05d64().params.scene = var_e297151a;
-    return 1;
+    return true;
 }
 
 // Namespace draft/frontend_draft
@@ -379,10 +379,10 @@ function setup_team(localclientnum) {
         targetname = "ZMdraftCharacter";
     }
     var_9b6e828a = array::randomize(array(#"pb_launcher_alt_endgame_1stplace_idle", #"pb_sniper_endgame_1stplace_idle", #"pb_lmg_endgame_1stplace_idle"));
-    for (i = 0; 1; i++) {
+    for (i = 0; true; i++) {
         var_3ec3c6aa = function_75442e78(i);
         if (!isdefined(var_3ec3c6aa)) {
-            return;
+            break;
         }
         if (!isdefined(level.draftcharacters[i])) {
             model = util::spawn_model(localclientnum, "tag_origin", var_3ec3c6aa.origin, var_3ec3c6aa.angles);
@@ -408,7 +408,7 @@ function function_a5644aa3(localclientnum) {
     self notify("7d76e12da1faca50");
     self endon("7d76e12da1faca50");
     level endon(#"disconnect", #"draft_closed");
-    while (1) {
+    while (true) {
         level waittill(#"hash_4bb9479c29665c84");
         function_532dfc0b(localclientnum, 1000);
         level.var_e6802f10 = 1;
@@ -431,7 +431,7 @@ function function_9c896b69(localclientnum) {
     self notify("5b07248da504b6c9");
     self endon("5b07248da504b6c9");
     level endon(#"disconnect", #"draft_closed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"positiondraft_update", #"positiondraft_reject", #"hash_6f2435126950e914");
         localclientnum = waitresult.localclientnum;
@@ -497,7 +497,7 @@ function function_66e7c332(index) {
 function function_393e6d42() {
     self notify("367619e27fe3cbc2");
     self endon("367619e27fe3cbc2");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"positiondraft_playgesture");
         level.var_6963abdb[waitresult.xuid] = waitresult.gesture_index;
@@ -578,7 +578,7 @@ function function_37313c1b(localclientnum) {
     self notify("58006327a1d63bff");
     self endon("58006327a1d63bff");
     level endon(#"disconnect", #"draft_closed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hash_8946580b1303e30");
         function_e79c182b(localclientnum, 0, 1);
@@ -610,7 +610,7 @@ function function_9afd868e(localclientnum) {
 // Size: 0x78
 function function_ca03ab69() {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"positiondraft_open");
         localclientnum = waitresult.localclientnum;
@@ -624,7 +624,7 @@ function function_ca03ab69() {
 // Size: 0x114
 function function_91858511() {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"positiondraft_close");
         localclientnum = waitresult.localclientnum;

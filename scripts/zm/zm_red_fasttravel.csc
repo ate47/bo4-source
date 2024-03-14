@@ -80,17 +80,17 @@ function function_ec7e76a8(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         var_1b5be828.n_fx_id = util::playfxontag(localclientnum, level._effect[#"hash_359655df3976b4e0"], var_1b5be828, "tag_origin");
-        return;
+        break;
     case 1:
         var_1b5be828.n_fx_id = util::playfxontag(localclientnum, level._effect[#"hash_7844498a1d0272cf"], var_1b5be828, "tag_origin");
         var_1b5be828.var_b3673abf = var_1b5be828 playloopsound(#"hash_67c353461c5e3f2c");
         var_1b5be828 playsound(localclientnum, #"hash_2cc8c6c1b8e764b9");
-        return;
+        break;
     case 2:
         var_1b5be828.n_fx_id = util::playfxontag(localclientnum, level._effect[#"hash_1485000e3492adb9"], var_1b5be828, "tag_origin");
         var_1b5be828.var_b3673abf = var_1b5be828 playloopsound(#"hash_27fed7313de44e58");
         var_1b5be828 playsound(localclientnum, #"hash_3cf81bf9f70bc77d");
-        return;
+        break;
     }
 }
 

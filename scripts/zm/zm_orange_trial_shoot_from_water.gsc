@@ -62,7 +62,7 @@ function private function_9e0e99e1() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
     var_407eb07 = 0;
-    while (1) {
+    while (true) {
         var_f2b6fe6e = 0;
         if (self.b_in_water === 1) {
             var_f2b6fe6e = 1;

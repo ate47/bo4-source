@@ -337,13 +337,13 @@ function post_main() {
 function cheat_enabled(val) {
     if (getdvarint(#"zombie_cheat", 0) >= val) {
         /#
-            return 1;
+            return true;
         #/
         if (isprofilebuild()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm/zm
@@ -475,7 +475,7 @@ function function_d797f41f(n_waittime = 1) {
 function _outro_slow(func) {
     level endon(#"all_players_connected", #"game_ended");
     array::thread_all(getplayers(), func);
-    while (1) {
+    while (true) {
         result = undefined;
         result = level waittill(#"connected");
         result.player thread [[ func ]]();
@@ -1480,7 +1480,7 @@ function actor_killed_override(einflictor, attacker, idamage, smeansofdeath, wea
 // Checksum 0x5bac952f, Offset: 0x7a20
 // Size: 0x6e
 function round_end_monitor() {
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         demo::bookmark(#"zm_round_end", gettime(), undefined, undefined, 1);
         bbpostdemostreamstatsforround(level.round_number);
@@ -1494,7 +1494,7 @@ function round_end_monitor() {
 // Size: 0xbc
 function function_51133aa1() {
     level endon(#"resume_end_game");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         response = waitresult.response;
@@ -1766,9 +1766,9 @@ function disable_end_game_intermission(delay) {
 // Size: 0x3c
 function check_end_game_intermission_delay() {
     if (isdefined(level.disable_intermission)) {
-        while (1) {
+        while (true) {
             if (!isdefined(level.disable_intermission)) {
-                return;
+                break;
             }
             wait(0.01);
         }
@@ -1962,7 +1962,7 @@ function default_exit_level() {
 // Size: 0x74
 function default_delayed_exit() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (!level flag::get("wait_and_revive")) {
             return;
         }
@@ -2128,10 +2128,10 @@ function player_too_many_players_check() {
 function is_idgun_damage(weapon) {
     if (isdefined(level.idgun_weapons)) {
         if (isinarray(level.idgun_weapons, weapon)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm/zm

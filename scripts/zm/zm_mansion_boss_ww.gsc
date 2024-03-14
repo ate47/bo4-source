@@ -376,7 +376,7 @@ function function_92a12286() {
     self endon("6d0604ca8ddb9571");
     level endon(#"intermission", #"game_end");
     self endon(#"death");
-    while (1) {
+    while (true) {
         var_4935908f = 0;
         foreach (s_area in level.s_boss.var_da2d7834) {
             if (self istouching(s_area.var_186c542d)) {
@@ -680,7 +680,7 @@ function function_a676dbd7() {
         if (zm_utility::is_player_valid(e_target, 1, 0, 0)) {
             return e_target;
         }
-    } while (1);
+    } while (true);
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -729,13 +729,13 @@ function function_542eeaa7(n_stage) {
     switch (n_stage) {
     case 1:
         self function_69c3faf8();
-        return;
+        break;
     case 2:
         self function_14c34456();
-        return;
+        break;
     case 3:
         self function_a2550f93();
-        return;
+        break;
     }
 }
 
@@ -813,7 +813,7 @@ function function_738f7574(n_stage) {
         var_de4b911c = 1;
         break;
     }
-    while (1) {
+    while (true) {
         if (var_3b12bc77) {
             level thread function_f433c7f5(n_stage);
             level waittill(#"hash_3d52ec26acedf741");
@@ -1008,7 +1008,7 @@ function function_7bcf3048() {
 function function_c1b6e914() {
     level endon(#"hash_4be216e72d412c40", #"hash_3d52ec26acedf741", #"hash_38f29f9cb03586ea", #"end_game", #"intermission");
     self endon(#"death");
-    while (1) {
+    while (true) {
         zombies = getaiteamarray(level.zombie_team);
         a_players = util::get_active_players();
         ents = arraycombine(a_players, zombies, 0, 0);
@@ -1219,7 +1219,7 @@ function function_bb528a4b(n_stage) {
     self.var_18acfe18 = 0;
     self.var_35eb7b2a = gettime() + 1000;
     self.var_a58d72c0 = 0;
-    while (1) {
+    while (true) {
         var_17c6835 = 0;
         s_notify = undefined;
         s_notify = e_damage waittill(#"damage");
@@ -1450,7 +1450,7 @@ function function_ae76e58d() {
 // Size: 0x168
 function function_a430c55f() {
     level endon(#"hash_25d8c88ff3f91ee5", #"end_game", #"intermission");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1716,12 +1716,12 @@ function function_1025059f(var_2175ea54, n_statue, var_2d102ea7, var_b7daddf4 = 
 function function_a2fa8688() {
     foreach (var_1611cc08 in level.var_b5fff38b) {
         if (!var_1611cc08.var_5f88b76a) {
-            return 0;
+            return false;
         }
     }
     level flag::set(#"hash_5f2b9a36a2c517af");
     level flag::clear(#"hash_eed1544f10c5bb3");
-    return 1;
+    return true;
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -1779,7 +1779,7 @@ function function_a70e02d3(var_b66cd272) {
 // Size: 0x19c
 function function_ec25f7c2() {
     level endon(#"hash_eed1544f10c5bb3", #"end_game", #"intermission");
-    while (1) {
+    while (true) {
         if (distance2dsquared(level.s_boss.var_4944ec8.origin, self.origin) < 25600) {
             self thread function_ccd8387e(3);
             level.s_boss.var_4944ec8 animation::stop(0);
@@ -1802,7 +1802,7 @@ function function_ec25f7c2() {
 // Size: 0x158
 function function_2b6b4a44() {
     level endon(#"hash_38f29f9cb03586ea", #"spawn_zombies", #"end_game", #"intermission");
-    while (1) {
+    while (true) {
         level notify(#"hash_6986218d09dc1cb2");
         util::wait_network_frame(1);
         level function_e2f134ce();
@@ -1869,7 +1869,7 @@ function function_de60e752() {
             a_s_spawnpoints = arraycombine(a_s_spawnpoints, struct::get_array(str_zone + "_spawner"), 0, 0);
         }
     }
-    while (1) {
+    while (true) {
         while (getaiteamarray(level.zombie_team).size >= n_max_active_ai) {
             util::wait_network_frame();
         }
@@ -1931,7 +1931,7 @@ function function_f5b2d086() {
     var_e8ebec1d = array(#"hash_7c89b1397a38e3ad", #"hash_7c89ae397a38de94", #"hash_7c89af397a38e047", #"hash_7c89ac397a38db2e");
     level.var_8a64ef3a = 0;
     var_ffd2fe87 = 4 + level.var_f3c4bd00;
-    while (1) {
+    while (true) {
         if (getaiteamarray(level.zombie_team).size > 0 && level.var_8a64ef3a / getaiteamarray(level.zombie_team).size * 100 < var_ffd2fe87) {
             var_6c463143 = 1;
         } else {
@@ -1994,7 +1994,7 @@ function function_e9cc6379(var_4642da4d, var_732926d1 = 0) {
     }
     var_c441a64d = undefined;
     var_d9ca600e = 0;
-    while (1) {
+    while (true) {
         wait(randomfloatrange(20, 25));
         var_50e016a7 = level.var_83c0592c + var_4642da4d;
         var_f67b2fc0 = 0;
@@ -2089,7 +2089,7 @@ function function_83275bc3(s_spawn_loc) {
 function function_de5e2c78() {
     level endon(#"end_game", #"intermission");
     s_spawnloc = array::random(level.var_db1658d1);
-    while (1) {
+    while (true) {
         s_spawnloc = array::random(level.var_db1658d1);
         if (!(isdefined(self.var_ebae258d) && self.var_ebae258d)) {
             s_spawnloc thread function_8f28b521();

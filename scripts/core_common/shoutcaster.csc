@@ -106,7 +106,7 @@ function private shoutcaster_monitor_xray_change(local_client_num) {
         var_28f6bf0f = (getshoutcastersetting(local_client_num, "shoutcaster_ds_xray_air_allies") ? 1 : 0) + (getshoutcastersetting(local_client_num, "shoutcaster_ds_xray_air_enemies") ? 2 : 0);
         var_c1935186 = function_2e6e4ee0(local_client_num);
     }
-    while (1) {
+    while (true) {
         waitframe(1);
         if (!is_shoutcaster(local_client_num)) {
             continue;
@@ -219,15 +219,15 @@ function function_a0b844f1(local_client_num, rob_key, rob) {
 // Size: 0x4a
 function private function_7ed4edd3(playername) {
     if (!isdefined(playername)) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.shoutcasterpucks)) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.shoutcasterpucks[playername])) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace shoutcaster/shoutcaster
@@ -236,18 +236,18 @@ function private function_7ed4edd3(playername) {
 // Size: 0x5c
 function private function_2b07633f(playername) {
     if (!isdefined(playername)) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.var_b9e7d957)) {
-        return 0;
+        return false;
     }
     if (level.var_b9e7d957 != playername) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.var_fea1a13)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace shoutcaster/shoutcaster
@@ -306,7 +306,7 @@ function private function_69b179ea(localclientnum) {
 function private shoutcaster_monitor_player_pucks(localclientnum) {
     level notify("shoutcaster_monitor_player_pucks" + localclientnum);
     level endon("shoutcaster_monitor_player_pucks" + localclientnum);
-    while (1) {
+    while (true) {
         waitframe(1);
         if (!is_shoutcaster(localclientnum)) {
             continue;

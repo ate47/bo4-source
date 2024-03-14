@@ -67,15 +67,15 @@ function __init__() {
 // Size: 0xcc
 function function_83c8b26e(weapon, var_e7c11b0c = 1) {
     if (weapon == level.hero_weapon[#"minigun"][2]) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"minigun"][1] && var_e7c11b0c < 3) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"minigun"][0] && var_e7c11b0c < 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
@@ -85,7 +85,7 @@ function function_83c8b26e(weapon, var_e7c11b0c = 1) {
 function private function_9592c5c1() {
     self endon(#"disconnect");
     self thread function_1b26ce66();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -127,7 +127,7 @@ function private function_9592c5c1() {
 // Size: 0x98
 function private function_1b26ce66() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
@@ -258,7 +258,7 @@ function private function_335a27d1() {
 // Size: 0x84
 function function_6fa9af0e(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == w_minigun) {
@@ -295,7 +295,7 @@ function function_bce04a11(w_minigun) {
 // Size: 0x22e
 function function_ebaedcdd(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee_power_left");
         if (s_result.weapon == w_minigun) {
@@ -321,7 +321,7 @@ function function_ebaedcdd(w_minigun) {
 // Size: 0x4b2
 function function_9d166ae8(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon === w_minigun && s_result._notify == "weapon_melee") {

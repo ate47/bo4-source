@@ -312,7 +312,7 @@ function function_ee7ebb1a() {
 // Size: 0xd4
 function function_3ff7750a() {
     level endon(#"hash_70efff113b745513");
-    while (1) {
+    while (true) {
         var_a5e3ee12 = trigger::wait_till("trigger_amph_entrance");
         if (isplayer(var_a5e3ee12.who)) {
             player = var_a5e3ee12.who;
@@ -484,7 +484,7 @@ function function_95d6655b() {
     var_168ccd6b = getent("vol_power_quest_kill_zone", "targetname");
     level.zones[#"zone_amphitheater"].is_spawning_allowed = 0;
     wait(2);
-    while (1) {
+    while (true) {
         foreach (ai_zombie in getaiteamarray(level.zombie_team)) {
             if (!(isdefined(ai_zombie.var_ae4569d5) && ai_zombie.var_ae4569d5) && ai_zombie istouching(var_168ccd6b) && isdefined(ai_zombie)) {
                 ai_zombie thread despawn_zombie();
@@ -547,10 +547,10 @@ function function_71ac80d2() {
     var_f64e8455 = getplayers();
     if (isdefined(var_1679e8e) && isdefined(var_f64e8455)) {
         if (var_1679e8e.size === var_f64e8455.size) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
@@ -559,7 +559,7 @@ function function_71ac80d2() {
 // Size: 0x14c
 function function_63102269() {
     level endon(#"hash_4d8091aa6a26d815");
-    while (1) {
+    while (true) {
         var_1679e8e = function_22230e37();
         var_f64e8455 = getplayers();
         if (isdefined(var_1679e8e) && isdefined(var_f64e8455)) {
@@ -570,7 +570,7 @@ function function_63102269() {
                 function_a7bdf314();
                 level flag::wait_till("spawn_zombies");
                 level flag::clear("spawn_zombies");
-                return;
+                break;
             }
         }
         wait(0.5);
@@ -726,7 +726,7 @@ function function_aab4eb23() {
     self endon(#"death");
     self val::set(#"dormant_takedamage", "takedamage", 1);
     self.health = 99999999;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
@@ -783,13 +783,13 @@ function function_969cb6b2(e_player) {
         if (!b_disable && b_is_valid) {
             str_prompt = zm_utility::function_d6046228(#"hash_65fb48b6dbf04c10", #"hash_2e613e6f3511ecbc");
             self sethintstringforplayer(e_player, str_prompt);
-            return 1;
+            return true;
         } else {
             self sethintstringforplayer(e_player, "");
-            return 0;
+            return false;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest
@@ -809,7 +809,7 @@ function function_8efba1b4() {
     mdl_blocker setinvisibletoplayer(self);
     level flag::wait_till(#"hash_dc34ebe02d09532");
     vol_amphitheater = getent("vol_power_quest_kill_zone", "targetname");
-    while (1) {
+    while (true) {
         while (!self istouching(vol_amphitheater)) {
             waitframe(1);
         }
@@ -827,7 +827,7 @@ function function_8efba1b4() {
 // Size: 0x170
 function function_aa54541d() {
     level endon(#"end_game", #"hash_4d8091aa6a26d815");
-    while (1) {
+    while (true) {
         wait(0.5);
         a_ai_zombies = level.ai[#"axis"];
         if (isdefined(a_ai_zombies) && isarray(a_ai_zombies) && a_ai_zombies.size > level.zombie_ai_limit) {
@@ -1069,7 +1069,7 @@ function function_1e9b5c67() {
 // Size: 0x174
 function function_31a4a4d9(a_players) {
     level endon(#"pegasus_ready");
-    while (1) {
+    while (true) {
         for (i = 0; i < a_players.size; i++) {
             if (zm_utility::is_player_valid(a_players[i])) {
                 a_players[i].a_targets = a_players[i] function_763444ff();
@@ -1091,7 +1091,7 @@ function function_31a4a4d9(a_players) {
 // Size: 0xb0
 function function_c4f5840a() {
     level endon(#"pegasus_rescue");
-    while (1) {
+    while (true) {
         level.var_10d4f67d waittill(#"pegasus_clap");
         level.var_10d4f67d function_c0e19f04();
         level.var_10d4f67d thread function_75162692(level.var_b26291ed, 3);
@@ -1249,7 +1249,7 @@ function function_22230e37() {
 // Size: 0xb6
 function function_3c2c7054() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         foreach (e_player in util::get_active_players()) {
             if (zm_utility::is_player_valid(e_player, 0, 0)) {
                 return;
@@ -1266,7 +1266,7 @@ function function_3c2c7054() {
 function function_4fe65f31(n_zombies, n_timeout) {
     level endon(#"end_game");
     n_start_time = gettime();
-    while (1) {
+    while (true) {
         if (getaiteamarray(level.zombie_team).size <= n_zombies) {
             return;
         } else {
@@ -1305,7 +1305,7 @@ function function_72d7e85b(var_1c6bf395, var_29826eea, n_timeout) {
     }
     if (var_29826eea.size > 0) {
         n_start_time = gettime();
-        while (1) {
+        while (true) {
             foreach (n_section in var_29826eea) {
                 if (isinarray(level.var_2f2b78fb.var_a651e043, n_section)) {
                     arrayremovevalue(var_29826eea, n_section);
@@ -1349,13 +1349,13 @@ function reinforcements_think(str_spawns, var_f153be86 = 0, var_a294702 = 0) {
     level endon(#"end_game", #"hash_a3780ca3fcd7d5f", #"hash_4d8091aa6a26d815");
     a_s_spawns = struct::get_array(str_spawns);
     a_s_options = array::randomize(a_s_spawns);
-    while (1) {
+    while (true) {
         if (getaiteamarray(level.zombie_team).size < level.zombie_ai_limit) {
             b_spartoi = math::cointoss(25);
             if (!var_a294702) {
                 b_spartoi = 0;
             }
-            while (1) {
+            while (true) {
                 if (a_s_options.size == 0) {
                     a_s_options = array::randomize(a_s_spawns);
                 }
@@ -1445,7 +1445,7 @@ function function_d8db57f6() {
             v_origin = a_info[#"point"];
         }
         s_spawn = struct::spawn(v_origin, v_angles);
-        while (1) {
+        while (true) {
             var_862206ea = zombie_skeleton_util::function_1ea880bd(1, s_spawn, level.round_number);
             if (isdefined(var_862206ea)) {
                 break;
@@ -1589,7 +1589,7 @@ function function_342bd17b() {
     self endon(#"death");
     s_center = struct::get(#"hash_4ede0d513d23996b");
     v_center = s_center.origin;
-    while (1) {
+    while (true) {
         self waittill(#"zombie_melee");
         level notify(#"hash_a3780ca3fcd7d5f");
         var_5f1a008f = [];

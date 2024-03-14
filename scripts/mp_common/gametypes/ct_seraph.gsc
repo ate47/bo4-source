@@ -290,7 +290,7 @@ function function_1ca79c02(var_edc95125) {
     var_133aacc1 = ct_utils::create_waypoint(#"hash_2ee615aa67beef9b", level.var_4d47c040, (0, 0, 0), #"any", undefined, 0, undefined);
     waitframe(1);
     if (isdefined(level.var_571c3787) && level.var_571c3787) {
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             n_dist = distance(e_player.origin, level.var_4d47c040);
             if (n_dist < 1500) {
@@ -318,7 +318,7 @@ function function_1ca79c02(var_edc95125) {
     e_player = getplayers()[0];
     e_player thread function_5ccd53d5();
     level thread function_f704f55c();
-    while (1) {
+    while (true) {
         if (level.var_33682199 >= 1) {
             level flag::set("mission_failed");
             break;
@@ -387,7 +387,7 @@ function function_6c645ca4() {
     level endon(#"combattraining_logic_finished");
     level flag::wait_till("hardpoint_active");
     var_a918f2fa = gettime() / 1000;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         if (isdefined(level.var_5795f618) && !isalive(level.var_5795f618)) {
             level.var_5795f618 = undefined;
@@ -427,7 +427,7 @@ function function_bf5c4d90() {
     self.var_9a79d89d = level.var_4d47c040;
     self.var_5ab7c19c = self.angles;
     self.var_bab91f2 = 64;
-    while (1) {
+    while (true) {
         if (self istouching(level.var_511a3f1c)) {
             level.var_a360ed5b = self;
             if (!isdefined(self.var_c467c182)) {
@@ -490,7 +490,7 @@ function function_f704f55c() {
         spawn_robot(0);
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         level waittill(#"robot_killed");
         wait(10);
         spawn_robot(1);
@@ -502,7 +502,7 @@ function function_f704f55c() {
 // Checksum 0xc0aa1183, Offset: 0x1f38
 // Size: 0xe8
 function spawn_robot(var_fd15f2f7) {
-    while (1) {
+    while (true) {
         var_fbd8f808 = function_1a67c935();
         e_player = getplayers()[0];
         if (!var_fd15f2f7 || !e_player ct_utils::can_see(var_fbd8f808.origin, 0)) {
@@ -536,7 +536,7 @@ function function_e1e9b6fc() {
 // Size: 0xfc
 function function_7b0b7f0a() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.weapon) && waitresult.weapon == getweapon(#"hero_annihilator")) {
@@ -601,7 +601,7 @@ function function_5ccd53d5() {
     level.height = 4;
     self ct_utils::function_7b70bd74(level.hardpoint_bar, level.xpos, level.ypos, level.width, level.height);
     level.hardpoint_bar luielembar_ct::set_color(self, 1, 0, 0);
-    while (1) {
+    while (true) {
         function_e5352267();
         level.hardpoint_bar luielembar_ct::set_bar_percent(self, level.var_33682199);
         if (level flag::get("hardpoint_active") == 0) {
@@ -651,7 +651,7 @@ function function_e5352267() {
 // Checksum 0xa597853a, Offset: 0x2710
 // Size: 0x6
 function function_f99b3d06() {
-    return 0;
+    return false;
 }
 
 // Namespace ct_seraph/ct_seraph
@@ -702,7 +702,7 @@ function function_849be68a() {
         if (sessionmode != 4) {
             adddebugcommand("<unknown string>");
         }
-        while (1) {
+        while (true) {
             wait(0.25);
             cmd = getdvarstring(#"hash_527da51d610a31b1", "<unknown string>");
             if (cmd == "<unknown string>") {

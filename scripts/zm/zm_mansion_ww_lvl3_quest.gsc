@@ -150,7 +150,7 @@ function function_e217ba73(v_pos, v_velocity) {
     if (isdefined(e_grenade)) {
         var_26420508.origin = e_grenade.origin;
         var_26420508 linkto(e_grenade, "tag_fx");
-        while (1) {
+        while (true) {
             s_waitresult = undefined;
             s_waitresult = e_grenade waittill(#"death", #"grenade_bounce", #"grenade_stuck");
             if (s_waitresult._notify == "death") {
@@ -281,17 +281,17 @@ function function_fc4f1886() {
                 }
             } else {
                 level.var_52d4b640 notify(#"hash_52349a04253a83b2");
-                return 0;
+                return false;
             }
             continue;
         }
         level.var_c40da3d5[var_1fc5672].mdl_fx clientfield::set("" + #"hash_12e4702a9346b3d9", 0);
         level.var_c40da3d5[var_1fc5672].mdl_fx delete();
         level.var_c40da3d5[var_1fc5672].t_damage delete();
-        return 0;
+        return false;
     }
     level.var_52d4b640.var_3bf1ec5a = struct::get(level.var_52d4b640.var_672fad63.target, "targetname");
-    return 1;
+    return true;
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
@@ -312,13 +312,13 @@ function function_6730d7f4(var_74f1c6f6, var_1fc5672) {
 // Size: 0x192
 function function_afb9c21c(var_74f1c6f6) {
     self endon(#"hash_52349a04253a83b2", #"hash_2b1cabe38e2ce84b");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = var_74f1c6f6.t_damage waittill(#"damage");
         if (isdefined(s_waitresult.attacker) && (!isdefined(level.var_12469d5) || level.var_12469d5 == s_waitresult.attacker) && (s_waitresult.mod === "MOD_PROJECTILE" || s_waitresult.mod === "MOD_PROJECTILE_SPLASH") && (s_waitresult.weapon === level.var_6fe89212 || s_waitresult.weapon === level.var_74cf08b1)) {
             level.var_12469d5 = s_waitresult.attacker;
             self notify(#"hash_5806ee636b7dafda", {#index:var_74f1c6f6.script_index});
-            return;
+            break;
         }
         if (level.var_12469d5 !== s_waitresult.attacker) {
             self notify(#"hash_52349a04253a83b2");
@@ -390,7 +390,7 @@ function function_4999f099(var_9427f9e7) {
     var_6219bef = (0, 0, 1.6 * 256);
     var_409d46fe = 0.5 + 1.6 * 0.1;
     var_daa7e03a = var_409d46fe * 4;
-    while (1) {
+    while (true) {
         self setneargoalnotifydist(64);
         var_dbac44db = var_409d46fe;
         if (var_d17bd352) {
@@ -454,7 +454,7 @@ function function_fd7c6bd1() {
 function wander_reporter(var_9427f9e7, var_2bab3af1) {
     /#
         self endon(#"death", #"near_goal");
-        while (1) {
+        while (true) {
             var_b2bd87c7 = groundtrace(var_9427f9e7.origin + vectorscale((0, 0, 1), 8), var_9427f9e7.origin + vectorscale((0, 0, -1), 100000), 0, undefined)[#"position"];
             var_e9683beb = groundtrace(var_2bab3af1.origin + vectorscale((0, 0, 1), 8), var_2bab3af1.origin + vectorscale((0, 0, -1), 100000), 0, undefined)[#"position"];
             sphere(groundtrace(self.origin + vectorscale((0, 0, 1), 8), self.origin + vectorscale((0, 0, -1), 100000), 0, self)[#"position"], 4, (1, 0, 0), 1, 1, 4, 12);
@@ -542,7 +542,7 @@ function function_44a776ee() {
 // Checksum 0x6b46d728, Offset: 0x2a10
 // Size: 0x144
 function function_c73f430e() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -680,7 +680,7 @@ function function_cfffc455() {
 function function_dca0343() {
     self endon(#"death");
     self thread function_fb72da74();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         player = waitresult.e_who;
@@ -688,7 +688,7 @@ function function_dca0343() {
             continue;
         }
         self thread function_c60245c1(player);
-        return;
+        break;
     }
 }
 
@@ -738,7 +738,7 @@ function function_366a1f08() {
 function function_c7c9f8d3(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_4adb4ee2a021cc5f", #"hash_390f9a902256dcbd");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
@@ -748,7 +748,7 @@ function function_c7c9f8d3(player) {
 function function_21db5b62(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_1ad9cccccf49590a", #"hash_43ddac2161b2260e");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
@@ -771,7 +771,7 @@ function function_7b5a8c15() {
 // Size: 0x116
 function function_5ccad751() {
     self endoncallback(&function_5ce9ff7a, #"hash_3a35866d24190abf", #"death");
-    while (1) {
+    while (true) {
         var_1445d063 = array::get_all_closest(self.origin, util::get_active_players(#"allies"), undefined, 4, 1024);
         if (var_1445d063.size) {
             level clientfield::set("" + #"hash_19f5ea0e9b3d47f3", 1);
@@ -797,7 +797,7 @@ function function_5ce9ff7a(s_notify) {
 function function_13547ea4(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_1c45ec9f9414b664", #"hash_7d81ba22ba54bb08");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
@@ -808,7 +808,7 @@ function function_9d36c592() {
     self endon(#"hash_3a35866d24190abf");
     s_loc = struct::get("nosferatu_pos");
     s_bile = struct::get("s_bile");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         player = waitresult.e_who;
@@ -1027,7 +1027,7 @@ function function_fdc93dd2(player) {
     } else {
         self sethintstringforplayer(player, "");
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest
@@ -1087,7 +1087,7 @@ function function_ee901070(e_attacker) {
         level flag::set(#"hash_1d477cd627a495d9");
         self thread function_a167efd7();
         self thread namespace_82497b8a::function_b47bcfb0(e_attacker, 60);
-        while (1) {
+        while (true) {
             if (!self.var_b8391660) {
                 self.n_zombie_custom_goal_radius = 96;
                 self.v_zombie_custom_goal_pos = e_attacker.origin;
@@ -1160,7 +1160,7 @@ function function_de394c52() {
 function function_4eca0031() {
     level endon(#"hash_5966d6342dbd6f82");
     var_f1935ec8 = getclosestpointonnavmesh(self.origin, 128);
-    while (1) {
+    while (true) {
         foreach (var_f8a1403f in level.var_105c6f35) {
             if (isdefined(var_f8a1403f) && !var_f8a1403f.var_b8391660 && distance2dsquared(var_f1935ec8, var_f8a1403f.origin) < 10000) {
                 var_f8a1403f thread function_a2256244(self, var_f1935ec8);
@@ -1177,7 +1177,7 @@ function function_4eca0031() {
 function function_75636add(var_f1935ec8) {
     /#
         self endon(#"death", #"goal");
-        while (1) {
+        while (true) {
             sphere(var_f1935ec8, 8, (1, 0, 0), 1, 0, 4, 10);
             line(self.origin, var_f1935ec8, (1, 1, 1), 1, 0, 10);
             wait(0.2);
@@ -1244,9 +1244,9 @@ function function_a167efd7() {
 // Size: 0x2e
 function function_1b4df249() {
     if (isinarray(level.var_105c6f35, self)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_ww_lvl3_quest/zm_mansion_ww_lvl3_quest

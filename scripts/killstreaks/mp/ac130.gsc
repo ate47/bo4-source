@@ -120,7 +120,7 @@ function initrotatingrig(bundle) {
 // Size: 0x66
 function rotaterig(bundle) {
     var_d57617dd = isdefined(bundle.var_dff95af) ? bundle.var_dff95af : 300;
-    while (1) {
+    while (true) {
         self rotateyaw(360, var_d57617dd);
         wait(var_d57617dd);
     }
@@ -418,15 +418,15 @@ function ontimeoutcallback() {
 // Size: 0x5c
 function function_c2bfa7e1(ent, weapon) {
     if (isdefined(ent.var_7132bbb7)) {
-        return 0;
+        return false;
     }
     if (ent.shuttingdown === 1) {
-        return 0;
+        return false;
     }
     if (ent.completely_shutdown === 1) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ac130/ac130
@@ -437,7 +437,7 @@ function function_d4896942(bundle) {
     ac130 = self;
     ac130 endon(#"death", #"ac130_shutdown");
     ac130.var_7132bbb7 = undefined;
-    while (1) {
+    while (true) {
         ac130 waittill(#"flare_deployed");
         ac130 playsound(#"hash_713a3ce01967434e");
         ac130.var_7132bbb7 = 1;
@@ -455,7 +455,7 @@ function function_31f9c728(bundle) {
     ac130 = self;
     ac130 endon(#"death", #"ac130_shutdown");
     ac130.var_7132bbb7 = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = ac130 waittill(#"stinger_fired_at_me");
         if (isdefined(waitresult.projectile)) {
@@ -577,7 +577,7 @@ function watchplayerexitrequestthread(player) {
     player endon(#"disconnect", #"gunner_left");
     ac130 endon(#"death");
     owner = ac130.ownerentnum == player.entnum;
-    while (1) {
+    while (true) {
         timeused = 0;
         while (player usebuttonpressed()) {
             timeused = timeused + 0.05;
@@ -612,7 +612,7 @@ function private function_4d980695(isowner) {
         }
         level.ac130.failed2enter = 1;
         level.ac130 notify(#"ac130_shutdown");
-        return 0;
+        return false;
     }
     bundle = getscriptbundle("killstreak_ac130");
     level.ac130 usevehicle(player, 1);
@@ -633,14 +633,14 @@ function private function_4d980695(isowner) {
     player thread watchplayerteamchangethread(level.ac130);
     player setmodellodbias(isdefined(level.mothership_lod_bias) ? level.mothership_lod_bias : 8);
     player givededicatedshadow(level.ac130);
-    if (1) {
+    if (true) {
         player thread hidecompassafterwait(0.1);
     }
     player clientfield::set_player_uimodel("vehicle.inAC130", 1);
     player clientfield::set_to_player("inAC130", 1);
     player killstreaks::thermal_glow(1);
     player thread function_c137f6f8(level.ac130);
-    return 1;
+    return true;
 }
 
 // Namespace ac130/ac130
@@ -666,7 +666,7 @@ function function_5cdcce1e(player) {
     ac130 endon(#"delete", #"ac130_shutdown");
     player endon(#"disconnect", #"joined_team", #"joined_spectator", #"changed_specialist");
     var_2990ddbd = -1;
-    while (1) {
+    while (true) {
         ammo_in_clip = ac130 function_e2d89efe(1);
         player clientfield::set_player_uimodel("vehicle.rocketAmmo", ammo_in_clip);
         var_a4a44abc = ac130 function_fde0d99e(1);
@@ -939,9 +939,9 @@ function playlockonsoundsthread(player, heli) {
     heli.locksounds = spawn("script_model", heli.origin);
     wait(0.1);
     heli.locksounds linkto(heli, "tag_origin");
-    while (1) {
+    while (true) {
         heli waittill(#"locking on");
-        while (1) {
+        while (true) {
             if (enemyislocking(heli)) {
                 heli.locksounds playsoundtoplayer(#"hash_fa62d8cec85b1a0", player);
                 wait(0.125);
@@ -1058,7 +1058,7 @@ function watchlocationchangethread(destnodes) {
     ac130 endon(#"delete", #"ac130_shutdown");
     player thread setplayermovedrecentlythread();
     player.moves = 0;
-    while (1) {
+    while (true) {
         ac130 waittill(#"goal");
         if (player.moves > 0) {
             waittime = randomintrange(settings.var_efac0f7a, settings.var_18d458d2);
@@ -1370,7 +1370,7 @@ function function_60e3edcc() {
     plane = self;
     plane endon(#"death");
     wait(randomfloatrange(0.1, 0.2));
-    if (0) {
+    if (false) {
         goalx = randomfloatrange(650, 700);
         goaly = randomfloatrange(650, 700);
         if (randomintrange(0, 2) > 0) {

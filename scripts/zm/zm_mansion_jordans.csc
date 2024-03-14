@@ -71,7 +71,7 @@ function function_bb6fcc6a(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_230ff6dc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     /#
         self endon(#"death");
-        while (1) {
+        while (true) {
             print3d(self.origin, newval, (1, 1, 0), 1, 0.4, 15);
             wait(0.2);
         }

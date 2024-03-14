@@ -227,7 +227,7 @@ function on_spawn_player() {
 function team_updater(tags) {
     level endon(#"game_ended");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"joined_team");
         tags.victimteam = self.team;
         tags reset_tags();
@@ -263,7 +263,7 @@ function bounce() {
     self endon(#"reset");
     bottompos = self.curorigin;
     toppos = self.curorigin + vectorscale((0, 0, 1), 12);
-    while (1) {
+    while (true) {
         self.visuals[0] moveto(toppos, 0.5, 0.15, 0.15);
         self.visuals[0] rotateyaw(180, 0.5);
         self.visuals[1] moveto(toppos, 0.5, 0.15, 0.15);
@@ -293,21 +293,21 @@ function checkallowspectating() {
 // Size: 0x154
 function should_spawn_tags(einflictor, attacker, idamage, smeansofdeath, sweapon, vdir, shitloc, psoffsettime, deathanimduration) {
     if (isalive(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.switching_teams)) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker) && attacker == self) {
-        return 0;
+        return false;
     }
     if (level.teambased && isdefined(attacker) && isdefined(attacker.team) && attacker.team == self.team) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker) && (!isdefined(attacker.team) || attacker.team == "free") && (attacker.classname == "trigger_hurt_new" || attacker.classname == "worldspawn")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dogtags/dogtags

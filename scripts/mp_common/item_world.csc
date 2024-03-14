@@ -151,7 +151,7 @@ function private function_cdd9b388() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         self endon(#"shutdown");
-        while (1) {
+        while (true) {
             waitframe(1);
             if (getdvarint(#"hash_3fdd3b60f349d462", 0)) {
                 if (isdefined(self)) {
@@ -221,7 +221,7 @@ function private function_48b8fc19(localclientnum) {
     for (index = 0; index < var_7d8899cd; index++) {
         point = function_b1702735(index);
         if (!isdefined(point) || !isdefined(point.var_a6762160)) {
-            return;
+            break;
         }
         xmodel = function_78a9fd5f(point);
         if (isdefined(xmodel)) {
@@ -296,13 +296,13 @@ function private function_61f5d33a(localclientnum, clientdata, networkid) {
 function private function_237888bb(localclientnum) {
     /#
         if (getdvarint(#"scr_looter", 0)) {
-            return 1;
+            return true;
         }
     #/
     if (self hasperk(localclientnum, #"specialty_looter")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace item_world/item_world
@@ -697,7 +697,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         item = function_b1702735(networkid);
         item_inventory::function_31868137(localclientnum, item);
         play_pickup_fx(localclientnum, item);
-        return;
+        break;
     case 2:
         function_4de3ca98();
         networkid = eventdata;
@@ -706,7 +706,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         item = function_b1702735(networkid);
         item_inventory::function_31868137(localclientnum, item);
         play_pickup_fx(localclientnum, item);
-        return;
+        break;
     case 3:
         networkid = eventdata;
         resetitem = isdefined(var_c5a66313) && var_c5a66313;
@@ -725,7 +725,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
             function_a4886b1e(localclientnum, networkid, model);
         }
         play_spawn_fx(localclientnum, networkid);
-        return;
+        break;
     case 4:
         itemid = eventdata;
         count = var_c5a66313;
@@ -735,21 +735,21 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         }
         item_inventory::function_9c4460e0(localclientnum, itemid, count, slotid);
         function_b78a9820(localclientnum);
-        return;
+        break;
     case 11:
         networkid = eventdata;
         if (!isalive) {
             return;
         }
         item_inventory::consume_item(localclientnum, networkid);
-        return;
+        break;
     case 15:
         networkid = eventdata;
         if (!isalive) {
             return;
         }
         item_inventory::function_52e537be(localclientnum, networkid);
-        return;
+        break;
     case 5:
         networkid = eventdata;
         if (!isalive) {
@@ -757,7 +757,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         }
         item_inventory::function_c6ff0aa2(localclientnum, networkid);
         function_b78a9820(localclientnum);
-        return;
+        break;
     case 6:
         networkid = eventdata;
         if (!isalive) {
@@ -765,7 +765,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         }
         item_inventory::function_3bd1836f(localclientnum, networkid);
         function_b78a9820(localclientnum);
-        return;
+        break;
     case 12:
         var_c9293a27 = eventdata;
         var_8f194e5a = var_c5a66313;
@@ -773,18 +773,18 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
             return;
         }
         item_inventory::function_26c87da8(localclientnum, var_c9293a27, var_8f194e5a);
-        return;
+        break;
     case 7:
         networkid = eventdata;
         if (!isalive) {
             return;
         }
         item_inventory::function_fa372100(localclientnum, networkid);
-        return;
+        break;
     case 8:
         networkid = eventdata;
         function_b78a9820(localclientnum);
-        return;
+        break;
     case 9:
         networkid = eventdata;
         count = var_c5a66313;
@@ -793,25 +793,25 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         }
         item_inventory::update_inventory_item(localclientnum, networkid, count);
         function_b78a9820(localclientnum);
-        return;
+        break;
     case 10:
         item_inventory::inventory_init(localclientnum);
-        return;
+        break;
     case 13:
         networkid = eventdata;
         var_2ccf7a1c = var_c5a66313;
         function_347698a5(localclientnum, networkid, var_2ccf7a1c);
-        return;
+        break;
     case 14:
         vehicleentnum = eventdata;
         var_2ccf7a1c = var_c5a66313;
         function_d2f95c1a(localclientnum, vehicleentnum, var_2ccf7a1c);
-        return;
+        break;
     default:
         /#
             assertmsg("<unknown string>" + eventtype);
         #/
-        return;
+        break;
     }
 }
 
@@ -1022,27 +1022,27 @@ function private function_e082e650(localclientnum, item, newmodel, scale) {
 function private function_96fa1c6d(localclientnum) {
     clientdata = function_a7e98a1a(localclientnum);
     if (isdefined(clientdata.drawing) && clientdata.drawing) {
-        return 0;
+        return false;
     }
     if (!isdefined(clientdata.var_844c8166)) {
-        return 1;
+        return true;
     }
     if (function_1cbf351b(localclientnum)) {
-        return 1;
+        return true;
     }
     servertime = getservertime(localclientnum);
     if (servertime < clientdata.var_79b15dd1) {
-        return 1;
+        return true;
     }
     var_605384fe = function_8cf40a8c(localclientnum);
     var_48f611aa = distancesquared(clientdata.var_844c8166, var_605384fe);
     if (var_48f611aa >= 72 * 72) {
-        return 1;
+        return true;
     }
     if (isdefined(self.var_5f6ea063) && self.var_5f6ea063 || isdefined(self.var_506495f9) && self.var_506495f9) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace item_world/item_world
@@ -1052,9 +1052,9 @@ function private function_96fa1c6d(localclientnum) {
 function private function_c7e5c26(localclientnum) {
     clientdata = function_a7e98a1a(localclientnum);
     if (isdefined(clientdata.var_a4ad122e) && clientdata.var_a4ad122e) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_world/item_world
@@ -1065,9 +1065,9 @@ function private function_34418003(localclientnum, eyepos, angles) {
     clientdata = function_a7e98a1a(localclientnum);
     if (isdefined(clientdata.var_ff9e7e43) && clientdata.var_ff9e7e43) {
         clientdata.var_ff9e7e43 = 0;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace item_world/item_world
@@ -2057,7 +2057,7 @@ function hide_item(localclientnum, networkid) {
                     if (isstruct(item)) {
                         item.hidetime = gettime();
                     }
-                    return;
+                    break;
                 }
             }
         }
@@ -2114,9 +2114,9 @@ function function_1b11e73c() {
     reset = isdefined(level flagsys::get(#"item_world_reset")) && level flagsys::get(#"item_world_reset");
     level flagsys::wait_till(#"item_world_initialized");
     if (reset != (isdefined(level flagsys::get(#"item_world_reset")) && level flagsys::get(#"item_world_reset"))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_world/item_world

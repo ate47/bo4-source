@@ -259,12 +259,12 @@ function function_2adc2518(str_notify) {
 function _blend_out(animation, n_blend, n_rate, n_start_time) {
     self endon(#"death", #"end", #"scriptedanim", #"new_scripted_anim");
     n_server_length = floor(getanimlength(animation) / float(function_60d95f53()) / 1000) * float(function_60d95f53()) / 1000;
-    while (1) {
+    while (true) {
         n_current_time = self getanimtime(animation) * n_server_length;
         n_time_left = n_server_length - n_current_time;
         if (n_time_left <= n_blend) {
             self stopanimscripted(n_blend);
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -398,7 +398,7 @@ function _reach(s_tracker, animation, v_origin_or_ent, v_angles_or_tag, b_disabl
 function debug_anim_reach() {
     /#
         self endon(#"death", #"goal", #"new_anim_reach", #"new_scripted_anim", #"stop_scripted_anim");
-        while (1) {
+        while (true) {
             level flagsys::wait_till("<unknown string>");
             print3d(self.origin, "<unknown string>", (1, 0, 0), 1, 1, 1);
             waitframe(1);
@@ -528,7 +528,7 @@ function setup_notetracks() {
 // Size: 0xce
 function handle_notetracks(animation) {
     self endon(#"death", #"new_scripted_anim");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(animation);
         str_note = waitresult.notetrack;
@@ -550,16 +550,16 @@ function cracks_on(str_type) {
     switch (str_type) {
     case #"red":
         clientfield::set("cracks_on", 1);
-        return;
+        break;
     case #"green":
         clientfield::set("cracks_on", 3);
-        return;
+        break;
     case #"blue":
         clientfield::set("cracks_on", 2);
-        return;
+        break;
     case #"all":
         clientfield::set("cracks_on", 4);
-        return;
+        break;
     }
 }
 
@@ -571,16 +571,16 @@ function cracks_off(str_type) {
     switch (str_type) {
     case #"red":
         clientfield::set("cracks_off", 1);
-        return;
+        break;
     case #"green":
         clientfield::set("cracks_off", 3);
-        return;
+        break;
     case #"blue":
         clientfield::set("cracks_off", 2);
-        return;
+        break;
     case #"all":
         clientfield::set("cracks_off", 4);
-        return;
+        break;
     }
 }
 

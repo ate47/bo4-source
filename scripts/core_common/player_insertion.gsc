@@ -361,7 +361,7 @@ function function_ea1ad421(insertion, start, end) {
 // Checksum 0x7e5e517e, Offset: 0x2098
 // Size: 0xe8
 function function_f31cf3bb(point, direction, step, depth, var_94a1d56d = 10) {
-    for (var_23685c5 = point; 1; var_23685c5 = new_point) {
+    for (var_23685c5 = point; true; var_23685c5 = new_point) {
         if (depth > var_94a1d56d) {
             return var_23685c5;
         }
@@ -381,7 +381,7 @@ function function_f31cf3bb(point, direction, step, depth, var_94a1d56d = 10) {
 // Checksum 0x8a34174, Offset: 0x2188
 // Size: 0x108
 function function_bb2c2f4d(point, direction, step, depth) {
-    for (var_6b1f4b9c = point; 1; var_6b1f4b9c = new_point) {
+    for (var_6b1f4b9c = point; true; var_6b1f4b9c = new_point) {
         if (depth > 10) {
             return undefined;
         }
@@ -536,13 +536,13 @@ function function_8dcd8623() {
         switch (var_7eb8f61a) {
         case 0:
             level thread function_82c73974(insertion);
-            continue;
+            break;
         case 1:
             function_51c5f95f(insertion);
-            continue;
+            break;
         case 2:
             function_35742117(insertion);
-            continue;
+            break;
         }
     }
     level flagsys::wait_till(#"insertion_begin_completed");
@@ -608,10 +608,10 @@ function function_df47b31b(flag) {
     for (index = 0; index < level.insertions.size; index++) {
         insertion = level.insertions[index];
         if (!insertion flagsys::get(flag)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace player_insertion/player_insertion
@@ -1332,7 +1332,7 @@ function function_7d880672(original_origin, var_9f8395cb, refly) {
             self function_2ffa8aaf(1, velocity, 1);
         }
         if (refly % 2 == 0) {
-            while (1) {
+            while (true) {
                 waitframe(1);
                 if (self isonground() || self.origin[2] < -5000) {
                     while (self isonground() && self.origin[2] > -5000) {
@@ -1397,7 +1397,7 @@ function private function_e59d879f(insertion, s_formation, var_cf46aa72) {
     /#
         refly = getdvarint(#"hash_1632f4021ab7a921", 0);
         if (refly) {
-            while (1) {
+            while (true) {
                 players = getplayers();
                 foreach (player in players) {
                     player thread function_7d880672(player.origin, player.angles[1], refly);
@@ -1417,7 +1417,7 @@ function private function_e59d879f(insertion, s_formation, var_cf46aa72) {
         return 0;
     }
     spawner::global_spawn_throttle(1);
-    if (1) {
+    if (true) {
         var_69f4f44c = vehiclespawners[#"chinook_spawner"];
     } else {
         var_69f4f44c = vehiclespawners[#"c130_spawner"];
@@ -1442,7 +1442,7 @@ function private function_e59d879f(insertion, s_formation, var_cf46aa72) {
         insertion.var_41091905 = array(insertion.var_41091905);
     }
     insertion.var_41091905[insertion.var_41091905.size] = insertion.leadplane;
-    if (1) {
+    if (true) {
         insertion.var_dfaba736 = [];
         insertion thread function_45b56b0a(insertion, startpoint, endpoint, var_872f085f, vehiclespawners);
         if (var_cf46aa72) {
@@ -1744,7 +1744,7 @@ function function_ea6a4f96(startorigin, endorigin, var_872f085f, offsetvec, var_
     self function_a57c34b7(endorigin, 0, 0);
     level waittill(#"formation_start");
     self setspeedimmediate(150);
-    if (1) {
+    if (true) {
         direction = anglestoforward(var_872f085f);
         distance = distance(endorigin, startorigin);
         var_27dfb385 = int(distance) / 5000;
@@ -1866,7 +1866,7 @@ function private function_63793dbe() {
 // Checksum 0x5ed11290, Offset: 0x96a0
 // Size: 0x7c
 function function_85635daf(startpoint, total_distance, delta_t) {
-    while (1) {
+    while (true) {
         current_distance = distance(startpoint, self.origin);
         current_t = current_distance / total_distance;
         if (current_t > delta_t) {
@@ -2043,7 +2043,7 @@ function function_b80277f7() {
         self bot_insertion::function_a4f516ef();
         return;
     }
-    while (1) {
+    while (true) {
         waitframe(1);
         if (self flagsys::get(#"hash_287397edba8966f9") && isdefined(level.insertionpassenger) && isdefined(level.var_f3320ad2) && isdefined(level.var_a3c0d635) && isdefined(level.var_ce84dde9) && !level.insertionpassenger [[ level.var_a3c0d635 ]](self)) {
             level.insertionpassenger [[ level.var_f3320ad2 ]](self, 0);
@@ -2354,10 +2354,10 @@ function function_6660c1f() {
     for (index = 0; index < level.insertions.size; index++) {
         insertion = level.insertions[index];
         if (insertion flagsys::get(#"hash_60fcdd11812a0134")) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace player_insertion/player_insertion
@@ -2368,10 +2368,10 @@ function function_e5d4df1c() {
     for (index = 0; index < level.insertions.size; index++) {
         insertion = level.insertions[index];
         if (insertion flagsys::get(#"hash_122f326d72f4c884")) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace player_insertion/player_insertion
@@ -2507,7 +2507,7 @@ function private function_943c98fb(insertion) {
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
         waitframe(1);
         adddebugcommand("<unknown string>" + mapname + "<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             string = getdvarstring(#"hash_683dafe2da41b42e", "<unknown string>");
             start_insertion = 0;

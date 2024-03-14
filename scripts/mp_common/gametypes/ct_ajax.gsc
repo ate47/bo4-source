@@ -214,7 +214,7 @@ function function_7446a885() {
     level.var_a8a15809 = var_d8e47fe3.origin;
     if (isdefined(level.var_571c3787) && level.var_571c3787) {
         level.var_cbcb0078 = 1;
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             n_dist = distance(e_player.origin, level.var_a8a15809);
             if (n_dist < 1000) {
@@ -229,7 +229,7 @@ function function_7446a885() {
     level.var_e6db911d = 1;
     var_e8d6f89 = function_ecef370c();
     ct_bots::activate_bots(var_e8d6f89, #"axis");
-    while (1) {
+    while (true) {
         a_bots = ct_bots::function_fbe3dcbb();
         if (a_bots.size == 0) {
             break;
@@ -320,12 +320,12 @@ function function_5d9ec9e5() {
 // Size: 0x58
 function function_8f111670() {
     if (level flag::get("attack_event_active") == 0) {
-        return 1;
+        return true;
     }
     if (isdefined(level.var_8bd6a2ee) && level.var_8bd6a2ee) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace ct_ajax/ct_ajax
@@ -334,7 +334,7 @@ function function_8f111670() {
 // Size: 0x96
 function function_7f166658() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         if (isdefined(waitresult.weapon) && waitresult.weapon == getweapon(#"sig_buckler_dw")) {
@@ -368,7 +368,7 @@ function function_17b486d1() {
 // Size: 0x80
 function function_9e33a62() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         level waittill(#"hash_ac034f4f7553641");
         e_player = getplayers()[0];
         e_player thread ct_utils::function_d471f8fa(3);

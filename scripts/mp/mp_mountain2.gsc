@@ -135,7 +135,7 @@ function gondola_sway() {
     level endon(#"gondola_triggered");
     gondola_cab = getent("gondola_cab", "targetname");
     gondola_cab setmovingplatformenabled(1);
-    while (1) {
+    while (true) {
         randomswingangle = randomfloatrange(2, 5);
         randomswingtime = randomfloatrange(2, 3);
         gondola_cab rotateto((randomswingangle * 0.5, randomswingangle * 0.6 + 90, randomswingangle * 0.8), randomswingtime, randomswingtime * 0.3, randomswingtime * 0.3);

@@ -162,7 +162,7 @@ function private function_26ff990a(local_client_num) {
 // Size: 0x62
 function private update_players(local_client_num) {
     var_40425722 = 1;
-    while (1) {
+    while (true) {
         function_26ff990a(local_client_num);
         if (isdemoplaying()) {
             waitframe(1);

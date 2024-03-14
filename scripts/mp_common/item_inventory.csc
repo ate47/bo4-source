@@ -89,7 +89,7 @@ function private function_38ebb2a1(localclientnum, oldval, newval, bnewent, bini
             if (clientdata.inventory.items[i].networkid != 32767) {
                 if (clientdata.inventory.items[i].availableaction == 1 || clientdata.inventory.items[i].availableaction == 4 || clientdata.inventory.items[i].availableaction == 2 || clientdata.inventory.items[i].availableaction == 6) {
                     setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory.canUseQuickInventory"), 1);
-                    return;
+                    break;
                 }
             }
         }
@@ -127,15 +127,15 @@ function private function_88da0c8e(localclientnum) {
 // Size: 0x5e
 function private function_99b22bbc(localclientnum) {
     if (function_96d4f30e(localclientnum)) {
-        return 0;
+        return false;
     }
     if (isgrappling(localclientnum)) {
-        return 0;
+        return false;
     }
     if (function_d5f07a6e(localclientnum)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_inventory/item_inventory
@@ -150,7 +150,7 @@ function private function_ca87f318(localclientnum) {
     var_790695cc = "inventory_equip" + localclientnum;
     var_6e7b39bc = "inventory_detach" + localclientnum;
     clientdata.var_b9730e2b = gettime();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(var_790695cc, var_6e7b39bc);
         if (gettime() - clientdata.var_b9730e2b < 300) {
@@ -202,13 +202,13 @@ function private function_ca87f318(localclientnum) {
 function private function_10861362(localclientnum) {
     vehicle = getplayervehicle(self);
     if (!isdefined(vehicle)) {
-        return 1;
+        return true;
     }
     var_88fa0205 = vehicle getoccupantseat(localclientnum, self);
     if (isdefined(var_88fa0205) && (var_88fa0205 == 0 || var_88fa0205 == 4)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_inventory/item_inventory
@@ -233,19 +233,19 @@ function private function_ee44351a(localclientnum, inventoryitem) {
 function private function_e23e5e85(localclientnum) {
     clientdata = item_world::function_a7e98a1a(localclientnum);
     if (!isdefined(clientdata) || !isdefined(clientdata.inventory) || !isdefined(clientdata.inventory.items)) {
-        return 0;
+        return false;
     }
     armoritem = clientdata.inventory.items[11];
     if (!isdefined(armoritem) || armoritem.networkid === 32767 || armoritem.var_a6762160.itemtype !== #"armor") {
-        return 0;
+        return false;
     }
     clientmodel = getuimodelvalue(getuimodel(getuimodelforcontroller(localclientnum), "predictedClientModel"));
     armormodel = getuimodel(clientmodel, "armor");
     var_15663411 = getuimodel(armoritem.itemuimodel, "armorMax");
     if (!isdefined(armormodel) || !isdefined(var_15663411) || getuimodelvalue(armormodel) == getuimodelvalue(var_15663411)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_inventory/item_inventory
@@ -254,9 +254,9 @@ function private function_e23e5e85(localclientnum) {
 // Size: 0xa2
 function private function_e094fd92(item) {
     if (!isdefined(item) || !isdefined(item.networkid) || item.networkid == 32767 || !isdefined(item.quickequip) || item.quickequip != 1 || !isdefined(item.consumable) || item.consumable != 1) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_inventory/item_inventory
@@ -412,7 +412,7 @@ function private function_9b83c65d(localclientnum) {
     var_6a10d173 = "inventory_quick_consume" + localclientnum;
     var_ce5c0b10 = "inventory_cycle_quick_consumable" + localclientnum;
     var_17bdd1c3 = "inventory_equip_quick_consumable" + localclientnum;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(var_ca4fc719, var_e2d1f454, var_3731e165, var_6a10d173, var_ce5c0b10, var_17bdd1c3);
         if (waitresult._notify === var_ca4fc719) {
@@ -528,7 +528,7 @@ function private function_ac4df751(localclientnum) {
     var_46a7a0e3 = "inventory_drop_current_weapon_and_detach" + localclientnum;
     var_fcd005cc = "inventory_drop_weapon_in_slot" + localclientnum;
     var_3d759450 = "inventory_drop_weapon_in_slot_and_detach" + localclientnum;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(var_5054e2f7, var_ffec0c46, var_46a7a0e3, var_fcd005cc, var_3d759450);
         if (waitresult._notify === var_5054e2f7) {
@@ -592,7 +592,7 @@ function private function_8edef5cc(localclientnum, inventoryitem) {
         for (i = 0; i < data.inventory.var_c212de25; i++) {
             if (data.inventory.items[i].networkid === 32767) {
                 setuimodelvalue(createuimodel(data.inventory.items[i].itemuimodel, "focusTarget"), 1);
-                return;
+                break;
             }
         }
     }
@@ -608,7 +608,7 @@ function private function_96ce9058(localclientnum, var_6c2b2289, inventoryitem, 
     self endon("7357e9cab2fc6298");
     if (isdefined(item.var_a6762160.unlockableitemref)) {
         var_1ce96a13 = array(0, 0, 0, 0, 0);
-        while (1) {
+        while (true) {
             waitframe(1);
             for (i = 0; i < 5; i++) {
                 if (isdefined(item.var_a6762160.objectives[i]) && isdefined(item.var_a6762160.objectives[i].var_7e835304)) {
@@ -633,7 +633,7 @@ function private function_7f35a045(localclientnum) {
     self endon("70f223fcee367f6f");
     clientdata = item_world::function_a7e98a1a(localclientnum);
     var_6c2b2289 = "inventory_item_focus" + localclientnum;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(var_6c2b2289);
         data = item_world::function_a7e98a1a(localclientnum);
@@ -724,7 +724,7 @@ function private function_2ae9881d(localclientnum) {
     var_f3efb06b = "cycle_health" + localclientnum;
     var_db83305d = "cycle_equipment" + localclientnum;
     clientdata.var_cb55ac3c = gettime();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(var_f3efb06b, var_db83305d);
         if (gettime() - clientdata.var_cb55ac3c < 200) {
@@ -750,7 +750,7 @@ function private function_d1e6731e(localclientnum) {
     clientdata = item_world::function_a7e98a1a(localclientnum);
     var_bd0cdac3 = "attachment_pickup";
     var_b784f644 = var_bd0cdac3 + localclientnum;
-    while (1) {
+    while (true) {
         util::waittill_any_ents(self, var_bd0cdac3, level, var_b784f644);
         currentitem = self.var_9b882d22;
         if (!isdefined(currentitem) || !isdefined(currentitem.var_a6762160)) {
@@ -814,10 +814,10 @@ function private function_6d9d9cd7(slotid) {
     #/
     foreach (slot in array(10, 11, 12, 13, 16 + 1, 16 + 1 + 6 + 1)) {
         if (slot == slotid) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace item_inventory/item_inventory
@@ -827,7 +827,7 @@ function private function_6d9d9cd7(slotid) {
 function private function_d2f05352() {
     level endon(#"shutdown");
     waitframe(1);
-    while (1) {
+    while (true) {
         players = getlocalplayers();
         time = gettime();
         foreach (player in players) {
@@ -1464,9 +1464,9 @@ function private function_ce628f27(localclientnum) {
 function is_inventory_item(localclientnum, var_a6762160) {
     data = item_world::function_a7e98a1a(localclientnum);
     if (var_a6762160.itemtype == #"ammo") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_inventory/item_inventory
@@ -1542,7 +1542,7 @@ function private function_3e624606(localclientnum) {
     clientdata = item_world::function_a7e98a1a(localclientnum);
     var_99fe8c78 = "multi_item_pickup" + localclientnum;
     var_dab12fb1 = "multi_item_pickup_stowed_weapon" + localclientnum;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(var_99fe8c78, var_dab12fb1);
         if (self clientfield::get_player_uimodel("hudItems.multiItemPickup.status") == 2) {
@@ -1618,10 +1618,10 @@ function private function_30697356(localclientnum, var_a6762160) {
 // Size: 0x256
 function function_ad4c6116(localclientnum, var_a6762160) {
     if (var_a6762160.itemtype == #"weapon") {
-        return 1;
+        return true;
     }
     if (!is_inventory_item(localclientnum, var_a6762160)) {
-        return 1;
+        return true;
     }
     if (var_a6762160.itemtype == #"resource") {
         if (item_world_util::function_41f06d9d(var_a6762160)) {
@@ -1629,36 +1629,36 @@ function function_ad4c6116(localclientnum, var_a6762160) {
         }
     }
     if (var_a6762160.itemtype == #"armor") {
-        return 1;
+        return true;
     }
     if (var_a6762160.itemtype == #"attachment") {
         slotid = function_1415f8f1(localclientnum, var_a6762160);
         if (isdefined(slotid)) {
-            return 1;
+            return true;
         }
     }
     if (function_a243ddd6(localclientnum, var_a6762160)) {
-        return 1;
+        return true;
     }
     if (function_a4a6f064(localclientnum, var_a6762160)) {
-        return 1;
+        return true;
     }
     if (var_a6762160.itemtype == #"armor_shard") {
-        return 0;
+        return false;
     }
     data = item_world::function_a7e98a1a(localclientnum);
     if (var_a6762160.itemtype == #"resource") {
         if (data.inventory.items[15].networkid === 32767) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     for (i = 0; i < data.inventory.var_c212de25; i++) {
         if (data.inventory.items[i].networkid === 32767) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace item_inventory/item_inventory
@@ -1671,7 +1671,7 @@ function function_a243ddd6(localclientnum, var_a6762160) {
     case #"attachment":
         slotid = function_1415f8f1(localclientnum, var_a6762160);
         if (!isdefined(slotid)) {
-            return 0;
+            return false;
         }
         return (data.inventory.items[slotid].networkid == 32767);
     case #"armor":
@@ -1689,7 +1689,7 @@ function function_a243ddd6(localclientnum, var_a6762160) {
     case #"killstreak":
     case #"cash":
     default:
-        return 0;
+        return false;
     }
 }
 
@@ -2098,16 +2098,16 @@ function has_attachments(localclientnum, var_4838b749) {
         assert(isdefined(localclientnum));
     #/
     if (!isdefined(var_4838b749)) {
-        return 0;
+        return false;
     }
     data = item_world::function_a7e98a1a(localclientnum);
     foreach (var_259f58f3 in array(1, 2, 3, 4, 5, 6)) {
         slotid = namespace_a0d533d1::function_dfaca25e(var_4838b749, var_259f58f3);
         if (data.inventory.items[slotid].networkid != 32767) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace item_inventory/item_inventory
@@ -2484,34 +2484,34 @@ function function_b1136fc8(localclientnum, item) {
         switch (item.var_a6762160.itemtype) {
         case #"weapon":
             playsound(localclientnum, #"hash_67fed8a52accbb23", item.origin);
-            return;
+            break;
         case #"ammo":
             playsound(localclientnum, #"fly_drop_generic", item.origin);
-            return;
+            break;
         case #"health":
             playsound(localclientnum, #"hash_4d393a136d0df945", item.origin);
-            return;
+            break;
         case #"equipment":
             playsound(localclientnum, #"fly_drop_generic", item.origin);
-            return;
+            break;
         case #"armor":
             playsound(localclientnum, #"hash_6bd51d5a531ff32", item.origin);
-            return;
+            break;
         case #"backpack":
             playsound(localclientnum, #"hash_60e9138ddc9660ed", item.origin);
-            return;
+            break;
         case #"attachment":
             playsound(localclientnum, #"fly_drop_generic", item.origin);
-            return;
+            break;
         case #"quest":
             playsound(localclientnum, #"fly_drop_generic", item.origin);
-            return;
+            break;
         case #"generic":
             playsound(localclientnum, #"fly_drop_generic", item.origin);
-            return;
+            break;
         case #"cash":
             playsound(localclientnum, #"fly_drop_generic", item.origin);
-            return;
+            break;
         }
     }
 }
@@ -2529,34 +2529,34 @@ function function_31868137(localclientnum, item) {
         switch (item.var_a6762160.itemtype) {
         case #"weapon":
             playsound(localclientnum, #"hash_62fabedcce13774c", item.origin);
-            return;
+            break;
         case #"ammo":
             playsound(localclientnum, #"hash_36c9bf9c68a692f6", item.origin);
-            return;
+            break;
         case #"health":
             playsound(localclientnum, #"hash_7cb9f9cf7068ccee", item.origin);
-            return;
+            break;
         case #"equipment":
             playsound(localclientnum, #"fly_pickup_generic", item.origin);
-            return;
+            break;
         case #"armor":
             playsound(localclientnum, #"hash_2d8e1c5a5387840f", item.origin);
-            return;
+            break;
         case #"backpack":
             playsound(localclientnum, #"hash_69949bb7db9ef21e", item.origin);
-            return;
+            break;
         case #"attachment":
             playsound(localclientnum, #"hash_48ae9b1190e79fc5", item.origin);
-            return;
+            break;
         case #"quest":
             playsound(localclientnum, #"hash_5738a0fcb2e4efca", item.origin);
-            return;
+            break;
         case #"generic":
             playsound(localclientnum, #"fly_pickup_generic", item.origin);
-            return;
+            break;
         case #"cash":
             playsound(localclientnum, #"fly_pickup_generic", item.origin);
-            return;
+            break;
         }
     }
 }
@@ -2712,7 +2712,7 @@ function function_fa372100(localclientnum, networkid) {
     foreach (inventoryitem in data.inventory.items) {
         if (inventoryitem.networkid === networkid) {
             function_8063170(inventoryitem, 0);
-            return;
+            break;
         }
     }
 }
@@ -2731,7 +2731,7 @@ function update_inventory_item(localclientnum, networkid, count) {
             totalcount = totalcount + max(0, count - var_338e8597);
             function_1a99656a(localclientnum, inventoryitem, inventoryitem.networkid, inventoryitem.id, count, totalcount, inventoryitem.availableaction);
             function_8063170(inventoryitem, function_6d9d9cd7(inventoryslot));
-            return;
+            break;
         }
     }
 }

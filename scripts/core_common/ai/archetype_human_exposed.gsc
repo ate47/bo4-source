@@ -65,9 +65,9 @@ function private resetreactiontoenemy(behaviortreeentity) {
 function private nocloseenemyservice(behaviortreeentity) {
     if (isdefined(behaviortreeentity.enemy) && aiutility::hascloseenemytomelee(behaviortreeentity)) {
         behaviortreeentity clearpath();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
@@ -76,12 +76,12 @@ function private nocloseenemyservice(behaviortreeentity) {
 // Size: 0x5a
 function private hascloseenemy(behaviortreeentity) {
     if (!isdefined(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
     if (distancesquared(behaviortreeentity.origin, behaviortreeentity.enemy.origin) < 22500) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_human_exposed/archetype_human_exposed
@@ -112,21 +112,21 @@ function private tryreacquireservice(behaviortreeentity) {
     }
     if (!isdefined(behaviortreeentity.enemy)) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (behaviortreeentity haspath()) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (behaviortreeentity seerecently(behaviortreeentity.enemy, 4)) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     dirtoenemy = vectornormalize(behaviortreeentity.enemy.origin - behaviortreeentity.origin);
     forward = anglestoforward(behaviortreeentity.angles);
     if (vectordot(dirtoenemy, forward) < 0.5) {
         behaviortreeentity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     switch (behaviortreeentity.reacquire_state) {
     case 0:
@@ -143,15 +143,15 @@ function private tryreacquireservice(behaviortreeentity) {
     default:
         if (behaviortreeentity.reacquire_state > 15) {
             behaviortreeentity.reacquire_state = 0;
-            return 0;
+            return false;
         }
         break;
     }
     if (isvec(reacquirepos)) {
         behaviortreeentity function_a57c34b7(reacquirepos);
-        return 1;
+        return true;
     }
     behaviortreeentity.reacquire_state++;
-    return 0;
+    return false;
 }
 

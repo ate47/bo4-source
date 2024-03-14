@@ -114,7 +114,7 @@ function rumble_gondola(localclientnum, oldval, newval, bnewent, binitialsnap, f
     self endon(#"disconnect");
     if (newval == 1) {
         self endon(#"hash_6d7afe7c92e095d8");
-        while (1) {
+        while (true) {
             if (isinarray(getlocalplayers(), self)) {
                 self playrumbleonentity(localclientnum, "reload_small");
             }
@@ -137,7 +137,7 @@ function function_1bccf046(localclientnum, oldval, newval, bnewent, binitialsnap
     self endon(#"disconnect");
     if (newval == 1) {
         self endon(#"hash_2e4f137d472e68e9");
-        while (1) {
+        while (true) {
             self playrumbleonentity(localclientnum, "reload_small");
             wait(0.25);
         }
@@ -186,7 +186,7 @@ function function_516663f8(localclientnum, oldval, newval, bnewent, binitialsnap
 function private function_37c86e6e(localclientnum) {
     level endon(#"hash_46a6202f04dd1722");
     s_sound_origin = struct::get("s_b_64_sound");
-    while (1) {
+    while (true) {
         wait(randomfloatrange(3, 5));
     }
 }
@@ -209,7 +209,7 @@ function function_d8b90aba(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x68
 function private function_b2b92c61(localclientnum) {
     level endon(#"hash_63732bb5f380f042");
-    while (1) {
+    while (true) {
         exploder::exploder("fxexp_building64_lightning");
         wait(randomfloatrange(1.5, 3));
     }

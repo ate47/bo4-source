@@ -228,7 +228,7 @@ function hawk_update(vehicle) {
     self endon(#"disconnect", #"joined_team", #"joined_spectators", #"changed_specialist", #"changed_specialist_death");
     vehicle endon(#"death");
     playerorigin = self.origin;
-    while (1) {
+    while (true) {
         playerorigin = update_range(vehicle, playerorigin);
         waitframe(1);
     }
@@ -277,10 +277,10 @@ function watch_destroyed(vehicle) {
 // Size: 0x1bc
 function function_17b75237(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(victim) || !isplayer(victim)) {
-        return 0;
+        return false;
     }
     if (!isdefined(attacker) || !isplayer(attacker) || !isdefined(attacker.var_13c51aa5)) {
-        return 0;
+        return false;
     }
     var_e49690cd = victim getentitynumber();
     targetindex = attacker.var_13c51aa5[var_e49690cd];
@@ -288,15 +288,15 @@ function function_17b75237(attacker, victim, weapon, attackerweapon, meansofdeat
         var_f27d6782 = attacker.var_e6013893[targetindex];
     }
     if (!isdefined(var_f27d6782)) {
-        return 0;
+        return false;
     }
     if (gettime() - (isdefined(var_f27d6782.var_a7e1d732) ? var_f27d6782.var_a7e1d732 : 0) <= int(level.hawk_settings.bundle.var_fb7c1412 * 1000)) {
         if (isdefined(level.playgadgetsuccess)) {
             attacker thread [[ level.playgadgetsuccess ]](level.hawk_settings.weapon, undefined, self, undefined);
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace hawk_mp/hawk
@@ -305,24 +305,24 @@ function function_17b75237(attacker, victim, weapon, attackerweapon, meansofdeat
 // Size: 0xc6
 function function_d89c1628(vehicle) {
     if (!(isdefined(vehicle.can_control) && vehicle.can_control)) {
-        return 0;
+        return false;
     }
     if (self isremotecontrolling() || self util::isusingremote()) {
-        return 0;
+        return false;
     }
     if (self.hawk.var_a3b23d12) {
-        return 0;
+        return false;
     }
     if (!self fragbuttonpressed()) {
-        return 0;
+        return false;
     }
     if (self function_15049d95()) {
-        return 0;
+        return false;
     }
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace hawk_mp/hawk
@@ -342,7 +342,7 @@ function function_1e7eecd7(vehicle, var_44e9a475) {
         vehicle.playercontrolled = 0;
     }
     self.hawk.var_a3b23d12 = 1;
-    while (1) {
+    while (true) {
         if (self.hawk.controlling) {
             self thread function_c4770b46(vehicle);
             self waittill(#"exit_vehicle");
@@ -674,7 +674,7 @@ function targeting_hud_think(vehicle) {
     player = self;
     targets = self getvalidtargets(vehicle, stance_offsets);
     framessincetargetscan = 0;
-    while (1) {
+    while (true) {
         if (self util::function_63d27d4e("remote_missile")) {
             return;
         }

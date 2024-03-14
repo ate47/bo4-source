@@ -967,7 +967,7 @@ function zombieenteredplayable(behaviortreeentity) {
             } else {
                 behaviortreeentity zm_spawner::zombie_complete_emerging_into_playable_area();
             }
-            return 1;
+            return true;
         }
     }
     if (zm_utility::function_c85ebbbc()) {
@@ -978,11 +978,11 @@ function zombieenteredplayable(behaviortreeentity) {
                 } else {
                     behaviortreeentity zm_spawner::zombie_complete_emerging_into_playable_area();
                 }
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -991,12 +991,12 @@ function zombieenteredplayable(behaviortreeentity) {
 // Size: 0x54
 function shouldmovecondition(behaviortreeentity) {
     if (behaviortreeentity haspath()) {
-        return 1;
+        return true;
     }
     if (isdefined(behaviortreeentity.keep_moving) && behaviortreeentity.keep_moving) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1013,9 +1013,9 @@ function zombieshouldmoveawaycondition(behaviortreeentity) {
 // Size: 0x34
 function waskilledbyteslacondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.tesla_death) && behaviortreeentity.tesla_death) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1084,9 +1084,9 @@ function zombiemoveaway(behaviortreeentity, asmstatename) {
 // Size: 0x34
 function zombieisbeinggrappled(behaviortreeentity) {
     if (isdefined(behaviortreeentity.grapple_is_fatal) && behaviortreeentity.grapple_is_fatal) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1095,9 +1095,9 @@ function zombieisbeinggrappled(behaviortreeentity) {
 // Size: 0x34
 function zombieshouldknockdown(behaviortreeentity) {
     if (isdefined(behaviortreeentity.knockdown) && behaviortreeentity.knockdown) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1106,9 +1106,9 @@ function zombieshouldknockdown(behaviortreeentity) {
 // Size: 0x34
 function zombieispushed(behaviortreeentity) {
     if (isdefined(behaviortreeentity.pushed) && behaviortreeentity.pushed) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1175,9 +1175,9 @@ function private zombiepushedactionterminate(behaviortreeentity) {
 // Size: 0x54
 function zombieshouldstun(behaviortreeentity) {
     if (behaviortreeentity ai::is_stunned() && !(isdefined(behaviortreeentity.tesla_death) && behaviortreeentity.tesla_death)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1269,9 +1269,9 @@ function zombietraverseactionterminate(behaviortreeentity, asmstatename) {
 // Size: 0x34
 function zombiegottoentrancecondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.got_to_entrance) && behaviortreeentity.got_to_entrance) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1280,9 +1280,9 @@ function zombiegottoentrancecondition(behaviortreeentity) {
 // Size: 0x34
 function zombiegottoattackspotcondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.at_entrance_tear_spot) && behaviortreeentity.at_entrance_tear_spot) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1291,9 +1291,9 @@ function zombiegottoattackspotcondition(behaviortreeentity) {
 // Size: 0x38
 function zombiehasattackspotalreadycondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.attacking_spot_index) && behaviortreeentity.attacking_spot_index >= 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1305,12 +1305,12 @@ function zombieshouldtearcondition(behaviortreeentity) {
         if (isdefined(behaviortreeentity.first_node.zbarrier)) {
             if (isdefined(behaviortreeentity.first_node.barrier_chunks)) {
                 if (!zm_utility::all_chunks_destroyed(behaviortreeentity.first_node, behaviortreeentity.first_node.barrier_chunks)) {
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1319,7 +1319,7 @@ function zombieshouldtearcondition(behaviortreeentity) {
 // Size: 0x2c2
 function zombieshouldattackthroughboardscondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.missinglegs) && behaviortreeentity.missinglegs) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.first_node.zbarrier)) {
         if (!behaviortreeentity.first_node.zbarrier zbarriersupportszombiereachthroughattacks()) {
@@ -1328,7 +1328,7 @@ function zombieshouldattackthroughboardscondition(behaviortreeentity) {
                 chunks = zm_utility::get_non_destroyed_chunks(behaviortreeentity.first_node, behaviortreeentity.first_node.barrier_chunks);
             }
             if (isdefined(chunks) && chunks.size > 0) {
-                return 0;
+                return false;
             }
         }
     }
@@ -1346,9 +1346,9 @@ function zombieshouldattackthroughboardscondition(behaviortreeentity) {
         }
     }
     if (!attack || freq < randomint(100)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1357,22 +1357,22 @@ function zombieshouldattackthroughboardscondition(behaviortreeentity) {
 // Size: 0x118
 function zombieshouldtauntcondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.missinglegs) && behaviortreeentity.missinglegs) {
-        return 0;
+        return false;
     }
     if (!isdefined(behaviortreeentity.first_node.zbarrier)) {
-        return 0;
+        return false;
     }
     if (!behaviortreeentity.first_node.zbarrier zbarriersupportszombietaunts()) {
-        return 0;
+        return false;
     }
     if (getdvarstring(#"zombie_taunt_freq") == "") {
         setdvar(#"zombie_taunt_freq", 5);
     }
     freq = getdvarint(#"zombie_taunt_freq", 0);
     if (freq >= randomint(100)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1383,11 +1383,11 @@ function zombieshouldenterplayablecondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.first_node) && isdefined(behaviortreeentity.first_node.barrier_chunks)) {
         if (zm_utility::all_chunks_destroyed(behaviortreeentity.first_node, behaviortreeentity.first_node.barrier_chunks)) {
             if ((!isdefined(behaviortreeentity.attacking_spot) || isdefined(behaviortreeentity.at_entrance_tear_spot) && behaviortreeentity.at_entrance_tear_spot) && !(isdefined(behaviortreeentity.completed_emerging_into_playable_area) && behaviortreeentity.completed_emerging_into_playable_area)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1396,9 +1396,9 @@ function zombieshouldenterplayablecondition(behaviortreeentity) {
 // Size: 0x24
 function ischunkvalidcondition(behaviortreeentity) {
     if (isdefined(behaviortreeentity.chunk)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1407,9 +1407,9 @@ function ischunkvalidcondition(behaviortreeentity) {
 // Size: 0x34
 function inplayablearea(behaviortreeentity) {
     if (isdefined(behaviortreeentity.completed_emerging_into_playable_area) && behaviortreeentity.completed_emerging_into_playable_area) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1418,9 +1418,9 @@ function inplayablearea(behaviortreeentity) {
 // Size: 0x36
 function shouldskipteardown(behaviortreeentity) {
     if (behaviortreeentity zm_spawner::should_skip_teardown(behaviortreeentity.find_flesh_struct_string)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1430,13 +1430,13 @@ function shouldskipteardown(behaviortreeentity) {
 function zombieisthinkdone(behaviortreeentity) {
     /#
         if (isdefined(behaviortreeentity.is_rat_test) && behaviortreeentity.is_rat_test) {
-            return 0;
+            return false;
         }
     #/
     if (isdefined(behaviortreeentity.zombie_think_done) && behaviortreeentity.zombie_think_done) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -1499,11 +1499,11 @@ function updatechunkservice(behaviortreeentity) {
 // Size: 0xee
 function updateattackspotservice(behaviortreeentity) {
     if (isdefined(behaviortreeentity.marked_for_death) && behaviortreeentity.marked_for_death || behaviortreeentity.health < 0) {
-        return 0;
+        return false;
     }
     if (!isdefined(behaviortreeentity.attacking_spot)) {
         if (!behaviortreeentity zm_spawner::get_attack_spot(behaviortreeentity.first_node)) {
-            return 0;
+            return false;
         }
     }
     if (isdefined(behaviortreeentity.attacking_spot)) {
@@ -1512,9 +1512,9 @@ function updateattackspotservice(behaviortreeentity) {
         if (zombieisatgoal(behaviortreeentity)) {
             behaviortreeentity.at_entrance_tear_spot = 1;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -2058,9 +2058,9 @@ function zombieblackholebombpullend(entity, asmstatename) {
 // Size: 0x78
 function zombiekilledwhilegettingpulled(entity) {
     if (!(isdefined(self.missinglegs) && self.missinglegs) && isdefined(entity.interdimensional_gun_kill) && entity.interdimensional_gun_kill && !(isdefined(entity._black_hole_bomb_collapse_death) && entity._black_hole_bomb_collapse_death)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -2069,9 +2069,9 @@ function zombiekilledwhilegettingpulled(entity) {
 // Size: 0x34
 function zombiekilledbyblackholebombcondition(entity) {
     if (isdefined(entity._black_hole_bomb_collapse_death) && entity._black_hole_bomb_collapse_death) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -2080,9 +2080,9 @@ function zombiekilledbyblackholebombcondition(entity) {
 // Size: 0x34
 function function_38fec26f(entity) {
     if (isdefined(entity.freezegun_death) && entity.freezegun_death) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_behavior/zm_behavior
@@ -2099,14 +2099,14 @@ function function_e4d7303f(entity) {
 // Size: 0xe2
 function function_17cd1b17(behaviortreeentity) {
     if (!isdefined(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
     meleedistsq = 4096;
     if (isdefined(behaviortreeentity.meleeweapon) && behaviortreeentity.meleeweapon !== level.weaponnone) {
         meleedistsq = behaviortreeentity.meleeweapon.aimeleerange * behaviortreeentity.meleeweapon.aimeleerange;
     }
     if (distancesquared(behaviortreeentity.origin, behaviortreeentity.enemy.origin) > meleedistsq) {
-        return 0;
+        return false;
     }
     return isdefined(behaviortreeentity.melee_cooldown) && gettime() < behaviortreeentity.melee_cooldown;
 }

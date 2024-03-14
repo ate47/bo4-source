@@ -175,20 +175,20 @@ function function_d52c51c6(killstreaktype) {
             iprintlnbold("<unknown string>");
         #/
         self iprintlnbold(#"hash_62ced7a8acdaa034");
-        return 0;
+        return false;
     }
     if (player isplayerswimming()) {
         self iprintlnbold(#"hash_425241374bdd61f0");
-        return 0;
+        return false;
     }
     spawnpos = calcspawnorigin(player.origin, player.angles);
     if (!isdefined(spawnpos)) {
         self iprintlnbold(#"hash_425241374bdd61f0");
-        return 0;
+        return false;
     }
     killstreak_id = player killstreakrules::killstreakstart("drone_squadron", player.team, 0, 1);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     player stats::function_e24eec31(getweapon(#"drone_squadron"), #"used", 1);
     drone_squadron = spawnvehicle("veh_drone_squadron_mp", spawnpos.origin, spawnpos.angles, "dynamic_spawn_ai");
@@ -277,7 +277,7 @@ function function_d52c51c6(killstreaktype) {
     foreach (drone in drone_squadron.wing_drone) {
         drone callback::function_d8abfc3d(#"on_vehicle_killed", &function_c94a0c4d);
     }
-    return 1;
+    return true;
 }
 
 // Namespace drone_squadron/drone_squadron
@@ -545,7 +545,7 @@ function watchteamchange() {
 function watchwater() {
     drone_squadron = self;
     drone_squadron endon(#"drone_squadron_shutdown");
-    while (1) {
+    while (true) {
         wait(0.1);
         trace = physicstrace(self.origin + vectorscale((0, 0, 1), 10), self.origin + vectorscale((0, 0, 1), 6), vectorscale((-1, -1, -1), 2), vectorscale((1, 1, 1), 2), self, 4);
         if (trace[#"fraction"] < 1) {
@@ -666,7 +666,7 @@ function watchshutdown() {
 function function_da3b4d35() {
     self endon(#"death", #"drone_squadron_shutdown");
     self thread function_c7284de2();
-    while (1) {
+    while (true) {
         self.targets = [];
         self.wing_drone = array::remove_undefined(self.wing_drone);
         if (!isdefined(self.wing_drone) || !self.wing_drone.size) {
@@ -718,7 +718,7 @@ function function_c7284de2() {
     /#
         assert(isdefined(player.var_ce69b6d1));
     #/
-    while (1) {
+    while (true) {
         if (isdefined(self.isstunned) && self.isstunned) {
             waitframe(1);
             continue;
@@ -783,9 +783,9 @@ function private function_74ceb0a5(leaddrone) {
         }
     }
     if (validcount >= var_c479f7cf) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace drone_squadron/drone_squadron

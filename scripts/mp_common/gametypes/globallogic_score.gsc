@@ -67,7 +67,7 @@ function function_39193e3a() {
     self notify("18852d080139d2c5");
     self endon("18852d080139d2c5");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hero_gadget_activated");
         if (isdefined(waitresult.weapon) && isdefined(waitresult.player)) {
@@ -115,9 +115,9 @@ function function_c9de50a6(player) {
         if (level.placement[#"all"][pidx] != player) {
             continue;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -879,7 +879,7 @@ function _giveplayerkillstreakinternal(player, momentum, oldmomentum, killstreak
 function setplayermomentumdebug() {
     /#
         setdvar(#"sv_momentumpercent", 0);
-        while (1) {
+        while (true) {
             wait(1);
             momentumpercent = getdvarfloat(#"sv_momentumpercent", 0);
             if (momentumpercent != 0) {
@@ -1078,14 +1078,14 @@ function gethighestteamscoreteam() {
 // Size: 0xa0
 function areteamarraysequal(teamsa, teamsb) {
     if (teamsa.size != teamsb.size) {
-        return 0;
+        return false;
     }
     foreach (team in teamsa) {
         if (!isdefined(teamsb[team])) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -1287,15 +1287,15 @@ function updatewinstats(winner) {
 // Size: 0x6e
 function canupdateweaponcontractstats() {
     if (getdvarint(#"enable_weapon_contract", 0) == 0) {
-        return 0;
+        return false;
     }
     if (!level.rankedmatch && !level.arenamatch) {
-        return 0;
+        return false;
     }
     if (sessionmodeiswarzonegame()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -1625,7 +1625,7 @@ function trackattackeedeath(attackername, rank, xp, prestige, xuid) {
 // Checksum 0x651cd981, Offset: 0x6568
 // Size: 0x6
 function default_iskillboosting() {
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -1809,18 +1809,18 @@ function function_b1a3b359(killedplayer, damagedone, weapon, assist_level = unde
 // Size: 0xe8
 function function_f38e3d84(attacker, inflictor, weapon) {
     if (!isdefined(attacker) || !isdefined(attacker.team) || self util::isenemyplayer(attacker) == 0) {
-        return 0;
+        return false;
     }
     if (self == attacker || attacker.classname == "trigger_hurt_new" || attacker.classname == "worldspawn") {
-        return 0;
+        return false;
     }
     if (killstreaks::is_killstreak_weapon(weapon)) {
-        return 0;
+        return false;
     }
     if (attacker.team == #"spectator") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_score/globallogic_score

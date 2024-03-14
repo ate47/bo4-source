@@ -252,7 +252,7 @@ function function_56db9cdc() {
     if (zm_custom::function_901b751c(#"zmpapenabled") == 2) {
         return;
     }
-    while (1) {
+    while (true) {
         playsoundatposition("zmb_pap_lightning_2", (0, 0, 0));
         function_1556161f();
         zm_orange_lighthouse::function_da304f6e(2);
@@ -437,7 +437,7 @@ function function_ec4984c3() {
 // Size: 0x10a
 function function_80a40c1c() {
     level endon(#"end_game", #"hash_1d9afa9be4c10160");
-    while (1) {
+    while (true) {
         if (level.zones[#"ice_floe"].is_enabled === 0) {
             foreach (e_player in getplayers()) {
                 if (e_player istouching(level.var_f7c50c66)) {
@@ -454,7 +454,7 @@ function function_80a40c1c() {
 // Checksum 0x2e1e74ca, Offset: 0x1f38
 // Size: 0x2e
 function function_ab30f95c(event, mod, hit_location, zombie_team, damage_weapon) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_pap/zm_orange_pap
@@ -629,7 +629,7 @@ function function_f001370f() {
 // Size: 0x70
 function function_5535522e() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"pap_taken");
         s_result.e_player thread zm_orange_util::function_51b752a9("vox_golden_pap_weapon");

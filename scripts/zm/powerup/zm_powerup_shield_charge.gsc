@@ -48,7 +48,7 @@ function __init__() {
 // Checksum 0x58491ac3, Offset: 0x230
 // Size: 0x6
 function func_drop_when_players_own() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_powerup_shield_charge/zm_powerup_shield_charge

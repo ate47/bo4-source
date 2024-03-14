@@ -80,7 +80,7 @@ function private function_1685cc9b() {
     var_6bec3070 = 0;
     self zm_trial_util::function_2190356a(self.var_8f30dd57);
     self zm_trial_util::function_c2cd0cba(level.var_519131bc);
-    while (1) {
+    while (true) {
         self waittill(#"hash_b0cc77b1ab98c08");
         if (self.var_8f30dd57 == level.var_519131bc) {
             self zm_trial_util::function_63060af4(1);

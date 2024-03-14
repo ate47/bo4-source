@@ -341,7 +341,7 @@ function function_2df052bb() {
 // Size: 0x118
 function function_3049b317() {
     if (!(isdefined(self.completed_emerging_into_playable_area) && self.completed_emerging_into_playable_area)) {
-        return 1;
+        return true;
     }
     if (isdefined(level.var_370b1a3d)) {
         s_spawn_loc = [[ level.var_370b1a3d ]]();
@@ -349,14 +349,14 @@ function function_3049b317() {
         s_spawn_loc = array::random(level.zm_loc_types[#"stoker_location"]);
     }
     if (!isdefined(s_spawn_loc)) {
-        return 1;
+        return true;
     }
     self zm_ai_utility::function_a8dc3363(s_spawn_loc);
     if (isalive(self)) {
         self playsound(#"hash_63299a75a97f9678");
         bhtnactionstartevent(self, "spawn");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -564,10 +564,10 @@ function private function_31f887b5(behaviortreeentity) {
 // Size: 0x130
 function private function_6cd91a4d(entity) {
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (entity.var_1db5ef71 > gettime()) {
-        return 0;
+        return false;
     }
     meleedistsq = 4096;
     if (isdefined(entity.meleeweapon) && entity.meleeweapon !== level.weaponnone) {
@@ -575,12 +575,12 @@ function private function_6cd91a4d(entity) {
     }
     var_e9677328 = distancesquared(entity.origin, entity.enemy.origin);
     if (var_e9677328 <= meleedistsq) {
-        return 0;
+        return false;
     }
     if (var_e9677328 > entity ai::function_9139c839().var_b7a8163d * entity ai::function_9139c839().var_b7a8163d) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -591,7 +591,7 @@ function private function_d4e03577(distance) {
     if (isdefined(self.enemy)) {
         return (distancesquared(self.origin, self.enemy.origin) > distance * distance);
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -688,12 +688,12 @@ function private function_36903815(entity) {
 // Size: 0x4e
 function private function_aae7916a(entity) {
     if (zm_behavior::zombieshouldstun(entity)) {
-        return 1;
+        return true;
     }
     if (zm_behavior::zombieshouldknockdown(entity)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -759,9 +759,9 @@ function private function_60951874(entity) {
         /#
             function_752a64b8("<unknown string>");
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -831,7 +831,7 @@ function private stokerrangedattack(entity) {
 // Size: 0x7e
 function private function_5878b360(entity) {
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     return distancesquared(entity.origin, entity.enemy.origin) <= entity ai::function_9139c839().var_2512cf3b * entity ai::function_9139c839().var_2512cf3b;
 }
@@ -1102,9 +1102,9 @@ function function_30509b8c() {
     var_cd35bb62 = function_9d74a83a();
     var_74f3a5af = function_6dd277e7();
     if (!(isdefined(level.var_76934955) && level.var_76934955) && (isdefined(level.var_fe2bb2ac) && level.var_fe2bb2ac || var_cd35bb62 >= var_74f3a5af || !level flag::get("spawn_zombies"))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -1151,7 +1151,7 @@ function function_cf5ef033(n_round_number) {
             return;
         }
     #/
-    while (1) {
+    while (true) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"stoker")) {
             level.var_ac8e1955++;
@@ -1191,9 +1191,9 @@ function round_spawn() {
     ai = spawn_single();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker
@@ -1285,7 +1285,7 @@ function private function_963e8ce(cmd) {
 // Size: 0x48
 function update_dvars() {
     /#
-        while (1) {
+        while (true) {
             level.stokerdebug = getdvarint(#"scr_stokerdebug", 0);
             wait(1);
         }

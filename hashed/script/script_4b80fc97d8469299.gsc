@@ -293,7 +293,7 @@ function private defend_event() {
 // Checksum 0x7aa36b0f, Offset: 0x1460
 // Size: 0x6
 function function_f85d3d98() {
-    return 0;
+    return false;
 }
 
 // Namespace namespace_4b68b2b3/namespace_4b68b2b3
@@ -494,10 +494,10 @@ function function_a66f0de2() {
 // Size: 0xa2
 function function_8c273b51() {
     level endon(#"end_game", #"hash_5266a594b96823e2");
-    while (1) {
+    while (true) {
         if (zm_hms_util::any_player_in_zone("lighthouse_level_4") && level.pablo_npc zm_audio::can_speak()) {
             level zm_orange_pablo::function_e44c7c0c(#"hash_17b44ac72ae4b92f");
-            return;
+            break;
         }
         wait(1);
     }

@@ -265,12 +265,12 @@ function function_4cfd3896(activator, laststate, state) {
 // Size: 0xa4
 function function_ee4ce537(dynent) {
     self endon(#"death", #"hash_21d06dbd3684fc31");
-    while (1) {
+    while (true) {
         if (isdefined(dynent.isfishing) && dynent.isfishing) {
             if (!self function_15049d95()) {
                 self function_ed446f40(dynent);
                 self notify(#"hash_21d06dbd3684fc31");
-                return;
+                break;
             }
         }
         waitframe(1);
@@ -395,7 +395,7 @@ function function_16e4e507(dynent) {
                 self thread function_54a3ec41(dynent);
                 self waittill(#"fishing_end_minigame");
                 self thread function_ed446f40(dynent);
-                return;
+                break;
             }
         }
         waitframe(1);
@@ -446,7 +446,7 @@ function function_176e516(dynent) {
             self function_12747006("fishing_cancel");
             self waittill(#"fishing_end_minigame");
             self function_ed446f40(dynent);
-            return;
+            break;
         }
         waitframe(1);
     }

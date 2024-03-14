@@ -100,17 +100,17 @@ function function_124446e(weapon_name) {
             self.var_c09adff0 = 0;
             self.var_e77eadb7 = 0;
             self.var_ec334996 = 0;
-            return;
+            break;
         case 1:
             self.var_c09adff0 = 0;
             self.var_e77eadb7 = 1;
             self.var_ec334996 = function_c49bf808(2800);
-            return;
+            break;
         case 2:
             self.var_c09adff0 = 1;
             self.var_e77eadb7 = 1;
             self.var_ec334996 = function_c49bf808(8000);
-            return;
+            break;
         }
     #/
 }
@@ -329,10 +329,10 @@ function function_fecb38dd(n_level = 3) {
     switch (n_level) {
     case 3:
         self.var_ec334996 = function_c49bf808(8000);
-        return;
+        break;
     case 2:
         self.var_ec334996 = function_c49bf808(2800);
-        return;
+        break;
     case 1:
     default:
         self.var_ec334996 = 0;
@@ -732,7 +732,7 @@ function function_60878f7f(w_weapon) {
     var_bcf2cdde = w_weapon.var_fb22040b;
     if (isdefined(var_a01a1f92) && var_a01a1f92 > 0) {
         var_e3108f57 = self gadgetpowerget(level.var_a53a05b5);
-        while (1) {
+        while (true) {
             var_a5be660b = self gadgetpowerget(level.var_a53a05b5);
             if (var_e3108f57 > var_a01a1f92 && var_a5be660b <= var_a01a1f92) {
                 self playsound(var_bcf2cdde);
@@ -750,7 +750,7 @@ function function_60878f7f(w_weapon) {
 // Size: 0x372
 function function_ac9f4b22() {
     self endon(#"hero_weapon_take", #"disconnect");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         w_current = s_notify.weapon;

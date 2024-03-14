@@ -91,7 +91,7 @@ function start_carpenter(var_264cf1f9, var_ea1d8f06 = 1) {
             window = boards_near_players[i];
             num_chunks_checked = 0;
             last_repaired_chunk = undefined;
-            while (1) {
+            while (true) {
                 if (zm_utility::all_chunks_intact(window, window.barrier_chunks)) {
                     break;
                 }
@@ -244,9 +244,9 @@ function repair_far_boards(barriers) {
 // Size: 0x48
 function func_should_drop_carpenter() {
     if (get_num_window_destroyed() < 5 && !(isdefined(level.var_ef7415bc) && level.var_ef7415bc)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_powerup_carpenter/zm_powerup_carpenter

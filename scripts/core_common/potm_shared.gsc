@@ -197,9 +197,9 @@ function function_734a7d24(var_ad074e3a) {
 // Size: 0x1e
 function function_ec01de3() {
     if (!isenabled()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace potm/potm_shared
@@ -364,10 +364,10 @@ function function_f909006c(currentevent) {
     starttime = currentevent.starttime;
     var_dcbc5c97 = arraycopy(currentevent.var_b86d6c40);
     luinotifyevent(#"clear_notification_queue");
-    while (1) {
+    while (true) {
         waitframe(1);
         if (var_dcbc5c97.size <= 0) {
-            return;
+            break;
         }
         index = 0;
         timeelapsed = gettime() - currenttime;
@@ -522,7 +522,7 @@ function function_afe21831() {
 function function_cd1447ce() {
     self endon(#"disconnect");
     level endon(#"game_ended", #"potm_finished");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         menu = waitresult.menu;
@@ -554,7 +554,7 @@ function function_a76f0a49() {
     foreach (player in level.players) {
         player clientfield::set_player_uimodel("hudItems.voteRequired", var_a818d531);
     }
-    while (1) {
+    while (true) {
         var_927f9075 = 0;
         foreach (player in level.players) {
             if (isdefined(player.var_3211ad9b) && player.var_3211ad9b) {
@@ -610,12 +610,12 @@ function function_65839288(event) {
 // Size: 0x3e
 function private function_caf394b8(duration) {
     if (!isdefined(game.var_a1e9e96a)) {
-        return 1;
+        return true;
     }
     if (gettime() + duration < game.var_a1e9e96a) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace potm/potm_shared
@@ -1188,7 +1188,7 @@ function private function_f19228da() {
 // Checksum 0x49c07d80, Offset: 0x4958
 // Size: 0x38
 function private function_bc21fc81() {
-    while (1) {
+    while (true) {
         waitframe(1);
         function_bbbd20cc(0);
         function_f19228da();
@@ -1302,7 +1302,7 @@ function private function_f2d75983(var_900768bc) {
 // Checksum 0xfd21d57b, Offset: 0x4ed8
 // Size: 0x12
 function function_3ca7924f(var_900768bc) {
-    return 0;
+    return false;
 }
 
 // Namespace potm/potm_shared
@@ -1310,7 +1310,7 @@ function function_3ca7924f(var_900768bc) {
 // Checksum 0xea4237f7, Offset: 0x4ef8
 // Size: 0x12
 function function_d46f78f8(var_900768bc) {
-    return 1;
+    return true;
 }
 
 // Namespace potm/potm_shared
@@ -1789,12 +1789,12 @@ function private function_e38a52f0(clientnum, bookmark) {
 // Size: 0xda
 function private function_a8295237(bookmark, preparinginformation, bonussearchtime) {
     if (preparinginformation.currentevent.endtime < bookmark.time - bookmark.var_900768bc.secondsbefore + bonussearchtime) {
-        return 0;
+        return false;
     }
     if (game.var_c7a2645f > 0 && bookmark.time + bookmark.var_900768bc.secondsafter - preparinginformation.currentevent.starttime > int(game.var_c7a2645f * 1000)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace potm/potm_shared
@@ -2175,7 +2175,7 @@ function private function_47a69b74(bookmark) {
                 break;
             }
             function_13d710eb(bookmark, preparinginformation);
-        } while (1);
+        } while (true);
     }
     if (bookmark.var_900768bc.boostpriorityonly) {
         preparinginformation = function_4a28cb83(bookmark.mainclientnum);
@@ -2200,7 +2200,7 @@ function private function_47a69b74(bookmark) {
 // Checksum 0xd4c7eecd, Offset: 0x8468
 // Size: 0x8
 function function_d34511e6() {
-    return 1;
+    return true;
 }
 
 // Namespace potm/potm_shared
@@ -2208,7 +2208,7 @@ function function_d34511e6() {
 // Checksum 0x651cd981, Offset: 0x8478
 // Size: 0x6
 function function_66bbf824() {
-    return 0;
+    return false;
 }
 
 // Namespace potm/potm_shared
@@ -2216,7 +2216,7 @@ function function_66bbf824() {
 // Checksum 0x1b0124b9, Offset: 0x8488
 // Size: 0x6
 function function_c65274ed() {
-    return 0;
+    return false;
 }
 
 // Namespace potm/potm_shared

@@ -179,7 +179,7 @@ function state_unaware_update(params) {
     self thread turret_idle_sound();
     self playsound(#"mpl_turret_startup");
     self turretcleartarget(0);
-    while (1) {
+    while (true) {
         rotscale = self.settings.scanning_speedscale;
         if (!isdefined(rotscale)) {
             rotscale = 0.01;
@@ -240,7 +240,7 @@ function function_f2d20a04(params) {
         sentry_turret_alert_sound();
         wait(0.5);
     }
-    while (1) {
+    while (true) {
         if (isdefined(self.enemy) && self cansee(self.enemy)) {
             self.turretrotscale = 1;
             if (isdefined(self.enemy) && self haspart("tag_minigun_spin")) {
@@ -416,12 +416,12 @@ function state_scripted_update(params) {
 // Size: 0xd6
 function turretallowfriendlyfiredamage(einflictor, eattacker, smeansofdeath, weapon) {
     if (isdefined(self.owner) && eattacker == self.owner && isdefined(self.settings.friendly_fire) && int(self.settings.friendly_fire) && !weapon.isemp) {
-        return 1;
+        return true;
     }
     if (isdefined(eattacker) && isdefined(eattacker.archetype) && isdefined(smeansofdeath) && smeansofdeath == "MOD_EXPLOSIVE") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace auto_turret/auto_turret

@@ -120,10 +120,10 @@ function on_player_spawned() {
 // Size: 0x236
 function function_75f9989a(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(attackerweapon) || !isdefined(attacker) || !isdefined(victim) || !isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (weapon == attackerweapon) {
-        return 0;
+        return false;
     }
     function_a86d28fc(attacker, victim);
     if (isdefined(attacker.shrouds)) {
@@ -134,11 +134,11 @@ function function_75f9989a(attacker, victim, weapon, attackerweapon, meansofdeat
                     dart.owner [[ level.playgadgetsuccess ]](getweapon("eq_shroud"), undefined, victim);
                     dart.var_cbca1a8f = 1;
                 }
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace shroud/shroud
@@ -353,7 +353,7 @@ function function_55de888f(watcher) {
     self.health = self.maxhealth;
     self setmaxhealth(self.maxhealth);
     attacker = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         profilestart();

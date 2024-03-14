@@ -37,15 +37,15 @@ function __init__() {
 // Size: 0x76
 function validation() {
     if (isdefined(self.var_b773066d) && self.var_b773066d) {
-        return 0;
+        return false;
     }
     if (zm_trial_disable_perks::is_active() || zm_trial_randomize_perks::is_active()) {
-        return 0;
+        return false;
     }
     if (self zm_perks::function_80cb4982()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_perk_up/zm_bgb_perk_up

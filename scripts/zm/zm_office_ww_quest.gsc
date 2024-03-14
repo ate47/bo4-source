@@ -204,7 +204,7 @@ function function_b128ee4f() {
 // Size: 0x50
 function function_ff891275() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self waittill(#"damage");
         self function_b128ee4f();
         wait(0.1);
@@ -225,7 +225,7 @@ function function_469495ed(e_player) {
     } else {
         self sethintstring(#"zombie/need_power");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
@@ -235,7 +235,7 @@ function function_469495ed(e_player) {
 function function_4bda6e6c() {
     self endon(#"death");
     level flag::wait_till("power_on");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         playsoundatposition(#"hash_5321ac1dbb962d10", level.s_code_machine.origin);
@@ -430,7 +430,7 @@ function function_2b049ee1(e_player) {
     } else {
         self sethintstring(#"hash_67ddc0f0c16c1216");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
@@ -439,7 +439,7 @@ function function_2b049ee1(e_player) {
 // Size: 0x246
 function function_36664799() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (level.s_ww_quest_reward.var_5e34c88c) {
@@ -485,7 +485,7 @@ function function_73530998() {
 // Size: 0xf4
 function function_1e479c72() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (!zm_weapons::is_weapon_upgraded(waitresult.weapon)) {
@@ -496,7 +496,7 @@ function function_1e479c72() {
             if (level.var_6504d315.n_next > 2) {
                 function_fa833e73();
                 wait(0.1);
-                return;
+                break;
             }
         } else {
             level.var_6504d315.n_next = 0;
@@ -601,13 +601,13 @@ function function_6ead7c1f() {
 // Size: 0x84
 function function_63572ef0() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (waitresult.mod === "MOD_GRENADE_SPLASH") {
             self function_4c07537f();
             wait(0.1);
-            return;
+            break;
         }
     }
 }
@@ -695,7 +695,7 @@ function function_90489a6() {
 function function_c056a0ad() {
     level.s_code4 endon(#"code_revealed", #"death");
     function_81ed41a8();
-    while (1) {
+    while (true) {
         self hide();
         level.panic_room_monitor_light.fx delete();
         level.s_code4 waittill(#"code_available");
@@ -755,7 +755,7 @@ function function_c9559668() {
 // Size: 0x60
 function function_28e65bfe() {
     self endon(#"code_revealed", #"death");
-    while (1) {
+    while (true) {
         level waittill(#"pack_room_reset");
         self function_c9559668();
     }

@@ -396,7 +396,7 @@ function helicopter_crash_rotation(point, dir) {
             torque = (0, torque[2] * 180, 0);
         }
     }
-    while (1) {
+    while (true) {
         ang_vel = self getangularvelocity();
         ang_vel = ang_vel + torque * 0.05;
         if (ang_vel[1] < 360 * -1) {
@@ -483,7 +483,7 @@ function helicopter_crash_zone_accel(dir) {
 // Size: 0xf2
 function helicopter_collision() {
     self endon(#"crash_done");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         normal = waitresult.normal;
@@ -636,7 +636,7 @@ function helicopter_crash_move(point, dir) {
             torque = (0, torque[2] * 180, 0);
         }
     }
-    while (1) {
+    while (true) {
         ang_vel = self getangularvelocity();
         ang_vel = ang_vel + torque * 0.05;
         if (ang_vel[1] < 360 * -1) {
@@ -682,7 +682,7 @@ function boat_crash_movement(point, dir) {
     self setangularvelocity(ang_vel);
     torque = (randomintrange(-5, -3), 0, randomintrange(0, 100) > 50 ? -5 : 5);
     self thread boat_crash_monitor(point, dir, 4);
-    while (1) {
+    while (true) {
         ang_vel = self getangularvelocity();
         ang_vel = ang_vel + torque * 0.05;
         if (ang_vel[1] < 360 * -1) {
@@ -782,15 +782,15 @@ function crash_path_check(node) {
             detourpath = vehicle::path_detour_get_detourpath(getvehiclenodearray(targ.target2, "targetname"));
             if (isdefined(detourpath) && isdefined(detourpath.script_crashtype)) {
                 self.nd_crash_path = detourpath;
-                return 1;
+                return true;
             }
         }
         if (isdefined(targ.target)) {
             targ1 = getvehiclenode(targ.target, "targetname");
             if (isdefined(targ1) && isdefined(targ1.target) && isdefined(targ.targetname) && targ1.target == targ.targetname) {
-                return 0;
+                return false;
             } else if (isdefined(targ1) && targ1 == node) {
-                return 0;
+                return false;
             } else {
                 targ = targ1;
             }
@@ -798,7 +798,7 @@ function crash_path_check(node) {
         }
         targ = undefined;
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle_death/vehicle_death_shared
@@ -1192,10 +1192,10 @@ function is_crash_detour_nearby() {
     if (isdefined(self.nd_crash_path)) {
         n_dist = distance(self.origin, self.nd_crash_path.origin);
         if (n_dist < 1000 && util::within_fov(self.origin, self.angles, self.nd_crash_path.origin, cos(90))) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace vehicle_death/vehicle_death_shared
@@ -1233,7 +1233,7 @@ function monitor_ground_vehicle_crash_collision() {
 // Size: 0xd0
 function ground_predicted_collision() {
     self endon(#"crash_done", #"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         ent = waitresult.target;
@@ -1303,7 +1303,7 @@ function vehicle_damage_filter_damage_watcher(driver, heavy_damage_threshold) {
     if (!isdefined(heavy_damage_threshold)) {
         heavy_damage_threshold = 100;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         earthquake(0.25, 0.15, self.origin, 512, self);
@@ -1346,7 +1346,7 @@ function vehicle_damage_filter(vision_set, heavy_damage_threshold, filterid = 0,
     damagee = isdefined(b_use_player_damage) && b_use_player_damage ? driver : self;
     damagee thread vehicle_damage_filter_damage_watcher(driver, heavy_damage_threshold);
     damagee thread vehicle_damage_filter_exit_watcher(driver);
-    while (1) {
+    while (true) {
         if (isdefined(level.n_hud_damage) && level.n_hud_damage) {
             time = gettime();
             if (time - level.n_last_damage_time > 500) {
@@ -1528,10 +1528,10 @@ function flipping_shooting_crash_movement(attacker, hitdir) {
     switch (self.crash_style) {
     case 0:
         barrel_rolling_crash();
-        return;
+        break;
     case 1:
         plane_crash();
-        return;
+        break;
     default:
         random_crash(hitdir);
         break;
@@ -1564,7 +1564,7 @@ function flipping_shooting_crash_accel() {
     if (prev_forward_vel < 0) {
         prev_forward_vel = 0;
     }
-    while (1) {
+    while (true) {
         self setvehvelocity(self.velocity + anglestoup(self.angles) * self.crash_accel);
         self.crash_accel = self.crash_accel * 0.98;
         new_velocity = self.velocity;
@@ -1689,7 +1689,7 @@ function corpse_explode_fx() {
 // Size: 0x1a8
 function function_933d48a2() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         if (isdefined(waitresult.target)) {

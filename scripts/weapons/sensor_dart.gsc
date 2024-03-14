@@ -122,7 +122,7 @@ function on_player_spawned() {
 // Size: 0x25e
 function function_4d8676af(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(attackerweapon) || !isdefined(attacker) || !isdefined(victim) || !isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker.sensor_darts)) {
         foreach (dart in attacker.sensor_darts) {
@@ -132,11 +132,11 @@ function function_4d8676af(attacker, victim, weapon, attackerweapon, meansofdeat
                     dart.owner [[ level.playgadgetsuccess ]](getweapon("eq_sensor"), undefined, victim);
                     dart.var_cbca1a8f = 1;
                 }
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace sensor_dart/sensor_dart
@@ -313,7 +313,7 @@ function function_55de888f(watcher) {
     self.health = self.maxhealth;
     self setmaxhealth(self.maxhealth);
     attacker = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         profilestart();

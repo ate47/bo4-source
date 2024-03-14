@@ -566,18 +566,18 @@ function acquire(weapon, name, var_77cf85b7) {
     switch (name) {
     case #"zm_aat_brain_decay":
         self.var_b01de37[weapon] = 2;
-        return;
+        break;
     case #"zm_aat_plasmatic_burst":
         self.var_b01de37[weapon] = 3;
-        return;
+        break;
     case #"zm_aat_kill_o_watt":
         self.var_b01de37[weapon] = 4;
-        return;
+        break;
     case #"zm_aat_frostbite":
         self.var_b01de37[weapon] = 1;
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -626,8 +626,8 @@ function watch_weapon_changes() {
 function has_aat(w_current) {
     w_current = function_702fb333(w_current);
     if (isdefined(self.aat) && isdefined(self.aat[w_current])) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

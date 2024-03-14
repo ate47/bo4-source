@@ -101,7 +101,7 @@ function __main__() {
     level.var_42cb6a06[level.var_42cb6a06.size] = 3;
     level.var_2ec91d6e = [];
     /#
-        if (isdefined(0) && 0) {
+        if (isdefined(0) && false) {
             callback::add_weapon_fired(level.var_6fe89212, &function_74c0728c);
             callback::add_weapon_fired(level.var_7b9ca97a, &function_74c0728c);
         }
@@ -202,7 +202,7 @@ function function_1ec5c573(weapon, n_damage, meansofdeath) {
 // Checksum 0x65b170e1, Offset: 0x1530
 // Size: 0x20
 function function_35a0a5cc(player, mod, hit_location) {
-    return 1;
+    return true;
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
@@ -322,7 +322,7 @@ function function_656b149c(var_c74d5934, s_waitresult, var_41bf50f) {
             self.var_3d7d20b = var_ea0a46dc;
         }
         /#
-            if (isdefined(0) && 0) {
+            if (isdefined(0) && false) {
                 self.var_3d7d20b = var_ea0a46dc;
             }
         #/
@@ -356,7 +356,7 @@ function function_656b149c(var_c74d5934, s_waitresult, var_41bf50f) {
 // Size: 0x21a
 function function_58b7cdd7() {
     /#
-        while (1) {
+        while (true) {
             foreach (n_index, var_e41be0c2 in level.var_2ec91d6e) {
                 n_y_pos = 480 + 18.7 * n_index;
                 switch (var_e41be0c2) {
@@ -392,18 +392,18 @@ function function_58b7cdd7() {
 // Size: 0x78
 function function_7f12f6a2() {
     if (isdefined(self.var_6a36f6dc) && self.var_6a36f6dc) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_bd48b030) && self.var_bd48b030) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_7fcb707c) && self.var_7fcb707c) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_780857a) && self.var_780857a) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_82497b8a/namespace_a20a2d7a
@@ -418,7 +418,7 @@ function function_74c0728c(weapon) {
         w_base = level.var_7b9ca97a;
     }
     /#
-        if (isdefined(0) && 0) {
+        if (isdefined(0) && false) {
             return;
         }
     #/
@@ -443,7 +443,7 @@ function function_5114b093() {
     self endon(#"death");
     var_97e851d8 = array(level.var_74cf08b1, level.var_4b14202f);
     /#
-        if (isdefined(0) && 0) {
+        if (isdefined(0) && false) {
             if (!isdefined(var_97e851d8)) {
                 var_97e851d8 = [];
             } else if (!isarray(var_97e851d8)) {
@@ -605,7 +605,7 @@ function function_a7c67ad6(ai_enemy, var_ea0a46dc, var_8c987230, ...) {
 function function_45b0dfc6(v_origin, str_text, str_endon) {
     /#
         self endon(str_endon);
-        while (1) {
+        while (true) {
             print3d(v_origin, str_text, (0, 1, 0), 1, 0.7, 3);
             wait(0.1);
         }
@@ -680,18 +680,18 @@ function function_a851c777(var_ea0a46dc, e_attacker) {
     case 0:
         self clientfield::set("" + #"hash_1dd40649a6474f30", 0);
         self.var_6a36f6dc = 0;
-        return;
+        break;
     case 1:
         self.var_bd48b030 = 0;
-        return;
+        break;
     case 2:
         self clientfield::set("" + #"hash_2ff818c8cb4c17ba", 0);
         self.var_7fcb707c = 0;
-        return;
+        break;
     case 3:
         self clientfield::set("" + #"hash_6f59675863e19a50", 0);
         self.var_780857a = 0;
-        return;
+        break;
     }
 }
 
@@ -780,7 +780,7 @@ function shrink_globe() {
 function function_e607e26e(e_attacker) {
     self endon(#"hash_775ddc8cde7b36e4");
     self thread function_f8679f8d(3, &function_c9b2e87f, e_attacker);
-    while (1) {
+    while (true) {
         self waittill(#"touch");
         self function_f8679f8d(3, &function_c9b2e87f, e_attacker);
         wait(0.5);
@@ -825,10 +825,10 @@ function function_c9b2e87f(...) {
             e_attacker notify(#"zombie_shrunk");
         }
         self function_61b2f057(e_attacker, level.var_4b14202f);
-        return;
+        break;
     default:
         self function_2d3beb68(3, e_attacker);
-        return;
+        break;
     }
 }
 
@@ -882,7 +882,7 @@ function function_936c6968(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
 function function_e46e9108(var_8cf2f35b, v_origin, e_attacker) {
     var_8cf2f35b endon(#"hash_51bbb146cbe1a24d");
     self thread function_f8679f8d(0, &function_bbbbc4d0, v_origin, e_attacker);
-    while (1) {
+    while (true) {
         self waittill(#"touch");
         self function_f8679f8d(0, &function_bbbbc4d0, v_origin, e_attacker);
         wait(0.5);
@@ -922,15 +922,15 @@ function function_f724358c(e_attacker) {
     case #"bat":
     case #"zombie_dog":
         self function_61b2f057(e_attacker, level.var_74cf08b1);
-        return;
+        break;
     case #"catalyst":
     case #"zombie":
     case #"nosferatu":
         self thread function_ad3de341(e_attacker);
-        return;
+        break;
     default:
         self thread function_2d3beb68(0, e_attacker);
-        return;
+        break;
     }
 }
 
@@ -955,7 +955,7 @@ function function_ad3de341(e_attacker) {
             return;
         }
     }
-    while (1) {
+    while (true) {
         var_e3256b6c = randomfloatrange(-600, 600);
         var_47a4d489 = randomfloatrange(-600, 600);
         v_loc = self.origin + (var_e3256b6c, var_47a4d489, 0);
@@ -1064,7 +1064,7 @@ function function_9537d6cb(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
 function function_b3d8a8c4(v_origin, e_attacker, e_tornado) {
     e_tornado endon(#"end_spin_cycle");
     self thread function_f8679f8d(1, &function_e5e6e403, e_attacker, e_tornado);
-    while (1) {
+    while (true) {
         self waittill(#"touch");
         self function_f8679f8d(1, &function_e5e6e403, e_attacker, e_tornado);
         wait(0.5);
@@ -1097,7 +1097,7 @@ function function_e5e6e403(...) {
         self.marked_for_death = 1;
         wait(0.5);
         self function_61b2f057(e_attacker, level.var_74cf08b1);
-        return;
+        break;
     case #"catalyst":
     case #"zombie":
     case #"nosferatu":
@@ -1123,10 +1123,10 @@ function function_e5e6e403(...) {
         }
         wait(0.5);
         self thread function_3ebc5d0c(e_attacker);
-        return;
+        break;
     default:
         self thread function_2d3beb68(1, e_attacker);
-        return;
+        break;
     }
 }
 
@@ -1157,19 +1157,19 @@ function function_c5eccfa2() {
     switch (randomint(3)) {
     case 0:
         gibserverutils::gibrightleg(self);
-        return;
+        break;
     case 1:
         gibserverutils::gibleftleg(self);
-        return;
+        break;
     case 2:
         gibserverutils::gibrightarm(self);
-        return;
+        break;
     case 3:
         gibserverutils::gibleftarm(self);
-        return;
+        break;
     case 4:
         self zombie_utility::zombie_head_gib();
-        return;
+        break;
     }
 }
 
@@ -1294,7 +1294,7 @@ function function_b9078d40(v_origin, e_attacker, var_a257f75d) {
 function function_1250965b(e_attacker) {
     self endon(#"hash_7e07bb5b7a331e0b", #"death");
     self thread function_f8679f8d(2, &function_886f2b8d, self, e_attacker);
-    while (1) {
+    while (true) {
         self waittill(#"touch");
         self function_f8679f8d(2, &function_886f2b8d, self, e_attacker);
         waitframe(1);
@@ -1308,7 +1308,7 @@ function function_1250965b(e_attacker) {
 function function_1beb7376(e_attacker) {
     self endon(#"hash_7e07bb5b7a331e0b", #"death");
     var_ceedbc10 = 204.8 * 204.8;
-    while (1) {
+    while (true) {
         var_cbf658a0 = getaiarchetypearray(#"bat");
         foreach (var_45acb524 in var_cbf658a0) {
             if (!(isdefined(var_45acb524.var_7fcb707c) && var_45acb524.var_7fcb707c) && isalive(var_45acb524) && var_45acb524.origin[2] - self.origin[2] < 400 && distance2dsquared(var_45acb524.origin, self.origin) < var_ceedbc10) {
@@ -1351,7 +1351,7 @@ function function_886f2b8d(...) {
     case #"catalyst":
     case #"zombie_dog":
         self function_61b2f057(e_attacker, level.var_4b14202f);
-        return;
+        break;
     case #"zombie":
     case #"nosferatu":
         self.marked_for_death = 1;
@@ -1369,10 +1369,10 @@ function function_886f2b8d(...) {
         self val::set(#"hash_6fc94bc41cfa5e91", "ignoreme", 1);
         wait(0.5);
         self function_61b2f057(e_attacker, level.var_4b14202f);
-        return;
+        break;
     default:
         self function_2d3beb68(2, e_attacker);
-        return;
+        break;
     }
 }
 

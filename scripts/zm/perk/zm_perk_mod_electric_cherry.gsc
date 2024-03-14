@@ -113,7 +113,7 @@ function electric_cherry_reload_attack() {
         self.var_dbaad7dd = 10;
     }
     self function_4debd1a8();
-    while (1) {
+    while (true) {
         s_results = undefined;
         s_results = self waittill(#"reload_start");
         w_current = self getcurrentweapon();
@@ -132,12 +132,12 @@ function electric_cherry_reload_attack() {
 // Size: 0xd4
 function check_for_reload_complete(weapon, n_clip_current, n_clip_max) {
     self endon(#"death", #"specialty_mod_electriccherry" + "_take", "player_lost_weapon_" + weapon.name);
-    while (1) {
+    while (true) {
         self waittill(#"reload");
         current_weapon = self getcurrentweapon();
         if (current_weapon == weapon && !weapon.isabilityweapon) {
             self thread function_97a7641d(weapon, n_clip_current, n_clip_max);
-            return;
+            break;
         }
     }
 }
@@ -252,7 +252,7 @@ function function_857ced89() {
     n_time_left = var_9ade76c0;
     var_8b3ae2d6 = var_9ade76c0 / 10;
     self zm_perks::function_13880aa5(3, var_8b3ae2d6, #"perk_electric_cherry");
-    while (1) {
+    while (true) {
         wait(0.1);
         n_time_left = n_time_left - 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_9ade76c0);

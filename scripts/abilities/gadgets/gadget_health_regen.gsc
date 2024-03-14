@@ -378,12 +378,12 @@ function private function_18e0320b() {
 // Size: 0x52
 function private function_dafd9cd(attacker) {
     if (gettime() < self.heal.var_a1cac2f1) {
-        return 0;
+        return false;
     }
     if (isdefined(level.deathcircle) && level.deathcircle === attacker) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace gadget_health_regen/gadget_health_regen

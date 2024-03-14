@@ -75,7 +75,7 @@ function on_revived(s_params) {
 // Size: 0x8e
 function monitor_health_regen() {
     self endon(#"hash_478eed143ecc82fc", #"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"snd_breathing_better");
         if (!(isdefined(self.heal.enabled) && self.heal.enabled)) {
             continue;

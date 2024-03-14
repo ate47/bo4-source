@@ -60,24 +60,24 @@ function private function_2f0f1b62() {
 // Size: 0xd0
 function function_64d25a18(entity) {
     if (entity.archetype !== #"human") {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.node)) {
-        return 0;
+        return false;
     }
     if (!iscovernode(entity.node)) {
-        return 0;
+        return false;
     }
     if (!entity isatcovernode()) {
-        return 0;
+        return false;
     }
     if (!(isdefined(entity.node.interact_node) && entity.node.interact_node)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.node.var_31c05612)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiinteractables/ai_interactables

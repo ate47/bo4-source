@@ -144,7 +144,7 @@ function function_1ae56656(b_success) {
 function function_f667701c() {
     self endon(#"death");
     level endon(#"aar_done");
-    while (1) {
+    while (true) {
         while (!self stancebuttonpressed()) {
             waitframe(1);
         }

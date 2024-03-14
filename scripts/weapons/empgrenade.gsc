@@ -41,7 +41,7 @@ function on_player_spawned() {
 function monitorempgrenade() {
     self endon(#"disconnect", #"death", #"killempmonitor");
     self.empendtime = 0;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"emp_grenaded");
         attacker = waitresult.attacker;

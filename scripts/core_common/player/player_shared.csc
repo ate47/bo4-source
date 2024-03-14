@@ -108,7 +108,7 @@ function function_c98e67ae(localclientnum) {
     self notify("3ae575e255539f29");
     self endon("3ae575e255539f29");
     wait(10);
-    while (1) {
+    while (true) {
         wait(0.2);
         players = getplayers(localclientnum);
         var_f3108b8 = function_5c10bd79(localclientnum);
@@ -241,15 +241,15 @@ function function_f9e445ee(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 0:
         setdepthoffield(localclientnum, 0, 0, 512, 512, 4, 0);
-        return;
+        break;
     case 1:
         setdepthoffield(localclientnum, 0, 0, 512, 4000, 4, 0);
-        return;
+        break;
     case 2:
         setdepthoffield(localclientnum, 0, 128, 512, 4000, 6, 1.8);
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

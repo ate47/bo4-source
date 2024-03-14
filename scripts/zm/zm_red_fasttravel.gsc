@@ -111,7 +111,7 @@ function function_91fabcb(mdl_item, b_clean_up = 0) {
     if (b_clean_up) {
         self thread function_9aec1610(mdl_item);
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         mdl_item clientfield::set("" + #"forcestream_crafted_item", 1);
@@ -139,7 +139,7 @@ function function_9aec1610(mdl_item) {
 // Size: 0xe0
 function function_25f97da0() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "spartan_monument") {
@@ -156,7 +156,7 @@ function function_25f97da0() {
 // Size: 0x100
 function function_e968fd4f() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "center_of_the_world") {
@@ -211,15 +211,15 @@ function function_ae5d684b() {
     case #"fountain_to_column":
     case #"column_to_fountain":
         self.unitrigger_stub.var_8d5d092c = "fountain_to_column_jump_pad";
-        return;
+        break;
     case #"column_to_park":
     case #"park_to_column":
         self.unitrigger_stub.var_8d5d092c = "column_to_park_jump_pad";
-        return;
+        break;
     case #"fountain_to_park":
     case #"park_to_fountain":
         self.unitrigger_stub.var_8d5d092c = "fountain_to_park_jump_pad";
-        return;
+        break;
     }
 }
 

@@ -317,9 +317,9 @@ function getscoreinfoxp(type) {
 // Size: 0x34
 function shouldskipmomentumdisplay(type) {
     if (isdefined(level.disablemomentum) && level.disablemomentum) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace rank/rank_shared
@@ -391,18 +391,18 @@ function getrankinfoxpamt(rankid = 0) {
 // Size: 0xd8
 function shouldkickbyrank() {
     if (self ishost()) {
-        return 0;
+        return false;
     }
     if (level.rankcap > 0 && self.pers[#"rank"] > level.rankcap) {
-        return 1;
+        return true;
     }
     if (level.rankcap > 0 && level.minprestige == 0 && self.pers[#"plevel"] > 0) {
-        return 1;
+        return true;
     }
     if (level.minprestige > self.pers[#"plevel"]) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace rank/rank_shared
@@ -544,10 +544,10 @@ function on_player_connect() {
 function atleastoneplayeroneachteam() {
     foreach (team, _ in level.teams) {
         if (!level.playercount[team]) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace rank/rank_shared
@@ -566,7 +566,7 @@ function round_this_number(value) {
 function updaterank() {
     newrankid = self getrank();
     if (newrankid == self.pers[#"rank"]) {
-        return 0;
+        return false;
     }
     oldrank = self.pers[#"rank"];
     rankid = self.pers[#"rank"];
@@ -581,7 +581,7 @@ function updaterank() {
         print("<unknown string>" + oldrank + "<unknown string>" + newrankid + "<unknown string>" + self stats::get_stat_global(#"time_played_total"));
     #/
     self setrank(newrankid);
-    return 1;
+    return true;
 }
 
 // Namespace rank/player_rankup

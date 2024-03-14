@@ -116,7 +116,7 @@ function function_6cedb75c(b_pause, str_perk, str_result, n_slot) {
 // Size: 0x1a8
 function function_f86e4c3d() {
     self endon(#"disconnect", #"specialty_etherealrazor" + "_take");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_melee", #"weapon_melee_charge");
         w_melee = waitresult.weapon;
@@ -227,7 +227,7 @@ function function_fa63958c() {
     a_e_targets = arraycombine(var_72714481, var_25e2354, 0, 0);
     var_f7c84239 = [];
     foreach (target in a_e_targets) {
-        if (1) {
+        if (true) {
             array::add(var_f7c84239, target);
         }
     }
@@ -240,9 +240,9 @@ function function_fa63958c() {
 // Size: 0xae
 function function_866130c7(w_melee) {
     if (!(isdefined(w_melee.isriotshield) && w_melee.isriotshield) && !zm_loadout::is_hero_weapon(w_melee) && !(isdefined(w_melee.isbulletweapon) && w_melee.isbulletweapon) && (!(isdefined(w_melee.isprimary) && w_melee.isprimary) || w_melee.isballisticknife)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor
@@ -251,9 +251,9 @@ function function_866130c7(w_melee) {
 // Size: 0x4a
 function function_da33f286() {
     if (isdefined(self.var_eb319d10) && self.var_eb319d10 || self.n_regen_rate === 0 || !self.heal.enabled) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_perk_ethereal_razor/zm_perk_ethereal_razor

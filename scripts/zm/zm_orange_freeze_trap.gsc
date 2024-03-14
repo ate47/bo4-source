@@ -67,7 +67,7 @@ function function_e62e184a() {
 // Size: 0x298
 function function_c2e32275() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -117,7 +117,7 @@ function function_270aecf7() {
     }
     function_91ecec97(level.s_freeze_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
     open_panels(level.s_freeze_trap.a_s_panels);
-    while (1) {
+    while (true) {
         self waittill(#"hash_35807fa157a46934");
         function_91ecec97(level.s_freeze_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
         level.s_freeze_trap.var_6b64b967 = 1;

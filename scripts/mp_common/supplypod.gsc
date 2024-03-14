@@ -151,9 +151,9 @@ function function_29de6f1f(weapon, meansofdeath = undefined) {
     ismelee = isdefined(meansofdeath) && (meansofdeath == #"mod_melee" || meansofdeath == #"mod_melee_weapon_butt");
     var_4ea2a976 = weapon.name == "launcher_standard_t8" || weapon.name == "sig_buckler_dw";
     if (var_a489f56 || iskillstreak || var_4ea2a976 || ismelee) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace supplypod/supplypod
@@ -162,9 +162,9 @@ function function_29de6f1f(weapon, meansofdeath = undefined) {
 // Size: 0x42
 function function_49ef5263() {
     if (isdefined(self.var_48107b1c) && self.var_48107b1c || isdefined(self.var_17d74a5c) && self.var_17d74a5c > gettime()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace supplypod/supplypod
@@ -188,19 +188,19 @@ function hintobjectivehint_updat(weapon) {
 // Size: 0x134
 function function_92856c6(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(attacker) || !isdefined(weapon) || !isdefined(meansofdeath)) {
-        return 0;
+        return false;
     }
     if (!function_29de6f1f(attackerweapon, meansofdeath)) {
-        return 0;
+        return false;
     }
     if (attacker function_49ef5263()) {
         if (isdefined(attacker.var_bfeea3dd) && isalive(attacker.var_bfeea3dd) && attacker != attacker.var_bfeea3dd) {
             scoreevents::processscoreevent(#"hash_131b23d720fc82c3", attacker.var_bfeea3dd, undefined, level.var_934fb97.weapon);
         }
         attacker playlocalsound(#"hash_6c2a2fee191330a0");
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace supplypod/supplypod
@@ -613,7 +613,7 @@ function watchfordamage() {
     supplypod endon(#"death");
     supplypod.health = level.var_934fb97.bundle.kshealth;
     startinghealth = supplypod.health;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if ((isdefined(level.var_934fb97.bundle.var_4f845dc4) ? level.var_934fb97.bundle.var_4f845dc4 : 0) && isdefined(waitresult.attacker) && isplayer(waitresult.attacker)) {
@@ -897,11 +897,11 @@ function function_1f8cd247(origin, angles, player) {
             }
             distsqr = distancesquared(origin, pod.origin);
             if (distsqr <= testdistance) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace supplypod/supplypod

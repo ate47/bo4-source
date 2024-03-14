@@ -130,12 +130,12 @@ function updateretrievable(local_client_num, newval) {
 // Size: 0x72
 function function_f89c4b81() {
     if (isdefined(self.weapon) && self.weapon.statname == #"ac130") {
-        return 0;
+        return false;
     }
     if (isdefined(self.weapon) && self.weapon.statname == #"tr_flechette_t8") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace weaponobjects/weaponobjects
@@ -156,19 +156,19 @@ function enemyequip_changed(local_client_num, oldval, newval, bnewent, binitials
 // Size: 0xc4
 function function_6a5648dc(local_client_num, bundle) {
     if (!self function_4e0ca360() || self.team === #"free") {
-        return 0;
+        return false;
     }
     if (isdefined(level.vision_pulse[local_client_num]) && level.vision_pulse[local_client_num]) {
-        return 0;
+        return false;
     }
     player = function_5c10bd79(local_client_num);
     if (self == player) {
-        return 0;
+        return false;
     }
     if (player.var_33b61b6f === 1) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace weaponobjects/weaponobjects
@@ -177,26 +177,26 @@ function function_6a5648dc(local_client_num, bundle) {
 // Size: 0x15c
 function function_232f3acf(local_client_num, bundle) {
     if (self function_4e0ca360() && self.team !== #"free") {
-        return 0;
+        return false;
     }
     if (self.var_6abc296 === 1) {
-        return 1;
+        return true;
     }
     type = self.type;
     if ((type == "missile" || type == "scriptmover") && self clientfield::get("enemyequip") === 0) {
-        return 0;
+        return false;
     }
     if (sessionmodeiswarzonegame()) {
         if (function_5778f82(local_client_num, #"specialty_showenemyequipment") && isdefined(self.var_f19b4afd) && self.var_f19b4afd) {
-            return 1;
+            return true;
         }
     } else {
         if (function_5778f82(local_client_num, #"specialty_showenemyequipment")) {
-            return 1;
+            return true;
         }
         bundle.var_1a5b7293 = 1;
     }
-    return 0;
+    return false;
 }
 
 // Namespace weaponobjects/weaponobjects
@@ -330,7 +330,7 @@ function equipmentwatchplayerteamchanged(localclientnum, fxhandle) {
     self notify(#"team_changed_watcher");
     self endon(#"team_changed_watcher");
     watcherplayer = function_5c10bd79(localclientnum);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"team_changed");
         player = function_5c10bd79(waitresult.localclientnum);

@@ -232,7 +232,7 @@ function ontrophysystemsmashed(attacker, callback_data) {
 function trophyactive(owner) {
     owner endon(#"disconnect");
     self endon(#"death", #"hacked");
-    while (1) {
+    while (true) {
         if (!isdefined(self)) {
             return;
         }
@@ -467,7 +467,7 @@ function watchtrophysystemdamage(watcher) {
     self.health = self.maxhealth;
     self setmaxhealth(self.maxhealth);
     attacker = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage = waitresult.amount;

@@ -462,10 +462,10 @@ function function_4617032e(status_effect_type) {
     }
     foreach (effect in self.var_121392a1) {
         if (effect.setype == status_effect_type) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace status_effect/status_effect_util
@@ -592,7 +592,7 @@ function function_150a8541() {
     self endon(#"loadoutwatcher", #"endstatuseffect");
     self.owner endon(#"death", #"disconnect");
     var_eff9d37f = self.owner function_3c54ae98(self.setype);
-    while (1) {
+    while (true) {
         self.owner waittill(#"loadout_given");
         newres = self.owner function_3c54ae98(self.setype);
         currtime = level.time;
@@ -714,10 +714,10 @@ function private function_4aac137f(var_19201a97, sourcetype) {
     endtime = function_2ba2756c(sourcetype);
     isactive = function_2ba2756c(sourcetype) > gametime;
     if (!isactive) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.var_121392a1[sourcetype]) || !isdefined(self.var_121392a1[sourcetype].var_4b22e697) || !isdefined(var_19201a97)) {
-        return 0;
+        return false;
     }
     return self.var_121392a1[sourcetype].var_4b22e697 == var_19201a97;
 }

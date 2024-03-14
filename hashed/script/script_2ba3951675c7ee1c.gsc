@@ -178,7 +178,7 @@ function private function_cbe7f871() {
     if (level flag::get(#"hash_3fb7d58b07b04333")) {
         var_a29167c5 = 1;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -361,7 +361,7 @@ function function_d586e457() {
 function private function_11efbb03(e_player) {
     self endon(#"magma_timeout");
     e_player endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_38a4480847fe9677");
         if (s_result.activator == e_player) {
@@ -483,7 +483,7 @@ function function_9689b55c(var_88f24b00) {
         }
         var_b9484ff7 = var_a2a0a44e;
     }
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {
@@ -633,7 +633,7 @@ function function_6222e98f() {
 // Size: 0x2a2
 function function_95a4deeb() {
     self endon(#"death", #"disconnect", #"hash_5dc448a84a24492", #"hash_2c23d48f0925d266");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change", #"player_downed");
         if (s_result._notify === "player_downed") {
@@ -695,7 +695,7 @@ function function_6b09dab1() {
 // Size: 0x140
 function function_7f19d274() {
     self endon(#"death", #"disconnect", #"hash_5dc448a84a24492", #"hash_2c23d48f0925d266");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == getweapon(#"ww_blundergat_fire_t8_unfinished")) {
@@ -720,7 +720,7 @@ function function_ff4e7fcd() {
     self.var_ff554ec = var_ff554ec;
     wait(0.4);
     var_ff554ec clientfield::set("" + #"hash_6954721e3aab6b22", 1);
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"hash_575b654fc5c59146");
         if (isplayer(s_result.e_player)) {
@@ -746,7 +746,7 @@ function function_bc77319a(player) {
 // Size: 0x2a0
 function function_3e6b7a2d() {
     var_fbab1c11 = undefined;
-    while (1) {
+    while (true) {
         var_d249c0e6 = 25;
         n_power = var_d249c0e6;
         s_result = undefined;
@@ -880,7 +880,7 @@ function function_d3db303d() {
     v_weapon_angles_offset = vectorscale((0, -1, 0), 90);
     self.stub.v_weapon_origin = level.var_bff24582.origin + anglestoforward(level.var_bff24582.angles) * 15 + v_weapon_origin_offset;
     self.stub.v_weapon_angles = level.var_bff24582.angles + v_weapon_angles_offset;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -1087,10 +1087,10 @@ function function_6f4823a9(cmd) {
                 var_a2a0a44e clientfield::set("<unknown string>" + #"hash_5f7eb9d1316d02a7", 1);
             }
             level flag::set(#"hash_3fb7d58b07b04333");
-            return;
+            break;
         case #"hash_384ee6deba35ca28":
             level flag::set(#"magma_forge_completed");
-            return;
+            break;
         }
     #/
 }
@@ -1153,7 +1153,7 @@ function function_48c915fa() {
     t_door triggerignoreteam();
     t_door setvisibletoall();
     t_door thread function_38792a35();
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = t_door waittill(#"trigger");
         e_player = s_result.activator;

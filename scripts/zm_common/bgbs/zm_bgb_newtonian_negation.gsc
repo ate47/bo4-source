@@ -32,9 +32,9 @@ function __init__() {
 // Size: 0x2c
 function validation() {
     if (isdefined(level.var_6bbb45f9) && level.var_6bbb45f9) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_newtonian_negation/zm_bgb_newtonian_negation

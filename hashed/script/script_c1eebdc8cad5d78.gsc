@@ -28,21 +28,21 @@ function function_9e9c82a6(item, attachmentitem, var_41a74919 = 1, allowdupe = 0
         assert(isstruct(attachmentitem));
     #/
     if (!isdefined(item) || !isdefined(item.var_a6762160) || item.var_a6762160.itemtype != #"weapon") {
-        return 0;
+        return false;
     }
     if (!isdefined(attachmentitem) || !isdefined(attachmentitem.var_a6762160) || !isdefined(attachmentitem.networkid) || attachmentitem.var_a6762160.itemtype != #"attachment") {
-        return 0;
+        return false;
     }
     if (isdefined(item.attachments)) {
         foreach (attachment in item.attachments) {
             if (isdefined(attachment) && attachment.networkid == attachmentitem.networkid) {
-                return 0;
+                return false;
             }
         }
     }
     attachmentname = function_2ced1d34(item, attachmentitem.var_a6762160, allowdupe);
     if (!isdefined(attachmentname)) {
-        return 0;
+        return false;
     }
     attachmentitem.var_4c342187 = attachmentname;
     if (!isdefined(item.attachments)) {
@@ -54,7 +54,7 @@ function function_9e9c82a6(item, attachmentitem, var_41a74919 = 1, allowdupe = 0
     if (var_41a74919) {
         function_6e9e7169(item);
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1
@@ -284,14 +284,14 @@ function function_4bd83c04(item) {
         assert(isdefined(item));
     #/
     if (!isdefined(item) || !isdefined(item.var_a6762160)) {
-        return 0;
+        return false;
     }
     foreach (slot in array("attachSlotOptics", "attachSlotBarrel", "attachSlotRail", "attachSlotMagazine", "attachSlotBody", "attachSlotStock")) {
         if (isdefined(item.var_a6762160.(slot)) && item.var_a6762160.(slot)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1
@@ -332,10 +332,10 @@ function function_70b12595(item) {
         assert(isdefined(item.var_a6762160));
     #/
     if (!isdefined(item) || !isdefined(item.var_a6762160)) {
-        return 0;
+        return false;
     }
     if (!isdefined(item.attachments) || !isdefined(item.var_a6762160.attachments)) {
-        return 1;
+        return true;
     }
     if (item.attachments.size < item.var_a6762160.attachments.size) {
         var_8697fbe7 = 0;
@@ -348,7 +348,7 @@ function function_70b12595(item) {
         }
         return (item.attachments.size >= var_8697fbe7);
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1
@@ -363,10 +363,10 @@ function function_ee669356(item) {
         assert(isdefined(item.var_a6762160));
     #/
     if (!isdefined(item) || !isdefined(item.var_a6762160)) {
-        return 0;
+        return false;
     }
     if (!isdefined(item.attachments) || !isdefined(item.var_a6762160.attachments)) {
-        return 1;
+        return true;
     }
     foreach (attachment in item.var_a6762160.attachments) {
         if (!item_world_util::function_7363384a(attachment.var_6be1bec7)) {
@@ -374,10 +374,10 @@ function function_ee669356(item) {
         }
         attachmentitem = function_4ba8fde(attachment.var_6be1bec7);
         if (!isdefined(attachmentitem) || !isdefined(attachmentitem.var_a6762160)) {
-            return 0;
+            return false;
         }
         if (!isdefined(item.attachments) || item.attachments.size <= 0) {
-            return 0;
+            return false;
         }
         hasattachment = 0;
         foreach (itemattachment in item.attachments) {
@@ -387,10 +387,10 @@ function function_ee669356(item) {
             }
         }
         if (!hasattachment) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1
@@ -404,11 +404,11 @@ function function_b6a27222(slotid) {
     foreach (weaponslot in array(16 + 1, 16 + 1 + 6 + 1)) {
         foreach (var_259f58f3 in array(1, 2, 3, 4, 5, 6)) {
             if (slotid == weaponslot + var_259f58f3) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1
@@ -417,7 +417,7 @@ function function_b6a27222(slotid) {
 // Size: 0xa8
 function function_73593286(var_2ff7916e, var_21b4f4e9) {
     if (!isdefined(var_2ff7916e) || !isdefined(var_21b4f4e9)) {
-        return 0;
+        return false;
     }
     var_f9adb977 = isdefined(var_2ff7916e.parentname) ? var_2ff7916e.parentname : var_2ff7916e.name;
     var_a3508cbe = isdefined(var_21b4f4e9.parentname) ? var_21b4f4e9.parentname : var_21b4f4e9.name;
@@ -437,10 +437,10 @@ function function_398b9770(var_4838b749, var_f9f8c0b5) {
     #/
     foreach (var_259f58f3 in array(1, 2, 3, 4, 5, 6)) {
         if (var_f9f8c0b5 == var_4838b749 + var_259f58f3) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_a0d533d1/namespace_a0d533d1

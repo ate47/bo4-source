@@ -154,18 +154,18 @@ function function_1d15a456(localclientnum, oldval, newval, bnewent, binitialsnap
         audio::playloopat(#"hash_868fc0612e15eaf", self.origin + vectorscale((0, 0, 1), 50));
         audio::stoploopat(#"hash_3fdf4ea8be67182e", self.origin + vectorscale((0, 0, 1), 50));
         playsound(localclientnum, #"hash_c22b771ecbf8bb6", self.origin + vectorscale((0, 0, 1), 50));
-        return;
+        break;
     case 2:
         self.var_aa8c0343 = playfx(localclientnum, level._effect[#"hash_3665813f5609df50"], self.origin, anglestoforward(self.angles));
         audio::stoploopat(#"hash_868fc0612e15eaf", self.origin + vectorscale((0, 0, 1), 50));
         audio::playloopat(#"hash_3fdf4ea8be67182e", self.origin + vectorscale((0, 0, 1), 50));
         playsound(localclientnum, #"hash_24d107d1b3a13829", self.origin + vectorscale((0, 0, 1), 50));
-        return;
+        break;
     case 3:
         self.var_aa8c0343 = playfx(localclientnum, level._effect[#"hash_4cd18caca0e2880b"], self.origin, anglestoforward(self.angles));
         audio::stoploopat(#"hash_868fc0612e15eaf", self.origin + vectorscale((0, 0, 1), 50));
         audio::stoploopat(#"hash_3fdf4ea8be67182e", self.origin + vectorscale((0, 0, 1), 50));
-        return;
+        break;
     }
 }
 

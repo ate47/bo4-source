@@ -104,7 +104,7 @@ function playerzombie_player_damage() {
     self endon(#"death", #"disconnect");
     self thread playerzombie_infinite_health();
     self.zombiehealth = level.zombie_health;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
@@ -187,7 +187,7 @@ function playerzombie_downed_hud() {
 function playerzombie_infinite_health() {
     self endon(#"death", #"disconnect");
     bighealth = 100000;
-    while (1) {
+    while (true) {
         if (self.health < bighealth) {
             self.health = bighealth;
         }
@@ -215,7 +215,7 @@ function playerzombie_soundboard() {
     self.adssound_nexttime = gettime();
     adssound = "playerzombie_adsbutton_sound";
     self.inputsound_nexttime = gettime();
-    while (1) {
+    while (true) {
         if (self.playerzombie_soundboard_disable) {
             waitframe(1);
             continue;

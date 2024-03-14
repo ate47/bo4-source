@@ -190,7 +190,7 @@ function function_f5a4a3eb() {
         mdl_door.var_3acc3ac3 = s_open.origin + vectorscale(anglestoforward(mdl_door.v_forward) * -1, 2);
         mdl_door.var_2aba91c4 = 1;
         mdl_door disconnectpaths();
-        if (1) {
+        if (true) {
             mdl_door thread function_dd0b407b();
         }
     }
@@ -252,7 +252,7 @@ function function_dd0b407b() {
 function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {

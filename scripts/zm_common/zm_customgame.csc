@@ -98,9 +98,9 @@ function function_e49dbc72() {
 // Size: 0x44
 function private function_ecc5a0b9(local_client_num, player, damage) {
     if (int(damage) == 5) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_custom/zm_customgame

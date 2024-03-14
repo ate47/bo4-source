@@ -52,9 +52,9 @@ function function_294117a0() {
 function function_3711499d(vehicle, deployable_weapon, traceresult) {
     maxdepth = isdefined(deployable_weapon.var_76127e14) ? deployable_weapon.var_76127e14 : 0;
     if (maxdepth > 0 && traceresult.waterdepth > maxdepth) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace recon_wz/recon_wz
@@ -128,7 +128,7 @@ function private function_b96833b2(vehicle) {
     self endon("103a2be8751d4c46");
     self endon(#"death", #"disconnect");
     vehicle endon(#"death", #"exit_vehicle");
-    while (1) {
+    while (true) {
         if (vehicle function_2c2c30e0()) {
             vehicle dodamage(vehicle.health, vehicle.origin);
         } else {
@@ -171,7 +171,7 @@ function private function_ec1a4a6b() {
     self notify("47a7355b1fe3316");
     self endon("47a7355b1fe3316");
     self endon(#"death");
-    while (1) {
+    while (true) {
         speed = abs(self getspeedmph());
         velocity = self getvelocity();
         zvelocity = abs(velocity[2]);
@@ -217,9 +217,9 @@ function private on_vehicle_killed(params) {
 function private function_c7aa9338(array) {
     foreach (ent in array) {
         if (util::function_fbce7263(ent.team, self.team)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 

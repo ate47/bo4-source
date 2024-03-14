@@ -50,7 +50,7 @@ function function_bdbf3da2(player) {
     self notify("6daba2448119ac03");
     self endon("6daba2448119ac03");
     player endon(#"bgb_update", #"disconnect");
-    while (1) {
+    while (true) {
         is_melee = player meleebuttonpressed();
         if (!is_melee) {
             waitframe(1);

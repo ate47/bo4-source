@@ -72,18 +72,18 @@ function __init__() {
 // Size: 0xd4
 function is_flamethrower_weapon(weapon, var_e7c11b0c = 1) {
     if (!isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (weapon == level.hero_weapon[#"flamethrower"][2]) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"flamethrower"][1] && var_e7c11b0c < 3) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"flamethrower"][0] && var_e7c11b0c < 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower
@@ -93,7 +93,7 @@ function is_flamethrower_weapon(weapon, var_e7c11b0c = 1) {
 function private function_f5430720() {
     self endon(#"disconnect");
     self thread function_82f451d4();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -137,7 +137,7 @@ function private function_f5430720() {
 // Size: 0x98
 function private function_82f451d4() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
@@ -246,7 +246,7 @@ function private function_d8e7e308(v_position) {
 // Size: 0x98
 function function_58bc825e(w_flamethrower) {
     self endon(#"bled_out", #"death", #"hero_flamethrower_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == w_flamethrower) {
@@ -323,7 +323,7 @@ function function_31a142a2(w_flamethrower) {
 // Size: 0xb8
 function function_16f31337(w_flamethrower) {
     self endon(#"bled_out", #"death", #"hero_flamethrower_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee_power_left");
         if (s_result.weapon == w_flamethrower) {
@@ -460,7 +460,7 @@ function function_ea906434(e_player, w_flamethrower) {
 // Size: 0xb8
 function function_29bbc43a(w_flamethrower) {
     self endon(#"bled_out", #"death", #"hero_flamethrower_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon == w_flamethrower) {
@@ -556,7 +556,7 @@ function function_6c891578(v_forward_angles, var_a85d39a2) {
     var_2ddb51af = self.v_start + vectorscale((0, 0, 1), 16);
     var_d825e9dd = 1;
     v_start_pos = self.v_start + vectorscale((0, 0, 1), 16);
-    while (1) {
+    while (true) {
         if (isdefined(var_d825e9dd) && var_d825e9dd) {
             var_d825e9dd = undefined;
             var_94a175c3 = 200;
@@ -655,7 +655,7 @@ function function_10c91a46() {
     self endon(#"disconnect", #"hash_2ca901b5ada4f20f");
     self.var_be72e7c2 endon(#"death");
     self.var_be72e7c2.t_damage endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.var_be72e7c2.t_damage waittill(#"trigger");
         if (isdefined(s_result.activator.var_d9e7a08a) && s_result.activator.var_d9e7a08a) {
@@ -823,25 +823,25 @@ function private function_943cd1e3(e_player, ai_zombie) {
 // Size: 0x1a6
 function private function_58942bba(e_ignore) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     v_start_pos = self.origin + vectorscale((0, 0, 1), 16);
     if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 5), self.origin + (0, 0, 128), 0, e_ignore)) {
-        return 0;
+        return false;
     }
     if (!bullettracepassed(v_start_pos, v_start_pos + anglestoforward(self.angles) * 50, 0, e_ignore)) {
-        return 0;
+        return false;
     }
     if (!bullettracepassed(v_start_pos, v_start_pos + anglestoforward(self.angles) * 50 * -1, 0, e_ignore)) {
-        return 0;
+        return false;
     }
     if (!bullettracepassed(v_start_pos, v_start_pos + anglestoright(self.angles) * 50, 0, e_ignore)) {
-        return 0;
+        return false;
     }
     if (!bullettracepassed(v_start_pos, v_start_pos + anglestoright(self.angles) * 50 * -1, 0, e_ignore)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower

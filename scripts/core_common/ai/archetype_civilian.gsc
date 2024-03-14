@@ -112,7 +112,7 @@ function registerbehaviorscriptfunctions() {
 // Size: 0x21c
 function private function_686ab596() {
     wait(5);
-    while (1) {
+    while (true) {
         var_dfd6386 = getdvarstring(#"hash_27ecb7addfd5db25", "");
         ais = getaiarchetypearray(#"civilian");
         foreach (ai in ais) {
@@ -120,18 +120,18 @@ function private function_686ab596() {
             case #"riot":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "riot");
                 ai setteam(#"team3");
-                continue;
+                break;
             case #"panic":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "panic");
-                continue;
+                break;
             case #"calm":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "calm");
-                continue;
+                break;
             case #"run":
                 ai::setaiattribute(ai, #"hash_78e762abc4fbf1de", "run");
-                continue;
+                break;
             default:
-                continue;
+                break;
             }
         }
         wait(0.05);
@@ -188,12 +188,12 @@ function private civilianonanimscriptedcallback(entity) {
 // Size: 0xa6
 function private function_ebea502e(entity) {
     if (entity asmistransitionrunning() || entity getbehaviortreestatus() != 5 || entity asmissubstatepending() || entity asmistransdecrunning()) {
-        return 1;
+        return true;
     }
     if (entity getpathmode() == "dont move") {
-        return 0;
+        return false;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -202,13 +202,13 @@ function private function_ebea502e(entity) {
 // Size: 0x42c
 function private rioterchoosepositionservice(entity) {
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") != "riot") {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.enemy)) {
-        return 0;
+        return false;
     }
     if (function_ebea502e(entity)) {
-        return 0;
+        return false;
     }
     goalinfo = entity function_4794d6a3();
     forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
@@ -219,7 +219,7 @@ function private rioterchoosepositionservice(entity) {
     dist = distance2d(entity.origin, lastknownpos);
     var_1ebff8de = itsbeenawhile || !isatscriptgoal || isinbadplace;
     if (!var_1ebff8de) {
-        return 0;
+        return false;
     }
     if (forcedgoal) {
         /#
@@ -227,7 +227,7 @@ function private rioterchoosepositionservice(entity) {
         #/
         entity function_a57c34b7(goalinfo.goalpos);
         aiutility::setnextfindbestcovertime(entity, undefined);
-        return 1;
+        return true;
     }
     center = entity.origin;
     if (isdefined(entity.goalpos)) {
@@ -255,9 +255,9 @@ function private rioterchoosepositionservice(entity) {
     if (isdefined(pickedpoint)) {
         entity function_a57c34b7(pickedpoint.origin);
         aiutility::setnextfindbestcovertime(entity, undefined);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -288,19 +288,19 @@ function private civilianpanicescapechooseposition(entity) {
 // Size: 0x43c
 function private civilianwanderservice(entity) {
     if (isentity(entity getblackboardattribute("follow"))) {
-        return 0;
+        return false;
     }
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "riot") {
-        return 0;
+        return false;
     }
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "panic" && ai::getaiattribute(entity, "auto_escape")) {
-        return 0;
+        return false;
     }
     if (!ai::getaiattribute(entity, "auto_wander")) {
-        return 0;
+        return false;
     }
     if (function_ebea502e(entity)) {
-        return 0;
+        return false;
     }
     goalinfo = entity function_4794d6a3();
     forcedgoal = isdefined(goalinfo.goalforced) && goalinfo.goalforced;
@@ -308,7 +308,7 @@ function private civilianwanderservice(entity) {
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
     var_1ebff8de = itsbeenawhile || !isatscriptgoal;
     if (!var_1ebff8de) {
-        return 0;
+        return false;
     }
     if (forcedgoal) {
         /#
@@ -316,7 +316,7 @@ function private civilianwanderservice(entity) {
         #/
         entity function_a57c34b7(goalinfo.goalpos);
         aiutility::setnextfindbestcovertime(entity, undefined);
-        return 1;
+        return true;
     }
     cylinder = ai::t_cylinder(entity.goalpos, entity.goalradius, entity.goalheight);
     pixbeginevent("civilian_wander_tacquery");
@@ -340,9 +340,9 @@ function private civilianwanderservice(entity) {
     if (isdefined(pickedpoint)) {
         entity function_a57c34b7(pickedpoint.origin);
         aiutility::setnextfindbestcovertime(entity, undefined);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -353,13 +353,13 @@ function private civilianfollowservice(entity) {
     followradiussq = 300 * 300;
     followent = entity getblackboardattribute("follow");
     if (!isentity(followent)) {
-        return 0;
+        return false;
     }
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "panic" && ai::getaiattribute(entity, "auto_escape")) {
-        return 0;
+        return false;
     }
     if (function_ebea502e(entity)) {
-        return 0;
+        return false;
     }
     goalinfo = entity function_4794d6a3();
     distsq = isdefined(entity.overridegoalpos) ? distancesquared(entity.overridegoalpos, followent.origin) : -1;
@@ -368,7 +368,7 @@ function private civilianfollowservice(entity) {
     itsbeenawhile = gettime() > entity.nextfindbestcovertime;
     var_1ebff8de = itsbeenawhile || !isatscriptgoal || distsq < 0 || distsq > followradiussq;
     if (!var_1ebff8de) {
-        return 0;
+        return false;
     }
     pixbeginevent("civilian_follow_tacquery");
     aiprofile_beginentry("civilian_follow_tacquery");
@@ -395,9 +395,9 @@ function private civilianfollowservice(entity) {
     if (isdefined(pickedpoint)) {
         entity function_a57c34b7(pickedpoint.origin);
         aiutility::setnextfindbestcovertime(entity, undefined);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -443,9 +443,9 @@ function private function_e27d2a1b() {
 // Size: 0x36
 function private civilianarrivalallowed(entity) {
     if (ai::getaiattribute(entity, "disablearrivals")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -454,9 +454,9 @@ function private civilianarrivalallowed(entity) {
 // Size: 0x40
 function private civilianareturnsallowed(entity) {
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "calm") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -465,9 +465,9 @@ function private civilianareturnsallowed(entity) {
 // Size: 0x40
 function civilianisrioter(entity) {
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") == "riot") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -476,16 +476,16 @@ function civilianisrioter(entity) {
 // Size: 0x586
 function civiliancanthrowmolotovgrenade(behaviortreeentity, throwifpossible = 0) {
     if (!isdefined(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
     if (!issentient(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
     if (isvehicle(behaviortreeentity.enemy) && behaviortreeentity.enemy.vehicleclass === "helicopter") {
-        return 0;
+        return false;
     }
     if (!ai::getaiattribute(behaviortreeentity, "useGrenades")) {
-        return 0;
+        return false;
     }
     entityangles = behaviortreeentity.angles;
     toenemy = behaviortreeentity.enemy.origin - behaviortreeentity.origin;
@@ -493,45 +493,45 @@ function civiliancanthrowmolotovgrenade(behaviortreeentity, throwifpossible = 0)
     entityforward = anglestoforward(entityangles);
     entityforward = vectornormalize((entityforward[0], entityforward[1], 0));
     if (vectordot(toenemy, entityforward) < 0.5) {
-        return 0;
+        return false;
     }
     if (!throwifpossible) {
         foreach (player in level.players) {
             if (player laststand::player_is_in_laststand() && distancesquared(behaviortreeentity.enemy.origin, player.origin) <= 640000) {
-                return 0;
+                return false;
             }
         }
         grenadethrowinfos = blackboard::getblackboardevents("team_grenade_throw");
         foreach (grenadethrowinfo in grenadethrowinfos) {
             if (grenadethrowinfo.data.grenadethrowerteam === behaviortreeentity.team) {
-                return 0;
+                return false;
             }
         }
         grenadethrowinfos = blackboard::getblackboardevents("riot_grenade_throw");
         foreach (grenadethrowinfo in grenadethrowinfos) {
             if (isdefined(grenadethrowinfo.data.grenadethrownat) && isalive(grenadethrowinfo.data.grenadethrownat)) {
                 if (grenadethrowinfo.data.grenadethrower == behaviortreeentity) {
-                    return 0;
+                    return false;
                 }
                 if (isdefined(grenadethrowinfo.data.grenadethrownat) && grenadethrowinfo.data.grenadethrownat == behaviortreeentity.enemy) {
-                    return 0;
+                    return false;
                 }
                 if (isdefined(grenadethrowinfo.data.grenadethrownposition) && isdefined(behaviortreeentity.grenadethrowposition) && distancesquared(grenadethrowinfo.data.grenadethrownposition, behaviortreeentity.grenadethrowposition) <= 1440000) {
-                    return 0;
+                    return false;
                 }
             }
         }
     }
     throw_dist = distance2dsquared(behaviortreeentity.origin, behaviortreeentity lastknownpos(behaviortreeentity.enemy));
     if (throw_dist < 300 * 300 || throw_dist > 1250 * 1250) {
-        return 0;
+        return false;
     }
     arm_offset = archetype_human_cover::temp_get_arm_offset(behaviortreeentity, behaviortreeentity lastknownpos(behaviortreeentity.enemy));
     throw_vel = behaviortreeentity canthrowgrenadepos(arm_offset, behaviortreeentity lastknownpos(behaviortreeentity.enemy));
     if (!isdefined(throw_vel)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetypecivilian/archetype_civilian
@@ -583,27 +583,27 @@ function private civiliancleanuptothrowgrenade(behaviortreeentity) {
 // Size: 0x2e6
 function private rioterreaquireservice(entity) {
     if (entity getblackboardattribute(#"hash_78e762abc4fbf1de") != "riot") {
-        return 0;
+        return false;
     }
     if (!isdefined(entity.reacquire_state)) {
         entity.reacquire_state = 0;
     }
     if (!isdefined(entity.enemy)) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     if (entity haspath()) {
-        return 0;
+        return false;
     }
     if (entity seerecently(entity.enemy, 3)) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     dirtoenemy = vectornormalize(entity.enemy.origin - entity.origin);
     forward = anglestoforward(entity.angles);
     if (vectordot(dirtoenemy, forward) < 0.5) {
         entity.reacquire_state = 0;
-        return 0;
+        return false;
     }
     switch (entity.reacquire_state) {
     case 0:
@@ -620,16 +620,16 @@ function private rioterreaquireservice(entity) {
     default:
         if (entity.reacquire_state > 15) {
             entity.reacquire_state = 0;
-            return 0;
+            return false;
         }
         break;
     }
     if (isvec(reacquirepos)) {
         entity function_a57c34b7(reacquirepos);
         entity.reacquire_state = 0;
-        return 1;
+        return true;
     }
     entity.reacquire_state++;
-    return 0;
+    return false;
 }
 

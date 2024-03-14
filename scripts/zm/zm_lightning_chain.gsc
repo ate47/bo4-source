@@ -144,22 +144,22 @@ function private lc_end_arc_damage(arc_num, enemies_hit_num, params) {
         /#
             zm_utility::debug_print("<unknown string>");
         #/
-        return 1;
+        return true;
     }
     if (enemies_hit_num >= params.max_enemies_killed) {
         /#
             zm_utility::debug_print("<unknown string>");
         #/
-        return 1;
+        return true;
     }
     radius_decay = params.radius_decay * arc_num;
     if (params.radius_start - radius_decay <= 0) {
         /#
             zm_utility::debug_print("<unknown string>");
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace lightning_chain/zm_lightning_chain

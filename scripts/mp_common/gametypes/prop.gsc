@@ -535,7 +535,7 @@ function function_7913d068(var_fae892d1) {
         }
         level.hide_timer mp_prop_timer::set_isprop(player, 0);
     }
-    while (1) {
+    while (true) {
         foreach (player in level.players) {
             level.hide_timer mp_prop_timer::set_timeremaining(player, int((var_fb3f700 - gettime()) / 1000));
         }
@@ -680,10 +680,10 @@ function whistlestarttimer_internal(counttime) {
 function useprophudserver() {
     /#
         if (getdvarint(#"scr_ph_useprophudserver", 0) != 0) {
-            return 1;
+            return true;
         }
     #/
-    return 1;
+    return true;
 }
 
 // Namespace prop/prop
@@ -769,7 +769,7 @@ function setuproundstarthud() {
 // Size: 0x150
 function eliminatedhudmonitor() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         props = get_alive_nonspecating_players(game.defenders);
         level.elim_hud setvalue(props.size);
         foreach (player in level.players) {
@@ -957,7 +957,7 @@ function function_6fd396() {
     level endon(#"game_ended", #"props_hide_over");
     var_fb3f700 = int(level.phsettings.prophidetime + gettime() / 1000);
     totaltimepassed = 0;
-    while (1) {
+    while (true) {
         level waittill(#"host_migration_begin");
         level.phcountdowntimer.alpha = 0;
         if (useprophudserver() && level.phsettings.propwhistletime > 0) {
@@ -1135,7 +1135,7 @@ function propwhistle() {
     setbombtimer("A", gettime() + whistletime);
     setmatchflag("bomb_timer_a", 1);
     hostmigration::waitlongdurationwithhostmigrationpause(level.phsettings.propwhistletime);
-    while (1) {
+    while (true) {
         if (var_e9aeaa85 + whistletime - var_2d0854a2 < gettime()) {
             var_ec943162++;
             setmatchflag("bomb_timer_a", 0);
@@ -1220,7 +1220,7 @@ function setupdamage() {
 function function_aa8db165(damagecallback) {
     level endon(#"game_ended");
     self endon(#"death");
-    while (1) {
+    while (true) {
         res = undefined;
         res = self waittill(#"damage");
         self thread [[ damagecallback ]](res.amount, res.attacker, res.direction, res.position, res.mod, res.model_name, res.bone_name, res.part_name, res.weapon, res.flags);
@@ -1608,7 +1608,7 @@ function function_63d4897() {
         var_309e583f.propheight = self.prop.info.propheight;
         var_309e583f.proprange = self.prop.info.proprange;
         var_309e583f.propscale = self.prop.info.propscale;
-        while (1) {
+        while (true) {
             var_94903b3f = 0;
             offsetx = getdvarfloat(#"prop_offsetx", -0.0123);
             offsety = getdvarfloat(#"prop_offsety", -0.0123);
@@ -1893,7 +1893,7 @@ function waittillrecoveredhealth(time, interval) {
     if (!isdefined(time)) {
         time = 0;
     }
-    while (1) {
+    while (true) {
         if (self.health != self.maxhealth) {
             fullhealthtime = 0;
         } else {
@@ -1901,7 +1901,7 @@ function waittillrecoveredhealth(time, interval) {
         }
         wait(interval);
         if (self.health == self.maxhealth && fullhealthtime >= time) {
-            return;
+            break;
         }
     }
 }
@@ -1944,7 +1944,7 @@ function ontimelimit() {
         potm::function_734a7d24(0);
         foreach (player in level.players) {
             if (player util::isprop() && isalive(player)) {
-                if (isdefined(1) && 1) {
+                if (isdefined(1) && true) {
                     potm::bookmark(#"prop_survive", gettime(), player);
                 }
                 scoreevents::processscoreevent("prop_survived_entire_round", player);
@@ -2075,7 +2075,7 @@ function function_aa8a29ee(team) {
 function function_3ea2519e(team) {
     level endon(#"game_ended");
     self endon(#"disconnect", #"showplayer");
-    while (1) {
+    while (true) {
         res = undefined;
         res = level waittill(#"connected");
         player = res.player;
@@ -2094,7 +2094,7 @@ function function_8e69759(player, team) {
     if (self util::isprop()) {
         self ghost();
     }
-    while (1) {
+    while (true) {
         if (isdefined(player.hasspawned) && player.hasspawned && player.team != team) {
             self showtoplayer(player);
             if (self util::isprop()) {
@@ -2139,7 +2139,7 @@ function stillalivexp() {
     level endon(#"game_ended");
     level.var_b06adc58[#"kill"][#"value"] = 300;
     level waittill(#"props_hide_over");
-    while (1) {
+    while (true) {
         hostmigration::waitlongdurationwithhostmigrationpause(10);
         /#
             if (getgametypesetting("<unknown string>") == 0) {
@@ -2163,15 +2163,15 @@ function stillalivexp() {
             switch (player.prop.info.propsize) {
             case 150:
                 scoreevents::processscoreevent("still_alive_medium_bonus", player);
-                continue;
+                break;
             case 250:
                 scoreevents::processscoreevent("still_alive_large_bonus", player);
-                continue;
+                break;
             case 350:
                 scoreevents::processscoreevent("still_alive_extra_large_bonus", player);
-                continue;
+                break;
             default:
-                continue;
+                break;
             }
         }
     }
@@ -2184,7 +2184,7 @@ function stillalivexp() {
 function tracktimealive() {
     level endon(#"game_ended");
     function_241f7953();
-    while (1) {
+    while (true) {
         foreach (player in level.players) {
             if (!isdefined(player.team)) {
                 continue;
@@ -2224,17 +2224,17 @@ function gamemodemodifyplayerdamage(einflictor, eattacker, idamage, idflags, sme
 // Size: 0xbe
 function function_d1f10992(idflags, shitloc, weapon, friendlyfire, attackerishittingself, smeansofdeath) {
     if (isdefined(smeansofdeath) && smeansofdeath == "MOD_FALLING") {
-        return 1;
+        return true;
     }
     if (self function_84793f03()) {
         if (weapon === level.phsettings.var_86fda1fd) {
-            return 1;
+            return true;
         }
         if (issubstr(weapon.name, "destructible")) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -2348,7 +2348,7 @@ function function_7bd9c9c2() {
 // Size: 0x8e
 function function_70d75619() {
     level.var_ac79a938 = 0;
-    while (1) {
+    while (true) {
         level waittill(#"host_migration_begin");
         starttime = gettime();
         level waittill(#"host_migration_end");
@@ -2378,7 +2378,7 @@ function function_1ee6f124(remainingtime) {
 function function_e32f6296(remainingtime) {
     level endon(#"cancelcountdown");
     hostmigration::waitlongdurationwithhostmigrationpause(remainingtime);
-    return 1;
+    return true;
 }
 
 // Namespace prop/prop
@@ -2473,7 +2473,7 @@ function attackerregenammo() {
     self notify(#"attackerregenammo");
     self endon(#"attackerregenammo");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"reload");
         primaryweapon = self getcurrentweapon();
         self givemaxammo(primaryweapon);
@@ -2755,7 +2755,7 @@ function function_ef516d85(winner, endtype, endreasontext, outcometext, team, wi
                 team = self.sessionteam;
             }
             if (!isdefined(team)) {
-                return 1;
+                return true;
             }
         }
         otherteam = util::getotherteam(team);
@@ -2768,7 +2768,7 @@ function function_ef516d85(winner, endtype, endreasontext, outcometext, team, wi
             }
             var_28d2c341 = (winnerscore << 8) + loserscore;
             self luinotifyevent(#"show_outcome", 6, outcometext, #"mp_ph_tiebreaker_kill", int(matchbonus), winnerenum, notifyroundendtoui, var_28d2c341);
-            return 1;
+            return true;
         } else if (level.proptiebreaker == "time") {
             var_2d0f00cc = game.stat[#"hunterkilltime"][team] / 1000;
             otherteam = util::getotherteam(team);
@@ -2789,10 +2789,10 @@ function function_ef516d85(winner, endtype, endreasontext, outcometext, team, wi
                 var_ec37ff61 = var_4d33707d;
             }
             self luinotifyevent(#"show_outcome", 7, outcometext, #"mp_ph_tiebreaker_time", int(matchbonus), winnerenum, notifyroundendtoui, var_b41a94fc, var_ec37ff61);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -2812,10 +2812,10 @@ function function_7470e459(spawnpoint, predictedspawn) {
 function function_79f19f00(spawn_origin) {
     foreach (player in level.players) {
         if (distance2dsquared(player.origin, spawn_origin) <= 900) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -2836,29 +2836,29 @@ function gamehasstarted() {
 function function_d24f3562() {
     /#
         if (level.var_a7997034) {
-            return 1;
+            return true;
         }
     #/
     if (level.inovertime) {
-        return 0;
+        return false;
     }
     if (level.playerqueuedrespawn && !isdefined(self.allowqueuespawn) && !level.ingraceperiod && !level.usestartspawns) {
-        return 0;
+        return false;
     }
     if (level.numlives || level.numteamlives) {
         gamehasstarted = gamehasstarted();
         if (gamehasstarted && level.numlives && !self.pers[#"lives"] || level.numteamlives && !game.stat[self.team + "_lives"]) {
-            return 0;
+            return false;
         } else if (gamehasstarted) {
             if (!level.ingraceperiod && !self.hasspawned && !level.wagermatch) {
-                return 0;
+                return false;
             }
         }
         if (self disablespawningforplayer()) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace prop/prop
@@ -2867,14 +2867,14 @@ function function_d24f3562() {
 // Size: 0x5c
 function disablespawningforplayer() {
     if (!gamehasstarted()) {
-        return 0;
+        return false;
     }
     if (self function_84793f03()) {
-        return 0;
+        return false;
     } else if (self util::isprop()) {
         return !level.ingraceperiod;
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -3377,10 +3377,10 @@ function function_fbe5e14d(location) {
     foreach (target in level.var_1103f74e.targets) {
         distsq = distancesquared(target.origin, location);
         if (distsq < var_44efd384) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -3527,13 +3527,13 @@ function function_2e77fae3(delaytime) {
 // Size: 0xb6
 function function_d2b8eac6(p1, p2) {
     if (!isdefined(p1) || !isdefined(p1.var_5f355eed)) {
-        return 0;
+        return false;
     }
     if (!isdefined(p2) || !isdefined(p2.var_5f355eed)) {
-        return 1;
+        return true;
     }
     if (p1.var_5f355eed > p2.var_5f355eed) {
-        return 1;
+        return true;
     }
     return p1.var_5f355eed == p2.var_5f355eed && p1.var_5e8990b6 <= p2.var_5e8990b6;
 }
@@ -3635,7 +3635,7 @@ function function_2a7250f0(clone, player, forward) {
 // Checksum 0x73adbb5e, Offset: 0xe0a8
 // Size: 0x7e
 function clonedamageoverride(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, timeoffset, boneindex, modelindex, surfacetype, surfacenormal) {
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -3680,7 +3680,7 @@ function _updateclonepathing() {
     if (!isdefined(level.var_1103f74e.var_faae1a42)) {
         level.var_1103f74e.var_faae1a42 = 0;
     }
-    while (1) {
+    while (true) {
         if (!isdefined(self.lastknownpos)) {
             self.lastknownpos = self.origin;
             self.lastknownpostime = gettime();

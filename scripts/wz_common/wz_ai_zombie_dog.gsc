@@ -258,7 +258,7 @@ function private function_69c3e2ac() {
 // Checksum 0x6b40cf74, Offset: 0x1228
 // Size: 0x8
 function private function_30a35f51() {
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_zombie_dog/wz_ai_zombie_dog
@@ -330,19 +330,19 @@ function function_4cc712c8(behaviortreeentity) {
 // Size: 0x16e
 function use_low_attack() {
     if (!isdefined(self.enemy) || !isplayer(self.enemy)) {
-        return 0;
+        return false;
     }
     height_diff = self.enemy.origin[2] - self.origin[2];
     low_enough = 30;
     if (height_diff < low_enough && self.enemy getstance() == "prone") {
-        return 1;
+        return true;
     }
     melee_origin = (self.origin[0], self.origin[1], self.origin[2] + 65);
     enemy_origin = (self.enemy.origin[0], self.enemy.origin[1], self.enemy.origin[2] + 32);
     if (!bullettracepassed(melee_origin, enemy_origin, 0, self)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_ai_zombie_dog/wz_ai_zombie_dog
@@ -464,7 +464,7 @@ function function_6c308e81() {
 // Size: 0x110
 function play_ambient_zombie_vocals() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         type = "ambient";
         float = 3;
         if (bb_getshouldrunstatus() == "walk") {

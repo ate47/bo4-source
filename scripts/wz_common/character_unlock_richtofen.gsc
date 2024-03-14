@@ -133,7 +133,7 @@ function update_trigger_visibility() {
     self endon(#"death");
     level endon(#"game_ended");
     level.var_ca57a3b8 = [];
-    while (1) {
+    while (true) {
         foreach (player in level.var_ca57a3b8) {
             if (!isdefined(player)) {
                 continue;

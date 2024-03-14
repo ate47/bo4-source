@@ -138,20 +138,20 @@ function function_b94a7666(from_state_name, on_notify) {
 function set_state(name, state_params) {
     state = self.states[name];
     if (!isdefined(self.owner)) {
-        return 0;
+        return false;
     }
     if (!isdefined(state)) {
         /#
             assertmsg("<unknown string>" + name + "<unknown string>" + self.name);
         #/
-        return 0;
+        return false;
     }
     reenter = self.current_state === state;
     if (isdefined(state.reenter_func) && reenter) {
         shouldreenter = self.owner [[ state.reenter_func ]](state.state_params);
     }
     if (reenter && shouldreenter !== 1) {
-        return 0;
+        return false;
     }
     if (isdefined(self.current_state)) {
         self.next_state = state;
@@ -176,7 +176,7 @@ function set_state(name, state_params) {
     if (isdefined(self.current_state.update_func)) {
         self.owner thread [[ self.current_state.update_func ]](self.current_state.state_params);
     }
-    return 1;
+    return true;
 }
 
 // Namespace statemachine/statemachine_shared
@@ -200,7 +200,7 @@ function threadnotifyconnections(state) {
 function connection_on_notify(state_machine, notify_name, connection) {
     self endon(state_machine.change_note);
     state_machine endon(#"_cancel_connections");
-    while (1) {
+    while (true) {
         params = undefined;
         params = self waittill(notify_name);
         connectionvalid = 1;
@@ -290,7 +290,7 @@ function function_acc83382() {
         if (!isdefined(heightstart)) {
             heightstart = 20;
         }
-        while (1) {
+        while (true) {
             i = 1;
             foreach (state_machine in owner.state_machines) {
                 statename = "<unknown string>";

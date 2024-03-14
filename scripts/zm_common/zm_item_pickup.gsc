@@ -27,7 +27,7 @@ function create_item_pickup(var_3d455c82, var_4b1985dd, var_b4bbefe4, n_radius =
 // Size: 0xa8
 function private item_think() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         if (!isdefined(self.var_4bac8510) || [[ self.var_4bac8510 ]](s_notify.e_who)) {

@@ -243,31 +243,31 @@ function need_to_run() {
     run_pitch = 30;
     run_height = 64;
     if (self.health < self.maxhealth) {
-        return 1;
+        return true;
     }
     if (!isdefined(self.enemy) || !isalive(self.enemy)) {
-        return 0;
+        return false;
     }
     if (!self cansee(self.enemy)) {
-        return 0;
+        return false;
     }
     dist = distancesquared(self.origin, self.enemy.origin);
     if (dist > run_dist_squared) {
-        return 0;
+        return false;
     }
     height = self.origin[2] - self.enemy.origin[2];
     if (abs(height) > run_height) {
-        return 0;
+        return false;
     }
     yaw = self absyawtoenemy();
     if (yaw > run_yaw) {
-        return 0;
+        return false;
     }
     pitch = angleclamp180(vectortoangles(self.origin - self.enemy.origin)[0]);
     if (abs(pitch) > run_pitch) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -456,20 +456,20 @@ function tigertargetservice(behaviortreeentity) {
 // Size: 0x13a
 function function_8de56915(melee_range) {
     if (self.ignoreall || !is_target_valid(self, self.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (distancesquared(self.origin, self.favoriteenemy.origin) > melee_range) {
-        return 0;
+        return false;
     }
     z_diff = abs(self.origin[2] - self.favoriteenemy.origin[2]);
     if (z_diff > 42) {
-        return 0;
+        return false;
     }
     yawtoenemy = angleclamp180(self.angles[1] - vectortoangles(self.favoriteenemy.origin - self.origin)[1]);
     if (abs(yawtoenemy) > 60) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -478,9 +478,9 @@ function function_8de56915(melee_range) {
 // Size: 0x36
 function tigershouldmelee(behaviortreeentity) {
     if (!behaviortreeentity function_8de56915(102 * 102)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -489,18 +489,18 @@ function tigershouldmelee(behaviortreeentity) {
 // Size: 0x126
 function function_6dc4602d(behaviortreeentity) {
     if (!behaviortreeentity function_8de56915(180 * 180)) {
-        return 0;
+        return false;
     }
     if (!behaviortreeentity cansee(behaviortreeentity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (distancesquared(behaviortreeentity.origin, behaviortreeentity.favoriteenemy.origin) < 40 * 40) {
-        return 1;
+        return true;
     }
     if (!tracepassedonnavmesh(behaviortreeentity.origin, isdefined(behaviortreeentity.favoriteenemy.last_valid_position) ? behaviortreeentity.favoriteenemy.last_valid_position : behaviortreeentity.favoriteenemy.origin, behaviortreeentity.favoriteenemy getpathfindingradius())) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -509,25 +509,25 @@ function function_6dc4602d(behaviortreeentity) {
 // Size: 0x1bc
 function function_36b5df8c(behaviortreeentity) {
     if (behaviortreeentity.ignoreall || !is_target_valid(behaviortreeentity, behaviortreeentity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (gettime() <= self.var_86152978) {
-        return 0;
+        return false;
     }
     enemydistsq = distancesquared(behaviortreeentity.origin, behaviortreeentity.favoriteenemy.origin);
     if (enemydistsq < 128 * 128) {
-        return 0;
+        return false;
     }
     offset = behaviortreeentity.favoriteenemy.origin - vectornormalize(behaviortreeentity.favoriteenemy.origin - behaviortreeentity.origin) * 36;
     if (enemydistsq < 256 * 256) {
         if (behaviortreeentity maymovetopoint(offset, 1, 1)) {
             yawtoenemy = angleclamp180(behaviortreeentity.angles[1] - vectortoangles(behaviortreeentity.favoriteenemy.origin - behaviortreeentity.origin)[1]);
             if (abs(yawtoenemy) <= 80) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -544,7 +544,7 @@ function function_fdde7116(behaviortreeentity) {
 // Size: 0x4c
 function function_66063225(behaviortreeentity) {
     if (isdefined(behaviortreeentity.aat_turned) && behaviortreeentity.aat_turned) {
-        return 1;
+        return true;
     }
     return bb_getshouldrunstatus() == "run";
 }
@@ -555,19 +555,19 @@ function function_66063225(behaviortreeentity) {
 // Size: 0x16e
 function use_low_attack() {
     if (!isdefined(self.enemy) || !isplayer(self.enemy)) {
-        return 0;
+        return false;
     }
     height_diff = self.enemy.origin[2] - self.origin[2];
     low_enough = 30;
     if (height_diff < low_enough && self.enemy getstance() == "prone") {
-        return 1;
+        return true;
     }
     melee_origin = (self.origin[0], self.origin[1], self.origin[2] + 65);
     enemy_origin = (self.enemy.origin[0], self.enemy.origin[1], self.enemy.origin[2] + 32);
     if (!bullettracepassed(melee_origin, enemy_origin, 0, self)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -1001,9 +1001,9 @@ function function_ef12c1d9(entity) {
                 entity melee();
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace tigerbehavior/archetype_tiger
@@ -1140,7 +1140,7 @@ function private function_1e4eb5f0() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             string = getdvarstring(#"hash_3b467d1615c469f8", "<unknown string>");
             cmd = strtok(string, "<unknown string>");

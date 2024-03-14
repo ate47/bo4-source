@@ -65,10 +65,10 @@ function function_456e91dd() {
 function function_269676a2() {
     foreach (var_780f21bf in level.var_57f4595b) {
         if (self zm_weapons::has_weapon_or_upgrade(var_780f21bf)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
@@ -121,10 +121,10 @@ function modkit_init() {
 // Size: 0x238
 function modkit_hint(e_player) {
     if (self.stub.related_parent.b_in_use === 1) {
-        return 0;
+        return false;
     }
     if (level.var_7629d4e2 === 1) {
-        return 0;
+        return false;
     }
     var_2c09b688 = e_player zm_white_util::function_c7274071();
     if (zm_white_util::function_c654e39a(var_2c09b688)) {
@@ -143,7 +143,7 @@ function modkit_hint(e_player) {
             self sethintstring(zm_utility::function_d6046228(#"hash_314a7588b45256eb", #"hash_6831cfd35264e1"), str_weapon_name);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_ww_quest_modkit/zm_white_ww_quest_modkit
@@ -152,7 +152,7 @@ function modkit_hint(e_player) {
 // Size: 0xe8
 function modkit_think() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;

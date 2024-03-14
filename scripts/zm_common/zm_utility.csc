@@ -64,7 +64,7 @@ function ignore_triggers(timer) {
 // Checksum 0x68c16ba, Offset: 0x418
 // Size: 0x6
 function is_encounter() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility
@@ -140,9 +140,9 @@ function spawn_buildkit_weapon_model(localclientnum, weapon, camo, origin, angle
 function is_classic() {
     str_gametype = util::get_game_type();
     if (str_gametype == #"zclassic") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility
@@ -152,9 +152,9 @@ function is_classic() {
 function is_standard() {
     str_gametype = util::get_game_type();
     if (str_gametype == #"zstandard") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility
@@ -164,9 +164,9 @@ function is_standard() {
 function is_trials() {
     str_gametype = util::get_game_type();
     if (str_gametype == #"ztrials" || level flag::exists(#"ztrial")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility
@@ -176,9 +176,9 @@ function is_trials() {
 function is_tutorial() {
     str_gametype = util::get_game_type();
     if (str_gametype == #"ztutorial") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility
@@ -188,9 +188,9 @@ function is_tutorial() {
 function is_grief() {
     str_gametype = util::get_game_type();
     if (str_gametype == #"zgrief") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility
@@ -216,12 +216,12 @@ function is_gametype_active(a_gametypes) {
 // Size: 0x42
 function is_ee_enabled() {
     if (!getdvarint(#"zm_ee_enabled", 0)) {
-        return 0;
+        return false;
     }
     if (level.gamedifficulty == 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_utility/zm_utility
@@ -282,7 +282,7 @@ function umbra_fix_logic(localclientnum) {
     self endon(#"disconnect");
     self endon(#"death");
     umbra_settometrigger(localclientnum, "");
-    while (1) {
+    while (true) {
         in_fix_area = 0;
         if (isdefined(level.custom_umbra_hotfix)) {
             in_fix_area = self thread [[ level.custom_umbra_hotfix ]](localclientnum);
@@ -307,13 +307,13 @@ function umbra_fix_trigger(localclientnum, pos, height, radius, umbra_name) {
             /#
                 drawcylinder(pos, radius, height, (0, 1, 0));
             #/
-            return 1;
+            return true;
         }
     }
     /#
         drawcylinder(pos, radius, height, (1, 0, 0));
     #/
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility

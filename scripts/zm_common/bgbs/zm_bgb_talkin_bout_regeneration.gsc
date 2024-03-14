@@ -50,7 +50,7 @@ function disable() {
 function function_c0c85fe() {
     self endon(#"death", #"hash_fcaa137035db4e");
     var_47624402 = 0;
-    while (1) {
+    while (true) {
         var_197c85d1 = self getvelocity();
         var_9b7f7d9b = length(var_197c85d1);
         if (var_9b7f7d9b > 0 && !self laststand::player_is_in_laststand() && (var_197c85d1[0] != 0 || var_197c85d1[1] != 0)) {

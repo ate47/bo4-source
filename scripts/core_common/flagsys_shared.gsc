@@ -25,7 +25,7 @@ function __init__() {
 // Checksum 0xa9fc5d8d, Offset: 0x110
 // Size: 0xd0
 function update_flag_dvars() {
-    while (1) {
+    while (true) {
         if (isdefined(level.flag_dvars)) {
             foreach (str_dvar in level.flag_dvars) {
                 set_val(str_dvar, getdvarint(str_dvar, 0));
@@ -282,7 +282,7 @@ function wait_till_clear_all_timeout(n_timeout, a_flags) {
 // Size: 0xb0
 function wait_till_clear_any(a_flags) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (flag in a_flags) {
             if (!get(flag)) {
                 return flag;
@@ -320,8 +320,8 @@ function delete(str_flag) {
 function script_flag_wait() {
     if (isdefined(self.script_flag_wait)) {
         self wait_till(self.script_flag_wait);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

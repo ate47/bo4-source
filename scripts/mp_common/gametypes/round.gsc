@@ -174,8 +174,8 @@ function function_870759fb() {
 // Size: 0x1c
 function is_overtime_round() {
     if (game.overtime_round > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

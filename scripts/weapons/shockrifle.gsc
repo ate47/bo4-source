@@ -75,9 +75,9 @@ function onplayerkilled() {
 // Size: 0x5a
 function function_95a892a(attacker, victim, var_3d1ed4bd, attackerweapon, meansofdeath) {
     if (!isdefined(var_3d1ed4bd) || !isdefined(attackerweapon) || var_3d1ed4bd == attackerweapon) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace shockrifle/shockrifle
@@ -159,9 +159,9 @@ function function_aa6e2f52(watcher, owner) {
 // Size: 0x5a
 function function_7cc07921(ent) {
     if (distancesquared(self.origin, ent.origin) <= level.var_a5ff950.var_9c0267f2 * level.var_a5ff950.var_9c0267f2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace shockrifle/shockrifle
@@ -224,10 +224,10 @@ function function_5fff8c45(watcher, hitent) {
 function function_33020ed7(ent) {
     for (i = 0; i < self.var_8d84345.size; i++) {
         if (self.var_8d84345[i] == ent) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace shockrifle/shockrifle
@@ -236,9 +236,9 @@ function function_33020ed7(ent) {
 // Size: 0x8e
 function function_c23ed15d(ent, var_3ee2edfa) {
     if (isdefined(ent.hittime) && ent.hittime + var_3ee2edfa + int((isdefined(level.var_a5ff950.var_80cecde8) ? level.var_a5ff950.var_80cecde8 : 0) * 1000) > gettime()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace shockrifle/shockrifle
@@ -498,7 +498,7 @@ function function_bcc47944(watcher) {
     self.health = self.maxhealth;
     self.damagetaken = 0;
     attacker = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;

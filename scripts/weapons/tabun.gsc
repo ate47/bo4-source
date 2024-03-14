@@ -45,7 +45,7 @@ function init_shared() {
 // Checksum 0xcf5e6428, Offset: 0x4b0
 // Size: 0x324
 function checkdvarupdates() {
-    while (1) {
+    while (true) {
         level.tabungaspoisonradius = getdvarint(#"scr_tabun_effect_radius", level.tabungaspoisonradius);
         level.tabungaspoisonheight = getdvarint(#"scr_tabun_shock_height", level.tabungaspoisonheight);
         level.tabungasshockradius = getdvarint(#"scr_tabun_shock_radius", level.tabungasshockradius);
@@ -315,23 +315,23 @@ function spawnalllocs(owner, startpos) {
         case 0:
             locations[#"fxtoplay"][i] = level.fx_tabun_0;
             locations[#"radius"][i] = level.fx_tabun_radius0;
-            continue;
+            break;
         case 1:
             locations[#"fxtoplay"][i] = level.fx_tabun_1;
             locations[#"radius"][i] = level.fx_tabun_radius1;
-            continue;
+            break;
         case 2:
             locations[#"fxtoplay"][i] = level.fx_tabun_2;
             locations[#"radius"][i] = level.fx_tabun_radius2;
-            continue;
+            break;
         case 3:
             locations[#"fxtoplay"][i] = level.fx_tabun_3;
             locations[#"radius"][i] = level.fx_tabun_radius3;
-            continue;
+            break;
         default:
             locations[#"fxtoplay"][i] = undefined;
             locations[#"radius"][i] = 0;
-            continue;
+            break;
         }
     }
     singleeffect = 1;

@@ -58,7 +58,7 @@ function watch_fx_shutdown(localclientnum, fxhandles) {
 // Checksum 0xeec5b33b, Offset: 0x450
 // Size: 0xcc
 function wait_team_changed(localclientnum) {
-    while (1) {
+    while (true) {
         level waittill(#"team_changed");
         if (!isdefined(level.escortrobots)) {
             continue;

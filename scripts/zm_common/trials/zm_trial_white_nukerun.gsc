@@ -59,7 +59,7 @@ function private on_begin() {
 function nuke_loop() {
     level endon(#"hash_7646638df88a3656");
     wait(5);
-    while (1) {
+    while (true) {
         wait(10);
         a_locations = struct::get_array("dog_location", "script_noteworthy");
         players = getplayers();

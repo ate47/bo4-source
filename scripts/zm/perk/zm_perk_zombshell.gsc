@@ -197,7 +197,7 @@ function zombie_death_gib(e_attacker, w_weapon) {
 // Size: 0x114
 function function_4e547cfd(var_4eaa1f4c) {
     self endon(#"death", #"zombshell_aoe", #"scene_ready", #"specialty_zombshell" + "_take");
-    while (1) {
+    while (true) {
         array::thread_all(level.activeplayers, &function_279e31b8, self);
         n_frame = self function_6b9dcec(var_4eaa1f4c);
         var_adaf2ccb = math::clamp(0.25 - n_frame * 0.05, 0.05, 0.25);
@@ -355,7 +355,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self endon(#"disconnect", #"hash_4aaf55c36b37725e");
     self.var_fc63c7bc = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_849c3bcf, 0, #"perk_zombshell");
-    while (1) {
+    while (true) {
         wait(0.1);
         self.var_fc63c7bc = self.var_fc63c7bc - 0.1;
         self.var_fc63c7bc = math::clamp(self.var_fc63c7bc, 0, var_85dcb56c);

@@ -1392,7 +1392,7 @@ function challengekills(data) {
                     case #"sentinel":
                         player stats::function_dad108fa(#"kill_blindeye_ghost_aircraft", 1);
                         awarded_kill_blindeye_ghost_aircraft = 1;
-                        continue;
+                        break;
                     }
                 }
             }
@@ -1973,7 +1973,7 @@ function challengegameendmp(data) {
                 player stats::function_dad108fa(#"hash_38cf622aaf2ce3d7", 1);
             }
         }
-        return;
+        break;
     case #"dm":
     case #"dm_hc":
         if (player == winner) {
@@ -1985,7 +1985,7 @@ function challengegameendmp(data) {
                 }
             }
         }
-        return;
+        break;
     case #"ctf":
     case #"ctf_hc":
         if (player.team == winner) {
@@ -1993,7 +1993,7 @@ function challengegameendmp(data) {
                 player stats::function_d40764f3(#"shut_out", 1);
             }
         }
-        return;
+        break;
     case #"dom_hc":
     case #"dom":
         if (player.team == winner) {
@@ -2002,7 +2002,7 @@ function challengegameendmp(data) {
                 player stats::function_dad108fa(#"hash_1b0c06f37648493f", 1);
             }
         }
-        return;
+        break;
     case #"hq":
     case #"hq_hc":
         if (player.team == winner && winnerscore > 0) {
@@ -2010,7 +2010,7 @@ function challengegameendmp(data) {
                 player stats::function_d40764f3(#"crush", 1);
             }
         }
-        return;
+        break;
     case #"koth":
     case #"koth_hc":
         if (player.team == winner && winnerscore > 0) {
@@ -2024,7 +2024,7 @@ function challengegameendmp(data) {
                 player stats::function_d40764f3(#"annihilation", 1);
             }
         }
-        return;
+        break;
     case #"dem":
     case #"dem_hc":
         if (player.team == game.defenders && player.team == winner) {
@@ -2032,7 +2032,7 @@ function challengegameendmp(data) {
                 player stats::function_d40764f3(#"shut_out", 1);
             }
         }
-        return;
+        break;
     case #"control":
     case #"sd":
     case #"control_hc":
@@ -2045,7 +2045,7 @@ function challengegameendmp(data) {
                 player stats::function_dad108fa(#"hash_644326620d99cbbb", 1);
             }
         }
-        return;
+        break;
     case #"conf":
     case #"conf_hc":
         if (player.team == winner) {
@@ -2053,9 +2053,9 @@ function challengegameendmp(data) {
                 player stats::function_d40764f3(#"crush", 1);
             }
         }
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -2086,7 +2086,7 @@ function function_ea966b4a(killstreak) {
     case #"inventory_helicopter_comlink":
         self stats::function_dad108fa(#"air_assault_total_kills", 1);
         self contracts::player_contract_event(#"air_assault_total_kills");
-        return;
+        break;
     case #"ultimate_turret":
     case #"inventory_ultimate_turret":
     case #"tank_robot":
@@ -2097,7 +2097,7 @@ function function_ea966b4a(killstreak) {
     case #"inventory_swat_team":
         self stats::function_dad108fa(#"hash_10b0c56ae630070d", 1);
         self contracts::player_contract_event(#"hash_10b0c56ae630070d");
-        return;
+        break;
     }
 }
 
@@ -2395,7 +2395,7 @@ function heroabilityactivateneardeath() {
         case #"gadget_speed_burst":
         case #"gadget_camo":
             self thread checkforherosurvival();
-            return;
+            break;
         }
     }
 }
@@ -2453,7 +2453,7 @@ function trackkillstreaksupportkills(victim) {
 // Size: 0xd6
 function monitorreloads() {
     self endon(#"disconnect", #"killmonitorreloads");
-    while (1) {
+    while (true) {
         self waittill(#"reload");
         currentweapon = self getcurrentweapon();
         if (currentweapon == level.weaponnone) {
@@ -2501,7 +2501,7 @@ function monitorgrenadefire() {
 // Size: 0x86
 function watchweaponchangecomplete() {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators");
-    while (1) {
+    while (true) {
         self.heavyweaponkillsthisactivation = 0;
         self waittill(#"weapon_change_complete", #"disconnect");
     }

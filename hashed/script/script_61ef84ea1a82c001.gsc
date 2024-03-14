@@ -109,7 +109,7 @@ function function_537f413d() {
 // Size: 0x138
 function function_3a563d3c(params) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -130,7 +130,7 @@ function function_3a563d3c(params) {
 // Size: 0x220
 function function_cd53088e(params) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -157,7 +157,7 @@ function function_cd53088e(params) {
 function private function_5ec2f851() {
     self endon(#"disconnect", #"hash_17b0a36fa17ca61a");
     var_5c4729d5 = getent("t_r_br_sp2_7", "targetname");
-    while (1) {
+    while (true) {
         if (self istouching(var_5c4729d5) && self zm_utility::is_player_looking_at(level.var_4b9d0136.origin, 0.7, 0)) {
             self clientfield::set_to_player("" + #"hash_cc5b97a575d4d6d", 1);
             self notify(#"hash_17b0a36fa17ca61a");
@@ -203,7 +203,7 @@ function function_85cfc2a3(e_player) {
 // Size: 0x98
 function function_7927b4f1() {
     self endon(#"disconnect", #"roof_kills_completed");
-    while (1) {
+    while (true) {
         var_bdf9e3c2 = self zm_zonemgr::get_player_zone();
         if (var_bdf9e3c2 === "zone_roof" || var_bdf9e3c2 === "zone_roof_infirmary") {
             self.var_3909389c = 1;
@@ -222,22 +222,22 @@ function function_7127bd6c(var_8c79ac3f) {
     switch (var_8c79ac3f) {
     case 1:
         self clientfield::set_to_player("" + #"fill_blood", 2);
-        return;
+        break;
     case 13:
         self clientfield::set_to_player("" + #"fill_blood", 3);
-        return;
+        break;
     case 25:
         self clientfield::set_to_player("" + #"fill_blood", 4);
-        return;
+        break;
     case 37:
         self clientfield::set_to_player("" + #"fill_blood", 5);
-        return;
+        break;
     case 49:
         self clientfield::set_to_player("" + #"fill_blood", 6);
-        return;
+        break;
     case 60:
         self clientfield::set_to_player("" + #"fill_blood", 7);
-        return;
+        break;
     }
 }
 
@@ -253,9 +253,9 @@ function function_3bc828f8(weapon_type) {
     case #"hash_3de0926b89369160":
     case #"hash_494f5501b3f8e1e9":
     case #"ww_blundergat_acid_t8_upgraded":
-        return 1;
+        return true;
     default:
-        return 0;
+        return false;
     }
 }
 
@@ -355,14 +355,14 @@ function function_48d7e846() {
 // Size: 0x1e4
 function function_adc74a0d(e_grenade, n_grenade_charge_power) {
     if (!isdefined(e_grenade)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     s_spork = struct::get("s_s_t_loc");
     if (!isdefined(s_spork)) {
-        return 0;
+        return false;
     }
     distsq = distancesquared(e_grenade.origin, s_spork.origin);
     if (distsq < 200 * 200 && !self flag::get(#"hash_79ab766693ef2532") && level flag::get(#"hash_29dc018e9551ecf")) {
@@ -373,9 +373,9 @@ function function_adc74a0d(e_grenade, n_grenade_charge_power) {
         var_7b566fb linkto(mdl_tomahawk);
         self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
         self thread function_55a05382(mdl_tomahawk, var_7b566fb);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_273ad667/namespace_273ad667

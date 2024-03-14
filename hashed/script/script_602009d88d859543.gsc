@@ -88,16 +88,16 @@ function function_b6a3df03() {
     switch (var_501f80dc) {
     case #"hash_3c428518d68f7f04":
         var_e84f96c4.var_374f0c4e = struct::get("scene_shower_to_warden_house", "script_string");
-        return;
+        break;
     case #"hash_1e3fbddd6a0b1088":
         var_e84f96c4.var_374f0c4e = struct::get("scene_warden_house_to_shower", "script_string");
-        return;
+        break;
     case #"hash_5422169ef482ba21":
         var_e84f96c4.var_374f0c4e = struct::get("scene_cafeteria_to_west_side", "script_string");
-        return;
+        break;
     case #"hash_40b0def60178b997":
         var_e84f96c4.var_374f0c4e = struct::get("scene_west_side_to_cafeteria", "script_string");
-        return;
+        break;
     }
 }
 

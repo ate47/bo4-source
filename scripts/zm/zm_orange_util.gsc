@@ -146,7 +146,7 @@ function private on_connect() {
 function function_2e565334() {
     level endon(#"end_game");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (zm_vo::is_player_speaking(self) && self.str_vo_being_spoken === #"hash_1242b7914448ebc7") {
             while (!isdefined(self.var_4377124)) {
                 wait(0.1);
@@ -167,9 +167,9 @@ function function_2e565334() {
 // Size: 0x3e
 function function_e08cd7b(category, subcategory) {
     if (level flag::get("trinket_round")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_util/zm_orange_util
@@ -185,7 +185,7 @@ function function_8123b826(str_category, var_39acfdda) {
             zm_audio::play_vo_internal(str_alias, self);
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange_util/zm_orange_util
@@ -411,7 +411,7 @@ function function_3d6809e9() {
     n_round = zm_round_logic::get_round_number();
     zm_utility::function_fdb0368(3);
     level.var_b2b15659 = 1;
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         wait(5);
         if (level.var_1c53964e zm_audio::can_speak()) {
@@ -420,7 +420,7 @@ function function_3d6809e9() {
     }
     level.var_1c53964e zm_hms_util::function_6a0d675d(#"hash_58f39ce928f3a523", -1, 0, 1);
     function_fd24e47f(#"hash_58f39ce928f3a523");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         wait(5);
         if (level.var_1c53964e zm_audio::can_speak()) {
@@ -522,11 +522,11 @@ function function_adb657dd(e_player) {
             self sethintstring(zm_utility::function_d6046228(#"hash_172253c9314825fc", #"hash_71016e43b6fe0570"), w_give.displayname, w_take.displayname);
         }
     } else if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"hash_603fdd2e4ae5b2b0") {
-        return 0;
+        return false;
     } else {
         self sethintstring(zm_utility::function_d6046228(#"hash_314a7588b45256eb", #"hash_6831cfd35264e1"), w_give.displayname);
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange_util/zm_orange_util
@@ -576,9 +576,9 @@ function start_zombies_collision_manager(w_pickup, func_cleanup) {
 // Size: 0x50
 function custom_magic_box_selection_logic(w_weapon, e_player) {
     if (is_wonder_weapon(w_weapon) && e_player function_3d581a6()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange_util/zm_orange_util
@@ -588,9 +588,9 @@ function custom_magic_box_selection_logic(w_weapon, e_player) {
 function function_2f57e2d2(e_player) {
     var_5f6b2789 = self.stub.trigger_target;
     if (var_5f6b2789.weapon_out === 1 && is_wonder_weapon(var_5f6b2789.zbarrier.weapon) && e_player function_3d581a6()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange_util/zm_orange_util

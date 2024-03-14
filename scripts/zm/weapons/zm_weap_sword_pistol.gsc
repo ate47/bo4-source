@@ -90,7 +90,7 @@ function on_disconnect() {
 // Size: 0x340
 function private function_eca0c19d() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -138,7 +138,7 @@ function private function_eca0c19d() {
 // Size: 0xe8
 function private function_6fe1307b(weapon) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    while (1) {
+    while (true) {
         if (weapon == level.hero_weapon[#"sword_pistol"][2]) {
             self waittill(#"weapon_melee_power");
         } else {
@@ -590,7 +590,7 @@ function function_5ff8ad0b(weapon, var_fb504c3b) {
 function private function_be6cef79(weapon) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
     self.var_61950f95 = undefined;
-    while (1) {
+    while (true) {
         self waittill(#"weapon_melee");
         if (!zm_trial_restrict_loadout::function_5fbf572(weapon)) {
             continue;
@@ -798,7 +798,7 @@ function function_37106789(player, weapon) {
         return;
     }
     n_time_started = gettime() / 1000;
-    while (1) {
+    while (true) {
         n_time_current = gettime() / 1000;
         n_time_elapsed = n_time_current - n_time_started;
         a_ai_potential_targets = getaiteamarray(level.zombie_team);
@@ -915,19 +915,19 @@ function swordpistol_rumble(var_b2e05bae) {
         switch (var_b2e05bae) {
         case 1:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            return;
+            break;
         case 2:
             self clientfield::increment_to_player("" + #"swordpistol_rumble", 2);
-            return;
+            break;
         case 3:
             self playrumbleonentity("zm_weap_swordpistol_melee_hit_rumble");
-            return;
+            break;
         case 4:
             self clientfield::increment_to_player("" + #"swordpistol_rumble", 4);
-            return;
+            break;
         case 5:
             self clientfield::increment_to_player("" + #"swordpistol_rumble", 5);
-            return;
+            break;
         }
     }
 }

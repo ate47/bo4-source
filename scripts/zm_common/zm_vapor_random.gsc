@@ -167,7 +167,7 @@ function function_6842bdd7(player) {
     finalfight_raid = struct::get_array(s_altar.target);
     if (zm_custom::function_8b8fa6e5(player)) {
         player.var_e07e301b = undefined;
-        return 0;
+        return false;
     }
     if (!(isdefined(s_altar.b_in_use) && s_altar.b_in_use) && isdefined(player.perks_active) && player.perks_active.size > 4) {
         finalfight_raid = arraysortclosest(finalfight_raid, player util::get_eye(), undefined, 0, 64);
@@ -212,15 +212,15 @@ function function_6842bdd7(player) {
             }
             player.var_e07e301b = s_interact;
             self sethintstringforplayer(player, str_altar, s_interact.n_cost);
-            return 1;
+            return true;
         } else {
             player.var_e07e301b = undefined;
-            return 0;
+            return false;
         }
     } else if (!(isdefined(s_altar.b_in_use) && s_altar.b_in_use)) {
         self sethintstringforplayer(player, #"hash_5d7144cc16556865", 4);
         player.var_e07e301b = undefined;
-        return 1;
+        return true;
     } else if (isdefined(s_altar.var_46fe01e2) && s_altar.var_46fe01e2 && s_altar.var_125b20f8 === player && isdefined(s_altar.var_62fef0f1)) {
         switch (s_altar.var_62fef0f1) {
         case #"specialty_additionalprimaryweapon":
@@ -288,10 +288,10 @@ function function_6842bdd7(player) {
             break;
         }
         self sethintstringforplayer(player, var_5137b086);
-        return 1;
+        return true;
     }
     player.var_e07e301b = undefined;
-    return 0;
+    return false;
 }
 
 // Namespace zm_vapor_random/zm_vapor_random
@@ -301,7 +301,7 @@ function function_6842bdd7(player) {
 function function_20fe0559() {
     self endon(#"death");
     s_altar = self.stub.script_struct;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -430,7 +430,7 @@ function start_perk_bottle_cycling() {
         return;
     }
     var_77bb17ca = undefined;
-    while (1) {
+    while (true) {
         for (i = 0; i < var_f0f641ad.size; i++) {
             str_model = zm_perks::get_perk_weapon_model(var_f0f641ad[i]);
             if (str_model === var_77bb17ca) {
@@ -500,7 +500,7 @@ function private function_5d55ce5f() {
     /#
         level waittill(#"start_zombie_round_logic");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             cmd = getdvarstring(#"hash_655adfd9dc05d377", "<unknown string>");
             setdvar(#"hash_655adfd9dc05d377", "<unknown string>");
             switch (cmd) {

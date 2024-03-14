@@ -162,7 +162,7 @@ function default_ontimelimit() {
 // Size: 0x148
 function default_onscorelimit() {
     if (!level.endgameonscorelimit) {
-        return 0;
+        return false;
     }
     winner = undefined;
     if (level.teambased) {
@@ -180,7 +180,7 @@ function default_onscorelimit() {
     }
     setdvar(#"ui_text_endreason", game.strings[#"score_limit_reached"]);
     thread globallogic::endgame(winner, game.strings[#"score_limit_reached"]);
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_defaults/globallogic_defaults

@@ -91,7 +91,7 @@ function private function_8e69c85() {
 // Size: 0x154
 function private function_75f0aac6() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (waitresult.weapon.name === #"galvaknuckles_t8" && level.population_count === 0) {
@@ -125,7 +125,7 @@ function nuked_population_sign_think(n_base = 99) {
     var_50f6b3f4 rotateroll(n_step, 0.05);
     var_d02e9cd rotateroll(n_step, 0.05);
     var_d02e9cd waittill(#"rotatedone");
-    while (1) {
+    while (true) {
         switch (n_base) {
         case 99:
             n_ones = 9;

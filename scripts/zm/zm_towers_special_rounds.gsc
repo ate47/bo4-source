@@ -343,7 +343,7 @@ function function_93eab559(var_b45e3d90 = 0) {
 // Size: 0x70
 function start_drummers() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"hash_37b8eeaed85f1b4c");
         wait(0.06);
         level scene::play("special_round_drummers", "targetname");
@@ -413,7 +413,7 @@ function function_85324f75(var_8657f7ff = 0) {
     if (level.start_round == level.round_number) {
         wait(5);
     }
-    while (1) {
+    while (true) {
         trigger_midpoint = self.origin + (0, 0, 72);
         foreach (player in level.players) {
             if (isalive(player) && distancesquared(player.origin, self.origin) <= 128 * 128 && (abs(player.origin[2] - trigger_midpoint[2]) <= 36 || abs(player geteye()[2] - trigger_midpoint[2]) <= 36)) {

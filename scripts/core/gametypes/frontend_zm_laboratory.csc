@@ -148,7 +148,7 @@ function private function_1a17b820(localclientnum) {
         adddebugcommand(localclientnum, "<unknown string>");
         adddebugcommand(localclientnum, "<unknown string>");
         adddebugcommand(localclientnum, "<unknown string>");
-        while (1) {
+        while (true) {
             var_509eb1e5 = getdvarint(#"hash_5001173ab674d344", 1);
             var_74d08f2b = getdvarstring(#"hash_5de1ac7448993686", "mixer_03_bath_fluid_fx_jnt");
             var_8de02736 = getdvarint(#"hash_56728884d2904809", 0);
@@ -182,7 +182,7 @@ function function_b78fb1b0(localclientnum) {
         level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "<unknown string>");
         level.var_32f68719 = 1;
         wait(3);
-        while (1) {
+        while (true) {
             for (i = 0; i < 3; i++) {
                 function_7ee5e3a2(localclientnum, array::random(level.var_49f26c00.var_ece3d654), array::random(level.var_49f26c00.var_9eec6f29), level.var_32f68719);
                 wait(4);
@@ -205,7 +205,7 @@ function function_66051772() {
         if (getdvarint(#"hash_510a173ea851eab1", 0)) {
             return;
         }
-        while (1) {
+        while (true) {
             if (level flag::get(#"laboratory_activated")) {
                 debug2dtext((35, 60, 0), "<unknown string>", (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             } else {
@@ -330,7 +330,7 @@ function function_d940763b(localclientnum) {
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_bundle", "mixer_idle");
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_idle");
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_idle");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hash_201d829556393f76", #"hash_7e320f49f449ea9f", #"hash_6d47a1e190b93eaf", #"hash_7c3e120025ea0122", #"hash_341a5b4aa52ea814", #"talisman_show_label", #"bottle1_fill_complete", #"bottle1_leave", #"hash_1d604ddf352ddcca", #"hash_6551ceddc995b613");
         switch (waitresult._notify) {
@@ -397,19 +397,19 @@ function talisman_show_label(localclientnum) {
     switch (var_4deff3fa) {
     case 0:
         playsound(localclientnum, #"hash_49d438d1a1ba28b9", v_origin);
-        return;
+        break;
     case 1:
         playsound(localclientnum, #"hash_7d9e04c47d70ca1d", v_origin);
-        return;
+        break;
     case 2:
         playsound(localclientnum, #"hash_2ff41d0510d442c8", v_origin);
-        return;
+        break;
     case 3:
         playsound(localclientnum, #"hash_2c8d10ab46ff7e64", v_origin);
-        return;
+        break;
     case 4:
         playsound(localclientnum, #"hash_2409a80bfb7d6955", v_origin);
-        return;
+        break;
     }
 }
 
@@ -828,22 +828,22 @@ function function_b760318d(var_74f4f287 = 2) {
         exploder::stop_exploder(#"hash_3d62d8429eda7886");
         exploder::stop_exploder(#"hash_1d282b1d0662da73");
         exploder::stop_exploder(#"hash_4a6a466efb7795c9");
-        return;
+        break;
     case 1:
         exploder::stop_exploder(#"hash_3d62d8429eda7886");
         exploder::stop_exploder(#"hash_1d282b1d0662da73");
         exploder::exploder(#"hash_4a6a466efb7795c9");
-        return;
+        break;
     case 2:
         exploder::stop_exploder(#"hash_4a6a466efb7795c9");
         exploder::stop_exploder(#"hash_1d282b1d0662da73");
         exploder::exploder(#"hash_3d62d8429eda7886");
-        return;
+        break;
     case 3:
         exploder::stop_exploder(#"hash_3d62d8429eda7886");
         exploder::stop_exploder(#"hash_4a6a466efb7795c9");
         exploder::exploder(#"hash_1d282b1d0662da73");
-        return;
+        break;
     }
 }
 
@@ -1000,35 +1000,35 @@ function function_6198ffc(var_a77705eb = 1, b_reverse = 0) {
         } else {
             level.var_49f26c00.var_b273f2b6 setmodel(#"p8_zm_lab_tube_01_liquid_01");
         }
-        return;
+        break;
     case 2:
         if (b_reverse) {
             level.var_49f26c00.var_c6761aa2 setmodel(#"hash_1d6b60d588392994");
         } else {
             level.var_49f26c00.var_c6761aa2 setmodel(#"hash_147375b2a9795cd1");
         }
-        return;
+        break;
     case 3:
         if (b_reverse) {
             level.var_49f26c00.var_dcbe4732 setmodel(#"hash_7d73f1bee7a7209");
         } else {
             level.var_49f26c00.var_dcbe4732 setmodel(#"hash_789fccb680d65004");
         }
-        return;
+        break;
     case 4:
         if (b_reverse) {
             level.var_49f26c00.var_f48ac46 setmodel(#"hash_17fe752ca47c080a");
         } else {
             level.var_49f26c00.var_f48ac46 setmodel(#"hash_46ef488f583997fb");
         }
-        return;
+        break;
     case 5:
         if (b_reverse) {
             level.var_49f26c00.var_13123ed2 = #"hash_3a6d60badb3dae03";
         } else {
             level.var_49f26c00.var_13123ed2 = #"hash_513a13fb9a123f22";
         }
-        return;
+        break;
     }
 }
 
@@ -1144,7 +1144,7 @@ function function_f2b7b9b4(n_index, var_540e83c = 1, var_6b7f299d = 0.5, str_col
             function_6198ffc(2, 1);
             level.var_49f26c00.var_c6761aa2 thread function_b05ea28d(undefined, 1, var_6b7f299d);
         }
-        return;
+        break;
     case 3:
         if (var_540e83c) {
             function_6198ffc(3, 0);
@@ -1153,7 +1153,7 @@ function function_f2b7b9b4(n_index, var_540e83c = 1, var_6b7f299d = 0.5, str_col
             function_6198ffc(3, 1);
             level.var_49f26c00.var_dcbe4732 thread function_b05ea28d(undefined, 1, var_6b7f299d);
         }
-        return;
+        break;
     case 4:
         if (var_540e83c) {
             function_6198ffc(4, 0);
@@ -1162,7 +1162,7 @@ function function_f2b7b9b4(n_index, var_540e83c = 1, var_6b7f299d = 0.5, str_col
             function_6198ffc(4, 1);
             level.var_49f26c00.var_f48ac46 thread function_b05ea28d(undefined, 1, var_6b7f299d);
         }
-        return;
+        break;
     }
 }
 
@@ -1511,7 +1511,7 @@ function private function_ce974bbe(localclientnum, b_reverse = 0, var_74431a2d =
     var_8fc81e63 = gettime();
     n_time_end = gettime() + int(var_74431a2d * 1000);
     n_timer = 0;
-    while (1) {
+    while (true) {
         n_timer = gettime();
         if (n_timer >= n_time_end) {
             if (b_reverse) {
@@ -1519,7 +1519,7 @@ function private function_ce974bbe(localclientnum, b_reverse = 0, var_74431a2d =
             } else {
                 function_92ece6a3(localclientnum, var_bbd5069f, 1);
             }
-            return;
+            break;
         } else {
             var_c4a2db58 = mapfloat(var_8fc81e63, n_time_end, 0, 1, n_timer);
             if (b_reverse) {
@@ -1540,7 +1540,7 @@ function private function_f76d78f5(localclientnum, b_reverse = 0, var_74431a2d =
     var_8fc81e63 = gettime();
     n_time_end = gettime() + int(var_74431a2d * 1000);
     n_timer = 0;
-    while (1) {
+    while (true) {
         n_timer = gettime();
         if (n_timer >= n_time_end) {
             if (b_reverse) {
@@ -1548,7 +1548,7 @@ function private function_f76d78f5(localclientnum, b_reverse = 0, var_74431a2d =
             } else {
                 function_b5268a2c(localclientnum, var_5248b6df, 1);
             }
-            return;
+            break;
         } else {
             var_9241fd03 = mapfloat(var_8fc81e63, n_time_end, 0, 1, n_timer);
             if (b_reverse) {
@@ -1659,7 +1659,7 @@ function function_feeedd3d(var_7194cc97) {
         self endon("<unknown string>");
         var_7194cc97 endon(#"death");
         var_7194cc97.var_a27a4e60 endon(#"death");
-        while (1) {
+        while (true) {
             debug2dtext((1300, 80, 0), "<unknown string>" + var_7194cc97 gettagangles("<unknown string>"), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             debug2dtext((1300, 80 + 20, 0), "<unknown string>" + var_7194cc97.var_a27a4e60.angles, (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
             debug2dtext((1300, 80 + 40, 0), "<unknown string>" + var_7194cc97 gettagangles("<unknown string>"), (1, 1, 1), 1, (0, 0, 0), 1, 1, 1);
@@ -2040,7 +2040,7 @@ function function_7492cbc7(var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b183
     self.var_40fbce61 = var_ee6bcd51;
     var_31876922 = array::random(level.var_49f26c00.var_66baa9e8);
     var_ca93c4d5 = array::random(array::exclude(level.var_49f26c00.var_66baa9e8, var_31876922));
-    while (1) {
+    while (true) {
         self function_78233d29(var_ee6bcd51, "", "Alpha", 1);
         if (var_31876922 == -1 || var_ca93c4d5 == -1) {
             self function_78233d29(var_ee6bcd51, "", "Brightness", 1);
@@ -2054,7 +2054,7 @@ function function_7492cbc7(var_a82b834c = 0.5, var_ee6bcd51 = #"hash_6f36cd3b183
             var_8fc81e63 = gettime();
             n_time_end = gettime() + int(var_a82b834c * 1000);
             n_timer = var_8fc81e63;
-            while (1) {
+            while (true) {
                 n_timer = gettime();
                 if (n_timer >= n_time_end) {
                     self function_78233d29(var_ee6bcd51, "", "Tint", var_ca93c4d5);
@@ -2106,7 +2106,7 @@ function function_b05ea28d(var_ffea06d7 = #"hash_6f36cd3b18334e2e", b_reverse = 
     self function_78233d29(var_ffea06d7, "", "Alpha", 1);
     self function_78233d29(var_ffea06d7, "", "Brightness", 1);
     n_timer = gettime();
-    while (1) {
+    while (true) {
         n_timer = gettime();
         if (n_timer >= n_end_time) {
             if (b_reverse) {

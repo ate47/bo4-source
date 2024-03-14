@@ -495,12 +495,12 @@ function jump_pad_player_overrides(st_behavior, int_clean) {
     case #"no_sprint":
         if (!int_clean) {
         }
-        return;
+        break;
     default:
         if (isdefined(level._jump_pad_level_behavior)) {
             self [[ level._jump_pad_level_behavior ]](st_behavior, int_clean);
         }
-        return;
+        break;
     }
 }
 

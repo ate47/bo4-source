@@ -119,10 +119,10 @@ function otherlocalplayerstillalive() {
             continue;
         }
         if (isalive(level.players[index])) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace spectating/spectating

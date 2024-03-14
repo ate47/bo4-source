@@ -51,10 +51,10 @@ function function_eecaf17c(params, tacbundle) {
 // Size: 0x4aa
 function function_ff38b7b(params, tacbundle) {
     if (!isarray(level.dogtags) || level.dogtags.size == 0) {
-        return 0;
+        return false;
     }
     if (self bot::has_visible_enemy()) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.var_6679b27c)) {
         difficulty = getdvarint(#"bot_difficulty", 1);
@@ -110,8 +110,8 @@ function function_ff38b7b(params, tacbundle) {
     if (isdefined(var_117c149c) && nearestdistsq < level.var_6679b27c) {
         self bot_position::set_position(var_117c149c);
         self.bot.var_2ee077ff = gettime() + 500;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

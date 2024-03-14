@@ -418,7 +418,7 @@ class class_727456f3 {
         if (var_e6ad4793) {
             self.var_2af3d553 endon(#"hash_10ae3aed4e10c4c7");
         }
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = var_20aecb28.mdl_gameobject waittill(#"gameobject_end_use_player");
             e_player = waitresult.player;
@@ -454,7 +454,7 @@ class class_727456f3 {
     // Checksum 0x6cd835e5, Offset: 0x14c8
     // Size: 0xd6
     function function_789cee92(var_20aecb28) {
-        while (1) {
+        while (true) {
             if (isdefined(var_20aecb28.mdl_gameobject)) {
                 waitresult = undefined;
                 waitresult = var_20aecb28.mdl_gameobject waittill(#"gameobject_end_use_player");
@@ -489,7 +489,7 @@ class class_727456f3 {
                 self.var_10b20309.mdl_gameobject.interactteam = #"any";
                 self.var_10b20309 gameobjects::enable_object();
                 thread function_64d6a132(self.var_10b20309, 0, 1);
-                return;
+                break;
             }
             waitframe(1);
         }
@@ -521,7 +521,7 @@ class class_727456f3 {
     // Checksum 0xd45cc5b8, Offset: 0x1100
     // Size: 0x17e
     function function_cae3f0e7() {
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = self.m_e_trigger waittill(#"trigger");
             wait(isdefined(self.m_s_bundle.var_95726484) ? self.m_s_bundle.var_95726484 : 0);

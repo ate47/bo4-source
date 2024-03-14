@@ -568,7 +568,7 @@ function function_dba1f701(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_6381f252(localclientnum) {
     self endoncallback(&function_900bdca4, #"death", #"respawn", #"hash_5ca1805634bbfe66");
     self util::waittill_dobj(localclientnum);
-    while (1) {
+    while (true) {
         if (zm_utility::function_f8796df3(localclientnum) && !isthirdperson(localclientnum)) {
             if (viewmodelhastag(localclientnum, "tag_flash")) {
                 if (!isdefined(self.var_f89c3040)) {

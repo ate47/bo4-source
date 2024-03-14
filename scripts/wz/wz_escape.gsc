@@ -119,13 +119,13 @@ function function_74ee36be() {
     switch (location) {
     case 1:
         function_69e60a10("ParadeGrounds");
-        return;
+        break;
     case 2:
         function_69e60a10("NewIndustries");
-        return;
+        break;
     case 3:
         function_69e60a10("CellHouse");
-        return;
+        break;
     }
 }
 
@@ -782,9 +782,9 @@ function function_4b227faf() {
             switch (group.scriptbundlename) {
             case #"wz_escape_zodiac":
                 var_dc1ea650 = group;
-                continue;
+                break;
             default:
-                continue;
+                break;
             }
         }
         var_4ff6627b = [];

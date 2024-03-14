@@ -151,7 +151,7 @@ function private update_devgui() {
 // Size: 0xe5a
 function private debug_think() {
     /#
-        while (1) {
+        while (true) {
             n_wave_manager_id = getdvarint(#"hash_1feb7de8a9fa6573", 0);
             if (n_wave_manager_id != -1) {
                 if (isdefined(level.var_ca74a4bc[n_wave_manager_id])) {
@@ -619,15 +619,15 @@ function private start_internal(s_wave_manager_struct, str_team, b_looping, str_
 // Checksum 0x517e104b, Offset: 0x28c0
 // Size: 0x662
 function private think(var_dcd6c23) {
-    while (1) {
+    while (true) {
         if (var_dcd6c23 flag::get("stopped")) {
-            return;
+            break;
         }
         if (var_dcd6c23.var_4417045b > var_dcd6c23.var_592f8f7f) {
             if (isdefined(var_dcd6c23.var_f68bc980) && var_dcd6c23.var_f68bc980) {
                 reset(var_dcd6c23);
             } else {
-                return;
+                break;
             }
         }
         var_ed407c11 = var_dcd6c23.m_s_bundle.waves[var_dcd6c23.var_4417045b - 1];
@@ -660,7 +660,7 @@ function private think(var_dcd6c23) {
                 iprintln("<unknown string>" + var_f5d6a44e + 1 + "<unknown string>");
             #/
         }
-        while (1) {
+        while (true) {
             b_transition_into_next_wave = 1;
             b_wave_complete = 1;
             b_wave_cleared = 1;
@@ -785,10 +785,10 @@ function private function_4b7647f(var_dcd6c23) {
     foreach (a_ai in var_dcd6c23.var_419edb9f) {
         a_ai = array::remove_dead(a_ai);
         if (a_ai.size) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wave_manager_sys/wave_manager
@@ -944,7 +944,7 @@ function private function_8f5ed189(var_dcd6c23, var_c21b798e) {
     var_88f8dfe3 = gettime();
     var_e7bc5a90 = 1;
     var_a9e6e26a = 1;
-    while (1) {
+    while (true) {
         if (var_dcd6c23 flag::get("stopped")) {
             break;
         }
@@ -1119,7 +1119,7 @@ function private function_8f5ed189(var_dcd6c23, var_c21b798e) {
         wait(0.1);
     }
     complete_spawn_set(var_c21b798e);
-    while (1) {
+    while (true) {
         var_c21b798e.var_bb290b79 = array::remove_dead(var_c21b798e.var_bb290b79);
         if (!var_c21b798e.var_bb290b79.size) {
             function_d652a051(var_c21b798e);
@@ -1150,11 +1150,11 @@ function private function_d081cf72(var_a2b4b991) {
     if (isdefined(var_a2b4b991.spawntypes)) {
         foreach (s_spawn_type in var_a2b4b991.spawntypes) {
             if (isdefined(s_spawn_type.variant)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace wave_manager_sys/wave_manager
@@ -1307,9 +1307,9 @@ function private function_fa056daa() {
 // Size: 0x32
 function private function_e0bfee59() {
     if (isdefined(self.var_cf3bea8a) && level.var_ca74a4bc[self.var_cf3bea8a] == self) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wave_manager_sys/wave_manager
@@ -1452,7 +1452,7 @@ function is_looping() {
     if (wave_manager_sys::function_5b3b889f(self)) {
         return (isdefined(self.var_3868f387) && self.var_3868f387);
     }
-    return 0;
+    return false;
 }
 
 // Namespace wave_manager/wave_manager

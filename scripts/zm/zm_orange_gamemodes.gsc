@@ -16,7 +16,7 @@ function event_handler[level_finalizeinit] main(eventstruct) {
     switch (gametype) {
     case #"zstandard":
         zm_orange_zstandard::main();
-        return;
+        break;
     }
 }
 

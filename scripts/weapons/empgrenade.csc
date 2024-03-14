@@ -124,7 +124,7 @@ function monitordistance(localclientnum) {
     min_radius_max_static = getdvarfloat(#"ks_emp_fullscreen_minradiusmaxstatic", 0);
     max_radius_min_static = getdvarfloat(#"ks_emp_fullscreen_maxradiusminstatic", 0);
     if (isdefined(distance_to_closest_enemy_emp_ui_model)) {
-        while (1) {
+        while (true) {
             /#
                 max_static_value = getdvarfloat(#"ks_emp_fullscreen_maxstaticvalue", 0);
                 min_static_value = getdvarfloat(#"ks_emp_fullscreen_minstaticvalue", 0);

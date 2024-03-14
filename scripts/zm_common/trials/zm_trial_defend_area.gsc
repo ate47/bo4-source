@@ -168,7 +168,7 @@ function private function_1802ad1e(challenge, var_2d5ebf67, var_530e040f, timeou
     self.var_e5cde66 = {#var_530e040f:var_530e040f, #var_2d5ebf67:var_2d5ebf67, #challenge:challenge, #timeout:timeout, #start_time:level.time};
     self start_timer(timeout, var_2d5ebf67);
     var_2bf2b5dd = level.time + timeout * 1000;
-    while (1) {
+    while (true) {
         zone_valid = self function_2191cc5d();
         if (zone_valid) {
             level notify(#"hash_715188521b564b16", {#player:self});
@@ -224,7 +224,7 @@ function private damage_watcher(var_a4a28ac7) {
     if (isdefined(var_a4a28ac7) && var_a4a28ac7) {
         wait(12);
     }
-    while (1) {
+    while (true) {
         /#
             if (isgodmode(self) || self isinmovemode("<unknown string>", "<unknown string>")) {
                 waitframe(1);
@@ -325,10 +325,10 @@ function private function_dae80de6() {
 function private function_e1378d07() {
     foreach (player in getplayers()) {
         if (isalive(player) && !isbot(player) && !player laststand::player_is_in_laststand()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_defend_area/zm_trial_defend_area

@@ -114,7 +114,7 @@ function spawnkilltrigger() {
 function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
@@ -128,10 +128,10 @@ function watchkilltrigger() {
 function function_edde176f(owner) {
     if (isdefined(owner)) {
         if (owner istouching(level.var_94db699a) || owner istouching(level.var_3952b286)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace mp_nuketown_4/gametype_start
@@ -196,7 +196,7 @@ function function_e0136874(destructible_event, attacker, weapon, piece_index, po
 // Size: 0x256
 function function_d83f6c8c() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         var_968526dd = [];
         mannequins = getentarray("mannequin", "targetname");
         foreach (player in getplayers()) {
@@ -383,15 +383,15 @@ function on_game_playing() {
 // Size: 0x86
 function function_c0616fac() {
     if (!getdvarint(#"nuketown_mannequin", 1)) {
-        return 0;
+        return false;
     }
     if (sessionmodeisonlinegame() && !sessionmodeisprivateonlinegame()) {
-        return 0;
+        return false;
     }
     if (util::isprophuntgametype()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
@@ -400,7 +400,7 @@ function function_c0616fac() {
 // Size: 0x86
 function function_ff61a79d() {
     self endon(#"game_ended");
-    while (1) {
+    while (true) {
         var_f7f8b739 = getentarray("mannequin", "targetname");
         if (var_f7f8b739.size < 25) {
             level thread spawn_mannequin();
@@ -586,7 +586,7 @@ function function_6bc3bcb8(notifyhash) {
 // Size: 0x80
 function function_4eca5590() {
     self endon(#"death", #"landed");
-    while (1) {
+    while (true) {
         animation::play(#"hash_1f02283eb11fce2a", self.origin, self.angles, 1, 0.2, 0.2, 0, 0, 0, 0);
     }
 }

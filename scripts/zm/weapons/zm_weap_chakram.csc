@@ -261,13 +261,13 @@ function chakram_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsna
         switch (newvalue) {
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_catch_rumble");
-            return;
+            break;
         case 4:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_melee_rumble");
-            return;
+            break;
         case 5:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_throw_rumble");
-            return;
+            break;
         }
     }
 }

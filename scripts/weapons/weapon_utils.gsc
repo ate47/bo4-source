@@ -44,9 +44,9 @@ function isexplosivedamage(meansofdeath) {
     case #"mod_projectile":
     case #"mod_grenade_splash":
     case #"mod_projectile_splash":
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace weapon_utils/weapon_utils
@@ -87,8 +87,8 @@ function isbulletdamage(meansofdeath) {
 // Size: 0x78
 function isfiredamage(weapon, meansofdeath) {
     if (weapon.doesfiredamage && (meansofdeath == "MOD_BURNED" || meansofdeath == "MOD_GRENADE" || meansofdeath == "MOD_GRENADE_SPLASH" || meansofdeath == "MOD_DOT")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

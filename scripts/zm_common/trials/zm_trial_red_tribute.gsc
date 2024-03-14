@@ -99,7 +99,7 @@ function private function_29bcf2f8() {
     self namespace_f8f28e08::set_tribute(0);
     self namespace_f8f28e08::function_ae2c0ba5();
     self zm_trial_util::function_63060af4(0);
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_24326081081c2468");
         if (s_waitresult.var_9e09931e === 4) {
@@ -117,7 +117,7 @@ function private function_29bcf2f8() {
 function private function_6fa5c86() {
     level endon(#"hash_7646638df88a3656");
     level flag::set("infinite_round_spawning");
-    while (1) {
+    while (true) {
         var_84579c01 = 1;
         foreach (player in getplayers()) {
             if (isalive(player) && !(isdefined(player.var_bfc22435) && player.var_bfc22435)) {

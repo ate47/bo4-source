@@ -47,7 +47,7 @@ function _init_() {
 // Checksum 0xb141a78a, Offset: 0x518
 // Size: 0xe
 function function_3eedf19c(damage_percent) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun

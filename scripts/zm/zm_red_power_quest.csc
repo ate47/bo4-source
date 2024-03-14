@@ -265,7 +265,7 @@ function function_cca9b50e(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_7152ba7c(mdl_artifact) {
     self endon(#"death");
     mdl_artifact endon(#"death");
-    while (1) {
+    while (true) {
         self.origin = mdl_artifact.origin;
         waitframe(1);
     }
@@ -277,7 +277,7 @@ function function_7152ba7c(mdl_artifact) {
 // Size: 0x94
 function function_1bad7fac(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         e_player = function_5c10bd79(localclientnum);
         if (isdefined(e_player)) {
             v_angles = vectortoangles(e_player.origin - self.origin);

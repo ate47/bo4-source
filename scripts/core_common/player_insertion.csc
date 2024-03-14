@@ -106,7 +106,7 @@ function private function_6c4ae982(localclientnum) {
     var_d5823792 = 0;
     var_b9d612e8 = 0;
     var_a106daf5 = 0;
-    while (1) {
+    while (true) {
         local_player = function_5c10bd79(localclientnum);
         if (isdefined(local_player)) {
             if (!local_player hasdobj(localclientnum)) {
@@ -139,7 +139,7 @@ function private function_6c4ae982(localclientnum) {
 // Size: 0x19c
 function function_ed1567cc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
-        if (1) {
+        if (true) {
             self function_d309e55a("tag_cargo_ramp_control_animate", 1);
             self function_d309e55a("tag_door_left_control_animate", 1);
             self function_d309e55a("tag_door_right_control_animate", 1);
@@ -150,7 +150,7 @@ function function_ed1567cc(localclientnum, oldval, newval, bnewent, binitialsnap
         level notify(#"hash_5975d5f569535c41");
         return;
     }
-    if (1) {
+    if (true) {
         self function_d309e55a("tag_cargo_ramp_control_animate", 0);
         self function_d309e55a("tag_door_left_control_animate", 0);
         self function_d309e55a("tag_door_right_control_animate", 0);
@@ -164,7 +164,7 @@ function function_ed1567cc(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x2c27231d, Offset: 0xee0
 // Size: 0x8c
 function function_ba7d9848(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (1) {
+    if (true) {
         if (newval) {
             self function_d309e55a("tag_landing_gear_control_animate", 1);
             return;
@@ -450,7 +450,7 @@ function function_f1c37912(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_65cca2e1(localclientnum, var_1e7db62f) {
     self notify(#"hash_503cb9224ca331c" + var_1e7db62f);
     self endon(#"hash_503cb9224ca331c" + var_1e7db62f);
-    while (1) {
+    while (true) {
         if (isdefined(level.var_a3ede655) && isdefined(level.var_a3ede655[var_1e7db62f]) && isdefined(level.var_697988b1) && isdefined(level.var_697988b1[var_1e7db62f])) {
             break;
         }

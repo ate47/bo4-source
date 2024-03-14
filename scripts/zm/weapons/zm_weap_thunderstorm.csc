@@ -88,10 +88,10 @@ function function_83e58cf4(localclientnum, oldval, newval, bnewent, binitialsnap
             stopfx(localclientnum, self.var_d00cf6ff);
             self.var_d00cf6ff = undefined;
         }
-        return;
+        break;
     case 1:
         self.var_d00cf6ff = playfx(localclientnum, level._effect[#"electric_storm"], self.origin + vectorscale((0, 0, 1), 180), self.angles);
-        return;
+        break;
     }
 }
 

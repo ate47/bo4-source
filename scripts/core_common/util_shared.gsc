@@ -221,7 +221,7 @@ function streamer_wait(n_stream_request_id, n_wait_frames = 0, n_timeout = 15, s
     do {
         wait_network_frame();
         if (n_timeout > 0 && gettime() > timeout) {
-            return;
+            break;
         }
     } while (!(isdefined(var_5a2f2554) ? self isstreamerready(var_5a2f2554) : self isstreamerready()));
 }
@@ -677,7 +677,7 @@ function waittill_any_ents_two(ent1, string1, ent2, string2) {
 // Size: 0x20
 function isflashed() {
     if (!isdefined(self.flashendtime)) {
-        return 0;
+        return false;
     }
     return gettime() < self.flashendtime;
 }
@@ -688,7 +688,7 @@ function isflashed() {
 // Size: 0x20
 function isstunned() {
     if (!isdefined(self.flashendtime)) {
-        return 0;
+        return false;
     }
     return gettime() < self.flashendtime;
 }
@@ -722,63 +722,63 @@ function _single_func(entity, func, a_vars) {
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6], a_vars[7]);
         }
-        return;
+        break;
     case 7:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6]);
         }
-        return;
+        break;
     case 6:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5]);
         }
-        return;
+        break;
     case 5:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4]);
         }
-        return;
+        break;
     case 4:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3]);
         }
-        return;
+        break;
     case 3:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1], a_vars[2]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1], a_vars[2]);
         }
-        return;
+        break;
     case 2:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0], a_vars[1]);
         } else {
             return [[ func ]](a_vars[0], a_vars[1]);
         }
-        return;
+        break;
     case 1:
         if (isdefined(entity)) {
             return entity [[ func ]](a_vars[0]);
         } else {
             return [[ func ]](a_vars[0]);
         }
-        return;
+        break;
     case 0:
         if (isdefined(entity)) {
             return entity [[ func ]]();
         } else {
             return [[ func ]]();
         }
-        return;
+        break;
     default:
         /#
             assertmsg("<unknown string>");
@@ -797,7 +797,7 @@ function _clean_up_arg_array(&a_vars) {
             arrayremoveindex(a_vars, i, 0);
             continue;
         }
-        return;
+        break;
     }
 }
 
@@ -948,31 +948,31 @@ function _single_thread(entity, func, arg1, arg2, &a_vars) {
     switch (a_vars.size) {
     case 8:
         entity thread [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6], a_vars[7]);
-        return;
+        break;
     case 7:
         entity thread [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5], a_vars[6]);
-        return;
+        break;
     case 6:
         entity thread [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4], a_vars[5]);
-        return;
+        break;
     case 5:
         entity thread [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3], a_vars[4]);
-        return;
+        break;
     case 4:
         entity thread [[ func ]](a_vars[0], a_vars[1], a_vars[2], a_vars[3]);
-        return;
+        break;
     case 3:
         entity thread [[ func ]](a_vars[0], a_vars[1], a_vars[2]);
-        return;
+        break;
     case 2:
         entity thread [[ func ]](a_vars[0], a_vars[1]);
-        return;
+        break;
     case 1:
         entity thread [[ func ]](a_vars[0]);
-        return;
+        break;
     case 0:
         entity thread [[ func ]]();
-        return;
+        break;
     default:
         /#
             assertmsg("<unknown string>");
@@ -1550,7 +1550,7 @@ function is_ads() {
 // Checksum 0xb4dc3176, Offset: 0x5068
 // Size: 0x146
 function spawn_model(model_name, origin = (0, 0, 0), angles = (0, 0, 0), n_spawnflags = 0, b_throttle = 0) {
-    while (1) {
+    while (true) {
         if (b_throttle) {
             spawner::global_spawn_throttle(4);
         }
@@ -1658,7 +1658,7 @@ function wait_endon(waittime, endonstring, endonstring2, endonstring3, endonstri
         self endon(endonstring4);
     }
     wait(waittime);
-    return 1;
+    return true;
 }
 
 // Namespace util/util_shared
@@ -1756,9 +1756,9 @@ function timer_wait(n_wait) {
 // Size: 0x36
 function is_primary_damage(meansofdeath) {
     if (meansofdeath == "MOD_RIFLE_BULLET" || meansofdeath == "MOD_PISTOL_BULLET") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -1815,10 +1815,10 @@ function any_player_is_touching(ent, team) {
     team = get_team_mapping(team);
     foreach (player in getplayers(team)) {
         if (isalive(player) && player istouching(ent)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -2029,7 +2029,7 @@ function button_held_think(which_button) {
     }
     self._holding_button[which_button] = 0;
     time_started = 0;
-    while (1) {
+    while (true) {
         usinggamepad = self gamepadusedlast();
         use_time = ispc() && !usinggamepad ? 0 : 250;
         if (self._holding_button[which_button]) {
@@ -2291,15 +2291,15 @@ function ishacked() {
 // Size: 0x86
 function function_fbce7263(team_a, team_b) {
     if (team_a === team_b || function_9b7092ef(team_a, team_b)) {
-        return 0;
+        return false;
     }
     if (!isdefined(team_a) || !isdefined(team_b)) {
-        return 1;
+        return true;
     }
     if (function_b37afded(team_a, team_b)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace util/util_shared
@@ -2322,14 +2322,14 @@ function isenemyteam(team) {
 // Size: 0x80
 function function_4ded36e3(player) {
     if (!isplayer(player) || !isdefined(self)) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         return !isenemyteam(player.team);
     } else if (player == self) {
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace util/util_shared
@@ -2504,10 +2504,10 @@ function waittillnotmoving() {
         self waittill(#"stationary");
         return;
     }
-    for (prevorigin = self.origin; 1; prevorigin = self.origin) {
+    for (prevorigin = self.origin; true; prevorigin = self.origin) {
         wait(0.15);
         if (self.origin == prevorigin) {
-            return;
+            break;
         }
     }
 }
@@ -2940,7 +2940,7 @@ function auto_delete(n_mode = 1, n_min_time_alive = 0, n_dist_horizontal = 0, n_
     }
     n_test_count = 0;
     n_dist_horizontal_sq = n_dist_horizontal * n_dist_horizontal;
-    while (1) {
+    while (true) {
         do {
             wait(randomfloatrange(n_think_time - n_think_time / 3, n_think_time + n_think_time / 3));
         } while (isdefined(self.birthtime) && float(gettime() - self.birthtime) / 1000 < n_min_time_alive);
@@ -3189,9 +3189,9 @@ function isrankenabled() {
 // Size: 0x20
 function isoneround() {
     if (level.roundlimit == 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3200,9 +3200,9 @@ function isoneround() {
 // Size: 0x1e
 function isfirstround() {
     if (game.roundsplayed == 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3211,9 +3211,9 @@ function isfirstround() {
 // Size: 0x40
 function islastround() {
     if (level.roundlimit > 1 && game.roundsplayed >= level.roundlimit - 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3222,20 +3222,20 @@ function islastround() {
 // Size: 0xc8
 function waslastround() {
     if (level.forcedend) {
-        return 1;
+        return true;
     }
     if (isdefined(level.nextroundisovertime)) {
         if (level.nextroundisovertime) {
             level.nextroundisovertime = 1;
-            return 0;
+            return false;
         } else if (isdefined(game.overtime_round) && game.overtime_round > 0) {
-            return 1;
+            return true;
         }
     }
     if (hitroundlimit() || hitscorelimit() || hitroundwinlimit()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3244,7 +3244,7 @@ function waslastround() {
 // Size: 0x34
 function hitroundlimit() {
     if (level.roundlimit <= 0) {
-        return 0;
+        return false;
     }
     return getroundsplayed() >= level.roundlimit;
 }
@@ -3256,10 +3256,10 @@ function hitroundlimit() {
 function anyteamhitroundwinlimit() {
     foreach (team, _ in level.teams) {
         if (getroundswon(team) >= level.roundwinlimit) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3270,10 +3270,10 @@ function anyteamhitroundlimitwithdraws() {
     tie_wins = game.stat[#"roundswon"][#"tie"];
     foreach (team, _ in level.teams) {
         if (getroundswon(team) + tie_wins >= level.roundwinlimit) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3289,10 +3289,10 @@ function function_385658da() {
             continue;
         }
         if (wins != count) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace util/util_shared
@@ -3301,17 +3301,17 @@ function function_385658da() {
 // Size: 0x76
 function hitroundwinlimit() {
     if (!isdefined(level.roundwinlimit) || level.roundwinlimit <= 0) {
-        return 0;
+        return false;
     }
     if (anyteamhitroundwinlimit()) {
-        return 1;
+        return true;
     }
     if (anyteamhitroundlimitwithdraws()) {
         if (!function_385658da()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3321,10 +3321,10 @@ function hitroundwinlimit() {
 function any_team_hit_score_limit() {
     foreach (team, _ in level.teams) {
         if (game.stat[#"teamscores"][team] >= level.scorelimit) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3333,24 +3333,24 @@ function any_team_hit_score_limit() {
 // Size: 0xd0
 function hitscorelimit() {
     if (level.scoreroundwinbased) {
-        return 0;
+        return false;
     }
     if (level.scorelimit <= 0) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         if (any_team_hit_score_limit()) {
-            return 1;
+            return true;
         }
     } else {
         for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
             if (isdefined(player.pointstowin) && player.pointstowin >= level.scorelimit) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3369,10 +3369,10 @@ function any_team_hit_round_score_limit() {
     round_score_limit = get_current_round_score_limit();
     foreach (team, _ in level.teams) {
         if (game.stat[#"teamscores"][team] >= round_score_limit) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3381,22 +3381,22 @@ function any_team_hit_round_score_limit() {
 // Size: 0xdc
 function hitroundscorelimit() {
     if (level.roundscorelimit <= 0) {
-        return 0;
+        return false;
     }
     if (level.teambased) {
         if (any_team_hit_round_score_limit()) {
-            return 1;
+            return true;
         }
     } else {
         roundscorelimit = get_current_round_score_limit();
         for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
             if (isdefined(player.pointstowin) && player.pointstowin >= roundscorelimit) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3441,9 +3441,9 @@ function getroundsplayed() {
 // Size: 0x36
 function isroundbased() {
     if (level.roundlimit != 1 && level.roundwinlimit != 1) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3510,7 +3510,7 @@ function delayed_delete(f_delay_seconds) {
 // Size: 0x20
 function is_safehouse() {
     mapname = get_map_name();
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -3521,7 +3521,7 @@ function is_new_cp_map() {
     mapname = get_map_name();
     switch (mapname) {
     default:
-        return 0;
+        return false;
     }
 }
 
@@ -3551,7 +3551,7 @@ function queued_debug_commands() {
         if (!isdefined(level.dbg_cmd_queue)) {
             level.dbg_cmd_queue = [];
         }
-        while (1) {
+        while (true) {
             waitframe(1);
             if (!isdefined(game.state)) {
                 continue;
@@ -3746,7 +3746,7 @@ function trackwallrunningdistance() {
     self.movementtracking.wallrunning.distance = 0;
     self.movementtracking.wallrunning.count = 0;
     self.movementtracking.wallrunning.time = 0;
-    while (1) {
+    while (true) {
         self waittill(#"wallrun_begin");
         startpos = self.origin;
         starttime = gettime();
@@ -3767,7 +3767,7 @@ function tracksprintdistance() {
     self.movementtracking.sprinting.distance = 0;
     self.movementtracking.sprinting.count = 0;
     self.movementtracking.sprinting.time = 0;
-    while (1) {
+    while (true) {
         self waittill(#"sprint_begin");
         startpos = self.origin;
         starttime = gettime();
@@ -3788,7 +3788,7 @@ function trackdoublejumpdistance() {
     self.movementtracking.doublejump.distance = 0;
     self.movementtracking.doublejump.count = 0;
     self.movementtracking.doublejump.time = 0;
-    while (1) {
+    while (true) {
         self waittill(#"doublejump_begin");
         startpos = self.origin;
         starttime = gettime();
@@ -4220,20 +4220,20 @@ function function_3d66774c(var_23866d2) {
 // Size: 0x12c
 function function_9b7092ef(team1, team2, team3, team4) {
     if (!isdefined(team1) || !isdefined(team2)) {
-        return 0;
+        return false;
     }
     foreach (var_ef54b214 in level.var_fdf974de) {
         if (array::contains(var_ef54b214, team1)) {
             if (array::contains(var_ef54b214, team2)) {
                 if (!isdefined(team3) || array::contains(var_ef54b214, team3)) {
                     if (!isdefined(team4) || array::contains(var_ef54b214, team4)) {
-                        return 1;
+                        return true;
                     }
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -4441,14 +4441,14 @@ function gadget_is_in_use(slot) {
 // Size: 0xa2
 function function_72cbea07(player, weapon) {
     if (!isdefined(player.var_9c4683a0)) {
-        return 0;
+        return false;
     }
     foreach (var_e64f4a4a in player.var_9c4683a0) {
         if (var_e64f4a4a == weapon) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -4604,9 +4604,9 @@ function is_party_gamemode() {
     case #"oic":
     case #"shrp":
     case #"gun":
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -4764,9 +4764,9 @@ function function_8eb53136(radius) {
 // Size: 0x28
 function is_spectating() {
     if (self.sessionstate == #"spectator") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -4776,16 +4776,16 @@ function is_spectating() {
 function function_8570168d() {
     /#
         if (getdvar(#"hash_49e94b7aefac4f49", 0)) {
-            return 1;
+            return true;
         }
     #/
     if (sessionmodeismultiplayergame()) {
         mode = function_bea73b01();
         if (mode == 4) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace util/util_shared
@@ -4919,7 +4919,7 @@ function function_d608a743() {
     self notify(#"hash_29bf696e43d4a08b");
     self endon(#"hash_29bf696e43d4a08b", #"death");
     var_9bc12626 = getarraykeys(self.var_c18fbf49);
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(var_9bc12626);
         s_callback = self.var_c18fbf49[hash(s_result._notify)];

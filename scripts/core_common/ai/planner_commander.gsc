@@ -624,13 +624,13 @@ function private _reclaimescortparameters(commander, &blackboard) {
                 switch (order) {
                 case #"order_escort_mainguard":
                     player[#"escortmainguard"] = arraycombine(player[#"escortmainguard"], squadbots, 1, 0);
-                    continue;
+                    break;
                 case #"order_escort_rearguard":
                     player[#"escortrearguard"] = arraycombine(player[#"escortrearguard"], squadbots, 1, 0);
-                    continue;
+                    break;
                 case #"order_escort_vanguard":
                     player[#"escortvanguard"] = arraycombine(player[#"escortvanguard"], squadbots, 1, 0);
-                    continue;
+                    break;
                 }
             }
             if (getrealtime() - commander.strategizestarttime > commander.maxframetime) {

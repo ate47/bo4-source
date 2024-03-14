@@ -389,7 +389,7 @@ function sequence8(x) {
 // Size: 0x24
 function onflowgraphrun() {
     self.owner waittill(#"flowgraph_run");
-    return 1;
+    return true;
 }
 
 // Namespace flowgraph_util/flowgraph_shared
@@ -398,7 +398,7 @@ function onflowgraphrun() {
 // Size: 0x1e
 function waitfunc(x, f_seconds) {
     wait(f_seconds);
-    return 1;
+    return true;
 }
 
 // Namespace flowgraph_util/flowgraph_shared
@@ -406,7 +406,7 @@ function waitfunc(x, f_seconds) {
 // Checksum 0x244e7e3a, Offset: 0x18b8
 // Size: 0x10
 function createthread(x) {
-    return 1;
+    return true;
 }
 
 #namespace flowgraph_random;
@@ -503,7 +503,7 @@ function function_35dc468d(str_field) {
 // Size: 0x32
 function function_f9d5c4b0(x, str_field, var_value) {
     level.(str_field) = var_value;
-    return 1;
+    return true;
 }
 
 #namespace namespace_22752a75;

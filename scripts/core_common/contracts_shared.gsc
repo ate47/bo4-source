@@ -60,28 +60,28 @@ function player_contract_event(event_name, param1 = undefined, param2 = undefine
                 self [[ event_func ]]();
             }
         }
-        return;
+        break;
     case 1:
         foreach (event_func in level.player_contract_events[event_name].events) {
             if (isdefined(event_func)) {
                 self [[ event_func ]](param1);
             }
         }
-        return;
+        break;
     case 2:
         foreach (event_func in level.player_contract_events[event_name].events) {
             if (isdefined(event_func)) {
                 self [[ event_func ]](param1, param2);
             }
         }
-        return;
+        break;
     case 3:
         foreach (event_func in level.player_contract_events[event_name].events) {
             if (isdefined(event_func)) {
                 self [[ event_func ]](param1, param2, param3);
             }
         }
-        return;
+        break;
     }
 }
 
@@ -182,18 +182,18 @@ function setup_player_contracts(max_contract_slots, var_1b3f5772) {
 // Size: 0x84
 function is_contract_active(var_38280f2f) {
     if (!isdefined(var_38280f2f)) {
-        return 0;
+        return false;
     }
     if (!isplayer(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.pers[#"contracts"])) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.pers[#"contracts"][var_38280f2f])) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace contracts/contracts_shared
@@ -272,7 +272,7 @@ function watch_contract_debug(var_300afbc8) {
     /#
         level notify(#"watch_contract_debug_singleton");
         level endon(#"watch_contract_debug_singleton", #"game_ended");
-        while (1) {
+        while (true) {
             profilestart();
             function_33bab9aa();
             if (isdefined(var_300afbc8)) {
@@ -383,7 +383,7 @@ function function_d589391f() {
     for (players = getplayers(); players.size == 0 || gamestate::is_state("pregame"); players = getplayers()) {
         wait(1);
     }
-    while (1) {
+    while (true) {
         wait(0.1);
         players = getplayers();
         if (players.size == 0) {

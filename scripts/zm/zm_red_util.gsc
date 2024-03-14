@@ -35,7 +35,7 @@ function barrier_impact() {
     self endon(#"death");
     self val::set("power_event", "takedamage", 1);
     self.health = 99999;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (isdefined(s_result.amount)) {
@@ -213,12 +213,12 @@ function can_see(v_pos, var_7b20e52b, n_dot = 0.7) {
         if (isdefined(var_7b20e52b) && var_7b20e52b) {
             trace = bullettrace(v_pos, self.origin + vectorscale((0, 0, 1), 40), 0, undefined);
             if (trace[#"fraction"] < 1) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_red_util/zm_red_util
@@ -517,9 +517,9 @@ function function_d24a0f09(str_vo_line, var_e688ce8f = 0) {
 function function_f0ed2a66(v_pos) {
     vol_stands = getent("stands_vol", "script_noteworthy");
     if (istouching(v_pos, vol_stands)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_red_util/zm_red_util
@@ -553,7 +553,7 @@ function cleanup_zombie() {
 function function_643916c9() {
     self endon(#"death");
     self.ignore_poi = [];
-    while (1) {
+    while (true) {
         if (isdefined(level.zombie_poi_array) && level.zombie_poi_array.size) {
             self.ignore_poi = level.zombie_poi_array;
         }

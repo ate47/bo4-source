@@ -151,11 +151,11 @@ function function_e93a8e82(v_pos, v_angles) {
                 e_dynamite playloopsound(#"zmb_spawn_powerup_loop");
                 e_dynamite thread zm_orange_challenges::function_f5f83516();
                 zm_unitrigger::reregister_unitrigger_as_dynamic(s_unitrigger);
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
@@ -193,7 +193,7 @@ function function_168f686b(e_holder, w_item) {
 function function_96b866fc(e_player) {
     str_hint = zm_utility::function_d6046228(#"hash_388256f1e5a62d7c", #"hash_7693de01f82d93f0");
     self sethintstring(str_hint);
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
@@ -275,11 +275,11 @@ function function_4baeb885() {
 // Size: 0x94
 function function_e58f823f() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         e_target = self.favoriteenemy;
         if (isdefined(e_target) && distancesquared(e_target.origin, self.origin) <= 64 * 64) {
             self thread function_87f8b232();
-            return;
+            break;
         }
         wait(0.1);
     }
@@ -377,9 +377,9 @@ function function_2a27ccb9(e_player) {
     if (level.var_518d6e34) {
         str_hint = zm_utility::function_d6046228(#"hash_619666ebfb26ad4", #"hash_cb4301a3d4b0ff8");
         self sethintstring(str_hint);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_ee_dynamite/zm_orange_ee_dynamite
@@ -461,15 +461,15 @@ function function_61511fcf(n_index) {
     case 0:
         function_70f4c8c3("outer_walkway_blocker");
         level flag::set(#"hash_52d967f4fc8b12fc");
-        return;
+        break;
     case 1:
         function_70f4c8c3("sunken_path_blocker");
         level flag::set(#"hash_48e7d63b38c5e2da");
-        return;
+        break;
     case 2:
         function_70f4c8c3("cove_to_beach_blocker");
         level flag::set(#"hash_38c97197db36afb7");
-        return;
+        break;
     }
 }
 

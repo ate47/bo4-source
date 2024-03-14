@@ -1367,7 +1367,7 @@ function function_97714f49() {
     /#
         var_d88c2ae1 = 1;
         tracepoint = undefined;
-        while (1) {
+        while (true) {
             waitframe(1);
             if (getdvarint(#"hash_5fd194403e0d175e", 0) || getdvarint(#"hash_27e2616ae4b57202", 1) != var_d88c2ae1) {
                 player = level.players[0];
@@ -1426,7 +1426,7 @@ function function_2e72f24d(tracepoint, weapon) {
         vel = var_71c007dd * var_44345100;
         thread function_61e22785(tracepoint, distance * 39.3701, int(var_60f853d9), (0, 1, 0));
         i = 0;
-        while (1) {
+        while (true) {
             new_vel = vel - vel * vel * 0.5 * var_b9090b50 * var_c587700f * var_97ed9e7a / var_b62fd725 * 6.47989e-05 * 16 / 1000;
             distance = distance + (vel + new_vel) / 2 * 16 / 1000;
             vel = new_vel;
@@ -1437,7 +1437,7 @@ function function_2e72f24d(tracepoint, weapon) {
                 thread function_61e22785(tracepoint, distance * 39.3701, int(damage), (0, 1, 0));
                 var_57b06497 = int(damage);
                 if (i > 25) {
-                    return;
+                    break;
                 }
             }
         }
@@ -1525,7 +1525,7 @@ function function_a2b6e273() {
             n_index = 0;
             var_d4714efb = 0;
             wait(3);
-            while (1) {
+            while (true) {
                 if (player util::up_button_pressed()) {
                     if (n_index < level.var_94cbd997.size - 1) {
                         n_index++;

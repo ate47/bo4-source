@@ -114,7 +114,7 @@ function gadget_hero_weapon_ready(slot, weapon) {
 // Checksum 0xfeb7aa7e, Offset: 0x570
 // Size: 0x16
 function function_de324246(slot, weapon) {
-    return 0;
+    return false;
 }
 
 // Namespace hero_weapon/gadget_hero_weapon
@@ -191,7 +191,7 @@ function hero_wait_for_out_of_ammo(slot, weapon) {
     self endon(#"give_map");
     self notify(#"hero_noammo");
     self endon(#"hero_noammo");
-    while (1) {
+    while (true) {
         wait(0.1);
         gadgetslot = self gadgetgetslot(weapon);
         if (gadgetslot != slot) {

@@ -80,7 +80,7 @@ function function_a425bf07() {
     s_trigger_loc waittill(#"trigger_activated");
     mdl_doll thread function_e7fd1a33();
     var_2c8f1222 = array(#"hash_49744335f38f8111", #"hash_1fceaa1fb6e9fcac", #"hash_49744235f38f7f5e", #"hash_49744135f38f7dab", #"hash_1fceab1fb6e9fe5f", #"hash_1fceac1fb6ea0012", #"hash_1fcead1fb6ea01c5", #"hash_49744035f38f7bf8", #"hash_1fcea61fb6e9f5e0", #"hash_1fcea71fb6e9f793", #"hash_49744735f38f87dd", #"hash_49744635f38f862a", #"hash_49744535f38f8477", #"hash_1fcea81fb6e9f946", #"hash_1fcea91fb6e9faf9", #"hash_49744435f38f82c4", #"hash_49743b35f38f7379", #"hash_1fceb21fb6ea0a44", #"hash_49743a35f38f71c6", #"hash_1fceb31fb6ea0bf7");
-    while (1) {
+    while (true) {
         for (i = 0; i < var_2c8f1222.size; i++) {
             b_played = mdl_doll zm_vo::vo_say(var_2c8f1222[i]);
             if (!(isdefined(b_played) && b_played)) {
@@ -102,7 +102,7 @@ function function_e7fd1a33() {
     n_max_x = int(self.origin[0] + 12);
     while (isdefined(self)) {
         wait(randomintrange(15, 30));
-        while (1) {
+        while (true) {
             b_move = 1;
             players = util::get_active_players();
             foreach (player in players) {
@@ -176,7 +176,7 @@ function function_c3a5f1fe(a_ents) {
     e_raven val::set(#"raven_cipher", "allowdeath", 0);
     w_weapon = getweapon(#"ww_tricannon_earth_t8");
     var_eb115bf1 = getweapon(#"ww_tricannon_earth_t8_upgraded");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = e_raven waittill(#"damage");
         if (s_result.weapon === w_weapon || s_result.weapon === var_eb115bf1) {
@@ -199,7 +199,7 @@ function function_59ecbee4() {
     level waittill(#"water_initialized");
     level thread function_240b713f();
     var_5c608f55 = getent("yoshi_doshi", "targetname");
-    while (1) {
+    while (true) {
         b_show = 0;
         if (!(isdefined(level.var_7f5f5e6b) && level.var_7f5f5e6b)) {
             foreach (player in util::get_players()) {
@@ -225,7 +225,7 @@ function function_59ecbee4() {
 // Checksum 0x72d7e820, Offset: 0x1818
 // Size: 0x58
 function function_240b713f() {
-    while (1) {
+    while (true) {
         if (level.e_clip_water_fore.origin[2] < 600) {
             level.var_7f5f5e6b = 1;
         } else {
@@ -242,14 +242,14 @@ function function_240b713f() {
 function function_d3a41243() {
     t_damage = spawn("trigger_damage", struct::get(#"macaroni_boom").origin, 0, 6, 6);
     w_sticky = getweapon(#"eq_acid_bomb");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = t_damage waittill(#"damage");
         if (s_result.weapon === w_sticky) {
             mdl_fx = util::spawn_model("tag_origin", struct::get(#"macaroni_puddle").origin);
             mdl_fx linkto(level.e_sway);
             mdl_fx clientfield::set("" + #"morse_star", 1);
-            return;
+            break;
         }
     }
 }
@@ -275,7 +275,7 @@ function function_ea0460f4() {
         foreach (var_255658de in var_b90f3bf3) {
             if (i == var_255658de.script_int) {
                 var_18a4ffb4[i] = var_255658de;
-                continue;
+                break;
             }
         }
     }
@@ -316,7 +316,7 @@ function function_aba430c2(s_unitrigger) {
             e_player.var_68c35930 = self;
             self hide();
             zm_unitrigger::unregister_unitrigger(s_unitrigger);
-            return;
+            break;
         }
     }
 }
@@ -326,7 +326,7 @@ function function_aba430c2(s_unitrigger) {
 // Checksum 0x7a5fa4d2, Offset: 0x2098
 // Size: 0x390
 function function_63c3fd24(var_314c1b5a) {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         e_player = s_result.e_who;
@@ -375,7 +375,7 @@ function function_64834acd() {
     self notify("5029a7add8d29938");
     self endon("5029a7add8d29938");
     self endon(#"death");
-    while (1) {
+    while (true) {
         self function_21a979f7();
         self waittill(#"hash_44144f80f295a13f");
     }
@@ -387,7 +387,7 @@ function function_64834acd() {
 // Size: 0x9e
 function function_21a979f7() {
     self endon(#"hash_53eb32eaa511640c");
-    while (1) {
+    while (true) {
         if (self.angles[0] < 360) {
             self.angles = self.angles + vectorscale((1, 0, 0), 360);
         }
@@ -508,7 +508,7 @@ function function_558936ed() {
 // Checksum 0xe36c2e04, Offset: 0x30a8
 // Size: 0x1d2
 function function_7c9ab1ea(t_flag, var_f96aafd8) {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = t_flag waittill(#"trigger");
         if (isdefined(s_result.activator) && isplayer(s_result.activator)) {
@@ -516,7 +516,7 @@ function function_7c9ab1ea(t_flag, var_f96aafd8) {
             self waittill(#"rotatedone");
             if (!isdefined(var_f96aafd8)) {
                 self delete();
-                return;
+                break;
             }
             self setmodel(#"hash_2ce772d39f43cc44" + var_f96aafd8);
             self setscale(0.18);
@@ -527,7 +527,7 @@ function function_7c9ab1ea(t_flag, var_f96aafd8) {
             self rotateroll(360, 0.5);
             self waittill(#"rotatedone");
             self.angles = (0, self.angles[1], self.angles[2]);
-            return;
+            break;
         }
     }
 }
@@ -562,7 +562,7 @@ function function_e1a452f5(e_homunculus, var_21bb918c, var_c8279d50) {
     e_homunculus setinvisibletoplayer(self);
     var_21bb918c setinvisibletoplayer(self);
     var_c8279d50 setinvisibletoplayer(self);
-    while (1) {
+    while (true) {
         t_vis = trigger::wait_till("trigger_life_preserver", "targetname", self);
         player = t_vis.who;
         if (isalive(player)) {
@@ -788,7 +788,7 @@ function function_a7ae2066() {
 function function_678d6318() {
     s_trigger_loc = struct::get(#"hash_2ca9b43546a096e3");
     s_unitrigger = s_trigger_loc zm_unitrigger::create(undefined, (180, 180, 64), &zm_unitrigger::function_69168e61, 0, 1);
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = s_trigger_loc waittill(#"trigger_activated");
         player = s_result.e_who;
@@ -902,7 +902,7 @@ function function_678d6318() {
 // Size: 0x234
 function function_bef7f017(s_trigger_loc) {
     var_cefd4edd = undefined;
-    while (1) {
+    while (true) {
         a_players = util::get_active_players();
         b_reset = 1;
         n_current_time = gettime();
@@ -952,7 +952,7 @@ function function_f64a749c(var_6fc696ed, var_8940de41, str_letter) {
 // Size: 0x12c
 function function_24d85b68() {
     level endon(#"hash_20b6d10f9de5d13a");
-    while (1) {
+    while (true) {
         a_players = util::get_active_players();
         b_rumble = 0;
         foreach (player in a_players) {

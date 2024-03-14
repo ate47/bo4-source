@@ -204,7 +204,7 @@ function do_game_mode_shellshock() {
 // Checksum 0x692f26b0, Offset: 0x1188
 // Size: 0x6
 function canplayersuicide() {
-    return 0;
+    return false;
 }
 
 // Namespace zm_gametype/zm_gametype

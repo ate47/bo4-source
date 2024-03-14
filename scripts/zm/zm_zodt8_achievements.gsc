@@ -83,7 +83,7 @@ function function_25c39229() {
     self endon(#"disconnect");
     self.var_6ab98264 = 0;
     self thread function_934d3464();
-    while (1) {
+    while (true) {
         self waittill(#"hash_7ba738379777a068");
         self.var_6ab98264 = 1;
         b_success = self function_6e60e5b8();
@@ -108,7 +108,7 @@ function function_6e60e5b8() {
     self endon(#"death", #"hash_5a83ec4a73b3dc6");
     level waittill(#"start_of_round");
     var_980ea73 = level.round_number;
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (level.round_number - var_980ea73 >= 5) {
             return 1;
@@ -124,7 +124,7 @@ function function_934d3464() {
     level endon(#"end_game");
     self endon(#"hash_10404a179a65cd64", #"disconnect");
     var_6bf54ff2 = array(#"zone_cargo");
-    while (1) {
+    while (true) {
         if (isdefined(self.zone_name)) {
             var_d5a6219e = isstring(self.zone_name) ? hash(self.zone_name) : self.zone_name;
             if (isinarray(var_6bf54ff2, var_d5a6219e)) {
@@ -145,7 +145,7 @@ function function_934d3464() {
 // Size: 0xc2
 function function_6b34cb92() {
     level endon(#"end_game", #"hash_5c62047f5c8fdbdd", #"hash_6cd15a5470217958");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (level.round_number >= 20) {
             wait(2);
@@ -165,7 +165,7 @@ function function_6b34cb92() {
 function function_d814403c() {
     level endon(#"end_game");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"pap_taken");
         if (isdefined(level.s_pap_quest) && isdefined(level.s_pap_quest.var_88aa74e)) {
             if (!isdefined(self.var_6ba87fa)) {
@@ -203,7 +203,7 @@ function function_d814403c() {
 function function_1b454689() {
     level endon(#"end_game");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"fasttravel_bought");
         if (isdefined(self.var_5817f611)) {
             if (!isdefined(self.var_b5982a89)) {
@@ -243,7 +243,7 @@ function function_46c56964() {
     level endon(#"end_game");
     self endon(#"disconnect", #"hash_7ef6edd06b06d480");
     self.var_574b5261 = 0;
-    while (1) {
+    while (true) {
         /#
             if (self.var_574b5261) {
                 iprintln("<unknown string>" + self.var_574b5261);
@@ -298,7 +298,7 @@ function function_ec3040dd() {
     self endon(#"disconnect");
     self.var_5b0772a7 = undefined;
     self.var_7f491224 = 0;
-    while (1) {
+    while (true) {
         if (self.var_7f491224 >= 3) {
             /#
                 iprintlnbold("<unknown string>" + self getentnum());
@@ -343,7 +343,7 @@ function function_52f9045f() {
     /#
         var_1c5c067e = 0;
     #/
-    while (1) {
+    while (true) {
         /#
             if (self.var_2b642048 != var_1c5c067e) {
                 iprintln("<unknown string>" + self.var_2b642048);
@@ -380,7 +380,7 @@ function function_b97662b6() {
     /#
         var_1c5c067e = 0;
     #/
-    while (1) {
+    while (true) {
         /#
             if (self.var_9e1be4c6 != var_1c5c067e) {
                 iprintln("<unknown string>" + self.var_9e1be4c6);

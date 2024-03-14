@@ -76,7 +76,7 @@ function private function_4f363fd4() {
     w_thompson = getweapon(#"smg_thompson_t8");
     w_thompson_upgraded = getweapon(#"smg_thompson_t8_upgraded");
     b_continue = 1;
-    while (1) {
+    while (true) {
         self waittill(#"weapon_change");
         if (isalive(self)) {
             if ((self hasweapon(w_blundergat) || self hasweapon(w_blundergat_upgraded)) && (self hasweapon(w_tomahawk) || self hasweapon(var_b7c4015f)) && (self hasweapon(w_spoon) || self hasweapon(w_spork)) && (self hasweapon(w_thompson) || self hasweapon(w_thompson_upgraded))) {
@@ -133,7 +133,7 @@ function private function_e5df009() {
 // Size: 0xb2
 function private function_4c6d1750() {
     self endon(#"disconnect", #"hash_1410cda9f15ef1c3");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_3669499a148a6d6e");
         if (s_result.weapon == getweapon(#"tomahawk_t8_upgraded")) {

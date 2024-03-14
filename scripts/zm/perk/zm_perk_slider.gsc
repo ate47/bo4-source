@@ -139,7 +139,7 @@ function function_dc9a257a(n_slot) {
     self endon(#"disconnect", #"hash_6939dd7af68cec");
     self slide_explosion(n_slot);
     self.var_f354086e = 0;
-    while (1) {
+    while (true) {
         self waittill(#"slide_begin");
         v_start_position = self.origin;
         self waittill(#"slide_end");
@@ -174,7 +174,7 @@ function reset_charge() {
 // Size: 0x81a
 function slide_explosion(n_slot) {
     self zm_perks::function_c8c7bc5(n_slot, 1, #"perk_slider");
-    while (1) {
+    while (true) {
         self waittill(#"slide_begin");
         if (!function_2772480a()) {
             continue;
@@ -276,18 +276,18 @@ function slide_explosion(n_slot) {
 // Size: 0x90
 function private function_2772480a() {
     if (zm_trial_restrict_loadout::is_active()) {
-        return 0;
+        return false;
     }
     if (namespace_fcd611c3::is_active() && level.var_e91491fb !== #"slide") {
-        return 0;
+        return false;
     }
     if (namespace_b28d86fd::is_active()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_8c018a0e) && level.var_8c018a0e) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_perk_slider/zm_perk_slider

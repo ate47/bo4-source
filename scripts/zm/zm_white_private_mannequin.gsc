@@ -385,7 +385,7 @@ function function_11862a9b(e_player) {
     } else {
         self sethintstring(#"hash_17a473c2067a81f1", 3000);
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
@@ -422,7 +422,7 @@ function function_eaa63f5b(n_minutes = 1) {
     #/
     n_time_end = gettime() + n_minutes * 60 * 1000;
     level flag::set(#"hash_1b68ccd211cab219");
-    while (1) {
+    while (true) {
         if (gettime() > n_time_end && !(isdefined(self) && isdefined(self.reviving_a_player) && self.reviving_a_player)) {
             if (isdefined(self) && isalive(self)) {
                 util::stop_magic_bullet_shield(level.mannequin_ally);
@@ -433,7 +433,7 @@ function function_eaa63f5b(n_minutes = 1) {
             /#
                 iprintlnbold("<unknown string>");
             #/
-            return;
+            break;
         }
         wait(10);
     }
@@ -451,7 +451,7 @@ function function_88265619() {
     /#
         assert(isdefined(var_a2c75164), "<unknown string>");
     #/
-    while (1) {
+    while (true) {
         level flag::wait_till_clear(#"hash_1b68ccd211cab219");
         if (level.var_f5746584 > 0) {
             wait(45);
@@ -505,7 +505,7 @@ function adam_activated_vo() {
 // Checksum 0x2f07eba8, Offset: 0x2398
 // Size: 0x66
 function function_26edbcdc(inflictor, attacker, damage, flags, meansofdeath, weapon, point, dir, hitloc, offsettime, boneindex, modelindex) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_private_mannequin/zm_white_private_mannequin
@@ -551,7 +551,7 @@ function function_e29e2b0b() {
         self.timerisrunning = 0;
         self.killcounter = 0;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"zom_kill");
         zomb = waitresult.zombie;
@@ -616,7 +616,7 @@ function function_f20dfe6a() {
 // Size: 0xf0
 function function_e453faa6(e_reviver) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         results = undefined;
         results = self waittill(#"player_revived");
         if (isdefined(level.mannequin_ally) && results.reviver === level.mannequin_ally) {

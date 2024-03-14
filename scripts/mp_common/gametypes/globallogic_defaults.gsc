@@ -160,11 +160,11 @@ function default_ontimelimit() {
 // Size: 0x48
 function default_onscorelimit() {
     if (!level.endgameonscorelimit) {
-        return 0;
+        return false;
     }
     round::function_870759fb();
     thread globallogic::end_round(3);
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_defaults/globallogic_defaults
@@ -175,7 +175,7 @@ function default_onroundscorelimit() {
     round::function_870759fb();
     param1 = 4;
     thread globallogic::end_round(param1);
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_defaults/globallogic_defaults

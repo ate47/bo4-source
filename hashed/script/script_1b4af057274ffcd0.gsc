@@ -224,8 +224,8 @@ function private function_cb29a211(commander, squad, constants) {
         assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     #/
     if (gettime() > squad.createtime + constants[#"maxage"]) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

@@ -207,7 +207,7 @@ function private cover_think() {
     level endon(#"end_game", #"vessel_found");
     self endon(#"death");
     trigger = getent(self.target, "targetname");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = trigger waittill(#"damage");
         if (isplayer(s_result.attacker) && s_result.mod == "MOD_MELEE") {

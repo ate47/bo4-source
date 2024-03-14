@@ -70,7 +70,7 @@ function lightning_bolt_fx_toggle(localclientnum, oldval, newval, bnewent, binit
     if (!isdefined(self._location_indicator)) {
         self._location_indicator = [];
     }
-    while (1) {
+    while (true) {
         if (newval == 1 && !isigcactive(localclientnum)) {
             if (!isdefined(self._location_indicator[localclientnum])) {
                 self._location_indicator[localclientnum] = playfx(localclientnum, level._effect[#"perk_machine_location"], self.origin);
@@ -310,7 +310,7 @@ function fx_artifact_pulse_thread(localclientnum) {
 function fx_activation_electric_loop(localclientnum) {
     self endon(#"activation_electricity_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.glow_location)) {
         }
         wait(0.1);
@@ -323,7 +323,7 @@ function fx_activation_electric_loop(localclientnum) {
 // Size: 0x40
 function fx_bottle_cycling(localclientnum) {
     self endon(#"bottle_cycling_finished");
-    while (1) {
+    while (true) {
         if (isdefined(self.glow_location)) {
         }
         wait(0.1);

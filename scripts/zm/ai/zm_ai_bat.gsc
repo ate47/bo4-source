@@ -137,7 +137,7 @@ function function_141c342b() {
 // Size: 0x8e
 function function_ab7568e0() {
     self endon(#"change_state", #"death");
-    while (1) {
+    while (true) {
         if (self function_c48c2d66() && self vehicle_ai::get_current_state() != "transform") {
             self thread vehicle_ai::set_state("transform");
         }
@@ -151,15 +151,15 @@ function function_ab7568e0() {
 // Size: 0xc8
 function private istargetvalid(target) {
     if (!isdefined(target) || !isalive(target)) {
-        return 0;
+        return false;
     }
     if (isplayer(target) && (target.sessionstate == "spectator" || target.sessionstate == "intermission")) {
-        return 0;
+        return false;
     }
     if (isdefined(target.ignoreme) && target.ignoreme || target isnotarget()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace bat/zm_ai_bat
@@ -191,7 +191,7 @@ function private gettarget() {
 // Size: 0x120
 function private function_1076a2e0() {
     self endon(#"change_state", #"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.ignoreall) && self.ignoreall) {
             wait(0.5);
             continue;
@@ -220,7 +220,7 @@ function private function_1076a2e0() {
 function private function_776e45e5() {
     self endon(#"change_state", #"death");
     self waittilltimeout(10, #"reached_end_node");
-    while (1) {
+    while (true) {
         players = getplayers();
         var_3ada9d08 = 0;
         foreach (player in players) {
@@ -315,7 +315,7 @@ function function_607df9c6(ai) {
 // Checksum 0x1fdcf8d2, Offset: 0x12b0
 // Size: 0xd4
 function private function_1b029905() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"transformation_complete");
         if (waitresult.id === #"hash_791d597ac0457860" && isdefined(waitresult.data)) {
@@ -353,12 +353,12 @@ function function_1fff2d() {
                     self.ai.var_15916e52 = new class_726d8173();
                     self.ai.var_15916e52.pos = pos;
                     self.ai.var_15916e52.mover = scriptmodel;
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bat/zm_ai_bat
@@ -367,27 +367,27 @@ function function_1fff2d() {
 // Size: 0xd4
 function function_c48c2d66() {
     if (isdefined(self.var_d880e556) && self.var_d880e556) {
-        return 0;
+        return false;
     }
     if (zm_transform::function_abf1dcb4(#"hash_791d597ac0457860")) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.spawn_time)) {
-        return 0;
+        return false;
     }
     if (gettime() - self.spawn_time < 3500) {
-        return 0;
+        return false;
     }
     if (self isplayinganimscripted()) {
-        return 0;
+        return false;
     }
     if (function_1fff2d()) {
         /#
             assert(isdefined(self.ai.var_15916e52));
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bat/zm_ai_bat
@@ -505,7 +505,7 @@ function state_combat_enter(params) {
 function function_2b369c9f() {
     self endon(#"change_state", #"death");
     self.ai.var_e7d26c0f = 0;
-    while (1) {
+    while (true) {
         if (self.ai.var_e7d26c0f > 3) {
             if (isdefined(level.var_d9f4b654)) {
                 self.ai.var_e7d26c0f = 0;
@@ -583,7 +583,7 @@ function function_8550e9be(enemy) {
 // Size: 0xce
 function function_66d3e7c2() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.var_c8c5a7d3)) {
             /#
                 recordsphere(self.var_c8c5a7d3, 8, (0, 0, 1), "<unknown string>");
@@ -652,9 +652,9 @@ function function_9471b7f9() {
     ai = function_2e37549f();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bat/zm_ai_bat
@@ -698,9 +698,9 @@ function function_96578f39() {
     var_7d706b3f = function_2ffae59e();
     var_1a68bbce = function_133e1e25();
     if (!(isdefined(level.var_2b94ce72) && level.var_2b94ce72) && isdefined(level.var_15747fb1) && level.var_15747fb1 || var_7d706b3f >= var_1a68bbce || !level flag::get("spawn_zombies")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace bat/zm_ai_bat

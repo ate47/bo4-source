@@ -60,20 +60,20 @@ function function_7956439e(ai, target) {
 // Size: 0x158
 function function_4d58e688(e_poi) {
     if (isdefined(level.elevator1.moving_to) && e_poi[1] istouching(level.var_83225f64[0]) && !self istouching(level.var_83225f64[0])) {
-        return 0;
+        return false;
     }
     if (isdefined(level.elevator2.moving_to) && e_poi[1] istouching(level.var_83225f64[1]) && !self istouching(level.var_83225f64[1])) {
-        return 0;
+        return false;
     }
     var_271de3da = zm_office_floors::function_35babccd(e_poi[1]);
     var_b2818507 = zm_office_floors::function_35babccd(self);
     if (!isdefined(var_271de3da)) {
-        return 0;
+        return false;
     }
     if (var_b2818507 != var_271de3da) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_cleanup/zm_office_cleanup
@@ -82,20 +82,20 @@ function function_4d58e688(e_poi) {
 // Size: 0x194
 function function_6c7d76d(e_player) {
     if (isdefined(level.elevator1.moving_to) && e_player istouching(level.var_83225f64[0]) && !self istouching(level.var_83225f64[0])) {
-        return 0;
+        return false;
     }
     if (isdefined(level.elevator2.moving_to) && e_player istouching(level.var_83225f64[1]) && !self istouching(level.var_83225f64[1])) {
-        return 0;
+        return false;
     }
     var_5949c6af = zm_office_floors::function_35babccd(e_player);
     var_b2818507 = zm_office_floors::function_35babccd(self);
     if (!isdefined(var_5949c6af)) {
-        return 0;
+        return false;
     }
     if (var_b2818507 != var_5949c6af && (var_b2818507 == 4 || var_5949c6af == 4 || !level flag::get(#"portals_active"))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_office_cleanup/zm_office_cleanup
@@ -116,13 +116,13 @@ function private function_1969a102() {
                     target.hunted_by--;
                     self thread function_29aabbb3();
                 }
-                return 1;
+                return true;
             }
         }
     } else if (isdefined(target) && distancesquared(self.origin, target.origin) < distancesquared(self.origin, self.var_3f667178.origin)) {
         self notify(#"cancel_teleport");
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office_cleanup/zm_office_cleanup
@@ -156,7 +156,7 @@ function function_fa5d232f() {
     }
     self endon(#"death");
     var_906c0a07 = 32;
-    while (1) {
+    while (true) {
         if (self.goalradius < 1) {
             self.goalradius = var_906c0a07;
         } else {

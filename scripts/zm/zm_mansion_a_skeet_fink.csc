@@ -239,12 +239,12 @@ function function_813aa911(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         util::playfxontag(localclientnum, level._effect[#"hash_1a9940efe1d3ed25"], self, "tag_origin");
-        return;
+        break;
     case 2:
         util::playfxontag(localclientnum, level._effect[#"hash_7cd0c2ae0222691"], self, "tag_origin");
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

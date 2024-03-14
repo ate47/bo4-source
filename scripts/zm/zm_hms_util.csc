@@ -34,7 +34,7 @@ function function_774b42ac() {
         if (!isdefined(localclientnum)) {
             return;
         }
-        while (1) {
+        while (true) {
             a_ents = getentarray(localclientnum);
             debug2dtext((5, 1035, 0), "<unknown string>" + a_ents.size, (1, 1, 0), 1, (0, 0, 0), 0.5, 1, 30);
             waitframe(30);

@@ -406,7 +406,7 @@ function function_a39e7a56() {
         if (level flag::get(#"hash_3bb140702c2b1323") && level.defend_spawns == 4) {
             ai = zm_white_special_rounds::function_dd836251();
             if (isdefined(ai)) {
-                return 1;
+                return true;
             }
         }
         if (level.defend_spawns > 8) {
@@ -414,7 +414,7 @@ function function_a39e7a56() {
             if (level flag::get(#"hash_50990d5b9376f50d")) {
                 ai = zombie_dog_util::function_62db7b1c(0);
                 if (isdefined(ai)) {
-                    return 1;
+                    return true;
                 }
             }
         } else {
@@ -425,10 +425,10 @@ function function_a39e7a56() {
                 level.defend_spawns++;
             }
             wait(n_delay);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_zstandard/zm_white_zstandard
@@ -467,7 +467,7 @@ function function_84139b27() {
 function function_466fb0ff(str_last_defend) {
     level endon(#"end_game");
     str_next_defend = zm_utility::function_40ef77ab(str_last_defend);
-    for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); 1; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
+    for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); true; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
         util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
         wait(25);
         level thread function_c87db3f7();
@@ -486,7 +486,7 @@ function function_1dcc39ae() {
         str_next_defend = zm_utility::function_40ef77ab("zblueprint_zhield_white");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
-        while (1) {
+        while (true) {
             zm_utility::function_11101458(str_next_defend);
             wait(5);
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);

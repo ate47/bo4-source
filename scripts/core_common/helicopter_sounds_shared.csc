@@ -99,7 +99,7 @@ function init_heli_sound_values(heli_type, part_type, max_speed_vol, min_vol, ma
 // Size: 0x580
 function command_parser() {
     /#
-        while (1) {
+        while (true) {
             command = getdvarstring(#"helisounds");
             if (command != "<unknown string>") {
                 success = 1;
@@ -405,14 +405,14 @@ function heli_sound_play(heli_bone) {
     switch (heli_bone.sound_type) {
     case #"engine":
         heli_bone.run playloopsound(heli_bone.run.alias, 2);
-        return;
+        break;
     case #"wind":
-        return;
+        break;
     default:
         /#
             println("<unknown string>" + heli_bone.type + "<unknown string>");
         #/
-        return;
+        break;
     }
 }
 
@@ -850,7 +850,7 @@ function drone_up_down_transition() {
     qr_ent_down linkto(self, tag);
     qr_ent_either linkto(self, tag);
     self thread drone_button_watch();
-    while (1) {
+    while (true) {
         last_pos = self.origin[2];
         wait(0.1);
         self.qrdrone_z_difference = last_pos - self.origin[2];
@@ -897,7 +897,7 @@ function drone_rotate_angle(heli_type, heli_part) {
     setsoundvolume(angle, 0);
     tag = "tag_body";
     qr_ent_angle linkto(self, tag);
-    while (1) {
+    while (true) {
         last_angle = abs(self.angles[1]);
         wait(0.1);
         turning_speed = last_angle - abs(self.angles[1]);
@@ -916,7 +916,7 @@ function drone_button_watch() {
     self endon(#"death");
     player = getlocalplayers()[0];
     return_to_zero = 1;
-    while (1) {
+    while (true) {
         if (abs(self.qrdrone_z_difference) > 5 && return_to_zero) {
             self playsound(0, #"veh_qrdrone_move_start");
             return_to_zero = 0;

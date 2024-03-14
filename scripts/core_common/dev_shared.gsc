@@ -233,7 +233,7 @@ function drawminimapbounds(viewpos, mincorner, maxcorner) {
         corner3 = maxcorner - side;
         toppos = vecscale(mincorner + maxcorner, 0.5) + vecscale(sidenorth, 0.51);
         textscale = diaglen * 0.003;
-        while (1) {
+        while (true) {
             line(corner0, corner1);
             line(corner1, corner2);
             line(corner2, corner3);
@@ -330,7 +330,7 @@ function body_customization_process_command(character_index) {
                 println("<unknown string>" + bodytype + "<unknown string>");
             #/
             function_5639909a(bodytype, 0);
-            return;
+            break;
         case 2:
             command0 = strtok(split[0], "<unknown string>");
             bodytype = int(command0[1]);
@@ -340,7 +340,7 @@ function body_customization_process_command(character_index) {
                 println("<unknown string>" + bodytype + "<unknown string>" + outfitindex + "<unknown string>");
             #/
             function_5639909a(bodytype, outfitindex);
-            return;
+            break;
         case 3:
             command0 = strtok(split[0], "<unknown string>");
             bodytype = int(command0[1]);
@@ -353,9 +353,9 @@ function body_customization_process_command(character_index) {
                 println("<unknown string>" + bodytype + "<unknown string>" + outfitindex + "<unknown string>" + var_c1154821 + "<unknown string>" + index + "<unknown string>");
             #/
             function_f413b4d5(bodytype, outfitindex, var_c1154821, index);
-            return;
+            break;
         default:
-            return;
+            break;
         }
     #/
 }

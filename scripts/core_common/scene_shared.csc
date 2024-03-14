@@ -106,7 +106,7 @@ class cscene : cscriptbundlebase {
     // Checksum 0x3d099d63, Offset: 0x76d8
     // Size: 0x8
     function allows_multiple() {
-        return 1;
+        return true;
     }
 
     // Namespace cscene/scene_shared
@@ -179,30 +179,30 @@ class cscene : cscriptbundlebase {
                     switch (args.size) {
                     case 6:
                         self._e_root thread [[ func ]](clientnum, a_ents, args[0], args[1], args[2], args[3], args[4], args[5]);
-                        continue;
+                        break;
                     case 5:
                         self._e_root thread [[ func ]](clientnum, a_ents, args[0], args[1], args[2], args[3], args[4]);
-                        continue;
+                        break;
                     case 4:
                         self._e_root thread [[ func ]](clientnum, a_ents, args[0], args[1], args[2], args[3]);
-                        continue;
+                        break;
                     case 3:
                         self._e_root thread [[ func ]](clientnum, a_ents, args[0], args[1], args[2]);
-                        continue;
+                        break;
                     case 2:
                         self._e_root thread [[ func ]](clientnum, a_ents, args[0], args[1]);
-                        continue;
+                        break;
                     case 1:
                         self._e_root thread [[ func ]](clientnum, a_ents, args[0]);
-                        continue;
+                        break;
                     case 0:
                         self._e_root thread [[ func ]](clientnum, a_ents);
-                        continue;
+                        break;
                     default:
                         /#
                             assertmsg("<unknown string>");
                         #/
-                        continue;
+                        break;
                     }
                 }
             }
@@ -744,12 +744,12 @@ class csceneobject : cscriptbundleobjectbase {
     function in_a_different_scene() {
         if (isdefined(self._n_clientnum)) {
             if (isdefined(self._e_array[self._n_clientnum]) && isdefined(self._e_array[self._n_clientnum].current_scene) && self._e_array[self._n_clientnum].current_scene != self._o_scene._str_name) {
-                return 1;
+                return true;
             }
         } else if (isdefined(self._e_array[0]) && isdefined(self._e_array[0].current_scene) && self._e_array[0].current_scene != self._o_scene._str_name) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 
     // Namespace csceneobject/scene_shared
@@ -1218,16 +1218,16 @@ class csceneobject : cscriptbundleobjectbase {
                     switch (str_entry_type) {
                     case #"cameraswitcher":
                         thread [[ self ]]->_play_camera_anim(clientnum, entry, n_start_time);
-                        continue;
+                        break;
                     case #"anim":
                         _play_anim(clientnum, entry, 1, self._n_blend, self._s.mainshot, b_looping, n_start_time);
-                        continue;
+                        break;
                     case #"blend":
                         self._n_blend = entry;
-                        continue;
+                        break;
                     default:
                         cscriptbundleobjectbase::error(1, "Bad timeline entry type '" + str_entry_type + "'.");
-                        continue;
+                        break;
                     }
                 }
             }
@@ -1361,9 +1361,9 @@ class csceneobject : cscriptbundleobjectbase {
     // Size: 0x54
     function function_71b06874(n_shot) {
         if (isdefined(self._s.shots[n_shot].var_51093f2d) && self._s.shots[n_shot].var_51093f2d) {
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
 
     // Namespace csceneobject/scene_shared
@@ -1557,16 +1557,16 @@ function player_pbg_bank_scene_system(localclientnum, oldval, newval, bnewent, b
     switch (newval) {
     case 0:
         setpbgactivebank(localclientnum, 1);
-        return;
+        break;
     case 1:
         setpbgactivebank(localclientnum, 2);
-        return;
+        break;
     case 2:
         setpbgactivebank(localclientnum, 4);
-        return;
+        break;
     case 3:
         setpbgactivebank(localclientnum, 8);
-        return;
+        break;
     }
 }
 
@@ -1906,13 +1906,13 @@ function cf_server_sync(localclientnum, oldval, newval, bnewent, binitialsnap, f
             if (is_active(fieldname)) {
                 level thread stop(fieldname, 1, undefined, undefined, 1);
             }
-            return;
+            break;
         case 4:
             level thread init(fieldname, undefined, undefined, 1);
-            return;
+            break;
         case 5:
             level thread play(fieldname, undefined, undefined, 1);
-            return;
+            break;
         }
     #/
 }
@@ -2590,9 +2590,9 @@ function function_b260bdcc(str_scenedef, str_shot, s_instance) {
     var_418c40ac = function_c9770402(str_scenedef, s_instance);
     s_scenedef = get_scenedef(str_scenedef);
     if (str_shot !== "init" && (str_shot === var_418c40ac || isdefined(s_scenedef.old_scene_version) && s_scenedef.old_scene_version && str_shot === "play")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2655,7 +2655,7 @@ function _init_instance(str_scenedef = self.scriptbundlename, a_ents, b_test_run
 // Size: 0x1dc
 function function_6f382548(struct, str_scene_name) {
     if (!isdefined(struct.disableinsplitscreen) || !(getdvarint(#"splitscreen_playercount", 1) > 1)) {
-        return 1;
+        return true;
     }
     if (struct.disableinsplitscreen == 2 && getdvarint(#"splitscreen_playercount", 1) > 1 || struct.disableinsplitscreen == 3 && getdvarint(#"splitscreen_playercount", 1) > 2 || struct.disableinsplitscreen == 4 && getdvarint(#"splitscreen_playercount", 1) > 3) {
         /#
@@ -2666,9 +2666,9 @@ function function_6f382548(struct, str_scene_name) {
             }
             println(str_debug);
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace scene/scene_shared
@@ -2918,10 +2918,10 @@ function function_46546b5c(s_tracker, str_scenedef) {
                 iprintlnbold("<unknown string>" + str_scenedef);
             #/
             s_tracker.var_93ec5dde = 1;
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -3164,10 +3164,10 @@ function has_init_state(str_scenedef) {
     s_scenedef = get_scenedef(str_scenedef);
     foreach (s_obj in s_scenedef.objects) {
         if (!(isdefined(s_obj.disabled) && s_obj.disabled) && s_obj _has_init_state(str_scenedef)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared

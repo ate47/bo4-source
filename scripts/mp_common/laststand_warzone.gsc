@@ -263,7 +263,7 @@ function function_60cc4433(prompt, var_a1258c6b) {
 function function_c025efba(prompt, var_a1258c6b) {
     var_a1258c6b endon(#"player_revived", #"disconnect", #"bled_out", #"death", #"player_finished");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         beingrevived = var_a1258c6b is_being_revived();
         beingfinished = var_a1258c6b function_72e0c544();
         cowardsway = isdefined(var_a1258c6b.var_eb33efbc) && var_a1258c6b.var_eb33efbc;
@@ -341,10 +341,10 @@ function function_5de626dc(var_a1258c6b) {
             self thread function_263a2944(prompt, var_a1258c6b);
             self thread function_c025efba(prompt, var_a1258c6b);
             self thread function_60cc4433(prompt);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -388,7 +388,7 @@ function function_d5db8d2e(attacker, weapon) {
 function function_463b3f65() {
     /#
         self endon(#"player_revived", #"death");
-        while (1) {
+        while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
                 self notify(#"auto_revive");
                 waittillframeend();
@@ -407,7 +407,7 @@ function function_463b3f65() {
 function function_ce726eb4() {
     /#
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
                 host = util::gethostplayer();
                 angles = host getplayerangles();
@@ -464,11 +464,11 @@ function function_ed72859e() {
                 continue;
             }
             if (isalive(player) && !player laststand::player_is_in_laststand()) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -477,17 +477,17 @@ function function_ed72859e() {
 // Size: 0x1d6
 function function_b1158c52(var_90c1e72d) {
     if (isdefined(level.skiplaststand) && level.skiplaststand) {
-        return 1;
+        return true;
     } else if (!var_90c1e72d) {
-        return 1;
+        return true;
     } else if (self isplayerswimming()) {
-        return 1;
+        return true;
     } else if (self infection::is_infected()) {
-        return 1;
+        return true;
     } else if (isdefined(self.var_156bf46e) && isvehicle(self.var_156bf46e) && !self.var_156bf46e isremotecontrol() && isairborne(self.var_156bf46e)) {
         trace = groundtrace(self.origin, self.origin - vectorscale((0, 0, 1), 300), 0, self.var_156bf46e);
         if (trace[#"fraction"] >= 1) {
-            return 1;
+            return true;
         }
     } else {
         var_b145f8cd = self.laststandcount - 1;
@@ -499,7 +499,7 @@ function function_b1158c52(var_90c1e72d) {
             return (var_e86679bd.time <= 0);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -713,7 +713,7 @@ function laststand_bleedout_damage() {
     self val::set(#"laststand", #"takedamage", 0);
     wait(level.var_5c13c13f);
     self val::reset(#"laststand", #"takedamage");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"laststand_damage");
         if (self.var_d887a4ad === 1) {
@@ -1004,7 +1004,7 @@ function revive_trigger_think() {
     wait(0.1);
     while (isdefined(self) && !(isdefined(level.gameended) && level.gameended)) {
         if (!isdefined(self)) {
-            return;
+            break;
         }
         if (!isdefined(self.revivetrigger)) {
             self notify(#"stop_revive_trigger");
@@ -1043,16 +1043,16 @@ function revive_trigger_think() {
 // Size: 0x7ea
 function function_356caede(team) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.alivecount) || !isdefined(level.alivecount[team])) {
-        return 0;
+        return false;
     }
     if (level.alivecount[team] == 0) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.revivetrigger)) {
-        return 0;
+        return false;
     }
     players = getplayers(team, self.revivetrigger.origin, self.revivetrigger.radius);
     height = getdvarint(#"hash_48068f92d21e2a64", 15);
@@ -1086,14 +1086,14 @@ function function_356caede(team) {
         }
         self function_fab0e07e(finisher);
         if (!isdefined(finisher)) {
-            return 0;
+            return false;
         }
         if (!isdefined(self) || !isalive(self) || !isalive(finisher)) {
             finisher function_b16f016a();
             if (isdefined(self)) {
                 self clientfield::set_player_uimodel("hudItems.beingFinished", 0);
             }
-            return 0;
+            return false;
         }
         finisher disableweaponcycling();
         finisher disableusability();
@@ -1116,7 +1116,7 @@ function function_356caede(team) {
                     self setorigin(kill_origin);
                     self dodamage(self.var_969fabf4, self.origin, finisher, undefined, "none", "MOD_MELEE_ASSASSINATE", 8192);
                     self function_2907ce7a();
-                    return 1;
+                    return true;
                 } else {
                     self clientfield::set_player_uimodel("hudItems.beingFinished", 0);
                     self function_516a3bef(1);
@@ -1126,7 +1126,7 @@ function function_356caede(team) {
             finisher function_7c685040();
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -1191,13 +1191,13 @@ function function_516a3bef(replace) {
 // Size: 0x338
 function function_55f6978f(team) {
     if (!isdefined(team)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.revivetrigger)) {
-        return 0;
+        return false;
     }
     players = getplayers(team, self.revivetrigger.origin, self.revivetrigger.radius);
     foreach (player in players) {
@@ -1229,11 +1229,11 @@ function function_55f6978f(team) {
             if (isdefined(revive_success) && revive_success) {
                 self thread revive_success(reviver);
                 self function_2907ce7a();
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -1257,35 +1257,35 @@ function revive_give_back_weapons() {
 // Size: 0x1f6
 function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (self laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     if (!ignore_touch_checks) {
         if (!self istouching(revivee.revivetrigger)) {
-            return 0;
+            return false;
         }
     }
     if (!self laststand::is_facing(revivee, 0.8)) {
-        return 0;
+        return false;
     }
     if (isdefined(height)) {
         delta = revivee.origin[2] - self.origin[2];
         if (delta > height || delta < height * -1) {
-            return 0;
+            return false;
         }
     }
     if (distancesquared(revivee.origin, self.origin) > 140 * 140) {
-        return 0;
+        return false;
     }
     if (!sighttracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
-        return 0;
+        return false;
     }
     if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -1294,13 +1294,13 @@ function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
 // Size: 0xb4
 function is_reviving(revivee, ignore_touch_checks = 0, height = undefined) {
     if (!isdefined(self) || !isdefined(revivee)) {
-        return 0;
+        return false;
     }
     if (!isalive(revivee)) {
-        return 0;
+        return false;
     }
     if (!isdefined(revivee.revivetrigger)) {
-        return 0;
+        return false;
     }
     return self usebuttonpressed() && self can_revive(revivee, ignore_touch_checks, height);
 }
@@ -1454,9 +1454,9 @@ function function_1c8cab15(var_b4bb7319) {
         var_b4bb7319.revivetrigger.beingfinished = 0;
     }
     if (isdefined(var_b4bb7319) && var_b4bb7319 flagsys::get(#"hash_40e3b09bdbcdac81")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_warzone/laststand_warzone
@@ -1587,11 +1587,11 @@ function function_1e8018b0() {
 // Size: 0xb8
 function function_b1ad0b64(idamage, smeansofdeath) {
     if (!(isdefined(self.laststand) && self.laststand)) {
-        return 0;
+        return false;
     }
     playermelee = smeansofdeath == "MOD_MELEE" || smeansofdeath == "MOD_MELEE_WEAPON_BUTT" || smeansofdeath == "MOD_MELEE_ASSASSINATE";
     if (playermelee) {
-        return 1;
+        return true;
     }
     var_47b2d26b = idamage / self.var_969fabf4;
     damagetime = self.var_84c0402e * var_47b2d26b;

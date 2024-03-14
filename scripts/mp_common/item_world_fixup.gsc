@@ -87,9 +87,9 @@ function private function_bbc0b67f(prematch = 0) {
         /#
             assert(0, "<unknown string>");
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_world_fixup/item_world_fixup

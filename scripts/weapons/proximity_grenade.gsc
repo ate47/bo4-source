@@ -50,7 +50,7 @@ function init_shared() {
 // Size: 0x2b4
 function updatedvars() {
     /#
-        while (1) {
+        while (true) {
             level.proximitygrenadedetectionradius = getdvarint(#"scr_proximitygrenadedetectionradius", level.proximitygrenadedetectionradius);
             level.proximitygrenadeduration = getdvarfloat(#"scr_proximitygrenadeduration", 1.5);
             level.proximitygrenadegraceperiod = getdvarfloat(#"scr_proximitygrenadegraceperiod", level.proximitygrenadegraceperiod);
@@ -234,9 +234,9 @@ function getproximitychain() {
 // Size: 0x38
 function chainisactive(chain) {
     if (isdefined(chain.activeendtime) && chain.activeendtime > gettime()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace proximity_grenade/proximity_grenade
@@ -314,7 +314,7 @@ function proximitygrenadechain(eattacker, einflictor, killcament, weapon, meanso
     if (!isdefined(proximitychain.proximitychainent.cleanup)) {
         proximitychain.proximitychainent thread cleanupproximitychainent();
     }
-    while (1) {
+    while (true) {
         currenttime = gettime();
         if (endtime < currenttime) {
             return;
@@ -416,7 +416,7 @@ function watchproximitygrenadehitplayer(owner) {
     self endon(#"death");
     self setowner(owner);
     self setteam(owner.team);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_bounce");
         ent = waitresult.entity;

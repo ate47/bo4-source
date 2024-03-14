@@ -415,10 +415,10 @@ function has_active_gadget() {
         }
         slot = self gadgetgetslot(weapon);
         if (self gadgetisactive(slot)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace pickup_items/pickup_items
@@ -454,12 +454,12 @@ function take_offhand_weapon(offhandslot) {
 // Size: 0x36
 function should_switch_to_pickup_weapon(weapon) {
     if (weapon.isgadget) {
-        return 0;
+        return false;
     }
     if (weapon.isgrenadeweapon) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace pickup_items/pickup_items
@@ -472,7 +472,7 @@ function on_touch_weapon(player) {
     ammo_in_reserve = player getweaponammostock(weapon);
     if (weapon.isgadget) {
         if (player has_active_gadget()) {
-            return 0;
+            return false;
         }
         player take_player_gadgets();
     }
@@ -482,7 +482,7 @@ function on_touch_weapon(player) {
     player pickupweaponevent(weapon);
     player giveweapon(weapon);
     if (!player hasweapon(weapon)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.script_ammo_clip) && isdefined(self.script_ammo_extra)) {
         if (had_weapon) {
@@ -503,6 +503,6 @@ function on_touch_weapon(player) {
     if (!had_weapon && should_switch_to_pickup_weapon(weapon)) {
         player switchtoweapon(weapon);
     }
-    return 1;
+    return true;
 }
 

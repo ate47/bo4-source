@@ -206,7 +206,7 @@ function wait_till_clear_all_timeout(n_timeout, a_flags) {
 // Size: 0xb0
 function wait_till_clear_any(a_flags) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (flag in a_flags) {
             if (!get(flag)) {
                 return flag;

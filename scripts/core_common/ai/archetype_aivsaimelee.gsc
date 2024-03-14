@@ -85,15 +85,15 @@ function registeraivsaimeleebehaviorfunctions() {
 // Size: 0x5e
 function haspotentalaivsaimeleeenemy(behaviortreeentity) {
     if (!hasaivsaienemy(behaviortreeentity)) {
-        return 0;
+        return false;
     }
     if (!chooseaivsaimeleeanimations(behaviortreeentity)) {
-        return 0;
+        return false;
     }
     if (!hascloseaivsaienemy(behaviortreeentity)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -102,15 +102,15 @@ function haspotentalaivsaimeleeenemy(behaviortreeentity) {
 // Size: 0x5e
 function iscloseenoughforaivsaimelee(behaviortreeentity) {
     if (!hasaivsaienemy(behaviortreeentity)) {
-        return 0;
+        return false;
     }
     if (!chooseaivsaimeleeanimations(behaviortreeentity)) {
-        return 0;
+        return false;
     }
     if (!hascloseaivsaienemy(behaviortreeentity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -119,18 +119,18 @@ function iscloseenoughforaivsaimelee(behaviortreeentity) {
 // Size: 0xb2
 function private shouldaquiremutexonenemyforaivsaimelee(behaviortreeentity) {
     if (isplayer(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
     if (!isdefined(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.meleeenemy) && behaviortreeentity.meleeenemy == behaviortreeentity.enemy) {
-        return 1;
+        return true;
     }
     if (isdefined(behaviortreeentity.enemy.meleeenemy) && behaviortreeentity.enemy.meleeenemy != behaviortreeentity) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -143,82 +143,82 @@ function private hasaivsaienemy(behaviortreeentity) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (!isdefined(enemy)) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (!(isalive(behaviortreeentity) && isalive(enemy))) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (!isai(enemy) || !isactor(enemy)) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (isdefined(enemy.archetype)) {
         if (enemy.archetype != #"human" && enemy.archetype != #"human_riotshield" && enemy.archetype != #"robot") {
             /#
                 record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
             #/
-            return 0;
+            return false;
         }
     }
     if (enemy.team == behaviortreeentity.team) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (enemy isragdoll()) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (isdefined(enemy.ignoreme) && enemy.ignoreme) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (isdefined(enemy._ai_melee_markeddead) && enemy._ai_melee_markeddead) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (behaviortreeentity ai::has_behavior_attribute("can_initiateaivsaimelee") && !behaviortreeentity ai::get_behavior_attribute("can_initiateaivsaimelee")) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (behaviortreeentity ai::has_behavior_attribute("can_melee") && !behaviortreeentity ai::get_behavior_attribute("can_melee")) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (enemy ai::has_behavior_attribute("can_be_meleed") && !enemy ai::get_behavior_attribute("can_be_meleed")) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (distance2dsquared(behaviortreeentity.origin, enemy.origin) > 22500) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
         behaviortreeentity._ai_melee_initiator = undefined;
-        return 0;
+        return false;
     }
     forwardvec = vectornormalize(anglestoforward(behaviortreeentity.angles));
     rightvec = vectornormalize(anglestoright(behaviortreeentity.angles));
@@ -228,13 +228,13 @@ function private hasaivsaienemy(behaviortreeentity) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (enemy isinscriptedstate()) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     currentstance = behaviortreeentity getblackboardattribute("_stance");
     enemystance = enemy getblackboardattribute("_stance");
@@ -242,26 +242,26 @@ function private hasaivsaienemy(behaviortreeentity) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (!shouldaquiremutexonenemyforaivsaimelee(behaviortreeentity)) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (abs(behaviortreeentity.origin[2] - behaviortreeentity.enemy.origin[2]) > 16) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     raisedenemyentorigin = (behaviortreeentity.enemy.origin[0], behaviortreeentity.enemy.origin[1], behaviortreeentity.enemy.origin[2] + 8);
     if (!behaviortreeentity maymovetopoint(raisedenemyentorigin, 0, 1, behaviortreeentity.enemy)) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     if (isdefined(enemy.allowdeath) && !enemy.allowdeath) {
         if (isdefined(behaviortreeentity.allowdeath) && !behaviortreeentity.allowdeath) {
@@ -269,12 +269,12 @@ function private hasaivsaienemy(behaviortreeentity) {
                 record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
             #/
             self notify(#"failed_melee_mbs", {#entity:enemy});
-            return 0;
+            return false;
         }
         behaviortreeentity._ai_melee_attacker_loser = 1;
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -285,10 +285,10 @@ function private decideinitiator(behaviortreeentity) {
     if (!isdefined(behaviortreeentity._ai_melee_initiator)) {
         if (!isdefined(behaviortreeentity.enemy._ai_melee_initiator)) {
             behaviortreeentity._ai_melee_initiator = 1;
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -297,9 +297,9 @@ function private decideinitiator(behaviortreeentity) {
 // Size: 0x34
 function private isinitiator(behaviortreeentity) {
     if (!(isdefined(behaviortreeentity._ai_melee_initiator) && behaviortreeentity._ai_melee_initiator)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -311,7 +311,7 @@ function private hascloseaivsaienemy(behaviortreeentity) {
         /#
             record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     animationstartorigin = getstartorigin(behaviortreeentity.enemy gettagorigin("tag_sync"), behaviortreeentity.enemy gettagangles("tag_sync"), behaviortreeentity._ai_melee_animname);
     /#
@@ -322,7 +322,7 @@ function private hascloseaivsaienemy(behaviortreeentity) {
         recordline(animationstartorigin, behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity);
     #/
     if (distance2dsquared(behaviortreeentity.origin, animationstartorigin) <= 900) {
-        return 1;
+        return true;
     }
     if (behaviortreeentity haspath()) {
         selfpredictedpos = behaviortreeentity.origin;
@@ -332,10 +332,10 @@ function private hascloseaivsaienemy(behaviortreeentity) {
             record3dtext("<unknown string>" + distance(selfpredictedpos, animationstartorigin), behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
         if (distance2dsquared(selfpredictedpos, animationstartorigin) <= 900) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -356,7 +356,7 @@ function private chooseaivsaimeleeanimations(behaviortreeentity) {
         /#
             record3dtext("<unknown string>" + function_9e72a96(behaviortreeentity.archetype) + "<unknown string>" + behaviortreeentity.enemy.archetype + "<unknown string>" + attacker_variant + "<unknown string>" + defender_variant, behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/
-        return 0;
+        return false;
     }
     animbundle = level._aivsai_meleebundles[behaviortreeentity.archetype][behaviortreeentity.enemy.archetype][attacker_variant][defender_variant];
     /#
@@ -392,9 +392,9 @@ function private chooseaivsaimeleeanimations(behaviortreeentity) {
     }
     if (isdefined(behaviortreeentity._ai_melee_animname)) {
         debug_chosenmeleeanimations(behaviortreeentity);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee
@@ -420,15 +420,15 @@ function private choosearchetypevariant(entity) {
 // Size: 0xfc
 function private aivsaimeleebundleexists(behaviortreeentity, attacker_variant, defender_variant) {
     if (!isdefined(level._aivsai_meleebundles[behaviortreeentity.archetype])) {
-        return 0;
+        return false;
     } else if (!isdefined(level._aivsai_meleebundles[behaviortreeentity.archetype][behaviortreeentity.enemy.archetype])) {
-        return 0;
+        return false;
     } else if (!isdefined(level._aivsai_meleebundles[behaviortreeentity.archetype][behaviortreeentity.enemy.archetype][attacker_variant])) {
-        return 0;
+        return false;
     } else if (!isdefined(level._aivsai_meleebundles[behaviortreeentity.archetype][behaviortreeentity.enemy.archetype][attacker_variant][defender_variant])) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace archetype_aivsaimelee/archetype_aivsaimelee

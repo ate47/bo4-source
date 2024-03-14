@@ -77,7 +77,7 @@ function init_level_vars() {
 function function_944ac830() {
     self endon(#"death");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"started_defend_area");
         level waittill(#"hash_7a04a7fb98fa4e4d");
         if (isalive(self)) {
@@ -273,7 +273,7 @@ function function_466fb0ff() {
     str_next_defend = zm_utility::function_40ef77ab(#"poop_deck");
     var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
     var_55a36349 = 1;
-    while (1) {
+    while (true) {
         zm_utility::function_11101458(str_next_defend);
         if (str_next_defend == #"engine_room") {
             level thread zm_utility::open_door(array("engine_room_door", "engine_room_dropdown"), undefined, 10);
@@ -322,7 +322,7 @@ function function_1dcc39ae() {
         str_next_defend = zm_utility::function_40ef77ab("<unknown string>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
-        while (1) {
+        while (true) {
             zm_utility::function_11101458(str_next_defend);
             wait(5);
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);
@@ -453,7 +453,7 @@ function function_dcf7377c(n_round_number) {
 // Size: 0x2f8
 function function_a18a0aba() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_4ffec9c5f552e6fc");
         if (isdefined(s_waitresult.e_door) && isdefined(s_waitresult.e_door.script_flag)) {

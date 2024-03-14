@@ -544,13 +544,13 @@ function function_c9770402(str_scenedef) {
 function function_24f8cfb5(str_scenedef, str_shot) {
     a_shots = get_all_shot_names(str_scenedef);
     if (str_shot == "init") {
-        return 0;
+        return false;
     }
     arrayremovevalue(a_shots, "init");
     if (a_shots[0] === str_shot) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -561,9 +561,9 @@ function function_b260bdcc(str_scenedef, str_shot) {
     var_418c40ac = function_c9770402(str_scenedef);
     s_scenedef = get_scenedef(str_scenedef);
     if (str_shot !== "init" && (str_shot === var_418c40ac || isdefined(s_scenedef.old_scene_version) && s_scenedef.old_scene_version && str_shot === "play")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -1141,7 +1141,7 @@ function _init_instance(str_scenedef, a_ents, b_test_run = 0) {
 // Size: 0x1dc
 function function_6f382548(struct, str_scene_name) {
     if (!isdefined(struct.disableinsplitscreen) || !(getdvarint(#"splitscreen_playercount", 1) > 1)) {
-        return 1;
+        return true;
     }
     if (struct.disableinsplitscreen == 2 && getdvarint(#"splitscreen_playercount", 1) > 1 || struct.disableinsplitscreen == 3 && getdvarint(#"splitscreen_playercount", 1) > 2 || struct.disableinsplitscreen == 4 && getdvarint(#"splitscreen_playercount", 1) > 3) {
         /#
@@ -1152,9 +1152,9 @@ function function_6f382548(struct, str_scene_name) {
             }
             println(str_debug);
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace scene/scene_shared
@@ -1331,14 +1331,14 @@ function play(arg1, arg2, arg3, b_test_run = 0, str_mode = "", n_time, var_f7d56
 // Size: 0xa0
 function function_c8dd0fee() {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (self.classname === "scriptbundle_scene" && isdefined(self.scriptbundlename)) {
         if (!(isdefined(self.var_538fcf13) && self.var_538fcf13) && function_9730988a(self.scriptbundlename, "breach_init") && function_9730988a(self.scriptbundlename, "breach_play")) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2010,17 +2010,17 @@ function _get_type_count(str_type, str_scenedef) {
 // Size: 0x126
 function function_128f0294(var_37fa9b04) {
     if (!isdefined(self._scene_object) || !isdefined(self.var_5b7900ec)) {
-        return 1;
+        return true;
     }
     foreach (s_shot in self._scene_object._s.shots) {
         if (isdefined(self.var_5b7900ec[s_shot.name]) && self.var_5b7900ec[s_shot.name]) {
             continue;
         }
         if (self._scene_object csceneobject::function_f12c5e67(s_shot) && !self._scene_object csceneobject::function_128f0294(s_shot, var_37fa9b04)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace scene/scene_shared
@@ -2043,7 +2043,7 @@ function is_playing(str_scenedef = self.scriptbundlename, str_shot = "play") {
     if (isdefined(o_scene)) {
         return (o_scene._str_shot === str_shot);
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2290,9 +2290,9 @@ function get_scene_shot(str_scene) {
 // Size: 0x80
 function is_capture_mode(str_mode = getdvarstring(#"scene_menu_mode", "default")) {
     if (issubstr(str_mode, "capture") || function_a4dedc63(1)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2320,12 +2320,12 @@ function wait_until_spectate_on_join_completes() {
 function function_a4dedc63(var_2875c7e7 = 0) {
     if (var_2875c7e7) {
         if (getdvarint(#"hash_6a54249f0cc48945", 0)) {
-            return 1;
+            return true;
         }
     } else if (getdvarint(#"hash_1ac735c6e28a2f7a", 0) || getdvarint(#"hash_6a54249f0cc48945", 0)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2334,18 +2334,18 @@ function function_a4dedc63(var_2875c7e7 = 0) {
 // Size: 0xb0
 function function_46546b5c(str_scenedef) {
     if (!sessionmodeiscampaigngame()) {
-        return 0;
+        return false;
     }
     if (function_a4dedc63()) {
-        return 0;
+        return false;
     }
     if (getdvarint(#"hash_862358d532e674c", 0) === 1) {
         var_41c1a1b7 = getscriptbundle(str_scenedef);
         if (isdefined(var_41c1a1b7.var_2af733c9) && var_41c1a1b7.var_2af733c9) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2354,15 +2354,15 @@ function function_46546b5c(str_scenedef) {
 // Size: 0x98
 function function_a63b9bca(str_scenedef) {
     if (!sessionmodeiscampaigngame()) {
-        return 0;
+        return false;
     }
     if (getdvarint(#"hash_862358d532e674c", 0) === 2) {
         var_41c1a1b7 = getscriptbundle(str_scenedef);
         if (isdefined(var_41c1a1b7.var_2af733c9) && var_41c1a1b7.var_2af733c9) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2393,7 +2393,7 @@ function function_a4ad0308(o_scene) {
     self.skip_scene_menu_handle cp_skip_scene_menu::set_hostisskipping(self, 0);
     self.skip_scene_menu_handle cp_skip_scene_menu::set_votedtoskip(self, 0);
     self.skip_scene_menu_handle cp_skip_scene_menu::set_sceneskipendtime(self, 0);
-    while (1) {
+    while (true) {
         if (isdefined(self.var_fc92900f) && self.var_fc92900f && isdefined(self.skip_scene_menu_handle)) {
             self.skip_scene_menu_handle cp_skip_scene_menu::set_votedtoskip(self, 1);
             self.skip_scene_menu_handle cp_skip_scene_menu::set_showskipbutton(self, 2);
@@ -2500,12 +2500,12 @@ function start_scene_skip(o_scene) {
 // Size: 0x94
 function function_1c87e68f() {
     if (isdefined(level.chyron_text_active) && level.chyron_text_active) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_d89799d7) && level.var_d89799d7 && level flag::exists("switchmap_preload_finished") && !level flag::get("switchmap_preload_finished")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace scene/scene_shared
@@ -2546,33 +2546,33 @@ function function_63033fc3(str_notify) {
 // Size: 0x1a6
 function any_button_pressed() {
     if (self actionslotonebuttonpressed()) {
-        return 1;
+        return true;
     } else if (self actionslottwobuttonpressed()) {
-        return 1;
+        return true;
     } else if (self actionslotthreebuttonpressed()) {
-        return 1;
+        return true;
     } else if (self actionslotfourbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self jumpbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self stancebuttonpressed()) {
-        return 1;
+        return true;
     } else if (self weaponswitchbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self reloadbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self fragbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self throwbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self attackbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self secondaryoffhandbuttonpressed()) {
-        return 1;
+        return true;
     } else if (self meleebuttonpressed()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2860,7 +2860,7 @@ function check_team(str_team1 = #"any", str_team2 = #"any") {
     str_team1 = util::get_team_mapping(str_team1);
     str_team2 = util::get_team_mapping(str_team2);
     if (str_team1 == #"any" || str_team2 == #"any") {
-        return 1;
+        return true;
     }
     return str_team1 == str_team2;
 }
@@ -2871,9 +2871,9 @@ function check_team(str_team1 = #"any", str_team2 = #"any") {
 // Size: 0x18
 function function_c935c42() {
     if (isdefined(self._scene_object)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared
@@ -2898,9 +2898,9 @@ function function_4f5268c8() {
 // Size: 0x2e
 function function_268bfc72() {
     if (self flagsys::get(#"hash_2d4a7625f4fde7eb")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace scene/scene_shared
@@ -2925,9 +2925,9 @@ function function_2987f9bd() {
 // Size: 0x2e
 function function_6d361d2d() {
     if (self flagsys::get(#"hash_960b6b7a9f62393")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace scene/scene_shared

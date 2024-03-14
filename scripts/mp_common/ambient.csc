@@ -133,7 +133,7 @@ function ambient_flak_flash(point, min_burst_time, max_burst_time) {
     min_burst_time = 0.25;
     max_burst_time = 1;
     fxpos = undefined;
-    while (1) {
+    while (true) {
         if (!point.is_firing) {
             wait(0.25);
             continue;
@@ -251,7 +251,7 @@ function ambient_fakefire_think(point) {
         #/
         break;
     }
-    while (1) {
+    while (true) {
         burst = randomintrange(burstmin, burstmax);
         for (i = 0; i < burst; i++) {
             tracedist = 10000;
@@ -299,7 +299,7 @@ function spin_fan() {
             self.wobble_speed = self.speed * 0.5;
         }
     }
-    while (1) {
+    while (true) {
         if (!do_wobble) {
             self rotateyaw(180, self.speed);
             self waittill(#"rotatedone");
@@ -426,7 +426,7 @@ function clock_run(time_values) {
         self waittill(#"rotatedone");
     }
     prev_time = getsystemtime();
-    while (1) {
+    while (true) {
         curr_time = getsystemtime();
         if (prev_time != curr_time) {
             self rotatepitch(time_values[#"rotate_bit"], 0.05);
@@ -462,7 +462,7 @@ function spoon_spin_func() {
     } else {
         model_speed = 2;
     }
-    while (1) {
+    while (true) {
         speed = randomfloatrange(model_speed * 0.6, model_speed);
         self rotateyaw(1200, speed);
         self waittill(#"rotatedone");
@@ -485,7 +485,7 @@ function arrow_spin_func() {
     } else {
         model_speed = 0.8;
     }
-    while (1) {
+    while (true) {
         direction_change = model_direction_change + randomintrange(-11, 11);
         speed_change = randomfloatrange(model_speed * 0.3, model_speed);
         self rotateyaw(direction_change, speed_change);

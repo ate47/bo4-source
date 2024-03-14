@@ -312,7 +312,7 @@ function cleanup_step_4(var_5ea5c94d, ended_early) {
 // Checksum 0x83b4d470, Offset: 0x2500
 // Size: 0x1a0
 function function_55b79f54() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -365,7 +365,7 @@ function function_70d8a7cb() {
     level endon(#"ley_start");
     self val::set("ley_source", "takedamage", 1);
     self.health = 99999;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         a_players = util::get_active_players();
@@ -388,7 +388,7 @@ function function_70d8a7cb() {
 function function_fde77b55(mdl_coil) {
     level notify(#"ley_reset");
     level endon(#"ley_start", #"ley_reset");
-    while (1) {
+    while (true) {
         level flag::wait_till_any(array(#"hash_546b8f78e6510d81", #"hash_546b8c78e6510868", #"hash_546b8d78e6510a1b", #"hash_546b9278e651129a"));
         a_str_flags = [];
         for (i = 1; i < getplayers().size + 1; i++) {
@@ -491,7 +491,7 @@ function function_57692917(s_ring) {
     }
     waitresult = undefined;
     player = undefined;
-    while (1) {
+    while (true) {
         if (!isdefined(waitresult) || isalive(player) && (!player usebuttonpressed() || !player istouching(self))) {
             waitresult = undefined;
             waitresult = self waittill(#"trigger");
@@ -744,7 +744,7 @@ function function_250cf19b() {
     if (!isdefined(level.n_turns)) {
         level.n_turns = 0;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.mdl_wheel waittill(#"trigger_activated");
         player = waitresult.e_who;
@@ -819,7 +819,7 @@ function function_5164d716() {
     level flag::wait_till(#"hash_702dbaf6695a5607");
     var_e0cc1e20 = getent("trigger_obs_wheel_lock", "targetname");
     var_e0cc1e20.health = 99999;
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = var_e0cc1e20 waittill(#"damage");
         var_e0cc1e20.health = var_e0cc1e20.health + s_notify.amount;
@@ -873,7 +873,7 @@ function function_3f64b455() {
     zm_unitrigger::function_89380dda(mdl_wheel.s_unitrigger);
     level.var_779d8f63 = 1;
     s_result = undefined;
-    while (1) {
+    while (true) {
         if (!isdefined(s_result) || isalive(s_result.e_who) && (!s_result.e_who usebuttonpressed() || isdefined(mdl_wheel.s_unitrigger.trigger) && !s_result.e_who istouching(mdl_wheel.s_unitrigger.trigger))) {
             s_result = undefined;
             s_result = mdl_wheel waittill(#"trigger_activated");
@@ -1039,7 +1039,7 @@ function function_7cc34fef() {
     case 7:
         self.var_c6f538f0[0] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[0].origin, self.a_s_locs[0].angles);
         self.var_c6f538f0[1] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_04_01", self.a_s_locs[1].origin, self.a_s_locs[1].angles);
-        return;
+        break;
     case 9:
         if (math::cointoss()) {
             self.var_c6f538f0[0] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_04_01", self.a_s_locs[0].origin, self.a_s_locs[0].angles);
@@ -1049,22 +1049,22 @@ function function_7cc34fef() {
             self.var_c6f538f0[1] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[1].origin, self.a_s_locs[1].angles);
             self.var_c6f538f0[2] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[2].origin, self.a_s_locs[2].angles);
         }
-        return;
+        break;
     case 11:
         self.var_c6f538f0[0] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[0].origin, self.a_s_locs[0].angles);
         self.var_c6f538f0[1] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[1].origin, self.a_s_locs[1].angles);
         self.var_c6f538f0[2] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[2].origin, self.a_s_locs[2].angles);
-        return;
+        break;
     case 13:
         self.var_c6f538f0[0] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_03_01", self.a_s_locs[0].origin, self.a_s_locs[0].angles);
         self.var_c6f538f0[1] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[1].origin, self.a_s_locs[1].angles);
         self.var_c6f538f0[2] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[2].origin, self.a_s_locs[2].angles);
-        return;
+        break;
     case 15:
         self.var_c6f538f0[0] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[0].origin, self.a_s_locs[0].angles);
         self.var_c6f538f0[1] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[1].origin, self.a_s_locs[1].angles);
         self.var_c6f538f0[2] = util::spawn_model("p8_zm_werewolf_claw_marks_grp_05_01", self.a_s_locs[2].origin, self.a_s_locs[2].angles);
-        return;
+        break;
     }
 }
 
@@ -1079,7 +1079,7 @@ function function_bfefc7aa() {
     mdl_wheel = getent("mdl_tel_wheel", "targetname");
     mdl_base = getent("mdl_tel_base", "targetname");
     self.health = 99999;
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         self.health = self.health + s_notify.amount;
@@ -1111,7 +1111,7 @@ function combo_watcher() {
     level endon(#"combo_done");
     mdl_wheel = getent("mdl_tel_wheel", "targetname");
     mdl_base = getent("mdl_tel_base", "targetname");
-    while (1) {
+    while (true) {
         level flag::wait_till(#"combo_dialed");
         for (i = 0; i < 3; i++) {
             wait(0.75);
@@ -1262,7 +1262,7 @@ function function_3d93d103() {
 // Size: 0x1ce
 function function_b87ae607(n_stage) {
     e_trap = getent("werewolfer_trap_touch", "targetname");
-    while (1) {
+    while (true) {
         level flag::wait_till(#"hash_6f483dda6f8ab19d");
         while (level flag::get(#"hash_6f483dda6f8ab19d")) {
             foreach (player in util::get_active_players()) {
@@ -1389,7 +1389,7 @@ function function_c888f1f4() {
 // Size: 0x4cc
 function function_31e641f5() {
     level endon(#"greenhouse_open");
-    while (1) {
+    while (true) {
         self waittill(#"trigger_activated");
         b_using = 1;
         n_time = 0;
@@ -1592,7 +1592,7 @@ function function_aa1d0bc6() {
 // Checksum 0xc8811425, Offset: 0x8b68
 // Size: 0x2c
 function function_655a2fcc() {
-    while (1) {
+    while (true) {
         if (level.var_e12e0420 < 5) {
             return;
         }
@@ -1673,7 +1673,7 @@ function function_cd9e9ab1() {
 // Checksum 0xcd08f22e, Offset: 0x8f48
 // Size: 0x2c
 function function_a918c691() {
-    while (1) {
+    while (true) {
         if (level.var_20f423f6 < 3) {
             return;
         }
@@ -1798,7 +1798,7 @@ function function_70e83f44(params) {
 // Checksum 0x9e6c172c, Offset: 0x96b8
 // Size: 0x4c
 function function_acf54a6a() {
-    while (1) {
+    while (true) {
         if (level.var_4b9e58af < 1) {
             level flag::set(#"hash_b240a9137ecc6f9");
             return;

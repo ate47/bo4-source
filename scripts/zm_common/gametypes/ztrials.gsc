@@ -131,10 +131,10 @@ function private function_8277ff43() {
 // Size: 0x2ae
 function private function_491101ba(player) {
     if (player hasperk(#"specialty_berserker") && !(isdefined(player.var_a4630f64) && player.var_a4630f64)) {
-        return 1;
+        return true;
     }
     if (level flag::get("round_reset")) {
-        return 1;
+        return true;
     }
     var_57807cdc = [];
     foreach (player in getplayers()) {
@@ -163,12 +163,12 @@ function private function_491101ba(player) {
         zm_trial::fail(#"hash_272fae998263208b", var_57807cdc);
     }
     if (level flag::get("round_reset")) {
-        return 1;
+        return true;
     }
     /#
         assert(level flag::get(#"trial_failed"));
     #/
-    return 0;
+    return false;
 }
 
 // Namespace ztrials/ztrials
@@ -196,7 +196,7 @@ function private function_b8839207(e_door, n_cost) {
     level flag::wait_till("start_zombie_round_logic");
     e_door notify(#"hash_42c191c31ed08a4");
     e_door endon(#"hash_42c191c31ed08a4", #"death");
-    while (1) {
+    while (true) {
         if (n_cost > 0 && zm_trial_disable_buys::is_active()) {
             e_door sethintstring(#"hash_55d25caf8f7bbb2f");
         } else {
@@ -293,7 +293,7 @@ function private function_9a6b2309() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             string = getdvarstring(#"hash_57e97658cd1d89e2", "<unknown string>");
             cmd = strtok(string, "<unknown string>");
             if (cmd.size > 0) {

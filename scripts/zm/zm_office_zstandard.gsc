@@ -294,11 +294,11 @@ function function_c87db3f7(str_next_defend) {
 function function_eede094a(n_obj_id) {
     level endon(#"end_game");
     self endon(#"disconnect", #"hash_7f92ef3fa3761959");
-    while (1) {
+    while (true) {
         if (!zm_office_floors::function_9dd97963(self)) {
             objective_setinvisibletoplayer(n_obj_id, self);
             self notify(#"hash_7f92ef3fa3761959");
-            return;
+            break;
         }
         wait(0.1);
     }
@@ -483,7 +483,7 @@ function function_84139b27() {
 function function_466fb0ff(str_last_defend) {
     level endon(#"end_game");
     str_next_defend = zm_utility::function_40ef77ab(str_last_defend);
-    for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); 1; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
+    for (var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend); true; var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend)) {
         if (str_next_defend != #"groom_lake") {
             util::delay(4, undefined, &zm_utility::function_11101458, str_next_defend);
         } else {
@@ -517,7 +517,7 @@ function function_1dcc39ae() {
         str_next_defend = zm_utility::function_40ef77ab("<unknown string>");
         var_679cd7a8 = zm_utility::function_a877cd10(str_next_defend);
         zm_utility::enable_power_switch(1, 1);
-        while (1) {
+        while (true) {
             zm_utility::function_11101458(str_next_defend);
             wait(5);
             zm_utility::function_33798535(var_679cd7a8.var_39c44288, var_679cd7a8.a_str_zones, var_679cd7a8.var_ed1db1a7, undefined, undefined, 3);

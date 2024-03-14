@@ -187,10 +187,10 @@ function private function_4703be8a() {
             /#
                 recordsphere(self.var_826049b6, 3, (0, 1, 0), "<unknown string>");
             #/
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
@@ -199,9 +199,9 @@ function private function_4703be8a() {
 // Size: 0x1a
 function private function_8d4da9d6() {
     if (gettime() > self.var_86152978) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
@@ -230,15 +230,15 @@ function function_cd6f239() {
 // Size: 0x76
 function function_8709c761(entity) {
     if (isdefined(entity.var_d96b3fd4) && entity.var_d96b3fd4) {
-        return 0;
+        return false;
     }
     if (!entity tigerbehavior::function_8de56915(102 * 102)) {
-        return 0;
+        return false;
     }
     if (zm_ai_utility::function_54054394(entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
@@ -247,25 +247,25 @@ function function_8709c761(entity) {
 // Size: 0x16e
 function function_6c513e36(entity) {
     if (!entity tigerbehavior::function_8de56915(180 * 180)) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.var_d96b3fd4) && entity.var_d96b3fd4) {
         entity.var_d96b3fd4 = 0;
-        return 1;
+        return true;
     }
     if (!entity cansee(entity.favoriteenemy)) {
-        return 0;
+        return false;
     }
     if (distancesquared(entity.origin, entity.favoriteenemy.origin) < 40 * 40) {
-        return 1;
+        return true;
     }
     if (zm_ai_utility::function_54054394(entity)) {
-        return 0;
+        return false;
     }
     if (!tracepassedonnavmesh(entity.origin, isdefined(entity.favoriteenemy.last_valid_position) ? entity.favoriteenemy.last_valid_position : entity.favoriteenemy.origin, entity.favoriteenemy getpathfindingradius())) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
@@ -339,10 +339,10 @@ function function_8fc19416(notetrack) {
     switch (notetrack) {
     case #"tiger_melee_left":
         self clientfield::increment_to_player("" + #"hash_14c746e550d9f3ca", 2);
-        return;
+        break;
     case #"tiger_melee_right":
         self clientfield::increment_to_player("" + #"hash_14c746e550d9f3ca", 1);
-        return;
+        break;
     }
 }
 
@@ -380,7 +380,7 @@ function get_favorite_enemy() {
 // Size: 0x68
 function function_c436ab98() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (!zm_utility::is_player_valid(self.favoriteenemy)) {
             self.favoriteenemy = get_favorite_enemy();
         }

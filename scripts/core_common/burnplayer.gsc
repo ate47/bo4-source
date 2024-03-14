@@ -81,7 +81,7 @@ function watchburndamage(interval, damage, attacker, weapon) {
         return;
     }
     self endon(#"disconnect", #"death", #"burnplayer_watchburntimer", #"burn_finished");
-    while (1) {
+    while (true) {
         wait(interval);
         self.doing_scripted_burn_damage = 1;
         self dodamage(damage, self.origin, attacker, undefined, undefined, "MOD_BURNED", 0, weapon);
@@ -95,7 +95,7 @@ function watchburndamage(interval, damage, attacker, weapon) {
 // Size: 0x74
 function watchforwater() {
     self endon(#"disconnect", #"death", #"burn_finished");
-    while (1) {
+    while (true) {
         if (self isplayerunderwater()) {
             self notify(#"burn_finished");
         }

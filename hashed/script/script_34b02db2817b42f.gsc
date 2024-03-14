@@ -64,7 +64,7 @@ function preload() {
 // Size: 0x40
 function private function_18a1849f(e_player) {
     if (!isdefined(level.var_74170866.e_player)) {
-        return 0;
+        return false;
     }
     return e_player === level.var_74170866.e_player;
 }
@@ -86,9 +86,9 @@ function private function_f6048ee(e_player) {
         } else {
             self sethintstring(#"hash_2054e8fdb6521566");
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
@@ -164,7 +164,7 @@ function private run_step_1() {
 // Size: 0x13c
 function function_4b4ede() {
     self endon(#"death", #"burn_cabinet");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify zm_hms_util::function_69320b44("zm_aat_plasmatic_burst")) {
@@ -173,7 +173,7 @@ function function_4b4ede() {
                 e_door setcandamage(0);
                 e_door notify(#"burn_cabinet");
             }
-            return;
+            break;
         }
     }
 }
@@ -184,7 +184,7 @@ function function_4b4ede() {
 // Size: 0x58
 function function_e08b0124(e_player) {
     self sethintstringforplayer(e_player, zm_utility::function_d6046228(#"hash_12346bdab086516e", #"hash_184ab2db21c5bc9a"));
-    return 1;
+    return true;
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
@@ -321,7 +321,7 @@ function private start_step_3() {
 // Size: 0x144
 function private function_473f437() {
     self endon(#"death", #"stop_think");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition("evt_rgun_frame_putback", (-759, -626, -7));
@@ -330,7 +330,7 @@ function private function_473f437() {
             level.var_74170866.var_fead3ae9.var_b9989e12 = hash(self.script_noteworthy);
             namespace_bd74bbd2::start(level.var_74170866.var_fead3ae9.var_b9989e12);
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            return;
+            break;
         }
     }
 }
@@ -389,9 +389,9 @@ function private function_7015dc35(e_player) {
         } else {
             self sethintstring(#"hash_2054e8fdb6521566");
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_90b0490e/namespace_90b0490e
@@ -400,14 +400,14 @@ function private function_7015dc35(e_player) {
 // Size: 0xa4
 function private function_2ac1278b() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (function_18a1849f(e_player)) {
             namespace_bd74bbd2::start(self.var_b9989e12);
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            return;
+            break;
         }
     }
 }

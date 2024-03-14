@@ -52,7 +52,7 @@ function private on_end(round_reset) {
 function private function_8bb2443b() {
     level endon(#"hash_7646638df88a3656");
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (self clientfield::get_to_player("nova_crawler_gas_cloud_postfx_clientfield")) {
             self zm_custom::function_db030433();
             self zm_score::player_reduce_points("take_specified", level.var_b31000be);

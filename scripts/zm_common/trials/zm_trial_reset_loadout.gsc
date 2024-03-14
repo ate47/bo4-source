@@ -200,7 +200,7 @@ function private function_59d771f7() {
 // Checksum 0x34009759, Offset: 0xb20
 // Size: 0x18
 function function_37fe3e07(e_player, var_957235ca) {
-    return 1;
+    return true;
 }
 
 // Namespace zm_trial_reset_loadout/zm_trial_reset_loadout
@@ -208,7 +208,7 @@ function function_37fe3e07(e_player, var_957235ca) {
 // Checksum 0x7e22ea71, Offset: 0xb40
 // Size: 0x16
 function function_3d4fea64(e_player, player_has_weapon) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_reset_loadout/zm_trial_reset_loadout
@@ -216,6 +216,6 @@ function function_3d4fea64(e_player, player_has_weapon) {
 // Checksum 0xe197192b, Offset: 0xb60
 // Size: 0xe
 function function_bf591b5a(e_player) {
-    return 0;
+    return false;
 }
 

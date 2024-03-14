@@ -285,7 +285,7 @@ function function_7cfef7a8() {
 // Size: 0xe8
 function function_4bcfb4d9() {
     self endon(#"wisp_path_completed", #"magic_door_power_up_grabbed");
-    while (1) {
+    while (true) {
         level flag::wait_till(#"hash_35762ecd1ee8f3c1");
         if (!level flag::get(#"hash_13cf89176254a394")) {
             level.door_powerup zm_powerups::powerup_delete();
@@ -305,7 +305,7 @@ function insanity_mode_step2_setup(var_5ea5c94d) {
         pixbeginevent(#"hash_7e38a18c8bc5484c");
         level thread namespace_7d8e6ec3::function_5fbede7a();
         var_7a5bbd26 = getent("insanity_mode_damage_trigger", "targetname");
-        while (1) {
+        while (true) {
             waitresult = undefined;
             waitresult = var_7a5bbd26 waittill(#"damage");
             if (waitresult.weapon == getweapon(#"bowie_knife_story_1")) {
@@ -475,7 +475,7 @@ function function_b693a570() {
     zm_audio::playstate("im_1");
     var_432c4ea2 = array::randomize(var_5f530783);
     array::add(var_5f530783, "im_1");
-    while (1) {
+    while (true) {
         zm_audio::playstate(var_432c4ea2[0]);
         arrayremoveindex(var_432c4ea2, 0);
         if (var_432c4ea2.size <= 0) {
@@ -639,7 +639,7 @@ function function_7cb78bcd() {
                     a_e_players = getplayers();
                     var_6620353d notify(#"trigger", {#is_forced:1, #activator:a_e_players[0]});
                 }
-                continue;
+                break;
             }
         }
     }

@@ -37,7 +37,7 @@ function __init__() {
 function activate_talisman() {
     self endon(#"disconnect");
     self.var_135a4148 = 0;
-    while (1) {
+    while (true) {
         self waittill(#"bled_out");
         self thread special_revive();
     }

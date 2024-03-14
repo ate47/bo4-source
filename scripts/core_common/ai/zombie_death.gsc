@@ -196,29 +196,29 @@ function do_gib() {
     switch (self.a.gib_ref) {
     case #"right_arm":
         gibserverutils::gibrightarm(self);
-        return;
+        break;
     case #"left_arm":
         gibserverutils::gibleftarm(self);
-        return;
+        break;
     case #"right_leg":
         gibserverutils::gibrightleg(self);
-        return;
+        break;
     case #"left_leg":
         gibserverutils::gibleftleg(self);
-        return;
+        break;
     case #"no_legs":
         gibserverutils::giblegs(self);
-        return;
+        break;
     case #"head":
         gibserverutils::gibhead(self);
-        return;
+        break;
     case #"guts":
-        return;
+        break;
     default:
         /#
             assertmsg("<unknown string>" + self.a.gib_ref + "<unknown string>");
         #/
-        return;
+        break;
     }
 }
 

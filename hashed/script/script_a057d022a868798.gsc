@@ -61,7 +61,7 @@ function private function_53627246() {
     level endon(#"hash_7646638df88a3656", #"end_game");
     zm_trial_util::function_2976fa44(self.var_ff22cb62);
     zm_trial_util::function_dace284(self.var_6a7521e3);
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"portal_used");
         if (!(isdefined(s_waitresult.s_portal.var_5b12474a) && s_waitresult.s_portal.var_5b12474a)) {
@@ -71,7 +71,7 @@ function private function_53627246() {
         }
         if (self.var_6a7521e3 == self.var_ff22cb62) {
             zm_trial_util::function_7d32b7d0(1);
-            return;
+            break;
         }
     }
 }

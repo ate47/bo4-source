@@ -232,7 +232,7 @@ function offhand_weapon_give_override(str_weapon) {
         self setweaponammoclip(self zm_loadout::get_player_tactical_grenade(), 0);
         self takeweapon(self zm_loadout::get_player_tactical_grenade());
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange/zm_orange
@@ -475,7 +475,7 @@ function function_486119ea() {
         level thread function_cf95fbb7();
         return;
     }
-    while (1) {
+    while (true) {
         var_75666412 = function_789961d3();
         if (isdefined(var_75666412)) {
             break;
@@ -484,7 +484,7 @@ function function_486119ea() {
     }
     level thread function_1f712bb1();
     level thread function_da0655c7();
-    while (1) {
+    while (true) {
         var_469863c6 = function_789961d3();
         if (var_469863c6 != var_75666412) {
             level function_2336a7c8();
@@ -590,7 +590,7 @@ function function_cf95fbb7() {
                 level.var_2a15c034 = array(level.var_2a15c034);
             }
             level.var_2a15c034[level.var_2a15c034.size] = e_effect;
-            continue;
+            break;
         case #"navigation_chest":
             e_effect = function_19a4e7cf(300, i);
             if (!isdefined(level.var_2a15c034)) {
@@ -599,7 +599,7 @@ function function_cf95fbb7() {
                 level.var_2a15c034 = array(level.var_2a15c034);
             }
             level.var_2a15c034[level.var_2a15c034.size] = e_effect;
-            continue;
+            break;
         case #"human_infusion_chest":
             e_effect = function_19a4e7cf(1100, i);
             if (!isdefined(level.var_2a15c034)) {
@@ -608,7 +608,7 @@ function function_cf95fbb7() {
                 level.var_2a15c034 = array(level.var_2a15c034);
             }
             level.var_2a15c034[level.var_2a15c034.size] = e_effect;
-            continue;
+            break;
         default:
             e_effect = function_19a4e7cf(0, i);
             if (!isdefined(level.var_2a15c034)) {
@@ -617,7 +617,7 @@ function function_cf95fbb7() {
                 level.var_2a15c034 = array(level.var_2a15c034);
             }
             level.var_2a15c034[level.var_2a15c034.size] = e_effect;
-            continue;
+            break;
         }
     }
 }
@@ -728,13 +728,13 @@ function function_4dacc177() {
     level waittill(#"start_zombie_round_logic");
     switch (zm_custom::function_901b751c(#"zmpowerstate")) {
     case 1:
-        return;
+        break;
     case 2:
         level flag::set("power_on1");
         level flag::set("power_on2");
         level flag::set("power_on3");
     case 0:
-        return;
+        break;
     default:
         break;
     }
@@ -750,7 +750,7 @@ function function_c8ce0a17(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_orange/zm_orange
@@ -763,6 +763,6 @@ function function_e5086229(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 

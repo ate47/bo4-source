@@ -209,7 +209,7 @@ function function_aa539d7b() {
 // Size: 0x2a0
 function function_5b8a557f() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -264,40 +264,40 @@ function private function_1bcb6813() {
 function function_9026cbcd(player) {
     self.hint_string = self.stub.hint_string;
     if (player zm_utility::is_drinking() || isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
-        return 0;
+        return false;
     }
     if (isdefined(self.stub.e_trap._trap_in_use) && self.stub.e_trap._trap_in_use) {
-        return 0;
+        return false;
     }
     if (isdefined(self.stub.e_trap.is_cooling) && self.stub.e_trap.is_cooling) {
         self sethintstring(#"zombie/trap_cooldown");
-        return 1;
+        return true;
     }
     if (isdefined(self.stub.e_trap.var_23aecef0) && self.stub.e_trap.var_23aecef0 && !zm_utility::is_standard()) {
         if (function_8b1a219a()) {
             self sethintstring(#"hash_6e8ef1b690e98e51", self.stub.e_trap.zombie_cost);
-            return 1;
+            return true;
         } else {
             self sethintstring(#"hash_23c1c09e94181fdb", self.stub.e_trap.zombie_cost);
-            return 1;
+            return true;
         }
     } else if (zm_utility::is_standard()) {
         if (function_8b1a219a()) {
             self sethintstring(#"hash_61d85c966dd9e83f");
-            return 1;
+            return true;
         } else {
             self sethintstring(#"hash_24a438482954901");
-            return 1;
+            return true;
         }
     } else if (level.var_940ee624 > 0) {
         str_prompt = zm_utility::function_d6046228(#"hash_888d5fd1e90d685", #"hash_f1db4a15f0e12bb");
         self sethintstring(str_prompt);
-        return 1;
+        return true;
     } else {
         self sethintstring(#"hash_5f05371ea87b812e");
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_a35b43eb/zm_mansion_traps_firegates
@@ -353,7 +353,7 @@ function function_2a5a929(str_location, var_b7eee573) {
 // Size: 0x178
 function function_b1bd4115() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -404,7 +404,7 @@ function function_7b170638(var_8163cc4, b_found) {
 function pickup_spin() {
     self endon(#"death");
     self playloopsound(#"hash_3b9597774dea00d6");
-    while (1) {
+    while (true) {
         self rotateyaw(180, 1);
         wait(1);
     }
@@ -677,19 +677,19 @@ function private function_e714e3a8(str_state = "off") {
         self hidepart("light_green");
         self hidepart("light_red");
         self showpart("light_off");
-        return;
+        break;
     case #"green":
         self clientfield::set("" + #"trap_light", 1);
         self hidepart("light_off");
         self hidepart("light_red");
         self showpart("light_green");
-        return;
+        break;
     case #"red":
         self clientfield::set("" + #"trap_light", 2);
         self hidepart("light_green");
         self hidepart("light_off");
         self showpart("light_red");
-        return;
+        break;
     }
 }
 

@@ -137,7 +137,7 @@ function brutus_spawning_logic() {
     }
     level thread enable_brutus_rounds();
     level thread function_6340fe2();
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"spawn_brutus");
         n_spawn = s_result.n_spawn;
@@ -398,7 +398,7 @@ function brutus_round_tracker() {
     level.var_33be9958 = level.round_number + randomintrange(level.var_deee7afe, level.var_66ff42da);
     old_spawn_func = level.round_spawn_func;
     old_wait_func = level.round_wait_func;
-    while (1) {
+    while (true) {
         level waittill(#"between_round_over");
         players = getplayers();
         if (isdefined(level.next_dog_round) && level.next_dog_round == level.var_33be9958) {
@@ -447,10 +447,10 @@ function private function_7265bed3() {
 // Checksum 0xdd77d90b, Offset: 0x19f8
 // Size: 0x36
 function brutus_round_spawn_failsafe_respawn() {
-    while (1) {
+    while (true) {
         wait(2);
         if (attempt_brutus_spawn(1)) {
-            return;
+            break;
         }
     }
 }
@@ -465,10 +465,10 @@ function attempt_brutus_spawn(var_d8206b1d, str_zone_name, var_dde9ff11 = 0, var
             iprintln("<unknown string>");
         #/
         level thread function_5e4d2f31();
-        return 0;
+        return false;
     }
     level notify(#"spawn_brutus", {#var_68ffecfb:var_68ffecfb, #var_dde9ff11:var_dde9ff11, #str_zone_name:str_zone_name, #n_spawn:var_d8206b1d});
-    return 1;
+    return true;
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
@@ -659,7 +659,7 @@ function brutus_cleanup_at_end_of_grief_round() {
 // Checksum 0xfc080f85, Offset: 0x28f8
 // Size: 0x196
 function wait_on_box_alarm() {
-    while (1) {
+    while (true) {
         self.zbarrier waittill(#"randomization_done");
         level.var_a33d6e46++;
         if (level.var_4d04bf1) {
@@ -703,9 +703,9 @@ function check_perk_machine_valid(player) {
             self.var_58a5f973 delete();
             self zm_perks::reset_vending_hint_string();
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
@@ -720,7 +720,7 @@ function check_craftable_table_valid(player) {
             self.var_9c6a6ebb = undefined;
             self.var_58a5f973 delete();
         }
-        return 0;
+        return false;
     } else if (isdefined(self.stub) && isdefined(self.stub.is_locked) && self.stub.is_locked) {
         if (player zm_score::can_player_purchase(self.stub.var_9c6a6ebb)) {
             player zm_score::minus_to_player_score(self.stub.var_9c6a6ebb);
@@ -729,9 +729,9 @@ function check_craftable_table_valid(player) {
             self.stub.var_58a5f973 delete();
             self sethintstring(self.stub.hint_string);
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
@@ -741,7 +741,7 @@ function check_craftable_table_valid(player) {
 function brutus_check_zone() {
     self endon(#"death", #"brutus_cleanup");
     self.var_8d6b1f59 = 0;
-    while (1) {
+    while (true) {
         self.var_8d6b1f59 = 0;
         foreach (zone in level.zones) {
             if (!isdefined(zone.volumes) || zone.volumes.size == 0) {
@@ -766,7 +766,7 @@ function brutus_check_zone() {
 function brutus_watch_enemy() {
     self endon(#"death", #"brutus_cleanup");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         if (!zm_utility::is_player_valid(self.favoriteenemy)) {
             var_1cc3df76 = util::get_active_players();
             if (var_1cc3df76.size) {
@@ -828,10 +828,10 @@ function private function_61263ebc() {
     if (isdefined(trace[#"entity"])) {
         entity = trace[#"entity"];
         if (entity ismovingplatform()) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombie_brutus_util/ai_brutus_util
@@ -840,13 +840,13 @@ function private function_61263ebc() {
 // Size: 0xb0
 function function_b02aec83() {
     self endon(#"death", #"brutus_cleanup", #"ignore_cleanup");
-    while (1) {
+    while (true) {
         if (isdefined(self.favoriteenemy)) {
             break;
         }
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         if (!isdefined(self.favoriteenemy) && !self function_61263ebc()) {
             level thread function_ba497d2d(self);
             return;
@@ -925,7 +925,7 @@ function function_2e0d129b(cmd) {
             if (isdefined(level.var_33be9958)) {
                 zm_devgui::zombie_devgui_goto_round(level.var_33be9958);
             }
-            return;
+            break;
         }
     #/
 }

@@ -101,7 +101,7 @@ function function_b9e15919(b_crouch = 1) {
 // Size: 0x344
 function private pablo_intro() {
     var_de23a374 = array("lighthouse_level_1", "lighthouse_level_2", "lighthouse_level_3");
-    while (1) {
+    while (true) {
         if (zm_hms_util::any_player_in_zone(var_de23a374) && level.pablo_npc zm_audio::can_speak()) {
             level function_e44c7c0c(#"hash_2a582565ea3add7e");
             a_players = [];
@@ -117,7 +117,7 @@ function private pablo_intro() {
         wait(1);
     }
     level flag::set(#"pablo_intro");
-    while (1) {
+    while (true) {
         if (zm_hms_util::any_player_in_zone("lighthouse_level_4") && level.pablo_npc zm_audio::can_speak()) {
             str_alias = #"hash_61f15b67b89a32a7";
             if (level flag::get(#"hash_3310bb35ce396e49")) {
@@ -150,7 +150,7 @@ function private function_57c115a8() {
     i = 0;
     var_8be6334f = array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
     var_de23a374 = array("lighthouse_level_1");
-    while (1) {
+    while (true) {
         if (self.isspeaking == 0 && self.var_f75b1f16.size > 0 && zm_hms_util::any_player_in_zone(var_de23a374) && !zm_hms_util::any_player_in_zone("lighthouse_level_4")) {
             str_nag = self function_e81ee0e3();
             if (str_nag === #"hash_75f4c63702dc54e") {
@@ -309,7 +309,7 @@ function function_d9161909(index) {
 // Checksum 0x5fdaee11, Offset: 0x1bb8
 // Size: 0xb6
 function private function_12d23d57() {
-    while (1) {
+    while (true) {
         function_a61b8406();
         wait(1);
         for (i = 0; i < 12; i++) {
@@ -390,7 +390,7 @@ function private function_9f77ef2(s_info) {
 function private function_1dc9b29a() {
     level endon(#"sendoff_started");
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (self.var_f75b1f16.size > 0 && zm_hms_util::any_player_in_zone("lighthouse_level_4")) {
             self.var_df3d62aa = self.var_f75b1f16[getfirstarraykey(self.var_f75b1f16)];
             s_info = self.var_cb3ed98f[self.var_df3d62aa];

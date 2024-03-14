@@ -34,7 +34,7 @@ function __init__() {
 // Size: 0xc4
 function updatedvars() {
     /#
-        while (1) {
+        while (true) {
             level.dirt_enable_explosion = getdvarint(#"scr_dirt_enable_explosion", level.dirt_enable_explosion);
             level.dirt_enable_slide = getdvarint(#"scr_dirt_enable_slide", level.dirt_enable_slide);
             level.dirt_enable_fall_damage = getdvarint(#"scr_dirt_enable_fall_damage", level.dirt_enable_fall_damage);
@@ -75,7 +75,7 @@ function watchforplayerfalldamage(localclientnum) {
     seed = 0;
     xdir = 0;
     ydir = 270;
-    while (1) {
+    while (true) {
         self waittill(#"fall_damage");
         self thread dothedirty(localclientnum, xdir, ydir, 1, 1000, 500);
     }
@@ -91,7 +91,7 @@ function watchforplayerslide(localclientnum) {
     self.wasplayersliding = 0;
     xdir = 0;
     ydir = 6000;
-    while (1) {
+    while (true) {
         self.isplayersliding = self isplayersliding();
         if (self.isplayersliding) {
             if (!self.wasplayersliding) {
@@ -146,7 +146,7 @@ function do_the_dirty_lerp_helper(currenttime, elapsedtime, localclientnum, dirt
 // Size: 0x3a0
 function watchforexplosion(localclientnum) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"explode");
         mod = waitresult.mod;

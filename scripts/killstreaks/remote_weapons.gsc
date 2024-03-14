@@ -207,7 +207,7 @@ function watchremotetriggerdisable() {
     weapon endon(#"remote_weapon_end", #"remote_weapon_shutdown");
     weapon.usetrigger endon(#"death");
     weapon.remoteowner endon(#"disconnect");
-    while (1) {
+    while (true) {
         weapon.usetrigger triggerenable(!weapon.remoteowner iswallrunning());
         wait(0.1);
     }
@@ -235,7 +235,7 @@ function watchremotetriggeruse() {
     if (isbot(weapon.remoteowner)) {
         return;
     }
-    while (1) {
+    while (true) {
         res = undefined;
         res = weapon.usetrigger waittill(#"trigger", #"death");
         if (res._notify == "death") {
@@ -354,7 +354,7 @@ function watchremotecontroldeactivate() {
     while (weapon.remoteowner usebuttonpressed()) {
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         timeused = 0;
         while (weapon.remoteowner usebuttonpressed()) {
             timeused = timeused + 0.05;

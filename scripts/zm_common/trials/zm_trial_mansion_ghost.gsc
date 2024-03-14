@@ -76,7 +76,7 @@ function private function_889abd74() {
     level.e_ghost endon(#"death");
     var_da67715 = 20;
     var_9faecc20 = 0;
-    while (1) {
+    while (true) {
         n_distance = distance(self.origin, level.e_ghost.origin);
         if (!var_9faecc20 && (n_distance <= 200 || var_da67715 <= 0)) {
             var_9faecc20 = 1;
@@ -110,7 +110,7 @@ function private function_eb301e1b() {
     foreach (player in getplayers()) {
         player thread function_889abd74();
     }
-    while (1) {
+    while (true) {
         if (isdefined(level.e_ghost.e_mover)) {
             level.e_ghost.e_mover delete();
         }

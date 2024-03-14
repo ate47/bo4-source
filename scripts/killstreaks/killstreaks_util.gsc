@@ -57,7 +57,7 @@ function switch_to_last_non_killstreak_weapon(immediate, awayfromball, gameended
 // Size: 0x34
 function hasuav(team_or_entnum) {
     if (!isdefined(level.activeuavs)) {
-        return 1;
+        return true;
     }
     return level.activeuavs[team_or_entnum] > 0;
 }
@@ -68,7 +68,7 @@ function hasuav(team_or_entnum) {
 // Size: 0x34
 function hassatellite(team_or_entnum) {
     if (!isdefined(level.activesatellites)) {
-        return 1;
+        return true;
     }
     return level.activesatellites[team_or_entnum] > 0;
 }
@@ -79,9 +79,9 @@ function hassatellite(team_or_entnum) {
 // Size: 0x3c
 function function_f479a2ff(weapon) {
     if (isdefined(level.var_3ff1b984) && isdefined(level.var_3ff1b984[weapon])) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace killstreaks/killstreaks_util
@@ -102,12 +102,12 @@ function function_e3a30c69(weapon) {
 // Size: 0x60
 function is_killstreak_weapon(weapon) {
     if (weapon == level.weaponnone || weapon.notkillstreak) {
-        return 0;
+        return false;
     }
     if (weapon.isspecificuse || is_weapon_associated_with_killstreak(weapon)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace killstreaks/killstreaks_util

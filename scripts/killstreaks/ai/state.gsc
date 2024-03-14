@@ -121,7 +121,7 @@ function function_3a57bb58() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         self endon(#"death");
-        while (1) {
+        while (true) {
             self function_c1d2ede8();
             waitframe(1);
         }

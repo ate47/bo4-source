@@ -138,7 +138,7 @@ function function_52ac9652(event, func, obj) {
         if (func_group[0] == func) {
             if (func_group[1] === obj) {
                 arrayremoveindex(self._callbacks[event], index, 0);
-                return;
+                break;
             }
         }
     }
@@ -159,7 +159,7 @@ function remove_callback(event, func, obj) {
         if (func_group[0] == func) {
             if (func_group[1] === obj) {
                 arrayremoveindex(level._callbacks[event], index, 0);
-                return;
+                break;
             }
         }
     }
@@ -650,7 +650,7 @@ function event_handler[sound_notify] codecallback_soundnotify(eventstruct) {
         if (getgametypesetting(#"silentplant") == 0) {
             self playsound(eventstruct.localclientnum, #"fly_bomb_buttons_npc");
         }
-        return;
+        break;
     }
 }
 

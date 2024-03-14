@@ -275,7 +275,7 @@ function function_7722c6f0(var_404e4288, var_8dd554ee) {
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_escape/zm_escape
@@ -287,7 +287,7 @@ function function_e5086229(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_escape/zm_escape
@@ -341,7 +341,7 @@ function function_2141ca97() {
 function private function_83c0bb0d() {
     level endon(#"power_on1");
     var_41ac1ae7 = 0;
-    while (1) {
+    while (true) {
         n_players = zm_zonemgr::get_players_in_zone("zone_studio");
         if (n_players > 0) {
             if (!var_41ac1ae7) {
@@ -392,7 +392,7 @@ function offhand_weapon_give_override(str_weapon) {
         self setweaponammoclip(self zm_loadout::get_player_tactical_grenade(), 0);
         self takeweapon(self zm_loadout::get_player_tactical_grenade());
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_escape/zm_escape
@@ -401,7 +401,7 @@ function offhand_weapon_give_override(str_weapon) {
 // Size: 0x1f8
 function function_7e67379d() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (isdefined(str_zone)) {
             switch (str_zone) {
@@ -583,7 +583,7 @@ function function_29ec1ad7() {
 // Size: 0x110
 function function_8e0b371() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (isalive(self)) {
             str_location = self function_ab7f70b9();
             if (isdefined(level.var_bc410725) && level.var_bc410725 && isdefined(level.var_dcc985c4)) {
@@ -938,7 +938,7 @@ function function_1665f510() {
     for (i = 0; i < level.chests.size; i++) {
         if (level.chests[i].script_noteworthy != "new_industries_chest" && level.chests[i].script_noteworthy != "powerhouse_chest") {
             level.chest_index = i;
-            return;
+            break;
         }
     }
 }
@@ -999,7 +999,7 @@ function function_3511e2af(w_weapon, e_player) {
 function function_e6797b71() {
     level endon(#"end_game");
     level flag::wait_till("start_zombie_round_logic");
-    while (1) {
+    while (true) {
         a_e_players = getplayers();
         foreach (e_player in level.players) {
             if (isalive(e_player)) {
@@ -1094,10 +1094,10 @@ function function_91d91b76(cmd) {
             return 1;
         case #"hash_11b05ce1cac4119e":
             level.var_a929ea7f = 1;
-            return;
+            break;
         case #"hash_1662437f1458600a":
             level.var_6764a35e = 1;
-            return;
+            break;
         }
     #/
 }

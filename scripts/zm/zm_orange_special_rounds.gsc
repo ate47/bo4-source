@@ -104,9 +104,9 @@ function function_c7e59327() {
         if (!zm_utility::is_trials()) {
             level.zombie_total--;
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
@@ -116,9 +116,9 @@ function function_c7e59327() {
 function function_82e6d4e0() {
     ai = zombie_dog_util::function_62db7b1c();
     if (isdefined(ai)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_special_rounds/zm_orange_special_rounds
@@ -127,7 +127,7 @@ function function_82e6d4e0() {
 // Size: 0x2a8
 function function_a2f2a9a3() {
     if (self.var_9fde8624 !== #"zombie_electric") {
-        return 0;
+        return false;
     }
     a_s_spawn_locs = level.zm_loc_types[#"zombie_location"];
     var_91562d8c = [];
@@ -157,7 +157,7 @@ function function_a2f2a9a3() {
     } else if (var_f2a95155.size) {
         var_d7eff26a = zm_spawner::function_20e7d186(var_f2a95155);
     } else {
-        return 0;
+        return false;
     }
     if (isdefined(self) && isentity(self)) {
         self thread clientfield::set("zm_ai/zombie_electric_fx_clientfield", 0);
@@ -166,6 +166,6 @@ function function_a2f2a9a3() {
             self thread clientfield::set("zm_ai/zombie_electric_fx_clientfield", 1);
         }
     }
-    return 1;
+    return true;
 }
 

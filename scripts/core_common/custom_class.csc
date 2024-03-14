@@ -68,7 +68,7 @@ function custom_class_init(localclientnum) {
 // Size: 0xf2
 function custom_class_start_threads(localclientnum) {
     level endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (getdvarint(#"ui_enablecacscene", 0) == 0) {
             level thread custom_class_update(localclientnum);
             level thread custom_class_attachment_select_focus(localclientnum);
@@ -88,7 +88,7 @@ function handle_cac_customization(localclientnum) {
     self.lastxcam = [];
     self.lastsubxcam = [];
     self.lastnotetrack = [];
-    while (1) {
+    while (true) {
         level thread handle_cac_customization_focus(localclientnum);
         level thread handle_cac_customization_closed(localclientnum);
         level waittill("cam_customization_closed" + localclientnum);
@@ -170,7 +170,7 @@ function is_optic(attachmentname) {
         group = tablelookupcolumnforrow(csv_filename, row, 2);
         return (group == "optic");
     }
-    return 0;
+    return false;
 }
 
 // Namespace customclass/custom_class
@@ -544,7 +544,7 @@ function wait_preload_weapon(localclientnum) {
 function preload_weapon_watcher(localclientnum) {
     level endon("preload_weapon_changing_" + localclientnum);
     level endon("preload_weapon_complete_" + localclientnum);
-    while (1) {
+    while (true) {
         if (level.preload_weapon_model[localclientnum] isstreamed()) {
             level.preload_weapon_complete[localclientnum] = 1;
             level notify("preload_weapon_complete_" + localclientnum);
@@ -727,7 +727,7 @@ function get_attachments_intersection(oldweapon, var_314432b2, var_6714c3a0) {
 function handle_cac_customization_focus(localclientnum) {
     level endon(#"disconnect");
     level endon("cam_customization_closed" + localclientnum);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill("cam_customization_focus" + localclientnum);
         base_weapon_slot = waitresult.base_weapon_slot;

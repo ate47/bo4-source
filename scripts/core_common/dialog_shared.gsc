@@ -222,9 +222,9 @@ function on_player_spawned() {
 function dialog_chance(chancekey) {
     dialogchance = mpdialog_value(chancekey);
     if (!isdefined(dialogchance) || dialogchance <= 0) {
-        return 0;
+        return false;
     } else if (dialogchance >= 100) {
-        return 1;
+        return true;
     }
     return randomint(100) < dialogchance;
 }
@@ -262,7 +262,7 @@ function water_vox() {
         #/
         return;
     }
-    while (1) {
+    while (true) {
         wait(interval);
         if (self isplayerunderwater()) {
             if (!self.voxunderwatertime && !self.voxemergebreath) {
@@ -360,7 +360,7 @@ function on_player_near_explodable(object, type) {
 function enemy_threat() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_ads");
         if (self hasperk(#"specialty_quieter")) {
             continue;
@@ -563,7 +563,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
         #/
         return;
     }
-    while (1) {
+    while (true) {
         wait(waittime);
         if (waittime > 0.2) {
             waittime = waittime / 2;
@@ -635,10 +635,10 @@ function heavy_weapon_success_reaction() {
         }
         distsq = distancesquared(self.origin, player.origin);
         if (distsq > allyradiussq) {
-            return;
+            break;
         }
         player play_dialog("heroWeaponSuccessReaction", 1);
-        return;
+        break;
     }
 }
 
@@ -1280,12 +1280,12 @@ function get_friendly_players() {
 // Size: 0x100
 function can_play_dialog(teamonly) {
     if (!isplayer(self) || !isalive(self) || self.playingdialog === 1 || self isplayerunderwater() || self isremotecontrolling() || self isinvehicle() || self isweaponviewonlylinked()) {
-        return 0;
+        return false;
     }
     if (isdefined(teamonly) && !teamonly && self hasperk(#"specialty_quieter")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace dialog_shared/dialog_shared
@@ -1403,7 +1403,7 @@ function devgui_think() {
         setdvar(#"testalias_player", "<unknown string>");
         setdvar(#"testalias_taacom", "<unknown string>");
         setdvar(#"testalias_commander", "<unknown string>");
-        while (1) {
+        while (true) {
             wait(1);
             player = util::gethostplayer();
             if (!isdefined(player)) {
@@ -1567,7 +1567,7 @@ function play_conv_self_other() {
         foreach (player in players) {
             if (player != self && isalive(player)) {
                 player play_test_dialog("<unknown string>" + self response_key() + num);
-                return;
+                break;
             }
         }
     #/
@@ -1611,7 +1611,7 @@ function play_conv_other_other() {
         foreach (player in players) {
             if (player != self && player !== firstplayer && isalive(player)) {
                 player play_test_dialog("<unknown string>" + firstplayer response_key() + num);
-                return;
+                break;
             }
         }
     #/

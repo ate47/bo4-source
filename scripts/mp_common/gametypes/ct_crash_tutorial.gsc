@@ -308,7 +308,7 @@ function function_6dd7691f() {
     player thread ct_utils::function_61c3d59c(#"hash_4949854f8fd74d4c", undefined);
     level.var_e72728b8 = array(#"eq_localheal");
     level thread ct_vo::function_14b08e49(array(#"hash_563a706b0b3c4e8c"), "stop_resupply_nag");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = player waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
@@ -491,7 +491,7 @@ function function_c43189cd() {
 // Size: 0x80
 function function_9b33ff60() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         level waittill(#"marker_ready");
         level flag::set("marker_on");
         level flag::wait_till_clear("marker_on");
@@ -528,7 +528,7 @@ function function_8ab81320() {
         level flag::clear("mantis_failed");
         level flag::clear("marker_on");
         level flag::clear("mantis_enemies");
-        while (1) {
+        while (true) {
             level.mantis = getent("talon", "targetname");
             if (isdefined(level.mantis)) {
                 break;
@@ -772,7 +772,7 @@ function function_9b2c973f() {
     }
     var_9192acd9 = int(n_start_health * 0.5);
     var_8fe4b14 = int(var_c378327e * 0.5);
-    while (1) {
+    while (true) {
         if (isalive(self)) {
             a_bots = self ct_bots::function_71ec2b36();
             foreach (bot in a_bots) {
@@ -839,7 +839,7 @@ function function_57da4e0f() {
     wait(1);
     a_bots = level.players[0] ct_bots::function_dde6edbd();
     n_enemy_count = a_bots.size;
-    while (1) {
+    while (true) {
         a_bots = level.players[0] ct_bots::function_dde6edbd();
         if (a_bots.size <= n_enemy_count - 2) {
             break;
@@ -851,7 +851,7 @@ function function_57da4e0f() {
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
     a_bots = level.players[0] ct_bots::function_dde6edbd();
     n_enemy_count = a_bots.size;
-    while (1) {
+    while (true) {
         a_bots = level.players[0] ct_bots::function_dde6edbd();
         if (a_bots.size <= n_enemy_count - 2) {
             break;
@@ -911,7 +911,7 @@ function function_2ba574d8() {
         level flag::set("scorestreak_done");
     }
     wait(0.5);
-    while (1) {
+    while (true) {
         a_bots = level.players[0] ct_bots::function_dde6edbd();
         if (isdefined(a_bots) && a_bots.size) {
             level.players[0] ct_utils::function_49e0c5bc(0);
@@ -1357,7 +1357,7 @@ function function_c1069664() {
     var_a12cbae4 = int(n_start_health * 0.7);
     var_154343e2 = int(n_start_health * 0.4);
     player thread function_c3ff6f27();
-    while (1) {
+    while (true) {
         foreach (bot in a_bots) {
             n_current_health = n_current_health + bot.health;
         }
@@ -1403,7 +1403,7 @@ function function_c3ff6f27() {
     self endon(#"death");
     level flag::wait_till("squad_health_70");
     wait(10);
-    while (1) {
+    while (true) {
         a_bots = self ct_bots::function_71ec2b36();
         foreach (bot in a_bots) {
             if (bot.health > 60) {
@@ -1454,7 +1454,7 @@ function function_f9803d74() {
 // Size: 0x7c
 function function_9ece6b44() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (level.var_3cdb14a8 < 1) {
             break;
         }
@@ -1470,7 +1470,7 @@ function function_9ece6b44() {
 // Size: 0x3b4
 function function_779e90b6() {
     level endon(#"combattraining_logic_finished", #"supply_done");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
@@ -1586,7 +1586,7 @@ function function_9d4e5572() {
 function function_22014724() {
     self endon(#"death");
     level endon(#"flash_bang", #"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         if (level.var_ad7c0539 === 4) {
             self val::reset("protect", "takedamage");
             return;
@@ -1756,7 +1756,7 @@ function ammo_watch(str_event) {
     self endon(#"death", #"ammo_watch");
     level flag::wait_till("supply_done");
     wait(1);
-    while (1) {
+    while (true) {
         var_75d65e7e = self getammocount(self.currentweapon);
         self.var_1e0b475b = 0;
         s_result = undefined;
@@ -1867,7 +1867,7 @@ function function_a929047f() {
 function function_885de242() {
     level notify(#"ammo_watch");
     level endon(#"combattraining_logic_finished", #"ammo_watch");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
@@ -1974,7 +1974,7 @@ function function_bf868278() {
 function function_6140f62e() {
     level endon(#"killstreak_ready");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
@@ -1990,7 +1990,7 @@ function function_6140f62e() {
 function function_c59990b1() {
     level endon(#"killstreak_ready");
     self endon(#"death");
-    while (1) {
+    while (true) {
         level waittill(#"hash_4acf6588b40fe941");
         function_1089714c("heal");
     }
@@ -2031,7 +2031,7 @@ function function_7aea5503() {
 // Size: 0xdc
 function function_fa5d9e36() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         var_3ba4bf7d = self getweaponslistprimaries();
         foreach (w_primary in var_3ba4bf7d) {
             if (self getammocount(w_primary) < 10) {

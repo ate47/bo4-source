@@ -23,7 +23,7 @@ function network_choke_init(id, max) {
 // Checksum 0xa7c6d8d6, Offset: 0x108
 // Size: 0x4e
 function network_choke_thread(id) {
-    while (1) {
+    while (true) {
         util::wait_network_frame();
         util::wait_network_frame();
         level.zombie_network_choke_ids_count[id] = 0;
@@ -68,9 +68,9 @@ function network_choke_action(id, choke_action, arg1, arg2, arg3) {
 // Size: 0x1c
 function network_entity_valid(entity) {
     if (!isdefined(entity)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_net/zm_net

@@ -89,7 +89,7 @@ function function_40dfe103() {
 // Checksum 0xfa96bcbc, Offset: 0x3e8
 // Size: 0x56
 function function_829b14de() {
-    while (1) {
+    while (true) {
         self movez(100, 5);
         wait(5);
         self movez(-100, 5);

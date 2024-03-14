@@ -41,17 +41,17 @@ function function_2eb2c17c(origin, item) {
             var_acdfe076 = isdefined(var_b0fbfe59[#"dynent"]) && distance2dsquared(var_b0fbfe59[#"dynent"].origin, item.origin) <= 12 * 12;
             var_45127074 = isdefined(var_b0fbfe59[#"entity"]) && distance2dsquared(var_b0fbfe59[#"entity"].origin, item.origin) <= 12 * 12;
             if (!var_acdfe076 && !var_45127074) {
-                return 0;
+                return false;
             }
         } else {
             var_5408bd2a = physicstraceex(origin, offsetposition, (0, 0, 0), (0, 0, 0), self, 1);
             if (var_5408bd2a[#"fraction"] >= 1) {
-                return 1;
+                return true;
             }
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_world_util/item_world_util
@@ -350,19 +350,19 @@ function function_c62ad9a7(vehicle) {
 // Size: 0xee
 function can_pick_up(item, servertime = undefined) {
     if (!isdefined(item) || !isdefined(item.var_a6762160)) {
-        return 0;
+        return false;
     }
     if (isdefined(servertime)) {
         if (item.hidetime > 0 && item.hidetime <= servertime) {
-            return 0;
+            return false;
         }
     } else if (item.hidetime > 0 && item.hidetime != -1) {
-        return 0;
+        return false;
     }
     if (!isstruct(item) && item getitemindex() == 32767) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_world_util/item_world_util
@@ -476,12 +476,12 @@ function function_da09de95(id) {
 function function_7363384a(name) {
     bundle = getscriptbundle(name);
     if (!isdefined(bundle)) {
-        return 0;
+        return false;
     }
     if (bundle.type != #"itemspawnentry") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace item_world_util/item_world_util
@@ -498,7 +498,7 @@ function function_db35e94f(id) {
 // Size: 0x6e
 function function_41f06d9d(var_a6762160) {
     if (!isdefined(var_a6762160) || !isdefined(var_a6762160.name)) {
-        return 0;
+        return false;
     }
     return var_a6762160.name == #"resource_item_paint" || var_a6762160.name == #"resource_item_paint_stack_10";
 }

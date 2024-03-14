@@ -173,7 +173,7 @@ function function_aafe4c74() {
 // Size: 0xde
 function debug_print() {
     /#
-        while (1) {
+        while (true) {
             iprintln("shamrock_enemy_collect" + level.var_8df7db3b);
             iprintln("<unknown string>" + level.var_8b5ef67d);
             iprintln("<unknown string>" + level.var_bb42ed2);
@@ -231,7 +231,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
 function function_8695993b() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self flagsys::wait_till("camo_suit_on");
         self clientfield::set("taco_carry", 0);
         self flagsys::wait_till_clear("camo_suit_on");
@@ -348,9 +348,9 @@ function function_8cb72ba4() {
     level endon(#"game_ended");
     self endon(#"reset");
     self.var_2581d0d endon(#"death", #"stationary");
-    while (1) {
+    while (true) {
         if (!isdefined(self.var_2581d0d)) {
-            return;
+            break;
         }
         if (self.var_2581d0d oob::istouchinganyoobtrigger() || self.var_2581d0d gameobjects::is_touching_any_trigger_key_value("trigger_hurt_new", "classname", self.trigger.origin[2], self.trigger.origin[2] + 32)) {
             self thread registermp_multi_kill_medals_interface();
@@ -519,7 +519,7 @@ function function_fd08eb25() {
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
     var_696c0ca5 = -1;
-    while (1) {
+    while (true) {
         if (level.var_2576eaeb > 0) {
             foreach (team, _ in level.teams) {
                 setmatchflag("bomb_timer_a", 1);
@@ -650,7 +650,7 @@ function hidetimerdisplayongameend() {
 // Size: 0x2dc
 function function_c857e45f() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         time = gettime();
         foreach (player in level.players) {
             if (isdefined(player.var_916cc864) && isdefined(player.var_91be2350) && player.var_91be2350 && time - player.var_916cc864 > int((float(function_60d95f53()) / 1000 + 0.25 + 0.1) * 1000)) {
@@ -728,10 +728,10 @@ function function_83e87bd5(player) {
 function function_1237ad98(player) {
     if (player.carriedtacos <= 0) {
         objective_clearplayerusing(self.objectiveid, player);
-        return 0;
+        return false;
     }
     if (!player.var_916cc864) {
-        return 1;
+        return true;
     }
     return player.var_916cc864 + int(0.25 * 1000) < gettime();
 }

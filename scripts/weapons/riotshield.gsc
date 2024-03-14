@@ -90,7 +90,7 @@ function trackriotshield() {
     self.hasriotshield = self hasriotshield();
     self.hasriotshieldequipped = currentweapon.isriotshield;
     self.lastnonshieldweapon = level.weaponnone;
-    while (1) {
+    while (true) {
         self thread watchriotshieldpickup();
         currentweapon = self getcurrentweapon();
         currentweapon = self getcurrentweapon();
@@ -126,9 +126,9 @@ function trackriotshield() {
 // Size: 0x2e
 function isvalidnonshieldweapon(weapon) {
     if (!weapons::may_drop(weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace riotshield/riotshield
@@ -313,11 +313,11 @@ function riotshielddistancetest(origin) {
                 /#
                     println("<unknown string>");
                 #/
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace riotshield/riotshield
@@ -354,7 +354,7 @@ function watchdeployedriotshielddamage() {
     self endon(#"death");
     damagemax = getdvarint(#"riotshield_deployed_health", 0);
     self.damagetaken = 0;
-    while (1) {
+    while (true) {
         self.maxhealth = 100000;
         self.health = self.maxhealth;
         waitresult = undefined;
@@ -390,7 +390,7 @@ function watchdeployedriotshielddamage() {
         self.damagetaken = self.damagetaken + damage;
         if (self.damagetaken >= damagemax) {
             self thread damagethendestroyriotshield(attacker, weapon);
-            return;
+            break;
         }
     }
 }
@@ -487,7 +487,7 @@ function event_handler[grenade_fire] function_4f975761(eventstruct) {
     case #"proximity_grenade":
     case #"sticky_grenade":
         grenade thread check_stuck_to_shield();
-        return;
+        break;
     }
 }
 

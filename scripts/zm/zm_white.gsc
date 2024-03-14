@@ -273,12 +273,12 @@ function init_pap() {
 // Size: 0x7e
 function function_98b78151() {
     if (zm_custom::function_901b751c(#"zmpapenabled") == 0) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_ef785c4c) && level.var_ef785c4c || zm_custom::function_901b751c(#"zmpapenabled") == 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white/zm_white
@@ -329,7 +329,7 @@ function function_ba054e47() {
     var_c72d9a7c = getent("pap_door_blocker", "targetname");
     level flag::wait_till(#"power_on1");
     exploder::exploder("fxexp_toxic_gas_pap_tube");
-    while (1) {
+    while (true) {
         level flag::wait_till("pap_power_ready");
         exploder::stop_exploder("fxexp_toxic_gas_pap_tube");
         e_pap_door playsound(#"hash_1ca46207f2ed8876");
@@ -371,9 +371,9 @@ function function_b6f53cd2() {
     var_8b613a4f = level.var_bcaf8591 >= 4;
     var_58df03c9 = level flag::get(#"hash_1478cafcd626c361") && !level flag::get(#"circuit_step_complete");
     if (var_8b613a4f && !var_58df03c9) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white/zm_white
@@ -403,7 +403,7 @@ function function_d5d134ac() {
     for (i = 0; i < level.chests.size; i++) {
         if (level.chests[i].script_noteworthy == "cul_de_sac_chest" || level.chests[i].script_noteworthy == "green_backyard_chest" || level.chests[i].script_noteworthy == "yellow_backyard_chest") {
             level.chest_index = i;
-            return;
+            break;
         }
     }
 }
@@ -493,7 +493,7 @@ function offhand_weapon_give_override(str_weapon) {
         self setweaponammoclip(self zm_loadout::get_player_tactical_grenade(), 0);
         self takeweapon(self zm_loadout::get_player_tactical_grenade());
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white/zm_white
@@ -593,7 +593,7 @@ function function_486119ea() {
         level thread function_cf95fbb7();
         return;
     }
-    while (1) {
+    while (true) {
         var_75666412 = function_789961d3();
         if (isdefined(var_75666412)) {
             level clientfield::set("portal_map_magicbox_lights_init", 1);
@@ -606,7 +606,7 @@ function function_486119ea() {
     level thread function_1f712bb1();
     level thread function_da0655c7();
     level thread function_e5c88b7b();
-    while (1) {
+    while (true) {
         var_469863c6 = function_789961d3();
         if (var_469863c6 != var_75666412) {
             clientfield::set("portal_map_" + var_469863c6, 1);
@@ -637,9 +637,9 @@ function function_789961d3() {
 // Size: 0x50
 function custom_magic_box_selection_logic(w_weapon, e_player) {
     if (zm_white_util::is_ray_gun(w_weapon) && e_player zm_white_util::has_ray_gun()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white/zm_white
@@ -649,9 +649,9 @@ function custom_magic_box_selection_logic(w_weapon, e_player) {
 function function_2f57e2d2(e_player) {
     var_5f6b2789 = self.stub.trigger_target;
     if (var_5f6b2789.weapon_out === 1 && zm_white_util::is_ray_gun(var_5f6b2789.zbarrier.weapon) && e_player zm_white_util::has_ray_gun()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white/zm_white
@@ -940,7 +940,7 @@ function function_c8ce0a17(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white/zm_white
@@ -953,7 +953,7 @@ function function_e5086229(var_404e4288, var_8dd554ee) {
     if (isdefined(ai)) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white/zm_white
@@ -986,7 +986,7 @@ function function_7e6cf034() {
     }
     switch (zm_custom::function_901b751c(#"zmpowerstate")) {
     case 1:
-        return;
+        break;
     case 2:
         level flag::set("power_on1");
         level flag::set("power_on3");
@@ -1000,7 +1000,7 @@ function function_7e6cf034() {
             }
         }
     case 0:
-        return;
+        break;
     default:
         break;
     }
@@ -1049,7 +1049,7 @@ function private white_devgui() {
         adddebugcommand("<unknown string>");
         level flag::init(#"soul_fill");
         level thread zm_white_util::function_e95d25();
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"zm_white_devgui_cmd", "<unknown string>");
             switch (str_command) {

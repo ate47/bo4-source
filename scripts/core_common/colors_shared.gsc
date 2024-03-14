@@ -154,7 +154,7 @@ function __main__() {
 // Size: 0x56
 function debugdvars() {
     /#
-        while (1) {
+        while (true) {
             if (getdvar(#"debug_colornodes", 0) > 0) {
                 thread debug_colornodes();
             }
@@ -322,7 +322,7 @@ function debugcolorfriendliestogglewatch() {
     /#
         just_turned_on = 0;
         just_turned_off = 0;
-        while (1) {
+        while (true) {
             if (getdvar(#"debug_colornodes", 0) == 1 && !just_turned_on) {
                 just_turned_on = 1;
                 just_turned_off = 0;
@@ -644,7 +644,7 @@ function activate_color_trigger_internal(colorcodes, colors, team, colorcodesbyc
 // Size: 0x60
 function same_color_code_as_last_time(team, color) {
     if (!isdefined(level.lastcolorforced[team][color])) {
-        return 0;
+        return false;
     }
     return level.lastcolorforced[team][color] == level.currentcolorforced[team][color];
 }
@@ -889,7 +889,7 @@ function color_node_finds_user_for_colorcode(colorcode, team) {
 // Size: 0x28
 function occupies_colorcode(colorcode) {
     if (!isdefined(self.currentcolorcode)) {
-        return 0;
+        return false;
     }
     return self.currentcolorcode == colorcode;
 }
@@ -1097,9 +1097,9 @@ function reached_node_but_could_not_claim_it(node) {
         ai[i] notify(#"eject_from_my_node");
         wait(1);
         self notify(#"eject_from_my_node");
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace colors/colors_shared
@@ -1124,10 +1124,10 @@ function decrementcolorusers(node) {
 function colorislegit(color) {
     for (i = 0; i < level.colorlist.size; i++) {
         if (color == level.colorlist[i]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace colors/colors_shared
@@ -1648,7 +1648,7 @@ function has_color() {
     } else if (self.team == #"team3") {
         return (isdefined(self.var_15eb6ad5) || isdefined(self.script_forcecolor));
     }
-    return 0;
+    return false;
 }
 
 // Namespace colors/colors_shared

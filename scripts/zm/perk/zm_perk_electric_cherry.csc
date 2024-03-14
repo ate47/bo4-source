@@ -80,7 +80,7 @@ function electric_cherry_reload_attack_fx(localclientnum, oldval, newval, bnewen
     case 2:
     case 3:
         self.electric_cherry_reload_fx = util::playfxontag(localclientnum, level._effect[#"electric_cherry_explode"], self, "tag_origin");
-        return;
+        break;
     }
 }
 

@@ -66,7 +66,7 @@ function private devgui() {
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
         adddebugcommand("<unknown string>");
-        while (1) {
+        while (true) {
             waitframe(1);
             str_command = getdvarstring(#"zm_orange_debug_cmd", "<unknown string>");
             switch (str_command) {

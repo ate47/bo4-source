@@ -100,7 +100,7 @@ function global_ai_array() {
 // Checksum 0xd2d1bc04, Offset: 0x6d0
 // Size: 0x2e
 function spawn_throttle_reset() {
-    while (1) {
+    while (true) {
         util::wait_network_frame();
         level.global_spawn_count = 0;
     }
@@ -544,7 +544,7 @@ function go_to_node_wait_for_player(node, get_target_func, dist) {
     for (i = 0; i < players.size; i++) {
         player = players[i];
         if (distancesquared(player.origin, node.origin) < distancesquared(self.origin, node.origin)) {
-            return 1;
+            return true;
         }
     }
     vec = anglestoforward(self.angles);
@@ -566,17 +566,17 @@ function go_to_node_wait_for_player(node, get_target_func, dist) {
     for (i = 0; i < vec2.size; i++) {
         value = vec2[i];
         if (vectordot(vec, value) > 0) {
-            return 1;
+            return true;
         }
     }
     dist2rd = dist * dist;
     for (i = 0; i < players.size; i++) {
         player = players[i];
         if (distancesquared(player.origin, self.origin) < dist2rd) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace spawner/spawner_shared
@@ -634,7 +634,7 @@ function crawl_target_and_init_flags(ent, get_func) {
         }
         index++;
         if (index >= targets.size) {
-            return;
+            break;
         }
         ent = targets[index];
     }
@@ -745,7 +745,7 @@ function aigroup_debug() {
         }
         cmd = "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>";
         adddebugcommand(cmd);
-        while (1) {
+        while (true) {
             var_d4f26db9 = getdvarstring(#"debug_aigroup", "<unknown string>");
             var_c708e6e1 = 120;
             if (var_d4f26db9 != "<unknown string>") {
@@ -895,7 +895,7 @@ function spawn(b_force = 0, str_targetname, v_origin, v_angles, bignorespawningl
     if (!check_player_requirements()) {
         return;
     }
-    while (1) {
+    while (true) {
         if (!(isdefined(bignorespawninglimit) && bignorespawninglimit) && !(isdefined(self.ignorespawninglimit) && self.ignorespawninglimit)) {
             global_spawn_throttle();
         }
@@ -1091,22 +1091,22 @@ function check_player_requirements() {
     if (isdefined(self.script_minplayers)) {
         if (n_player_count < self.script_minplayers) {
             self delete();
-            return 0;
+            return false;
         }
     }
     if (isdefined(self.script_numplayers)) {
         if (n_player_count < self.script_numplayers) {
             self delete();
-            return 0;
+            return false;
         }
     }
     if (isdefined(self.script_maxplayers)) {
         if (n_player_count > self.script_maxplayers) {
             self delete();
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace spawner/spawner_shared
@@ -1120,10 +1120,10 @@ function spawn_failed(spawn) {
         }
         waittillframeend();
         if (isalive(spawn)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace spawner/spawner_shared

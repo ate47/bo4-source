@@ -161,14 +161,14 @@ function trap_init() {
         case #"trigger_use":
             self._trap_use_trigs[self._trap_use_trigs.size] = components[i];
             components[i]._trap = self;
-            continue;
+            break;
         case #"script_model":
             if (components[i].model == self._trap_light_model_off) {
                 self._trap_lights[self._trap_lights.size] = components[i];
             } else if (components[i].model == self._trap_switch_model) {
                 self._trap_switches[self._trap_switches.size] = components[i];
             }
-            continue;
+            break;
         }
     }
     self._trap_fx_structs = [];
@@ -255,7 +255,7 @@ function function_783f63e9(var_1c9c3123 = 1) {
 // Checksum 0xf88442bc, Offset: 0x10d8
 // Size: 0x148
 function trap_use_think(trap) {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -338,7 +338,7 @@ function trap_activate(trap, who) {
 // Size: 0x11c
 function private update_trigger_visibility() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         foreach (player in getplayers()) {
             if (distancesquared(player.origin, self.origin) < 16384) {
                 if (player zm_utility::is_drinking()) {
@@ -519,7 +519,7 @@ function trap_audio_fx(trap) {
 // Size: 0x38e
 function trap_damage() {
     self endon(#"trap_done");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         ent = waitresult.activator;
@@ -591,7 +591,7 @@ function function_783361ed(e_trap) {
 function trig_update(parent) {
     self endon(#"trap_done");
     start_angles = self.angles;
-    while (1) {
+    while (true) {
         self.angles = parent.angles;
         waitframe(1);
     }
@@ -805,7 +805,7 @@ function trap_dialog() {
     self endon(#"warning_dialog");
     level endon(#"switch_flipped");
     timer = 0;
-    while (1) {
+    while (true) {
         wait(0.5);
         players = getplayers();
         for (i = 0; i < players.size; i++) {
@@ -930,14 +930,14 @@ function trap_model_type_init() {
         self._trap_light_model_green = "zombie_trap_switch_light_on_green";
         self._trap_light_model_red = "zombie_trap_switch_light_on_red";
         self._trap_switch_model = "zombie_trap_switch_handle";
-        return;
+        break;
     case #"default":
     default:
         self._trap_light_model_off = "zombie_zapper_cagelight";
         self._trap_light_model_green = "zombie_zapper_cagelight";
         self._trap_light_model_red = "zombie_zapper_cagelight";
         self._trap_switch_model = "zombie_zapper_handle";
-        return;
+        break;
     }
 }
 
@@ -949,9 +949,9 @@ function function_3f401e8d(e_player) {
     if (e_player hasperk(#"specialty_mod_phdflopper") || isdefined(self.var_efc76c5d) && self.var_efc76c5d || isdefined(e_player.var_c09a076a) && e_player.var_c09a076a) {
         if (e_player issliding()) {
             e_player thread function_a1812da9();
-            return 1;
+            return true;
         } else if (isdefined(e_player.var_9beb4442) && e_player.var_9beb4442 || isdefined(e_player.var_c09a076a) && e_player.var_c09a076a) {
-            return 1;
+            return true;
         }
     }
     if (e_player bgb::is_enabled(#"zm_bgb_anti_entrapment")) {
@@ -969,9 +969,9 @@ function function_3f401e8d(e_player) {
             e_player.var_410e7c36[e_player.var_410e7c36.size] = self;
             e_player zm_stats::increment_challenge_stat(#"hash_108042c8bd6693fb");
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_traps/zm_traps

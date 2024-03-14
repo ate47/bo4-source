@@ -63,12 +63,12 @@ function startgametype() {
 // Size: 0xcc
 function function_ef1137ae(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(victim) || !isdefined(victim.var_c6a21b50) || (isdefined(victim.var_cd7665dd) ? victim.var_cd7665dd : 0) + 500 < gettime()) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker) && (!isdefined(victim.var_c6a21b50.owner) || attacker != victim.var_c6a21b50.owner)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -488,7 +488,7 @@ function function_dd007be2() {
 function ondamage() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.attacker) && isplayer(waitresult.attacker) && getdvarint(#"survival_prototype", 0) == 0) {
@@ -665,7 +665,7 @@ function function_dac69ad1(player, concertinawire) {
 function function_b842eab8() {
     level endon(#"game_ended");
     params = getstatuseffect(level.var_87226c31.bundle.var_f6fdbda7);
-    while (1) {
+    while (true) {
         foreach (player in level.players) {
             if (!isdefined(player)) {
                 continue;
@@ -690,7 +690,7 @@ function function_b842eab8() {
 function function_f067d867(concertinawire) {
     level endon(#"game_ended");
     concertinawire endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = concertinawire.trigger waittill(#"trigger");
         player = waitresult.activator;
@@ -969,7 +969,7 @@ function function_34d706ae(watcher, var_db52b808, origin, angles, var_796be15d, 
 function function_18dd6b22(concertinawire) {
     level endon(#"game_ended");
     concertinawire endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = concertinawire waittill(#"broken");
         if (waitresult.type == "base_piece_broken") {
@@ -988,10 +988,10 @@ function function_6541080b(origin, maxdistancesq) {
             continue;
         }
         if (distancesquared(concertinawire.origin, origin) < maxdistancesq) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace concertina_wire/gadget_concertina_wire
@@ -1002,7 +1002,7 @@ function watchweaponchange() {
     player = self;
     self notify(#"watchweaponchange_singleton");
     self endon(#"watchweaponchange_singleton");
-    while (1) {
+    while (true) {
         if (self weaponswitchbuttonpressed()) {
             if (isdefined(player.concertinawire)) {
                 player.concertinawire.var_5af6633b = 1;

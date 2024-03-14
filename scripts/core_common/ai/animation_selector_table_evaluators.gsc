@@ -46,10 +46,10 @@ function private function_aa7530df(entity, animation) {
     #/
     if (entity maymovefrompointtopoint(endpoint, forwardpoint, 1, 1)) {
         pixendevent();
-        return 1;
+        return true;
     }
     pixendevent();
-    return 0;
+    return false;
 }
 
 // Namespace animation_selector_table_evaluators/animation_selector_table_evaluators
@@ -86,11 +86,11 @@ function private evaluator_checkanimationagainstgeo(entity, animation) {
         #/
         if (entity maymovefrompointtopoint(midpoint, endpoint, 1, 1)) {
             pixendevent();
-            return 1;
+            return true;
         }
     }
     pixendevent();
-    return 0;
+    return false;
 }
 
 // Namespace animation_selector_table_evaluators/animation_selector_table_evaluators
@@ -107,10 +107,10 @@ function private evaluator_checkanimationendpointagainstgeo(entity, animation) {
     endpoint = (endpoint[0], endpoint[1], entity.origin[2]);
     if (entity maymovetopoint(endpoint, 0, 0)) {
         pixendevent();
-        return 1;
+        return true;
     }
     pixendevent();
-    return 0;
+    return false;
 }
 
 // Namespace animation_selector_table_evaluators/animation_selector_table_evaluators
@@ -134,14 +134,14 @@ function private evaluator_checkanimationforovershootinggoal(entity, animation) 
         disttogoalsq = distancesquared(startpos, goalpos);
         if (animdistsq < disttogoalsq * 0.9) {
             pixendevent();
-            return 1;
+            return true;
         }
     }
     /#
         record3dtext("<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
     #/
     pixendevent();
-    return 0;
+    return false;
 }
 
 // Namespace animation_selector_table_evaluators/animation_selector_table_evaluators
@@ -155,12 +155,12 @@ function private evaluator_checkanimationagainstnavmesh(entity, animation) {
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
     if (ispointonnavmesh(endpoint, entity)) {
-        return 1;
+        return true;
     }
     /#
         record3dtext("<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
     #/
-    return 0;
+    return false;
 }
 
 // Namespace animation_selector_table_evaluators/animation_selector_table_evaluators
@@ -176,13 +176,13 @@ function private evaluator_checkanimationarrivalposition(entity, animation) {
     disttogoalsq = distancesquared(startpos, goalpos);
     if (disttogoalsq < animdistsq) {
         if (isdefined(entity.ai.var_a5dabb8b) && entity.ai.var_a5dabb8b) {
-            return 1;
+            return true;
         }
         if (entity isposatgoal(endpoint)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace animation_selector_table_evaluators/animation_selector_table_evaluators

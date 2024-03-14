@@ -178,7 +178,7 @@ function gettagforpos(position) {
         /#
             assertmsg("<unknown string>" + position);
         #/
-        return;
+        break;
     }
 }
 

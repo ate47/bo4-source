@@ -24,10 +24,10 @@ function shield_state_change(localclientnum, oldval, newval, bnewent, binitialsn
     case 1:
         instant = oldval == 2;
         self thread riotshield_deploy_anim(localclientnum, instant);
-        return;
+        break;
     case 2:
         self thread riotshield_destroy_anim(localclientnum);
-        return;
+        break;
     }
 }
 
@@ -58,7 +58,7 @@ function riotshield_deploy_anim(localclientnum, instant) {
 // Size: 0x128
 function watch_riotshield_damage() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage_type = waitresult.mod;

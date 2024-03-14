@@ -64,17 +64,17 @@ function __init__() {
         switch (getdvarint(#"bot_difficulty", 1)) {
         case 0:
             level.var_df0a0911 = "bot_tacstate_mp_easy";
-            return;
+            break;
         case 1:
         default:
             level.var_df0a0911 = "bot_tacstate_mp_normal";
-            return;
+            break;
         case 2:
             level.var_df0a0911 = "bot_tacstate_mp_hard";
-            return;
+            break;
         case 3:
             level.var_df0a0911 = "bot_tacstate_mp_veteran";
-            return;
+            break;
         }
     }
 }
@@ -117,28 +117,28 @@ function init_strategic_command() {
         foreach (team in level.teams) {
             plannermpcontrolcommander::createcommander(team);
         }
-        return;
+        break;
     case #"dom_cwl":
     case #"dom_hc":
     case #"dom":
         foreach (team in level.teams) {
             plannermpdomcommander::createcommander(team);
         }
-        return;
+        break;
     case #"koth":
     case #"koth_cwl":
     case #"koth_hc":
         foreach (team in level.teams) {
             plannermpkothcommander::createcommander(team);
         }
-        return;
+        break;
     case #"sd":
     case #"sd_cwl":
     case #"sd_hc":
         foreach (team in level.teams) {
             plannermpsdcommander::createcommander(team);
         }
-        return;
+        break;
     default:
         foreach (team in level.teams) {
             plannermptdmcommander::createcommander(team);
@@ -194,7 +194,7 @@ function function_1b0af429() {
                 if (attachments[j] != "uber") {
                     attachments[j] = attachments[attachments.size - 1];
                     attachments[attachments.size - 1] = undefined;
-                    continue;
+                    break;
                 }
             }
         }
@@ -302,7 +302,7 @@ function on_bot_killed() {
 function respawn() {
     self endon(#"spawned", #"disconnect");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         self bottapbutton(3);
         wait(0.1);
     }
@@ -343,7 +343,7 @@ function use_killstreak() {
     case #"killstreak_counteruav":
     case #"killstreak_raps":
         self switchtoweapon(useweapon);
-        return;
+        break;
     }
 }
 

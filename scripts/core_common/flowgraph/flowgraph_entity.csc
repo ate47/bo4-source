@@ -88,6 +88,6 @@ function function_fd19ef53(e_entity, str_field) {
 // Size: 0x3a
 function function_7e40ae2d(x, e_entity, str_field, var_value) {
     e_entity.(str_field) = var_value;
-    return 1;
+    return true;
 }
 

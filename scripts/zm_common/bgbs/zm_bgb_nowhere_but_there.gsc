@@ -313,15 +313,15 @@ function function_22e77bc1(var_36bf7c2c, var_8afe96c9, e_player) {
         if (isdefined(var_36bf7c2c)) {
             var_36bf7c2c delete();
         }
-        return 0;
+        return false;
     }
     if (!(isdefined(bullettracepassed(e_player geteye() + vectorscale((0, 0, 1), 10), var_8afe96c9, 0, self, e_player, 0, 1)) && bullettracepassed(e_player geteye() + vectorscale((0, 0, 1), 10), var_8afe96c9, 0, self, e_player, 0, 1))) {
         if (isdefined(var_36bf7c2c)) {
             var_36bf7c2c delete();
         }
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_nowhere_but_there/zm_bgb_nowhere_but_there

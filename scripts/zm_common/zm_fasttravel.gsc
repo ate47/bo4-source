@@ -240,19 +240,19 @@ function function_c52e8ba(player, var_8d5d092c) {
 // Size: 0x13e
 function function_d06e636b(player) {
     if (!level flag::get(level.var_5bfd847e)) {
-        return 0;
+        return false;
     } else if (!zombie_utility::is_player_valid(player)) {
-        return 0;
+        return false;
     } else if (isdefined(player.var_16735873) && player.var_16735873 && isdefined(self.stub) && self.stub.script_string !== "dropout") {
-        return 0;
+        return false;
     } else if (isdefined(player.var_564dec14) && player.var_564dec14) {
-        return 0;
+        return false;
     } else if (player isthrowinggrenade() || player isusingoffhand()) {
-        return 0;
+        return false;
     } else if (level flag::get(#"disable_fast_travel")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_fasttravel/zm_fasttravel
@@ -262,7 +262,7 @@ function function_d06e636b(player) {
 function function_6cde5436() {
     level endon(#"end_game");
     var_8d5d092c = self.stub.var_8d5d092c;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -666,7 +666,7 @@ function function_79766c56(str_notify) {
         self allowprone(1);
         self.var_f4e33249 = undefined;
         self.var_16735873 = 0;
-        return;
+        break;
     }
 }
 
@@ -676,7 +676,7 @@ function function_79766c56(str_notify) {
 // Size: 0x41c
 function fasttravel_spline(var_5314bd63, nd_path_start, var_384528) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         self.var_2790fd8b = spawner::simple_spawn_single(var_5314bd63);
         if (isdefined(self.var_2790fd8b)) {
             break;
@@ -776,9 +776,9 @@ function function_946fc2d6() {
 // Size: 0x52
 function function_6c856fde(e_zombie) {
     if (e_zombie.var_6f84b820 == #"basic" || e_zombie.var_6f84b820 == #"enhanced") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_fasttravel/zm_fasttravel
@@ -809,7 +809,7 @@ function function_c1f603e(var_12230d08, n_cooldown, var_8d5d092c) {
 // Size: 0x238
 function function_5165d69() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1088,18 +1088,18 @@ function function_dd6276f3(cmd) {
             level.var_2a40310c = 1;
             level thread function_8d419972(0);
         }
-        return;
+        break;
     case #"stop_looping":
         if (isdefined(level.var_2a40310c) && level.var_2a40310c) {
             level.var_2a40310c = 0;
         }
-        return;
+        break;
     case #"play_once":
         if (!(isdefined(level.var_2a40310c) && level.var_2a40310c)) {
             level.var_2a40310c = 1;
             level thread function_8d419972(1);
         }
-        return;
+        break;
     }
 }
 

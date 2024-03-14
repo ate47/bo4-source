@@ -149,7 +149,7 @@ function function_3931c78() {
 // Checksum 0xcc036198, Offset: 0xba8
 // Size: 0x6
 function function_f85d3d98() {
-    return 0;
+    return false;
 }
 
 // Namespace namespace_565e073b/namespace_565e073b
@@ -159,7 +159,7 @@ function function_f85d3d98() {
 function function_e42e358e() {
     level endon(#"end_game");
     self endon(#"death", #"player_frozen");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!self issprinting() && !self laststand::player_is_in_laststand()) {
             self function_f0bdc5df();
@@ -189,7 +189,7 @@ function function_f0bdc5df() {
 function function_1b305413() {
     level endon(#"end_game");
     self endon(#"death", #"player_frozen");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (self issprinting() || self laststand::player_is_in_laststand()) {
             self player_sprinting();
@@ -222,7 +222,7 @@ function function_6577cacc() {
     if (!isdefined(self.var_36a93d1)) {
         self.var_36a93d1 = 0;
     }
-    while (1) {
+    while (true) {
         wait(1);
         self.var_36a93d1++;
         var_24e0e73d = 15;

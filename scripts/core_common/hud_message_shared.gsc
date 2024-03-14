@@ -114,9 +114,9 @@ function private function_fa47c5af() {
 function isintop(players, topn) {
     for (i = 0; i < topn; i++) {
         if (isdefined(players[i]) && self == players[i]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 

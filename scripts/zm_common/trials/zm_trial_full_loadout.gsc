@@ -71,7 +71,7 @@ function private monitor_loadout() {
     level endon(#"hash_7646638df88a3656", #"end_game");
     self.var_53531c80 = 0;
     self zm_trial_util::function_63060af4(0);
-    while (1) {
+    while (true) {
         a_weapons = self getweaponslistprimaries();
         weapon_equipment = self zm_loadout::get_player_lethal_grenade();
         if (!isdefined(a_weapons)) {

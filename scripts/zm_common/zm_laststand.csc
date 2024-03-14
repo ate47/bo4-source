@@ -47,7 +47,7 @@ function __init__() {
 // Checksum 0xd8bddb93, Offset: 0x4b8
 // Size: 0xd6
 function wait_and_set_revive_shader_constant() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittillmatch({#notetrack:"revive_shader_constant"}, #"notetrack");
         player = function_5c10bd79(waitresult.localclientnum);
@@ -110,7 +110,7 @@ function function_be34e28f(localclientnum, var_d2c301e0) {
         self postfx::function_c8b5f318("pstfx_zm_last_stand", "Tint Color R", 0.9);
         self postfx::function_c8b5f318("pstfx_zm_last_stand", "Tint Color G", 0.2);
     }
-    while (1) {
+    while (true) {
         n_current_time = getservertime(localclientnum);
         if (n_current_time >= var_6c2f58e2) {
             self postfx::function_c8b5f318("pstfx_zm_last_stand", "Opacity", 0.25);

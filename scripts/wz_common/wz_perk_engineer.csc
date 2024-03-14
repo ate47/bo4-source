@@ -62,7 +62,7 @@ function private function_7800b9c2(localclientnum) {
     if (!isdefined(self.var_100abb43)) {
         self.var_100abb43 = [];
     }
-    while (1) {
+    while (true) {
         var_94c264dd = self hasperk(localclientnum, #"specialty_showenemyequipment");
         if (!var_94c264dd && isdefined(self.var_53204996)) {
             var_94c264dd = var_94c264dd | self [[ self.var_53204996 ]](localclientnum);
@@ -140,10 +140,10 @@ function private function_76a0624a() {
 // Size: 0x6c
 function private function_da8108ae() {
     if (!isdefined(self.owner) || !isdefined(self.owner.team)) {
-        return 0;
+        return false;
     }
     if (self.owner.team == #"neutral") {
-        return 0;
+        return false;
     }
     return !self.owner function_83973173();
 }
@@ -154,18 +154,18 @@ function private function_da8108ae() {
 // Size: 0xc2
 function private function_8550d243(localclientnum, bundle) {
     if (function_9d295a8c(localclientnum)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle" && isinvehicle(localclientnum, self)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle_corpse") {
-        return 0;
+        return false;
     }
     if (self function_76a0624a() && isdefined(self.var_f19b4afd) && self.var_f19b4afd) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_perk_engineer/wz_perk_engineer
@@ -174,18 +174,18 @@ function private function_8550d243(localclientnum, bundle) {
 // Size: 0xc2
 function private function_62888a11(localclientnum, bundle) {
     if (function_9d295a8c(localclientnum)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle" && isinvehicle(localclientnum, self)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle_corpse") {
-        return 0;
+        return false;
     }
     if (self function_da8108ae() && isdefined(self.var_f19b4afd) && self.var_f19b4afd) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_perk_engineer/wz_perk_engineer
@@ -194,17 +194,17 @@ function private function_62888a11(localclientnum, bundle) {
 // Size: 0xde
 function private function_b52a94e5(localclientnum, bundle) {
     if (function_9d295a8c(localclientnum)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle" && isinvehicle(localclientnum, self)) {
-        return 0;
+        return false;
     }
     if (self.type === "vehicle_corpse") {
-        return 0;
+        return false;
     }
     if (!self function_76a0624a() && !self function_da8108ae() && isdefined(self.var_f19b4afd) && self.var_f19b4afd) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

@@ -122,7 +122,7 @@ function function_9ef27f88(n_fuse_timer, attacker, weapon) {
 // Size: 0x1a4
 function function_2b03f05f() {
     self endon(#"death", #"titus_target_timeout");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon === getweapon(#"hash_3de0926b89369160") || s_result.weapon === getweapon(#"hash_127bb24f68b5df27")) {
@@ -261,7 +261,7 @@ function function_efefda46(willbekilled, einflictor, eattacker, idamage, flags, 
 // Size: 0x142
 function private function_eaa9c593() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -283,7 +283,7 @@ function private function_eaa9c593() {
 function private function_d72c4a61() {
     self notify(#"hash_20e403096a8af3b7");
     self endon(#"disconnect", #"hash_20e403096a8af3b7");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == getweapon(#"ww_blundergat_acid_t8") || s_result.weapon == getweapon(#"ww_blundergat_acid_t8_upgraded")) {
@@ -577,7 +577,7 @@ function private function_5f305489(mdl_magma) {
 function private function_c74dfed4(weapon) {
     self endon(#"death");
     self.trigger endon(#"death");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self.trigger waittill(#"trigger");
         if (isdefined(s_result.activator)) {
@@ -811,7 +811,7 @@ function private function_dc3470c5(shitloc, vpoint, eattacker, weapon) {
 // Size: 0x150
 function private function_78f754f7(eattacker, weapon) {
     self endon(#"death", #"hash_556bad125b55e1a9");
-    while (1) {
+    while (true) {
         if (level.round_number < 15) {
             n_dmg = self.maxhealth * randomfloatrange(0.1, 0.2);
         } else {
@@ -996,7 +996,7 @@ function function_f2ef907f() {
 // Size: 0x78
 function private function_c95282e3() {
     level endon(#"hash_209ec855e7a13ef3");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"crafting_started");
         if (isdefined(s_result.unitrigger)) {
@@ -1107,7 +1107,7 @@ function function_b1347a6() {
     v_weapon_angles_offset = (0, 90, -90);
     var_13202c94.v_weapon_origin = var_13202c94 gettagorigin("tag_origin") + v_weapon_origin_offset;
     var_13202c94.v_weapon_angles = v_angles + v_weapon_angles_offset;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;

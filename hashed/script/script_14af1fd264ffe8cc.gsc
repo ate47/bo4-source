@@ -121,9 +121,9 @@ function function_4909d78c(e_player) {
 function function_324787f7() {
     wpn_current = self getcurrentweapon();
     if (zm_loadout::is_hero_weapon(wpn_current) || isdefined(wpn_current.isriotshield) && wpn_current.isriotshield) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_f8f28e08/namespace_f8f28e08
@@ -132,7 +132,7 @@ function function_324787f7() {
 // Size: 0x174
 function function_2c76782d() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -881,13 +881,13 @@ function give_perk_reward(var_16c042b8, var_6c9485fc = 15) {
 // Size: 0x8c
 function function_545834dc(var_16c042b8) {
     self endon(#"death", #"hash_358f065cca50b2a7");
-    while (1) {
+    while (true) {
         if (self hasperk(var_16c042b8)) {
             if (isdefined(self.var_7a281a7e)) {
                 self.var_7a281a7e.b_timeout = 1;
             }
             self notify(#"challenge_reward_timeout");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -973,11 +973,11 @@ function function_dcda5d87(mdl_reward, b_rotate = 1, var_b9b24 = 1, var_b7e0faf0
     mdl_reward delete();
     self notify(#"hash_358f065cca50b2a7");
     if (isdefined(b_timeout) && b_timeout) {
-        return 0;
+        return false;
     }
     self playsound(#"hash_3a681f400deb121b");
     self thread zm_audio::create_and_play_dialog(#"tribute", #"boon");
-    return 1;
+    return true;
 }
 
 // Namespace namespace_f8f28e08/namespace_f8f28e08
@@ -1079,16 +1079,16 @@ function function_6c62f074(var_9e09931e) {
                 level thread function_445c5623("carpenter", self.s_tribute_bowl.var_8f683ef8, 1);
             }
         }
-        return;
+        break;
     case 3:
         function_4071e6d();
-        return;
+        break;
     case 4:
         if (zm_custom::function_901b751c(#"zmspecweaponisenabled") && zm_custom::function_901b751c(#"zmpowerupsactive")) {
             var_c481f7e6 = randomint(1000);
             if (var_c481f7e6 <= 250) {
                 level thread function_445c5623("hero_weapon_power", self.s_tribute_bowl.var_8f683ef8, 2);
-                return;
+                break;
             }
         }
         wpn_current = self getcurrentweapon();
@@ -1096,13 +1096,13 @@ function function_6c62f074(var_9e09931e) {
             var_c481f7e6 = randomint(1000);
             if (var_c481f7e6 <= 250) {
                 self thread function_ae58bd73(self.s_tribute_bowl.var_8f683ef8);
-                return;
+                break;
             }
         }
         function_4071e6d();
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 
@@ -1343,9 +1343,9 @@ function function_cdb9fba6(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
     mdl_reward delete();
     zm_unitrigger::unregister_unitrigger(s_interact);
     if (isdefined(b_timeout) && b_timeout) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_f8f28e08/namespace_f8f28e08
@@ -1355,11 +1355,11 @@ function function_cdb9fba6(mdl_reward, b_rotate, var_b9b24, var_b7e0faf0 = 1) {
 function function_3413bcb8(e_player) {
     if (!e_player zm_red_util::can_see(self.origin, 0, 0)) {
         self sethintstringforplayer(e_player, "");
-        return 0;
+        return false;
     }
     str_prompt = zm_utility::function_d6046228(#"hash_42cb69becded0870", #"hash_648ba551adc3865c");
     self sethintstringforplayer(e_player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_f8f28e08/namespace_f8f28e08
@@ -1368,7 +1368,7 @@ function function_3413bcb8(e_player) {
 // Size: 0x8c
 function function_8b1e1959() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
@@ -1411,8 +1411,8 @@ function function_50ce2afd() {
 // Size: 0x2c
 function function_bec5bf67(type) {
     if (#"bonus_points_player" === type) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 

@@ -262,12 +262,12 @@ function function_9ca5c5fc(v_loc, str_team, n_radius) {
 // Size: 0xa8
 function function_9313dd47(s_loc, n_radius) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         n_dist = distance(s_loc.origin, self.origin);
         if (n_dist < n_radius) {
             e_player = getplayers()[0];
             self.var_2925fedc = e_player.origin;
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -296,7 +296,7 @@ function function_8e0db9e6(s_loc, var_feefa8d9, var_ecf349de, var_3fc5d539) {
         self bot_stance::stand();
     }
     self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, var_feefa8d9);
-    while (1) {
+    while (true) {
         n_dist = distance(self.origin, s_loc.origin);
         if (n_dist <= var_feefa8d9) {
             break;

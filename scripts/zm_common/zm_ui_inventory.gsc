@@ -49,7 +49,7 @@ function private onconnect() {
 // Size: 0x82
 function private function_13ad9a60() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         response = waitresult.response;

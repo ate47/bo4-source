@@ -65,7 +65,7 @@ function on_spawn(watcher) {
 function play_footsteps() {
     self endon(#"death", #"hash_5a09ded231e405ad");
     wait(0.25);
-    while (1) {
+    while (true) {
         self playsound(#"fly_step_sprint_plr_default");
         wait(0.23);
     }
@@ -81,7 +81,7 @@ function function_e9d18b65() {
     wait(0.2);
     weapon = getweapon(grenade.var_f64cb8d.weapon);
     var_fa7f044f = 0;
-    while (1) {
+    while (true) {
         burst_time = randomfloatrange(grenade.var_f64cb8d.var_5cae5968, grenade.var_f64cb8d.var_bbed619f);
         burst_time = burst_time * 1000;
         var_f370a5d5 = gettime() + burst_time;
@@ -141,7 +141,7 @@ function on_damage(watcher) {
     self endon(#"death");
     damagemax = 50;
     self.damagetaken = 0;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage = waitresult.amount;

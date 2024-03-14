@@ -155,7 +155,7 @@ function function_7722c6f0(var_404e4288, var_8dd554ee) {
     if (isalive(var_6095c0b6.ai_spawned)) {
         zm_transform::function_d2374144(var_6095c0b6.ai_spawned, #"blight_father");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -164,7 +164,7 @@ function function_7722c6f0(var_404e4288, var_8dd554ee) {
 // Size: 0x32
 function function_389e7c22(var_404e4288, var_8dd554ee) {
     ai = zm_ai_stoker::round_spawn();
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -176,7 +176,7 @@ function function_c8ce0a17(var_404e4288, var_8dd554ee) {
     if (isalive(var_6095c0b6.ai_spawned)) {
         zm_transform::function_d2374144(var_6095c0b6.ai_spawned, array::random(array(#"catalyst_corrosive", #"catalyst_electric", #"catalyst_plasma", #"catalyst_water")));
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -379,7 +379,7 @@ function private function_4d4e4de() {
 // Size: 0x104
 function private function_34d1e89a(var_424eb3ee) {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (level.round_number >= var_424eb3ee) {
             break;
@@ -420,7 +420,7 @@ function function_183a6d46() {
 // Size: 0x51e
 function function_86a8adbe() {
     level.var_f0e198fa = getentarray("magic_box_map", "targetname");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = level waittill(#"hash_e39eca74fa250b4");
         foreach (mdl_map in level.var_f0e198fa) {
@@ -448,28 +448,28 @@ function function_86a8adbe() {
                     switch (s_magic_box.script_noteworthy) {
                     case #"promenade_chest":
                         mdl_map showpart("j_promenade");
-                        continue;
+                        break;
                     case #"cargo_chest":
                         mdl_map showpart("j_cargo");
-                        continue;
+                        break;
                     case #"hash_1cb95429bf87e1dd":
                         mdl_map showpart("j_engine_room");
-                        continue;
+                        break;
                     case #"grand_stair_lower_chest":
                         mdl_map showpart("j_grand_stair_lower");
-                        continue;
+                        break;
                     case #"lounge_chest":
                         mdl_map showpart("j_lounge");
-                        continue;
+                        break;
                     case #"hash_23cfa652ecaa206e":
                         mdl_map showpart("j_grand_stair_upper");
-                        continue;
+                        break;
                     case #"bridge_chest":
                         mdl_map showpart("j_bridge");
-                        continue;
+                        break;
                     case #"hash_51c31615840ad554":
                         mdl_map showpart("j_dining_hall");
-                        continue;
+                        break;
                     }
                 }
             }
@@ -485,17 +485,17 @@ function function_5716ed83(e_player) {
     if (isdefined(self.stub.trigger_target.weapon_out) && self.stub.trigger_target.weapon_out) {
         if (self.stub.trigger_target.zbarrier.weapon == level.var_cb30f17e) {
             if (e_player hasweapon(level.var_cb30f17e, 1)) {
-                return 0;
+                return false;
             }
             var_9811a74b = array(#"ww_tricannon_t8_upgraded", #"ww_tricannon_air_t8", #"ww_tricannon_air_t8_upgraded", #"ww_tricannon_earth_t8", #"ww_tricannon_earth_t8_upgraded", #"ww_tricannon_fire_t8", #"ww_tricannon_fire_t8_upgraded", #"ww_tricannon_water_t8", #"ww_tricannon_water_t8_upgraded");
             foreach (var_88c3457d in var_9811a74b) {
                 if (e_player hasweapon(getweapon(var_88c3457d), 1)) {
-                    return 0;
+                    return false;
                 }
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -522,7 +522,7 @@ function lore_room_door() {
     var_61bca073 = getent("baphomets_entry" + "_clip", "targetname");
     var_61bca073 solid();
     var_61bca073 disconnectpaths();
-    while (1) {
+    while (true) {
         level flag::wait_till(#"open_lore_room");
         function_2c0f0869(1, var_48e9f58e, var_61bca073);
         level flag::wait_till_clear(#"open_lore_room");
@@ -568,7 +568,7 @@ function private function_a987d50f() {
     var_3f2d17a4 = 0;
     var_69083fb0 = array("zone_grand_stairs_b_deck", "zone_grand_stairs_c_deck", "zone_grand_stairs_d_deck", "zone_dining_hall_fore", "zone_dining_hall_aft", "zone_galley");
     var_58686f84 = getent("moonlight_on_volume", "targetname");
-    while (1) {
+    while (true) {
         var_40d9ad40 = 0;
         for (i = 0; i < level.players.size && !var_40d9ad40; i++) {
             e_player = level.players[i];
@@ -599,7 +599,7 @@ function private function_a987d50f() {
 // Checksum 0xf0448ef5, Offset: 0x3eb0
 // Size: 0x128
 function function_96c0d840() {
-    while (1) {
+    while (true) {
         hidemiscmodels("coal_warm");
         hidemiscmodels("coal_hot");
         level waittill(#"hash_47ecba5609d2b603");
@@ -620,7 +620,7 @@ function function_96c0d840() {
 // Checksum 0x35f22219, Offset: 0x3fe0
 // Size: 0xb0
 function function_d515e5e7() {
-    while (1) {
+    while (true) {
         var_f2c45ac3 = level.round_number + randomintrangeinclusive(3, 6);
         while (var_f2c45ac3 > level.round_number) {
             level waittill(#"end_of_round");
@@ -637,7 +637,7 @@ function function_d515e5e7() {
 function function_ef155de5() {
     level flag::wait_till("start_zombie_round_logic");
     wait(25);
-    while (1) {
+    while (true) {
         exploder::exploder("exp_lgt_sos");
         wait(randomintrange(5, 55));
         exploder::exploder_stop("exp_lgt_sos");
@@ -1076,9 +1076,9 @@ function function_4b17dd44(a_ents) {
 // Size: 0x24
 function player_out_of_playable_area_monitor_callback() {
     if (isdefined(self.var_f22c83f5) && self.var_f22c83f5) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -1101,7 +1101,7 @@ function offhand_weapon_give_override(str_weapon) {
         self setweaponammoclip(self zm_loadout::get_player_tactical_grenade(), 0);
         self takeweapon(self zm_loadout::get_player_tactical_grenade());
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -1437,7 +1437,7 @@ function function_807f41e9() {
                 iprintlnbold("<unknown string>" + (isdefined(var_a1d863b2) ? var_a1d863b2 : "<unknown string>"));
             }
         #/
-        return 1;
+        return true;
     }
     if (!isdefined(self.var_3410b290)) {
         self.var_3410b290 = gettime() - 5000;
@@ -1449,10 +1449,10 @@ function function_807f41e9() {
                 iprintlnbold("<unknown string>" + (ishash(var_a1d863b2) ? function_9e72a96(var_a1d863b2) : var_a1d863b2));
             }
         #/
-        return 1;
+        return true;
     }
     self.var_3410b290 = gettime();
-    return 0;
+    return false;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -1465,7 +1465,7 @@ function function_994c6ce1() {
     }
     if (level.var_801efcc7.size < 1) {
         self.b_ignore_cleanup = 1;
-        return 1;
+        return true;
     }
     var_31f7011a = arraycopy(level.players);
     var_31f7011a = function_5ad4b9b0(var_31f7011a);
@@ -1581,7 +1581,7 @@ function function_994c6ce1() {
             }
         #/
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -1731,7 +1731,7 @@ function function_51581a6c() {
     level endon(#"hash_25d8c88ff3f91ee5");
     level flag::wait_till("power_on");
     self thread function_f1a16811();
-    while (1) {
+    while (true) {
         t_result = trigger::wait_till("trigger_water_drippies", "targetname", self);
         if (self isplayerunderwater()) {
             wait(0.5);
@@ -1755,7 +1755,7 @@ function function_51581a6c() {
 function function_f1a16811() {
     self endon(#"death");
     level endon(#"hash_25d8c88ff3f91ee5");
-    while (1) {
+    while (true) {
         t_result = trigger::wait_till("trigger_water_drippies_fore", "targetname", self);
         if (!(isdefined(level.water_drained_fore) && level.water_drained_fore) || level flag::get(#"hash_7060183fc29995b4") || self isplayerunderwater()) {
             wait(0.5);
@@ -1775,7 +1775,7 @@ function function_f1a16811() {
 // Size: 0xb8
 function function_4ec55dd() {
     level endon(#"hash_25d8c88ff3f91ee5");
-    while (1) {
+    while (true) {
         wait(randomintrange(10, 20));
         if (isalive(self) && self zm_zonemgr::is_player_in_zone(array("zone_forecastle_upper", "zone_forecastle_lower"))) {
             self clientfield::increment_to_player("water_splashies", 1);
@@ -1803,7 +1803,7 @@ function function_5ef52c07() {
             }
             continue;
         }
-        return;
+        break;
     }
 }
 
@@ -1814,7 +1814,7 @@ function function_5ef52c07() {
 function function_e9642771(e_water) {
     self endon(#"death", #"disconnect");
     e_trigger = getent("water_vis_trigger", "targetname");
-    while (1) {
+    while (true) {
         self.var_14dd80fb = 0;
         trigger::wait_till("water_vis_trigger", "targetname", self);
         self.var_14dd80fb = 1;
@@ -1836,7 +1836,7 @@ function function_e9642771(e_water) {
 // Size: 0xe0
 function function_8e0b371() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         str_location = function_ab7f70b9(self);
         str_location = isdefined(str_location) ? str_location : #"";
         if (isalive(self) && !(isdefined(self.var_16735873) && self.var_16735873)) {
@@ -2000,7 +2000,7 @@ function function_e4aee0bb() {
 // Size: 0xc4
 function function_255747bd() {
     b_played = 0;
-    while (1) {
+    while (true) {
         trigger = trigger::wait_till("trig_lounge_vo", "targetname");
         player = trigger.who;
         if (isplayer(player)) {
@@ -2034,7 +2034,7 @@ function function_2021b5df() {
 function function_3910bef9() {
     s_point = zm_bgb_anywhere_but_here::function_91a62549();
     if (!isdefined(s_point)) {
-        return 0;
+        return false;
     }
     a_s_respawn_points = struct::get_array("player_respawn_point", "targetname");
     a_s_valid_respawn_points = [];
@@ -2049,9 +2049,9 @@ function function_3910bef9() {
         }
     }
     if (a_s_valid_respawn_points.size == 1 && a_s_valid_respawn_points[0].script_noteworthy == "zone_forecastle_upper") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -2060,9 +2060,9 @@ function function_3910bef9() {
 // Size: 0x62
 function function_26d54397() {
     if (isdefined(self.var_16735873) && self.var_16735873 || !self isonground() || !ispointonnavmesh(self.origin, self)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_zodt8/zm_zodt8
@@ -2264,19 +2264,19 @@ function function_ae5d684b() {
     case #"hash_b20cb95c337f16d":
     case #"hash_6976e0f87940fc21":
         self.unitrigger_stub.var_8d5d092c = "smoke_stack";
-        return;
+        break;
     case #"engine_room":
     case #"cargo":
         self.unitrigger_stub.var_8d5d092c = "engine_room";
-        return;
+        break;
     case #"fore_to_aft":
     case #"aft_to_fore":
         self.unitrigger_stub.var_8d5d092c = "top_deck";
-        return;
+        break;
     case #"boiler_room":
     case #"suites":
         self.unitrigger_stub.var_8d5d092c = "mid_ship";
-        return;
+        break;
     }
 }
 

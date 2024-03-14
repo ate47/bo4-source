@@ -45,9 +45,9 @@ class cscriptbundleobjectbase {
                 #/
             }
             thread [[ self._o_scene ]]->on_error();
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 
     // Namespace cscriptbundleobjectbase/scriptbundle_shared
@@ -119,9 +119,9 @@ class cscriptbundlebase {
                 #/
             }
             thread [[ self ]]->on_error();
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 
     // Namespace cscriptbundlebase/scriptbundle_shared

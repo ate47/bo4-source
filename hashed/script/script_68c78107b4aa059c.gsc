@@ -753,7 +753,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
                         self.var_3ddde668[var_75aa5cbb] = 0;
                         self.var_202d2992[var_75aa5cbb] = (isdefined(self.var_202d2992[var_75aa5cbb]) ? self.var_202d2992[var_75aa5cbb] : 0) + 1;
                         self.var_43feff59++;
-                        continue;
+                        break;
                     }
                     var_28ef6352 = var_cc5fea3d;
                 }

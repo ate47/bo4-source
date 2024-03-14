@@ -29,7 +29,7 @@ function function_aaef50a() {
 // Size: 0xb0
 function function_263a039() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"projectile_impact");
         self clientfield::increment("sndRattle", 1);

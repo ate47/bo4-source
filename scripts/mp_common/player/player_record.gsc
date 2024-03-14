@@ -436,13 +436,13 @@ function function_7569c0fb() {
     case #"ctf_bb":
         self stats::function_81f5c0fe(#"stat1", self.pers[#"objectivescore"]);
         self stats::function_81f5c0fe(#"stat2", self.ekia);
-        return;
+        break;
     case #"koth":
     case #"koth_cwl":
     case #"koth_bb":
         self stats::function_81f5c0fe(#"stat1", self.pers[#"objectivetime"]);
         self stats::function_81f5c0fe(#"stat2", self.ekia);
-        return;
+        break;
     case #"oic":
     case #"tdm_bb":
     case #"tdm_hc":
@@ -458,9 +458,9 @@ function function_7569c0fb() {
     case #"infect":
         self stats::function_81f5c0fe(#"stat1", self.ekia);
         self stats::function_81f5c0fe(#"stat2", self.deaths);
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

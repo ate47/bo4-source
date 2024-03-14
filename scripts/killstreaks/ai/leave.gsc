@@ -69,7 +69,7 @@ function update_leave() {
 function function_e35eee4d() {
     self endon(#"death");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         players = getplayers();
         canbeseen = 0;
         foreach (player in players) {

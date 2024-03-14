@@ -369,7 +369,7 @@ function private function_75df771f() {
         yoffset = 100;
         var_2f7868e6 = 850;
         var_608ee9cd = 50;
-        for (debugmode = getdvarint(#"hash_2010e59417406d5f", 0); 1; debugmode = getdvarint(#"hash_2010e59417406d5f", 0)) {
+        for (debugmode = getdvarint(#"hash_2010e59417406d5f", 0); true; debugmode = getdvarint(#"hash_2010e59417406d5f", 0)) {
             waitframe(1);
             var_f3ac248f = getdvarint(#"hash_2010e59417406d5f", 0);
             if (var_f3ac248f != 0) {
@@ -416,7 +416,7 @@ function private function_75df771f() {
 // Checksum 0x7706c312, Offset: 0x1ff8
 // Size: 0xd4
 function private _debuggameobjects() {
-    while (1) {
+    while (true) {
         waitframe(1);
         /#
             if (!getdvarint(#"ai_debuggameobjects", 0) || !isdefined(level.a_gameobjects)) {
@@ -435,7 +435,7 @@ function private _debuggameobjects() {
 // Size: 0xaa
 function private function_f0be958() {
     /#
-        while (1) {
+        while (true) {
             waitframe(1);
             if (!getdvarint(#"hash_1e47802a0e8997e3", 0) || !isdefined(level.var_8239a46c)) {
                 continue;
@@ -453,7 +453,7 @@ function private function_f0be958() {
 // Size: 0xaa
 function private function_1e535a11() {
     /#
-        while (1) {
+        while (true) {
             waitframe(1);
             if (!getdvarint(#"hash_2e02207d5878b8eb", 0) || !isdefined(level.a_s_breadcrumbs)) {
                 continue;
@@ -686,7 +686,7 @@ function private function_20610c3(volume, color, channel) {
 // Size: 0x48e
 function private function_35fd8254() {
     /#
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_53bff1e7234da64b", 0)) {
                 offset = 30;
                 position = (0, 0, 0);
@@ -838,7 +838,7 @@ function function_704d5fbd(bot, component) {
     }
     switch (component.m_str_type) {
     case #"goto":
-        return;
+        break;
     case #"destroy":
     case #"defend":
         if (function_778568e2(bot)) {
@@ -846,7 +846,7 @@ function function_704d5fbd(bot, component) {
         } else {
             return calculatepathtotrigger(bot, component.var_2956bff4);
         }
-        return;
+        break;
     case #"capturearea":
         return calculatepathtotrigger(bot, component.var_cc67d976);
     }
@@ -1047,10 +1047,10 @@ function function_e696ce55(bot, trigger) {
 // Size: 0x13c
 function calculateprogressrushing(lowerboundpercentile, upperboundpercentile, destroyedobjects, totalobjects, enemydestroyedobjects, enemytotalobjects) {
     if (enemytotalobjects <= 0) {
-        return 0;
+        return false;
     }
     if (totalobjects <= 0) {
-        return 0;
+        return false;
     }
     gameobjectcost = 1 / totalobjects;
     enemygameobjectcost = 1 / enemytotalobjects;
@@ -1065,10 +1065,10 @@ function calculateprogressrushing(lowerboundpercentile, upperboundpercentile, de
 // Size: 0x144
 function calculateprogressthrottling(lowerboundpercentile, upperboundpercentile, destroyedobjects, totalobjects, enemydestroyedobjects, enemytotalobjects) {
     if (enemytotalobjects <= 0) {
-        return 1;
+        return true;
     }
     if (totalobjects <= 0) {
-        return 0;
+        return false;
     }
     gameobjectcost = 1 / totalobjects;
     enemygameobjectcost = 1 / enemytotalobjects;
@@ -1316,7 +1316,7 @@ function function_778568e2(entity) {
         vehicle = entity getvehicleoccupied();
         return (function_4b0c469d(vehicle) == "air");
     }
-    return 0;
+    return false;
 }
 
 // Namespace strategiccommandutility/strategic_command
@@ -1328,7 +1328,7 @@ function function_e1b87d35(entity) {
         vehicle = entity getvehicleoccupied();
         return (function_4b0c469d(vehicle) == "ground");
     }
-    return 0;
+    return false;
 }
 
 // Namespace strategiccommandutility/strategic_command
@@ -1368,7 +1368,7 @@ function function_4732f860(bot) {
         seatnum = vehicle getoccupantseat(bot);
         return (seatnum == 0 && !isdefined(vehicle.attachedpath));
     }
-    return 0;
+    return false;
 }
 
 // Namespace strategiccommandutility/strategic_command
@@ -1379,28 +1379,28 @@ function function_208c970d(gpbundle, var_832340f2) {
     team = util::get_team_mapping(var_832340f2);
     bundle = gpbundle.o_gpbundle;
     if (!isdefined(bundle)) {
-        return 0;
+        return false;
     }
     if (!(bundle.var_96f00c9f === var_832340f2 || bundle.var_96f00c9f === team || bundle.var_eb371c04 === var_832340f2 || bundle.var_eb371c04 === team)) {
-        return 0;
+        return false;
     }
     if (!bundle flag::get("bundle_initialized")) {
-        return 0;
+        return false;
     }
     type = gpbundle.classname;
     switch (type) {
     case #"hash_1c67b29f3576b10d":
         if (!isdefined(bundle.var_27726d51)) {
-            return 0;
+            return false;
         }
         if (!isdefined(bundle.var_27726d51.mdl_gameobject)) {
-            return 0;
+            return false;
         }
         break;
     default:
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace strategiccommandutility/strategic_command
@@ -1421,17 +1421,17 @@ function function_f867cce0(missioncomponent, commanderteam) {
         assert(commanderteam == #"any" || commanderteam == #"allies" || commanderteam == #"axis", "<unknown string>" + commanderteam + "<unknown string>");
     #/
     if (!isdefined(component)) {
-        return 0;
+        return false;
     }
     if (!missioncomponent flag::get("enabled")) {
-        return 0;
+        return false;
     }
     if (missioncomponent flag::get("complete")) {
-        return 0;
+        return false;
     }
     if (component.m_str_team !== commanderteam && component.m_str_team != #"any") {
         if (!isdefined(missioncomponent.var_3093fd62) || missioncomponent.var_3093fd62 == 0) {
-            return 0;
+            return false;
         }
     }
     type = missioncomponent.scriptbundlename;
@@ -1443,9 +1443,9 @@ function function_f867cce0(missioncomponent, commanderteam) {
     case #"hash_4984fd4b0ba666a2":
         break;
     default:
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace strategiccommandutility/strategic_command

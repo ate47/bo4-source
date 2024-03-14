@@ -467,7 +467,7 @@ function function_8b6c61d3(mdl_key) {
 // Size: 0xf8
 function function_5815f500(player) {
     if (player zm_utility::in_revive_trigger()) {
-        return 0;
+        return false;
     }
     if (!player.var_d049df11 && !self.stub.var_f0e6c7a2 flag::get("flag_gazing_stone_in_use")) {
         str_prompt = zm_utility::function_d6046228(#"hash_78daefa5877d95d1", #"hash_4beb10678533accf");
@@ -475,7 +475,7 @@ function function_5815f500(player) {
     } else {
         self sethintstringforplayer(player, #"hash_419b9e1f22265b5b");
     }
-    return 1;
+    return true;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -503,7 +503,7 @@ function function_5caf3d1a() {
 // Size: 0x126
 function function_686b9870() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         player = s_waitresult.activator;
@@ -526,9 +526,9 @@ function function_53c0c5e(player) {
     if (function_fc79b7da("crystal_main_hall") || function_fc79b7da("crystal_library") || function_fc79b7da("crystal_greenhouse")) {
         str_prompt = zm_utility::function_d6046228(#"hash_3dd539cb05389d25", #"hash_2b92feb97bdafc9b");
         self sethintstringforplayer(player, str_prompt);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -537,9 +537,9 @@ function function_53c0c5e(player) {
 // Size: 0x5a
 function function_fc79b7da(str_flag) {
     if (level flag::get(str_flag) && !level flag::get(str_flag + "_key")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -548,7 +548,7 @@ function function_fc79b7da(str_flag) {
 // Size: 0x238
 function function_5ccf9075() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -1029,7 +1029,7 @@ function function_a93fe3a4(str_loc) {
 // Checksum 0x7048072c, Offset: 0x5c08
 // Size: 0x790
 function function_5713470b() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         player = s_result.activator;
@@ -1217,7 +1217,7 @@ function function_617b9c13(n_index, e_player, str_type) {
 // Checksum 0x1f929fc2, Offset: 0x67f0
 // Size: 0xba
 function function_16ce67dd(vol_transform) {
-    while (1) {
+    while (true) {
         a_zombies = getaiteamarray(level.zombie_team);
         for (i = 0; i < a_zombies.size; i++) {
             if (a_zombies[i] istouching(vol_transform) && a_zombies[i].archetype === #"zombie") {
@@ -1504,7 +1504,7 @@ function function_f7b04d9c(s_key) {
         var_4e06036b = 5;
         var_d18f896 = 10;
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
@@ -1989,7 +1989,7 @@ function function_d409a74f(mdl_symbol) {
 // Size: 0xd0
 function function_7752a9e4() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (isdefined(self.var_7988eee5)) {
             /#
@@ -2109,7 +2109,7 @@ function function_7c045e39() {
 function function_52980a22() {
     level endon(#"end_game");
     self endon(#"death", #"hash_26bafee97946f464");
-    while (1) {
+    while (true) {
         self waittill(#"ghost_lost");
         var_844489a = self mansion_util::_print_player_out();
         if (isdefined(var_844489a)) {
@@ -2181,7 +2181,7 @@ function function_450b01a5() {
 function function_c9c7a593() {
     self notify(#"hash_6edff0409a51550e");
     self endon(#"death", #"hash_6edff0409a51550e");
-    while (1) {
+    while (true) {
         a_ai_zombies = getaiteamarray(#"axis");
         foreach (ai_zombie in a_ai_zombies) {
             if (!isalive(ai_zombie) || !isdefined(ai_zombie.archetype)) {
@@ -2334,7 +2334,7 @@ function function_900b7dca(var_878f0f0a, var_5a365909 = 0, e_player, var_a797e72
     self.var_c176969a endon(#"reached_end_node");
     self.var_9c715b4f = 0;
     self.var_aa273e8b = 0;
-    while (1) {
+    while (true) {
         if (math::cointoss()) {
             var_8423ab7b = #"aib_vign_zm_mnsn_ghost_walk_01";
         } else {
@@ -2564,7 +2564,7 @@ function function_58cb08ba() {
 function function_74d1be5d(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_ec89d606b637daf", #"hash_469be9d3e689cf8d");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -2574,7 +2574,7 @@ function function_74d1be5d(player) {
 function function_5c8eab18(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_33e7f205d1a4abdb", #"hash_3b18f50168dff251");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -2584,7 +2584,7 @@ function function_5c8eab18(player) {
 function function_7c097281(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_c959420bf77c557", #"hash_17fa44f503d31a85");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -2594,7 +2594,7 @@ function function_7c097281(player) {
 function function_5af2281f(player) {
     str_prompt = zm_utility::function_d6046228(#"hash_1cfe0fa2955e2979", #"hash_5538019ad6e6cdc7");
     self sethintstringforplayer(player, str_prompt);
-    return 1;
+    return true;
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -2602,7 +2602,7 @@ function function_5af2281f(player) {
 // Checksum 0x3b6a3ce1, Offset: 0xc350
 // Size: 0x108
 function function_4135e83e() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -2629,7 +2629,7 @@ function function_4135e83e() {
 // Checksum 0x8cf677ab, Offset: 0xc460
 // Size: 0x2b0
 function function_d29a3f81() {
-    while (1) {
+    while (true) {
         /#
             self thread function_debf98ad();
         #/
@@ -2753,7 +2753,7 @@ function function_4dfd5cf6(str_vol, str_flag, vol_defend, var_39cddd2a, var_854f
 function function_51573c45(var_39cddd2a, var_854f3b02) {
     level endon(#"end_game", var_39cddd2a);
     self endon(#"death");
-    while (1) {
+    while (true) {
         level flag::wait_till(var_854f3b02);
         self clientfield::set("" + #"hash_47b8db8cde2c4291", 13);
         level flag::wait_till_clear(var_854f3b02);
@@ -2990,13 +2990,13 @@ function function_418873a4(var_eb6e62b5) {
         switch (n_count) {
         case 3:
             var_eb6e62b5 playsound(#"hash_1a58bf8555bdbb23");
-            continue;
+            break;
         case 6:
             var_eb6e62b5 playsound(#"hash_1a58bf8555bdbb23");
-            continue;
+            break;
         case 9:
             var_eb6e62b5 playsound(#"hash_1a58bf8555bdbb23");
-            continue;
+            break;
         }
     }
     var_eb6e62b5 playsound(#"hash_2fb1c47e5864ae0f");
@@ -3048,7 +3048,7 @@ function function_224d642(var_e62bb9d2) {
     }
     self.fx_org clientfield::set("" + #"hash_51257ec597a8f84f", n_value);
     self playsound(#"hash_5c1e3168236012f9" + n_value);
-    while (1) {
+    while (true) {
         self rotateyaw(180, 3);
         wait(2.95);
     }
@@ -3059,7 +3059,7 @@ function function_224d642(var_e62bb9d2) {
 // Checksum 0x2c50736e, Offset: 0xde08
 // Size: 0x408
 function trigger_think() {
-    while (1) {
+    while (true) {
         /#
             self thread function_debf98ad();
         #/
@@ -3310,7 +3310,7 @@ function function_75e87a52(nd_start, v_color) {
                 var_ce8cd8 = nd_next;
                 continue;
             }
-            return;
+            break;
         }
     #/
 }

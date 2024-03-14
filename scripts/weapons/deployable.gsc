@@ -119,7 +119,7 @@ function function_b20df196(var_a4879492) {
     for (index = 0; index < level.var_160dcfef.var_1b8ab31d.size; index++) {
         if (level.var_160dcfef.var_1b8ab31d[index]._id == var_a4879492) {
             level.var_160dcfef.var_1b8ab31d = array::remove_index(level.var_160dcfef.var_1b8ab31d, index, 0);
-            return;
+            break;
         }
     }
 }
@@ -131,10 +131,10 @@ function function_b20df196(var_a4879492) {
 function function_89d64a2c(origin) {
     foreach (var_5795c216 in level.var_160dcfef.var_1b8ab31d) {
         if (distance2dsquared(var_5795c216.origin, origin) < var_5795c216.radiussqr) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace deployable/deployable
@@ -211,12 +211,12 @@ function function_b3d993e9(deployable_weapon, sethintstring = 0) {
 function private function_ab25be55(weapon, sethintstring) {
     if (self isplayerswimming() && !(isdefined(weapon.canuseunderwater) ? weapon.canuseunderwater : 0)) {
         self sethintstring(#"hash_37605398dce96965");
-        return 0;
+        return false;
     }
     if (!self isonground()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace deployable/deployable
@@ -225,31 +225,31 @@ function private function_ab25be55(weapon, sethintstring) {
 // Size: 0x196
 function private function_831707e8(player, deployable_weapon) {
     if (!(isdefined(deployable_weapon.var_dbbd4cec) && deployable_weapon.var_dbbd4cec)) {
-        return 0;
+        return false;
     }
     if (player depthinwater() > (isdefined(deployable_weapon.var_76127e14) ? deployable_weapon.var_76127e14 : 0)) {
-        return 0;
+        return false;
     }
     if (oob::chr_party(player.origin)) {
-        return 0;
+        return false;
     }
     if (!player isonground()) {
-        return 0;
+        return false;
     }
     if (function_89d64a2c(player.origin)) {
-        return 0;
+        return false;
     }
     if (function_54267517(player.origin)) {
-        return 0;
+        return false;
     }
     traceresults = bullettrace(player.origin + vectorscale((0, 0, 1), 10), player.origin + vectorscale((0, 0, -1), 10), 0, player);
     if (isdefined(traceresults[#"entity"])) {
         entity = traceresults[#"entity"];
         if (!function_db9eb027(entity)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace deployable/deployable
@@ -260,7 +260,7 @@ function private function_867664f6(player) {
     var_8a074131 = worldentnumber();
     groundent = player getgroundent();
     if (!isdefined(groundent)) {
-        return 0;
+        return false;
     }
     return var_8a074131 == groundent getentitynumber();
 }
@@ -402,7 +402,7 @@ function private function_f0adf9c() {
         player thread function_765a2e96();
         return;
     }
-    while (1) {
+    while (true) {
         waitframe(1);
         var_7a3f3edf = player function_b3d993e9(deployable_weapon);
         if (var_7a3f3edf) {
@@ -433,15 +433,15 @@ function function_765a2e96() {
 // Size: 0x8e
 function function_db9eb027(entity) {
     if (!isdefined(entity)) {
-        return 1;
+        return true;
     }
     if (isvehicle(entity) || isai(entity) || entity ismovingplatform()) {
-        return 0;
+        return false;
     }
     if (isdefined(entity.weapon) || isdefined(entity.killstreakid)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace deployable/deployable
@@ -591,7 +591,7 @@ function private on_weapon_change(params) {
 function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {

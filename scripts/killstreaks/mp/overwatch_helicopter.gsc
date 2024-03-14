@@ -132,10 +132,10 @@ function function_ca6698c6() {
     level endon(#"game_ended");
     killstreak_id = player killstreakrules::killstreakstart("overwatch_helicopter", player.team, undefined, 1);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.heli_primary_path) || !level.heli_primary_path.size) {
-        return 0;
+        return false;
     }
     random_path = randomint(level.heli_paths[0].size);
     startnode = level.heli_paths[0][random_path];
@@ -186,7 +186,7 @@ function function_ca6698c6() {
     function_ab667e1c(player, helicopter);
     helicopter thread function_5c15f6d6();
     util::function_5a68c330(21, player.team, player getentitynumber(), #"hash_76bc8a74d60388e4");
-    return 1;
+    return true;
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
@@ -624,7 +624,7 @@ function function_ab667e1c(owner, helicopter) {
 function function_64b435c4(ai) {
     self endon(#"death");
     sniper_glint = #"hash_3db1ecb54b192a49";
-    while (1) {
+    while (true) {
         self waittill(#"sniper_glint");
         if (ai.laserstatus !== 1) {
             tag = ai gettagorigin("tag_flash");
@@ -768,7 +768,7 @@ function function_24de8afe(var_e8c2fadd, owner) {
 // Size: 0x60
 function private function_b5e16bd7(swat_gunner) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         swat_gunner animation::play(#"ai_crew_macv_driver_idle", self.origin, self.angles);
     }
 }

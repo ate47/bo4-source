@@ -75,7 +75,7 @@ function tomahawk_on_player_connect() {
 // Size: 0x21e
 function private watch_for_tomahawk_throw() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"grenade_fire");
         e_grenade = s_result.projectile;
@@ -131,7 +131,7 @@ function private function_932e24b(w_weapon) {
 // Size: 0x142
 function private watch_for_tomahawk_charge() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"grenade_pullback");
         w_grenade = s_result.weapon;
@@ -156,7 +156,7 @@ function private play_charge_fx(w_grenade) {
     self endon(#"death", #"disconnect", #"grenade_fire", #"grenade_throw_cancelled");
     waittillframeend();
     var_673471b1 = 1000;
-    while (1) {
+    while (true) {
         time = gettime() - self.n_tomahawk_cooking_time;
         self.var_4f8fb07f = w_grenade.name;
         if (time >= var_673471b1) {
@@ -169,10 +169,10 @@ function private play_charge_fx(w_grenade) {
             self playrumbleonentity("reload_small");
         }
         if (var_673471b1 > 2400 && self.var_4f8fb07f != #"tomahawk_t8_upgraded") {
-            return;
+            break;
         }
         if (var_673471b1 >= 3400) {
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -186,7 +186,7 @@ function private function_9310fcc0(w_grenade) {
     self endon(#"death", #"disconnect", #"grenade_fire", #"grenade_throw_cancelled");
     self thread tomahawk_rumble(3);
     wait(1);
-    while (1) {
+    while (true) {
         self playrumbleonentity("damage_light");
         wait(0.3);
     }
@@ -446,7 +446,7 @@ function private function_d81951f5(mdl_tomahawk, var_65f2e452) {
 // Size: 0x21c
 function private function_e865484a(mdl_tomahawk, a_ai_zombie, var_65f2e452) {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         ai_zombie = undefined;
         for (i = 0; i < a_ai_zombie.size; i++) {
             if (isalive(a_ai_zombie[i]) && !(isdefined(a_ai_zombie[i].hit_by_tomahawk) && a_ai_zombie[i].hit_by_tomahawk)) {
@@ -665,13 +665,13 @@ function private tomahawk_rumble(var_b2e05bae) {
         switch (var_b2e05bae) {
         case 3:
             self playrumbleonentity("zm_weap_special_activate_rumble");
-            return;
+            break;
         case 1:
             self clientfield::increment_to_player("tomahawk_rumble", 1);
-            return;
+            break;
         case 2:
             self clientfield::increment_to_player("tomahawk_rumble", 2);
-            return;
+            break;
         }
     }
 }

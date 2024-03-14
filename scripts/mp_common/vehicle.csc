@@ -69,7 +69,7 @@ function vehicle_rumble(localclientnum) {
     }
     self.player_touching = 0;
     radius_squared = rumblestruct.radius * rumblestruct.radius;
-    while (1) {
+    while (true) {
         if (distancesquared(self.origin, level.localplayers[localclientnum].origin) > radius_squared || self getspeed() < 35) {
             wait(0.2);
             continue;

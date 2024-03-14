@@ -94,10 +94,10 @@ function function_23e43434(killstreak_id, context, team) {
     result = self supplydrop::usesupplydropmarker(killstreak_id, context);
     self notify(#"supply_drop_marker_done");
     if (!(isdefined(result) && result)) {
-        return 0;
+        return false;
     }
     self killstreaks::play_killstreak_start_dialog("tank_robot", team, killstreak_id);
-    return 1;
+    return true;
 }
 
 // Namespace ai_tank/ai_tank
@@ -144,7 +144,7 @@ function function_22528515() {
     if (isdefined(self.owner)) {
         self.owner endon(#"disconnect");
     }
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = vehicle waittill(#"touch");
         ent = waitresult.entity;

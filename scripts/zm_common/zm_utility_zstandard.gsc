@@ -116,9 +116,9 @@ function function_31e9c9c6(n_round_number) {
 // Size: 0x2a
 function function_e12de7f5(n_round_number) {
     if (isdefined(level.var_26a5066b[n_round_number])) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -127,9 +127,9 @@ function function_e12de7f5(n_round_number) {
 // Size: 0x58
 function function_e37823df() {
     if (getdvarint(#"hash_4d13a1555fce5382", 1) || level flag::exists("doorbuy_key_active")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -140,15 +140,15 @@ function function_5f8f4d1b(e_door) {
     if (level flag::exists("doorbuy_key_active") && level flag::get("doorbuy_key_active")) {
         if (function_ea30ebf3() && isdefined(e_door)) {
             if (e_door.script_flag === function_e9661a10()) {
-                return 1;
+                return true;
             } else {
-                return 0;
+                return false;
             }
         } else {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -181,9 +181,9 @@ function function_22e48b1b(var_9b0e82f2) {
 // Size: 0x1c
 function function_ea30ebf3() {
     if (isdefined(level.var_44dcd588)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -222,12 +222,12 @@ function function_72c90d95(var_232e4ebc) {
 // Size: 0x44
 function function_880bd896() {
     if (isdefined(level.var_9cec6237) && level.var_9cec6237 > 0) {
-        return 1;
+        return true;
     }
     if (!isdefined(level.var_9cec6237)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -337,9 +337,9 @@ function function_27b4c2be(var_35200797 = 1) {
                 case #"symbol_front":
                 case #"symbol_front_debris":
                     var_6c61edec thread function_214563e(var_35200797, var_6c61edec.objectid);
-                    continue;
+                    break;
                 default:
-                    continue;
+                    break;
                 }
             }
         }
@@ -708,7 +708,7 @@ function function_428cfaae(var_679cd7a8, var_6cc77d4e, hide_notify, n_obj_id, va
     level endon(#"end_game", #"hash_1dabaf25a56177a1");
     self endon(#"disconnect");
     self thread zm_equipment::show_hint_text(var_679cd7a8.var_16a34df0, 10, 1.75, 120);
-    while (1) {
+    while (true) {
         if (self [[ var_679cd7a8.var_9fc5eea1 ]]()) {
             objective_setvisibletoplayer(var_e1feb2f6, self);
             objective_setinvisibletoplayer(n_obj_id, self);
@@ -1104,7 +1104,7 @@ function function_766eff6(var_31721422, a_str_zones, var_de0f1997, var_f7c3c527)
 function function_7042bcf9(a_str_zones) {
     self endon(#"disconnect");
     level endon(#"end_game", #"hash_7a04a7fb98fa4e4d");
-    while (1) {
+    while (true) {
         if (!self.var_fd3dfced && self zm_zonemgr::is_player_in_zone(a_str_zones)) {
             self function_ba39d198(level.var_35da2d77, 0);
             self.var_fd3dfced = 1;
@@ -1131,7 +1131,7 @@ function function_7042bcf9(a_str_zones) {
 function player_left_zone(a_str_zones, var_8e2567b1, var_9faecc20) {
     self endon(#"disconnect");
     level endoncallback(&function_4cf5b2e1, #"end_game", #"hash_7a04a7fb98fa4e4d");
-    while (1) {
+    while (true) {
         n_time = isdefined(var_8e2567b1) ? var_8e2567b1 : 5;
         if (!self zm_zonemgr::is_player_in_zone(a_str_zones) && self.sessionstate !== "spectator") {
             if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
@@ -1156,7 +1156,7 @@ function player_left_zone(a_str_zones, var_8e2567b1, var_9faecc20) {
             }
             self zm_trial_util::stop_timer();
         }
-        while (1) {
+        while (true) {
             if (self zm_zonemgr::is_player_in_zone(a_str_zones) && self.sessionstate !== "spectator") {
                 if (level.var_f995ece6 zm_trial_timer::is_open(self)) {
                     level.var_f995ece6 zm_trial_timer::close(self);

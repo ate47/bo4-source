@@ -276,7 +276,7 @@ function private function_22006009(cmd) {
 // Size: 0x358
 function private function_d60f39c2(entity, player, duration, color) {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitframe(1);
         enabled = getdvarint(#"hash_5810c8643adc3e7c", 0);
         var_b90a4dc9 = getdvarint(#"hash_4fad1b23f14d5bc4", 0);

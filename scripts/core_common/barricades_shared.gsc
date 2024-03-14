@@ -35,7 +35,7 @@ class cbarricade : cdoor {
     // Size: 0x12c
     function function_6c15ac46() {
         self.m_e_door endon(#"delete", #"barricade_removed");
-        while (1) {
+        while (true) {
             self.m_e_door endon(#"delete");
             self.m_e_door waittill(#"hash_923096b653062ea");
             if (isdefined(self.var_a2f96f78.target)) {
@@ -54,7 +54,7 @@ class cbarricade : cdoor {
     // Size: 0x142
     function function_da5abae9() {
         self.m_e_door endon(#"delete", #"barricade_removed");
-        while (1) {
+        while (true) {
             self.m_e_door waittill(#"hash_7166c13e79b73f9");
             if (isdefined(self.var_a2f96f78.target)) {
                 var_59746f25 = struct::get_array(self.var_a2f96f78.target, "targetname");
@@ -79,7 +79,7 @@ class cbarricade : cdoor {
             self.m_s_bundle.var_89af4052 = 0;
         }
         var_1913ccf5 = self.m_s_bundle.var_89af4052;
-        while (1) {
+        while (true) {
             self.m_e_door waittill(#"damage");
             if (cdoor::is_open()) {
                 var_1913ccf5--;
@@ -97,7 +97,7 @@ class cbarricade : cdoor {
                         waitframe(1);
                         self.m_e_door.mdl_gameobject delete();
                         self.m_e_door delete();
-                        return;
+                        break;
                     } else {
                         if (cdoor::is_open()) {
                             cdoor::close();

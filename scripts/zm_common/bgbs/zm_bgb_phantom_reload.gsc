@@ -47,7 +47,7 @@ function disable() {
 // Size: 0xd6
 function function_44514728() {
     self endon(#"hash_1980fe24a98adbe4");
-    while (1) {
+    while (true) {
         self waittill(#"reload_start");
         w_current = self getcurrentweapon();
         if (w_current.isabilityweapon) {

@@ -197,25 +197,25 @@ function onconnect() {
 function shouldplayovertimeround() {
     if (overtime::is_overtime_round()) {
         if (game.overtime_round == 1 || !level.gameended) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (!level.scoreroundwinbased) {
         if (game.stat[#"teamscores"][#"allies"] == game.stat[#"teamscores"][#"axis"] && (util::hitroundlimit() || game.stat[#"teamscores"][#"allies"] == level.scorelimit - 1)) {
-            return 1;
+            return true;
         }
     } else {
         alliesroundswon = util::getroundswon(#"allies");
         axisroundswon = util::getroundswon(#"axis");
         if (level.roundwinlimit > 0 && axisroundswon == level.roundwinlimit - 1 && alliesroundswon == level.roundwinlimit - 1) {
-            return 1;
+            return true;
         }
         if (util::hitroundlimit() && alliesroundswon == axisroundswon) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace ctf/ctf
@@ -554,11 +554,11 @@ function function_d1b40f6e(flagteam, var_f1930417) {
     switch (flagteam) {
     case #"allies":
         level clientfield::set_world_uimodel("CTFLevelInfo.flagStateAllies", var_f1930417);
-        return;
+        break;
     case #"axis":
     default:
         level clientfield::set_world_uimodel("CTFLevelInfo.flagStateAxis", var_f1930417);
-        return;
+        break;
     }
 }
 
@@ -574,11 +574,11 @@ function function_18d7960(flagteam, player) {
     switch (flagteam) {
     case #"allies":
         level clientfield::set_world_uimodel("CTFLevelInfo.flagCarrierAllies", entnum);
-        return;
+        break;
     case #"axis":
     default:
         level clientfield::set_world_uimodel("CTFLevelInfo.flagCarrierAxis", entnum);
-        return;
+        break;
     }
 }
 
@@ -784,12 +784,12 @@ function onpickupmusicstate(player) {
 // Size: 0x38
 function ishome() {
     if (isdefined(self.carrier)) {
-        return 0;
+        return false;
     }
     if (self.curorigin != self.trigger.baseorigin) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ctf/ctf
@@ -1149,37 +1149,37 @@ function ctf_getteamkillscore(einflictor, attacker, smeansofdeath, weapon) {
 // Size: 0x37e
 function function_a5f40b8e(player) {
     if (!isdefined(player)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.droptime) && self.droptime >= gettime()) {
-        return 0;
+        return false;
     }
     if (isdefined(player.resurrect_weapon) && player getcurrentweapon() == player.resurrect_weapon) {
-        return 0;
+        return false;
     }
     if (player iscarryingturret()) {
-        return 0;
+        return false;
     }
     currentweapon = player getcurrentweapon();
     if (isdefined(currentweapon)) {
         if (!function_da0a9f3c(currentweapon)) {
-            return 0;
+            return false;
         }
     }
     nextweapon = player.changingweapon;
     if (isdefined(nextweapon) && player isswitchingweapons()) {
         if (!function_da0a9f3c(nextweapon)) {
-            return 0;
+            return false;
         }
     }
     if (player player_no_pickup_time()) {
-        return 0;
+        return false;
     }
     flag = self.visuals[0];
     thresh = 15;
     dist2 = distance2dsquared(flag.origin, player.origin);
     if (dist2 < thresh * thresh) {
-        return 1;
+        return true;
     }
     start = player geteye();
     end = (self.curorigin[0], self.curorigin[1], self.curorigin[2] + 5);
@@ -1200,10 +1200,10 @@ function function_a5f40b8e(player) {
     if (!bullettracepassed(end, start, 0, first_skip_ent, second_skip_ent, 0, 0)) {
         player_origin = (player.origin[0], player.origin[1], player.origin[2] + 10);
         if (!bullettracepassed(end, player_origin, 0, first_skip_ent, second_skip_ent, 0, 0)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace ctf/ctf
@@ -1212,15 +1212,15 @@ function function_a5f40b8e(player) {
 // Size: 0x6e
 function function_da0a9f3c(weapon) {
     if (weapon == level.weaponnone) {
-        return 0;
+        return false;
     }
     if (weapon == getweapon("ball")) {
-        return 0;
+        return false;
     }
     if (killstreaks::is_killstreak_weapon(weapon)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ctf/ctf

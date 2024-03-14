@@ -130,7 +130,7 @@ function private function_745e91e8(entity) {
 // Checksum 0x39031b1c, Offset: 0x710
 // Size: 0x8
 function function_d44ccb0a() {
-    return 1;
+    return true;
 }
 
 // Namespace wz_ai_avogadro/wz_ai_avogadro

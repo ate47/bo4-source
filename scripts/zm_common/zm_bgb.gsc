@@ -223,7 +223,7 @@ function private bgb_finalize() {
 // Size: 0xd8
 function private bgb_player_monitor() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"between_round_over", #"restart_round");
         str_return = waitresult._notify;
@@ -410,16 +410,16 @@ function sub_consumable_bgb(bgb) {
 // Size: 0xb2
 function get_bgb_available(bgb) {
     if (!isdefined(bgb)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.bgb_stats[bgb])) {
-        return 1;
+        return true;
     }
     var_cb4d0349 = self.bgb_stats[bgb].var_c2a984f0;
     n_bgb_used_this_game = self.bgb_stats[bgb].bgb_used_this_game;
     n_bgb_remaining = var_cb4d0349 - n_bgb_used_this_game;
     if (isdefined(level.var_4af38aa3) && level.var_4af38aa3) {
-        return 1;
+        return true;
     }
     return 0 < n_bgb_remaining;
 }
@@ -463,14 +463,14 @@ function bgb_gumball_anim(bgb) {
     self endon(#"disconnect");
     level endon(#"end_game");
     if (self isinmovemode("ufo", "noclip")) {
-        return 0;
+        return false;
     }
     if (self laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     weapon = bgb_get_gumball_anim_weapon(bgb);
     if (!isdefined(weapon)) {
-        return 0;
+        return false;
     }
     while (self isswitchingweapons() || self isusingoffhand() || self isthrowinggrenade() || self ismeleeing() || self function_61efcfe5() || self function_f071483d()) {
         waitframe(1);
@@ -490,10 +490,10 @@ function bgb_gumball_anim(bgb) {
     evt = self waittilltimeout(3, #"hash_593f920e9efd2ecd", #"bgb_gumball_anim_give");
     if (isdefined(evt) && evt.bgb === bgb) {
         if (evt._notify == #"bgb_gumball_anim_give") {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb/zm_bgb
@@ -510,9 +510,9 @@ function function_a6c704c(bgb) {
         self notify(#"hash_27b238d082f65849", bgb);
         self activation_start();
         self thread run_activation_func(bgb);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb/zm_bgb
@@ -743,9 +743,9 @@ function function_e98aa964(var_3e37f503 = 0, str_check = self.bgb) {
     var_e6b14ccc = isdefined(level.var_67713b46) && !self [[ level.var_67713b46 ]]();
     if (!var_3e37f503 && isdefined(self.is_drinking) && self.is_drinking || isdefined(self.bgb_activation_in_progress) && self.bgb_activation_in_progress && !(isdefined(self.var_ec8a9710) && self.var_ec8a9710) || self laststand::player_is_in_laststand() || var_ceb582a8 || var_e6b14ccc || isdefined(self.var_16735873) && self.var_16735873 || isdefined(self.var_30cbff55) && self.var_30cbff55) {
         self clientfield::increment_uimodel("zmhud.bgb_invalid_use");
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace bgb/zm_bgb
@@ -839,7 +839,7 @@ function get_active() {
 // Size: 0x42
 function is_active(name) {
     if (!isdefined(self.bgb)) {
-        return 0;
+        return false;
     }
     return self.bgb == name && isdefined(self.bgb_active) && self.bgb_active;
 }
@@ -851,10 +851,10 @@ function is_active(name) {
 function is_team_active(name) {
     foreach (player in level.players) {
         if (player is_active(name)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb/zm_bgb
@@ -1249,7 +1249,7 @@ function is_enabled(name) {
         assert(isdefined(self.bgb));
     #/
     if (!isdefined(self) || !isdefined(self.bgb)) {
-        return 0;
+        return false;
     }
     return self.bgb === name;
 }
@@ -1275,10 +1275,10 @@ function is_team_enabled(bgb_name) {
             assert(isdefined(player.bgb));
         #/
         if (player.bgb === bgb_name) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb/zm_bgb
@@ -1464,7 +1464,7 @@ function function_3fa57f3f() {
 function function_f51e3503(n_max_distance, var_5250f4f6, var_8bc18989) {
     self endon(#"disconnect", #"bled_out", #"bgb_update");
     self.var_9c42f3fe = [];
-    while (1) {
+    while (true) {
         foreach (e_player in level.players) {
             if (e_player == self) {
                 continue;
@@ -1498,9 +1498,9 @@ function private function_b70b2809(n_distance, var_7b235bec, var_f8084a8) {
     var_8c1c6c8d = n_distance * n_distance;
     var_a91ae6d4 = distancesquared(var_7b235bec.origin, var_f8084a8.origin);
     if (var_a91ae6d4 <= var_8c1c6c8d) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb/zm_bgb
@@ -1552,9 +1552,9 @@ function function_303bde69() {
 // Size: 0x13c
 function function_bd839f2c(e_reviver, var_84280a99) {
     if (isdefined(self.var_bdeb0f02) && self.var_bdeb0f02 || isdefined(e_reviver) && isdefined(self.bgb) && self is_enabled(#"zm_bgb_near_death_experience") || isdefined(e_reviver) && isdefined(e_reviver.bgb) && e_reviver is_enabled(#"zm_bgb_near_death_experience") || isdefined(e_reviver) && isdefined(self.bgb) && self is_enabled(#"zm_bgb_phoenix_up") || isdefined(e_reviver) && isdefined(e_reviver.bgb) && e_reviver is_enabled(#"zm_bgb_phoenix_up") || isdefined(var_84280a99)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bgb/zm_bgb
@@ -1580,8 +1580,8 @@ function bgb_revive_watcher() {
 // Size: 0x24
 function function_69b88b5() {
     if (!(isdefined(self.ready_for_score_events) && self.ready_for_score_events)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

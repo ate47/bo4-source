@@ -97,7 +97,7 @@ function function_903d2d4c(local_client_num) {
     if (!isdefined(level.var_644fb9ec)) {
         level.var_644fb9ec = 0;
     }
-    while (1) {
+    while (true) {
         var_8cf0e703 = function_4878c786(local_client_num, level.weapon_sig_minigun);
         if (!var_8cf0e703 && level.var_644fb9ec) {
             stopforcestreamingxmodel(#"hash_253fe56e77e698b3");
@@ -125,7 +125,7 @@ function function_ec73770b(local_client_num) {
     mountable_point = (0, 0, 0);
     var_982f06c8 = 0;
     var_5a5b4ff7 = 0;
-    while (1) {
+    while (true) {
         if (isdefined(player.var_6b0fde88) && isdefined(obj_id) && getdvarint(#"hash_2281c2e9e7f377ec", 0)) {
             if (!var_5a5b4ff7 && var_8e35a928) {
                 objective_add(local_client_num, obj_id, "active", var_935615f7, mountable_point);
@@ -143,7 +143,7 @@ function function_ec73770b(local_client_num) {
             wait(0.5);
         }
         wait(0.016);
-        if (0) {
+        if (false) {
             start_time = util::get_start_time();
         }
         var_8e35a928 = 0;
@@ -212,7 +212,7 @@ function function_ec73770b(local_client_num) {
                 }
             }
         }
-        if (0) {
+        if (false) {
             util::note_elapsed_time(start_time, "mountable previs time: ");
         }
     }

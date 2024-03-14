@@ -29,10 +29,10 @@ function istacspawntouchingcrates(origin, angles) {
     maxs = (17, 17, 40);
     for (i = 0; i < crate_ents.size; i++) {
         if (crate_ents[i] istouchingvolume(origin + vectorscale((0, 0, 1), 40), mins, maxs)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
@@ -41,7 +41,7 @@ function istacspawntouchingcrates(origin, angles) {
 // Size: 0x148
 function overridespawn(ispredictedspawn) {
     if (!isdefined(self.tacticalinsertion)) {
-        return 0;
+        return false;
     }
     origin = self.tacticalinsertion.origin;
     angles = self.tacticalinsertion.angles;
@@ -50,10 +50,10 @@ function overridespawn(ispredictedspawn) {
         self.tacticalinsertion destroy_tactical_insertion();
     }
     if (team != self.team) {
-        return 0;
+        return false;
     }
     if (istacspawntouchingcrates(origin)) {
-        return 0;
+        return false;
     }
     if (!ispredictedspawn) {
         self.tacticalinsertiontime = gettime();
@@ -61,7 +61,7 @@ function overridespawn(ispredictedspawn) {
         self setspawnclientflag("SCDFL_DISABLE_LOGGING");
         self stats::function_e24eec31(level.weapontacticalinsertion, #"used", 1);
     }
-    return 1;
+    return true;
 }
 
 // Namespace tacticalinsertion/tacticalinsertion
@@ -92,7 +92,7 @@ function watch(player) {
 // Size: 0x1e0
 function watchusetrigger(trigger, callback, playersoundonuse, npcsoundonuse) {
     self endon(#"delete");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         player = waitresult.activator;
@@ -242,7 +242,7 @@ function spawntacticalinsertion() {
     }
     self.tacticalinsertion setcandamage(1);
     self.tacticalinsertion.health = 1;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self.tacticalinsertion waittill(#"damage");
         attacker = waitresult.attacker;
@@ -319,7 +319,7 @@ function canceltackinsertionbutton() {
 // Size: 0x76
 function cancel_button_press() {
     self endon(#"disconnect", #"end_killcam", #"abort_killcam");
-    while (1) {
+    while (true) {
         wait(0.05);
         if (self canceltackinsertionbutton()) {
             break;

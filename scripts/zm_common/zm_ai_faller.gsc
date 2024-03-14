@@ -183,11 +183,11 @@ function zombie_faller_do_fall() {
 function zombie_fall_loop() {
     self endon(#"death");
     self setanimstatefromasd("zm_faller_fall_loop");
-    while (1) {
+    while (true) {
         ground_pos = zm_utility::groundpos_ignore_water_new(self.origin);
         if (self.origin[2] - ground_pos[2] < 20) {
             self notify(#"faller_on_ground");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -209,9 +209,9 @@ function zombie_land() {
 // Size: 0x34
 function zombie_faller_always_drop() {
     if (isdefined(self.zombie_faller_location.drop_now) && self.zombie_faller_location.drop_now) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_faller/zm_ai_faller
@@ -224,7 +224,7 @@ function zombie_faller_drop_not_occupied() {
             return !level.zones[self.zone_name].is_occupied;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_ai_faller/zm_ai_faller
@@ -254,13 +254,13 @@ function zombie_faller_watch_player(player) {
     closerangesqr = closerange * closerange;
     dirtoplayerenter = (0, 0, 0);
     incloserange = 0;
-    while (1) {
+    while (true) {
         distsqr = distance2dsquared(self.origin, player.origin);
         if (distsqr < rangesqr) {
             if (inrange) {
                 if (inrangetime + timer < gettime()) {
                     self.zombie_faller_should_drop = 1;
-                    return;
+                    break;
                 }
             } else {
                 inrange = 1;
@@ -283,7 +283,7 @@ function zombie_faller_watch_player(player) {
                 dirtoplayerexit = vectornormalize(dirtoplayerexit);
                 if (vectordot(dirtoplayerenter, dirtoplayerexit) < 0) {
                     self.zombie_faller_should_drop = 1;
-                    return;
+                    break;
                 }
             }
             incloserange = 0;
@@ -301,12 +301,12 @@ function zombie_fall_wait() {
     if (isdefined(self.zone_name)) {
         if (isdefined(level.zones) && isdefined(level.zones[self.zone_name])) {
             zone = level.zones[self.zone_name];
-            while (1) {
+            while (true) {
                 if (!zone.is_enabled || !zone.is_active) {
                     if (!self potentially_visible(2250000)) {
                         if (self.health != level.zombie_health) {
                             self.zombie_faller_should_drop = 1;
-                            return;
+                            break;
                         } else {
                             self zombie_faller_delete();
                             return;

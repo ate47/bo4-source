@@ -243,7 +243,7 @@ function function_dd162dbf() {
         self.var_c859fa3a = 0;
     }
     self thread grenade_throw_watcher();
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_5bef9c261ba48023");
         if (isdefined(self)) {
@@ -261,7 +261,7 @@ function grenade_throw_watcher() {
     self endon("3cf135e64119b4db");
     level endon(#"hash_75e5d46ef453bd62");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"grenade_fire");
         e_grenade = s_waitresult.projectile;
@@ -373,14 +373,14 @@ function function_8ead19be() {
     self thread function_84eca8f8();
     self.mdl_candle setcandamage(1);
     self.mdl_candle.health = 9999;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self.mdl_candle waittill(#"damage");
         self.mdl_candle.health = 9999;
         if (!self.b_lit) {
             if (isplayer(s_waitresult.attacker) && (s_waitresult.mod === "MOD_BURNED" || s_waitresult.mod === "MOD_PROJECTILE_SPLASH" || s_waitresult.mod === "MOD_EXPLOSIVE")) {
                 self function_b094be90();
-                return;
+                break;
             }
         }
     }
@@ -394,7 +394,7 @@ function function_84eca8f8() {
     level endon(#"game_ended");
     self endon(#"step_done");
     var_4acd2b1 = self.origin + vectorscale((0, 0, 1), 8);
-    while (1) {
+    while (true) {
         if (!self.b_lit) {
             var_6b43c32f = [];
             foreach (e_player in util::get_active_players(#"allies")) {
@@ -430,7 +430,7 @@ function function_3a57d343() {
     self endon(#"death");
     level endon(#"hash_33d9d5dbe3f1e8c2");
     w_wraith_fire = getweapon(#"eq_wraith_fire");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"projectile_impact", #"projectile_impact_explode");
         if (s_waitresult.weapon === w_wraith_fire) {
@@ -588,7 +588,7 @@ function function_11a5f9cf(s_waitresult) {
 // Size: 0x100
 function function_88685116() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator)) {
@@ -609,7 +609,7 @@ function function_88685116() {
 // Size: 0xec
 function function_4c925e67() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator) && isdefined(level.var_3a4aa2ab) && level.var_3a4aa2ab) {
@@ -686,7 +686,7 @@ function function_57e9237a(var_a276c861, ended_early) {
 // Size: 0x152
 function function_1d7382d0() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator)) {
@@ -714,7 +714,7 @@ function function_ffc00d17(var_10372151) {
     var_30cf8a0a = 1;
     b_lookat_check = 1;
     if (!isdefined(var_10372151)) {
-        return 0;
+        return false;
     }
     if (isdefined(var_10372151.script_string)) {
         if (self getstance() != var_10372151.script_string) {
@@ -756,7 +756,7 @@ function function_9215e9d(var_1e99deea, var_711067a4) {
     }
     wait(n_time);
     self notify(#"hash_36de4efbe292709d");
-    return 1;
+    return true;
 }
 
 // Namespace mansion_jordans/zm_mansion_jordans
@@ -783,7 +783,7 @@ function function_8fb5f04c() {
     level.var_55a2003d endon(#"death");
     level.var_55a2003d thread function_220b84f3();
     level.var_55a2003d playloopsound(#"hash_7345cdff8fcc5925");
-    while (1) {
+    while (true) {
         level.var_55a2003d waittill(#"hash_28c5f067b06417a5");
         level.var_55a2003d stoploopsound(1);
         level.var_55a2003d playsound(#"hash_7eb387cfa6f69c57");
@@ -839,7 +839,7 @@ function function_220b84f3() {
     self endon(#"death");
     self.var_c3202114 = 0;
     self waittill(#"hash_72fd666f6ed5a284");
-    while (1) {
+    while (true) {
         if (self.script_string === "prone") {
             var_2d01ed64 = 96;
             var_da117886 = 160;
@@ -1100,7 +1100,7 @@ function function_eb269563() {
     self endon(#"death");
     s_lookat = struct::get(#"gato_saltando_target", "targetname");
     var_1611e2c0 = s_lookat.origin;
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         e_player = s_waitresult.activator;
@@ -1219,7 +1219,7 @@ function function_e6440e06() {
     /#
         var_5245371c = 0;
         var_972ed7e7 = 0;
-        while (1) {
+        while (true) {
             var_8a4bff6d = getdvarint(#"hash_7a278441046d0a08", 0);
             if (var_8a4bff6d != var_5245371c) {
                 switch (var_8a4bff6d) {
@@ -1265,7 +1265,7 @@ function function_e6440e06() {
 function function_6e0ed3e() {
     /#
         level endon(#"hash_7d85bf9a5c90b6d9");
-        while (1) {
+        while (true) {
             foreach (n_index, e_player in getplayers()) {
                 n_y_pos = 720 + 18.7 * n_index;
                 debug2dtext((120, n_y_pos, 0), "<unknown string>" + n_index + "<unknown string>", (1, 1, 0), 1, (0, 0, 0), 0.4, 1, 2);

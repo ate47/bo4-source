@@ -136,7 +136,7 @@ function function_31c7123b() {
 // Size: 0x238
 function function_6c029b7() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -175,7 +175,7 @@ function function_79eec899() {
     level endon(#"end_game");
     function_91ecec97(level.s_shower_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
     open_panels(level.s_shower_trap.a_s_panels);
-    while (1) {
+    while (true) {
         self waittill(#"hash_41d1d9f238b43a7");
         function_91ecec97(level.s_shower_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
         level.s_shower_trap.var_6b64b967 = 1;
@@ -370,7 +370,7 @@ function function_d8a7606() {
 // Size: 0x238
 function function_f24b1ecb() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -409,7 +409,7 @@ function function_64fa1b6a() {
     level endon(#"end_game");
     function_91ecec97(level.s_fire_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
     open_panels(level.s_fire_trap.a_s_panels);
-    while (1) {
+    while (true) {
         self waittill(#"fire_trap_activated");
         function_91ecec97(level.s_fire_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
         level.s_fire_trap.var_6b64b967 = 1;
@@ -600,7 +600,7 @@ function function_982029e3() {
 // Size: 0x238
 function function_6facfabc() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -639,7 +639,7 @@ function function_7fffc105() {
     level endon(#"end_game");
     function_91ecec97(level.s_spinning_trap.a_e_lights, "p8_zm_off_trap_switch_light_green_on");
     open_panels(level.s_spinning_trap.a_s_panels);
-    while (1) {
+    while (true) {
         self waittill(#"hash_5a7f89c0b12d9f27");
         function_91ecec97(level.s_spinning_trap.a_e_lights, "p8_zm_off_trap_switch_light_red_on");
         level.s_spinning_trap.var_6b64b967 = 1;
@@ -690,7 +690,7 @@ function spinning_trap_activate(e_player) {
 // Size: 0x48
 function function_74a809fd() {
     self endon(#"spinning_trap_complete");
-    while (1) {
+    while (true) {
         self.e_trap scene::play("loop");
     }
 }
@@ -877,25 +877,25 @@ function function_af613bbf(a_weapons) {
         self.var_a794d091 = #"hash_2fa3f09f73bf523c";
         self.var_636a8bf7 = #"tr_longburst_t8_upgraded";
         self.var_45c57fa5 setinvisibletoplayer(self, 0);
-        return;
+        break;
     case #"lmg":
         self.var_af561b1f = #"hash_4e543dd90408cd76";
         self.var_a794d091 = #"hash_2e3938a646e43352";
         self.var_636a8bf7 = #"lmg_standard_t8_upgraded";
         self.var_45c57fa5 setinvisibletoplayer(self, 0);
-        return;
+        break;
     case #"ar":
         self.var_af561b1f = #"hash_6dd7b677c74ebba9";
         self.var_a794d091 = #"hash_24f2c78de733d877";
         self.var_636a8bf7 = #"ar_accurate_t8_upgraded";
         self.var_45c57fa5 setinvisibletoplayer(self, 0);
-        return;
+        break;
     case #"shotgun":
         self.var_af561b1f = #"hash_58eff35154ec1990";
         self.var_a794d091 = #"hash_670dd9efc63b2d3c";
         self.var_636a8bf7 = #"shotgun_pump_t8_upgraded";
         self.var_45c57fa5 setinvisibletoplayer(self, 0);
-        return;
+        break;
     }
 }
 
@@ -907,11 +907,11 @@ function function_9d485d13(e_player) {
     if (!e_player.var_5a5bf8e7) {
         str_hint = zm_utility::function_d6046228(e_player.var_af561b1f, e_player.var_a794d091);
         self sethintstring(str_hint);
-        return 1;
+        return true;
     } else {
         self sethintstring("");
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_87b5173f/namespace_87b5173f
@@ -920,7 +920,7 @@ function function_9d485d13(e_player) {
 // Size: 0x11c
 function function_4ef09c7a() {
     self endon(#"hash_5cc6008e5cdc03de");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;

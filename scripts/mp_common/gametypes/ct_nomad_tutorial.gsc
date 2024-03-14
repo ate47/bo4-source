@@ -63,23 +63,23 @@ function function_c9ff0dce() {
         case 1:
             self thread function_1acda64(0.5);
             self thread function_3b95089d(array("s_collision_off_1"), "stop_first_tripwire_collision", undefined);
-            return;
+            break;
         case 2:
             self thread function_1acda64(0.5);
             self thread function_3b95089d(array("s_collision_off_3"), undefined, 1);
-            return;
+            break;
         case 3:
             level.var_2a5b7055 = self;
-            return;
+            break;
         case 4:
             self thread function_3b95089d(array("s_enemy_last_tripwire_target"), undefined, undefined);
-            return;
+            break;
         case 5:
             self thread function_89eab9e8();
-            return;
+            break;
         case 6:
             self thread function_a657cce9();
-            return;
+            break;
         case 7:
             self thread ct_utils::function_402c2175();
             self thread function_1acda64(0.5);
@@ -95,13 +95,13 @@ function function_c9ff0dce() {
             } else {
                 self thread function_47f4423a();
             }
-            return;
+            break;
         case 8:
             self thread function_54f2fd97(0);
-            return;
+            break;
         case 9:
             self thread function_7a427be();
-            return;
+            break;
         }
     }
 }
@@ -202,12 +202,12 @@ function function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon,
             if (isdefined(einflictor) && isdefined(level.e_dog) && einflictor == level.e_dog) {
                 level thread ct_vo::function_41e59aeb(array(#"hash_14f820c919f35aac"), 1);
             }
-            return;
+            break;
         case 9:
             if (isdefined(weapon) && weapon.name == #"gun_ultimate_turret") {
                 level.var_628c0318++;
             }
-            return;
+            break;
         }
     }
 }
@@ -319,7 +319,7 @@ function function_45d34164(var_2970d97, var_9c8d914, var_af764233, var_f1111d99,
             level notify(str_notify);
         }
     }
-    while (1) {
+    while (true) {
         e_player ct_utils::function_6ad0c151();
         for (i = 0; i < var_f1111d99; i++) {
             str_name = var_af764233 + i + 1;
@@ -383,7 +383,7 @@ function function_b93032f4() {
         level.var_bbecb36c = 0;
     }
     self endoncallback(&function_8b2d617b, #"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
@@ -438,7 +438,7 @@ function function_eb17793c() {
     level thread ct_vo::function_14b08e49(array(#"hash_464d77c3e0ec72ce"), "stop_nag");
     level thread function_9d35e9f6();
     b_vo_played = 0;
-    while (1) {
+    while (true) {
         level.var_bbecb36c = 0;
         ct_vo::function_731eb7ed();
         if (!(isdefined(b_vo_played) && b_vo_played)) {
@@ -492,7 +492,7 @@ function function_eb17793c() {
             if (isalive(e_player)) {
                 break;
             }
-            while (1) {
+            while (true) {
                 e_player = getplayers()[0];
                 if (isalive(e_player)) {
                     break;
@@ -523,8 +523,8 @@ function function_eb17793c() {
 function function_9d35e9f6() {
     level endon(#"combattraining_logic_finished", #"hash_a3fad099edf93d6");
     var_9d1c4486 = getent("vol_enemy_tripwire", "targetname");
-    while (1) {
-        while (1) {
+    while (true) {
+        while (true) {
             e_player = getplayers()[0];
             if (e_player istouching(var_9d1c4486)) {
                 break;
@@ -645,7 +645,7 @@ function function_244e4db8() {
     e_player thread ct_utils::function_61c3d59c(#"hash_6b153adcd9c8cfcb", undefined);
     wait(1);
     level notify(#"hash_16cac42598bc6a4");
-    while (1) {
+    while (true) {
         var_e8d6f89 = ct_bots::function_2a8fc6b2();
         if (!var_e8d6f89) {
             break;
@@ -690,7 +690,7 @@ function function_2e9a1486() {
     var_4a97c467 = e_player gamepadusedlast() ? #"hash_72bca7ad9dae4395" : #"hash_21a511b98e1e87eb";
     e_player thread ct_utils::function_61c3d59c(var_4a97c467, array(#"hash_291be481fe8fa00f"));
     level thread ct_vo::function_14b08e49(array(#"hash_38f30198c1a775ac"), "stop_nag");
-    while (1) {
+    while (true) {
         if (isalive(level.e_dog) && level.e_dog ai_state::is_state(0)) {
             break;
         }
@@ -732,7 +732,7 @@ function function_2e9a1486() {
 function function_6d0e5fa5() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         if (!e_player ct_utils::can_see(self.origin + vectorscale((0, 0, 1), 20), 0)) {
             break;
@@ -768,7 +768,7 @@ function function_34696b67() {
     ct_utils::function_9d1fc273(e_bomb, &function_ae12f07c, #"hash_7b74e27a1a2facf8", 5);
     e_bomb.gameobject.onbeginuse = &function_d2b15099;
     e_bomb.gameobject.useweapon = getweapon(#"briefcase_bomb_defuse");
-    while (1) {
+    while (true) {
         level.var_aadd8b8f = undefined;
         s_loc = struct::get("s_bomb_waypoint", "targetname");
         waypoint = ct_utils::create_waypoint(#"hash_43f27b76957da4d2", s_loc.origin, s_loc.angles, #"any", undefined, undefined, undefined);
@@ -793,7 +793,7 @@ function function_34696b67() {
         level.var_47cd3e56 = 0;
         level thread ct_bots::activate_bots(level.var_7b46025.size, #"axis");
         b_timeout = 0;
-        while (1) {
+        while (true) {
             var_f08fde43 = function_4c27be22("A");
             currenttime = gettime();
             if (currenttime > var_f08fde43) {
@@ -898,7 +898,7 @@ function function_76739a65() {
         level.var_7b46025 = struct::get_array("s_bomb_killstreak_bots", "targetname");
         level.var_47cd3e56 = 0;
         level thread ct_bots::activate_bots(level.var_7b46025.size, #"axis");
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             e_player thread ct_utils::function_80bf685b(level.var_de284b17);
             level.var_a86320e8 = gettime() / 1000;
@@ -964,7 +964,7 @@ function function_eadc9c91() {
         level.var_bc487d14 = 0;
         level.var_628c0318 = 0;
         level thread function_1ad0463f();
-        while (1) {
+        while (true) {
             n_bomb_timer = int(gettime() + 1000 + int(60 * 1000));
             setmatchflag("bomb_timer_a", 1);
             setbombtimer("A", n_bomb_timer);
@@ -981,7 +981,7 @@ function function_eadc9c91() {
             level thread function_c8592985();
             var_5fbb94b8 = 0;
             var_1c2eeef4 = 0;
-            while (1) {
+            while (true) {
                 if (isdefined(level.var_81db1765) && !var_5fbb94b8) {
                     e_player = getplayers()[0];
                     e_player thread ct_utils::function_61c3d59c(#"hash_3b92b20f62b78632", undefined);
@@ -1079,7 +1079,7 @@ function function_1ad0463f() {
 function function_b92c6949() {
     level endon(#"combattraining_logic_finished");
     level.var_81db1765 = undefined;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         waitresult = undefined;
         waitresult = e_player waittill(#"ultimate_turret_deployed");
@@ -1111,7 +1111,7 @@ function function_ae12f07c(player) {
 function function_6e98aea7() {
     self endon(#"death");
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"tripwire_spawn");
         level.var_204eb642 = waitresult.tripwire;
@@ -1229,10 +1229,10 @@ function function_3b95089d(var_df7e07e5, var_7c876c46, var_2e663c1b) {
         }
         s_loc = struct::get(var_df7e07e5[i], "targetname");
         self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32);
-        while (1) {
+        while (true) {
             n_dist = distance(self.origin, s_loc.origin);
             if (n_dist < 100) {
-                continue;
+                break;
             }
             waitframe(1);
         }
@@ -1251,7 +1251,7 @@ function function_dfc80de0() {
     wait(2);
     var_66a9afd7 = 0;
     var_545d6c28 = self.origin;
-    while (1) {
+    while (true) {
         n_dist = distance(var_545d6c28, self.origin);
         if (n_dist <= 2) {
             var_66a9afd7++;
@@ -1333,7 +1333,7 @@ function function_47f4423a() {
     self setorigin(s_loc.origin);
     self setplayerangles(s_loc.angles);
     self thread ct_utils::function_5b59f3b7(self.origin, self.angles, 32);
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         self.var_2925fedc = e_player.origin;
         b_can_see = self ct_utils::can_see(e_player.origin + vectorscale((0, 0, 1), 40), 1);
@@ -1342,7 +1342,7 @@ function function_47f4423a() {
         }
         waitframe(1);
     }
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         self thread ct_utils::function_5b59f3b7(e_player.origin, e_player.angles, 200);
         wait(1);
@@ -1440,7 +1440,7 @@ function function_ee509880() {
 // Size: 0x9e
 function function_eb021db8() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"dog_spawned");
         level.e_dog = waitresult.dog;
@@ -1522,7 +1522,7 @@ function function_7a427be() {
 // Size: 0xd2
 function function_e8009771() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"tripwire_detonation");
         var_2249999 = waitresult.entity;
@@ -1561,7 +1561,7 @@ function function_621ffb5a() {
     }
     level.var_448ce02 = 2;
     level.var_632734b1 = 2;
-    while (1) {
+    while (true) {
         if (level.var_448ce02 != level.var_632734b1) {
             e_player = getplayers()[0];
             switch (level.var_632734b1) {

@@ -102,7 +102,7 @@ function private function_8aefaae3(s_burn) {
             self.var_fa03f342 = s_burn.var_5713c703;
         }
     }
-    while (1) {
+    while (true) {
         wait(1);
         n_total_damage = 0;
         var_25c61d06 = 0;
@@ -240,10 +240,10 @@ function private function_bf97ba95() {
 // Size: 0x220
 function function_865a83f8(zombie, target, predictedpos, var_95342913) {
     if (isdefined(zombie.knockdown) && zombie.knockdown || isdefined(zombie.pushed) && zombie.pushed) {
-        return 0;
+        return false;
     }
     if (gibserverutils::isgibbed(zombie, 384)) {
-        return 0;
+        return false;
     }
     checkpos = zombie.origin;
     if (!isactor(target)) {
@@ -253,7 +253,7 @@ function function_865a83f8(zombie, target, predictedpos, var_95342913) {
     var_caa95837 = var_95342913 * var_95342913;
     distsq = distancesquared(predictedpos, checkpos);
     if (distsq > var_caa95837) {
-        return 0;
+        return false;
     }
     origin = target.origin;
     facingvec = anglestoforward(target.angles);
@@ -264,9 +264,9 @@ function function_865a83f8(zombie, target, predictedpos, var_95342913) {
     var_c2ee8451 = vectornormalize(var_c2ee8451);
     var_34e02165 = vectordot(var_c2ee8451, var_3e3c8075);
     if (var_34e02165 < 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_9ff9f642/namespace_9ff9f642

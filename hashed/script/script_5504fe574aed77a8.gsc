@@ -325,13 +325,13 @@ function function_563778cc(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_1c0ed73a9b21a882"], self, "tag_origin");
-        return;
+        break;
     case 2:
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_4ec5da9e09256102"], self, "tag_origin");
-        return;
+        break;
     case 3:
         self.fx = util::playfxontag(localclientnum, level._effect[#"hash_704d3c12d59fb5d7"], self, "tag_origin");
-        return;
+        break;
     }
 }
 

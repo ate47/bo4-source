@@ -120,7 +120,7 @@ function private spawn_enemy() {
             }
         }
         if (var_f55dd0ac < var_47ab7d31) {
-            return 1;
+            return true;
         }
     }
     challenge = zm_trial::function_a36e8c38(#"special_enemy");
@@ -140,7 +140,7 @@ function private spawn_enemy() {
     if (isdefined(spawn_success) && spawn_success) {
         level.zombie_total--;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_trial_special_enemy/zm_trial_special_enemy

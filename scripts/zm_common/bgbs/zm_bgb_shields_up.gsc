@@ -45,14 +45,14 @@ function validation() {
         n_health_max = int(w_shield.weaponstarthitpoints);
         var_9428def3 = self damageriotshield(0);
         if (var_9428def3 < n_health_max) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     if (isdefined(level.var_b115fab2)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_bgb_shields_up/zm_bgb_shields_up

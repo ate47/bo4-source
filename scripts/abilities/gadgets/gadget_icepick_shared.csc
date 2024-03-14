@@ -195,24 +195,24 @@ function function_ca096bad(model, index, namehash, entnum, category, categoryind
 // Size: 0x162
 function function_808efdee(hacker, entity, weapon) {
     if (hacker.team == entity.team) {
-        return 0;
+        return false;
     }
     if (!isdefined(weapon) || !isdefined(weapon.displayname) || weapon.displayname == "") {
-        return 0;
+        return false;
     }
     if (!weapon.var_18608bfe) {
-        return 0;
+        return false;
     }
     if ((entity.type == "missile" || entity.type == "vehicle" || entity.type == "scriptmover") && entity clientfield::get("cant_be_hacked")) {
-        return 0;
+        return false;
     }
     if (entity.type == "NA") {
-        return 0;
+        return false;
     }
     if (weapon == getweapon("gadget_supplypod") && entity.type != "scriptmover") {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace icepick/gadget_icepick_shared
@@ -470,7 +470,7 @@ function private function_34aba8d8(local_client_num, targetid, newval) {
             self notify(#"icepickhacked");
         }
         setuimodelvalue(getuimodel(itemuimodel, "hackStatus"), newval);
-        return;
+        break;
     }
 }
 

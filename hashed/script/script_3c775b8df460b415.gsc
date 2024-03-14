@@ -65,7 +65,7 @@ function is_active() {
 function private movement_watcher() {
     self endon(#"disconnect", #"hash_17c41292130032eb");
     wait(zm_round_logic::get_delay_between_rounds() - 2);
-    while (1) {
+    while (true) {
         var_89276ce9 = 0;
         var_197c85d1 = self getvelocity();
         n_speed = length(var_197c85d1);

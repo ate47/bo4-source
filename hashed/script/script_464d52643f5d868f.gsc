@@ -189,7 +189,7 @@ function function_dc212e9f() {
 // Checksum 0x8536511, Offset: 0x14e0
 // Size: 0xec
 function function_f184754() {
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = self waittill(#"trigger", #"death");
         if (isplayer(s_info.activator) && !s_info.activator laststand::player_is_in_laststand() || s_info._notify === "death") {
@@ -206,7 +206,7 @@ function function_f184754() {
 // Size: 0x12c
 function function_fd3fa3a3() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = self waittill(#"trigger", #"death");
         if (isplayer(s_info.activator) && !s_info.activator laststand::player_is_in_laststand() || s_info._notify === "death") {
@@ -329,7 +329,7 @@ function function_17ccf041() {
     self endon("132dac1db2bd93e0");
     level endon(#"catwalk_event_completed", #"end_game");
     level.var_20cff6f0 = 0;
-    while (1) {
+    while (true) {
         n_check_time = function_27b45f3e();
         e_leader = function_9ac202b9();
         if (isplayer(e_leader)) {

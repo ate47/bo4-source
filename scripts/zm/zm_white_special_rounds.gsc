@@ -426,22 +426,22 @@ function function_3be5a506(str_identifier) {
     switch (str_identifier) {
     case #"green_house":
         exploder::stop_exploder("fxexp_toxic_gas_house_green");
-        return;
+        break;
     case #"yellow_house":
         exploder::stop_exploder("fxexp_toxic_gas_house_yellow");
-        return;
+        break;
     case #"obrien_house":
         exploder::stop_exploder("fxexp_toxic_gas_house_obrien");
-        return;
+        break;
     case #"reinsel_house":
         exploder::stop_exploder("fxexp_toxic_gas_house_reinsel");
-        return;
+        break;
     case #"hammond_house":
         exploder::stop_exploder("fxexp_toxic_gas_house_hammond");
-        return;
+        break;
     case #"hoggatt_house":
         exploder::stop_exploder("fxexp_toxic_gas_house_hoggatt");
-        return;
+        break;
     }
 }
 
@@ -455,27 +455,27 @@ function function_2fc11fb8() {
         /#
             iprintlnbold("ignoreme");
         #/
-        return;
+        break;
     case 1:
         /#
             iprintlnbold("tag_string_03");
         #/
-        return;
+        break;
     case 2:
         /#
             iprintlnbold("<unknown string>");
         #/
-        return;
+        break;
     case 3:
         /#
             iprintlnbold("<unknown string>");
         #/
-        return;
+        break;
     case 4:
         /#
             iprintlnbold("<unknown string>");
         #/
-        return;
+        break;
     }
 }
 
@@ -499,7 +499,7 @@ function function_5c4d70d4(e_player) {
     } else {
         self sethintstring(#"zombie/need_power");
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -711,7 +711,7 @@ function private function_d16d4153() {
 // Size: 0xf4
 function private function_78d01716() {
     self endon(#"death", #"stop_status_effect");
-    while (1) {
+    while (true) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] istouching(self)) {
@@ -1183,7 +1183,7 @@ function function_d12682c5() {
 // Size: 0x30
 function function_c03c3007(e_player) {
     self sethintstring(#"hash_5f2758a66286e12f");
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -1191,7 +1191,7 @@ function function_c03c3007(e_player) {
 // Checksum 0x5969b8f1, Offset: 0x5748
 // Size: 0x1e
 function function_713b8131(e_player) {
-    while (1) {
+    while (true) {
         waitframe(1);
     }
 }
@@ -1283,7 +1283,7 @@ function function_8d7b02b0() {
 // Checksum 0xf3458b1d, Offset: 0x5c68
 // Size: 0x2e
 function function_75cb64de(event, mod, hit_location, zombie_team, damage_weapon) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -1792,9 +1792,9 @@ function function_cc062056() {
     ai = level function_428035a();
     wait(zm_round_logic::get_zombie_spawn_delay(zm_round_logic::get_round_number()));
     if (isdefined(ai)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -1871,7 +1871,7 @@ function function_ec9a1827(var_4aad2831) {
 // Size: 0x140
 function private function_130bfe4() {
     self endon(#"death", #"stop_status_effect");
-    while (1) {
+    while (true) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] istouching(self)) {
@@ -1978,7 +1978,7 @@ function function_f3f325cb(var_148cc603) {
 function function_b448360c() {
     a_s_spawn_locs = level.zm_loc_types[#"dog_location"];
     if (!isdefined(a_s_spawn_locs) || a_s_spawn_locs.size < 1) {
-        return 0;
+        return false;
     }
     var_905a9429 = [];
     var_51fb0ec7 = [];
@@ -1987,7 +1987,7 @@ function function_b448360c() {
         e_target = self.last_closest_player;
     }
     if (!isdefined(e_target)) {
-        return 0;
+        return false;
     }
     foreach (loc in a_s_spawn_locs) {
         sqr_dist = distancesquared(loc.origin, e_target.origin);
@@ -2016,14 +2016,14 @@ function function_b448360c() {
     }
     s_spawn_loc = array::random(var_905a9429);
     if (!isdefined(s_spawn_loc)) {
-        return 0;
+        return false;
     }
     if (isentity(self)) {
         self zm_ai_utility::function_a8dc3363(s_spawn_loc);
         self ghost();
         b_teleported = s_spawn_loc function_13f107c4(self, s_spawn_loc);
         if (isdefined(b_teleported) && !b_teleported) {
-            return 0;
+            return false;
         }
     }
     if (isdefined(self.var_b421bafe) && self.var_b421bafe) {
@@ -2031,7 +2031,7 @@ function function_b448360c() {
         self.var_b421bafe = 0;
         self.no_powerups = 0;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -2282,9 +2282,9 @@ function function_13f107c4(ai, ent) {
         ai val::reset(#"crawler_spawn", "ignoreme");
         ai notify(#"spawn_complete");
         ai notify(#"visible");
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -2321,9 +2321,9 @@ function crawler_round_spawn() {
     ai = function_dd836251();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_white_special_rounds/zm_white_special_rounds
@@ -2556,32 +2556,32 @@ function function_ccc74648(var_f9dc3b9d) {
         self function_1bce0fd();
         self showpart("tag_string_01");
         exploder::exploder("fxexp_script_power_room_monitor_red");
-        return;
+        break;
     case #"string_02":
         self function_1bce0fd();
         self showpart("tag_string_02");
         exploder::exploder("fxexp_script_power_room_monitor_yellow");
-        return;
+        break;
     case #"string_03":
         self function_1bce0fd();
         self showpart("tag_string_03");
         exploder::exploder("fxexp_script_power_room_monitor_white");
-        return;
+        break;
     case #"string_04":
         self function_1bce0fd();
         self showpart("tag_string_04");
         exploder::exploder("fxexp_script_power_room_monitor_red");
-        return;
+        break;
     case #"string_05":
         self function_1bce0fd();
         self showpart("tag_string_05");
         exploder::exploder("fxexp_script_power_room_monitor_yellow");
-        return;
+        break;
     case #"string_06":
         self function_1bce0fd();
         self showpart("tag_string_06");
         exploder::exploder("fxexp_script_power_room_monitor_green");
-        return;
+        break;
     }
 }
 
@@ -2615,7 +2615,7 @@ function function_cb3e8fb9() {
 // Checksum 0x4b670847, Offset: 0xb4d0
 // Size: 0xfe
 function function_3698d819() {
-    while (1) {
+    while (true) {
         level.var_7a86ba58 function_ccc74648("string_01");
         wait(10);
         level.var_7a86ba58 function_ccc74648("string_02");

@@ -97,7 +97,7 @@ function private function_dc856fd8() {
     self endon("7b8b17371dc9188f");
     self endon(#"disconnect", #"allow_ads");
     self allowads(0);
-    while (1) {
+    while (true) {
         self waittill(#"crafting_fail", #"crafting_success", #"bgb_update");
         if (isalive(self)) {
             self allowads(0);
@@ -111,7 +111,7 @@ function private function_dc856fd8() {
 // Size: 0xea
 function private function_16824dc3() {
     self endon(#"disconnect", #"allow_ads");
-    while (1) {
+    while (true) {
         w_curr = self getcurrentweapon();
         if (isalive(self) && self adsbuttonpressed() && (w_curr.dualwieldweapon === level.weaponnone || w_curr.isriotshield)) {
             self zm_trial_util::function_97444b02();
@@ -142,7 +142,7 @@ function private function_33f0ddd3(s_event) {
 // Size: 0xb8
 function function_2d961b95() {
     self endon(#"disconnect", #"allow_ads");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         if (isalive(self)) {

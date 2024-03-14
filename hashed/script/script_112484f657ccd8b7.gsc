@@ -58,7 +58,7 @@ function private on_end(round_reset) {
 function private function_1633056a() {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         if (self function_26f124d8() && !self.heal.enabled) {
             self val::reset(#"hash_10a425ccc9bbccad", "health_regen");
         } else if (!self function_26f124d8() && self.heal.enabled) {
@@ -76,41 +76,41 @@ function private function_26f124d8() {
     switch (level.var_2bd4c60) {
     case #"ads":
         if (self playerads() == 1) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"jump":
         if (self zm_utility::is_jumping()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"slide":
         if (self issliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"hash_6c6c8f6b349b8751":
         if (self zm_utility::is_jumping() || self issliding()) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"crouch":
         if (self getstance() === "crouch") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"prone":
         if (self getstance() === "prone") {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     case #"movement":
     default:
         v_velocity = self getvelocity();
         if (length(v_velocity) != 0) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
 }
 

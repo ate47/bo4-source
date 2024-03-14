@@ -221,24 +221,24 @@ function compare_zone_indicies(zone_a, zone_b) {
     script_index_a = zone_a.script_index;
     script_index_b = zone_b.script_index;
     if (!isdefined(script_index_a) && !isdefined(script_index_b)) {
-        return 0;
+        return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
         /#
             println("<unknown string>" + zone_a.origin);
         #/
-        return 1;
+        return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
         /#
             println("<unknown string>" + zone_b.origin);
         #/
-        return 0;
+        return false;
     }
     if (script_index_a > script_index_b) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace control/control
@@ -265,7 +265,7 @@ function get_zone_array() {
                 for (j = 0; j < zoneindices.size; j++) {
                     if (zoneindices[j] == ind) {
                         zones[zones.size] = allzones[i];
-                        continue;
+                        break;
                     }
                 }
             }
@@ -356,7 +356,7 @@ function function_185b0894(localclientnum, oldval, newval) {
     progresspercentage = 1 / var_f802a6b1;
     waitresult = undefined;
     waitresult = level waittill(#"zone_initialization");
-    while (1) {
+    while (true) {
         foreach (zone in level.zones) {
             if (!isdefined(zone.objectiveid)) {
                 continue;

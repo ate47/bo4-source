@@ -201,12 +201,12 @@ function take_fallback_weapon() {
 // Size: 0x70
 function player_can_see_weapon_prompt() {
     if (isdefined(level._allow_melee_weapon_switching) && level._allow_melee_weapon_switching) {
-        return 1;
+        return true;
     }
     if (isdefined(self zm_loadout::get_player_melee_weapon()) && self hasweapon(self zm_loadout::get_player_melee_weapon())) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_melee_weapon/zm_melee_weapon
@@ -218,10 +218,10 @@ function function_e5bf8f08(player) {
     player_has_weapon = player zm_weapons::has_weapon_or_upgrade(weapon);
     if (isdefined(level.func_override_wallbuy_prompt)) {
         if (!self [[ level.func_override_wallbuy_prompt ]](player, player_has_weapon)) {
-            return 0;
+            return false;
         }
     } else if (zm_trial_disable_buys::is_active()) {
-        return 0;
+        return false;
     } else if (!player_has_weapon && !player zm_utility::is_drinking()) {
         self.stub.cursor_hint = "HINT_WEAPON";
         cost = zm_weapons::get_weapon_cost(weapon);
@@ -255,12 +255,12 @@ function function_e5bf8f08(player) {
         } else {
             self sethintstring(self.stub.hint_string);
         }
-        return 0;
+        return false;
     }
     self.stub.cursor_hint = "HINT_WEAPON";
     self.stub.cursor_hint_weapon = weapon;
     self setcursorhint(self.stub.cursor_hint, self.stub.cursor_hint_weapon);
-    return 1;
+    return true;
 }
 
 // Namespace zm_melee_weapon/zm_melee_weapon

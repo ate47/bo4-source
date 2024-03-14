@@ -467,7 +467,7 @@ function devgui_think() {
     /#
         level notify(#"hash_6d8b1a4c632ecc9");
         level endon(#"hash_6d8b1a4c632ecc9");
-        while (1) {
+        while (true) {
             wait(1);
             cmd = getdvarstring(#"hash_319d902ea18eb39");
             setdvar(#"hash_319d902ea18eb39", "<unknown string>");
@@ -625,7 +625,7 @@ function function_c1d3567c() {
 function function_9bee49bf() {
     /#
         level endon(#"hash_21c0567b0010f696");
-        while (1) {
+        while (true) {
             waitframe(1);
             foreach (ee in level._ee) {
                 ee.debug_hudelem.color = function_1091b2a0(ee);

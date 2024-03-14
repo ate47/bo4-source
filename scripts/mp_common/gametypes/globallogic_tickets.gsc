@@ -85,7 +85,7 @@ function get_zone_start_tickets(zone_index) {
 function watch_time_penalties(team) {
     level notify(#"tickets_watch_time_penalties");
     level endon(#"tickets_watch_time_penalties", #"mission_ended", #"game_ended");
-    while (1) {
+    while (true) {
         penalty_interval = isdefined(getgametypesetting(#"ticketslostontimeinterval")) ? getgametypesetting(#"ticketslostontimeinterval") : 0;
         if (penalty_interval <= 0) {
             wait(0.5);

@@ -117,7 +117,7 @@ function electrocute_actor(ai) {
     case #"basic":
     case #"enhanced":
         ai thread tesla_death(self);
-        return;
+        break;
     }
 }
 

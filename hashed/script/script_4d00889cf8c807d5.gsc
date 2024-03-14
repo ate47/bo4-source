@@ -69,9 +69,9 @@ function round_spawn() {
     ai = function_1ea880bd();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombie_skeleton_util/ai_skeleton_util
@@ -148,9 +148,9 @@ function function_bdd7ec59() {
     var_14bd36c2 = function_331e9312();
     var_f11e475c = function_d3195b0c();
     if (!(isdefined(level.var_4a03b294) && level.var_4a03b294) && isdefined(level.var_5e45f817) && level.var_5e45f817 || var_14bd36c2 >= var_f11e475c || !level flag::get("spawn_zombies")) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_skeleton_util/ai_skeleton_util
@@ -256,11 +256,11 @@ function function_ad4293a8() {
     a_s_spawn_locs = function_3ce1516d(level.zm_loc_types[#"zombie_location"]);
     if (!isarray(a_s_spawn_locs) || a_s_spawn_locs.size < 1) {
         self.b_ignore_cleanup = 1;
-        return 1;
+        return true;
     }
     if (zm_utility::is_standard() && level flag::exists("started_defend_area") && level flag::get("started_defend_area")) {
         self.b_ignore_cleanup = 1;
-        return 1;
+        return true;
     }
     var_31f7011a = arraycopy(getplayers());
     var_31f7011a = arraysortclosest(var_31f7011a, self.origin);
@@ -283,7 +283,7 @@ function function_ad4293a8() {
         }
     }
     self zm_ai_utility::function_a8dc3363(var_b2aa54a9);
-    return 1;
+    return true;
 }
 
 // Namespace zombie_skeleton_util/ai_skeleton_util

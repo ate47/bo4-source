@@ -92,13 +92,13 @@ function function_db40057d(localclientnum, oldval, newval, bnewent, binitialsnap
     switch (newval) {
     case 1:
         playsound(0, #"hash_731251c4b03b5b09", (0, 0, 0));
-        return;
+        break;
     case 2:
         playsound(0, #"hash_731251c4b03b5b09", (0, 0, 0));
-        return;
+        break;
     case 3:
         playsound(0, #"hash_731251c4b03b5b09", (0, 0, 0));
-        return;
+        break;
     }
 }
 

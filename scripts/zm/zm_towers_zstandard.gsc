@@ -131,7 +131,7 @@ function intro_blight_father(n_round_number) {
 function function_b03369f() {
     var_d5d4e4c5 = struct::get(#"p8_fxanim_zm_towers_pap_door_red_bundle", "scriptbundlename");
     var_ef946c5f = struct::get(#"p8_fxanim_zm_towers_pap_door_blue_bundle", "scriptbundlename");
-    while (1) {
+    while (true) {
         var_e43d143e = 0;
         foreach (player in level.players) {
             if (player zm_zonemgr::is_player_in_zone(array(#"zone_danu_ra_tunnel", #"zone_pap_room", #"zone_pap_room_balcony_flooded_crypt")) && player util::is_player_looking_at(var_d5d4e4c5.origin, 0.9, 0) || player zm_zonemgr::is_player_in_zone(array(#"zone_odin_zeus_tunnel", #"zone_pap_room", #"zone_pap_room_balcony_flooded_crypt")) && player util::is_player_looking_at(var_ef946c5f.origin, 0.9, 0)) {
@@ -187,7 +187,7 @@ function function_bbbc20bf(var_a7bc1cee = 0) {
 // Size: 0xea
 function function_b9cacd48() {
     /#
-        while (1) {
+        while (true) {
             foreach (str_index, s_defend_area in level.a_s_defend_areas) {
                 s_defend_area = zm_utility::function_a877cd10(str_index);
                 zm_utility::function_11101458(str_index);
@@ -207,7 +207,7 @@ function activate_pap_altar() {
     level thread function_bbbc20bf();
     level clientfield::set("pap_force_stream", 1);
     var_35103e6d = struct::get(#"p8_fxanim_zm_towers_pap_sarcophagus_bundle", "scriptbundlename");
-    while (1) {
+    while (true) {
         var_52eeb37 = 0;
         foreach (player in level.players) {
             if (player zm_zonemgr::is_player_in_zone(array(#"zone_pap_room", #"zone_pap_room_balcony_flooded_crypt")) && player util::is_player_looking_at(var_35103e6d.origin, 0.9, 0)) {
@@ -362,7 +362,7 @@ function defend_areas() {
     zm_utility::function_33798535(s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7);
     str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
     n_wait_time = 45;
-    for (var_837cd1b4 = 0; 1; var_837cd1b4++) {
+    for (var_837cd1b4 = 0; true; var_837cd1b4++) {
         zm_utility::function_11101458(str_next_defend);
         wait(n_wait_time);
         s_defend_area = zm_utility::function_a877cd10(str_next_defend);
@@ -389,7 +389,7 @@ function defend_areas() {
 // Size: 0xdc
 function function_5dff542c() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         level waittill(#"hash_7a04a7fb98fa4e4d");
         foreach (player in level.players) {
             if (isalive(player)) {
@@ -497,7 +497,7 @@ function function_dcf7377c(n_round_number) {
 // Size: 0x2f8
 function function_3747b95() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_4ffec9c5f552e6fc");
         if (isdefined(s_waitresult.e_door) && isdefined(s_waitresult.e_door.script_flag)) {

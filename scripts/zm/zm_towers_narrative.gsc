@@ -336,7 +336,7 @@ function function_51f7da68() {
         mdl_fx clientfield::set("" + #"hash_5afda864f8b64f5c", 0);
         self flag::clear(#"hash_6e4b1162d4626a6e");
     }
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_3042a9bf2f57ea0a");
         v_origin = s_waitresult.var_814c9389;
@@ -371,14 +371,14 @@ function function_da2c37fc() {
     level endon(#"end_game", #"hash_407e0345ce2708de");
     self endon(#"disconnect");
     vol_pedestal = getent("vol_narrative_smash", "targetname");
-    while (1) {
+    while (true) {
         for (e_storm = self.e_storm; !isdefined(e_storm); e_storm = self.e_storm) {
             waitframe(1);
         }
         if (e_storm istouching(vol_pedestal)) {
             self thread function_2160d544();
             level flag::set(#"hash_407e0345ce2708de");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -406,7 +406,7 @@ function function_964ec142() {
     level endon(#"end_game");
     self endon(#"death", #"weapon_change");
     vol_cipher = getent("vol_narrative_dirt", "targetname");
-    while (1) {
+    while (true) {
         self waittill(#"weapon_melee");
         if (self getcurrentweapon() == level.hero_weapon[#"hammer"][2]) {
             v_origin = self getweaponmuzzlepoint();
@@ -416,7 +416,7 @@ function function_964ec142() {
             v_hit = a_trace[#"position"];
             if (isdefined(v_hit) && istouching(v_hit, vol_cipher)) {
                 level flag::set(#"hash_3eea1302aae8fea1");
-                return;
+                break;
             }
         }
     }
@@ -479,7 +479,7 @@ function function_1d63d95a() {
         var_8a88c4c8 delete();
         return;
     }
-    while (1) {
+    while (true) {
         level flag::wait_till("special_round");
         level thread function_1614d162();
         level thread function_ce1c5cac();
@@ -543,7 +543,7 @@ function function_341bdf82() {
     self endon("45a4563ed2519f47");
     level endon(#"end_game");
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         w_weapon = s_waitresult.weapon;
@@ -599,7 +599,7 @@ function function_ca4e26c3() {
     level endon(#"end_game", #"hash_aab8ed14df98649");
     self endon(#"disconnect");
     var_59795ba5 = array(level.hero_weapon[#"sword_pistol"][0].dualwieldweapon, level.hero_weapon[#"sword_pistol"][1].dualwieldweapon, level.hero_weapon[#"sword_pistol"][2].dualwieldweapon);
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_fired");
         w_weapon = s_waitresult.weapon;
@@ -647,7 +647,7 @@ function acid_trap_think() {
     var_4d42c97f = arraygetclosest(var_8a88c4c8.origin, var_74331c2);
     var_4d42c97f thread function_e6f26f04();
     var_4d42c97f thread function_ffc6c45f();
-    while (1) {
+    while (true) {
         level flag::wait_till_all(array(#"hash_3e90f82a2802b3", #"hash_26c9e53e0e558572"));
         var_8a88c4c8 clientfield::set("" + #"hash_2407f687f7d24a83", 1);
         level flag::wait_till_clear_any(array(#"hash_3e90f82a2802b3", #"hash_26c9e53e0e558572"));
@@ -678,7 +678,7 @@ function function_e6f26f04() {
     level endon(#"end_game");
     self endon(#"death");
     str_id = self.script_string;
-    while (1) {
+    while (true) {
         var_33f252eb = undefined;
         var_33f252eb = level waittill(#"trap_activate");
         if (var_33f252eb === self) {
@@ -700,7 +700,7 @@ function function_e6f26f04() {
 function function_ffc6c45f() {
     level endon(#"end_game");
     self endon(#"death");
-    while (1) {
+    while (true) {
         wait(1);
         var_89a92e6f = 0;
         foreach (e_player in level.players) {
@@ -730,7 +730,7 @@ function function_81c8a125() {
     } else {
         var_8b789c96 = 0;
         var_63e5fc38 = a_t_shields.size;
-        while (1) {
+        while (true) {
             t_shield = trigger::wait_till("t_narrative_destiny");
             if (var_8b789c96 != t_shield.script_int) {
                 var_7ef1d61 = var_8b789c96 + 1;
@@ -800,7 +800,7 @@ function function_cb2c487d() {
     s_trap = level.var_abf198ff[3];
     var_9f02e39c = s_trap.var_1171b93e[0];
     var_f9b9263d = 0;
-    while (1) {
+    while (true) {
         while (!(isdefined(var_9f02e39c.var_94de9684) && var_9f02e39c.var_94de9684)) {
             waitframe(1);
         }
@@ -860,7 +860,7 @@ function function_cab1990a() {
     level endon(#"end_game", #"hash_4863d7214aa660e2");
     self endon(#"disconnect");
     vol_roof = getent("vol_narrative_wipe", "targetname");
-    while (1) {
+    while (true) {
         while (!(isdefined(self.var_1de56cc8) && self.var_1de56cc8)) {
             waitframe(1);
         }
@@ -1005,7 +1005,7 @@ function function_2cb83322(var_1600546f, var_759598cf) {
 // Size: 0x6e
 function function_415b58b1(var_1600546f, s_crying, var_9185084) {
     level endon(#"game_end", #"quit_crying");
-    while (1) {
+    while (true) {
         var_9185084 playsound(var_1600546f);
         wait(12);
     }

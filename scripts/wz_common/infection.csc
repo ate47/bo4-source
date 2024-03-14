@@ -45,7 +45,7 @@ function on_localclient_connect(localclientnum) {
 // Size: 0xfe
 function private function_667d34b7(localclientnum) {
     var_d5823792 = 0;
-    while (1) {
+    while (true) {
         local_player = function_5c10bd79(localclientnum);
         if (isdefined(local_player)) {
             infected = local_player clientfield::get_to_player("infected");
@@ -95,7 +95,7 @@ function private function_e5f3924e(localclientnum) {
 // Size: 0x1bc
 function private function_325e85a2(localclientnum) {
     self endon(#"hash_4f90e54d76985430");
-    while (1) {
+    while (true) {
         players = getplayers(localclientnum);
         foreach (player in players) {
             corpse = player getplayercorpse();

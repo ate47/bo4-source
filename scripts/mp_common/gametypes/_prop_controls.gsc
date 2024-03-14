@@ -56,55 +56,55 @@ function function_255e9614(command, key) {
     switch (key) {
     case #"+attack":
         function_9024fce3(&attackbuttonpressed, command);
-        return;
+        break;
     case #"+toggleads_throw":
         function_9024fce3(&adsbuttonpressed, command);
-        return;
+        break;
     case #"+changeseat":
         function_9024fce3(&changeseatbuttonpressed, command);
-        return;
+        break;
     case #"+usereload":
         function_9024fce3(&usebuttonpressed, command);
-        return;
+        break;
     case #"+smoke":
         function_9024fce3(&secondaryoffhandbuttonpressed, command);
-        return;
+        break;
     case #"+frag":
         function_9024fce3(&fragbuttonpressed, command);
-        return;
+        break;
     case #"+actionslot 1":
         function_9024fce3(&actionslotonebuttonpressed, command);
-        return;
+        break;
     case #"+actionslot 2":
         function_9024fce3(&actionslottwobuttonpressed, command);
-        return;
+        break;
     case #"+actionslot 3":
         function_9024fce3(&actionslotthreebuttonpressed, command);
-        return;
+        break;
     case #"+actionslot 4":
         function_9024fce3(&actionslotfourbuttonpressed, command);
-        return;
+        break;
     case #"-actionslot 1":
         function_21e5a72f(&actionslotonebuttonpressed, command);
-        return;
+        break;
     case #"-actionslot 2":
         function_21e5a72f(&actionslottwobuttonpressed, command);
-        return;
+        break;
     case #"-actionslot 3":
         function_21e5a72f(&actionslotthreebuttonpressed, command);
-        return;
+        break;
     case #"-actionslot 4":
         function_21e5a72f(&actionslotfourbuttonpressed, command);
-        return;
+        break;
     case #"+stance":
         function_21e5a72f(&stancebuttonpressed, command);
-        return;
+        break;
     case #"+breath_sprint":
         function_21e5a72f(&sprintbuttonpressed, command);
-        return;
+        break;
     case #"+melee":
         function_21e5a72f(&meleebuttonpressed, command);
-        return;
+        break;
     }
 }
 
@@ -113,7 +113,7 @@ function function_255e9614(command, key) {
 // Checksum 0x5670318a, Offset: 0x8d8
 // Size: 0x5c
 function function_9024fce3(var_59b87232, command) {
-    while (1) {
+    while (true) {
         while (!self [[ var_59b87232 ]]()) {
             waitframe(1);
         }
@@ -129,7 +129,7 @@ function function_9024fce3(var_59b87232, command) {
 // Checksum 0x4b99ad1a, Offset: 0x940
 // Size: 0x5c
 function function_21e5a72f(var_59b87232, command) {
-    while (1) {
+    while (true) {
         while (!self [[ var_59b87232 ]]()) {
             waitframe(1);
         }
@@ -306,7 +306,7 @@ function function_ec04079a() {
     }
     waittillframeend();
     var_8671d17 = self is_player_gamepad_enabled();
-    while (1) {
+    while (true) {
         var_4084aa7 = self is_player_gamepad_enabled();
         if (var_4084aa7 != var_8671d17) {
             var_8671d17 = var_4084aa7;
@@ -346,7 +346,7 @@ function propinputwatch() {
     self thread function_68d1fd31();
     self thread function_be19060b();
     self.var_960f723f = 1;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"lock", #"spin", #"changeprop", #"settoslope", #"propability", #"cloneprop", #"hide");
         msg = waitresult._notify;
@@ -483,7 +483,7 @@ function propchange() {
 function function_a70825e1() {
     /#
         if (isdefined(self.var_f18a4260) && self.var_f18a4260) {
-            return 1;
+            return true;
         }
     #/
     return self.changesleft > 0;
@@ -632,7 +632,7 @@ function function_88cea693() {
 function function_39049635() {
     /#
         if (isdefined(self.var_7ddbf78d) && self.var_7ddbf78d) {
-            return 1;
+            return true;
         }
     #/
     return self.clonesleft > 0;
@@ -675,7 +675,7 @@ function function_85a28bcc(newvalue) {
 function function_5e6d610b() {
     /#
         if (isdefined(self.var_d0e95c44) && self.var_d0e95c44) {
-            return 1;
+            return true;
         }
     #/
     return self.abilityleft > 0;
@@ -840,7 +840,7 @@ function function_68d1fd31() {
     var_554b8919 = 0;
     var_cd6d7e01 = 0;
     var_de410ab8 = 0;
-    while (1) {
+    while (true) {
         waitframe(1);
         movement = self getnormalizedmovement();
         jumping = self jumpbuttonpressed();
@@ -1087,7 +1087,7 @@ function function_be19060b() {
     level endon(#"game_ended");
     var_fc464c9b = 10;
     self.thirdpersonrange = self.prop.info.proprange;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"zoomin", #"zoomout");
         zoom = waitresult._notify;
@@ -1121,12 +1121,12 @@ function function_138e42e4() {
     switch (self.currentability) {
     case #"flash":
         self.var_5478a045.label = #"mp_ph_flash";
-        return;
+        break;
     default:
         /#
             assertmsg("<unknown string>");
         #/
-        return;
+        break;
     }
 }
 
@@ -1141,18 +1141,18 @@ function setnewabilitycount(var_8c8fd413, count) {
             count = level.phsettings.propnumflashes;
         }
         function_59c73c21(count);
-        return;
+        break;
     case #"clone":
         if (!isdefined(count)) {
             count = level.phsettings.propnumclones;
         }
         function_85a28bcc(count);
-        return;
+        break;
     default:
         /#
             assertmsg("<unknown string>" + var_8c8fd413);
         #/
-        return;
+        break;
     }
 }
 
@@ -1370,7 +1370,7 @@ function watchspecialgrenadethrow() {
     level endon(#"game_ended");
     self notify(#"watchspecialgrenadethrow");
     self endon(#"watchspecialgrenadethrow");
-    while (1) {
+    while (true) {
         res = undefined;
         res = self waittill(#"grenade_fire");
         grenade = res.projectile;
@@ -1483,7 +1483,7 @@ function function_58699cee(index) {
             function_45534e6c(1);
             function_d08dcbaf(0);
             function_44a27dd6(1);
-            return;
+            break;
         }
     }
 }
@@ -1597,10 +1597,10 @@ function function_d3b8a20e(damageorigin) {
 function function_791579c9(index) {
     foreach (var_f21c4191 in level.var_fe458fef[index].players) {
         if (isdefined(var_f21c4191) && var_f21c4191 == self) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop_controls/_prop_controls

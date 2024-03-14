@@ -505,7 +505,7 @@ function function_11e35de5(t_new) {
 function function_5ef70b0b(e_player) {
     level endon(#"end_game");
     e_player endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = self waittill(#"trigger");
         if (s_info.activator == e_player && e_player flag::get(#"flag_player_completed_all_challenges")) {
@@ -1111,7 +1111,7 @@ function function_347214f4(e_player) {
     self endon(#"temple_challenge_completed");
     e_player endon(#"disconnect");
     var_24f5d9f8 = array("zone_pap_room", "zone_pap_room_balcony_flooded_crypt");
-    while (1) {
+    while (true) {
         level waittill(#"start_of_round");
         str_zone = e_player zm_zonemgr::get_player_zone();
         if (!isinarray(var_24f5d9f8, str_zone)) {
@@ -1138,7 +1138,7 @@ function function_29c490cf(var_31e6bd22) {
     self endon(#"death", #"hash_7df55853368e6305");
     var_31e6bd22 endon(#"temple_challenge_completed");
     var_24f5d9f8 = array("zone_pap_room", "zone_pap_room_balcony_flooded_crypt");
-    while (1) {
+    while (true) {
         str_zone = self zm_zonemgr::get_player_zone();
         if (!isinarray(var_24f5d9f8, str_zone)) {
             break;
@@ -1429,7 +1429,7 @@ function function_295948b2() {
     self endon(#"disconnect", #"hash_5d7c0e41aec8535e");
     e_player = self;
     n_progress = 0;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = e_player waittill(#"hash_46064b6c2cb5cf20");
         if (!isdefined(e_player) || !isplayer(e_player) || !isdefined(e_player.challenge_struct) || !isdefined(e_player.challenge_struct.var_8bafcbf3)) {
@@ -1619,7 +1619,7 @@ function function_fc8ff5f4(e_player) {
 function function_ea1042c6(var_986431d3, var_394c506d) {
     var_986431d3.challenge_struct = struct::get(var_986431d3.target);
     var_394c506d sethintstring(#"hash_685d7c68f4c511a7");
-    while (1) {
+    while (true) {
         s_info = undefined;
         s_info = var_986431d3 waittill(#"trigger");
         e_player = s_info.activator;
@@ -1737,7 +1737,7 @@ function function_51aa96c6(var_8efcfa9f) {
         return;
     }
     self.var_561f7ea3 = 0;
-    while (1) {
+    while (true) {
         self.var_561f7ea3 = 0;
         if (isdefined(var_8efcfa9f) && self util::is_looking_at(var_8efcfa9f)) {
             self.var_561f7ea3 = 1;
@@ -1760,7 +1760,7 @@ function function_51aa96c6(var_8efcfa9f) {
             self.var_3e49c037 = undefined;
             self.challenge_struct.var_860b8f1e++;
             self thread function_e2e90905();
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -1904,7 +1904,7 @@ function _good_door_opened(e_player, e_trig) {
 function registerlove_mountain_(e_player) {
     e_player endon(#"disconnect", #"hash_4ac0558a94ba3fd7", #"hash_5a74f9da0718c63d", #"hash_6534297bbe7e180d");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = e_player waittill(#"perk_acquired");
         if (s_waitresult.var_16c042b8 === self.var_62fef0f1) {

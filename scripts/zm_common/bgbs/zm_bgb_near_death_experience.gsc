@@ -123,39 +123,39 @@ function function_fa0a1b19() {
 // Size: 0x220
 function function_d5c9a81(e_revivee) {
     if (!isdefined(e_revivee.revivetrigger)) {
-        return 0;
+        return false;
     }
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (self laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     if (self.team != e_revivee.team) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_zombie) && self.is_zombie) {
-        return 0;
+        return false;
     }
     if (isdefined(level.can_revive_use_depthinwater_test) && level.can_revive_use_depthinwater_test && e_revivee depthinwater() > 10) {
-        return 1;
+        return true;
     }
     if (isdefined(level.can_revive) && ![[ level.can_revive ]](e_revivee)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_1461fd14) && ![[ level.var_1461fd14 ]](e_revivee)) {
-        return 0;
+        return false;
     }
     if (e_revivee zm_player::in_kill_brush() || !e_revivee zm_player::in_enabled_playable_area()) {
-        return 0;
+        return false;
     }
     if (self bgb::is_enabled(#"zm_bgb_near_death_experience") && isdefined(self.var_9c42f3fe) && array::contains(self.var_9c42f3fe, e_revivee)) {
-        return 1;
+        return true;
     }
     if (e_revivee bgb::is_enabled(#"zm_bgb_near_death_experience") && isdefined(e_revivee.var_9c42f3fe) && array::contains(e_revivee.var_9c42f3fe, self)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
@@ -164,7 +164,7 @@ function function_d5c9a81(e_revivee) {
 // Size: 0x66
 function lost_perk_override(perk, var_a83ac70f = undefined, var_6c1b825d = undefined) {
     self thread zm_perks::function_b2dfd295(perk, &bgb::function_bd839f2c);
-    return 0;
+    return false;
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience
@@ -175,7 +175,7 @@ function function_db295169(e_player) {
     var_4cd31497 = "zm_bgb_near_death_experience_proximity_end_" + self getentitynumber();
     e_player endon(var_4cd31497, #"disconnect");
     self endon(#"disconnect", #"zm_bgb_near_death_experience_complete");
-    while (1) {
+    while (true) {
         if (!e_player laststand::player_is_in_laststand() && !self laststand::player_is_in_laststand()) {
             util::waittill_any_ents_two(e_player, "player_downed", self, "player_downed");
         }
@@ -219,7 +219,7 @@ function function_991be229(e_player, str_notify) {
     while (!self function_d5c9a81(e_player) && !e_player function_d5c9a81(self)) {
         wait(0.1);
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_bgb_near_death_experience/zm_bgb_near_death_experience

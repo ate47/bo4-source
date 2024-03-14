@@ -49,7 +49,7 @@ function postfxbundledebuglisten() {
         setdvar(#"scr_play_postfx_bundle", "<unknown string>");
         setdvar(#"scr_stop_postfx_bundle", "<unknown string>");
         setdvar(#"scr_exit_postfx_bundle", "<unknown string>");
-        while (1) {
+        while (true) {
             playbundlename = getdvarstring(#"scr_play_postfx_bundle");
             if (playbundlename != "<unknown string>") {
                 self thread playpostfxbundle(playbundlename);
@@ -81,7 +81,7 @@ function function_764eb053() {
         var_4828f60f = 0;
         var_e0f0fb1d = "<unknown string>";
         ent = undefined;
-        while (1) {
+        while (true) {
             showmodel = getdvarint(#"hash_56d8c90edb7a97b6", 0);
             showviewmodel = getdvarint(#"hash_65c459b02d95c9c9", 0);
             newspawn = 0;

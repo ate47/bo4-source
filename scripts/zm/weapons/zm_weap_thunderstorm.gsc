@@ -84,7 +84,7 @@ function function_72e5d54f(watcher) {
 // Size: 0xda
 function function_6c5cb6e() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change");
         wpn_cur = s_result.weapon;
@@ -104,7 +104,7 @@ function function_6c5cb6e() {
 function function_feb1573e() {
     self notify(#"hash_2938992396267cf3");
     self endon(#"disconnect", #"hash_2938992396267cf3");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"grenade_fire", #"grenade_throw_cancelled");
         if (s_result.weapon == getweapon(#"thunderstorm")) {
@@ -148,12 +148,12 @@ function function_39a41e25(watcher, player) {
 // Size: 0x25c
 function function_3b0168a9(v_origin, v_angles, player) {
     if (isdefined(level.a_mdl_pegasus) && level.a_mdl_pegasus.size >= 2) {
-        return 0;
+        return false;
     }
     var_78e5d9d1 = (v_origin[0], v_origin[1], v_origin[2] + 40);
     trace = bullettrace(var_78e5d9d1, var_78e5d9d1 + (0, 0, 300 - 40), 0, player);
     if (trace[#"fraction"] < 1) {
-        return 0;
+        return false;
     }
     foreach (var_10d4f67d in level.a_mdl_pegasus) {
         n_dist = distance(var_10d4f67d.var_f013d620, player.origin);
@@ -161,7 +161,7 @@ function function_3b0168a9(v_origin, v_angles, player) {
             n_time = gettime() / 1000;
             dt = n_time - var_10d4f67d.n_created_time;
             if (dt > 2) {
-                return 0;
+                return false;
             }
         }
     }
@@ -173,10 +173,10 @@ function function_3b0168a9(v_origin, v_angles, player) {
                     player thread function_cf0a2056();
                 }
             }
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
@@ -184,7 +184,7 @@ function function_3b0168a9(v_origin, v_angles, player) {
 // Checksum 0xdc28e4cf, Offset: 0xbf0
 // Size: 0x18
 function function_cd366cf2(e_grenade, e_player) {
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
@@ -368,7 +368,7 @@ function function_4b198b8f(a_ents) {
 // Size: 0x152
 function function_6973e5e8(n_player_index, var_f013d620) {
     self endon(#"hash_7a19b162c9e303dc");
-    while (1) {
+    while (true) {
         self waittill(#"pegasus_clap");
         a_ai_zombies = self get_zombie_targets(var_f013d620);
         if (isdefined(a_ai_zombies) && a_ai_zombies.size) {
@@ -392,12 +392,12 @@ function function_3f08f8e9(var_10d4f67d) {
     }
     foreach (var_56a585e8 in self.var_534a42ac) {
         if (var_56a585e8 == var_10d4f67d.var_373fe23f) {
-            return 1;
+            return true;
         }
     }
     self.var_534a42ac[self.var_534a42ac.size] = var_10d4f67d.var_373fe23f;
     self.var_45bfef99 = 1;
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm
@@ -414,10 +414,10 @@ function function_9c1450b8(var_10d4f67d, n_player_index) {
         var_b1c1c5cf = zm_equipment::function_7d948481(0.1, 0.25, 0.25, 1);
         var_5d7b4163 = zm_equipment::function_379f6b5d(500, var_b1c1c5cf, 1, 4, 50);
         self thread function_7c333a0f(var_10d4f67d, var_5d7b4163, n_player_index);
-        return;
+        break;
     default:
         self thread function_90c53706(var_10d4f67d, n_player_index);
-        return;
+        break;
     }
 }
 
@@ -495,13 +495,13 @@ function function_32b5113(ai_zombie) {
     ai_zombie endon(#"death");
     n_dist = distance(self.origin, ai_zombie.origin);
     if (n_dist > 400) {
-        return 0;
+        return false;
     }
     if (!zm_utility::check_point_in_playable_area(ai_zombie.origin) || ai_zombie function_3f08f8e9(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(ai_zombie.var_69a981e6) && ai_zombie.var_69a981e6) {
-        return 0;
+        return false;
     }
     if (!isdefined(ai_zombie.var_6f84b820)) {
         /#
@@ -509,9 +509,9 @@ function function_32b5113(ai_zombie) {
                 println("<unknown string>" + ai_zombie.archetype + "<unknown string>");
             }
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_weap_thunderstorm/zm_weap_thunderstorm

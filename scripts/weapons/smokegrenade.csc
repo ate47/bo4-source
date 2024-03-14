@@ -96,7 +96,7 @@ function monitor_smoke(local_client_num) {
             }
         }
         if (waitresult._notify != "timeout") {
-            return;
+            break;
         }
     }
 }
@@ -128,7 +128,7 @@ function function_e69d0e4d(local_client_num) {
     self notify(#"hash_2286178f49f4601d");
     self endon(#"hash_2286178f49f4601d", #"death", #"disconnect");
     var_e098466f = 0;
-    while (1) {
+    while (true) {
         var_7bf0773f = function_7bf0773f(local_client_num);
         if (isdefined(var_e098466f) && var_e098466f && !var_7bf0773f || !(isdefined(var_e098466f) && var_e098466f) && var_7bf0773f) {
             var_85098191 = function_5778f82(local_client_num, #"hash_410c46b5ff702c96");
@@ -153,26 +153,26 @@ function function_e69d0e4d(local_client_num) {
 function function_62ec0142(local_client_num, bundle) {
     var_85098191 = function_5778f82(local_client_num, #"hash_410c46b5ff702c96");
     if (!var_85098191) {
-        return 0;
+        return false;
     }
     if (util::is_player_view_linked_to_entity(local_client_num)) {
-        return 0;
+        return false;
     }
     if (!self function_83973173()) {
-        return 0;
+        return false;
     }
     if (function_7bf0773f(local_client_num)) {
-        return 0;
+        return false;
     }
     if (!(isdefined(self.insmoke) && self.insmoke & 2)) {
-        return 0;
+        return false;
     }
     localplayer = function_5c10bd79(local_client_num);
     if (self == localplayer) {
         curweapon = self function_d2c2b168();
         blade = getweapon(#"sig_blade");
         if (!isthirdperson(local_client_num) || curweapon != blade) {
-            return 0;
+            return false;
         }
     }
     weapon = getweapon("eq_smoke");
@@ -182,10 +182,10 @@ function function_62ec0142(local_client_num, bundle) {
             assert(isdefined(var_ed9e87ac));
         #/
         if (!(isdefined(var_ed9e87ac.var_563d4859) ? var_ed9e87ac.var_563d4859 : 0)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace smokegrenade/smokegrenade
@@ -195,19 +195,19 @@ function function_62ec0142(local_client_num, bundle) {
 function function_28db726(local_client_num, bundle) {
     var_85098191 = function_5778f82(local_client_num, #"hash_410c46b5ff702c96");
     if (!var_85098191) {
-        return 0;
+        return false;
     }
     if (util::is_player_view_linked_to_entity(local_client_num)) {
-        return 0;
+        return false;
     }
     if (self function_83973173()) {
-        return 0;
+        return false;
     }
     if (function_7bf0773f(local_client_num)) {
-        return 0;
+        return false;
     }
     if (!(isdefined(self.insmoke) && self.insmoke & 1)) {
-        return 0;
+        return false;
     }
     weapon = getweapon("eq_smoke");
     if (isdefined(weapon.customsettings)) {
@@ -216,10 +216,10 @@ function function_28db726(local_client_num, bundle) {
             assert(isdefined(var_ed9e87ac));
         #/
         if ((isdefined(var_ed9e87ac.var_ae2b2941) ? var_ed9e87ac.var_ae2b2941 : 0) && self function_6c32d092(local_client_num, #"talent_coldblooded")) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace smokegrenade/smokegrenade

@@ -205,10 +205,10 @@ function tomahawk_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsn
         switch (newvalue) {
         case 1:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_catch_rumble");
-            return;
+            break;
         case 2:
             self playrumbleonentity(localclientnum, "zm_weap_chakram_throw_rumble");
-            return;
+            break;
         }
     }
 }

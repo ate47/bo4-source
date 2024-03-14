@@ -70,7 +70,7 @@ function rumble_fan_trap(localclientnum, oldval, newval, bnewent, binitialsnap, 
     self endon(#"death");
     if (newval == 1) {
         self endon(#"hash_583695c3e21830e7");
-        while (1) {
+        while (true) {
             if (isinarray(getlocalplayers(), self)) {
                 self playrumbleonentity(localclientnum, "damage_light");
             }
@@ -242,7 +242,7 @@ function rumble_spinning_trap(localclientnum, oldval, newval, bnewent, binitials
     self endon(#"death");
     if (newval == 1) {
         self endon(#"hash_6fb55d3438a8d5fa");
-        while (1) {
+        while (true) {
             if (isinarray(getlocalplayers(), self)) {
                 self playrumbleonentity(localclientnum, "damage_light");
             }

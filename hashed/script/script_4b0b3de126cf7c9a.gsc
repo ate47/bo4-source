@@ -176,7 +176,7 @@ function private function_d0ea0364(w_upgrade_weapon) {
             self switchtoweaponimmediate(var_2af07147);
             self setweaponammoclip(var_2af07147, n_clip);
             self setweaponammostock(var_2af07147, n_stock);
-            return;
+            break;
         }
     }
 }

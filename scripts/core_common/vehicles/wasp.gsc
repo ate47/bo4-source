@@ -363,7 +363,7 @@ function guard_points_debug() {
             return;
         }
         self.isdebugdrawing = 1;
-        while (1) {
+        while (true) {
             foreach (point in self.debugpointsarray) {
                 color = (1, 0, 0);
                 if (ispointinnavvolume(point, "<unknown string>")) {
@@ -420,18 +420,18 @@ function get_guard_points(owner) {
 // Size: 0x126
 function state_guard_can_enter(from_state, to_state, connection) {
     if (self.enable_guard !== 1 || !isdefined(self.owner)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.enemy) || !self seerecently(self.enemy, 3)) {
-        return 1;
+        return true;
     }
     if (distancesquared(self.owner.origin, self.enemy.origin) > 1200 * 1200 && distancesquared(self.origin, self.enemy.origin) > 300 * 300) {
-        return 1;
+        return true;
     }
     if (!ispointinnavvolume(self.origin, "navvolume_small")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wasp/wasp
@@ -507,7 +507,7 @@ function state_guard_update(params) {
     timenotatgoal = gettime();
     pointindex = 0;
     stuckcount = 0;
-    while (1) {
+    while (true) {
         if (isdefined(self.enemy) && distancesquared(self.owner.origin, self.enemy.origin) < 1000 * 1000 && self seerecently(self.enemy, 1) && ispointinnavvolume(self.origin, "navvolume_small")) {
             self vehicle_ai::evaluate_connections();
             wait(1);
@@ -649,7 +649,7 @@ function state_combat_enter(params) {
 function turretfireupdate() {
     self endon(#"death", #"change_state");
     isrockettype = self.variant === "rocket";
-    while (1) {
+    while (true) {
         if (isdefined(self.enemy) && self cansee(self.enemy) && isalive(self)) {
             if (isdefined(self.wing_drone)) {
                 foreach (drone in self.wing_drone) {
@@ -715,7 +715,7 @@ function path_update_interrupt() {
     self endon(#"path_update_interrupt");
     old_enemy = self.enemy;
     wait(1);
-    while (1) {
+    while (true) {
         if (isdefined(self.current_pathto_pos)) {
             if (distance2dsquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
                 wait(0.2);
@@ -752,37 +752,37 @@ function wait_till_something_happens(timeout) {
     while (time > 0) {
         if (isdefined(self.current_pathto_pos)) {
             if (distancesquared(self.current_pathto_pos, self.goalpos) > self.goalradius * self.goalradius) {
-                return;
+                break;
             }
         }
         if (isdefined(self.enemy)) {
             if (!self cansee(self.enemy)) {
                 cant_see_count++;
                 if (cant_see_count >= 3) {
-                    return;
+                    break;
                 }
             } else {
                 cant_see_count = 0;
             }
             if (distance2dsquared(self.origin, self.enemy.origin) < 250 * 250) {
-                return;
+                break;
             }
             goalheight = self.enemy.origin[2] + 0.5 * (self.settings.engagementheightmin + self.settings.engagementheightmax);
             distfrompreferredheight = abs(self.origin[2] - goalheight);
             if (distfrompreferredheight > 100) {
-                return;
+                break;
             }
             if (isplayer(self.enemy) && self.enemy islookingat(self)) {
                 if (math::cointoss()) {
                     wait(randomfloatrange(0.1, 0.5));
                 }
                 self drop_leader();
-                return;
+                break;
             }
         }
         if (isdefined(self.leader) && isdefined(self.leader.current_pathto_pos)) {
             if (distancesquared(self.origin, self.leader.current_pathto_pos) > 165 * 165) {
-                return;
+                break;
             }
         }
         wait(0.3);
@@ -838,7 +838,7 @@ function update_leader() {
             }
             guy.followers[guy.followers.size] = self;
             self.leader = guy;
-            return;
+            break;
         }
     }
 }
@@ -849,17 +849,17 @@ function update_leader() {
 // Size: 0x140
 function should_fly_forward(distancetogoalsq) {
     if (self.always_face_enemy === 1) {
-        return 0;
+        return false;
     }
     if (distancetogoalsq < 250 * 250) {
-        return 0;
+        return false;
     }
     if (isdefined(self.enemy)) {
         to_goal = vectornormalize(self.current_pathto_pos - self.origin);
         to_enemy = vectornormalize(self.enemy.origin - self.origin);
         dot = vectordot(to_goal, to_enemy);
         if (abs(dot) > 0.7) {
-            return 0;
+            return false;
         }
     }
     if (distancetogoalsq > 400 * 400) {
@@ -1241,9 +1241,9 @@ function drone_callback_damage(einflictor, eattacker, idamage, idflags, smeansof
 // Size: 0x86
 function drone_allowfriendlyfiredamage(einflictor, eattacker, smeansofdeath, weapon) {
     if (isdefined(eattacker) && isdefined(eattacker.archetype) && isdefined(smeansofdeath) && eattacker.archetype == #"wasp" && smeansofdeath == "MOD_EXPLOSIVE") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wasp/wasp

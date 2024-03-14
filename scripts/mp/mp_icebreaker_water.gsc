@@ -95,10 +95,10 @@ function on_trigger(s_info) {
 function function_aa962363(e_player) {
     foreach (var_22697f26 in level.var_a6f19c15) {
         if (isalive(e_player) && isdefined(var_22697f26) && e_player istouching(var_22697f26) && getwaterheight(e_player.origin) - e_player.origin[2] >= getdvarint(#"hash_65893d2be0da2532", 30)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace mp_icebreaker_water/mp_icebreaker_water

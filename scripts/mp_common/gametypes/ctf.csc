@@ -56,7 +56,7 @@ function on_localclient_connect(localclientnum) {
 function function_27ecd662(localclientnum) {
     player = function_27673a7(localclientnum);
     player endon(#"disconnect");
-    while (1) {
+    while (true) {
         enemies = getplayers(localclientnum);
         player = function_27673a7(localclientnum);
         var_3b68ee3f = undefined;

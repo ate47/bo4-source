@@ -113,7 +113,7 @@ function function_8bddfcc3() {
 // Size: 0xa8
 function function_1b350677() {
     level endon(#"hash_4d3a2c46c22b012e");
-    while (1) {
+    while (true) {
         if (!level.var_f0efd877 && function_c32f5235()) {
             function_bc0ec5b3(1);
         } else if (level.var_f0efd877 && !function_c32f5235()) {
@@ -130,10 +130,10 @@ function function_1b350677() {
 function function_c32f5235() {
     foreach (e_player in level.activeplayers) {
         if (!e_player istouching(level.var_b4fcac11[3])) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace namespace_ff847c6a/namespace_ff847c6a

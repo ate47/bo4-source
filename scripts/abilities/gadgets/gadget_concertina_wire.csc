@@ -107,11 +107,11 @@ function function_1c2930c7(localclientnum) {
     level endon(#"game_ended");
     level.var_87226c31.var_aef370a9[localclientnum] = 1;
     var_ccfe777 = 0;
-    while (1) {
+    while (true) {
         waitframe(1);
         player = function_5c10bd79(localclientnum);
         if (!isdefined(player)) {
-            return;
+            break;
         }
         var_b43e8dc2 = player function_287dcf4b(level.var_87226c31.bundle.var_63aab046, level.var_87226c31.bundle.maxwidth, 0, 0, level.var_87226c31.var_3e7344ee);
         if (!isdefined(var_b43e8dc2) && !var_ccfe777) {

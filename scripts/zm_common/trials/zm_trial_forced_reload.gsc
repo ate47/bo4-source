@@ -108,7 +108,7 @@ function private function_29ee24dd(weapon) {
     n_clip_ammo = self getweaponammoclip(weapon);
     n_stock_ammo = self getweaponammostock(weapon);
     if (n_stock_ammo > 0) {
-        while (1) {
+        while (true) {
             s_waitresult = undefined;
             s_waitresult = self waittill(#"reload", #"zmb_max_ammo", #"hash_278526d0bbdb4ce7", #"hash_1fbfdb0105f48f89", #"player_downed", #"death");
             w_current = self getcurrentweapon();

@@ -154,7 +154,7 @@ function burst_fire(turret, manual_target) {
     } else {
         turret_burst_range = burst_fire_settings("burst_range");
     }
-    while (1) {
+    while (true) {
         if (isdefined(manual_target)) {
             turret thread random_spread(manual_target);
         }
@@ -280,7 +280,7 @@ function random_spread(ent) {
     self endon(#"stop random_spread", #"stopfiring");
     self turretsettarget(0, ent);
     self.manual_target = ent;
-    while (1) {
+    while (true) {
         if (isplayer(ent)) {
             ent.origin = self.manual_target getorigin();
         } else {

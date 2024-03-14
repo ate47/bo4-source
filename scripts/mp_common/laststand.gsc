@@ -131,7 +131,7 @@ function on_player_spawned() {
 function function_9f66e37a() {
     self endon(#"death", #"disconnect");
     self.enteredvehicle = 0;
-    while (1) {
+    while (true) {
         self waittill(#"enter_vehicle");
         self.enteredvehicle = 1;
     }
@@ -143,7 +143,7 @@ function function_9f66e37a() {
 // Size: 0x56
 function function_4e612708() {
     self endon(#"death", #"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"exit_vehicle");
         waitframe(1);
         self.enteredvehicle = 0;
@@ -227,7 +227,7 @@ function function_263a2944(prompt, var_a1258c6b) {
 function function_c025efba(prompt, var_a1258c6b) {
     var_a1258c6b endon(#"player_revived", #"disconnect", #"bled_out", #"death");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         [[ prompt ]]->set_health(self, var_a1258c6b.var_2d19ce3c);
         [[ prompt ]]->set_reviveprogress(self, var_a1258c6b.reviveprogress);
         waitframe(1);
@@ -247,7 +247,7 @@ function function_5de626dc(var_a1258c6b) {
             [[ prompt ]]->set_clientnum(self, var_a1258c6b getentitynumber());
             self thread function_263a2944(prompt, var_a1258c6b);
             self thread function_c025efba(prompt, var_a1258c6b);
-            return;
+            break;
         }
     }
 }
@@ -329,7 +329,7 @@ function function_d5db8d2e(attacker, weapon) {
 function function_463b3f65() {
     /#
         self endon(#"player_revived", #"death");
-        while (1) {
+        while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
                 self notify(#"auto_revive");
                 waittillframeend();
@@ -348,7 +348,7 @@ function function_463b3f65() {
 function function_ce726eb4() {
     /#
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {
                 host = util::gethostplayer();
                 angles = host getplayerangles();
@@ -579,7 +579,7 @@ function laststand_clean_up_on_interrupt(playerbeingrevived) {
 // Size: 0x348
 function laststand_bleedout_damage() {
     self endon(#"player_revived", #"disconnect", #"bled_out");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"laststand_damage");
         if (self.var_d887a4ad === 1) {
@@ -760,7 +760,7 @@ function revive_trigger_spawn() {
 function revive_trigger_think() {
     self endon(#"death", #"stop_revive_trigger");
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!isdefined(self.revivetrigger)) {
             self notify(#"stop_revive_trigger");
@@ -836,16 +836,16 @@ function revive_trigger_think() {
 // Size: 0x652
 function function_356caede(team) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.alivecount) || !isdefined(level.alivecount[team])) {
-        return 0;
+        return false;
     }
     if (level.alivecount[team] == 0) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.revivetrigger)) {
-        return 0;
+        return false;
     }
     players = getplayers(team, self.revivetrigger.origin, self.revivetrigger.radius);
     height = getdvarint(#"hash_48068f92d21e2a64", 15);
@@ -874,11 +874,11 @@ function function_356caede(team) {
         }
         self function_fab0e07e(finisher);
         if (!isdefined(finisher)) {
-            return 0;
+            return false;
         }
         if (!isdefined(self) || !isalive(self) || !isalive(finisher)) {
             finisher function_b16f016a();
-            return 0;
+            return false;
         }
         finisher disableweaponcycling();
         finisher disableusability();
@@ -899,7 +899,7 @@ function function_356caede(team) {
                     self setorigin(kill_origin);
                     self dodamage(self.var_969fabf4, self.origin, finisher, undefined, "none", "MOD_MELEE_ASSASSINATE", 8192);
                     self function_2907ce7a();
-                    return 1;
+                    return true;
                 } else {
                     self function_516a3bef(1);
                     self function_7c685040();
@@ -908,7 +908,7 @@ function function_356caede(team) {
             finisher function_7c685040();
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_mp/laststand
@@ -996,9 +996,9 @@ function function_1c8cab15(var_b4bb7319) {
         var_b4bb7319.revivetrigger.beingfinished = 0;
     }
     if (isdefined(var_b4bb7319) && var_b4bb7319 flagsys::get(#"hash_40e3b09bdbcdac81")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace laststand_mp/laststand
@@ -1025,19 +1025,19 @@ function revive_give_back_weapons() {
 // Size: 0x2d6
 function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
     if (!isdefined(revivee.revivetrigger)) {
-        return 0;
+        return false;
     }
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (self laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.can_revive) && ![[ level.can_revive ]](revivee)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_1461fd14) && ![[ level.var_1461fd14 ]](revivee)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.revive_trigger_should_ignore_sight_checks)) {
         ignore_sight_checks = [[ level.revive_trigger_should_ignore_sight_checks ]](self);
@@ -1047,28 +1047,28 @@ function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
     }
     if (!ignore_touch_checks) {
         if (!self istouching(revivee.revivetrigger)) {
-            return 0;
+            return false;
         }
     }
     if (isdefined(height)) {
         delta = revivee.origin[2] - self.origin[2];
         if (delta > height || delta < height * -1) {
-            return 0;
+            return false;
         }
     }
     if (!self laststand::is_facing(revivee, 0.8)) {
-        return 0;
+        return false;
     }
     if (distancesquared(revivee.origin, self.origin) > 140 * 140) {
-        return 0;
+        return false;
     }
     if (!sighttracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
-        return 0;
+        return false;
     }
     if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace laststand_mp/laststand
@@ -1077,13 +1077,13 @@ function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
 // Size: 0xb4
 function is_reviving(revivee, ignore_touch_checks = 0, height = undefined) {
     if (!isdefined(self) || !isdefined(revivee)) {
-        return 0;
+        return false;
     }
     if (!isalive(revivee)) {
-        return 0;
+        return false;
     }
     if (!isdefined(revivee.revivetrigger)) {
-        return 0;
+        return false;
     }
     return self usebuttonpressed() && can_revive(revivee, ignore_touch_checks, height);
 }
@@ -1292,7 +1292,7 @@ function revive_success(reviver, b_track_stats = 1) {
 // Size: 0x274
 function revive_hud_think() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!laststand::player_any_player_in_laststand()) {
             continue;
@@ -1372,7 +1372,7 @@ function function_1e8018b0() {
 // Size: 0x3c
 function function_b1ad0b64(idamage, smeansofdeath) {
     if (!(isdefined(self.laststand) && self.laststand)) {
-        return 0;
+        return false;
     }
     return self.var_969fabf4 <= idamage;
 }

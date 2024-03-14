@@ -333,7 +333,7 @@ function private _isinjured(bot) {
             return (bot.health / bot.maxhealth <= (isdefined(tacstate.var_ac1c818f) ? tacstate.var_ac1c818f : 0));
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -343,10 +343,10 @@ function private _isinjured(bot) {
 function private _paramshasbots(params) {
     foreach (bot in params.bots) {
         if (strategiccommandutility::isvalidbot(bot)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -900,11 +900,11 @@ function private strategyhasattackobject(planner, constants) {
     if (isdefined(objects)) {
         foreach (object in objects) {
             if (object[#"team"] == team || object[#"team"] == #"any" || object[#"team"] == "free") {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -914,19 +914,19 @@ function private strategyhasattackobject(planner, constants) {
 function private strategyhasescort(planner, constants) {
     escorts = planner::getblackboardattribute(planner, "escorts");
     if (!isarray(escorts) || escorts.size <= 0) {
-        return 0;
+        return false;
     }
     escortkey = constants[#"key"];
     if (!isstring(escortkey) && !ishash(escortkey) || escortkey == "") {
-        return 1;
+        return true;
     }
     for (i = 0; i < escorts.size; i++) {
         escort = escorts[i][#"__unsafe__"][escortkey];
         if (isdefined(escort)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -958,7 +958,7 @@ function private function_790fb743(planner, constants) {
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -982,14 +982,14 @@ function private function_f6ec02a4(planner, constants) {
                 if (isdefined(maxammo) && maxammo > 0) {
                     ammofraction = currentammo / maxammo;
                     if (ammofraction >= constants[#"percent"]) {
-                        return 0;
+                        return false;
                     }
                 }
             }
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1013,13 +1013,13 @@ function private strategyhasbelowxammounsafe(planner, constants) {
                 if (isdefined(maxammo) && maxammo > 0) {
                     ammofraction = currentammo / maxammo;
                     if (ammofraction < constants[#"percent"]) {
-                        return 1;
+                        return true;
                     }
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1047,11 +1047,11 @@ function private strategyhasdefendobject(planner, constants) {
     if (isdefined(objects)) {
         foreach (object in objects) {
             if (object[#"team"] != team && object[#"team"] != #"any" && object[#"team"] != "free") {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1064,11 +1064,11 @@ function private strategyhasobjective(planner, constants) {
     if (isdefined(objects)) {
         foreach (object in objects) {
             if (objective_state(object[#"id"]) == "active") {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1090,20 +1090,20 @@ function private function_2083115a(planner, constants) {
     if (isdefined(target)) {
         switch (target[#"type"]) {
         case #"gameobject":
-            return 1;
+            return true;
         case #"goto":
-            return 1;
+            return true;
         case #"destroy":
-            return 1;
+            return true;
         case #"defend":
-            return 1;
+            return true;
         case #"capturearea":
-            return 1;
+            return true;
         case #"escortbiped":
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1153,12 +1153,12 @@ function private function_a0f209b7(planner, constants) {
             if (isdefined(maxammo) && maxammo > 0) {
                 ammofraction = currentammo / maxammo;
                 if (ammofraction < constants[#"percent"]) {
-                    return 1;
+                    return true;
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1241,7 +1241,7 @@ function private function_6ed940fb(planner, params) {
             bot.goalradius = 256;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1616,13 +1616,13 @@ function private function_e96dd96b(planner, constants) {
                 var_681a8d61 = "doppelbotsfocus";
                 foreach (focus in var_f8ffdb19) {
                     if (var_3d879b56.(var_681a8d61) == focus) {
-                        return 1;
+                        return true;
                     }
                 }
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1644,7 +1644,7 @@ function private function_50c7bd5a(planner, constants) {
             return (var_3d879b56.("doppelbotstactics") == var_e67e6f95);
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannersquadutility/planner_squad_utility
@@ -1658,7 +1658,7 @@ function private strategywanderinit(planner, params) {
             bot.goalradius = 128;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannersquadutility/planner_squad_utility

@@ -57,7 +57,7 @@ function localplayerspectating(localclientnum) {
     level notify("localPlayerSpectating" + localclientnum);
     level endon("localPlayerSpectatingEnd" + localclientnum);
     var_22d4baff = playerbeingspectated(localclientnum);
-    while (1) {
+    while (true) {
         player = playerbeingspectated(localclientnum);
         if (player != var_22d4baff) {
             level notify("localPlayerSpectating" + localclientnum);
@@ -71,7 +71,7 @@ function localplayerspectating(localclientnum) {
 // Checksum 0xdee53aa7, Offset: 0x7c0
 // Size: 0x66
 function function_2691bc1b() {
-    while (1) {
+    while (true) {
         res = undefined;
         res = level waittill(#"team_changed");
         localclientnum = res.localclientnum;
@@ -86,10 +86,10 @@ function function_2691bc1b() {
 function function_43ad0547(player) {
     for (parent = self getlinkedent(); isdefined(parent); parent = parent getlinkedent()) {
         if (parent == player) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop
@@ -115,7 +115,7 @@ function function_1d9539dd(localclientnum, player) {
 function setuppropplayernames(localclientnum) {
     level notify("setupPropPlayerNames" + localclientnum);
     level endon("setupPropPlayerNames" + localclientnum);
-    while (1) {
+    while (true) {
         localplayer = function_5c10bd79(localclientnum);
         spectating = function_65b9eb0f(localclientnum);
         players = getplayers(localclientnum);
@@ -165,7 +165,7 @@ function function_15e0dfb8(localclientnum, var_dc9f0c39) {
     level endon(#"disconnect");
     self notify(#"hash_3fe34dcd29fd6a0f");
     self endon(#"hash_3fe34dcd29fd6a0f");
-    while (1) {
+    while (true) {
         localplayer = function_5c10bd79(localclientnum);
         spectating = function_65b9eb0f(localclientnum) && !function_1cbf351b(localclientnum);
         var_6955388c = (!isdefined(self.owner) || self.owner != localplayer || spectating) && isdefined(self.team) && isdefined(localplayer.team) && self.team == localplayer.team;
@@ -202,10 +202,10 @@ function function_29561f83(localclientnum, var_dc9f0c39) {
     self endon(#"entityshutdown");
     self notify(#"hash_3f606627f154954b");
     self endon(#"hash_3f606627f154954b");
-    while (1) {
+    while (true) {
         localplayer = function_5c10bd79(localclientnum);
         if (!isdefined(self) || !isdefined(localplayer)) {
-            return;
+            break;
         }
         var_6955388c = self != localplayer && isdefined(self.team) && isdefined(localplayer.team) && self.team == localplayer.team;
         self duplicate_render::update_dr_flag(localclientnum, "prop_clone", var_6955388c);

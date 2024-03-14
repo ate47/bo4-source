@@ -123,12 +123,12 @@ function track_player_eyes() {
 function private is_weapon_sniper(w_weapon) {
     if (isdefined(w_weapon.issniperweapon) && w_weapon.issniperweapon) {
         if (weaponhasattachment(w_weapon, "elo") || weaponhasattachment(w_weapon, "reflex") || weaponhasattachment(w_weapon, "holo") || weaponhasattachment(w_weapon, "is")) {
-            return 0;
+            return false;
         } else {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office_umbrella/zm_office_umbrella

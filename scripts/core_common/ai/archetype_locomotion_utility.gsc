@@ -217,10 +217,10 @@ function private locomotionisonstairs(behaviortreeentity) {
     startnode = behaviortreeentity.traversestartnode;
     if (isdefined(startnode) && behaviortreeentity shouldstarttraversal()) {
         if (isdefined(startnode.animscript) && issubstr(tolower(startnode.animscript), "stairs")) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -235,18 +235,18 @@ function private locomotionshouldskipstairs(behaviortreeentity) {
     stepssofar = behaviortreeentity getblackboardattribute("_staircase_num_steps");
     direction = behaviortreeentity getblackboardattribute("_staircase_direction");
     if (direction != "staircase_up") {
-        return 0;
+        return false;
     }
     numoutsteps = 2;
     totalstepswithoutout = numtotalsteps - numoutsteps;
     if (stepssofar >= totalstepswithoutout) {
-        return 0;
+        return false;
     }
     remainingsteps = totalstepswithoutout - stepssofar;
     if (remainingsteps >= 3 || remainingsteps >= 6 || remainingsteps >= 8) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -276,9 +276,9 @@ function private locomotionshouldlooponstairs(behaviortreeentity) {
     }
     if (stepssofar >= numtotalsteps - numoutsteps) {
         behaviortreeentity setstairsexittransform();
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -339,7 +339,7 @@ function private locomotionstairsstart(behaviortreeentity) {
         }
     }
     behaviortreeentity setblackboardattribute("_staircase_exit_type", exittype);
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -384,15 +384,15 @@ function clearpathfromscript(behaviortreeentity) {
 // Size: 0x6c
 function private noncombatlocomotioncondition(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.accuratefire) && behaviortreeentity.accuratefire) {
-        return 1;
+        return true;
     }
     if (isdefined(behaviortreeentity.enemy)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -401,15 +401,15 @@ function private noncombatlocomotioncondition(behaviortreeentity) {
 // Size: 0x68
 function private combatlocomotioncondition(behaviortreeentity) {
     if (!behaviortreeentity haspath()) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.accuratefire) && behaviortreeentity.accuratefire) {
-        return 0;
+        return false;
     }
     if (isdefined(behaviortreeentity.enemy)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -432,9 +432,9 @@ function private locomotionshouldtraverse(behaviortreeentity) {
         /#
             record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -450,7 +450,7 @@ function private locomotionshouldparametrictraverse(entity) {
         #/
         return (traversaltype != "unknown_traversal");
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -463,9 +463,9 @@ function private function_5ef5b35a(behaviortreeentity) {
         /#
             record3dtext("<unknown string>", self.origin, (1, 0, 0), "<unknown string>");
         #/
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -481,7 +481,7 @@ function private function_8a8c5d44(entity) {
         #/
         return (traversaltype != "unknown_traversal");
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -491,7 +491,7 @@ function private function_8a8c5d44(entity) {
 function private traversesetup(behaviortreeentity) {
     behaviortreeentity setblackboardattribute("_stance", "stand");
     behaviortreeentity setblackboardattribute("_traversal_type", behaviortreeentity.traversestartnode.animscript);
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -555,9 +555,9 @@ function private enablerepath(entity) {
 // Size: 0x2e
 function shouldstartarrivalcondition(behaviortreeentity) {
     if (behaviortreeentity shouldstartarrival()) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -568,7 +568,7 @@ function cleararrivalpos(behaviortreeentity) {
     if (!isdefined(behaviortreeentity.isarrivalpending) || isdefined(behaviortreeentity.isarrivalpending) && behaviortreeentity.isarrivalpending) {
         self function_d4c687c9();
     }
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -577,7 +577,7 @@ function cleararrivalpos(behaviortreeentity) {
 // Size: 0x48
 function delaymovement(entity) {
     entity pathmode("move delayed", 0, randomfloatrange(1, 2));
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -587,9 +587,9 @@ function delaymovement(entity) {
 function private shouldadjuststanceattacticalwalk(behaviortreeentity) {
     stance = behaviortreeentity getblackboardattribute("_stance");
     if (stance != "stand") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -600,7 +600,7 @@ function private adjuststancetofaceenemyinitialize(behaviortreeentity) {
     behaviortreeentity.newenemyreaction = 0;
     behaviortreeentity setblackboardattribute("_desired_stance", "stand");
     behaviortreeentity orientmode("face enemy");
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -621,7 +621,7 @@ function private tacticalwalkactionstart(behaviortreeentity) {
     setcanbeflanked(behaviortreeentity, 0);
     behaviortreeentity setblackboardattribute("_stance", "stand");
     behaviortreeentity orientmode("face enemy");
-    return 1;
+    return true;
 }
 
 // Namespace aiutility/archetype_locomotion_utility
@@ -708,7 +708,7 @@ function canjuke(entity) {
     if (isdefined(entity.jukemaxdistance) && isdefined(entity.enemy)) {
         maxdistsquared = entity.jukemaxdistance * entity.jukemaxdistance;
         if (distance2dsquared(entity.origin, entity.enemy.origin) > maxdistsquared) {
-            return 0;
+            return false;
         }
     }
     jukedirection = calculatedefaultjukedirection(entity);

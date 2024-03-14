@@ -65,7 +65,7 @@ function function_7eabbc02(params) {
         if (isdefined(level.players)) {
             for (i = 0; i < level.players.size; i++) {
                 if (level.players.size <= remaining) {
-                    return;
+                    break;
                 }
                 if (!isdefined(level.players[i].bot) || level.players[i].team == hostteam || level.players[i].team == "<unknown string>") {
                     continue;

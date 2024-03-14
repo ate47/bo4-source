@@ -220,9 +220,9 @@ function is_all_dead(platoon) {
     teams = function_37d3bfcb(platoon);
     foreach (team in teams) {
         if (!teams::is_all_dead(team)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 

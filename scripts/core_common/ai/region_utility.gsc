@@ -58,7 +58,7 @@ function private function_871ecf05() {
     for (i = 1; i < 128; i++) {
         info = function_b507a336(i);
         if (!isdefined(info)) {
-            return;
+            break;
         }
         function_e563d6b7(i, 1);
     }
@@ -83,7 +83,7 @@ function private function_c5b9e623(volumes, score) {
     for (i = 1; i < 128; i++) {
         info = function_b507a336(i);
         if (!isdefined(info)) {
-            return;
+            break;
         }
         desired = 0;
         foreach (volume in volumes) {

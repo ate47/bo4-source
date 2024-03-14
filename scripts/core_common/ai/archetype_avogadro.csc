@@ -110,15 +110,15 @@ function private function_ae4cd3d4(localclientnum, oldval, newval, bnewent, bini
     switch (newval) {
     case 3:
         self.health_fx = function_239993de(localclientnum, "zm_ai/fx8_avo_elec_aura_main", self.jammer_interface, "j_spine4");
-        return;
+        break;
     case 2:
         self.health_fx = function_239993de(localclientnum, "zm_ai/fx8_cata_water_aura", self.jammer_interface, "j_spine4");
-        return;
+        break;
     case 1:
         self.health_fx = function_239993de(localclientnum, "zm_ai/fx8_avo_elec_aura_weakened", self.jammer_interface, "j_spine4");
-        return;
+        break;
     default:
-        return;
+        break;
     }
 }
 

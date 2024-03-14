@@ -80,7 +80,7 @@ function function_f9a1ea10(entity) {
     if (isdefined(shitloc)) {
         return (isinarray(array("torso_upper", "torso_mid"), shitloc) || isinarray(array("torso_lower", "groin"), shitloc));
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -149,9 +149,9 @@ function function_13b0963e(entity) {
 // Size: 0x40
 function explosivekilled(entity) {
     if (entity getblackboardattribute("_damage_weapon_class") == "explosive") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -160,12 +160,12 @@ function explosivekilled(entity) {
 // Size: 0x68
 function electrifiedkilled(entity) {
     if (entity.damageweapon.rootweapon.name == "shotgun_pump_taser") {
-        return 1;
+        return true;
     }
     if (entity getblackboardattribute("_damage_mod") == "mod_electrocuted") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -174,9 +174,9 @@ function electrifiedkilled(entity) {
 // Size: 0x40
 function burnedkilled(entity) {
     if (entity getblackboardattribute("_damage_mod") == "mod_burned") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -185,9 +185,9 @@ function burnedkilled(entity) {
 // Size: 0x5a
 function rapskilled(entity) {
     if (isdefined(self.attacker) && isdefined(self.attacker.archetype) && self.attacker.archetype == #"raps") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/namespace_7d3e8f59
@@ -213,7 +213,7 @@ function private tookflashbangdamage(entity) {
         weapon = entity.damageweapon;
         return (entity.damagemod == "MOD_GRENADE_SPLASH" && isdefined(weapon.rootweapon) && (weapon.rootweapon.name == #"flash_grenade" || weapon.rootweapon.name == #"concussion_grenade" || weapon.rootweapon.name == #"proximity_grenade") || isdefined(self.var_40543c03) && self.var_40543c03 == "foam");
     }
-    return 0;
+    return false;
 }
 
 // Namespace aiutility/namespace_7d3e8f59

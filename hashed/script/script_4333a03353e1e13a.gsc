@@ -172,7 +172,7 @@ function function_a913e7bc(e_player) {
 // Checksum 0xf856a5ad, Offset: 0xf80
 // Size: 0xf8
 function function_5d984ff3() {
-    while (1) {
+    while (true) {
         s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
@@ -240,7 +240,7 @@ function function_26384c47() {
 // Size: 0xac
 function function_a6b42ff1() {
     self endon(#"hash_5a853b3e231b86db");
-    while (1) {
+    while (true) {
         if (level flag::get("power_on2") && zm_zonemgr::zone_is_enabled("lighthouse_station") && level flag::get("ship_flinger_fixed")) {
             self thread function_67769412();
             self notify(#"hash_5a853b3e231b86db");
@@ -255,7 +255,7 @@ function function_a6b42ff1() {
 // Size: 0x124
 function function_a3780502() {
     self endon(#"hash_5a853b3e231b86db");
-    while (1) {
+    while (true) {
         if (level flag::get("power_on3") && zm_zonemgr::zone_is_enabled("lighthouse_cove") && zm_zonemgr::zone_is_enabled("frozen_crevasse") && zm_zonemgr::zone_is_enabled("lagoon") && level flag::get("facility_flinger_fixed")) {
             if (isdefined(self.var_311f378d)) {
                 self.var_311f378d zm_unitrigger::unregister_unitrigger(self.var_311f378d.s_unitrigger);
@@ -274,9 +274,9 @@ function function_a3780502() {
 function function_43a1c155(e_player) {
     if (level flag::get("power_on3") && level flag::get("facility_flinger_fixed")) {
         self sethintstring("ZM_ORANGE/FLINGER_DESINATION_NOT_UNLOCKED");
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_6036de69/namespace_6036de69
@@ -286,7 +286,7 @@ function function_43a1c155(e_player) {
 function function_67769412() {
     self endon(#"hash_28cfded4ab80f30d");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         foreach (e_player in getplayers()) {
             if (e_player istouching(self) && !level flag::get("fasttravel_disabled")) {
                 self thread function_b5fc069b();
@@ -306,7 +306,7 @@ function function_b5fc069b() {
     level endon(#"end_game");
     self.var_cd75ce36 = 3;
     self thread function_ac9a3646();
-    while (1) {
+    while (true) {
         wait(0.1);
         if (self function_385a554d()) {
             self.var_cd75ce36 = self.var_cd75ce36 - 0.1;
@@ -344,10 +344,10 @@ function function_b5fc069b() {
 function function_385a554d() {
     foreach (e_player in getplayers()) {
         if (e_player istouching(self)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_6036de69/namespace_6036de69
@@ -356,7 +356,7 @@ function function_385a554d() {
 // Size: 0xde
 function function_d8d2ddc6() {
     self endon(#"hash_b3fa76082f1b362");
-    while (1) {
+    while (true) {
         s_touching = self function_1036f994();
         if (level flag::get(#"hash_3028604821838259")) {
             self.var_28a430ac function_c0df509(s_touching.n_touching);
@@ -404,7 +404,7 @@ function function_4578fdfd() {
     self endon(#"hash_1a5c6352ea49c8ff", #"launcher_activated");
     self.var_cd75ce36 = 3;
     self thread function_ac9a3646();
-    while (1) {
+    while (true) {
         wait(0.1);
         s_touching = self function_1036f994();
         if (level flag::get(#"hash_3028604821838259") && s_touching.var_50d20c23) {
@@ -684,7 +684,7 @@ function function_57806638(v_flinger) {
 function function_8bf0a961(e_player) {
     str_hint = zm_utility::function_d6046228(#"hash_2f95fd18fc037b20", #"hash_7f5464b25d90d8c");
     self sethintstring(str_hint);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_6036de69/namespace_6036de69
@@ -694,7 +694,7 @@ function function_8bf0a961(e_player) {
 function function_ad05ccbb() {
     level endon(#"end_game");
     self endon(#"hash_710fb070ee784064");
-    while (1) {
+    while (true) {
         s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
@@ -734,7 +734,7 @@ function function_27469421() {
 function function_9b789e22(e_player) {
     str_hint = zm_utility::function_d6046228(#"hash_49ef4d8e3753ac8d", #"hash_b80e393ce68873");
     self sethintstring(str_hint);
-    return 1;
+    return true;
 }
 
 // Namespace namespace_6036de69/namespace_6036de69
@@ -744,7 +744,7 @@ function function_9b789e22(e_player) {
 function function_4aad77c2() {
     level endon(#"end_game");
     self endon(#"hash_683fe8e994aae075");
-    while (1) {
+    while (true) {
         s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;

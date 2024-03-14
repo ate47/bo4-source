@@ -262,9 +262,9 @@ function crawler_round_spawn() {
     ai = function_dd836251();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds
@@ -300,9 +300,9 @@ function function_fe02a12f() {
     ai = function_fe3507a6();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_office_special_rounds/zm_office_special_rounds

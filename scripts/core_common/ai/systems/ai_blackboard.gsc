@@ -25,7 +25,7 @@ function private _initializeblackboard() {
 function private _updateevents() {
     waittime = 1 * float(function_60d95f53()) / 1000;
     updatemillis = int(waittime * 1000);
-    while (1) {
+    while (true) {
         foreach (eventname, events in level.__ai_blackboard) {
             liveevents = [];
             foreach (event in events) {

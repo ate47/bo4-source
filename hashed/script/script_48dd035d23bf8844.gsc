@@ -74,7 +74,7 @@ function perks_behind_door() {
     level.perk_type = level.var_2cc90a51[index];
     index++;
     door_powerup_drop(level.perk_type, level.ammodrop.origin);
-    while (1) {
+    while (true) {
         level waittill(#"nuke_clock_moved");
         if (index == level.var_2cc90a51.size) {
             index = 0;

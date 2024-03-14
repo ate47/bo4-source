@@ -119,12 +119,12 @@ function function_3624d032() {
 // Size: 0x64
 function function_c10174e7() {
     if (isdefined(game.outcome.team) && isdefined(level.teams[game.outcome.team])) {
-        return 1;
+        return true;
     }
     if (game.outcome.players.size) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace match/match
@@ -141,9 +141,9 @@ function get_winning_team() {
 // Size: 0x4a
 function is_winning_team(team) {
     if (isdefined(game.outcome.team) && team == game.outcome.team) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace match/match
@@ -152,17 +152,17 @@ function is_winning_team(team) {
 // Size: 0x11e
 function function_a2b53e17(player) {
     if (game.outcome.platoon !== #"none" && getteamplatoon(player.pers[#"team"]) === game.outcome.platoon) {
-        return 1;
+        return true;
     }
     if (game.outcome.team !== #"free" && player.pers[#"team"] === game.outcome.team) {
-        return 1;
+        return true;
     }
     if (game.outcome.players.size) {
         if (player == game.outcome.players[0]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace match/match
@@ -171,9 +171,9 @@ function function_a2b53e17(player) {
 // Size: 0x24
 function function_75f97ac7() {
     if (game.outcome.players.size) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace match/match

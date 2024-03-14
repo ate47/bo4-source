@@ -35,7 +35,7 @@ function __init__() {
 // Size: 0x5e
 function validation() {
     if (self zm_armor::get(#"hash_7bfec2f0ecb46104") == 100) {
-        return 0;
+        return false;
     }
     return !(isdefined(self bgb::get_active()) && self bgb::get_active());
 }

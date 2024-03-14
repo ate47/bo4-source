@@ -12,7 +12,7 @@ function autoexec function_c3c9d0e5() {
     /#
         setdvar(#"anim_debug", 0);
         setdvar(#"anim_debug_pause", 0);
-        while (1) {
+        while (true) {
             b_anim_debug = getdvarint(#"anim_debug", 0) || getdvarint(#"anim_debug_pause", 0);
             if (b_anim_debug && !level flagsys::get("<unknown string>")) {
                 level flagsys::set("<unknown string>");
@@ -42,7 +42,7 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag) {
         self notify(#"_anim_info_render_thread_");
         self endon(#"_anim_info_render_thread_", #"death", #"scriptedanim");
         level endon(#"kill_anim_debug");
-        while (1) {
+        while (true) {
             level flagsys::wait_till("<unknown string>");
             _init_frame();
             str_extra_info = "<unknown string>";

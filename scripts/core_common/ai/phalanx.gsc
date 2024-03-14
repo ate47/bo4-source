@@ -143,7 +143,7 @@ class phalanx {
     // Size: 0x104
     function private _updatephalanx() {
         if (self.scattered_) {
-            return 0;
+            return false;
         }
         self.currentsentientcount_ = 0;
         foreach (name, tier in self.sentienttiers_) {
@@ -152,9 +152,9 @@ class phalanx {
         }
         if (self.currentsentientcount_ <= self.startsentientcount_ - self.breakingpoint_) {
             scatterphalanx();
-            return 0;
+            return false;
         }
-        return 1;
+        return true;
     }
 
     // Namespace phalanx/phalanx

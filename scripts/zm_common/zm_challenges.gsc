@@ -107,7 +107,7 @@ function on_bleedout() {
 // Size: 0x2f6
 function round_tracking() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (zm_utility::is_trials() && level flag::get("round_reset")) {
             continue;
@@ -551,7 +551,7 @@ function death_check_for_challenge_updates(e_attacker) {
 // Size: 0xe8
 function spent_points_tracking() {
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         result = undefined;
         result = level waittill(#"spent_points");
         player = result.player;
@@ -580,7 +580,7 @@ function increment_magic_box() {
 // Size: 0x58
 function perk_drink_tracking() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         self waittill(#"perk_bought");
         /#
             self debug_print("<unknown string>");
@@ -595,7 +595,7 @@ function perk_drink_tracking() {
 function function_73696786() {
     self endon(#"disconnect");
     var_c0e0819a = 1;
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"hash_13948ef3726b968f");
         if (isdefined(var_c0e0819a) && var_c0e0819a) {
@@ -615,7 +615,7 @@ function function_73696786() {
 // Size: 0xb2
 function function_12a35616() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"blueprint_completed");
         if (isdefined(waitresult.produced) && isdefined(waitresult.produced.isriotshield) && waitresult.produced.isriotshield) {
@@ -672,7 +672,7 @@ function on_challenge_complete(params) {
 // Checksum 0xf7df1096, Offset: 0x3148
 // Size: 0xe
 function is_challenge(n_challenge_index) {
-    return 0;
+    return false;
 }
 
 // Namespace zm_challenges/zm_challenges

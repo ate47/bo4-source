@@ -111,11 +111,11 @@ function function_7640eac2() {
     }
     if (level.var_f1e94d9.size < 1) {
         self.b_ignore_cleanup = 1;
-        return 1;
+        return true;
     }
     if (zm_utility::is_standard() && level flag::exists("started_defend_area") && level flag::get("started_defend_area")) {
         self.b_ignore_cleanup = 1;
-        return 1;
+        return true;
     }
     var_31f7011a = arraycopy(level.players);
     var_31f7011a = arraysortclosest(var_31f7011a, self.origin);
@@ -141,7 +141,7 @@ function function_7640eac2() {
     if (isdefined(var_b2aa54a9.scriptbundlename)) {
         self function_9a9b5f49(var_b2aa54a9);
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
@@ -243,9 +243,9 @@ function round_spawn() {
     ai = spawn_single();
     if (isdefined(ai)) {
         level.zombie_total--;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
@@ -295,9 +295,9 @@ function function_48c60fc2() {
     var_d6ddc067 = function_13080a96();
     var_ba74cbf9 = function_5685dac6();
     if (!(isdefined(level.var_a2831281) && level.var_a2831281) && (isdefined(level.var_153e9058) && level.var_153e9058 || var_d6ddc067 >= var_ba74cbf9 || !level flag::get("spawn_zombies"))) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zombie_gegenees_util/ai_gegenees_util
@@ -375,7 +375,7 @@ function function_c1a0ea97(n_round_number) {
             return;
         }
     #/
-    while (1) {
+    while (true) {
         level waittill(#"hash_5d3012139f083ccb");
         if (zm_round_spawning::function_d0db51fc(#"gegenees")) {
             level.var_a5355505++;

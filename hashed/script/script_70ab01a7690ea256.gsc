@@ -39,12 +39,12 @@ function private on_begin(localclientnum, a_params) {
     level.var_4ecf5754 = isdefined(a_params[0]) ? a_params[0] : #"silent_film";
     switch (level.var_4ecf5754) {
     case #"silent_film":
-        return;
+        break;
     case #"hash_5a202c5d6f53d672":
-        return;
+        break;
     case #"perk_drunk":
         level thread function_777d7ba2();
-        return;
+        break;
     }
 }
 
@@ -70,11 +70,11 @@ function function_777d7ba2() {
     self notify("7b33eb8d5a1768f6");
     self endon("7b33eb8d5a1768f6");
     setdvar(#"slide_blur_enabled", 0);
-    while (1) {
+    while (true) {
         level waittill(#"end_game", #"hash_7646638df88a3656");
         if (level.var_a2859227 != 1) {
             setdvar(#"slide_blur_enabled", 1);
-            return;
+            break;
         }
     }
 }
@@ -86,9 +86,9 @@ function function_777d7ba2() {
 function is_active(var_4ecf5754 = #"silent_film") {
     s_challenge = zm_trial::function_a36e8c38(#"hash_6c768f3c15d55377");
     if (isdefined(s_challenge) && level.var_4ecf5754 === var_4ecf5754) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_a6aea2c6/namespace_a6aea2c6
@@ -130,7 +130,7 @@ function function_9cf0edbf(localclientnum, b_show) {
     self notify(#"hash_3dec19d02cb07e9b");
     self endon(#"hash_3dec19d02cb07e9b", #"death");
     level endon(#"hash_7646638df88a3656");
-    while (1) {
+    while (true) {
         a_ai = getentarraybytype(localclientnum, 15);
         a_vh = getentarraybytype(localclientnum, 12);
         a_ai = arraycombine(a_ai, a_vh, 0, 0);

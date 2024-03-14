@@ -52,7 +52,7 @@ function init() {
 // Size: 0x40
 function private function_18a1849f(e_player) {
     if (!isdefined(level.var_ae5fb719.e_player)) {
-        return 0;
+        return false;
     }
     return e_player === level.var_ae5fb719.e_player;
 }
@@ -74,9 +74,9 @@ function private function_f6048ee(e_player) {
         } else {
             self sethintstring(#"hash_2054e8fdb6521566");
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_3b2b9e06/namespace_3b2b9e06
@@ -135,7 +135,7 @@ function private start_step_1() {
 function private function_4e9f1680() {
     self endon(#"death");
     pixbeginevent(#"hash_73eb0f44c0388afc");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         e_player = s_notify.attacker;
@@ -403,7 +403,7 @@ function private start_step_3() {
 // Size: 0x144
 function private function_473f437() {
     self endon(#"death", #"stop_think");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition("evt_rgun_frame_putback", (-223, -1658, -178));
@@ -414,7 +414,7 @@ function private function_473f437() {
                 level.var_ae5fb719.e_player thread zm_hms_util::function_51b752a9("vox_ww_x_charge");
             }
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            return;
+            break;
         }
     }
 }
@@ -472,9 +472,9 @@ function private function_7015dc35(e_player) {
         } else {
             self sethintstring(#"hash_2054e8fdb6521566");
         }
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace namespace_3b2b9e06/namespace_3b2b9e06
@@ -483,14 +483,14 @@ function private function_7015dc35(e_player) {
 // Size: 0xac
 function private function_2ac1278b() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (function_18a1849f(e_player)) {
             namespace_bd74bbd2::start(#"sc_mk2x");
             zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
-            return;
+            break;
         }
     }
 }

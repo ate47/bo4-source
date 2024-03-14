@@ -1110,7 +1110,7 @@ function function_790fb743(planner, constants) {
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -1148,23 +1148,23 @@ function private function_a75b29d8(planner, constants) {
         assert(isdefined(target));
     #/
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
     strategy = target[#"strategy"];
     /#
         assert(isstruct(strategy));
     #/
     if (!isstruct(strategy)) {
-        return 0;
+        return false;
     }
     var_90b56683 = strategiccommandutility::function_f4921cb3(constants[#"focus"]);
     targetfocus = strategy.("doppelbotsfocus");
     foreach (focus in var_90b56683) {
         if (targetfocus == focus) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -1999,10 +1999,10 @@ function private strategysquadescorthasnomainguard(planner, constants) {
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     foreach (escort in escorts) {
         if (escort[#"escortmainguard"].size > 0) {
-            return 1;
+            return true;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2017,10 +2017,10 @@ function private strategysquadescorthasnorearguard(planner, constants) {
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     foreach (escort in escorts) {
         if (escort[#"escortrearguard"].size > 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2035,10 +2035,10 @@ function private strategysquadescorthasnovanguard(planner, constants) {
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     foreach (escort in escorts) {
         if (escort[#"escortvanguard"].size > 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2083,7 +2083,7 @@ function private bunker_exposure_scale(planner, constants) {
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2137,10 +2137,10 @@ function private strategysquadhaspathableunclaimedobject(planner, constant) {
     gameobjects = planner::getblackboardattribute(planner, "pathable_gameobjects", squadindex);
     for (index = 0; index < gameobjects.size; index++) {
         if (!gameobjects[index][#"gameobject"][#"claimed"]) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2210,7 +2210,7 @@ function private strategyhasatleastxpriorityassaultobjects(planner, constants) {
         }
         return (priorityobjects >= constants[#"amount"]);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2236,7 +2236,7 @@ function private strategyhasatleastxprioritydefendobjects(planner, constants) {
         }
         return (priorityobjects >= constants[#"amount"]);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2309,7 +2309,7 @@ function strategyhasatleastxunclaimedpriorityassaultobjects(planner, constants) 
         }
         return (priorityobjects >= constants[#"amount"]);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2335,7 +2335,7 @@ function strategyhasatleastxunclaimedprioritydefendobjects(planner, constants) {
         }
         return (priorityobjects >= constants[#"amount"]);
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2356,7 +2356,7 @@ function function_f6a3c6d5(planner, constants) {
         assert(isarray(targets));
     #/
     if (!isarray(targets)) {
-        return 0;
+        return false;
     }
     priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
     /#
@@ -2364,10 +2364,10 @@ function function_f6a3c6d5(planner, constants) {
     #/
     foreach (priority in priorities) {
         if (targets[priority].size > 0) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2708,12 +2708,12 @@ function private function_61d2b8ef(commander, squad, constants) {
         foreach (botentry in doppelbots) {
             bot = botentry[#"__unsafe__"][#"bot"];
             if (isdefined(bot) && order == "follow_chain" && bot isinvehicle()) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2726,12 +2726,12 @@ function private utilityscorebotpresence(commander, squad, constants) {
         foreach (botentry in doppelbots) {
             bot = botentry[#"__unsafe__"][#"bot"];
             if (!strategiccommandutility::isvalidbot(bot)) {
-                return 0;
+                return false;
             }
         }
-        return 1;
+        return true;
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2744,19 +2744,19 @@ function private function_de2b04c0(commander, squad, constants) {
         foreach (botentry in doppelbots) {
             bot = botentry[#"__unsafe__"][#"bot"];
             if (!isdefined(bot)) {
-                return 0;
+                return false;
             }
             if (bot isinvehicle() && botentry[#"type"] == "bot") {
-                return 0;
+                return false;
             } else if (!bot isinvehicle() && botentry[#"type"] != "bot") {
-                return 0;
+                return false;
             }
             if (!strategiccommandutility::function_4732f860(bot)) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2768,28 +2768,28 @@ function private utilityscoreescortpathing(commander, squad, constants) {
     escorts = plannersquadutility::getblackboardattribute(squad, "escorts");
     escortpoi = plannersquadutility::getblackboardattribute(squad, "escort_poi");
     if (!isdefined(doppelbots) || doppelbots.size <= 0) {
-        return 1;
+        return true;
     }
     if (!isdefined(escorts) || escorts.size <= 0) {
-        return 1;
+        return true;
     }
     if (!blackboard::getstructblackboardattribute(commander, #"allow_escort")) {
-        return 0;
+        return false;
     }
     if (_calculateallpathableclients(doppelbots, escorts).size < escorts.size) {
-        return 0;
+        return false;
     }
     if (isdefined(escortpoi) && escortpoi.size > 0) {
-        return 0;
+        return false;
     } else {
         assaultgameobjects = blackboard::getstructblackboardattribute(commander, #"gameobjects_assault");
         defendgameobjects = blackboard::getstructblackboardattribute(commander, #"gameobjects_defend");
         objectives = blackboard::getstructblackboardattribute(commander, #"objectives");
         if (assaultgameobjects.size > 0 || defendgameobjects.size > 0 || objectives.size > 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2801,9 +2801,9 @@ function utilityscoreforcegoal(commander, squad, constants) {
     squadforcegoal = plannersquadutility::getblackboardattribute(squad, "force_goal");
     forcegoal = blackboard::getstructblackboardattribute(commander, #"force_goal");
     if (forcegoal !== squadforcegoal) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2813,7 +2813,7 @@ function utilityscoreforcegoal(commander, squad, constants) {
 function private utilityscoregameobjectpathing(commander, squad, constants) {
     doppelbots = plannersquadutility::getblackboardattribute(squad, "doppelbots");
     if (!isdefined(doppelbots) || doppelbots.size <= 0) {
-        return 1;
+        return true;
     }
     foreach (botentry in doppelbots) {
         bot = botentry[#"__unsafe__"][#"bot"];
@@ -2821,10 +2821,10 @@ function private utilityscoregameobjectpathing(commander, squad, constants) {
             continue;
         }
         if (isalive(bot) && !bot isingoal(bot.origin) && !bot haspath()) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2834,13 +2834,13 @@ function private utilityscoregameobjectpathing(commander, squad, constants) {
 function private utilityscoregameobjectpriority(commander, squad, constants) {
     priorityidentifiers = constants[#"priority"];
     if (!isdefined(priorityidentifiers) || priorityidentifiers.size <= 0) {
-        return 1;
+        return true;
     }
     squadobjects = plannersquadutility::getblackboardattribute(squad, "gameobjects");
     if (isdefined(squadobjects)) {
         prioritygameobjects = _calculateprioritygameobjects(squadobjects, priorityidentifiers);
         if (prioritygameobjects.size > 0) {
-            return 1;
+            return true;
         }
     }
     assaultobjects = blackboard::getstructblackboardattribute(commander, #"gameobjects_assault");
@@ -2875,10 +2875,10 @@ function private utilityscoregameobjectpriority(commander, squad, constants) {
     }
     foreach (value in activeidentifiers) {
         if (value) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2888,15 +2888,15 @@ function private utilityscoregameobjectpriority(commander, squad, constants) {
 function private utilityscoregameobjectsvalidity(commander, squad, constants) {
     gameobjects = plannersquadutility::getblackboardattribute(squad, "gameobjects");
     if (!isdefined(gameobjects)) {
-        return 1;
+        return true;
     }
     foreach (gameobjectentry in gameobjects) {
         gameobject = gameobjectentry[#"__unsafe__"][#"object"];
         if (!isdefined(gameobject) || isdefined(gameobject.trigger) && !gameobject.trigger istriggerenabled()) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2906,9 +2906,9 @@ function private utilityscoregameobjectsvalidity(commander, squad, constants) {
 function private function_2985faa1(commander, squad, constants) {
     target = plannersquadutility::getblackboardattribute(squad, "target");
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2919,7 +2919,7 @@ function private utilityscoreprogressthrottling(commander, squad, constants) {
     if (blackboard::getstructblackboardattribute(commander, #"allow_progress_throttling") === 1) {
         enemycommander = blackboard::getstructblackboardattribute(commander, #"throttling_enemy_commander");
         if (!isdefined(enemycommander)) {
-            return 0;
+            return false;
         }
         lowerbound = blackboard::getstructblackboardattribute(commander, #"throttling_lower_bound");
         upperbound = blackboard::getstructblackboardattribute(commander, #"throttling_upper_bound");
@@ -2936,13 +2936,13 @@ function private utilityscoreprogressthrottling(commander, squad, constants) {
         order = plannersquadutility::getblackboardattribute(squad, "order");
         if (strategiccommandutility::calculateprogressthrottling(lowerbound, upperbound, destroyedassaults, totalassaults, enemydestroyedassaults, enemytotalassaults)) {
             if (order === "order_attack") {
-                return 0;
+                return false;
             }
         } else if (order === "order_attack_surround") {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2952,25 +2952,25 @@ function private utilityscoreprogressthrottling(commander, squad, constants) {
 function private function_a65b2be5(commander, squad, constants) {
     var_fcee18d7 = plannersquadutility::getblackboardattribute(squad, "target");
     if (!isdefined(var_fcee18d7)) {
-        return 1;
+        return true;
     }
     if (var_fcee18d7[#"type"] === "gameobject") {
         gameobject = var_fcee18d7[#"__unsafe__"][#"object"];
         if (!isdefined(gameobject) || isdefined(gameobject.trigger) && !gameobject.trigger istriggerenabled()) {
-            return 0;
+            return false;
         }
     } else if (var_fcee18d7[#"type"] === "destroy" || var_fcee18d7[#"type"] === "defend") {
-        return 0;
+        return false;
     } else if (var_fcee18d7[#"type"] === "capturearea") {
-        return 0;
+        return false;
     } else if (var_fcee18d7[#"type"] === "destroy" || var_fcee18d7[#"type"] === "goto") {
         missioncomponent = var_fcee18d7[#"__unsafe__"][#"mission_component"];
         commanderteam = blackboard::getstructblackboardattribute(commander, #"team");
         if (!strategiccommandutility::function_f867cce0(missioncomponent, commanderteam)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -2981,15 +2981,15 @@ function private function_f389ef61(commander, squad, constants) {
     doppelbots = plannersquadutility::getblackboardattribute(squad, "doppelbots");
     team = blackboard::getstructblackboardattribute(commander, #"team");
     if (!isdefined(doppelbots) || !isdefined(team)) {
-        return 1;
+        return true;
     }
     for (botindex = 0; botindex < doppelbots.size; botindex++) {
         bot = doppelbots[botindex][#"__unsafe__"][#"bot"];
         if (isdefined(bot) && bot.team != team) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace plannercommanderutility/planner_commander_utility
@@ -3001,17 +3001,17 @@ function private utilityscoreviableescort(commander, squad, constants) {
     escorts = plannersquadutility::getblackboardattribute(squad, "escorts");
     players = blackboard::getstructblackboardattribute(commander, #"players");
     if (isdefined(escorts) && escorts.size > 0) {
-        return 1;
+        return true;
     }
     if (!isdefined(doppelbots) || doppelbots.size <= 0) {
-        return 1;
+        return true;
     }
     if (!isdefined(players) || players.size <= 0) {
-        return 1;
+        return true;
     }
     if (_calculateallpathableclients(doppelbots, players).size > 0) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 

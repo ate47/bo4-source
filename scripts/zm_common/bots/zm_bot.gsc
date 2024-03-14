@@ -170,7 +170,7 @@ function event_handler[button_bit_actionslot_2_pressed] function_9b83de0f() {
                 continue;
             }
             self order_bot(player);
-            return;
+            break;
         }
     #/
 }
@@ -309,7 +309,7 @@ function function_e16b5033(actor) {
 // Size: 0xe0
 function function_1f9de69d(var_40b86c4b) {
     if (!isdefined(var_40b86c4b)) {
-        return 0;
+        return false;
     }
     players = getplayers();
     foreach (player in players) {
@@ -318,10 +318,10 @@ function function_1f9de69d(var_40b86c4b) {
         }
         currentzone = player zm_utility::get_current_zone();
         if (currentzone === var_40b86c4b) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_bot/zm_bot

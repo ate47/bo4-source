@@ -128,7 +128,7 @@ function monitorleader() {
     for (;;) {
         if (!isdefined(self.leader) || !isalive(self.leader)) {
             self vehicle_ai::set_state("malfunction");
-            return;
+            break;
         }
         waitframe(1);
     }
@@ -185,7 +185,7 @@ function attackthread() {
     self endon(#"death");
     self endon(#"change_state");
     self endon(#"end_attack_thread");
-    while (1) {
+    while (true) {
         if (isdefined(self.leader)) {
             enemy = self.leader.favoriteenemy;
             if (isdefined(enemy)) {
@@ -348,7 +348,7 @@ function function_b0c75ada(leader) {
 // Size: 0xd6
 function function_5ebe7443() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self.protectdest)) {
             /#
                 recordsphere(self.protectdest, 8, (0, 1, 1), "<unknown string>");

@@ -81,12 +81,12 @@ function function_a5b7c42d() {
 // Size: 0x108
 function function_2100fa40(attacker, victim, weapon, attackerweapon, meansofdeath) {
     if (!isdefined(attacker) || !isdefined(attackerweapon) || !isdefined(attacker.var_9db94fe3) || !isplayer(attacker.var_9db94fe3) || attacker.team == victim.team) {
-        return 0;
+        return false;
     }
     if (isdefined(attacker.var_b6672e47) && attacker.var_b6672e47 && attacker === attacker.var_9db94fe3 && (!isdefined(level.iskillstreakweapon) || ![[ level.iskillstreakweapon ]](attackerweapon))) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace locaheal/localheal

@@ -54,7 +54,7 @@ function function_131495a5() {
     self endon("558820cf64d9ca3f");
     level endon(#"end_game");
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         w_weapon = s_waitresult.weapon;
@@ -252,7 +252,7 @@ function function_6fdb733f() {
     if (level.round_number > 1 || level flag::get(#"hash_6efaa75e1959aa0f")) {
         return;
     }
-    while (1) {
+    while (true) {
         level waittill(#"end_of_round");
         if (level.round_number >= 20) {
             break;

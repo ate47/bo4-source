@@ -141,7 +141,7 @@ function function_37401a52() {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"game_ended");
-        while (1) {
+        while (true) {
             if (getdvarint(#"hash_533e1b9932a65628", 0)) {
                 zombie_plane = function_de4b0705();
                 if (isdefined(zombie_plane)) {

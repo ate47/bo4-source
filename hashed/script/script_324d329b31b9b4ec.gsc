@@ -86,7 +86,7 @@ function previs(localclientnum, invalid) {
     self endoncallback(&function_6f798989, #"death", #"weapon_change", #"stop_previs");
     level.var_9c4cdb79[localclientnum] show();
     function_3e8d9b27(!invalid, localclientnum);
-    while (1) {
+    while (true) {
         update_previs(localclientnum, invalid);
         waitframe(1);
     }

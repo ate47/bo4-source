@@ -117,10 +117,10 @@ function processscoreevent(event, player, victim, weapon, var_36f23f1f) {
 // Size: 0x16a
 function shouldaddrankxp(player) {
     if (level.gametype == "fr") {
-        return 0;
+        return false;
     }
     if (level.gametype == "zclassic" && isdefined(level.var_5164a0ca) && level.var_5164a0ca) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_4f654f3a) && level.var_4f654f3a) {
         /#
@@ -130,15 +130,15 @@ function shouldaddrankxp(player) {
             }
             println("<unknown string>" + playername);
         #/
-        return 0;
+        return false;
     }
     if (!isdefined(level.rankcap) || level.rankcap == 0) {
-        return 1;
+        return true;
     }
     if (player.pers[#"plevel"] > 0 || player.pers[#"rank"] > level.rankcap) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace scoreevents/scoreevents_shared

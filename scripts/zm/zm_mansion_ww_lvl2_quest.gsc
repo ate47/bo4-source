@@ -73,7 +73,7 @@ function function_27b91fdb() {
     self endon(#"disconnect");
     level endon(#"ww_lvl2_crafting_completed");
     self flag::init(#"hash_4428586b42c7a522");
-    while (1) {
+    while (true) {
         var_e7df750a = 0;
         s_result = undefined;
         s_result = self waittill(#"weapon_change");
@@ -123,7 +123,7 @@ function function_4a81e337() {
     self setcandamage(1);
     self thread function_292dd34f();
     self.health = 10000;
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {
@@ -153,7 +153,7 @@ function function_292dd34f(b_right) {
 function function_216d0545(s_notify) {
     /#
         if (s_notify.mod === "<unknown string>" && isdefined(level.var_14a33fde) && level.var_14a33fde) {
-            return 1;
+            return true;
         }
     #/
     return (s_notify.mod === "MOD_MELEE" || s_notify.mod === "MOD_IMPACT") && mansion_util::is_shield(s_notify.weapon);
@@ -223,7 +223,7 @@ function function_32573d2a(player) {
     } else {
         self sethintstringforplayer(player, "");
     }
-    return 1;
+    return true;
 }
 
 // Namespace ww_lvl2_quest/zm_mansion_ww_lvl2_quest
@@ -231,7 +231,7 @@ function function_32573d2a(player) {
 // Checksum 0xcedd132c, Offset: 0x1170
 // Size: 0x334
 function function_ea6f56ee() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;

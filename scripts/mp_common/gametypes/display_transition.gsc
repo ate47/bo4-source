@@ -54,10 +54,10 @@ function private function_a5ce91f1(val) {
 function function_81d670f5() {
     if (isdefined(level.var_d1455682)) {
         if (!isdefined(level.var_d1455682.finaldisplaytransition) || level.var_d1455682.finaldisplaytransition.size == 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace display_transition/display_transition
@@ -122,7 +122,7 @@ function display_round_end(outcome) {
 function private function_91b514e8(menuname) {
     player = self;
     player endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = player waittill(#"menuresponse");
         menu = waitresult.menu;
@@ -256,9 +256,9 @@ function function_1caf5c87(team) {
 function function_3f65d5d3() {
     if (!isdefined(self.pers[#"team"])) {
         self [[ level.spawnintermission ]](1);
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace display_transition/display_transition
@@ -380,19 +380,19 @@ function private function_26bbb839(transition, outcome) {
 // Size: 0x90
 function checkroundswitch() {
     if (!isdefined(level.roundswitch) || !level.roundswitch) {
-        return 0;
+        return false;
     }
     if (!isdefined(level.onroundswitch)) {
-        return 0;
+        return false;
     }
     /#
         assert(game.roundsplayed > 0);
     #/
     if (game.roundsplayed % level.roundswitch == 0) {
         [[ level.onroundswitch ]]();
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace display_transition/display_transition
@@ -573,47 +573,47 @@ function clear_transition() {
 // Size: 0x280
 function function_40a46b5b(transition, outcome) {
     if (isdefined(transition.disable) && transition.disable) {
-        return 1;
+        return true;
     }
     if (isdefined(transition.var_b5dabc6b) && transition.var_b5dabc6b) {
         if (util::waslastround() || util::isoneround()) {
-            return 1;
+            return true;
         }
     }
     var_860cd9fa = isdefined(level.shouldplayovertimeround) && [[ level.shouldplayovertimeround ]]();
     if (isdefined(level.shouldplayovertimeround) && [[ level.shouldplayovertimeround ]]()) {
         if (isdefined(transition.var_d0f2da62) && transition.var_d0f2da62) {
-            return 1;
+            return true;
         }
     } else if (isdefined(transition.var_fb87c2b4) && transition.var_fb87c2b4) {
-        return 1;
+        return true;
     }
     if (overtime::is_overtime_round()) {
         if (isdefined(transition.var_e0d86f3) && transition.var_e0d86f3) {
-            return 1;
+            return true;
         }
     } else if (isdefined(transition.var_7b778818) && transition.var_7b778818) {
-        return 1;
+        return true;
     }
     if (transition.type == "team_pose") {
         if (outcome.team == #"free") {
-            return 1;
+            return true;
         }
         if (!isdefined(struct::get("team_pose_cam", "targetname"))) {
-            return 1;
+            return true;
         }
     }
     if (transition.type == "switch_sides") {
         if (!(isdefined(level.roundswitch) && level.roundswitch)) {
-            return 1;
+            return true;
         }
     }
     if (transition.type == "outcome") {
         if (isdefined(level.var_67a68459) && level.var_67a68459) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace display_transition/display_transition

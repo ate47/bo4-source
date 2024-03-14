@@ -155,10 +155,10 @@ function update() {
 function force(actionname, weapon, target) {
     action = get_action(actionname);
     if (!isdefined(action)) {
-        return 0;
+        return false;
     }
     self function_fced7d8a(action, weapon, target);
-    return 1;
+    return true;
 }
 
 // Namespace bot_action/bot_action
@@ -1168,7 +1168,7 @@ function function_728212e8(actionparams) {
 function scan_for_threats_weight(actionparams) {
     actionparams.target = self.enemy;
     self set_target_aim(actionparams);
-    return 0;
+    return false;
 }
 
 // Namespace bot_action/bot_action
@@ -1600,12 +1600,12 @@ function reload_weapon(actionparams) {
 // Size: 0x40
 function function_4d9b6e04() {
     if (level.script == "mp_mountain2") {
-        return 1;
+        return true;
     }
     if (level.script == "mp_slums2") {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_action/bot_action
@@ -2706,7 +2706,7 @@ function function_ecf6dc7a(actionparams) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
     if (!self is_target_visible(actionparams)) {
         /#
@@ -2717,9 +2717,9 @@ function function_ecf6dc7a(actionparams) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace bot_action/bot_action
@@ -2744,7 +2744,7 @@ function function_b70a8fcf(actionparams) {
 function is_target_enemy(actionparams) {
     target = actionparams.target;
     if (isvec(target)) {
-        return 1;
+        return true;
     }
     return self.enemy === target;
 }
@@ -2769,10 +2769,10 @@ function function_ee402bf6(actionparams) {
     target = actionparams.target;
     weapon = actionparams.weapon;
     if (!isdefined(target) || !isdefined(weapon)) {
-        return 0;
+        return false;
     }
     if (issentient(target) && self lastknowntime(target) + 5000 < gettime()) {
-        return 0;
+        return false;
     }
     targetorigin = isvec(target) ? target : target.origin;
     targetdistsq = distancesquared(self.origin, targetorigin);
@@ -2788,7 +2788,7 @@ function function_679b5b7a(actionparams) {
     target = actionparams.target;
     weapon = actionparams.weapon;
     if (!isdefined(target) || !isdefined(weapon)) {
-        return 0;
+        return false;
     }
     targetorigin = isvec(target) ? target : target.origin;
     targetdistsq = distancesquared(self.origin, targetorigin);
@@ -2803,10 +2803,10 @@ function function_679b5b7a(actionparams) {
 function function_faa6a59d(actionparams, range) {
     target = actionparams.target;
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
     if (issentient(target) && self lastknowntime(target) + 5000 < gettime()) {
-        return 0;
+        return false;
     }
     targetorigin = isvec(target) ? target : target.origin;
     targetdistsq = distancesquared(self.origin, targetorigin);
@@ -2821,14 +2821,14 @@ function function_43505382(actionparams) {
     target = actionparams.target;
     bullettrace = actionparams.bullettrace;
     if (!isdefined(target) || !isdefined(bullettrace)) {
-        return 0;
+        return false;
     }
     if (isentity(target)) {
         return (target === bullettrace[#"entity"]);
     } else if (isvec(target)) {
         return (bullettrace[#"fraction"] >= 1);
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_action/bot_action
@@ -2839,14 +2839,14 @@ function function_ade341c(actionparams) {
     target = actionparams.target;
     var_e6ba3ec9 = actionparams.var_e6ba3ec9;
     if (!isdefined(target) || !isdefined(var_e6ba3ec9)) {
-        return 0;
+        return false;
     }
     if (isentity(target)) {
         return (target === var_e6ba3ec9[#"entity"]);
     } else if (isvec(target)) {
         return (distancesquared(var_e6ba3ec9[#"position"], target) < 100);
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_action/bot_action
@@ -3325,7 +3325,7 @@ function function_5de4c088(actionparams) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
     if (!self gadgetisready(slot)) {
         /#
@@ -3336,9 +3336,9 @@ function function_5de4c088(actionparams) {
             }
             actionparams.debug[actionparams.debug.size] = "<unknown string>";
         #/
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace bot_action/bot_action
@@ -3441,11 +3441,11 @@ function function_37256a9b() {
             clipammo = self clip_ammo(weapon);
             stockammo = self getweaponammostock(weapon);
             if (clipammo + stockammo > 0) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_action/bot_action

@@ -86,7 +86,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Size: 0x132
 function private function_14e751e9() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         waitframe(1);
         foreach (player in level.players) {
             if (isdefined(player.var_592f3e3c)) {
@@ -281,7 +281,7 @@ function togglezoneeffects(enabled) {
 function kothcaptureloop() {
     level endon(#"game_ended", #"zone_moved");
     level.kothstarttime = gettime();
-    while (1) {
+    while (true) {
         level.zone.gameobject gameobjects::allow_use(#"any");
         level.zone.gameobject gameobjects::set_use_time(level.capturetime);
         level.zone.gameobject gameobjects::set_use_text(#"mp/capturing_objective");
@@ -313,7 +313,7 @@ function kothcaptureloop() {
         waitresult = undefined;
         waitresult = level waittill(#"zone_destroyed");
         if (!level.kothmode || level.zonedestroyedbytimer) {
-            return;
+            break;
         }
         thread forcespawnteam(ownerteam);
         if (isdefined(waitresult.destroy_team)) {
@@ -340,7 +340,7 @@ function kothmainloop() {
     setmatchflag("bomb_timer_a", 0);
     thread hidetimerdisplayongameend();
     thread function_568f7563();
-    while (1) {
+    while (true) {
         resume_time();
         sound::play_on_players("mp_suitcase_pickup");
         globallogic_audio::leader_dialog("kothLocated", undefined, undefined, "gamemode_objective", undefined, "kothActiveDialogBuffer");
@@ -444,9 +444,9 @@ function updateteamclientfield() {
 // Size: 0x58
 function private function_62dd771f(gameobject) {
     if (gameobject.touchlist[game.attackers].size > 0 && gameobject.touchlist[game.defenders].size > 0) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace koth/koth
@@ -796,24 +796,24 @@ function comparezoneindexes(zone_a, zone_b) {
     script_index_a = zone_a.script_index;
     script_index_b = zone_b.script_index;
     if (!isdefined(script_index_a) && !isdefined(script_index_b)) {
-        return 0;
+        return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
         /#
             println("<unknown string>" + zone_a.origin);
         #/
-        return 1;
+        return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
         /#
             println("<unknown string>" + zone_b.origin);
         #/
-        return 0;
+        return false;
     }
     if (script_index_a > script_index_b) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace koth/koth
@@ -894,13 +894,13 @@ function setupzones() {
         zone createzonespawninfluencer();
     }
     if (globallogic_utils::print_map_errors()) {
-        return 0;
+        return false;
     }
     level.zones = zones;
     level.prevzone = undefined;
     level.prevzone2 = undefined;
     setupzoneexclusions();
-    return 1;
+    return true;
 }
 
 // Namespace koth/koth
@@ -989,7 +989,7 @@ function shufflezones() {
                 }
                 level.zonespawnqueue[level.zonespawnqueue.size] = spawnqueue[zone];
                 spawnqueue[zone] = undefined;
-                continue;
+                break;
             }
             valid_zones++;
         }
@@ -1228,12 +1228,12 @@ function updatecapsperminute(lastownerteam) {
 // Size: 0x3e
 function isscoreboosting(player) {
     if (!level.rankedmatch) {
-        return 0;
+        return false;
     }
     if (player.capsperminute > level.playercapturelpm) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace koth/koth
@@ -1242,12 +1242,12 @@ function isscoreboosting(player) {
 // Size: 0x6e
 function function_d3a438fb(entity) {
     if (!isdefined(level.zone) || !isdefined(level.zone.trig)) {
-        return 0;
+        return false;
     }
     if (entity istouching(level.zone.trig)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace koth/koth

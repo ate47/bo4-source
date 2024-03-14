@@ -151,12 +151,12 @@ function set_locked_magicbox_state(state) {
         self showzbarrierpiece(5);
         self thread magic_box_locks();
         self.state = "locking";
-        return;
+        break;
     case #"unlocking":
         self showzbarrierpiece(5);
         self thread magic_box_unlocks();
         self.state = "close";
-        return;
+        break;
     }
 }
 

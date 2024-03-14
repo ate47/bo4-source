@@ -132,16 +132,16 @@ function function_c9ff0dce() {
         case 4:
         case 8:
             self thread function_58c62280(0, 1);
-            return;
+            break;
         case 5:
         case 9:
             self thread function_b3659644();
-            return;
+            break;
         case 2:
         case 10:
         default:
             self thread function_58c62280(0, 0);
-            return;
+            break;
         }
     }
 }
@@ -354,7 +354,7 @@ function function_f624b4a4() {
     level endon(#"combattraining_logic_finished", #"vase_destroyed");
     level.var_7b83b757 = undefined;
     level.var_bf847351 = undefined;
-    while (1) {
+    while (true) {
         e_trigger = getent("t_damage_vase", "targetname");
         e_trigger trigger::wait_till();
         level.var_7b83b757 = undefined;
@@ -446,7 +446,7 @@ function function_9f3fe320() {
         wait(1);
         level thread ct_vo::function_14b08e49(array(#"hash_337fb17d0fb110ef"), "stop_nag");
         b_success = 0;
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             a_bots = e_player ct_bots::function_dde6edbd();
             if (!level.var_30f6fd66 && a_bots.size == 2) {
@@ -509,7 +509,7 @@ function function_98126bff() {
     s_origin = struct::get("s_strafe_origin", "targetname");
     var_2272c425 = 1;
     level.var_49becb72 = 0;
-    while (1) {
+    while (true) {
         level waittill(#"hash_6510d558060bc3f3");
         if (var_2272c425) {
             wait(1.18);
@@ -570,7 +570,7 @@ function function_f36aa3f0() {
     wait(0.1);
     ct_vo::function_3ca1b77d();
     ct_utils::function_c2a10fc();
-    while (1) {
+    while (true) {
         n_start_time = gettime() / 1000;
         var_fcb16eeb = 0;
         n_bomb_timer = int(gettime() + 1000 + int(30 * 1000));
@@ -585,7 +585,7 @@ function function_f36aa3f0() {
         level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
         wait(0.2);
         e_player = ct_utils::get_player();
-        while (1) {
+        while (true) {
             if (!(isdefined(var_fcb16eeb) && var_fcb16eeb)) {
                 n_time = gettime() / 1000;
                 dt = n_time - n_start_time;
@@ -655,7 +655,7 @@ function function_977b4171() {
     var_93f356cc.angles = (0, 0, 0);
     level thread ct_vo::function_14b08e49(array(#"hash_1ff67c7d157a8f9a"), "stop_nag");
     s_loc = struct::get("s_tac_deploy_loc", "targetname");
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         e_player thread ct_utils::function_61c3d59c(#"hash_446da0659a9ea1e9", undefined);
         level.var_e72728b8 = array(#"hero_annihilator");
@@ -775,7 +775,7 @@ function function_322f5659(s_loc, n_delay) {
     self ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32);
     self.var_1574ae06 = 1;
     if (isdefined(s_loc.script_noteworthy) && s_loc.script_noteworthy == #"crouch") {
-        while (1) {
+        while (true) {
             n_dist = distance(s_loc.origin, self.origin);
             if (n_dist < 40) {
                 break;
@@ -811,7 +811,7 @@ function function_c8e681c8() {
     level waittill(#"hash_48b4c5f856407d62");
     level notify(#"stop_nag");
     e_player clientfield::set_player_uimodel("hudItems.spawnSelectHidePrompt", 0);
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         if (isalive(e_player)) {
             break;
@@ -833,7 +833,7 @@ function function_c8e681c8() {
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
     ct_vo::function_831e0584(array(#"hash_404d0240e0490e87", #"hash_404d0340e049103a"), 1);
     level notify(#"hash_34672d64ad7fb8f0");
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         if (!isalive(e_player)) {
             break;
@@ -876,7 +876,7 @@ function function_b23a52d(n_start_delay, var_a9f1605c) {
     self endon(#"death", #"menu_closed");
     level.var_79c8245d = var_a9f1605c;
     wait(n_start_delay);
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         if (waitresult.intpayload < 0) {
@@ -894,7 +894,7 @@ function function_b23a52d(n_start_delay, var_a9f1605c) {
 function function_283155c3() {
     level endon(#"combattraining_logic_finished");
     level.var_fa06889a = 0;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         if (isdefined(e_player)) {
             if (e_player actionbuttonpressed() || e_player reloadbuttonpressed()) {
@@ -912,7 +912,7 @@ function function_283155c3() {
 function function_1234c415() {
     level endon(#"combattraining_logic_finished");
     level.var_fa06889a = 0;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         waitresult = undefined;
         waitresult = e_player waittill(#"menuresponse");
@@ -933,7 +933,7 @@ function function_5ceffaa6(var_eb2d93d3, var_651072b9) {
     level endon(#"combattraining_logic_finished", var_eb2d93d3);
     level.var_651072b9 = undefined;
     var_7f7efa6e = 0;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_651072b9) && level.var_651072b9 == var_651072b9) {
             while (ct_vo::function_5d127774()) {
                 waitframe(1);
@@ -974,7 +974,7 @@ function function_9d45d90a(var_95a93511, var_6238499c, var_b20fd485) {
         var_17758f4f = 0;
         e_player thread ct_utils::function_61c3d59c(var_b20fd485, undefined);
     }
-    while (1) {
+    while (true) {
         if (level.var_79c8245d && !var_17758f4f) {
             e_player thread ct_utils::function_61c3d59c(var_6238499c, undefined);
             var_17758f4f = 1;
@@ -995,7 +995,7 @@ function function_f036b362() {
     level thread ct_vo::function_831e0584(array(#"hash_1d09b0d3cd0befe1"), 1);
     function_2232d333(1);
     level.var_357913db = getentarray("vol_bad_beacon_courtyard_loc", "targetname");
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         if (isalive(e_player)) {
             e_player notify(#"hash_46d18c1394319d75");
@@ -1107,7 +1107,7 @@ function function_d4bbc142() {
                 var_24593a52 = 0;
             }
             if (isdefined(var_36b789c0) && var_36b789c0 && a_bots.size >= 1) {
-                while (1) {
+                while (true) {
                     if (!isdefined(e_beacon)) {
                         break;
                     }
@@ -1198,7 +1198,7 @@ function function_20380fe4() {
 function function_a623876e() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         waitresult.attacker util::show_hit_marker(0);
@@ -1308,7 +1308,7 @@ function function_1561b83f(var_e3a95ba5) {
     level.var_817811b4[level.var_817811b4.size] = struct::get("hardpoint_path_3", "targetname");
     level.var_44847b09 = 0;
     n_start_time = gettime() / 1000;
-    while (1) {
+    while (true) {
         n_time = gettime() / 1000;
         var_8af69517 = n_time - n_start_time;
         e_player = ct_utils::get_player();
@@ -1340,7 +1340,7 @@ function function_1561b83f(var_e3a95ba5) {
 function function_3ea10d34(var_e8437733, var_eb2d93d3) {
     level endon(#"combattraining_logic_finished", var_eb2d93d3);
     var_d7e81496 = gettime() / 1000;
-    while (1) {
+    while (true) {
         if (isdefined(level.var_2b87f134)) {
             e_player = ct_utils::get_player();
             var_70a61d6a = e_player ct_bots::function_71ec2b36();
@@ -1400,7 +1400,7 @@ function function_c43189cd() {
         level.var_2b008163 = 0;
         level thread function_3ea10d34(2, "gunship_event");
         level thread function_f75fee23(2);
-        while (1) {
+        while (true) {
             ct_utils::function_fdfeb384();
             ct_utils::function_e44c5b8e(#"ac130", 10);
             e_player = ct_utils::get_player();
@@ -1411,7 +1411,7 @@ function function_c43189cd() {
             level.var_a86320e8 = gettime() / 1000;
             var_4eb6b3e4 = 0;
             var_93781b01 = 0;
-            while (1) {
+            while (true) {
                 e_player = ct_utils::get_player();
                 if (!isalive(e_player)) {
                     var_4eb6b3e4 = 1;
@@ -1456,7 +1456,7 @@ function function_c43189cd() {
         level thread ct_vo::function_831e0584(array(#"hash_36816442279da155"), 1);
         ct_utils::function_c561377e(undefined);
         setdvar(#"hash_3e06b14c41136e95", 0);
-        while (1) {
+        while (true) {
             e_player = ct_utils::get_player();
             if (isalive(e_player)) {
                 break;
@@ -1467,7 +1467,7 @@ function function_c43189cd() {
         var_9947490d = e_player gamepadusedlast() ? #"hash_7033e3cd667fe69" : #"hash_7bbd382da03b8aaf";
         e_player thread ct_utils::function_61c3d59c(var_9947490d, undefined);
         globallogic_score::_setplayermomentum(e_player, 0);
-        while (1) {
+        while (true) {
             e_player = getplayers()[0];
             if (isalive(e_player)) {
                 wpn = e_player getcurrentweapon();
@@ -1484,7 +1484,7 @@ function function_c43189cd() {
         level notify(#"gunship_event");
         wait(0.1);
         ct_utils::function_c561377e();
-        while (1) {
+        while (true) {
             b_success = gunship_event();
             if (b_success) {
                 level.var_e6db911d = 1;
@@ -1532,7 +1532,7 @@ function function_f75fee23(var_9bff2467) {
     level.var_44847b09 = 0;
     level.var_72c3ea74 = struct::get_array("s_killstreak_spawn", "targetname");
     level.var_da5432a2 = 0;
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         a_bots = e_player ct_bots::function_dde6edbd();
         if (a_bots.size < var_9bff2467) {
@@ -1562,7 +1562,7 @@ function gunship_event() {
     e_player val::set(#"gunship", "ignoreme", 1);
     level thread ct_vo::function_5df1a850(level.ac130, array(#"hash_37ecd97827bbf3b"));
     e_player thread ct_utils::function_61c3d59c(#"hash_1aa5c2216481240e", undefined);
-    while (1) {
+    while (true) {
         if (e_player attackbuttonpressed()) {
             break;
         }
@@ -1577,7 +1577,7 @@ function gunship_event() {
     var_5e939643 = 0;
     b_fire = 0;
     n_start_time = gettime() / 1000;
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         if (e_player weaponswitchbuttonpressed()) {
             while (e_player weaponswitchbuttonpressed()) {
@@ -1618,7 +1618,7 @@ function gunship_event() {
     level.var_74bfba73 = 1;
     b_success = 0;
     level.var_62dd3f4a = 0;
-    while (1) {
+    while (true) {
         if (level.var_62dd3f4a >= 20) {
             b_success = 1;
             break;
@@ -1683,7 +1683,7 @@ function function_b8fea992(var_cd83876, var_264ee2f5, str_endon_notify) {
     a_s_locs = struct::get_array(var_cd83876, "targetname");
     n_index = 0;
     var_d7e81496 = 0;
-    while (1) {
+    while (true) {
         e_player = ct_utils::get_player();
         a_bots = e_player ct_bots::function_dde6edbd();
         if (a_bots.size <= 10) {
@@ -1754,7 +1754,7 @@ function function_58c62280(b_keyline, var_2f3964e3) {
         wait(4);
         s_loc = struct::get("s_single_soldier_path", "targetname");
         self ct_utils::function_1e7b75f2(s_loc);
-        return;
+        break;
     case 3:
         self thread function_3c3f8059();
         if (isdefined(level.var_1e06f070) && level.var_1e06f070) {
@@ -1769,21 +1769,21 @@ function function_58c62280(b_keyline, var_2f3964e3) {
             level.var_9c095ebe[level.var_9c095ebe.size] = self;
             self thread function_85d8bdb0(s_loc);
         }
-        return;
+        break;
     case 4:
         self thread function_a2ad2160(s_loc);
-        return;
+        break;
     case 5:
         self thread function_d832af02(s_loc);
-        return;
+        break;
     case 6:
         if (self.team == #"allies") {
             self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32);
         }
-        return;
+        break;
     case 8:
         self thread function_bb3b8475();
-        return;
+        break;
     case 9:
         self val::reset(#"enemy_bot", "ignoreall");
         if (self.team == #"allies") {
@@ -1792,7 +1792,7 @@ function function_58c62280(b_keyline, var_2f3964e3) {
             self thread function_d832af02(s_loc);
             self val::reset(#"enemy_bot", "ignoreall");
         }
-        return;
+        break;
     case 10:
     case 11:
         if (self.team == #"axis") {
@@ -1809,7 +1809,7 @@ function function_58c62280(b_keyline, var_2f3964e3) {
                 self thread function_d832af02(s_path);
             }
         }
-        return;
+        break;
     }
 }
 
@@ -1823,7 +1823,7 @@ function function_af9e55a1(s_loc) {
     var_ed1884cc = struct::get_array("s_gunship_courtyard_loc", "targetname");
     var_ed1884cc = array::randomize(var_ed1884cc);
     n_index = 0;
-    while (1) {
+    while (true) {
         wait(randomfloatrange(3, 7));
         s_loc = var_ed1884cc[n_index];
         n_index++;
@@ -1902,14 +1902,14 @@ function function_85d8bdb0(s_spawn_loc) {
     self.var_ffb28553 = 1;
     self.b_stationary = 0;
     n_index = 0;
-    while (1) {
+    while (true) {
         s_target = a_s_targets[n_index];
         n_index++;
         if (n_index >= a_s_targets.size) {
             n_index = 0;
         }
         self thread ct_utils::function_5b59f3b7(s_target.origin, s_target.angles, 32);
-        while (1) {
+        while (true) {
             self.var_ec3b71df = distance(self.origin, s_target.origin);
             if (self.var_ec3b71df < 32) {
                 break;
@@ -1953,7 +1953,7 @@ function function_a2ad2160(s_spawn_loc) {
     var_a284e6d5 = getweapon(s_target.weapon);
     self giveweapon(var_a284e6d5);
     self thread ct_utils::function_5b59f3b7(s_target.origin, s_target.angles, 32);
-    while (1) {
+    while (true) {
         n_dist = distance(self.origin, s_target.origin);
         if (n_dist < 60) {
             break;
@@ -2052,7 +2052,7 @@ function function_2fa4efc2(waitresult) {
 // Size: 0x3ee
 function function_7e060369() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hash_31be1f8b27209ad0");
         e_beacon = waitresult.beacon.spawnbeacon;
@@ -2212,7 +2212,7 @@ function function_99a579e2() {
 // Size: 0x80
 function function_fa3dd4f0() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         level.var_3711d636 = undefined;
         level waittill(#"hash_4c1be11f1e312a36");
         level.var_3711d636 = 1;

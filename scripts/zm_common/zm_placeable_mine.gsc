@@ -123,9 +123,9 @@ function private run_planted_callbacks(e_planter) {
 // Size: 0x3e
 function private safe_to_plant() {
     if (isdefined(level.placeable_mines_max_per_player) && self.owner.placeable_mines.size >= level.placeable_mines_max_per_player) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
@@ -145,7 +145,7 @@ function private mine_watch(wpn_type) {
     self endon(#"death");
     self notify(#"mine_watch");
     self endon(#"mine_watch");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         mine = waitresult.projectile;
@@ -172,12 +172,12 @@ function private mine_watch(wpn_type) {
 // Size: 0x3e
 function is_true_placeable_mine(mine_name) {
     if (!isdefined(level.placeable_mines_in_name_only)) {
-        return 1;
+        return true;
     }
     if (!isdefined(level.placeable_mines_in_name_only[mine_name])) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_placeable_mine/zm_placeable_mine
@@ -280,7 +280,7 @@ function private pickup_placeable_mine_trigger_listener(trigger, player) {
 // Size: 0xb8
 function private pickup_placeable_mine_trigger_listener_enable(trigger, player) {
     self endon(#"delete", #"death");
-    while (1) {
+    while (true) {
         player waittill("zmb_enable_" + self.weapon.name + "_prompt", #"spawned_player");
         if (!isdefined(trigger)) {
             return;
@@ -296,7 +296,7 @@ function private pickup_placeable_mine_trigger_listener_enable(trigger, player) 
 // Size: 0xa8
 function private pickup_placeable_mine_trigger_listener_disable(trigger, player) {
     self endon(#"delete", #"death");
-    while (1) {
+    while (true) {
         player waittill("zmb_disable_" + self.weapon.name + "_prompt");
         if (!isdefined(trigger)) {
             return;
@@ -316,7 +316,7 @@ function private placeable_mine_damage() {
     self.health = 100000;
     self.maxhealth = self.health;
     attacker = undefined;
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (!isdefined(self)) {
@@ -361,7 +361,7 @@ function private reset_satchel_explode_this_frame() {
 // Checksum 0x15b7d092, Offset: 0x10b0
 // Size: 0x212
 function private replenish_after_rounds() {
-    while (1) {
+    while (true) {
         level waittill(#"between_round_over");
         if (isdefined(level.var_9c6b209c)) {
             [[ level.var_9c6b209c ]]();
@@ -376,7 +376,7 @@ function private replenish_after_rounds() {
                         players[i] zm_loadout::set_player_placeable_mine(mine);
                         players[i] setactionslot(4, "weapon", mine);
                         players[i] setweaponammoclip(mine, 2);
-                        continue;
+                        break;
                     }
                 }
             }

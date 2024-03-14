@@ -117,7 +117,7 @@ function debug_missile(missile) {
         level notify(#"debug_missile");
         level endon(#"debug_missile");
         level.debug_missile_dots = [];
-        while (1) {
+        while (true) {
             if (getdvarint(#"scr_debug_missile", 0) == 0) {
                 wait(0.5);
                 continue;
@@ -172,10 +172,10 @@ function stingerwaitforads() {
         currentweapon = self getcurrentweapon();
         weapon = getappropriateplayerweapon(currentweapon);
         if (weapon.lockontype != "Legacy Single" || weapon.noadslockoncheck) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -194,7 +194,7 @@ function on_weapon_change(params) {
             continue;
         }
         if (!weapon.noadslockoncheck && !stingerwaitforads()) {
-            return;
+            break;
         }
         self thread stingerirtloop(weapon);
         if (weapon.noadslockoncheck) {
@@ -367,7 +367,7 @@ function targetwithinrangeofplayspace(target) {
     #/
     if (level.missilelockplayspacecheckenabled === 1) {
         if (!isdefined(target)) {
-            return 0;
+            return false;
         }
         if (!isdefined(level.playspacecenter)) {
             level.playspacecenter = util::getplayspacecenter();
@@ -376,10 +376,10 @@ function targetwithinrangeofplayspace(target) {
             level.missilelockplayspacecheckradiussqr = (util::getplayspacemaxwidth() * 0.5 + level.missilelockplayspacecheckextraradius) * (util::getplayspacemaxwidth() * 0.5 + level.missilelockplayspacecheckextraradius);
         }
         if (distance2dsquared(target.origin, level.playspacecenter) > level.missilelockplayspacecheckradiussqr) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -425,7 +425,7 @@ function displaylockoncanceledmessage() {
 // Size: 0x9e
 function private function_d656e945(team) {
     if (!isdefined(self.team)) {
-        return 0;
+        return false;
     }
     vehicle_team = self.team;
     if (vehicle_team == #"neutral") {
@@ -435,9 +435,9 @@ function private function_d656e945(team) {
         }
     }
     if (util::function_fbce7263(vehicle_team, team)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -626,15 +626,15 @@ function function_1b76fb42(ent, weapon) {
     var_91c7ae51 = distance2dsquared(self.origin, ent.origin);
     if (weapon.lockonminrange > 0) {
         if (var_91c7ae51 < weapon.lockonminrange * weapon.lockonminrange) {
-            return 0;
+            return false;
         }
     }
     if (weapon.lockonmaxrange > 0) {
         if (var_91c7ae51 > weapon.lockonmaxrange * weapon.lockonmaxrange) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -705,10 +705,10 @@ function looplocallocksound(alias, interval) {
 function locksighttest(target, subtarget) {
     camerapos = self getplayercamerapos();
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
     if (isdefined(target.var_e8ec304d) && target.var_e8ec304d) {
-        return 0;
+        return false;
     }
     targetorigin = target_getorigin(target, subtarget);
     if (isdefined(target.parent)) {
@@ -717,7 +717,7 @@ function locksighttest(target, subtarget) {
         passed = bullettracepassed(camerapos, targetorigin, 0, target);
     }
     if (passed) {
-        return 1;
+        return true;
     }
     front = target getpointinbounds(1, 0, 0);
     if (isdefined(target.parent)) {
@@ -726,7 +726,7 @@ function locksighttest(target, subtarget) {
         passed = bullettracepassed(camerapos, front, 0, target);
     }
     if (passed) {
-        return 1;
+        return true;
     }
     back = target getpointinbounds(-1, 0, 0);
     if (isdefined(target.parent)) {
@@ -735,9 +735,9 @@ function locksighttest(target, subtarget) {
         passed = bullettracepassed(camerapos, back, 0, target);
     }
     if (passed) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -748,7 +748,7 @@ function softsighttest() {
     lost_sight_limit = 500;
     if (self locksighttest(self.stingertarget, self.stingersubtarget)) {
         self.stingerlostsightlinetime = 0;
-        return 1;
+        return true;
     }
     if (self.stingerlostsightlinetime == 0) {
         self.stingerlostsightlinetime = gettime();
@@ -756,9 +756,9 @@ function softsighttest() {
     timepassed = gettime() - self.stingerlostsightlinetime;
     if (timepassed >= lost_sight_limit) {
         self clearirtarget();
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -1103,12 +1103,12 @@ function _incomingmissiletracker(missile, attacker) {
 // Size: 0x26
 function missiletarget_ismissileincoming() {
     if (!isdefined(self.incoming_missile)) {
-        return 0;
+        return false;
     }
     if (self.incoming_missile) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -1117,16 +1117,16 @@ function missiletarget_ismissileincoming() {
 // Size: 0x80
 function missiletarget_isotherplayermissileincoming(attacker) {
     if (!isdefined(self.incoming_missile_owner)) {
-        return 0;
+        return false;
     }
     if (self.incoming_missile_owner.size == 0) {
-        return 0;
+        return false;
     }
     attacker_entnum = attacker getentitynumber();
     if (self.incoming_missile_owner.size == 1 && isdefined(self.incoming_missile_owner[attacker_entnum])) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -1307,7 +1307,7 @@ function missiletarget_deployflares(origin, angles) {
 function debug_tracker(target) {
     /#
         target endon(#"death");
-        while (1) {
+        while (true) {
             dev::debug_sphere(target.origin, 10, (1, 0, 0), 1, 1);
             waitframe(1);
         }

@@ -91,15 +91,15 @@ function private _gibcallback(localclientnum, entity, gibflag) {
     }
     switch (gibflag) {
     case 8:
-        return;
+        break;
     case 16:
-        return;
+        break;
     case 32:
-        return;
+        break;
     case 128:
-        return;
+        break;
     case 256:
-        return;
+        break;
     }
 }
 

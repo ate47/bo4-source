@@ -97,7 +97,7 @@ function run_oob_trigger() {
 // Size: 0x20
 function isoutofbounds() {
     if (!isdefined(self.oob_start_time)) {
-        return 0;
+        return false;
     }
     return self.oob_start_time != -1;
 }
@@ -142,10 +142,10 @@ function chr_party(point) {
             continue;
         }
         if (istouching(point, trigger)) {
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace oob/oob
@@ -177,7 +177,7 @@ function resetoobtimer(is_host_migrating, b_disable_timekeep) {
 // Size: 0xcc
 function waitforclonetouch() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         clone = waitresult.activator;
@@ -204,7 +204,7 @@ function getadjusedplayer(player) {
 // Size: 0x1c2
 function waitforplayertouch() {
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (sessionmodeismultiplayergame() || sessionmodeiswarzonegame()) {
             hostmigration::waittillhostmigrationdone();
         }
@@ -271,7 +271,7 @@ function function_c5278cb0(vehicle) {
     self notify("4986a6d17190ada9" + vehicle getentitynumber());
     self endon("4986a6d17190ada9" + vehicle getentitynumber());
     vehicle endon(#"death");
-    while (1) {
+    while (true) {
         if (!vehicle isinsideheightlock()) {
             self enter_oob(vehicle);
             self waittill(#"oob_exit");
@@ -286,15 +286,15 @@ function function_c5278cb0(vehicle) {
 // Size: 0x8a
 function function_65b20() {
     if (self scene::is_igc_active()) {
-        return 1;
+        return true;
     }
     if (isdefined(self.oobdisabled) && self.oobdisabled) {
-        return 1;
+        return true;
     }
     if (level flag::exists("draft_complete") && !level flag::get("draft_complete")) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace oob/oob
@@ -393,7 +393,7 @@ function watchforleave(entity) {
     self endon(#"oob_exit");
     self endon(#"disconnect");
     entity endon(#"death");
-    while (1) {
+    while (true) {
         if (entity istouchinganyoobtrigger() && (isplayer(entity) || isplayer(self) && self isremotecontrolling() || entity.var_c5d65381 === 1)) {
             updatevisualeffects(entity);
             cur_time = gettime();

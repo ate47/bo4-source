@@ -204,7 +204,7 @@ function private function_14f79b33(center, radius, height, var_e294ac7d) {
     self endon(#"death");
     var_5d59bc67 = 1760;
     time_step = 5;
-    while (1) {
+    while (true) {
         if (!isdefined(level.deathcircle)) {
             circle_origin = center;
             circle_radius = radius;
@@ -639,7 +639,7 @@ function function_5425f45d() {
 // Size: 0x7e
 function private function_a6eac3b7() {
     /#
-        while (1) {
+        while (true) {
             if (getdvar(#"hash_3fb4a63926f3fa15", 0) > 0) {
                 function_9536aa3d();
                 setdvar(#"hash_3fb4a63926f3fa15", "<unknown string>");

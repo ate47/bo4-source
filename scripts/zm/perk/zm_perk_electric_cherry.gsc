@@ -242,7 +242,7 @@ function electric_cherry_reload_attack() {
     self endon(#"disconnect", #"specialty_electriccherry" + "_take");
     self.wait_on_reload = [];
     self.consecutive_electric_cherry_attacks = 0;
-    while (1) {
+    while (true) {
         self waittill(#"reload_start");
         current_weapon = self getcurrentweapon();
         if (isinarray(self.wait_on_reload, current_weapon)) {
@@ -349,13 +349,13 @@ function electric_cherry_cooldown_timer(current_weapon) {
 function check_for_reload_complete(weapon) {
     self endon(#"disconnect", "player_lost_weapon_" + weapon.name);
     self thread weapon_replaced_monitor(weapon);
-    while (1) {
+    while (true) {
         self waittill(#"reload", #"hash_278526d0bbdb4ce7");
         current_weapon = self getcurrentweapon();
         if (current_weapon == weapon) {
             arrayremovevalue(self.wait_on_reload, weapon);
             self notify("weapon_reload_complete_" + weapon.name);
-            return;
+            break;
         }
     }
 }
@@ -366,13 +366,13 @@ function check_for_reload_complete(weapon) {
 // Size: 0xbc
 function weapon_replaced_monitor(weapon) {
     self endon(#"disconnect", "weapon_reload_complete_" + weapon.name);
-    while (1) {
+    while (true) {
         self waittill(#"weapon_change");
         primaryweapons = self getweaponslistprimaries();
         if (!isinarray(primaryweapons, weapon)) {
             self notify("player_lost_weapon_" + weapon.name);
             arrayremovevalue(self.wait_on_reload, weapon);
-            return;
+            break;
         }
     }
 }

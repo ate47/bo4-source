@@ -207,7 +207,7 @@ function setup_docks_crane() {
 function crane_shock_box() {
     var_da5e0bea = getent("crane_shock_box", "script_string");
     var_217fca51 = struct::get("docks_crane");
-    while (1) {
+    while (true) {
         var_da5e0bea waittill(#"hash_7e1d78666f0be68b");
         if (level flag::get(#"hash_2444d210a1dd0dd")) {
             continue;
@@ -247,7 +247,7 @@ function crane_shock_box() {
 function function_1c670b79(var_217fca51) {
     self endon(#"death", #"disconnect");
     level endon(#"hash_2fd493c2a926e006", #"hash_66f358c0066d77d8");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
@@ -320,7 +320,7 @@ function function_88cbb4b3(player) {
 // Checksum 0xac2c55f, Offset: 0x1708
 // Size: 0x156
 function function_c5e0a9a4() {
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
@@ -512,7 +512,7 @@ function function_d0bb3c35() {
 function function_5753ae89() {
     self endon(#"disconnect");
     level.var_5c14fe03 endoncallback(&function_2084efc3, #"death", #"hash_4ecfa36be208fd5f");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
@@ -604,15 +604,15 @@ function function_97be15e3(cmd) {
         switch (cmd) {
         case #"hash_42dce9e99181c0bc":
             function_7101d54f();
-            return;
+            break;
         case #"hash_22d60bf8b1f181a7":
             level flag::set(#"hash_ed90925c898d1b0");
-            return;
+            break;
         case #"hash_32e9365d47a4194":
             level flag::set(#"hash_ed90925c898d1b0");
             level flag::set(#"hash_66f358c0066d77d8");
             function_ac52c6f1();
-            return;
+            break;
         case #"hash_6959afd9d36f38b8":
             if (zm_utility::is_ee_enabled()) {
                 var_4f5b63ea = struct::get("<unknown string>");
@@ -623,16 +623,16 @@ function function_97be15e3(cmd) {
                 var_bdd399ea = var_31a8a875.var_825e7054;
                 iprintln("<unknown string>" + var_1390c563 + var_9393456a + var_bdd399ea);
             }
-            return;
+            break;
         case #"hash_6f5ba9c8e47bde8b":
             level.var_38e38e53 = 1;
-            return;
+            break;
         case #"hash_7ed9eae4551e92d3":
             level.var_18d2e3aa = 1;
-            return;
+            break;
         case #"hash_6a0c48ca2516a0a3":
             level.var_64f95ac4 = 1;
-            return;
+            break;
         }
     #/
 }

@@ -41,7 +41,7 @@ function __init__() {
 // Checksum 0x93751cbe, Offset: 0x488
 // Size: 0xd0
 function wait_and_set_revive_shader_constant() {
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"notetrack");
         localclientnum = waitresult.localclientnum;

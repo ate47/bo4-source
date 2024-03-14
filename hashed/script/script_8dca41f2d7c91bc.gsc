@@ -244,7 +244,7 @@ function function_4ff0c5fd(e_player) {
     var_1cda8410 = [];
     level thread zm_red_ww_quests::sndonoverride_no_();
     a_s_spawns = struct::get_array(self.var_e9198efc, "targetname");
-    while (1) {
+    while (true) {
         ai_zombie = undefined;
         do {
             waitframe(1);

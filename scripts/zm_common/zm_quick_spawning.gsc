@@ -45,7 +45,7 @@ function private function_6a51df96(notifyhash) {
 // Size: 0xe6
 function private function_920e8738() {
     self endoncallback(&function_6a51df96, #"death", #"disconnect");
-    while (1) {
+    while (true) {
         if (!isdefined(self.var_552afb80)) {
             self.var_552afb80 = [];
             self.var_b0ae2a = 0;
@@ -412,7 +412,7 @@ function private function_dad4891b(player_in) {
 // Size: 0x80
 function function_ba3ebac4() {
     /#
-        while (1) {
+        while (true) {
             waitframe(1);
             if (!getdvarint(#"hash_879482f07431cc8", 0)) {
                 continue;
@@ -430,7 +430,7 @@ function function_ba3ebac4() {
 function function_cd00ea8(spot) {
     /#
         self endon(#"death");
-        while (1) {
+        while (true) {
             if (!getdvarint(#"hash_2442d868ecc2788a", 0)) {
                 return;
             }
@@ -535,7 +535,7 @@ function function_af31614c() {
         function_1dbfb733("<unknown string>", "<unknown string>", &function_1dfb06de, &function_af42554f);
         function_1dbfb733("<unknown string>", "<unknown string>", &function_f34e4a6b, &function_af42554f);
         function_1dbfb733("<unknown string>", "<unknown string>", undefined, &function_766c006e);
-        while (1) {
+        while (true) {
             var_f6c7efda = getplayers().size;
             waitframe(1);
             if (!getdvarint(#"hash_1067641cdc653b13", 0) || var_f6c7efda != getplayers().size) {
@@ -656,7 +656,7 @@ function function_f34e4a6b() {
 // Size: 0x304
 function function_497aad8f() {
     /#
-        while (1) {
+        while (true) {
             waitframe(1);
             if (isdefined(level.zones) && getdvarint(#"hash_31275bfb1fec2d76", -1) > -1) {
                 if (getdvarint(#"hash_31275bfb1fec2d76", -1) >= level.players.size) {

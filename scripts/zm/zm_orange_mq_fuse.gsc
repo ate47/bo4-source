@@ -289,7 +289,7 @@ function is_soul_capture(var_88206a50, ent) {
         var_e93788f1 = var_88206a50.e_vol;
         return (b_killed_by_player && ent istouching(var_e93788f1));
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_mq_fuse/zm_orange_mq_fuse

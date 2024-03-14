@@ -336,7 +336,7 @@ function flush_objective_dialog_on_player(objectivekey) {
     for (i = self.leaderdialogqueue.size - 1; i >= 0; i--) {
         if (objectivekey === self.leaderdialogqueue[i].objectivekey) {
             arrayremoveindex(self.leaderdialogqueue, i);
-            return;
+            break;
         }
     }
 }
@@ -841,11 +841,11 @@ function is_team_winning(checkteam) {
     foreach (team, _ in level.teams) {
         if (team != checkteam) {
             if (game.stat[#"teamscores"][team] >= score) {
-                return 0;
+                return false;
             }
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace globallogic_audio/globallogic_audio
@@ -857,10 +857,10 @@ function announce_team_is_winning() {
         if (is_team_winning(team)) {
             leader_dialog("gameWinning", team);
             leader_dialog_for_other_teams("gameLosing", team);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace globallogic_audio/globallogic_audio
@@ -1019,7 +1019,7 @@ function sndmusictimelimitwatcher() {
         return;
     }
     halfway = level.timelimit * 60 * 0.5;
-    while (1) {
+    while (true) {
         timeleft = float(globallogic_utils::gettimeremaining()) / 1000;
         if (timeleft <= halfway) {
             level notify(#"sndmusichalfway");

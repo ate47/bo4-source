@@ -59,15 +59,15 @@ function __init__() {
 // Size: 0xcc
 function function_c740060f(weapon, var_e7c11b0c = 1) {
     if (weapon == level.hero_weapon[#"katana"][2]) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"katana"][1] && var_e7c11b0c < 3) {
-        return 1;
+        return true;
     }
     if (weapon == level.hero_weapon[#"katana"][0] && var_e7c11b0c < 2) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_weap_katana/zm_weap_katana
@@ -77,7 +77,7 @@ function function_c740060f(weapon, var_e7c11b0c = 1) {
 function private function_9a0f234b() {
     self endon(#"disconnect");
     self thread function_756560e3();
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
@@ -135,7 +135,7 @@ function private function_9fdcf13f() {
 // Size: 0xa0
 function private function_756560e3() {
     self endon(#"disconnect");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
@@ -242,7 +242,7 @@ function private function_1475944a() {
 // Size: 0xf8
 function function_8d02f57b(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
-    while (1) {
+    while (true) {
         if (w_katana.name == #"hero_katana_t8_lv3") {
             s_result = undefined;
             s_result = self waittill(#"weapon_melee_power");
@@ -262,7 +262,7 @@ function function_8d02f57b(w_katana) {
 // Size: 0x14e
 function function_119af40d(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee_juke");
         if (s_result.weapon == w_katana) {
@@ -288,7 +288,7 @@ function function_119af40d(w_katana) {
 function function_7903608c(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired", #"hash_50c324a04c7e0b09");
     str_hitloc = "head";
-    while (1) {
+    while (true) {
         var_baf7d060 = getaiteamarray(level.zombie_team);
         var_a812a69b = self.origin + anglestoforward(self.angles) * 40;
         a_ai_zombies = array::get_all_closest(var_a812a69b, var_baf7d060, undefined, undefined, 80);
@@ -346,7 +346,7 @@ function private function_bbe55589(e_player, w_katana, str_hitloc) {
 // Size: 0xa8
 function function_fcc26273(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon == w_katana) {
@@ -430,12 +430,12 @@ function function_c43691a9(var_2e56d8e5) {
 // Size: 0xd0
 function function_478a4910(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee_juke");
         if (s_result.weapon == w_katana) {
             if (1 === zm_audio::create_and_play_dialog(#"hero_level_2", #"katana")) {
-                return;
+                break;
             }
         }
     }
@@ -447,12 +447,12 @@ function function_478a4910(w_katana) {
 // Size: 0xd0
 function function_68ff89f7(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon == w_katana) {
             if (1 === zm_audio::create_and_play_dialog(#"hero_level_3", #"katana")) {
-                return;
+                break;
             }
         }
     }

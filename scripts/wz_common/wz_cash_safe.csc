@@ -71,7 +71,7 @@ function function_ed66923(targetname) {
 function private function_93b89303(localclientnum) {
     player = function_27673a7(localclientnum);
     player endon(#"disconnect");
-    while (1) {
+    while (true) {
         if (!isdefined(player)) {
             player = function_27673a7(localclientnum);
         }

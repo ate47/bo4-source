@@ -13,17 +13,17 @@
 // Size: 0x76
 function function_f2f3407(var_1c5778ef) {
     if (isdefined(level.var_43ac3b33) && level.var_43ac3b33) {
-        return 0;
+        return false;
     }
     if (!isdefined(var_1c5778ef)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_e72728b8)) {
         if (isinarray(level.var_e72728b8, var_1c5778ef)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace ct_gadgets/ct_gadgets
@@ -172,7 +172,7 @@ function function_b0762fa0(n_slot) {
     if (!isdefined(self.var_bb7ec6ae)) {
         self.var_bb7ec6ae = [];
     }
-    while (1) {
+    while (true) {
         if (isdefined(self._gadgets_player)) {
             gadget = self._gadgets_player[n_slot];
             if (isdefined(gadget)) {
@@ -237,7 +237,7 @@ function function_19181566() {
 function function_4db6654a(n_slot, var_56cf67a9) {
     level endon(#"hash_699329b4df616aed");
     self endon(#"death");
-    while (1) {
+    while (true) {
         if (isdefined(self._gadgets_player)) {
             gadget = self._gadgets_player[n_slot];
             if (isdefined(gadget) && function_f2f3407(gadget.name)) {
@@ -257,7 +257,7 @@ function function_4db6654a(n_slot, var_56cf67a9) {
 // Size: 0xce
 function function_144e61da(n_slot, str_endon) {
     level endon(str_endon);
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         gadget = e_player._gadgets_player[n_slot];
         if (isalive(e_player) && isdefined(gadget) && function_f2f3407(gadget.name)) {
@@ -273,7 +273,7 @@ function function_144e61da(n_slot, str_endon) {
 // Size: 0x72
 function function_c3e3d15() {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"hero_gadget_activated");
         waitresult.player.var_657a47ca = waitresult.weapon.name;
@@ -322,7 +322,7 @@ function function_1be7e4f(str_weapon) {
     self endon(#"death", #"hash_46d18c1394319d75");
     weapon = getweapon(str_weapon);
     var_333fa936 = self getweaponammoclipsize(weapon);
-    while (1) {
+    while (true) {
         wpn_current = self getcurrentweapon();
         if (wpn_current == weapon) {
             n_ammo = self getweaponammoclip(wpn_current);
@@ -340,12 +340,12 @@ function function_1be7e4f(str_weapon) {
 // Size: 0xa2
 function function_350dd8ec(str_weapon) {
     level endon(#"combattraining_logic_finished");
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         if (isalive(e_player)) {
             wpn = e_player getcurrentweapon();
             if (wpn.name == str_weapon) {
-                return;
+                break;
             }
         }
         waitframe(1);

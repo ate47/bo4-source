@@ -61,7 +61,7 @@ function private robotlighting(localclientnum, entity, flicker, mindcontrolstate
         } else {
             fxclientutils::playfxbundle(localclientnum, entity, entity.fxdef);
         }
-        return;
+        break;
     case 1:
         fxclientutils::stopallfxbundles(localclientnum, entity);
         if (flicker) {
@@ -72,7 +72,7 @@ function private robotlighting(localclientnum, entity, flicker, mindcontrolstate
         if (!gibclientutils::isgibbed(localclientnum, entity, 8)) {
             entity playsound(localclientnum, #"fly_bot_ctrl_lvl_01_start", entity.origin);
         }
-        return;
+        break;
     case 2:
         fxclientutils::stopallfxbundles(localclientnum, entity);
         if (flicker) {
@@ -83,7 +83,7 @@ function private robotlighting(localclientnum, entity, flicker, mindcontrolstate
         if (!gibclientutils::isgibbed(localclientnum, entity, 8)) {
             entity playsound(localclientnum, #"fly_bot_ctrl_lvl_02_start", entity.origin);
         }
-        return;
+        break;
     case 3:
         fxclientutils::stopallfxbundles(localclientnum, entity);
         if (flicker) {
@@ -92,7 +92,7 @@ function private robotlighting(localclientnum, entity, flicker, mindcontrolstate
             fxclientutils::playfxbundle(localclientnum, entity, entity.altfxdef2);
         }
         entity playsound(localclientnum, #"fly_bot_ctrl_lvl_03_start", entity.origin);
-        return;
+        break;
     }
 }
 
@@ -130,10 +130,10 @@ function private robotemphandler(localclientnum, oldvalue, newvalue, bnewent, bi
     }
     switch (newvalue) {
     case 0:
-        return;
+        break;
     case 1:
         entity.empfx = util::playfxontag(localclientnum, level._effect[#"fx_ability_elec_surge_short_robot"], entity, "j_spine4");
-        return;
+        break;
     }
 }
 
@@ -165,7 +165,7 @@ function robotmindcontrolexplosionhandler(localclientnum, oldvalue, newvalue, bn
     switch (newvalue) {
     case 1:
         entity.explosionfx = util::playfxontag(localclientnum, level._effect[#"fx_exp_robot_stage3_evb"], entity, "j_spineupper");
-        return;
+        break;
     }
 }
 

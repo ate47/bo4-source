@@ -55,7 +55,7 @@ function private function_dd028fcb(e_player) {
 // Size: 0xc6
 function private function_608b90b4() {
     self endon(#"end_game");
-    while (1) {
+    while (true) {
         s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
@@ -137,7 +137,7 @@ function function_76e94d52() {
     self endon(#"grenade_change");
     self endon(#"death");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
         if (self function_75a76099()) {
             var_d8b1f3e3 = self getweaponammoclip(var_d49d10b0);
@@ -176,9 +176,9 @@ function function_76e94d52() {
 function function_75a76099() {
     var_d49d10b0 = self zm_loadout::get_player_lethal_grenade();
     if (isdefined(var_d49d10b0) && (var_d49d10b0 == level.w_snowball || var_d49d10b0 == level.w_snowball_upgraded || var_d49d10b0 == level.w_snowball_yellow || var_d49d10b0 == level.w_snowball_yellow_upgraded)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_orange_snowball_piles/zm_orange_snowball_piles

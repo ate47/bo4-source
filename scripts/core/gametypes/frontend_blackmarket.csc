@@ -57,7 +57,7 @@ function function_78a5c895(localclientnum, menu_data) {
 function function_8aff1931(localclientnum, menu_data) {
     level notify(#"hash_1a6765b456dde230");
     level endon(#"hash_1a6765b456dde230", #"blackmarket_closed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = level waittill(#"blackjackreserve");
         if (isdefined(waitresult.open) && !waitresult.open) {
@@ -269,7 +269,7 @@ function function_fa73161a(localclientnum, menu_data, state) {
     } else {
         level.var_cf24a85f.var_82406a05 = #"cin_black_market_not_welcome";
     }
-    while (1) {
+    while (true) {
         do {
             if (level.var_cf24a85f.var_f56984dc === "idle") {
                 var_9e40a851 = scene::function_67e52759(level.var_cf24a85f.var_82406a05, undefined, 0, 1);

@@ -278,7 +278,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self endon(#"disconnect", #"hash_ed7c0dc0ca165df");
     self.var_3e48c35a = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_95df0a1b, 0, #"perk_dying_wish");
-    while (1) {
+    while (true) {
         wait(0.1);
         self.var_3e48c35a = self.var_3e48c35a - 0.1;
         self.var_3e48c35a = math::clamp(self.var_3e48c35a, 0, var_85dcb56c);

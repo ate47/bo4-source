@@ -130,9 +130,9 @@ function take_player_weapons(n_interval, e_player) {
 // Size: 0x54
 function private function_873de196(weapon) {
     if (weapon.ischargeshot && (!isdefined(weapon.nextchargelevelweapon) || weapon.nextchargelevelweapon == level.weaponnone)) {
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_trial_weapon_rotation/zm_trial_weapon_rotation
@@ -197,7 +197,7 @@ function private function_413cffae(n_interval, e_player) {
     e_player notify(#"hash_14795fd12c6dae32");
     level endon(#"hash_7646638df88a3656");
     e_player endon(#"disconnect", #"hash_14795fd12c6dae32");
-    while (1) {
+    while (true) {
         e_player function_27cd9d6(0.15);
         do {
             weapon = array::random(self.var_ea033f4a);
@@ -233,7 +233,7 @@ function function_579553d8(n_interval) {
         self notify("<unknown string>");
         self endon("<unknown string>");
         level endon(#"hash_7646638df88a3656", #"end_game");
-        while (1) {
+        while (true) {
             debug2dtext((8, 400, 0), "<unknown string>" + n_interval, undefined, undefined, undefined, 1);
             waitframe(1);
             n_interval = n_interval - float(function_60d95f53()) / 1000;

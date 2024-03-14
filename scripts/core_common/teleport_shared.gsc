@@ -84,10 +84,10 @@ function hero(ai_hero, kvp, var_dad37549) {
         }
         if (s_teleport.(str_key) === str_value && !(isdefined(s_teleport.b_used) && s_teleport.b_used)) {
             ai_hero function_df1911b9(s_teleport, var_20212d26.var_dad37549);
-            return 1;
+            return true;
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace teleport/teleport_shared

@@ -71,7 +71,7 @@ function private on_end(round_reset) {
 // Size: 0xd0
 function private function_cfb0f4d() {
     level endon(#"hash_7646638df88a3656", #"hash_2b35a48172d1e0c2");
-    while (1) {
+    while (true) {
         level waittill(#"weapon_fly_away_start");
         level.var_59f4d3a6++;
         if (level.var_59f4d3a6 == level.var_dd1a18c9) {

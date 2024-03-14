@@ -84,7 +84,7 @@ function trap_audio(trap) {
 // Size: 0x78
 function play_electrical_sound(trap) {
     trap endon(#"trap_done");
-    while (1) {
+    while (true) {
         wait(randomfloatrange(0.1, 0.5));
         playsoundatposition(#"hash_6b9160d5f97e5ecb", self.origin);
     }

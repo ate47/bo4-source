@@ -274,17 +274,17 @@ function function_70fcc093() {
                 if (isdefined(s_path)) {
                     if (isdefined(s_path.pathdistance)) {
                         if (s_path.pathdistance < level.var_e1d82d33) {
-                            return 1;
+                            return true;
                         }
                     }
                 } else {
-                    return 1;
+                    return true;
                 }
                 waitframe(1);
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -306,11 +306,11 @@ function function_1a2fa922() {
     if (level.players.size > 1) {
         foreach (e_player in level.players) {
             if (zm_utility::is_player_valid(e_player)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -452,9 +452,9 @@ function laststand_enable_player_weapons(b_bled_out) {
 // Size: 0x18
 function laststand_has_players_weapons_returned() {
     if (isdefined(self.laststandpistol)) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -508,7 +508,7 @@ function function_aac4b2c9(weapon) {
 function function_6155752d() {
     self endon(#"disconnect");
     self.var_d84718d1 = [];
-    while (1) {
+    while (true) {
         s_result = undefined;
         s_result = self waittill(#"weapon_change_complete");
         if (isinarray(self.var_d84718d1, s_result.weapon) || laststand::player_is_in_laststand()) {
@@ -790,21 +790,21 @@ function bleed_out() {
 // Size: 0x90
 function can_suicide() {
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (!self laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.suicideprompt)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_zombie) && self.is_zombie) {
-        return 0;
+        return false;
     }
     if (isdefined(level.intermission) && level.intermission) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -946,7 +946,7 @@ function function_76043ec3() {
         return;
     }
     self.var_c6a6f334 = 0;
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!isdefined(self.var_c2bb0cce)) {
             continue;
@@ -984,21 +984,21 @@ function function_550c4ac4() {
 // Size: 0x94
 function function_30b9cdd5() {
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.var_c6a6f334) && self.var_c6a6f334) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.var_c2bb0cce)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_zombie) && self.is_zombie) {
-        return 0;
+        return false;
     }
     if (isdefined(level.intermission) && level.intermission) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -1010,7 +1010,7 @@ function function_73d6c609(n_duration) {
     level endon(#"end_game");
     var_722c6f25 = 0;
     b_success = 0;
-    while (1) {
+    while (true) {
         while (self function_550c4ac4()) {
             waitframe(1);
             var_722c6f25 = var_722c6f25 + 0.05;
@@ -1068,7 +1068,7 @@ function revive_trigger_spawn() {
 function revive_trigger_think(t_secondary) {
     self endon(#"disconnect", #"zombified", #"stop_revive_trigger", #"death");
     level endon(#"end_game");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (isdefined(t_secondary)) {
             t_revive = t_secondary;
@@ -1213,34 +1213,34 @@ function revive_give_back_weapons(w_reviver, w_revive_tool) {
 // Size: 0x326
 function can_revive(e_revivee, ignore_sight_checks = 0, ignore_touch_checks = 0) {
     if (!isdefined(e_revivee.revivetrigger)) {
-        return 0;
+        return false;
     }
     if (!isalive(self)) {
-        return 0;
+        return false;
     }
     if (self laststand::player_is_in_laststand()) {
-        return 0;
+        return false;
     }
     if (self.team != e_revivee.team) {
-        return 0;
+        return false;
     }
     if (isdefined(self.is_zombie) && self.is_zombie) {
-        return 0;
+        return false;
     }
     if (self zm_loadout::has_powerup_weapon()) {
-        return 0;
+        return false;
     }
     if (!(isdefined(level.var_3ea7f9f4) && level.var_3ea7f9f4) && self zm_loadout::has_hero_weapon()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.can_revive_use_depthinwater_test) && level.can_revive_use_depthinwater_test && e_revivee depthinwater() > 10) {
-        return 1;
+        return true;
     }
     if (isdefined(level.can_revive) && ![[ level.can_revive ]](e_revivee)) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_1461fd14) && ![[ level.var_1461fd14 ]](e_revivee)) {
-        return 0;
+        return false;
     }
     if (!ignore_sight_checks && isdefined(level.revive_trigger_should_ignore_sight_checks)) {
         ignore_sight_checks = [[ level.revive_trigger_should_ignore_sight_checks ]](self);
@@ -1250,21 +1250,21 @@ function can_revive(e_revivee, ignore_sight_checks = 0, ignore_touch_checks = 0)
     }
     if (!ignore_touch_checks) {
         if (!self istouching(e_revivee.revivetrigger)) {
-            return 0;
+            return false;
         }
     }
     if (!ignore_sight_checks) {
         if (!self laststand::is_facing(e_revivee)) {
-            return 0;
+            return false;
         }
         if (!sighttracepassed(self.origin + vectorscale((0, 0, 1), 50), e_revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
-            return 0;
+            return false;
         }
         if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 50), e_revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -1273,7 +1273,7 @@ function can_revive(e_revivee, ignore_sight_checks = 0, ignore_touch_checks = 0)
 // Size: 0xbc
 function is_reviving(e_revivee, t_secondary) {
     if (self is_reviving_via_override(e_revivee)) {
-        return 1;
+        return true;
     }
     if (isdefined(t_secondary)) {
         return (self usebuttonpressed() && self can_revive(e_revivee, 1, 1) && self istouching(t_secondary));
@@ -1428,7 +1428,7 @@ function auto_revive(reviver, b_track_stats = 1, var_c0ab6a65) {
     if (isdefined(self.revivetrigger)) {
         self.revivetrigger.auto_revive = 1;
         if (self.revivetrigger.beingrevived) {
-            while (1) {
+            while (true) {
                 if (!isdefined(self.revivetrigger) || !self.revivetrigger.beingrevived) {
                     break;
                 }
@@ -1569,7 +1569,7 @@ function revive_force_revive(reviver) {
 // Size: 0x260
 function revive_hud_think() {
     level endon(#"last_player_died");
-    while (1) {
+    while (true) {
         wait(0.1);
         if (!laststand::player_any_player_in_laststand()) {
             continue;
@@ -1692,11 +1692,11 @@ function can_revive_via_override(e_revivee) {
     if (isdefined(self) && isdefined(self.a_s_revive_overrides)) {
         for (i = 0; i < self.a_s_revive_overrides.size; i++) {
             if (self [[ self.a_s_revive_overrides[i].func_can_revive ]](e_revivee)) {
-                return 1;
+                return true;
             }
         }
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_laststand/zm_laststand
@@ -1706,19 +1706,19 @@ function can_revive_via_override(e_revivee) {
 function is_reviving_via_override(e_revivee) {
     if (isdefined(self) && isdefined(self.a_s_revive_overrides)) {
         if (isdefined(e_revivee.var_84280a99) && e_revivee.var_84280a99 !== self) {
-            return 0;
+            return false;
         }
         for (i = 0; i < self.a_s_revive_overrides.size; i++) {
             if (self [[ self.a_s_revive_overrides[i].func_is_reviving ]](e_revivee)) {
                 self.s_revive_override_used = self.a_s_revive_overrides[i];
-                return 1;
+                return true;
             }
         }
     }
     if (isdefined(self)) {
         self.s_revive_override_used = undefined;
     }
-    return 0;
+    return false;
 }
 
 // Namespace zm_laststand/zm_laststand

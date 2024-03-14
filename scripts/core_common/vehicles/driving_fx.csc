@@ -46,7 +46,7 @@ function vehicle_enter(localclientnum, vehicle) {
 function collision_thread(localclientnum) {
     self endon(#"death");
     self endon(#"exit_vehicle");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         hip = waitresult.velocity;
@@ -98,7 +98,7 @@ function collision_thread(localclientnum) {
 function jump_landing_thread(localclientnum) {
     self endon(#"death");
     self endon(#"exit_vehicle");
-    while (1) {
+    while (true) {
         self waittill(#"veh_landed");
         player = function_5c10bd79(localclientnum);
         if (isdefined(player)) {
@@ -128,7 +128,7 @@ function jump_landing_thread(localclientnum) {
 function suspension_thread(localclientnum) {
     self endon(#"death");
     self endon(#"exit_vehicle");
-    while (1) {
+    while (true) {
         self waittill(#"veh_suspension_limit_activated");
         player = function_5c10bd79(localclientnum);
         if (isdefined(player)) {
@@ -268,7 +268,7 @@ function function_d79b3148(localclientnum, driver) {
     if (!self isvehicle() || isdefined(self.var_da04aa74) && self.var_da04aa74) {
         return;
     }
-    while (1) {
+    while (true) {
         wait(0.1);
         speed = self getspeed();
         player = function_5c10bd79(localclientnum);

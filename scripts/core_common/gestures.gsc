@@ -138,31 +138,31 @@ function function_ba4529d4(var_ee58f129) {
 function function_8cc27b6d(var_ee58f129) {
     var_45e6768d = function_e198bde3(var_ee58f129);
     if (!ishash(var_45e6768d)) {
-        return 0;
+        return false;
     }
     weapon = self getcurrentweapon();
     if (isdefined(self.disablegestures) && self.disablegestures) {
-        return 0;
+        return false;
     }
     if (!isdefined(weapon) || level.weaponnone == weapon) {
-        return 0;
+        return false;
     }
     if (isdefined(weapon.var_d2751f9d) && weapon.var_d2751f9d) {
-        return 0;
+        return false;
     }
     if (isdefined(weapon.var_554be9f7) && weapon.var_554be9f7 && self isfiring()) {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_5ccfbb37) && isdefined(level.var_5ccfbb37[var_45e6768d]) && isdefined(level.var_5ccfbb37[var_45e6768d].weapons) && isdefined(level.var_5ccfbb37[var_45e6768d].weapons[weapon.rootweapon]) && isdefined(level.var_5ccfbb37[var_45e6768d].weapons[weapon.rootweapon].var_fa9d3758) && level.var_5ccfbb37[var_45e6768d].weapons[weapon.rootweapon].var_fa9d3758) {
-        return 0;
+        return false;
     }
     if (weapon.isdualwield && isdefined(level.var_5ccfbb37) && isdefined(level.var_5ccfbb37[var_45e6768d]) && isdefined(level.var_5ccfbb37[var_45e6768d].var_93380a93) && level.var_5ccfbb37[var_45e6768d].var_93380a93) {
-        return 0;
+        return false;
     }
     if (self function_55acff10()) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace gestures/gestures
@@ -243,7 +243,7 @@ function function_f3e2696f(ent, weapon, weapon_options, timeout, var_1e89628f, v
         }
         return;
     }
-    while (1) {
+    while (true) {
         result = undefined;
         result = self waittilltimeout(timeout, #"grenade_pullback", #"offhand_fire", #"offhand_end");
         if (result._notify == #"timeout") {

@@ -69,7 +69,7 @@ function function_bddfddcf(lefthand) {
     if (self function_a39f313c(lefthand) || self isplayerswimming()) {
         return (gettime() > (lefthand ? self.bot.var_af11e334 : self.bot.var_51cee2ad));
     }
-    return 0;
+    return false;
 }
 
 // Namespace ct_bots/ct_bots
@@ -78,15 +78,15 @@ function function_bddfddcf(lefthand) {
 // Size: 0xac
 function function_72be4f1b() {
     if (isdefined(level.var_e6db911d) && level.var_e6db911d && self.team == "axis") {
-        return 0;
+        return false;
     }
     if (isdefined(level.var_6a0c3e3e) && level.var_6a0c3e3e && self.team == "allies" && isbot(self)) {
-        return 0;
+        return false;
     }
     if (isdefined(self.disablespawning) && self.disablespawning) {
-        return 0;
+        return false;
     }
-    return 1;
+    return true;
 }
 
 // Namespace ct_bots/ct_bots
@@ -737,7 +737,7 @@ function function_956b904a() {
     if (!isdefined(self.var_ef59b90)) {
         self.var_ef59b90 = 1;
     }
-    while (1) {
+    while (true) {
         if (isdefined(self.var_ef59b90) && self.var_10a6d7df != self.var_ef59b90) {
             self function_cc9c6a13(self.var_10a6d7df);
             self.var_10a6d7df = self.var_ef59b90;
@@ -784,22 +784,22 @@ function function_cc9c6a13(current_state) {
     switch (current_state) {
     case 2:
         self.var_2925fedc = undefined;
-        return;
+        break;
     case 1:
         self.var_153a632a = undefined;
-        return;
+        break;
     case 3:
         self.var_f38f922 = undefined;
         self.var_e4cd1c19 = undefined;
-        return;
+        break;
     case 5:
-        return;
+        break;
     case 6:
         self thread function_fad5456d();
-        return;
+        break;
     case 0:
     default:
-        return;
+        break;
     }
 }
 
@@ -817,34 +817,34 @@ function function_b8eff92a(var_edab5327) {
         if (isai(self)) {
             self.ignoreall = 1;
         }
-        return;
+        break;
     case 4:
         if (isai(self)) {
             self.ignoreall = 1;
         }
         self.var_8549731d = gettime();
         self.var_c6e7438 = randomfloatrange(self.var_59860ee1, self.var_dd940df3);
-        return;
+        break;
     case 1:
         if (isai(self)) {
             self.ignoreall = 1;
         }
         self.var_153a632a = gettime();
         self.var_c6e7438 = randomfloatrange(10000, 15000);
-        return;
+        break;
     case 3:
         self.var_f38f922 = gettime();
         self.var_e4cd1c19 = undefined;
-        return;
+        break;
     case 6:
-        return;
+        break;
     case 5:
         self dodamage(self.health + 100, (0, 0, 0));
         self.var_3c5a5d29 = 1;
-        return;
+        break;
     case 0:
     default:
-        return;
+        break;
     }
 }
 
@@ -1134,7 +1134,7 @@ function function_9125af5f() {
             self setgoal(self.navmeshpoint, 1);
             self thread function_eff20434();
         }
-        return;
+        break;
     case 2:
         self.resurrect_not_allowed_by = 1;
         level.var_986d14aa = undefined;
@@ -1177,7 +1177,7 @@ function function_9125af5f() {
                 }
             }
         }
-        return;
+        break;
     case 3:
         if (!isdefined(self.navmeshpoint)) {
             self notify(#"hash_5c9e0bd318ff091e");
@@ -1188,10 +1188,10 @@ function function_9125af5f() {
             self thread function_eff20434();
             self thread function_6390598e();
         }
-        return;
+        break;
     case 0:
     default:
-        return;
+        break;
     }
 }
 
@@ -1213,7 +1213,7 @@ function function_ae20926a() {
     level.var_88024dd9++;
     self clientfield::set("player_keyline_render", 1);
     self waittill(#"hash_5c9e0bd318ff091e");
-    while (1) {
+    while (true) {
         e_player = getplayers()[0];
         n_dist = distance(e_player.origin, self.origin);
         if (n_dist > 900) {
@@ -1435,7 +1435,7 @@ function function_59458966(nd_spawn, n_state) {
     switch (n_state) {
     case 4:
         self thread function_c2cfffdd(nd_spawn, 1, 1);
-        return;
+        break;
     }
 }
 
@@ -1445,7 +1445,7 @@ function function_59458966(nd_spawn, n_state) {
 // Size: 0x5e
 function function_abe81a6b() {
     self endon(#"death", #"stop_end");
-    while (1) {
+    while (true) {
         self setgoal(self.origin, 1, 1);
         waitframe(1);
     }

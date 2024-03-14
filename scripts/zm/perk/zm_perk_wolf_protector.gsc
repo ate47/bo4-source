@@ -399,7 +399,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self endon(#"disconnect", #"hash_7c5d9af32e10c147");
     self.var_72c60d5 = var_85dcb56c;
     self zm_perks::function_13880aa5(self.var_7d46fb46, 0, #"perk_wolf_protector");
-    while (1) {
+    while (true) {
         wait(0.1);
         self.var_72c60d5 = self.var_72c60d5 - 0.1;
         self.var_72c60d5 = math::clamp(self.var_72c60d5, 0, var_85dcb56c);

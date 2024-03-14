@@ -168,7 +168,7 @@ function private function_7dac3bb6(localclientnum) {
     }
     self.e_fx = util::spawn_model(localclientnum, #"tag_origin", e_ball.origin);
     self.fx_arc = util::playfxontag(localclientnum, level._effect[#"lightning_arc"], self.e_fx, "tag_origin");
-    while (1) {
+    while (true) {
         var_a05eed18 = self gettagorigin(self zm_utility::function_467efa7b());
         if (isdefined(var_a05eed18)) {
             self.e_fx moveto(var_a05eed18, 0.1);
@@ -250,7 +250,7 @@ function hammer_rumble(localclientnum, oldvalue, newvalue, bnewent, binitialsnap
         switch (newvalue) {
         case 4:
             self playrumbleonentity(localclientnum, "zm_weap_hammer_swipe_hit_rumble");
-            return;
+            break;
         }
     }
 }

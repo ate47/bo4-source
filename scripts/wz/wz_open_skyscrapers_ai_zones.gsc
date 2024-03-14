@@ -66,61 +66,61 @@ function function_6df0d3b6(zone_name) {
     switch (zone_name) {
     case #"asylum":
         if (isdefined(level.var_243ebed2) && level.var_243ebed2) {
-            return 1;
+            return true;
         }
         break;
     case #"cemetary":
         if (isdefined(level.var_34d42591) && level.var_34d42591) {
-            return 1;
+            return true;
         }
         break;
     case #"diner":
         if (isdefined(level.var_8a023320) && level.var_8a023320) {
-            return 1;
+            return true;
         }
         break;
     case #"boxinggym":
         if (isdefined(level.var_31c1a07f) && level.var_31c1a07f) {
-            return 1;
+            return true;
         }
         break;
     case #"lighthouse":
         if (isdefined(level.var_524d0ac5) && level.var_524d0ac5) {
-            return 1;
+            return true;
         }
         break;
     case #"nuketowncrater":
         if (isdefined(level.var_d224ae55) && level.var_d224ae55) {
-            return 1;
+            return true;
         }
         break;
     case #"nuketownbunker":
         if (isdefined(level.var_ac94a871) && level.var_ac94a871) {
-            return 1;
+            return true;
         }
         break;
     case #"farmnorth":
         if (isdefined(level.var_56a1f858) && level.var_56a1f858) {
-            return 1;
+            return true;
         }
         break;
     case #"farmsouth":
         if (isdefined(level.var_2f8e7ed7) && level.var_2f8e7ed7) {
-            return 1;
+            return true;
         }
         break;
     case #"farmwest":
         if (isdefined(level.var_97d3cd33) && level.var_97d3cd33) {
-            return 1;
+            return true;
         }
         break;
     case #"buried":
         if (isdefined(level.var_66626ce3) && level.var_66626ce3) {
-            return 1;
+            return true;
         }
         break;
     }
-    return 0;
+    return false;
 }
 
 // Namespace wz_open_skyscrapers_ai_zones/wz_open_skyscrapers_ai_zones

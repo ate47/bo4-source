@@ -183,7 +183,7 @@ function function_2c09c7d2(var_5ea5c94d, ended_early) {
 function grenade_watcher() {
     level endon(#"end_game");
     self endon(#"step_completed");
-    while (1) {
+    while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (waitresult.mod === "MOD_GRENADE_SPLASH" && level.var_440b230b < level.round_number) {

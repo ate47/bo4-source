@@ -220,11 +220,11 @@ function activateuav() {
         assert(isdefined(level.players));
     #/
     if (self killstreakrules::iskillstreakallowed("uav", self.team) == 0) {
-        return 0;
+        return false;
     }
     killstreak_id = self killstreakrules::killstreakstart("uav", self.team);
     if (killstreak_id == -1) {
-        return 0;
+        return false;
     }
     rotator = level.var_b59e7114;
     attach_angle = -90;
@@ -269,7 +269,7 @@ function activateuav() {
     self killstreaks::play_killstreak_start_dialog("uav", self.team, killstreak_id);
     uav killstreaks::play_pilot_dialog_on_owner("arrive", "uav", killstreak_id);
     uav thread killstreaks::player_killstreak_threat_tracking("uav");
-    return 1;
+    return true;
 }
 
 // Namespace uav/uav
@@ -505,7 +505,7 @@ function resetactiveuav() {
 // Size: 0x2ac
 function uavtracker() {
     level endon(#"game_ended");
-    while (1) {
+    while (true) {
         level waittill(#"uav_update");
         if (level.teambased) {
             foreach (team, _ in level.teams) {
