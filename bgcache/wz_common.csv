@@ -12012,7 +12012,7 @@ string,hash_255c9cc584359d0e,0
 string,hash_25811ef8abc80b1f,0
 string,hash_25b761f80b963d2d,0
 string,hash_25d3f454e864bb4a,0
-string,hash_25d8a87c9c374680,0
+string,weapon/molotov,0
 string,hash_25edfec743a2fb28,0
 string,hash_25fc6c872fa95f5e,0
 string,hash_25fdf644e07c02e0,0
@@ -12046,7 +12046,7 @@ string,mp/connected,0
 string,weapon/pistol_revolver_t8_operator,0
 string,hash_2c3e9e30064c8db6,0
 string,hash_2c454eb3fec22798,0
-string,hash_2c62a9364c4c32aa,0
+string,weapon/wraith_fire,0
 string,hash_2cab672fd372f942,0
 string,weapon/launcher_standard_t8,0
 string,hash_2d003d6a1240093c,0
@@ -12275,7 +12275,7 @@ string,hash_5e6ae4119dda43e0,0
 string,hash_5ec68d99caf17930,0
 string,hash_5f17105e484faba8,0
 string,hash_5f68abd42a1cff2a,0
-string,hash_5fae2973f7a44f6a,0
+string,weapon/syrette,0
 string,hash_5fe1e4f4cfb91755,0
 string,hash_602e0ff43b44d408,0
 string,weapon/ar_stealth_t8_operator,0
@@ -12331,7 +12331,7 @@ string,mp/killstreak_n,0
 string,hash_69a3d01cedc93f4c,0
 string,hash_69c8693015063f61,0
 string,weapon/shotgun_semiauto_t8,0
-string,hash_6a250d5c567b8950,0
+string,weapon/sticky_grenade,0
 string,hash_6a4930978aef6c45,0
 string,mpui/burst2,0
 string,hash_6abc08bf67ff1d6a,0

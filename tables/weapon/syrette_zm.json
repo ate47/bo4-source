@@ -1,7 +1,7 @@
 {
     "name": "#syrette_zm",
     "baseWeapon": "#syrette",
-    "displayname": "#hash_5fae2973f7a44f6a",
+    "displayname": "#weapon/syrette",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

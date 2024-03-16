@@ -29,7 +29,7 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "sniper_fastrechamber_t8_gold_item",
-    "var_9507cf45": "#hash_5d9998c950d2234a",
+    "stashicon": "#hash_5d9998c950d2234a",
     "icon": "#ui_icon_weapon_sniper_fastrechamber_tactical_render",
     "attachslotmagazine": 1,
     "modelscale": 1,

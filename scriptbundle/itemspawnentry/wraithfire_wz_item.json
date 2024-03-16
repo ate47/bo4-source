@@ -5,7 +5,7 @@
     "weapon": "weapon#hash_712ebe79f7da6d58",
     "type": "itemspawnentry",
     "name": "wraithfire_wz_item",
-    "displayname": "#hash_2c62a9364c4c32aa",
+    "displayname": "#weapon/wraith_fire",
     "stackcount": 1,
     "icon": "#ui_icon_inventory_wraith_fire",
     "modelscale": 1,

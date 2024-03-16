@@ -1,7 +1,7 @@
 {
     "name": "#hash_6696d36c3e11b19e",
     "baseWeapon": "#eq_cluster_semtex_grenade",
-    "displayname": "#hash_6a250d5c567b8950",
+    "displayname": "#weapon/sticky_grenade",
     "sessionMode": "warzone",
     "itemIndex": 80,
     "dualWieldWeaponIndex": 0,

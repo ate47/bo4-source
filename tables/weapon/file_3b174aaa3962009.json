@@ -1,7 +1,7 @@
 {
     "name": "#hash_3b174aaa3962009",
     "baseWeapon": "#eq_molotov_extra",
-    "displayname": "#hash_25d8a87c9c374680",
+    "displayname": "#weapon/molotov",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

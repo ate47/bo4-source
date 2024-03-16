@@ -7624,7 +7624,7 @@ string,hash_25893a1f4fc8cb50,0
 string,hash_2599a874a6af5e44,0
 string,hash_25b761f80b963d2d,0
 string,hash_25d3f454e864bb4a,0
-string,hash_25d8a87c9c374680,0
+string,weapon/molotov,0
 string,mp_ph_minigame_second,0
 string,hash_25e40595b91b80fc,0
 string,hash_25ec105b11a01a2d,0
@@ -8105,7 +8105,7 @@ string,hash_590100cdca62e7db,0
 string,hash_591cb25b88f61bb4,0
 string,hash_592d203c0744194b,0
 string,hash_5949f76edc389803,0
-string,hash_594ac1358a794207,0
+string,weapon/baseweapon,0
 string,hash_595d5ff7c52d0f12,0
 string,hash_5995a8451b2bccf5,0
 string,hash_59c00ede667b8208,0
@@ -8205,7 +8205,7 @@ string,hash_631f59a9f211ecef,0
 string,hash_6343136e3fbbb0fe,0
 string,hash_6370b5a97249c317,0
 string,hash_639a907fae7467b1,0
-string,hash_63d40f9d6f2d7f2e,0
+string,weapon/empgrenade,0
 string,hash_63e08cbf72b650ed,0
 string,mpui/clantag,0
 string,hash_63ee17cf7d761911,0
@@ -8275,7 +8275,7 @@ string,hash_69afc05cf0c10527,0
 string,hash_69bea6d7bb16646a,0
 string,hash_69c8693015063f61,0
 string,hash_6a0c2383d37849bd,0
-string,hash_6a250d5c567b8950,0
+string,weapon/sticky_grenade,0
 string,hash_6a4930978aef6c45,0
 string,hash_6a5f7a1ee19f5882,0
 string,mp_ph_minigame_first,0

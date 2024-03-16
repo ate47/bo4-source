@@ -1,7 +1,7 @@
 {
     "name": "#minigun_zm",
     "baseWeapon": "#minigun",
-    "displayname": "#hash_4f332aa1a25f8d35",
+    "displayname": "#weapon/minigun",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,
@@ -13,7 +13,7 @@
     "unkc88": "#hash_58b227559fe0083",
     "unkc90": "#hash_58b227559fe0083",
     "unkc98": "#hash_58b227559fe0083",
-    "viewmodel": "#hash_59edb521753d046d",
+    "viewmodel": "#wpn_t7_mingun_view",
     "worldModel": "#wpn_t7_mingun_world",
     "sound140": "#hash_692880e9e194043a",
     "sound150": "#hash_2817e7ea4dd4325f",

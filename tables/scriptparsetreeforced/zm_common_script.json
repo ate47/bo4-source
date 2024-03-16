@@ -1,5 +1,5 @@
 {
-    "name": "#hash_13b08fed1a418e6",
+    "name": "#zm_common_script",
     "gscScripts": [
         "#scripts/zm_common/zm_round_spawning.gsc",
         "#scripts/zm_common/ai/zm_ai_utility.gsc",

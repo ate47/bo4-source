@@ -1,7 +1,7 @@
 {
     "name": "#tundragun_zm",
     "baseWeapon": "#tundragun",
-    "displayname": "#hash_bbeca6e476548f1",
+    "displayname": "#zmweapon/tundragun",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

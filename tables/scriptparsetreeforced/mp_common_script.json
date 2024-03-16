@@ -1,5 +1,5 @@
 {
-    "name": "#hash_451845a6a76fecfe",
+    "name": "#mp_common_script",
     "gscScripts": [
         "#scripts/mp_common/ai/planner_mp_dom_squad.gsc",
         "#script_60f1433e7c9a921c",

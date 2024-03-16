@@ -1,7 +1,7 @@
 {
     "name": "#tundragun_upgraded_zm",
     "baseWeapon": "#tundragun_upgraded",
-    "displayname": "#hash_2933050d68793062",
+    "displayname": "#zmweapon/tundragun_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

@@ -32,7 +32,7 @@
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
     "name": "pistol_revolver_t8_operator_item",
-    "var_9507cf45": "#hash_31e4dd5b2056e05b",
+    "stashicon": "#hash_31e4dd5b2056e05b",
     "icon": "#hash_31b0b565cdfe99c8",
     "attachslotmagazine": 1,
     "modelscale": 1,

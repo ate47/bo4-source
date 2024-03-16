@@ -1,7 +1,7 @@
 {
     "name": "#sticky_grenade_zm",
     "baseWeapon": "#sticky_grenade",
-    "displayname": "#hash_6a250d5c567b8950",
+    "displayname": "#weapon/sticky_grenade",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

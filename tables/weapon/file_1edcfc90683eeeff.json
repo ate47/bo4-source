@@ -1,7 +1,7 @@
 {
     "name": "#hash_1edcfc90683eeeff",
     "baseWeapon": "#hash_64fbc23d9a0d2be1",
-    "displayname": "#hash_63d40f9d6f2d7f2e",
+    "displayname": "#weapon/empgrenade",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

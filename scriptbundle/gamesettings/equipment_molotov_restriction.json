@@ -5,7 +5,7 @@
     "value1": "0",
     "type": "gamesettings",
     "name": "equipment_molotov_restriction",
-    "displayname": "#hash_25d8a87c9c374680",
+    "displayname": "#weapon/molotov",
     "var_9600a8ab": "#menu/enabled",
     "var_bd2ff709": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 2,

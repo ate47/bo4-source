@@ -1,7 +1,7 @@
 {
     "name": "#baseweapon_mp",
     "baseWeapon": "#baseweapon",
-    "displayname": "#hash_594ac1358a794207",
+    "displayname": "#weapon/baseweapon",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

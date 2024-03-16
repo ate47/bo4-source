@@ -32,7 +32,7 @@
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
     "name": "lmg_stealth_t8_operator_item",
-    "var_9507cf45": "#hash_7d57074c6a7e3b4",
+    "stashicon": "#hash_7d57074c6a7e3b4",
     "icon": "#hash_50c4c212eeba6107",
     "attachslotmagazine": 1,
     "modelscale": 1,

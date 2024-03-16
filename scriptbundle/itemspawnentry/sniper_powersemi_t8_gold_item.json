@@ -29,7 +29,7 @@
     "var_65b3a12": 6,
     "var_340eac1f": 1,
     "name": "sniper_powersemi_t8_gold_item",
-    "var_9507cf45": "#hash_45b62c411efdba",
+    "stashicon": "#hash_45b62c411efdba",
     "icon": "#ui_icon_weapon_sniper_powersemi_tactical_render",
     "attachslotmagazine": 1,
     "modelscale": 1,

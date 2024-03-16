@@ -9,7 +9,7 @@
     "var_6b5d0aaa": 1,
     "name": "resource_item_loot_locker_key",
     "displayname": "#hash_29cb4e88079890ea",
-    "var_9507cf45": "#hash_63945ff9f02670f2",
+    "stashicon": "#hash_63945ff9f02670f2",
     "stackcount": 10,
     "icon": "#hash_63945ff9f02670f2",
     "modelscale": 2,

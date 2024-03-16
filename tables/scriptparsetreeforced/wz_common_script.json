@@ -1,5 +1,5 @@
 {
-    "name": "#hash_1409bbb88a048f6a",
+    "name": "#wz_common_script",
     "gscScripts": [
         "#scripts/mp_common/ai/planner_mp_dom_squad.gsc",
         "#scripts/wz_common/gametypes/warzone_fixup.gsc",
