@@ -637,7 +637,7 @@ function private function_2b2ed159(entity, attackingplayer) {
     attackingplayer.var_e989badb = undefined;
     var_46df240b = hackendtime - var_9b4cc45c;
     if (isdefined(targetname) && isdefined(playernum)) {
-        var_6c52b424 = {#hack_success:1, #duration:var_46df240b, #var_e7f6239c:playernum, #content_targeted:targetname, #var_a9451146:attackingplayer.var_c48b30ab, #var_5f512560:attackingplayer getmatchrecordlifeindex()};
+        var_6c52b424 = {#var_5f512560:attackingplayer getmatchrecordlifeindex(), #var_a9451146:attackingplayer.var_c48b30ab, #content_targeted:targetname, #var_e7f6239c:playernum, #duration:var_46df240b, #hack_success:1};
         function_92d1707f(#"hash_3c946cbb149411ad", var_6c52b424);
     }
 }

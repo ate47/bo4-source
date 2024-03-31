@@ -120,10 +120,10 @@ function onstartgametype() {
             globallogic_score::resetteamscores();
         }
     }
-    level.var_c65e5598 = 0;
-    level.var_bc04d789 = 0;
-    level.var_67f55810 = 0;
-    level.var_a93f2ba7 = 0;
+    level.infect_chosefirstinfected = 0;
+    level.infect_choosingfirstinfected = 0;
+    level.infect_allowsuicide = 0;
+    level.infect_awardedfinalsurvivor = 0;
     inithud();
     maxfree = getdvarint(#"bot_maxfree", 0);
     level thread bot::monitor_bot_population(maxfree);
@@ -209,7 +209,7 @@ function onplayerconnect() {
     if (self infection::function_687661ea()) {
         self.var_6f2537ed = 1;
     }
-    if (!(isdefined(level.var_c65e5598) && level.var_c65e5598)) {
+    if (!(isdefined(level.infect_chosefirstinfected) && level.infect_chosefirstinfected)) {
         self changeteam(game.defenders);
         return;
     }
@@ -239,7 +239,7 @@ function function_9ce4ee42(player, comingfrommenu) {
         level.var_ad5ac73b = undefined;
         teamname = game.defenders;
         level thread function_df1183b3();
-    } else if (isdefined(player.var_6f2537ed) && player.var_6f2537ed || isdefined(level.var_c65e5598) && level.var_c65e5598) {
+    } else if (isdefined(player.var_6f2537ed) && player.var_6f2537ed || isdefined(level.infect_chosefirstinfected) && level.infect_chosefirstinfected) {
         teamname = game.attackers;
     } else {
         teamname = game.defenders;
@@ -269,9 +269,9 @@ function onspawnplayer(predictedspawn) {
     if (self.team == game.attackers) {
         function_d3beb9d3();
     }
-    if (!level.var_bc04d789) {
-        level.var_bc04d789 = 1;
-        level thread function_1293b46();
+    if (!level.infect_choosingfirstinfected) {
+        level.infect_choosingfirstinfected = 1;
+        level thread choosefirstinfected();
     }
     spawning::onspawnplayer(predictedspawn);
     if (self.team == game.attackers) {
@@ -332,7 +332,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
             processkill = 0;
         } else if (isplayer(attacker) && attacker != self) {
             processkill = 1;
-        } else if (level.var_67f55810 && (attacker == self || !isplayer(attacker))) {
+        } else if (level.infect_allowsuicide && (attacker == self || !isplayer(attacker))) {
             processkill = 1;
             wassuicide = 1;
         }
@@ -398,11 +398,11 @@ function function_98c89d66(victim, wassuicide) {
         return;
     }
     if (var_63f8204e == 1) {
-        function_6c614880();
+        onfinalsurvivor();
         return;
     }
     if (var_63f8204e == 0) {
-        function_cbfb54c();
+        onsurvivorseliminated();
     }
 }
 
@@ -422,7 +422,7 @@ function function_cc49dfcf() {
 // Params 0, eflags: 0x0
 // Checksum 0xef69ce5c, Offset: 0x1c60
 // Size: 0x172
-function function_6c614880() {
+function onfinalsurvivor() {
     if (isdefined(level.var_8ea7e2d5) && level.var_8ea7e2d5) {
         return;
     }
@@ -430,16 +430,16 @@ function function_6c614880() {
     globallogic_audio::leader_dialog("infectNoLives", game.defenders);
     globallogic_audio::leader_dialog("infectNoLivesEnemy", game.attackers);
     finalsurvivor = getplayers(game.defenders)[0];
-    if (!level.var_a93f2ba7) {
+    if (!level.infect_awardedfinalsurvivor) {
         finalsurvivor function_4928e571();
         if (finalsurvivor.var_fc81f69c && finalsurvivor function_f86ae9e5()) {
             finalsurvivor scoreevents::processscoreevent("final_survivor", finalsurvivor);
         }
-        level.var_a93f2ba7 = 1;
+        level.infect_awardedfinalsurvivor = 1;
     }
     var_816446f3 = getdvarint(#"hash_a7883ea30e7608a", 0);
     if (var_816446f3) {
-        level thread function_57f4f37e(finalsurvivor);
+        level thread finalsurvivoruav(finalsurvivor);
     }
     level.var_8ea7e2d5 = 1;
 }
@@ -463,11 +463,11 @@ function function_4928e571() {
 // Params 1, eflags: 0x0
 // Checksum 0x3c772643, Offset: 0x1e60
 // Size: 0x23c
-function function_57f4f37e(finalsurvivor) {
+function finalsurvivoruav(finalsurvivor) {
     level endon(#"game_ended");
     finalsurvivor endon(#"disconnect", #"death");
     level endon(#"hash_c99e3873a00e736");
-    level thread function_ce8c907e(finalsurvivor);
+    level thread enduavonlatejoiner(finalsurvivor);
     setteamspyplane(game.attackers, 1);
     util::set_team_radar(game.attackers, 1);
     removeuav = 0;
@@ -495,7 +495,7 @@ function function_57f4f37e(finalsurvivor) {
 // Params 1, eflags: 0x0
 // Checksum 0xe28ea126, Offset: 0x20a8
 // Size: 0xea
-function function_ce8c907e(finalsurvivor) {
+function enduavonlatejoiner(finalsurvivor) {
     level endon(#"game_ended");
     finalsurvivor endon(#"disconnect", #"death");
     while (true) {
@@ -524,7 +524,7 @@ function ontimelimit() {
 // Params 0, eflags: 0x0
 // Checksum 0xdc467936, Offset: 0x21e8
 // Size: 0x24
-function function_cbfb54c() {
+function onsurvivorseliminated() {
     level thread endgame(game.attackers, 6);
 }
 
@@ -576,20 +576,20 @@ function function_7a51569a() {
     }
     var_b5d2cc6a = function_4d9c9e8e(game.attackers);
     var_63f8204e = function_4d9c9e8e(game.defenders);
-    if (isdefined(self.var_c5629563) || level.var_c65e5598) {
+    if (isdefined(self.infect_isbeingchosen) || level.infect_chosefirstinfected) {
         if (var_b5d2cc6a > 0 && var_63f8204e > 0) {
             if (var_63f8204e == 1) {
-                function_6c614880();
+                onfinalsurvivor();
             }
         } else if (var_63f8204e == 0) {
-            function_cbfb54c();
+            onsurvivorseliminated();
         } else if (var_b5d2cc6a == 0) {
             if (var_63f8204e == 1) {
                 winner = game.defenders;
                 level thread endgame(winner, 6);
             } else if (var_63f8204e > 1) {
-                level.var_c65e5598 = 0;
-                level thread function_1293b46();
+                level.infect_chosefirstinfected = 0;
+                level thread choosefirstinfected();
                 level notify(#"abort forfeit");
             }
         }
@@ -678,9 +678,9 @@ function settimer(time) {
 // Params 0, eflags: 0x0
 // Checksum 0x66e8df96, Offset: 0x2908
 // Size: 0x348
-function function_1293b46() {
+function choosefirstinfected() {
     level endon(#"game_ended", #"hash_367e3645fd146620");
-    level.var_67f55810 = 0;
+    level.infect_allowsuicide = 0;
     level.var_b93ecc24 = undefined;
     if (level.inprematchperiod) {
         while (game.state != "playing") {
@@ -706,9 +706,9 @@ function function_1293b46() {
     }
     var_6d6ee08e = function_170ee166(game.defenders);
     if (var_6d6ee08e.size > 0) {
-        array::random(var_6d6ee08e) function_28da9505();
+        array::random(var_6d6ee08e) setfirstinfected();
     } else {
-        level.var_bc04d789 = 0;
+        level.infect_choosingfirstinfected = 0;
     }
     level notify(#"abort forfeit");
     wait(30);
@@ -733,7 +733,7 @@ function function_a6489256() {
         if (waitresult._notify == "game_ended") {
             return;
         }
-        level.var_bc04d789 = 0;
+        level.infect_choosingfirstinfected = 0;
     }
 }
 
@@ -799,9 +799,9 @@ function function_170ee166(team) {
 // Params 0, eflags: 0x0
 // Checksum 0x9480f25b, Offset: 0x2f98
 // Size: 0x2ee
-function function_28da9505() {
+function setfirstinfected() {
     self endon(#"disconnect");
-    self.var_c5629563 = 1;
+    self.infect_isbeingchosen = 1;
     while (!isalive(self) || self util::isusingremote()) {
         waitframe(1);
     }
@@ -836,9 +836,9 @@ function function_28da9505() {
     scoreevents::processscoreevent("first_infected", self);
     sound::play_on_players("mpl_flagget_sting_enemy");
     self thread infection::function_da08f4d0();
-    level.var_67f55810 = 1;
-    level.var_c65e5598 = 1;
-    self.var_c5629563 = undefined;
+    level.infect_allowsuicide = 1;
+    level.infect_chosefirstinfected = 1;
+    self.infect_isbeingchosen = undefined;
     self.var_ec2d285c = 0;
 }
 
@@ -849,7 +849,7 @@ function function_28da9505() {
 function forcespawnteam(team) {
     players = getplayers(team);
     foreach (player in players) {
-        player thread function_e812fdee();
+        player thread playerforcespawn();
     }
 }
 
@@ -857,7 +857,7 @@ function forcespawnteam(team) {
 // Params 0, eflags: 0x0
 // Checksum 0x42617927, Offset: 0x3338
 // Size: 0x120
-function function_e812fdee() {
+function playerforcespawn() {
     level endon(#"game_ended");
     self endon(#"death", #"disconnect", #"spawned");
     if (isdefined(self.hasspawned) && self.hasspawned) {
@@ -928,15 +928,15 @@ function changeteam(team) {
 // Checksum 0x31715eab, Offset: 0x36c8
 // Size: 0x34
 function function_4d9c9e8e(team) {
-    var_4d92a55c = getplayers(team);
-    return var_4d92a55c.size;
+    playersonteam = getplayers(team);
+    return playersonteam.size;
 }
 
 // Namespace infect/infect
 // Params 1, eflags: 0x0
 // Checksum 0xda5568fd, Offset: 0x3708
 // Size: 0x6c
-function function_8e4a62e4(team) {
+function updateteamscore(team) {
     score = function_4d9c9e8e(team);
     game.stat[#"teamscores"][team] = score;
     globallogic_score::updateteamscores(team);

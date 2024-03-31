@@ -272,18 +272,18 @@ function supplypod_spawned(watcher, owner) {
 // Params 2, eflags: 0x0
 // Checksum 0xb4b92ae8, Offset: 0x1218
 // Size: 0xce
-function function_d7cd849c(var_cb0f3959, team) {
-    if (!isdefined(var_cb0f3959)) {
+function function_d7cd849c(soundbank, team) {
+    if (!isdefined(soundbank)) {
         return;
     }
-    if (!isdefined(level.var_934fb97.var_d741a6a4[var_cb0f3959])) {
-        level.var_934fb97.var_d741a6a4[var_cb0f3959] = 0;
+    if (!isdefined(level.var_934fb97.var_d741a6a4[soundbank])) {
+        level.var_934fb97.var_d741a6a4[soundbank] = 0;
     }
-    var_ad7969ca = level.var_934fb97.var_d741a6a4[var_cb0f3959];
+    var_ad7969ca = level.var_934fb97.var_d741a6a4[soundbank];
     if (var_ad7969ca != 0 && gettime() < int(5 * 1000) + var_ad7969ca) {
         return;
     }
-    level.var_934fb97.var_d741a6a4[var_cb0f3959] = gettime();
+    level.var_934fb97.var_d741a6a4[soundbank] = gettime();
 }
 
 // Namespace supplypod/supplypod
@@ -704,7 +704,7 @@ function function_9abdee8c(object) {
     supplypod.victimsoundmod = "vehicle";
     supplypod.weapon = level.var_934fb97.weapon;
     supplypod setweapon(supplypod.weapon);
-    supplypod.var_57022ab8 = isdefined(level.var_934fb97.bundle.var_5a0d87e0) ? level.var_934fb97.bundle.var_5a0d87e0 : 20;
+    supplypod.maxusecount = isdefined(level.var_934fb97.bundle.var_5a0d87e0) ? level.var_934fb97.bundle.var_5a0d87e0 : 20;
     supplypod.usecount = 0;
     supplypod.objectiveid = getobjectiveid();
     level.var_934fb97.supplypods[supplypod.objectiveid] = supplypod;
@@ -829,7 +829,7 @@ function private function_a1434496(team, player, result) {
         } else {
             player.var_48107b1c = 1;
         }
-        if (supplypod.usecount == supplypod.var_57022ab8) {
+        if (supplypod.usecount == supplypod.maxusecount) {
             supplypod thread function_827486aa(0);
         }
         return;

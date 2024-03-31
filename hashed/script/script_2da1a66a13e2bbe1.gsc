@@ -501,7 +501,7 @@ function shed() {
         if (isdefined(var_6620353d.script_flag) && var_6620353d.script_flag == "yellow_backyard_to_ammo_door") {
             if (!(isdefined(var_6620353d.has_been_opened) && var_6620353d.has_been_opened)) {
                 a_e_players = getplayers();
-                var_6620353d notify(#"trigger", {#is_forced:1, #activator:a_e_players[0]});
+                var_6620353d notify(#"trigger", {#activator:a_e_players[0], #is_forced:1});
                 /#
                     iprintlnbold("<unknown string>");
                 #/

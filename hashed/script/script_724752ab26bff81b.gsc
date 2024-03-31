@@ -42,10 +42,10 @@ function preload() {
 function init() {
     level.var_cb94d41d = struct::get("ww_interact");
     level.var_cb94d41d.a_s_slots = [];
-    level.var_cb94d41d.a_s_slots[0] = {#var_2153c223:level.a_w_ray_guns[4], #n_state:1};
-    level.var_cb94d41d.a_s_slots[1] = {#var_2153c223:level.a_w_ray_guns[6], #n_state:1};
-    level.var_cb94d41d.a_s_slots[2] = {#var_2153c223:level.a_w_ray_guns[8], #n_state:1};
-    level.var_cb94d41d.a_s_slots[3] = {#var_2153c223:level.a_w_ray_guns[10], #n_state:1};
+    level.var_cb94d41d.a_s_slots[0] = {#n_state:1, #var_2153c223:level.a_w_ray_guns[4]};
+    level.var_cb94d41d.a_s_slots[1] = {#n_state:1, #var_2153c223:level.a_w_ray_guns[6]};
+    level.var_cb94d41d.a_s_slots[2] = {#n_state:1, #var_2153c223:level.a_w_ray_guns[8]};
+    level.var_cb94d41d.a_s_slots[3] = {#n_state:1, #var_2153c223:level.a_w_ray_guns[10]};
     var_c13ed74d = struct::get_array("ww_pickup");
     level.var_c13ed74d = array::sort_by_script_int(var_c13ed74d, 1);
     level thread function_dd535733();

@@ -89,7 +89,7 @@ function private watch_for_tomahawk_throw() {
             e_grenade.grenade_multiattack_bookmark_count = 1;
             e_grenade.low_level_instant_kill_charge = 1;
             e_grenade.owner = self;
-            self notify(#"throwing_tomahawk", {#w_weapon:w_weapon, #e_grenade:e_grenade});
+            self notify(#"throwing_tomahawk", {#e_grenade:e_grenade, #w_weapon:w_weapon});
             self thread function_932e24b(w_weapon);
             if (isdefined(self.n_tomahawk_cooking_time)) {
                 e_grenade.n_cookedtime = e_grenade.birthtime - self.n_tomahawk_cooking_time;
@@ -461,7 +461,7 @@ function private function_e865484a(mdl_tomahawk, a_ai_zombie, var_65f2e452) {
         }
         n_dist = distance(mdl_tomahawk.origin, ai_zombie gettagorigin("j_head"));
         var_bfed4a7 = n_dist / 1600;
-        var_bfed4a7 = var_bfed4a7 < 0.05 ? var_bfed4a7 : 0.05;
+        var_bfed4a7 = var_bfed4a7 < 0.05 ? 0.05 : var_bfed4a7;
         self thread function_c7ddedb2(mdl_tomahawk, ai_zombie, var_bfed4a7);
         wait(var_bfed4a7);
         var_65f2e452++;
@@ -509,7 +509,7 @@ function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600)
     if (isdefined(mdl_tomahawk)) {
         n_dist = distance(mdl_tomahawk.origin, self geteye());
         var_e65ebf4 = n_dist / n_move_speed;
-        var_e65ebf4 = var_e65ebf4 < 0.05 ? var_e65ebf4 : 0.05;
+        var_e65ebf4 = var_e65ebf4 < 0.05 ? 0.05 : var_e65ebf4;
         n_total_time = undefined;
         n_dist_sq = distance2dsquared(mdl_tomahawk.origin, self geteye());
         if (!isdefined(var_65f2e452)) {
@@ -563,7 +563,7 @@ function tomahawk_return_player(mdl_tomahawk, var_65f2e452, n_move_speed = 1600)
 function private function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time) {
     if (n_total_time < 0.05) {
         var_e89ec7fd = 0.05 - n_total_time;
-        var_e89ec7fd = var_e89ec7fd < 0.05 ? var_e89ec7fd : 0.05;
+        var_e89ec7fd = var_e89ec7fd < 0.05 ? 0.05 : var_e89ec7fd;
     } else {
         var_e89ec7fd = 0.05;
     }
@@ -571,7 +571,7 @@ function private function_e2c00ed6(mdl_tomahawk, n_move_speed, n_total_time) {
     var_5100df85 = n_move_speed + n_move_speed * var_a6693654;
     n_dist = distance(mdl_tomahawk.origin, self geteye());
     var_e65ebf4 = n_dist / var_5100df85;
-    var_e65ebf4 = var_e65ebf4 < var_e89ec7fd ? var_e65ebf4 : var_e89ec7fd;
+    var_e65ebf4 = var_e65ebf4 < var_e89ec7fd ? var_e89ec7fd : var_e65ebf4;
     return var_e65ebf4;
 }
 

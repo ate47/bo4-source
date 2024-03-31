@@ -69,7 +69,7 @@ function calcspawnorigin(origin, angles) {
         var_109e505c = arraysortclosest(var_f868a6d2, origin);
         dir = vectornormalize(origin - var_109e505c[0].origin);
         angles = vectortoangles(dir);
-        return {#angles:angles, #origin:var_109e505c[0].origin};
+        return {#origin:var_109e505c[0].origin, #angles:angles};
     }
     heightoffset = killstreaks::function_975d45c3();
     startnode = undefined;
@@ -155,7 +155,7 @@ function calcspawnorigin(origin, angles) {
                 recordsphere(startnode.origin, 100, (0, 1, 1), "<unknown string>");
                 recordsphere(spawnloc, 5, (0, 0, 1), "<unknown string>");
             #/
-            return {#angles:vectortoangles(dir * -1), #origin:spawnloc};
+            return {#origin:spawnloc, #angles:vectortoangles(dir * -1)};
         }
     }
     return undefined;
@@ -565,7 +565,7 @@ function function_89609eb8(origin, angles) {
         var_109e505c = arraysortclosest(var_f868a6d2, origin);
         dir = vectornormalize(origin - var_109e505c[0].origin);
         angles = vectortoangles(dir);
-        return {#angles:angles, #origin:var_109e505c[0].origin};
+        return {#origin:var_109e505c[0].origin, #angles:angles};
     }
     leavenode = undefined;
     /#
@@ -592,7 +592,7 @@ function function_89609eb8(origin, angles) {
                 recordsphere(leavenode.origin, 100, (0, 1, 1), "<unknown string>");
                 recordsphere(spawnloc, 5, (0, 0, 1), "<unknown string>");
             #/
-            return {#angles:(0, 0, 0), #origin:spawnloc};
+            return {#origin:spawnloc, #angles:(0, 0, 0)};
         }
     }
     return undefined;

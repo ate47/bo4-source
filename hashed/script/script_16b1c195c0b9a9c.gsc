@@ -243,7 +243,7 @@ function private function_69e73bdb(position) {
     var_945e5bae = level.spawn_start[#"axis"][0].origin;
     var_eb097b41 = distancesquared(position, var_192c21ed);
     var_75b1f52d = distancesquared(position, var_945e5bae);
-    return var_eb097b41 < var_75b1f52d ? var_192c21ed : var_945e5bae;
+    return var_eb097b41 < var_75b1f52d ? var_945e5bae : var_192c21ed;
 }
 
 // Namespace namespace_9b3ab448/namespace_83a61576

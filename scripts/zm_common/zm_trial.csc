@@ -72,7 +72,7 @@ function register_challenge(name, var_c5dd8620, var_bbcdbff5) {
     /#
         assert(!isdefined(level.var_75e93a54[name]));
     #/
-    info = {#var_bbcdbff5:var_bbcdbff5, #var_c5dd8620:var_c5dd8620, #name:name};
+    info = {#name:name, #var_c5dd8620:var_c5dd8620, #var_bbcdbff5:var_bbcdbff5};
     level.var_75e93a54[name] = info;
 }
 
@@ -110,7 +110,7 @@ function private function_4dbf2663() {
         /#
             assert(!isdefined(function_d02ffd(var_189d26ca)));
         #/
-        var_6d87ac05 = {#index:level.var_c556bb2e.size, #rounds:[], #name:var_189d26ca};
+        var_6d87ac05 = {#name:var_189d26ca, #rounds:[], #index:level.var_c556bb2e.size};
         level.var_c556bb2e[level.var_c556bb2e.size] = var_6d87ac05;
         do {
             row++;
@@ -132,7 +132,7 @@ function private function_4dbf2663() {
                 round_info = var_6d87ac05.rounds[round_index];
                 challenge_name = tablelookupcolumnforrow(table, row, 5);
                 var_10a28798 = [];
-                array::add(round_info.challenges, {#params:var_10a28798, #row:row, #name:challenge_name});
+                array::add(round_info.challenges, {#name:challenge_name, #row:row, #params:var_10a28798});
                 for (i = 0; i < 8; i++) {
                     param = tablelookupcolumnforrow(table, row, 6 + i);
                     if (isdefined(param) && param != #"") {

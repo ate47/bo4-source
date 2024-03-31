@@ -533,7 +533,7 @@ function add_zombie_weapon(weapon_name, upgrade_name, is_ee, cost, weaponvo, wea
 // Size: 0x56
 function is_weapon_included(weapon) {
     if (!isdefined(level.zombie_weapons)) {
-        return 0;
+        return false;
     }
     weapon = get_nonalternate_weapon(weapon);
     return isdefined(level.zombie_weapons[function_386dacbc(weapon)]);
@@ -1248,7 +1248,7 @@ function give_build_kit_weapon(weapon, var_51ec4e93, var_bd5d43c6, b_switch_weap
     }
     base_weapon = weapon;
     if (is_weapon_upgraded(weapon)) {
-        level notify(#"hash_6dead3931d3e708a", {#weapon:weapon, #player:self});
+        level notify(#"hash_6dead3931d3e708a", {#player:self, #weapon:weapon});
         if (!isdefined(n_camo)) {
             n_camo = self zm_camos::function_4f727cf5(weapon);
         }

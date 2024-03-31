@@ -979,7 +979,7 @@ function begin_grenade_tracking() {
         blackboxeventname = #"wzequipmentuses";
         eventname = #"hash_4f877fbf665a36d8";
     }
-    function_92d1707f(eventname, blackboxeventname, {#weaponname:weapon.name, #spawnid:getplayerspawnid(self), #gametime:gettime()});
+    function_92d1707f(eventname, blackboxeventname, {#gametime:gettime(), #spawnid:getplayerspawnid(self), #weaponname:weapon.name});
     cookedtime = gettime() - starttime;
     if (cookedtime > 1000) {
         grenade.iscooked = 1;

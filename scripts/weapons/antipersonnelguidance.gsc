@@ -83,7 +83,7 @@ function event_handler[missile_fire] function_dc710809(eventstruct) {
     if (weapon.lockontype == "AP Single") {
         foreach (target in self.multilocklist) {
             if (isdefined(target.aptarget) && target.aplockfinalized) {
-                target.aptarget notify(#"stinger_fired_at_me", {#attacker:self, #weapon:weapon, #projectile:missile});
+                target.aptarget notify(#"stinger_fired_at_me", {#projectile:missile, #weapon:weapon, #attacker:self});
             }
         }
     }
@@ -167,7 +167,7 @@ function aplockloop(weapon) {
                     target.aplockpending = 0;
                     self weaponlockfinalize(target.aptarget, i);
                     self thread seekersound(weapon.lockonseekerlockedsound, weapon.lockonseekerlockedsoundloops, target.apsoundid);
-                    target.aptarget notify(#"missile_lock", {#weapon:weapon, #attacker:self});
+                    target.aptarget notify(#"missile_lock", {#attacker:self, #weapon:weapon});
                 }
             }
         } while (!done);

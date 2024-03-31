@@ -220,7 +220,7 @@ function function_56c97aea() {
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator)) {
             e_book = self.stub.related_parent;
-            level.var_969e8ac2 notify(#"hash_59cef06ae393749f", {#activator:s_waitresult.activator, #var_537e3893:e_book.script_noteworthy, #array_index:e_book.var_60f4d369, #var_f9ba056c:e_book.var_a0639b8c});
+            level.var_969e8ac2 notify(#"hash_59cef06ae393749f", {#var_f9ba056c:e_book.var_a0639b8c, #array_index:e_book.var_60f4d369, #var_537e3893:e_book.script_noteworthy, #activator:s_waitresult.activator});
         }
     }
 }

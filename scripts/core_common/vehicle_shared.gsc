@@ -505,7 +505,7 @@ function paths(node) {
             if (isdefined(currentpoint.script_dropbombs_delaytrace) && currentpoint.script_dropbombs_delaytrace > 0) {
                 delaytrace = currentpoint.script_dropbombs_delaytrace;
             }
-            self notify(#"drop_bombs", {#delay_trace:delaytrace, #delay:delay, #amount:amount});
+            self notify(#"drop_bombs", {#amount:amount, #delay:delay, #delay_trace:delaytrace});
         }
         if (isdefined(currentpoint.script_noteworthy)) {
             self notify(currentpoint.script_noteworthy);
@@ -1441,7 +1441,7 @@ function setup_nodes() {
 // Size: 0x44
 function is_node_script_struct(node) {
     if (!isdefined(node.targetname)) {
-        return 0;
+        return false;
     }
     return isdefined(struct::get(node.targetname, "targetname"));
 }
@@ -2622,11 +2622,11 @@ function event_handler[event_1e1c81ae] function_7e40b597(eventstruct) {
     }
 }
 
-// Namespace vehicle/event_8edc4e4a
+// Namespace vehicle/vehicle_collision
 // Params 1, eflags: 0x40
 // Checksum 0xad678911, Offset: 0x9218
 // Size: 0x2c
-function event_handler[event_8edc4e4a] function_5b65d9ec(eventstruct) {
+function event_handler[vehicle_collision] function_5b65d9ec(eventstruct) {
     callback::callback(#"veh_collision", eventstruct);
 }
 

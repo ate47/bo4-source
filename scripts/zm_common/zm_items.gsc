@@ -209,8 +209,8 @@ function player_pick_up(player, w_item) {
         }
         holder.item_slot_inventory[w_item.var_df0f9ce9] = w_item;
     }
-    level notify(#"component_collected", {#holder:holder, #component:w_item});
-    player notify(#"component_collected", {#holder:holder, #component:w_item});
+    level notify(#"component_collected", {#component:w_item, #holder:holder});
+    player notify(#"component_collected", {#component:w_item, #holder:holder});
     if (isdefined(level.item_callbacks[w_item])) {
         foreach (callback in level.item_callbacks[w_item]) {
             player [[ callback ]](holder, w_item);
@@ -256,8 +256,8 @@ function function_ab3bb6bf(holder, w_item) {
     if (w_item.var_df0f9ce9) {
         holder.item_slot_inventory[w_item.var_df0f9ce9] = undefined;
     }
-    level notify(#"component_lost", {#holder:holder, #component:w_item});
-    self notify(#"component_lost", {#holder:holder, #component:w_item});
+    level notify(#"component_lost", {#component:w_item, #holder:holder});
+    self notify(#"component_lost", {#component:w_item, #holder:holder});
     if (self hasweapon(w_item)) {
         self takeweapon(w_item);
     }

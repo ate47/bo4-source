@@ -438,7 +438,7 @@ function function_ceb5bc97() {
     self thread function_20bb4f5a();
     self function_9b196e4f();
     if (isdefined(self.var_e7992ae2) && self.var_e7992ae2 > 0 && self.var_745ac235.size > 0) {
-        level notify(#"hash_1ba786f1661e3817", {#str_location:self.str_location, #var_2ef2374:self.var_e7992ae2});
+        level notify(#"hash_1ba786f1661e3817", {#var_2ef2374:self.var_e7992ae2, #str_location:self.str_location});
     }
 }
 
@@ -451,7 +451,7 @@ function function_c378c744() {
     self thread function_2b2e8766();
     self thread function_20bb4f5a();
     if (isdefined(self.var_e7992ae2) && self.var_e7992ae2 > 0 && self.var_745ac235.size > 0) {
-        level notify(#"hash_1ba786f1661e3817", {#str_location:self.str_location, #var_2ef2374:self.var_e7992ae2});
+        level notify(#"hash_1ba786f1661e3817", {#var_2ef2374:self.var_e7992ae2, #str_location:self.str_location});
     }
 }
 

@@ -27,14 +27,14 @@ function event_handler[level_init] main(eventstruct) {
 // Checksum 0x66ec3b6d, Offset: 0x200
 // Size: 0x142
 function function_61f478ff() {
-    var_e673f77f = (2532.35, 1640.41, 128.125);
+    findpoint = (2532.35, 1640.41, 128.125);
     if (!level.teambased) {
         rawspawns = struct::get_array("mp_t8_spawn_point", "targetname");
         foreach (spawn in rawspawns) {
             if (!(isdefined(spawn._human_were) && spawn._human_were)) {
                 continue;
             }
-            distance = distancesquared(spawn.origin, var_e673f77f);
+            distance = distancesquared(spawn.origin, findpoint);
             if (distance > 5) {
                 continue;
             }

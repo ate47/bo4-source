@@ -255,7 +255,7 @@ function function_615d8c38(params) {
                 } else {
                     params.eattacker zm_score::player_add_points("crossbow_crawler", 20);
                     self zombie_utility::makezombiecrawler(1);
-                    level notify(#"crawler_created", {#weapon:params.weapon, #player:params.eattacker, #zombie:self});
+                    level notify(#"crawler_created", {#zombie:self, #player:params.eattacker, #weapon:params.weapon});
                     self thread function_6119da66();
                 }
             } else {
@@ -288,7 +288,7 @@ function function_6119da66() {
 // Size: 0x1dc
 function function_6d8527c2(var_37fa9b04, str_scene, str_shot) {
     self endon(#"death");
-    params = {#shitloc:"none", #smeansofdeath:var_37fa9b04.mod, #weapon:var_37fa9b04.weapon, #einflictor:var_37fa9b04.inflictor, #eattacker:var_37fa9b04.attacker};
+    params = {#eattacker:var_37fa9b04.attacker, #einflictor:var_37fa9b04.inflictor, #weapon:var_37fa9b04.weapon, #smeansofdeath:var_37fa9b04.mod, #shitloc:"none"};
     self.var_2c2980d3 = 1;
     self clientfield::set("" + #"hash_37c2ef99d645cf87", 1);
     if (isdefined(str_scene)) {
@@ -797,7 +797,7 @@ function function_62d37304(weapon) {
         v_start = self getweaponmuzzlepoint();
         v_end = v_start + self getweaponforwarddir() * 1000;
         s_trace = bullettrace(v_start, v_end, 0, self);
-        level notify(#"xbow_hit", {#position:s_trace[#"position"], #player:self});
+        level notify(#"xbow_hit", {#player:self, #position:s_trace[#"position"]});
     }
     if (isarray(self.weaponobjectwatcherarray)) {
         foreach (s_weapon_object in self.weaponobjectwatcherarray) {

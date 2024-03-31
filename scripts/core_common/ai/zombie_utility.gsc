@@ -1750,7 +1750,7 @@ function round_spawn_failsafe() {
                     if (!(isdefined(self.nuked) && self.nuked) && !(isdefined(self.marked_for_death) && self.marked_for_death) && !(isdefined(self.isscreecher) && self.isscreecher) && !(isdefined(self.missinglegs) && self.missinglegs)) {
                         level.zombie_total++;
                         level.zombie_total_subtract++;
-                        var_1a8c05ae = {#var_e0d660f6:self.var_e0d660f6, #n_health:self.health};
+                        var_1a8c05ae = {#n_health:self.health, #var_e0d660f6:self.var_e0d660f6};
                         if (!isdefined(level.var_fc73bad4[self.archetype])) {
                             level.var_fc73bad4[self.archetype] = [];
                         } else if (!isarray(level.var_fc73bad4[self.archetype])) {
@@ -2220,7 +2220,7 @@ function zombie_gib(amount, attacker, direction_vec, point, type, tagname, model
         }
         if (isdefined(self.missinglegs) && self.missinglegs && self.health > 0) {
             b_gibbed = 1;
-            level notify(#"crawler_created", {#weapon:weapon, #player:attacker, #zombie:self});
+            level notify(#"crawler_created", {#zombie:self, #player:attacker, #weapon:weapon});
             self allowedstances("crouch");
             self setphysparams(15, 0, 24);
             self allowpitchangle(1);

@@ -547,13 +547,13 @@ function function_320393b9() {
     var_f4a0340a = array::randomize(level.var_590e0497);
     var_8ecddd2c = level.var_6d8a1d51 / 2;
     var_788ab0a6 = level.var_2a9f2129 / 2;
-    var_c6574134 = level.var_5c8bbb85[0] - var_8ecddd2c;
-    var_72af5f3d = level.var_5c8bbb85[0] + var_8ecddd2c;
-    var_e9ef8864 = level.var_5c8bbb85[1] - var_788ab0a6;
-    var_432e003f = level.var_5c8bbb85[1] + var_788ab0a6;
+    min_x = level.var_5c8bbb85[0] - var_8ecddd2c;
+    max_x = level.var_5c8bbb85[0] + var_8ecddd2c;
+    min_y = level.var_5c8bbb85[1] - var_788ab0a6;
+    max_y = level.var_5c8bbb85[1] + var_788ab0a6;
     var_68daafed = 0;
     foreach (safe in var_f4a0340a) {
-        if (safe.origin[0] >= var_c6574134 && safe.origin[0] <= var_72af5f3d && safe.origin[1] >= var_e9ef8864 && safe.origin[1] <= var_432e003f) {
+        if (safe.origin[0] >= min_x && safe.origin[0] <= max_x && safe.origin[1] >= min_y && safe.origin[1] <= max_y) {
             var_68daafed = 1;
             level.var_5c8bbb85 = safe.origin;
             level.var_6d8a1d51 = level.var_398d38ce * 1.5;

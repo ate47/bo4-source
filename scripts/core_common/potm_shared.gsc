@@ -1247,7 +1247,7 @@ function private function_fff1ad7e(var_740b4e7b) {
         var_e705c59f.weight = min(var_e705c59f.weight + game.var_b924522a, 1);
     }
     if (!foundplayer) {
-        array::add(game.var_b2ee45db, {#weight:game.var_c7826a3f, #xuid:var_740b4e7b}, 0);
+        array::add(game.var_b2ee45db, {#xuid:var_740b4e7b, #weight:game.var_c7826a3f}, 0);
     }
 }
 

@@ -35,9 +35,9 @@ function __init__() {
     if (!isdefined(level.var_77cae643)) {
         level.var_77cae643 = [];
     }
-    level.tripwire = {#localclients:[], #wires:[]};
+    level.tripwire = {#wires:[], #localclients:[]};
     for (i = 0; i < getmaxlocalclients(); i++) {
-        level.tripwire.localclients[i] = {#model:undefined, #previs:0, #beams:[]};
+        level.tripwire.localclients[i] = {#beams:[], #previs:0, #model:undefined};
     }
 }
 

@@ -27,7 +27,7 @@ function function_8c7ec52f(einflictor, eattacker, idamage, idflags, smeansofdeat
     } else if (isdefined(level.var_86a21346)) {
         idamage = self [[ level.var_86a21346 ]](einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, iboneindex, imodelindex);
     }
-    var_5370b15e = idamage < self.health ? self.health : idamage;
+    var_5370b15e = idamage < self.health ? idamage : self.health;
     self globallogic_player::giveattackerandinflictorownerassist(eattacker, einflictor, var_5370b15e, smeansofdeath, weapon);
     params = spawnstruct();
     params.einflictor = einflictor;

@@ -427,9 +427,9 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
         } else {
             weakpoints = namespace_81245006::function_fab3ee3e(self);
             if (isdefined(weakpoints)) {
-                foreach (var_3a1904d3 in weakpoints) {
-                    if (namespace_81245006::function_f29756fe(var_3a1904d3) === 1 && var_3a1904d3.type === #"armor" && var_3a1904d3.hitloc !== "left_arm_lower") {
-                        var_dd54fdb1 = var_3a1904d3;
+                foreach (pointinfo in weakpoints) {
+                    if (namespace_81245006::function_f29756fe(pointinfo) === 1 && pointinfo.type === #"armor" && pointinfo.hitloc !== "left_arm_lower") {
+                        var_dd54fdb1 = pointinfo;
                         var_88e794fb = 1;
                         break;
                     }
@@ -1179,7 +1179,7 @@ function function_b381320(var_dbce0c44) {
     } else {
         var_1797c23a = 1 + max(0, floor((level.round_number - zombie_utility::function_d2dfacfd(#"hash_3b4ad7449c039d1b")) / 3));
     }
-    var_2506688 = var_1797c23a < 8 ? var_1797c23a * 0.75 : max(var_1797c23a - 3, 0);
+    var_2506688 = var_1797c23a < 8 ? max(var_1797c23a - 3, 0) : var_1797c23a * 0.75;
     return randomintrangeinclusive(int(var_2506688), int(min(var_8cf00d40, var_1797c23a)));
 }
 

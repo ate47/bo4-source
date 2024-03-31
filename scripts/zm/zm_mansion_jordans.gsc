@@ -614,7 +614,7 @@ function function_4c925e67() {
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator) && isdefined(level.var_3a4aa2ab) && level.var_3a4aa2ab) {
             var_a690f86 = self.stub.related_parent;
-            level notify(#"hash_df5cf4747eb1cf1", {#activator:s_waitresult.activator, #var_9ea53c54:var_a690f86.script_int});
+            level notify(#"hash_df5cf4747eb1cf1", {#var_9ea53c54:var_a690f86.script_int, #activator:s_waitresult.activator});
         }
     }
 }
@@ -933,7 +933,7 @@ function function_7e04b65f() {
     foreach (e_player in level.var_32e85a16) {
         if (isdefined(e_player)) {
             e_player playsound(#"hash_41d764eca159410e");
-            var_4162b7c9 = e_player.var_c859fa3a < var_4162b7c9 ? e_player.var_c859fa3a : var_4162b7c9;
+            var_4162b7c9 = e_player.var_c859fa3a < var_4162b7c9 ? var_4162b7c9 : e_player.var_c859fa3a;
             if (e_player.var_c859fa3a >= var_4162b7c9) {
                 /#
                     iprintlnbold("<unknown string>" + e_player getentnum() + "<unknown string>" + e_player.var_c859fa3a + "<unknown string>");
@@ -1305,7 +1305,7 @@ function function_3ddf07f4() {
         var_4162b7c9 = 0;
         foreach (var_54887c6a in var_538ff835) {
             if (isdefined(var_54887c6a)) {
-                var_4162b7c9 = var_54887c6a.var_c859fa3a < var_4162b7c9 ? var_54887c6a.var_c859fa3a : var_4162b7c9;
+                var_4162b7c9 = var_54887c6a.var_c859fa3a < var_4162b7c9 ? var_4162b7c9 : var_54887c6a.var_c859fa3a;
                 if (var_54887c6a.var_c859fa3a >= var_4162b7c9) {
                     /#
                         iprintlnbold("<unknown string>" + var_54887c6a.var_21c1ba1 + "<unknown string>" + var_54887c6a.var_c859fa3a + "<unknown string>");

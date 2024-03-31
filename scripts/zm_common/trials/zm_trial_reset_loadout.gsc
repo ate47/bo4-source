@@ -60,9 +60,9 @@ function is_active(var_61ee083c = 0) {
     s_challenge = zm_trial::function_a36e8c38(#"reset_loadout");
     if (var_61ee083c) {
         if (isdefined(s_challenge) && isdefined(s_challenge.var_f2c84b6b)) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     return isdefined(s_challenge);
 }

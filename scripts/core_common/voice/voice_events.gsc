@@ -60,7 +60,7 @@ function function_840acc1c(event, handlerfunc, priority = 0, var_c10e92a2 = unde
     /#
         assert(!isdefined(level.var_a95b39fd[event]), "<unknown string>" + event);
     #/
-    handler = {#var_c10e92a2:var_c10e92a2, #priority:priority, #handlerfunc:handlerfunc};
+    handler = {#handlerfunc:handlerfunc, #priority:priority, #var_c10e92a2:var_c10e92a2};
     level.var_a95b39fd[event] = handler;
 }
 

@@ -997,7 +997,7 @@ function dropalltoground(origin, radius, stickyobjectradius) {
     waitframe(1);
     weapons::drop_all_to_ground(origin, radius);
     dropcratestoground(origin, radius);
-    level notify(#"drop_objects_to_ground", {#radius:stickyobjectradius, #position:origin});
+    level notify(#"drop_objects_to_ground", {#position:origin, #radius:stickyobjectradius});
 }
 
 // Namespace supplydrop/supplydrop
@@ -1868,7 +1868,7 @@ function crateusethink() {
         }
         if (result) {
             scoreevents::givecratecapturemedal(self, player);
-            self notify(#"captured", {#is_remote_hack:0, #player:player});
+            self notify(#"captured", {#player:player, #is_remote_hack:0});
         }
     }
 }
@@ -1899,7 +1899,7 @@ function crateusethinkowner() {
             break;
         }
         if (result && isdefined(player)) {
-            self notify(#"captured", {#is_remote_hack:0, #player:player});
+            self notify(#"captured", {#player:player, #is_remote_hack:0});
         }
     }
 }
@@ -2155,7 +2155,7 @@ function destroyhelicopter(var_fec7078b) {
         self.flare_ent delete();
         self.flare_ent = undefined;
     }
-    self notify(#"hash_525537be2de4c159", {#owner:self.owner, #direction:self.angles, #position:self.origin});
+    self notify(#"hash_525537be2de4c159", {#position:self.origin, #direction:self.angles, #owner:self.owner});
     lbexplode();
 }
 
@@ -2794,7 +2794,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
             iprintln("<unknown string>" + distance2d(chopper_drop_point, heli_drop_goal));
         }
     #/
-    chopper notify(#"drop_crate", {#owner:chopper.owner, #direction:chopper.angles, #position:chopper.origin});
+    chopper notify(#"drop_crate", {#position:chopper.origin, #direction:chopper.angles, #owner:chopper.owner});
     chopper.droptime = gettime();
     chopper playsound(#"veh_supply_drop");
     wait(0.7);
@@ -2925,7 +2925,7 @@ function helidestroyed() {
     }
     self setspeed(25, 5);
     wait(randomfloatrange(0.5, 1.5));
-    self notify(#"hash_525537be2de4c159", {#owner:self.owner, #direction:self.angles, #position:self.origin});
+    self notify(#"hash_525537be2de4c159", {#position:self.origin, #direction:self.angles, #owner:self.owner});
     lbexplode();
 }
 

@@ -106,19 +106,19 @@ function function_ad0f2b39(aoe) {
 // Size: 0x1a6
 function private function_848ff0cc(elephant, rider) {
     if (isdefined(level.var_a92449fa)) {
-        var_acbadbe9 = [];
+        validstructs = [];
         foreach (struct in level.var_a92449fa) {
             if (!isdefined(struct.inuse) || !struct.inuse) {
                 distsq = distancesquared(elephant.origin, struct.origin);
                 if (distsq > 200 * 200) {
                     if (util::within_fov(rider.origin + vectorscale((0, 0, -1), 40), rider.angles, struct.origin, cos(70))) {
-                        array::add(var_acbadbe9, struct);
+                        array::add(validstructs, struct);
                     }
                 }
             }
         }
-        if (var_acbadbe9.size) {
-            struct = array::random(var_acbadbe9);
+        if (validstructs.size) {
+            struct = array::random(validstructs);
             struct.inuse = 1;
             return struct;
         }
@@ -243,11 +243,11 @@ function private function_d13a21cb(entity, projectile) {
         recordsphere(enemyorigin, 15, (0, 0, 0), "<unknown string>");
     #/
     for (i = 0; i < 5; i++) {
-        var_e2e956c1 = randomintrange(120, 360);
+        randomdistance = randomintrange(120, 360);
         var_a978e158 = randomfloatrange(-10, 10);
         yaw = -180 + 72 * i + var_a978e158;
         angles = (0, yaw, 0);
-        dir = anglestoforward(angles) * var_e2e956c1;
+        dir = anglestoforward(angles) * randomdistance;
         var_c6b637a5 = landpos + dir;
         /#
             recordsphere(var_c6b637a5, 15, (1, 0.5, 0), "<unknown string>");

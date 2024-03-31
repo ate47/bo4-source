@@ -455,7 +455,7 @@ function function_23621259(var_3a145c54 = 0) {
             self.maxhealth = self.health;
         }
         if (self.health < self.maxhealth || isdefined(self.var_bd2c55ef) && self.var_bd2c55ef) {
-            var_1a8c05ae = {#var_e0d660f6:self.var_e0d660f6, #n_health:self.health};
+            var_1a8c05ae = {#n_health:self.health, #var_e0d660f6:self.var_e0d660f6};
             if (!isdefined(level.var_fc73bad4[self.archetype])) {
                 level.var_fc73bad4[self.archetype] = [];
             } else if (!isarray(level.var_fc73bad4[self.archetype])) {

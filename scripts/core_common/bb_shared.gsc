@@ -63,7 +63,7 @@ function commit_weapon_data(spawnid, currentweapon, time0) {
         blackboxeventname = #"wzweapons";
         eventname = #"hash_63ec5305e1ef1335";
     }
-    event_data = {#hits:self._bbdata[#"hits"], #shots:self._bbdata[#"shots"], #duration:time1 - time0, #name:currentweapon.name, #spawnid:spawnid};
+    event_data = {#spawnid:spawnid, #name:currentweapon.name, #duration:time1 - time0, #shots:self._bbdata[#"shots"], #hits:self._bbdata[#"hits"]};
     function_92d1707f(eventname, blackboxeventname, event_data);
     self._bbdata[#"shots"] = 0;
     self._bbdata[#"hits"] = 0;
@@ -96,7 +96,7 @@ function function_a7ba460f(reason) {
 // Size: 0x94
 function function_afcc007d(name, clientnum, xuid) {
     var_bd8c7087 = int(xuid);
-    function_92d1707f(#"hash_3e5070f3289e386c", {#xuid:var_bd8c7087, #clientnum:clientnum, #name:name});
+    function_92d1707f(#"hash_3e5070f3289e386c", {#name:name, #clientnum:clientnum, #xuid:var_bd8c7087});
 }
 
 // Namespace bb/bb_shared
@@ -105,7 +105,7 @@ function function_afcc007d(name, clientnum, xuid) {
 // Size: 0x94
 function function_e0dfa262(name, clientnum, xuid) {
     var_bd8c7087 = int(xuid);
-    function_92d1707f(#"hash_557aae9aaddeac22", {#xuid:var_bd8c7087, #clientnum:clientnum, #name:name});
+    function_92d1707f(#"hash_557aae9aaddeac22", {#name:name, #clientnum:clientnum, #xuid:var_bd8c7087});
 }
 
 // Namespace bb/bb_shared

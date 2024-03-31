@@ -960,16 +960,16 @@ function function_57d8515c() {
     level waittill(#"game_playing");
     for (;;) {
         wait(level.var_df437ed2);
-        var_a3b5975e = 0;
+        playerschecked = 0;
         players = getplayers();
         foreach (player in players) {
             if (!isdefined(player) || !isplayer(player) || isbot(player)) {
                 continue;
             }
             if (player controllerparticipationcheck()) {
-                var_a3b5975e++;
+                playerschecked++;
             }
-            if (12 <= var_a3b5975e) {
+            if (12 <= playerschecked) {
                 waitframe(1);
             }
         }
@@ -1191,7 +1191,7 @@ function capturedobjective(capturetime, objective) {
             self.challenge_objectivedefensivetriplekillmedalorbetterearned = undefined;
         }
     }
-    self notify(#"capturedobjective", {#var_eced93f5:objective, #capturetime:capturetime});
+    self notify(#"capturedobjective", {#capturetime:capturetime, #var_eced93f5:objective});
 }
 
 // Namespace challenges/challenges_shared

@@ -763,7 +763,7 @@ function onusewithoutneutralizingflag(sentient) {
     bb::function_95a5b5c2("dom_capture", undefined, team, sentient.origin);
     if (oldteam == #"neutral") {
         self flagcapturedfromneutral(team);
-        self.var_9dcc8b07 = gettime();
+        self.firstcapture = gettime();
         self.var_a248f0a8 = 1;
         self.var_56d394cd = gettime();
     } else {
@@ -1838,7 +1838,7 @@ function function_1609a882(var_c1e98979) {
         if (domflag.var_249009fd.size != 0) {
             var_3458097 = var_9669dd4c / domflag.var_249009fd.size;
         }
-        var_93746b40 = {#var_a248f0a8:domflag.var_a248f0a8, #var_afd986ce:isdefined(var_3458097) ? var_3458097 : 0, #var_9dcc8b07:domflag.var_9dcc8b07, #label:domflag gameobjects::get_label(), #round:game.roundsplayed, #gametime:function_f8d53445()};
+        var_93746b40 = {#gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #var_afd986ce:isdefined(var_3458097) ? var_3458097 : 0, #var_a248f0a8:domflag.var_a248f0a8};
         function_92d1707f(#"hash_4b747d11b8ad1b23", var_93746b40);
     }
 }

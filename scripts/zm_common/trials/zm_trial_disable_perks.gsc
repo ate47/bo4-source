@@ -79,7 +79,7 @@ function private on_end(round_reset) {
 // Size: 0x7a
 function is_active(var_34f09024 = 0) {
     if (var_34f09024 && zm_trial::function_48736df9(#"disable_perks")) {
-        return 1;
+        return true;
     }
     challenge = zm_trial::function_a36e8c38(#"disable_perks");
     return isdefined(challenge);

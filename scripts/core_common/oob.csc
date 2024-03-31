@@ -92,7 +92,7 @@ function onoutofboundschange(localclientnum, oldval, newval, bnewent, binitialsn
     if (function_3132f113(localplayer)) {
         return;
     }
-    self callback::entity_callback(#"oob", localclientnum, {#new_val:newval, #old_val:oldval});
+    self callback::entity_callback(#"oob", localclientnum, {#old_val:oldval, #new_val:newval});
     if (newval > 0) {
         if (!isdefined(localplayer.oob_effect_enabled)) {
             filter::init_filter_oob(localplayer);

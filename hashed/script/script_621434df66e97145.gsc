@@ -182,7 +182,7 @@ function function_79eec899() {
         e_who = self.e_activator;
         if (isdefined(e_who)) {
             zm_utility::play_sound_at_pos("purchase", e_who.origin);
-            level notify(#"trap_activated", {#trap:self, #trap_activator:e_who});
+            level notify(#"trap_activated", {#trap_activator:e_who, #trap:self});
         }
         level.s_shower_trap function_17b07f6c(e_who);
         level.s_shower_trap.var_6b64b967 = 0;
@@ -416,7 +416,7 @@ function function_64fa1b6a() {
         e_who = self.e_activator;
         if (isdefined(e_who)) {
             zm_utility::play_sound_at_pos("purchase", e_who.origin);
-            level notify(#"trap_activated", {#trap:self, #trap_activator:e_who});
+            level notify(#"trap_activated", {#trap_activator:e_who, #trap:self});
         }
         level.s_fire_trap fire_trap_activate(e_who);
         level.s_fire_trap.var_6b64b967 = 0;
@@ -646,7 +646,7 @@ function function_7fffc105() {
         e_who = self.e_activator;
         if (isdefined(e_who)) {
             zm_utility::play_sound_at_pos("purchase", e_who.origin);
-            level notify(#"trap_activated", {#trap:self, #trap_activator:e_who});
+            level notify(#"trap_activated", {#trap_activator:e_who, #trap:self});
         }
         level.s_spinning_trap.e_volume playsound(#"hash_345bf7f9d6f848b9");
         level.s_spinning_trap spinning_trap_activate(e_who);

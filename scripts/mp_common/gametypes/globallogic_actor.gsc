@@ -132,7 +132,7 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
                     idamage = 1;
                 }
                 self.lastdamagewasfromenemy = 0;
-                var_5370b15e = idamage < self.health ? self.health : idamage;
+                var_5370b15e = idamage < self.health ? idamage : self.health;
                 self globallogic_player::giveattackerandinflictorownerassist(eattacker, einflictor, var_5370b15e, smeansofdeath, weapon);
                 params.idamage = idamage;
                 self callback::callback(#"on_ai_damage", params);
@@ -146,7 +146,7 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
                     idamage = 1;
                 }
                 self.lastdamagewasfromenemy = 0;
-                var_5370b15e = idamage < self.health ? self.health : idamage;
+                var_5370b15e = idamage < self.health ? idamage : self.health;
                 self globallogic_player::giveattackerandinflictorownerassist(eattacker, einflictor, var_5370b15e, smeansofdeath, weapon);
                 params.idamage = idamage;
                 self callback::callback(#"on_ai_damage", params);
@@ -170,7 +170,7 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
                 self.wascooked = undefined;
             }
             self.lastdamagewasfromenemy = isdefined(eattacker) && eattacker != self;
-            var_5370b15e = idamage < self.health ? self.health : idamage;
+            var_5370b15e = idamage < self.health ? idamage : self.health;
             self globallogic_player::giveattackerandinflictorownerassist(eattacker, einflictor, var_5370b15e, smeansofdeath, weapon);
             params.idamage = idamage;
             self callback::callback(#"on_ai_damage", params);

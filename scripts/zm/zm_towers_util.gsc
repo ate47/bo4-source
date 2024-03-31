@@ -223,11 +223,11 @@ function function_c05cc102(s_params) {
     s_waitresult = undefined;
     s_waitresult = s_params.projectile waittill(#"projectile_impact_explode", #"explode", #"death");
     if (isdefined(s_params.projectile) && s_waitresult._notify == "death") {
-        level notify(#"hash_3042a9bf2f57ea0a", {#var_814c9389:s_params.projectile.origin, #attacker:self});
+        level notify(#"hash_3042a9bf2f57ea0a", {#attacker:self, #var_814c9389:s_params.projectile.origin});
         return;
     }
     if (s_waitresult._notify == "projectile_impact_explode") {
-        level notify(#"hash_3042a9bf2f57ea0a", {#var_814c9389:s_waitresult.position, #attacker:self});
+        level notify(#"hash_3042a9bf2f57ea0a", {#attacker:self, #var_814c9389:s_waitresult.position});
     }
 }
 

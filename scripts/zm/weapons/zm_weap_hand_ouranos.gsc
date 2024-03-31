@@ -560,7 +560,7 @@ function function_180bae11() {
     a_trace = bullettrace(var_2ed6f142, v_end, 0, self);
     if (isdefined(level.var_21343c57)) {
         var_ec8dc708 = bullettrace(var_2ed6f142, v_end, 0, self);
-        level notify(#"ww_ouranos_hit", {#e_entity:var_ec8dc708[#"entity"], #player:self});
+        level notify(#"ww_ouranos_hit", {#player:self, #e_entity:var_ec8dc708[#"entity"]});
     }
     return a_trace[#"position"];
 }

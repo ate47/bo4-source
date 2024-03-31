@@ -284,15 +284,15 @@ function trophyactive(owner) {
                     if (isdefined(level.var_ccfcde75)) {
                         owner [[ level.var_ccfcde75 ]](self, grenade);
                     }
-                    var_84c1f04c = grenade.origin - self.origin;
-                    if (var_84c1f04c == (0, 0, 0)) {
-                        var_84c1f04c = (1, 0, 0);
+                    fxfwd = grenade.origin - self.origin;
+                    if (fxfwd == (0, 0, 0)) {
+                        fxfwd = (1, 0, 0);
                     }
                     fxup = anglestoup(self.angles);
                     if (fxup == (0, 0, 0)) {
                         fxup = (0, 0, 1);
                     }
-                    playfx(level.trophylongflashfx, self.origin + vectorscale((0, 0, 1), 15), var_84c1f04c, fxup);
+                    playfx(level.trophylongflashfx, self.origin + vectorscale((0, 0, 1), 15), fxfwd, fxup);
                     owner thread projectileexplode(grenade, self);
                     index--;
                     self playsound(#"wpn_trophy_alert");

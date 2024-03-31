@@ -113,8 +113,8 @@ function private activate_safes(targetname, count) {
 // Size: 0x118
 function private function_fb346efb() {
     level flagsys::wait_till(#"hash_405e46788e83af41");
-    var_c88d9756 = level.deathcircles.size - 1;
-    while (level.deathcircleindex < var_c88d9756) {
+    lastcircleindex = level.deathcircles.size - 1;
+    while (level.deathcircleindex < lastcircleindex) {
         wait(1);
     }
     var_8e3c3c5b = level.deathcircles[level.deathcircleindex];

@@ -83,11 +83,11 @@ function function_61418721(point, line_start, line_end) {
 // Params 4, eflags: 0x1 linked
 // Checksum 0x2a1df6a2, Offset: 0x5b8
 // Size: 0xdc
-function number_b_(var_5c57c958, var_f3e138f3, var_3800dad7, plane_normal) {
+function number_b_(var_5c57c958, var_f3e138f3, plane_point, plane_normal) {
     var_a979e3a2 = vectordot(plane_normal, var_f3e138f3);
     result = undefined;
     if (abs(var_a979e3a2) > 0.001) {
-        var_fa608360 = var_3800dad7 - var_5c57c958;
+        var_fa608360 = plane_point - var_5c57c958;
         var_bc4566f4 = vectordot(var_fa608360, plane_normal);
         hit_time = var_bc4566f4 / var_a979e3a2;
         if (hit_time >= 0) {

@@ -101,7 +101,7 @@ function __init__() {
         clearstreamerloadinghints();
     }
     level.var_8c099032 = getgametypesetting(#"draftenabled") && !getroundsplayed(0);
-    level.var_f35699bc = [#"melee_actionfigure_t8":"melee_actionfigure", #"melee_zombiearm_t8":"melee_backhand", #"special_ballisticknife_t8_dw_dw":"melee_alt", #"special_ballisticknife_t8_dw":"melee_alt", #"melee_cutlass_t8":"melee_alt", #"melee_club_t8":"melee_alt", #"melee_demohammer_t8":"melee_alt", #"melee_coinbag_t8":"melee_alt", #"melee_secretsanta_t8":"melee_alt", #"melee_slaybell_t8":"melee_alt"];
+    level.var_f35699bc = [#"melee_slaybell_t8":"melee_alt", #"melee_secretsanta_t8":"melee_alt", #"melee_coinbag_t8":"melee_alt", #"melee_demohammer_t8":"melee_alt", #"melee_club_t8":"melee_alt", #"melee_cutlass_t8":"melee_alt", #"special_ballisticknife_t8_dw":"melee_alt", #"special_ballisticknife_t8_dw_dw":"melee_alt", #"melee_zombiearm_t8":"melee_backhand", #"melee_actionfigure_t8":"melee_actionfigure"];
 }
 
 // Namespace draft/draft

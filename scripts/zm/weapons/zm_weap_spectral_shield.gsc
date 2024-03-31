@@ -354,7 +354,7 @@ function function_f40aa0ef(var_88f24b00, n_total_time) {
     }
     if (n_total_time < 0.25) {
         var_e89ec7fd = 0.25 - n_total_time;
-        var_e89ec7fd = var_e89ec7fd < 0.05 ? var_e89ec7fd : 0.05;
+        var_e89ec7fd = var_e89ec7fd < 0.05 ? 0.05 : var_e89ec7fd;
     } else {
         var_e89ec7fd = 0.05;
     }
@@ -362,7 +362,7 @@ function function_f40aa0ef(var_88f24b00, n_total_time) {
     var_5100df85 = 1200 + 1200 * var_a6693654;
     n_dist = distance(var_88f24b00.origin, self geteye());
     n_move_time = n_dist / var_5100df85;
-    n_move_time = n_move_time < var_e89ec7fd ? n_move_time : var_e89ec7fd;
+    n_move_time = n_move_time < var_e89ec7fd ? var_e89ec7fd : n_move_time;
     return n_move_time;
 }
 

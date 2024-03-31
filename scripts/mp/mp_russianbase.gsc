@@ -35,7 +35,7 @@ function event_handler[level_init] main(eventstruct) {
 function function_c3c859e1() {
     array::delete_all(getentarray("sun_block", "targetname"));
     if (getgametypesetting(#"allowmapscripting")) {
-        level thread function_8dc01472();
+        level thread init_train();
         if (util::isfirstround() && draft::is_draft_this_round()) {
             crane = getent("linear_crane_moveable", "targetname");
             if (isdefined(crane)) {
@@ -56,7 +56,7 @@ function function_c3c859e1() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x8860fd74, Offset: 0x560
 // Size: 0x138
-function function_8dc01472() {
+function init_train() {
     level endon(#"game_ended");
     level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_3761a1bc, "init");
     level scene::add_scene_func(#"hash_520d4c0a17bb9b12", &function_f55fb854, "play");

@@ -840,13 +840,13 @@ class csceneobject : cscriptbundleobjectbase {
             } else {
                 v_ang = self.m_align.angles + v_ang_offset;
             }
-            self.m_align = {#angles:v_ang, #origin:v_pos};
+            self.m_align = {#origin:v_pos, #angles:v_ang};
             return;
         }
         if (var_cd4673f4) {
             v_pos = self.m_align.origin;
             v_ang = self._e_array[clientnum].angles;
-            self.m_align = {#angles:v_ang, #origin:v_pos};
+            self.m_align = {#origin:v_pos, #angles:v_ang};
         }
     }
 

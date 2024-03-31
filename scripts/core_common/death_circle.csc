@@ -23,14 +23,14 @@ function __init__() {
     if (!level.var_d8958e58) {
         return;
     }
-    level.var_ef215639 = [3:"evt_death_circle_strong", 2:#"hash_5b96bc3a1c23c571", 1:#"hash_1483048e184df991"];
+    level.var_ef215639 = [1:#"hash_1483048e184df991", 2:#"hash_5b96bc3a1c23c571", 3:"evt_death_circle_strong"];
     level.var_cb450873 = #"hash_313f1d0b4ff27caa";
-    level.var_f6795a59 = [3:#"hash_3fc5123369b4c59f", 2:#"hash_5c64e89ab323857a", 1:#"hash_7c7ea03189fe65d8"];
-    level.var_601fc3c5 = [3:#"hash_474c4e8748206593", 2:#"hash_474c4d87482063e0", 1:#"wz/fx8_player_outside_circle"];
-    level.var_7e948a2d = [3:#"hash_559017f41745034e", 2:#"hash_2ccb19ff6223b693", 1:#"wz/fx8_plyr_pstfx_barrier_lvl_01_wz"];
-    level.var_c465fd31 = [3:#"hash_316ec537e4167d47", 2:#"hash_775e24c0ca5d7b58", 1:#"hash_775e24c0ca5d7b58"];
-    level.var_7d949aad = [3:0, 2:0, 1:0.5];
-    level.var_213a0963 = [3:#"hash_631d14143bf8b26", 2:#"hash_301fd347a3614b8b", 1:#"hash_57b39f99758cac07"];
+    level.var_f6795a59 = [1:#"hash_7c7ea03189fe65d8", 2:#"hash_5c64e89ab323857a", 3:#"hash_3fc5123369b4c59f"];
+    level.var_601fc3c5 = [1:#"wz/fx8_player_outside_circle", 2:#"hash_474c4d87482063e0", 3:#"hash_474c4e8748206593"];
+    level.var_7e948a2d = [1:#"wz/fx8_plyr_pstfx_barrier_lvl_01_wz", 2:#"hash_2ccb19ff6223b693", 3:#"hash_559017f41745034e"];
+    level.var_c465fd31 = [1:#"hash_775e24c0ca5d7b58", 2:#"hash_775e24c0ca5d7b58", 3:#"hash_316ec537e4167d47"];
+    level.var_7d949aad = [1:0.5, 2:0, 3:0];
+    level.var_213a0963 = [1:#"hash_57b39f99758cac07", 2:#"hash_301fd347a3614b8b", 3:#"hash_631d14143bf8b26"];
     clientfield::register("scriptmover", "deathcircleflag", 1, 1, "int", &function_a380fe5, 0, 0);
     clientfield::register("toplayer", "deathcircleeffects", 1, 2, "int", undefined, 0, 1);
     clientfield::register("allplayers", "outsidedeathcircle", 1, 1, "int", undefined, 0, 0);

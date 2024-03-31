@@ -1141,7 +1141,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
         strategy = function_d077c2b6(side);
     }
     /#
-        sdebug = [0:"<unknown string>" + strategy.name];
+        sdebug = ["<unknown string>" + strategy.name];
     #/
     strategy = function_1e3c1b91(strategy, strategy);
     if (isdefined(var_ebfc3fac)) {

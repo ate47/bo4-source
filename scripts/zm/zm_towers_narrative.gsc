@@ -82,7 +82,7 @@ function function_58c9a8b3(var_c1146e81 = 0) {
     if (isdefined(self.var_b35b6be6)) {
     }
     if (isdefined(self.script_notify)) {
-        level notify(self.script_notify, {#v_origin:self.origin, #e_player:e_player});
+        level notify(self.script_notify, {#e_player:e_player, #v_origin:self.origin});
     }
     self struct::delete();
 }

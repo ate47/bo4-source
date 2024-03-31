@@ -370,7 +370,7 @@ function private function_2b7b1675(var_3e24b5d5 = isdefined(level.var_3e24b5d5) 
         }
         waitframe(1);
     }
-    return {#var_1dc0a881:array(0, 0.5), #var_dbeb023e:var_cd5bda0c};
+    return {#var_dbeb023e:var_cd5bda0c, #var_1dc0a881:array(0, 0.5)};
 }
 
 // Namespace zm_vo/zm_vo

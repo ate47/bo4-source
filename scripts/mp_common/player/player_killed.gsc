@@ -69,16 +69,16 @@ function function_df36a02d(attacker, weapon, mod) {
         self clientfield::set_player_uimodel("huditems.killedByEntNum", 15);
     }
     if (isdefined(mod)) {
-        var_19b57d54 = function_4a856ead(mod);
+        modindex = function_4a856ead(mod);
         if (mod != "MOD_META") {
             if (attacker === self) {
-                var_19b57d54 = function_4a856ead("MOD_SUICIDE");
+                modindex = function_4a856ead("MOD_SUICIDE");
             } else if (weapon === level.weaponnone) {
-                var_19b57d54 = function_4a856ead("MOD_UNKNOWN");
+                modindex = function_4a856ead("MOD_UNKNOWN");
                 self clientfield::set_player_uimodel("huditems.killedByEntNum", self getentitynumber());
             }
         }
-        self clientfield::set_player_uimodel("huditems.killedByMOD", var_19b57d54);
+        self clientfield::set_player_uimodel("huditems.killedByMOD", modindex);
     } else {
         self clientfield::set_player_uimodel("huditems.killedByEntNum", 15);
     }
@@ -255,7 +255,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
     var_8efc9727 = isplayer(attacker) && self util::isenemyplayer(attacker) == 0;
     var_41c4d474 = isplayer(attacker) && self == attacker;
     vattacker = isdefined(attacker) ? attacker : self;
-    var_aedb48f4 = {#matchtime:function_f8d53445(), #shitloc:shitloc, #vdir:vdir, #sweapon:weapon, #smeansofdeath:smeansofdeath, #idamage:idamage, #var_83634238:isplayer(vattacker.origin) ? vattacker getplayerangles() : vattacker.angles, #attackerorigin:vattacker.origin, #attacker:attacker, #einflictor:einflictor, #victimweapon:self.currentweapon, #var_5fceefd4:self getplayerangles(), #victimorigin:self.origin};
+    callbackparams = {#victimorigin:self.origin, #var_5fceefd4:self getplayerangles(), #victimweapon:self.currentweapon, #einflictor:einflictor, #attacker:attacker, #attackerorigin:vattacker.origin, #var_83634238:isplayer(vattacker.origin) ? vattacker getplayerangles() : vattacker.angles, #idamage:idamage, #smeansofdeath:smeansofdeath, #sweapon:weapon, #vdir:vdir, #shitloc:shitloc, #matchtime:function_f8d53445()};
     laststandparams = self.laststandparams;
     var_a1d415ee = self.var_a1d415ee;
     if (isdefined(self.uselaststandparams) && enteredresurrect == 0) {
@@ -283,7 +283,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
             var_41c4d474 = isplayer(attacker) && self == attacker;
         }
     }
-    params = {#laststandparams:laststandparams, #deathanimduration:deathanimduration, #psoffsettime:psoffsettime, #shitloc:shitloc, #vdir:vdir, #weapon:weapon, #smeansofdeath:smeansofdeath, #idamage:idamage, #eattacker:attacker, #einflictor:einflictor};
+    params = {#einflictor:einflictor, #eattacker:attacker, #idamage:idamage, #smeansofdeath:smeansofdeath, #weapon:weapon, #vdir:vdir, #shitloc:shitloc, #psoffsettime:psoffsettime, #deathanimduration:deathanimduration, #laststandparams:laststandparams};
     self callback::callback(#"on_player_killed_with_params", params);
     self stopsounds();
     bestplayer = undefined;
@@ -386,7 +386,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         self function_a3030357(attacker, einflictor, obituaryweapon, obituarymeansofdeath, var_a1f4d122);
     }
     if (wasinlaststand) {
-        function_caabcf70(self, var_aedb48f4, laststandparams, var_a1d415ee);
+        function_caabcf70(self, callbackparams, laststandparams, var_a1d415ee);
     }
     if (enteredresurrect == 0) {
         self.sessionstate = "dead";
@@ -536,7 +536,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
     self.lastattacker = attacker;
     self.lastdeathpos = self.origin;
     if (isdefined(attacker) && isplayer(attacker) && !var_41c4d474 && !var_8efc9727) {
-        attacker notify(#"killed_enemy_player", {#time:gettime(), #weapon:weapon, #victim:self});
+        attacker notify(#"killed_enemy_player", {#victim:self, #weapon:weapon, #time:gettime()});
         self thread challenges::playerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, shitloc, attackerstance, bledout);
     } else {
         self notify(#"playerkilledchallengesprocessed");
@@ -611,22 +611,22 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
             }
         }
     }
-    var_989983f4 = spawnstruct();
-    var_989983f4.victimloadoutindex = self.class_num;
-    var_989983f4.victimweaponpickedup = victimweaponpickedup;
-    var_989983f4.victimwasads = victimwasads;
-    var_989983f4.killerloadoutindex = killerloadoutindex;
-    var_989983f4.killerweaponpickedup = killerweaponpickedup;
-    var_989983f4.killerwasads = killerwasads;
-    var_989983f4.victimheropoweractive = victimheropoweractive;
-    var_989983f4.killerheropoweractive = killerheropoweractive;
-    var_989983f4.victiminkillerfov = victiminkillerfov;
-    var_989983f4.killerinvictimfov = killerinvictimfov;
-    var_989983f4.killerkillstreakweaponindex = killerkillstreakweaponindex;
-    var_989983f4.victimkillstreakweaponindex = victimkillstreakweaponindex;
-    var_989983f4.var_28af8061 = var_28af8061;
-    var_989983f4.var_8926cc9f = var_8926cc9f;
-    matchrecordlogadditionaldeathinfo(self, killer, victimweapon, weapon, var_989983f4);
+    paramstruct = spawnstruct();
+    paramstruct.victimloadoutindex = self.class_num;
+    paramstruct.victimweaponpickedup = victimweaponpickedup;
+    paramstruct.victimwasads = victimwasads;
+    paramstruct.killerloadoutindex = killerloadoutindex;
+    paramstruct.killerweaponpickedup = killerweaponpickedup;
+    paramstruct.killerwasads = killerwasads;
+    paramstruct.victimheropoweractive = victimheropoweractive;
+    paramstruct.killerheropoweractive = killerheropoweractive;
+    paramstruct.victiminkillerfov = victiminkillerfov;
+    paramstruct.killerinvictimfov = killerinvictimfov;
+    paramstruct.killerkillstreakweaponindex = killerkillstreakweaponindex;
+    paramstruct.victimkillstreakweaponindex = victimkillstreakweaponindex;
+    paramstruct.var_28af8061 = var_28af8061;
+    paramstruct.var_8926cc9f = var_8926cc9f;
+    matchrecordlogadditionaldeathinfo(self, killer, victimweapon, weapon, paramstruct);
     self player_record::record_special_move_data_for_life(killer);
     self.pickedupweapons = [];
     self.switching_teams = undefined;
@@ -921,18 +921,18 @@ function private function_93115f65() {
 // Params 4, eflags: 0x4
 // Checksum 0xfb8ad2f4, Offset: 0x44f0
 // Size: 0x37c
-function private function_caabcf70(victim, var_aedb48f4, laststandparams, var_a1d415ee) {
+function private function_caabcf70(victim, callbackparams, laststandparams, var_a1d415ee) {
     /#
         assert(isdefined(victim));
     #/
     /#
-        assert(isdefined(var_aedb48f4));
+        assert(isdefined(callbackparams));
     #/
-    if (!isdefined(victim) || !isdefined(var_aedb48f4)) {
+    if (!isdefined(victim) || !isdefined(callbackparams)) {
         return;
     }
-    var_f53d817d = isdefined(laststandparams) ? laststandparams : var_aedb48f4;
-    var_ee2f4691 = isdefined(var_a1d415ee) ? var_a1d415ee : var_aedb48f4;
+    var_f53d817d = isdefined(laststandparams) ? laststandparams : callbackparams;
+    var_ee2f4691 = isdefined(var_a1d415ee) ? var_a1d415ee : callbackparams;
     function_ad11630f(victim, var_f53d817d.victimorigin, var_f53d817d.var_5fceefd4, var_f53d817d.victimweapon, var_f53d817d.attacker, var_f53d817d.attackerorigin, var_f53d817d.var_83634238, var_f53d817d.sweapon, var_f53d817d.matchtime, var_f53d817d.shitloc, var_f53d817d.smeansofdeath, var_ee2f4691.attacker, var_ee2f4691.attackerorigin, var_ee2f4691.var_83634238, var_ee2f4691.sweapon, var_ee2f4691.matchtime, var_ee2f4691.shitloc, var_ee2f4691.smeansofdeath);
     lifeindex = victim match_record::get_player_stat(#"hash_ec4aea1a8bbd82");
     if (isdefined(lifeindex) && isdefined(victim) && isplayer(victim)) {
@@ -1345,7 +1345,7 @@ function private function_48a1200f(einflictor, attacker, weapon, lpattackteam) {
             }
             damage_done = self.attackerdamage[player.clientid].damage;
             if (sessionmodeismultiplayergame() && isdefined(player.currentweapon)) {
-                function_92d1707f(#"hash_d1357992f4715f0", {#assistweapon:player.currentweapon.name, #assistspecialist:function_b14806c6(player player_role::get(), currentsessionmode()), #assistspawnid:getplayerspawnid(player), #gametime:function_f8d53445()});
+                function_92d1707f(#"hash_d1357992f4715f0", {#gametime:function_f8d53445(), #assistspawnid:getplayerspawnid(player), #assistspecialist:function_b14806c6(player player_role::get(), currentsessionmode()), #assistweapon:player.currentweapon.name});
             }
             player thread globallogic_score::processassist(self, damage_done, self.attackerdamage[player.clientid].weapon, self.attackerdamage[player.clientid].time, self.attackerdamage[player.clientid].meansofdeath);
         }

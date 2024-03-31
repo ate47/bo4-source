@@ -165,7 +165,7 @@ function owner_in_line_of_fire() {
         return false;
     }
     dist_squared_to_owner = distancesquared(self.owner.origin, self.origin);
-    line_of_fire_dot = dist_squared_to_owner > 9216 ? 0.866 : 0.9848;
+    line_of_fire_dot = dist_squared_to_owner > 9216 ? 0.9848 : 0.866;
     gun_angles = self gettagangles(isdefined(self.avoid_shooting_owner_ref_tag) ? self.avoid_shooting_owner_ref_tag : "tag_flash");
     if (!isdefined(gun_angles)) {
         return false;
@@ -773,7 +773,7 @@ function shared_callback_damage(einflictor, eattacker, idamage, idflags, smeanso
     if (should_emp(self, weapon, smeansofdeath, einflictor, eattacker)) {
         minempdowntime = 0.8 * (isdefined(self.settings.empdowntime) ? self.settings.empdowntime : 0);
         maxempdowntime = 1.2 * (isdefined(self.settings.empdowntime) ? self.settings.empdowntime : 1);
-        self notify(#"emped", {#param2:einflictor, #param1:eattacker, #param0:randomfloatrange(minempdowntime, maxempdowntime)});
+        self notify(#"emped", {#param0:randomfloatrange(minempdowntime, maxempdowntime), #param1:eattacker, #param2:einflictor});
     }
     if (should_burn(self, weapon, smeansofdeath, einflictor, eattacker)) {
         self thread burning_thread(eattacker, einflictor);

@@ -330,7 +330,7 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin) {
         endoffullfxsq = (i * 150 + 200) * (i * 150 + 200);
         tracedistsq = distancesquared(origin, trace[#"position"]);
         startfx = tracedistsq >= endofhalffxsq || i == 0;
-        fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash_sm" : "killstreaks/fx_sg_distortion_cone_ash";
+        fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash" : "killstreaks/fx_sg_distortion_cone_ash_sm";
         switch (i) {
         case 0:
             self play_fx_on_tag(localclientnum, fxname, "tag_fx11");
@@ -350,7 +350,7 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin) {
         }
         tracedistsq = distancesquared(origin, traceleft[#"position"]);
         startfx = tracedistsq >= endofhalffxsq;
-        fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash_sm" : "killstreaks/fx_sg_distortion_cone_ash";
+        fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash" : "killstreaks/fx_sg_distortion_cone_ash_sm";
         switch (i) {
         case 0:
             break;
@@ -370,7 +370,7 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin) {
         }
         tracedistsq = distancesquared(origin, traceright[#"position"]);
         startfx = tracedistsq >= endofhalffxsq;
-        fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash_sm" : "killstreaks/fx_sg_distortion_cone_ash";
+        fxname = tracedistsq > endoffullfxsq ? "killstreaks/fx_sg_distortion_cone_ash" : "killstreaks/fx_sg_distortion_cone_ash_sm";
         switch (i) {
         case 0:
             break;

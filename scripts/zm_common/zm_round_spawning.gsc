@@ -252,7 +252,7 @@ function function_f6cd912d(var_ef21400 = 0) {
         }
         if (isdefined(var_af83ca3)) {
             var_a630f8a4 = level.var_45827161[var_af83ca3];
-            s_special_round = {#archetypes:isdefined(var_a630f8a4.var_d7d3cd31) ? var_a630f8a4.var_d7d3cd31 : var_a630f8a4.var_a51dd114, #n_round:var_af83ca3};
+            s_special_round = {#n_round:var_af83ca3, #archetypes:isdefined(var_a630f8a4.var_d7d3cd31) ? var_a630f8a4.var_d7d3cd31 : var_a630f8a4.var_a51dd114};
             return s_special_round;
         }
     }
@@ -450,7 +450,7 @@ function register_archetype(str_archetype, var_c48a6bb7, func_round_spawn, var_9
 // Checksum 0x97bb3f89, Offset: 0x1768
 // Size: 0x13c
 function __init__() {
-    level.var_b7a8520a = array({#var_fadd1539:array(2, 2), #var_101fc930:array(0.75, 0.25)}, {#var_fadd1539:array(1, 1, 1, 1), #var_101fc930:array(0.25, 0.25, 0.25, 0.25)});
+    level.var_b7a8520a = array({#var_101fc930:array(0.75, 0.25), #var_fadd1539:array(2, 2)}, {#var_101fc930:array(0.25, 0.25, 0.25, 0.25), #var_fadd1539:array(1, 1, 1, 1)});
     level.var_5d2cd3b1 = [];
     level.var_89fda7e = [];
     level.var_65e3ac8a = 0;
@@ -561,7 +561,7 @@ function private function_3d5b3f85(str_archetype) {
     var_31b155cf = randomintrangeinclusive(6, int(min(10, level.zombie_total)));
     level.var_c1a3937d[var_31b155cf] = str_archetype;
     /#
-        var_e5aaf7f4 = {#b_spawned:0, #n_spawn:var_31b155cf, #str_archetype:str_archetype};
+        var_e5aaf7f4 = {#str_archetype:str_archetype, #n_spawn:var_31b155cf, #b_spawned:0};
         if (!isdefined(level.var_50cfb6c2[0])) {
             level.var_50cfb6c2[0] = [];
         } else if (!isarray(level.var_50cfb6c2[0])) {
@@ -1091,7 +1091,7 @@ function private function_d7864087(var_dbce0c44) {
                 n_spawn = n_spawn + var_5dc6da8e;
                 level.var_c1a3937d[n_spawn] = str_archetype;
                 /#
-                    var_e5aaf7f4 = {#b_spawned:0, #n_spawn:n_spawn, #str_archetype:str_archetype};
+                    var_e5aaf7f4 = {#str_archetype:str_archetype, #n_spawn:n_spawn, #b_spawned:0};
                     if (!isdefined(level.var_50cfb6c2[i])) {
                         level.var_50cfb6c2[i] = [];
                     } else if (!isarray(level.var_50cfb6c2[i])) {

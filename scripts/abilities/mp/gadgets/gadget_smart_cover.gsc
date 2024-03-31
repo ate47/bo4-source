@@ -36,7 +36,7 @@ function __init__() {
 // Size: 0x8c
 function onsmartcoverplaced(smartcover) {
     self battlechatter::function_bd715920(smartcover.weapon, undefined, smartcover.origin, smartcover);
-    self callback::callback(#"hash_70eeb7d813f149b2", {#cover:smartcover.smartcover, #owner:self});
+    self callback::callback(#"hash_70eeb7d813f149b2", {#owner:self, #cover:smartcover.smartcover});
 }
 
 // Namespace smart_cover/gadget_smart_cover
@@ -51,7 +51,7 @@ function function_a430cceb(attacker, weapon) {
     if (isdefined(attacker) && isplayer(attacker) && concertinawire.owner !== attacker && isdefined(weapon)) {
         attacker stats::function_e24eec31(weapon, #"hash_1c9da51ed1906285", 1);
     }
-    self callback::callback(#"hash_15858698313c5f32", {#cover:self, #owner:self.owner});
+    self callback::callback(#"hash_15858698313c5f32", {#owner:self.owner, #cover:self});
 }
 
 // Namespace smart_cover/gadget_smart_cover

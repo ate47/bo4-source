@@ -24,7 +24,7 @@ function function_7d8be726(patrol_radius, var_edc20efd, var_d73e0c6e, marker_fx,
     /#
         assert(isdefined(self.ai));
     #/
-    self.ai.patrol = {#var_7d9560c1:var_7d9560c1, #var_544ae93d:var_544ae93d, #var_52e43a03:var_52e43a03, #var_a85cb855:var_a85cb855, #var_861daf20:var_861daf20, #var_36b19b5e:var_36b19b5e, #marker_fx:marker_fx, #var_d73e0c6e:var_d73e0c6e, #var_edc20efd:var_edc20efd, #patrol_radius:patrol_radius, #state:2};
+    self.ai.patrol = {#state:2, #patrol_radius:patrol_radius, #var_edc20efd:var_edc20efd, #var_d73e0c6e:var_d73e0c6e, #marker_fx:marker_fx, #var_36b19b5e:var_36b19b5e, #var_861daf20:var_861daf20, #var_a85cb855:var_a85cb855, #var_52e43a03:var_52e43a03, #var_544ae93d:var_544ae93d, #var_7d9560c1:var_7d9560c1};
 }
 
 // Namespace ai_patrol/patrol

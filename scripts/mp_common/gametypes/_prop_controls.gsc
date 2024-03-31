@@ -194,10 +194,10 @@ function setvalue(value) {
 // Params 4, eflags: 0x0
 // Checksum 0x6f65ee40, Offset: 0xc78
 // Size: 0x1de
-function addupperrighthudelem(label, value, text, var_c1988642) {
+function addupperrighthudelem(label, value, text, labelpc) {
     hudelem = spawnstruct();
     hudelem.x = -15;
-    hudelem.y = self.var_8b393c32;
+    hudelem.y = self.currenthudy;
     hudelem.alignx = "right";
     hudelem.aligny = "bottom";
     hudelem.horzalign = "right";
@@ -207,12 +207,12 @@ function addupperrighthudelem(label, value, text, var_c1988642) {
     hudelem.glowalpha = 0;
     hudelem.hidewheninmenu = 1;
     hudelem.hidewheninkillcam = 1;
-    hudelem.var_8efb654e = hudelem.fontscale;
-    if (isdefined(label) && isdefined(var_c1988642)) {
+    hudelem.startfontscale = hudelem.fontscale;
+    if (isdefined(label) && isdefined(labelpc)) {
         if (self is_player_gamepad_enabled()) {
             hudelem.label = label;
         } else {
-            hudelem.label = var_c1988642;
+            hudelem.label = labelpc;
         }
     } else if (isdefined(label)) {
         hudelem.label = label;
@@ -224,7 +224,7 @@ function addupperrighthudelem(label, value, text, var_c1988642) {
     if (isdefined(value)) {
         hudelem setvalue(value);
     }
-    self.var_8b393c32 = self.var_8b393c32 - 20;
+    self.currenthudy = self.currenthudy - 20;
     return hudelem;
 }
 
@@ -234,24 +234,24 @@ function addupperrighthudelem(label, value, text, var_c1988642) {
 // Size: 0x1e4
 function propcontrolshud() {
     /#
-        assert(!isdefined(self.var_8060636f));
+        assert(!isdefined(self.changepropkey));
     #/
     if (self issplitscreen()) {
-        self.var_8b393c32 = -10;
+        self.currenthudy = -10;
     } else {
-        self.var_8b393c32 = -80;
+        self.currenthudy = -80;
     }
-    self.var_5478a045 = addupperrighthudelem();
-    self.var_e8c312d7 = addupperrighthudelem(#"hash_2f560292a2fb7eab");
-    self.var_8060636f = addupperrighthudelem(#"mp_ph_change", 0);
-    self.var_8b393c32 = self.var_8b393c32 - 20;
+    self.abilitykey = addupperrighthudelem();
+    self.clonekey = addupperrighthudelem(#"hash_2f560292a2fb7eab");
+    self.changepropkey = addupperrighthudelem(#"mp_ph_change", 0);
+    self.currenthudy = self.currenthudy - 20;
     self.var_8e3b5c8c = addupperrighthudelem(#"hash_fb73fdc2aff963f");
-    self.var_a4da95c7 = addupperrighthudelem(#"hash_7f59350f5f223501", undefined, undefined, #"hash_4c7fbb5c1ccd5107");
-    self.var_4901798a = addupperrighthudelem(#"mp_ph_lock");
-    self.var_aa57a992 = addupperrighthudelem(#"mp_ph_spin", undefined, undefined, #"hash_39e61050ab8d325e");
-    self function_138e42e4();
-    self.var_65efe125 = addupperrighthudelem(#"mp_ph_zoom");
-    self thread function_ec04079a();
+    self.matchslopekey = addupperrighthudelem(#"hash_7f59350f5f223501", undefined, undefined, #"hash_4c7fbb5c1ccd5107");
+    self.lockpropkey = addupperrighthudelem(#"mp_ph_lock");
+    self.spinpropkey = addupperrighthudelem(#"mp_ph_spin", undefined, undefined, #"hash_39e61050ab8d325e");
+    self setnewabilityhud();
+    self.zoomkey = addupperrighthudelem(#"mp_ph_zoom");
+    self thread updatetextongamepadchange();
 }
 
 // Namespace prop_controls/_prop_controls
@@ -270,7 +270,7 @@ function cleanuppropcontrolshudondeath() {
 // Params 1, eflags: 0x0
 // Checksum 0xc7d61f43, Offset: 0x10c8
 // Size: 0x2c
-function function_b13f931a(hudelem) {
+function safedestroy(hudelem) {
     if (isdefined(hudelem)) {
         /#
             hudelem destroy();
@@ -283,14 +283,14 @@ function function_b13f931a(hudelem) {
 // Checksum 0x20103fe6, Offset: 0x1100
 // Size: 0x4e
 function cleanuppropcontrolshud() {
-    self.var_8060636f = undefined;
-    self.var_aa57a992 = undefined;
-    self.var_4901798a = undefined;
-    self.var_a4da95c7 = undefined;
-    self.var_5478a045 = undefined;
-    self.var_65efe125 = undefined;
-    self.var_a93978b9 = undefined;
-    self.var_e8c312d7 = undefined;
+    self.changepropkey = undefined;
+    self.spinpropkey = undefined;
+    self.lockpropkey = undefined;
+    self.matchslopekey = undefined;
+    self.abilitykey = undefined;
+    self.zoomkey = undefined;
+    self.spectatekey = undefined;
+    self.clonekey = undefined;
     self.var_8e3b5c8c = undefined;
 }
 
@@ -298,7 +298,7 @@ function cleanuppropcontrolshud() {
 // Params 0, eflags: 0x0
 // Checksum 0x131b0f2b, Offset: 0x1158
 // Size: 0x1ac
-function function_ec04079a() {
+function updatetextongamepadchange() {
     level endon(#"game_ended");
     self endon(#"disconnect", #"death");
     if (level.console) {
@@ -311,19 +311,19 @@ function function_ec04079a() {
         if (var_4084aa7 != var_8671d17) {
             var_8671d17 = var_4084aa7;
             if (var_4084aa7) {
-                if (!(isdefined(self.var_98d22839) && self.var_98d22839)) {
-                    self.var_a4da95c7.label = #"hash_7f59350f5f223501";
+                if (!(isdefined(self.slopelocked) && self.slopelocked)) {
+                    self.matchslopekey.label = #"hash_7f59350f5f223501";
                 } else {
-                    self.var_a4da95c7.label = #"hash_6ca8e1ea720ba9f";
+                    self.matchslopekey.label = #"hash_6ca8e1ea720ba9f";
                 }
-                self.var_aa57a992.label = #"mp_ph_spin";
+                self.spinpropkey.label = #"mp_ph_spin";
             } else {
-                if (!(isdefined(self.var_98d22839) && self.var_98d22839)) {
-                    self.var_a4da95c7.label = #"hash_4c7fbb5c1ccd5107";
+                if (!(isdefined(self.slopelocked) && self.slopelocked)) {
+                    self.matchslopekey.label = #"hash_4c7fbb5c1ccd5107";
                 } else {
-                    self.var_a4da95c7.label = #"hash_3cd8ecbf9f39b3e9";
+                    self.matchslopekey.label = #"hash_3cd8ecbf9f39b3e9";
                 }
-                self.var_aa57a992.label = #"hash_39e61050ab8d325e";
+                self.spinpropkey.label = #"hash_39e61050ab8d325e";
             }
         }
         waitframe(1);
@@ -341,11 +341,11 @@ function propinputwatch() {
         return;
     }
     self.lock = 0;
-    self.var_98d22839 = 0;
+    self.slopelocked = 0;
     prop::function_241f7953();
-    self thread function_68d1fd31();
-    self thread function_be19060b();
-    self.var_960f723f = 1;
+    self thread propmoveunlock();
+    self thread propcamerazoom();
+    self.debugnextpropindex = 1;
     while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"lock", #"spin", #"changeprop", #"settoslope", #"propability", #"cloneprop", #"hide");
@@ -355,7 +355,7 @@ function propinputwatch() {
         }
         waittillframeend();
         if (msg == "lock") {
-            self function_22f362d7();
+            self proplockunlock();
             continue;
         }
         if (msg == "spin") {
@@ -367,7 +367,7 @@ function propinputwatch() {
             continue;
         }
         if (msg == "setToSlope") {
-            self function_e8d4d2b();
+            self propmatchslope();
             continue;
         }
         if (msg == "propAbility") {
@@ -375,7 +375,7 @@ function propinputwatch() {
             continue;
         }
         if (msg == "cloneProp") {
-            self function_88cea693();
+            self propclonepower();
             continue;
         }
         if (msg == "hide") {
@@ -388,7 +388,7 @@ function propinputwatch() {
 // Params 0, eflags: 0x0
 // Checksum 0x6d42ecd, Offset: 0x1598
 // Size: 0x54
-function function_22f362d7() {
+function proplockunlock() {
     if (self ismantling()) {
         return;
     }
@@ -407,8 +407,8 @@ function function_9bc7ac53() {
     self.propent unlink();
     self.propent.angles = self.propent.angles + vectorscale((0, 1, 0), 45);
     self.propent.origin = self.propanchor.origin;
-    if (self.var_98d22839 && isdefined(self.lock) && self.lock) {
-        self.propent function_3875c0fc(self.prop);
+    if (self.slopelocked && isdefined(self.lock) && self.lock) {
+        self.propent set_pitch_roll_for_ground_normal(self.prop);
     }
     self.propent linkto(self.propanchor);
 }
@@ -417,15 +417,15 @@ function function_9bc7ac53() {
 // Params 1, eflags: 0x0
 // Checksum 0xde69bb17, Offset: 0x16d8
 // Size: 0x9a
-function function_50f021a8(inplayer) {
+function registerpreviousprop(inplayer) {
     var_d8171b71 = 3;
-    if (!isdefined(inplayer.var_a8b38d70)) {
-        inplayer.var_a8b38d70 = 0;
+    if (!isdefined(inplayer.usedpropsindex)) {
+        inplayer.usedpropsindex = 0;
     }
-    inplayer.usedprops[inplayer.var_a8b38d70] = inplayer.prop.info;
-    inplayer.var_a8b38d70++;
-    if (inplayer.var_a8b38d70 >= var_d8171b71) {
-        inplayer.var_a8b38d70 = 0;
+    inplayer.usedprops[inplayer.usedpropsindex] = inplayer.prop.info;
+    inplayer.usedpropsindex++;
+    if (inplayer.usedpropsindex >= var_d8171b71) {
+        inplayer.usedpropsindex = 0;
     }
 }
 
@@ -434,29 +434,29 @@ function function_50f021a8(inplayer) {
 // Checksum 0x9ad276d0, Offset: 0x1780
 // Size: 0x2cc
 function propchange() {
-    if (!self function_a70825e1()) {
+    if (!self prophaschangesleft()) {
         return;
     }
     if (!level.console) {
         var_17d6ea37 = 300;
-        if (isdefined(self.var_5764318b) && gettime() - self.var_5764318b < var_17d6ea37) {
+        if (isdefined(self.lastpropchangetime) && gettime() - self.lastpropchangetime < var_17d6ea37) {
             return;
         }
-        self.var_5764318b = gettime();
+        self.lastpropchangetime = gettime();
     }
     self notify(#"changed_prop");
-    function_50f021a8(self);
+    registerpreviousprop(self);
     self.prop.info = prop::getnextprop(self);
     /#
         if (getdvarint(#"hash_1463efb6c1a55cd3", 0) != 0) {
-            self.prop.info = level.proplist[self.var_960f723f];
-            self.var_960f723f++;
-            if (self.var_960f723f >= level.proplist.size) {
-                self.var_960f723f = 0;
+            self.prop.info = level.proplist[self.debugnextpropindex];
+            self.debugnextpropindex++;
+            if (self.debugnextpropindex >= level.proplist.size) {
+                self.debugnextpropindex = 0;
             }
         }
     #/
-    self function_c2e4a720(self.prop.info);
+    self propchangeto(self.prop.info);
     if (level.phsettings.var_bca517c5) {
         playfxontag("player/fx_plyr_clone_reaper_appear", self.prop, "tag_origin");
     }
@@ -465,22 +465,22 @@ function propchange() {
     self setnewabilitycount(self.currentability);
     self setnewabilitycount("CLONE");
     if (prop::useprophudserver()) {
-        self.var_5478a045.alpha = 1;
-        self.var_e8c312d7.alpha = 1;
+        self.abilitykey.alpha = 1;
+        self.clonekey.alpha = 1;
     }
     /#
         if (getdvarint(#"hash_1463efb6c1a55cd3", 0) != 0) {
             return;
         }
     #/
-    self function_e1db1de3();
+    self propdeductchange();
 }
 
 // Namespace prop_controls/_prop_controls
 // Params 0, eflags: 0x0
 // Checksum 0x22e5723a, Offset: 0x1a58
 // Size: 0x32
-function function_a70825e1() {
+function prophaschangesleft() {
     /#
         if (isdefined(self.var_f18a4260) && self.var_f18a4260) {
             return true;
@@ -493,7 +493,7 @@ function function_a70825e1() {
 // Params 0, eflags: 0x0
 // Checksum 0x5594c398, Offset: 0x1a98
 // Size: 0x44
-function function_e1db1de3() {
+function propdeductchange() {
     /#
         if (isdefined(self.var_f18a4260) && self.var_f18a4260) {
             return;
@@ -509,9 +509,9 @@ function function_e1db1de3() {
 function propsetchangesleft(newvalue) {
     self.changesleft = newvalue;
     if (prop::useprophudserver()) {
-        self.var_8060636f setvalue(self.changesleft);
+        self.changepropkey setvalue(self.changesleft);
         if (self.changesleft <= 0) {
-            self.var_8060636f.alpha = 0.5;
+            self.changepropkey.alpha = 0.5;
         }
         self clientfield::set_player_uimodel("hudItems.numPropChanges", self.changesleft);
     }
@@ -521,7 +521,7 @@ function propsetchangesleft(newvalue) {
 // Params 1, eflags: 0x0
 // Checksum 0x226d8755, Offset: 0x1b88
 // Size: 0x3ec
-function function_c2e4a720(info) {
+function propchangeto(info) {
     self.prop.info = info;
     self.propinfo = info;
     if (level.phsettings.var_bca517c5) {
@@ -551,8 +551,8 @@ function function_c2e4a720(info) {
         self.angles = var_fd85abcf;
     }
     self.prop linkto(self.propent);
-    if (self.var_98d22839 && isdefined(self.lock) && self.lock) {
-        self.propent function_3875c0fc(self.prop);
+    if (self.slopelocked && isdefined(self.lock) && self.lock) {
+        self.propent set_pitch_roll_for_ground_normal(self.prop);
     }
     self.propent linkto(self.propanchor);
     self.thirdpersonrange = info.proprange;
@@ -567,24 +567,24 @@ function function_c2e4a720(info) {
 // Params 0, eflags: 0x0
 // Checksum 0x426196de, Offset: 0x1f80
 // Size: 0x22a
-function function_e8d4d2b() {
-    if (!(isdefined(self.var_98d22839) && self.var_98d22839)) {
-        self.var_98d22839 = 1;
+function propmatchslope() {
+    if (!(isdefined(self.slopelocked) && self.slopelocked)) {
+        self.slopelocked = 1;
         if (isdefined(self.lock) && self.lock) {
             self.propent unlink();
-            self.propent function_3875c0fc(self.prop);
+            self.propent set_pitch_roll_for_ground_normal(self.prop);
             self.propent linkto(self.propanchor);
         }
         if (prop::useprophudserver()) {
             if (self is_player_gamepad_enabled()) {
-                self.var_a4da95c7.label = #"hash_6ca8e1ea720ba9f";
+                self.matchslopekey.label = #"hash_6ca8e1ea720ba9f";
             } else {
-                self.var_a4da95c7.label = #"hash_3cd8ecbf9f39b3e9";
+                self.matchslopekey.label = #"hash_3cd8ecbf9f39b3e9";
             }
         }
         return;
     }
-    self.var_98d22839 = 0;
+    self.slopelocked = 0;
     if (isdefined(self.lock) && self.lock) {
         self.propent unlink();
         self.propent.angles = (self.angles[0], self.propent.angles[1], self.angles[2]);
@@ -593,10 +593,10 @@ function function_e8d4d2b() {
     }
     if (prop::useprophudserver()) {
         if (self is_player_gamepad_enabled()) {
-            self.var_a4da95c7.label = #"hash_7f59350f5f223501";
+            self.matchslopekey.label = #"hash_7f59350f5f223501";
             return;
         }
-        self.var_a4da95c7.label = #"hash_4c7fbb5c1ccd5107";
+        self.matchslopekey.label = #"hash_4c7fbb5c1ccd5107";
     }
 }
 
@@ -608,9 +608,9 @@ function propability() {
     if (!level flag::get("props_hide_over")) {
         return;
     }
-    if (self function_5e6d610b()) {
-        self thread function_bc073c8d();
-        self function_e13c27d7();
+    if (self prophasflashesleft()) {
+        self thread flashenemies();
+        self propdeductflash();
     }
 }
 
@@ -618,10 +618,10 @@ function propability() {
 // Params 0, eflags: 0x0
 // Checksum 0x99c7ee8, Offset: 0x2230
 // Size: 0x44
-function function_88cea693() {
-    if (function_39049635()) {
+function propclonepower() {
+    if (prophasclonesleft()) {
         self thread cloneprop();
-        self thread function_41da91d7();
+        self thread propdeductclonechange();
     }
 }
 
@@ -629,7 +629,7 @@ function function_88cea693() {
 // Params 0, eflags: 0x0
 // Checksum 0x10676e4f, Offset: 0x2280
 // Size: 0x32
-function function_39049635() {
+function prophasclonesleft() {
     /#
         if (isdefined(self.var_7ddbf78d) && self.var_7ddbf78d) {
             return true;
@@ -642,27 +642,27 @@ function function_39049635() {
 // Params 0, eflags: 0x0
 // Checksum 0x5d670e89, Offset: 0x22c0
 // Size: 0x44
-function function_41da91d7() {
+function propdeductclonechange() {
     /#
         if (isdefined(self.var_7ddbf78d) && self.var_7ddbf78d) {
             return;
         }
     #/
-    function_85a28bcc(self.clonesleft - 1);
+    propsetclonesleft(self.clonesleft - 1);
 }
 
 // Namespace prop_controls/_prop_controls
 // Params 1, eflags: 0x0
 // Checksum 0x37211b16, Offset: 0x2310
 // Size: 0xdc
-function function_85a28bcc(newvalue) {
+function propsetclonesleft(newvalue) {
     self.clonesleft = newvalue;
-    if (prop::useprophudserver() && isdefined(self) && isalive(self) && isdefined(self.var_e8c312d7)) {
-        self.var_e8c312d7 setvalue(self.clonesleft);
+    if (prop::useprophudserver() && isdefined(self) && isalive(self) && isdefined(self.clonekey)) {
+        self.clonekey setvalue(self.clonesleft);
         if (self.clonesleft <= 0) {
-            self.var_e8c312d7.alpha = 0.5;
+            self.clonekey.alpha = 0.5;
         } else {
-            self.var_e8c312d7.alpha = 1;
+            self.clonekey.alpha = 1;
         }
         self clientfield::set_player_uimodel("hudItems.numPropDecoys", self.clonesleft);
     }
@@ -672,7 +672,7 @@ function function_85a28bcc(newvalue) {
 // Params 0, eflags: 0x0
 // Checksum 0x2129fe4e, Offset: 0x23f8
 // Size: 0x32
-function function_5e6d610b() {
+function prophasflashesleft() {
     /#
         if (isdefined(self.var_d0e95c44) && self.var_d0e95c44) {
             return true;
@@ -685,25 +685,25 @@ function function_5e6d610b() {
 // Params 0, eflags: 0x0
 // Checksum 0xe39a22e4, Offset: 0x2438
 // Size: 0x44
-function function_e13c27d7() {
+function propdeductflash() {
     /#
         if (isdefined(self.var_d0e95c44) && self.var_d0e95c44) {
             return;
         }
     #/
-    function_59c73c21(self.abilityleft - 1);
+    propsetflashesleft(self.abilityleft - 1);
 }
 
 // Namespace prop_controls/_prop_controls
 // Params 1, eflags: 0x0
 // Checksum 0x2bbd444f, Offset: 0x2488
 // Size: 0x94
-function function_59c73c21(newvalue) {
+function propsetflashesleft(newvalue) {
     self.abilityleft = newvalue;
     if (prop::useprophudserver()) {
-        self.var_5478a045 setvalue(self.abilityleft);
+        self.abilitykey setvalue(self.abilityleft);
         if (self.abilityleft <= 0) {
-            self.var_5478a045.alpha = 0.5;
+            self.abilitykey.alpha = 0.5;
         }
         self clientfield::set_player_uimodel("hudItems.numPropConcusses", self.abilityleft);
     }
@@ -713,7 +713,7 @@ function function_59c73c21(newvalue) {
 // Params 1, eflags: 0x0
 // Checksum 0x7c3e1cf0, Offset: 0x2528
 // Size: 0x1ba
-function function_3875c0fc(traceignore) {
+function set_pitch_roll_for_ground_normal(traceignore) {
     groundnormal = get_ground_normal(traceignore, 0);
     if (!isdefined(groundnormal)) {
         return;
@@ -834,7 +834,7 @@ function get_ground_normal(traceignore, debug) {
 // Params 0, eflags: 0x0
 // Checksum 0x6732728b, Offset: 0x2cb0
 // Size: 0x192
-function function_68d1fd31() {
+function propmoveunlock() {
     self endon(#"death", #"disconnect");
     level endon(#"game_ended");
     var_554b8919 = 0;
@@ -873,7 +873,7 @@ function unlockprop() {
     self resetdoublejumprechargetime();
     offset = self.propanchor.origin - self.origin;
     offsetangles = self.propanchor.angles - self.angles;
-    if (self.var_98d22839) {
+    if (self.slopelocked) {
         self.propent unlink();
         self.propent.angles = (self.angles[0], self.propent.angles[1], self.angles[2]);
         self.propent.origin = self.propanchor.origin;
@@ -888,8 +888,8 @@ function unlockprop() {
         }
         self.lock = 0;
         if (prop::useprophudserver()) {
-            self.var_4901798a.label = #"mp_ph_lock";
-            self thread function_74566016();
+            self.lockpropkey.label = #"mp_ph_lock";
+            self thread flashlockpropkey();
         }
     }
 }
@@ -905,17 +905,17 @@ function lockprop() {
     self.propanchor unlink();
     self.propanchor.origin = self.origin;
     self playerlinkto(self.propanchor);
-    if (self.var_98d22839) {
+    if (self.slopelocked) {
         self.propent unlink();
-        self.propent function_3875c0fc(self.prop);
+        self.propent set_pitch_roll_for_ground_normal(self.prop);
         self.propent.origin = self.origin;
         self.propent linkto(self.propanchor);
     }
     self.lock = 1;
     self notify(#"locked");
     if (prop::useprophudserver()) {
-        self.var_4901798a.label = #"mp_ph_locked";
-        self thread function_74566016();
+        self.lockpropkey.label = #"mp_ph_locked";
+        self thread flashlockpropkey();
     }
 }
 
@@ -923,19 +923,19 @@ function lockprop() {
 // Params 0, eflags: 0x0
 // Checksum 0xd7e8357d, Offset: 0x31c0
 // Size: 0xf6
-function function_74566016() {
+function flashlockpropkey() {
     self endon(#"death", #"disconnect");
     level endon(#"game_ended");
-    self notify(#"hash_2450f4c64d40469e");
-    self endon(#"hash_2450f4c64d40469e");
-    if (!isdefined(self.var_4901798a.var_8efb654e)) {
-        self.var_4901798a.var_8efb654e = 1;
+    self notify(#"flashlockpropkey");
+    self endon(#"flashlockpropkey");
+    if (!isdefined(self.lockpropkey.startfontscale)) {
+        self.lockpropkey.startfontscale = 1;
     }
-    newscale = self.var_4901798a.var_8efb654e + 0.75;
-    self.var_4901798a.fontscale = newscale;
+    newscale = self.lockpropkey.startfontscale + 0.75;
+    self.lockpropkey.fontscale = newscale;
     wait(0.1);
-    if (isdefined(self.var_4901798a)) {
-        self.var_4901798a.fontscale = self.var_4901798a.var_8efb654e;
+    if (isdefined(self.lockpropkey)) {
+        self.lockpropkey.fontscale = self.lockpropkey.startfontscale;
     }
 }
 
@@ -1082,7 +1082,7 @@ function canlock() {
 // Params 0, eflags: 0x0
 // Checksum 0xbf4d826f, Offset: 0x3c08
 // Size: 0x1c0
-function function_be19060b() {
+function propcamerazoom() {
     self endon(#"death", #"disconnect");
     level endon(#"game_ended");
     var_fc464c9b = 10;
@@ -1117,10 +1117,10 @@ function function_be19060b() {
 // Params 0, eflags: 0x0
 // Checksum 0x70fb9d38, Offset: 0x3dd0
 // Size: 0x82
-function function_138e42e4() {
+function setnewabilityhud() {
     switch (self.currentability) {
     case #"flash":
-        self.var_5478a045.label = #"mp_ph_flash";
+        self.abilitykey.label = #"mp_ph_flash";
         break;
     default:
         /#
@@ -1140,13 +1140,13 @@ function setnewabilitycount(var_8c8fd413, count) {
         if (!isdefined(count)) {
             count = level.phsettings.propnumflashes;
         }
-        function_59c73c21(count);
+        propsetflashesleft(count);
         break;
     case #"clone":
         if (!isdefined(count)) {
             count = level.phsettings.propnumclones;
         }
-        function_85a28bcc(count);
+        propsetclonesleft(count);
         break;
     default:
         /#
@@ -1170,7 +1170,7 @@ function endondeath() {
 // Params 1, eflags: 0x0
 // Checksum 0x9e5e107d, Offset: 0x3f90
 // Size: 0xbc
-function function_399c6db1(var_c8c9bf0f) {
+function flashtheprops(var_c8c9bf0f) {
     level endon(#"game_ended");
     var_c8c9bf0f endon(#"disconnect");
     self thread endondeath();
@@ -1181,14 +1181,14 @@ function function_399c6db1(var_c8c9bf0f) {
     if (!isdefined(var_c8c9bf0f)) {
         return;
     }
-    function_bc073c8d(var_c8c9bf0f, position);
+    flashenemies(var_c8c9bf0f, position);
 }
 
 // Namespace prop_controls/_prop_controls
 // Params 2, eflags: 0x0
 // Checksum 0xb88bf913, Offset: 0x4058
 // Size: 0x10e
-function function_bc073c8d(var_c8c9bf0f = self, position = self.origin) {
+function flashenemies(var_c8c9bf0f = self, position = self.origin) {
     fwd = anglestoforward(var_c8c9bf0f getplayerangles());
     fwd = vectornormalize((fwd[0], fwd[1], 0));
     var_ec24ae95 = fwd * 60;
@@ -1200,7 +1200,7 @@ function function_bc073c8d(var_c8c9bf0f = self, position = self.origin) {
 // Params 0, eflags: 0x0
 // Checksum 0xeb6e1ea2, Offset: 0x4170
 // Size: 0x1ba
-function function_fdb58854() {
+function deletepropsifatmax() {
     var_5c6eb952 = 9;
     if (level.phsettings.var_5b677bf1) {
         var_5c6eb952 = 27;
@@ -1246,7 +1246,7 @@ function cloneprop() {
     if (!isdefined(self.propclones)) {
         self.propclones = [];
     } else {
-        function_fdb58854();
+        deletepropsifatmax();
     }
     var_6e55957c = spawn("script_model", self.prop.origin);
     var_6e55957c.targetname = "propClone";
@@ -1323,17 +1323,17 @@ function function_d1a1cc8d() {
 // Params 3, eflags: 0x0
 // Checksum 0x68f2db73, Offset: 0x4820
 // Size: 0x212
-function function_d8b858d4(var_2953b091, var_522acf74, var_abbedf2e) {
+function function_d8b858d4(var_2953b091, fade_in_time, fade_out_time) {
     level endon(#"game_ended");
     self endon(#"disconnect");
     if (!isdefined(var_2953b091)) {
         var_2953b091 = 5;
     }
-    if (!isdefined(var_522acf74)) {
-        var_522acf74 = 1;
+    if (!isdefined(fade_in_time)) {
+        fade_in_time = 1;
     }
-    if (!isdefined(var_abbedf2e)) {
-        var_abbedf2e = 1;
+    if (!isdefined(fade_out_time)) {
+        fade_out_time = 1;
     }
     overlay = spawnstruct();
     overlay.foreground = 0;
@@ -1345,19 +1345,19 @@ function function_d8b858d4(var_2953b091, var_522acf74, var_abbedf2e) {
     overlay.vertalign = "fullscreen";
     overlay.alpha = 0;
     waitframe(1);
-    if (var_522acf74 < 0) {
+    if (fade_in_time < 0) {
     }
     overlay.alpha = 1;
-    self prop::function_1ee6f124(var_522acf74);
+    self prop::function_1ee6f124(fade_in_time);
     self useservervisionset(1);
-    self setvisionsetforplayer("blackout_ph", var_522acf74);
-    self prop::function_1ee6f124(var_2953b091 - var_abbedf2e - var_522acf74);
-    if (var_abbedf2e < 0) {
+    self setvisionsetforplayer("blackout_ph", fade_in_time);
+    self prop::function_1ee6f124(var_2953b091 - fade_out_time - fade_in_time);
+    if (fade_out_time < 0) {
     }
     overlay.alpha = 0;
     self useservervisionset(0);
-    self setvisionsetforplayer("blackout_ph", var_abbedf2e);
-    self prop::function_1ee6f124(var_abbedf2e);
+    self setvisionsetforplayer("blackout_ph", fade_out_time);
+    self prop::function_1ee6f124(fade_out_time);
     waitframe(1);
 }
 
@@ -1550,7 +1550,7 @@ function function_d08dcbaf(issolid) {
             continue;
         }
         if (issolid) {
-            player setcontents(level.phsettings.var_b5f21379);
+            player setcontents(level.phsettings.playercontents);
             player solid();
             continue;
         }
@@ -1569,7 +1569,7 @@ function function_44a27dd6(issolid) {
             continue;
         }
         if (issolid) {
-            player setcontents(level.phsettings.var_b5f21379);
+            player setcontents(level.phsettings.playercontents);
             player solid();
             continue;
         }
@@ -1607,7 +1607,7 @@ function function_791579c9(index) {
 // Params 2, eflags: 0x0
 // Checksum 0x78c68793, Offset: 0x58b8
 // Size: 0x2a
-function function_b9c3c08a(hudelem, var_9c73f6bb) {
+function safesetalpha(hudelem, var_9c73f6bb) {
     if (isdefined(hudelem)) {
         hudelem.alpha = var_9c73f6bb;
     }
@@ -1624,16 +1624,16 @@ function propabilitykeysvisible(visible, override) {
         alphavalue = 0;
     }
     if (prop::useprophudserver() || isdefined(override) && override) {
-        function_b9c3c08a(self.var_8060636f, alphavalue);
-        function_b9c3c08a(self.var_aa57a992, alphavalue);
-        function_b9c3c08a(self.var_4901798a, alphavalue);
-        function_b9c3c08a(self.var_a4da95c7, alphavalue);
-        function_b9c3c08a(self.var_5478a045, alphavalue);
-        function_b9c3c08a(self.var_e8c312d7, alphavalue);
-        function_b9c3c08a(self.var_65efe125, alphavalue);
-        function_b9c3c08a(self.var_8e3b5c8c, alphavalue);
+        safesetalpha(self.changepropkey, alphavalue);
+        safesetalpha(self.spinpropkey, alphavalue);
+        safesetalpha(self.lockpropkey, alphavalue);
+        safesetalpha(self.matchslopekey, alphavalue);
+        safesetalpha(self.abilitykey, alphavalue);
+        safesetalpha(self.clonekey, alphavalue);
+        safesetalpha(self.zoomkey, alphavalue);
+        safesetalpha(self.var_8e3b5c8c, alphavalue);
         if (!(isdefined(level.nopropsspectate) && level.nopropsspectate)) {
-            function_b9c3c08a(self.var_a93978b9, alphavalue);
+            safesetalpha(self.spectatekey, alphavalue);
         }
     }
 }

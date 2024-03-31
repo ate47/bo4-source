@@ -276,7 +276,7 @@ function private is_spawn_trapped(team) {
 // Size: 0x5e
 function private function_e1a7c3d9(spawn_origin, spawn_angles) {
     self predictspawnpoint(spawn_origin, spawn_angles);
-    self.predicted_spawn_point = {#angles:spawn_angles, #origin:spawn_origin};
+    self.predicted_spawn_point = {#origin:spawn_origin, #angles:spawn_angles};
 }
 
 // Namespace spawning/spawning_shared
@@ -475,7 +475,7 @@ function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn
             var_c1c41f09 = [[ level.var_abb55703 ]](player);
         }
         if (sessionmodeismultiplayergame()) {
-            mpspawnpointsused = {#var_50641dd5:var_c1c41f09, #z:spawn_point[#"origin"][2], #y:spawn_point[#"origin"][1], #x:spawn_point[#"origin"][0], #var_c734ddf2:getplayerspawnid(player), #reason:"point used"};
+            mpspawnpointsused = {#reason:"point used", #var_c734ddf2:getplayerspawnid(player), #x:spawn_point[#"origin"][0], #y:spawn_point[#"origin"][1], #z:spawn_point[#"origin"][2], #var_50641dd5:var_c1c41f09};
             function_92d1707f(#"hash_608dde355fff78f5", mpspawnpointsused);
         }
     }

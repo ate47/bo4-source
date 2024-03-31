@@ -22,8 +22,8 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0xed4e8a9b, Offset: 0x1c0
 // Size: 0xbc
 function function_9c8b5737() {
-    self.lightarmor = {#var_cdeeec29:1, #var_2274e560:1, #max:0, #amount:0};
-    self.var_59a874a7 = {#var_cdeeec29:1, #var_2274e560:1};
+    self.lightarmor = {#amount:0, #max:0, #var_2274e560:1, #var_cdeeec29:1};
+    self.var_59a874a7 = {#var_2274e560:1, #var_cdeeec29:1};
     self set_armor(0, 0, 0, 1, 0);
 }
 

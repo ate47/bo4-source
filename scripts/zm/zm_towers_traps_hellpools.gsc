@@ -402,7 +402,7 @@ function function_db9410fa(e_trap) {
         self clientfield::set("acid_trap_death_fx", 1);
         wait(0.75);
         if (isalive(self)) {
-            level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+            level notify(#"trap_kill", {#e_victim:self, #e_trap:e_trap});
             self dodamage(self.health + 666, self.origin, e_trap);
         }
     }

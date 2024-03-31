@@ -218,7 +218,7 @@ function function_a3059f6(e_trap) {
         n_damage = 20000;
     }
     if (self.health < n_damage) {
-        level notify(#"trap_kill", {#e_trap:e_trap, #victim:self});
+        level notify(#"trap_kill", {#victim:self, #e_trap:e_trap});
         if (self.archetype === #"werewolf" && isdefined(e_trap.activated_by_player)) {
             e_trap.activated_by_player notify(#"hash_510f9114e7a6300c");
         }

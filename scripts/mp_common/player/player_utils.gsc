@@ -80,7 +80,7 @@ function function_14e61d05() {
 // Checksum 0x7e817675, Offset: 0x4c0
 // Size: 0x64
 function function_cf3aa03d(func, threaded = 1) {
-    array::add(level.var_da2045d0, {#threaded:threaded, #callback:func});
+    array::add(level.var_da2045d0, {#callback:func, #threaded:threaded});
 }
 
 // Namespace player/player_utils
@@ -88,6 +88,6 @@ function function_cf3aa03d(func, threaded = 1) {
 // Checksum 0x3d5c16bf, Offset: 0x530
 // Size: 0x64
 function function_3c5cc656(func, threaded = 1) {
-    array::add(level.var_fa66fada, {#threaded:threaded, #callback:func});
+    array::add(level.var_fa66fada, {#callback:func, #threaded:threaded});
 }
 

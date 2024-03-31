@@ -440,7 +440,7 @@ function scoreeventplayerkill(data, time) {
             }
             if (isdefined(victimheroability)) {
                 attacker notify(#"hero_shutdown", {#gadget:victimheroability});
-                attacker notify(#"hero_shutdown_gadget", {#victim:victim, #gadget:victimheroability});
+                attacker notify(#"hero_shutdown_gadget", {#gadget:victimheroability, #victim:victim});
             }
         }
         if (victimlastvisionpulsedtime != 0 && victimlastvisionpulsedtime > time - level.weaponvisionpulse.var_9d776ba6) {
@@ -511,7 +511,7 @@ function scoreeventplayerkill(data, time) {
         }
         if (victimheroabilityactive && isdefined(victimheroability)) {
             attacker notify(#"hero_shutdown", {#gadget:victimheroability});
-            attacker notify(#"hero_shutdown_gadget", {#victim:victim, #gadget:victimheroability});
+            attacker notify(#"hero_shutdown_gadget", {#gadget:victimheroability, #victim:victim});
             switch (victimheroability.name) {
             case #"gadget_armor":
                 processscoreevent(#"kill_enemy_who_has_powerarmor", attacker, victim, weapon);
@@ -532,16 +532,16 @@ function scoreeventplayerkill(data, time) {
             }
         } else if (isdefined(victimpowerarmorlasttookdamagetime) && time - victimpowerarmorlasttookdamagetime <= 3000) {
             attacker notify(#"hero_shutdown", {#gadget:victimheroability});
-            attacker notify(#"hero_shutdown_gadget", {#victim:victim, #gadget:victimheroability});
+            attacker notify(#"hero_shutdown_gadget", {#gadget:victimheroability, #victim:victim});
             processscoreevent(#"kill_enemy_who_has_powerarmor", attacker, victim, weapon);
             attacker contracts::player_contract_event(#"killed_hero_ability_enemy");
         }
         if (isdefined(data.victimweapon) && data.victimweapon.isheavyweapon) {
             attacker notify(#"heavy_shutdown", {#weapon:data.victimweapon});
-            attacker notify(#"heavy_shutdown_gadget", {#victim:victim, #weapon:data.victimweapon});
+            attacker notify(#"heavy_shutdown_gadget", {#weapon:data.victimweapon, #victim:victim});
         } else if (isdefined(victim.heavyweapon) && isdefined(victimgadgetpower) && victimgadgetwasactivelastdamage === 1 && victimgadgetpower < 100) {
             attacker notify(#"heavy_shutdown", {#weapon:victim.heavyweapon});
-            attacker notify(#"heavy_shutdown_gadget", {#victim:victim, #weapon:victim.heavyweapon});
+            attacker notify(#"heavy_shutdown_gadget", {#weapon:victim.heavyweapon, #victim:victim});
         }
         if (attackerheroabilityactive && isdefined(attackerheroability)) {
             abilitytocheck = undefined;

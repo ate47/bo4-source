@@ -187,7 +187,7 @@ function register_slot_watcher_override(str_equipment, func_slot_watcher_overrid
 // Size: 0x66
 function is_included(equipment) {
     if (!isdefined(level.zombie_include_equipment)) {
-        return 0;
+        return false;
     }
     if (isstring(equipment)) {
         equipment = getweapon(equipment);
@@ -735,7 +735,7 @@ function register_for_level(weaponname) {
 // Size: 0x3e
 function is_equipment(weapon) {
     if (!isdefined(weapon) || !isdefined(level.zombie_equipment_list)) {
-        return 0;
+        return false;
     }
     return isdefined(level.zombie_equipment_list[weapon]);
 }

@@ -98,7 +98,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate = 1, n_blend_
     }
     /#
         self.var_80c69db6 = "<unknown string>";
-        self.var_6c4bb19 = {#v_angles_or_tag:v_angles_or_tag, #v_origin_or_ent:v_origin_or_ent, #animation:animation};
+        self.var_6c4bb19 = {#animation:animation, #v_origin_or_ent:v_origin_or_ent, #v_angles_or_tag:v_angles_or_tag};
         level flagsys::clear("<unknown string>");
     #/
     self thread handle_notetracks();

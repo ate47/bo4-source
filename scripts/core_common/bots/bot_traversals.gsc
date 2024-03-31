@@ -197,7 +197,7 @@ function analyze(params) {
     /#
         if (self should_record("<unknown string>")) {
             var_47d2875c = (params.targetpos[0], params.targetpos[1], params.starttrace[2]);
-            var_b03d274a = params.dist2d < 30 ? (1, 0, 0) : (0, 1, 0);
+            var_b03d274a = params.dist2d < 30 ? (0, 1, 0) : (1, 0, 0);
             recordline(params.starttrace, var_47d2875c, var_b03d274a, "<unknown string>", self);
             recordsphere(var_47d2875c, 3, var_b03d274a, "<unknown string>", self);
             recordsphere(params.starttrace, 3, (0, 1, 0), "<unknown string>", self);

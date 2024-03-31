@@ -111,7 +111,7 @@ function init_elevator(var_fd98a47c) {
             elevator.button = button;
             elevator.var_e87f4c9 = button.origin - elevator.origin;
             elevator.var_8273f574 = dynent;
-            elevator.var_8ba5c861 = dynent;
+            elevator.currentfloor = dynent;
             continue;
         }
         elevator.var_ec68615b = dynent;
@@ -373,9 +373,9 @@ function elevator_move(elevator) {
     elevator playloopsound("evt_elevator_move", 0);
     elevator moveto(position.origin, 10, 0.5, 0.5);
     function_e2a06860(elevator.var_d98394f7, 1);
-    function_e2a06860(elevator.var_8ba5c861, 1);
-    var_d98394f7 = elevator.var_8ba5c861;
-    elevator.var_8ba5c861 = elevator.var_d98394f7;
+    function_e2a06860(elevator.currentfloor, 1);
+    var_d98394f7 = elevator.currentfloor;
+    elevator.currentfloor = elevator.var_d98394f7;
     elevator.var_d98394f7 = var_d98394f7;
     elevator waittill(#"movedone");
     elevator playsound("evt_elevator_stop");

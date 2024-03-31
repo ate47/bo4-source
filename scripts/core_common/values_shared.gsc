@@ -192,7 +192,7 @@ function private _push_value(str_id, str_name, value) {
     if (!isdefined(self.values[str_name])) {
         self.values[str_name] = [];
     }
-    arrayinsert(self.values[str_name], {#value:value, #str_id:str_id}, 0);
+    arrayinsert(self.values[str_name], {#str_id:str_id, #value:value}, 0);
 }
 
 // Namespace val/values_shared

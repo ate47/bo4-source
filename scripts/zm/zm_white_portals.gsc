@@ -1142,13 +1142,13 @@ function function_35babccd(ent) {
         ent.floor_num = 1;
     }
     index = ent.floor_num - 1;
-    var_4e37b34 = level.var_b4fcac11.size;
-    for (n = 0; n < var_4e37b34; n++) {
+    floor_count = level.var_b4fcac11.size;
+    for (n = 0; n < floor_count; n++) {
         if (ent istouching(level.var_b4fcac11[index])) {
             ent.floor_num = index + 1;
             return ent.floor_num;
         }
-        index = (index + 1) % var_4e37b34;
+        index = (index + 1) % floor_count;
     }
     /#
         println("<unknown string>");

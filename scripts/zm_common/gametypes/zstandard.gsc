@@ -641,7 +641,7 @@ function function_261d5f79(params, ai_killed) {
     } else if (isdefined(ai_killed) && !(isdefined(ai_killed.nuked) && ai_killed.nuked)) {
         self.var_30c56c16 = 0;
     }
-    self notify(#"zm_arcade_kill", {#params:params, #ai_killed:ai_killed});
+    self notify(#"zm_arcade_kill", {#ai_killed:ai_killed, #params:params});
 }
 
 // Namespace zstandard/zstandard

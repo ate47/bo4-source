@@ -97,7 +97,7 @@ function function_15b283ea() {
     speed_sq = lengthsquared(velocity);
     player_dir = undefined;
     if (speed_sq >= getdvarfloat(#"hash_6d953db31bc657cc", 30625)) {
-        player_dir = {#speed_sq:speed_sq, #velocity:velocity, #player:self};
+        player_dir = {#player:self, #velocity:velocity, #speed_sq:speed_sq};
     }
     self.var_dcdf2aec = gettime();
     self.var_53df2c57 = player_dir;
@@ -148,7 +148,7 @@ function function_367e3573(force = 0) {
     player_info = function_6b19043d();
     /#
         if (force) {
-            player_info = {#velocity:level.players[0] function_c5ea0b0(), #player:level.players[0]};
+            player_info = {#player:level.players[0], #velocity:level.players[0] function_c5ea0b0()};
         }
     #/
     if (!isdefined(player_info)) {

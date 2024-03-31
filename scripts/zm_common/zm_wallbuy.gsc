@@ -681,7 +681,7 @@ function weapon_spawn_think() {
                 if (isdefined(level.var_db463b5)) {
                     self [[ level.var_db463b5 ]](player);
                 }
-                level notify(#"weapon_bought", {#weapon:self.weapon, #player:player});
+                level notify(#"weapon_bought", {#player:player, #weapon:self.weapon});
                 player zm_stats::increment_challenge_stat(#"survivalist_buy_wallbuy", undefined, 1);
                 player zm_stats::increment_challenge_stat(#"hash_385398b8acbf8b4a", undefined, 1);
                 player zm_stats::increment_challenge_stat(#"hash_702d98df99af63d5", undefined, 1);

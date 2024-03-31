@@ -103,7 +103,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     idflags = armor_damage.idflags;
     idamage = function_74a5d514(eattacker, idamage, smeansofdeath, weapon, shitloc);
     idamage = make_sure_damage_is_not_zero(idamage, idflags & 2048);
-    params = {#vsurfacenormal:vsurfacenormal, #boneindex:boneindex, #vdamageorigin:vdamageorigin, #vpoint:vpoint, #idflags:idflags, #shitloc:shitloc, #vdir:vdir, #weapon:weapon, #smeansofdeath:smeansofdeath, #idamage:idamage, #eattacker:eattacker, #einflictor:einflictor};
+    params = {#einflictor:einflictor, #eattacker:eattacker, #idamage:idamage, #smeansofdeath:smeansofdeath, #weapon:weapon, #vdir:vdir, #shitloc:shitloc, #idflags:idflags, #vpoint:vpoint, #vdamageorigin:vdamageorigin, #boneindex:boneindex, #vsurfacenormal:vsurfacenormal};
     self callback::callback(#"on_player_damage", params);
     if (self laststand::player_is_in_laststand()) {
         self notify(#"laststand_damage", params);
@@ -139,7 +139,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
         pixmarker("END: PlayerDamage player");
     } else {
         self.lastattackweapon = weapon;
-        var_5370b15e = idamage < self.health ? self.health : idamage;
+        var_5370b15e = idamage < self.health ? idamage : self.health;
         globallogic_player::giveattackerandinflictorownerassist(eattacker, einflictor, var_5370b15e, smeansofdeath, weapon);
         globallogic_player::function_efd02c1d(einflictor);
         if (isdefined(eattacker)) {
@@ -189,7 +189,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     self.hasdonecombat = 1;
     if (weapon.isemp && smeansofdeath == "MOD_GRENADE_SPLASH" && !isdefined(weapon.var_13600e25)) {
         if (!self hasperk(#"specialty_immuneemp")) {
-            self notify(#"emp_grenaded", {#position:vpoint, #attacker:eattacker});
+            self notify(#"emp_grenaded", {#attacker:eattacker, #position:vpoint});
         }
     }
     if (isdefined(eattacker) && eattacker != self && !friendlyfire) {
@@ -783,10 +783,10 @@ function private should_do_player_damage(eattacker, einflictor, weapon, smeansof
 function private apply_damage_to_armor(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, shitloc, friendlyfire, ignore_round_start_friendly_fire) {
     victim = self;
     if (friendlyfire && !function_1727a023(ignore_round_start_friendly_fire, eattacker)) {
-        return {#idamage:idamage, #idflags:idflags};
+        return {#idflags:idflags, #idamage:idamage};
     }
     if (isdefined(einflictor) && isdefined(einflictor.stucktoplayer) && einflictor.stucktoplayer == victim) {
-        return {#idamage:victim.health, #idflags:idflags};
+        return {#idflags:idflags, #idamage:victim.health};
     }
     armor = self armor::get_armor();
     gear_armor = self.armor;
@@ -803,7 +803,7 @@ function private apply_damage_to_armor(einflictor, eattacker, idamage, idflags, 
     if (isdefined(self.power_armor_took_damage) && self.power_armor_took_damage) {
         idflags = idflags | 1024;
     }
-    return {#idamage:idamage, #idflags:idflags};
+    return {#idflags:idflags, #idamage:idamage};
 }
 
 // Namespace player/player_damage

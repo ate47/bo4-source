@@ -812,7 +812,7 @@ function function_34696b67() {
             level thread ct_vo::function_831e0584(array(#"hash_26c398139ec1094b"), 1);
             e_bomb.gameobject gameobjects::disable_object();
             e_player = getplayers()[0];
-            ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_1ed0f6809be98e43" : #"hash_43778f918c2c137d");
+            ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_43778f918c2c137d" : #"hash_1ed0f6809be98e43");
             ct_utils::function_79957328(undefined);
             e_bomb.gameobject gameobjects::enable_object();
             continue;

@@ -166,7 +166,7 @@ function add_spawn_point(origin, targetname, angles = (0, 0, 0)) {
         level.var_1d777960[targetname] = array();
     }
     var_3cc38ddd = level.var_1d777960[targetname].size;
-    level.var_1d777960[targetname][var_3cc38ddd] = {#angles:angles, #origin:origin};
+    level.var_1d777960[targetname][var_3cc38ddd] = {#origin:origin, #angles:angles};
 }
 
 // Namespace item_world_fixup/item_world_fixup
@@ -187,7 +187,7 @@ function function_e70fa91c(var_cf456610, var_2ab9d3bd, var_6647c284 = -1) {
         level.var_93c59949[var_cf456610] = [];
     }
     replacementcount = level.var_93c59949[var_cf456610].size;
-    level.var_93c59949[var_cf456610][replacementcount] = {#count:var_6647c284, #replacement:var_2ab9d3bd};
+    level.var_93c59949[var_cf456610][replacementcount] = {#replacement:var_2ab9d3bd, #count:var_6647c284};
 }
 
 // Namespace item_world_fixup/item_world_fixup
@@ -208,7 +208,7 @@ function function_2749fcc3(var_89b7987e, var_cf456610, var_2ab9d3bd, var_6647c28
         level.var_93c59949[var_cf456610] = [];
     }
     replacementcount = level.var_93c59949[var_cf456610].size;
-    level.var_93c59949[var_cf456610][replacementcount] = {#var_52a66db0:var_89b7987e, #count:var_6647c284, #replacement:var_2ab9d3bd};
+    level.var_93c59949[var_cf456610][replacementcount] = {#replacement:var_2ab9d3bd, #count:var_6647c284, #var_52a66db0:var_89b7987e};
 }
 
 // Namespace item_world_fixup/item_world_fixup

@@ -1318,7 +1318,7 @@ function function_c52e1749(origin, players) {
             }
             playerpositions[playerpositions.size] = pos;
             if (getdvarint(#"hash_4477ab37a00b1492", 1) == 1) {
-                position_info = {#origin:pos, #player:player};
+                position_info = {#player:player, #origin:pos};
                 if (!isdefined(var_448ee423)) {
                     var_448ee423 = [];
                 } else if (!isarray(var_448ee423)) {
@@ -2504,7 +2504,7 @@ function get_current_zone(return_zone = 0) {
                 self.cached_zone = level.zones[self.var_3b65cdd7.targetname];
                 self.cached_zone_name = self.cached_zone.name;
                 self.cached_zone_volume = undefined;
-                self notify(#"zone_change", {#zone_name:self.cached_zone_name, #zone:self.cached_zone});
+                self notify(#"zone_change", {#zone:self.cached_zone, #zone_name:self.cached_zone_name});
             }
             if (return_zone) {
                 return level.zones[self.var_3b65cdd7.targetname];
@@ -2522,7 +2522,7 @@ function get_current_zone(return_zone = 0) {
                         self.cached_zone_name = zone.name;
                         self.cached_zone_volume = i;
                         self.var_3b65cdd7 = undefined;
-                        self notify(#"zone_change", {#zone_name:zone.name, #zone:zone});
+                        self notify(#"zone_change", {#zone:zone, #zone_name:zone.name});
                     }
                     if (isdefined(return_zone) && return_zone) {
                         return zone;
@@ -4188,16 +4188,16 @@ function function_13cc9756() {
 // Size: 0x88
 function function_45492cc4(var_cf5e7324 = 1) {
     if (!isdefined(self)) {
-        return 0;
+        return false;
     }
     if (!isdefined(self.owner)) {
-        return 0;
+        return false;
     }
     if (!(self.classname === "script_vehicle")) {
-        return 0;
+        return false;
     }
     if (var_cf5e7324 && isplayer(self.owner)) {
-        return 1;
+        return true;
     }
     return isdefined(self.owner);
 }

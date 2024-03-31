@@ -154,7 +154,7 @@ function private function_1a17b820(localclientnum) {
             var_8de02736 = getdvarint(#"hash_56728884d2904809", 0);
             waitframe(1);
             if (var_509eb1e5 != var_596aaddb || var_74d08f2b != var_89f688b8) {
-                level notify(#"hash_6d47a1e190b93eaf", {#b_debug:1, #var_aba5d0f5:var_509eb1e5, #var_800db6bf:var_74d08f2b});
+                level notify(#"hash_6d47a1e190b93eaf", {#var_800db6bf:var_74d08f2b, #var_aba5d0f5:var_509eb1e5, #b_debug:1});
                 var_596aaddb = var_509eb1e5;
                 var_89f688b8 = var_74d08f2b;
             }

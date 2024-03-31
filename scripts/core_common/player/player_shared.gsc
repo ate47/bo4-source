@@ -620,7 +620,7 @@ function function_74598aba(var_96a9fbf4) {
 // Checksum 0xe719ad03, Offset: 0x2308
 // Size: 0x94
 function function_466d8a4b(var_b66879ad, team) {
-    params = {#var_b66879ad:var_b66879ad, #team:team};
+    params = {#team:team, #var_b66879ad:var_b66879ad};
     self notify(#"joined_team", params);
     level notify(#"joined_team");
     self callback::callback(#"joined_team", params);
@@ -631,7 +631,7 @@ function function_466d8a4b(var_b66879ad, team) {
 // Checksum 0x24480671, Offset: 0x23a8
 // Size: 0x9c
 function function_6f6c29e(var_b66879ad) {
-    params = {#var_b66879ad:var_b66879ad, #team:#"spectator"};
+    params = {#team:#"spectator", #var_b66879ad:var_b66879ad};
     self notify(#"joined_spectator", params);
     level notify(#"joined_spectator");
     self callback::callback(#"on_joined_spectator", params);
@@ -701,7 +701,7 @@ function function_38de2d5a(notification) {
 // Checksum 0x6af03592, Offset: 0x27d0
 // Size: 0xc6
 function init_heal(var_cd7b9255, var_e9c4ebeb) {
-    var_84d04e6 = {#var_a1cac2f1:0, #var_b8c7d886:0, #var_c8777194:var_e9c4ebeb, #var_bc840360:0, #rate:0, #enabled:var_cd7b9255};
+    var_84d04e6 = {#enabled:var_cd7b9255, #rate:0, #var_bc840360:0, #var_c8777194:var_e9c4ebeb, #var_b8c7d886:0, #var_a1cac2f1:0};
     if (!isdefined(self.heal)) {
         self.heal = var_84d04e6;
     }

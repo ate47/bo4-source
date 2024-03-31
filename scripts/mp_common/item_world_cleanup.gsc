@@ -72,7 +72,7 @@ function private function_b465b436(deathcircle, var_898879a6) {
 // Size: 0x676
 function private function_35e11623(deathcircle, var_898879a6) {
     players = getplayers();
-    excludelist = [#"willy_pete":1, #"frag_grenade":1, #"eq_wraith_fire":1, #"eq_swat_grenade":1, #"eq_slow_grenade":1, #"eq_molotov":1, #"eq_cluster_semtex_grenade":1, #"eq_acid_bomb":1];
+    excludelist = [#"eq_acid_bomb":1, #"eq_cluster_semtex_grenade":1, #"eq_molotov":1, #"eq_slow_grenade":1, #"eq_swat_grenade":1, #"eq_wraith_fire":1, #"frag_grenade":1, #"willy_pete":1];
     foreach (player in players) {
         if (!isplayer(player)) {
             continue;

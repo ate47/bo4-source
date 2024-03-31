@@ -71,7 +71,7 @@ function clearirtarget() {
 // Checksum 0xb5cd9017, Offset: 0x478
 // Size: 0x84
 function function_5e6cd0ab(weapon, attacker) {
-    params = {#attacker:attacker, #weapon:weapon};
+    params = {#weapon:weapon, #attacker:attacker};
     self notify(#"missile_lock", params);
     self callback::callback(#"missile_lock", params);
 }
@@ -81,7 +81,7 @@ function function_5e6cd0ab(weapon, attacker) {
 // Checksum 0x464ea457, Offset: 0x508
 // Size: 0x9c
 function function_a439ae56(missile, weapon, attacker) {
-    params = {#attacker:attacker, #weapon:weapon, #projectile:missile};
+    params = {#projectile:missile, #weapon:weapon, #attacker:attacker};
     self notify(#"stinger_fired_at_me", params);
     self callback::callback(#"hash_1a32e0fdeb70a76b", params);
 }

@@ -135,7 +135,7 @@ function event_handler[gametype_init] main(eventstruct) {
     globallogic_defaults::function_daa7e9d5();
     laststand_mp::function_367cfa1b(&function_95002a59);
     laststand_mp::function_eb8c0e47(&onplayerrevived);
-    setdvar(#"hash_7036719f41a78d54", getgametypesetting(#"hash_2e756f25094a5b3c"));
+    setdvar(#"hash_7036719f41a78d54", getgametypesetting(#"laststandrevivehealth"));
     clientfield::register("allplayers", "bountymoneytrail", 1, 1, "int");
     clientfield::register("toplayer", "realtime_multiplay", 1, 1, "int");
     level.var_1aef539f = &function_a800815;

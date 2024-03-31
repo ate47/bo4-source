@@ -305,7 +305,7 @@ function trap_activate(trap, who) {
         if (isdefined(trap._trap_type)) {
             who zm_audio::create_and_play_dialog(#"trap_activate", trap._trap_type);
         }
-        level notify(#"trap_activated", {#trap:trap, #trap_activator:who});
+        level notify(#"trap_activated", {#trap_activator:who, #trap:trap});
     }
     if (isarray(trap._trap_switches) && trap._trap_switches.size) {
         trap thread trap_move_switches();
@@ -577,7 +577,7 @@ function trap_damage() {
 function function_783361ed(e_trap) {
     self endon(#"disconnect");
     self.var_acc576f0 = 1;
-    level notify(#"trap_downed_player", {#e_trap:e_trap, #e_victim:self});
+    level notify(#"trap_downed_player", {#e_victim:self, #e_trap:e_trap});
     while (isalive(self) && self laststand::player_is_in_laststand()) {
         waitframe(1);
     }
@@ -686,7 +686,7 @@ function zombie_trap_death(e_trap, param) {
         if (isdefined(self.var_5475b4ad)) {
             self [[ self.var_5475b4ad ]](e_trap);
         } else {
-            level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+            level notify(#"trap_kill", {#e_victim:self, #e_trap:e_trap});
             self dodamage(self.health + 666, self.origin, e_trap);
         }
         break;
@@ -697,7 +697,7 @@ function zombie_trap_death(e_trap, param) {
         if (isdefined(self.var_d89f2f98)) {
             self [[ self.var_d89f2f98 ]](e_trap);
         }
-        level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+        level notify(#"trap_kill", {#e_victim:self, #e_trap:e_trap});
         self startragdoll();
         self launchragdoll(direction_vec);
         util::wait_network_frame();

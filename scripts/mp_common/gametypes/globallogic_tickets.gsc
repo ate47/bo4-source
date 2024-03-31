@@ -167,7 +167,7 @@ function lose_tickets(team, tickets) {
 // Size: 0x192
 function notify_tickets_updated(team, original_total) {
     if (original_total != game.stat[#"tickets"][team]) {
-        level notify(#"tickets_updated", {#total_tickets:game.stat[#"tickets"][team], #team:team});
+        level notify(#"tickets_updated", {#team:team, #total_tickets:game.stat[#"tickets"][team]});
         low_ticket_threshold = 30;
         very_low_ticket_threshold = 10;
         /#
@@ -245,7 +245,7 @@ function get_stage_tickets(team, stage) {
 // Checksum 0x4a59b41b, Offset: 0xcf8
 // Size: 0x78
 function notify_stage_tickets_updated(team, stage) {
-    level notify(#"tickets_stage_updated", {#total_tickets:game.stat[#"stagetickets"][team][stage], #zone_number:stage, #team:team});
+    level notify(#"tickets_stage_updated", {#team:team, #zone_number:stage, #total_tickets:game.stat[#"stagetickets"][team][stage]});
 }
 
 // Namespace tickets/globallogic_tickets

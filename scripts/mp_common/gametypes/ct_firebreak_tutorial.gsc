@@ -1013,7 +1013,7 @@ function function_6672b593(s_loc) {
     self val::set("tut_ignoreall", "ignoreall", 1);
     self ct_utils::function_5b59f3b7(self.origin, self.angles, 16, 1, 1);
     self thread ct_utils::function_b733ae0d(1, 0, 1);
-    if (isdefined(s_loc.var_48dd881a) && s_loc.var_48dd881a == "crouch") {
+    if (isdefined(s_loc.script_stance) && s_loc.script_stance == "crouch") {
         self bot_stance::crouch();
     }
     self waittill(#"damage");
@@ -1881,7 +1881,7 @@ function function_344aee09(_hash) {
                 e_player ct_vo::function_c72e58c1(#"failed");
                 e_player thread ct_vo::function_831e0584(array("vox_tvoi_tutor_fire_gas_gauge_00"));
                 setslowmotion(1, 0.1, 0.5);
-                e_player ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_5168ae1a4907adb6" : #"hash_6d618a9f705ba66");
+                e_player ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_6d618a9f705ba66" : #"hash_5168ae1a4907adb6");
                 setslowmotion(0.1, 1, 0.25);
                 str_respawn = "s_tut_purifier_3_respawn";
                 n_wait = 0.1;

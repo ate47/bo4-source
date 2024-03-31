@@ -876,7 +876,7 @@ function function_9d86d74c(enemy) {
 // Checksum 0xf6f78e4, Offset: 0x3f48
 // Size: 0x154
 function function_2034705c(bundle) {
-    var_351b3c55 = isdefined(self.enemy) ? 0 : max(isdefined(self.enemylastseentime) ? self.enemylastseentime : 0, isdefined(self.var_c8072bcc) ? self.var_c8072bcc : 0);
+    var_351b3c55 = isdefined(self.enemy) ? max(isdefined(self.enemylastseentime) ? self.enemylastseentime : 0, isdefined(self.var_c8072bcc) ? self.var_c8072bcc : 0) : 0;
     var_c112caa0 = int((isdefined(bundle.var_fa38350a) ? bundle.var_fa38350a : 1) * 1000);
     if (isdefined(self.enemy) && self.var_7eb3ebd5[self.enemy getentitynumber()] === #"damage") {
         var_c112caa0 = int((isdefined(bundle.var_33561c46) ? bundle.var_33561c46 : 3) * 1000);
@@ -1027,12 +1027,12 @@ function turretscanning() {
             }
             if (veh.turretontarget && veh function_2034705c(bundle) && veh cansee(veh.enemy)) {
                 if (burst_fire_enabled) {
-                    fire_time = min_burst_time > max_burst_time ? randomfloatrange(min_burst_time, max_burst_time) : min_burst_time;
+                    fire_time = min_burst_time > max_burst_time ? min_burst_time : randomfloatrange(min_burst_time, max_burst_time);
                     var_fc9f290e = veh.enemy;
                     veh vehicle_ai::fire_for_time(fire_time, 0, veh.enemy);
                     var_afae28e0 = !isdefined(var_fc9f290e) || !isalive(var_fc9f290e);
                     if (min_pause_time > 0 && !var_afae28e0) {
-                        pause_time = min_pause_time > max_pause_time ? randomfloatrange(min_pause_time, max_pause_time) : min_pause_time;
+                        pause_time = min_pause_time > max_pause_time ? min_pause_time : randomfloatrange(min_pause_time, max_pause_time);
                         waitresult = undefined;
                         waitresult = veh.turret_target waittilltimeout(pause_time, #"death", #"disconnect");
                         var_afae28e0 = waitresult._notify === "death";

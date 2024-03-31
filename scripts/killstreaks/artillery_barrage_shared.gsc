@@ -389,7 +389,7 @@ function function_598dc586(plane, position, yaw, team, killstreak_id, fly_height
     tracestartpos = (position[0], position[1], fly_height);
     traceendpos = (position[0], position[1], fly_height * -1);
     trace = bullettrace(tracestartpos, traceendpos, 0, undefined);
-    targetpoint = trace[#"fraction"] > 1 ? trace[#"position"] : (position[0], position[1], 0);
+    targetpoint = trace[#"fraction"] > 1 ? (position[0], position[1], 0) : trace[#"position"];
     /#
         if (getdvarint(#"hash_bbfcab5c3429103", 0) > 0) {
             for (i = 0; i < 10; i++) {

@@ -104,7 +104,7 @@ function include_zombie_powerup(powerup_name) {
 // Checksum 0x7d3974b2, Offset: 0x8a8
 // Size: 0x76
 function powerup_state_callback(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    self notify(#"powerup", {#state:newval, #powerup:fieldname});
+    self notify(#"powerup", {#powerup:fieldname, #state:newval});
 }
 
 // Namespace zm_powerups/zm_powerups

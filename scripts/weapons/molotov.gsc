@@ -249,7 +249,7 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
     desiredendpos = startpos + vectorscale((0, 0, 1), 60);
     function_1493c734(startpos, 20, (0, 1, 0), 0.6, 200);
     phystrace = physicstrace(startpos, desiredendpos, vectorscale((-1, -1, -1), 4), vectorscale((1, 1, 1), 4), self, 1);
-    goalpos = phystrace[#"fraction"] > 1 ? phystrace[#"position"] : desiredendpos;
+    goalpos = phystrace[#"fraction"] > 1 ? desiredendpos : phystrace[#"position"];
     if (isdefined(killcament)) {
         killcament moveto(goalpos, 0.5);
     }
@@ -367,17 +367,17 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
             hitsomething = 1;
         }
         if (!hitsomething) {
-            var_e5d1793d = hitpos(traceposition, traceposition - normal * defaultdropdistance, locations[#"color"][count]);
-            if (var_e5d1793d[#"fraction"] != 1) {
-                function_1493c734(var_e5d1793d[#"position"], 10, (0, 0, 1), 0.6, 200);
-                locations[#"loc"][count] = var_e5d1793d[#"position"];
-                water_depth = get_water_depth(var_e5d1793d[#"position"]);
+            tracedown = hitpos(traceposition, traceposition - normal * defaultdropdistance, locations[#"color"][count]);
+            if (tracedown[#"fraction"] != 1) {
+                function_1493c734(tracedown[#"position"], 10, (0, 0, 1), 0.6, 200);
+                locations[#"loc"][count] = tracedown[#"position"];
+                water_depth = get_water_depth(tracedown[#"position"]);
                 if (function_a66ba8cc(water_depth)) {
                     locations[#"normal"][count] = (0, 0, 1);
                     locations[#"steam"][count] = 1;
                     locations[#"loc"][count] = locations[#"loc"][count] - (0, 0, water_depth);
                 } else {
-                    locations[#"normal"][count] = var_e5d1793d[#"normal"];
+                    locations[#"normal"][count] = tracedown[#"normal"];
                     locations[#"smallfire"][count] = 1;
                 }
             }
@@ -530,16 +530,16 @@ function damageeffectarea(owner, position, killcament, normal, weapon, customset
             self trytoapplyfiredamage(target, owner, position, fireeffectarea, var_289a74bc, killcament, weapon, customsettings);
         }
         if (isdefined(owner)) {
-            var_2d3611fa = owner.var_52dceca.size;
-            if (var_2d3611fa > 0 && burntime < gettime()) {
-                scoreevents::processscoreevent(#"hash_1343f5418bd52c6c", owner, undefined, weapon, var_2d3611fa);
+            affectedplayers = owner.var_52dceca.size;
+            if (affectedplayers > 0 && burntime < gettime()) {
+                scoreevents::processscoreevent(#"hash_1343f5418bd52c6c", owner, undefined, weapon, affectedplayers);
                 burntime = gettime() + int(customsettings.var_5c06ec56 * 1000);
             }
             if (isdefined(level.playgadgetsuccess) && var_d0603aba) {
                 if (isdefined(level.var_ac6052e9)) {
                     var_9194a036 = [[ level.var_ac6052e9 ]]("molotovSuccessLineCount", 0);
                 }
-                if (var_2d3611fa >= (isdefined(var_9194a036) ? var_9194a036 : 3)) {
+                if (affectedplayers >= (isdefined(var_9194a036) ? var_9194a036 : 3)) {
                     owner [[ level.playgadgetsuccess ]](weapon);
                 }
             }

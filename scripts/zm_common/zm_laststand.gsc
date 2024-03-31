@@ -1511,7 +1511,7 @@ function private revive_internal(reviver, b_track_stats, var_c0ab6a65 = 0) {
             potm::bookmark(#"zm_player_revived", gettime(), reviver, self);
         }
     }
-    self notify(#"player_revived", {#var_a4916eac:self.var_84280a99, #reviver:reviver});
+    self notify(#"player_revived", {#reviver:reviver, #var_a4916eac:self.var_84280a99});
     s_params = spawnstruct();
     s_params.e_revivee = self;
     s_params.e_reviver = reviver;

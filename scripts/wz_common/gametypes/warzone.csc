@@ -157,10 +157,10 @@ function function_783be487() {
 // Size: 0x2e4
 function function_41f9de03() {
     localclientnum = 0;
-    var_65792f8b = map::get_script_bundle();
+    mapbundle = map::get_script_bundle();
     var_4e59607a = [];
-    if (isdefined(var_65792f8b) && isdefined(var_65792f8b.destinationlabellist)) {
-        foreach (destinationlabel in var_65792f8b.destinationlabellist) {
+    if (isdefined(mapbundle) && isdefined(mapbundle.destinationlabellist)) {
+        foreach (destinationlabel in mapbundle.destinationlabellist) {
             var_4e59607a[destinationlabel.targetname] = destinationlabel.displayname;
         }
     }

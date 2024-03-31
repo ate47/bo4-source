@@ -929,7 +929,7 @@ class cdoor {
             self.m_e_door function_df3a1348();
         }
         self.m_e_door.script_objective = s_door_instance.script_objective;
-        self.var_85f2454d = {#angles:self.m_e_door.angles, #origin:self.m_e_door.origin};
+        self.var_85f2454d = {#origin:self.m_e_door.origin, #angles:self.m_e_door.angles};
         self.m_e_door thread doors::function_fa74d5cd(self);
         if (isdefined(s_door_instance.linkname)) {
             self.var_e1477b7c = getentarray(s_door_instance.linkname, "linkto");
@@ -1413,7 +1413,7 @@ function function_dc98f943(c_door) {
         e_door util::function_5d36c37a();
     }
     target_set(e_door);
-    level notify(#"hash_9db88375ef038b", {#player:waitresult.player, #c_door:c_door});
+    level notify(#"hash_9db88375ef038b", {#c_door:c_door, #player:waitresult.player});
     e_door val::set(#"hash_25bedd86747e41e1", "takedamage", 1);
     e_door val::set(#"hash_25bedd86747e41e1", "allowdeath", 1);
     if (isdefined(c_door.m_s_bundle.registersidestepshouldstun)) {

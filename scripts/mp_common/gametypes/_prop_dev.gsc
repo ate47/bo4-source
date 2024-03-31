@@ -123,7 +123,7 @@ function function_93440c52() {
             }
             if (getdvarint(#"scr_ph_useprophudserver", 0) != server_hud && isdefined(level.players)) {
                 server_hud = getdvarint(#"scr_ph_useprophudserver", 0);
-                if (!isdefined(level.players[0].var_8060636f)) {
+                if (!isdefined(level.players[0].changepropkey)) {
                     iprintlnbold("<unknown string>");
                 } else {
                     foreach (player in level.players) {
@@ -337,9 +337,9 @@ function function_673195f3() {
         self prop_controls::cleanuppropcontrolshud();
         self prop_controls::function_1e25f968();
         if (self issplitscreen()) {
-            self.var_8b393c32 = -10;
+            self.currenthudy = -10;
         } else {
-            self.var_8b393c32 = -80;
+            self.currenthudy = -80;
         }
         self.var_5f51d2ee = function_1eca597a(self.prop.info.modelname);
         white = (1, 1, 1);
@@ -362,18 +362,18 @@ function function_673195f3() {
 function function_401f47cd() {
     /#
         self notify(#"hash_3ecc0277d544b441");
-        prop_controls::function_b13f931a(self.placementmodel);
-        prop_controls::function_b13f931a(self.var_3634d14e);
-        prop_controls::function_b13f931a(self.var_a2614669);
-        prop_controls::function_b13f931a(self.var_5ee5df03);
-        prop_controls::function_b13f931a(self.var_66df6677);
-        prop_controls::function_b13f931a(self.var_ec9a93);
-        prop_controls::function_b13f931a(self.var_811d1afa);
-        prop_controls::function_b13f931a(self.var_d7336ed8);
-        prop_controls::function_b13f931a(self.var_334e2710);
-        prop_controls::function_b13f931a(self.var_faa235b5);
-        prop_controls::function_b13f931a(self.var_35eb52f1);
-        prop_controls::function_b13f931a(self.var_a2f59097);
+        prop_controls::safedestroy(self.placementmodel);
+        prop_controls::safedestroy(self.var_3634d14e);
+        prop_controls::safedestroy(self.var_a2614669);
+        prop_controls::safedestroy(self.var_5ee5df03);
+        prop_controls::safedestroy(self.var_66df6677);
+        prop_controls::safedestroy(self.var_ec9a93);
+        prop_controls::safedestroy(self.var_811d1afa);
+        prop_controls::safedestroy(self.var_d7336ed8);
+        prop_controls::safedestroy(self.var_334e2710);
+        prop_controls::safedestroy(self.var_faa235b5);
+        prop_controls::safedestroy(self.var_35eb52f1);
+        prop_controls::safedestroy(self.var_a2f59097);
         self function_cc5afb75();
         self prop_controls::propcontrolshud();
         self prop_controls::setupkeybindings();
@@ -553,7 +553,7 @@ function function_75154360(val) {
         if (hudelem == self.placementmodel) {
             function_5ee4d3a8(val);
             self.prop.info = level.proplist[level.propindex[self.var_5f51d2ee][0]][level.propindex[self.var_5f51d2ee][1]];
-            prop_controls::function_c2e4a720(self.prop.info);
+            prop_controls::propchangeto(self.prop.info);
             self.placementmodel settext("<unknown string>" + self.var_5f51d2ee + "<unknown string>" + self.prop.info.modelname);
             self.var_3634d14e settext("<unknown string>" + self.prop.info.propsizetext);
             self.var_a2614669 setvalue(self.prop.info.propsize);

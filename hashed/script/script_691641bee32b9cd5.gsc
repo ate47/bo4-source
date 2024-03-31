@@ -570,7 +570,7 @@ function private start_internal(s_wave_manager_struct, str_team, b_looping, str_
             var_dcd6c23.var_27eacb34 = s_wave_manager_struct.target;
         }
         var_dcd6c23.m_str_team = util::get_team_mapping(s_wave_manager_struct.script_team);
-        var_dcd6c23.var_f68bc980 = isdefined(s_wave_manager_struct.var_3868f387) && s_wave_manager_struct.var_3868f387;
+        var_dcd6c23.var_f68bc980 = isdefined(s_wave_manager_struct.script_looping) && s_wave_manager_struct.script_looping;
         var_dcd6c23.var_a709a080 = isdefined(s_wave_manager_struct.script_auto_delete) && s_wave_manager_struct.script_auto_delete;
         if (isdefined(s_wave_manager_struct.var_a69f424f)) {
             foreach (var_7635207b in s_wave_manager_struct.var_a69f424f) {
@@ -1167,7 +1167,7 @@ function private function_ed819a97(var_a2b4b991) {
         foreach (s_spawn_type in var_a2b4b991.spawntypes) {
             if (isdefined(s_spawn_type.variant)) {
                 var_2f2d7675 = isdefined(s_spawn_type.var_34ceb858) ? s_spawn_type.var_34ceb858 : 0;
-                var_40b0c36 = {#name:s_spawn_type.variant, #var_a33f2319:[], #var_2f2d7675:var_2f2d7675};
+                var_40b0c36 = {#var_2f2d7675:var_2f2d7675, #var_a33f2319:[], #name:s_spawn_type.variant};
                 var_c165240a[s_spawn_type.variant] = var_40b0c36;
             }
         }
@@ -1450,7 +1450,7 @@ function is_looping() {
         return (isdefined(var_dcd6c23.var_f68bc980) && var_dcd6c23.var_f68bc980);
     }
     if (wave_manager_sys::function_5b3b889f(self)) {
-        return (isdefined(self.var_3868f387) && self.var_3868f387);
+        return (isdefined(self.script_looping) && self.script_looping);
     }
     return false;
 }

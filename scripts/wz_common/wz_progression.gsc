@@ -1087,7 +1087,7 @@ function function_16de96c7(player) {
 // Checksum 0x93268a2, Offset: 0x4ff0
 // Size: 0x32e
 function on_game_playing(params) {
-    level.var_98df02a8 = gettime();
+    level.prematchduration = gettime();
     foreach (team, _ in level.teams) {
         players = getplayers(team);
         foreach (player in players) {

@@ -334,7 +334,7 @@ function private function_bbe55589(e_player, w_katana, str_hitloc) {
     }
     self.var_48a548c1 = 1;
     [[ level.var_3594d33a ]]->waitinqueue(self);
-    n_damage = 750 < n_base_damage ? 750 : n_base_damage;
+    n_damage = 750 < n_base_damage ? n_base_damage : 750;
     self dodamage(n_damage, e_player.origin, e_player, e_player, str_hitloc, "MOD_MELEE", 0, w_katana);
     self playsound(#"hash_762b44e67bc3761f");
     self.var_48a548c1 = undefined;

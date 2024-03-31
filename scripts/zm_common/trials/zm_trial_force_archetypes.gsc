@@ -51,7 +51,7 @@ function private on_end(round_reset) {
 function function_ff2a74e7(archetype) {
     challenge = zm_trial::function_a36e8c38(#"force_archetypes");
     if (!isdefined(challenge)) {
-        return 0;
+        return false;
     }
     return isdefined(challenge.var_c54c0d81[archetype]);
 }

@@ -608,7 +608,7 @@ function event_handler[player_disconnect] codecallback_playerdisconnect(eventstr
 // Checksum 0x4bcb15ad, Offset: 0x2bb8
 // Size: 0x7e
 function function_f3f9788a(itemtype, percentchance) {
-    level.var_19e75cfb[level.var_19e75cfb.size] = {#chance:max(min(percentchance, 1), 0), #type:itemtype};
+    level.var_19e75cfb[level.var_19e75cfb.size] = {#type:itemtype, #chance:max(min(percentchance, 1), 0)};
 }
 
 // Namespace item_drop/item_drop
@@ -989,7 +989,7 @@ function drop_item(weapon = undefined, count = 0, amount = 0, itemid, position, 
     } else {
         dropitem clientfield::set("item_world_attachments", 0);
     }
-    params = {#deathstash:deathstash, #item:dropitem};
+    params = {#item:dropitem, #deathstash:deathstash};
     if (isplayer(self)) {
         self callback::callback(#"on_drop_item", params);
     }

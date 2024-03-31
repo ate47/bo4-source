@@ -370,7 +370,7 @@ function function_8dd4c3c5(linestart, lineend, point) {
     var_eb2bcaa0 = distancesquared(lineend, point);
     lengthsq = lengthsquared(lineend - linestart);
     if (var_6dbcbbd > lengthsq || var_eb2bcaa0 > lengthsq) {
-        point = var_6dbcbbd > var_eb2bcaa0 ? linestart : lineend;
+        point = var_6dbcbbd > var_eb2bcaa0 ? lineend : linestart;
     }
     return point;
 }
@@ -426,7 +426,7 @@ function function_f16fbd66(var_17a1aca9, var_9522f5ec, var_e5dbc91e, var_815dce6
         pointa = function_8dd4c3c5(var_17a1aca9, var_9522f5ec, pointa);
         pointb = function_8dd4c3c5(var_e5dbc91e, var_815dce62, pointb);
     }
-    pointstruct = {#pointb:pointb, #pointa:pointa};
+    pointstruct = {#pointa:pointa, #pointb:pointb};
     return pointstruct;
 }
 

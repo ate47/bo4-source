@@ -92,7 +92,7 @@ function testenemy(team) {
             waitframe(1);
         }
         if (level.teambased) {
-            params = {#intpayload:0, #response:level.teams[team], #menu:game.menu[#"menu_team"]};
+            params = {#menu:game.menu[#"menu_team"], #response:level.teams[team], #intpayload:0};
             self notify(#"menuresponse", params);
             self callback::callback(#"menu_response", params);
         }

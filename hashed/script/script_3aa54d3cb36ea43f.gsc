@@ -214,7 +214,7 @@ function function_7107da88(var_dbce0c44) {
     } else {
         var_1797c23a = 3;
     }
-    var_2506688 = var_1797c23a < 8 ? var_1797c23a * 0.75 : max(var_1797c23a - 3, 0);
+    var_2506688 = var_1797c23a < 8 ? max(var_1797c23a - 3, 0) : var_1797c23a * 0.75;
     n_num_to_spawn = randomintrangeinclusive(int(var_2506688), int(min(var_8cf00d40, var_1797c23a)));
     if (!n_num_to_spawn) {
         if (!isdefined(level.var_720b9d46)) {

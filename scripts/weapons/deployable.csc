@@ -75,7 +75,7 @@ function function_35d1c69f(localclientnum, player, weapon) {
         var_7ed1816f = var_10c45189.isvalid || isdefined(level._deployable_weapons[weapon.statindex]) && (isdefined(level._deployable_weapons[weapon.statindex].var_7ec218c6) ? level._deployable_weapons[weapon.statindex].var_7ec218c6 : 0);
     } else {
         var_7ed1816f = 1;
-        var_10c45189 = {#angles:player.angles, #origin:player.origin, #isvalid:1};
+        var_10c45189 = {#isvalid:1, #origin:player.origin, #angles:player.angles};
     }
     var_c3743e82 = !level.var_1765ad79 || function_e0d90bc8(localclientnum) || isdefined(weapon.var_33d50507) && weapon.var_33d50507;
     gameplay_allows_deploy = player clientfield::get_to_player("gameplay_allows_deploy");

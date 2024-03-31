@@ -104,7 +104,7 @@ function play_fx_for_all_clients(fx, tag, storehandles = 0, forward = undefined)
 // Size: 0x36
 function is_included(equipment) {
     if (!isdefined(level._included_equipment)) {
-        return 0;
+        return false;
     }
     return isdefined(level._included_equipment[equipment.rootweapon]);
 }

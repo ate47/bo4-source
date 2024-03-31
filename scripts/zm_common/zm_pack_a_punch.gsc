@@ -815,7 +815,7 @@ function private wait_for_player_to_take(player, weapon, packa_timer, var_a86430
             if (zm_utility::is_player_valid(player) && !player zm_utility::is_drinking() && !zm_loadout::is_placeable_mine(current_weapon) && !zm_equipment::is_equipment(current_weapon) && !player zm_utility::is_player_revive_tool(current_weapon) && level.weaponnone != current_weapon && !player zm_equipment::hacker_active()) {
                 demo::bookmark(#"zm_player_grabbed_packapunch", gettime(), player);
                 potm::bookmark(#"zm_player_grabbed_packapunch", gettime(), player);
-                level notify(#"pap_taken", {#e_player:player, #var_5e879929:pap_machine});
+                level notify(#"pap_taken", {#var_5e879929:pap_machine, #e_player:player});
                 pap_machine notify(#"pap_taken", {#e_player:player});
                 player notify(#"pap_taken", {#var_5e879929:pap_machine});
                 player.pap_used = 1;
@@ -915,7 +915,7 @@ function private wait_for_timeout(weapon, packa_timer, player, var_a86430cb, var
         n_timeout = level.pack_a_punch.timeout;
     }
     wait(n_timeout);
-    level notify(#"pap_timeout", {#e_player:player, #var_5e879929:self});
+    level notify(#"pap_timeout", {#var_5e879929:self, #e_player:player});
     self notify(#"pap_timeout", {#e_player:player});
     packa_timer stoploopsound(0.05);
     packa_timer playsound(#"zmb_perks_packa_deny");

@@ -314,7 +314,7 @@ function function_5989dd12(a_doors) {
 // Checksum 0xe877fdd7, Offset: 0x1b80
 // Size: 0x46
 function force_open_door(e_activator) {
-    self notify(#"trigger", {#is_forced:1, #activator:e_activator});
+    self notify(#"trigger", {#activator:e_activator, #is_forced:1});
 }
 
 // Namespace zm_blockers/zm_blockers
@@ -824,7 +824,7 @@ function door_opened(cost, quick_close) {
             trig zm_utility::set_hint_string(trig, "default_buy_door", cost);
         }
     }
-    level notify(#"door_opened", {#t_blocker:self, #e_player:self.purchaser});
+    level notify(#"door_opened", {#e_player:self.purchaser, #t_blocker:self});
     if (isdefined(self.doors)) {
         is_script_model_door = 0;
         have_moving_clip_for_door = 0;
@@ -1084,7 +1084,7 @@ function debris_think() {
                 }
             }
             zm_utility::play_sound_at_pos("purchase", self.origin);
-            level notify(#"junk purchased", {#t_blocker:self, #e_player:who});
+            level notify(#"junk purchased", {#e_player:who, #t_blocker:self});
             move_ent = undefined;
             a_clip = [];
             for (i = 0; i < junk.size; i++) {
@@ -1946,7 +1946,7 @@ function blocker_trigger_think() {
                 break;
             }
             player handle_post_board_repair_rewards(cost, self);
-            level notify(#"board_repaired", {#s_board:self, #player:player});
+            level notify(#"board_repaired", {#player:player, #s_board:self});
             if (zm_utility::all_chunks_intact(self, self.barrier_chunks)) {
                 self notify(#"all_boards_repaired");
                 player increment_window_repaired();

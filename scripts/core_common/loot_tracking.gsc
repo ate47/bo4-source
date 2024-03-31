@@ -10,7 +10,7 @@ function function_13afbf2d(lootid, name) {
         return;
     }
     player = self;
-    eventparams = {#pos_z:player.origin[2], #pos_y:player.origin[1], #pos_x:player.origin[0], #gametime:function_f8d53445(), #loot_data:name, #loot_id:lootid};
+    eventparams = {#loot_id:lootid, #loot_data:name, #gametime:function_f8d53445(), #pos_x:player.origin[0], #pos_y:player.origin[1], #pos_z:player.origin[2]};
     function_92d1707f(#"hash_6e269493db33fcf7", eventparams);
 }
 

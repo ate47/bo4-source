@@ -523,7 +523,7 @@ function function_937e218c() {
 // Size: 0x72
 function is_active(var_1eb3fec6 = 0) {
     if (var_1eb3fec6 && isdefined(level.var_869ea5a) && level.var_869ea5a) {
-        return 0;
+        return false;
     }
     challenge = zm_trial::function_a36e8c38(#"restrict_loadout");
     return isdefined(challenge);

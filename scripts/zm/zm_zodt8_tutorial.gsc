@@ -337,7 +337,7 @@ function function_57bf8455() {
 function open_door(str_door_name) {
     a_e_zombie_doors = getentarray(str_door_name, "target");
     foreach (zombie_door in a_e_zombie_doors) {
-        zombie_door notify(#"trigger", {#is_forced:1, #activator:zombie_door});
+        zombie_door notify(#"trigger", {#activator:zombie_door, #is_forced:1});
         if (str_door_name == "library_boat_deck_door") {
             zombie_door playsound(#"hash_4bddd546f43487cf");
         }

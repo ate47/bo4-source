@@ -80,7 +80,7 @@ function private update_targets() {
         possibletargets[possibletargets.size] = player;
     }
     targetcount = 0;
-    var_1ac2b0cd = [];
+    targetplayers = [];
     while (possibletargets.size > 0 && targetcount < level.wzhighvaluetargets) {
         topplayers = function_f81eaa29(possibletargets);
         while (topplayers.size > 0 && targetcount < level.wzhighvaluetargets) {
@@ -103,7 +103,7 @@ function private update_targets() {
                 indicatorarray[#"indicator"] spectrerisingindicator::set_clientnum(other_player, indicatorarray[#"clientnum"]);
                 indicatorarray[#"indicator"] spectrerisingindicator::set_isalive(other_player, var_d1a98222);
             }
-            arrayinsert(var_1ac2b0cd, player, var_1ac2b0cd.size);
+            arrayinsert(targetplayers, player, targetplayers.size);
             arrayremovevalue(topplayers, player);
             arrayremovevalue(possibletargets, player);
         }
@@ -119,7 +119,7 @@ function private update_targets() {
     }
     foreach (player in getplayers()) {
         if (player function_fbb8f1d1()) {
-            foreach (target in var_1ac2b0cd) {
+            foreach (target in targetplayers) {
                 if (target.team != player.team) {
                     player luinotifyevent(#"hash_6b67aa04e378d681", 1, 9);
                     break;

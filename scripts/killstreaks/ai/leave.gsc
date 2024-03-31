@@ -21,7 +21,7 @@ function init_leave(var_edc20efd) {
     /#
         assert(isdefined(self.ai));
     #/
-    self.ai.leave = {#var_edc20efd:var_edc20efd, #state:0};
+    self.ai.leave = {#state:0, #var_edc20efd:var_edc20efd};
 }
 
 // Namespace ai_leave/leave

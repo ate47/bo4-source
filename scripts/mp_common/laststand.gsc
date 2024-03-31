@@ -105,7 +105,7 @@ function function_eb8c0e47(callbackfunc) {
 // Checksum 0x70af7f8, Offset: 0x988
 // Size: 0x66
 function function_414115a0(time, health) {
-    tier = {#health:health, #time:time};
+    tier = {#time:time, #health:health};
     level.var_e86679bd[level.var_e86679bd.size] = tier;
 }
 
@@ -594,7 +594,7 @@ function laststand_bleedout_damage() {
             self.bleedout_time = 0;
             self.var_1cc38de0 = 1;
             vattacker = isdefined(waitresult.eattacker) ? waitresult.eattacker : self;
-            self.var_a1d415ee = {#matchtime:function_f8d53445(), #shitloc:waitresult.shitloc, #vdir:waitresult.vdir, #sweapon:waitresult.weapon, #smeansofdeath:waitresult.smeansofdeath, #idamage:waitresult.idamage, #var_83634238:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #attackerorigin:vattacker.origin, #attacker:waitresult.eattacker, #einflictor:waitresult.einflictor};
+            self.var_a1d415ee = {#einflictor:waitresult.einflictor, #attacker:waitresult.eattacker, #attackerorigin:vattacker.origin, #var_83634238:isplayer(vattacker) ? vattacker getplayerangles() : vattacker.angles, #idamage:waitresult.idamage, #smeansofdeath:waitresult.smeansofdeath, #sweapon:waitresult.weapon, #vdir:waitresult.vdir, #shitloc:waitresult.shitloc, #matchtime:function_f8d53445()};
             self notify(#"update_bleedout");
         }
         if (isdefined(self.var_d75a6ff5)) {
@@ -1341,7 +1341,7 @@ function function_ecdd4b27() {
     if (!isplayer(self) || isdefined(self.var_d75a6ff5)) {
         return;
     }
-    self.var_d75a6ff5 = {#var_35b89428:0, #var_d733f8d7:0, #var_d10f3b9a:0, #bleed_out:0, #death:0, #damage:0, #end_time:0, #start_time:gettime(), #player_xuid:int(self getxuid(1))};
+    self.var_d75a6ff5 = {#player_xuid:int(self getxuid(1)), #start_time:gettime(), #end_time:0, #damage:0, #death:0, #bleed_out:0, #var_d10f3b9a:0, #var_d733f8d7:0, #var_35b89428:0};
 }
 
 // Namespace laststand_mp/laststand

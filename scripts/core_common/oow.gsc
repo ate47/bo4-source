@@ -19,7 +19,7 @@ function autoexec __init__system__() {
 // Checksum 0x11c620ed, Offset: 0x100
 // Size: 0x5c
 function __init__() {
-    level.oow = {#height_max:2147483647, #height_min:-2147483647};
+    level.oow = {#height_min:-2147483647, #height_max:2147483647};
     callback::on_game_playing(&on_game_playing);
 }
 
@@ -28,17 +28,17 @@ function __init__() {
 // Checksum 0x43b466d5, Offset: 0x168
 // Size: 0x174
 function on_game_playing() {
-    var_65792f8b = map::get_script_bundle();
-    if (isdefined(var_65792f8b)) {
-        if (!isdefined(var_65792f8b.var_aa91547b)) {
-            var_65792f8b.var_aa91547b = 0;
+    mapbundle = map::get_script_bundle();
+    if (isdefined(mapbundle)) {
+        if (!isdefined(mapbundle.var_aa91547b)) {
+            mapbundle.var_aa91547b = 0;
         }
-        if (!isdefined(var_65792f8b.var_eac026ad)) {
-            var_65792f8b.var_eac026ad = 0;
+        if (!isdefined(mapbundle.var_eac026ad)) {
+            mapbundle.var_eac026ad = 0;
         }
-        if (var_65792f8b.var_aa91547b != 0 || var_65792f8b.var_eac026ad != 0) {
-            level.oow.height_min = isdefined(var_65792f8b.var_aa91547b) ? var_65792f8b.var_aa91547b : 0;
-            level.oow.height_max = isdefined(var_65792f8b.var_eac026ad) ? var_65792f8b.var_eac026ad : 0;
+        if (mapbundle.var_aa91547b != 0 || mapbundle.var_eac026ad != 0) {
+            level.oow.height_min = isdefined(mapbundle.var_aa91547b) ? mapbundle.var_aa91547b : 0;
+            level.oow.height_max = isdefined(mapbundle.var_eac026ad) ? mapbundle.var_eac026ad : 0;
             /#
                 assert(level.oow.height_min <= level.oow.height_max);
             #/

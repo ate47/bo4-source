@@ -35,21 +35,21 @@ function private function_2c4d3d40() {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x19b119f8, Offset: 0x290
 // Size: 0x326
-function private function_440f0490(var_b91441dd) {
+function private function_440f0490(itemlistbundle) {
     /#
-        assert(isdefined(var_b91441dd) && var_b91441dd.type === "<unknown string>");
+        assert(isdefined(itemlistbundle) && itemlistbundle.type === "<unknown string>");
     #/
     /#
-        assert(var_b91441dd.itemlist.size > 0, "<unknown string>" + var_b91441dd.name + "<unknown string>");
+        assert(itemlistbundle.itemlist.size > 0, "<unknown string>" + itemlistbundle.name + "<unknown string>");
     #/
-    if (var_b91441dd.itemlist.size <= 0) {
+    if (itemlistbundle.itemlist.size <= 0) {
         return;
     }
     weights = [];
     weighttotal = 0;
-    for (rowindex = 0; rowindex < var_b91441dd.itemlist.size; rowindex++) {
-        var_35843db5 = isdefined(var_b91441dd.itemlist[rowindex].minweight) ? var_b91441dd.itemlist[rowindex].minweight : 0;
-        var_ccef9e25 = isdefined(var_b91441dd.itemlist[rowindex].maxweight) ? var_b91441dd.itemlist[rowindex].maxweight : 0;
+    for (rowindex = 0; rowindex < itemlistbundle.itemlist.size; rowindex++) {
+        var_35843db5 = isdefined(itemlistbundle.itemlist[rowindex].minweight) ? itemlistbundle.itemlist[rowindex].minweight : 0;
+        var_ccef9e25 = isdefined(itemlistbundle.itemlist[rowindex].maxweight) ? itemlistbundle.itemlist[rowindex].maxweight : 0;
         minweight = int(min(var_35843db5, var_ccef9e25));
         maxweight = int(max(var_35843db5, var_ccef9e25));
         diff = maxweight - minweight;
@@ -63,14 +63,14 @@ function private function_440f0490(var_b91441dd) {
     for (weightindex = 0; weightindex < weights.size; weightindex++) {
         currentweight = currentweight + weights[weightindex];
         if (var_d54615ef <= currentweight) {
-            var_b91441dd = getscriptbundle(var_b91441dd.itemlist[weightindex].itementry);
+            itemlistbundle = getscriptbundle(itemlistbundle.itemlist[weightindex].itementry);
             /#
-                assert(var_b91441dd.type === "<unknown string>");
+                assert(itemlistbundle.type === "<unknown string>");
             #/
             break;
         }
     }
-    return var_b91441dd;
+    return itemlistbundle;
 }
 
 // Namespace namespace_65181344/namespace_65181344
@@ -142,13 +142,13 @@ function function_e88ecf7f() {
 // Size: 0x12e
 function private function_35461e5f(row, stashitem = 0) {
     items = [];
-    item_name = self.var_b91441dd.itemlist[row].itementry;
+    item_name = self.itemlistbundle.itemlist[row].itementry;
     item = function_62c0d32d(item_name, stashitem);
     if (isdefined(item)) {
         items[items.size] = item;
     }
     for (index = 1; index <= 5; index++) {
-        item_name = self.var_b91441dd.itemlist[row].("childitementry_" + index);
+        item_name = self.itemlistbundle.itemlist[row].("childitementry_" + index);
         if (!isdefined(item_name)) {
             continue;
         }
@@ -205,7 +205,7 @@ function private function_62c0d32d(item_name, stashitem = 0) {
 function private function_98013deb(row) {
     numchildren = 0;
     for (index = 1; index <= 5; index++) {
-        item_name = self.var_b91441dd.itemlist[row].("childitementry_" + index);
+        item_name = self.itemlistbundle.itemlist[row].("childitementry_" + index);
         if (isdefined(item_name)) {
             numchildren++;
         }
@@ -221,7 +221,7 @@ function private _spawn_item(point, row, stashitem = 0) {
     if (!isdefined(point)) {
         return;
     }
-    item_name = self.var_b91441dd.itemlist[row].itementry;
+    item_name = self.itemlistbundle.itemlist[row].itementry;
     if (isdefined(item_name) && isdefined(level.var_4afb8f5a[item_name])) {
         item_name = level.var_4afb8f5a[item_name];
     }
@@ -259,7 +259,7 @@ function private _spawn_item(point, row, stashitem = 0) {
         }
         if (isdefined(vehicle)) {
             level.item_vehicles[level.item_vehicles.size] = vehicle;
-            level.var_8819644a[level.var_8819644a.size] = {#used:0, #vehicle:vehicle, #vehicletype:vehicle.vehicletype, #origin:vehicle.origin};
+            level.var_8819644a[level.var_8819644a.size] = {#origin:vehicle.origin, #vehicletype:vehicle.vehicletype, #vehicle:vehicle, #used:0};
             if (isairborne(vehicle)) {
                 spawnoffset = (0, 0, vehicle.height);
                 vehicle.origin = point.origin + spawnoffset;
@@ -333,7 +333,7 @@ function private _spawn_item(point, row, stashitem = 0) {
     #/
     if (numchildren > 0) {
         for (index = 1; index <= 5; index++) {
-            item_name = self.var_b91441dd.itemlist[row].("childitementry_" + index);
+            item_name = self.itemlistbundle.itemlist[row].("childitementry_" + index);
             if (isdefined(item_name)) {
                 function_f0e5262b(item_name, point, index, stashitem, point.targetname);
             }
@@ -403,7 +403,7 @@ function private function_f0e5262b(item_name, point, childindex, stashitem = 0, 
 // Size: 0x5c6
 function private function_ea39d1fa(stash) {
     stash.var_aa9f8f87 = self.scriptbundlename;
-    var_aa9f8f87 = self.var_b91441dd;
+    var_aa9f8f87 = self.itemlistbundle;
     if (isdefined(var_aa9f8f87) && isdefined(level.var_fb9a8536[var_aa9f8f87.name])) {
         var_aa9f8f87 = getscriptbundle(level.var_fb9a8536[var_aa9f8f87.name]);
     }
@@ -433,7 +433,7 @@ function private function_ea39d1fa(stash) {
                 continue;
             }
             var_eff83f3 = var_1dd9b7f1;
-            self.var_b91441dd = var_eff83f3;
+            self.itemlistbundle = var_eff83f3;
             if (var_ee110db8.count > 0) {
                 var_ee110db8.count--;
             }
@@ -444,8 +444,8 @@ function private function_ea39d1fa(stash) {
         if (!isdefined(var_eff83f3.itemlist[row].itementry)) {
             continue;
         }
-        var_b91441dd = getscriptbundle(var_eff83f3.itemlist[row].itementry);
-        var_bbe618cc = var_b91441dd.type == #"itemspawnlist" || var_b91441dd.type == #"itemspawnlistalias";
+        itemlistbundle = getscriptbundle(var_eff83f3.itemlist[row].itementry);
+        var_bbe618cc = itemlistbundle.type == #"itemspawnlist" || itemlistbundle.type == #"itemspawnlistalias";
         available = isdefined(var_eff83f3.itemlist[row].available) ? var_eff83f3.itemlist[row].available : 0;
         var_8107154f = [];
         do {
@@ -457,18 +457,18 @@ function private function_ea39d1fa(stash) {
             available--;
         } while (available > 0);
         if (var_bbe618cc) {
-            if (var_b91441dd.type == #"itemspawnlistalias") {
-                var_12ab6449 = function_440f0490(var_b91441dd);
+            if (itemlistbundle.type == #"itemspawnlistalias") {
+                var_12ab6449 = function_440f0490(itemlistbundle);
                 if (!isdefined(var_12ab6449)) {
                     continue;
                 }
-                var_b91441dd = var_12ab6449;
+                itemlistbundle = var_12ab6449;
             }
-            if (isdefined(var_b91441dd) && isdefined(level.var_fb9a8536[var_b91441dd.name])) {
-                var_b91441dd = getscriptbundle(level.var_fb9a8536[var_b91441dd.name]);
+            if (isdefined(itemlistbundle) && isdefined(level.var_fb9a8536[itemlistbundle.name])) {
+                itemlistbundle = getscriptbundle(level.var_fb9a8536[itemlistbundle.name]);
             }
             itemspawnlist = spawnstruct();
-            itemspawnlist.var_b91441dd = var_b91441dd;
+            itemspawnlist.itemlistbundle = itemlistbundle;
             itemspawnlist function_e25c9d12(var_8107154f, var_8107154f.size, 1);
         }
         if (getrealtime() - level.var_d0676b07 > level.var_3e9c9a35) {
@@ -476,14 +476,14 @@ function private function_ea39d1fa(stash) {
             level.var_d0676b07 = getrealtime();
         }
     }
-    self.var_b91441dd = var_aa9f8f87;
+    self.itemlistbundle = var_aa9f8f87;
 }
 
 // Namespace namespace_65181344/namespace_65181344
 // Params 2, eflags: 0x5 linked
 // Checksum 0xfc49d908, Offset: 0x2470
 // Size: 0x75e
-function private function_216a69d6(var_9f19fcb6, reset) {
+function private function_216a69d6(spawnchance, reset) {
     dynents = array();
     if (isdefined(self.target)) {
         dynents = getdynentarray(self.target, 1);
@@ -502,15 +502,15 @@ function private function_216a69d6(var_9f19fcb6, reset) {
         waitframe(1);
         level.var_d0676b07 = getrealtime();
     }
-    maxspawns = isdefined(self.var_b91441dd.var_9b009839) ? self.var_b91441dd.var_9b009839 : 0;
+    maxspawns = isdefined(self.itemlistbundle.var_9b009839) ? self.itemlistbundle.var_9b009839 : 0;
     var_418a2e03 = [];
     foreach (dynent in dynents) {
         level.item_spawn_stashes[level.item_spawn_stashes.size] = dynent;
-        dynent.lootlocker = self.var_b91441dd.lootlocker;
+        dynent.lootlocker = self.itemlistbundle.lootlocker;
         if (isdefined(dynent.lootlocker) && dynent.lootlocker) {
         }
         randint = function_d59c2d03(100);
-        shouldspawn = randint <= var_9f19fcb6;
+        shouldspawn = randint <= spawnchance;
         if (maxspawns > -1 && var_418a2e03.size >= maxspawns) {
             shouldspawn = 0;
         }
@@ -541,8 +541,8 @@ function private function_216a69d6(var_9f19fcb6, reset) {
         if (point.hidetime == -1) {
             continue;
         }
-        if (isdefined(self.var_b91441dd.var_7fb0967b) && !var_a9826383) {
-            var_1ba7b9c8 = arraysortclosest(level.var_5ce07338, point.origin, 1, 0, self.var_b91441dd.var_7fb0967b);
+        if (isdefined(self.itemlistbundle.var_7fb0967b) && !var_a9826383) {
+            var_1ba7b9c8 = arraysortclosest(level.var_5ce07338, point.origin, 1, 0, self.itemlistbundle.var_7fb0967b);
             if (var_1ba7b9c8.size > 0) {
                 continue;
             }
@@ -552,9 +552,9 @@ function private function_216a69d6(var_9f19fcb6, reset) {
         dynent = var_418a2e03[var_c041d1bd];
         dynent.angles = point.angles;
         dynent.origin = point.origin;
-        dynent.hintstring = self.var_b91441dd.hintstring;
-        dynent.displayname = self.var_b91441dd.displayname;
-        dynent.var_3d685b35 = isdefined(self.var_b91441dd.var_3d685b35) ? self.var_b91441dd.var_3d685b35 : 0;
+        dynent.hintstring = self.itemlistbundle.hintstring;
+        dynent.displayname = self.itemlistbundle.displayname;
+        dynent.var_3d685b35 = isdefined(self.itemlistbundle.var_3d685b35) ? self.itemlistbundle.var_3d685b35 : 0;
         level.var_5ce07338[level.var_5ce07338.size] = dynent;
         targetname = isdefined(dynent.targetname) ? dynent.targetname : dynent.target;
         if (!isdefined(level.var_93d08989[targetname])) {
@@ -582,8 +582,8 @@ function private function_216a69d6(var_9f19fcb6, reset) {
 // Checksum 0x3f2d204c, Offset: 0x2bd8
 // Size: 0x9c
 function private _spawn(reset) {
-    if (isdefined(self.var_b91441dd.supplystash) && self.var_b91441dd.supplystash) {
-        self function_216a69d6(isdefined(self.var_b91441dd.var_fde72c94) ? self.var_b91441dd.var_fde72c94 : 100, reset);
+    if (isdefined(self.itemlistbundle.supplystash) && self.itemlistbundle.supplystash) {
+        self function_216a69d6(isdefined(self.itemlistbundle.var_fde72c94) ? self.itemlistbundle.var_fde72c94 : 100, reset);
         return;
     }
     self function_e25c9d12(self.var_8107154f, self.var_8107154f.size);
@@ -594,15 +594,15 @@ function private _spawn(reset) {
 // Checksum 0x9f19e227, Offset: 0x2c80
 // Size: 0x242
 function private _setup() {
-    self.var_b91441dd = getscriptbundle(self.scriptbundlename);
-    if (isdefined(self.var_b91441dd) && isdefined(level.var_fb9a8536[self.var_b91441dd.name])) {
-        self.var_b91441dd = getscriptbundle(level.var_fb9a8536[self.var_b91441dd.name]);
+    self.itemlistbundle = getscriptbundle(self.scriptbundlename);
+    if (isdefined(self.itemlistbundle) && isdefined(level.var_fb9a8536[self.itemlistbundle.name])) {
+        self.itemlistbundle = getscriptbundle(level.var_fb9a8536[self.itemlistbundle.name]);
     }
     /#
-        assert(isdefined(self.var_b91441dd), "<unknown string>" + self.scriptbundlename + "<unknown string>");
+        assert(isdefined(self.itemlistbundle), "<unknown string>" + self.scriptbundlename + "<unknown string>");
     #/
     /#
-        assert(isdefined(self.var_b91441dd.itemlist), "<unknown string>" + self.scriptbundlename + "<unknown string>");
+        assert(isdefined(self.itemlistbundle.itemlist), "<unknown string>" + self.scriptbundlename + "<unknown string>");
     #/
     self.remaining = isdefined(self.count) ? self.count : 0;
     self.points = function_d0dc448b(self.target);
@@ -612,7 +612,7 @@ function private _setup() {
     }
     if (!isdefined(level.var_28cd0b1f[self.target])) {
         /#
-            assert(isdefined(self.points) && self.points.size > 0, "<unknown string>" + self.var_b91441dd.name + "<unknown string>" + self.target);
+            assert(isdefined(self.points) && self.points.size > 0, "<unknown string>" + self.itemlistbundle.name + "<unknown string>" + self.target);
         #/
     }
     if (!isdefined(self.points)) {
@@ -627,7 +627,7 @@ function private _setup() {
 function private _teardown() {
     self.points = undefined;
     self.var_8107154f = undefined;
-    self.var_b91441dd = undefined;
+    self.itemlistbundle = undefined;
     self.angles = undefined;
     self.available = undefined;
     self.var_ccc6d5b7 = undefined;
@@ -700,7 +700,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
         assert(isint(spawncount));
     #/
     /#
-        assert(isdefined(self.var_b91441dd));
+        assert(isdefined(self.itemlistbundle));
     #/
     /#
         assert(!(isdefined(self.vehiclespawner) && self.vehiclespawner));
@@ -712,16 +712,16 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
         return;
     }
     items = [];
-    self.rows = isdefined(self.var_b91441dd.itemlist.size) ? self.var_b91441dd.itemlist.size : 0;
+    self.rows = isdefined(self.itemlistbundle.itemlist.size) ? self.itemlistbundle.itemlist.size : 0;
     self.count = spawncount;
     self.available = [];
     self.weights = [];
     self.weighttotal = 0;
     for (row = 0; row < self.rows; row++) {
-        self.available[row] = isdefined(self.var_b91441dd.itemlist[row].available) ? self.var_b91441dd.itemlist[row].available : 0;
+        self.available[row] = isdefined(self.itemlistbundle.itemlist[row].available) ? self.itemlistbundle.itemlist[row].available : 0;
         if (self.available[row] != 0) {
-            var_35843db5 = isdefined(self.var_b91441dd.itemlist[row].minweight) ? self.var_b91441dd.itemlist[row].minweight : 0;
-            var_ccef9e25 = isdefined(self.var_b91441dd.itemlist[row].maxweight) ? self.var_b91441dd.itemlist[row].maxweight : 0;
+            var_35843db5 = isdefined(self.itemlistbundle.itemlist[row].minweight) ? self.itemlistbundle.itemlist[row].minweight : 0;
+            var_ccef9e25 = isdefined(self.itemlistbundle.itemlist[row].maxweight) ? self.itemlistbundle.itemlist[row].maxweight : 0;
             minweight = int(min(var_35843db5, var_ccef9e25));
             maxweight = int(max(var_35843db5, var_ccef9e25));
             diff = maxweight - minweight;
@@ -846,7 +846,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
         if (var_8107154f[var_a1b91de4[pointindex]] == -1) {
             continue;
         }
-        itementry = self.var_b91441dd.itemlist[var_75aa5cbb].itementry;
+        itementry = self.itemlistbundle.itemlist[var_75aa5cbb].itementry;
         if (isdefined(itementry) && itementry != "") {
             scriptbundle = isdefined(level.var_de3d5d56) && isdefined(level.var_de3d5d56[itementry]) ? level.var_de3d5d56[itementry] : getscriptbundle(itementry);
             if (isdefined(scriptbundle) && isdefined(scriptbundle.type) && (scriptbundle.type == #"itemspawnlist" || scriptbundle.type == #"itemspawnlistalias")) {
@@ -861,7 +861,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
             items = arraycombine(items, spawnitems, 1, 0);
         } else {
             itemspawnpoint = function_b1702735(var_8107154f[var_a1b91de4[pointindex]]);
-            if (isdefined(self.var_b91441dd.var_7fb0967b) && !var_a9826383) {
+            if (isdefined(self.itemlistbundle.var_7fb0967b) && !var_a9826383) {
                 var_8822f354 = 0;
                 itemtype = undefined;
                 if (isdefined(itementry)) {
@@ -870,16 +870,16 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
                         itemtype = scriptbundle.itemtype;
                     }
                 }
-                if (isdefined(self.var_b91441dd.var_dc7ffbef) && isdefined(itemtype)) {
+                if (isdefined(self.itemlistbundle.var_dc7ffbef) && isdefined(itemtype)) {
                     if (itemtype == #"vehicle") {
                         vehicles = getvehiclearray();
-                        nearbyvehicles = arraysortclosest(vehicles, itemspawnpoint.origin, 1, 0, self.var_b91441dd.var_7fb0967b);
+                        nearbyvehicles = arraysortclosest(vehicles, itemspawnpoint.origin, 1, 0, self.itemlistbundle.var_7fb0967b);
                         var_8822f354 = nearbyvehicles.size;
                     } else {
-                        var_8822f354 = function_579fdc53(itemspawnpoint.origin, undefined, itemtype, self.var_b91441dd.var_7fb0967b, -1, -2147483647);
+                        var_8822f354 = function_579fdc53(itemspawnpoint.origin, undefined, itemtype, self.itemlistbundle.var_7fb0967b, -1, -2147483647);
                     }
                 } else {
-                    var_8822f354 = function_6de8969b(itemspawnpoint.origin, undefined, self.var_b91441dd.var_7fb0967b, -1, 1, -2147483647);
+                    var_8822f354 = function_6de8969b(itemspawnpoint.origin, undefined, self.itemlistbundle.var_7fb0967b, -1, 1, -2147483647);
                 }
                 if (var_8822f354 > 0) {
                     continue;
@@ -898,30 +898,30 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
         waitframe(1);
         level.var_d0676b07 = getrealtime();
     }
-    for (index = 0; index < self.var_b91441dd.itemlist.size; index++) {
+    for (index = 0; index < self.itemlistbundle.itemlist.size; index++) {
         if (!isdefined(self.var_ccc6d5b7[index])) {
             continue;
         }
-        itemlist = self.var_b91441dd.itemlist[index];
+        itemlist = self.itemlistbundle.itemlist[index];
         if (!isdefined(itemlist.itementry) || itemlist.itementry === "") {
             continue;
         }
-        var_b91441dd = getscriptbundle(itemlist.itementry);
-        if (!isdefined(var_b91441dd.type) || var_b91441dd.type != #"itemspawnlist" && var_b91441dd.type != #"itemspawnlistalias") {
+        itemlistbundle = getscriptbundle(itemlist.itementry);
+        if (!isdefined(itemlistbundle.type) || itemlistbundle.type != #"itemspawnlist" && itemlistbundle.type != #"itemspawnlistalias") {
             continue;
         }
-        if (var_b91441dd.type == #"itemspawnlistalias") {
-            var_12ab6449 = function_440f0490(var_b91441dd);
+        if (itemlistbundle.type == #"itemspawnlistalias") {
+            var_12ab6449 = function_440f0490(itemlistbundle);
             if (!isdefined(var_12ab6449)) {
                 continue;
             }
-            var_b91441dd = var_12ab6449;
+            itemlistbundle = var_12ab6449;
         }
-        if (isdefined(var_b91441dd) && isdefined(level.var_fb9a8536[var_b91441dd.name])) {
-            var_b91441dd = getscriptbundle(level.var_fb9a8536[var_b91441dd.name]);
+        if (isdefined(itemlistbundle) && isdefined(level.var_fb9a8536[itemlistbundle.name])) {
+            itemlistbundle = getscriptbundle(level.var_fb9a8536[itemlistbundle.name]);
         }
         itemspawnlist = spawnstruct();
-        itemspawnlist.var_b91441dd = var_b91441dd;
+        itemspawnlist.itemlistbundle = itemlistbundle;
         itemspawnlist.origin = self.origin;
         itemspawnlist.angles = self.angles;
         var_4168f4f3 = itemspawnlist function_e25c9d12(var_8107154f, self.var_ccc6d5b7[index], stashitem, var_a1b91de4);
@@ -937,7 +937,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
 function private function_c6477714(reset) {
     override = spawnstruct();
     override.scriptbundlename = #"prematch_override_list";
-    override.var_b91441dd = getscriptbundle(override.scriptbundlename);
+    override.itemlistbundle = getscriptbundle(override.scriptbundlename);
     override.var_ebfb74b9 = function_8322cf16();
     var_8107154f = [];
     for (index = 0; index < override.var_ebfb74b9; index++) {
@@ -945,8 +945,8 @@ function private function_c6477714(reset) {
     }
     var_1d9375fc = struct::get_array("scriptbundle_itemspawnlist", "classname");
     foreach (group in var_1d9375fc) {
-        group.var_b91441dd = getscriptbundle(group.scriptbundlename);
-        if (isdefined(group.var_b91441dd.vehiclespawner) && group.var_b91441dd.vehiclespawner) {
+        group.itemlistbundle = getscriptbundle(group.scriptbundlename);
+        if (isdefined(group.itemlistbundle.vehiclespawner) && group.itemlistbundle.vehiclespawner) {
             spawnpoints = function_91b29d2a(group.target);
             foreach (spawnpoint in spawnpoints) {
                 var_8107154f[spawnpoint.id] = -1;
@@ -958,8 +958,8 @@ function private function_c6477714(reset) {
         }
     }
     foreach (group in var_1d9375fc) {
-        group.var_b91441dd = getscriptbundle(group.scriptbundlename);
-        if (isdefined(group.var_b91441dd.supplystash) && group.var_b91441dd.supplystash) {
+        group.itemlistbundle = getscriptbundle(group.scriptbundlename);
+        if (isdefined(group.itemlistbundle.supplystash) && group.itemlistbundle.supplystash) {
             dynents = getdynentarray(group.target, 1);
             foreach (dynent in dynents) {
                 level.item_spawn_stashes[level.item_spawn_stashes.size] = dynent;
@@ -1102,31 +1102,31 @@ function function_50a2c746(&var_f38d5b52, reset = 1, var_87e9f374 = 0) {
         if (!isdefined(group.target)) {
             continue;
         }
-        var_b91441dd = getscriptbundle(group.scriptbundlename);
-        if (isdefined(var_b91441dd) && isdefined(level.var_fb9a8536[var_b91441dd.name])) {
-            var_b91441dd = getscriptbundle(level.var_fb9a8536[var_b91441dd.name]);
+        itemlistbundle = getscriptbundle(group.scriptbundlename);
+        if (isdefined(itemlistbundle) && isdefined(level.var_fb9a8536[itemlistbundle.name])) {
+            itemlistbundle = getscriptbundle(level.var_fb9a8536[itemlistbundle.name]);
         }
-        if (!isdefined(var_b91441dd)) {
+        if (!isdefined(itemlistbundle)) {
             continue;
         }
         if (var_87e9f374) {
-            if (!(isdefined(var_b91441dd.var_dc91e192) && var_b91441dd.var_dc91e192) || !(isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash)) {
+            if (!(isdefined(itemlistbundle.var_dc91e192) && itemlistbundle.var_dc91e192) || !(isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash)) {
                 continue;
             }
-        } else if (isdefined(var_b91441dd.var_dc91e192) && var_b91441dd.var_dc91e192 && isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash) {
+        } else if (isdefined(itemlistbundle.var_dc91e192) && itemlistbundle.var_dc91e192 && isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash) {
             continue;
         }
         if (isdefined(var_f38d5b52[group.target])) {
-            if (!(isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash)) {
+            if (!(isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash)) {
                 continue;
             }
         }
         var_f38d5b52[group.target] = 1;
         if (getdvarint(#"hash_424f2e897e67b1ba", 0)) {
-            if (!(isdefined(var_b91441dd.var_bb617d29) && var_b91441dd.var_bb617d29) && !(isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash) && !(isdefined(var_b91441dd.vehiclespawner) && var_b91441dd.vehiclespawner)) {
+            if (!(isdefined(itemlistbundle.var_bb617d29) && itemlistbundle.var_bb617d29) && !(isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash) && !(isdefined(itemlistbundle.vehiclespawner) && itemlistbundle.vehiclespawner)) {
                 continue;
             }
-        } else if (isdefined(var_b91441dd.var_bb617d29) && var_b91441dd.var_bb617d29) {
+        } else if (isdefined(itemlistbundle.var_bb617d29) && itemlistbundle.var_bb617d29) {
             continue;
         }
         group function_9db93def();
@@ -1185,9 +1185,9 @@ function setup_groups(reset = 1) {
     level.item_vehicles = [];
     level.var_8819644a = [];
     level.var_5b2a8d88 = [];
-    level.var_cc113617 = [5:270, 4:225, 3:315, 2:120, 1:50, 0:-130];
-    level.var_82e94a26 = [5:0, 4:5, 3:-15, 2:-5, 1:10];
-    level.var_69dda516 = [5:25, 4:25, 3:25, 2:32, 1:34, 0:17];
+    level.var_cc113617 = [-130, 50, 120, 315, 225, 270];
+    level.var_82e94a26 = [1:10, 2:-5, 3:-15, 4:5, 5:0];
+    level.var_69dda516 = [17, 34, 32, 25, 25, 25];
     /#
         level.var_136445c0 = 0;
         level.var_d80c35aa = [];
@@ -1250,21 +1250,21 @@ function function_5eada592(scriptbundlename, linkto = 1) {
         #/
         return;
     }
-    self.var_b91441dd = getscriptbundle(scriptbundlename);
-    if (!isdefined(self.var_b91441dd)) {
+    self.itemlistbundle = getscriptbundle(scriptbundlename);
+    if (!isdefined(self.itemlistbundle)) {
         /#
             assert(0);
         #/
         return;
     }
     items = [];
-    for (row = 0; row < self.var_b91441dd.itemlist.size; row++) {
-        if (!isdefined(self.var_b91441dd.itemlist[row].itementry)) {
+    for (row = 0; row < self.itemlistbundle.itemlist.size; row++) {
+        if (!isdefined(self.itemlistbundle.itemlist[row].itementry)) {
             continue;
         }
-        var_b91441dd = getscriptbundle(self.var_b91441dd.itemlist[row].itementry);
-        var_bbe618cc = var_b91441dd.type == #"itemspawnlist" || var_b91441dd.type == #"itemspawnlistalias";
-        available = isdefined(self.var_b91441dd.itemlist[row].available) ? self.var_b91441dd.itemlist[row].available : 0;
+        itemlistbundle = getscriptbundle(self.itemlistbundle.itemlist[row].itementry);
+        var_bbe618cc = itemlistbundle.type == #"itemspawnlist" || itemlistbundle.type == #"itemspawnlistalias";
+        available = isdefined(self.itemlistbundle.itemlist[row].available) ? self.itemlistbundle.itemlist[row].available : 0;
         var_8107154f = [];
         do {
             var_8107154f[var_8107154f.size] = -2;
@@ -1275,18 +1275,18 @@ function function_5eada592(scriptbundlename, linkto = 1) {
             available--;
         } while (available > 0);
         if (var_bbe618cc) {
-            if (var_b91441dd.type == #"itemspawnlistalias") {
-                var_12ab6449 = function_440f0490(var_b91441dd);
+            if (itemlistbundle.type == #"itemspawnlistalias") {
+                var_12ab6449 = function_440f0490(itemlistbundle);
                 if (!isdefined(var_12ab6449)) {
                     continue;
                 }
-                var_b91441dd = var_12ab6449;
+                itemlistbundle = var_12ab6449;
             }
-            if (isdefined(var_b91441dd) && isdefined(level.var_fb9a8536[var_b91441dd.name])) {
-                var_b91441dd = getscriptbundle(level.var_fb9a8536[var_b91441dd.name]);
+            if (isdefined(itemlistbundle) && isdefined(level.var_fb9a8536[itemlistbundle.name])) {
+                itemlistbundle = getscriptbundle(level.var_fb9a8536[itemlistbundle.name]);
             }
             itemspawnlist = spawnstruct();
-            itemspawnlist.var_b91441dd = var_b91441dd;
+            itemspawnlist.itemlistbundle = itemlistbundle;
             spawnitems = itemspawnlist function_e25c9d12(var_8107154f, var_8107154f.size, 1);
             items = arraycombine(items, spawnitems, 1, 0);
         }
@@ -1329,7 +1329,7 @@ function function_fd87c780(scriptbundlename, itemcount) {
         return;
     }
     itemgroup = spawnstruct();
-    itemgroup.var_b91441dd = getscriptbundle(scriptbundlename);
+    itemgroup.itemlistbundle = getscriptbundle(scriptbundlename);
     itemgroup.origin = self.origin;
     itemgroup.angles = self.angles;
     var_8107154f = [];

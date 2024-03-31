@@ -686,7 +686,7 @@ function private function_9a8dc0ec(localclientnum, playerhealth, forceupdate) {
         }
     }
     if (new_blood_stage != prior_blood_stage || forceupdate) {
-        ramptime = prior_blood_stage < new_blood_stage ? level.blood.var_49774f1 : level.blood.var_587ce5b0;
+        ramptime = prior_blood_stage < new_blood_stage ? level.blood.var_587ce5b0 : level.blood.var_49774f1;
         self thread function_c0cdd1f2(localclientnum, level.blood.fade[prior_blood_stage], level.blood.fade[new_blood_stage], ramptime, #"fade", self.pstfx_blood);
         self thread function_c0cdd1f2(localclientnum, level.blood.opacity[prior_blood_stage], level.blood.opacity[new_blood_stage], ramptime, #"opacity", self.pstfx_blood);
         self thread function_c0cdd1f2(localclientnum, level.blood.var_4c8629ad[prior_blood_stage], level.blood.var_4c8629ad[new_blood_stage], ramptime, #"vignette darkening amount", self.pstfx_blood);

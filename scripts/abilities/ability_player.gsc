@@ -645,7 +645,7 @@ function turn_gadget_on(slot, weapon) {
     } else {
         self function_33644ff2(game.timepassed, weapon.name);
     }
-    level notify(#"hero_gadget_activated", {#weapon:weapon, #player:self});
+    level notify(#"hero_gadget_activated", {#player:self, #weapon:weapon});
     self notify(#"hero_gadget_activated", {#weapon:weapon});
     if (isdefined(level.cybercom) && isdefined(level.cybercom._ability_turn_on)) {
         self thread [[ level.cybercom._ability_turn_on ]](slot, weapon);
@@ -653,7 +653,7 @@ function turn_gadget_on(slot, weapon) {
     self.pers[#"herogadgetnotified"][slot] = 0;
     xuid = int(self getxuid(1));
     if (sessionmodeismultiplayergame()) {
-        mpheropowerevents = {#xuid:xuid, #playername:self.name, #powerstate:"activated", #name:self._gadgets_player[slot].name, #gametime:function_f8d53445(), #spawnid:getplayerspawnid(self)};
+        mpheropowerevents = {#spawnid:getplayerspawnid(self), #gametime:function_f8d53445(), #name:self._gadgets_player[slot].name, #powerstate:"activated", #playername:self.name, #xuid:xuid};
         function_92d1707f(#"hash_2d561b2f8bbe1aac", mpheropowerevents);
     }
     if (isdefined(level.playgadgetactivate)) {
@@ -710,7 +710,7 @@ function turn_gadget_off(slot, weapon) {
     self notify(#"heroability_off", {#weapon:weapon});
     xuid = int(self getxuid(1));
     if (sessionmodeismultiplayergame()) {
-        mpheropowerevents = {#xuid:xuid, #playername:self.name, #powerstate:"expired", #name:self._gadgets_player[slot].name, #gametime:function_f8d53445(), #spawnid:getplayerspawnid(self)};
+        mpheropowerevents = {#spawnid:getplayerspawnid(self), #gametime:function_f8d53445(), #name:self._gadgets_player[slot].name, #powerstate:"expired", #playername:self.name, #xuid:xuid};
         function_92d1707f(#"hash_2d561b2f8bbe1aac", mpheropowerevents);
     }
     if (isdefined(level.oldschool) && level.oldschool) {
@@ -887,7 +887,7 @@ function gadget_ready(slot, weapon) {
     }
     xuid = int(self getxuid(1));
     if (sessionmodeismultiplayergame()) {
-        mpheropowerevents = {#xuid:xuid, #playername:self.name, #powerstate:"ready", #name:self._gadgets_player[slot].name, #gametime:function_f8d53445(), #spawnid:getplayerspawnid(self)};
+        mpheropowerevents = {#spawnid:getplayerspawnid(self), #gametime:function_f8d53445(), #name:self._gadgets_player[slot].name, #powerstate:"ready", #playername:self.name, #xuid:xuid};
         function_92d1707f(#"hash_2d561b2f8bbe1aac", mpheropowerevents);
     }
     if (isdefined(type) && isdefined(level._gadgets_level[type]) && isdefined(level._gadgets_level[type].on_ready)) {

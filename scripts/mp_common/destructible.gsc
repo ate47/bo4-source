@@ -365,7 +365,7 @@ function car_fire_think(attacker) {
 function event_handler[destructible] codecallback_destructibleevent(eventstruct) {
     if (eventstruct.event == "broken") {
         event_callback(eventstruct.notify_type, eventstruct.attacker, eventstruct.weapon, eventstruct.piece, eventstruct.point, eventstruct.dir, eventstruct.mod);
-        self notify(eventstruct.event, {#attacker:eventstruct.attacker, #type:eventstruct.notify_type});
+        self notify(eventstruct.event, {#type:eventstruct.notify_type, #attacker:eventstruct.attacker});
         return;
     }
     if (eventstruct.event == "breakafter") {

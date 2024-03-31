@@ -131,7 +131,7 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_a4a535e = var_a4a535e;
     level.proplist = [];
     level.propindex = [];
-    level.var_8d2f7166 = [];
+    level.spawnproplist = [];
     level.abilities = array("FLASH", "CLONE");
     populateproplist();
     level.graceperiod = int(level.phsettings.prophidetime + 0.5);
@@ -1538,8 +1538,8 @@ function populateproplist() {
 // Size: 0x54c
 function setupprop() {
     self notsolid();
-    if (!isdefined(level.phsettings.var_b5f21379) || level.phsettings.var_b5f21379 == 0) {
-        level.phsettings.var_b5f21379 = self setcontents(0);
+    if (!isdefined(level.phsettings.playercontents) || level.phsettings.playercontents == 0) {
+        level.phsettings.playercontents = self setcontents(0);
     } else {
         self setcontents(0);
     }

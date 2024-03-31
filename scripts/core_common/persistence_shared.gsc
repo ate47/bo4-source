@@ -348,7 +348,7 @@ function event_handler[player_gunchallengecomplete] codecallback_gunchallengecom
     rankid = eventstruct.rank_id;
     islastrank = eventstruct.is_lastrank;
     if (sessionmodeiscampaigngame()) {
-        self notify(#"gun_level_complete", {#is_last_rank:islastrank, #rank:rankid, #item_index:itemindex, #attachment_index:attachmentindex, #reward_xp:rewardxp});
+        self notify(#"gun_level_complete", {#reward_xp:rewardxp, #attachment_index:attachmentindex, #item_index:itemindex, #rank:rankid, #is_last_rank:islastrank});
         return;
     }
     self luinotifyevent(#"gun_level_complete", 4, rankid, itemindex, attachmentindex, rewardxp);

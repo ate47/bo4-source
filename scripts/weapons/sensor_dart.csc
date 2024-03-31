@@ -96,7 +96,7 @@ function private function_e3a084cd(localclientnum) {
     self thread function_6527a2e9(localclientnum, "o_recon_sensor_gun_projectile_closed_idle");
     var_9cf4b61c = self getentitynumber();
     self endon(#"death");
-    var_18452954 = getservertime(localclientnum);
+    flystarttime = getservertime(localclientnum);
     startorigin = self.origin;
     var_dc3f8ecd = startorigin;
     var_3d3d7bb1 = 0;
@@ -111,7 +111,7 @@ function private function_e3a084cd(localclientnum) {
     while (var_3d3d7bb1 < 250) {
         var_dc3f8ecd = self.origin;
         var_450cbe48 = getservertime(localclientnum);
-        elapsedtime = var_450cbe48 - var_18452954;
+        elapsedtime = var_450cbe48 - flystarttime;
         if (true) {
             var_e460f21 = math::clamp(elapsedtime / 500, 0, 1);
             radius = lerpfloat(200, 600, var_e460f21);

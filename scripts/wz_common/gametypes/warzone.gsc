@@ -263,7 +263,7 @@ function private function_c2a75696() {
 // Checksum 0x8412a6b5, Offset: 0x1a20
 // Size: 0x84
 function private function_75189494(var_c6ce2627, playercount, var_404397c4) {
-    data = {#var_4a2854ac:var_404397c4, #var_f388074a:playercount, #var_19b5b856:var_c6ce2627};
+    data = {#var_19b5b856:var_c6ce2627, #var_f388074a:playercount, #var_4a2854ac:var_404397c4};
     function_92d1707f(#"hash_7bcd081bd6940681", data);
 }
 
@@ -888,7 +888,7 @@ function function_f1394038() {
             } else if (!isarray(var_17616452)) {
                 var_17616452 = array(var_17616452);
             }
-            var_17616452[var_17616452.size] = {#score:team_score, #damage:damage_done, #kills:team_kills, #last_alive:undefined, #players:players, #team:team};
+            var_17616452[var_17616452.size] = {#team:team, #players:players, #last_alive:undefined, #kills:team_kills, #damage:damage_done, #score:team_score};
         }
     }
     var_ec950e92 = array::merge_sort(var_17616452, &function_74a8f2ed);
@@ -986,7 +986,7 @@ function function_c7eae573() {
             last_alive = function_94203702(team, players);
             team_kills = function_7e309c84(team, players);
             damage_done = function_3915e148(team, players);
-            var_d72df62[var_d72df62.size] = {#damage:damage_done, #kills:team_kills, #last_alive:last_alive, #players:players, #team:team};
+            var_d72df62[var_d72df62.size] = {#team:team, #players:players, #last_alive:last_alive, #kills:team_kills, #damage:damage_done};
         }
     }
     var_ec950e92 = array::merge_sort(var_d72df62, &function_39971b81);
@@ -1515,7 +1515,7 @@ function function_47851c07() {
 // Checksum 0x5b446bbc, Offset: 0x6a38
 // Size: 0x356
 function function_de15dc32(killed_player, disconnected_player) {
-    player_count = {#alive_platoons:[], #alive:0, #total:0};
+    player_count = {#total:0, #alive:0, #alive_platoons:[]};
     var_77cfc33d = game.state == "pregame" || function_47851c07();
     foreach (team in level.teams) {
         players = getplayers(team);
@@ -1605,14 +1605,14 @@ function function_e91890a7() {
                 break;
             }
         }
-        var_31cc0ff8 = 0;
+        aliveteammates = 0;
         teammembers = getplayers(player.team);
         foreach (member in teammembers) {
             if (isalive(member) && member != player) {
-                var_31cc0ff8++;
+                aliveteammates++;
             }
         }
-        player clientfield::set_player_uimodel("hudItems.aliveTeammateCount", var_31cc0ff8);
+        player clientfield::set_player_uimodel("hudItems.aliveTeammateCount", aliveteammates);
     }
     level.var_22df4165 = undefined;
 }
@@ -1871,11 +1871,11 @@ function private function_1e150a0b(player) {
 // Size: 0x17c
 function private function_293cd859(ent) {
     if (isplayer(ent)) {
-        data = {#type:#"player", #pos_z:ent.origin[2], #pos_y:ent.origin[1], #pos_x:ent.origin[0]};
+        data = {#pos_x:ent.origin[0], #pos_y:ent.origin[1], #pos_z:ent.origin[2], #type:#"player"};
         function_92d1707f(#"hash_5820ed7a498888c4", data);
         return;
     }
-    data = {#type:ent.model, #pos_z:ent.origin[2], #pos_y:ent.origin[1], #pos_x:ent.origin[0]};
+    data = {#pos_x:ent.origin[0], #pos_y:ent.origin[1], #pos_z:ent.origin[2], #type:ent.model};
     function_92d1707f(#"hash_5820ed7a498888c4", data);
 }
 
@@ -1936,9 +1936,9 @@ function private function_3c597e8d() {
 function private function_2a3d483d(start) {
     mapcenter = function_3c597e8d();
     jumpdistance = 600;
-    var_d7afe542 = mapcenter - start;
-    var_d80c8cde = length(var_d7afe542);
-    var_fa57b4b3 = vectornormalize(var_d7afe542);
+    tomapcenter = mapcenter - start;
+    var_d80c8cde = length(tomapcenter);
+    var_fa57b4b3 = vectornormalize(tomapcenter);
     steps = int(var_d80c8cde / jumpdistance);
     for (index = 1; index <= steps; index++) {
         newpoint = start + var_fa57b4b3 * index * jumpdistance;

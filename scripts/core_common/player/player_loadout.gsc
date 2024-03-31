@@ -35,7 +35,7 @@ function function_c67222df() {
 // Checksum 0x5bd37f3b, Offset: 0x210
 // Size: 0x92
 function init_loadout_slot(slot_index) {
-    self.pers[#"loadout"].slots[slot_index] = {#killed:0, #count:0, #var_4cfdfa9b:level.weaponnone, #weapon:level.weaponnone, #slot:slot_index};
+    self.pers[#"loadout"].slots[slot_index] = {#slot:slot_index, #weapon:level.weaponnone, #var_4cfdfa9b:level.weaponnone, #count:0, #killed:0};
 }
 
 // Namespace loadout/player_loadout

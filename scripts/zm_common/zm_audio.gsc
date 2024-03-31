@@ -905,7 +905,7 @@ function zmbvoxadd(category, subcategory, suffix, percentage = 100, cooldown = 0
     if (!isdefined(level.sndplayervox[category])) {
         level.sndplayervox[category] = [];
     }
-    level.sndplayervox[category][subcategory] = {#var_884fa3fe:var_884fa3fe, #toself:toself, #var_7aadcbd7:var_7aadcbd7, #var_50219c90:var_50219c90, #cooldown:cooldown, #percentage:percentage, #suffix:suffix};
+    level.sndplayervox[category][subcategory] = {#suffix:suffix, #percentage:percentage, #cooldown:cooldown, #var_50219c90:var_50219c90, #var_7aadcbd7:var_7aadcbd7, #toself:toself, #var_884fa3fe:var_884fa3fe};
     level.votimer[subcategory] = 0;
 }
 
@@ -1233,7 +1233,7 @@ function function_6191af93(str_category, var_39acfdda, var_6e8fc6db, var_60626fa
     if (!isdefined(self.var_c13233ee[str_category])) {
         self.var_c13233ee[str_category] = [];
     }
-    s_override = {#chance:var_2bff7297, #var_39acfdda:var_60626fa8, #str_category:var_6e8fc6db};
+    s_override = {#str_category:var_6e8fc6db, #var_39acfdda:var_60626fa8, #chance:var_2bff7297};
     self.var_c13233ee[str_category][var_39acfdda] = s_override;
 }
 

@@ -211,9 +211,9 @@ function zombie_setup_attack_properties() {
 function brutus_spawn(starting_health, has_helmet, var_21b0fc34, var_7f2b0069, zone_name) {
     self endon(#"death");
     level.var_a33d6e46 = 0;
-    self.has_helmet = isdefined(has_helmet) ? 1 : has_helmet;
-    self.var_21b0fc34 = isdefined(var_21b0fc34) ? 0 : var_21b0fc34;
-    self.var_7f2b0069 = isdefined(var_7f2b0069) ? 0 : var_7f2b0069;
+    self.has_helmet = isdefined(has_helmet) ? has_helmet : 1;
+    self.var_21b0fc34 = isdefined(var_21b0fc34) ? var_21b0fc34 : 0;
+    self.var_7f2b0069 = isdefined(var_7f2b0069) ? var_7f2b0069 : 0;
     if (isdefined(starting_health)) {
         self.starting_health = starting_health;
         self.health = starting_health;
@@ -467,7 +467,7 @@ function attempt_brutus_spawn(var_d8206b1d, str_zone_name, var_dde9ff11 = 0, var
         level thread function_5e4d2f31();
         return false;
     }
-    level notify(#"spawn_brutus", {#var_68ffecfb:var_68ffecfb, #var_dde9ff11:var_dde9ff11, #str_zone_name:str_zone_name, #n_spawn:var_d8206b1d});
+    level notify(#"spawn_brutus", {#n_spawn:var_d8206b1d, #str_zone_name:str_zone_name, #var_dde9ff11:var_dde9ff11, #var_68ffecfb:var_68ffecfb});
     return true;
 }
 
@@ -864,7 +864,7 @@ function function_ba497d2d(e_brutus) {
     e_brutus clientfield::set("brutus_spawn_clientfield", 0);
     waitframe(1);
     if (isdefined(e_brutus) && isalive(e_brutus)) {
-        var_1a8c05ae = {#var_72275733:e_brutus.var_7f2b0069, #var_1e1ce722:e_brutus.var_21b0fc34, #var_37d3fab9:e_brutus.has_helmet, #n_health:e_brutus.health};
+        var_1a8c05ae = {#n_health:e_brutus.health, #var_37d3fab9:e_brutus.has_helmet, #var_1e1ce722:e_brutus.var_21b0fc34, #var_72275733:e_brutus.var_7f2b0069};
         if (!isdefined(level.var_f158b05c)) {
             level.var_f158b05c = [];
         } else if (!isarray(level.var_f158b05c)) {

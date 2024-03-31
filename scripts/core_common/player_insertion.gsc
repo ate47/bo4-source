@@ -50,7 +50,7 @@ function __init__() {
         assert(var_3bc28449 > 0 && var_3bc28449 <= 2);
     #/
     for (index = 0; index < var_3bc28449; index++) {
-        insertion = {#players:[], #spawnpoints:var_1194a9a5, #allowed:1, #index:index};
+        insertion = {#index:index, #allowed:1, #spawnpoints:var_1194a9a5, #players:[]};
         level.insertions[level.insertions.size] = insertion;
         callback::on_finalize_initialization(&on_finalize_initialization, insertion);
     }
@@ -169,7 +169,7 @@ function function_d53a8c5b(insertion, fly_over_point, var_59526dd5, offset) {
     direction = anglestoforward(var_872f085f);
     direction = vectornormalize(direction);
     var_7c712437 = fly_over_point + anglestoright(var_872f085f) * offset;
-    var_1d83d08d = {#end:var_7c712437 + direction * 150000, #start:var_7c712437 + direction * -150000};
+    var_1d83d08d = {#start:var_7c712437 + direction * -150000, #end:var_7c712437 + direction * 150000};
     result = function_3ca86964(var_1d83d08d);
     midpoint = (result.start + result.end) / 2;
     var_1d83d08d.start = function_fd3c1bcc(midpoint, var_1d83d08d.start, result.start);
@@ -1543,7 +1543,7 @@ function function_e04b0ea8(insertion, start_point, var_872f085f, var_37362e08, v
 // Checksum 0xd2b2d9d4, Offset: 0x7568
 // Size: 0x8c
 function function_43cc81fc() {
-    s_formation = {#alignment:"center", #var_84f704f:0, #var_86255b48:[], #hoverparams:[], #var_86cb4eb8:[], #var_f5cff63:[], #var_c85ebc15:0};
+    s_formation = {#var_c85ebc15:0, #var_f5cff63:[], #var_86cb4eb8:[], #hoverparams:[], #var_86255b48:[], #var_84f704f:0, #alignment:"center"};
     return s_formation;
 }
 
@@ -1553,28 +1553,28 @@ function function_43cc81fc() {
 // Size: 0xad2
 function function_d9dfa25() {
     a_formations = [];
-    s_formation = {#alignment:"left", #var_84f704f:4, #var_86255b48:array(2, 2, 2, 2, 2), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86cb4eb8:array((2750, -550, 0), (2000, -1200, 0), (1500, 750, 0), (500, 1500, 0), (-900, -700, 0)), #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_c85ebc15:5};
+    s_formation = {#var_c85ebc15:5, #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_86cb4eb8:array((2750, -550, 0), (2000, -1200, 0), (1500, 750, 0), (500, 1500, 0), (-900, -700, 0)), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86255b48:array(2, 2, 2, 2, 2), #var_84f704f:4, #alignment:"left"};
     if (!isdefined(a_formations)) {
         a_formations = [];
     } else if (!isarray(a_formations)) {
         a_formations = array(a_formations);
     }
     a_formations[a_formations.size] = s_formation;
-    s_formation = {#alignment:"right", #var_84f704f:4, #var_86255b48:array(2, 2, 2, 2, 2), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86cb4eb8:array((2750, 550, 0), (2000, 1200, 0), (1500, -750, 0), (500, -1500, 0), (-900, 700, 0)), #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_c85ebc15:5};
+    s_formation = {#var_c85ebc15:5, #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_86cb4eb8:array((2750, 550, 0), (2000, 1200, 0), (1500, -750, 0), (500, -1500, 0), (-900, 700, 0)), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86255b48:array(2, 2, 2, 2, 2), #var_84f704f:4, #alignment:"right"};
     if (!isdefined(a_formations)) {
         a_formations = [];
     } else if (!isarray(a_formations)) {
         a_formations = array(a_formations);
     }
     a_formations[a_formations.size] = s_formation;
-    s_formation = {#alignment:"left", #var_84f704f:4, #var_86255b48:array(2, 2, 2, 2, 2), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86cb4eb8:array((2750, -900, 0), (2000, 100, 0), (1250, 1100, 0), (500, 2100, 0), (-900, -700, 0)), #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_c85ebc15:5};
+    s_formation = {#var_c85ebc15:5, #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_86cb4eb8:array((2750, -900, 0), (2000, 100, 0), (1250, 1100, 0), (500, 2100, 0), (-900, -700, 0)), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86255b48:array(2, 2, 2, 2, 2), #var_84f704f:4, #alignment:"left"};
     if (!isdefined(a_formations)) {
         a_formations = [];
     } else if (!isarray(a_formations)) {
         a_formations = array(a_formations);
     }
     a_formations[a_formations.size] = s_formation;
-    s_formation = {#alignment:"right", #var_84f704f:4, #var_86255b48:array(2, 2, 2, 2, 2), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86cb4eb8:array((2750, 900, 0), (2000, -100, 0), (1500, -1100, 0), (500, -2100, 0), (-900, 700, 0)), #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_c85ebc15:5};
+    s_formation = {#var_c85ebc15:5, #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner", "chinook_spawner"), #var_86cb4eb8:array((2750, 900, 0), (2000, -100, 0), (1500, -1100, 0), (500, -2100, 0), (-900, 700, 0)), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), (0, 24, 128)), #var_86255b48:array(2, 2, 2, 2, 2), #var_84f704f:4, #alignment:"right"};
     if (!isdefined(a_formations)) {
         a_formations = [];
     } else if (!isarray(a_formations)) {
@@ -1591,7 +1591,7 @@ function function_d9dfa25() {
     #/
     var_86cb4eb8[#"left"] = array((1200, -2300, 0), (-200, -2300, 0), (-1600, -2300, 0), (-3000, -2300, 0));
     var_86cb4eb8[#"right"] = array((1200, 2300, 0), (-200, 2300, 0), (-1600, 2300, 0), (-3000, 2300, 0));
-    var_5637e595 = {#var_86255b48:array(2, 2, 2, 2), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192)), #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner"), #var_c85ebc15:4};
+    var_5637e595 = {#var_c85ebc15:4, #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner"), #hoverparams:array(vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192), vectorscale((1, 1, 1), 192)), #var_86255b48:array(2, 2, 2, 2)};
     s_formation = array::random(a_formations);
     s_formation.var_c85ebc15 = s_formation.var_c85ebc15 + var_5637e595.var_c85ebc15;
     s_formation.var_f5cff63 = arraycombine(s_formation.var_f5cff63, var_5637e595.var_f5cff63, 1, 0);
@@ -1722,7 +1722,7 @@ function function_84898b3f(firstgoal, var_9fa20618, endorigin, index) {
     /#
         self endon(#"death");
         while (getdvarint(#"hash_5bbd3d044e1ec1b8", 0)) {
-            color = index < 0 ? (1, 0, 0) : (0, 0, 1);
+            color = index < 0 ? (0, 0, 1) : (1, 0, 0);
             sphere(firstgoal, 700, color);
             sphere(var_9fa20618, 700, color);
             sphere(endorigin, 700, color);

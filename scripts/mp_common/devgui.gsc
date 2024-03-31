@@ -932,7 +932,7 @@ function function_be0f9897() {
             if (isplayer(player)) {
                 if (damage <= 0) {
                     heal = damage * -1;
-                    var_66cb03ad = player.var_66cb03ad < 0 ? player.var_66cb03ad : player.maxhealth;
+                    var_66cb03ad = player.var_66cb03ad < 0 ? player.maxhealth : player.var_66cb03ad;
                     if (!isdefined(var_66cb03ad)) {
                         var_66cb03ad = 100;
                     }

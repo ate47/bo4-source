@@ -66,9 +66,9 @@ function is_active(var_a32bbdd = 0) {
     s_challenge = zm_trial::function_a36e8c38(#"damage_drains_points");
     if (var_a32bbdd) {
         if (isdefined(s_challenge) && isdefined(s_challenge.var_ec90b685) && s_challenge.var_ec90b685) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     return isdefined(s_challenge);
 }

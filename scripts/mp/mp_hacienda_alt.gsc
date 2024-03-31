@@ -233,7 +233,7 @@ function function_dd0b407b() {
     self thread function_e0954c11();
     self moveto(v_moveto, 1.2);
     str_sound = "amb_stone_door_open";
-    if (self.var_af2d1e6 === 2) {
+    if (self.script_side === 2) {
         str_sound = "amb_wood_door_open";
     }
     self playsound(str_sound);

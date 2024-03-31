@@ -680,7 +680,7 @@ function boat_crash_movement(point, dir) {
     ang_vel = self getangularvelocity();
     ang_vel = (0, 0, 0);
     self setangularvelocity(ang_vel);
-    torque = (randomintrange(-5, -3), 0, randomintrange(0, 100) > 50 ? -5 : 5);
+    torque = (randomintrange(-5, -3), 0, randomintrange(0, 100) > 50 ? 5 : -5);
     self thread boat_crash_monitor(point, dir, 4);
     while (true) {
         ang_vel = self getangularvelocity();

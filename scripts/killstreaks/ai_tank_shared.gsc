@@ -1842,7 +1842,7 @@ function tank_damage_think() {
                 self.owner.dofutz = 1;
             }
             self.health = 0;
-            self notify(#"death", {#weapon:weapon, #mod:mod, #attacker:attacker});
+            self notify(#"death", {#attacker:attacker, #mod:mod, #weapon:weapon});
             return;
         }
         self function_aa61ec2b(weapon_damage);
@@ -2473,7 +2473,7 @@ function watchwater() {
         depth = getwaterheight(self.origin) - self.origin[2];
         inwater = depth > var_8a7edebd;
         if (isdefined(self.owner) && isdefined(self.controlled) && self.controlled) {
-            self.owner clientfield::set_to_player("static_postfx", depth < var_29ed3475 ? 1 : 0);
+            self.owner clientfield::set_to_player("static_postfx", depth < var_29ed3475 ? 0 : 1);
         }
     }
     if (isdefined(self.owner)) {

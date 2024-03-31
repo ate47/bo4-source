@@ -1214,7 +1214,7 @@ function function_704b8e() {
             n_hour = n_hour - 1;
         }
     }
-    level.var_f13364b4.a_n_codes[var_90f307ff] = {#var_d9d9d617:&function_5d874e07, #var_544c05c6:1};
+    level.var_f13364b4.a_n_codes[var_90f307ff] = {#var_544c05c6:1, #var_d9d9d617:&function_5d874e07};
     if (!isdefined(level.var_d7e5aaac)) {
         level.var_d7e5aaac = [];
     } else if (!isarray(level.var_d7e5aaac)) {
@@ -1373,9 +1373,9 @@ function function_7d2b51d5(n_number) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x96cd872e, Offset: 0x8500
 // Size: 0xf2
-function function_2b5d562e(var_1bfeafad) {
+function function_2b5d562e(str_choice) {
     self hidepart("tag_all_screens", "p8_zm_whi_freestanding_1960_tv_screen_vfx", 1);
-    switch (var_1bfeafad) {
+    switch (str_choice) {
     case #"off":
         self stoploopsound();
         break;

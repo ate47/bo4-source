@@ -1192,7 +1192,7 @@ function give(name) {
     /#
         assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     #/
-    self notify(#"bgb_update", {#var_826ddd38:self.bgb, #var_3aee8e4:name});
+    self notify(#"bgb_update", {#var_3aee8e4:name, #var_826ddd38:self.bgb});
     self notify("bgb_update_give_" + name);
     self.bgb = name;
     self clientfield::set_player_uimodel("zmhud.bgb_current", level.bgb[name].item_index);
@@ -1224,7 +1224,7 @@ function take() {
         self thread [[ level.bgb[self.bgb].disable_func ]]();
     }
     self bgb_clear_monitors_and_clientfields();
-    self notify(#"bgb_update", {#var_826ddd38:self.bgb, #var_3aee8e4:#"none"});
+    self notify(#"bgb_update", {#var_3aee8e4:#"none", #var_826ddd38:self.bgb});
     self notify("bgb_update_take_" + self.bgb);
     self.bgb = #"none";
 }

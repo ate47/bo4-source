@@ -6,7 +6,7 @@
 // Checksum 0x4e4a54c7, Offset: 0x68
 // Size: 0xd6
 function function_e9b061a8(state, start, update_goal, end, update_enemy, var_edc20efd, var_ff716a93, update_debug) {
-    level.extra_screen_electricity_.functions[state] = {#update_debug:update_debug, #var_ff716a93:var_ff716a93, #var_edc20efd:var_edc20efd, #update_enemy:update_enemy, #end:end, #update_goal:update_goal, #start:start};
+    level.extra_screen_electricity_.functions[state] = {#start:start, #update_goal:update_goal, #end:end, #update_enemy:update_enemy, #var_edc20efd:var_edc20efd, #var_ff716a93:var_ff716a93, #update_debug:update_debug};
 }
 
 // Namespace ai_state/state

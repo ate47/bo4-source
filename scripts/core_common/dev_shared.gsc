@@ -421,7 +421,7 @@ function body_customization_populate(mode, var_ef4940a5) {
                     var_1bf829f2 = outfitindex + "<unknown string>" + var_346660ac + "<unknown string>" + function_9e72a96(var_9cf37283.namehash) + "<unknown string>" + outfitindex;
                     var_a818c4e = body_customization_devgui_base + body_name + "<unknown string>" + var_1bf829f2;
                     util::add_debug_command(var_a818c4e + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + "<unknown string>" + playerbodytype + "<unknown string>" + "<unknown string>" + outfitindex + "<unknown string>");
-                    types = [7:{#field:"<unknown string>", #path:"<unknown string>"}, 6:{#field:"<unknown string>", #path:"<unknown string>"}, 5:{#field:"<unknown string>", #path:"<unknown string>"}, 4:{#field:"<unknown string>", #path:"<unknown string>"}, 3:{#field:"<unknown string>", #path:"<unknown string>"}, 2:{#field:"<unknown string>", #path:"<unknown string>"}, 1:{#field:"<unknown string>", #path:"<unknown string>"}, 0:{#field:"<unknown string>", #path:"<unknown string>"}];
+                    types = [{#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}, {#path:"<unknown string>", #field:"<unknown string>"}];
                     foreach (type, data in types) {
                         foreach (index, option in var_9cf37283.options[type]) {
                             if (option.isvalid) {

@@ -353,7 +353,7 @@ function function_4e8157cd(var_404e4288, var_8dd554ee) {
             var_3cafeff5 = 1;
         }
     }
-    return {#var_3cafeff5:var_3cafeff5, #ai_spawned:ai};
+    return {#ai_spawned:ai, #var_3cafeff5:var_3cafeff5};
 }
 
 // Namespace zm_round_logic/zm_round_logic

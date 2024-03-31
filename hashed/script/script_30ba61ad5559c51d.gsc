@@ -137,9 +137,9 @@ function is_active(var_a75461b4) {
     s_challenge = zm_trial::function_a36e8c38(#"hash_53a5a75770adb550");
     if (isdefined(var_a75461b4)) {
         if (isdefined(s_challenge) && isarray(level.var_692c062e) && isinarray(level.var_692c062e, var_a75461b4)) {
-            return 1;
+            return true;
         }
-        return 0;
+        return false;
     }
     return isdefined(s_challenge);
 }

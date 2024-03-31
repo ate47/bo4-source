@@ -226,10 +226,10 @@ function function_9cc59537() {
         do {
             waitframe(8);
             foreach (group in var_1d9375fc) {
-                var_b91441dd = getscriptbundle(group.scriptbundlename);
-                if (!isdefined(var_b91441dd) || isdefined(var_b91441dd.vehiclespawner) && var_b91441dd.vehiclespawner || group.debug_spawnpoints.size == 0 || var_b91441dd.name === "<unknown string>" || var_b91441dd.name === "<unknown string>" || var_b91441dd.name === "<unknown string>") {
+                itemlistbundle = getscriptbundle(group.scriptbundlename);
+                if (!isdefined(itemlistbundle) || isdefined(itemlistbundle.vehiclespawner) && itemlistbundle.vehiclespawner || group.debug_spawnpoints.size == 0 || itemlistbundle.name === "<unknown string>" || itemlistbundle.name === "<unknown string>" || itemlistbundle.name === "<unknown string>") {
                     continue;
-                } else if (var_b91441dd.name === "<unknown string>") {
+                } else if (itemlistbundle.name === "<unknown string>") {
                     var_df1e5fef = arraysortclosest(group.debug_spawnpoints, level.players[0].origin, 85, 1, 4000);
                     foreach (point in var_df1e5fef) {
                         sphere(point.origin, 16, (1, 1, 1), 1, 0, 16, 8);
@@ -243,12 +243,12 @@ function function_9cc59537() {
                         var_47748885 = 28;
                         var_c5330f11 = 32;
                         v_color = (1, 0, 1);
-                        if (isdefined(var_b91441dd.itemlist[0])) {
-                            if (var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>") {
+                        if (isdefined(itemlistbundle.itemlist[0])) {
+                            if (itemlistbundle.itemlist[0].itementry === "<unknown string>" || itemlistbundle.itemlist[0].itementry === "<unknown string>" || itemlistbundle.itemlist[0].itementry === "<unknown string>" || itemlistbundle.itemlist[0].itementry === "<unknown string>" || itemlistbundle.itemlist[0].itementry === "<unknown string>" || itemlistbundle.itemlist[0].itementry === "<unknown string>" || itemlistbundle.itemlist[0].itementry === "<unknown string>") {
                                 v_color = (1, 1, 0);
                                 var_47748885 = 4;
                                 var_c5330f11 = 4;
-                            } else if (var_b91441dd.itemlist[0].itementry === "<unknown string>") {
+                            } else if (itemlistbundle.itemlist[0].itementry === "<unknown string>") {
                                 v_color = (1, 1, 0);
                                 var_47748885 = 8;
                                 var_c5330f11 = 8;
@@ -273,12 +273,12 @@ function function_9cc59537() {
                         v_angles = point.angles;
                         var_c24ea284 = undefined;
                         var_4b82457c = distance2d(point.origin, level.players[0].origin);
-                        var_24b0b1ea = var_b91441dd.var_7fb0967b;
+                        var_24b0b1ea = itemlistbundle.var_7fb0967b;
                         if (isdefined(var_24b0b1ea)) {
                             if (items.size > 0) {
                                 var_abc7e003 = item_world::function_2e3efdda(point.origin, undefined, 20, var_24b0b1ea, -1, 1);
                                 var_abc7e003 = arraysortclosest(var_abc7e003, point.origin, 10, var_47748885);
-                                foreach (item_type in var_b91441dd.itemlist) {
+                                foreach (item_type in itemlistbundle.itemlist) {
                                     foreach (var_d76a7255 in var_abc7e003) {
                                         if (item_type.itementry === var_d76a7255.itementry.name && var_d76a7255.itementry.name === items[0].itementry.name) {
                                             print3d(point.origin + vectorscale((0, 0, 1), 18), item_type.itementry + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
@@ -288,10 +288,10 @@ function function_9cc59537() {
                                 }
                             }
                         }
-                        if (isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash) {
+                        if (isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash) {
                             n_depth = 18;
                             n_width = 24;
-                            if (var_b91441dd.name === "<unknown string>" || var_b91441dd.name === "<unknown string>" || var_b91441dd.name === "<unknown string>") {
+                            if (itemlistbundle.name === "<unknown string>" || itemlistbundle.name === "<unknown string>" || itemlistbundle.name === "<unknown string>") {
                                 n_depth = 12;
                                 n_width = 48;
                             }
@@ -315,7 +315,7 @@ function function_9cc59537() {
                                 print3d(point.origin + vectorscale((0, 0, 1), 24), sqrt(distancesquared(point.origin, close.origin)), v_color, 1, 0.3, 8);
                             }
                         }
-                        if (isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash) {
+                        if (isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash) {
                             var_47748885 = n_depth;
                             foreach (i, v_test in var_7cb887a8) {
                                 if (i > 2) {
@@ -349,7 +349,7 @@ function function_9cc59537() {
                                 n_radius = 32;
                             }
                         }
-                        if (isdefined(var_b91441dd.supplystash) && var_b91441dd.supplystash) {
+                        if (isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash) {
                             function_47351fa3(point.origin, point.angles, v_color, 8);
                         }
                         if (var_4b82457c > 212) {

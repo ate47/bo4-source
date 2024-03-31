@@ -425,7 +425,7 @@ function private function_9b83c65d(localclientnum) {
         } else if (waitresult._notify === var_17bdd1c3) {
             inventoryitem = function_15d578f4(localclientnum, waitresult.id);
             networkid = function_1470ccfe(localclientnum, inventoryitem);
-            function_22759012(localclientnum, isdefined(networkid) ? inventoryitem.networkid : networkid);
+            function_22759012(localclientnum, isdefined(networkid) ? networkid : inventoryitem.networkid);
             continue;
         } else if (waitresult._notify === var_6a10d173) {
             currentindex = function_535a5a06(localclientnum, 0);

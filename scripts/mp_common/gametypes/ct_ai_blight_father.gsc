@@ -70,7 +70,7 @@ function __init__() {
             level.var_445e24c8[level.var_445e24c8.size] = trigger;
         }
     }
-    level.var_c2981ce9 = [#"tag_eggsack_weakspot_ri":&function_33b2c99e, #"tag_eggsack_weakspot_le":&function_40034805, #"tag_elbow_weakspot_ri":&function_5a1a4ad, #"tag_elbow_weakspot_le":&function_9bbe631c, #"tag_mouth_weakspot":&function_fa7c080];
+    level.var_c2981ce9 = [#"tag_mouth_weakspot":&function_fa7c080, #"tag_elbow_weakspot_le":&function_9bbe631c, #"tag_elbow_weakspot_ri":&function_5a1a4ad, #"tag_eggsack_weakspot_le":&function_40034805, #"tag_eggsack_weakspot_ri":&function_33b2c99e];
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father
@@ -107,7 +107,7 @@ function private function_7c52f40() {
     self attach("c_t8_zmb_blightfather_elbow1_ri_noreveal");
     self attach("c_t8_zmb_blightfather_eggsack1_both_noreveal");
     aiutility::addaioverridedamagecallback(self, &function_afce1cf);
-    self.var_c8088bcb = {#timestamp:gettime(), #traces:[]};
+    self.var_c8088bcb = {#traces:[], #timestamp:gettime()};
     self.var_b2a80abc = gettime() + self ai::function_9139c839().var_f246f6de;
     self.ignorepathenemyfightdist = 1;
     if (!isdefined(self.var_506922ab)) {
@@ -778,7 +778,7 @@ function function_422fdfd4(entity, attacker, weapon, var_5457dc44, hitloc, point
     } else if (var_30362eca) {
         var_b1c1c5cf = isdefined(var_fff93f95) ? var_fff93f95 : entity ai::function_9139c839().var_628192b0;
     }
-    return {#registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce, #var_84ed9a13:var_84ed9a13, #damage_scale:var_b1c1c5cf};
+    return {#damage_scale:var_b1c1c5cf, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce};
 }
 
 // Namespace ct_ai_blight_father/ct_ai_blight_father

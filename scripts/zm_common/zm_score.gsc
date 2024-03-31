@@ -260,7 +260,7 @@ function player_add_points(event, mod, hit_location, e_target, zombie_team, dama
         player_points = player_points - split_player_points;
     }
     if (event === "rebuild_board") {
-        level notify(#"rebuild_board", {#points:player_points, #player:self});
+        level notify(#"rebuild_board", {#player:self, #points:player_points});
     }
     self add_to_player_score(player_points, 1, event, var_e6e61503);
     if (var_e6e61503 || isdefined(level.var_894a83d8) && level.var_894a83d8 || function_e31cf9d5(event)) {
@@ -446,7 +446,7 @@ function add_to_player_score(points, b_add_to_total = 1, str_awarded_by = "", va
     self incrementplayerstat("scoreEarned", n_points_to_add_to_currency);
     self zm_stats::function_301c4be2("boas_scoreEarned", n_points_to_add_to_currency);
     self zm_stats::function_c0c6ab19(#"zearned", n_points_to_add_to_currency, 1);
-    level notify(#"earned_points", {#points:points, #player:self});
+    level notify(#"earned_points", {#player:self, #points:points});
     level thread zm_hero_weapon::function_3fe4a02e(self, points, str_awarded_by);
     self contracts::increment_zm_contract(#"contract_zm_points", n_points_to_add_to_currency, #"zstandard");
     if (zm_utility::is_standard()) {
@@ -456,7 +456,7 @@ function add_to_player_score(points, b_add_to_total = 1, str_awarded_by = "", va
         self.score_total = self.score_total + points;
         level.score_total = level.score_total + points;
     }
-    self notify(#"earned_points", {#str_awarded_by:str_awarded_by, #n_points:points});
+    self notify(#"earned_points", {#n_points:points, #str_awarded_by:str_awarded_by});
 }
 
 // Namespace zm_score/zm_score
@@ -483,7 +483,7 @@ function minus_to_player_score(points, b_forced = 0) {
     self.pers[#"score"] = self.score;
     self incrementplayerstat("scoreSpent", points);
     self zm_stats::function_301c4be2("boas_scoreSpent", points);
-    level notify(#"spent_points", {#points:points, #player:self});
+    level notify(#"spent_points", {#player:self, #points:points});
     self notify(#"spent_points", {#points:points});
 }
 

@@ -73,7 +73,7 @@ class cinteractobj {
         for (var_fb20e730 = util::get_players(self.m_str_team); var_fb20e730.size; var_fb20e730 = util::get_players(self.m_str_team)) {
             foreach (e_player in var_fb20e730) {
                 if (function_aa070e6f(e_player) && !isinarray(self.var_2854e7f7, e_player.team) && !e_player isinvehicle()) {
-                    voiceparams = {#targetname:self.e_object.var_f66cebb1, #side:var_9c2f0815, #team:self.m_str_team};
+                    voiceparams = {#team:self.m_str_team, #side:var_9c2f0815, #targetname:self.e_object.var_f66cebb1};
                     if (isdefined(self.e_object.var_fa2dfcb4)) {
                         voiceevent("itfr_dis_obj", undefined, voiceparams);
                     } else if (isdefined(self.e_object.var_ff3c99c5)) {
@@ -711,7 +711,7 @@ function function_2e028a0e() {
                 continue;
             }
             if (isdefined(s_lock.var_4cd30731)) {
-                s_lock notify(#"hash_58b8542ed702b2a5", {#player:self.mdl_gameobject.carrier, #var_36c9fd16:1});
+                s_lock notify(#"hash_58b8542ed702b2a5", {#var_36c9fd16:1, #player:self.mdl_gameobject.carrier});
                 s_lock.var_459e9174 = 1;
             }
         }
@@ -2266,7 +2266,7 @@ function function_e7e3d146(b_enable = 1) {
 function function_f4ccb04c(e_player, var_5098afd6 = 0) {
     mdl_gameobject = self function_fd4a5f2f();
     e_player.var_17bc9194 = 1;
-    mdl_gameobject.trigger notify(#"trigger", {#forced:var_5098afd6, #activator:e_player});
+    mdl_gameobject.trigger notify(#"trigger", {#activator:e_player, #forced:var_5098afd6});
 }
 
 // Namespace gameobjects/gameobjects_shared

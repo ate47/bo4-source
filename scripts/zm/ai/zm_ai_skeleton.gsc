@@ -59,13 +59,13 @@ function private __init__() {
     } else if (!isarray(level.var_8eaf991c)) {
         level.var_8eaf991c = array(level.var_8eaf991c);
     }
-    level.var_8eaf991c[level.var_8eaf991c.size] = {#limit:2, #round:1};
+    level.var_8eaf991c[level.var_8eaf991c.size] = {#round:1, #limit:2};
     if (!isdefined(level.var_8eaf991c)) {
         level.var_8eaf991c = [];
     } else if (!isarray(level.var_8eaf991c)) {
         level.var_8eaf991c = array(level.var_8eaf991c);
     }
-    level.var_8eaf991c[level.var_8eaf991c.size] = {#limit:4, #round:10};
+    level.var_8eaf991c[level.var_8eaf991c.size] = {#round:10, #limit:4};
     level.var_53c1f615 = [];
     for (index = 0; index < 2; index++) {
         var_fab8d6ce = util::spawn_model("tag_origin");
@@ -288,7 +288,7 @@ function private function_42a1dabd() {
     wait_time = self ai::function_9139c839().var_fc268a04;
     self ghost();
     self notsolid();
-    var_ee3cfcfe = {#angles:self.angles, #origin:self.origin};
+    var_ee3cfcfe = {#origin:self.origin, #angles:self.angles};
     var_ee3cfcfe thread scene::play(var_67f0b3a6, array(self));
     self.var_e0c4c154 = 0;
     wait(wait_time + randomfloatrange(0.1, 1));
@@ -405,9 +405,9 @@ function private function_f78e62a8() {
         break;
     }
     if (isdefined(var_51601537) && isdefined(self.var_fab8d6ce)) {
-        var_b042e906 = var_51601537.origin - self.var_fab8d6ce.origin;
+        to_point = var_51601537.origin - self.var_fab8d6ce.origin;
         self.var_fab8d6ce clientfield::set("" + #"spartoi_reassemble_clientfield", 1);
-        self.var_fab8d6ce moveto(self.var_fab8d6ce.origin + var_b042e906 / 2 + vectorscale((0, 0, 1), 20), 1.6, 0.5);
+        self.var_fab8d6ce moveto(self.var_fab8d6ce.origin + to_point / 2 + vectorscale((0, 0, 1), 20), 1.6, 0.5);
         wait(1.6);
         if (isdefined(self.var_fab8d6ce)) {
             self.var_fab8d6ce moveto(var_51601537.origin, 1.6, 0, 0.5);
@@ -419,7 +419,7 @@ function private function_f78e62a8() {
     }
     if (isdefined(var_51601537)) {
         self forceteleport(var_51601537.origin);
-        return {#tacpoint:var_51601537, #angles:self.angles, #origin:var_51601537.origin};
+        return {#origin:var_51601537.origin, #angles:self.angles, #tacpoint:var_51601537};
     }
 }
 

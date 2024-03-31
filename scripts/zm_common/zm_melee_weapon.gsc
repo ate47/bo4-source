@@ -431,7 +431,7 @@ function melee_weapon_think(weapon, cost, flourish_fn, vo_dialog_id, flourish_we
                         self.stub.first_time_triggered = 1;
                     }
                 }
-                level notify(#"weapon_bought", {#weapon:weapon, #player:player});
+                level notify(#"weapon_bought", {#player:player, #weapon:weapon});
                 player zm_score::minus_to_player_score(cost);
                 player zm_stats::function_c0c6ab19(#"wallbuys", 1, 1);
                 player zm_stats::function_c0c6ab19(#"weapons_bought", 1, 1);

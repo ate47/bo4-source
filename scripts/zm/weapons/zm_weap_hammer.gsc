@@ -453,7 +453,7 @@ function function_f911e261() {
     v_forward = self getweaponforwarddir();
     v_end = var_2ed6f142 + v_forward * 10000;
     a_trace = bullettrace(var_2ed6f142, v_end, 0, self);
-    level notify(#"hero_weapon_hit", {#v_position:a_trace[#"position"], #var_80e17549:self.currentweapon, #e_entity:a_trace[#"entity"], #player:self});
+    level notify(#"hero_weapon_hit", {#player:self, #e_entity:a_trace[#"entity"], #var_80e17549:self.currentweapon, #v_position:a_trace[#"position"]});
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer

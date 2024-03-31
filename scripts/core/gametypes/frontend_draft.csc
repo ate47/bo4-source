@@ -530,7 +530,7 @@ function function_393e6d42() {
                         var_d0b01271 notify(#"cancel_gesture");
                         character_customization::function_bee62aa1(var_d0b01271);
                         var_d0b01271 cancel_spray();
-                    } else if (function_b72088f(waitresult.gesture_index)) {
+                    } else if (isgesture(waitresult.gesture_index)) {
                         thread [[ var_d0b01271 ]]->play_gesture(waitresult.gesture_index, 1, 1, 0);
                         var_d0b01271 cancel_spray();
                     } else {
@@ -553,7 +553,7 @@ function function_393e6d42() {
                             var_d0b01271 notify(#"cancel_gesture");
                             character_customization::function_bee62aa1(var_d0b01271);
                             var_d0b01271 cancel_spray();
-                        } else if (function_b72088f(waitresult.gesture_index)) {
+                        } else if (isgesture(waitresult.gesture_index)) {
                             thread [[ var_d0b01271 ]]->play_gesture(waitresult.gesture_index, 1, 1, 0);
                             var_d0b01271 cancel_spray();
                         } else {

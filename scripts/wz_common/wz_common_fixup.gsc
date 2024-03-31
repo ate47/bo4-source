@@ -48,15 +48,15 @@ function item_remover(func1, func2, param1) {
 // Params 4, eflags: 0x0
 // Checksum 0x31adac2a, Offset: 0x150
 // Size: 0x70
-function item_replacer(func1, func2, var_f3ef555b, var_e3c89f9) {
-    if (!isdefined(var_f3ef555b) || !isdefined(var_e3c89f9)) {
+function item_replacer(func1, func2, list1, list2) {
+    if (!isdefined(list1) || !isdefined(list2)) {
         return;
     }
     if (isdefined(func1)) {
-        [[ func1 ]](var_f3ef555b, var_e3c89f9);
+        [[ func1 ]](list1, list2);
     }
     if (isdefined(func2)) {
-        [[ func2 ]](var_f3ef555b, var_e3c89f9);
+        [[ func2 ]](list1, list2);
     }
 }
 

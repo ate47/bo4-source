@@ -237,7 +237,7 @@ function callback_vehicledamage(einflictor, eattacker, idamage, idflags, smeanso
             }
         }
     }
-    var_5370b15e = idamage < self.health ? self.health : idamage;
+    var_5370b15e = idamage < self.health ? idamage : self.health;
     self globallogic_player::giveattackerandinflictorownerassist(eattacker, einflictor, var_5370b15e, smeansofdeath, weapon);
     if (isplayer(eattacker) && isdefined(level.challenges_callback_vehicledamaged)) {
         self thread [[ level.challenges_callback_vehicledamaged ]](eattacker, eattacker, idamage, weapon, shitloc);

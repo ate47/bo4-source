@@ -630,7 +630,7 @@ function function_9ec8ec89() {
     level.var_4629a597++;
     if (level.var_4629a597 >= level.var_5c51cf1a) {
         self thread zm_towers_util::function_ae1b4f5b(100, 75, 75);
-        level notify(#"hash_2ea1048758a3ff14", {#var_1e137cec:var_1e137cec, #str_archetype:str_archetype, #var_7246d429:var_7246d429, #v_origin:v_origin});
+        level notify(#"hash_2ea1048758a3ff14", {#v_origin:v_origin, #var_7246d429:var_7246d429, #str_archetype:str_archetype, #var_1e137cec:var_1e137cec});
     }
 }
 

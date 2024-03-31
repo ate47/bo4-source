@@ -30,7 +30,7 @@ function __init__() {
 // Checksum 0x5ad13e0c, Offset: 0x1a0
 // Size: 0xae
 function initialize() {
-    level.infection = {#platoon_team:[], #var_c4b373ef:[], #platoon:#"invalid", #team:#"none", #offhand_weapon:undefined, #primary_weapon:undefined, #bodies:[], #perks:[]};
+    level.infection = {#perks:[], #bodies:[], #primary_weapon:undefined, #offhand_weapon:undefined, #team:#"none", #platoon:#"invalid", #var_c4b373ef:[], #platoon_team:[]};
 }
 
 // Namespace infection/infection

@@ -1204,8 +1204,8 @@ function fileprint_radiant_vec(vector) {
 // Checksum 0x1465048b, Offset: 0x40e0
 // Size: 0x8e
 function death_notify_wrapper(attacker, damagetype) {
-    level notify(#"face", {#entity:self, #face_notify:"death"});
-    self notify(#"death", {#mod:damagetype, #attacker:attacker});
+    level notify(#"face", {#face_notify:"death", #entity:self});
+    self notify(#"death", {#attacker:attacker, #mod:damagetype});
 }
 
 // Namespace util/util_shared
@@ -1213,8 +1213,8 @@ function death_notify_wrapper(attacker, damagetype) {
 // Checksum 0xf38f6f89, Offset: 0x4178
 // Size: 0x136
 function damage_notify_wrapper(damage, attacker, direction_vec, point, type, modelname, tagname, partname, idflags) {
-    level notify(#"face", {#entity:self, #face_notify:"damage"});
-    self notify(#"damage", {#flags:idflags, #part_name:partname, #tag_name:tagname, #model_name:modelname, #mod:type, #position:point, #direction:direction_vec, #attacker:attacker, #amount:damage});
+    level notify(#"face", {#face_notify:"damage", #entity:self});
+    self notify(#"damage", {#amount:damage, #attacker:attacker, #direction:direction_vec, #position:point, #mod:type, #model_name:modelname, #tag_name:tagname, #part_name:partname, #flags:idflags});
 }
 
 // Namespace util/util_shared
@@ -1222,7 +1222,7 @@ function damage_notify_wrapper(damage, attacker, direction_vec, point, type, mod
 // Checksum 0xa8042e8b, Offset: 0x42b8
 // Size: 0x5e
 function explode_notify_wrapper() {
-    level notify(#"face", {#entity:self, #face_notify:"explode"});
+    level notify(#"face", {#face_notify:"explode", #entity:self});
     self notify(#"explode");
 }
 
@@ -1231,7 +1231,7 @@ function explode_notify_wrapper() {
 // Checksum 0x2ba8ee71, Offset: 0x4320
 // Size: 0x5e
 function alert_notify_wrapper() {
-    level notify(#"face", {#entity:self, #face_notify:"alert"});
+    level notify(#"face", {#face_notify:"alert", #entity:self});
     self notify(#"alert");
 }
 
@@ -1240,7 +1240,7 @@ function alert_notify_wrapper() {
 // Checksum 0xb2d14886, Offset: 0x4388
 // Size: 0x5e
 function shoot_notify_wrapper() {
-    level notify(#"face", {#entity:self, #face_notify:"shoot"});
+    level notify(#"face", {#face_notify:"shoot", #entity:self});
     self notify(#"shoot");
 }
 
@@ -1249,7 +1249,7 @@ function shoot_notify_wrapper() {
 // Checksum 0xb876721f, Offset: 0x43f0
 // Size: 0x5e
 function melee_notify_wrapper() {
-    level notify(#"face", {#entity:self, #face_notify:"melee"});
+    level notify(#"face", {#face_notify:"melee", #entity:self});
     self notify(#"melee");
 }
 
@@ -3466,9 +3466,9 @@ function function_97cf7eb0(v_start, n_max_dist = 5000, n_ground_offset = 0, e_ig
     v_trace_end = v_trace_start + (0, 0, (n_max_dist + 5) * -1);
     a_trace = groundtrace(v_trace_start, v_trace_end, 0, e_ignore, b_ignore_water, b_ignore_glass);
     if (a_trace[#"surfacetype"] != "none") {
-        return {#entity:a_trace[#"entity"], #position:a_trace[#"position"] + (0, 0, n_ground_offset)};
+        return {#position:a_trace[#"position"] + (0, 0, n_ground_offset), #entity:a_trace[#"entity"]};
     }
-    return {#entity:a_trace[#"entity"], #position:v_start};
+    return {#position:v_start, #entity:a_trace[#"entity"]};
 }
 
 // Namespace util/util_shared
@@ -4864,7 +4864,7 @@ function register_callback(str_kvp, func, ...) {
         if (!isdefined(self.var_c18fbf49)) {
             self.var_c18fbf49 = [];
         }
-        s_callback = {#params:vararg, #func:func};
+        s_callback = {#func:func, #params:vararg};
         self.var_c18fbf49[var_a12e87bd] = s_callback;
         var_c747e345 = strtok(var_bcb861f, " ");
         foreach (var_5afcf8a3 in var_c747e345) {

@@ -111,7 +111,7 @@ function start() {
 // Checksum 0xc7bab538, Offset: 0xf80
 // Size: 0x5a
 function function_42907fd4() {
-    self.bot.var_469cfe53 = {#isfavoriteenemy:0, #istarget:0, #distsq:1000000, #maxhealth:100};
+    self.bot.var_469cfe53 = {#maxhealth:100, #distsq:1000000, #istarget:0, #isfavoriteenemy:0};
 }
 
 // Namespace bot_action/bot_action
@@ -220,7 +220,7 @@ function function_4a53ae1f() {
 // Checksum 0x30b838df, Offset: 0x14a0
 // Size: 0x84
 function private function_fced7d8a(action, weapon, target) {
-    self.bot.var_e6a1f475 = {#forced:1, #target:target, #weapon:weapon, #action:action};
+    self.bot.var_e6a1f475 = {#action:action, #weapon:weapon, #target:target, #forced:1};
     self reset();
 }
 
@@ -229,7 +229,7 @@ function private function_fced7d8a(action, weapon, target) {
 // Checksum 0x1cdc59e4, Offset: 0x1530
 // Size: 0x7e
 function register_action(name, rankfunc, weightfunc, executefunc) {
-    level.botactions[name] = {#executefunc:executefunc, #weightfunc:weightfunc, #rankfunc:rankfunc, #name:name};
+    level.botactions[name] = {#name:name, #rankfunc:rankfunc, #weightfunc:weightfunc, #executefunc:executefunc};
 }
 
 // Namespace bot_action/bot_action
@@ -360,7 +360,7 @@ function function_10723c01(weapon, var_3f4e87bd) {
     }
     paramslist = self.bot.paramslist;
     foreach (action in var_3f4e87bd) {
-        actionparams = {#weapon:weapon, #action:action};
+        actionparams = {#action:action, #weapon:weapon};
         /#
             actionparams.debug = [];
         #/
@@ -2729,12 +2729,12 @@ function function_ecf6dc7a(actionparams) {
 function function_b70a8fcf(actionparams) {
     target = actionparams.target;
     if (!isdefined(target)) {
-        return 0;
+        return false;
     }
     if (isplayer(target)) {
         return isdefined(target.revivetrigger);
     }
-    return 0;
+    return false;
 }
 
 // Namespace bot_action/bot_action
@@ -3039,8 +3039,8 @@ function function_2b8f7067() {
             return;
         }
         var_7607a546.searched = 1;
-        var_b43277fd = [0:var_7607a546];
-        var_d56aeea7 = [0:var_7607a546];
+        var_b43277fd = [var_7607a546];
+        var_d56aeea7 = [var_7607a546];
         v_start_hardpoint_navmesh_collision = [];
         var_4a39f740 = [];
         self.var_77ae9678 = [];

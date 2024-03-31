@@ -228,7 +228,7 @@ function function_ace6c248(var_89ae88b4) {
         self.var_8e45c356 = [];
     }
     if (!isdefined(self.var_8e45c356[var_89ae88b4])) {
-        self.var_8e45c356[var_89ae88b4] = {#endtime:0, #exiting:1};
+        self.var_8e45c356[var_89ae88b4] = {#exiting:1, #endtime:0};
     }
     if (self.var_8e45c356[var_89ae88b4].exiting && !self postfx::function_556665f2(var_89ae88b4)) {
         self postfx::playpostfxbundle(var_89ae88b4);

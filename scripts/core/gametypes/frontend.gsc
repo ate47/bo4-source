@@ -68,7 +68,7 @@ function dailychallengedevguiinit() {
         for (row_num = 2; row_num < num_rows; row_num++) {
             challenge_name = tablelookupcolumnforrow(#"gamedata/stats/zm/statsmilestones4.csv", row_num, 5);
             display_row_num = row_num - 2;
-            devgui_string = "<unknown string>" + "<unknown string>" + (display_row_num > 10 ? "<unknown string>" + display_row_num : display_row_num) + "<unknown string>" + function_9e72a96(challenge_name) + "<unknown string>" + row_num + "<unknown string>";
+            devgui_string = "<unknown string>" + "<unknown string>" + (display_row_num > 10 ? display_row_num : "<unknown string>" + display_row_num) + "<unknown string>" + function_9e72a96(challenge_name) + "<unknown string>" + row_num + "<unknown string>";
             adddebugcommand(devgui_string);
         }
     #/

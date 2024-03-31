@@ -692,7 +692,7 @@ function function_ec8d8bbc(einflictor, eattacker, idamage, idflags, smeansofdeat
     if (vehicle_ai::should_emp(self, weapon, smeansofdeath, einflictor, eattacker)) {
         minempdowntime = 0.8 * self.settings.empdowntime;
         maxempdowntime = 1.2 * self.settings.empdowntime;
-        self notify(#"emped", {#pararm2:einflictor, #param1:eattacker, #param0:randomfloatrange(minempdowntime, maxempdowntime)});
+        self notify(#"emped", {#param0:randomfloatrange(minempdowntime, maxempdowntime), #param1:eattacker, #pararm2:einflictor});
     }
     if (vehicle_ai::should_burn(self, weapon, smeansofdeath, einflictor, eattacker)) {
         self thread vehicle_ai::burning_thread(eattacker, einflictor);

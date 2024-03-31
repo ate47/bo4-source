@@ -23,7 +23,7 @@ function add_ai_spawn_function(func_spawn, ...) {
     } else if (!isarray(level.var_71b23817)) {
         level.var_71b23817 = array(level.var_71b23817);
     }
-    var_e45a16f3 = {#params:vararg, #func:func_spawn};
+    var_e45a16f3 = {#func:func_spawn, #params:vararg};
     if (!isdefined(level.var_71b23817)) {
         level.var_71b23817 = [];
     } else if (!isarray(level.var_71b23817)) {
@@ -63,7 +63,7 @@ function add_archetype_spawn_function(str_archetype, func_spawn, ...) {
     } else if (!isarray(level.var_c18b23c1[str_archetype])) {
         level.var_c18b23c1[str_archetype] = array(level.var_c18b23c1[str_archetype]);
     }
-    var_6d69c0bf = {#params:vararg, #func:func_spawn};
+    var_6d69c0bf = {#func:func_spawn, #params:vararg};
     if (!isdefined(level.var_c18b23c1[str_archetype])) {
         level.var_c18b23c1[str_archetype] = [];
     } else if (!isarray(level.var_c18b23c1[str_archetype])) {

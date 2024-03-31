@@ -145,7 +145,7 @@ function function_dcaa7a4a(e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462) 
     e_grenade.mdl_anchor = util::spawn_model(var_9ddf478, e_grenade.origin, e_grenade.angles);
     e_grenade.mdl_anchor linkto(e_grenade);
     e_grenade.var_53ba8670 = 0;
-    level notify(#"homunculus_thrown", {#e_player:self, #e_homunculus:e_grenade});
+    level notify(#"homunculus_thrown", {#e_homunculus:e_grenade, #e_player:self});
     if (math::cointoss() && math::cointoss()) {
         e_grenade thread function_4d71ac38(#"hash_8d020e5460f4a95");
         e_grenade.var_53ba8670 = 1;

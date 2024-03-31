@@ -2454,7 +2454,7 @@ function function_b2ac6ee7() {
 function function_9bdf581f(perk, n_slot, b_bought = 0) {
     self endon(#"player_downed", #"disconnect", #"perk_abort_drinking");
     level endon(#"end_game");
-    level notify(#"hash_4e566c83cdfabe44", {#perk:perk, #e_player:self});
+    level notify(#"hash_4e566c83cdfabe44", {#e_player:self, #perk:perk});
     self perks::perk_setperk(perk);
     if (isdefined(level._custom_perks[perk].var_658e2856)) {
         if (isarray(level._custom_perks[perk].var_658e2856)) {
@@ -2467,7 +2467,7 @@ function function_9bdf581f(perk, n_slot, b_bought = 0) {
     }
     if (isdefined(b_bought) && b_bought) {
         self thread give_perk_presentation(perk);
-        self notify(#"perk_bought", {#n_slot:n_slot, #var_16c042b8:perk});
+        self notify(#"perk_bought", {#var_16c042b8:perk, #n_slot:n_slot});
         self zm_stats::increment_challenge_stat(#"survivalist_buy_perk");
         self zm_stats::function_c0c6ab19(#"perks_used");
         if (zm_utility::is_standard()) {

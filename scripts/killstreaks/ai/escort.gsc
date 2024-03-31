@@ -25,7 +25,7 @@ function private init_escort(var_5a529222, var_edc20efd, var_d73e0c6e, var_544ae
     /#
         assert(isdefined(self.ai));
     #/
-    self.ai.escort = {#var_db083d2c:var_db083d2c, #var_544ae93d:var_544ae93d, #var_d73e0c6e:var_d73e0c6e, #var_edc20efd:var_edc20efd, #var_5a529222:var_5a529222, #state:2};
+    self.ai.escort = {#state:2, #var_5a529222:var_5a529222, #var_edc20efd:var_edc20efd, #var_d73e0c6e:var_d73e0c6e, #var_544ae93d:var_544ae93d, #var_db083d2c:var_db083d2c};
 }
 
 // Namespace ai_escort/escort

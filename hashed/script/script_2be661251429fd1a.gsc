@@ -1556,7 +1556,7 @@ function function_942b5513(actionparams) {
     if (targetlocations.size > 0) {
         while (shots_fired < 3) {
             location = array::random(targetlocations) + (randomfloatrange(0, 200), randomfloatrange(0, 200), 0);
-            self notify(#"confirm_location", {#yaw:0, #position:location});
+            self notify(#"confirm_location", {#position:location, #yaw:0});
             shots_fired++;
             if (shots_fired == 3) {
                 break;

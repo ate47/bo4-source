@@ -740,7 +740,7 @@ function _print_player_out(n_range_sq = 9000000) {
         e_player = self.var_7988eee5;
     }
     if (zm_utility::is_player_valid(e_player)) {
-        return {#n_index:e_player zm_characters::function_d35e4c92(), #e_player:e_player};
+        return {#e_player:e_player, #n_index:e_player zm_characters::function_d35e4c92()};
     }
     return undefined;
 }

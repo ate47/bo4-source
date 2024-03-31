@@ -1199,9 +1199,9 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
     var_88e794fb = var_786d7e06.registerzombie_bgb_used_reinforce;
     if (!isdefined(var_dd54fdb1) && var_ae30c5b0) {
         weakpoints = namespace_81245006::function_fab3ee3e(self);
-        foreach (var_3a1904d3 in weakpoints) {
-            if (namespace_81245006::function_f29756fe(var_3a1904d3) === 1 && var_3a1904d3.type === #"armor") {
-                var_dd54fdb1 = var_3a1904d3;
+        foreach (pointinfo in weakpoints) {
+            if (namespace_81245006::function_f29756fe(pointinfo) === 1 && pointinfo.type === #"armor") {
+                var_dd54fdb1 = pointinfo;
                 var_88e794fb = 1;
                 break;
             }
@@ -1235,7 +1235,7 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
                 var_a7d0fdac = 0;
                 if (var_dd54fdb1.hitloc == "left_arm_lower" || var_dd54fdb1.hitloc == "right_arm_lower") {
                     var_a7d0fdac = 1;
-                    self.damage_info = {#modelindex:modelindex, #boneindex:boneindex, #offsettime:offsettime, #hitloc:var_dd54fdb1.hitloc, #dir:dir, #point:point, #weapon:weapon, #meansofdeath:meansofdeath, #idflags:idflags, #damage:damage, #attacker:attacker, #inflictor:inflictor};
+                    self.damage_info = {#inflictor:inflictor, #attacker:attacker, #damage:damage, #idflags:idflags, #meansofdeath:meansofdeath, #weapon:weapon, #point:point, #dir:dir, #hitloc:var_dd54fdb1.hitloc, #offsettime:offsettime, #boneindex:boneindex, #modelindex:modelindex};
                 }
                 self destructserverutils::handledamage(inflictor, attacker, damage, idflags, meansofdeath, weapon, point, dir, var_dd54fdb1.hitloc, offsettime, boneindex, modelindex);
                 self.gibbed = 1;
@@ -1430,7 +1430,7 @@ function private function_88d65504(axe, var_7900b267, move_pos) {
     trace = physicstrace(axe.origin, move_pos, (-16, -16, -12), (16, 16, 12), self);
     if (trace[#"fraction"] < 1) {
         hit_ent = trace[#"entity"];
-        level notify(#"hash_435816ec8f13c19b", {#hit_ent:hit_ent, #mdl_axe:axe, #ai_gladiator:self, #var_f1445bd6:trace});
+        level notify(#"hash_435816ec8f13c19b", {#var_f1445bd6:trace, #ai_gladiator:self, #mdl_axe:axe, #hit_ent:hit_ent});
         if (isdefined(hit_ent)) {
             if (isplayer(hit_ent)) {
                 if (isdefined(hit_ent.hasriotshield) && hit_ent.hasriotshield) {

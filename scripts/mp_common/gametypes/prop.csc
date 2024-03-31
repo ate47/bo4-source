@@ -278,13 +278,13 @@ function camerarangechange(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x60
 function function_b9fceaaf(localclientnum) {
     if (isdefined(self.prop)) {
-        return 1;
+        return true;
     }
     if (isplayer(self)) {
         self.prop = function_1d9539dd(localclientnum, self);
         return isdefined(self.prop);
     }
-    return 0;
+    return false;
 }
 
 // Namespace prop/prop

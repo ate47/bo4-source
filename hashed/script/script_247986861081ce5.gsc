@@ -18,11 +18,11 @@ function init() {
     } else if (!isarray(level.var_a7b0c29c)) {
         level.var_a7b0c29c = array(level.var_a7b0c29c);
     }
-    level.var_a7b0c29c[0] = {#n_target:2, #n_index:1, #end_func:&function_55f180c2, #start_func:&function_6882655b};
-    level.var_a7b0c29c[1] = {#n_target:4, #n_index:2, #end_func:&function_55f180c2, #start_func:&function_6882655b};
-    level.var_a7b0c29c[2] = {#n_target:6, #n_index:3, #end_func:&function_55f180c2, #start_func:&function_6882655b};
-    level.var_a7b0c29c[3] = {#n_target:8, #n_index:4, #end_func:&function_55f180c2, #start_func:&function_6882655b};
-    level.var_a7b0c29c[4] = {#n_target:10, #n_index:5, #end_func:&function_55f180c2, #start_func:&function_6882655b};
+    level.var_a7b0c29c[0] = {#start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:1, #n_target:2};
+    level.var_a7b0c29c[1] = {#start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:2, #n_target:4};
+    level.var_a7b0c29c[2] = {#start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:3, #n_target:6};
+    level.var_a7b0c29c[3] = {#start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:4, #n_target:8};
+    level.var_a7b0c29c[4] = {#start_func:&function_6882655b, #end_func:&function_55f180c2, #n_index:5, #n_target:10};
     level.var_f0efd877 = 0;
     function_1525b94c();
     function_a5cebb9a(0);

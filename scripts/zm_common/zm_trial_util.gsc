@@ -388,7 +388,7 @@ function function_3f8a4145(var_26f4f16d) {
             if (self.var_c4193958[slot] !== "") {
                 var_806e2de0.var_c4193958[slot] = vapor;
             }
-            self notify(vapor + "_stop", {#var_fe7072f6:1, #var_613b7621:!var_d84249cb});
+            self notify(vapor + "_stop", {#var_613b7621:!var_d84249cb, #var_fe7072f6:1});
             /#
                 assert(isdefined(level.var_5355c665));
             #/
@@ -410,7 +410,7 @@ function function_3f8a4145(var_26f4f16d) {
         var_806e2de0.var_8dee79a9 = self.var_1eba264f;
         var_806e2de0.var_d3f0257d = self.var_b773066d;
         foreach (var_6cbabb29 in self.var_67ba1237) {
-            self notify(var_6cbabb29 + "_stop", {#var_fe7072f6:1, #var_613b7621:1});
+            self notify(var_6cbabb29 + "_stop", {#var_613b7621:1, #var_fe7072f6:1});
         }
         if (isdefined(self.var_64f51f65)) {
             var_806e2de0.additional_primary_weapon = self.var_64f51f65;

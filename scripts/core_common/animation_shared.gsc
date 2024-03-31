@@ -209,7 +209,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
     }
     /#
         self.var_80c69db6 = "<unknown string>";
-        self.var_6c4bb19 = {#var_f4b34dc1:var_f4b34dc1, #v_angles_or_tag:v_angles_or_tag, #v_origin_or_ent:v_origin_or_ent, #animation:animation};
+        self.var_6c4bb19 = {#animation:animation, #v_origin_or_ent:v_origin_or_ent, #v_angles_or_tag:v_angles_or_tag, #var_f4b34dc1:var_f4b34dc1};
         level flagsys::clear("<unknown string>");
     #/
     if (!isanimlooping(animation) && n_blend_out > 0 && n_rate > 0 && n_start_time < 1) {

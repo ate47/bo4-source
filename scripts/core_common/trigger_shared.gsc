@@ -523,7 +523,7 @@ function _trigger_wait_think(s_tracker, e_entity) {
     self endon(#"death");
     s_tracker endon(#"trigger");
     e_other = _trigger_wait(e_entity);
-    s_tracker notify(#"trigger", {#trigger:self, #activator:e_other});
+    s_tracker notify(#"trigger", {#activator:e_other, #trigger:self});
 }
 
 // Namespace trigger/trigger_shared

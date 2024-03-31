@@ -2579,7 +2579,7 @@ function private function_e74b21de(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:angles};
         }
     }
     tacpoints = tacticalquery("swat_team_leave_fallback", origin, self, cylinder, var_441c6196, var_84e7232);
@@ -2587,7 +2587,7 @@ function private function_e74b21de(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:angles};
         }
     }
     return undefined;

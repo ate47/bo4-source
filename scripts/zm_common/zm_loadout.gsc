@@ -251,7 +251,7 @@ function function_e884e095(slot, weapon) {
 // Size: 0x64
 function function_59b0ef71(slot, weapon) {
     if (!isdefined(weapon) || !isdefined(level.var_d5f9c1d2) || !isdefined(level.var_d5f9c1d2[slot])) {
-        return 0;
+        return false;
     }
     return isdefined(level.var_d5f9c1d2[slot][weapon]);
 }
@@ -300,7 +300,7 @@ function function_6519eea8(slot, weapon) {
         weapon = level.weaponnone;
     }
     old_weapon = self function_8f85096(slot);
-    self notify(#"hash_4078956b159dd0f3", {#weapon:weapon, #slot:slot});
+    self notify(#"hash_4078956b159dd0f3", {#slot:slot, #weapon:weapon});
     self notify("new_" + slot, {#weapon:weapon});
     self.slot_weapons[slot] = level.weaponnone;
     if (old_weapon != level.weaponnone && old_weapon != weapon) {

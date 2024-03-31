@@ -286,7 +286,7 @@ function function_53ef16ed(var_b6acc0c9, var_5563d1e7, var_8b1294a8, var_20d5084
         if (isdefined(var_4dc9e63c)) {
             level thread ct_vo::function_831e0584(array(var_4dc9e63c));
         }
-        ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_43778cd6dfd4c233" : #"hash_142e78a1bcbd104d");
+        ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_142e78a1bcbd104d" : #"hash_43778cd6dfd4c233");
         ct_utils::function_79957328(undefined);
         if (isdefined(str_objective)) {
             e_player = getplayers()[0];
@@ -356,7 +356,7 @@ function function_bc194310() {
                 }
                 waitframe(1);
             }
-            ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_71cd040e856d2d69" : #"hash_4e50694e1653efaf");
+            ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_4e50694e1653efaf" : #"hash_71cd040e856d2d69");
             if (var_d21ccff6) {
                 ct_utils::function_79957328();
             }
@@ -619,7 +619,7 @@ function function_d08e9d7f() {
         level notify(#"stop_nag");
         ct_utils::function_e9ab1003("s_grapple_hook_chasm_start_2_obj");
         ct_utils::function_79957328();
-        ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_43778cd6dfd4c233" : #"hash_142e78a1bcbd104d");
+        ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_142e78a1bcbd104d" : #"hash_43778cd6dfd4c233");
     }
     level notify(#"stop_nag");
     level notify(#"chasm_complete");
@@ -683,7 +683,7 @@ function function_fecd2528() {
     ct_vo::function_831e0584(array(#"hash_2559f328a2274691"), 1);
     level.var_eb5015e6 = 1;
     e_player = getplayers()[0];
-    var_8e5c536e = function_8b1a219a() ? #"hash_75c2aca845270377" : #"hash_4fb346435e061201";
+    var_8e5c536e = function_8b1a219a() ? #"hash_4fb346435e061201" : #"hash_75c2aca845270377";
     e_player thread ct_utils::function_61c3d59c(var_8e5c536e, undefined);
     level thread ct_vo::function_14b08e49(array(#"hash_7e4f395a02d8ed35"), "grav_slam_complete");
     ct_utils::function_654280be();
@@ -1400,7 +1400,7 @@ function function_356af630() {
         aiutility::addaioverridedamagecallback(drone, &ai_tank::function_4f8d11b);
         drone thread function_ca1c7fce("earn_the_hellstorm_objective");
         drone waittill(#"death");
-        params = {#weapon:e_player.currentweapon, #eattacker:e_player};
+        params = {#eattacker:e_player, #weapon:e_player.currentweapon};
         drone function_1f212110(params);
         wait(5);
     }
@@ -1473,7 +1473,7 @@ function function_bbdd4fa9() {
         function_22720795("s_enemy_event3");
         e_player thread ct_utils::function_1bb93418();
         level thread function_a9e139d7();
-        ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_76bd8e89161df2ad" : #"hash_7bc7eb557d98f163");
+        ct_utils::function_a61ebb46(function_8b1a219a() ? #"hash_7bc7eb557d98f163" : #"hash_76bd8e89161df2ad");
         level.var_e891c5ba = undefined;
         level notify(#"hellstorm_fired");
         ct_vo::function_831e0584(array("vox_tvoi_tutor_ruin_final_3_active"), 0);
@@ -1686,7 +1686,7 @@ function function_26de1390(s_loc) {
 // Checksum 0xc179e727, Offset: 0x8c70
 // Size: 0x68
 function function_cd74cce0(params) {
-    level notify(#"grapple_failed", {#str_reason:params.reason, #var_57e7c4e:params.targetpos, #player:self});
+    level notify(#"grapple_failed", {#player:self, #var_57e7c4e:params.targetpos, #str_reason:params.reason});
 }
 
 // Namespace ct_ruin_tutorial/ct_ruin_tutorial

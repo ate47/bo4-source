@@ -697,7 +697,7 @@ function function_f29fcec6(s_loc) {
     self ct_bots::function_35e77034(getweapon(#"smg_standard_t8"));
     self.bot.var_b2b8f0b6 = 100;
     self.bot.var_e8c941d6 = 500;
-    if (isdefined(s_dest.var_48dd881a)) {
+    if (isdefined(s_dest.script_stance)) {
         self waittill(#"goal");
         self bot_stance::crouch();
     }

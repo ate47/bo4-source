@@ -161,7 +161,7 @@ function private function_fb11cc0f(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:owner.angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:owner.angles};
         }
     }
     tacpoints = tacticalquery("mp_dog_spawn_fallback", owner.origin, owner, cylinder, var_441c6196, var_84e7232);
@@ -169,7 +169,7 @@ function private function_fb11cc0f(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:owner.angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:owner.angles};
         }
     }
     tacpoints = tacticalquery("mp_dog_spawn_fallback_2", owner.origin, owner, cylinder, var_441c6196);
@@ -177,12 +177,12 @@ function private function_fb11cc0f(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:owner.angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:owner.angles};
         }
     }
     closest = getclosestpointonnavmesh(owner.origin, 1200, 1);
     if (isdefined(closest)) {
-        return {#angles:owner.angles, #origin:closest};
+        return {#origin:closest, #angles:owner.angles};
     }
     return undefined;
 }
@@ -398,7 +398,7 @@ function private function_e74b21de(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:angles};
         }
     }
     if (isdefined(owner)) {
@@ -410,15 +410,15 @@ function private function_e74b21de(owner) {
         tacpoints = function_9cb166cd(tacpoints);
         if (tacpoints.size) {
             tacpoint = array::random(tacpoints);
-            return {#angles:angles, #origin:tacpoint.origin};
+            return {#origin:tacpoint.origin, #angles:angles};
         }
     }
     var_ead7a19 = function_b777d194(self.origin);
     if (isdefined(var_ead7a19) && var_ead7a19.size) {
         leavepoint = array::random(var_ead7a19);
-        return {#angles:self.angles, #origin:leavepoint};
+        return {#origin:leavepoint, #angles:self.angles};
     }
-    return {#angles:self.angles, #origin:self.origin};
+    return {#origin:self.origin, #angles:self.angles};
 }
 
 // Namespace dog/dog_shared

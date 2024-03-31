@@ -637,7 +637,7 @@ function function_7cb78bcd() {
             case #"yellow_backyard_to_yellow_house":
                 if (!(isdefined(var_6620353d.has_been_opened) && var_6620353d.has_been_opened)) {
                     a_e_players = getplayers();
-                    var_6620353d notify(#"trigger", {#is_forced:1, #activator:a_e_players[0]});
+                    var_6620353d notify(#"trigger", {#activator:a_e_players[0], #is_forced:1});
                 }
                 break;
             }

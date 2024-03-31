@@ -1204,7 +1204,7 @@ function function_d0bcce1(n_index) {
 // Size: 0x66
 function on_grenade_fired(params) {
     grenade = params.projectile;
-    self notify(#"hash_25cbcadbbeb229d8", {#e_grenade:grenade, #v_pos:grenade.origin});
+    self notify(#"hash_25cbcadbbeb229d8", {#v_pos:grenade.origin, #e_grenade:grenade});
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial
@@ -1236,7 +1236,7 @@ function grenade_sticky_watcher() {
     self endon(#"death");
     waitresult = undefined;
     waitresult = self waittill(#"stuck_to_player");
-    level notify(#"hash_791dd53f2a2f4a6", {#grenade:self, #player:waitresult.player});
+    level notify(#"hash_791dd53f2a2f4a6", {#player:waitresult.player, #grenade:self});
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial

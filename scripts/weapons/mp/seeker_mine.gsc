@@ -230,7 +230,7 @@ function function_3019d870(origin, angles) {
     mine setweapon(mine.weapon);
     mine.var_16d479de = &function_6db15645;
     mine.var_f5037060 = &function_724e8f1c;
-    mine.var_8a41c722 = &function_2b5df53d;
+    mine.var_8a41c722 = &cleartarget;
     mine.var_a5b686b6 = 0;
     mine.var_1f13c7f1 = getweapon(#"eq_seeker_mine").var_1f13c7f1;
     mine.var_69ea963 = &function_c7561b46;
@@ -588,7 +588,7 @@ function function_1750438e(effect, weapon, owner) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xb4b664f7, Offset: 0x26c0
 // Size: 0x144
-function function_2b5df53d(target, var_26b2b1bb, seekermine) {
+function cleartarget(target, var_26b2b1bb, seekermine) {
     function_1750438e();
     target freezecontrolsallowlook(0);
     target setviewclamp(0, 0, 0, 0);
@@ -783,7 +783,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
     gesturetable = "gestable_shocked_reaction";
     var_84a7f98e = undefined;
     waitduration = 0;
-    var_94d99e87 = 0;
+    animdelay = 0;
     islooping = 1;
     if (!isdefined(seekermine)) {
         self.var_dda9b735.state = 3;
@@ -808,7 +808,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
         self battlechatter::function_72b65730();
         function_1750438e(level.var_9d47488.tunables.var_df3ed3fd, seekermine.arcweapon, seekermine.owner);
-        var_94d99e87 = level.var_9d47488.tunables.var_a06eff0b;
+        animdelay = level.var_9d47488.tunables.var_a06eff0b;
         /#
             println("<unknown string>");
         #/
@@ -837,7 +837,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         #/
         break;
     }
-    self thread function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, var_94d99e87);
+    self thread function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, animdelay);
     self thread function_24d08109(seekermine, waitduration, var_26b2b1bb, self.var_dda9b735.state);
 }
 
@@ -855,7 +855,7 @@ function function_24d08109(seekermine, waitduration, var_26b2b1bb, state) {
     } else {
         thread function_e380fde7(undefined, undefined, 0, 0, 0);
     }
-    function_2b5df53d(self, var_26b2b1bb, seekermine);
+    cleartarget(self, var_26b2b1bb, seekermine);
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -871,18 +871,18 @@ function function_b6ee86e3(seekermine, var_26b2b1bb) {
 // Params 5, eflags: 0x1 linked
 // Checksum 0xba0ee68a, Offset: 0x3720
 // Size: 0x2e2
-function function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, var_94d99e87) {
+function function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, animdelay) {
     self notify("49a0bba57c17e324");
     self endon("49a0bba57c17e324");
     self endon(#"death");
-    wait(var_94d99e87);
+    wait(animdelay);
     if (isdefined(var_84a7f98e) && var_84a7f98e == level.weaponnone) {
         var_84a7f98e = undefined;
     }
     if (isdefined(gesturetable)) {
-        var_8ac35735 = self gestures::function_c77349d4(gesturetable);
+        newgesture = self gestures::function_c77349d4(gesturetable);
     }
-    if (isdefined(self.var_dda9b735.gesture) && (isdefined(var_84a7f98e) || isdefined(var_8ac35735) && var_8ac35735 != self.var_dda9b735.gesture)) {
+    if (isdefined(self.var_dda9b735.gesture) && (isdefined(var_84a7f98e) || isdefined(newgesture) && newgesture != self.var_dda9b735.gesture)) {
         self stopgestureviewmodel(self.var_dda9b735.gesture, 50, 1);
         self.var_dda9b735.gesture = undefined;
         self.var_dda9b735.islooping = undefined;
@@ -891,10 +891,10 @@ function function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, 
         self.var_dda9b735.gesture = undefined;
         self.var_dda9b735.islooping = undefined;
         self thread gestures::function_f3e2696f(self, var_84a7f98e, undefined, 1.5, undefined, undefined, undefined);
-    } else if (isdefined(var_8ac35735)) {
+    } else if (isdefined(newgesture)) {
         while (isdefined(self.var_dda9b735.isshocked) ? self.var_dda9b735.isshocked : 0) {
-            if (self gestures::play_gesture(var_8ac35735, undefined, 1)) {
-                self.var_dda9b735.gesture = var_8ac35735;
+            if (self gestures::play_gesture(newgesture, undefined, 1)) {
+                self.var_dda9b735.gesture = newgesture;
                 self.var_dda9b735.islooping = islooping;
                 break;
             }

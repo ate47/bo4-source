@@ -1894,7 +1894,7 @@ function barricadeentermocompnozterminate(entity, mocompanim, mocompanimblendout
 function notetrackboardtear(animationentity) {
     if (isdefined(animationentity.chunk)) {
         animationentity.first_node.zbarrier setzbarrierpiecestate(animationentity.chunk, "opening");
-        level notify(#"zombie_board_tear", {#s_board:animationentity.first_node, #ai_zombie:animationentity});
+        level notify(#"zombie_board_tear", {#ai_zombie:animationentity, #s_board:animationentity.first_node});
     }
 }
 

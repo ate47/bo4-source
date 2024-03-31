@@ -351,7 +351,7 @@ function function_7e94450c() {
     }
     e_brick clientfield::set("" + #"hash_23ba81a7c071845d", 0);
     t_damage delete();
-    self notify(#"hash_6858bc0ef6a5b4b1", {#var_2db8b01a:e_brick.scene_ents[#"prop 1"], #e_player:e_player});
+    self notify(#"hash_6858bc0ef6a5b4b1", {#e_player:e_player, #var_2db8b01a:e_brick.scene_ents[#"prop 1"]});
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -368,7 +368,7 @@ function function_5e0885f9() {
     s_notify = self waittill(#"death");
     self clientfield::set("" + #"hash_23ba81a7c071845d", 0);
     waitframe(1);
-    self notify(#"hash_6858bc0ef6a5b4b1", {#var_2db8b01a:self, #e_player:s_notify.attacker});
+    self notify(#"hash_6858bc0ef6a5b4b1", {#e_player:s_notify.attacker, #var_2db8b01a:self});
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -451,7 +451,7 @@ function function_aaaf780e(var_87658653, t_damage) {
     while (true) {
         self waittill(#"weapon_melee");
         if (isdefined(self) && self util::is_looking_at(v_lookat) && distance2d(var_87658653.origin, self.origin) < 100) {
-            t_damage notify(#"damage", {#attacker:self, #mod:"MOD_MELEE"});
+            t_damage notify(#"damage", {#mod:"MOD_MELEE", #attacker:self});
             return;
         }
     }
@@ -4654,7 +4654,7 @@ function function_e3a8b066(str_hand) {
         }
         thread zm_devgui::zombie_devgui_goto_round(5);
         if (isdefined(level.var_f9a57be7[level.var_65569374].t_damage)) {
-            level.var_f9a57be7[level.var_65569374].t_damage notify(#"damage", {#mod:"zone_ww_quest_air", #attacker:a_players[0]});
+            level.var_f9a57be7[level.var_65569374].t_damage notify(#"damage", {#attacker:a_players[0], #mod:"zone_ww_quest_air"});
         } else {
             level.var_f9a57be7[level.var_65569374] dodamage(10000, level.var_f9a57be7[level.var_65569374].origin, a_players[0]);
         }
@@ -4676,7 +4676,7 @@ function function_e3a8b066(str_hand) {
 function function_9dc3d269() {
     /#
         a_players = util::get_active_players();
-        a_players[0] notify(#"hash_7fe6ca08732b8a1d", {#b_skipped:1, #b_success:1});
+        a_players[0] notify(#"hash_7fe6ca08732b8a1d", {#b_success:1, #b_skipped:1});
     #/
 }
 
@@ -4798,7 +4798,7 @@ function function_681ce100() {
                     v_tag_pos = mdl_chaos gettagorigin("<unknown string>");
                     break;
                 }
-                level notify(#"ww_gaia_hit", {#v_position:v_tag_pos, #e_entity:mdl_chaos, #player:a_players[0]});
+                level notify(#"ww_gaia_hit", {#player:a_players[0], #e_entity:mdl_chaos, #v_position:v_tag_pos});
                 wait(0.25);
             }
         }

@@ -341,7 +341,7 @@ function private function_bea2e288(type) {
             if (withinrange && var_c0af03ae) {
                 damage = mapfloat(0, var_46f1b5eb.radius, var_46f1b5eb.damagemin, var_46f1b5eb.damagemax, dist);
                 player dodamage(damage, aoe.entity.origin);
-                player notify(#"aoe_damage", {#origin:aoe.entity.origin, #var_159100b7:aoe.type});
+                player notify(#"aoe_damage", {#var_159100b7:aoe.type, #origin:aoe.entity.origin});
             }
         }
     }

@@ -126,7 +126,7 @@ function function_a0081b68(ent) {
 function function_aa6e2f52(watcher, owner) {
     self endon(#"death");
     self.protected_entities = [];
-    self.var_8d84345 = [];
+    self.hit_ents = [];
     self.var_7471e7b7 = 0;
     self setcandamage(0);
     waitresult = undefined;
@@ -222,8 +222,8 @@ function function_5fff8c45(watcher, hitent) {
 // Checksum 0x9d8e2d53, Offset: 0xd10
 // Size: 0x54
 function function_33020ed7(ent) {
-    for (i = 0; i < self.var_8d84345.size; i++) {
-        if (self.var_8d84345[i] == ent) {
+    for (i = 0; i < self.hit_ents.size; i++) {
+        if (self.hit_ents[i] == ent) {
             return true;
         }
     }
@@ -420,7 +420,7 @@ function function_e0141557(ent, var_51415470) {
 function function_92eabc2f(ent, var_51415470) {
     ent endon(#"death");
     self endon(#"death");
-    self.var_8d84345[self.var_8d84345.size] = ent;
+    self.hit_ents[self.hit_ents.size] = ent;
     self.var_7471e7b7++;
     if (isplayer(ent) && isdefined(ent.var_d44d1214)) {
         ent gadget_radiation_field::shutdown(1);

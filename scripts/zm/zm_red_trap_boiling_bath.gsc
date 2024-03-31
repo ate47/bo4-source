@@ -111,7 +111,7 @@ function trap_damage(t_trap) {
     n_percent = n_percent / 100;
     n_damage = int(self.maxhealth * n_percent);
     if (n_damage >= self.health) {
-        level notify(#"trap_kill", {#e_trap:t_trap, #e_victim:self});
+        level notify(#"trap_kill", {#e_victim:self, #e_trap:t_trap});
         if (self.archetype === #"zombie") {
             level.var_c33299e2++;
             level function_922c05f();

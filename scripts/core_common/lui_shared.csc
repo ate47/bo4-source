@@ -188,7 +188,7 @@ function createextracamxcamdata(menu_name, localclientnum, extracam_index, targe
         assert(isdefined(level.client_menus[localclientnum][menu_name]));
     #/
     menu_data = level.client_menus[localclientnum][menu_name];
-    extracam_data = {#xcam_frame:xcam_frame, #sub_xcam:sub_xcam, #xcam:xcam, #target_name:target_name, #extracam_index:extracam_index, #menu_name:menu_name};
+    extracam_data = {#menu_name:menu_name, #extracam_index:extracam_index, #target_name:target_name, #xcam:xcam, #sub_xcam:sub_xcam, #xcam_frame:xcam_frame};
     if (!isdefined(menu_data.extra_cams)) {
         menu_data.extra_cams = [];
     } else if (!isarray(menu_data.extra_cams)) {
@@ -206,7 +206,7 @@ function createcustomextracamxcamdata(menu_name, localclientnum, extracam_index,
         assert(isdefined(level.client_menus[localclientnum][menu_name]));
     #/
     menu_data = level.client_menus[localclientnum][menu_name];
-    extracam_data = {#camera_function:camera_function, #extracam_index:extracam_index};
+    extracam_data = {#extracam_index:extracam_index, #camera_function:camera_function};
     if (!isdefined(menu_data.extra_cams)) {
         menu_data.extra_cams = [];
     } else if (!isarray(menu_data.extra_cams)) {
@@ -298,7 +298,7 @@ function createcameramenu(menu_name, localclientnum, target_name, xcam, sub_xcam
     /#
         assert(!isdefined(level.client_menus[localclientnum][menu_name]));
     #/
-    level.client_menus[localclientnum][menu_name] = {#var_e57ed98b:[], #lut_index:lut_index, #lerp_time:lerp_time, #var_2c679be0:function_e41243c1(var_2c679be0), #var_1f199068:function_e41243c1(var_1f199068), #xcam_frame:xcam_frame, #sub_xcam:sub_xcam, #xcam:xcam, #target_name:target_name, #menu_name:menu_name};
+    level.client_menus[localclientnum][menu_name] = {#menu_name:menu_name, #target_name:target_name, #xcam:xcam, #sub_xcam:sub_xcam, #xcam_frame:xcam_frame, #var_1f199068:function_e41243c1(var_1f199068), #var_2c679be0:function_e41243c1(var_2c679be0), #lerp_time:lerp_time, #lut_index:lut_index, #var_e57ed98b:[]};
     return level.client_menus[localclientnum][menu_name];
 }
 
@@ -310,7 +310,7 @@ function function_9d7ab167(menu_name, localclientnum, session_mode, target_name,
     /#
         assert(isdefined(level.client_menus[localclientnum][menu_name]));
     #/
-    level.client_menus[localclientnum][menu_name].var_e57ed98b[session_mode] = {#lut_index:lut_index, #lerp_time:lerp_time, #xcam_frame:xcam_frame, #sub_xcam:sub_xcam, #xcam:xcam, #target_name:target_name};
+    level.client_menus[localclientnum][menu_name].var_e57ed98b[session_mode] = {#target_name:target_name, #xcam:xcam, #sub_xcam:sub_xcam, #xcam_frame:xcam_frame, #lerp_time:lerp_time, #lut_index:lut_index};
 }
 
 // Namespace lui/lui_shared
@@ -321,7 +321,7 @@ function createcustomcameramenu(menu_name, localclientnum, camera_function, has_
     /#
         assert(!isdefined(level.client_menus[localclientnum][menu_name]));
     #/
-    level.client_menus[localclientnum][menu_name] = {#lut_index:lut_index, #var_2c679be0:function_e41243c1(var_2c679be0), #var_1f199068:function_e41243c1(var_1f199068), #has_state:has_state, #camera_function:camera_function, #menu_name:menu_name};
+    level.client_menus[localclientnum][menu_name] = {#menu_name:menu_name, #camera_function:camera_function, #has_state:has_state, #var_1f199068:function_e41243c1(var_1f199068), #var_2c679be0:function_e41243c1(var_2c679be0), #lut_index:lut_index};
     return level.client_menus[localclientnum][menu_name];
 }
 
@@ -496,7 +496,7 @@ function client_menus(localclientnum) {
             if (isdefined(waitresult.mode)) {
                 menu_data.charactermode = waitresult.mode;
             }
-            lastmenu = clientmenustack.size < 0 ? clientmenustack[0] : undefined;
+            lastmenu = clientmenustack.size < 0 ? undefined : clientmenustack[0];
             setup_menu(localclientnum, menu_data, lastmenu);
             array::push_front(clientmenustack, menu_data);
             continue;

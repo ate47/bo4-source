@@ -36,7 +36,7 @@ function init() {
         setdvar(#"bot_maxaxis", 5);
     }
     callback::add_callback(#"on_end_game", &on_end_game);
-    function_ea5f46d2();
+    challenges_init();
     level.ct_difficulty = getdvarstring(#"overridedifficulty", "(default)");
     if (level.ct_difficulty == "tutorial" || level.ct_difficulty == "easy") {
         level thread function_8599f7cb();
@@ -314,7 +314,7 @@ function private function_95e72b33(moviefile) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x4a37d61a, Offset: 0x1328
 // Size: 0x236
-function function_ea5f46d2() {
+function challenges_init() {
     level.var_247f79eb = function_5f516f9d(#"headshots");
     level.var_6f99c3bd = function_5f516f9d(#"melee_kills");
     level.var_7e008e0c = function_5f516f9d(#"best_killstreak");

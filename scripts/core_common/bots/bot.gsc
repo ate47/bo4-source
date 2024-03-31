@@ -886,7 +886,7 @@ function clear_revive_target() {
 // Checksum 0x41c8131f, Offset: 0x2e80
 // Size: 0x6e
 function menu_cancel(menukey) {
-    self notify(#"menuresponse", {#intpayload:0, #response:"cancel", #menu:game.menu[menukey]});
+    self notify(#"menuresponse", {#menu:game.menu[menukey], #response:"cancel", #intpayload:0});
 }
 
 // Namespace bot/bot
@@ -1283,7 +1283,7 @@ function devgui_bot_loop() {
                     break;
                 }
             }
-            level notify(#"devgui_bot", {#args:args, #host:host});
+            level notify(#"devgui_bot", {#host:host, #args:args});
             setdvar(#"devgui_bot", "<unknown string>");
         }
     #/
@@ -1411,7 +1411,7 @@ function devgui_add_fixed_spawn_bots(botarg, var_b27e53da, countarg) {
         bots = array(bots);
     }
     bots[bots.size] = self add_fixed_spawn_bot(team, origin, spawnangles[1], var_b27e53da);
-    spiral = {#radius:100, #angle:0, #var_2b9d3922:spawnangles[1]};
+    spiral = {#var_2b9d3922:spawnangles[1], #angle:0, #radius:100};
     spiral.angle = getdvarint(#"hash_6d616a1ec2c5b8f0", 0);
     spiral.radius = getdvarint(#"hash_64cb6c7e56b66cab", 0);
     for (i = 0; i < count - 1; i++) {
@@ -1953,7 +1953,7 @@ function function_301f229d(team) {
                     break;
                 }
             }
-            arrayinsert(assignments, {#distance:distance, #target:player, #bot:bot}, i);
+            arrayinsert(assignments, {#bot:bot, #target:player, #distance:distance}, i);
         }
     }
     for (i = 0; i < assignments.size; i++) {

@@ -39,7 +39,7 @@ function function_f339b159() {
     level.var_389d1b12 = 0;
     level.var_5a599dbf = struct::get_array("punch_card_trigger", "targetname");
     foreach (s_punch_card in level.var_5a599dbf) {
-        s_punch_card.var_3460cc0f = 0;
+        s_punch_card.is_collected = 0;
         s_punch_card.var_453ce50f = getent(s_punch_card.target, "targetname");
         s_unitrigger = s_punch_card zm_unitrigger::create("", 64);
         s_punch_card thread function_c7d4845();
@@ -58,7 +58,7 @@ function function_f339b159() {
 // Checksum 0x1931d415, Offset: 0x660
 // Size: 0x104
 function function_c7d4845() {
-    while (!self.var_3460cc0f) {
+    while (!self.is_collected) {
         s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
@@ -67,7 +67,7 @@ function function_c7d4845() {
             e_who thread zm_audio::create_and_play_dialog(#"component_pickup", #"generic");
         }
         level.var_389d1b12 = level.var_389d1b12 + 1;
-        self.var_3460cc0f = 1;
+        self.is_collected = 1;
         self.var_453ce50f delete();
     }
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
@@ -374,11 +374,11 @@ function function_ac06ab3a() {
     var_e6c1fe70 = array(#"hash_511e79ef416368e2");
     var_51ba7b4a = array(#"hash_1a1854072d6b2453");
     var_68e586cf = array(#"hash_39204e32adbe7694");
-    level.var_ea514bc4[0] = {#vo_line:var_1c8e90b4, #in_inventory:0, #var_8a821e1e:0};
-    level.var_ea514bc4[1] = {#vo_line:var_ab6a16ff, #in_inventory:0, #var_8a821e1e:1};
-    level.var_ea514bc4[2] = {#var_46db68fd:1, #vo_line:var_e6c1fe70, #in_inventory:0, #var_8a821e1e:2};
-    level.var_ea514bc4[3] = {#vo_line:var_51ba7b4a, #in_inventory:0, #var_8a821e1e:3};
-    level.var_ea514bc4[4] = {#vo_line:var_68e586cf, #in_inventory:0, #var_8a821e1e:4};
+    level.var_ea514bc4[0] = {#var_8a821e1e:0, #in_inventory:0, #vo_line:var_1c8e90b4};
+    level.var_ea514bc4[1] = {#var_8a821e1e:1, #in_inventory:0, #vo_line:var_ab6a16ff};
+    level.var_ea514bc4[2] = {#var_8a821e1e:2, #in_inventory:0, #vo_line:var_e6c1fe70, #var_46db68fd:1};
+    level.var_ea514bc4[3] = {#var_8a821e1e:3, #in_inventory:0, #vo_line:var_51ba7b4a};
+    level.var_ea514bc4[4] = {#var_8a821e1e:4, #in_inventory:0, #vo_line:var_68e586cf};
     level.var_804a56e3 = 0;
     level.var_ba07f1de = zm_hms_util::function_bffcedde("white_audio_reel", "targetname", "script_int");
     foreach (var_2e2b46e8 in level.var_ba07f1de) {

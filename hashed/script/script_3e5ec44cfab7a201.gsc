@@ -22,7 +22,7 @@ function function_d8383812(id, version, var_a1261809, var_3f541f5f, var_9a323ebf
     } else {
         capture_point = struct::get(var_a1261809, "script_noteworthy");
     }
-    var_1d81ef2d = {#var_b8d19839:var_b8d19839, #var_32edfed:var_9a323ebf, #var_62f0c1c:var_3f541f5f, #active:0, #origin:capture_point.origin, #capture_point:capture_point, #id:id};
+    var_1d81ef2d = {#id:id, #capture_point:capture_point, #origin:capture_point.origin, #active:0, #var_62f0c1c:var_3f541f5f, #var_32edfed:var_9a323ebf, #var_b8d19839:var_b8d19839};
     level.var_d2540500[id] = var_1d81ef2d;
     clientfield::register("actor", "sc_" + id, version, 1, "int");
     if (var_b8d19839) {

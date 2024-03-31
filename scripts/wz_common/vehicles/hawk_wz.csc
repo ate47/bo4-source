@@ -416,13 +416,13 @@ function private function_d53feb8c(localclientnum, targets) {
             ti = level.var_8dfa7ed7[uifield.var_47e79fc];
             var_5044f28d[ti] = 1;
             self function_25b776e2(localclientnum, ti, var_4ef4e267);
-            var_e06385a3 = 0;
+            target_state = 0;
             if (self function_35046386(target)) {
-                var_e06385a3 = 1;
+                target_state = 1;
             }
-            if (self get_target_locked(ti) != var_e06385a3) {
-                self set_target_locked(localclientnum, ti, var_e06385a3);
-                if (var_e06385a3 == 1) {
+            if (self get_target_locked(ti) != target_state) {
+                self set_target_locked(localclientnum, ti, target_state);
+                if (target_state == 1) {
                     self playsound(localclientnum, bundle.tag_sound);
                 }
             }

@@ -304,9 +304,9 @@ function private function_943e4c08(entity, minplayerdist) {
             playerpositions[playerpositions.size] = isdefined(player.last_valid_position) ? player.last_valid_position : player.origin;
         }
     }
-    var_6f59ec8b = getclosestpointonnavmesh(entity.origin, entity getpathfindingradius());
-    if (isdefined(var_6f59ec8b)) {
-        pathdata = generatenavmeshpath(var_6f59ec8b, playerpositions, entity);
+    navmesh_origin = getclosestpointonnavmesh(entity.origin, entity getpathfindingradius());
+    if (isdefined(navmesh_origin)) {
+        pathdata = generatenavmeshpath(navmesh_origin, playerpositions, entity);
         if (isdefined(pathdata) && pathdata.status === "succeeded" && pathdata.pathdistance < minplayerdist) {
             return false;
         }
@@ -482,7 +482,7 @@ function private function_4ec678fe(entity) {
         return;
     }
     monkeybomb = entity.var_722a34a3;
-    level notify(#"hash_79c0225ea09cd215", {#var_569d804d:monkeybomb.angles, #var_cee6bd0b:monkeybomb.origin, #brutus:self});
+    level notify(#"hash_79c0225ea09cd215", {#brutus:self, #var_cee6bd0b:monkeybomb.origin, #var_569d804d:monkeybomb.angles});
     if (isdefined(monkeybomb.damagearea)) {
         monkeybomb.damagearea delete();
     }

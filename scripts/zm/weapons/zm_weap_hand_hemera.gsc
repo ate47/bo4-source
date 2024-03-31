@@ -549,7 +549,7 @@ function function_3f079da() {
     v_end = var_2ed6f142 + v_forward * 3000;
     a_trace = bullettrace(var_2ed6f142, v_end, 1, self);
     if (isdefined(level.var_137b8e71)) {
-        level notify(#"ww_hemera_hit", {#v_position:a_trace[#"position"], #e_entity:a_trace[#"entity"], #player:self});
+        level notify(#"ww_hemera_hit", {#player:self, #e_entity:a_trace[#"entity"], #v_position:a_trace[#"position"]});
     }
     return a_trace[#"position"];
 }

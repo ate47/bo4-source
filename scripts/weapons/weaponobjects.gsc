@@ -618,8 +618,8 @@ function cleanupwatcherondeath(watcher) {
 function weapon_object_timeout(watcher, timeoutoverride) {
     weapon_instance = self;
     weapon_instance endon(#"death", #"cancel_timeout");
-    var_754e514 = isdefined(timeoutoverride) ? timeoutoverride : watcher.timeout;
-    wait(var_754e514);
+    timeoutval = isdefined(timeoutoverride) ? timeoutoverride : watcher.timeout;
+    wait(timeoutval);
     if (isdefined(watcher) && isdefined(watcher.ontimeout)) {
         weapon_instance thread [[ watcher.ontimeout ]]();
         return;
@@ -712,7 +712,7 @@ function weaponobjectdamage(watcher) {
                 continue;
             }
         }
-        if (isdefined(watcher.var_34400f36) && !self [[ watcher.var_34400f36 ]](watcher, attacker, weapon, damage)) {
+        if (isdefined(watcher.isfataldamage) && !self [[ watcher.isfataldamage ]](watcher, attacker, weapon, damage)) {
             continue;
         }
         if (!isvehicle(self) && !damage::friendlyfirecheck(self.owner, attacker)) {
@@ -986,7 +986,7 @@ function private createweaponobjectwatcher(weaponname, ownerteam) {
         weaponobjectwatcher.onstunfinished = undefined;
         weaponobjectwatcher.ondestroyed = undefined;
         weaponobjectwatcher.onfizzleout = &weaponobjectfizzleout;
-        weaponobjectwatcher.var_34400f36 = undefined;
+        weaponobjectwatcher.isfataldamage = undefined;
         weaponobjectwatcher.onsupplementaldetonatecallback = undefined;
         weaponobjectwatcher.ontimeout = undefined;
         weaponobjectwatcher.var_994b472b = undefined;
@@ -1501,12 +1501,12 @@ function hackernotmoving() {
 // Params 2, eflags: 0x5 linked
 // Checksum 0xfe999275, Offset: 0x50c8
 // Size: 0x5c
-function private set_hint_string(hint_string, var_c1846261) {
+function private set_hint_string(hint_string, default_string) {
     if (isdefined(hint_string) && hint_string != "") {
         self sethintstring(hint_string);
         return;
     }
-    self sethintstring(var_c1846261);
+    self sethintstring(default_string);
 }
 
 // Namespace weaponobjects/weaponobjects
@@ -1590,7 +1590,7 @@ function itemhacked(watcher, player) {
         }
     #/
     self notify(#"hacked", {#player:player});
-    level notify(#"hacked", {#player:player, #target:self});
+    level notify(#"hacked", {#target:self, #player:player});
     if (isdefined(self.camerahead)) {
         self.camerahead notify(#"hacked", {#player:player});
     }
@@ -1598,7 +1598,7 @@ function itemhacked(watcher, player) {
     #/
     waitframe(1);
     if (isdefined(player) && player.sessionstate == "playing") {
-        player notify(#"grenade_fire", {#respawn_from_hack:1, #weapon:self.weapon, #projectile:self});
+        player notify(#"grenade_fire", {#projectile:self, #weapon:self.weapon, #respawn_from_hack:1});
         return;
     }
     watcher thread waitanddetonate(self, 0, undefined, self.weapon);

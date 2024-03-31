@@ -124,9 +124,9 @@ function function_efe5a681(team) {
             }
         }
     }
-    var_fa810454 = function_ee150fcc(team, team_players);
+    available_spots = function_ee150fcc(team, team_players);
     party = self getparty();
-    if (party.var_a15e4438 > var_fa810454) {
+    if (party.var_a15e4438 > available_spots) {
         return false;
     }
     /#
@@ -601,8 +601,8 @@ function function_b25f48bf(for_team, var_a9ab69de, var_d9438b7, var_ed0a1ecc) {
 // Params 2, eflags: 0x4
 // Checksum 0xec75617d, Offset: 0x1d98
 // Size: 0xb6
-function private function_78db0e06(var_659f7dc3, new_team) {
-    players = getplayers(var_659f7dc3);
+function private function_78db0e06(old_team, new_team) {
+    players = getplayers(old_team);
     foreach (player in players) {
         player function_dc7eaabd(new_team);
     }

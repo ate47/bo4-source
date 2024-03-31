@@ -10,8 +10,8 @@
 // Checksum 0xc927b62d, Offset: 0xa0
 // Size: 0x9a
 function autoexec main() {
-    level.var_9b671c3c[#"tie"] = {#code_flag:1, #flag:"tie"};
-    level.var_9b671c3c[#"overtime"] = {#code_flag:2, #flag:"overtime"};
+    level.var_9b671c3c[#"tie"] = {#flag:"tie", #code_flag:1};
+    level.var_9b671c3c[#"overtime"] = {#flag:"overtime", #code_flag:2};
 }
 
 // Namespace outcome/outcome

@@ -85,13 +85,13 @@ function init_quest() {
     var_4e4ef50e = array(#"hash_217e6ae56b61ad3b");
     var_2c28b1bb = array(#"hash_2747b199d121f40b");
     level.var_5a599dbf = [];
-    level.var_5a599dbf[0] = {#vo_line:var_240bceab, #in_inventory:0};
-    level.var_5a599dbf[1] = {#vo_line:var_e4158c30, #in_inventory:0};
-    level.var_5a599dbf[2] = {#vo_line:var_19bb8831, #in_inventory:0};
-    level.var_5a599dbf[3] = {#vo_line:var_17b5a12, #in_inventory:0};
-    level.var_5a599dbf[4] = {#vo_line:var_b37ebf6, #in_inventory:0};
-    level.var_5a599dbf[5] = {#vo_line:var_4e4ef50e, #in_inventory:0};
-    level.var_5a599dbf[6] = {#vo_line:var_2c28b1bb, #in_inventory:0};
+    level.var_5a599dbf[0] = {#in_inventory:0, #vo_line:var_240bceab};
+    level.var_5a599dbf[1] = {#in_inventory:0, #vo_line:var_e4158c30};
+    level.var_5a599dbf[2] = {#in_inventory:0, #vo_line:var_19bb8831};
+    level.var_5a599dbf[3] = {#in_inventory:0, #vo_line:var_17b5a12};
+    level.var_5a599dbf[4] = {#in_inventory:0, #vo_line:var_b37ebf6};
+    level.var_5a599dbf[5] = {#in_inventory:0, #vo_line:var_4e4ef50e};
+    level.var_5a599dbf[6] = {#in_inventory:0, #vo_line:var_2c28b1bb};
     level.var_a035a0b9 = zm_hms_util::function_bffcedde("office_punch_card", "targetname", "script_int");
     level.var_3d015a65 = 0;
     foreach (var_453ce50f in level.var_a035a0b9) {

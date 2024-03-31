@@ -1377,7 +1377,7 @@ function event_handler[ui_menuresponse] codecallback_menuresponse(eventstruct) {
         level thread menu_response_queue_pump();
     }
     index = level.menuresponsequeue.size;
-    level.menuresponsequeue[index] = {#eventstruct:eventstruct, #ent:self};
+    level.menuresponsequeue[index] = {#ent:self, #eventstruct:eventstruct};
     level notify(#"menuresponse_queue");
 }
 
@@ -1517,7 +1517,7 @@ function abort_level() {
 // Checksum 0x302837f3, Offset: 0x4200
 // Size: 0x58
 function event_handler[glass_smash] codecallback_glasssmash(eventstruct) {
-    level notify(#"glass_smash", {#direction:eventstruct.direction, #position:eventstruct.position});
+    level notify(#"glass_smash", {#position:eventstruct.position, #direction:eventstruct.direction});
 }
 
 // Namespace callback/freefall

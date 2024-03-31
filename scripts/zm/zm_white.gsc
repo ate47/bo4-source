@@ -540,7 +540,7 @@ function function_39463122() {
     if (isdefined(e_switch) && isdefined(s_fx_pos)) {
         zm_power::elec_switch_on(e_switch, s_fx_pos);
     }
-    self.var_a450cb6a notify(#"trigger", {#is_forced:1, #activator:player});
+    self.var_a450cb6a notify(#"trigger", {#activator:player, #is_forced:1});
 }
 
 // Namespace zm_white/zm_white

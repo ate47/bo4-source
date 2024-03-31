@@ -807,7 +807,7 @@ function function_af49a1e9(str_event, data1, data2, data3) {
         if (!isdefined(data3)) {
             data3 = "<unknown string>";
         }
-        s_event = {#data3:data3, #data2:data2, #data1:data1, #n_time:float(gettime()) / 1000, #str_event:str_event};
+        s_event = {#str_event:str_event, #n_time:float(gettime()) / 1000, #data1:data1, #data2:data2, #data3:data3};
         if (!isdefined(level.var_df9f1a00)) {
             level.var_df9f1a00 = [];
         } else if (!isarray(level.var_df9f1a00)) {

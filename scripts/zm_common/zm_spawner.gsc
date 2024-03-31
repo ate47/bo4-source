@@ -1226,7 +1226,7 @@ function zombie_death_event(zombie) {
     }
     if (isdefined(attacker) && isplayer(attacker) && attacker player_can_score_from_zombies()) {
         if (isdefined(zombie.script_parameters)) {
-            attacker notify(#"zombie_death_params", {#var_3ef38c68:isdefined(zombie.completed_emerging_into_playable_area) && zombie.completed_emerging_into_playable_area, #params:zombie.script_parameters});
+            attacker notify(#"zombie_death_params", {#params:zombie.script_parameters, #var_3ef38c68:isdefined(zombie.completed_emerging_into_playable_area) && zombie.completed_emerging_into_playable_area});
         }
         if (isdefined(zombie.b_widows_wine_cocoon) && isdefined(zombie.e_widows_wine_player)) {
             attacker notify(#"widows_wine_kill", {#player:zombie.e_widows_wine_player});
@@ -1430,7 +1430,7 @@ function function_dce9f1a6(spots) {
     players = getplayers();
     var_1cb510f7 = [];
     foreach (player in players) {
-        var_1cb510f7[player getentitynumber()] = {#zone:player zm_utility::get_current_zone(1), #valid:zombie_utility::is_player_valid(player, 1, 1), #count:0, #player:player};
+        var_1cb510f7[player getentitynumber()] = {#player:player, #count:0, #valid:zombie_utility::is_player_valid(player, 1, 1), #zone:player zm_utility::get_current_zone(1)};
     }
     zombies = getaiteamarray(level.zombie_team);
     zombies = array::remove_undefined(zombies);
@@ -1537,7 +1537,7 @@ function function_dce9f1a6(spots) {
     if (isdefined(player_info)) {
         player = player_info.player;
     }
-    return {#player:player, #spot:array::random(a_candidates)};
+    return {#spot:array::random(a_candidates), #player:player};
 }
 
 // Namespace zm_spawner/zm_spawner

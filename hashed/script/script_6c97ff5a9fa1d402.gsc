@@ -36,7 +36,7 @@ function function_58c9169d(localclientnum, oldval, newval, bnewent, binitialsnap
     var_366b2fbf = array::sort_by_script_int(var_366b2fbf, 1);
     var_aeb02423 = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.elevator");
     count = var_2b9a81f7.size;
-    var_65792f8b = map::get_script_bundle();
+    mapbundle = map::get_script_bundle();
     foreach (i, button in var_366b2fbf) {
         floornum = button.script_int;
         switch (floornum) {
@@ -99,7 +99,7 @@ function function_58c9169d(localclientnum, oldval, newval, bnewent, binitialsnap
             break;
         }
         itemuimodel = createuimodel(var_aeb02423, "item" + i);
-        setuimodelvalue(createuimodel(itemuimodel, "name"), var_65792f8b.var_88d22b06[1].var_aa061872[var_8cb245a4].displayname);
+        setuimodelvalue(createuimodel(itemuimodel, "name"), mapbundle.var_88d22b06[1].var_aa061872[var_8cb245a4].displayname);
         setuimodelvalue(createuimodel(itemuimodel, "id"), floornum);
     }
     setuimodelvalue(createuimodel(var_aeb02423, "count"), count);

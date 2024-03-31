@@ -82,7 +82,7 @@ function watch_for_flash() {
     while (true) {
         waitresult = undefined;
         waitresult = self waittill(#"flashbang");
-        self notify(#"damage", {#weapon:"flash_grenade", #attacker:waitresult.attacker, #amount:1});
+        self notify(#"damage", {#amount:1, #attacker:waitresult.attacker, #weapon:"flash_grenade"});
     }
 }
 

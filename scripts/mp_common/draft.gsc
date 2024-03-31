@@ -264,7 +264,7 @@ function select_character(characterindex, forceselection, var_8a239568) {
             self close();
         } else if (isdefined(level.var_9205f2e8)) {
             game_time = gettime();
-            var_891e514a = {#var_b53f57e1:var_8a239568, #var_6fa2fd60:game_time - level.var_9205f2e8, #game_time:game_time, #character_index:characterindex, #xuid:self getxuid()};
+            var_891e514a = {#xuid:self getxuid(), #character_index:characterindex, #game_time:game_time, #var_6fa2fd60:game_time - level.var_9205f2e8, #var_b53f57e1:var_8a239568};
             function_92d1707f(#"hash_3a95edd667fd3e7d", var_891e514a);
         }
         return true;

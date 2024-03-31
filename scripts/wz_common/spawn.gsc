@@ -32,7 +32,7 @@ function function_f468d9a5(spawnpoint) {
     vec = anglestoforward(hold_angles);
     vec = vectornormalize(vec);
     vec = vec * velocity;
-    return {#freefall:vec, #angles:hold_angles, #origin:hold_origin};
+    return {#origin:hold_origin, #angles:hold_angles, #freefall:vec};
 }
 
 // Namespace spawn/spawn
@@ -55,9 +55,9 @@ function function_e93291ff() {
     level.var_7767cea8 = [];
     /#
         if (getdvarint(#"hash_270a21a654a1a79f", 0)) {
-            level.var_94cbd997 = [];
+            level.totalspawnpoints = [];
             foreach (destination in destinations) {
-                level.var_94cbd997 = arraycombine(level.var_94cbd997, struct::get_array(destination.target, "<unknown string>"), 0, 0);
+                level.totalspawnpoints = arraycombine(level.totalspawnpoints, struct::get_array(destination.target, "<unknown string>"), 0, 0);
             }
         }
     #/

@@ -209,7 +209,7 @@ function function_a02dfba() {
 // Checksum 0x237f2afd, Offset: 0xdd8
 // Size: 0xf2
 function function_eb2835af() {
-    a_str_tag_name = [3:"tag_yellow_", 2:"tag_violet_", 1:"tag_orange_", 0:"tag_blue_"];
+    a_str_tag_name = ["tag_blue_", "tag_orange_", "tag_violet_", "tag_yellow_"];
     foreach (str_tag in a_str_tag_name) {
         for (i = 0; i < 10; i++) {
             self hidepart(str_tag + i);

@@ -206,12 +206,12 @@ function function_323c6715() {
                     break;
                 case #"highestkillstreak":
                     if (isdefined(stat.var_233a23b6) && stat.var_233a23b6) {
-                        score = player.pers[#"cur_kill_streak"] < player.pers[#"best_kill_streak"] ? player.pers[#"cur_kill_streak"] : player.pers[#"best_kill_streak"];
+                        score = player.pers[#"cur_kill_streak"] < player.pers[#"best_kill_streak"] ? player.pers[#"best_kill_streak"] : player.pers[#"cur_kill_streak"];
                     } else {
                         if (!isdefined(player.pers[#"hvo"][var_9b4eeccc][stat.stattype])) {
                             player.pers[#"hvo"][var_9b4eeccc][stat.stattype] = 0;
                         }
-                        score = player.pers[#"cur_kill_streak"] < player.pers[#"hvo"][var_9b4eeccc][stat.stattype] ? player.pers[#"cur_kill_streak"] : player.pers[#"hvo"][var_9b4eeccc][stat.stattype];
+                        score = player.pers[#"cur_kill_streak"] < player.pers[#"hvo"][var_9b4eeccc][stat.stattype] ? player.pers[#"hvo"][var_9b4eeccc][stat.stattype] : player.pers[#"cur_kill_streak"];
                     }
                     break;
                 case #"highestmultikill":

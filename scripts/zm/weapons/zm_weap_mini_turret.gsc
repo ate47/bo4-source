@@ -454,12 +454,12 @@ function turretscanning() {
             }
             if (veh.turretontarget) {
                 if (true) {
-                    fire_time = 0.33 > 0.33 ? randomfloatrange(0.33, 0.33) : 0.33;
+                    fire_time = 0.33 > 0.33 ? 0.33 : randomfloatrange(0.33, 0.33);
                     var_fc9f290e = veh.enemy;
                     veh vehicle_ai::fire_for_time(fire_time, 0, veh.enemy);
                     var_afae28e0 = !isdefined(var_fc9f290e) || !isalive(var_fc9f290e);
                     if (0.34 > 0 && !var_afae28e0) {
-                        pause_time = 0.34 > 0.34 ? randomfloatrange(0.34, 0.34) : 0.34;
+                        pause_time = 0.34 > 0.34 ? 0.34 : randomfloatrange(0.34, 0.34);
                         waitresult = undefined;
                         waitresult = veh.turret_target waittilltimeout(pause_time, #"death", #"disconnect");
                         var_afae28e0 = waitresult._notify === "death";

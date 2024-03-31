@@ -22,7 +22,7 @@ function private function_8240e8b4() {
             return;
         }
         self.tracking.current_crumb = (self.tracking.current_crumb + 1) % 20;
-        self.tracking.breadcrumbs[self.tracking.current_crumb] = {#time:level.time, #point:self.origin};
+        self.tracking.breadcrumbs[self.tracking.current_crumb] = {#point:self.origin, #time:level.time};
     }
 }
 
@@ -31,8 +31,8 @@ function private function_8240e8b4() {
 // Checksum 0x45119aa8, Offset: 0x180
 // Size: 0x192
 function init_tracking(window) {
-    self.tracking = {#time_step:int(window * 1000) / 20, #window:window, #speed:0, #velocity:(0, 0, 0), #var_712fc53e:0, #current_crumb:0, #breadcrumbs:[]};
-    crumb = {#time:level.time, #point:self.origin};
+    self.tracking = {#breadcrumbs:[], #current_crumb:0, #var_712fc53e:0, #velocity:(0, 0, 0), #speed:0, #window:window, #time_step:int(window * 1000) / 20};
+    crumb = {#point:self.origin, #time:level.time};
     if (!isdefined(self.tracking.breadcrumbs)) {
         self.tracking.breadcrumbs = [];
     } else if (!isarray(self.tracking.breadcrumbs)) {

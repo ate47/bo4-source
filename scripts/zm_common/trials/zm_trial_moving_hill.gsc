@@ -235,7 +235,7 @@ function private function_2191cc5d() {
 function private zone_watcher(challenge, var_2d5ebf67, var_530e040f, timeout) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656", #"hill_moving", #"host_migration_begin");
-    self.var_356935bb = {#var_530e040f:var_530e040f, #var_2d5ebf67:var_2d5ebf67, #challenge:challenge, #timeout:timeout, #start_time:level.time};
+    self.var_356935bb = {#start_time:level.time, #timeout:timeout, #challenge:challenge, #var_2d5ebf67:var_2d5ebf67, #var_530e040f:var_530e040f};
     self.var_4cb0b91f = 0;
     self zm_utility::function_ba39d198(challenge.var_df62490a, 1);
     self thread start_timer(timeout, var_2d5ebf67);

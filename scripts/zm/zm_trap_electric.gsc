@@ -153,7 +153,7 @@ function damage(trap) {
         self [[ self.var_5475b4ad ]](trap);
         return;
     }
-    level notify(#"trap_kill", {#trap:trap, #victim:self});
+    level notify(#"trap_kill", {#victim:self, #trap:trap});
     self dodamage(self.health + 666, self.origin, trap);
 }
 

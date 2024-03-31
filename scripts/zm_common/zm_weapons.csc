@@ -83,7 +83,7 @@ function private on_player_connect(localclientnum) {
 // Size: 0x3e
 function is_weapon_included(weapon) {
     if (!isdefined(level._included_weapons)) {
-        return 0;
+        return false;
     }
     return isdefined(level._included_weapons[function_386dacbc(weapon)]);
 }

@@ -38,7 +38,7 @@ function wound_apply(var_756fda07, weapon, applicant) {
         healthreduction = self.owner.maxhealth - var_756fda07.var_8ea635df;
     }
     var_da1d7911 = [];
-    var_da1d7911[0] = {#var_b861a047:undefined, #name:"cleanse_buff"};
+    var_da1d7911[0] = {#name:"cleanse_buff", #var_b861a047:undefined};
     if (self.owner.health > 0) {
         self.owner player::function_2a67df65(self.var_4a3f5865, healthreduction * -1, var_da1d7911);
     }

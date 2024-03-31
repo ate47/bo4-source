@@ -125,9 +125,9 @@ function private function_b6ea080() {
         println("<unknown string>");
         mapname = util::get_map_name();
         if (mapname === "<unknown string>" || mapname == "<unknown string>") {
-            world_items = [8:"<unknown string>", 7:"<unknown string>", 6:"<unknown string>", 5:"<unknown string>", 4:"<unknown string>", 3:"<unknown string>", 2:"<unknown string>", 1:"<unknown string>", 0:"<unknown string>"];
+            world_items = ["<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"];
         } else {
-            world_items = [40:"<unknown string>", 39:"<unknown string>", 38:"<unknown string>", 37:"<unknown string>", 36:"<unknown string>", 35:"<unknown string>", 34:"<unknown string>", 33:"<unknown string>", 32:"<unknown string>", 31:"<unknown string>", 30:"<unknown string>", 29:"<unknown string>", 28:"<unknown string>", 27:"<unknown string>", 26:"<unknown string>", 25:"<unknown string>", 24:"<unknown string>", 23:"<unknown string>", 22:"<unknown string>", 21:"<unknown string>", 20:"<unknown string>", 19:"<unknown string>", 18:"<unknown string>", 17:"<unknown string>", 16:"<unknown string>", 15:"<unknown string>", 14:"<unknown string>", 13:"<unknown string>", 12:"<unknown string>", 11:"<unknown string>", 10:"<unknown string>", 9:"<unknown string>", 8:"<unknown string>", 7:"<unknown string>", 6:"<unknown string>", 5:"<unknown string>", 4:"<unknown string>", 3:"<unknown string>", 2:"<unknown string>", 1:"<unknown string>", 0:"<unknown string>"];
+            world_items = ["<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"];
         }
         count = 0;
         item_count = 0;
@@ -233,7 +233,7 @@ function private function_938d798a() {
                 var_d8aec942 = undefined;
                 break;
             }
-            var_7099d03[var_7099d03.size] = {#var_d8aec942:var_d8aec942, #var_e45e8f33:var_e45e8f33, #stand:v_stand, #origin:v_origin};
+            var_7099d03[var_7099d03.size] = {#origin:v_origin, #stand:v_stand, #var_e45e8f33:var_e45e8f33, #var_d8aec942:var_d8aec942};
         }
         closefile(file);
         wait(0.5);

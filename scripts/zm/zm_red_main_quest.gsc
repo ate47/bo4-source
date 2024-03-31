@@ -3102,7 +3102,7 @@ function function_e4162ab8() {
     level waittilltimeout(4, #"hash_ff74c046715d687");
     s_blocked = struct::get(s_scene.target);
     n_cf = s_blocked.var_333e279d;
-    level notify(#"hash_d0d79bd22a685c1", {#n_cf:n_cf, #var_83aeafd6:self});
+    level notify(#"hash_d0d79bd22a685c1", {#var_83aeafd6:self, #n_cf:n_cf});
     self thread function_554bdd28(s_scene, str_scene);
 }
 
@@ -4089,7 +4089,7 @@ function function_93e711a6(s_params) {
         return;
     }
     e_player = s_params.eattacker;
-    level notify(#"hash_285de4ce79135552", {#e_player:e_player, #str_reason:#"no_ww"});
+    level notify(#"hash_285de4ce79135552", {#str_reason:#"no_ww", #e_player:e_player});
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4276,7 +4276,7 @@ function function_41577fb() {
     } else {
         var_e84738a3 = #"downed";
     }
-    level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:var_e84738a3});
+    level notify(#"hash_285de4ce79135552", {#str_reason:var_e84738a3, #e_player:self});
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4289,7 +4289,7 @@ function function_86d3bb1(str_ww) {
     while (self function_3d581a6(str_ww, 0)) {
         waitframe(1);
     }
-    level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:#"dropped_ww"});
+    level notify(#"hash_285de4ce79135552", {#str_reason:#"dropped_ww", #e_player:self});
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4297,7 +4297,7 @@ function function_86d3bb1(str_ww) {
 // Checksum 0xe92fd719, Offset: 0x14480
 // Size: 0x50
 function function_b0457d15() {
-    level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:#"rezzed"});
+    level notify(#"hash_285de4ce79135552", {#str_reason:#"rezzed", #e_player:self});
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4762,7 +4762,7 @@ function function_9cb5a6ac(str_ww, str_task, n_act, n_spotlight, var_d8d4faff) {
             if (b_return) {
                 str_reason = #"late_backstage";
             }
-            level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:str_reason});
+            level notify(#"hash_285de4ce79135552", {#str_reason:str_reason, #e_player:self});
             return;
         }
     }
@@ -4777,7 +4777,7 @@ function function_9cb5a6ac(str_ww, str_task, n_act, n_spotlight, var_d8d4faff) {
         s_waitresult = undefined;
         s_waitresult = self waittilltimeout(var_bfa3340e, #"play_task_completed");
         if (s_waitresult._notify != #"play_task_completed") {
-            level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:#"late_kills"});
+            level notify(#"hash_285de4ce79135552", {#str_reason:#"late_kills", #e_player:self});
             return;
         }
     }
@@ -4871,7 +4871,7 @@ function function_4f45dd3c() {
             break;
         }
     }
-    level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:#"left_stage"});
+    level notify(#"hash_285de4ce79135552", {#str_reason:#"left_stage", #e_player:self});
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -4893,7 +4893,7 @@ function function_ad68de97() {
             break;
         }
     }
-    level notify(#"hash_285de4ce79135552", {#e_player:self, #str_reason:#"left_backstage"});
+    level notify(#"hash_285de4ce79135552", {#str_reason:#"left_backstage", #e_player:self});
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest

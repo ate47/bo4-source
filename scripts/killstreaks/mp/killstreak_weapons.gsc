@@ -120,7 +120,7 @@ function usecarriedkillstreakweapon(hardpointtype) {
         self killstreaks::play_killstreak_start_dialog(hardpointtype, self.team, 1);
         self stats::function_e24eec31(killstreakweapon, #"used", 1);
         level thread popups::displayteammessagetoall(level.killstreaks[hardpointtype].inboundtext, self);
-        self.pers[#"held_killstreak_clip_count"][killstreakweapon] = killstreakweapon.clipsize < currentammo ? currentammo : killstreakweapon.clipsize;
+        self.pers[#"held_killstreak_clip_count"][killstreakweapon] = killstreakweapon.clipsize < currentammo ? killstreakweapon.clipsize : currentammo;
         if (isfrominventory == 0) {
             if (self.pers[#"killstreak_quantity"][killstreakweapon] > 0) {
                 ammopool = killstreakweapon.maxammo;

@@ -1725,7 +1725,7 @@ function function_4cde30fa(inventoryitem, itementry) {
     if (game.state == "pregame" || !isplayer(self) || isdefined(self.var_3f1410dd) || !isdefined(inventoryitem) || !isdefined(itementry)) {
         return;
     }
-    self.var_3f1410dd = {#died:0, #broken:0, #var_2b021e34:0, #var_7352c057:0, #damage_taken:0, #tier:isdefined(itementry.armortier) ? itementry.armortier : 1, #var_4550558c:isdefined(inventoryitem.amount) ? inventoryitem.amount : 0, #end_time:0, #start_time:function_f8d53445(), #player_xuid:int(self getxuid(1))};
+    self.var_3f1410dd = {#player_xuid:int(self getxuid(1)), #start_time:function_f8d53445(), #end_time:0, #var_4550558c:isdefined(inventoryitem.amount) ? inventoryitem.amount : 0, #tier:isdefined(itementry.armortier) ? itementry.armortier : 1, #damage_taken:0, #var_7352c057:0, #var_2b021e34:0, #broken:0, #died:0};
 }
 
 // Namespace item_inventory/item_inventory
@@ -3291,7 +3291,7 @@ function function_c4468806(player, item) {
     if (game.state == "pregame" || !isdefined(item)) {
         return;
     }
-    data = {#item:hash(item.itementry.name), #player_xuid:int(player getxuid(1)), #game_time:function_f8d53445()};
+    data = {#game_time:function_f8d53445(), #player_xuid:int(player getxuid(1)), #item:hash(item.itementry.name)};
     /#
         println("<unknown string>" + item.itementry.name);
     #/

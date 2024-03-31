@@ -34,7 +34,7 @@ function autoexec __init__system__() {
 // Checksum 0x2a682ffe, Offset: 0x820
 // Size: 0x4c4
 function __init__() {
-    level.var_9c103fe0 = [10:"player_motorcycle", 9:"player_tank", 8:"player_muscle", 7:"player_suv", 6:"helicopter_utility", 5:"pbr_boat_wz", 4:"player_fav", 3:"tactical_raft_wz", 2:"helicopter_light", 1:"cargo_truck_wz", 0:"player_atv"];
+    level.var_9c103fe0 = ["player_atv", "cargo_truck_wz", "helicopter_light", "tactical_raft_wz", "player_fav", "pbr_boat_wz", "helicopter_utility", "player_suv", "player_muscle", "player_tank", "player_motorcycle"];
     vehicle::add_main_callback("player_atv", &function_500291c4);
     vehicle::add_main_callback("cargo_truck_wz", &function_8278ed00);
     vehicle::add_main_callback("helicopter_light", &function_b1d54776);
@@ -301,7 +301,7 @@ function is_staircase_up(attackingplayer = undefined, jammer = undefined) {
     params.param1 = attackingplayer;
     params.param2 = jammer;
     if (isplayer(attackingplayer)) {
-        level callback::callback(#"vehicle_emped", {#vehicle:self, #attacker:attackingplayer});
+        level callback::callback(#"vehicle_emped", {#attacker:attackingplayer, #vehicle:self});
     }
     if (isdefined(self.is_staircase_up)) {
         self [[ self.is_staircase_up ]](params);
@@ -422,8 +422,8 @@ function private on_vehicle_collision(params) {
     if (isdefined(var_2ad7f33b) && var_2ad7f33b > var_1fdf316c) {
         applydamage = mapfloat(var_1fdf316c, var_a7796a79, mindamage, maxdamage, var_2ad7f33b);
         if (isdefined(params.normal) && params.normal[2] < -0.5) {
-            var_d3f8fc8a = vectordot(anglestoup(self.angles), -1 * params.normal);
-            if (var_d3f8fc8a > var_a1805d6e) {
+            impactdot = vectordot(anglestoup(self.angles), -1 * params.normal);
+            if (impactdot > var_a1805d6e) {
                 applydamage = applydamage * 0.1;
             }
         }
@@ -576,7 +576,7 @@ function function_3054737a(vehicle) {
     if (game.state == "pregame" || !isplayer(self) || self isremotecontrolling() || isdefined(vehicle.session)) {
         return;
     }
-    vehicle.session = {#passenger_kills:0, #var_3893d13e:0, #var_45bf3627:0, #var_ffb0c509:0, #vehicle_kills:0, #var_ecd1fe60:0, #var_33f48e5a:0, #var_770fd50d:0, #var_5ba0df6e:0, #var_309ad81f:0, #var_efe98761:1, #first_player:int(self getxuid(1)), #end_health:vehicle.health, #start_health:vehicle.health, #end_time:0, #start_time:gettime(), #var_c87538d9:vehicle.trackingindex, #var_4ba3155:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_2dbaf8ca:vehicle.origin[0], #vehicle:vehicle.vehicletype};
+    vehicle.session = {#vehicle:vehicle.vehicletype, #var_2dbaf8ca:vehicle.origin[0], #var_1ff15d37:vehicle.origin[1], #var_16f7d5d0:vehicle.origin[0], #var_4ba3155:vehicle.origin[1], #var_c87538d9:vehicle.trackingindex, #start_time:gettime(), #end_time:0, #start_health:vehicle.health, #end_health:vehicle.health, #first_player:int(self getxuid(1)), #var_efe98761:1, #var_309ad81f:0, #var_5ba0df6e:0, #var_770fd50d:0, #var_33f48e5a:0, #var_ecd1fe60:0, #vehicle_kills:0, #var_ffb0c509:0, #var_45bf3627:0, #var_3893d13e:0, #passenger_kills:0};
 }
 
 // Namespace wz_vehicle/vehicle
@@ -3340,15 +3340,15 @@ function function_33a25ecf(owner) {
                     if (isdefined(level.var_ccfcde75)) {
                         owner [[ level.var_ccfcde75 ]](self, grenade);
                     }
-                    var_84c1f04c = grenade.origin - self.origin;
-                    if (var_84c1f04c == (0, 0, 0)) {
-                        var_84c1f04c = (1, 0, 0);
+                    fxfwd = grenade.origin - self.origin;
+                    if (fxfwd == (0, 0, 0)) {
+                        fxfwd = (1, 0, 0);
                     }
                     fxup = anglestoup(self.angles);
                     if (fxup == (0, 0, 0)) {
                         fxup = (0, 0, 1);
                     }
-                    playfx("weapon/fx_trophy_flash", self.origin + vectorscale((0, 0, 1), 15), var_84c1f04c, fxup);
+                    playfx("weapon/fx_trophy_flash", self.origin + vectorscale((0, 0, 1), 15), fxfwd, fxup);
                     owner thread projectile_explode(grenade);
                     index--;
                     self playsound(#"wpn_trophy_alert");

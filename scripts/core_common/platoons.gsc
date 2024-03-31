@@ -17,7 +17,7 @@ function autoexec __init__system__() {
 // Checksum 0xb2e94a96, Offset: 0xd8
 // Size: 0x15c
 function __init__() {
-    level.platoon = {#max_players:0, #assignment:isdefined(getgametypesetting(#"platoonassignment")) ? getgametypesetting(#"platoonassignment") : 0, #count:isdefined(getgametypesetting(#"platooncount")) ? getgametypesetting(#"platooncount") : 0};
+    level.platoon = {#count:isdefined(getgametypesetting(#"platooncount")) ? getgametypesetting(#"platooncount") : 0, #assignment:isdefined(getgametypesetting(#"platoonassignment")) ? getgametypesetting(#"platoonassignment") : 0, #max_players:0};
     level.platoon.max_players = function_bb1ab64b();
     if (level.platoon.count) {
         level.platoon.max_players = level.platoon.max_players / level.platoon.count;
@@ -49,7 +49,7 @@ function private on_start_gametype() {
     level.platoons = [];
     for (var_aada11e0 = 1; var_aada11e0 <= level.platoon.count; var_aada11e0++) {
         platoon_name = "platoon_" + var_aada11e0;
-        level.platoons[hash("platoon_" + var_aada11e0)] = {#player_count:0, #var_9dd75dad:0, #eliminated:0, #name:platoon_name};
+        level.platoons[hash("platoon_" + var_aada11e0)] = {#name:platoon_name, #eliminated:0, #var_9dd75dad:0, #player_count:0};
     }
 }
 

@@ -31,7 +31,7 @@ function register_character_unlock(unlock_name, unlock_stat, item, var_f27097cc,
     /#
         assert(vararg.size > 0, "<unknown string>");
     #/
-    var_9ba1646c = {#activation_func:undefined, #var_849d923d:var_f27097cc, #var_3845495:[], #required_item:item, #var_2b469a7d:unlock_stat};
+    var_9ba1646c = {#var_2b469a7d:unlock_stat, #required_item:item, #var_3845495:[], #var_849d923d:var_f27097cc, #activation_func:undefined};
     for (i = 0; i < vararg.size; i++) {
         if (!isdefined(var_9ba1646c.var_3845495)) {
             var_9ba1646c.var_3845495 = [];

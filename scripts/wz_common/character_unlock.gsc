@@ -270,7 +270,7 @@ function function_54fc60f5(player, character) {
     if (isdefined(player) && isplayer(player) && isdefined(character)) {
         player_xuid = player getxuid(1);
         if (isdefined(player_xuid)) {
-            data = {#character:character, #player_xuid:int(player_xuid), #game_time:function_f8d53445()};
+            data = {#game_time:function_f8d53445(), #player_xuid:int(player_xuid), #character:character};
             function_92d1707f(#"hash_17e83c78e2a73ed1", data);
         }
     }

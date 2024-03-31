@@ -233,7 +233,7 @@ function damage(e_trap) {
     v_away = self.origin - e_trap.origin;
     v_away = vectornormalize((v_away[0], v_away[1], 0)) * 64;
     v_dest = self.origin + v_away;
-    level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+    level notify(#"trap_kill", {#e_victim:self, #e_trap:e_trap});
     self dodamage(self.health + 666, self.origin, e_trap);
     self thread function_373d49f(v_dest, 0.25, 0, 0.125);
     self thread zm_towers_util::function_ae1b4f5b(90, 75, 25);

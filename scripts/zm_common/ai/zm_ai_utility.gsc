@@ -85,7 +85,7 @@ function private function_a19d7104(settingsbundle) {
             #/
             continue;
         }
-        level.var_532264f5[settingsbundle.name][var_e8d7c6d7.weaponid] = {#var_fac896db:var_e8d7c6d7.var_97b22faa, #var_8e22aa87:var_e8d7c6d7.var_fc420d71, #var_fff93f95:var_e8d7c6d7.var_628192b0, #var_c6cc6205:var_e8d7c6d7.damagescale};
+        level.var_532264f5[settingsbundle.name][var_e8d7c6d7.weaponid] = {#var_c6cc6205:var_e8d7c6d7.damagescale, #var_fff93f95:var_e8d7c6d7.var_628192b0, #var_8e22aa87:var_e8d7c6d7.var_fc420d71, #var_fac896db:var_e8d7c6d7.var_97b22faa};
     }
     settingsbundle.var_6199bcd5 = 1;
 }
@@ -151,7 +151,7 @@ function function_594bb7bd(player) {
 // Checksum 0x212e4a78, Offset: 0x840
 // Size: 0x16e
 function get_pathnode_path(pathnode) {
-    path_struct = {#loops:0, #path:array(pathnode)};
+    path_struct = {#path:array(pathnode), #loops:0};
     var_592eaf7 = pathnode;
     while (isdefined(var_592eaf7.target)) {
         var_592eaf7 = getnode(var_592eaf7.target, "targetname");
@@ -344,7 +344,7 @@ function function_422fdfd4(entity, attacker, weapon, var_5457dc44, hitloc, point
             }
         }
     }
-    return {#var_201ce857:var_201ce857, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce, #var_84ed9a13:var_84ed9a13, #damage_scale:var_b1c1c5cf};
+    return {#damage_scale:var_b1c1c5cf, #var_84ed9a13:var_84ed9a13, #registerzombie_bgb_used_reinforce:registerzombie_bgb_used_reinforce, #var_201ce857:var_201ce857};
 }
 
 // Namespace zm_ai_utility/zm_ai_utility

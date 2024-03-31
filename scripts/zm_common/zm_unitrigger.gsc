@@ -1041,8 +1041,8 @@ function private build_trigger_from_unitrigger_stub(s_stub, player) {
         trigger.stub = s_stub;
         trigger.player = player;
         function_699abf2(s_stub, trigger);
-        if (isdefined(s_stub.var_8232be15)) {
-            s_stub [[ s_stub.var_8232be15 ]](trigger);
+        if (isdefined(s_stub.onspawnfunc)) {
+            s_stub [[ s_stub.onspawnfunc ]](trigger);
         }
         function_d0676c62(s_stub, trigger, player);
         trigger triggerignoreteam();

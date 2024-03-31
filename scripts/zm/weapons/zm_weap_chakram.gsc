@@ -455,7 +455,7 @@ function private function_e3ad524a() {
             if (var_9cdda9f7 >= var_c5eb6fda) {
                 level thread function_8d4b8171(v_end, a_trace[#"normal"]);
                 if (isdefined(level.var_2e32e0bb)) {
-                    level notify(#"hero_weapon_hit", {#v_position:a_trace[#"position"], #var_80e17549:self.currentweapon, #e_entity:a_trace[#"entity"], #player:self});
+                    level notify(#"hero_weapon_hit", {#player:self, #e_entity:a_trace[#"entity"], #var_80e17549:self.currentweapon, #v_position:a_trace[#"position"]});
                 }
                 v_start = v_end;
                 v_forward = v_forward - 2 * a_trace[#"normal"] * vectordot(v_forward, a_trace[#"normal"]);

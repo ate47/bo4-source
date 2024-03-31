@@ -1459,8 +1459,8 @@ function function_c7cab34e() {
 // Checksum 0x65eaeea2, Offset: 0x66a8
 // Size: 0x132
 function function_d9a69cf2(origin, forward) {
-    var_8e1582ca = getentitiesinradius(origin, 50, 15);
-    foreach (ent in var_8e1582ca) {
+    nearby_zombies = getentitiesinradius(origin, 50, 15);
+    foreach (ent in nearby_zombies) {
         if (!isdefined(forward) || vectordot(origin - ent.origin, forward) < 0) {
             var_43b3242 = 0;
             if (isdefined(ent.var_834b0770)) {
@@ -1480,12 +1480,12 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
     if (isdefined(eventstruct.ent.target) && eventstruct.ent.target != "") {
         traversal_start_node = getnode(eventstruct.ent.target, "targetname");
         if (isdefined(traversal_start_node)) {
-            var_c88f4455 = getothernodeinnegotiationpair(traversal_start_node);
+            other_node = getothernodeinnegotiationpair(traversal_start_node);
             if (eventstruct.state == 0) {
                 if (isdefined(getgametypesetting(#"hash_2ce00db5cd5003ff")) ? getgametypesetting(#"hash_2ce00db5cd5003ff") : 0) {
                     function_dc0a8e61(traversal_start_node, 0);
-                    if (isdefined(var_c88f4455)) {
-                        function_dc0a8e61(var_c88f4455, 0);
+                    if (isdefined(other_node)) {
+                        function_dc0a8e61(other_node, 0);
                     }
                     if (isdefined(traversal_start_node.ai_zone)) {
                         if (isdefined(traversal_start_node.ai_zone.var_6411ebfb) && traversal_start_node.ai_zone.var_6411ebfb) {
@@ -1510,8 +1510,8 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                     function_d9a69cf2(eventstruct.ent.origin, forward);
                 }
                 function_dc0a8e61(traversal_start_node, 1);
-                if (isdefined(var_c88f4455)) {
-                    function_dc0a8e61(var_c88f4455, 1);
+                if (isdefined(other_node)) {
+                    function_dc0a8e61(other_node, 1);
                 }
                 linktraversal(traversal_start_node);
                 return;

@@ -103,7 +103,7 @@ function set_portrait(portraitid) {
 // Size: 0x1c
 function playing() {
     if (!isdefined(self.var_556f910a)) {
-        return 0;
+        return false;
     }
     return isdefined(self.var_47282775);
 }
@@ -152,7 +152,7 @@ function stop_all(team) {
 // Size: 0x308
 function play(scriptkey, var_17ee4803 = undefined, var_7f436309 = 0) {
     if (!isdefined(self) || issentient(self) && !isalive(self)) {
-        return 0;
+        return false;
     }
     /#
         assert(isdefined(self.var_556f910a), "<unknown string>");

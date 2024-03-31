@@ -21,7 +21,7 @@ function autoexec __init__system__() {
 // Checksum 0xdcc57d58, Offset: 0x138
 // Size: 0xec
 function __init__() {
-    level.renderoverridebundle = {#var_383fe4d6:[], #local_clients:[]};
+    level.renderoverridebundle = {#local_clients:[], #var_383fe4d6:[]};
     callback::on_localclient_connect(&function_d7ae6bbb);
     function_f72f089c(#"hash_ebb37dab2ee0ae3", sessionmodeiscampaigngame() ? #"rob_sonar_set_friendlyequip_cp" : #"rob_sonar_set_friendlyequip_mp", &function_6803f977);
     function_f72f089c(#"hash_16bdbd0b3de5c91a", #"hash_71fbf1094f57b910", &function_fac25f84);
@@ -77,7 +77,7 @@ function function_f72f089c(var_166900a8, bundle, validity_func, var_35a2c593, de
             assert(!function_25996839(var_166900a8, bundle, validity_func, var_35a2c593));
         #/
     #/
-    level.renderoverridebundle.var_383fe4d6[var_166900a8] = {#force_kill:force_kill, #default_bundle:default_bundle, #var_1a5b7293:0, #var_35a2c593:var_35a2c593, #validity_func:validity_func, #bundle:bundle};
+    level.renderoverridebundle.var_383fe4d6[var_166900a8] = {#bundle:bundle, #validity_func:validity_func, #var_35a2c593:var_35a2c593, #var_1a5b7293:0, #default_bundle:default_bundle, #force_kill:force_kill};
 }
 
 // Namespace renderoverridebundle/renderoverridebundle

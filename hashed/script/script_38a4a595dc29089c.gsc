@@ -127,7 +127,7 @@ function function_65509998(activator) {
     self playsound("evt_elevator_button_bell");
     activator gestures::function_56e00fbf("gestable_door_interact", undefined, 0);
     array::thread_all(gameobjects, &gameobjects::disable_object);
-    array::thread_all(doors, &function_b1005820, elevator, move_to.script_noteworthy);
+    array::thread_all(doors, &close_door, elevator, move_to.script_noteworthy);
     foreach (node in elevator.traversals) {
         unlinktraversal(node);
     }
@@ -179,7 +179,7 @@ function open_door(location) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xee260efe, Offset: 0x10b8
 // Size: 0xe4
-function function_b1005820(elevator) {
+function close_door(elevator) {
     self.state = "closed";
     var_856b91cc = self.var_856b91cc;
     self moveto((var_856b91cc.origin[0], var_856b91cc.origin[1], self.origin[2]), 0.37);

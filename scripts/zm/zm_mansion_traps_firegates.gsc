@@ -584,7 +584,7 @@ function function_5ad19000(e_trap) {
         return;
     }
     [[ level.var_db63b33b ]]->waitinqueue(self);
-    level notify(#"trap_kill", {#e_trap:e_trap, #e_victim:self});
+    level notify(#"trap_kill", {#e_victim:self, #e_trap:e_trap});
     if (isdefined(e_trap.activated_by_player) && isplayer(e_trap.activated_by_player)) {
         e_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
         e_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");

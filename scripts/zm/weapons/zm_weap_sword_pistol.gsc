@@ -580,7 +580,7 @@ function function_5ff8ad0b(weapon, var_fb504c3b) {
     v_forward = self getweaponforwarddir();
     v_end = var_2ed6f142 + v_forward * 10000;
     a_trace = bullettrace(var_2ed6f142, v_end, 0, self);
-    level notify(#"hero_weapon_hit", {#v_position:var_fb504c3b, #var_80e17549:weapon, #e_entity:a_trace[#"entity"], #player:self});
+    level notify(#"hero_weapon_hit", {#player:self, #e_entity:a_trace[#"entity"], #var_80e17549:weapon, #v_position:var_fb504c3b});
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol
@@ -632,7 +632,7 @@ function private function_e47a52e0(weapon) {
     }
     var_6ff1bf88 = distance(v_pos, v_end);
     n_time_travel = var_6ff1bf88 / n_move_speed;
-    var_f0ccd955 = n_time_travel < 0.1 ? n_time_travel : 0.1;
+    var_f0ccd955 = n_time_travel < 0.1 ? 0.1 : n_time_travel;
     self.var_7c78b80e moveto(v_end, var_f0ccd955);
     self.var_7c78b80e clientfield::set("" + #"hash_4d733389a8e35a7c", 1);
     self thread swordpistol_rumble(5);

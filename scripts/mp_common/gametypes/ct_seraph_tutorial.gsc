@@ -720,8 +720,8 @@ function function_95e6fae3() {
     e_player = ct_utils::get_player();
     e_player thread ct_utils::function_61c3d59c(#"hash_276c71244969e7f5", undefined);
     e_player clientfield::set_player_uimodel("hudItems.spawnSelectHidePrompt", 1);
-    var_18ea83b9 = struct::get("s_vh_chopper", "targetname");
-    vh_chopper = spawnvehicle(#"veh_t8_helicopter_gunship_mp", var_18ea83b9.origin, var_18ea83b9.angles);
+    s_chopper = struct::get("s_vh_chopper", "targetname");
+    vh_chopper = spawnvehicle(#"veh_t8_helicopter_gunship_mp", s_chopper.origin, s_chopper.angles);
     util::magic_bullet_shield(vh_chopper);
     vh_chopper setteam(#"axis");
     vh_chopper setrotorspeed(1);
@@ -849,7 +849,7 @@ function function_c8e681c8() {
     ct_utils::function_e9ab1003("s_seraph_soldier_loc_5_2");
     e_player = getplayers()[0];
     e_player thread function_b23a52d(2.25, 0);
-    var_5140744e = function_8b1a219a() ? #"hash_50a34cf1332e24f" : #"hash_10c1ccd08be6e1f9";
+    var_5140744e = function_8b1a219a() ? #"hash_10c1ccd08be6e1f9" : #"hash_50a34cf1332e24f";
     var_eb32d4fd = e_player gamepadusedlast() ? #"hash_4b8f067f2ba3cf59" : #"hash_4a0ed54a946ba43f";
     level thread function_9d45d90a(#"hash_3e9e530155c75666", var_5140744e, var_eb32d4fd);
     level thread ct_vo::function_831e0584(array(#"hash_3e7cf98a7379a29c"), 1);

@@ -124,7 +124,7 @@ function function_270aecf7() {
         e_who = self.e_activator;
         if (isdefined(e_who)) {
             zm_utility::play_sound_at_pos("purchase", e_who.origin);
-            level notify(#"trap_activated", {#trap:self, #trap_activator:e_who});
+            level notify(#"trap_activated", {#trap_activator:e_who, #trap:self});
             level.s_freeze_trap.e_volume.activated_by_player = e_who;
         }
         level.s_freeze_trap function_4bbed101(e_who);
@@ -204,7 +204,7 @@ function function_92f341d0(e_activator, e_volume) {
             level.s_freeze_trap.activated_by_player zm_stats::increment_challenge_stat(#"zombie_hunter_kill_trap");
             level.s_freeze_trap.activated_by_player contracts::increment_zm_contract(#"contract_zm_trap_kills");
         }
-        level notify(#"trap_kill", {#trap:e_volume, #victim:self});
+        level notify(#"trap_kill", {#victim:self, #trap:e_volume});
         self dodamage(self.health + 1000, e_volume.origin, e_volume);
     }
 }

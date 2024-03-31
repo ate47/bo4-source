@@ -87,14 +87,14 @@ function on_player_killed() {
         return;
     }
     attacker_origin = self.laststandparams.attackerorigin;
-    var_e5b7c28e = self.laststandparams.victimorigin;
-    if (!isdefined(attacker_origin) || !isdefined(var_e5b7c28e)) {
+    victim_origin = self.laststandparams.victimorigin;
+    if (!isdefined(attacker_origin) || !isdefined(victim_origin)) {
         return;
     }
     if (!attacker character_unlock::function_f0406288(#"reznov_unlock")) {
         return;
     }
-    dist_to_target_sq = distancesquared(attacker_origin, var_e5b7c28e);
+    dist_to_target_sq = distancesquared(attacker_origin, victim_origin);
     if (dist_to_target_sq < 7800 * 7800) {
         return;
     }

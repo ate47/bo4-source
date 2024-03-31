@@ -37,7 +37,7 @@ function register_burn(str_type, n_dps, n_duration, var_f472bfc, var_5713c703) {
     } else if (!isarray(level.var_981dd9cf[#"burn"])) {
         level.var_981dd9cf[#"burn"] = array(level.var_981dd9cf[#"burn"]);
     }
-    level.var_981dd9cf[#"burn"][str_type] = {#var_5713c703:var_5713c703, #var_f472bfc:var_f472bfc, #n_duration:n_duration, #n_dps:n_dps};
+    level.var_981dd9cf[#"burn"][str_type] = {#n_dps:n_dps, #n_duration:n_duration, #var_f472bfc:var_f472bfc, #var_5713c703:var_5713c703};
 }
 
 // Namespace namespace_9ff9f642/namespace_9ff9f642
@@ -65,7 +65,7 @@ function burn(str_type, e_attacker, weapon, var_477abb8f) {
     }
     s_burn = level.var_981dd9cf[#"burn"][str_type];
     if (!isdefined(self.var_88421cc2[str_type])) {
-        self.var_88421cc2[str_type] = {#var_477abb8f:var_477abb8f, #weapon:weapon, #e_owner:e_attacker, #n_time_remaining:s_burn.n_duration};
+        self.var_88421cc2[str_type] = {#n_time_remaining:s_burn.n_duration, #e_owner:e_attacker, #weapon:weapon, #var_477abb8f:var_477abb8f};
     } else {
         if (self.var_88421cc2[str_type].n_time_remaining < s_burn.n_duration) {
             self.var_88421cc2[str_type].n_time_remaining = s_burn.n_duration;
@@ -188,7 +188,7 @@ function freeze() {
     if (isdefined(self.var_b030dabb)) {
         self.var_b030dabb.n_count++;
     } else {
-        self.var_b030dabb = {#var_dbcf9b4b:self.is_inert, #b_ignore_cleanup:self.b_ignore_cleanup, #n_count:1};
+        self.var_b030dabb = {#n_count:1, #b_ignore_cleanup:self.b_ignore_cleanup, #var_dbcf9b4b:self.is_inert};
     }
     self thread function_bf97ba95();
     self setentitypaused(1);
@@ -284,7 +284,7 @@ function register_slowdown(str_type, n_rate, n_duration = -1) {
     } else if (!isarray(level.var_981dd9cf[#"slow"])) {
         level.var_981dd9cf[#"slow"] = array(level.var_981dd9cf[#"slow"]);
     }
-    level.var_981dd9cf[#"slow"][str_type] = {#n_duration:n_duration, #n_rate:n_rate};
+    level.var_981dd9cf[#"slow"][str_type] = {#n_rate:n_rate, #n_duration:n_duration};
 }
 
 // Namespace namespace_9ff9f642/namespace_9ff9f642

@@ -1178,7 +1178,7 @@ class csceneplayer : csceneobject {
         if (player flagsys::get(#"mobile_armory_in_use")) {
             player flagsys::set(#"cancel_mobile_armory");
             player closemenu("mobile_armory_loadout");
-            params = {#intpayload:0, #response:"cancel", #menu:"mobile_armory_loadout"};
+            params = {#menu:"mobile_armory_loadout", #response:"cancel", #intpayload:0};
             player notify(#"menuresponse", params);
             player callback::callback(#"menu_response", params);
         }

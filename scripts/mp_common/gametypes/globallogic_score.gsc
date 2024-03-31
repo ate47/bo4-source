@@ -909,7 +909,7 @@ function giveteamscore(event, team, player, victim) {
     pixendevent();
     newscore = game.stat[#"teamscores"][team];
     if (sessionmodeismultiplayergame()) {
-        mpteamscores = {#score:newscore, #diff:newscore - teamscore, #team:team, #event:event, #gametime:function_f8d53445()};
+        mpteamscores = {#gametime:function_f8d53445(), #event:event, #team:team, #diff:newscore - teamscore, #score:newscore};
         function_92d1707f(#"hash_48d5ef92d24477d2", mpteamscores);
     }
     if (teamscore == newscore) {
@@ -929,7 +929,7 @@ function giveteamscoreforobjective_delaypostprocessing(team, score) {
     onteamscore_incrementscore(score, team);
     newscore = game.stat[#"teamscores"][team];
     if (sessionmodeismultiplayergame()) {
-        mpteamobjscores = {#score:newscore, #diff:newscore - teamscore, #team:team, #gametime:function_f8d53445()};
+        mpteamobjscores = {#gametime:function_f8d53445(), #team:team, #diff:newscore - teamscore, #score:newscore};
         function_92d1707f(#"hash_22921c2c027fa389", mpteamobjscores);
     }
     if (teamscore == newscore) {
@@ -962,7 +962,7 @@ function giveteamscoreforobjective(team, score) {
     onteamscore(score, team);
     newscore = game.stat[#"teamscores"][team];
     if (sessionmodeismultiplayergame()) {
-        mpteamobjscores = {#score:newscore, #diff:newscore - teamscore, #team:team, #gametime:function_f8d53445()};
+        mpteamobjscores = {#gametime:function_f8d53445(), #team:team, #diff:newscore - teamscore, #score:newscore};
         function_92d1707f(#"hash_22921c2c027fa389", mpteamobjscores);
     }
     if (teamscore == newscore) {
@@ -1831,7 +1831,7 @@ function processkillstreakassists(attacker, inflictor, weapon) {
     if (!function_f38e3d84(attacker, inflictor, weapon)) {
         return;
     }
-    params = {#weapon:weapon, #inflictor:inflictor, #attacker:attacker, #players:[]};
+    params = {#players:[], #attacker:attacker, #inflictor:inflictor, #weapon:weapon};
     foreach (player in level.players) {
         if (util::function_fbce7263(player.team, attacker.team)) {
             continue;
@@ -1870,7 +1870,7 @@ function updateteamscorebyroundswon() {
 // Size: 0x316
 function function_e7b4c25c(nemesis_name, value, nemesis_rank, var_15574043, nemesis_xp, nemesis_xuid) {
     if (!isdefined(self.pers[#"nemesis_tracking"][nemesis_name])) {
-        self.pers[#"nemesis_tracking"][nemesis_name] = {#value:0, #name:nemesis_name};
+        self.pers[#"nemesis_tracking"][nemesis_name] = {#name:nemesis_name, #value:0};
     }
     self.pers[#"nemesis_tracking"][nemesis_name].value = self.pers[#"nemesis_tracking"][nemesis_name].value + value;
     var_b5c193c6 = self.pers[#"nemesis_tracking"][self.pers[#"nemesis_name"]];

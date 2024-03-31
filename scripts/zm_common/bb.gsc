@@ -77,7 +77,7 @@ function logplayerevent(player, eventname) {
 // Checksum 0x655366ba, Offset: 0x3c0
 // Size: 0x118
 function logroundevent(eventname) {
-    zmroundevents = {#eventname:eventname, #roundnumber:level.round_number, #gametime:function_f8d53445()};
+    zmroundevents = {#gametime:function_f8d53445(), #roundnumber:level.round_number, #eventname:eventname};
     function_92d1707f(#"hash_1f42d237e3407165", zmroundevents);
     if (isdefined(level.players)) {
         foreach (player in level.players) {

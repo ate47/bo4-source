@@ -44,7 +44,7 @@ function update_status() {
     if (infection::function_74650d7()) {
         return;
     }
-    params = {#var_42c20e77:[], #var_1ab40902:[]};
+    params = {#var_1ab40902:[], #var_42c20e77:[]};
     foreach (var_b6173883, platoon in level.platoons) {
         if (platoon.var_9dd75dad == 0) {
             continue;

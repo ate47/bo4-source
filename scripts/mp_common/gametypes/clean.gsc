@@ -770,7 +770,7 @@ function function_95cbd646(player) {
                 player.var_49f1d9cc = 0;
             }
             player clientfield::set_player_uimodel("hudItems.cleanCarryFull", player.var_49f1d9cc);
-            player.var_49f1d9cc = player.var_49f1d9cc ? 1 : 0;
+            player.var_49f1d9cc = player.var_49f1d9cc ? 0 : 1;
         }
         player.var_129c990c = time;
         return;

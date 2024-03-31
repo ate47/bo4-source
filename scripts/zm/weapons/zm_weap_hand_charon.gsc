@@ -485,7 +485,7 @@ function function_247597a(b_charged) {
     v_end = var_2ed6f142 + v_forward * 10000;
     a_trace = bullettrace(var_2ed6f142, v_end, 1, self);
     if (isdefined(level.var_4822b326)) {
-        level notify(#"ww_charon_hit", {#e_entity:a_trace[#"entity"], #player:self});
+        level notify(#"ww_charon_hit", {#player:self, #e_entity:a_trace[#"entity"]});
     }
     if (isdefined(b_charged) && b_charged) {
         return a_trace;

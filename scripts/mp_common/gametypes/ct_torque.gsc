@@ -446,7 +446,7 @@ function function_72e84e64() {
     level notify(#"hash_b368182103cc73");
     ct_utils::function_6d7f4ec6(45);
     e_player = ct_utils::get_player();
-    level thread function_c326bbe4();
+    level thread checkpoints_think();
     level.ai_vip thread function_db21e968(12, 1, 1000, 1500, 0, 2);
     e_player thread function_db21e968(12, 1, 1000, 1500, 0, 2);
     e_player function_5a57b177(1);
@@ -513,7 +513,7 @@ function function_5a72abb2() {
 // Params 0, eflags: 0x0
 // Checksum 0xd6750bdc, Offset: 0x25a0
 // Size: 0x178
-function function_c326bbe4() {
+function checkpoints_think() {
     level endon(#"combattraining_logic_finished");
     e_player = ct_utils::get_player();
     foreach (var_94dda6f in level.var_ac03813) {

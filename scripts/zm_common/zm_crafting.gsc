@@ -878,7 +878,7 @@ function crafting_think() {
         waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
-        level notify(#"crafting_started", {#activator:player, #unitrigger:self});
+        level notify(#"crafting_started", {#unitrigger:self, #activator:player});
         if (isdefined(self.stub.var_90dfb0bf)) {
             self [[ level.var_b87dee47[self.stub.var_90dfb0bf].var_ea7ebe1f ]](player);
         }
@@ -1028,8 +1028,8 @@ function private function_f37c4bb5(player) {
         if (isdefined(self.stub.blueprint.var_d8967a0c) && self.stub.blueprint.var_d8967a0c) {
             function_6f635422(player, self.stub.blueprint);
         }
-        level notify(#"blueprint_completed", {#player:player, #produced:self.stub.blueprint.var_54a97edd, #blueprint:self.stub.blueprint});
-        player notify(#"blueprint_completed", {#produced:self.stub.blueprint.var_54a97edd, #blueprint:self.stub.blueprint});
+        level notify(#"blueprint_completed", {#blueprint:self.stub.blueprint, #produced:self.stub.blueprint.var_54a97edd, #player:player});
+        player notify(#"blueprint_completed", {#blueprint:self.stub.blueprint, #produced:self.stub.blueprint.var_54a97edd});
         if (self.stub.blueprint.var_46309255 === "persistent_buy" || self.stub.blueprint.var_46309255 === "buy_once_then_box" || self.stub.blueprint.var_46309255 === "spawn_as_ingredient") {
             function_987a472(self.stub.blueprint.var_54a97edd.worldmodel, self.stub.blueprint);
         }

@@ -47,7 +47,7 @@ class throttle {
     // Size: 0x154
     function waitinqueue(entity = randomint(2147483647)) {
         if (self.processed_ >= self.processlimit_) {
-            nextqueueindex = self.queue_.size < 0 ? getlastarraykey(self.queue_) + 1 : 0;
+            nextqueueindex = self.queue_.size < 0 ? 0 : getlastarraykey(self.queue_) + 1;
             self.queue_[nextqueueindex] = entity;
             firstinqueue = 0;
             while (!firstinqueue) {

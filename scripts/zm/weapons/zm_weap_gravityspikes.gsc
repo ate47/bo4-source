@@ -733,7 +733,7 @@ function plant_gravity_trap(var_4052dd74) {
     a_s_spawn_pos = array(var_f4daeb3f, var_d7061a0d);
     self create_gravity_trap_spikes_in_ground(a_s_spawn_pos);
     if (self isonground()) {
-        var_aa0fedb0 = {#entity:self getgroundent(), #position:self.origin + vectorscale((0, 0, 1), 32)};
+        var_aa0fedb0 = {#position:self.origin + vectorscale((0, 0, 1), 32), #entity:self getgroundent()};
     } else {
         var_aa0fedb0 = util::function_97cf7eb0(self.origin, 1000, length(vectorscale((0, 0, 1), 32)));
     }
@@ -1172,9 +1172,9 @@ function private zombie_lift_wacky_rotate(n_lift_time, player) {
     player endon(#"gravity_spike_expired");
     self endon(#"death");
     while (true) {
-        negative_x = randomintrange(0, 10) > 5 ? 1 : -1;
-        negative_z = randomintrange(0, 10) > 5 ? 1 : -1;
-        self.mdl_trap_mover rotateto((randomintrange(90, 180) * negative_x, randomintrange(-90, 90), randomintrange(90, 180) * negative_z), n_lift_time < 2 ? n_lift_time : 5, 0);
+        negative_x = randomintrange(0, 10) > 5 ? -1 : 1;
+        negative_z = randomintrange(0, 10) > 5 ? -1 : 1;
+        self.mdl_trap_mover rotateto((randomintrange(90, 180) * negative_x, randomintrange(-90, 90), randomintrange(90, 180) * negative_z), n_lift_time < 2 ? 5 : n_lift_time, 0);
         self.mdl_trap_mover waittill(#"rotatedone");
     }
 }

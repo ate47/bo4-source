@@ -312,7 +312,7 @@ function function_c1c51837(e_player) {
     e_player.var_d675d730.n_kill_count++;
     if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"popcorn" || self.var_6f84b820 == #"enhanced") {
         if (self.no_gib !== 1) {
-            var_d3876bb9 = [6:&gibserverutils::annihilate, 5:&gibserverutils::gibrightleg, 4:&gibserverutils::gibrightarm, 3:&gibserverutils::giblegs, 2:&gibserverutils::gibleftleg, 1:&gibserverutils::gibleftarm, 0:&gibserverutils::gibhead];
+            var_d3876bb9 = [&gibserverutils::gibhead, &gibserverutils::gibleftarm, &gibserverutils::gibleftleg, &gibserverutils::giblegs, &gibserverutils::gibrightarm, &gibserverutils::gibrightleg, &gibserverutils::annihilate];
             var_d3876bb9 = array::randomize(var_d3876bb9);
             [[ var_d3876bb9[0] ]](self);
         }

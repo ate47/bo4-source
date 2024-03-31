@@ -1051,7 +1051,7 @@ function function_5536bd9e() {
     }
     self player::function_9080887a(healthtoassign);
     self.maxhealth = healthtoassign + (isdefined(level.var_90bb9821) ? level.var_90bb9821 : 0);
-    new_health = self.var_66cb03ad < 0 ? self.var_66cb03ad : healthtoassign;
+    new_health = self.var_66cb03ad < 0 ? healthtoassign : self.var_66cb03ad;
     give_armor = has_specialty_armor && (!isdefined(self.var_a06951b7) || self.var_a06951b7 < gettime());
     armor = give_armor ? self.spawnarmor : 0;
     self.health = new_health;
@@ -1130,8 +1130,8 @@ function function_c3448ab0(slot, previous_weapon, force_give_gadget_health_regen
     secondaryoffhand = level.weaponnone;
     secondaryoffhandcount = 0;
     if (getdvarint(#"equipmentasgadgets", 0) == 1) {
-        if (isdefined(self.playerrole) && isdefined(self.playerrole.var_743dc11d)) {
-            secondaryoffhand = self.playerrole.var_743dc11d;
+        if (isdefined(self.playerrole) && isdefined(self.playerrole.secondaryequipment)) {
+            secondaryoffhand = self.playerrole.secondaryequipment;
             secondaryoffhandcount = secondaryoffhand.startammo;
         }
     } else {

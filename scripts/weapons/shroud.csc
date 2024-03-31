@@ -96,8 +96,8 @@ function private function_90fc4e4c() {
 // Size: 0x130
 function private function_a252eaf0(localclientnum, entnum, team) {
     self waittill(#"death");
-    if (isdefined(self.var_7ec0e2d1)) {
-        self.var_7ec0e2d1 delete();
+    if (isdefined(self.iconent)) {
+        self.iconent delete();
     }
     if (!isdefined(level.var_effa221)) {
         level.var_effa221 = [];
@@ -130,28 +130,28 @@ function private function_27e74bc4() {
 function private function_e3a084cd(localclientnum, bwastimejump) {
     localplayer = function_5c10bd79(localclientnum);
     if (bwastimejump === 1) {
-        if (isdefined(self.var_7ec0e2d1)) {
+        if (isdefined(self.iconent)) {
             return;
         }
-    } else if (isdefined(self.var_7ec0e2d1)) {
-        self.var_7ec0e2d1 delete();
+    } else if (isdefined(self.iconent)) {
+        self.iconent delete();
     }
-    self.var_7ec0e2d1 = spawn(localclientnum, self.origin, "script_model", localplayer getentitynumber(), self.team);
-    self.var_7ec0e2d1 setmodel(#"tag_origin");
-    self.var_7ec0e2d1 linkto(self);
-    self.var_7ec0e2d1 setcompassicon("minimap_shroud_flying");
-    self.var_7ec0e2d1 function_8e04481f();
-    self.var_7ec0e2d1 function_5e00861(0.25);
-    self.var_7ec0e2d1 function_a5edb367(#"neutral");
+    self.iconent = spawn(localclientnum, self.origin, "script_model", localplayer getentitynumber(), self.team);
+    self.iconent setmodel(#"tag_origin");
+    self.iconent linkto(self);
+    self.iconent setcompassicon("minimap_shroud_flying");
+    self.iconent function_8e04481f();
+    self.iconent function_5e00861(0.25);
+    self.iconent function_a5edb367(#"neutral");
     self thread function_6b2bc612(localclientnum, "o_reaper_t8_radar_shroud_projectile_closed_idle");
     self endon(#"death");
-    var_18452954 = getservertime(localclientnum);
+    flystarttime = getservertime(localclientnum);
     startorigin = self.origin;
     var_dc3f8ecd = startorigin;
     for (var_3d3d7bb1 = 0; var_3d3d7bb1 < 250; var_3d3d7bb1 = 0) {
         var_dc3f8ecd = self.origin;
         var_450cbe48 = getservertime(localclientnum);
-        elapsedtime = var_450cbe48 - var_18452954;
+        elapsedtime = var_450cbe48 - flystarttime;
         waitframe(1);
         parent = self getlinkedent();
         if (isdefined(parent) || var_dc3f8ecd == self.origin) {
@@ -159,18 +159,18 @@ function private function_e3a084cd(localclientnum, bwastimejump) {
             continue;
         }
     }
-    if (isdefined(self.var_7ec0e2d1)) {
-        self.var_7ec0e2d1 enableonradar();
-        self.var_7ec0e2d1 function_811196d1(0);
-        self.var_7ec0e2d1 function_78fd6084();
-        self.var_7ec0e2d1 function_27c5be6c(1);
+    if (isdefined(self.iconent)) {
+        self.iconent enableonradar();
+        self.iconent function_811196d1(0);
+        self.iconent function_78fd6084();
+        self.iconent function_27c5be6c(1);
         if (isdefined(localplayer) && !localplayer util::isenemyteam(self.team)) {
-            self.var_7ec0e2d1 setcompassicon("minimap_shroud_friendly");
+            self.iconent setcompassicon("minimap_shroud_friendly");
         } else {
-            self.var_7ec0e2d1 setcompassicon("minimap_shroud");
+            self.iconent setcompassicon("minimap_shroud");
         }
         diameter = 2600;
-        self.var_7ec0e2d1 function_5e00861(diameter, 1);
+        self.iconent function_5e00861(diameter, 1);
         self thread function_6b2bc612(localclientnum, "o_reaper_t8_radar_shroud_projectile_open", "o_reaper_t8_radar_shroud_projectile_closed_idle");
         self thread function_e140ca2b(localclientnum);
         if (!isdefined(level.var_effa221)) {
@@ -208,13 +208,13 @@ function private function_25f0bf77(localclientnum) {
     var_e74c7608 = 10;
     var_bec8c458 = 0;
     while (true) {
-        if (isdefined(self.var_7ec0e2d1) && self.var_7ec0e2d1.team != self.team) {
-            self.var_7ec0e2d1.team = self.team;
+        if (isdefined(self.iconent) && self.iconent.team != self.team) {
+            self.iconent.team = self.team;
             localplayer = function_5c10bd79(localclientnum);
             if (localplayer.team == self.team) {
-                self.var_7ec0e2d1 setcompassicon("minimap_shroud_friendly");
+                self.iconent setcompassicon("minimap_shroud_friendly");
             } else {
-                self.var_7ec0e2d1 setcompassicon("minimap_shroud");
+                self.iconent setcompassicon("minimap_shroud");
             }
             function_99c31219(localclientnum);
         }

@@ -798,7 +798,7 @@ function remove_oldest() {
                 self switchtoweapon(primaries[0]);
             }
         }
-        self notify(#"oldest_killstreak_removed", {#id:self.pers[#"killstreak_unique_id"][0], #type:self.pers[#"killstreaks"][0]});
+        self notify(#"oldest_killstreak_removed", {#type:self.pers[#"killstreaks"][0], #id:self.pers[#"killstreak_unique_id"][0]});
         self remove_used_killstreak(self.pers[#"killstreaks"][0], self.pers[#"killstreak_unique_id"][0], 0);
     }
 }
@@ -1276,7 +1276,7 @@ function remove_when_done(killstreak, haskillstreakbeenused, isfrominventory) {
             self recordkillstreakbegindirect(killstreak, recordstreakindex);
         }
         if (isdefined(level.usingscorestreaks) && level.usingscorestreaks) {
-            var_ad8ae78f = {#activatedby:getplayerspawnid(self), #killstreak:killstreak, #gametime:function_f8d53445()};
+            var_ad8ae78f = {#gametime:function_f8d53445(), #killstreak:killstreak, #activatedby:getplayerspawnid(self)};
             function_92d1707f(#"hash_1aa07f199266e0c7", var_ad8ae78f);
             if (isdefined(isfrominventory) && isfrominventory) {
                 remove_used_killstreak(killstreak);
@@ -1786,7 +1786,7 @@ function trigger_killstreak(killstreaktype, isfrominventory) {
                 }
                 self.pers[level.killstreaks[killstreaktype].usagekey]++;
                 self notify(#"killstreak_used", killstreaktype);
-                self notify(#"killstreak_done", {#var_d3413870:killstreaktype, #is_successful:1});
+                self notify(#"killstreak_done", {#is_successful:1, #var_d3413870:killstreaktype});
                 self.usingkillstreakfrominventory = undefined;
             }
             return true;
@@ -1794,7 +1794,7 @@ function trigger_killstreak(killstreaktype, isfrominventory) {
     }
     if (isdefined(self)) {
         self.usingkillstreakfrominventory = undefined;
-        self notify(#"killstreak_done", {#var_d3413870:killstreaktype, #is_successful:0});
+        self notify(#"killstreak_done", {#is_successful:0, #var_d3413870:killstreaktype});
     }
     return false;
 }
@@ -2771,7 +2771,7 @@ function destroyentities(entities, attacker, team, weapon, radius) {
             continue;
         }
         if (distancesquared(entity.origin, attacker.origin) < radiussq) {
-            entity notify(#"damage", {#weapon:weapon, #part_name:partname, #model_name:modelname, #tag_name:tagname, #mod:meansofdeath, #position:point, #direction:direction_vec, #attacker:attacker, #amount:damage});
+            entity notify(#"damage", {#amount:damage, #attacker:attacker, #direction:direction_vec, #position:point, #mod:meansofdeath, #tag_name:tagname, #model_name:modelname, #part_name:partname, #weapon:weapon});
         }
     }
 }

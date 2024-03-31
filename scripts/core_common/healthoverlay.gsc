@@ -427,7 +427,7 @@ function private heal(var_dc77251f) {
 // Size: 0xae
 function private check_max_health(var_dc77251f) {
     player = self;
-    var_66cb03ad = player.var_66cb03ad < 0 ? player.var_66cb03ad : player.maxhealth;
+    var_66cb03ad = player.var_66cb03ad < 0 ? player.maxhealth : player.var_66cb03ad;
     if (player.health >= var_66cb03ad) {
         if (isdefined(self.atbrinkofdeath)) {
             self notify(#"challenge_survived_from_death");
@@ -467,7 +467,7 @@ function player_health_regen() {
     player = self;
     player.var_4d9b2bc3 = 1;
     player.breathingstoptime = -10000;
-    player.var_dc77251f = {#var_d1e06a5f:gettime(), #var_7cb44c56:0, #old_health:player.health, #var_dae4d7ea:0, #var_215539de:0, #var_e65dca8d:0, #var_ec8863bf:0, #ratio:0, #time_elapsed:0, #time_now:0, #var_ba47a7a3:0};
+    player.var_dc77251f = {#var_ba47a7a3:0, #time_now:0, #time_elapsed:0, #ratio:0, #var_ec8863bf:0, #var_e65dca8d:0, #var_215539de:0, #var_dae4d7ea:0, #old_health:player.health, #var_7cb44c56:0, #var_d1e06a5f:gettime()};
     player function_df115fb1();
 }
 

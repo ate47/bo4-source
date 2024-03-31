@@ -334,7 +334,7 @@ function gibhat(entity) {
 // Size: 0x92
 function gibhead(entity) {
     gibhat(entity);
-    level notify(#"gib", {#area:"head", #attacker:self.attacker, #entity:entity});
+    level notify(#"gib", {#entity:entity, #attacker:self.attacker, #area:"head"});
     return _gibextra(entity, 8);
 }
 
@@ -348,7 +348,7 @@ function gibleftarm(entity) {
     }
     if (_gibentity(entity, 32)) {
         destructserverutils::destructleftarmpieces(entity);
-        level notify(#"gib", {#area:"left_arm", #attacker:self.attacker, #entity:entity});
+        level notify(#"gib", {#entity:entity, #attacker:self.attacker, #area:"left_arm"});
         return true;
     }
     return false;
@@ -365,7 +365,7 @@ function gibrightarm(entity) {
     if (_gibentity(entity, 16)) {
         destructserverutils::destructrightarmpieces(entity);
         entity thread shared::dropaiweapon();
-        level notify(#"gib", {#area:"right_arm", #attacker:self.attacker, #entity:entity});
+        level notify(#"gib", {#entity:entity, #attacker:self.attacker, #area:"right_arm"});
         return true;
     }
     return false;
@@ -378,7 +378,7 @@ function gibrightarm(entity) {
 function gibleftleg(entity) {
     if (_gibentity(entity, 256)) {
         destructserverutils::destructleftlegpieces(entity);
-        level notify(#"gib", {#area:"left_leg", #attacker:self.attacker, #entity:entity});
+        level notify(#"gib", {#entity:entity, #attacker:self.attacker, #area:"left_leg"});
         return true;
     }
     return false;
@@ -391,7 +391,7 @@ function gibleftleg(entity) {
 function gibrightleg(entity) {
     if (_gibentity(entity, 128)) {
         destructserverutils::destructrightlegpieces(entity);
-        level notify(#"gib", {#area:"right_leg", #attacker:self.attacker, #entity:entity});
+        level notify(#"gib", {#entity:entity, #attacker:self.attacker, #area:"right_leg"});
         return true;
     }
     return false;
@@ -405,7 +405,7 @@ function giblegs(entity) {
     if (_gibentity(entity, 384)) {
         destructserverutils::destructrightlegpieces(entity);
         destructserverutils::destructleftlegpieces(entity);
-        level notify(#"gib", {#area:"both_legs", #attacker:self.attacker, #entity:entity});
+        level notify(#"gib", {#entity:entity, #attacker:self.attacker, #area:"both_legs"});
         return true;
     }
     return false;

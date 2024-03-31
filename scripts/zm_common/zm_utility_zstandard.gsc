@@ -66,7 +66,7 @@ function open_door(a_str_door_names, var_47eb646a = 0, var_91ccb2d7, b_play_audi
             if (isdefined(zombie_door.b_opened) && zombie_door.b_opened) {
                 continue;
             }
-            zombie_door notify(#"trigger", {#is_forced:1, #activator:zombie_door});
+            zombie_door notify(#"trigger", {#activator:zombie_door, #is_forced:1});
             zombie_door.script_flag_wait = undefined;
             zombie_door notify(#"power_on");
             zombie_door.b_opened = 1;
@@ -94,7 +94,7 @@ function function_26a5066b(n_round_number, var_232e4ebc = 1) {
         level.var_26a5066b[n_round_number].var_232e4ebc = level.var_26a5066b[n_round_number].var_232e4ebc + var_232e4ebc;
         return;
     }
-    level.var_26a5066b[n_round_number] = {#var_232e4ebc:var_232e4ebc, #var_6faa5e34:0};
+    level.var_26a5066b[n_round_number] = {#var_6faa5e34:0, #var_232e4ebc:var_232e4ebc};
 }
 
 // Namespace zm_utility/zm_utility_zstandard
@@ -572,7 +572,7 @@ function function_c492c4d6(str_index, var_ed1db1a7, a_str_zones, a_str_next_defe
             assert(isdefined(struct::get(var_ed1db1a7)), "<unknown string>" + var_ed1db1a7 + "<unknown string>");
         #/
     #/
-    level.a_s_defend_areas[str_index] = {#var_9fc5eea1:var_9fc5eea1, #var_c13f5c4b:var_c13f5c4b, #var_39c44288:var_39c44288, #var_16a34df0:var_16a34df0, #a_str_next_defend:a_str_next_defend, #a_str_zones:a_str_zones, #var_ed1db1a7:var_ed1db1a7};
+    level.a_s_defend_areas[str_index] = {#var_ed1db1a7:var_ed1db1a7, #a_str_zones:a_str_zones, #a_str_next_defend:a_str_next_defend, #var_16a34df0:var_16a34df0, #var_39c44288:var_39c44288, #var_c13f5c4b:var_c13f5c4b, #var_9fc5eea1:var_9fc5eea1};
 }
 
 // Namespace zm_utility/zm_utility_zstandard

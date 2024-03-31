@@ -644,7 +644,7 @@ function function_560ecf29(owner) {
     var_84e7232 = owner.origin + vectorscale(forwarddir, 100);
     closest = getclosestpointonnavmesh(var_84e7232, 200);
     if (isdefined(closest)) {
-        return {#angles:owner.angles, #origin:closest};
+        return {#origin:closest, #angles:owner.angles};
     }
     return undefined;
 }

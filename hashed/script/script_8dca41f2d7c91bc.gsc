@@ -258,8 +258,8 @@ function function_4ff0c5fd(e_player) {
                     n_wait_time = 0.5;
                     var_275162bd = 1;
                 } else if (a_ai_spawned.size < 3) {
-                    var_7c5abe72 = array::random(struct::get_array("s_trials_earth_combat_spawn"));
-                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, var_7c5abe72);
+                    s_zombie_spawn = array::random(struct::get_array("s_trials_earth_combat_spawn"));
+                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_zombie_spawn);
                 }
                 continue;
             }
@@ -270,8 +270,8 @@ function function_4ff0c5fd(e_player) {
                     n_wait_time = 0.5;
                     var_275162bd = 1;
                 } else if (a_ai_spawned.size < 4) {
-                    var_7c5abe72 = array::random(struct::get_array("s_trials_air_combat_spawn"));
-                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, var_7c5abe72);
+                    s_zombie_spawn = array::random(struct::get_array("s_trials_air_combat_spawn"));
+                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_zombie_spawn);
                 }
                 continue;
             }
@@ -282,8 +282,8 @@ function function_4ff0c5fd(e_player) {
                     n_wait_time = 2;
                     var_275162bd = 1;
                 } else if (a_ai_spawned.size < 6) {
-                    var_7c5abe72 = array::random(struct::get_array("s_trials_light_combat_spawn"));
-                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, var_7c5abe72);
+                    s_zombie_spawn = array::random(struct::get_array("s_trials_light_combat_spawn"));
+                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_zombie_spawn);
                 }
                 continue;
             }
@@ -296,8 +296,8 @@ function function_4ff0c5fd(e_player) {
                     continue;
                 }
                 if (a_ai_spawned.size < 5) {
-                    var_7c5abe72 = array::random(struct::get_array("s_trials_death_combat_spawn"));
-                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, var_7c5abe72);
+                    s_zombie_spawn = array::random(struct::get_array("s_trials_death_combat_spawn"));
+                    ai_zombie = zombie_utility::spawn_zombie(array::random(level.zombie_spawners), undefined, s_zombie_spawn);
                 }
             }
         } while (!isdefined(ai_zombie));

@@ -150,9 +150,9 @@ function function_12e09509(localclientnum = 0) {
         var_37b85cb5.angles = (angleclamp180(vectortoangles(trace2[#"normal"])[0] + 90), vectortoangles(trace2[#"normal"])[1], 0);
         var_c1917dbc = var_1a11adab + (var_99803ce, var_6b0817d7, 0);
         var_c0cb8891 = vectorscale(anglestoforward(var_c1917dbc), speed * var_3300383);
-        var_f3267f8 = function_e6ba3ec9(eye_pos, var_c0cb8891, 0);
-        var_618fb067.origin = var_f3267f8[#"position"];
-        var_618fb067.angles = (angleclamp180(vectortoangles(var_f3267f8[#"normal"])[0] + 90), vectortoangles(var_f3267f8[#"normal"])[1], 0);
+        trace3 = function_e6ba3ec9(eye_pos, var_c0cb8891, 0);
+        var_618fb067.origin = trace3[#"position"];
+        var_618fb067.angles = (angleclamp180(vectortoangles(trace3[#"normal"])[0] + 90), vectortoangles(trace3[#"normal"])[1], 0);
     }
 }
 

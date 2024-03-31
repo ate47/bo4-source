@@ -91,7 +91,7 @@ function function_34fc666e() {
 function function_69cdac99() {
     level endon(#"game_ended");
     var_fc58d99c = undefined;
-    var_2f96b0dd = undefined;
+    last_line = undefined;
     var_c7ecf728 = [];
     var_c7ecf728[0] = "vox_cuba_propaganda_radio_0";
     var_c7ecf728[1] = "vox_cuba_propaganda_radio_1";
@@ -125,8 +125,8 @@ function function_69cdac99() {
         do {
             var_fc58d99c = randomintrange(0, 26);
             waitframe(1);
-        } while (var_fc58d99c === var_2f96b0dd);
-        var_2f96b0dd = var_fc58d99c;
+        } while (var_fc58d99c === last_line);
+        last_line = var_fc58d99c;
         if (isdefined(var_c7ecf728[var_fc58d99c])) {
             var_34f4feb8 = var_df74694e;
             if (var_fc58d99c >= 14) {

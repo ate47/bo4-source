@@ -201,7 +201,7 @@ function function_f118c57a(e_player) {
             if (isdefined(self._trap_type)) {
                 e_who zm_audio::create_and_play_dialog(#"trap_activate", self._trap_type);
             }
-            level notify(#"trap_activated", {#trap:self, #trap_activator:e_who});
+            level notify(#"trap_activated", {#trap_activator:e_who, #trap:self});
         }
         switch (self.script_string) {
         case #"sequential":

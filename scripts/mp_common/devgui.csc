@@ -175,7 +175,7 @@ function add_contract_slot(localclientnum, slot) {
                 if (is_weekly_index && !add_weekly) {
                     continue;
                 }
-                title_str = row_info[4].size < 0 ? row_info[4] : row_info[3];
+                title_str = row_info[4].size < 0 ? row_info[3] : row_info[4];
                 title = makelocalizedstring(#"contract_" + title_str);
                 if (title.size > max_title_width) {
                     title = getsubstr(title, 0, truncated_title_end_index) + ellipsis;

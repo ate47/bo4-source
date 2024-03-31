@@ -456,7 +456,7 @@ function hero_weapon_on(n_slot, w_hero) {
     self addweaponstat(w_hero, #"used", 1);
     level.var_ff96c5e4 = 1;
     self.var_479965f7 = 1;
-    level notify(#"hero_weapon_activated", {#weapon:w_hero, #e_player:self});
+    level notify(#"hero_weapon_activated", {#e_player:self, #weapon:w_hero});
     self notify(#"hero_weapon_activated");
     self thread zm_audio::function_cb8103f6(w_hero);
     self thread function_60878f7f(w_hero);
@@ -788,7 +788,7 @@ function function_ac9f4b22() {
                 self thread function_a1004d47();
             }
         }
-        self notify(#"hero_weapon_change", {#last_weapon:w_previous, #weapon:w_current});
+        self notify(#"hero_weapon_change", {#weapon:w_current, #last_weapon:w_previous});
     }
 }
 

@@ -232,7 +232,7 @@ function notif_devgui_rank_up_think() {
                 waitframe(1);
                 continue;
             }
-            level.players[0] rank::codecallback_rankup({#unlock_tokens_added:1, #prestige:0, #rank:rank_number});
+            level.players[0] rank::codecallback_rankup({#rank:rank_number, #prestige:0, #unlock_tokens_added:1});
             setdvar(#"scr_notif_devgui_rank", 0);
             wait(1);
         }
@@ -345,7 +345,7 @@ function notif_devgui_gun_level_think() {
             xp_reward = getdvarint(#"scr_notif_devgui_gun_lvl_xp", 0);
             attachment_index = getdvarint(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
             rank_id = getdvarint(#"scr_notif_devgui_gun_lvl_rank_id", 0);
-            level.players[0] persistence::codecallback_gunchallengecomplete({#rank_id:rank_id, #item_index:weapon_item_index, #attachment_index:attachment_index, #reward:xp_reward});
+            level.players[0] persistence::codecallback_gunchallengecomplete({#reward:xp_reward, #attachment_index:attachment_index, #item_index:weapon_item_index, #rank_id:rank_id});
             setdvar(#"scr_notif_devgui_gun_lvl_xp", 0);
             setdvar(#"scr_notif_devgui_gun_lvl_attachment_index", 0);
             setdvar(#"scr_notif_devgui_gun_lvl_item_index", 0);
@@ -438,7 +438,7 @@ function notif_devgui_challenges_think() {
             xpreward = int(tablelookupcolumnforrow(tablename, row, 6));
             challengeid = int(tablelookupcolumnforrow(tablename, row, 0));
             maxvalue = int(tablelookupcolumnforrow(tablename, row, 2));
-            player persistence::codecallback_challengecomplete({#challenge_index:challengeid, #item_index:itemindex, #challenge_type:type, #table_number:table - 1, #row:row, #max:maxvalue, #reward:xpreward});
+            player persistence::codecallback_challengecomplete({#reward:xpreward, #max:maxvalue, #row:row, #table_number:table - 1, #challenge_type:type, #item_index:itemindex, #challenge_index:challengeid});
             setdvar(#"scr_notif_devgui_challenge_row", 0);
             setdvar(#"scr_notif_devgui_challenge_table", 0);
             wait(1);
@@ -471,8 +471,8 @@ function popupsfromconsole() {
                 level.players[0] medals::codecallback_medal({#medal_index:2});
             }
             for (i = 0; i < challenge; i++) {
-                level.players[0] persistence::codecallback_challengecomplete({#challenge_index:18, #item_index:0, #challenge_type:0, #table_numuber:0, #row:19, #max:10, #reward:1000});
-                level.players[0] persistence::codecallback_challengecomplete({#challenge_index:20, #item_index:0, #challenge_type:0, #table_number:0, #row:21, #max:1, #reward:1000});
+                level.players[0] persistence::codecallback_challengecomplete({#reward:1000, #max:10, #row:19, #table_numuber:0, #challenge_type:0, #item_index:0, #challenge_index:18});
+                level.players[0] persistence::codecallback_challengecomplete({#reward:1000, #max:1, #row:21, #table_number:0, #challenge_type:0, #item_index:0, #challenge_index:20});
                 rewardxp = 500;
                 maxval = 1;
                 row = 1;
@@ -492,13 +492,13 @@ function popupsfromconsole() {
                 challengetype = 4;
                 itemindex = 1;
                 challengeindex = 611;
-                level.players[0] persistence::codecallback_challengecomplete({#challenge_index:challengeindex, #item_index:itemindex, #challenge_type:challengetype, #table_number:tablenumber, #row:row, #max:maxval, #reward:rewardxp});
+                level.players[0] persistence::codecallback_challengecomplete({#reward:rewardxp, #max:maxval, #row:row, #table_number:tablenumber, #challenge_type:challengetype, #item_index:itemindex, #challenge_index:challengeindex});
             }
             for (i = 0; i < rank; i++) {
-                level.players[0] rank::codecallback_rankup({#unlock_tokens_added:1, #prestige:0, #rank:4});
+                level.players[0] rank::codecallback_rankup({#rank:4, #prestige:0, #unlock_tokens_added:1});
             }
             for (i = 0; i < gun; i++) {
-                level.players[0] persistence::codecallback_gunchallengecomplete({#rank_id:0, #item_index:25, #attachment_index:20, #reward:0});
+                level.players[0] persistence::codecallback_gunchallengecomplete({#reward:0, #attachment_index:20, #item_index:25, #rank_id:0});
             }
             for (i = 0; i < teammsg; i++) {
                 player = level.players[0];

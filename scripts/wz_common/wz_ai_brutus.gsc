@@ -316,7 +316,7 @@ function private function_4ec678fe(entity) {
         return;
     }
     monkeybomb = entity.var_722a34a3;
-    level notify(#"hash_79c0225ea09cd215", {#var_569d804d:monkeybomb.angles, #var_cee6bd0b:monkeybomb.origin, #brutus:self});
+    level notify(#"hash_79c0225ea09cd215", {#brutus:self, #var_cee6bd0b:monkeybomb.origin, #var_569d804d:monkeybomb.angles});
     if (isdefined(monkeybomb.damagearea)) {
         monkeybomb.damagearea delete();
     }
@@ -489,12 +489,12 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
 // Size: 0x1dc
 function private getclosestnode(entity, nodes) {
     if (nodes.size > 16) {
-        var_f122ea68 = arraysortclosest(nodes, entity.origin, 16);
+        filtered_nodes = arraysortclosest(nodes, entity.origin, 16);
     } else {
-        var_f122ea68 = nodes;
+        filtered_nodes = nodes;
     }
     origins = [];
-    foreach (node in var_f122ea68) {
+    foreach (node in filtered_nodes) {
         if (!isdefined(origins)) {
             origins = [];
         } else if (!isarray(origins)) {
@@ -505,9 +505,9 @@ function private getclosestnode(entity, nodes) {
     pathdata = generatenavmeshpath(entity.origin, origins, entity);
     if (isdefined(pathdata) && pathdata.status === "succeeded") {
         goalpos = pathdata.pathpoints[pathdata.pathpoints.size - 1];
-        return arraygetclosest(goalpos, var_f122ea68);
+        return arraygetclosest(goalpos, filtered_nodes);
     }
-    return arraygetclosest(entity.origin, var_f122ea68);
+    return arraygetclosest(entity.origin, filtered_nodes);
 }
 
 // Namespace wz_ai_brutus/wz_ai_brutus

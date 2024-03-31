@@ -507,7 +507,7 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin, t
         endoffullfxsq = (i * 150 + 200) * (i * 150 + 200);
         tracedistsq = distancesquared(origin, trace[#"position"]);
         startfx = tracedistsq >= endofhalffxsq || i == 0;
-        fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave_sm" : "weapon/fx8_equip_smart_cover_microwave";
+        fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave" : "weapon/fx8_equip_smart_cover_microwave_sm";
         switch (i) {
         case 0:
             self play_fx_on_tag(localclientnum, fxname, "tag_fx11", team);
@@ -527,7 +527,7 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin, t
         }
         tracedistsq = distancesquared(origin, traceleft[#"position"]);
         startfx = tracedistsq >= endofhalffxsq;
-        fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave_sm" : "weapon/fx8_equip_smart_cover_microwave";
+        fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave" : "weapon/fx8_equip_smart_cover_microwave_sm";
         switch (i) {
         case 0:
             break;
@@ -547,7 +547,7 @@ function playmicrowavefx(localclientnum, trace, traceright, traceleft, origin, t
         }
         tracedistsq = distancesquared(origin, traceright[#"position"]);
         startfx = tracedistsq >= endofhalffxsq;
-        fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave_sm" : "weapon/fx8_equip_smart_cover_microwave";
+        fxname = tracedistsq > endoffullfxsq ? "weapon/fx8_equip_smart_cover_microwave" : "weapon/fx8_equip_smart_cover_microwave_sm";
         switch (i) {
         case 0:
             break;

@@ -876,7 +876,7 @@ function set_ai_group_cleared_flag(tracker) {
 // Size: 0x24
 function trigger_requires_player(trigger) {
     if (!isdefined(trigger)) {
-        return 0;
+        return false;
     }
     return isdefined(trigger.script_requires_player);
 }
