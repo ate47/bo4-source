@@ -3,7 +3,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#hash_351254cd4fc93d6e",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "tomahawk_t8_wz_item_pandemic",
     "stackcount": 2,
     "icon": "#ui_icon_inventory_tomahawk",
@@ -12,6 +12,6 @@
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#ui_icon_inventory_tomahawk",
     "stackable": 1,
-    "var_50773731": 0.75,
+    "positionoffsetz": 0.75,
     "itemtype": "equipment"
 }

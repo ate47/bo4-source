@@ -44,8 +44,8 @@ function function_d95e620c() {
 // Checksum 0x4613421f, Offset: 0x2d8
 // Size: 0x54
 function private function_f5a58e15() {
-    var_a6762160 = getscriptbundle(#"annihilator_wz_item");
-    if (isdefined(var_a6762160)) {
+    itementry = getscriptbundle(#"annihilator_wz_item");
+    if (isdefined(itementry)) {
         item_world_fixup::function_96ff7b88(#"annihilator_wz_item");
     }
 }

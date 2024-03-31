@@ -145,7 +145,7 @@
     "var_ad038bf4": "#hash_301d068f12af5636",
     "vmtype": "both",
     "name": "activecamoinfo_t8_objective_kills_zm",
-    "var_26c1d493": 1,
+    "istimer": 1,
     "revealstring": "#hash_7645db46e9fdd615",
     "istiered": 1
 }

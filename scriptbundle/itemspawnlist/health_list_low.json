@@ -2,20 +2,20 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "health_item_small",
+            "itementry": "health_item_small",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 400,
-            "var_a6762160": "health_item_small",
+            "itementry": "health_item_small",
             "var_3f8c08e3": "health_item_small",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "health_item_small",
+            "itementry": "health_item_small",
             "var_8261a18": "health_item_small",
             "var_3f8c08e3": "health_item_small",
             "maxweight": 100,

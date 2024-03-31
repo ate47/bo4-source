@@ -7,9 +7,9 @@
     "type": "gamesettings",
     "name": "enemy_carrier_visible",
     "displayname": "#hash_1094bfda4b223c96",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "label1": "#hash_94eb0e3329edf5f",
     "var_71b6e020": "#menu/delayed",
-    "var_bd2ff709": "#menu/enabled",
+    "label2": "#menu/enabled",
     "var_9de86f42": 3,
     "setting": "enemyCarrierVisible"
 }

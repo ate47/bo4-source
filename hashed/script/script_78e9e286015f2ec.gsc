@@ -206,7 +206,7 @@ function function_f359c8a0(s_key, e_player) {
         level.var_18f1ca6e function_b2fba7f5();
         level.var_18f1ca6e thread function_a196c54b();
         level.var_18f1ca6e thread function_450060dd();
-        level.var_18f1ca6e.var_64318fbb = 0;
+        level.var_18f1ca6e.is_idling = 0;
         break;
     case #"enter":
         if (level.var_f13364b4.var_b1e1ac14 < 4) {
@@ -246,7 +246,7 @@ function reset_computer(n_delay = 1) {
     wait(n_delay);
     level.var_18f1ca6e notify(#"hash_23cb7679bd15f5aa");
     reset_code();
-    level.var_18f1ca6e.var_64318fbb = 1;
+    level.var_18f1ca6e.is_idling = 1;
 }
 
 // Namespace namespace_7d8e6ec3/namespace_7d8e6ec3
@@ -1258,9 +1258,9 @@ function function_450060dd() {
 // Size: 0xb0
 function function_cafaeead() {
     self endon(#"end_game");
-    self.var_64318fbb = 0;
+    self.is_idling = 0;
     while (true) {
-        if (self.var_64318fbb && !(isdefined(self.var_1549a0a5) && self.var_1549a0a5)) {
+        if (self.is_idling && !(isdefined(self.var_1549a0a5) && self.var_1549a0a5)) {
             if (!level.countdown_clock.var_4cdc88ae && level.var_f13364b4.var_b1e1ac14 == 0) {
                 level.var_18f1ca6e thread function_67621880();
             }

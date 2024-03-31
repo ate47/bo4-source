@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 180,
-            "var_a6762160": "wz_waterballoon",
+            "itementry": "wz_waterballoon",
             "maxweight": 200,
             "available": -1
         }

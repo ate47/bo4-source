@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 10,
-            "var_a6762160": "melee_bowie_t8_item",
+            "itementry": "melee_bowie_t8_item",
             "maxweight": 10,
             "available": -1
         }

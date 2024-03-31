@@ -6,15 +6,15 @@
 // Checksum 0x12b2f9ef, Offset: 0x90
 // Size: 0x10e
 function function_755c26d1() {
-    level.var_1a7a3f05 = spawnstruct();
+    level.lanedata = spawnstruct();
     i = 0;
-    level.var_1a7a3f05.var_23e0aef1 = [];
+    level.lanedata.var_23e0aef1 = [];
     for (var_23e0aef1 = getentarray("vol_tregion_lane_" + i, "targetname"); isdefined(var_23e0aef1) && isarray(var_23e0aef1) && var_23e0aef1.size > 0; var_23e0aef1 = getentarray("vol_tregion_lane_" + i, "targetname")) {
-        level.var_1a7a3f05.var_23e0aef1[i] = var_23e0aef1;
+        level.lanedata.var_23e0aef1[i] = var_23e0aef1;
         waitframe(1);
         i++;
     }
-    level.var_1a7a3f05.var_7c70464e = i;
+    level.lanedata.numlanes = i;
 }
 
 // Namespace region_utility/region_utility
@@ -22,10 +22,10 @@ function function_755c26d1() {
 // Checksum 0x65867a6a, Offset: 0x1a8
 // Size: 0x46
 function function_9fe18733() {
-    if (!isdefined(level.var_1a7a3f05) || !isdefined(level.var_1a7a3f05.var_7c70464e)) {
+    if (!isdefined(level.lanedata) || !isdefined(level.lanedata.numlanes)) {
         return 0;
     }
-    return level.var_1a7a3f05.var_7c70464e;
+    return level.lanedata.numlanes;
 }
 
 // Namespace region_utility/region_utility
@@ -69,7 +69,7 @@ function private function_871ecf05() {
 // Checksum 0xf81adc8b, Offset: 0x390
 // Size: 0x24
 function private function_8373f930(lanenum) {
-    return level.var_1a7a3f05.var_23e0aef1[lanenum];
+    return level.lanedata.var_23e0aef1[lanenum];
 }
 
 // Namespace region_utility/region_utility

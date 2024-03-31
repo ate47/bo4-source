@@ -13,7 +13,7 @@ struct root {
     float baseweight0;
     float baseweight1;
     float baseweight2;
-    int32 hash_34c89c99b7d0a3b3;
+    int32 spawnpointid;
     client_header client;
     float weight;
 };

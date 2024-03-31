@@ -6,7 +6,7 @@
     "weapon": "weapon#smg_fastfire_t8_wz",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "smg_fastfire_t8_item",
@@ -19,6 +19,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#ui_icon_weapon_hud_smg_fastfire",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

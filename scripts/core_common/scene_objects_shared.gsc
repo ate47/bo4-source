@@ -1580,7 +1580,7 @@ class csceneobject {
         flagsys::set(self._str_shot + "active");
         spawn();
         function_f0e3e344();
-        if (isdefined(self.var_55b4f21e.var_51093f2d) && self.var_55b4f21e.var_51093f2d) {
+        if (isdefined(self.var_55b4f21e.disableshot) && self.var_55b4f21e.disableshot) {
             waitframe(1);
         } else if (function_5c2a9efa()) {
             function_ee94f77();

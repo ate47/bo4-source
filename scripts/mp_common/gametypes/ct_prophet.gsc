@@ -256,7 +256,7 @@ function function_671e5ede() {
         a_bots = ct_bots::function_fbe3dcbb();
         foreach (bot in a_bots) {
             if (bot.team == #"axis") {
-                if (isdefined(bot.var_5a8f690) && bot.var_5a8f690) {
+                if (isdefined(bot.canseeplayer) && bot.canseeplayer) {
                     var_2f41d654 = 0;
                     break;
                 }

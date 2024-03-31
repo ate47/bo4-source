@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "trophy_system_wz_item",
+            "itementry": "trophy_system_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "trip_wire_wz_item",
+            "itementry": "trip_wire_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "recon_car_wz_item",
+            "itementry": "recon_car_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "barricade_wz_item",
+            "itementry": "barricade_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "grapple_wz_item",
+            "itementry": "grapple_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "emp_grenade_wz_item",
+            "itementry": "emp_grenade_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "hawk_wz_item",
+            "itementry": "hawk_wz_item",
             "maxweight": 50,
             "available": -1
         }

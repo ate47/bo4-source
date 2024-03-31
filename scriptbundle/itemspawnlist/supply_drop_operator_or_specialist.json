@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_operator_mod_weapons",
+            "itementry": "supply_stash_operator_mod_weapons",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_specialist_weapons",
+            "itementry": "supply_stash_specialist_weapons",
             "maxweight": 50,
             "available": 1
         }

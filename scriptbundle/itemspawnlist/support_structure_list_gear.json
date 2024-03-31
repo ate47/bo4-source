@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "gear_list_good",
+            "itementry": "gear_list_good",
             "maxweight": 2,
             "available": -1
         },
         {
             "minweight": 20,
-            "var_a6762160": "gear_list_med",
+            "itementry": "gear_list_med",
             "maxweight": 20,
             "available": -1
         },
         {
             "minweight": 55,
-            "var_a6762160": "gear_list_low",
+            "itementry": "gear_list_low",
             "maxweight": 55,
             "available": -1
         }

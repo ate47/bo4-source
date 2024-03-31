@@ -932,7 +932,7 @@ function function_9cc59537() {
                         var_c5330f11 = 32;
                         v_color = (1, 0, 1);
                         if (isdefined(var_b91441dd.itemlist[0])) {
-                            if (var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>") {
+                            if (var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>") {
                                 v_color = (1, 1, 0);
                                 var_47748885 = 4;
                                 var_c5330f11 = 4;
@@ -955,8 +955,8 @@ function function_9cc59537() {
                                 var_abc7e003 = arraysortclosest(var_abc7e003, point.origin, 10, var_47748885);
                                 foreach (item_type in var_b91441dd.itemlist) {
                                     foreach (var_d76a7255 in var_abc7e003) {
-                                        if (item_type.var_a6762160 === var_d76a7255.var_a6762160.name && var_d76a7255.var_a6762160.name === items[0].var_a6762160.name) {
-                                            print3d(point.origin + vectorscale((0, 0, 1), 18), item_type.var_a6762160 + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
+                                        if (item_type.itementry === var_d76a7255.itementry.name && var_d76a7255.itementry.name === items[0].itementry.name) {
+                                            print3d(point.origin + vectorscale((0, 0, 1), 18), item_type.itementry + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
                                             line(var_d76a7255.origin, point.origin, (1, 0.5, 0), 1, 0, 8);
                                         }
                                     }
@@ -1418,7 +1418,7 @@ function function_2e72f24d(tracepoint, weapon) {
         distance = 0;
         var_57b06497 = 3000;
         var_71c007dd = weapon.var_deb0b2fe;
-        var_60f853d9 = weapon.var_2d276877[0];
+        var_60f853d9 = weapon.damagevalues[0];
         var_a41a6d87 = weapon.var_bbc8dbc;
         var_97ed9e7a = weapon.var_f06a2fee;
         var_b62fd725 = weapon.var_a1252254;
@@ -1453,7 +1453,7 @@ function function_c21a7f52(tracepoint, weapon, color, mp) {
         if (!isdefined(mp)) {
             mp = 1;
         }
-        var_1e9ad3cb = weapon.var_2d276877;
+        var_1e9ad3cb = weapon.damagevalues;
         var_eb5812b5 = weapon.var_6aac6921;
         for (i = 0; i < var_1e9ad3cb.size; i++) {
             if (var_1e9ad3cb[i] == 0) {

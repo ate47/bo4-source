@@ -27,7 +27,7 @@
 // Params 1, eflags: 0x0
 // Checksum 0x49f5ea8b, Offset: 0x760
 // Size: 0x5cc
-function init_shared(var_fc96f513) {
+function init_shared(bundle_name) {
     if (!isdefined(level.helicopter_shared)) {
         level.helicopter_shared = {};
         airsupport::init_shared();
@@ -64,7 +64,7 @@ function init_shared(var_fc96f513) {
         level.chopper_fx[#"fire"][#"trail"][#"large"] = "killstreaks/fx_heli_smk_trail_engine";
         level._effect[#"heli_comlink_light"][#"friendly"] = #"hash_33eb8912b6c63ecd";
         level._effect[#"heli_comlink_light"][#"enemy"] = #"hash_33eb8912b6c63ecd";
-        bundle = struct::get_script_bundle("killstreak", var_fc96f513);
+        bundle = struct::get_script_bundle("killstreak", bundle_name);
         killstreaks::register_bundle(bundle, &usekillstreakhelicopter);
         killstreaks::set_team_kill_penalty_scale("helicopter_comlink", 0);
         level.killstreakbundle[#"helicopter_comlink"] = bundle;

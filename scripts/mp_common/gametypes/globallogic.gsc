@@ -1088,8 +1088,8 @@ function matchstarttimer() {
             var_b9ef7eae = [];
             foreach (player in level.players) {
                 shouldplaysound = 1;
-                for (var_3c0cc784 = 0; var_3c0cc784 < var_b9ef7eae.size; var_3c0cc784++) {
-                    if (player isplayeronsamemachine(var_b9ef7eae[var_3c0cc784])) {
+                for (playeridx = 0; playeridx < var_b9ef7eae.size; playeridx++) {
+                    if (player isplayeronsamemachine(var_b9ef7eae[playeridx])) {
                         shouldplaysound = 0;
                     }
                 }
@@ -2028,24 +2028,24 @@ function private function_159d7b6f() {
         if (!isdefined(summary[item.targetname])) {
             summary[item.targetname] = {};
         }
-        if (isdefined(item.var_a6762160)) {
+        if (isdefined(item.itementry)) {
             if (!isdefined(summary[item.targetname].itemtypes)) {
                 summary[item.targetname].itemtypes = [];
             }
-            if (!isdefined(summary[item.targetname].itemtypes[item.var_a6762160.itemtype])) {
-                summary[item.targetname].itemtypes[item.var_a6762160.itemtype] = {};
+            if (!isdefined(summary[item.targetname].itemtypes[item.itementry.itemtype])) {
+                summary[item.targetname].itemtypes[item.itementry.itemtype] = {};
             }
-            if (!isdefined(summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items)) {
-                summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items = [];
+            if (!isdefined(summary[item.targetname].itemtypes[item.itementry.itemtype].items)) {
+                summary[item.targetname].itemtypes[item.itementry.itemtype].items = [];
             }
-            if (!isdefined(summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name])) {
-                summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name] = {};
+            if (!isdefined(summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name])) {
+                summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name] = {};
             }
-            if (!isdefined(summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name].count)) {
-                summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name].count = 0;
+            if (!isdefined(summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name].count)) {
+                summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name].count = 0;
             }
-            summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name].count = summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name].count + 1;
-            summary[item.targetname].itemtypes[item.var_a6762160.itemtype].items[item.var_a6762160.name].rarity = hash(item.var_a6762160.rarity);
+            summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name].count = summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name].count + 1;
+            summary[item.targetname].itemtypes[item.itementry.itemtype].items[item.itementry.name].rarity = hash(item.itementry.rarity);
         } else {
             if (!isdefined(var_69cbb8c[item.targetname])) {
                 var_69cbb8c[item.targetname] = {};

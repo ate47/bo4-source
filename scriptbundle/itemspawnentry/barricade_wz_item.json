@@ -4,7 +4,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#hash_447b6679cfaec851",
     "type": "itemspawnentry",
-    "var_e6ac0592": 180,
+    "angleoffsetz": 180,
     "name": "barricade_wz_item",
     "displayname": "#hash_3cf5343acd975b86",
     "stackcount": 1,
@@ -13,6 +13,6 @@
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#ui_icon_gadget_smart_cover_mp",
-    "var_50773731": 3.5,
+    "positionoffsetz": 3.5,
     "itemtype": "equipment"
 }

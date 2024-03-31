@@ -328,7 +328,7 @@ struct hash_656bfcb3838e2907 {
     uint32 prvxp;
     short score;
     short revives;
-    short hash_4acf195b0eb09697;
+    short currank;
     short deaths;
     short medals[3];
     short assists;
@@ -689,7 +689,7 @@ struct hash_656bfcb3838e2907 {
     uint32 prvxp;
     short score;
     short revives;
-    short hash_4acf195b0eb09697;
+    short currank;
     short deaths;
     short medals[3];
     short assists;
@@ -1050,7 +1050,7 @@ struct hash_656bfcb3838e2907 {
     uint32 prvxp;
     short score;
     short revives;
-    short hash_4acf195b0eb09697;
+    short currank;
     short deaths;
     short medals[3];
     short assists;
@@ -1411,7 +1411,7 @@ struct hash_656bfcb3838e2907 {
     uint32 prvxp;
     short score;
     short revives;
-    short hash_4acf195b0eb09697;
+    short currank;
     short deaths;
     short medals[3];
     short assists;

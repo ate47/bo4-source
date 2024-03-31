@@ -7,9 +7,9 @@
     "type": "gamesettings",
     "name": "allow_hit_markers",
     "displayname": "#hash_604f112b14b5ad14",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "label1": "#hash_94eb0e3329edf5f",
     "var_71b6e020": "#menu/enabled",
-    "var_bd2ff709": "#hash_24e72113c6573be9",
+    "label2": "#hash_24e72113c6573be9",
     "var_9de86f42": 3,
     "setting": "allowhitmarkers"
 }

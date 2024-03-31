@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "warmachine_wz_item",
+            "itementry": "warmachine_wz_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "annihilator_wz_item",
+            "itementry": "annihilator_wz_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "flamethrower_wz_item",
+            "itementry": "flamethrower_wz_item",
             "maxweight": 1,
             "available": -1
         }

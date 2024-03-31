@@ -25,9 +25,9 @@ function private __init__() {
 // Checksum 0xea6b1513, Offset: 0x428
 // Size: 0x4d4
 function private registerclientfields() {
-    var_8432cf74 = getscriptbundlelist("bounty_hunter_package_list");
-    if (isdefined(var_8432cf74)) {
-        var_2b5b08bd = int(ceil(log2(var_8432cf74.size + 1)));
+    packagelist = getscriptbundlelist("bounty_hunter_package_list");
+    if (isdefined(packagelist)) {
+        var_2b5b08bd = int(ceil(log2(packagelist.size + 1)));
         var_ff35ecd8 = getgametypesetting(#"bountybagomoneymoney");
         level.var_16fd9420 = getgametypesetting(#"hash_63f8d60d122e755b");
         if (level.var_16fd9420 > 0) {

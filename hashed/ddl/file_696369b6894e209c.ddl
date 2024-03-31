@@ -6,7 +6,7 @@ struct root {
     short yaw;
     match_header match;
     telemetry_header telemetry;
-    int32 hash_34c89c99b7d0a3b3;
+    int32 spawnpointid;
     client_header client;
     float hash_12d684491db40139;
     float hash_66e41e72ea58b526;

@@ -14,7 +14,7 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "idle_flag_reset_time",
     "displayname": "#hash_8fc7a08b3a2f1f8",
-    "var_9600a8ab": "#hash_52b38f6fb98e8982",
+    "label1": "#hash_52b38f6fb98e8982",
     "var_9de86f42": 9,
     "setting": "idleFlagResetTime"
 }

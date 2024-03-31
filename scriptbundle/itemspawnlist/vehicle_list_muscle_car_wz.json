@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_black",
+            "itementry": "muscle_car_wz_vehicle_black",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_blue",
+            "itementry": "muscle_car_wz_vehicle_blue",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_green",
+            "itementry": "muscle_car_wz_vehicle_green",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_orange",
+            "itementry": "muscle_car_wz_vehicle_orange",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_red",
+            "itementry": "muscle_car_wz_vehicle_red",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_white",
+            "itementry": "muscle_car_wz_vehicle_white",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_yellow",
+            "itementry": "muscle_car_wz_vehicle_yellow",
             "maxweight": 6,
             "available": -1
         }

@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "fav_wz_vehicle_blk",
+            "itementry": "fav_wz_vehicle_blk",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "fav_wz_vehicle_grn",
+            "itementry": "fav_wz_vehicle_grn",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "fav_wz_vehicle_tan",
+            "itementry": "fav_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         }

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "wind_turbine_list_items_dlc1",
+            "itementry": "wind_turbine_list_items_dlc1",
             "maxweight": 500,
             "available": -1
         },

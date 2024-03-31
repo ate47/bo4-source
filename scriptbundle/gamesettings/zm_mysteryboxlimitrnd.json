@@ -55,8 +55,8 @@
     "label": "#hash_1c007412dfa8ef16",
     "name": "zm_mysteryboxlimitrnd",
     "displayname": "#hash_48577cac50dce3e0",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
-    "var_bd2ff709": "#hash_14367c59efc08f6e",
+    "label1": "#hash_68b65fb510ccd214",
+    "label2": "#hash_14367c59efc08f6e",
     "var_9de86f42": 11,
     "setting": "zmMysteryBoxLimitRound"
 }

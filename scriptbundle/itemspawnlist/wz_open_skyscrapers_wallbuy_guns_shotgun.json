@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "shotgun_pump_t8_wallbuy_item",
+            "itementry": "shotgun_pump_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "shotgun_semiauto_t8_wallbuy_item",
+            "itementry": "shotgun_semiauto_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         }

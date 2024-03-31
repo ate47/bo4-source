@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "sniper_mini14_t8_item",
+            "itementry": "sniper_mini14_t8_item",
             "var_8261a18": "ammo_type_556_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 100,
@@ -10,28 +10,28 @@
         },
         {
             "minweight": 100,
-            "var_a6762160": "shotgun_fullauto_t8_item",
+            "itementry": "shotgun_fullauto_t8_item",
             "var_3f8c08e3": "ammo_type_12ga_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_folding_t8_item",
+            "itementry": "smg_folding_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "pistol_fullauto_t8_item",
+            "itementry": "pistol_fullauto_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "lmg_stealth_t8_item",
+            "itementry": "lmg_stealth_t8_item",
             "var_8261a18": "ammo_type_556_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 1

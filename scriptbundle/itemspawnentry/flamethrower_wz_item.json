@@ -6,13 +6,13 @@
     "var_3e688854": -2,
     "weapon": "weapon#hero_flamethrower_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "flamethrower_wz_item",
     "icon": "#ui_icon_weapon_flamethrower_render",
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#ui_icon_weapon_hud_hero_purifier",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

@@ -176,7 +176,7 @@ function on_time_limit() {
 // Size: 0x64
 function on_spawn_player(predictedspawn) {
     spawning::onspawnplayer(predictedspawn);
-    self.var_c1647e26 = undefined;
+    self.currentzoneindex = undefined;
     if (level.numlives > 0) {
         clientfield::set_player_uimodel("hudItems.playerLivesCount", game.lives[self.team]);
     }
@@ -316,9 +316,9 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
 // Checksum 0x4ba49a38, Offset: 0x1d58
 // Size: 0x214
 function on_player_killed(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
-    if (isdefined(self) && isdefined(self.var_c1647e26)) {
+    if (isdefined(self) && isdefined(self.currentzoneindex)) {
         bb::function_95a5b5c2("exited_control_point_death", self.zoneindex, self.team, self.origin, self);
-        self.var_c1647e26 = undefined;
+        self.currentzoneindex = undefined;
         self notify(#"hash_68e3332f714afbbc");
     }
     if (!isdefined(self) || !isdefined(attacker) || !isplayer(attacker)) {
@@ -947,7 +947,7 @@ function private on_touch_use(sentient) {
         }
         bb::function_95a5b5c2("entered_control_point", self.zoneindex, sentient.team, sentient.origin, sentient);
         self notify(#"hash_68e3332f714afbbc");
-        sentient.var_c1647e26 = self.zoneindex;
+        sentient.currentzoneindex = self.zoneindex;
         sentient thread player_use_loop(self);
     }
     self checkifshouldupdatestatusplayback(sentient);
@@ -969,7 +969,7 @@ function private function_88acffae(sentient) {
         return;
     }
     bb::function_95a5b5c2("exited_control_point_default", self.zoneindex, sentient.team, sentient.origin, sentient);
-    sentient.var_c1647e26 = undefined;
+    sentient.currentzoneindex = undefined;
 }
 
 // Namespace mission_koth/control
@@ -1218,7 +1218,7 @@ function private function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, captureti
                 break;
             }
         }
-        function_5a9598f0(player, string, capturetime, capture_team, lastcaptureteam, var_a84f97bf, var_af8f6146);
+        credit_player(player, string, capturetime, capture_team, lastcaptureteam, var_a84f97bf, var_af8f6146);
     }
     self gameobjects::function_98aae7cf();
 }
@@ -1233,7 +1233,7 @@ function private give_capture_credit(touchlist, string, capturetime, capture_tea
         if (!isdefined(player)) {
             continue;
         }
-        function_5a9598f0(player, string, capturetime, capture_team, lastcaptureteam, 0, 1);
+        credit_player(player, string, capturetime, capture_team, lastcaptureteam, 0, 1);
     }
 }
 
@@ -1241,7 +1241,7 @@ function private give_capture_credit(touchlist, string, capturetime, capture_tea
 // Params 7, eflags: 0x4
 // Checksum 0xfb042b23, Offset: 0x5850
 // Size: 0x374
-function private function_5a9598f0(player, string, capturetime, capture_team, lastcaptureteam, var_a84f97bf, var_af8f6146) {
+function private credit_player(player, string, capturetime, capture_team, lastcaptureteam, var_a84f97bf, var_af8f6146) {
     player update_caps_per_minute(lastcaptureteam);
     if (!is_score_boosting(player)) {
         player challenges::capturedobjective(capturetime, self.trigger);

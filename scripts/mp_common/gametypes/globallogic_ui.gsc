@@ -101,11 +101,11 @@ function freegameplayhudelems() {
 // Params 2, eflags: 0x4
 // Checksum 0x8b3ac9cb, Offset: 0x4f8
 // Size: 0xc6
-function private function_34a60b2f(original_team, var_5002c793) {
-    if (!isdefined(original_team) || original_team == #"spectator" || !isdefined(var_5002c793)) {
+function private function_34a60b2f(original_team, new_team) {
+    if (!isdefined(original_team) || original_team == #"spectator" || !isdefined(new_team)) {
         return;
     }
-    if (game.everexisted[original_team] && !game.everexisted[var_5002c793] && level.playerlives[original_team]) {
+    if (game.everexisted[original_team] && !game.everexisted[new_team] && level.playerlives[original_team]) {
         game.everexisted[original_team] = 0;
         level.everexisted[original_team] = 0;
         level.teameliminated[original_team] = 0;

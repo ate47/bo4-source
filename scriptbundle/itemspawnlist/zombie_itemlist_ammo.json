@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 10,
-            "var_a6762160": "zombie_itemlist",
+            "itementry": "zombie_itemlist",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 20,
-            "var_a6762160": "zombie_itemlist_ammo_list",
+            "itementry": "zombie_itemlist_ammo_list",
             "maxweight": 20,
             "available": 1
         }

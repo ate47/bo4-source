@@ -2072,7 +2072,7 @@ function function_4c903aa5() {
             str_letter = "c";
             break;
         }
-        var_69836136 = "alchemical_symbol_" + str_letter + "_";
+        str_prefix = "alchemical_symbol_" + str_letter + "_";
         v_angles_original = mdl_ring.angles;
         while (true) {
             mdl_ring.angles = v_angles_original;
@@ -2084,8 +2084,8 @@ function function_4c903aa5() {
             s_prophecy.var_48474ec7 clientfield::set("" + #"hash_22acf133b0aa208a", 1);
             n_symbol = array::random(var_3ab52107);
             for (i = 1; i <= 8; i++) {
-                str_on = var_69836136 + i + "_on_jnt";
-                str_off = var_69836136 + i + "_off_jnt";
+                str_on = str_prefix + i + "_on_jnt";
+                str_off = str_prefix + i + "_off_jnt";
                 if (i == n_symbol) {
                     mdl_ring showpart(str_on);
                     mdl_ring hidepart(str_off);

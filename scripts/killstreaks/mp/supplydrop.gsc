@@ -1387,7 +1387,7 @@ function dropcrate(origin, angle, killstreak, owner, team, killcament, killstrea
         angles = crate_.angles;
         crate_ thread waitanddelete(0.1);
     }
-    if (isdefined(context.var_d6388d1) && context.var_d6388d1) {
+    if (isdefined(context.vehicledrop) && context.vehicledrop) {
         context.vehicle = spawnvehicle(#"archetype_mini_quadtank_mp", origin, angles, "talon", undefined, 1, self);
     }
     crate = cratespawn(killstreak, killstreak_id, owner, team, origin, angles);
@@ -1402,7 +1402,7 @@ function dropcrate(origin, angle, killstreak, owner, team, killcament, killstrea
         [[ level.var_14151f16 ]](crate, 0);
     }
     crate endon(#"death");
-    if (!(isdefined(context.var_d6388d1) && context.var_d6388d1)) {
+    if (!(isdefined(context.vehicledrop) && context.vehicledrop)) {
         crate cratetimeoutthreader();
     }
     mask = 1;
@@ -1818,7 +1818,7 @@ function spawnuseent(player) {
     useent.userate = 0;
     useent.usetime = 0;
     useent.owner = self;
-    useent.var_c56ec411 = player;
+    useent.capturingplayer = player;
     useent thread useentownerdeathwaiter(self);
     return useent;
 }
@@ -2007,7 +2007,7 @@ function crategamblerthink() {
             continue;
         }
         if (isdefined(self.useent) && self.useent.inuse) {
-            if (isdefined(self.owner) && self.owner != player && isdefined(self.useent.var_c56ec411) && self.useent.var_c56ec411 != player) {
+            if (isdefined(self.owner) && self.owner != player && isdefined(self.useent.capturingplayer) && self.useent.capturingplayer != player) {
                 continue;
             }
         }

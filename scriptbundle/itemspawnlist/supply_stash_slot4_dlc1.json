@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "grapple_wz_item",
+            "itementry": "grapple_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "barricade_wz_item",
+            "itementry": "barricade_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "cluster_semtex_wz_item",
+            "itementry": "cluster_semtex_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "trophy_system_wz_item",
+            "itementry": "trophy_system_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "perk_item_awareness",
+            "itementry": "perk_item_awareness",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "ammo_type_50cal_item",
+            "itementry": "ammo_type_50cal_item",
             "maxweight": 50,
             "available": 1
         },

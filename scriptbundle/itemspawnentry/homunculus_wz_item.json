@@ -12,6 +12,6 @@
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#ui_icon_inventory_homunculus",
     "stackable": 1,
-    "var_50773731": 6,
+    "positionoffsetz": 6,
     "itemtype": "equipment"
 }

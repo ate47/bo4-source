@@ -47,7 +47,7 @@
     "var_e8b98a8a": "#hash_31b5340e9a1b398c",
     "weapon": "weapon#ww_blundergat_t8_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "blundergat_wz_item",
     "displayname": "#hash_7acfa1a35ed86e41",
     "icon": "#hash_6492d731da11b0af",
@@ -55,6 +55,6 @@
     "rarity": "None",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#hash_6a956df533db8718",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

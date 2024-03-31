@@ -27,7 +27,7 @@
     "weapon": "weapon#tr_powersemi_t8_operator_wz",
     "type": "itemspawnentry",
     "var_7a80f06e": 1,
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
     "name": "tr_powersemi_t8_operator_item",
@@ -44,7 +44,7 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_2511a9025f1825",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "var_9f307988": 1,
     "itemtype": "weapon"
 }

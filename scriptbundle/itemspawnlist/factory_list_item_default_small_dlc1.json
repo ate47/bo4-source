@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "factory_list_items_small",
+            "itementry": "factory_list_items_small",
             "maxweight": 50,
             "available": -1
         },

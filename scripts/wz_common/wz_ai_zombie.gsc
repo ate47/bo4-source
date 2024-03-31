@@ -717,7 +717,7 @@ function function_9c573bc6() {
     if (isdefined(self.allowoffnavmesh) && self.allowoffnavmesh && isdefined(level.var_5e8121a) && level.var_5e8121a && isdefined(self.var_35eedf58) && self.var_35eedf58) {
         self.var_ef59b90 = 5;
         return;
-    } else if (self.aistate === 3 && isdefined(self.var_5a8f690) && self.var_5a8f690) {
+    } else if (self.aistate === 3 && isdefined(self.canseeplayer) && self.canseeplayer) {
         if (isdefined(self.favoriteenemy) && isdefined(self.var_de6e22f7) && self.var_de6e22f7 && !self.var_13138acf) {
             self.var_ef59b90 = 6;
             return;

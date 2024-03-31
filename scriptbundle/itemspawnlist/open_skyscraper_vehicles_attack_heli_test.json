@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_attack_heli_wz",
+            "itementry": "vehicle_list_attack_heli_wz",
             "maxweight": 1,
             "available": 10
         },
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_heli_wz",
+            "itementry": "vehicle_list_heli_wz",
             "maxweight": 1,
             "available": 1
         },

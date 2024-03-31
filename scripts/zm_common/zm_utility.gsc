@@ -666,7 +666,7 @@ function create_zombie_point_of_interest_attractor_positions(var_b09c2334 = 15, 
     if (queryresult.data.size < self.num_poi_attracts) {
         self.num_poi_attracts = queryresult.data.size;
     }
-    var_6b998daf = 0;
+    position_index = 0;
     for (i = 0; i < queryresult.data.size; i++) {
         if (!tracepassedonnavmesh(var_7162cf15, queryresult.data[i].origin, 15)) {
             /#
@@ -680,8 +680,8 @@ function create_zombie_point_of_interest_attractor_positions(var_b09c2334 = 15, 
         if (isdefined(level.validate_poi_attractors) && level.validate_poi_attractors) {
             passed = bullettracepassed(queryresult.data[i].origin + vectorscale((0, 0, 1), 24), self.origin + vectorscale((0, 0, 1), 24), 0, self);
             if (passed) {
-                self.attractor_positions[var_6b998daf] = queryresult.data[i].origin;
-                var_6b998daf++;
+                self.attractor_positions[position_index] = queryresult.data[i].origin;
+                position_index++;
             } else {
                 /#
                     if (isdefined(level.var_565d6ce0) && level.var_565d6ce0) {
@@ -692,19 +692,19 @@ function create_zombie_point_of_interest_attractor_positions(var_b09c2334 = 15, 
             }
         } else if (isdefined(self.var_abfcb0d9) && self.var_abfcb0d9) {
             if (check_point_in_enabled_zone(queryresult.data[i].origin) && check_point_in_playable_area(queryresult.data[i].origin)) {
-                self.attractor_positions[var_6b998daf] = queryresult.data[i].origin;
-                var_6b998daf++;
+                self.attractor_positions[position_index] = queryresult.data[i].origin;
+                position_index++;
             }
         } else {
-            self.attractor_positions[var_6b998daf] = queryresult.data[i].origin;
-            var_6b998daf++;
+            self.attractor_positions[position_index] = queryresult.data[i].origin;
+            position_index++;
             /#
                 if (isdefined(level.var_565d6ce0) && level.var_565d6ce0) {
                     recordstar(queryresult.data[i].origin, (0, 1, 0));
                 }
             #/
         }
-        if (self.num_poi_attracts == var_6b998daf) {
+        if (self.num_poi_attracts == position_index) {
             break;
         }
     }

@@ -700,8 +700,8 @@ function function_7536db69() {
     level.var_72c3ea74 = struct::get_array("s_prophet_tempest_soldier_loc_1", "targetname");
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
-    var_18483335 = level.var_a5ff950.var_3ee2edfa;
-    level.var_a5ff950.var_3ee2edfa = 10000;
+    var_18483335 = level.var_a5ff950.shockduration;
+    level.var_a5ff950.shockduration = 10000;
     level notify(#"colbounds_tempest1_nobacktrack_off");
     level notify(#"colbounds_seeker3_noclimbs_off");
     self ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_tempest_0"));
@@ -743,7 +743,7 @@ function function_7536db69() {
     self thread ct_vo::function_261ed63c("vox_tvoi_tutor_prop_one_enemy_stun_nag");
     self thread ct_utils::function_61c3d59c(#"hash_3c6c0533fb27028f", undefined);
     level.var_90de2af7 waittill(#"death");
-    level.var_a5ff950.var_3ee2edfa = var_18483335;
+    level.var_a5ff950.shockduration = var_18483335;
     level notify(#"hash_60e26e14a51c5211");
     level notify(#"hash_358a76ad1437866d");
     wait(0.1);

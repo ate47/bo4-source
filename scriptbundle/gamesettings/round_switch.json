@@ -10,8 +10,8 @@
     "label": "#hash_6e36be7afbe498e7",
     "name": "round_switch",
     "displayname": "#hash_4f9f789e106b83be",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
-    "var_bd2ff709": "#hash_66e9852ea83ebd55",
+    "label1": "#hash_94eb0e3329edf5f",
+    "label2": "#hash_66e9852ea83ebd55",
     "var_9de86f42": 5,
     "setting": "roundSwitch"
 }

@@ -13,7 +13,7 @@
     "rarity": "None",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#ui_icon_inventory_p7_fir_ball_sports_basketball",
-    "var_50773731": 5,
+    "positionoffsetz": 5,
     "itemtype": "weapon",
     "pickupsound": "wpn_bball_pickup"
 }

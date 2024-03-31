@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "operator_oppressor_restriction",
     "displayname": "#hash_5b72cee708252959",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
-    "var_bd2ff709": "#menu/enabled",
+    "label1": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/enabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__lmg_standard_t8__attachments__uber"
 }

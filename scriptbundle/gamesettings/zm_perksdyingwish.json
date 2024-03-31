@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "zm_perksdyingwish",
     "displayname": "#hash_6cf320ffccc0c0b9",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
-    "var_bd2ff709": "#hash_1ac823ffd3e68662",
+    "label1": "#hash_68b65fb510ccd214",
+    "label2": "#hash_1ac823ffd3e68662",
     "var_9de86f42": 2,
     "setting": "zmPerksDyingWish"
 }

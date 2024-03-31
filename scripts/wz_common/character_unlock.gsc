@@ -141,11 +141,11 @@ function function_6e8037ca(params) {
     if (level.inprematchperiod) {
         return;
     }
-    var_a6762160 = params.item.var_a6762160;
-    if (!isdefined(var_a6762160)) {
+    itementry = params.item.itementry;
+    if (!isdefined(itementry)) {
         return;
     }
-    if (!isdefined(var_a6762160.unlockableitemref)) {
+    if (!isdefined(itementry.unlockableitemref)) {
         return;
     }
     foreach (unlock_name, var_9ba1646c in level.var_7d8da246) {
@@ -162,7 +162,7 @@ function function_6e8037ca(params) {
             continue;
         }
         item_name = var_9ba1646c.required_item;
-        if (var_a6762160.name === item_name) {
+        if (itementry.name === item_name) {
             if (!isdefined(self.var_c53589da)) {
                 self.var_c53589da = [];
             }

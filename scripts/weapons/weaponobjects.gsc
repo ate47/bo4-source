@@ -615,10 +615,10 @@ function cleanupwatcherondeath(watcher) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xcaa20a78, Offset: 0x21f0
 // Size: 0xc4
-function weapon_object_timeout(watcher, var_84e5ee08) {
+function weapon_object_timeout(watcher, timeoutoverride) {
     weapon_instance = self;
     weapon_instance endon(#"death", #"cancel_timeout");
-    var_754e514 = isdefined(var_84e5ee08) ? var_84e5ee08 : watcher.timeout;
+    var_754e514 = isdefined(timeoutoverride) ? timeoutoverride : watcher.timeout;
     wait(var_754e514);
     if (isdefined(watcher) && isdefined(watcher.ontimeout)) {
         weapon_instance thread [[ watcher.ontimeout ]]();

@@ -89,13 +89,13 @@ struct life {
     byte attacker_index;
     byte hash_1b81d2fe509f0457;
     uint32 hash_7567115bc2aa4bf;
-    int32 hash_237c7abb74490333[3];
+    int32 attacker_pos[3];
     byte hash_67e7ffe4f1c4eb88;
     byte hash_180d7941d4c7a89b;
     uint16 victimtimespentswimmingdeciseconds;
     uint32 hash_2031532f95082529;
     uint16 victimtimespentwallrunningdeciseconds;
-    int32 hash_55862148a238c704[3];
+    int32 victim_pos[3];
     uint10 attackerdelta;
     uint32 hash_374b79ec47e1e6e9;
     byte hash_35bd3b1cbe489e62;
@@ -163,8 +163,8 @@ struct hash_40387f9bff6d9d3c {
     hash item;
     int32 hash_450ab9ff85668b5a[3];
     uint4 shots;
-    uint32 hash_5715e55450648bd5;
-    short hash_3702989295e6967c;
+    uint32 time_ms;
+    short life_index;
     bit expirationthroughdeath;
     padbit __pad[7];
 };
@@ -194,28 +194,28 @@ struct hash_7f7a5814a86a5885 {
     uint32 hash_41037faade6d9357;
     byte player_index;
     byte event_type;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
 };
 
 struct hash_70fd30917359da6c {
     byte player_index;
     short kills_total;
     byte event_type;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
 };
 
 struct hash_6455b0739942db12 {
     hash item;
     int32 hash_450ab9ff85668b5a[3];
-    uint32 hash_5715e55450648bd5;
-    short hash_3702989295e6967c;
+    uint32 time_ms;
+    short life_index;
 };
 
 struct hash_4cc3ca9227e9ee6e {
     hash item;
     int32 hash_450ab9ff85668b5a[3];
-    uint32 hash_5715e55450648bd5;
-    short hash_3702989295e6967c;
+    uint32 time_ms;
+    short life_index;
 };
 
 struct hash_5117bce61a2e0fe3 {
@@ -418,7 +418,7 @@ struct player {
 struct gameevent {
     int32 hash_450ab9ff85668b5a[3];
     byte player_index;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
     bit event_type[26];
     padbit __pad[6];
 };

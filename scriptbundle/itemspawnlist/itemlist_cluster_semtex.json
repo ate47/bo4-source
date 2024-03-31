@@ -2,12 +2,12 @@
     "itemlist": [
         {
             "minweight": 400,
-            "var_a6762160": "cluster_semtex_wz_item",
+            "itementry": "cluster_semtex_wz_item",
             "maxweight": 400,
             "available": -1
         },
         {
-            "var_a6762160": "cluster_semtex_wz_item",
+            "itementry": "cluster_semtex_wz_item",
             "var_3f8c08e3": "cluster_semtex_wz_item",
             "available": -1
         }

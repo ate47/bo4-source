@@ -2,14 +2,14 @@
     "itemlist": [
         {
             "minweight": 200,
-            "var_a6762160": "tr_longburst_t8_item",
+            "itementry": "tr_longburst_t8_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 200,
-            "var_a6762160": "tr_powersemi_t8_item",
+            "itementry": "tr_powersemi_t8_item",
             "var_3f8c08e3": "ammo_type_762_item",
             "maxweight": 300,
             "available": -1

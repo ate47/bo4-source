@@ -314,7 +314,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
     radius = min_radius;
     half_height = min_height;
     nsteps = duration / dt;
-    var_345ed991 = (max_radius - min_radius) / nsteps;
+    radius_delta = (max_radius - min_radius) / nsteps;
     var_a9e00cb3 = (max_height - min_height) / nsteps;
     player_radius = 10;
     var_1d93ec08 = int(level.radiationfield_bundle.var_533b6b6e * 1000);
@@ -463,7 +463,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
             }
         }
         wait(dt);
-        radius = radius + var_345ed991;
+        radius = radius + radius_delta;
         half_height = half_height + var_a9e00cb3;
         if (radius > max_radius) {
             radius = max_radius;
@@ -489,7 +489,7 @@ function function_a1cc4c59(weapon, killcament) {
     player.var_d44d1214 clientfield::set("self_destruct_start", 1);
     player function_6b83f6a9(1);
     player function_ad7b9f4a("RAISEWEAPON", weapon, 0, 0, 1, 0);
-    damage_state(3, weapon, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.var_cbe3d2b8, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_39410f07, level.radiationfield_bundle.var_fcdf3d9e, level.radiationfield_bundle.var_3ef39bc5, level.radiationfield_bundle.var_d0e0a088, level.radiationfield_bundle.var_8d1e6357, killcament);
+    damage_state(3, weapon, level.radiationfield_bundle.var_2b4199b5, level.radiationfield_bundle.var_cbe3d2b8, level.radiationfield_bundle.midheight, level.radiationfield_bundle.var_39410f07, level.radiationfield_bundle.finalduration, level.radiationfield_bundle.var_3ef39bc5, level.radiationfield_bundle.var_d0e0a088, level.radiationfield_bundle.var_8d1e6357, killcament);
     player function_c5a2e918();
 }
 

@@ -2,49 +2,49 @@
     "itemlist": [
         {
             "minweight": 10,
-            "var_a6762160": "molotov_wz_item",
+            "itementry": "molotov_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "frag_grenade_wz_item",
+            "itementry": "frag_grenade_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "cymbal_monkey_wz_item",
+            "itementry": "cymbal_monkey_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 5,
-            "var_a6762160": "perk_item_deadsilence",
+            "itementry": "perk_item_deadsilence",
             "maxweight": 5,
             "available": 1
         },
         {
             "minweight": 3,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 3,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "melee_bowie_t8_item",
+            "itementry": "melee_bowie_t8_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "smg_mp40_t8_item",
+            "itementry": "smg_mp40_t8_item",
             "maxweight": 10
         }
     ],

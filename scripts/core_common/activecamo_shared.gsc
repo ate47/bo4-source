@@ -172,7 +172,7 @@ function function_3aa81e0e(activecamoinfo) {
         info.var_e0b0d8cc = activecamoinfo.var_e0b0d8cc;
         info.var_ed6f91d5 = activecamoinfo.var_ed6f91d5;
         info.var_bd863267 = activecamoinfo.var_bd863267;
-        info.var_26c1d493 = activecamoinfo.var_26c1d493;
+        info.istimer = activecamoinfo.istimer;
         info.var_fa0465c6 = activecamoinfo.var_fa0465c6;
         info.var_2034fabe = activecamoinfo.var_2034fabe;
         info.var_9ae5a2b8 = activecamoinfo.var_9ae5a2b8;

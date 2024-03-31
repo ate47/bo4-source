@@ -2,55 +2,55 @@
     "itemlist": [
         {
             "minweight": 999,
-            "var_a6762160": "health_item_small",
+            "itementry": "health_item_small",
             "maxweight": 999,
             "available": -1
         },
         {
             "minweight": 999,
-            "var_a6762160": "resource_item_paint",
+            "itementry": "resource_item_paint",
             "maxweight": 999,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "resource_item_paint_stack_10",
+            "itementry": "resource_item_paint_stack_10",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 500,
-            "var_a6762160": "ammo_type_9mm_item",
+            "itementry": "ammo_type_9mm_item",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 500,
-            "var_a6762160": "tr_leveraction_t8_item",
+            "itementry": "tr_leveraction_t8_item",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 500,
-            "var_a6762160": "wz_ball",
+            "itementry": "wz_ball",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 500,
-            "var_a6762160": "hatchet_wz_item",
+            "itementry": "hatchet_wz_item",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "zombie_supply_stash_raygun_mk_variants",
+            "itementry": "zombie_supply_stash_raygun_mk_variants",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "armor_item_large",
+            "itementry": "armor_item_large",
             "maxweight": 1,
             "available": -1
         }

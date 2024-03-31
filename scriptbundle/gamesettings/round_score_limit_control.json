@@ -25,7 +25,7 @@
     "var_5a6dee5a": 1,
     "name": "round_score_limit_control",
     "displayname": "#hash_1498e581616dccc0",
-    "var_9600a8ab": "#hash_52b38f6fb98e8982",
+    "label1": "#hash_52b38f6fb98e8982",
     "var_9de86f42": 19,
     "setting": "scoreLimit"
 }

@@ -48,7 +48,7 @@
     "type": "itemspawnentry",
     "hintstring": "#hash_99fc2e66d019964",
     "unlockableitemref": "#wz_character_reznov",
-    "var_7adcadc1": 10,
+    "angleoffsetx": 10,
     "name": "cu21_item",
     "displayname": "#hash_99fc2e66d019964",
     "icon": "#hash_54e0cd232527b698",
@@ -56,6 +56,6 @@
     "rarity": "None",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_244ee9beaa552ff7",
-    "var_50773731": -1,
+    "positionoffsetz": -1,
     "itemtype": "quest"
 }

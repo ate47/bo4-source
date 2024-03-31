@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 15,
-            "var_a6762160": "ray_gun_t8_item",
+            "itementry": "ray_gun_t8_item",
             "maxweight": 15,
             "available": 1
         }

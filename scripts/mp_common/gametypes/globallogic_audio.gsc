@@ -505,7 +505,7 @@ function wait_next_killstreak_dialog(waittime) {
 // Size: 0x64
 function function_30f16f29(soundevent, var_8a6b001a, weapon) {
     if (isdefined(var_8a6b001a) && isalive(var_8a6b001a)) {
-        var_8a6b001a function_18aba49d(soundevent, weapon, self);
+        var_8a6b001a playsoundevent(soundevent, weapon, self);
     }
 }
 
@@ -643,7 +643,7 @@ function play_next_leader_dialog() {
         }
     }
     if (dialogkey === "gamePlayerKicked") {
-        self function_18aba49d(2);
+        self playsoundevent(2);
     } else {
         dialogalias = self get_commander_dialog_alias(dialogkey);
         if (!isdefined(dialogalias)) {

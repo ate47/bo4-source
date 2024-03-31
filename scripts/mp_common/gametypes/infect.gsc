@@ -325,19 +325,19 @@ function function_24ca3437(team, var_efb758a8, calloutplayer) {
 // Checksum 0xb784d8e9, Offset: 0x1648
 // Size: 0x28c
 function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
-    var_814fe85 = 0;
+    processkill = 0;
     wassuicide = 0;
     if (self.team == game.defenders && isdefined(attacker)) {
         if (level.friendlyfire > 0 && isdefined(attacker.team) && attacker.team == self.team) {
-            var_814fe85 = 0;
+            processkill = 0;
         } else if (isplayer(attacker) && attacker != self) {
-            var_814fe85 = 1;
+            processkill = 1;
         } else if (level.var_67f55810 && (attacker == self || !isplayer(attacker))) {
-            var_814fe85 = 1;
+            processkill = 1;
             wassuicide = 1;
         }
     }
-    if (!var_814fe85) {
+    if (!processkill) {
         return;
     }
     if (!wassuicide) {
@@ -470,20 +470,20 @@ function function_57f4f37e(finalsurvivor) {
     level thread function_ce8c907e(finalsurvivor);
     setteamspyplane(game.attackers, 1);
     util::set_team_radar(game.attackers, 1);
-    var_ed36658a = 0;
+    removeuav = 0;
     while (true) {
         prevpos = finalsurvivor.origin;
         wait(4);
-        if (var_ed36658a) {
+        if (removeuav) {
             setteamspyplane(game.attackers, 0);
             util::set_team_radar(game.var_6280b6a7, 0);
-            var_ed36658a = 0;
+            removeuav = 0;
         }
         wait(6);
         if (distancesquared(prevpos, finalsurvivor.origin) < 200 * 200) {
             setteamspyplane(game.attackers, 1);
             util::set_team_radar(game.attackers, 1);
-            var_ed36658a = 1;
+            removeuav = 1;
             foreach (player in level.players) {
                 sound::play_on_players("fly_hunter_raise_plr");
             }
@@ -1002,23 +1002,23 @@ function function_862e5e08() {
 // Checksum 0xf412bfc4, Offset: 0x39c8
 // Size: 0x10c
 function gettimelimit(var_abfac690 = 0) {
-    var_b3c9edab = getgametypesetting("timeLimit");
-    if (var_b3c9edab == 0) {
+    defaulttimelimit = getgametypesetting("timeLimit");
+    if (defaulttimelimit == 0) {
         return 0;
     }
     if (!isdefined(level.var_b93ecc24) && !var_abfac690) {
         return 0;
     }
     if (!isdefined(level.var_6b102fee)) {
-        return var_b3c9edab;
+        return defaulttimelimit;
     }
     if (!isdefined(level.var_b93ecc24)) {
         level.var_b93ecc24 = gettime();
     }
     timelimit = level.var_6b102fee + 0.166667;
     var_b7bcdf3b = (level.var_b93ecc24 - level.starttime + 1000) / 60000;
-    if (timelimit - var_b7bcdf3b > var_b3c9edab) {
-        timelimit = var_b7bcdf3b + var_b3c9edab;
+    if (timelimit - var_b7bcdf3b > defaulttimelimit) {
+        timelimit = var_b7bcdf3b + defaulttimelimit;
     }
     return timelimit;
 }

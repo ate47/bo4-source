@@ -231,13 +231,13 @@ function function_6fe5a945(player) {
         var_b43e8dc2.isvalid = 0;
         return var_b43e8dc2;
     }
-    var_1e5ed37a = !var_1167a9ce && !var_2b68b641;
-    if (!var_1e5ed37a) {
+    candeploy = !var_1167a9ce && !var_2b68b641;
+    if (!candeploy) {
         var_b43e8dc2.isvalid = 0;
-        player function_bf191832(var_1e5ed37a, (0, 0, 0), (0, 0, 0));
+        player function_bf191832(candeploy, (0, 0, 0), (0, 0, 0));
         return var_b43e8dc2;
     }
-    player function_bf191832(var_1e5ed37a, var_b43e8dc2.origin, var_b43e8dc2.angles);
+    player function_bf191832(candeploy, var_b43e8dc2.origin, var_b43e8dc2.angles);
     return var_b43e8dc2;
 }
 
@@ -562,8 +562,8 @@ function function_4ee7d46a(isselfdestruct) {
         }
     }
     if (isdefined(concertinawire.var_2ee191cc)) {
-        foreach (var_a4879492 in concertinawire.var_2ee191cc) {
-            deployable::function_b20df196(var_a4879492);
+        foreach (zoneid in concertinawire.var_2ee191cc) {
+            deployable::function_b20df196(zoneid);
         }
     }
     deployable::function_81598103(concertinawire);
@@ -920,8 +920,8 @@ function function_34d706ae(watcher, var_db52b808, origin, angles, var_796be15d, 
     var_8a455f75 = origin - width * 0.5 * rightangles;
     var_2d71f8ca = int(width / 32);
     for (index = 0; index < var_2d71f8ca; index++) {
-        var_a4879492 = deployable::function_d60e5a06(var_8a455f75, 32);
-        array::add(var_bf8e4260.var_2ee191cc, var_a4879492);
+        zoneid = deployable::function_d60e5a06(var_8a455f75, 32);
+        array::add(var_bf8e4260.var_2ee191cc, zoneid);
         var_8a455f75 = var_8a455f75 + rightangles * 64;
     }
     var_bf8e4260.var_86a21346 = &function_82c4beb0;

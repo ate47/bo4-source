@@ -137,8 +137,8 @@ function private function_b6ea080() {
                 the_item = item_world::function_2e3efdda(item.origin, undefined, 1, 1, -1, 1);
                 if (the_item.size > 0) {
                     type = "<unknown string>";
-                    if (isdefined(the_item[0].var_a6762160) && isdefined(the_item[0].var_a6762160.itemtype)) {
-                        switch (the_item[0].var_a6762160.itemtype) {
+                    if (isdefined(the_item[0].itementry) && isdefined(the_item[0].itementry.itemtype)) {
+                        switch (the_item[0].itementry.itemtype) {
                         case #"ammo":
                             type = "<unknown string>";
                             break;
@@ -177,8 +177,8 @@ function private function_b6ea080() {
                             break;
                         }
                     }
-                    if (isdefined(the_item[0].var_a6762160)) {
-                        debug_string = the_item[0].var_a6762160.name + "<unknown string>" + function_9e72a96(the_item[0].targetname) + "<unknown string>" + the_item[0].origin + "<unknown string>" + type;
+                    if (isdefined(the_item[0].itementry)) {
+                        debug_string = the_item[0].itementry.name + "<unknown string>" + function_9e72a96(the_item[0].targetname) + "<unknown string>" + the_item[0].origin + "<unknown string>" + type;
                         fprintln(file, debug_string);
                         item_count++;
                     }
@@ -588,7 +588,7 @@ function private function_cdd9b388() {
                 origin = players[0].origin;
                 var_f4b807cb = item_world::function_2e3efdda(origin, undefined, 128, 2000);
                 foreach (item in var_f4b807cb) {
-                    print3d(item.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + item.networkid + "<unknown string>" + item.var_a6762160.name, (1, 0.5, 0), 1, 0.4);
+                    print3d(item.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + item.networkid + "<unknown string>" + item.itementry.name, (1, 0.5, 0), 1, 0.4);
                 }
             }
             if (getdvarint(#"hash_326974dd9b8c3414", 0)) {
@@ -812,8 +812,8 @@ function private function_cdd9b388() {
                 } else {
                     var_f4b807cb = item_world::function_2e3efdda(origin, undefined, 4000, 30000, -1, 0);
                     foreach (item in var_f4b807cb) {
-                        if (isdefined(item.var_a6762160) && isdefined(item.var_a6762160.rarity)) {
-                            switch (item.var_a6762160.rarity) {
+                        if (isdefined(item.itementry) && isdefined(item.itementry.rarity)) {
+                            switch (item.itementry.rarity) {
                             case #"common":
                                 color = (0, 1, 0);
                                 break;
@@ -847,26 +847,26 @@ function private function_cdd9b388() {
                             }
                             break;
                         case 2:
-                            if (isdefined(item.var_a6762160)) {
+                            if (isdefined(item.itementry)) {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                         case 3:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"ammo") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"ammo") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 4:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"weapon") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"weapon") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 5:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"health") {
-                                if (item.var_a6762160.name == "<unknown string>") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"health") {
+                                if (item.itementry.name == "<unknown string>") {
                                     sphere(item.origin, radius, (0, 1, 0), 1, 0, 10, 20);
-                                } else if (item.var_a6762160.name == "<unknown string>") {
+                                } else if (item.itementry.name == "<unknown string>") {
                                     sphere(item.origin, radius, (0, 0, 1), 1, 0, 10, 20);
-                                } else if (item.var_a6762160.name == "<unknown string>") {
+                                } else if (item.itementry.name == "<unknown string>") {
                                     sphere(item.origin, radius, (1, 0.5, 0), 1, 0, 10, 20);
                                 } else {
                                     sphere(item.origin, radius, color, 1, 0, 10, 20);
@@ -874,12 +874,12 @@ function private function_cdd9b388() {
                             }
                             break;
                         case 6:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"armor") {
-                                if (item.var_a6762160.name == "<unknown string>") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"armor") {
+                                if (item.itementry.name == "<unknown string>") {
                                     sphere(item.origin, radius, (0, 1, 0), 1, 0, 10, 20);
-                                } else if (item.var_a6762160.name == "<unknown string>") {
+                                } else if (item.itementry.name == "<unknown string>") {
                                     sphere(item.origin, radius, (0, 0, 1), 1, 0, 10, 20);
-                                } else if (item.var_a6762160.name == "<unknown string>") {
+                                } else if (item.itementry.name == "<unknown string>") {
                                     sphere(item.origin, radius, (1, 1, 0), 1, 0, 10, 20);
                                 } else {
                                     sphere(item.origin, radius, color, 1, 0, 10, 20);
@@ -887,42 +887,42 @@ function private function_cdd9b388() {
                             }
                             break;
                         case 7:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"equipment") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"equipment") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 8:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"backpack") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"backpack") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 9:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"attachment") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"attachment") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 10:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"generic") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"generic") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 11:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"killstreak") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"killstreak") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 15:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"quest") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"quest") {
                                 sphere(item.origin, radius, (1, 0.5, 0), 1, 0, 10, 20);
                             }
                             break;
                         case 16:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"cash") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"cash") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
                         case 17:
-                            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"resource") {
+                            if (isdefined(item.itementry) && item.itementry.itemtype === #"resource") {
                                 sphere(item.origin, radius, color, 1, 0, 10, 20);
                             }
                             break;
@@ -1013,8 +1013,8 @@ function function_c07eae4e() {
         itemcount = function_8322cf16();
         for (i = 0; i < itemcount; i++) {
             item = function_b1702735(i);
-            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype == "<unknown string>" && item.var_a6762160.weapon.isprimary) {
-                array::add(var_6e5bbee1, item_world_util::function_35e06774(item.var_a6762160), 0);
+            if (isdefined(item.itementry) && item.itementry.itemtype == "<unknown string>" && item.itementry.weapon.isprimary) {
+                array::add(var_6e5bbee1, item_world_util::function_35e06774(item.itementry), 0);
             }
         }
         var_6e5bbee1 = array::randomize(var_6e5bbee1);

@@ -713,8 +713,8 @@ function function_59c73c21(newvalue) {
 // Params 1, eflags: 0x0
 // Checksum 0x7c3e1cf0, Offset: 0x2528
 // Size: 0x1ba
-function function_3875c0fc(var_67b8306d) {
-    groundnormal = get_ground_normal(var_67b8306d, 0);
+function function_3875c0fc(traceignore) {
+    groundnormal = get_ground_normal(traceignore, 0);
     if (!isdefined(groundnormal)) {
         return;
     }
@@ -776,11 +776,11 @@ function function_5b73beef(shouldignore) {
 // Params 2, eflags: 0x0
 // Checksum 0x8490755f, Offset: 0x28e8
 // Size: 0x3c0
-function get_ground_normal(var_67b8306d, debug) {
-    if (!isdefined(var_67b8306d)) {
+function get_ground_normal(traceignore, debug) {
+    if (!isdefined(traceignore)) {
         ignore = self;
     } else {
-        ignore = var_67b8306d;
+        ignore = traceignore;
     }
     tracepoints = array(self.origin);
     if (getdvarint(#"hash_32aee631b4444f90", 1)) {
@@ -794,13 +794,13 @@ function get_ground_normal(var_67b8306d, debug) {
     }
     function_c0665212(1);
     avgnormal = (0, 0, 0);
-    var_10ccb3f8 = 0;
+    tracehitcount = 0;
     foreach (point in tracepoints) {
         trace = bullettrace(point + vectorscale((0, 0, 1), 4), point + vectorscale((0, 0, -1), 16), 0, ignore);
         tracehit = trace[#"fraction"] > 0 && trace[#"fraction"] < 1;
         if (tracehit) {
             avgnormal = avgnormal + trace[#"normal"];
-            var_10ccb3f8++;
+            tracehitcount++;
         }
         /#
             if (debug) {
@@ -813,8 +813,8 @@ function get_ground_normal(var_67b8306d, debug) {
         #/
     }
     function_c0665212(0);
-    if (var_10ccb3f8 > 0) {
-        avgnormal = avgnormal / var_10ccb3f8;
+    if (tracehitcount > 0) {
+        avgnormal = avgnormal / tracehitcount;
         /#
             if (debug) {
                 line(self.origin, self.origin + avgnormal * 20, (1, 1, 1));
@@ -995,9 +995,9 @@ function function_6de7bc19(success, type, player, origin1, text1, origin2, text2
 // Checksum 0x9aec46f6, Offset: 0x3588
 // Size: 0x672
 function canlock() {
-    var_aa7db07e = getentarray("trigger_hurt", "classname");
+    killtriggers = getentarray("trigger_hurt", "classname");
     oobtriggers = getentarray("trigger_out_of_bounds", "classname");
-    triggers = arraycombine(var_aa7db07e, oobtriggers, 0, 0);
+    triggers = arraycombine(killtriggers, oobtriggers, 0, 0);
     var_1bc5fbd6 = getentarray("prop_no_lock", "targetname");
     if (var_1bc5fbd6.size > 0) {
         triggers = arraycombine(triggers, var_1bc5fbd6, 0, 0);
@@ -1463,8 +1463,8 @@ function function_58699cee(index) {
     }
     weapon = level.var_fe458fef[index].weapon;
     damageorigin = level.var_fe458fef[index].damageorigin;
-    var_921c264 = weapon.explosionradius;
-    var_1c404e8 = var_921c264 * var_921c264;
+    expradius = weapon.explosionradius;
+    var_1c404e8 = expradius * expradius;
     foreach (player in level.players) {
         if (!player util::isprop() || !isalive(player) || player function_791579c9(index)) {
             continue;
@@ -1478,7 +1478,7 @@ function function_58699cee(index) {
             damage = level.var_fe458fef[index].damage;
             attacker = level.var_fe458fef[index].attacker;
             meansofdeath = level.var_fe458fef[index].meansofdeath;
-            attacker radiusdamage(damageorigin, var_921c264, damage, damage, attacker, meansofdeath, weapon);
+            attacker radiusdamage(damageorigin, expradius, damage, damage, attacker, meansofdeath, weapon);
             function_e896a36a(1);
             function_45534e6c(1);
             function_d08dcbaf(0);
@@ -1619,21 +1619,21 @@ function function_b9c3c08a(hudelem, var_9c73f6bb) {
 // Size: 0x164
 function propabilitykeysvisible(visible, override) {
     if (isdefined(visible) && visible) {
-        var_2aaefb47 = 1;
+        alphavalue = 1;
     } else {
-        var_2aaefb47 = 0;
+        alphavalue = 0;
     }
     if (prop::useprophudserver() || isdefined(override) && override) {
-        function_b9c3c08a(self.var_8060636f, var_2aaefb47);
-        function_b9c3c08a(self.var_aa57a992, var_2aaefb47);
-        function_b9c3c08a(self.var_4901798a, var_2aaefb47);
-        function_b9c3c08a(self.var_a4da95c7, var_2aaefb47);
-        function_b9c3c08a(self.var_5478a045, var_2aaefb47);
-        function_b9c3c08a(self.var_e8c312d7, var_2aaefb47);
-        function_b9c3c08a(self.var_65efe125, var_2aaefb47);
-        function_b9c3c08a(self.var_8e3b5c8c, var_2aaefb47);
+        function_b9c3c08a(self.var_8060636f, alphavalue);
+        function_b9c3c08a(self.var_aa57a992, alphavalue);
+        function_b9c3c08a(self.var_4901798a, alphavalue);
+        function_b9c3c08a(self.var_a4da95c7, alphavalue);
+        function_b9c3c08a(self.var_5478a045, alphavalue);
+        function_b9c3c08a(self.var_e8c312d7, alphavalue);
+        function_b9c3c08a(self.var_65efe125, alphavalue);
+        function_b9c3c08a(self.var_8e3b5c8c, alphavalue);
         if (!(isdefined(level.nopropsspectate) && level.nopropsspectate)) {
-            function_b9c3c08a(self.var_a93978b9, var_2aaefb47);
+            function_b9c3c08a(self.var_a93978b9, alphavalue);
         }
     }
 }

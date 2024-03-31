@@ -2,35 +2,35 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "lmg_spray_t8_item",
+            "itementry": "lmg_spray_t8_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "lmg_heavy_t8_item",
+            "itementry": "lmg_heavy_t8_item",
             "var_3f8c08e3": "ammo_type_50cal_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "pistol_revolver_t8_item",
+            "itementry": "pistol_revolver_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_an94_t8_item",
+            "itementry": "ar_an94_t8_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "tomahawk_t8_wz_item_pandemic",
+            "itementry": "tomahawk_t8_wz_item_pandemic",
             "maxweight": 100,
             "available": -1
         }

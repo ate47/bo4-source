@@ -23,7 +23,7 @@
     "weapon": "weapon#hash_75a109f4bda3d85",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "baseweapon": "pistol_burst_t8_item",
     "var_65b3a12": 6,
     "var_340eac1f": 1,
@@ -37,6 +37,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_6f7bbc72be771986",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

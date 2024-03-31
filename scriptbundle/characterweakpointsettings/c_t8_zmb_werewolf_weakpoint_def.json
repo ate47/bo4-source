@@ -4,14 +4,14 @@
             "type": "#weakpoint",
             "var_51e8b151": "tag_back_ws",
             "activebydefault": 1,
-            "var_b7fbe51b": 20,
+            "hitradius": 20,
             "health": 0.05
         },
         {
             "type": "#weakpoint",
             "var_51e8b151": "tag_chest_ws",
             "activebydefault": 1,
-            "var_b7fbe51b": 20,
+            "hitradius": 20,
             "health": 0.05
         }
     ],

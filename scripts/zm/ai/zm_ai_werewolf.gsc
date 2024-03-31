@@ -725,8 +725,8 @@ function private function_3d752709(enemy, target) {
     var_c2ee8451 = (facingvec[0], facingvec[1], 0);
     var_3e3c8075 = vectornormalize(var_3e3c8075);
     var_c2ee8451 = vectornormalize(var_c2ee8451);
-    var_34e02165 = vectordot(var_c2ee8451, var_3e3c8075);
-    if (var_34e02165 < 0) {
+    enemydot = vectordot(var_c2ee8451, var_3e3c8075);
+    if (enemydot < 0) {
         return false;
     }
     return true;
@@ -1180,12 +1180,12 @@ function function_8b63ee0e(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (entity.meleeinfo.var_425c4c8b) {
             var_776ddabf = distancesquared(entity.meleeinfo.var_cb28f380, entity.meleeinfo.adjustedendpos);
-            var_beabc994 = anglestoforward(entity.angles);
+            myforward = anglestoforward(entity.angles);
             var_1c3641f2 = (var_856465ed[0], var_856465ed[1], entity.origin[2]);
             dirtoenemy = vectornormalize(var_1c3641f2 - entity.origin);
             zdiff = entity.meleeinfo.var_cb28f380[2] - var_856465ed[2];
             var_6738a702 = abs(zdiff) <= entity ai::function_9139c839().var_3c41cb92;
-            withinfov = vectordot(var_beabc994, dirtoenemy) > entity ai::function_9139c839().var_e2b09972;
+            withinfov = vectordot(myforward, dirtoenemy) > entity ai::function_9139c839().var_e2b09972;
             var_7948b2f3 = var_6738a702 && withinfov;
             var_425c4c8b = (isvisible || var_535d098c) && var_7948b2f3;
             /#

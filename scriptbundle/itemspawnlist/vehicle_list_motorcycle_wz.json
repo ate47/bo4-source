@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "motorcycle_wz_vehicle_dark_grey",
+            "itementry": "motorcycle_wz_vehicle_dark_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "motorcycle_wz_vehicle_light_grey",
+            "itementry": "motorcycle_wz_vehicle_light_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "motorcycle_wz_vehicle_metal_grey",
+            "itementry": "motorcycle_wz_vehicle_metal_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "motorcycle_wz_vehicle_olive",
+            "itementry": "motorcycle_wz_vehicle_olive",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "motorcycle_wz_vehicle_tan",
+            "itementry": "motorcycle_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "motorcycle_wz_vehicle_white",
+            "itementry": "motorcycle_wz_vehicle_white",
             "maxweight": 1,
             "available": -1
         }

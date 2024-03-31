@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "armor_shard_item",
+            "itementry": "armor_shard_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 20,
-            "var_a6762160": "armor_shard_item",
+            "itementry": "armor_shard_item",
             "var_3f8c08e3": "armor_shard_item",
             "maxweight": 20,
             "available": -1

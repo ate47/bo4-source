@@ -551,11 +551,11 @@ function function_95d17a51(startstruct) {
             assert(isdefined(startstruct) && isstruct(startstruct));
         #/
     }
-    var_5842dd6c = array();
+    seentargets = array();
     targets = array();
     if (isdefined(startstruct.target)) {
         targets[targets.size] = startstruct.target;
-        var_5842dd6c[startstruct.target] = 1;
+        seentargets[startstruct.target] = 1;
     }
     structs[structs.size] = startstruct;
     while (targets.size > 0) {
@@ -564,16 +564,16 @@ function function_95d17a51(startstruct) {
         targetstructs = struct::get_array(target);
         foreach (struct in targetstructs) {
             structs[structs.size] = struct;
-            if (isdefined(struct.target) && !isdefined(var_5842dd6c[struct.target])) {
+            if (isdefined(struct.target) && !isdefined(seentargets[struct.target])) {
                 targets[targets.size] = struct.target;
-                var_5842dd6c[struct.target] = 1;
+                seentargets[struct.target] = 1;
             }
         }
     }
     targets = array();
     if (isdefined(startstruct.script_bot_chain_src)) {
         targets[targets.size] = startstruct.script_bot_chain_src;
-        var_5842dd6c[startstruct.script_bot_chain_src] = 1;
+        seentargets[startstruct.script_bot_chain_src] = 1;
     }
     while (targets.size > 0) {
         target = targets[0];
@@ -581,9 +581,9 @@ function function_95d17a51(startstruct) {
         targetstructs = struct::get_array(target, "script_bot_chain_target");
         foreach (struct in targetstructs) {
             structs[structs.size] = struct;
-            if (isdefined(struct.script_bot_chain_src) && !isdefined(var_5842dd6c[struct.script_bot_chain_src])) {
+            if (isdefined(struct.script_bot_chain_src) && !isdefined(seentargets[struct.script_bot_chain_src])) {
                 targets[targets.size] = struct.script_bot_chain_src;
-                var_5842dd6c[struct.script_bot_chain_src] = 1;
+                seentargets[struct.script_bot_chain_src] = 1;
             }
         }
     }

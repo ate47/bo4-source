@@ -373,7 +373,7 @@ function function_bb0565d0(var_de58f286) {
 // Checksum 0x6f612938, Offset: 0x6970
 // Size: 0x44e
 function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
-    var_7eb5dfe9 = var_de58f286.positionindex;
+    posindex = var_de58f286.positionindex;
     anim_intro_name = undefined;
     anim_name = undefined;
     weapongroupanim = function_bb0565d0(var_de58f286);
@@ -394,9 +394,9 @@ function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
         if (var_de58f286.var_91065a59 != var_de58f286.var_3afd181d) {
             if (var_de58f286.var_91065a59) {
                 var_ca1716fe = weapongroupanim[#"ready"][gender];
-                anim_intro_name = var_ca1716fe[var_7eb5dfe9 % var_ca1716fe.size];
+                anim_intro_name = var_ca1716fe[posindex % var_ca1716fe.size];
                 var_177782dd = weapongroupanim[#"readyidle"][gender];
-                anim_name = var_177782dd[var_7eb5dfe9 % var_177782dd.size];
+                anim_name = var_177782dd[posindex % var_177782dd.size];
             }
             var_de58f286.var_3afd181d = var_de58f286.var_91065a59;
         } else if (player_role::is_valid(var_de58f286.focusedcharacterindex)) {
@@ -407,21 +407,21 @@ function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
             anim_name = weapongroupanim[#"select"][gender];
         } else {
             if (!var_de58f286.var_91065a59) {
-                if (var_7eb5dfe9 == 1 && !shoutcaster::is_shoutcaster(localclientnum)) {
+                if (posindex == 1 && !shoutcaster::is_shoutcaster(localclientnum)) {
                     anim_intro_name = weapongroupanim[#"hash_6eaac8719751cb14"][gender];
                 }
                 var_b793aad = weapongroupanim[#"preready"][gender];
-                anim_name = var_b793aad[var_7eb5dfe9 % var_b793aad.size];
+                anim_name = var_b793aad[posindex % var_b793aad.size];
             } else {
                 var_ca1716fe = weapongroupanim[#"ready"][gender];
-                anim_intro_name = var_ca1716fe[var_7eb5dfe9 % var_ca1716fe.size];
+                anim_intro_name = var_ca1716fe[posindex % var_ca1716fe.size];
                 var_177782dd = weapongroupanim[#"readyidle"][gender];
-                anim_name = var_177782dd[var_7eb5dfe9 % var_177782dd.size];
+                anim_name = var_177782dd[posindex % var_177782dd.size];
             }
             var_de58f286.selected = 1;
         }
     } else {
-        anim_name = array("pb_rifle_male_draft_preready_1", "pb_rifle_male_draft_preready_2", "pb_rifle_male_draft_preready_3", "pb_rifle_male_draft_preready_4", "pb_rifle_male_draft_preready_5")[var_7eb5dfe9 % array("pb_rifle_male_draft_preready_1", "pb_rifle_male_draft_preready_2", "pb_rifle_male_draft_preready_3", "pb_rifle_male_draft_preready_4", "pb_rifle_male_draft_preready_5").size];
+        anim_name = array("pb_rifle_male_draft_preready_1", "pb_rifle_male_draft_preready_2", "pb_rifle_male_draft_preready_3", "pb_rifle_male_draft_preready_4", "pb_rifle_male_draft_preready_5")[posindex % array("pb_rifle_male_draft_preready_1", "pb_rifle_male_draft_preready_2", "pb_rifle_male_draft_preready_3", "pb_rifle_male_draft_preready_4", "pb_rifle_male_draft_preready_5").size];
     }
     var_de58f286.params.anim_intro_name = anim_intro_name;
     var_de58f286.params.anim_name = anim_name;

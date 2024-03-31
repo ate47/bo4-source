@@ -171,7 +171,7 @@ function private onconnect() {
         self.pers[#"money"] = level.var_6fb8c585;
         self.pers[#"money_earned"] = 0;
         if (game.roundsplayed > 0) {
-            var_ea8ca56d = 0;
+            numteammates = 0;
             var_69c2bc0d = 0;
             foreach (player in level.players) {
                 if (player == self) {
@@ -181,12 +181,12 @@ function private onconnect() {
                     continue;
                 }
                 if (player.team == self.team) {
-                    var_ea8ca56d++;
+                    numteammates++;
                     var_69c2bc0d = var_69c2bc0d + player.pers[#"money_earned"];
                 }
             }
-            if (var_ea8ca56d) {
-                self function_3a77006e(int(var_69c2bc0d / var_ea8ca56d), "moneychange_initialallocation");
+            if (numteammates) {
+                self function_3a77006e(int(var_69c2bc0d / numteammates), "moneychange_initialallocation");
             }
         }
     }
@@ -1658,8 +1658,8 @@ function private function_6d1352cb(droppoint) {
     exitpoint = droppoint + droppoint - self.origin;
     while (true) {
         waitframe(1);
-        var_39d312c5 = distancesquared(self.origin, droppoint);
-        if (var_39d312c5 < 225 * 225) {
+        currdist = distancesquared(self.origin, droppoint);
+        if (currdist < 225 * 225) {
             self setspeed(0);
             self.supplydrop unlink();
             self.supplydrop moveto(droppoint - vectorscale((0, 0, 1), 1990), 2);

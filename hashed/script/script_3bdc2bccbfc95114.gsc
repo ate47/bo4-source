@@ -89,7 +89,7 @@ function function_783891ed() {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xe90ef784, Offset: 0x370
 // Size: 0x1e6
-function private function_9e6251db(var_c03fe9e3) {
+function private function_9e6251db(str_speed) {
     if (!isdefined(self.n_hour)) {
         self.n_hour = 0;
     }
@@ -101,10 +101,10 @@ function private function_9e6251db(var_c03fe9e3) {
     var_f6197f53 = self.var_f6197f53;
     var_e51ab168 = var_f6197f53 + 1;
     self.var_f6197f53++;
-    var_64807aea = "pos_" + var_f6197f53 + "_to_" + var_e51ab168 + "_" + var_c03fe9e3;
+    var_64807aea = "pos_" + var_f6197f53 + "_to_" + var_e51ab168 + "_" + str_speed;
     var_c74251a4 = scene::function_8582657c(self.scriptbundlename, var_64807aea);
     if (var_c74251a4 <= 0) {
-        if (var_c03fe9e3 == "fast") {
+        if (str_speed == "fast") {
             var_c74251a4 = 0.166;
         } else {
             var_c74251a4 = 0.333;

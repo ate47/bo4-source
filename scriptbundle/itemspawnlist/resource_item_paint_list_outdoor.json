@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "resource_item_paint",
+            "itementry": "resource_item_paint",
             "maxweight": 1,
             "available": 100
         },
         {
             "minweight": 1,
-            "var_a6762160": "resource_item_paint",
+            "itementry": "resource_item_paint",
             "maxweight": 1,
             "available": 100
         }

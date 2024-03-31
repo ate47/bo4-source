@@ -2,61 +2,61 @@
     "itemlist": [
         {
             "minweight": 300,
-            "var_a6762160": "ghosttown_list_guns_dlc1",
+            "itementry": "ghosttown_list_guns_dlc1",
             "maxweight": 320,
             "available": -1
         },
         {
             "minweight": 250,
-            "var_a6762160": "ghosttown_list_health",
+            "itementry": "ghosttown_list_health",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "ghosttown_list_equipment",
+            "itementry": "ghosttown_list_equipment",
             "maxweight": 240,
             "available": -1
         },
         {
             "minweight": 33,
-            "var_a6762160": "ghosttown_list_gear",
+            "itementry": "ghosttown_list_gear",
             "maxweight": 58,
             "available": -1
         },
         {
             "minweight": 105,
-            "var_a6762160": "ghosttown_list_consumable",
+            "itementry": "ghosttown_list_consumable",
             "maxweight": 180,
             "available": -1
         },
         {
             "minweight": 200,
-            "var_a6762160": "ghosttown_list_attachment",
+            "itementry": "ghosttown_list_attachment",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 200,
-            "var_a6762160": "ghosttown_list_ammo",
+            "itementry": "ghosttown_list_ammo",
             "maxweight": 250,
             "available": -1
         },
         {
             "minweight": 35,
-            "var_a6762160": "storage_list",
+            "itementry": "storage_list",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 45,
-            "var_a6762160": "world_base_event_parent",
+            "itementry": "world_base_event_parent",
             "maxweight": 65,
             "available": -1
         },
         {
             "minweight": 70,
-            "var_a6762160": "ghosttown_list_armor_shards",
+            "itementry": "ghosttown_list_armor_shards",
             "maxweight": 70,
             "available": -1
         }

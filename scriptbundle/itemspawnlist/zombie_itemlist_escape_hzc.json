@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 95,
-            "var_a6762160": "zombie_itemlist_hzc",
+            "itementry": "zombie_itemlist_hzc",
             "maxweight": 95,
             "available": 1
         },
         {
             "minweight": 5,
-            "var_a6762160": "cu_escape_list",
+            "itementry": "cu_escape_list",
             "maxweight": 5,
             "available": 1
         }

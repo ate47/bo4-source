@@ -2,85 +2,85 @@
     "itemlist": [
         {
             "minweight": 40,
-            "var_a6762160": "frag_grenade_wz_item",
+            "itementry": "frag_grenade_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 40,
-            "var_a6762160": "concussion_wz_item",
+            "itementry": "concussion_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 40,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "molotov_wz_item",
+            "itementry": "molotov_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "concertina_wire_wz_item",
+            "itementry": "concertina_wire_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "cluster_semtex_wz_item",
+            "itementry": "cluster_semtex_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 40,
-            "var_a6762160": "hatchet_wz_item",
+            "itementry": "hatchet_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "trip_wire_wz_item",
+            "itementry": "trip_wire_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "barricade_wz_item",
+            "itementry": "barricade_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "trophy_system_wz_item",
+            "itementry": "trophy_system_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "grapple_wz_item",
+            "itementry": "grapple_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 40,
-            "var_a6762160": "itemlist_cymbol_monkey",
+            "itementry": "itemlist_cymbol_monkey",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 40,
-            "var_a6762160": "itemlist_smoke_grenade",
+            "itementry": "itemlist_smoke_grenade",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "recon_car_wz_item",
+            "itementry": "recon_car_wz_item",
             "maxweight": 100,
             "available": -1
         }

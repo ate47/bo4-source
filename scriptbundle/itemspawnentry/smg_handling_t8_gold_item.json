@@ -26,7 +26,7 @@
     "weapon": "weapon#hash_1f026006e0c05d22",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "attachslotstock": 1,
     "baseweapon": "smg_handling_t8_item",
     "var_65b3a12": 6,
@@ -42,6 +42,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#ui_icon_weapon_hud_smg_handling",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

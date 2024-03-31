@@ -2,87 +2,87 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "dart_wz_item",
+            "itementry": "dart_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ultimate_turret_wz_item",
+            "itementry": "ultimate_turret_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "shotgun_pump_t8_item",
+            "itementry": "shotgun_pump_t8_item",
             "var_3f8c08e3": "ammo_type_12ga_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "shotgun_semiauto_t8_item",
+            "itementry": "shotgun_semiauto_t8_item",
             "var_3f8c08e3": "ammo_type_12ga_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sig_blade_wz_item",
+            "itementry": "sig_blade_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "homunculus_wz_item",
+            "itementry": "homunculus_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ww_crossbow_impaler_t8_item",
+            "itementry": "ww_crossbow_impaler_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ray_gun_mk2x_t8_item",
+            "itementry": "ray_gun_mk2x_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ray_gun_mk2y_t8_item",
+            "itementry": "ray_gun_mk2y_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ray_gun_mk2z_t8_item",
+            "itementry": "ray_gun_mk2z_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "tomahawk_t8_wz_item",
+            "itementry": "tomahawk_t8_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ww_winters_fury_t8_item",
+            "itementry": "ww_winters_fury_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "death_of_orion_t8_item",
+            "itementry": "death_of_orion_t8_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "allistairs_folly_t8_item",
+            "itementry": "allistairs_folly_t8_item",
             "maxweight": 100,
             "available": -1
         }

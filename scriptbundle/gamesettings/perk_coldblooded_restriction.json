@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "perk_coldblooded_restriction",
     "displayname": "#hash_78d58ba1b6115ffa",
-    "var_9600a8ab": "#menu/enabled",
-    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/enabled",
+    "label2": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__talent_coldblooded__restricted"
 }

@@ -38,8 +38,8 @@ function function_58c9169d(localclientnum, oldval, newval, bnewent, binitialsnap
     count = var_2b9a81f7.size;
     var_65792f8b = map::get_script_bundle();
     foreach (i, button in var_366b2fbf) {
-        var_e1919f4e = button.script_int;
-        switch (var_e1919f4e) {
+        floornum = button.script_int;
+        switch (floornum) {
         case 1:
             var_8cb245a4 = i;
             break;
@@ -100,7 +100,7 @@ function function_58c9169d(localclientnum, oldval, newval, bnewent, binitialsnap
         }
         itemuimodel = createuimodel(var_aeb02423, "item" + i);
         setuimodelvalue(createuimodel(itemuimodel, "name"), var_65792f8b.var_88d22b06[1].var_aa061872[var_8cb245a4].displayname);
-        setuimodelvalue(createuimodel(itemuimodel, "id"), var_e1919f4e);
+        setuimodelvalue(createuimodel(itemuimodel, "id"), floornum);
     }
     setuimodelvalue(createuimodel(var_aeb02423, "count"), count);
     setuimodelvalue(createuimodel(var_aeb02423, "open"), 1);

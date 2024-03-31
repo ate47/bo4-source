@@ -5,7 +5,7 @@
             "var_910e2f9b": "j_helmet",
             "var_51e8b151": "j_head",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 2
         }
     ],

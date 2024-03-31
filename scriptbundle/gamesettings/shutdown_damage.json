@@ -9,9 +9,9 @@
     "name": "shutdown_damage",
     "displayname": "#hash_510464699f475ccb",
     "var_684ccd4c": "#menu/high",
-    "var_9600a8ab": "#hash_57fb4483fdb80448",
+    "label1": "#hash_57fb4483fdb80448",
     "var_71b6e020": "#menu/normal",
-    "var_bd2ff709": "#menu/low",
+    "label2": "#menu/low",
     "var_9de86f42": 4,
     "setting": "shutdownDamage"
 }

@@ -2,21 +2,21 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "lmg_standard_t8_gold_item",
+            "itementry": "lmg_standard_t8_gold_item",
             "var_3f8c08e3": "ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "lmg_spray_t8_gold_item",
+            "itementry": "lmg_spray_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "lmg_heavy_t8_gold_item",
+            "itementry": "lmg_heavy_t8_gold_item",
             "var_3f8c08e3": "ammo_type_50cal_item",
             "maxweight": 200,
             "available": -1

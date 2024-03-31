@@ -342,8 +342,8 @@ function private function_32f7227c(deathcircle, currentradius, localclientnum) {
         toplayervec = vectornormalize(endpos - startpos) * currentradius;
         eyepos = localplayer geteyeapprox();
     }
-    var_ba5c9ce6 = deathcircle.origin + toplayervec;
-    return (var_ba5c9ce6[0], var_ba5c9ce6[1], eyepos[2]);
+    returnvec = deathcircle.origin + toplayervec;
+    return (returnvec[0], returnvec[1], eyepos[2]);
 }
 
 // Namespace death_circle/death_circle

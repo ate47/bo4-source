@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "ray_gun_mk2x_t8_item",
+            "itementry": "ray_gun_mk2x_t8_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "ray_gun_mk2y_t8_item",
+            "itementry": "ray_gun_mk2y_t8_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "ray_gun_mk2z_t8_item",
+            "itementry": "ray_gun_mk2z_t8_item",
             "maxweight": 50,
             "available": -1
         }

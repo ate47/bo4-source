@@ -11,7 +11,7 @@
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
     "stackable": 1,
-    "var_50773731": -0.75,
+    "positionoffsetz": -0.75,
     "itemtype": "equipment",
     "pickupsound": "fly_pickup_cymbal_monkey"
 }

@@ -90,8 +90,8 @@ function function_e198bde3(var_ee58f129) {
 // Checksum 0x4ce8ab5f, Offset: 0x600
 // Size: 0x192
 function function_a5202150(var_ee58f129, weaponname) {
-    if (!isdefined(level.var_5ccfbb37)) {
-        level.var_5ccfbb37 = [];
+    if (!isdefined(level.gesturedata)) {
+        level.gesturedata = [];
     }
     var_45e6768d = function_e198bde3(var_ee58f129);
     if (!ishash(var_45e6768d)) {
@@ -101,16 +101,16 @@ function function_a5202150(var_ee58f129, weaponname) {
     if (!isdefined(weapon) || weapon == level.weaponnone) {
         return;
     }
-    if (!isdefined(level.var_5ccfbb37[var_45e6768d])) {
-        level.var_5ccfbb37[var_45e6768d] = spawnstruct();
+    if (!isdefined(level.gesturedata[var_45e6768d])) {
+        level.gesturedata[var_45e6768d] = spawnstruct();
     }
-    if (!isdefined(level.var_5ccfbb37[var_45e6768d].weapons)) {
-        level.var_5ccfbb37[var_45e6768d].weapons = [];
+    if (!isdefined(level.gesturedata[var_45e6768d].weapons)) {
+        level.gesturedata[var_45e6768d].weapons = [];
     }
-    if (!isdefined(level.var_5ccfbb37[var_45e6768d].weapons[weapon])) {
-        level.var_5ccfbb37[var_45e6768d].weapons[weapon] = spawnstruct();
+    if (!isdefined(level.gesturedata[var_45e6768d].weapons[weapon])) {
+        level.gesturedata[var_45e6768d].weapons[weapon] = spawnstruct();
     }
-    level.var_5ccfbb37[var_45e6768d].weapons[weapon].var_fa9d3758 = 1;
+    level.gesturedata[var_45e6768d].weapons[weapon].var_fa9d3758 = 1;
 }
 
 // Namespace gestures/gestures
@@ -118,17 +118,17 @@ function function_a5202150(var_ee58f129, weaponname) {
 // Checksum 0x3d048ea7, Offset: 0x7a0
 // Size: 0xba
 function function_ba4529d4(var_ee58f129) {
-    if (!isdefined(level.var_5ccfbb37)) {
-        level.var_5ccfbb37 = [];
+    if (!isdefined(level.gesturedata)) {
+        level.gesturedata = [];
     }
     var_45e6768d = function_e198bde3(var_ee58f129);
     if (!ishash(var_45e6768d)) {
         return;
     }
-    if (!isdefined(level.var_5ccfbb37[var_45e6768d])) {
-        level.var_5ccfbb37[var_45e6768d] = spawnstruct();
+    if (!isdefined(level.gesturedata[var_45e6768d])) {
+        level.gesturedata[var_45e6768d] = spawnstruct();
     }
-    level.var_5ccfbb37[var_45e6768d].var_93380a93 = 1;
+    level.gesturedata[var_45e6768d].var_93380a93 = 1;
 }
 
 // Namespace gestures/gestures
@@ -153,10 +153,10 @@ function function_8cc27b6d(var_ee58f129) {
     if (isdefined(weapon.var_554be9f7) && weapon.var_554be9f7 && self isfiring()) {
         return false;
     }
-    if (isdefined(level.var_5ccfbb37) && isdefined(level.var_5ccfbb37[var_45e6768d]) && isdefined(level.var_5ccfbb37[var_45e6768d].weapons) && isdefined(level.var_5ccfbb37[var_45e6768d].weapons[weapon.rootweapon]) && isdefined(level.var_5ccfbb37[var_45e6768d].weapons[weapon.rootweapon].var_fa9d3758) && level.var_5ccfbb37[var_45e6768d].weapons[weapon.rootweapon].var_fa9d3758) {
+    if (isdefined(level.gesturedata) && isdefined(level.gesturedata[var_45e6768d]) && isdefined(level.gesturedata[var_45e6768d].weapons) && isdefined(level.gesturedata[var_45e6768d].weapons[weapon.rootweapon]) && isdefined(level.gesturedata[var_45e6768d].weapons[weapon.rootweapon].var_fa9d3758) && level.gesturedata[var_45e6768d].weapons[weapon.rootweapon].var_fa9d3758) {
         return false;
     }
-    if (weapon.isdualwield && isdefined(level.var_5ccfbb37) && isdefined(level.var_5ccfbb37[var_45e6768d]) && isdefined(level.var_5ccfbb37[var_45e6768d].var_93380a93) && level.var_5ccfbb37[var_45e6768d].var_93380a93) {
+    if (weapon.isdualwield && isdefined(level.gesturedata) && isdefined(level.gesturedata[var_45e6768d]) && isdefined(level.gesturedata[var_45e6768d].var_93380a93) && level.gesturedata[var_45e6768d].var_93380a93) {
         return false;
     }
     if (self function_55acff10()) {
@@ -173,8 +173,8 @@ function function_c77349d4(var_851342cf) {
     var_ee58f129 = undefined;
     if (isdefined(var_851342cf)) {
         weapon = self getcurrentweapon();
-        var_53050505 = weapon.var_6566504b;
-        var_ee58f129 = function_d12fe2ad(var_851342cf, var_53050505);
+        stancetype = weapon.var_6566504b;
+        var_ee58f129 = function_d12fe2ad(var_851342cf, stancetype);
     }
     return var_ee58f129;
 }

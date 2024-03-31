@@ -405,18 +405,18 @@ function function_ae982bb9(str_type) {
         if (!isdefined(self.var_907d9581)) {
             self.var_907d9581 = 0;
         }
-        var_69836136 = #"challenges_challenge_completed";
+        str_prefix = #"challenges_challenge_completed";
         n_vo = self.var_907d9581;
         var_a1effcd = 9;
     } else {
         if (!isdefined(self.var_f87a90d4)) {
             self.var_f87a90d4 = 0;
         }
-        var_69836136 = #"hash_2a8f3ff63eb265a9";
+        str_prefix = #"hash_2a8f3ff63eb265a9";
         n_vo = self.var_f87a90d4;
         var_a1effcd = 9;
     }
-    level thread zm_audio::sndannouncerplayvox(var_69836136, self, undefined, n_vo);
+    level thread zm_audio::sndannouncerplayvox(str_prefix, self, undefined, n_vo);
     n_vo++;
     if (n_vo > var_a1effcd) {
         n_vo = 0;

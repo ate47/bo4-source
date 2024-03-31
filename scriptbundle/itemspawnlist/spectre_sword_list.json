@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "sig_blade_wz_item",
+            "itementry": "sig_blade_wz_item",
             "maxweight": 1,
             "available": 25
         }

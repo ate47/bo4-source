@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "sniperscope_wz_item",
+            "itementry": "sniperscope_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "acog_plus_wz_item",
+            "itementry": "acog_plus_wz_item",
             "maxweight": 150,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "fastmag_wz_item",
+            "itementry": "fastmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "extmag_wz_item",
+            "itementry": "extmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "stock_wz_item",
+            "itementry": "stock_wz_item",
             "maxweight": 100,
             "available": -1
         }

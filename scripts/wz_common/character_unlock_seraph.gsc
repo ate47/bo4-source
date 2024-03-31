@@ -188,7 +188,7 @@ function on_player_killed() {
 // Checksum 0xc025fa7c, Offset: 0x9c0
 // Size: 0xd4
 function function_1c4b5097(item) {
-    if (isdefined(item.var_a6762160) && item.var_a6762160.name === #"annihilator_wz_item") {
+    if (isdefined(item.itementry) && item.itementry.name === #"annihilator_wz_item") {
         var_c503939b = globallogic::function_e9e52d05();
         if (var_c503939b <= function_c816ea5b()) {
             if (self character_unlock::function_f0406288(#"seraph_unlock")) {

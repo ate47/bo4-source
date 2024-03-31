@@ -6,8 +6,8 @@
     "model": "#p8_backpack_military",
     "type": "itemspawnentry",
     "hintstring": "#hash_2b2096d421c8cd24",
-    "var_6731866b": -90,
-    "var_7adcadc1": -90,
+    "angleoffsety": -90,
+    "angleoffsetx": -90,
     "name": "backpack_item",
     "displayname": "#hash_2b2096d421c8cd24",
     "icon": "#ui_icon_inventory_p8_backpack_military",
@@ -15,6 +15,6 @@
     "rarity": "None",
     "handler": "#hash_6247ea34d3b1ddb6",
     "doubleinventory": 1,
-    "var_50773731": 5,
+    "positionoffsetz": 5,
     "itemtype": "backpack"
 }

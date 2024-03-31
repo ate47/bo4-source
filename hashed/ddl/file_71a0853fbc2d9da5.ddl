@@ -11,7 +11,7 @@ struct root {
     telemetry_header telemetry;
     int32 inflictorentnum;
     short otherclientnum;
-    hash hash_78304af3b1359f3c;
+    hash event_info;
     int32 infoindex;
     int32 inflictorenttype;
     int32 hash_4c1f1e20d78f3db3;

@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "wz_escape_wallbuy_guns_smg",
+            "itementry": "wz_escape_wallbuy_guns_smg",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "wz_escape_wallbuy_guns_shotgun",
+            "itementry": "wz_escape_wallbuy_guns_shotgun",
             "maxweight": 100,
             "available": -1
         }

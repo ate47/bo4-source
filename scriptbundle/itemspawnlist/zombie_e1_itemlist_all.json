@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "ray_gun_t8_item",
+            "itementry": "ray_gun_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "sniper_powerbolt_t8_gold_item",
+            "itementry": "sniper_powerbolt_t8_gold_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "ammo_type_50cal_item",
+            "itementry": "ammo_type_50cal_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "armor_item_large",
+            "itementry": "armor_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 1,
             "available": 1
         }

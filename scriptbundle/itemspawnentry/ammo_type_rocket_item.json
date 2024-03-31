@@ -6,7 +6,7 @@
     "weapon": "weapon#hash_2f2b5d4837fb0d6f",
     "type": "itemspawnentry",
     "hintstring": "#hash_3ccf9bf5cc21aeb3",
-    "var_6731866b": 60,
+    "angleoffsety": 60,
     "name": "ammo_type_rocket_item",
     "displayname": "#hash_3ccf9bf5cc21aeb3",
     "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_rockets",

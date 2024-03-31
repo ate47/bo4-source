@@ -1643,22 +1643,22 @@ function function_fe738a08(table_id) {
         forward = anglestoforward(unitrigger.angles);
         right = anglestoright(unitrigger.angles);
         var_21f5823e = vectortoangles(forward * -1);
-        var_916d3dfe = origin + 48 * forward;
+        plorigin = origin + 48 * forward;
         switch (entnum) {
         case 0:
-            var_916d3dfe = var_916d3dfe + 16 * right;
+            plorigin = plorigin + 16 * right;
             break;
         case 1:
-            var_916d3dfe = var_916d3dfe + 16 * forward;
+            plorigin = plorigin + 16 * forward;
             break;
         case 2:
-            var_916d3dfe = var_916d3dfe - 16 * right;
+            plorigin = plorigin - 16 * right;
             break;
         case 3:
-            var_916d3dfe = var_916d3dfe - 16 * forward;
+            plorigin = plorigin - 16 * forward;
             break;
         }
-        self setorigin(var_916d3dfe);
+        self setorigin(plorigin);
         self setplayerangles(var_21f5823e);
     #/
 }

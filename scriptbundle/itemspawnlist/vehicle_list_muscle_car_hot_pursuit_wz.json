@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_bandit_black",
+            "itementry": "muscle_car_wz_vehicle_bandit_black",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_racing_green",
+            "itementry": "muscle_car_wz_vehicle_racing_green",
             "maxweight": 6,
             "available": -1
         },
         {
             "minweight": 6,
-            "var_a6762160": "muscle_car_wz_vehicle_phantom",
+            "itementry": "muscle_car_wz_vehicle_phantom",
             "maxweight": 6,
             "available": -1
         }

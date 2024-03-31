@@ -10,7 +10,7 @@
     "label": "#menu/x_balls",
     "name": "ball_count",
     "displayname": "#hash_27d0130496c3e80e",
-    "var_9600a8ab": "#menu/1_ball",
+    "label1": "#menu/1_ball",
     "var_9de86f42": 5,
     "setting": "ballCount"
 }

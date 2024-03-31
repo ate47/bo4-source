@@ -174,8 +174,8 @@ function function_c67a5089() {
         }
         if (!enabled) {
             item_name = var_9ba1646c.required_item;
-            var_a6762160 = getscriptbundle(item_name);
-            if (isdefined(var_a6762160)) {
+            itementry = getscriptbundle(item_name);
+            if (isdefined(itementry)) {
                 item_world_fixup::remove_item(item_name);
             }
         }

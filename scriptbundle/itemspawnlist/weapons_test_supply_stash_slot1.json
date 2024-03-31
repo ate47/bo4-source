@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 40,
-            "var_a6762160": "weapons_test_guns",
+            "itementry": "weapons_test_guns",
             "maxweight": 40,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_guns_gold",
+            "itementry": "weapons_test_guns_gold",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_guns_operator",
+            "itementry": "weapons_test_guns_operator",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 60,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "armor_item_medium",
+            "itementry": "armor_item_medium",
             "maxweight": 60,
             "available": 1
         }

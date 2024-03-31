@@ -7,7 +7,7 @@
     "weapon": "weapon#hash_19c77a485123c58f",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "shotgun_pump_t8_item",
@@ -20,6 +20,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#ui_icon_weapon_hud_shotgun_pump",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

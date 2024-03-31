@@ -7,9 +7,9 @@
     "type": "gamesettings",
     "name": "random_objective_locations",
     "displayname": "#hash_766bba2ccc0f4317",
-    "var_9600a8ab": "#menu/linear",
+    "label1": "#menu/linear",
     "var_71b6e020": "#hash_2a0c72a43293dde0",
-    "var_bd2ff709": "#hash_1396b0c702a81da0",
+    "label2": "#hash_1396b0c702a81da0",
     "var_9de86f42": 3,
     "setting": "randomObjectiveLocations"
 }

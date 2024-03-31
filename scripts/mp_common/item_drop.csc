@@ -98,9 +98,9 @@ function private function_67189b6b(localclientnum, newval) {
             self.hidetime = -1;
         }
         if (self.id != 32767 && self.id < function_8322cf16()) {
-            self.var_a6762160 = function_b1702735(self.id).var_a6762160;
+            self.itementry = function_b1702735(self.id).itementry;
             self function_1fe1281(localclientnum, clientfield::get("dynamic_item_drop_count"));
-            if (self.var_a6762160.name == #"sig_blade_wz_item" && isdefined(level.var_5b2a8d88)) {
+            if (self.itementry.name == #"sig_blade_wz_item" && isdefined(level.var_5b2a8d88)) {
                 level.var_5b2a8d88[self.networkid] = 1;
             }
         }
@@ -148,7 +148,7 @@ function private function_1a45bc2a(item) {
 // Checksum 0xf26696c7, Offset: 0xa70
 // Size: 0x7c
 function function_fd47982d(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    if (!isdefined(self.id) || !isdefined(self.var_a6762160)) {
+    if (!isdefined(self.id) || !isdefined(self.itementry)) {
         return;
     }
     self function_1fe1281(localclientnum, newval);
@@ -166,12 +166,12 @@ function function_1fe1281(localclientnum, newval) {
         assert(isdefined(self.id));
     #/
     /#
-        assert(isdefined(self.var_a6762160));
+        assert(isdefined(self.itementry));
     #/
-    if (!isdefined(self.id) || !isdefined(self.var_a6762160)) {
+    if (!isdefined(self.id) || !isdefined(self.itementry)) {
         return;
     }
-    if (self.var_a6762160.itemtype === #"ammo" || self.var_a6762160.itemtype === #"armor" || self.var_a6762160.itemtype === #"weapon") {
+    if (self.itementry.itemtype === #"ammo" || self.itementry.itemtype === #"armor" || self.itementry.itemtype === #"weapon") {
         if (isdefined(self.amount) && newval !== self.amount) {
             item_inventory::function_31868137(localclientnum, self);
         }

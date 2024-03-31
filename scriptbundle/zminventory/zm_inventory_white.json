@@ -94,7 +94,7 @@
                             "clientfield": "#zm_white_ww_mk2v_ammo"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 },
                 {
                     "items": [
@@ -112,7 +112,7 @@
                             "clientfield": "#zm_white_ww_mk2x_ammo"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 },
                 {
                     "items": [
@@ -130,7 +130,7 @@
                             "clientfield": "#zm_white_ww_mk2y_ammo"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 },
                 {
                     "items": [
@@ -148,7 +148,7 @@
                             "clientfield": "#zm_white_ww_mk2z_ammo"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 }
             ],
             "var_7db3435c": 1,
@@ -171,7 +171,7 @@
                             "clientfield": "#zm_white_ww_husk_part"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 }
             ],
             "var_7db3435c": 1,
@@ -192,7 +192,7 @@
                             "clientfield": "#zm_white_private_mannequin_key_part"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 }
             ],
             "var_516217cd": 1,

@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "extmag_wz_item",
+            "itementry": "extmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "laser_sight_wz_item",
+            "itementry": "laser_sight_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "extbarrel_wz_item",
+            "itementry": "extbarrel_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "stock_wz_item",
+            "itementry": "stock_wz_item",
             "maxweight": 100,
             "available": -1
         }

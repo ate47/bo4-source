@@ -115,9 +115,9 @@ function function_d60e5a06(center, radius) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x2645ba92, Offset: 0x668
 // Size: 0xa0
-function function_b20df196(var_a4879492) {
+function function_b20df196(zoneid) {
     for (index = 0; index < level.var_160dcfef.var_1b8ab31d.size; index++) {
-        if (level.var_160dcfef.var_1b8ab31d[index]._id == var_a4879492) {
+        if (level.var_160dcfef.var_1b8ab31d[index]._id == zoneid) {
             level.var_160dcfef.var_1b8ab31d = array::remove_index(level.var_160dcfef.var_1b8ab31d, index, 0);
             break;
         }

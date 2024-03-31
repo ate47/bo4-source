@@ -197,13 +197,13 @@ function function_423a05a4(gametypestr) {
 // Params 4, eflags: 0x0
 // Checksum 0x326104e7, Offset: 0xc20
 // Size: 0xf8
-function function_5650f4ee(var_7a594c78, var_55a94d2c, actualteam, var_b8543545) {
+function function_5650f4ee(var_7a594c78, var_55a94d2c, actualteam, isstartspawn) {
     /#
         if (var_55a94d2c == "<unknown string>") {
             return 1;
-        } else if (var_55a94d2c == "<unknown string>" && !var_b8543545) {
+        } else if (var_55a94d2c == "<unknown string>" && !isstartspawn) {
             return 0;
-        } else if (var_b8543545 && var_55a94d2c != "<unknown string>") {
+        } else if (isstartspawn && var_55a94d2c != "<unknown string>") {
             return 0;
         } else if (var_55a94d2c == "<unknown string>" && var_7a594c78 != #"any") {
             if (var_7a594c78 == #"neutral" && isdefined(actualteam)) {
@@ -247,7 +247,7 @@ function function_88770699(spawnlist) {
                     level.var_3da2623a = array(level.var_3da2623a);
                 }
                 level.var_3da2623a[level.var_3da2623a.size] = spawnlist[spawn_point_index];
-                function_8beb6f7d(spawnlist[spawn_point_index], color);
+                drawspawnpoint(spawnlist[spawn_point_index], color);
             }
             waitframe(1);
         }
@@ -365,7 +365,7 @@ function hidestartspawnpoints() {
 // Params 4, eflags: 0x0
 // Checksum 0x65759567, Offset: 0x14e8
 // Size: 0x544
-function function_8beb6f7d(spawn_point, color, height, var_379ac7cc) {
+function drawspawnpoint(spawn_point, color, height, var_379ac7cc) {
     /#
         if (!isdefined(height) || height <= 0) {
             height = util::get_player_height();

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "armor_item_small",
+            "itementry": "armor_item_small",
             "maxweight": 100,
             "available": -1
         }

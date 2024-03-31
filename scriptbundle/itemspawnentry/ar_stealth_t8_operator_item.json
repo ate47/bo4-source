@@ -31,7 +31,7 @@
     "attachslotbody": 1,
     "type": "itemspawnentry",
     "var_7a80f06e": 1,
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "attachslotstock": 1,
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
@@ -49,7 +49,7 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_767f7a0d6eda9f24",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "var_9f307988": 1,
     "itemtype": "weapon"
 }

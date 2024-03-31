@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "ultimate_turret_wz_item",
+            "itementry": "ultimate_turret_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "dart_wz_item",
+            "itementry": "dart_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "backpack_item",
+            "itementry": "backpack_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 50,
             "available": 1
         }

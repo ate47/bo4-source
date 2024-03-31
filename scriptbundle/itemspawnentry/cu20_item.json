@@ -30,7 +30,7 @@
     "type": "itemspawnentry",
     "hintstring": "#hash_2e849d595fc7e02b",
     "unlockableitemref": "#wz_character_menendez",
-    "var_7adcadc1": 180,
+    "angleoffsetx": 180,
     "name": "cu20_item",
     "displayname": "#hash_2e849d595fc7e02b",
     "icon": "#ui_icon_inventory_necklace",
@@ -38,6 +38,6 @@
     "rarity": "None",
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#hash_5a1bf52f33c62b5d",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "quest"
 }

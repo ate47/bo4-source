@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "firing_range_list_item_default_event",
+            "itementry": "firing_range_list_item_default_event",
             "maxweight": 500,
             "available": -1
         }

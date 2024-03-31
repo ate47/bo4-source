@@ -17,7 +17,7 @@
     "handler": "#hash_31380667bf69d3a0",
     "pickupicon": "#ui_icon_inventory_spray_can",
     "stackable": 1,
-    "var_50773731": 0.5,
+    "positionoffsetz": 0.5,
     "itemtype": "resource",
     "pickupsound": "fly_pickup_paintcan"
 }

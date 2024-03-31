@@ -78,9 +78,9 @@ function init() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x27463b54, Offset: 0x838
 // Size: 0xa6
-function function_23873006(var_69836136, n_count) {
+function function_23873006(str_prefix, n_count) {
     for (i = 1; i <= n_count; i++) {
-        var_d9b71c6d = getent(var_69836136 + i, "targetname");
+        var_d9b71c6d = getent(str_prefix + i, "targetname");
         if (isdefined(var_d9b71c6d)) {
             var_d9b71c6d.script_vector = vectorscale((0, 0, 1), 45);
             array::add(level.var_2783a5a7, var_d9b71c6d, 0);

@@ -2,119 +2,119 @@
     "itemlist": [
         {
             "minweight": 10,
-            "var_a6762160": "lmg_standard_t8_operator_item",
+            "itementry": "lmg_standard_t8_operator_item",
             "var_3f8c08e3": "ammo_type_762_double_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "lmg_spray_t8_operator_item",
+            "itementry": "lmg_spray_t8_operator_item",
             "var_3f8c08e3": "ammo_type_556_double_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "ar_stealth_t8_operator_item",
+            "itementry": "ar_stealth_t8_operator_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "smg_fastfire_t8_operator_item",
+            "itementry": "smg_fastfire_t8_operator_item",
             "var_3f8c08e3": "ammo_type_45_double_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "concertina_wire_wz_item",
+            "itementry": "concertina_wire_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "concertina_wire_wz_item",
+            "itementry": "concertina_wire_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "concertina_wire_wz_item",
+            "itementry": "concertina_wire_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "barricade_wz_item",
+            "itementry": "barricade_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "barricade_wz_item",
+            "itementry": "barricade_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "trip_wire_wz_item",
+            "itementry": "trip_wire_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "trip_wire_wz_item",
+            "itementry": "trip_wire_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "trophy_system_wz_item",
+            "itementry": "trophy_system_wz_item",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "armor_item_large",
+            "itementry": "armor_item_large",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "perk_item_awareness",
+            "itementry": "perk_item_awareness",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "perk_item_lightweight",
+            "itementry": "perk_item_lightweight",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "ultimate_turret_wz_item",
+            "itementry": "ultimate_turret_wz_item",
             "maxweight": 10,
             "available": 1
         }

@@ -2,49 +2,49 @@
     "itemlist": [
         {
             "minweight": 25,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 25,
             "available": 1
         },
         {
             "minweight": 15,
-            "var_a6762160": "zombie_equipment_itemlist_pandemic",
+            "itementry": "zombie_equipment_itemlist_pandemic",
             "maxweight": 15,
             "available": 1
         },
         {
             "minweight": 5,
-            "var_a6762160": "lmg_standard_t8_gold_item",
+            "itementry": "lmg_standard_t8_gold_item",
             "maxweight": 5,
             "available": 1
         },
         {
             "minweight": 5,
-            "var_a6762160": "lmg_spray_t8_gold_item",
+            "itementry": "lmg_spray_t8_gold_item",
             "maxweight": 5,
             "available": 1
         },
         {
             "minweight": 5,
-            "var_a6762160": "lmg_heavy_t8_gold_item",
+            "itementry": "lmg_heavy_t8_gold_item",
             "maxweight": 5,
             "available": 1
         },
         {
             "minweight": 7,
-            "var_a6762160": "ammo_type_556_item",
+            "itementry": "ammo_type_556_item",
             "maxweight": 7,
             "available": 1
         },
         {
             "minweight": 7,
-            "var_a6762160": "ammo_type_762_item",
+            "itementry": "ammo_type_762_item",
             "maxweight": 7,
             "available": 1
         },
         {
             "minweight": 7,
-            "var_a6762160": "ammo_type_12ga_item",
+            "itementry": "ammo_type_12ga_item",
             "maxweight": 7,
             "available": 1
         }

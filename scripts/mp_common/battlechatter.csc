@@ -50,14 +50,14 @@ function function_b79dc4e7(player) {
 function function_4bc12499() {
     level endon(#"death");
     while (true) {
-        var_7f729179 = undefined;
-        var_7f729179 = level waittill(#"play_death_vox");
+        wait_result = undefined;
+        wait_result = level waittill(#"play_death_vox");
         players = getlocalplayers();
         player = players[0];
         if (isdefined(player)) {
-            dialogkey = player get_death_vox(var_7f729179.mod, var_7f729179.roleindex);
-            if (isdefined(dialogkey) && isdefined(var_7f729179.body)) {
-                var_7f729179.body playsound(0, dialogkey);
+            dialogkey = player get_death_vox(wait_result.mod, wait_result.roleindex);
+            if (isdefined(dialogkey) && isdefined(wait_result.body)) {
+                wait_result.body playsound(0, dialogkey);
             }
         }
     }

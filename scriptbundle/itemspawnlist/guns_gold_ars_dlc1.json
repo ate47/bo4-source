@@ -2,42 +2,42 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "ar_accurate_t8_gold_item",
+            "itementry": "ar_accurate_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_damage_t8_gold_item",
+            "itementry": "ar_damage_t8_gold_item",
             "var_3f8c08e3": "ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_modular_t8_gold_item",
+            "itementry": "ar_modular_t8_gold_item",
             "var_3f8c08e3": "ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_fastfire_t8_gold_item",
+            "itementry": "ar_fastfire_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_stealth_t8_gold_item",
+            "itementry": "ar_stealth_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_standard_t8_gold_item",
+            "itementry": "ar_standard_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1

@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "pbr_wz_vehicle_black",
+            "itementry": "pbr_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "pbr_wz_vehicle_green",
+            "itementry": "pbr_wz_vehicle_green",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "pbr_wz_vehicle_grey",
+            "itementry": "pbr_wz_vehicle_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "pbr_wz_vehicle_tan",
+            "itementry": "pbr_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         }

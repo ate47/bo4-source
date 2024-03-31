@@ -10,9 +10,9 @@
     "type": "gamesettings",
     "name": "zm_healthregendelay",
     "displayname": "#hash_9625d278567087c",
-    "var_9600a8ab": "#hash_7055d21eae0da1ef",
+    "label1": "#hash_7055d21eae0da1ef",
     "var_71b6e020": "#hash_58d704c861150b81",
-    "var_bd2ff709": "#hash_1ba60b6389d20648",
+    "label2": "#hash_1ba60b6389d20648",
     "var_9de86f42": 3,
     "setting": "zmHealthRegenDelay"
 }

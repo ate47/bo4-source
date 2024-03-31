@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "cu31_item",
+            "itementry": "cu31_item",
             "maxweight": 1,
             "available": 1
         }

@@ -147,7 +147,7 @@ function function_c710099c(event, params) {
         item.event = event;
         item.handlerfunc = handler.handlerfunc;
         if (isstruct(params)) {
-            item.params = function_2e532eed(params);
+            item.params = structcopy(params);
         }
         if (!isdefined(var_c10e92a2) || self [[ var_c10e92a2 ]](name, queue, item)) {
             queue_item(queue, item);

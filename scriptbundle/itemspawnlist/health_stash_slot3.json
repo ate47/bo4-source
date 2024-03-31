@@ -2,12 +2,12 @@
     "itemlist": [
         {
             "minweight": 80,
-            "var_a6762160": "health_item_small",
+            "itementry": "health_item_small",
             "maxweight": 80,
             "available": -1
         },
         {
-            "var_a6762160": "perk_item_outlander",
+            "itementry": "perk_item_outlander",
             "maxweight": 10,
             "available": -1
         },

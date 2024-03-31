@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "hellhound_itemlist_r",
+            "itementry": "hellhound_itemlist_r",
             "maxweight": 1,
             "available": 1
         }

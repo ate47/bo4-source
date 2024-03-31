@@ -8,7 +8,7 @@
     "name": "zm_aoe_spear",
     "var_a8609f98": "damage_light",
     "endrumble": "damage_heavy",
-    "var_e4c85a5f": 2,
+    "earthquakeduration": 2,
     "loop_effect": "#hash_1537ea9ec67435d0",
     "startrumble": "damage_heavy"
 }

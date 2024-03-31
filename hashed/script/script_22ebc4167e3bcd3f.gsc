@@ -501,7 +501,7 @@ function function_d0bb3c35() {
         n_wait_time = n_wait_time + 30;
     }
     wait(n_wait_time);
-    self zm_powerups::hide_and_show(&zm_powerups::function_e3f30b, &zm_powerups::powerup_show);
+    self zm_powerups::hide_and_show(&zm_powerups::powerup_hide, &zm_powerups::powerup_show);
     self delete();
 }
 

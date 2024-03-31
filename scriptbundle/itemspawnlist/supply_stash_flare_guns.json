@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "flare_gun_wz_item",
+            "itementry": "flare_gun_wz_item",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 50,
-            "var_a6762160": "flare_gun_veh_wz_item",
+            "itementry": "flare_gun_veh_wz_item",
             "maxweight": 50,
             "available": -1
         }

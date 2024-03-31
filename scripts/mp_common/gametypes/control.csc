@@ -350,7 +350,7 @@ function function_185b0894(localclientnum, oldval, newval) {
     level endon(#"game_ended");
     self notify("4f9ede08240c30af");
     self endon("4f9ede08240c30af");
-    var_4a614782 = 0.8;
+    basepitch = 0.8;
     var_9a7dc638 = 1;
     var_f802a6b1 = 255;
     progresspercentage = 1 / var_f802a6b1;
@@ -373,7 +373,7 @@ function function_185b0894(localclientnum, oldval, newval) {
                     zone.soundid = zone.var_6d7365a9 playloopsound(#"hash_5a0b392405d5f148");
                     zone.var_ce6accbd = 1;
                 }
-                newpitch = var_4a614782 + var_9a7dc638 * progress * progresspercentage;
+                newpitch = basepitch + var_9a7dc638 * progress * progresspercentage;
                 setsoundpitch(zone.soundid, newpitch);
             }
             zone.var_cbf4cb85 = progress;

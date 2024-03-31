@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "itemlist_cymbol_monkey",
+            "itementry": "itemlist_cymbol_monkey",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "wraithfire_wz_item",
+            "itementry": "wraithfire_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "acid_bomb_wz_item",
+            "itementry": "acid_bomb_wz_item",
             "maxweight": 100,
             "available": -1
         }

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_atv_wz",
+            "itementry": "vehicle_list_atv_wz",
             "maxweight": 1,
             "available": 8
         },

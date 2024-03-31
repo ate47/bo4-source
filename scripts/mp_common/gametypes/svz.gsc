@@ -251,7 +251,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
         return;
     }
     if (self.team == game.defenders) {
-        self.var_97181f3c = 1;
+        self.iseliminated = 1;
         clientfield::set_player_uimodel("hudItems.playerLivesCount", 0);
     }
     if (isdefined(level.droppedtagrespawn) && level.droppedtagrespawn) {

@@ -1360,7 +1360,7 @@ class csceneobject : cscriptbundleobjectbase {
     // Checksum 0x95784002, Offset: 0x1e50
     // Size: 0x54
     function function_71b06874(n_shot) {
-        if (isdefined(self._s.shots[n_shot].var_51093f2d) && self._s.shots[n_shot].var_51093f2d) {
+        if (isdefined(self._s.shots[n_shot].disableshot) && self._s.shots[n_shot].disableshot) {
             return false;
         }
         return true;

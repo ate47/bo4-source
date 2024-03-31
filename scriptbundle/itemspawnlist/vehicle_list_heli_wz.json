@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "helicopter_light_wz_vehicle_tan",
+            "itementry": "helicopter_light_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "helicopter_light_wz_vehicle_grey",
+            "itementry": "helicopter_light_wz_vehicle_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "helicopter_light_wz_vehicle_dark",
+            "itementry": "helicopter_light_wz_vehicle_dark",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "helicopter_light_wz_vehicle_black",
+            "itementry": "helicopter_light_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         }

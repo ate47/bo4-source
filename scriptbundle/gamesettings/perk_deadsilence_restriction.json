@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "perk_deadsilence_restriction",
     "displayname": "#hash_6d0f4cbc969da6bc",
-    "var_9600a8ab": "#menu/enabled",
-    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/enabled",
+    "label2": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__talent_deadsilence__restricted"
 }

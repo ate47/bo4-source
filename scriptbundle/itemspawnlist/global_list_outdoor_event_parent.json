@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 180,
-            "var_a6762160": "global_list_outdoor_event_water_balloon",
+            "itementry": "global_list_outdoor_event_water_balloon",
             "maxweight": 200,
             "available": -1
         }

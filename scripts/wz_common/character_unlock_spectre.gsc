@@ -39,8 +39,8 @@ function function_2613aeec(enabled) {
 // Checksum 0xa1791132, Offset: 0x1a0
 // Size: 0xc4
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu34_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu34_item") {
         if (self character_unlock::function_f0406288(#"spectre_unlock")) {
             if (self stats::get_stat_global(#"hash_41f134c3e727d877") >= 20) {
                 self character_unlock::function_c8beca5e(#"spectre_unlock", #"hash_27023afb3f91aba5", 1);

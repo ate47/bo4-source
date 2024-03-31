@@ -4,7 +4,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#hash_6042372cd71b6dd0",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_65b3a12": 6,
     "name": "allistairs_folly_t8_item",
     "displayname": "#hash_4e413fbdde10b051",
@@ -13,6 +13,6 @@
     "rarity": "Common",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#hash_78a40b9153efd443",
-    "var_50773731": 3,
+    "positionoffsetz": 3,
     "itemtype": "weapon"
 }

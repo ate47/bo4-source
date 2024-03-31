@@ -74,7 +74,7 @@ function private _calculatepathtopoints(entity, points) {
     path = undefined;
     shortestpath = undefined;
     entradius = entity getpathfindingradius();
-    var_bb52d328 = getclosestpointonnavmesh(entity.origin, 200, entradius);
+    entposition = getclosestpointonnavmesh(entity.origin, 200, entradius);
     for (index = 0; index < points.size; index = index + 16) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
@@ -83,9 +83,9 @@ function private _calculatepathtopoints(entity, points) {
             }
         }
         if (isbot(entity)) {
-            possiblepath = generatenavmeshpath(var_bb52d328, goalpoints, entity, undefined, undefined, 5000);
+            possiblepath = generatenavmeshpath(entposition, goalpoints, entity, undefined, undefined, 5000);
         } else {
-            possiblepath = generatenavmeshpath(var_bb52d328, goalpoints, undefined, undefined, undefined, 5000);
+            possiblepath = generatenavmeshpath(entposition, goalpoints, undefined, undefined, undefined, 5000);
         }
         if (isdefined(possiblepath) && possiblepath.status === "succeeded") {
             if (!isdefined(shortestpath) || possiblepath.pathdistance < shortestpath) {
@@ -314,7 +314,7 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.takedamage ? "<unknown string>" : "<unknown string>"), member.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
             var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
             var_d695a79f = var_d695a79f + yspacing;
-            var_cf1c1552 = var_d695a79f;
+            newyoffset = var_d695a79f;
             if (member isinvehicle()) {
                 vehicle = member getvehicleoccupied();
                 seatnum = vehicle getoccupantseat(member);
@@ -348,7 +348,7 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.takedamage ? "<unknown string>" : "<unknown string>"), vehicle.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
                 var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
                 var_d695a79f = var_d695a79f + yspacing;
-                var_d695a79f = var_cf1c1552;
+                var_d695a79f = newyoffset;
                 var_1b2a0645 = var_1b2a0645 - var_4fe31551;
                 var_1b2a0645 = var_1b2a0645 - var_96e1d277;
             }

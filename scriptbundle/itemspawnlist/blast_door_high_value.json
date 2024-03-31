@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "floor_list_sniper",
+            "itementry": "floor_list_sniper",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "armor_item_large",
+            "itementry": "armor_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "backpack_item",
+            "itementry": "backpack_item",
             "maxweight": 1,
             "available": 1
         }

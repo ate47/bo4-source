@@ -2,21 +2,21 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "sniper_quickscope_t8_gold_item",
+            "itementry": "sniper_quickscope_t8_gold_item",
             "var_3f8c08e3": "ammo_type_338_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sniper_powerbolt_t8_gold_item",
+            "itementry": "sniper_powerbolt_t8_gold_item",
             "var_3f8c08e3": "ammo_type_50cal_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sniper_fastrechamber_t8_gold_item",
+            "itementry": "sniper_fastrechamber_t8_gold_item",
             "var_3f8c08e3": "ammo_type_338_item",
             "maxweight": 100,
             "available": -1

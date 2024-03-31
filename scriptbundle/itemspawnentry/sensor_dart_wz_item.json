@@ -4,7 +4,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#eq_sensor_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": -90,
+    "angleoffsetz": -90,
     "name": "sensor_dart_wz_item",
     "displayname": "#hash_504ad2d8233fb0ac",
     "stackcount": 1,
@@ -12,6 +12,6 @@
     "modelscale": 1,
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "equipment"
 }

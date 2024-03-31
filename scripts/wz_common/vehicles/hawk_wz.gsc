@@ -55,7 +55,7 @@ function function_3675de8b() {
 // Size: 0x11c
 function private on_item_use(params) {
     self endon(#"death", #"disconnect", #"begin_grenade_tracking", #"grenade_throw_cancelled");
-    if (!isdefined(params.item) || !isdefined(params.item.var_a6762160) || !isdefined(params.item.var_a6762160.weapon) || params.item.var_a6762160.weapon.name != #"eq_hawk") {
+    if (!isdefined(params.item) || !isdefined(params.item.itementry) || !isdefined(params.item.itementry.weapon) || params.item.itementry.weapon.name != #"eq_hawk") {
         return;
     }
     self waittill(#"grenade_fire");

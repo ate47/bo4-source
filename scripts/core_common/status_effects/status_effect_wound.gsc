@@ -33,14 +33,14 @@ function wound_apply(var_756fda07, weapon, applicant) {
     if (!isdefined(var_756fda07.var_752c0834)) {
         return;
     }
-    var_9e04a872 = var_756fda07.var_752c0834;
-    if (self.owner.maxhealth - var_9e04a872 < var_756fda07.var_8ea635df) {
-        var_9e04a872 = self.owner.maxhealth - var_756fda07.var_8ea635df;
+    healthreduction = var_756fda07.var_752c0834;
+    if (self.owner.maxhealth - healthreduction < var_756fda07.var_8ea635df) {
+        healthreduction = self.owner.maxhealth - var_756fda07.var_8ea635df;
     }
     var_da1d7911 = [];
     var_da1d7911[0] = {#var_b861a047:undefined, #name:"cleanse_buff"};
     if (self.owner.health > 0) {
-        self.owner player::function_2a67df65(self.var_4a3f5865, var_9e04a872 * -1, var_da1d7911);
+        self.owner player::function_2a67df65(self.var_4a3f5865, healthreduction * -1, var_da1d7911);
     }
     self.var_18d16a6b = var_756fda07.var_18d16a6b;
     if (self.owner.health > self.owner.var_66cb03ad) {

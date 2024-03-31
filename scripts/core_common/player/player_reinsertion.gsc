@@ -222,9 +222,9 @@ function private function_14f79b33(center, radius, height, var_e294ac7d) {
         #/
         var_9c068ab1 = vectornormalize(level.reinsertion.vehicle.origin - circle_origin);
         var_c40f2e06 = vectortoangles(var_9c068ab1);
-        var_1288d4ef = var_c40f2e06[1];
+        current_yaw = var_c40f2e06[1];
         var_c5a2c1c9 = var_5d59bc67 / circle_radius * 57.2958;
-        new_yaw = var_1288d4ef + time_step * var_c5a2c1c9;
+        new_yaw = current_yaw + time_step * var_c5a2c1c9;
         new_angles = (0, new_yaw, 0);
         goal = circle_origin + anglestoforward(new_angles) * circle_radius;
         goal = function_521bff14(circle_origin, goal, var_e294ac7d);
@@ -615,8 +615,8 @@ function function_5425f45d() {
                 height = 12000;
             }
             portal.origin = (x_pos, y_pos, z_pos);
-            var_10fdb78b = level.deathcircleindex + 1;
-            var_b0221a68 = math::clamp(var_10fdb78b, 0, var_d89a84b0);
+            nextcircleindex = level.deathcircleindex + 1;
+            var_b0221a68 = math::clamp(nextcircleindex, 0, var_d89a84b0);
             nextcircle = level.deathcircles[var_b0221a68];
             if (isdefined(nextcircle)) {
                 target = nextcircle.origin - portal.origin;

@@ -9,9 +9,9 @@
     "name": "zm_laststandduration",
     "displayname": "#hash_74369b37a7e6939d",
     "var_684ccd4c": "#hash_58d704c861150b81",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
+    "label1": "#hash_68b65fb510ccd214",
     "var_71b6e020": "#hash_1ba60b6389d20648",
-    "var_bd2ff709": "#hash_7055d21eae0da1ef",
+    "label2": "#hash_7055d21eae0da1ef",
     "var_9de86f42": 4,
     "setting": "zmLastStandDuration"
 }

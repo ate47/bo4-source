@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_supply_stash_slot1",
+            "itementry": "weapons_test_supply_stash_slot1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_supply_stash_slot2",
+            "itementry": "weapons_test_supply_stash_slot2",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_supply_stash_slot3",
+            "itementry": "weapons_test_supply_stash_slot3",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_supply_stash_slot4",
+            "itementry": "weapons_test_supply_stash_slot4",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_supply_stash_slot5",
+            "itementry": "weapons_test_supply_stash_slot5",
             "maxweight": 50,
             "available": 2
         }

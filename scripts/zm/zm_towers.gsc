@@ -930,13 +930,13 @@ function function_5b2f92b3() {
 function setup_end_igc(var_24486b2e = 1) {
     level flag::clear("spawn_zombies");
     level flag::set(#"pause_round_timeout");
-    var_cc8c907b = getent("mdl_maelstrom_initiate", "targetname");
-    var_64dcf130 = getent("mdl_maelstrom_initiate_on", "targetname");
-    if (isdefined(var_cc8c907b)) {
-        var_cc8c907b delete();
+    mdl_pedestal = getent("mdl_maelstrom_initiate", "targetname");
+    mdl_pedestal_on = getent("mdl_maelstrom_initiate_on", "targetname");
+    if (isdefined(mdl_pedestal)) {
+        mdl_pedestal delete();
     }
-    if (isdefined(var_64dcf130)) {
-        var_64dcf130 delete();
+    if (isdefined(mdl_pedestal_on)) {
+        mdl_pedestal_on delete();
     }
     if (var_24486b2e) {
         level zm_utility::function_9ad5aeb1(0, 1, 1, 1, 0);

@@ -1307,7 +1307,7 @@ function remove_when_done(killstreak, haskillstreakbeenused, isfrominventory) {
     waittillframeend();
     self unhide_compass();
     killstreak_weapon = get_killstreak_weapon(killstreaktype);
-    if (killstreak_weapon.var_7d24272c) {
+    if (killstreak_weapon.isgestureweapon) {
         if ((!(isdefined(level.usingmomentum) && level.usingmomentum) || isdefined(isfrominventory) && isfrominventory) && waitresult.is_successful) {
             activate_next();
         }

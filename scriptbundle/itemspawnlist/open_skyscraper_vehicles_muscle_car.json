@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_muscle_car_wz",
+            "itementry": "vehicle_list_muscle_car_wz",
             "maxweight": 1,
             "available": 20
         },

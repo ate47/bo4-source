@@ -474,8 +474,8 @@ function private function_3d752709(enemy, target) {
     var_c2ee8451 = (facingvec[0], facingvec[1], 0);
     var_3e3c8075 = vectornormalize(var_3e3c8075);
     var_c2ee8451 = vectornormalize(var_c2ee8451);
-    var_34e02165 = vectordot(var_c2ee8451, var_3e3c8075);
-    if (var_34e02165 < 0) {
+    enemydot = vectordot(var_c2ee8451, var_3e3c8075);
+    if (enemydot < 0) {
         return false;
     }
     return true;
@@ -543,25 +543,25 @@ function private blightfatherdeathstart(entity) {
 function private function_ac921de9(entity) {
     meleerange = entity ai::function_9139c839().var_558fb394;
     meleerangesq = meleerange * meleerange;
-    var_5c2f5f9a = [];
+    potential_players = [];
     foreach (player in getplayers()) {
         if (meleerangesq < distancesquared(entity.origin, player.origin)) {
             continue;
         }
-        if (!isdefined(var_5c2f5f9a)) {
-            var_5c2f5f9a = [];
-        } else if (!isarray(var_5c2f5f9a)) {
-            var_5c2f5f9a = array(var_5c2f5f9a);
+        if (!isdefined(potential_players)) {
+            potential_players = [];
+        } else if (!isarray(potential_players)) {
+            potential_players = array(potential_players);
         }
-        if (!isinarray(var_5c2f5f9a, player)) {
-            var_5c2f5f9a[var_5c2f5f9a.size] = player;
+        if (!isinarray(potential_players, player)) {
+            potential_players[potential_players.size] = player;
         }
     }
     bhtnactionstartevent(entity, "attack_melee");
     registernotice_walla = anglestoforward(entity.angles);
     var_2f706708 = entity gettagorigin("j_spine4");
     var_9b246038 = entity ai::function_9139c839().var_4e8d4c24;
-    foreach (player in var_5c2f5f9a) {
+    foreach (player in potential_players) {
         vec_to_player = vectornormalize(player.origin - entity.origin);
         if (vectordot(vec_to_player, registernotice_walla) < var_9b246038) {
             continue;

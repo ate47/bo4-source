@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 200,
-            "var_a6762160": "melee_weapons",
+            "itementry": "melee_weapons",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "suppressor_wz_item",
+            "itementry": "suppressor_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sniperscope_wz_item",
+            "itementry": "sniperscope_wz_item",
             "maxweight": 100,
             "available": -1
         }

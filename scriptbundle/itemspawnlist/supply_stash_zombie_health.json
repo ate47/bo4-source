@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 300,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 300,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 400,
             "available": -1
         }

@@ -34,7 +34,7 @@
     "label": "#menu/x_lives",
     "name": "bonus_lives_for_capturing_zone",
     "displayname": "#hash_24641316dd8113cf",
-    "var_bd2ff709": "#menu/1_life",
+    "label2": "#menu/1_life",
     "var_9de86f42": 29,
     "setting": "bonusLivesForCapturingZone"
 }

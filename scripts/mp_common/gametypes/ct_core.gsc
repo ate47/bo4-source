@@ -161,7 +161,7 @@ function function_1dd43d36(spawn_weapon) {
         }
     }
     if (isdefined(player.playerrole)) {
-        primaryoffhand = getweapon(player.playerrole.var_a7e7cb46);
+        primaryoffhand = getweapon(player.playerrole.primaryequipment);
         player giveweapon(primaryoffhand);
         player loadout::function_442539("primarygrenade", primaryoffhand);
         player loadout::function_c3448ab0("specialgrenade", undefined, 1);

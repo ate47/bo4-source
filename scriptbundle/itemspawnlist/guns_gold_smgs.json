@@ -2,35 +2,35 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "smg_accurate_t8_gold_item",
+            "itementry": "smg_accurate_t8_gold_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_fastfire_t8_gold_item",
+            "itementry": "smg_fastfire_t8_gold_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_capacity_t8_gold_item",
+            "itementry": "smg_capacity_t8_gold_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_handling_t8_gold_item",
+            "itementry": "smg_handling_t8_gold_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_standard_t8_gold_item",
+            "itementry": "smg_standard_t8_gold_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 200,
             "available": -1

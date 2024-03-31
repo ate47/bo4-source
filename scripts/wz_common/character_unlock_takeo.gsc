@@ -96,8 +96,8 @@ function function_d5cd583a(activator, laststate, state) {
         return;
     }
     point = function_4ba8fde(#"cu18_item");
-    if (isdefined(point) && isdefined(point.var_a6762160)) {
-        dropitem = self item_drop::drop_item(point.var_a6762160.weapon, 1, point.var_a6762160.amount, point.id, spawnpos.origin, spawnpos.angles);
+    if (isdefined(point) && isdefined(point.itementry)) {
+        dropitem = self item_drop::drop_item(point.itementry.weapon, 1, point.itementry.amount, point.id, spawnpos.origin, spawnpos.angles);
     }
 }
 
@@ -106,8 +106,8 @@ function function_d5cd583a(activator, laststate, state) {
 // Checksum 0xf10ad1fc, Offset: 0x570
 // Size: 0x12c
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu18_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu18_item") {
         if (self character_unlock::function_f0406288(#"takeo_unlock")) {
             self function_895b40e4();
             self character_unlock::function_c8beca5e(#"takeo_unlock", #"hash_56b5eb94fb75cbed", 1);
@@ -132,7 +132,7 @@ function on_item_use(params) {
         return;
     }
     item = params.item;
-    if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"equipment") {
+    if (isdefined(item.itementry) && item.itementry.itemtype === #"equipment") {
         if (self character_unlock::function_c70bcc7a(#"takeo_unlock")) {
             self character_unlock::function_c8beca5e(#"takeo_unlock", #"hash_56b5eb94fb75cbed", 2);
             self.var_979273e3 = 1;

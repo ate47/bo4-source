@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "melee_secretsanta_t8_item",
+            "itementry": "melee_secretsanta_t8_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "melee_slaybell_t8_item",
+            "itementry": "melee_slaybell_t8_item",
             "maxweight": 100,
             "available": 1
         }

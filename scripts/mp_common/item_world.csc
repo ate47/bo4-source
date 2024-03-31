@@ -158,7 +158,7 @@ function private function_cdd9b388() {
                     origin = self.origin;
                     var_f4b807cb = function_2e3efdda(origin, undefined, 128, 2000);
                     foreach (item in var_f4b807cb) {
-                        print3d(item.origin, "<unknown string>" + item.networkid + "<unknown string>" + item.var_a6762160.name, (0, 0, 1), 1, 0.4);
+                        print3d(item.origin, "<unknown string>" + item.networkid + "<unknown string>" + item.itementry.name, (0, 0, 1), 1, 0.4);
                     }
                 }
             }
@@ -203,7 +203,7 @@ function private function_48b8fc19(localclientnum) {
     var_7d8899cd = function_d634ed59();
     for (index = 0; index < var_7d8899cd; index++) {
         point = function_b1702735(index);
-        if (!isdefined(point) || !isdefined(point.var_a6762160)) {
+        if (!isdefined(point) || !isdefined(point.itementry)) {
             break;
         }
         xmodel = function_78a9fd5f(point);
@@ -220,7 +220,7 @@ function private function_48b8fc19(localclientnum) {
     wait(15);
     for (index = 0; index < var_7d8899cd; index++) {
         point = function_b1702735(index);
-        if (!isdefined(point) || !isdefined(point.var_a6762160)) {
+        if (!isdefined(point) || !isdefined(point.itementry)) {
             break;
         }
         xmodel = function_78a9fd5f(point);
@@ -309,16 +309,16 @@ function private function_237888bb(localclientnum) {
 // Params 5, eflags: 0x4
 // Checksum 0x2d6ee921, Offset: 0x1e28
 // Size: 0x746
-function private function_78bf134c(localclientnum, clientdata, networkid, model, var_a6762160) {
+function private function_78bf134c(localclientnum, clientdata, networkid, model, itementry) {
     if (!isdefined(model)) {
         return;
     }
     player = function_5c10bd79(localclientnum);
     var_8ad7f92f = #"hash_29dbf9ddda64fc5a";
-    if (isdefined(var_a6762160)) {
-        switch (var_a6762160.rarity) {
+    if (isdefined(itementry)) {
+        switch (itementry.rarity) {
         case #"none":
-            if (isdefined(var_a6762160.unlockableitemref) && var_a6762160.itemtype != #"weapon") {
+            if (isdefined(itementry.unlockableitemref) && itementry.itemtype != #"weapon") {
                 var_8ad7f92f = #"hash_6f1ab68ac78ac2ea";
                 break;
             }
@@ -335,12 +335,12 @@ function private function_78bf134c(localclientnum, clientdata, networkid, model,
             var_8ad7f92f = #"hash_4368c406e6a21060";
             break;
         }
-        if (var_a6762160.itemtype == #"resource") {
+        if (itementry.itemtype == #"resource") {
             var_8ad7f92f = #"hash_2f523d47697a9ce3";
-        } else if (var_a6762160.itemtype == #"cash") {
+        } else if (itementry.itemtype == #"cash") {
             var_8ad7f92f = #"hash_5fbd33a25f74ddf0";
         }
-        if (isdefined(var_a6762160.var_47f145b4) && var_a6762160.var_47f145b4) {
+        if (isdefined(itementry.var_47f145b4) && itementry.var_47f145b4) {
             var_8ad7f92f = #"hash_52f7937d76fafca0";
         }
     } else {
@@ -366,10 +366,10 @@ function private function_78bf134c(localclientnum, clientdata, networkid, model,
     if (isdefined(networkid) && isdefined(clientdata) && isdefined(clientdata.var_ffc1c0e1)) {
         if (isdefined(clientdata.var_ffc1c0e1[networkid]) && clientdata.var_ffc1c0e1[networkid].servertime > getservertime(localclientnum, 1)) {
             var_8ad7f92f = #"hash_3d6eb4b9bbc74fbd";
-            if (isdefined(var_a6762160)) {
-                if (var_a6762160.rarity == #"epic") {
+            if (isdefined(itementry)) {
+                if (itementry.rarity == #"epic") {
                     var_8ad7f92f = #"hash_269ac932c6e6b81f";
-                } else if (isdefined(var_a6762160.unlockableitemref)) {
+                } else if (isdefined(itementry.unlockableitemref)) {
                     var_8ad7f92f = #"hash_12076df5fcd3d751";
                 }
             }
@@ -387,14 +387,14 @@ function private function_78bf134c(localclientnum, clientdata, networkid, model,
         }
     }
     model.var_2584a90d = var_8ad7f92f;
-    if (isdefined(var_a6762160) && isdefined(var_a6762160.worldfx) && !isdefined(model.modelfx) && !model ishidden()) {
-        originoffset = (isdefined(var_a6762160.var_5dc4470b) ? var_a6762160.var_5dc4470b : 0, isdefined(var_a6762160.var_54a3b4ca) ? var_a6762160.var_54a3b4ca : 0, isdefined(var_a6762160.var_3e688854) ? var_a6762160.var_3e688854 : 0);
+    if (isdefined(itementry) && isdefined(itementry.worldfx) && !isdefined(model.modelfx) && !model ishidden()) {
+        originoffset = (isdefined(itementry.var_5dc4470b) ? itementry.var_5dc4470b : 0, isdefined(itementry.var_54a3b4ca) ? itementry.var_54a3b4ca : 0, isdefined(itementry.var_3e688854) ? itementry.var_3e688854 : 0);
         originoffset = rotatepoint(originoffset * -1, model.angles);
-        originoffset = originoffset + rotatepoint((isdefined(var_a6762160.var_22d128f2) ? var_a6762160.var_22d128f2 : 0, isdefined(var_a6762160.var_48907470) ? var_a6762160.var_48907470 : 0, isdefined(var_a6762160.var_702943a1) ? var_a6762160.var_702943a1 : 0), model.angles);
-        angles = combineangles(model.angles, (isdefined(var_a6762160.var_15b88fde) ? var_a6762160.var_15b88fde : 0, isdefined(var_a6762160.var_8c9a7dc8) ? var_a6762160.var_8c9a7dc8 : 0, isdefined(var_a6762160.var_7a51d937) ? var_a6762160.var_7a51d937 : 0));
+        originoffset = originoffset + rotatepoint((isdefined(itementry.var_22d128f2) ? itementry.var_22d128f2 : 0, isdefined(itementry.var_48907470) ? itementry.var_48907470 : 0, isdefined(itementry.var_702943a1) ? itementry.var_702943a1 : 0), model.angles);
+        angles = combineangles(model.angles, (isdefined(itementry.var_15b88fde) ? itementry.var_15b88fde : 0, isdefined(itementry.var_8c9a7dc8) ? itementry.var_8c9a7dc8 : 0, isdefined(itementry.var_7a51d937) ? itementry.var_7a51d937 : 0));
         forward = anglestoforward(angles);
         up = anglestoup(angles);
-        model.modelfx = playfx(localclientnum, var_a6762160.worldfx, model.origin + originoffset, forward, up);
+        model.modelfx = playfx(localclientnum, itementry.worldfx, model.origin + originoffset, forward, up);
     }
 }
 
@@ -496,7 +496,7 @@ function private _draw(localclientnum, draworigin) {
         } else {
             model.origin = item.origin;
             model.angles = item.angles;
-            model function_e082e650(localclientnum, item, function_78a9fd5f(item), item.var_a6762160.modelscale);
+            model function_e082e650(localclientnum, item, function_78a9fd5f(item), item.itementry.modelscale);
             shouldshow = item_world_util::function_da09de95(item.networkid) && item_world_util::can_pick_up(item, servertime);
             shouldshow = shouldshow | (item.networkid < function_8322cf16() && item_world_util::can_pick_up(function_b1702735(item.networkid), servertime));
             shouldshow = shouldshow & !(isdefined(item.type) && item.type === #"missile");
@@ -506,7 +506,7 @@ function private _draw(localclientnum, draworigin) {
                 model hide();
                 function_2990e5f(localclientnum, model);
             }
-            originoffset = (isdefined(item.var_a6762160.var_5dc4470b) ? item.var_a6762160.var_5dc4470b : 0, isdefined(item.var_a6762160.var_54a3b4ca) ? item.var_a6762160.var_54a3b4ca : 0, isdefined(item.var_a6762160.var_3e688854) ? item.var_a6762160.var_3e688854 : 0);
+            originoffset = (isdefined(item.itementry.var_5dc4470b) ? item.itementry.var_5dc4470b : 0, isdefined(item.itementry.var_54a3b4ca) ? item.itementry.var_54a3b4ca : 0, isdefined(item.itementry.var_3e688854) ? item.itementry.var_3e688854 : 0);
             model.origin = model.origin + rotatepoint(originoffset, model.angles);
             if (item_world_util::function_da09de95(item.networkid)) {
                 model linkto(item);
@@ -602,7 +602,7 @@ function private _draw(localclientnum, draworigin) {
             if (isdefined(item.type) && item.type === #"missile") {
                 model = item;
             }
-            function_78bf134c(localclientnum, clientdata, item.networkid, model, item.var_a6762160);
+            function_78bf134c(localclientnum, clientdata, item.networkid, model, item.itementry);
             if ((index + 1) % 50 == 0) {
                 waitframe(1);
             }
@@ -622,23 +622,23 @@ function private function_78a9fd5f(point) {
     if (!isdefined(level.var_8c615e33)) {
         level.var_8c615e33 = [];
     }
-    if (!isstruct(point) && isdefined(point.type == #"scriptmover") && isdefined(point.var_a6762160.var_77d2cbb5) && point getentitynumber() < 1024) {
-        if (isdefined(point.var_a6762160.weapon) && point.var_a6762160.weapon.name == #"waterballoon") {
+    if (!isstruct(point) && isdefined(point.type == #"scriptmover") && isdefined(point.itementry.var_77d2cbb5) && point getentitynumber() < 1024) {
+        if (isdefined(point.itementry.weapon) && point.itementry.weapon.name == #"waterballoon") {
             var_af7d7388 = array(#"hash_7306b72d120049f8", #"hash_27ae7cb403d5365b", #"hash_6add258ae958d31c", #"hash_6eb8f7ceb4627d9f", #"hash_228bf15c70137b61", #"hash_10c0ee53a36783e9");
             return var_af7d7388[randomintrange(0, var_af7d7388.size)];
         }
-        return point.var_a6762160.var_77d2cbb5;
+        return point.itementry.var_77d2cbb5;
     }
-    if (!isdefined(level.var_8c615e33[point.var_a6762160.name])) {
-        if (isdefined(point.var_a6762160.model) && point.var_a6762160.model != "") {
-            level.var_8c615e33[point.var_a6762160.name] = point.var_a6762160.model;
-        } else if (isdefined(point.var_a6762160.weapon) && point.var_a6762160.weapon !== level.weaponnone) {
-            level.var_8c615e33[point.var_a6762160.name] = point.var_a6762160.weapon.worldmodel;
+    if (!isdefined(level.var_8c615e33[point.itementry.name])) {
+        if (isdefined(point.itementry.model) && point.itementry.model != "") {
+            level.var_8c615e33[point.itementry.name] = point.itementry.model;
+        } else if (isdefined(point.itementry.weapon) && point.itementry.weapon !== level.weaponnone) {
+            level.var_8c615e33[point.itementry.name] = point.itementry.weapon.worldmodel;
         } else {
-            level.var_8c615e33[point.var_a6762160.name] = "tag_origin";
+            level.var_8c615e33[point.itementry.name] = "tag_origin";
         }
     }
-    return level.var_8c615e33[point.var_a6762160.name];
+    return level.var_8c615e33[point.itementry.name];
 }
 
 // Namespace item_world/item_world
@@ -967,7 +967,7 @@ function private function_192b39cd(localclientnum) {
 // Checksum 0xb2a461cf, Offset: 0x4ba0
 // Size: 0x248
 function private _set_weapon(localclientnum, item) {
-    if (isdefined(item) && isdefined(item.var_a6762160.weapon) && !isdefined(item.var_a6762160.model) && isdefined(item.var_a6762160.weapon.worldmodel)) {
+    if (isdefined(item) && isdefined(item.itementry.weapon) && !isdefined(item.itementry.model) && isdefined(item.itementry.weapon.worldmodel)) {
         weapon = namespace_a0d533d1::function_2b83d3ff(item);
         camoweapon = undefined;
         weaponoptions = undefined;
@@ -1008,7 +1008,7 @@ function private function_e082e650(localclientnum, item, newmodel, scale) {
     function_2990e5f(localclientnum, item);
     function_3ee12d25(localclientnum, self);
     if (isdefined(newmodel)) {
-        if (!self _set_weapon(localclientnum, item) || isdefined(item.var_a6762160.model)) {
+        if (!self _set_weapon(localclientnum, item) || isdefined(item.itementry.model)) {
             self setmodel(newmodel);
         }
         self setscale(scale);
@@ -1080,7 +1080,7 @@ function private function_5cbe24ea(&dest, &source, &order) {
         if (!isdefined(item)) {
             continue;
         }
-        itemname = item.var_a6762160.name;
+        itemname = item.itementry.name;
         if (!isdefined(items[itemname])) {
             items[itemname] = [];
         }
@@ -1130,10 +1130,10 @@ function private function_43d3ebe1(&items) {
             var_41f13734 = lootweapons[0];
             for (index = 0; index < items.size; index++) {
                 item = items[index];
-                if (!isdefined(items[index].var_a6762160) || !isdefined(items[index].var_a6762160.weapon)) {
+                if (!isdefined(items[index].itementry) || !isdefined(items[index].itementry.weapon)) {
                     continue;
                 }
-                if (items[index].var_a6762160.weapon.name == var_41f13734) {
+                if (items[index].itementry.weapon.name == var_41f13734) {
                     var_dd3170c7 = sorted.size;
                     sorted[var_dd3170c7] = items[index];
                     sorted[var_dd3170c7].var_41f13734 = 1;
@@ -1147,12 +1147,12 @@ function private function_43d3ebe1(&items) {
         if (!isdefined(items[index])) {
             continue;
         }
-        var_a6762160 = items[index].var_a6762160;
-        if (!isdefined(itemtypes[var_a6762160.itemtype])) {
-            itemtypes[var_a6762160.itemtype] = [];
+        itementry = items[index].itementry;
+        if (!isdefined(itemtypes[itementry.itemtype])) {
+            itemtypes[itementry.itemtype] = [];
         }
-        size = itemtypes[var_a6762160.itemtype].size;
-        itemtypes[var_a6762160.itemtype][size] = items[index];
+        size = itemtypes[itementry.itemtype].size;
+        itemtypes[itementry.itemtype][size] = items[index];
     }
     waitframe(1);
     if (isdefined(itemtypes[#"quest"])) {
@@ -1180,7 +1180,7 @@ function private function_43d3ebe1(&items) {
             if (!isdefined(item)) {
                 continue;
             }
-            if (item.var_a6762160.rarity == #"epic") {
+            if (item.itementry.rarity == #"epic") {
                 var_610b8743[var_610b8743.size] = item;
             }
         }
@@ -1195,7 +1195,7 @@ function private function_43d3ebe1(&items) {
             if (!isdefined(item)) {
                 continue;
             }
-            if (item.var_a6762160.rarity != #"epic") {
+            if (item.itementry.rarity != #"epic") {
                 weapons[weapons.size] = item;
             }
         }
@@ -1405,16 +1405,16 @@ function private function_eb396946(localclientnum) {
             if (!isdefined(item)) {
                 continue;
             }
-            if (isdefined(item.var_a6762160)) {
-                if (item.var_a6762160.itemtype == #"weapon") {
-                    if (isdefined(item.weapon) && item.weapon != level.weaponnone && item.weapon !== item.var_a6762160.weapon) {
+            if (isdefined(item.itementry)) {
+                if (item.itementry.itemtype == #"weapon") {
+                    if (isdefined(item.weapon) && item.weapon != level.weaponnone && item.weapon !== item.itementry.weapon) {
                         camoweapon = activecamo::function_385ef18d(item.weapon);
                         weaponoptions = self getbuildkitweaponoptions(localclientnum, camoweapon);
                         streamweapon = item.weapon;
                         forcestreamweaponrenderoptions(localclientnum, streamweapon, weaponoptions);
                         var_1988b305[streamweapon] = weaponoptions;
-                    } else if (isdefined(item.var_a6762160.weapon) && item.var_a6762160.weapon != level.weaponnone) {
-                        camoweapon = activecamo::function_385ef18d(item.var_a6762160.weapon);
+                    } else if (isdefined(item.itementry.weapon) && item.itementry.weapon != level.weaponnone) {
+                        camoweapon = activecamo::function_385ef18d(item.itementry.weapon);
                         weaponoptions = self getbuildkitweaponoptions(localclientnum, camoweapon);
                         streamweapon = namespace_a0d533d1::function_2b83d3ff(item);
                         forcestreamweaponrenderoptions(localclientnum, streamweapon, weaponoptions);
@@ -1422,9 +1422,9 @@ function private function_eb396946(localclientnum) {
                     }
                     continue;
                 }
-                if (item.var_a6762160.itemtype == #"attachment") {
-                    if (isdefined(item.var_a6762160.attachments)) {
-                        foreach (attachment in item.var_a6762160.attachments) {
+                if (item.itementry.itemtype == #"attachment") {
+                    if (isdefined(item.itementry.attachments)) {
+                        foreach (attachment in item.itementry.attachments) {
                             if (isdefined(attachment.var_6be1bec7)) {
                                 var_d61d8afa[attachment.var_6be1bec7] = attachment.var_6be1bec7;
                             }
@@ -1490,7 +1490,7 @@ function private function_48ec057f(localclientnum) {
     var_bf2d48f6 = [];
     foreach (vehicleentnum, serverinfo in clientdata.var_baf65690) {
         vehicle = getentbynum(localclientnum, vehicleentnum);
-        if (isdefined(vehicle) && serverinfo.servertime >= var_f1530a67 && !function_97980fde(localclientnum, vehicle)) {
+        if (isdefined(vehicle) && serverinfo.servertime >= var_f1530a67 && !isvehicleoccupied(localclientnum, vehicle)) {
             var_bf2d48f6[vehicleentnum] = serverinfo;
             function_3bd99d2f(localclientnum, clientdata, vehicle);
             continue;
@@ -1536,52 +1536,52 @@ function private function_48ca0bbb(localclientnum) {
     if (var_da43934d) {
         eyepos = getlocalclienteyepos(localclientnum);
         angles = getlocalclientangles(localclientnum);
-        if (isdefined(self.var_9b882d22) && isdefined(self.var_9b882d22.var_a6762160) && !isdefined(getplayervehicle(self))) {
-            var_a6762160 = self.var_9b882d22.var_a6762160;
+        if (isdefined(self.var_9b882d22) && isdefined(self.var_9b882d22.itementry) && !isdefined(getplayervehicle(self))) {
+            itementry = self.var_9b882d22.itementry;
             var_77055f15 = 0;
             var_fa3df96 = undefined;
-            if (var_a6762160.itemtype == #"ammo" && !item_inventory::can_pickup_ammo(localclientnum, self.var_9b882d22)) {
+            if (itementry.itemtype == #"ammo" && !item_inventory::can_pickup_ammo(localclientnum, self.var_9b882d22)) {
                 var_77055f15 = 64;
-            } else if (item_inventory::function_a243ddd6(localclientnum, var_a6762160)) {
+            } else if (item_inventory::function_a243ddd6(localclientnum, itementry)) {
                 var_77055f15 = 1;
-                if (var_a6762160.itemtype == #"attachment") {
+                if (itementry.itemtype == #"attachment") {
                     var_77055f15 = 1;
-                    if (item_inventory::function_ad4c6116(localclientnum, var_a6762160)) {
+                    if (item_inventory::function_ad4c6116(localclientnum, itementry)) {
                         var_77055f15 = var_77055f15 | 32;
                     }
-                } else if (var_a6762160.itemtype == #"weapon") {
+                } else if (itementry.itemtype == #"weapon") {
                     var_a4250c2b = self item_inventory::function_d768ea30(localclientnum);
                     if (namespace_a0d533d1::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
                         var_77055f15 = var_77055f15 | 512;
                     }
                 }
-            } else if (var_a6762160.itemtype == #"weapon") {
+            } else if (itementry.itemtype == #"weapon") {
                 var_77055f15 = 2;
                 var_a4250c2b = self item_inventory::function_d768ea30(localclientnum);
                 if (namespace_a0d533d1::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
                     var_77055f15 = var_77055f15 | 512;
                 }
             } else {
-                var_fa3df96 = self item_inventory::function_78ed4455(localclientnum, var_a6762160);
+                var_fa3df96 = self item_inventory::function_78ed4455(localclientnum, itementry);
                 if (isdefined(var_fa3df96)) {
                     var_77055f15 = 2;
-                    if (var_a6762160.itemtype == #"attachment") {
+                    if (itementry.itemtype == #"attachment") {
                         var_fa3df96 = undefined;
-                        if (item_inventory::function_ad4c6116(localclientnum, var_a6762160)) {
+                        if (item_inventory::function_ad4c6116(localclientnum, itementry)) {
                             var_77055f15 = var_77055f15 | 32;
                         }
                     }
-                } else if (!item_inventory::function_ad4c6116(localclientnum, var_a6762160)) {
-                    if (var_a6762160.itemtype == #"resource" && item_world_util::function_41f06d9d(var_a6762160)) {
+                } else if (!item_inventory::function_ad4c6116(localclientnum, itementry)) {
+                    if (itementry.itemtype == #"resource" && item_world_util::function_41f06d9d(itementry)) {
                         var_77055f15 = 128;
                     } else {
                         var_77055f15 = 4;
                     }
-                    if (var_a6762160.itemtype == #"equipment" || var_a6762160.itemtype == #"health") {
+                    if (itementry.itemtype == #"equipment" || itementry.itemtype == #"health") {
                         var_77055f15 = var_77055f15 | 1024;
                     }
-                } else if (var_a6762160.itemtype == #"equipment" || var_a6762160.itemtype == #"health") {
-                    if (item_inventory::function_ad4c6116(localclientnum, var_a6762160)) {
+                } else if (itementry.itemtype == #"equipment" || itementry.itemtype == #"health") {
+                    if (item_inventory::function_ad4c6116(localclientnum, itementry)) {
                         var_77055f15 = var_77055f15 | 256;
                     }
                 }
@@ -1590,7 +1590,7 @@ function private function_48ca0bbb(localclientnum) {
             if (isdefined(self.var_9b882d22.isfar) && self.var_9b882d22.isfar) {
                 objstate = 1;
             }
-            pickupicon = isdefined(var_a6762160.pickupicon) ? var_a6762160.pickupicon : var_a6762160.icon;
+            pickupicon = isdefined(itementry.pickupicon) ? itementry.pickupicon : itementry.icon;
             if (self.var_54d9f4a6) {
                 var_77055f15 = 16;
             }
@@ -1603,10 +1603,10 @@ function private function_48ca0bbb(localclientnum) {
             } else if (self item_world_util::can_pick_up(self.var_9b882d22)) {
                 hintstring = self function_2fc74639();
                 var_d1fce876 = #"";
-                if (isdefined(var_a6762160.weapon)) {
-                    var_d1fce876 = var_a6762160.weapon.displayname;
+                if (isdefined(itementry.weapon)) {
+                    var_d1fce876 = itementry.weapon.displayname;
                 } else {
-                    var_d1fce876 = isdefined(var_a6762160.hintstring) ? var_a6762160.hintstring : #"";
+                    var_d1fce876 = isdefined(itementry.hintstring) ? itementry.hintstring : #"";
                 }
                 if (var_d1fce876 == hintstring) {
                     function_b21002cb(localclientnum, level.var_d9beffb9, self.var_9b882d22, objstate);
@@ -1660,7 +1660,7 @@ function private function_c5b6693a() {
     item.count = 0;
     item.id = 32767;
     item.networkid = 32767;
-    item.var_a6762160 = undefined;
+    item.itementry = undefined;
     item.var_627c698b = undefined;
     return item;
 }
@@ -1857,7 +1857,7 @@ function function_d223645e(localclientnum, vehicle) {
     /#
         assert(isdefined(vehicle));
     #/
-    if (!isdefined(vehicle) || !function_97980fde(localclientnum, vehicle)) {
+    if (!isdefined(vehicle) || !isvehicleoccupied(localclientnum, vehicle)) {
         return;
     }
     clientdata = function_a7e98a1a(localclientnum);
@@ -1884,17 +1884,17 @@ function function_a4886b1e(localclientnum, networkid, model) {
         return;
     }
     if (distancesquared(draworigin, model.origin) <= maxdist * maxdist) {
-        var_a6762160 = undefined;
+        itementry = undefined;
         if (isdefined(networkid)) {
             if (item_world_util::function_2c7fc531(networkid)) {
-                var_a6762160 = function_b1702735(networkid).var_a6762160;
+                itementry = function_b1702735(networkid).itementry;
             } else if (item_world_util::function_da09de95(networkid)) {
                 if (isdefined(level.item_spawn_drops[networkid])) {
-                    var_a6762160 = level.item_spawn_drops[networkid].var_a6762160;
+                    itementry = level.item_spawn_drops[networkid].itementry;
                 }
             }
         }
-        function_78bf134c(localclientnum, clientdata, networkid, model, var_a6762160);
+        function_78bf134c(localclientnum, clientdata, networkid, model, itementry);
     }
 }
 
@@ -1914,15 +1914,15 @@ function play_spawn_fx(localclientnum, networkid) {
             item = level.item_spawn_drops[networkid];
         }
     }
-    if (!isdefined(item) || !isdefined(item.var_a6762160) || !isdefined(item.var_a6762160.var_86d1fc36)) {
+    if (!isdefined(item) || !isdefined(item.itementry) || !isdefined(item.itementry.var_86d1fc36)) {
         return;
     }
-    var_a6762160 = item.var_a6762160;
+    itementry = item.itementry;
     originoffset = function_7571fda9(item);
     angles = function_118d052e(item);
     forward = anglestoforward(angles);
     up = anglestoup(angles);
-    playfx(localclientnum, var_a6762160.var_86d1fc36, item.origin + originoffset, forward, up);
+    playfx(localclientnum, itementry.var_86d1fc36, item.origin + originoffset, forward, up);
 }
 
 // Namespace item_world/item_world
@@ -1930,15 +1930,15 @@ function play_spawn_fx(localclientnum, networkid) {
 // Checksum 0x1c303496, Offset: 0x8cc0
 // Size: 0x11c
 function play_pickup_fx(localclientnum, item) {
-    if (!isdefined(item) || !isdefined(item.var_a6762160) || !isdefined(item.var_a6762160.var_37cd55af)) {
+    if (!isdefined(item) || !isdefined(item.itementry) || !isdefined(item.itementry.var_37cd55af)) {
         return;
     }
-    var_a6762160 = item.var_a6762160;
+    itementry = item.itementry;
     originoffset = function_7571fda9(item);
     angles = function_118d052e(item);
     forward = anglestoforward(angles);
     up = anglestoup(angles);
-    playfx(localclientnum, var_a6762160.var_37cd55af, item.origin + originoffset, forward, up);
+    playfx(localclientnum, itementry.var_37cd55af, item.origin + originoffset, forward, up);
 }
 
 // Namespace item_world/item_world
@@ -1946,11 +1946,11 @@ function play_pickup_fx(localclientnum, item) {
 // Checksum 0x94b3e8cf, Offset: 0x8de8
 // Size: 0xea
 function function_7571fda9(item) {
-    if (!isdefined(item) || !isdefined(item.var_a6762160)) {
+    if (!isdefined(item) || !isdefined(item.itementry)) {
         return (0, 0, 0);
     }
-    var_a6762160 = item.var_a6762160;
-    originoffset = (isdefined(var_a6762160.var_5dc4470b) ? var_a6762160.var_5dc4470b : 0, isdefined(var_a6762160.var_54a3b4ca) ? var_a6762160.var_54a3b4ca : 0, isdefined(var_a6762160.var_3e688854) ? var_a6762160.var_3e688854 : 0);
+    itementry = item.itementry;
+    originoffset = (isdefined(itementry.var_5dc4470b) ? itementry.var_5dc4470b : 0, isdefined(itementry.var_54a3b4ca) ? itementry.var_54a3b4ca : 0, isdefined(itementry.var_3e688854) ? itementry.var_3e688854 : 0);
     originoffset = rotatepoint(originoffset * -1, item.angles);
     return originoffset;
 }
@@ -1963,11 +1963,11 @@ function function_118d052e(item) {
     if (!isdefined(item)) {
         return (0, 0, 0);
     }
-    var_a6762160 = item.var_a6762160;
-    if (!isdefined(item.var_a6762160)) {
+    itementry = item.itementry;
+    if (!isdefined(item.itementry)) {
         return item.angles;
     }
-    angles = combineangles(item.angles, (isdefined(var_a6762160.var_15b88fde) ? var_a6762160.var_15b88fde : 0, isdefined(var_a6762160.var_8c9a7dc8) ? var_a6762160.var_8c9a7dc8 : 0, isdefined(var_a6762160.var_7a51d937) ? var_a6762160.var_7a51d937 : 0));
+    angles = combineangles(item.angles, (isdefined(itementry.var_15b88fde) ? itementry.var_15b88fde : 0, isdefined(itementry.var_8c9a7dc8) ? itementry.var_8c9a7dc8 : 0, isdefined(itementry.var_7a51d937) ? itementry.var_7a51d937 : 0));
     return angles;
 }
 
@@ -2088,11 +2088,11 @@ function show_item(localclientnum, networkid, showitem) {
     if (isdefined(clientdata) && isdefined(item)) {
         if (isdefined(clientdata.modellist[networkid])) {
             clientdata.modellist[networkid] show();
-            function_78bf134c(localclientnum, clientdata, networkid, clientdata.modellist[networkid], item.var_a6762160);
+            function_78bf134c(localclientnum, clientdata, networkid, clientdata.modellist[networkid], item.itementry);
         }
         if (isdefined(clientdata.var_89e328b4) && isdefined(clientdata.var_89e328b4[networkid])) {
             clientdata.var_89e328b4[networkid] show();
-            function_78bf134c(localclientnum, clientdata, networkid, clientdata.var_89e328b4[networkid], item.var_a6762160);
+            function_78bf134c(localclientnum, clientdata, networkid, clientdata.var_89e328b4[networkid], item.itementry);
         }
     }
 }

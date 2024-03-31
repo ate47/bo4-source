@@ -1123,7 +1123,7 @@ function event_handler[player_killed] codecallback_playerkilled(eventstruct) {
 function event_handler[event_2958ea55] function_73e8e3f9(eventstruct) {
     self endon(#"disconnect");
     if (isdefined(level.var_3a9881cb)) {
-        [[ level.var_3a9881cb ]](eventstruct.attacker, eventstruct.effect_name, eventstruct.var_894859a2, eventstruct.var_ab5b905e, eventstruct.weapon);
+        [[ level.var_3a9881cb ]](eventstruct.attacker, eventstruct.effect_name, eventstruct.var_894859a2, eventstruct.durationoverride, eventstruct.weapon);
     }
 }
 
@@ -1645,7 +1645,7 @@ function event_handler[event_596b7bdc] function_f5026566(eventstruct) {
     #/
     eventdata = {};
     eventdata.tableindex = eventstruct.tableindex;
-    eventdata.var_96db1aff = eventstruct.var_96db1aff;
+    eventdata.event_info = eventstruct.event_info;
     self [[ level.var_abb3fd2 ]](eventstruct.event_name, eventstruct.time, eventstruct.client, eventstruct.priority, eventdata);
 }
 

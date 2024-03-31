@@ -12,7 +12,7 @@
     "type": "radiation_field",
     "var_c3e28ba8": 3,
     "var_e378ae56": 0.15,
-    "var_fcdf3d9e": 0.5,
+    "finalduration": 0.5,
     "var_ebea02e3": 0.27,
     "var_500496c9": 2.5,
     "vmtype": "both",

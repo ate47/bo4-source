@@ -48,8 +48,8 @@ function function_2613aeec(enabled) {
 // Checksum 0xe370b5be, Offset: 0x400
 // Size: 0x54
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu15_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu15_item") {
         self thread function_895b40e4();
     }
 }

@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "cu06_item",
+            "itementry": "cu06_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot1_dlc1",
+            "itementry": "supply_stash_slot1_dlc1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot2_dlc1",
+            "itementry": "supply_stash_slot2_dlc1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot3_dlc1",
+            "itementry": "supply_stash_slot3_dlc1",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "molotov_wz_item",
+            "itementry": "molotov_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot5_dlc1",
+            "itementry": "supply_stash_slot5_dlc1",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "flamethrower_wz_item",
+            "itementry": "flamethrower_wz_item",
             "maxweight": 50,
             "available": 1
         }

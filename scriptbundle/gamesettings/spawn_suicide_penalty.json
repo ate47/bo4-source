@@ -22,8 +22,8 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "spawn_suicide_penalty",
     "displayname": "#hash_1bb6fdf1212d31ab",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
-    "var_bd2ff709": "#hash_7201503206ce2d27",
+    "label1": "#hash_94eb0e3329edf5f",
+    "label2": "#hash_7201503206ce2d27",
     "var_9de86f42": 17,
     "setting": "spawnsuicidepenalty"
 }

@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "smg_accurate_t8_wallbuy_item",
+            "itementry": "smg_accurate_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "smg_standard_t8_wallbuy_item",
+            "itementry": "smg_standard_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "smg_capacity_t8_wallbuy_item",
+            "itementry": "smg_capacity_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "smg_handling_t8_wallbuy_item",
+            "itementry": "smg_handling_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "smg_fastfire_t8_wallbuy_item",
+            "itementry": "smg_fastfire_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "smg_mp40_t8_wallbuy_item",
+            "itementry": "smg_mp40_t8_wallbuy_item",
             "maxweight": 1,
             "available": -1
         }

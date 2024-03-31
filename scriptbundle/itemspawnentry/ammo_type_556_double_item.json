@@ -6,7 +6,7 @@
     "weapon": "weapon#hash_17136c65a119f6b5",
     "type": "itemspawnentry",
     "hintstring": "#hash_5704bb4aa4b8696b",
-    "var_6731866b": 90,
+    "angleoffsety": 90,
     "name": "ammo_type_556_double_item",
     "displayname": "#hash_5704bb4aa4b8696b",
     "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_556",

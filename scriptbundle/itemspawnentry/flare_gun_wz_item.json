@@ -4,7 +4,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#flare_gun_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "flare_gun_wz_item",
     "displayname": "#hash_1f7c49e3b8a597e1",
     "stackcount": 2,
@@ -14,6 +14,6 @@
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#hash_400082bcc8c17a2c",
     "stackable": 1,
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "equipment"
 }

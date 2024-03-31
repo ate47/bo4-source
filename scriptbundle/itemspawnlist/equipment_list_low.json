@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "frag_grenade_wz_item",
+            "itementry": "frag_grenade_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "concertina_wire_wz_item",
+            "itementry": "concertina_wire_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "hatchet_wz_item",
+            "itementry": "hatchet_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "molotov_wz_item",
+            "itementry": "molotov_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smoke_grenade_wz_item",
+            "itementry": "smoke_grenade_wz_item",
             "maxweight": 200,
             "available": -1
         }

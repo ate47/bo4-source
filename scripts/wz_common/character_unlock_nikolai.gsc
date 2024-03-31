@@ -113,8 +113,8 @@ function function_8bf71bd6() {
 // Checksum 0x10f20f09, Offset: 0x5c8
 // Size: 0xdc
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (isdefined(var_a6762160) && var_a6762160.name === #"cu16_item") {
+    itementry = item.itementry;
+    if (isdefined(itementry) && itementry.name === #"cu16_item") {
         var_c503939b = globallogic::function_e9e52d05();
         if (var_c503939b <= function_c816ea5b()) {
             if (self character_unlock::function_f0406288(#"nikolai_unlock")) {

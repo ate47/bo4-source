@@ -603,7 +603,7 @@ function private function_2b2ed159(entity, attackingplayer) {
         lasttime = gettime();
         waitframe(1);
     }
-    var_e92132fd = gettime();
+    hackendtime = gettime();
     if (!isdefined(entity) || !isdefined(attackingplayer) || isdefined(entity.canthack) && entity.canthack) {
         if (var_7570395) {
             if (isdefined(originalowner) && isplayer(originalowner)) {
@@ -635,7 +635,7 @@ function private function_2b2ed159(entity, attackingplayer) {
         thread function_29f4ff02(attackingplayer, entity);
     }
     attackingplayer.var_e989badb = undefined;
-    var_46df240b = var_e92132fd - var_9b4cc45c;
+    var_46df240b = hackendtime - var_9b4cc45c;
     if (isdefined(targetname) && isdefined(playernum)) {
         var_6c52b424 = {#hack_success:1, #duration:var_46df240b, #var_e7f6239c:playernum, #content_targeted:targetname, #var_a9451146:attackingplayer.var_c48b30ab, #var_5f512560:attackingplayer getmatchrecordlifeindex()};
         function_92d1707f(#"hash_3c946cbb149411ad", var_6c52b424);
@@ -793,7 +793,7 @@ function private function_aadad2c(attackingplayer, var_11a83c3a) {
         settingsbundle = function_13f4415c();
         duration = duration * (isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1);
     }
-    var_11a83c3a.var_e92132fd = gettime() + duration;
+    var_11a83c3a.hackendtime = gettime() + duration;
     if (isdefined(var_11a83c3a.var_1f5ab061) ? var_11a83c3a.var_1f5ab061 : 0) {
         function_6c031486(var_11a83c3a);
     }
@@ -813,10 +813,10 @@ function private function_a9987363(var_559f4f0a, attackingplayer, var_11a83c3a) 
     /#
         assert(isdefined(var_11a83c3a));
     #/
-    if (!isdefined(var_11a83c3a.var_e92132fd)) {
+    if (!isdefined(var_11a83c3a.hackendtime)) {
         return;
     }
-    var_575cc792 = var_11a83c3a.var_e92132fd - gettime();
+    var_575cc792 = var_11a83c3a.hackendtime - gettime();
     icepickweapon = getweapon(#"gadget_icepick");
     var_11a83c3a status_effect::status_effect_apply(var_559f4f0a, icepickweapon, attackingplayer, 0, var_575cc792);
     var_11a83c3a clientfield::set("hackStatus", 2);
@@ -835,9 +835,9 @@ function private function_bf744a1e(attackingplayer, var_11a83c3a) {
     settingsbundle = function_13f4415c();
     var_e7af1dd4 = var_11a83c3a function_6c32d092(#"talent_resistance") ? isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1 : 1;
     statuseffect = getstatuseffect("hacked");
-    var_645d17c2 = statuseffect.var_77449e9 * var_e7af1dd4 * (isdefined(settingsbundle.var_9b5b082d) ? settingsbundle.var_9b5b082d : 1);
-    var_11a83c3a.var_e92132fd = var_11a83c3a.var_e92132fd + var_645d17c2;
-    var_11a83c3a status_effect::status_effect_apply(statuseffect, icepickweapon, attackingplayer, 0, var_645d17c2);
+    additionaltime = statuseffect.var_77449e9 * var_e7af1dd4 * (isdefined(settingsbundle.var_9b5b082d) ? settingsbundle.var_9b5b082d : 1);
+    var_11a83c3a.hackendtime = var_11a83c3a.hackendtime + additionaltime;
+    var_11a83c3a status_effect::status_effect_apply(statuseffect, icepickweapon, attackingplayer, 0, additionaltime);
 }
 
 // Namespace icepick/gadget_icepick_shared
@@ -850,8 +850,8 @@ function private function_f255c737(var_11a83c3a) {
     #/
     var_11a83c3a endon(#"death", #"hack_end");
     settingsbundle = function_13f4415c();
-    while (gettime() <= var_11a83c3a.var_e92132fd && level.gameended !== 1) {
-        duration = var_11a83c3a.var_e92132fd - var_11a83c3a.var_9b4cc45c;
+    while (gettime() <= var_11a83c3a.hackendtime && level.gameended !== 1) {
+        duration = var_11a83c3a.hackendtime - var_11a83c3a.var_9b4cc45c;
         totaltime = gettime() - var_11a83c3a.var_9b4cc45c;
         var_15ab01c8 = totaltime / duration;
         if (totaltime > (isdefined(settingsbundle.var_2f2b5447) ? settingsbundle.var_2f2b5447 : 0)) {
@@ -884,7 +884,7 @@ function function_39026c34(attackingplayer, var_11a83c3a, var_4f6e2cbe) {
             function_aadad2c(attackingplayer, var_11a83c3a);
         }
     }
-    if (gettime() >= var_11a83c3a.var_e92132fd) {
+    if (gettime() >= var_11a83c3a.hackendtime) {
         function_27c9bfc8(var_11a83c3a, 0);
         return;
     }

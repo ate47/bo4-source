@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "wc_secondarygunfighter3_restriction",
     "displayname": "#hash_729cecc9c33aba71",
-    "var_9600a8ab": "#menu/enabled",
-    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/enabled",
+    "label2": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__bonuscard_secondary_gunfighter_3__restricted"
 }

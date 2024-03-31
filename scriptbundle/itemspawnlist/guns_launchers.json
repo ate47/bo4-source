@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "launcher_standard_t8_item",
+            "itementry": "launcher_standard_t8_item",
             "var_3f8c08e3": "ammo_type_rocket_item",
             "maxweight": 200,
             "available": -1

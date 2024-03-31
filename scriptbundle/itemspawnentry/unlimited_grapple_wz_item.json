@@ -3,7 +3,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#eq_grapple_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": -75,
+    "angleoffsetz": -75,
     "name": "unlimited_grapple_wz_item",
     "stackcount": 5,
     "icon": "#ui_icon_equipment_eq_grapple",
@@ -12,6 +12,6 @@
     "handler": "#hash_2cbf15cbb314c93e",
     "unlimited": 1,
     "stackable": 1,
-    "var_50773731": 1.5,
+    "positionoffsetz": 1.5,
     "itemtype": "equipment"
 }

@@ -11,7 +11,7 @@ struct root {
     telemetry_header telemetry;
     int32 hash_666d0cfcf9ae78ae;
     int32 hash_25d3bd75c4d8cf82;
-    int32 hash_34c89c99b7d0a3b3;
+    int32 spawnpointid;
     client_header client;
 };
 

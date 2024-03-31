@@ -21,7 +21,7 @@
     "weapon": "weapon#hash_6b656fd1184e23ee",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "baseweapon": "pistol_standard_t8_item",
     "var_65b3a12": 6,
     "var_340eac1f": 1,
@@ -34,6 +34,6 @@
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "pickupicon": "#ui_icon_weapon_hud_pistol_standard",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

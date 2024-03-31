@@ -2,14 +2,14 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "lmg_stealth_t8_gold_item",
+            "itementry": "lmg_stealth_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ar_peacekeeper_t8_gold_item",
+            "itementry": "ar_peacekeeper_t8_gold_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1

@@ -10,7 +10,7 @@
     "var_e41627fe": "zmb_pegasus_aoe_start",
     "endrumble": "damage_heavy",
     "var_1ee49376": "zmb_pegasus_aoe_lp",
-    "var_e4c85a5f": 1.5,
+    "earthquakeduration": 1.5,
     "loop_effect": "#hash_3284d7debb01c2e9",
     "startrumble": "damage_heavy"
 }

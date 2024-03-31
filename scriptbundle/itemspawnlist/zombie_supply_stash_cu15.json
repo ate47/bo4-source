@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "zombie_supply_stash_guns_gold_or_purple",
+            "itementry": "zombie_supply_stash_guns_gold_or_purple",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_zombie_items",
+            "itementry": "supply_stash_zombie_items",
             "maxweight": 50,
             "available": 3
         },
         {
             "minweight": 50,
-            "var_a6762160": "cu15_item",
+            "itementry": "cu15_item",
             "maxweight": 50,
             "available": 1
         }

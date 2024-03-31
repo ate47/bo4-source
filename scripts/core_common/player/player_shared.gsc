@@ -520,8 +520,8 @@ function function_9080887a(var_cf05ebb7) {
     foreach (modifier in self.var_894f7879) {
         var_f7d37aa4 = var_f7d37aa4 + modifier;
     }
-    var_9fc0715e = isdefined(var_cf05ebb7) ? var_cf05ebb7 : self.spawnhealth;
-    self.var_66cb03ad = int(var_9fc0715e + var_f7d37aa4 + (isdefined(level.var_90bb9821) ? level.var_90bb9821 : 0));
+    basemaxhealth = isdefined(var_cf05ebb7) ? var_cf05ebb7 : self.spawnhealth;
+    self.var_66cb03ad = int(basemaxhealth + var_f7d37aa4 + (isdefined(level.var_90bb9821) ? level.var_90bb9821 : 0));
     if (self.var_66cb03ad < 1) {
         self.var_66cb03ad = 1;
     }

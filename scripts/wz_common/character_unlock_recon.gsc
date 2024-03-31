@@ -47,8 +47,8 @@ function function_2613aeec(enabled) {
 // Checksum 0x4fce896a, Offset: 0x2a0
 // Size: 0x1a4
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu04_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu04_item") {
         if (self character_unlock::function_f0406288(#"recon_unlock")) {
             self character_unlock::function_c8beca5e(#"recon_unlock", #"hash_91d5ea7b26a8aca", 1);
             var_f63b894c = 0;

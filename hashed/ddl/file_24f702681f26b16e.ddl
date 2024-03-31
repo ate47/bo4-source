@@ -103,12 +103,12 @@ struct life {
     uint8 hash_66088b270a9d0d5f;
     byte attacker_index;
     uint32 hash_7567115bc2aa4bf;
-    int32 hash_237c7abb74490333[3];
+    int32 attacker_pos[3];
     byte hash_67e7ffe4f1c4eb88;
     uint16 victimtimespentswimmingdeciseconds;
     uint32 hash_2031532f95082529;
     uint16 victimtimespentwallrunningdeciseconds;
-    int32 hash_55862148a238c704[3];
+    int32 victim_pos[3];
     uint10 attackerdelta;
     uint32 hash_374b79ec47e1e6e9;
     uint8 victimdecisecondssincelastwallrun;
@@ -185,7 +185,7 @@ struct hash_7f7a5814a86a5885 {
     uint32 hash_41037faade6d9357;
     byte player_index;
     byte event_type;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
 };
 
 struct hash_298025d6535ffa40 {
@@ -198,7 +198,7 @@ struct hash_70fd30917359da6c {
     byte player_index;
     short kills_total;
     byte event_type;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
 };
 
 struct hash_5117bce61a2e0fe3 {

@@ -95,9 +95,9 @@ class class_727456f3 {
         } else if (var_c0a091bc < self.var_de7ae77) {
             var_b66bd46e = self.var_de7ae77 - var_c0a091bc;
         }
-        var_d8df8948 = self.m_s_bundle.var_db3c84cf * var_b66bd46e;
-        var_d8df8948 = math::clamp(var_d8df8948, 1, 30);
-        self.var_2af3d553 movez(-1 * self.m_s_bundle.var_a4446fd0 * var_b66bd46e, var_d8df8948, 0.1, 0.1);
+        n_movetime = self.m_s_bundle.var_db3c84cf * var_b66bd46e;
+        n_movetime = math::clamp(n_movetime, 1, 30);
+        self.var_2af3d553 movez(-1 * self.m_s_bundle.var_a4446fd0 * var_b66bd46e, n_movetime, 0.1, 0.1);
         self.var_2af3d553 waittill(#"movedone");
         self.var_de7ae77 = var_c0a091bc;
         if (isdefined(self.var_80896a28)) {
@@ -160,9 +160,9 @@ class class_727456f3 {
         } else if (var_c0a091bc < self.var_de7ae77) {
             var_b66bd46e = self.var_de7ae77 - var_c0a091bc;
         }
-        var_d8df8948 = self.m_s_bundle.var_db3c84cf * var_b66bd46e;
-        var_d8df8948 = math::clamp(var_d8df8948, 1, 30);
-        self.var_2af3d553 movez(self.m_s_bundle.var_a4446fd0 * var_b66bd46e, var_d8df8948, 0.1, 0.1);
+        n_movetime = self.m_s_bundle.var_db3c84cf * var_b66bd46e;
+        n_movetime = math::clamp(n_movetime, 1, 30);
+        self.var_2af3d553 movez(self.m_s_bundle.var_a4446fd0 * var_b66bd46e, n_movetime, 0.1, 0.1);
         self.var_2af3d553 waittill(#"movedone");
         self.var_de7ae77 = var_c0a091bc;
         if (isdefined(self.var_80896a28)) {
@@ -373,7 +373,7 @@ class class_727456f3 {
     // Params 2, eflags: 0x0
     // Checksum 0x654e1b8, Offset: 0x1860
     // Size: 0x1f4
-    function function_47b06180(var_c0a091bc, var_e6ad4793) {
+    function function_47b06180(var_c0a091bc, b_inside) {
         if (var_c0a091bc != self.var_de7ae77) {
             var_f73740dd = 0;
             foreach (var_9d23b3fe in self.var_7c4021f5) {
@@ -386,12 +386,12 @@ class class_727456f3 {
                 array::push(self.var_7c4021f5, var_c0a091bc);
             }
         } else {
-            if (isdefined(self.var_10b20309) && isdefined(var_e6ad4793) && var_e6ad4793) {
+            if (isdefined(self.var_10b20309) && isdefined(b_inside) && b_inside) {
                 self.var_10b20309.mdl_gameobject.interactteam = #"any";
                 self.var_10b20309 gameobjects::enable_object();
                 return;
             }
-            if (!(isdefined(var_e6ad4793) && var_e6ad4793)) {
+            if (!(isdefined(b_inside) && b_inside)) {
                 function_a94c7265(var_c0a091bc);
             }
             return;
@@ -413,9 +413,9 @@ class class_727456f3 {
     // Params 3, eflags: 0x0
     // Checksum 0x12deba49, Offset: 0x15a8
     // Size: 0x2ae
-    function function_64d6a132(var_20aecb28, var_2605b4dd, var_e6ad4793) {
+    function function_64d6a132(var_20aecb28, var_2605b4dd, b_inside) {
         var_a7a692e3 = isdefined(var_20aecb28.script_int) ? var_20aecb28.script_int : 1;
-        if (var_e6ad4793) {
+        if (b_inside) {
             self.var_2af3d553 endon(#"hash_10ae3aed4e10c4c7");
         }
         while (true) {
@@ -424,7 +424,7 @@ class class_727456f3 {
             e_player = waitresult.player;
             if (var_2605b4dd) {
                 function_47b06180(var_a7a692e3);
-            } else if (var_e6ad4793) {
+            } else if (b_inside) {
                 flag::set("inner_button_menu_active");
                 self.var_10b20309 gameobjects::function_2efe0342();
                 thread function_da0405b7(e_player);
@@ -436,8 +436,8 @@ class class_727456f3 {
                     menu = waitresult.menu;
                     response = waitresult.response;
                     if (menu == "Elevator" && response == "floor") {
-                        var_e1919f4e = waitresult.intpayload;
-                        function_47b06180(var_e1919f4e, var_e6ad4793);
+                        floornum = waitresult.intpayload;
+                        function_47b06180(floornum, b_inside);
                     } else {
                         self.var_10b20309.mdl_gameobject.interactteam = #"any";
                         self.var_10b20309 gameobjects::enable_object();
@@ -507,13 +507,13 @@ class class_727456f3 {
     // Params 3, eflags: 0x0
     // Checksum 0x74c9bc09, Offset: 0x1288
     // Size: 0xa4
-    function function_8986542b(var_20aecb28, var_2605b4dd, var_e6ad4793) {
-        if (var_e6ad4793) {
+    function function_8986542b(var_20aecb28, var_2605b4dd, b_inside) {
+        if (b_inside) {
             self.var_10b20309 = var_20aecb28;
             var_20aecb28.mdl_gameobject.trigger enablelinkto();
             var_20aecb28.mdl_gameobject.trigger linkto(self.var_2af3d553);
         }
-        thread function_64d6a132(var_20aecb28, var_2605b4dd, var_e6ad4793);
+        thread function_64d6a132(var_20aecb28, var_2605b4dd, b_inside);
     }
 
     // Namespace namespace_727456f3/namespace_af00ce90

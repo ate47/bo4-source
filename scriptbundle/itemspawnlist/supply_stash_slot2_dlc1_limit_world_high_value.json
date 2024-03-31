@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "armor_item_medium",
+            "itementry": "armor_item_medium",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "armor_item_large",
+            "itementry": "armor_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "ar_standard_t8_gold_item",
+            "itementry": "ar_standard_t8_gold_item",
             "var_8261a18": "ammo_type_556_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 50,
@@ -28,7 +28,7 @@
         },
         {
             "minweight": 50,
-            "var_a6762160": "ar_accurate_t8_gold_item",
+            "itementry": "ar_accurate_t8_gold_item",
             "var_8261a18": "ammo_type_556_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 50,
@@ -36,7 +36,7 @@
         },
         {
             "minweight": 50,
-            "var_a6762160": "lmg_heavy_t8_item",
+            "itementry": "lmg_heavy_t8_item",
             "var_8261a18": "ammo_type_50cal_item",
             "var_3f8c08e3": "ammo_type_50cal_item",
             "maxweight": 50,
@@ -44,7 +44,7 @@
         },
         {
             "minweight": 50,
-            "var_a6762160": "sniper_powersemi_t8_item",
+            "itementry": "sniper_powersemi_t8_item",
             "var_8261a18": "ammo_type_338_item",
             "var_3f8c08e3": "ammo_type_338_item",
             "maxweight": 50,

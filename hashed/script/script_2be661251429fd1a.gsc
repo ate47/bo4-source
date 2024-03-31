@@ -1090,8 +1090,8 @@ function function_1c7ea685(actionparams) {
     foreach (primaryweapon in primaryweapons) {
         ammo = self getammocount(primaryweapon);
         startammo = primaryweapon.startammo;
-        var_82117cc3 = startammo - ammo;
-        if (var_82117cc3 >= primaryweapon.clipsize) {
+        ammoused = startammo - ammo;
+        if (ammoused >= primaryweapon.clipsize) {
             var_9f517317 = 1;
             break;
         }
@@ -1271,8 +1271,8 @@ function function_9c943ad6(actionparams, var_af50df89) {
     scorestreakweapon = actionparams.weapon;
     haskillstreak = self killstreaks::has_killstreak(var_87b53013);
     var_96648639 = self killstreaks::get_killstreak_quantity(scorestreakweapon) > 0;
-    var_e8992218 = haskillstreak || var_96648639;
-    if (!var_e8992218) {
+    hasscorestreak = haskillstreak || var_96648639;
+    if (!hasscorestreak) {
         /#
             if (!isdefined(actionparams.debug)) {
                 actionparams.debug = [];
@@ -1357,9 +1357,9 @@ function function_6f232284(actionparams) {
             return undefined;
         }
     } else {
-        foreach (enabled, var_c63b8638 in level.activeuavs) {
+        foreach (enabled, uavowner in level.activeuavs) {
             var_1836afa = 0;
-            if (enabled && var_c63b8638 != self.entnum) {
+            if (enabled && uavowner != self.entnum) {
                 var_1836afa = 1;
             }
         }
@@ -1543,15 +1543,15 @@ function function_942b5513(actionparams) {
     }
     shots_fired = 0;
     enemies = self teams::getenemyplayers();
-    var_8f5e3947 = [];
+    aliveenemies = [];
     foreach (enemy in enemies) {
         if (isalive(enemy)) {
-            var_8f5e3947[var_8f5e3947.size] = enemy;
+            aliveenemies[aliveenemies.size] = enemy;
         }
     }
     targetlocations = [];
-    for (i = 0; i < var_8f5e3947.size; i++) {
-        targetlocations[i] = var_8f5e3947[i].origin;
+    for (i = 0; i < aliveenemies.size; i++) {
+        targetlocations[i] = aliveenemies[i].origin;
     }
     if (targetlocations.size > 0) {
         while (shots_fired < 3) {

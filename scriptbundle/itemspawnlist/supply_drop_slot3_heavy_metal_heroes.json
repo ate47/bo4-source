@@ -2,44 +2,44 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "launcher_standard_t8_item",
+            "itementry": "launcher_standard_t8_item",
             "var_3f8c08e3": "ammo_type_rocket_double_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "perk_item_deadsilence",
+            "itementry": "perk_item_deadsilence",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "perk_item_lightweight",
+            "itementry": "perk_item_lightweight",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "backpack_item",
+            "itementry": "backpack_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "perk_item_looter",
+            "itementry": "perk_item_looter",
             "maxweight": 50,
             "available": 1
         },

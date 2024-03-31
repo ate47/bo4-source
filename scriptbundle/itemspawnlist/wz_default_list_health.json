@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "health_list_good",
+            "itementry": "health_list_good",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 250,
-            "var_a6762160": "health_list_med",
+            "itementry": "health_list_med",
             "maxweight": 250,
             "available": -1
         },
         {
             "minweight": 900,
-            "var_a6762160": "health_list_low",
+            "itementry": "health_list_low",
             "maxweight": 900,
             "available": -1
         }

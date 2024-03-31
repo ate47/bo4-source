@@ -51,8 +51,8 @@ function function_2a798d57() {
 // Checksum 0xd64f3de1, Offset: 0x230
 // Size: 0xc4
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu32_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu32_item") {
         if (self character_unlock::function_f0406288(#"zero_unlock")) {
             if (self stats::get_stat_global(#"destroy_equipment") >= 50) {
                 self character_unlock::function_c8beca5e(#"zero_unlock", #"hash_178b421c5b67b4d5", 1);

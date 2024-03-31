@@ -648,9 +648,9 @@ function function_2d3beb68(var_ea0a46dc, e_attacker) {
         #/
         break;
     }
-    self dodamage(var_d31c4f26.var_2d276877[0], self.origin, e_attacker, e_attacker, undefined, "MOD_UNKNOWN", 0, var_d31c4f26);
+    self dodamage(var_d31c4f26.damagevalues[0], self.origin, e_attacker, e_attacker, undefined, "MOD_UNKNOWN", 0, var_d31c4f26);
     /#
-        iprintlnbold("<unknown string>" + var_1deac56b + "<unknown string>" + level.var_74cf08b1.var_2d276877[0] + "<unknown string>" + function_9e72a96(self.archetype));
+        iprintlnbold("<unknown string>" + var_1deac56b + "<unknown string>" + level.var_74cf08b1.damagevalues[0] + "<unknown string>" + function_9e72a96(self.archetype));
     #/
     wait(0.6);
 }
@@ -664,11 +664,11 @@ function function_a851c777(var_ea0a46dc, e_attacker) {
     switch (var_ea0a46dc) {
     case 0:
     case 1:
-        n_damage = level.var_74cf08b1.var_2d276877[0];
+        n_damage = level.var_74cf08b1.damagevalues[0];
         break;
     case 2:
     case 3:
-        n_damage = level.var_4b14202f.var_2d276877[0];
+        n_damage = level.var_4b14202f.damagevalues[0];
         break;
     }
     self dodamage(n_damage, self.origin, e_attacker, e_attacker, undefined, "MOD_UNKNOWN", 0, level.var_4b14202f);

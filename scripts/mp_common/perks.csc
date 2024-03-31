@@ -584,11 +584,11 @@ function monitor_detectnearbyenemies(local_client_num) {
             distcurrentsq = distance2dsquared(sixthsenseent.origin, localplayer.origin);
             if (!var_7aeac1e7) {
                 if (speed >= bundle.var_293163bd) {
-                    var_b7dddf15 = sixthsenseent getmovementtype();
+                    movement_type = sixthsenseent getmovementtype();
                     if (isplayer(player) && (player isplayerswimming() || player function_d76efdcc())) {
-                        var_b7dddf15 = "";
+                        movement_type = "";
                     }
-                    switch (var_b7dddf15) {
+                    switch (movement_type) {
                     case #"run":
                     case #"walk":
                         if (sixthsenseent isplayerads()) {

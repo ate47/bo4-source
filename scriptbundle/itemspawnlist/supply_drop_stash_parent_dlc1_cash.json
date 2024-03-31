@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot1_dlc1",
+            "itementry": "supply_stash_slot1_dlc1",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot2_dlc1",
+            "itementry": "supply_stash_slot2_dlc1",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot3_dlc1",
+            "itementry": "supply_stash_slot3_dlc1",
             "maxweight": 10,
             "available": 2
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot4_dlc1",
+            "itementry": "supply_stash_slot4_dlc1",
             "maxweight": 10,
             "available": 2
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot5_dlc1",
+            "itementry": "supply_stash_slot5_dlc1",
             "maxweight": 10,
             "available": 2
         },
         {
             "minweight": 10,
-            "var_a6762160": "cash_item_500",
+            "itementry": "cash_item_500",
             "maxweight": 10,
             "available": 4
         }

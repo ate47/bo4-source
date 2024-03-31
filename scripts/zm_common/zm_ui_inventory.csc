@@ -27,7 +27,7 @@ function private __init__() {
         if (!isdefined(registeredfields[mapping.var_cd35dfb2])) {
             registeredfields[mapping.var_cd35dfb2] = 1;
             var_9cf9ba9 = "worlduimodel";
-            if (isdefined(mapping.var_7f12f171)) {
+            if (isdefined(mapping.ispersonal)) {
                 var_9cf9ba9 = "clientuimodel";
             }
             clientfield::register(var_9cf9ba9, mapping.var_cd35dfb2, 1, mapping.numbits, "int", undefined, 0, 0);

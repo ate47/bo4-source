@@ -7,7 +7,7 @@
     "name": "zm_aoe_chaos_bolt_annihilate",
     "var_a8609f98": "damage_light",
     "endrumble": "damage_heavy",
-    "var_e4c85a5f": 2,
+    "earthquakeduration": 2,
     "loop_effect": "#hash_120058d3027a7731",
     "startrumble": "damage_heavy"
 }

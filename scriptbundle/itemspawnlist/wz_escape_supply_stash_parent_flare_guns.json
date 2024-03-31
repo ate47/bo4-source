@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot1_dlc1",
+            "itementry": "supply_stash_slot1_dlc1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot2_dlc1",
+            "itementry": "supply_stash_slot2_dlc1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot3_dlc1",
+            "itementry": "supply_stash_slot3_dlc1",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot4_dlc1",
+            "itementry": "supply_stash_slot4_dlc1",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "supply_stash_slot5_dlc1",
+            "itementry": "supply_stash_slot5_dlc1",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "flare_gun_wz_item",
+            "itementry": "flare_gun_wz_item",
             "maxweight": 50,
             "available": 1
         }

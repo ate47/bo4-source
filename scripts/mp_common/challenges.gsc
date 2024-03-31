@@ -347,7 +347,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
     var_5afc3871 = self function_65776b07();
     killstreak = killstreaks::get_from_weapon(weapon);
     if (!isdefined(killstreak)) {
-        var_6af452fc = function_2e532eed(victim.var_ea1458aa.attackerdamage[self.clientid]);
+        var_6af452fc = structcopy(victim.var_ea1458aa.attackerdamage[self.clientid]);
         var_5018995b = victim.gadget_weapon;
         var_bcbcb4ec = victim supplypod::function_49ef5263();
         var_fff76b4 = victim.var_b6672e47;
@@ -430,7 +430,7 @@ function function_a79ea08b(einflictor, victim, idamage, weapon) {
         if (isdefined(level.var_1aef539f) && [[ level.var_1aef539f ]](victim, self)) {
             var_1f0bdb8f = 1;
         }
-        var_70137a58 = function_2e532eed(self.var_ea1458aa);
+        var_70137a58 = structcopy(self.var_ea1458aa);
         if (!isdefined(var_5afc3871[#"talent_resistance"])) {
             var_2d4a24ea = self.var_ef9b6f0b === 1;
             var_6c5ba24c = self.lastflashedby === victim;

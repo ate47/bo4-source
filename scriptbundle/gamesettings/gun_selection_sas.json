@@ -9,9 +9,9 @@
     "name": "gun_selection_sas",
     "displayname": "#hash_6418bf3a0f74f537",
     "var_684ccd4c": "#hash_76f987415e56026b",
-    "var_9600a8ab": "#menu/none",
+    "label1": "#menu/none",
     "var_71b6e020": "#weapon/crossbow",
-    "var_bd2ff709": "#weapon/hatchet",
+    "label2": "#weapon/hatchet",
     "var_9de86f42": 4,
     "setting": "gunSelection"
 }

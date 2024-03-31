@@ -515,7 +515,7 @@ function mayspawn() {
     if (isdefined(level.var_75db41a7) && gettime() >= level.var_75db41a7) {
         return 0;
     }
-    if (isdefined(self.var_97181f3c) && self.var_97181f3c) {
+    if (isdefined(self.iseliminated) && self.iseliminated) {
         return 0;
     }
     return function_38527849();

@@ -10,7 +10,7 @@
     "label": "#menu/x_zones",
     "name": "zone_count",
     "displayname": "#hash_276d6500aad8fb77",
-    "var_9600a8ab": "#menu/1_zone",
+    "label1": "#menu/1_zone",
     "var_9de86f42": 5,
     "setting": "zoneCount"
 }

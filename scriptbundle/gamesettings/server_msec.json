@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "server_msec",
     "displayname": "#hash_3dbc57e3099e1693",
-    "var_9600a8ab": "#menu/normal",
-    "var_bd2ff709": "#menu/fast",
+    "label1": "#menu/normal",
+    "label2": "#menu/fast",
     "var_9de86f42": 2,
     "setting": "servermsec"
 }

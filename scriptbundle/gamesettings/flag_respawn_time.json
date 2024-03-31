@@ -14,7 +14,7 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "flag_respawn_time",
     "displayname": "#hash_2ff274a94db73526",
-    "var_9600a8ab": "#hash_7201503206ce2d27",
+    "label1": "#hash_7201503206ce2d27",
     "var_9de86f42": 9,
     "setting": "flagRespawnTime"
 }

@@ -10,9 +10,9 @@
     "name": "heal_speed",
     "displayname": "#hash_557baa96c8c3a909",
     "var_684ccd4c": "#menu/instant",
-    "var_9600a8ab": "#menu/slow",
+    "label1": "#menu/slow",
     "var_71b6e020": "#menu/fast",
-    "var_bd2ff709": "#menu/normal",
+    "label2": "#menu/normal",
     "var_9de86f42": 4,
     "setting": "specialistHealSpeed_allies_1"
 }

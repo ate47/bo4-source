@@ -1223,9 +1223,9 @@ function function_5af3a29(params) {
 function function_3832a0d2(team) {
     winner = function_b5f4c9d8(team);
     if (isdefined(winner)) {
-        var_fc96f513 = winner getmpdialogname();
-        if (isdefined(var_fc96f513)) {
-            player_bundle = struct::get_script_bundle("mpdialog_player", var_fc96f513);
+        bundle_name = winner getmpdialogname();
+        if (isdefined(bundle_name)) {
+            player_bundle = struct::get_script_bundle("mpdialog_player", bundle_name);
             if (isdefined(player_bundle)) {
                 var_520b24a = player_bundle.boostwin;
                 if (isdefined(var_520b24a)) {

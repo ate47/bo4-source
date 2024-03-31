@@ -178,11 +178,11 @@ function function_9cc59537() {
                         var_c5330f11 = 32;
                         v_color = (1, 0, 1);
                         if (isdefined(var_b91441dd.itemlist[0])) {
-                            if (var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>" || var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>") {
+                            if (var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>" || var_b91441dd.itemlist[0].itementry === "<unknown string>") {
                                 v_color = (1, 1, 0);
                                 var_47748885 = 4;
                                 var_c5330f11 = 4;
-                            } else if (var_b91441dd.itemlist[0].var_a6762160 === "<unknown string>") {
+                            } else if (var_b91441dd.itemlist[0].itementry === "<unknown string>") {
                                 v_color = (1, 1, 0);
                                 var_47748885 = 8;
                                 var_c5330f11 = 8;
@@ -193,7 +193,7 @@ function function_9cc59537() {
                         if (items.size > 0) {
                             v_color = (0, 1, 0);
                             foreach (item in items) {
-                                var_c3aa278e = item.var_a6762160.name;
+                                var_c3aa278e = item.itementry.name;
                                 str_item_name = getdvarstring(#"hash_4d2d3346b87258c6", "<unknown string>");
                                 if (function_d72aa67e(str_item_name, var_c3aa278e)) {
                                     n_radius = 18;
@@ -214,8 +214,8 @@ function function_9cc59537() {
                                 var_abc7e003 = arraysortclosest(var_abc7e003, point.origin, 10, var_47748885);
                                 foreach (item_type in var_b91441dd.itemlist) {
                                     foreach (var_d76a7255 in var_abc7e003) {
-                                        if (item_type.var_a6762160 === var_d76a7255.var_a6762160.name && var_d76a7255.var_a6762160.name === items[0].var_a6762160.name) {
-                                            print3d(point.origin + vectorscale((0, 0, 1), 18), item_type.var_a6762160 + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
+                                        if (item_type.itementry === var_d76a7255.itementry.name && var_d76a7255.itementry.name === items[0].itementry.name) {
+                                            print3d(point.origin + vectorscale((0, 0, 1), 18), item_type.itementry + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
                                             line(var_d76a7255.origin, point.origin, (1, 0.5, 0), 1, 0, 8);
                                         }
                                     }

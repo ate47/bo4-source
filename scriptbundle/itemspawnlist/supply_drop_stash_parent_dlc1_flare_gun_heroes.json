@@ -2,49 +2,49 @@
     "itemlist": [
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot1_dlc1",
+            "itementry": "supply_stash_slot1_dlc1",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot2_dlc1",
+            "itementry": "supply_stash_slot2_dlc1",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_drop_slot3_heavy_metal_heroes",
+            "itementry": "supply_drop_slot3_heavy_metal_heroes",
             "maxweight": 10,
             "available": 2
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot4_dlc1",
+            "itementry": "supply_stash_slot4_dlc1",
             "maxweight": 10,
             "available": 2
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_stash_slot5_dlc1",
+            "itementry": "supply_stash_slot5_dlc1",
             "maxweight": 10,
             "available": 2
         },
         {
             "minweight": 10,
-            "var_a6762160": "supply_drop_operator_or_specialist",
+            "itementry": "supply_drop_operator_or_specialist",
             "maxweight": 10,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "flare_gun_veh_wz_item",
+            "itementry": "flare_gun_veh_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "launcher_standard_operator_t8_item",
+            "itementry": "launcher_standard_operator_t8_item",
             "var_3f8c08e3": "ammo_type_rocket_double_item",
             "maxweight": 100,
             "available": 1

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "graveyard_list_item_default_dlc1",
+            "itementry": "graveyard_list_item_default_dlc1",
             "maxweight": 500,
             "available": -1
         }

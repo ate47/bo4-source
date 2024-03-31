@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "weapons_test_guns_gold",
+            "itementry": "weapons_test_guns_gold",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 60,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "armor_item_medium",
+            "itementry": "armor_item_medium",
             "maxweight": 60,
             "available": 1
         }

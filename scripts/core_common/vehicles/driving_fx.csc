@@ -26,7 +26,7 @@ function vehicle_enter(localclientnum, vehicle) {
     self endon(#"death");
     vehicle endon(#"death");
     waitframe(1);
-    if (vehicle isvehicle() && vehicle function_973c841f(self)) {
+    if (vehicle isvehicle() && vehicle isdrivingvehicle(self)) {
         vehicle thread collision_thread(localclientnum);
         if (vehicle function_b835102b()) {
             vehicle thread jump_landing_thread(localclientnum);
@@ -54,7 +54,7 @@ function collision_thread(localclientnum) {
         hit_intensity = waitresult.intensity;
         player = function_5c10bd79(localclientnum);
         if (isdefined(self.driving_fx_collision_override)) {
-            if (player function_21c0fa55() && self function_973c841f(player)) {
+            if (player function_21c0fa55() && self isdrivingvehicle(player)) {
                 self [[ self.driving_fx_collision_override ]](localclientnum, player, hip, hitn, hit_intensity);
             }
             continue;
@@ -69,7 +69,7 @@ function collision_thread(localclientnum) {
                     alias = "veh_default_suspension_lg_hd";
                 }
                 self playsound(localclientnum, alias, undefined, volume);
-                if (isdefined(self.heavycollisionrumble) && player function_21c0fa55() && self function_973c841f(player)) {
+                if (isdefined(self.heavycollisionrumble) && player function_21c0fa55() && self isdrivingvehicle(player)) {
                     player playrumbleonentity(localclientnum, self.heavycollisionrumble);
                 }
                 continue;
@@ -83,7 +83,7 @@ function collision_thread(localclientnum) {
                     alias = "veh_default_suspension_lg_lt";
                 }
                 self playsound(localclientnum, alias, undefined, volume);
-                if (isdefined(self.lightcollisionrumble) && player function_21c0fa55() && self function_973c841f(player)) {
+                if (isdefined(self.lightcollisionrumble) && player function_21c0fa55() && self isdrivingvehicle(player)) {
                     player playrumbleonentity(localclientnum, self.lightcollisionrumble);
                 }
             }
@@ -114,7 +114,7 @@ function jump_landing_thread(localclientnum) {
                 alias = "veh_default_suspension_lg_hd";
             }
             self playsound(localclientnum, alias, undefined, volume);
-            if (isdefined(self.jumplandingrumble) && player function_21c0fa55() && self function_973c841f(player)) {
+            if (isdefined(self.jumplandingrumble) && player function_21c0fa55() && self isdrivingvehicle(player)) {
                 player playrumbleonentity(localclientnum, self.jumplandingrumble);
             }
         }
@@ -140,7 +140,7 @@ function suspension_thread(localclientnum) {
                 alias = "veh_default_suspension_lg_lt";
             }
             self playsound(localclientnum, alias, undefined, volume);
-            if (player function_21c0fa55() && self function_973c841f(player)) {
+            if (player function_21c0fa55() && self isdrivingvehicle(player)) {
                 player playrumbleonentity(localclientnum, "damage_light");
             }
         }

@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "frag_grenade_wz_item",
+            "itementry": "frag_grenade_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "hatchet_wz_item",
+            "itementry": "hatchet_wz_item",
             "maxweight": 150,
             "available": -1
         }

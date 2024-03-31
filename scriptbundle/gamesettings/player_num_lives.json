@@ -19,8 +19,8 @@
     "label": "#menu/x_lives",
     "name": "player_num_lives",
     "displayname": "#hash_6b02b19b36d9315e",
-    "var_9600a8ab": "#hash_52b38f6fb98e8982",
-    "var_bd2ff709": "#menu/1_life",
+    "label1": "#hash_52b38f6fb98e8982",
+    "label2": "#menu/1_life",
     "var_9de86f42": 14,
     "setting": "playerNumLives"
 }

@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_lightweight",
+            "itementry": "perk_item_lightweight",
             "maxweight": 140,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "perk_item_deadsilence",
+            "itementry": "perk_item_deadsilence",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "perk_item_medic",
+            "itementry": "perk_item_medic",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_bloody_tracker",
+            "itementry": "perk_item_bloody_tracker",
             "maxweight": 100,
             "available": -1
         }

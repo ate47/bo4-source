@@ -2,21 +2,21 @@
     "itemlist": [
         {
             "minweight": 75,
-            "var_a6762160": "smg_standard_t8_item",
+            "itementry": "smg_standard_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "smg_handling_t8_item",
+            "itementry": "smg_handling_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "smg_capacity_t8_item",
+            "itementry": "smg_capacity_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1

@@ -21,8 +21,8 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "player_respawn_delay",
     "displayname": "#hash_547ce2933edef841",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
-    "var_bd2ff709": "#hash_7201503206ce2d27",
+    "label1": "#hash_94eb0e3329edf5f",
+    "label2": "#hash_7201503206ce2d27",
     "var_9de86f42": 16,
     "setting": "playerRespawnDelay"
 }

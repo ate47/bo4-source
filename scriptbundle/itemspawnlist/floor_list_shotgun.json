@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 150,
-            "var_a6762160": "shotgun_pump_t8_item",
+            "itementry": "shotgun_pump_t8_item",
             "var_3f8c08e3": "ammo_type_12ga_item",
             "maxweight": 200,
             "available": -1

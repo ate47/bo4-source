@@ -9,9 +9,9 @@
     "label": "#hash_4bf59e78dfb9da30",
     "name": "zm_powerdoorstate",
     "displayname": "#hash_70338496429ffe27",
-    "var_9600a8ab": "#hash_3b41c280ca439dd1",
+    "label1": "#hash_3b41c280ca439dd1",
     "var_71b6e020": "#hash_7ebc76ab224b7dcb",
-    "var_bd2ff709": "#hash_4bf59e78dfb9da30",
+    "label2": "#hash_4bf59e78dfb9da30",
     "var_9de86f42": 3,
     "setting": "zmPowerDoorState"
 }

@@ -41,7 +41,7 @@ function __init__() {
 function private on_item_use(params) {
     self endon(#"death", #"disconnect", #"begin_grenade_tracking", #"grenade_throw_cancelled");
     var_d0931295 = function_b02e4a26(self);
-    if (!isdefined(params.item) || !isdefined(params.item.var_a6762160) || !isdefined(params.item.var_a6762160.weapon) || params.item.var_a6762160.weapon.name != "ultimate_turret") {
+    if (!isdefined(params.item) || !isdefined(params.item.itementry) || !isdefined(params.item.itementry.weapon) || params.item.itementry.weapon.name != "ultimate_turret") {
         return;
     }
     self thread function_6c288c45(var_d0931295.origin, var_d0931295.angles);

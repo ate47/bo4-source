@@ -407,10 +407,10 @@ function vehiclecrush(eattacker, einflictor) {
         forwardvec = vectornormalize(velocity);
         upvec = (0, 0, 1);
         leftvec = vectornormalize(vectorcross(upvec, forwardvec));
-        var_d264a58b = speedscale * randomfloatrange(50, 150);
+        forwardscale = speedscale * randomfloatrange(50, 150);
         upscale = speedscale * randomfloatrange(50, 75);
-        var_175cbf21 = speedscale * randomfloatrange(-25, 25);
-        force = velocity + forwardvec * var_d264a58b + upvec * upscale + leftvec * var_175cbf21;
+        leftscale = speedscale * randomfloatrange(-25, 25);
+        force = velocity + forwardvec * forwardscale + upvec * upscale + leftvec * leftscale;
         var_3e6c815d = length(force);
         force = vectornormalize(force) * math::clamp(var_3e6c815d, 5, 250);
         self launchragdoll(force);

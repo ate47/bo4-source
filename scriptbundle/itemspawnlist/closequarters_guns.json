@@ -2,84 +2,84 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "smg_accurate_t8_item",
+            "itementry": "smg_accurate_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_handling_t8_item",
+            "itementry": "smg_handling_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_fastfire_t8_item",
+            "itementry": "smg_fastfire_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_standard_t8_item",
+            "itementry": "smg_standard_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_capacity_t8_item",
+            "itementry": "smg_capacity_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "pistol_standard_t8_item",
+            "itementry": "pistol_standard_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "pistol_revolver_t8_item",
+            "itementry": "pistol_revolver_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "pistol_burst_t8_item",
+            "itementry": "pistol_burst_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "shotgun_pump_t8_item",
+            "itementry": "shotgun_pump_t8_item",
             "var_3f8c08e3": "ammo_type_12ga_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "shotgun_semiauto_t8_item",
+            "itementry": "shotgun_semiauto_t8_item",
             "var_3f8c08e3": "ammo_type_12ga_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_mp40_t8_item",
+            "itementry": "smg_mp40_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "smg_fastburst_t8_item",
+            "itementry": "smg_fastburst_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 100,
             "available": -1

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "wz_escape_dest_parade_grounds_list_items",
+            "itementry": "wz_escape_dest_parade_grounds_list_items",
             "maxweight": 500,
             "available": -1
         },

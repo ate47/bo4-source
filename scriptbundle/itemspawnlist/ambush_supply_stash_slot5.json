@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "sniperscope_wz_item",
+            "itementry": "sniperscope_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "pistol_grip_wz_item",
+            "itementry": "pistol_grip_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "acog_plus_wz_item",
+            "itementry": "acog_plus_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "extbarrel_wz_item",
+            "itementry": "extbarrel_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "foregrip_wz_item",
+            "itementry": "foregrip_wz_item",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "fastmag_wz_item",
+            "itementry": "fastmag_wz_item",
             "maxweight": 50,
             "available": 1
         },

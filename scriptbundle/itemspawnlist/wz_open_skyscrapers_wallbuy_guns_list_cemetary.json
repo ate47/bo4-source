@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_ar",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_ar",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_smg",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_smg",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_shotgun",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_shotgun",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 25,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_tr",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_tr",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 25,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_lmg",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_lmg",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 25,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_sniper",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_sniper",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_zombie",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_zombie",
             "maxweight": 100,
             "available": -1
         }

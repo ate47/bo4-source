@@ -2,49 +2,49 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "pistol_grip_wz_item",
+            "itementry": "pistol_grip_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "foregrip_wz_item",
+            "itementry": "foregrip_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "extmag_wz_item",
+            "itementry": "extmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "fastmag_wz_item",
+            "itementry": "fastmag_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "tritium_wz_item",
+            "itementry": "tritium_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "reflex_wz_item",
+            "itementry": "reflex_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "holo_wz_item",
+            "itementry": "holo_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "laser_sight_wz_item",
+            "itementry": "laser_sight_wz_item",
             "maxweight": 100,
             "available": -1
         }

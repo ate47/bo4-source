@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "disable_third_person_spectating",
     "displayname": "#hash_397d2856dac7e9aa",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
-    "var_bd2ff709": "#menu/enabled",
+    "label1": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/enabled",
     "var_9de86f42": 2,
     "setting": "disableThirdPersonSpectating"
 }

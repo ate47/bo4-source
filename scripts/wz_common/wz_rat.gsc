@@ -137,15 +137,15 @@ function function_31980089(params) {
         }
         items = item_world::function_2e3efdda(player.origin, undefined, numitems, distance);
         foreach (item in items) {
-            if (item.var_a6762160.name == "<unknown string>") {
+            if (item.itementry.name == "<unknown string>") {
                 continue;
             }
             if (isdefined(params.handler)) {
-                if (params.handler != item.var_a6762160.handler && params.handler != "<unknown string>") {
+                if (params.handler != item.itementry.handler && params.handler != "<unknown string>") {
                     continue;
                 }
             }
-            if (name == "<unknown string>" || item.var_a6762160.name == name) {
+            if (name == "<unknown string>" || item.itementry.name == name) {
                 function_55e20e75(params._id, item.origin);
             }
         }

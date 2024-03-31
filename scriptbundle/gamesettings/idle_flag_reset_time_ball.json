@@ -12,7 +12,7 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "idle_flag_reset_time_ball",
     "displayname": "#hash_1122d81521503c7",
-    "var_9600a8ab": "#menu/instant",
+    "label1": "#menu/instant",
     "var_9de86f42": 7,
     "setting": "idleFlagResetTime"
 }

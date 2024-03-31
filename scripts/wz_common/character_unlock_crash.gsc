@@ -49,8 +49,8 @@ function function_2613aeec(enabled) {
 // Checksum 0x841bd559, Offset: 0x2d8
 // Size: 0x15c
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu03_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu03_item") {
         if (self character_unlock::function_f0406288(#"crash_unlock")) {
             var_4862d883 = self function_687146d();
             if (var_4862d883 >= 15) {
@@ -74,12 +74,12 @@ function on_drop_item(params) {
     if (!isplayer(self)) {
         return;
     }
-    var_a6762160 = params.item.var_a6762160;
+    itementry = params.item.itementry;
     deathstash = params.item.deathstash;
     if (isdefined(deathstash) && deathstash) {
         return;
     }
-    if (isdefined(var_a6762160) && var_a6762160.itemtype === #"health") {
+    if (isdefined(itementry) && itementry.itemtype === #"health") {
         if (self character_unlock::function_f0406288(#"crash_unlock")) {
             var_4862d883 = self function_687146d();
             if (var_4862d883 < 15) {
@@ -94,8 +94,8 @@ function on_drop_item(params) {
 // Checksum 0x41f669a3, Offset: 0x570
 // Size: 0xdc
 function on_item_pickup(params) {
-    var_a6762160 = params.item.var_a6762160;
-    if (isdefined(var_a6762160) && var_a6762160.itemtype === #"health") {
+    itementry = params.item.itementry;
+    if (isdefined(itementry) && itementry.itemtype === #"health") {
         if (self character_unlock::function_f0406288(#"crash_unlock")) {
             var_4862d883 = self function_687146d();
             if (var_4862d883 >= 15) {
@@ -110,8 +110,8 @@ function on_item_pickup(params) {
 // Checksum 0xd0260cca, Offset: 0x658
 // Size: 0xd4
 function on_item_use(params) {
-    var_a6762160 = params.item.var_a6762160;
-    if (isdefined(var_a6762160) && var_a6762160.itemtype === #"health") {
+    itementry = params.item.itementry;
+    if (isdefined(itementry) && itementry.itemtype === #"health") {
         if (self character_unlock::function_f0406288(#"crash_unlock")) {
             var_4862d883 = self function_687146d();
             if (var_4862d883 < 15) {
@@ -129,7 +129,7 @@ function private function_687146d() {
     var_4862d883 = 0;
     if (isdefined(self.inventory) && isdefined(self.inventory.items)) {
         foreach (item in self.inventory.items) {
-            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"health") {
+            if (isdefined(item.itementry) && item.itementry.itemtype === #"health") {
                 var_4862d883 = var_4862d883 + item.count;
             }
         }

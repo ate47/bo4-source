@@ -284,8 +284,8 @@ function display_scene_menu(str_type, str_scene) {
                 println("<unknown string>" + toupper(str_type) + "<unknown string>");
             }
             foreach (str_scene_name in names) {
-                var_69836136 = getsubstr(str_scene_name, 0, 4);
-                if (var_69836136 == "<unknown string>") {
+                str_prefix = getsubstr(str_scene_name, 0, 4);
+                if (str_prefix == "<unknown string>") {
                     arrayremovevalue(names, str_scene_name);
                     array::push_front(names, str_scene_name);
                 }
@@ -818,8 +818,8 @@ function toggle_postfx_igc_loop() {
 function function_42edf155() {
     /#
         while (true) {
-            var_45ec9741 = getdvarint(#"hash_1c68b689a2dac0fa", 0);
-            if (var_45ec9741 != 0) {
+            requestflag = getdvarint(#"hash_1c68b689a2dac0fa", 0);
+            if (requestflag != 0) {
                 position_x = 0;
                 position_y = 0;
                 position_z = 0;

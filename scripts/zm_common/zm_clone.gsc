@@ -36,7 +36,7 @@ function spawn_player_clone(player, origin = player.origin, forceweapon, forcemo
             if (isdefined(var_1749f1e8)) {
                 clone setmodel(var_1749f1e8);
             }
-            headmodel = player function_44a7328f();
+            headmodel = player startquantity();
             if (isdefined(headmodel)) {
                 if (isdefined(clone.head)) {
                     clone detach(clone.head);
@@ -54,7 +54,7 @@ function spawn_player_clone(player, origin = player.origin, forceweapon, forcemo
             if (isdefined(var_41206ae3)) {
                 clone setmodel(var_41206ae3);
             }
-            headmodel = player function_44a7328f();
+            headmodel = player startquantity();
             if (isdefined(headmodel)) {
                 if (isdefined(clone.head)) {
                     clone detach(clone.head);

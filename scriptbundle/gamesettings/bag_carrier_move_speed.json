@@ -7,9 +7,9 @@
     "type": "gamesettings",
     "name": "bag_carrier_move_speed",
     "displayname": "#hash_750072f6ce79be20",
-    "var_9600a8ab": "#menu/slow",
+    "label1": "#menu/slow",
     "var_71b6e020": "#menu/fast",
-    "var_bd2ff709": "#menu/normal",
+    "label2": "#menu/normal",
     "var_9de86f42": 3,
     "setting": "bountyBagOMoneyMoveScale"
 }

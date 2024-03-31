@@ -26,8 +26,8 @@
     "var_5a6dee5a": 1,
     "name": "time_limit_dom",
     "displayname": "#hash_62c13100f00ec8ed",
-    "var_9600a8ab": "#hash_52b38f6fb98e8982",
-    "var_bd2ff709": "#hash_666d89ef0248d1ef",
+    "label1": "#hash_52b38f6fb98e8982",
+    "label2": "#hash_666d89ef0248d1ef",
     "var_9de86f42": 20,
     "setting": "timeLimit"
 }

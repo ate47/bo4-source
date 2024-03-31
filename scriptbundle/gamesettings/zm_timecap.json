@@ -105,8 +105,8 @@
     "label": "#hash_4734adc9aa509e3",
     "name": "zm_timecap",
     "displayname": "#hash_1fe75c4fb80159f1",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
-    "var_bd2ff709": "#hash_30c09a00d040cfa7",
+    "label1": "#hash_68b65fb510ccd214",
+    "label2": "#hash_30c09a00d040cfa7",
     "var_54e336e4": 1,
     "var_9de86f42": 100,
     "setting": "zmTimeCap"

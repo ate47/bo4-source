@@ -42,8 +42,8 @@ function function_2613aeec(enabled) {
 // Checksum 0x22095c88, Offset: 0x218
 // Size: 0x54
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu10_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu10_item") {
         self thread function_798820a9(item);
     }
 }
@@ -56,9 +56,9 @@ function on_drop_item(params) {
     if (!isplayer(self)) {
         return;
     }
-    if (isdefined(params.item) && isdefined(params.item.var_a6762160)) {
-        var_a6762160 = params.item.var_a6762160;
-        if (var_a6762160.name === #"cu10_item" && !self character_unlock::function_f0406288(#"prophet_unlock")) {
+    if (isdefined(params.item) && isdefined(params.item.itementry)) {
+        itementry = params.item.itementry;
+        if (itementry.name === #"cu10_item" && !self character_unlock::function_f0406288(#"prophet_unlock")) {
             self notify(#"dropped_prophet_item");
         }
     }

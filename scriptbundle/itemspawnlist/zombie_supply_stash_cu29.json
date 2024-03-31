@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "cu29_item",
+            "itementry": "cu29_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_bowie_t8_item",
+            "itementry": "melee_bowie_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "perk_item_drifter",
+            "itementry": "perk_item_drifter",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "perk_item_lightweight",
+            "itementry": "perk_item_lightweight",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "concussion_wz_item",
+            "itementry": "concussion_wz_item",
             "maxweight": 1,
             "available": 1
         }

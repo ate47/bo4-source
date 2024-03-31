@@ -12,7 +12,7 @@
     "label": "#hash_7021c4e2ce918331",
     "name": "kill_points_in_enemy_protected_zone",
     "displayname": "#hash_67db3b0ca9fc1a77",
-    "var_bd2ff709": "#menu/1_point",
+    "label2": "#menu/1_point",
     "var_9de86f42": 7,
     "setting": "killPointsInEnemyProtectedZone"
 }

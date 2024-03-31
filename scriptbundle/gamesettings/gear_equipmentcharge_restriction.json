@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "gear_equipmentcharge_restriction",
     "displayname": "#hash_6084819ee77eb6ac",
-    "var_9600a8ab": "#menu/enabled",
-    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/enabled",
+    "label2": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__gear_equipmentcharge__restricted"
 }

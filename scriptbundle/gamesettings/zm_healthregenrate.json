@@ -12,9 +12,9 @@
     "displayname": "#hash_204db400388a9f8b",
     "var_970eaacf": "#hash_4137b6b6187e7239",
     "var_684ccd4c": "#hash_58d704c861150b81",
-    "var_9600a8ab": "#hash_6b4ecdd9d19ad73c",
+    "label1": "#hash_6b4ecdd9d19ad73c",
     "var_71b6e020": "#hash_1ba60b6389d20648",
-    "var_bd2ff709": "#hash_7055d21eae0da1ef",
+    "label2": "#hash_7055d21eae0da1ef",
     "var_9de86f42": 5,
     "setting": "zmHealthRegenRate"
 }

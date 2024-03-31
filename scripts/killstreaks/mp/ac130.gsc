@@ -488,8 +488,8 @@ function function_849819e9(missile, bundle, var_61bbac7a) {
     while (isdefined(ac130.owner) && ac130.owner util::function_63d27d4e("ac130")) {
         dist = distance(missile.origin, ac130.origin);
         velocity = missile getvelocity();
-        var_d794a748 = vectornormalize(velocity);
-        missile_speed = vectordot(var_d794a748, velocity);
+        missile_dir = vectornormalize(velocity);
+        missile_speed = vectordot(missile_dir, velocity);
         if (missile_speed > 0) {
             if (dist < missile_speed * var_d1fb4ef3) {
                 ac130 playsoundtoplayer(var_61bbac7a, ac130.owner);
@@ -1222,9 +1222,9 @@ function function_3939b657(vehicle) {
         enemy = undefined;
         enemies = self teams::getenemyplayers();
         enemies = array::randomize(enemies);
-        foreach (var_607bb54c in enemies) {
-            if (isalive(var_607bb54c)) {
-                enemy = var_607bb54c;
+        foreach (potentialenemy in enemies) {
+            if (isalive(potentialenemy)) {
+                enemy = potentialenemy;
                 break;
             }
         }
@@ -1265,7 +1265,7 @@ function function_d45a1f8d(einflictor, attacker, idamage, smeansofdeath, weapon,
 function function_631f02c5(isprimaryweapon) {
     self endon(#"killed");
     if (isprimaryweapon) {
-        self.var_1824934b = (isdefined(self.var_1824934b) ? self.var_1824934b : 0) + 1;
+        self.primarykill = (isdefined(self.primarykill) ? self.primarykill : 0) + 1;
     } else {
         self.secondarykill = (isdefined(self.secondarykill) ? self.secondarykill : 0) + 1;
     }
@@ -1282,7 +1282,7 @@ function function_631f02c5(isprimaryweapon) {
 // Size: 0x1b4
 function function_568f6426(isprimaryweapon) {
     if (isprimaryweapon) {
-        switch (self.var_1824934b) {
+        switch (self.primarykill) {
         case 0:
             break;
         case 1:
@@ -1298,7 +1298,7 @@ function function_568f6426(isprimaryweapon) {
             dialogkey = "killMultiple";
             break;
         }
-        self.var_1824934b = 0;
+        self.primarykill = 0;
     } else {
         switch (self.secondarykill) {
         case 0:

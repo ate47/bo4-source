@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 200,
-            "var_a6762160": "ammo_type_338_item",
+            "itementry": "ammo_type_338_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 200,
-            "var_a6762160": "ammo_type_50cal_item",
+            "itementry": "ammo_type_50cal_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 20,
-            "var_a6762160": "ammo_type_rocket_item",
+            "itementry": "ammo_type_rocket_item",
             "maxweight": 30,
             "available": -1
         }

@@ -2,56 +2,56 @@
     "itemlist": [
         {
             "minweight": 75,
-            "var_a6762160": "smg_handling_t8_item",
+            "itementry": "smg_handling_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "smg_fastfire_t8_item",
+            "itementry": "smg_fastfire_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "smg_standard_t8_item",
+            "itementry": "smg_standard_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 160,
             "available": -1
         },
         {
             "minweight": 115,
-            "var_a6762160": "smg_capacity_t8_item",
+            "itementry": "smg_capacity_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 120,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "smg_accurate_t8_item",
+            "itementry": "smg_accurate_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 160,
             "available": -1
         },
         {
             "minweight": 115,
-            "var_a6762160": "smg_fastburst_t8_item",
+            "itementry": "smg_fastburst_t8_item",
             "var_3f8c08e3": "ammo_type_45_item",
             "maxweight": 120,
             "available": -1
         },
         {
             "minweight": 75,
-            "var_a6762160": "smg_mp40_t8_item",
+            "itementry": "smg_mp40_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 75,
             "available": -1
         },
         {
             "minweight": 120,
-            "var_a6762160": "smg_folding_t8_item",
+            "itementry": "smg_folding_t8_item",
             "var_3f8c08e3": "ammo_type_9mm_item",
             "maxweight": 150,
             "available": -1

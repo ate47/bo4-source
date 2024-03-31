@@ -19,6 +19,6 @@
     "equipsound": "uin_wz_attach_silencer_on",
     "handler": "#hash_788c59214ead02af",
     "pickupicon": "#ui_icon_attachment_supressor",
-    "var_50773731": 0.5,
+    "positionoffsetz": 0.5,
     "itemtype": "attachment"
 }

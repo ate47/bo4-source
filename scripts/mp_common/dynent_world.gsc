@@ -118,18 +118,18 @@ function private update_loop() {
 function private function_2f394f36() {
     height = self getmaxs()[2];
     bounds = (50, 50, height / 2);
-    var_5ed7231a = self getcentroid();
+    boundsorigin = self getcentroid();
     /#
         debug = self ishost() && getdvarint(#"hash_23e7101285284738", 0);
         if (debug) {
-            box(var_5ed7231a, (0, 0, 0) - bounds, bounds, 0, (0, 0, 1), 1, 0, 5);
+            box(boundsorigin, (0, 0, 0) - bounds, bounds, 0, (0, 0, 1), 1, 0, 5);
         }
     #/
     viewheight = self getplayerviewheight();
     vieworigin = self.origin + (0, 0, viewheight);
     viewangles = self getplayerangles();
     viewforward = anglestoforward(viewangles);
-    var_e86a4d9 = function_db4bc717(var_5ed7231a, bounds);
+    var_e86a4d9 = function_db4bc717(boundsorigin, bounds);
     var_c61b7280 = undefined;
     var_97684497 = undefined;
     bestdot = -1;
@@ -364,8 +364,8 @@ function private event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                 dynent.angles = newangles;
             }
         }
-        if (isdefined(newstate.var_c7ae60e8)) {
-            add_helico(dynent, newstate.var_c7ae60e8);
+        if (isdefined(newstate.overridemodel)) {
+            add_helico(dynent, newstate.overridemodel);
         }
         if (isdefined(newstate.stateanim)) {
             starttime = 0;

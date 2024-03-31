@@ -105,7 +105,7 @@
     "label": "#hash_139c2b8c591b06cf",
     "name": "zm_pointlossondeath",
     "displayname": "#hash_4f9b0a1ad4e866e0",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
+    "label1": "#hash_68b65fb510ccd214",
     "var_54e336e4": 1,
     "var_9de86f42": 100,
     "setting": "zmPointLossOnDeath"

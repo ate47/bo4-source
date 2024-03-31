@@ -413,7 +413,7 @@ function give_killstreaks(var_8be50b09) {
     if (isdefined(level.usingmomentum) && level.usingmomentum) {
         for (sortindex = 0; sortindex < sortedkillstreaks.size && sortindex < var_2e1bd530.size; sortindex++) {
             if (sortedkillstreaks[sortindex].weapon != level.weaponnone) {
-                self function_d9b9c4c6(var_2e1bd530[sortindex], sortedkillstreaks[sortindex].weapon);
+                self setkillstreakweapon(var_2e1bd530[sortindex], sortedkillstreaks[sortindex].weapon);
             }
         }
     }

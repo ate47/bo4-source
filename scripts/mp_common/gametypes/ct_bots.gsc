@@ -459,9 +459,9 @@ function debug_bots(var_841324bd) {
                 if (isdefined(entity.enemy) && entity cansee(entity.enemy)) {
                     ai_cansee = 1;
                 }
-                if (isdefined(entity.var_5a8f690)) {
+                if (isdefined(entity.canseeplayer)) {
                     org = entity.origin + vectorscale((0, 0, 1), 60);
-                    print3d(org, "<unknown string>" + entity.var_5a8f690 + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.75);
+                    print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.75);
                 }
             }
             axis = getaiteamarray(#"axis");
@@ -479,9 +479,9 @@ function debug_bots(var_841324bd) {
                 if (isdefined(entity.enemy) && entity cansee(entity.enemy)) {
                     ai_cansee = 1;
                 }
-                if (isdefined(entity.var_5a8f690)) {
+                if (isdefined(entity.canseeplayer)) {
                     org = entity.origin + vectorscale((0, 0, 1), 70);
-                    print3d(org, "<unknown string>" + entity.var_5a8f690 + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 1);
+                    print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 1);
                 }
                 if (isdefined(entity.var_9a79d89d)) {
                     print3d(entity.var_9a79d89d + vectorscale((0, 0, 1), 10), "<unknown string>", (0, 0, 1), 1, 1);
@@ -538,8 +538,8 @@ function function_3895c193(team = "axis", str_targetname) {
         }
     }
     self callback::on_death(&on_death);
-    if (isdefined(level.var_85b717db)) {
-        self [[ level.var_85b717db ]]();
+    if (isdefined(level.prespawnplayer)) {
+        self [[ level.prespawnplayer ]]();
     }
     self [[ level.spawnplayer ]]();
     self.var_911100f4 = 1;
@@ -678,7 +678,7 @@ function on_bot_spawned() {
             self thread function_35e77034(getweapon(#"ar_accurate_t8", 1));
         }
     }
-    self.var_5a8f690 = undefined;
+    self.canseeplayer = undefined;
     self.var_ea34ab74 = undefined;
     self.var_f38f922 = undefined;
 }
@@ -708,24 +708,24 @@ function function_82675316(vdir, limit) {
 // Checksum 0x9bb8915a, Offset: 0x2ae0
 // Size: 0x15a
 function function_fe3c676a(enemy) {
-    if (isdefined(self.var_5a8f690) && gettime() < self.var_ea34ab74) {
-        return self.var_5a8f690;
+    if (isdefined(self.canseeplayer) && gettime() < self.var_ea34ab74) {
+        return self.canseeplayer;
     }
     if (!self function_82675316(anglestoforward(enemy.angles), 0.2)) {
-        self.var_5a8f690 = 0;
+        self.canseeplayer = 0;
         self.var_ea34ab74 = gettime() + 500;
     } else {
         targetpoint = isdefined(enemy.var_88f8feeb) ? enemy.var_88f8feeb : enemy getcentroid();
         if (bullettracepassed(self geteye(), targetpoint, 0, enemy)) {
             self clearentitytarget();
-            self.var_5a8f690 = 1;
+            self.canseeplayer = 1;
             self.var_ea34ab74 = gettime() + 2000;
         } else {
-            self.var_5a8f690 = 0;
+            self.canseeplayer = 0;
             self.var_ea34ab74 = gettime() + 500;
         }
     }
-    return self.var_5a8f690;
+    return self.canseeplayer;
 }
 
 // Namespace ct_bots/ct_bots
@@ -953,8 +953,8 @@ function function_eca43db6() {
         self thread function_6c89913a(self.var_daa4b90a);
     }
     enemy = self get_enemy();
-    self.var_5a8f690 = self function_fe3c676a(enemy);
-    if (self.var_5a8f690 && !(isdefined(self.var_4c7240f1) && self.var_4c7240f1)) {
+    self.canseeplayer = self function_fe3c676a(enemy);
+    if (self.canseeplayer && !(isdefined(self.var_4c7240f1) && self.var_4c7240f1)) {
         self.prevstate = 2;
         self.var_ef59b90 = 3;
     }
@@ -1019,8 +1019,8 @@ function function_3abfdc6b() {
         }
     }
     enemy = self get_enemy();
-    self.var_5a8f690 = self function_fe3c676a(enemy);
-    if (self.var_5a8f690 && !(isdefined(self.var_4c7240f1) && self.var_4c7240f1)) {
+    self.canseeplayer = self function_fe3c676a(enemy);
+    if (self.canseeplayer && !(isdefined(self.var_4c7240f1) && self.var_4c7240f1)) {
         self.prevstate = 4;
         self.var_ef59b90 = 3;
     }
@@ -1060,8 +1060,8 @@ function function_4b111722() {
         self.var_ef59b90 = 2;
     }
     enemy = self get_enemy();
-    self.var_5a8f690 = self function_fe3c676a(enemy);
-    if (self.var_5a8f690) {
+    self.canseeplayer = self function_fe3c676a(enemy);
+    if (self.canseeplayer) {
         self.prevstate = 1;
         self.var_ef59b90 = 3;
     }
@@ -1097,9 +1097,9 @@ function bot_chase_state() {
     }
     if (!(isdefined(self.var_38b6161f) && self.var_38b6161f)) {
         enemy = self get_enemy();
-        self.var_5a8f690 = self function_fe3c676a(enemy);
+        self.canseeplayer = self function_fe3c676a(enemy);
         self.var_2925fedc = enemy.origin;
-        if (!self.var_5a8f690) {
+        if (!self.canseeplayer) {
             if (!isdefined(self.var_e4cd1c19)) {
                 self.var_e4cd1c19 = gettime();
             }
@@ -1292,8 +1292,8 @@ function function_a64b7003(var_bf0bb02d = 0, var_61e27031) {
     if (isdefined(level.var_5ec2d86e[0].script_int)) {
         level.var_5ec2d86e = array::sort_by_script_int(level.var_5ec2d86e, 1);
     }
-    if (!isdefined(level.var_85b717db)) {
-        level.var_85b717db = &function_c2cfffdd;
+    if (!isdefined(level.prespawnplayer)) {
+        level.prespawnplayer = &function_c2cfffdd;
         player::function_cf3aa03d(&function_82569431);
     }
     if (isdefined(var_61e27031) && var_61e27031 <= 17) {

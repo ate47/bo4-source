@@ -7,9 +7,9 @@
     "type": "gamesettings",
     "name": "robot_speed",
     "displayname": "#hash_50ed23a4021fb631",
-    "var_9600a8ab": "#menu/slow",
+    "label1": "#menu/slow",
     "var_71b6e020": "#menu/fast",
-    "var_bd2ff709": "#menu/normal",
+    "label2": "#menu/normal",
     "var_9de86f42": 3,
     "setting": "robotSpeed"
 }

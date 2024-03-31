@@ -205,9 +205,9 @@ function private function_9ddb4115(var_1d83d08d) {
         }
         var_1d83d08d.start = newstart;
         var_1b8e09d2 = var_1d83d08d.end;
-        var_6d773f9e = toend * -1;
+        tostart = toend * -1;
         for (var_164fe5c9 = distance2dsquared(var_1b8e09d2, initcircle.origin); var_164fe5c9 > initcircle.radius * initcircle.radius; var_164fe5c9 = var_c820832) {
-            var_1b8e09d2 = var_1b8e09d2 + var_6d773f9e * 1000;
+            var_1b8e09d2 = var_1b8e09d2 + tostart * 1000;
             var_c820832 = distance2dsquared(var_1b8e09d2, initcircle.origin);
             if (var_c820832 > var_164fe5c9) {
                 break;
@@ -1148,9 +1148,9 @@ function function_ca5b6591(insertion, startorigin, endorigin, var_872f085f) {
         if (!isdefined(insertion.cameraent[index])) {
             continue;
         }
-        var_f3d7d863 = endorigin + rotatepoint(vectorscale((0, 0, 1), 250), var_872f085f);
-        timetotarget = distance(var_f3d7d863, targetpos) / 2640;
-        insertion.cameraent[index] moveto(var_f3d7d863, timetotarget);
+        finaltargetpos = endorigin + rotatepoint(vectorscale((0, 0, 1), 250), var_872f085f);
+        timetotarget = distance(finaltargetpos, targetpos) / 2640;
+        insertion.cameraent[index] moveto(finaltargetpos, timetotarget);
     }
     insertion flagsys::wait_till_timeout(0.05, #"insertion_presentation_completed");
     function_a5fd9aa8(insertion);
@@ -1178,9 +1178,9 @@ function function_ca5b6591(insertion, startorigin, endorigin, var_872f085f) {
         if (!isdefined(insertion.cameraent[index])) {
             continue;
         }
-        var_f3d7d863 = endorigin + rotatepoint(vectorscale((0, 0, 1), 250), var_872f085f);
-        timetotarget = distance(var_f3d7d863, targetpos) / 2992;
-        insertion.cameraent[index] moveto(var_f3d7d863, timetotarget);
+        finaltargetpos = endorigin + rotatepoint(vectorscale((0, 0, 1), 250), var_872f085f);
+        timetotarget = distance(finaltargetpos, targetpos) / 2992;
+        insertion.cameraent[index] moveto(finaltargetpos, timetotarget);
     }
     function_a5fd9aa8(insertion);
     foreach (player in insertion.players) {
@@ -1675,19 +1675,19 @@ function function_700e474f(startorigin, endorigin, var_872f085f, goal, index) {
     self endon(#"death");
     dist = distance2d(endorigin, startorigin) / 3;
     offset = (dist / 2, math::sign(goal) * 1000, -1000);
-    var_e8ab2c6b = startorigin + rotatepoint(offset, var_872f085f);
+    firstgoal = startorigin + rotatepoint(offset, var_872f085f);
     offset = (dist / 2, math::sign(goal) * 1000, -1000);
-    var_9fa20618 = var_e8ab2c6b + rotatepoint(offset, var_872f085f);
+    var_9fa20618 = firstgoal + rotatepoint(offset, var_872f085f);
     /#
         if (getdvarint(#"hash_5bbd3d044e1ec1b8", 0)) {
-            self thread function_84898b3f(var_e8ab2c6b, var_9fa20618, endorigin, index);
+            self thread function_84898b3f(firstgoal, var_9fa20618, endorigin, index);
         }
     #/
     wait(0.25);
     self setrotorspeed(1);
     self setspeedimmediate(2);
-    self vehlookat(var_e8ab2c6b);
-    self function_a57c34b7(var_e8ab2c6b, 0, 0);
+    self vehlookat(firstgoal);
+    self function_a57c34b7(firstgoal, 0, 0);
     if (index > 0) {
         wait(0.75);
     }
@@ -1718,15 +1718,15 @@ function function_71da60d1() {
 // Params 4, eflags: 0x0
 // Checksum 0x703c60d7, Offset: 0x8a70
 // Size: 0x126
-function function_84898b3f(var_e8ab2c6b, var_9fa20618, endorigin, index) {
+function function_84898b3f(firstgoal, var_9fa20618, endorigin, index) {
     /#
         self endon(#"death");
         while (getdvarint(#"hash_5bbd3d044e1ec1b8", 0)) {
             color = index < 0 ? (1, 0, 0) : (0, 0, 1);
-            sphere(var_e8ab2c6b, 700, color);
+            sphere(firstgoal, 700, color);
             sphere(var_9fa20618, 700, color);
             sphere(endorigin, 700, color);
-            line(var_e8ab2c6b, var_9fa20618, color);
+            line(firstgoal, var_9fa20618, color);
             line(var_9fa20618, endorigin, color);
             waitframe(1);
         }
@@ -1833,8 +1833,8 @@ function function_45644b08() {
             center = level.deathcircles[circleindex].origin;
             if (circleindex > 0) {
                 var_6bf489f1 = level.deathcircles[0].origin;
-                var_1ce870a0 = vectornormalize(center - var_6bf489f1);
-                var_6e3e0ad7 = vectortoangles(var_1ce870a0);
+                tocenter = vectornormalize(center - var_6bf489f1);
+                var_6e3e0ad7 = vectortoangles(tocenter);
                 if (math::cointoss()) {
                     return var_6e3e0ad7[1];
                 }

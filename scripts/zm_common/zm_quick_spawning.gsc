@@ -94,10 +94,10 @@ function function_15b283ea() {
         return self.var_53df2c57;
     }
     velocity = self function_c5ea0b0();
-    var_49bf47e8 = lengthsquared(velocity);
+    speed_sq = lengthsquared(velocity);
     player_dir = undefined;
-    if (var_49bf47e8 >= getdvarfloat(#"hash_6d953db31bc657cc", 30625)) {
-        player_dir = {#var_49bf47e8:var_49bf47e8, #velocity:velocity, #player:self};
+    if (speed_sq >= getdvarfloat(#"hash_6d953db31bc657cc", 30625)) {
+        player_dir = {#speed_sq:speed_sq, #velocity:velocity, #player:self};
     }
     self.var_dcdf2aec = gettime();
     self.var_53df2c57 = player_dir;

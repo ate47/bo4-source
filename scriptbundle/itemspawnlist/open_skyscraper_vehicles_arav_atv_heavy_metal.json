@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_arav_wz",
+            "itementry": "vehicle_list_arav_wz",
             "maxweight": 1,
             "available": 17
         },
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_rocket_arav_wz",
+            "itementry": "vehicle_list_rocket_arav_wz",
             "maxweight": 1,
             "available": 5
         },
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_atv_wz",
+            "itementry": "vehicle_list_atv_wz",
             "maxweight": 1,
             "available": 10
         }

@@ -163,11 +163,11 @@ function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefine
 // Params 2, eflags: 0x5 linked
 // Checksum 0x5b8eaae5, Offset: 0x1000
 // Size: 0xa8
-function private function_3ea6bf0b(gameobject, var_1766c557) {
+function private function_3ea6bf0b(gameobject, defending_team) {
     teamkeys = getarraykeys(gameobject.numtouching);
     for (i = 0; i < gameobject.numtouching.size; i++) {
         team = teamkeys[i];
-        if (team == var_1766c557) {
+        if (team == defending_team) {
             continue;
         }
         if (gameobject.numtouching[team] > 0) {
@@ -980,8 +980,8 @@ function private function_9c7e3773(planner, constants) {
     /#
         assert(squadindex >= 0, "<unknown string>");
     #/
-    var_7c70464e = region_utility::function_9fe18733();
-    lanenum = squadindex % var_7c70464e;
+    numlanes = region_utility::function_9fe18733();
+    lanenum = squadindex % numlanes;
     planner::setblackboardattribute(planner, "mp_laneNum", array(lanenum), squadindex);
     return spawnstruct();
 }

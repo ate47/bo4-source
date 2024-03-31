@@ -499,7 +499,7 @@ function give_killstreaks() {
     if (isdefined(level.usingmomentum) && level.usingmomentum) {
         for (sortindex = 0; sortindex < sortedkillstreaks.size && sortindex < var_2e1bd530.size; sortindex++) {
             if (sortedkillstreaks[sortindex].weapon != level.weaponnone) {
-                self function_d9b9c4c6(var_2e1bd530[sortindex], sortedkillstreaks[sortindex].weapon);
+                self setkillstreakweapon(var_2e1bd530[sortindex], sortedkillstreaks[sortindex].weapon);
             }
         }
     }
@@ -1078,9 +1078,9 @@ function private function_8e961216(slot, previous_weapon) {
     var_46119dfa = 0;
     primaryoffhandcount = 0;
     primaryoffhandname = self function_b958b70d(self.class_num, "primarygrenade");
-    if (primaryoffhandname == "default_specialist_equipment" && isdefined(self.playerrole) && isdefined(self.playerrole.var_a7e7cb46)) {
+    if (primaryoffhandname == "default_specialist_equipment" && isdefined(self.playerrole) && isdefined(self.playerrole.primaryequipment)) {
         if (isdefined(level.var_50e97365) && level.var_50e97365) {
-            primaryoffhandname = self.playerrole.var_a7e7cb46;
+            primaryoffhandname = self.playerrole.primaryequipment;
         } else {
             primaryoffhandname = #"weapon_null";
         }

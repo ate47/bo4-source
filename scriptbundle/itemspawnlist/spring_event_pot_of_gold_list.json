@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "resource_item_paint_stack_10",
+            "itementry": "resource_item_paint_stack_10",
             "maxweight": 100,
             "available": 3
         },
         {
             "minweight": 100,
-            "var_a6762160": "melee_coinbag_t8_item",
+            "itementry": "melee_coinbag_t8_item",
             "maxweight": 100,
             "available": 1
         }

@@ -6,7 +6,7 @@
     "var_3e688854": -2,
     "weapon": "weapon#sniper_fastrechamber_t8_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "attachslotstock": 1,
     "var_65b3a12": 6,
     "name": "sniper_fastrechamber_t8_item",
@@ -19,6 +19,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_162df0584191b546",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

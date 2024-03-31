@@ -51,13 +51,13 @@ function private function_53d906fd(localclientnum) {
                 if (show_fx) {
                     if (item_world_util::function_2c7fc531(i)) {
                         point = function_b1702735(i);
-                        if (isdefined(point) && isdefined(point.var_a6762160) && point.var_a6762160.name === #"sig_blade_wz_item") {
+                        if (isdefined(point) && isdefined(point.itementry) && point.itementry.name === #"sig_blade_wz_item") {
                             point function_6b5dfd6c(localclientnum, playfx, 0, i, player);
                         } else {
                             level function_6b5dfd6c(localclientnum, 0, 0, i, player);
                         }
                     } else if (item_world_util::function_da09de95(i)) {
-                        if (isdefined(level.item_spawn_drops[i]) && isdefined(level.item_spawn_drops[i].var_a6762160) && level.item_spawn_drops[i].var_a6762160.name === #"sig_blade_wz_item") {
+                        if (isdefined(level.item_spawn_drops[i]) && isdefined(level.item_spawn_drops[i].itementry) && level.item_spawn_drops[i].itementry.name === #"sig_blade_wz_item") {
                             level.item_spawn_drops[i] function_6b5dfd6c(localclientnum, playfx, 1, i);
                         } else {
                             level function_6b5dfd6c(localclientnum, 0, 1, i, player);

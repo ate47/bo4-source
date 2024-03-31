@@ -1121,7 +1121,7 @@ function function_e6457410(attacker, victim, weapon, inflictor) {
         break;
     }
     if (isdefined(var_17a094cf)) {
-        attacker function_18aba49d(0, weapon, undefined);
+        attacker playsoundevent(0, weapon, undefined);
         return 1;
     }
     return 0;
@@ -3112,7 +3112,7 @@ function play_gadget_success(weapon, waitkey, victim, var_5d738b56) {
     }
     if (var_2c976a90 === 1) {
         self.playedgadgetsuccess = 1;
-        self function_18aba49d(0, weapon, var_5d738b56);
+        self playsoundevent(0, weapon, var_5d738b56);
     }
 }
 

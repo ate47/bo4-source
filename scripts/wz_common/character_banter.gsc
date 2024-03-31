@@ -138,7 +138,7 @@ function function_4d9b2d83(players, lookup) {
         }
         var_a9f3e2d4 = banters[player getmpdialogname()];
         if (isdefined(var_a9f3e2d4)) {
-            self function_18aba49d(1, undefined, player);
+            self playsoundevent(1, undefined, player);
             return true;
         }
     }

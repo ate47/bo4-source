@@ -862,7 +862,7 @@ function function_62db7b1c(b_force_spawn = 0, var_eb3a8721) {
         } else {
             s_spawn_loc thread dog_spawn_fx(ai, s_spawn_loc);
         }
-        s_spawn_loc.var_d51f4e2d = gettime();
+        s_spawn_loc.spawned_timestamp = gettime();
         ai.favoriteenemy = e_target;
         ai.favoriteenemy.hunted_by++;
         ai.favoriteenemy.var_230becc2++;

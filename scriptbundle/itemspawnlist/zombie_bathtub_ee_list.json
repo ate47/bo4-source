@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 15,
-            "var_a6762160": "melee_spork_t8_item",
+            "itementry": "melee_spork_t8_item",
             "maxweight": 15,
             "available": 1
         }

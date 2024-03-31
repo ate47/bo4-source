@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "suv_wz_vehicle_black",
+            "itementry": "suv_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "suv_wz_vehicle_grey",
+            "itementry": "suv_wz_vehicle_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "suv_wz_vehicle_met_grey",
+            "itementry": "suv_wz_vehicle_met_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "suv_wz_vehicle_white",
+            "itementry": "suv_wz_vehicle_white",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "suv_wz_vehicle_private_security",
+            "itementry": "suv_wz_vehicle_private_security",
             "maxweight": 1,
             "available": -1
         }

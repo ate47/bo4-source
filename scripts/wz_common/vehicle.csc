@@ -391,7 +391,7 @@ function private function_732976d8(localclientnum, vehicle) {
         if (!isdefined(vehicle) || !isinvehicle(localclientnum, vehicle)) {
             break;
         }
-        if (!vehicle function_973c841f(self) && self function_21c0fa55()) {
+        if (!vehicle isdrivingvehicle(self) && self function_21c0fa55()) {
             self function_d1731820(localclientnum);
             wait(1);
             continue;

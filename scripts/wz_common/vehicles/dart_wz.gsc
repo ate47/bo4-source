@@ -55,7 +55,7 @@ function private kill_vehicle(attackingplayer, weapon = level.weaponnone) {
 // Size: 0x264
 function private on_item_use(params) {
     self endon(#"death", #"disconnect");
-    if (!isdefined(params.item) || !isdefined(params.item.var_a6762160) || !isdefined(params.item.var_a6762160.weapon) || params.item.var_a6762160.weapon.name != #"dart") {
+    if (!isdefined(params.item) || !isdefined(params.item.itementry) || !isdefined(params.item.itementry.weapon) || params.item.itementry.weapon.name != #"dart") {
         return;
     }
     if (!self function_1e845317()) {
@@ -67,16 +67,16 @@ function private on_item_use(params) {
         return;
     }
     traceresults = self spawn_trace();
-    var_7f11909d = undefined;
+    relativeorigin = undefined;
     var_2e2dbfa3 = undefined;
     if (isdefined(traceresults.hitent)) {
-        var_7f11909d = traceresults.origin - traceresults.hitent.origin;
+        relativeorigin = traceresults.origin - traceresults.hitent.origin;
         var_2e2dbfa3 = traceresults.hitent.angles;
     }
     spawnorigin = traceresults.origin;
-    if (isdefined(traceresults.hitent) && isdefined(var_7f11909d)) {
+    if (isdefined(traceresults.hitent) && isdefined(relativeorigin)) {
         anglesdelta = traceresults.hitent.angles - var_2e2dbfa3;
-        spawnorigin = traceresults.hitent.origin + rotatepoint(var_7f11909d, anglesdelta);
+        spawnorigin = traceresults.hitent.origin + rotatepoint(relativeorigin, anglesdelta);
     }
     self thread throw_dart(spawnorigin, traceresults.angles, params.item.id);
 }

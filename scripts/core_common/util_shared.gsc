@@ -1941,7 +1941,7 @@ function spawn_player_clone(player, animname, s_align, var_df23b31f = 0) {
         if (isdefined(var_1749f1e8)) {
             playerclone setmodel(var_1749f1e8);
         }
-        headmodel = player function_44a7328f();
+        headmodel = player startquantity();
         if (isdefined(headmodel)) {
             playerclone attach(headmodel);
         }
@@ -1950,7 +1950,7 @@ function spawn_player_clone(player, animname, s_align, var_df23b31f = 0) {
         if (isdefined(var_41206ae3)) {
             playerclone setmodel(var_41206ae3);
         }
-        headmodel = player function_44a7328f();
+        headmodel = player startquantity();
         if (isdefined(headmodel)) {
             playerclone attach(headmodel);
         }
@@ -2320,7 +2320,7 @@ function isenemyteam(team) {
 // Params 1, eflags: 0x0
 // Checksum 0x96b06490, Offset: 0x6e48
 // Size: 0x80
-function function_4ded36e3(player) {
+function isfriendlyplayer(player) {
     if (!isplayer(player) || !isdefined(self)) {
         return false;
     }

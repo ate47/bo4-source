@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "sniperscope_wz_item",
+            "itementry": "sniperscope_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "suppressor_wz_item",
+            "itementry": "suppressor_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "acog_plus_wz_item",
+            "itementry": "acog_plus_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "advmag_wz_item",
+            "itementry": "advmag_wz_item",
             "maxweight": 200,
             "available": -1
         }

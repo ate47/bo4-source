@@ -6,7 +6,7 @@
     "weapon": "weapon#pistol_burst_t8_wz",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_65b3a12": 6,
     "name": "pistol_burst_t8_item",
     "icon": "#ui_icon_weapon_pistol_burst",
@@ -18,6 +18,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_6f7bbc72be771986",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

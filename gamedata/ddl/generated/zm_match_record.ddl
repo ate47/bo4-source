@@ -631,7 +631,7 @@ struct hash_70eb821ca470e26b {
     short event_type;
     int32 optional1;
     int32 optional2;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
     uint16 hash_517463f096fa64cc;
 };
 

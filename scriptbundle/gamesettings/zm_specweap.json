@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "zm_specweap",
     "displayname": "#hash_1e1a931ed3c6e9d1",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
-    "var_bd2ff709": "#hash_1ac823ffd3e68662",
+    "label1": "#hash_68b65fb510ccd214",
+    "label2": "#hash_1ac823ffd3e68662",
     "var_9de86f42": 2,
     "setting": "zmSpecWeaponIsEnabled"
 }

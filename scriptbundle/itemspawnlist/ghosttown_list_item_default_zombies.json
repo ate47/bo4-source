@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "ghosttown_list_items_zombies",
+            "itementry": "ghosttown_list_items_zombies",
             "maxweight": 500,
             "available": -1
         },

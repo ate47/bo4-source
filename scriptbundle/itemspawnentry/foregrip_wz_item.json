@@ -9,7 +9,7 @@
     "model": "#attach_t8_wz_pickup_foregrip",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_foregrip",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_65b3a12": 1,
     "name": "foregrip_wz_item",
     "displayname": "#wz/attach_foregrip",
@@ -20,6 +20,6 @@
     "handler": "#hash_788c59214ead02af",
     "attachslotrail": 1,
     "pickupicon": "#ui_icon_attachment_grip",
-    "var_50773731": 1.5,
+    "positionoffsetz": 1.5,
     "itemtype": "attachment"
 }

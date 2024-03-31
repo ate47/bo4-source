@@ -83,12 +83,12 @@ function spawn_nova_crawler(override_spawn_location = undefined) {
             var_d8d8ce1b thread zombie_utility::round_spawn_failsafe();
             if (isdefined(override_spawn_location)) {
                 var_d8d8ce1b function_e2bab5ec(override_spawn_location);
-                override_spawn_location.var_d51f4e2d = gettime();
+                override_spawn_location.spawned_timestamp = gettime();
             } else {
                 spawn_location = var_d8d8ce1b function_9216fd1f();
                 if (isdefined(spawn_location)) {
                     var_d8d8ce1b function_e2bab5ec(spawn_location);
-                    spawn_location.var_d51f4e2d = gettime();
+                    spawn_location.spawned_timestamp = gettime();
                 }
             }
         }

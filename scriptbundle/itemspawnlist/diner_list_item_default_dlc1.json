@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "diner_list_items_dlc1",
+            "itementry": "diner_list_items_dlc1",
             "maxweight": 500,
             "available": -1
         },

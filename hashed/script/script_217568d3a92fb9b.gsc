@@ -77,20 +77,20 @@ function function_a2279366() {
 // Checksum 0x88c81d28, Offset: 0x750
 // Size: 0x1d0
 function function_cd4de84f(doors) {
-    var_2197df70 = (0, 0, 0);
+    centerposition = (0, 0, 0);
     foreach (door in doors) {
-        var_2197df70 = var_2197df70 + door.origin;
+        centerposition = centerposition + door.origin;
     }
-    var_2197df70 = var_2197df70 / doors.size;
+    centerposition = centerposition / doors.size;
     /#
-        sphere(var_2197df70, 12, (1, 0, 0), 1, 0, 12, 100);
+        sphere(centerposition, 12, (1, 0, 0), 1, 0, 12, 100);
     #/
-    vehicles = getentitiesinradius(var_2197df70, 32, 12);
+    vehicles = getentitiesinradius(centerposition, 32, 12);
     var_7344b4ac = 0;
     foreach (vehicle in vehicles) {
         if (isdefined(vehicle.scriptvehicletype) && vehicle.scriptvehicletype == #"cargo_truck_wz") {
             var_7344b4ac = 1;
-            playsoundatposition(#"hash_694b6b5d665c7a5e", var_2197df70);
+            playsoundatposition(#"hash_694b6b5d665c7a5e", centerposition);
             break;
         }
     }

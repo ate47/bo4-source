@@ -2,21 +2,21 @@
     "itemlist": [
         {
             "minweight": 175,
-            "var_a6762160": "sniper_quickscope_t8_item",
+            "itementry": "sniper_quickscope_t8_item",
             "var_3f8c08e3": "ammo_type_338_item",
             "maxweight": 250,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "sniper_powerbolt_t8_item",
+            "itementry": "sniper_powerbolt_t8_item",
             "var_3f8c08e3": "ammo_type_50cal_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 60,
-            "var_a6762160": "launcher_standard_t8_item",
+            "itementry": "launcher_standard_t8_item",
             "var_3f8c08e3": "ammo_type_rocket_item",
             "maxweight": 100,
             "available": -1

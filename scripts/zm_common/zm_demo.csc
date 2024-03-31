@@ -50,12 +50,12 @@ function watch_predicted_player_changes(localclientnum) {
         predicted_local_player = function_5c10bd79(localclientnum);
         if (nonpredicted_local_player !== level.demolocalclients[localclientnum].nonpredicted_local_player) {
             level notify(#"demo_nplplayer_change", localclientnum);
-            level notify("demo_nplplayer_change" + localclientnum, {#new_player:nonpredicted_local_player, #var_fb9ab71:level.demolocalclients[localclientnum].nonpredicted_local_player});
+            level notify("demo_nplplayer_change" + localclientnum, {#new_player:nonpredicted_local_player, #old_player:level.demolocalclients[localclientnum].nonpredicted_local_player});
             level.demolocalclients[localclientnum].nonpredicted_local_player = nonpredicted_local_player;
         }
         if (predicted_local_player !== level.demolocalclients[localclientnum].predicted_local_player) {
-            level notify(#"demo_plplayer_change", {#new_player:predicted_local_player, #var_fb9ab71:level.demolocalclients[localclientnum].predicted_local_player, #localclientnum:localclientnum});
-            level notify("demo_plplayer_change" + localclientnum, {#new_player:predicted_local_player, #var_fb9ab71:level.demolocalclients[localclientnum].predicted_local_player});
+            level notify(#"demo_plplayer_change", {#new_player:predicted_local_player, #old_player:level.demolocalclients[localclientnum].predicted_local_player, #localclientnum:localclientnum});
+            level notify("demo_plplayer_change" + localclientnum, {#new_player:predicted_local_player, #old_player:level.demolocalclients[localclientnum].predicted_local_player});
             level.demolocalclients[localclientnum].predicted_local_player = predicted_local_player;
         }
         waitframe(1);

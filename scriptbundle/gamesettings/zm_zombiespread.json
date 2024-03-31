@@ -7,9 +7,9 @@
     "type": "gamesettings",
     "name": "zm_zombiespread",
     "displayname": "#hash_5469d52f29775c3d",
-    "var_9600a8ab": "#hash_4bf2d101b5a0c299",
+    "label1": "#hash_4bf2d101b5a0c299",
     "var_71b6e020": "#hash_118e4d7cfa60ba63",
-    "var_bd2ff709": "#hash_1ba60b6389d20648",
+    "label2": "#hash_1ba60b6389d20648",
     "var_9de86f42": 3,
     "setting": "zmZombieSpread"
 }

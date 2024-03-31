@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "preset_classes_per_team",
     "displayname": "#hash_55f65c54d7c6959",
-    "var_9600a8ab": "#menu/global",
-    "var_bd2ff709": "#hash_1b0d0e388c66e5fa",
+    "label1": "#menu/global",
+    "label2": "#hash_1b0d0e388c66e5fa",
     "var_9de86f42": 2,
     "setting": "presetClassesPerTeam"
 }

@@ -6,8 +6,8 @@
     "type": "gamesettings",
     "name": "equipment_concussion_restriction",
     "displayname": "#hash_7cf054cda28390c7",
-    "var_9600a8ab": "#menu/enabled",
-    "var_bd2ff709": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/enabled",
+    "label2": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__eq_slow_grenade__restricted"
 }

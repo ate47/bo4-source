@@ -27,7 +27,7 @@
     "weapon": "weapon#tr_longburst_t8_operator_wz",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
     "name": "tr_longburst_t8_operator_item",
@@ -41,6 +41,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_7426cf63ab23b956",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

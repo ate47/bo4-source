@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "helicopter_light_wz_vehicle_police",
+            "itementry": "helicopter_light_wz_vehicle_police",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 3,
-            "var_a6762160": "helicopter_attack_wz_vehicle_heroes",
+            "itementry": "helicopter_attack_wz_vehicle_heroes",
             "maxweight": 3,
             "available": -1
         }

@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "ammo_stash_slot1_dlc1_with_conc",
+            "itementry": "ammo_stash_slot1_dlc1_with_conc",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ammo_stash_slot2_dlc1",
+            "itementry": "ammo_stash_slot2_dlc1",
             "maxweight": 100,
             "available": 3
         },
         {
             "minweight": 100,
-            "var_a6762160": "ammo_stash_slot3_dlc1",
+            "itementry": "ammo_stash_slot3_dlc1",
             "maxweight": 100,
             "available": 3
         },
         {
             "minweight": 100,
-            "var_a6762160": "ammo_stash_slot4_dlc1",
+            "itementry": "ammo_stash_slot4_dlc1",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ammo_stash_slot5_dlc1",
+            "itementry": "ammo_stash_slot5_dlc1",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ammo_stash_slot6_limit_world_high_value",
+            "itementry": "ammo_stash_slot6_limit_world_high_value",
             "maxweight": 100,
             "available": 1
         }

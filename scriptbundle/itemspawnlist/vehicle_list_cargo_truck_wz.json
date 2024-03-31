@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "cargo_truck_wz_vehicle_dark",
+            "itementry": "cargo_truck_wz_vehicle_dark",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "cargo_truck_wz_vehicle_green",
+            "itementry": "cargo_truck_wz_vehicle_green",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "cargo_truck_wz_vehicle_tan",
+            "itementry": "cargo_truck_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         }

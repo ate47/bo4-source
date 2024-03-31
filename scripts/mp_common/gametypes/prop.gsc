@@ -523,9 +523,9 @@ function function_75b4c8bc() {
 // Params 1, eflags: 0x0
 // Checksum 0xc1714460, Offset: 0x2b58
 // Size: 0x2a6
-function function_7913d068(var_fae892d1) {
+function function_7913d068(hideduration) {
     level endon(#"game_ended", #"props_hide_over");
-    var_fb3f700 = var_fae892d1 * 1000 + gettime();
+    var_fb3f700 = hideduration * 1000 + gettime();
     foreach (player in level.players) {
         level.hide_timer mp_prop_timer::open(player, 1);
         if (player util::isprop()) {
@@ -1127,9 +1127,9 @@ function propwhistle() {
     var_99b741b6 = 5000;
     var_ec943162 = 0;
     var_b87d1ed = (0, 0, 0);
-    var_8419e70e = getentarray("minimap_corner", "targetname");
-    if (var_8419e70e.size > 0) {
-        var_b87d1ed = var_8419e70e[0].origin;
+    minimapcorners = getentarray("minimap_corner", "targetname");
+    if (minimapcorners.size > 0) {
+        var_b87d1ed = minimapcorners[0].origin;
     }
     hostmigration::waitlongdurationwithhostmigrationpause(level.phsettings.prophidetime);
     setbombtimer("A", gettime() + whistletime);
@@ -1634,19 +1634,19 @@ function function_63d4897() {
                 self.prop linkto(self.propent);
             }
             var_d0a5fa3b = 0;
-            var_e82609ca = getdvarfloat(#"hash_1cc010d013592cb", -0.0123);
-            var_c7d5278 = getdvarfloat(#"hash_1cc000d01359118", -0.0123);
-            var_8c51d21f = getdvarfloat(#"hash_1cc030d01359631", -0.0123);
-            if (var_e82609ca != -0.0123 && var_e82609ca != var_309e583f.anglesoffset[0]) {
-                var_309e583f.anglesoffset = (var_e82609ca, var_309e583f.anglesoffset[1], var_309e583f.anglesoffset[2]);
+            anglesx = getdvarfloat(#"hash_1cc010d013592cb", -0.0123);
+            anglesy = getdvarfloat(#"hash_1cc000d01359118", -0.0123);
+            anglesz = getdvarfloat(#"hash_1cc030d01359631", -0.0123);
+            if (anglesx != -0.0123 && anglesx != var_309e583f.anglesoffset[0]) {
+                var_309e583f.anglesoffset = (anglesx, var_309e583f.anglesoffset[1], var_309e583f.anglesoffset[2]);
                 var_d0a5fa3b = 1;
             }
-            if (var_c7d5278 != -0.0123 && var_c7d5278 != var_309e583f.anglesoffset[1]) {
-                var_309e583f.anglesoffset = (var_309e583f.anglesoffset[0], var_c7d5278, var_309e583f.anglesoffset[2]);
+            if (anglesy != -0.0123 && anglesy != var_309e583f.anglesoffset[1]) {
+                var_309e583f.anglesoffset = (var_309e583f.anglesoffset[0], anglesy, var_309e583f.anglesoffset[2]);
                 var_d0a5fa3b = 1;
             }
-            if (var_8c51d21f != -0.0123 && var_8c51d21f != var_309e583f.anglesoffset[2]) {
-                var_309e583f.anglesoffset = (var_309e583f.anglesoffset[0], var_309e583f.anglesoffset[1], var_8c51d21f);
+            if (anglesz != -0.0123 && anglesz != var_309e583f.anglesoffset[2]) {
+                var_309e583f.anglesoffset = (var_309e583f.anglesoffset[0], var_309e583f.anglesoffset[1], anglesz);
                 var_d0a5fa3b = 1;
             }
             if (var_d0a5fa3b) {
@@ -3402,8 +3402,8 @@ function function_e63a6b8b() {
         newlocation = location.origin;
         rand = randomfloat(1);
         while (attempts > 0) {
-            var_15df23ab = dist * rand;
-            newlocation = location.origin + dir * var_15df23ab;
+            randdist = dist * rand;
+            newlocation = location.origin + dir * randdist;
             if (!function_fbe5e14d(newlocation)) {
                 break;
             }

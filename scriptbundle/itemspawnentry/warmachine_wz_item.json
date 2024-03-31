@@ -33,7 +33,7 @@
     "weapon": "weapon#hero_pineapplegun_wz",
     "type": "itemspawnentry",
     "unlockableitemref": "#hash_6afae4d580e740ba",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "warmachine_wz_item",
     "displayname": "#weapon/hero_pineapplegun",
     "icon": "#ui_icon_weapon_warmachine_render",
@@ -43,6 +43,6 @@
     "handler": "#hash_50375e5de228e9fc",
     "rewardname": "#hash_759cb09309cf4447",
     "pickupicon": "#ui_icon_weapon_hud_hero_warmachine",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

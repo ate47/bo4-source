@@ -279,7 +279,7 @@ function private function_df99db2() {
 // Params 2, eflags: 0x5 linked
 // Checksum 0xabaa67a4, Offset: 0xbf0
 // Size: 0xac
-function private function_f09367a0(var_dc77251f, regen_delay) {
+function private should_heal(var_dc77251f, regen_delay) {
     if (isdefined(self.disable_health_regen_delay) && self.disable_health_regen_delay) {
         var_dc77251f.var_ba47a7a3 = 1;
     }
@@ -374,7 +374,7 @@ function private heal(var_dc77251f) {
             regen_delay = int(regen_delay / getdvarfloat(#"perk_healthregenmultiplier", 0));
         }
     }
-    if (!function_f09367a0(var_dc77251f, regen_delay)) {
+    if (!should_heal(var_dc77251f, regen_delay)) {
         return;
     }
     if (var_dc77251f.time_now - var_dc77251f.var_7cb44c56 > regen_delay) {

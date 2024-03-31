@@ -2,41 +2,41 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "guns_pistols_dlc1",
+            "itementry": "guns_pistols_dlc1",
             "maxweight": 200
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_shotguns_dlc1",
+            "itementry": "guns_shotguns_dlc1",
             "maxweight": 200
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_smgs_dlc1",
+            "itementry": "guns_smgs_dlc1",
             "maxweight": 200,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_ars_dlc1",
+            "itementry": "guns_ars_dlc1",
             "maxweight": 200,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_trs_dlc1",
+            "itementry": "guns_trs_dlc1",
             "maxweight": 150,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_lmgs_dlc1",
+            "itementry": "guns_lmgs_dlc1",
             "maxweight": 150,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_snipers_dlc1",
+            "itementry": "guns_snipers_dlc1",
             "maxweight": 150,
             "available": 2
         }

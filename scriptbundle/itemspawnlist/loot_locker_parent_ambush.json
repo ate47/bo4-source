@@ -2,55 +2,55 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "sniper_locus_t8_item",
+            "itementry": "sniper_locus_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_club_t8_item",
+            "itementry": "melee_club_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_cutlass_t8_item",
+            "itementry": "melee_cutlass_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_demohammer_t8_item",
+            "itementry": "melee_demohammer_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_coinbag_t8_item",
+            "itementry": "melee_coinbag_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_secretsanta_t8_item",
+            "itementry": "melee_secretsanta_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_slaybell_t8_item",
+            "itementry": "melee_slaybell_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_stopsign_t8_item",
+            "itementry": "melee_stopsign_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_zombiearm_t8_item",
+            "itementry": "melee_zombiearm_t8_item",
             "maxweight": 1,
             "available": 1
         }

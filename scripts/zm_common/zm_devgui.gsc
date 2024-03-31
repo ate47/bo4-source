@@ -2421,22 +2421,22 @@ function function_4bb7eb36() {
         forward = anglestoforward(chest.zbarrier.angles);
         right = anglestoright(chest.zbarrier.angles);
         var_21f5823e = vectortoangles(right);
-        var_916d3dfe = origin - 48 * right;
+        plorigin = origin - 48 * right;
         switch (entnum) {
         case 0:
-            var_916d3dfe = var_916d3dfe + 16 * right;
+            plorigin = plorigin + 16 * right;
             break;
         case 1:
-            var_916d3dfe = var_916d3dfe + 16 * forward;
+            plorigin = plorigin + 16 * forward;
             break;
         case 2:
-            var_916d3dfe = var_916d3dfe - 16 * right;
+            plorigin = plorigin - 16 * right;
             break;
         case 3:
-            var_916d3dfe = var_916d3dfe - 16 * forward;
+            plorigin = plorigin - 16 * forward;
             break;
         }
-        self setorigin(var_916d3dfe);
+        self setorigin(plorigin);
         self setplayerangles(var_21f5823e);
     #/
 }
@@ -2457,22 +2457,22 @@ function function_84f0a909() {
         forward = anglestoforward(pap.angles);
         right = anglestoright(pap.angles);
         var_21f5823e = vectortoangles(right * -1);
-        var_916d3dfe = origin + 72 * right;
+        plorigin = origin + 72 * right;
         switch (entnum) {
         case 0:
-            var_916d3dfe = var_916d3dfe - 16 * right;
+            plorigin = plorigin - 16 * right;
             break;
         case 1:
-            var_916d3dfe = var_916d3dfe + 16 * forward;
+            plorigin = plorigin + 16 * forward;
             break;
         case 2:
-            var_916d3dfe = var_916d3dfe + 16 * right;
+            plorigin = plorigin + 16 * right;
             break;
         case 3:
-            var_916d3dfe = var_916d3dfe - 16 * forward;
+            plorigin = plorigin - 16 * forward;
             break;
         }
-        self setorigin(var_916d3dfe);
+        self setorigin(plorigin);
         self setplayerangles(var_21f5823e);
     #/
 }

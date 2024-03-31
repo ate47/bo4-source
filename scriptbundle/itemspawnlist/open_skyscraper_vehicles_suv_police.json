@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "suv_police_wz_vehicle",
+            "itementry": "suv_police_wz_vehicle",
             "maxweight": 1,
             "available": 22
         },

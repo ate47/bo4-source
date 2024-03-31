@@ -343,10 +343,10 @@ function private function_e21ceb1b() {
     previousorigin = self.origin;
     var_8bc27a4a = 0;
     while (true) {
-        var_3769eb50 = getentitiesinradius(self.origin, 128, 1);
+        closeplayers = getentitiesinradius(self.origin, 128, 1);
         var_15d21979 = abs((previousorigin - self.origin)[2]);
         if (var_15d21979 > 4) {
-            foreach (player in var_3769eb50) {
+            foreach (player in closeplayers) {
                 if (isalive(player) && player istouching(self, extendbounds)) {
                     if (isvehicle(self)) {
                         player dodamage(player.health + 1, player.origin, self, self, "none", "MOD_CRUSH");
@@ -639,9 +639,9 @@ function private function_a40836e(angles) {
     axises[axises.size] = anglestoforward(angles);
     axises[axises.size] = anglestoright(angles);
     axises[axises.size] = anglestoup(angles);
-    var_553ec518 = (1, 0, 0);
+    worldforward = (1, 0, 0);
     worldup = (0, 0, 1);
-    newforward = function_8234217e(var_553ec518, axises);
+    newforward = function_8234217e(worldforward, axises);
     newup = function_8234217e(worldup, axises);
     newangles = axistoangles(newforward, newup);
     return newangles;
@@ -832,13 +832,13 @@ function function_7d4a448f(var_47d17dcb = 0) {
     exitpoint = function_c7bd0aa8(exitpoint, droppoint);
     var_bb96e272 = vectornormalize(exitpoint - var_8df04549);
     var_142db926 = 5000;
-    var_a2712870 = distance2d(deathcircle.origin, deathcirclecenter);
-    var_6eae2ffb = var_396cbf6e + var_a2712870 + var_142db926;
+    nextcircledistance = distance2d(deathcircle.origin, deathcirclecenter);
+    var_6eae2ffb = var_396cbf6e + nextcircledistance + var_142db926;
     var_429b69c0 = max(var_6eae2ffb, 15000);
-    var_e9e24bda = max(var_396cbf6e, 45000);
+    despawndistance = max(var_396cbf6e, 45000);
     spawnpoint = var_8df04549 - var_bb96e272 * var_429b69c0;
     spawnpoint = function_c7bd0aa8(spawnpoint, droppoint);
-    endpoint = exitpoint + var_bb96e272 * var_e9e24bda;
+    endpoint = exitpoint + var_bb96e272 * despawndistance;
     endpoint = function_c7bd0aa8(endpoint, droppoint);
     level thread function_261b0e67(spawnpoint, endpoint, droppoint, 1);
     angles = vectortoangles(var_bb96e272);
@@ -856,7 +856,7 @@ function function_7d4a448f(var_47d17dcb = 0) {
 // Params 6, eflags: 0x0
 // Checksum 0x29f6c352, Offset: 0x4260
 // Size: 0x64e
-function function_418e26fe(var_2118f785 = undefined, helicopter = 0, voiceevent = 1, var_541c190b = 0, var_d6388d1 = 0, vehicletype = undefined) {
+function function_418e26fe(var_2118f785 = undefined, helicopter = 0, voiceevent = 1, var_541c190b = 0, vehicledrop = 0, vehicletype = undefined) {
     if (!(isdefined(level.var_d8958e58) && level.var_d8958e58)) {
         return;
     }
@@ -910,13 +910,13 @@ function function_418e26fe(var_2118f785 = undefined, helicopter = 0, voiceevent 
     exitpoint = trace_point(exitpoint, undefined, var_f5f2246e, var_729c4495);
     var_bb96e272 = vectornormalize(exitpoint - var_8df04549);
     var_429b69c0 = max(var_396cbf6e, 15000);
-    var_e9e24bda = max(var_396cbf6e, 45000);
+    despawndistance = max(var_396cbf6e, 45000);
     spawnpoint = var_8df04549 - var_bb96e272 * var_429b69c0;
     spawnpoint = function_c7bd0aa8(spawnpoint, droppoint);
-    endpoint = exitpoint + var_bb96e272 * var_e9e24bda;
+    endpoint = exitpoint + var_bb96e272 * despawndistance;
     endpoint = function_c7bd0aa8(endpoint, droppoint);
     if (helicopter) {
-        var_57e06aea = function_47ec98c4(spawnpoint, endpoint, droppoint, var_d6388d1, vehicletype, var_f5f2246e, var_729c4495);
+        var_57e06aea = function_47ec98c4(spawnpoint, endpoint, droppoint, vehicledrop, vehicletype, var_f5f2246e, var_729c4495);
     } else {
         var_57e06aea = function_b8dd1978(spawnpoint, endpoint, droppoint, var_2118f785, voiceevent);
     }
@@ -1017,7 +1017,7 @@ function function_47ec98c4(startpoint, endpoint, droppoint, var_d91c179d = 0, ve
 // Params 4, eflags: 0x0
 // Checksum 0x1ff3f868, Offset: 0x4f58
 // Size: 0x296
-function drop_supply_drop(droppoint, helicopter = 0, var_d6388d1 = 0, vehicletype = undefined) {
+function drop_supply_drop(droppoint, helicopter = 0, vehicledrop = 0, vehicletype = undefined) {
     /#
         assert(isvec(droppoint));
     #/
@@ -1042,7 +1042,7 @@ function drop_supply_drop(droppoint, helicopter = 0, var_d6388d1 = 0, vehicletyp
     endpoint = (endpoint[0], endpoint[1], droppoint[2]);
     endpoint = function_c7bd0aa8(endpoint, droppoint);
     if (helicopter) {
-        var_57e06aea = function_47ec98c4(spawnpoint, endpoint, droppoint, var_d6388d1, vehicletype);
+        var_57e06aea = function_47ec98c4(spawnpoint, endpoint, droppoint, vehicledrop, vehicletype);
         return;
     }
     var_57e06aea = function_b8dd1978(spawnpoint, endpoint, droppoint);

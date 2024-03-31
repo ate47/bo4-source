@@ -55,7 +55,7 @@
     "label": "#hash_39bb51c85ad0ecf3",
     "name": "zm_poweruplimit",
     "displayname": "#hash_33b2b7cb13ea7c8d",
-    "var_9600a8ab": "#hash_77c37df294784025",
+    "label1": "#hash_77c37df294784025",
     "var_9de86f42": 20,
     "setting": "zmPowerupsLimitRound"
 }

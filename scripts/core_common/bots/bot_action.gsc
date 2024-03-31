@@ -2504,9 +2504,9 @@ function function_26c2bce7(actionparams, aimtag) {
 // Params 3, eflags: 0x5 linked
 // Checksum 0x12b15135, Offset: 0x97c0
 // Size: 0x80
-function private function_627e3d2c(tag, target, var_c8e8809e) {
+function private function_627e3d2c(tag, target, defaultorigin) {
     if (!isdefined(tag)) {
-        return var_c8e8809e;
+        return defaultorigin;
     }
     if (tag == "tag_origin") {
         return target.origin;
@@ -2515,7 +2515,7 @@ function private function_627e3d2c(tag, target, var_c8e8809e) {
     if (isdefined(tagorigin)) {
         return tagorigin;
     }
-    return var_c8e8809e;
+    return defaultorigin;
 }
 
 // Namespace bot_action/bot_action
@@ -2776,7 +2776,7 @@ function function_ee402bf6(actionparams) {
     }
     targetorigin = isvec(target) ? target : target.origin;
     targetdistsq = distancesquared(self.origin, targetorigin);
-    var_1d4ad8f2 = self.bot.tacbundle.var_bda90bb9;
+    var_1d4ad8f2 = self.bot.tacbundle.shortrange;
     return targetdistsq <= var_1d4ad8f2 * var_1d4ad8f2;
 }
 

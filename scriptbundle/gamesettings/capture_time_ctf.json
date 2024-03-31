@@ -19,7 +19,7 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "capture_time_ctf",
     "displayname": "#hash_4fe06b8b1804bf79",
-    "var_9600a8ab": "#menu/instant",
+    "label1": "#menu/instant",
     "var_71b6e020": "#hash_7201503206ce2d27",
     "var_9de86f42": 14,
     "setting": "captureTime"

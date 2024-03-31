@@ -6,7 +6,7 @@
             "type": "#armor",
             "var_51e8b151": "j_head",
             "activebydefault": 1,
-            "var_b7fbe51b": 15,
+            "hitradius": 15,
             "health": 0.08
         },
         {
@@ -14,7 +14,7 @@
             "var_8223b0cf": 2,
             "type": "#weakpoint",
             "var_51e8b151": "j_head",
-            "var_b7fbe51b": 15,
+            "hitradius": 15,
             "health": 1
         },
         {
@@ -22,7 +22,7 @@
             "type": "#weakpoint",
             "var_51e8b151": "tag_back_ws",
             "activebydefault": 1,
-            "var_b7fbe51b": 25,
+            "hitradius": 25,
             "health": 1
         },
         {
@@ -30,7 +30,7 @@
             "type": "#weakpoint",
             "var_51e8b151": "tag_chest_ws",
             "activebydefault": 1,
-            "var_b7fbe51b": 15,
+            "hitradius": 15,
             "health": 1
         }
     ],

@@ -2,30 +2,30 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_deadsilence",
+            "itementry": "perk_item_deadsilence",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_stimulant",
+            "itementry": "perk_item_stimulant",
             "maxweight": 100
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_lightweight",
+            "itementry": "perk_item_lightweight",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_engineer",
+            "itementry": "perk_item_engineer",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_paranoia",
+            "itementry": "perk_item_paranoia",
             "maxweight": 100,
             "available": -1
         }

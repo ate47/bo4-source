@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "suv_police_wz_vehicle",
+            "itementry": "suv_police_wz_vehicle",
             "maxweight": 1,
             "available": 8
         },
         {
             "minweight": 1,
-            "var_a6762160": "vehicle_list_arav_heroes_wz",
+            "itementry": "vehicle_list_arav_heroes_wz",
             "maxweight": 1,
             "available": 10
         }

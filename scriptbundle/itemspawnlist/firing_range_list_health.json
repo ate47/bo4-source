@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 25,
-            "var_a6762160": "health_list_good",
+            "itementry": "health_list_good",
             "maxweight": 25,
             "available": -1
         },
         {
             "minweight": 1200,
-            "var_a6762160": "wz_default_list_health",
+            "itementry": "wz_default_list_health",
             "maxweight": 1225,
             "available": -1
         }

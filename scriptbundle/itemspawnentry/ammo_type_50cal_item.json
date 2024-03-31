@@ -6,7 +6,7 @@
     "weapon": "weapon#hash_1212239b99e197c",
     "type": "itemspawnentry",
     "hintstring": "#hash_2f3db08411548b58",
-    "var_6731866b": 60,
+    "angleoffsety": 60,
     "name": "ammo_type_50cal_item",
     "displayname": "#hash_2f3db08411548b58",
     "icon": "#ui_icon_inventory_p8_wz_ammo_pickup_50",

@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "quad_wz_vehicle_black",
+            "itementry": "quad_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "quad_wz_vehicle_green",
+            "itementry": "quad_wz_vehicle_green",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "quad_wz_vehicle_tan",
+            "itementry": "quad_wz_vehicle_tan",
             "maxweight": 1,
             "available": -1
         }

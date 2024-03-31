@@ -2,55 +2,55 @@
     "itemlist": [
         {
             "minweight": 700,
-            "var_a6762160": "global_list_guns_small_dlc1",
+            "itementry": "global_list_guns_small_dlc1",
             "maxweight": 700,
             "available": -1
         },
         {
             "minweight": 200,
-            "var_a6762160": "firing_range_list_health",
+            "itementry": "firing_range_list_health",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "firing_range_list_equipment",
+            "itementry": "firing_range_list_equipment",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "firing_range_list_gear",
+            "itementry": "firing_range_list_gear",
             "maxweight": 90,
             "available": -1
         },
         {
             "minweight": 105,
-            "var_a6762160": "firing_range_list_consumable",
+            "itementry": "firing_range_list_consumable",
             "maxweight": 180,
             "available": -1
         },
         {
             "minweight": 250,
-            "var_a6762160": "firing_range_list_attachment",
+            "itementry": "firing_range_list_attachment",
             "maxweight": 250,
             "available": -1
         },
         {
             "minweight": 300,
-            "var_a6762160": "firing_range_list_ammo",
+            "itementry": "firing_range_list_ammo",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 60,
-            "var_a6762160": "storage_list",
+            "itementry": "storage_list",
             "maxweight": 60,
             "available": -1
         },
         {
             "minweight": 70,
-            "var_a6762160": "firing_range_list_armor_shards",
+            "itementry": "firing_range_list_armor_shards",
             "maxweight": 70,
             "available": -1
         }

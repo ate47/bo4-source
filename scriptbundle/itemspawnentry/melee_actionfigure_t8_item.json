@@ -10,7 +10,7 @@
     "rarity": "Common",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#ui_icon_weapon_hud_melee_action_figure",
-    "var_50773731": 8,
+    "positionoffsetz": 8,
     "itemtype": "weapon",
     "pickupsound": "fly_pickup_generic"
 }

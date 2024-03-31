@@ -635,8 +635,8 @@ function function_296516b4(actionparams) {
         #/
         return undefined;
     }
-    var_353ad24b = self getenemiesinradius(revivetarget.revivetrigger.origin, 256);
-    if (var_353ad24b.size > 0) {
+    nearbyenemies = self getenemiesinradius(revivetarget.revivetrigger.origin, 256);
+    if (nearbyenemies.size > 0) {
         /#
             if (!isdefined(actionparams.debug)) {
                 actionparams.debug = [];

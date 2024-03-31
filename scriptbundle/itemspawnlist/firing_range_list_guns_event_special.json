@@ -2,37 +2,37 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "sparrow_wz_item",
+            "itementry": "sparrow_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sparrow_wz_item",
+            "itementry": "sparrow_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sparrow_wz_item",
+            "itementry": "sparrow_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sparrow_wz_item",
+            "itementry": "sparrow_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sparrow_wz_item",
+            "itementry": "sparrow_wz_item",
             "maxweight": 100,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sparrow_wz_item",
+            "itementry": "sparrow_wz_item",
             "maxweight": 100,
             "available": -1
         }

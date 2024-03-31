@@ -678,8 +678,8 @@ function on_player_item_pickup(params) {
     }
     item = params.item;
     if (isplayer(self)) {
-        var_a6762160 = item.var_a6762160;
-        if (var_a6762160.itemtype == #"backpack") {
+        itementry = item.itementry;
+        if (itementry.itemtype == #"backpack") {
             if (!(isdefined(self.var_9ed7994f) && self.var_9ed7994f)) {
                 self.var_9ed7994f = 1;
                 self increment_wz_contract(#"contract_wz_backpack_scavenged");
@@ -722,8 +722,8 @@ function function_9d4c3c52(params) {
     }
     item = params.item;
     if (isplayer(self)) {
-        var_a6762160 = item.var_a6762160;
-        if (var_a6762160.itemtype == #"armor_shard") {
+        itementry = item.itementry;
+        if (itementry.itemtype == #"armor_shard") {
             self increment_wz_contract(#"hash_209c6ecb45a25a6a");
         }
     }

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "quad_wz_vehicle_police",
+            "itementry": "quad_wz_vehicle_police",
             "maxweight": 1,
             "available": -1
         }

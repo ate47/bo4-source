@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 40,
-            "var_a6762160": "support_structure_list_items_dlc1",
+            "itementry": "support_structure_list_items_dlc1",
             "maxweight": 40,
             "available": -1
         },

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "farm_list_item_default_small_dlc1",
+            "itementry": "farm_list_item_default_small_dlc1",
             "maxweight": 50,
             "available": -1
         }

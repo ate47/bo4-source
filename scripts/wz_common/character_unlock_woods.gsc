@@ -128,8 +128,8 @@ function function_6a61388f(vehicle) {
 // Checksum 0x9adc1d09, Offset: 0x6a8
 // Size: 0xbc
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu22_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu22_item") {
         if (self character_unlock::function_f0406288(#"woods_unlock") && (self.deaths !== 0 || self.suicides !== 0)) {
             self character_unlock::function_c8beca5e(#"woods_unlock", #"hash_17a4bbf5ec553d9a", 2);
         }

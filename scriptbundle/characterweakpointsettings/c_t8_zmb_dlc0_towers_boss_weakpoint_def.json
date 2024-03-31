@@ -2,7 +2,7 @@
     "weakpoints": [
         {
             "var_8223b0cf": 1.5,
-            "var_5a93cd2e": 1,
+            "absolutehealth": 1,
             "type": "#weakpoint",
             "var_910e2f9b": "tag_carriage_ws_ri",
             "var_51e8b151": "tag_carriage_ws_le",
@@ -11,14 +11,14 @@
         },
         {
             "var_8223b0cf": 2.5,
-            "var_5a93cd2e": 1,
+            "absolutehealth": 1,
             "type": "#weakpoint",
             "var_51e8b151": "tag_head_ws",
             "health": 45000
         },
         {
             "var_8223b0cf": 1.5,
-            "var_5a93cd2e": 1,
+            "absolutehealth": 1,
             "type": "#weakpoint",
             "var_51e8b151": "tag_chest_armor_ws",
             "activebydefault": 1,
@@ -26,7 +26,7 @@
         },
         {
             "var_8223b0cf": 1.5,
-            "var_5a93cd2e": 1,
+            "absolutehealth": 1,
             "type": "#weakpoint",
             "var_51e8b151": "tag_body_ws",
             "health": 60000

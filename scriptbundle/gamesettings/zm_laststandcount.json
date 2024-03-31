@@ -105,8 +105,8 @@
     "label": "#hash_537c2325387c4d97",
     "name": "zm_laststandcount",
     "displayname": "#hash_2eea73c1d8fe5799",
-    "var_9600a8ab": "#hash_68b65fb510ccd214",
-    "var_bd2ff709": "#hash_330a82559c0229b3",
+    "label1": "#hash_68b65fb510ccd214",
+    "label2": "#hash_330a82559c0229b3",
     "var_54e336e4": 1,
     "var_9de86f42": 100,
     "setting": "zmLimitedDownsAmount"

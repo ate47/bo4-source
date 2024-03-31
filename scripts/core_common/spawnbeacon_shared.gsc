@@ -232,7 +232,7 @@ function beacon_spawned(watcher, owner) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x3885c717, Offset: 0xd40
 // Size: 0x116
-function function_d7cd849c(var_cb0f3959, team, var_86a79150) {
+function function_d7cd849c(var_cb0f3959, team, excludeplayer) {
     if (!isdefined(var_cb0f3959)) {
         return;
     }
@@ -244,7 +244,7 @@ function function_d7cd849c(var_cb0f3959, team, var_86a79150) {
         return;
     }
     var_925a9324 = [];
-    var_925a9324[0] = var_86a79150;
+    var_925a9324[0] = excludeplayer;
     killstreaks::leader_dialog(var_cb0f3959, team, var_925a9324, "spawnbeacon");
     level.spawnbeaconsettings.var_d741a6a4[var_cb0f3959] = gettime();
 }

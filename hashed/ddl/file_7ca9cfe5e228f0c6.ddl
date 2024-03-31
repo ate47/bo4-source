@@ -101,7 +101,7 @@ struct root {
     char scoreszm[24];
     char inventoryzm[24];
     char melee_zoom[24];
-    char hash_5e81badcd2255854[24];
+    char switchseat[24];
     char toggleinventoryzm[24];
     char hash_ed18aed621a69a7[24];
     char hold_sprint[24];

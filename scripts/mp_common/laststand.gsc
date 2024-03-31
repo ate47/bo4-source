@@ -946,7 +946,7 @@ function function_fab0e07e(finisher) {
     finisher endon(#"disconnect");
     waitframe(1);
     if (isdefined(self) && isdefined(finisher) && isalive(self) && isalive(finisher)) {
-        self.laststandparams.var_3f57b6a0 = self.origin;
+        self.laststandparams.savedorigin = self.origin;
         self.laststandparams.savedangles = self.angles;
         self playerlinkto(finisher, "tag_sync");
     }
@@ -960,7 +960,7 @@ function function_516a3bef(replace) {
     if (isalive(self) && function_feb3e91d()) {
         self unlink();
         if (replace) {
-            self setorigin(self.laststandparams.var_3f57b6a0);
+            self setorigin(self.laststandparams.savedorigin);
         }
     }
 }

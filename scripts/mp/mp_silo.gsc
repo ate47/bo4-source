@@ -46,7 +46,7 @@ function event_handler[level_init] main(eventstruct) {
     spawncollision("collision_clip_256x256x256", "collider", (-5903, -7086, 280), (0, 0, 0));
     spawncollision("collision_clip_64x64x256", "collider", (-6045, -6933.25, 216), vectorscale((0, 1, 0), 315));
     function_2cdcf5c3();
-    level thread function_de525e63();
+    level thread init_gameobjects();
     level spawnkilltrigger();
 }
 
@@ -93,7 +93,7 @@ function watchkilltrigger() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x458d6f24, Offset: 0x948
 // Size: 0x2e0
-function function_de525e63() {
+function init_gameobjects() {
     level.var_c183064a = getent("silo_moving_catwalk", "targetname");
     level.var_f5272e32 = 0;
     level.var_7804ffe3 = 0;

@@ -1223,8 +1223,8 @@ function function_60b82b68(&a_weapons, &a_equipment, &var_c5b1a23e, &a_ultimates
             if (!isdefined(fields)) {
                 continue;
             }
-            if (isdefined(fields.var_a7e7cb46)) {
-                function_2ced294(a_weapons, a_equipment, fields.var_a7e7cb46);
+            if (isdefined(fields.primaryequipment)) {
+                function_2ced294(a_weapons, a_equipment, fields.primaryequipment);
             }
             if (isdefined(fields.var_c21d61e9)) {
                 function_2ced294(a_weapons, var_c5b1a23e, fields.var_c21d61e9);

@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "ammo_list_good",
+            "itementry": "ammo_list_good",
             "maxweight": 80,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "ammo_list_med",
+            "itementry": "ammo_list_med",
             "maxweight": 160,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "ammo_list_low",
+            "itementry": "ammo_list_low",
             "maxweight": 160,
             "available": -1
         }

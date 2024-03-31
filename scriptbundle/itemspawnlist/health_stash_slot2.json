@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 85,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 85,
             "available": -1
         },
         {
             "minweight": 15,
-            "var_a6762160": "perk_item_medic",
+            "itementry": "perk_item_medic",
             "maxweight": 15,
             "available": 1
         },

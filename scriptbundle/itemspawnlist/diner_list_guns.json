@@ -2,67 +2,67 @@
     "itemlist": [
         {
             "minweight": 180,
-            "var_a6762160": "guns_pistols",
+            "itementry": "guns_pistols",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 180,
-            "var_a6762160": "guns_shotguns",
+            "itementry": "guns_shotguns",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 260,
-            "var_a6762160": "guns_smgs",
+            "itementry": "guns_smgs",
             "maxweight": 270,
             "available": -1
         },
         {
             "minweight": 190,
-            "var_a6762160": "guns_ars",
+            "itementry": "guns_ars",
             "maxweight": 230,
             "available": -1
         },
         {
             "minweight": 55,
-            "var_a6762160": "guns_trs",
+            "itementry": "guns_trs",
             "maxweight": 60,
             "available": -1
         },
         {
             "minweight": 20,
-            "var_a6762160": "guns_lmgs",
+            "itementry": "guns_lmgs",
             "maxweight": 50,
             "available": -1
         },
         {
             "minweight": 20,
-            "var_a6762160": "guns_snipers",
+            "itementry": "guns_snipers",
             "maxweight": 23,
             "available": -1
         },
         {
             "minweight": 10,
-            "var_a6762160": "guns_launchers",
+            "itementry": "guns_launchers",
             "maxweight": 23,
             "available": -1
         },
         {
             "minweight": 10,
-            "var_a6762160": "guns_gold_parent",
+            "itementry": "guns_gold_parent",
             "maxweight": 15,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_zombie",
+            "itementry": "guns_zombie",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 55,
-            "var_a6762160": "melee_weapons",
+            "itementry": "melee_weapons",
             "maxweight": 60,
             "available": -1
         }

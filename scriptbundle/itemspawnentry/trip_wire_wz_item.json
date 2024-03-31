@@ -4,7 +4,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#eq_tripwire_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": -65,
+    "angleoffsetz": -65,
     "name": "trip_wire_wz_item",
     "displayname": "#hash_50d8b3b5944ed86c",
     "stackcount": 1,
@@ -13,6 +13,6 @@
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
     "stackable": 1,
-    "var_50773731": 2.5,
+    "positionoffsetz": 2.5,
     "itemtype": "equipment"
 }

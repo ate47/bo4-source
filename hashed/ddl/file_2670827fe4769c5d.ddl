@@ -8,9 +8,9 @@ struct root {
     int32 pos_y;
     int32 pos_z;
     uint32 hash_5d4c0dad617ca23;
-    uint32 hash_5715e55450648bd5;
+    uint32 time_ms;
     byte motion_state;
-    short hash_3702989295e6967c;
+    short life_index;
     short angle_x;
     short angle_y;
     hash_61d8fb71b3cca1df session_mode;

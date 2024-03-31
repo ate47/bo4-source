@@ -13,7 +13,7 @@
     "label": "#hash_399145de9cf614d9",
     "name": "team_score_per_kill_confirmed",
     "displayname": "#hash_14a8786d0d91d3e",
-    "var_bd2ff709": "#menu/1_point",
+    "label2": "#menu/1_point",
     "var_9de86f42": 8,
     "setting": "teamScorePerKillConfirmed"
 }

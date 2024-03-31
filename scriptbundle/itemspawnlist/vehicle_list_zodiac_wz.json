@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "zodiac_wz_vehicle_black",
+            "itementry": "zodiac_wz_vehicle_black",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "zodiac_wz_vehicle_grey",
+            "itementry": "zodiac_wz_vehicle_grey",
             "maxweight": 1,
             "available": -1
         },
         {
             "minweight": 1,
-            "var_a6762160": "zodiac_wz_vehicle_odg",
+            "itementry": "zodiac_wz_vehicle_odg",
             "maxweight": 1,
             "available": -1
         }

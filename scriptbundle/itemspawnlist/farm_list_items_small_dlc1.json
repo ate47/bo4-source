@@ -2,55 +2,55 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "global_list_guns_small_dlc1",
+            "itementry": "global_list_guns_small_dlc1",
             "maxweight": 500,
             "available": -1
         },
         {
             "minweight": 400,
-            "var_a6762160": "farm_list_health",
+            "itementry": "farm_list_health",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "farm_list_equipment",
+            "itementry": "farm_list_equipment",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "farm_list_gear",
+            "itementry": "farm_list_gear",
             "maxweight": 90,
             "available": -1
         },
         {
             "minweight": 105,
-            "var_a6762160": "farm_list_consumable",
+            "itementry": "farm_list_consumable",
             "maxweight": 180,
             "available": -1
         },
         {
             "minweight": 250,
-            "var_a6762160": "farm_list_attachment",
+            "itementry": "farm_list_attachment",
             "maxweight": 250,
             "available": -1
         },
         {
             "minweight": 300,
-            "var_a6762160": "farm_list_ammo",
+            "itementry": "farm_list_ammo",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 60,
-            "var_a6762160": "storage_list",
+            "itementry": "storage_list",
             "maxweight": 60,
             "available": -1
         },
         {
             "minweight": 70,
-            "var_a6762160": "farm_list_armor_shards",
+            "itementry": "farm_list_armor_shards",
             "maxweight": 70,
             "available": -1
         }

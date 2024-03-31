@@ -601,10 +601,10 @@ function function_b25f48bf(for_team, var_a9ab69de, var_d9438b7, var_ed0a1ecc) {
 // Params 2, eflags: 0x4
 // Checksum 0xec75617d, Offset: 0x1d98
 // Size: 0xb6
-function private function_78db0e06(var_659f7dc3, var_5002c793) {
+function private function_78db0e06(var_659f7dc3, new_team) {
     players = getplayers(var_659f7dc3);
     foreach (player in players) {
-        player function_dc7eaabd(var_5002c793);
+        player function_dc7eaabd(new_team);
     }
     return players.size;
 }

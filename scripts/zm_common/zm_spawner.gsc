@@ -1485,7 +1485,7 @@ function function_dce9f1a6(spots) {
         if (lengthsquared(v_player_dir) > 0) {
             zones = zm_quick_spawning::function_f1ec5df(player_info.player, v_player_dir, 1);
             for (i = 0; i < spots.size; i++) {
-                if (isdefined(spots[i].var_d51f4e2d) && gettime() - spots[i].var_d51f4e2d < 3000) {
+                if (isdefined(spots[i].spawned_timestamp) && gettime() - spots[i].spawned_timestamp < 3000) {
                     continue;
                 }
                 if (isdefined(player_info.zone) && spots[i].zone_name === player_info.zone.name) {
@@ -1611,7 +1611,7 @@ function do_zombie_spawn() {
         spots = struct::get_array("spawn_location", "script_noteworthy");
     }
     spot = function_20e7d186(spots);
-    spot.var_d51f4e2d = gettime();
+    spot.spawned_timestamp = gettime();
     self.spawn_point = spot;
     /#
         if (getdvarint(#"zombiemode_debug_zones", 0)) {
@@ -1670,7 +1670,7 @@ function function_20e7d186(var_493c4730) {
 // Size: 0xb8
 function function_65439499(spawn_points, var_12af83a0 = 5000) {
     foreach (point in spawn_points) {
-        if (isdefined(point.var_d51f4e2d) && gettime() - point.var_d51f4e2d > var_12af83a0) {
+        if (isdefined(point.spawned_timestamp) && gettime() - point.spawned_timestamp > var_12af83a0) {
             return point;
         }
     }

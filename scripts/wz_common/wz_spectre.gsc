@@ -54,8 +54,8 @@ function private function_4467066e(params) {
     var_ec8e239d = 0;
     if (isstruct(self.inventory) && isarray(self.inventory.items)) {
         foreach (item in self.inventory.items) {
-            var_a6762160 = item.var_a6762160;
-            if (isdefined(item.var_a6762160) && item.var_a6762160.name == #"sig_blade_wz_item") {
+            itementry = item.itementry;
+            if (isdefined(item.itementry) && item.itementry.name == #"sig_blade_wz_item") {
                 var_ec8e239d = 1;
                 break;
             }
@@ -166,9 +166,9 @@ function private give_max_ammo(weaponslot) {
         if (!isdefined(ammoitem.weapon) || ammoitem.weapon.ammoindex !== weapon.ammoindex) {
             continue;
         }
-        var_2f399b51 = namespace_a0d533d1::function_2879cbe0(self.inventory.var_7658cbec, ammoitem.weapon);
+        maxstockammo = namespace_a0d533d1::function_2879cbe0(self.inventory.var_7658cbec, ammoitem.weapon);
         currentammostock = self getweaponammostock(ammoitem.weapon);
-        var_9b9ba643 = var_2f399b51 - currentammostock;
+        var_9b9ba643 = maxstockammo - currentammostock;
         self function_fc9f8b05(weapon, var_9b9ba643);
         break;
     }

@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "wz_open_skyscrapers_wallbuy_guns_sniper",
+            "itementry": "wz_open_skyscrapers_wallbuy_guns_sniper",
             "maxweight": 100,
             "available": -1
         }

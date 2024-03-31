@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "grapple_wz_item",
+            "itementry": "grapple_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "trophy_system_wz_item",
+            "itementry": "trophy_system_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "dart_wz_item",
+            "itementry": "dart_wz_item",
             "maxweight": 100,
             "available": 1
         },
         {
             "minweight": 100,
-            "var_a6762160": "ultimate_turret_wz_item",
+            "itementry": "ultimate_turret_wz_item",
             "maxweight": 100,
             "available": 1
         }

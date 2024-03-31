@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 700,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 700,
             "available": -1
         }

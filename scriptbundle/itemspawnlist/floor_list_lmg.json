@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 300,
-            "var_a6762160": "lmg_standard_t8_item",
+            "itementry": "lmg_standard_t8_item",
             "var_3f8c08e3": "ammo_type_762_item",
             "maxweight": 380,
             "available": -1

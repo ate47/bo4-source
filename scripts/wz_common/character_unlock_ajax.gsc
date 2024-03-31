@@ -41,8 +41,8 @@ function function_2613aeec(enabled) {
 // Checksum 0xaf5f3103, Offset: 0x1e8
 // Size: 0xcc
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (isdefined(var_a6762160) && var_a6762160.name === #"cu01_item") {
+    itementry = item.itementry;
+    if (isdefined(itementry) && itementry.name === #"cu01_item") {
         var_b6015a5d = self function_b854ffba();
         if (var_b6015a5d >= 3 && self character_unlock::function_f0406288(#"ajax_unlock")) {
             self character_unlock::function_c8beca5e(#"ajax_unlock", #"hash_6e5a10ffa958d875", 1);
@@ -58,12 +58,12 @@ function on_drop_item(params) {
     if (!isplayer(self)) {
         return;
     }
-    var_a6762160 = params.item.var_a6762160;
+    itementry = params.item.itementry;
     deathstash = params.item.deathstash;
     if (isdefined(deathstash) && deathstash) {
         return;
     }
-    if (isdefined(var_a6762160) && var_a6762160.name === #"cu01_item") {
+    if (isdefined(itementry) && itementry.name === #"cu01_item") {
         var_b6015a5d = self function_b854ffba();
         if (var_b6015a5d < 3 && self character_unlock::function_c70bcc7a(#"ajax_unlock")) {
             self character_unlock::function_c8beca5e(#"ajax_unlock", #"hash_6e5a10ffa958d875", 0);
@@ -76,8 +76,8 @@ function on_drop_item(params) {
 // Checksum 0xdf581e33, Offset: 0x3f0
 // Size: 0xd4
 function on_item_use(params) {
-    var_a6762160 = params.item.var_a6762160;
-    if (isdefined(var_a6762160) && var_a6762160.name === #"cu01_item") {
+    itementry = params.item.itementry;
+    if (isdefined(itementry) && itementry.name === #"cu01_item") {
         if (self character_unlock::function_c70bcc7a(#"ajax_unlock")) {
             var_b6015a5d = self function_b854ffba();
             if (var_b6015a5d < 3) {
@@ -95,8 +95,8 @@ function private function_b854ffba() {
     var_b6015a5d = 0;
     if (isdefined(self.inventory) && isdefined(self.inventory.items)) {
         foreach (item in self.inventory.items) {
-            var_a6762160 = item.var_a6762160;
-            if (isdefined(var_a6762160) && var_a6762160.name === #"cu01_item") {
+            itementry = item.itementry;
+            if (isdefined(itementry) && itementry.name === #"cu01_item") {
                 var_b6015a5d = var_b6015a5d + item.count;
             }
         }

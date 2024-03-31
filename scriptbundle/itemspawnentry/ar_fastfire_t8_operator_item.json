@@ -22,7 +22,7 @@
     "var_3e688854": -2,
     "weapon": "weapon#ar_fastfire_t8_operator_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "attachslotstock": 1,
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
@@ -36,6 +36,6 @@
     "attachslotoptics": 1,
     "attachslotrail": 1,
     "pickupicon": "#hash_4621eefe05a06bdd",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

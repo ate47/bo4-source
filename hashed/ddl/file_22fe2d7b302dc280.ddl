@@ -33,7 +33,7 @@ struct root {
     float hash_475d9beecef8b15f;
     int32 wallrun_time;
     int32 assists;
-    int32 hash_dff62c9437ddfa;
+    int32 totalshots;
     int32 hash_5e8a9a502b3f3df8;
     float hash_491587fc34c54122;
     int32 sprint_time;

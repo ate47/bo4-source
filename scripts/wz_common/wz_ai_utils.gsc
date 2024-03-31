@@ -144,12 +144,12 @@ function debug_ai() {
                     if (isdefined(entity.enemy) && entity cansee(entity.enemy)) {
                         ai_cansee = 1;
                     }
-                    if (isdefined(entity.var_5a8f690)) {
+                    if (isdefined(entity.canseeplayer)) {
                         org = entity.origin + vectorscale((0, 0, 1), 85);
                         if (getdvarint(#"recorder_enablerec", 0)) {
-                            record3dtext("<unknown string>" + entity.var_5a8f690 + "<unknown string>" + ai_cansee + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
+                            record3dtext("<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
-                            print3d(org, "<unknown string>" + entity.var_5a8f690 + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.2);
+                            print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.2);
                         }
                     }
                     if (isdefined(entity.allowoffnavmesh)) {
@@ -380,7 +380,7 @@ function function_7adc1e46(ai_zone, is_special) {
     level endon(#"game_ended");
     self.ai_zone = ai_zone;
     self.disabletargetservice = 1;
-    self.var_5a8f690 = undefined;
+    self.canseeplayer = undefined;
     self.var_ea34ab74 = undefined;
     self.aistate = 0;
     self.favoriteenemy = undefined;
@@ -473,19 +473,19 @@ function function_f10600c(enemy) {
     if (!is_player_valid(enemy)) {
         return 0;
     }
-    if (isdefined(self.var_5a8f690) && gettime() < self.var_ea34ab74) {
-        return self.var_5a8f690;
+    if (isdefined(self.canseeplayer) && gettime() < self.var_ea34ab74) {
+        return self.canseeplayer;
     }
     targetpoint = isdefined(enemy.var_88f8feeb) ? enemy.var_88f8feeb : enemy getcentroid();
     if (bullettracepassed(self geteye(), targetpoint, 0, enemy)) {
         self clearentitytarget();
-        self.var_5a8f690 = 1;
+        self.canseeplayer = 1;
         self.var_ea34ab74 = gettime() + 2000;
     } else {
-        self.var_5a8f690 = 0;
+        self.canseeplayer = 0;
         self.var_ea34ab74 = gettime() + 500;
     }
-    return self.var_5a8f690;
+    return self.canseeplayer;
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
@@ -673,17 +673,17 @@ function function_d92e3c5a(attacker, ai_zone, itemlist) {
         item = items[i];
         if (isdefined(item)) {
             if (isdefined(level.var_c64b3b46) && level.var_c64b3b46) {
-                if (isdefined(item.var_a6762160) && isdefined(ai_zone) && isdefined(ai_zone.item_drops)) {
+                if (isdefined(item.itementry) && isdefined(ai_zone) && isdefined(ai_zone.item_drops)) {
                     if (!isdefined(ai_zone.item_drops[self.archetype])) {
                         ai_zone.item_drops[self.archetype] = [];
                     }
-                    if (!isdefined(ai_zone.item_drops[self.archetype][item.var_a6762160.name])) {
-                        ai_zone.item_drops[self.archetype][item.var_a6762160.name] = {};
+                    if (!isdefined(ai_zone.item_drops[self.archetype][item.itementry.name])) {
+                        ai_zone.item_drops[self.archetype][item.itementry.name] = {};
                     }
-                    if (!isdefined(ai_zone.item_drops[self.archetype][item.var_a6762160.name].count)) {
-                        ai_zone.item_drops[self.archetype][item.var_a6762160.name].count = 0;
+                    if (!isdefined(ai_zone.item_drops[self.archetype][item.itementry.name].count)) {
+                        ai_zone.item_drops[self.archetype][item.itementry.name].count = 0;
                     }
-                    ai_zone.item_drops[self.archetype][item.var_a6762160.name].count++;
+                    ai_zone.item_drops[self.archetype][item.itementry.name].count++;
                 }
             }
             item thread function_7a1e21a9(attacker, v_origin, min_radius, max_radius, var_4dd1cd8b, var_8c20ac00);

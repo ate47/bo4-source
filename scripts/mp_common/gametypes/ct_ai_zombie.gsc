@@ -696,19 +696,19 @@ function function_f10600c(enemy) {
     if (!is_player_valid(enemy)) {
         return 0;
     }
-    if (isdefined(self.var_5a8f690) && gettime() < self.var_ea34ab74) {
-        return self.var_5a8f690;
+    if (isdefined(self.canseeplayer) && gettime() < self.var_ea34ab74) {
+        return self.canseeplayer;
     }
     targetpoint = isdefined(enemy.var_88f8feeb) ? enemy.var_88f8feeb : enemy getcentroid();
     if (bullettracepassed(self geteye(), targetpoint, 0, enemy)) {
         self clearentitytarget();
-        self.var_5a8f690 = 1;
+        self.canseeplayer = 1;
         self.var_ea34ab74 = gettime() + 2000;
     } else {
-        self.var_5a8f690 = 0;
+        self.canseeplayer = 0;
         self.var_ea34ab74 = gettime() + 500;
     }
-    return self.var_5a8f690;
+    return self.canseeplayer;
 }
 
 // Namespace mp_ai_zombie/ct_ai_zombie

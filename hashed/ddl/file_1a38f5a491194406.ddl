@@ -10,13 +10,13 @@ struct root {
     int32 hash_666d0cfcf9ae78ae;
     char playername[48];
     int32 gametime;
-    int32 hash_34c89c99b7d0a3b3;
+    int32 spawnpointid;
     client_header client;
     int32 originx;
     int32 originy;
     int32 originz;
     int32 spawnpointidshift;
-    char hash_30cbade5af68bdb0[48];
+    char enemyname[48];
     char reason[64];
     int32 elapsedtime;
     int32 hash_5baa54667bbc1690;

@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 400,
-            "var_a6762160": "ammo_type_9mm_item",
+            "itementry": "ammo_type_9mm_item",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 400,
-            "var_a6762160": "ammo_type_45_item",
+            "itementry": "ammo_type_45_item",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 400,
-            "var_a6762160": "ammo_type_12ga_item",
+            "itementry": "ammo_type_12ga_item",
             "maxweight": 400,
             "available": -1
         }

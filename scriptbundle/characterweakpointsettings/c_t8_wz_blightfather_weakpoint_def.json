@@ -5,35 +5,35 @@
             "var_910e2f9b": "j_head",
             "var_51e8b151": "tag_mouth_weakspot",
             "activebydefault": 1,
-            "var_b7fbe51b": 16,
+            "hitradius": 16,
             "health": 0.3
         },
         {
             "type": "#weakpoint",
             "var_51e8b151": "tag_elbow_weakspot_le",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.06
         },
         {
             "type": "#weakpoint",
             "var_51e8b151": "tag_elbow_weakspot_ri",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.06
         },
         {
             "type": "#weakpoint",
             "var_51e8b151": "tag_eggsack_weakspot_le",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.35
         },
         {
             "type": "#weakpoint",
             "var_51e8b151": "tag_eggsack_weakspot_ri",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.35
         }
     ],

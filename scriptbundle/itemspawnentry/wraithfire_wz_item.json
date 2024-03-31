@@ -12,6 +12,6 @@
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#ui_icon_inventory_wraith_fire",
-    "var_50773731": 2.25,
+    "positionoffsetz": 2.25,
     "itemtype": "equipment"
 }

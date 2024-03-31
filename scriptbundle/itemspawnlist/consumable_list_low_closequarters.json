@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_brawler",
+            "itementry": "perk_item_brawler",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_consumer",
+            "itementry": "perk_item_consumer",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_lightweight",
+            "itementry": "perk_item_lightweight",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_brawler",
+            "itementry": "perk_item_brawler",
             "maxweight": 200,
             "available": -1
         }

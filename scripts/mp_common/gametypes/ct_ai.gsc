@@ -67,7 +67,7 @@ function spawn_zombie(v_spawn_pos, b_keyline, var_8ac47d78) {
     zombie.navmeshpoint = undefined;
     zombie.var_86ba7e6d = 0;
     zombie.disabletargetservice = 1;
-    zombie.var_5a8f690 = undefined;
+    zombie.canseeplayer = undefined;
     zombie.var_ea34ab74 = undefined;
     zombie.var_f38f922 = undefined;
     zombie.damagedone = 0;
@@ -107,7 +107,7 @@ function spawn_blight_father(v_spawn_pos, b_keyline, var_8ac47d78, var_158efaf3)
     zombie.navmeshpoint = undefined;
     zombie.var_86ba7e6d = 0;
     zombie.disabletargetservice = 1;
-    zombie.var_5a8f690 = undefined;
+    zombie.canseeplayer = undefined;
     zombie.var_ea34ab74 = undefined;
     zombie.var_f38f922 = undefined;
     zombie.damagedone = 0;
@@ -217,7 +217,7 @@ function spawn_warlord(v_spawn_pos, v_spawn_angles) {
     warlord.var_3c5a5d29 = 0;
     warlord.navmeshpoint = undefined;
     warlord.var_86ba7e6d = 0;
-    warlord.var_5a8f690 = undefined;
+    warlord.canseeplayer = undefined;
     warlord.var_ea34ab74 = undefined;
     warlord.var_f38f922 = undefined;
     warlord.damagedone = 0;

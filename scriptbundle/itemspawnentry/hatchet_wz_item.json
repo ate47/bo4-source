@@ -3,7 +3,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#hatchet_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "hatchet_wz_item",
     "stackcount": 1,
     "icon": "#ui_icon_inventory_hatchet",
@@ -11,6 +11,6 @@
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#ui_icon_inventory_hatchet",
-    "var_50773731": 0.75,
+    "positionoffsetz": 0.75,
     "itemtype": "equipment"
 }

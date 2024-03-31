@@ -97,7 +97,7 @@ function function_c1aa8f6b(watcher) {
     watcher.detonateradius = level.var_a5ff950.var_9c0267f2 + 50;
     watcher.onstun = &weaponobjects::weaponstun;
     watcher.stuntime = 1;
-    watcher.timeout = level.var_a5ff950.var_3ee2edfa;
+    watcher.timeout = level.var_a5ff950.shockduration;
     watcher.ondetonatecallback = &function_7ce0a335;
     watcher.activationdelay = 0;
     watcher.activatesound = #"wpn_claymore_alert";
@@ -138,7 +138,7 @@ function function_aa6e2f52(watcher, owner) {
     if (isdefined(waitresult.hitent.isdog) && waitresult.hitent.isdog) {
         watcher.timeout = 0.75;
     } else {
-        watcher.timeout = level.var_a5ff950.var_3ee2edfa;
+        watcher.timeout = level.var_a5ff950.shockduration;
     }
     self playsound("prj_lightning_impact_human_fatal");
     self thread function_a0081b68(waitresult.hitent);
@@ -234,8 +234,8 @@ function function_33020ed7(ent) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x4ab97795, Offset: 0xd70
 // Size: 0x8e
-function function_c23ed15d(ent, var_3ee2edfa) {
-    if (isdefined(ent.hittime) && ent.hittime + var_3ee2edfa + int((isdefined(level.var_a5ff950.var_80cecde8) ? level.var_a5ff950.var_80cecde8 : 0) * 1000) > gettime()) {
+function function_c23ed15d(ent, shockduration) {
+    if (isdefined(ent.hittime) && ent.hittime + shockduration + int((isdefined(level.var_a5ff950.var_80cecde8) ? level.var_a5ff950.var_80cecde8 : 0) * 1000) > gettime()) {
         return true;
     }
     return false;
@@ -246,14 +246,14 @@ function function_c23ed15d(ent, var_3ee2edfa) {
 // Checksum 0xb7630109, Offset: 0xe08
 // Size: 0x70
 function function_a64504d2() {
-    var_3ee2edfa = level.var_a5ff950.var_3ee2edfa;
+    shockduration = level.var_a5ff950.shockduration;
     if (isplayer(self)) {
         var_341cbc9e = self function_aa61b0b();
         if (var_341cbc9e) {
-            var_3ee2edfa = var_3ee2edfa * var_341cbc9e;
+            shockduration = shockduration * var_341cbc9e;
         }
     }
-    return var_3ee2edfa;
+    return shockduration;
 }
 
 // Namespace shockrifle/shockrifle
@@ -329,7 +329,7 @@ function watchfordeath() {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x3fdbef8b, Offset: 0x1188
 // Size: 0x56e
-function function_c80bac1f(shockcharge, var_51415470, var_3ee2edfa) {
+function function_c80bac1f(shockcharge, var_51415470, shockduration) {
     self endon(#"death");
     self ability_player::function_fc4dc54(1);
     self.hittime = gettime();
@@ -370,7 +370,7 @@ function function_c80bac1f(shockcharge, var_51415470, var_3ee2edfa) {
             scoreevents::processscoreevent(#"tempest_shock_chain", owner, self, level.shockrifleweapon);
         }
     }
-    wait(var_3ee2edfa);
+    wait(shockduration);
     if (isdefined(self)) {
         self notify(#"hash_16c7de1837351e82");
     }
@@ -442,19 +442,19 @@ function function_92eabc2f(ent, var_51415470) {
     damage = function_e0141557(ent, var_51415470);
     ent dodamage(damage, self.origin, self.owner, self, undefined, "MOD_UNKNOWN", 0, level.shockrifleweapon);
     ent.var_beee9523 = 1;
-    var_3ee2edfa = ent function_a64504d2();
+    shockduration = ent function_a64504d2();
     params = getstatuseffect(#"shock_rifle_shock");
-    ent status_effect::status_effect_apply(params, level.shockrifleweapon, self.owner, 0, int((var_3ee2edfa + level.var_a5ff950.var_772f6a9c) * 1000), undefined, self.origin);
+    ent status_effect::status_effect_apply(params, level.shockrifleweapon, self.owner, 0, int((shockduration + level.var_a5ff950.var_772f6a9c) * 1000), undefined, self.origin);
     isplayer = isplayer(ent);
     if (isplayer) {
         ent clientfield::set_to_player("shock_rifle_damage", 1);
     }
-    if (!function_c23ed15d(ent, var_3ee2edfa) && isplayer) {
+    if (!function_c23ed15d(ent, shockduration) && isplayer) {
         if (ent clientfield::get_to_player("vision_pulse_active") == 1) {
             ent [[ level.shutdown_vision_pulse ]](0, 1, ent.var_1ad61d27);
             waitframe(1);
         }
-        ent thread function_c80bac1f(self, var_51415470, var_3ee2edfa);
+        ent thread function_c80bac1f(self, var_51415470, shockduration);
         return;
     }
     ent playsound("wpn_shockrifle_bounce");
@@ -474,7 +474,7 @@ function function_7ce0a335(attacker, weapon, target) {
     self ghost();
     self notsolid();
     self stoploopsound(0.5);
-    wait(level.var_a5ff950.var_3ee2edfa + 1);
+    wait(level.var_a5ff950.shockduration + 1);
     self delete();
 }
 

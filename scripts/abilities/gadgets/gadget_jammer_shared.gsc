@@ -22,8 +22,8 @@ function init_shared() {
     if (!isdefined(level.var_578f7c6d)) {
         level.var_578f7c6d = spawnstruct();
     }
-    if (!isdefined(level.var_578f7c6d.var_1728e736)) {
-        level.var_578f7c6d.var_1728e736 = [];
+    if (!isdefined(level.var_578f7c6d.weapontypeoverrides)) {
+        level.var_578f7c6d.weapontypeoverrides = [];
     }
     level.var_578f7c6d.weapon = getweapon(#"eq_emp_grenade");
     level.var_578f7c6d.customsettings = getscriptbundle(level.var_578f7c6d.weapon.customsettings);
@@ -108,7 +108,7 @@ function register(entity, var_448f97f2) {
 // Checksum 0xdeae09b2, Offset: 0x698
 // Size: 0x36
 function function_4e7e56a8(weapon, callbackfunction) {
-    level.var_578f7c6d.var_1728e736[weapon.name] = callbackfunction;
+    level.var_578f7c6d.weapontypeoverrides[weapon.name] = callbackfunction;
 }
 
 // Namespace jammer/gadget_jammer_shared
@@ -259,11 +259,11 @@ function private function_e27c41b4(jammer, entity, attackingplayer) {
     if (!isdefined(weapon)) {
         return false;
     }
-    if (isdefined(level.var_578f7c6d.var_1728e736[weapon.name])) {
+    if (isdefined(level.var_578f7c6d.weapontypeoverrides[weapon.name])) {
         function_1c430dad(entity, 1);
         function_58f8bf08(jammer, attackingplayer, undefined);
         function_2e6238c0(weapon, entity.owner);
-        thread [[ level.var_578f7c6d.var_1728e736[weapon.name] ]](entity, attackingplayer);
+        thread [[ level.var_578f7c6d.weapontypeoverrides[weapon.name] ]](entity, attackingplayer);
         return true;
     }
     thread function_ca8a005e(jammer, entity, attackingplayer);

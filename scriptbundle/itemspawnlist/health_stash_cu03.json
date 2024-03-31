@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "health_stash_slot1",
+            "itementry": "health_stash_slot1",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_stash_slot2",
+            "itementry": "health_stash_slot2",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_stash_slot3",
+            "itementry": "health_stash_slot3",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_stash_slot4",
+            "itementry": "health_stash_slot4",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "cu03_item",
+            "itementry": "cu03_item",
             "maxweight": 1,
             "available": 1
         }

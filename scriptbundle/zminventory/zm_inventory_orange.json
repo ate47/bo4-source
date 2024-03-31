@@ -131,7 +131,7 @@
                             "clientfield": "#heat_pack_part_canister"
                         }
                     ],
-                    "var_ffd1cb07": 3
+                    "list_items": 3
                 },
                 {
                     "items": [
@@ -146,7 +146,7 @@
                             "clientfield": "#heat_pack_complete"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 }
             ],
             "var_516217cd": 2,
@@ -182,7 +182,7 @@
                             "clientfield": "#flinger_gear_box_2"
                         }
                     ],
-                    "var_ffd1cb07": 2
+                    "list_items": 2
                 }
             ],
             "var_516217cd": 1,
@@ -221,7 +221,7 @@
                             "clientfield": "#orange_dynamite_bomb_part_3_owned"
                         }
                     ],
-                    "var_ffd1cb07": 3
+                    "list_items": 3
                 },
                 {
                     "items": [
@@ -235,7 +235,7 @@
                             "clientfield": "#orange_dynamite_bomb_complete"
                         }
                     ],
-                    "var_ffd1cb07": 1
+                    "list_items": 1
                 }
             ],
             "var_516217cd": 2,

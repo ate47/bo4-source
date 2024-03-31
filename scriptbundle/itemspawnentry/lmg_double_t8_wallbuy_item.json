@@ -8,7 +8,7 @@
     "weapon": "weapon#lmg_double_t8_wz",
     "var_86d1fc36": "#hash_64dbfc4253f51c17",
     "type": "itemspawnentry",
-    "var_6731866b": -90,
+    "angleoffsety": -90,
     "var_48907470": 1.5,
     "var_65b3a12": 6,
     "name": "lmg_double_t8_wallbuy_item",
@@ -21,6 +21,6 @@
     "pickupicon": "#hash_4fd3ede5dcc78c34",
     "var_37cd55af": "#hash_355d8db7f649041c",
     "var_8c9a7dc8": 90,
-    "var_50773731": 58,
+    "positionoffsetz": 58,
     "itemtype": "weapon"
 }

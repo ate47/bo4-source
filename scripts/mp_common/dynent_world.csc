@@ -66,8 +66,8 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
         if (!teleport && isdefined(newstate.var_55c3fa1)) {
             playsound(0, newstate.var_55c3fa1, dynent.origin);
         }
-        if (isdefined(newstate.var_c7ae60e8)) {
-            add_helico(dynent, newstate.var_c7ae60e8);
+        if (isdefined(newstate.overridemodel)) {
+            add_helico(dynent, newstate.overridemodel);
         }
         if (isdefined(newstate.stateanim)) {
             starttime = 0;

@@ -15,8 +15,8 @@
     "label": "#hash_399145de9cf614d9",
     "name": "setbacks_sas",
     "displayname": "#hash_7d6e8c8d72eb5c33",
-    "var_9600a8ab": "#hash_4fd8347bec56528c",
-    "var_bd2ff709": "#menu/1_point",
+    "label1": "#hash_4fd8347bec56528c",
+    "label2": "#menu/1_point",
     "var_9de86f42": 10,
     "setting": "setbacks"
 }

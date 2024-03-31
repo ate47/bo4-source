@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 20,
-            "var_a6762160": "attachment_list_good",
+            "itementry": "attachment_list_good",
             "maxweight": 20,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "attachment_list_med",
+            "itementry": "attachment_list_med",
             "maxweight": 135,
             "available": -1
         },
         {
             "minweight": 90,
-            "var_a6762160": "attachment_list_low",
+            "itementry": "attachment_list_low",
             "maxweight": 135,
             "available": -1
         }

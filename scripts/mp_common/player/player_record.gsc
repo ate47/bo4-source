@@ -237,7 +237,7 @@ function function_96d38b95(result) {
     var_6e81e3c3.special_contract_completed = specialcontractcompleted;
     var_8607894c = spawnstruct();
     var_8607894c.var_3cc73d67 = player function_5d23af5b();
-    var_8607894c.specialist_head = player function_44a7328f();
+    var_8607894c.specialist_head = player startquantity();
     var_8607894c.specialist_legs = player function_cde23658();
     var_8607894c.specialist_torso = player function_92ea4100();
     var_8607894c.specialist_showcase = showcaseweapon.weapon.name;

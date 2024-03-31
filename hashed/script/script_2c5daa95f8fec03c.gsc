@@ -14,12 +14,12 @@ function initweakpoints(entity, var_97e1b97d) {
     }
     entity.var_5ace757d = [];
     foreach (var_dd54fdb1 in var_5ace757d.weakpoints) {
-        var_7c4db75f = function_2e532eed(var_dd54fdb1);
+        var_7c4db75f = structcopy(var_dd54fdb1);
         var_7c4db75f.currstate = 2;
         if (isdefined(var_dd54fdb1.activebydefault) && var_dd54fdb1.activebydefault) {
             var_7c4db75f.currstate = 1;
         }
-        if (!(isdefined(var_dd54fdb1.var_5a93cd2e) && var_dd54fdb1.var_5a93cd2e)) {
+        if (!(isdefined(var_dd54fdb1.absolutehealth) && var_dd54fdb1.absolutehealth)) {
             var_7c4db75f.health = var_dd54fdb1.health * entity.health;
         } else {
             var_7c4db75f.health = var_dd54fdb1.health;
@@ -71,11 +71,11 @@ function function_73ab4754(entity, point, weakpointstate) {
             if (isdefined(weakpointstate) && var_dd54fdb1.currstate !== weakpointstate) {
                 continue;
             }
-            if (isdefined(var_dd54fdb1.var_b7fbe51b)) {
+            if (isdefined(var_dd54fdb1.hitradius)) {
                 foreach (hittag in var_dd54fdb1.hittags) {
                     tagorigin = entity gettagorigin(hittag);
                     distsq = distancesquared(point, tagorigin);
-                    if (distsq <= var_dd54fdb1.var_b7fbe51b * var_dd54fdb1.var_b7fbe51b && var_833f593 > distsq) {
+                    if (distsq <= var_dd54fdb1.hitradius * var_dd54fdb1.hitradius && var_833f593 > distsq) {
                         var_e2b4fa2b = var_dd54fdb1;
                         var_833f593 = distsq;
                     }
@@ -99,11 +99,11 @@ function function_6bb685f0(entity, point, weakpointstate) {
             if (isdefined(weakpointstate) && var_dd54fdb1.currstate !== weakpointstate) {
                 continue;
             }
-            if (isdefined(var_dd54fdb1.var_b7fbe51b)) {
+            if (isdefined(var_dd54fdb1.hitradius)) {
                 foreach (hittag in var_dd54fdb1.hittags) {
                     tagorigin = entity gettagorigin(hittag);
                     distsq = distancesquared(point, tagorigin);
-                    if (distsq <= var_dd54fdb1.var_b7fbe51b * var_dd54fdb1.var_b7fbe51b) {
+                    if (distsq <= var_dd54fdb1.hitradius * var_dd54fdb1.hitradius) {
                         return var_dd54fdb1;
                     }
                 }

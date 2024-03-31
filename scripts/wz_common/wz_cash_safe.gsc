@@ -172,7 +172,7 @@ function private function_c92a5584(activator) {
         return false;
     }
     foreach (item in activator.inventory.items) {
-        if (!isdefined(item) || !isstruct(item.var_a6762160) || item.var_a6762160.itemtype !== #"cash") {
+        if (!isdefined(item) || !isstruct(item.itementry) || item.itementry.itemtype !== #"cash") {
             continue;
         }
         return true;
@@ -198,7 +198,7 @@ function private function_97eb71f0(activator) {
 function private function_3d49217f(activator) {
     var_22aec194 = activator function_2cef7d98();
     if (isdefined(var_22aec194)) {
-        return var_22aec194.var_a6762160.casttime;
+        return var_22aec194.itementry.casttime;
     }
     return undefined;
 }
@@ -214,7 +214,7 @@ function private function_7c5a1e82(activator, stateindex, var_9bdcfcd8) {
     }
     var_22aec194 = activator function_2cef7d98();
     if (isdefined(var_22aec194)) {
-        scoreamount = var_22aec194.var_a6762160.amount;
+        scoreamount = var_22aec194.itementry.amount;
         initialcount = var_22aec194.count;
         activator item_inventory::use_inventory_item(var_22aec194.networkid, 1);
         if (var_22aec194.count < initialcount) {
@@ -236,10 +236,10 @@ function private function_7c5a1e82(activator, stateindex, var_9bdcfcd8) {
 function private function_2cef7d98() {
     var_22aec194 = undefined;
     foreach (item in self.inventory.items) {
-        if (!isdefined(item) || !isstruct(item.var_a6762160) || item.var_a6762160.itemtype !== #"cash") {
+        if (!isdefined(item) || !isstruct(item.itementry) || item.itementry.itemtype !== #"cash") {
             continue;
         }
-        if (!isdefined(var_22aec194) || var_22aec194.var_a6762160.amount < item.var_a6762160.amount) {
+        if (!isdefined(var_22aec194) || var_22aec194.itementry.amount < item.itementry.amount) {
             var_22aec194 = item;
         }
     }

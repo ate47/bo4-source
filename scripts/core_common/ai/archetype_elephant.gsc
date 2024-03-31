@@ -1005,8 +1005,8 @@ function private function_1d65bc12(enemy, elephant, var_60e4c6b7 = 1) {
     var_3e3c8075 = vectornormalize(var_3e3c8075);
     var_c2ee8451 = vectornormalize(var_c2ee8451);
     if (var_60e4c6b7) {
-        var_34e02165 = vectordot(var_c2ee8451, var_3e3c8075);
-        if (var_34e02165 < 0) {
+        enemydot = vectordot(var_c2ee8451, var_3e3c8075);
+        if (enemydot < 0) {
             return false;
         }
     }
@@ -1505,16 +1505,16 @@ function function_cd472d5(entity) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xe7c3c743, Offset: 0x7308
 // Size: 0x3c4
-function function_ce8fe2b0(entity, var_ab9f62ef) {
+function function_ce8fe2b0(entity, splitorigin) {
     self endon(#"death");
     forwardvec = vectornormalize(anglestoforward(entity.angles));
     forwarddist = 200;
-    if (isdefined(var_ab9f62ef)) {
-        var_6629fd0d = var_ab9f62ef;
+    if (isdefined(splitorigin)) {
+        launchpoint = splitorigin;
     } else {
-        var_6629fd0d = entity.origin + forwarddist * forwardvec;
+        launchpoint = entity.origin + forwarddist * forwardvec;
     }
-    closestpointonnavmesh = getclosestpointonnavmesh(var_6629fd0d, 500, 200);
+    closestpointonnavmesh = getclosestpointonnavmesh(launchpoint, 500, 200);
     if (isdefined(closestpointonnavmesh)) {
         trace = groundtrace(closestpointonnavmesh + vectorscale((0, 0, 1), 200), closestpointonnavmesh + vectorscale((0, 0, -1), 200), 0, undefined);
         if (isdefined(trace[#"position"])) {
@@ -1533,7 +1533,7 @@ function function_ce8fe2b0(entity, var_ab9f62ef) {
         }
     } else {
         /#
-            recordsphere(var_6629fd0d, 15, (0, 0, 0), "tag_head_ws");
+            recordsphere(launchpoint, 15, (0, 0, 0), "tag_head_ws");
         #/
     }
     wait(0.5);
@@ -1548,7 +1548,7 @@ function function_ce8fe2b0(entity, var_ab9f62ef) {
     if (targets.size == 0) {
         return;
     }
-    if (targets.size > 1 && self.ai.phase == #"hash_266f56fb994e6639" && isdefined(dustball) && isalive(dustball) && !isdefined(var_ab9f62ef)) {
+    if (targets.size > 1 && self.ai.phase == #"hash_266f56fb994e6639" && isdefined(dustball) && isalive(dustball) && !isdefined(splitorigin)) {
         function_ce8fe2b0(self, dustball.origin);
     }
 }

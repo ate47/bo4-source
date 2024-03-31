@@ -124,7 +124,7 @@ function onstartgametype() {
     level thread function_aafe4c74();
     level thread function_c857e45f();
     /#
-        level.var_8df7db3b = 0;
+        level.activedrops = 0;
         level.var_8b5ef67d = 0;
         level.var_bb42ed2 = 0;
         level.var_9d4a9561 = 0;
@@ -174,7 +174,7 @@ function function_aafe4c74() {
 function debug_print() {
     /#
         while (true) {
-            iprintln("shamrock_enemy_collect" + level.var_8df7db3b);
+            iprintln("shamrock_enemy_collect" + level.activedrops);
             iprintln("<unknown string>" + level.var_8b5ef67d);
             iprintln("<unknown string>" + level.var_bb42ed2);
             iprintln("<unknown string>" + level.var_9d4a9561);
@@ -303,8 +303,8 @@ function function_f82f0bb5() {
 // Size: 0x344
 function function_903c4eff(victim, attacker, pos, yawangle) {
     /#
-        level.var_8df7db3b++;
-        level.var_8b5ef67d = max(level.var_8b5ef67d, level.var_8df7db3b);
+        level.activedrops++;
+        level.var_8b5ef67d = max(level.var_8b5ef67d, level.activedrops);
     #/
     if (!isdefined(yawangle)) {
         yawangle = randomint(360);
@@ -400,7 +400,7 @@ function timeout_wait() {
 // Size: 0xfc
 function registermp_multi_kill_medals_interface() {
     /#
-        level.var_8df7db3b--;
+        level.activedrops--;
     #/
     self notify(#"reset");
     self clientfield::set("taco_flag", 0);

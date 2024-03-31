@@ -636,10 +636,10 @@ class class_7da27482 {
                 var_1f170bc0 = function_bd9a67ae(self.var_f141235b, self._i_mode, self.var_1d73bad9, outfit_index, 6);
                 if ([[ self ]]->function_bf7bce05()) {
                     var_867954ad = character_customization::function_6bca50af(&function_92ea4100, self.var_1d73bad9, outfit_index, 0, self._i_mode);
-                    var_89610e9c = [#"outfit_torso":#"tag_origin", #"outfit_legs":#"tag_origin", #"outfit_headgear":#"tag_origin", #"outfit_head":character_customization::function_6bca50af(&function_44a7328f, self.var_1d73bad9, outfit_index, 0, self._i_mode), #"head":character_customization::function_6bca50af(&getcharacterheadmodel, 0, self._i_mode)];
+                    var_89610e9c = [#"outfit_torso":#"tag_origin", #"outfit_legs":#"tag_origin", #"outfit_headgear":#"tag_origin", #"outfit_head":character_customization::function_6bca50af(&startquantity, self.var_1d73bad9, outfit_index, 0, self._i_mode), #"head":character_customization::function_6bca50af(&getcharacterheadmodel, 0, self._i_mode)];
                 } else {
                     var_867954ad = character_customization::function_6bca50af(&function_5d23af5b, self.var_1d73bad9, outfit_index, var_d92aad5c, self._i_mode);
-                    var_89610e9c = [#"outfit_torso":character_customization::function_6bca50af(&function_92ea4100, self.var_1d73bad9, outfit_index, var_1f170bc0, self._i_mode), #"outfit_legs":character_customization::function_6bca50af(&function_cde23658, self.var_1d73bad9, outfit_index, var_173f7170, self._i_mode), #"outfit_headgear":character_customization::function_6bca50af(&function_6b7000e, self.var_1d73bad9, outfit_index, var_cb9bcfe7, self._i_mode), #"outfit_head":character_customization::function_6bca50af(&function_44a7328f, self.var_1d73bad9, outfit_index, var_2f1dcdbb, self._i_mode), #"head":isdefined(getcharacterheadmodel(0, self._i_mode)) ? getcharacterheadmodel(0, self._i_mode) : #"tag_origin"];
+                    var_89610e9c = [#"outfit_torso":character_customization::function_6bca50af(&function_92ea4100, self.var_1d73bad9, outfit_index, var_1f170bc0, self._i_mode), #"outfit_legs":character_customization::function_6bca50af(&function_cde23658, self.var_1d73bad9, outfit_index, var_173f7170, self._i_mode), #"outfit_headgear":character_customization::function_6bca50af(&function_6b7000e, self.var_1d73bad9, outfit_index, var_cb9bcfe7, self._i_mode), #"outfit_head":character_customization::function_6bca50af(&startquantity, self.var_1d73bad9, outfit_index, var_2f1dcdbb, self._i_mode), #"head":isdefined(getcharacterheadmodel(0, self._i_mode)) ? getcharacterheadmodel(0, self._i_mode) : #"tag_origin"];
                 }
                 var_cf2f5fb7 = array(var_867954ad);
                 foreach (model in var_89610e9c) {
@@ -792,7 +792,7 @@ class class_7da27482 {
         if (![[ self ]]->function_ef6f931f(params)) {
             return #"tag_origin";
         }
-        return character_customization::function_6bca50af(&function_44a7328f, self.var_1d73bad9, self.var_cf55444c, self.var_f5c0467b[2], self._i_mode);
+        return character_customization::function_6bca50af(&startquantity, self.var_1d73bad9, self.var_cf55444c, self.var_f5c0467b[2], self._i_mode);
     }
 
     // Namespace namespace_7da27482/character_customization

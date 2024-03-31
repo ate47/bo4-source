@@ -4301,7 +4301,7 @@ function function_f3b02850(s_loc, var_9806a7cc) {
 // Size: 0x8a
 function function_a7a72476() {
     self endon(#"death");
-    if (!(isdefined(self.var_5a8f690) && self.var_5a8f690)) {
+    if (!(isdefined(self.canseeplayer) && self.canseeplayer)) {
         e_player = getplayers()[0];
         if (isalive(e_player)) {
             self.var_2925fedc = e_player.origin;

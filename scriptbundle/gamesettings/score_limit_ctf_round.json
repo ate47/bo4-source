@@ -12,8 +12,8 @@
     "label": "#menu/x_flags",
     "name": "score_limit_ctf_round",
     "displayname": "#hash_4201be29369b61fb",
-    "var_9600a8ab": "#hash_52b38f6fb98e8982",
-    "var_bd2ff709": "#menu/1_flag",
+    "label1": "#hash_52b38f6fb98e8982",
+    "label2": "#menu/1_flag",
     "var_9de86f42": 7,
     "setting": "scoreLimit"
 }

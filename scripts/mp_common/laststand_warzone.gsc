@@ -369,7 +369,7 @@ function function_dc7906e8(einflictor, attacker, idamage, smeansofdeath, weapon,
     self.laststandparams.laststandstarttime = gettime();
     self.laststandparams.matchtime = function_f8d53445();
     self.laststandparams.bledout = 0;
-    self.laststandparams.var_3f57b6a0 = self.laststandparams.victimorigin;
+    self.laststandparams.savedorigin = self.laststandparams.victimorigin;
     self.laststandparams.savedangles = self.laststandparams.var_5fceefd4;
 }
 
@@ -912,7 +912,7 @@ function bleed_out(var_40d90c02) {
         if (self util::isenemyplayer(attacker)) {
             if (isplayer(var_620529b4) && attacker == var_620529b4) {
                 attacker function_c7d3aeec(#"kills_eliminated", 1);
-            } else if (attacker util::function_4ded36e3(var_620529b4)) {
+            } else if (attacker util::isfriendlyplayer(var_620529b4)) {
                 attacker function_c7d3aeec(#"downs_eliminated_team", 1);
                 function_f887b191(self, attacker, 0, 2);
             } else {
@@ -1165,7 +1165,7 @@ function function_fab0e07e(finisher) {
     waitframe(1);
     if (isdefined(self) && isdefined(finisher) && isalive(self) && isalive(finisher)) {
         if (isdefined(self.laststandparams)) {
-            self.laststandparams.var_3f57b6a0 = self.origin;
+            self.laststandparams.savedorigin = self.origin;
             self.laststandparams.savedangles = self.angles;
         }
         self playerlinkto(finisher, "tag_sync");
@@ -1179,8 +1179,8 @@ function function_fab0e07e(finisher) {
 function function_516a3bef(replace) {
     if (isalive(self) && function_feb3e91d()) {
         self unlink();
-        if (isdefined(replace) && replace && isdefined(self.laststandparams) && isdefined(self.laststandparams.var_3f57b6a0)) {
-            self setorigin(self.laststandparams.var_3f57b6a0);
+        if (isdefined(replace) && replace && isdefined(self.laststandparams) && isdefined(self.laststandparams.savedorigin)) {
+            self setorigin(self.laststandparams.savedorigin);
         }
     }
 }
@@ -1494,7 +1494,7 @@ function revive_success(reviver, b_track_stats = 1) {
         return;
     }
     self function_102748f8();
-    if (self util::function_4ded36e3(reviver)) {
+    if (self util::isfriendlyplayer(reviver)) {
         reviver stats::function_d40764f3(#"revives", 1);
         reviver stats::function_b7f80d87(#"revives", 1);
         reviver.revives = reviver function_6f7bff5d(#"revives", 1);
@@ -1563,7 +1563,7 @@ function function_ecdd4b27(attacker) {
     friendlyfire = 0;
     if (isdefined(attacker) && isplayer(attacker)) {
         attackerxuid = attacker getxuid(1);
-        friendlyfire = self util::function_4ded36e3(attacker);
+        friendlyfire = self util::isfriendlyplayer(attacker);
     }
     self.var_d75a6ff5 = {#var_35b89428:0, #var_d733f8d7:0, #var_d10f3b9a:0, #bleed_out:0, #death:0, #damage:0, #end_time:0, #start_time:function_f8d53445(), #victim_pos_z:self.origin[2], #victim_pos_y:self.origin[1], #victim_pos_x:self.origin[0], #friendly_fire:friendlyfire, #attacker_xuid:int(attackerxuid), #player_xuid:int(self getxuid(1))};
 }

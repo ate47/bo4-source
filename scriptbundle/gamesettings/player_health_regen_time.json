@@ -9,9 +9,9 @@
     "name": "player_health_regen_time",
     "displayname": "#hash_107587a7d443aa95",
     "var_684ccd4c": "#menu/fast",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "label1": "#hash_94eb0e3329edf5f",
     "var_71b6e020": "#menu/normal",
-    "var_bd2ff709": "#menu/slow",
+    "label2": "#menu/slow",
     "var_9de86f42": 4,
     "setting": "playerHealthRegenTime"
 }

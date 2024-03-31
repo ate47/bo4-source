@@ -1606,18 +1606,18 @@ function function_697a602a(mdl_cage) {
     s_scene = struct::get("tag_align_red_eagles");
     var_c6c0744e = mdl_cage gettagorigin("eagle_link_jnt");
     if (isdefined(var_c6c0744e)) {
-        var_a595fc19 = util::spawn_model("tag_origin", var_c6c0744e, mdl_cage.angles);
+        mdl_scene = util::spawn_model("tag_origin", var_c6c0744e, mdl_cage.angles);
     }
-    if (isdefined(var_a595fc19)) {
-        var_a595fc19 linkto(mdl_cage, "eagle_link_jnt");
+    if (isdefined(mdl_scene)) {
+        mdl_scene linkto(mdl_cage, "eagle_link_jnt");
         scene::add_scene_func(#"hash_517a07eb7f4f647e", &function_1dceae50, "init");
-        var_a595fc19 thread scene::play(#"hash_517a07eb7f4f647e", "init");
+        mdl_scene thread scene::play(#"hash_517a07eb7f4f647e", "init");
     }
     level flag::wait_till(#"cage_dropped");
     level thread scene::play(#"hash_a460f13d4076e71", "open");
-    if (isdefined(var_a595fc19)) {
-        var_a595fc19 scene::play(#"hash_517a07eb7f4f647e", "cage_drop");
-        var_a595fc19 thread scene::play(#"hash_517a07eb7f4f647e", "ground_waiting");
+    if (isdefined(mdl_scene)) {
+        mdl_scene scene::play(#"hash_517a07eb7f4f647e", "cage_drop");
+        mdl_scene thread scene::play(#"hash_517a07eb7f4f647e", "ground_waiting");
     }
     if (isdefined(self)) {
         self clientfield::set("" + #"special_target", 1);
@@ -1632,7 +1632,7 @@ function function_697a602a(mdl_cage) {
     level thread function_e39d6ea2(#"eagle_1");
     wait(0.5);
     level flag::set(#"hash_3f6b3af99d456313");
-    var_a595fc19 delete();
+    mdl_scene delete();
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest

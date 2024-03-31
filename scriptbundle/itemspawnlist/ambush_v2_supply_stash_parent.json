@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 50,
-            "var_a6762160": "ambush_v2_supply_stash_slot1",
+            "itementry": "ambush_v2_supply_stash_slot1",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "ambush_v2_supply_stash_slot2",
+            "itementry": "ambush_v2_supply_stash_slot2",
             "maxweight": 50,
             "available": 1
         },
         {
             "minweight": 50,
-            "var_a6762160": "ambush_supply_stash_slot3",
+            "itementry": "ambush_supply_stash_slot3",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "ambush_supply_stash_slot4",
+            "itementry": "ambush_supply_stash_slot4",
             "maxweight": 50,
             "available": 2
         },
         {
             "minweight": 50,
-            "var_a6762160": "ambush_supply_stash_slot5",
+            "itementry": "ambush_supply_stash_slot5",
             "maxweight": 50,
             "available": 2
         }

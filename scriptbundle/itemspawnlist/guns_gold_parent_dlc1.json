@@ -2,31 +2,31 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "guns_gold_smgs_dlc1",
+            "itementry": "guns_gold_smgs_dlc1",
             "maxweight": 200,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_gold_ars_dlc1",
+            "itementry": "guns_gold_ars_dlc1",
             "maxweight": 200,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_gold_trs_dlc1",
+            "itementry": "guns_gold_trs_dlc1",
             "maxweight": 150,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_gold_lmgs_dlc1",
+            "itementry": "guns_gold_lmgs_dlc1",
             "maxweight": 150,
             "available": 2
         },
         {
             "minweight": 100,
-            "var_a6762160": "guns_gold_snipers_dlc1",
+            "itementry": "guns_gold_snipers_dlc1",
             "maxweight": 150,
             "available": 2
         }

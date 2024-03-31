@@ -4,7 +4,7 @@
     "var_922067c4": "scriptbundle",
     "weapon": "weapon#ray_gun_mk2z_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_65b3a12": 6,
     "name": "ray_gun_mk2z_t8_item",
     "displayname": "#weapon/ray_gun",
@@ -13,6 +13,6 @@
     "rarity": "Common",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#ui_icon_weapon_hud_ray_gun_mk2z",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

@@ -46,7 +46,7 @@
     "var_eda4062b": 3,
     "weapon": "weapon#sig_bow_quickshot_wz",
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "name": "sparrow_wz_item",
     "displayname": "#weapon/sig_bow_quickshot",
     "icon": "#hash_73d79b30b71163d0",
@@ -55,6 +55,6 @@
     "handler": "#hash_50375e5de228e9fc",
     "rewardname": "#hash_3b87d7eb92a261aa",
     "pickupicon": "#ui_icon_weapon_hud_sparrow",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

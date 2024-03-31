@@ -87,7 +87,7 @@ function private function_93b89303(localclientnum) {
             foreach (item in clientdata.inventory.items) {
                 if (item.id != 32767) {
                     point = function_b1702735(item.id);
-                    if (isdefined(point) && isdefined(point.var_a6762160) && point.var_a6762160.itemtype == #"cash") {
+                    if (isdefined(point) && isdefined(point.itementry) && point.itementry.itemtype == #"cash") {
                         carryingcash = 1;
                         break;
                     }

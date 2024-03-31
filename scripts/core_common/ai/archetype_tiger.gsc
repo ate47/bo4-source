@@ -440,9 +440,9 @@ function tigertargetservice(behaviortreeentity) {
         if (isdefined(locomotion_target)) {
             repathdist = 16;
             if (!isdefined(behaviortreeentity.lasttargetposition) || distancesquared(behaviortreeentity.lasttargetposition, locomotion_target) > repathdist * repathdist || !behaviortreeentity haspath()) {
-                var_994bab50 = getclosestpointonnavmesh(locomotion_target, 128, 54);
-                if (isdefined(var_994bab50)) {
-                    behaviortreeentity function_a57c34b7(var_994bab50);
+                navmesh_point = getclosestpointonnavmesh(locomotion_target, 128, 54);
+                if (isdefined(navmesh_point)) {
+                    behaviortreeentity function_a57c34b7(navmesh_point);
                     behaviortreeentity.lasttargetposition = locomotion_target;
                 }
             }
@@ -823,12 +823,12 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (self.meleeinfo.var_425c4c8b) {
             var_776ddabf = distancesquared(self.meleeinfo.var_cb28f380, self.meleeinfo.adjustedendpos);
-            var_beabc994 = anglestoforward(self.angles);
+            myforward = anglestoforward(self.angles);
             var_1c3641f2 = (entity.enemy.origin[0], entity.enemy.origin[1], entity.origin[2]);
             dirtoenemy = vectornormalize(var_1c3641f2 - entity.origin);
             zdiff = self.meleeinfo.var_cb28f380[2] - entity.enemy.origin[2];
             var_6738a702 = abs(zdiff) <= 30;
-            withinfov = vectordot(var_beabc994, dirtoenemy) > cos(30);
+            withinfov = vectordot(myforward, dirtoenemy) > cos(30);
             var_7948b2f3 = var_6738a702 && withinfov;
             isvisible = bullettracepassed(entity.origin, entity.enemy.origin, 0, self);
             var_425c4c8b = isvisible && var_7948b2f3;

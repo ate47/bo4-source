@@ -47,8 +47,8 @@ function function_2613aeec(enabled) {
 // Checksum 0xa78d0808, Offset: 0x288
 // Size: 0xe4
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name === #"cu02_item") {
+    itementry = item.itementry;
+    if (itementry.name === #"cu02_item") {
         self.var_cadd241b = 1;
         var_c503939b = globallogic::function_e9e52d05();
         if (var_c503939b <= function_c816ea5b()) {
@@ -70,7 +70,7 @@ function function_a2877194(params) {
     if (!self character_unlock::function_f0406288(#"torque_unlock")) {
         return;
     }
-    item_name = params.item.var_a6762160.name;
+    item_name = params.item.itementry.name;
     if (item_name === #"concertina_wire_wz_item") {
         if (!isdefined(self.var_41ae08e8)) {
             self.var_41ae08e8 = 0;

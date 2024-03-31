@@ -2,19 +2,19 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "cluster_semtex_wz_item",
+            "itementry": "cluster_semtex_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "sensor_dart_wz_item",
+            "itementry": "sensor_dart_wz_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "concussion_wz_item",
+            "itementry": "concussion_wz_item",
             "maxweight": 100,
             "available": -1
         }

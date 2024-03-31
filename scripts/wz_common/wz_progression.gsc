@@ -969,10 +969,10 @@ function function_106be0dc(params) {
             self.items_picked_up[item.id] = 1;
             self stats::function_d40764f3(#"items_picked_up", 1);
             self wz_contracts::function_cdc4c709();
-            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"armor") {
+            if (isdefined(item.itementry) && item.itementry.itemtype === #"armor") {
                 self stats::function_d40764f3(#"items_armor_used", 1);
             }
-            if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"backpack") {
+            if (isdefined(item.itementry) && item.itementry.itemtype === #"backpack") {
                 self stats::function_d40764f3(#"items_backpacks_used", 1);
             }
         }
@@ -988,7 +988,7 @@ function function_393ec79e(params) {
         return;
     }
     item = params.item;
-    if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"health") {
+    if (isdefined(item.itementry) && item.itementry.itemtype === #"health") {
         self stats::function_d40764f3(#"items_health_used", 1);
         if (isdefined(self.outsidedeathcircle) && self.outsidedeathcircle) {
             self stats::function_d40764f3(#"hash_154d42f200303577", 1);
@@ -1199,7 +1199,7 @@ function on_item_pickup(params) {
     item = params.item;
     count = params.count;
     if (isplayer(self)) {
-        if (isdefined(item.var_a6762160) && item.var_a6762160.itemtype === #"resource" && item_world_util::function_41f06d9d(item.var_a6762160) && count > 0) {
+        if (isdefined(item.itementry) && item.itementry.itemtype === #"resource" && item_world_util::function_41f06d9d(item.itementry) && count > 0) {
             self stats::function_dad108fa(#"items_paint_cans_collected", count);
             self stats::function_b7f80d87("paint_cans_collected", count);
         }

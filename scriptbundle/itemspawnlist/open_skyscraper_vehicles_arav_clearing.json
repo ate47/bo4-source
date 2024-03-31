@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 20,
-            "var_a6762160": "vehicle_list_arav_wz",
+            "itementry": "vehicle_list_arav_wz",
             "maxweight": 20,
             "available": 1
         },
         {
             "minweight": 60,
-            "var_a6762160": "vehicle_list_cargo_truck_wz",
+            "itementry": "vehicle_list_cargo_truck_wz",
             "maxweight": 60,
             "available": 1
         },

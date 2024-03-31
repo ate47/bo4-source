@@ -41,7 +41,7 @@ function function_2613aeec(enabled) {
 // Checksum 0xed3aca5e, Offset: 0x1d8
 // Size: 0xd4
 function function_1c4b5097(item) {
-    if (isdefined(item.var_a6762160) && item.var_a6762160.name === #"cu31_item") {
+    if (isdefined(item.itementry) && item.itementry.name === #"cu31_item") {
         var_c503939b = globallogic::function_e9e52d05();
         if (var_c503939b <= function_c816ea5b()) {
             if (self character_unlock::function_f0406288(#"ix_stanton_unlock")) {

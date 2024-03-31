@@ -25,10 +25,10 @@ function callback_playermelee(eattacker, idamage, weapon, vorigin, vdir, boneind
 // Params 5, eflags: 0x0
 // Checksum 0x52ca70b2, Offset: 0x188
 // Size: 0x15c
-function function_74b6d714(attacker, effectname, var_894859a2, var_ab5b905e, weapon) {
+function function_74b6d714(attacker, effectname, var_894859a2, durationoverride, weapon) {
     var_20df3f41 = function_1115bceb(effectname);
-    if (isdefined(var_ab5b905e) && var_ab5b905e > 0) {
-        duration = var_ab5b905e;
+    if (isdefined(durationoverride) && durationoverride > 0) {
+        duration = durationoverride;
     } else {
         duration = undefined;
     }

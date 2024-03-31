@@ -12,6 +12,6 @@
     "rarity": "None",
     "handler": "#hash_2cbf15cbb314c93e",
     "pickupicon": "#ui_icon_inventory_acid_bomb",
-    "var_50773731": 1.75,
+    "positionoffsetz": 1.75,
     "itemtype": "equipment"
 }

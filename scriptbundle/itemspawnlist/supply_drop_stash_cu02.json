@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "concertina_wire_wz_item",
+            "itementry": "concertina_wire_wz_item",
             "maxweight": 1,
             "available": 2
         },
         {
             "minweight": 1,
-            "var_a6762160": "barricade_wz_item",
+            "itementry": "barricade_wz_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "cu02_item",
+            "itementry": "cu02_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "supply_stash_gold_guns",
+            "itementry": "supply_stash_gold_guns",
             "maxweight": 1,
             "available": 1
         }

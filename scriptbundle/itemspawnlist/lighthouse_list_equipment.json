@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 7,
-            "var_a6762160": "equipment_list_good",
+            "itementry": "equipment_list_good",
             "maxweight": 7,
             "available": -1
         },
         {
             "minweight": 30,
-            "var_a6762160": "equipment_list_med",
+            "itementry": "equipment_list_med",
             "maxweight": 30,
             "available": -1
         },
         {
             "minweight": 30,
-            "var_a6762160": "equipment_list_low",
+            "itementry": "equipment_list_low",
             "maxweight": 30,
             "available": -1
         },
         {
             "minweight": 40,
-            "var_a6762160": "equipment_list_zombie",
+            "itementry": "equipment_list_zombie",
             "maxweight": 40,
             "available": -1
         }

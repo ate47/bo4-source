@@ -566,9 +566,9 @@ function private function_9229c3b3(scalesec, newradius, neworigin) {
     endtime = time + int(scalesec * 1000);
     level clientfield::set_world_uimodel("hudItems.warzone.collapseProgress", 0);
     self moveto(neworigin, scalesec);
-    var_76c954d6 = newradius - self.radius;
+    scaledelta = newradius - self.radius;
     frames = scalesec / float(function_60d95f53()) / 1000;
-    framedelta = var_76c954d6 / frames;
+    framedelta = scaledelta / frames;
     progress = 0;
     var_6e09d4b7 = 1 / frames;
     while (time < endtime) {

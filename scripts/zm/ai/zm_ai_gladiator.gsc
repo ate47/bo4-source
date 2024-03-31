@@ -947,12 +947,12 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (self.meleeinfo.var_425c4c8b) {
             var_776ddabf = distancesquared(self.meleeinfo.var_cb28f380, self.meleeinfo.adjustedendpos);
-            var_beabc994 = anglestoforward(self.angles);
+            myforward = anglestoforward(self.angles);
             var_1c3641f2 = (entity.favoriteenemy.origin[0], entity.favoriteenemy.origin[1], entity.origin[2]);
             dirtoenemy = vectornormalize(var_1c3641f2 - entity.origin);
             zdiff = self.meleeinfo.var_cb28f380[2] - entity.favoriteenemy.origin[2];
             var_6738a702 = abs(zdiff) <= 45;
-            withinfov = vectordot(var_beabc994, dirtoenemy) > cos(30);
+            withinfov = vectordot(myforward, dirtoenemy) > cos(30);
             var_7948b2f3 = var_6738a702 && withinfov;
             isvisible = bullettracepassed(entity.origin, entity.favoriteenemy.origin, 0, self);
             var_425c4c8b = isvisible && var_7948b2f3;

@@ -1286,9 +1286,9 @@ function turretfireupdate() {
             }
         }
         if (isalive(self) && !(isdefined(self.isstunned) && self.isstunned) && isdefined(self.enemy)) {
-            var_f4cf81b8 = self gettagorigin("tag_flash");
+            muzzlepos = self gettagorigin("tag_flash");
             enemyeyepos = self.enemy geteye();
-            var_a44b348b = sighttracepassed(var_f4cf81b8, enemyeyepos, 0, self, self.enemy);
+            var_a44b348b = sighttracepassed(muzzlepos, enemyeyepos, 0, self, self.enemy);
             if (var_a44b348b && !function_98a125e6()) {
                 self turretsettarget(0, self.enemy);
                 self vehlookat(self.enemy);
@@ -1492,9 +1492,9 @@ function state_combat_update(params) {
             [[ level.var_6cfbe5a ]]->waitinqueue(self);
         }
         if (isdefined(self.enemy)) {
-            var_f4cf81b8 = self gettagorigin("tag_flash");
+            muzzlepos = self gettagorigin("tag_flash");
             enemyeyepos = self.enemy geteye();
-            cansee = sighttracepassed(var_f4cf81b8, enemyeyepos, 0, self, self.enemy);
+            cansee = sighttracepassed(muzzlepos, enemyeyepos, 0, self, self.enemy);
         }
         if (isdefined(self.enemy) && cansee) {
             var_8f3583cf = ai::t_cylinder(self.origin, 100, 200);

@@ -2,61 +2,61 @@
     "itemlist": [
         {
             "minweight": 375,
-            "var_a6762160": "boxing_gym_list_guns_dlc1",
+            "itementry": "boxing_gym_list_guns_dlc1",
             "maxweight": 375,
             "available": -1
         },
         {
             "minweight": 400,
-            "var_a6762160": "boxing_gym_list_health",
+            "itementry": "boxing_gym_list_health",
             "maxweight": 400,
             "available": -1
         },
         {
             "minweight": 150,
-            "var_a6762160": "boxing_gym_list_equipment",
+            "itementry": "boxing_gym_list_equipment",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 115,
-            "var_a6762160": "boxing_gym_list_gear",
+            "itementry": "boxing_gym_list_gear",
             "maxweight": 115,
             "available": -1
         },
         {
             "minweight": 180,
-            "var_a6762160": "boxing_gym_list_consumable",
+            "itementry": "boxing_gym_list_consumable",
             "maxweight": 180,
             "available": -1
         },
         {
             "minweight": 270,
-            "var_a6762160": "boxing_gym_list_attachment",
+            "itementry": "boxing_gym_list_attachment",
             "maxweight": 270,
             "available": -1
         },
         {
             "minweight": 300,
-            "var_a6762160": "boxing_gym_list_ammo",
+            "itementry": "boxing_gym_list_ammo",
             "maxweight": 300,
             "available": -1
         },
         {
             "minweight": 60,
-            "var_a6762160": "storage_list",
+            "itementry": "storage_list",
             "maxweight": 60,
             "available": -1
         },
         {
             "minweight": 45,
-            "var_a6762160": "world_base_event_parent",
+            "itementry": "world_base_event_parent",
             "maxweight": 65,
             "available": -1
         },
         {
             "minweight": 70,
-            "var_a6762160": "boxing_gym_list_armor_shards",
+            "itementry": "boxing_gym_list_armor_shards",
             "maxweight": 70,
             "available": -1
         }

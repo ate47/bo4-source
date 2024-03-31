@@ -877,7 +877,7 @@ function function_ef09febd(var_1dbb2b2b, var_6d7ae157, string, lastownerteam, is
                 break;
             }
         }
-        function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing, time, var_a84f97bf, var_af8f6146);
+        credit_player(player, string, lastownerteam, isbflag, neutralizing, time, var_a84f97bf, var_af8f6146);
     }
     self gameobjects::function_98aae7cf();
 }
@@ -896,7 +896,7 @@ function give_capture_credit(touchlist, string, lastownerteam, isbflag, neutrali
         if (!isdefined(player_from_touchlist)) {
             continue;
         }
-        function_5a9598f0(player_from_touchlist, string, lastownerteam, isbflag, neutralizing, time, 0, 1);
+        credit_player(player_from_touchlist, string, lastownerteam, isbflag, neutralizing, time, 0, 1);
     }
 }
 
@@ -904,7 +904,7 @@ function give_capture_credit(touchlist, string, lastownerteam, isbflag, neutrali
 // Params 8, eflags: 0x0
 // Checksum 0x31a21eec, Offset: 0x4628
 // Size: 0x4b4
-function function_5a9598f0(player, string, lastownerteam, isbflag, neutralizing, time, var_a84f97bf, var_af8f6146) {
+function credit_player(player, string, lastownerteam, isbflag, neutralizing, time, var_a84f97bf, var_af8f6146) {
     player updatecapsperminute(lastownerteam);
     if (!isscoreboosting(player, self)) {
         player challenges::capturedobjective(time, self.levelflag);

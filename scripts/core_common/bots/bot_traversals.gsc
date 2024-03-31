@@ -9,7 +9,7 @@
 // Params 6, eflags: 0x1 linked
 // Checksum 0x6a27ef3c, Offset: 0xf0
 // Size: 0x254
-function callback_botentereduseredge(startnode, endnode, mantlenode, startpos, endpos, var_2a1f4ab7) {
+function callback_botentereduseredge(startnode, endnode, mantlenode, startpos, endpos, mantlepos) {
     if (self isplayinganimscripted()) {
         /#
             self botprinterror("<unknown string>");
@@ -37,7 +37,7 @@ function callback_botentereduseredge(startnode, endnode, mantlenode, startpos, e
     params.mantlenode = mantlenode;
     params.startpos = startpos;
     params.endpos = endpos;
-    params.var_2a1f4ab7 = var_2a1f4ab7;
+    params.mantlepos = mantlepos;
     if (isdefined(startnode) && isdefined(startnode.script_parameters) && startnode.script_parameters == "botIgnoreHeightCheck") {
         params.var_bccf04e7 = 1;
     }
@@ -183,7 +183,7 @@ function traversal_timeout(params) {
 function analyze(params) {
     params.starttrace = checknavmeshdirection(params.startpos, params.endpos - params.startpos, 512, 0);
     params.endtrace = checknavmeshdirection(params.endpos, params.startpos - params.endpos, 512, 0);
-    params.targetpos = isdefined(params.var_2a1f4ab7) ? params.var_2a1f4ab7 : params.endtrace;
+    params.targetpos = isdefined(params.mantlepos) ? params.mantlepos : params.endtrace;
     params.targetheight = params.targetpos[2] - params.starttrace[2];
     normal = params.startpos - params.endpos;
     params.normal = vectornormalize((normal[0], normal[1], 0));
@@ -342,12 +342,12 @@ function teleport(endpos, reason) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x94b7af26, Offset: 0x1540
 // Size: 0xe2
-function mantle(var_2a1f4ab7) {
+function mantle(mantlepos) {
     self botsetmovemagnitude(1);
     /#
         if (self should_record("<unknown string>")) {
-            record3dtext("<unknown string>", var_2a1f4ab7, (1, 1, 1), "<unknown string>", undefined, 0.5);
-            recordsphere(var_2a1f4ab7, 3, (1, 1, 0), "<unknown string>", self);
+            record3dtext("<unknown string>", mantlepos, (1, 1, 1), "<unknown string>", undefined, 0.5);
+            recordsphere(mantlepos, 3, (1, 1, 0), "<unknown string>", self);
         }
     #/
     while (!self isonground() || self ismantling()) {

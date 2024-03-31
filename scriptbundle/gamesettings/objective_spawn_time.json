@@ -13,7 +13,7 @@
     "name": "objective_spawn_time",
     "displayname": "#hash_192e572fd2ceea9e",
     "var_ab8053b2": "#hash_666d89ef0248d1ef",
-    "var_9600a8ab": "#hash_94eb0e3329edf5f",
+    "label1": "#hash_94eb0e3329edf5f",
     "var_9de86f42": 7,
     "setting": "objectiveSpawnTime"
 }

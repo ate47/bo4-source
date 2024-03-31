@@ -481,7 +481,7 @@ function zone_init(zone_name, zone_tag) {
                 case #"spawn_location":
                 case #"riser_location":
                 case #"faller_location":
-                    spot.var_d51f4e2d = gettime();
+                    spot.spawned_timestamp = gettime();
                     if (!isdefined(zone.a_loc_types[#"zombie_location"])) {
                         zone.a_loc_types[#"zombie_location"] = [];
                     } else if (!isarray(zone.a_loc_types[#"zombie_location"])) {

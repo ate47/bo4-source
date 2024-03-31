@@ -1386,7 +1386,7 @@ function powerup_wobble() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xba7c1f9b, Offset: 0x57f8
 // Size: 0x4c
-function function_e3f30b() {
+function powerup_hide() {
     if (isdefined(self)) {
         self ghost();
         if (isdefined(self.worldgundw)) {
@@ -1439,7 +1439,7 @@ function powerup_timeout() {
         wait_time = wait_time + 30;
     }
     wait(wait_time);
-    self hide_and_show(&function_e3f30b, &powerup_show);
+    self hide_and_show(&powerup_hide, &powerup_show);
     self notify(#"powerup_timedout");
     bb::logpowerupevent(self, undefined, "_timedout");
     self powerup_delete();

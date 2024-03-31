@@ -77,8 +77,8 @@ function function_80635b6f() {
 // Checksum 0xa0ac46a7, Offset: 0x4e0
 // Size: 0x24c
 function function_1c4b5097(item) {
-    var_a6762160 = item.var_a6762160;
-    if (var_a6762160.name == #"cu15_item" || var_a6762160.name == #"cu16_item" || var_a6762160.name == #"cu18_item") {
+    itementry = item.itementry;
+    if (itementry.name == #"cu15_item" || itementry.name == #"cu16_item" || itementry.name == #"cu18_item") {
         characterassetname = getcharacterassetname(self getcharacterbodytype(), currentsessionmode());
         if (characterassetname !== #"hash_f66f1d73b4acc45" && characterassetname !== #"hash_29e6a0007c925dd4" && characterassetname !== #"hash_22648ce3a4423d8f") {
             return;
@@ -91,7 +91,7 @@ function function_1c4b5097(item) {
         level.var_ca57a3b8[level.var_ca57a3b8.size] = self;
         return;
     }
-    if (var_a6762160.name == #"cu17_item") {
+    if (itementry.name == #"cu17_item") {
         var_c503939b = globallogic::function_e9e52d05();
         if (var_c503939b <= function_c816ea5b()) {
             if (self character_unlock::function_f0406288(#"richtofen_unlock")) {
@@ -167,10 +167,10 @@ function function_2043936c(trigger_struct) {
     item = player function_80635b6f();
     if (isdefined(item)) {
         point = function_4ba8fde(#"cu17_item");
-        if (isdefined(point) && isdefined(point.var_a6762160)) {
+        if (isdefined(point) && isdefined(point.itementry)) {
             forward = anglestoforward(player.angles);
             droppos = player get_item_spawn_point();
-            dropitem = player item_drop::drop_item(point.var_a6762160.weapon, 1, point.var_a6762160.amount, point.id, droppos, player.angles);
+            dropitem = player item_drop::drop_item(point.itementry.weapon, 1, point.itementry.amount, point.id, droppos, player.angles);
             player item_inventory::remove_inventory_item(item.networkid);
             var_129fa609 = player function_80635b6f();
             player.var_b60fee90 = 1;

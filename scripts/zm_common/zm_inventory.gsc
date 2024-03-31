@@ -8,18 +8,18 @@
 // Params 4, eflags: 0x5 linked
 // Checksum 0x69529cb5, Offset: 0x1e8
 // Size: 0xea
-function private function_cb96f01d(mappingname, internalname, numbits, var_7f12f171) {
+function private function_cb96f01d(mappingname, internalname, numbits, ispersonal) {
     if (!isdefined(level.var_a16c38d9[mappingname])) {
         level.var_a16c38d9[mappingname] = spawnstruct();
     }
-    if (isdefined(var_7f12f171) && var_7f12f171) {
+    if (isdefined(ispersonal) && ispersonal) {
         internalname = "ZMInventoryPersonal." + internalname;
     } else {
         internalname = "ZMInventory." + internalname;
     }
     level.var_a16c38d9[mappingname].var_cd35dfb2 = internalname;
     level.var_a16c38d9[mappingname].numbits = numbits;
-    level.var_a16c38d9[mappingname].var_7f12f171 = var_7f12f171;
+    level.var_a16c38d9[mappingname].ispersonal = ispersonal;
 }
 
 // Namespace zm_inventory/zm_inventory

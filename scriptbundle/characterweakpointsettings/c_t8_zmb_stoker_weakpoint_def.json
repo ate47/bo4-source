@@ -6,7 +6,7 @@
             "type": "#armor",
             "var_51e8b151": "j_clavicle_ri",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.1
         },
         {
@@ -15,7 +15,7 @@
             "type": "#armor",
             "var_51e8b151": "j_clavicle_le",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.1
         },
         {
@@ -24,7 +24,7 @@
             "type": "#armor",
             "var_51e8b151": "j_head",
             "activebydefault": 1,
-            "var_b7fbe51b": 10,
+            "hitradius": 10,
             "health": 0.1
         },
         {
@@ -32,28 +32,28 @@
             "var_641ce20e": 1,
             "type": "#armor",
             "activebydefault": 1,
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 0.1
         },
         {
             "hitloc": "left_arm_upper",
             "type": "#weakpoint",
             "var_51e8b151": "j_clavicle_le",
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 1
         },
         {
             "hitloc": "right_arm_upper",
             "type": "#weakpoint",
             "var_51e8b151": "j_clavicle_ri",
-            "var_b7fbe51b": 12,
+            "hitradius": 12,
             "health": 1
         },
         {
             "hitloc": "head",
             "type": "#weakpoint",
             "var_51e8b151": "j_head",
-            "var_b7fbe51b": 10,
+            "hitradius": 10,
             "health": 1
         }
     ],

@@ -2,43 +2,43 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_awareness",
+            "itementry": "perk_item_awareness",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_looter",
+            "itementry": "perk_item_looter",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_squadlink",
+            "itementry": "perk_item_squadlink",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_reinforced",
+            "itementry": "perk_item_reinforced",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_medic",
+            "itementry": "perk_item_medic",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_drifter",
+            "itementry": "perk_item_drifter",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 100,
-            "var_a6762160": "perk_item_bloody_tracker",
+            "itementry": "perk_item_bloody_tracker",
             "maxweight": 200,
             "available": -1
         }

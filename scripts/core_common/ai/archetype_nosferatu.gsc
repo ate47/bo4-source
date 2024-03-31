@@ -820,12 +820,12 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (entity.meleeinfo.var_425c4c8b) {
             var_776ddabf = distancesquared(entity.meleeinfo.var_cb28f380, entity.meleeinfo.adjustedendpos);
-            var_beabc994 = anglestoforward(entity.angles);
+            myforward = anglestoforward(entity.angles);
             var_1c3641f2 = (entity.enemy.origin[0], entity.enemy.origin[1], entity.origin[2]);
             dirtoenemy = vectornormalize(var_1c3641f2 - entity.origin);
             zdiff = entity.meleeinfo.var_cb28f380[2] - entity.enemy.origin[2];
             var_6738a702 = abs(zdiff) <= 64;
-            withinfov = vectordot(var_beabc994, dirtoenemy) > cos(50);
+            withinfov = vectordot(myforward, dirtoenemy) > cos(50);
             var_7948b2f3 = var_6738a702 && withinfov;
             var_425c4c8b = (isvisible || var_535d098c) && var_7948b2f3;
             /#

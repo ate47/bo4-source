@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 500,
-            "var_a6762160": "dockyard_list_item_default_dlc1",
+            "itementry": "dockyard_list_item_default_dlc1",
             "maxweight": 500,
             "available": -1
         }

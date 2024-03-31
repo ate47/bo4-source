@@ -2,7 +2,7 @@
     "itemlist": [
         {
             "minweight": 100,
-            "var_a6762160": "lmg_stealth_t8_operator_item",
+            "itementry": "lmg_stealth_t8_operator_item",
             "var_3f8c08e3": "ammo_type_556_item",
             "maxweight": 100,
             "available": -1

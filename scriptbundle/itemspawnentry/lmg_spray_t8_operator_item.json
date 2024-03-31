@@ -21,7 +21,7 @@
     "weapon": "weapon#lmg_spray_t8_operator_wz",
     "attachslotbody": 1,
     "type": "itemspawnentry",
-    "var_e6ac0592": 90,
+    "angleoffsetz": 90,
     "var_dc6c5d3b": 1,
     "var_65b3a12": 6,
     "name": "lmg_spray_t8_operator_item",
@@ -33,6 +33,6 @@
     "attachslotbarrel": 1,
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#hash_6e22064bcfd09fad",
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "weapon"
 }

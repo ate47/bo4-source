@@ -16,7 +16,7 @@ struct root {
     char attackername[48];
     char attackertype[64];
     float hash_398bbe7d23bcf3e0;
-    int32 hash_4d0e25950f418f70;
+    int32 victimid;
     char victimname[48];
     char victimtype[64];
     char hash_2ce4c96c3885dfc0[64];
@@ -38,7 +38,7 @@ struct root {
     float attackery;
     float attackerz;
     int32 hash_399761c967ceaa26;
-    bit hash_187a54c684169717;
+    bit victimlaststand;
     bit hash_475fb439e2915b56;
     padbit __pad[6];
 };

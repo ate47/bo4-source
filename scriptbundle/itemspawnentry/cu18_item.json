@@ -41,6 +41,6 @@
     "handler": "#hash_5c844f5c1207159c",
     "rewardname": "#zombie/takeo",
     "pickupicon": "#hash_459b44cdbca0e2e2",
-    "var_50773731": 0.75,
+    "positionoffsetz": 0.75,
     "itemtype": "quest"
 }

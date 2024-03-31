@@ -27,7 +27,7 @@ function __init__() {
         if (!isdefined(registeredfields[mapping.var_cd35dfb2])) {
             registeredfields[mapping.var_cd35dfb2] = 1;
             var_9cf9ba9 = "worlduimodel";
-            if (isdefined(mapping.var_7f12f171)) {
+            if (isdefined(mapping.ispersonal)) {
                 var_9cf9ba9 = "clientuimodel";
             }
             clientfield::register(var_9cf9ba9, mapping.var_cd35dfb2, 1, mapping.numbits, "int");
@@ -65,7 +65,7 @@ function private function_13ad9a60() {
 // Size: 0xe4
 function function_7df6bb60(fieldname, value, player) {
     var_d5423fb8 = level.var_a16c38d9[fieldname];
-    if (!(isdefined(var_d5423fb8) && isdefined(var_d5423fb8.var_7f12f171) && var_d5423fb8.var_7f12f171)) {
+    if (!(isdefined(var_d5423fb8) && isdefined(var_d5423fb8.ispersonal) && var_d5423fb8.ispersonal)) {
         self clientfield::set_world_uimodel(var_d5423fb8.var_cd35dfb2, value);
         return;
     }

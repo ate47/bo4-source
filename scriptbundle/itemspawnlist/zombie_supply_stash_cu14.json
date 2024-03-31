@@ -2,25 +2,25 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "cu14_item",
+            "itementry": "cu14_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "wraithfire_wz_item",
+            "itementry": "wraithfire_wz_item",
             "maxweight": 1,
             "available": 2
         },
         {
             "minweight": 1,
-            "var_a6762160": "acid_bomb_wz_item",
+            "itementry": "acid_bomb_wz_item",
             "maxweight": 1,
             "available": 2
         },
         {
             "minweight": 1,
-            "var_a6762160": "supply_stash_gold_guns",
+            "itementry": "supply_stash_gold_guns",
             "maxweight": 1,
             "available": 1
         }

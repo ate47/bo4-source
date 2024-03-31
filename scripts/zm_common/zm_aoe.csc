@@ -115,7 +115,7 @@ function function_15dea507(aoeid, type, var_5ff737c1) {
     var_46f1b5eb.endrumble = var_6ec6e01.endrumble;
     var_46f1b5eb.var_a8609f98 = var_6ec6e01.var_a8609f98;
     var_46f1b5eb.earthquakescale = var_6ec6e01.earthquakescale;
-    var_46f1b5eb.var_e4c85a5f = var_6ec6e01.var_e4c85a5f;
+    var_46f1b5eb.earthquakeduration = var_6ec6e01.earthquakeduration;
     var_46f1b5eb.effectradius = var_6ec6e01.effectradius;
     var_46f1b5eb.aoeid = aoeid;
 }
@@ -145,7 +145,7 @@ function private function_dcc24343(localclientnum, oldval, newval, bnewent, bini
         }
         if (isdefined(var_46f1b5eb.effectradius) && distsq <= var_46f1b5eb.effectradius * var_46f1b5eb.effectradius) {
             if (isdefined(var_46f1b5eb.earthquakescale)) {
-                earthquake(localclientnum, var_46f1b5eb.earthquakescale, var_46f1b5eb.var_e4c85a5f, self.origin, var_46f1b5eb.effectradius);
+                earthquake(localclientnum, var_46f1b5eb.earthquakescale, var_46f1b5eb.earthquakeduration, self.origin, var_46f1b5eb.effectradius);
             }
             if (isdefined(var_46f1b5eb.startrumble)) {
                 function_36e4ebd4(localclientnum, var_46f1b5eb.startrumble);

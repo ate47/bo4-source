@@ -132,8 +132,8 @@ function function_a8fc3bf1(s_info) {
         e_player allowprone(0);
         stance = e_player getstance();
         e_player.var_e0348559 = 1;
-        if (isdefined(e_player.playerrole) && isdefined(e_player.playerrole.var_a7e7cb46)) {
-            gadget_weapon = getweapon(e_player.playerrole.var_a7e7cb46);
+        if (isdefined(e_player.playerrole) && isdefined(e_player.playerrole.primaryequipment)) {
+            gadget_weapon = getweapon(e_player.playerrole.primaryequipment);
             if (isdefined(gadget_weapon)) {
                 slot = e_player gadgetgetslot(gadget_weapon);
                 e_player function_820a63e9(slot, 1);

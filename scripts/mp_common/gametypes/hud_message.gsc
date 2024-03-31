@@ -100,7 +100,7 @@ function private function_460b0309(game_end) {
 // Checksum 0x6206be2d, Offset: 0xa10
 // Size: 0x2d2
 function function_a2f30ab4(var_68c25772, var_c1e98979, game_end, outcome) {
-    result = function_2e532eed(outcome);
+    result = structcopy(outcome);
     result.var_277c7d47 = undefined;
     result.var_68c25772 = var_68c25772;
     result.var_14f94126 = "";

@@ -974,7 +974,7 @@ function spawn_zombie(s_loc) {
     zombie thread zombie_death_watcher();
     e_player = getplayers()[0];
     zombie.favoriteenemy = e_player;
-    zombie.var_5a8f690 = 1;
+    zombie.canseeplayer = 1;
     zombie.var_ea34ab74 = gettime() + 3600000;
     return zombie;
 }
@@ -987,7 +987,7 @@ function spawn_blight_father(s_loc) {
     zombie = ct_ai::spawn_blight_father(s_loc.origin, 0, 0, 1);
     e_player = getplayers()[0];
     zombie.favoriteenemy = e_player;
-    zombie.var_5a8f690 = 1;
+    zombie.canseeplayer = 1;
     zombie.var_ea34ab74 = gettime() + 3600000;
     return zombie;
 }

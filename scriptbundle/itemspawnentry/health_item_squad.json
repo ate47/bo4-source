@@ -5,7 +5,7 @@
     "model": "#hash_4acf86ecef26787e",
     "weapon": "weapon#hash_139e2373d90a0615",
     "type": "itemspawnentry",
-    "var_7adcadc1": 90,
+    "angleoffsetx": 90,
     "name": "health_item_squad",
     "displayname": "#hash_234ad6d27c671a42",
     "stackcount": 2,
@@ -15,7 +15,7 @@
     "handler": "#hash_51b30f6e7331e136",
     "pickupicon": "#hash_7675ef2f1de24af8",
     "stackable": 1,
-    "var_50773731": 1,
+    "positionoffsetz": 1,
     "itemtype": "health",
     "pickupsound": "fly_pickup_health_tak"
 }

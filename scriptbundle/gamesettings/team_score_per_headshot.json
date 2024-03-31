@@ -13,7 +13,7 @@
     "label": "#hash_399145de9cf614d9",
     "name": "team_score_per_headshot",
     "displayname": "#hash_738ed30c81e7ab62",
-    "var_bd2ff709": "#menu/1_point",
+    "label2": "#menu/1_point",
     "var_9de86f42": 8,
     "setting": "teamScorePerHeadshot"
 }

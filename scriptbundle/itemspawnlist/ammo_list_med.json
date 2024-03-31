@@ -2,13 +2,13 @@
     "itemlist": [
         {
             "minweight": 200,
-            "var_a6762160": "ammo_type_556_item",
+            "itementry": "ammo_type_556_item",
             "maxweight": 200,
             "available": -1
         },
         {
             "minweight": 200,
-            "var_a6762160": "ammo_type_762_item",
+            "itementry": "ammo_type_762_item",
             "maxweight": 200,
             "available": -1
         }

@@ -8,9 +8,9 @@
     "label": "#hash_1ba60b6389d20648",
     "name": "zm_specweapcharge",
     "displayname": "#hash_556736ffab760c01",
-    "var_9600a8ab": "#hash_51aa03eea5a0dd76",
+    "label1": "#hash_51aa03eea5a0dd76",
     "var_71b6e020": "#hash_1413f5dcb3e0f537",
-    "var_bd2ff709": "#hash_7e5de0c85e3519f0",
+    "label2": "#hash_7e5de0c85e3519f0",
     "var_9de86f42": 3,
     "setting": "zmSpecWeaponChargeRate"
 }

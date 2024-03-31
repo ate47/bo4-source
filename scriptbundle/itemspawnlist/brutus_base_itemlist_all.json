@@ -2,79 +2,79 @@
     "itemlist": [
         {
             "minweight": 1,
-            "var_a6762160": "brutus_gold_guns",
+            "itementry": "brutus_gold_guns",
             "maxweight": 1,
             "available": 3
         },
         {
             "minweight": 1,
-            "var_a6762160": "melee_bowie_t8_item",
+            "itementry": "melee_bowie_t8_item",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "armor_item_large",
+            "itementry": "armor_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_medium",
+            "itementry": "health_item_medium",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "health_item_large",
+            "itementry": "health_item_large",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "zombie_supply_stash_wonder_weapons",
+            "itementry": "zombie_supply_stash_wonder_weapons",
             "maxweight": 1,
             "available": 1
         },
         {
             "minweight": 1,
-            "var_a6762160": "perk_item_bloody_tracker",
+            "itementry": "perk_item_bloody_tracker",
             "maxweight": 1,
             "available": 1
         }

@@ -13,9 +13,9 @@
     "var_970eaacf": "#menu/noloc",
     "var_684ccd4c": "#menu/noloc",
     "var_bcbdf62d": "#menu/noloc",
-    "var_9600a8ab": "#menu/none",
+    "label1": "#menu/none",
     "var_71b6e020": "#menu/noloc",
-    "var_bd2ff709": "#menu/noloc",
+    "label2": "#menu/noloc",
     "var_9de86f42": 6,
     "setting": "draftRequiredClients"
 }
