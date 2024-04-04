@@ -28,7 +28,7 @@ function function_a1a81955() {
     }
     outcome.platoon = #"none";
     outcome.players = [];
-    outcome.var_f79c6bfc = [];
+    outcome.players_score = [];
     return outcome;
 }
 

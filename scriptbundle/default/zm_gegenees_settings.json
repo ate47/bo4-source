@@ -131,7 +131,7 @@
         {
             "var_fe55d685": "#hash_2fc08852f394e718",
             "var_fc420d71": 0.2,
-            "weaponid": "#hash_57674b2a4d9eea50",
+            "weaponid": "#ww_hand_c_charged",
             "var_628192b0": 0.2,
             "var_97b22faa": 0.25,
             "damagescale": 0.15
@@ -227,7 +227,7 @@
         {
             "var_fe55d685": "#hash_1aee4b7139b0db1c",
             "var_fc420d71": 0.2,
-            "weaponid": "#hash_730ad7426b976c7c",
+            "weaponid": "#ww_hand_o_charged",
             "var_628192b0": 0.2,
             "var_97b22faa": 0.25,
             "damagescale": 0.15

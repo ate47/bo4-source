@@ -18,7 +18,7 @@
     "player_respawndelay": 30,
     "var_c5c20d41": 5,
     "name": "gamedifficulty_realistic",
-    "var_3fa5e959": 3500,
+    "longregentime": 3500,
     "autoaimregionwidth": 30,
     "var_9ffb574": 20,
     "healthoverlaycutoff": 0.5,

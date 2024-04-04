@@ -200,7 +200,7 @@ function function_808efdee(hacker, entity, weapon) {
     if (!isdefined(weapon) || !isdefined(weapon.displayname) || weapon.displayname == "") {
         return false;
     }
-    if (!weapon.var_18608bfe) {
+    if (!weapon.ishackable) {
         return false;
     }
     if ((entity.type == "missile" || entity.type == "vehicle" || entity.type == "scriptmover") && entity clientfield::get("cant_be_hacked")) {

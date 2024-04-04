@@ -20,7 +20,7 @@
     "misstimedistancefactor": 0.02,
     "var_c5c20d41": 5,
     "name": "gamedifficulty_veteran",
-    "var_3fa5e959": 3500,
+    "longregentime": 3500,
     "autoaimregionwidth": 60,
     "var_9ffb574": 50,
     "healthoverlaycutoff": 0.5,

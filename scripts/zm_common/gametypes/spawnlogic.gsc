@@ -804,8 +804,8 @@ function getallotherplayers() {
         if (player.sessionstate != "playing" || player == self) {
             continue;
         }
-        if (isdefined(level.var_764e1cfd)) {
-            if (![[ level.var_764e1cfd ]](player)) {
+        if (isdefined(level.customalivecheck)) {
+            if (![[ level.customalivecheck ]](player)) {
                 continue;
             }
         }
@@ -833,8 +833,8 @@ function getallalliedandenemyplayers(obj) {
             if (player.sessionstate != "playing" || player == self) {
                 continue;
             }
-            if (isdefined(level.var_764e1cfd)) {
-                if (![[ level.var_764e1cfd ]](player)) {
+            if (isdefined(level.customalivecheck)) {
+                if (![[ level.customalivecheck ]](player)) {
                     continue;
                 }
             }
@@ -886,8 +886,8 @@ function spawnpointupdate_zm(spawnpoint) {
         if (player.sessionstate != "playing") {
             continue;
         }
-        if (isdefined(level.var_764e1cfd)) {
-            if (![[ level.var_764e1cfd ]](player)) {
+        if (isdefined(level.customalivecheck)) {
+            if (![[ level.customalivecheck ]](player)) {
                 continue;
             }
         }

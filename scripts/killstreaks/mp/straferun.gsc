@@ -47,11 +47,11 @@ function __init__() {
     level.straferunshellshockradius = 512;
     level.straferunkillsbeforeexit = 10;
     level.straferunnumkillcams = 5;
-    level.var_95b9b85f = "veh_t6_air_a10f";
+    level.straferunmodel = "veh_t6_air_a10f";
     level.straferunmodelenemy = "veh_t6_air_a10f_alt";
     level.straferunvehicle = "vehicle_straferun_mp";
     level.straferungunweapon = getweapon(#"straferun_gun");
-    level.var_831bdf5d = "wpn_a10_shot_loop_npc";
+    level.straferungunsound = "wpn_a10_shot_loop_npc";
     level.straferunrocketweapon = getweapon(#"straferun_rockets");
     level.straferunrockettags = [];
     level.straferunrockettags[0] = "tag_attach_hardpoint_1";

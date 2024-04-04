@@ -20,7 +20,7 @@
     "player_respawndelay": 30,
     "var_c5c20d41": 5,
     "name": "gamedifficulty_easy",
-    "var_3fa5e959": 2000,
+    "longregentime": 2000,
     "autoaimregionwidth": 160,
     "var_9ffb574": 300,
     "healthoverlaycutoff": 0.01,

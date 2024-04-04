@@ -21,7 +21,7 @@
     "misstimedistancefactor": 0.75,
     "var_c5c20d41": 5,
     "name": "gamedifficulty_hard",
-    "var_3fa5e959": 3000,
+    "longregentime": 3000,
     "autoaimregionwidth": 120,
     "var_9ffb574": 100,
     "healthoverlaycutoff": 0.3,

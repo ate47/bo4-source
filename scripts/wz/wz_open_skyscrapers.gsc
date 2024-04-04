@@ -1417,7 +1417,7 @@ function function_2e72f24d(tracepoint, weapon) {
         var_44345100 = 0.7;
         distance = 0;
         var_57b06497 = 3000;
-        var_71c007dd = weapon.var_deb0b2fe;
+        var_71c007dd = weapon.muzzlevelocity;
         base_damage = weapon.damagevalues[0];
         var_a41a6d87 = weapon.var_bbc8dbc;
         var_97ed9e7a = weapon.var_f06a2fee;

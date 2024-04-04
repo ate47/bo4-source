@@ -117,7 +117,7 @@
     "scanning_speedscale": 0.01,
     "evade_enemies_locked_on_me": 1,
     "cobra_fx_1": "#hash_e94f7cca9f307df",
-    "var_8dc3330d": 4,
+    "spawn_count": 4,
     "var_a64907cd": 3,
     "var_274be2d6": 15,
     "var_8f06121f": "#hash_672086fb1140db4d",

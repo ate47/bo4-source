@@ -3551,7 +3551,7 @@ function function_e64ac3b6(type_id, var_c857a96d) {
 function sndswitchannouncervox(who) {
     switch (who) {
     case #"sam":
-        game.var_85e678a1[#"prefix"] = "vox_zmba_sam";
+        game.zmbdialog[#"prefix"] = "vox_zmba_sam";
         level.zmb_laugh_alias = "zmb_player_outofbounds";
         level.sndannouncerisrich = 0;
         break;

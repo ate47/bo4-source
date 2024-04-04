@@ -28,7 +28,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -1502,7 +1502,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -2976,7 +2976,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -4450,7 +4450,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -5924,7 +5924,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -7384,7 +7384,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -8838,7 +8838,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -10292,7 +10292,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -11746,7 +11746,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -13199,7 +13199,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -14641,7 +14641,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -16077,7 +16077,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -17513,7 +17513,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -18949,7 +18949,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -20384,7 +20384,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -21819,7 +21819,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -23255,7 +23255,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -24691,7 +24691,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -26113,7 +26113,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -27534,7 +27534,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -28950,7 +28950,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -30366,7 +30366,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -31782,7 +31782,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -33163,7 +33163,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -34539,7 +34539,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -35908,7 +35908,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -37271,7 +37271,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -38634,7 +38634,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -39997,7 +39997,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -41360,7 +41360,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -42729,7 +42729,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -44098,7 +44098,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -45467,7 +45467,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -46836,7 +46836,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -48204,7 +48204,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -49570,7 +49570,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -50929,7 +50929,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -52288,7 +52288,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -53642,7 +53642,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -54992,7 +54992,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -56636,7 +56636,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -58280,7 +58280,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -59922,7 +59922,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -61563,7 +61563,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -63203,7 +63203,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -64844,7 +64844,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -66485,7 +66485,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -68125,7 +68125,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -69763,7 +69763,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -71401,7 +71401,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -73038,7 +73038,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -74673,7 +74673,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -76305,7 +76305,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -77932,7 +77932,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -79537,7 +79537,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -81137,7 +81137,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -82732,7 +82732,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -84327,7 +84327,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -85922,7 +85922,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -87517,7 +87517,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -89112,7 +89112,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -90707,7 +90707,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -92302,7 +92302,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -93896,7 +93896,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -95476,7 +95476,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -97051,7 +97051,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -98624,7 +98624,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -100177,7 +100177,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -101729,7 +101729,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -103279,7 +103279,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -104827,7 +104827,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -106375,7 +106375,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -107925,7 +107925,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -109473,7 +109473,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -111015,7 +111015,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -112554,7 +112554,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -114090,7 +114090,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -115621,7 +115621,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -117152,7 +117152,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -118473,7 +118473,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -119794,7 +119794,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -121114,7 +121114,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -121814,7 +121814,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -122513,7 +122513,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -123210,7 +123210,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -123907,7 +123907,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -124604,7 +124604,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -125299,7 +125299,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -125994,7 +125994,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -126687,7 +126687,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -127380,7 +127380,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
@@ -128073,7 +128073,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
-    uint8 hash_2e756f25094a5b3c;
+    uint8 laststandrevivehealth;
     int32 hash_616f9d68c4625db8;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;

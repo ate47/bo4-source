@@ -685,12 +685,12 @@ function function_e023eac9(entity, mocompanim, mocompanimblendouttime, mocompani
             var_1c3641f2 = (entity.enemy.origin[0], entity.enemy.origin[1], entity.origin[2]);
             dirtoenemy = vectornormalize(var_1c3641f2 - entity.origin);
             zdiff = entity.meleeinfo.var_cb28f380[2] - entity.enemy.origin[2];
-            var_6738a702 = abs(zdiff) <= 45;
+            withinzrange = abs(zdiff) <= 45;
             withinfov = vectordot(myforward, dirtoenemy) > cos(30);
-            var_7948b2f3 = var_6738a702 && withinfov;
+            var_7948b2f3 = withinzrange && withinfov;
             var_425c4c8b = (isvisible || var_535d098c) && var_7948b2f3;
             /#
-                reasons = "<unknown string>" + isvisible + "<unknown string>" + var_6738a702 + "<unknown string>" + withinfov;
+                reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
                 if (var_425c4c8b) {
                     record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (0, 1, 0), "<unknown string>");
                 } else {

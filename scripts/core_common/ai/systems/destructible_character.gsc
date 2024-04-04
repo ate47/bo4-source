@@ -70,7 +70,7 @@ function private _getdestructibledef(entity) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x3ba6b459, Offset: 0x728
 // Size: 0x2a
-function function_b9568365(entity) {
+function getdestructstate(entity) {
     if (isdefined(entity._destruct_state)) {
         return entity._destruct_state;
     }
@@ -92,7 +92,7 @@ function function_f865501b(entity, var_e9807706, var_9cea16fe) {
 // Checksum 0xe66a4bc5, Offset: 0x7c8
 // Size: 0x64
 function private _setdestructed(entity, destructflag) {
-    entity._destruct_state = function_b9568365(entity) | destructflag;
+    entity._destruct_state = getdestructstate(entity) | destructflag;
     entity clientfield::set("destructible_character_state", entity._destruct_state);
 }
 
@@ -101,7 +101,7 @@ function private _setdestructed(entity, destructflag) {
 // Checksum 0xb5f16d13, Offset: 0x838
 // Size: 0x64
 function copydestructstate(originalentity, newentity) {
-    newentity._destruct_state = function_b9568365(originalentity);
+    newentity._destruct_state = getdestructstate(originalentity);
     togglespawngibs(newentity, 0);
     reapplydestructedpieces(newentity);
 }
@@ -312,7 +312,7 @@ function isdestructed(entity, piecenumber) {
             assert(1 <= piecenumber && piecenumber <= 20);
         #/
     #/
-    return function_b9568365(entity) & 1 << piecenumber;
+    return getdestructstate(entity) & 1 << piecenumber;
 }
 
 // Namespace destructserverutils/destructible_character
@@ -367,9 +367,9 @@ function showdestructedpieces(entity) {
 // Size: 0x94
 function togglespawngibs(entity, shouldspawngibs) {
     if (shouldspawngibs) {
-        entity._destruct_state = function_b9568365(entity) | 1;
+        entity._destruct_state = getdestructstate(entity) | 1;
     } else {
-        entity._destruct_state = function_b9568365(entity) & -2;
+        entity._destruct_state = getdestructstate(entity) & -2;
     }
     entity clientfield::set("destructible_character_state", entity._destruct_state);
 }

@@ -335,7 +335,7 @@ function private function_808efdee(hacker, entity) {
     if (isdefined(entity.canthack) && entity.canthack) {
         return false;
     }
-    if (!isplayer(entity) && !entityweapon.var_18608bfe) {
+    if (!isplayer(entity) && !entityweapon.ishackable) {
         return false;
     }
     if (isdefined(entity.ishacked) && entity.ishacked && !isplayer(entity)) {
