@@ -138,7 +138,7 @@ function function_d096f18f() {
     level.var_ab11c23d notify(#"hash_78fc5bbd712046b0");
     level.var_ab11c23d rotateto((10, level.var_ab11c23d.angles[1] - 5, 0), 0.2);
     level.var_ab11c23d waittill(#"rotatedone");
-    level.var_ab11c23d rotatevelocity(vectorscale((0, -1, 0), 1440), 4.5, 3);
+    level.var_ab11c23d rotatevelocity((0, -1440, 0), 4.5, 3);
     level thread function_39d9b290();
     exploder::exploder("fxexp_portal_115_start");
     wait(5);
@@ -156,7 +156,7 @@ function function_d096f18f() {
     level thread zm_orange_pablo::function_e44c7c0c(#"hash_1a974fe7a0edddab");
     wait(1);
     zm_ui_inventory::function_7df6bb60(#"zm_orange_objective_progress", 12);
-    e_mover moveto(e_mover.origin + vectorscale((0, 0, 1), 4000), var_6df66af8 - 1);
+    e_mover moveto(e_mover.origin + (0, 0, 4000), var_6df66af8 - 1);
     wait(var_6df66af8 - 3);
     exploder::stop_exploder("fxexp_portal_115_start");
     exploder::exploder("fxexp_portal_115_end");
@@ -214,8 +214,8 @@ function function_bf106bdf() {
     nd_start = getvehiclenode("portal_wisp_start", "targetname");
     vh_wisp setspeed(20);
     vh_wisp vehicle::get_on_and_go_path(nd_start);
-    e_device = util::spawn_model("p8_zm_ora_elemental_vessel", vh_wisp.origin + vectorscale((0, 0, -1), 10));
-    e_device thread zm_orange_mq_hell::rotate_forever(vectorscale((0, 1, 0), 45));
+    e_device = util::spawn_model("p8_zm_ora_elemental_vessel", vh_wisp.origin + (0, 0, -10));
+    e_device thread zm_orange_mq_hell::rotate_forever((0, 45, 0));
     e_device zm_item_pickup::create_item_pickup(&pickup_device, zm_utility::function_d6046228(#"hash_50d83a4f11ad9d8", #"hash_51d8e27e625c6bd4"), undefined, 128);
 }
 

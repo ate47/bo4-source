@@ -143,7 +143,6 @@ function private function_1129876d() {
     self endon(#"death");
     pixbeginevent(#"hash_31bd17db0dd4297d");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify zm_hms_util::function_69320b44("zm_aat_kill_o_watt")) {
             self function_d41d20b1();
@@ -228,7 +227,7 @@ function private start_step_2() {
 // Size: 0xc2
 function private function_22b5323d() {
     exploder::exploder("fxexp_quest_raygun_m2_v_stage_3_xtra_hint_" + self.exploder_id);
-    t_damage = spawn("trigger_damage_new", self.origin - vectorscale((0, 0, 1), 12), 1048576 | 2097152 | 8388608, 24, 24);
+    t_damage = spawn("trigger_damage_new", self.origin - (0, 0, 12), 1048576 | 2097152 | 8388608, 24, 24);
     t_damage.var_504994c2 = 0;
     t_damage.s_target = self;
     t_damage thread function_27766b0b();
@@ -243,7 +242,6 @@ function private function_27766b0b() {
     self endon(#"death");
     pixbeginevent(#"hash_1d99091c9b9308d1");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         self playsound("evt_insulator_hit");
         if (s_notify zm_hms_util::function_69320b44("zm_aat_kill_o_watt")) {
@@ -315,7 +313,6 @@ function private start_step_3() {
 function private function_195e54c() {
     self endon(#"death", #"stop_think");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition("evt_rgun_frame_putback", (553, -134, 1));
         if (function_18a1849f(level.var_9eccff99.e_player)) {
@@ -419,7 +416,6 @@ function private function_7015dc35(e_player) {
 function private function_2ac1278b() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (function_18a1849f(e_player)) {

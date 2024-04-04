@@ -146,7 +146,6 @@ function private step_1_cleanup(var_a276c861, var_19e802fa) {
 function private function_f7b0a02a() {
     level endon(#"hash_1562cc6d96b2bc4", #"end_game");
     if (self.archetype == #"stoker") {
-        waitresult = undefined;
         waitresult = self waittill(#"hash_4651621237a54fc7", #"death");
         if (waitresult._notify == #"hash_4651621237a54fc7") {
             if (!isdefined(level.var_86d6efbf)) {
@@ -175,7 +174,6 @@ function private function_f7b0a02a() {
 // Size: 0x144
 function private function_a20e6e5d() {
     level endon(#"hash_503e8bfd27a38f08", #"hash_1562cc6d96b2bc4", #"end_game");
-    waitresult = undefined;
     waitresult = level.var_85a8dbba waittill(#"trigger");
     player = waitresult.activator;
     if (isdefined(player)) {
@@ -421,7 +419,7 @@ function private function_a8fff4b0() {
     if (level.var_3a67ac0e[level.var_2e2dab8d] == #"p7_compass_vintage") {
         var_5792d83f setscale(2);
     }
-    var_5792d83f rotate(vectorscale((0, 1, 0), 22));
+    var_5792d83f rotate((0, 22, 0));
     var_5792d83f clientfield::set("" + #"clue_fx", 1);
     self.mdl_chest thread scene::play(#"p8_fxanim_zm_zod_kraken_chest_bundle", "open", self.mdl_chest);
     level flag::wait_till(#"hash_2889330d50a4cc38");
@@ -683,7 +681,6 @@ function private function_9b8016f1(var_9102824b) {
 function function_ae6c3cf2() {
     level endon(#"end_game");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
         if (zm_trial_disable_buys::is_active()) {
@@ -733,9 +730,7 @@ function private function_e00eae6(e_player) {
             var_73d97896 = 4;
             break;
         default:
-            /#
-                assert(0, "<unknown string>");
-            #/
+            assert(0, "<unknown string>");
             var_be9badbc = #"ww_tricannon_t8";
             break;
         }
@@ -792,14 +787,14 @@ function private function_f4a7fd49(params) {
 function private function_4facba35(str_drop, v_origin, v_spawn) {
     var_abf1e2f7 = util::spawn_model("tag_origin", v_spawn);
     var_abf1e2f7 notsolid();
-    var_a071ccba = spawn("trigger_radius_use", v_origin + vectorscale((0, 0, 1), 32), 0, 64, 72);
+    var_a071ccba = spawn("trigger_radius_use", v_origin + (0, 0, 32), 0, 64, 72);
     var_a071ccba setcursorhint("HINT_NOICON");
     switch (str_drop) {
     case #"concentrated_decay":
         str_prompt = zm_utility::function_d6046228(#"hash_1fe854f6441b337e", #"hash_1b7e2d2bbc1de36a");
         var_a071ccba sethintstring(str_prompt);
         var_abf1e2f7 setmodel(#"c_t8_zmb_concentrated_catalyst_heart");
-        v_origin = v_origin + vectorscale((0, 0, 1), 5);
+        v_origin = v_origin + (0, 0, 5);
         break;
     case #"concentrated_plasma":
         str_prompt = zm_utility::function_d6046228(#"hash_1da4ec6fc5b6b9e6", #"hash_2eb14d935f8e39c2");
@@ -833,7 +828,6 @@ function private function_4facba35(str_drop, v_origin, v_spawn) {
 function private function_3ef485b1(t_trig) {
     level endon(#"end_game");
     t_trig endon(#"hash_cf18f85af2935e8");
-    waitresult = undefined;
     waitresult = t_trig waittill(#"trigger");
     e_player = waitresult.activator;
     switch (t_trig.str_drop) {

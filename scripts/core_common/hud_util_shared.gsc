@@ -285,19 +285,13 @@ function updatebarscale(barfrac, rateofchange) {
         }
         self.bar.frac = barfrac;
         self.bar setshader(self.bar.shader, barwidth, self.height);
-        /#
-            assert(barwidth <= self.width, "<unknown string>" + barwidth + "<unknown string>" + self.width + "<unknown string>" + barfrac);
-        #/
+        assert(barwidth <= self.width, "<unknown string>" + barwidth + "<unknown string>" + self.width + "<unknown string>" + barfrac);
         if (isdefined(rateofchange) && barwidth < self.width) {
             if (rateofchange > 0) {
-                /#
-                    assert((1 - barfrac) / rateofchange > 0, "<unknown string>" + barfrac + "<unknown string>" + rateofchange);
-                #/
+                assert((1 - barfrac) / rateofchange > 0, "<unknown string>" + barfrac + "<unknown string>" + rateofchange);
                 self.bar scaleovertime((1 - barfrac) / rateofchange, self.width, self.height);
             } else if (rateofchange < 0) {
-                /#
-                    assert(barfrac / -1 * rateofchange > 0, "<unknown string>" + barfrac + "<unknown string>" + rateofchange);
-                #/
+                assert(barfrac / -1 * rateofchange > 0, "<unknown string>" + barfrac + "<unknown string>" + rateofchange);
                 self.bar scaleovertime(barfrac / -1 * rateofchange, 1, self.height);
             }
         }

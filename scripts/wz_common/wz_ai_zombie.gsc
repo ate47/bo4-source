@@ -296,18 +296,18 @@ function drawdebugcross(atpoint, radius, color, durationframes) {
 // Checksum 0xe84e28d4, Offset: 0x1b50
 // Size: 0x192
 function function_a6a84389(playerradius) {
-    position = getclosestpointonnavmesh(self.origin - vectorscale((0, 0, 1), 100), 100, playerradius);
+    position = getclosestpointonnavmesh(self.origin - (0, 0, 100), 100, playerradius);
     if (isdefined(position)) {
-        player_position = self.origin + vectorscale((0, 0, 1), 20);
-        var_f5df51f2 = position + vectorscale((0, 0, 1), 20);
+        player_position = self.origin + (0, 0, 20);
+        var_f5df51f2 = position + (0, 0, 20);
         if (bullettracepassed(player_position, var_f5df51f2, 0, self)) {
             self.last_valid_position = position;
         }
     } else {
-        position = getclosestpointonnavmesh(self.origin - vectorscale((0, 0, 1), 100), 200, playerradius);
+        position = getclosestpointonnavmesh(self.origin - (0, 0, 100), 200, playerradius);
         if (isdefined(position)) {
-            player_position = self.origin + vectorscale((0, 0, 1), 20);
-            var_f5df51f2 = position + vectorscale((0, 0, 1), 20);
+            player_position = self.origin + (0, 0, 20);
+            var_f5df51f2 = position + (0, 0, 20);
             if (bullettracepassed(player_position, var_f5df51f2, 0, self)) {
                 self.last_valid_position = position;
             }
@@ -349,197 +349,99 @@ function attackable_callback(entity) {
 // Checksum 0x8379b0e2, Offset: 0x1ec0
 // Size: 0x146c
 function initzombiebehaviors() {
-    /#
-        assert(isscriptfunctionptr(&function_e91d8371));
-    #/
+    assert(isscriptfunctionptr(&function_e91d8371));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieupdatethrottle", &function_e91d8371, 2);
-    /#
-        assert(isscriptfunctionptr(&function_5aeeecac));
-    #/
+    assert(isscriptfunctionptr(&function_5aeeecac));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3ac312897079296a", &function_5aeeecac, 2);
-    /#
-        assert(isscriptfunctionptr(&function_eea7a68a));
-    #/
+    assert(isscriptfunctionptr(&function_eea7a68a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_300dd0c6326499f2", &function_eea7a68a, 1);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieshouldmelee", &zombieshouldmelee);
-    /#
-        assert(isscriptfunctionptr(&function_d8b225ae));
-    #/
+    assert(isscriptfunctionptr(&function_d8b225ae));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieshouldmeleeattackable", &function_d8b225ae);
-    /#
-        assert(isscriptfunctionptr(&function_e8f3596d));
-    #/
+    assert(isscriptfunctionptr(&function_e8f3596d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_350ddff40ea2207b", &function_e8f3596d);
-    /#
-        assert(isscriptfunctionptr(&function_cc184b8b));
-    #/
+    assert(isscriptfunctionptr(&function_cc184b8b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_77070e8fef81d6da", &function_cc184b8b);
-    /#
-        assert(isscriptfunctionptr(&function_562c0e1d));
-    #/
+    assert(isscriptfunctionptr(&function_562c0e1d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_23448cac3a176df3", &function_562c0e1d);
-    /#
-        assert(isscriptfunctionptr(&function_e8f3596d));
-    #/
+    assert(isscriptfunctionptr(&function_e8f3596d));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_350ddff40ea2207b", &function_e8f3596d);
-    /#
-        assert(isscriptfunctionptr(&function_a58eaeea));
-    #/
+    assert(isscriptfunctionptr(&function_a58eaeea));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombieshouldreact", &function_a58eaeea);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldmove));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldmove));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombieshouldmove", &zombieshouldmove);
-    /#
-        assert(isscriptfunctionptr(&function_bfc25c77));
-    #/
+    assert(isscriptfunctionptr(&function_bfc25c77));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_502cf2e8eca970f0", &function_bfc25c77);
-    /#
-        assert(isscriptfunctionptr(&function_b9b03294));
-    #/
+    assert(isscriptfunctionptr(&function_b9b03294));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_91cfd1edd5185d1", &function_b9b03294);
-    /#
-        assert(isscriptfunctionptr(&function_c711d679));
-    #/
+    assert(isscriptfunctionptr(&function_c711d679));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_53dd60145334e75a", &function_c711d679);
-    /#
-        assert(isscriptfunctionptr(&function_37abea6f));
-    #/
+    assert(isscriptfunctionptr(&function_37abea6f));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_2b17bbf6d0ceff72", &function_37abea6f);
-    /#
-        assert(isscriptfunctionptr(&function_c7f10f39));
-    #/
+    assert(isscriptfunctionptr(&function_c7f10f39));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_35230f28e597f859", &function_c7f10f39);
-    /#
-        assert(isscriptfunctionptr(&function_638581d2));
-    #/
+    assert(isscriptfunctionptr(&function_638581d2));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_44f23dd5a213d52a", &function_638581d2);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldknockdown));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldknockdown));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieshouldknockdown", &zombieshouldknockdown);
-    /#
-        assert(isscriptfunctionptr(&function_2a7b4aab));
-    #/
+    assert(isscriptfunctionptr(&function_2a7b4aab));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_27c0b6c5a7e05804", &function_2a7b4aab);
-    /#
-        assert(isscriptfunctionptr(&function_55b7ea22));
-    #/
+    assert(isscriptfunctionptr(&function_55b7ea22));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_336e28ae1ed4640b", &function_55b7ea22);
-    /#
-        assert(isscriptfunctionptr(&function_98b102d8));
-    #/
+    assert(isscriptfunctionptr(&function_98b102d8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_53e4632b82a3a930", &function_98b102d8);
-    /#
-        assert(isscriptfunctionptr(&function_6ec0bcc1));
-    #/
+    assert(isscriptfunctionptr(&function_6ec0bcc1));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_791763042d13fef1", &function_6ec0bcc1);
-    /#
-        assert(isscriptfunctionptr(&function_6f4ab71c));
-    #/
+    assert(isscriptfunctionptr(&function_6f4ab71c));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_8ad1466eac37282", &function_6f4ab71c);
-    /#
-        assert(isscriptfunctionptr(&function_4402c40a));
-    #/
+    assert(isscriptfunctionptr(&function_4402c40a));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_24de191ac3416c18", &function_4402c40a);
-    /#
-        assert(isscriptfunctionptr(&function_6a3bcddc));
-    #/
+    assert(isscriptfunctionptr(&function_6a3bcddc));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_33c14e313f684eab", &function_6a3bcddc);
-    /#
-        assert(isscriptfunctionptr(&function_4402c40a));
-    #/
+    assert(isscriptfunctionptr(&function_4402c40a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_24de191ac3416c18", &function_4402c40a);
-    /#
-        assert(isscriptfunctionptr(&function_6a3bcddc));
-    #/
+    assert(isscriptfunctionptr(&function_6a3bcddc));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_33c14e313f684eab", &function_6a3bcddc);
-    /#
-        assert(isscriptfunctionptr(&zombiemoveactionstart));
-    #/
+    assert(isscriptfunctionptr(&zombiemoveactionstart));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombiemoveactionstart", &zombiemoveactionstart);
-    /#
-        assert(isscriptfunctionptr(&zombiemoveactionupdate));
-    #/
+    assert(isscriptfunctionptr(&zombiemoveactionupdate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombiemoveactionupdate", &zombiemoveactionupdate);
-    /#
-        assert(isscriptfunctionptr(&zombiemoveactionstart));
-    #/
+    assert(isscriptfunctionptr(&zombiemoveactionstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombiemoveactionstart", &zombiemoveactionstart);
-    /#
-        assert(isscriptfunctionptr(&zombiemoveactionupdate));
-    #/
+    assert(isscriptfunctionptr(&zombiemoveactionupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombiemoveactionupdate", &zombiemoveactionupdate);
-    /#
-        assert(isscriptfunctionptr(&function_a0acf641));
-    #/
+    assert(isscriptfunctionptr(&function_a0acf641));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_796d69f77ff45304", &function_a0acf641);
-    /#
-        assert(isscriptfunctionptr(&function_6a2634da));
-    #/
+    assert(isscriptfunctionptr(&function_6a2634da));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_205c6638add95fc5", &function_6a2634da);
-    /#
-        assert(isscriptfunctionptr(&function_7c8e35e8));
-    #/
+    assert(isscriptfunctionptr(&function_7c8e35e8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5b037e170b517862", &function_7c8e35e8);
-    /#
-        assert(isscriptfunctionptr(&function_66e2c5fb));
-    #/
+    assert(isscriptfunctionptr(&function_66e2c5fb));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_79acdac8ad5d0019", &function_66e2c5fb);
-    /#
-        assert(!isdefined(&function_7c8e35e8) || isscriptfunctionptr(&function_7c8e35e8));
-    #/
-    /#
-        assert(!isdefined(&function_fee7d867) || isscriptfunctionptr(&function_fee7d867));
-    #/
-    /#
-        assert(!isdefined(&function_3f71b9c2) || isscriptfunctionptr(&function_3f71b9c2));
-    #/
+    assert(!isdefined(&function_7c8e35e8) || isscriptfunctionptr(&function_7c8e35e8));
+    assert(!isdefined(&function_fee7d867) || isscriptfunctionptr(&function_fee7d867));
+    assert(!isdefined(&function_3f71b9c2) || isscriptfunctionptr(&function_3f71b9c2));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_5bd00a38dffd47e", &function_7c8e35e8, &function_fee7d867, &function_3f71b9c2);
-    /#
-        assert(isscriptfunctionptr(&zombieknockdownactionstart));
-    #/
+    assert(isscriptfunctionptr(&zombieknockdownactionstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieknockdownactionstart", &zombieknockdownactionstart);
-    /#
-        assert(isscriptfunctionptr(&function_c8939973));
-    #/
+    assert(isscriptfunctionptr(&function_c8939973));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7a21325931f5ca2f", &function_c8939973);
-    /#
-        assert(isscriptfunctionptr(&zombiegetupactionterminate));
-    #/
+    assert(isscriptfunctionptr(&zombiegetupactionterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombiegetupactionterminate", &zombiegetupactionterminate);
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_78106a79) || isscriptfunctionptr(&function_78106a79));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_78106a79) || isscriptfunctionptr(&function_78106a79));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_43da8039096f842f", undefined, &function_78106a79, undefined);
-    /#
-        assert(isscriptfunctionptr(&function_f8250d5e));
-    #/
+    assert(isscriptfunctionptr(&function_f8250d5e));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombieidleactionstart", &function_f8250d5e);
-    /#
-        assert(isscriptfunctionptr(&function_860d5d8));
-    #/
+    assert(isscriptfunctionptr(&function_860d5d8));
     behaviorstatemachine::registerbsmscriptapiinternal(#"wzzombieidleactionupdate", &function_860d5d8);
-    /#
-        assert(isscriptfunctionptr(&function_f8250d5e));
-    #/
+    assert(isscriptfunctionptr(&function_f8250d5e));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieidleactionstart", &function_f8250d5e);
-    /#
-        assert(isscriptfunctionptr(&function_860d5d8));
-    #/
+    assert(isscriptfunctionptr(&function_860d5d8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wzzombieidleactionupdate", &function_860d5d8);
-    /#
-        assert(isscriptfunctionptr(&function_f37b0fbd));
-    #/
+    assert(isscriptfunctionptr(&function_f37b0fbd));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_23cab4c0aa3e9ee0", &function_f37b0fbd);
     animationstatenetwork::registernotetrackhandlerfunction("zombieRiserFx", &function_79c3a487);
     animationstatenetwork::registernotetrackhandlerfunction("showZombie", &showzombie);
@@ -1378,7 +1280,6 @@ function private setup_awareness(entity) {
 function private function_cb2c8fea() {
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"glass_smash");
         origin = undefined;
         radius = undefined;
@@ -1422,7 +1323,6 @@ function private function_25b61968() {
     self thread function_d1675b11();
     while (true) {
         wait(0.5);
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_fired");
         switch (waitresult._notify) {
         case #"weapon_fired":
@@ -1481,9 +1381,7 @@ function private register_state(name, enter, update, exit, target_update, debug_
     if (!isdefined(level.zombie_states)) {
         level.zombie_states = [];
     }
-    /#
-        assert(!isdefined(level.zombie_states[name]));
-    #/
+    assert(!isdefined(level.zombie_states[name]));
     level.zombie_states[name] = {#name:name, #enter_func:enter, #update_func:update, #exit_func:exit, #target_func:target_update, #debug_func:debug_update};
 }
 
@@ -1492,11 +1390,7 @@ function private register_state(name, enter, update, exit, target_update, debug_
 // Checksum 0x36b33c07, Offset: 0x6790
 // Size: 0x16c
 function private set_state(entity, state_name) {
-    /#
-        /#
-            assert(isdefined(level.zombie_states[state_name]), "_knockdown_type" + (ishash(state_name) ? function_9e72a96(state_name) : state_name));
-        #/
-    #/
+    assert(isdefined(level.zombie_states[state_name]), "_knockdown_type" + (ishash(state_name) ? function_9e72a96(state_name) : state_name));
     state = level.zombie_states[state_name];
     if (isdefined(entity.current_state)) {
         if (isdefined(entity.current_state.exit_func)) {
@@ -2294,7 +2188,7 @@ function function_b184324d(origin, radius, var_5e8ea34a = 0, dist_from_boundary 
     x = var_5e8ea34a + cos(theta) * (radius - var_5e8ea34a) * randomfloatrange(0, 1);
     y = var_5e8ea34a + sin(theta) * (radius - var_5e8ea34a) * randomfloatrange(0, 1);
     point = (origin[0] + x, origin[1] + y, origin[2]);
-    var_d1a33279 = groundtrace(point + vectorscale((0, 0, 1), 8), point + vectorscale((0, 0, -1), 100000), 0, undefined)[#"position"];
+    var_d1a33279 = groundtrace(point + (0, 0, 8), point + (0, 0, -100000), 0, undefined)[#"position"];
     if (isdefined(var_d1a33279)) {
         return getclosestpointonnavmesh(var_d1a33279, 50, dist_from_boundary);
     }
@@ -2320,7 +2214,6 @@ function function_d4f2933d() {
             self.var_80780af2 = self.origin;
         }
         wait_time = randomfloatrange(3, 5);
-        waitresult = undefined;
         waitresult = self waittilltimeout(wait_time, #"goal");
         if (isdefined(self.var_50826790) && self.var_50826790) {
             self.var_ef59b90 = 5;
@@ -2403,7 +2296,6 @@ function private function_af47322e() {
             self.var_80780af2 = self.origin;
         }
         wait_time = randomfloatrange(3, 5);
-        waitresult = undefined;
         waitresult = self waittilltimeout(wait_time, #"goal");
         if (isdefined(self.var_50826790) && self.var_50826790) {
             self.var_ef59b90 = 5;
@@ -2498,8 +2390,8 @@ function private function_936718a8() {
         self.var_e47f11d7 = 0;
     }
     if (isdefined(self.favoriteenemy)) {
-        head_pos = self.origin + vectorscale((0, 0, 1), 60);
-        var_1b7d301e = self.favoriteenemy.origin + vectorscale((0, 0, 1), 60);
+        head_pos = self.origin + (0, 0, 60);
+        var_1b7d301e = self.favoriteenemy.origin + (0, 0, 60);
         vec_to_enemy = var_1b7d301e - head_pos;
         vec_to_enemy_norm = vectornormalize(vec_to_enemy);
         self.angles_to_enemy = vectortoangles(vec_to_enemy_norm);
@@ -2952,7 +2844,6 @@ function zombie_death_event(params) {
 function zombie_gib_on_damage() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         self thread zombie_gib(waitresult.amount, waitresult.attacker, waitresult.direction, waitresult.position, waitresult.mod, waitresult.tag_name, waitresult.model_name, waitresult.part_name, waitresult.weapon);
     }

@@ -8,28 +8,14 @@
 // Method(s) 8 Total 15
 class crevive_hud : cluielem {
 
-    // Namespace crevive_hud/revive_hud
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x5094c0b9, Offset: 0x248
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace crevive_hud/revive_hud
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x6a4b80d2, Offset: 0x468
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace crevive_hud/revive_hud
     // Params 2, eflags: 0x1 linked
     // Checksum 0xef18594c, Offset: 0x420
     // Size: 0x3c
     function set_fadetime(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "fadeTime", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "fadeTime", value);
     }
 
     // Namespace crevive_hud/revive_hud
@@ -37,7 +23,7 @@ class crevive_hud : cluielem {
     // Checksum 0x4eef2d1, Offset: 0x3d8
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "clientNum", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "clientNum", value);
     }
 
     // Namespace crevive_hud/revive_hud
@@ -45,7 +31,7 @@ class crevive_hud : cluielem {
     // Checksum 0xe48cc578, Offset: 0x390
     // Size: 0x3c
     function set_text(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "text", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "text", value);
     }
 
     // Namespace crevive_hud/revive_hud

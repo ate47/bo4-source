@@ -142,7 +142,6 @@ function on_damage(watcher) {
     damagemax = 50;
     self.damagetaken = 0;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage = waitresult.amount;
         type = waitresult.mod;

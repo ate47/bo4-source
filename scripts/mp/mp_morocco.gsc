@@ -79,7 +79,6 @@ function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
     }

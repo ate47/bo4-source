@@ -17,9 +17,9 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                 }
                 if (eventstruct.state === 3) {
                     if (dynent.targetname == "spring_event_homunculus") {
-                        playfx(localclientnum, "player/fx8_plyr_emote_homunc_green_end", dynent.origin + vectorscale((0, 0, 1), 40), anglestoforward(dynent.angles));
+                        playfx(localclientnum, "player/fx8_plyr_emote_homunc_green_end", dynent.origin + (0, 0, 40), anglestoforward(dynent.angles));
                     } else if (dynent.targetname == "zombie_apoc_homunculus") {
-                        playfx(localclientnum, "player/fx8_plyr_emote_homunc_end", dynent.origin + vectorscale((0, 0, 1), 40), anglestoforward(dynent.angles));
+                        playfx(localclientnum, "player/fx8_plyr_emote_homunc_end", dynent.origin + (0, 0, 40), anglestoforward(dynent.angles));
                     }
                     if (isdefined(dynent.var_46e47933)) {
                         stopsound(dynent.var_46e47933);

@@ -240,7 +240,7 @@ function function_30d59c86(team, target, players) {
             angles = target getplayerangles();
             yaw = (0, angles[1], 0);
             forward = anglestoforward(yaw);
-            spawn_origin = origin + forward * 128 + vectorscale((0, 0, 1), 16);
+            spawn_origin = origin + forward * 128 + (0, 0, 16);
             if (!bullettracepassed(target geteye(), spawn_origin, 0, target)) {
                 spawn_origin = undefined;
             }
@@ -1111,9 +1111,7 @@ function giveextraperks() {
         }
         perks = getarraykeys(self.extraperks);
         for (i = 0; i < perks.size; i++) {
-            /#
-                println("<unknown string>" + self.name + "<unknown string>" + perks[i] + "<unknown string>");
-            #/
+            println("<unknown string>" + self.name + "<unknown string>" + perks[i] + "<unknown string>");
             self perks::perk_setperk(perks[i]);
         }
     #/
@@ -1150,9 +1148,7 @@ function xkillsy(attackername, victimname) {
 function testscriptruntimeerrorassert() {
     /#
         wait(1);
-        /#
-            assert(0);
-        #/
+        assert(0);
     #/
 }
 
@@ -1163,9 +1159,7 @@ function testscriptruntimeerrorassert() {
 function testscriptruntimeassertmsgassert() {
     /#
         wait(1);
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     #/
 }
 
@@ -1176,9 +1170,7 @@ function testscriptruntimeassertmsgassert() {
 function testscriptruntimeerrormsgassert() {
     /#
         wait(1);
-        /#
-            errormsg("<unknown string>");
-        #/
+        errormsg("<unknown string>");
     #/
 }
 
@@ -1803,7 +1795,7 @@ function larry_init(larry) {
             dist = distance(eye, trace[#"position"]);
             position = eye + vectorscale(direction_vec, dist - 64);
             larry.model.origin = position;
-            larry.model.angles = self.angles + vectorscale((0, 1, 0), 180);
+            larry.model.angles = self.angles + (0, 180, 0);
             if (self usebuttonpressed()) {
                 self larry_ai(larry);
                 while (self usebuttonpressed()) {
@@ -1874,7 +1866,6 @@ function larry_ai_damage(larry) {
     /#
         level endon(#"kill_larry");
         for (;;) {
-            waitresult = undefined;
             waitresult = self waittill(#"damage");
             attacker = waitresult.attacker;
             damage = waitresult.amount;
@@ -1938,7 +1929,7 @@ function larry_hud_init(larry) {
             larry.hud.aligny = "<unknown string>";
             larry.hud.sort = 10;
             larry.hud.alpha = 0.6;
-            larry.hud.color = vectorscale((0, 0, 1), 0.5);
+            larry.hud.color = (0, 0, 0.5);
             larry.menu[0] = new_hud(menu_name, "<unknown string>", x + 5, y + 10, 1);
             larry.menu[1] = new_hud(menu_name, "<unknown string>", x + 5, y + 20, 1);
             larry.menu[2] = new_hud(menu_name, "<unknown string>", x + 5, y + 30, 1);
@@ -2045,11 +2036,9 @@ function print_weapon_name() {
             self endon(#"print_weapon_name");
             wait(0.2);
             if (self isswitchingweapons()) {
-                waitresult = undefined;
                 waitresult = self waittill(#"weapon_change_complete");
                 fail_safe = 0;
                 while (waitresult.weapon == level.weaponnone) {
-                    waitresult = undefined;
                     waitresult = self waittill(#"weapon_change_complete");
                     waitframe(1);
                     fail_safe++;
@@ -2227,7 +2216,7 @@ function devstraferunpathdebugdraw() {
         violet = (0.4, 0, 0.6);
         maxdrawtime = 10;
         drawtime = maxdrawtime;
-        origintextoffset = vectorscale((0, 0, -1), 50);
+        origintextoffset = (0, 0, -50);
         endonmsg = "<unknown string>";
         while (true) {
             if (killstreaks::should_draw_debug("<unknown string>") > 0) {
@@ -2313,7 +2302,7 @@ function devhelipathdebugdraw() {
         textscale = 1;
         maxdrawtime = 10;
         drawtime = maxdrawtime;
-        origintextoffset = vectorscale((0, 0, -1), 50);
+        origintextoffset = (0, 0, -50);
         endonmsg = "<unknown string>";
         while (true) {
             if (getdvarint(#"scr_devhelipathsdebugdraw", 0) > 0) {

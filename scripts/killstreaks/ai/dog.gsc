@@ -29,20 +29,14 @@
 // Method(s) 2 Total 2
 class lookaround {
 
+    var var_268b3fe5;
+
     // Namespace lookaround/dog
     // Params 0, eflags: 0x9 linked
     // Checksum 0x1785ea7, Offset: 0x3e8
     // Size: 0x2e
-    __constructor() {
-        self.var_268b3fe5 = gettime() + randomintrange(4500, 6500);
-    }
-
-    // Namespace lookaround/dog
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x420
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_268b3fe5 = gettime() + randomintrange(4500, 6500);
     }
 
 }
@@ -51,43 +45,22 @@ class lookaround {
 // Method(s) 2 Total 2
 class class_bd3490ad {
 
-    // Namespace class_bd3490ad/dog
-    // Params 0, eflags: 0x89 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x4c0
-    // Size: 0x4
-    __constructor() {
-        
-    }
-
-    // Namespace class_bd3490ad/dog
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x4d0
-    // Size: 0x4
-    __destructor() {
-        
-    }
-
 }
 
 // Namespace archetypempdog
 // Method(s) 2 Total 2
 class class_9fa5eb75 {
 
+    var adjustmentstarted;
+    var var_425c4c8b;
+
     // Namespace class_9fa5eb75/dog
     // Params 0, eflags: 0x9 linked
     // Checksum 0xac3eee2d, Offset: 0x34a0
     // Size: 0x1a
-    __constructor() {
-        self.adjustmentstarted = 0;
-        self.var_425c4c8b = 1;
-    }
-
-    // Namespace class_9fa5eb75/dog
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x34c8
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        adjustmentstarted = 0;
+        var_425c4c8b = 1;
     }
 
 }
@@ -226,85 +199,45 @@ function function_8f876521() {
 // Checksum 0xa02a7b85, Offset: 0xbe0
 // Size: 0x91c
 function registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&dogtargetservice));
-    #/
+    assert(isscriptfunctionptr(&dogtargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"mpdogtargetservice", &dogtargetservice, 1);
-    /#
-        assert(isscriptfunctionptr(&dogshouldwalk));
-    #/
+    assert(isscriptfunctionptr(&dogshouldwalk));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"mpdogshouldwalk", &dogshouldwalk);
-    /#
-        assert(isscriptfunctionptr(&dogshouldwalk));
-    #/
+    assert(isscriptfunctionptr(&dogshouldwalk));
     behaviorstatemachine::registerbsmscriptapiinternal(#"mpdogshouldwalk", &dogshouldwalk);
-    /#
-        assert(isscriptfunctionptr(&dogshouldrun));
-    #/
+    assert(isscriptfunctionptr(&dogshouldrun));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"mpdogshouldrun", &dogshouldrun);
-    /#
-        assert(isscriptfunctionptr(&dogshouldrun));
-    #/
+    assert(isscriptfunctionptr(&dogshouldrun));
     behaviorstatemachine::registerbsmscriptapiinternal(#"mpdogshouldrun", &dogshouldrun);
-    /#
-        assert(isscriptfunctionptr(&function_e382db1f));
-    #/
+    assert(isscriptfunctionptr(&function_e382db1f));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4178f7c4c6cfaeb6", &function_e382db1f);
-    /#
-        assert(isscriptfunctionptr(&function_6c2426d3));
-    #/
+    assert(isscriptfunctionptr(&function_6c2426d3));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7aaa666497426ef4", &function_6c2426d3);
-    /#
-        assert(isscriptfunctionptr(&function_6c2426d3));
-    #/
+    assert(isscriptfunctionptr(&function_6c2426d3));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_7aaa666497426ef4", &function_6c2426d3);
-    /#
-        assert(isscriptfunctionptr(&dogjukeinitialize));
-    #/
+    assert(isscriptfunctionptr(&dogjukeinitialize));
     behaviorstatemachine::registerbsmscriptapiinternal(#"mpdogjukeinitialize", &dogjukeinitialize);
-    /#
-        assert(isscriptfunctionptr(&dogpreemptivejuketerminate));
-    #/
+    assert(isscriptfunctionptr(&dogpreemptivejuketerminate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"mpdogpreemptivejuketerminate", &dogpreemptivejuketerminate);
-    /#
-        assert(isscriptfunctionptr(&function_3089bb44));
-    #/
+    assert(isscriptfunctionptr(&function_3089bb44));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_366c0b2c4164cc87", &function_3089bb44);
-    /#
-        assert(isscriptfunctionptr(&function_3089bb44));
-    #/
+    assert(isscriptfunctionptr(&function_3089bb44));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_366c0b2c4164cc87", &function_3089bb44);
-    /#
-        assert(isscriptfunctionptr(&function_b2e0da2));
-    #/
+    assert(isscriptfunctionptr(&function_b2e0da2));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_65dc8904419628da", &function_b2e0da2);
-    /#
-        assert(isscriptfunctionptr(&function_3b9e385c));
-    #/
+    assert(isscriptfunctionptr(&function_3b9e385c));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_4066108355410b7a", &function_3b9e385c);
-    /#
-        assert(isscriptfunctionptr(&function_ac9765d1));
-    #/
+    assert(isscriptfunctionptr(&function_ac9765d1));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_3fdd4a9f016c4ba4", &function_ac9765d1);
-    /#
-        assert(isscriptfunctionptr(&function_d338afb8));
-    #/
+    assert(isscriptfunctionptr(&function_d338afb8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_28582743cd920a21", &function_d338afb8);
-    /#
-        assert(isscriptfunctionptr(&function_bcd7b170));
-    #/
+    assert(isscriptfunctionptr(&function_bcd7b170));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3349a77142623d80", &function_bcd7b170);
-    /#
-        assert(isscriptfunctionptr(&function_4f9ebad6));
-    #/
+    assert(isscriptfunctionptr(&function_4f9ebad6));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_bb74fb159118080", &function_4f9ebad6);
-    /#
-        assert(isscriptfunctionptr(&function_81c29086));
-    #/
+    assert(isscriptfunctionptr(&function_81c29086));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_34183bbd11db144", &function_81c29086);
-    /#
-        assert(isscriptfunctionptr(&function_c34253a9));
-    #/
+    assert(isscriptfunctionptr(&function_c34253a9));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3d584bfcad6c773d", &function_c34253a9);
     animationstatenetwork::registernotetrackhandlerfunction("dog_melee", &function_cebd576f);
     animationstatenetwork::registeranimationmocomp("mocomp_mp_dog_juke", &function_475a38e6, &function_75068028, &function_13978732);
@@ -504,9 +437,7 @@ function getyaw(org) {
 // Checksum 0x13d8f0e1, Offset: 0x1f68
 // Size: 0x8a
 function absyawtoenemy(enemy) {
-    /#
-        assert(isdefined(enemy));
-    #/
+    assert(isdefined(enemy));
     yaw = self.angles[1] - getyaw(enemy.origin);
     yaw = angleclamp180(yaw);
     if (yaw < 0) {
@@ -830,7 +761,7 @@ function function_6c2426d3(entity) {
                 forward = anglestoforward(enemyangles);
                 dotproduct = abs(vectordot(vectornormalize(toenemy), forward));
                 /#
-                    record3dtext(acos(dotproduct), entity.origin + vectorscale((0, 0, 1), 10), (0, 1, 0), "<unknown string>");
+                    record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<unknown string>");
                 #/
                 if (dotproduct > 0.766) {
                     return true;
@@ -902,7 +833,7 @@ function function_3089bb44(entity) {
                 var_7a61ad67 = vectornormalize(entity getvelocity());
                 if (vectordot(var_7a61ad67, enemyvelocity) > cos(20)) {
                     /#
-                        record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                        record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
                     #/
                     return false;
                 }
@@ -976,9 +907,7 @@ function function_b1eb29d8(entity, mocompanim, mocompanimblendouttime, mocompani
 // Checksum 0xd0b2bd62, Offset: 0x3960
 // Size: 0xb34
 function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
-    /#
-        assert(isdefined(entity.meleeinfo));
-    #/
+    assert(isdefined(entity.meleeinfo));
     currentanimtime = entity getanimtime(mocompanim);
     if (isdefined(entity.enemy) && !entity.meleeinfo.adjustmentstarted && entity.meleeinfo.var_425c4c8b && currentanimtime >= entity.meleeinfo.var_98bc84b7) {
         predictedenemypos = entity.enemy.origin;
@@ -993,7 +922,7 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
         var_776ddabf = distancesquared(entity.meleeinfo.var_cb28f380, entity.meleeinfo.adjustedendpos);
         var_65cbfb52 = distancesquared(entity.meleeinfo.var_9bfa8497, entity.meleeinfo.adjustedendpos);
         var_201660e6 = tracepassedonnavmesh(entity.meleeinfo.var_9bfa8497, entity.meleeinfo.adjustedendpos, entity getpathfindingradius());
-        traceresult = bullettrace(entity.origin, entity.meleeinfo.adjustedendpos + vectorscale((0, 0, 1), 30), 0, entity);
+        traceresult = bullettrace(entity.origin, entity.meleeinfo.adjustedendpos + (0, 0, 30), 0, entity);
         isvisible = traceresult[#"fraction"] == 1;
         var_535d098c = 0;
         if (isdefined(traceresult[#"hitloc"]) && traceresult[#"hitloc"] == "riotshield") {
@@ -1003,23 +932,23 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
         }
         if (!var_201660e6) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_cf699df5 > var_65cbfb52 && var_776ddabf >= 90 * 90) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 300 * 300) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             entity.meleeinfo.var_425c4c8b = 0;
         }
         if (var_535d098c) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             entity.meleeinfo.var_425c4c8b = 1;
         }
@@ -1036,9 +965,9 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
             /#
                 reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (0, 1, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<unknown string>");
                 } else {
-                    record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
                 }
             #/
             if (var_425c4c8b) {
@@ -1060,9 +989,7 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
         }
     }
     if (entity.meleeinfo.adjustmentstarted && currentanimtime <= entity.meleeinfo.var_6392c3a2) {
-        /#
-            assert(isdefined(entity.meleeinfo.var_10b8b6d1) && isdefined(entity.meleeinfo.var_8b9a15a6));
-        #/
+        assert(isdefined(entity.meleeinfo.var_10b8b6d1) && isdefined(entity.meleeinfo.var_8b9a15a6));
         /#
             recordsphere(entity.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
             recordsphere(entity.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");

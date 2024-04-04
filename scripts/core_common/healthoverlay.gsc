@@ -92,9 +92,7 @@ function end_health_regen() {
 function player_health_regen_t7() {
     self endon(#"end_healthregen");
     if (self.health <= 0) {
-        /#
-            assert(!isalive(self));
-        #/
+        assert(!isalive(self));
         return;
     }
     maxhealth = self.health;
@@ -338,15 +336,9 @@ function private function_8ca62ae3() {
 // Checksum 0xd302505d, Offset: 0xe50
 // Size: 0x10a
 function private function_f8139729() {
-    /#
-        assert(isdefined(self.var_66cb03ad));
-    #/
-    /#
-        assert(isdefined(self.maxhealth));
-    #/
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isdefined(self.var_66cb03ad));
+    assert(isdefined(self.maxhealth));
+    assert(isplayer(self));
     var_bc840360 = isdefined(self.heal) && isdefined(self.heal.var_bc840360) ? self.heal.var_bc840360 : 0;
     if (var_bc840360 == 0) {
         var_bc840360 = self.var_66cb03ad;
@@ -382,9 +374,7 @@ function private heal(var_dc77251f) {
         self notify(#"snd_breathing_better");
     }
     var_bc840360 = player function_f8139729();
-    /#
-        assert(var_bc840360 > 0);
-    #/
+    assert(var_bc840360 > 0);
     if (isdefined(player.var_44d52546) && player.var_44d52546) {
         regen_amount = 1;
     } else {
@@ -458,9 +448,7 @@ function private function_69e7b01c(ratio) {
 // Size: 0x154
 function player_health_regen() {
     if (self.health <= 0) {
-        /#
-            assert(!isalive(self));
-        #/
+        assert(!isalive(self));
         self.var_4d9b2bc3 = 0;
         return;
     }

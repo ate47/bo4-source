@@ -11,26 +11,29 @@
 // Method(s) 25 Total 25
 class robotphalanx {
 
+    var breakingpoint_;
+    var currentrobotcount_;
+    var endposition_;
+    var phalanxtype_;
+    var scattered_;
+    var startposition_;
+    var startrobotcount_;
+    var tier1robots_;
+    var tier2robots_;
+    var tier3robots_;
+
     // Namespace robotphalanx/robot_phalanx
     // Params 0, eflags: 0x9 linked
     // Checksum 0x4fc4c550, Offset: 0x16b8
     // Size: 0x56
-    __constructor() {
-        self.tier1robots_ = [];
-        self.tier2robots_ = [];
-        self.tier3robots_ = [];
-        self.startrobotcount_ = 0;
-        self.currentrobotcount_ = 0;
-        self.breakingpoint_ = 0;
-        self.scattered_ = 0;
-    }
-
-    // Namespace robotphalanx/robot_phalanx
-    // Params 0, eflags: 0x11 linked
-    // Checksum 0x80f724d1, Offset: 0x1718
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        tier1robots_ = [];
+        tier2robots_ = [];
+        tier3robots_ = [];
+        startrobotcount_ = 0;
+        currentrobotcount_ = 0;
+        breakingpoint_ = 0;
+        scattered_ = 0;
     }
 
     // Namespace robotphalanx/robot_phalanx
@@ -38,18 +41,18 @@ class robotphalanx {
     // Checksum 0x47144607, Offset: 0x1d50
     // Size: 0xee
     function scatterphalanx() {
-        if (!self.scattered_) {
-            self.scattered_ = 1;
-            _releaserobots(self.tier1robots_);
-            self.tier1robots_ = [];
-            _assignphalanxstance(self.tier2robots_, "crouch");
+        if (!scattered_) {
+            scattered_ = 1;
+            _releaserobots(tier1robots_);
+            tier1robots_ = [];
+            _assignphalanxstance(tier2robots_, "crouch");
             wait(randomfloatrange(5, 7));
-            _releaserobots(self.tier2robots_);
-            self.tier2robots_ = [];
-            _assignphalanxstance(self.tier3robots_, "crouch");
+            _releaserobots(tier2robots_);
+            tier2robots_ = [];
+            _assignphalanxstance(tier3robots_, "crouch");
             wait(randomfloatrange(5, 7));
-            _releaserobots(self.tier3robots_);
-            self.tier3robots_ = [];
+            _releaserobots(tier3robots_);
+            tier3robots_ = [];
         }
     }
 
@@ -58,9 +61,9 @@ class robotphalanx {
     // Checksum 0x8a9fce1e, Offset: 0x1cf8
     // Size: 0x4c
     function resumefire() {
-        _resumefirerobots(self.tier1robots_);
-        _resumefirerobots(self.tier2robots_);
-        _resumefirerobots(self.tier3robots_);
+        _resumefirerobots(tier1robots_);
+        _resumefirerobots(tier2robots_);
+        _resumefirerobots(tier3robots_);
     }
 
     // Namespace robotphalanx/robot_phalanx
@@ -68,14 +71,14 @@ class robotphalanx {
     // Checksum 0xc1aa3fed, Offset: 0x1bd8
     // Size: 0x114
     function resumeadvance() {
-        if (!self.scattered_) {
-            _assignphalanxstance(self.tier1robots_, "stand");
+        if (!scattered_) {
+            _assignphalanxstance(tier1robots_, "stand");
             wait(1);
-            forward = vectornormalize(self.endposition_ - self.startposition_);
-            _movephalanxtier(self.tier1robots_, self.phalanxtype_, "phalanx_tier1", self.endposition_, forward);
-            _movephalanxtier(self.tier2robots_, self.phalanxtype_, "phalanx_tier2", self.endposition_, forward);
-            _movephalanxtier(self.tier3robots_, self.phalanxtype_, "phalanx_tier3", self.endposition_, forward);
-            _assignphalanxstance(self.tier1robots_, "crouch");
+            forward = vectornormalize(endposition_ - startposition_);
+            _movephalanxtier(tier1robots_, phalanxtype_, "phalanx_tier1", endposition_, forward);
+            _movephalanxtier(tier2robots_, phalanxtype_, "phalanx_tier2", endposition_, forward);
+            _movephalanxtier(tier3robots_, phalanxtype_, "phalanx_tier3", endposition_, forward);
+            _assignphalanxstance(tier1robots_, "crouch");
         }
     }
 
@@ -84,32 +87,24 @@ class robotphalanx {
     // Checksum 0x31ade7c8, Offset: 0x18c0
     // Size: 0x30c
     function initialize(phalanxtype, origin, destination, breakingpoint, maxtiersize = 10, tieronespawner = undefined, tiertwospawner = undefined, tierthreespawner = undefined) {
-        /#
-            assert(isstring(phalanxtype));
-        #/
-        /#
-            assert(isint(breakingpoint));
-        #/
-        /#
-            assert(isvec(origin));
-        #/
-        /#
-            assert(isvec(destination));
-        #/
+        assert(isstring(phalanxtype));
+        assert(isint(breakingpoint));
+        assert(isvec(origin));
+        assert(isvec(destination));
         maxtiersize = math::clamp(maxtiersize, 1, 10);
         forward = vectornormalize(destination - origin);
-        self.tier1robots_ = _createphalanxtier(phalanxtype, "phalanx_tier1", origin, forward, maxtiersize, tieronespawner);
-        self.tier2robots_ = _createphalanxtier(phalanxtype, "phalanx_tier2", origin, forward, maxtiersize, tiertwospawner);
-        self.tier3robots_ = _createphalanxtier(phalanxtype, "phalanx_tier3", origin, forward, maxtiersize, tierthreespawner);
-        _assignphalanxstance(self.tier1robots_, "crouch");
-        _movephalanxtier(self.tier1robots_, phalanxtype, "phalanx_tier1", destination, forward);
-        _movephalanxtier(self.tier2robots_, phalanxtype, "phalanx_tier2", destination, forward);
-        _movephalanxtier(self.tier3robots_, phalanxtype, "phalanx_tier3", destination, forward);
-        self.startrobotcount_ = self.tier1robots_.size + self.tier2robots_.size + self.tier3robots_.size;
-        self.breakingpoint_ = breakingpoint;
-        self.startposition_ = origin;
-        self.endposition_ = destination;
-        self.phalanxtype_ = phalanxtype;
+        tier1robots_ = _createphalanxtier(phalanxtype, "phalanx_tier1", origin, forward, maxtiersize, tieronespawner);
+        tier2robots_ = _createphalanxtier(phalanxtype, "phalanx_tier2", origin, forward, maxtiersize, tiertwospawner);
+        tier3robots_ = _createphalanxtier(phalanxtype, "phalanx_tier3", origin, forward, maxtiersize, tierthreespawner);
+        _assignphalanxstance(tier1robots_, "crouch");
+        _movephalanxtier(tier1robots_, phalanxtype, "phalanx_tier1", destination, forward);
+        _movephalanxtier(tier2robots_, phalanxtype, "phalanx_tier2", destination, forward);
+        _movephalanxtier(tier3robots_, phalanxtype, "phalanx_tier3", destination, forward);
+        startrobotcount_ = tier1robots_.size + tier2robots_.size + tier3robots_.size;
+        breakingpoint_ = breakingpoint;
+        startposition_ = origin;
+        endposition_ = destination;
+        phalanxtype_ = phalanxtype;
         self thread _updatephalanxthread(self);
     }
 
@@ -118,10 +113,10 @@ class robotphalanx {
     // Checksum 0x444f84a0, Offset: 0x1860
     // Size: 0x54
     function haltadvance() {
-        if (!self.scattered_) {
-            _haltadvance(self.tier1robots_);
-            _haltadvance(self.tier2robots_);
-            _haltadvance(self.tier3robots_);
+        if (!scattered_) {
+            _haltadvance(tier1robots_);
+            _haltadvance(tier2robots_);
+            _haltadvance(tier3robots_);
         }
     }
 
@@ -130,9 +125,9 @@ class robotphalanx {
     // Checksum 0xd2d527df, Offset: 0x1808
     // Size: 0x4c
     function haltfire() {
-        _haltfire(self.tier1robots_);
-        _haltfire(self.tier2robots_);
-        _haltfire(self.tier3robots_);
+        _haltfire(tier1robots_);
+        _haltfire(tier2robots_);
+        _haltfire(tier3robots_);
     }
 
     // Namespace robotphalanx/robot_phalanx
@@ -140,14 +135,14 @@ class robotphalanx {
     // Checksum 0xcfc6d9e, Offset: 0x1728
     // Size: 0xd4
     function private _updatephalanx() {
-        if (self.scattered_) {
+        if (scattered_) {
             return false;
         }
-        self.tier1robots_ = _prunedead(self.tier1robots_);
-        self.tier2robots_ = _prunedead(self.tier2robots_);
-        self.tier3robots_ = _prunedead(self.tier3robots_);
-        self.currentrobotcount_ = self.tier1robots_.size + self.tier2robots_.size + self.tier2robots_.size;
-        if (self.currentrobotcount_ <= self.startrobotcount_ - self.breakingpoint_) {
+        tier1robots_ = _prunedead(tier1robots_);
+        tier2robots_ = _prunedead(tier2robots_);
+        tier3robots_ = _prunedead(tier3robots_);
+        currentrobotcount_ = tier1robots_.size + tier2robots_.size + tier2robots_.size;
+        if (currentrobotcount_ <= startrobotcount_ - breakingpoint_) {
             scatterphalanx();
             return false;
         }
@@ -177,9 +172,7 @@ class robotphalanx {
     // Checksum 0xcb6b4ee6, Offset: 0x1530
     // Size: 0xa8
     function private _resumefirerobots(robots) {
-        /#
-            assert(isarray(robots));
-        #/
+        assert(isarray(robots));
         foreach (robot in robots) {
             _resumefire(robot);
         }
@@ -247,14 +240,10 @@ class robotphalanx {
     function private _movephalanxtier(robots, phalanxtype, tier, destination, forward) {
         positions = _getphalanxpositions(phalanxtype, tier);
         angles = vectortoangles(forward);
-        /#
-            assert(robots.size <= positions.size, "<unknown string>");
-        #/
+        assert(robots.size <= positions.size, "<unknown string>");
         foreach (index, robot in robots) {
             if (isdefined(robot) && isalive(robot)) {
-                /#
-                    assert(isvec(positions[index]), "<unknown string>" + index + "<unknown string>" + tier + "<unknown string>" + phalanxtype);
-                #/
+                assert(isvec(positions[index]), "<unknown string>" + index + "<unknown string>" + tier + "<unknown string>" + phalanxtype);
                 orientedpos = _rotatevec(positions[index], angles[1] - 90);
                 navmeshposition = getclosestpointonnavmesh(destination + orientedpos, 200);
                 robot function_a57c34b7(navmeshposition);
@@ -267,9 +256,7 @@ class robotphalanx {
     // Checksum 0x1be9282b, Offset: 0xf10
     // Size: 0xe4
     function private _initializerobot(robot) {
-        /#
-            assert(isactor(robot));
-        #/
+        assert(isactor(robot));
         robot ai::set_behavior_attribute("phalanx", 1);
         robot ai::set_behavior_attribute("move_mode", "marching");
         robot ai::set_behavior_attribute("force_cover", 1);
@@ -282,9 +269,7 @@ class robotphalanx {
     // Checksum 0xeffcb851, Offset: 0xe28
     // Size: 0xe0
     function private _haltfire(robots) {
-        /#
-            assert(isarray(robots));
-        #/
+        assert(isarray(robots));
         foreach (robot in robots) {
             if (isdefined(robot) && isalive(robot)) {
                 robot val::set(#"halt_fire", "ignoreall", 1);
@@ -297,9 +282,7 @@ class robotphalanx {
     // Checksum 0xf9f0e0bd, Offset: 0xcf8
     // Size: 0x128
     function private _haltadvance(robots) {
-        /#
-            assert(isarray(robots));
-        #/
+        assert(isarray(robots));
         foreach (robot in robots) {
             if (isdefined(robot) && isalive(robot) && robot haspath()) {
                 navmeshposition = getclosestpointonnavmesh(robot.origin, 200);
@@ -315,12 +298,8 @@ class robotphalanx {
     // Size: 0xb4
     function private _getphalanxspawner(tier) {
         spawner = getspawnerarray(tier, "targetname");
-        /#
-            assert(spawner.size >= 0, "<unknown string>" + "<unknown string>" + "<unknown string>");
-        #/
-        /#
-            assert(spawner.size == 1, "<unknown string>" + "<unknown string>" + "<unknown string>");
-        #/
+        assert(spawner.size >= 0, "<unknown string>" + "<unknown string>" + "<unknown string>");
+        assert(spawner.size == 1, "<unknown string>" + "<unknown string>" + "<unknown string>");
         return spawner[0];
     }
 
@@ -345,7 +324,7 @@ class robotphalanx {
             case #"phalanx_tier1":
                 return array((0, 0, 0), (-48, -64, 0), (-96, -128, 0), (-144, -192, 0));
             case #"phalanx_tier2":
-                return array(vectorscale((1, 0, 0), 64), (16, -64, 0), (-48, -128, 0), (-112, -192, 0));
+                return array((64, 0, 0), (16, -64, 0), (-48, -128, 0), (-112, -192, 0));
             case #"phalanx_tier3":
                 return array();
             }
@@ -355,7 +334,7 @@ class robotphalanx {
             case #"phalanx_tier1":
                 return array((0, 0, 0), (48, -64, 0), (96, -128, 0), (144, -192, 0));
             case #"phalanx_tier2":
-                return array(vectorscale((-1, 0, 0), 64), (-16, -64, 0), (48, -128, 0), (112, -192, 0));
+                return array((-64, 0, 0), (-16, -64, 0), (48, -128, 0), (112, -192, 0));
             case #"phalanx_tier3":
                 return array();
             }
@@ -363,7 +342,7 @@ class robotphalanx {
         case #"phalanx_forward":
             switch (tier) {
             case #"phalanx_tier1":
-                return array((0, 0, 0), vectorscale((1, 0, 0), 64), vectorscale((1, 0, 0), 128), vectorscale((1, 0, 0), 192));
+                return array((0, 0, 0), (64, 0, 0), (128, 0, 0), (192, 0, 0));
             case #"phalanx_tier2":
                 return array((-32, -64, 0), (32, -64, 0), (96, -64, 0), (160, -64, 0));
             case #"phalanx_tier3":
@@ -373,9 +352,9 @@ class robotphalanx {
         case #"phalanx_column":
             switch (tier) {
             case #"phalanx_tier1":
-                return array((0, 0, 0), vectorscale((-1, 0, 0), 64), vectorscale((0, -1, 0), 64), vectorscale((-1, -1, 0), 64));
+                return array((0, 0, 0), (-64, 0, 0), (0, -64, 0), (-64, -64, 0));
             case #"phalanx_tier2":
-                return array(vectorscale((0, -1, 0), 128), (-64, -128, 0), vectorscale((0, -1, 0), 192), (-64, -192, 0));
+                return array((0, -128, 0), (-64, -128, 0), (0, -192, 0), (-64, -192, 0));
             case #"phalanx_tier3":
                 return array();
             }
@@ -383,7 +362,7 @@ class robotphalanx {
         case #"phalanx_column_right":
             switch (tier) {
             case #"phalanx_tier1":
-                return array((0, 0, 0), vectorscale((0, -1, 0), 64), vectorscale((0, -1, 0), 128), vectorscale((0, -1, 0), 192));
+                return array((0, 0, 0), (0, -64, 0), (0, -128, 0), (0, -192, 0));
             case #"phalanx_tier2":
                 return array();
             case #"phalanx_tier3":
@@ -391,14 +370,10 @@ class robotphalanx {
             }
             break;
         default:
-            /#
-                assert("<unknown string>" + phalanxtype + "<unknown string>");
-            #/
+            assert("<unknown string>" + phalanxtype + "<unknown string>");
             break;
         }
-        /#
-            assert("<unknown string>" + tier + "<unknown string>");
-        #/
+        assert("<unknown string>" + tier + "<unknown string>");
     }
 
     // Namespace robotphalanx/robot_phalanx
@@ -455,9 +430,7 @@ class robotphalanx {
     // Checksum 0xe241323b, Offset: 0x1c0
     // Size: 0xd8
     function private _assignphalanxstance(robots, stance) {
-        /#
-            assert(isarray(robots));
-        #/
+        assert(isarray(robots));
         foreach (robot in robots) {
             if (isdefined(robot) && isalive(robot)) {
                 robot ai::set_behavior_attribute("phalanx_force_stance", stance);

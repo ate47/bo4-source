@@ -152,16 +152,14 @@ function updatedebuginfointernal() {
 // Size: 0x134
 function drawdebugenttext(text, ent, color, channel) {
     /#
-        /#
-            assert(isdefined(ent));
-        #/
+        assert(isdefined(ent));
         if (!getdvarint(#"recorder_enablerec", 0)) {
             if (!isdefined(ent.debuganimscripttime) || gettime() > ent.debuganimscripttime) {
                 ent.debuganimscriptlevel = 0;
                 ent.debuganimscripttime = gettime();
             }
-            indentlevel = vectorscale(vectorscale((0, 0, -1), 10), ent.debuganimscriptlevel);
-            print3d(self.origin + vectorscale((0, 0, 1), 70) + indentlevel, text, color);
+            indentlevel = vectorscale((0, 0, -10), ent.debuganimscriptlevel);
+            print3d(self.origin + (0, 0, 70) + indentlevel, text, color);
             ent.debuganimscriptlevel++;
             return;
         }
@@ -182,12 +180,8 @@ function debugpushstate(statename, extrainfo) {
         if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
             return;
         }
-        /#
-            assert(isdefined(self.debuginfo.states));
-        #/
-        /#
-            assert(isdefined(statename));
-        #/
+        assert(isdefined(self.debuginfo.states));
+        assert(isdefined(statename));
         state = spawnstruct();
         state.statename = statename;
         state.statelevel = self.debuginfo.statelevel;
@@ -214,14 +208,10 @@ function debugaddstateinfo(statename, extrainfo) {
         if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
             return;
         }
-        /#
-            assert(isdefined(self.debuginfo.states));
-        #/
+        assert(isdefined(self.debuginfo.states));
         if (isdefined(statename)) {
             for (i = self.debuginfo.states.size - 1; i >= 0; i--) {
-                /#
-                    assert(isdefined(self.debuginfo.states[i]));
-                #/
+                assert(isdefined(self.debuginfo.states[i]));
                 if (self.debuginfo.states[i].statename == statename) {
                     if (!isdefined(self.debuginfo.states[i].extrainfo)) {
                         self.debuginfo.states[i].extrainfo = "<unknown string>";
@@ -234,9 +224,7 @@ function debugaddstateinfo(statename, extrainfo) {
         }
         if (self.debuginfo.states.size > 0) {
             lastindex = self.debuginfo.states.size - 1;
-            /#
-                assert(isdefined(self.debuginfo.states[lastindex]));
-            #/
+            assert(isdefined(self.debuginfo.states[lastindex]));
             if (!isdefined(self.debuginfo.states[lastindex].extrainfo)) {
                 self.debuginfo.states[lastindex].extrainfo = "<unknown string>";
             }
@@ -261,9 +249,7 @@ function debugpopstate(statename, exitreason) {
         if (ai_entnum > -1 && ai_entnum != self getentitynumber()) {
             return;
         }
-        /#
-            assert(isdefined(self.debuginfo.states));
-        #/
+        assert(isdefined(self.debuginfo.states));
         if (isdefined(statename)) {
             for (i = 0; i < self.debuginfo.states.size; i++) {
                 if (self.debuginfo.states[i].statename == statename && self.debuginfo.states[i].statevalid) {

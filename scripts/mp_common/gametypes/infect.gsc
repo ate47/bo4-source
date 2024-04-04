@@ -413,7 +413,6 @@ function function_98c89d66(victim, wassuicide) {
 function function_cc49dfcf() {
     level endon(#"game_ended");
     self endon(#"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"player_input_revive", #"death");
     return waitresult._notify;
 }
@@ -725,7 +724,6 @@ function choosefirstinfected() {
 // Size: 0x92
 function function_a6489256() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"game_ended", #"hash_367e3645fd146620");
         if (isdefined(level.var_43406ee9)) {
             level.var_43406ee9.alpha = 0;
@@ -763,7 +761,6 @@ function function_a5abd7ee() {
 // Size: 0x86
 function function_3ba09e5e() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"game_ended", #"hash_14fed44cd3ece79d");
         if (isdefined(level.var_6c6b8981)) {
             level.var_6c6b8981.alpha = 0;

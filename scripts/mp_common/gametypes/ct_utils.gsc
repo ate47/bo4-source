@@ -714,7 +714,6 @@ function function_1eef023d() {
 // Size: 0xfc
 function function_18696050() {
     self endon(#"death");
-    s_notify = undefined;
     s_notify = self waittill(#"trigger");
     player = s_notify.activator;
     level.var_76fdcc3e--;
@@ -1239,7 +1238,7 @@ function function_aa9c8fbf() {
 // Checksum 0x212371, Offset: 0x4788
 // Size: 0x9c
 function face_target(target) {
-    targetangles = vectortoangles(target.origin + vectorscale((0, 0, 1), 32) - self geteye());
+    targetangles = vectortoangles(target.origin + (0, 0, 32) - self geteye());
     targetangles = (absangleclamp360(targetangles[0]), targetangles[1], targetangles[2]);
     self setplayerangles(targetangles);
 }
@@ -1617,9 +1616,7 @@ function function_75c126af(str_id) {
     a_str_tokens = strtok2(var_a41c8e18, " ");
     var_62de65a3 = 0;
     foreach (token in a_str_tokens) {
-        if (strendswith(token, "
-") || strstartswith(token, "
-")) {
+        if (strendswith(token, "\n") || strstartswith(token, "\n")) {
             var_d9c6aaa3 = 1;
         }
     }
@@ -1875,9 +1872,7 @@ function objcounter_init(str_label, var_8f1f8855, n_total, n_mode = 0, var_455d8
 // Size: 0x16c
 function function_785eb2ca() {
     if (isplayer(self)) {
-        /#
-            assert(isdefined(level.ct_shared_objcounter.n_count), "killstreak_ready_");
-        #/
+        assert(isdefined(level.ct_shared_objcounter.n_count), "killstreak_ready_");
         switch (level.ct_shared_objcounter.n_mode) {
         case 0:
             level.ct_shared_objcounter.n_count--;
@@ -2145,7 +2140,7 @@ function can_see(v_pos, var_7b20e52b) {
     dp = vectordot(v_forward, v_dir);
     if (dp > 0.7) {
         if (isdefined(var_7b20e52b) && var_7b20e52b) {
-            trace = bullettrace(self.origin + vectorscale((0, 0, 1), 40), v_pos, 0, undefined);
+            trace = bullettrace(self.origin + (0, 0, 40), v_pos, 0, undefined);
             if (trace[#"fraction"] < 1) {
                 return false;
             }
@@ -2189,7 +2184,6 @@ function function_4660a5e9() {
     self endoncallback(&function_bcc0f2a2, #"death");
     while (self.health > 25) {
         self thread scene::play("scene_rifle_m_stand_idle_lowready", self);
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         wpn_used = s_notify.weapon;
         e_attacker = s_notify.attacker;
@@ -2576,7 +2570,7 @@ function function_e0d36a2c(str_vo, var_8a30c2bf, var_aa62f5bf, arena_defend_wasp
     } else {
         level.var_32ff41f7 = undefined;
     }
-    trace = bullettrace(s_loc.origin, s_loc.origin + vectorscale((0, 0, -1), 500), 0, e_player);
+    trace = bullettrace(s_loc.origin, s_loc.origin + (0, 0, -500), 0, e_player);
     v_ground_pos = trace[#"position"];
     level.var_e72728b8 = var_aa62f5bf;
     if (isdefined(level.var_c06def85)) {
@@ -2684,7 +2678,7 @@ function function_b7f367ed(old_position, new_position) {
 // Checksum 0x1b6740e1, Offset: 0x9660
 // Size: 0x32
 function is_falling(position) {
-    return function_b7f367ed(position, position + vectorscale((0, 0, -1), 500));
+    return function_b7f367ed(position, position + (0, 0, -500));
 }
 
 // Namespace ct_utils/ct_utils
@@ -2823,7 +2817,7 @@ function function_3e0767e2(b_play_fx = 1) {
     if (isdefined(b_play_fx) && b_play_fx) {
         playfx("player/fx8_plyr_spawn_distortion", self.origin, anglestoforward(ex_elevator_overlight_indicator_), anglestoup(ex_elevator_overlight_indicator_));
     }
-    self setorigin(vectorscale((-1, -1, -1), 10000));
+    self setorigin((-10000, -10000, -10000));
     self ct_bots::disablebot();
 }
 
@@ -2857,9 +2851,7 @@ function player_collisionbox(var_96065dae, var_8d3fbac4 = undefined, n_size = 0)
         level.var_87f7bbf = spawnfx("ui/fx8_ui_ct_marker_team_b180", var_874f43c3.origin, fwd, right);
         break;
     }
-    /#
-        assert(!isdefined(level.var_33bd6a8));
-    #/
+    assert(!isdefined(level.var_33bd6a8));
     level.var_33bd6a8 = spawn("script_model", var_f225da70);
     level.var_33bd6a8.angles = (0, 0, 0);
     level.var_33bd6a8.var_96065dae = var_96065dae;
@@ -2877,7 +2869,6 @@ function player_collisionbox(var_96065dae, var_8d3fbac4 = undefined, n_size = 0)
     level.var_33bd6a8 ghost();
     level.var_33bd6a8 notsolid();
     level.var_33bd6a8 clientfield::set("collisionbox_render", 1);
-    waitresult = undefined;
     waitresult = var_874f43c3 waittill(#"trigger");
     level.var_33bd6a8 solid();
     triggerfx(level.var_87f7bbf);
@@ -3554,7 +3545,6 @@ function function_ccd9180e() {
     level endon(#"combattraining_logic_finished");
     level.var_1bf21bf2 = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"hash_70f03cfbb15356c0");
         e_dart = waitresult.dart;
         level.var_1bf21bf2 = e_dart;
@@ -3610,17 +3600,13 @@ function function_9ab507a9(var_76b15be0, var_8e92afbd, var_da2d40e, var_e380ff6c
     }
     level.a_s_colbounds[var_76b15be0] = {#targetname:var_76b15be0, #a_effects:[], #var_5d90b13a:var_8e92afbd, #var_a90a2d1:var_da2d40e, #var_e380ff6c:var_e380ff6c, #var_40347291:var_40347291, #b_disconnectpaths:b_disconnectpaths};
     var_e62fe646 = getentarray(var_76b15be0, "targetname");
-    /#
-        assert(var_e62fe646.size > 0, "<unknown string>");
-    #/
+    assert(var_e62fe646.size > 0, "<unknown string>");
     level.a_s_colbounds[var_76b15be0].var_e62fe646 = var_e62fe646;
     while (true) {
         level thread colbounds_off(var_76b15be0, 1);
-        s_notify = undefined;
         s_notify = level waittill(var_8e92afbd);
         level thread colbounds_on(var_76b15be0);
         do {
-            s_notify = undefined;
             s_notify = level waittill(var_8e92afbd, var_da2d40e);
             if (s_notify._notify == var_8e92afbd) {
                 level thread function_95f28639(var_76b15be0);
@@ -3646,9 +3632,7 @@ function function_e46a6ea7(_hash) {
 // Checksum 0xdc0c094e, Offset: 0xce30
 // Size: 0x154
 function colbounds_on(str_id) {
-    /#
-        assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
-    #/
+    assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
     level.a_s_colbounds[str_id].b_on = 1;
     var_e62fe646 = level.a_s_colbounds[str_id].var_e62fe646;
     foreach (e_coll in var_e62fe646) {
@@ -3665,9 +3649,7 @@ function colbounds_on(str_id) {
 // Checksum 0xee106377, Offset: 0xcf90
 // Size: 0x17e
 function colbounds_off(str_id, var_c57d5cfe = 0) {
-    /#
-        assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
-    #/
+    assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
     var_e62fe646 = level.a_s_colbounds[str_id].var_e62fe646;
     foreach (e_coll in var_e62fe646) {
         e_coll notsolid();
@@ -3686,9 +3668,7 @@ function colbounds_off(str_id, var_c57d5cfe = 0) {
 // Checksum 0x76210b8, Offset: 0xd118
 // Size: 0x5b0
 function function_95f28639(str_id) {
-    /#
-        assert(level.a_s_colbounds[str_id].b_on == 1, "<unknown string>");
-    #/
+    assert(level.a_s_colbounds[str_id].b_on == 1, "<unknown string>");
     if (level.a_s_colbounds[str_id].a_effects.size === 0) {
         level.a_s_colbounds[str_id].a_effects = [];
         foreach (e_coll in level.a_s_colbounds[str_id].var_e62fe646) {
@@ -3784,9 +3764,7 @@ function function_95f28639(str_id) {
 // Checksum 0x8f74aa8a, Offset: 0xd6d0
 // Size: 0x11a
 function function_a3f8ddfa(str_id) {
-    /#
-        assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
-    #/
+    assert(isdefined(level.a_s_colbounds[str_id]), "<unknown string>");
     if (isdefined(level.a_s_colbounds[str_id].a_effects) && level.a_s_colbounds[str_id].a_effects.size > 0) {
         foreach (effect in level.a_s_colbounds[str_id].a_effects) {
             effect delete();
@@ -4098,9 +4076,7 @@ function function_5160be8c() {
     if (isdefined(e_player)) {
         cost = killstreaks::get_killstreak_momentum_cost(e_player, level.var_b4a06c5b);
         event = #"ekia";
-        /#
-            assert(isdefined(level.scoreinfo));
-        #/
+        assert(isdefined(level.scoreinfo));
         if (isdefined(level.scoreinfo) && isdefined(level.scoreinfo[event])) {
             eventindex = level.scoreinfo[event][#"row"];
             if (isdefined(eventindex)) {
@@ -4360,10 +4336,10 @@ function function_c444a920(s_loc, var_9c8d914) {
 // Checksum 0x92b93340, Offset: 0xf5a0
 // Size: 0x1d2
 function function_9d1fc273(e_obj, onusefunc, str_objective, var_484df237) {
-    e_obj.trigger = spawn("trigger_radius_use", e_obj.origin + vectorscale((0, 0, 1), 15), 0, 120, 100);
+    e_obj.trigger = spawn("trigger_radius_use", e_obj.origin + (0, 0, 15), 0, 120, 100);
     e_obj.trigger setcursorhint("HINT_INTERACTIVE_PROMPT");
     e_obj.trigger triggerignoreteam();
-    e_obj.gameobject = gameobjects::create_use_object(#"neutral", e_obj.trigger, [], vectorscale((0, 0, 1), 60), str_objective);
+    e_obj.gameobject = gameobjects::create_use_object(#"neutral", e_obj.trigger, [], (0, 0, 60), str_objective);
     e_obj.gameobject gameobjects::set_objective_entity(e_obj.gameobject);
     e_obj.gameobject gameobjects::set_visible_team(#"any");
     e_obj.gameobject gameobjects::allow_use(#"any");

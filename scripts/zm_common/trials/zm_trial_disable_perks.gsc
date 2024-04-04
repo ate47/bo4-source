@@ -37,9 +37,7 @@ function __init__() {
 // Size: 0x154
 function private on_begin() {
     level zm_trial::function_2b3a3307(1);
-    /#
-        assert(isdefined(level.var_b8be892e));
-    #/
+    assert(isdefined(level.var_b8be892e));
     foreach (player in getplayers()) {
         player function_f0b698a7();
         if (!isdefined(player.var_7864a0f6)) {
@@ -60,9 +58,7 @@ function private on_end(round_reset) {
     level zm_trial::function_2b3a3307(0);
     if (!round_reset) {
         foreach (player in getplayers()) {
-            /#
-                assert(isdefined(player.var_7864a0f6));
-            #/
+            assert(isdefined(player.var_7864a0f6));
             player zm_trial_util::function_d37a769(player.var_7864a0f6);
             player function_2c0ae6d1();
             player.var_7864a0f6 = undefined;
@@ -165,9 +161,7 @@ function private function_85611c27() {
 // Checksum 0xd6ae20d7, Offset: 0x8d8
 // Size: 0x15e
 function private function_2c0ae6d1() {
-    /#
-        assert(isdefined(self.var_4a17c2cb));
-    #/
+    assert(isdefined(self.var_4a17c2cb));
     var_4493e3e1 = isarray(self.var_7864a0f6.var_724d826b) && isinarray(self.var_7864a0f6.var_724d826b, #"specialty_additionalprimaryweapon");
     if ((var_4493e3e1 || isinarray(self.var_466b927f, #"specialty_additionalprimaryweapon")) && isdefined(self.var_7864a0f6.additional_primary_weapon) && isdefined(self.var_7864a0f6.var_dd9bd473) && !self hasweapon(self.var_7864a0f6.additional_primary_weapon)) {
         self player::weapondata_give(self.var_7864a0f6.var_dd9bd473);

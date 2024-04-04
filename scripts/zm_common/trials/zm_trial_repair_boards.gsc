@@ -76,7 +76,6 @@ function private function_738e3a43() {
     level endon(#"hash_7646638df88a3656");
     var_812095a3 = 0;
     while (self.var_28433a54) {
-        waitresult = undefined;
         waitresult = level waittill(#"rebuild_board");
         var_c7ff10eb = 0;
         var_812095a3++;

@@ -86,7 +86,6 @@ function private function_9592c5c1() {
     self endon(#"disconnect");
     self thread function_1b26ce66();
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -128,7 +127,6 @@ function private function_9592c5c1() {
 function private function_1b26ce66() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
         if (function_83c8b26e(var_cad4df8e, 2)) {
@@ -259,7 +257,6 @@ function private function_335a27d1() {
 function function_6fa9af0e(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == w_minigun) {
         }
@@ -296,7 +293,6 @@ function function_bce04a11(w_minigun) {
 function function_ebaedcdd(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee_power_left");
         if (s_result.weapon == w_minigun) {
             var_79db2feb = self gettagorigin("tag_flash2");
@@ -322,27 +318,25 @@ function function_ebaedcdd(w_minigun) {
 function function_9d166ae8(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon === w_minigun && s_result._notify == "weapon_melee") {
             self playsoundontag("wpn_minigun_lvl3_throw", "j_head");
             wait(1.35);
             self thread zm_hero_weapon::function_4e984e83(w_minigun, 1);
             var_79db2feb = self gettagorigin("tag_weapon_right");
-            var_79db2feb = var_79db2feb + vectorscale((0, 0, 1), 15);
+            var_79db2feb = var_79db2feb + (0, 0, 15);
             v_forward_angles = anglestoforward(self getplayerangles());
             var_70346f17 = v_forward_angles[0] * 850;
             var_5a76439b = v_forward_angles[1] * 850;
             var_4bbea62c = v_forward_angles[2] * 850 + 150;
             var_a460aa94 = (var_70346f17, var_5a76439b, var_4bbea62c);
-            var_40076092 = vectorscale((0, 0, 1), 12);
+            var_40076092 = (0, 0, 12);
             e_grenade = self magicgrenadetype(getweapon(#"hash_628d99860c78650f"), var_79db2feb, var_a460aa94, 2);
             while (isdefined(e_grenade)) {
-                s_result = undefined;
                 s_result = e_grenade waittilltimeout(4, #"stationary", #"death");
                 if (isdefined(e_grenade)) {
                     if (s_result._notify == "stationary") {
-                        v_ground_pos = groundtrace(e_grenade.origin + vectorscale((0, 0, 1), 50), e_grenade.origin + vectorscale((0, 0, -1), 500), 0, e_grenade, 0, 0)[#"position"];
+                        v_ground_pos = groundtrace(e_grenade.origin + (0, 0, 50), e_grenade.origin + (0, 0, -500), 0, e_grenade, 0, 0)[#"position"];
                         if (isdefined(v_ground_pos)) {
                             v_end_pos = getclosestpointonnavmesh(v_ground_pos, 128, 24);
                             if (isdefined(v_end_pos)) {
@@ -482,7 +476,6 @@ function function_768a7fab(var_9b5f3241) {
 // Size: 0xac
 function function_478a4910(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee_power_left");
     if (s_result.weapon == w_minigun) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_2", #"minigun");
@@ -495,7 +488,6 @@ function function_478a4910(w_minigun) {
 // Size: 0xc4
 function function_68ff89f7(w_minigun) {
     self endon(#"bled_out", #"death", #"hero_minigun_expired");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee");
     if (s_result.weapon === w_minigun && s_result._notify == "weapon_melee") {
         self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"minigun");

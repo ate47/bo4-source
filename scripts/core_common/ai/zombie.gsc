@@ -45,185 +45,93 @@ function autoexec init() {
 // Checksum 0x3e55f4a7, Offset: 0x628
 // Size: 0x14cc
 function private initzombiebehaviorsandasm() {
-    /#
-        assert(!isdefined(&zombiemoveactionstart) || isscriptfunctionptr(&zombiemoveactionstart));
-    #/
-    /#
-        assert(!isdefined(&zombiemoveactionupdate) || isscriptfunctionptr(&zombiemoveactionupdate));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(&zombiemoveactionstart) || isscriptfunctionptr(&zombiemoveactionstart));
+    assert(!isdefined(&zombiemoveactionupdate) || isscriptfunctionptr(&zombiemoveactionupdate));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"zombiemoveaction", &zombiemoveactionstart, &zombiemoveactionupdate, undefined);
-    /#
-        assert(!isdefined(&function_9b6830c9) || isscriptfunctionptr(&function_9b6830c9));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_fbdc2cc4) || isscriptfunctionptr(&function_fbdc2cc4));
-    #/
+    assert(!isdefined(&function_9b6830c9) || isscriptfunctionptr(&function_9b6830c9));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_fbdc2cc4) || isscriptfunctionptr(&function_fbdc2cc4));
     behaviortreenetworkutility::registerbehaviortreeaction(#"zombiemeleeaction", &function_9b6830c9, undefined, &function_fbdc2cc4);
-    /#
-        assert(isscriptfunctionptr(&zombietargetservice));
-    #/
+    assert(isscriptfunctionptr(&zombietargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombietargetservice", &zombietargetservice);
-    /#
-        assert(isscriptfunctionptr(&zombiecrawlercollision));
-    #/
+    assert(isscriptfunctionptr(&zombiecrawlercollision));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiecrawlercollisionservice", &zombiecrawlercollision);
-    /#
-        assert(isscriptfunctionptr(&zombietraversalservice));
-    #/
+    assert(isscriptfunctionptr(&zombietraversalservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombietraversalservice", &zombietraversalservice);
-    /#
-        assert(isscriptfunctionptr(&zombieisatattackobject));
-    #/
+    assert(isscriptfunctionptr(&zombieisatattackobject));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieisatattackobject", &zombieisatattackobject);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldattackobject));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldattackobject));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldattackobject", &zombieshouldattackobject);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldmeleecondition));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldmeleecondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldmelee", &zombieshouldmeleecondition);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldjumpmeleecondition));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldjumpmeleecondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldjumpmelee", &zombieshouldjumpmeleecondition);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldjumpunderwatermelee));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldjumpunderwatermelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldjumpunderwatermelee", &zombieshouldjumpunderwatermelee);
-    /#
-        assert(isscriptfunctionptr(&zombiegiblegscondition));
-    #/
+    assert(isscriptfunctionptr(&zombiegiblegscondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiegiblegscondition", &zombiegiblegscondition);
-    /#
-        assert(isscriptfunctionptr(&zombieshoulddisplaypain));
-    #/
+    assert(isscriptfunctionptr(&zombieshoulddisplaypain));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshoulddisplaypain", &zombieshoulddisplaypain);
-    /#
-        assert(isscriptfunctionptr(&iszombiewalking));
-    #/
+    assert(isscriptfunctionptr(&iszombiewalking));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"iszombiewalking", &iszombiewalking);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldmovelowg));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldmovelowg));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldmovelowg", &zombieshouldmovelowg);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldturn));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldturn));
     behaviorstatemachine::registerbsmscriptapiinternal(#"zombieshouldturn", &zombieshouldturn);
-    /#
-        assert(isscriptfunctionptr(&function_a716a3af));
-    #/
+    assert(isscriptfunctionptr(&function_a716a3af));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_4ba5bc2aba9e7670", &function_a716a3af);
-    /#
-        assert(isscriptfunctionptr(&function_1b8c9407));
-    #/
+    assert(isscriptfunctionptr(&function_1b8c9407));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4136381d29600bc", &function_1b8c9407);
-    /#
-        assert(isscriptfunctionptr(&function_ecba5a44));
-    #/
+    assert(isscriptfunctionptr(&function_ecba5a44));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1732367c7f780c76", &function_ecba5a44);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldmeleesuicide));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldmeleesuicide));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldmeleesuicide", &zombieshouldmeleesuicide);
-    /#
-        assert(isscriptfunctionptr(&zombiemeleesuicidestart));
-    #/
+    assert(isscriptfunctionptr(&zombiemeleesuicidestart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiemeleesuicidestart", &zombiemeleesuicidestart);
-    /#
-        assert(isscriptfunctionptr(&zombiemeleesuicideupdate));
-    #/
+    assert(isscriptfunctionptr(&zombiemeleesuicideupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiemeleesuicideupdate", &zombiemeleesuicideupdate);
-    /#
-        assert(isscriptfunctionptr(&zombiemeleesuicideterminate));
-    #/
+    assert(isscriptfunctionptr(&zombiemeleesuicideterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiemeleesuicideterminate", &zombiemeleesuicideterminate);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldjukecondition));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldjukecondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldjuke", &zombieshouldjukecondition);
-    /#
-        assert(isscriptfunctionptr(&zombiejukeactionstart));
-    #/
+    assert(isscriptfunctionptr(&zombiejukeactionstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiejukeactionstart", &zombiejukeactionstart);
-    /#
-        assert(isscriptfunctionptr(&zombiejukeactionterminate));
-    #/
+    assert(isscriptfunctionptr(&zombiejukeactionterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiejukeactionterminate", &zombiejukeactionterminate);
-    /#
-        assert(isscriptfunctionptr(&zombiedeathaction));
-    #/
+    assert(isscriptfunctionptr(&zombiedeathaction));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiedeathaction", &zombiedeathaction);
-    /#
-        assert(isscriptfunctionptr(&zombiejuke));
-    #/
+    assert(isscriptfunctionptr(&zombiejuke));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiejukeservice", &zombiejuke);
-    /#
-        assert(isscriptfunctionptr(&zombiestumble));
-    #/
+    assert(isscriptfunctionptr(&zombiestumble));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiestumbleservice", &zombiestumble);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldstumblecondition));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldstumblecondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiestumblecondition", &zombieshouldstumblecondition);
-    /#
-        assert(isscriptfunctionptr(&zombiestumbleactionstart));
-    #/
+    assert(isscriptfunctionptr(&zombiestumbleactionstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiestumbleactionstart", &zombiestumbleactionstart);
-    /#
-        assert(isscriptfunctionptr(&zombieattackobjectstart));
-    #/
+    assert(isscriptfunctionptr(&zombieattackobjectstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieattackobjectstart", &zombieattackobjectstart);
-    /#
-        assert(isscriptfunctionptr(&zombieattackobjectterminate));
-    #/
+    assert(isscriptfunctionptr(&zombieattackobjectterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieattackobjectterminate", &zombieattackobjectterminate);
-    /#
-        assert(isscriptfunctionptr(&waskilledbyinterdimensionalguncondition));
-    #/
+    assert(isscriptfunctionptr(&waskilledbyinterdimensionalguncondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"waskilledbyinterdimensionalgun", &waskilledbyinterdimensionalguncondition);
-    /#
-        assert(isscriptfunctionptr(&wascrushedbyinterdimensionalgunblackholecondition));
-    #/
+    assert(isscriptfunctionptr(&wascrushedbyinterdimensionalgunblackholecondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"wascrushedbyinterdimensionalgunblackhole", &wascrushedbyinterdimensionalgunblackholecondition);
-    /#
-        assert(isscriptfunctionptr(&zombieidgundeathupdate));
-    #/
+    assert(isscriptfunctionptr(&zombieidgundeathupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieidgundeathupdate", &zombieidgundeathupdate);
-    /#
-        assert(isscriptfunctionptr(&zombieidgundeathupdate));
-    #/
+    assert(isscriptfunctionptr(&zombieidgundeathupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombievortexpullupdate", &zombieidgundeathupdate);
-    /#
-        assert(isscriptfunctionptr(&zombiehaslegs));
-    #/
+    assert(isscriptfunctionptr(&zombiehaslegs));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiehaslegs", &zombiehaslegs);
-    /#
-        assert(isscriptfunctionptr(&zombieshouldproceduraltraverse));
-    #/
+    assert(isscriptfunctionptr(&zombieshouldproceduraltraverse));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombieshouldproceduraltraverse", &zombieshouldproceduraltraverse);
-    /#
-        assert(isscriptfunctionptr(&zombiemissinglegs));
-    #/
+    assert(isscriptfunctionptr(&zombiemissinglegs));
     behaviorstatemachine::registerbsmscriptapiinternal(#"zombiemissinglegs", &zombiemissinglegs);
-    /#
-        assert(isscriptfunctionptr(&function_f937377));
-    #/
+    assert(isscriptfunctionptr(&function_f937377));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_31cc70f275702cf6", &function_f937377);
-    /#
-        assert(isscriptfunctionptr(&function_a82068d7));
-    #/
+    assert(isscriptfunctionptr(&function_a82068d7));
     behaviorstatemachine::registerbsmscriptapiinternal(#"zombiemoveactionstart", &function_a82068d7);
-    /#
-        assert(isscriptfunctionptr(&function_626edd6b));
-    #/
+    assert(isscriptfunctionptr(&function_626edd6b));
     behaviorstatemachine::registerbsmscriptapiinternal(#"zombiemoveactionupdate", &function_626edd6b);
     animationstatenetwork::registernotetrackhandlerfunction("zombie_melee", &zombienotetrackmeleefire);
     animationstatenetwork::registernotetrackhandlerfunction("crushed", &zombienotetrackcrushfire);
@@ -1179,7 +1087,7 @@ function zombieidgundeathupdate(entity, mocompanim, mocompanimblendouttime, moco
             if (isdefined(v_nearest_navmesh_point)) {
                 f_distance = distance(entity.damageorigin, v_nearest_navmesh_point);
                 if (f_distance < 41) {
-                    entity.damageorigin = entity.damageorigin + vectorscale((0, 0, 1), 36);
+                    entity.damageorigin = entity.damageorigin + (0, 0, 36);
                 }
             }
         }

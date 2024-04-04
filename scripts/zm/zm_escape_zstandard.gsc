@@ -470,7 +470,6 @@ function function_ac904e5e() {
 function function_b356f6ae() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_4ffec9c5f552e6fc");
         if (isdefined(s_waitresult.e_door) && isdefined(s_waitresult.e_door.script_flag)) {
             switch (s_waitresult.e_door.script_flag) {

@@ -94,7 +94,6 @@ function on_player_connect() {
 // Size: 0xa4
 function function_4e68b0f4() {
     var_baa069fa = getent("t_v_o_exam", "targetname");
-    s_info = undefined;
     s_info = var_baa069fa waittill(#"trigger");
     e_player = s_info.activator;
     e_player thread zm_audio::create_and_play_dialog(#"exam_room", #"react", undefined, 1);
@@ -106,7 +105,6 @@ function function_4e68b0f4() {
 // Size: 0x294
 function function_29543c() {
     var_baa069fa = getent("t_v_o_docks", "targetname");
-    s_info = undefined;
     s_info = var_baa069fa waittill(#"trigger");
     e_player = s_info.activator;
     b_say = e_player zm_audio::create_and_play_dialog(#"zone_dock", #"react_0", undefined, 1);
@@ -161,7 +159,6 @@ function private function_f34169e8() {
 function function_65a374eb() {
     level endon(#"hash_40e9ad323fe8402a");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         e_player thread zm_audio::create_and_play_dialog(#"map", #"react");
@@ -203,7 +200,6 @@ function function_480ec8c(player) {
 // Size: 0x13e
 function function_4f89089b() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator) && isalive(s_result.activator)) {
             b_played = s_result.activator zm_audio::create_and_play_dialog(#"vpods", #"react");
@@ -225,7 +221,6 @@ function function_963edada() {
     level endoncallback(&function_19af3d1b, #"hash_59cfca3c898df56d", #"hash_732657441f7793dc", #"end_game");
     var_d98d7f94 = getent("t_cell_block_vista_vo", "targetname");
     while (isdefined(var_d98d7f94)) {
-        s_result = undefined;
         s_result = var_d98d7f94 waittill(#"trigger");
         b_play = s_result.activator zm_audio::create_and_play_dialog(#"vista", #"react");
         if (isdefined(b_play) && b_play) {
@@ -253,7 +248,6 @@ function function_19af3d1b(str_notify) {
 function private function_bdc25d1b() {
     var_73707aab = getent("power_house_power_switch", "script_noteworthy");
     var_73707aab endon(#"death");
-    s_info = undefined;
     s_info = var_73707aab waittill(#"trigger");
     e_player = s_info.activator;
     e_player thread zm_audio::create_and_play_dialog(#"powerplant", #"turn_on");
@@ -265,7 +259,6 @@ function private function_bdc25d1b() {
 // Size: 0x84
 function function_350029c6() {
     self endon(#"death");
-    s_info = undefined;
     s_info = self waittill(#"trigger");
     e_player = s_info.activator;
     e_player thread zm_audio::create_and_play_dialog(#"build_64", #"turn_on");
@@ -296,7 +289,6 @@ function function_58813027(e_player) {
 // Size: 0xbc
 function function_f118f554() {
     self endon(#"death");
-    s_info = undefined;
     s_info = self waittill(#"trigger");
     e_player = s_info.activator;
     exploder::exploder("fxexplo_catwalk_lava_burst");
@@ -331,7 +323,6 @@ function private function_49189399() {
     var_e5bf9843 = getent("t_reached_cellbock_vo", "targetname");
     var_e5bf9843 endon(#"death");
     while (true) {
-        s_info = undefined;
         s_info = var_e5bf9843 waittill(#"trigger");
         e_player = s_info.activator;
         if (isplayer(e_player)) {
@@ -357,7 +348,6 @@ function function_22101968() {
     var_d756a0b4 = getent("t_infir_full_react", "targetname");
     var_d756a0b4 endon(#"death");
     while (true) {
-        s_info = undefined;
         s_info = var_d756a0b4 waittill(#"trigger");
         e_player = s_info.activator;
         if (isplayer(e_player) && e_player flag::get(#"hash_30ae3926b2d211db")) {
@@ -386,7 +376,6 @@ function private function_3deb7fb0() {
 function function_db185b3() {
     self endon(#"death");
     while (true) {
-        s_info = undefined;
         s_info = self waittill(#"trigger");
         e_player = s_info.activator;
         e_player thread zm_audio::create_and_play_dialog(#"escape_plan", #"react");

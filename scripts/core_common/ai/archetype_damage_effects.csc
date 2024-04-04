@@ -10,21 +10,16 @@
 // Method(s) 2 Total 2
 class class_d5e9830e {
 
+    var shaderconst;
+    var tags;
+
     // Namespace class_d5e9830e/archetype_damage_effects
     // Params 0, eflags: 0x9 linked
     // Checksum 0xab692833, Offset: 0x1260
     // Size: 0x1e
-    __constructor() {
-        self.tags = [];
-        self.shaderconst = 0;
-    }
-
-    // Namespace class_d5e9830e/archetype_damage_effects
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x1288
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        tags = [];
+        shaderconst = 0;
     }
 
 }
@@ -338,9 +333,7 @@ function actorcharrampto(localclientnum, chardesired) {
         maturemask = 1;
     }
     if (!isdefined(self.charsteps)) {
-        /#
-            assert(isdefined(chardesired));
-        #/
+        assert(isdefined(chardesired));
         self.charsteps = int(200);
         delta = chardesired - self.curcharlevel;
         self.charinc = delta / self.charsteps;

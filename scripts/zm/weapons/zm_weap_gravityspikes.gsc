@@ -111,7 +111,6 @@ function function_326aec56() {
     self endon(#"disconnect");
     self thread function_5a6c0fea();
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -160,7 +159,6 @@ function function_326aec56() {
 function private function_5a6c0fea() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
         if (function_4d17107b(var_cad4df8e, 2)) {
@@ -202,10 +200,8 @@ function gravityspikes_attack_watcher(var_4052dd74, n_level) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired");
     while (true) {
         if (n_level >= 3) {
-            s_result = undefined;
             s_result = self waittill(#"weapon_melee_power");
         } else {
-            s_result = undefined;
             s_result = self waittill(#"weapon_melee_power", #"weapon_melee");
         }
         if (s_result.weapon == var_4052dd74) {
@@ -237,7 +233,7 @@ function private knockdown_zombies_slam(var_52b14308) {
 // Checksum 0x18a7aa76, Offset: 0x1348
 // Size: 0xa4
 function private play_slam_fx(v_pos) {
-    mdl_fx_pos = util::spawn_model("tag_origin", v_pos, vectorscale((-1, 0, 0), 90));
+    mdl_fx_pos = util::spawn_model("tag_origin", v_pos, (-90, 0, 0));
     waitframe(1);
     mdl_fx_pos clientfield::set("gravity_slam_fx", 1);
     if (isdefined(self)) {
@@ -297,10 +293,10 @@ function private gravityspikes_stuck_above_zombie_watcher() {
             waitframe(1);
             continue;
         }
-        forward_right_45_vec = rotatepoint(forward_vec, vectorscale((0, 1, 0), 45));
-        forward_left_45_vec = rotatepoint(forward_vec, vectorscale((0, -1, 0), 45));
+        forward_right_45_vec = rotatepoint(forward_vec, (0, 45, 0));
+        forward_left_45_vec = rotatepoint(forward_vec, (0, -45, 0));
         right_vec = anglestoright(v_player_angles);
-        start_point = self.origin + vectorscale((0, 0, 1), 50);
+        start_point = self.origin + (0, 0, 50);
         end_point = self.origin + (0, 0, -35);
         var_a024434f = [];
         if (var_88758440) {
@@ -342,7 +338,6 @@ function private gravityspikes_stuck_above_zombie_watcher() {
 function gravityspikes_altfire_watcher(var_4052dd74) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spike_planted");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee_power_left");
         if (s_result.weapon == var_4052dd74 && !(isdefined(self.var_de01b5c2) && self.var_de01b5c2)) {
             self.var_de01b5c2 = 1;
@@ -513,7 +508,6 @@ function private function_cc9e1996() {
 function function_28be8532(var_4052dd74) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"hash_55b145e95edc2ebe");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon === var_4052dd74 && isdefined(self gravity_spike_position_valid()) && self gravity_spike_position_valid()) {
             if (isdefined(self.var_de01b5c2) && self.var_de01b5c2) {
@@ -722,20 +716,20 @@ function plant_gravity_trap(var_4052dd74) {
     self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"gravityspikes");
     v_forward = anglestoforward(self.angles);
     v_right = anglestoright(self.angles);
-    v_spawn_pos_right = self.origin + vectorscale((0, 0, 1), 32);
+    v_spawn_pos_right = self.origin + (0, 0, 32);
     v_spawn_pos_left = v_spawn_pos_right;
-    a_trace = physicstraceex(v_spawn_pos_right, v_spawn_pos_right + v_right * 24, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+    a_trace = physicstraceex(v_spawn_pos_right, v_spawn_pos_right + v_right * 24, (-16, -16, -16), (16, 16, 16), self);
     v_spawn_pos_right = v_spawn_pos_right + v_right * a_trace[#"fraction"] * 24;
-    a_trace = physicstraceex(v_spawn_pos_left, v_spawn_pos_left + v_right * -24, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+    a_trace = physicstraceex(v_spawn_pos_left, v_spawn_pos_left + v_right * -24, (-16, -16, -16), (16, 16, 16), self);
     v_spawn_pos_left = v_spawn_pos_left + v_right * a_trace[#"fraction"] * -24;
     var_f4daeb3f = util::function_97cf7eb0(v_spawn_pos_right, 1000, 24);
     var_d7061a0d = util::function_97cf7eb0(v_spawn_pos_left, 1000, 24);
     a_s_spawn_pos = array(var_f4daeb3f, var_d7061a0d);
     self create_gravity_trap_spikes_in_ground(a_s_spawn_pos);
     if (self isonground()) {
-        var_aa0fedb0 = {#position:self.origin + vectorscale((0, 0, 1), 32), #entity:self getgroundent()};
+        var_aa0fedb0 = {#position:self.origin + (0, 0, 32), #entity:self getgroundent()};
     } else {
-        var_aa0fedb0 = util::function_97cf7eb0(self.origin, 1000, length(vectorscale((0, 0, 1), 32)));
+        var_aa0fedb0 = util::function_97cf7eb0(self.origin, 1000, length((0, 0, 32)));
     }
     self gravity_trap_fx_on(var_aa0fedb0);
     self.b_gravity_trap_spikes_in_ground = 1;
@@ -794,12 +788,8 @@ function private gravity_trap_loop(var_4052dd74) {
 // Size: 0x1cc
 function private gravity_trap_check(player) {
     player endon(#"disconnect", #"bled_out", #"death");
-    /#
-        assert(isdefined(level.ai_gravity_throttle));
-    #/
-    /#
-        assert(isdefined(player));
-    #/
+    assert(isdefined(level.ai_gravity_throttle));
+    assert(isdefined(player));
     if (!isdefined(player.mdl_gravity_trap_fx_source)) {
         return;
     }
@@ -815,7 +805,7 @@ function private gravity_trap_check(player) {
         self.in_gravity_trap = 1;
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         if (isdefined(self) && isalive(self)) {
-            self zombie_lift(player, v_gravity_trap_origin, 0, randomintrange(184, 284), vectorscale((0, 0, -1), 24), randomintrange(64, 128));
+            self zombie_lift(player, v_gravity_trap_origin, 0, randomintrange(184, 284), (0, 0, -24), randomintrange(64, 128));
         }
     }
 }
@@ -944,7 +934,7 @@ function private check_for_range_and_los(v_attack_source, n_allowed_z_diff, n_ra
         n_z_diff = self.origin[2] - v_attack_source[2];
         if (abs(n_z_diff) < n_allowed_z_diff) {
             if (distance2dsquared(self.origin, v_attack_source) < n_radius_sq) {
-                v_offset = vectorscale((0, 0, 1), 50);
+                v_offset = (0, 0, 50);
                 if (bullettracepassed(self.origin + v_offset, v_attack_source + v_offset, 0, self)) {
                     return true;
                 }
@@ -1003,7 +993,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
             self thread track_lifted_for_ragdoll_count();
             self.var_42d5176d = 1;
             self val::set(#"trap_ignore", "ignoreall", 1);
-            v_pos = groundtrace(self.origin + vectorscale((0, 0, 1), 100), self.origin + vectorscale((0, 0, -1), 1000), 0, self)[#"position"];
+            v_pos = groundtrace(self.origin + (0, 0, 100), self.origin + (0, 0, -1000), 0, self)[#"position"];
             if (!isdefined(v_pos)) {
                 v_pos = self.origin;
             }
@@ -1059,7 +1049,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
         v_away_from_source = vectornormalize(v_centroid - v_attack_source);
         v_away_from_source = v_away_from_source * n_push_away;
         v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
-        a_trace = physicstraceex(v_centroid + vectorscale((0, 0, 1), 32), v_centroid + v_away_from_source, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+        a_trace = physicstraceex(v_centroid + (0, 0, 32), v_centroid + v_away_from_source, (-16, -16, -16), (16, 16, 16), self);
         v_lift = a_trace[#"fraction"] * v_away_from_source;
         v_lift = v_lift + v_lift_offset;
         if (!(isdefined(bullettracepassed(v_centroid, v_centroid + v_lift, 0, self)) && bullettracepassed(v_centroid, v_centroid + v_lift, 0, self))) {
@@ -1225,7 +1215,6 @@ function private corpse_off_navmesh_watcher(n_timeout) {
     if (self.var_6f84b820 !== #"basic" && self.var_6f84b820 !== #"enhanced") {
         return;
     }
-    s_result = undefined;
     s_result = self waittilltimeout(n_timeout, #"actor_corpse", #"deleted");
     if (s_result._notify == "actor_corpse") {
         v_pos = getclosestpointonnavmesh(s_result.corpse.origin, 256);
@@ -1277,7 +1266,6 @@ function private gravity_spike_melee_kill(v_position, player, var_52b14308) {
 // Size: 0xcc
 function function_478a4910(var_4052dd74) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spike_planted");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee_power_left");
     if (s_result.weapon == var_4052dd74) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_2", #"gravityspikes");

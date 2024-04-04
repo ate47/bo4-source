@@ -141,12 +141,8 @@ function private function_1b0a9309(bot) {
 // Checksum 0x2a6e0b17, Offset: 0x988
 // Size: 0x126
 function private function_8cfcffa3(bot, weapon, ammo = undefined) {
-    /#
-        assert(isbot(bot));
-    #/
-    /#
-        assert(isweapon(weapon));
-    #/
+    assert(isbot(bot));
+    assert(isweapon(weapon));
     ammo = isdefined(ammo) ? ammo : weapon.maxammo + weapon.clipsize;
     var_688479c = ammo * function_5af8e31c(weapon);
     damagepersecond = function_48d6c189(weapon);
@@ -214,12 +210,8 @@ function private function_5cc53671(bot) {
 // Checksum 0xe00007e2, Offset: 0xdc0
 // Size: 0xa2
 function private function_d6d5e252(bot, altar) {
-    /#
-        assert(isbot(bot));
-    #/
-    /#
-        assert(isstruct(altar));
-    #/
+    assert(isbot(bot));
+    assert(isstruct(altar));
     specialty = bot.var_c27f1e90[altar.script_int];
     return bot perks::perk_hasperk(specialty);
 }
@@ -275,12 +267,8 @@ function private function_e0bf989(planner, params) {
 // Checksum 0x69a501f, Offset: 0x11a8
 // Size: 0x696
 function private function_14c67eb3(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -375,12 +363,8 @@ function private function_e442b780(planner, params) {
 // Checksum 0xec0d5cab, Offset: 0x19e0
 // Size: 0x75e
 function private function_2af9b775(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -409,7 +393,7 @@ function private function_2af9b775(planner, constants) {
             if (closeenough) {
                 /#
                     if (isdefined(var_a1cd9f8e) && getdvarint(#"hash_76cdb24d903cc201", 0)) {
-                        recordsphere(var_a1cd9f8e[#"origin"] + vectorscale((0, 0, 1), 10), 4, (0, 1, 0), "<unknown string>");
+                        recordsphere(var_a1cd9f8e[#"origin"] + (0, 0, 10), 4, (0, 1, 0), "<unknown string>");
                     }
                 #/
                 var_270c0711[var_270c0711.size] = var_a1cd9f8e;
@@ -442,7 +426,7 @@ function private function_2af9b775(planner, constants) {
         planner::setblackboardattribute(planner, #"zm_pathable_blockers", array(var_2fcdec8b));
         /#
             if (isdefined(var_2fcdec8b) && getdvarint(#"hash_76cdb24d903cc201", 0)) {
-                recordsphere(var_2fcdec8b[#"origin"] + vectorscale((0, 0, 1), 30), 8, (1, 0.752941, 0.796078), "<unknown string>");
+                recordsphere(var_2fcdec8b[#"origin"] + (0, 0, 30), 8, (1, 0.752941, 0.796078), "<unknown string>");
             }
         #/
         params.blocker = var_2fcdec8b;
@@ -490,12 +474,8 @@ function private function_73f656f5(planner, params) {
 // Checksum 0x854070ef, Offset: 0x23a8
 // Size: 0x5ae
 function private function_e057582f(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -617,9 +597,7 @@ function private function_29e16403(planner, params) {
 // Checksum 0xa6f1339e, Offset: 0x2de0
 // Size: 0x54e
 function private function_4f6a626d(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -724,9 +702,7 @@ function private function_6e8fe489(planner, params) {
 // Checksum 0x715dfb9a, Offset: 0x35a8
 // Size: 0x35e
 function private function_557051df(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     params = function_98118579(planner);
     if (params.bots.size <= 0) {
         return params;
@@ -829,15 +805,9 @@ function private function_6fe73720(planner, params) {
 // Checksum 0x8800586, Offset: 0x3cd8
 // Size: 0x88e
 function private function_393b9c76(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isint(constants[#"hash_357612272d0dca05"]) || isfloat(constants[#"hash_357612272d0dca05"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"affordability"]) || isfloat(constants[#"affordability"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isint(constants[#"hash_357612272d0dca05"]) || isfloat(constants[#"hash_357612272d0dca05"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     var_66c1c955 = isdefined(constants[#"highcost"]) && constants[#"highcost"];
     var_45bdcccb = isdefined(constants[#"highrank"]) && constants[#"highrank"];
     if (var_45bdcccb) {

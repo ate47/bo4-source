@@ -198,7 +198,6 @@ function function_2bb8d916() {
 function player_damage_watcher() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         n_damage = waitresult.amount;
         self.var_d5e64932 = gettime() / 1000;
@@ -458,7 +457,6 @@ function function_f3059d3b(e_player) {
 function function_5804d6ff() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!zm_utility::can_use(e_player, 0)) {
@@ -520,11 +518,11 @@ function setup_models() {
             v_pos = v_pos + v_dir * -9;
         }
         s_info.var_9d32404 = util::spawn_model(#"tag_origin", v_pos, s_bowl.angles);
-        s_info.var_1a34d8e = level.var_3e72dc3c[n_index].var_9d32404.origin + vectorscale((0, 0, 1), 35);
+        s_info.var_1a34d8e = level.var_3e72dc3c[n_index].var_9d32404.origin + (0, 0, 35);
         s_info.var_7b63dcba = (0, 0, 0);
         v_dir = anglestoforward(s_info.angles);
         v_pos = s_info.var_1a34d8e + v_dir * 85;
-        s_info.var_8f683ef8 = groundtrace(v_pos, v_pos + vectorscale((0, 0, -1), 400), 0, s_info.mdl_bowl)[#"position"];
+        s_info.var_8f683ef8 = groundtrace(v_pos, v_pos + (0, 0, -400), 0, s_info.mdl_bowl)[#"position"];
     }
     waitframe(1);
     var_e668d197 = 1;
@@ -796,7 +794,6 @@ function function_8f0594cb(s_challenge) {
     }
     level thread [[ level.s_active_challenge.var_c376bcd5 ]]();
     zm_red_util::start_timer(s_challenge.var_6346e7b + 1);
-    s_waitresult = undefined;
     s_waitresult = level waittilltimeout(s_challenge.var_6346e7b + 1, #"round_reset");
     while (isdefined(level.var_dc6fce4f) && level.var_dc6fce4f) {
         waitframe(1);
@@ -1213,7 +1210,6 @@ function function_5ee56208(var_5acfb6d) {
 function function_9ffc76ea(str_notify) {
     level endon(#"hash_61075af70fbd9082");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(str_notify);
         e_player = waitresult.e_player;
         var_c4979a70 = 1;

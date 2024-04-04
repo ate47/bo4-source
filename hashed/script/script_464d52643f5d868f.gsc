@@ -97,7 +97,6 @@ function function_84f1c310() {
             var_40762d8a sethintstring(#"hash_52803ee9fe3f2ea5");
         }
         t_catwalk_door sethintstring(#"");
-        waitresult = undefined;
         waitresult = var_40762d8a waittill(#"trigger");
         level flag::set(#"catwalk_door_open");
         level thread scene::init_streamer(#"aib_vign_zm_mob_brutus_summon_hellhounds", #"allies", 0, 0);
@@ -190,7 +189,6 @@ function function_dc212e9f() {
 // Size: 0xec
 function function_f184754() {
     while (true) {
-        s_info = undefined;
         s_info = self waittill(#"trigger", #"death");
         if (isplayer(s_info.activator) && !s_info.activator laststand::player_is_in_laststand() || s_info._notify === "death") {
             break;
@@ -207,7 +205,6 @@ function function_f184754() {
 function function_fd3fa3a3() {
     self endon(#"death");
     while (true) {
-        s_info = undefined;
         s_info = self waittill(#"trigger", #"death");
         if (isplayer(s_info.activator) && !s_info.activator laststand::player_is_in_laststand() || s_info._notify === "death") {
             break;
@@ -333,7 +330,6 @@ function function_17ccf041() {
         n_check_time = function_27b45f3e();
         e_leader = function_9ac202b9();
         if (isplayer(e_leader)) {
-            s_notify = undefined;
             s_notify = e_leader waittilltimeout(n_check_time, #"damage", #"death");
             if (s_notify._notify === "death") {
                 waitframe(1);
@@ -458,15 +454,9 @@ function function_7ab912f2(s_loc) {
     earthquake(0.5, 0.75, s_loc.origin, 1000);
     playsoundatposition(#"hash_42894a8e6bfacf66", (5085, 10424, 1102));
     playsoundatposition(#"zmb_hellhound_spawn", s_loc.origin);
-    /#
-        assert(isdefined(self), "surrounded");
-    #/
-    /#
-        assert(isalive(self), "<unknown string>");
-    #/
-    /#
-        assert(zm_utility::is_magic_bullet_shield_enabled(self), "<unknown string>");
-    #/
+    assert(isdefined(self), "surrounded");
+    assert(isalive(self), "<unknown string>");
+    assert(zm_utility::is_magic_bullet_shield_enabled(self), "<unknown string>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
     self util::stop_magic_bullet_shield();
     wait(0.1);
@@ -561,7 +551,6 @@ function play_brutus_scene_done(a_ents) {
 function function_d0392daf() {
     self setcandamage(1);
     self.health = 10000000;
-    s_result = undefined;
     s_result = self waittill(#"damage", #"teleport");
     if (s_result._notify == "damage") {
         level.var_43bca751 = 1;
@@ -590,7 +579,6 @@ function function_e16c819a(a_ents) {
 function function_993f4add() {
     self notify(#"hash_2c989e619ebfe50a");
     self endon(#"hash_2c989e619ebfe50a");
-    s_result = undefined;
     s_result = self waittill(#"death", #"hash_4ebd4db45f2d673a");
     if (s_result._notify == "death") {
         if (isdefined(self)) {
@@ -609,7 +597,7 @@ function private function_5404a36b() {
     self waittill(#"hash_64dded563a93f9c0");
     self notify(#"hash_4ebd4db45f2d673a");
     self ghost();
-    self forceteleport(self.origin - vectorscale((0, 0, 1), 100));
+    self forceteleport(self.origin - (0, 0, 100));
 }
 
 // Namespace namespace_f2502da8/namespace_f2502da8

@@ -36,9 +36,7 @@ function __init__() {
 function function_fb0bd6b9(localclientnum) {
     nixie_tube_cage = getdynent("nixie_tube_cage");
     if (!isdefined(nixie_tube_cage)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     nixie_tube_cage.canuse = 0;

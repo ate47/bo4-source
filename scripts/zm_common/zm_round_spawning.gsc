@@ -16,20 +16,14 @@
 // Method(s) 2 Total 2
 class class_2517dc3b {
 
+    var var_d7d3cd31;
+
     // Namespace class_2517dc3b/zm_round_spawning
     // Params 0, eflags: 0x9 linked
     // Checksum 0x6058913c, Offset: 0x19d0
     // Size: 0xe
-    __constructor() {
-        self.var_d7d3cd31 = [];
-    }
-
-    // Namespace class_2517dc3b/zm_round_spawning
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x19e8
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_d7d3cd31 = [];
     }
 
 }
@@ -38,25 +32,24 @@ class class_2517dc3b {
 // Method(s) 2 Total 2
 class class_557db8fd {
 
+    var var_123aa3d9;
+    var var_28ba9034;
+    var var_30bb6097;
+    var var_74f6178a;
+    var var_de9ce9b0;
+    var var_f6a3b5b0;
+
     // Namespace class_557db8fd/zm_round_spawning
     // Params 0, eflags: 0x9 linked
     // Checksum 0xead3c1a9, Offset: 0x18d8
     // Size: 0x4a
-    __constructor() {
-        self.var_123aa3d9 = 0;
-        self.var_28ba9034 = 0;
-        self.var_f6a3b5b0 = 0;
-        self.var_de9ce9b0 = [];
-        self.var_30bb6097 = [];
-        self.var_74f6178a = 0;
-    }
-
-    // Namespace class_557db8fd/zm_round_spawning
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x1930
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_123aa3d9 = 0;
+        var_28ba9034 = 0;
+        var_f6a3b5b0 = 0;
+        var_de9ce9b0 = [];
+        var_30bb6097 = [];
+        var_74f6178a = 0;
     }
 
 }
@@ -92,12 +85,8 @@ function function_cc103b38(str_archetype, n_round) {
 // Checksum 0xcdcbae40, Offset: 0x258
 // Size: 0x23c
 function function_376e51ef(str_archetype, n_round) {
-    /#
-        assert(isdefined(level.var_819e7dfd), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
-    #/
+    assert(isdefined(level.var_819e7dfd), "<unknown string>");
+    assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
     if (level.var_819e7dfd[str_archetype].var_74f6178a) {
         return;
     }
@@ -129,15 +118,9 @@ function function_376e51ef(str_archetype, n_round) {
 // Checksum 0x2088bf1b, Offset: 0x4a0
 // Size: 0x17a
 function function_306ce518(str_archetype, var_b77797) {
-    /#
-        assert(isdefined(level.var_819e7dfd), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
-    #/
-    /#
-        assert(!level.var_819e7dfd[str_archetype].var_74f6178a, "<unknown string>");
-    #/
+    assert(isdefined(level.var_819e7dfd), "<unknown string>");
+    assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
+    assert(!level.var_819e7dfd[str_archetype].var_74f6178a, "<unknown string>");
     if (!isdefined(level.var_819e7dfd[str_archetype].var_de9ce9b0)) {
         level.var_819e7dfd[str_archetype].var_de9ce9b0 = [];
     } else if (!isarray(level.var_819e7dfd[str_archetype].var_de9ce9b0)) {
@@ -278,9 +261,7 @@ function function_517a18d8(var_42078d2) {
 // Checksum 0x79d39f88, Offset: 0xe20
 // Size: 0x6c
 function function_2463a38a(var_42078d2) {
-    /#
-        assert(isdefined(level.var_89fda7e[#"on_ai_killed"]), "<unknown string>");
-    #/
+    assert(isdefined(level.var_89fda7e[#"on_ai_killed"]), "<unknown string>");
     arrayremovevalue(level.var_89fda7e[#"on_ai_killed"], var_42078d2);
 }
 
@@ -304,9 +285,7 @@ function function_df803678(var_42078d2) {
 // Checksum 0xa4764c27, Offset: 0xfc8
 // Size: 0x6c
 function function_5bc2cea1(var_42078d2) {
-    /#
-        assert(isdefined(level.var_89fda7e[#"hash_23d7b4f508f08db0"]), "<unknown string>");
-    #/
+    assert(isdefined(level.var_89fda7e[#"hash_23d7b4f508f08db0"]), "<unknown string>");
     arrayremovevalue(level.var_89fda7e[#"hash_23d7b4f508f08db0"], var_42078d2);
 }
 
@@ -315,12 +294,8 @@ function function_5bc2cea1(var_42078d2) {
 // Checksum 0x7a45bf78, Offset: 0x1040
 // Size: 0x142
 function function_2876740e(str_archetype, var_5b4c8565) {
-    /#
-        assert(isdefined(level.var_819e7dfd), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
-    #/
+    assert(isdefined(level.var_819e7dfd), "<unknown string>");
+    assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
     if (!isdefined(level.var_819e7dfd[str_archetype].var_30bb6097)) {
         level.var_819e7dfd[str_archetype].var_30bb6097 = [];
     } else if (!isarray(level.var_819e7dfd[str_archetype].var_30bb6097)) {
@@ -334,12 +309,8 @@ function function_2876740e(str_archetype, var_5b4c8565) {
 // Checksum 0xd5b4bf0c, Offset: 0x1190
 // Size: 0x9c
 function function_9bf14a10(str_archetype, var_5b4c8565) {
-    /#
-        assert(isdefined(level.var_819e7dfd), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
-    #/
+    assert(isdefined(level.var_819e7dfd), "<unknown string>");
+    assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
     arrayremovevalue(level.var_819e7dfd[str_archetype].var_30bb6097, var_5b4c8565, 0);
 }
 
@@ -398,15 +369,9 @@ function function_375519eb(var_dcf8380e) {
 // Checksum 0xd33fb982, Offset: 0x1420
 // Size: 0xba
 function function_2669b95a(str_archetype, var_97bd4883) {
-    /#
-        assert(isdefined(level.var_819e7dfd), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_819e7dfd[var_97bd4883]), var_97bd4883 + "<unknown string>");
-    #/
+    assert(isdefined(level.var_819e7dfd), "<unknown string>");
+    assert(isdefined(level.var_819e7dfd[str_archetype]), str_archetype + "<unknown string>");
+    assert(isdefined(level.var_819e7dfd[var_97bd4883]), var_97bd4883 + "<unknown string>");
     level.var_819e7dfd[str_archetype].var_8988f7a0 = var_97bd4883;
 }
 
@@ -753,9 +718,7 @@ function private function_979b03db(var_a630f8a4) {
             level.var_5d2cd3b1[level.var_5d2cd3b1.size] = str_archetype;
         }
         var_75b393f9 = level.var_819e7dfd[str_archetype];
-        /#
-            assert(isdefined(var_75b393f9.var_87ed2709), "<unknown string>" + str_archetype);
-        #/
+        assert(isdefined(var_75b393f9.var_87ed2709), "<unknown string>" + str_archetype);
         if (level.zombie_total > 0) {
             ai = [[ var_75b393f9.var_87ed2709 ]]();
         }
@@ -819,9 +782,7 @@ function function_e84b609c(s_params) {
         return;
     }
     level.var_fa6ba733++;
-    /#
-        assert(level flag::get("<unknown string>") || level flag::get("<unknown string>"), "<unknown string>");
-    #/
+    assert(level flag::get("<unknown string>") || level flag::get("<unknown string>"), "<unknown string>");
     if (isdefined(level.var_89fda7e[#"on_ai_killed"])) {
         foreach (var_42078d2 in level.var_89fda7e[#"on_ai_killed"]) {
             self thread [[ var_42078d2 ]](s_params);
@@ -870,9 +831,7 @@ function private function_b72a438d() {
     if (isdefined(level.var_a5704584)) {
         foreach (var_b8e53971 in level.var_a5704584) {
             n_points = level [[ var_b8e53971 ]](n_points);
-            /#
-                assert(isdefined(n_points), "<unknown string>");
-            #/
+            assert(isdefined(n_points), "<unknown string>");
         }
     }
     if (n_points == 0) {
@@ -997,9 +956,7 @@ function private function_d7864087(var_dbce0c44) {
     if (isdefined(level.var_ecbb7faa)) {
         foreach (var_7f07b7df in level.var_ecbb7faa) {
             var_c766fbe6 = level [[ var_7f07b7df ]](var_c766fbe6);
-            /#
-                assert(isdefined(var_c766fbe6), "<unknown string>");
-            #/
+            assert(isdefined(var_c766fbe6), "<unknown string>");
         }
     }
     var_73f63202 = 0;
@@ -1221,9 +1178,7 @@ function private function_bc9fd0f8(n_round) {
         level.var_865ea9f = array(level.var_865ea9f);
     }
     if (isinarray(level.var_865ea9f, n_round)) {
-        /#
-            assertmsg("<unknown string>" + n_round + "<unknown string>");
-        #/
+        assertmsg("<unknown string>" + n_round + "<unknown string>");
         return;
     }
     if (!isdefined(level.var_865ea9f)) {

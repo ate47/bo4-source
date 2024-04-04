@@ -203,9 +203,7 @@ function private registercentrifuge_zip_doormember() {
 // Checksum 0x37aed59a, Offset: 0xaf0
 // Size: 0xbc
 function private function_f5c01f5() {
-    /#
-        assert(isdefined(level.zombie_spawners));
-    #/
+    assert(isdefined(level.zombie_spawners));
     spawner = array::random(level.zombie_spawners);
     ai = zombie_utility::spawn_zombie(spawner, spawner.targetname);
     if (isdefined(ai)) {
@@ -225,9 +223,7 @@ function private function_f5c01f5() {
 // Size: 0x630
 function round_spawning() {
     if (level.zm_loc_types[#"zombie_location"].size < 1) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), level.round_number);
@@ -513,15 +509,11 @@ function round_spawning_test() {
 function round_start() {
     setdvar(#"hash_52a4767bd6da84f1", 0);
     if (!isdefined(level.zombie_spawners) || level.zombie_spawners.size == 0) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         level flag::set("begin_spawning");
         return;
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     if (isdefined(level.var_b2f996e6)) {
         [[ level.var_b2f996e6 ]]();
     } else {
@@ -727,9 +719,7 @@ function private function_89888d49() {
 // Checksum 0x6bd4b601, Offset: 0x2b98
 // Size: 0xdb8
 function round_think(restart = 0) {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level endon(#"end_round_think", #"end_game");
     if (!(isdefined(restart) && restart)) {
         if (isdefined(level.var_12e11406)) {
@@ -766,9 +756,7 @@ function round_think(restart = 0) {
         if (!(isdefined(level.headshots_only) && level.headshots_only) && !restart) {
             level thread award_grenades_for_survivors();
         }
-        /#
-            println("<unknown string>" + level.round_number + "<unknown string>" + level.players.size);
-        #/
+        println("<unknown string>" + level.round_number + "<unknown string>" + level.players.size);
         level.round_start_time = gettime();
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
             wait(0.1);
@@ -816,11 +804,7 @@ function round_think(restart = 0) {
             zm_custom::function_9be9c072("zmRoundCap");
             return;
         }
-        /#
-            /#
-                assert(level.players.size == getplayers().size);
-            #/
-        #/
+        assert(level.players.size == getplayers().size);
         if (level.players.size > 1 && !level flag::get("round_reset")) {
             level thread zm_player::spectators_respawn();
         }

@@ -336,7 +336,6 @@ function call_box_think(elevator) {
     }
     while (true) {
         who = undefined;
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         who = waitresult.activator;
         elev_clear = is_elevator_clear(elevator);
@@ -439,7 +438,6 @@ function elevator_buy_think(elevator) {
     self sethintstring(level.var_31560d97, elevator.cost);
     while (true) {
         who = undefined;
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         who = waitresult.activator;
         elev_clear = is_elevator_clear(elevator);
@@ -954,14 +952,14 @@ function unlock_players() {
 function elevator1_3d_audio() {
     while (true) {
         self waittill(#"start_3d_audio");
-        ent = spawn("script_origin", self.origin + vectorscale((0, 0, 1), 30));
+        ent = spawn("script_origin", self.origin + (0, 0, 30));
         ent linkto(self);
         ent playsound("evt_elevator_freight_start");
         ent playloopsound("evt_elevator_freight_run_3d");
         self waittill(#"reached_end_node");
         ent delete();
         playsoundatposition(#"evt_elevator_freight_stop", self.origin);
-        playsoundatposition(#"hash_5bbffe8bd9e541a7", self.origin + vectorscale((0, 0, 1), 120));
+        playsoundatposition(#"hash_5bbffe8bd9e541a7", self.origin + (0, 0, 120));
     }
 }
 
@@ -972,13 +970,13 @@ function elevator1_3d_audio() {
 function elevator2_3d_audio() {
     while (true) {
         self waittill(#"start_3d_audio");
-        ent = spawn("script_origin", self.origin + vectorscale((0, 0, 1), 30));
+        ent = spawn("script_origin", self.origin + (0, 0, 30));
         ent linkto(self);
         ent playsound(#"evt_elevator_office_start");
         ent playloopsound(#"hash_3a6fc5051c04a776");
         self waittill(#"reached_end_node");
         ent delete();
-        playsoundatposition(#"hash_b696d1d50b35e32", self.origin + vectorscale((0, 0, 1), 120));
+        playsoundatposition(#"hash_b696d1d50b35e32", self.origin + (0, 0, 120));
     }
 }
 

@@ -383,9 +383,7 @@ function function_84139b27() {
     foreach (s_defend_area in level.a_s_defend_areas) {
         foreach (str_index in s_defend_area.a_str_next_defend) {
             str_index = hash(str_index);
-            /#
-                assert(isinarray(a_str_keys, str_index), str_index + "station");
-            #/
+            assert(isinarray(a_str_keys, str_index), str_index + "station");
         }
     }
 }
@@ -569,7 +567,6 @@ function function_f8dc2ddb(n_obj_id) {
     level endon(#"end_game");
     self endon(#"disconnect");
     while (true) {
-        s_results = undefined;
         s_results = self waittill(#"hash_702a9c7f10066b19", #"death");
         if (s_results.str_location === "lighthouse_to_facility" || s_results._notify === "death") {
             objective_setinvisibletoplayer(n_obj_id, self);

@@ -145,7 +145,6 @@ function function_22528515() {
         self.owner endon(#"disconnect");
     }
     while (true) {
-        waitresult = undefined;
         waitresult = vehicle waittill(#"touch");
         ent = waitresult.entity;
         if (isdefined(ent.classname) && ent.classname == "trigger_hurt_new") {

@@ -253,7 +253,6 @@ function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {
             array::add(self.var_19fde5b7, waitresult.projectile);

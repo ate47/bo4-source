@@ -42,9 +42,7 @@ function function_3e8d9b27(previs_weapon) {
 // Checksum 0xfa28b887, Offset: 0x380
 // Size: 0x66
 function function_783a1c07(weapon) {
-    /#
-        assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
-    #/
+    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
     level.mute_smoke_custom_settings = getscriptbundle(weapon.customsettings);
 }
 
@@ -164,7 +162,7 @@ function function_e08f51f(origin, color) {
     /#
         if (getdvarint(#"hash_23f044f7a5117090", 0)) {
             if (!isdefined(color)) {
-                color = vectorscale((1, 0, 0), 0.5);
+                color = (0.5, 0, 0);
             }
             sphere(origin, 6, color, 0.5, 1, 20, int(62.5) * 15);
         }

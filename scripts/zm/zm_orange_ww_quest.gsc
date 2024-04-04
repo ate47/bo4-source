@@ -134,7 +134,6 @@ function function_d997ba18() {
     level endon(#"end_game");
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {
             self setcandamage(0);
@@ -166,7 +165,6 @@ function function_575a8040(e_player) {
 function function_a28a5c21() {
     level endon(#"end_game");
     self endon(#"death");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     e_who = s_result.e_who;
     self playsound(#"hash_345f1d31b52a4589");
@@ -281,7 +279,6 @@ function function_10aa0f27(e_player) {
 // Size: 0x10c
 function function_993730f4() {
     level endon(#"end_game", #"hash_7f9c695cfdccd6b4");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     e_who = s_result.e_who;
     level zm_ui_inventory::function_7df6bb60("zm_orange_ww_quest", 2);
@@ -336,7 +333,6 @@ function ww_quest_step4_cleanup(var_5ea5c94d, ended_early) {
 // Size: 0xdc
 function function_731665dd() {
     level endon(#"end_game", #"ww_safe_opened");
-    s_results = undefined;
     s_results = self waittill(#"trigger_activated");
     e_who = s_results.e_who;
     level zm_ui_inventory::function_7df6bb60("zm_orange_ww_quest", 0);
@@ -486,7 +482,6 @@ function function_cb9653f9(e_player) {
 // Size: 0xc4
 function function_2187358d() {
     level endon(#"end_game", #"hash_45b20bfeff570913");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     e_who = s_result.e_who;
     playsoundatposition(#"hash_565a70d2b5a64e2", self.origin);
@@ -619,7 +614,6 @@ function function_54e8826c(e_player) {
 // Size: 0x84
 function function_400a7216() {
     level endon(#"end_game", #"hash_44512b5e960df8f0");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     self function_735037d4();
     level flag::set(#"hash_44512b5e960df8f0");

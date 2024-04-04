@@ -251,7 +251,7 @@ function private turn_off() {
     self vehicle::toggle_force_driver_taillights(0);
     self vehicle_ai::turnoffallambientanims();
     if (isairborne(self)) {
-        self setphysacceleration(vectorscale((0, 0, -1), 300));
+        self setphysacceleration((0, 0, -300));
         self thread vehicle_ai::level_out_for_landing();
         self setrotorspeed(0);
     }
@@ -497,7 +497,6 @@ function on_player_corpse() {
 function function_69c9e9a0() {
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_4aced1739d6627a2");
         vehicle = waitresult.vehicle;
         if (!isvehicle(vehicle)) {
@@ -521,7 +520,7 @@ function function_69c9e9a0() {
 function private function_7ed26e27(vehicle) {
     vehiclespeed = vehicle getspeedmph();
     if (vehiclespeed >= getdvarfloat(#"hash_3be3de0273ba927c", 30)) {
-        trace = groundtrace(self.origin + vectorscale((0, 0, 1), 10), self.origin - vectorscale((0, 0, 1), 235), 0, self, 0, 0);
+        trace = groundtrace(self.origin + (0, 0, 10), self.origin - (0, 0, 235), 0, self, 0, 0);
         if (trace[#"fraction"] == 1 || trace[#"surfacetype"] === "water") {
             return;
         }
@@ -861,9 +860,7 @@ function private function_6aa73a2a(missile, vehicle) {
 // Checksum 0x774feec3, Offset: 0x4050
 // Size: 0x5a
 function function_adc0649a() {
-    /#
-        assert(isvehicle(self));
-    #/
+    assert(isvehicle(self));
     return isdefined(self.emped) && self.emped || isdefined(self.isjammed) && self.isjammed;
 }
 
@@ -1208,7 +1205,6 @@ function update_turret_fire(vehicle, seat_index, var_c269692d) {
         return;
     }
     while (true) {
-        params = undefined;
         params = vehicle waittill(#"gunner_weapon_fired");
         if (params.gunner_index === seat_index) {
             vehicle.var_96c0f900[seat_index] = vehicle.var_96c0f900[seat_index] - var_c269692d;
@@ -1356,7 +1352,6 @@ function private function_8278ed00() {
 function private function_2ec624a6() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"enter_vehicle");
         playfxontag("vehicle/fx8_exhaust_truck_cargo_startup_os", self, "tag_fx_exhaust");
         if (isdefined(waitresult.player)) {
@@ -1539,7 +1534,7 @@ function private function_c0f1d81b() {
 // Checksum 0xb70b3915, Offset: 0x6430
 // Size: 0x1a4
 function function_4366bf50(params) {
-    deathmodel = spawn("script_model", self.origin + vectorscale((0, 0, 1), 150));
+    deathmodel = spawn("script_model", self.origin + (0, 0, 150));
     deathmodel setmodel(#"hash_4c315b7f2185c393");
     deathmodel.angles = self.angles;
     if (!isdefined(level.var_82eb1dab)) {
@@ -1818,7 +1813,6 @@ function private function_17949e01() {
     while (true) {
         self waittill(#"beached");
         while (true) {
-            waitresult = undefined;
             waitresult = self waittill(#"touch", #"unbeached");
             if (waitresult._notify == #"touch" && isdefined(waitresult.pm_flags)) {
                 time = gettime();
@@ -2508,7 +2502,7 @@ function private function_f4d358df() {
 function private function_d929b41() {
     self.var_4dab0a63 = 0;
     speed = self getspeedmph();
-    heighttrace = physicstrace(self.origin, self.origin - vectorscale((0, 0, 1), 1536), (0, 0, 0), (0, 0, 0), self, 2);
+    heighttrace = physicstrace(self.origin, self.origin - (0, 0, 1536), (0, 0, 0), (0, 0, 0), self, 2);
     if (speed < 15 && heighttrace[#"fraction"] < 0.260417) {
         self.var_4dab0a63 = 1;
         self.var_c1764af8 = 1;
@@ -2531,7 +2525,7 @@ function private function_d929b41() {
 // Checksum 0x730854ae, Offset: 0x9cb0
 // Size: 0x10c
 function private function_3b841f4() {
-    heighttrace = physicstrace(self.origin, self.origin - vectorscale((0, 0, 1), 1536), (0, 0, 0), (0, 0, 0), self, 2);
+    heighttrace = physicstrace(self.origin, self.origin - (0, 0, 1536), (0, 0, 0), (0, 0, 0), self, 2);
     if (heighttrace[#"fraction"] >= 1) {
         self.var_4e76046a = 1;
         self vehicle_ai::set_state("spiral");
@@ -2639,7 +2633,7 @@ function private function_4b5646b1(params) {
 // Size: 0x10c
 function function_976267bc(params) {
     self takeplayercontrol();
-    self setphysacceleration(vectorscale((0, 0, -1), 100));
+    self setphysacceleration((0, 0, -100));
     self setvehvelocity((0, 0, 0));
     self setangularvelocity((0, 0, 0));
     self.var_4e76046a = 0;
@@ -2784,7 +2778,7 @@ function function_ad15f5e8(params) {
 function function_200c3bd0(params) {
     self setvehvelocity((0, 0, 0));
     self setangularvelocity((0, 0, 0));
-    self setphysacceleration(vectorscale((0, 0, -1), 386));
+    self setphysacceleration((0, 0, -386));
     self setheliheightcap(1);
 }
 
@@ -2897,12 +2891,8 @@ function function_7db28345(params) {
 // Size: 0x68e
 function private function_479389f3() {
     height = self.height;
-    /#
-        assert(isdefined(self.radius));
-    #/
-    /#
-        assert(isdefined(self.height));
-    #/
+    assert(isdefined(self.radius));
+    assert(isdefined(self.height));
     var_33a206d0 = [];
     var_33a206d0[#"leftrear"] = self gettagorigin("tag_ground_contact_left_rear");
     var_33a206d0[#"leftmiddle"] = self gettagorigin("tag_ground_contact_left_middle");
@@ -2916,14 +2906,14 @@ function private function_479389f3() {
         if (!isdefined(origin)) {
             return false;
         }
-        var_df47b913[tag] = physicstrace(origin + vectorscale((0, 0, 1), 25), origin - vectorscale((0, 0, 1), 75), (0, 0, 0), (0, 0, 0), self, 2);
+        var_df47b913[tag] = physicstrace(origin + (0, 0, 25), origin - (0, 0, 75), (0, 0, 0), (0, 0, 0), self, 2);
     }
     var_dc8469e2 = [];
     foreach (tag, origin in var_8fc02d3b) {
         if (!isdefined(origin)) {
             return false;
         }
-        var_dc8469e2[tag] = physicstrace(origin + vectorscale((0, 0, 1), 25), origin - vectorscale((0, 0, 1), 75), (0, 0, 0), (0, 0, 0), self, 2);
+        var_dc8469e2[tag] = physicstrace(origin + (0, 0, 25), origin - (0, 0, 75), (0, 0, 0), (0, 0, 0), self, 2);
     }
     var_d643c4fc = 0;
     var_e10b67f7 = [];
@@ -3204,9 +3194,7 @@ function function_4e74bed7(params) {
         self function_ef44d420(params);
     }
     time = params.param0;
-    /#
-        assert(isdefined(time));
-    #/
+    assert(isdefined(time));
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer") && isalive(self)) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
@@ -3264,9 +3252,7 @@ function function_c9620f20(params) {
     self.abnormal_status.attacker = params.param1;
     self.abnormal_status.inflictor = params.param2;
     time = params.param0;
-    /#
-        assert(isdefined(time));
-    #/
+    assert(isdefined(time));
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer") && isalive(self)) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
@@ -3335,7 +3321,7 @@ function function_33a25ecf(owner) {
                 } else if (grenade.owner == owner) {
                     continue;
                 }
-                if (bullettracepassed(grenade.origin, self.origin + vectorscale((0, 0, 1), 29), 0, self, grenade, 0, 1)) {
+                if (bullettracepassed(grenade.origin, self.origin + (0, 0, 29), 0, self, grenade, 0, 1)) {
                     grenade notify(#"death");
                     if (isdefined(level.var_ccfcde75)) {
                         owner [[ level.var_ccfcde75 ]](self, grenade);
@@ -3348,7 +3334,7 @@ function function_33a25ecf(owner) {
                     if (fxup == (0, 0, 0)) {
                         fxup = (0, 0, 1);
                     }
-                    playfx("weapon/fx_trophy_flash", self.origin + vectorscale((0, 0, 1), 15), fxfwd, fxup);
+                    playfx("weapon/fx_trophy_flash", self.origin + (0, 0, 15), fxfwd, fxup);
                     owner thread projectile_explode(grenade);
                     index--;
                     self playsound(#"wpn_trophy_alert");
@@ -3389,12 +3375,8 @@ function function_4ead318d() {
     /#
         self endon(#"death");
         height = self.height;
-        /#
-            assert(isdefined(self.radius));
-        #/
-        /#
-            assert(isdefined(self.height));
-        #/
+        assert(isdefined(self.radius));
+        assert(isdefined(self.height));
         while (true) {
             waitframe(1);
             leftrear = self gettagorigin("<unknown string>");
@@ -3406,12 +3388,12 @@ function function_4ead318d() {
             if (!isdefined(leftrear)) {
                 break;
             }
-            line(leftrear + vectorscale((0, 0, 1), 25), leftrear - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
-            line(leftmiddle + vectorscale((0, 0, 1), 25), leftmiddle - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
-            line(leftfront + vectorscale((0, 0, 1), 25), leftfront - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
-            line(rightrear + vectorscale((0, 0, 1), 25), rightrear - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
-            line(rightmiddle + vectorscale((0, 0, 1), 25), rightmiddle - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
-            line(rightfront + vectorscale((0, 0, 1), 25), rightfront - vectorscale((0, 0, 1), 75), (1, 1, 0), 1);
+            line(leftrear + (0, 0, 25), leftrear - (0, 0, 75), (1, 1, 0), 1);
+            line(leftmiddle + (0, 0, 25), leftmiddle - (0, 0, 75), (1, 1, 0), 1);
+            line(leftfront + (0, 0, 25), leftfront - (0, 0, 75), (1, 1, 0), 1);
+            line(rightrear + (0, 0, 25), rightrear - (0, 0, 75), (1, 1, 0), 1);
+            line(rightmiddle + (0, 0, 25), rightmiddle - (0, 0, 75), (1, 1, 0), 1);
+            line(rightfront + (0, 0, 25), rightfront - (0, 0, 75), (1, 1, 0), 1);
         }
     #/
 }

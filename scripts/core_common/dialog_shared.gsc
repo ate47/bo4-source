@@ -257,9 +257,7 @@ function water_vox() {
     level endon(#"game_ended");
     interval = mpdialog_value("underwaterInterval", float(function_60d95f53()) / 1000);
     if (interval <= 0) {
-        /#
-            assert(interval > 0, "enemyContactInterval");
-        #/
+        assert(interval > 0, "enemyContactInterval");
         return;
     }
     while (true) {
@@ -558,9 +556,7 @@ function event_handler[grenade_fire] function_54ca82b9(eventstruct) {
 function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
     level endon(#"game_ended");
     if (waittime <= 0) {
-        /#
-            assert(waittime > 0, "warmachineWeaponUse");
-        #/
+        assert(waittime > 0, "warmachineWeaponUse");
         return;
     }
     while (true) {

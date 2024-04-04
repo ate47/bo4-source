@@ -51,9 +51,7 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
             }
         }
     } else if (weapon_name == #"upgraded_weapon") {
-        /#
-            assert(isdefined(level.zombie_weapons_upgraded));
-        #/
+        assert(isdefined(level.zombie_weapons_upgraded));
         level.var_ab9d0ec6 = [];
         foreach (weapon in getarraykeys(level.zombie_weapons_upgraded)) {
             if (weapon != level.weaponnone) {
@@ -68,9 +66,7 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
             }
         }
     } else if (weapon_name == #"hash_74285cd06483f6da") {
-        /#
-            assert(isdefined(level.zombie_weapons_upgraded));
-        #/
+        assert(isdefined(level.zombie_weapons_upgraded));
         level.var_ab9d0ec6 = [];
         foreach (weapon in getarraykeys(level.zombie_weapons_upgraded)) {
             if (weapon != level.weaponnone) {
@@ -120,16 +116,10 @@ function private on_begin(weapon_name, var_eaa7f0ba, var_957937ee, var_9c56c5a9,
         }
     }
     /#
-        /#
-            assert(isdefined(level.var_ab9d0ec6), "<unknown string>");
-        #/
+        assert(isdefined(level.var_ab9d0ec6), "<unknown string>");
         foreach (weapon in level.var_ab9d0ec6) {
-            /#
-                assert(isdefined(weapon), "<unknown string>");
-            #/
-            /#
-                assert(weapon != level.weaponnone, "<unknown string>");
-            #/
+            assert(isdefined(weapon), "<unknown string>");
+            assert(weapon != level.weaponnone, "<unknown string>");
         }
     #/
     if (isdefined(self.var_eaa7f0ba) && self.var_eaa7f0ba) {
@@ -157,18 +147,12 @@ function private on_end(round_reset) {
         }
         self.a_n_objective_ids = undefined;
     }
-    /#
-        assert(isdefined(level.var_ab9d0ec6));
-    #/
-    /#
-        assert(isdefined(level.var_ab9d0ec6.size > 0));
-    #/
+    assert(isdefined(level.var_ab9d0ec6));
+    assert(isdefined(level.var_ab9d0ec6.size > 0));
     if (!round_reset) {
         var_57807cdc = [];
         foreach (player in getplayers()) {
-            /#
-                assert(isdefined(player.var_4ced1fcf));
-            #/
+            assert(isdefined(player.var_4ced1fcf));
             if (!player.var_4ced1fcf) {
                 array::add(var_57807cdc, player, 0);
             }

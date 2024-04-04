@@ -69,9 +69,7 @@ function register_challenge(name, var_c5dd8620, var_bbcdbff5) {
     if (!isdefined(level.var_75e93a54)) {
         level.var_75e93a54 = [];
     }
-    /#
-        assert(!isdefined(level.var_75e93a54[name]));
-    #/
+    assert(!isdefined(level.var_75e93a54[name]));
     info = {#name:name, #var_c5dd8620:var_c5dd8620, #var_bbcdbff5:var_bbcdbff5};
     level.var_75e93a54[name] = info;
 }
@@ -107,9 +105,7 @@ function private function_4dbf2663() {
     row = 0;
     while (row < var_e1617d73) {
         var_189d26ca = tablelookupcolumnforrow(table, row, 1);
-        /#
-            assert(!isdefined(function_d02ffd(var_189d26ca)));
-        #/
+        assert(!isdefined(function_d02ffd(var_189d26ca)));
         var_6d87ac05 = {#name:var_189d26ca, #rounds:[], #index:level.var_c556bb2e.size};
         level.var_c556bb2e[level.var_c556bb2e.size] = var_6d87ac05;
         do {
@@ -126,9 +122,7 @@ function private function_4dbf2663() {
                     round_info.desc_str = tablelookupcolumnforrow(table, row, 3);
                     round_info.challenges = [];
                 }
-                /#
-                    assert(isdefined(var_6d87ac05.rounds[round_index]));
-                #/
+                assert(isdefined(var_6d87ac05.rounds[round_index]));
                 round_info = var_6d87ac05.rounds[round_index];
                 challenge_name = tablelookupcolumnforrow(table, row, 5);
                 var_10a28798 = [];

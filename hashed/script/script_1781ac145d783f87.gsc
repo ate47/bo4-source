@@ -126,7 +126,6 @@ function function_fb74fc5f() {
     }
     playsoundatposition(#"hash_7f8f5a20e4b87aac", (0, 0, 0));
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_3042a9bf2f57ea0a");
         v_origin = s_waitresult.var_814c9389;
         if (isplayer(s_waitresult.attacker)) {
@@ -284,7 +283,6 @@ function function_acbff22d() {
 function function_4b01369a() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"trap_activated");
         t_trap = s_waitresult.trap;
         str_triggers = t_trap.var_a1aa5fa1;
@@ -321,7 +319,6 @@ function function_294c9ea7(str_triggers) {
 function function_51817689() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"trap_kill");
         ai_victim = s_waitresult.e_victim;
         e_trap = s_waitresult.e_trap;
@@ -394,7 +391,6 @@ function function_5ca13573() {
     level endon(#"end_game");
     var_bbd88248 = getent("firestorm_detector", "targetname");
     while (true) {
-        var_6aa0de02 = undefined;
         var_6aa0de02 = var_bbd88248 waittill(#"damage");
         if (!level flag::get("special_round")) {
             continue;
@@ -446,7 +442,6 @@ function function_c846dfc3() {
 function function_3ce07a2b() {
     level endon(#"game_end", #"21_guns");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
         if (!isplayer(e_attacker)) {
@@ -503,7 +498,6 @@ function function_1eddbf9e() {
     level endon(#"end_game", #"hash_205c15aeab8e14c4");
     var_c265cd7f = 0;
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hash_46267aa0f17a3c00");
         if (isdefined(s_result.var_8571ab76) && s_result.var_8571ab76) {
             var_c265cd7f++;

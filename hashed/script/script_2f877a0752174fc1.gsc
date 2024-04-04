@@ -59,7 +59,6 @@ function function_f339b159() {
 // Size: 0x104
 function function_c7d4845() {
     while (!self.is_collected) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         e_who playsound("evt_punch_card_pickup");
@@ -79,7 +78,6 @@ function function_c7d4845() {
 // Size: 0x120
 function function_445e3d3d() {
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (level.var_b53764f7 < level.var_389d1b12) {
@@ -182,7 +180,6 @@ function function_a7f8aee6() {
 function function_22393009() {
     while (self.is_active && !self.is_complete) {
         var_2dc7965c = self.var_8ace5ace;
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         b_using = 1;
@@ -259,7 +256,7 @@ function function_4306cc3f() {
 // Checksum 0xe47e25a1, Offset: 0x13c8
 // Size: 0x64
 function function_488e39dc() {
-    self.unitrigger_stub = self zm_unitrigger::create("", vectorscale((1, 1, 1), 32));
+    self.unitrigger_stub = self zm_unitrigger::create("", (32, 32, 32));
     self thread function_6ef57d1f();
     zm_unitrigger::function_89380dda(self.unitrigger_stub, 1);
 }
@@ -270,7 +267,7 @@ function function_488e39dc() {
 // Size: 0xac
 function function_462cd7c0() {
     self.device = getent(self.target, "targetname");
-    self.unitrigger_stub = self zm_unitrigger::create("", vectorscale((1, 1, 1), 32));
+    self.unitrigger_stub = self zm_unitrigger::create("", (32, 32, 32));
     self thread function_b4dbbdd1();
     zm_unitrigger::function_89380dda(self.unitrigger_stub, 1);
     self.device function_74174ce1("screen_off");
@@ -285,7 +282,6 @@ function function_938d4207() {
     level endon(#"insanity_mode_triggered");
     pixbeginevent(#"hash_12312acd8fd62f9e");
     e_trigger = getent(self.target, "targetname");
-    s_result = undefined;
     s_result = e_trigger waittill(#"damage");
     self thread function_8c80503();
     pixendevent();
@@ -298,7 +294,6 @@ function function_938d4207() {
 function function_6ef57d1f() {
     self endon(#"death");
     level endon(#"insanity_mode_triggered");
-    s_notify = undefined;
     s_notify = self waittill(#"trigger_activated");
     self.stub.related_parent thread function_8c80503();
 }
@@ -310,7 +305,6 @@ function function_6ef57d1f() {
 function function_b4dbbdd1() {
     self endon(#"death");
     level endon(#"insanity_mode_triggered");
-    s_notify = undefined;
     s_notify = self waittill(#"trigger_activated");
     self thread uin_kls_counteruavdefeated();
     self.device function_74174ce1("screen_on");
@@ -614,7 +608,6 @@ function function_93040a5d() {
     level.var_5da5aff4 = 0;
     while (!level.var_5da5aff4) {
         b_player_damaged = 0;
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         b_player_damaged = waitresult function_ce7e594b();
         if (!b_player_damaged || isdefined(level.var_215e60c4.in_use) && level.var_215e60c4.in_use) {

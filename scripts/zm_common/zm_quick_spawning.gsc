@@ -335,7 +335,7 @@ function function_3b2d308f(player, zone) {
         var_ca2de8ef = array::random(var_e50a845c);
         var_ca2de8ef.script_string = "find_flesh";
         foreach (player in level.players) {
-            if (sighttracepassed(player geteye(), var_ca2de8ef.origin + vectorscale((0, 0, 1), 72), 0, player)) {
+            if (sighttracepassed(player geteye(), var_ca2de8ef.origin + (0, 0, 72), 0, player)) {
                 return undefined;
             }
         }
@@ -673,7 +673,7 @@ function function_497aad8f() {
                     foreach (regioninfo in var_c99b5df) {
                         foreach (zone in level.zones) {
                             if (isinarray(zone.nodes, regioninfo.regionnode)) {
-                                print3d(regioninfo.regionnode.origin + vectorscale((0, 0, 1), 12), regioninfo.regionnode.targetname, (0, 1, 0), 1, 1, 1);
+                                print3d(regioninfo.regionnode.origin + (0, 0, 12), regioninfo.regionnode.targetname, (0, 1, 0), 1, 1, 1);
                                 break;
                             }
                         }

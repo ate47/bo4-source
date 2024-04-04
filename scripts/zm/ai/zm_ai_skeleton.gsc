@@ -79,9 +79,7 @@ function private __init__() {
             var_fab8d6ce callback::function_d8abfc3d(#"on_entity_deleted", &function_64ab9843);
         #/
     }
-    /#
-        assert(isscriptfunctionptr(&function_6318bedf));
-    #/
+    assert(isscriptfunctionptr(&function_6318bedf));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_706fe37c04dae8e1", &function_6318bedf);
 }
 
@@ -90,11 +88,7 @@ function private __init__() {
 // Checksum 0xefadb906, Offset: 0x6d0
 // Size: 0x34
 function function_64ab9843(params) {
-    /#
-        /#
-            assert(0, "<unknown string>");
-        #/
-    #/
+    assert(0, "<unknown string>");
 }
 
 // Namespace zm_ai_skeleton/zm_ai_skeleton
@@ -240,7 +234,6 @@ function private function_c9f197d2(var_4c3c217a = 1) {
     }
     if (!(isdefined(self.isdying) && self.isdying)) {
         self thread function_42a1dabd();
-        waitresult = undefined;
         waitresult = self waittilltimeout(60, #"hash_782dbc5eec90f62f");
         if (waitresult._notify == #"timeout") {
             self val::reset(#"hash_65edbe063d05f17b", "takedamage");
@@ -407,7 +400,7 @@ function private function_f78e62a8() {
     if (isdefined(var_51601537) && isdefined(self.var_fab8d6ce)) {
         to_point = var_51601537.origin - self.var_fab8d6ce.origin;
         self.var_fab8d6ce clientfield::set("" + #"spartoi_reassemble_clientfield", 1);
-        self.var_fab8d6ce moveto(self.var_fab8d6ce.origin + to_point / 2 + vectorscale((0, 0, 1), 20), 1.6, 0.5);
+        self.var_fab8d6ce moveto(self.var_fab8d6ce.origin + to_point / 2 + (0, 0, 20), 1.6, 0.5);
         wait(1.6);
         if (isdefined(self.var_fab8d6ce)) {
             self.var_fab8d6ce moveto(var_51601537.origin, 1.6, 0, 0.5);

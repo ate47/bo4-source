@@ -571,7 +571,6 @@ function function_26234f4c(str_notify) {
 function function_872ec0b2(t_ice) {
     self endon(#"death", #"hash_53bfad7081c69dee");
     while (true) {
-        s_notify = undefined;
         s_notify = t_ice waittill(#"damage");
         if (s_notify.attacker === self) {
             continue;

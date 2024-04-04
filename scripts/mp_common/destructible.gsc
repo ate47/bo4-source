@@ -42,9 +42,7 @@ function __init__() {
 // Checksum 0xb51ef65d, Offset: 0x3a8
 // Size: 0x9c
 function physics_explosion_and_rumble(origin, radius, physics_explosion) {
-    /#
-        assert(radius <= pow(2, 10) - 1);
-    #/
+    assert(radius <= pow(2, 10) - 1);
     if (isdefined(physics_explosion) && physics_explosion) {
         radius = radius + (1 << 9);
     }
@@ -142,7 +140,7 @@ function simple_explosion(attacker) {
         return;
     }
     self.exploded = 1;
-    offset = vectorscale((0, 0, 1), 5);
+    offset = (0, 0, 5);
     self radiusdamage(self.origin + offset, 256, 300, 75, attacker, "MOD_EXPLOSIVE", getweapon(#"explodable_barrel"));
     physics_explosion_and_rumble(self.origin, 255, 1);
     if (isdefined(attacker)) {
@@ -177,7 +175,7 @@ function simple_timed_explosion(destructible_event, attacker) {
 // Checksum 0xa06fa6ad, Offset: 0xb30
 // Size: 0x10c
 function complex_explosion(attacker, max_radius) {
-    offset = vectorscale((0, 0, 1), 5);
+    offset = (0, 0, 5);
     if (isdefined(attacker)) {
         self radiusdamage(self.origin + offset, max_radius, 300, 100, attacker);
     } else {
@@ -229,7 +227,6 @@ function car_explosion(attacker, physics_explosion) {
 function tank_grenade_stuck_think() {
     self endon(#"destructible_base_piece_death", #"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         missile = waitresult.projectile;
         if (!isdefined(missile) || !isdefined(missile.model)) {
@@ -281,7 +278,6 @@ function car_death_think() {
     self endon(#"car_dead");
     self.car_dead = 0;
     self thread car_death_notify();
-    waitresult = undefined;
     waitresult = self waittill(#"destructible_base_piece_death");
     if (isdefined(self)) {
         self thread car_explosion(waitresult.attacker, 0);
@@ -295,7 +291,6 @@ function car_death_think() {
 function car_grenade_stuck_think() {
     self endon(#"destructible_base_piece_death", #"car_dead", #"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         missile = waitresult.projectile;
         if (!isdefined(missile) || !isdefined(missile.model)) {
@@ -390,7 +385,7 @@ function breakafter(time, damage, piece) {
 // Size: 0x174
 function explosive_incendiary_explosion(attacker, explosion_radius, physics_explosion) {
     if (!isvehicle(self)) {
-        offset = vectorscale((0, 0, 1), 5);
+        offset = (0, 0, 5);
         if (isdefined(attacker)) {
             self radiusdamage(self.origin + offset, explosion_radius, 256, 75, attacker, "MOD_BURNED", getweapon(#"incendiary_fire"));
         } else {
@@ -413,7 +408,7 @@ function explosive_incendiary_explosion(attacker, explosion_radius, physics_expl
 // Size: 0x154
 function explosive_electrical_explosion(attacker, explosion_radius, physics_explosion) {
     if (!isvehicle(self)) {
-        offset = vectorscale((0, 0, 1), 5);
+        offset = (0, 0, 5);
         if (isdefined(attacker)) {
             self radiusdamage(self.origin + offset, explosion_radius, 256, 75, attacker, "MOD_ELECTROCUTED");
         } else {
@@ -436,7 +431,7 @@ function explosive_electrical_explosion(attacker, explosion_radius, physics_expl
 // Size: 0x154
 function explosive_concussive_explosion(attacker, explosion_radius, physics_explosion) {
     if (!isvehicle(self)) {
-        offset = vectorscale((0, 0, 1), 5);
+        offset = (0, 0, 5);
         if (isdefined(attacker)) {
             self radiusdamage(self.origin + offset, explosion_radius, 256, 75, attacker, "MOD_GRENADE");
         } else {

@@ -44,9 +44,7 @@ function amws_initialize() {
     self.fovcosine = 0;
     self.fovcosinebusy = 0.574;
     self.vehaircraftcollisionenabled = 1;
-    /#
-        assert(isdefined(self.scriptbundlesettings));
-    #/
+    assert(isdefined(self.scriptbundlesettings));
     self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     self.goalradius = 999999;
     self.goalheight = 512;
@@ -260,8 +258,8 @@ function state_stationary_update(params) {
                     break;
                 }
                 if (distsqr < self.settings.engagementdistmax * 3 * self.settings.engagementdistmax * 3) {
-                    self turretsettarget(0, self.enemy, vectorscale((0, 0, -1), 5));
-                    self turretsettarget(1, self.enemy, vectorscale((0, 0, -1), 5));
+                    self turretsettarget(0, self.enemy, (0, 0, -5));
+                    self turretsettarget(1, self.enemy, (0, 0, -5));
                     if (util::iscooldownready("rocket") && self.turretontarget && self.gib_rocket !== 1 && !(isdefined(self.var_a8c60b0e) && self.var_a8c60b0e)) {
                         self thread firerocketlauncher(self.enemy);
                         util::cooldown("rocket", self.settings.rocketcooldown);
@@ -496,11 +494,11 @@ function function_64609aab(entity, enemy) {
     if (!isdefined(enemy) || !isdefined(entity)) {
         return false;
     }
-    var_31e097c5 = entity.origin + vectorscale((0, 0, 1), 30);
+    var_31e097c5 = entity.origin + (0, 0, 30);
     v_to_enemy = enemy.origin - entity.origin;
     v_to_enemy = vectornormalize(v_to_enemy);
     var_aae53953 = vectorscale(v_to_enemy, 350);
-    var_5d132997 = vectorscale((0, 0, 1), 30);
+    var_5d132997 = (0, 0, 30);
     var_3a2b9b1a = var_31e097c5 + var_aae53953;
     var_ece22384 = sighttracepassed(var_31e097c5, var_3a2b9b1a, 0, entity, enemy);
     var_1159ae8 = sighttracepassed(var_31e097c5 + var_5d132997, var_3a2b9b1a + var_5d132997, 0, entity, enemy);
@@ -648,9 +646,7 @@ function getnextmoveposition_wander() {
 // Checksum 0xbc0e1905, Offset: 0x2950
 // Size: 0xa22
 function getnextmoveposition_evasive(client_flags) {
-    /#
-        assert(isdefined(client_flags));
-    #/
+    assert(isdefined(client_flags));
     self setspeed(self.settings.defaultmovespeed * (isdefined(self.settings.lock_evade_speed_boost) ? self.settings.lock_evade_speed_boost : 2));
     self setacceleration((isdefined(self.settings.default_move_acceleration) ? self.settings.default_move_acceleration : 10) * (isdefined(self.settings.lock_evade_acceleration_boost) ? self.settings.lock_evade_acceleration_boost : 2));
     queryresult = positionquery_source_navigation(self.origin, isdefined(self.settings.lock_evade_dist_min) ? self.settings.lock_evade_dist_min : 120, isdefined(self.settings.lock_evade_dist_max) ? self.settings.lock_evade_dist_max : 360, math::clamp(isdefined(self.settings.lock_evade_dist_half_height) ? self.settings.lock_evade_dist_half_height : 250, 0.1, 99000), (isdefined(self.settings.lock_evade_point_spacing_factor) ? self.settings.lock_evade_point_spacing_factor : 1.5) * self.radius, self);
@@ -968,7 +964,7 @@ function gib(attacker) {
         self vehicle::do_gib_dynents();
         self.gibbed = 1;
         self.death_type = "suicide_crash";
-        self kill(self.origin + vectorscale((0, 0, 1), 10), attacker);
+        self kill(self.origin + (0, 0, 10), attacker);
     }
 }
 

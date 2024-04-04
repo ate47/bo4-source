@@ -103,9 +103,7 @@ function fire_for_time(totalfiretime, turretidx, target, intervalscale = 1) {
     self endon("fire_stop" + turretidx);
     weapon = self seatgetweapon(turretidx);
     if (!isdefined(weapon) || weapon.name == #"none" || weapon.firetime <= 0) {
-        /#
-            println("<unknown string>" + turretidx + "<unknown string>" + self getentnum() + "<unknown string>" + self.model);
-        #/
+        println("<unknown string>" + turretidx + "<unknown string>" + self getentnum() + "<unknown string>" + self.model);
         return;
     }
     firetime = weapon.firetime * intervalscale;
@@ -124,9 +122,7 @@ function fire_for_rounds(firecount, turretidx, target) {
     }
     weapon = self seatgetweapon(turretidx);
     if (!isdefined(weapon) || weapon.name == #"none" || weapon.firetime <= 0) {
-        /#
-            println("<unknown string>" + turretidx + "<unknown string>" + self getentnum() + "<unknown string>" + self.model);
-        #/
+        println("<unknown string>" + turretidx + "<unknown string>" + self getentnum() + "<unknown string>" + self.model);
         return;
     }
     __fire_for_rounds_internal(firecount, weapon.firetime, turretidx, target);
@@ -138,9 +134,7 @@ function fire_for_rounds(firecount, turretidx, target) {
 // Size: 0x10c
 function __fire_for_rounds_internal(firecount, fireinterval, turretidx, target) {
     self endon(#"death", #"fire_stop", #"change_state");
-    /#
-        assert(isdefined(turretidx));
-    #/
+    assert(isdefined(turretidx));
     if (isdefined(target)) {
         target endon(#"death");
     }
@@ -196,9 +190,7 @@ function fireturret(turretidx, target, offset = (0, 0, 0)) {
 // Checksum 0x758f0656, Offset: 0xbc8
 // Size: 0x122
 function airfollow(target) {
-    /#
-        assert(isairborne(self));
-    #/
+    assert(isairborne(self));
     if (!isdefined(target)) {
         return;
     }
@@ -222,9 +214,7 @@ function airfollow(target) {
 // Checksum 0xd5073183, Offset: 0xcf8
 // Size: 0x94
 function getairfollowindex() {
-    /#
-        assert(isairborne(self));
-    #/
+    assert(isairborne(self));
     if (!isdefined(self.host)) {
         return undefined;
     }
@@ -241,9 +231,7 @@ function getairfollowindex() {
 // Checksum 0xa4a4614a, Offset: 0xd98
 // Size: 0x1d8
 function getairfollowingposition(userelativeangletohost) {
-    /#
-        assert(isairborne(self));
-    #/
+    assert(isairborne(self));
     index = self getairfollowindex();
     if (!isdefined(index)) {
         return undefined;
@@ -274,9 +262,7 @@ function getairfollowingposition(userelativeangletohost) {
 // Checksum 0x2f5cdf8a, Offset: 0xf78
 // Size: 0xda
 function getairfollowingorigin() {
-    /#
-        assert(isairborne(self));
-    #/
+    assert(isairborne(self));
     origin = self.host.origin + self.host.mins + self.host.maxs;
     if (isdefined(self.host.airfollowconfig) && self.host.airfollowconfig.tag !== "") {
         origin = self.host gettagorigin(self.host.airfollowconfig.tag);
@@ -328,13 +314,11 @@ function javelin_losetargetatrighttime(target, gunnerindex) {
     if (isdefined(gunnerindex)) {
         firedgunnerindex = -1;
         while (firedgunnerindex != gunnerindex) {
-            waitresult = undefined;
             waitresult = self waittill(#"gunner_weapon_fired");
             firedgunnerindex = waitresult.gunner_index;
             projarray = waitresult.projectile;
         }
     } else {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_fired");
         projarray = waitresult.projectile;
     }
@@ -377,7 +361,6 @@ function javelin_losetargetatrighttimeprojectile(proj, target) {
 // Size: 0x88
 function waittill_pathing_done(maxtime = 15) {
     self endon(#"change_state");
-    result = undefined;
     result = self waittilltimeout(maxtime, #"near_goal", #"force_goal", #"reached_end_node", #"pathfind_failed");
 }
 
@@ -387,7 +370,6 @@ function waittill_pathing_done(maxtime = 15) {
 // Size: 0x94
 function waittill_pathresult(maxtime = 0.5) {
     self endon(#"change_state");
-    result = undefined;
     result = self waittilltimeout(maxtime, #"pathfind_failed", #"pathfind_succeeded", #"change_state");
     succeeded = result === "pathfind_succeeded";
     return succeeded;
@@ -426,7 +408,6 @@ function waittill_asm_complete(substate_to_wait, timeout = 10) {
     self thread waittill_asm_terminated();
     self thread waittill_asm_timeout(timeout);
     for (substate = undefined; !isdefined(substate) || substate != substate_to_wait && substate != "__terminated__" && substate != "__timeout__"; substate = waitresult.substate) {
-        waitresult = undefined;
         waitresult = self waittill(#"asm_complete");
     }
     self notify(#"end_asm_terminated_thread");
@@ -459,7 +440,6 @@ function throw_off_balance(damagetype, hitpoint, hitdirection, hitlocationinfo) 
 function predicted_collision() {
     self endon(#"crash_done", #"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         if (waitresult.normal[2] >= 0.6) {
             self notify(#"veh_collision", waitresult);
@@ -490,7 +470,6 @@ function nudge_collision() {
         return;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         velocity = waitresult.velocity;
         normal = waitresult.normal;
@@ -543,7 +522,7 @@ function level_out_for_landing() {
         self.angles = (self.angles[0] * 0.85, self.angles[1], self.angles[2] * 0.85);
         ang_vel = self getangularvelocity() * 0.85;
         self setangularvelocity(ang_vel);
-        self setvehvelocity(velocity + vectorscale((0, 0, -1), 60));
+        self setvehvelocity(velocity + (0, 0, -60));
         waitframe(1);
     }
 }
@@ -621,11 +600,8 @@ function iff_override(owner, time = 60) {
         return;
     }
     timeout = isdefined(self.settings) ? self.settings.ifftimetillrevert : time;
-    /#
-        assert(timeout > 10);
-    #/
+    assert(timeout > 10);
     self thread iff_notifymeinnsec(timeout - 10, "iff_override_revert_warn");
-    msg = undefined;
     msg = self waittilltimeout(timeout, #"iff_override_reverted");
     if (msg == "timeout") {
         self notify(#"iff_override_reverted");
@@ -894,9 +870,7 @@ function set_role(rolename) {
 // Checksum 0xd962efbc, Offset: 0x31a0
 // Size: 0x84
 function has_state(name) {
-    /#
-        assert(isdefined(self), "<unknown string>");
-    #/
+    assert(isdefined(self), "<unknown string>");
     return isdefined(self.state_machines) && isdefined(self.current_role) && isdefined(self.state_machines[self.current_role]) && self.state_machines[self.current_role] statemachine::has_state(name);
 }
 
@@ -1194,7 +1168,7 @@ function death_radius_damage_special(radiusscale, meansofdamage) {
     if (!isdefined(self) || self.abandoned === 1 || self.damage_on_death === 0 || self.radiusdamageradius <= 0) {
         return;
     }
-    position = self.origin + vectorscale((0, 0, 1), 15);
+    position = self.origin + (0, 0, 15);
     radius = self.radiusdamageradius * radiusscale;
     damagemax = self.radiusdamagemax;
     damagemin = self.radiusdamagemin;
@@ -1417,9 +1391,7 @@ function emp_startup_fx() {
 function defaultstate_emped_update(params) {
     self endon(#"death", #"change_state");
     time = params.param0;
-    /#
-        assert(isdefined(time));
-    #/
+    assert(isdefined(time));
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer")) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);
@@ -1474,7 +1446,7 @@ function defaultstate_off_enter(params) {
     }
     if (isairborne(self)) {
         if (params.isinitialstate !== 1 && params.no_falling !== 1) {
-            self setphysacceleration(vectorscale((0, 0, -1), 300));
+            self setphysacceleration((0, 0, -300));
             self thread level_out_for_landing();
         }
         self setrotorspeed(0);
@@ -1562,9 +1534,7 @@ function defaultstate_driving_enter(params) {
             return;
         }
     }
-    /#
-        assert(isdefined(params.driver));
-    #/
+    assert(isdefined(params.driver));
     self disableaimassist();
     self.turretrotscale = 1;
     if (!(isdefined(params.var_c2e048f9) && params.var_c2e048f9)) {
@@ -1627,7 +1597,7 @@ function function_97e9de18(params) {
 // Size: 0x6a
 function canseeenemyfromposition(position, enemy, sight_check_height) {
     sightcheckorigin = position + (0, 0, sight_check_height);
-    return sighttracepassed(sightcheckorigin, enemy.origin + vectorscale((0, 0, 1), 30), 0, self);
+    return sighttracepassed(sightcheckorigin, enemy.origin + (0, 0, 30), 0, self);
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -1900,7 +1870,6 @@ function positionquery_postprocess_removeoutofgoalradius(queryresult, tolerance 
 function target_hijackers() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"ccom_lock_being_targeted");
         hijackingplayer = waitresult.hijacking_player;
         self getperfectinfo(hijackingplayer, 1);
@@ -1965,9 +1934,7 @@ function private function_e057db25(var_2d1cbdd9, goalpos, vararg) {
     case 0:
         return tacticalquery(var_2d1cbdd9, goalpos);
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
     return undefined;
@@ -1978,9 +1945,7 @@ function private function_e057db25(var_2d1cbdd9, goalpos, vararg) {
 // Checksum 0x11ace4ed, Offset: 0x6e50
 // Size: 0x526
 function function_1d436633(...) {
-    /#
-        assert(isdefined(self.ai));
-    #/
+    assert(isdefined(self.ai));
     if (!isdefined(self.ai.var_88b0fd29)) {
         self.ai.var_88b0fd29 = gettime();
     }
@@ -2004,9 +1969,7 @@ function function_1d436633(...) {
         if (forcedgoal) {
             newpos = getclosestpointonnavmesh(goalinfo.goalpos, self.radius * 2, self.radius);
         } else {
-            /#
-                assert(isdefined(self.settings.tacbundle) && self.settings.tacbundle != "<unknown string>", "<unknown string>");
-            #/
+            assert(isdefined(self.settings.tacbundle) && self.settings.tacbundle != "<unknown string>", "<unknown string>");
             goalarray = function_e057db25(self.settings.tacbundle, goalinfo.goalpos, vararg);
             var_817e8fd0 = [];
             if (isdefined(goalarray) && goalarray.size) {
@@ -2292,17 +2255,13 @@ function private function_4646fb11(goal) {
 // Checksum 0xfc271c8c, Offset: 0x8b48
 // Size: 0x680
 function function_b1bd875a() {
-    /#
-        assert(isdefined(self.ai));
-    #/
+    assert(isdefined(self.ai));
     if (!isdefined(self.ai.var_88b0fd29)) {
         self.ai.var_88b0fd29 = gettime() + 1000;
         return;
     }
     goalinfo = self function_4794d6a3();
-    /#
-        assert(isdefined(goalinfo.goalpos));
-    #/
+    assert(isdefined(goalinfo.goalpos));
     var_12cb92c6 = 0;
     newpos = undefined;
     point = undefined;
@@ -2344,13 +2303,13 @@ function function_b1bd875a() {
             }
             if (!isdefined(newpos)) {
                 /#
-                    record3dtext("<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + vectorscale((0, 0, 1), 8), (1, 0, 0));
+                    record3dtext("<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + (0, 0, 8), (1, 0, 0));
                     recordline(self.origin, goalinfo.goalpos, (1, 0, 0));
                 #/
                 newpos = goalinfo.goalpos;
             } else if (!self isingoal(newpos)) {
                 /#
-                    record3dtext("<unknown string>" + newpos + "<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + vectorscale((0, 0, 1), 8), (1, 0, 0));
+                    record3dtext("<unknown string>" + newpos + "<unknown string>" + goalinfo.goalpos + "<unknown string>" + goalinfo.goalradius + "<unknown string>" + goalinfo.goalheight, self.origin + (0, 0, 8), (1, 0, 0));
                     recordline(self.origin, newpos, (1, 0, 0));
                 #/
                 newpos = goalinfo.goalpos;

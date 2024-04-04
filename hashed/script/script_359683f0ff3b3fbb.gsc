@@ -8,27 +8,11 @@
 class cprototype_hud : cluielem {
 
     // Namespace cprototype_hud/prototype_hud
-    // Params 0, eflags: 0x8
-    // Checksum 0x8ad7fa37, Offset: 0x6f0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cprototype_hud/prototype_hud
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x6bbacb80, Offset: 0x1050
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cprototype_hud/prototype_hud
     // Params 2, eflags: 0x0
     // Checksum 0x83443c4, Offset: 0x1018
     // Size: 0x30
     function set_deploy_prompt_visibility(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "deploy_prompt_visibility", value);
+        set_data(localclientnum, "deploy_prompt_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -36,7 +20,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x35f7fed4, Offset: 0xfe0
     // Size: 0x30
     function set_fail_fanfare_visibility(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "fail_fanfare_visibility", value);
+        set_data(localclientnum, "fail_fanfare_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -44,7 +28,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x63172253, Offset: 0xfa8
     // Size: 0x30
     function set_fanfare_visibility(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "fanfare_visibility", value);
+        set_data(localclientnum, "fanfare_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -52,7 +36,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x2a074ed0, Offset: 0xf70
     // Size: 0x30
     function set_objective3_strike(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective3_strike", value);
+        set_data(localclientnum, "objective3_strike", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -60,7 +44,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xbcf5371d, Offset: 0xf38
     // Size: 0x30
     function set_objective2_strike(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective2_strike", value);
+        set_data(localclientnum, "objective2_strike", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -68,7 +52,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xc13d27e2, Offset: 0xf00
     // Size: 0x30
     function set_objective1_strike(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective1_strike", value);
+        set_data(localclientnum, "objective1_strike", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -76,7 +60,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xe57d23f1, Offset: 0xec8
     // Size: 0x30
     function set_objective_prompt_visibility(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective_prompt_visibility", value);
+        set_data(localclientnum, "objective_prompt_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -84,7 +68,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xba28cf0e, Offset: 0xe90
     // Size: 0x30
     function set_objective3_string(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective3_string", value);
+        set_data(localclientnum, "objective3_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -92,7 +76,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x8382105, Offset: 0xe58
     // Size: 0x30
     function set_objective2_string(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective2_string", value);
+        set_data(localclientnum, "objective2_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -100,7 +84,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xcc57aed, Offset: 0xe20
     // Size: 0x30
     function set_objective1_string(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objective1_string", value);
+        set_data(localclientnum, "objective1_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -108,7 +92,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xb0024386, Offset: 0xde8
     // Size: 0x30
     function set_active_objective_string(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "active_objective_string", value);
+        set_data(localclientnum, "active_objective_string", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -116,7 +100,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x575562d, Offset: 0xdb0
     // Size: 0x30
     function set_craft_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "craft_progress", value);
+        set_data(localclientnum, "craft_progress", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -124,7 +108,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x65d5fa3f, Offset: 0xd78
     // Size: 0x30
     function set_resource_count_visibility(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "resource_count_visibility", value);
+        set_data(localclientnum, "resource_count_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -132,7 +116,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x36368d7f, Offset: 0xd40
     // Size: 0x30
     function set_defense_resource_count(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "defense_resource_count", value);
+        set_data(localclientnum, "defense_resource_count", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -140,7 +124,7 @@ class cprototype_hud : cluielem {
     // Checksum 0xb55b386d, Offset: 0xd08
     // Size: 0x30
     function set_upgrade_resource_count(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "upgrade_resource_count", value);
+        set_data(localclientnum, "upgrade_resource_count", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -148,7 +132,7 @@ class cprototype_hud : cluielem {
     // Checksum 0x345ec1ca, Offset: 0xcd0
     // Size: 0x30
     function set_barrier_prompt_visibility(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "barrier_prompt_visibility", value);
+        set_data(localclientnum, "barrier_prompt_visibility", value);
     }
 
     // Namespace cprototype_hud/prototype_hud
@@ -165,22 +149,22 @@ class cprototype_hud : cluielem {
     // Size: 0x220
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "barrier_prompt_visibility", 0);
-        [[ self ]]->set_data(localclientnum, "upgrade_resource_count", 0);
-        [[ self ]]->set_data(localclientnum, "defense_resource_count", 0);
-        [[ self ]]->set_data(localclientnum, "resource_count_visibility", 0);
-        [[ self ]]->set_data(localclientnum, "craft_progress", 0);
-        [[ self ]]->set_data(localclientnum, "active_objective_string", #"");
-        [[ self ]]->set_data(localclientnum, "objective1_string", #"");
-        [[ self ]]->set_data(localclientnum, "objective2_string", #"");
-        [[ self ]]->set_data(localclientnum, "objective3_string", #"");
-        [[ self ]]->set_data(localclientnum, "objective_prompt_visibility", 0);
-        [[ self ]]->set_data(localclientnum, "objective1_strike", 0);
-        [[ self ]]->set_data(localclientnum, "objective2_strike", 0);
-        [[ self ]]->set_data(localclientnum, "objective3_strike", 0);
-        [[ self ]]->set_data(localclientnum, "fanfare_visibility", 0);
-        [[ self ]]->set_data(localclientnum, "fail_fanfare_visibility", 0);
-        [[ self ]]->set_data(localclientnum, "deploy_prompt_visibility", 0);
+        set_data(localclientnum, "barrier_prompt_visibility", 0);
+        set_data(localclientnum, "upgrade_resource_count", 0);
+        set_data(localclientnum, "defense_resource_count", 0);
+        set_data(localclientnum, "resource_count_visibility", 0);
+        set_data(localclientnum, "craft_progress", 0);
+        set_data(localclientnum, "active_objective_string", #"");
+        set_data(localclientnum, "objective1_string", #"");
+        set_data(localclientnum, "objective2_string", #"");
+        set_data(localclientnum, "objective3_string", #"");
+        set_data(localclientnum, "objective_prompt_visibility", 0);
+        set_data(localclientnum, "objective1_strike", 0);
+        set_data(localclientnum, "objective2_strike", 0);
+        set_data(localclientnum, "objective3_strike", 0);
+        set_data(localclientnum, "fanfare_visibility", 0);
+        set_data(localclientnum, "fail_fanfare_visibility", 0);
+        set_data(localclientnum, "deploy_prompt_visibility", 0);
     }
 
     // Namespace cprototype_hud/prototype_hud

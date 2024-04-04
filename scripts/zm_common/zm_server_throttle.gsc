@@ -42,9 +42,7 @@ function server_choke_safe(id) {
 // Checksum 0xf8511a7, Offset: 0x180
 // Size: 0xf8
 function server_choke_action(id, choke_action, arg1, arg2, arg3) {
-    /#
-        assert(isdefined(level.zombie_server_choke_ids_max[id]), "<unknown string>" + id + "<unknown string>");
-    #/
+    assert(isdefined(level.zombie_server_choke_ids_max[id]), "<unknown string>" + id + "<unknown string>");
     while (!server_choke_safe(id)) {
         waitframe(1);
     }
@@ -80,9 +78,7 @@ function server_safe_init(id, max) {
     if (!isdefined(level.zombie_server_choke_ids_max) || !isdefined(level.zombie_server_choke_ids_max[id])) {
         server_choke_init(id, max);
     }
-    /#
-        assert(max == level.zombie_server_choke_ids_max[id]);
-    #/
+    assert(max == level.zombie_server_choke_ids_max[id]);
 }
 
 // Namespace zm_server_throttle/zm_server_throttle

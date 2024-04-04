@@ -352,7 +352,6 @@ function melee_weapon_think(weapon, cost, flourish_fn, vo_dialog_id, flourish_we
         }
     }
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::is_player_valid(player)) {
@@ -533,12 +532,8 @@ function do_melee_weapon_flourish_begin(flourish_weapon) {
 // Checksum 0xf565640c, Offset: 0x1eb0
 // Size: 0x2bc
 function do_melee_weapon_flourish_end(original_weapon, flourish_weapon, weapon) {
-    /#
-        assert(!original_weapon.isperkbottle);
-    #/
-    /#
-        assert(original_weapon != level.weaponrevivetool);
-    #/
+    assert(!original_weapon.isperkbottle);
+    assert(original_weapon != level.weaponrevivetool);
     if (!isdefined(self)) {
         return;
     }

@@ -57,21 +57,16 @@
 // Method(s) 2 Total 2
 class class_52f0d01d {
 
+    var adjustmentstarted;
+    var var_425c4c8b;
+
     // Namespace class_52f0d01d/zm_ai_gladiator
     // Params 0, eflags: 0x9 linked
     // Checksum 0x8e073ab9, Offset: 0x3368
     // Size: 0x1a
-    __constructor() {
-        self.adjustmentstarted = 0;
-        self.var_425c4c8b = 1;
-    }
-
-    // Namespace class_52f0d01d/zm_ai_gladiator
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x3390
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        adjustmentstarted = 0;
+        var_425c4c8b = 1;
     }
 
 }
@@ -163,137 +158,71 @@ function private function_a19a24bf(entity) {
 // Checksum 0x4c5be1d, Offset: 0xbb8
 // Size: 0xee4
 function registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&gladiatortargetservice));
-    #/
+    assert(isscriptfunctionptr(&gladiatortargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"gladiatortargetservice", &gladiatortargetservice);
-    /#
-        assert(isscriptfunctionptr(&function_4f73587a));
-    #/
+    assert(isscriptfunctionptr(&function_4f73587a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2f31066d04316712", &function_4f73587a);
-    /#
-        assert(isscriptfunctionptr(&function_4660925e));
-    #/
+    assert(isscriptfunctionptr(&function_4660925e));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_19f5dddb53541f2f", &function_4660925e);
-    /#
-        assert(isscriptfunctionptr(&function_edd0777f));
-    #/
+    assert(isscriptfunctionptr(&function_edd0777f));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3d538371b59fc4ce", &function_edd0777f);
-    /#
-        assert(isscriptfunctionptr(&function_154454e8));
-    #/
+    assert(isscriptfunctionptr(&function_154454e8));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_205614b8bf4014e6", &function_154454e8);
-    /#
-        assert(isscriptfunctionptr(&function_154454e8));
-    #/
+    assert(isscriptfunctionptr(&function_154454e8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_205614b8bf4014e6", &function_154454e8);
-    /#
-        assert(isscriptfunctionptr(&function_2b6f49c8));
-    #/
+    assert(isscriptfunctionptr(&function_2b6f49c8));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_48c3fc4eec7605", &function_2b6f49c8);
-    /#
-        assert(isscriptfunctionptr(&function_2b6f49c8));
-    #/
+    assert(isscriptfunctionptr(&function_2b6f49c8));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_48c3fc4eec7605", &function_2b6f49c8);
-    /#
-        assert(isscriptfunctionptr(&function_d2ab62ae));
-    #/
+    assert(isscriptfunctionptr(&function_d2ab62ae));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4aefcc750ed27716", &function_d2ab62ae);
-    /#
-        assert(isscriptfunctionptr(&function_a3329afd));
-    #/
+    assert(isscriptfunctionptr(&function_a3329afd));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1e62e0f93339aad3", &function_a3329afd);
-    /#
-        assert(isscriptfunctionptr(&function_13f886a2));
-    #/
+    assert(isscriptfunctionptr(&function_13f886a2));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4038d6d7b731c1de", &function_13f886a2);
-    /#
-        assert(isscriptfunctionptr(&function_61e7d5f5));
-    #/
+    assert(isscriptfunctionptr(&function_61e7d5f5));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1d96f193711e7602", &function_61e7d5f5);
-    /#
-        assert(isscriptfunctionptr(&function_6bbfa1a0));
-    #/
+    assert(isscriptfunctionptr(&function_6bbfa1a0));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_753bdf09b9b21d9a", &function_6bbfa1a0);
-    /#
-        assert(isscriptfunctionptr(&function_dd674e3c));
-    #/
+    assert(isscriptfunctionptr(&function_dd674e3c));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_649ab6146cce9955", &function_dd674e3c);
-    /#
-        assert(isscriptfunctionptr(&function_7468904d));
-    #/
+    assert(isscriptfunctionptr(&function_7468904d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_19966227fe912af8", &function_7468904d);
-    /#
-        assert(isscriptfunctionptr(&gladiatorshouldreact));
-    #/
+    assert(isscriptfunctionptr(&gladiatorshouldreact));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"gladiatorshouldreact", &gladiatorshouldreact);
-    /#
-        assert(isscriptfunctionptr(&function_c1b97472));
-    #/
+    assert(isscriptfunctionptr(&function_c1b97472));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5934d511f3d43e76", &function_c1b97472);
-    /#
-        assert(isscriptfunctionptr(&function_fe0ecd9f));
-    #/
+    assert(isscriptfunctionptr(&function_fe0ecd9f));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7114ad7e891644ce", &function_fe0ecd9f);
-    /#
-        assert(isscriptfunctionptr(&gladiatorpickaxe));
-    #/
+    assert(isscriptfunctionptr(&gladiatorpickaxe));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"gladiatorpickaxe", &gladiatorpickaxe);
-    /#
-        assert(isscriptfunctionptr(&gladiatorpickaxe));
-    #/
+    assert(isscriptfunctionptr(&gladiatorpickaxe));
     behaviorstatemachine::registerbsmscriptapiinternal(#"gladiatorpickaxe", &gladiatorpickaxe);
-    /#
-        assert(isscriptfunctionptr(&function_7891bd9b));
-    #/
+    assert(isscriptfunctionptr(&function_7891bd9b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2ec3db12905e5ef2", &function_7891bd9b);
-    /#
-        assert(isscriptfunctionptr(&function_490a290d));
-    #/
+    assert(isscriptfunctionptr(&function_490a290d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_324b5266aa732357", &function_490a290d);
-    /#
-        assert(isscriptfunctionptr(&function_6719445a));
-    #/
+    assert(isscriptfunctionptr(&function_6719445a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7a99cf7ed75b85d4", &function_6719445a);
-    /#
-        assert(isscriptfunctionptr(&function_fced00e1));
-    #/
+    assert(isscriptfunctionptr(&function_fced00e1));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_84d084fea1afb67", &function_fced00e1);
-    /#
-        assert(isscriptfunctionptr(&function_3963581d));
-    #/
+    assert(isscriptfunctionptr(&function_3963581d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_72578a0bdaf6cabc", &function_3963581d);
-    /#
-        assert(isscriptfunctionptr(&function_dfbf9d5e));
-    #/
+    assert(isscriptfunctionptr(&function_dfbf9d5e));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1c6cfcf6fdb404ff", &function_dfbf9d5e);
-    /#
-        assert(isscriptfunctionptr(&function_8d49edfa));
-    #/
+    assert(isscriptfunctionptr(&function_8d49edfa));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_50e5d4b2634f5877", &function_8d49edfa);
-    /#
-        assert(isscriptfunctionptr(&function_990c9627));
-    #/
+    assert(isscriptfunctionptr(&function_990c9627));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_52aa25564f02b9a1", &function_990c9627);
-    /#
-        assert(isscriptfunctionptr(&function_6ba071ff));
-    #/
+    assert(isscriptfunctionptr(&function_6ba071ff));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2d6fdeb321d8ce80", &function_6ba071ff);
-    /#
-        assert(isscriptfunctionptr(&function_3ca98f5a));
-    #/
+    assert(isscriptfunctionptr(&function_3ca98f5a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7ed731cb43b72ab7", &function_3ca98f5a);
-    /#
-        assert(isscriptfunctionptr(&function_e217245a));
-    #/
+    assert(isscriptfunctionptr(&function_e217245a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_51d4a260f5e68d32", &function_e217245a);
-    /#
-        assert(isscriptfunctionptr(&function_c6c44df1));
-    #/
+    assert(isscriptfunctionptr(&function_c6c44df1));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3378ea427701f557", &function_c6c44df1);
-    /#
-        assert(isscriptfunctionptr(&function_c6c44df1));
-    #/
+    assert(isscriptfunctionptr(&function_c6c44df1));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_3378ea427701f557", &function_c6c44df1);
     animationstatenetwork::registeranimationmocomp("mocomp_gladiator_leap", &registerhud_message_electricity_, &function_3f15e557, &function_96f1cbf6);
     animationstatenetwork::registeranimationmocomp("mocomp_gladiator_throw", &function_3137174f, &function_64cd870, &function_d9e4ebc8);
@@ -519,7 +448,7 @@ function private function_edd0777f(entity) {
     if (zm_ai_utility::function_54054394(entity)) {
         return false;
     }
-    can_see = bullettracepassed(entity.origin + vectorscale((0, 0, 1), 36), entity.favoriteenemy.origin + vectorscale((0, 0, 1), 36), 0, undefined);
+    can_see = bullettracepassed(entity.origin + (0, 0, 36), entity.favoriteenemy.origin + (0, 0, 36), 0, undefined);
     if (!can_see) {
         return false;
     }
@@ -912,9 +841,7 @@ function registerhud_message_electricity_(entity, mocompanim, mocompanimblendout
 // Checksum 0xc95da36a, Offset: 0x3760
 // Size: 0x914
 function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
-    /#
-        assert(isdefined(self.meleeinfo));
-    #/
+    assert(isdefined(self.meleeinfo));
     currentanimtime = entity getanimtime(mocompanim);
     if (isdefined(self.favoriteenemy) && !self.meleeinfo.adjustmentstarted && self.meleeinfo.var_425c4c8b && currentanimtime >= self.meleeinfo.var_98bc84b7) {
         predictedenemypos = entity.favoriteenemy.origin;
@@ -931,17 +858,17 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
         var_65cbfb52 = distancesquared(self.meleeinfo.var_9bfa8497, self.meleeinfo.adjustedendpos);
         if (var_776ddabf <= 20 * 20) {
             /#
-                record3dtext("tag_pauldron_le", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "right_arm_upper");
+                record3dtext("tag_pauldron_le", entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 <= 90 * 90) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "right_arm_upper");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 400 * 400) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "right_arm_upper");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         }
@@ -959,9 +886,9 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
             /#
                 reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (0, 1, 0), "right_arm_upper");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "right_arm_upper");
                 } else {
-                    record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "right_arm_upper");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
                 }
             #/
             if (var_425c4c8b) {
@@ -983,9 +910,7 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
         }
     }
     if (self.meleeinfo.adjustmentstarted && currentanimtime <= self.meleeinfo.var_6392c3a2) {
-        /#
-            assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
-        #/
+        assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
         /#
             recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "right_arm_upper");
             recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "right_arm_upper");
@@ -1241,7 +1166,7 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
                 self.gibbed = 1;
                 if (isdefined(level.var_36fff581) && !var_a7d0fdac) {
                     self [[ level.var_36fff581 ]](attacker);
-                    playsoundatposition(#"hash_10711c56d7aa52d5", self.origin + vectorscale((0, 0, 1), 30));
+                    playsoundatposition(#"hash_10711c56d7aa52d5", self.origin + (0, 0, 30));
                 }
                 if (var_dd54fdb1.hitloc == "helmet") {
                     var_465efe42 = namespace_81245006::function_37e3f011(self, "j_head", 2);
@@ -1364,7 +1289,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
                 /#
                     recordsphere(enemy.origin, 3, (0, 0, 1), "right_arm_upper");
                     var_b013c31 = distance2d(enemy.origin, axe.origin);
-                    record3dtext("j_clavicle_ri" + var_b013c31, enemy.origin + vectorscale((0, 0, 1), 60), (0, 0, 1), "right_arm_upper");
+                    record3dtext("j_clavicle_ri" + var_b013c31, enemy.origin + (0, 0, 60), (0, 0, 1), "right_arm_upper");
                 #/
                 var_6b72740e = 1;
             }
@@ -1376,13 +1301,13 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
                     /#
                         recordsphere(enemy.origin, 3, (0, 1, 0), "right_arm_upper");
                         var_b013c31 = distance2d(enemy.origin, move_pos);
-                        record3dtext("j_clavicle_ri" + var_b013c31, enemy.origin + vectorscale((0, 0, 1), 60), (0, 1, 0), "right_arm_upper");
+                        record3dtext("j_clavicle_ri" + var_b013c31, enemy.origin + (0, 0, 60), (0, 1, 0), "right_arm_upper");
                     #/
                     var_1fed6c4e = 1;
                 } else if (!enemy issliding()) {
                     /#
                         recordsphere(enemy.origin, 3, (1, 0, 0), "right_arm_upper");
-                        record3dtext("<unknown string>", enemy.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "right_arm_upper");
+                        record3dtext("<unknown string>", enemy.origin + (0, 0, 60), (1, 0, 0), "right_arm_upper");
                     #/
                     var_1fed6c4e = 0;
                 }

@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class czm_zod_wonderweapon_quest : cluielem {
 
-    // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
-    // Params 0, eflags: 0x8
-    // Checksum 0x33995178, Offset: 0x288
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x358c1231, Offset: 0x518
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
     // Params 2, eflags: 0x0
     // Checksum 0xa75eeb4a, Offset: 0x4d0
     // Size: 0x3c
     function set_decay(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "decay", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "decay", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -37,7 +23,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0xec16543e, Offset: 0x488
     // Size: 0x3c
     function set_purity(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "purity", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "purity", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -45,7 +31,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0x301f9088, Offset: 0x440
     // Size: 0x3c
     function set_plasma(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "plasma", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "plasma", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -53,7 +39,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0xac90d776, Offset: 0x3f8
     // Size: 0x3c
     function set_radiance(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "radiance", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "radiance", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest

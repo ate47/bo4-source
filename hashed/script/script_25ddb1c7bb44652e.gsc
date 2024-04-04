@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class czm_tut_hint_text : cluielem {
 
-    // Namespace czm_tut_hint_text/zm_tut_hint_text
-    // Params 0, eflags: 0x8
-    // Checksum 0xf2b79d68, Offset: 0x210
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_tut_hint_text/zm_tut_hint_text
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x2e7c90fc, Offset: 0x440
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_tut_hint_text/zm_tut_hint_text
     // Params 2, eflags: 0x0
     // Checksum 0xe0d368c2, Offset: 0x3f8
     // Size: 0x3c
     function set_text(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "text", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "text", value);
     }
 
     // Namespace czm_tut_hint_text/zm_tut_hint_text
@@ -38,18 +24,14 @@ class czm_tut_hint_text : cluielem {
     // Size: 0xbc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_tut_hint_text/zm_tut_hint_text

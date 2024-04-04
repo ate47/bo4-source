@@ -8,27 +8,11 @@
 class cct_shared_objcounter : cluielem {
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter
-    // Params 0, eflags: 0x8
-    // Checksum 0x97a213ab, Offset: 0x2d8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_objcounter/ct_shared_objcounter
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x2d509acc, Offset: 0x770
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_shared_objcounter/ct_shared_objcounter
     // Params 2, eflags: 0x0
     // Checksum 0x8f4a52, Offset: 0x738
     // Size: 0x30
     function set_objectivetotal(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objectiveTotal", value);
+        set_data(localclientnum, "objectiveTotal", value);
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter
@@ -36,7 +20,7 @@ class cct_shared_objcounter : cluielem {
     // Checksum 0xdee6df9c, Offset: 0x700
     // Size: 0x30
     function set_objectivelabel(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objectiveLabel", value);
+        set_data(localclientnum, "objectiveLabel", value);
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter
@@ -44,7 +28,7 @@ class cct_shared_objcounter : cluielem {
     // Checksum 0x23c50273, Offset: 0x6c8
     // Size: 0x30
     function set_objectivecount(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objectiveCount", value);
+        set_data(localclientnum, "objectiveCount", value);
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter
@@ -53,38 +37,34 @@ class cct_shared_objcounter : cluielem {
     // Size: 0x1c4
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"nototal" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"hash_1895dd9cec027130" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"total" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"total_update" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"hash_5edcadf19882d66f" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"total_init" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter
@@ -101,10 +81,10 @@ class cct_shared_objcounter : cluielem {
     // Size: 0xa8
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "objectiveCount", 0);
-        [[ self ]]->set_data(localclientnum, "objectiveLabel", #"");
-        [[ self ]]->set_data(localclientnum, "objectiveTotal", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "objectiveCount", 0);
+        set_data(localclientnum, "objectiveLabel", #"");
+        set_data(localclientnum, "objectiveTotal", 0);
     }
 
     // Namespace cct_shared_objcounter/ct_shared_objcounter

@@ -184,12 +184,8 @@ function function_13f107c4(ai, ent) {
     }
     ai dontinterpolate();
     ai forceteleport(ent.origin, angles);
-    /#
-        assert(isdefined(ai), "<unknown string>");
-    #/
-    /#
-        assert(isalive(ai), "<unknown string>");
-    #/
+    assert(isdefined(ai), "<unknown string>");
+    assert(isalive(ai), "<unknown string>");
     ai val::reset(#"crawler_spawn", "allowdeath");
     wait(0.1);
     ai show();

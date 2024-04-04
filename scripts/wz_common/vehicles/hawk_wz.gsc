@@ -32,9 +32,7 @@ function __init__() {
     level.hawk_settings = spawnstruct();
     level.hawk_settings.weapon = getweapon(#"eq_hawk");
     level.hawk_settings.bundle = getscriptbundle("hawk_settings_wz");
-    /#
-        assert(isdefined(level.hawk_settings.bundle));
-    #/
+    assert(isdefined(level.hawk_settings.bundle));
     callback::on_finalize_initialization(&function_3675de8b);
     callback::on_item_use(&on_item_use);
     clientfield::register("vehicle", "hawk_range", 13000, 1, "int");
@@ -67,7 +65,7 @@ function private on_item_use(params) {
 // Checksum 0x54cca7f0, Offset: 0x4a0
 // Size: 0x4a
 function function_6ada73f(spawnpos) {
-    return physicstrace(self.origin, spawnpos, vectorscale((-1, -1, 0), 18), (18, 18, 12), undefined, 16 | 2);
+    return physicstrace(self.origin, spawnpos, (-18, -18, 0), (18, 18, 12), undefined, 16 | 2);
 }
 
 // Namespace hawk_wz/hawk_wz
@@ -96,22 +94,22 @@ function spawn_hawk(itemid) {
     var_c7588ce0 = (0, playerangles[1], 0);
     forward = anglestoforward(var_c7588ce0);
     forward = forward * 20;
-    spawnpos = self.origin + vectorscale((0, 0, 1), 90) + forward;
+    spawnpos = self.origin + (0, 0, 90) + forward;
     trace = self function_6ada73f(spawnpos);
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 75) + forward;
+        spawnpos = self.origin + (0, 0, 75) + forward;
         trace = function_6ada73f(spawnpos);
     }
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 45) + forward;
+        spawnpos = self.origin + (0, 0, 45) + forward;
         trace = function_6ada73f(spawnpos);
     }
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 75);
+        spawnpos = self.origin + (0, 0, 75);
         trace = function_6ada73f(spawnpos);
     }
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 45);
+        spawnpos = self.origin + (0, 0, 45);
     }
     if (!function_3238d10d(spawnpos)) {
         self.hawk = undefined;
@@ -429,7 +427,6 @@ function function_c4770b46(vehicle) {
 // Size: 0xa0
 function watch_team_change(hawk) {
     hawk endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"disconnect", #"joined_team", #"joined_spectator", #"changed_specialist", #"changed_specialist_death");
     if (!isdefined(hawk)) {
         return;

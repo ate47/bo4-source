@@ -319,10 +319,9 @@ function function_a0f5819b(b_on = 1) {
 function function_4f4e423f() {
     mdl_lever = getent("break_the_glass", "targetname");
     s_trigger = spawnstruct();
-    s_trigger.origin = mdl_lever.origin - vectorscale((0, 0, 1), 16);
+    s_trigger.origin = mdl_lever.origin - (0, 0, 16);
     s_trigger zm_unitrigger::create();
     while (true) {
-        waitresult = undefined;
         waitresult = s_trigger waittill(#"trigger_activated");
         e_player = waitresult.e_who;
         mdl_lever rotatepitch(-120, 0.5);
@@ -451,7 +450,6 @@ function function_8fd1207a() {
         self thread function_3702ff38();
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!zm_utility::can_use(e_player)) {
@@ -488,7 +486,6 @@ function function_49200079(n_mod) {
 function function_3702ff38() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!zm_utility::can_use(e_player)) {
@@ -540,7 +537,6 @@ function function_7071d9b0() {
         }
     #/
     while (true) {
-        s_result = undefined;
         s_result = trigger waittill(#"damage");
         if (isdefined(s_result.attacker) && s_result.attacker aat::has_aat(s_result.weapon)) {
             level.var_33918b88 = s_result.attacker;
@@ -607,18 +603,17 @@ function function_9be06570() {
                 var_a3b04877 clientfield::set("" + #"portal_pass", 2);
             }
             var_a3b04877 hide();
-            s_result = undefined;
             s_result = level.var_33918b88 waittilltimeout(3.5, #"fasttravel_bought", #"disconnect");
             var_a3b04877 show();
             if (s_result._notify === #"fasttravel_bought" && isalive(level.var_33918b88)) {
-                var_a3b04877 linkto(level.var_33918b88, "tag_origin", v_offset, vectorscale((0, 1, 0), 90));
+                var_a3b04877 linkto(level.var_33918b88, "tag_origin", v_offset, (0, 90, 0));
                 level.var_33918b88 waittill(#"fasttravel_over", #"disconnect");
                 if (isdefined(b_rail) && b_rail) {
                     var_a3b04877 clientfield::set("" + #"portal_pass", 0);
                 }
                 util::wait_network_frame();
                 var_a3b04877 unlink();
-                var_a3b04877.origin = level.var_33918b88.origin + vectorscale((0, 0, 1), 32);
+                var_a3b04877.origin = level.var_33918b88.origin + (0, 0, 32);
                 var_a3b04877 clientfield::set("" + #"portal_pass", 1);
                 var_a3b04877 moveto(s_moveto.origin, 0.75);
                 var_a3b04877 waittill(#"movedone");
@@ -696,7 +691,6 @@ function function_76351c42() {
     self.var_d883eecd = 0;
     var_f3ca036b = 0;
     for (n_current_round = level.round_number; true; n_current_round = level.round_number) {
-        s_result = undefined;
         s_result = level waittill(#"fasttravel_bought");
         if (s_result.player === self) {
             var_f3ca036b++;
@@ -729,7 +723,6 @@ function fishy_offering_step_1_setup(var_5ea5c94d) {
         wait(1);
         e_fish show();
         while (true) {
-            s_result = undefined;
             s_result = e_fish waittill(#"damage");
             if (isplayer(s_result.attacker) && (util::getweaponclass(s_result.weapon) === #"weapon_sniper" || util::getweaponclass(s_result.weapon) === #"weapon_tactical")) {
                 s_result.attacker util::show_hit_marker();
@@ -741,9 +734,9 @@ function fishy_offering_step_1_setup(var_5ea5c94d) {
                 e_fish waittill(#"movedone");
                 e_fish playsound(#"hash_7c391343ab3a2c17");
                 if (s_landing.var_cdcee58e === 1 && level flag::get(#"water_drained_aft")) {
-                    fx::play(#"hash_708765aa3f48456d", s_landing.origin + vectorscale((0, 0, 1), 20), (270, 180, 180));
+                    fx::play(#"hash_708765aa3f48456d", s_landing.origin + (0, 0, 20), (270, 180, 180));
                 }
-                s_landing.origin = s_landing.origin + vectorscale((0, 0, 1), 48);
+                s_landing.origin = s_landing.origin + (0, 0, 48);
                 e_activator = s_landing zm_unitrigger::function_fac87205();
                 e_fish playsound(#"hash_62d7c979858b9326");
                 e_activator zm_audio::create_and_play_dialog(#"fish", #"retrieve_first");
@@ -809,7 +802,7 @@ function function_a343f892(a_ents) {
         mdl_kraken = a_ents[#"hash_3712f07fe0e1166c"];
         mdl_kraken hide();
         wait(1.5);
-        zm_powerups::specific_powerup_drop(#"free_perk", struct::get(#"hash_693bda099c0710af").origin + vectorscale((0, 0, 1), 16), undefined, undefined, undefined, 1, 1);
+        zm_powerups::specific_powerup_drop(#"free_perk", struct::get(#"hash_693bda099c0710af").origin + (0, 0, 16), undefined, undefined, undefined, 1, 1);
         if (isdefined(mdl_kraken)) {
             mdl_kraken delete();
         }
@@ -859,7 +852,6 @@ function function_bf250d60() {
     self val::set(#"sea_walkers", "allowdeath", 1);
     s_landing = struct::get(self.target);
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             s_result.attacker util::show_hit_marker();
@@ -885,10 +877,10 @@ function function_bf250d60() {
                 str_targetname = s_landing.target;
                 s_landing struct::delete();
                 s_landing = struct::get(str_targetname);
-                self.angles = self.angles - vectorscale((1, 1, 1), 360);
+                self.angles = self.angles - (360, 360, 360);
                 continue;
             }
-            s_landing.origin = s_landing.origin + vectorscale((0, 0, 1), 32);
+            s_landing.origin = s_landing.origin + (0, 0, 32);
             e_who = s_landing zm_unitrigger::function_fac87205();
             e_who zm_audio::create_and_play_dialog(#"component_pickup", #"generic");
             playsoundatposition(#"hash_47aa0fa4a084903b", self.origin);
@@ -916,7 +908,6 @@ function function_bf250d60() {
 function function_ebb2139() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!zm_utility::can_use(e_player) || level flag::get(#"hash_480b6b675a3076ec")) {
@@ -997,8 +988,7 @@ function function_c0174de(var_f02fb354, gadget_lgt_exp_train_canals_debug) {
     self playsound(#"hash_6df06ef021cd1a4");
     self thread scene::init(#"p8_fxanim_zm_zod_safe_cracker_ee_bundle", self);
     s_unitrigger = self zm_unitrigger::create();
-    zm_unitrigger::function_47625e58(s_unitrigger, s_unitrigger.origin + vectorscale((0, 0, 1), 32), s_unitrigger.angles);
-    s_result = undefined;
+    zm_unitrigger::function_47625e58(s_unitrigger, s_unitrigger.origin + (0, 0, 32), s_unitrigger.angles);
     s_result = self waittill(#"trigger_activated");
     if (isalive(s_result.e_who)) {
         s_result.e_who zm_audio::create_and_play_dialog(#"safecracker", #"pick_up");
@@ -1016,7 +1006,6 @@ function function_c0174de(var_f02fb354, gadget_lgt_exp_train_canals_debug) {
 function function_f6f230af() {
     w_shield = getweapon(#"zhield_dw");
     for (var_2bc04483 = 1; var_2bc04483; var_2bc04483 = 0) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage", #"death");
         if (waitresult._notify == "death") {
             return;
@@ -1136,7 +1125,6 @@ function function_50f4cc80() {
     zm_unitrigger::function_89380dda(s_unitrigger);
     self.b_taken = 0;
     while (level flag::get(#"hash_2aaea7cd22f44712") == 0) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated", #"death");
         if (waitresult._notify == "death") {
             break;
@@ -1207,10 +1195,9 @@ function safe_init() {
 // Size: 0x824
 function function_ae4e9016() {
     s_unitrigger = self zm_unitrigger::create();
-    zm_unitrigger::function_47625e58(s_unitrigger, self.origin + vectorscale((0, 0, 1), 32));
+    zm_unitrigger::function_47625e58(s_unitrigger, self.origin + (0, 0, 32));
     self.var_2aba91c4 = 1;
     while (!isdefined(self.mdl_bone)) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         e_player = waitresult.e_who;
         if (self.var_2aba91c4) {
@@ -1248,7 +1235,7 @@ function function_ae4e9016() {
                 e_player.mdl_bone.angles = self.var_6f76e7b0.angles;
                 break;
             case #"hash_516e96f51e5bb4b3":
-                v_dest = self.var_6f76e7b0.origin + vectorscale((0, 0, 1), 0.5);
+                v_dest = self.var_6f76e7b0.origin + (0, 0, 0.5);
                 e_player.mdl_bone.angles = self.var_6f76e7b0.angles;
                 break;
             case #"hash_12aa5802889224df":
@@ -1353,7 +1340,7 @@ function function_7f18a333() {
     e_block show();
     e_block playloopsound(#"hash_6ab30aa83cfad114", 0.1);
     exploder::exploder("exp_bubbles_sink");
-    e_block moveto(e_block.origin + vectorscale((0, 0, 1), 12), 1);
+    e_block moveto(e_block.origin + (0, 0, 12), 1);
     e_block waittill(#"movedone");
     mdl_car moveto(mdl_car.origin + (0, 0, -100), 9);
     mdl_car waittill(#"movedone");
@@ -1363,7 +1350,6 @@ function function_7f18a333() {
     e_block stoploopsound(1);
     exploder::stop_exploder("exp_bubbles_sink");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         e_player = waitresult.e_who;
         if (!zm_utility::can_use(e_player)) {
@@ -1454,7 +1440,7 @@ function function_cd85b198() {
     n_time = e_item zm_utility::fake_physicslaunch(s_target_loc.origin, 600);
     e_item rotate((200, 90, 150));
     wait(n_time);
-    fx::play(#"hash_43cec289a09441e9", s_target_loc.origin, s_target_loc.angles + vectorscale((1, 0, 0), 270));
+    fx::play(#"hash_43cec289a09441e9", s_target_loc.origin, s_target_loc.angles + (270, 0, 0));
     e_item notify(#"hash_1c8b3202700d2fb4");
     e_item.origin = s_target_loc.origin;
     s_target_loc thread scene::play(#"p8_fxanim_zm_towers_crowd_jar_01_bundle", e_item);
@@ -1656,7 +1642,6 @@ function function_bf9f03e1() {
     self.var_5ba94c1e = 1;
     self thread function_a5214a8d(w_frost_shield);
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_77d44943fb143b18", #"death");
         if (s_result._notify === #"hash_77d44943fb143b18" && s_result.weapon === w_frost_shield) {
             self aat::acquire(w_frost_shield, "zm_aat_frostbite");
@@ -1689,7 +1674,6 @@ function function_a5214a8d(w_frost_shield) {
     self endon(#"disconnect");
     w_frost_shield_turret = getweapon(#"zhield_frost_turret");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_change", #"death");
         if (s_result.weapon === w_frost_shield || s_result.weapon === w_frost_shield_turret) {
             self clientfield::set("" + #"hash_794e5d0769b1d497", 1);
@@ -1724,7 +1708,7 @@ function fireworks_show() {
         s_launcher.var_f0bbde5 = struct::get(s_launcher.target);
         s_launcher flag::init(#"hash_2078d5bf94139877");
         s_unitrigger = s_launcher zm_unitrigger::create(undefined, undefined, &use_launcher);
-        zm_unitrigger::function_47625e58(s_unitrigger, s_unitrigger.origin + vectorscale((0, 0, 1), 32));
+        zm_unitrigger::function_47625e58(s_unitrigger, s_unitrigger.origin + (0, 0, 32));
         zm_unitrigger::function_89380dda(s_unitrigger);
     }
     level.var_fd1d03ff = struct::get_array(#"hash_4f342e0539cf25df");
@@ -1752,7 +1736,7 @@ function function_a68ce358() {
     n_index = randomint(level.var_ba8e1acf.size);
     str_color = level.var_ba8e1acf[n_index];
     arrayremoveindex(level.var_ba8e1acf, n_index);
-    mdl_flare = init_flare(var_2cb1cbce.origin + vectorscale((0, 0, -1), 8), var_2cb1cbce.angles, str_color);
+    mdl_flare = init_flare(var_2cb1cbce.origin + (0, 0, -8), var_2cb1cbce.angles, str_color);
     mdl_flare moveto(var_2cb1cbce.origin, 0.2);
     mdl_flare waittill(#"movedone");
     mdl_flare thread scene::play(#"p8_fxanim_zm_zod_pneumatic_tube_flare_bundle", mdl_flare);
@@ -1811,13 +1795,12 @@ function give_flare(str_color) {
 function function_e01b477f(var_2cb1cbce, var_46a3f206) {
     level endon(#"end_game");
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"damage");
     if (isplayer(waitresult.attacker)) {
         waitresult.attacker util::show_hit_marker();
     }
     self scene::stop(#"p8_fxanim_zm_zod_pneumatic_tube_flare_bundle");
-    self moveto(self.origin + vectorscale((0, 0, 1), 8), 0.35);
+    self moveto(self.origin + (0, 0, 8), 0.35);
     self playsound(#"hash_33fa1a9c8d819b09");
     self waittill(#"movedone");
     self hide();
@@ -1831,7 +1814,6 @@ function function_e01b477f(var_2cb1cbce, var_46a3f206) {
     self waittill(#"movedone");
     s_unitrigger = s_dest zm_unitrigger::create(&use_flare, 128);
     zm_unitrigger::function_89380dda(s_unitrigger);
-    waitresult = undefined;
     waitresult = s_dest waittill(#"trigger_activated");
     waitresult.e_who zm_audio::create_and_play_dialog(#"component_pickup", #"generic");
     zm_unitrigger::unregister_unitrigger(s_unitrigger);
@@ -1884,7 +1866,6 @@ function use_launcher() {
     level endon(#"end_game");
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player) && isdefined(e_player.mdl_flare)) {
@@ -1913,10 +1894,9 @@ function use_launcher() {
 function function_7ae29395() {
     level endon(#"end_game");
     self endoncallback(&function_a65045b6, #"death");
-    v_offset = vectorscale((0, 0, -1), 8);
+    v_offset = (0, 0, -8);
     self.trigger = spawn("trigger_damage", self.origin + v_offset, 0, 2.5, 24.5);
     while (true) {
-        waitresult = undefined;
         waitresult = self.trigger waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
             self.s_launcher flag::set(#"hash_2078d5bf94139877");
@@ -2255,7 +2235,6 @@ function function_2c343fd8() {
     self clientfield::set("" + #"hash_2c387ea19f228b5d", 0);
     var_5912c181 = getweapon(#"hash_6a9069969e6fa287");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon === var_5912c181) {
             self clientfield::set("" + #"hash_2c387ea19f228b5d", 1);
@@ -2308,7 +2287,6 @@ function function_9dcc74cf() {
 function function_8c94faeb() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (isdefined(e_player.var_32d36a7f)) {
@@ -2341,7 +2319,6 @@ function function_41ee4286() {
     self endon(#"death");
     s_piano = self.stub.related_parent;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         var_1b79a086 = undefined;
@@ -2477,7 +2454,6 @@ function function_ff05eb5() {
     }
     self endoncallback(&function_ff05eb5, #"hash_44c21ffb9cd24f2f");
     while (true) {
-        waitresult = undefined;
         waitresult = self.t_damage waittill(#"damage");
         if (waitresult.mod !== #"mod_melee" || !isplayer(waitresult.attacker)) {
             continue;
@@ -2536,14 +2512,13 @@ function function_fd46b17e(str_notify) {
     var_52a1ab19 = level.chests[level.chest_index].zbarrier;
     var_45fd85a3 = vectornormalize(anglestoright(var_52a1ab19.angles)) * -28;
     if (!isdefined(level.var_4eecfa09)) {
-        level.var_4eecfa09 = spawn("trigger_damage_new", var_52a1ab19.origin + var_45fd85a3 + vectorscale((0, 0, 1), 24), 0, 48, 48);
+        level.var_4eecfa09 = spawn("trigger_damage_new", var_52a1ab19.origin + var_45fd85a3 + (0, 0, 24), 0, 48, 48);
     } else {
-        level.var_4eecfa09.origin = var_52a1ab19.origin + var_45fd85a3 + vectorscale((0, 0, 1), 24);
+        level.var_4eecfa09.origin = var_52a1ab19.origin + var_45fd85a3 + (0, 0, 24);
     }
     level thread util::delete_on_death_or_notify(level.var_4eecfa09, #"end_of_round");
     level.var_4eecfa09 usetriggerrequirelookat(1);
     while (isdefined(level.var_4eecfa09)) {
-        waitresult = undefined;
         waitresult = level.var_4eecfa09 waittill(#"damage");
         if (waitresult.mod !== #"mod_melee" || var_52a1ab19.state === "open" || !isplayer(waitresult.attacker)) {
             continue;
@@ -2623,7 +2598,7 @@ function function_281b6803(zbarrier_magicbox) {
     case #"hero_hammer_lv2":
     case #"hero_hammer_lv1":
         self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 8;
-        self.angles = self.angles + vectorscale((1, 0, 0), 90);
+        self.angles = self.angles + (90, 0, 0);
         break;
     case #"hero_scepter_lv3":
     case #"hero_scepter_lv2":
@@ -2638,7 +2613,7 @@ function function_281b6803(zbarrier_magicbox) {
             self.origin = self.origin + vectornormalize(anglestoup(zbarrier_magicbox.angles)) * 4;
         } else {
             self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 16;
-            self.angles = self.angles + vectorscale((1, 0, 0), 90);
+            self.angles = self.angles + (90, 0, 0);
         }
         break;
     default:

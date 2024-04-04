@@ -203,9 +203,7 @@ function set_dr_flag_not_array(toset, setto = 1) {
 // Checksum 0x785fded0, Offset: 0x1010
 // Size: 0x170
 function set_dr_flag(toset, setto = 1) {
-    /#
-        assert(isdefined(setto));
-    #/
+    assert(isdefined(setto));
     if (isarray(toset)) {
         foreach (ts in toset) {
             set_dr_flag(ts, setto);

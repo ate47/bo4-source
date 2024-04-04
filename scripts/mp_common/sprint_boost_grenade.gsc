@@ -55,7 +55,6 @@ function grenade_spawn(watcher, owner) {
         boost_on_throw = 1;
         detonated = 0;
         if (!boost_on_throw) {
-            waitresult = undefined;
             waitresult = self waittill(#"explode");
             detonated = 1;
         }

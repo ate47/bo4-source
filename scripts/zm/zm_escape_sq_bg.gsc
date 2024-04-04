@@ -99,7 +99,6 @@ function sq_bg_macguffin_think() {
     self setcandamage(1);
     self setforcenocull();
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker) && (s_result.weapon == getweapon(#"tomahawk_t8") || s_result.weapon == getweapon(#"tomahawk_t8_upgraded"))) {
             playfx(level._effect[#"ee_skull_shot"], self.origin);
@@ -176,7 +175,6 @@ function check_sq_bg_progress() {
     n_macguffins_total = level.sq_bg_macguffins.size;
     n_macguffins_collected = 0;
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"sq_bg_macguffin_collected");
         e_player = s_result.e_player;
         n_macguffins_collected++;
@@ -211,11 +209,10 @@ function play_sq_bg_collected_vo() {
 function give_sq_bg_reward(var_dd7441ab) {
     t_near = spawn("trigger_radius", var_dd7441ab.origin, 0, 196, 64);
     t_near thread sq_bg_spawn_rumble();
-    mdl_reward = zm_utility::spawn_weapon_model(getweapon(#"ww_blundergat_t8"), undefined, var_dd7441ab.origin + vectorscale((0, 0, 1), 6), var_dd7441ab.angles);
+    mdl_reward = zm_utility::spawn_weapon_model(getweapon(#"ww_blundergat_t8"), undefined, var_dd7441ab.origin + (0, 0, 6), var_dd7441ab.angles);
     mdl_reward clientfield::set("" + #"bg_spawn_fx", 1);
     mdl_reward thread scene::play(#"p8_fxanim_zm_esc_blundergat_fireplace_hover_bundle", mdl_reward);
     while (isdefined(self)) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (zm_utility::can_use(e_player, 1) && e_player.currentweapon.name != "none") {
@@ -263,7 +260,6 @@ function private function_d61275a7() {
 function sq_bg_spawn_rumble() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {
         }

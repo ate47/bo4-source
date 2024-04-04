@@ -16,7 +16,7 @@ function event_handler[level_init] main(eventstruct) {
     screen = spawn("script_model", (2794, -860, 397));
     if (isdefined(screen)) {
         screen setmodel(#"p8_screen_tactical_artic_01");
-        screen.angles = vectorscale((0, 1, 0), 360);
+        screen.angles = (0, 360, 0);
     }
     paris = spawn("script_model", (2880, -579, 401));
     if (isdefined(paris)) {
@@ -25,7 +25,7 @@ function event_handler[level_init] main(eventstruct) {
     var_bb2fc357 = spawn("script_model", (2880, -580, 412.75));
     if (isdefined(var_bb2fc357)) {
         var_bb2fc357 setmodel(#"p7_mou_clock_wall_hour_hand");
-        var_bb2fc357.angles = vectorscale((1, 0, 0), 270);
+        var_bb2fc357.angles = (270, 0, 0);
     }
     var_371a2ab2 = spawn("script_model", (2880, -580, 412.75));
     if (isdefined(var_371a2ab2)) {
@@ -44,7 +44,7 @@ function event_handler[level_init] main(eventstruct) {
     var_24429239 = spawn("script_model", (2912, -580, 412.75));
     if (isdefined(var_24429239)) {
         var_24429239 setmodel(#"p7_mou_clock_wall_hour_hand");
-        var_24429239.angles = vectorscale((1, 0, 0), 329.372);
+        var_24429239.angles = (329.372, 0, 0);
     }
     var_baff123c = spawn("script_model", (2912, -580, 412.75));
     if (isdefined(var_baff123c)) {
@@ -63,7 +63,7 @@ function event_handler[level_init] main(eventstruct) {
     var_2a4a4014 = spawn("script_model", (2944, -580, 412.75));
     if (isdefined(var_2a4a4014)) {
         var_2a4a4014 setmodel(#"p7_mou_clock_wall_hour_hand");
-        var_2a4a4014.angles = vectorscale((1, 0, 0), 270);
+        var_2a4a4014.angles = (270, 0, 0);
     }
     var_4bdd4662 = spawn("script_model", (2944, -580, 412.75));
     if (isdefined(var_4bdd4662)) {

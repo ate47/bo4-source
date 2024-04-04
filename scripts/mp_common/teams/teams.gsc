@@ -299,12 +299,8 @@ function track_free_played_time() {
 // Checksum 0xa895f77a, Offset: 0x1068
 // Size: 0x64
 function get_flag_model(teamref) {
-    /#
-        assert(isdefined(game.flagmodels));
-    #/
-    /#
-        assert(isdefined(game.flagmodels[teamref]));
-    #/
+    assert(isdefined(game.flagmodels));
+    assert(isdefined(game.flagmodels[teamref]));
     return game.flagmodels[teamref];
 }
 
@@ -313,12 +309,8 @@ function get_flag_model(teamref) {
 // Checksum 0xf888569e, Offset: 0x10d8
 // Size: 0x64
 function get_flag_carry_model(teamref) {
-    /#
-        assert(isdefined(game.carry_flagmodels));
-    #/
-    /#
-        assert(isdefined(game.carry_flagmodels[teamref]));
-    #/
+    assert(isdefined(game.carry_flagmodels));
+    assert(isdefined(game.carry_flagmodels[teamref]));
     return game.carry_flagmodels[teamref];
 }
 
@@ -414,7 +406,6 @@ function waituntilteamchange(player, callback, arg, end_condition1, end_conditio
     if (isdefined(end_condition3)) {
         self endon(end_condition3);
     }
-    event = undefined;
     event = player waittill(#"joined_team", #"disconnect", #"joined_spectators");
     if (isdefined(callback)) {
         self [[ callback ]](arg, event);
@@ -437,7 +428,6 @@ function waituntilteamchangesingleton(player, singletonstring, callback, arg, en
     if (isdefined(end_condition3)) {
         self endon(end_condition3);
     }
-    event = undefined;
     event = player waittill(#"joined_team", #"disconnect", #"joined_spectators");
     if (isdefined(callback)) {
         self thread [[ callback ]](arg, event);

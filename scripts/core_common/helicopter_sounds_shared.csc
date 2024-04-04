@@ -52,9 +52,7 @@ function __init__() {
 // Checksum 0x7ce10087, Offset: 0x830
 // Size: 0x8a
 function vehicle_is_firing_function(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
-        println("<unknown string>" + newval);
-    #/
+    println("<unknown string>" + newval);
     if (newval == 0) {
         self.isfiring = 0;
         return;
@@ -359,9 +357,7 @@ function start_helicopter_sounds(localclientnum) {
         case #"veh_drn_qrdrone_mp":
             break;
         default:
-            /#
-                println("<unknown string>" + self.vehicletype + "<unknown string>");
-            #/
+            println("<unknown string>" + self.vehicletype + "<unknown string>");
             break;
         }
         self init_terrain_sounds();
@@ -373,9 +369,7 @@ function start_helicopter_sounds(localclientnum) {
         #/
         return;
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
 }
 
 // Namespace helicopter_sounds/helicopter_sounds_shared
@@ -409,9 +403,7 @@ function heli_sound_play(heli_bone) {
     case #"wind":
         break;
     default:
-        /#
-            println("<unknown string>" + heli_bone.type + "<unknown string>");
-        #/
+        println("<unknown string>" + heli_bone.type + "<unknown string>");
         break;
     }
 }
@@ -493,9 +485,7 @@ function heli_idle_run_transition(heli_type, heli_part, wait_time, updown) {
     }
     while (isdefined(self)) {
         if (!isdefined(level.helisoundvalues[heli_type]) || !isdefined(level.helisoundvalues[heli_type][heli_part])) {
-            /#
-                println("<unknown string>");
-            #/
+            println("<unknown string>");
             return;
         }
         max_speed_vol = level.helisoundvalues[heli_type][heli_part].speedvolumemax;
@@ -545,14 +535,14 @@ function terrain_trace_brass() {
     next_terrain = undefined;
     pre_trace_real_ent = undefined;
     trace_real_ent = undefined;
-    pre_origin = vectorscale((1, 1, 1), 100000);
+    pre_origin = (100000, 100000, 100000);
     while (isdefined(self)) {
         wait(1 + randomfloatrange(0, 0.2));
         if (distancesquared(pre_origin, trace_ent.origin) < 144) {
             continue;
         }
         pre_origin = trace_ent.origin;
-        trace = tracepoint(trace_ent.origin, trace_ent.origin - vectorscale((0, 0, 1), 100000));
+        trace = tracepoint(trace_ent.origin, trace_ent.origin - (0, 0, 100000));
         trace_surface_type = trace[#"surfacetype"];
         if (!isdefined(trace)) {
             continue;
@@ -604,14 +594,14 @@ function terrain_trace() {
     next_terrain = undefined;
     pre_trace_real_ent = undefined;
     trace_real_ent = undefined;
-    pre_origin = vectorscale((1, 1, 1), 100000);
+    pre_origin = (100000, 100000, 100000);
     while (isdefined(self)) {
         wait(1 + randomfloatrange(0, 0.2));
         if (distancesquared(pre_origin, trace_ent.origin) < 144) {
             continue;
         }
         pre_origin = trace_ent.origin;
-        trace = tracepoint(trace_ent.origin, trace_ent.origin - vectorscale((0, 0, 1), 100000));
+        trace = tracepoint(trace_ent.origin, trace_ent.origin - (0, 0, 100000));
         trace_surface_type = trace[#"surfacetype"];
         if (!isdefined(trace)) {
             continue;
@@ -653,9 +643,7 @@ function terrain_trace() {
 // Checksum 0x370076cc, Offset: 0x2fc8
 // Size: 0x418
 function aircraft_dustkick(localclientnum) {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     self endon(#"death");
     maxheight = 1200;
     minheight = 350;
@@ -685,16 +673,14 @@ function aircraft_dustkick(localclientnum) {
         dotracethisframe--;
         if (dotracethisframe <= 0) {
             dotracethisframe = numframespertrace;
-            trace = bullettrace(trace_ent.origin, trace_ent.origin - vectorscale((0, 0, 1), 100000), 0, trace_ent, 1);
+            trace = bullettrace(trace_ent.origin, trace_ent.origin - (0, 0, 100000), 0, trace_ent, 1);
             d = distance(trace_ent.origin, trace[#"position"]);
             repeatrate = (d - minheight) / (maxheight - minheight) * (slowestrepeatwait - fastestrepeatwait) + fastestrepeatwait;
         }
         if (!isdefined(trace)) {
             continue;
         }
-        /#
-            assert(isdefined(d));
-        #/
+        assert(isdefined(d));
         if (d > maxheight) {
             repeatrate = defaultrepeatrate;
             continue;

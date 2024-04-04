@@ -48,7 +48,6 @@ function proximityweaponobjectdetonation_override(watcher) {
     up = anglestoup(self.angles);
     traceorigin = self.origin + up;
     while (true) {
-        waitresult = undefined;
         waitresult = damagearea waittill(#"trigger");
         ent = waitresult.activator;
         if (!weaponobjects::proximityweaponobject_validtriggerentity(watcher, ent)) {

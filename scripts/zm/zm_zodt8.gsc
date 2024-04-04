@@ -287,9 +287,7 @@ function init_level_vars() {
 // Checksum 0x7593e59, Offset: 0x2aa8
 // Size: 0xb4
 function private function_8ceb4377() {
-    /#
-        assert(isdefined(level.var_d77a6967));
-    #/
+    assert(isdefined(level.var_d77a6967));
     if (level.var_d77a6967.name == #"waterlogged") {
         level flag::set(#"hash_1daec0e8f3d0444");
         self.var_f3d1d53a = isdefined(level.water_drained_fore) && level.water_drained_fore;
@@ -304,9 +302,7 @@ function private function_8ceb4377() {
 // Checksum 0xdccfbed5, Offset: 0x2b68
 // Size: 0x94
 function private function_f0d86074() {
-    /#
-        assert(isdefined(level.var_d77a6967));
-    #/
+    assert(isdefined(level.var_d77a6967));
     if (level.var_d77a6967.name == #"waterlogged") {
         level flag::clear(#"hash_1daec0e8f3d0444");
         if (self.var_f3d1d53a) {
@@ -421,7 +417,6 @@ function function_183a6d46() {
 function function_86a8adbe() {
     level.var_f0e198fa = getentarray("magic_box_map", "targetname");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hash_e39eca74fa250b4");
         foreach (mdl_map in level.var_f0e198fa) {
             if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
@@ -535,8 +530,8 @@ function lore_room_door() {
 // Checksum 0x796b23a4, Offset: 0x3af0
 // Size: 0x1d4
 function function_2c0f0869(b_open, e_door, var_a34c7e62) {
-    var_e077e352 = vectorscale((0, 1, 0), 270);
-    var_3f3938b6 = vectorscale((0, 1, 0), 35);
+    var_e077e352 = (0, 270, 0);
+    var_3f3938b6 = (0, 35, 0);
     if (!isdefined(e_door)) {
         e_door = getent("baphomets_entry", "targetname");
     }
@@ -676,7 +671,6 @@ function function_704f6133() {
     foreach (e_blocker in var_198b4e5c) {
         e_blocker disconnectpaths();
     }
-    s_result = undefined;
     s_result = level waittill(#"hash_3e80d503318a5674");
     if (!zm_custom::function_3f3752ab()) {
         zm_utility::giveachievement_wrapper("ZM_ZODT8_TRIAL_STEP_1", 1);
@@ -878,7 +872,6 @@ function private function_b0a7ca7(var_32be30af, var_4c2f2156, var_eb6a4856, var_
     }
     var_32be30af setvisibletoall();
     var_a33249cf = var_4c2f2156.scene_ents[#"prop 1"];
-    waitresult = undefined;
     waitresult = var_32be30af waittill(#"trigger");
     var_32be30af setinvisibletoall();
     if (isdefined(waitresult.activator)) {
@@ -1793,7 +1786,6 @@ function function_5ef52c07() {
     var_67382c0b = array("zone_mail_room", "zone_cargo", "zone_upper_engine_room", "zone_engine", "zone_boiler_room", "zone_turbine_room");
     self thread function_e9642771(e_water);
     while (isalive(self)) {
-        s_result = undefined;
         s_result = self waittill(#"zone_change", #"hash_20a44fff6b27cb96");
         if (isalive(self) && s_result._notify === #"zone_change") {
             if (!(isdefined(self.var_14dd80fb) && self.var_14dd80fb) && isdefined(s_result.zone_name) && isinarray(var_67382c0b, s_result.zone_name)) {

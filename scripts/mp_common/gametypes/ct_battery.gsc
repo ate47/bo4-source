@@ -304,7 +304,7 @@ function spawn_attack_helicopter(str_targetname, str_team, b_guns = 1, b_missile
     chopper setdrawinfrared(1);
     chopper.allowcontinuedlockonafterinvis = 1;
     chopper.soundmod = "heli";
-    target_offset = vectorscale((0, 0, 1), 100);
+    target_offset = (0, 0, 100);
     chopper.target_offset = target_offset;
     target_set(chopper, target_offset);
     minigun_snd_ent = spawn("script_origin", chopper gettagorigin("tag_flash"));
@@ -519,10 +519,8 @@ function function_560c5174(currentnode, startwait, hardpointtype) {
         } else {
             nextnode = a_nextnode[0];
         }
-        /#
-            assert(isdefined(nextnode), "<unknown string>");
-        #/
-        pos = nextnode.origin + vectorscale((0, 0, 1), 30);
+        assert(isdefined(nextnode), "<unknown string>");
+        pos = nextnode.origin + (0, 0, 30);
         if (isdefined(currentnode.script_airspeed) && currentnode.script_airspeed > 0) {
             heli_speed = currentnode.script_airspeed;
         } else {
@@ -964,7 +962,6 @@ function function_9be2d75f() {
 function function_7dbf5593() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"grenade_launcher_fire");
         if (self util::gadget_is_in_use(2)) {
             if (isdefined(s_notify.projectile)) {
@@ -982,7 +979,6 @@ function function_7dbf5593() {
 function function_4674d2e7() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"hash_788c0d72802f35af");
         var_1c5e8282 = distance(self.origin, s_notify.v_loc);
         if (var_1c5e8282 < 4) {
@@ -1052,7 +1048,7 @@ function function_e12a129(v_target) {
 function function_f75c4ec2(v_target) {
     self notify(#"multikill_reset");
     if (isdefined(v_target)) {
-        level.var_d2193160.origin = v_target + vectorscale((0, 0, 1), 48);
+        level.var_d2193160.origin = v_target + (0, 0, 48);
         if (!self function_80d68e4d(level.var_d2193160, 0.7, 1)) {
             self potm::bookmark(#"ct_battery", gettime(), self);
         }

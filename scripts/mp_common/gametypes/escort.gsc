@@ -306,7 +306,7 @@ function drop_robot() {
     heli_drop_goal = (drop_origin[0], drop_origin[1], drop_height);
     level.var_234c4109 = drop_origin;
     goalpath = undefined;
-    dropoffset = vectorscale((0, -1, 0), 120);
+    dropoffset = (0, -120, 0);
     goalpath = supplydrop::supplydrophelistartpath_v2_setup(heli_drop_goal, dropoffset);
     supplydrop::supplydrophelistartpath_v2_part2_local(heli_drop_goal, goalpath, dropoffset);
     drop_direction = vectortoangles((heli_drop_goal[0], heli_drop_goal[1], 0) - (goalpath.start[0], goalpath.start[1], 0));
@@ -393,7 +393,6 @@ function drop_heli_leave() {
     goal = helicopter::getvalidrandomleavenode(chopper.origin, 1).origin;
     chopper setgoal(goal);
     chopper setneargoalnotifydist(400);
-    result = undefined;
     result = chopper waittill(#"near_goal", #"goal_reached", #"goal");
     chopper delete();
 }
@@ -412,10 +411,10 @@ function debug_draw_robot_path() {
         for (i = 0; i < pathnodes.size - 1; i++) {
             currnode = pathnodes[i];
             nextnode = pathnodes[i + 1];
-            util::debug_line(currnode, nextnode, vectorscale((0, 1, 0), 0.9), 0.9, 0, debug_duration);
+            util::debug_line(currnode, nextnode, (0, 0.9, 0), 0.9, 0, debug_duration);
         }
         foreach (path in pathnodes) {
-            util::debug_sphere(path, 6, vectorscale((0, 0, 1), 0.9), 0.9, debug_duration);
+            util::debug_sphere(path, 6, (0, 0, 0.9), 0.9, debug_duration);
         }
     #/
 }
@@ -434,7 +433,7 @@ function debug_draw_approximate_robot_path_to_goal(&goalpatharray) {
         for (i = 0; i < pathnodes.size - 1; i++) {
             currnode = pathnodes[i];
             nextnode = pathnodes[i + 1];
-            util::debug_line(currnode, nextnode, vectorscale((1, 1, 0), 0.9), 0.9, 0, debug_duration);
+            util::debug_line(currnode, nextnode, (0.9, 0.9, 0), 0.9, 0, debug_duration);
         }
         foreach (path in pathnodes) {
             util::debug_sphere(path, 3, (0, 0.5, 0.5), 0.9, debug_duration);
@@ -453,7 +452,7 @@ function debug_draw_current_robot_goal(goal) {
         }
         if (isdefined(goal)) {
             debug_duration = 60;
-            util::debug_sphere(goal, 8, vectorscale((0, 1, 0), 0.9), 0.9, debug_duration);
+            util::debug_sphere(goal, 8, (0, 0.9, 0), 0.9, debug_duration);
         }
     #/
 }
@@ -469,7 +468,7 @@ function debug_draw_find_immediate_goal(pathgoal) {
         }
         if (isdefined(pathgoal)) {
             debug_duration = 60;
-            util::debug_sphere(pathgoal + vectorscale((0, 0, 1), 18), 6, vectorscale((1, 0, 0), 0.9), 0.9, debug_duration);
+            util::debug_sphere(pathgoal + (0, 0, 18), 6, (0.9, 0, 0), 0.9, debug_duration);
         }
     #/
 }
@@ -485,7 +484,7 @@ function debug_draw_find_immediate_goal_override(immediategoal) {
         }
         if (isdefined(immediategoal)) {
             debug_duration = 60;
-            util::debug_sphere(immediategoal + vectorscale((0, 0, 1), 18), 6, vectorscale((1, 0, 1), 0.9), 0.9, debug_duration);
+            util::debug_sphere(immediategoal + (0, 0, 18), 6, (0.9, 0, 0.9), 0.9, debug_duration);
         }
     #/
 }
@@ -501,8 +500,8 @@ function debug_draw_blocked_path_kill_radius(center, radius) {
         }
         if (isdefined(center)) {
             debug_duration = 200;
-            circle(center + vectorscale((0, 0, 1), 2), radius, vectorscale((1, 0, 0), 0.9), 1, 1, debug_duration);
-            circle(center + vectorscale((0, 0, 1), 4), radius, vectorscale((1, 0, 0), 0.9), 1, 1, debug_duration);
+            circle(center + (0, 0, 2), radius, (0.9, 0, 0), 1, 1, debug_duration);
+            circle(center + (0, 0, 4), radius, (0.9, 0, 0), 1, 1, debug_duration);
         }
     #/
 }
@@ -684,14 +683,10 @@ function delete_on_endgame_sequence() {
 // Size: 0x12c
 function get_robot_path_array() {
     if (isdefined(level.escortrobotpath)) {
-        /#
-            println("return");
-        #/
+        println("return");
         return level.escortrobotpath;
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     patharray = [];
     currnode = getnode("escort_robot_path_start", "targetname");
     patharray[patharray.size] = currnode.origin;
@@ -716,9 +711,7 @@ function calc_robot_path_length(robotorigin, patharray) {
         distance = distance + distance(lastpoint, patharray[i]);
         lastpoint = patharray[i];
     }
-    /#
-        println("<unknown string>" + distance);
-    #/
+    println("<unknown string>" + distance);
     return distance;
 }
 
@@ -762,7 +755,7 @@ function spawn_robot(position, angles) {
     }
     robot asmsetanimationrate(1.1);
     if (isdefined(level.shutdowndamage) && level.shutdowndamage) {
-        target_set(robot, vectorscale((0, 0, 1), 50));
+        target_set(robot, (0, 0, 50));
     }
     robot.overrideactordamage = &robot_damage;
     robot thread robot_move_chatter();
@@ -903,7 +896,7 @@ function reboot_robot() {
     self val::reset(#"hash_3de2bce887b7b68d", "ignoreme");
     self notify(#"robot_reboot");
     if (isdefined(level.shutdowndamage) && level.shutdowndamage) {
-        target_set(self, vectorscale((0, 0, 1), 50));
+        target_set(self, (0, 0, 50));
     }
     if (isdefined(self.riotshield)) {
         self asmchangeanimmappingtable(0);
@@ -1236,10 +1229,10 @@ function get_closest_point_on_nav_mesh(point) {
     }
     if (!isdefined(closestpathpoint)) {
         itercount = 0;
-        lowerpoint = point - vectorscale((0, 0, 1), 36);
+        lowerpoint = point - (0, 0, 36);
         while (!isdefined(closestpathpoint) && itercount < 5) {
             closestpathpoint = getclosestpointonnavmesh(lowerpoint, 48, 15);
-            lowerpoint = lowerpoint - vectorscale((0, 0, 1), 36);
+            lowerpoint = lowerpoint - (0, 0, 36);
             itercount++;
         }
     }
@@ -1360,7 +1353,6 @@ function explode_robot() {
 function wait_robot_corpse() {
     level endon(#"game_ended");
     archetype = self.archetype;
-    waitresult = undefined;
     waitresult = self waittill(#"actor_corpse");
     waitresult.corpse clientfield::set("escort_robot_burn", 1);
 }

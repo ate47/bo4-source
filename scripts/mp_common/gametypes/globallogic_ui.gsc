@@ -140,9 +140,7 @@ function menuautoassign(comingfrommenu, var_4c542e39) {
     if (!isdefined(assignment)) {
         assignment = var_4c542e39;
     }
-    /#
-        assert(isdefined(assignment));
-    #/
+    assert(isdefined(assignment));
     if (assignment === #"spectator" && !level.forceautoassign) {
         self teams::function_dc7eaabd(assignment);
         return;
@@ -210,9 +208,7 @@ function beginclasschoice(comingfrommenu) {
     if (isbot(self)) {
         return;
     }
-    /#
-        assert(isdefined(level.teams[self.pers[#"team"]]));
-    #/
+    assert(isdefined(level.teams[self.pers[#"team"]]));
     team = self.pers[#"team"];
     if (level.disableclassselection == 1 || getdvarint(#"migration_soak", 0) == 1) {
         self player_role::set(getdvarint(#"auto_select_character", 1));
@@ -246,9 +242,7 @@ function beginclasschoice(comingfrommenu) {
 // Checksum 0xfc7358ad, Offset: 0xe58
 // Size: 0x8c
 function showmainmenuforteam() {
-    /#
-        assert(isdefined(level.teams[self.pers[#"team"]]));
-    #/
+    assert(isdefined(level.teams[self.pers[#"team"]]));
     team = self.pers[#"team"];
     [[ level.spawnspectator ]]();
     self draft::open();
@@ -412,9 +406,7 @@ function menuclass(response, forcedclass, updatecharacterindex, closemenus) {
 function function_9ed118fe(characterindex) {
     self endon(#"disconnect");
     if (!isdefined(characterindex)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     if (!draft::can_select_character(characterindex)) {

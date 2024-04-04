@@ -138,8 +138,8 @@ function function_e93a8e82(v_pos, v_angles) {
     if (isdefined(v_pos) && !zm_utility::is_standard()) {
         v_drop = zm_hms_util::function_6d41bab8(v_pos, 360);
         if (isdefined(v_drop)) {
-            v_ground = groundtrace(v_drop + vectorscale((0, 0, 1), 64) + vectorscale((0, 0, 1), 8), v_drop + vectorscale((0, 0, 1), 64) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
-            v_ground = v_ground + vectorscale((0, 0, 1), 36);
+            v_ground = groundtrace(v_drop + (0, 0, 64) + (0, 0, 8), v_drop + (0, 0, 64) + (0, 0, -100000), 0, self)[#"position"];
+            v_ground = v_ground + (0, 0, 36);
             w_part = level.var_1f17f9bb[0];
             if (isdefined(w_part)) {
                 e_dynamite = util::spawn_model(w_part.worldmodel, v_ground);
@@ -350,7 +350,6 @@ function function_7056aa62() {
 // Size: 0xec
 function function_4c525901() {
     self endon(#"death");
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"trigger_activated");
     self playsound(#"hash_55c30dada4e624a2");
     s_waitresult.e_who zm_audio::create_and_play_dialog(#"explosive", #"pickup");
@@ -388,7 +387,6 @@ function function_2a27ccb9(e_player) {
 // Size: 0x11e
 function function_170afe2c(b_main_quest = 0) {
     level endon(#"end_game");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     function_6ecfea46();
     if (!b_main_quest) {

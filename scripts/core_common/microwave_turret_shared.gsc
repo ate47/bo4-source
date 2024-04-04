@@ -125,7 +125,6 @@ function turretthink() {
     turret.trigger endon(#"death", #"delete");
     turret.turret_vehicle_entnum = turret getentitynumber();
     while (true) {
-        waitresult = undefined;
         waitresult = turret.trigger waittill(#"trigger");
         ent = waitresult.activator;
         if (ent == turret) {

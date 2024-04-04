@@ -13,16 +13,12 @@ function autoexec __init__() {
     level.var_d051f0fe = function_d634ed59();
     level.var_8ee4985f = 115 * (16 + 1 + 6 + 1 + 6 + 1);
     level.var_c4160ac0 = level.var_d8caca76 - 2;
-    /#
-        assert(level.var_c4160ac0 + 1 == 32767);
-    #/
+    assert(level.var_c4160ac0 + 1 == 32767);
     level.var_c1fb34bd = level.var_c4160ac0;
     level.var_b52c46a6 = level.var_c1fb34bd - level.var_8ee4985f;
     level.var_7d942c18 = level.var_b52c46a6 - 1;
     level.var_afaaa0ee = level.var_3f501cff;
-    /#
-        assert(level.var_7d942c18 - level.var_afaaa0ee > 1024);
-    #/
+    assert(level.var_7d942c18 - level.var_afaaa0ee > 1024);
     level.var_b7364e19 = level.var_afaaa0ee - 1;
     level.var_6e47811c = 0;
 }
@@ -32,7 +28,7 @@ function autoexec __init__() {
 // Checksum 0x1113f913, Offset: 0x208
 // Size: 0x220
 function function_2eb2c17c(origin, item) {
-    traceoffset = vectorscale((0, 0, 1), 4);
+    traceoffset = (0, 0, 4);
     var_5d97fed1 = item.hidetime === -1;
     offsetposition = item.origin + traceoffset;
     var_b0fbfe59 = bullettrace(origin, offsetposition, 0, self, 0);
@@ -182,20 +178,12 @@ function function_45efe0ab(itementry) {
 // Checksum 0x35475d85, Offset: 0xcd8
 // Size: 0x148
 function function_808be9a3(player, networkid) {
-    /#
-        assert(isplayer(player));
-    #/
-    /#
-        assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
-    #/
+    assert(isplayer(player));
+    assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
     entnum = player getentitynumber();
-    /#
-        assert(entnum < 115);
-    #/
+    assert(entnum < 115);
     slotid = networkid - level.var_b52c46a6 - entnum * (16 + 1 + 6 + 1 + 6 + 1);
-    /#
-        assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
-    #/
+    assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
     return slotid;
 }
 
@@ -214,26 +202,18 @@ function function_c094ccd3(networkid) {
 // Checksum 0x65470300, Offset: 0xe68
 // Size: 0x130
 function function_1f0def85(item) {
-    /#
-        assert(isdefined(item));
-    #/
+    assert(isdefined(item));
     if (!isdefined(item)) {
         return 32767;
     }
     if (isstruct(item)) {
-        /#
-            assert(isdefined(item.id));
-        #/
-        /#
-            assert(item.id >= level.var_6e47811c && item.id <= level.var_b7364e19);
-        #/
+        assert(isdefined(item.id));
+        assert(item.id >= level.var_6e47811c && item.id <= level.var_b7364e19);
         return item.id;
     }
     entnum = item getentitynumber();
     networkid = entnum + level.var_afaaa0ee;
-    /#
-        assert(networkid >= level.var_afaaa0ee && networkid <= level.var_7d942c18);
-    #/
+    assert(networkid >= level.var_afaaa0ee && networkid <= level.var_7d942c18);
     return networkid;
 }
 
@@ -242,27 +222,17 @@ function function_1f0def85(item) {
 // Checksum 0xa6ea58d7, Offset: 0xfa0
 // Size: 0x1a8
 function function_970b8d86(player, slotid, attachmentoffset = undefined) {
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isdefined(attachmentoffset)) {
-        /#
-            assert(attachmentoffset <= 6);
-        #/
+        assert(attachmentoffset <= 6);
         slotid = slotid + attachmentoffset;
     }
-    /#
-        assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
-    #/
+    assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
     entnum = player getentitynumber();
-    /#
-        assert(entnum < 115);
-    #/
+    assert(entnum < 115);
     var_f5e3c230 = entnum * (16 + 1 + 6 + 1 + 6 + 1) + slotid;
     networkid = var_f5e3c230 + level.var_b52c46a6;
-    /#
-        assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
-    #/
+    assert(networkid >= level.var_b52c46a6 && networkid <= level.var_c1fb34bd);
     return networkid;
 }
 
@@ -370,12 +340,8 @@ function can_pick_up(item, servertime = undefined) {
 // Checksum 0xbb3442ce, Offset: 0x1698
 // Size: 0x2f6
 function function_4cbb6617(inventory, itemtype, var_da328e7b, var_bcc2655a) {
-    /#
-        assert(ishash(itemtype));
-    #/
-    /#
-        assert(isarray(var_da328e7b));
-    #/
+    assert(ishash(itemtype));
+    assert(isarray(var_da328e7b));
     if (!isdefined(var_bcc2655a)) {
         return;
     }
@@ -561,9 +527,7 @@ function function_35e06774(itementry, var_48cfb6ca = 0) {
 // Checksum 0xcb69aa6c, Offset: 0x1fe8
 // Size: 0x8e
 function function_f4a8d375(itemid) {
-    /#
-        assert(function_2c7fc531(itemid));
-    #/
+    assert(function_2c7fc531(itemid));
     point = function_b1702735(itemid);
     if (isdefined(point)) {
         itementry = point.itementry;

@@ -91,7 +91,6 @@ function on_disconnect() {
 function private function_eca0c19d() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -616,7 +615,7 @@ function private function_e47a52e0(weapon) {
     if (!isdefined(self.var_7c78b80e)) {
         self.var_7c78b80e = util::spawn_model("tag_origin", self getcentroid(), self getangles());
     } else {
-        self.var_7c78b80e.origin = self getorigin() + vectorscale((0, 0, 1), 48);
+        self.var_7c78b80e.origin = self getorigin() + (0, 0, 48);
     }
     v_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
@@ -938,7 +937,6 @@ function swordpistol_rumble(var_b2e05bae) {
 // Size: 0xac
 function private function_68ff89f7(w_swordpistol) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee");
     if (s_result.weapon === w_swordpistol) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"sword_pistol");

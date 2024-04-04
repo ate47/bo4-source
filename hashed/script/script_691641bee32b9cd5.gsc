@@ -15,25 +15,24 @@
 // Method(s) 2 Total 2
 class cwavemanager {
 
+    var var_23802722;
+    var var_246fb97f;
+    var var_376c2c29;
+    var var_4417045b;
+    var var_6da7cde5;
+    var var_a709a080;
+
     // Namespace cwavemanager/wave_manager
     // Params 0, eflags: 0x9 linked
     // Checksum 0x14029fc, Offset: 0x228
     // Size: 0x4a
-    __constructor() {
-        self.var_376c2c29 = [];
-        self.var_4417045b = 1;
-        self.var_23802722 = [];
-        self.var_246fb97f = [];
-        self.var_a709a080 = 0;
-        self.var_6da7cde5 = 1;
-    }
-
-    // Namespace cwavemanager/wave_manager
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x280
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_376c2c29 = [];
+        var_4417045b = 1;
+        var_23802722 = [];
+        var_246fb97f = [];
+        var_a709a080 = 0;
+        var_6da7cde5 = 1;
     }
 
 }
@@ -42,21 +41,16 @@ class cwavemanager {
 // Method(s) 2 Total 2
 class class_2443998c {
 
+    var var_bb290b79;
+    var var_bcd4e683;
+
     // Namespace class_2443998c/wave_manager
     // Params 0, eflags: 0x9 linked
     // Checksum 0xd007d7d2, Offset: 0x320
     // Size: 0x1a
-    __constructor() {
-        self.var_bcd4e683 = 0;
-        self.var_bb290b79 = [];
-    }
-
-    // Namespace class_2443998c/wave_manager
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x348
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_bcd4e683 = 0;
+        var_bb290b79 = [];
     }
 
 }
@@ -67,20 +61,14 @@ class class_2443998c {
 // Method(s) 2 Total 2
 class class_8e39177 {
 
+    var a_params;
+
     // Namespace class_8e39177/wave_manager
     // Params 0, eflags: 0x9 linked
     // Checksum 0xae6e3e41, Offset: 0x5628
     // Size: 0xe
-    __constructor() {
-        self.a_params = [];
-    }
-
-    // Namespace class_8e39177/wave_manager
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x5640
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        a_params = [];
     }
 
 }
@@ -246,18 +234,18 @@ function private debug_think() {
                                 if (isdefined(ai)) {
                                     /#
                                         sphere(ai.origin, 4, (0, 0, 1), 1, 0, 8, 1);
-                                        print3d(ai.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + var_dcd6c23.var_4417045b + "<unknown string>" + var_1d3b29d6, (0, 0, 1), 1, 0.5, 1);
+                                        print3d(ai.origin + (0, 0, 10), "<unknown string>" + var_dcd6c23.var_4417045b + "<unknown string>" + var_1d3b29d6, (0, 0, 1), 1, 0.5, 1);
                                     #/
                                     if (isdefined(var_dcd6c23.var_3844e966)) {
                                         /#
-                                            line(ai.origin + vectorscale((0, 0, 1), 30), var_dcd6c23.var_3844e966.origin, (0, 0, 1), 1, 0, 1);
+                                            line(ai.origin + (0, 0, 30), var_dcd6c23.var_3844e966.origin, (0, 0, 1), 1, 0, 1);
                                         #/
                                         continue;
                                     }
                                     if (isdefined(level.players[0])) {
                                         /#
                                             origin = level.players[0].origin + vectorscale(anglestoforward(level.players[0].angles), 100);
-                                            line(ai.origin + vectorscale((0, 0, 1), 30), origin, (0, 0, 1), 1, 0, 1);
+                                            line(ai.origin + (0, 0, 30), origin, (0, 0, 1), 1, 0, 1);
                                         #/
                                     }
                                 }
@@ -271,18 +259,18 @@ function private debug_think() {
                                 if (isdefined(ai)) {
                                     /#
                                         sphere(ai.origin, 4, (1, 0, 0), 1, 0, 8, 1);
-                                        print3d(ai.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + var_c082553f, (1, 0, 0), 1, 0.5, 1);
+                                        print3d(ai.origin + (0, 0, 10), "<unknown string>" + var_c082553f, (1, 0, 0), 1, 0.5, 1);
                                     #/
                                     if (isdefined(var_dcd6c23.var_3844e966)) {
                                         /#
-                                            line(ai.origin + vectorscale((0, 0, 1), 30), var_dcd6c23.var_3844e966.origin, (1, 0, 0), 1, 0, 1);
+                                            line(ai.origin + (0, 0, 30), var_dcd6c23.var_3844e966.origin, (1, 0, 0), 1, 0, 1);
                                         #/
                                         continue;
                                     }
                                     if (isdefined(level.players[0])) {
                                         /#
                                             origin = level.players[0].origin + vectorscale(anglestoforward(level.players[0].angles), 100);
-                                            line(ai.origin + vectorscale((0, 0, 1), 30), origin, (1, 0, 0), 1, 0, 1);
+                                            line(ai.origin + (0, 0, 30), origin, (1, 0, 0), 1, 0, 1);
                                         #/
                                     }
                                 }
@@ -298,8 +286,8 @@ function private debug_think() {
                         foreach (var_fa24a14b in var_dcd6c23.var_246fb97f) {
                             /#
                                 sphere(var_fa24a14b.origin, 4, (0, 1, 0), 1, 0, 8, 1);
-                                print3d(var_fa24a14b.origin + vectorscale((0, 0, 1), 10), function_9e72a96(var_fa24a14b.archetype), (0, 1, 0), 1, 0.5, 1);
-                                line(var_fa24a14b.origin, var_fa24a14b.origin + vectorscale((0, 0, 1), 45), (0, 1, 0), 1, 0, 1);
+                                print3d(var_fa24a14b.origin + (0, 0, 10), function_9e72a96(var_fa24a14b.archetype), (0, 1, 0), 1, 0.5, 1);
+                                line(var_fa24a14b.origin, var_fa24a14b.origin + (0, 0, 45), (0, 1, 0), 1, 0, 1);
                             #/
                         }
                     }
@@ -390,9 +378,7 @@ function private function_710cbc75(e_player, var_1ad9db60, b_branch) {
 // Checksum 0xfc13e085, Offset: 0x1ae8
 // Size: 0x14e
 function private init_flags(var_dcd6c23) {
-    /#
-        assert(isdefined(var_dcd6c23));
-    #/
+    assert(isdefined(var_dcd6c23));
     var_dcd6c23 flag::init("complete");
     var_dcd6c23 flag::init("cleared");
     var_dcd6c23 flag::init("paused");
@@ -409,9 +395,7 @@ function private init_flags(var_dcd6c23) {
 // Checksum 0x69c615bd, Offset: 0x1c40
 // Size: 0xfe
 function private reset(var_dcd6c23) {
-    /#
-        assert(isdefined(var_dcd6c23));
-    #/
+    assert(isdefined(var_dcd6c23));
     var_dcd6c23 flag::clear("complete");
     var_dcd6c23 flag::clear("cleared");
     for (n_wave = 1; n_wave <= var_dcd6c23.var_592f8f7f; n_wave++) {
@@ -722,12 +706,8 @@ function private think(var_dcd6c23) {
 // Checksum 0x81f29aec, Offset: 0x2f30
 // Size: 0x100
 function private function_ff49692b(var_dcd6c23, ai) {
-    /#
-        assert(isdefined(var_dcd6c23), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(ai), "<unknown string>");
-    #/
+    assert(isdefined(var_dcd6c23), "<unknown string>");
+    assert(isdefined(ai), "<unknown string>");
     if (isdefined(var_dcd6c23.var_23802722)) {
         foreach (var_e8332bc1 in var_dcd6c23.var_23802722) {
             if (isdefined(var_e8332bc1.var_964c77e1)) {
@@ -868,9 +848,7 @@ function private function_7909260f(var_dcd6c23, n_wave, var_bced2a83) {
 // Checksum 0x9a55866c, Offset: 0x3938
 // Size: 0x9c
 function private function_60fa5e02(var_c21b798e) {
-    /#
-        assert(isdefined(var_c21b798e), "<unknown string>");
-    #/
+    assert(isdefined(var_c21b798e), "<unknown string>");
     var_c21b798e flag::init("spawn_set_" + var_c21b798e.var_ef327d57 + "_complete");
     var_c21b798e flag::init("spawn_set_" + var_c21b798e.var_ef327d57 + "_cleared");
 }
@@ -1006,9 +984,7 @@ function private function_8f5ed189(var_dcd6c23, var_c21b798e) {
             continue;
         }
         var_6a60a2e6 = 0;
-        /#
-            assert(isdefined(var_a5f569fc), "<unknown string>");
-        #/
+        assert(isdefined(var_a5f569fc), "<unknown string>");
         var_13027679 = undefined;
         var_26413beb = undefined;
         var_549391b8 = undefined;
@@ -1224,9 +1200,7 @@ function private function_32b947df(kvp) {
                 }
             }
         }
-        /#
-            assert(a_s_wave_managers.size, "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>");
-        #/
+        assert(a_s_wave_managers.size, "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>");
     } else {
         var_666d249b = self;
         if (!isdefined(var_666d249b)) {
@@ -1274,9 +1248,7 @@ function private function_63e08195(kvp, b_assert = 1) {
     }
     a_s_wave_managers = array::filter(a_s_wave_managers, 0, &function_5b3b889f);
     if (b_assert) {
-        /#
-            assert(a_s_wave_managers.size, isdefined(kvp) ? "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>" : "<unknown string>");
-        #/
+        assert(a_s_wave_managers.size, isdefined(kvp) ? "<unknown string>" + str_key + "<unknown string>" + str_value + "<unknown string>" : "<unknown string>");
     }
     return a_s_wave_managers;
 }
@@ -1295,9 +1267,7 @@ function private function_fa056daa() {
     } else if (self function_e0bfee59()) {
         return self;
     }
-    /#
-        assertmsg("<unknown string>");
-    #/
+    assertmsg("<unknown string>");
     return undefined;
 }
 
@@ -1462,9 +1432,7 @@ function is_looping() {
 function function_1c556906(kvp, var_b3a058ca) {
     var_fed53aae = self wave_manager_sys::function_32b947df(kvp);
     foreach (var_dcd6c23 in var_fed53aae) {
-        /#
-            assert(isdefined(var_b3a058ca));
-        #/
+        assert(isdefined(var_b3a058ca));
         a_sp_new = getspawnerteamarray(var_dcd6c23.m_str_team);
         var_91504a05 = 0;
         if (isdefined(a_sp_new) && isarray(a_sp_new) && a_sp_new.size) {
@@ -1475,9 +1443,7 @@ function function_1c556906(kvp, var_b3a058ca) {
                 }
             }
         }
-        /#
-            assert(var_91504a05, "<unknown string>" + var_b3a058ca);
-        #/
+        assert(var_91504a05, "<unknown string>" + var_b3a058ca);
         var_dcd6c23.var_27eacb34 = var_b3a058ca;
     }
 }
@@ -1585,9 +1551,7 @@ function function_6893f05b(kvp, n_wave, var_bced2a83 = 1) {
 // Checksum 0x1f3a5052, Offset: 0x65e8
 // Size: 0x37a
 function add_spawn_function(kvp, var_964c77e1, ...) {
-    /#
-        assert(isdefined(var_964c77e1));
-    #/
+    assert(isdefined(var_964c77e1));
     a_s_wave_managers = self wave_manager_sys::function_63e08195(kvp, 0);
     if (a_s_wave_managers.size) {
         foreach (s_wave_manager in a_s_wave_managers) {
@@ -1636,9 +1600,7 @@ function add_spawn_function(kvp, var_964c77e1, ...) {
 // Checksum 0x89b7330f, Offset: 0x6970
 // Size: 0x2ee
 function remove_spawn_function(kvp, var_964c77e1) {
-    /#
-        assert(isdefined(var_964c77e1));
-    #/
+    assert(isdefined(var_964c77e1));
     a_s_wave_managers = self wave_manager_sys::function_63e08195(kvp, 0);
     if (a_s_wave_managers.size) {
         foreach (s_wave_manager in a_s_wave_managers) {

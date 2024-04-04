@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class cwz_revive_prompt : cluielem {
 
-    // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xda39ac7e, Offset: 0x290
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xc4091ea4, Offset: 0x520
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
     // Params 2, eflags: 0x1 linked
     // Checksum 0x4e3f5dd1, Offset: 0x4d8
     // Size: 0x3c
     function set_cowardsway(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "cowardsWay", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "cowardsWay", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -37,7 +23,7 @@ class cwz_revive_prompt : cluielem {
     // Checksum 0x2cf071a9, Offset: 0x490
     // Size: 0x3c
     function set_reviveprogress(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "reviveProgress", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "reviveProgress", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -45,7 +31,7 @@ class cwz_revive_prompt : cluielem {
     // Checksum 0xbfc54322, Offset: 0x448
     // Size: 0x3c
     function set_health(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "health", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "health", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -53,7 +39,7 @@ class cwz_revive_prompt : cluielem {
     // Checksum 0xbca400cc, Offset: 0x400
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "clientnum", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "clientnum", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt

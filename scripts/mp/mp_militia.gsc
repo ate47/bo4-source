@@ -18,7 +18,7 @@ function event_handler[level_init] main(eventstruct) {
     mp_militia_fx::main();
     mp_militia_sound::main();
     load::main();
-    level.cleandepositpoints = array(vectorscale((0, 0, -1), 122), (2344, -64, 9.5), (-1464, -2040, 157), (-940, 488, 4), (186.5, -1688, 65));
+    level.cleandepositpoints = array((0, 0, -122), (2344, -64, 9.5), (-1464, -2040, 157), (-940, 488, 4), (186.5, -1688, 65));
     compass::setupminimap("");
 }
 

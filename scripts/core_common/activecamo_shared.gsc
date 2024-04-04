@@ -109,9 +109,7 @@ function init_activecamo(weapon, activecamoinfo, owned) {
         }
         activecamo = self.pers[#"activecamo"][activecamoinfo.name];
         activecamo.info = function_3aa81e0e(activecamoinfo);
-        /#
-            assert(isdefined(activecamo.info));
-        #/
+        assert(isdefined(activecamo.info));
         activecamo.weapon = weapon;
         activecamo.baseweapon = function_c14cb514(activecamo.weapon);
         if (!isdefined(activecamo.var_dd54a13b)) {
@@ -289,9 +287,7 @@ function init_stages(activecamo, var_3a8a1e00, isdeath) {
                 }
                 stage = activecamo.stages[stagenum];
                 stage.info = infostage;
-                /#
-                    assert(isdefined(stage.info));
-                #/
+                assert(isdefined(stage.info));
                 if (!isdefined(stage.var_dd54a13b)) {
                     stage.var_dd54a13b = [];
                 }
@@ -552,20 +548,12 @@ function function_896ac347(oweapon, statname, value) {
         return;
     }
     if (!isdefined(oweapon)) {
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     weapon = function_94c2605(oweapon);
     if (!isdefined(weapon)) {
-        /#
-            /#
-                assertmsg("<unknown string>" + function_9e72a96(oweapon.name));
-            #/
-        #/
+        assertmsg("<unknown string>" + function_9e72a96(oweapon.name));
         return;
     }
     activecamoinfo = weapon_get_activecamo(weapon);
@@ -575,19 +563,11 @@ function function_896ac347(oweapon, statname, value) {
             activecamo.weapon = weapon;
             activecamo.baseweapon = function_c14cb514(activecamo.weapon);
             if (!isdefined(activecamo.baseweapon)) {
-                /#
-                    /#
-                        assertmsg("<unknown string>" + function_9e72a96(activecamo.weapon.name));
-                    #/
-                #/
+                assertmsg("<unknown string>" + function_9e72a96(activecamo.weapon.name));
                 return;
             }
             if (!isdefined(activecamo.var_dd54a13b[activecamo.baseweapon])) {
-                /#
-                    /#
-                        assertmsg("<unknown string>" + function_9e72a96(activecamo.baseweapon.name) + "<unknown string>");
-                    #/
-                #/
+                assertmsg("<unknown string>" + function_9e72a96(activecamo.baseweapon.name) + "<unknown string>");
                 return;
             }
             var_7a414d4a = 0;
@@ -879,13 +859,11 @@ function function_a80cb651(activecamo, stagenum) {
     while (true) {
         if (stage.info.resettimer > 0 && isdefined(stage.info.resetnotify)) {
             stage.resettime = gettime() + stage.info.resettimer;
-            s_result = undefined;
             s_result = self waittilltimeout(float(stage.info.resettimer) / 1000, stage.info.resetnotify);
         } else if (stage.info.resettimer > 0) {
             stage.resettime = gettime() + stage.info.resettimer;
             wait(float(stage.info.resettimer) / 1000);
         } else {
-            s_result = undefined;
             s_result = self waittill(stage.info.resetnotify);
         }
         baseweapon = function_c14cb514(weapon);

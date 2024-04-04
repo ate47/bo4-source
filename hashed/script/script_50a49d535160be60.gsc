@@ -8,27 +8,11 @@
 class czm_hint_text : cluielem {
 
     // Namespace czm_hint_text/zm_hint_text
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x59a48a74, Offset: 0x238
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_hint_text/zm_hint_text
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xaed64e4d, Offset: 0x4b0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_hint_text/zm_hint_text
     // Params 2, eflags: 0x1 linked
     // Checksum 0xb887f86e, Offset: 0x478
     // Size: 0x30
     function set_text(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "text", value);
+        set_data(localclientnum, "text", value);
     }
 
     // Namespace czm_hint_text/zm_hint_text
@@ -37,18 +21,14 @@ class czm_hint_text : cluielem {
     // Size: 0xac
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_hint_text/zm_hint_text
@@ -65,8 +45,8 @@ class czm_hint_text : cluielem {
     // Size: 0x6c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "text", #"");
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "text", #"");
     }
 
     // Namespace czm_hint_text/zm_hint_text

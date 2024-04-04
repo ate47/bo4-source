@@ -55,7 +55,6 @@ function underwaterwatchbegin() {
     self endon(#"underwaterwatchbegin");
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"underwater_begin");
         if (waitresult.is_teleported) {
             filter::disable_filter_water_sheeting(self, 1);
@@ -77,7 +76,6 @@ function underwaterwatchend() {
     self endon(#"underwaterwatchend");
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"underwater_end");
         if (waitresult.is_teleported) {
             filter::disable_filter_water_sheeting(self, 1);

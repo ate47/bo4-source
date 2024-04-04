@@ -18,9 +18,7 @@ function function_c5343206(eattacker, einflictor, idamage, smeansofdeath, weapon
     if (!isdefined(self.attackerdamage)) {
         return;
     }
-    /#
-        assert(isarray(self.attackerdata));
-    #/
+    assert(isarray(self.attackerdata));
     if (self.attackerdata.size == 0) {
         self.firsttimedamaged = gettime();
     }
@@ -288,9 +286,7 @@ function trackattackerdamage(eattacker, idamage, smeansofdeath, weapon) {
     if (!isdefined(self.attackerdamage)) {
         return;
     }
-    /#
-        assert(isarray(self.attackerdata));
-    #/
+    assert(isarray(self.attackerdata));
     if (self.attackerdata.size == 0) {
         self.firsttimedamaged = gettime();
     }

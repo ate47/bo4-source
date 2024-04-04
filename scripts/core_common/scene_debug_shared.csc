@@ -548,7 +548,7 @@ function debug_display() {
                         print3d(self.origin - (0, 0, n_offset + 10), "<unknown string>" + (isdefined(function_12479eba(o_scene._str_name)) ? "<unknown string>" + function_12479eba(o_scene._str_name) : "<unknown string>") + "<unknown string>", (0.8, 0.2, 0.8), 1, 0.15, debug_frames);
                     }
                 } else if (isdefined(self.scriptbundlename)) {
-                    print3d(self.origin - vectorscale((0, 0, 1), 15), self.scriptbundlename, (0.8, 0.2, 0.8), 1, 0.3, debug_frames);
+                    print3d(self.origin - (0, 0, 15), self.scriptbundlename, (0.8, 0.2, 0.8), 1, 0.3, debug_frames);
                 } else {
                     self.debug_display = 0;
                     break;

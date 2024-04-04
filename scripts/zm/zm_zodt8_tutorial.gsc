@@ -138,9 +138,7 @@ function function_69b9de8b(drop_point) {
 // Size: 0xce
 function function_b5000f75(a_items) {
     var_87d63a46 = getent("tutorial_forced_shield_part", "targetname");
-    /#
-        assert(isdefined(var_87d63a46));
-    #/
+    assert(isdefined(var_87d63a46));
     for (i = 0; i < a_items.size; i++) {
         if (a_items[i] == var_87d63a46) {
             temp = a_items[0];
@@ -277,9 +275,7 @@ function function_7573a994() {
 // Size: 0x1de
 function on_player_spawned() {
     if (isbot(self)) {
-        /#
-            assert(!isdefined(level.var_d0bc9e33));
-        #/
+        assert(!isdefined(level.var_d0bc9e33));
         level.var_d0bc9e33 = self;
         self.dontspeak = 1;
         self endon(#"disconnect");
@@ -291,9 +287,7 @@ function on_player_spawned() {
         return;
     }
     if (isplayer(self)) {
-        /#
-            assert(!isdefined(level.var_6e2a2ea1));
-        #/
+        assert(!isdefined(level.var_6e2a2ea1));
         level.var_6e2a2ea1 = self;
         self endon(#"disconnect");
         self bgb_pack::function_da912bff(0, 1);
@@ -471,14 +465,11 @@ function function_cf5f5964(spawnerstr, ignore = 0, bot = undefined, b_play_fx = 
             wait(1);
             zm_transform::function_9acf76e6(zombie, "catalyst_plasma_tutorial");
             level endon(#"transformation_interrupted");
-            eventstruct = undefined;
             eventstruct = level waittill(#"transformation_complete");
             zombie = eventstruct.new_ai[0];
         }
         if (isdefined(bot)) {
-            /#
-                assert(isbot(bot));
-            #/
+            assert(isbot(bot));
             bot setentitytarget(zombie);
         }
     }
@@ -523,7 +514,6 @@ function function_fb2e7309() {
 function function_5ea0763f(var_50e34230, activator = undefined) {
     trig = getent(var_50e34230, "targetname");
     while (true) {
-        eventstruct = undefined;
         eventstruct = trig waittill(#"trigger");
         if (!isdefined(activator) || activator == eventstruct.activator) {
             break;
@@ -552,9 +542,7 @@ function function_2b4bf122(points) {
 // Size: 0x64
 function function_3fe47ed7(weaponname) {
     weapon = getweapon(weaponname);
-    /#
-        assert(isdefined(weapon));
-    #/
+    assert(isdefined(weapon));
     self giveweapon(weapon);
 }
 
@@ -725,7 +713,6 @@ function function_5bc503b1() {
     m_door setcandamage(1);
     m_door.health = 10000;
     do {
-        s_notify = undefined;
         s_notify = m_door waittill(#"damage");
         m_door.health = 10000;
     } while (s_notify.mod != "MOD_MELEE");
@@ -751,7 +738,6 @@ function function_1dab7ef1() {
 // Checksum 0x43150475, Offset: 0x4318
 // Size: 0xa4
 function function_16c8867e(e_player) {
-    eventstruct = undefined;
     eventstruct = self waittill(#"death");
     if (isdefined(eventstruct) && isdefined(eventstruct.weapon) && eventstruct.weapon.type == "bullet") {
         level notify(#"zombie_shot");
@@ -1167,7 +1153,6 @@ function function_8406d665() {
     level endon(#"hash_7985df6134faf927", #"bad_kill");
     self.health = 50;
     self.var_72411ccf = &function_40bfbff0;
-    eventstruct = undefined;
     eventstruct = self waittill(#"death");
     sticky_grenade = getweapon("eq_acid_bomb");
     if (!isdefined(eventstruct) || !isdefined(eventstruct.weapon)) {
@@ -1380,17 +1365,13 @@ function crafting() {
     if (isdefined(var_171df470)) {
         var_171df470 clientfield::set("tutorial_keyline_fx", 1);
     } else {
-        /#
-            assert(0, "p8_fxanim_zm_zod_smokestack_02_bundle");
-        #/
+        assert(0, "p8_fxanim_zm_zod_smokestack_02_bundle");
     }
     s_objective = struct::get("objective_pos_shield", "targetname");
     if (isdefined(s_objective)) {
         s_objective function_384bed55();
     } else {
-        /#
-            assert(0, "wallbuy_completed");
-        #/
+        assert(0, "wallbuy_completed");
     }
     wait(1);
     function_68da8e33(#"hash_5caf3fd084d30b3e");
@@ -1412,34 +1393,26 @@ function crafting() {
     if (isdefined(var_6b69f12a)) {
         var_6b69f12a clientfield::set("tutorial_keyline_fx", 1);
     } else {
-        /#
-            assert(0, "blocker_post_repair");
-        #/
+        assert(0, "blocker_post_repair");
     }
     s_objective = struct::get("objective_pos_table", "targetname");
     if (isdefined(s_objective)) {
         s_objective function_384bed55();
     } else {
-        /#
-            assert(0, "wallbuy_completed");
-        #/
+        assert(0, "wallbuy_completed");
     }
     level thread function_68da8e33(#"hash_12dc4615e217edd7", 1);
     self waittill(#"crafting_success");
     if (isdefined(var_6b69f12a)) {
         var_6b69f12a delete();
     } else {
-        /#
-            assert(0, "blocker_post_repair");
-        #/
+        assert(0, "blocker_post_repair");
     }
     var_1464a7b = getent("shield_model", "targetname");
     if (isdefined(var_1464a7b)) {
         var_1464a7b clientfield::set("tutorial_keyline_fx", 1);
     } else {
-        /#
-            assert(0, "p8_fxanim_zm_vapor_altar_zeus_mod");
-        #/
+        assert(0, "p8_fxanim_zm_vapor_altar_zeus_mod");
     }
     level thread function_68da8e33(#"hash_6643caefeffff6f1");
     shield = getweapon("zhield_dw");
@@ -1449,16 +1422,12 @@ function crafting() {
     if (isdefined(var_1464a7b)) {
         var_1464a7b clientfield::set("tutorial_keyline_fx", 2);
     } else {
-        /#
-            assert(0, "p8_fxanim_zm_vapor_altar_zeus_mod");
-        #/
+        assert(0, "p8_fxanim_zm_vapor_altar_zeus_mod");
     }
     if (isdefined(s_objective)) {
         s_objective function_384bed55(0);
     } else {
-        /#
-            assert(0, "wallbuy_completed");
-        #/
+        assert(0, "wallbuy_completed");
     }
     function_f1376337(3);
     level flag::wait_till_clear("tutorial_vo_playing");
@@ -1808,7 +1777,6 @@ function private show_hint_text(text, show_for_time = 3.2, font_scale = 1.25, yp
     }
     level.zm_tut_hint_text zm_tut_hint_text::set_text(self, text);
     level.zm_tut_hint_text zm_tut_hint_text::set_state(self, #"visible");
-    time = undefined;
     time = self waittilltimeout(show_for_time, #"hide_equipment_hint_text", #"death", #"disconnect");
     if (isdefined(time) && isdefined(self) && level.zm_tut_hint_text zm_tut_hint_text::is_open(self)) {
         level.zm_tut_hint_text zm_tut_hint_text::set_state(self, #"defaultstate");
@@ -2069,7 +2037,7 @@ function function_384bed55(b_on = 1) {
 // Checksum 0x1d7e956a, Offset: 0x9e30
 // Size: 0x3b8
 function function_269d9f82(var_9b7aaa46, b_on = 1) {
-    var_d3c21d73 = vectorscale((0, 0, 1), 48);
+    var_d3c21d73 = (0, 0, 48);
     var_d23fea4f = struct::get_array(var_9b7aaa46, "targetname");
     if (isdefined(b_on) && b_on) {
         foreach (s_position in var_d23fea4f) {

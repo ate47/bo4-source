@@ -198,7 +198,7 @@ function function_731e7fcf(localclientnum, oldval, newval, bnewent, binitialsnap
         break;
     case 13:
         if (!isdefined(self.var_23864f02) && !(isdefined(self.b_completed) && self.b_completed)) {
-            self.var_23864f02 = playfx(localclientnum, level._effect[#"hash_32c45f56d5a6bf6c"], self.origin, vectorscale((0, 0, 1), 360), vectorscale((1, 0, 0), 360));
+            self.var_23864f02 = playfx(localclientnum, level._effect[#"hash_32c45f56d5a6bf6c"], self.origin, (0, 0, 360), (360, 0, 0));
         }
         if (!(isdefined(self.b_started) && self.b_started)) {
             self.b_started = 1;
@@ -286,8 +286,8 @@ function function_9d797e21(localclientnum, oldval, newval, bnewent, binitialsnap
                 break;
             }
             if (isdefined(str_effect)) {
-                v_up = vectorscale((1, 0, 0), 360);
-                v_forward = vectorscale((0, 0, 1), 360);
+                v_up = (360, 0, 0);
+                v_forward = (0, 0, 360);
                 self.var_306bf925 = playfx(localclientnum, str_effect, self.origin, v_forward, v_up);
             }
         }
@@ -408,8 +408,8 @@ function function_3e31854(e_player, v_color) {
         }
         self notify(#"hash_199d88acd54c89d4");
         self endon(#"death", #"hash_199d88acd54c89d4");
-        v_upper = self.origin + vectorscale((0, 0, 1), 96);
-        v_lower = self.origin - vectorscale((0, 0, 1), 96);
+        v_upper = self.origin + (0, 0, 96);
+        v_lower = self.origin - (0, 0, 96);
         v_edge = vectorscale(anglestoforward(self.angles), 450);
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             circle(v_upper, 450, v_color, 0, 1);
@@ -468,7 +468,7 @@ function ghost_impact_fx(localclientnum) {
     while (isdefined(self)) {
         v_start = self gettagorigin("j_spinelower");
         v_end = v_start + vectorscale(anglestoforward(self.angles), 16);
-        a_trace = physicstrace(v_start, v_end, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self, 8);
+        a_trace = physicstrace(v_start, v_end, (-16, -16, -16), (16, 16, 16), self, 8);
         v_contact = a_trace[#"position"];
         if (a_trace[#"surfacetype"] != "none" && distance2dsquared(v_contact, var_c2b3e9bf) > 256 * 2) {
             var_c2b3e9bf = v_contact;
@@ -479,7 +479,7 @@ function ghost_impact_fx(localclientnum) {
             playfx(localclientnum, level._effect[#"hash_3fee8d30e3aef8f4"], v_contact, v_forward * -1, anglestoup(self.angles));
         }
         v_end = v_start + vectorscale(anglestoforward(self.angles) * -1, 16);
-        a_trace = physicstrace(v_start, v_end, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self, 8);
+        a_trace = physicstrace(v_start, v_end, (-16, -16, -16), (16, 16, 16), self, 8);
         v_contact = a_trace[#"position"];
         if (a_trace[#"surfacetype"] != "none" && distance2dsquared(v_contact, var_c2b3e9bf) > 256 * 2) {
             var_c2b3e9bf = v_contact;
@@ -581,7 +581,7 @@ function function_5545acc1(newval) {
             level.var_d23472c9 = [];
         }
         level.var_d23472c9[str_hint] = newval;
-        v_pos = vectorscale((1, 1, 0), 128);
+        v_pos = (128, 128, 0);
         n_offset = 24;
         while (getdvarint(#"hash_3c4df2fe4b1618d5", 0)) {
             var_8b7c6b64 = 0;

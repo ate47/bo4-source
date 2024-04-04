@@ -355,135 +355,67 @@ function function_2628e1c2() {
 // Checksum 0x27d6a808, Offset: 0x22e0
 // Size: 0x1174
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_2784f3ff));
-    #/
+    assert(isscriptfunctionptr(&function_2784f3ff));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_148b4066ca34ac7d", &function_2784f3ff);
-    /#
-        assert(isscriptfunctionptr(&function_d6ded650));
-    #/
+    assert(isscriptfunctionptr(&function_d6ded650));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5c96eb204e351d55", &function_d6ded650);
-    /#
-        assert(isscriptfunctionptr(&function_d6fbf1b7));
-    #/
+    assert(isscriptfunctionptr(&function_d6fbf1b7));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7121da36951eb072", &function_d6fbf1b7);
-    /#
-        assert(isscriptfunctionptr(&function_1d9f449a));
-    #/
+    assert(isscriptfunctionptr(&function_1d9f449a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_32703c2c1d28f6f8", &function_1d9f449a);
-    /#
-        assert(isscriptfunctionptr(&function_2ed4a174));
-    #/
+    assert(isscriptfunctionptr(&function_2ed4a174));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_68ad8f05c187147e", &function_2ed4a174);
-    /#
-        assert(isscriptfunctionptr(&function_e1ba6416));
-    #/
+    assert(isscriptfunctionptr(&function_e1ba6416));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2fa134b71f113f7a", &function_e1ba6416);
-    /#
-        assert(isscriptfunctionptr(&function_8383fdf9));
-    #/
+    assert(isscriptfunctionptr(&function_8383fdf9));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_73649a2d01c11f41", &function_8383fdf9);
-    /#
-        assert(isscriptfunctionptr(&blightfathershouldmelee));
-    #/
+    assert(isscriptfunctionptr(&blightfathershouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"blightfathershouldmelee", &blightfathershouldmelee);
-    /#
-        assert(isscriptfunctionptr(&blightfathershouldshowpain));
-    #/
+    assert(isscriptfunctionptr(&blightfathershouldshowpain));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"blightfathershouldshowpain", &blightfathershouldshowpain);
-    /#
-        assert(isscriptfunctionptr(&function_3515ad4b));
-    #/
+    assert(isscriptfunctionptr(&function_3515ad4b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_41aa80b14334caac", &function_3515ad4b);
-    /#
-        assert(isscriptfunctionptr(&function_aaad8487));
-    #/
+    assert(isscriptfunctionptr(&function_aaad8487));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_124ccb4b34a00c0f", &function_aaad8487);
-    /#
-        assert(isscriptfunctionptr(&function_4bd1c37e));
-    #/
+    assert(isscriptfunctionptr(&function_4bd1c37e));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_667d737e6c9aba40", &function_4bd1c37e);
-    /#
-        assert(isscriptfunctionptr(&blightfatherdeathstart));
-    #/
+    assert(isscriptfunctionptr(&blightfatherdeathstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"blightfatherdeathstart", &blightfatherdeathstart);
-    /#
-        assert(isscriptfunctionptr(&function_1177eb85));
-    #/
+    assert(isscriptfunctionptr(&function_1177eb85));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7ef0bb5832b7989d", &function_1177eb85);
-    /#
-        assert(isscriptfunctionptr(&function_d5a0a1eb));
-    #/
+    assert(isscriptfunctionptr(&function_d5a0a1eb));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1db7e3af327c9b04", &function_d5a0a1eb);
-    /#
-        assert(isscriptfunctionptr(&function_e0d8f770));
-    #/
+    assert(isscriptfunctionptr(&function_e0d8f770));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7817d265f22976fd", &function_e0d8f770);
-    /#
-        assert(isscriptfunctionptr(&function_f108c0ea));
-    #/
+    assert(isscriptfunctionptr(&function_f108c0ea));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_21c5672c06f01755", &function_f108c0ea);
-    /#
-        assert(isscriptfunctionptr(&function_b5b42347));
-    #/
+    assert(isscriptfunctionptr(&function_b5b42347));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_45f5d3d442f48795", &function_b5b42347);
-    /#
-        assert(isscriptfunctionptr(&function_283b9654));
-    #/
+    assert(isscriptfunctionptr(&function_283b9654));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3598ca6c9a0b1b1", &function_283b9654);
-    /#
-        assert(isscriptfunctionptr(&function_173d7fb2));
-    #/
+    assert(isscriptfunctionptr(&function_173d7fb2));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4913708f18cd3e3e", &function_173d7fb2);
-    /#
-        assert(isscriptfunctionptr(&function_bc3eb15a));
-    #/
+    assert(isscriptfunctionptr(&function_bc3eb15a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6a7eedc191a3f371", &function_bc3eb15a);
-    /#
-        assert(isscriptfunctionptr(&function_1dac0714));
-    #/
+    assert(isscriptfunctionptr(&function_1dac0714));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_ae71931f5fb12d8", &function_1dac0714);
-    /#
-        assert(isscriptfunctionptr(&function_fc84db95));
-    #/
+    assert(isscriptfunctionptr(&function_fc84db95));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_23b3b2b5a3230cc5", &function_fc84db95);
-    /#
-        assert(isscriptfunctionptr(&function_8d9b9683));
-    #/
+    assert(isscriptfunctionptr(&function_8d9b9683));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_77b88d91d0990898", &function_8d9b9683);
-    /#
-        assert(isscriptfunctionptr(&function_d83ac1e7));
-    #/
+    assert(isscriptfunctionptr(&function_d83ac1e7));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6e5059e0839da879", &function_d83ac1e7);
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_b62014ac) || isscriptfunctionptr(&function_b62014ac));
-    #/
-    /#
-        assert(!isdefined(&function_928e66ad) || isscriptfunctionptr(&function_928e66ad));
-    #/
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_b62014ac) || isscriptfunctionptr(&function_b62014ac));
+    assert(!isdefined(&function_928e66ad) || isscriptfunctionptr(&function_928e66ad));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_7ebcf0c2d647b3a2", undefined, &function_b62014ac, &function_928e66ad);
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_8cbef8fd) || isscriptfunctionptr(&function_8cbef8fd));
-    #/
-    /#
-        assert(!isdefined(&function_928e66ad) || isscriptfunctionptr(&function_928e66ad));
-    #/
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_8cbef8fd) || isscriptfunctionptr(&function_8cbef8fd));
+    assert(!isdefined(&function_928e66ad) || isscriptfunctionptr(&function_928e66ad));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_efb5b2c25a5b7cb", undefined, &function_8cbef8fd, &function_928e66ad);
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_fa33f4aa) || isscriptfunctionptr(&function_fa33f4aa));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_fa33f4aa) || isscriptfunctionptr(&function_fa33f4aa));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_7b6603199659e6ff", undefined, &function_fa33f4aa, undefined);
     animationstatenetwork::registernotetrackhandlerfunction("blight_father_tongue_grab_launch", &function_28dddd64);
     animationstatenetwork::registernotetrackhandlerfunction("blight_father_vomit_start", &function_7a634eaa);
@@ -495,29 +427,17 @@ function private registerbehaviorscriptfunctions() {
     animationstatenetwork::registernotetrackhandlerfunction("blightfather_explode", &function_b78adc65);
     animationstatenetwork::registeranimationmocomp("mocomp_purchase_lockdown_vomit@blight_father", &function_6ab8460f, undefined, undefined);
     animationstatenetwork::registeranimationmocomp("mocomp_grapple_attack_launch@blight_father", &function_299dd40e, &function_689831cf, &function_42de48fb);
-    /#
-        assert(isscriptfunctionptr(&function_7055b26));
-    #/
+    assert(isscriptfunctionptr(&function_7055b26));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3ab9ffa56496f9a1", &function_7055b26);
-    /#
-        assert(isscriptfunctionptr(&function_f2914d65));
-    #/
+    assert(isscriptfunctionptr(&function_f2914d65));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_116b298d64ab0478", &function_f2914d65);
-    /#
-        assert(isscriptfunctionptr(&function_563d56de));
-    #/
+    assert(isscriptfunctionptr(&function_563d56de));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_7156796e4e9cd68", &function_563d56de);
-    /#
-        assert(isscriptfunctionptr(&function_b3f66ac3));
-    #/
+    assert(isscriptfunctionptr(&function_b3f66ac3));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_7a04596792c5199d", &function_b3f66ac3);
-    /#
-        assert(isscriptfunctionptr(&function_1d2646));
-    #/
+    assert(isscriptfunctionptr(&function_1d2646));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_435c602040220705", &function_1d2646);
-    /#
-        assert(isscriptfunctionptr(&function_62b3b7a3));
-    #/
+    assert(isscriptfunctionptr(&function_62b3b7a3));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_483c1950bc1df07f", &function_62b3b7a3);
 }
 
@@ -584,9 +504,7 @@ function function_753b4884() {
         if (isdefined(var_4afb24b6)) {
             turnyaw = absangleclamp360(self.angles[1] - vectortoangles(var_4afb24b6.origin - self.origin)[1]);
         } else {
-            /#
-                println("mocomp_purchase_lockdown_vomit@blight_father" + self getentitynumber() + "tag_tongue" + self.origin[0] + "face angle" + self.origin[1] + "face angle" + self.origin[2] + "j_head");
-            #/
+            println("mocomp_purchase_lockdown_vomit@blight_father" + self getentitynumber() + "tag_tongue" + self.origin[0] + "face angle" + self.origin[1] + "face angle" + self.origin[2] + "j_head");
             turnyaw = absangleclamp360(self.angles[1] - vectortoangles(stub.origin - self.origin)[1]);
         }
         return turnyaw;
@@ -1167,9 +1085,9 @@ function private function_5d7f8057(entity, player) {
     }
     clip_mask = 1 | 8;
     if (player haspart("j_mainroot")) {
-        trace = physicstrace(entity.origin + vectorscale((0, 0, 1), 35), player gettagorigin("j_mainroot"), (-15, -15, -20), (15, 15, 40), entity, clip_mask);
+        trace = physicstrace(entity.origin + (0, 0, 35), player gettagorigin("j_mainroot"), (-15, -15, -20), (15, 15, 40), entity, clip_mask);
     } else {
-        trace = physicstrace(entity.origin + vectorscale((0, 0, 1), 35), player.origin, (-15, -15, -20), (15, 15, 40), entity, clip_mask);
+        trace = physicstrace(entity.origin + (0, 0, 35), player.origin, (-15, -15, -20), (15, 15, 40), entity, clip_mask);
     }
     entity.var_c8088bcb.traces[player getentitynumber()] = trace;
     return trace;
@@ -1516,7 +1434,7 @@ function private function_91dcbd1c(prone_2_run_roll, var_a424c06a, e_grapplee) {
     #/
     var_a424c06a.return_pos = var_148b92ae;
     var_ca015b6f = util::spawn_model("tag_origin", e_grapplee.origin, e_grapplee.angles);
-    var_ca015b6f linkto(var_a424c06a, "tag_origin", vectorscale((0, 0, 1), 35) * -1);
+    var_ca015b6f linkto(var_a424c06a, "tag_origin", (0, 0, 35) * -1);
     e_grapplee.var_ca015b6f = var_ca015b6f;
     if (isplayer(e_grapplee)) {
         e_grapplee playerlinkto(var_ca015b6f, "tag_origin", 1, 40, 40, 80, 15);
@@ -1570,7 +1488,7 @@ function function_c526065b(entity, var_e0ef3075) {
     }
     droppoint = getclosestpointonnavmesh(grapplee.origin, 64, 24);
     if (isdefined(droppoint)) {
-        v_ground_pos = groundtrace(droppoint + vectorscale((0, 0, 1), 50), droppoint, 0, entity)[#"position"];
+        v_ground_pos = groundtrace(droppoint + (0, 0, 50), droppoint, 0, entity)[#"position"];
         if (isdefined(v_ground_pos)) {
             droppoint = v_ground_pos;
         }
@@ -1668,14 +1586,14 @@ function private function_299dd40e(entity, mocompanim, mocompanimblendouttime, m
 function private function_689831cf(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
     if (function_ef973b70(entity) === 0 && zm_utility::is_player_valid(entity.var_bef7624d) && !isdefined(entity.e_grapplee)) {
         /#
-            record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 16), (0, 0, 1));
+            record3dtext("<unknown string>", entity.origin + (0, 0, 16), (0, 0, 1));
         #/
         to_player = entity.var_bef7624d.origin - entity.origin;
         var_47d9e0ed = vectortoangles(to_player);
         entity orientmode("face angle", var_47d9e0ed[1]);
     } else {
         /#
-            record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 16), (0, 1, 0));
+            record3dtext("<unknown string>", entity.origin + (0, 0, 16), (0, 1, 0));
         #/
         entity orientmode("face current");
     }
@@ -1771,14 +1689,12 @@ function private function_62b3b7a3(entity) {
             grapplee.var_ca015b6f unlink();
             var_938dbbaa = vectortoangles(entity.origin - grapplee.var_ca015b6f.origin);
             var_7e28b231 = entity gettagangles("tag_tongue");
-            grapplee.var_ca015b6f linkto(entity, "tag_tongue", vectorscale((0, 0, 1), 35) * -1, (var_7e28b231[0] * -1, var_938dbbaa[1] - var_7e28b231[1], var_7e28b231[2] * -1));
+            grapplee.var_ca015b6f linkto(entity, "tag_tongue", (0, 0, 35) * -1, (var_7e28b231[0] * -1, var_938dbbaa[1] - var_7e28b231[1], var_7e28b231[2] * -1));
             grapplee setplayercollision(1);
         } else {
             function_c526065b(entity);
         }
-        /#
-            println("<unknown string>" + distance(function_f9d9f198(entity), grapplee.origin + vectorscale((0, 0, 1), 35)));
-        #/
+        println("<unknown string>" + distance(function_f9d9f198(entity), grapplee.origin + (0, 0, 35)));
     }
     return true;
 }
@@ -2101,9 +2017,7 @@ function private function_7055b26(entity) {
     }
     var_4afb24b6 = zm_lockdown_util::function_dab6d796(entity, stub);
     if (!isdefined(var_4afb24b6)) {
-        /#
-            println("mocomp_purchase_lockdown_vomit@blight_father" + entity getentitynumber() + "<unknown string>" + stub.origin + "<unknown string>");
-        #/
+        println("mocomp_purchase_lockdown_vomit@blight_father" + entity getentitynumber() + "<unknown string>" + stub.origin + "<unknown string>");
         var_7162cf15 = zm_utility::function_b0eeaada(stub.origin);
         halfheight = 32;
         if (!isdefined(var_7162cf15)) {
@@ -2162,7 +2076,6 @@ function function_b57f31b6(player) {
 function private function_158a1b7e() {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (!isdefined(waitresult.activator) || !zm_utility::is_player_valid(waitresult.activator) || isdefined(self.stub) && isdefined(self.stub.var_6156031a) && self.stub.var_6156031a) {
             continue;
@@ -2279,9 +2192,7 @@ function private function_6ab8460f(entity, mocompanim, mocompanimblendouttime, m
         start_origin = getstartorigin(var_4afb24b6.origin, var_4afb24b6.angles, mocompanim);
         start_angles = getstartangles(var_4afb24b6.origin, var_4afb24b6.angles, mocompanim);
     } else {
-        /#
-            println("mocomp_purchase_lockdown_vomit@blight_father" + entity getentitynumber() + "tag_tongue" + entity.origin[0] + "face angle" + entity.origin[1] + "face angle" + entity.origin[2] + "j_head");
-        #/
+        println("mocomp_purchase_lockdown_vomit@blight_father" + entity getentitynumber() + "tag_tongue" + entity.origin[0] + "face angle" + entity.origin[1] + "face angle" + entity.origin[2] + "j_head");
         start_origin = entity.origin;
         start_angles = entity.angles;
     }
@@ -2450,13 +2361,11 @@ function private function_e0d8f770(entity) {
 // Size: 0x94
 function private function_d2b91209(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     entity clientfield::increment("blight_father_spawn_maggot_fx_left");
-    entity thread blightfatherlaunchchaosmissile(entity.favoriteenemy, vectorscale((0, 0, 1), 5), "tag_sac_fx_le");
+    entity thread blightfatherlaunchchaosmissile(entity.favoriteenemy, (0, 0, 5), "tag_sac_fx_le");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -2465,13 +2374,11 @@ function private function_d2b91209(entity) {
 // Size: 0x94
 function private function_78f5c48e(entity) {
     if (!isdefined(entity.favoriteenemy)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     entity clientfield::increment("blight_father_spawn_maggot_fx_right");
-    entity thread blightfatherlaunchchaosmissile(entity.favoriteenemy, vectorscale((0, 0, 1), 5), "tag_sac_fx_ri");
+    entity thread blightfatherlaunchchaosmissile(entity.favoriteenemy, (0, 0, 5), "tag_sac_fx_ri");
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -2565,7 +2472,6 @@ function function_b2be1340(starting_health) {
     self endon(#"detonated");
     self.n_health = starting_health;
     while (self.n_health > 0) {
-        s_notify = undefined;
         s_notify = self.trigger waittill(#"damage");
         if (isdefined(s_notify.attacker) && isplayer(s_notify.attacker) && s_notify.amount > 0) {
             self.n_health = self.n_health - s_notify.amount;
@@ -2697,7 +2603,7 @@ function private function_124486ee(delay) {
         e_blightfather = var_892397fd.var_52334e8c;
         w_weapon = getweapon(#"none");
         var_892397fd function_8e8b1dfc(var_c45ef84c, e_blightfather, w_weapon);
-        offset = vectorscale((0, 0, 1), 18);
+        offset = (0, 0, 18);
         if (bullettracepassed(var_892397fd.origin, var_892397fd.origin + offset, 0, 1)) {
             explosion_point = var_892397fd.origin + offset;
         } else {
@@ -2772,7 +2678,7 @@ function private function_8e8b1dfc(var_c45ef84c, blight_father, weapon) {
         if (!isdefined(player)) {
             continue;
         }
-        distancesq = distancesquared(self.origin, player.origin + vectorscale((0, 0, 1), 48));
+        distancesq = distancesquared(self.origin, player.origin + (0, 0, 48));
         if (distancesq > var_c45ef84c) {
             continue;
         }
@@ -2996,9 +2902,7 @@ function round_spawn() {
 // Size: 0x90
 function private function_2315440d() {
     spawners = getspawnerarray("zombie_blight_father_spawner", "script_noteworthy");
-    /#
-        assert(spawners.size > 0);
-    #/
+    assert(spawners.size > 0);
     new_ai = spawners[0] spawnfromspawner(0, 1);
     new_ai zm_transform::function_bbaec2fd();
     return true;

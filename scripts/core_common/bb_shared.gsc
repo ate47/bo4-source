@@ -42,11 +42,7 @@ function commit_weapon_data(spawnid, currentweapon, time0) {
     if (isbot(self)) {
         return;
     }
-    /#
-        /#
-            assert(isdefined(self._bbdata));
-        #/
-    #/
+    assert(isdefined(self._bbdata));
     if (!isdefined(self._bbdata)) {
         return;
     }

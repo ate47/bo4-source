@@ -13,23 +13,20 @@
 // Method(s) 2 Total 2
 class class_92792865 {
 
+    var startstruct;
+    var var_4de004b7;
+    var var_d1e3e893;
+    var var_e7ce4106;
+
     // Namespace class_92792865/bot_chain
     // Params 0, eflags: 0x9 linked
     // Checksum 0x5b7c59f6, Offset: 0x168
     // Size: 0x32
-    __constructor() {
-        self.var_4de004b7 = undefined;
-        self.startstruct = undefined;
-        self.var_e7ce4106 = undefined;
-        self.var_d1e3e893 = undefined;
-    }
-
-    // Namespace class_92792865/bot_chain
-    // Params 0, eflags: 0x11 linked
-    // Checksum 0x80f724d1, Offset: 0x1a8
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_4de004b7 = undefined;
+        startstruct = undefined;
+        var_e7ce4106 = undefined;
+        var_d1e3e893 = undefined;
     }
 
 }
@@ -82,7 +79,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
         if (active) {
             sphere(var_72284260.origin, 8, (0, 1, 0), 1, 0, 12, duration);
         } else if (isinarray(level.var_40ed3318, var_72284260)) {
-            sphere(var_72284260.origin, 6, vectorscale((1, 1, 1), 0.75), 0.7, 0, 10, duration);
+            sphere(var_72284260.origin, 6, (0.75, 0.75, 0.75), 0.7, 0, 10, duration);
         } else {
             sphere(var_72284260.origin, 6, (1, 0.5, 0), 0.7, 0, 10, duration);
         }
@@ -217,7 +214,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
                 } else {
                     nodecolor = (1, 0, 0);
                 }
-                box(goal.origin, vectorscale((-1, -1, 0), 16), vectorscale((1, 1, 0), 16), 0, nodecolor, 1, 1, duration);
+                box(goal.origin, (-16, -16, 0), (16, 16, 0), 0, nodecolor, 1, 1, duration);
                 continue;
             }
             if (goal.classname === "<unknown string>") {
@@ -320,9 +317,7 @@ function private function_e3eaa42b() {
 // Size: 0x44e
 function private function_e7b80b1e(var_72284260) {
     self endon(#"hash_382a628dad5ecbb5");
-    /#
-        assert(isdefined(var_72284260));
-    #/
+    assert(isdefined(var_72284260));
     if (!isdefined(var_72284260.target) && !isdefined(var_72284260.script_bot_chain_src)) {
         return undefined;
     }
@@ -361,14 +356,10 @@ function private function_e7b80b1e(var_72284260) {
         return array::random(var_7bc3c842);
     }
     if (var_653c94ca.size) {
-        /#
-            assert(flagarray.size);
-        #/
+        assert(flagarray.size);
         level flag::wait_till_any(flagarray);
         foreach (struct in var_653c94ca) {
-            /#
-                assert(isdefined(struct.script_flag_activate));
-            #/
+            assert(isdefined(struct.script_flag_activate));
             if (level flag::get(struct.script_flag_activate)) {
                 return struct;
             }
@@ -385,9 +376,7 @@ function private function_e7b80b1e(var_72284260) {
 // Checksum 0x27503118, Offset: 0x1c28
 // Size: 0x96
 function private function_ea88f102(entity, goal) {
-    /#
-        assert(isdefined(goal));
-    #/
+    assert(isdefined(goal));
     if (!isdefined(entity.bot.var_53ffa4c4)) {
         return false;
     }
@@ -402,12 +391,8 @@ function private function_ea88f102(entity, goal) {
 // Checksum 0x6435ded5, Offset: 0x1cc8
 // Size: 0x25a
 function private function_ce1ee70(goal, bot) {
-    /#
-        assert(isdefined(bot));
-    #/
-    /#
-        assert(isdefined(goal));
-    #/
+    assert(isdefined(bot));
+    assert(isdefined(goal));
     bots = bot bot::get_friendly_bots();
     arrayremovevalue(bots, bot);
     if (!bot.size) {
@@ -428,9 +413,7 @@ function private function_ce1ee70(goal, bot) {
         }
         return false;
     }
-    /#
-        assert(isvec(goal));
-    #/
+    assert(isvec(goal));
     foreach (entity in bots) {
         if (function_ea88f102(entity, goal)) {
             return true;
@@ -444,18 +427,12 @@ function private function_ce1ee70(goal, bot) {
 // Checksum 0x48e58749, Offset: 0x1f30
 // Size: 0x4ca
 function private function_c2d874f1(var_72284260, bot) {
-    /#
-        assert(isdefined(var_72284260));
-    #/
-    /#
-        assert(isdefined(bot));
-    #/
+    assert(isdefined(var_72284260));
+    assert(isdefined(bot));
     if (!isdefined(var_72284260.target) && !isdefined(var_72284260.script_botchain_goal)) {
         return var_72284260;
     }
-    /#
-        assert(isdefined(var_72284260.target) || isdefined(var_72284260.script_botchain_goal));
-    #/
+    assert(isdefined(var_72284260.target) || isdefined(var_72284260.script_botchain_goal));
     goals = [];
     if (isdefined(var_72284260.target)) {
         var_cfc087ec = getnodearray(var_72284260.target, "targetname");
@@ -518,12 +495,8 @@ function private function_c2d874f1(var_72284260, bot) {
 // Checksum 0xf1a0dbdf, Offset: 0x2408
 // Size: 0xd6
 function private set_goalradius_based_on_settings(goal) {
-    /#
-        assert(isbot(self) || isvehicle(self));
-    #/
-    /#
-        assert(isdefined(goal));
-    #/
+    assert(isbot(self) || isvehicle(self));
+    assert(isdefined(goal));
     if (isdefined(goal.script_forcegoal) && goal.script_forcegoal) {
         return;
     }
@@ -543,13 +516,9 @@ function function_95d17a51(startstruct) {
     structs = array();
     if (isstring(startstruct)) {
         startstruct = struct::get(startstruct);
-        /#
-            assert(isdefined(startstruct));
-        #/
+        assert(isdefined(startstruct));
     } else {
-        /#
-            assert(isdefined(startstruct) && isstruct(startstruct));
-        #/
+        assert(isdefined(startstruct) && isstruct(startstruct));
     }
     seentargets = array();
     targets = array();
@@ -595,25 +564,15 @@ function function_95d17a51(startstruct) {
 // Checksum 0x888583e2, Offset: 0x28d0
 // Size: 0x70c
 function function_cf70f2fe(startstruct, resuming = 0) {
-    /#
-        assert(isbot(self));
-    #/
-    /#
-        assert(isdefined(self.bot));
-    #/
+    assert(isbot(self));
+    assert(isdefined(self.bot));
     if (isstring(startstruct)) {
         startstruct = struct::get(startstruct);
-        /#
-            assert(isdefined(startstruct));
-        #/
+        assert(isdefined(startstruct));
     } else {
-        /#
-            assert(isdefined(startstruct) && isstruct(startstruct));
-        #/
+        assert(isdefined(startstruct) && isstruct(startstruct));
     }
-    /#
-        assert(startstruct.variantname == "<unknown string>");
-    #/
+    assert(startstruct.variantname == "<unknown string>");
     goalent = self isinvehicle() ? self getvehicleoccupied() : self;
     goalent endon(#"death");
     self endon(#"death");
@@ -663,17 +622,13 @@ function function_cf70f2fe(startstruct, resuming = 0) {
         }
         if (isdefined(var_4de004b7.script_ent_flag_set)) {
             if (!self flag::exists(var_4de004b7.script_ent_flag_set)) {
-                /#
-                    assertmsg("<unknown string>" + var_4de004b7.script_ent_flag_set + "<unknown string>");
-                #/
+                assertmsg("<unknown string>" + var_4de004b7.script_ent_flag_set + "<unknown string>");
             }
             self flag::set(var_4de004b7.script_ent_flag_set);
         }
         if (isdefined(var_4de004b7.script_ent_flag_clear)) {
             if (!self flag::exists(var_4de004b7.script_ent_flag_clear)) {
-                /#
-                    assertmsg("<unknown string>" + var_4de004b7.script_ent_flag_clear + "<unknown string>");
-                #/
+                assertmsg("<unknown string>" + var_4de004b7.script_ent_flag_clear + "<unknown string>");
             }
             self flag::clear(var_4de004b7.script_ent_flag_clear);
         }
@@ -703,9 +658,7 @@ function function_cf70f2fe(startstruct, resuming = 0) {
 // Checksum 0xa6fc04dc, Offset: 0x2fe8
 // Size: 0x8c
 function function_34a84039() {
-    /#
-        assert(isbot(self));
-    #/
+    assert(isbot(self));
     if (isdefined(self.bot.var_53ffa4c4) && isdefined(self.bot.var_53ffa4c4.var_4de004b7)) {
         self thread function_cf70f2fe(self.bot.var_53ffa4c4.var_4de004b7, 1);
     }
@@ -716,9 +669,7 @@ function function_34a84039() {
 // Checksum 0x2790a6f4, Offset: 0x3080
 // Size: 0x5e
 function function_73d1cfe6() {
-    /#
-        assert(isbot(self));
-    #/
+    assert(isbot(self));
     if (isdefined(self.bot.var_53ffa4c4)) {
         self.bot.var_53ffa4c4 = undefined;
     }
@@ -730,9 +681,7 @@ function function_73d1cfe6() {
 // Checksum 0xa9aa5a35, Offset: 0x30e8
 // Size: 0x48
 function function_58b429fb() {
-    /#
-        assert(isbot(self));
-    #/
+    assert(isbot(self));
     if (isdefined(self.bot.var_53ffa4c4)) {
         return true;
     }

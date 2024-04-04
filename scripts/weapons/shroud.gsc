@@ -226,7 +226,6 @@ function function_f4970a20(watcher, player) {
         player.shrouds = array(player.shrouds);
     }
     player.shrouds[player.shrouds.size] = self;
-    waitresult = undefined;
     waitresult = self waittilltimeout(5, #"stationary");
     if (waitresult._notify == #"timeout") {
         function_4db10465();
@@ -260,7 +259,6 @@ function function_f4970a20(watcher, player) {
 // Size: 0xec
 function private function_6852f0e1() {
     owner = self.owner;
-    waitresult = undefined;
     waitresult = self waittill(#"picked_up", #"death");
     if (isdefined(owner) && isdefined(owner.shrouds)) {
         arrayremovevalue(owner.shrouds, undefined);
@@ -354,7 +352,6 @@ function function_55de888f(watcher) {
     self setmaxhealth(self.maxhealth);
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         profilestart();
         damage = waitresult.amount;

@@ -112,9 +112,7 @@ function function_901b751c(var_c9db62d5) {
         return undefined;
     }
     setting = getgametypesetting(var_c9db62d5);
-    /#
-        assert(isdefined(setting), "<unknown string>" + var_c9db62d5 + "<unknown string>");
-    #/
+    assert(isdefined(setting), "<unknown string>" + var_c9db62d5 + "<unknown string>");
     return setting;
 }
 

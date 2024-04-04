@@ -70,9 +70,7 @@ function is_active() {
 // Size: 0xfa
 function function_2fc5f13() {
     challenge = zm_trial::function_a36e8c38(#"no_powerups");
-    /#
-        assert(isdefined(challenge));
-    #/
+    assert(isdefined(challenge));
     var_5843af96 = zm_round_logic::get_zombie_count_for_round(level.round_number, getplayers().size);
     frac = math::clamp(challenge.enemies_killed / var_5843af96, 0, 1);
     modifier = lerpfloat(25, 40, frac);
@@ -88,9 +86,7 @@ function private function_138aec8e(attacker) {
         return;
     }
     challenge = zm_trial::function_a36e8c38(#"no_powerups");
-    /#
-        assert(isdefined(challenge));
-    #/
+    assert(isdefined(challenge));
     challenge.enemies_killed++;
 }
 

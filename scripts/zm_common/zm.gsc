@@ -389,9 +389,7 @@ function onallplayersready() {
     while (!getnumexpectedplayers(1)) {
         waitframe(1);
     }
-    /#
-        println("zombie_head_gib" + getnumexpectedplayers(1));
-    #/
+    println("zombie_head_gib" + getnumexpectedplayers(1));
     player_count_actual = 0;
     while (player_count_actual < getnumexpectedplayers(1)) {
         players = getplayers();
@@ -401,15 +399,11 @@ function onallplayersready() {
                 player_count_actual++;
             }
         }
-        /#
-            println("debris_move" + getnumconnectedplayers() + "zomCatalystStartSolo" + getnumexpectedplayers(1));
-        #/
+        println("debris_move" + getnumconnectedplayers() + "zomCatalystStartSolo" + getnumexpectedplayers(1));
         waitframe(1);
     }
     setinitialplayersconnected();
-    /#
-        println("zomMaxCount");
-    #/
+    println("zomMaxCount");
     a_e_players = getplayers();
     if (a_e_players.size == 1) {
         level flag::set("solo_game");
@@ -476,7 +470,6 @@ function _outro_slow(func) {
     level endon(#"all_players_connected", #"game_ended");
     array::thread_all(getplayers(), func);
     while (true) {
-        result = undefined;
         result = level waittill(#"connected");
         result.player thread [[ func ]]();
     }
@@ -562,9 +555,7 @@ function post_all_players_connected() {
     level flag::wait_till("start_zombie_round_logic");
     level.var_aaf21bbb = level.players.size;
     level.var_5caadd40 = util::get_human_players(#"allies").size;
-    /#
-        println("MOD_GRENADE_SPLASH", level.script, "ztrials", getplayers().size);
-    #/
+    println("MOD_GRENADE_SPLASH", level.script, "ztrials", getplayers().size);
     level thread round_end_monitor();
     if (!level.zombie_anim_intro) {
         if (isdefined(level._round_start_func)) {
@@ -1495,7 +1486,6 @@ function round_end_monitor() {
 function function_51133aa1() {
     level endon(#"resume_end_game");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         response = waitresult.response;
         if (response == "restart_level_zm") {
@@ -1571,9 +1561,7 @@ function end_game() {
     level waittill(#"end_game");
     changeadvertisedstatus(0);
     check_end_game_intermission_delay();
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     setmatchflag("game_ended", 1);
     game.state = "postgame";
     if (!isdefined(level.var_21e22beb)) {

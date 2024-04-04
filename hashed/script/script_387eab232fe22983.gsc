@@ -29,9 +29,7 @@ function autoexec __init__system__() {
 function __init__() {
     level.a_sp_werewolf = getentarray("zombie_werewolf_spawner", "script_noteworthy");
     if (level.a_sp_werewolf.size == 0) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     foreach (sp_werewolf in level.a_sp_werewolf) {

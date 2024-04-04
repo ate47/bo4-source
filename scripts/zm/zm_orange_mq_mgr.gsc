@@ -153,21 +153,15 @@ function function_d4147875(var_5ea5c94d) {
     level flag::set(#"hold_round_end");
     level thread play_outro();
     wait(320);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level thread lui::screen_flash(0.2, 7, 7, 1, "black");
     wait(0.3);
     level.var_583a0efc = getstatuseffect(#"zm_orange_outro");
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     hud_disable();
     veh_start = getvehiclenode("mq_gehen_01", "targetname");
     veh_end = getvehiclenode("mq_gehen_02", "targetname");
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     sam_spawner = getent("mq_gehen_s", "targetname");
     level.sam = sam_spawner spawnfromspawner("sam", 1);
     level.sam.team = #"allies";
@@ -177,21 +171,13 @@ function function_d4147875(var_5ea5c94d) {
     eddie.team = #"allies";
     util::magic_bullet_shield(eddie);
     waitframe(1);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     namespace_3b9dec72::function_1c989dc4();
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     zm_orange_lights::function_e9f6e0f7();
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     array::thread_all(level.var_d1cf60c8, &function_74963add);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     a_e_players = getplayers();
     n_player = 1;
     foreach (player in a_e_players) {
@@ -200,28 +186,18 @@ function function_d4147875(var_5ea5c94d) {
         n_player++;
     }
     wait(1);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     namespace_3b9dec72::function_303ab700();
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level.var_9441bf02 = spawn("script_origin", (0, 0, 0));
     level.var_9441bf02 playloopsound(#"hash_503b99b370ac70b9");
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     wait(5);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level.musicsystemoverride = 1;
     music::setmusicstate("sam_eddie_walk");
     thread music_watcher();
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     while (true) {
         waitframe(1);
         _attack_barrier_sprint = vectornormalize(veh_end.origin - level.sam.origin);
@@ -324,9 +300,7 @@ function function_b20c4898() {
 function function_c40f70df(var_21c1ba1) {
     level endon(#"end_game");
     self endon(#"death");
-    /#
-        println("<unknown string>" + var_21c1ba1 + "<unknown string>");
-    #/
+    println("<unknown string>" + var_21c1ba1 + "<unknown string>");
     self bgb::suspend_weapon_cycling();
     self bgb_pack::function_ac9cb612(1);
     self util::magic_bullet_shield();
@@ -341,32 +315,24 @@ function function_c40f70df(var_21c1ba1) {
         self zm_weapons::weapon_give(level.weaponzmfists, 1);
     }
     waitframe(1);
-    /#
-        println("<unknown string>" + var_21c1ba1 + "<unknown string>");
-    #/
+    println("<unknown string>" + var_21c1ba1 + "<unknown string>");
     self zm_trial_util::function_3f8a4145(0);
     if (!self laststand::player_is_in_laststand()) {
         str_stance = self getstance();
         switch (str_stance) {
         case #"crouch":
             self setstance("stand");
-            /#
-                println("<unknown string>" + var_21c1ba1 + "<unknown string>");
-            #/
+            println("<unknown string>" + var_21c1ba1 + "<unknown string>");
             wait(0.2);
             break;
         case #"prone":
             self setstance("stand");
-            /#
-                println("<unknown string>" + var_21c1ba1 + "<unknown string>");
-            #/
+            println("<unknown string>" + var_21c1ba1 + "<unknown string>");
             wait(1);
             break;
         }
     }
-    /#
-        println("<unknown string>" + var_21c1ba1 + "<unknown string>");
-    #/
+    println("<unknown string>" + var_21c1ba1 + "<unknown string>");
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr
@@ -375,26 +341,26 @@ function function_c40f70df(var_21c1ba1) {
 // Size: 0x1f4
 function function_fe09cd56() {
     n_length = 12;
-    angle = vectorscale((0, 1, 0), 270);
+    angle = (0, 270, 0);
     start_pos = (-8752, 50696, 1784);
     pos = start_pos;
     for (i = 0; i < n_length; i++) {
         spawncollision("collision_clip_wall_512x512x10", "collider", pos, angle);
-        pos = pos + vectorscale((1, 0, 0), 512);
+        pos = pos + (512, 0, 0);
     }
-    angle = vectorscale((0, 1, 0), 270);
+    angle = (0, 270, 0);
     start_pos = (-8752, 50216, 1784);
     pos = start_pos;
     for (i = 0; i < n_length; i++) {
         spawncollision("collision_clip_wall_512x512x10", "collider", pos, angle);
-        pos = pos + vectorscale((1, 0, 0), 512);
+        pos = pos + (512, 0, 0);
     }
-    angle = vectorscale((1, 0, 0), 90);
+    angle = (90, 0, 0);
     start_pos = (-8752, 50456, 2040);
     pos = start_pos;
     for (i = 0; i < n_length; i++) {
         spawncollision("collision_clip_wall_512x512x10", "collider", pos, angle);
-        pos = pos + vectorscale((1, 0, 0), 512);
+        pos = pos + (512, 0, 0);
     }
     angle = (0, 0, 0);
     start_pos = (-3656, 50456, 1792);

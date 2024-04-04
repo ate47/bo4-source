@@ -222,9 +222,7 @@ function private stop_timer() {
 // Size: 0x7c
 function private function_2191cc5d() {
     zone = self zm_zonemgr::get_player_zone();
-    /#
-        assert(isdefined(level.var_c8b84806));
-    #/
+    assert(isdefined(level.var_c8b84806));
     return isdefined(zone) && isdefined(level.var_c8b84806[zone]) && level.var_c8b84806[zone];
 }
 

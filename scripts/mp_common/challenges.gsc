@@ -246,7 +246,6 @@ function watchjump() {
     self.challenge_jump_begin = 0;
     self.challenge_jump_end = 0;
     for (;;) {
-        ret = undefined;
         ret = self waittill(#"jump_begin", #"jump_end", #"disconnect");
         switch (ret._notify) {
         case #"jump_begin":
@@ -268,7 +267,6 @@ function watchswimming() {
     self.challenge_swimming_begin = 0;
     self.challenge_swimming_end = 0;
     for (;;) {
-        ret = undefined;
         ret = self waittill(#"swimming_begin", #"swimming_end", #"disconnect");
         switch (ret._notify) {
         case #"swimming_begin":
@@ -290,7 +288,6 @@ function watchslide() {
     self.challenge_slide_begin = 0;
     self.challenge_slide_end = 0;
     for (;;) {
-        ret = undefined;
         ret = self waittill(#"slide_begin", #"slide_end", #"disconnect");
         switch (ret._notify) {
         case #"slide_begin":
@@ -312,7 +309,6 @@ function watchsprint() {
     self.challenge_sprint_begin = 0;
     self.challenge_sprint_end = 0;
     for (;;) {
-        ret = undefined;
         ret = self waittill(#"sprint_begin", #"sprint_end", #"disconnect");
         switch (ret._notify) {
         case #"sprint_begin":
@@ -1174,7 +1170,7 @@ function challengekills(data) {
         }
         if (vectordot(attackerforward, victimforward) < -0.98) {
             if (isdefined(var_642d3a64) && var_642d3a64 + 5500 > time) {
-                var_141c7081 = victimorigin + vectorscale((0, 0, 1), 31);
+                var_141c7081 = victimorigin + (0, 0, 31);
                 var_2baca0fc = !bullettracepassed(var_141c7081, var_141c7081 + victimforward * 144, 0, victim);
                 if (var_2baca0fc) {
                     player stats::function_dad108fa(#"kill_enemy_shooting_in_partial_cover", 1);
@@ -1879,12 +1875,8 @@ function getbaseweapon(weapon) {
 // Checksum 0x10fd53e, Offset: 0x8990
 // Size: 0xde
 function checkkillstreak5(baseweapon, player) {
-    /#
-        assert(isdefined(baseweapon));
-    #/
-    /#
-        assert(isdefined(player.weaponkillsthisspawn));
-    #/
+    assert(isdefined(baseweapon));
+    assert(isdefined(player.weaponkillsthisspawn));
     if (isdefined(player.weaponkillsthisspawn[baseweapon])) {
         player.weaponkillsthisspawn[baseweapon]++;
         if (player.weaponkillsthisspawn[baseweapon] % 5 == 0) {
@@ -2478,7 +2470,6 @@ function monitorgrenadefire() {
     self notify(#"grenadetrackingstart");
     self endon(#"grenadetrackingstart", #"disconnect");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
         weapon = waitresult.weapon;

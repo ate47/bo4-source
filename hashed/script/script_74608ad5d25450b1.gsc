@@ -136,7 +136,6 @@ function private function_4e9f1680() {
     self endon(#"death");
     pixbeginevent(#"hash_73eb0f44c0388afc");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         e_player = s_notify.attacker;
         if (s_notify zm_hms_util::function_69320b44("zm_aat_frostbite")) {
@@ -323,7 +322,7 @@ function private function_baec0416(v_pos, v_angles) {
         v_drop = zm_hms_util::function_6d41bab8(v_pos, 360);
     }
     if (isdefined(v_drop)) {
-        v_ground = groundtrace(v_drop + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, 1), 8), v_drop + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+        v_ground = groundtrace(v_drop + (0, 0, 32) + (0, 0, 8), v_drop + (0, 0, 32) + (0, 0, -100000), 0, self)[#"position"];
         v_normal = getnavmeshfacenormal(v_drop, 32);
         var_55ab02db = function_c1fa62a2(v_angles, v_normal);
         e_goo = util::spawn_model("p8_zm_whi_goop_puddle_01", v_ground, var_55ab02db);
@@ -404,7 +403,6 @@ function private start_step_3() {
 function private function_473f437() {
     self endon(#"death", #"stop_think");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition("evt_rgun_frame_putback", (-223, -1658, -178));
         if (function_18a1849f(s_notify.e_who)) {
@@ -484,7 +482,6 @@ function private function_7015dc35(e_player) {
 function private function_2ac1278b() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (function_18a1849f(e_player)) {

@@ -92,7 +92,7 @@ function private function_89769800(params, unitrigger, b_start, var_c060d2c8) {
         if (distance2dsquared(torigin, porigin) > radius_sq) {
             return false;
         }
-    } else if (!isdefined(trigger) || !trigger istouching(self, vectorscale((1, 1, 1), 10))) {
+    } else if (!isdefined(trigger) || !trigger istouching(self, (10, 10, 10))) {
         return false;
     }
     return true;
@@ -171,9 +171,7 @@ function function_48098d30(player, params) {
 function private function_f8b39299(player, params, var_c060d2c8) {
     b_waited = 0;
     if (!isdefined(self)) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         if (!(isdefined(b_waited) && b_waited)) {
             b_waited = 1;
             waitframe(1);
@@ -203,9 +201,7 @@ function private function_f8b39299(player, params, var_c060d2c8) {
             b_waited = 1;
             waitframe(1);
             if (!isdefined(self)) {
-                /#
-                    assertmsg("<unknown string>");
-                #/
+                assertmsg("<unknown string>");
                 if (!(isdefined(b_waited) && b_waited)) {
                     b_waited = 1;
                     waitframe(1);
@@ -246,9 +242,7 @@ function private function_f8b39299(player, params, var_c060d2c8) {
         waitframe(1);
     }
     if (!isdefined(self)) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         if (!(isdefined(b_waited) && b_waited)) {
             b_waited = 1;
             waitframe(1);
@@ -265,7 +259,6 @@ function private function_f8b39299(player, params, var_c060d2c8) {
 function private function_4335011a(player, params, var_c060d2c8) {
     self thread function_48098d30(player, params);
     self thread function_f8b39299(player, params, var_c060d2c8);
-    retval = undefined;
     retval = self waittill(#"progress_succeed", #"progress_failed");
     if (retval._notify == "progress_succeed") {
         return true;

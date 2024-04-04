@@ -8,22 +8,6 @@
 class cct_recon_melee_vip : cluielem {
 
     // Namespace cct_recon_melee_vip/ct_recon_melee_vip
-    // Params 0, eflags: 0x8
-    // Checksum 0x704df030, Offset: 0x1a8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x7888bdf, Offset: 0x290
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_recon_melee_vip/ct_recon_melee_vip
     // Params 1, eflags: 0x0
     // Checksum 0x5bc4ae03, Offset: 0x258
     // Size: 0x2c

@@ -42,8 +42,8 @@ function __main__() {
 // Size: 0xe4
 function function_6fcc4908(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval && isdefined(self)) {
-        v_up = vectorscale((1, 0, 0), 360);
-        v_forward = vectorscale((0, 0, 1), 360);
+        v_up = (360, 0, 0);
+        v_forward = (0, 0, 360);
         origin = self gettagorigin("j_spinelower");
         if (!isdefined(origin)) {
             origin = self.origin;
@@ -58,8 +58,8 @@ function function_6fcc4908(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xc4
 function function_3e362ad8(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        v_up = vectorscale((1, 0, 0), 360);
-        v_forward = vectorscale((0, 0, 1), 360);
+        v_up = (360, 0, 0);
+        v_forward = (0, 0, 360);
         playfx(localclientnum, "zm_weapons/fx8_equip_homunc_spawn", self.origin, v_forward, v_up);
         self playsound(localclientnum, #"hash_21206f1b7fb27f81");
     }

@@ -164,9 +164,7 @@ function function_82ca1565(spawnpoint, gametype) {
     case #"bounty":
         return (isdefined(spawnpoint.bounty) && spawnpoint.bounty);
     default:
-        /#
-            assertmsg("<unknown string>" + gametype + "<unknown string>" + spawnpoint.origin[0] + "<unknown string>" + spawnpoint.origin[1] + "<unknown string>" + spawnpoint.origin[2]);
-        #/
+        assertmsg("<unknown string>" + gametype + "<unknown string>" + spawnpoint.origin[0] + "<unknown string>" + spawnpoint.origin[1] + "<unknown string>" + spawnpoint.origin[2]);
         break;
     }
     return false;
@@ -376,9 +374,7 @@ function addspawns() {
     clearspawnpoints("fallback");
     if (level.teambased) {
         if (!isdefined(level.supportedspawntypes)) {
-            /#
-                println("<unknown string>");
-            #/
+            println("<unknown string>");
             addsupportedspawnpointtype("tdm");
         }
         function_68312709();
@@ -698,12 +694,8 @@ function spawnplayer() {
         draft::assign_remaining_players(self);
     }
     role = self player_role::get();
-    /#
-        assert(!loadout::function_87bcb1b() || globallogic_utils::isvalidclass(self.curclass));
-    #/
-    /#
-        assert(player_role::is_valid(role));
-    #/
+    assert(!loadout::function_87bcb1b() || globallogic_utils::isvalidclass(self.curclass));
+    assert(player_role::is_valid(role));
     self.pers[#"momentum_at_spawn_or_game_end"] = isdefined(self.pers[#"momentum"]) ? self.pers[#"momentum"] : 0;
     if (loadout::function_87bcb1b()) {
         self loadout::function_53b62db1(self.curclass);
@@ -791,9 +783,7 @@ function spawnplayer() {
     #/
     setdvar(#"scr_selecting_location", "");
     if (gamestate::is_game_over()) {
-        /#
-            assert(!level.intermission);
-        #/
+        assert(!level.intermission);
         self player::freeze_player_for_round_end();
     }
     self util::set_lighting_state();
@@ -835,25 +825,19 @@ function function_3ee5119e() {
         foreach (player in team_players) {
             if (player != self && isalive(player)) {
                 self.spectatorteam = player.team;
-                /#
-                    println("<unknown string>" + player.team + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>" + player.name + "<unknown string>");
-                #/
+                println("<unknown string>" + player.team + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>" + player.name + "<unknown string>");
                 return;
             }
         }
         foreach (player in team_players) {
             if (player != self && player.spectatorteam != #"invalid") {
                 self.spectatorteam = player.spectatorteam;
-                /#
-                    println("<unknown string>" + player.spectatorteam + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>" + player.name + "<unknown string>");
-                #/
+                println("<unknown string>" + player.spectatorteam + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>" + player.name + "<unknown string>");
                 return;
             }
         }
         self.spectatorteam = self.team;
-        /#
-            println("<unknown string>" + self.spectatorteam + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>");
-        #/
+        println("<unknown string>" + self.spectatorteam + "<unknown string>" + self.name + "<unknown string>" + self.team + "<unknown string>");
     }
 }
 
@@ -1155,17 +1139,13 @@ function showspawnmessage() {
 // Size: 0x1f4
 function spawnclient(timealreadypassed) {
     pixbeginevent(#"spawnclient");
-    /#
-        assert(isdefined(self.team));
-    #/
-    /#
-        assert(!loadout::function_87bcb1b() || globallogic_utils::isvalidclass(self.curclass));
-    #/
+    assert(isdefined(self.team));
+    assert(!loadout::function_87bcb1b() || globallogic_utils::isvalidclass(self.curclass));
     if (!self mayspawn() && !(isdefined(self.usedresurrect) && self.usedresurrect)) {
         currentorigin = self.origin;
         currentangles = self.angles;
         self showspawnmessage();
-        self thread [[ level.spawnspectator ]](currentorigin + vectorscale((0, 0, 1), 60), currentangles);
+        self thread [[ level.spawnspectator ]](currentorigin + (0, 0, 60), currentangles);
         pixendevent();
         return;
     }
@@ -1207,7 +1187,7 @@ function waitandspawnclient(timealreadypassed) {
         }
         if (var_821200bb > 0) {
             hud_message::setlowermessage(#"hash_7d1a0e5bd191fce", var_821200bb);
-            self thread respawn_asspectator(self.origin + vectorscale((0, 0, 1), 60), self.angles);
+            self thread respawn_asspectator(self.origin + (0, 0, 60), self.angles);
             spawnedasspectator = 1;
             wait(var_821200bb);
         }
@@ -1234,7 +1214,7 @@ function waitandspawnclient(timealreadypassed) {
             }
         }
         if (!spawnedasspectator) {
-            spawnorigin = self.origin + vectorscale((0, 0, 1), 60);
+            spawnorigin = self.origin + (0, 0, 60);
             spawnangles = self.angles;
             if (isdefined(level.useintermissionpointsonwavespawn) && [[ level.useintermissionpointsonwavespawn ]]() == 1) {
                 spawnpoint = spawning::get_random_intermission_point();
@@ -1257,7 +1237,7 @@ function waitandspawnclient(timealreadypassed) {
     if (!level.playerforcerespawn && self.hasspawned && !wavebased && !self.wantsafespawn && !level.playerqueuedrespawn) {
         hud_message::setlowermessage(game.strings[#"press_to_spawn"]);
         if (!spawnedasspectator) {
-            self thread respawn_asspectator(self.origin + vectorscale((0, 0, 1), 60), self.angles);
+            self thread respawn_asspectator(self.origin + (0, 0, 60), self.angles);
         }
         spawnedasspectator = 1;
         self waitrespawnorsafespawnbutton();
@@ -1315,7 +1295,7 @@ function waitinspawnqueue() {
     if (!level.ingraceperiod && !level.usestartspawns) {
         currentorigin = self.origin;
         currentangles = self.angles;
-        self thread [[ level.spawnspectator ]](currentorigin + vectorscale((0, 0, 1), 60), currentangles);
+        self thread [[ level.spawnspectator ]](currentorigin + (0, 0, 60), currentangles);
         self waittill(#"queue_respawn");
     }
 }

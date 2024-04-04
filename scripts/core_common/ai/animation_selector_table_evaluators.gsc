@@ -33,9 +33,7 @@ function testfunction(entity, animations) {
 // Size: 0x19e
 function private function_aa7530df(entity, animation) {
     pixbeginevent(#"evaluator_checkanimationagainstgeo");
-    /#
-        assert(isactor(entity));
-    #/
+    assert(isactor(entity));
     forwarddir = anglestoforward(entity.angles);
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
@@ -68,9 +66,7 @@ function private evaluatejukeblockedanimations(entity, animations) {
 // Size: 0x22e
 function private evaluator_checkanimationagainstgeo(entity, animation) {
     pixbeginevent(#"evaluator_checkanimationagainstgeo");
-    /#
-        assert(isactor(entity));
-    #/
+    assert(isactor(entity));
     localdeltahalfvector = getmovedelta(animation, 0, 0.5, entity);
     midpoint = entity localtoworldcoords(localdeltahalfvector);
     midpoint = (midpoint[0], midpoint[1], entity.origin[2]);
@@ -99,9 +95,7 @@ function private evaluator_checkanimationagainstgeo(entity, animation) {
 // Size: 0x11e
 function private evaluator_checkanimationendpointagainstgeo(entity, animation) {
     pixbeginevent(#"evaluator_checkanimationendpointagainstgeo");
-    /#
-        assert(isactor(entity));
-    #/
+    assert(isactor(entity));
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
     endpoint = (endpoint[0], endpoint[1], entity.origin[2]);
@@ -119,18 +113,14 @@ function private evaluator_checkanimationendpointagainstgeo(entity, animation) {
 // Size: 0x1ce
 function private evaluator_checkanimationforovershootinggoal(entity, animation) {
     pixbeginevent(#"evaluator_checkanimationforovershootinggoal");
-    /#
-        assert(isactor(entity));
-    #/
+    assert(isactor(entity));
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
     animdistsq = lengthsquared(localdeltavector);
     if (entity haspath()) {
         startpos = entity.origin;
         goalpos = entity.pathgoalpos;
-        /#
-            assert(isdefined(goalpos));
-        #/
+        assert(isdefined(goalpos));
         disttogoalsq = distancesquared(startpos, goalpos);
         if (animdistsq < disttogoalsq * 0.9) {
             pixendevent();
@@ -149,9 +139,7 @@ function private evaluator_checkanimationforovershootinggoal(entity, animation) 
 // Checksum 0x13a7ab2b, Offset: 0xa30
 // Size: 0xe6
 function private evaluator_checkanimationagainstnavmesh(entity, animation) {
-    /#
-        assert(isactor(entity));
-    #/
+    assert(isactor(entity));
     localdeltavector = getmovedelta(animation, 0, 1, entity);
     endpoint = entity localtoworldcoords(localdeltavector);
     if (ispointonnavmesh(endpoint, entity)) {
@@ -190,12 +178,8 @@ function private evaluator_checkanimationarrivalposition(entity, animation) {
 // Checksum 0xeae94b3d, Offset: 0xc60
 // Size: 0x194
 function private evaluator_findfirstvalidanimation(entity, animations, tests) {
-    /#
-        assert(isarray(animations), "<unknown string>");
-    #/
-    /#
-        assert(isarray(tests), "<unknown string>");
-    #/
+    assert(isarray(animations), "<unknown string>");
+    assert(isarray(tests), "<unknown string>");
     foreach (aliasanimations in animations) {
         if (aliasanimations.size > 0) {
             valid = 1;

@@ -243,48 +243,28 @@ function on_brutus_killed(params) {
 // Checksum 0xaeae119a, Offset: 0x10e8
 // Size: 0x494
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_fbb311db));
-    #/
+    assert(isscriptfunctionptr(&function_fbb311db));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_68d081058095794", &function_fbb311db);
-    /#
-        assert(isscriptfunctionptr(&function_3006441d));
-    #/
+    assert(isscriptfunctionptr(&function_3006441d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_df1d28cebbb75f6", &function_3006441d);
-    /#
-        assert(isscriptfunctionptr(&function_3bda3c55));
-    #/
+    assert(isscriptfunctionptr(&function_3bda3c55));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_d8653062b32a601", &function_3bda3c55);
-    /#
-        assert(isscriptfunctionptr(&function_20fa0d4c));
-    #/
+    assert(isscriptfunctionptr(&function_20fa0d4c));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_691307470629f20e", &function_20fa0d4c);
-    /#
-        assert(isscriptfunctionptr(&function_3536f675));
-    #/
+    assert(isscriptfunctionptr(&function_3536f675));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_526dcca6d6d76bfe", &function_3536f675);
-    /#
-        assert(isscriptfunctionptr(&brutuslockdownstub));
-    #/
+    assert(isscriptfunctionptr(&brutuslockdownstub));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"brutuslockdownstub", &brutuslockdownstub);
-    /#
-        assert(isscriptfunctionptr(&function_4ec678fe));
-    #/
+    assert(isscriptfunctionptr(&function_4ec678fe));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_643443bf9243e4ff", &function_4ec678fe);
-    /#
-        assert(isscriptfunctionptr(&function_f4a61e6a));
-    #/
+    assert(isscriptfunctionptr(&function_f4a61e6a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5800441474109ca6", &function_f4a61e6a);
     animationstatenetwork::registernotetrackhandlerfunction("hit_ground", &function_85e8940a);
     animationstatenetwork::registernotetrackhandlerfunction("locked", &brutuslockdownstub);
     animationstatenetwork::registeranimationmocomp("mocomp_purchase_lockdown@brutus", &function_14ed6be, undefined, undefined);
-    /#
-        assert(isscriptfunctionptr(&function_3c3e6f4a));
-    #/
+    assert(isscriptfunctionptr(&function_3c3e6f4a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1ba2ab8d76e1cd9b", &function_3c3e6f4a);
-    /#
-        assert(isscriptfunctionptr(&function_eb1f805));
-    #/
+    assert(isscriptfunctionptr(&function_eb1f805));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_cc119947efb49cf", &function_eb1f805);
 }
 
@@ -678,7 +658,6 @@ function private function_30afd2be(type, stub) {
 function private function_32551326() {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (!isdefined(waitresult.activator) || !zm_utility::is_player_valid(waitresult.activator) || isdefined(self.stub) && isdefined(self.stub.var_6156031a) && self.stub.var_6156031a) {
             continue;
@@ -774,7 +753,6 @@ function smoke_vo(v_pos) {
     var_55c47118 endon(#"death");
     var_55c47118 thread function_9a4a6d02();
     while (true) {
-        waitresult = undefined;
         waitresult = var_55c47118 waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
             b_played = waitresult.activator zm_audio::create_and_play_dialog(#"brutus", #"smoke_react");

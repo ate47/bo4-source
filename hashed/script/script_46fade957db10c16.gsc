@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class cmulti_stage_target_lockon : cluielem {
 
-    // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x3fc03c28, Offset: 0x218
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xd21e4499, Offset: 0x3c8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
     // Params 2, eflags: 0x1 linked
     // Checksum 0x4866878c, Offset: 0x380
     // Size: 0x3c
     function set_targetstate(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "targetState", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "targetState", value);
     }
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon
@@ -37,7 +23,7 @@ class cmulti_stage_target_lockon : cluielem {
     // Checksum 0x2ba01ba, Offset: 0x338
     // Size: 0x3c
     function set_entnum(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "entNum", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "entNum", value);
     }
 
     // Namespace cmulti_stage_target_lockon/multi_stage_target_lockon

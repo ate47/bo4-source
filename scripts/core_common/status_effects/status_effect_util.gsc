@@ -28,9 +28,7 @@ function private register_status_effect(status_effect_type) {
 // Size: 0x92
 function function_6f4eaf88(var_756fda07) {
     if (!isdefined(var_756fda07)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     if (!isdefined(var_756fda07.setype)) {
@@ -141,12 +139,8 @@ function private function_91a9db75(sourcetype, setype, namehash) {
 // Checksum 0x9c6a35eb, Offset: 0x688
 // Size: 0x83c
 function status_effect_apply(var_756fda07, weapon, applicant, isadditive, durationoverride, var_894859a2, location) {
-    /#
-        assert(isdefined(var_756fda07.setype));
-    #/
-    /#
-        assert(isdefined(var_756fda07.var_18d16a6b));
-    #/
+    assert(isdefined(var_756fda07.setype));
+    assert(isdefined(var_756fda07.var_18d16a6b));
     if (isdefined(self.registerpreparing_time_) && self.registerpreparing_time_) {
         return;
     }
@@ -275,9 +269,7 @@ function private function_47cad1aa(var_756fda07, isadditive) {
     if (isdefined(self.var_121392a1[var_18d16a6b]) && isdefined(self.var_121392a1[var_18d16a6b].duration)) {
         if (setype != 4) {
             if (isplayer(self)) {
-                /#
-                    assert(!isfloat(self.var_121392a1[var_18d16a6b].duration), "<unknown string>");
-                #/
+                assert(!isfloat(self.var_121392a1[var_18d16a6b].duration), "<unknown string>");
                 self applystatuseffect(var_756fda07.namehash, self.var_121392a1[var_18d16a6b].duration, isadditive);
             }
         }

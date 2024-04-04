@@ -376,9 +376,7 @@ function state_emped_update(params) {
     self endon(#"death");
     self endon(#"change_state");
     time = params.param0;
-    /#
-        assert(isdefined(time));
-    #/
+    assert(isdefined(time));
     util::cooldown("emped_timer", time);
     while (!util::iscooldownready("emped_timer")) {
         timeleft = max(util::getcooldownleft("emped_timer"), 0.5);

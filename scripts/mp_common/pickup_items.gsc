@@ -48,11 +48,9 @@ function start_gametype() {
     visuals = [];
     foreach (trigger in pickup_triggers) {
         visuals[0] = get_visual_for_trigger(trigger, pickup_models);
-        /#
-            assert(isdefined(visuals[0]));
-        #/
+        assert(isdefined(visuals[0]));
         visuals[0] pickup_item_init();
-        pickup_item_object = gameobjects::create_use_object(#"neutral", trigger, visuals, vectorscale((0, 0, 1), 32), #"pickup_item");
+        pickup_item_object = gameobjects::create_use_object(#"neutral", trigger, visuals, (0, 0, 32), #"pickup_item");
         pickup_item_object gameobjects::allow_use(#"any");
         pickup_item_object gameobjects::set_use_time(0);
         pickup_item_object.onuse = &on_touch;
@@ -86,7 +84,7 @@ function set_pickup_bobbing() {
 // Checksum 0x8da1bf9f, Offset: 0x550
 // Size: 0x24
 function set_pickup_rotation() {
-    self rotate(vectorscale((0, 1, 0), 175));
+    self rotate((0, 175, 0));
 }
 
 // Namespace pickup_items/pickup_items
@@ -124,7 +122,7 @@ function get_item_from_string_ammo(perks_string) {
     item_struct.name = "ammo";
     item_struct.weapon = getweapon(#"scavenger_item");
     item_struct.model = item_struct.weapon.worldmodel;
-    self.angles = vectorscale((0, 0, 1), 90);
+    self.angles = (0, 0, 90);
     self thread weapons::scavenger_think();
     return item_struct;
 }
@@ -138,7 +136,7 @@ function get_item_from_string_damage(perks_string) {
     item_struct.name = "damage";
     item_struct.damage_scale = float(perks_string);
     item_struct.model = "wpn_t7_igc_bullet_prop";
-    self.angles = vectorscale((-1, 0, 0), 45);
+    self.angles = (-45, 0, 0);
     self setscale(2);
     return item_struct;
 }
@@ -152,7 +150,7 @@ function get_item_from_string_health(perks_string) {
     item_struct.name = "health";
     item_struct.extra_health = int(perks_string);
     item_struct.model = "p7_medical_surgical_tools_syringe";
-    self.angles = vectorscale((-1, 0, 1), 45);
+    self.angles = (-45, 0, 45);
     self setscale(5);
     return item_struct;
 }

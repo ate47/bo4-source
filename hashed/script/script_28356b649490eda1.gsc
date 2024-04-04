@@ -8,27 +8,11 @@
 class cvehicleturretoverheat : cluielem {
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xb0d92252, Offset: 0x238
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cvehicleturretoverheat/vehicleturretoverheat
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x5a7082d3, Offset: 0x4a8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cvehicleturretoverheat/vehicleturretoverheat
     // Params 2, eflags: 0x1 linked
     // Checksum 0x38f34591, Offset: 0x470
     // Size: 0x30
     function set_bar_percent(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "bar_percent", value);
+        set_data(localclientnum, "bar_percent", value);
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
@@ -37,18 +21,14 @@ class cvehicleturretoverheat : cluielem {
     // Size: 0xac
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"overheat" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat
@@ -65,8 +45,8 @@ class cvehicleturretoverheat : cluielem {
     // Size: 0x68
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "bar_percent", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "bar_percent", 0);
     }
 
     // Namespace cvehicleturretoverheat/vehicleturretoverheat

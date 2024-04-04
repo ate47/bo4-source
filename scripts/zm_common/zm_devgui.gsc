@@ -242,7 +242,7 @@ function private function_2f5772bf(cmd) {
                     ai function_a57c34b7(trace[#"position"]);
                     return;
                 }
-                ai forceteleport(trace[#"position"], player.angles + vectorscale((0, 1, 0), 180));
+                ai forceteleport(trace[#"position"], player.angles + (0, 180, 0));
             }
         }
     #/
@@ -324,7 +324,7 @@ function function_38184bf8() {
                     }
                     circle(print_origin, 30, color);
                     print3d(print_origin, function_9e72a96(var_375627f0), color, 1, 0.5);
-                    print3d(print_origin + vectorscale((0, 0, -1), 10), "<unknown string>" + zone_path.cost, color, 1, 0.5);
+                    print3d(print_origin + (0, 0, -10), "<unknown string>" + zone_path.cost, color, 1, 0.5);
                     if (isdefined(zone_path.to_zone)) {
                         to_zone = level.zones[zone_path.to_zone];
                         if (isdefined(to_zone.nodes[0])) {
@@ -459,7 +459,7 @@ function function_995340b7(zone, var_87f65b00) {
             if (isdefined(var_87f65b00) && var_87f65b00) {
                 level.validation_errors_count++;
                 if (isdefined(zone.nodes) && zone.nodes.size > 0) {
-                    origin = zone.nodes[0].origin + vectorscale((0, 0, 1), 32);
+                    origin = zone.nodes[0].origin + (0, 0, 32);
                 } else {
                     origin = zone.volumes[0].origin;
                 }
@@ -2119,7 +2119,7 @@ function devgui_zombie_spawn() {
         if (isdefined(guy)) {
             guy.script_string = "<unknown string>";
             wait(0.5);
-            guy forceteleport(trace[#"position"], player.angles + vectorscale((0, 1, 0), 180));
+            guy forceteleport(trace[#"position"], player.angles + (0, 180, 0));
         }
         return guy;
     #/
@@ -2153,7 +2153,7 @@ function function_7c17d00f() {
         spawn = player.origin + forward * 100;
         guy = devgui_zombie_spawn();
         if (isdefined(guy)) {
-            guy forceteleport(spawn, player.angles + vectorscale((0, 1, 0), 180));
+            guy forceteleport(spawn, player.angles + (0, 180, 0));
         }
     #/
 }
@@ -2309,15 +2309,9 @@ function zombie_devgui_give_money() {
 // Size: 0xbc
 function zombie_devgui_take_money() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         if (self.score > 100) {
             self zm_score::player_reduce_points("<unknown string>");
             return;
@@ -2332,15 +2326,9 @@ function zombie_devgui_take_money() {
 // Size: 0x1ac
 function function_dc7312be() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         if (!self zm_utility::is_drinking()) {
             weapon = self getcurrentweapon();
             if (weapon != level.weaponnone && weapon != level.weaponzmfists && !(isdefined(weapon.isflourishweapon) && weapon.isflourishweapon)) {
@@ -2364,15 +2352,9 @@ function function_dc7312be() {
 // Size: 0xb4
 function zombie_devgui_give_xp(amount) {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         self addrankxp("<unknown string>", self.currentweapon, undefined, undefined, 1, amount / 50);
     #/
 }
@@ -2389,15 +2371,9 @@ function zombie_devgui_turn_player(index) {
         } else {
             player = players[index];
         }
-        /#
-            assert(isdefined(player));
-        #/
-        /#
-            assert(isplayer(player));
-        #/
-        /#
-            assert(isalive(player));
-        #/
+        assert(isdefined(player));
+        assert(isplayer(player));
+        assert(isalive(player));
         level.devcheater = 1;
         if (player hasperk(#"specialty_playeriszombie")) {
             println("<unknown string>");
@@ -2557,15 +2533,9 @@ function zombie_devgui_disown_equipment() {
 // Size: 0xb4
 function zombie_devgui_equipment_give(equipment) {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (zm_equipment::is_included(equipment)) {
             self zm_equipment::buy(equipment);
@@ -2582,15 +2552,9 @@ function zombie_devgui_give_placeable_mine(weapon) {
         self endon(#"disconnect");
         self notify(#"give_planted_grenade_thread");
         self endon(#"give_planted_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (!zm_loadout::is_placeable_mine(weapon)) {
             return;
@@ -2615,15 +2579,9 @@ function zombie_devgui_give_claymores() {
         self endon(#"disconnect");
         self notify(#"give_planted_grenade_thread");
         self endon(#"give_planted_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_placeable_mine())) {
             self takeweapon(self zm_loadout::get_player_placeable_mine());
@@ -2648,15 +2606,9 @@ function zombie_devgui_give_lethal(weapon) {
         self endon(#"disconnect");
         self notify(#"give_lethal_grenade_thread");
         self endon(#"give_lethal_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_lethal_grenade())) {
             self takeweapon(self zm_loadout::get_player_lethal_grenade());
@@ -2699,15 +2651,9 @@ function zombie_devgui_give_monkey() {
         self endon(#"disconnect");
         self notify(#"give_tactical_grenade_thread");
         self endon(#"give_tactical_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_tactical_grenade())) {
             self takeweapon(self zm_loadout::get_player_tactical_grenade());
@@ -2731,15 +2677,9 @@ function zombie_devgui_give_bhb() {
         self endon(#"disconnect");
         self notify(#"give_tactical_grenade_thread");
         self endon(#"give_tactical_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_tactical_grenade())) {
             self takeweapon(self zm_loadout::get_player_tactical_grenade());
@@ -2763,15 +2703,9 @@ function zombie_devgui_give_qed() {
         self endon(#"disconnect");
         self notify(#"give_tactical_grenade_thread");
         self endon(#"give_tactical_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_tactical_grenade())) {
             self takeweapon(self zm_loadout::get_player_tactical_grenade());
@@ -2795,15 +2729,9 @@ function zombie_devgui_give_dolls() {
         self endon(#"disconnect");
         self notify(#"give_tactical_grenade_thread");
         self endon(#"give_tactical_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_tactical_grenade())) {
             self takeweapon(self zm_loadout::get_player_tactical_grenade());
@@ -2827,15 +2755,9 @@ function zombie_devgui_give_emp_bomb() {
         self endon(#"disconnect");
         self notify(#"give_tactical_grenade_thread");
         self endon(#"give_tactical_grenade_thread");
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         level.devcheater = 1;
         if (isdefined(self zm_loadout::get_player_tactical_grenade())) {
             self takeweapon(self zm_loadout::get_player_tactical_grenade());
@@ -2879,15 +2801,9 @@ function zombie_devgui_invulnerable(playerindex, onoff) {
 // Size: 0x124
 function zombie_devgui_kill() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         self val::set(#"devgui_kill", "<unknown string>", 1);
         death_from = (randomfloatrange(-20, 20), randomfloatrange(-20, 20), randomfloatrange(-20, 20));
         self dodamage(self.health + 666, self.origin + death_from);
@@ -2900,15 +2816,9 @@ function zombie_devgui_kill() {
 // Size: 0x2e8
 function zombie_devgui_toggle_ammo() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         self notify(#"devgui_toggle_ammo");
         self endon(#"devgui_toggle_ammo");
         self.ammo4evah = !(isdefined(self.ammo4evah) && self.ammo4evah);
@@ -2947,15 +2857,9 @@ function zombie_devgui_toggle_ammo() {
 // Size: 0x134
 function zombie_devgui_toggle_ignore() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         if (!isdefined(self.devgui_ignoreme)) {
             self.devgui_ignoreme = 0;
         }
@@ -2977,12 +2881,8 @@ function zombie_devgui_toggle_ignore() {
 // Size: 0x6e
 function zombie_devgui_revive() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
         if (laststand::player_is_in_laststand()) {
             self notify(#"auto_revive");
         }
@@ -2995,15 +2895,9 @@ function zombie_devgui_revive() {
 // Size: 0x12c
 function zombie_devgui_give_health() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         self notify(#"devgui_health");
         self endon(#"devgui_health", #"disconnect", #"death");
         level.devcheater = 1;
@@ -3022,15 +2916,9 @@ function zombie_devgui_give_health() {
 // Size: 0x124
 function zombie_devgui_low_health() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         self notify(#"devgui_health");
         self endon(#"devgui_health", #"disconnect", #"death");
         level.devcheater = 1;
@@ -4137,7 +4025,7 @@ function zombie_draw_traversals() {
                         circle(node.origin, 16, circle_color);
                         print3d(node.origin, node.animscript, txt_color, 1, 0.5);
                         if (isdefined(node.bad_crawler_traverse) && node.bad_crawler_traverse) {
-                            print3d(node.origin + vectorscale((0, 0, -1), 12), "<unknown string>", (1, 0, 0), 1, 0.5);
+                            print3d(node.origin + (0, 0, -12), "<unknown string>", (1, 0, 0), 1, 0.5);
                         }
                     }
                 }
@@ -4185,7 +4073,7 @@ function function_e9b89aac() {
                         if (isdefined(node_region)) {
                             var_747013f8 = node_region + "<unknown string>" + node.targetname;
                         }
-                        print3d(node.origin + vectorscale((0, 0, 1), 12), var_747013f8, (0, 1, 0), 1, 1);
+                        print3d(node.origin + (0, 0, 12), var_747013f8, (0, 1, 0), 1, 1);
                     }
                 }
             }
@@ -4298,9 +4186,7 @@ function function_8817dd98() {
 function testscriptruntimeerrorassert() {
     /#
         wait(1);
-        /#
-            assert(0);
-        #/
+        assert(0);
     #/
 }
 
@@ -4471,12 +4357,12 @@ function function_b7e34647() {
             }
             foreach (zombie in zombies) {
                 if (isdefined(zombie.need_closest_player) && zombie.need_closest_player) {
-                    record3dtext("<unknown string>", zombie.origin + vectorscale((0, 0, 1), 72), (1, 0, 0));
+                    record3dtext("<unknown string>", zombie.origin + (0, 0, 72), (1, 0, 0));
                     continue;
                 }
-                record3dtext("<unknown string>", zombie.origin + vectorscale((0, 0, 1), 72), (0, 1, 0));
+                record3dtext("<unknown string>", zombie.origin + (0, 0, 72), (0, 1, 0));
                 if (isdefined(zombie.var_26f25576)) {
-                    record3dtext(gettime() - zombie.var_26f25576, zombie.origin + vectorscale((0, 0, 1), 54), (1, 1, 1));
+                    record3dtext(gettime() - zombie.var_26f25576, zombie.origin + (0, 0, 54), (1, 1, 1));
                 }
             }
             waitframe(1);
@@ -4939,7 +4825,7 @@ function function_e7321799(params) {
         target = self;
         smeansofdeath = params.smeansofdeath;
         if (smeansofdeath == "<unknown string>" || smeansofdeath == "<unknown string>") {
-            location = self.origin + vectorscale((0, 0, 1), 60);
+            location = self.origin + (0, 0, 60);
         }
         if (damage) {
             thread function_2cde0af9("<unknown string>" + damage, (1, 1, 1), location, (randomfloatrange(-1, 1), randomfloatrange(-1, 1), 2), 30);

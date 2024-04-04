@@ -97,9 +97,7 @@ function private function_7f62f098(challenge) {
 function private function_69c5df45(challenge) {
     level endon(#"hash_7646638df88a3656");
     while (true) {
-        /#
-            assert(isdefined(challenge));
-        #/
+        assert(isdefined(challenge));
         end_round = 1;
         foreach (player in getplayers()) {
             if (player.var_c957540c < challenge.kill_count) {

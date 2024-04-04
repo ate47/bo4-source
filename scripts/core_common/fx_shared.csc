@@ -70,9 +70,7 @@ function player_init(clientnum) {
 function validate(fxid, origin) {
     /#
         if (!isdefined(level._effect[fxid])) {
-            /#
-                assertmsg("<unknown string>" + fxid + "<unknown string>" + origin);
-            #/
+            assertmsg("<unknown string>" + fxid + "<unknown string>" + origin);
         }
     #/
 }

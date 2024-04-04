@@ -96,7 +96,7 @@ function snddoublejump_watcher() {
     self endon(#"death");
     while (true) {
         self waittill(#"doublejump_start");
-        trace = tracepoint(self.origin, self.origin - vectorscale((0, 0, 1), 100000));
+        trace = tracepoint(self.origin, self.origin - (0, 0, 100000));
         trace_surface_type = trace[#"surfacetype"];
         trace_origin = trace[#"position"];
         if (!isdefined(trace) || !isdefined(trace_origin)) {
@@ -216,9 +216,7 @@ function function_c9705ad4() {
 // Size: 0x58
 function snd_set_snapshot(state) {
     level._sndnextsnapshot = state;
-    /#
-        println("underwater_end" + state + "<unknown string>");
-    #/
+    println("underwater_end" + state + "<unknown string>");
     level notify(#"new_bus");
 }
 
@@ -234,12 +232,8 @@ function snd_snapshot_think() {
         if (level._sndactivesnapshot == level._sndnextsnapshot) {
             continue;
         }
-        /#
-            assert(isdefined(level._sndnextsnapshot));
-        #/
-        /#
-            assert(isdefined(level._sndactivesnapshot));
-        #/
+        assert(isdefined(level._sndnextsnapshot));
+        assert(isdefined(level._sndactivesnapshot));
         setgroupsnapshot(level._sndnextsnapshot);
         level._sndactivesnapshot = level._sndnextsnapshot;
     }
@@ -273,7 +267,7 @@ function soundrandom_thread(localclientnum, randsound) {
         }
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
-                print3d(randsound.origin, randsound.script_sound, vectorscale((0, 1, 0), 0.8), 1, 3, 45);
+                print3d(randsound.origin, randsound.script_sound, (0, 0.8, 0), 1, 3, 45);
             }
         #/
     }
@@ -327,15 +321,11 @@ function soundloopthink() {
         return;
     }
     notifyname = "";
-    /#
-        assert(isdefined(notifyname));
-    #/
+    assert(isdefined(notifyname));
     if (isdefined(self.script_string)) {
         notifyname = self.script_string;
     }
-    /#
-        assert(isdefined(notifyname));
-    #/
+    assert(isdefined(notifyname));
     started = 1;
     if (isdefined(self.script_int)) {
         started = self.script_int != 0;
@@ -481,9 +471,7 @@ function startlineemitters() {
 function startrattles() {
     rattles = struct::get_array("sound_rattle", "script_label");
     if (isdefined(rattles)) {
-        /#
-            println("<unknown string>" + rattles.size + "<unknown string>");
-        #/
+        println("<unknown string>" + rattles.size + "<unknown string>");
         delay = 0;
         for (i = 0; i < rattles.size; i++) {
             soundrattlesetup(rattles[i].script_sound, rattles[i].origin);
@@ -553,7 +541,6 @@ function function_a3010aae(ent, on_enter_payload, on_exit_payload) {
 function audio_step_trigger(localclientnum) {
     var_887fc615 = self getentitynumber();
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (!waitresult.activator trigger::ent_already_in(var_887fc615)) {
             self thread function_a3010aae(waitresult.activator, &trig_enter_audio_step_trigger, &trig_leave_audio_step_trigger);
@@ -568,7 +555,6 @@ function audio_step_trigger(localclientnum) {
 // Size: 0x78
 function audio_material_trigger(trig) {
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         self thread function_a3010aae(waitresult.activator, &trig_enter_audio_material_trigger, &trig_leave_audio_material_trigger);
     }
@@ -596,11 +582,7 @@ function trig_enter_audio_material_trigger(player) {
 function trig_leave_audio_material_trigger(player) {
     if (isdefined(self.script_label)) {
         player.inmaterialoverridetrigger--;
-        /#
-            /#
-                assert(player.inmaterialoverridetrigger >= 0);
-            #/
-        #/
+        assert(player.inmaterialoverridetrigger >= 0);
         if (player.inmaterialoverridetrigger <= 0) {
             player.audiomaterialoverride = undefined;
             player.inmaterialoverridetrigger = 0;
@@ -651,9 +633,7 @@ function trig_leave_audio_step_trigger(trigplayer) {
         trigplayer.insteptrigger = trigplayer.insteptrigger - 1;
     }
     if (trigplayer.insteptrigger < 0) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         trigplayer.insteptrigger = 0;
     }
     if (trigplayer.insteptrigger == 0) {
@@ -684,7 +664,6 @@ function thread_bump_trigger(localclientnum) {
     }
     self._localclientnum = localclientnum;
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         self thread trigger::function_thread(waitresult.activator, &trig_enter_bump, &trig_leave_bump);
     }
@@ -848,9 +827,9 @@ function debug_line_emitter() {
         /#
             if (getdvarint(#"debug_audio", 0) > 0) {
                 line(self.start, self.end, (0, 1, 0));
-                print3d(self.start, "<unknown string>", vectorscale((0, 1, 0), 0.8), 1, 3, 1);
-                print3d(self.end, "<unknown string>", vectorscale((0, 1, 0), 0.8), 1, 3, 1);
-                print3d(self.origin, self.script_sound, vectorscale((0, 1, 0), 0.8), 1, 3, 1);
+                print3d(self.start, "<unknown string>", (0, 0.8, 0), 1, 3, 1);
+                print3d(self.end, "<unknown string>", (0, 0.8, 0), 1, 3, 1);
+                print3d(self.origin, self.script_sound, (0, 0.8, 0), 1, 3, 1);
             }
             waitframe(1);
         #/
@@ -944,7 +923,6 @@ function snd_underwater(localclientnum) {
         }
     }
     while (true) {
-        underwaternotify = undefined;
         underwaternotify = self waittill(#"underwater_begin", #"underwater_end", #"swimming_begin", #"swimming_end", #"death", #"sndenduwwatcher");
         if (underwaternotify._notify == "death") {
             self underwaterend();
@@ -1145,7 +1123,6 @@ function sndrattle_server(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Size: 0x80
 function sndrattle_grenade_client() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"explode");
         level thread dorattle(waitresult.position, waitresult.weapon.soundrattlerangemin, waitresult.weapon.soundrattlerangemax);
     }
@@ -1413,7 +1390,6 @@ function sndsprintbreath(localclientnum) {
                 if (self isplayersprinting()) {
                     self thread sndbreathstart(var_63112f76);
                     self thread function_ee6d1a7f(var_dfb6f570);
-                    waitresult = undefined;
                     waitresult = self waittill(#"hash_4e899fa9b2775b4d", #"death");
                     if (waitresult._notify == "death") {
                         return;

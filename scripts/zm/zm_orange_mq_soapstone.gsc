@@ -133,7 +133,6 @@ function function_a9c8883f() {
 // Checksum 0xe52d6cc6, Offset: 0x9d8
 // Size: 0x8c
 function function_afa2f621() {
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     self playsound(#"hash_95a3e7ee778d597");
     self hide();
@@ -192,7 +191,6 @@ function function_88a86ef8(n_position) {
 function function_476d4cb5() {
     level endon(#"soapstone_placed");
     level endon(#"hash_3a8a317fc0b5e5b0");
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     if (!level.s_soapstone.is_charged) {
         self.e_stone setmodel("p8_zm_ora_soapstone_01");
@@ -232,7 +230,6 @@ function function_476d4cb5() {
 // Size: 0x118
 function function_b4ad839e() {
     level endon(#"hash_3a8a317fc0b5e5b0");
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     self.e_stone clientfield::set("soapstone_start_fx", 0);
     self.e_stone playsound(#"hash_5f8cb5b7320b0002");
@@ -286,7 +283,6 @@ function function_557d25c1() {
 function function_2b438f6f() {
     level endon(#"hash_3a8a317fc0b5e5b0");
     level endon(#"soapstone_placed");
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     if (!level.s_soapstone.is_charged) {
         self.e_stone setmodel("p8_zm_ora_soapstone_01");
@@ -327,7 +323,6 @@ function function_2b438f6f() {
 // Size: 0x118
 function function_a9511f0f() {
     level endon(#"hash_3a8a317fc0b5e5b0");
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     self.e_stone clientfield::set("soapstone_start_fx", 0);
     self.e_stone playsound(#"hash_5f8cb5b7320b0002");
@@ -347,7 +342,6 @@ function function_a9511f0f() {
 function function_9961d00() {
     level endon(#"hash_3a8a317fc0b5e5b0");
     while (!self.is_placed) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         switch (level.s_soapstone.var_d143df71) {
         case 0:

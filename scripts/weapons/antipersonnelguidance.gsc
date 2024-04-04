@@ -96,7 +96,6 @@ function event_handler[missile_fire] function_dc710809(eventstruct) {
 function aptoggleloop() {
     self endon(#"disconnect", #"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         for (weapon = waitresult.weapon; weapon.lockontype == "AP Single"; weapon = self getcurrentweapon()) {
             abort = 0;
@@ -159,9 +158,7 @@ function aplockloop(weapon) {
                     if (timepassed < locklength) {
                         continue;
                     }
-                    /#
-                        assert(isdefined(target.aptarget));
-                    #/
+                    assert(isdefined(target.aptarget));
                     target.aplockfinalized = 1;
                     target.aplocking = 0;
                     target.aplockpending = 0;

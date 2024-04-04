@@ -77,7 +77,7 @@ function event_handler[level_init] main(eventstruct) {
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_orange_weapons.csv";
-    level.var_4016a739 = vectorscale((0, 1, 0), 90);
+    level.var_4016a739 = (0, 90, 0);
     level zm_orange_challenges::init();
     level zm_orange_ee_misc::preload();
     level zm_orange_ee_dynamite::init();

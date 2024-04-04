@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class czm_towers_pap_hud : cluielem {
 
-    // Namespace czm_towers_pap_hud/zm_towers_pap_hud
-    // Params 0, eflags: 0x8
-    // Checksum 0x58440466, Offset: 0x298
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_towers_pap_hud/zm_towers_pap_hud
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xa7cf1cc, Offset: 0x528
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
     // Params 2, eflags: 0x0
     // Checksum 0x48780f9d, Offset: 0x4e0
     // Size: 0x3c
     function set_odin_acquired(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "odin_acquired", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "odin_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -37,7 +23,7 @@ class czm_towers_pap_hud : cluielem {
     // Checksum 0xb2e3eefc, Offset: 0x498
     // Size: 0x3c
     function set_zeus_acquired(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "zeus_acquired", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "zeus_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -45,7 +31,7 @@ class czm_towers_pap_hud : cluielem {
     // Checksum 0x5bee22c6, Offset: 0x450
     // Size: 0x3c
     function set_ra_acquired(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "ra_acquired", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "ra_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -53,7 +39,7 @@ class czm_towers_pap_hud : cluielem {
     // Checksum 0x343e20de, Offset: 0x408
     // Size: 0x3c
     function set_danu_acquired(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "danu_acquired", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "danu_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud

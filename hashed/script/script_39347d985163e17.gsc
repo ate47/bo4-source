@@ -153,7 +153,6 @@ function function_33e89162(mdl_weapon, var_6d4294b0) {
     mdl_weapon thread clientfield::set("powerup_fx", 2);
     mdl_weapon thread namespace_f8f28e08::function_51fd2597(1);
     mdl_weapon thread namespace_f8f28e08::pickup_timeout(undefined, undefined, max(var_6d4294b0 - 5, 5));
-    s_waitresult = undefined;
     s_waitresult = self waittilltimeout(var_6d4294b0, #"boon_weapon_picked_up");
     if (s_waitresult._notify == "boon_weapon_picked_up" && isplayer(s_waitresult.player)) {
         weapon_reward = s_waitresult.player namespace_f8f28e08::function_e2a25377(mdl_weapon.weapon.name);
@@ -189,7 +188,6 @@ function function_c99662e7(player) {
 function function_ebd0491e() {
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         player = s_waitresult.activator;
         if (!zm_utility::can_use(player, 1)) {

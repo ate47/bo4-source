@@ -660,7 +660,7 @@ function function_b2775b52() {
         case #"hash_79bf6a7491c80c7":
         case #"hash_22d9b5a7a0d9dd73":
         case #"hash_32e4c0a7619f03a9":
-            return vectorscale((1, 1, 0), 0.501961);
+            return (0.501961, 0.501961, 0);
         case #"vehicle_boct_mil_boat_pbr_wz_tan":
         case #"vehicle_boct_mil_boat_pbr_wz_grey":
         case #"vehicle_boct_mil_boat_pbr_wz_green":
@@ -956,7 +956,7 @@ function function_9cc59537() {
                                 foreach (item_type in itemlistbundle.itemlist) {
                                     foreach (var_d76a7255 in var_abc7e003) {
                                         if (item_type.itementry === var_d76a7255.itementry.name && var_d76a7255.itementry.name === items[0].itementry.name) {
-                                            print3d(point.origin + vectorscale((0, 0, 1), 18), item_type.itementry + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
+                                            print3d(point.origin + (0, 0, 18), item_type.itementry + "<unknown string>" + var_24b0b1ea, (1, 0.5, 0), 1, 0.3, 8);
                                             line(var_d76a7255.origin, point.origin, (1, 0.5, 0), 1, 0, 8);
                                         }
                                     }
@@ -987,7 +987,7 @@ function function_9cc59537() {
                                 b_failed = 1;
                                 line(close.origin, point.origin, v_color, 1, 0, 8);
                                 circle(point.origin, var_c5330f11 / 2, v_color, 0, 1, 8);
-                                print3d(point.origin + vectorscale((0, 0, 1), 24), sqrt(distancesquared(point.origin, close.origin)), v_color, 1, 0.3, 8);
+                                print3d(point.origin + (0, 0, 24), sqrt(distancesquared(point.origin, close.origin)), v_color, 1, 0.3, 8);
                             }
                         }
                         if (isdefined(itemlistbundle.supplystash) && itemlistbundle.supplystash) {
@@ -996,8 +996,8 @@ function function_9cc59537() {
                                 if (i > 2) {
                                     var_47748885 = n_width;
                                 }
-                                a_trace = bullettrace(point.origin + vectorscale((0, 0, 1), 24), v_test, 0, level.players[0]);
-                                if (distancesquared(a_trace[#"position"], point.origin + vectorscale((0, 0, 1), 24)) < var_47748885 * var_47748885 - 2 && !isdefined(a_trace[#"dynent"])) {
+                                a_trace = bullettrace(point.origin + (0, 0, 24), v_test, 0, level.players[0]);
+                                if (distancesquared(a_trace[#"position"], point.origin + (0, 0, 24)) < var_47748885 * var_47748885 - 2 && !isdefined(a_trace[#"dynent"])) {
                                     v_color = (1, 0, 0);
                                     b_failed = 1;
                                     if (var_4b82457c < 256) {
@@ -1035,7 +1035,7 @@ function function_9cc59537() {
                             if (var_4b82457c < 512) {
                                 print3d(point.origin, function_9e72a96(point.targetname), v_color, 1, 0.4, 8);
                                 if (var_4b82457c < 256 && level.players[0] util::is_player_looking_at(point.origin, 0.87, 0)) {
-                                    print3d(point.origin + vectorscale((0, 0, 1), 12), point.origin, v_color, 1, 0.3, 8);
+                                    print3d(point.origin + (0, 0, 12), point.origin, v_color, 1, 0.3, 8);
                                 }
                             }
                         }
@@ -1208,7 +1208,7 @@ function function_e8f0335f() {
             }
             v_eye = self geteye();
             v_end = v_eye + vectorscale(anglestoforward(self getplayerangles()), 1024);
-            physicstrace = physicstraceex(v_eye, v_end, vectorscale((-1, -1, -1), 0.5), vectorscale((1, 1, 1), 0.5), self, 32);
+            physicstrace = physicstraceex(v_eye, v_end, (-0.5, -0.5, -0.5), (0.5, 0.5, 0.5), self, 32);
             var_11cc451b = bullettrace(v_eye, v_end, 0, self, 0, 0);
             var_708a2754 = physicstrace;
             var_7cb887a8 = [];
@@ -1247,10 +1247,10 @@ function function_e8f0335f() {
             sphere(origin, 2, v_color);
             circle(origin, 32, v_color, 0, 1, 1);
             if (var_b3a9e916 == 2) {
-                print3d(origin + vectorscale((0, 0, 1), 8), "<unknown string>" + origin, v_color, 0.25, 1);
+                print3d(origin + (0, 0, 8), "<unknown string>" + origin, v_color, 0.25, 1);
             }
             if (b_failed) {
-                print3d(origin + vectorscale((0, 0, 1), 8), "<unknown string>", v_color, 0.85, 1);
+                print3d(origin + (0, 0, 8), "<unknown string>", v_color, 0.85, 1);
             }
         }
     #/
@@ -1278,11 +1278,11 @@ function private event_handler[event_9673dc9a] function_f9b68fd7(eventstruct) {
                 if (isdefined(dynent.var_15d44120) && dynent.var_15d44120 !== #"hash_1dcbe8021fb16344") {
                     function_a476d876(dynent.origin, dynent.angles, (1, 0.5, 0), 10);
                     if (var_91d1913b <= 768) {
-                        print3d(dynent.origin + vectorscale((0, 0, 1), 18), function_9e72a96(dynent.var_15d44120), (1, 0.5, 0), 0.9, 0.5, 10);
+                        print3d(dynent.origin + (0, 0, 18), function_9e72a96(dynent.var_15d44120), (1, 0.5, 0), 0.9, 0.5, 10);
                     }
                 }
                 if (isdefined(dynent.targetname) && var_91d1913b <= 768) {
-                    print3d(dynent.origin + vectorscale((0, 0, 1), 8), function_9e72a96(dynent.targetname), (1, 0.5, 0), 0.9, 0.5, 10);
+                    print3d(dynent.origin + (0, 0, 8), function_9e72a96(dynent.targetname), (1, 0.5, 0), 0.9, 0.5, 10);
                 }
             }
         }
@@ -1343,11 +1343,11 @@ function function_13a77bfa() {
                 radius = distance2d(influencer.origin, furthest.origin);
                 circle(influencer.origin, radius, (1, 0.752941, 0.796078), 0, 1, 12);
                 print3d(influencer.origin + (0, 0, 0), function_9e72a96(influencer.target), (1, 0.752941, 0.796078), 0.9, 4, 12);
-                print3d(influencer.origin + vectorscale((0, 0, 1), 96), spawns.size, (1, 0.752941, 0.796078), 0.9, 4, 12);
+                print3d(influencer.origin + (0, 0, 96), spawns.size, (1, 0.752941, 0.796078), 0.9, 4, 12);
                 foreach (spawn in spawns) {
                     line(influencer.origin, spawn.origin, (1, 0.752941, 0.796078), 1, 0, 12);
                     sphere(spawn.origin, 10, (1, 0.752941, 0.796078), 1, 0, 4, 12);
-                    print3d(spawn.origin + vectorscale((0, 0, 1), 12), function_9e72a96(spawn.targetname), (1, 0.752941, 0.796078), 0.9, 0.5, 12);
+                    print3d(spawn.origin + (0, 0, 12), function_9e72a96(spawn.targetname), (1, 0.752941, 0.796078), 0.9, 0.5, 12);
                 }
                 total_spawns = total_spawns + spawns.size;
                 var_ad802a37 = var_ad802a37 + (0, 28, 0);
@@ -1608,12 +1608,8 @@ function devgui_handle_player_command(playercallback, pcb_param_1, pcb_param_2) 
 // Size: 0xb4
 function private function_1880c93d() {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
         item = wz_loadouts::_get_item(#"ultimate_turret_wz_item");
         var_fa3df96 = self item_inventory::function_e66dcff5(item);
         self item_world::function_de2018e3(item, self, var_fa3df96);

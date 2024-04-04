@@ -284,7 +284,7 @@ function function_37adbd8f() {
 // Size: 0x492
 function function_1ca79c02(var_edc95125) {
     level.var_511a3f1c = getent(var_edc95125, "targetname");
-    trace = bullettrace(level.var_511a3f1c.origin, level.var_511a3f1c.origin + vectorscale((0, 0, -1), 1000), 0, self);
+    trace = bullettrace(level.var_511a3f1c.origin, level.var_511a3f1c.origin + (0, 0, -1000), 0, self);
     level.var_4d47c040 = trace[#"position"];
     level thread function_20bf9b40();
     var_133aacc1 = ct_utils::create_waypoint(#"hash_2ee615aa67beef9b", level.var_4d47c040, (0, 0, 0), #"any", undefined, 0, undefined);
@@ -537,7 +537,6 @@ function function_e1e9b6fc() {
 function function_7b0b7f0a() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.weapon) && waitresult.weapon == getweapon(#"hero_annihilator")) {
             e_player = getplayers()[0];

@@ -64,7 +64,6 @@ function function_a1aa3b85(var_3245778e, weapon) {
     }
     self thread function_c5c8d661(weapon);
     while (isdefined(self.var_f5455815) && self.var_f5455815) {
-        waitresult = undefined;
         waitresult = self waittill(#"death", #"weapon_change");
         if (!self.var_f5455815) {
             break;
@@ -109,7 +108,6 @@ function function_c5c8d661(weapon) {
         self function_d6805ff5(weapon);
     }
     while (true) {
-        ret = undefined;
         ret = self waittill(#"swimming_begin", #"swimming_end");
         switch (ret._notify) {
         case #"swimming_begin":

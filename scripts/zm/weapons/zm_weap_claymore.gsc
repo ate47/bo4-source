@@ -190,7 +190,6 @@ function claymore_detonation(e_planter) {
     }
     self.owner.placeable_mines[self.owner.placeable_mines.size] = self;
     while (true) {
-        waitresult = undefined;
         waitresult = damagearea waittill(#"trigger");
         ent = waitresult.activator;
         if (isdefined(self.owner) && ent == self.owner) {
@@ -224,7 +223,7 @@ function claymore_detonation(e_planter) {
 // Size: 0x118
 function private should_trigger_claymore(e_mine) {
     n_detonation_dot = cos(70);
-    pos = self.origin + vectorscale((0, 0, 1), 32);
+    pos = self.origin + (0, 0, 32);
     dirtopos = pos - e_mine.origin;
     objectforward = anglestoforward(e_mine.angles);
     dist = vectordot(dirtopos, objectforward);
@@ -263,7 +262,6 @@ function function_cbb2f05b(watcher) {
     self.var_18acfe18 = 0;
     self.var_966835e3 = 150;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;

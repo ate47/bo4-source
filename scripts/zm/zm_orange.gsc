@@ -536,7 +536,7 @@ function function_1f712bb1() {
 // Size: 0xc8
 function function_19a4e7cf(n_offset, var_e503dc79) {
     var_ef61bf9 = util::spawn_model("tag_origin", level.chests[var_e503dc79].origin + (0, 0, n_offset - 75));
-    var_ef61bf9.angles = level.chests[level.chest_index].angles + vectorscale((-1, 0, -1), 90);
+    var_ef61bf9.angles = level.chests[level.chest_index].angles + (-90, 0, -90);
     playfxontag(level._effect[#"hash_572a14944ad27060"], var_ef61bf9, "tag_origin");
     return var_ef61bf9;
 }
@@ -645,7 +645,6 @@ function function_681c28c9() {
 function function_30829a12() {
     level waittill(#"start_zombie_round_logic");
     exploder::exploder("fxexp_shipArtifact_powerOffFire");
-    s_notify = undefined;
     s_notify = level waittill(#"power_on2", #"hash_6f7fd3d4d070db87");
     exploder::stop_exploder("fxexp_shipArtifact_powerOffFire");
     if (s_notify._notify === "power_on2") {
@@ -653,7 +652,6 @@ function function_30829a12() {
     } else {
         exploder::exploder("fxexp_shipArtifact_powerOffDaylight");
     }
-    s_notify = undefined;
     s_notify = level waittill(#"power_on2", #"hash_6f7fd3d4d070db87");
     exploder::stop_exploder("fxexp_shipArtifact_powerOnFire");
     exploder::stop_exploder("fxexp_shipArtifact_powerOffDaylight");

@@ -384,7 +384,6 @@ function function_b93032f4() {
     }
     self endoncallback(&function_8b2d617b, #"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         attacker util::show_hit_marker(1);
@@ -457,7 +456,6 @@ function function_eb17793c() {
             dir = vectornormalize(dir);
             velocity = vectorscale(dir, 1000);
             var_9d5f453 = level.var_2a5b7055 magicgrenadeplayer(getweapon(#"eq_tripwire"), s_loc.origin, velocity);
-            waitresult = undefined;
             waitresult = var_9d5f453 waittill(#"stationary");
             var_9d5f453.hitnormal = waitresult.normal;
             var_9d5f453.hitpos = waitresult.position;
@@ -734,7 +732,7 @@ function function_6d0e5fa5() {
     self endon(#"death");
     while (true) {
         e_player = ct_utils::get_player();
-        if (!e_player ct_utils::can_see(self.origin + vectorscale((0, 0, 1), 20), 0)) {
+        if (!e_player ct_utils::can_see(self.origin + (0, 0, 20), 0)) {
             break;
         }
         waitframe(1);
@@ -851,7 +849,6 @@ function function_d2b15099(player) {
 // Size: 0xc4
 function setbomboverheatingafterweaponchange(useobject, overheated, heat) {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators");
-    waitresult = undefined;
     waitresult = self waittill(#"weapon_change");
     if (waitresult.weapon == useobject.useweapon) {
         self setweaponoverheating(overheated, heat, waitresult.weapon);
@@ -1081,7 +1078,6 @@ function function_b92c6949() {
     level.var_81db1765 = undefined;
     while (true) {
         e_player = getplayers()[0];
-        waitresult = undefined;
         waitresult = e_player waittill(#"ultimate_turret_deployed");
         level.var_81db1765 = waitresult.turret;
         e_player = getplayers()[0];
@@ -1112,7 +1108,6 @@ function function_6e98aea7() {
     self endon(#"death");
     level endon(#"combattraining_logic_finished");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"tripwire_spawn");
         level.var_204eb642 = waitresult.tripwire;
     }
@@ -1336,7 +1331,7 @@ function function_47f4423a() {
     while (true) {
         e_player = getplayers()[0];
         self.var_2925fedc = e_player.origin;
-        b_can_see = self ct_utils::can_see(e_player.origin + vectorscale((0, 0, 1), 40), 1);
+        b_can_see = self ct_utils::can_see(e_player.origin + (0, 0, 40), 1);
         if (b_can_see) {
             break;
         }
@@ -1441,7 +1436,6 @@ function function_ee509880() {
 function function_eb021db8() {
     level endon(#"combattraining_logic_finished");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"dog_spawned");
         level.e_dog = waitresult.dog;
         if (level.var_ad7c0539 < 7) {
@@ -1523,7 +1517,6 @@ function function_7a427be() {
 function function_e8009771() {
     level endon(#"combattraining_logic_finished");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"tripwire_detonation");
         var_2249999 = waitresult.entity;
         wait(0.1);

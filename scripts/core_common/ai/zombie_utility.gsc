@@ -148,9 +148,7 @@ function initanimtree(animscript) {
     if (animscript != "pain" && animscript != "death") {
         self.a.special = "none";
     }
-    /#
-        assert(isdefined(animscript), "J_Spine4");
-    #/
+    assert(isdefined(animscript), "J_Spine4");
     self.a.script = animscript;
 }
 
@@ -159,9 +157,7 @@ function initanimtree(animscript) {
 // Checksum 0xea297ae4, Offset: 0xa58
 // Size: 0xae
 function updateanimpose() {
-    /#
-        assert(self.a.movement == "<unknown string>" || self.a.movement == "<unknown string>" || self.a.movement == "<unknown string>", "<unknown string>" + self.a.pose + "<unknown string>" + self.a.movement);
-    #/
+    assert(self.a.movement == "<unknown string>" || self.a.movement == "<unknown string>" || self.a.movement == "<unknown string>", "<unknown string>" + self.a.pose + "<unknown string>" + self.a.movement);
     self.desired_anim_pose = undefined;
 }
 
@@ -312,9 +308,7 @@ function getyaw2d(org) {
 // Checksum 0xe91d1bdc, Offset: 0x1260
 // Size: 0xa2
 function absyawtoenemy() {
-    /#
-        assert(isvalidenemy(self.enemy));
-    #/
+    assert(isvalidenemy(self.enemy));
     yaw = self.angles[1] - getyaw(self.enemy.origin);
     yaw = angleclamp180(yaw);
     if (yaw < 0) {
@@ -328,9 +322,7 @@ function absyawtoenemy() {
 // Checksum 0xc2ce6f43, Offset: 0x1310
 // Size: 0xa2
 function absyawtoenemy2d() {
-    /#
-        assert(isvalidenemy(self.enemy));
-    #/
+    assert(isvalidenemy(self.enemy));
     yaw = self.angles[1] - getyaw2d(self.enemy.origin);
     yaw = angleclamp180(yaw);
     if (yaw < 0) {
@@ -517,9 +509,7 @@ function quadrantanimweights(yaw) {
     result[#"back"] = 0;
     result[#"left"] = 0;
     if (isdefined(self.alwaysrunforward)) {
-        /#
-            assert(self.alwaysrunforward);
-        #/
+        assert(self.alwaysrunforward);
         result[#"front"] = 1;
         return result;
     }
@@ -701,7 +691,7 @@ function showdebugproc(frompoint, topoint, color, printtime) {
 // Checksum 0x134d1aa9, Offset: 0x2200
 // Size: 0x54
 function showdebugline(frompoint, topoint, color, printtime) {
-    self thread showdebugproc(frompoint, topoint + vectorscale((0, 0, -1), 5), color, printtime);
+    self thread showdebugproc(frompoint, topoint + (0, 0, -5), color, printtime);
 }
 
 // Namespace zombie_utility/zombie_utility
@@ -801,12 +791,8 @@ function showlines(start, end, end2) {
 function anim_array(animarray, animweights) {
     total_anims = animarray.size;
     idleanim = randomint(total_anims);
-    /#
-        assert(total_anims);
-    #/
-    /#
-        assert(animarray.size == animweights.size);
-    #/
+    assert(total_anims);
+    assert(animarray.size == animweights.size);
     if (total_anims == 1) {
         return animarray[0];
     }
@@ -952,12 +938,8 @@ function random_weight(array) {
 // Checksum 0xb31cc30b, Offset: 0x2d20
 // Size: 0xc6
 function setfootstepeffect(name, fx) {
-    /#
-        assert(isdefined(name), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(fx), "<unknown string>");
-    #/
+    assert(isdefined(name), "<unknown string>");
+    assert(isdefined(fx), "<unknown string>");
     if (!isdefined(anim.optionalstepeffects)) {
         anim.optionalstepeffects = [];
     }
@@ -1006,9 +988,7 @@ function doesnodeallowstance(stance) {
     if (stance == "stand") {
         return !self isnodedontstand();
     }
-    /#
-        assert(stance == "<unknown string>");
-    #/
+    assert(stance == "<unknown string>");
     return !self isnodedontcrouch();
 }
 
@@ -1017,15 +997,11 @@ function doesnodeallowstance(stance) {
 // Checksum 0x3f62aefb, Offset: 0x2f48
 // Size: 0xb8
 function animarray(animname) {
-    /#
-        assert(isdefined(self.a.array));
-    #/
+    assert(isdefined(self.a.array));
     /#
         if (!isdefined(self.a.array[animname])) {
             dumpanimarray();
-            /#
-                assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
-            #/
+            assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
         }
     #/
     return self.a.array[animname];
@@ -1036,15 +1012,11 @@ function animarray(animname) {
 // Checksum 0x99276eba, Offset: 0x3008
 // Size: 0xbe
 function animarrayanyexist(animname) {
-    /#
-        assert(isdefined(self.a.array));
-    #/
+    assert(isdefined(self.a.array));
     /#
         if (!isdefined(self.a.array[animname])) {
             dumpanimarray();
-            /#
-                assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
-            #/
+            assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
         }
     #/
     return self.a.array[animname].size > 0;
@@ -1055,20 +1027,14 @@ function animarrayanyexist(animname) {
 // Checksum 0xb050849d, Offset: 0x30d0
 // Size: 0x14a
 function animarraypickrandom(animname) {
-    /#
-        assert(isdefined(self.a.array));
-    #/
+    assert(isdefined(self.a.array));
     /#
         if (!isdefined(self.a.array[animname])) {
             dumpanimarray();
-            /#
-                assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
-            #/
+            assert(isdefined(self.a.array[animname]), "<unknown string>" + animname + "<unknown string>");
         }
     #/
-    /#
-        assert(self.a.array[animname].size > 0);
-    #/
+    assert(self.a.array[animname].size > 0);
     if (self.a.array[animname].size > 1) {
         index = randomint(self.a.array[animname].size);
     } else {
@@ -1188,9 +1154,7 @@ function damagelocationisany(a, b, c, d, e, f, g, h, i, j, k, ovr) {
     if (self.damagelocation == k) {
         return true;
     }
-    /#
-        assert(!isdefined(ovr));
-    #/
+    assert(!isdefined(ovr));
     return false;
 }
 
@@ -1246,9 +1210,7 @@ function randomizeidleset() {
 // Checksum 0x7e5f1f26, Offset: 0x3760
 // Size: 0x66
 function getrandomintfromseed(intseed, intmax) {
-    /#
-        assert(intmax > 0);
-    #/
+    assert(intmax > 0);
     index = intseed % anim.randominttablesize;
     return anim.randominttable[index] % intmax;
 }
@@ -1402,9 +1364,7 @@ function function_6403cf83(zvar, team) {
 // Checksum 0x8aa26706, Offset: 0x3de8
 // Size: 0x6e
 function function_826f5e98(zvar, value) {
-    /#
-        assert(isplayer(self), "<unknown string>");
-    #/
+    assert(isplayer(self), "<unknown string>");
     if (!isdefined(self.zombie_vars)) {
         self.zombie_vars = [];
     }
@@ -1416,9 +1376,7 @@ function function_826f5e98(zvar, value) {
 // Checksum 0x8a777c3e, Offset: 0x3e60
 // Size: 0x60
 function function_73061b82(zvar) {
-    /#
-        assert(isplayer(self), "<unknown string>");
-    #/
+    assert(isplayer(self), "<unknown string>");
     if (!isdefined(self.zombie_vars)) {
         self.zombie_vars = [];
     }
@@ -1431,9 +1389,7 @@ function function_73061b82(zvar) {
 // Size: 0x302
 function spawn_zombie(spawner, target_name, spawn_point, round_number) {
     if (!isdefined(spawner)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return undefined;
     }
     while (getfreeactorcount() < 1) {
@@ -1479,15 +1435,11 @@ function spawn_zombie(spawner, target_name, spawn_point, round_number) {
             #/
             return guy;
         } else {
-            /#
-                println("<unknown string>", spawner.origin);
-            #/
+            println("<unknown string>", spawner.origin);
             return undefined;
         }
     } else {
-        /#
-            println("<unknown string>", spawner.origin);
-        #/
+        println("<unknown string>", spawner.origin);
         return undefined;
     }
     return undefined;
@@ -1519,9 +1471,7 @@ function get_desired_origin() {
         if (!isdefined(ent)) {
             ent = getnode(self.target, "targetname");
         }
-        /#
-            assert(isdefined(ent), "<unknown string>" + self.target + "<unknown string>" + self.origin);
-        #/
+        assert(isdefined(ent), "<unknown string>" + self.target + "<unknown string>" + self.origin);
         return ent.origin;
     }
     return undefined;
@@ -2150,7 +2100,6 @@ function get_current_corpse_count() {
 function zombie_gib_on_damage() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         self thread zombie_gib(waitresult.amount, waitresult.attacker, waitresult.direction, waitresult.position, waitresult.mod, waitresult.tag_name, waitresult.model_name, waitresult.part_name, waitresult.weapon);
     }
@@ -2775,12 +2724,8 @@ function autoexec init_ignore_player_handler() {
 // Checksum 0xaf6ae71c, Offset: 0x7f18
 // Size: 0x8a
 function register_ignore_player_handler(archetype, ignore_player_func) {
-    /#
-        assert(isdefined(archetype), "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level._ignore_player_handler[archetype]), "<unknown string>" + archetype + "<unknown string>");
-    #/
+    assert(isdefined(archetype), "<unknown string>");
+    assert(!isdefined(level._ignore_player_handler[archetype]), "<unknown string>" + archetype + "<unknown string>");
     level._ignore_player_handler[archetype] = ignore_player_func;
 }
 

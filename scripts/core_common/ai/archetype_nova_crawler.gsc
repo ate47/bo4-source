@@ -21,9 +21,7 @@ function autoexec init() {
 // Checksum 0x7317d21a, Offset: 0xe8
 // Size: 0x24
 function private function_32107b12() {
-    /#
-        assert(isdefined(self.ai));
-    #/
+    assert(isdefined(self.ai));
 }
 
 // Namespace archetypenovacrawler/archetype_nova_crawler

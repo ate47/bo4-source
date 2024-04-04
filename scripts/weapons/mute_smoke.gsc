@@ -45,18 +45,17 @@ function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, total
         owner stats::function_e24eec31(statweapon, #"used", 1);
     }
     owner_origin = owner.origin;
-    waitresult = undefined;
     waitresult = self waittill(#"explode", #"death");
     if (!isdefined(self)) {
         return;
     }
-    onefoot = vectorscale((0, 0, 1), 12);
+    onefoot = (0, 0, 12);
     var_16ae7522 = isdefined(waitresult.position) ? waitresult.position : self.origin;
     startpos = var_16ae7522 + onefoot;
     smokeweapon = getweapon(grenadeweaponname);
     function_3d455aca(owner, statweapon, smokeweapon, var_16ae7522, 250, totaltime, duration);
     /#
-        function_9dddd194(var_16ae7522, vectorscale((0, 0, 1), 0.9));
+        function_9dddd194(var_16ae7522, (0, 0, 0.9));
     #/
 }
 
@@ -307,7 +306,7 @@ function function_a4998ccd(grenade_origin, player_origin, weapon) {
     var_3300383 = max(isdefined(settings.var_3300383) ? settings.var_3300383 : var_a19445f ? isdefined(settings.var_ca506691) ? settings.var_ca506691 : 0 : 0, 0.1);
     var_6b0817d7 = var_a19445f ? isdefined(settings.var_7163a11a) ? settings.var_7163a11a : 0 : 0;
     /#
-        function_9dddd194(grenade_origin, vectorscale((0, 1, 0), 0.9));
+        function_9dddd194(grenade_origin, (0, 0.9, 0));
     #/
     facing_angles = self getplayerangles();
     forward = anglestoforward(facing_angles);

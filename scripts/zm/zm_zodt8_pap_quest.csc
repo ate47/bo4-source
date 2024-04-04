@@ -56,22 +56,22 @@ function pap_chunk_big_rune(localclientnum, oldval, newval, bnewent, binitialsna
     switch (newval) {
     case 2:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_711cbb6b36694a2a"], self.origin, v_forward);
-        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
+        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + (0, 0, 70));
         break;
     case 3:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_2ad6c6017f084d7a"], self.origin, v_forward);
-        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
+        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + (0, 0, 70));
         break;
     case 4:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_23bb6df1e8d8a032"], self.origin, v_forward);
-        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
+        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + (0, 0, 70));
         break;
     case 5:
         self.var_86adf17d[localclientnum] = playfx(localclientnum, level._effect[#"hash_14d2dc2c31e6dab9"], self.origin, v_forward);
-        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
+        audio::playloopat("zmb_pap_plinth_symbol_lp", self.origin + (0, 0, 70));
         break;
     case 1:
-        audio::stoploopat("zmb_pap_plinth_symbol_lp", self.origin + vectorscale((0, 0, 1), 70));
+        audio::stoploopat("zmb_pap_plinth_symbol_lp", self.origin + (0, 0, 70));
         if (isdefined(self.var_86adf17d[localclientnum])) {
             killfx(localclientnum, self.var_86adf17d[localclientnum]);
             self.var_86adf17d[localclientnum] = undefined;

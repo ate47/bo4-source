@@ -506,7 +506,6 @@ function function_5ef70b0b(e_player) {
     level endon(#"end_game");
     e_player endon(#"disconnect");
     while (true) {
-        s_info = undefined;
         s_info = self waittill(#"trigger");
         if (s_info.activator == e_player && e_player flag::get(#"flag_player_completed_all_challenges")) {
             if (e_player zm_score::can_player_purchase(2500)) {
@@ -1119,7 +1118,6 @@ function function_347214f4(e_player) {
         }
         e_player thread function_29c490cf(self);
         e_player thread function_789f4d85(self);
-        var_29b8f3d0 = undefined;
         var_29b8f3d0 = e_player waittill(#"death", #"hash_7df55853368e6305", #"left_temple");
         if (var_29b8f3d0._notify == #"hash_7df55853368e6305") {
             break;
@@ -1430,7 +1428,6 @@ function function_295948b2() {
     e_player = self;
     n_progress = 0;
     while (true) {
-        waitresult = undefined;
         waitresult = e_player waittill(#"hash_46064b6c2cb5cf20");
         if (!isdefined(e_player) || !isplayer(e_player) || !isdefined(e_player.challenge_struct) || !isdefined(e_player.challenge_struct.var_8bafcbf3)) {
             return;
@@ -1438,7 +1435,6 @@ function function_295948b2() {
         if (e_player.challenge_struct.var_8bafcbf3 < 1) {
             if (waitresult.blight_father.attacker === e_player) {
                 if (isalive(waitresult.blight_father)) {
-                    var_650f2d5e = undefined;
                     var_650f2d5e = waitresult.blight_father waittilltimeout(0.75, #"death");
                     if (var_650f2d5e._notify == #"timeout") {
                         continue;
@@ -1620,7 +1616,6 @@ function function_ea1042c6(var_986431d3, var_394c506d) {
     var_986431d3.challenge_struct = struct::get(var_986431d3.target);
     var_394c506d sethintstring(#"hash_685d7c68f4c511a7");
     while (true) {
-        s_info = undefined;
         s_info = var_986431d3 waittill(#"trigger");
         e_player = s_info.activator;
         if (isplayer(e_player)) {
@@ -1708,7 +1703,6 @@ function function_d2103a80(e_player, n_required_goal) {
     }
     while (!e_player flag::get(#"hash_6534297bbe7e180d")) {
         e_player thread function_51aa96c6(var_8efcfa9f);
-        s_info = undefined;
         s_info = self waittill(#"trigger");
         if (s_info.activator !== e_player.challenge_struct.var_25276720) {
             continue;
@@ -1805,53 +1799,53 @@ function _good_door_opened(e_player, e_trig) {
         e_player clientfield::set("force_challenge_model", 1);
         break;
     case #"full_ammo":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 6);
+        self.var_f7d17867 = (0, 0, 6);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_max_ammo";
         break;
     case #"double_points":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 6);
+        self.var_f7d17867 = (0, 0, 6);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_double_points";
         break;
     case #"insta_kill":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 12);
+        self.var_f7d17867 = (0, 0, 12);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_insta_kill";
         break;
     case #"hero_weapon_power":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 6);
+        self.var_f7d17867 = (0, 0, 6);
         self.var_14172483 = (0, 0, 0);
         self.var_3ff570f3 = "p8_zm_powerup_full_power";
         break;
     case #"bonus_points_player":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "zombie_z_money_icon";
         break;
     case #"ar_mg1909_t8":
         e_trig.var_f2e7f46a = 1;
-        self.var_f7d17867 = vectorscale((0, 0, 1), 9);
+        self.var_f7d17867 = (0, 0, 9);
         self.var_14172483 = var_50ed6de;
         break;
     case #"lmg_standard_t8":
         e_trig.var_f2e7f46a = 1;
-        self.var_f7d17867 = vectorscale((0, 0, 1), 9);
+        self.var_f7d17867 = (0, 0, 9);
         self.var_14172483 = var_50ed6de;
         break;
     case #"tr_midburst_t8":
         e_trig.var_f2e7f46a = 1;
-        self.var_f7d17867 = vectorscale((0, 0, 1), 9);
+        self.var_f7d17867 = (0, 0, 9);
         self.var_14172483 = var_50ed6de;
         break;
     case #"pistol_standard_t8_upgraded":
         e_trig.var_f2e7f46a = 1;
-        self.var_f7d17867 = vectorscale((0, 0, 1), 7);
+        self.var_f7d17867 = (0, 0, 7);
         self.var_14172483 = var_50ed6de;
         break;
     case #"lmg_spray_t8_upgraded":
         e_trig.var_f2e7f46a = 1;
-        self.var_f7d17867 = vectorscale((0, 0, 1), 7);
+        self.var_f7d17867 = (0, 0, 7);
         self.var_14172483 = var_50ed6de;
         break;
     case #"free_perk":
@@ -1859,14 +1853,14 @@ function _good_door_opened(e_player, e_trig) {
         playsoundatposition(sound, self.origin);
         var_62fef0f1 = e_player zm_perks::function_5ea0c6cf();
         if (!isdefined(var_62fef0f1)) {
-            self.var_f7d17867 = vectorscale((0, 0, -1), 40);
+            self.var_f7d17867 = (0, 0, -40);
             self.var_14172483 = (0, 90 * -1, 0);
             break;
         }
         self.var_62fef0f1 = var_62fef0f1;
         self zm_vapor_random::function_2cc4144b(var_62fef0f1);
         var_d9973a01 = anglestoforward(self.angles) * -2;
-        self.var_f7d17867 = var_d9973a01 + vectorscale((0, 0, 1), 7);
+        self.var_f7d17867 = var_d9973a01 + (0, 0, 7);
         self.var_14172483 = var_50ed6de;
         break;
     }
@@ -1905,7 +1899,6 @@ function registerlove_mountain_(e_player) {
     e_player endon(#"disconnect", #"hash_4ac0558a94ba3fd7", #"hash_5a74f9da0718c63d", #"hash_6534297bbe7e180d");
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = e_player waittill(#"perk_acquired");
         if (s_waitresult.var_16c042b8 === self.var_62fef0f1) {
             var_f26e01e4 = e_player zm_perks::function_5ea0c6cf();

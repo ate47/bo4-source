@@ -318,7 +318,7 @@ function private function_4ddddf03(placedspawnbeacon) {
 function private function_94dcc72e(&spawnlist, spawnbeacon) {
     var_df1363e1 = [];
     for (index = 0; index < spawnlist.size; index++) {
-        if (!sighttracepassed(spawnlist[index].origin + vectorscale((0, 0, 1), 72), spawnbeacon.origin + vectorscale((0, 0, 1), 70), 0, spawnbeacon)) {
+        if (!sighttracepassed(spawnlist[index].origin + (0, 0, 72), spawnbeacon.origin + (0, 0, 70), 0, spawnbeacon)) {
             array::add(var_df1363e1, index);
         }
     }
@@ -370,7 +370,7 @@ function private function_e67b6bd(player) {
     spawnbeacon clientfield::set("enemyequip", 0);
     spawnbeacon.isdisabled = 1;
     spawnbeacon setinvisibletoall();
-    spawnbeacon.origin = vectorscale((1, 1, 1), 6000);
+    spawnbeacon.origin = (6000, 6000, 6000);
     if (isdefined(spawnbeacon.var_d7cf6658)) {
         foreach (gameobject in spawnbeacon.var_d7cf6658) {
             gameobject.trigger triggerenable(0);
@@ -411,7 +411,6 @@ function function_f989dc0a(watcher, owner) {
             owner stats::function_e24eec31(spawnbeacon.weapon, #"used", 1);
         }
         spawnbeacon.var_1df612a0 = gettime();
-        waitresult = undefined;
         waitresult = spawnbeacon waittilltimeout(0.05, #"stationary");
         spawnbeacon deployable::function_dd266e08(owner);
         spawnbeacon.isdisabled = 0;

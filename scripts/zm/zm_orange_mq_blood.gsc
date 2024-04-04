@@ -133,7 +133,6 @@ function blood_think() {
     self endon("27bec720b5d077a2");
     level endon(#"end_game");
     while (!level flag::get(#"blood_waiting")) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated", #"blood_waiting");
         player = s_notify.e_who;
         if (s_notify._notify === "trigger_activated") {
@@ -302,7 +301,6 @@ function blood_move() {
         s_point = array::random(stance_any_step);
         self moveto(s_point.origin, 0.5, 0.1, 0.2);
         self.var_d0fed9fb = s_point.script_int;
-        s_result = undefined;
         s_result = self waittilltimeout(randomintrangeinclusive(4 - level.var_9e3c632e, 6 - level.var_9e3c632e), #"threshold_hit");
     }
 }
@@ -332,7 +330,6 @@ function function_9a991dc2(n_index) {
 function function_c2d403f(n_index) {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {
             if (self.b_frozen) {
@@ -406,7 +403,7 @@ function function_a4fa2df0(n_index) {
         }
         loc = array::random(var_a4cd10ea);
         var_3a253a6f = max(distance(self.origin, loc.origin) / 1000, 1);
-        self moveto(loc.origin + vectorscale((0, 0, 1), 50), var_3a253a6f, 0.2, 0.2);
+        self moveto(loc.origin + (0, 0, 50), var_3a253a6f, 0.2, 0.2);
         wait(var_3a253a6f);
         self.b_near = 0;
         while (!self.b_near) {

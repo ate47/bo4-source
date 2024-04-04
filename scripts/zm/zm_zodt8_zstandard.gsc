@@ -257,9 +257,7 @@ function function_84139b27() {
     foreach (s_defend_area in level.a_s_defend_areas) {
         foreach (str_index in s_defend_area.a_str_next_defend) {
             str_index = hash(str_index);
-            /#
-                assert(isinarray(a_str_keys, str_index), str_index + "<unknown string>");
-            #/
+            assert(isinarray(a_str_keys, str_index), str_index + "<unknown string>");
         }
     }
 }
@@ -454,7 +452,6 @@ function function_dcf7377c(n_round_number) {
 function function_a18a0aba() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_4ffec9c5f552e6fc");
         if (isdefined(s_waitresult.e_door) && isdefined(s_waitresult.e_door.script_flag)) {
             switch (s_waitresult.e_door.script_flag) {

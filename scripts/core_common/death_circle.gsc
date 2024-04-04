@@ -82,9 +82,7 @@ function function_5e412e4a(var_ae6c2bbe) {
 // Checksum 0x41c40c30, Offset: 0x980
 // Size: 0x5e
 function function_d81873aa(delaysec) {
-    /#
-        assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
-    #/
+    assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
     delaysec = delaysec * level.var_1f8ac687;
     level.var_a425ed89 = delaysec;
 }
@@ -94,9 +92,7 @@ function function_d81873aa(delaysec) {
 // Checksum 0x50a7bbce, Offset: 0x9e8
 // Size: 0x5e
 function function_114f128a(delaysec) {
-    /#
-        assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
-    #/
+    assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
     delaysec = delaysec * level.var_1f8ac687;
     level.var_eb37cf2e = delaysec;
 }
@@ -106,9 +102,7 @@ function function_114f128a(delaysec) {
 // Checksum 0x33096311, Offset: 0xa50
 // Size: 0x330
 function add_circle(var_3b9f4abf, mapwidth = 0, mapheight = 0, radius = 0, damage = 0, damageinterval = 0, waitsec = 0, scalesec = 0, var_227b1773 = 0, var_42682706 = 0, var_83c673f5 = 0, var_55ad5e4 = 0, var_c3bf31b = 0, var_18fa918d = 0) {
-    /#
-        assert(radius <= 150000, "<unknown string>" + "<unknown string>" + radius + "<unknown string>" + 150000);
-    #/
+    assert(radius <= 150000, "<unknown string>" + "<unknown string>" + radius + "<unknown string>" + 150000);
     var_55ad5e4 = int(var_55ad5e4 * 1000);
     var_c3bf31b = int(var_c3bf31b * 1000);
     waitsec = waitsec * level.var_326f5774;
@@ -189,7 +183,7 @@ function private function_9bae34b3(var_b0b91d4, var_8e3c3c5b, oobtriggers) {
         if (distsq > maxdistsq) {
             continue;
         }
-        trace = groundtrace(origin + vectorscale((0, 0, 1), 10000), origin + vectorscale((0, 0, -1), 10000), 0, undefined);
+        trace = groundtrace(origin + (0, 0, 10000), origin + (0, 0, -10000), 0, undefined);
         if (trace[#"fraction"] >= 1 || trace[#"surfacetype"] == "water" || trace[#"surfacetype"] == "watershallow") {
             continue;
         }
@@ -826,9 +820,7 @@ function function_27d5d349() {
         return;
     }
     for (i = 0; i < level.deathcircles.size; i++) {
-        /#
-            assert(i < 14, "<unknown string>");
-        #/
+        assert(i < 14, "<unknown string>");
         circle = level.deathcircles[i];
         match_record::function_7a93acec(#"death_circle", i, #"origin", circle.origin);
         match_record::set_stat(#"death_circle", i, #"radius", int(circle.radius));
@@ -999,7 +991,7 @@ function private debug_loop() {
                     }
                     host = util::gethostplayer();
                     if (isdefined(host)) {
-                        trace = groundtrace(host.origin, host.origin + vectorscale((0, 0, -1), 10000), 0, undefined);
+                        trace = groundtrace(host.origin, host.origin + (0, 0, -10000), 0, undefined);
                         var_95341914 = (0, 1, 0);
                         if (trace[#"fraction"] < 1) {
                             switch (trace[#"surfacetype"]) {
@@ -1115,9 +1107,7 @@ function private simulate(var_1baf9723) {
     /#
         sim_count = 1000;
         var_9a165bb5 = 100;
-        /#
-            assert(var_1baf9723);
-        #/
+        assert(var_1baf9723);
         var_f3ca456b = [];
         for (i = 0; i < sim_count; i++) {
             devgui_shuffle();
@@ -1154,7 +1144,7 @@ function private draw_circle(circle, index, var_36b41a8, color, groundtrace) {
         var_e96493f7 = 30 * var_36b41a8;
         origin = circle.origin;
         if (groundtrace) {
-            trace = groundtrace(origin + vectorscale((0, 0, 1), 10000), origin + vectorscale((0, 0, -1), 10000), 0, undefined);
+            trace = groundtrace(origin + (0, 0, 10000), origin + (0, 0, -10000), 0, undefined);
             origin = trace[#"position"];
         }
         printoffset = (0, 0, -15 * var_36b41a8);

@@ -58,7 +58,6 @@ function private function_96da6081() {
 // Size: 0x154
 function private function_aba430c2() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator) && isalive(s_result.activator) && !isdefined(s_result.activator.registerraz_locationinvalidposmenu)) {
             break;
@@ -78,7 +77,6 @@ function private function_aba430c2() {
 // Size: 0x280
 function private function_63c3fd24() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (!isalive(s_result.activator)) {
             continue;
@@ -150,7 +148,7 @@ function private function_21a979f7() {
     self endon(#"hash_53eb32eaa511640c");
     while (true) {
         if (self.angles[0] < 360) {
-            self.angles = self.angles + vectorscale((1, 0, 0), 360);
+            self.angles = self.angles + (360, 0, 0);
         }
         self rotatepitch((self.angles[0] + 180) * -1, 2);
         self waittill(#"rotatedone");
@@ -167,7 +165,6 @@ function private function_ad05f6f3() {
     self val::set(#"phono_roll", "takedamage", 1);
     self val::set(#"phono_roll", "allowdeath", 0);
     while (isdefined(self)) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             break;
@@ -238,7 +235,6 @@ function function_9ea70701() {
 function function_33864e5d() {
     s_interact = self.stub.related_parent;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (!isplayer(s_result.activator) || !isalive(s_result.activator)) {
             continue;
@@ -261,7 +257,6 @@ function function_33864e5d() {
 function function_63491fbd() {
     level endon(#"end_game");
     while (!(isdefined(level.var_9138a2) && level.var_9138a2)) {
-        s_result = undefined;
         s_result = level waittill(#"crafting_started");
         e_player = s_result.activator;
         str_zone = e_player zm_zonemgr::get_player_zone();
@@ -310,7 +305,6 @@ function function_a3a23636() {
 // Size: 0x9c
 function function_90659e2c() {
     level endon(#"end_game");
-    s_result = undefined;
     s_result = level waittill(#"hash_483503537a553500");
     if (isalive(s_result.e_player)) {
         s_result.e_player zm_audio::create_and_play_dialog(#"seer_stone", #"interact_first", undefined, 1);
@@ -323,7 +317,6 @@ function function_90659e2c() {
 // Size: 0x1ac
 function function_eb112701() {
     level endon(#"end_game");
-    s_result = undefined;
     s_result = level waittill(#"bedroom_charged", #"library_charged", #"cellar_charged");
     mdl_stone = undefined;
     switch (s_result._notify) {
@@ -349,7 +342,6 @@ function function_eb112701() {
 // Size: 0x9c
 function function_6b5b1780() {
     level endon(#"end_game");
-    s_result = undefined;
     s_result = level waittill(#"hash_43aa2c21cf191318");
     if (isalive(s_result.e_player)) {
         s_result.e_player zm_audio::create_and_play_dialog(#"seer_stone", #"location", undefined, 1);
@@ -363,7 +355,7 @@ function function_6b5b1780() {
 function function_70c90053() {
     level endon(#"end_game");
     self endon(#"death", #"flag_gazing_stone_in_use");
-    v_stone = self.origin + vectorscale((0, 0, 1), 8);
+    v_stone = self.origin + (0, 0, 8);
     while (true) {
         wait(randomintrange(27, 31));
         e_closest_player = arraygetclosest(v_stone, util::get_active_players(), 768);
@@ -593,7 +585,6 @@ function function_a3a92098() {
     self endon(#"death");
     var_39ef2390 = getent("cellar_location_vo", "targetname");
     while (true) {
-        s_result = undefined;
         s_result = var_39ef2390 waittill(#"trigger");
         if (isalive(s_result.activator) && s_result.activator === self) {
             self thread zm_audio::create_and_play_dialog(#"location_enter", #"wine_cellar");

@@ -125,7 +125,6 @@ function function_5a73ee80() {
 function private function_1e5c0d3b() {
     level endon(#"end_game");
     while (!level flag::get(#"dials_done")) {
-        s_results = undefined;
         s_results = self waittill(#"trigger_activated", #"dials_done");
         if (s_results._notify == #"dials_done") {
             return;

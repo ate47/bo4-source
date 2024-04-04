@@ -252,7 +252,6 @@ function function_2d798d9a(localclientnum, oldval, newval, bnewent, binitialsnap
             var_4cf7f9d1 = randomintrange(-64, 64);
             var_c53a4cdc = randomintrange(-64, 64);
             self moveto(self.origin + (n_x_move, var_4cf7f9d1, var_c53a4cdc), randomintrange(10, 20));
-            s_result = undefined;
             s_result = self waittill(#"movedone", #"death");
             if (s_result._notify == "death") {
                 return;
@@ -312,7 +311,7 @@ function function_c6880d07(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         self thread function_89ecbecc(localclientnum);
         level flag::set(#"hash_13dc8f128d50bada");
-        function_a1c09ed(-800 * vectorscale((0, 0, 1), 0.005));
+        function_a1c09ed(-800 * (0, 0, 0.005));
         self thread function_9ecc1074(localclientnum);
         self notify(#"hash_6aa4f28f27ab4c64");
         do {
@@ -346,7 +345,6 @@ function function_c6880d07(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x100
 function function_9ecc1074(localclientnum) {
     self endon(#"underwaterwatchbegin");
-    s_result = undefined;
     s_result = self waittill(#"underwater_begin", #"death");
     if (s_result._notify == "underwater_begin") {
         while (isalive(self)) {
@@ -379,7 +377,6 @@ function function_bcb676b9() {
     self endon(#"hash_6aa4f28f27ab4c64", #"death");
     n_val = 0.1;
     while (true) {
-        s_result = undefined;
         s_result = level waittilltimeout(20, #"hash_5010527c7518e767");
         if (isalive(self) && s_result._notify == #"hash_5010527c7518e767") {
             self function_116b95e5(#"pstfx_frost_loop", "Reveal Threshold", n_val);

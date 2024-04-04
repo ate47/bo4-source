@@ -44,7 +44,7 @@ function event_handler[level_init] main(eventstruct) {
     spawncollision("collision_clip_256x256x256", "collider", (-6016, -7016, 576), (0, 0, 0));
     spawncollision("collision_clip_256x256x256", "collider", (-6016, -7016, 472), (0, 0, 0));
     spawncollision("collision_clip_256x256x256", "collider", (-5903, -7086, 280), (0, 0, 0));
-    spawncollision("collision_clip_64x64x256", "collider", (-6045, -6933.25, 216), vectorscale((0, 1, 0), 315));
+    spawncollision("collision_clip_64x64x256", "collider", (-6045, -6933.25, 216), (0, 315, 0));
     function_2cdcf5c3();
     level thread init_gameobjects();
     level spawnkilltrigger();
@@ -83,7 +83,6 @@ function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
     }
@@ -128,7 +127,6 @@ function init_gameobjects() {
 function function_1f5fd2c5(var_20aecb28) {
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = var_20aecb28.mdl_gameobject waittill(#"gameobject_end_use_player");
         e_player = waitresult.player;
         var_20aecb28 thread function_1338d0fa(1);
@@ -157,7 +155,7 @@ function function_1338d0fa(var_60d70418) {
             unlinktraversal(node);
         }
         level.var_f5272e32 = 1;
-        neworigin = level.var_c183064a.origin + vectorscale((0, 0, 1), 128);
+        neworigin = level.var_c183064a.origin + (0, 0, 128);
         level.var_c183064a moveto(neworigin, 2.5);
         level.var_c183064a playsound("amb_silo_elev_start");
         level.var_c183064a playloopsound("amb_silo_elev_loop");
@@ -177,7 +175,7 @@ function function_1338d0fa(var_60d70418) {
             unlinktraversal(node);
         }
         level.var_f5272e32 = 1;
-        neworigin = level.var_c183064a.origin + vectorscale((0, 0, -1), 128);
+        neworigin = level.var_c183064a.origin + (0, 0, -128);
         level.var_c183064a moveto(neworigin, 2.5);
         level.var_c183064a playsound("amb_silo_elev_start");
         level.var_c183064a playloopsound("amb_silo_elev_loop");

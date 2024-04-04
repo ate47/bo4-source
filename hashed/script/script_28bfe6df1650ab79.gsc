@@ -118,9 +118,7 @@ function private function_33f0ddd3(eventstruct) {
 // Checksum 0x739397b6, Offset: 0x848
 // Size: 0x1e0
 function private function_6a8979c9() {
-    /#
-        assert(isdefined(level.var_3e2ac3b6));
-    #/
+    assert(isdefined(level.var_3e2ac3b6));
     foreach (weapon in self getweaponslist(1)) {
         if (zm_loadout::is_hero_weapon(weapon) || isdefined(weapon.isriotshield) && weapon.isriotshield) {
             self lockweapon(weapon);

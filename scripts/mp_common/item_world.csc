@@ -84,7 +84,7 @@ function private __init__() {
 function private function_3d7c12a6(localclientnum, poolsize) {
     modellist = [];
     for (i = 1; i <= poolsize; i++) {
-        model = spawn(localclientnum, vectorscale((0, 0, -1), 10000), "script_model");
+        model = spawn(localclientnum, (0, 0, -10000), "script_model");
         model function_e082e650(localclientnum, undefined, #"tag_origin", 1);
         model hide();
         model notsolid();
@@ -455,9 +455,7 @@ function private _draw(localclientnum, draworigin) {
     clientdata.modellist = [];
     var_c29769e0 = [];
     index = 0;
-    /#
-        assert(clientdata.var_89e328b4.size == level.var_c49f422c);
-    #/
+    assert(clientdata.var_89e328b4.size == level.var_c49f422c);
     for (index = 0; index < var_f4b807cb.size; index++) {
         item = var_f4b807cb[index];
         if (!isdefined(item)) {
@@ -478,12 +476,8 @@ function private _draw(localclientnum, draworigin) {
     waitframe(1);
     arrayremovevalue(clientdata.var_89e328b4, undefined, 0);
     waitframe(1);
-    /#
-        assert(clientdata.var_89e328b4.size + clientdata.modellist.size == level.var_c49f422c);
-    #/
-    /#
-        assert(clientdata.var_89e328b4.size >= var_c29769e0.size);
-    #/
+    assert(clientdata.var_89e328b4.size + clientdata.modellist.size == level.var_c49f422c);
+    assert(clientdata.var_89e328b4.size >= var_c29769e0.size);
     for (index = 0; index < var_c29769e0.size && index < clientdata.var_89e328b4.size; index++) {
         item = var_c29769e0[index];
         model = clientdata.var_89e328b4[index];
@@ -518,9 +512,7 @@ function private _draw(localclientnum, draworigin) {
         }
     }
     waitframe(1);
-    /#
-        assert(clientdata.var_89e328b4.size - index + clientdata.modellist.size == level.var_c49f422c);
-    #/
+    assert(clientdata.var_89e328b4.size - index + clientdata.modellist.size == level.var_c49f422c);
     while (index < clientdata.var_89e328b4.size) {
         model = clientdata.var_89e328b4[index];
         model hide();
@@ -534,9 +526,7 @@ function private _draw(localclientnum, draworigin) {
     }
     clientdata.var_89e328b4 = undefined;
     waitframe(1);
-    /#
-        assert(clientdata.modellist.size == level.var_c49f422c);
-    #/
+    assert(clientdata.modellist.size == level.var_c49f422c);
     if (getdvarint(#"hash_220f360a2cc8359a", 1)) {
         var_b8db3f93 = arraysortclosest(level.item_spawn_drops, draworigin, undefined, maxdist);
         foreach (item in var_b8db3f93) {
@@ -808,9 +798,7 @@ function private function_9160538(localclientnum, eventtype, eventdata, var_c5a6
         function_d2f95c1a(localclientnum, vehicleentnum, var_2ccf7a1c);
         break;
     default:
-        /#
-            assertmsg("<unknown string>" + eventtype);
-        #/
+        assertmsg("<unknown string>" + eventtype);
         break;
     }
 }
@@ -1113,9 +1101,7 @@ function private function_5cbe24ea(&dest, &source, &order) {
 // Checksum 0x47abbede, Offset: 0x5408
 // Size: 0xa70
 function private function_43d3ebe1(&items) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (items.size <= 1) {
         return items;
     }
@@ -1636,9 +1622,7 @@ function private function_48ca0bbb(localclientnum) {
 // Checksum 0xf1b6abcb, Offset: 0x7ba8
 // Size: 0x162
 function private function_94db1536(localclientnum, origin, angles, maxdist = undefined) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     clientdata = function_a7e98a1a(localclientnum);
     forward = vectornormalize(anglestoforward(angles));
     if (!isdefined(maxdist)) {
@@ -1670,9 +1654,7 @@ function private function_c5b6693a() {
 // Checksum 0xf1d1fee9, Offset: 0x7d98
 // Size: 0x17c
 function private function_7c84312d(localclientnum, origin, angles) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     clientdata = function_a7e98a1a(localclientnum);
     while (isdefined(clientdata.var_a4ad122e) && clientdata.var_a4ad122e) {
         waitframe(1);
@@ -1834,12 +1816,8 @@ function function_963d3f6e() {
 // Checksum 0xf77e1038, Offset: 0x8778
 // Size: 0xc8
 function function_73436347(itemgroup, networkid) {
-    /#
-        assert(isarray(itemgroup));
-    #/
-    /#
-        assert(isint(networkid));
-    #/
+    assert(isarray(itemgroup));
+    assert(isint(networkid));
     for (index = 0; index < itemgroup.size; index++) {
         item = itemgroup[index];
         if (isdefined(item) && item.networkid === networkid) {
@@ -1854,9 +1832,7 @@ function function_73436347(itemgroup, networkid) {
 // Checksum 0xf7052ec1, Offset: 0x8848
 // Size: 0x94
 function function_d223645e(localclientnum, vehicle) {
-    /#
-        assert(isdefined(vehicle));
-    #/
+    assert(isdefined(vehicle));
     if (!isdefined(vehicle) || !isvehicleoccupied(localclientnum, vehicle)) {
         return;
     }
@@ -1869,9 +1845,7 @@ function function_d223645e(localclientnum, vehicle) {
 // Checksum 0x1e7bdce0, Offset: 0x88e8
 // Size: 0x21c
 function function_a4886b1e(localclientnum, networkid, model) {
-    /#
-        assert(isdefined(model));
-    #/
+    assert(isdefined(model));
     if (!isdefined(model)) {
         return;
     }

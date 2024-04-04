@@ -8,27 +8,11 @@
 class cfull_screen_movie : cluielem {
 
     // Namespace cfull_screen_movie/full_screen_movie
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x8a3213f, Offset: 0x3b8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cfull_screen_movie/full_screen_movie
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xb1e92033, Offset: 0x858
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cfull_screen_movie/full_screen_movie
     // Params 2, eflags: 0x1 linked
     // Checksum 0x99db496b, Offset: 0x820
     // Size: 0x30
     function set_moviekey(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "movieKey", value);
+        set_data(localclientnum, "movieKey", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -36,7 +20,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0xe353861d, Offset: 0x7e8
     // Size: 0x30
     function registerplayer_callout_traversal(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "skippable", value);
+        set_data(localclientnum, "skippable", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -44,7 +28,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x570d7d89, Offset: 0x7b0
     // Size: 0x30
     function set_playoutromovie(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "playOutroMovie", value);
+        set_data(localclientnum, "playOutroMovie", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -52,7 +36,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0xb255d71a, Offset: 0x778
     // Size: 0x30
     function set_additive(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "additive", value);
+        set_data(localclientnum, "additive", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -60,7 +44,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0xe7b811cb, Offset: 0x740
     // Size: 0x30
     function set_looping(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "looping", value);
+        set_data(localclientnum, "looping", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -68,7 +52,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x4afb6c5b, Offset: 0x708
     // Size: 0x30
     function set_showblackscreen(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "showBlackScreen", value);
+        set_data(localclientnum, "showBlackScreen", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -76,7 +60,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0xf88e0bb3, Offset: 0x6d0
     // Size: 0x30
     function set_moviename(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "movieName", value);
+        set_data(localclientnum, "movieName", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -93,13 +77,13 @@ class cfull_screen_movie : cluielem {
     // Size: 0x104
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "movieName", #"");
-        [[ self ]]->set_data(localclientnum, "showBlackScreen", 0);
-        [[ self ]]->set_data(localclientnum, "looping", 0);
-        [[ self ]]->set_data(localclientnum, "additive", 0);
-        [[ self ]]->set_data(localclientnum, "playOutroMovie", 0);
-        [[ self ]]->set_data(localclientnum, "skippable", 0);
-        [[ self ]]->set_data(localclientnum, "movieKey", #"");
+        set_data(localclientnum, "movieName", #"");
+        set_data(localclientnum, "showBlackScreen", 0);
+        set_data(localclientnum, "looping", 0);
+        set_data(localclientnum, "additive", 0);
+        set_data(localclientnum, "playOutroMovie", 0);
+        set_data(localclientnum, "skippable", 0);
+        set_data(localclientnum, "movieKey", #"");
     }
 
     // Namespace cfull_screen_movie/full_screen_movie

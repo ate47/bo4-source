@@ -85,7 +85,6 @@ function on_player_connect() {
 function function_3f8da82c() {
     self endon(#"disconnect");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         if (s_notify.weapon === level.w_hand_charon_uncharged) {
             self zm_hero_weapon::show_hint(level.w_hand_charon, #"hash_3ce2314ad3d39939");
@@ -225,7 +224,7 @@ function is_valid_target(e_target, n_range) {
     if (isdefined(e_target.var_131a4fb0) && e_target.var_131a4fb0) {
         return false;
     }
-    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 32), 0.3, 1, self))) {
+    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 32), 0.3, 1, self))) {
         return true;
     }
     if (isdefined(e_target.fake_death) && e_target.fake_death) {
@@ -238,7 +237,7 @@ function is_valid_target(e_target, n_range) {
         return false;
     }
     var_c060d2c8 = !(isdefined(level.var_58f509b6) && level.var_58f509b6);
-    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 28), 0.9, var_c060d2c8, self)) {
+    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 28), 0.9, var_c060d2c8, self)) {
         return false;
     }
     return true;
@@ -345,7 +344,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
                     if (isdefined(v_target)) {
                         v_end = v_target + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 8) {
-                            v_end = v_target + vectorscale((0, 0, 1), 8);
+                            v_end = v_target + (0, 0, 8);
                         }
                     }
                 }
@@ -554,7 +553,7 @@ function function_dd7bc108(weapon) {
     if (isdefined(self.var_b1224954)) {
         self.var_b1224954 delete();
     }
-    self.var_79e746a9 = util::spawn_model("tag_origin", var_330f37da, vectorscale((-1, 0, 0), 90));
+    self.var_79e746a9 = util::spawn_model("tag_origin", var_330f37da, (-90, 0, 0));
     if (isdefined(self.var_79e746a9)) {
         self.var_b1224954 = spawn("trigger_radius_new", var_330f37da, 512 | 1, 100, 60);
         if (isdefined(self.var_b1224954)) {
@@ -628,7 +627,6 @@ function function_249b5556(n_damage) {
     self endon(#"death");
     self.var_b1224954 endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self.var_b1224954 waittill(#"trigger");
         if (isdefined(s_result.activator)) {
             if (!isplayer(s_result.activator)) {
@@ -724,8 +722,8 @@ function function_31d8c58() {
     self clientfield::set("" + #"hash_25691c415a4aea4c", 1);
     var_f9d1df1d = vectornormalize(anglestoforward(self.angles));
     mdl_tag = util::spawn_model("tag_origin", self.origin, self.angles);
-    mdl_tag.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, -1, 0), 90));
-    mdl_tag.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + vectorscale((0, 1, 0), 90));
+    mdl_tag.var_58b95 = util::spawn_model("tag_origin", anglestoright(self.angles) * 8 + self.origin + var_f9d1df1d * 6, self.angles + (0, -90, 0));
+    mdl_tag.var_31436e10 = util::spawn_model("tag_origin", anglestoright(self.angles) * -6 + self.origin + var_f9d1df1d * 6, self.angles + (0, 90, 0));
     if (isdefined(mdl_tag)) {
         mdl_tag thread scene::play(#"aib_vign_cust_zm_red_zmb_ww_drggd_dwn_00", self);
         mdl_tag thread function_8a38ce84();

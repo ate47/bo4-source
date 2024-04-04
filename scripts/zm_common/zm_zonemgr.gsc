@@ -28,9 +28,7 @@ function autoexec __init__system__() {
 // Checksum 0xb90db1fa, Offset: 0x318
 // Size: 0xec
 function __init__() {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level flag::init("zones_initialized");
     level.zones = [];
     level.zone_flags = [];
@@ -170,9 +168,7 @@ function get_zone_magic_boxes(zone_name) {
         return undefined;
     }
     zone = level.zones[zone_name];
-    /#
-        assert(isdefined(zone_name));
-    #/
+    assert(isdefined(zone_name));
     return zone.magic_boxes;
 }
 
@@ -185,9 +181,7 @@ function get_zone_zbarriers(zone_name) {
         return undefined;
     }
     zone = level.zones[zone_name];
-    /#
-        assert(isdefined(zone_name));
-    #/
+    assert(isdefined(zone_name));
     return zone.zbarriers;
 }
 
@@ -393,9 +387,7 @@ function zone_init(zone_name, zone_tag) {
     if (isdefined(level.zones[zone_name])) {
         return;
     }
-    /#
-        println("<unknown string>" + zone_name);
-    #/
+    println("<unknown string>" + zone_name);
     level.zones[zone_name] = spawnstruct();
     zone = level.zones[zone_name];
     zone.name = zone_name;
@@ -421,35 +413,27 @@ function zone_init(zone_name, zone_tag) {
                 println("<unknown string>" + zone_name + "<unknown string>" + node.origin[0] + "<unknown string>" + node.origin[1] + "<unknown string>" + node.origin[2] + "<unknown string>");
             }
         }
-        /#
-            assert(!var_a44786e4);
-        #/
+        assert(!var_a44786e4);
     #/
     level.zone_nodes = arraycombine(level.zone_nodes, zone.nodes, 0, 0);
     var_34065104 = array("inner_zigzag_radius", "outer_zigzag_radius", "zigzag_distance_min", "zigzag_distance_max", "zigzag_activation_distance", "zigzag_enabled");
     foreach (node in zone.nodes) {
         foreach (override_name in var_34065104) {
             if (isdefined(node.(override_name))) {
-                /#
-                    assert(!isdefined(zone.(override_name)), "<unknown string>" + override_name + "<unknown string>" + zone_name);
-                #/
+                assert(!isdefined(zone.(override_name)), "<unknown string>" + override_name + "<unknown string>" + zone_name);
                 zone.(override_name) = node.(override_name);
             }
         }
     }
     zone.volumes = [];
     volumes = getentarray(zone_name, "targetname");
-    /#
-        println("<unknown string>" + volumes.size + "<unknown string>" + zone.nodes.size);
-    #/
+    println("<unknown string>" + volumes.size + "<unknown string>" + zone.nodes.size);
     for (i = 0; i < volumes.size; i++) {
         if (volumes[i].classname == "info_volume") {
             zone.volumes[zone.volumes.size] = volumes[i];
         }
     }
-    /#
-        assert(isdefined(zone.volumes[0]) || isdefined(zone.nodes[0]), "<unknown string>" + zone_name);
-    #/
+    assert(isdefined(zone.volumes[0]) || isdefined(zone.nodes[0]), "<unknown string>" + zone_name);
     /#
         zone.total_spawn_count = 0;
         zone.round_spawn_count = 0;
@@ -607,9 +591,7 @@ function reinit_zone_spawners() {
 // Checksum 0xb47743d, Offset: 0x2808
 // Size: 0x324
 function enable_zone(zone_name) {
-    /#
-        assert(isdefined(level.zones) && isdefined(level.zones[zone_name]), "<unknown string>");
-    #/
+    assert(isdefined(level.zones) && isdefined(level.zones[zone_name]), "<unknown string>");
     if (level.zones[zone_name].is_enabled) {
         return;
     }
@@ -659,9 +641,7 @@ function make_zone_adjacent(main_zone_name, adj_zone_name, flag_name) {
         }
         return;
     }
-    /#
-        assert(!isarray(flag_name), "<unknown string>");
-    #/
+    assert(!isarray(flag_name), "<unknown string>");
     adj_zone = main_zone.adjacent_zones[adj_zone_name];
     size = adj_zone.flags.size;
     adj_zone.flags_do_or_check = 1;
@@ -860,37 +840,27 @@ function door_close_disconnect(flag_name) {
 // Checksum 0x7308f1de, Offset: 0x3768
 // Size: 0xa58
 function manage_zones(initial_zone) {
-    /#
-        assert(isdefined(initial_zone), "<unknown string>");
-    #/
+    assert(isdefined(initial_zone), "<unknown string>");
     deactivate_initial_barrier_goals();
     level.player_zone_found = 1;
     zone_choke = 0;
     spawn_points = zm_gametype::get_player_spawns_for_gametype();
     for (i = 0; i < spawn_points.size; i++) {
-        /#
-            assert(isdefined(spawn_points[i].script_noteworthy), "<unknown string>");
-        #/
+        assert(isdefined(spawn_points[i].script_noteworthy), "<unknown string>");
         spawn_points[i].locked = 1;
     }
     if (isdefined(level.zone_manager_init_func)) {
         [[ level.zone_manager_init_func ]]();
     }
-    /#
-        println("<unknown string>" + initial_zone.size);
-    #/
+    println("<unknown string>" + initial_zone.size);
     if (isarray(initial_zone)) {
-        /#
-            println("<unknown string>" + initial_zone[0]);
-        #/
+        println("<unknown string>" + initial_zone[0]);
         for (i = 0; i < initial_zone.size; i++) {
             zone_init(initial_zone[i]);
             enable_zone(initial_zone[i]);
         }
     } else {
-        /#
-            println("<unknown string>" + initial_zone);
-        #/
+        println("<unknown string>" + initial_zone);
         zone_init(initial_zone);
         enable_zone(initial_zone);
     }
@@ -1245,8 +1215,7 @@ function private function_8a9003ae() {
             }
             sphere_color = (1, 0, 0);
             line_color = (1, 0, 0);
-            zone_text = zone.name + "
-" + var_4b0b7fff;
+            zone_text = zone.name + "\n" + var_4b0b7fff;
             if (isdefined(player.zone_name)) {
                 var_a4808c85 = getarraykeys(zone.adjacent_zones);
                 if (player.zone_name == zone.name) {
@@ -1284,12 +1253,8 @@ function private function_8a9003ae() {
 // Checksum 0x56b59371, Offset: 0x54a8
 // Size: 0x19c
 function function_54fc7938(player_ent, var_5d02daa5) {
-    /#
-        assert(isplayer(player_ent));
-    #/
-    /#
-        assert(isentity(var_5d02daa5) || ishash(var_5d02daa5) || isstring(var_5d02daa5));
-    #/
+    assert(isplayer(player_ent));
+    assert(isentity(var_5d02daa5) || ishash(var_5d02daa5) || isstring(var_5d02daa5));
     if (isplayer(player_ent)) {
         ent_number = player_ent getentitynumber();
         if (isentity(var_5d02daa5)) {

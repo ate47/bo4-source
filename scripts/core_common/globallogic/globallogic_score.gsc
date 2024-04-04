@@ -86,7 +86,6 @@ function private function_f0d51d49(projectile, weapon) {
     if (!isdefined(scoreevents.var_aa14d757)) {
         return;
     }
-    var_2a7ea9a6 = undefined;
     var_2a7ea9a6 = projectile waittilltimeout(10, #"death");
     if (var_2a7ea9a6._notify != "timeout") {
         scoreevents::processscoreevent(scoreevents.var_aa14d757, self, undefined, weapon);
@@ -185,9 +184,7 @@ function function_969ea48d(var_ba01256c, weapon) {
 // Size: 0xee
 function function_52ca9649(event) {
     if (!isdefined(level.scoreinfo[event])) {
-        /#
-            println("<unknown string>" + event);
-        #/
+        println("<unknown string>" + event);
         return 0;
     }
     if (!isdefined(self.var_19f577f)) {
@@ -544,7 +541,6 @@ function private function_d68ae402(inflictor, meansofdeath, victim, attacker, sc
     if (!isdefined(attacker.multikills) || !isdefined(attacker.multikills[var_ac4c1])) {
         return;
     }
-    waitresult = undefined;
     waitresult = attacker waittilltimeout(4, #"death", #"team_changed");
     if (var_ac4c1 == #"frag_grenade" || var_ac4c1 == #"eq_molotov" || var_ac4c1 == #"hatchet") {
         if (attacker.multikills[var_ac4c1].kills >= 2) {
@@ -862,9 +858,7 @@ function function_c1e9b86b(weapon, callback) {
 // Checksum 0x121e5649, Offset: 0x3bd8
 // Size: 0x19e
 function function_d3ca3608(eventname) {
-    /#
-        assert(isdefined(eventname));
-    #/
+    assert(isdefined(eventname));
     if (!isdefined(level.scoreinfo[eventname]) || !isdefined(self) || !isplayer(self)) {
         return;
     }

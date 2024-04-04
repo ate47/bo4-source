@@ -254,9 +254,7 @@ function init_upgrade() {
 // Checksum 0x3f2b4d36, Offset: 0x1700
 // Size: 0x5a
 function get_hint(equipment) {
-    /#
-        assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
-    #/
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
     return level.zombie_equipment[equipment].hint;
 }
 
@@ -265,9 +263,7 @@ function get_hint(equipment) {
 // Checksum 0x45c40936, Offset: 0x1768
 // Size: 0x5a
 function get_howto_hint(equipment) {
-    /#
-        assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
-    #/
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
     return level.zombie_equipment[equipment].howto_hint;
 }
 
@@ -276,9 +272,7 @@ function get_howto_hint(equipment) {
 // Checksum 0x6f7fb347, Offset: 0x17d0
 // Size: 0x5a
 function get_icon(equipment) {
-    /#
-        assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
-    #/
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
     return level.zombie_equipment[equipment].hint_icon;
 }
 
@@ -287,9 +281,7 @@ function get_icon(equipment) {
 // Checksum 0x56329eba, Offset: 0x1838
 // Size: 0x5a
 function get_notify_strings(equipment) {
-    /#
-        assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
-    #/
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
     return level.zombie_equipment[equipment].notify_strings;
 }
 
@@ -298,9 +290,7 @@ function get_notify_strings(equipment) {
 // Checksum 0x62127ed3, Offset: 0x18a0
 // Size: 0xce
 function add_to_trigger_list(equipment) {
-    /#
-        assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
-    #/
+    assert(isdefined(level.zombie_equipment[equipment]), equipment.name + "<unknown string>");
     level.zombie_equipment[equipment].triggers[level.zombie_equipment[equipment].triggers.size] = self;
     level.zombie_equipment[equipment].models[level.zombie_equipment[equipment].models.size] = getent(self.target, "targetname");
 }
@@ -311,7 +301,6 @@ function add_to_trigger_list(equipment) {
 // Size: 0x1c4
 function equipment_spawn_think() {
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (player zm_utility::in_revive_trigger() || player zm_utility::is_drinking()) {
@@ -377,9 +366,7 @@ function take(equipment = self get_player_equipment()) {
     if (equipment == self getcurrentweapon()) {
         current_weapon = 1;
     }
-    /#
-        println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
-    #/
+    println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
     notify_strings = get_notify_strings(equipment);
     if (isdefined(self.current_equipment_active[equipment]) && self.current_equipment_active[equipment]) {
         self.current_equipment_active[equipment] = 0;
@@ -417,9 +404,7 @@ function give(equipment) {
     if (self has_player_equipment(equipment)) {
         return;
     }
-    /#
-        println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
-    #/
+    println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
     curr_weapon = self getcurrentweapon();
     curr_weapon_was_curr_equipment = self is_player_equipment(curr_weapon);
     self take();
@@ -442,9 +427,7 @@ function buy(equipment) {
     if (isstring(equipment)) {
         equipment = getweapon(equipment);
     }
-    /#
-        println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
-    #/
+    println("<unknown string>" + self.name + "<unknown string>" + getweaponname(equipment) + "<unknown string>");
     if (isdefined(self.current_equipment) && equipment != self.current_equipment && self.current_equipment != level.weaponnone) {
         self take(self.current_equipment);
     }
@@ -464,7 +447,6 @@ function slot_watcher(equipment) {
     self endon(#"kill_equipment_slot_watcher", #"disconnect");
     notify_strings = get_notify_strings(equipment);
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         prev_weapon = waitresult.last_weapon;
         curr_weapon = waitresult.weapon;
@@ -655,7 +637,6 @@ function show_hint_text(text, show_for_time = 3.2, font_scale = 1.25, ypos = 220
     }
     level.zm_hint_text zm_hint_text::set_text(self, text);
     level.zm_hint_text zm_hint_text::set_state(self, #"visible");
-    time = undefined;
     time = self waittilltimeout(show_for_time, #"hide_equipment_hint_text", #"death", #"disconnect");
     if (isdefined(time) && isdefined(self) && level.zm_hint_text zm_hint_text::is_open(self)) {
         level.zm_hint_text zm_hint_text::set_state(self, #"defaultstate");

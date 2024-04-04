@@ -39,17 +39,11 @@ function autoexec __init__system__() {
 // Checksum 0xb28bdd9a, Offset: 0x2c8
 // Size: 0x29c
 function __init__() {
-    /#
-        assert(isscriptfunctionptr(&function_29c22852));
-    #/
+    assert(isscriptfunctionptr(&function_29c22852));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4ead7642034f30f7", &function_29c22852);
-    /#
-        assert(isscriptfunctionptr(&function_33b29495));
-    #/
+    assert(isscriptfunctionptr(&function_33b29495));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3d7ced75f59bb519", &function_33b29495);
-    /#
-        assert(isscriptfunctionptr(&function_27a1a846));
-    #/
+    assert(isscriptfunctionptr(&function_27a1a846));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6e9be4be56cd06d3", &function_27a1a846);
     animationstatenetwork::registernotetrackhandlerfunction("nova_crawler_melee", &function_99ac548f);
     animationstatenetwork::registernotetrackhandlerfunction("nova_crawler_explosion", &function_272fa9b5);

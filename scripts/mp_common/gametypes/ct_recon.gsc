@@ -309,7 +309,6 @@ function function_78a1b9ef() {
 function function_2015250b() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.mod) && waitresult.mod == "MOD_MELEE_WEAPON_BUTT") {
             e_player = getplayers(#"allies")[0];

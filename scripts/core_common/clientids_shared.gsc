@@ -39,8 +39,6 @@ function on_player_connect() {
         self.clientid = level.clientid;
         level.clientid++;
     }
-    /#
-        println("<unknown string>" + self.name + "<unknown string>" + self.clientid);
-    #/
+    println("<unknown string>" + self.name + "<unknown string>" + self.clientid);
 }
 

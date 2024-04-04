@@ -30,7 +30,6 @@ function function_aaef50a() {
 function function_263a039() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"projectile_impact");
         self clientfield::increment("sndRattle", 1);
         scoreevents::processscoreevent(#"hash_5814e5b2ee30cc5a", self, undefined, waitresult.weapon);

@@ -8,27 +8,11 @@
 class cct_shared_aar : cluielem {
 
     // Namespace cct_shared_aar/ct_shared_aar
-    // Params 0, eflags: 0x8
-    // Checksum 0x458129f0, Offset: 0x330
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_aar/ct_shared_aar
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x86fa6254, Offset: 0x970
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_shared_aar/ct_shared_aar
     // Params 2, eflags: 0x0
     // Checksum 0xcf225402, Offset: 0x938
     // Size: 0x30
     function set_medalthresholds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "medalThresholds", value);
+        set_data(localclientnum, "medalThresholds", value);
     }
 
     // Namespace cct_shared_aar/ct_shared_aar
@@ -36,7 +20,7 @@ class cct_shared_aar : cluielem {
     // Checksum 0x1ea2a59b, Offset: 0x900
     // Size: 0x30
     function set_missionresultmsg(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "missionResultMsg", value);
+        set_data(localclientnum, "missionResultMsg", value);
     }
 
     // Namespace cct_shared_aar/ct_shared_aar
@@ -44,7 +28,7 @@ class cct_shared_aar : cluielem {
     // Checksum 0x2315508b, Offset: 0x8c8
     // Size: 0x30
     function set_besttimemilliseconds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "bestTimeMilliseconds", value);
+        set_data(localclientnum, "bestTimeMilliseconds", value);
     }
 
     // Namespace cct_shared_aar/ct_shared_aar
@@ -52,7 +36,7 @@ class cct_shared_aar : cluielem {
     // Checksum 0xd5a20ee6, Offset: 0x890
     // Size: 0x30
     function set_timemilliseconds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "timeMilliseconds", value);
+        set_data(localclientnum, "timeMilliseconds", value);
     }
 
     // Namespace cct_shared_aar/ct_shared_aar
@@ -61,58 +45,54 @@ class cct_shared_aar : cluielem {
     // Size: 0x2dc
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"success_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"hash_e4c570778eda419" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"fail" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"fail_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"win_gold" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"win_silver" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
         if (#"win_bronze" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
+            set_data(localclientnum, "_state", 7);
             return;
         }
         if (#"hash_18174a43e0ca3b90" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
+            set_data(localclientnum, "_state", 8);
             return;
         }
         if (#"hash_3327faf4ae535f2b" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
+            set_data(localclientnum, "_state", 9);
             return;
         }
         if (#"hash_32ceb5e1ecc00d78" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 10);
+            set_data(localclientnum, "_state", 10);
             return;
         }
         if (#"hash_71b423d13c228d59" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 11);
+            set_data(localclientnum, "_state", 11);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_aar/ct_shared_aar
@@ -129,11 +109,11 @@ class cct_shared_aar : cluielem {
     // Size: 0xcc
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "timeMilliseconds", 0);
-        [[ self ]]->set_data(localclientnum, "bestTimeMilliseconds", 0);
-        [[ self ]]->set_data(localclientnum, "missionResultMsg", #"");
-        [[ self ]]->set_data(localclientnum, "medalThresholds", #"");
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "timeMilliseconds", 0);
+        set_data(localclientnum, "bestTimeMilliseconds", 0);
+        set_data(localclientnum, "missionResultMsg", #"");
+        set_data(localclientnum, "medalThresholds", #"");
     }
 
     // Namespace cct_shared_aar/ct_shared_aar

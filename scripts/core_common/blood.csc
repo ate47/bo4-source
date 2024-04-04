@@ -102,7 +102,7 @@ function private update_lightbar(localclientnum) {
             return;
         }
         if (self.stage2amount == 1) {
-            setcontrollerlightbarcolorpulsing(localclientnum, vectorscale((1, 0, 0), 0.8), 1200);
+            setcontrollerlightbarcolorpulsing(localclientnum, (0.8, 0, 0), 1200);
             return;
         }
         if ((!sessionmodeiscampaigngame() || codegetuimodelclientfield(self, "playerAbilities.inRange")) && getgadgetpower(localclientnum) == 1) {
@@ -478,9 +478,7 @@ function private player_base_health() {
 // Checksum 0x5da76a88, Offset: 0x2080
 // Size: 0x13a
 function private function_55d01d42() {
-    /#
-        assert(self function_700ca4f5());
-    #/
+    assert(self function_700ca4f5());
     character_index = self getcharacterbodytype();
     fields = getcharacterfields(character_index, currentsessionmode());
     if (isdefined(fields) && (isdefined(fields.digitalblood) ? fields.digitalblood : 0)) {
@@ -785,9 +783,7 @@ function private function_dd830dee() {
     if (sessionmodeiswarzonegame()) {
         level.blood.scriptbundle = getscriptbundle("wz_blood_settings");
     }
-    /#
-        assert(isdefined(level.blood.scriptbundle));
-    #/
+    assert(isdefined(level.blood.scriptbundle));
     if (!isdefined(level.blood.var_e9d8aaf5)) {
         level.blood.var_e9d8aaf5 = isdefined(level.blood.scriptbundle.var_e9d8aaf5) ? level.blood.scriptbundle.var_e9d8aaf5 : 0;
     }

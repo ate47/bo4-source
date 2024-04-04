@@ -87,7 +87,6 @@ function private function_50e46434() {
         return;
     }
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hash_751ac3ddacb1c548", #"between_round_over");
         if (s_result._notify == "between_round_over" && level.round_number > 15) {
             return;
@@ -115,7 +114,6 @@ function private function_863d6212() {
         return;
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_4c8edf52fbfca691");
         if (self flag::get(#"ww_combat_active") || !isdefined(s_result.var_e0ae28d)) {
             continue;
@@ -140,7 +138,6 @@ function private function_103e6827() {
         return;
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_175b1370e662293a");
         if (self flag::get(#"ww_combat_active")) {
             continue;
@@ -165,7 +162,6 @@ function private function_3c39c720() {
         return;
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_4969a839c4e666dc");
         if (self flag::get(#"ww_combat_active")) {
             continue;
@@ -215,7 +211,6 @@ function private function_74846734() {
         return;
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"start_beaming");
         if (self flag::get(#"ww_combat_active")) {
             continue;
@@ -262,7 +257,6 @@ function private function_8828b419(var_c34665fc) {
 function private function_84d102f2() {
     self endon(#"disconnect", #"hash_5766f147327163d1");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hash_4fb1eb2c137a7955", #"hash_1e2d6c34f734996b");
         if (s_result._notify == #"hash_4fb1eb2c137a7955") {
             if (s_result.e_player !== self) {
@@ -310,7 +304,6 @@ function private function_b3786a8a() {
 function private function_f31369ae() {
     e_player = undefined;
     while (isalive(self)) {
-        s_result = undefined;
         s_result = self waittill(#"damage", #"death");
         if ((s_result.weapon === getweapon(#"zhield_zpear_dw") || s_result.weapon === getweapon(#"zhield_zpear_turret")) && isplayer(s_result.attacker)) {
             if (!isdefined(e_player)) {

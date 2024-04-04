@@ -45,9 +45,7 @@ function register_deployable(weapon, var_c0064c29, var_94b4fa08 = undefined, pla
     if (weapon.name == "#none") {
         return;
     }
-    /#
-        assert(weapon.name != "<unknown string>");
-    #/
+    assert(weapon.name != "<unknown string>");
     level._deployable_weapons[weapon.statindex] = spawnstruct();
     level._deployable_weapons[weapon.statindex].var_159652c0 = &function_6654310c;
     level._deployable_weapons[weapon.statindex].var_9f2c21ea = var_c0064c29;
@@ -75,9 +73,7 @@ function function_209fda28(weapon) {
 // Checksum 0x5fb94fd2, Offset: 0x480
 // Size: 0x2c
 function function_84fa8d39(weapon) {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
 }
 
 // Namespace deployable/deployable
@@ -85,9 +81,7 @@ function function_84fa8d39(weapon) {
 // Checksum 0x7c4ba5b4, Offset: 0x4b8
 // Size: 0x4c
 function function_cf538621(weapon) {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     self clientfield::set_to_player("gameplay_allows_deploy", 1);
 }
 
@@ -242,7 +236,7 @@ function private function_831707e8(player, deployable_weapon) {
     if (function_54267517(player.origin)) {
         return false;
     }
-    traceresults = bullettrace(player.origin + vectorscale((0, 0, 1), 10), player.origin + vectorscale((0, 0, -1), 10), 0, player);
+    traceresults = bullettrace(player.origin + (0, 0, 10), player.origin + (0, 0, -10), 0, player);
     if (isdefined(traceresults[#"entity"])) {
         entity = traceresults[#"entity"];
         if (!function_db9eb027(entity)) {
@@ -276,18 +270,10 @@ function private function_27476e09(deployable_weapon, sethintstring = 0) {
     } else {
         results = [[ var_ac12dd4b ]](self);
     }
-    /#
-        assert(isdefined(results));
-    #/
-    /#
-        assert(isdefined(results.isvalid));
-    #/
-    /#
-        assert(isdefined(results.origin));
-    #/
-    /#
-        assert(isdefined(results.angles));
-    #/
+    assert(isdefined(results));
+    assert(isdefined(results.isvalid));
+    assert(isdefined(results.origin));
+    assert(isdefined(results.angles));
     if (!isdefined(results.waterdepth)) {
         results.waterdepth = 0;
     }
@@ -562,7 +548,7 @@ function function_54d27855(client_pos, client_angles, var_36baa3f1, previs_weapo
     var_5130f5dd = var_caa96e8a && var_a7bfb && (!var_e76d3149 || var_68e91c5c) && !var_ae7d780d;
     if (var_5130f5dd && !(isdefined(previs_weapon.var_33d50507) && previs_weapon.var_33d50507)) {
         var_e3c2e9c6 = var_5adff8ce + (0, 0, 1) * 30;
-        var_cc9ea9b = physicstrace(var_36baa3f1, var_e3c2e9c6, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), ignore_entity);
+        var_cc9ea9b = physicstrace(var_36baa3f1, var_e3c2e9c6, (-16, -16, -16), (16, 16, 16), ignore_entity);
         var_5130f5dd = var_cc9ea9b[#"fraction"] == 1;
     }
     results.isvalid = var_5130f5dd;
@@ -592,7 +578,6 @@ function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {
             array::add(self.var_19fde5b7, waitresult.projectile);

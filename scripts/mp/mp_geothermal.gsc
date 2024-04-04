@@ -40,39 +40,39 @@ function event_handler[level_init] main(eventstruct) {
 // Checksum 0xf255d182, Offset: 0x3e0
 // Size: 0x8bc
 function function_89088577() {
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1220.5, 631, 449.5), vectorscale((0, 1, 0), 46.3611));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1323.5, 697, 449.5), vectorscale((0, 1, 0), 68.4599));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1442.5, 740, 449.5), vectorscale((0, 1, 0), 65.8572));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1516, 803, 449.5), vectorscale((0, 1, 0), 41.752));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1590.5, 900.5, 443.5), vectorscale((0, 1, 0), 34.1533));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1664, 1002, 443.5), vectorscale((0, 1, 0), 37.2526));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1131.5, 719, 448.5), vectorscale((0, 1, 0), 46.3611));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1230.5, 794.5, 448.5), vectorscale((0, 1, 0), 58.86));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1319.5, 838.5, 448.5), vectorscale((0, 1, 0), 69.7592));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1426.5, 900.5, 448.5), vectorscale((0, 1, 0), 49.2579));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1506.5, 993, 448.5), vectorscale((0, 1, 0), 32.7576));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1556.5, 1070, 448.5), vectorscale((0, 1, 0), 29.8218));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1062.5, 737.5, 346.5), vectorscale((0, 1, 0), 344.159));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-1062.5, 737.5, 448.5), vectorscale((0, 1, 0), 344.159));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-640.5, 2362.5, 408.5), vectorscale((0, 1, 0), 344.159));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-611.5, 2440.5, 391.5), vectorscale((0, 1, 0), 334.157));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (-520.5, 2505.5, 391.5), vectorscale((0, 1, 0), 278.156));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (1055.5, 11, 416.5), vectorscale((0, 1, 0), 22.3607));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (937.5, 231, 415.5), vectorscale((0, 1, 0), 33.9588));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (809.5, 444, 376.5), vectorscale((0, 1, 0), 27.3577));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (752.5, 613, 331.5), vectorscale((0, 1, 0), 354.557));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (856, 751.5, 376.5), vectorscale((0, 1, 0), 305.557));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (1013.5, 798, 439.5), vectorscale((0, 1, 0), 244.957));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (1132, 662.5, 439.5), vectorscale((0, 1, 0), 209.757));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (1238, 431.5, 439.5), vectorscale((0, 1, 0), 199.757));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (1284, 185.5, 467.5), vectorscale((0, 1, 0), 181.557));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (1287, -3.5, 495.5), vectorscale((0, 1, 0), 170.956));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (1241, -113.5, 463.5), vectorscale((0, 1, 0), 143.555));
-    spawncollision("collision_physics_wall_128x128x10", "collider", (1151.5, -139, 415.5), vectorscale((0, 1, 0), 61.5545));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1220.5, 631, 449.5), (0, 46.3611, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1323.5, 697, 449.5), (0, 68.4599, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1442.5, 740, 449.5), (0, 65.8572, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1516, 803, 449.5), (0, 41.752, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1590.5, 900.5, 443.5), (0, 34.1533, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1664, 1002, 443.5), (0, 37.2526, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1131.5, 719, 448.5), (0, 46.3611, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1230.5, 794.5, 448.5), (0, 58.86, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1319.5, 838.5, 448.5), (0, 69.7592, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1426.5, 900.5, 448.5), (0, 49.2579, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1506.5, 993, 448.5), (0, 32.7576, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1556.5, 1070, 448.5), (0, 29.8218, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1062.5, 737.5, 346.5), (0, 344.159, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-1062.5, 737.5, 448.5), (0, 344.159, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-640.5, 2362.5, 408.5), (0, 344.159, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-611.5, 2440.5, 391.5), (0, 334.157, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (-520.5, 2505.5, 391.5), (0, 278.156, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (1055.5, 11, 416.5), (0, 22.3607, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (937.5, 231, 415.5), (0, 33.9588, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (809.5, 444, 376.5), (0, 27.3577, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (752.5, 613, 331.5), (0, 354.557, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (856, 751.5, 376.5), (0, 305.557, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (1013.5, 798, 439.5), (0, 244.957, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (1132, 662.5, 439.5), (0, 209.757, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (1238, 431.5, 439.5), (0, 199.757, 0));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (1284, 185.5, 467.5), (0, 181.557, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (1287, -3.5, 495.5), (0, 170.956, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (1241, -113.5, 463.5), (0, 143.555, 0));
+    spawncollision("collision_physics_wall_128x128x10", "collider", (1151.5, -139, 415.5), (0, 61.5545, 0));
     spawncollision("collision_physics_wall_256x256x10", "collider", (1141.5, 3128, 538.5), (27.9996, 22.3606, -1.60327));
     spawncollision("collision_physics_wall_256x256x10", "collider", (1041.5, 3348, 511.5), (26.8161, 18.9867, -11.8325));
     spawncollision("collision_physics_wall_256x256x10", "collider", (931.5, 3572.5, 444.5), (25.6488, 16.5897, -14.3093));
-    spawncollision("collision_physics_wall_256x256x10", "collider", (1252, 2456.5, 403), vectorscale((0, 1, 0), 353.239));
+    spawncollision("collision_physics_wall_256x256x10", "collider", (1252, 2456.5, 403), (0, 353.239, 0));
 }
 
 // Namespace mp_geothermal/mp_geothermal

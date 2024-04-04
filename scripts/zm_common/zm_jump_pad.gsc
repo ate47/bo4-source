@@ -79,7 +79,6 @@ function jump_pad_think() {
         level flag::wait_till(self.script_flag_wait);
     }
     while (isdefined(self)) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         who = waitresult.activator;
         if (isplayer(who)) {

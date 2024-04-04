@@ -221,7 +221,7 @@ function function_430edc4e(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         if (isdefined(level._effect[#"air_blast"])) {
             self.var_8eef2f82 = util::playfxontag(localclientnum, level._effect[#"air_blast"], self, "tag_origin");
-            mdl_ghost = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 20), self.angles);
+            mdl_ghost = util::spawn_model(localclientnum, "tag_origin", self.origin + (0, 0, 20), self.angles);
             mdl_ghost scene::play(#"p8_fxanim_zm_esc_blast_afterlife_seagull_ghost_bundle", "shot_1");
             mdl_ghost delete();
         }
@@ -262,7 +262,7 @@ function function_a596ea8d(localclientnum, oldval, newval, bnewent, binitialsnap
             self.var_d1f92a1c[localclientnum] = util::spawn_model(localclientnum, "tag_origin", var_704f12cc.origin, var_704f12cc.angles);
         }
         if (!isdefined(self.var_95496a89[localclientnum])) {
-            self.var_95496a89[localclientnum] = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 40), self.angles);
+            self.var_95496a89[localclientnum] = util::spawn_model(localclientnum, "tag_origin", self.origin + (0, 0, 40), self.angles);
             self.var_95496a89[localclientnum] linkto(self, "tag_origin");
         }
         self.var_86931af3[localclientnum] = level beam::launch(self.var_95496a89[localclientnum], "tag_origin", self.var_d1f92a1c[localclientnum], "tag_origin", "beam8_zm_shield_key_ray_targeted");

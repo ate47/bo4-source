@@ -260,9 +260,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
     var_a1d415ee = self.var_a1d415ee;
     if (isdefined(self.uselaststandparams) && enteredresurrect == 0) {
         self.uselaststandparams = undefined;
-        /#
-            assert(isdefined(self.laststandparams));
-        #/
+        assert(isdefined(self.laststandparams));
         if (isdefined(self.laststandparams) && (!level.teambased || !isdefined(attacker) || !isplayer(attacker) || !var_8efc9727 || var_41c4d474)) {
             einflictor = self.laststandparams.einflictor;
             attacker = self.laststandparams.attacker;
@@ -353,9 +351,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
     self.deathtime = gettime();
     self.pers[#"deathtime"] = self.deathtime;
     if (!var_41c4d474 && !var_8efc9727) {
-        /#
-            assert(isdefined(self.lastspawntime));
-        #/
+        assert(isdefined(self.lastspawntime));
         if (!isdefined(self.alivetimecurrentindex)) {
             self.alivetimecurrentindex = 0;
         }
@@ -400,9 +396,7 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         }
         self.deathcount++;
     }
-    /#
-        println("controlLowLivesEnemy" + self.clientid + "teamkillerplaylistbanpenalty" + self.deathcount);
-    #/
+    println("controlLowLivesEnemy" + self.clientid + "teamkillerplaylistbanpenalty" + self.deathcount);
     if (bledout == 0) {
         self update_killstreaks(attacker, weapon);
     }
@@ -771,14 +765,14 @@ function callback_playerkilled(einflictor, attacker, idamage, smeansofdeath, wea
         livesleft = !(level.numlives && !self.pers[#"lives"]) && !(level.numteamlives && !game.lives[self.team]);
         if (livesleft) {
             if (isdefined(level.deathcirclerespawn) && level.deathcirclerespawn) {
-                self thread [[ level.spawnspectator ]](self.origin + vectorscale((0, 0, 1), 60), self.angles);
+                self thread [[ level.spawnspectator ]](self.origin + (0, 0, 60), self.angles);
             } else {
                 function_93115f65();
             }
             return;
         }
         if (!(isdefined(self.var_686890d5) && self.var_686890d5)) {
-            self thread [[ level.spawnspectator ]](self.origin + vectorscale((0, 0, 1), 60), self.angles);
+            self thread [[ level.spawnspectator ]](self.origin + (0, 0, 60), self.angles);
         }
         return;
     } else {
@@ -922,12 +916,8 @@ function private function_93115f65() {
 // Checksum 0xfb8ad2f4, Offset: 0x44f0
 // Size: 0x37c
 function private function_caabcf70(victim, callbackparams, laststandparams, var_a1d415ee) {
-    /#
-        assert(isdefined(victim));
-    #/
-    /#
-        assert(isdefined(callbackparams));
-    #/
+    assert(isdefined(victim));
+    assert(isdefined(callbackparams));
     if (!isdefined(victim) || !isdefined(callbackparams)) {
         return;
     }
@@ -1889,7 +1879,7 @@ function private start_death_from_above_ragdoll(dir) {
         return;
     }
     self startragdoll();
-    self launchragdoll(vectorscale((0, 0, -1), 100));
+    self launchragdoll((0, 0, -100));
 }
 
 // Namespace player/player_killed

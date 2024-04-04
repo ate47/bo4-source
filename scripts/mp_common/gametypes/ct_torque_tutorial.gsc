@@ -69,7 +69,7 @@ function function_7036ef4() {
     level thread ct_utils::function_6b71f442();
     a_col_torque_tut_fin_ground = getentarray("col_torque_tut_fin_ground", "targetname");
     foreach (col_torque_tut_fin_ground in a_col_torque_tut_fin_ground) {
-        col_torque_tut_fin_ground.origin = col_torque_tut_fin_ground.origin + vectorscale((0, 0, 1), 1024);
+        col_torque_tut_fin_ground.origin = col_torque_tut_fin_ground.origin + (0, 0, 1024);
     }
     wait(1);
     foreach (var_29bfcd7c in a_col_torque_tut_fin_ground) {
@@ -1207,7 +1207,6 @@ function function_f22f1511(var_f3aa6dfe) {
     var_c3a1cb60[2] = "vox_tvoi_tutor_torq_final_1_smrt_cvr_destroy";
     var_c3a1cb60[1] = "vox_tvoi_tutor_torq_final_1_wire_destroy";
     do {
-        s_notify = undefined;
         s_notify = self waittill(#"damage", #"death");
         if (isdefined(s_notify.attacker) && s_notify.attacker.team === #"axis") {
             level notify(var_304623ae[var_f3aa6dfe]);
@@ -1340,7 +1339,6 @@ function function_1633d58c() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isdefined(s_notify.attacker) && s_notify.attacker.team == #"axis") {
             self dodamage(s_notify.amount * 0.5, s_notify.position, s_notify.attacker, s_notify.inflictor, s_notify.part_name, s_notify.mod, s_notify.flags, s_notify.weapon);
@@ -1533,7 +1531,6 @@ function function_a1692d5d() {
     self endon(#"death");
     e_player = ct_utils::get_player();
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify.attacker === e_player) {
             self flag::set("fixate_on_player");
@@ -1802,7 +1799,6 @@ function function_b2e3d55a(str_notify, var_6202642d = #"axis", var_64179396 = 1)
     level endon(#"combattraining_logic_finished", #"hash_4daf98b666a39c1d");
     e_player = ct_utils::get_player();
     e_player endon(#"death");
-    s_notify = undefined;
     s_notify = self waittill(#"death");
     var_4b3bb6d9 = isdefined(var_64179396) && var_64179396 && s_notify.attacker === e_player;
     if (!(isdefined(self.var_14dd0ac7) && self.var_14dd0ac7) && isdefined(s_notify.mod) && (!isdefined(s_notify.attacker) || s_notify.attacker.team === var_6202642d || var_4b3bb6d9)) {
@@ -1820,7 +1816,6 @@ function vo_on_damage(str_vo, var_f4b1cabb = 1, n_rest = 10, var_515667fb = #"ax
     e_player = ct_utils::get_player();
     e_player endon(#"death");
     do {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         var_17ec8061 = !isdefined(s_notify.attacker) || s_notify.attacker.team == var_515667fb;
         var_d8d43f9a = !isdefined(str_mod) || s_notify.mod === str_mod;
@@ -2062,9 +2057,7 @@ function _enemy_setup(var_1640cf17, b_ignoreall = 1, var_bab91f2 = 32, var_cde63
             break;
         }
     }
-    /#
-        assert(isdefined(s_loc), "colbounds_tut_windows_block");
-    #/
+    assert(isdefined(s_loc), "colbounds_tut_windows_block");
     self ct_utils::function_61d750d4(s_loc.origin, s_loc.angles);
     a_str_wpn = array(#"smg_standard_t8", #"ar_accurate_t8");
     self ct_bots::function_35e77034(getweapon(array::random(a_str_wpn)));
@@ -2477,7 +2470,6 @@ function function_1df46b8d(n_percentage = 0.25) {
     self endon(#"death");
     n_health_min = self.health * n_percentage;
     while (self.health > n_health_min) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify.mod == "MOD_MELEE_WEAPON_BUTT") {
             e_player = s_notify.attacker;
@@ -2569,7 +2561,6 @@ function on_smartcover_placed(newcover) {
 function function_c785404a() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         self dodamage(s_notify.amount, s_notify.position, s_notify.attacker, s_notify.inflictor, s_notify.part_name, s_notify.mod, s_notify.flags, s_notify.weapon);
     }

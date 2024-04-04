@@ -143,7 +143,6 @@ function private function_33f0ddd3(s_event) {
 function function_2d961b95() {
     self endon(#"disconnect", #"allow_ads");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         if (isalive(self)) {
             if (s_waitresult.weapon.isriotshield) {

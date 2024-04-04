@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class cspectrerisingindicator : cluielem {
 
-    // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xf992259f, Offset: 0x210
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cspectrerisingindicator/spectrerisingindicator
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xe9a390ea, Offset: 0x3c0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
     // Params 2, eflags: 0x1 linked
     // Checksum 0x1c0d9c0f, Offset: 0x378
     // Size: 0x3c
     function set_isalive(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "isAlive", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "isAlive", value);
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator
@@ -37,7 +23,7 @@ class cspectrerisingindicator : cluielem {
     // Checksum 0x1dd15873, Offset: 0x330
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "clientnum", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "clientnum", value);
     }
 
     // Namespace cspectrerisingindicator/spectrerisingindicator

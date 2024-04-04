@@ -175,9 +175,7 @@ function function_27d2e95a() {
 // Size: 0xc4
 function function_1c289498(...) {
     /#
-        /#
-            assert(vararg.size > 1);
-        #/
+        assert(vararg.size > 1);
         if (vararg.size <= 1) {
             return;
         }

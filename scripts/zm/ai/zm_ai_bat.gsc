@@ -36,22 +36,18 @@
 // Method(s) 2 Total 2
 class class_726d8173 {
 
+    var healthmultiplier;
+    var mover;
+    var origin;
+
     // Namespace class_726d8173/zm_ai_bat
     // Params 0, eflags: 0x9 linked
     // Checksum 0x45eeffaf, Offset: 0xf10
     // Size: 0x26
-    __constructor() {
-        self.origin = undefined;
-        self.mover = undefined;
-        self.healthmultiplier = undefined;
-    }
-
-    // Namespace class_726d8173/zm_ai_bat
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0xf40
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        origin = undefined;
+        mover = undefined;
+        healthmultiplier = undefined;
     }
 
 }
@@ -101,9 +97,7 @@ function function_6c223039() {
     self.fovcosine = 0;
     self.fovcosinebusy = 0;
     self.vehaircraftcollisionenabled = 1;
-    /#
-        assert(isdefined(self.scriptbundlesettings));
-    #/
+    assert(isdefined(self.scriptbundlesettings));
     self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     self.goalradius = 999999;
     self.goalheight = 512;
@@ -296,7 +290,7 @@ function function_607df9c6(ai) {
     }
     ai.var_e21c1964 = 1;
     var_cd1cfeed = ai animmappingsearch(#"hash_605e435c80f0d33b");
-    pos = physicstrace(ai.origin, ai.origin + vectorscale((0, 0, -1), 10000), vectorscale((-1, -1, -1), 2), vectorscale((1, 1, 1), 2), ai, 1);
+    pos = physicstrace(ai.origin, ai.origin + (0, 0, -10000), (-2, -2, -2), (2, 2, 2), ai, 1);
     pos = pos[#"position"];
     if (isdefined(level.var_84b2907f)) {
         level thread [[ level.var_84b2907f ]](ai);
@@ -316,7 +310,6 @@ function function_607df9c6(ai) {
 // Size: 0xd4
 function private function_1b029905() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"transformation_complete");
         if (waitresult.id === #"hash_791d597ac0457860" && isdefined(waitresult.data)) {
             newai = waitresult.new_ai[0];
@@ -332,7 +325,7 @@ function private function_1b029905() {
 // Checksum 0x31212ad8, Offset: 0x1390
 // Size: 0x2ae
 function function_1fff2d() {
-    pos = physicstrace(self.origin, self.origin + vectorscale((0, 0, -1), 10000), vectorscale((-1, -1, -1), 2), vectorscale((1, 1, 1), 2), self, 1);
+    pos = physicstrace(self.origin, self.origin + (0, 0, -10000), (-2, -2, -2), (2, 2, 2), self, 1);
     if (isdefined(pos) && isdefined(pos[#"position"]) && !isdefined(pos[#"entity"])) {
         pos = pos[#"position"];
         /#
@@ -341,7 +334,7 @@ function function_1fff2d() {
         #/
         posonnavmesh = getclosestpointonnavmesh(pos, 256, 30);
         if (isdefined(posonnavmesh)) {
-            pos = physicstrace(posonnavmesh + vectorscale((0, 0, 1), 70), posonnavmesh + vectorscale((0, 0, -1), 70), vectorscale((-1, -1, -1), 2), vectorscale((1, 1, 1), 2), self, 1);
+            pos = physicstrace(posonnavmesh + (0, 0, 70), posonnavmesh + (0, 0, -70), (-2, -2, -2), (2, 2, 2), self, 1);
             pos = pos[#"position"];
             /#
                 recordline(pos, posonnavmesh, (0, 0, 1), "<unknown string>");
@@ -382,9 +375,7 @@ function function_c48c2d66() {
         return false;
     }
     if (function_1fff2d()) {
-        /#
-            assert(isdefined(self.ai.var_15916e52));
-        #/
+        assert(isdefined(self.ai.var_15916e52));
         return true;
     }
     return false;
@@ -426,9 +417,7 @@ function private function_88d81715() {
 // Size: 0x374
 function function_47c795bc(params) {
     self endoncallback(&function_630752f6, #"death", #"state_change");
-    /#
-        assert(isdefined(self.ai.var_15916e52));
-    #/
+    assert(isdefined(self.ai.var_15916e52));
     self.ai.var_15916e52.healthmultiplier = self.var_b008e588;
     movepos = self.ai.var_15916e52.pos;
     mover = self.ai.var_15916e52.mover;
@@ -442,7 +431,7 @@ function function_47c795bc(params) {
     self asmrequestsubstate(#"hash_4bea3500eb31dd8b");
     self thread function_88d81715();
     acceleration = 0.3;
-    mover moveto(self.origin + vectorscale((0, 0, 1), 30), 0.6, acceleration);
+    mover moveto(self.origin + (0, 0, 30), 0.6, acceleration);
     mover waittill(#"movedone");
     waittime = 0.1;
     wait(waittime);

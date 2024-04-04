@@ -159,7 +159,6 @@ function watch_for_emp(actor) {
         return;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"emp_detonate");
         if (distancesquared(waitresult.position, self.origin) < waitresult.radius * waitresult.radius) {
             break;
@@ -167,7 +166,7 @@ function watch_for_emp(actor) {
     }
     self.stun_fx = 1;
     if (isdefined(level._equipment_emp_destroy_fx)) {
-        playfx(level._equipment_emp_destroy_fx, self.origin + vectorscale((0, 0, 1), 5), (0, randomfloat(360), 0));
+        playfx(level._equipment_emp_destroy_fx, self.origin + (0, 0, 5), (0, randomfloat(360), 0));
     }
     wait(0.15);
     self.attract_to_origin = 0;
@@ -252,11 +251,8 @@ function hide_owner(owner) {
         playfx(level._effect[#"human_disappears"], owner.origin);
     }
     self thread show_owner_on_attack(owner);
-    evt = undefined;
     evt = self waittill(#"explode", #"death", #"grenade_dud");
-    /#
-        println("<unknown string>" + evt._notify);
-    #/
+    println("<unknown string>" + evt._notify);
     owner notify(#"show_owner");
     owner unsetperk("specialty_immunemms");
     if (isdefined(level._effect[#"human_disappears"])) {
@@ -285,7 +281,6 @@ function proximity_detonate(owner) {
     damagearea linkto(self);
     self.damagearea = damagearea;
     while (isdefined(self)) {
-        waitresult = undefined;
         waitresult = damagearea waittill(#"trigger");
         ent = waitresult.activator;
         if (isdefined(owner) && ent == owner) {
@@ -296,7 +291,7 @@ function proximity_detonate(owner) {
         }
         self playsound(#"wpn_claymore_alert");
         dist = distance(self.origin, ent.origin);
-        radiusdamage(self.origin + vectorscale((0, 0, 1), 12), explosionradius, 1, 1, owner, "MOD_GRENADE_SPLASH", level.weaponzmcymbalmonkey);
+        radiusdamage(self.origin + (0, 0, 12), explosionradius, 1, 1, owner, "MOD_GRENADE_SPLASH", level.weaponzmcymbalmonkey);
         if (isdefined(owner)) {
             self detonate(owner);
         } else {
@@ -333,7 +328,7 @@ function player_throw_cymbal_monkey(e_grenade, num_attractors, max_attract_dist,
         clone = undefined;
         if (isdefined(level.cymbal_monkey_dual_view) && level.cymbal_monkey_dual_view) {
             e_grenade.mdl_monkey setvisibletoallexceptteam(level.zombie_team);
-            clone = zm_clone::spawn_player_clone(self, vectorscale((0, 0, -1), 999), level.cymbal_monkey_clone_weapon, undefined);
+            clone = zm_clone::spawn_player_clone(self, (0, 0, -999), level.cymbal_monkey_clone_weapon, undefined);
             e_grenade.mdl_monkey.simulacrum = clone;
             clone zm_clone::clone_animate("idle");
             clone thread clone_player_angles(self);
@@ -388,7 +383,7 @@ function player_throw_cymbal_monkey(e_grenade, num_attractors, max_attract_dist,
 // Checksum 0x39897d1c, Offset: 0x1648
 // Size: 0xae
 function private function_ab9a9770() {
-    s_trace = groundtrace(self.origin + vectorscale((0, 0, 1), 70), self.origin + vectorscale((0, 0, -1), 100), 0, self);
+    s_trace = groundtrace(self.origin + (0, 0, 70), self.origin + (0, 0, -100), 0, self);
     if (isdefined(s_trace[#"entity"])) {
         entity = s_trace[#"entity"];
         if (entity ismovingplatform()) {
@@ -411,7 +406,7 @@ function function_2f2478f2() {
             if (height_offset > level.valid_poi_height) {
                 continue;
             }
-            if (zm_utility::check_point_in_enabled_zone(point.origin) && bullettracepassed(point.origin + vectorscale((0, 0, 1), 20), v_orig + vectorscale((0, 0, 1), 20), 0, self, undefined, 0, 0)) {
+            if (zm_utility::check_point_in_enabled_zone(point.origin) && bullettracepassed(point.origin + (0, 0, 20), v_orig + (0, 0, 20), 0, self, undefined, 0, 0)) {
                 self.origin = point.origin;
                 return true;
             }
@@ -499,7 +494,6 @@ function do_monkey_sound(info) {
     if (!self.monk_scream_vox) {
         self thread play_delayed_explode_vox();
     }
-    waitresult = undefined;
     waitresult = self waittill(#"explode");
     level notify(#"grenade_exploded", waitresult.position);
     self stoploopsound();
@@ -553,7 +547,6 @@ function play_delayed_explode_vox() {
 function get_thrown_monkey() {
     self endon(#"starting_monkey_watch", #"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
         weapon = waitresult.weapon;

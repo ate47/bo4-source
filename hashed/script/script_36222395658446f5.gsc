@@ -171,7 +171,6 @@ function on_player_connect() {
     self flag::init(#"hash_7bcf95ea12236f0d");
     self flag::init(#"hash_548a6763233817f5");
     while (true) {
-        var_29b8f3d0 = undefined;
         var_29b8f3d0 = self waittill("new_" + "lethal_grenade");
         w_newweapon = var_29b8f3d0.weapon;
         var_22e180dd = self zm_loadout::get_player_lethal_grenade();
@@ -266,7 +265,6 @@ function function_545c69d8(e_player) {
 // Size: 0x330
 function function_3c616882() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         e_player endon(#"disconnect");
@@ -596,7 +594,6 @@ function function_b07f181b(e_player) {
 // Size: 0x1a4
 function function_352a977a() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (e_player flag::get(#"hash_7317dfbae4fa0df5") && !e_player flag::get(#"hash_2218e030b30c77e2")) {
@@ -652,7 +649,6 @@ function function_84ff44c(e_player) {
 // Size: 0x1a4
 function function_139dd88c() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (e_player flag::get(#"hash_7317dfbae4fa0df5") && !e_player flag::get(#"hash_12000c871284e0b5")) {
@@ -708,7 +704,6 @@ function function_93cd35c7(e_player) {
 // Size: 0x1a4
 function function_34759490(e_player) {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (e_player flag::get(#"hash_7317dfbae4fa0df5") && !e_player flag::get(#"hash_7e372a60b99a89e0")) {
@@ -731,7 +726,6 @@ function function_34759490(e_player) {
 function function_d291665f() {
     self endon(#"disconnect");
     while (!self flag::get(#"hash_1213756b45a941f0")) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_148b3ce521088846", #"hash_317f58ba0d580c27", #"hash_528d7b7f7d6c51a1");
         switch (waitresult._notify) {
         case #"hash_148b3ce521088846":
@@ -793,7 +787,6 @@ function function_68eca9eb() {
 function ee_exp_monkey_fire_() {
     self endon(#"disconnect", #"hash_21827937692e2aba");
     while (!self flag::get(#"hash_21827937692e2aba")) {
-        s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
         if (!isdefined(e_tomahawk)) {
@@ -885,7 +878,6 @@ function function_4c6348bd(e_player) {
 // Size: 0x5e4
 function function_858b2d2f() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         e_player endon(#"disconnect");

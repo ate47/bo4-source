@@ -60,24 +60,21 @@
 // Method(s) 2 Total 2
 class class_264486ac {
 
+    var active;
+    var health;
+    var hitloc;
+    var hittag;
+
     // Namespace class_264486ac/zm_ai_stoker
     // Params 0, eflags: 0x9 linked
     // Checksum 0xed872d17, Offset: 0x1560
     // Size: 0x4c
-    __constructor() {
-        self.active = 1;
-        self.health = 0;
-        self.hitloc = "";
-        self.hittag = "";
+    constructor() {
+        active = 1;
+        health = 0;
+        hitloc = "";
+        hittag = "";
         var_934afb38 = 0;
-    }
-
-    // Namespace class_264486ac/zm_ai_stoker
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x15b8
-    // Size: 0x4
-    __destructor() {
-        
     }
 
 }
@@ -153,103 +150,53 @@ function init() {
 // Checksum 0x5312cfca, Offset: 0xb48
 // Size: 0x9e4
 function registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_253c9e38));
-    #/
+    assert(isscriptfunctionptr(&function_253c9e38));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_11342039e49bb092", &function_253c9e38);
-    /#
-        assert(isscriptfunctionptr(&function_6d817d57));
-    #/
+    assert(isscriptfunctionptr(&function_6d817d57));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_64bb85f17c6f0c26", &function_6d817d57);
-    /#
-        assert(isscriptfunctionptr(&function_31f887b5));
-    #/
+    assert(isscriptfunctionptr(&function_31f887b5));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7abf56a70eea8824", &function_31f887b5);
-    /#
-        assert(isscriptfunctionptr(&function_6cd91a4d));
-    #/
+    assert(isscriptfunctionptr(&function_6cd91a4d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7914389e526099c3", &function_6cd91a4d);
-    /#
-        assert(isscriptfunctionptr(&function_d47e273b));
-    #/
+    assert(isscriptfunctionptr(&function_d47e273b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_69d99c802f94a161", &function_d47e273b);
-    /#
-        assert(isscriptfunctionptr(&function_65d23c4f));
-    #/
+    assert(isscriptfunctionptr(&function_65d23c4f));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_34979234c577e020", &function_65d23c4f);
-    /#
-        assert(isscriptfunctionptr(&function_fb220c8c));
-    #/
+    assert(isscriptfunctionptr(&function_fb220c8c));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2eda816d46284ecf", &function_fb220c8c);
-    /#
-        assert(isscriptfunctionptr(&function_53d1998d));
-    #/
+    assert(isscriptfunctionptr(&function_53d1998d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_62e8ff16b0eb8a2e", &function_53d1998d);
-    /#
-        assert(isscriptfunctionptr(&function_765f06f9));
-    #/
+    assert(isscriptfunctionptr(&function_765f06f9));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_e3d43dd957e7586", &function_765f06f9);
-    /#
-        assert(isscriptfunctionptr(&function_60951874));
-    #/
+    assert(isscriptfunctionptr(&function_60951874));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2d05a32b52fcaafd", &function_60951874);
-    /#
-        assert(isscriptfunctionptr(&function_8ef6771f));
-    #/
+    assert(isscriptfunctionptr(&function_8ef6771f));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7ed50d08e0e9bcfa", &function_8ef6771f);
-    /#
-        assert(isscriptfunctionptr(&function_e2e5eebf));
-    #/
+    assert(isscriptfunctionptr(&function_e2e5eebf));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_58ce6baf23499b6f", &function_e2e5eebf);
-    /#
-        assert(isscriptfunctionptr(&function_7cd52d88));
-    #/
+    assert(isscriptfunctionptr(&function_7cd52d88));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3993bf34ab2531f0", &function_7cd52d88);
-    /#
-        assert(isscriptfunctionptr(&function_a2d1d120));
-    #/
+    assert(isscriptfunctionptr(&function_a2d1d120));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_25c4de2eb81f27cb", &function_a2d1d120);
-    /#
-        assert(isscriptfunctionptr(&function_b7fe306e));
-    #/
+    assert(isscriptfunctionptr(&function_b7fe306e));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_389c07d3893e660", &function_b7fe306e);
-    /#
-        assert(isscriptfunctionptr(&function_36903815));
-    #/
+    assert(isscriptfunctionptr(&function_36903815));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1607f20e814fb19b", &function_36903815);
-    /#
-        assert(isscriptfunctionptr(&function_f01e64d6));
-    #/
+    assert(isscriptfunctionptr(&function_f01e64d6));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_173e1c9378200965", &function_f01e64d6);
-    /#
-        assert(isscriptfunctionptr(&function_dee90338));
-    #/
+    assert(isscriptfunctionptr(&function_dee90338));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3e875851311be4e8", &function_dee90338);
-    /#
-        assert(isscriptfunctionptr(&function_b6e7676d));
-    #/
+    assert(isscriptfunctionptr(&function_b6e7676d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4fe0c56f8cd42ad1", &function_b6e7676d);
-    /#
-        assert(isscriptfunctionptr(&function_20a3d8f6));
-    #/
+    assert(isscriptfunctionptr(&function_20a3d8f6));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_21f1387075571547", &function_20a3d8f6);
-    /#
-        assert(isscriptfunctionptr(&function_efbd6650));
-    #/
+    assert(isscriptfunctionptr(&function_efbd6650));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_771bfe8686d806d6", &function_efbd6650);
-    /#
-        assert(isscriptfunctionptr(&function_399815b2));
-    #/
+    assert(isscriptfunctionptr(&function_399815b2));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_138db5b46aeab153", &function_399815b2);
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_b4ecc051) || isscriptfunctionptr(&function_b4ecc051));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_b4ecc051) || isscriptfunctionptr(&function_b4ecc051));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_4778faf1d75cc885", undefined, &function_b4ecc051, undefined);
 }
 
@@ -844,7 +791,7 @@ function private function_ac53cb4e(entity) {
     if (!isdefined(entity.enemy)) {
         return 0;
     }
-    can_see = bullettracepassed(entity.origin + vectorscale((0, 0, 1), 36), entity.enemy.origin + vectorscale((0, 0, 1), 36), 0, undefined);
+    can_see = bullettracepassed(entity.origin + (0, 0, 36), entity.enemy.origin + (0, 0, 36), 0, undefined);
     return can_see;
 }
 
@@ -1009,9 +956,7 @@ function function_4c2cb763(s_spot) {
 function function_2170ee7a() {
     level.a_sp_stoker = getentarray("zombie_stoker_spawner", "script_noteworthy");
     if (level.a_sp_stoker.size == 0) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     foreach (sp_stoker in level.a_sp_stoker) {

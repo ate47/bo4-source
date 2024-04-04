@@ -254,9 +254,7 @@ function function_e95d25() {
 // Checksum 0x9e6af25b, Offset: 0x14a0
 // Size: 0xc8
 function function_6f635c39(str) {
-    /#
-        assert(isdefined(str), "<unknown string>");
-    #/
+    assert(isdefined(str), "<unknown string>");
     a_doors = getentarray(str, "script_string");
     foreach (door in a_doors) {
         door function_20681be5();
@@ -289,9 +287,7 @@ function private function_20681be5() {
 // Checksum 0x7e148be5, Offset: 0x1710
 // Size: 0xc8
 function function_364cd8c0(str) {
-    /#
-        assert(isdefined(str), "<unknown string>");
-    #/
+    assert(isdefined(str), "<unknown string>");
     a_doors = getentarray(str, "script_string");
     foreach (door in a_doors) {
         door function_46ed91c6();
@@ -324,11 +320,7 @@ function private function_46ed91c6() {
 // Checksum 0xa880a0a1, Offset: 0x1980
 // Size: 0xe8
 function function_612918d9(str) {
-    /#
-        /#
-            assert(isdefined(str), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(str), "<unknown string>");
     a_e_blockers = getentarray(str, "targetname");
     foreach (e_blocker in a_e_blockers) {
         e_blocker notsolid();
@@ -341,18 +333,10 @@ function function_612918d9(str) {
 // Checksum 0x7830f2c0, Offset: 0x1a70
 // Size: 0x110
 function function_ca4ee4d1(str) {
-    /#
-        /#
-            assert(isdefined(str), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(str), "<unknown string>");
     a_s_bunker_doors = struct::get_array(str, "targetname");
     foreach (s_bunker_door in a_s_bunker_doors) {
-        /#
-            /#
-                assert(isdefined(s_bunker_door.init_anim), "<unknown string>");
-            #/
-        #/
+        assert(isdefined(s_bunker_door.init_anim), "<unknown string>");
         s_bunker_door thread scene::play(s_bunker_door.init_anim);
     }
 }
@@ -362,18 +346,10 @@ function function_ca4ee4d1(str) {
 // Checksum 0x2c94b672, Offset: 0x1b88
 // Size: 0x110
 function function_bf25aeb1(str) {
-    /#
-        /#
-            assert(isdefined(str), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(str), "<unknown string>");
     a_s_bunker_doors = struct::get_array(str, "script_noteworthy");
     foreach (s_bunker_door in a_s_bunker_doors) {
-        /#
-            /#
-                assert(isdefined(s_bunker_door.open_anim), "<unknown string>");
-            #/
-        #/
+        assert(isdefined(s_bunker_door.open_anim), "<unknown string>");
         s_bunker_door thread scene::play(s_bunker_door.open_anim);
     }
 }
@@ -386,7 +362,7 @@ function function_f2fa71ce() {
     e_door = getent("apd_lockdown", "targetname");
     e_col = getent(e_door.target, "targetname");
     if (!e_door.b_open) {
-        e_door rotateto(e_door.angles + vectorscale((0, -1, 0), 90), 1, 0.1, 0.2);
+        e_door rotateto(e_door.angles + (0, -90, 0), 1, 0.1, 0.2);
         e_col notsolid();
         e_col connectpaths();
         if (isdefined(e_door.var_61e10b48) && isdefined(e_door.var_d42d6fdf)) {
@@ -405,7 +381,7 @@ function function_985c08e7() {
     e_door = getent("apd_lockdown", "targetname");
     e_col = getent(e_door.target, "targetname");
     if (e_door.b_open) {
-        e_door rotateto(e_door.angles + vectorscale((0, -1, 0), 90), 1, 0.1, 0.2);
+        e_door rotateto(e_door.angles + (0, -90, 0), 1, 0.1, 0.2);
         e_col solid();
         e_col disconnectpaths();
         if (isdefined(e_door.var_61e10b48) && isdefined(e_door.var_d42d6fdf)) {
@@ -549,7 +525,6 @@ function function_358da2a7(e_player) {
 function function_d1ca61a7() {
     self endon(#"death");
     w_give = self.w_pickup;
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"trigger_activated");
     e_player = s_waitresult.e_who;
     w_take = e_player function_c7274071();
@@ -616,7 +591,6 @@ function function_c05cc102(s_params) {
     if (!zm_utility::function_850e7499(s_params.weapon)) {
         return;
     }
-    s_waitresult = undefined;
     s_waitresult = s_params.projectile waittill(#"projectile_impact_explode", #"explode", #"death");
     if (isdefined(s_params.projectile) && s_waitresult._notify == "death") {
         level notify(#"hash_3042a9bf2f57ea0a", {#attacker:self, #var_814c9389:s_params.projectile.origin});

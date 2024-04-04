@@ -498,7 +498,6 @@ function function_dcf7377c(n_round_number) {
 function function_3747b95() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_4ffec9c5f552e6fc");
         if (isdefined(s_waitresult.e_door) && isdefined(s_waitresult.e_door.script_flag)) {
             switch (s_waitresult.e_door.script_flag) {

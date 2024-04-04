@@ -38,14 +38,10 @@ function __init__() {
 // Size: 0x1d8
 function private on_begin(var_e84d35d1) {
     var_e9433d0 = struct::get_array(var_e84d35d1);
-    /#
-        assert(var_e9433d0.size, "<unknown string>");
-    #/
+    assert(var_e9433d0.size, "<unknown string>");
     var_64e17761 = [];
     foreach (var_93154b10 in var_e9433d0) {
-        /#
-            assert(isdefined(var_93154b10.target), "<unknown string>");
-        #/
+        assert(isdefined(var_93154b10.target), "<unknown string>");
         var_94d5ccbc = getentarray(var_93154b10.target, "targetname");
         var_64e17761 = arraycombine(var_64e17761, var_94d5ccbc, 0, 0);
     }

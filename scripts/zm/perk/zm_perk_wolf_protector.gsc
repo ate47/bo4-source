@@ -113,9 +113,7 @@ function give_perk() {
 // Size: 0xc6
 function take_perk(b_pause, str_perk, str_result, n_slot) {
     self notify(#"specialty_wolf_protector" + "_take");
-    /#
-        assert(isdefined(self.var_7d46fb46), "<unknown string>");
-    #/
+    assert(isdefined(self.var_7d46fb46), "<unknown string>");
     self function_6d80c359();
     if (isdefined(self.var_7d46fb46)) {
         self zm_perks::function_13880aa5(self.var_7d46fb46, 0, #"perk_wolf_protector");
@@ -419,9 +417,7 @@ function reset_cooldown() {
     self notify(#"hash_7c5d9af32e10c147");
     self.var_6577c75d = 0;
     if (self hasperk(#"specialty_wolf_protector")) {
-        /#
-            assert(isdefined(self.var_7d46fb46), "<unknown string>");
-        #/
+        assert(isdefined(self.var_7d46fb46), "<unknown string>");
         if (isdefined(self.var_7d46fb46)) {
             self zm_perks::function_2ac7579(self.var_7d46fb46, 1, #"perk_wolf_protector");
             self zm_perks::function_13880aa5(self.var_7d46fb46, 1, #"perk_wolf_protector");

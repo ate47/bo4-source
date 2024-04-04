@@ -156,7 +156,7 @@ function init_boss() {
         level.s_boss.var_dcaafc8e[i] = struct::get("tag_align_export_boss_arena_" + i, "targetname");
     }
     level.s_boss.var_4944ec8 = getent("boss_sp_mdl", "targetname");
-    target_set(level.s_boss.var_4944ec8, vectorscale((0, 0, 1), 64));
+    target_set(level.s_boss.var_4944ec8, (0, 0, 64));
     level.s_boss.var_4944ec8.health = 99999;
     level.s_boss.var_4944ec8.var_6f84b820 = #"boss";
     level.s_boss.var_b65df36 = getent("boss_stunned_blocker", "targetname");
@@ -1093,7 +1093,6 @@ function function_cc0b32f8(n_stage) {
     level.s_boss.var_4944ec8 thread scene::play(#"aib_t8_zm_mnsn_hallion_stun", "init");
     level.s_boss.var_4944ec8 clientfield::set("" + #"hash_1bf2c2f62ad1bf56", 1);
     level.s_boss thread function_bb528a4b(n_stage);
-    s_result = undefined;
     s_result = level waittilltimeout(var_bfa47c6b, #"hash_38f29f9cb03586ea");
     var_2100633b = 1;
     if (s_result._notify == #"timeout") {
@@ -1166,7 +1165,7 @@ function function_f25a51e4(var_91308236, v_origin) {
         return;
     }
     level.s_boss.var_b65df36 connectpaths();
-    level.s_boss.var_b65df36.origin = level.s_boss.var_b65df36.origin - vectorscale((0, 0, 1), 9999);
+    level.s_boss.var_b65df36.origin = level.s_boss.var_b65df36.origin - (0, 0, 9999);
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -1221,7 +1220,6 @@ function function_bb528a4b(n_stage) {
     self.var_a58d72c0 = 0;
     while (true) {
         var_17c6835 = 0;
-        s_notify = undefined;
         s_notify = e_damage waittill(#"damage");
         n_damage = s_notify.amount;
         w_weapon = s_notify.weapon;
@@ -1451,7 +1449,6 @@ function function_ae76e58d() {
 function function_a430c55f() {
     level endon(#"hash_25d8c88ff3f91ee5", #"end_game", #"intermission");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (isplayer(e_player)) {
@@ -1594,9 +1591,7 @@ function function_47e0a10b(n_stage) {
         var_c268c886 = getent("boss_sigil_" + level.s_boss.var_2d102ea7, "targetname");
         var_c268c886 thread function_ccd8387e(1);
     } else {
-        /#
-            assert(0, "<unknown string>");
-        #/
+        assert(0, "<unknown string>");
     }
     for (n_statue = var_d103b26c; n_statue <= 3; n_statue++) {
         var_883035ad = array::random(var_9bcf74c3);

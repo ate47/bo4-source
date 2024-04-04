@@ -132,7 +132,6 @@ function function_ccbbe9c4(n_obj_id) {
     self zm_trial_util::function_c2cd0cba(level.var_b4a6cec6);
     self zm_trial_util::function_2190356a(self.var_b4a6cec6);
     waitframe(1);
-    s_notify = undefined;
     s_notify = self waittill(#"hash_9e146af7233ec36", #"hash_7646638df88a3656");
     objective_setinvisibletoplayer(n_obj_id, self);
     if (s_notify._notify == #"hash_9e146af7233ec36") {

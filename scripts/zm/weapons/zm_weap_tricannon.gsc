@@ -301,7 +301,6 @@ function function_14d49bd7(weapon) {
     v_start = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
     v_end = v_start + v_forward * 4000;
-    results = undefined;
     results = self waittill(#"projectile_impact");
     v_impact = results.position;
     if (weapon == getweapon(#"ww_tricannon_water_t8" + "_upgraded")) {

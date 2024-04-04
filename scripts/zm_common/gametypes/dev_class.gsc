@@ -390,7 +390,7 @@ function dev_cac_overlay_create() {
         hud.aligny = "<unknown string>";
         hud.sort = 10;
         hud.alpha = 0.6;
-        hud.color = vectorscale((0, 0, 1), 0.5);
+        hud.color = (0, 0, 0.5);
         x_offset = 100;
         hud.menu[0] = dev::new_hud(menu_name, "<unknown string>", x + 5, y + 10, 1.3);
         hud.menu[1] = dev::new_hud(menu_name, "<unknown string>", x + 5, y + 25, 1);
@@ -470,7 +470,6 @@ function color(value) {
 function dev_cac_gdt_update_think() {
     /#
         for (;;) {
-            waitresult = undefined;
             waitresult = level waittill(#"gdt_update");
             asset = waitresult.asset;
             keyvalue = waitresult.keyvalue;

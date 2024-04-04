@@ -88,7 +88,6 @@ function function_1ff1beff() {
         self perks::perk_setperk("specialty_ammodrainsfromstockfirst");
     }
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         w_check = s_notify.weapon;
         if (isdefined(w_check.isheroweapon) && w_check.isheroweapon || zm_weapons::is_wonder_weapon(w_check)) {

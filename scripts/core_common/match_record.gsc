@@ -21,9 +21,7 @@ function function_d92cb558(result, vararg) {
 // Checksum 0xc852de7a, Offset: 0xb0
 // Size: 0x80
 function get_stat(...) {
-    /#
-        assert(vararg.size > 0);
-    #/
+    assert(vararg.size > 0);
     if (vararg.size == 0) {
         return undefined;
     }
@@ -39,9 +37,7 @@ function get_stat(...) {
 // Checksum 0xe452cc60, Offset: 0x138
 // Size: 0xc0
 function set_stat(...) {
-    /#
-        assert(vararg.size > 1);
-    #/
+    assert(vararg.size > 1);
     if (vararg.size <= 1) {
         return;
     }
@@ -72,9 +68,7 @@ function function_7a93acec(...) {
 // Checksum 0x6228ee8b, Offset: 0x350
 // Size: 0xc0
 function inc_stat(...) {
-    /#
-        assert(vararg.size > 1);
-    #/
+    assert(vararg.size > 1);
     if (vararg.size <= 1) {
         return;
     }
@@ -93,9 +87,7 @@ function inc_stat(...) {
 // Size: 0x78
 function get_player_index() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isplayer(player) && isdefined(player.clientid)) {
         return player.clientid;
     }
@@ -107,9 +99,7 @@ function get_player_index() {
 // Size: 0x8c
 function get_player_stat(...) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isplayer(player)) {
         return get_stat(#"players", player.clientid, vararg);
     }
@@ -121,9 +111,7 @@ function get_player_stat(...) {
 // Size: 0xcc
 function set_player_stat(...) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isplayer(player)) {
         value = vararg[vararg.size - 1];
         arrayremoveindex(vararg, vararg.size - 1);
@@ -137,9 +125,7 @@ function set_player_stat(...) {
 // Size: 0x196
 function function_ded5f5b6(...) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isplayer(player)) {
         vec = vararg[vararg.size - 1];
         arrayremoveindex(vararg, vararg.size - 1);
@@ -156,9 +142,7 @@ function function_ded5f5b6(...) {
 // Size: 0xcc
 function function_34800eec(...) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isplayer(player)) {
         value = vararg[vararg.size - 1];
         arrayremoveindex(vararg, vararg.size - 1);

@@ -190,7 +190,6 @@ function mee_galvaknuckle_step1_cleanup(var_5ea5c94d, ended_early) {
     level thread trigger::look_trigger(var_74370e46);
     b_saw_the_wth = 0;
     while (!b_saw_the_wth) {
-        waitresult = undefined;
         waitresult = var_74370e46 waittill(#"trigger_look");
         if (waitresult.activator == level.var_f5624728) {
             b_saw_the_wth = 1;
@@ -221,8 +220,8 @@ function mee_mixed_step1_cleanup(var_5ea5c94d, ended_early) {
         level.var_e80139f = 4;
         level flag::wait_till(#"mee_mixed_count_reached");
     }
-    vec = anglestoforward(level.var_d53f00cb) + vectorscale((0, 0, 1), 15);
-    var_e3f0084a = level.var_de56cee7.attacker magicgrenadeplayer(getweapon(#"eq_frag_grenade"), level.var_81603165 + vectorscale((0, 0, 1), 2), vec);
+    vec = anglestoforward(level.var_d53f00cb) + (0, 0, 15);
+    var_e3f0084a = level.var_de56cee7.attacker magicgrenadeplayer(getweapon(#"eq_frag_grenade"), level.var_81603165 + (0, 0, 2), vec);
     /#
         if (getdvarint(#"zm_debug_ee", 0)) {
             if (getdvarint(#"zm_debug_ee", 0)) {
@@ -451,7 +450,6 @@ function function_edcadf04() {
         b_player_damaged = 0;
         while (!b_player_damaged) {
             self.health = 999;
-            waitresult = undefined;
             waitresult = self waittill(#"damage");
             b_player_damaged = waitresult function_ce7e594b();
             if (!b_player_damaged) {
@@ -798,14 +796,13 @@ function function_800ff39e() {
     level.e_weeper.team = #"team3";
     var_83302022 = getent("t_mee_2_activate", "targetname");
     level thread trigger::look_trigger(var_83302022);
-    waitresult = undefined;
     waitresult = var_83302022 waittill(#"trigger_look");
     var_83302022 delete();
     level.e_weeper.var_72411ccf = undefined;
     level.e_weeper thread function_d10bf985();
     level.e_partner = getent("mee_2_female", "targetname");
     level.e_partner show();
-    level.var_7b22edab = spawn("script_origin", level.e_partner.origin + vectorscale((0, 0, 1), 10));
+    level.var_7b22edab = spawn("script_origin", level.e_partner.origin + (0, 0, 10));
     while (!level.e_weeper is_near("mee_2_follow_trigger")) {
         waitframe(1);
     }
@@ -822,7 +819,7 @@ function function_800ff39e() {
     level.e_weeper.var_3d366381 = undefined;
     e_door = getent("mee_2_door", "targetname");
     e_door playsound("zmb_shed_door_open");
-    e_door rotateto(vectorscale((0, 1, 0), 202), 1);
+    e_door rotateto((0, 202, 0), 1);
     wait(2);
     var_e979d075 = getentarray("e_mee_2_weeper_final", "targetname");
     while (level.e_weeper function_7f971d26() || level.e_partner function_7f971d26() || var_e979d075[0] function_7f971d26()) {
@@ -846,11 +843,10 @@ function function_800ff39e() {
     var_1ccba54f.angles = var_1d15513c.angles;
     var_c3a00a1a = getent("t_mee_2_shed", "targetname");
     level thread trigger::look_trigger(var_c3a00a1a);
-    waitresult = undefined;
     waitresult = var_c3a00a1a waittill(#"trigger_look");
     var_c3a00a1a delete();
     e_door playsound("zmb_shed_door_close");
-    e_door rotateto(vectorscale((0, 1, 0), 340), 1);
+    e_door rotateto((0, 340, 0), 1);
     wait(2);
     e_player = waitresult.activator;
     s_reward = struct::get("s_mee_2_reward", "targetname");
@@ -1008,7 +1004,7 @@ function function_6fa00342(e_follow) {
         var_9d88bc68 = 15 * vectornormalize(var_9d88bc68);
         goal_pos = e_follow.origin - var_9d88bc68;
         goal_pos = getnearestpathpoint(goal_pos, 64);
-        level.var_7b22edab.origin = goal_pos + vectorscale((0, 0, 1), 15);
+        level.var_7b22edab.origin = goal_pos + (0, 0, 15);
         if (self function_66a7e20a() && level.var_7b22edab function_66a7e20a()) {
             self ghost();
             self.origin = goal_pos;
@@ -1113,7 +1109,6 @@ function function_3117c10() {
 // Size: 0x25c
 function function_15534b78() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     player = waitresult.activator;
     self.stub.e_model stoploopsound();

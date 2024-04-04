@@ -47,9 +47,7 @@ function wasp_initialize() {
     self.fovcosine = 0;
     self.fovcosinebusy = 0;
     self.vehaircraftcollisionenabled = 1;
-    /#
-        assert(isdefined(self.scriptbundlesettings));
-    #/
+    assert(isdefined(self.scriptbundlesettings));
     self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     self.goalradius = 999999;
     self.goalheight = 999999;
@@ -168,9 +166,7 @@ function state_emped_update(params) {
     gravity = 400;
     self notify(#"end_nudge_collision");
     empdowntime = params.param0;
-    /#
-        assert(isdefined(empdowntime));
-    #/
+    assert(isdefined(empdowntime));
     util::cooldown("emped_timer", empdowntime);
     wait(randomfloat(0.2));
     ang_vel = self getangularvelocity();
@@ -208,7 +204,7 @@ function state_emped_update(params) {
     }
     self vehicle::lights_on();
     if (isdefined(self.position_before_fall)) {
-        originoffset = vectorscale((0, 0, 1), 5);
+        originoffset = (0, 0, 5);
         goalpoint = self getclosestpointonnavvolume(self.origin + originoffset, 50);
         if (isdefined(goalpoint) && sighttracepassed(self.origin + originoffset, goalpoint, 0, self)) {
             self function_a57c34b7(goalpoint, 0, 0);
@@ -265,7 +261,6 @@ function fall_and_bounce(killonimpact_speed, killonimpact_time, killonimpact = 0
     anglesstablizeincrement = 0.2;
     fallstart = gettime();
     while (bouncedtime < maxbouncetime && lengthsquared(self.velocity) > 10 * 10) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         impact_vel = waitresult.velocity;
         normal = waitresult.normal;
@@ -381,9 +376,7 @@ function guard_points_debug() {
 // Checksum 0x93def103, Offset: 0x1c78
 // Size: 0x330
 function get_guard_points(owner) {
-    /#
-        assert(self._guard_points.size > 0, "<unknown string>");
-    #/
+    assert(self._guard_points.size > 0, "<unknown string>");
     points_array = [];
     foreach (point in self._guard_points) {
         offset = rotatepoint(point, owner.angles);
@@ -398,10 +391,10 @@ function get_guard_points(owner) {
         }
     }
     if (points_array.size < 1) {
-        queryresult = positionquery_source_navigation(owner.origin + vectorscale((0, 0, 1), 50), 25, 200, 100, 1.2 * self.radius, self);
-        positionquery_filter_sight(queryresult, owner.origin + vectorscale((0, 0, 1), 10), (0, 0, 0), self, 3);
+        queryresult = positionquery_source_navigation(owner.origin + (0, 0, 50), 25, 200, 100, 1.2 * self.radius, self);
+        positionquery_filter_sight(queryresult, owner.origin + (0, 0, 10), (0, 0, 0), self, 3);
         foreach (point in queryresult.data) {
-            if (point.visibility === 1 && bullettracepassed(owner.origin + vectorscale((0, 0, 1), 10), point.origin, 0, self, self, 0, 1)) {
+            if (point.visibility === 1 && bullettracepassed(owner.origin + (0, 0, 10), point.origin, 0, self, self, 0, 1)) {
                 if (!isdefined(points_array)) {
                     points_array = [];
                 } else if (!isarray(points_array)) {
@@ -550,9 +543,7 @@ function state_guard_update(params) {
                     stucklocation = self.origin;
                 } else if (stuckcount > 10) {
                     /#
-                        /#
-                            assert(0, "<unknown string>" + self.origin);
-                        #/
+                        assert(0, "<unknown string>" + self.origin);
                         v_box_min = (self.radius * -1, self.radius * -1, self.radius * -1);
                         v_box_max = (self.radius, self.radius, self.radius);
                         box(self.origin, v_box_min, v_box_max, self.angles[1], (1, 0, 0), 1, 0, 1000000);
@@ -686,7 +677,7 @@ function turretfireupdate() {
                 } else if (isdefined(self.settings.turret_enemy_detect_freq)) {
                     wait(self.settings.turret_enemy_detect_freq);
                 }
-                self turretsettargetangles(0, vectorscale((1, 0, 0), 15));
+                self turretsettargetangles(0, (15, 0, 0));
             }
             if (isrockettype) {
                 if (isdefined(self.enemy) && isai(self.enemy)) {
@@ -1073,7 +1064,7 @@ function getnextmoveposition_tactical() {
         query_position = self.leader.current_pathto_pos;
         queryresult = positionquery_source_navigation(query_position, 0, 140, 100, 35, self, 25);
     } else if (isalive(self.owner) && self.enable_guard === 1) {
-        ownerorigin = self getclosestpointonnavvolume(self.owner.origin + vectorscale((0, 0, 1), 40), 50);
+        ownerorigin = self getclosestpointonnavvolume(self.owner.origin + (0, 0, 40), 50);
         if (isdefined(ownerorigin)) {
             queryresult = positionquery_source_navigation(ownerorigin, 0, 500 * min(querymultiplier, 1.5), 130, 3 * self.radius, self);
             if (isdefined(queryresult) && isdefined(queryresult.data)) {

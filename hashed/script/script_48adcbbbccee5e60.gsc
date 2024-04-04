@@ -8,27 +8,11 @@
 class cinteractive_shot : cluielem {
 
     // Namespace cinteractive_shot/interactive_shot
-    // Params 0, eflags: 0x8
-    // Checksum 0x340cdad8, Offset: 0x1f8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cinteractive_shot/interactive_shot
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x863349de, Offset: 0x370
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cinteractive_shot/interactive_shot
     // Params 2, eflags: 0x0
     // Checksum 0xe9b23de4, Offset: 0x338
     // Size: 0x30
     function set_text(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "text", value);
+        set_data(localclientnum, "text", value);
     }
 
     // Namespace cinteractive_shot/interactive_shot
@@ -45,7 +29,7 @@ class cinteractive_shot : cluielem {
     // Size: 0x4c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "text", #"");
+        set_data(localclientnum, "text", #"");
     }
 
     // Namespace cinteractive_shot/interactive_shot

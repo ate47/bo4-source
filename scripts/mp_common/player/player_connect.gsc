@@ -265,9 +265,7 @@ function callback_playerconnect() {
     self hvo::function_2ce5cb7e();
     num_con = getnumconnectedplayers();
     num_exp = getnumexpectedplayers();
-    /#
-        println("<unknown string>", num_con, "<unknown string>", num_exp);
-    #/
+    println("<unknown string>", num_con, "<unknown string>", num_exp);
     if (num_con == num_exp && num_exp != 0) {
         level flag::set("all_players_connected");
     }

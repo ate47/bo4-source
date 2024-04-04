@@ -85,7 +85,6 @@ function function_72e5d54f(watcher) {
 function function_6c5cb6e() {
     self endon(#"disconnect");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_change");
         wpn_cur = s_result.weapon;
         if (wpn_cur == getweapon(#"thunderstorm")) {
@@ -105,7 +104,6 @@ function function_feb1573e() {
     self notify(#"hash_2938992396267cf3");
     self endon(#"disconnect", #"hash_2938992396267cf3");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"grenade_fire", #"grenade_throw_cancelled");
         if (s_result.weapon == getweapon(#"thunderstorm")) {
             self val::reset(#"pegasus_strike", "freezecontrols");
@@ -234,7 +232,7 @@ function function_5f724c2e(e_grenade) {
     }
     if (isdefined(var_dd83e2c2)) {
         v_ground = undefined;
-        v_trace = groundtrace(var_dd83e2c2 + vectorscale((0, 0, 1), 200), var_dd83e2c2 + vectorscale((0, 0, -1), 2000), 0, self, 1)[#"position"];
+        v_trace = groundtrace(var_dd83e2c2 + (0, 0, 200), var_dd83e2c2 + (0, 0, -2000), 0, self, 1)[#"position"];
         v_on_navmesh = zm_utility::function_b0eeaada(v_trace);
         if (isdefined(v_on_navmesh)) {
             v_ground = v_on_navmesh[#"point"];
@@ -315,7 +313,7 @@ function function_b603ab34(e_player, var_10d4f67d) {
     }
     v_forward = anglestoforward(e_player.angles);
     v_pos = e_player.origin + v_forward * 30;
-    v_pos = util::ground_position(v_pos + vectorscale((0, 0, 1), 30), 1000, 12);
+    v_pos = util::ground_position(v_pos + (0, 0, 30), 1000, 12);
     mdl_temp = util::spawn_model(#"hash_30b0badbca0a10de", v_pos + (0, 0, -5), (0, 0, 0));
     waitframe(1);
     mdl_temp clientfield::set("" + #"hash_1187b848bf7868c5", 1);
@@ -328,7 +326,7 @@ function function_b603ab34(e_player, var_10d4f67d) {
 // Checksum 0x63be43d6, Offset: 0x13e0
 // Size: 0xa0
 function function_57011892(e_player) {
-    var_10d4f67d = spawn("script_model", e_player.origin + vectorscale((0, 0, 1), 170));
+    var_10d4f67d = spawn("script_model", e_player.origin + (0, 0, 170));
     var_10d4f67d setmodel("c_t8_zmb_dlc2_pegasus_fb");
     var_10d4f67d notsolid();
     var_10d4f67d.player = e_player;

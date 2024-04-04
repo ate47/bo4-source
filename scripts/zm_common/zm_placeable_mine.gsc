@@ -146,7 +146,6 @@ function private mine_watch(wpn_type) {
     self notify(#"mine_watch");
     self endon(#"mine_watch");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         mine = waitresult.projectile;
         fired_weapon = waitresult.weapon;
@@ -317,7 +316,6 @@ function private placeable_mine_damage() {
     self.maxhealth = self.health;
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (!isdefined(self)) {
             return;
@@ -427,7 +425,7 @@ function private on_spawn_retrieve_trigger(watcher, player) {
 // Checksum 0xaf6da5e4, Offset: 0x14b8
 // Size: 0x26
 function private adjust_trigger_origin(origin) {
-    origin = origin + vectorscale((0, 0, 1), 20);
+    origin = origin + (0, 0, 20);
     return origin;
 }
 

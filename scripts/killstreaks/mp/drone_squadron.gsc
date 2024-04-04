@@ -73,9 +73,7 @@ function calcspawnorigin(origin, angles) {
     }
     heightoffset = killstreaks::function_975d45c3();
     startnode = undefined;
-    /#
-        assert(level.heli_startnodes.size > 0, "<unknown string>");
-    #/
+    assert(level.heli_startnodes.size > 0, "<unknown string>");
     var_581dc057 = [];
     foreach (node in level.heli_startnodes) {
         facingdir = anglestoforward(angles);
@@ -91,17 +89,17 @@ function calcspawnorigin(origin, angles) {
         startnode = level.heli_startnodes[random];
     }
     if (!isdefined(startnode)) {
-        mins = vectorscale((-1, -1, 0), 5);
+        mins = (-5, -5, 0);
         maxs = (5, 5, 10);
         startpoints = [];
         testangles = [];
         testangles[0] = (0, 0, 0);
-        testangles[1] = vectorscale((0, 1, 0), 30);
-        testangles[2] = vectorscale((0, -1, 0), 30);
-        testangles[3] = vectorscale((0, 1, 0), 60);
-        testangles[4] = vectorscale((0, -1, 0), 60);
-        testangles[3] = vectorscale((0, 1, 0), 90);
-        testangles[4] = vectorscale((0, -1, 0), 90);
+        testangles[1] = (0, 30, 0);
+        testangles[2] = (0, -30, 0);
+        testangles[3] = (0, 60, 0);
+        testangles[4] = (0, -60, 0);
+        testangles[3] = (0, 90, 0);
+        testangles[4] = (0, -90, 0);
         bestorigin = origin;
         bestangles = angles;
         bestfrac = 0;
@@ -138,9 +136,7 @@ function calcspawnorigin(origin, angles) {
             return placement;
         }
     } else {
-        /#
-            assert(isdefined(startnode));
-        #/
+        assert(isdefined(startnode));
         var_56e2a4e0 = randomintrange(800, 1200);
         dir = vectornormalize(startnode.origin - origin);
         pos = origin + dir * var_56e2a4e0;
@@ -166,9 +162,7 @@ function calcspawnorigin(origin, angles) {
 // Checksum 0xeb49341c, Offset: 0xe50
 // Size: 0xac4
 function function_d52c51c6(killstreaktype) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     if (!isnavvolumeloaded()) {
         /#
@@ -382,9 +376,7 @@ function watchgameended() {
 // Size: 0x224
 function function_97bbef8(drone_squadron) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     drone_squadron usevehicle(player, 0);
     drone_squadron clientfield::set("vehicletransition", 1);
     drone_squadron thread audio::sndupdatevehiclecontext(1);
@@ -500,7 +492,6 @@ function function_c94a0c4d(params) {
 // Size: 0x22c
 function watchdeath() {
     drone_squadron = self;
-    waitresult = undefined;
     waitresult = drone_squadron waittill(#"death");
     attacker = waitresult.attacker;
     weapon = waitresult.weapon;
@@ -547,7 +538,7 @@ function watchwater() {
     drone_squadron endon(#"drone_squadron_shutdown");
     while (true) {
         wait(0.1);
-        trace = physicstrace(self.origin + vectorscale((0, 0, 1), 10), self.origin + vectorscale((0, 0, 1), 6), vectorscale((-1, -1, -1), 2), vectorscale((1, 1, 1), 2), self, 4);
+        trace = physicstrace(self.origin + (0, 0, 10), self.origin + (0, 0, 6), (-2, -2, -2), (2, 2, 2), self, 4);
         if (trace[#"fraction"] < 1) {
             break;
         }
@@ -568,9 +559,7 @@ function function_89609eb8(origin, angles) {
         return {#origin:var_109e505c[0].origin, #angles:angles};
     }
     leavenode = undefined;
-    /#
-        assert(level.heli_startnodes.size > 0, "<unknown string>");
-    #/
+    assert(level.heli_startnodes.size > 0, "<unknown string>");
     var_581dc057 = [];
     foreach (node in level.heli_startnodes) {
         facingdir = anglestoforward(angles);
@@ -703,21 +692,15 @@ function function_da3b4d35() {
 // Checksum 0xfb992343, Offset: 0x33f0
 // Size: 0x438
 function function_c7284de2() {
-    /#
-        assert(isdefined(self.owner));
-    #/
+    assert(isdefined(self.owner));
     player = self.owner;
     leaddrone = self;
     player endon(#"death");
     leaddrone endon(#"death", #"drone_squadron_shutdown");
     function_47a6b2ec(player);
     function_d0eb04e9(player);
-    /#
-        assert(isdefined(player.var_99033e70));
-    #/
-    /#
-        assert(isdefined(player.var_ce69b6d1));
-    #/
+    assert(isdefined(player.var_99033e70));
+    assert(isdefined(player.var_ce69b6d1));
     while (true) {
         if (isdefined(self.isstunned) && self.isstunned) {
             waitframe(1);
@@ -805,9 +788,7 @@ function private function_47a6b2ec(player) {
 // Checksum 0x716a4b6b, Offset: 0x3a58
 // Size: 0xcc
 function private function_bef71297(player, target) {
-    /#
-        assert(isdefined(player.var_99033e70));
-    #/
+    assert(isdefined(player.var_99033e70));
     if (isdefined(target)) {
         player.var_49c8cc7f = target;
         objective_onentity(player.var_99033e70, target);
@@ -836,9 +817,7 @@ function private function_d0eb04e9(player) {
 // Checksum 0x4a7fedbf, Offset: 0x3be8
 // Size: 0xcc
 function private function_d43ba50b(player, target) {
-    /#
-        assert(isdefined(player.var_ce69b6d1));
-    #/
+    assert(isdefined(player.var_ce69b6d1));
     if (isdefined(target)) {
         player.var_bfbfc356 = target;
         objective_onentity(player.var_ce69b6d1, target);

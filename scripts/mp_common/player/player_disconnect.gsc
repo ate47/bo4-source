@@ -107,12 +107,8 @@ function private function_79915d44() {
             nemesisamount = nemesis.value;
         }
     }
-    /#
-        assert(isdefined(nemesisname), "<unknown string>" + self.name);
-    #/
-    /#
-        assert(isstring(nemesisname), "<unknown string>" + nemesisname + "<unknown string>" + self.name);
-    #/
+    assert(isdefined(nemesisname), "<unknown string>" + self.name);
+    assert(isstring(nemesisname), "<unknown string>" + nemesisname + "<unknown string>" + self.name);
     self.pers[#"nemesis_name"] = nemesisname;
     if (nemesisname != "") {
         for (playerindex = 0; playerindex < level.players.size; playerindex++) {

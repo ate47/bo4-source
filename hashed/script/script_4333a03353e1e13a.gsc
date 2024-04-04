@@ -173,7 +173,6 @@ function function_a913e7bc(e_player) {
 // Size: 0xf8
 function function_5d984ff3() {
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         self playsound(#"hash_4941036cc35e4751");
@@ -695,7 +694,6 @@ function function_ad05ccbb() {
     level endon(#"end_game");
     self endon(#"hash_710fb070ee784064");
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         switch (self.script_int) {
@@ -745,7 +743,6 @@ function function_4aad77c2() {
     level endon(#"end_game");
     self endon(#"hash_683fe8e994aae075");
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         level flag::set(#"hash_352e983079eccab6");

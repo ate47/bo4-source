@@ -53,9 +53,7 @@ function set_default_callbacks() {
 // Checksum 0x20133d28, Offset: 0x2f8
 // Size: 0x7c
 function localclientconnect(localclientnum) {
-    /#
-        println("<unknown string>" + localclientnum);
-    #/
+    println("<unknown string>" + localclientnum);
     if (isdefined(level.charactercustomizationsetup)) {
         [[ level.charactercustomizationsetup ]](localclientnum);
     }
@@ -117,9 +115,7 @@ function entityspawned(localclientnum) {
         return;
     }
     if (!isdefined(self.type)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     if (self.type == "missile") {
@@ -219,12 +215,8 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         teamfaction = #"russian";
         break;
     default:
-        /#
-            println("<unknown string>");
-        #/
-        /#
-            println("<unknown string>" + teamfaction + "<unknown string>");
-        #/
+        println("<unknown string>");
+        println("<unknown string>" + teamfaction + "<unknown string>");
         teamfaction = #"marines";
         break;
     }
@@ -239,9 +231,7 @@ function airsupport(localclientnum, x, y, z, type, yaw, team, teamfaction, owner
         team = #"free";
         break;
     default:
-        /#
-            println("<unknown string>" + team + "<unknown string>");
-        #/
+        println("<unknown string>" + team + "<unknown string>");
         team = #"allies";
         break;
     }
@@ -311,9 +301,7 @@ function creating_corpse(localclientnum, player) {
 // Size: 0xbc
 function callback_stunned(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self.stunned = newval;
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     if (newval) {
         self notify(#"stunned");
     } else {
@@ -330,9 +318,7 @@ function callback_stunned(localclientnum, oldval, newval, bnewent, binitialsnap,
 // Size: 0x96
 function callback_emp(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     self.emp = newval;
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     if (newval) {
         self notify(#"emp");
         return;

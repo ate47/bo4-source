@@ -64,7 +64,7 @@ function initturretvehicle() {
     turretvehicle clientfield::set("enemyvehicle", 1);
     turretvehicle.soundmod = "drone_land";
     turretvehicle.overridevehiclekilled = &onturretdeath;
-    target_set(turretvehicle, vectorscale((0, 0, 1), 36));
+    target_set(turretvehicle, (0, 0, 36));
     if (isdefined(level.var_389a99a4)) {
         turretvehicle [[ level.var_389a99a4 ]]();
     }

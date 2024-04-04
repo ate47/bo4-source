@@ -76,9 +76,7 @@ function monitorgpsjammer() {
     if (minspeedsq == 0) {
         return;
     }
-    /#
-        assert(timeperiodsec >= 0.05);
-    #/
+    assert(timeperiodsec >= 0.05);
     if (timeperiodsec < 0.05) {
         return;
     }
@@ -122,7 +120,7 @@ function monitorgpsjammer() {
         if (gpsjammerprotection == 1 && self hasperk(#"specialty_gpsjammer")) {
             /#
                 if (getdvarint(#"scr_debug_perk_gpsjammer", 0) != 0) {
-                    sphere(self.origin + vectorscale((0, 0, 1), 70), 12, (0, 0, 1), 1, 1, 16, 3);
+                    sphere(self.origin + (0, 0, 70), 12, (0, 0, 1), 1, 1, 16, 3);
                 }
             #/
             currentfailcount = 0;
@@ -171,9 +169,7 @@ function monitorsengrenjammer() {
     if (minspeedsq == 0) {
         return;
     }
-    /#
-        assert(timeperiodsec >= 0.05);
-    #/
+    assert(timeperiodsec >= 0.05);
     if (timeperiodsec < 0.05) {
         return;
     }
@@ -217,7 +213,7 @@ function monitorsengrenjammer() {
         if (sgjammerprotection == 1 && self hasperk(#"specialty_sengrenjammer")) {
             /#
                 if (getdvarint(#"scr_debug_perk_sengrenjammer", 0) != 0) {
-                    sphere(self.origin + vectorscale((0, 0, 1), 65), 12, (0, 1, 0), 1, 1, 16, 3);
+                    sphere(self.origin + (0, 0, 65), 12, (0, 1, 0), 1, 1, 16, 3);
                 }
             #/
             currentfailcount = 0;

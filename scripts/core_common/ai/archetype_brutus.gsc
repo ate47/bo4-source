@@ -21,9 +21,7 @@ function autoexec init() {
 // Checksum 0x36df914c, Offset: 0xe8
 // Size: 0x24
 function private function_651f04c3() {
-    /#
-        assert(isdefined(self.ai));
-    #/
+    assert(isdefined(self.ai));
 }
 
 // Namespace archetypebrutus/archetype_brutus

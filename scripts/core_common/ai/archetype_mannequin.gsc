@@ -27,13 +27,9 @@ function autoexec init() {
     spawner::add_archetype_spawn_function(#"mannequin", &zombie_utility::zombiespawnsetup);
     spawner::add_archetype_spawn_function(#"mannequin", &mannequinspawnsetup);
     mannequininterface::registermannequininterfaceattributes();
-    /#
-        assert(isscriptfunctionptr(&mannequincollisionservice));
-    #/
+    assert(isscriptfunctionptr(&mannequincollisionservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("mannequinCollisionService", &mannequincollisionservice);
-    /#
-        assert(isscriptfunctionptr(&mannequinshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&mannequinshouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("mannequinShouldMelee", &mannequinshouldmelee);
 }
 

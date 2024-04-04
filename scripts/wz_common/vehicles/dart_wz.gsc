@@ -143,9 +143,7 @@ function private throw_dart(spawnorigin, spawnangles, itemid) {
         vehicle.ownerentnum = self.entnum;
         vehicle thread item_inventory::function_956a8ecd();
         target_set(vehicle, (0, 0, 0));
-        /#
-            assert(vehicle isremotecontrol());
-        #/
+        assert(vehicle isremotecontrol());
         vehicle usevehicle(self, 0);
         if (!self function_f35d7cf3(playereyepos, vehicle)) {
             vehicle.origin = playereyepos;
@@ -426,7 +424,6 @@ function function_b35c5fa4() {
     dart endon(#"death");
     player endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = dart waittill(#"veh_predictedcollision");
         if (waitresult.stype == "glass") {
             continue;

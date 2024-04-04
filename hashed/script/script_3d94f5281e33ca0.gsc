@@ -8,27 +8,11 @@
 class cct_shared_ingame_objective : cluielem {
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective
-    // Params 0, eflags: 0x8
-    // Checksum 0x64ecce70, Offset: 0x280
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x967aef80, Offset: 0xdc8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective
     // Params 2, eflags: 0x0
     // Checksum 0x26abd408, Offset: 0xd90
     // Size: 0x30
     function set_objpoints(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objpoints", value);
+        set_data(localclientnum, "objpoints", value);
     }
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective
@@ -36,7 +20,7 @@ class cct_shared_ingame_objective : cluielem {
     // Checksum 0xa607e24a, Offset: 0xd58
     // Size: 0x30
     function set_objectivetext(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objectiveText", value);
+        set_data(localclientnum, "objectiveText", value);
     }
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective
@@ -45,170 +29,166 @@ class cct_shared_ingame_objective : cluielem {
     // Size: 0x8fc
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"timer_on" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"hash_7b45e6511e6e3303" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"dynobj_killtoearnhellstorm" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"hash_1f92740e023d0e37" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"dynobj_killtoearnrcxd" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
         if (#"hash_2ad0da501b5586a4" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
+            set_data(localclientnum, "_state", 7);
             return;
         }
         if (#"dynobj_killtoearnswat" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
+            set_data(localclientnum, "_state", 8);
             return;
         }
         if (#"hash_4de4402f8698c768" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
+            set_data(localclientnum, "_state", 9);
             return;
         }
         if (#"dynobj_killtoearnseraphchopper" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 10);
+            set_data(localclientnum, "_state", 10);
             return;
         }
         if (#"hash_2f0272e755f4abf7" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 11);
+            set_data(localclientnum, "_state", 11);
             return;
         }
         if (#"dynobj_killtoearnlightningstrike" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 12);
+            set_data(localclientnum, "_state", 12);
             return;
         }
         if (#"hash_71743ffed428ea2f" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 13);
+            set_data(localclientnum, "_state", 13);
             return;
         }
         if (#"dynobj_killsoldiers" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 14);
+            set_data(localclientnum, "_state", 14);
             return;
         }
         if (#"hash_7d5a07e3680ec561" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 15);
+            set_data(localclientnum, "_state", 15);
             return;
         }
         if (#"dynobj_killwithpurifier" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 16);
+            set_data(localclientnum, "_state", 16);
             return;
         }
         if (#"hash_5ba30c4069a3b28" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 17);
+            set_data(localclientnum, "_state", 17);
             return;
         }
         if (#"dynobj_killmantises" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 18);
+            set_data(localclientnum, "_state", 18);
             return;
         }
         if (#"hash_83700757d6b9194" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 19);
+            set_data(localclientnum, "_state", 19);
             return;
         }
         if (#"dynobj_earnmantis" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 20);
+            set_data(localclientnum, "_state", 20);
             return;
         }
         if (#"hash_2a4442540584316a" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 21);
+            set_data(localclientnum, "_state", 21);
             return;
         }
         if (#"dynobj_earnstraferun" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 22);
+            set_data(localclientnum, "_state", 22);
             return;
         }
         if (#"hash_1a051da4d150816" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 23);
+            set_data(localclientnum, "_state", 23);
             return;
         }
         if (#"dynobj_killtoearnnomadks" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 24);
+            set_data(localclientnum, "_state", 24);
             return;
         }
         if (#"hash_21962bee0a15424" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 25);
+            set_data(localclientnum, "_state", 25);
             return;
         }
         if (#"dynobj_killzombies" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 26);
+            set_data(localclientnum, "_state", 26);
             return;
         }
         if (#"hash_29a3c52abd286a3d" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 27);
+            set_data(localclientnum, "_state", 27);
             return;
         }
         if (#"dynobj_earndart" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 28);
+            set_data(localclientnum, "_state", 28);
             return;
         }
         if (#"hash_34061eae676df48d" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 29);
+            set_data(localclientnum, "_state", 29);
             return;
         }
         if (#"dynobj_teamdefend" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 30);
+            set_data(localclientnum, "_state", 30);
             return;
         }
         if (#"hash_4bfdec8101cde9e7" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 31);
+            set_data(localclientnum, "_state", 31);
             return;
         }
         if (#"dynobj_killspawnbeacons" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 32);
+            set_data(localclientnum, "_state", 32);
             return;
         }
         if (#"hash_1a4b4231363359c4" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 33);
+            set_data(localclientnum, "_state", 33);
             return;
         }
         if (#"dynobj_killwiretrappedenemies" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 34);
+            set_data(localclientnum, "_state", 34);
             return;
         }
         if (#"hash_5c25a457d21d00a3" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 35);
+            set_data(localclientnum, "_state", 35);
             return;
         }
         if (#"oneline" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 36);
+            set_data(localclientnum, "_state", 36);
             return;
         }
         if (#"hash_6e90224596225271" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 37);
+            set_data(localclientnum, "_state", 37);
             return;
         }
         if (#"dynobj_killenemies" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 38);
+            set_data(localclientnum, "_state", 38);
             return;
         }
         if (#"hash_75d2922ca26f2a88" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 39);
+            set_data(localclientnum, "_state", 39);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective
@@ -225,9 +205,9 @@ class cct_shared_ingame_objective : cluielem {
     // Size: 0x88
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "objectiveText", #"");
-        [[ self ]]->set_data(localclientnum, "objpoints", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "objectiveText", #"");
+        set_data(localclientnum, "objpoints", 0);
     }
 
     // Namespace cct_shared_ingame_objective/ct_shared_ingame_objective

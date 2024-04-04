@@ -104,9 +104,7 @@ function init_fx() {
 // Checksum 0xef1bde51, Offset: 0xd00
 // Size: 0x7c
 function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
-        println("<unknown string>", localclientnum);
-    #/
+    println("<unknown string>", localclientnum);
     self thread postfx::playpostfxbundle("pstfx_zm_office_teleporter");
 }
 

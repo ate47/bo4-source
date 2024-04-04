@@ -62,7 +62,6 @@ function defaultrole() {
 function slow_raps_trigger() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         other = waitresult.activator;
         if (isvehicle(other) && isdefined(other.archetype) && other.archetype == "raps") {

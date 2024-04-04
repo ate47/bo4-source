@@ -8,27 +8,11 @@
 class cct_timer_mod_ticks : cluielem {
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
-    // Params 0, eflags: 0x8
-    // Checksum 0x4ffba72a, Offset: 0x230
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x4a621eb6, Offset: 0x5b0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
     // Params 2, eflags: 0x0
     // Checksum 0xf44fd624, Offset: 0x578
     // Size: 0x30
     function set_timemod(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "timeMod", value);
+        set_data(localclientnum, "timeMod", value);
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
@@ -37,38 +21,34 @@ class cct_timer_mod_ticks : cluielem {
     // Size: 0x1c4
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"plus" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"minus" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"plus_destroyedobj" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"plus_dogkill" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"hash_654551b30d95836c" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"plus_multikill" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
@@ -85,8 +65,8 @@ class cct_timer_mod_ticks : cluielem {
     // Size: 0x60
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "timeMod", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "timeMod", 0);
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks

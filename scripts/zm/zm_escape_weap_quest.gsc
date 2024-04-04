@@ -102,7 +102,6 @@ function __main__() {
 function on_player_connect() {
     self endon(#"disconnect");
     while (true) {
-        var_29b8f3d0 = undefined;
         var_29b8f3d0 = self waittill("new_" + "lethal_grenade");
         w_newweapon = var_29b8f3d0.weapon;
         var_22e180dd = self zm_loadout::get_player_lethal_grenade();
@@ -195,15 +194,15 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
     if (n_eating_anim == 3) {
         var_f2c6c759 = "Look Front";
         var_3e4fd9fd = "Eat Front";
-        var_5dedf8ea = vectorscale((0, 1, 0), 85);
+        var_5dedf8ea = (0, 85, 0);
     } else if (n_eating_anim == 4) {
         var_f2c6c759 = "Look Right";
         var_3e4fd9fd = "Eat Right";
-        var_5dedf8ea = vectorscale((0, 1, 0), 85);
+        var_5dedf8ea = (0, 85, 0);
     } else {
         var_f2c6c759 = "Look Left";
         var_3e4fd9fd = "Eat Left";
-        var_5dedf8ea = vectorscale((0, 1, 0), 85);
+        var_5dedf8ea = (0, 85, 0);
     }
     var_678e573f scene::play(#"hash_7ab2e0d1b8b97d93", "impact", ai_zombie);
     var_678e573f thread scene::play(#"hash_7ab2e0d1b8b97d93", "rise", ai_zombie);
@@ -527,7 +526,6 @@ function function_5fd2c72e() {
 // Size: 0xde
 function tomahawk_pickup_trigger() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (!e_player hasweapon(getweapon(#"tomahawk_t8")) && !e_player hasweapon(getweapon(#"tomahawk_t8_upgraded"))) {

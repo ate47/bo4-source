@@ -339,7 +339,6 @@ function function_c36eee2() {
 function function_97d7f14c() {
     self endon(#"deactivate");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger");
         if (isdefined(s_notify.activator)) {
             self thread function_a29b80e8(s_notify.activator);

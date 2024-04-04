@@ -41,7 +41,7 @@ function init_clientfields() {
 function function_7b2555da(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         if (!isdefined(self.var_55e883de)) {
-            self.var_55e883de = playfx(localclientnum, level._effect[#"candle_light"], self.origin + vectorscale((0, 0, 1), 2.7), anglestoforward(self.angles), anglestoup(self.angles));
+            self.var_55e883de = playfx(localclientnum, level._effect[#"candle_light"], self.origin + (0, 0, 2.7), anglestoforward(self.angles), anglestoup(self.angles));
         }
         return;
     }

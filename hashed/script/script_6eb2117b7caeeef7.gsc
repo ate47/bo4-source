@@ -71,9 +71,7 @@ function function_6c288c45(spawnorigin, spawnangles) {
         level.killstreakbundle[#"ultimate_turret"] = struct::get_script_bundle("killstreak", turretvehicle.killstreaksettings);
     }
     bundle = get_killstreak_bundle();
-    /#
-        assert(isdefined(bundle));
-    #/
+    assert(isdefined(bundle));
     turretvehicle solid();
     turretvehicle.overridevehicledamage = &onturretdamage;
     turretvehicle.overridevehiclekilled = &onturretdeath;
@@ -458,7 +456,6 @@ function turretscanning() {
                     var_afae28e0 = !isdefined(var_fc9f290e) || !isalive(var_fc9f290e);
                     if (min_pause_time > 0 && !var_afae28e0) {
                         pause_time = min_pause_time > max_pause_time ? min_pause_time : randomfloatrange(min_pause_time, max_pause_time);
-                        waitresult = undefined;
                         waitresult = turretvehicle.turret_target waittilltimeout(pause_time, #"death", #"disconnect");
                         var_afae28e0 = waitresult._notify === "death";
                     }
@@ -513,7 +510,6 @@ function turretscanning() {
             turretvehicle turretsettargetangles(0, (-10, -360, 0));
             turretvehicle.scanpos = "left";
         }
-        waitresult = undefined;
         waitresult = turretvehicle waittilltimeout(3.5, #"enemy");
         if (waitresult._notify == #"enemy" && isdefined(turretvehicle.enemy)) {
             if (turretvehicle.var_aac73d6c && !isdefined(turretvehicle.enemylastseentime)) {

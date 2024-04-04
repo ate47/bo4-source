@@ -94,7 +94,6 @@ function on_connect() {
 function private function_63e57124() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -162,7 +161,6 @@ function private function_304a3c9b(var_c34665fc) {
 function private function_4521ac7e(w_curr, n_lvl) {
     self endoncallback(&function_304a3c9b, #"hero_weapon_change", #"player_downed", #"disconnect", #"hero_weapon_power_off");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee_power");
         if (s_result.weapon !== w_curr) {
             continue;
@@ -251,7 +249,6 @@ function private function_89fc5431() {
 function private function_e874c3e1(weapon) {
     self endon(#"hero_weapon_change", #"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (!zm_trial_restrict_loadout::function_5fbf572(weapon)) {
             continue;
@@ -811,7 +808,6 @@ function private function_717a1af2() {
     self.var_d8eb19f5 = 0;
     self thread reset_after_bleeding_out();
     do {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_4078956b159dd0f3");
     } while (s_waitresult.weapon != w_beacon);
     if (isdefined(self.var_165b5fce)) {
@@ -832,7 +828,6 @@ function private function_717a1af2() {
 function weapon_drop_watcher() {
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_switch_started");
         if (zm_loadout::is_hero_weapon(s_waitresult.w_current)) {
             self setweaponammoclip(s_waitresult.w_current, 0);
@@ -847,7 +842,6 @@ function weapon_drop_watcher() {
 function weapon_change_watcher() {
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"hero_weapon_change");
         if (isdefined(s_waitresult.w_previous) && zm_loadout::is_hero_weapon(s_waitresult.w_current)) {
             self.var_7e973e30 = s_waitresult.w_previous;
@@ -913,12 +907,12 @@ function function_b603ab34(w_beacon) {
     }
     if (self function_22bebb6b()) {
         v_forward = anglestoforward(self.angles);
-        v_spawn_pos = self.origin + vectorscale((0, 0, 1), 32);
-        a_trace = physicstraceex(v_spawn_pos, v_spawn_pos + v_forward * 24, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+        v_spawn_pos = self.origin + (0, 0, 32);
+        a_trace = physicstraceex(v_spawn_pos, v_spawn_pos + v_forward * 24, (-16, -16, -16), (16, 16, 16), self);
         v_spawn_pos = v_spawn_pos + v_forward * a_trace[#"fraction"] * 24;
         var_4eaa1f4c = util::ground_position(v_spawn_pos, 1000, 12);
     } else {
-        var_4eaa1f4c = self.origin + vectorscale((0, 0, 1), 12);
+        var_4eaa1f4c = self.origin + (0, 0, 12);
     }
     playrumbleonposition("grenade_rumble", self.origin);
     self function_f67f53a7(var_4eaa1f4c);
@@ -1211,9 +1205,7 @@ function check_for_range_and_los(v_attack_source, n_allowed_z_diff, n_radius_sq)
 // Size: 0x224
 function function_888d5bd9(e_player) {
     e_player endon(#"beacon_retrieved", #"bled_out", #"death");
-    /#
-        assert(isdefined(e_player));
-    #/
+    assert(isdefined(e_player));
     var_2a0066d5 = 57600;
     var_a7e57ef9 = e_player.var_6afa034c.origin;
     if (!isalive(self)) {
@@ -1373,7 +1365,6 @@ function scepter_rumble(var_b2e05bae) {
 // Size: 0xac
 function function_68ff89f7(w_scepter) {
     self endon(#"hero_weapon_change", #"disconnect", #"bled_out");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee");
     if (s_result.weapon == w_scepter) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"scepter");

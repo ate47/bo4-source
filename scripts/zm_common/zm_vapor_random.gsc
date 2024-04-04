@@ -302,7 +302,6 @@ function function_20fe0559() {
     self endon(#"death");
     s_altar = self.stub.script_struct;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!isdefined(player.var_e07e301b) || !isdefined(player.var_e07e301b.script_int) || !isdefined(player.var_e07e301b.n_cost)) {
@@ -401,7 +400,7 @@ function function_2cc4144b(var_83225a27) {
     }
     level.bottle_spawn_location = util::spawn_model("tag_origin", self.origin, self.angles);
     if (isdefined(level.bottle_spawn_location)) {
-        level.bottle_spawn_location.origin = level.bottle_spawn_location.origin + vectorscale((0, 0, 1), 15);
+        level.bottle_spawn_location.origin = level.bottle_spawn_location.origin + (0, 0, 15);
         wait(1);
         self notify(#"bottle_spawned");
         self thread start_perk_bottle_cycling();
@@ -474,7 +473,6 @@ function perk_bottle_motion() {
 function function_42171e41(player) {
     s_altar = self.stub.script_struct;
     s_altar.var_46fe01e2 = 1;
-    s_result = undefined;
     s_result = self waittilltimeout(10, #"trigger");
     s_altar.var_46fe01e2 = 0;
     if (s_result._notify == "trigger" && s_result.activator === player) {

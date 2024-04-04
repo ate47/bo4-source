@@ -36,13 +36,9 @@ function __init__() {
     spawner::function_89a2cd87(#"avogadro", &function_c41e67c);
     level.var_8791f7c5 = &function_ac94df05;
     level.var_a35afcb2 = &function_7d5cf0e4;
-    /#
-        assert(isscriptfunctionptr(&avogadrodespawn));
-    #/
+    assert(isscriptfunctionptr(&avogadrodespawn));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"avogadrodespawn", &avogadrodespawn);
-    /#
-        assert(isscriptfunctionptr(&avogadrorespawn));
-    #/
+    assert(isscriptfunctionptr(&avogadrorespawn));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"avogadrorespawn", &avogadrorespawn);
 }
 
@@ -165,7 +161,6 @@ function onallcracks(entity) {
     entity pathmode("dont move", 1);
     timeout = getanimlength("ai_t8_zm_avogadro_exit");
     entity animscripted("avogadro_exit_finished", self.origin, self.angles, "ai_t8_zm_avogadro_exit", "normal", "root", 1, 0);
-    waitresult = undefined;
     waitresult = entity waittilltimeout(timeout, #"avogadro_exit_finished");
     entity ghost();
     entity notsolid();

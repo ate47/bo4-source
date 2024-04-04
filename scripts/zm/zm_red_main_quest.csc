@@ -1281,7 +1281,7 @@ function function_141a55a4(localclientnum, oldval, newval, bnewent, binitialsnap
                     if (i == 0) {
                         mdl_glyph.angles = s_glyph.angles;
                     } else {
-                        mdl_glyph.angles = s_glyph.angles + vectorscale((0, 1, 0), 180);
+                        mdl_glyph.angles = s_glyph.angles + (0, 180, 0);
                     }
                     mdl_glyph zm_blockers::power_door_ambient_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump);
                     if (!isdefined(a_mdl_glyphs)) {

@@ -186,9 +186,7 @@ function callback_vehicledamage(einflictor, eattacker, idamage, idflags, smeanso
     if (self.idflags & 8192 && idamage < unmodified) {
         idamage = unmodified;
     }
-    /#
-        assert(isdefined(idamage), "<unknown string>");
-    #/
+    assert(isdefined(idamage), "<unknown string>");
     if (idamage == 0) {
         return;
     }
@@ -394,7 +392,7 @@ function function_67e86f71(vec) {
 function vehiclecrush(eattacker, einflictor) {
     self endon(#"disconnect");
     if (isdefined(level._effect) && isdefined(level._effect[#"tanksquish"])) {
-        playfx(level._effect[#"tanksquish"], self.origin + vectorscale((0, 0, 1), 30));
+        playfx(level._effect[#"tanksquish"], self.origin + (0, 0, 30));
     }
     self playsound(#"chr_crunch");
     vehicle = einflictor;

@@ -8,27 +8,11 @@
 class cmp_laststand_client : cluielem {
 
     // Namespace cmp_laststand_client/mp_laststand_client
-    // Params 0, eflags: 0x8
-    // Checksum 0x8b6825f, Offset: 0x248
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_laststand_client/mp_laststand_client
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x5051d24e, Offset: 0x448
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cmp_laststand_client/mp_laststand_client
     // Params 2, eflags: 0x0
     // Checksum 0xe6fedaa0, Offset: 0x410
     // Size: 0x30
     function set_revive_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "revive_progress", value);
+        set_data(localclientnum, "revive_progress", value);
     }
 
     // Namespace cmp_laststand_client/mp_laststand_client
@@ -36,7 +20,7 @@ class cmp_laststand_client : cluielem {
     // Checksum 0x35e3ec9f, Offset: 0x3d8
     // Size: 0x30
     function set_bleedout_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "bleedout_progress", value);
+        set_data(localclientnum, "bleedout_progress", value);
     }
 
     // Namespace cmp_laststand_client/mp_laststand_client
@@ -53,8 +37,8 @@ class cmp_laststand_client : cluielem {
     // Size: 0x6c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "bleedout_progress", 0);
-        [[ self ]]->set_data(localclientnum, "revive_progress", 0);
+        set_data(localclientnum, "bleedout_progress", 0);
+        set_data(localclientnum, "revive_progress", 0);
     }
 
     // Namespace cmp_laststand_client/mp_laststand_client

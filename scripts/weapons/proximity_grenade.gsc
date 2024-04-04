@@ -165,7 +165,7 @@ function trackonowner(owner) {
 function setupkillcament() {
     self endon(#"death");
     self util::waittillnotmoving();
-    self.killcament = spawn("script_model", self.origin + vectorscale((0, 0, 1), 8));
+    self.killcament = spawn("script_model", self.origin + (0, 0, 8));
     self thread cleanupkillcamentondeath();
 }
 
@@ -366,7 +366,7 @@ function chainplayer(eattacker, killcament, weapon, meansofdeath, damage, proxim
             alpha = 1;
             depth = 0;
             time = 200;
-            util::debug_line(self.origin + vectorscale((0, 0, 1), 50), player.origin + vectorscale((0, 0, 1), 50), color, alpha, depth, time);
+            util::debug_line(self.origin + (0, 0, 50), player.origin + (0, 0, 50), color, alpha, depth, time);
         #/
     }
     self tesla_play_arc_fx(player, waittime);
@@ -404,7 +404,7 @@ function tesla_play_arc_fx(target, waittime) {
 // Size: 0x3c
 function debugchainsphere() {
     /#
-        util::debug_sphere(self.origin + vectorscale((0, 0, 1), 50), 20, (1, 1, 1), 1, 0);
+        util::debug_sphere(self.origin + (0, 0, 50), 20, (1, 1, 1), 1, 0);
     #/
 }
 
@@ -417,7 +417,6 @@ function watchproximitygrenadehitplayer(owner) {
     self setowner(owner);
     self setteam(owner.team);
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_bounce");
         ent = waitresult.entity;
         surface = waitresult.stype;
@@ -468,7 +467,7 @@ function damageplayerinradius(position, eattacker, killcament) {
     if (!self hasperk(#"specialty_proximityprotection")) {
         self thread watch_death();
         if (!isdefined(killcament)) {
-            killcament = spawn("script_model", position + vectorscale((0, 0, 1), 8));
+            killcament = spawn("script_model", position + (0, 0, 8));
         }
         killcament.soundmod = "taser_spike";
         killcament util::deleteaftertime(3 + level.proximitygrenadedotdamagetime * level.proximitygrenadedotdamageinstances);
@@ -478,11 +477,9 @@ function damageplayerinradius(position, eattacker, killcament) {
             damage = level.proximitygrenadedotdamageamounthardcore;
         }
         for (i = 0; i < level.proximitygrenadedotdamageinstances; i++) {
-            /#
-                assert(isdefined(eattacker));
-            #/
+            assert(isdefined(eattacker));
             if (!isdefined(killcament)) {
-                killcament = spawn("script_model", position + vectorscale((0, 0, 1), 8));
+                killcament = spawn("script_model", position + (0, 0, 8));
                 killcament.soundmod = "taser_spike";
                 killcament util::deleteaftertime(3 + level.proximitygrenadedotdamagetime * (level.proximitygrenadedotdamageinstances - i));
             }

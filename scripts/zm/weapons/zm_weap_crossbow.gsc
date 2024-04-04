@@ -200,7 +200,6 @@ function function_a4d47b95(str_notify) {
 function private function_39ffd9fc() {
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         w_current = s_waitresult.weapon;
         if (is_crossbow(w_current)) {

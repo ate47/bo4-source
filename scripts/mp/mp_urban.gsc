@@ -30,7 +30,7 @@ function event_handler[level_init] main(eventstruct) {
     compass::setupminimap("");
     level.cleandepositpoints = array((1152, 0, 200), (-1238, 68, 136), (-256, 2014, 72), (-922, -2198, 8), (1152, 1368, 72));
     level spawnkilltrigger();
-    spawncollision("collision_clip_wall_128x128x10", "collider", (-1536, 1539, 98), vectorscale((0, 1, 0), 270));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-1536, 1539, 98), (0, 270, 0));
     function_2cdcf5c3();
     level.var_a348230f = 1;
 }
@@ -60,7 +60,6 @@ function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
     }

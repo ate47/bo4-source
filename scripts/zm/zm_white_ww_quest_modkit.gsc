@@ -153,7 +153,6 @@ function modkit_hint(e_player) {
 function modkit_think() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (isdefined(e_player.var_f7694097) && e_player.var_382b64f2 === 1 && e_player.currentweapon.isheroweapon === 0 && e_player.currentweapon.name !== #"hash_603fdd2e4ae5b2b0") {

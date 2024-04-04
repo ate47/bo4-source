@@ -305,7 +305,6 @@ function function_95a52218() {
     level endon(#"end_game");
     self flag::init(#"hash_35c0d9f1ff884fce");
     self flag::init(#"hash_656721b8c4297ad5");
-    s_result = undefined;
     s_result = self waittill(#"hash_6858bc0ef6a5b4b1");
     if (!(isdefined(s_result.e_player.var_4bb711cf) && s_result.e_player.var_4bb711cf)) {
         s_result.e_player.var_4bb711cf = 1;
@@ -333,7 +332,6 @@ function function_7e94450c() {
     self.n_health = 10000;
     array::thread_all(getplayers(), &function_aaaf780e, self, t_damage);
     while (!(isdefined(self.var_b542e87f) && self.var_b542e87f)) {
-        s_waitresult = undefined;
         s_waitresult = t_damage waittill(#"damage");
         e_player = s_waitresult.attacker;
         if (s_waitresult.mod === "MOD_MELEE") {
@@ -364,7 +362,6 @@ function function_5e0885f9() {
     self function_4186be5f();
     self thread function_10310ecb();
     array::thread_all(getplayers(), &function_fa621ff5, self);
-    s_notify = undefined;
     s_notify = self waittill(#"death");
     self clientfield::set("" + #"hash_23ba81a7c071845d", 0);
     waitframe(1);
@@ -378,7 +375,6 @@ function function_5e0885f9() {
 function function_10310ecb() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker) && s_result.mod === "MOD_MELEE") {
             self dodamage(self.health + 100, self.origin, s_result.attacker);
@@ -394,7 +390,6 @@ function function_fa621ff5(e_destructible) {
     self endon(#"disconnect");
     e_destructible endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_melee");
         if (isplayer(self) && s_waitresult.weapon == getweapon(#"zhield_zpear_dw") && self util::is_looking_at(e_destructible.origin) && distance2d(e_destructible.origin, self.origin) < 100) {
             e_destructible dodamage(e_destructible.health + 100, e_destructible.origin, self);
@@ -469,7 +464,6 @@ function function_cf82cb0b() {
     mdl_hand = util::spawn_model("p8_zm_red_gauntlet_handle", v_origin, v_angles);
     mdl_hand clientfield::set("" + #"hash_23ba81a7c071845d", 1);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
         if (e_player flag::get(#"hash_664c4b8d9b3d0237") || isdefined(e_player function_996fee51())) {
@@ -1004,7 +998,6 @@ function function_9f665c5d(e_player) {
 function function_75fd2345() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player) || e_player getcurrentweapon() === level.w_sprout) {
@@ -1030,7 +1023,6 @@ function function_37c18ffd(str_hand) {
     var_a1327d58 = s_quest.var_a1327d58;
     var_a1327d58.var_afda9f06 = undefined;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = var_a1327d58 waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
         if (zm_utility::is_player_valid(e_player) && e_player flag::get(#"hash_664c4b8d9b3d0237")) {
@@ -1149,7 +1141,6 @@ function private function_f7cee57d(s_quest) {
 function function_9520e85d(str_hand) {
     s_quest = level.var_d225ea18[str_hand];
     var_a1327d58 = s_quest.var_a1327d58;
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"hash_7fe6ca08732b8a1d", #"fake_death");
     if (level flag::get("round_reset") || s_waitresult._notify == "fake_death") {
         s_waitresult.b_success = 0;
@@ -1255,7 +1246,6 @@ function function_4c66319a(str_hand) {
     mdl_uncharged_hand thread scene::play(s_quest.var_99aa2e37, "Shot 1");
     mdl_uncharged_hand thread function_6e84f472();
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
         if (zm_utility::can_use(e_player, 1) && e_player.currentweapon.name != "none") {
@@ -1361,7 +1351,6 @@ function private function_576d6fe0(e_player) {
 function function_9aa785fe(e_player) {
     self endon(#"hand_returned");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         w_hand = e_player getcurrentweapon();
         if (s_waitresult.e_who === e_player && w_hand === self.var_884c4b3a && !e_player flag::get(#"hash_8cdde8e6a8607f1") && w_hand != level.w_sprout) {
@@ -1391,7 +1380,6 @@ function function_7f7c692(str_hand) {
     s_quest thread function_57b78484(self);
     s_quest thread function_6b3c32b6(str_hand, self);
     self thread function_89b62137(var_d02a32e2.origin);
-    s_waitresult = undefined;
     s_waitresult = self waittilltimeout(30, #"fake_death");
     if (s_waitresult._notify != #"timeout") {
         b_success = 0;
@@ -1746,7 +1734,6 @@ function function_bce6357e() {
     a_mdl_coins = [];
     while (var_29ae8bf9 < 3) {
         var_a1327d58 = self.var_a1327d58;
-        s_waitresult = undefined;
         s_waitresult = var_a1327d58 waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
         if (!e_player flag::get(#"hash_8cdde8e6a8607f1")) {
@@ -2146,7 +2133,6 @@ function function_b962a4a6(var_542837e6) {
     registerpower_room_gas_heart = getweapon(#"ww_hand_h_uncharged");
     while (true) {
         var_53b15557.health = 99999;
-        s_notify = undefined;
         s_notify = var_53b15557 waittill(#"damage");
         if (s_notify.weapon === registerpower_room_gas_heart) {
             continue;
@@ -2169,7 +2155,6 @@ function function_4771e682(var_542837e6) {
     var_542837e6 endon(#"hash_2b524e51784167cc");
     mdl_mirror = getent(var_542837e6.target, "targetname");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"ww_hemera_hit");
         if (s_result.e_entity === mdl_mirror) {
             n_dist = distance(s_result.player.origin, s_result.v_position);
@@ -2306,25 +2291,21 @@ function function_85a789f1() {
     level waittill(#"junk purchased");
     level endon(#"junk purchased");
     for (i = 0; i < 3; i++) {
-        s_result = undefined;
         s_result = level waittill(#"mirror_hit");
         if (!(s_result.t_damage === "trig_mirror_damage1")) {
             return 0;
         }
     }
     for (i = 0; i < 2; i++) {
-        s_result = undefined;
         s_result = level waittill(#"mirror_hit");
         if (!(s_result.t_damage === "trig_mirror_damage2")) {
             return 0;
         }
     }
-    s_result = undefined;
     s_result = level waittill(#"mirror_hit");
     if (!(s_result.t_damage === "trig_mirror_damage3")) {
         return 0;
     }
-    s_result = undefined;
     s_result = level waittill(#"mirror_hit");
     if (!(s_result.t_damage === "trig_mirror_damage2")) {
         return 0;
@@ -2387,21 +2368,21 @@ function function_65d82d13() {
     var_2e8223db.origin = (-431.5, -583.5, 294);
     var_786815c = util::spawn_model("tag_origin", (-431.378, -583.812, 256.744));
     var_786815c linkto(var_2e8223db);
-    var_2e8223db rotateto(vectorscale((1, 0, 0), 90), 0.4);
+    var_2e8223db rotateto((90, 0, 0), 0.4);
     for (i = 0; i < 4; i++) {
         mdl_temp = util::spawn_model("tag_origin", var_786815c.origin);
         mdl_temp clientfield::set("" + #"hash_21f5fab6a3d22093", 3);
         wait(0.1);
     }
     wait(0.1);
-    var_2e8223db rotateto(vectorscale((1, 0, 0), 180), 0.4);
+    var_2e8223db rotateto((180, 0, 0), 0.4);
     for (i = 0; i < 4; i++) {
         mdl_temp = util::spawn_model("tag_origin", var_786815c.origin);
         mdl_temp clientfield::set("" + #"hash_21f5fab6a3d22093", 3);
         wait(0.1);
     }
     wait(0.1);
-    var_2e8223db rotateto(vectorscale((1, 0, 0), 270), 0.4);
+    var_2e8223db rotateto((270, 0, 0), 0.4);
     for (i = 0; i < 4; i++) {
         mdl_temp = util::spawn_model("tag_origin", var_786815c.origin);
         mdl_temp clientfield::set("" + #"hash_21f5fab6a3d22093", 3);
@@ -2447,7 +2428,6 @@ function function_fbcb1210(s_params) {
 // Size: 0x294
 function function_9aa74e4(var_542837e6, e_player, str_clientfield) {
     e_player endon(#"disconnect");
-    s_result = undefined;
     s_result = e_player waittill(#"hash_3f0faacb0cc98a9", #"fake_death");
     if (s_result._notify == "fake_death") {
         s_result.b_success = 0;
@@ -2803,7 +2783,6 @@ function function_381519d9(var_8290a028, mdl_feather, n_max_height, s_original) 
     var_8290a028 endon(#"movedone");
     out_of_range_lp_ = 32;
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"ww_ouranos_hit");
         e_player = s_result.player;
         var_2ed6f142 = e_player getweaponmuzzlepoint();
@@ -2909,7 +2888,6 @@ function function_68080923(var_52666e80, mdl_tree) {
     self clientfield::set("" + #"hash_3a6cd708b9ee114c", 1);
     zm_weap_hand_gaia::function_25513188(self);
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"ww_gaia_hit");
         v_orig = s_result.player getweaponmuzzlepoint();
         n_dist = distance(v_orig, s_result.v_position);
@@ -3029,7 +3007,6 @@ function function_ac211843(b_failed) {
         var_cb2f80a0 scene::play(#"hash_12afdd17d7f069df", "grow", var_cb2f80a0);
     }
     self flag::set(#"seedling_available");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     if (isdefined(s_result.e_who) && !(isdefined(s_result.e_who.var_9cf704b7) && s_result.e_who.var_9cf704b7)) {
         s_result.e_who.var_9cf704b7 = 1;
@@ -3147,7 +3124,6 @@ function function_54da9fac() {
 function function_1c5aedd8(e_player) {
     e_player endon(#"disconnect");
     s_quest = level.var_d225ea18[#"earth"];
-    s_result = undefined;
     s_result = e_player waittill(#"seedling_dropped", #"fake_death");
     callback::remove_on_weapon_change(&function_3462981);
     callback::function_824d206(&function_3b0917e6);
@@ -3249,7 +3225,6 @@ function function_4e2445e0() {
     self thread function_530d7ea0(1);
     e_player = undefined;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = var_a1327d58 waittill(#"hash_16ea93eb944ff512");
         if (namespace_8216831d::is_active()) {
             waitframe(1);
@@ -3366,7 +3341,6 @@ function function_6161ce9a(e_player) {
         e_player thread zm_vo::vo_say(self.var_647f1375, 0, 1, 9999, 1, 1);
     }
     if (!level flag::get("round_reset")) {
-        s_result = undefined;
         s_result = e_player waittilltimeout(20, #"hash_1b2c21ba7b18dbf9", #"hash_52d2f17ac6d67de2", #"hash_4969a839c4e666dc", #"start_beaming", #"death");
     }
     if (isdefined(s_result) && s_result._notify === "timeout") {
@@ -3484,7 +3458,6 @@ function function_cb939976(s_params) {
 // Size: 0x594
 function function_aea7779d(e_player) {
     e_player endon(#"disconnect");
-    s_result = undefined;
     s_result = e_player waittill(#"hash_4d89e2bb8e3d1eb3");
     if (isdefined(s_result.b_success) && s_result.b_success) {
         e_player disableweaponfire();
@@ -3818,7 +3791,6 @@ function function_aeaedb3c() {
     mdl_fx = util::spawn_model("tag_origin", s_tall_brazier.origin, s_tall_brazier.angles);
     mdl_fx clientfield::set("" + #"hash_1bf7e7b03fec9e45", 1);
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         /#
             if (isdefined(level.var_29e62693) && level.var_29e62693) {
@@ -4070,7 +4042,6 @@ function function_f5f50d2b(e_player) {
 function function_d62ba10e() {
     level endon(#"end_game");
     while (isdefined(level.var_dd4b2858)) {
-        s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         if (namespace_8216831d::is_active()) {
             waitframe(1);
@@ -4409,7 +4380,6 @@ function function_e7a6f333(s_params) {
 // Size: 0x674
 function function_f2081007(e_player, s_pap_interact) {
     e_player endon(#"disconnect");
-    s_result = undefined;
     s_result = e_player waittill(#"hash_2026d806e71dfad5");
     if (isdefined(s_result.b_success) && s_result.b_success) {
         if (isdefined(self.var_39ceadb3)) {
@@ -4494,7 +4464,6 @@ function function_f2081007(e_player, s_pap_interact) {
 // Size: 0xf2
 function function_99b6184() {
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"pap_taken");
         var_f75cde38 = s_result.var_5e879929.item;
         foreach (s_quest in level.var_d225ea18) {
@@ -4513,7 +4482,6 @@ function function_99b6184() {
 function function_d0b13de1() {
     self endon(#"disconnect");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"packing_weapon");
         w_cur = s_result.w_current;
         if (isdefined(function_9b3e9487(w_cur)) && function_9b3e9487(w_cur)) {
@@ -4532,7 +4500,6 @@ function function_d0b13de1() {
 // Size: 0x1d0
 function private function_63eabd37() {
     level endon(#"pap_timeout");
-    s_result = undefined;
     s_result = self waittill(#"pap_taken");
     var_eaddb452 = s_result.var_5e879929.unitrigger_stub.upgrade_weapon;
     w_previous = self.currentweapon;
@@ -4554,7 +4521,6 @@ function private function_63eabd37() {
 // Size: 0x7c
 function private function_43a6c665(w_cur) {
     level endon(#"pap_taken");
-    s_result = undefined;
     s_result = level waittill(#"pap_timeout");
     if (isdefined(s_result.e_player)) {
         s_result.e_player thread function_841236e4(w_cur, 0);

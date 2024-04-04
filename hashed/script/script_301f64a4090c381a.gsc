@@ -129,7 +129,7 @@ function function_6a7a1533(var_c5b25bc5) {
 }
 
 // Namespace namespace_e38c57c1/namespace_e38c57c1
-// Params c, eflags: 0x1 linked
+// Params 12, eflags: 0x1 linked
 // Checksum 0x3c4ac181, Offset: 0x5e0
 // Size: 0x1ba
 function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {

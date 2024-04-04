@@ -71,12 +71,11 @@ function watchsmokegrenadedetonation(owner, statweapon, smokeweapon, duration, t
     if (isplayer(owner)) {
         owner stats::function_e24eec31(statweapon, #"used", 1);
     }
-    waitresult = undefined;
     waitresult = self waittill(#"explode", #"death");
     if (waitresult._notify != "explode") {
         return;
     }
-    onefoot = vectorscale((0, 0, 1), 12);
+    onefoot = (0, 0, 12);
     startpos = waitresult.position + onefoot;
     smokedetonate(owner, statweapon, smokeweapon, waitresult.position, function_79d42bea(smokeweapon), totaltime, duration);
     damageeffectarea(owner, startpos, smokeweapon.explosionradius, level.willypetedamageheight);
@@ -309,7 +308,6 @@ function function_87d0a127(grenadeent, smokeweapon) {
     grenadeteam = grenadeent.team;
     owner = grenadeent.smoketrigger.owner;
     while (true) {
-        waitresult = undefined;
         waitresult = grenadeent waittilltimeout(0.25, #"death");
         if (isdefined(owner)) {
             if (isdefined(grenadeent) && isdefined(grenadeent.smoketrigger) && owner istouching(grenadeent.smoketrigger) && waitresult._notify == #"timeout") {
@@ -334,7 +332,6 @@ function function_8b6ddd71(grenadeent, smokeweapon) {
     }
     grenadeteam = grenadeent.team;
     while (true) {
-        waitresult = undefined;
         waitresult = grenadeent waittilltimeout(0.25, #"death");
         foreach (player in level.players) {
             curval = player clientfield::get("insmoke");

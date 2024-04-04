@@ -220,7 +220,7 @@ function function_66051772() {
                 debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (1, 1, 0), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"grey":
-                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, vectorscale((1, 1, 1), 0.75), 1, (0, 0, 0), 1, 1, 1);
+                debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (0.75, 0.75, 0.75), 1, (0, 0, 0), 1, 1, 1);
                 break;
             case #"orange":
                 debug2dtext((35, 110, 0), "<unknown string>" + level.var_49f26c00.var_8a28a9a, (1, 0.5, 0), 1, (0, 0, 0), 1, 1, 1);
@@ -331,7 +331,6 @@ function function_d940763b(localclientnum) {
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_02_bundle", "mixer_idle");
     level thread scene::play(#"p8_fxanim_core_frontend_zm_lab_mixer_fluid_03_bundle", "mixer_idle");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_201d829556393f76", #"hash_7e320f49f449ea9f", #"hash_6d47a1e190b93eaf", #"hash_7c3e120025ea0122", #"hash_341a5b4aa52ea814", #"talisman_show_label", #"bottle1_fill_complete", #"bottle1_leave", #"hash_1d604ddf352ddcca", #"hash_6551ceddc995b613");
         switch (waitresult._notify) {
         case #"hash_201d829556393f76":
@@ -1220,7 +1219,6 @@ function function_365bef4(localclientnum, b_debug = 0) {
     function_a8188266(0, 2);
     var_fc9cafb5 = gettime();
     if (!level flag::get(#"hash_511b4468376ea105") && !b_debug) {
-        waitresult = undefined;
         waitresult = level waittilltimeout(10, #"hash_511b4468376ea105");
         if (waitresult._notify == #"timeout") {
             function_205528f5(localclientnum);
@@ -1268,7 +1266,6 @@ function function_365bef4(localclientnum, b_debug = 0) {
     if (b_debug) {
         wait(3);
     } else {
-        waitresult = undefined;
         waitresult = level waittill(#"mix_again");
     }
     if (isdefined(level.var_49f26c00.var_42c70173)) {
@@ -1383,7 +1380,6 @@ function function_4053acdb(localclientnum) {
     if (isdefined(level.var_49f26c00.var_42c70173)) {
         level scene::stop(level.var_49f26c00.var_42c70173, 1);
     }
-    waitresult = undefined;
     waitresult = level waittill(#"mix_again");
     if (isdefined(waitresult.param1) && waitresult.param1 == #"1") {
         function_a8f6e36c(localclientnum, 5);
@@ -1432,7 +1428,6 @@ function function_254a0f6d(localclientnum) {
     function_9c935526();
     var_fc9cafb5 = gettime();
     if (!level flag::get(#"hash_511b4468376ea105")) {
-        waitresult = undefined;
         waitresult = level waittilltimeout(10, #"hash_511b4468376ea105");
         if (waitresult._notify == #"timeout") {
             function_205528f5(localclientnum);
@@ -1463,7 +1458,6 @@ function function_254a0f6d(localclientnum) {
     level flag::wait_till_all(array(#"hash_71fc63117cc5bf06" + 1, #"hash_71fc63117cc5bf06" + 2, #"hash_71fc63117cc5bf06" + 3, #"hash_c5112e5b6ad4e15"));
     function_a8f6e36c(localclientnum, 3);
     function_a8f6e36c(localclientnum, 4);
-    waitresult = undefined;
     waitresult = level waittill(#"mix_again");
     if (isdefined(level.var_49f26c00.var_42c70173)) {
         level scene::stop(level.var_49f26c00.var_42c70173, 1);
@@ -1789,7 +1783,6 @@ function fill_bottle(localclientnum, var_1a44a9d9, var_6d1c3912, var_7046a27c, v
 // Checksum 0x84a3bbe9, Offset: 0xacb8
 // Size: 0xc8
 function function_6605d119(localclientnum, ...) {
-    s_waitresult = undefined;
     s_waitresult = level waittill(#"mix_again", #"laboratory_closed");
     foreach (n_fx_id in vararg) {
         stopfx(localclientnum, n_fx_id);
@@ -1864,11 +1857,7 @@ function function_8cd01001(localclientnum, var_77a22652, var_bd6d31e7, var_db346
     var_7953f5b8 = function_18d7cd9b(localclientnum, 2);
     var_6b14d93a = function_18d7cd9b(localclientnum, 3);
     if (!isdefined(var_469e104d) || !isdefined(var_7953f5b8) || !isdefined(var_6b14d93a)) {
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     var_7ebd7c4f = level.var_49f26c00.var_f538d7d4[var_469e104d];

@@ -171,9 +171,7 @@ function function_b2cc6703(targets) {
     var_8ec7f501 = undefined;
     highest = -1;
     for (idx = 0; idx < targets.size; idx++) {
-        /#
-            assert(isdefined(targets[idx].var_629a6b13[entnum]), "<unknown string>");
-        #/
+        assert(isdefined(targets[idx].var_629a6b13[entnum]), "<unknown string>");
         if (targets[idx].var_629a6b13[entnum] >= highest) {
             highest = targets[idx].var_629a6b13[entnum];
             var_8ec7f501 = targets[idx];

@@ -24,6 +24,6 @@ function __init__() {
 // Checksum 0x9d9f7dfc, Offset: 0x100
 // Size: 0x4e
 function __main__() {
-    var_bb230d1 = spawncollision("collision_bullet_wall_128x128x10", "collider", (940, 948, -216), vectorscale((0, 1, 0), 45));
+    var_bb230d1 = spawncollision("collision_bullet_wall_128x128x10", "collider", (940, 948, -216), (0, 45, 0));
 }
 

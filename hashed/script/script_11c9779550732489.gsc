@@ -94,7 +94,7 @@ function function_f0e07568(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_7353e021(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!isdefined(self.var_a86cb7e0)) {
         var_1eaed254 = struct::get("s_spin_trap_place_loc");
-        self.var_a86cb7e0 = util::spawn_model(localclientnum, var_1eaed254.model, var_1eaed254.origin - vectorscale((0, 0, 1), 3), var_1eaed254.angles);
+        self.var_a86cb7e0 = util::spawn_model(localclientnum, var_1eaed254.model, var_1eaed254.origin - (0, 0, 3), var_1eaed254.angles);
     }
     if (newval) {
         self.var_a86cb7e0 show();
@@ -111,7 +111,7 @@ function function_7353e021(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_3b405536(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (!isdefined(self.var_40bb11af)) {
         var_1eaed254 = struct::get("s_fan_trap_place_loc");
-        self.var_40bb11af = util::spawn_model(localclientnum, var_1eaed254.model, var_1eaed254.origin - vectorscale((0, 0, 1), 3), var_1eaed254.angles);
+        self.var_40bb11af = util::spawn_model(localclientnum, var_1eaed254.model, var_1eaed254.origin - (0, 0, 3), var_1eaed254.angles);
     }
     if (newval) {
         self.var_40bb11af show();
@@ -127,7 +127,7 @@ function function_3b405536(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xdc
 function function_46b21d8a(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     var_1eaed254 = struct::get("s_spin_trap_place_loc");
-    self.var_73fb3946 = playfx(localclientnum, level._effect[#"hash_1aa1c7790dc67d1e"], var_1eaed254.origin - vectorscale((0, 0, 1), 3));
+    self.var_73fb3946 = playfx(localclientnum, level._effect[#"hash_1aa1c7790dc67d1e"], var_1eaed254.origin - (0, 0, 3));
     playsound(0, #"hash_3375efdd38e50fb8", var_1eaed254.origin);
 }
 
@@ -147,7 +147,7 @@ function function_73ca75df(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xdc
 function function_fa6bb35e(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     var_1eaed254 = struct::get("s_fan_trap_place_loc");
-    self.var_c61d3d80 = playfx(localclientnum, level._effect[#"hash_61ed2f45564d54f9"], var_1eaed254.origin - vectorscale((0, 0, 1), 3));
+    self.var_c61d3d80 = playfx(localclientnum, level._effect[#"hash_61ed2f45564d54f9"], var_1eaed254.origin - (0, 0, 3));
     playsound(0, #"hash_3375efdd38e50fb8", var_1eaed254.origin);
 }
 

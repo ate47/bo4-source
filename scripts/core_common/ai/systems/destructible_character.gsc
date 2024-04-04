@@ -163,11 +163,7 @@ function destructleftlegpieces(entity) {
 // Checksum 0xd399f97a, Offset: 0xb70
 // Size: 0x1b4
 function destructpiece(entity, piecenumber) {
-    /#
-        /#
-            assert(1 <= piecenumber && piecenumber <= 20);
-        #/
-    #/
+    assert(1 <= piecenumber && piecenumber <= 20);
     if (isdestructed(entity, piecenumber)) {
         return;
     }
@@ -307,11 +303,7 @@ function function_9885f550(entity, hitloc, var_a9e3f040) {
 // Checksum 0x517db03, Offset: 0x1278
 // Size: 0x6e
 function isdestructed(entity, piecenumber) {
-    /#
-        /#
-            assert(1 <= piecenumber && piecenumber <= 20);
-        #/
-    #/
+    assert(1 <= piecenumber && piecenumber <= 20);
     return getdestructstate(entity) & 1 << piecenumber;
 }
 

@@ -192,7 +192,6 @@ function function_a46f4413() {
 // Size: 0x88
 function function_8dc740fa(str_blueprint) {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"blueprint_completed");
         if (waitresult.blueprint.name === str_blueprint) {
             level.var_f5ad5bac++;

@@ -37,7 +37,7 @@ function door_powerup_drop(powerup_name, var_e3a28454, powerup_team, powerup_loc
     if (isdefined(level.door_powerup)) {
         level.door_powerup zm_powerups::powerup_delete();
     }
-    powerup = zm_net::network_safe_spawn("powerup", 1, "script_model", var_e3a28454 + vectorscale((0, 0, 1), 40));
+    powerup = zm_net::network_safe_spawn("powerup", 1, "script_model", var_e3a28454 + (0, 0, 40));
     powerup setmodel(#"tag_origin");
     level notify(#"powerup_dropped", powerup);
     if (isdefined(powerup)) {
@@ -118,9 +118,7 @@ function function_94cd396e(powerup_override, powerup_team, powerup_location, pow
     if (isdefined(powerup_player)) {
         self.powerup_player = powerup_player;
     } else {
-        /#
-            assert(!(isdefined(struct.player_specific) && struct.player_specific), "<unknown string>");
-        #/
+        assert(!(isdefined(struct.player_specific) && struct.player_specific), "<unknown string>");
     }
     self.powerup_name = struct.powerup_name;
     self.hint = struct.hint;

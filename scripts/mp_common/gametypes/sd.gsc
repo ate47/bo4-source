@@ -545,7 +545,7 @@ function bombs() {
         bombzone.onuse = &onuseplantobject;
         bombzone.oncantuse = &oncantuse;
         bombzone.useweapon = getweapon(#"briefcase_bomb");
-        bombzone.visuals[0].killcament = spawn("script_model", bombzone.visuals[0].origin + vectorscale((0, 0, 1), 128));
+        bombzone.visuals[0].killcament = spawn("script_model", bombzone.visuals[0].origin + (0, 0, 128));
         var_69bc8821 = spawn("script_model", trigger.origin);
         var_69bc8821.objectiveid = gameobjects::get_next_obj_id();
         var_69bc8821.curorigin = trigger.origin;
@@ -574,10 +574,8 @@ function bombs() {
         level.bombzones[level.bombzones.size] = bombzone;
         level.var_b10236da[level.var_b10236da.size] = var_69bc8821;
         bombzone.bombdefusetrig = getent(visuals[0].target, "targetname");
-        /#
-            assert(isdefined(bombzone.bombdefusetrig));
-        #/
-        bombzone.bombdefusetrig.origin = bombzone.bombdefusetrig.origin + vectorscale((0, 0, -1), 10000);
+        assert(isdefined(bombzone.bombdefusetrig));
+        bombzone.bombdefusetrig.origin = bombzone.bombdefusetrig.origin + (0, 0, -10000);
         bombzone.bombdefusetrig.label = label;
     }
     for (index = 0; index < level.bombzones.size; index++) {
@@ -597,7 +595,6 @@ function bombs() {
 // Size: 0xc4
 function setbomboverheatingafterweaponchange(useobject, overheated, heat) {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators");
-    waitresult = undefined;
     waitresult = self waittill(#"weapon_change");
     if (waitresult.weapon == useobject.useweapon) {
         self setweaponoverheating(overheated, heat, waitresult.weapon);
@@ -715,9 +712,7 @@ function oncantuse(player) {
 // Checksum 0xe2595cf9, Offset: 0x32e0
 // Size: 0x424
 function onuseplantobject(player) {
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     self gameobjects::set_flags(1);
     self.waypoint gameobjects::hide_waypoint();
     level thread bombplanted(self, player);
@@ -762,9 +757,7 @@ function onuseplantobject(player) {
 // Checksum 0xe574665f, Offset: 0x3710
 // Size: 0x42c
 function onusedefuseobject(player) {
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     self.waypoint gameobjects::set_flags(0);
     player notify(#"bomb_defused");
     /#
@@ -822,9 +815,7 @@ function ondrop(player) {
 // Checksum 0xe3e755fc, Offset: 0x3c00
 // Size: 0x284
 function onpickup(player) {
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player.isbombcarrier = 1;
     player recordgameevent("pickup");
     self gameobjects::set_model_visibility(0);
@@ -875,9 +866,7 @@ function bombplantedmusicdelay() {
 // Checksum 0xdf706317, Offset: 0x3f48
 // Size: 0xe04
 function bombplanted(destroyedobj, player) {
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     globallogic_utils::pausetimer();
     level.bombplanted = 1;
     player setweaponoverheating(1, 100, destroyedobj.useweapon);
@@ -911,7 +900,7 @@ function bombplanted(destroyedobj, player) {
                 }
             }
         #/
-        trace = bullettrace(player.origin + vectorscale((0, 0, 1), 20), player.origin - vectorscale((0, 0, 1), 2000), 0, player);
+        trace = bullettrace(player.origin + (0, 0, 20), player.origin - (0, 0, 2000), 0, player);
         tempangle = randomfloat(360);
         forward = (cos(tempangle), sin(tempangle), 0);
         forward = vectornormalize(forward - vectorscale(trace[#"normal"], vectordot(forward, trace[#"normal"])));
@@ -928,7 +917,7 @@ function bombplanted(destroyedobj, player) {
     trigger.origin = level.sdbombmodel.origin;
     trigger setcursorhint("HINT_INTERACTIVE_PROMPT");
     visuals = [];
-    defuseobject = gameobjects::create_use_object(game.attackers, trigger, visuals, vectorscale((0, 0, 1), 32), #"hash_7b74e27a1a2facf8", 1, 1);
+    defuseobject = gameobjects::create_use_object(game.attackers, trigger, visuals, (0, 0, 32), #"hash_7b74e27a1a2facf8", 1, 1);
     defuseobject gameobjects::allow_use(#"enemy");
     defuseobject gameobjects::set_use_time(level.defusetime);
     defuseobject gameobjects::set_use_text(#"mp/defusing_explosive");
@@ -973,7 +962,7 @@ function bombplanted(destroyedobj, player) {
         origin = player.origin;
     }
     bb::function_95a5b5c2("sd_bombexplode", label, team, origin);
-    explosionorigin = level.sdbombmodel.origin + vectorscale((0, 0, 1), 12);
+    explosionorigin = level.sdbombmodel.origin + (0, 0, 12);
     level.sdbombmodel hide();
     if (isdefined(destroyedobj.visuals[0])) {
         if (isdefined(player)) {
@@ -987,7 +976,7 @@ function bombplanted(destroyedobj, player) {
         }
     }
     rot = randomfloat(360);
-    explosioneffect = spawnfx(level._effect[#"bombexplosion"], explosionorigin + vectorscale((0, 0, 1), 50), (0, 0, 1), (cos(rot), sin(rot), 0));
+    explosioneffect = spawnfx(level._effect[#"bombexplosion"], explosionorigin + (0, 0, 50), (0, 0, 1), (cos(rot), sin(rot), 0));
     triggerfx(explosioneffect);
     thread sound::play_in_space("mpl_sd_exp_suitcase_bomb_main", explosionorigin);
     if (isdefined(destroyedobj.exploderindex)) {

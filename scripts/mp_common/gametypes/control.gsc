@@ -491,9 +491,7 @@ function setup_zones() {
                 return;
             }
         }
-        /#
-            assert(!errored);
-        #/
+        assert(!errored);
         zone.trigger trigger::function_1792c799(16);
         zone.trigorigin = zone.trigger.origin;
         zone.objectiveanchor = spawn("script_model", zone.origin);
@@ -555,15 +553,11 @@ function compare_zone_indicies(zone_a, zone_b) {
         return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
-        /#
-            println("kothActiveDialogBuffer" + zone_a.origin);
-        #/
+        println("kothActiveDialogBuffer" + zone_a.origin);
         return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
-        /#
-            println("kothActiveDialogBuffer" + zone_b.origin);
-        #/
+        println("kothActiveDialogBuffer" + zone_b.origin);
         return false;
     }
     if (script_index_a > script_index_b) {
@@ -718,7 +712,6 @@ function main_loop() {
     }
     level.capturedzones = 0;
     while (level.capturedzones < level.zones.size) {
-        res = undefined;
         res = level waittill(#"zone_captured");
         waitframe(1);
     }

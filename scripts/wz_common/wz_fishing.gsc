@@ -135,11 +135,11 @@ function function_12747006(boast) {
 function function_e1cd5954(v_origin) {
     self notify("58ed1cc25dba79a1");
     self endon("58ed1cc25dba79a1");
-    trace = bullettrace(v_origin + vectorscale((0, 0, 1), 40), v_origin + vectorscale((0, 0, -1), 150), 0, undefined);
+    trace = bullettrace(v_origin + (0, 0, 40), v_origin + (0, 0, -150), 0, undefined);
     if (trace[#"fraction"] < 1) {
         v_origin = trace[#"position"];
     }
-    return v_origin + vectorscale((0, 0, 1), 3);
+    return v_origin + (0, 0, 3);
 }
 
 // Namespace wz_fishing/wz_fishing
@@ -190,7 +190,7 @@ function function_7a1e21a9(fishing_rock, v_origin, player) {
     self notify("47f64769ffeb67ce");
     self endon("47f64769ffeb67ce");
     self endon(#"delete");
-    self.origin = v_origin + vectorscale((0, 0, 1), 10);
+    self.origin = v_origin + (0, 0, 10);
     height_offset = 16;
     final_origin = fishing_rock.origin + (0, 0, height_offset);
     dest_origin = function_e1cd5954(final_origin);
@@ -250,9 +250,7 @@ function function_4cfd3896(activator, laststate, state) {
     if (isdefined(self.buoy)) {
         self.buoy show();
     } else {
-        /#
-            assert(isdefined(self.buoy), "<unknown string>");
-        #/
+        assert(isdefined(self.buoy), "<unknown string>");
     }
     self.fisherman = activator;
     self.dropping_item = 0;
@@ -362,10 +360,10 @@ function function_b828bd39(player, dynent) {
         dynent.var_3fa8a746 = 1;
         player playrumbleonentity("fishing_rumble");
         self thread fishing_buoy_splash();
-        new_pos = self.origin + vectorscale((0, 0, -1), 5);
+        new_pos = self.origin + (0, 0, -5);
         self moveto(new_pos, 0.5);
         self waittill(#"movedone");
-        new_pos = self.origin + vectorscale((0, 0, 1), 5);
+        new_pos = self.origin + (0, 0, 5);
         self moveto(new_pos, 0.5);
         self waittill(#"movedone");
         dynent.var_3fa8a746 = 0;

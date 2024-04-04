@@ -138,9 +138,7 @@ function set_winner(team_or_player) {
 // Checksum 0xd9016928, Offset: 0x560
 // Size: 0x5c
 function function_35702443(platoon) {
-    /#
-        assert(isdefined(level.platoons[platoon]));
-    #/
+    assert(isdefined(level.platoons[platoon]));
     outcome::function_35702443(game.outcome.var_aefc8b8d, platoon);
 }
 

@@ -62,13 +62,9 @@ function watchriotshieldpickup() {
     self endon(#"watch_riotshield_pickup");
     self waittill(#"pickup_riotshield");
     self endon(#"weapon_change");
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     wait(0.5);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     currentweapon = self getcurrentweapon();
     self.hasriotshield = self hasriotshield();
     self.hasriotshieldequipped = currentweapon.isriotshield;
@@ -97,7 +93,6 @@ function trackriotshield() {
         self.hasriotshield = self hasriotshield();
         self.hasriotshieldequipped = currentweapon.isriotshield;
         refresh_attach = 0;
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         if (waitresult.weapon.isriotshield) {
             refresh_attach = 1;
@@ -180,7 +175,6 @@ function resetreconmodelvisibility(owner) {
 function resetreconmodelonevent(eventname, owner) {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = level waittill(eventname);
         if (isdefined(waitresult.player)) {
             owner = waitresult.player;
@@ -235,7 +229,6 @@ function spawnriotshieldcover(origin, angles) {
 // Size: 0x414
 function watchriotshielddeploy() {
     self endon(#"death", #"disconnect", #"start_riotshield_deploy");
-    waitresult = undefined;
     waitresult = self waittill(#"deploy_riotshield");
     deploy_attempt = waitresult.is_deploy_attempt;
     weapon = waitresult.weapon;
@@ -250,19 +243,11 @@ function watchriotshielddeploy() {
             item_ent = deployriotshield(self, shield_ent);
             primaries = self getweaponslistprimaries();
             /#
-                /#
-                    assert(isdefined(item_ent));
-                #/
-                /#
-                    assert(!isdefined(self.riotshieldretrievetrigger));
-                #/
-                /#
-                    assert(!isdefined(self.riotshieldentity));
-                #/
+                assert(isdefined(item_ent));
+                assert(!isdefined(self.riotshieldretrievetrigger));
+                assert(!isdefined(self.riotshieldentity));
                 if (level.gametype != "<unknown string>") {
-                    /#
-                        assert(primaries.size > 0);
-                    #/
+                    assert(primaries.size > 0);
                 }
             #/
             shield_ent clientfield::set("riotshield_state", 1);
@@ -299,20 +284,14 @@ function watchriotshielddeploy() {
 // Checksum 0x738a0f24, Offset: 0x11d0
 // Size: 0x116
 function riotshielddistancetest(origin) {
-    /#
-        /#
-            assert(isdefined(origin));
-        #/
-    #/
+    assert(isdefined(origin));
     min_dist_squared = getdvarfloat(#"riotshield_deploy_limit_radius", 0);
     min_dist_squared = min_dist_squared * min_dist_squared;
     for (i = 0; i < level.players.size; i++) {
         if (isdefined(level.players[i].riotshieldentity)) {
             dist_squared = distancesquared(level.players[i].riotshieldentity.origin, origin);
             if (min_dist_squared > dist_squared) {
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 return false;
             }
         }
@@ -326,12 +305,8 @@ function riotshielddistancetest(origin) {
 // Size: 0xfc
 function watchdeployedriotshieldents() {
     /#
-        /#
-            assert(isdefined(self.riotshieldretrievetrigger));
-        #/
-        /#
-            assert(isdefined(self.riotshieldentity));
-        #/
+        assert(isdefined(self.riotshieldretrievetrigger));
+        assert(isdefined(self.riotshieldentity));
     #/
     self waittill(#"destroy_riotshield");
     if (isdefined(self.riotshieldretrievetrigger)) {
@@ -357,7 +332,6 @@ function watchdeployedriotshielddamage() {
     while (true) {
         self.maxhealth = 100000;
         self.health = self.maxhealth;
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         damage = waitresult.amount;
@@ -366,11 +340,7 @@ function watchdeployedriotshielddamage() {
         if (!isdefined(attacker)) {
             continue;
         }
-        /#
-            /#
-                assert(isdefined(self.owner) && isdefined(self.owner.team));
-            #/
-        #/
+        assert(isdefined(self.owner) && isdefined(self.owner.team));
         if (isplayer(attacker)) {
             if (level.teambased && !util::function_fbce7263(attacker.team, self.owner.team) && attacker != self.owner) {
                 continue;
@@ -497,7 +467,6 @@ function event_handler[grenade_fire] function_4f975761(eventstruct) {
 // Size: 0x64
 function check_stuck_to_shield() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"stuck_to_shield");
     waitresult.entity watchriotshieldstuckentitydeath(self, waitresult.owner);
 }

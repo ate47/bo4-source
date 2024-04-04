@@ -98,9 +98,7 @@ function init_quest() {
         var_453ce50f zm_item_pickup::function_e8661563(&function_e8d6a81b, 1);
     }
     var_453ce50f = getent("punch_card_anim", "targetname");
-    /#
-        assert(isdefined(var_453ce50f), "<unknown string>");
-    #/
+    assert(isdefined(var_453ce50f), "<unknown string>");
     var_453ce50f hide();
     zm_sq::register(#"pernell_archive", #"step_1", #"pernell_archive_step1", &pernell_archive_step1_setup, &pernell_archive_step1_cleanup);
     zm_sq::register(#"pernell_archive", #"step_2", #"pernell_archive_step2", &pernell_archive_step2_setup, &pernell_archive_step2_cleanup);
@@ -166,7 +164,6 @@ function pernell_archive_step1_cleanup(var_5ea5c94d, ended_early) {
 // Checksum 0x21d02369, Offset: 0xf18
 // Size: 0x7c
 function function_8703c1fe() {
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     level.var_2cbf5e38 = 1;
     level flag::set(#"hash_4c30d0428f1d4060");
@@ -180,7 +177,6 @@ function function_8703c1fe() {
 // Checksum 0x9ab0db26, Offset: 0xfa0
 // Size: 0x4c
 function function_e4fcfb0a() {
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     level flag::set(#"hash_5516784173c2ee27");
 }
@@ -194,7 +190,6 @@ function function_a546fd97() {
     var_863c08bb = 0;
     var_c327a579 = 0;
     while (!var_c327a579) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         add_outtime = s_notify.attacker aat::getaatonweapon(s_notify.weapon);
         if (isdefined(add_outtime) && add_outtime.name === "zm_aat_kill_o_watt") {
@@ -349,9 +344,7 @@ function function_24510350() {
 // Size: 0x1ac
 function function_9f206255() {
     var_453ce50f = getent("punch_card_anim", "targetname");
-    /#
-        assert(isdefined(var_453ce50f), "<unknown string>");
-    #/
+    assert(isdefined(var_453ce50f), "<unknown string>");
     var_453ce50f show();
     v_starting_origin = var_453ce50f.origin;
     var_5287d229 = var_453ce50f.angles;

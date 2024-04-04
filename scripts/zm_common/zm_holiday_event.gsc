@@ -64,7 +64,6 @@ function __main__() {
 // Size: 0x6a
 function function_e95f47c2() {
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"start_of_round");
         if (s_result.n_round_number == 17) {
             level thread function_da29ac13();
@@ -159,7 +158,7 @@ function function_a33a15c() {
 // Size: 0x40c
 function function_23287dd() {
     if (!isdefined(level.var_23d44713)) {
-        level.var_23d44713 = util::spawn_model("tag_origin", level.var_17bf15ba.origin + vectorscale((0, 0, 1), 60));
+        level.var_23d44713 = util::spawn_model("tag_origin", level.var_17bf15ba.origin + (0, 0, 60));
         level.var_23d44713 clientfield::set("" + #"hash_d260ef4191c5b3d", 1);
         level.var_c94d8a40 = 1;
     }
@@ -170,17 +169,17 @@ function function_23287dd() {
             n_move_time = 1.5;
             zm_transform::function_5db4f2f5(ai_zombie, 1);
             while (isalive(ai_zombie)) {
-                if (100 > distancesquared(ai_zombie.origin + vectorscale((0, 0, 1), 60), level.var_23d44713.origin)) {
+                if (100 > distancesquared(ai_zombie.origin + (0, 0, 60), level.var_23d44713.origin)) {
                     break;
                 }
-                level.var_23d44713 moveto(ai_zombie.origin + vectorscale((0, 0, 1), 60), n_move_time);
+                level.var_23d44713 moveto(ai_zombie.origin + (0, 0, 60), n_move_time);
                 wait(0.1);
                 if (n_move_time > 0.1) {
                     n_move_time = n_move_time - 0.1;
                 }
             }
             if (isalive(ai_zombie)) {
-                level.var_23d44713.origin = ai_zombie.origin + vectorscale((0, 0, 1), 60);
+                level.var_23d44713.origin = ai_zombie.origin + (0, 0, 60);
                 while (isalive(ai_zombie) && !ai_zombie clientfield::get("zombie_eye_glow")) {
                     wait(1);
                 }
@@ -233,7 +232,7 @@ function function_1443aaa(b_success = 0) {
 // Checksum 0xb0d11d83, Offset: 0xdf0
 // Size: 0x144
 function function_ded808d5() {
-    mdl_soul = util::spawn_model("tag_origin", self.origin + vectorscale((0, 0, 1), 60));
+    mdl_soul = util::spawn_model("tag_origin", self.origin + (0, 0, 60));
     mdl_soul clientfield::set("" + #"hash_d260ef4191c5b3d", 1);
     n_move_dist = 10;
     for (i = 0; i < 6; i++) {

@@ -143,12 +143,12 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     if (attacker character_unlock::function_d7e6fa92(#"seraph_unlock")) {
         return;
     }
-    targetangles = dynent.angles + vectorscale((0, 1, 0), 90);
+    targetangles = dynent.angles + (0, 90, 0);
     var_2bbc9717 = anglestoforward(targetangles);
     if (vectordot(var_2bbc9717, direction) >= 0) {
         return;
     }
-    var_f748425e = dynent.origin + vectorscale((0, 0, 1), 60);
+    var_f748425e = dynent.origin + (0, 0, 60);
     if (distance2dsquared(var_f748425e, position) > 5 * 5) {
         return;
     }
@@ -248,7 +248,7 @@ function private function_c816ea5b() {
 function function_f6dc1aa9() {
     /#
         while (true) {
-            var_f748425e = self.origin + vectorscale((0, 0, 1), 60);
+            var_f748425e = self.origin + (0, 0, 60);
             sphere(var_f748425e, 5, (1, 1, 0));
             waitframe(1);
         }

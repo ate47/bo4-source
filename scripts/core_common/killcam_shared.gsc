@@ -87,9 +87,7 @@ function get_killcam_entity_start_time(killcamentity) {
 // Checksum 0x5d8531f7, Offset: 0x3f8
 // Size: 0x5a
 function store_killcam_entity_on_entity(killcam_entity) {
-    /#
-        assert(isdefined(killcam_entity));
-    #/
+    assert(isdefined(killcam_entity));
     self.killcamentitystarttime = get_killcam_entity_start_time(killcam_entity);
     self.killcamentityindex = killcam_entity getentitynumber();
 }
@@ -278,9 +276,7 @@ function post_round_final_killcam() {
 // Size: 0x4c
 function function_a26057ee() {
     if (potm::function_ec01de3()) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     post_round_final_killcam();
@@ -384,24 +380,18 @@ function killcam(attackernum, targetnum, killcam_entity_info, weapon, meansofdea
     self callback::function_d8abfc3d(#"on_end_game", &on_end_game);
     level.numplayerswaitingtoenterkillcam++;
     if (level.numplayerswaitingtoenterkillcam > 1) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         waitframe(level.numplayerswaitingtoenterkillcam - 1);
     }
     waitframe(1);
     level.numplayerswaitingtoenterkillcam--;
     if (!function_7f088568()) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         while (!function_7f088568()) {
             waitframe(1);
         }
     }
-    /#
-        assert(level.numplayerswaitingtoenterkillcam > -1);
-    #/
+    assert(level.numplayerswaitingtoenterkillcam > -1);
     postdeathdelay = float(gettime() - deathtime) / 1000;
     predelay = postdeathdelay + deathtimeoffset;
     killcamentitystarttime = get_killcam_entity_info_starttime(killcam_entity_info);
@@ -651,7 +641,6 @@ function spawned_killcam_cleanup() {
 function spectator_killcam_cleanup(attacker) {
     self endon(#"end_killcam", #"disconnect");
     attacker endon(#"disconnect");
-    waitresult = undefined;
     waitresult = attacker waittill(#"begin_killcam");
     waittime = max(0, waitresult.start_time - self.deathtime - 50);
     wait(waittime);

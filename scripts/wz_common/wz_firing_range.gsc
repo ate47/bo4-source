@@ -38,9 +38,7 @@ function private init_target() {
         totalms = totalms + struct.script_int;
         struct = struct::get(struct.target, "targetname");
     } while (struct != var_dc0e8c88);
-    /#
-        assert(structs.size == 2);
-    #/
+    assert(structs.size == 2);
     self.structs = structs;
     self.totalms = totalms;
     return true;
@@ -94,7 +92,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     if (function_ffdbe8c2(dynent) != 0) {
         return;
     }
-    angles = dynent.angles - vectorscale((0, 1, 0), 270);
+    angles = dynent.angles - (0, 270, 0);
     fwd = anglestoforward(angles);
     if (vectordot((0, 0, 0) - eventstruct.dir, fwd) <= 0) {
         return;

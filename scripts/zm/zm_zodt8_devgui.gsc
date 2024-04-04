@@ -262,9 +262,7 @@ function private function_51855e65(round_number) {
     /#
         var_efac84b3 = array(0, 500, 1000, 1000, 1400, 4000, 5000, 5500, 5500, 5500, 8000, 8000, 8000, 8000, 9000, 9000, 9000, 9500, 9500, 9500, 9500, 11000, 11000, 11000, 11000, 13000, 13000, 13000, 13000, 14000);
         round_index = round_number - 1;
-        /#
-            assert(round_index >= 0 && round_index < 30);
-        #/
+        assert(round_index >= 0 && round_index < 30);
         foreach (player in getplayers()) {
             player zm_score::function_c1f146ff(var_efac84b3[round_index]);
         }
@@ -273,9 +271,7 @@ function private function_51855e65(round_number) {
             level flag::set(#"hash_3e80d503318a5674");
         }
         if (round_number >= 8) {
-            /#
-                assert(isdefined(level.var_4fe2f84d[#"zblueprint_shield_dual_wield"]));
-            #/
+            assert(isdefined(level.var_4fe2f84d[#"zblueprint_shield_dual_wield"]));
             foreach (trigger in level.var_4fe2f84d[#"zblueprint_shield_dual_wield"]) {
                 trigger.crafted = 1;
                 trigger.blueprint = trigger.craftfoundry;

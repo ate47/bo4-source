@@ -73,9 +73,7 @@ function startrewindableevent(localclientnum, timekey) {
     allfunctionsstarted = 0;
     while (allfunctionsstarted == 0) {
         allfunctionsstarted = 1;
-        /#
-            assert(isdefined(self.timedfunctions));
-        #/
+        assert(isdefined(self.timedfunctions));
         timedfunctionkeys = getarraykeys(self.timedfunctions);
         for (i = 0; i < timedfunctionkeys.size; i++) {
             timedfunction = self.timedfunctions[timedfunctionkeys[i]];
@@ -163,9 +161,7 @@ function addtimedfunction(name, func, relativestarttimeinsecs) {
     if (!isdefined(self.timedfunctions)) {
         self.timedfunctions = [];
     }
-    /#
-        assert(!isdefined(self.timedfunctions[name]));
-    #/
+    assert(!isdefined(self.timedfunctions[name]));
     self.timedfunctions[name] = spawnstruct();
     self.timedfunctions[name].inprogress = 0;
     self.timedfunctions[name].func = func;
@@ -216,9 +212,7 @@ function addrewindableeventtowatcher(starttime, data) {
 function servertimedmoveto(localclientnum, startpoint, endpoint, starttime, duration) {
     level endon("demo_jump" + localclientnum);
     timeelapsed = (getservertime(0) - starttime) * 0.001;
-    /#
-        assert(duration > 0);
-    #/
+    assert(duration > 0);
     dojump = 1;
     if (timeelapsed < 0.02) {
         dojump = 0;
@@ -249,9 +243,7 @@ function servertimedrotateto(localclientnum, angles, starttime, duration, timein
     if (!isdefined(timeout)) {
         timeout = 0;
     }
-    /#
-        assert(duration > 0);
-    #/
+    assert(duration > 0);
     if (timeelapsed < duration) {
         rotatetime = duration - timeelapsed;
         self rotateto(angles, rotatetime, timein, timeout);

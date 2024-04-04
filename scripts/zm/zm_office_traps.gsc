@@ -95,7 +95,6 @@ function function_cebfdd08() {
         level flag::set(self.script_flag_wait);
     } else {
         while (!level flag::get(self.script_flag_wait)) {
-            waitresult = undefined;
             waitresult = self waittill(#"trigger");
             who = waitresult.activator;
             if (zm_utility::is_player_valid(who)) {

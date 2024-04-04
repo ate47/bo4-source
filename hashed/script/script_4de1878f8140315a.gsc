@@ -8,27 +8,11 @@
 class cct_shared_ingame_hint : cluielem {
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
-    // Params 0, eflags: 0x8
-    // Checksum 0x7e83214e, Offset: 0x238
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x2a78f91e, Offset: 0x670
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
     // Params 2, eflags: 0x0
     // Checksum 0x3ad3dde8, Offset: 0x638
     // Size: 0x30
     function set_ingamehint(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "inGameHint", value);
+        set_data(localclientnum, "inGameHint", value);
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
@@ -37,50 +21,46 @@ class cct_shared_ingame_hint : cluielem {
     // Size: 0x26c
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"green" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"grey" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"red" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"green_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"grey_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
         if (#"red_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
+            set_data(localclientnum, "_state", 7);
             return;
         }
         if (#"red_paused" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
+            set_data(localclientnum, "_state", 8);
             return;
         }
         if (#"hash_3d131b584420ca82" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
+            set_data(localclientnum, "_state", 9);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint
@@ -97,8 +77,8 @@ class cct_shared_ingame_hint : cluielem {
     // Size: 0x6c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "inGameHint", #"");
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "inGameHint", #"");
     }
 
     // Namespace cct_shared_ingame_hint/ct_shared_ingame_hint

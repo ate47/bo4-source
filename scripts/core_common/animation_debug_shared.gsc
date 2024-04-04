@@ -88,10 +88,10 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, va
             self anim_origin_render(s_pos.origin, s_pos.angles, undefined, undefined, !true);
             if (true) {
                 line(self.origin, s_pos.origin, color, 0.5, 1);
-                sphere(s_pos.origin, 2, vectorscale((1, 1, 1), 0.3), 0.5, 1);
+                sphere(s_pos.origin, 2, (0.3, 0.3, 0.3), 0.5, 1);
             }
             recordline(self.origin, s_pos.origin, color, "<unknown string>");
-            recordsphere(s_pos.origin, 2, vectorscale((1, 1, 1), 0.3), "<unknown string>");
+            recordsphere(s_pos.origin, 2, (0.3, 0.3, 0.3), "<unknown string>");
             if (!isvec(v_origin_or_ent) && v_origin_or_ent != self && v_origin_or_ent != level) {
                 str_name = "<unknown string>";
                 if (isdefined(v_origin_or_ent.animname)) {
@@ -100,9 +100,9 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, va
                     str_name = v_origin_or_ent.targetname;
                 }
                 if (true) {
-                    print3d(v_origin_or_ent.origin + vectorscale((0, 0, 1), 5), str_name, vectorscale((1, 1, 1), 0.3), 1, 0.15);
+                    print3d(v_origin_or_ent.origin + (0, 0, 5), str_name, (0.3, 0.3, 0.3), 1, 0.15);
                 }
-                record3dtext(str_name, v_origin_or_ent.origin + vectorscale((0, 0, 1), 5), vectorscale((1, 1, 1), 0.3), "<unknown string>");
+                record3dtext(str_name, v_origin_or_ent.origin + (0, 0, 5), (0.3, 0.3, 0.3), "<unknown string>");
             }
             self anim_origin_render(self.origin, self.angles, undefined, undefined, !true);
             str_name = "<unknown string>";
@@ -116,15 +116,15 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, va
             maso_they_don_t_see_us_ye_ = self.origin - (0, 0, 15 * n_same_origin_index);
             if (true) {
                 print3d(maso_they_don_t_see_us_ye_, self getentnum() + get_ent_type() + "<unknown string>" + str_name, color, 0.8, 0.3);
-                print3d(maso_they_don_t_see_us_ye_ - vectorscale((0, 0, 1), 5), "<unknown string>" + (isanimlooping(animation) ? "<unknown string>" : "<unknown string>") + function_9e72a96(animation), color, 0.8, 0.3);
-                print3d(maso_they_don_t_see_us_ye_ - vectorscale((0, 0, 1), 11), str_extra_info, color, 0.8, 0.3);
+                print3d(maso_they_don_t_see_us_ye_ - (0, 0, 5), "<unknown string>" + (isanimlooping(animation) ? "<unknown string>" : "<unknown string>") + function_9e72a96(animation), color, 0.8, 0.3);
+                print3d(maso_they_don_t_see_us_ye_ - (0, 0, 11), str_extra_info, color, 0.8, 0.3);
                 if (isdefined(var_1c56a327)) {
-                    print3d(maso_they_don_t_see_us_ye_ - vectorscale((0, 0, 1), 13), var_1c56a327, color, 0.8, 0.15);
+                    print3d(maso_they_don_t_see_us_ye_ - (0, 0, 13), var_1c56a327, color, 0.8, 0.15);
                 }
             }
             record3dtext(self getentnum() + get_ent_type() + "<unknown string>" + str_name, maso_they_don_t_see_us_ye_, color, "<unknown string>");
-            record3dtext("<unknown string>" + animation, maso_they_don_t_see_us_ye_ - vectorscale((0, 0, 1), 5), color, "<unknown string>");
-            record3dtext(str_extra_info, maso_they_don_t_see_us_ye_ - vectorscale((0, 0, 1), 7), color, "<unknown string>");
+            record3dtext("<unknown string>" + animation, maso_they_don_t_see_us_ye_ - (0, 0, 5), color, "<unknown string>");
+            record3dtext(str_extra_info, maso_they_don_t_see_us_ye_ - (0, 0, 7), color, "<unknown string>");
             render_tag("<unknown string>", "<unknown string>", !true);
             render_tag("<unknown string>", "<unknown string>", !true);
             render_tag("<unknown string>", "<unknown string>", !true);
@@ -190,9 +190,9 @@ function render_tag(str_tag, str_label, b_recorder_only) {
             v_tag_ang = self gettagangles(str_tag);
             anim_origin_render(v_tag_org, v_tag_ang, 2, str_label, b_recorder_only);
             if (!b_recorder_only) {
-                line(self.v_centroid, v_tag_org, vectorscale((1, 1, 1), 0.3), 0.5, 1);
+                line(self.v_centroid, v_tag_org, (0.3, 0.3, 0.3), 0.5, 1);
             }
-            recordline(self.v_centroid, v_tag_org, vectorscale((1, 1, 1), 0.3), "<unknown string>");
+            recordline(self.v_centroid, v_tag_org, (0.3, 0.3, 0.3), "<unknown string>");
         }
     #/
 }

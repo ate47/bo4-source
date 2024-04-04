@@ -774,7 +774,6 @@ function function_c61566f4() {
     level.var_4bdbb7de = 0;
     wait(0.1);
     while (!(isdefined(level.var_4bdbb7de) && level.var_4bdbb7de)) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify.weapon == getweapon(#"shock_rifle") && s_notify.mod == "MOD_IMPACT") {
             level.var_4bdbb7de = 1;
@@ -878,7 +877,6 @@ function function_5398e045() {
     self thread ct_utils::function_61c3d59c(#"hash_5a15cd7ce4d7ba35", undefined);
     wait(1);
     self thread function_8bbca25b();
-    s_notify = undefined;
     s_notify = level waittill(#"tempest2_enemy_killed", #"hash_7cc7c12d2396a9e", #"hash_6af26ccf744145f0");
     if (s_notify._notify !== "tempest2_enemy_killed") {
         self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_chain_group_stun"));
@@ -926,7 +924,6 @@ function function_c4546e73(s_start_loc) {
     var_adf33a9e.team = #"allies";
     self setentitytarget(var_adf33a9e);
     self thread function_df8f80c4(var_adf33a9e);
-    s_notify = undefined;
     s_notify = self waittill(#"damage");
     self notify(#"hash_624290b3f2248336");
     level notify(#"tempest2_enemy_zapped");
@@ -934,7 +931,6 @@ function function_c4546e73(s_start_loc) {
     wait(randomfloatrange(0.75, 1.75));
     self val::reset(#"enemy_bot", "ignoreall");
     self thread function_b559b2a5();
-    s_notify = undefined;
     s_notify = self waittill(#"shock_end");
     level notify(#"hash_3638801d24dda821");
 }
@@ -1137,7 +1133,6 @@ function function_4938210c(s_loc) {
 function function_80ad1ef6() {
     level endon(#"combattraining_logic_finished");
     var_539244d1 = getweapon(#"shock_rifle");
-    s_notify = undefined;
     s_notify = self waittill(#"damage");
     if (s_notify.weapon === var_539244d1 && s_notify.mod == "MOD_UNKNOWN") {
         level notify(#"enemy_tempest_chained");

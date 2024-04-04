@@ -31,9 +31,7 @@ function __init__() {
 // Size: 0x9c
 function private on_begin(var_6ad4e7c6) {
     fasttravel_triggers = struct::get_array("fasttravel_trigger", "targetname");
-    /#
-        assert(isdefined(fasttravel_triggers));
-    #/
+    assert(isdefined(fasttravel_triggers));
     zm_trial_util::function_2976fa44(fasttravel_triggers.size);
     zm_trial_util::function_dace284(0);
     level thread function_25f146be();
@@ -47,9 +45,7 @@ function private on_end(round_reset) {
     zm_trial_util::function_f3dbeda7();
     if (!round_reset) {
         fasttravel_triggers = struct::get_array("fasttravel_trigger", "targetname");
-        /#
-            assert(isdefined(fasttravel_triggers));
-        #/
+        assert(isdefined(fasttravel_triggers));
         if (function_c83a4a77() < fasttravel_triggers.size) {
             zm_trial::fail(#"hash_6d65e724625758f1");
         }
@@ -62,9 +58,7 @@ function private on_end(round_reset) {
 // Size: 0xf2
 function private function_c83a4a77() {
     fasttravel_triggers = struct::get_array("fasttravel_trigger", "targetname");
-    /#
-        assert(isdefined(fasttravel_triggers));
-    #/
+    assert(isdefined(fasttravel_triggers));
     count = 0;
     foreach (trigger in fasttravel_triggers) {
         if (isdefined(trigger.unitrigger_stub.used) && trigger.unitrigger_stub.used) {

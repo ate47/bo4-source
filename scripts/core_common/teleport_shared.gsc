@@ -18,9 +18,7 @@ function team(kvp, var_dad37549, var_b095575e = 0) {
         return 0;
     }
     if (var_bac46abd.a_s_players.size < level.players.size) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return undefined;
     }
     foreach (e_player in level.players) {
@@ -138,9 +136,7 @@ function private function_e6615993(kvp, var_dad37549) {
         var_dad37549 = 0;
     }
     if (!isdefined(str_value) || !isdefined(str_key)) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return undefined;
     }
     return {#str_value:str_value, #str_key:str_key, #var_dad37549:var_dad37549};
@@ -185,9 +181,7 @@ function private function_166effac(kvp, var_dad37549) {
             }
         }
         if (a_s_heroes.size < level.heroes.size) {
-            /#
-                assertmsg("<unknown string>");
-            #/
+            assertmsg("<unknown string>");
             return undefined;
         }
     }

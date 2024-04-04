@@ -73,9 +73,7 @@ function function_48f49769() {
 // Checksum 0xffa3d21, Offset: 0x480
 // Size: 0x398
 function function_6408c105() {
-    /#
-        assert(isdefined(level._spawned_wallbuys));
-    #/
+    assert(isdefined(level._spawned_wallbuys));
     foreach (wallbuy in level._spawned_wallbuys) {
         s_target = struct::get(wallbuy.target, "targetname");
         if (isdefined(s_target) && isdefined(s_target.target)) {
@@ -92,9 +90,7 @@ function function_6408c105() {
             }
         }
         if (isdefined(wallbuy.trigger_stub) && isdefined(wallbuy.trigger_stub.clientfieldname)) {
-            /#
-                assert(!isdefined(wallbuy.var_d6cca569));
-            #/
+            assert(!isdefined(wallbuy.var_d6cca569));
             wallbuy.var_d6cca569 = level clientfield::get(wallbuy.trigger_stub.clientfieldname);
             level clientfield::set(wallbuy.trigger_stub.clientfieldname, 0);
         }
@@ -114,9 +110,7 @@ function function_6408c105() {
 // Checksum 0x52838612, Offset: 0x820
 // Size: 0x378
 function show_zbarriers() {
-    /#
-        assert(isdefined(level._spawned_wallbuys));
-    #/
+    assert(isdefined(level._spawned_wallbuys));
     foreach (wallbuy in level._spawned_wallbuys) {
         target_struct = struct::get(wallbuy.target, "targetname");
         if (isdefined(target_struct) && isdefined(target_struct.target)) {
@@ -133,9 +127,7 @@ function show_zbarriers() {
             }
         }
         if (isdefined(wallbuy.trigger_stub) && isdefined(wallbuy.trigger_stub.clientfieldname)) {
-            /#
-                assert(isdefined(wallbuy.var_d6cca569));
-            #/
+            assert(isdefined(wallbuy.var_d6cca569));
             level clientfield::set(wallbuy.trigger_stub.clientfieldname, wallbuy.var_d6cca569);
             wallbuy.var_d6cca569 = undefined;
         }
@@ -220,7 +212,6 @@ function function_c05cc102(s_params) {
     if (s_params.weapon != level.w_wraithfire) {
         return;
     }
-    s_waitresult = undefined;
     s_waitresult = s_params.projectile waittill(#"projectile_impact_explode", #"explode", #"death");
     if (isdefined(s_params.projectile) && s_waitresult._notify == "death") {
         level notify(#"hash_3042a9bf2f57ea0a", {#attacker:self, #var_814c9389:s_params.projectile.origin});

@@ -70,9 +70,7 @@ function function_1c61050d(local_client_num, objective_id) {
 // Checksum 0x8d9d5281, Offset: 0x358
 // Size: 0xd4
 function function_7a677105(weapon) {
-    /#
-        assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
-    #/
+    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
     if (!isdefined(level.var_825acea)) {
         level.var_825acea = [];
     }

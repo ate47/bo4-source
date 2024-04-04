@@ -296,7 +296,6 @@ function kothcaptureloop() {
         level.zone.gameobject.ontouchuse = &ontouchuse;
         level.zone.gameobject.onupdateuserate = &onupdateuserate;
         level.zone togglezoneeffects(1);
-        msg = undefined;
         msg = level waittill(#"zone_captured", #"zone_destroyed");
         if (msg._notify == "zone_destroyed") {
             continue;
@@ -310,7 +309,6 @@ function kothcaptureloop() {
         level.zone.gameobject.onunoccupied = &onzoneunoccupied;
         level.zone.gameobject.oncontested = &onzonecontested;
         level.zone.gameobject.onuncontested = &onzoneuncontested;
-        waitresult = undefined;
         waitresult = level waittill(#"zone_destroyed");
         if (!level.kothmode || level.zonedestroyedbytimer) {
             break;
@@ -695,9 +693,7 @@ function onzonecontested() {
 // Checksum 0xf1dee2fb, Offset: 0x3140
 // Size: 0xc8
 function onzoneuncontested(lastclaimteam) {
-    /#
-        assert(lastclaimteam == level.zone.gameobject gameobjects::get_owner_team());
-    #/
+    assert(lastclaimteam == level.zone.gameobject gameobjects::get_owner_team());
     self.iscontested = 0;
     pause_time();
     self gameobjects::set_claim_team(lastclaimteam);
@@ -799,15 +795,11 @@ function comparezoneindexes(zone_a, zone_b) {
         return false;
     }
     if (!isdefined(script_index_a) && isdefined(script_index_b)) {
-        /#
-            println("<unknown string>" + zone_a.origin);
-        #/
+        println("<unknown string>" + zone_a.origin);
         return true;
     }
     if (isdefined(script_index_a) && !isdefined(script_index_b)) {
-        /#
-            println("<unknown string>" + zone_b.origin);
-        #/
+        println("<unknown string>" + zone_b.origin);
         return false;
     }
     if (script_index_a > script_index_b) {
@@ -872,9 +864,7 @@ function setupzones() {
                 continue;
             }
         }
-        /#
-            assert(!errored);
-        #/
+        assert(!errored);
         zone.trigorigin = zone.trig.origin;
         zone.objectiveanchor = spawn("script_model", zone.origin);
         visuals = [];
@@ -1004,9 +994,7 @@ function getnextzonefromqueue() {
     if (level.zonespawnqueue.size == 0) {
         shufflezones();
     }
-    /#
-        assert(level.zonespawnqueue.size > 0);
-    #/
+    assert(level.zonespawnqueue.size > 0);
     next_zone = level.zonespawnqueue[0];
     arrayremoveindex(level.zonespawnqueue, 0);
     return next_zone;

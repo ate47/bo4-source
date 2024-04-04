@@ -431,7 +431,6 @@ function function_4a5dac11() {
         self endon(#"hash_3ecc0277d544b441");
         self function_ea8e45a8(0);
         while (true) {
-            waitresult = undefined;
             waitresult = self waittill(#"up", #"down", #"left", #"right", #"shot");
             msg = waitresult._notify;
             if (!isdefined(msg)) {
@@ -1088,18 +1087,18 @@ function function_77511c75() {
         weapon = getweapon("<unknown string>");
         end = player.origin;
         dir = anglestoforward(player.angles);
-        start = end + dir * 100 + vectorscale((0, 0, 1), 30);
+        start = end + dir * 100 + (0, 0, 30);
         magicbullet(weapon, start, end, enemybot);
         dirback = -1 * dir;
-        start = end + dirback * 100 + vectorscale((0, 0, 1), 30);
+        start = end + dirback * 100 + (0, 0, 30);
         magicbullet(weapon, start, end, enemybot);
         dirright = anglestoright(player.angles);
-        start = end + dirright * 100 + vectorscale((0, 0, 1), 30);
+        start = end + dirright * 100 + (0, 0, 30);
         magicbullet(weapon, start, end, enemybot);
         dirleft = -1 * dirright;
-        start = end + dirleft * 100 + vectorscale((0, 0, 1), 30);
+        start = end + dirleft * 100 + (0, 0, 30);
         magicbullet(weapon, start, end, enemybot);
-        start = end + vectorscale((0, 0, 1), 100);
+        start = end + (0, 0, 100);
         magicbullet(weapon, start, end, enemybot);
         player waittilltimeout(0.3, #"damage");
         wait(0.05);
@@ -1118,7 +1117,7 @@ function function_ad8cc361() {
         }
         foreach (player in level.players) {
             if (isdefined(player) && isdefined(player.team) && player.team == game.defenders) {
-                print3d(player.origin + vectorscale((0, 0, 1), 50), "<unknown string>" + player.health);
+                print3d(player.origin + (0, 0, 50), "<unknown string>" + player.health);
             }
         }
     #/
@@ -1137,7 +1136,7 @@ function function_34a7562e() {
             velocity = player getvelocity();
             var_a79358cf = (velocity[0], velocity[1], 0);
             speed = length(var_a79358cf);
-            print3d(player.origin + vectorscale((0, 0, 1), 50), "<unknown string>" + speed);
+            print3d(player.origin + (0, 0, 50), "<unknown string>" + speed);
         }
     #/
 }
@@ -1201,7 +1200,7 @@ function function_89b4b4c() {
         player = level.players[0];
         angles = player.angles;
         dir = anglestoforward(angles);
-        origin = player.origin + vectorscale((0, 0, 1), 100);
+        origin = player.origin + (0, 0, 100);
         if (!isdefined(level.var_98714fa7)) {
             level.var_98714fa7 = [];
             foreach (category in level.proplist) {
@@ -1232,27 +1231,27 @@ function function_1f3923fa() {
         if (!level.var_f8f7808e.success) {
             color = (1, 0, 0);
         }
-        print3d(level.var_f8f7808e.playerorg + vectorscale((0, 0, 1), 50), level.var_f8f7808e.type);
+        print3d(level.var_f8f7808e.playerorg + (0, 0, 50), level.var_f8f7808e.type);
         box(level.var_f8f7808e.playerorg, level.var_f8f7808e.playermins, level.var_f8f7808e.playermaxs, level.var_f8f7808e.playerangles[1], color);
         if (isdefined(level.var_f8f7808e.origin1)) {
             sphere(level.var_f8f7808e.origin1, 5, color);
             line(level.var_f8f7808e.playerorg, level.var_f8f7808e.origin1);
             if (isdefined(level.var_f8f7808e.text1)) {
-                print3d(level.var_f8f7808e.origin1 + vectorscale((0, 0, -1), 10), level.var_f8f7808e.text1);
+                print3d(level.var_f8f7808e.origin1 + (0, 0, -10), level.var_f8f7808e.text1);
             }
         }
         if (isdefined(level.var_f8f7808e.origin2)) {
             sphere(level.var_f8f7808e.origin2, 5, color);
             line(level.var_f8f7808e.playerorg, level.var_f8f7808e.origin2);
             if (isdefined(level.var_f8f7808e.text2)) {
-                print3d(level.var_f8f7808e.origin2 + vectorscale((0, 0, 1), 10), level.var_f8f7808e.text2);
+                print3d(level.var_f8f7808e.origin2 + (0, 0, 10), level.var_f8f7808e.text2);
             }
         }
         if (isdefined(level.var_f8f7808e.origin3)) {
             sphere(level.var_f8f7808e.origin3, 5, color);
             line(level.var_f8f7808e.playerorg, level.var_f8f7808e.origin3);
             if (isdefined(level.var_f8f7808e.text3)) {
-                print3d(level.var_f8f7808e.origin3 + vectorscale((0, 0, 1), 30), level.var_f8f7808e.text3);
+                print3d(level.var_f8f7808e.origin3 + (0, 0, 30), level.var_f8f7808e.text3);
             }
         }
     #/
@@ -1289,7 +1288,7 @@ function function_5646cd5c() {
         player = level.players[0];
         angles = player.angles;
         dir = anglestoforward(angles);
-        origin = player.origin + vectorscale((0, 0, 1), 100);
+        origin = player.origin + (0, 0, 100);
         if (isdefined(level.var_2ebdcb74)) {
             foreach (clone in level.var_2ebdcb74) {
                 clone prop_controls::function_d1a1cc8d();
@@ -1314,7 +1313,7 @@ function function_5e0d41c4() {
         player = level.players[0];
         angles = player.angles;
         dir = anglestoforward(angles);
-        origin = player.origin + dir * vectorscale((0, 0, 1), 100);
+        origin = player.origin + dir * (0, 0, 100);
         propinfo = prop::getnextprop(player);
         if (!isdefined(level.var_2ebdcb74)) {
             level.var_2ebdcb74 = [];
@@ -1350,7 +1349,7 @@ function showtargets() {
         for (i = 0; i < level.var_1103f74e.targets.size; i++) {
             target = level.var_1103f74e.targets[i];
             if (isdefined(target)) {
-                print3d(target.origin + vectorscale((0, 0, 1), 30), "<unknown string>" + target.fakehealth);
+                print3d(target.origin + (0, 0, 30), "<unknown string>" + target.fakehealth);
             }
         }
     #/

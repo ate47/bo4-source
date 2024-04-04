@@ -108,9 +108,7 @@ function private function_e997bb0b(var_73d6ae36) {
 // Size: 0xd2
 function private function_49091c27() {
     challenge = zm_trial::function_a36e8c38(#"hash_250115340b2e27a5");
-    /#
-        assert(isdefined(challenge));
-    #/
+    assert(isdefined(challenge));
     new_health = self.health + challenge.var_97330ad2;
     self.health = int(math::clamp(floor(new_health), 0, max(self.maxhealth, self.var_66cb03ad)));
 }

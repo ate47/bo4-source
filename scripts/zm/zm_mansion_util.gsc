@@ -352,7 +352,7 @@ function function_43ac0bb7(str_notify) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x122fbb5b, Offset: 0x1428
 // Size: 0xea
-function function_da5cd631(v_spin = vectorscale((0, 0, 1), 180)) {
+function function_da5cd631(v_spin = (0, 0, 180)) {
     self endon(#"death", #"stop_spin");
     self notify(#"finish_wobble");
     for (n_wait = 6; true; n_wait = max(n_wait - 0.25, 0.25)) {
@@ -378,7 +378,7 @@ function function_9e147e0c(s_params) {
                 }
                 if (isdefined(v_drop)) {
                     s_loc = spawnstruct();
-                    s_loc.origin = groundtrace(v_drop + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, 1), 8), v_drop + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+                    s_loc.origin = groundtrace(v_drop + (0, 0, 32) + (0, 0, 8), v_drop + (0, 0, 32) + (0, 0, -100000), 0, self)[#"position"];
                     v_normal = getnavmeshfacenormal(v_drop, 32);
                     s_loc.angles = function_c1fa62a2(var_9cb648a3, v_normal);
                     wait(0.5);
@@ -454,7 +454,7 @@ function function_e7d4e4f0() {
     util::wait_network_frame();
     self.mdl_pickup clientfield::set("" + #"hash_487e544e29aa8e45", 1);
     playsoundatposition(#"zmb_sq_souls_release", self.mdl_pickup.origin);
-    self.origin = self.origin + vectorscale((0, 0, 1), 8);
+    self.origin = self.origin + (0, 0, 8);
     e_holder = self zm_unitrigger::function_fac87205(&function_f3d694d6, (64, 64, 100));
     if (!level flag::get("flag_player_grabbed_werewolf_material")) {
         e_holder thread zm_vo::function_a2bd5a0c(#"hash_161206ddd7dcc321", 1);
@@ -667,19 +667,19 @@ function function_5f310cf9() {
         switch (i) {
         case 0:
             v_origin = (-5381, 84, -176);
-            v_angles = vectorscale((0, 1, 0), 360);
+            v_angles = (0, 360, 0);
             break;
         case 1:
             v_origin = (-5386, 7, -176);
-            v_angles = vectorscale((0, 1, 0), 360);
+            v_angles = (0, 360, 0);
             break;
         case 2:
             v_origin = (-5390, -104, -176);
-            v_angles = vectorscale((0, 1, 0), 360);
+            v_angles = (0, 360, 0);
             break;
         case 3:
             v_origin = (-5394, -198, -176);
-            v_angles = vectorscale((0, 1, 0), 360);
+            v_angles = (0, 360, 0);
             break;
         }
         if (isdefined(v_origin) && isdefined(v_angles)) {

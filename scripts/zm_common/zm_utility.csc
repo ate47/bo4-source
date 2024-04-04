@@ -386,7 +386,6 @@ function function_467efa7b(var_9f3fb329 = 0) {
 // Size: 0x100
 function function_bb54a31f(localclientnum, var_20804e3b, var_3ab46b9) {
     self endon(var_3ab46b9);
-    s_result = undefined;
     s_result = level waittill(#"respawn");
     a_e_players = getlocalplayers();
     foreach (e_player in a_e_players) {
@@ -402,7 +401,6 @@ function function_bb54a31f(localclientnum, var_20804e3b, var_3ab46b9) {
 // Size: 0xf6
 function function_ae3780f1(localclientnum, n_fx_id, var_3ab46b9) {
     self endon(var_3ab46b9);
-    s_result = undefined;
     s_result = level waittill(#"respawn");
     a_e_players = getlocalplayers();
     foreach (e_player in a_e_players) {

@@ -41,9 +41,7 @@ function createcommander(team) {
 // Checksum 0xb8fcb612, Offset: 0x3e0
 // Size: 0x74
 function commanderdaemons(commander) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     plannercommanderutility::adddaemon(commander, "daemonClients");
     plannercommanderutility::adddaemon(commander, "daemonGameobjects");
 }
@@ -53,9 +51,7 @@ function commanderdaemons(commander) {
 // Checksum 0x2738d30c, Offset: 0x460
 // Size: 0x1b4
 function commanderutilityevaluators(commander) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     plannercommanderutility::addsquadevaluator(commander, "commanderScoreBotChain");
     plannercommanderutility::addsquadevaluator(commander, "commanderScoreBotPresence");
     plannercommanderutility::addsquadevaluator(commander, "commanderScoreBotVehiclePresence");

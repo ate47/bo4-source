@@ -43,7 +43,6 @@ function onentityspawned(e_entity) {
 function onentitydamaged(x, e_entity) {
     e_entity endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = e_entity waittill(#"damage");
         self flowgraph::kick(array(1, e_entity, waitresult.amount, waitresult.attacker, waitresult.direction, waitresult.position, waitresult.mod, waitresult.model_name, waitresult.tag_name, waitresult.part_name, waitresult.weapon, waitresult.flags));
     }

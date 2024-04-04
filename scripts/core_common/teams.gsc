@@ -6,9 +6,7 @@
 // Checksum 0x1b930823, Offset: 0x68
 // Size: 0x14c
 function function_dc7eaabd(assignment) {
-    /#
-        assert(isdefined(assignment));
-    #/
+    assert(isdefined(assignment));
     self.pers[#"team"] = assignment;
     self.team = assignment;
     self.sessionteam = assignment;
@@ -75,9 +73,7 @@ function is_team_empty(team) {
 function function_959bac94() {
     foreach (team in level.teams) {
         if (self is_team_empty(team)) {
-            /#
-                println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team);
-            #/
+            println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team);
             /#
                 function_d28f6fa0(team);
             #/
@@ -118,9 +114,7 @@ function function_a9d594a0(party) {
         foreach (party_member in party.party_members) {
             var_2798314b = party_member getparty();
             if (var_2798314b.var_a15e4438 != party.var_a15e4438) {
-                /#
-                    assertmsg("<unknown string>");
-                #/
+                assertmsg("<unknown string>");
             }
         }
     #/

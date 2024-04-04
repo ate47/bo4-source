@@ -217,7 +217,6 @@ function gadget_health_regen_off(slot, weapon) {
 function enable_healing_after_wait(slot, weapon, wait_time, var_5818bd22, player) {
     self notify(#"healing_preamble");
     self.heal.var_a1cac2f1 = gettime() + var_5818bd22;
-    waitresult = undefined;
     waitresult = self waittilltimeout(wait_time, #"death", #"disconnect", #"healing_disabled", #"healing_preamble");
     if (waitresult._notify != "timeout") {
         return;

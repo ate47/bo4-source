@@ -174,7 +174,6 @@ function function_b7fcffdd(placeable) {
         waitframe(1);
     }
     while (true) {
-        waitresult = undefined;
         waitresult = player waittill(#"weapon_fired", #"weapon_switch_started");
         if (waitresult.weapon != placeable.weapon) {
             placeable notify(#"cancelled");
@@ -224,7 +223,7 @@ function carryplaceable(placeable) {
     }
     placeable.held = 1;
     player.holding_placeable = placeable;
-    player carryturret(placeable, vectorscale((1, 0, 0), 40), (0, 0, 0));
+    player carryturret(placeable, (40, 0, 0), (0, 0, 0));
     player val::set(#"placeable", "disable_weapons");
     player thread watchplacement(placeable);
 }
@@ -415,9 +414,7 @@ function function_613a226a(allow_alt) {
 // Size: 0xd8
 function watchcarrycancelevents(placeable) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     placeable endon(#"cancelled", #"placed");
     player waittill(#"death", #"emp_jammed", #"emp_grenaded", #"disconnect", #"joined_team");
     placeable notify(#"cancelled");
@@ -429,9 +426,7 @@ function watchcarrycancelevents(placeable) {
 // Size: 0x222
 function function_e222876f(placeable) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player endon(#"disconnect", #"death");
     placeable endon(#"placed", #"cancelled");
     while (true) {
@@ -491,9 +486,7 @@ function onplace(placeable) {
 function onmove(placeable) {
     player = self;
     player function_e4fd9a4c(placeable);
-    /#
-        assert(isdefined(placeable.onmove));
-    #/
+    assert(isdefined(placeable.onmove));
     if (isdefined(placeable.onmove)) {
         player [[ placeable.onmove ]](placeable);
     }
@@ -546,9 +539,7 @@ function onemp(attacker) {
 function cancelonplayerdisconnect(placeable) {
     placeable endon(#"hacked");
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     placeable endon(#"cancelled", #"death");
     player waittill(#"disconnect", #"joined_team");
     placeable notify(#"cancelled");
@@ -569,7 +560,7 @@ function cancelongameend(placeable) {
 // Checksum 0xe6f0f1e2, Offset: 0x2160
 // Size: 0x12c
 function spawnmovetrigger(placeable, player) {
-    pos = placeable.origin + vectorscale((0, 0, 1), 15);
+    pos = placeable.origin + (0, 0, 15);
     placeable.pickuptrigger = spawn("trigger_radius_use", pos);
     placeable.pickuptrigger setcursorhint("HINT_NOICON", placeable);
     placeable.pickuptrigger sethintstring(placeable.pickupstring);
@@ -596,12 +587,9 @@ function watchmovetriggershutdown(placeable) {
 function watchpickup(player) {
     placeable = self;
     placeable endon(#"death", #"cancelled");
-    /#
-        assert(isdefined(placeable.pickuptrigger));
-    #/
+    assert(isdefined(placeable.pickuptrigger));
     trigger = placeable.pickuptrigger;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         player = waitresult.activator;
         if (!isalive(player)) {
@@ -671,13 +659,10 @@ function watchownergameevents() {
 function shutdownoncancelevent(placeable) {
     placeable endon(#"hacked");
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     vehicle = placeable.vehicle;
     othermodel = placeable.othermodel;
     for (var_a94c08f3 = 1; var_a94c08f3; var_a94c08f3 = 0) {
-        waitresult = undefined;
         waitresult = placeable waittill(#"cancelled", #"death");
         if ((isdefined(placeable.var_d4083518) ? placeable.var_d4083518 : 0) && waitresult._notify == "death") {
             continue;

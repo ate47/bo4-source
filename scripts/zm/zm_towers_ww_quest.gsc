@@ -168,7 +168,6 @@ function function_be25f239() {
     level endon(#"hash_70b6094c8cd39890", #"hash_9b33f522f6f1424", #"end_game");
     var_7ccafcfd = getent("t_l_t_w_w_q", "targetname");
     level flag::wait_till(#"hash_17f15c9242ddea6f");
-    s_info = undefined;
     s_info = var_7ccafcfd waittill(#"trigger");
     e_player = s_info.activator;
     level.var_b2b15659 = 1;
@@ -345,7 +344,6 @@ function function_1308049e(e_player) {
 function function_d7f0e50e() {
     level endon(#"hash_30e0e4bbbfc9b7d8");
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"trap_activated");
         e_trap = s_notify.trap;
         if (isdefined(e_trap)) {
@@ -355,7 +353,6 @@ function function_d7f0e50e() {
                 b_active = 1;
                 str_id = e_trap.script_string;
                 while (b_active) {
-                    s_notify = undefined;
                     s_notify = level waittill(#"traps_cooldown");
                     if (s_notify.var_be3f58a === str_id) {
                         b_active = 0;
@@ -470,7 +467,6 @@ function function_7df5ca0b(notifyhash) {
 // Size: 0xd2
 function function_10692994() {
     level endoncallback(&function_7df5ca0b, #"hash_40f20925227353f4");
-    s_waitresult = undefined;
     s_waitresult = level.var_2ea12e52 waittill(#"trigger_activated");
     level flag::set(#"hash_30e0e4bbbfc9b7d8");
     e_player = s_waitresult.e_who;
@@ -617,9 +613,7 @@ function function_a616131a(b_skipped) {
     var_8fa68ef = struct::get(var_1a472b57.target);
     mdl_jar = util::spawn_model(#"p8_zm_gla_jar_gold_01", var_1a472b57.origin, var_1a472b57.angles);
     if (!isdefined(mdl_jar)) {
-        /#
-            assert(0, "<unknown string>");
-        #/
+        assert(0, "<unknown string>");
         return;
     }
     mdl_jar notsolid();
@@ -730,7 +724,7 @@ function function_4877f171(b_skipped, var_19e802fa) {
     v_origin = s_jar.origin;
     v_angles = s_jar.angles;
     mdl_jar = util::spawn_model(#"p8_zm_gla_jar_gold_01", v_origin, v_angles);
-    mdl_jar_filled = util::spawn_model(#"p8_zm_gla_jar_gold_01_full", v_origin - vectorscale((0, 0, 1), 2048), v_angles);
+    mdl_jar_filled = util::spawn_model(#"p8_zm_gla_jar_gold_01_full", v_origin - (0, 0, 2048), v_angles);
     level.var_6d6bbd67 = mdl_jar;
     level.var_1028e128 = mdl_jar_filled;
     level zm_ui_inventory::function_7df6bb60(#"hash_d3e328bb2670edf", 0);
@@ -762,7 +756,7 @@ function function_bbdde10e(b_skipped) {
 // Checksum 0xdf119b2e, Offset: 0x3538
 // Size: 0x64
 function function_40f77b4a(b_skipped, var_19e802fa) {
-    level.var_1028e128.origin = level.var_1028e128.origin + vectorscale((0, 0, 1), 2048);
+    level.var_1028e128.origin = level.var_1028e128.origin + (0, 0, 2048);
     waitframe(1);
     level.var_6d6bbd67 delete();
 }
@@ -974,7 +968,6 @@ function function_1da98a12() {
     if (!isdefined(self.var_1ac569e5)) {
         self.var_1ac569e5 = s_loc zm_unitrigger::create(&function_6919af04);
     }
-    s_waitresult = undefined;
     s_waitresult = s_loc waittill(#"trigger_activated");
     e_player = s_waitresult.e_who;
     level.var_b2b15659 = 1;

@@ -83,7 +83,6 @@ function on_player_connect() {
 function function_3f8da82c() {
     self endon(#"disconnect");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         if (s_notify.weapon === level.w_hand_ouranos_uncharged) {
             continue;
@@ -251,7 +250,7 @@ function is_valid_target(e_target, n_range) {
     if (isdefined(e_target.marked_for_death) && e_target.marked_for_death) {
         return false;
     }
-    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 32), 0.3, 1, self))) {
+    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 32), 0.3, 1, self))) {
         return true;
     }
     if (isdefined(e_target.fake_death) && e_target.fake_death) {
@@ -264,7 +263,7 @@ function is_valid_target(e_target, n_range) {
         return false;
     }
     var_c060d2c8 = !(isdefined(level.var_58f509b6) && level.var_58f509b6);
-    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 28), 0.9, var_c060d2c8, self)) {
+    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 28), 0.9, var_c060d2c8, self)) {
         return false;
     }
     v_org = self gettagorigin("j_head");
@@ -370,13 +369,13 @@ function function_1fc2378f(e_projectile, ai_zombie, n_damage) {
                     if (isdefined(v_horz)) {
                         v_end = v_horz + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 4) {
-                            v_end = v_target + vectorscale((0, 0, -1), 24);
+                            v_end = v_target + (0, 0, -24);
                         }
                     }
                 } else if (n_dist <= var_7fd007f9 && n_dist > var_4c92ff0e) {
-                    v_end = v_target + vectorscale((0, 0, -1), 24);
+                    v_end = v_target + (0, 0, -24);
                 } else {
-                    v_end = v_target + vectorscale((0, 0, 1), 28);
+                    v_end = v_target + (0, 0, 28);
                 }
                 n_time = n_dist / 1500;
                 if (n_time <= 0.1) {
@@ -507,7 +506,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, v_to_t
             e_target.ignoremelee = 1;
             e_target.marked_for_death = 1;
             if (isdefined(e_target.is_close) && e_target.is_close) {
-                v_fling = anglestoforward(self.angles) * 250 + vectorscale((0, 0, 1), 100);
+                v_fling = anglestoforward(self.angles) * 250 + (0, 0, 100);
             } else {
                 v_fling = v_to_target * 250;
             }

@@ -112,7 +112,6 @@ function function_63ceee4b(var_a276c861) {
     var_969e8ac2 = level.var_969e8ac2;
     level flagsys::wait_till("start_zombie_round_logic");
     level thread function_ff726bbb();
-    s_waitresult = undefined;
     s_waitresult = var_969e8ac2 waittill(#"hash_35caca73b82a6707", #"hash_1184db7e6252576");
     if (s_waitresult._notify == #"hash_35caca73b82a6707") {
         var_969e8ac2.var_c0ceb69c = s_waitresult.var_537e3893;
@@ -216,7 +215,6 @@ function function_ff726bbb(var_2afee46 = 1) {
 function function_56c97aea() {
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         if (isplayer(s_waitresult.activator)) {
             e_book = self.stub.related_parent;
@@ -233,7 +231,6 @@ function function_34f6d80a() {
     level endon(#"game_ended");
     level.var_969e8ac2.var_dbba0608 = 0;
     for (b_failed = 0; !b_failed && level.var_969e8ac2.var_dbba0608 < level.var_969e8ac2.a_e_books.size; b_failed = 1) {
-        s_waitresult = undefined;
         s_waitresult = level.var_969e8ac2 waittill(#"hash_59cef06ae393749f");
         if (s_waitresult.var_f9ba056c == level.var_969e8ac2.var_dbba0608) {
             zm_unitrigger::unregister_unitrigger(level.var_969e8ac2.a_e_books[s_waitresult.array_index].s_unitrigger_stub);
@@ -327,9 +324,7 @@ function function_941b297c(var_22c00989) {
     var_9c0bf2db = zm_powerups::specific_powerup_drop("bonus_points_player", self.var_872e2994.origin, undefined, undefined, undefined, 1);
     /#
         if (!isdefined(var_9c0bf2db)) {
-            /#
-                assert(0, "<unknown string>");
-            #/
+            assert(0, "<unknown string>");
         }
     #/
 }
@@ -344,7 +339,7 @@ function function_94a403a4(var_1c855a0d) {
     if (!isdefined(var_a76c9d75)) {
         var_a76c9d75 = getplayers()[0];
     }
-    mdl_weapon = zm_utility::spawn_buildkit_weapon_model(var_a76c9d75, wpn_reward, undefined, self.var_872e2994.origin + vectorscale((0, 0, 1), 16), self.var_872e2994.angles);
+    mdl_weapon = zm_utility::spawn_buildkit_weapon_model(var_a76c9d75, wpn_reward, undefined, self.var_872e2994.origin + (0, 0, 16), self.var_872e2994.angles);
     if (isdefined(mdl_weapon)) {
         mdl_weapon thread function_7b425c11();
         var_47323b73 = mdl_weapon zm_unitrigger::create(&function_2b75135a, 64, &function_907eba72);
@@ -352,11 +347,7 @@ function function_94a403a4(var_1c855a0d) {
         var_47323b73.w_reward = getweapon(var_1c855a0d);
         return;
     }
-    /#
-        /#
-            assert(0, "<unknown string>");
-        #/
-    #/
+    assert(0, "<unknown string>");
 }
 
 // Namespace mansion_storage/zm_mansion_storage
@@ -451,7 +442,6 @@ function function_3e37bb63() {
 function function_85e39c4d() {
     self endon(#"busted");
     while (true) {
-        s_notify = undefined;
         s_notify = self.t_trig waittill(#"damage");
         if (isplayer(s_notify.attacker) && s_notify.mod === "MOD_MELEE") {
             level.a_s_spigots[level.a_s_spigots.size] = self;
@@ -556,7 +546,7 @@ function function_f2ca3ec8(s_pos) {
     if (!isdefined(var_a76c9d75)) {
         var_a76c9d75 = getplayers()[0];
     }
-    mdl_weapon = zm_utility::spawn_buildkit_weapon_model(var_a76c9d75, w_reward, undefined, s_pos.origin + vectorscale((0, 0, 1), 8), s_pos.angles);
+    mdl_weapon = zm_utility::spawn_buildkit_weapon_model(var_a76c9d75, w_reward, undefined, s_pos.origin + (0, 0, 8), s_pos.angles);
     if (isdefined(mdl_weapon)) {
         mdl_weapon thread function_7b425c11();
         var_47323b73 = mdl_weapon zm_unitrigger::create(&function_2b75135a, 64, &function_907eba72);
@@ -572,7 +562,6 @@ function function_f2ca3ec8(s_pos) {
 function function_b601eebc() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::can_use(player)) {
@@ -744,11 +733,11 @@ function function_f21f0537(var_a276c861) {
         }
         break;
     case 2:
-        zm_powerups::specific_powerup_drop("bonus_points_player", s_pocket.origin + vectorscale((0, 0, -1), 8), undefined, undefined, undefined, 1);
+        zm_powerups::specific_powerup_drop("bonus_points_player", s_pocket.origin + (0, 0, -8), undefined, undefined, undefined, 1);
         break;
     case 3:
         a_players = array::get_all_closest(s_pocket.origin, getplayers());
-        a_players[0] magicgrenadetype(getweapon(#"eq_frag_grenade"), s_pocket.origin + vectorscale((0, 0, 1), 12), vectorscale((0, 0, 1), 200));
+        a_players[0] magicgrenadetype(getweapon(#"eq_frag_grenade"), s_pocket.origin + (0, 0, 12), (0, 0, 200));
         a_players[0] zm_audio::create_and_play_dialog(#"grenade", #"react", undefined, 1);
         break;
     default:
@@ -793,7 +782,7 @@ function function_a7983bee() {
     wpn_reward = getweapon(#"shotgun_semiauto_t8");
     var_8997b0bc = struct::get("billiard_table_center", "targetname");
     a_players = array::get_all_closest(var_8997b0bc.origin, getplayers());
-    mdl_weapon = zm_utility::spawn_buildkit_weapon_model(a_players[0], wpn_reward, undefined, s_shelf.origin + vectorscale((0, 0, 1), 10), s_shelf.angles);
+    mdl_weapon = zm_utility::spawn_buildkit_weapon_model(a_players[0], wpn_reward, undefined, s_shelf.origin + (0, 0, 10), s_shelf.angles);
     if (isdefined(mdl_weapon)) {
         mdl_weapon thread function_7b425c11();
         var_47323b73 = mdl_weapon zm_unitrigger::create(&function_2b75135a, 64, &function_907eba72);
@@ -826,7 +815,7 @@ function function_cd9f1d74(n_reward) {
         str_elixir = #"zm_bgb_sword_flay";
         if (isdefined(var_b7a9df7c)) {
             mdl_elixir = util::spawn_model(var_b7a9df7c, s_shelf.origin, s_shelf.angles);
-            var_7b57e2cc = util::spawn_model(#"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + vectorscale((0, 0, 1), 6.75), s_shelf.angles);
+            var_7b57e2cc = util::spawn_model(#"p8_zm_elixir_bottle_plain_sight_lid", s_shelf.origin + (0, 0, 6.75), s_shelf.angles);
             if (isdefined(mdl_elixir)) {
                 var_47323b73 = mdl_elixir zm_unitrigger::create(&function_cc012e8d, 64);
                 mdl_elixir thread function_67c3a7dd();
@@ -844,7 +833,7 @@ function function_cd9f1d74(n_reward) {
         str_powerup = "double_points";
         if (isdefined(str_powerup)) {
             wait(4);
-            zm_powerups::specific_powerup_drop(str_powerup, s_shelf.origin + vectorscale((0, 0, -1), 16), undefined, undefined, undefined, 1);
+            zm_powerups::specific_powerup_drop(str_powerup, s_shelf.origin + (0, 0, -16), undefined, undefined, undefined, 1);
             return;
         }
         break;
@@ -858,7 +847,6 @@ function function_cd9f1d74(n_reward) {
 function function_67c3a7dd() {
     var_163c35fc = self.s_unitrigger;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         player = s_result.e_who;
         if (!zm_utility::can_use(player)) {
@@ -894,7 +882,6 @@ function function_7f4f9503(str_bgb) {
 function function_907eba72() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         player = s_result.activator;
         if (!zm_utility::can_use(player)) {
@@ -1006,9 +993,7 @@ function function_63c873d9(var_dc2ad9ce) {
 function function_840d0d56() {
     self endon(#"hash_239e896260dae2d8");
     var_e699d494 = zm_zonemgr::get_zone_from_position(self.origin, 1);
-    /#
-        assert(isdefined(var_e699d494), "<unknown string>" + self.origin);
-    #/
+    assert(isdefined(var_e699d494), "<unknown string>" + self.origin);
     var_8259b1e9 = zm_cleanup::get_adjacencies_to_zone(var_e699d494);
     while (true) {
         n_players_in_zone = 0;

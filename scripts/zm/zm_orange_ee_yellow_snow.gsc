@@ -176,7 +176,6 @@ function function_8ba3d474(var_a276c861) {
 function function_f77c5d83() {
     b_hidden = 0;
     while (!b_hidden) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon.name === #"snowball" || s_result.weapon.name === #"snowball_upgraded") {
             level.var_c2dce33e = level.var_c2dce33e - 1;
@@ -348,7 +347,6 @@ function function_cf298764() {
 function function_7c1a1d9a() {
     b_shattered = 0;
     while (!b_shattered) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker) && !isbot(s_result.attacker)) {
             self setmodel("p8_zm_ora_specimen_container_lrg_dmg");
@@ -409,7 +407,6 @@ function function_6d2ddf57(e_player) {
 // Checksum 0x3fad6be1, Offset: 0x1c78
 // Size: 0x13c
 function function_c0ee8171() {
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     e_who = s_activation.e_who;
     if (!level.var_27f2245a) {

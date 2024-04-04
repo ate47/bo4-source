@@ -127,9 +127,7 @@ function assertproperplacement() {
                         player = level.placement[#"all"][i];
                         println("<unknown string>" + i + "<unknown string>" + player.name + "<unknown string>" + player.score);
                     }
-                    /#
-                        assertmsg("<unknown string>");
-                    #/
+                    assertmsg("<unknown string>");
                     break;
                 }
             }
@@ -143,9 +141,7 @@ function assertproperplacement() {
 // Size: 0x6a
 function isvalidclass(vclass) {
     if (level.oldschool || sessionmodeiszombiesgame()) {
-        /#
-            assert(!isdefined(vclass));
-        #/
+        assert(!isdefined(vclass));
         return true;
     }
     return isdefined(vclass) && vclass != "";
@@ -252,9 +248,7 @@ function resumetimer() {
 // Checksum 0xca695483, Offset: 0x9d8
 // Size: 0x9e
 function getscoreremaining(team) {
-    /#
-        assert(isplayer(self) || isdefined(team));
-    #/
+    assert(isplayer(self) || isdefined(team));
     scorelimit = level.scorelimit;
     if (isplayer(self)) {
         return (scorelimit - globallogic_score::_getplayerscore(self));
@@ -267,9 +261,7 @@ function getscoreremaining(team) {
 // Checksum 0xb1eee434, Offset: 0xa80
 // Size: 0xea
 function getscoreperminute(team) {
-    /#
-        assert(isplayer(self) || isdefined(team));
-    #/
+    assert(isplayer(self) || isdefined(team));
     scorelimit = level.scorelimit;
     timelimit = level.timelimit;
     minutespassed = gettimepassed() / 60000 + 0.0001;
@@ -284,9 +276,7 @@ function getscoreperminute(team) {
 // Checksum 0xd3faf349, Offset: 0xb78
 // Size: 0x9a
 function getestimatedtimeuntilscorelimit(team) {
-    /#
-        assert(isplayer(self) || isdefined(team));
-    #/
+    assert(isplayer(self) || isdefined(team));
     scoreperminute = self getscoreperminute(team);
     scoreremaining = self getscoreremaining(team);
     if (!scoreperminute) {
@@ -324,9 +314,7 @@ function waitfortimeornotifynoartillery(time, notifyname) {
     self endon(notifyname);
     wait(time);
     while (isdefined(level.artilleryinprogress)) {
-        /#
-            assert(level.artilleryinprogress);
-        #/
+        assert(level.artilleryinprogress);
         wait(0.25);
     }
 }

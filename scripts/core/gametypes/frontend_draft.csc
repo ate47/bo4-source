@@ -412,7 +412,6 @@ function function_a5644aa3(localclientnum) {
         level waittill(#"hash_4bb9479c29665c84");
         function_532dfc0b(localclientnum, 1000);
         level.var_e6802f10 = 1;
-        waitresult = undefined;
         waitresult = level waittill(#"hash_4ef5fa5de0b8868b", #"hash_3f81f5a6c0c89878");
         if (waitresult._notify == #"hash_4ef5fa5de0b8868b") {
             function_e79c182b(localclientnum, 1000);
@@ -432,7 +431,6 @@ function function_9c896b69(localclientnum) {
     self endon("5b07248da504b6c9");
     level endon(#"disconnect", #"draft_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_update", #"positiondraft_reject", #"hash_6f2435126950e914");
         localclientnum = waitresult.localclientnum;
         if (waitresult._notify == #"hash_6f2435126950e914") {
@@ -498,7 +496,6 @@ function function_393e6d42() {
     self notify("367619e27fe3cbc2");
     self endon("367619e27fe3cbc2");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_playgesture");
         level.var_6963abdb[waitresult.xuid] = waitresult.gesture_index;
         var_f5f3ad67 = getdvarint(#"lobby_gestures_enabled", 0) == 2;
@@ -579,7 +576,6 @@ function function_37313c1b(localclientnum) {
     self endon("58006327a1d63bff");
     level endon(#"disconnect", #"draft_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_8946580b1303e30");
         function_e79c182b(localclientnum, 0, 1);
     }
@@ -611,7 +607,6 @@ function function_9afd868e(localclientnum) {
 function function_ca03ab69() {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_open");
         localclientnum = waitresult.localclientnum;
         function_9afd868e(localclientnum);
@@ -625,7 +620,6 @@ function function_ca03ab69() {
 function function_91858511() {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_close");
         localclientnum = waitresult.localclientnum;
         if (isdefined(level.draftactive) && level.draftactive) {

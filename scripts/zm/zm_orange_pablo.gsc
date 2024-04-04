@@ -515,7 +515,6 @@ function function_6248ba90(e_player) {
 function private function_d7e79438() {
     self endon(#"death");
     level.pablo_npc endon(#"hash_ed7147b69728896");
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     level.var_d1206a2b = s_activation.e_who;
     s_info = level.pablo_npc.var_cb3ed98f[level.pablo_npc.var_df3d62aa];

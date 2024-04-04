@@ -185,9 +185,7 @@ function decrementlastobituaryplayercountafterfade() {
     level endon(#"reset_obituary_count");
     wait(5);
     level.lastobituaryplayercount--;
-    /#
-        assert(level.lastobituaryplayercount >= 0);
-    #/
+    assert(level.lastobituaryplayercount >= 0);
 }
 
 // Namespace scoreevents/scoreevents_shared
@@ -262,9 +260,7 @@ function getscoreeventtableid(gametype) {
     if (isdefined(scoreinfotableid)) {
         scoreinfotableloaded = 1;
     }
-    /#
-        assert(scoreinfotableloaded, "<unknown string>" + function_9e72a96(getscoreeventtablename()));
-    #/
+    assert(scoreinfotableloaded, "<unknown string>" + function_9e72a96(getscoreeventtablename()));
     return scoreinfotableid;
 }
 

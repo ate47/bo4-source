@@ -34,7 +34,6 @@ function init_shared() {
 function onspawn(watcher, player) {
     player endon(#"death", #"disconnect");
     level endon(#"game_ended");
-    waitresult = undefined;
     waitresult = self waittill(#"stationary", #"death");
     if (!isdefined(self)) {
         return;
@@ -93,7 +92,6 @@ function onspawnretrievetrigger(watcher, player) {
     player endon(#"death");
     player endon(#"disconnect");
     level endon(#"game_ended");
-    waitresult = undefined;
     waitresult = player waittill(#"ballistic_knife_stationary");
     retrievable_model = waitresult.retrievable_model;
     if (!isdefined(retrievable_model)) {
@@ -150,7 +148,6 @@ function destroy_ent() {
 function dropknivestoground() {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = level waittill(#"drop_objects_to_ground");
         self droptoground(waitresult.position, waitresult.radius);
     }
@@ -162,7 +159,7 @@ function dropknivestoground() {
 // Size: 0x7c
 function droptoground(origin, radius) {
     if (distancesquared(origin, self.origin) < radius * radius) {
-        self physicslaunch((0, 0, 1), vectorscale((1, 1, 1), 5));
+        self physicslaunch((0, 0, 1), (5, 5, 5));
         self thread updateretrievetrigger();
     }
 }

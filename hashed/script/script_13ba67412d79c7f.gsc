@@ -8,27 +8,11 @@
 class czm_trial_timer : cluielem {
 
     // Namespace czm_trial_timer/zm_trial_timer
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x14803ef2, Offset: 0x250
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_trial_timer/zm_trial_timer
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xde887e2c, Offset: 0x448
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_trial_timer/zm_trial_timer
     // Params 2, eflags: 0x1 linked
     // Checksum 0x65be9101, Offset: 0x410
     // Size: 0x30
     function set_under_round_rules(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "under_round_rules", value);
+        set_data(localclientnum, "under_round_rules", value);
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
@@ -36,7 +20,7 @@ class czm_trial_timer : cluielem {
     // Checksum 0x16648483, Offset: 0x3d8
     // Size: 0x30
     function set_timer_text(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "timer_text", value);
+        set_data(localclientnum, "timer_text", value);
     }
 
     // Namespace czm_trial_timer/zm_trial_timer
@@ -53,8 +37,8 @@ class czm_trial_timer : cluielem {
     // Size: 0x68
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "timer_text", #"");
-        [[ self ]]->set_data(localclientnum, "under_round_rules", 0);
+        set_data(localclientnum, "timer_text", #"");
+        set_data(localclientnum, "under_round_rules", 0);
     }
 
     // Namespace czm_trial_timer/zm_trial_timer

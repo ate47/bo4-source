@@ -445,14 +445,14 @@ function debug_bots(var_841324bd) {
                 if (!isdefined(entity.bot) || !isalive(entity)) {
                     continue;
                 }
-                org = entity.origin + vectorscale((0, 0, 1), 100);
+                org = entity.origin + (0, 0, 100);
                 print3d(org, "<unknown string>", (1, 0.5, 0), 1, 1);
                 if (isdefined(entity.var_10a6d7df)) {
-                    org = entity.origin + vectorscale((0, 0, 1), 85);
+                    org = entity.origin + (0, 0, 85);
                     print3d(org, level.var_486b7db0[entity.var_10a6d7df], (1, 0.5, 0), 1, 1);
                 }
                 if (isdefined(entity.var_3c5a5d29)) {
-                    org = entity.origin + vectorscale((0, 0, 1), 70);
+                    org = entity.origin + (0, 0, 70);
                     print3d(org, level.var_f4f73ef7[entity.var_3c5a5d29], (0, 1, 0), 1, 0.75);
                 }
                 ai_cansee = 0;
@@ -460,7 +460,7 @@ function debug_bots(var_841324bd) {
                     ai_cansee = 1;
                 }
                 if (isdefined(entity.canseeplayer)) {
-                    org = entity.origin + vectorscale((0, 0, 1), 60);
+                    org = entity.origin + (0, 0, 60);
                     print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 0.75);
                 }
             }
@@ -469,10 +469,10 @@ function debug_bots(var_841324bd) {
                 if (!isalive(entity)) {
                     continue;
                 }
-                org = entity.origin + vectorscale((0, 0, 1), 100);
+                org = entity.origin + (0, 0, 100);
                 print3d(org, "<unknown string>", (1, 0.5, 0), 1, 1);
                 if (isdefined(entity.var_10a6d7df)) {
-                    org = entity.origin + vectorscale((0, 0, 1), 85);
+                    org = entity.origin + (0, 0, 85);
                     print3d(org, level.var_486b7db0[entity.var_10a6d7df], (1, 0.5, 0), 1, 1);
                 }
                 ai_cansee = 0;
@@ -480,20 +480,20 @@ function debug_bots(var_841324bd) {
                     ai_cansee = 1;
                 }
                 if (isdefined(entity.canseeplayer)) {
-                    org = entity.origin + vectorscale((0, 0, 1), 70);
+                    org = entity.origin + (0, 0, 70);
                     print3d(org, "<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", (1, 0.5, 0), 1, 1);
                 }
                 if (isdefined(entity.var_9a79d89d)) {
-                    print3d(entity.var_9a79d89d + vectorscale((0, 0, 1), 10), "<unknown string>", (0, 0, 1), 1, 1);
+                    print3d(entity.var_9a79d89d + (0, 0, 10), "<unknown string>", (0, 0, 1), 1, 1);
                 }
             }
             if (isdefined(level.var_5ec2d86e)) {
                 foreach (nd in level.var_5ec2d86e) {
                     if (!isdefined(nd.e_occupant)) {
-                        print3d(nd.origin + vectorscale((0, 0, 1), 10), "<unknown string>", (1, 0, 0), 1, 1);
+                        print3d(nd.origin + (0, 0, 10), "<unknown string>", (1, 0, 0), 1, 1);
                         continue;
                     }
-                    print3d(nd.origin + vectorscale((0, 0, 1), 10), "<unknown string>", (0, 0, 1), 1, 1);
+                    print3d(nd.origin + (0, 0, 10), "<unknown string>", (0, 0, 1), 1, 1);
                 }
             }
             waitframe(1);
@@ -923,11 +923,11 @@ function function_f83f2862() {
 // Size: 0xd6
 function function_6c89913a(var_daa4b90a = 1) {
     self endon(#"death", #"disconnect", #"joined_team", #"joined_spectators", #"reset_pathing");
-    self.var_2925fedc = self.origin + vectorscale((1, 0, 0), 10);
+    self.var_2925fedc = self.origin + (10, 0, 0);
     wait(var_daa4b90a);
-    self.var_2925fedc = self.origin + vectorscale((-1, 0, 0), 10);
+    self.var_2925fedc = self.origin + (-10, 0, 0);
     wait(var_daa4b90a);
-    self.var_2925fedc = self.origin + vectorscale((0, 0, 1), 10);
+    self.var_2925fedc = self.origin + (0, 0, 10);
 }
 
 // Namespace ct_bots/ct_bots
@@ -1315,9 +1315,7 @@ function function_c2cfffdd(nd_guard, var_2fd67dea = 0, var_1d1ab17 = 0) {
         if (!isdefined(nd_guard)) {
             nd_guard = function_c9c5ed36();
         }
-        /#
-            assert(isdefined(nd_guard), "<unknown string>");
-        #/
+        assert(isdefined(nd_guard), "<unknown string>");
         nd_guard.e_occupant = self;
         self.nd_guard = nd_guard;
         self.var_9a79d89d = nd_guard.origin;

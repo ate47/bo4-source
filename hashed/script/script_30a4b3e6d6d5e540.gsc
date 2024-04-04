@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class cself_revive_visuals : cluielem {
 
-    // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x1a335dfd, Offset: 0x230
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x2d057d23, Offset: 0x3e0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cself_revive_visuals/self_revive_visuals
     // Params 2, eflags: 0x1 linked
     // Checksum 0x23eb0acd, Offset: 0x398
     // Size: 0x3c
     function set_revive_progress(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "revive_progress", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "revive_progress", value);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
@@ -37,7 +23,7 @@ class cself_revive_visuals : cluielem {
     // Checksum 0x33f62f01, Offset: 0x350
     // Size: 0x3c
     function set_self_revive_progress_bar_fill(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "self_revive_progress_bar_fill", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "self_revive_progress_bar_fill", value);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals

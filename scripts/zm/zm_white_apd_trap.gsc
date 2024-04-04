@@ -116,7 +116,6 @@ function function_d1112480(e_player) {
 function function_e14376a3() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {

@@ -6,16 +6,10 @@
 // Checksum 0xc5c6c510, Offset: 0x68
 // Size: 0x134
 function registerblackboardattribute(entity, attributename, defaultattributevalue, getterfunction) {
-    /#
-        assert(isdefined(entity.__blackboard), "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(entity.__blackboard[attributename]), "<unknown string>" + attributename + "<unknown string>");
-    #/
+    assert(isdefined(entity.__blackboard), "<unknown string>");
+    assert(!isdefined(entity.__blackboard[attributename]), "<unknown string>" + attributename + "<unknown string>");
     if (isdefined(getterfunction)) {
-        /#
-            assert(isfunctionptr(getterfunction));
-        #/
+        assert(isfunctionptr(getterfunction));
         entity.__blackboard[attributename] = getterfunction;
     } else {
         if (!isdefined(defaultattributevalue)) {
@@ -35,9 +29,7 @@ function registerblackboardattribute(entity, attributename, defaultattributevalu
 // Checksum 0x79de3fa4, Offset: 0x1a8
 // Size: 0xb2
 function getstructblackboardattribute(struct, attributename) {
-    /#
-        assert(isstruct(struct));
-    #/
+    assert(isstruct(struct));
     if (isfunctionptr(struct.__blackboard[attributename])) {
         getterfunction = struct.__blackboard[attributename];
         attributevalue = struct [[ getterfunction ]]();
@@ -51,16 +43,12 @@ function getstructblackboardattribute(struct, attributename) {
 // Checksum 0x159819cc, Offset: 0x268
 // Size: 0xe2
 function setstructblackboardattribute(struct, attributename, attributevalue) {
-    /#
-        assert(isstruct(struct));
-    #/
+    assert(isstruct(struct));
     if (isdefined(struct.__blackboard[attributename])) {
         if (!isdefined(attributevalue) && isfunctionptr(struct.__blackboard[attributename])) {
             return;
         }
-        /#
-            assert(!isfunctionptr(struct.__blackboard[attributename]), "<unknown string>");
-        #/
+        assert(!isfunctionptr(struct.__blackboard[attributename]), "<unknown string>");
     }
     struct.__blackboard[attributename] = attributevalue;
 }
@@ -86,9 +74,7 @@ function createblackboardforentity(entity) {
 // Checksum 0x680b7039, Offset: 0x3e0
 // Size: 0xde
 function cloneblackboardfromstruct(struct) {
-    /#
-        assert(isstruct(struct));
-    #/
+    assert(isstruct(struct));
     blackboard = [];
     if (isdefined(struct.__blackboard)) {
         foreach (k, v in struct.__blackboard) {

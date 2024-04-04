@@ -24,8 +24,8 @@ function __init__() {
 // Checksum 0x52d9118e, Offset: 0x100
 // Size: 0xb4
 function __main__() {
-    spawncollision("collision_clip_wall_128x128x10", "collider", (-1683, 3653, -654), vectorscale((0, 1, 0), 357.6));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-1683, 3653, -654), (0, 357.6, 0));
     spawncollision("collision_clip_wall_128x128x10", "collider", (-1519, 3594, -654), (0, 0, 0));
-    spawncollision("collision_clip_wall_128x128x10", "collider", (-716, 4286, -654), vectorscale((0, 1, 0), 2));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-716, 4286, -654), (0, 2, 0));
 }
 

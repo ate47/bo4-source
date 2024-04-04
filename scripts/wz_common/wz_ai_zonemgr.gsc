@@ -59,8 +59,7 @@ function __init__() {
     if (isdedicated()) {
         numzm = getdvarint(#"hash_57d63269cdf0c97f", 0);
         if (0 < numzm) {
-            iprintlnbold("Initing " + numzm + " zombies " + "
-");
+            iprintlnbold("Initing " + numzm + " zombies " + "\n");
             level.var_d373b4e4 = 1;
             level.warzonezombiesmaxcount = numzm;
         }
@@ -357,9 +356,7 @@ function function_d0055419() {
 function function_dc16557c() {
     if (isdefined(level.var_dc16557c) && level.var_dc16557c) {
         for (i = 0; i < level.var_5b357434.size; i++) {
-            /#
-                assert(i < 10, "<unknown string>");
-            #/
+            assert(i < 10, "<unknown string>");
             ai_zone = level.var_5b357434[i];
             if (ai_zone.zone_activated == 0) {
                 continue;
@@ -388,9 +385,7 @@ function function_dc16557c() {
                         }
                         index = 0;
                         foreach (key, item in ai_zone.item_drops[archetype]) {
-                            /#
-                                assert(index < 20, "<unknown string>");
-                            #/
+                            assert(index < 20, "<unknown string>");
                             match_record::set_stat(var_7a69806, index, #"item_name", key);
                             match_record::set_stat(var_7a69806, index, #"item_count", item.count);
                             match_record::set_stat(var_7a69806, index, #"zone_name", var_c2b80e0c);
@@ -451,19 +446,19 @@ function function_f48ade1d(ai_zone, stash, var_2805c08c) {
     ai_zone.var_18bccc89.angles = stash.angles;
     ai_zone.var_18bccc89 useanimtree("generic");
     if (isdefined(var_2805c08c) && var_2805c08c) {
-        ai_zone.var_18c11294 = spawn("script_model", stash.origin + vectorscale((0, 0, 1), 10));
+        ai_zone.var_18c11294 = spawn("script_model", stash.origin + (0, 0, 10));
         ai_zone.var_18c11294.targetname = "zm_stash_chain";
         ai_zone.var_18c11294 setmodel(level.var_f2bbd457);
-        ai_zone.var_18c11294.angles = stash.angles + vectorscale((0, 1, 0), 90);
+        ai_zone.var_18c11294.angles = stash.angles + (0, 90, 0);
         ai_zone.var_18c11294 useanimtree("generic");
-        ai_zone.var_374e59f9 = spawn("script_model", stash.origin + vectorscale((0, 0, 1), 19));
+        ai_zone.var_374e59f9 = spawn("script_model", stash.origin + (0, 0, 19));
         ai_zone.var_374e59f9.targetname = "zm_stash_bear";
         if (isdefined(level.var_65f7ae17) && level.var_65f7ae17) {
             ai_zone.var_374e59f9 setmodel(level.var_d8ddf407);
         } else {
             ai_zone.var_374e59f9 setmodel(level.var_b6e3500b);
         }
-        ai_zone.var_374e59f9.angles = stash.angles + vectorscale((0, 1, 0), 90);
+        ai_zone.var_374e59f9.angles = stash.angles + (0, 90, 0);
         ai_zone.var_374e59f9 useanimtree("generic");
     }
 }
@@ -570,7 +565,7 @@ function move_box(n_duration, n_dist) {
     end_point = self.origin + (0, 0, n_dist);
     trace = bullettrace(self.origin, end_point, 0, self);
     if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
-        end_point = trace[#"position"] - vectorscale((0, 0, 1), 50);
+        end_point = trace[#"position"] - (0, 0, 50);
         n_duration = n_duration * trace[#"fraction"];
     }
     self clientfield::set("magicboxflag", 2);
@@ -597,7 +592,7 @@ function function_9e142fa2(n_duration, n_dist) {
     end_point = self.origin + (0, 0, n_dist);
     trace = bullettrace(self.origin, end_point, 0, self);
     if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
-        end_point = trace[#"position"] - vectorscale((0, 0, 1), 50);
+        end_point = trace[#"position"] - (0, 0, 50);
         n_duration = n_duration * trace[#"fraction"];
     }
     self clientfield::set("magicboxflag", 4);
@@ -924,11 +919,11 @@ function function_71d1b294() {
                             }
                         }
                         if (ai_zone.is_active) {
-                            print3d(drawpos + vectorscale((0, 0, 1), 25), "<unknown string>" + ai_zone.var_7aa3cde7 + "<unknown string>" + ai_zone.var_aeae9f59, zonecolor);
-                            print3d(drawpos + vectorscale((0, 0, 1), 10), "<unknown string>" + ai_zone.var_84b8298c + "<unknown string>" + ai_zone.var_10f73408, zonecolor);
+                            print3d(drawpos + (0, 0, 25), "<unknown string>" + ai_zone.var_7aa3cde7 + "<unknown string>" + ai_zone.var_aeae9f59, zonecolor);
+                            print3d(drawpos + (0, 0, 10), "<unknown string>" + ai_zone.var_84b8298c + "<unknown string>" + ai_zone.var_10f73408, zonecolor);
                         }
                     }
-                    print3d(drawpos + vectorscale((0, 0, 1), 40), "<unknown string>" + ai_zone.zone_name, zonecolor);
+                    print3d(drawpos + (0, 0, 40), "<unknown string>" + ai_zone.zone_name, zonecolor);
                     for (i = 0; i < ai_zone.zone_category.size; i++) {
                         print3d(drawpos + (0, 0, 55 + 15 * i), "<unknown string>" + ai_zone.zone_category[i], zonecolor);
                     }
@@ -1699,7 +1694,7 @@ function function_41101f23(zone, var_d42412dc) {
     if (var_1c9891ec) {
         zone.minimap clientfield::set("aizoneflag_tu14", 3);
         if (isdefined(level.var_7b5ba689) && level.var_7b5ba689) {
-            zone.var_484efd06 = spawn("script_model", zone.minimap.origin + vectorscale((0, 0, 1), 50));
+            zone.var_484efd06 = spawn("script_model", zone.minimap.origin + (0, 0, 50));
             zone.var_484efd06.targetname = "zm_stash_wisp";
             zone.var_484efd06 setmodel("tag_origin");
             zone.var_484efd06 useanimtree("generic");

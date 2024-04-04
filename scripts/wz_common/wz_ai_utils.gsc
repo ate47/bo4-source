@@ -131,9 +131,9 @@ function debug_ai() {
                     if (!isalive(entity)) {
                         continue;
                     }
-                    org = entity.origin + vectorscale((0, 0, 1), 100);
+                    org = entity.origin + (0, 0, 100);
                     if (isdefined(entity.aistate)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 90);
+                        org = entity.origin + (0, 0, 90);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext((isdefined(level.var_b4702614[entity.aistate]) ? level.var_b4702614[entity.aistate] : "<unknown string>") + "<unknown string>" + entity.health, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -145,7 +145,7 @@ function debug_ai() {
                         ai_cansee = 1;
                     }
                     if (isdefined(entity.canseeplayer)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 85);
+                        org = entity.origin + (0, 0, 85);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + entity.canseeplayer + "<unknown string>" + ai_cansee + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -153,7 +153,7 @@ function debug_ai() {
                         }
                     }
                     if (isdefined(entity.allowoffnavmesh)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 80);
+                        org = entity.origin + (0, 0, 80);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + entity.allowoffnavmesh, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -161,7 +161,7 @@ function debug_ai() {
                         }
                     }
                     if (isdefined(entity.var_6e3313ab)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 75);
+                        org = entity.origin + (0, 0, 75);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + entity.var_6e3313ab, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -169,7 +169,7 @@ function debug_ai() {
                         }
                     }
                     if (isdefined(entity.var_ad26639d)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 70);
+                        org = entity.origin + (0, 0, 70);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + entity.var_ad26639d, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -184,11 +184,11 @@ function debug_ai() {
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>", entity.origin, (0, 0, 1), "<unknown string>", entity);
                         } else {
-                            print3d(entity.var_9a79d89d + vectorscale((0, 0, 1), 10), "<unknown string>", (0, 0, 1), 1, 1);
+                            print3d(entity.var_9a79d89d + (0, 0, 10), "<unknown string>", (0, 0, 1), 1, 1);
                         }
                     }
                     if (isdefined(entity.var_db912cfe) && isdefined(entity.surfacetype)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 70);
+                        org = entity.origin + (0, 0, 70);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + entity.surfacetype + "<unknown string>" + entity.var_db912cfe, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -196,7 +196,7 @@ function debug_ai() {
                         }
                     }
                     if (isdefined(entity.is_special)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 200);
+                        org = entity.origin + (0, 0, 200);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + entity.is_special + "<unknown string>" + entity.is_special + "<unknown string>", entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -204,7 +204,7 @@ function debug_ai() {
                         }
                     }
                     if (isdefined(entity.movetime) && getdvarint(#"hash_1aebd3ffed21a22a", 0)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 90);
+                        org = entity.origin + (0, 0, 90);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + gettime() - entity.movetime, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -212,7 +212,7 @@ function debug_ai() {
                         }
                     }
                     if (isdefined(entity.idletime) && getdvarint(#"hash_1aebd3ffed21a22a", 0)) {
-                        org = entity.origin + vectorscale((0, 0, 1), 95);
+                        org = entity.origin + (0, 0, 95);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + gettime() - entity.idletime, entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -222,7 +222,7 @@ function debug_ai() {
                     if (isdefined(entity.attackable) && getdvarint(#"hash_6e5b3c35cb223a9d", 0)) {
                         recordline(entity.origin, entity.attackable_slot.origin, (0, 1, 0));
                         recordstar(entity.attackable_slot.origin, (0, 0, 1));
-                        org = entity.origin + vectorscale((0, 0, 1), 100);
+                        org = entity.origin + (0, 0, 100);
                         if (getdvarint(#"recorder_enablerec", 0)) {
                             record3dtext("<unknown string>" + distance2dsquared(entity.origin, entity.attackable_slot.origin), entity.origin, (1, 0.5, 0), "<unknown string>", entity);
                         } else {
@@ -345,7 +345,7 @@ function function_92c7e9a9(ai_zone) {
         minrange = 100;
         wisp unlink();
         while (isalive(self) && isdefined(wisp)) {
-            end_point = self.origin + vectorscale((0, 0, 1), 60);
+            end_point = self.origin + (0, 0, 60);
             dist_sq = distancesquared(end_point, wisp.origin);
             if (dist_sq < minrange * minrange) {
                 break;
@@ -363,7 +363,7 @@ function function_92c7e9a9(ai_zone) {
             if (isdefined(wisp)) {
                 wisp clientfield::set("soultransfer", 1);
                 wisp unlink();
-                end_point = wisp.origin + vectorscale((0, 0, 1), 60);
+                end_point = wisp.origin + (0, 0, 60);
                 n_duration = 1;
                 wisp moveto(end_point, n_duration, 0.1, 0.1);
                 wait(n_duration);
@@ -617,7 +617,7 @@ function fake_physicslaunch(target_pos, power) {
 // Size: 0x1c6
 function function_7a1e21a9(attacker, v_origin, min_radius = 50, max_radius = 70, var_4dd1cd8b = 100, var_8c20ac00 = 100) {
     self endon(#"delete");
-    self.origin = v_origin + vectorscale((0, 0, 1), 10);
+    self.origin = v_origin + (0, 0, 10);
     if (isdefined(attacker) && isdefined(attacker.usingvehicle) && attacker.usingvehicle) {
         min_radius = var_4dd1cd8b;
         max_radius = var_8c20ac00;
@@ -704,11 +704,11 @@ function function_e1cd5954(v_origin, min_radius, max_radius) {
     } else {
         var_9bd6c1ae = v_origin;
     }
-    trace = bullettrace(var_9bd6c1ae + vectorscale((0, 0, 1), 40), var_9bd6c1ae + vectorscale((0, 0, -1), 150), 0, undefined);
+    trace = bullettrace(var_9bd6c1ae + (0, 0, 40), var_9bd6c1ae + (0, 0, -150), 0, undefined);
     if (trace[#"fraction"] < 1) {
         var_9bd6c1ae = trace[#"position"];
     }
-    return var_9bd6c1ae + vectorscale((0, 0, 1), 3);
+    return var_9bd6c1ae + (0, 0, 3);
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
@@ -778,7 +778,6 @@ function function_9fa1c215(ai_zone) {
 function function_f311bd4c(ai_zone) {
     self notify("54de30d16f7f89db");
     self endon("54de30d16f7f89db");
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     var_a98b31aa = isdefined(self.ai_zone) && isdefined(self.ai_zone.def);
     self.ai_zone = undefined;
@@ -881,7 +880,7 @@ function get_pathnode_path(pathnode) {
 // Size: 0xae
 function function_9a5f0c0(startpt, endpt) {
     self endon(#"delete");
-    self.origin = startpt + vectorscale((0, 0, 1), 10);
+    self.origin = startpt + (0, 0, 10);
     time = self fake_physicslaunch(endpt, 100);
     self playsound(#"zmb_spawn_powerup");
     wait(time);
@@ -895,7 +894,6 @@ function function_9a5f0c0(startpt, endpt) {
 // Checksum 0x3507f15a, Offset: 0x4098
 // Size: 0x114
 function function_bf357ddf(spawnpt, itemlist) {
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (isdefined(spawnpt.target)) {
         var_10508147 = struct::get(spawnpt.target, "targetname");
@@ -1051,7 +1049,7 @@ function function_2b925fa5(entity) {
 function function_bdb2b85b(entity, origin, angles, radius, num_spots, var_7a2632b5) {
     level endon(#"game_ended");
     slots = [];
-    mins = vectorscale((-1, -1, 0), 10);
+    mins = (-10, -10, 0);
     maxs = (10, 10, 48);
     /#
         record3dtext("<unknown string>", origin, (0, 0, 1));
@@ -1061,13 +1059,13 @@ function function_bdb2b85b(entity, origin, angles, radius, num_spots, var_7a2632
         x = radius * cos(t + angles[1]);
         y = radius * sin(t + angles[1]);
         pos = (x, y, 0) + origin;
-        if (!bullettracepassed(origin + vectorscale((0, 0, 1), 5), pos + vectorscale((0, 0, 1), 5), 0, entity)) {
+        if (!bullettracepassed(origin + (0, 0, 5), pos + (0, 0, 5), 0, entity)) {
             if (i % 2 == 1) {
                 waitframe(1);
             }
             continue;
         }
-        var_e07c7e8 = physicstrace(pos + vectorscale((0, 0, 1), 10), pos + vectorscale((0, 0, -1), 10), mins, maxs, self, 1);
+        var_e07c7e8 = physicstrace(pos + (0, 0, 10), pos + (0, 0, -10), mins, maxs, self, 1);
         var_c060661b = var_e07c7e8[#"position"];
         var_3e98a413 = getclosestpointonnavmesh(var_c060661b, 64, 15);
         if (isdefined(var_3e98a413)) {

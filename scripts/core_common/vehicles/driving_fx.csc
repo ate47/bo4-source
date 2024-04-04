@@ -47,7 +47,6 @@ function collision_thread(localclientnum) {
     self endon(#"death");
     self endon(#"exit_vehicle");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         hip = waitresult.velocity;
         hitn = waitresult.normal;

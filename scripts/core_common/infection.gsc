@@ -79,12 +79,8 @@ function function_fb163563(platoon) {
 // Checksum 0x422fe25f, Offset: 0x320
 // Size: 0x9c
 function function_153000d0(male, female) {
-    /#
-        assert(isdefined(male));
-    #/
-    /#
-        assert(isdefined(female));
-    #/
+    assert(isdefined(male));
+    assert(isdefined(female));
     male_index = player_role::function_97d19493(male);
     female_index = player_role::function_97d19493(female);
     function_e8cc8373(male_index, female_index);
@@ -95,12 +91,8 @@ function function_153000d0(male, female) {
 // Checksum 0x32963b7d, Offset: 0x3c8
 // Size: 0x8e
 function private function_e8cc8373(male, female) {
-    /#
-        assert(isdefined(male));
-    #/
-    /#
-        assert(isdefined(female));
-    #/
+    assert(isdefined(male));
+    assert(isdefined(female));
     if (!function_74650d7()) {
         return;
     }
@@ -113,9 +105,7 @@ function private function_e8cc8373(male, female) {
 // Checksum 0x321a84ea, Offset: 0x460
 // Size: 0xee
 function function_db5ddd5f(perk) {
-    /#
-        assert(isdefined(perk));
-    #/
+    assert(isdefined(perk));
     if (!function_74650d7()) {
         return;
     }
@@ -158,9 +148,7 @@ function give_loadout() {
 // Size: 0x164
 function reset_character() {
     if (!isplayer(self)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     self setcharacteroutfit(0);

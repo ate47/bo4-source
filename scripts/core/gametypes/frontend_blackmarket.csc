@@ -58,7 +58,6 @@ function function_8aff1931(localclientnum, menu_data) {
     level notify(#"hash_1a6765b456dde230");
     level endon(#"hash_1a6765b456dde230", #"blackmarket_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"blackjackreserve");
         if (isdefined(waitresult.open) && !waitresult.open) {
             function_99278be8(localclientnum, menu_data);

@@ -69,7 +69,6 @@ function private function_2e2a518(n_timer, var_f97d1a30) {
             wait(2);
         }
         self start_timer(n_timer, var_f97d1a30);
-        s_waitresult = undefined;
         s_waitresult = self waittilltimeout(n_timer, #"spent_points", #"hash_14b0ad44336160bc");
         self stop_timer();
         if (s_waitresult._notify == "timeout") {

@@ -233,7 +233,6 @@ function function_522aa0e9(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xf6
 function private function_cfefd76a(localclientnum, var_b3673abf, var_3ab46b9) {
     self endon(var_3ab46b9);
-    s_result = undefined;
     s_result = level waittill(#"respawn");
     a_e_players = getlocalplayers();
     foreach (e_player in a_e_players) {

@@ -80,9 +80,7 @@ function init_elevator(var_fd98a47c) {
     if (dynents.size == 0) {
         return;
     }
-    /#
-        assert(dynents.size == 2);
-    #/
+    assert(dynents.size == 2);
     foreach (dynent in dynents) {
         dynent.onuse = &function_31042f91;
         dynent.ondamaged = &function_724a2fa5;
@@ -167,7 +165,7 @@ function function_211e7277(point, var_8bd17d7d) {
             if (distance(player.origin, point.origin) < 16 && player.sessionstate == "playing") {
                 var_93a4284 = 1;
                 n_forward = var_8bd17d7d;
-                n_forward = n_forward * vectorscale((1, 1, 0), 32);
+                n_forward = n_forward * (32, 32, 0);
                 move_pos = move_pos + n_forward;
                 break;
             }
@@ -430,7 +428,7 @@ function function_d7b6ee00(activator, laststate, state) {
         forward = anglestoforward(self.angles);
         right = anglestoright(self.angles);
         bounds = function_c440d28e(self.var_15d44120);
-        start = self.origin + vectorscale((0, 0, 1), 35);
+        start = self.origin + (0, 0, 35);
         start = start - right * (bounds.mins[1] + bounds.maxs[1]) * 0.5;
         if (state == 1) {
             start = start + forward * 5;
@@ -470,14 +468,14 @@ function function_51a020(activator, laststate, state) {
         if (state == 0) {
             right = anglestoright(var_a9309589.angles);
             bounds = function_c440d28e(var_a9309589.var_15d44120);
-            center = var_a9309589.origin + vectorscale((0, 0, 1), 25);
+            center = var_a9309589.origin + (0, 0, 25);
             start = center + right * bounds.mins[1] * 0.85;
             end = center + right * bounds.maxs[1] * 0.85;
             results = bullettracepassed(start, end, 0, activator);
             if (!results) {
                 return false;
             }
-            center = var_a9309589.origin + vectorscale((0, 0, 1), 40);
+            center = var_a9309589.origin + (0, 0, 40);
             start = center + right * bounds.mins[1] * 0.85;
             end = center + right * bounds.maxs[1] * 0.85;
             results = bullettracepassed(start, end, 0, activator);

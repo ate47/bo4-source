@@ -8,47 +8,27 @@
 class cplayer_insertion_choice : cluielem {
 
     // Namespace cplayer_insertion_choice/player_insertion_choice
-    // Params 0, eflags: 0x8
-    // Checksum 0xe287d8a1, Offset: 0x1e8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cplayer_insertion_choice/player_insertion_choice
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xc191ff4f, Offset: 0x440
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cplayer_insertion_choice/player_insertion_choice
     // Params 2, eflags: 0x0
     // Checksum 0x377cbabc, Offset: 0x318
     // Size: 0x11c
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"groundvehicle" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"halojump" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"heli" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cplayer_insertion_choice/player_insertion_choice
@@ -65,7 +45,7 @@ class cplayer_insertion_choice : cluielem {
     // Size: 0x44
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
+        set_state(localclientnum, #"defaultstate");
     }
 
     // Namespace cplayer_insertion_choice/player_insertion_choice

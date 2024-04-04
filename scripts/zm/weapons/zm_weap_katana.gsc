@@ -78,7 +78,6 @@ function private function_9a0f234b() {
     self endon(#"disconnect");
     self thread function_756560e3();
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -136,7 +135,6 @@ function private function_9fdcf13f() {
 function private function_756560e3() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"hero_weapon_give");
         var_cad4df8e = waitresult.weapon;
         if (function_c740060f(var_cad4df8e, 2)) {
@@ -244,10 +242,8 @@ function function_8d02f57b(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
     while (true) {
         if (w_katana.name == #"hero_katana_t8_lv3") {
-            s_result = undefined;
             s_result = self waittill(#"weapon_melee_power");
         } else {
-            s_result = undefined;
             s_result = self waittill(#"weapon_melee_power", #"weapon_melee");
         }
         if (s_result.weapon == w_katana) {
@@ -263,7 +259,6 @@ function function_8d02f57b(w_katana) {
 function function_119af40d(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee_juke");
         if (s_result.weapon == w_katana) {
             self playsound(#"wpn_katana_dash");
@@ -347,7 +342,6 @@ function private function_bbe55589(e_player, w_katana, str_hitloc) {
 function function_fcc26273(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon == w_katana) {
             self thread function_bed1fd9f();
@@ -370,7 +364,6 @@ function function_bed1fd9f() {
     self.var_4e6b62c3 = 1;
     self clientfield::set("" + #"hash_7e2af117e18cb9fa", 1);
     self clientfield::set("" + #"hash_13ccfca7b26cec97", 1);
-    waitresult = undefined;
     waitresult = self waittill(#"hero_katana_expired", #"hash_6c803e34b0b06d90");
     if (waitresult._notify == #"hero_katana_expired") {
         self playsound(#"hash_58397a948dd38b37");
@@ -431,7 +424,6 @@ function function_c43691a9(var_2e56d8e5) {
 function function_478a4910(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee_juke");
         if (s_result.weapon == w_katana) {
             if (1 === zm_audio::create_and_play_dialog(#"hero_level_2", #"katana")) {
@@ -448,7 +440,6 @@ function function_478a4910(w_katana) {
 function function_68ff89f7(w_katana) {
     self endon(#"disconnect", #"bled_out", #"death", #"hero_katana_expired");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_melee");
         if (s_result.weapon == w_katana) {
             if (1 === zm_audio::create_and_play_dialog(#"hero_level_3", #"katana")) {

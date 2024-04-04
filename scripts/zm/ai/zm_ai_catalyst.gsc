@@ -151,43 +151,23 @@ function private registertransformations() {
 // Checksum 0x32e9ac6a, Offset: 0x10b0
 // Size: 0x50c
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_177aa69d));
-    #/
+    assert(isscriptfunctionptr(&function_177aa69d));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_6e732e3940240c58", &function_177aa69d);
-    /#
-        assert(isscriptfunctionptr(&function_f4e7fd8f));
-    #/
+    assert(isscriptfunctionptr(&function_f4e7fd8f));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_69f8b2358092c7d2", &function_f4e7fd8f);
-    /#
-        assert(isscriptfunctionptr(&function_787ce068));
-    #/
+    assert(isscriptfunctionptr(&function_787ce068));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5ff2f90caf2f463d", &function_787ce068);
-    /#
-        assert(!isdefined(&function_21cbb589) || isscriptfunctionptr(&function_21cbb589));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_6c92ebda) || isscriptfunctionptr(&function_6c92ebda));
-    #/
+    assert(!isdefined(&function_21cbb589) || isscriptfunctionptr(&function_21cbb589));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_6c92ebda) || isscriptfunctionptr(&function_6c92ebda));
     behaviortreenetworkutility::registerbehaviortreeaction(#"electriccatalystelectricburst", &function_21cbb589, undefined, &function_6c92ebda);
-    /#
-        assert(isscriptfunctionptr(&function_1043897a));
-    #/
+    assert(isscriptfunctionptr(&function_1043897a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1430ed09cf5c6db5", &function_1043897a);
-    /#
-        assert(isscriptfunctionptr(&function_dec8327a));
-    #/
+    assert(isscriptfunctionptr(&function_dec8327a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_1747a785a62d469f", &function_dec8327a);
-    /#
-        assert(isscriptfunctionptr(&function_554a7c58));
-    #/
+    assert(isscriptfunctionptr(&function_554a7c58));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_55c082fcd22cf9d7", &function_554a7c58);
-    /#
-        assert(isscriptfunctionptr(&function_d647a79d));
-    #/
+    assert(isscriptfunctionptr(&function_d647a79d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3891bbe2c51e97c9", &function_d647a79d);
     animationstatenetwork::registernotetrackhandlerfunction("tag_fx_electric_attack", &function_d697a1e3);
     animationstatenetwork::registernotetrackhandlerfunction("tag_fx_electric_attack_stop", &function_aef521f5);
@@ -283,7 +263,6 @@ function private function_734195be() {
     self endon(#"death");
     self.var_69a981e6 = 1;
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"transformation_complete");
         if (isdefined(s_notify.new_ai) && isarray(s_notify.new_ai) && isinarray(s_notify.new_ai, self)) {
             self.var_69a981e6 = 0;
@@ -782,7 +761,7 @@ function private function_dec8327a(behaviortreeentity) {
 function private function_de076722(entity) {
     origins = spawnstruct();
     origins.eye = entity geteye();
-    origins.feet = entity.origin + vectorscale((0, 0, 1), 8);
+    origins.feet = entity.origin + (0, 0, 8);
     origins.mid = (origins.feet[0], origins.feet[1], (origins.feet[2] + origins.eye[2]) / 2);
     return origins;
 }
@@ -1062,7 +1041,7 @@ function function_50a8406d() {
 }
 
 // Namespace zm_ai_catalyst/zm_ai_catalyst
-// Params a, eflags: 0x5 linked
+// Params 10, eflags: 0x5 linked
 // Checksum 0xe03cdaf8, Offset: 0x4790
 // Size: 0xe0
 function private function_22e12b7(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime) {
@@ -1469,7 +1448,7 @@ function private function_fa69f8d2(type) {
         if (isdefined(catalyst_zombie)) {
             wait(0.5);
             catalyst_zombie zm_transform::function_bbaec2fd();
-            catalyst_zombie forceteleport(trace[#"position"], player.angles + vectorscale((0, 1, 0), 180));
+            catalyst_zombie forceteleport(trace[#"position"], player.angles + (0, 180, 0));
             if (catalyst_zombie.catalyst_type == 1) {
                 level thread function_4329a51b(catalyst_zombie);
             }

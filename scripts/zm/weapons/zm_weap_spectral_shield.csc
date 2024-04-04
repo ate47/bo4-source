@@ -262,7 +262,6 @@ function function_a950c92c(localclientnum) {
     self endon(#"death", #"hash_3ed4154ad2e33ec3");
     while (true) {
         level.var_443d1164 = undefined;
-        s_result = undefined;
         s_result = level waittill(#"hash_73ff8d0d706c332d", #"hash_527d9fdde8903b80");
         level.var_443d1164 = 1;
         self function_4700b6cd(localclientnum);

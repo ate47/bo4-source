@@ -314,7 +314,7 @@ function spawn_zombies(e_target, n_count, var_6448415b = 0, a_spawns, var_d0e995
             nd_spawn = var_2e0b13ad[0];
         }
         zombie = undefined;
-        level.var_f682cf14.origin = nd_spawn.origin + vectorscale((0, 0, 1), 32);
+        level.var_f682cf14.origin = nd_spawn.origin + (0, 0, 32);
         if (!var_d0e99522 || isplayer(e_target) && e_target function_80d68e4d(level.var_f682cf14, 0.6, 1)) {
             zombie = spawnactor("spawner_boct_zombie_mp", nd_spawn.origin, nd_spawn.angles, "zombie", 0, var_68863e93);
             /#
@@ -786,7 +786,6 @@ function function_f7f67b2c() {
     level endon(#"combattraining_logic_finished");
     e_player = ct_utils::get_player();
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         e_player thread function_c633f931();
         e_player ct_utils::function_329f9ba6(#"hash_63ee17cf7d761911", 3, "red", 2);
@@ -1249,7 +1248,7 @@ function function_a6b6f492() {
 // Size: 0xcc
 function function_dd64960c(a_ents) {
     if (isdefined(a_ents[#"prop 1"])) {
-        var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + vectorscale((0, 0, -1), 8);
+        var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + (0, 0, -8);
         a_ents[#"prop 1"] waittill(#"physics_pulse", #"death");
         physicsexplosionsphere(var_7425591a, 1024, 1, 1);
     }

@@ -100,7 +100,6 @@ function private function_29bcf2f8() {
     self namespace_f8f28e08::function_ae2c0ba5();
     self zm_trial_util::function_63060af4(0);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_24326081081c2468");
         if (s_waitresult.var_9e09931e === 4) {
             self.var_bfc22435 = 1;

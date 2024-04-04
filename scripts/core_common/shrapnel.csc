@@ -106,9 +106,7 @@ function private function_816d735d(localclientnum) {
 function private function_989d336d(localclientnum) {
     self endon(#"disconnect");
     self endon(#"death");
-    /#
-        assert(level.new_health_model == 1);
-    #/
+    assert(level.new_health_model == 1);
     basehealth = 100;
     playerhealth = renderhealthoverlayhealth(localclientnum, basehealth);
     var_8e5bb835 = playerhealth;

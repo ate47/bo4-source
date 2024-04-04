@@ -123,7 +123,6 @@ function function_9ef27f88(n_fuse_timer, attacker, weapon) {
 function function_2b03f05f() {
     self endon(#"death", #"titus_target_timeout");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon === getweapon(#"hash_3de0926b89369160") || s_result.weapon === getweapon(#"hash_127bb24f68b5df27")) {
             a_grenades = getentarray("grenade", "classname");
@@ -262,7 +261,6 @@ function function_efefda46(willbekilled, einflictor, eattacker, idamage, flags, 
 function private function_eaa9c593() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -284,7 +282,6 @@ function private function_d72c4a61() {
     self notify(#"hash_20e403096a8af3b7");
     self endon(#"disconnect", #"hash_20e403096a8af3b7");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == getweapon(#"ww_blundergat_acid_t8") || s_result.weapon == getweapon(#"ww_blundergat_acid_t8_upgraded")) {
             util::wait_network_frame();
@@ -360,7 +357,6 @@ function function_d82e684c(is_not_upgraded = 1) {
 // Checksum 0x118b7eff, Offset: 0x1ab8
 // Size: 0x21a
 function function_49cfb951(n_fuse_timer = randomfloatrange(1, 1.5), is_not_upgraded = 1, ai_target, var_c1dd1629 = 1) {
-    s_result = undefined;
     s_result = self waittill(#"death");
     a_grenades = getentarray("grenade", "classname");
     foreach (e_grenade in a_grenades) {
@@ -438,11 +434,10 @@ function function_482c54d5(watcher, owner) {
     foreach (ai_zombie in a_ai_zombies) {
         ai_zombie thread function_aa1b44dc(self);
     }
-    s_result = undefined;
     s_result = self waittilltimeout(5, #"stationary", #"hash_14fd7b6a20ac8f44");
     waitframe(1);
     if (isplayer(s_result.target)) {
-        v_pos = groundtrace(self.origin + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, 1), 8), self.origin + vectorscale((0, 0, 1), 32) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+        v_pos = groundtrace(self.origin + (0, 0, 32) + (0, 0, 8), self.origin + (0, 0, 32) + (0, 0, -100000), 0, self)[#"position"];
         if (isdefined(v_pos)) {
             self ghost();
             mdl_magma = util::spawn_model(self.model, v_pos, s_result.target.angles);
@@ -510,7 +505,7 @@ function private function_7b25328b(e_player) {
     if (isdefined(e_player)) {
         w_current = e_player getcurrentweapon();
     }
-    v_ground_pos = groundtrace(self.origin, self.origin + vectorscale((0, 0, -1), 1000), 0, self)[#"position"];
+    v_ground_pos = groundtrace(self.origin, self.origin + (0, 0, -1000), 0, self)[#"position"];
     if (!isdefined(v_ground_pos) || distance(v_ground_pos, self.origin) > 64) {
         return;
     }
@@ -547,7 +542,6 @@ function private function_7b25328b(e_player) {
 function private function_aa1b44dc(e_grenade) {
     self endon(#"death");
     e_grenade endon(#"death");
-    s_result = undefined;
     s_result = self waittilltimeout(5, #"grenade_stuck");
     if (s_result.projectile === e_grenade) {
         self.var_4bfa8f6c = e_grenade;
@@ -578,7 +572,6 @@ function private function_c74dfed4(weapon) {
     self endon(#"death");
     self.trigger endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self.trigger waittill(#"trigger");
         if (isdefined(s_result.activator)) {
             if (isplayer(s_result.activator) && s_result.activator == self.owner) {
@@ -997,7 +990,6 @@ function function_f2ef907f() {
 function private function_c95282e3() {
     level endon(#"hash_209ec855e7a13ef3");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"crafting_started");
         if (isdefined(s_result.unitrigger)) {
             s_result.unitrigger thread crafting_table_watcher();
@@ -1012,7 +1004,6 @@ function private function_c95282e3() {
 function crafting_table_watcher() {
     if (isdefined(self.stub.blueprint) && self.stub.blueprint.name == #"zblueprint_acid_gat_build_kit") {
         v_pos = self.stub.origin;
-        s_progress = undefined;
         s_progress = self waittill(#"death", #"hash_6db03c91467a21f5");
         if (isdefined(s_progress.b_completed) && s_progress.b_completed) {
             var_17022e1e = arraygetclosest(v_pos, level.var_acbfec33);
@@ -1093,9 +1084,7 @@ function function_e33adfe0(player) {
 // Size: 0x8a8
 function function_b1347a6() {
     var_13202c94 = getent(self.stub.related_parent.target, "targetname");
-    /#
-        assert(isdefined(var_13202c94), "<unknown string>");
-    #/
+    assert(isdefined(var_13202c94), "<unknown string>");
     if (!isdefined(var_13202c94)) {
         return;
     }
@@ -1108,7 +1097,6 @@ function function_b1347a6() {
     var_13202c94.v_weapon_origin = var_13202c94 gettagorigin("tag_origin") + v_weapon_origin_offset;
     var_13202c94.v_weapon_angles = v_angles + v_weapon_angles_offset;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (!level flag::get(#"hash_72c4671390c83158") && !level flag::get(#"hash_634424410f574c1c")) {

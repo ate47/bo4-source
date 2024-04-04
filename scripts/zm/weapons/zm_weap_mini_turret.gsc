@@ -135,7 +135,7 @@ function function_3be2d17f(watcher, player) {
     self waittill(#"stationary");
     player stats::function_e24eec31(self.weapon, #"used", 1);
     self deployable::function_dd266e08(player);
-    self.origin = self.origin + vectorscale((0, 0, 1), 2);
+    self.origin = self.origin + (0, 0, 2);
     player onplaceturret(self);
     if (isdefined(player)) {
         player val::reset(#"mini_turret", "freezecontrols");
@@ -174,7 +174,6 @@ function function_d3ea6abe() {
 // Size: 0x7c
 function function_24910d60() {
     vehicle = self.vehicle;
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (waitresult._notify != "death") {
         return;
@@ -191,7 +190,6 @@ function function_24910d60() {
 function function_7f9eb7f() {
     owner = self.owner;
     owner endon(#"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"death", #"death_started");
     if (!isdefined(self)) {
         arrayremovevalue(owner.mini_turrets, undefined);
@@ -208,9 +206,7 @@ function function_7f9eb7f() {
 // Size: 0x4fc
 function onplaceturret(turret) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isdefined(turret.vehicle)) {
         turret.vehicle.origin = turret.origin;
         turret.vehicle.angles = turret.angles;
@@ -249,7 +245,7 @@ function onplaceturret(turret) {
     }
     turret.vehicle playloopsound(#"hash_69240c6db92da5bf", 0.25);
     turret.vehicle.turret_enabled = 1;
-    target_set(turret.vehicle, vectorscale((0, 0, 1), 36));
+    target_set(turret.vehicle, (0, 0, 36));
     turret.vehicle unlink();
     turret.vehicle vehicle::connect_paths();
     turret.vehicle thread turretscanning();
@@ -400,7 +396,6 @@ function setup_death_watch_for_new_targets() {
     turretvehicle = self;
     turretvehicle endon(#"death");
     for (old_target = undefined; true; old_target = waitresult.target) {
-        waitresult = undefined;
         waitresult = turretvehicle waittill(#"has_new_target");
         if (isdefined(old_target)) {
             old_target notify(#"abort_death_watch");
@@ -448,7 +443,7 @@ function turretscanning() {
         if (veh has_active_enemy() && isdefined(veh.enemy) && isalive(veh.enemy)) {
             veh.turretrotscale = getdvarfloat(#"hash_7a767607be3081e9", 3);
             if (!isdefined(veh.turret_target) || veh.turret_target != veh.enemy) {
-                veh vehicle_ai::setturrettarget(veh.enemy, 0, vectorscale((0, 0, -1), 15));
+                veh vehicle_ai::setturrettarget(veh.enemy, 0, (0, 0, -15));
                 veh.turret_target = veh.enemy;
                 veh playsoundtoteam("mpl_turret_alert", veh.team);
             }
@@ -460,7 +455,6 @@ function turretscanning() {
                     var_afae28e0 = !isdefined(var_fc9f290e) || !isalive(var_fc9f290e);
                     if (0.34 > 0 && !var_afae28e0) {
                         pause_time = 0.34 > 0.34 ? 0.34 : randomfloatrange(0.34, 0.34);
-                        waitresult = undefined;
                         waitresult = veh.turret_target waittilltimeout(pause_time, #"death", #"disconnect");
                         var_afae28e0 = waitresult._notify === "death";
                     }
@@ -570,7 +564,7 @@ function function_31477582() {
             wait(1);
             continue;
         }
-        trace = physicstrace(self.origin + (0, 0, 0), self.origin + vectorscale((0, 0, -1), 10), (-3, -3, -1), (3, 3, 1), self.turret, 1 | 16);
+        trace = physicstrace(self.origin + (0, 0, 0), self.origin + (0, 0, -10), (-3, -3, -1), (3, 3, 1), self.turret, 1 | 16);
         if (trace[#"fraction"] > 0) {
             new_origin = trace[#"position"];
             self.origin = (new_origin[0], new_origin[1], self.origin[2] - min(max_delta, self.origin[2] - new_origin[2]));

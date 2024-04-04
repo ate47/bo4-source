@@ -14,9 +14,7 @@
 // Checksum 0xcc9d1527, Offset: 0x208
 // Size: 0x144
 function main() {
-    /#
-        assert(isdefined(level.first_frame), "<unknown string>");
-    #/
+    assert(isdefined(level.first_frame), "<unknown string>");
     level._loadstarted = 1;
     /#
         util::check_art_mode();
@@ -40,12 +38,8 @@ function main() {
 // Checksum 0x493558b8, Offset: 0x358
 // Size: 0xae
 function setfootstepeffect(name, fx) {
-    /#
-        assert(isdefined(name), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(fx), "<unknown string>");
-    #/
+    assert(isdefined(name), "<unknown string>");
+    assert(isdefined(fx), "<unknown string>");
     if (!isdefined(anim.optionalstepeffects)) {
         anim.optionalstepeffects = [];
     }

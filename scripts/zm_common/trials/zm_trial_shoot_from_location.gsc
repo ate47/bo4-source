@@ -44,9 +44,7 @@ function private on_begin() {
     }
     str_targetname = "trials_shoot_from_location";
     level.var_7f31a12d = getentarray(str_targetname, "targetname");
-    /#
-        assert(level.var_7f31a12d.size, "<unknown string>");
-    #/
+    assert(level.var_7f31a12d.size, "<unknown string>");
     callback::function_33f0ddd3(&function_33f0ddd3);
     foreach (player in getplayers()) {
         player thread function_3658663();

@@ -190,7 +190,6 @@ function function_abf0bf8c() {
     self.var_740e1e0e setcandamage(1);
     self.var_740e1e0e.health = 9999;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self.var_740e1e0e waittill(#"damage");
         if (isplayer(s_waitresult.attacker) && !zm_loadout::is_offhand_weapon(s_waitresult.weapon)) {
             if (isdefined(s_waitresult.position) && distancesquared(s_waitresult.position, self.origin) < 100) {
@@ -215,7 +214,6 @@ function function_29a3aca4() {
     self endon(#"death");
     var_1fc5672 = 0;
     while (var_1fc5672 < level.var_6d3c8378.size) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_5a5c7c802e5f3037");
         if (s_waitresult.var_c8407ea2 !== var_1fc5672) {
             s_waitresult.var_740e1e0e clientfield::set("" + #"hash_693891d7b7f47419", 2);
@@ -323,7 +321,6 @@ function function_6941c919() {
     self.t_damage endon(#"death");
     w_shield = getweapon(#"zhield_dw");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self.t_damage waittill(#"damage");
         var_2af07147 = zm_weapons::get_base_weapon(s_waitresult.weapon);
         if (isplayer(s_waitresult.attacker)) {
@@ -347,7 +344,6 @@ function function_1dc8ad86() {
     var_1fc5672 = 0;
     b_fail = 0;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_15ccd1fdda38284a", #"rune_bashed");
         if (s_waitresult._notify == #"hash_15ccd1fdda38284a") {
             if (s_waitresult.var_c8407ea2 == var_1fc5672) {
@@ -373,7 +369,6 @@ function function_1dc8ad86() {
 function function_c4542a0c(t_trig) {
     level endon(#"end_game");
     t_trig endon(#"death");
-    waitresult = undefined;
     waitresult = t_trig waittill(#"trigger");
     e_player = waitresult.activator;
     e_player playsound("zmb_sk_tree_pickup");
@@ -404,7 +399,6 @@ function function_15c82a8a(var_a276c861) {
         var_4b9c76d7.var_360ebd9f setvisibletoall();
         level clientfield::set("" + #"hash_5f0c4b68b2a6a75d", 1);
         if (!var_a276c861) {
-            waitresult = undefined;
             waitresult = var_4b9c76d7.var_360ebd9f waittill(#"trigger");
         }
         var_4b9c76d7.mdl_stake show();
@@ -418,7 +412,6 @@ function function_15c82a8a(var_a276c861) {
             }
             var_4b9c76d7 waittill(#"hash_20911f4af4e75472");
             var_4b9c76d7.mdl_stake clientfield::set("" + #"hash_c2169a9806df05e", 1);
-            waitresult = undefined;
             waitresult = var_4b9c76d7.var_360ebd9f waittill(#"trigger");
             var_4b9c76d7.mdl_stake hide();
             var_4b9c76d7.mdl_stake clientfield::set("" + #"hash_c2169a9806df05e", 0);
@@ -553,7 +546,6 @@ function function_36194a5f(e_player) {
 function function_422acb4c() {
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         e_player = s_waitresult.activator;
         if (!e_player hasweapon(level.w_stake_knife)) {

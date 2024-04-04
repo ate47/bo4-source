@@ -71,9 +71,7 @@ function event_handler[gametype_init] main(eventstruct) {
         level.setbackweapon = level.weapon_sas_secondary_weapon;
         break;
     default:
-        /#
-            assert(1, "<unknown string>");
-        #/
+        assert(1, "<unknown string>");
         break;
     }
     gameobjects::register_allowed_gameobject(level.gametype);

@@ -300,9 +300,8 @@ function machine_think() {
     level.bottle_spawn_location = spawn("script_model", self.origin);
     level.bottle_spawn_location setmodel(#"tag_origin");
     level.bottle_spawn_location.angles = self.angles;
-    level.bottle_spawn_location.origin = level.bottle_spawn_location.origin + vectorscale((0, 0, 1), 65);
+    level.bottle_spawn_location.origin = level.bottle_spawn_location.origin + (0, 0, 65);
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         level flag::clear("machine_can_reset");
@@ -369,7 +368,6 @@ function grab_check(player, random_perk) {
     self endon(#"time_out_check");
     perk_is_bought = 0;
     while (!perk_is_bought) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_triggerer = waitresult.activator;
         if (e_triggerer == player) {
@@ -393,7 +391,6 @@ function grab_check(player, random_perk) {
     self notify(#"time_out_or_perk_grab");
     player notify(#"perk_purchased", {#perk:random_perk});
     player zm_perks::perk_give_bottle_begin(random_perk);
-    evt = undefined;
     evt = player waittill(#"fake_death", #"death", #"player_downed", #"weapon_change_complete");
     if (evt._notify == "weapon_change_complete") {
         player thread zm_perks::wait_give_perk(random_perk);
@@ -722,7 +719,6 @@ function machine_sounds() {
         level waittill(#"pmstrt");
         rndprk_ent = spawn("script_origin", self.origin);
         rndprk_ent stopsounds();
-        state_switch = undefined;
         state_switch = level waittill(#"pmstop", #"pmmove", #"machine_think");
         rndprk_ent stoploopsound(1);
         if (state_switch._notify == "pmstop") {

@@ -252,7 +252,6 @@ function function_af2eff2e() {
     level endon(#"end_game", #"hell_on_earth", #"hash_198bc172b5af7f25");
     self endon(#"challenge_station_completed");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         if (!level flag::get(#"hash_641f14d0b2fd57d7")) {
             continue;
@@ -428,7 +427,6 @@ function function_54e8826c(e_player) {
 // Size: 0x74
 function function_400a7216() {
     level endon(#"end_game");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     self zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
     self function_735037d4();
@@ -843,7 +841,7 @@ function function_a0ce7b0f() {
         var_deeb8287.s_challenge = self;
         var_deeb8287.var_107ca298 = var_deeb8287.origin;
         var_deeb8287.var_5287d229 = var_deeb8287.angles;
-        var_deeb8287.var_4e749208 = var_deeb8287.var_107ca298 + vectorscale((0, 0, 1), 56);
+        var_deeb8287.var_4e749208 = var_deeb8287.var_107ca298 + (0, 0, 56);
     }
     var_1ef4f1fa setcandamage(1);
     var_1ef4f1fa val::set("challenges", "allowdeath", 0);
@@ -860,7 +858,6 @@ function whack_a_mole_start_watcher(var_d6578e1f) {
     self notify("1c28e592c6826d46");
     self endon("1c28e592c6826d46");
     while (true) {
-        s_params = undefined;
         s_params = self waittill(#"damage");
         if (zm_orange_util::function_fe8ee9f0(s_params.weapon, 0)) {
             self setcandamage(0);
@@ -998,7 +995,6 @@ function function_8645fbe7(s_challenge) {
     self endon(#"hash_1a4fcb205b5695b5");
     s_challenge endon(s_challenge.str_notify);
     while (true) {
-        s_params = undefined;
         s_params = self waittill(#"damage");
         if (zm_orange_util::function_fe8ee9f0(s_params.weapon, 0)) {
             self moveto(self.var_107ca298, 0.1);
@@ -1104,7 +1100,6 @@ function function_89754c19(var_d6578e1f) {
     self endon(#"death");
     var_d6578e1f endon(var_d6578e1f.str_notify);
     while (true) {
-        s_params = undefined;
         s_params = self waittill(#"damage");
         if (zm_orange_util::function_fe8ee9f0(s_params.weapon, 0)) {
             self show();
@@ -1224,7 +1219,6 @@ function function_79884a9c(e_player) {
 function function_2fc4d208(s_challenge) {
     level endon(#"end_game");
     s_challenge endon(s_challenge.str_notify);
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     e_who = s_result.e_who;
     playsoundatposition(#"hash_4b33537532733659", self.origin);
@@ -1330,7 +1324,6 @@ function function_48f86741(var_d6578e1f) {
     self setcandamage(1);
     self val::set("challenges", "allowdeath", 0);
     while (true) {
-        s_params = undefined;
         s_params = self waittill(#"damage");
         if (zm_orange_util::function_fe8ee9f0(s_params.weapon) && !level flag::get(#"ww_icicle_melting")) {
             var_d6578e1f.n_current_progress++;
@@ -1376,7 +1369,6 @@ function function_c607ac40(var_d6578e1f) {
     var_d6578e1f endon(var_d6578e1f.str_notify);
     self.var_5637fcf9 = 0;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (!isdefined(e_who.var_77d7715a) || !e_who.var_77d7715a) {
@@ -1414,7 +1406,6 @@ function function_3fbb4390(var_d6578e1f) {
     level endon(#"end_game");
     var_d6578e1f endon(var_d6578e1f.str_notify);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (isdefined(e_who.var_77d7715a) && e_who.var_77d7715a && e_who zm_zonemgr::get_player_zone() === "beach" && isdefined(e_who.b_in_water) && e_who.b_in_water) {
@@ -1631,7 +1622,6 @@ function function_ce8060cc() {
     level endon(#"end_game");
     self endon(self.str_notify);
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hash_1ba786f1661e3817");
         self function_eaf6e39e(s_result.var_2ef2374);
     }
@@ -1645,7 +1635,6 @@ function function_abec537() {
     level endon(#"end_game");
     self endon(self.str_notify);
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hash_5e2619172b4487dd");
         self function_eaf6e39e(s_result.n_count);
     }
@@ -1780,8 +1769,8 @@ function function_b0d64cce(v_pos, v_angles) {
             #/
             v_drop = v_pos;
         }
-        v_ground = groundtrace(v_drop + vectorscale((0, 0, 1), 64) + vectorscale((0, 0, 1), 8), v_drop + vectorscale((0, 0, 1), 64) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
-        v_ground = v_ground + vectorscale((0, 0, 1), 36);
+        v_ground = groundtrace(v_drop + (0, 0, 64) + (0, 0, 8), v_drop + (0, 0, 64) + (0, 0, -100000), 0, self)[#"position"];
+        v_ground = v_ground + (0, 0, 36);
         e_brain = util::spawn_model("p8_zm_esc_warden_organs_brain", v_ground);
         waitframe(1);
         s_unitrigger = e_brain zm_item_pickup::create_item_pickup(&function_4626ec3, &function_fde99ac6, undefined, 96);
@@ -1857,7 +1846,7 @@ function function_d2403e6a(s_params) {
 // Size: 0x5b2
 function function_11001794() {
     level endon(#"end_game");
-    var_50ed6de = vectorscale((0, 1, 0), 90);
+    var_50ed6de = (0, 90, 0);
     self.var_f2e7f46a = 0;
     if (zm_utility::is_trials() && self.str_reward == "self_revives") {
         self.str_reward = "full_ammo";
@@ -1872,52 +1861,52 @@ function function_11001794() {
         a_e_players[0] clientfield::set("zm_orange_force_challenge_model", 1);
         break;
     case #"full_ammo":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 6);
+        self.var_f7d17867 = (0, 0, 6);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_max_ammo";
         break;
     case #"fire_sale":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 6);
+        self.var_f7d17867 = (0, 0, 6);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_firesale";
         break;
     case #"insta_kill":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 12);
+        self.var_f7d17867 = (0, 0, 12);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_insta_kill";
         break;
     case #"hero_weapon_power":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 6);
+        self.var_f7d17867 = (0, 0, 6);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p8_zm_powerup_full_power";
         break;
     case #"bonus_points_team":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "zombie_z_money_icon";
         break;
     case #"carpenter":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p7_zm_power_up_carpenter";
         break;
     case #"extra_snowballs":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p8_zm_ora_snowball_power_up";
         break;
     case #"armor":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p8_zm_ora_challenge_armor_power_up";
         break;
     case #"half_price_traps":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p8_zm_ora_trap_power_up";
         break;
     case #"break_freeze_faster":
-        self.var_f7d17867 = vectorscale((0, 0, 1), 10);
+        self.var_f7d17867 = (0, 0, 10);
         self.var_14172483 = var_50ed6de;
         self.var_3ff570f3 = "p8_zm_ora_ice_picker_power_up";
         break;
@@ -1993,7 +1982,6 @@ function function_9e87f32a() {
     self endon(#"hash_5d2057864469af2a", #"hash_4ac0558a94ba3fd7");
     self thread function_b49b8fc6();
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (zm_utility::can_use(e_who, 1)) {
@@ -2011,7 +1999,6 @@ function function_98233b53() {
     level endon(#"end_game");
     self endon(#"hash_5d2057864469af2a");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (zm_utility::can_use(e_who, 0)) {

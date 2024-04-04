@@ -23,33 +23,17 @@ function autoexec __init__system__() {
 // Checksum 0xcdc67937, Offset: 0x150
 // Size: 0x3ae
 function __init__() {
-    /#
-        assert(isscriptfunctionptr(&function_dedfe444));
-    #/
+    assert(isscriptfunctionptr(&function_dedfe444));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_7a881cd7648d875a", &function_dedfe444);
-    /#
-        assert(isscriptfunctionptr(&function_79554a79));
-    #/
+    assert(isscriptfunctionptr(&function_79554a79));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6049ac9ce94751b0", &function_79554a79);
-    /#
-        assert(!isdefined(&function_fc646a7e) || isscriptfunctionptr(&function_fc646a7e));
-    #/
-    /#
-        assert(!isdefined(&function_d31cb502) || isscriptfunctionptr(&function_d31cb502));
-    #/
-    /#
-        assert(!isdefined(&function_1a4b60ca) || isscriptfunctionptr(&function_1a4b60ca));
-    #/
+    assert(!isdefined(&function_fc646a7e) || isscriptfunctionptr(&function_fc646a7e));
+    assert(!isdefined(&function_d31cb502) || isscriptfunctionptr(&function_d31cb502));
+    assert(!isdefined(&function_1a4b60ca) || isscriptfunctionptr(&function_1a4b60ca));
     behaviortreenetworkutility::registerbehaviortreeaction(#"ziplinetraverse", &function_fc646a7e, &function_d31cb502, &function_1a4b60ca);
-    /#
-        assert(!isdefined(&function_a2185434) || isscriptfunctionptr(&function_a2185434));
-    #/
-    /#
-        assert(!isdefined(&function_48ef356e) || isscriptfunctionptr(&function_48ef356e));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(&function_a2185434) || isscriptfunctionptr(&function_a2185434));
+    assert(!isdefined(&function_48ef356e) || isscriptfunctionptr(&function_48ef356e));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"ziplinerelease", &function_a2185434, &function_48ef356e, undefined);
     /#
         adddebugcommand("<unknown string>");

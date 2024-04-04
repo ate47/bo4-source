@@ -246,9 +246,7 @@ function ambient_fakefire_think(point) {
         weaptype = "turret";
         break;
     default:
-        /#
-            assertmsg("<unknown string>" + point.weaponinfo + "<unknown string>");
-        #/
+        assertmsg("<unknown string>" + point.weaponinfo + "<unknown string>");
         break;
     }
     while (true) {

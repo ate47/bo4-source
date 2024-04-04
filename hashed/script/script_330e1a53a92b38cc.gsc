@@ -8,27 +8,11 @@
 class cmp_revive_prompt : cluielem {
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
-    // Params 0, eflags: 0x8
-    // Checksum 0x4508bcd1, Offset: 0x298
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_revive_prompt/mp_revive_prompt
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x694e4788, Offset: 0x520
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cmp_revive_prompt/mp_revive_prompt
     // Params 2, eflags: 0x0
     // Checksum 0x198c90fe, Offset: 0x4e8
     // Size: 0x30
     function set_reviveprogress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "reviveProgress", value);
+        set_data(localclientnum, "reviveProgress", value);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
@@ -36,7 +20,7 @@ class cmp_revive_prompt : cluielem {
     // Checksum 0x4037c452, Offset: 0x4b0
     // Size: 0x30
     function set_health(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "health", value);
+        set_data(localclientnum, "health", value);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
@@ -44,7 +28,7 @@ class cmp_revive_prompt : cluielem {
     // Checksum 0xaf955006, Offset: 0x478
     // Size: 0x30
     function set_clientnum(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "clientnum", value);
+        set_data(localclientnum, "clientnum", value);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
@@ -61,9 +45,9 @@ class cmp_revive_prompt : cluielem {
     // Size: 0x88
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "clientnum", 0);
-        [[ self ]]->set_data(localclientnum, "health", 0);
-        [[ self ]]->set_data(localclientnum, "reviveProgress", 0);
+        set_data(localclientnum, "clientnum", 0);
+        set_data(localclientnum, "health", 0);
+        set_data(localclientnum, "reviveProgress", 0);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt

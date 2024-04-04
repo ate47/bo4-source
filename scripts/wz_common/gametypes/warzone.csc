@@ -91,7 +91,6 @@ function start_warzone(localclientnum) {
 function function_7be1ea25() {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"teammate_waypoint_placed");
         localclientnum = waitresult.localclientnum;
         obj_id = util::getnextobjid(localclientnum);
@@ -138,7 +137,6 @@ function function_97d0a8af(local_client_num, obj_id, x, y, clientnum) {
 function function_783be487() {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"teammate_waypoint_removed");
         localclientnum = waitresult.localclientnum;
         localplayer = function_5c10bd79(localclientnum);
@@ -252,9 +250,7 @@ function on_killcam_end(params) {
 function function_f8c70ad7(localclientnum) {
     self endoncallback(&function_e8d2d8c5, #"death");
     self endon(#"disconnect");
-    /#
-        assert(!isdefined(self.var_408847b6));
-    #/
+    assert(!isdefined(self.var_408847b6));
     if (isdefined(self.var_408847b6)) {
         self function_e8d2d8c5();
     }
@@ -338,7 +334,6 @@ function function_a1aaf8c0() {
     self notify("15d660e19319a47");
     self endon("15d660e19319a47");
     while (isdefined(self)) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_5af34d08eac79f88");
         function_2dba6c5(waitresult.localclientnum, waitresult.teammateindex);
     }

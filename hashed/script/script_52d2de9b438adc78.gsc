@@ -67,7 +67,6 @@ function function_f625256f(killstreak_id, context) {
     self thread function_ef6c4a46(killstreak_id, trigger_event, var_9eb4725b, context);
     while (true) {
         player allowmelee(0);
-        notifystring = undefined;
         notifystring = self waittill(#"weapon_change", trigger_event, #"disconnect", #"spawned_player");
         player allowmelee(1);
         if (trigger_event != "none") {
@@ -161,14 +160,14 @@ function markerupdatethread(context) {
             forwardvector = vectorscale(anglestoforward(angles), 300);
             results = bullettrace(eyepos, eyepos + forwardvector, 0, player, 1);
             if (results[#"fraction"] >= 1) {
-                results = bullettrace(results[#"position"], results[#"position"] + vectorscale((0, 0, -1), 1000), 0, player, 1);
+                results = bullettrace(results[#"position"], results[#"position"] + (0, 0, -1000), 0, player, 1);
             }
         } else {
             weapon = getweapon("ir_strobe");
             eye = player getweaponmuzzlepoint();
             results = function_e6ba3ec9(weapon, eye, angles, player);
         }
-        markermodel.origin = results[#"position"] + vectorscale((0, 0, 1), 6);
+        markermodel.origin = results[#"position"] + (0, 0, 6);
         node = helicopter::getvalidrandomstartnode(markermodel.origin);
         var_6aa266d6 = undefined;
         if (isdefined(node)) {
@@ -231,7 +230,6 @@ function function_ef6c4a46(killstreak_id, trigger_event, supplydropweapon, conte
             weapon = supplydropweapon;
             weapon_instance = weapon;
         } else {
-            waitresult = undefined;
             waitresult = self waittill(trigger_event);
             weapon = waitresult.weapon;
             weapon_instance = waitresult.projectile;

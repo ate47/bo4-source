@@ -266,15 +266,11 @@ function add_dynamic_wallbuy(weapon, wallbuy, pristine) {
         }
     }
     if (!isdefined(spawned_wallbuy)) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     if (isdefined(spawned_wallbuy.trigger_stub)) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     target_struct = struct::get(wallbuy, "targetname");
@@ -622,7 +618,6 @@ function weapon_spawn_think() {
         }
     }
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::is_player_valid(player)) {

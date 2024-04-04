@@ -197,15 +197,9 @@ function door_classify(parent_trig) {
         }
         switch (self.script_string) {
         case #"anim":
-            /#
-                assert(isdefined(self.script_animname), "skip_disconnectpaths" + self.targetname);
-            #/
-            /#
-                assert(isdefined(level.scr_anim[self.script_animname]), "tearin_board_vertical_fx" + self.script_animname);
-            #/
-            /#
-                assert(isdefined(level.var_6ecb5c15), "<unknown string>");
-            #/
+            assert(isdefined(self.script_animname), "skip_disconnectpaths" + self.targetname);
+            assert(isdefined(level.scr_anim[self.script_animname]), "tearin_board_vertical_fx" + self.script_animname);
+            assert(isdefined(level.var_6ecb5c15), "<unknown string>");
             break;
         }
     }
@@ -220,7 +214,6 @@ function door_classify(parent_trig) {
 // Checksum 0xd7572bf, Offset: 0x1540
 // Size: 0x4d8
 function door_buy() {
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     who = waitresult.activator;
     force = waitresult.is_forced;
@@ -562,9 +555,7 @@ function wait_trigger_clear(trigger, more_triggers, end_on) {
     while (any_player_touching_any(trigger, more_triggers) || any_zombie_touching_any(trigger, more_triggers)) {
         wait(1);
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     self notify(#"trigger_clear");
 }
 
@@ -578,9 +569,7 @@ function waittill_door_trigger_clear_local_power_off(trigger, a_trigs) {
         if (isdefined(self.local_power_on) && self.local_power_on) {
             self waittill(#"local_power_off");
         }
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         self wait_trigger_clear(trigger, a_trigs, "local_power_on");
     }
 }
@@ -595,9 +584,7 @@ function waittill_door_trigger_clear_global_power_off(trigger, a_trigs) {
         if (isdefined(self.power_on) && self.power_on) {
             self waittill(#"power_off");
         }
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         self wait_trigger_clear(trigger, a_trigs, "power_on");
     }
 }
@@ -656,9 +643,7 @@ function door_think() {
                 self waittill(#"local_power_on");
             }
             if (!(isdefined(self._door_open) && self._door_open)) {
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 self door_opened(n_cost, 1);
                 if (!isdefined(self.power_cost)) {
                     self.power_cost = 0;
@@ -673,9 +658,7 @@ function door_think() {
             self waittill_door_can_close();
             self door_block();
             if (isdefined(self._door_open) && self._door_open) {
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 self door_opened(n_cost, 1);
             }
             self sethintstring(#"hash_671e980430950a22");
@@ -692,9 +675,7 @@ function door_think() {
                 level flag::wait_till(self.script_flag_wait);
             }
             if (!(isdefined(self._door_open) && self._door_open)) {
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 self door_opened(n_cost, 1);
                 if (!isdefined(self.power_cost)) {
                     self.power_cost = 0;
@@ -709,9 +690,7 @@ function door_think() {
             self waittill_door_can_close();
             self door_block();
             if (isdefined(self._door_open) && self._door_open) {
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 self door_opened(n_cost, 1);
             }
             self thread function_dafd2e5a();
@@ -1025,7 +1004,6 @@ function debris_think() {
         }
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         who = waitresult.activator;
         if (isdefined(who)) {
@@ -1313,12 +1291,8 @@ function function_23cbcd8() {
         return;
     }
     self.var_b4d014cf = 1;
-    /#
-        assert(isdefined(self.model) || isdefined(self.objectid), "<unknown string>" + self.origin);
-    #/
-    /#
-        assert(isdefined(self.script_vector), "<unknown string>");
-    #/
+    assert(isdefined(self.model) || isdefined(self.objectid), "<unknown string>" + self.origin);
+    assert(isdefined(self.script_vector), "<unknown string>");
     if (isdefined(self.script_noteworthy)) {
         a_str_tokens = strtok2(self.script_noteworthy, "_");
         if (isinarray(a_str_tokens, "symbol") && (isinarray(a_str_tokens, "front") || isinarray(a_str_tokens, "back"))) {
@@ -1333,9 +1307,7 @@ function function_23cbcd8() {
         } else if (self.model == "p8_zm_power_door_symbol_01") {
             self.objectid = "symbol_front_power";
         } else {
-            /#
-                assert(0, "<unknown string>" + self.origin);
-            #/
+            assert(0, "<unknown string>" + self.origin);
         }
     }
     mdl_symbol = util::spawn_model("tag_origin", self.origin, self.angles, 0, 1);
@@ -1470,7 +1442,7 @@ function blocker_init() {
     if (!isdefined(self.target)) {
         return;
     }
-    pos = zm_utility::groundpos(self.origin) + vectorscale((0, 0, 1), 8);
+    pos = zm_utility::groundpos(self.origin) + (0, 0, 8);
     if (isdefined(pos)) {
         self.origin = pos;
     }
@@ -1617,7 +1589,6 @@ function function_22642075() {
 function destructible_glass_barricade(unbroken_section, node) {
     unbroken_section setcandamage(1);
     unbroken_section.health = 99999;
-    waitresult = undefined;
     waitresult = unbroken_section waittill(#"damage");
     if (zm_utility::is_player_valid(waitresult.attacker) || waitresult.attacker laststand::player_is_in_laststand()) {
         self thread zm_spawner::zombie_boardtear_offset_fx_horizontle(self, node);
@@ -1644,17 +1615,17 @@ function blocker_attack_spots() {
     numslots = self.zbarrier getzbarriernumattackslots();
     numslots = int(max(numslots, 1));
     if (numslots % 2) {
-        spots[spots.size] = zm_utility::groundpos_ignore_water_new(s_attack_spots.origin + vectorscale((0, 0, 1), 60));
+        spots[spots.size] = zm_utility::groundpos_ignore_water_new(s_attack_spots.origin + (0, 0, 60));
     }
     if (numslots > 1) {
         reps = floor(numslots / 2);
         slot = 1;
         for (i = 0; i < reps; i++) {
             offset = self.zbarrier getzbarrierattackslothorzoffset() * (i + 1);
-            spots[spots.size] = zm_utility::groundpos_ignore_water_new(spots[0] + anglestoright(s_attack_spots.angles) * offset + vectorscale((0, 0, 1), 60));
+            spots[spots.size] = zm_utility::groundpos_ignore_water_new(spots[0] + anglestoright(s_attack_spots.angles) * offset + (0, 0, 60));
             slot++;
             if (slot < numslots) {
-                spots[spots.size] = zm_utility::groundpos_ignore_water_new(spots[0] + anglestoright(s_attack_spots.angles) * offset * -1 + vectorscale((0, 0, 1), 60));
+                spots[spots.size] = zm_utility::groundpos_ignore_water_new(spots[0] + anglestoright(s_attack_spots.angles) * offset * -1 + (0, 0, 60));
                 slot++;
             }
         }
@@ -1722,7 +1693,7 @@ function player_fails_blocker_repair_trigger_preamble(player, players, trigger, 
     if (!isdefined(trigger)) {
         return true;
     }
-    if (!player istouching(trigger, vectorscale((1, 1, 1), 10))) {
+    if (!player istouching(trigger, (10, 10, 10))) {
         return true;
     }
     if (!zm_utility::is_player_valid(player)) {
@@ -1813,9 +1784,7 @@ function blocker_trigger_think() {
     if (isdefined(level.no_board_repair) && level.no_board_repair) {
         return;
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level endon(#"stop_blocker_think");
     cost = 10;
     if (isdefined(self.zombie_cost)) {
@@ -1836,7 +1805,7 @@ function blocker_trigger_think() {
         if (isdefined(trigger_location.height)) {
             height = trigger_location.height;
         }
-        trigger_pos = zm_utility::groundpos(trigger_location.origin) + vectorscale((0, 0, 1), 4);
+        trigger_pos = zm_utility::groundpos(trigger_location.origin) + (0, 0, 4);
         self.unitrigger_stub = spawnstruct();
         self.unitrigger_stub.origin = trigger_pos;
         self.unitrigger_stub.radius = radius;
@@ -1852,7 +1821,7 @@ function blocker_trigger_think() {
         if (!isdefined(trigger_location.angles)) {
             trigger_location.angles = (0, 0, 0);
         }
-        self.unitrigger_stub.origin = zm_utility::groundpos(trigger_location.origin) + vectorscale((0, 0, 1), 4) + anglestoforward(trigger_location.angles) * -11;
+        self.unitrigger_stub.origin = zm_utility::groundpos(trigger_location.origin) + (0, 0, 4) + anglestoforward(trigger_location.angles) * -11;
     }
     self thread trigger_delete_on_repair();
     thread zm_unitrigger::register_static_unitrigger(self.unitrigger_stub, &blocker_unitrigger_think);
@@ -1862,7 +1831,6 @@ function blocker_trigger_think() {
         }
     #/
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (isdefined(level.var_aef7f7d5) && level.var_aef7f7d5) {
@@ -2079,7 +2047,7 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
     if (isdefined(chunk.script_parameters) && chunk.script_parameters == "bar") {
         if (isdefined(chunk.script_noteworthy) && chunk.script_noteworthy == "4") {
             ent = spawn("script_origin", chunk.origin);
-            ent.angles = node.angles + vectorscale((0, 1, 0), 180);
+            ent.angles = node.angles + (0, 180, 0);
             dist = 100;
             if (isdefined(chunk.script_move_dist)) {
                 dist_max = chunk.script_move_dist - 100;
@@ -2088,9 +2056,9 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
                 dist = 100 + randomint(100);
             }
             dest = ent.origin + anglestoforward(ent.angles) * dist;
-            trace = bullettrace(dest + vectorscale((0, 0, 1), 16), dest + vectorscale((0, 0, -1), 200), 0, undefined);
+            trace = bullettrace(dest + (0, 0, 16), dest + (0, 0, -200), 0, undefined);
             if (trace[#"fraction"] == 1) {
-                dest = dest + vectorscale((0, 0, -1), 200);
+                dest = dest + (0, 0, -200);
             } else {
                 dest = trace[#"position"];
             }
@@ -2107,7 +2075,7 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
             ent delete();
         } else {
             ent = spawn("script_origin", chunk.origin);
-            ent.angles = node.angles + vectorscale((0, 1, 0), 180);
+            ent.angles = node.angles + (0, 180, 0);
             dist = 100;
             if (isdefined(chunk.script_move_dist)) {
                 dist_max = chunk.script_move_dist - 100;
@@ -2116,9 +2084,9 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
                 dist = 100 + randomint(100);
             }
             dest = ent.origin + anglestoforward(ent.angles) * dist;
-            trace = bullettrace(dest + vectorscale((0, 0, 1), 16), dest + vectorscale((0, 0, -1), 200), 0, undefined);
+            trace = bullettrace(dest + (0, 0, 16), dest + (0, 0, -200), 0, undefined);
             if (trace[#"fraction"] == 1) {
-                dest = dest + vectorscale((0, 0, -1), 200);
+                dest = dest + (0, 0, -200);
             } else {
                 dest = trace[#"position"];
             }
@@ -2139,7 +2107,7 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
     }
     if (isdefined(chunk.script_parameters) && chunk.script_parameters == "board" || chunk.script_parameters == "repair_board" || chunk.script_parameters == "barricade_vents") {
         ent = spawn("script_origin", chunk.origin);
-        ent.angles = node.angles + vectorscale((0, 1, 0), 180);
+        ent.angles = node.angles + (0, 180, 0);
         dist = 100;
         if (isdefined(chunk.script_move_dist)) {
             dist_max = chunk.script_move_dist - 100;
@@ -2148,9 +2116,9 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
             dist = 100 + randomint(100);
         }
         dest = ent.origin + anglestoforward(ent.angles) * dist;
-        trace = bullettrace(dest + vectorscale((0, 0, 1), 16), dest + vectorscale((0, 0, -1), 200), 0, undefined);
+        trace = bullettrace(dest + (0, 0, 16), dest + (0, 0, -200), 0, undefined);
         if (trace[#"fraction"] == 1) {
-            dest = dest + vectorscale((0, 0, -1), 200);
+            dest = dest + (0, 0, -200);
         } else {
             dest = trace[#"position"];
         }
@@ -2181,12 +2149,12 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
     if (isdefined(chunk.script_parameters) && chunk.script_parameters == "grate") {
         if (isdefined(chunk.script_noteworthy) && chunk.script_noteworthy == "6") {
             ent = spawn("script_origin", chunk.origin);
-            ent.angles = node.angles + vectorscale((0, 1, 0), 180);
+            ent.angles = node.angles + (0, 180, 0);
             dist = 100 + randomint(100);
             dest = ent.origin + anglestoforward(ent.angles) * dist;
-            trace = bullettrace(dest + vectorscale((0, 0, 1), 16), dest + vectorscale((0, 0, -1), 200), 0, undefined);
+            trace = bullettrace(dest + (0, 0, 16), dest + (0, 0, -200), 0, undefined);
             if (trace[#"fraction"] == 1) {
-                dest = dest + vectorscale((0, 0, -1), 200);
+                dest = dest + (0, 0, -200);
             } else {
                 dest = trace[#"position"];
             }
@@ -2216,7 +2184,7 @@ function remove_chunk(chunk, node, destroy_immediately, zomb) {
 // Size: 0x76
 function remove_chunk_rotate_grate(chunk) {
     if (isdefined(chunk.script_parameters) && chunk.script_parameters == "grate") {
-        chunk vibrate(vectorscale((0, 1, 0), 270), 0.2, 0.4, 0.4);
+        chunk vibrate((0, 270, 0), 0.2, 0.4, 0.4);
         return;
     }
 }
@@ -2296,12 +2264,8 @@ function ensure_chunk_is_back_to_origin(chunk) {
 function replace_chunk(barrier, chunk, has_perk, via_powerup) {
     if (!isdefined(barrier.zbarrier)) {
         chunk update_states("mid_repair");
-        /#
-            assert(isdefined(chunk.og_origin));
-        #/
-        /#
-            assert(isdefined(chunk.og_angles));
-        #/
+        assert(isdefined(chunk.og_origin));
+        assert(isdefined(chunk.og_angles));
         sound = "rebuild_barrier_hover";
         if (isdefined(chunk.script_presound)) {
             sound = chunk.script_presound;
@@ -2461,41 +2425,41 @@ function zombie_gratetear_audio_plus_fx_offset_repair_horizontal(chunk) {
     chunk zm_utility::play_sound_on_ent("bar_rebuild_slam");
     switch (randomint(9)) {
     case 0:
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         wait(randomfloatrange(0, 0.3));
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         break;
     case 1:
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         wait(randomfloatrange(0, 0.3));
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         break;
     case 2:
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         wait(randomfloatrange(0, 0.3));
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         break;
     case 3:
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         wait(randomfloatrange(0, 0.3));
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         break;
     case 4:
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         wait(randomfloatrange(0, 0.3));
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         break;
     case 5:
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         break;
     case 6:
-        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break_lite"], chunk.origin + (-30, 0, 0));
         break;
     case 7:
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         break;
     case 8:
-        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + vectorscale((-1, 0, 0), 30));
+        playfx(level._effect[#"fx_zombie_bar_break"], chunk.origin + (-30, 0, 0));
         break;
     }
 }
@@ -2602,9 +2566,7 @@ function zombie_bartear_audio_plus_fx_offset_repair_verticle(chunk) {
 // Size: 0x19c
 function flag_blocker() {
     if (!isdefined(self.script_flag_wait)) {
-        /#
-            assertmsg("<unknown string>" + self.origin + "<unknown string>");
-        #/
+        assertmsg("<unknown string>" + self.origin + "<unknown string>");
         return;
     }
     if (!isdefined(level.flag[self.script_flag_wait])) {
@@ -2626,9 +2588,7 @@ function flag_blocker() {
         self triggerenable(0);
         return;
     }
-    /#
-        assertmsg("<unknown string>" + self.origin + "<unknown string>" + type + "<unknown string>");
-    #/
+    assertmsg("<unknown string>" + self.origin + "<unknown string>" + type + "<unknown string>");
 }
 
 // Namespace zm_blockers/zm_blockers
@@ -2636,9 +2596,7 @@ function flag_blocker() {
 // Checksum 0x736ec39, Offset: 0xb2b8
 // Size: 0x32
 function update_states(states) {
-    /#
-        assert(isdefined(states));
-    #/
+    assert(isdefined(states));
     self.state = states;
 }
 

@@ -7,22 +7,6 @@
 // Method(s) 6 Total 12
 class class_27e8fec4 : cluielem {
 
-    // Namespace class_27e8fec4/ct_recon_enemy_reinforcement
-    // Params 0, eflags: 0x8
-    // Checksum 0x4bef5c42, Offset: 0x1a8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace class_27e8fec4/ct_recon_enemy_reinforcement
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x6b6c5108, Offset: 0x290
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
     // Namespace namespace_27e8fec4/ct_recon_enemy_reinforcement
     // Params 1, eflags: 0x0
     // Checksum 0xab138b20, Offset: 0x258

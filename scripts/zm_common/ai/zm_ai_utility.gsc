@@ -80,9 +80,7 @@ function private function_a19d7104(settingsbundle) {
     }
     foreach (var_e8d7c6d7 in settingsbundle.weapondamagescaleoverrides) {
         if (!isdefined(var_e8d7c6d7.weaponid) || !isdefined(var_e8d7c6d7.damagescale)) {
-            /#
-                println("<unknown string>" + settingsbundle.name);
-            #/
+            println("<unknown string>" + settingsbundle.name);
             continue;
         }
         level.var_532264f5[settingsbundle.name][var_e8d7c6d7.weaponid] = {#var_c6cc6205:var_e8d7c6d7.damagescale, #var_fff93f95:var_e8d7c6d7.var_628192b0, #var_8e22aa87:var_e8d7c6d7.var_fc420d71, #var_fac896db:var_e8d7c6d7.var_97b22faa};
@@ -371,9 +369,7 @@ function function_de3dda83(var_5457dc44, hitloc, point, var_ebcb86d6) {
 // Checksum 0xb1d766db, Offset: 0x15d8
 // Size: 0x1aa
 function function_a2e8fd7b(entity, player, var_3f120c4d = 4) {
-    /#
-        assert(isplayer(player), "<unknown string>");
-    #/
+    assert(isplayer(player), "<unknown string>");
     if (getdvarint(#"zm_zone_pathing", 1)) {
         zone_path = zm_zonemgr::function_54fc7938(player, entity);
         if (isdefined(zone_path) && zone_path.cost >= var_3f120c4d) {

@@ -46,12 +46,12 @@ function __main__() {
 // Checksum 0x48fc408b, Offset: 0x210
 // Size: 0x258
 function custom_joker_movement() {
-    v_origin = self.weapon_model.origin - vectorscale((0, 0, 1), 5);
+    v_origin = self.weapon_model.origin - (0, 0, 5);
     if (isdefined(self.weapon_model)) {
         self.weapon_model delete();
         self.weapon_model = undefined;
     }
-    mdl_lock = util::spawn_model(level.chest_joker_model, v_origin, self.angles + vectorscale((0, 1, 0), 180));
+    mdl_lock = util::spawn_model(level.chest_joker_model, v_origin, self.angles + (0, 180, 0));
     mdl_lock.targetname = "box_lock";
     mdl_lock setcandamage(1);
     level.var_c7626f2a[#"box_lock"] = &pebble::function_bdd1bac8;

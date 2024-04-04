@@ -335,7 +335,6 @@ function function_dc380897() {
             self.vessel = vessel;
         }
     }
-    waitresult = undefined;
     waitresult = self waittill(#"trigger_activated");
     player = waitresult.e_who;
     if (level.var_d7374603 == 0) {
@@ -383,9 +382,9 @@ function function_dc380897() {
         }
     #/
     self.var_b6d21cc2 = 1;
-    pos = var_deb6871b.origin + anglestoforward(var_deb6871b.angles) * 14 + vectorscale((0, 0, 1), 4);
+    pos = var_deb6871b.origin + anglestoforward(var_deb6871b.angles) * 14 + (0, 0, 4);
     self.e_fire = spawn("script_model", pos);
-    self.e_fire.angles = var_deb6871b.angles + vectorscale((0, 1, 0), 90);
+    self.e_fire.angles = var_deb6871b.angles + (0, 90, 0);
     self.e_fire setmodel("tag_origin");
     self.e_fire clientfield::set("" + #"hash_249c83f6060ea7ba", 1);
     self.vessel clientfield::set("" + #"hash_411947cf11cffb69", 1);

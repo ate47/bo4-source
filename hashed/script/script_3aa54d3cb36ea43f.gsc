@@ -77,9 +77,7 @@ function private function_b656013e() {
 function function_ea46ca6f() {
     level.var_b3d6ef3b = getentarray("zombie_gegenees_spawner", "script_noteworthy");
     if (level.var_b3d6ef3b.size == 0) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     spawner::add_archetype_spawn_function(#"gegenees", &gegenees_init);

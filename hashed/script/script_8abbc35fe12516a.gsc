@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class cmp_prop_timer : cluielem {
 
-    // Namespace cmp_prop_timer/mp_prop_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0xef9cba39, Offset: 0x210
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_prop_timer/mp_prop_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x29956f93, Offset: 0x3c0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cmp_prop_timer/mp_prop_timer
     // Params 2, eflags: 0x0
     // Checksum 0xe3ae3806, Offset: 0x378
     // Size: 0x3c
     function set_isprop(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "isProp", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "isProp", value);
     }
 
     // Namespace cmp_prop_timer/mp_prop_timer
@@ -37,7 +23,7 @@ class cmp_prop_timer : cluielem {
     // Checksum 0x81ca0d4c, Offset: 0x330
     // Size: 0x3c
     function set_timeremaining(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "timeRemaining", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "timeRemaining", value);
     }
 
     // Namespace cmp_prop_timer/mp_prop_timer

@@ -207,7 +207,6 @@ function function_39549562(var_7b192260, var_f8561a50) {
         var_f8561a50 thread function_debf98ad((1, 0, 1));
     #/
     var_f8561a50 clientfield::set("" + #"hash_1f18edb30c01161a", 1);
-    s_result = undefined;
     s_result = self waittill(#"death");
     level notify(#"hash_483503537a553500", {#e_player:s_result.attacker});
     namespace_617a54f4::function_3f808d3d(var_7b192260);
@@ -504,7 +503,6 @@ function function_5caf3d1a() {
 function function_686b9870() {
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         player = s_waitresult.activator;
         var_f7a8259e = level flag::get_all(array("crystal_main_hall", "crystal_library", "crystal_greenhouse"));
@@ -549,7 +547,6 @@ function function_fc79b7da(str_flag) {
 function function_5ccf9075() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::can_use(player)) {
@@ -879,7 +876,7 @@ function function_9e7129d2(e_player, s_stone, var_6cf4ded4, str_hint) {
     }
     s_anim.angles = var_476002f7;
     e_player thread mansion_util::function_5f42b3e2(s_anim);
-    v_cam = s_teleport_room.origin + vectorscale((0, 0, 1), 64) + vectorscale(anglestoforward(s_teleport_room.angles), 16);
+    v_cam = s_teleport_room.origin + (0, 0, 64) + vectorscale(anglestoforward(s_teleport_room.angles), 16);
     var_59e3224a = 1090;
     /#
         var_59e3224a = getdvarint(#"hash_1775ae42c634445e", var_59e3224a);
@@ -912,7 +909,6 @@ function function_9e7129d2(e_player, s_stone, var_6cf4ded4, str_hint) {
         if (var_6cf4ded4 == 17) {
             n_time = gettime();
         }
-        s_waitresult = undefined;
         s_waitresult = e_player waittilltimeout(3, #"hide_equipment_hint_text", #"disconnect", #"death");
     }
     if (isdefined(n_time)) {
@@ -1030,13 +1026,12 @@ function function_a93fe3a4(str_loc) {
 // Size: 0x790
 function function_5713470b() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         player = s_result.activator;
         if (isdefined(player.var_d049df11) && player.var_d049df11) {
             continue;
         }
-        if (!zm_utility::can_use(player) || distancesquared(groundtrace(player.origin, player.origin + vectorscale((0, 0, -1), 128), 0, player)[#"position"], player.origin) > 16) {
+        if (!zm_utility::can_use(player) || distancesquared(groundtrace(player.origin, player.origin + (0, 0, -128), 0, player)[#"position"], player.origin) > 16) {
             continue;
         }
         if (self.stub.var_f0e6c7a2 flag::get("flag_gazing_stone_in_use")) {
@@ -1233,7 +1228,7 @@ function function_16ce67dd(vol_transform) {
 // Checksum 0xb09d5a51, Offset: 0x68b8
 // Size: 0x1414
 function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
-    v_offset = vectorscale((0, 0, 1), 16);
+    v_offset = (0, 0, 16);
     s_stub = self.stub;
     switch (str_type) {
     case #"nos":
@@ -1255,7 +1250,7 @@ function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
         if (isdefined(level.var_9ce3e25a)) {
             s_loc.origin = level.var_9ce3e25a;
         } else {
-            mdl_trail = util::spawn_model("tag_origin", s_key.origin + vectorscale((0, 0, 1), 500));
+            mdl_trail = util::spawn_model("tag_origin", s_key.origin + (0, 0, 500));
             mdl_trail clientfield::set("" + #"soul_fx", 1);
             mdl_trail moveto(s_key.origin, 2);
             mdl_trail waittill(#"movedone");
@@ -1270,9 +1265,9 @@ function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
         str_loc = s_stub.str_hint;
         v_offset = (0, 0, 0);
         if (var_ff4b3a13.targetname == "painting_4") {
-            v_offset = vectorscale((0, 0, -1), 16);
+            v_offset = (0, 0, -16);
         } else {
-            v_offset = vectorscale((0, 0, -1), 28);
+            v_offset = (0, 0, -28);
         }
         str_loc = array::random(level.var_28edc152);
         arrayremovevalue(level.var_28edc152, str_loc);
@@ -1404,9 +1399,9 @@ function function_16288b92(str_type, s_loc, mdl_key, vol_transform) {
         e_trail thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", e_trail);
         e_trail.mdl_head thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", e_trail.mdl_head);
         s_loc = e_trail.s_portal;
-        s_loc.origin = e_trail.s_portal.origin + vectorscale((0, 0, 1), 48);
+        s_loc.origin = e_trail.s_portal.origin + (0, 0, 48);
         t_portal = getent("trigger_portal", "targetname");
-        t_portal.origin = groundtrace(s_loc.origin, s_loc.origin + vectorscale((0, 0, -1), 128), 0, e_trail)[#"position"];
+        t_portal.origin = groundtrace(s_loc.origin, s_loc.origin + (0, 0, -128), 0, e_trail)[#"position"];
         t_portal waittill(#"trigger");
         e_trail clientfield::set("" + #"soul_fx", 0);
         wait(0.1);
@@ -1505,7 +1500,6 @@ function function_f7b04d9c(s_key) {
         var_d18f896 = 10;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (isplayer(waitresult.activator)) {
             e_player = waitresult.activator;
@@ -1782,7 +1776,6 @@ function function_ff4485b6(a_ents, mdl_key, mdl_crystal) {
         n_value = 3;
         break;
     }
-    s_waittill = undefined;
     s_waittill = mdl_prop waittill(#"hash_7e8ff943115ed67b", #"key_ready", #"death");
     mdl_key.fx_org clientfield::set("" + #"hash_51257ec597a8f84f", n_value);
     if (isdefined(mdl_prop) && s_waittill._notify != #"key_ready") {
@@ -1895,7 +1888,7 @@ function function_d409a74f(mdl_symbol) {
             level notify(#"hash_5927e3d93a01cc61");
         }
         if (isdefined(self.var_7988eee5) && zm_utility::is_player_valid(self.var_7988eee5) && n_timer < 30) {
-            v_player = self.var_7988eee5.origin + vectorscale((0, 0, 1), 8);
+            v_player = self.var_7988eee5.origin + (0, 0, 8);
             n_dist = distance2dsquared(self.origin, v_player);
         } else {
             self.var_7988eee5 = self mansion_util::get_closest_valid_player(22500);
@@ -2164,7 +2157,6 @@ function function_450b01a5() {
     /#
         self thread function_debf98ad();
     #/
-    s_result = undefined;
     s_result = self waittill(#"trigger");
     /#
         self thread debug_draw_stop();
@@ -2603,7 +2595,6 @@ function function_5af2281f(player) {
 // Size: 0x108
 function function_4135e83e() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (player zm_utility::in_revive_trigger()) {
@@ -2633,7 +2624,6 @@ function function_d29a3f81() {
         /#
             self thread function_debf98ad();
         #/
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         /#
             self thread debug_draw_stop();
@@ -3063,7 +3053,6 @@ function trigger_think() {
         /#
             self thread function_debf98ad();
         #/
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         /#
             self debug_draw_stop();
@@ -3254,7 +3243,7 @@ function debug_draw_star(v_color) {
             }
             debugstar(self.origin, 1, v_color);
             if (isdefined(self.targetname)) {
-                print3d(self.origin + vectorscale((0, 0, 1), 4), self.targetname, v_color, 1, 0.5);
+                print3d(self.origin + (0, 0, 4), self.targetname, v_color, 1, 0.5);
             }
             waitframe(1);
         }

@@ -10,12 +10,8 @@ function registeranimationselectortableevaluator(functionname, functionptr) {
         level._astevaluatorscriptfunctions = [];
     }
     functionname = tolower(functionname);
-    /#
-        assert(isdefined(functionname) && isdefined(functionptr));
-    #/
-    /#
-        assert(!isdefined(level._astevaluatorscriptfunctions[functionname]));
-    #/
+    assert(isdefined(functionname) && isdefined(functionptr));
+    assert(!isdefined(level._astevaluatorscriptfunctions[functionname]));
     level._astevaluatorscriptfunctions[functionname] = functionptr;
 }
 

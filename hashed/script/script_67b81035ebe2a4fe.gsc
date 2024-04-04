@@ -8,27 +8,11 @@
 class cmp_prop_timer : cluielem {
 
     // Namespace cmp_prop_timer/mp_prop_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0xac46c36c, Offset: 0x240
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_prop_timer/mp_prop_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x65042f7c, Offset: 0x430
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cmp_prop_timer/mp_prop_timer
     // Params 2, eflags: 0x0
     // Checksum 0xdab05039, Offset: 0x3f8
     // Size: 0x30
     function set_isprop(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "isProp", value);
+        set_data(localclientnum, "isProp", value);
     }
 
     // Namespace cmp_prop_timer/mp_prop_timer
@@ -36,7 +20,7 @@ class cmp_prop_timer : cluielem {
     // Checksum 0x942688b, Offset: 0x3c0
     // Size: 0x30
     function set_timeremaining(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "timeRemaining", value);
+        set_data(localclientnum, "timeRemaining", value);
     }
 
     // Namespace cmp_prop_timer/mp_prop_timer
@@ -53,8 +37,8 @@ class cmp_prop_timer : cluielem {
     // Size: 0x5c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "timeRemaining", 0);
-        [[ self ]]->set_data(localclientnum, "isProp", 0);
+        set_data(localclientnum, "timeRemaining", 0);
+        set_data(localclientnum, "isProp", 0);
     }
 
     // Namespace cmp_prop_timer/mp_prop_timer

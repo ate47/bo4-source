@@ -106,7 +106,6 @@ function function_1b229077(str_id) {
 function function_eac89317() {
     level endon(#"game_ended");
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"traps_activated", #"traps_available", #"traps_cooldown");
         if (isdefined(s_notify.var_be3f58a)) {
             switch (s_notify._notify) {

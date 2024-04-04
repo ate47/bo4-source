@@ -47,12 +47,8 @@ function default_onforfeit(team) {
         setdvar(#"ui_text_endreason", endreason);
         winner = getwinningteamfromloser(team);
     } else {
-        /#
-            assert(isdefined(team), "<unknown string>");
-        #/
-        /#
-            assert(0, "<unknown string>" + team + "<unknown string>");
-        #/
+        assert(isdefined(team), "<unknown string>");
+        assert(0, "<unknown string>" + team + "<unknown string>");
         winner = "tie";
     }
     level.forcedend = 1;
@@ -194,9 +190,7 @@ function default_onspawnspectator(origin, angles) {
     }
     spawnpointname = "mp_global_intermission";
     spawnpoints = getentarray(spawnpointname, "classname");
-    /#
-        assert(spawnpoints.size, "<unknown string>");
-    #/
+    assert(spawnpoints.size, "<unknown string>");
     spawnpoint = spawnlogic::getspawnpoint_random(spawnpoints);
     self spawn(spawnpoint.origin, spawnpoint.angles);
 }

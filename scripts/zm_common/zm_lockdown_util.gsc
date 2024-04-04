@@ -34,23 +34,20 @@
 // Method(s) 2 Total 2
 class class_6fde4e6 {
 
+    var claimed;
+    var owner;
+    var var_4f0ea1b5;
+    var var_6f08706b;
+
     // Namespace class_6fde4e6/zm_lockdown_util
     // Params 0, eflags: 0x9 linked
     // Checksum 0xbc861248, Offset: 0x3d0
     // Size: 0x32
-    __constructor() {
-        self.claimed = 0;
-        self.var_4f0ea1b5 = 0;
-        self.owner = undefined;
-        self.var_6f08706b = undefined;
-    }
-
-    // Namespace class_6fde4e6/zm_lockdown_util
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x410
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        claimed = 0;
+        var_4f0ea1b5 = 0;
+        owner = undefined;
+        var_6f08706b = undefined;
     }
 
 }
@@ -59,21 +56,16 @@ class class_6fde4e6 {
 // Method(s) 2 Total 2
 class class_b599a4bc {
 
+    var entity;
+    var var_f6d13e1b;
+
     // Namespace class_b599a4bc/zm_lockdown_util
     // Params 0, eflags: 0x9 linked
     // Checksum 0x13a80887, Offset: 0x4b0
     // Size: 0x1a
-    __constructor() {
-        self.var_f6d13e1b = [];
-        self.entity = undefined;
-    }
-
-    // Namespace class_b599a4bc/zm_lockdown_util
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x4d8
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_f6d13e1b = [];
+        entity = undefined;
     }
 
 }
@@ -289,7 +281,7 @@ function function_2bdb235d() {
 // Checksum 0xdddac90a, Offset: 0x1078
 // Size: 0xea
 function private function_2bdff7e1(entity, stub, node) {
-    var_5bd89846 = groundtrace(node.origin + vectorscale((0, 0, 1), 8), node.origin + vectorscale((0, 0, -1), 100000), 0, entity)[#"position"];
+    var_5bd89846 = groundtrace(node.origin + (0, 0, 8), node.origin + (0, 0, -100000), 0, entity)[#"position"];
     var_66694b96 = {#origin:var_5bd89846, #angles:node.angles};
     if (!(isdefined(stub.var_7c2f9a8b) && stub.var_7c2f9a8b)) {
         stub.var_66694b96 = var_66694b96;
@@ -1099,9 +1091,7 @@ function function_4de23f77() {
 // Size: 0x96
 function function_61a9bc58() {
     var_a0692a89 = function_fd31eb92(self);
-    /#
-        assert(isdefined(var_a0692a89));
-    #/
+    assert(isdefined(var_a0692a89));
     self.var_6156031a = 1;
     if (isdefined(self.var_6f08706b)) {
         self function_4de23f77();
@@ -1204,7 +1194,7 @@ function function_f3cff6ff(entity) {
                 break;
             }
             recordstar(var_ca00d79a.stub.origin, (1, 1, 0));
-            record3dtext(text, var_ca00d79a.stub.origin + vectorscale((0, 0, 1), 10), color);
+            record3dtext(text, var_ca00d79a.stub.origin + (0, 0, 10), color);
         }
     #/
 }
@@ -1280,7 +1270,7 @@ function private function_6e1690d5() {
             }
             stubs[stubs.size] = chest.unitrigger_stub;
         }
-        var_3bd3c0c1 = vectorscale((-1, -1, 0), 16);
+        var_3bd3c0c1 = (-16, -16, 0);
         var_cbe5413e = (16, 16, 32);
         while (true) {
             wait(0.5);

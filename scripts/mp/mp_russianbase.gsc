@@ -128,7 +128,6 @@ function function_4dd23d6e() {
         while (!draft::function_d255fb3e()) {
             waitframe(1);
         }
-        waitresult = undefined;
         waitresult = crane waittilltimeout(5, #"draftend");
         if (waitresult._notify !== "draftend") {
             crane moveto(crane.endpoint, 4);
@@ -210,7 +209,7 @@ function function_147c1726(s_info) {
         e_player dodamage(e_player.maxhealth, e_player.origin, undefined, undefined, "none", "MOD_EXPLOSIVE");
         if (isdefined(e_player.body)) {
             e_player.body startragdoll();
-            e_player.body launchragdoll(vectorscale((0, 0, 1), 25));
+            e_player.body launchragdoll((0, 0, 25));
         }
     }
 }
@@ -234,7 +233,6 @@ function function_670cd4a3() {
     self endon(#"death");
     self.var_19fde5b7 = [];
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         if (isdefined(waitresult.projectile)) {
             array::add(self.var_19fde5b7, waitresult.projectile);

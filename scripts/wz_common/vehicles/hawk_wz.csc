@@ -28,9 +28,9 @@ function __init__() {
     level.hawk_settings.bundle = getscriptbundle("hawk_settings_wz");
     level.var_ef287aa1 = [];
     level.var_eba5e1cc = [];
-    level.var_eba5e1cc[#"stand"] = vectorscale((0, 0, 1), 60);
-    level.var_eba5e1cc[#"crouch"] = vectorscale((0, 0, 1), 40);
-    level.var_eba5e1cc[#"prone"] = vectorscale((0, 0, 1), 12);
+    level.var_eba5e1cc[#"stand"] = (0, 0, 60);
+    level.var_eba5e1cc[#"crouch"] = (0, 0, 40);
+    level.var_eba5e1cc[#"prone"] = (0, 0, 12);
     level.var_aac98621 = [];
     level.var_8dfa7ed7 = [];
     for (ti = 0; ti < level.hawk_settings.bundle.var_48e78794; ti++) {
@@ -426,11 +426,9 @@ function private function_d53feb8c(localclientnum, targets) {
                     self playsound(localclientnum, bundle.tag_sound);
                 }
             }
-            /#
-                assert(isdefined(ti));
-            #/
+            assert(isdefined(ti));
             var_4759b4d3 = project3dto2d(localclientnum, target.origin);
-            var_20a99afd = project3dto2d(localclientnum, target.origin + vectorscale((0, 0, 1), 60));
+            var_20a99afd = project3dto2d(localclientnum, target.origin + (0, 0, 60));
             screen_height = distance2d(var_4759b4d3, var_20a99afd);
             var_fcd926d5 = var_59d4144b * screen_height / 60;
             var_fcd926d5 = math::clamp(var_fcd926d5, var_e7c561e2, var_98977cea);
@@ -607,9 +605,7 @@ function function_2e07be71(localclientnum) {
     notifyparam = localclientnum + "_" + self getentitynumber();
     self notify("4decd014c80f6da7" + notifyparam);
     self endon("4decd014c80f6da7" + notifyparam);
-    /#
-        assert(isdefined(self.owner));
-    #/
+    assert(isdefined(self.owner));
     var_3216cebd = self.owner getentitynumber();
     self waittill(#"death");
     if (isdefined(var_3216cebd)) {

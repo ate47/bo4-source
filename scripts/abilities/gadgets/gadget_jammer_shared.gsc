@@ -323,9 +323,7 @@ function private function_ca8a005e(jammer, gadget, attackingplayer) {
 // Checksum 0x24be9608, Offset: 0x1328
 // Size: 0xdc
 function function_4a82368f(entity, owner) {
-    /#
-        assert(isdefined(owner));
-    #/
+    assert(isdefined(owner));
     if (isplayer(owner)) {
         owner clientfield::set_to_player("jammedvehpostfx", 1);
     }
@@ -446,7 +444,6 @@ function private function_7b151daa(player) {
 // Size: 0x80
 function function_5f86757d() {
     level endon(#"game_ended");
-    waitresult = undefined;
     waitresult = self waittill(#"explode", #"death");
     if (!isdefined(self)) {
         return waitresult;
@@ -461,7 +458,6 @@ function function_5f86757d() {
 // Size: 0xa4
 function private function_3a3a2ea9(jammer) {
     jammer endon(#"death");
-    waitresult = undefined;
     waitresult = jammer waittilltimeout(2, #"hash_754a0aedf9f00e8d");
     if (!isdefined(jammer)) {
         return;

@@ -63,7 +63,7 @@ function __init__() {
 // Size: 0xee
 function function_c9df2670(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
     if (newval == 1) {
-        self.n_fx = playfx(localclientnum, level._effect[#"hash_76d2a3efe5f10d90"], self.origin + vectorscale((0, 0, 1), 4), anglestoup(self.angles));
+        self.n_fx = playfx(localclientnum, level._effect[#"hash_76d2a3efe5f10d90"], self.origin + (0, 0, 4), anglestoup(self.angles));
         return;
     }
     if (isdefined(self.n_fx)) {

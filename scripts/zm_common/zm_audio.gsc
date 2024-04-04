@@ -44,9 +44,7 @@ function autoexec __init__system__() {
 function __init__() {
     clientfield::register("allplayers", "charindex", 1, 4, "int");
     clientfield::register("toplayer", "isspeaking", 1, 1, "int");
-    /#
-        println("underwater_emerge");
-    #/
+    println("underwater_emerge");
     level zmbvox();
     callback::on_connect(&init_audio_functions);
     callback::on_ai_spawned(&function_198818fe);
@@ -211,7 +209,7 @@ function oh_shit_vox() {
                     if (!isdefined(e_player)) {
                         continue;
                     }
-                    if (self != e_player && sighttracepassed(self.origin + vectorscale((0, 0, 1), 30), e_player.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+                    if (self != e_player && sighttracepassed(self.origin + (0, 0, 30), e_player.origin + (0, 0, 30), 0, undefined)) {
                         e_player create_and_play_dialog(#"surrounded", #"see_" + self zm_vo::function_82f9bc9f());
                     }
                 }
@@ -230,7 +228,6 @@ function oh_shit_vox() {
 function function_2c31a0a6() {
     level endon(#"game_over");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"crawler_created");
         if (isplayer(waitresult.player)) {
             waitresult.player create_and_play_dialog(#"general", #"crawl_spawn");
@@ -246,7 +243,6 @@ function function_2c31a0a6() {
 function function_aa7d1d97() {
     level endon(#"game_over");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"gib");
         if (level.round_number > 3) {
             return;
@@ -282,7 +278,6 @@ function player_killstreak_timer() {
         self.killcounter = 0;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"zom_kill");
         zomb = waitresult.zombie;
         if (isdefined(zomb._black_hole_bomb_collapse_death) && zomb._black_hole_bomb_collapse_death == 1) {
@@ -764,7 +759,7 @@ function timer_actual(kills, time) {
                     if (!isdefined(e_player)) {
                         continue;
                     }
-                    if (self != e_player && sighttracepassed(self.origin + vectorscale((0, 0, 1), 30), e_player.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+                    if (self != e_player && sighttracepassed(self.origin + (0, 0, 30), e_player.origin + (0, 0, 30), 0, undefined)) {
                         e_player create_and_play_dialog(#"kill", self.var_eee02beb);
                     }
                 }
@@ -887,15 +882,9 @@ function checkintvalid(value, defaultvalue = 0) {
 // Checksum 0xe0eb50aa, Offset: 0x3118
 // Size: 0x1f2
 function zmbvoxadd(category, subcategory, suffix, percentage = 100, cooldown = 0, var_50219c90 = 0, var_7aadcbd7 = 0, toself = 0, var_884fa3fe = 0) {
-    /#
-        assert(isdefined(category));
-    #/
-    /#
-        assert(isdefined(subcategory));
-    #/
-    /#
-        assert(isdefined(suffix));
-    #/
+    assert(isdefined(category));
+    assert(isdefined(subcategory));
+    assert(isdefined(suffix));
     if (!isdefined(level.votimer)) {
         level.votimer = [];
     }
@@ -1330,7 +1319,6 @@ function play_vo_internal(str_sound, e_to_player) {
         if (isplayer(self) && isentity(e_to_player)) {
             self playsoundtoplayer(str_sound, e_to_player);
             n_time = float(max(isdefined(soundgetplaybacktime(str_sound)) ? soundgetplaybacktime(str_sound) : 500, 500)) / 1000;
-            s = undefined;
             s = self waittilltimeout(n_time, #"vo_clear");
         } else {
             if (isdefined(self gettagorigin("J_head"))) {
@@ -1338,7 +1326,6 @@ function play_vo_internal(str_sound, e_to_player) {
             } else {
                 self playsoundwithnotify(str_sound, "vo_done");
             }
-            s = undefined;
             s = self waittill(#"vo_done", #"vo_clear");
         }
         if (s._notify != "vo_clear") {
@@ -1519,11 +1506,7 @@ function function_654ec86b() {
 // Size: 0x24a
 function function_e2bd90b5(category, subcategory, variant) {
     if (!isplayer(self)) {
-        /#
-            /#
-                assert(0, "<unknown string>" + "<unknown string>");
-            #/
-        #/
+        assert(0, "<unknown string>" + "<unknown string>");
         return 0;
     }
     if (function_31230d39(category, subcategory)) {
@@ -1952,8 +1935,7 @@ function sndmusicsystem_eesetup(state, origin1, origin2, origin3, origin4, origi
 function sndmusicsystem_eewait(origin, state) {
     temp_ent = spawn("script_origin", origin);
     temp_ent playloopsound(#"zmb_meteor_loop");
-    temp_ent thread secretuse("main_music_egg_hit", vectorscale((0, 1, 0), 255), &sndmusicsystem_eeoverride);
-    waitresult = undefined;
+    temp_ent thread secretuse("main_music_egg_hit", (0, 255, 0), &sndmusicsystem_eeoverride);
     waitresult = temp_ent waittill(#"main_music_egg_hit");
     temp_ent stoploopsound(1);
     waitresult.player playsound(#"zmb_meteor_activate");
@@ -2632,7 +2614,6 @@ function zmbaivox_playdeath() {
 function zmbaivox_playelectrocution() {
     self endon(#"disconnect", #"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         weapon = waitresult.weapon;
         if (!isdefined(weapon)) {
@@ -2849,11 +2830,7 @@ function get_number_variants(aliasprefix) {
             return i;
         }
     }
-    /#
-        /#
-            assertmsg("<unknown string>");
-        #/
-    #/
+    assertmsg("<unknown string>");
 }
 
 // Namespace zm_audio/zm_audio

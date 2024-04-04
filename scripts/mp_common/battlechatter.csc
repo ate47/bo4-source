@@ -50,7 +50,6 @@ function function_b79dc4e7(player) {
 function function_4bc12499() {
     level endon(#"death");
     while (true) {
-        wait_result = undefined;
         wait_result = level waittill(#"play_death_vox");
         players = getlocalplayers();
         player = players[0];

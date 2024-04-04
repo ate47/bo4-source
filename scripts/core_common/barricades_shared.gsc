@@ -12,21 +12,17 @@
 // Method(s) 6 Total 45
 class cbarricade : cdoor {
 
+    var m_e_door;
+    var m_s_bundle;
+    var m_str_type;
+    var var_a2f96f78;
+
     // Namespace cbarricade/barricades_shared
     // Params 0, eflags: 0x8
     // Checksum 0xfa02d2dc, Offset: 0x340
     // Size: 0x22
-    __constructor() {
-        cdoor::__constructor();
-        self.m_str_type = "barricade";
-    }
-
-    // Namespace cbarricade/barricades_shared
-    // Params 0, eflags: 0x10
-    // Checksum 0xb4908501, Offset: 0x370
-    // Size: 0x14
-    __destructor() {
-        cdoor::__destructor();
+    constructor() {
+        m_str_type = "barricade";
     }
 
     // Namespace cbarricade/barricades_shared
@@ -34,12 +30,12 @@ class cbarricade : cdoor {
     // Checksum 0x2627edcd, Offset: 0x9a0
     // Size: 0x12c
     function function_6c15ac46() {
-        self.m_e_door endon(#"delete", #"barricade_removed");
+        m_e_door endon(#"delete", #"barricade_removed");
         while (true) {
-            self.m_e_door endon(#"delete");
-            self.m_e_door waittill(#"hash_923096b653062ea");
-            if (isdefined(self.var_a2f96f78.target)) {
-                var_59746f25 = struct::get_array(self.var_a2f96f78.target, "targetname");
+            m_e_door endon(#"delete");
+            m_e_door waittill(#"hash_923096b653062ea");
+            if (isdefined(var_a2f96f78.target)) {
+                var_59746f25 = struct::get_array(var_a2f96f78.target, "targetname");
                 foreach (s_door in var_59746f25) {
                     s_door.c_door.var_7d28591d = 0;
                 }
@@ -53,11 +49,11 @@ class cbarricade : cdoor {
     // Checksum 0x7b17d673, Offset: 0x850
     // Size: 0x142
     function function_da5abae9() {
-        self.m_e_door endon(#"delete", #"barricade_removed");
+        m_e_door endon(#"delete", #"barricade_removed");
         while (true) {
-            self.m_e_door waittill(#"hash_7166c13e79b73f9");
-            if (isdefined(self.var_a2f96f78.target)) {
-                var_59746f25 = struct::get_array(self.var_a2f96f78.target, "targetname");
+            m_e_door waittill(#"hash_7166c13e79b73f9");
+            if (isdefined(var_a2f96f78.target)) {
+                var_59746f25 = struct::get_array(var_a2f96f78.target, "targetname");
                 foreach (s_door in var_59746f25) {
                     s_door.c_door.var_7d28591d = 1;
                     if ([[ s_door.c_door ]]->is_open()) {
@@ -74,35 +70,35 @@ class cbarricade : cdoor {
     // Checksum 0x3aa6291a, Offset: 0x5c8
     // Size: 0x280
     function function_b4a1f06a() {
-        self.m_e_door endon(#"delete");
-        if (!isdefined(self.m_s_bundle.var_89af4052)) {
-            self.m_s_bundle.var_89af4052 = 0;
+        m_e_door endon(#"delete");
+        if (!isdefined(m_s_bundle.var_89af4052)) {
+            m_s_bundle.var_89af4052 = 0;
         }
-        var_1913ccf5 = self.m_s_bundle.var_89af4052;
+        var_1913ccf5 = m_s_bundle.var_89af4052;
         while (true) {
-            self.m_e_door waittill(#"damage");
+            m_e_door waittill(#"damage");
             if (cdoor::is_open()) {
                 var_1913ccf5--;
                 if (var_1913ccf5 < 0) {
-                    var_59746f25 = struct::get_array(self.var_a2f96f78.target, "targetname");
+                    var_59746f25 = struct::get_array(var_a2f96f78.target, "targetname");
                     foreach (s_door in var_59746f25) {
                         s_door.c_door.var_7d28591d = 0;
                     }
-                    if (isdefined(self.m_s_bundle.var_170e4611) && self.m_s_bundle.var_170e4611) {
-                        if (isdefined(self.m_s_bundle.var_8124c17f)) {
-                            self.m_e_door scene::play(self.m_s_bundle.var_8124c17f, self.m_e_door);
+                    if (isdefined(m_s_bundle.var_170e4611) && m_s_bundle.var_170e4611) {
+                        if (isdefined(m_s_bundle.var_8124c17f)) {
+                            m_e_door scene::play(m_s_bundle.var_8124c17f, m_e_door);
                         }
-                        self.m_e_door notify(#"gameobject_deleted");
-                        self.m_e_door notify(#"barricade_removed");
+                        m_e_door notify(#"gameobject_deleted");
+                        m_e_door notify(#"barricade_removed");
                         waitframe(1);
-                        self.m_e_door.mdl_gameobject delete();
-                        self.m_e_door delete();
+                        m_e_door.mdl_gameobject delete();
+                        m_e_door delete();
                         break;
                     } else {
                         if (cdoor::is_open()) {
                             cdoor::close();
                         }
-                        var_1913ccf5 = self.m_s_bundle.var_89af4052;
+                        var_1913ccf5 = m_s_bundle.var_89af4052;
                     }
                 }
             }
@@ -115,13 +111,13 @@ class cbarricade : cdoor {
     // Checksum 0xc537ae8, Offset: 0x390
     // Size: 0x22c
     function init(var_4a686ff8, s_instance) {
-        self.m_s_bundle = var_4a686ff8;
-        self.var_a2f96f78 = s_instance;
-        self.m_s_bundle.door_start_open = s_instance.door_start_open;
-        s_instance.c_door = doors::setup_door_info(self.m_s_bundle, s_instance, self);
-        if (isdefined(self.m_s_bundle.door_start_open) && self.m_s_bundle.door_start_open) {
-            if (isdefined(self.var_a2f96f78.target)) {
-                var_59746f25 = struct::get_array(self.var_a2f96f78.target, "targetname");
+        m_s_bundle = var_4a686ff8;
+        var_a2f96f78 = s_instance;
+        m_s_bundle.door_start_open = s_instance.door_start_open;
+        s_instance.c_door = doors::setup_door_info(m_s_bundle, s_instance, self);
+        if (isdefined(m_s_bundle.door_start_open) && m_s_bundle.door_start_open) {
+            if (isdefined(var_a2f96f78.target)) {
+                var_59746f25 = struct::get_array(var_a2f96f78.target, "targetname");
                 foreach (s_door in var_59746f25) {
                     s_door.c_door.var_7d28591d = 1;
                     if ([[ s_door.c_door ]]->is_open()) {
@@ -130,9 +126,9 @@ class cbarricade : cdoor {
                 }
             }
         }
-        if (isdefined(self.m_s_bundle.var_ccc6dafc) && self.m_s_bundle.var_ccc6dafc) {
-            self.m_e_door setcandamage(1);
-            self.m_e_door val::set(#"hash_25bedd86747e41e1", "allowdeath", 0);
+        if (isdefined(m_s_bundle.var_ccc6dafc) && m_s_bundle.var_ccc6dafc) {
+            m_e_door setcandamage(1);
+            m_e_door val::set(#"hash_25bedd86747e41e1", "allowdeath", 0);
             thread function_b4a1f06a();
         }
         thread function_da5abae9();

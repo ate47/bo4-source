@@ -144,7 +144,6 @@ function function_ee2edc25() {
 // Size: 0x1f4
 function function_d332685() {
     level endon(#"end_game", #"hash_7220fbbcfb27dbd4");
-    s_results = undefined;
     s_results = self waittill(#"trigger_activated");
     e_who = s_results.e_who;
     playsoundatposition(#"hash_d8937c5c97f485e", self.e_keycard.origin);
@@ -171,7 +170,6 @@ function function_d332685() {
 function function_f83bfaa() {
     level endon(#"end_game", #"hash_7220fbbcfb27dbd4");
     while (true) {
-        s_results = undefined;
         s_results = self waittill(#"trigger_activated");
         e_who = s_results.e_who;
         if (level.var_79260935.var_f4c36022 === 0) {
@@ -353,7 +351,6 @@ function function_3590cb58() {
     level endon(#"end_game");
     self.var_1a304a2f = struct::get(self.target, "targetname");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         e_who = s_result.e_who;
         if (level flag::get(#"hash_475c24f631fab267")) {
@@ -566,7 +563,6 @@ function function_c0510b69(e_player) {
 // Size: 0x144
 function function_be4c3b3e() {
     level endon(#"end_game");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     e_who = s_result.e_who;
     level thread function_7c831be0(e_who);

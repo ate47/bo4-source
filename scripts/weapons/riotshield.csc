@@ -59,7 +59,6 @@ function riotshield_deploy_anim(localclientnum, instant) {
 function watch_riotshield_damage() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage_type = waitresult.mod;
         self useanimtree("generic");

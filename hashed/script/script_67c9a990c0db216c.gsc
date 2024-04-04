@@ -8,28 +8,14 @@
 // Method(s) 12 Total 19
 class cfull_screen_movie : cluielem {
 
-    // Namespace cfull_screen_movie/full_screen_movie
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x73d15b1d, Offset: 0x350
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cfull_screen_movie/full_screen_movie
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xaf8cbde3, Offset: 0x730
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cfull_screen_movie/full_screen_movie
     // Params 2, eflags: 0x1 linked
     // Checksum 0xdc36eb36, Offset: 0x6e8
     // Size: 0x3c
     function set_moviekey(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "movieKey", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "movieKey", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -37,7 +23,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x4988a482, Offset: 0x6a0
     // Size: 0x3c
     function registerplayer_callout_traversal(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "skippable", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "skippable", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -45,7 +31,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x8f3613a0, Offset: 0x658
     // Size: 0x3c
     function set_playoutromovie(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "playOutroMovie", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "playOutroMovie", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -53,7 +39,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x94bdf6e6, Offset: 0x610
     // Size: 0x3c
     function set_additive(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "additive", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "additive", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -61,7 +47,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0xada264e, Offset: 0x5c8
     // Size: 0x3c
     function set_looping(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "looping", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "looping", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -69,7 +55,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x3fe28c1b, Offset: 0x580
     // Size: 0x3c
     function set_showblackscreen(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "showBlackScreen", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "showBlackScreen", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie
@@ -77,7 +63,7 @@ class cfull_screen_movie : cluielem {
     // Checksum 0x4eced0fb, Offset: 0x538
     // Size: 0x3c
     function set_moviename(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "movieName", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "movieName", value);
     }
 
     // Namespace cfull_screen_movie/full_screen_movie

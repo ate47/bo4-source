@@ -194,10 +194,9 @@ function function_c3d93fc(grenade, weapon) {
 // Size: 0x234
 function function_d573e71(grenade, weapon) {
     grenade endon(#"death");
-    waitresult = undefined;
     waitresult = grenade waittilltimeout(1.5, #"stationary");
     if (waitresult._notify === "timeout") {
-        results = groundtrace(grenade.origin + vectorscale((0, 0, 1), 400), grenade.origin + vectorscale((0, 0, -1), 400), 0, grenade);
+        results = groundtrace(grenade.origin + (0, 0, 400), grenade.origin + (0, 0, -400), 0, grenade);
         if (isdefined(results) && isdefined(results[#"position"]) && isdefined(results[#"normal"])) {
             origin = results[#"position"];
             newpos = getclosestpointonnavmesh(origin, 2000, 20, 1);
@@ -316,7 +315,6 @@ function autosetvisibletoall() {
 // Size: 0x21c
 function function_f43b3686(originalowner) {
     originalownerentnum = originalowner.entnum;
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     attacker = waitresult.attacker;
     weapon = waitresult.weapon;
@@ -424,7 +422,7 @@ function function_6db15645(target) {
     target thread shock_rumble_loop();
     self.var_a5b686b6++;
     target clientfield::set("seeker_mine_shock", 1);
-    self thread function_a78e666b(target, "j_spineupper", vectorscale((0, 0, 1), 10), 0);
+    self thread function_a78e666b(target, "j_spineupper", (0, 0, 10), 0);
     tag = "tag_origin";
     pos = (0, 0, target getplayerviewheight() - 10);
     forward = anglestoforward(target.angles);
@@ -506,7 +504,6 @@ function function_9a66b97b(target, tag, offset = (0, 0, 0), tagpos, seekermine) 
 // Size: 0x164
 function function_9cf3b3a0(seekermine) {
     seekermine endon(#"death");
-    params = undefined;
     params = self waittill(#"death");
     var_86e4cf17 = isdefined(params.attacker) && isplayer(params.attacker) && isdefined(seekermine.owner) && seekermine.owner == params.attacker;
     if (isdefined(params.mod) && params.mod == "MOD_HEAD_SHOT" && var_86e4cf17) {
@@ -774,7 +771,6 @@ function function_e56220fe() {
 // Size: 0x51c
 function function_f6f0c876(var_26b2b1bb, seekermine) {
     self endon(#"hash_11759ff8ab95f65c");
-    waitresult = undefined;
     waitresult = self waittill(#"seekermine_minigame_complete", #"death");
     if (waitresult._notify == "death") {
         return;
@@ -791,9 +787,7 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
     switch (self.var_dda9b735.state) {
     case 4:
         waitduration = level.var_9d47488.tunables.var_9abfd5cf;
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         self playsoundtoplayer(#"hash_951679e7e599a15", self);
         if (isdefined(level.var_9d47488.tunables.var_a60d049b)) {
             self playrumbleonentity(level.var_9d47488.tunables.var_a60d049b);
@@ -809,32 +803,24 @@ function function_f6f0c876(var_26b2b1bb, seekermine) {
         self battlechatter::function_72b65730();
         function_1750438e(level.var_9d47488.tunables.var_df3ed3fd, seekermine.arcweapon, seekermine.owner);
         animdelay = level.var_9d47488.tunables.var_a06eff0b;
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         break;
     case 2:
         waitduration = level.var_9d47488.tunables.var_c0c99398;
         self playsoundtoplayer(#"hash_951679e7e599a15", self);
         self battlechatter::pain_vox("MOD_ELECTROCUTED", self.arcweapon);
         function_1750438e(level.var_9d47488.tunables.var_292fba11, seekermine.arcweapon, seekermine.owner);
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         break;
     case 3:
         gesturetable = "gestable_shocked_success";
         var_84a7f98e = getweapon(#"hash_597ead6ff2ce9284");
         islooping = 0;
         self playsoundtoplayer(#"hash_74864310c6a986a8", self);
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         break;
     default:
-        /#
-            assert(0);
-        #/
+        assert(0);
         break;
     }
     self thread function_e380fde7(var_84a7f98e, gesturetable, waitduration, islooping, animdelay);

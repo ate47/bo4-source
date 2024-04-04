@@ -256,7 +256,6 @@ function function_22d79d55(player) {
 function function_4591fd41() {
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"destroy_riotshield", #"flame_off", #"weapon_change", #"fake_death");
         if (s_waitresult._notify == "weapon_change") {
             if (function_ed81d8f5(s_waitresult.last_weapon)) {
@@ -327,7 +326,6 @@ function function_fbe77fa4(weapon) {
 function function_982a8c76() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_melee");
         waitframe(9);
         if (waitresult.weapon.isriotshield) {
@@ -521,7 +519,6 @@ function function_693527ec(str_piece) {
     self.var_5cff93b1 = var_f00b4f9f;
     s_unitrigger = self zm_unitrigger::create(&function_fb466de8, 96);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_player = s_waitresult.e_who;
         if (e_player flag::get(var_f4c9f09a)) {
@@ -627,7 +624,6 @@ function function_aa1e87dd(b_skipped = 0, var_19e802fa = 0) {
 function function_a9311397() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
         w_weapon = s_waitresult.weapon;
@@ -692,7 +688,6 @@ function function_4e59dd4b() {
     level endon(#"end_game");
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"flame_on");
         ai_killed = s_waitresult.ai_killed;
         if (isdefined(ai_killed)) {

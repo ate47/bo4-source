@@ -195,7 +195,7 @@ function private get_item_spawn_point() {
         }
     }
     forward = anglestoforward(self.angles);
-    return self.origin + 36 * forward + vectorscale((0, 0, 1), 10);
+    return self.origin + 36 * forward + (0, 0, 10);
 }
 
 // Namespace character_unlock_richtofen/character_unlock_richtofen

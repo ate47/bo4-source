@@ -219,11 +219,11 @@ function function_af59b4aa(var_9345432e, s_waitresult) {
                 sphere(var_9345432e.origin, 4, (1, 1, 1), 1, 1, 8, 300);
             }
         #/
-        a_trace = groundtrace(var_9345432e.origin, var_9345432e.origin - vectorscale((0, 0, 1), 800), 0, undefined);
+        a_trace = groundtrace(var_9345432e.origin, var_9345432e.origin - (0, 0, 800), 0, undefined);
         self thread function_656b149c(a_trace[#"position"], s_waitresult);
         return;
     }
-    a_trace = groundtrace(var_9345432e.origin, var_9345432e.origin - vectorscale((0, 0, 1), 800), 0, undefined);
+    a_trace = groundtrace(var_9345432e.origin, var_9345432e.origin - (0, 0, 800), 0, undefined);
     self thread function_656b149c(a_trace[#"position"], s_waitresult);
 }
 
@@ -235,7 +235,7 @@ function function_2ce99526(e_enemy) {
     if (e_enemy isonground() && !e_enemy isplayinganimscripted()) {
         var_c74d5934 = e_enemy.origin;
     } else {
-        a_trace = groundtrace(e_enemy.origin, e_enemy.origin - vectorscale((0, 0, 1), 800), 0, undefined);
+        a_trace = groundtrace(e_enemy.origin, e_enemy.origin - (0, 0, 800), 0, undefined);
         var_c74d5934 = a_trace[#"position"];
     }
     if (isdefined(var_c74d5934) && zm_utility::function_21f4ac36()) {
@@ -460,7 +460,6 @@ function function_5114b093() {
     #/
     var_c74d5934 = undefined;
     var_8c561676 = undefined;
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"projectile_impact");
     if (isdefined(s_waitresult.weapon) && isinarray(var_97e851d8, s_waitresult.weapon)) {
         var_5dcc0b6c = getaiteamarray(#"axis");
@@ -550,7 +549,7 @@ function function_6cd38e99(var_f5716a6, var_18e8905a) {
         if (e_zombie istouching(self)) {
             var_430d5f23 = !(isdefined(e_zombie.var_bd48b030) && e_zombie.var_bd48b030) && !(isdefined(e_zombie.var_7fcb707c) && e_zombie.var_7fcb707c) && !(isdefined(e_zombie.var_780857a) && e_zombie.var_780857a) && !(var_f5716a6 == 0 && isdefined(e_zombie.var_6a36f6dc) && e_zombie.var_6a36f6dc);
             if (var_430d5f23 && isalive(e_zombie) && !(isdefined(e_zombie.marked_for_death) && e_zombie.marked_for_death) && !(isdefined(e_zombie.aat_turned) && e_zombie.aat_turned)) {
-                v_trace_start = isdefined(var_18e8905a) ? var_18e8905a : self.origin + vectorscale((0, 0, 1), 16);
+                v_trace_start = isdefined(var_18e8905a) ? var_18e8905a : self.origin + (0, 0, 16);
                 a_trace = bullettrace(v_trace_start, e_zombie getcentroid(), 0, undefined);
                 if (isdefined(a_trace) && a_trace[#"fraction"] == 1) {
                     if (!isdefined(var_4bb8adfe)) {
@@ -712,7 +711,7 @@ function function_61b2f057(e_attacker, var_5a20091) {
 // Checksum 0x23d69863, Offset: 0x32c0
 // Size: 0x26a
 function function_ca108f41(v_origin, e_attacker, var_a257f75d, var_41bf50f) {
-    var_1c95b19 = v_origin + vectorscale((0, 0, 1), 140);
+    var_1c95b19 = v_origin + (0, 0, 140);
     e_origin = spawn("script_model", var_1c95b19);
     if (!isdefined(e_origin) || !isdefined(e_attacker)) {
         level.var_2ec91d6e[var_a257f75d] = -1;
@@ -1179,7 +1178,6 @@ function function_c5eccfa2() {
 // Size: 0x94
 function function_6476c708(e_attacker, e_tornado) {
     self endon(#"death");
-    s_waitresult = undefined;
     s_waitresult = e_tornado waittill(#"end_spin_cycle", #"death");
     if (s_waitresult._notify === "end_spin_cycle") {
         wait(0.5);
@@ -1193,7 +1191,6 @@ function function_6476c708(e_attacker, e_tornado) {
 // Size: 0x74
 function function_a7fcc7db() {
     self endon(#"hash_76dc39ad26e9f187");
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (isdefined(self)) {
         self zombie_utility::gib_random_parts();
@@ -1312,7 +1309,7 @@ function function_1beb7376(e_attacker) {
         var_cbf658a0 = getaiarchetypearray(#"bat");
         foreach (var_45acb524 in var_cbf658a0) {
             if (!(isdefined(var_45acb524.var_7fcb707c) && var_45acb524.var_7fcb707c) && isalive(var_45acb524) && var_45acb524.origin[2] - self.origin[2] < 400 && distance2dsquared(var_45acb524.origin, self.origin) < var_ceedbc10) {
-                v_trace_start = self.origin + vectorscale((0, 0, 1), 16);
+                v_trace_start = self.origin + (0, 0, 16);
                 a_trace = bullettrace(v_trace_start, var_45acb524 getcentroid(), 0, undefined);
                 if (isdefined(a_trace) && a_trace[#"fraction"] == 1) {
                     function_a7c67ad6(var_45acb524, 2, &function_886f2b8d, self, e_attacker);

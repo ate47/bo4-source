@@ -324,9 +324,7 @@ function function_36419c2(var_c1e98979, winner_text, loser_text) {
 // Checksum 0x7065955c, Offset: 0x1938
 // Size: 0xee
 function function_5b0c08ec(player, outcome) {
-    /#
-        assert(isdefined(level.var_c3abe983[outcome.var_c1e98979]));
-    #/
+    assert(isdefined(level.var_c3abe983[outcome.var_c1e98979]));
     if (outcome::get_flag(outcome, "tie") && !function_82f36142(outcome.var_c1e98979)) {
         return game.strings[#"tie"];
     }

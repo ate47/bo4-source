@@ -198,7 +198,6 @@ function handle_path_success() {
     self endon(#"death", #"hash_6cefc75b9a427c7d");
     level endon(#"game_ended");
     while (isdefined(self.bot)) {
-        params = undefined;
         params = self waittill(#"bot_path_success");
         self bot_action::reset();
         waitframe(1);
@@ -213,7 +212,6 @@ function handle_path_failed() {
     self endon(#"death", #"hash_6cefc75b9a427c7d");
     level endon(#"game_ended");
     while (isdefined(self.bot)) {
-        params = undefined;
         params = self waittill(#"bot_path_failed");
         switch (params.reason) {
         case 1:
@@ -338,7 +336,6 @@ function function_2bcdf566() {
     self endon(#"death", #"hash_6cefc75b9a427c7d");
     level endon(#"game_ended");
     while (isdefined(self.bot)) {
-        params = undefined;
         params = self waittill(#"grenade danger");
         if (isdefined(params.projectile) && util::function_fbce7263(params.projectile.team, self.team)) {
             self reset();
@@ -619,7 +616,7 @@ function function_7ed3ada6(params, tacbundle) {
         if (self bot::should_record("<unknown string>")) {
             recordsphere(facingpos, 8, (0, 1, 1), "<unknown string>", self);
             foreach (node in nodes) {
-                function_af72dbc5(node.origin, vectorscale((-1, -1, 0), 16), vectorscale((1, 1, 1), 16), node.angles[0], (0, 1, 1), "<unknown string>", self);
+                function_af72dbc5(node.origin, (-16, -16, 0), (16, 16, 16), node.angles[0], (0, 1, 1), "<unknown string>", self);
             }
         }
     #/
@@ -684,7 +681,7 @@ function function_356f5b61(trigger) {
                 }
             }
             foreach (point in var_55704eac) {
-                if (trigger istouching(point.origin + vectorscale((0, 0, 1), 50))) {
+                if (trigger istouching(point.origin + (0, 0, 50))) {
                     if (!isdefined(trigger.tacpoints)) {
                         trigger.tacpoints = [];
                     } else if (!isarray(trigger.tacpoints)) {

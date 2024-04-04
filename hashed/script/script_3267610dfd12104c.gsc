@@ -161,9 +161,7 @@ function function_c213f1b5(var_31c68e48) {
     rand = randomintrange(0, var_2f43eb3d);
     var_e4204b3 = var_31c68e48[rand];
     if (!isdefined(var_e4204b3)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     switch (var_e4204b3) {
@@ -191,9 +189,7 @@ function function_c213f1b5(var_31c68e48) {
         function_69e60a10(var_e4204b3);
         break;
     default:
-        /#
-            println("<unknown string>" + var_e4204b3 + "<unknown string>");
-        #/
+        println("<unknown string>" + var_e4204b3 + "<unknown string>");
         break;
     }
 }
@@ -539,9 +535,7 @@ function function_4d20b749() {
 // Size: 0x27c
 function function_320393b9() {
     if (!isdefined(level.var_590e0497) || level.var_590e0497.size <= 0) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     var_f4a0340a = array::randomize(level.var_590e0497);

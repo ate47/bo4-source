@@ -593,7 +593,6 @@ function function_5391159f() {
     level flag::wait_till(#"hash_13e9bb1de846d022");
     pixbeginevent(#"hash_68d79ade18c24edd");
     while (!level flag::get(#"hash_63d6d5191ca09cae")) {
-        s_result = undefined;
         s_result = self.s_unitrigger.var_415347ee waittill(#"damage");
         if (s_result.mod === "MOD_MELEE" && !(isdefined(s_result.weapon.isheroweapon) && s_result.weapon.isheroweapon) && self.s_unitrigger.is_rotating === 0 && level flag::get(#"hash_58b6a09577af5b6d") && !level flag::get(#"hash_63d6d5191ca09cae") && self.s_unitrigger.var_9c74d1b8 === 0) {
             if (self.s_unitrigger.is_selected == 0 && level flag::get(#"hash_21cd8d3c0f4ef7f")) {
@@ -678,7 +677,6 @@ function function_2193794() {
     level flag::wait_till(#"hash_13e9bb1de846d022");
     level endon(#"hash_10a56459715cd20e", #"insanity_mode_triggered");
     while (!self.s_unitrigger.var_9c74d1b8 || self.s_unitrigger.is_selected == 0) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         if (self.s_unitrigger.is_rotating == 0) {
@@ -1243,7 +1241,6 @@ function function_5d874e07() {
 function function_7cd1bff1() {
     level endon(#"hash_63d6d5191ca09cae");
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         if (level.var_eac33019.is_active === 0 && level flag::get(#"hash_58b6a09577af5b6d")) {
@@ -1807,7 +1804,6 @@ function zm_white_main_quest_step9_cleanup(var_5ea5c94d, ended_early) {
 function function_1e136091() {
     level endon(#"end_game");
     self endon(#"death");
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"trigger_activated");
     level flag::set(#"hash_5aa1c9627e8626e0");
 }
@@ -2566,7 +2562,6 @@ function function_3937a01d(e_player = undefined, is_adam = 0) {
 // Size: 0x58
 function function_550420a3() {
     while (true) {
-        results = undefined;
         results = self waittill(#"trigger_activated");
         level function_3937a01d(results.e_who);
     }
@@ -2580,7 +2575,6 @@ function function_931fd8c2() {
     level endon(#"end_game");
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (level flag::get(#"hash_bbe0772d001265") && !level flag::get(#"hash_4ad92dd97af40a26") && isplayer(s_result.attacker) && level.var_1409b3a9) {
             level function_3937a01d(s_result.attacker);
@@ -3272,7 +3266,6 @@ function function_12ea5b51() {
 function function_cb6d744() {
     level endon(#"hash_60eeaaec1ff2cb28");
     while (!level flag::get(#"circuit_step_complete")) {
-        activation = undefined;
         activation = self waittill(#"trigger_activated");
         if (!level flag::get(#"hash_60eeaaec1ff2cb28")) {
             if (self.s_unitrigger.is_on) {
@@ -3334,7 +3327,6 @@ function function_a4cda974(e_player) {
 // Size: 0x230
 function function_bd754711() {
     for (var_707fca9c = 0; !level flag::get("circuit_step_complete"); var_707fca9c = 1) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         if (level.var_775f8ab0 >= 6) {
             level flag::set(#"hash_60eeaaec1ff2cb28");
@@ -3418,7 +3410,6 @@ function function_431ee8fc() {
     is_ready = 0;
     exploder::exploder("fxexp_frosty_console_gas");
     while (!is_ready) {
-        s_result = undefined;
         s_result = var_5128f73a waittill(#"damage");
         if (s_result.weapon.name === #"white_nova_crawler_projectile") {
             level notify(#"hash_67b3ecdd6e33f06b");
@@ -3467,7 +3458,6 @@ function function_ee37a268() {
 // Size: 0x74
 function function_65a1c71e() {
     level endon(#"hash_67b3ecdd6e33f06b");
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     level.server_found = 1;
     level.var_5dd0d3ff thread zm_hms_util::function_6a0d675d(#"hash_39ce76b870710eee", 0, 0);
@@ -3489,7 +3479,6 @@ function function_b485f46c() {
 function function_d29ece92() {
     self endon(#"server_collected");
     while (!level flag::get(#"hash_687dde640557a121")) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         level.s_server_powerhouse function_5f6e4e8f("removepart_close", "lights_timer_start");
         level.s_server_operations function_5f6e4e8f("opening_nopart", "lights_timer_start");
@@ -3551,7 +3540,6 @@ function function_f4f033c2() {
     var_9260818d.var_43428f.angles = var_9260818d.angles;
     var_9260818d.var_43428f clientfield::set("fx_steam_lab_dry_ice", 1);
     while (!level flag::get(#"hash_6899cc997afd5fac")) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         if (s_activation.e_who.var_85039d98 === 1) {
             s_activation.e_who notify(#"hash_6b0b66cf2ec07802");
@@ -3969,7 +3957,6 @@ function function_ace163b6() {
     b_placed = 0;
     level.var_ffda9f5d = 0;
     while (!level flag::get(#"hash_66be0eea77b87d58")) {
-        results = undefined;
         results = self waittill(#"trigger_activated");
         if (!b_placed) {
             b_placed = 1;
@@ -4136,7 +4123,6 @@ function mannequin_activate(n_difficulty) {
 function function_a728dd4c() {
     self endon(#"hash_c03409dbf4f2cb9");
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         if (self.zone == "zone_hoggatt_house") {
             n_players = zm_zonemgr::get_players_in_zone(self.zone) + zm_zonemgr::get_players_in_zone("zone_solitary");
@@ -4453,7 +4439,6 @@ function function_62156542(str_identifier) {
 // Size: 0x138
 function function_57dda4d1(str_identifier) {
     for (var_4c61c984 = 0; !var_4c61c984; var_4c61c984 = 1) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         level zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
         e_who = s_activation.e_who;
@@ -4848,7 +4833,6 @@ function function_f0b3b2d9(e_player) {
 // Size: 0xc4
 function function_8b294c5a() {
     while (!level flag::get(#"mq_computer_activated")) {
-        results = undefined;
         results = self waittill(#"trigger_activated");
         level.var_fa22c7ec = results.e_who;
         level flag::set(#"mq_computer_activated");

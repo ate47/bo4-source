@@ -317,9 +317,7 @@ function soda() {
 // Checksum 0xccbd3fba, Offset: 0x1408
 // Size: 0x92
 function function_28e2ddd5(n_perk_cost, var_c6ce6ade) {
-    /#
-        assert(isdefined(level.var_1b64d570), "<unknown string>");
-    #/
+    assert(isdefined(level.var_1b64d570), "<unknown string>");
     if (var_c6ce6ade == level.var_1b64d570) {
         n_perk_cost = n_perk_cost * 0.5;
     }
@@ -753,7 +751,7 @@ function boom() {
     e_player = level.var_f13364b4.var_12633dc5;
     if (isdefined(s_spawn_loc) && isdefined(s_keypad) && isdefined(e_player)) {
         v_spawn = s_keypad.origin + anglestoforward(s_keypad.angles) * 4;
-        v_velocity = vectorscale((0, 0, 1), 200);
+        v_velocity = (0, 0, 200);
         var_b5b97738 = e_player magicgrenadeplayer(getweapon(#"eq_frag_grenade"), v_spawn, v_velocity);
     }
 }

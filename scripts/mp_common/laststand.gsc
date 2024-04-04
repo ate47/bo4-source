@@ -580,7 +580,6 @@ function laststand_clean_up_on_interrupt(playerbeingrevived) {
 function laststand_bleedout_damage() {
     self endon(#"player_revived", #"disconnect", #"bled_out");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"laststand_damage");
         if (self.var_d887a4ad === 1) {
             return;
@@ -795,9 +794,7 @@ function revive_trigger_think() {
                 continue;
             }
             gun = reviver getcurrentweapon();
-            /#
-                assert(isdefined(gun));
-            #/
+            assert(isdefined(gun));
             if (gun == level.weaponrevivetool) {
                 continue;
             }
@@ -861,9 +858,7 @@ function function_356caede(team) {
         }
         finisher increment_finishing();
         bundle_index = randomintrange(1, level.var_91c33dcb.finishers.size - 1);
-        /#
-            assert(level.var_91c33dcb.finishers.size >= bundle_index);
-        #/
+        assert(level.var_91c33dcb.finishers.size >= bundle_index);
         var_abdbed5a = level.var_91c33dcb.finishers[bundle_index].("finisherbundle");
         var_d1d9820d = getscriptbundle(var_abdbed5a);
         if (isdefined(var_d1d9820d.("attacker_gesture"))) {
@@ -972,7 +967,6 @@ function function_516a3bef(replace) {
 function function_c82a14d1(finisher) {
     self endon(#"death", #"disconnect", #"finish_abort");
     finisher endon(#"death", #"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"contact");
     self flagsys::set(#"hash_40e3b09bdbcdac81");
     self notify(#"player_finished");
@@ -1062,10 +1056,10 @@ function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
     if (distancesquared(revivee.origin, self.origin) > 140 * 140) {
         return false;
     }
-    if (!sighttracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+    if (!sighttracepassed(self.origin + (0, 0, 50), revivee.origin + (0, 0, 30), 0, undefined)) {
         return false;
     }
-    if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+    if (!bullettracepassed(self.origin + (0, 0, 50), revivee.origin + (0, 0, 30), 0, undefined)) {
         return false;
     }
     return true;
@@ -1105,9 +1099,7 @@ function revive_do_revive(playerbeingrevived) {
     if (!isdefined(playerbeingrevived)) {
         return 0;
     }
-    /#
-        assert(self is_reviving(playerbeingrevived));
-    #/
+    assert(self is_reviving(playerbeingrevived));
     revivetime = getdvarfloat(#"g_revivetime", 3) * self function_bd85bc2f();
     timer = 0;
     revived = 0;
@@ -1186,7 +1178,6 @@ function revive_do_revive(playerbeingrevived) {
 // Size: 0x74
 function auto_revive_on_notify() {
     self endon(#"death", #"disconnect", #"player_revived");
-    waitresult = undefined;
     waitresult = self waittill(#"auto_revive");
     auto_revive(waitresult.reviver);
 }

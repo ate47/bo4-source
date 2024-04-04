@@ -86,7 +86,6 @@ function function_75046566(str_id) {
 function function_eac89317() {
     level endon(#"game_ended");
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"traps_activated", #"traps_available");
         if (isdefined(s_notify.var_be3f58a)) {
             if (s_notify._notify === "traps_activated") {

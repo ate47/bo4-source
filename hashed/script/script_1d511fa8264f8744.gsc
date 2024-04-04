@@ -8,27 +8,11 @@
 class czm_arcade_keys : cluielem {
 
     // Namespace czm_arcade_keys/zm_arcade_keys
-    // Params 0, eflags: 0x8
-    // Checksum 0xa551e872, Offset: 0x1f8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_arcade_keys/zm_arcade_keys
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xaaa138df, Offset: 0x360
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_arcade_keys/zm_arcade_keys
     // Params 2, eflags: 0x0
     // Checksum 0x6d6b9620, Offset: 0x328
     // Size: 0x30
     function set_key_count(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "key_count", value);
+        set_data(localclientnum, "key_count", value);
     }
 
     // Namespace czm_arcade_keys/zm_arcade_keys
@@ -45,7 +29,7 @@ class czm_arcade_keys : cluielem {
     // Size: 0x40
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "key_count", 0);
+        set_data(localclientnum, "key_count", 0);
     }
 
     // Namespace czm_arcade_keys/zm_arcade_keys

@@ -134,7 +134,6 @@ function private function_e5df009() {
 function private function_4c6d1750() {
     self endon(#"disconnect", #"hash_1410cda9f15ef1c3");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_3669499a148a6d6e");
         if (s_result.weapon == getweapon(#"tomahawk_t8_upgraded")) {
             self zm_utility::giveachievement_wrapper("zm_escape_senseless");
@@ -153,7 +152,6 @@ function private function_8b752e69() {
     self.var_8179ae74 = 0;
     self.footprint_warning_vobreadcrumbs = 0;
     while (!self.var_cd7cfb60 || !self.var_8179ae74 || !self.footprint_warning_vobreadcrumbs) {
-        s_result = undefined;
         s_result = self waittill(#"hash_2e36f5f4d9622bb3");
         if (s_result.weapon == getweapon(#"ww_blundergat_t8") || s_result.weapon == getweapon(#"ww_blundergat_t8_upgraded")) {
             self.var_cd7cfb60 = 1;
@@ -182,7 +180,6 @@ function private function_ce31237b() {
     self.var_ba2bd447 = 0;
     self.var_5b73502a = 0;
     while (!self.var_23d1ca17 || !self.var_ba2bd447 || !self.var_5b73502a) {
-        s_result = undefined;
         s_result = self waittill(#"hash_2706d6137c04adf4");
         str_zone = self zm_zonemgr::get_player_zone();
         if (!isdefined(str_zone)) {

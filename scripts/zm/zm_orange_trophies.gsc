@@ -89,7 +89,6 @@ function function_e12fb431() {
 // Size: 0xbc
 function function_e86e864b() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (zm_orange_util::function_fe8ee9f0(s_result.weapon, 0) && isplayer(s_result.attacker) && !isbot(s_result.attacker)) {
             s_result.attacker notify(#"hash_2a12c37201945891");
@@ -223,7 +222,6 @@ function function_3202188() {
     self endon(#"death");
     self endon(#"disconnect");
     while (self.var_65b6215d.size < 5) {
-        s_result = undefined;
         s_result = self waittill(#"hash_1ac4338b0d419091");
         if (s_result.var_7139c18c == "pap_taken") {
             if (!isdefined(self.var_65b6215d)) {
@@ -504,7 +502,6 @@ function function_c7b3bfea() {
     self endon(#"death");
     self endon(#"disconnect");
     while (self.var_5fe30ecb.size < 9) {
-        s_result = undefined;
         s_result = self waittill(#"hash_702a9c7f10066b19");
         if (!isdefined(self.var_5fe30ecb)) {
             self.var_5fe30ecb = [];
@@ -562,7 +559,6 @@ function function_2b6fe83b() {
 // Size: 0x158
 function function_82947e72() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon.name === #"pistol_standard_t8" || s_result.weapon.name === #"pistol_standard_t8_upgraded") {
             level exploder::exploder("fxexp_glass_jar_exp");

@@ -96,7 +96,6 @@ function function_91b8863c() {
         var_c4a5788c = 3000;
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"grenade_fire");
         e_grenade = s_result.projectile;
         if (self function_7b1ec82e(s_result)) {
@@ -153,7 +152,6 @@ function function_dcaa7a4a(e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462) 
         e_grenade thread function_4d71ac38(#"hash_689f11fd8983d1a6");
     }
     e_grenade thread scene::play(#"aib_t8_zm_zod_homunculus_throw_loop_01", e_grenade.mdl_anchor);
-    waitresult = undefined;
     waitresult = e_grenade waittill(#"stationary");
     e_grenade.var_255a121f = 0;
     e_grenade.mdl_anchor clientfield::set("" + #"hash_32c5838be960cfee", 1);
@@ -206,7 +204,6 @@ function function_1dba4a2() {
     self endon(#"death", #"hash_3e410dbcd9e66000");
     self.mdl_anchor endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self.mdl_anchor waittill(#"snddeployvox");
         if (isdefined(waitresult.str_alias)) {
             self.mdl_anchor playsoundontag(waitresult.str_alias, "j_head");
@@ -290,7 +287,7 @@ function function_32b5113(ai_zombie) {
     }
     n_dist_sq = distancesquared(self.origin, ai_zombie.origin);
     if (n_dist_sq <= 30625) {
-        if (bullettracepassed(self.mdl_anchor.origin + vectorscale((0, 0, 1), 16), ai_zombie getcentroid(), 0, self.mdl_anchor, ai_zombie)) {
+        if (bullettracepassed(self.mdl_anchor.origin + (0, 0, 16), ai_zombie getcentroid(), 0, self.mdl_anchor, ai_zombie)) {
             return true;
         }
     }
@@ -415,7 +412,7 @@ function function_9ef23dc0(ai_zombie, n_time, e_player, e_grenade) {
         ai_zombie thread function_45eb4c80();
         v_target = ai_zombie gettagorigin("j_head");
         if (!isdefined(v_target)) {
-            v_target = ai_zombie getcentroid() + vectorscale((0, 0, 1), 16);
+            v_target = ai_zombie getcentroid() + (0, 0, 16);
         }
         self moveto(v_target, n_time);
         self waittill(#"movedone");
@@ -458,7 +455,7 @@ function debug_draw_new_attractor_positions() {
     self endon(#"death");
     while (true) {
         foreach (attract in self.attractor_positions) {
-            passed = bullettracepassed(attract + vectorscale((0, 0, 1), 24), self.origin + vectorscale((0, 0, 1), 24), 0, self);
+            passed = bullettracepassed(attract + (0, 0, 24), self.origin + (0, 0, 24), 0, self);
             if (passed) {
                 /#
                     debugstar(attract, 6, (0, 1, 0));
@@ -628,7 +625,7 @@ function function_e383ca2f() {
 // Size: 0x224
 function function_f33bde5c(b_immediate = 0) {
     self endon(#"death", #"explode");
-    s_trace = groundtrace(self.mdl_anchor.origin + vectorscale((0, 0, 1), 16), self.mdl_anchor.origin + vectorscale((0, 0, -1), 1000), 0, self.mdl_anchor);
+    s_trace = groundtrace(self.mdl_anchor.origin + (0, 0, 16), self.mdl_anchor.origin + (0, 0, -1000), 0, self.mdl_anchor);
     var_a75fe4be = s_trace[#"position"];
     if (isdefined(s_trace[#"entity"])) {
         var_a75fe4be = (var_a75fe4be[0], var_a75fe4be[1], s_trace[#"entity"].origin[2]);

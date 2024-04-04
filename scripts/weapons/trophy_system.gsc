@@ -279,7 +279,7 @@ function trophyactive(owner) {
                 } else if (grenade.owner == owner) {
                     continue;
                 }
-                if (bullettracepassed(grenade.origin, self.origin + vectorscale((0, 0, 1), 29), 0, self, grenade, 0, 1)) {
+                if (bullettracepassed(grenade.origin, self.origin + (0, 0, 29), 0, self, grenade, 0, 1)) {
                     grenade notify(#"death");
                     if (isdefined(level.var_ccfcde75)) {
                         owner [[ level.var_ccfcde75 ]](self, grenade);
@@ -292,7 +292,7 @@ function trophyactive(owner) {
                     if (fxup == (0, 0, 0)) {
                         fxup = (0, 0, 1);
                     }
-                    playfx(level.trophylongflashfx, self.origin + vectorscale((0, 0, 1), 15), fxfwd, fxup);
+                    playfx(level.trophylongflashfx, self.origin + (0, 0, 15), fxfwd, fxup);
                     owner thread projectileexplode(grenade, self);
                     index--;
                     self playsound(#"wpn_trophy_alert");
@@ -468,7 +468,6 @@ function watchtrophysystemdamage(watcher) {
     self setmaxhealth(self.maxhealth);
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage = waitresult.amount;
         type = waitresult.mod;

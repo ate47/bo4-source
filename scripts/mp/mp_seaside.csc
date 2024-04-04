@@ -86,7 +86,6 @@ function dom_flag_cap_fx_override(flag, team) {
 // Checksum 0x738f9488, Offset: 0x5f0
 // Size: 0x120
 function on_localclient_connect(localclientnum) {
-    waitresult = undefined;
     waitresult = level waittill(#"positiondraft_open", #"hash_7b06b53a1ed7cfc4", #"disconnect");
     if (waitresult._notify === "PositionDraft_Open") {
         setpbgactivebank(localclientnum, 8);

@@ -66,7 +66,6 @@ function wait_dart_timed_out(time) {
 // Size: 0xbe
 function wait_for_throw_status() {
     thread wait_dart_timed_out(5);
-    notifystring = undefined;
     notifystring = self waittill(#"death", #"disconnect", #"dart_entered", #"dart_throw_timed_out", #"dart_throw_failed");
     if (notifystring._notify == "dart_entered" || notifystring._notify == "death") {
         return true;
@@ -80,9 +79,7 @@ function wait_for_throw_status() {
 // Size: 0x2f0
 function activatedart(killstreaktype) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (!player killstreakrules::iskillstreakallowed("dart", player.team)) {
         return false;
     }
@@ -93,7 +90,6 @@ function activatedart(killstreaktype) {
         return false;
     }
     player thread watchthrow(missileweapon);
-    notifystring = undefined;
     notifystring = player waittill(#"weapon_change", #"grenade_fire", #"death", #"disconnect", #"joined_team", #"emp_jammed", #"emp_grenaded");
     if (notifystring._notify == "death" || notifystring._notify == "emp_jammed" || notifystring._notify == "emp_grenaded") {
         if (isdefined(player)) {
@@ -127,7 +123,7 @@ function activatedart(killstreaktype) {
 // Size: 0x42
 function cleanup_grenade() {
     self thread waitthendelete(0.05);
-    self.origin = self.origin + vectorscale((0, 0, 1), 1000);
+    self.origin = self.origin + (0, 0, 1000);
 }
 
 // Namespace dart/dart
@@ -135,15 +131,12 @@ function cleanup_grenade() {
 // Checksum 0x40480a21, Offset: 0x9e0
 // Size: 0x32c
 function watchthrow(missileweapon) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     playerentnum = player.entnum;
     player endon(#"disconnect", #"joined_team", #"dart_putaway");
     level endon(#"game_ended");
     player.waitingondartthrow = 1;
-    waitresult = undefined;
     waitresult = player waittill(#"grenade_fire");
     grenade = waitresult.projectile;
     weapon = waitresult.weapon;
@@ -268,9 +261,7 @@ function check_launch_space(origin) {
 // Size: 0x5a4
 function spawndart(grenade, killstreak_id, spawn_origin) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     playerentnum = player.entnum;
     player_angles = player getplayerangles();
     grenade cleanup_grenade();
@@ -353,7 +344,6 @@ function waitremotecontrol() {
     dart = self;
     remote_controlled = isdefined(dart.control_initiated) && dart.control_initiated || isdefined(dart.controlled) && dart.controlled;
     if (remote_controlled) {
-        notifystring = undefined;
         notifystring = dart waittill(#"remote_weapon_end", #"dart_left");
         if (notifystring._notify == "remote_weapon_end") {
             dart waittill(#"dart_left");
@@ -371,9 +361,7 @@ function waitremotecontrol() {
 // Size: 0x21c
 function startdartremotecontrol(dart) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (!dart.is_shutting_down) {
         dart usevehicle(player, 0);
         player.resurrect_not_allowed_by = undefined;
@@ -465,7 +453,6 @@ function emp_damage_cb(attacker, weapon) {
 function darpredictedcollision() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         self notify(#"veh_collision", waitresult);
         if (waitresult.stype == "glass") {
@@ -485,7 +472,6 @@ function watchcollision() {
     dart.owner endon(#"disconnect");
     dart thread darpredictedcollision();
     while (true) {
-        waitresult = undefined;
         waitresult = dart waittill(#"veh_collision");
         if (waitresult.stype === "glass") {
             continue;

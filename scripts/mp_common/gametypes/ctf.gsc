@@ -373,7 +373,7 @@ function createflag(trigger) {
     visuals[0] setteam(entityteam);
     visuals[1] setmodel(teams::get_flag_model(entityteam) + "_alt");
     visuals[1] setteam(entityteam);
-    flag = gameobjects::create_carry_object(entityteam, trigger, visuals, vectorscale((0, 0, 1), 100), entityteam + "_flag");
+    flag = gameobjects::create_carry_object(entityteam, trigger, visuals, (0, 0, 100), entityteam + "_flag");
     flag gameobjects::set_team_use_time(#"friendly", level.flagtouchreturntime);
     flag gameobjects::set_team_use_time(#"enemy", level.flagcapturetime);
     flag gameobjects::allow_carry(#"enemy");

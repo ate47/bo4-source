@@ -70,7 +70,6 @@ function checkdvarupdates() {
 // Size: 0xfc
 function watchtabungrenadedetonation(owner) {
     self endon(#"trophy_destroyed");
-    waitresult = undefined;
     waitresult = self waittill(#"explode");
     if (!isdefined(level.water_duds) || level.water_duds == 1) {
         if (isdefined(waitresult.stype) && waitresult.stype == "water") {
@@ -117,7 +116,7 @@ function damageeffectarea(owner, position, radius, height, killcament) {
             if (!isdefined(players[i].inpoisonarea) || players[i].inpoisonarea == 0) {
                 if (players[i] istouching(gaseffectarea) && players[i].sessionstate == "playing") {
                     if (!players[i] hasperk(#"specialty_proximityprotection")) {
-                        trace = bullettrace(position, players[i].origin + vectorscale((0, 0, 1), 12), 0, players[i]);
+                        trace = bullettrace(position, players[i].origin + (0, 0, 12), 0, players[i]);
                         if (trace[#"fraction"] == 1) {
                             players[i].lastpoisonedby = owner;
                             players[i] thread damageinpoisonarea(shockeffectarea, killcament, trace, position);
@@ -178,7 +177,7 @@ function damageinpoisonarea(gaseffectarea, killcament, trace, position) {
             self val::set(#"tabun", "show_hud", 0);
         }
         wait(1);
-        trace = bullettrace(position, self.origin + vectorscale((0, 0, 1), 12), 0, self);
+        trace = bullettrace(position, self.origin + (0, 0, 12), 0, self);
     }
     tabunshocksound stoploopsound(0.5);
     wait(0.5);
@@ -214,12 +213,12 @@ function watch_death() {
 // Checksum 0xc8348da7, Offset: 0x1180
 // Size: 0xd4
 function generatelocations(position, owner) {
-    onefoot = vectorscale((0, 0, 1), 12);
+    onefoot = (0, 0, 12);
     startpos = position + onefoot;
     /#
         level.tabun_debug = getdvarint(#"scr_tabun_debug", 0);
         if (level.tabun_debug) {
-            black = vectorscale((1, 1, 1), 0.2);
+            black = (0.2, 0.2, 0.2);
             debugstar(startpos, 2000, black);
         }
     #/
@@ -232,7 +231,7 @@ function generatelocations(position, owner) {
 // Size: 0xbc
 function singlelocation(position, owner) {
     spawntimedfx(level.fx_tabun_single, position);
-    killcament = spawn("script_model", position + vectorscale((0, 0, 1), 60));
+    killcament = spawn("script_model", position + (0, 0, 60));
     killcament util::deleteaftertime(15);
     killcament.starttime = gettime();
     damageeffectarea(owner, position, level.tabungaspoisonradius, level.tabungaspoisonheight, killcament);
@@ -265,7 +264,7 @@ function spawnalllocs(owner, startpos) {
     red = (0.9, 0.2, 0.2);
     blue = (0.2, 0.2, 0.9);
     green = (0.2, 0.9, 0.2);
-    white = vectorscale((1, 1, 1), 0.9);
+    white = (0.9, 0.9, 0.9);
     north = startpos + (defaultdistance, 0, 0);
     south = startpos - (defaultdistance, 0, 0);
     east = startpos + (0, defaultdistance, 0);
@@ -301,11 +300,11 @@ function spawnalllocs(owner, startpos) {
         trace = hitpos(startpos, locations[#"point"][count], locations[#"color"][count]);
         locations[#"tracepos"][count] = trace;
         locations[#"loc"][count] = startpos / 2 + trace / 2;
-        locations[#"loc"][count] = locations[#"loc"][count] - vectorscale((0, 0, 1), 12);
+        locations[#"loc"][count] = locations[#"loc"][count] - (0, 0, 12);
         locations[#"distsqrd"][count] = distancesquared(startpos, trace);
     }
     centroid = getcenteroflocations(locations);
-    killcament = spawn("script_model", centroid + vectorscale((0, 0, 1), 60));
+    killcament = spawn("script_model", centroid + (0, 0, 60));
     killcament util::deleteaftertime(15);
     killcament.starttime = gettime();
     center = getcenter(locations);
@@ -345,7 +344,7 @@ function spawnalllocs(owner, startpos) {
             singleeffect = 0;
         }
     }
-    onefoot = vectorscale((0, 0, 1), 12);
+    onefoot = (0, 0, 12);
     startpos = startpos - onefoot;
     thread playtabunsound(startpos);
     if (singleeffect == 1) {

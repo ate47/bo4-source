@@ -61,9 +61,7 @@ function activation(var_fad9ed02 = 1) {
         var_16d4797c = getclosestpointonnavmesh(self.origin, 128, 24);
         s_respawn_point.origin = isdefined(var_16d4797c) ? var_16d4797c : s_respawn_point.origin;
     }
-    /#
-        assert(isdefined(s_respawn_point), "<unknown string>" + self.origin);
-    #/
+    assert(isdefined(s_respawn_point), "<unknown string>" + self.origin);
     if (!isdefined(s_respawn_point)) {
         self val::reset(#"hash_7d2b25df35ca5b3", "ignoreme");
         self.var_ffe2c4d7 = undefined;
@@ -78,7 +76,7 @@ function activation(var_fad9ed02 = 1) {
         self setplayerangles(s_respawn_point.angles);
     }
     self val::set(#"hash_7d2b25df35ca5b3", "freezecontrols", 1);
-    v_return_pos = self.origin + vectorscale((0, 0, 1), 60);
+    v_return_pos = self.origin + (0, 0, 60);
     a_ai = getaiteamarray(level.zombie_team);
     a_closest = [];
     ai_closest = undefined;
@@ -157,7 +155,7 @@ function validation() {
 // Checksum 0xeb8b1656, Offset: 0xbf8
 // Size: 0x2a8
 function function_91a62549() {
-    var_c73799d9 = zm_zonemgr::get_zone_from_position(self.origin + vectorscale((0, 0, 1), 32), 0);
+    var_c73799d9 = zm_zonemgr::get_zone_from_position(self.origin + (0, 0, 32), 0);
     if (!isdefined(var_c73799d9)) {
         var_c73799d9 = self.zone_name;
     }

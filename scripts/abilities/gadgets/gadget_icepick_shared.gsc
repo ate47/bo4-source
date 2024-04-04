@@ -667,9 +667,7 @@ function function_4802ca63(str_notify) {
 // Checksum 0x6038cea2, Offset: 0x2ba0
 // Size: 0xdc
 function function_4a82368f(entity, owner) {
-    /#
-        assert(isdefined(owner));
-    #/
+    assert(isdefined(owner));
     if (isplayer(owner)) {
         owner clientfield::set_to_player("hackedvehpostfx", 1);
     }
@@ -747,12 +745,8 @@ function function_ea2dfad6(hacker) {
 // Checksum 0x63af6ed0, Offset: 0x2fd8
 // Size: 0x16c
 function function_27c9bfc8(var_11a83c3a, announce) {
-    /#
-        assert(isdefined(var_11a83c3a));
-    #/
-    /#
-        assert(isdefined(announce));
-    #/
+    assert(isdefined(var_11a83c3a));
+    assert(isdefined(announce));
     var_11a83c3a notify(#"hack_end");
     var_11a83c3a.ishacked = 0;
     var_11a83c3a.var_be173895 = 0;
@@ -773,12 +767,8 @@ function function_27c9bfc8(var_11a83c3a, announce) {
 // Checksum 0x20aac83d, Offset: 0x3150
 // Size: 0x224
 function private function_aadad2c(attackingplayer, var_11a83c3a) {
-    /#
-        assert(isdefined(attackingplayer));
-    #/
-    /#
-        assert(isdefined(var_11a83c3a));
-    #/
+    assert(isdefined(attackingplayer));
+    assert(isdefined(var_11a83c3a));
     icepickweapon = getweapon(#"gadget_icepick");
     scoreevents::processscoreevent(#"hacked_enemy", attackingplayer, var_11a83c3a, icepickweapon);
     var_11a83c3a clientfield::set_player_uimodel("hudItems.hackedRebootProgress", 0);
@@ -804,15 +794,9 @@ function private function_aadad2c(attackingplayer, var_11a83c3a) {
 // Checksum 0xbbe14787, Offset: 0x3380
 // Size: 0x13c
 function private function_a9987363(var_559f4f0a, attackingplayer, var_11a83c3a) {
-    /#
-        assert(isdefined(var_559f4f0a));
-    #/
-    /#
-        assert(isdefined(attackingplayer));
-    #/
-    /#
-        assert(isdefined(var_11a83c3a));
-    #/
+    assert(isdefined(var_559f4f0a));
+    assert(isdefined(attackingplayer));
+    assert(isdefined(var_11a83c3a));
     if (!isdefined(var_11a83c3a.hackendtime)) {
         return;
     }
@@ -845,9 +829,7 @@ function private function_bf744a1e(attackingplayer, var_11a83c3a) {
 // Checksum 0x1859c81c, Offset: 0x3670
 // Size: 0x15c
 function private function_f255c737(var_11a83c3a) {
-    /#
-        assert(isdefined(var_11a83c3a));
-    #/
+    assert(isdefined(var_11a83c3a));
     var_11a83c3a endon(#"death", #"hack_end");
     settingsbundle = function_13f4415c();
     while (gettime() <= var_11a83c3a.hackendtime && level.gameended !== 1) {
@@ -870,12 +852,8 @@ function private function_f255c737(var_11a83c3a) {
 // Checksum 0x6e34c7c4, Offset: 0x37d8
 // Size: 0x144
 function function_39026c34(attackingplayer, var_11a83c3a, var_4f6e2cbe) {
-    /#
-        assert(isdefined(attackingplayer));
-    #/
-    /#
-        assert(isdefined(var_11a83c3a));
-    #/
+    assert(isdefined(attackingplayer));
+    assert(isdefined(var_11a83c3a));
     var_11a83c3a endon(#"death");
     if (var_4f6e2cbe) {
         if (isdefined(var_11a83c3a.ishacked) ? var_11a83c3a.ishacked : 0) {
@@ -1025,7 +1003,6 @@ function private function_6b9d6894(player) {
         player.var_3ca20bb9 = 0;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = player waittill(#"menuresponse");
         switch (waitresult.response) {
         case #"id":

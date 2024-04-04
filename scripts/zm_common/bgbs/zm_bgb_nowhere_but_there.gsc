@@ -74,7 +74,7 @@ function activation() {
         self setplayerangles(s_respawn_point.angles);
     }
     self val::set(#"zm_bgb_nowhere_but_there", "freezecontrols", 1);
-    v_return_pos = self.origin + vectorscale((0, 0, 1), 60);
+    v_return_pos = self.origin + (0, 0, 60);
     self playsound(#"zmb_bgb_abh_teleport_in");
     if (isdefined(level.var_1e480ea7)) {
         self [[ level.var_1e480ea7 ]]();
@@ -315,7 +315,7 @@ function function_22e77bc1(var_36bf7c2c, var_8afe96c9, e_player) {
         }
         return false;
     }
-    if (!(isdefined(bullettracepassed(e_player geteye() + vectorscale((0, 0, 1), 10), var_8afe96c9, 0, self, e_player, 0, 1)) && bullettracepassed(e_player geteye() + vectorscale((0, 0, 1), 10), var_8afe96c9, 0, self, e_player, 0, 1))) {
+    if (!(isdefined(bullettracepassed(e_player geteye() + (0, 0, 10), var_8afe96c9, 0, self, e_player, 0, 1)) && bullettracepassed(e_player geteye() + (0, 0, 10), var_8afe96c9, 0, self, e_player, 0, 1))) {
         if (isdefined(var_36bf7c2c)) {
             var_36bf7c2c delete();
         }

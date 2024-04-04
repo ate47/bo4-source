@@ -69,10 +69,9 @@ function function_4861487f(weapon, player) {
 // Size: 0x124
 function function_cd8ee3c5() {
     self endon(#"grenade_dud");
-    waitresult = undefined;
     waitresult = self waittill(#"explode", #"death");
     if (waitresult._notify == #"explode") {
-        trace = groundtrace(waitresult.position, waitresult.position + vectorscale((0, 0, -1), 20000), 0, self, 0);
+        trace = groundtrace(waitresult.position, waitresult.position + (0, 0, -20000), 0, self, 0);
         if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
             org = trace[#"position"];
             item_supply_drop::drop_supply_drop(org, 1);
@@ -86,11 +85,10 @@ function function_cd8ee3c5() {
 // Size: 0x1cc
 function function_f3edce9a() {
     self endon(#"grenade_dud");
-    waitresult = undefined;
     waitresult = self waittill(#"explode", #"death");
     if (waitresult._notify == #"explode") {
         position = isdefined(waitresult.position) ? waitresult.position : waitresult.attacker.origin;
-        trace = groundtrace(position, position + vectorscale((0, 0, -1), 20000), 0, self, 0);
+        trace = groundtrace(position, position + (0, 0, -20000), 0, self, 0);
         if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
             org = trace[#"position"];
             vehicletypes = array(#"vehicle_t8_mil_tank_wz_black", #"vehicle_t8_mil_tank_wz_green", #"vehicle_t8_mil_tank_wz_grey", #"vehicle_t8_mil_tank_wz_tan");

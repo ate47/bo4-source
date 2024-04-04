@@ -732,7 +732,6 @@ function function_e03ea502() {
     clientfield::set_world_uimodel("PlayerList.client" + self.entity_num + ".multiplier_blink", 0);
     clientfield::set_world_uimodel("PlayerList.client" + self.entity_num + ".multiplier_count", self.var_7e008e0c + 1);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittilltimeout(self.var_72b24dc2, #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"multiplier_timeout", #"hash_b696fc900429737", #"player_grabbed_key");
         clientfield::set_world_uimodel("PlayerList.client" + self.entity_num + ".multiplier_blink", 0);
         str_extra_info = #"hash_4ba6bddb362745d9";
@@ -870,7 +869,6 @@ function function_c48750b() {
     level endon(#"end_game");
     var_273349fe = 1;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"earned_points");
         profilestart();
         self function_cd6476e(s_waitresult.n_points);
@@ -1999,9 +1997,7 @@ function function_ec53cb2c() {
 // Checksum 0xabe9b4ed, Offset: 0x7b18
 // Size: 0xa72
 function function_21669ebc(restart = 0) {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     level endon(#"end_round_think");
     if (!(isdefined(restart) && restart)) {
         if (isdefined(level.var_12e11406)) {
@@ -2037,9 +2033,7 @@ function function_21669ebc(restart = 0) {
         if (!(isdefined(level.headshots_only) && level.headshots_only) && !restart) {
             level thread zm_round_logic::award_grenades_for_survivors();
         }
-        /#
-            println("<unknown string>" + level.round_number + "<unknown string>" + players.size);
-        #/
+        println("<unknown string>" + level.round_number + "<unknown string>" + players.size);
         level.round_start_time = gettime();
         while (level.zm_loc_types[#"zombie_location"].size <= 0) {
             wait(0.1);
@@ -2233,7 +2227,6 @@ function function_f26f8251(str_archetype, n_player_count) {
                 ai = [[ self.var_8857c54d ]]();
             } else {
                 zm_transform::function_bdd8aba6(str_archetype);
-                s_waitresult = undefined;
                 s_waitresult = level waittill(#"transformation_complete");
                 if (s_waitresult.id === str_archetype) {
                     ai = s_waitresult.new_ai[0];
@@ -2257,7 +2250,6 @@ function function_f26f8251(str_archetype, n_player_count) {
 function function_71e054d7() {
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"perk_bought");
         if (isdefined(s_waitresult.var_16c042b8) && isdefined(level.zmannouncervox[s_waitresult.var_16c042b8])) {
             level thread zm_audio::sndannouncerplayvox(s_waitresult.var_16c042b8, self);

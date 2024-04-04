@@ -16,31 +16,16 @@
 // Method(s) 12 Total 12
 class cluielem {
 
-    // Namespace cluielem/lui_shared
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x80f724d1, Offset: 0x2640
-    // Size: 0x4
-    __constructor() {
-        
-    }
-
-    // Namespace cluielem/lui_shared
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x2a28
-    // Size: 0x4
-    __destructor() {
-        
-    }
+    var var_47d8642e;
+    var var_47e79fc;
 
     // Namespace cluielem/lui_shared
     // Params 2, eflags: 0x1 linked
     // Checksum 0xbbfcd106, Offset: 0x29c0
     // Size: 0x5a
     function get_data(localclientnum, field) {
-        /#
-            assert(self.var_47d8642e, "<unknown string>");
-        #/
-        return function_88759655(localclientnum, self.var_47e79fc, field);
+        assert(var_47d8642e, "<unknown string>");
+        return function_88759655(localclientnum, var_47e79fc, field);
     }
 
     // Namespace cluielem/lui_shared
@@ -48,10 +33,8 @@ class cluielem {
     // Checksum 0xdfd2cdb7, Offset: 0x2950
     // Size: 0x64
     function set_data(localclientnum, field, value) {
-        /#
-            assert(self.var_47d8642e, "<unknown string>");
-        #/
-        function_bcc2134a(localclientnum, self.var_47e79fc, field, value);
+        assert(var_47d8642e, "<unknown string>");
+        function_bcc2134a(localclientnum, var_47e79fc, field, value);
     }
 
     // Namespace cluielem/lui_shared
@@ -59,10 +42,8 @@ class cluielem {
     // Checksum 0x34de8d6, Offset: 0x28f0
     // Size: 0x54
     function close(localclientnum) {
-        /#
-            assert(self.var_47d8642e, "<unknown string>");
-        #/
-        closeluielem(localclientnum, self.var_47e79fc);
+        assert(var_47d8642e, "<unknown string>");
+        closeluielem(localclientnum, var_47e79fc);
     }
 
     // Namespace cluielem/lui_shared
@@ -70,10 +51,8 @@ class cluielem {
     // Checksum 0x885ea434, Offset: 0x2890
     // Size: 0x52
     function is_open(localclientnum) {
-        /#
-            assert(self.var_47d8642e, "<unknown string>");
-        #/
-        return isluielemopen(localclientnum, self.var_47e79fc);
+        assert(var_47d8642e, "<unknown string>");
+        return isluielemopen(localclientnum, var_47e79fc);
     }
 
     // Namespace cluielem/lui_shared
@@ -81,11 +60,9 @@ class cluielem {
     // Checksum 0x237b563f, Offset: 0x2818
     // Size: 0x6c
     function open(localclientnum, menu_name) {
-        /#
-            assert(self.var_47d8642e, "<unknown string>");
-        #/
-        openluielem(localclientnum, menu_name, self.var_47e79fc);
-        [[ self ]]->function_fa582112(localclientnum);
+        assert(var_47d8642e, "<unknown string>");
+        openluielem(localclientnum, menu_name, var_47e79fc);
+        function_fa582112(localclientnum);
     }
 
     // Namespace cluielem/lui_shared
@@ -93,9 +70,7 @@ class cluielem {
     // Checksum 0xbecc2060, Offset: 0x27d8
     // Size: 0x34
     function function_fa582112(localclientnum) {
-        /#
-            assert(self.var_47d8642e, "<unknown string>");
-        #/
+        assert(var_47d8642e, "<unknown string>");
     }
 
     // Namespace cluielem/lui_shared
@@ -103,8 +78,8 @@ class cluielem {
     // Checksum 0xdb389259, Offset: 0x27a8
     // Size: 0x26
     function register_clientside(uid) {
-        self.var_47e79fc = uid;
-        self.var_47d8642e = 1;
+        var_47e79fc = uid;
+        var_47d8642e = 1;
     }
 
     // Namespace cluielem/lui_shared
@@ -112,10 +87,8 @@ class cluielem {
     // Checksum 0xcdf44b94, Offset: 0x2710
     // Size: 0x8c
     function function_dcb34c80(var_2a0de052, field_name, version) {
-        /#
-            assert(!self.var_47d8642e, "<unknown string>");
-        #/
-        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + self.var_47e79fc + "." + field_name, version, undefined, 0, 0);
+        assert(!var_47d8642e, "<unknown string>");
+        clientfield::register_bgcache("clientuimodel", var_2a0de052, "luielement." + var_47e79fc + "." + field_name, version, undefined, 0, 0);
     }
 
     // Namespace cluielem/lui_shared
@@ -123,10 +96,8 @@ class cluielem {
     // Checksum 0x6df9dd22, Offset: 0x2680
     // Size: 0x84
     function add_clientfield(field_name, version, bits, type, callback) {
-        /#
-            assert(!self.var_47d8642e, "<unknown string>");
-        #/
-        clientfield::register_luielem(self.var_47e79fc, field_name, version, bits, type, callback, 0, 0);
+        assert(!var_47d8642e, "<unknown string>");
+        clientfield::register_luielem(var_47e79fc, field_name, version, bits, type, callback, 0, 0);
     }
 
     // Namespace cluielem/lui_shared
@@ -134,8 +105,8 @@ class cluielem {
     // Checksum 0xf4a31fea, Offset: 0x2650
     // Size: 0x26
     function setup_clientfields(uid) {
-        self.var_47e79fc = uid;
-        self.var_47d8642e = 0;
+        var_47e79fc = uid;
+        var_47d8642e = 0;
     }
 
 }
@@ -173,9 +144,7 @@ function on_player_connect(localclientnum) {
 // Checksum 0x5e7ac0c8, Offset: 0x2d8
 // Size: 0x56
 function initmenudata(localclientnum) {
-    /#
-        assert(!isdefined(level.client_menus[localclientnum]));
-    #/
+    assert(!isdefined(level.client_menus[localclientnum]));
     level.client_menus[localclientnum] = associativearray();
 }
 
@@ -184,9 +153,7 @@ function initmenudata(localclientnum) {
 // Checksum 0x53a7793d, Offset: 0x338
 // Size: 0x186
 function createextracamxcamdata(menu_name, localclientnum, extracam_index, target_name, xcam, sub_xcam, xcam_frame) {
-    /#
-        assert(isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(isdefined(level.client_menus[localclientnum][menu_name]));
     menu_data = level.client_menus[localclientnum][menu_name];
     extracam_data = {#menu_name:menu_name, #extracam_index:extracam_index, #target_name:target_name, #xcam:xcam, #sub_xcam:sub_xcam, #xcam_frame:xcam_frame};
     if (!isdefined(menu_data.extra_cams)) {
@@ -202,9 +169,7 @@ function createextracamxcamdata(menu_name, localclientnum, extracam_index, targe
 // Checksum 0xa9dcf3f0, Offset: 0x4c8
 // Size: 0x12e
 function createcustomextracamxcamdata(menu_name, localclientnum, extracam_index, camera_function) {
-    /#
-        assert(isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(isdefined(level.client_menus[localclientnum][menu_name]));
     menu_data = level.client_menus[localclientnum][menu_name];
     extracam_data = {#extracam_index:extracam_index, #camera_function:camera_function};
     if (!isdefined(menu_data.extra_cams)) {
@@ -220,9 +185,7 @@ function createcustomextracamxcamdata(menu_name, localclientnum, extracam_index,
 // Checksum 0x9df80cbd, Offset: 0x600
 // Size: 0x1f6
 function addmenuexploders(menu_name, localclientnum, exploder) {
-    /#
-        assert(isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(isdefined(level.client_menus[localclientnum][menu_name]));
     menu_data = level.client_menus[localclientnum][menu_name];
     if (isarray(exploder)) {
         foreach (expl in exploder) {
@@ -248,13 +211,9 @@ function addmenuexploders(menu_name, localclientnum, exploder) {
 // Checksum 0xc9f77dc1, Offset: 0x800
 // Size: 0x176
 function linktocustomcharacter(menu_name, localclientnum, target_name, alt_render_mode = 1) {
-    /#
-        assert(isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(isdefined(level.client_menus[localclientnum][menu_name]));
     menu_data = level.client_menus[localclientnum][menu_name];
-    /#
-        assert(!isdefined(menu_data.custom_character));
-    #/
+    assert(!isdefined(menu_data.custom_character));
     model = getent(localclientnum, target_name, "targetname");
     if (!isdefined(model)) {
         model = util::spawn_model(localclientnum, "tag_origin");
@@ -295,9 +254,7 @@ function function_e41243c1(var_e953aca6) {
 // Checksum 0xef99f1a0, Offset: 0xa48
 // Size: 0x1c2
 function createcameramenu(menu_name, localclientnum, target_name, xcam, sub_xcam, xcam_frame = undefined, var_1f199068 = undefined, var_2c679be0 = undefined, lerp_time = 0, lut_index = 0) {
-    /#
-        assert(!isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(!isdefined(level.client_menus[localclientnum][menu_name]));
     level.client_menus[localclientnum][menu_name] = {#menu_name:menu_name, #target_name:target_name, #xcam:xcam, #sub_xcam:sub_xcam, #xcam_frame:xcam_frame, #var_1f199068:function_e41243c1(var_1f199068), #var_2c679be0:function_e41243c1(var_2c679be0), #lerp_time:lerp_time, #lut_index:lut_index, #var_e57ed98b:[]};
     return level.client_menus[localclientnum][menu_name];
 }
@@ -307,9 +264,7 @@ function createcameramenu(menu_name, localclientnum, target_name, xcam, sub_xcam
 // Checksum 0xfa915d3f, Offset: 0xc18
 // Size: 0x132
 function function_9d7ab167(menu_name, localclientnum, session_mode, target_name, xcam, sub_xcam, xcam_frame = undefined, lerp_time = 0, lut_index = 0) {
-    /#
-        assert(isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(isdefined(level.client_menus[localclientnum][menu_name]));
     level.client_menus[localclientnum][menu_name].var_e57ed98b[session_mode] = {#target_name:target_name, #xcam:xcam, #sub_xcam:sub_xcam, #xcam_frame:xcam_frame, #lerp_time:lerp_time, #lut_index:lut_index};
 }
 
@@ -318,9 +273,7 @@ function function_9d7ab167(menu_name, localclientnum, session_mode, target_name,
 // Checksum 0x19e8a101, Offset: 0xd58
 // Size: 0x15a
 function createcustomcameramenu(menu_name, localclientnum, camera_function, has_state, var_1f199068 = undefined, var_2c679be0 = undefined, lut_index = 0) {
-    /#
-        assert(!isdefined(level.client_menus[localclientnum][menu_name]));
-    #/
+    assert(!isdefined(level.client_menus[localclientnum][menu_name]));
     level.client_menus[localclientnum][menu_name] = {#menu_name:menu_name, #camera_function:camera_function, #has_state:has_state, #var_1f199068:function_e41243c1(var_1f199068), #var_2c679be0:function_e41243c1(var_2c679be0), #lut_index:lut_index};
     return level.client_menus[localclientnum][menu_name];
 }
@@ -448,7 +401,6 @@ function client_menus(localclientnum) {
     level.var_a14cc36b[localclientnum] = array();
     clientmenustack = level.var_a14cc36b[localclientnum];
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill("menu_change" + localclientnum);
         menu_name = waitresult.menu;
         status = waitresult.status;
@@ -478,11 +430,7 @@ function client_menus(localclientnum) {
             continue;
         }
         if (status === "closed" && isdefined(menu_index)) {
-            /#
-                /#
-                    assert(menu_index == 0);
-                #/
-            #/
+            assert(menu_index == 0);
             if (menu_index == 0) {
                 popped = array::pop(clientmenustack, 0, 0);
                 setup_menu(localclientnum, clientmenustack[0], popped);
@@ -502,9 +450,7 @@ function client_menus(localclientnum) {
             continue;
         }
         if (isdefined(menu_index) && statechange) {
-            /#
-                assert(menu_index == 0);
-            #/
+            assert(menu_index == 0);
             clientmenustack[0].state = state;
             function_afb6dd92(localclientnum, clientmenustack[0]);
         }
@@ -616,9 +562,7 @@ function private _screen_fade(n_time, n_target_alpha, n_start_alpha, v_color, b_
             v_color = (1, 1, 1);
             break;
         default:
-            /#
-                assertmsg("<unknown string>");
-            #/
+            assertmsg("<unknown string>");
             break;
         }
     }

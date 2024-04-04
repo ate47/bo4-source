@@ -272,9 +272,7 @@ function private player_apply_loadout(name) {
     loadout = level.altbody_loadouts[name];
     if (isdefined(loadout)) {
         self disableweaponcycling();
-        /#
-            assert(!isdefined(self.get_player_weapon_limit));
-        #/
+        assert(!isdefined(self.get_player_weapon_limit));
         self.get_player_weapon_limit = &get_altbody_weapon_limit;
         self.altbody_loadout[name] = zm_weapons::player_get_loadout();
         self zm_weapons::player_give_loadout(loadout, 0, 1);
@@ -329,9 +327,7 @@ function private player_restore_loadout(name, trigger) {
             self waittilltimeout(1, #"weapon_change_complete");
         }
         self zm_weapons::player_take_loadout(loadout);
-        /#
-            assert(self.get_player_weapon_limit == &get_altbody_weapon_limit);
-        #/
+        assert(self.get_player_weapon_limit == &get_altbody_weapon_limit);
         self.get_player_weapon_limit = undefined;
         self resetanimations();
         self enableweaponcycling();
@@ -377,7 +373,7 @@ function function_f5e5eac2(kiosk, name, trigger_hint, notrigger_hint) {
     height = 128;
     length = 128;
     unitrigger_stub = spawnstruct();
-    unitrigger_stub.origin = kiosk.origin + vectorscale((0, 0, 1), 32);
+    unitrigger_stub.origin = kiosk.origin + (0, 0, 32);
     unitrigger_stub.angles = kiosk.angles;
     unitrigger_stub.script_unitrigger_type = "unitrigger_radius_use";
     unitrigger_stub.cursor_hint = "HINT_NOICON";
@@ -417,7 +413,6 @@ function kiosk_trigger_visibility(player) {
 // Size: 0xf0
 function kiosk_trigger_think() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (isdefined(self.stub.usable) && self.stub.usable) {
@@ -460,7 +455,6 @@ function private trigger_watch_kiosk(name, trigger_name, trigger_hint, whenvisib
             self.kiosk = target;
         }
         while (isdefined(self)) {
-            waitresult = undefined;
             waitresult = self waittill(#"trigger");
             player = waitresult.activator;
             if (isdefined(player.custom_altbody_callback)) {

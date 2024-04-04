@@ -48,11 +48,7 @@
 // Checksum 0x9e36e891, Offset: 0x300
 // Size: 0x114
 function main() {
-    /#
-        /#
-            assert(isdefined(level.first_frame), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(level.first_frame), "<unknown string>");
     zm::init();
     level._loadstarted = 1;
     register_clientfields();

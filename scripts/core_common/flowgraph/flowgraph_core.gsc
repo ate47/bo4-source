@@ -42,9 +42,7 @@ function private call_func(func, arg_count, args) {
     case 16:
         return self [[ func ]](args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10], args[11], args[12], args[13], args[14], args[15]);
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
 }
@@ -54,9 +52,7 @@ function private call_func(func, arg_count, args) {
 // Checksum 0x4434c83e, Offset: 0x850
 // Size: 0x3e6
 function private evaluate_constant(input_def) {
-    /#
-        assert(isdefined(input_def.constvalue));
-    #/
+    assert(isdefined(input_def.constvalue));
     val = input_def.constvalue;
     switch (input_def.type) {
     case #"fx":
@@ -73,36 +69,22 @@ function private evaluate_constant(input_def) {
     case #"string":
         return val;
     case #"entityarray":
-        /#
-            assert(isstruct(val));
-        #/
-        /#
-            assert(isdefined(val.value));
-        #/
-        /#
-            assert(isdefined(val.key));
-        #/
+        assert(isstruct(val));
+        assert(isdefined(val.value));
+        assert(isdefined(val.key));
         return getentarray(val.value, val.key);
     case #"pathnode":
     case #"spawner":
     case #"ai":
     case #"entity":
     case #"vehicle":
-        /#
-            assert(isstruct(val) || isstring(val));
-        #/
+        assert(isstruct(val) || isstring(val));
         if (isstruct(val)) {
-            /#
-                assert(isdefined(val.value));
-            #/
-            /#
-                assert(isdefined(val.key));
-            #/
+            assert(isdefined(val.value));
+            assert(isdefined(val.key));
             return getent(val.value, val.key);
         } else {
-            /#
-                assert(val == "<unknown string>" || val == "<unknown string>");
-            #/
+            assert(val == "<unknown string>" || val == "<unknown string>");
             if (val == "self") {
                 return self.target;
             } else {
@@ -114,14 +96,10 @@ function private evaluate_constant(input_def) {
     case #"class":
     case #"null":
     case #"exec":
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return undefined;
     }
-    /#
-        assertmsg("<unknown string>" + input_def.type + "<unknown string>");
-    #/
+    assertmsg("<unknown string>" + input_def.type + "<unknown string>");
     return undefined;
 }
 
@@ -135,9 +113,7 @@ function private get_node_output_param_index(node_def, param_name) {
             return i;
         }
     }
-    /#
-        assertmsg("<unknown string>");
-    #/
+    assertmsg("<unknown string>");
     return -1;
 }
 
@@ -151,9 +127,7 @@ function private get_node_input_param_index(node_def, param_name) {
             return i;
         }
     }
-    /#
-        assertmsg("<unknown string>");
-    #/
+    assertmsg("<unknown string>");
     return -1;
 }
 
@@ -198,13 +172,9 @@ function private get_graph_def(graph_name, force_refresh = 0) {
     graph_def.nodes = indexed_nodes;
     foreach (wire_def in graph_def.wires) {
         output_node = graph_def.nodes[wire_def.outputnodeuuid];
-        /#
-            assert(isdefined(output_node), "<unknown string>" + graph_name + "<unknown string>");
-        #/
+        assert(isdefined(output_node), "<unknown string>" + graph_name + "<unknown string>");
         input_node = graph_def.nodes[wire_def.inputnodeuuid];
-        /#
-            assert(isdefined(input_node), "<unknown string>" + graph_name + "<unknown string>");
-        #/
+        assert(isdefined(input_node), "<unknown string>" + graph_name + "<unknown string>");
         output_param_index = get_node_output_param_index(output_node, wire_def.outputparamname);
         input_param_index = get_node_input_param_index(input_node, wire_def.inputparamname);
         output_param = output_node.outputs[output_param_index];
@@ -286,12 +256,8 @@ function kick(outputs = [], block = 0) {
     if (!isarray(outputs)) {
         outputs = array(outputs);
     }
-    /#
-        assert(isarray(outputs), "<unknown string>" + self.def.uuid + "<unknown string>");
-    #/
-    /#
-        assert(outputs.size == self.def.outputs.size, "<unknown string>" + self.def.uuid + "<unknown string>" + self.def.outputs.size + "<unknown string>");
-    #/
+    assert(isarray(outputs), "<unknown string>" + self.def.uuid + "<unknown string>");
+    assert(outputs.size == self.def.outputs.size, "<unknown string>" + self.def.uuid + "<unknown string>" + self.def.outputs.size + "<unknown string>");
     self.outputs = outputs;
     for (i = 0; i < self.def.outputs.size; i++) {
         output_def = self.def.outputs[i];
@@ -329,9 +295,7 @@ function collect_inputs() {
                 }
                 inputs[input_index] = result;
             } else {
-                /#
-                    assert(input_def.connections.size == 1, "<unknown string>" + input_def.name + "<unknown string>");
-                #/
+                assert(input_def.connections.size == 1, "<unknown string>" + input_def.name + "<unknown string>");
                 connection_def = input_def.connections[0];
                 node_inst = self.owner.nodes[connection_def.node.uuid];
                 outputs = node_inst collect_outputs();
@@ -354,9 +318,7 @@ function collect_inputs() {
 // Size: 0x278
 function event_handler[flowgraph_run] run(eventstruct) {
     graph_def = get_graph_def(eventstruct.flowgraph_asset);
-    /#
-        assert(isdefined(graph_def), "<unknown string>" + eventstruct.flowgraph_asset + "<unknown string>");
-    #/
+    assert(isdefined(graph_def), "<unknown string>" + eventstruct.flowgraph_asset + "<unknown string>");
     graph_inst = spawnstruct();
     graph_inst.def = graph_def;
     graph_inst.nodes = [];

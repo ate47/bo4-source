@@ -109,7 +109,7 @@ function initrotatingrig(bundle) {
         level.var_89350618 = spawn("script_model", airsupport::getmapcenter() + rotator_offset);
     }
     level.var_89350618 setmodel(#"tag_origin");
-    level.var_89350618.angles = vectorscale((0, 1, 0), 115);
+    level.var_89350618.angles = (0, 115, 0);
     level.var_89350618 hide();
     level.var_89350618 thread rotaterig(bundle);
 }
@@ -207,9 +207,7 @@ function private spawnac130() {
     player = self;
     player endon(#"disconnect");
     level endon(#"game_ended");
-    /#
-        assert(!isdefined(level.ac130));
-    #/
+    assert(!isdefined(level.ac130));
     profilestart();
     if (isdefined(player.isplanting) && player.isplanting || isdefined(player.isdefusing) && player.isdefusing || player util::isusingremote() || player iswallrunning() || player oob::isoutofbounds()) {
         profilestop();
@@ -248,11 +246,11 @@ function private spawnac130() {
     level.ac130.damagetaken = 0;
     level.ac130 thread helicopter::heli_health("ac130");
     level.ac130 setcandamage(1);
-    target_set(level.ac130, vectorscale((0, 0, -1), 100));
+    target_set(level.ac130, (0, 0, -100));
     target_setallowhighsteering(level.ac130, 1);
     level.ac130.numflares = 1;
     level.ac130.fx_flare = bundle.var_22ab738b;
-    level.ac130 helicopter::create_flare_ent(vectorscale((0, 0, -1), 150));
+    level.ac130 helicopter::create_flare_ent((0, 0, -150));
     level.ac130 thread heatseekingmissile::missiletarget_proximitydetonateincomingmissile("death");
     level.ac130.is_still_valid_target_for_stinger_override = &function_c2bfa7e1;
     level.ac130 thread function_d4896942(bundle);
@@ -311,9 +309,7 @@ function function_7cdff810() {
         return;
     }
     hackedhealth = killstreak_bundles::get_hacked_health("ac130");
-    /#
-        assert(isdefined(hackedhealth));
-    #/
+    assert(isdefined(hackedhealth));
     if (ac130.health > hackedhealth) {
         ac130.health = hackedhealth;
     }
@@ -335,7 +331,6 @@ function waitforgameendthread() {
 // Checksum 0x7d9b5971, Offset: 0x1ae8
 // Size: 0x1ba
 function waitforvtolshutdownthread(ac130) {
-    waitresult = undefined;
     waitresult = ac130 waittill(#"ac130_shutdown");
     if (!isdefined(ac130)) {
         return;
@@ -358,9 +353,7 @@ function waitforvtolshutdownthread(ac130) {
         ac130 function_cc756b8d();
         function_8721028e(ac130.owner, 1);
     }
-    /#
-        assert(ac130.var_957d409b === 1);
-    #/
+    assert(ac130.var_957d409b === 1);
     ac130 delete();
     ac130 = undefined;
 }
@@ -456,7 +449,6 @@ function function_31f9c728(bundle) {
     ac130 endon(#"death", #"ac130_shutdown");
     ac130.var_7132bbb7 = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = ac130 waittill(#"stinger_fired_at_me");
         if (isdefined(waitresult.projectile)) {
             ac130 childthread function_849819e9(waitresult.projectile, bundle, "exp_incoming_missile");
@@ -470,15 +462,9 @@ function function_31f9c728(bundle) {
 // Checksum 0x88674f17, Offset: 0x2088
 // Size: 0x1fc
 function function_849819e9(missile, bundle, var_61bbac7a) {
-    /#
-        assert(isentity(missile));
-    #/
-    /#
-        assert(isstruct(bundle));
-    #/
-    /#
-        assert(isdefined(var_61bbac7a));
-    #/
+    assert(isentity(missile));
+    assert(isstruct(bundle));
+    assert(isdefined(var_61bbac7a));
     ac130 = self;
     if (!isdefined(ac130)) {
         return;
@@ -505,15 +491,9 @@ function function_849819e9(missile, bundle, var_61bbac7a) {
 // Checksum 0xcba2c1d4, Offset: 0x2290
 // Size: 0x2b8
 function function_6650cc9c(missile, bundle, var_2f984f68) {
-    /#
-        assert(isentity(missile));
-    #/
-    /#
-        assert(isstruct(bundle));
-    #/
-    /#
-        assert(isdefined(var_2f984f68));
-    #/
+    assert(isentity(missile));
+    assert(isstruct(bundle));
+    assert(isdefined(var_2f984f68));
     ac130 = self;
     if (!isdefined(ac130)) {
         return;
@@ -549,9 +529,7 @@ function function_6650cc9c(missile, bundle, var_2f984f68) {
 function watchplayerteamchangethread(ac130) {
     ac130 notify(#"mothership_team_change");
     ac130 endon(#"mothership_team_change");
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     player endon(#"gunner_left");
     player waittill(#"joined_team", #"disconnect", #"joined_spectators");
@@ -569,9 +547,7 @@ function watchplayerteamchangethread(ac130) {
 function watchplayerexitrequestthread(player) {
     player notify(#"watchplayerexitrequestthread_singleton");
     player endon(#"watchplayerexitrequestthread_singleton");
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     ac130 = self;
     level endon(#"game_ended");
     player endon(#"disconnect", #"gunner_left");
@@ -597,9 +573,7 @@ function watchplayerexitrequestthread(player) {
 // Checksum 0x46b728be, Offset: 0x2818
 // Size: 0x410
 function private function_4d980695(isowner) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     level.ac130.occupied = 1;
     player util::setusingremote("ac130");
@@ -776,7 +750,7 @@ function function_8721028e(player, ownerleft, var_dbcb1965 = 0) {
         level.ac130 function_60d50ea4();
     }
     if (var_dbcb1965) {
-        var_15f570c1 = var_15f570c1 + vectorscale((0, 0, -1), 8000);
+        var_15f570c1 = var_15f570c1 + (0, 0, -8000);
     }
     level.ac130 thread helicopter::heli_leave(var_15f570c1, 1);
     level.ac130 thread audio::sndupdatevehiclecontext(0);
@@ -983,9 +957,7 @@ function function_cd679760(startnode, destnodes) {
     self endon(#"flying", #"crashing", #"leaving", #"death");
     bundle = getscriptbundle("killstreak_ac130");
     nextnode = getent(startnode.target, "targetname");
-    /#
-        assert(isdefined(nextnode), "<unknown string>");
-    #/
+    assert(isdefined(nextnode), "<unknown string>");
     self setspeed(150, 80);
     self setneargoalnotifydist(100);
     self setgoal(nextnode.origin + (0, 0, 0), 1);
@@ -1132,7 +1104,7 @@ function updateareanodes(areanodes, forcemove) {
         helinode = getent(node.target, "targetname");
         foreach (player in node.validplayers) {
             node.nodescore = node.nodescore + 1;
-            if (bullettracepassed(player.origin + vectorscale((0, 0, 1), 32), helinode.origin, 0, player)) {
+            if (bullettracepassed(player.origin + (0, 0, 32), helinode.origin, 0, player)) {
                 node.nodescore = node.nodescore + 3;
             }
         }
@@ -1161,7 +1133,7 @@ function traveltonode(goalnode) {
             heli_accel = 15 + randomint(15);
         }
         self setspeed(heli_speed, heli_accel);
-        self setgoal(originoffets[#"start"] + vectorscale((0, 0, 1), 30), 0);
+        self setgoal(originoffets[#"start"] + (0, 0, 30), 0);
         self setgoalyaw(goalnode.angles[1]);
         self waittill(#"goal");
     }
@@ -1174,7 +1146,7 @@ function traveltonode(goalnode) {
             heli_accel = 15 + randomint(15);
         }
         self setspeed(heli_speed, heli_accel);
-        self setgoal(originoffets[#"end"] + vectorscale((0, 0, 1), 30), 0);
+        self setgoal(originoffets[#"end"] + (0, 0, 30), 0);
         self setgoalyaw(goalnode.angles[1]);
         self waittill(#"goal");
     }
@@ -1189,18 +1161,16 @@ function getoriginoffsets(goalnode) {
     endorigin = goalnode.origin;
     numtraces = 0;
     maxtraces = 40;
-    traceoffset = vectorscale((0, 0, -1), 196);
+    traceoffset = (0, 0, -196);
     for (traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self); distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && numtraces < maxtraces; traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self)) {
-        /#
-            println("<unknown string>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
-        #/
+        println("<unknown string>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
         if (startorigin[2] < endorigin[2]) {
-            startorigin = startorigin + vectorscale((0, 0, 1), 128);
+            startorigin = startorigin + (0, 0, 128);
         } else if (startorigin[2] > endorigin[2]) {
-            endorigin = endorigin + vectorscale((0, 0, 1), 128);
+            endorigin = endorigin + (0, 0, 128);
         } else {
-            startorigin = startorigin + vectorscale((0, 0, 1), 128);
-            endorigin = endorigin + vectorscale((0, 0, 1), 128);
+            startorigin = startorigin + (0, 0, 128);
+            endorigin = endorigin + (0, 0, 128);
         }
         numtraces++;
     }
@@ -1235,7 +1205,7 @@ function function_3939b657(vehicle) {
             vehicle vehicle_ai::fire_for_time(2 + randomfloat(0.8), 0, enemy);
             vehicle vehicle_ai::fire_for_rounds(1, 1, enemy);
             vehicle turretcleartarget(0);
-            vehicle turretsettargetangles(0, vectorscale((1, 0, 0), 15));
+            vehicle turretsettargetangles(0, (15, 0, 0));
             if (isdefined(enemy)) {
                 wait(2 + randomfloat(0.5));
             }

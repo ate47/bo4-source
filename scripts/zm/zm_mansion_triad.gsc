@@ -355,7 +355,7 @@ function cleanup_step_3(var_5ea5c94d, ended_early) {
     var_a484bb88 = struct::get("kp1_end");
     var_febddc3e = struct::get("kp2_end");
     var_c0c5878c = struct::get("kp3_end");
-    v_stone = getent("stone_forest", "targetname").origin + vectorscale((0, 0, 1), 2);
+    v_stone = getent("stone_forest", "targetname").origin + (0, 0, 2);
     if (isdefined(level.var_fbcb1d5b)) {
         level.var_fbcb1d5b clientfield::set("" + #"wisp_fx", 1);
         level.var_fbcb1d5b stopanimscripted();
@@ -486,10 +486,9 @@ function kp_cleanup() {
 // Size: 0x1a0
 function function_55b79f54() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
-        if (!zm_utility::can_use(player) || isdefined(player.b_gazing) && player.b_gazing || isdefined(player.var_d049df11) && player.var_d049df11 || distancesquared(groundtrace(player.origin, player.origin + vectorscale((0, 0, -1), 128), 0, player)[#"position"], player.origin) > 16) {
+        if (!zm_utility::can_use(player) || isdefined(player.b_gazing) && player.b_gazing || isdefined(player.var_d049df11) && player.var_d049df11 || distancesquared(groundtrace(player.origin, player.origin + (0, 0, -128), 0, player)[#"position"], player.origin) > 16) {
             continue;
         }
         level thread mansion_pap::function_9e7129d2(player, self.stub.var_f0e6c7a2, 14, "triad");
@@ -536,7 +535,6 @@ function function_2aa04f9f() {
     self endon(self.script_noteworthy + "_done");
     self.t_dmg = spawn("trigger_damage", self.origin, 0, 46, 64);
     while (true) {
-        s_notify = undefined;
         s_notify = self.t_dmg waittill(#"damage");
         if (isplayer(s_notify.attacker) && mansion_util::is_shield(s_notify.weapon) && s_notify.mod === "MOD_MELEE" && isdefined(s_notify.attacker.is_blue) && s_notify.attacker.is_blue) {
             var_e4e66b68 = undefined;
@@ -699,7 +697,6 @@ function function_899525c7() {
 // Size: 0x128
 function function_566d3cd2() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::can_use(player)) {
@@ -735,7 +732,6 @@ function function_3c832025() {
 function function_40e665ab() {
     self endon(#"extinguish");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (!isplayer(waitresult.activator)) {
             continue;
@@ -758,7 +754,6 @@ function function_fb54ddba() {
     self thread function_4c8574b3();
     self clientfield::set("" + #"shield_fire", 1);
     while (isdefined(self.is_blue) && self.is_blue) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_change", #"shield_timeout");
         if (s_result._notify !== "weapon_change" || !mansion_util::is_shield(s_result.weapon)) {
             self notify(#"hash_459246e5bfcc3713");
@@ -785,7 +780,6 @@ function function_4c8574b3() {
 function function_265858d6() {
     level endon(#"hash_75774dc13775a414");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (zm_utility::can_use(player)) {
@@ -893,7 +887,7 @@ function function_d409a74f(mdl_symbol) {
             var_2f07de84 = self.var_7988eee5.origin + (randomintrange(60 * -1, 60), randomintrange(60 * -1, 60), 0);
             v_moveto = getclosestpointonnavmesh(var_2f07de84, 64, 16);
             if (isdefined(v_moveto)) {
-                v_moveto = v_moveto + vectorscale((0, 0, 1), 46);
+                v_moveto = v_moveto + (0, 0, 46);
                 n_dist = distance2dsquared(self.origin, v_moveto);
             }
         } else {
@@ -917,7 +911,7 @@ function function_d409a74f(mdl_symbol) {
         n_dist = undefined;
         wait(0.25);
     }
-    self moveto(mdl_symbol.origin + vectorscale((0, 0, 1), 46), 2);
+    self moveto(mdl_symbol.origin + (0, 0, 46), 2);
     self waittill(#"movedone");
     self notify(#"hash_6df5566461d13967");
     level flag::wait_till_all(array(#"knight_main_hall_stationed", #"knight_cemetery_stationed", #"knight_greenhouse_stationed"));
@@ -955,7 +949,7 @@ function function_7e316825() {
 function function_226e15cc() {
     level endon(#"hash_3a7ba7e53fa848e9");
     level flag::wait_till_all(array(#"knight_main_hall_stationed", #"knight_cemetery_stationed", #"knight_greenhouse_stationed"));
-    v_offset = vectorscale((0, 0, -1), 45);
+    v_offset = (0, 0, -45);
     level.var_abe1b67c moveto(level.var_abe1b67c.origin + v_offset, 0.25);
     level.var_fbcb1d5b moveto(level.var_fbcb1d5b.origin + v_offset, 0.25);
     level.var_c22f75e6 moveto(level.var_c22f75e6.origin + v_offset, 0.25);
@@ -1240,12 +1234,12 @@ function function_90cc31c4(s_goal, var_ea62e3e9, str_flag) {
     }
     self clientfield::set("" + #"wisp_fx", 1);
     self playsound(#"hash_20cc4a02f0ac5e7b");
-    self moveto(self.origin + vectorscale((0, 0, 1), 64), 0.25);
+    self moveto(self.origin + (0, 0, 64), 0.25);
     self waittill(#"movedone");
     self moveto(s_goal.origin, 3);
     self rotateto(s_goal.angles, 3);
     self waittill(#"movedone");
-    self moveto(s_goal.origin - vectorscale((0, 0, 1), 64), 0.25);
+    self moveto(s_goal.origin - (0, 0, 64), 0.25);
     self waittill(#"movedone");
     if (isdefined(var_ea62e3e9)) {
         namespace_617a54f4::function_3f808d3d(var_ea62e3e9);
@@ -1464,7 +1458,7 @@ function function_31e641f5() {
     self clientfield::set("" + #"stone_pickup", 1);
     wait(1);
     self.var_4c4f2b6 = self.angles;
-    self thread mansion_util::function_da5cd631(vectorscale((0, 1, 0), 180));
+    self thread mansion_util::function_da5cd631((0, 180, 0));
     level flag::set(#"forest_assault");
     zm_unitrigger::unregister_unitrigger(self.s_unitrigger);
 }
@@ -1490,7 +1484,7 @@ function function_6f244e() {
             n_time = function_de2561ce(self.origin, v_loc);
         }
         if (isdefined(n_time) && n_time > 0) {
-            self moveto(v_loc + vectorscale((0, 0, 1), 45), n_time);
+            self moveto(v_loc + (0, 0, 45), n_time);
             self waittill(#"movedone");
             wait(randomfloatrange(1.5, 2.5));
         }
@@ -1623,7 +1617,6 @@ function function_b646e75d() {
 function function_c9ebaa3() {
     level endon(#"hash_106bb5214b1fb1e6");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::can_use(player)) {
@@ -1642,7 +1635,7 @@ function function_c9ebaa3() {
 function function_78a99a79() {
     mdl_stone = getent("stone_forest", "targetname");
     if (isdefined(mdl_stone)) {
-        v_loc = mdl_stone.origin + vectorscale((0, 0, 1), 32);
+        v_loc = mdl_stone.origin + (0, 0, 32);
         mdl_stone clientfield::set("" + #"stone_pickup", 1);
         mdl_stone playsound(#"hash_6386a4b7daf03dea");
         mdl_stone thread util::delayed_delete(1);

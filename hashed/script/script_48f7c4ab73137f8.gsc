@@ -8,28 +8,14 @@
 // Method(s) 8 Total 15
 class czm_laststand_client : cluielem {
 
-    // Namespace czm_laststand_client/zm_laststand_client
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xb4e2efd1, Offset: 0x260
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_laststand_client/zm_laststand_client
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xa77e0280, Offset: 0x480
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_laststand_client/zm_laststand_client
     // Params 2, eflags: 0x1 linked
     // Checksum 0x2aa94ce6, Offset: 0x438
     // Size: 0x3c
     function set_num_downs(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "num_downs", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "num_downs", value);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
@@ -37,7 +23,7 @@ class czm_laststand_client : cluielem {
     // Checksum 0x31eb79ab, Offset: 0x3f0
     // Size: 0x3c
     function set_revive_progress(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "revive_progress", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "revive_progress", value);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
@@ -45,7 +31,7 @@ class czm_laststand_client : cluielem {
     // Checksum 0x7f8bce4f, Offset: 0x3a8
     // Size: 0x3c
     function set_bleedout_progress(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "bleedout_progress", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "bleedout_progress", value);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client

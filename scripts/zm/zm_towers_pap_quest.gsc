@@ -369,7 +369,6 @@ function function_199b1814(str_tower, str_encounter) {
     var_190d5d80 thread scene::init("p8_fxanim_zm_towers_challenge_gong_bundle", var_190d5d80);
     b_triggered = 0;
     while (!b_triggered) {
-        waitresult = undefined;
         waitresult = t_trigger waittill(#"trigger");
         if (!level flag::get(#"hash_798d51388d6e10f4")) {
             b_triggered = 1;
@@ -524,7 +523,6 @@ function function_199b1814(str_tower, str_encounter) {
             wait(1);
         }
     }
-    s_waitresult = undefined;
     s_waitresult = level waittill(#"hash_2ea1048758a3ff14");
     v_origin = s_waitresult.v_origin;
     var_7246d429 = s_waitresult.var_7246d429;
@@ -663,7 +661,7 @@ function function_f18e2775() {
 // Checksum 0xa613b9ad, Offset: 0x39c0
 // Size: 0x3d2
 function drop_head(v_origin, str_tower, var_5570d8de) {
-    v_position = v_origin + vectorscale((0, 0, 1), 40);
+    v_position = v_origin + (0, 0, 40);
     str_head = #"c_t8_zmb_dlc0_zombie_corpse_head_2";
     str_encounter = get_encounter(str_tower);
     b_both = 0;
@@ -685,7 +683,7 @@ function drop_head(v_origin, str_tower, var_5570d8de) {
         str_head = #"hash_7046550bbfeaf740";
         break;
     }
-    var_483b8a0 = util::spawn_model(str_head, v_position, vectorscale((1, 0, 0), 270));
+    var_483b8a0 = util::spawn_model(str_head, v_position, (270, 0, 0));
     var_483b8a0 clientfield::set("zombie_head_pickup_glow", 1);
     if (!var_5570d8de) {
         switch (str_tower) {
@@ -703,7 +701,7 @@ function drop_head(v_origin, str_tower, var_5570d8de) {
             break;
         }
         s_point = struct::get(str_backup);
-        var_a0fca4e1 = s_point.origin + vectorscale((0, 0, 1), 40);
+        var_a0fca4e1 = s_point.origin + (0, 0, 40);
         var_483b8a0 moveto(var_a0fca4e1, 2);
     }
     var_483b8a0 thread zm_towers_util::function_48f49769();
@@ -898,7 +896,6 @@ function function_7590a833() {
         t_trigger sethintstring(#"hash_50fc385a94b3d3f");
     }
     while (true) {
-        s_notify = undefined;
         s_notify = t_trigger waittill(#"trigger");
         e_player = s_notify.activator;
         if (isplayer(e_player)) {

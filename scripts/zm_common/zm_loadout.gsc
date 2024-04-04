@@ -135,9 +135,7 @@ function function_54cb37a4(weapon) {
     primaryweapons = self getweaponslistprimaries();
     initial_current_weapon = self getcurrentweapon();
     current_weapon = self zm_weapons::switch_from_alt_weapon(initial_current_weapon);
-    /#
-        assert(self zm_weapons::player_can_use_content(weapon));
-    #/
+    assert(self zm_weapons::player_can_use_content(weapon));
     weapon_limit = zm_utility::get_player_weapon_limit(self);
     if (isdefined(weapon.craftitem) && weapon.craftitem) {
         zm_items::player_pick_up(self, weapon);

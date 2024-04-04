@@ -320,9 +320,7 @@ function function_c44636f2(b_ignore_cleanup = 1) {
     }
     level.var_1ba6a97c = 1;
     level.var_8167b1e = b_ignore_cleanup;
-    /#
-        assert(isdefined(level.var_807ffa2e));
-    #/
+    assert(isdefined(level.var_807ffa2e));
     level thread [[ level.var_807ffa2e ]]();
 }
 

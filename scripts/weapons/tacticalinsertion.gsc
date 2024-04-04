@@ -28,7 +28,7 @@ function istacspawntouchingcrates(origin, angles) {
     mins = (-17, -17, -40);
     maxs = (17, 17, 40);
     for (i = 0; i < crate_ents.size; i++) {
-        if (crate_ents[i] istouchingvolume(origin + vectorscale((0, 0, 1), 40), mins, maxs)) {
+        if (crate_ents[i] istouchingvolume(origin + (0, 0, 40), mins, maxs)) {
             return true;
         }
     }
@@ -93,7 +93,6 @@ function watch(player) {
 function watchusetrigger(trigger, callback, playersoundonuse, npcsoundonuse) {
     self endon(#"delete");
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         player = waitresult.activator;
         if (!isalive(player)) {
@@ -213,7 +212,7 @@ function spawntacticalinsertion() {
     }
     triggerheight = 64;
     triggerradius = 128;
-    self.tacticalinsertion.friendlytrigger = spawn("trigger_radius_use", self.tacticalinsertion.origin + vectorscale((0, 0, 1), 3));
+    self.tacticalinsertion.friendlytrigger = spawn("trigger_radius_use", self.tacticalinsertion.origin + (0, 0, 3));
     self.tacticalinsertion.friendlytrigger setcursorhint("HINT_NOICON", self.tacticalinsertion);
     self.tacticalinsertion.friendlytrigger sethintstring(#"hash_83435f76ff5897f");
     if (level.teambased) {
@@ -222,7 +221,7 @@ function spawntacticalinsertion() {
     }
     self clientclaimtrigger(self.tacticalinsertion.friendlytrigger);
     self.tacticalinsertion.friendlytrigger.claimedby = self;
-    self.tacticalinsertion.enemytrigger = spawn("trigger_radius_use", self.tacticalinsertion.origin + vectorscale((0, 0, 1), 3));
+    self.tacticalinsertion.enemytrigger = spawn("trigger_radius_use", self.tacticalinsertion.origin + (0, 0, 3));
     self.tacticalinsertion.enemytrigger setcursorhint("HINT_NOICON", self.tacticalinsertion);
     self.tacticalinsertion.enemytrigger sethintstring(#"hash_225043ec880f05f");
     self.tacticalinsertion.enemytrigger setinvisibletoplayer(self);
@@ -243,7 +242,6 @@ function spawntacticalinsertion() {
     self.tacticalinsertion setcandamage(1);
     self.tacticalinsertion.health = 1;
     while (true) {
-        waitresult = undefined;
         waitresult = self.tacticalinsertion waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;
@@ -290,7 +288,6 @@ function cancel_button_think() {
         text = cancel_text_create();
     #/
     self thread cancel_button_press();
-    event = undefined;
     event = self waittill(#"tactical_insertion_destroyed", #"disconnect", #"end_killcam", #"abort_killcam", #"tactical_insertion_canceled", #"spawned");
     if (event._notify == "tactical_insertion_canceled") {
         self.tacticalinsertion destroy_tactical_insertion();

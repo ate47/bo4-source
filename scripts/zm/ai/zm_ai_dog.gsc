@@ -48,35 +48,19 @@ function function_b9d56970() {
 // Size: 0x36c
 function registerbehaviorscriptfunctions() {
     spawner::add_archetype_spawn_function(#"zombie_dog", &archetypezombiedogblackboardinit);
-    /#
-        assert(isscriptfunctionptr(&zombiedogtargetservice));
-    #/
+    assert(isscriptfunctionptr(&zombiedogtargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiedogtargetservice", &zombiedogtargetservice, 1);
-    /#
-        assert(isscriptfunctionptr(&function_5e50d260));
-    #/
+    assert(isscriptfunctionptr(&function_5e50d260));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_29b43f0d0b6bd4e2", &function_5e50d260, 2);
-    /#
-        assert(isscriptfunctionptr(&zombiedogshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&zombiedogshouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiedogshouldmelee", &zombiedogshouldmelee);
-    /#
-        assert(isscriptfunctionptr(&zombiedogshouldwalk));
-    #/
+    assert(isscriptfunctionptr(&zombiedogshouldwalk));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiedogshouldwalk", &zombiedogshouldwalk);
-    /#
-        assert(isscriptfunctionptr(&zombiedogshouldrun));
-    #/
+    assert(isscriptfunctionptr(&zombiedogshouldrun));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zombiedogshouldrun", &zombiedogshouldrun);
-    /#
-        assert(!isdefined(&zombiedogmeleeaction) || isscriptfunctionptr(&zombiedogmeleeaction));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&zombiedogmeleeactionterminate) || isscriptfunctionptr(&zombiedogmeleeactionterminate));
-    #/
+    assert(!isdefined(&zombiedogmeleeaction) || isscriptfunctionptr(&zombiedogmeleeaction));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&zombiedogmeleeactionterminate) || isscriptfunctionptr(&zombiedogmeleeactionterminate));
     behaviortreenetworkutility::registerbehaviortreeaction("zombieDogMeleeAction", &zombiedogmeleeaction, undefined, &zombiedogmeleeactionterminate);
     zm_ai_dog_interface::registerzombiedoginterfaceattributes();
 }
@@ -149,9 +133,7 @@ function getyaw(org) {
 // Checksum 0x277ea56d, Offset: 0x8b8
 // Size: 0x92
 function absyawtoenemy() {
-    /#
-        assert(isdefined(self.enemy));
-    #/
+    assert(isdefined(self.enemy));
     yaw = self.angles[1] - getyaw(self.enemy.origin);
     yaw = angleclamp180(yaw);
     if (yaw < 0) {

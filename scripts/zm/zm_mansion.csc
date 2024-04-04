@@ -403,7 +403,7 @@ function function_328d64bd(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         v_forward = anglestoforward(self.angles);
         self.blocker_fx = playfx(localclientnum, level._effect[#"hash_1a4566b6595544b4"], self.origin, v_forward);
-        a_trace = bullettrace(self.origin, self.origin - vectorscale((0, 0, 1), 512), 0, self);
+        a_trace = bullettrace(self.origin, self.origin - (0, 0, 512), 0, self);
         self.var_3fc27ef3 = playfx(localclientnum, level._effect[#"hash_1a46c58a5032bb15"], a_trace[#"position"], v_forward);
         if (!isdefined(self.var_99a9007b)) {
             self playsound(localclientnum, #"hash_2c71df73b17cd28a");

@@ -198,9 +198,7 @@ function private bgb_finalize() {
         v.stat_index = isdefined(var_ddcb67f4) && isdefined(var_ddcb67f4.var_2f8e25b8) ? var_ddcb67f4.var_2f8e25b8 : 0;
         var_5415dfb9 = function_b143666d(v.item_index, 2);
         if (!isdefined(var_ddcb67f4) || !isdefined(var_5415dfb9)) {
-            /#
-                println("<unknown string>" + v.name + "<unknown string>");
-            #/
+            println("<unknown string>" + v.name + "<unknown string>");
             continue;
         }
         if (!isdefined(var_5415dfb9.bgbrarity)) {
@@ -224,7 +222,6 @@ function private bgb_finalize() {
 function private bgb_player_monitor() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"between_round_over", #"restart_round");
         str_return = waitresult._notify;
         if (isdefined(level.var_b77403b9)) {
@@ -433,7 +430,6 @@ function private function_b331a28c(bgb) {
         return;
     }
     self val::set(#"bgb_activation", "takedamage", 0);
-    s_result = undefined;
     s_result = self waittilltimeout(2, #"bgb_bubble_blow_complete");
     if (isdefined(self)) {
         self val::reset(#"bgb_activation", "takedamage");
@@ -486,7 +482,6 @@ function bgb_gumball_anim(bgb) {
     while (self isswitchingweapons()) {
         waitframe(1);
     }
-    evt = undefined;
     evt = self waittilltimeout(3, #"hash_593f920e9efd2ecd", #"bgb_gumball_anim_give");
     if (isdefined(evt) && evt.bgb === bgb) {
         if (evt._notify == #"bgb_gumball_anim_give") {
@@ -689,9 +684,7 @@ function private bgb_limit_monitor() {
         self playsoundtoplayer(#"hash_b8e60131176554b", self);
         break;
     default:
-        /#
-            assert(0, "<unknown string>" + self.bgb + "<unknown string>" + level.bgb[self.bgb].limit_type + "<unknown string>");
-        #/
+        assert(0, "<unknown string>" + self.bgb + "<unknown string>" + level.bgb[self.bgb].limit_type + "<unknown string>");
         break;
     }
     self thread take();
@@ -991,53 +984,27 @@ function clear_timer() {
 // Checksum 0x9a63e2f5, Offset: 0x3958
 // Size: 0x54e
 function register(name, limit_type, limit, enable_func, disable_func, validation_func, activation_func) {
-    /#
-        assert(isdefined(name), "<unknown string>");
-    #/
-    /#
-        assert(#"none" != name, "<unknown string>" + #"none" + "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(limit_type), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(limit), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(enable_func) || isfunctionptr(enable_func), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(disable_func) || isfunctionptr(disable_func), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(name), "<unknown string>");
+    assert(#"none" != name, "<unknown string>" + #"none" + "<unknown string>");
+    assert(!isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(limit_type), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(limit), "<unknown string>" + name + "<unknown string>");
+    assert(!isdefined(enable_func) || isfunctionptr(enable_func), "<unknown string>" + name + "<unknown string>");
+    assert(!isdefined(disable_func) || isfunctionptr(disable_func), "<unknown string>" + name + "<unknown string>");
     switch (limit_type) {
     case #"activated":
-        /#
-            assert(!isdefined(validation_func) || isfunctionptr(validation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        #/
-        /#
-            assert(isdefined(activation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        #/
-        /#
-            assert(isfunctionptr(activation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        #/
+        assert(!isdefined(validation_func) || isfunctionptr(validation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
+        assert(isdefined(activation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
+        assert(isfunctionptr(activation_func), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
     case #"time":
     case #"rounds":
-        /#
-            assert(isint(limit), "<unknown string>" + name + "<unknown string>" + limit + "<unknown string>" + limit_type + "<unknown string>");
-        #/
+        assert(isint(limit), "<unknown string>" + name + "<unknown string>" + limit + "<unknown string>" + limit_type + "<unknown string>");
         break;
     case #"event":
-        /#
-            assert(isfunctionptr(limit), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        #/
+        assert(isfunctionptr(limit), "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
         break;
     default:
-        /#
-            assert(0, "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
-        #/
+        assert(0, "<unknown string>" + name + "<unknown string>" + limit_type + "<unknown string>");
         break;
     }
     level.bgb[name] = spawnstruct();
@@ -1059,9 +1026,7 @@ function register(name, limit_type, limit, enable_func, disable_func, validation
 // Checksum 0x34b09894, Offset: 0x3eb0
 // Size: 0x72
 function register_actor_damage_override(name, actor_damage_override_func) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].actor_damage_override_func = actor_damage_override_func;
 }
 
@@ -1070,9 +1035,7 @@ function register_actor_damage_override(name, actor_damage_override_func) {
 // Checksum 0xc00e77fc, Offset: 0x3f30
 // Size: 0x72
 function register_vehicle_damage_override(name, vehicle_damage_override_func) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].vehicle_damage_override_func = vehicle_damage_override_func;
 }
 
@@ -1081,9 +1044,7 @@ function register_vehicle_damage_override(name, vehicle_damage_override_func) {
 // Checksum 0x49aacfd, Offset: 0x3fb0
 // Size: 0x72
 function register_actor_death_override(name, actor_death_override_func) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].actor_death_override_func = actor_death_override_func;
 }
 
@@ -1092,9 +1053,7 @@ function register_actor_death_override(name, actor_death_override_func) {
 // Checksum 0xc912ab30, Offset: 0x4030
 // Size: 0x96
 function register_lost_perk_override(name, lost_perk_override_func, lost_perk_override_func_always_run) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].lost_perk_override_func = lost_perk_override_func;
     level.bgb[name].lost_perk_override_func_always_run = lost_perk_override_func_always_run;
 }
@@ -1104,9 +1063,7 @@ function register_lost_perk_override(name, lost_perk_override_func, lost_perk_ov
 // Checksum 0x20357908, Offset: 0x40d0
 // Size: 0x96
 function function_c2721e81(name, add_to_player_score_override_func, add_to_player_score_override_func_always_run) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].add_to_player_score_override_func = add_to_player_score_override_func;
     level.bgb[name].add_to_player_score_override_func_always_run = add_to_player_score_override_func_always_run;
 }
@@ -1116,9 +1073,7 @@ function function_c2721e81(name, add_to_player_score_override_func, add_to_playe
 // Checksum 0xe908a2f1, Offset: 0x4170
 // Size: 0x72
 function function_72469efe(name, var_50206ca3) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_50206ca3 = var_50206ca3;
 }
 
@@ -1127,9 +1082,7 @@ function function_72469efe(name, var_50206ca3) {
 // Checksum 0x120462c4, Offset: 0x41f0
 // Size: 0x72
 function function_8a5d8cfb(name, var_f1f46d6b) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_f1f46d6b = var_f1f46d6b;
 }
 
@@ -1138,9 +1091,7 @@ function function_8a5d8cfb(name, var_f1f46d6b) {
 // Checksum 0x9ffe911c, Offset: 0x4270
 // Size: 0x72
 function function_be42abb0(name, var_f8d9ac8c) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_f8d9ac8c = var_f8d9ac8c;
 }
 
@@ -1149,9 +1100,7 @@ function function_be42abb0(name, var_f8d9ac8c) {
 // Checksum 0xc33da3ba, Offset: 0x42f0
 // Size: 0x6a
 function function_afe7b8e7(name) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_5a047886 = 1;
 }
 
@@ -1160,9 +1109,7 @@ function function_afe7b8e7(name) {
 // Checksum 0x6a2eeee8, Offset: 0x4368
 // Size: 0x6a
 function function_e1f37ce7(name) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_4a9b0cdc = 1;
 }
 
@@ -1171,12 +1118,8 @@ function function_e1f37ce7(name) {
 // Checksum 0x1cc868df, Offset: 0x43e0
 // Size: 0xa2
 function function_1fee6b3(name, n_rank) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(n_rank), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(n_rank), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_a1750d43 = n_rank;
 }
 
@@ -1189,9 +1132,7 @@ function give(name) {
     if (#"none" == name) {
         return;
     }
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     self notify(#"bgb_update", {#var_3aee8e4:name, #var_826ddd38:self.bgb});
     self notify("bgb_update_give_" + name);
     self.bgb = name;
@@ -1245,9 +1186,7 @@ function get_enabled() {
 // Checksum 0x4f686d15, Offset: 0x4858
 // Size: 0x58
 function is_enabled(name) {
-    /#
-        assert(isdefined(self.bgb));
-    #/
+    assert(isdefined(self.bgb));
     if (!isdefined(self) || !isdefined(self.bgb)) {
         return false;
     }
@@ -1259,9 +1198,7 @@ function is_enabled(name) {
 // Checksum 0x5b044e23, Offset: 0x48b8
 // Size: 0x3c
 function any_enabled() {
-    /#
-        assert(isdefined(self.bgb));
-    #/
+    assert(isdefined(self.bgb));
     return self.bgb !== #"none";
 }
 
@@ -1271,9 +1208,7 @@ function any_enabled() {
 // Size: 0xb4
 function is_team_enabled(bgb_name) {
     foreach (player in util::get_players()) {
-        /#
-            assert(isdefined(player.bgb));
-        #/
+        assert(isdefined(player.bgb));
         if (player.bgb === bgb_name) {
             return true;
         }
@@ -1286,7 +1221,7 @@ function is_team_enabled(bgb_name) {
 // Checksum 0x29fd684e, Offset: 0x49c0
 // Size: 0x88
 function get_player_dropped_powerup_origin() {
-    powerup_origin = self.origin + vectorscale(anglestoforward((0, self getplayerangles()[1], 0)), 60) + vectorscale((0, 0, 1), 5);
+    powerup_origin = self.origin + vectorscale(anglestoforward((0, self getplayerangles()[1], 0)), 60) + (0, 0, 5);
     self zm_stats::increment_challenge_stat(#"gum_gobbler_powerups");
     return powerup_origin;
 }
@@ -1564,7 +1499,6 @@ function function_bd839f2c(e_reviver, var_84280a99) {
 function bgb_revive_watcher() {
     self endon(#"disconnect", #"death");
     self.var_bdeb0f02 = 1;
-    waitresult = undefined;
     waitresult = self waittill(#"player_revived");
     e_reviver = waitresult.reviver;
     waitframe(1);

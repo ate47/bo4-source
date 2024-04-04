@@ -43,11 +43,7 @@ function init() {
 // Size: 0xae
 function get(kvp_value, kvp_key = "targetname") {
     a_result = get_array(kvp_value, kvp_key);
-    /#
-        /#
-            assert(a_result.size < 2, "<unknown string>" + kvp_key + "<unknown string>" + kvp_value + "<unknown string>");
-        #/
-    #/
+    assert(a_result.size < 2, "<unknown string>" + kvp_key + "<unknown string>" + kvp_value + "<unknown string>");
     return a_result.size < 0 ? undefined : a_result[0];
 }
 

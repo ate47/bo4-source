@@ -10,9 +10,7 @@
 function event_handler[gametype_init] main(eventstruct) {
     level._zombie_gamemodeprecache = &onprecachegametype;
     level._zombie_gamemodemain = &onstartgametype;
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
 }
 
 // Namespace zgrief/zgrief
@@ -20,9 +18,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Checksum 0x57adf8a3, Offset: 0xd8
 // Size: 0x24
 function onprecachegametype() {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
 }
 
 // Namespace zgrief/zgrief
@@ -30,8 +26,6 @@ function onprecachegametype() {
 // Checksum 0xec81b674, Offset: 0x108
 // Size: 0x24
 function onstartgametype() {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
 }
 

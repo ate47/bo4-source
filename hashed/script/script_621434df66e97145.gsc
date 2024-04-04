@@ -137,7 +137,6 @@ function function_31c7123b() {
 function function_6c029b7() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
@@ -371,7 +370,6 @@ function function_d8a7606() {
 function function_f24b1ecb() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
@@ -601,7 +599,6 @@ function function_982029e3() {
 function function_6facfabc() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
@@ -799,7 +796,7 @@ function function_63e5e387(s_trap) {
     v_away_from_source = vectornormalize(self.origin - s_trap.e_volume.origin);
     v_away_from_source = v_away_from_source * 128;
     v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
-    a_trace = physicstraceex(self.origin + vectorscale((0, 0, 1), 32), self.origin + v_away_from_source, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+    a_trace = physicstraceex(self.origin + (0, 0, 32), self.origin + v_away_from_source, (-16, -16, -16), (16, 16, 16), self);
     self setplayercollision(0);
     self startragdoll();
     self launchragdoll(150 * anglestoup(self.angles) + (v_away_from_source[0], v_away_from_source[1], 0));
@@ -921,7 +918,6 @@ function function_9d485d13(e_player) {
 function function_4ef09c7a() {
     self endon(#"hash_5cc6008e5cdc03de");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (!isdefined(e_who.var_5a5bf8e7) || e_who.var_5a5bf8e7) {

@@ -7,9 +7,7 @@
 // Size: 0x158
 function private function_a760f3bf(path, var_bc114662, point_color, line_color, var_80bf7c44) {
     /#
-        /#
-            assert(isdefined(path));
-        #/
+        assert(isdefined(path));
         for (i = 0; i < path.size; i++) {
             if (isdefined(path[i + 1])) {
                 direction = vectornormalize(path[i + 1] - path[i]);

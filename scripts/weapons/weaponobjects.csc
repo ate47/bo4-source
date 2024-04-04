@@ -310,7 +310,6 @@ function playflarefx(localclientnum) {
 // Checksum 0xfe14d8a8, Offset: 0x1150
 // Size: 0xbc
 function equipmentwatchteamfx(localclientnum, fxhandle) {
-    msg = undefined;
     msg = self waittill(#"death", #"team_changed", #"player_switch");
     if (isdefined(fxhandle)) {
         stopfx(localclientnum, fxhandle);
@@ -331,7 +330,6 @@ function equipmentwatchplayerteamchanged(localclientnum, fxhandle) {
     self endon(#"team_changed_watcher");
     watcherplayer = function_5c10bd79(localclientnum);
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"team_changed");
         player = function_5c10bd79(waitresult.localclientnum);
         if (watcherplayer == player) {

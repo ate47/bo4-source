@@ -83,9 +83,7 @@ function find_loadout_slot(weapon) {
 // Size: 0xb6
 function function_18a77b37(slot_index) {
     if (function_87bcb1b() && isdefined(self) && isdefined(self.pers) && isdefined(self.pers[#"loadout"])) {
-        /#
-            assert(isdefined(self.pers[#"loadout"].slots[slot_index]));
-        #/
+        assert(isdefined(self.pers[#"loadout"].slots[slot_index]));
         return self.pers[#"loadout"].slots[slot_index].weapon;
     }
     return undefined;
@@ -96,15 +94,9 @@ function function_18a77b37(slot_index) {
 // Checksum 0x88afce81, Offset: 0x538
 // Size: 0xbe
 function function_442539(slot_index, weapon) {
-    /#
-        assert(isdefined(self.pers[#"loadout"].slots[slot_index]));
-    #/
-    /#
-        assert(isplayer(self));
-    #/
-    /#
-        assert(isdefined(weapon));
-    #/
+    assert(isdefined(self.pers[#"loadout"].slots[slot_index]));
+    assert(isplayer(self));
+    assert(isdefined(weapon));
     self.pers[#"loadout"].slots[slot_index].weapon = weapon;
 }
 

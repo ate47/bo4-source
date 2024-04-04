@@ -306,7 +306,6 @@ function insanity_mode_step2_setup(var_5ea5c94d) {
         level thread namespace_7d8e6ec3::function_5fbede7a();
         var_7a5bbd26 = getent("insanity_mode_damage_trigger", "targetname");
         while (true) {
-            waitresult = undefined;
             waitresult = var_7a5bbd26 waittill(#"damage");
             if (waitresult.weapon == getweapon(#"bowie_knife_story_1")) {
                 level thread namespace_7d8e6ec3::function_60f15ca8();
@@ -395,7 +394,6 @@ function timer_countdown() {
 // Size: 0xcc
 function function_3d4b148b() {
     while (level.var_c2511d7b.size > 0) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         arrayremovevalue(level.var_c2511d7b, s_waitresult.e_who);
         /#

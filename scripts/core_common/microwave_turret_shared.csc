@@ -48,7 +48,6 @@ function turret_microwave_sound_start(localclientnum) {
 // Checksum 0xaec8ab09, Offset: 0x500
 // Size: 0xbe
 function turret_microwave_sound_off_waiter(localclientnum) {
-    msg = undefined;
     msg = self waittill(#"sound_stop", #"death");
     if (msg === "sound_stop") {
         playsound(0, #"wpn_micro_turret_stop", self.microwave_audio_start);
@@ -307,7 +306,7 @@ function stop_or_start_fx(localclientnum, fxname, tag, start) {
         self play_fx_on_tag(localclientnum, fxname, tag);
         /#
             if (fxname == "<unknown string>") {
-                render_debug_sphere(tag, vectorscale((1, 1, 0), 0.5), fxname);
+                render_debug_sphere(tag, (0.5, 0.5, 0), fxname);
             } else {
                 render_debug_sphere(tag, (0, 1, 0), fxname);
             }

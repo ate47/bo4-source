@@ -105,7 +105,7 @@ function init() {
     level.a_e_canister = struct::get_array("toast_capture_point", "targetname");
     foreach (canister in level.a_e_canister) {
         canister thread function_ffa1c335();
-        canister.fx_handle = util::spawn_model("tag_origin", canister.origin + vectorscale((0, 0, -1), 56));
+        canister.fx_handle = util::spawn_model("tag_origin", canister.origin + (0, 0, -56));
         if (canister.script_int === 1 && canister.script_noteworthy != "cp_toast_apd") {
             canister function_8c2bda65(1, 0);
         }
@@ -757,7 +757,6 @@ function function_c6c9b014(e_player) {
     self endon(#"death");
     level endon(#"end_game");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!isdefined(player)) {
@@ -871,7 +870,6 @@ function function_abb0b62() {
     while (true) {
         wait(randomintrangeinclusive(5, 10));
         b_spoke = 0;
-        s_results = undefined;
         s_results = level waittill(#"hash_7edbeeb2b6f53bfe");
         e_player = s_results.e_player;
         if (!var_51f3793d) {
@@ -908,7 +906,6 @@ function function_1cc4b08e() {
     while (true) {
         wait(randomintrangeinclusive(5, 10));
         b_spoke = 0;
-        s_results = undefined;
         s_results = level waittill(#"hash_3a603bc69204f012");
         if (isdefined(level.e_avogadro)) {
             if (level.e_avogadro zm_audio::can_speak()) {
@@ -931,7 +928,6 @@ function function_927c0f2e() {
     level endon(#"game_ended", #"avog_captured");
     while (true) {
         b_spoke = 0;
-        s_results = undefined;
         s_results = level waittill(#"hash_4cbbb6dfc789393f");
         if (isdefined(level.e_avogadro)) {
             players = getplayers();
@@ -971,7 +967,6 @@ function function_8149ceff() {
     level endon(#"game_ended", #"avog_captured");
     while (true) {
         b_spoke = 0;
-        s_results = undefined;
         s_results = level waittill(#"hash_498ebb296003fd76");
         if (isdefined(level.e_avogadro)) {
             players = getplayers();
@@ -1285,7 +1280,6 @@ function function_80a202c1(e_player) {
 function function_dbbdda4c(e_player) {
     level endon(#"end_game");
     while (!self.charged) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         if (level flag::get(#"hash_56dcbeaf295dd09e")) {
             waitframe(1);

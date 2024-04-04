@@ -409,7 +409,7 @@ function waitanddetonate(object, delay, attacker, weapon) {
     if (isempdetonated && object.weapon.doempdestroyfx) {
         object.stun_fx = 1;
         randangle = randomfloat(360);
-        playfx(level._equipment_emp_destroy_fx, object.origin + vectorscale((0, 0, 1), 5), (cos(randangle), sin(randangle), 0), anglestoup(object.angles));
+        playfx(level._equipment_emp_destroy_fx, object.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(object.angles));
         empfxdelay = 1.1;
     }
     if (isdefined(object.var_cea6a2fb)) {
@@ -506,9 +506,7 @@ function detonateweaponobjectarray(forcedetonation, weapon) {
 // Size: 0x7c
 function addweaponobjecttowatcher(watchername, weapon_instance) {
     watcher = getweaponobjectwatcher(watchername);
-    /#
-        assert(isdefined(watcher), "<unknown string>" + watchername + "<unknown string>");
-    #/
+    assert(isdefined(watcher), "<unknown string>" + watchername + "<unknown string>");
     self addweaponobject(watcher, weapon_instance);
 }
 
@@ -688,7 +686,6 @@ function weaponobjectdamage(watcher) {
     self.damagetaken = 0;
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;
@@ -764,7 +761,6 @@ function watchobjectdamage(owner) {
     owner endon(#"death");
     self endon(#"hacked", #"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.attacker) && isplayer(waitresult.attacker) && waitresult.attacker != owner) {
             self.playdialog = 1;
@@ -820,7 +816,7 @@ function weaponstun() {
     self endon(#"death", #"not_stunned");
     origin = self gettagorigin("tag_fx");
     if (!isdefined(origin)) {
-        origin = self.origin + vectorscale((0, 0, 1), 10);
+        origin = self.origin + (0, 0, 10);
     }
     self.stun_fx = spawn("script_model", origin);
     self.stun_fx setmodel(#"tag_origin");
@@ -864,7 +860,7 @@ function weaponobjectfizzleout() {
 function function_f245df1e() {
     self endon(#"death");
     randangle = randomfloat(360);
-    playfx(level._equipment_emp_destroy_fx, self.origin + vectorscale((0, 0, 1), 5), (cos(randangle), sin(randangle), 0), anglestoup(self.angles));
+    playfx(level._equipment_emp_destroy_fx, self.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(self.angles));
     wait(1.1);
     deleteent();
 }
@@ -1278,10 +1274,8 @@ function watchweaponobjectspawn(notify_type, endonnotify = undefined) {
     self endon(#"watchweaponobjectspawn", #"disconnect");
     while (true) {
         if (isdefined(notify_type)) {
-            waitresult = undefined;
             waitresult = self waittill(notify_type);
         } else {
-            waitresult = undefined;
             waitresult = self waittill(#"grenade_fire", #"grenade_launcher_fire", #"missile_fire", #"placeables_plant");
         }
         weapon_instance = waitresult.projectile;
@@ -1358,7 +1352,7 @@ function proximityalarmweaponobjectdebug(watcher) {
         if (!isdefined(self)) {
             return;
         }
-        self thread proximitysphere(self.origin, self.weapon.proximityalarminnerradius, vectorscale((0, 1, 0), 0.75), self.weapon.proximityalarmouterradius, vectorscale((0, 1, 0), 0.75));
+        self thread proximitysphere(self.origin, self.weapon.proximityalarminnerradius, (0, 0.75, 0), self.weapon.proximityalarmouterradius, (0, 0.75, 0));
     #/
 }
 
@@ -1449,7 +1443,7 @@ function weaponobjectdetectiontrigger_wait(ownerteam) {
 // Checksum 0x81e45b89, Offset: 0x4e08
 // Size: 0x12c
 function weaponobjectdetectiontrigger(ownerteam) {
-    trigger = spawn("trigger_radius", self.origin - vectorscale((0, 0, 1), 128), 0, 512, 256);
+    trigger = spawn("trigger_radius", self.origin - (0, 0, 128), 0, 512, 256);
     trigger.detectid = "trigger" + gettime() + randomint(1000000);
     trigger sethintlowpriority(1);
     self waittill(#"death", #"hacked", #"detonating");
@@ -1468,9 +1462,7 @@ function weaponobjectdetectiontrigger(ownerteam) {
 // Size: 0x138
 function hackertriggersetvisibility(owner) {
     self endon(#"death");
-    /#
-        assert(isplayer(owner));
-    #/
+    assert(isplayer(owner));
     ownerteam = owner.pers[#"team"];
     for (;;) {
         if (level.teambased) {
@@ -1515,7 +1507,6 @@ function private set_hint_string(hint_string, default_string) {
 // Size: 0x1d4
 function hackerinit(watcher) {
     self thread hackernotmoving();
-    event = undefined;
     event = self waittill(#"death", #"landed");
     if (event._notify == "death") {
         return;
@@ -1545,7 +1536,6 @@ function hackerthink(trigger, watcher) {
     self endon(#"death");
     trigger endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         if (!isdefined(waitresult.is_instant) && !trigger hackerresult(waitresult.activator, self.owner)) {
             continue;
@@ -1945,7 +1935,6 @@ function proximityweaponobjectdetonation(s_watcher) {
     proximityweaponobject_activationdelay(s_watcher);
     var_6e4025f7 = proximityweaponobject_createdamagearea(s_watcher);
     while (true) {
-        waitresult = undefined;
         waitresult = var_6e4025f7 waittill(#"trigger");
         ent = waitresult.activator;
         if (!proximityweaponobject_validtriggerentity(s_watcher, ent)) {
@@ -1972,7 +1961,7 @@ function shouldaffectweaponobject(object, watcher) {
     if (radius != 0 && radius * radius < distancesqr) {
         return false;
     }
-    pos = self.origin + vectorscale((0, 0, 1), 32);
+    pos = self.origin + (0, 0, 32);
     if (isdefined(watcher.ignoredirection)) {
         return true;
     }
@@ -2188,7 +2177,6 @@ function function_d831baf0(trigger, callback, playersoundonuse, npcsoundonuse) {
     self endon(#"death", #"explode", #"hacked");
     trigger endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         player = waitresult.activator;
         if (!isalive(player)) {
@@ -2357,7 +2345,7 @@ function function_23b0aea9(watcher, player) {
                 triggerparentent = self;
                 self unlink();
                 self.angles = self.oldangles;
-                self launch(vectorscale((1, 1, 1), 5));
+                self launch((5, 5, 5));
                 self util::waittillnotmoving();
                 waittillframeend();
             } else {
@@ -2371,7 +2359,7 @@ function function_23b0aea9(watcher, player) {
         return;
     }
     if (isdefined(triggerparentent)) {
-        triggerorigin = triggerparentent.origin + vectorscale((0, 0, 1), 10);
+        triggerorigin = triggerparentent.origin + (0, 0, 10);
     } else {
         up = anglestoup(self.angles);
         triggerorigin = self.origin + up;
@@ -2591,7 +2579,6 @@ function watchusetrigger(trigger, callback, playersoundonuse, npcsoundonuse, cal
     self endon(#"death", #"delete");
     trigger endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         player = waitresult.activator;
         if (isdefined(self.detonated) && self.detonated == 1) {

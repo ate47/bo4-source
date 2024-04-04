@@ -485,7 +485,7 @@ function function_b1158c52(var_90c1e72d) {
     } else if (self infection::is_infected()) {
         return true;
     } else if (isdefined(self.var_156bf46e) && isvehicle(self.var_156bf46e) && !self.var_156bf46e isremotecontrol() && isairborne(self.var_156bf46e)) {
-        trace = groundtrace(self.origin, self.origin - vectorscale((0, 0, 1), 300), 0, self.var_156bf46e);
+        trace = groundtrace(self.origin, self.origin - (0, 0, 300), 0, self.var_156bf46e);
         if (trace[#"fraction"] >= 1) {
             return true;
         }
@@ -714,7 +714,6 @@ function laststand_bleedout_damage() {
     wait(level.var_5c13c13f);
     self val::reset(#"laststand", #"takedamage");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"laststand_damage");
         if (self.var_d887a4ad === 1) {
             return;
@@ -1073,9 +1072,7 @@ function function_356caede(team) {
         if (isdefined(getgametypesetting(#"wzspectrerising")) && getgametypesetting(#"wzspectrerising") && finisher clientfield::get("hasspectrebody")) {
             bundle_index = var_dc5a63bd;
         }
-        /#
-            assert(level.var_91c33dcb.finishers.size >= bundle_index);
-        #/
+        assert(level.var_91c33dcb.finishers.size >= bundle_index);
         var_abdbed5a = level.var_91c33dcb.finishers[bundle_index].("finisherbundle");
         var_d1d9820d = getscriptbundle(var_abdbed5a);
         if (isdefined(var_d1d9820d.("attacker_gesture"))) {
@@ -1211,9 +1208,7 @@ function function_55f6978f(team) {
             continue;
         }
         gun = reviver getcurrentweapon();
-        /#
-            assert(isdefined(gun));
-        #/
+        assert(isdefined(gun));
         if (gun == level.weaponrevivetool) {
             continue;
         }
@@ -1279,10 +1274,10 @@ function can_revive(revivee, ignore_touch_checks = 0, height = undefined) {
     if (distancesquared(revivee.origin, self.origin) > 140 * 140) {
         return false;
     }
-    if (!sighttracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+    if (!sighttracepassed(self.origin + (0, 0, 50), revivee.origin + (0, 0, 30), 0, undefined)) {
         return false;
     }
-    if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 50), revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+    if (!bullettracepassed(self.origin + (0, 0, 50), revivee.origin + (0, 0, 30), 0, undefined)) {
         return false;
     }
     return true;
@@ -1333,9 +1328,7 @@ function revive_do_revive(playerbeingrevived) {
     if (!self is_reviving(playerbeingrevived, 1)) {
         return 0;
     }
-    /#
-        assert(self is_reviving(playerbeingrevived, 1));
-    #/
+    assert(self is_reviving(playerbeingrevived, 1));
     revivetime = getdvarfloat(#"g_revivetime", 3) * self function_bd85bc2f();
     timer = 0;
     revived = 0;
@@ -1430,7 +1423,6 @@ function function_adecbc95() {
 function function_c82a14d1(finisher) {
     self endon(#"death", #"disconnect", #"finish_abort");
     finisher endon(#"death", #"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"contact");
     self flagsys::set(#"hash_40e3b09bdbcdac81");
     self notify(#"player_finished");
@@ -1466,7 +1458,6 @@ function function_1c8cab15(var_b4bb7319) {
 function auto_revive_on_notify() {
     /#
         self endon(#"death", #"disconnect", #"player_revived");
-        waitresult = undefined;
         waitresult = self waittill(#"auto_revive");
         self thread revive_success(waitresult.reviver);
     #/
@@ -1604,9 +1595,7 @@ function function_b1ad0b64(idamage, smeansofdeath) {
 // Size: 0x3e
 function function_7e714b6a() {
     if (!isplayer(self)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     self.laststandcount = undefined;

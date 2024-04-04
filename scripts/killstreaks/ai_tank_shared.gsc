@@ -269,7 +269,6 @@ function usekillstreakaitankdrop(killstreaktype) {
     }
     if (isdefined(level.var_30264985)) {
         level notify(#"marker_ready");
-        waitresult = undefined;
         waitresult = self waittill(#"mantis_deployed", #"death", #"weapon_change", #"weapon_fired");
     }
     context = spawnstruct();
@@ -319,14 +318,14 @@ function function_4c0ed253(location, context) {
             mask = context.tracemask;
         }
         radius = context.radius;
-        trace = physicstrace(location + vectorscale((0, 0, 1), 5000), location + vectorscale((0, 0, 1), 30), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
+        trace = physicstrace(location + (0, 0, 5000), location + (0, 0, 30), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
         if (trace[#"fraction"] < 1) {
             if (!(isdefined(level.var_66da9c3c) && level.var_66da9c3c)) {
                 return false;
             }
         }
     }
-    result = function_9cc082d2(location + vectorscale((0, 0, 1), 100), 170);
+    result = function_9cc082d2(location + (0, 0, 100), 170);
     if (!isdefined(result)) {
         return false;
     }
@@ -358,7 +357,7 @@ function islocationgood(location, context) {
             mask = context.tracemask;
         }
         radius = context.radius;
-        trace = physicstrace(location + vectorscale((0, 0, 1), 5000), location + vectorscale((0, 0, 1), 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
+        trace = physicstrace(location + (0, 0, 5000), location + (0, 0, 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
         if (trace[#"fraction"] < 1) {
             if (!(isdefined(level.var_66da9c3c) && level.var_66da9c3c)) {
                 return 0;
@@ -384,7 +383,7 @@ function islocationgood(location, context) {
                 }
             } else {
                 sphere(closestpoint, context.max_dist_from_location, (0, 1, 0), 0.8, 0, 20, 1);
-                util::drawcylinder(closestpoint, context.radius, 8000, 0.0166667, undefined, vectorscale((0, 1, 0), 0.9), 0.7);
+                util::drawcylinder(closestpoint, context.radius, 8000, 0.0166667, undefined, (0, 0.9, 0), 0.7);
             }
         }
     #/
@@ -483,7 +482,7 @@ function function_e00df756(team, killstreak_id) {
 function function_b2acf3f2(location, context) {
     if (!ispointonnavmesh(location)) {
         /#
-            recordsphere(location + vectorscale((0, 0, 1), 10), 2, (1, 0, 0), "tag_turret");
+            recordsphere(location + (0, 0, 10), 2, (1, 0, 0), "tag_turret");
         #/
         return false;
     }
@@ -520,9 +519,9 @@ function crateland(crate, category, owner, team, context) {
     if (isdefined(level.var_5ef874c8) && level.var_5ef874c8) {
         radius = 5;
         mask = 1 | 4;
-        cratebottom = physicstrace(origin + vectorscale((0, 0, 1), 25), origin + vectorscale((0, 0, -1), 50), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), crate, mask);
+        cratebottom = physicstrace(origin + (0, 0, 25), origin + (0, 0, -50), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), crate, mask);
     } else {
-        cratebottom = bullettrace(origin, origin + vectorscale((0, 0, -1), 50), 0, crate);
+        cratebottom = bullettrace(origin, origin + (0, 0, -50), 0, crate);
     }
     if (isdefined(cratebottom)) {
         origin = cratebottom[#"position"] + (0, 0, 1);
@@ -598,9 +597,7 @@ function function_9b13ebf(drone) {
     drone setavoidancemask("avoid none");
     drone.fovcosine = 0;
     drone.fovcosinebusy = 0.574;
-    /#
-        assert(isdefined(drone.scriptbundlesettings));
-    #/
+    assert(isdefined(drone.scriptbundlesettings));
     drone.settings = struct::get_script_bundle("vehiclecustomsettings", drone.scriptbundlesettings);
     drone.goalheight = 512;
     drone setgoal(drone.origin, 0, drone.goalradius, drone.goalheight);
@@ -689,7 +686,7 @@ function ai_tank_killstreak_start(owner, origin, killstreak_id, category, tankar
     if (isdefined(context) && isdefined(context.vehicle)) {
         drone = context.vehicle;
     } else {
-        drone = spawnvehicle(tankarchetype, origin + vectorscale((0, 0, 1), 40), (0, 0, 0), "talon", undefined, 1, owner);
+        drone = spawnvehicle(tankarchetype, origin + (0, 0, 40), (0, 0, 0), "talon", undefined, 1, owner);
     }
     drone killstreak_bundles::spawned(level.killstreakbundle[#"tank_robot"]);
     if (!isdefined(drone)) {
@@ -731,7 +728,7 @@ function ai_tank_killstreak_start(owner, origin, killstreak_id, category, tankar
     drone.numberrockets = 4;
     drone.warningshots = 3;
     drone setdrawinfrared(1);
-    target_set(drone, vectorscale((0, 0, 1), 20));
+    target_set(drone, (0, 0, 20));
     drone vehicle::init_target_group();
     drone vehicle::add_to_target_group(drone);
     drone setneargoalnotifydist(35);
@@ -826,7 +823,7 @@ function function_9868e24e(player) {
             var_8712c5b8 = player.var_6b2d5c29[ti];
             if (target.ignoreme === 1 || !isalive(target) || self.isjammed === 1) {
                 var_8712c5b8.state = 0;
-            } else if (!bullettracepassed(origin, target.origin + vectorscale((0, 0, 1), 60), 0, player)) {
+            } else if (!bullettracepassed(origin, target.origin + (0, 0, 60), 0, player)) {
                 var_8712c5b8.state = 0;
             } else if (var_8712c5b8.state != 4) {
                 if (locking) {
@@ -1081,9 +1078,7 @@ function function_b2cc6703(targets) {
     var_8ec7f501 = undefined;
     highest = -1;
     for (idx = 0; idx < targets.size; idx++) {
-        /#
-            assert(isdefined(targets[idx].var_629a6b13[entnum]), "<unknown string>");
-        #/
+        assert(isdefined(targets[idx].var_629a6b13[entnum]), "<unknown string>");
         if (targets[idx].var_629a6b13[entnum] >= highest) {
             highest = targets[idx].var_629a6b13[entnum];
             var_8ec7f501 = targets[idx];
@@ -1322,9 +1317,7 @@ function function_dd91d091(params) {
     self setacceleration(isdefined(self.settings.default_move_acceleration) ? self.settings.default_move_acceleration : 10);
     heatseekingmissile::initlockfield(self);
     for (;;) {
-        /#
-            assert(isdefined(self.ai));
-        #/
+        assert(isdefined(self.ai));
         if (!isdefined(self.ai.var_88b0fd29)) {
             self.ai.var_88b0fd29 = gettime();
         }
@@ -1385,7 +1378,6 @@ function function_dd91d091(params) {
         }
         if (self haspath()) {
             self asmrequestsubstate(#"locomotion@movement");
-            result = undefined;
             result = self waittill(#"near_goal", #"stunned");
         } else {
             self asmrequestsubstate(#"hash_236f963ae1728eb3");
@@ -1413,7 +1405,7 @@ function function_37cc249f() {
 // Checksum 0x4d0bb7d2, Offset: 0x60e8
 // Size: 0xae
 function function_d15dd929(radius, origin) {
-    result = function_9cc082d2(origin + vectorscale((0, 0, 1), 100), 200);
+    result = function_9cc082d2(origin + (0, 0, 100), 200);
     if (isdefined(result) && isdefined(result[#"materialflags"]) && result[#"materialflags"] & 2) {
         return false;
     }
@@ -1437,10 +1429,10 @@ function damage_armor_activati_(entity, tacpoints) {
                 continue;
             }
             /#
-                record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "tag_turret");
+                record3dtext("<unknown string>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "tag_turret");
             #/
             /#
-                recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "tag_turret");
+                recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "tag_turret");
             #/
         }
     }
@@ -1559,7 +1551,6 @@ function state_combat_update(params) {
                 self function_a57c34b7(newpos, 0, 1);
                 self setbrake(0);
                 self asmrequestsubstate(#"locomotion@movement");
-                result = undefined;
                 result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
             } else {
                 /#
@@ -1584,7 +1575,6 @@ function state_combat_update(params) {
                     self function_a57c34b7(newpos, 0, 1);
                     self setbrake(0);
                     self asmrequestsubstate(#"locomotion@movement");
-                    result = undefined;
                     result = self waittilltimeout(randomintrange(4, 5), #"near_goal", #"stunned");
                 }
             }
@@ -1634,7 +1624,6 @@ function kill_monitor() {
     last_kill_vo = 0;
     kill_vo_spacing = 4000;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"killed");
         victim = waitresult.victim;
         if (!isdefined(self.owner) || !isdefined(victim)) {
@@ -1716,7 +1705,6 @@ function tank_timeout_callback() {
 function tank_watch_owner_events() {
     self notify(#"tank_watch_owner_events_singleton");
     self endon(#"tank_watch_owner_events_singleton", #"death");
-    res = undefined;
     res = self.owner waittill(#"joined_team", #"disconnect", #"joined_spectators");
     self makevehicleusable();
     if (isdefined(self.owner) && isdefined(self.controlled) && self.controlled) {
@@ -1763,9 +1751,7 @@ function stop_remote() {
 function tank_hacked_health_update(hacker) {
     tank = self;
     hackeddamagetaken = tank.defaultmaxhealth - tank.hackedhealth;
-    /#
-        assert(hackeddamagetaken > 0);
-    #/
+    assert(hackeddamagetaken > 0);
     if (hackeddamagetaken > tank.damagetaken) {
         tank.damagetaken = hackeddamagetaken;
     }
@@ -1777,9 +1763,7 @@ function tank_hacked_health_update(hacker) {
 // Size: 0x570
 function tank_damage_think() {
     self endon(#"death");
-    /#
-        assert(isdefined(self.maxhealth));
-    #/
+    assert(isdefined(self.maxhealth));
     self.defaultmaxhealth = self.maxhealth;
     maxhealth = self.maxhealth;
     self.maxhealth = 999999;
@@ -1792,7 +1776,6 @@ function tank_damage_think() {
     low_health = 0;
     self.damagetaken = 0;
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         damage = waitresult.amount;
         attacker = waitresult.attacker;
@@ -1860,12 +1843,12 @@ function tank_damage_think() {
 // Size: 0xfc
 function tank_low_health_fx() {
     self endon(#"death");
-    self.damage_fx = spawn("script_model", self gettagorigin("tag_origin") + vectorscale((0, 0, -1), 14));
+    self.damage_fx = spawn("script_model", self gettagorigin("tag_origin") + (0, 0, -14));
     if (!isdefined(self.damage_fx)) {
         return;
     }
     self.damage_fx setmodel(#"tag_origin");
-    self.damage_fx linkto(self, "tag_turret", vectorscale((0, 0, -1), 14), (0, 0, 0));
+    self.damage_fx linkto(self, "tag_turret", (0, 0, -14), (0, 0, 0));
     wait(0.1);
     playfxontag(level.ai_tank_damage_fx, self.damage_fx, "tag_origin");
 }
@@ -1953,7 +1936,7 @@ function function_4110f8dd(isjammed) {
     self function_d4c687c9();
     forward = anglestoforward(self.angles);
     forward = self.origin + forward * 128;
-    forward = forward - vectorscale((0, 0, 1), 64);
+    forward = forward - (0, 0, 64);
     self turretsettarget(0, forward);
     self disablegunnerfiring(0, 1);
     self laseroff();
@@ -2074,7 +2057,6 @@ function function_3bb5ae4() {
 function tank_death_think(hardpointname) {
     team = self.team;
     killstreak_id = self.killstreak_id;
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     attacker = waitresult.attacker;
     weapon = waitresult.weapon;
@@ -2354,7 +2336,7 @@ function shoot_targets(projectile, max_missiles) {
             }
             var_8712c5b8 = owner.var_6b2d5c29[ti];
             if (var_8712c5b8.state == 3) {
-                dir = target.origin + vectorscale((0, 0, 1), 40) - origin;
+                dir = target.origin + (0, 0, 40) - origin;
                 dir = vectornormalize(dir);
                 rocket = magicbullet(weapon, origin, origin + dir * 1000, owner);
                 if (isdefined(rocket) && rocket.classname === "rocket") {
@@ -2392,7 +2374,6 @@ function tank_rocket_watch(player) {
         self disabledriverfiring(0);
     }
     while (true) {
-        waitresult = undefined;
         waitresult = player waittill(#"missile_fire");
         var_e3a3ecd3 = 1;
         if (isdefined(waitresult.projectile)) {
@@ -2417,7 +2398,6 @@ function tank_rocket_watch(player) {
 function tank_rocket_watch_ai() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"missile_fire");
         if (isdefined(waitresult.projectile)) {
             waitresult.projectile.ignore_team_kills = self.ignore_team_kills;

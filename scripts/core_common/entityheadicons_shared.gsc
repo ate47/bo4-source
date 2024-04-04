@@ -50,9 +50,7 @@ function setentityheadicon(team, owner, objective) {
     if (isdefined(objective)) {
         if (isdefined(owner) && !level.teambased) {
             if (!isplayer(owner)) {
-                /#
-                    assert(isdefined(owner.owner), "<unknown string>");
-                #/
+                assert(isdefined(owner.owner), "<unknown string>");
                 owner = owner.owner;
             }
             if (isdefined(objective)) {

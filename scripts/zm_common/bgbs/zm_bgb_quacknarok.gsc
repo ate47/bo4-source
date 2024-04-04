@@ -79,7 +79,7 @@ function actor_death_override(s_data) {
             if (isdefined(duckie)) {
                 self detach("p8_zm_red_floatie_duck", "j_spinelower");
                 level.var_5bf2be84 = gettime() + randomintrange(2000, 5000);
-                duckie physicslaunch(self.origin, vectorscale((0, 0, 1), 64));
+                duckie physicslaunch(self.origin, (0, 0, 64));
                 duckie thread function_645efd58();
             }
         }

@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class czm_towers_challenges_hud : cluielem {
 
-    // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud
-    // Params 0, eflags: 0x8
-    // Checksum 0xc511489c, Offset: 0x2f0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x6f2ea176, Offset: 0x600
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud
     // Params 2, eflags: 0x0
     // Checksum 0x64f2b24f, Offset: 0x5b8
     // Size: 0x3c
     function set_required_goal(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "required_goal", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "required_goal", value);
     }
 
     // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud
@@ -37,7 +23,7 @@ class czm_towers_challenges_hud : cluielem {
     // Checksum 0xe6850323, Offset: 0x570
     // Size: 0x3c
     function set_challenge_text(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "challenge_text", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "challenge_text", value);
     }
 
     // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud
@@ -45,7 +31,7 @@ class czm_towers_challenges_hud : cluielem {
     // Checksum 0x167b897b, Offset: 0x528
     // Size: 0x3c
     function set_progress(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "progress", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "progress", value);
     }
 
     // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud
@@ -54,18 +40,14 @@ class czm_towers_challenges_hud : cluielem {
     // Size: 0xbc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"hidden" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_towers_challenges_hud/zm_towers_challenges_hud

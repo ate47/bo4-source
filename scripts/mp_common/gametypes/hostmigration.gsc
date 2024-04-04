@@ -30,14 +30,10 @@ function callback_hostmigration() {
         level waittill(#"prematch_over");
     }
     if (level.gameended) {
-        /#
-            println("<unknown string>" + gettime() + "<unknown string>");
-        #/
+        println("<unknown string>" + gettime() + "<unknown string>");
         return;
     }
-    /#
-        println("<unknown string>" + gettime());
-    #/
+    println("<unknown string>" + gettime());
     level.hostmigrationtimer = 1;
     sethostmigrationstatus(1);
     level notify(#"host_migration_begin");
@@ -51,9 +47,7 @@ function callback_hostmigration() {
     hostmigrationwait();
     level.hostmigrationtimer = undefined;
     sethostmigrationstatus(0);
-    /#
-        println("<unknown string>" + gettime());
-    #/
+    println("<unknown string>" + gettime());
     level notify(#"host_migration_end");
 }
 

@@ -567,11 +567,7 @@ function function_c492c4d6(str_index, var_ed1db1a7, a_str_zones, a_str_next_defe
     } else if (!isarray(a_str_next_defend)) {
         a_str_next_defend = array(a_str_next_defend);
     }
-    /#
-        /#
-            assert(isdefined(struct::get(var_ed1db1a7)), "<unknown string>" + var_ed1db1a7 + "<unknown string>");
-        #/
-    #/
+    assert(isdefined(struct::get(var_ed1db1a7)), "<unknown string>" + var_ed1db1a7 + "<unknown string>");
     level.a_s_defend_areas[str_index] = {#var_ed1db1a7:var_ed1db1a7, #a_str_zones:a_str_zones, #a_str_next_defend:a_str_next_defend, #var_16a34df0:var_16a34df0, #var_39c44288:var_39c44288, #var_c13f5c4b:var_c13f5c4b, #var_9fc5eea1:var_9fc5eea1};
 }
 
@@ -583,13 +579,9 @@ function function_1e856719() {
     /#
         a_str_defend_areas = getarraykeys(level.a_s_defend_areas);
         foreach (str_index, s_defend_area in level.a_s_defend_areas) {
-            /#
-                assert(isarray(s_defend_area.a_str_next_defend), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
-            #/
+            assert(isarray(s_defend_area.a_str_next_defend), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
             foreach (str_next_defend in s_defend_area.a_str_next_defend) {
-                /#
-                    assert(isinarray(a_str_defend_areas, str_next_defend), "<unknown string>" + function_9e72a96(str_next_defend) + "<unknown string>");
-                #/
+                assert(isinarray(a_str_defend_areas, str_next_defend), "<unknown string>" + function_9e72a96(str_next_defend) + "<unknown string>");
             }
         }
     #/
@@ -659,11 +651,7 @@ function function_defc6586(var_3d15828d, b_random = 1) {
 // Checksum 0xed4a8c6, Offset: 0x28f8
 // Size: 0x6c
 function function_a877cd10(str_index) {
-    /#
-        /#
-            assert(isdefined(level.a_s_defend_areas[str_index]), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
-        #/
-    #/
+    assert(isdefined(level.a_s_defend_areas[str_index]), "<unknown string>" + function_9e72a96(str_index) + "<unknown string>");
     return level.a_s_defend_areas[str_index];
 }
 
@@ -927,7 +915,7 @@ function function_a5f4503c(str_notify) {
 function function_d40910b4(params) {
     a_ai_zombies = zombie_utility::get_round_enemy_array();
     if (!(isdefined(self.ignore_enemy_count) && self.ignore_enemy_count) && a_ai_zombies.size == 1 && level.zombie_total <= 0 && !level flag::get("infinite_round_spawning")) {
-        v_start = self.origin + vectorscale((0, 0, 1), 8);
+        v_start = self.origin + (0, 0, 8);
         if (isdefined(self.var_c39323b5) && self.var_c39323b5 || !(check_point_in_playable_area(v_start) && check_point_in_enabled_zone(v_start)) || isdefined(self.nuked) && self.nuked) {
             if (isdefined(level.var_9149f3ac)) {
                 s_defend_area = struct::get(level.var_9149f3ac);

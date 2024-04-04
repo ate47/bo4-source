@@ -100,7 +100,7 @@ function play_tomahawk_pickup_fx(localclientnum, oldval, newval, bnewent, biniti
 // Checksum 0xaefd6998, Offset: 0xa48
 // Size: 0x7c
 function function_9a3953ea(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump) {
-    self playsound(localclientnum, #"wpn_tomahawk_impact", self.origin + vectorscale((0, 0, 1), 75));
+    self playsound(localclientnum, #"wpn_tomahawk_impact", self.origin + (0, 0, 75));
 }
 
 // Namespace zm_weap_tomahawk/zm_weap_tomahawk

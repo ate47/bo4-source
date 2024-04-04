@@ -498,7 +498,7 @@ function function_170c8b16() {
 // Checksum 0xa301c827, Offset: 0x3198
 // Size: 0xe4
 function function_b8510127() {
-    level.s_boss_battle.var_64801233.origin = self.origin + anglestoforward(self.angles) * -3900 + anglestoright(self.angles) * -130 + vectorscale((0, 0, -1), 160);
+    level.s_boss_battle.var_64801233.origin = self.origin + anglestoforward(self.angles) * -3900 + anglestoright(self.angles) * -130 + (0, 0, -160);
     level.s_boss_battle.var_64801233.angles = (0, randomintrange(0, 360), 0);
     waitframe(1);
     level.s_boss_battle.var_64801233 clientfield::increment("" + #"pegasus_emerge");
@@ -550,7 +550,6 @@ function chaos_bolt_thrower(e_target) {
         projectile clientfield::set("" + #"hash_64910f94ebb8d66a", 3);
         b_annihilator = 1;
     }
-    s_result = undefined;
     s_result = projectile waittilltimeout(7, #"projectile_impact_explode", #"projectile_impact_player", #"projectile_impact");
     if (s_result._notify === #"timeout") {
         return;
@@ -688,7 +687,6 @@ function function_2858e671(var_c34665fc, e_boss) {
     level endon(#"hash_4d25b32acbac5117", #"hash_7646638df88a3656");
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(var_c34665fc);
         self.health = 100000;
         if (var_c34665fc == #"damage") {
@@ -1289,7 +1287,6 @@ function function_21ef9bb7(a_ents) {
         e_boss function_2baad8fc();
     }
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = e_boss waittill(#"damage", #"death");
         e_boss.health = 100000;
         if (s_waitresult._notify === "death") {
@@ -1614,7 +1611,7 @@ function function_4a58a0(e_perseus) {
         e_perseus scene::play(#"hash_732e3b38ca890511", "atk_end", level.s_boss_battle.var_d82d0e73);
     }
     e_perseus.origin = level.s_boss_battle.s_pinnacle.origin;
-    e_perseus.angles = vectorscale((0, 1, 0), 90);
+    e_perseus.angles = (0, 90, 0);
     level notify(#"hash_78452700119fc913");
 }
 
@@ -1665,11 +1662,11 @@ function function_caa7eeb() {
         level scene::init_streamer(#"cin_zm_red_outro_temple", #"allies", 0, 0);
     }
     self zm_vo::vo_say(#"hash_34171dfc4d06ae4b", 0, 1, 9999);
-    level.var_92830991 = util::spawn_model(#"hash_7ad70aa7f6e8c41f", self.origin + vectorscale((0, 0, 1), 48), self.angles);
+    level.var_92830991 = util::spawn_model(#"hash_7ad70aa7f6e8c41f", self.origin + (0, 0, 48), self.angles);
     level.var_92830991 setscale(4);
     level.var_92830991 thread namespace_f8f28e08::function_51fd2597(0);
     level.var_92830991 thread namespace_f8f28e08::function_f7cdf2f7(2);
-    playfx(level._effect[#"perseus_death"], level.var_92830991.origin - vectorscale((0, 0, 1), 16));
+    playfx(level._effect[#"perseus_death"], level.var_92830991.origin - (0, 0, 16));
     array::run_all(level.s_boss_battle.var_d82d0e73, &ghost);
     array::run_all(level.s_boss_battle.var_d82d0e73, &notsolid);
     e_vo_player = array::random(util::get_active_players(#"allies"));
@@ -2141,7 +2138,6 @@ function spawn_miniboss() {
         if (math::cointoss(60)) {
             if (zm_ai_blight_father::function_858c7fa5()) {
                 zm_transform::function_bdd8aba6(#"blight_father");
-                s_waitresult = undefined;
                 s_waitresult = level waittilltimeout(10, #"transformation_complete");
                 if (s_waitresult._notify != "timeout") {
                     function_8b1f9518();
@@ -2187,7 +2183,6 @@ function function_6401a80e() {
     self endon("1306ae5632c8627a");
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"hash_1c35eb15aa210d6", #"fasttravel_finished", #"hash_178a3d0115bc972e");
         if (!isdefined(s_notify.var_9fa6220c) || !isdefined(s_notify.var_9fa6220c.script_noteworthy) || s_notify.var_9fa6220c.script_noteworthy != "traverse") {
             continue;
@@ -2253,7 +2248,6 @@ function function_5fc81f0a(e_target) {
     zm_weap_hand_gaia::function_5fc81f0a(e_target);
     zm_weap_hand_hemera::function_5fc81f0a(e_target);
     zm_weap_hand_ouranos::function_5fc81f0a(e_target);
-    s_result = undefined;
     s_result = level waittill(#"hash_4be6553c5ac0ec2b", #"boss_stunned", #"hash_18dd51d5a10476a3", #"hash_78452700119fc913", #"hash_7646638df88a3656");
     zm_weap_hand_charon::function_6d783edd(e_target);
     zm_weap_hand_gaia::function_6d783edd(e_target);
@@ -2271,7 +2265,6 @@ function function_1722dae1() {
     level endon(#"hash_71d7e6a55a1ca9e");
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"aoe_damage");
         if (s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt" || s_waitresult.var_159100b7 == "zm_aoe_chaos_bolt_2") {
             self status_effect::status_effect_apply(level.s_boss_battle.var_b42f3b39, undefined, level.s_boss_battle.mdl_perseus, 0, 3000);

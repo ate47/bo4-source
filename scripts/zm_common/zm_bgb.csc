@@ -104,9 +104,7 @@ function private bgb_finalize() {
         var_ddcb67f4 = getunlockableiteminfofromindex(v.item_index, 2);
         var_5415dfb9 = function_b143666d(v.item_index, 2);
         if (!isdefined(var_ddcb67f4) || !isdefined(var_5415dfb9)) {
-            /#
-                println("<unknown string>" + v.name + "<unknown string>");
-            #/
+            println("<unknown string>" + v.name + "<unknown string>");
             continue;
         }
         if (!isdefined(var_5415dfb9.bgbrarity)) {
@@ -130,18 +128,10 @@ function private bgb_finalize() {
 // Checksum 0x93d9e479, Offset: 0xa50
 // Size: 0x14e
 function register(name, limit_type) {
-    /#
-        assert(isdefined(name), "<unknown string>");
-    #/
-    /#
-        assert(#"none" != name, "<unknown string>" + #"none" + "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(limit_type), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(name), "<unknown string>");
+    assert(#"none" != name, "<unknown string>" + #"none" + "<unknown string>");
+    assert(!isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(limit_type), "<unknown string>" + name + "<unknown string>");
     level.bgb[name] = spawnstruct();
     level.bgb[name].name = name;
     level.bgb[name].limit_type = limit_type;

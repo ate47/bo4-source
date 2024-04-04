@@ -8,28 +8,14 @@
 // Method(s) 6 Total 13
 class cself_respawn : cluielem {
 
-    // Namespace cself_respawn/self_respawn
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x4f5c71e1, Offset: 0x1d0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cself_respawn/self_respawn
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x961d0714, Offset: 0x310
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cself_respawn/self_respawn
     // Params 2, eflags: 0x1 linked
     // Checksum 0xc0d82e, Offset: 0x2c8
     // Size: 0x3c
     function set_percent(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "percent", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "percent", value);
     }
 
     // Namespace cself_respawn/self_respawn

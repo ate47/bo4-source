@@ -249,7 +249,6 @@ function function_46c56964() {
                 iprintln("<unknown string>" + self.var_574b5261);
             }
         #/
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_fired", #"weapon_switch_started", #"offhand_fire", #"grenade_pullback");
         self.var_574b5261 = 0;
     }

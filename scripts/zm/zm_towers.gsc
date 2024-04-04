@@ -809,7 +809,7 @@ function custom_pandora_fx_func() {
     if (isdefined(s_pandora_fx_pos_override) && s_pandora_fx_pos_override.script_noteworthy === "pandora_fx_pos_override") {
         self.pandora_light.origin = s_pandora_fx_pos_override.origin;
     }
-    self.pandora_light.angles = self.zbarrier.angles + vectorscale((-1, 0, -1), 90);
+    self.pandora_light.angles = self.zbarrier.angles + (-90, 0, -90);
     self.pandora_light setmodel(#"tag_origin");
     if (!(isdefined(level._box_initialized) && level._box_initialized)) {
         level flag::wait_till("start_zombie_round_logic");
@@ -1294,9 +1294,7 @@ function private function_51855e65(round_number) {
     /#
         var_efac84b3 = array(0, 500, 1000, 1000, 1400, 4000, 5000, 5500, 5500, 5500, 8000, 8000, 8000, 8000, 9000, 9000, 9000, 9500, 9500, 9500, 9500, 11000, 11000, 11000, 11000, 13000, 13000, 13000, 13000, 14000);
         round_index = round_number - 1;
-        /#
-            assert(round_index >= 0 && round_index < 30);
-        #/
+        assert(round_index >= 0 && round_index < 30);
         foreach (player in getplayers()) {
             player zm_score::function_c1f146ff(var_efac84b3[round_index]);
         }

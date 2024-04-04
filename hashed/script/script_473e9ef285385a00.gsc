@@ -8,27 +8,11 @@
 class cct_shared_aar_medals : cluielem {
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
-    // Params 0, eflags: 0x8
-    // Checksum 0xeec2d5a1, Offset: 0x2e8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_aar_medals/ct_shared_aar_medals
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x960e7fb9, Offset: 0x728
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_shared_aar_medals/ct_shared_aar_medals
     // Params 2, eflags: 0x0
     // Checksum 0x5522af76, Offset: 0x6f0
     // Size: 0x30
     function set_medalbronzethreshold(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "medalBronzeThreshold", value);
+        set_data(localclientnum, "medalBronzeThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -36,7 +20,7 @@ class cct_shared_aar_medals : cluielem {
     // Checksum 0x8d58a80c, Offset: 0x6b8
     // Size: 0x30
     function set_medalsilverthreshold(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "medalSilverThreshold", value);
+        set_data(localclientnum, "medalSilverThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -44,7 +28,7 @@ class cct_shared_aar_medals : cluielem {
     // Checksum 0x72467d07, Offset: 0x680
     // Size: 0x30
     function set_medalgoldthreshold(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "medalGoldThreshold", value);
+        set_data(localclientnum, "medalGoldThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -53,30 +37,26 @@ class cct_shared_aar_medals : cluielem {
     // Size: 0x154
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"medal_gold" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"medal_silver" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"medal_bronze" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"medal_none" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -93,10 +73,10 @@ class cct_shared_aar_medals : cluielem {
     // Size: 0xbc
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "medalGoldThreshold", #"");
-        [[ self ]]->set_data(localclientnum, "medalSilverThreshold", #"");
-        [[ self ]]->set_data(localclientnum, "medalBronzeThreshold", #"");
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "medalGoldThreshold", #"");
+        set_data(localclientnum, "medalSilverThreshold", #"");
+        set_data(localclientnum, "medalBronzeThreshold", #"");
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals

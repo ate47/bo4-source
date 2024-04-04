@@ -278,7 +278,7 @@ function function_6b5ed7f9(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_88fdd1ff() {
     self endoncallback(&function_2473f73e, #"death");
     self endon(#"death", #"disconnect");
-    self.var_2591ed7c = spawn(0, self.origin + vectorscale((0, 0, 1), 1000), "script_origin");
+    self.var_2591ed7c = spawn(0, self.origin + (0, 0, 1000), "script_origin");
     self.var_2591ed7c.var_2e95bcd3 = self.var_2591ed7c playloopsound(#"hash_58b77ae9e2d258e1");
     if (!isdefined(self.var_cdb19015)) {
         self.var_cdb19015 = 1;

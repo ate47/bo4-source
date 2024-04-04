@@ -29,9 +29,7 @@ function function_d92cb558(result, vararg) {
 // Size: 0x144
 function function_f94325d3() {
     player = self;
-    /#
-        assert(isplayer(player), "<unknown string>");
-    #/
+    assert(isplayer(player), "<unknown string>");
     if (isbot(player) || isdefined(level.disablestattracking) && level.disablestattracking) {
         return false;
     }
@@ -62,17 +60,13 @@ function function_8921af36() {
 // Checksum 0xfe68475f, Offset: 0x320
 // Size: 0xc0
 function get_stat(...) {
-    /#
-        assert(vararg.size > 0);
-    #/
+    assert(vararg.size > 0);
     if (vararg.size == 0) {
         return 0;
     }
     result = 0;
     if (isdefined(self)) {
-        /#
-            assert(isplayer(self), "<unknown string>");
-        #/
+        assert(isplayer(self), "<unknown string>");
         result = self readstat(vararg);
         /#
             function_d92cb558(result, vararg);
@@ -86,17 +80,13 @@ function get_stat(...) {
 // Checksum 0x822f6119, Offset: 0x3e8
 // Size: 0xc0
 function function_6d50f14b(...) {
-    /#
-        assert(vararg.size > 0);
-    #/
+    assert(vararg.size > 0);
     if (vararg.size == 0) {
         return 0;
     }
     result = 0;
     if (isdefined(self)) {
-        /#
-            assert(isplayer(self), "<unknown string>");
-        #/
+        assert(isplayer(self), "<unknown string>");
         result = self function_c3462d90(vararg);
         /#
             function_d92cb558(result, vararg);
@@ -110,17 +100,13 @@ function function_6d50f14b(...) {
 // Checksum 0xe6beaab2, Offset: 0x4b0
 // Size: 0xc0
 function function_ff8f4f17(...) {
-    /#
-        assert(vararg.size > 0);
-    #/
+    assert(vararg.size > 0);
     if (vararg.size == 0) {
         return 0;
     }
     result = 0;
     if (isdefined(self)) {
-        /#
-            assert(isplayer(self), "<unknown string>");
-        #/
+        assert(isplayer(self), "<unknown string>");
         result = self function_24c32cb1(vararg);
         /#
             function_d92cb558(result, vararg);
@@ -134,9 +120,7 @@ function function_ff8f4f17(...) {
 // Checksum 0x33a78da4, Offset: 0x578
 // Size: 0x12a
 function set_stat(...) {
-    /#
-        assert(vararg.size > 1);
-    #/
+    assert(vararg.size > 1);
     if (vararg.size <= 1) {
         return false;
     }
@@ -145,9 +129,7 @@ function set_stat(...) {
     }
     result = 0;
     if (isdefined(self)) {
-        /#
-            assert(isplayer(self), "<unknown string>");
-        #/
+        assert(isplayer(self), "<unknown string>");
         value = vararg[vararg.size - 1];
         arrayremoveindex(vararg, vararg.size - 1);
         result = self writestat(vararg, value);
@@ -163,9 +145,7 @@ function set_stat(...) {
 // Checksum 0xa4b264c2, Offset: 0x6b0
 // Size: 0x152
 function inc_stat(...) {
-    /#
-        assert(vararg.size > 1);
-    #/
+    assert(vararg.size > 1);
     if (vararg.size <= 1) {
         return;
     }
@@ -173,9 +153,7 @@ function inc_stat(...) {
         return;
     }
     player = self;
-    /#
-        assert(isplayer(player), "<unknown string>");
-    #/
+    assert(isplayer(player), "<unknown string>");
     if (!isdefined(player) || !isplayer(player)) {
         return;
     }

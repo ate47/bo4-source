@@ -147,7 +147,6 @@ function function_20b4f09a() {
     self usetriggerrequirelookat();
     self setcursorhint("HINT_NOICON");
     self sethintstring("");
-    s_notify = undefined;
     s_notify = self waittill(#"trigger");
     self.var_6a633cb2 thread function_8c80503();
 }
@@ -158,7 +157,6 @@ function function_20b4f09a() {
 // Size: 0x54
 function function_938d4207() {
     self endon(#"death");
-    s_notify = undefined;
     s_notify = self waittill(#"damage");
     self.var_6a633cb2 thread function_8c80503();
 }

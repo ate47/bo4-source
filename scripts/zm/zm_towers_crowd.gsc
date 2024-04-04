@@ -78,7 +78,6 @@ function function_e45ccfd7() {
     level endon(#"end_game");
     level flag::init(#"hash_a39684f0887e82e");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"homunculus_thrown");
         if (zm_utility::is_ee_enabled() && isdefined(s_waitresult.e_homunculus)) {
             s_waitresult.e_homunculus thread function_55d09221();
@@ -112,7 +111,6 @@ function crowd_damage_trigger() {
     self endon(#"death");
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         player = s_waitresult.attacker;
         if (isplayer(player)) {
@@ -392,7 +390,6 @@ function function_1b848dc2() {
     self endon(#"disconnect");
     level flag::wait_till("start_zombie_round_logic");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittilltimeout(240, #"hash_4093e684a539c91d", #"death");
         if (isalive(self) && s_waitresult._notify == "timeout") {
             self function_b8dfa139(#"hash_1ecab55fd270f67b");
@@ -634,7 +631,7 @@ function crowd_throw_item(var_2bd26cff) {
         e_item fx::play(#"hash_4c4f96aa02c32a2a", e_item.origin, e_item.angles, "crowd_item_fly_fx_stop", 1);
         n_time = e_item zm_utility::fake_physicslaunch(s_target_loc.origin, 600);
         wait(n_time);
-        fx::play(#"hash_7bd75ae600e0a590", s_target_loc.origin, s_target_loc.angles + vectorscale((1, 0, 0), 270));
+        fx::play(#"hash_7bd75ae600e0a590", s_target_loc.origin, s_target_loc.angles + (270, 0, 0));
         e_item notify(#"crowd_item_fly_fx_stop");
         e_item.origin = s_target_loc.origin;
         switch (var_354ec191) {
@@ -653,11 +650,10 @@ function crowd_throw_item(var_2bd26cff) {
             e_powerup = zm_powerups::specific_powerup_drop(str_powerup, s_target_loc.origin);
             if (isdefined(e_powerup)) {
                 if (str_powerup === "dung") {
-                    e_powerup moveto(groundtrace(e_powerup.origin + vectorscale((0, 0, 1), 8), e_powerup.origin + vectorscale((0, 0, -1), 100000), 0, e_powerup)[#"position"] + (0, 0, 0), 0.25);
+                    e_powerup moveto(groundtrace(e_powerup.origin + (0, 0, 8), e_powerup.origin + (0, 0, -100000), 0, e_powerup)[#"position"] + (0, 0, 0), 0.25);
                     e_powerup setscale(3);
                     e_powerup playloopsound("zmb_dung_lp");
                 }
-                s_waitresult = undefined;
                 s_waitresult = e_powerup waittill(#"powerup_grabbed", #"powerup_timedout", #"hacked", #"death");
                 var_264cf1f9 = s_waitresult.e_grabber;
                 if (isplayer(var_264cf1f9) && var_bec704d1 == 1) {
@@ -968,7 +964,6 @@ function function_bdb90d4() {
     var_8f46fbc3 = self.var_7df228aa.var_21ce4da6;
     for (var_8b88a695 = array::find(var_a849ed96, var_8f46fbc3); true; var_8b88a695 = var_4245b6a3) {
         b_announcer = 0;
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"hash_722941ef1aaab69f");
         var_ac39950d = s_waitresult.var_ac39950d;
         var_aa1b1bfd = self.var_7df228aa.var_21ce4da6;
@@ -1194,7 +1189,6 @@ function private function_692a63ae() {
 function function_8e83be5d() {
     level endon(#"end_game");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"crawler_created", #"trap_kill", #"trap_activated");
         switch (waitresult._notify) {
         case #"crawler_created":
@@ -1236,7 +1230,6 @@ function function_7469866d() {
     level endon(#"end_game");
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"player_downed", #"bled_out", #"player_did_a_revive", #"hash_53620e40c7e139b9", #"destroy_riotshield", #"hash_74fc45698491be88", #"hazard_hit");
         switch (waitresult._notify) {
         case #"player_downed":

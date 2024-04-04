@@ -43,7 +43,6 @@ function wc_icon_setup(localclientnum) {
 function update_wc_icon_extracam(localclientnum) {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill("process_wc_icon_extracam_" + localclientnum);
         setup_wc_weapon_model(localclientnum, waitresult.icon);
         setup_wc_extracam_settings(localclientnum, waitresult.icon);
@@ -79,9 +78,7 @@ function getxcam(weapon_name, camera) {
 // Checksum 0xf0983f4f, Offset: 0x458
 // Size: 0x32c
 function setup_wc_extracam_settings(localclientnum, extracam_data_struct) {
-    /#
-        assert(isdefined(extracam_data_struct.jobindex));
-    #/
+    assert(isdefined(extracam_data_struct.jobindex));
     if (!isdefined(level.camera_ents)) {
         level.camera_ents = [];
     }
@@ -95,9 +92,7 @@ function setup_wc_extracam_settings(localclientnum, extracam_data_struct) {
             camera_ent = multi_extracam::extracam_init_item(localclientnum, get_safehouse_position_struct(), extracam_data_struct.extracamindex);
         }
     }
-    /#
-        assert(isdefined(camera_ent));
-    #/
+    assert(isdefined(camera_ent));
     if (!isdefined(camera_ent)) {
         return;
     }

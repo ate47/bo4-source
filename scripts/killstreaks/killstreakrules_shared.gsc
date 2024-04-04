@@ -52,9 +52,7 @@ function addkillstreaktorule(killstreak, rule, counttowards, checkagainst, inven
         level.killstreaktype[killstreak] = [];
     }
     keys = getarraykeys(level.killstreaktype[killstreak]);
-    /#
-        assert(isdefined(level.killstreakrules[rule]));
-    #/
+    assert(isdefined(level.killstreakrules[rule]));
     if (!isdefined(level.killstreaktype[killstreak][rule])) {
         level.killstreaktype[killstreak][rule] = spawnstruct();
     }
@@ -70,17 +68,11 @@ function addkillstreaktorule(killstreak, rule, counttowards, checkagainst, inven
 // Checksum 0x2d87a369, Offset: 0x3c0
 // Size: 0x3b8
 function killstreakstart(hardpointtype, team, hacked, displayteammessage) {
-    /#
-        /#
-            assert(isdefined(team), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(team), "<unknown string>");
     if (self iskillstreakallowed(hardpointtype, team) == 0) {
         return -1;
     }
-    /#
-        assert(isdefined(hardpointtype));
-    #/
+    assert(isdefined(hardpointtype));
     if (!isdefined(hacked)) {
         hacked = 0;
     }
@@ -97,9 +89,7 @@ function killstreakstart(hardpointtype, team, hacked, displayteammessage) {
         if (!level.killstreaktype[hardpointtype][key].counts) {
             continue;
         }
-        /#
-            assert(isdefined(level.killstreakrules[key]));
-        #/
+        assert(isdefined(level.killstreakrules[key]));
         level.killstreakrules[key].cur++;
         if (level.teambased) {
             if (!isdefined(level.killstreakrules[key].curteam[team])) {
@@ -173,14 +163,8 @@ function recordkillstreakend(recordstreakindex, totalkills) {
 // Checksum 0x38cce0fa, Offset: 0x930
 // Size: 0x5a4
 function killstreakstop(hardpointtype, team, id) {
-    /#
-        /#
-            assert(isdefined(team), "<unknown string>");
-        #/
-    #/
-    /#
-        assert(isdefined(hardpointtype));
-    #/
+    assert(isdefined(team), "<unknown string>");
+    assert(isdefined(hardpointtype));
     /#
         idstr = "<unknown string>";
         if (isdefined(id)) {
@@ -193,28 +177,18 @@ function killstreakstop(hardpointtype, team, id) {
         if (!level.killstreaktype[hardpointtype][key].counts) {
             continue;
         }
-        /#
-            assert(isdefined(level.killstreakrules[key]));
-        #/
+        assert(isdefined(level.killstreakrules[key]));
         if (isdefined(level.killstreakrules[key].cur)) {
             level.killstreakrules[key].cur--;
         }
-        /#
-            assert(level.killstreakrules[key].cur >= 0);
-        #/
+        assert(level.killstreakrules[key].cur >= 0);
         if (level.teambased) {
-            /#
-                assert(isdefined(team));
-            #/
-            /#
-                assert(isdefined(level.killstreakrules[key].curteam[team]));
-            #/
+            assert(isdefined(team));
+            assert(isdefined(level.killstreakrules[key].curteam[team]));
             if (isdefined(team) && isdefined(level.killstreakrules[key].curteam[team])) {
                 level.killstreakrules[key].curteam[team]--;
             }
-            /#
-                assert(level.killstreakrules[key].curteam[team] >= 0);
-            #/
+            assert(level.killstreakrules[key].curteam[team] >= 0);
         }
     }
     if (!isdefined(id) || id == -1) {
@@ -254,14 +228,8 @@ function iskillstreakallowed(hardpointtype, team, var_1d8339ae) {
     if (level.var_7aa0d894 === 1) {
         return 0;
     }
-    /#
-        /#
-            assert(isdefined(team), "<unknown string>");
-        #/
-    #/
-    /#
-        assert(isdefined(hardpointtype));
-    #/
+    assert(isdefined(team), "<unknown string>");
+    assert(isdefined(hardpointtype));
     isallowed = 1;
     keys = getarraykeys(level.killstreaktype[hardpointtype]);
     foreach (key in keys) {

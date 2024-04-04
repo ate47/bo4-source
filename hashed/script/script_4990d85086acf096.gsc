@@ -8,27 +8,11 @@
 class czm_location : cluielem {
 
     // Namespace czm_location/zm_location
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x144846dd, Offset: 0x200
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_location/zm_location
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xa5af63b2, Offset: 0x378
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_location/zm_location
     // Params 2, eflags: 0x1 linked
     // Checksum 0xc2786a25, Offset: 0x340
     // Size: 0x30
     function set_location_name(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "location_name", value);
+        set_data(localclientnum, "location_name", value);
     }
 
     // Namespace czm_location/zm_location
@@ -45,7 +29,7 @@ class czm_location : cluielem {
     // Size: 0x4c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "location_name", #"");
+        set_data(localclientnum, "location_name", #"");
     }
 
     // Namespace czm_location/zm_location

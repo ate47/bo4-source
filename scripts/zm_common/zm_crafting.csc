@@ -114,9 +114,7 @@ function function_b18074d0(name) {
             }
         }
     } else {
-        /#
-            assertmsg("<unknown string>" + name);
-        #/
+        assertmsg("<unknown string>" + name);
     }
     return blueprint;
 }

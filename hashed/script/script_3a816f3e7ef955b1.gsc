@@ -72,7 +72,7 @@ function function_18d7622a(info) {
         level util::delay(2.5, undefined, &exploder::exploder, "fxexp_teleporter_a_light_cooldwn");
         level util::delay(2, undefined, &exploder::stop_exploder, "fxexp_teleporter_b_light_active");
         level util::delay(2.5, undefined, &exploder::exploder, "fxexp_teleporter_b_light_cooldwn");
-        player setorigin(groundtrace(destination.origin, destination.origin + vectorscale((0, 0, -1), 16), 0, player)[#"position"]);
+        player setorigin(groundtrace(destination.origin, destination.origin + (0, 0, -16), 0, player)[#"position"]);
         player setplayerangles(destination.angles);
         wait(10);
         if (isdefined(self)) {

@@ -94,9 +94,7 @@ function event_handler[gametype_init] main(eventstruct) {
     if (level.var_aad1f6f2 == level.var_8ce231e3) {
         level.var_8ce231e3 = level.var_8ce231e3 + 0.001;
     }
-    /#
-        assert(level.var_aad1f6f2 <= level.var_8ce231e3);
-    #/
+    assert(level.var_aad1f6f2 <= level.var_8ce231e3);
     level.var_73a7a457 = max(getgametypesetting(#"hash_381587a813feab3e"), 1);
     level.bountydepositsitecapturetime = max(getgametypesetting(#"bountydepositsitecapturetime"), 1);
     level.var_ad9d03e7 = getgametypesetting(#"hash_3ffec9399ef7052f");
@@ -353,9 +351,7 @@ function private onplayerrevived(revivee, reviver) {
 // Checksum 0x528e28a1, Offset: 0x1ee8
 // Size: 0x64
 function function_9659b3b4() {
-    /#
-        assert(isdefined(level.var_968635ea));
-    #/
+    assert(isdefined(level.var_968635ea));
     if (!level.var_968635ea bountyhunterbuy::is_open(self)) {
         level.var_968635ea bountyhunterbuy::open(self);
     }
@@ -366,9 +362,7 @@ function function_9659b3b4() {
 // Checksum 0xaeca2180, Offset: 0x1f58
 // Size: 0x8c
 function function_d764db12() {
-    /#
-        assert(isdefined(level.var_968635ea));
-    #/
+    assert(isdefined(level.var_968635ea));
     if (level.var_968635ea bountyhunterbuy::is_open(self)) {
         level.var_968635ea bountyhunterbuy::close(self);
     }
@@ -836,7 +830,7 @@ function private function_9698aa74(winner) {
 function private function_b3faa437() {
     var_fa06e6b7 = struct::get_array("bounty_bag_o_money", "variantname");
     var_85b31568 = var_fa06e6b7[randomint(var_fa06e6b7.size)].origin;
-    usetrigger = spawn("trigger_radius_use", var_85b31568 + vectorscale((0, 0, 1), 15), 0, 80, 60);
+    usetrigger = spawn("trigger_radius_use", var_85b31568 + (0, 0, 15), 0, 80, 60);
     usetrigger triggerignoreteam();
     usetrigger setvisibletoall();
     usetrigger setteamfortrigger(#"none");
@@ -1055,9 +1049,7 @@ function private function_2ad9733b() {
 // Checksum 0x33354b4b, Offset: 0x4ad0
 // Size: 0x3ec
 function private function_f878f4bf(var_fa5724d5, context) {
-    /#
-        assert(isdefined(var_fa5724d5));
-    #/
+    assert(isdefined(var_fa5724d5));
     level.var_8fcae189 = ir_strobe::function_284b1d4c(var_fa5724d5, #"wpn_t8_eqp_grenade_smoke_world");
     var_8ff770b8 = randomfloatrange(level.var_aad1f6f2, level.var_8ce231e3);
     wait(var_8ff770b8);
@@ -1082,10 +1074,8 @@ function private function_f878f4bf(var_fa5724d5, context) {
         level.var_ad7774db function_99e2da8b(var_fa5724d5);
     }
     level.var_ad7774db thread function_acf3ff19();
-    waitresult = undefined;
     waitresult = level.var_ad7774db waittill(#"hash_5677d0c5246418e5");
     for (prevprogress = 0; waitresult._notify == "timeout" && level.var_ad7774db.curprogress > prevprogress; prevprogress = level.var_ad7774db.curprogress) {
-        waitresult = undefined;
         waitresult = level.var_ad7774db waittilltimeout(0.25, #"hash_5677d0c5246418e5");
     }
     if (!isdefined(level.var_ad7774db)) {
@@ -1119,13 +1109,9 @@ function private function_4af1c786(helicopter, var_5ad5316d) {
 // Checksum 0x2c28824f, Offset: 0x5020
 // Size: 0x10c
 function private function_554b5692(helicopter) {
-    /#
-        assert(!isdefined(helicopter.rope));
-    #/
+    assert(!isdefined(helicopter.rope));
     helicopter.rope = spawn("script_model", helicopter.origin);
-    /#
-        assert(isdefined(helicopter.rope));
-    #/
+    assert(isdefined(helicopter.rope));
     helicopter.rope useanimtree("generic");
     helicopter.rope setmodel(#"hash_142fee14ea7bdb9b");
     helicopter.rope linkto(helicopter, "tag_origin_animate");
@@ -1137,9 +1123,7 @@ function private function_554b5692(helicopter) {
 // Checksum 0xc4975a27, Offset: 0x5138
 // Size: 0x104
 function private function_f9a7a3d8(helicopter) {
-    /#
-        assert(isdefined(helicopter.rope));
-    #/
+    assert(isdefined(helicopter.rope));
     helicopter endon(#"death", #"hash_69d2c68fdf86b6d7", #"hash_3478587618f28c8");
     helicopter.rope endon(#"death");
     helicopter.rope show();
@@ -1152,9 +1136,7 @@ function private function_f9a7a3d8(helicopter) {
 // Checksum 0x54b2ac9b, Offset: 0x5248
 // Size: 0x88
 function private function_5db7fc11(helicopter) {
-    /#
-        assert(isdefined(helicopter.rope));
-    #/
+    assert(isdefined(helicopter.rope));
     while (true) {
         helicopter.rope animation::play(#"hash_217d8ba9d8489561", helicopter, "tag_origin_animate", 1, 0.1, 0.1, undefined, undefined, undefined, 0);
     }
@@ -1280,8 +1262,8 @@ function private function_d23cf101(origin, angles, context) {
     context.helicopter = helicopter;
     var_99c4651a = 0;
     if (var_99c4651a) {
-        helicopter.target_offset = vectorscale((0, 0, -1), 25);
-        target_set(helicopter, vectorscale((0, 0, -1), 25));
+        helicopter.target_offset = (0, 0, -25);
+        target_set(helicopter, (0, 0, -25));
     }
     helicopter setrotorspeed(1);
     aitype = "spawner_mp_swat_buddy_team1_male";
@@ -1624,7 +1606,7 @@ function private function_bdba96e1() {
     waitframe(1);
     droplocations = struct::get_array("bounty_drop", "variantname");
     droppoint = droplocations[randomint(droplocations.size)].origin;
-    droppoint = droppoint + vectorscale((0, 0, 1), 2000);
+    droppoint = droppoint + (0, 0, 2000);
     startpoint = helicopter::getvalidrandomstartnode(droppoint).origin;
     startpoint = (startpoint[0], startpoint[1], droppoint[2]);
     timer = randomintrange(level.var_8e8e80c6, level.var_374a483e);
@@ -1643,7 +1625,7 @@ function private function_bdba96e1() {
     supplydropveh vehicle::toggle_sounds(1);
     supplydrop = spawn("script_model", (0, 0, 0));
     supplydrop setmodel("wpn_t7_drop_box_wz");
-    supplydrop linkto(supplydropveh, "tag_cargo_attach", vectorscale((0, 0, -1), 30));
+    supplydrop linkto(supplydropveh, "tag_cargo_attach", (0, 0, -30));
     supplydropveh.supplydrop = supplydrop;
     supplydropveh function_a57c34b7(droppoint, 1, 0);
     supplydropveh thread function_6d1352cb(droppoint);
@@ -1662,7 +1644,7 @@ function private function_6d1352cb(droppoint) {
         if (currdist < 225 * 225) {
             self setspeed(0);
             self.supplydrop unlink();
-            self.supplydrop moveto(droppoint - vectorscale((0, 0, 1), 1990), 2);
+            self.supplydrop moveto(droppoint - (0, 0, 1990), 2);
             self.supplydrop playsound("evt_supply_drop");
             self.supplydrop thread function_9ec1d15();
             self.supplydrop = undefined;
@@ -1687,7 +1669,7 @@ function private function_9ec1d15() {
     self.trigger = spawn("trigger_radius_use", self.origin, 0, 100, 60);
     self.trigger setcursorhint("HINT_INTERACTIVE_PROMPT");
     self.trigger triggerignoreteam();
-    self.gameobject = gameobjects::create_use_object(#"neutral", self.trigger, [], vectorscale((0, 0, 1), 60), "bounty_drop", 1);
+    self.gameobject = gameobjects::create_use_object(#"neutral", self.trigger, [], (0, 0, 60), "bounty_drop", 1);
     self.gameobject gameobjects::set_objective_entity(self.gameobject);
     self.gameobject gameobjects::set_visible_team(#"any");
     self.gameobject gameobjects::allow_use(#"any");

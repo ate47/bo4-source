@@ -9,22 +9,6 @@
 class cmp_prop_controls : cluielem {
 
     // Namespace cmp_prop_controls/mp_prop_controls
-    // Params 0, eflags: 0x8
-    // Checksum 0xf50f004e, Offset: 0x190
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_prop_controls/mp_prop_controls
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xb028c754, Offset: 0x260
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cmp_prop_controls/mp_prop_controls
     // Params 1, eflags: 0x0
     // Checksum 0xa516b94d, Offset: 0x230
     // Size: 0x24

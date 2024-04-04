@@ -128,7 +128,7 @@ function function_da5829be(localclientnum, oldval, newval, bnewent, binitialsnap
         self playsound(localclientnum, #"hash_3765e25049981166");
         self.var_4cd8e6cb = self playloopsound(#"hash_170aa1970243fc4a");
     }
-    self.var_d1f92a1c = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 4000));
+    self.var_d1f92a1c = util::spawn_model(localclientnum, "tag_origin", self.origin + (0, 0, 4000));
     switch (newval) {
     case 2:
         var_cc6ab1e6 = "beam8_zm_scepter_ray_lvl2";

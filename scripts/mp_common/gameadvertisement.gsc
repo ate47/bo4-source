@@ -53,9 +53,7 @@ function sessionadvertisementcheck() {
         wait(sessionadvertcheckwait);
         advertise = [[ level.var_a962eeb6 ]]();
         if (!isdefined(currentadvertisedstatus) || isdefined(advertise) && currentadvertisedstatus != advertise) {
-            /#
-                println("<unknown string>" + (advertise ? "<unknown string>" : "<unknown string>"));
-            #/
+            println("<unknown string>" + (advertise ? "<unknown string>" : "<unknown string>"));
             setadvertisedstatus(advertise);
         }
     }
@@ -284,10 +282,10 @@ function sessionadvertismentupdatedebughud() {
                 sessionadverthud_3b = host sessionadvertismentcreatedebughud(3, 0);
                 sessionadverthud_4a = host sessionadvertismentcreatedebughud(4, -20);
                 sessionadverthud_4b = host sessionadvertismentcreatedebughud(4, 0);
-                sessionadverthud_1a.color = vectorscale((0, 1, 0), 0.5);
-                sessionadverthud_1b.color = vectorscale((0, 1, 0), 0.5);
-                sessionadverthud_2a.color = vectorscale((0, 1, 0), 0.5);
-                sessionadverthud_2b.color = vectorscale((0, 1, 0), 0.5);
+                sessionadverthud_1a.color = (0, 0.5, 0);
+                sessionadverthud_1b.color = (0, 0.5, 0);
+                sessionadverthud_2a.color = (0, 0.5, 0);
+                sessionadverthud_2b.color = (0, 0.5, 0);
             }
             if (isdefined(sessionadverthud_0)) {
                 if (showdebughud == 0) {
@@ -314,7 +312,7 @@ function sessionadvertismentupdatedebughud() {
                 if (level.sessionadvertstatus == 1) {
                     sessionadverthud_0.color = (1, 1, 1);
                 } else {
-                    sessionadverthud_0.color = vectorscale((1, 0, 0), 0.9);
+                    sessionadverthud_0.color = (0.9, 0, 0);
                 }
                 sessionadverthud_0 settext(level.sessionadverthud_0_text);
                 if (level.sessionadverthud_1a_text != "<unknown string>") {

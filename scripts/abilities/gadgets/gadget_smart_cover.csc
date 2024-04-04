@@ -340,7 +340,7 @@ function startmicrowavefx(localclientnum) {
     turret endon(#"beam_stop");
     turret.should_update_fx = 1;
     angles = turret.angles;
-    origin = turret.origin + vectorscale((0, 0, 1), 30);
+    origin = turret.origin + (0, 0, 30);
     microwavefxent = spawn(localclientnum, origin, "script_model");
     microwavefxent setmodel(#"tag_microwavefx");
     microwavefxent.angles = angles;
@@ -365,7 +365,7 @@ function startmicrowavefx(localclientnum) {
             continue;
         }
         angles = turret.angles;
-        origin = turret.origin + vectorscale((0, 0, 1), 30);
+        origin = turret.origin + (0, 0, 30);
         forward = anglestoforward(angles);
         forward = vectorscale(forward, (isdefined(level.smartcoversettings.bundle.var_b345c668) ? level.smartcoversettings.bundle.var_b345c668 : 0) + 40);
         var_e2e9fefa = anglestoforward(angles + (0, 55 / 3, 0));
@@ -484,7 +484,7 @@ function stop_or_start_fx(localclientnum, fxname, tag, start, team) {
         self play_fx_on_tag(localclientnum, fxname, tag, team);
         /#
             if (fxname == "<unknown string>") {
-                render_debug_sphere(tag, vectorscale((1, 1, 0), 0.5), fxname);
+                render_debug_sphere(tag, (0.5, 0.5, 0), fxname);
             } else {
                 render_debug_sphere(tag, (0, 1, 0), fxname);
             }

@@ -140,7 +140,6 @@ function private function_fa444840() {
     self.var_3dc66299.currentweapon = undefined;
     level waittill(#"game_playing");
     while (true) {
-        result = undefined;
         result = self waittill(#"weapon_change_complete", #"death");
         if (result._notify == #"death") {
             self function_43e771ee(result._notify);
@@ -245,13 +244,11 @@ function private wall_run() {
     self.lastwallrunstarttime = 0;
     self.timespentwallrunninginlife = 0;
     while (true) {
-        notification = undefined;
         notification = self waittill(#"wallrun_begin", #"death", #"disconnect", #"stop_player_monitor_wall_run");
         if (notification._notify == "death") {
             break;
         }
         self.lastwallrunstarttime = gettime();
-        notification = undefined;
         notification = self waittill(#"wallrun_end", #"death", #"disconnect", #"stop_player_monitor_wall_run");
         self.timespentwallrunninginlife = self.timespentwallrunninginlife + gettime() - self.lastwallrunstarttime;
         if (notification._notify == "death") {
@@ -271,13 +268,11 @@ function private swimming() {
     self.lastswimmingstarttime = 0;
     self.timespentswimminginlife = 0;
     while (true) {
-        notification = undefined;
         notification = self waittill(#"swimming_begin", #"death", #"disconnect", #"stop_player_monitor_swimming");
         if (notification._notify == "death") {
             break;
         }
         self.lastswimmingstarttime = gettime();
-        notification = undefined;
         notification = self waittill(#"swimming_end", #"death", #"disconnect", #"stop_player_monitor_swimming");
         self.timespentswimminginlife = self.timespentswimminginlife + gettime() - self.lastswimmingstarttime;
         if (notification._notify == "death") {
@@ -297,14 +292,12 @@ function private slide() {
     self.lastslidestarttime = 0;
     self.numberofslidesinlife = 0;
     while (true) {
-        notification = undefined;
         notification = self waittill(#"slide_begin", #"death", #"disconnect", #"stop_player_monitor_slide");
         if (notification._notify == "death") {
             break;
         }
         self.lastslidestarttime = gettime();
         self.numberofslidesinlife++;
-        notification = undefined;
         notification = self waittill(#"slide_end", #"death", #"disconnect", #"stop_player_monitor_slide");
         if (notification._notify == "death") {
             break;
@@ -323,14 +316,12 @@ function private doublejump() {
     self.lastdoublejumpstarttime = 0;
     self.numberofdoublejumpsinlife = 0;
     while (true) {
-        notification = undefined;
         notification = self waittill(#"doublejump_begin", #"death", #"disconnect", #"stop_player_monitor_doublejump");
         if (notification._notify == "death") {
             break;
         }
         self.lastdoublejumpstarttime = gettime();
         self.numberofdoublejumpsinlife++;
-        notification = undefined;
         notification = self waittill(#"doublejump_end", #"death", #"disconnect", #"stop_player_monitor_doublejump");
         if (notification._notify == "death") {
             break;

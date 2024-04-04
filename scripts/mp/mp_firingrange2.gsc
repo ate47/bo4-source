@@ -205,7 +205,6 @@ function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
     }
@@ -216,8 +215,8 @@ function watchkilltrigger() {
 // Checksum 0xb1a2efdb, Offset: 0x1d18
 // Size: 0x114
 function function_89088577() {
-    spawncollision("collision_clip_wall_64x64x10", "collider", (-141.336, 2606, 12.6981), vectorscale((1, 0, 0), 334.398));
-    spawncollision("collision_clip_wall_64x64x10", "collider", (-141.336, 2670, 12.6981), vectorscale((1, 0, 0), 334.398));
+    spawncollision("collision_clip_wall_64x64x10", "collider", (-141.336, 2606, 12.6981), (334.398, 0, 0));
+    spawncollision("collision_clip_wall_64x64x10", "collider", (-141.336, 2670, 12.6981), (334.398, 0, 0));
     spawncollision("collision_clip_wall_64x64x10", "collider", (-110, 2686.2, 12.7937), (334.698, 270, 2.63793e-06));
     spawncollision("collision_clip_wall_64x64x10", "collider", (-86, 2686.2, 12.7937), (334.698, 270, 2.63793e-06));
 }
@@ -250,7 +249,6 @@ function vectoangles(vector) {
 function triggercheck(target) {
     self endon(#"game_ended");
     while (true) {
-        result = undefined;
         result = self waittill(#"trigger");
         distance = distance(target.origin, self.origin);
         if (distance <= 90) {

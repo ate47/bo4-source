@@ -124,9 +124,7 @@ function global_spawn_throttle(n_count_per_network_frame = 4) {
 // Checksum 0x3e275a8e, Offset: 0x778
 // Size: 0xdc
 function spawn_prethink() {
-    /#
-        assert(self != level);
-    #/
+    assert(self != level);
     if (isdefined(self.script_aigroup)) {
         aigroup_init(self.script_aigroup, self);
     }
@@ -154,9 +152,7 @@ function spawn_think(spawner) {
         return;
     }
     self.spawn_think_thread_active = 1;
-    /#
-        assert(isactor(self) || isvehicle(self), "<unknown string>" + "<unknown string>");
-    #/
+    assert(isactor(self) || isvehicle(self), "<unknown string>" + "<unknown string>");
     if (!isvehicle(self)) {
         if (!isalive(self)) {
             return;
@@ -176,12 +172,8 @@ function spawn_think(spawner) {
     }
     if (isai(self)) {
         spawn_think_action(spawner);
-        /#
-            assert(isalive(self));
-        #/
-        /#
-            assert(isdefined(self.team));
-        #/
+        assert(isalive(self));
+        assert(isdefined(self.team));
     }
     self thread run_spawn_functions();
     self.finished_spawning = 1;
@@ -292,15 +284,11 @@ function spawn_think_action(spawner) {
         colors::set_force_color(self.script_forcecolor);
     }
     if (isdefined(self.script_ignoreme)) {
-        /#
-            assert(self.script_ignoreme == 1, "<unknown string>");
-        #/
+        assert(self.script_ignoreme == 1, "<unknown string>");
         self val::set(#"spawn_think", "ignoreme", 1);
     }
     if (isdefined(self.script_ignoreall)) {
-        /#
-            assert(self.script_ignoreall == 1, "<unknown string>");
-        #/
+        assert(self.script_ignoreall == 1, "<unknown string>");
         self val::set(#"spawn_think", "ignoreall", 1);
     }
     if (isdefined(self.script_grenades)) {
@@ -427,9 +415,7 @@ function go_to_node(node, goal_type, optional_arrived_at_node_func) {
 // Checksum 0xa93b5458, Offset: 0x15d0
 // Size: 0x14a
 function get_least_used_from_array(array) {
-    /#
-        assert(array.size > 0, "<unknown string>");
-    #/
+    assert(array.size > 0, "<unknown string>");
     if (array.size == 1) {
         return array[0];
     }
@@ -486,17 +472,13 @@ function go_to_node_using_funcs(node, get_target_func, set_goal_func_quits, opti
         }
         if (isdefined(node.script_ent_flag_set)) {
             if (!self flag::exists(node.script_ent_flag_set)) {
-                /#
-                    assertmsg("<unknown string>" + node.script_ent_flag_set + "<unknown string>");
-                #/
+                assertmsg("<unknown string>" + node.script_ent_flag_set + "<unknown string>");
             }
             self flag::set(node.script_ent_flag_set);
         }
         if (isdefined(node.script_ent_flag_clear)) {
             if (!self flag::exists(node.script_ent_flag_clear)) {
-                /#
-                    assertmsg("<unknown string>" + node.script_ent_flag_clear + "<unknown string>");
-                #/
+                assertmsg("<unknown string>" + node.script_ent_flag_clear + "<unknown string>");
             }
             self flag::clear(node.script_ent_flag_clear);
         }
@@ -783,15 +765,15 @@ function aigroup_debug() {
                     debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     var_c708e6e1 = var_c708e6e1 + 22;
                     foreach (ai in ais) {
-                        sphere(ai.origin + vectorscale((0, 0, 1), 72), 4, (1, 1, 0), 1, 0, 8, 1);
-                        line(ai.origin + vectorscale((0, 0, 1), 72), ai.origin + vectorscale((0, 0, 1), 92), (1, 1, 0), 1, 1);
+                        sphere(ai.origin + (0, 0, 72), 4, (1, 1, 0), 1, 0, 8, 1);
+                        line(ai.origin + (0, 0, 72), ai.origin + (0, 0, 92), (1, 1, 0), 1, 1);
                     }
                     foreach (spawner in level._ai_group[var_d4f26db9].spawners) {
                         if (isdefined(spawner) && spawner.count > 0) {
-                            sphere(spawner.origin + vectorscale((0, 0, 1), 10), 4, (1, 0, 0), 1, 0, 8, 1);
-                            line(spawner.origin + vectorscale((0, 0, 1), 10), spawner.origin + vectorscale((0, 0, 1), 50), (1, 0, 0), 1, 1);
-                            print3d(spawner.origin + vectorscale((0, 0, 1), 20), function_9e72a96(spawner.archetype), (1, 0, 0), 1, 0.4, 1);
-                            print3d(spawner.origin + vectorscale((0, 0, 1), 30), "<unknown string>" + spawner.count, (1, 0, 0), 1, 0.4, 1);
+                            sphere(spawner.origin + (0, 0, 10), 4, (1, 0, 0), 1, 0, 8, 1);
+                            line(spawner.origin + (0, 0, 10), spawner.origin + (0, 0, 50), (1, 0, 0), 1, 1);
+                            print3d(spawner.origin + (0, 0, 20), function_9e72a96(spawner.archetype), (1, 0, 0), 1, 0.4, 1);
+                            print3d(spawner.origin + (0, 0, 30), "<unknown string>" + spawner.count, (1, 0, 0), 1, 0.4, 1);
                         }
                     }
                 }
@@ -1150,9 +1132,7 @@ function set_ai_group_cleared_count(aigroup, count) {
 // Checksum 0xb72fcdcc, Offset: 0x42d0
 // Size: 0x6c
 function waittill_ai_group_cleared(aigroup) {
-    /#
-        assert(isdefined(level._ai_group[aigroup]), "<unknown string>" + aigroup + "<unknown string>");
-    #/
+    assert(isdefined(level._ai_group[aigroup]), "<unknown string>" + aigroup + "<unknown string>");
     level flag::wait_till(aigroup + "_cleared");
 }
 
@@ -1350,9 +1330,7 @@ function remove_global_spawn_function(team, func) {
 // Checksum 0x26f9c0d, Offset: 0x4dd0
 // Size: 0xc6
 function add_spawn_function(spawn_func, ...) {
-    /#
-        assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
-    #/
+    assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
     func = [];
     func[#"function"] = spawn_func;
     func[#"params"] = vararg;
@@ -1367,9 +1345,7 @@ function add_spawn_function(spawn_func, ...) {
 // Checksum 0xfba74d5c, Offset: 0x4ea0
 // Size: 0x112
 function remove_spawn_function(func) {
-    /#
-        assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
-    #/
+    assert(!isdefined(level._loadstarted) || !isalive(self), "<unknown string>");
     if (isdefined(self.spawn_funcs)) {
         array = [];
         for (i = 0; i < self.spawn_funcs.size; i++) {
@@ -1377,9 +1353,7 @@ function remove_spawn_function(func) {
                 array[array.size] = self.spawn_funcs[i];
             }
         }
-        /#
-            assert(self.spawn_funcs.size != array.size, "<unknown string>");
-        #/
+        assert(self.spawn_funcs.size != array.size, "<unknown string>");
         self.spawn_funcs = array;
     }
 }
@@ -1389,12 +1363,8 @@ function remove_spawn_function(func) {
 // Checksum 0xf61701db, Offset: 0x4fc0
 // Size: 0xec
 function add_spawn_function_group(str_value, str_key = "targetname", func_spawn, param_1, param_2, param_3, param_4, param_5) {
-    /#
-        assert(isdefined(str_value), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(func_spawn), "<unknown string>");
-    #/
+    assert(isdefined(str_value), "<unknown string>");
+    assert(isdefined(func_spawn), "<unknown string>");
     a_spawners = getspawnerarray(str_value, str_key);
     array::run_all(a_spawners, &add_spawn_function, func_spawn, param_1, param_2, param_3, param_4, param_5);
 }
@@ -1404,12 +1374,8 @@ function add_spawn_function_group(str_value, str_key = "targetname", func_spawn,
 // Checksum 0xaa3c2ba4, Offset: 0x50b8
 // Size: 0xdc
 function add_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_2, param_3, param_4, param_5) {
-    /#
-        assert(isdefined(str_aigroup), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(func_spawn), "<unknown string>");
-    #/
+    assert(isdefined(str_aigroup), "<unknown string>");
+    assert(isdefined(func_spawn), "<unknown string>");
     a_spawners = getspawnerarray(str_aigroup, "script_aigroup");
     array::run_all(a_spawners, &add_spawn_function, func_spawn, param_1, param_2, param_3, param_4, param_5);
 }
@@ -1419,12 +1385,8 @@ function add_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_2, 
 // Checksum 0x958fc180, Offset: 0x51a0
 // Size: 0xcc
 function remove_spawn_function_ai_group(str_aigroup, func_spawn, param_1, param_2, param_3, param_4, param_5) {
-    /#
-        assert(isdefined(str_aigroup), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(func_spawn), "<unknown string>");
-    #/
+    assert(isdefined(str_aigroup), "<unknown string>");
+    assert(isdefined(func_spawn), "<unknown string>");
     a_spawners = getspawnerarray(str_aigroup, "script_aigroup");
     array::run_all(a_spawners, &remove_spawn_function, func_spawn);
 }
@@ -1437,9 +1399,7 @@ function simple_spawn(name_or_spawners, spawn_func, ...) {
     spawners = [];
     if (isstring(name_or_spawners)) {
         spawners = getentarray(name_or_spawners, "targetname");
-        /#
-            assert(spawners.size, "<unknown string>" + name_or_spawners + "<unknown string>");
-        #/
+        assert(spawners.size, "<unknown string>" + name_or_spawners + "<unknown string>");
     } else {
         if (!isdefined(name_or_spawners)) {
             name_or_spawners = [];
@@ -1473,9 +1433,7 @@ function simple_spawn(name_or_spawners, spawn_func, ...) {
 function simple_spawn_single(name_or_spawner, spawn_func, ...) {
     a_args = arraycombine(array(name_or_spawner, spawn_func), vararg, 1, 0);
     ai = util::single_func_argarray(undefined, &simple_spawn, a_args);
-    /#
-        assert(ai.size <= 1, "<unknown string>");
-    #/
+    assert(ai.size <= 1, "<unknown string>");
     if (ai.size) {
         return ai[0];
     }

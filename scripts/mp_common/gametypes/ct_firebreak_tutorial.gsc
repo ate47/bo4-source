@@ -855,7 +855,6 @@ function function_1bdf6fc7() {
     self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_fire_core_button_hold"));
     var_af24b2c1 = 0;
     do {
-        s_notify = undefined;
         s_notify = self waittill(#"hash_251bbd6b8ba2fdfe", #"hash_4aaf6d6479e7cf20");
         if (s_notify._notify == #"hash_4aaf6d6479e7cf20") {
             self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_fire_core_button_rele"));
@@ -924,7 +923,6 @@ function function_2e0dee4d() {
     level endon(#"combattraining_logic_finished", #"hash_364cd924c426f239");
     var_6b55373b = getweapon(#"gadget_radiation_field");
     while (!(isdefined(level.var_b43c22e4) && level.var_b43c22e4)) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify.weapon === var_6b55373b) {
             level notify(#"vo_on_self_burn");
@@ -1571,7 +1569,6 @@ function function_bfebe12d() {
     wait(1);
     var_7cfb8d51 = self gamepadusedlast() ? #"hash_67a58d84d0f91968" : #"hash_4f0b2e3958c55f94";
     self thread ct_utils::function_61c3d59c(var_7cfb8d51, array("vox_tvoi_tutor_fire_score_earned_0", "vox_tvoi_tutor_fire_score_earned_1"));
-    s_notify = undefined;
     s_notify = self waittill(#"killstreak_used");
     self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_fire_score_activate"));
     self thread function_c513c2a2();
@@ -1607,7 +1604,6 @@ function function_c513c2a2() {
     var_b82f5433 = array("vox_tvoi_tutor_fire_score_strafe_0", "vox_tvoi_tutor_fire_score_strafe_1");
     self thread ct_vo::function_625a37f9(var_b82f5433, "strafe_start", 1, 1, 1);
     while (!(isdefined(level.var_fe3f4aa0) && level.var_fe3f4aa0)) {
-        waitresult = undefined;
         waitresult = level.var_e1a1f65c waittill(#"noteworthy");
         noteworthy = waitresult.noteworthy;
         noteworthynode = waitresult.noteworthy_node;
@@ -2048,7 +2044,6 @@ function function_53e140e6() {
         self thread ct_utils::function_61c3d59c(#"hash_787416c9e1a64d15");
         var_af24b2c1 = 0;
         do {
-            s_notify = undefined;
             s_notify = self waittill(#"hash_251bbd6b8ba2fdfe", #"hash_4aaf6d6479e7cf20");
             if (s_notify._notify == #"hash_4aaf6d6479e7cf20") {
                 self ct_vo::function_831e0584(array("<unknown string>"));

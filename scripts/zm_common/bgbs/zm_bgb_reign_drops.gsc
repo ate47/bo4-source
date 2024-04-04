@@ -99,7 +99,7 @@ function function_7f3b4877() {
 // Size: 0x2ce
 function function_dfc73f65(n_position) {
     v_powerup = self bgb::get_player_dropped_powerup_origin();
-    v_up = vectorscale((0, 0, 1), 5);
+    v_up = (0, 0, 5);
     var_85660237 = v_powerup + anglestoforward(self.angles) * 60 + v_up;
     var_97efa74a = var_85660237 + anglestoforward(self.angles) * 60 + v_up;
     switch (n_position) {

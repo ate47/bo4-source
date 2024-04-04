@@ -277,7 +277,7 @@ function thundergun_debug_print(msg, color) {
         if (!isdefined(color)) {
             color = (1, 1, 1);
         }
-        print3d(self.origin + vectorscale((0, 0, 1), 60), msg, color, 1, 1, 40);
+        print3d(self.origin + (0, 0, 60), msg, color, 1, 1, 40);
     #/
 }
 
@@ -418,7 +418,6 @@ function thundergun_sound_thread() {
     self endon(#"disconnect");
     self waittill(#"spawned_player");
     for (;;) {
-        result = undefined;
         result = self waittill(#"grenade_fire", #"death", #"player_downed", #"weapon_change", #"grenade_pullback", #"disconnect");
         if ((result._notify == "weapon_change" || result._notify == "grenade_fire") && self getcurrentweapon() == level.w_thundergun) {
             self playloopsound(#"tesla_idle", 0.25);

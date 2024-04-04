@@ -43,12 +43,8 @@ function main() {
 // Checksum 0x8134e42c, Offset: 0x418
 // Size: 0xc2
 function give_gesture(gestureweapon) {
-    /#
-        assert(gestureweapon != level.weaponnone, "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(self.gestureweapon) || self.gestureweapon == level.weaponnone, "<unknown string>");
-    #/
+    assert(gestureweapon != level.weaponnone, "<unknown string>");
+    assert(!isdefined(self.gestureweapon) || self.gestureweapon == level.weaponnone, "<unknown string>");
     self setactionslot(3, "taunt");
     self giveweapon(gestureweapon);
     self.gestureweapon = gestureweapon;
@@ -244,7 +240,6 @@ function function_f3e2696f(ent, weapon, weapon_options, timeout, var_1e89628f, v
         return;
     }
     while (true) {
-        result = undefined;
         result = self waittilltimeout(timeout, #"grenade_pullback", #"offhand_fire", #"offhand_end");
         if (result._notify == #"timeout") {
             break;

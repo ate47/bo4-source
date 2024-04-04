@@ -104,7 +104,6 @@ function custom_class_update(localclientnum) {
     level endon("CustomClass_focus" + localclientnum);
     level endon("CustomClass_remove" + localclientnum);
     level endon("CustomClass_closed" + localclientnum);
-    waitresult = undefined;
     waitresult = level waittill("CustomClass_update" + localclientnum);
     base_weapon_slot = waitresult.base_weapon_slot;
     var_f0bf9259 = waitresult.weapon;
@@ -182,7 +181,6 @@ function custom_class_attachment_select_focus(localclientnum) {
     level endon("CustomClass_update" + localclientnum);
     level endon("CustomClass_remove" + localclientnum);
     level endon("CustomClass_closed" + localclientnum);
-    waitresult = undefined;
     waitresult = level waittill("CustomClass_focus" + localclientnum);
     level endon("CustomClass_focus" + localclientnum);
     base_weapon_slot = waitresult.base_weapon_slot;
@@ -268,7 +266,6 @@ function custom_class_closed(localclientnum) {
     level endon("CustomClass_update" + localclientnum);
     level endon("CustomClass_focus" + localclientnum);
     level endon("CustomClass_remove" + localclientnum);
-    params = undefined;
     params = level waittill(#"customclass_closed");
     if (params.param1 == localclientnum) {
         if (isdefined(level.weapon_script_model[localclientnum])) {
@@ -319,7 +316,7 @@ function show_paintshop_bg(localclientnum) {
     paintshop_bg = getent(localclientnum, "paintshop_black", "targetname");
     if (isdefined(paintshop_bg)) {
         paintshop_bg show();
-        paintshop_bg moveto(level.paintshophiddenposition[localclientnum] + vectorscale((0, 0, 1), 227), 0.01);
+        paintshop_bg moveto(level.paintshophiddenposition[localclientnum] + (0, 0, 227), 0.01);
     }
 }
 
@@ -603,12 +600,8 @@ function private function_3e2b5b60(localclientnum, weaponmodel) {
 // Size: 0x61c
 function update_weapon_script_model(localclientnum, newweaponstring, var_f020955, should_update_weapon_options = 1, is_item_unlocked = 1, xmodel_scale = 1, xmodel_name = #"") {
     /#
-        /#
-            assert(isdefined(newweaponstring), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(var_f020955), "<unknown string>");
-        #/
+        assert(isdefined(newweaponstring), "<unknown string>");
+        assert(isdefined(var_f020955), "<unknown string>");
     #/
     level.last_weapon_name[localclientnum] = isdefined(newweaponstring) ? newweaponstring : #"ar_accurate_t8";
     level.var_8ad413c[localclientnum] = isdefined(var_f020955) ? var_f020955 : "";
@@ -728,7 +721,6 @@ function handle_cac_customization_focus(localclientnum) {
     level endon(#"disconnect");
     level endon("cam_customization_closed" + localclientnum);
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill("cam_customization_focus" + localclientnum);
         base_weapon_slot = waitresult.base_weapon_slot;
         notetrack = waitresult.notetrack;

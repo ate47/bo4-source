@@ -233,7 +233,6 @@ function perk_start_up() {
     if (isdefined(self.script_int)) {
         power_zone = self.script_int;
         for (int = undefined; int != power_zone; int = waitresult.is_on) {
-            waitresult = undefined;
             waitresult = level waittill(#"power_on");
         }
     } else {
@@ -270,7 +269,7 @@ function vending_machine_flicker_light(fx_light, duration) {
 // Checksum 0x508992a6, Offset: 0x15d8
 // Size: 0xc4
 function play_perk_fx_on_client(client_num, fx_light, duration) {
-    fxobj = spawn(client_num, self.origin + vectorscale((0, 0, -1), 50), "script_model");
+    fxobj = spawn(client_num, self.origin + (0, 0, -50), "script_model");
     fxobj setmodel(#"tag_origin");
     util::playfxontag(client_num, level._effect[fx_light], fxobj, "tag_origin");
     wait(duration);
@@ -340,12 +339,8 @@ function function_bb184fed(localclientnum, oldval, newval, bnewent, binitialsnap
             var_c1cbeea5 = #"tag_origin";
             var_fe0b737a = level._effect[#"hash_416ffb4657814dcd"];
         }
-        /#
-            assert(isdefined(var_c1cbeea5), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(var_fe0b737a), "<unknown string>");
-        #/
+        assert(isdefined(var_c1cbeea5), "<unknown string>");
+        assert(isdefined(var_fe0b737a), "<unknown string>");
         forcestreamxmodel(self.model, 1, 1);
         forcestreamxmodel(var_c1cbeea5, 1, -1);
         mdl_icon = util::spawn_model(localclientnum, var_c1cbeea5, self gettagorigin("tag_icon_link"), self.angles);
@@ -381,9 +376,7 @@ function function_35ba0b0e(localclientnum, n_slot) {
     var_3e311473 = self zm_loadout::get_loadout_item(localclientnum, "specialty" + n_perk);
     /#
         if (!isdemoplaying() && !(isdefined(level.b_game_ended) && level.b_game_ended)) {
-            /#
-                assert(isdefined(var_3e311473), "<unknown string>");
-            #/
+            assert(isdefined(var_3e311473), "<unknown string>");
         }
     #/
     if (!isdefined(var_3e311473)) {
@@ -649,7 +642,7 @@ function function_ab7cd429(localclientnum, oldval, newval, bnewent, binitialsnap
     level notify(#"hash_4d8d403fdb281b69");
     wait(0.5);
     if (newval == 0) {
-        var_6d877f48 = array::random(array(vectorscale((1, 1, 1), 7), vectorscale((-1, -1, -1), 7), vectorscale((-1, 1, 1), 7), vectorscale((1, -1, -1), 7)));
+        var_6d877f48 = array::random(array((7, 7, 7), (-7, -7, -7), (-7, 7, 7), (7, -7, -7)));
         var_aaf8da70 rotateto(level.var_245eb09f + var_6d877f48, 0.2);
         wait(0.8);
         var_aaf8da70 rotateto(level.var_245eb09f, 0.1);

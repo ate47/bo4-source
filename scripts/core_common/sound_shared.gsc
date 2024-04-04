@@ -88,9 +88,7 @@ function play_on_tag(alias, tag, ends_on_death) {
     }
     org playsoundwithnotify(alias, "sounddone");
     if (isdefined(ends_on_death)) {
-        /#
-            assert(ends_on_death, "<unknown string>");
-        #/
+        assert(ends_on_death, "<unknown string>");
         wait_for_sounddone_or_death(org);
         waitframe(1);
     } else {
@@ -181,9 +179,7 @@ function delete_on_death_wait(ent, sounddone) {
 // Checksum 0xef994a01, Offset: 0x898
 // Size: 0x17e
 function play_on_players(sound, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     if (level.splitscreen) {
         if (isdefined(level.players[0])) {
             level.players[0] playlocalsound(sound);

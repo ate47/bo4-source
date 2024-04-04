@@ -114,7 +114,6 @@ function electric_cherry_reload_attack() {
     }
     self function_4debd1a8();
     while (true) {
-        s_results = undefined;
         s_results = self waittill(#"reload_start");
         w_current = self getcurrentweapon();
         n_clip_current = self getweaponammoclip(w_current);

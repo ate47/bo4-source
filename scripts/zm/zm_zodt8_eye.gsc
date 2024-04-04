@@ -767,16 +767,14 @@ function function_a55a0339(str_loc) {
     if (!isdefined(self.var_431d02e5)) {
         self.var_431d02e5 = spawnstruct();
         self.var_431d02e5.targetname = "bs_pth_hld_" + str_loc;
-        self.var_431d02e5.origin = vectorscale((0, 0, -1), 9999);
+        self.var_431d02e5.origin = (0, 0, -9999);
         self.var_431d02e5.angles = (0, 0, 0);
     }
     var_461e7e58 = struct::get("bs_pth_st_" + str_loc, "targetname");
     if (!isdefined(var_461e7e58)) {
         var_461e7e58 = self.var_431d02e5;
     }
-    /#
-        assert(isdefined(var_461e7e58));
-    #/
+    assert(isdefined(var_461e7e58));
     self.a_s_path = [];
     if (!isdefined(self.a_s_path)) {
         self.a_s_path = [];
@@ -916,9 +914,9 @@ function function_8f3497ee(n_stage, str_loc) {
         self clientfield::set("bs_bdy_dmg_fx_cf", self.var_914750d);
         a_iceberg = getentarray("forget_what_you_know", "targetname");
         foreach (mdl in a_iceberg) {
-            mdl.origin = mdl.origin - vectorscale((0, 0, 1), 13800);
+            mdl.origin = mdl.origin - (0, 0, 13800);
             mdl show();
-            mdl.origin = mdl.origin + vectorscale((0, 0, 1), 13800);
+            mdl.origin = mdl.origin + (0, 0, 13800);
             mdl clientfield::set("" + #"hash_15b23de7589e61a", 1);
         }
         function_901c5ffe("pd", 1);
@@ -1066,7 +1064,7 @@ function function_9bc73093(n_stage) {
         foreach (e_player in level.players) {
             e_player clientfield::set("bs_player_snow_cf", 0);
         }
-        self.origin = self.origin - vectorscale((0, 0, 1), 9999);
+        self.origin = self.origin - (0, 0, 9999);
         self boss_arrive();
         if (isdefined(self.var_29b322f2)) {
             array::remove_undefined(self.var_29b322f2);
@@ -1300,7 +1298,6 @@ function function_bb528a4b() {
     }
     while (true) {
         b_cancelled = 0;
-        s_notify = undefined;
         s_notify = self.e_damage waittill(#"damage");
         n_damage = s_notify.amount;
         w_weapon = s_notify.weapon;
@@ -1429,7 +1426,6 @@ function function_3d6eaad5() {
     var_7350b8a6 = 0;
     while (true) {
         b_cancelled = 0;
-        s_notify = undefined;
         s_notify = self.e_damage waittill(#"damage");
         n_damage = s_notify.amount;
         w_weapon = s_notify.weapon;
@@ -1485,7 +1481,6 @@ function function_ae4a013d() {
     var_8ce07a9c = 0;
     var_7350b8a6 = 0;
     while (true) {
-        s_notify = undefined;
         s_notify = self.e_damage waittill(#"damage");
         n_damage = s_notify.amount;
         if (isalive(s_notify.attacker) && isplayer(s_notify.attacker)) {
@@ -1859,9 +1854,7 @@ function function_5382ba1b(a_vols) {
             var_28f5cd30 = e_vol;
         }
     }
-    /#
-        assert(isdefined(var_28f5cd30.script_int));
-    #/
+    assert(isdefined(var_28f5cd30.script_int));
     var_2370b91b = var_28f5cd30.script_int;
     for (i = 0; i < self.var_3c63665.size; i++) {
         if (self.var_3c63665[i][0].script_int == var_2370b91b) {
@@ -1944,9 +1937,7 @@ function function_3413fdf9(v_loc, n_time) {
 // Size: 0x3b0
 function function_d07ce2a9(n_path_id, var_a3d1842b, var_6df65756) {
     level endon(#"hash_14400d2bff068132", #"intermission");
-    /#
-        assert(isdefined(self.var_3c63665));
-    #/
+    assert(isdefined(self.var_3c63665));
     v_loc = self.var_3c63665[n_path_id][0].origin;
     var_5b84ed9a = self gettagorigin("tag_fx_beam");
     var_23ee4083 = vectortoangles(v_loc - self.origin);
@@ -2349,7 +2340,6 @@ function function_70123a1a() {
     self notify("7aed1f0026cbe559");
     self endon("7aed1f0026cbe559");
     self endon(#"disconnect", #"entering_last_stand");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee", #"weapon_melee_power");
     self notify(#"hash_14ed4d12ee0b5984");
     self.var_49c233e = 0;

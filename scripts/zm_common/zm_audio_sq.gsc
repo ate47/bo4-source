@@ -90,7 +90,6 @@ function function_c0862b9e() {
         self thread [[ level.var_35d6e654 ]]();
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self.var_6522085c waittill(#"damage");
         if (!isdefined(waitresult.attacker) || !isplayer(waitresult.attacker)) {
             continue;

@@ -39,43 +39,23 @@ function autoexec main() {
 // Checksum 0x78f66cab, Offset: 0x408
 // Size: 0x3d4
 function registeraivsaimeleebehaviorfunctions() {
-    /#
-        assert(isscriptfunctionptr(&hasaivsaienemy));
-    #/
+    assert(isscriptfunctionptr(&hasaivsaienemy));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hasaivsaienemy", &hasaivsaienemy);
-    /#
-        assert(isscriptfunctionptr(&decideinitiator));
-    #/
+    assert(isscriptfunctionptr(&decideinitiator));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"decideinitiator", &decideinitiator);
-    /#
-        assert(isscriptfunctionptr(&isinitiator));
-    #/
+    assert(isscriptfunctionptr(&isinitiator));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"isinitiator", &isinitiator);
-    /#
-        assert(isscriptfunctionptr(&hascloseaivsaienemy));
-    #/
+    assert(isscriptfunctionptr(&hascloseaivsaienemy));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hascloseaivsaienemy", &hascloseaivsaienemy);
-    /#
-        assert(isscriptfunctionptr(&chooseaivsaimeleeanimations));
-    #/
+    assert(isscriptfunctionptr(&chooseaivsaimeleeanimations));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"chooseaivsaimeleeanimations", &chooseaivsaimeleeanimations);
-    /#
-        assert(isscriptfunctionptr(&iscloseenoughforaivsaimelee));
-    #/
+    assert(isscriptfunctionptr(&iscloseenoughforaivsaimelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"iscloseenoughforaivsaimelee", &iscloseenoughforaivsaimelee);
-    /#
-        assert(isscriptfunctionptr(&haspotentalaivsaimeleeenemy));
-    #/
+    assert(isscriptfunctionptr(&haspotentalaivsaimeleeenemy));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"haspotentalaivsaimeleeenemy", &haspotentalaivsaimeleeenemy);
-    /#
-        assert(!isdefined(&aivsaimeleeinitialize) || isscriptfunctionptr(&aivsaimeleeinitialize));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(&aivsaimeleeinitialize) || isscriptfunctionptr(&aivsaimeleeinitialize));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"aivsaimeleeaction", &aivsaimeleeinitialize, undefined, undefined);
 }
 
@@ -457,9 +437,7 @@ function aivsaimeleeinitialize(behaviortreeentity, asmstatename) {
 // Size: 0x61c
 function playscriptedmeleeanimations() {
     self endon(#"death");
-    /#
-        assert(isdefined(self._ai_melee_opponent));
-    #/
+    assert(isdefined(self._ai_melee_opponent));
     opponent = self._ai_melee_opponent;
     if (!(isalive(self) && isalive(opponent))) {
         /#
@@ -517,9 +495,7 @@ function private chooseaivsaimeleefrontflipanimations(behaviortreeentity, animbu
     /#
         record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
     #/
-    /#
-        assert(isdefined(animbundle));
-    #/
+    assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
         behaviortreeentity._ai_melee_animname = animbundle.attackerloserfrontanim;
         behaviortreeentity.enemy._ai_melee_animname = animbundle.defenderwinnerfrontanim;
@@ -539,9 +515,7 @@ function private chooseaivsaimeleefrontwrestleanimations(behaviortreeentity, ani
     /#
         record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
     #/
-    /#
-        assert(isdefined(animbundle));
-    #/
+    assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
         behaviortreeentity._ai_melee_animname = animbundle.attackerloseralternatefrontanim;
         behaviortreeentity.enemy._ai_melee_animname = animbundle.defenderwinneralternatefrontanim;
@@ -561,9 +535,7 @@ function private chooseaivsaimeleebackanimations(behaviortreeentity, animbundle)
     /#
         record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
     #/
-    /#
-        assert(isdefined(animbundle));
-    #/
+    assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
         behaviortreeentity._ai_melee_animname = animbundle.attackerloserbackanim;
         behaviortreeentity.enemy._ai_melee_animname = animbundle.defenderwinnerbackanim;
@@ -583,9 +555,7 @@ function private chooseaivsaimeleerightanimations(behaviortreeentity, animbundle
     /#
         record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
     #/
-    /#
-        assert(isdefined(animbundle));
-    #/
+    assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
         behaviortreeentity._ai_melee_animname = animbundle.attackerloserrightanim;
         behaviortreeentity.enemy._ai_melee_animname = animbundle.defenderwinnerrightanim;
@@ -605,9 +575,7 @@ function private chooseaivsaimeleeleftanimations(behaviortreeentity, animbundle)
     /#
         record3dtext("<unknown string>", behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
     #/
-    /#
-        assert(isdefined(animbundle));
-    #/
+    assert(isdefined(animbundle));
     if (isdefined(behaviortreeentity._ai_melee_attacker_loser) && behaviortreeentity._ai_melee_attacker_loser) {
         behaviortreeentity._ai_melee_animname = animbundle.attackerloserleftanim;
         behaviortreeentity.enemy._ai_melee_animname = animbundle.defenderwinnerleftanim;
@@ -651,9 +619,7 @@ function handledeath(animationname, attacker) {
 // Size: 0x29c
 function processinterrupteddeath() {
     self endon(#"meleecompleted");
-    /#
-        assert(isdefined(self._ai_melee_opponent));
-    #/
+    assert(isdefined(self._ai_melee_opponent));
     opponent = self._ai_melee_opponent;
     if (!(isdefined(self.allowdeath) && self.allowdeath)) {
         return;

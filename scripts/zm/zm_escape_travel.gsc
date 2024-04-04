@@ -394,7 +394,6 @@ function zipline_move_trigger_think() {
     while (true) {
         level flag::wait_till("gondola_at_" + self.script_string);
         self setvisibletoall();
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_who = s_result.activator;
         b_forced = s_result.b_forced;
@@ -467,7 +466,6 @@ function zipline_call_trigger_think() {
         } else {
             self sethintstring(#"hash_bbb24669638bc76");
         }
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_who = s_result.activator;
         b_forced = s_result.b_forced;

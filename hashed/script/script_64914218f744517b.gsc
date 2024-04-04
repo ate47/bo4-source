@@ -8,27 +8,11 @@
 class ccp_skip_scene_menu : cluielem {
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xd1bd8fa3, Offset: 0x2e0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x70b5e9e7, Offset: 0x5d8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
     // Params 2, eflags: 0x1 linked
     // Checksum 0x6ea23ef9, Offset: 0x5a0
     // Size: 0x30
     function set_sceneskipendtime(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "sceneSkipEndTime", value);
+        set_data(localclientnum, "sceneSkipEndTime", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -36,7 +20,7 @@ class ccp_skip_scene_menu : cluielem {
     // Checksum 0x53c891d3, Offset: 0x568
     // Size: 0x30
     function set_votedtoskip(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "votedToSkip", value);
+        set_data(localclientnum, "votedToSkip", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -44,7 +28,7 @@ class ccp_skip_scene_menu : cluielem {
     // Checksum 0x75f74e29, Offset: 0x530
     // Size: 0x30
     function set_hostisskipping(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "hostIsSkipping", value);
+        set_data(localclientnum, "hostIsSkipping", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -52,7 +36,7 @@ class ccp_skip_scene_menu : cluielem {
     // Checksum 0xf627e7de, Offset: 0x4f8
     // Size: 0x30
     function set_showskipbutton(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "showSkipButton", value);
+        set_data(localclientnum, "showSkipButton", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -69,10 +53,10 @@ class ccp_skip_scene_menu : cluielem {
     // Size: 0x94
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "showSkipButton", 0);
-        [[ self ]]->set_data(localclientnum, "hostIsSkipping", 0);
-        [[ self ]]->set_data(localclientnum, "votedToSkip", 0);
-        [[ self ]]->set_data(localclientnum, "sceneSkipEndTime", 0);
+        set_data(localclientnum, "showSkipButton", 0);
+        set_data(localclientnum, "hostIsSkipping", 0);
+        set_data(localclientnum, "votedToSkip", 0);
+        set_data(localclientnum, "sceneSkipEndTime", 0);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu

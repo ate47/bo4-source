@@ -1132,13 +1132,9 @@ function function_2b57b5d6() {
                     if (s_point.script_int == i) {
                         var_5aa20049 = 1;
                     }
-                    /#
-                        assert(ispointonnavmesh(s_point.origin), "<unknown string>" + s_point.origin);
-                    #/
+                    assert(ispointonnavmesh(s_point.origin), "<unknown string>" + s_point.origin);
                 }
-                /#
-                    assert(var_5aa20049, "<unknown string>" + i + "<unknown string>" + s_respawn_point.script_noteworthy);
-                #/
+                assert(var_5aa20049, "<unknown string>" + i + "<unknown string>" + s_respawn_point.script_noteworthy);
             }
         }
     #/
@@ -1155,9 +1151,7 @@ function function_4a3c0c1c(var_3a1b23c2) {
         foreach (s_point in var_6c995818) {
             if (!ispointonnavmesh(s_point.origin)) {
                 var_ff9196cc = 0;
-                /#
-                    assert(0, "<unknown string>" + var_3a1b23c2 + "<unknown string>" + s_point.origin + "<unknown string>");
-                #/
+                assert(0, "<unknown string>" + var_3a1b23c2 + "<unknown string>" + s_point.origin + "<unknown string>");
             }
         }
         if (var_ff9196cc) {

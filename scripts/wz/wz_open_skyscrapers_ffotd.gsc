@@ -30,7 +30,7 @@ function __main__() {
         rock.angles = (0, 240, 27);
         rock setscale(2);
     }
-    spawncollision("collision_clip_256x256x256", "collider", (-9496.5, 39312.5, 2256), vectorscale((0, 1, 0), 338));
+    spawncollision("collision_clip_256x256x256", "collider", (-9496.5, 39312.5, 2256), (0, 338, 0));
     rock = spawn("script_model", (14653.5, -18402.3, 1475.66));
     if (isdefined(rock)) {
         rock setmodel(#"hash_5d5c82725edc89c8");

@@ -250,7 +250,6 @@ function reset_codes() {
 function function_eb06b83() {
     level endon(#"end_game");
     self endon(#"death");
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"trigger_activated");
     e_who = s_waitresult.e_who;
     e_who playsound("zmb_ee_key_pickup");
@@ -271,7 +270,6 @@ function function_eb06b83() {
 // Size: 0x14c
 function function_65066810() {
     level flag::wait_till("pernell_key_acquired");
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"trigger_activated");
     e_who = s_waitresult.e_who;
     var_6e32b553 = getent("pernell_drawer", "targetname");
@@ -368,7 +366,7 @@ function function_a51b6403(is_opening) {
     }
     if (is_opening) {
         self playsound("evt_bunker_door_interior_open");
-        self moveto(self.v_start_pos + vectorscale((0, 0, -1), 128), 1);
+        self moveto(self.v_start_pos + (0, 0, -128), 1);
         return;
     }
     self playsound("evt_bunker_door_interior_close");
@@ -396,7 +394,6 @@ function function_1e88595a() {
     level flag::clear(#"hash_6202f3e00d7008b0");
     do {
         var_6ba58f5f = 0;
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (!e_who zm_score::can_player_purchase(self.s_unitrigger.cost)) {
@@ -448,9 +445,7 @@ function function_88265619() {
     level.var_f5746584 = 0;
     var_e3d10631 = getentarray("private_mannequin_parts", "targetname");
     var_a2c75164 = getent("mannequin_ally_door", "targetname");
-    /#
-        assert(isdefined(var_a2c75164), "<unknown string>");
-    #/
+    assert(isdefined(var_a2c75164), "<unknown string>");
     while (true) {
         level flag::wait_till_clear(#"hash_1b68ccd211cab219");
         if (level.var_f5746584 > 0) {
@@ -517,7 +512,6 @@ function function_8527738e() {
     level.var_c8b6a556 = getent("pernel_paper_stack", "targetname");
     level.var_c8b6a556 setcandamage(1);
     level.var_c8b6a556 val::set("private_mannequin_quest_paper_stack", "allowDeath", 0);
-    s_notify = undefined;
     s_notify = level.var_c8b6a556 waittill(#"damage");
     level.var_c8b6a556.tag = util::spawn_model("tag_origin", level.var_c8b6a556.origin);
     level.var_c8b6a556.tag.angles = level.var_c8b6a556.angles;
@@ -552,7 +546,6 @@ function function_e29e2b0b() {
         self.killcounter = 0;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"zom_kill");
         zomb = waitresult.zombie;
         self.killcounter++;
@@ -581,7 +574,7 @@ function timer_actual(kills, time) {
                     if (!isdefined(e_player)) {
                         continue;
                     }
-                    if (sighttracepassed(self.origin + vectorscale((0, 0, 1), 30), e_player.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+                    if (sighttracepassed(self.origin + (0, 0, 30), e_player.origin + (0, 0, 30), 0, undefined)) {
                         e_player zm_audio::create_and_play_dialog(#"kill", #"streak_adam");
                     }
                 }
@@ -617,7 +610,6 @@ function function_f20dfe6a() {
 function function_e453faa6(e_reviver) {
     self endon(#"death");
     while (true) {
-        results = undefined;
         results = self waittill(#"player_revived");
         if (isdefined(level.mannequin_ally) && results.reviver === level.mannequin_ally) {
             level.mannequin_ally zm_hms_util::function_6a0d675d("vox_adam_revive", function_9368a51d(), 0, 1);

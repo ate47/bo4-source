@@ -143,7 +143,7 @@ function initrotatingrig() {
         level.var_b59e7114 = spawn("script_model", map_center + rotator_offset);
     }
     level.var_b59e7114 setmodel(#"tag_origin");
-    level.var_b59e7114.angles = vectorscale((0, 1, 0), 115);
+    level.var_b59e7114.angles = (0, 115, 0);
     level.var_b59e7114 hide();
     level.var_b59e7114 thread rotaterig();
     level.var_b59e7114 thread swayrig();
@@ -216,9 +216,7 @@ function function_f724cfe4(health) {
 // Checksum 0x24f49cee, Offset: 0xd08
 // Size: 0x6a8
 function activateuav() {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     if (self killstreakrules::iskillstreakallowed("uav", self.team) == 0) {
         return false;
     }
@@ -435,14 +433,10 @@ function hasuav(team_or_entnum) {
 // Size: 0xd8
 function addactiveuav() {
     if (level.teambased) {
-        /#
-            assert(isdefined(self.team));
-        #/
+        assert(isdefined(self.team));
         level.activeuavs[self.team]++;
     } else {
-        /#
-            assert(isdefined(self.entnum));
-        #/
+        assert(isdefined(self.entnum));
         if (!isdefined(self.entnum)) {
             self.entnum = self getentitynumber();
         }
@@ -469,32 +463,24 @@ function removeactiveuav() {
 function resetactiveuav() {
     if (level.teambased) {
         level.activeuavs[self.team]--;
-        /#
-            assert(level.activeuavs[self.team] >= 0);
-        #/
+        assert(level.activeuavs[self.team] >= 0);
         if (level.activeuavs[self.team] < 0) {
             level.activeuavs[self.team] = 0;
         }
     } else if (isdefined(self.owner)) {
-        /#
-            assert(isdefined(self.owner.entnum));
-        #/
+        assert(isdefined(self.owner.entnum));
         if (!isdefined(self.owner.entnum)) {
             self.owner.entnum = self.owner getentitynumber();
         }
         level.activeuavs[self.owner.entnum]--;
-        /#
-            assert(level.activeuavs[self.owner.entnum] >= 0);
-        #/
+        assert(level.activeuavs[self.owner.entnum] >= 0);
         if (level.activeuavs[self.owner.entnum] < 0) {
             level.activeuavs[self.owner.entnum] = 0;
         }
     }
     if (isdefined(self.owner)) {
         level.activeplayeruavs[self.owner.entnum]--;
-        /#
-            assert(level.activeplayeruavs[self.owner.entnum] >= 0);
-        #/
+        assert(level.activeplayeruavs[self.owner.entnum] >= 0);
     }
     level notify(#"uav_update");
 }
@@ -518,9 +504,7 @@ function uavtracker() {
         }
         for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
-            /#
-                assert(isdefined(player.entnum));
-            #/
+            assert(isdefined(player.entnum));
             if (!isdefined(player.entnum)) {
                 player.entnum = player getentitynumber();
             }

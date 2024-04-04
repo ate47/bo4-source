@@ -53,7 +53,7 @@ function private on_begin() {
         var_9d88bc68 = 50 * vectornormalize(var_9d88bc68);
         goal_pos = player.origin + var_9d88bc68;
         goal_pos = getclosestpointonnavmesh(goal_pos, 128, 32);
-        player.e_weeper forceteleport(goal_pos, player.angles - vectorscale((0, 1, 0), 180), 1);
+        player.e_weeper forceteleport(goal_pos, player.angles - (0, 180, 0), 1);
         player.e_weeper.var_72411ccf = &function_660c908;
         player.e_weeper.favoriteenemy = player;
         player.e_weeper val::set(#"mee_2", "takedamage", 0);

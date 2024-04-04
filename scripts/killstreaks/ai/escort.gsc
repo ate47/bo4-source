@@ -22,9 +22,7 @@ function init() {
 // Checksum 0xc092dc32, Offset: 0x120
 // Size: 0xc2
 function private init_escort(var_5a529222, var_edc20efd, var_d73e0c6e, var_544ae93d, var_db083d2c) {
-    /#
-        assert(isdefined(self.ai));
-    #/
+    assert(isdefined(self.ai));
     self.ai.escort = {#state:2, #var_5a529222:var_5a529222, #var_edc20efd:var_edc20efd, #var_d73e0c6e:var_d73e0c6e, #var_544ae93d:var_544ae93d, #var_db083d2c:var_db083d2c};
 }
 
@@ -181,7 +179,7 @@ function get_point_of_interest() {
 // Checksum 0x496d4b63, Offset: 0x810
 // Size: 0xa6
 function function_d15dd929(origin) {
-    result = function_9cc082d2(origin + vectorscale((0, 0, 1), 100), 200);
+    result = function_9cc082d2(origin + (0, 0, 100), 200);
     if (isdefined(result) && isdefined(result[#"materialflags"]) && result[#"materialflags"] & 2) {
         return false;
     }
@@ -203,10 +201,10 @@ function function_cb4925e3(tacpoints) {
             continue;
         }
         /#
-            record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "<unknown string>");
+            record3dtext("<unknown string>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<unknown string>");
         #/
         /#
-            recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
+            recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
         #/
     }
     return validpoints;
@@ -247,9 +245,7 @@ function function_b6f15bda() {
                     recordsphere(var_84e7232, 8, (0, 1, 1), "<unknown string>");
                 #/
                 var_b6a10143 = ai::t_cylinder(var_56bd1bef, 80, 30);
-                /#
-                    assert(isdefined(var_b6a10143.origin));
-                #/
+                assert(isdefined(var_b6a10143.origin));
                 tacpoints = tacticalquery(self.ai.escort.var_db083d2c, cylinder, self, var_b6a10143, var_84e7232, var_56bd1bef);
             }
         }
@@ -264,9 +260,7 @@ function function_b6f15bda() {
                 #/
                 cylinder = ai::t_cylinder(var_84e7232, self.ai.escort.var_5a529222, 30);
                 var_8f3583cf = ai::t_cylinder(self.origin, 200, 30);
-                /#
-                    assert(isdefined(var_8f3583cf.origin));
-                #/
+                assert(isdefined(var_8f3583cf.origin));
                 tacpoints = tacticalquery(self.ai.escort.var_db083d2c, cylinder, self, var_8f3583cf, var_84e7232, var_56bd1bef);
             } else {
                 /#

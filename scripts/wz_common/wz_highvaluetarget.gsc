@@ -28,9 +28,7 @@ function __init__() {
     if (!(isdefined(level.wzhighvaluetargets) && level.wzhighvaluetargets)) {
         return;
     }
-    /#
-        assert(level.wzhighvaluetargets <= 8);
-    #/
+    assert(level.wzhighvaluetargets <= 8);
     clientfield::register("allplayers", "ishighvaluetarget", 16000, 1, "int");
     callback::add_callback(#"hash_405e46788e83af41", &update_targets);
     callback::add_callback(#"hash_7912e21750e4010d", &update_targets);

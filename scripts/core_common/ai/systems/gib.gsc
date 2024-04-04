@@ -37,9 +37,7 @@ function private function_3aa023f1(name, entity) {
     }
     definition = struct::get_script_bundle("gibcharacterdef", name);
     if (!isdefined(definition)) {
-        /#
-            assertmsg("<unknown string>" + name);
-        #/
+        assertmsg("<unknown string>" + name);
         return undefined;
     }
     gibpiecelookup = [];
@@ -52,9 +50,7 @@ function private function_3aa023f1(name, entity) {
     gibpieces = [];
     foreach (gibflag, gibpiece in gibpiecelookup) {
         if (!isdefined(gibpiece)) {
-            /#
-                assertmsg("<unknown string>" + gibflag);
-            #/
+            assertmsg("<unknown string>" + gibflag);
             continue;
         }
         gibstruct = spawnstruct();
@@ -102,9 +98,7 @@ function private _getgibextramodel(entity, gibflag) {
     if (gibflag == 8) {
         return (isdefined(entity.gib_data) ? entity.gib_data.head : entity.head);
     }
-    /#
-        assertmsg("<unknown string>");
-    #/
+    assertmsg("<unknown string>");
 }
 
 // Namespace gibserverutils/gib

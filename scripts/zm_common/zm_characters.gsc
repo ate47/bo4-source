@@ -48,15 +48,9 @@ function __init__() {
 // Size: 0x94
 function private zombie_force_char(n_char) {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
-        /#
-            assert(isalive(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
+        assert(isalive(self));
         set_character(n_char);
     #/
 }
@@ -271,12 +265,8 @@ function get_characters() {
                 return arraycopy(level.characters);
             }
         #/
-        /#
-            assert(isdefined(fields));
-        #/
-        /#
-            assert(isdefined(fields.zmcharacters));
-        #/
+        assert(isdefined(fields));
+        assert(isdefined(fields.zmcharacters));
         for (i = 0; i < fields.zmcharacters.size; i++) {
             var_2a42c5e0 = function_d35e4c92(fields.zmcharacters[i].characterindex, 1);
             if (!isdefined(level.characters[var_2a42c5e0])) {
@@ -310,9 +300,7 @@ function function_9004475c(character) {
             return var_c81b1496.characterindex;
         }
     }
-    /#
-        assertmsg("support_take");
-    #/
+    assertmsg("support_take");
     return 0;
 }
 
@@ -347,9 +335,7 @@ function function_dc232a80(character) {
             fields = getplayerrolefields(player_role::get(), currentsessionmode());
             return fields.var_3e570307;
         }
-        /#
-            assertmsg("russ" + characterindex);
-        #/
+        assertmsg("russ" + characterindex);
     } else if (isarray(character)) {
         fields = zm_maptable::function_10672567();
         foreach (var_c81b1496 in fields.zmcharacters) {
@@ -358,9 +344,7 @@ function function_dc232a80(character) {
                 return rolefields.var_3e570307;
             }
         }
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     }
     return 0;
 }
@@ -370,9 +354,7 @@ function function_dc232a80(character) {
 // Checksum 0x9c882ae4, Offset: 0x2628
 // Size: 0xe6
 function is_character(character) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (isdefined(self) && isplayer(self)) {
         characterindex = player_role::get();
         if (player_role::is_valid(characterindex)) {

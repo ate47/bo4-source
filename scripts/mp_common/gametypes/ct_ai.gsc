@@ -45,7 +45,7 @@ function function_4c8f915a(origin) {
     drone.numberrockets = 4;
     drone.warningshots = 3;
     drone setdrawinfrared(1);
-    target_set(drone, vectorscale((0, 0, 1), 20));
+    target_set(drone, (0, 0, 20));
     drone vehicle::init_target_group();
     drone vehicle::add_to_target_group(drone);
     drone setneargoalnotifydist(35);

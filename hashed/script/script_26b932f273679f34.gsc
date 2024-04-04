@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class cct_shared_aar_medals : cluielem {
 
-    // Namespace cct_shared_aar_medals/ct_shared_aar_medals
-    // Params 0, eflags: 0x8
-    // Checksum 0x2d9a871b, Offset: 0x2b0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_aar_medals/ct_shared_aar_medals
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xbec018d, Offset: 0x680
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
     // Params 2, eflags: 0x0
     // Checksum 0x4e966a6d, Offset: 0x638
     // Size: 0x3c
     function set_medalbronzethreshold(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "medalBronzeThreshold", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "medalBronzeThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -37,7 +23,7 @@ class cct_shared_aar_medals : cluielem {
     // Checksum 0x28684ab2, Offset: 0x5f0
     // Size: 0x3c
     function set_medalsilverthreshold(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "medalSilverThreshold", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "medalSilverThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -45,7 +31,7 @@ class cct_shared_aar_medals : cluielem {
     // Checksum 0x1ace2c05, Offset: 0x5a8
     // Size: 0x3c
     function set_medalgoldthreshold(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "medalGoldThreshold", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "medalGoldThreshold", value);
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals
@@ -54,30 +40,26 @@ class cct_shared_aar_medals : cluielem {
     // Size: 0x17c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"medal_gold" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"medal_silver" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
         if (#"medal_bronze" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
             return;
         }
         if (#"medal_none" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_aar_medals/ct_shared_aar_medals

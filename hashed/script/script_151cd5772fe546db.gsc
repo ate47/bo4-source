@@ -8,27 +8,11 @@
 class czm_arcade_timer : cluielem {
 
     // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0x31d99a06, Offset: 0x2c8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x14004975, Offset: 0x5d0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_arcade_timer/zm_arcade_timer
     // Params 2, eflags: 0x0
     // Checksum 0xa6e6a9e0, Offset: 0x598
     // Size: 0x30
     function set_title(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "title", value);
+        set_data(localclientnum, "title", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -36,7 +20,7 @@ class czm_arcade_timer : cluielem {
     // Checksum 0x8ee5e467, Offset: 0x560
     // Size: 0x30
     function set_minutes(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "minutes", value);
+        set_data(localclientnum, "minutes", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -44,7 +28,7 @@ class czm_arcade_timer : cluielem {
     // Checksum 0x5ac68377, Offset: 0x528
     // Size: 0x30
     function set_seconds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "seconds", value);
+        set_data(localclientnum, "seconds", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -52,7 +36,7 @@ class czm_arcade_timer : cluielem {
     // Checksum 0x2d8946b8, Offset: 0x4f0
     // Size: 0x30
     function set_showzero(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "showzero", value);
+        set_data(localclientnum, "showzero", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -69,10 +53,10 @@ class czm_arcade_timer : cluielem {
     // Size: 0xa4
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "showzero", 0);
-        [[ self ]]->set_data(localclientnum, "seconds", 0);
-        [[ self ]]->set_data(localclientnum, "minutes", 0);
-        [[ self ]]->set_data(localclientnum, "title", #"");
+        set_data(localclientnum, "showzero", 0);
+        set_data(localclientnum, "seconds", 0);
+        set_data(localclientnum, "minutes", 0);
+        set_data(localclientnum, "title", #"");
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer

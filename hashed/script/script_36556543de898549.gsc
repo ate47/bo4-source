@@ -8,27 +8,11 @@
 class cseeker_mine_prompt : cluielem {
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt
-    // Params 0, eflags: 0x8
-    // Checksum 0x3d026716, Offset: 0x248
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cseeker_mine_prompt/seeker_mine_prompt
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x3b4f958b, Offset: 0x440
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cseeker_mine_prompt/seeker_mine_prompt
     // Params 2, eflags: 0x0
     // Checksum 0x71f37fe4, Offset: 0x408
     // Size: 0x30
     function set_promptstate(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "promptState", value);
+        set_data(localclientnum, "promptState", value);
     }
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt
@@ -36,7 +20,7 @@ class cseeker_mine_prompt : cluielem {
     // Checksum 0x25d3d40, Offset: 0x3d0
     // Size: 0x30
     function set_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "progress", value);
+        set_data(localclientnum, "progress", value);
     }
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt
@@ -53,8 +37,8 @@ class cseeker_mine_prompt : cluielem {
     // Size: 0x64
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "progress", 0);
-        [[ self ]]->set_data(localclientnum, "promptState", 0);
+        set_data(localclientnum, "progress", 0);
+        set_data(localclientnum, "promptState", 0);
     }
 
     // Namespace cseeker_mine_prompt/seeker_mine_prompt

@@ -8,28 +8,14 @@
 // Method(s) 6 Total 13
 class cinteractive_shot : cluielem {
 
-    // Namespace cinteractive_shot/interactive_shot
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xfd2d7c02, Offset: 0x1d0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cinteractive_shot/interactive_shot
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x910380b, Offset: 0x310
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cinteractive_shot/interactive_shot
     // Params 2, eflags: 0x1 linked
     // Checksum 0x74c2bd8, Offset: 0x2c8
     // Size: 0x3c
     function set_text(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "text", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "text", value);
     }
 
     // Namespace cinteractive_shot/interactive_shot

@@ -110,9 +110,7 @@ function function_b5b6ef3e(func, obj) {
 // Checksum 0xc287955a, Offset: 0xaa8
 // Size: 0x18e
 function register_ui(killstreak_type, killstreak_menu) {
-    /#
-        assert(isdefined(level.killstreaks[killstreak_type]), "remote_drone");
-    #/
+    assert(isdefined(level.killstreaks[killstreak_type]), "remote_drone");
     item_index = getitemindexfromref(killstreak_menu);
     killstreak_info = getunlockableiteminfofromindex(item_index, 0);
     killstreak_cost = 0;
@@ -138,12 +136,8 @@ function register_ui(killstreak_type, killstreak_menu) {
 // Checksum 0x448731d8, Offset: 0xc40
 // Size: 0x13a
 function killstreak_init(killstreak_type) {
-    /#
-        assert(isdefined(killstreak_type), "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level.killstreaks[killstreak_type]), "<unknown string>" + killstreak_type + "<unknown string>");
-    #/
+    assert(isdefined(killstreak_type), "<unknown string>");
+    assert(!isdefined(level.killstreaks[killstreak_type]), "<unknown string>" + killstreak_type + "<unknown string>");
     level.killstreaks[killstreak_type] = spawnstruct();
     level.killstreaks[killstreak_type].killstreaklevel = 0;
     level.killstreaks[killstreak_type].quantity = 0;
@@ -161,15 +155,9 @@ function register_weapon(killstreak_type, weapon) {
     if (weapon.name == #"none") {
         return;
     }
-    /#
-        assert(isdefined(killstreak_type), "<unknown string>");
-    #/
-    /#
-        assert(weapon.name != #"none");
-    #/
-    /#
-        assert(!isdefined(level.killstreakweapons[weapon]), "<unknown string>");
-    #/
+    assert(isdefined(killstreak_type), "<unknown string>");
+    assert(weapon.name != #"none");
+    assert(!isdefined(level.killstreakweapons[weapon]), "<unknown string>");
     level.killstreaks[killstreak_type].weapon = weapon;
     level.killstreakweapons[weapon] = killstreak_type;
 }
@@ -179,12 +167,8 @@ function register_weapon(killstreak_type, weapon) {
 // Checksum 0x55ebc4c8, Offset: 0xe80
 // Size: 0x9a
 function register_vehicle(killstreak_type, vehicle) {
-    /#
-        assert(isdefined(killstreak_type), "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level.var_8997324c[vehicle]), "<unknown string>");
-    #/
+    assert(isdefined(killstreak_type), "<unknown string>");
+    assert(!isdefined(level.var_8997324c[vehicle]), "<unknown string>");
     level.killstreaks[killstreak_type].vehicle = vehicle;
     level.var_8997324c[vehicle] = killstreak_type;
 }
@@ -194,9 +178,7 @@ function register_vehicle(killstreak_type, vehicle) {
 // Checksum 0xd9388809, Offset: 0xf28
 // Size: 0x284
 function register(killstreaktype, killstreakweaponname, killstreakmenuname, killstreakusagekey, killstreakusefunction, killstreakdelaystreak, weaponholdallowed = 0, killstreakstatsname = undefined, registerdvars = 1, registerinventory = 1) {
-    /#
-        assert(isdefined(killstreakusefunction), "<unknown string>" + killstreaktype);
-    #/
+    assert(isdefined(killstreakusefunction), "<unknown string>" + killstreaktype);
     killstreak_init(killstreaktype);
     register_ui(killstreaktype, killstreakmenuname);
     level.killstreaks[killstreaktype].usagekey = killstreakusagekey;
@@ -323,12 +305,8 @@ function is_registered(killstreaktype) {
 // Checksum 0xf84173dd, Offset: 0x1990
 // Size: 0x17e
 function function_7e46eaea(killstreaktype, receivedtext, notusabletext, inboundtext, inboundnearplayertext, var_43279ec9, hackedtext, utilizesairspace, var_a4a7d3e7) {
-    /#
-        assert(isdefined(killstreaktype), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-    #/
+    assert(isdefined(killstreaktype), "<unknown string>");
+    assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
     level.killstreaks[killstreaktype].receivedtext = receivedtext;
     level.killstreaks[killstreaktype].notavailabletext = notusabletext;
     level.killstreaks[killstreaktype].inboundtext = inboundtext;
@@ -344,12 +322,8 @@ function function_7e46eaea(killstreaktype, receivedtext, notusabletext, inboundt
 // Checksum 0x5656707b, Offset: 0x1b18
 // Size: 0x346
 function function_1110a5de(killstreaktype, informdialog, taacomdialogbundlekey, pilotdialogarraykey, startdialogkey, enemystartdialogkey, enemystartmultipledialogkey, hackeddialogkey, hackedstartdialogkey, requestdialogkey, threatdialogkey, var_3b69c05b, var_2729ed45) {
-    /#
-        assert(isdefined(killstreaktype), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-    #/
+    assert(isdefined(killstreaktype), "<unknown string>");
+    assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
     level.killstreaks[killstreaktype].informdialog = informdialog;
     level.killstreaks[killstreaktype].taacomdialogbundlekey = taacomdialogbundlekey;
     level.killstreaks[killstreaktype].startdialogkey = startdialogkey;
@@ -385,12 +359,8 @@ function function_1110a5de(killstreaktype, informdialog, taacomdialogbundlekey, 
 // Checksum 0x69acdaf7, Offset: 0x1e68
 // Size: 0x13a
 function function_181f96a6(killstreaktype, weapon) {
-    /#
-        assert(isdefined(killstreaktype), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-    #/
+    assert(isdefined(killstreaktype), "<unknown string>");
+    assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
     if (weapon.name == #"none") {
         return;
     }
@@ -439,12 +409,8 @@ function function_b013c2d3(killstreaktype, weapon) {
 // Checksum 0x6f845769, Offset: 0x2098
 // Size: 0x146
 function register_remote_override_weapon(killstreaktype, weaponname, isinventory) {
-    /#
-        assert(isdefined(killstreaktype), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-    #/
+    assert(isdefined(killstreaktype), "<unknown string>");
+    assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
     weapon = getweapon(weaponname);
     if (level.killstreaks[killstreaktype].weapon === weapon) {
         return;
@@ -479,12 +445,8 @@ function is_remote_override_weapon(killstreaktype, weapon) {
 // Size: 0x134
 function register_dev_dvars(killstreaktype) {
     /#
-        /#
-            assert(isdefined(killstreaktype), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-        #/
+        assert(isdefined(killstreaktype), "<unknown string>");
+        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
         level.killstreaks[killstreaktype].devdvar = "<unknown string>" + killstreaktype + "<unknown string>";
         level.killstreaks[killstreaktype].devenemydvar = "<unknown string>" + killstreaktype + "<unknown string>";
         level.killstreaks[killstreaktype].devtimeoutdvar = "<unknown string>" + killstreaktype + "<unknown string>";
@@ -499,12 +461,8 @@ function register_dev_dvars(killstreaktype) {
 // Size: 0xbc
 function register_dev_debug_dvar(killstreaktype) {
     /#
-        /#
-            assert(isdefined(killstreaktype), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-        #/
+        assert(isdefined(killstreaktype), "<unknown string>");
+        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
         level.killstreaks[killstreaktype].devdebugdvar = "<unknown string>" + killstreaktype + "<unknown string>";
         devgui_scorestreak_command_debugdvar(killstreaktype, level.killstreaks[killstreaktype].devdebugdvar);
     #/
@@ -576,12 +534,8 @@ function devgui_scorestreak_dvar_toggle(killstreaktype, title, dvar) {
 // Size: 0xfc
 function devgui_scorestreak_command(killstreaktype, title, command) {
     /#
-        /#
-            assert(isdefined(killstreaktype), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-        #/
+        assert(isdefined(killstreaktype), "<unknown string>");
+        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
         root = "<unknown string>";
         user_name = level.killstreaks[killstreaktype].menuname;
         util::add_queued_debug_command(root + user_name + "<unknown string>" + killstreaktype + "<unknown string>" + title + "<unknown string>" + command + "<unknown string>");
@@ -594,9 +548,7 @@ function devgui_scorestreak_command(killstreaktype, title, command) {
 // Size: 0x9e
 function should_draw_debug(killstreak) {
     /#
-        /#
-            assert(isdefined(killstreak), "<unknown string>");
-        #/
+        assert(isdefined(killstreak), "<unknown string>");
         function_2459bd2f();
         if (isdefined(level.killstreaks[killstreak]) && isdefined(level.killstreaks[killstreak].devdebugdvar)) {
             return getdvarint(level.killstreaks[killstreak].devdebugdvar, 0);
@@ -610,11 +562,7 @@ function should_draw_debug(killstreak) {
 // Checksum 0x89aba113, Offset: 0x28d8
 // Size: 0x34
 function function_2459bd2f() {
-    /#
-        /#
-            assert(isdefined(level.killstreaks), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(level.killstreaks), "<unknown string>");
 }
 
 // Namespace killstreaks/killstreaks_shared
@@ -641,9 +589,7 @@ function get_by_menu_name(killstreak) {
 // Checksum 0xb5b3bb8, Offset: 0x2978
 // Size: 0x4a
 function get_menu_name(killstreaktype) {
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]));
-    #/
+    assert(isdefined(level.killstreaks[killstreaktype]));
     return level.killstreaks[killstreaktype].menuname;
 }
 
@@ -1261,7 +1207,6 @@ function recordkillstreakbegindirect(killstreak, recordstreakindex) {
 // Size: 0x63c
 function remove_when_done(killstreak, haskillstreakbeenused, isfrominventory) {
     self endon(#"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"killstreak_done");
     killstreaktype = waitresult.var_d3413870;
     if (waitresult.is_successful) {
@@ -1479,9 +1424,7 @@ function get_killstreak_momentum_cost(player, killstreak) {
     if (!isdefined(killstreak) || !isdefined(player) || !isplayer(player)) {
         return 0;
     }
-    /#
-        assert(isdefined(level.killstreaks[killstreak]));
-    #/
+    assert(isdefined(level.killstreaks[killstreak]));
     return player function_dceb5542(level.killstreaks[killstreak].itemindex);
 }
 
@@ -1536,9 +1479,7 @@ function function_4f415d8e(params) {
     if (game.state == "postgame" || !isdefined(self)) {
         return;
     }
-    /#
-        assert(self.lastnonkillstreakweapon != level.weaponnone);
-    #/
+    assert(self.lastnonkillstreakweapon != level.weaponnone);
     lastvalidpimary = self.lastnonkillstreakweapon;
     weapon = params.weapon;
     if (weapons::is_primary_weapon(weapon)) {
@@ -1766,9 +1707,7 @@ function display_unavailable_time() {
 // Checksum 0x6e6981bd, Offset: 0x6cc0
 // Size: 0x220
 function trigger_killstreak(killstreaktype, isfrominventory) {
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype].usefunction), "<unknown string>" + killstreaktype);
-    #/
+    assert(isdefined(level.killstreaks[killstreaktype].usefunction), "<unknown string>" + killstreaktype);
     self.usingkillstreakfrominventory = isfrominventory;
     if (isdefined(level.infinalkillcam) && level.infinalkillcam) {
         return false;
@@ -1815,9 +1754,7 @@ function add_to_killstreak_count(weapon) {
 // Checksum 0x3be75253, Offset: 0x6f50
 // Size: 0xd6
 function get_first_valid_killstreak_alt_weapon(killstreaktype) {
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-    #/
+    assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
     if (isdefined(level.killstreaks[killstreaktype].altweapons)) {
         for (i = 0; i < level.killstreaks[killstreaktype].altweapons.size; i++) {
             if (isdefined(level.killstreaks[killstreaktype].altweapons[i])) {
@@ -1999,12 +1936,8 @@ function play_taacom_dialog_on_owner(dialogkey, killstreaktype, killstreakid) {
 // Checksum 0xa452af7, Offset: 0x7890
 // Size: 0x84
 function play_taacom_dialog_response(dialogkey, killstreaktype, killstreakid, pilotindex) {
-    /#
-        assert(isdefined(dialogkey));
-    #/
-    /#
-        assert(isdefined(killstreaktype));
-    #/
+    assert(isdefined(dialogkey));
+    assert(isdefined(killstreaktype));
     if (!isdefined(pilotindex)) {
         return;
     }
@@ -2016,9 +1949,7 @@ function play_taacom_dialog_response(dialogkey, killstreaktype, killstreakid, pi
 // Checksum 0x227b033b, Offset: 0x7920
 // Size: 0x320
 function player_killstreak_threat_tracking(killstreaktype) {
-    /#
-        assert(isdefined(killstreaktype));
-    #/
+    assert(isdefined(killstreaktype));
     self endon(#"death", #"delete", #"leaving");
     level endon(#"game_ended");
     while (true) {
@@ -2071,9 +2002,7 @@ function get_killstreak_inform_dialog(killstreaktype) {
 // Checksum 0x696d02eb, Offset: 0x7c98
 // Size: 0x62
 function get_killstreak_usage_by_killstreak(killstreaktype) {
-    /#
-        assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
-    #/
+    assert(isdefined(level.killstreaks[killstreaktype]), "<unknown string>");
     return get_killstreak_usage(level.killstreaks[killstreaktype].usagekey);
 }
 
@@ -2187,9 +2116,7 @@ function killstreak_data_dump() {
             print(data.weapon.name + "<unknown string>");
             alt = 0;
             if (isdefined(data.altweapons)) {
-                /#
-                    assert(data.altweapons.size <= 4);
-                #/
+                assert(data.altweapons.size <= 4);
                 for (alt = 0; alt < data.altweapons.size; alt++) {
                     print(data.altweapons[alt].name + "<unknown string>");
                 }
@@ -2200,9 +2127,7 @@ function killstreak_data_dump() {
             }
             type = 0;
             if (isdefined(type_data)) {
-                /#
-                    assert(type_data.size < 4);
-                #/
+                assert(type_data.size < 4);
                 type_keys = getarraykeys(type_data);
                 while (type < type_keys.size) {
                     if (type_data[type_keys[type]] == 1) {
@@ -2242,7 +2167,6 @@ function monitordamage(killstreak_ref, max_health, destroyed_callback, low_healt
     self.damagetaken = 0;
     while (true) {
         weapon_damage = undefined;
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         damage = waitresult.amount;
@@ -2532,7 +2456,6 @@ function emp_isempd() {
 // Size: 0x7c
 function waittillemp(onempdcallback, arg) {
     self endon(#"death", #"delete");
-    waitresult = undefined;
     waitresult = self waittill(#"emp_deployed");
     if (isdefined(onempdcallback)) {
         [[ onempdcallback ]](waitresult.attacker, arg);
@@ -2906,7 +2829,6 @@ function init_ride_killstreak_internal(streak, always_allow) {
         laptopwait = "timeout";
         var_5df1cb97 = getdvarfloat(#"hash_409036e81396b597", 0.075);
     } else {
-        laptopwait = undefined;
         laptopwait = self waittilltimeout(0.2, #"disconnect", #"death", #"weapon_switch_started");
         laptopwait = laptopwait._notify;
     }
@@ -2934,7 +2856,6 @@ function init_ride_killstreak_internal(streak, always_allow) {
     }
     self thread hud::fade_to_black_for_x_sec(0, 0.2 + var_5df1cb97, 0.1, 0.1);
     self thread watch_for_remove_remote_weapon();
-    blackoutwait = undefined;
     blackoutwait = self waittilltimeout(0.2, #"disconnect", #"death");
     self notify(#"endwatchforremoveremoteweapon");
     hostmigration::waittillhostmigrationdone();
@@ -3083,15 +3004,9 @@ function setup_health(killstreak_ref, max_health, low_health) {
 // Size: 0xb2
 function defaulthackedhealthupdatecallback(hacker) {
     killstreak = self;
-    /#
-        assert(isdefined(self.maxhealth));
-    #/
-    /#
-        assert(isdefined(self.hackedhealth));
-    #/
-    /#
-        assert(isdefined(self.damagetaken));
-    #/
+    assert(isdefined(self.maxhealth));
+    assert(isdefined(self.hackedhealth));
+    assert(isdefined(self.damagetaken));
     damageafterhacking = self.maxhealth - self.hackedhealth;
     if (self.damagetaken < damageafterhacking) {
         self.damagetaken = damageafterhacking;
@@ -3151,9 +3066,7 @@ function configure_team_internal(owner, ishacked) {
         /#
         #/
     } else {
-        /#
-            assert(killstreak.killstreakteamconfigured, "<unknown string>");
-        #/
+        assert(killstreak.killstreakteamconfigured, "<unknown string>");
     }
     if (isdefined(killstreak.killstreakconfigureteamprefunction)) {
         killstreak thread [[ killstreak.killstreakconfigureteamprefunction ]](owner, ishacked);
@@ -3509,7 +3422,6 @@ function update_missile_dog_threat(dog) {
 function function_fff56140(owner, var_4a025683) {
     self notify(#"hash_4363bc1bae999ad3");
     self endon(#"hash_4363bc1bae999ad3", #"death");
-    res = undefined;
     res = owner waittill(#"joined_team", #"disconnect", #"joined_spectators", #"changed_specialist");
     [[ var_4a025683 ]]();
 }
@@ -3520,12 +3432,8 @@ function function_fff56140(owner, var_4a025683) {
 // Size: 0xd6
 function should_not_timeout(killstreak) {
     /#
-        /#
-            assert(isdefined(killstreak), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(level.killstreaks[killstreak]), "<unknown string>");
-        #/
+        assert(isdefined(killstreak), "<unknown string>");
+        assert(isdefined(level.killstreaks[killstreak]), "<unknown string>");
         if (getdvarint(#"hash_e8bb2ce168acce0", 0)) {
             return 1;
         }
@@ -3806,7 +3714,7 @@ function debug_ricochet_protection() {
                     radius = sqrt(protection.distancesq);
                     sphere(protection.origin, radius, (1, 1, 0), 0.25, 0, 36, debug_frames);
                     circle(protection.origin, radius, (1, 0.5, 0), 0, 1, debug_frames);
-                    circle(protection.origin + vectorscale((0, 0, 1), 2), radius, (1, 0.5, 0), 0, 1, debug_frames);
+                    circle(protection.origin + (0, 0, 2), radius, (1, 0.5, 0), 0, 1, debug_frames);
                 }
             }
         }

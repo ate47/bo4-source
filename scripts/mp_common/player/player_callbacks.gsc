@@ -61,17 +61,13 @@ function callback_playershielddamageblocked(damage) {
 // Checksum 0x9ef73803, Offset: 0x380
 // Size: 0xd0
 function callback_playermigrated() {
-    /#
-        println("<unknown string>" + self.name + "<unknown string>" + gettime());
-    #/
+    println("<unknown string>" + self.name + "<unknown string>" + gettime());
     if (isdefined(self.connected) && self.connected) {
         self globallogic_ui::updateobjectivetext();
     }
     level.hostmigrationreturnedplayercount++;
     if (level.hostmigrationreturnedplayercount >= level.players.size * 2 / 3) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         level notify(#"hostmigration_enoughplayers");
     }
 }

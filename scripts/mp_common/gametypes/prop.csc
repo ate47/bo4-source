@@ -72,7 +72,6 @@ function localplayerspectating(localclientnum) {
 // Size: 0x66
 function function_2691bc1b() {
     while (true) {
-        res = undefined;
         res = level waittill(#"team_changed");
         localclientnum = res.localclientnum;
         level notify("team_changed" + localclientnum);
@@ -295,9 +294,7 @@ function function_f6c0a66e(localclientnum, teamint) {
     self endon(#"entityshutdown");
     self notify(#"hash_65350e9157e1e7fd");
     self endon(#"hash_65350e9157e1e7fd");
-    /#
-        assert(teamint == 1 || teamint == 2);
-    #/
+    assert(teamint == 1 || teamint == 2);
     team = "allies";
     if (teamint == 2) {
         team = "axis";

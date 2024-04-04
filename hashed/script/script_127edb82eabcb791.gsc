@@ -8,22 +8,6 @@
 class cct_firebreak_multi_kill : cluielem {
 
     // Namespace cct_firebreak_multi_kill/ct_firebreak_multi_kill
-    // Params 0, eflags: 0x8
-    // Checksum 0xcdd8bf00, Offset: 0x1a8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_firebreak_multi_kill/ct_firebreak_multi_kill
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xa0040272, Offset: 0x290
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_firebreak_multi_kill/ct_firebreak_multi_kill
     // Params 1, eflags: 0x0
     // Checksum 0xf0a6c6c4, Offset: 0x258
     // Size: 0x2c

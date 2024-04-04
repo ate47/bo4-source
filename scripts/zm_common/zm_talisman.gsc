@@ -87,12 +87,8 @@ function on_player_disconnect() {
 // Checksum 0x203e3ee, Offset: 0x598
 // Size: 0xf2
 function register_talisman(str_talisman, activate_talisman) {
-    /#
-        assert(isdefined(str_talisman), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(activate_talisman), "<unknown string>");
-    #/
+    assert(isdefined(str_talisman), "<unknown string>");
+    assert(isdefined(activate_talisman), "<unknown string>");
     if (!isdefined(level.var_e1074d3e)) {
         level.var_e1074d3e = [];
     }

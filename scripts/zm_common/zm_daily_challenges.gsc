@@ -332,7 +332,6 @@ function death_check_for_challenge_updates(e_attacker) {
 function spent_points_tracking() {
     level endon(#"end_game");
     while (true) {
-        result = undefined;
         result = level waittill(#"spent_points");
         player = result.player;
         n_points = result.points;
@@ -352,7 +351,6 @@ function spent_points_tracking() {
 function earned_points_tracking() {
     level endon(#"end_game");
     while (true) {
-        result = undefined;
         result = level waittill(#"earned_points");
         player = result.player;
         if (!isdefined(player)) {
@@ -505,9 +503,7 @@ function perk_drink_tracking() {
 // Size: 0x4c
 function debug_print(str_line) {
     if (getdvarint(#"zombie_debug", 0) > 0) {
-        /#
-            println(str_line);
-        #/
+        println(str_line);
     }
 }
 

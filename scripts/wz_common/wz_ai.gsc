@@ -54,9 +54,7 @@ function function_afce0cdb(spawn_loc) {
         return;
     }
     parms = strtok(spawn_loc.script_parameters, ";");
-    /#
-        assert(parms.size == 5);
-    #/
+    assert(parms.size == 5);
     zone = spawnstruct();
     if (!isdefined(zone)) {
         return;
@@ -174,7 +172,6 @@ function function_c5fad73b(type) {
 // Size: 0x80
 function function_9fc23101(patroller) {
     type = patroller.type;
-    waitresult = undefined;
     waitresult = patroller waittill(#"death");
     attacker = waitresult.attacker;
     if (isdefined(attacker) && attacker != patroller) {
@@ -242,7 +239,6 @@ function function_7820dead() {
     level endon(#"game_ended");
     self notify("27ad2aca1861b8c8");
     self endon("27ad2aca1861b8c8");
-    waitresult = undefined;
     waitresult = self waittill(#"damage");
     if (isdefined(waitresult.attacker) && isplayer(waitresult.attacker)) {
         self.favoriteenemy = waitresult.attacker;

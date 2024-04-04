@@ -51,7 +51,6 @@ function watchforgravityspikeexplosion() {
     weapon_proximity = getweapon(#"hero_gravityspikes");
     var_55ee3ee6 = getweapon(#"eq_gravityslam");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"explode");
         weapon = waitresult.weapon;
         owner_cent = waitresult.owner_cent;

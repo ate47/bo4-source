@@ -100,7 +100,7 @@ function function_764eb053() {
                 var_986c8888 = showmodel;
             }
             if ((newspawn || showmodel == 1) && isdefined(ent)) {
-                ent.origin = self.origin + vectorscale((0, 0, 1), 70) + anglestoforward(self.angles) * 250;
+                ent.origin = self.origin + (0, 0, 70) + anglestoforward(self.angles) * 250;
             }
             bundlename = getdvarstring(#"cg_playrenderoverridebundle", "<unknown string>");
             if (bundlename != var_e0f0fb1d && isdefined(ent)) {

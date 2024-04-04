@@ -62,19 +62,19 @@ function function_c9f70832() {
         level.zdraw.colors[#"purple"] = (1, 0, 1);
         level.zdraw.colors[#"black"] = (0, 0, 0);
         level.zdraw.colors[#"white"] = (1, 1, 1);
-        level.zdraw.colors[#"grey"] = vectorscale((1, 1, 1), 0.75);
-        level.zdraw.colors[#"gray1"] = vectorscale((1, 1, 1), 0.1);
-        level.zdraw.colors[#"gray2"] = vectorscale((1, 1, 1), 0.2);
-        level.zdraw.colors[#"gray3"] = vectorscale((1, 1, 1), 0.3);
-        level.zdraw.colors[#"gray4"] = vectorscale((1, 1, 1), 0.4);
-        level.zdraw.colors[#"gray5"] = vectorscale((1, 1, 1), 0.5);
-        level.zdraw.colors[#"gray6"] = vectorscale((1, 1, 1), 0.6);
-        level.zdraw.colors[#"gray7"] = vectorscale((1, 1, 1), 0.7);
-        level.zdraw.colors[#"gray8"] = vectorscale((1, 1, 1), 0.8);
-        level.zdraw.colors[#"gray9"] = vectorscale((1, 1, 1), 0.9);
+        level.zdraw.colors[#"grey"] = (0.75, 0.75, 0.75);
+        level.zdraw.colors[#"gray1"] = (0.1, 0.1, 0.1);
+        level.zdraw.colors[#"gray2"] = (0.2, 0.2, 0.2);
+        level.zdraw.colors[#"gray3"] = (0.3, 0.3, 0.3);
+        level.zdraw.colors[#"gray4"] = (0.4, 0.4, 0.4);
+        level.zdraw.colors[#"gray5"] = (0.5, 0.5, 0.5);
+        level.zdraw.colors[#"gray6"] = (0.6, 0.6, 0.6);
+        level.zdraw.colors[#"gray7"] = (0.7, 0.7, 0.7);
+        level.zdraw.colors[#"gray8"] = (0.8, 0.8, 0.8);
+        level.zdraw.colors[#"gray9"] = (0.9, 0.9, 0.9);
         level.zdraw.colors[#"slate"] = (0.439216, 0.501961, 0.564706);
         level.zdraw.colors[#"pink"] = (1, 0.752941, 0.796078);
-        level.zdraw.colors[#"olive"] = vectorscale((1, 1, 0), 0.501961);
+        level.zdraw.colors[#"olive"] = (0.501961, 0.501961, 0);
         level.zdraw.colors[#"brown"] = (0.545098, 0.270588, 0.0745098);
         level.zdraw.colors[#"default"] = (1, 1, 1);
     #/
@@ -525,8 +525,6 @@ function function_7bf700e4(var_a99ac828, startat) {
 // Checksum 0x19f93c1, Offset: 0x1bb0
 // Size: 0x34
 function function_96c207f(msg) {
-    /#
-        println("<unknown string>" + msg);
-    #/
+    println("<unknown string>" + msg);
 }
 

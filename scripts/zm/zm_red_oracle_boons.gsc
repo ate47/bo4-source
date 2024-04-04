@@ -514,16 +514,8 @@ function private function_de053460(pap_machine) {
     var_2ff5c7ee = pap_machine.unitrigger_stub;
     var_b64e889a = pap_machine.var_b64e889a;
     b_weapon_supports_aat = pap_machine.b_weapon_supports_aat;
-    /#
-        /#
-            assert(isdefined(var_2ff5c7ee.current_weapon), "<unknown string>");
-        #/
-    #/
-    /#
-        /#
-            assert(isdefined(var_2ff5c7ee.upgrade_weapon), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(var_2ff5c7ee.current_weapon), "<unknown string>");
+    assert(isdefined(var_2ff5c7ee.upgrade_weapon), "<unknown string>");
     w_current = var_2ff5c7ee.current_weapon;
     self waittill(#"player_revived");
     wait(1);
@@ -583,7 +575,6 @@ function private function_3fe13b7b() {
         if (!var_2c7d72cf.size) {
             continue;
         }
-        s_result = undefined;
         s_result = self waittill(#"player_revived", #"bled_out");
         wait(1);
         a_current_perks = arraycopy(self.var_466b927f);

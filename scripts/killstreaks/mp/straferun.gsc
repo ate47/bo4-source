@@ -97,9 +97,7 @@ function function_bff5c062(var_c4b91241, attackingplayer) {
 function usekillstreakstraferun(hardpointtype) {
     startnode = getvehiclenode("warthog_start", "targetname");
     if (!isdefined(startnode)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return false;
     }
     killstreak_id = self killstreakrules::killstreakstart("straferun", self.team, 0, 1);
@@ -136,9 +134,9 @@ function usekillstreakstraferun(hardpointtype) {
         plane util::make_sentient();
         plane.ignoreme = 1;
     }
-    plane.killcament = spawn("script_model", plane.origin + vectorscale((0, 0, 1), 700));
+    plane.killcament = spawn("script_model", plane.origin + (0, 0, 700));
     plane.killcament setfovforkillcam(25);
-    plane.killcament.angles = vectorscale((1, 0, 0), 15);
+    plane.killcament.angles = (15, 0, 0);
     plane.killcament.starttime = gettime();
     offset_x = getdvarint(#"hash_6354a081bacd5b72", -2500);
     offset_y = getdvarint(#"hash_6354a181bacd5d25", 0);
@@ -277,7 +275,6 @@ function watchdamage() {
     low_health = 0;
     damage_taken = 0;
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         mod = waitresult.mod;
@@ -319,7 +316,6 @@ function watchdamage() {
 function watchforotherkillstreaks() {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = level waittill(#"killstreak_started");
         hardpointtype = waitresult.hardpoint_type;
         teamname = waitresult.team;
@@ -351,7 +347,6 @@ function watchforotherkillstreaks() {
 function watchforkills() {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"killed");
         if (isplayer(waitresult.victim)) {
         }
@@ -386,7 +381,6 @@ function addstraferunkill() {
 function dostraferuns() {
     self endon(#"death");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"noteworthy");
         noteworthy = waitresult.noteworthy;
         noteworthynode = waitresult.noteworthy_node;
@@ -452,8 +446,7 @@ function function_d4896942() {
 function startstrafe() {
     self endon(#"death", #"strafe_stop");
     if (isdefined(self.strafing)) {
-        iprintlnbold("TRYING TO STRAFE WHEN ALREADY STRAFING!
-");
+        iprintlnbold("TRYING TO STRAFE WHEN ALREADY STRAFING!\n");
         return;
     }
     self.strafing = 1;
@@ -475,10 +468,10 @@ function startstrafe() {
         /#
             if (getdvarint(#"scr_devstraferunbulletsdebugdraw", 0)) {
                 time = 300;
-                airsupport::debug_line(attackstartvector, trace[#"position"] - vectorscale((0, 0, 1), 20), (1, 0, 0), time, 0);
+                airsupport::debug_line(attackstartvector, trace[#"position"] - (0, 0, 20), (1, 0, 0), time, 0);
                 if (count % 30 == 0) {
                     trace = bullettrace(perfectattackstartvector, (perfectattackstartvector[0], perfectattackstartvector[1], -100000), 0, self, 0, 1);
-                    airsupport::debug_line(trace[#"position"] + vectorscale((0, 0, 1), 20), trace[#"position"] - vectorscale((0, 0, 1), 20), (0, 0, 1), time, 0);
+                    airsupport::debug_line(trace[#"position"] + (0, 0, 20), trace[#"position"] - (0, 0, 20), (0, 0, 1), time, 0);
                 }
             }
         #/
@@ -539,7 +532,7 @@ function firerockets() {
         rocket attachkillcamtorocket(level.straferunkillcams.rockets[rocketindex], selectedtarget, targetorigin);
         /#
             if (getdvarint(#"scr_devstraferunkillcamsdebugdraw", 0)) {
-                rocket thread airsupport::debug_draw_bomb_path(undefined, vectorscale((0, 1, 0), 0.5), 400);
+                rocket thread airsupport::debug_draw_bomb_path(undefined, (0, 0.5, 0), 400);
             }
         #/
         wait(level.straferunrocketdelay);
@@ -624,7 +617,7 @@ function leavemap() {
 // Size: 0x104
 function explode() {
     self endon(#"delete");
-    forward = self.origin + vectorscale((0, 0, 1), 100) - self.origin;
+    forward = self.origin + (0, 0, 100) - self.origin;
     playfx(level.straferunexplodefx, self.origin, forward);
     self playsound(level.straferunexplodesound);
     if (isdefined(self.killcament)) {
@@ -645,7 +638,7 @@ function explode() {
 // Checksum 0x46787e13, Offset: 0x2930
 // Size: 0xa6
 function cantargetentity(entity) {
-    heli_centroid = self.origin + vectorscale((0, 0, -1), 160);
+    heli_centroid = self.origin + (0, 0, -160);
     heli_forward_norm = anglestoforward(self.angles);
     heli_turret_point = heli_centroid + 144 * heli_forward_norm;
     visible_amount = entity sightconetrace(heli_turret_point, self);
@@ -862,7 +855,7 @@ function resetkillcament(parent) {
     offset_x = getdvarint(#"scr_killcamplaneoffsetx", -3000);
     offset_y = getdvarint(#"scr_killcamplaneoffsety", 0);
     offset_z = getdvarint(#"scr_killcamplaneoffsetz", 740);
-    self linkto(parent, "tag_origin", (offset_x, offset_y, offset_z), vectorscale((1, 0, 0), 10));
+    self linkto(parent, "tag_origin", (offset_x, offset_y, offset_z), (10, 0, 0));
     self thread unlinkwhenparentdies(parent);
 }
 
@@ -877,7 +870,7 @@ function resetrocketkillcament(parent, rocketindex) {
     offset_y = getdvarint(#"scr_killcamplaneoffsety", 0);
     offset_z = getdvarint(#"scr_killcamplaneoffsetz", 740);
     rockettag = level.straferunrockettags[rocketindex % level.straferunrockettags.size];
-    self linkto(parent, rockettag, (offset_x, offset_y, offset_z), vectorscale((1, 0, 0), 10));
+    self linkto(parent, rockettag, (offset_x, offset_y, offset_z), (10, 0, 0));
     self thread unlinkwhenparentdies(parent);
 }
 
@@ -915,7 +908,7 @@ function attachkillcamtorocket(killcament, selectedtarget, targetorigin) {
     killcament unlink();
     killcament.angles = (0, 0, 0);
     killcament.origin = self.origin;
-    killcament linkto(self, "", (offset_x, offset_y, offset_z), vectorscale((1, 0, 0), 9));
+    killcament linkto(self, "", (offset_x, offset_y, offset_z), (9, 0, 0));
     killcament thread unlinkwhenclose(selectedtarget, targetorigin, self);
 }
 

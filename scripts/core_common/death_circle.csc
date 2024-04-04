@@ -96,7 +96,7 @@ function function_a380fe5(localclientnum, oldval, newval, bnewent, binitialsnap,
 function on_localclient_connect(localclientnum) {
     player = function_27673a7(localclientnum);
     if (isdefined(player)) {
-        player.var_2cbc8a68 = spawn(localclientnum, vectorscale((0, 0, -1), 10000), "script_model");
+        player.var_2cbc8a68 = spawn(localclientnum, (0, 0, -10000), "script_model");
         player.var_2cbc8a68 playrenderoverridebundle(#"hash_75168376918f5ab7");
     }
     level thread function_382da026(localclientnum);
@@ -336,7 +336,7 @@ function private function_32f7227c(deathcircle, currentradius, localclientnum) {
     localplayer = function_5c10bd79(localclientnum);
     startpos = (deathcircle.origin[0], deathcircle.origin[1], 0);
     toplayervec = (0, 0, 0);
-    eyepos = startpos + vectorscale((0, 0, 1), 60);
+    eyepos = startpos + (0, 0, 60);
     if (isdefined(localplayer)) {
         endpos = (localplayer.origin[0], localplayer.origin[1], 0);
         toplayervec = vectornormalize(endpos - startpos) * currentradius;

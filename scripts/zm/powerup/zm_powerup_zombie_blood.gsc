@@ -131,9 +131,7 @@ function watch_zombie_blood_early_exit() {
 // Checksum 0xa8410284, Offset: 0xa30
 // Size: 0x190
 function make_zombie_blood_entity() {
-    /#
-        assert(isdefined(level.a_zombie_blood_entities), "<unknown string>");
-    #/
+    assert(isdefined(level.a_zombie_blood_entities), "<unknown string>");
     if (!isdefined(level.a_zombie_blood_entities)) {
         level.a_zombie_blood_entities = [];
     } else if (!isarray(level.a_zombie_blood_entities)) {

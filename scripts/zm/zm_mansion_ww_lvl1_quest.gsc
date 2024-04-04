@@ -161,7 +161,6 @@ function function_7706457d(e_player) {
 function function_7310e1e0() {
     level endon(#"ww_case_completed");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!level flag::get(#"hash_4c1f880bcc6be2d0")) {
@@ -235,7 +234,6 @@ function function_7e7626b5() {
     self endon(#"death");
     level endon(#"ww_case_completed");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         player = s_waitresult.activator;
         if (zombie_utility::is_player_valid(player)) {
@@ -268,7 +266,6 @@ function function_9ffdf1be(e_player) {
 function function_f4f7650b() {
     level endon(#"ww_obtained");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player, 1)) {

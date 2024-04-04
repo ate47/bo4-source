@@ -59,7 +59,6 @@ function private function_53627246() {
     zm_trial_util::function_2976fa44(self.var_ff22cb62);
     zm_trial_util::function_dace284(self.var_6a7521e3);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"portal_used");
         if (!(isdefined(s_waitresult.s_portal.var_5b12474a) && s_waitresult.s_portal.var_5b12474a)) {
             s_waitresult.s_portal.var_5b12474a = 1;

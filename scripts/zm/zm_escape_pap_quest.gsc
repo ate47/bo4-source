@@ -107,7 +107,6 @@ function function_124362b5(is_powered) {
             level flag::wait_till("power_on1");
             var_a8d69fbd = getent("pap_shock_box", "script_string");
             for (var_24c740a5 = 0; !var_24c740a5; var_24c740a5 = 1) {
-                s_result = undefined;
                 s_result = var_a8d69fbd waittill(#"hash_7e1d78666f0be68b");
                 if (isalive(s_result.e_player)) {
                     str_zone = s_result.e_player zm_zonemgr::get_player_zone();

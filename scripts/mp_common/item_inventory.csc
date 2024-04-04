@@ -151,7 +151,6 @@ function private function_ca87f318(localclientnum) {
     var_6e7b39bc = "inventory_detach" + localclientnum;
     clientdata.var_b9730e2b = gettime();
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(var_790695cc, var_6e7b39bc);
         if (gettime() - clientdata.var_b9730e2b < 300) {
             continue;
@@ -304,9 +303,7 @@ function private function_e090a831(localclientnum, networkid) {
 // Checksum 0x63ad370c, Offset: 0x1bf8
 // Size: 0x188
 function private function_535a5a06(localclientnum, var_6e51c00) {
-    /#
-        assert(var_6e51c00 >= -1 && var_6e51c00 <= 1);
-    #/
+    assert(var_6e51c00 >= -1 && var_6e51c00 <= 1);
     inventoryuimodel = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory");
     var_f99434b1 = createuimodel(inventoryuimodel, "quickConsumeIndex");
     perksarray = function_f3ef5269(localclientnum);
@@ -413,7 +410,6 @@ function private function_9b83c65d(localclientnum) {
     var_ce5c0b10 = "inventory_cycle_quick_consumable" + localclientnum;
     var_17bdd1c3 = "inventory_equip_quick_consumable" + localclientnum;
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(var_ca4fc719, var_e2d1f454, var_3731e165, var_6a10d173, var_ce5c0b10, var_17bdd1c3);
         if (waitresult._notify === var_ca4fc719) {
             if (!function_10861362(localclientnum)) {
@@ -529,7 +525,6 @@ function private function_ac4df751(localclientnum) {
     var_fcd005cc = "inventory_drop_weapon_in_slot" + localclientnum;
     var_3d759450 = "inventory_drop_weapon_in_slot_and_detach" + localclientnum;
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(var_5054e2f7, var_ffec0c46, var_46a7a0e3, var_fcd005cc, var_3d759450);
         if (waitresult._notify === var_5054e2f7) {
             networkid = waitresult.id;
@@ -634,7 +629,6 @@ function private function_7f35a045(localclientnum) {
     clientdata = item_world::function_a7e98a1a(localclientnum);
     var_6c2b2289 = "inventory_item_focus" + localclientnum;
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(var_6c2b2289);
         data = item_world::function_a7e98a1a(localclientnum);
         function_534dcb9c(localclientnum);
@@ -725,7 +719,6 @@ function private function_2ae9881d(localclientnum) {
     var_db83305d = "cycle_equipment" + localclientnum;
     clientdata.var_cb55ac3c = gettime();
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(var_f3efb06b, var_db83305d);
         if (gettime() - clientdata.var_cb55ac3c < 200) {
             continue;
@@ -809,9 +802,7 @@ function private function_d1e6731e(localclientnum) {
 // Checksum 0x31fdb695, Offset: 0x4530
 // Size: 0xe2
 function private function_6d9d9cd7(slotid) {
-    /#
-        assert(isint(slotid));
-    #/
+    assert(isint(slotid));
     foreach (slot in array(10, 11, 12, 13, 16 + 1, 16 + 1 + 6 + 1)) {
         if (slot == slotid) {
             return true;
@@ -1543,7 +1534,6 @@ function private function_3e624606(localclientnum) {
     var_99fe8c78 = "multi_item_pickup" + localclientnum;
     var_dab12fb1 = "multi_item_pickup_stowed_weapon" + localclientnum;
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(var_99fe8c78, var_dab12fb1);
         if (self clientfield::get_player_uimodel("hudItems.multiItemPickup.status") == 2) {
             networkid = waitresult.id;
@@ -1698,9 +1688,7 @@ function function_a243ddd6(localclientnum, itementry) {
 // Checksum 0x3d52ba44, Offset: 0x9a00
 // Size: 0x154
 function function_d768ea30(localclientnum) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     var_b4322d52 = 0;
     currentweapon = isdefined(self.currentweapon) ? self.currentweapon : self.weapon;
     if (currentweapon == level.weaponbasemeleeheld) {
@@ -1721,9 +1709,7 @@ function function_d768ea30(localclientnum) {
 // Checksum 0xe2b3ebe6, Offset: 0x9b60
 // Size: 0x20c
 function function_78ed4455(localclientnum, itementry) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     data = item_world::function_a7e98a1a(localclientnum);
     switch (itementry.itemtype) {
     case #"armor":
@@ -1758,9 +1744,7 @@ function function_78ed4455(localclientnum, itementry) {
 // Checksum 0x8535fe41, Offset: 0x9d78
 // Size: 0x294
 function function_9c4460e0(localclientnum, itemid, count = 1, slotid = undefined) {
-    /#
-        assert(isint(itemid));
-    #/
+    assert(isint(itemid));
     if (!isdefined(itemid)) {
         return;
     }
@@ -1781,9 +1765,7 @@ function function_9c4460e0(localclientnum, itemid, count = 1, slotid = undefined
     if (!isdefined(selectedindex)) {
         selectedindex = item_world::function_73436347(data.inventory.items, 32767);
         if (!isdefined(selectedindex)) {
-            /#
-                println("castTime" + itemid + "none");
-            #/
+            println("castTime" + itemid + "none");
             return;
         }
     }
@@ -1793,9 +1775,7 @@ function function_9c4460e0(localclientnum, itemid, count = 1, slotid = undefined
     if (selectedindex < data.inventory.items.size) {
         inventoryitem = data.inventory.items[selectedindex];
     }
-    /#
-        assert(isdefined(inventoryitem));
-    #/
+    assert(isdefined(inventoryitem));
     totalcount = function_bba770de(localclientnum, itementry);
     totalcount = totalcount + count;
     player function_1a99656a(localclientnum, inventoryitem, networkid, itemid, count, totalcount, availableaction);
@@ -1806,9 +1786,7 @@ function function_9c4460e0(localclientnum, itemid, count = 1, slotid = undefined
 // Checksum 0x590ece32, Offset: 0xa018
 // Size: 0x184
 function function_1415f8f1(localclientnum, itementry) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     data = item_world::function_a7e98a1a(localclientnum);
     if (itementry.itemtype == #"attachment") {
         weaponslotid = function_d768ea30(localclientnum);
@@ -1857,9 +1835,7 @@ function function_bba770de(localclientnum, itementry) {
 // Checksum 0x5df81870, Offset: 0xa340
 // Size: 0x186
 function can_pickup_ammo(localclientnum, item, var_1326fcc7 = undefined) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     data = item_world::function_a7e98a1a(localclientnum);
     itementry = item.itementry;
     ammoweapon = itementry.weapon;
@@ -1906,9 +1882,7 @@ function function_52e537be(localclientnum, networkid) {
 // Checksum 0x28255535, Offset: 0xa700
 // Size: 0x56c
 function consume_item(localclientnum, networkid) {
-    /#
-        assert(networkid != 32767);
-    #/
+    assert(networkid != 32767);
     if (networkid == 32767) {
         return;
     }
@@ -1968,9 +1942,7 @@ function consume_item(localclientnum, networkid) {
 // Checksum 0xc6e47b53, Offset: 0xac78
 // Size: 0x2bc
 function function_de74158f(localclientnum, networkid) {
-    /#
-        assert(networkid != 32767);
-    #/
+    assert(networkid != 32767);
     if (networkid == 32767) {
         return;
     }
@@ -2059,16 +2031,10 @@ function give_backpack(localclientnum, networkid) {
 // Checksum 0x2b881ed5, Offset: 0xb360
 // Size: 0x108
 function function_15d578f4(localclientnum, networkid) {
-    /#
-        assert(isdefined(localclientnum));
-    #/
-    /#
-        assert(item_world_util::function_d9648161(networkid));
-    #/
+    assert(isdefined(localclientnum));
+    assert(item_world_util::function_d9648161(networkid));
     data = item_world::function_a7e98a1a(localclientnum);
-    /#
-        assert(isdefined(data));
-    #/
+    assert(isdefined(data));
     for (index = 0; index < data.inventory.items.size; index++) {
         inventoryitem = data.inventory.items[index];
         if (inventoryitem.networkid === networkid) {
@@ -2094,9 +2060,7 @@ function function_c48cd17f(localclientnum, networkid) {
 // Checksum 0x26a347d1, Offset: 0xb4c8
 // Size: 0x134
 function has_attachments(localclientnum, weaponslotid) {
-    /#
-        assert(isdefined(localclientnum));
-    #/
+    assert(isdefined(localclientnum));
     if (!isdefined(weaponslotid)) {
         return false;
     }
@@ -2435,9 +2399,7 @@ function function_4f16aa30(localclientnum, itemid) {
     if (!isdefined(level.var_c53d118f)) {
         level.var_c53d118f = [];
     }
-    /#
-        assert(item_world_util::function_2c7fc531(itemid));
-    #/
+    assert(item_world_util::function_2c7fc531(itemid));
     item = function_b1702735(itemid);
     if (!isdefined(item.itementry)) {
         return;
@@ -2569,9 +2531,7 @@ function function_c6ff0aa2(localclientnum, networkid) {
     data = item_world::function_a7e98a1a(localclientnum);
     index = item_world::function_73436347(data.inventory.items, networkid);
     if (!isdefined(index)) {
-        /#
-            println("<unknown string>" + networkid + "<unknown string>");
-        #/
+        println("<unknown string>" + networkid + "<unknown string>");
         return;
     }
     item = data.inventory.items[index];
@@ -2656,9 +2616,7 @@ function function_8063170(inventoryitem, equipped) {
 // Checksum 0xc039d53a, Offset: 0xe9a0
 // Size: 0x33c
 function function_26c87da8(localclientnum, var_c9293a27, var_8f194e5a) {
-    /#
-        assert(isdefined(var_c9293a27) && isdefined(var_8f194e5a));
-    #/
+    assert(isdefined(var_c9293a27) && isdefined(var_8f194e5a));
     if (var_c9293a27 == var_8f194e5a) {
         return;
     }
@@ -2741,9 +2699,7 @@ function update_inventory_item(localclientnum, networkid, count) {
 // Checksum 0xb883d5f5, Offset: 0xf120
 // Size: 0xe84
 function function_9116bb0e(localclientnum, closed = 0) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     clientdata = item_world::function_a7e98a1a(localclientnum);
     var_6e2c91d0 = createuimodel(getuimodelforcontroller(localclientnum), "hudItems.multiItemPickup");
     var_cc67e8b = createuimodel(var_6e2c91d0, "count");

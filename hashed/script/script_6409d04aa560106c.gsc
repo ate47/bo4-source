@@ -8,27 +8,11 @@
 class czm_laststand_client : cluielem {
 
     // Namespace czm_laststand_client/zm_laststand_client
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xca14c5dd, Offset: 0x2a0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_laststand_client/zm_laststand_client
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xb0ea0257, Offset: 0x520
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_laststand_client/zm_laststand_client
     // Params 2, eflags: 0x1 linked
     // Checksum 0xb979d720, Offset: 0x4e8
     // Size: 0x30
     function set_num_downs(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "num_downs", value);
+        set_data(localclientnum, "num_downs", value);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
@@ -36,7 +20,7 @@ class czm_laststand_client : cluielem {
     // Checksum 0x96d0312c, Offset: 0x4b0
     // Size: 0x30
     function set_revive_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "revive_progress", value);
+        set_data(localclientnum, "revive_progress", value);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
@@ -44,7 +28,7 @@ class czm_laststand_client : cluielem {
     // Checksum 0xc5742d28, Offset: 0x478
     // Size: 0x30
     function set_bleedout_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "bleedout_progress", value);
+        set_data(localclientnum, "bleedout_progress", value);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client
@@ -61,9 +45,9 @@ class czm_laststand_client : cluielem {
     // Size: 0x88
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "bleedout_progress", 0);
-        [[ self ]]->set_data(localclientnum, "revive_progress", 0);
-        [[ self ]]->set_data(localclientnum, "num_downs", 0);
+        set_data(localclientnum, "bleedout_progress", 0);
+        set_data(localclientnum, "revive_progress", 0);
+        set_data(localclientnum, "num_downs", 0);
     }
 
     // Namespace czm_laststand_client/zm_laststand_client

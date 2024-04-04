@@ -239,7 +239,6 @@ function function_3a81c97b() {
 // Checksum 0xb8d97360, Offset: 0x1b40
 // Size: 0x74
 function function_4e4594ab() {
-    s_notify = undefined;
     s_notify = self waittill(#"death");
     e_attacker = s_notify.attacker;
     if (isplayer(e_attacker)) {

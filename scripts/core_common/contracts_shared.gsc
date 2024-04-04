@@ -37,9 +37,7 @@ function register_player_contract_event(event_name, event_func, max_param_count 
         level.player_contract_events[event_name].param_count = max_param_count;
         level.player_contract_events[event_name].events = [];
     }
-    /#
-        assert(max_param_count == level.player_contract_events[event_name].param_count);
-    #/
+    assert(max_param_count == level.player_contract_events[event_name].param_count);
     level.player_contract_events[event_name].events[level.player_contract_events[event_name].events.size] = event_func;
 }
 

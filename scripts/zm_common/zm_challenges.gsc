@@ -552,7 +552,6 @@ function death_check_for_challenge_updates(e_attacker) {
 function spent_points_tracking() {
     level endon(#"end_game");
     while (true) {
-        result = undefined;
         result = level waittill(#"spent_points");
         player = result.player;
         n_points = result.points;
@@ -596,7 +595,6 @@ function function_73696786() {
     self endon(#"disconnect");
     var_c0e0819a = 1;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_13948ef3726b968f");
         if (isdefined(var_c0e0819a) && var_c0e0819a) {
             /#
@@ -616,7 +614,6 @@ function function_73696786() {
 function function_12a35616() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"blueprint_completed");
         if (isdefined(waitresult.produced) && isdefined(waitresult.produced.isriotshield) && waitresult.produced.isriotshield) {
             /#

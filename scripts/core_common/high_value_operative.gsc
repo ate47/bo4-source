@@ -171,12 +171,8 @@ function function_323c6715() {
             if (!isdefined(player) || isbot(player)) {
                 continue;
             }
-            /#
-                assert(isdefined(player.pers), "<unknown string>");
-            #/
-            /#
-                assert(isdefined(player.pers[#"hvo"]), "<unknown string>");
-            #/
+            assert(isdefined(player.pers), "<unknown string>");
+            assert(isdefined(player.pers[#"hvo"]), "<unknown string>");
             var_9b4eeccc = function_b14806c6(player player_role::get(), currentsessionmode());
             if (!isdefined(var_9b4eeccc) || isdefined(hvo.var_447510ee) && hvo.var_447510ee != var_9b4eeccc || !isdefined(player.pers) || !isdefined(player.pers[#"hvo"])) {
                 continue;

@@ -123,7 +123,6 @@ function private function_91b514e8(menuname) {
     player = self;
     player endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = player waittill(#"menuresponse");
         menu = waitresult.menu;
         response = waitresult.response;
@@ -385,9 +384,7 @@ function checkroundswitch() {
     if (!isdefined(level.onroundswitch)) {
         return false;
     }
-    /#
-        assert(game.roundsplayed > 0);
-    #/
+    assert(game.roundsplayed > 0);
     if (game.roundsplayed % level.roundswitch == 0) {
         [[ level.onroundswitch ]]();
         return true;
@@ -676,9 +673,7 @@ function round_end_wait(time) {
 // Checksum 0x5c6f6014, Offset: 0x2240
 // Size: 0xd8
 function function_ad717b18(var_c139bfe2) {
-    /#
-        assert(isdefined(level.roundenddelay[var_c139bfe2]));
-    #/
+    assert(isdefined(level.roundenddelay[var_c139bfe2]));
     delay = level.roundenddelay[var_c139bfe2] * level.var_49d9aa70;
     if (delay) {
         return;

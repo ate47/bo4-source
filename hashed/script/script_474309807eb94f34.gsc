@@ -6,9 +6,7 @@
 // Checksum 0x91557067, Offset: 0x68
 // Size: 0x6e
 function function_385ef18d(camoweapon) {
-    /#
-        assert(isdefined(camoweapon));
-    #/
+    assert(isdefined(camoweapon));
     var_e69cf15d = function_3786d342(camoweapon);
     if (isdefined(var_e69cf15d) && var_e69cf15d != level.weaponnone) {
         camoweapon = var_e69cf15d;

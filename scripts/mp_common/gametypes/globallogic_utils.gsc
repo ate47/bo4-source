@@ -152,9 +152,7 @@ function assertproperplacement() {
                         player = level.placement[#"all"][j];
                         println("<unknown string>" + j + "<unknown string>" + player.name + "<unknown string>" + player.score);
                     }
-                    /#
-                        assertmsg("<unknown string>");
-                    #/
+                    assertmsg("<unknown string>");
                     break;
                 }
             }
@@ -167,9 +165,7 @@ function assertproperplacement() {
                     player = level.placement[#"all"][j];
                     println("<unknown string>" + j + "<unknown string>" + player.name + "<unknown string>" + player.pointstowin);
                 }
-                /#
-                    assertmsg("<unknown string>");
-                #/
+                assertmsg("<unknown string>");
                 break;
             }
         }
@@ -344,9 +340,7 @@ function resumetimerdiscardoverride(discardtime) {
 // Checksum 0xa5c1e111, Offset: 0xe68
 // Size: 0x9e
 function getscoreremaining(team) {
-    /#
-        assert(isplayer(self) || isdefined(team));
-    #/
+    assert(isplayer(self) || isdefined(team));
     scorelimit = level.scorelimit;
     if (isplayer(self)) {
         return (scorelimit - globallogic_score::_getplayerscore(self));
@@ -370,9 +364,7 @@ function getteamscoreforround(team) {
 // Checksum 0x914af0ab, Offset: 0xf88
 // Size: 0xd2
 function getscoreperminute(team) {
-    /#
-        assert(isplayer(self) || isdefined(team));
-    #/
+    assert(isplayer(self) || isdefined(team));
     minutespassed = gettimepassed() / int(60 * 1000) + 0.0001;
     if (isplayer(self)) {
         return (globallogic_score::_getplayerscore(self) / minutespassed);
@@ -385,9 +377,7 @@ function getscoreperminute(team) {
 // Checksum 0xd43231d0, Offset: 0x1068
 // Size: 0x9a
 function getestimatedtimeuntilscorelimit(team) {
-    /#
-        assert(isplayer(self) || isdefined(team));
-    #/
+    assert(isplayer(self) || isdefined(team));
     scoreperminute = self getscoreperminute(team);
     scoreremaining = self getscoreremaining(team);
     if (!scoreperminute) {
@@ -425,9 +415,7 @@ function waitfortimeornotifynoartillery(time, notifyname) {
     self endon(notifyname);
     wait(time);
     while (isdefined(level.artilleryinprogress)) {
-        /#
-            assert(level.artilleryinprogress);
-        #/
+        assert(level.artilleryinprogress);
         wait(0.25);
     }
 }
@@ -536,12 +524,8 @@ function function_4aa8d809(index, string) {
 // Size: 0x22c
 function function_8d61a6c2(var_c1e98979) {
     /#
-        /#
-            assert(isdefined(var_c1e98979));
-        #/
-        /#
-            assert(isdefined(level.var_336c35f1[var_c1e98979]));
-        #/
+        assert(isdefined(var_c1e98979));
+        assert(isdefined(level.var_336c35f1[var_c1e98979]));
         log_string = level.var_336c35f1[var_c1e98979];
         winner = round::get_winner();
         if (isplayer(winner)) {

@@ -98,9 +98,7 @@ function player_watch_drown_shutdown(localclientnum) {
 // Size: 0x7e
 function function_1a9dc208() {
     playerrole = self getrolefields();
-    /#
-        assert(isdefined(playerrole));
-    #/
+    assert(isdefined(playerrole));
     if (isdefined(playerrole)) {
         return int(playerrole.var_f0886300 * 1000);
     }

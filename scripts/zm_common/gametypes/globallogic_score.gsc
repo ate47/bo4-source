@@ -123,13 +123,9 @@ function resetplayermomentumondeath() {
 // Size: 0x170
 function giveplayerxpdisplay(event, player, victim, descvalue) {
     score = player rank::getscoreinfovalue(event);
-    /#
-        assert(isdefined(score));
-    #/
+    assert(isdefined(score));
     xp = player rank::getscoreinfoxp(event);
-    /#
-        assert(isdefined(xp));
-    #/
+    assert(isdefined(xp));
     label = rank::getscoreinfolabel(event);
     if (xp && !level.gameended && isdefined(label)) {
         xpscale = player getxpscale();
@@ -452,11 +448,7 @@ function getpersstat(dataname) {
 // Size: 0xf4
 function incpersstat(dataname, increment, record_stats, includegametype) {
     pixbeginevent(#"incpersstat");
-    /#
-        /#
-            assert(isdefined(self.pers[dataname]), dataname + "<unknown string>");
-        #/
-    #/
+    assert(isdefined(self.pers[dataname]), dataname + "<unknown string>");
     self.pers[dataname] = self.pers[dataname] + increment;
     self stats::function_dad108fa(dataname, increment);
     if (!isdefined(record_stats) || record_stats == 1) {

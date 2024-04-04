@@ -126,9 +126,7 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
 // Checksum 0x515387df, Offset: 0xe98
 // Size: 0x822
 function private calculatetraveralsection(entity, traversal, animation, starttime, endtime, startposition, endposition, startangles, timescale = 1) {
-    /#
-        assert(endtime >= starttime);
-    #/
+    assert(endtime >= starttime);
     animlength = getanimlength(animation);
     section = spawnstruct();
     section.starttime = starttime;
@@ -217,12 +215,8 @@ function private calculatetraveralsection(entity, traversal, animation, starttim
 // Checksum 0x33bf7497, Offset: 0x16c8
 // Size: 0x5a0
 function calculatepivotoriginfromedge(entity, mantlenode, traversalstart) {
-    /#
-        assert(isvec(traversalstart));
-    #/
-    /#
-        assert(isdefined(mantlenode));
-    #/
+    assert(isvec(traversalstart));
+    assert(isdefined(mantlenode));
     mantlepoints = [];
     if (isdefined(mantlenode) && ispathnode(mantlenode)) {
         mantlepoints = getnodeedge(mantlenode);
@@ -230,12 +224,8 @@ function calculatepivotoriginfromedge(entity, mantlenode, traversalstart) {
     mantlestart = undefined;
     mantleend = undefined;
     if (mantlepoints.size > 0) {
-        /#
-            assert(isarray(mantlepoints));
-        #/
-        /#
-            assert(mantlepoints.size >= 2);
-        #/
+        assert(isarray(mantlepoints));
+        assert(mantlepoints.size >= 2);
         mantlestart = mantlepoints[0];
         mantleend = mantlepoints[mantlepoints.size - 1];
     } else {
@@ -313,7 +303,7 @@ function mocomptraversalproceduralinit(entity, mocompanim, mocompanimblendouttim
         if (isdefined(traversal.endnodeparent)) {
             traversal.origincontents = entity setcontents(8192);
             traversal.lastendnodeparentorigin = traversal.endnodeparent.origin;
-            traversal.adjustedendposition = physicstraceex(entity.traversalendpos + vectorscale((0, 0, 1), 24), entity.traversalendpos - vectorscale((0, 0, 1), 24), (0, 0, 0), (0, 0, 0), entity)[#"position"];
+            traversal.adjustedendposition = physicstraceex(entity.traversalendpos + (0, 0, 24), entity.traversalendpos - (0, 0, 24), (0, 0, 0), (0, 0, 0), entity)[#"position"];
         }
     }
     traversal.sections = [];
@@ -368,7 +358,7 @@ function mocomptraversalproceduralpivotinit(entity, mocompanim, mocompanimblendo
         if (isdefined(traversal.endnodeparent)) {
             traversal.origincontents = entity setcontents(8192);
             traversal.lastendnodeparentorigin = traversal.endnodeparent.origin;
-            traversal.adjustedendposition = physicstraceex(entity.traversalendpos + vectorscale((0, 0, 1), 24), entity.traversalendpos - vectorscale((0, 0, 1), 24), (0, 0, 0), (0, 0, 0), entity)[#"position"];
+            traversal.adjustedendposition = physicstraceex(entity.traversalendpos + (0, 0, 24), entity.traversalendpos - (0, 0, 24), (0, 0, 0), (0, 0, 0), entity)[#"position"];
         }
     }
     pivottimes = getnotetracktimes(mocompanim, "pivot_procedural");
@@ -434,16 +424,12 @@ function mocomptraversalproceduralpivotupdate(entity, mocompanim, mocompanimblen
         }
     #/
     traversal = entity.traversal;
-    /#
-        assert(isdefined(traversal));
-    #/
+    assert(isdefined(traversal));
     animationrate = traversal.initialanimationrate;
     adjusteddeltaperframe = (0, 0, 0);
     animationnextsteptime = entity getanimtime(mocompanim) * traversal.animlength;
     movedelta = getmovedelta(mocompanim, 0, animationnextsteptime / traversal.animlength);
-    /#
-        assert(traversal.sections.size > 0);
-    #/
+    assert(traversal.sections.size > 0);
     section = traversal.sections[0];
     for (index = 0; index < traversal.sections.size; index++) {
         section = traversal.sections[index];
@@ -563,24 +549,16 @@ function private _addadjusttocover(archetype, node, stance, rot2, rot32, rot3, r
 // Checksum 0x986e7389, Offset: 0x3be8
 // Size: 0x3ae
 function private _getadjusttocoverrotation(archetype, node, stance, angletonode) {
-    /#
-        assert(isarray(level.adjusttocover[archetype]));
-    #/
+    assert(isarray(level.adjusttocover[archetype]));
     if (!isdefined(level.adjusttocover[archetype][node])) {
         node = "cover_any";
     }
-    /#
-        assert(isarray(level.adjusttocover[archetype][node]));
-    #/
+    assert(isarray(level.adjusttocover[archetype][node]));
     if (!isdefined(level.adjusttocover[archetype][node][stance])) {
         stance = "stance_any";
     }
-    /#
-        assert(isarray(level.adjusttocover[archetype][node][stance]));
-    #/
-    /#
-        assert(angletonode >= 0 && angletonode < 360);
-    #/
+    assert(isarray(level.adjusttocover[archetype][node][stance]));
+    assert(angletonode >= 0 && angletonode < 360);
     direction = undefined;
     if (angletonode < 11.25) {
         direction = 2;
@@ -617,9 +595,7 @@ function private _getadjusttocoverrotation(archetype, node, stance, angletonode)
     } else {
         direction = 2;
     }
-    /#
-        assert(isdefined(level.adjusttocover[archetype][node][stance][direction]));
-    #/
+    assert(isdefined(level.adjusttocover[archetype][node][stance][direction]));
     adjusttime = level.adjusttocover[archetype][node][stance][direction];
     if (isdefined(adjusttime)) {
         return adjusttime;
@@ -719,7 +695,7 @@ function private mocompadjusttocoverupdate(entity, mocompanim, mocompanimblendou
     }
     /#
         if (getdvarint(#"ai_debugadjustmocomp", 0)) {
-            record3dtext(entity.mocompanglestarttime, entity.origin + vectorscale((0, 0, 1), 5), (0, 1, 0), "<unknown string>");
+            record3dtext(entity.mocompanglestarttime, entity.origin + (0, 0, 5), (0, 1, 0), "<unknown string>");
             hiptagorigin = entity gettagorigin("<unknown string>");
             recordline(entity.nodeoffsetorigin, entity.nodeoffsetorigin + entity.nodeoffsetforward * 30, (1, 0.5, 0), "<unknown string>", entity);
             recordline(entity.adjustnode.origin, entity.adjustnode.origin + entity.nodeforward * 20, (0, 1, 0), "<unknown string>", entity);

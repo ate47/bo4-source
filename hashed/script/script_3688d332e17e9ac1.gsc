@@ -164,7 +164,6 @@ function private function_33f0ddd3(s_event) {
 // Size: 0xb4
 function event_handler[missile_fire] function_f8ea644(eventstruct) {
     if (is_active() && isdefined(eventstruct.projectile)) {
-        s_waitresult = undefined;
         s_waitresult = eventstruct.projectile waittilltimeout(2, #"death", #"explode", #"projectile_impact_explode", #"stationary", #"grenade_stuck");
         self function_b33ed7bd();
     }

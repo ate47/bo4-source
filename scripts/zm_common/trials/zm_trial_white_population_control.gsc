@@ -92,7 +92,6 @@ function private function_8e69c85() {
 function private function_75f0aac6() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (waitresult.weapon.name === #"galvaknuckles_t8" && level.population_count === 0) {
             level.var_5cf4858b = 1;

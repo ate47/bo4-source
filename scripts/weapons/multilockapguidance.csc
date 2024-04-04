@@ -41,7 +41,6 @@ function player_init() {
 function watch_lockon(localclientnum) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"lockon_changed");
         state = waitresult.state;
         target = waitresult.target;

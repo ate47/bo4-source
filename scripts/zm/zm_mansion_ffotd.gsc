@@ -35,10 +35,10 @@ function __init__() {
 // Checksum 0xb114d82d, Offset: 0x340
 // Size: 0x21c
 function __main__() {
-    spawncollision("collision_clip_wall_256x256x10", "forest_exploit_fix_01", (-383.5, 3194.5, -253.5), vectorscale((0, 1, 0), 61.5035));
+    spawncollision("collision_clip_wall_256x256x10", "forest_exploit_fix_01", (-383.5, 3194.5, -253.5), (0, 61.5035, 0));
     spawncollision("collision_clip_wall_128x128x10", "bedroom_stairs_exploit_fix_01", (1753, 554.5, -24), (0, 0, 0));
-    spawncollision("collision_clip_wall_128x128x10", "tea_room_theater_exploit_01", (-815.5, 389.5, 184), vectorscale((0, 1, 0), 270));
-    spawncollision("collision_clip_wall_128x128x10", "tea_room_theater_exploit_02", (-815.5, 353, 184), vectorscale((0, 1, 0), 270));
+    spawncollision("collision_clip_wall_128x128x10", "tea_room_theater_exploit_01", (-815.5, 389.5, 184), (0, 270, 0));
+    spawncollision("collision_clip_wall_128x128x10", "tea_room_theater_exploit_02", (-815.5, 353, 184), (0, 270, 0));
     spawncollision("collision_clip_wall_128x128x10", "tea_room_theater_exploit_03", (-645.5, 192, 185.5), (0, 0, 0));
     spawncollision("collision_clip_wall_128x128x10", "tea_room_theater_exploit_04", (-655.5, 192, 185.5), (0, 0, 0));
     spawncollision("collision_clip_wall_128x128x10", "dining_ramp_exploit_01", (1251.5, 71, -46), (0, 0, 0));

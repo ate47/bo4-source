@@ -553,7 +553,6 @@ function function_f58c42e2() {
     level endon(#"guys_stunned", #"combattraining_logic_finished");
     while (true) {
         e_player = getplayers()[0];
-        waitresult = undefined;
         waitresult = e_player waittill(#"grenade_fire");
         n_start_time = gettime() / 1000;
         while (true) {
@@ -730,7 +729,6 @@ function function_9f3ecaf2() {
         level.var_47cd3e56 = 0;
         level thread ct_bots::activate_bots(level.var_7b46025.size, #"axis");
         e_player = getplayers()[0];
-        s_result = undefined;
         s_result = e_player waittill(#"grenade_fire", #"weapon_fired");
         level notify(#"stop_use_shield_collision");
         if (s_result._notify === "grenade_fire") {
@@ -1281,7 +1279,6 @@ function function_e9b5de80() {
 // Checksum 0x130dd7e0, Offset: 0x6f98
 // Size: 0x5c
 function function_ad416588() {
-    s_notify = undefined;
     s_notify = self waittill(#"damage");
     if (isalive(self)) {
         self kill();
@@ -1338,7 +1335,6 @@ function player_grenade_watcher() {
     self endon(#"death");
     while (true) {
         level flag::clear("grenade_exp");
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         if (waitresult.weapon.name == #"eq_swat_grenade") {
             v_pos = waitresult.projectile.origin;
@@ -1462,7 +1458,6 @@ function function_f9eac817() {
     self notify("7362195890e41eba");
     self endon("7362195890e41eba");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         next_weapon = waitresult.weapon;
         if (isdefined(next_weapon) && next_weapon.name == #"sig_buckler_turret") {

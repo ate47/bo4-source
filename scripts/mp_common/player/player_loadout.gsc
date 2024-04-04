@@ -291,9 +291,7 @@ function private weapon_class_register(weaponname, weapon_type) {
         level.inventory_array[getweapon(weaponname)] = 1;
         return;
     }
-    /#
-        assert(0, "head" + weapon_type + "<unknown string>" + weaponname);
-    #/
+    assert(0, "head" + weapon_type + "<unknown string>" + weaponname);
 }
 
 // Namespace loadout/player_loadout
@@ -383,9 +381,7 @@ function private function_8624b793() {
 // Checksum 0xa62caed7, Offset: 0x1ed8
 // Size: 0x44
 function function_97d216fa(response) {
-    /#
-        assert(isdefined(level.classmap[response]));
-    #/
+    assert(isdefined(level.classmap[response]));
     return level.classmap[response];
 }
 
@@ -441,9 +437,7 @@ function give_killstreaks() {
     for (killstreaknum = 0; killstreaknum < level.maxkillstreaks; killstreaknum++) {
         killstreakindex = function_f8157311(classnum, killstreaknum);
         if (isdefined(killstreakindex) && killstreakindex > 0) {
-            /#
-                assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
-            #/
+            assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
             if (isdefined(level.tbl_killstreakdata[killstreakindex])) {
                 self.killstreak[currentkillstreak] = level.tbl_killstreakdata[killstreakindex];
                 if (isdefined(level.usingmomentum) && level.usingmomentum) {
@@ -639,9 +633,7 @@ function function_f436358b(weaponclass) {
         pixendevent();
     } else {
         pixbeginevent(#"default class");
-        /#
-            assert(isdefined(self.pers[#"class"]), "<unknown string>");
-        #/
+        assert(isdefined(self.pers[#"class"]), "<unknown string>");
         self.class_num_for_global_weapons = 0;
         self setplayerrenderoptions(0);
         pixendevent();
@@ -654,9 +646,7 @@ function function_f436358b(weaponclass) {
 // Checksum 0x64f197ab, Offset: 0x2d90
 // Size: 0x1e0
 function get_class_num(weaponclass) {
-    /#
-        assert(isdefined(weaponclass));
-    #/
+    assert(isdefined(weaponclass));
     prefixstring = "CLASS_CUSTOM";
     var_8bba14bc = self getcustomclasscount();
     var_8bba14bc = max(var_8bba14bc, 0);
@@ -666,15 +656,11 @@ function get_class_num(weaponclass) {
         if (class_num == -1) {
             class_num = var_8bba14bc;
         }
-        /#
-            assert(isdefined(class_num));
-        #/
+        assert(isdefined(class_num));
         if (class_num < 0 || class_num > var_8bba14bc) {
             class_num = 0;
         }
-        /#
-            assert(class_num >= 0 && class_num <= var_8bba14bc);
-        #/
+        assert(class_num >= 0 && class_num <= var_8bba14bc);
     } else {
         class_num = level.classtoclassnum[weaponclass];
     }
@@ -684,9 +670,7 @@ function get_class_num(weaponclass) {
             class_num = 0;
         }
     }
-    /#
-        assert(isdefined(class_num));
-    #/
+    assert(isdefined(class_num));
     return class_num;
 }
 
@@ -1204,9 +1188,7 @@ function private give_special_offhand(slot, previous_weapon) {
         }
     #/
     if (isdefined(self.pers[#"rouletteweapon"])) {
-        /#
-            assert(specialoffhand.name == "<unknown string>");
-        #/
+        assert(specialoffhand.name == "<unknown string>");
         specialoffhand = self.pers[#"rouletteweapon"];
     }
     if (isitemrestricted(specialoffhand.name) || !function_50797a7f(specialoffhand.name)) {
@@ -1305,9 +1287,7 @@ function give_loadout(team, weaponclass) {
     pixbeginevent(#"hash_d8a2ffe71c27024");
     self clientfield::set("cold_blooded", 0);
     if (function_87bcb1b()) {
-        /#
-            assert(isdefined(self.curclass));
-        #/
+        assert(isdefined(self.curclass));
         self function_d7c205b9(self.curclass, #"give_loadout");
         var_c8f2f688 = 1;
         /#
@@ -1541,15 +1521,9 @@ function register_perks() {
 // Checksum 0xe5c767fe, Offset: 0x6440
 // Size: 0x65e
 function cac_modified_damage(victim, attacker, damage, mod, weapon, inflictor, hitloc) {
-    /#
-        assert(isdefined(victim));
-    #/
-    /#
-        assert(isdefined(attacker));
-    #/
-    /#
-        assert(isplayer(victim));
-    #/
+    assert(isdefined(victim));
+    assert(isdefined(attacker));
+    assert(isplayer(victim));
     attacker_is_player = isplayer(attacker);
     if (damage <= 0) {
         return damage;

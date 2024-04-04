@@ -135,7 +135,6 @@ function vehicleteamthread() {
     vehicle = self;
     vehicle endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = vehicle waittill(#"enter_vehicle");
         player = waitresult.player;
         vehicle setteam(player.team);

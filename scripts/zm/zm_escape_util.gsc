@@ -180,15 +180,9 @@ function function_7273c33d(s_loc, var_2c30f72f = 1) {
     }
     earthquake(0.5, 0.75, s_loc.origin, 1000);
     playsoundatposition(#"zmb_hellhound_spawn", s_loc.origin);
-    /#
-        assert(isdefined(self), "<unknown string>");
-    #/
-    /#
-        assert(isalive(self), "<unknown string>");
-    #/
-    /#
-        assert(zm_utility::is_magic_bullet_shield_enabled(self), "<unknown string>");
-    #/
+    assert(isdefined(self), "<unknown string>");
+    assert(isalive(self), "<unknown string>");
+    assert(zm_utility::is_magic_bullet_shield_enabled(self), "<unknown string>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
     self util::stop_magic_bullet_shield();
     wait(0.1);
@@ -223,7 +217,6 @@ function function_817220a9(a_ents) {
         var_44ec6b44 thread function_1abf5396(a_ents[#"arm_grasp"]);
     }
     while (true) {
-        s_result = undefined;
         s_result = a_ents[#"arm_grasp"] waittill(#"damage");
         if (isplayer(s_result.attacker) && isalive(s_result.attacker)) {
             if (isdefined(s_result.attacker.var_7e008e0c) && s_result.attacker.var_7e008e0c > 0) {
@@ -249,7 +242,6 @@ function function_817220a9(a_ents) {
 function function_1abf5396(var_cba19e17) {
     self endon(#"death", #"hash_4a3551167bd870c2");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (isplayer(waitresult.activator) && var_cba19e17.var_ead5d884) {
             waitresult.activator dodamage(10, waitresult.activator.origin);
@@ -268,7 +260,6 @@ function function_1abf5396(var_cba19e17) {
 function function_b5ac159d() {
     self.t_arm = spawn("trigger_radius_new", self.origin, 0, 256, 96);
     while (true) {
-        s_result = undefined;
         s_result = self.t_arm waittill(#"trigger");
         if (isplayer(s_result.activator)) {
             self thread scene::init();
@@ -441,7 +432,6 @@ function function_ad6125f0() {
 function function_dde2edd8() {
     self endon(#"hash_7f8e7011812dff48");
     while (isdefined(self.var_91e24690) && self.var_91e24690) {
-        s_info = undefined;
         s_info = self waittill(#"blast_attack");
         if (self.script_string == "crane_shock_box") {
             level.var_a29d2d8 = s_info.e_player;
@@ -738,7 +728,6 @@ function function_67710e66(b_enable = 0) {
 // Size: 0x160
 function private function_5d3c7c04() {
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"brutus_locked", #"unlock_purchased");
         if (s_result.s_stub.targetname !== "crafting_trigger") {
             continue;

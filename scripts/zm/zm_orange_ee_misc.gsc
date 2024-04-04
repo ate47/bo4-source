@@ -134,7 +134,6 @@ function trinket_think() {
         }
     }
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_who = s_notify.e_who;
         if (pap_lock flag::get("Pack_A_Punch_on")) {
@@ -155,7 +154,6 @@ function trinket_think() {
 function function_abf8d5ce() {
     level endon(#"end_game", #"hell_on_earth", #"trinkets_placed", #"hash_198bc172b5af7f25");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_who = s_notify.e_who;
         for (i = 0; i < self.a_e_trinkets.size; i++) {
@@ -323,7 +321,7 @@ function function_5bfaa04() {
 // Size: 0x74
 function function_8b0417eb() {
     if (!zm_utility::is_standard()) {
-        drop_point = level.var_b4b3ecd1.origin - vectorscale((0, 0, 1), 20);
+        drop_point = level.var_b4b3ecd1.origin - (0, 0, 20);
         level thread zm_powerups::specific_powerup_drop("free_perk", drop_point, undefined, 0.1, undefined, 1);
     }
 }
@@ -355,7 +353,6 @@ function sq_glasses() {
 function function_ea04cfd2() {
     level endon(#"end_game");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         player = s_notify.e_who;
         if (!(isdefined(player.var_456e7962) && player.var_456e7962)) {
@@ -455,7 +452,6 @@ function function_301c7dca(player) {
 // Checksum 0x27b7094a, Offset: 0x1fc8
 // Size: 0x154
 function function_a2993671() {
-    s_notify = undefined;
     s_notify = self waittill(#"trigger_activated");
     player = s_notify.e_who;
     playsoundatposition(#"hash_20807cb66d31146e", self.origin);
@@ -475,7 +471,6 @@ function function_a2993671() {
 // Checksum 0xd640df7a, Offset: 0x2128
 // Size: 0x13c
 function function_1856c416() {
-    s_notify = undefined;
     s_notify = self waittill(#"trigger_activated");
     player = s_notify.e_who;
     playsoundatposition(#"hash_30a5ec16dcd18c49", self.origin);
@@ -606,7 +601,6 @@ function function_716974ba() {
 // Size: 0x25c
 function function_6ad0e23f() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     player = waitresult.activator;
     self.stub.e_model stoploopsound();
@@ -870,7 +864,6 @@ function security_balcony_time_(var_5ea5c94d, ended_early) {
 function function_1b0e51b5() {
     level endon(#"end_game", #"edge_reached");
     edge_life_brush = getent("edge_life_brush", "targetname");
-    s_notify = undefined;
     s_notify = self waittilltimeout(160, #"entering_last_stand");
     if (isalive(self) && (self zm_zonemgr::is_player_in_zone(array("edge")) || self istouching(edge_life_brush))) {
         if (self isusingoffhand()) {
@@ -893,7 +886,6 @@ function function_1b0e51b5() {
 function edge_exit_watcher() {
     level endon(#"end_game");
     edge_life_brush = getent("edge_life_brush", "targetname");
-    s_notify = undefined;
     s_notify = self waittilltimeout(120, #"entering_last_stand", #"edge_exit");
     if (isalive(self) && (self zm_zonemgr::is_player_in_zone(array("edge")) || self istouching(edge_life_brush))) {
         self thread lui::screen_flash(3, 1, 0.5, 1, "white");

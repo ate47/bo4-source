@@ -111,43 +111,23 @@ function init() {
 // Checksum 0x3ebfe253, Offset: 0x7c8
 // Size: 0x3f4
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_7d874447));
-    #/
+    assert(isscriptfunctionptr(&function_7d874447));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3a6e15c62c2e1958", &function_7d874447);
-    /#
-        assert(isscriptfunctionptr(&function_7fef620b));
-    #/
+    assert(isscriptfunctionptr(&function_7fef620b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_258bd98449804a29", &function_7fef620b);
-    /#
-        assert(isscriptfunctionptr(&function_82785646));
-    #/
+    assert(isscriptfunctionptr(&function_82785646));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_50f7728355042178", &function_82785646);
-    /#
-        assert(isscriptfunctionptr(&nosferatustunstart));
-    #/
+    assert(isscriptfunctionptr(&nosferatustunstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"nosferatustunstart", &nosferatustunstart);
-    /#
-        assert(isscriptfunctionptr(&nosferatushouldstun));
-    #/
+    assert(isscriptfunctionptr(&nosferatushouldstun));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"nosferatushouldstun", &nosferatushouldstun);
-    /#
-        assert(isscriptfunctionptr(&function_81c78981));
-    #/
+    assert(isscriptfunctionptr(&function_81c78981));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_3a2582998db5774b", &function_81c78981);
-    /#
-        assert(isscriptfunctionptr(&function_475a698c));
-    #/
+    assert(isscriptfunctionptr(&function_475a698c));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_3c518f78c393482e", &function_475a698c);
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_344a0412) || isscriptfunctionptr(&function_344a0412));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_344a0412) || isscriptfunctionptr(&function_344a0412));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_4a2ea3c9e174122a", undefined, &function_344a0412, undefined);
     animationstatenetwork::registernotetrackhandlerfunction("summon_nfrtu", &function_76d6482e);
 }
@@ -825,12 +805,8 @@ function nosferatu_spawn_fx(ai, ent) {
     ai dontinterpolate();
     ai forceteleport(ent.origin, angles);
     ai clientfield::increment("nosferatu_spawn_fx");
-    /#
-        assert(isdefined(ai), "<unknown string>");
-    #/
-    /#
-        assert(isalive(ai), "<unknown string>");
-    #/
+    assert(isdefined(ai), "<unknown string>");
+    assert(isalive(ai), "<unknown string>");
     ai val::reset(#"nosferatu_spawn", "allowdeath");
     wait(0.1);
     ai show();

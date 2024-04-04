@@ -53,15 +53,11 @@ function private function_2d47ee1e(var_6ed927a6, var_caba78c2, waittime, var_ef5
 // Size: 0x12c
 function function_f0297225(var_2ab9d3bd, replacementcount, var_3afaa57b) {
     if (!ishash(var_2ab9d3bd) || !isint(replacementcount) || !isint(var_3afaa57b)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     if (var_3afaa57b <= 0) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     if (!isdefined(level.var_2ead97d1[var_3afaa57b])) {

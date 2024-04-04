@@ -35,9 +35,7 @@ function register_deployable(weapon, var_7ec218c6) {
     if (weapon.name == "#none") {
         return;
     }
-    /#
-        assert(weapon.name != "<unknown string>");
-    #/
+    assert(weapon.name != "<unknown string>");
     level._deployable_weapons[weapon.statindex] = spawnstruct();
     level._deployable_weapons[weapon.statindex].var_7ec218c6 = var_7ec218c6;
 }

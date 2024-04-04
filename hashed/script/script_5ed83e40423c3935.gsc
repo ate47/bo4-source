@@ -8,27 +8,11 @@
 class cwz_revive_prompt : cluielem {
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x8a489b4a, Offset: 0x2e8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cwz_revive_prompt/wz_revive_prompt
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xf5ce1e96, Offset: 0x5f8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cwz_revive_prompt/wz_revive_prompt
     // Params 2, eflags: 0x1 linked
     // Checksum 0xb7cf891f, Offset: 0x5c0
     // Size: 0x30
     function set_cowardsway(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "cowardsWay", value);
+        set_data(localclientnum, "cowardsWay", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -36,7 +20,7 @@ class cwz_revive_prompt : cluielem {
     // Checksum 0xaee2342, Offset: 0x588
     // Size: 0x30
     function set_reviveprogress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "reviveProgress", value);
+        set_data(localclientnum, "reviveProgress", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -44,7 +28,7 @@ class cwz_revive_prompt : cluielem {
     // Checksum 0x9481cd05, Offset: 0x550
     // Size: 0x30
     function set_health(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "health", value);
+        set_data(localclientnum, "health", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -52,7 +36,7 @@ class cwz_revive_prompt : cluielem {
     // Checksum 0x1f3ca30b, Offset: 0x518
     // Size: 0x30
     function set_clientnum(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "clientnum", value);
+        set_data(localclientnum, "clientnum", value);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt
@@ -69,10 +53,10 @@ class cwz_revive_prompt : cluielem {
     // Size: 0xa4
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "clientnum", 0);
-        [[ self ]]->set_data(localclientnum, "health", 0);
-        [[ self ]]->set_data(localclientnum, "reviveProgress", 0);
-        [[ self ]]->set_data(localclientnum, "cowardsWay", 0);
+        set_data(localclientnum, "clientnum", 0);
+        set_data(localclientnum, "health", 0);
+        set_data(localclientnum, "reviveProgress", 0);
+        set_data(localclientnum, "cowardsWay", 0);
     }
 
     // Namespace cwz_revive_prompt/wz_revive_prompt

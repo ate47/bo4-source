@@ -320,7 +320,6 @@ function cleanup_step_5(var_5ea5c94d, ended_early) {
 function function_d84548e7() {
     level endon(#"hash_785f94bb8c05dc05");
     while (true) {
-        s_notify = undefined;
         s_notify = self.mdl_candle waittill(#"damage");
         if (s_notify.mod === "MOD_MELEE") {
             self.mdl_candle clientfield::set("" + #"candle_light", 0);
@@ -337,7 +336,6 @@ function function_d84548e7() {
 function registerremaining_retreat_() {
     level endon(#"hash_3e6c62c9a38d67de");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player) && !(isdefined(e_player.b_is_designated_target) && e_player.b_is_designated_target) && function_89d75db(e_player) && !(isdefined(e_player function_32606f19()) && e_player function_32606f19())) {
@@ -674,7 +672,7 @@ function function_9ee098d5() {
         } else {
             var_24a4f2c0 = self.origin;
         }
-        fx_org = util::spawn_model("tag_origin", var_24a4f2c0 + vectorscale((0, 0, 1), 32), self.angles);
+        fx_org = util::spawn_model("tag_origin", var_24a4f2c0 + (0, 0, 32), self.angles);
         util::wait_network_frame();
         if (!fx_org istouching(e_trigger)) {
             fx_org.origin = self.origin;
@@ -693,7 +691,6 @@ function function_9ee098d5() {
         if (isdefined(e_possessed)) {
             e_possessed clientfield::set("" + #"soul_possess", 1);
             e_possessed thread function_99257c19();
-            waitresult = undefined;
             waitresult = e_possessed waittill(#"death");
         }
         if (isdefined(e_possessed) && isdefined(e_possessed.origin)) {
@@ -727,7 +724,7 @@ function function_9ee098d5() {
                 }
                 break;
             }
-            level.monolith_ghost.var_dafa2b89.origin = v_drop + vectorscale((0, 0, 1), 32);
+            level.monolith_ghost.var_dafa2b89.origin = v_drop + (0, 0, 32);
         } else {
             level.monolith_ghost.var_dafa2b89.origin = self.origin;
         }
@@ -822,7 +819,7 @@ function function_7de84c26(v_drop, n_drop) {
         var_8dd283dd = #"p8_zm_man_jewelry_bracelet";
         break;
     }
-    mdl_drop = util::spawn_model(var_8dd283dd, v_drop + vectorscale((0, 0, 1), 12));
+    mdl_drop = util::spawn_model(var_8dd283dd, v_drop + (0, 0, 12));
     util::wait_network_frame();
     mdl_drop clientfield::set("" + #"jewelry_dropped", 1);
     mdl_drop bobbing((0, 0, 1), 2, 3);
@@ -842,7 +839,6 @@ function function_3c1f242b() {
     mdl_drop = self.stub.mdl_drop;
     n_loc = self.stub.script_int;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player)) {
@@ -898,7 +894,7 @@ function function_e7423237() {
         break;
     }
     level flag::wait_till(str_flag);
-    wpn_betty_explo_vox = util::spawn_model(self.model, self.origin + vectorscale((0, 0, 1), 6));
+    wpn_betty_explo_vox = util::spawn_model(self.model, self.origin + (0, 0, 6));
     if (self.target === "impaler_symbol_bracelet") {
         wpn_betty_explo_vox setscale(2);
     }
@@ -922,7 +918,6 @@ function function_e7423237() {
 function function_9f0de8b3() {
     level endon(#"hash_38fe2a57d5f9d6ba");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player)) {
@@ -1000,7 +995,6 @@ function on_nosferatu_killed(s_params) {
 function function_d7d6b759() {
     level endon(#"hash_38fe2a57d5f9d6ba");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player) && level flag::get(#"hash_2e0f59cef233a264")) {
@@ -1097,7 +1091,6 @@ function function_486252bc() {
 function function_d23a6d02() {
     level endon(#"hash_38fe2a57d5f9d6ba");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::can_use(e_player, 1) && level flag::get(#"hash_864c8ec1475abdc")) {

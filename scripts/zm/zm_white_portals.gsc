@@ -228,7 +228,6 @@ function player_teleporting() {
     self endon(#"death");
     user = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
         player_used = 0;
@@ -504,7 +503,6 @@ function enable_zone_portals_init() {
 // Checksum 0xf948e50b, Offset: 0x2300
 // Size: 0x9c
 function enable_zone_portals() {
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     user = waitresult.activator;
     if ((laststand::player_is_in_laststand() || zm_utility::is_player_valid(user)) && isdefined(self.script_noteworthy)) {
@@ -825,7 +823,6 @@ function function_688df525() {
 function function_a09d62f1() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         e_user = waitresult.e_who;
         if (level.var_868c98df > 0 && !self.b_placed) {
@@ -837,7 +834,7 @@ function function_a09d62f1() {
             self.b_placed = 1;
             if (isdefined(self.e_model)) {
                 self.e_model show();
-                playsoundatposition(#"hash_d8a6518e5c2027d", self.e_model.origin + vectorscale((0, 0, 1), 20));
+                playsoundatposition(#"hash_d8a6518e5c2027d", self.e_model.origin + (0, 0, 20));
             }
             level.a_s_active = function_688df525();
             if (level.var_868c98df == 0) {
@@ -856,7 +853,7 @@ function function_a09d62f1() {
             self.b_placed = 0;
             if (isdefined(self.e_model)) {
                 self.e_model hide();
-                playsoundatposition(#"hash_59436c2037092176", self.e_model.origin + vectorscale((0, 0, 1), 20));
+                playsoundatposition(#"hash_59436c2037092176", self.e_model.origin + (0, 0, 20));
             }
             if (level.var_868c98df == 1) {
                 foreach (s_active in level.a_s_active) {
@@ -1150,9 +1147,7 @@ function function_35babccd(ent) {
         }
         index = (index + 1) % floor_count;
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     return ent.floor_num;
 }
 

@@ -203,12 +203,8 @@ function private function_3d6e0cd9(dialogkey, killstreaktype, killstreakid, soun
 // Checksum 0x5d703bfd, Offset: 0xbd8
 // Size: 0xbc
 function private function_3cf68327(dialogkey, killstreaktype, killstreakid) {
-    /#
-        assert(isdefined(dialogkey));
-    #/
-    /#
-        assert(isdefined(killstreaktype));
-    #/
+    assert(isdefined(dialogkey));
+    assert(isdefined(killstreaktype));
     if (!isdefined(self.owner) || !isdefined(self.team) || self.team != self.owner.team) {
         return;
     }

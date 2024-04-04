@@ -189,7 +189,7 @@ function private function_13576d14() {
         #/
         var_d7267ad9 = "towers_boss_tower_badplace_" + var_6848389e;
         var_e220a902.badplace_name = var_d7267ad9;
-        badplace_box(var_d7267ad9, 0, groundtrace(var_e220a902.origin + vectorscale((0, 0, 1), 8), var_e220a902.origin + vectorscale((0, 0, -1), 100000), 0, var_e220a902)[#"position"], var_a406cb50, "all");
+        badplace_box(var_d7267ad9, 0, groundtrace(var_e220a902.origin + (0, 0, 8), var_e220a902.origin + (0, 0, -100000), 0, var_e220a902)[#"position"], var_a406cb50, "all");
         var_6848389e++;
         waitframe(1);
     }
@@ -205,7 +205,6 @@ function private function_33935d5f() {
     self.b_exploded = 0;
     e_clip = getent(self.target, "targetname");
     while (!self.b_exploded) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger", #"tower_boss_scripted_trigger_tower");
         shouldexplode = isdefined(waitresult.activator) && isdefined(waitresult.activator.archetype) && waitresult.activator.archetype === #"elephant";
         if (shouldexplode || waitresult._notify == "tower_boss_scripted_trigger_tower") {
@@ -268,7 +267,6 @@ function private function_3d487e02() {
     params = getstatuseffect(#"hash_12a64221f4d27f9b");
     weapon = getweapon(#"eq_molotov");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"aoe_damage");
         if (waitresult.var_159100b7 == "zm_aoe_spear" || waitresult.var_159100b7 == "zm_aoe_spear_small" || waitresult.var_159100b7 == "zm_aoe_spear_big") {
             self status_effect::status_effect_apply(params, weapon, undefined, 0, 3000, undefined, waitresult.origin);

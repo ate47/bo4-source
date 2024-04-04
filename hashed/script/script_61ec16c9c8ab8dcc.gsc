@@ -8,27 +8,11 @@
 class clower_message : cluielem {
 
     // Namespace clower_message/lower_message
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xcc7571c3, Offset: 0x288
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace clower_message/lower_message
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x878b6a4d, Offset: 0x5b8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace clower_message/lower_message
     // Params 2, eflags: 0x1 linked
     // Checksum 0xbb90478d, Offset: 0x580
     // Size: 0x30
     function set_countdowntimeseconds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "countdownTimeSeconds", value);
+        set_data(localclientnum, "countdownTimeSeconds", value);
     }
 
     // Namespace clower_message/lower_message
@@ -36,7 +20,7 @@ class clower_message : cluielem {
     // Checksum 0xd86f47be, Offset: 0x548
     // Size: 0x30
     function set_message(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "message", value);
+        set_data(localclientnum, "message", value);
     }
 
     // Namespace clower_message/lower_message
@@ -45,22 +29,18 @@ class clower_message : cluielem {
     // Size: 0xe4
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"hash_45bfcb1cd8c9b50a" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace clower_message/lower_message
@@ -77,9 +57,9 @@ class clower_message : cluielem {
     // Size: 0x88
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "message", #"");
-        [[ self ]]->set_data(localclientnum, "countdownTimeSeconds", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "message", #"");
+        set_data(localclientnum, "countdownTimeSeconds", 0);
     }
 
     // Namespace clower_message/lower_message

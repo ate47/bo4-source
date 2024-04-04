@@ -42,7 +42,6 @@ function player_on_spawned(localclientnum) {
 function watch_weapon_changes(localclientnum) {
     self endon(#"death");
     while (isdefined(self)) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         w_current = waitresult.weapon;
         w_previous = waitresult.last_weapon;

@@ -21,9 +21,7 @@ function init() {
 // Checksum 0x7b6fccf4, Offset: 0x128
 // Size: 0x13a
 function function_7d8be726(patrol_radius, var_edc20efd, var_d73e0c6e, marker_fx, var_36b19b5e, var_861daf20, var_a85cb855, var_52e43a03, var_544ae93d, var_7d9560c1) {
-    /#
-        assert(isdefined(self.ai));
-    #/
+    assert(isdefined(self.ai));
     self.ai.patrol = {#state:2, #patrol_radius:patrol_radius, #var_edc20efd:var_edc20efd, #var_d73e0c6e:var_d73e0c6e, #marker_fx:marker_fx, #var_36b19b5e:var_36b19b5e, #var_861daf20:var_861daf20, #var_a85cb855:var_a85cb855, #var_52e43a03:var_52e43a03, #var_544ae93d:var_544ae93d, #var_7d9560c1:var_7d9560c1};
 }
 
@@ -256,9 +254,7 @@ function update_patrol() {
     if (isdefined(self.isarriving) && self.isarriving) {
         return;
     }
-    /#
-        assert(isdefined(self.ai.patrol.var_9033671b));
-    #/
+    assert(isdefined(self.ai.patrol.var_9033671b));
     goalinfo = self function_4794d6a3();
     if (self.ai.patrol.state == 2) {
         self.goalradius = 150;
@@ -355,7 +351,7 @@ function private function_732c2878() {
 // Size: 0x11c
 function private function_8d4eba95(origin) {
     if (isdefined(self.script_owner) && isdefined(self.ai.patrol.marker_fx)) {
-        self.var_74e8fd19 = spawnfx(self.ai.patrol.marker_fx, origin + vectorscale((0, 0, 1), 3), (0, 0, 1), (1, 0, 0));
+        self.var_74e8fd19 = spawnfx(self.ai.patrol.marker_fx, origin + (0, 0, 3), (0, 0, 1), (1, 0, 0));
         self.var_74e8fd19.team = self.team;
         triggerfx(self.var_74e8fd19);
         self.var_74e8fd19 setinvisibletoall();
@@ -423,9 +419,7 @@ function private function_7c779aaf() {
 // Checksum 0xb6c65d59, Offset: 0x16b0
 // Size: 0x7c
 function function_325c6829(origin) {
-    /#
-        assert(isdefined(self.ai.patrol));
-    #/
+    assert(isdefined(self.ai.patrol));
     self.ai.patrol.var_9033671b = origin;
     self function_3ec67269();
     self thread function_f037571d(origin);

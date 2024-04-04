@@ -8,22 +8,6 @@
 class cct_crash_kill_remaining_enemy : cluielem {
 
     // Namespace cct_crash_kill_remaining_enemy/ct_crash_kill_remaining_enemy
-    // Params 0, eflags: 0x8
-    // Checksum 0x22da52fc, Offset: 0x1a8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_crash_kill_remaining_enemy/ct_crash_kill_remaining_enemy
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x4c2cbbfd, Offset: 0x290
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_crash_kill_remaining_enemy/ct_crash_kill_remaining_enemy
     // Params 1, eflags: 0x0
     // Checksum 0x886a6bec, Offset: 0x258
     // Size: 0x2c

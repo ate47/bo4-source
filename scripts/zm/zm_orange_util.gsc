@@ -395,7 +395,6 @@ function docks_power() {
         }
     }
     if (isdefined(power_trig)) {
-        waitresult = undefined;
         waitresult = power_trig waittill(#"trigger");
         user = waitresult.activator;
         user thread function_51b752a9(#"vox_power_switch_1_activate");
@@ -437,18 +436,10 @@ function function_3d6809e9() {
 // Checksum 0x3e4efeaa, Offset: 0x1d58
 // Size: 0x110
 function function_8a7521db(str) {
-    /#
-        /#
-            assert(isdefined(str), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(str), "<unknown string>");
     var_58c9b9cc = struct::get_array(str, "targetname");
     foreach (var_3bb6cef5 in var_58c9b9cc) {
-        /#
-            /#
-                assert(isdefined(var_3bb6cef5.open_anim), "<unknown string>");
-            #/
-        #/
+        assert(isdefined(var_3bb6cef5.open_anim), "<unknown string>");
         var_3bb6cef5 thread scene::play(var_3bb6cef5.open_anim);
     }
 }
@@ -536,7 +527,6 @@ function function_adb657dd(e_player) {
 function function_c3d56ed8() {
     self endon(#"death");
     w_give = self.w_pickup;
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"trigger_activated");
     e_player = s_waitresult.e_who;
     w_take = e_player function_60403468();

@@ -196,7 +196,6 @@ function function_1dba4a2() {
     self endon(#"death", #"hash_3e410dbcd9e66000");
     self.mover endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"snddeployvox");
         if (isdefined(waitresult.str_alias)) {
             self playsoundontag(waitresult.str_alias, "j_head");
@@ -223,7 +222,7 @@ function private function_bb17ec5a() {
             break;
         }
         foreach (enemy in var_c7f2fbb7) {
-            if (isalive(enemy) && bullettracepassed(self.origin + vectorscale((0, 0, 1), 16), enemy getcentroid(), 0, self, enemy)) {
+            if (isalive(enemy) && bullettracepassed(self.origin + (0, 0, 16), enemy getcentroid(), 0, self, enemy)) {
                 self face_target(enemy);
                 if (start_attack === 1) {
                     start_attack = undefined;
@@ -266,7 +265,7 @@ function private function_b053b486() {
 // Size: 0x19c
 function private drop_to_ground(b_immediate = 0) {
     self endon(#"death");
-    s_trace = groundtrace(self.origin + vectorscale((0, 0, 1), 16), self.origin + vectorscale((0, 0, -1), 1000), 0, self);
+    s_trace = groundtrace(self.origin + (0, 0, 16), self.origin + (0, 0, -1000), 0, self);
     var_a75fe4be = s_trace[#"position"];
     if (b_immediate) {
         self.mover moveto(var_a75fe4be, 0.01);
@@ -314,7 +313,7 @@ function private function_c8f642f6(enemy, n_time) {
     if (isalive(enemy)) {
         v_target = enemy gettagorigin("j_head");
         if (!isdefined(v_target)) {
-            v_target = enemy getcentroid() + vectorscale((0, 0, 1), 16);
+            v_target = enemy getcentroid() + (0, 0, 16);
         }
         self.mover moveto(v_target, n_time);
         self.mover waittill(#"movedone");
@@ -373,7 +372,7 @@ function function_127fb8f3(homunculus, attackingplayer) {
     homunculus endon(#"death");
     randangle = randomfloat(360);
     if (isdefined(level._equipment_emp_destroy_fx)) {
-        playfx(level._equipment_emp_destroy_fx, homunculus.origin + vectorscale((0, 0, 1), 5), (cos(randangle), sin(randangle), 0), anglestoup(homunculus.angles));
+        playfx(level._equipment_emp_destroy_fx, homunculus.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(homunculus.angles));
     }
     wait(1.1);
     homunculus function_7bfc867f();

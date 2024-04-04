@@ -8,27 +8,11 @@
 class cluielemimage : cluielem {
 
     // Namespace cluielemimage/luielemimage
-    // Params 0, eflags: 0x8
-    // Checksum 0x2a0d4e23, Offset: 0x458
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cluielemimage/luielemimage
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x3a51d09b, Offset: 0xa98
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cluielemimage/luielemimage
     // Params 2, eflags: 0x0
     // Checksum 0x566fee0f, Offset: 0xa60
     // Size: 0x30
     function set_material(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "material", value);
+        set_data(localclientnum, "material", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -36,7 +20,7 @@ class cluielemimage : cluielem {
     // Checksum 0x3c229e66, Offset: 0xa28
     // Size: 0x30
     function set_blue(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "blue", value);
+        set_data(localclientnum, "blue", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -44,7 +28,7 @@ class cluielemimage : cluielem {
     // Checksum 0x8776d27e, Offset: 0x9f0
     // Size: 0x30
     function set_green(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "green", value);
+        set_data(localclientnum, "green", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -52,7 +36,7 @@ class cluielemimage : cluielem {
     // Checksum 0x73d7ce69, Offset: 0x9b8
     // Size: 0x30
     function set_red(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "red", value);
+        set_data(localclientnum, "red", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -60,7 +44,7 @@ class cluielemimage : cluielem {
     // Checksum 0x99959d0, Offset: 0x980
     // Size: 0x30
     function set_alpha(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "alpha", value);
+        set_data(localclientnum, "alpha", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -68,7 +52,7 @@ class cluielemimage : cluielem {
     // Checksum 0x5574019e, Offset: 0x948
     // Size: 0x30
     function set_fadeovertime(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "fadeOverTime", value);
+        set_data(localclientnum, "fadeOverTime", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -76,7 +60,7 @@ class cluielemimage : cluielem {
     // Checksum 0xd484f925, Offset: 0x910
     // Size: 0x30
     function set_height(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "height", value);
+        set_data(localclientnum, "height", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -84,7 +68,7 @@ class cluielemimage : cluielem {
     // Checksum 0x656fc8c1, Offset: 0x8d8
     // Size: 0x30
     function set_width(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "width", value);
+        set_data(localclientnum, "width", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -92,7 +76,7 @@ class cluielemimage : cluielem {
     // Checksum 0x9211ebc0, Offset: 0x8a0
     // Size: 0x30
     function set_y(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "y", value);
+        set_data(localclientnum, "y", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -100,7 +84,7 @@ class cluielemimage : cluielem {
     // Checksum 0xfa7dad40, Offset: 0x868
     // Size: 0x30
     function set_x(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "x", value);
+        set_data(localclientnum, "x", value);
     }
 
     // Namespace cluielemimage/luielemimage
@@ -117,16 +101,16 @@ class cluielemimage : cluielem {
     // Size: 0x16c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "x", 0);
-        [[ self ]]->set_data(localclientnum, "y", 0);
-        [[ self ]]->set_data(localclientnum, "width", 0);
-        [[ self ]]->set_data(localclientnum, "height", 0);
-        [[ self ]]->set_data(localclientnum, "fadeOverTime", 0);
-        [[ self ]]->set_data(localclientnum, "alpha", 0);
-        [[ self ]]->set_data(localclientnum, "red", 0);
-        [[ self ]]->set_data(localclientnum, "green", 0);
-        [[ self ]]->set_data(localclientnum, "blue", 0);
-        [[ self ]]->set_data(localclientnum, "material", #"");
+        set_data(localclientnum, "x", 0);
+        set_data(localclientnum, "y", 0);
+        set_data(localclientnum, "width", 0);
+        set_data(localclientnum, "height", 0);
+        set_data(localclientnum, "fadeOverTime", 0);
+        set_data(localclientnum, "alpha", 0);
+        set_data(localclientnum, "red", 0);
+        set_data(localclientnum, "green", 0);
+        set_data(localclientnum, "blue", 0);
+        set_data(localclientnum, "material", #"");
     }
 
     // Namespace cluielemimage/luielemimage

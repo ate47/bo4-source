@@ -8,27 +8,11 @@
 class cmp_infect_timer : cluielem {
 
     // Namespace cmp_infect_timer/mp_infect_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0x3cb618fe, Offset: 0x208
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_infect_timer/mp_infect_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xb66bef60, Offset: 0x370
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cmp_infect_timer/mp_infect_timer
     // Params 2, eflags: 0x0
     // Checksum 0xa5f2d1e6, Offset: 0x338
     // Size: 0x30
     function function_8c8674a4(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "infectionTimeRemaining", value);
+        set_data(localclientnum, "infectionTimeRemaining", value);
     }
 
     // Namespace cmp_infect_timer/mp_infect_timer
@@ -45,7 +29,7 @@ class cmp_infect_timer : cluielem {
     // Size: 0x40
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "infectionTimeRemaining", 0);
+        set_data(localclientnum, "infectionTimeRemaining", 0);
     }
 
     // Namespace cmp_infect_timer/mp_infect_timer

@@ -59,415 +59,205 @@ function __init__() {
 // Checksum 0xa0a55d1f, Offset: 0x1338
 // Size: 0x2834
 function registerbehaviorscriptfunctions() {
-    /#
-        assert(!isdefined(&stepintoinitialize) || isscriptfunctionptr(&stepintoinitialize));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&stepintoterminate) || isscriptfunctionptr(&stepintoterminate));
-    #/
+    assert(!isdefined(&stepintoinitialize) || isscriptfunctionptr(&stepintoinitialize));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&stepintoterminate) || isscriptfunctionptr(&stepintoterminate));
     behaviortreenetworkutility::registerbehaviortreeaction("robotStepIntoAction", &stepintoinitialize, undefined, &stepintoterminate);
-    /#
-        assert(!isdefined(&stepoutinitialize) || isscriptfunctionptr(&stepoutinitialize));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&stepoutterminate) || isscriptfunctionptr(&stepoutterminate));
-    #/
+    assert(!isdefined(&stepoutinitialize) || isscriptfunctionptr(&stepoutinitialize));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&stepoutterminate) || isscriptfunctionptr(&stepoutterminate));
     behaviortreenetworkutility::registerbehaviortreeaction("robotStepOutAction", &stepoutinitialize, undefined, &stepoutterminate);
-    /#
-        assert(!isdefined(&takeoverinitialize) || isscriptfunctionptr(&takeoverinitialize));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&takeoverterminate) || isscriptfunctionptr(&takeoverterminate));
-    #/
+    assert(!isdefined(&takeoverinitialize) || isscriptfunctionptr(&takeoverinitialize));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&takeoverterminate) || isscriptfunctionptr(&takeoverterminate));
     behaviortreenetworkutility::registerbehaviortreeaction("robotTakeOverAction", &takeoverinitialize, undefined, &takeoverterminate);
-    /#
-        assert(!isdefined(&robotempidleinitialize) || isscriptfunctionptr(&robotempidleinitialize));
-    #/
-    /#
-        assert(!isdefined(&robotempidleupdate) || isscriptfunctionptr(&robotempidleupdate));
-    #/
-    /#
-        assert(!isdefined(&robotempidleterminate) || isscriptfunctionptr(&robotempidleterminate));
-    #/
+    assert(!isdefined(&robotempidleinitialize) || isscriptfunctionptr(&robotempidleinitialize));
+    assert(!isdefined(&robotempidleupdate) || isscriptfunctionptr(&robotempidleupdate));
+    assert(!isdefined(&robotempidleterminate) || isscriptfunctionptr(&robotempidleterminate));
     behaviortreenetworkutility::registerbehaviortreeaction("robotEmpIdleAction", &robotempidleinitialize, &robotempidleupdate, &robotempidleterminate);
-    /#
-        assert(isscriptfunctionptr(&robotbecomecrawler));
-    #/
+    assert(isscriptfunctionptr(&robotbecomecrawler));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotBecomeCrawler", &robotbecomecrawler);
-    /#
-        assert(isscriptfunctionptr(&robotdropstartingweapon));
-    #/
+    assert(isscriptfunctionptr(&robotdropstartingweapon));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotDropStartingWeapon", &robotdropstartingweapon);
-    /#
-        assert(isscriptfunctionptr(&robotdonttakecover));
-    #/
+    assert(isscriptfunctionptr(&robotdonttakecover));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotDontTakeCover", &robotdonttakecover);
-    /#
-        assert(isscriptfunctionptr(&robotcoveroverinitialize));
-    #/
+    assert(isscriptfunctionptr(&robotcoveroverinitialize));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCoverOverInitialize", &robotcoveroverinitialize);
-    /#
-        assert(isscriptfunctionptr(&robotcoveroverterminate));
-    #/
+    assert(isscriptfunctionptr(&robotcoveroverterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCoverOverTerminate", &robotcoveroverterminate);
-    /#
-        assert(isscriptfunctionptr(&robotexplode));
-    #/
+    assert(isscriptfunctionptr(&robotexplode));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotExplode", &robotexplode);
-    /#
-        assert(isscriptfunctionptr(&robotexplodeterminate));
-    #/
+    assert(isscriptfunctionptr(&robotexplodeterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotExplodeTerminate", &robotexplodeterminate);
-    /#
-        assert(isscriptfunctionptr(&robotdeployminiraps));
-    #/
+    assert(isscriptfunctionptr(&robotdeployminiraps));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotDeployMiniRaps", &robotdeployminiraps);
-    /#
-        assert(isscriptfunctionptr(&movetoplayerupdate));
-    #/
+    assert(isscriptfunctionptr(&movetoplayerupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotMoveToPlayer", &movetoplayerupdate);
-    /#
-        assert(isscriptfunctionptr(&robotstartsprint));
-    #/
+    assert(isscriptfunctionptr(&robotstartsprint));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotStartSprint", &robotstartsprint);
-    /#
-        assert(isscriptfunctionptr(&robotstartsprint));
-    #/
+    assert(isscriptfunctionptr(&robotstartsprint));
     behaviorstatemachine::registerbsmscriptapiinternal("robotStartSprint", &robotstartsprint);
-    /#
-        assert(isscriptfunctionptr(&robotstartsupersprint));
-    #/
+    assert(isscriptfunctionptr(&robotstartsupersprint));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotStartSuperSprint", &robotstartsupersprint);
-    /#
-        assert(isscriptfunctionptr(&robottacticalwalkactionstart));
-    #/
+    assert(isscriptfunctionptr(&robottacticalwalkactionstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotTacticalWalkActionStart", &robottacticalwalkactionstart);
-    /#
-        assert(isscriptfunctionptr(&robottacticalwalkactionstart));
-    #/
+    assert(isscriptfunctionptr(&robottacticalwalkactionstart));
     behaviorstatemachine::registerbsmscriptapiinternal("robotTacticalWalkActionStart", &robottacticalwalkactionstart);
-    /#
-        assert(isscriptfunctionptr(&robotdie));
-    #/
+    assert(isscriptfunctionptr(&robotdie));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotDie", &robotdie);
-    /#
-        assert(isscriptfunctionptr(&robotcleanupchargemeleeattack));
-    #/
+    assert(isscriptfunctionptr(&robotcleanupchargemeleeattack));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCleanupChargeMeleeAttack", &robotcleanupchargemeleeattack);
-    /#
-        assert(isscriptfunctionptr(&robotismoving));
-    #/
+    assert(isscriptfunctionptr(&robotismoving));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotIsMoving", &robotismoving);
-    /#
-        assert(isscriptfunctionptr(&robotabletoshootcondition));
-    #/
+    assert(isscriptfunctionptr(&robotabletoshootcondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotAbleToShoot", &robotabletoshootcondition);
-    /#
-        assert(isscriptfunctionptr(&robotcrawlercanshootenemy));
-    #/
+    assert(isscriptfunctionptr(&robotcrawlercanshootenemy));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCrawlerCanShootEnemy", &robotcrawlercanshootenemy);
-    /#
-        assert(isscriptfunctionptr(&canmovetoenemycondition));
-    #/
+    assert(isscriptfunctionptr(&canmovetoenemycondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("canMoveToEnemy", &canmovetoenemycondition);
-    /#
-        assert(isscriptfunctionptr(&canmoveclosetoenemycondition));
-    #/
+    assert(isscriptfunctionptr(&canmoveclosetoenemycondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("canMoveCloseToEnemy", &canmoveclosetoenemycondition);
-    /#
-        assert(isscriptfunctionptr(&hasminiraps));
-    #/
+    assert(isscriptfunctionptr(&hasminiraps));
     behaviortreenetworkutility::registerbehaviortreescriptapi("hasMiniRaps", &hasminiraps);
-    /#
-        assert(isscriptfunctionptr(&robotisatcovercondition));
-    #/
+    assert(isscriptfunctionptr(&robotisatcovercondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotIsAtCover", &robotisatcovercondition);
-    /#
-        assert(isscriptfunctionptr(&robotshouldtacticalwalk));
-    #/
+    assert(isscriptfunctionptr(&robotshouldtacticalwalk));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldTacticalWalk", &robotshouldtacticalwalk);
-    /#
-        assert(isscriptfunctionptr(&robothascloseenemytomelee));
-    #/
+    assert(isscriptfunctionptr(&robothascloseenemytomelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotHasCloseEnemyToMelee", &robothascloseenemytomelee);
-    /#
-        assert(isscriptfunctionptr(&robothasenemytomelee));
-    #/
+    assert(isscriptfunctionptr(&robothasenemytomelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotHasEnemyToMelee", &robothasenemytomelee);
-    /#
-        assert(isscriptfunctionptr(&robotroguehascloseenemytomelee));
-    #/
+    assert(isscriptfunctionptr(&robotroguehascloseenemytomelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotRogueHasCloseEnemyToMelee", &robotroguehascloseenemytomelee);
-    /#
-        assert(isscriptfunctionptr(&robotroguehasenemytomelee));
-    #/
+    assert(isscriptfunctionptr(&robotroguehasenemytomelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotRogueHasEnemyToMelee", &robotroguehasenemytomelee);
-    /#
-        assert(isscriptfunctionptr(&robotiscrawler));
-    #/
+    assert(isscriptfunctionptr(&robotiscrawler));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotIsCrawler", &robotiscrawler);
-    /#
-        assert(isscriptfunctionptr(&robotismarching));
-    #/
+    assert(isscriptfunctionptr(&robotismarching));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotIsMarching", &robotismarching);
-    /#
-        assert(isscriptfunctionptr(&robotprepareforadjusttocover));
-    #/
+    assert(isscriptfunctionptr(&robotprepareforadjusttocover));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotPrepareForAdjustToCover", &robotprepareforadjusttocover);
-    /#
-        assert(isscriptfunctionptr(&robotshouldadjusttocover));
-    #/
+    assert(isscriptfunctionptr(&robotshouldadjusttocover));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldAdjustToCover", &robotshouldadjusttocover);
-    /#
-        assert(isscriptfunctionptr(&robotshouldbecomecrawler));
-    #/
+    assert(isscriptfunctionptr(&robotshouldbecomecrawler));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldBecomeCrawler", &robotshouldbecomecrawler);
-    /#
-        assert(isscriptfunctionptr(&robotshouldreactatcover));
-    #/
+    assert(isscriptfunctionptr(&robotshouldreactatcover));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldReactAtCover", &robotshouldreactatcover);
-    /#
-        assert(isscriptfunctionptr(&robotshouldexplode));
-    #/
+    assert(isscriptfunctionptr(&robotshouldexplode));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldExplode", &robotshouldexplode);
-    /#
-        assert(isscriptfunctionptr(&robotshouldshutdown));
-    #/
+    assert(isscriptfunctionptr(&robotshouldshutdown));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldShutdown", &robotshouldshutdown);
-    /#
-        assert(isscriptfunctionptr(&robotsupportsovercover));
-    #/
+    assert(isscriptfunctionptr(&robotsupportsovercover));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotSupportsOverCover", &robotsupportsovercover);
-    /#
-        assert(isscriptfunctionptr(&shouldstepincondition));
-    #/
+    assert(isscriptfunctionptr(&shouldstepincondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("shouldStepIn", &shouldstepincondition);
-    /#
-        assert(isscriptfunctionptr(&shouldtakeovercondition));
-    #/
+    assert(isscriptfunctionptr(&shouldtakeovercondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("shouldTakeOver", &shouldtakeovercondition);
-    /#
-        assert(isscriptfunctionptr(&supportsstepoutcondition));
-    #/
+    assert(isscriptfunctionptr(&supportsstepoutcondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("supportsStepOut", &supportsstepoutcondition);
-    /#
-        assert(isscriptfunctionptr(&setdesiredstancetostand));
-    #/
+    assert(isscriptfunctionptr(&setdesiredstancetostand));
     behaviortreenetworkutility::registerbehaviortreescriptapi("setDesiredStanceToStand", &setdesiredstancetostand);
-    /#
-        assert(isscriptfunctionptr(&setdesiredstancetocrouch));
-    #/
+    assert(isscriptfunctionptr(&setdesiredstancetocrouch));
     behaviortreenetworkutility::registerbehaviortreescriptapi("setDesiredStanceToCrouch", &setdesiredstancetocrouch);
-    /#
-        assert(isscriptfunctionptr(&toggledesiredstance));
-    #/
+    assert(isscriptfunctionptr(&toggledesiredstance));
     behaviortreenetworkutility::registerbehaviortreescriptapi("toggleDesiredStance", &toggledesiredstance);
-    /#
-        assert(isscriptfunctionptr(&robotmovement));
-    #/
+    assert(isscriptfunctionptr(&robotmovement));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotMovement", &robotmovement);
-    /#
-        assert(isscriptfunctionptr(&robotdelaymovement));
-    #/
+    assert(isscriptfunctionptr(&robotdelaymovement));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotDelayMovement", &robotdelaymovement);
-    /#
-        assert(isscriptfunctionptr(&robotinvalidatecover));
-    #/
+    assert(isscriptfunctionptr(&robotinvalidatecover));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotInvalidateCover", &robotinvalidatecover);
-    /#
-        assert(isscriptfunctionptr(&robotshouldchargemelee));
-    #/
+    assert(isscriptfunctionptr(&robotshouldchargemelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldChargeMelee", &robotshouldchargemelee);
-    /#
-        assert(isscriptfunctionptr(&robotshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&robotshouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldMelee", &robotshouldmelee);
-    /#
-        assert(isscriptfunctionptr(&scriptrequirestosprintcondition));
-    #/
+    assert(isscriptfunctionptr(&scriptrequirestosprintcondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotScriptRequiresToSprint", &scriptrequirestosprintcondition);
-    /#
-        assert(isscriptfunctionptr(&robotscanexposedpainterminate));
-    #/
+    assert(isscriptfunctionptr(&robotscanexposedpainterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotScanExposedPainTerminate", &robotscanexposedpainterminate);
-    /#
-        assert(isscriptfunctionptr(&robottookempdamage));
-    #/
+    assert(isscriptfunctionptr(&robottookempdamage));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotTookEmpDamage", &robottookempdamage);
-    /#
-        assert(isscriptfunctionptr(&robotnocloseenemyservice));
-    #/
+    assert(isscriptfunctionptr(&robotnocloseenemyservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotNoCloseEnemyService", &robotnocloseenemyservice);
-    /#
-        assert(isscriptfunctionptr(&robotwithinsprintrange));
-    #/
+    assert(isscriptfunctionptr(&robotwithinsprintrange));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotWithinSprintRange", &robotwithinsprintrange);
-    /#
-        assert(isscriptfunctionptr(&robotwithinsupersprintrange));
-    #/
+    assert(isscriptfunctionptr(&robotwithinsupersprintrange));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotWithinSuperSprintRange", &robotwithinsupersprintrange);
-    /#
-        assert(isscriptfunctionptr(&robotwithinsupersprintrange));
-    #/
+    assert(isscriptfunctionptr(&robotwithinsupersprintrange));
     behaviorstatemachine::registerbsmscriptapiinternal("robotWithinSuperSprintRange", &robotwithinsupersprintrange);
-    /#
-        assert(isscriptfunctionptr(&robotoutsidetacticalwalkrange));
-    #/
+    assert(isscriptfunctionptr(&robotoutsidetacticalwalkrange));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotOutsideTacticalWalkRange", &robotoutsidetacticalwalkrange);
-    /#
-        assert(isscriptfunctionptr(&robotoutsidesprintrange));
-    #/
+    assert(isscriptfunctionptr(&robotoutsidesprintrange));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotOutsideSprintRange", &robotoutsidesprintrange);
-    /#
-        assert(isscriptfunctionptr(&robotoutsidesupersprintrange));
-    #/
+    assert(isscriptfunctionptr(&robotoutsidesupersprintrange));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotOutsideSuperSprintRange", &robotoutsidesupersprintrange);
-    /#
-        assert(isscriptfunctionptr(&robotoutsidesupersprintrange));
-    #/
+    assert(isscriptfunctionptr(&robotoutsidesupersprintrange));
     behaviorstatemachine::registerbsmscriptapiinternal("robotOutsideSuperSprintRange", &robotoutsidesupersprintrange);
-    /#
-        assert(isscriptfunctionptr(&robotlightsoff));
-    #/
+    assert(isscriptfunctionptr(&robotlightsoff));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotLightsOff", &robotlightsoff);
-    /#
-        assert(isscriptfunctionptr(&robotlightsflicker));
-    #/
+    assert(isscriptfunctionptr(&robotlightsflicker));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotLightsFlicker", &robotlightsflicker);
-    /#
-        assert(isscriptfunctionptr(&robotlightson));
-    #/
+    assert(isscriptfunctionptr(&robotlightson));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotLightsOn", &robotlightson);
-    /#
-        assert(isscriptfunctionptr(&robotshouldgibdeath));
-    #/
+    assert(isscriptfunctionptr(&robotshouldgibdeath));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldGibDeath", &robotshouldgibdeath);
-    /#
-        assert(!isdefined(&robottraversestart) || isscriptfunctionptr(&robottraversestart));
-    #/
-    /#
-        assert(!isdefined(&robotproceduraltraversalupdate) || isscriptfunctionptr(&robotproceduraltraversalupdate));
-    #/
-    /#
-        assert(!isdefined(&robottraverseragdollondeath) || isscriptfunctionptr(&robottraverseragdollondeath));
-    #/
+    assert(!isdefined(&robottraversestart) || isscriptfunctionptr(&robottraversestart));
+    assert(!isdefined(&robotproceduraltraversalupdate) || isscriptfunctionptr(&robotproceduraltraversalupdate));
+    assert(!isdefined(&robottraverseragdollondeath) || isscriptfunctionptr(&robottraverseragdollondeath));
     behaviortreenetworkutility::registerbehaviortreeaction("robotProceduralTraversal", &robottraversestart, &robotproceduraltraversalupdate, &robottraverseragdollondeath);
-    /#
-        assert(isscriptfunctionptr(&robotcalcproceduraltraversal));
-    #/
+    assert(isscriptfunctionptr(&robotcalcproceduraltraversal));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCalcProceduralTraversal", &robotcalcproceduraltraversal);
-    /#
-        assert(isscriptfunctionptr(&robotprocedurallandingupdate));
-    #/
+    assert(isscriptfunctionptr(&robotprocedurallandingupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotProceduralLanding", &robotprocedurallandingupdate);
-    /#
-        assert(isscriptfunctionptr(&robottraverseend));
-    #/
+    assert(isscriptfunctionptr(&robottraverseend));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotTraverseEnd", &robottraverseend);
-    /#
-        assert(isscriptfunctionptr(&robottraverseragdollondeath));
-    #/
+    assert(isscriptfunctionptr(&robottraverseragdollondeath));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotTraverseRagdollOnDeath", &robottraverseragdollondeath);
-    /#
-        assert(isscriptfunctionptr(&robotshouldproceduraltraverse));
-    #/
+    assert(isscriptfunctionptr(&robotshouldproceduraltraverse));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldProceduralTraverse", &robotshouldproceduraltraverse);
-    /#
-        assert(isscriptfunctionptr(&robotwallruntraverse));
-    #/
+    assert(isscriptfunctionptr(&robotwallruntraverse));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotWallrunTraverse", &robotwallruntraverse);
-    /#
-        assert(isscriptfunctionptr(&robotshouldwallrun));
-    #/
+    assert(isscriptfunctionptr(&robotshouldwallrun));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotShouldWallrun", &robotshouldwallrun);
-    /#
-        assert(isscriptfunctionptr(&robotsetupwallrunjump));
-    #/
+    assert(isscriptfunctionptr(&robotsetupwallrunjump));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotSetupWallRunJump", &robotsetupwallrunjump);
-    /#
-        assert(isscriptfunctionptr(&robotsetupwallrunland));
-    #/
+    assert(isscriptfunctionptr(&robotsetupwallrunland));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotSetupWallRunLand", &robotsetupwallrunland);
-    /#
-        assert(isscriptfunctionptr(&robotwallrunstart));
-    #/
+    assert(isscriptfunctionptr(&robotwallrunstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotWallrunStart", &robotwallrunstart);
-    /#
-        assert(isscriptfunctionptr(&robotwallrunend));
-    #/
+    assert(isscriptfunctionptr(&robotwallrunend));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotWallrunEnd", &robotwallrunend);
-    /#
-        assert(isscriptfunctionptr(&robotcanjuke));
-    #/
+    assert(isscriptfunctionptr(&robotcanjuke));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCanJuke", &robotcanjuke);
-    /#
-        assert(isscriptfunctionptr(&robotcantacticaljuke));
-    #/
+    assert(isscriptfunctionptr(&robotcantacticaljuke));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCanTacticalJuke", &robotcantacticaljuke);
-    /#
-        assert(isscriptfunctionptr(&robotcanpreemptivejuke));
-    #/
+    assert(isscriptfunctionptr(&robotcanpreemptivejuke));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCanPreemptiveJuke", &robotcanpreemptivejuke);
-    /#
-        assert(isscriptfunctionptr(&robotjukeinitialize));
-    #/
+    assert(isscriptfunctionptr(&robotjukeinitialize));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotJukeInitialize", &robotjukeinitialize);
-    /#
-        assert(isscriptfunctionptr(&robotpreemptivejuketerminate));
-    #/
+    assert(isscriptfunctionptr(&robotpreemptivejuketerminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotPreemptiveJukeTerminate", &robotpreemptivejuketerminate);
-    /#
-        assert(isscriptfunctionptr(&robotcoverscaninitialize));
-    #/
+    assert(isscriptfunctionptr(&robotcoverscaninitialize));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCoverScanInitialize", &robotcoverscaninitialize);
-    /#
-        assert(isscriptfunctionptr(&robotcoverscanterminate));
-    #/
+    assert(isscriptfunctionptr(&robotcoverscanterminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCoverScanTerminate", &robotcoverscanterminate);
-    /#
-        assert(isscriptfunctionptr(&robotisatcovermodescan));
-    #/
+    assert(isscriptfunctionptr(&robotisatcovermodescan));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotIsAtCoverModeScan", &robotisatcovermodescan);
-    /#
-        assert(isscriptfunctionptr(&robotexposedcoverservice));
-    #/
+    assert(isscriptfunctionptr(&robotexposedcoverservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotExposedCoverService", &robotexposedcoverservice);
-    /#
-        assert(isscriptfunctionptr(&robotpositionservice));
-    #/
+    assert(isscriptfunctionptr(&robotpositionservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotPositionService", &robotpositionservice, 1);
-    /#
-        assert(isscriptfunctionptr(&robottargetservice));
-    #/
+    assert(isscriptfunctionptr(&robottargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotTargetService", &robottargetservice);
-    /#
-        assert(isscriptfunctionptr(&robottryreacquireservice));
-    #/
+    assert(isscriptfunctionptr(&robottryreacquireservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotTryReacquireService", &robottryreacquireservice);
-    /#
-        assert(isscriptfunctionptr(&robotrushenemyservice));
-    #/
+    assert(isscriptfunctionptr(&robotrushenemyservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotRushEnemyService", &robotrushenemyservice);
-    /#
-        assert(isscriptfunctionptr(&robotrushneighborservice));
-    #/
+    assert(isscriptfunctionptr(&robotrushneighborservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotRushNeighborService", &robotrushneighborservice);
-    /#
-        assert(isscriptfunctionptr(&robotcrawlerservice));
-    #/
+    assert(isscriptfunctionptr(&robotcrawlerservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotCrawlerService", &robotcrawlerservice);
-    /#
-        assert(isscriptfunctionptr(&movetoplayerupdate));
-    #/
+    assert(isscriptfunctionptr(&movetoplayerupdate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("robotMoveToPlayerService", &movetoplayerupdate);
     animationstatenetwork::registeranimationmocomp("robot_procedural_traversal", &mocomprobotproceduraltraversalinit, &mocomprobotproceduraltraversalupdate, &mocomprobotproceduraltraversalterminate);
     animationstatenetwork::registeranimationmocomp("robot_start_traversal", &mocomprobotstarttraversalinit, undefined, &mocomprobotstarttraversalterminate);
@@ -562,9 +352,7 @@ function private robotempidleterminate(entity, asmstatename) {
 // Checksum 0xdd9656bd, Offset: 0x3e70
 // Size: 0xd8
 function private robotproceduraltraversalupdate(entity, asmstatename) {
-    /#
-        assert(isdefined(entity.traversal));
-    #/
+    assert(isdefined(entity.traversal));
     traversal = entity.traversal;
     t = min((gettime() - traversal.starttime) / traversal.totaltime, 1);
     curveremaining = traversal.curvelength * (1 - t);
@@ -669,7 +457,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
         recordline(traversal.startpoint1, traversal.endpoint1, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
         recordline(traversal.endpoint1, traversal.endpoint2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
         recordline(traversal.startpoint2, traversal.endpoint2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-        record3dtext(traversal.abslengthtoend, traversal.endpoint1 + vectorscale((0, 0, 1), 12), (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
+        record3dtext(traversal.abslengthtoend, traversal.endpoint1 + (0, 0, 12), (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
     #/
     segments = 10;
     previouspoint = traversal.startpoint1;
@@ -1244,7 +1032,7 @@ function robotcanpreemptivejuke(entity) {
     if (distancesquared(entity.origin, entity.enemy.origin) < jukemaxdistance * jukemaxdistance) {
         angledifference = absangleclamp180(entity.angles[1] - entity.enemy.angles[1]);
         /#
-            record3dtext(angledifference, entity.origin + vectorscale((0, 0, 1), 5), (0, 1, 0), "robotScriptRequiresToSprint");
+            record3dtext(angledifference, entity.origin + (0, 0, 5), (0, 1, 0), "robotScriptRequiresToSprint");
         #/
         if (angledifference > 135) {
             enemyangles = entity.enemy getgunangles();
@@ -1252,7 +1040,7 @@ function robotcanpreemptivejuke(entity) {
             forward = anglestoforward(enemyangles);
             dotproduct = abs(vectordot(vectornormalize(toenemy), forward));
             /#
-                record3dtext(acos(dotproduct), entity.origin + vectorscale((0, 0, 1), 10), (0, 1, 0), "robotScriptRequiresToSprint");
+                record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "robotScriptRequiresToSprint");
             #/
             if (dotproduct > 0.9848) {
                 return robotcanjuke(entity);
@@ -1633,7 +1421,7 @@ function private robotexplode(entity) {
 // Size: 0x164
 function private robotexplodeterminate(entity) {
     entity setblackboardattribute("_gib_location", "legs");
-    entity radiusdamage(entity.origin + vectorscale((0, 0, 1), 36), 60, 100, 50, entity, "MOD_EXPLOSIVE");
+    entity radiusdamage(entity.origin + (0, 0, 36), 60, 100, 50, entity, "MOD_EXPLOSIVE");
     if (math::cointoss()) {
         gibserverutils::gibleftarm(entity);
     } else {
@@ -1708,7 +1496,7 @@ function private canmovetoenemycondition(entity) {
     findpathresult = entity findpath(positiononnavmesh, enemypositiononnavmesh, 1, 0);
     /#
         if (!findpathresult) {
-            record3dtext("robotProceduralTraversal", enemypositiononnavmesh + vectorscale((0, 0, 1), 5), (1, 0.5, 0), "robotScriptRequiresToSprint");
+            record3dtext("robotProceduralTraversal", enemypositiononnavmesh + (0, 0, 5), (1, 0.5, 0), "robotScriptRequiresToSprint");
             recordline(positiononnavmesh, enemypositiononnavmesh, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
         }
     #/
@@ -1987,9 +1775,7 @@ function private robotnocloseenemyservice(entity) {
 // Checksum 0xbafdfacc, Offset: 0x95b0
 // Size: 0x106
 function private _robotoutsidemovementrange(entity, range, useenemypos) {
-    /#
-        assert(isdefined(range));
-    #/
+    assert(isdefined(range));
     if (!isdefined(entity.enemy) && !entity haspath()) {
         return 0;
     }
@@ -2340,7 +2126,7 @@ function private robotpositionservice(entity) {
         if (getdvarint(#"ai_debuglastknown", 0) && isdefined(entity.enemy)) {
             lastknownpos = entity lastknownpos(entity.enemy);
             recordline(entity.origin, lastknownpos, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
-            record3dtext("_gib_location", lastknownpos + vectorscale((0, 0, 1), 5), (1, 0.5, 0), "robotScriptRequiresToSprint");
+            record3dtext("_gib_location", lastknownpos + (0, 0, 5), (1, 0.5, 0), "robotScriptRequiresToSprint");
         }
     #/
     if (!isalive(entity)) {
@@ -2809,7 +2595,7 @@ function private robotgibdeathoverride(inflictor, attacker, damage, meansofdeath
         velocity = entity getvelocity() / 9;
         entity startragdoll();
         entity launchragdoll((velocity[0] + randomfloatrange(-10, 10), velocity[1] + randomfloatrange(-10, 10), randomfloatrange(40, 50)), "j_mainroot");
-        physicsexplosionsphere(entity.origin + vectorscale((0, 0, 1), 36), 120, 32, 1);
+        physicsexplosionsphere(entity.origin + (0, 0, 36), 120, 32, 1);
     } else {
         isexplosive = isinarray(array("MOD_CRUSH", "MOD_GRENADE", "MOD_GRENADE_SPLASH", "MOD_PROJECTILE", "MOD_PROJECTILE_SPLASH", "MOD_EXPLOSIVE"), meansofdeath);
         _trygibbinglimb(entity, damage, hitloc, isexplosive, 1);
@@ -3012,7 +2798,7 @@ function private robotgivewasp(entity) {
         wasp = spawn("script_model", (0, 0, 0));
         wasp setmodel(#"veh_t7_drone_attack_red");
         wasp setscale(0.75);
-        wasp linkto(entity, "j_spine4", (5, -15, 0), vectorscale((0, 0, 1), 90));
+        wasp linkto(entity, "j_spine4", (5, -15, 0), (0, 0, 90));
         entity.wasp = wasp;
     }
 }

@@ -165,7 +165,6 @@ function private run_step_1() {
 function function_4b4ede() {
     self endon(#"death", #"burn_cabinet");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (s_notify zm_hms_util::function_69320b44("zm_aat_plasmatic_burst")) {
             level.var_74170866.s_cabinet notify(#"burn_cabinet");
@@ -274,7 +273,6 @@ function private cleanup_step_2() {
 function function_7130498() {
     level endon(#"end_game");
     while (!level flag::get(#"chimney_grenaded")) {
-        waitresult = undefined;
         waitresult = level.var_74170866.s_fireplace.var_7126b6eb waittill(#"damage");
         if (istouching(waitresult.position, level.var_74170866.s_fireplace.var_7126b6eb)) {
             /#
@@ -292,7 +290,6 @@ function function_7130498() {
 function function_20b366ef() {
     level endon(#"end_game");
     while (!level flag::get(#"chimney_grenaded")) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_3042a9bf2f57ea0a");
         v_origin = s_waitresult.var_814c9389;
         if (istouching(v_origin, level.var_74170866.s_fireplace.var_7126b6eb)) {
@@ -322,7 +319,6 @@ function private start_step_3() {
 function private function_473f437() {
     self endon(#"death", #"stop_think");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition("evt_rgun_frame_putback", (-759, -626, -7));
         if (function_18a1849f(s_notify.e_who)) {
@@ -401,7 +397,6 @@ function private function_7015dc35(e_player) {
 function private function_2ac1278b() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (function_18a1849f(e_player)) {

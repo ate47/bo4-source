@@ -77,9 +77,9 @@ function function_6ad87fb1() {
     #/
     level.s_audiologs.s_records.var_d9a8e3e4 show();
     wait(1);
-    level.s_audiologs.s_records.var_d9a8e3e4 rotatevelocity(vectorscale((0, 1, 0), 200), 600);
+    level.s_audiologs.s_records.var_d9a8e3e4 rotatevelocity((0, 200, 0), 600);
     zm_hms_util::function_e308175e(level.s_audiologs.s_records.a_str_vox[n_id], self.origin);
-    level.s_audiologs.s_records.var_d9a8e3e4 rotatevelocity(vectorscale((0, 1, 0), 200), 1);
+    level.s_audiologs.s_records.var_d9a8e3e4 rotatevelocity((0, 200, 0), 1);
     wait(2);
     level.s_audiologs.s_records.var_d9a8e3e4 hide();
 }

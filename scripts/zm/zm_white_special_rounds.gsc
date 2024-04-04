@@ -65,9 +65,7 @@ function init() {
     zm_round_spawning::function_2876740e(#"nova_crawler", &function_f3f325cb);
     zm_cleanup::function_cdf5a512(#"nova_crawler", &function_b448360c);
     level.ranged_nova_crawler_spawner = getent("ranged_nova_crawler_spawner", "script_noteworthy");
-    /#
-        assert(isdefined(level.ranged_nova_crawler_spawner), "vox_air_vent_repaired_react");
-    #/
+    assert(isdefined(level.ranged_nova_crawler_spawner), "vox_air_vent_repaired_react");
     if (zm_utility::is_classic()) {
         level thread function_2791c411();
         level thread function_5daa45ac();
@@ -125,7 +123,6 @@ function function_2ae2045c() {
     if (zm_utility::is_classic()) {
         b_played = 0;
         do {
-            waitresult = undefined;
             waitresult = level waittill(#"buffed");
             if (zm_audio::function_63f85f39(#"nova_effect", #"react")) {
                 b_played = waitresult.ai zm_audio::function_ef9ba49c(#"nova_effect");
@@ -237,7 +234,6 @@ function function_dc9c5c32() {
     level waittill(#"start_of_round");
     power_trig = getent("use_elec_switch", "targetname");
     if (isdefined(power_trig)) {
-        waitresult = undefined;
         waitresult = power_trig waittill(#"trigger");
         user = waitresult.activator;
         wait(1.5);
@@ -546,7 +542,6 @@ function function_53ffbb2e(var_cf2bbe1e) {
 function function_778aec95() {
     self.var_a1edb69e = 0;
     while (self.var_a1edb69e < 10) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         b_using = 1;
@@ -1446,7 +1441,6 @@ function function_2330b278() {
 function function_748fcb3c() {
     is_complete = 0;
     while (!is_complete) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         var_5a9db060 = 1;
         players = getplayers();

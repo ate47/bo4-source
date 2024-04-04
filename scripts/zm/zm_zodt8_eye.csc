@@ -521,9 +521,7 @@ function function_c6932c3b(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_e8071e64(localclientnum) {
     self notify(#"hash_2bb8be6b846aed93");
     self endon(#"hash_2bb8be6b846aed93", #"death");
-    /#
-        assert(isdefined(level.var_90bda347));
-    #/
+    assert(isdefined(level.var_90bda347));
     if (!isdefined(level.var_90bda347)) {
         return;
     }

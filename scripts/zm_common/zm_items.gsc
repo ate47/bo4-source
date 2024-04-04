@@ -139,7 +139,6 @@ function function_4d230236(w_item, fn_callback) {
 // Size: 0x68
 function private function_307756a0() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"player_bled_out");
         player = waitresult.player;
         player thread function_b64c32cf(player);
@@ -154,9 +153,7 @@ function private function_b64c32cf(player) {
     foreach (item in level.item_list) {
         if (item.var_337fc1cf && isdefined(player.item_inventory[item]) && player.item_inventory[item]) {
             if (item.var_9fffdcee) {
-                /#
-                    assertmsg("<unknown string>" + item.name + "<unknown string>");
-                #/
+                assertmsg("<unknown string>" + item.name + "<unknown string>");
                 continue;
             }
             function_ab3bb6bf(player, item);
@@ -171,9 +168,7 @@ function private function_b64c32cf(player) {
 function player_has(player, w_item) {
     if (!(isdefined(w_item.craftitem) && w_item.craftitem) && isdefined(player)) {
         if (w_item.var_9fffdcee) {
-            /#
-                assertmsg("<unknown string>" + w_item.name + "<unknown string>");
-            #/
+            assertmsg("<unknown string>" + w_item.name + "<unknown string>");
         } else {
             return player hasweapon(w_item);
         }
@@ -228,9 +223,7 @@ function player_pick_up(player, w_item) {
 function player_take(player, w_item) {
     if (!(isdefined(w_item.craftitem) && w_item.craftitem) && isdefined(player)) {
         if (w_item.var_9fffdcee) {
-            /#
-                assertmsg("<unknown string>" + w_item.name + "<unknown string>");
-            #/
+            assertmsg("<unknown string>" + w_item.name + "<unknown string>");
         } else {
             player zm_weapons::weapon_take(w_item);
         }
@@ -261,7 +254,7 @@ function function_ab3bb6bf(holder, w_item) {
     if (self hasweapon(w_item)) {
         self takeweapon(w_item);
     }
-    new_item = spawn_item(w_item, self.origin + vectorscale((0, 0, 1), 8), self.angles);
+    new_item = spawn_item(w_item, self.origin + (0, 0, 8), self.angles);
     return new_item;
 }
 

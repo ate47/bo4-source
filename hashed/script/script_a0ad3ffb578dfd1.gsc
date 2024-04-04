@@ -140,13 +140,12 @@ function function_7b89f32a() {
     var_ff4b3a13 val::set(#"painting_cipher", "allowdeath", 0);
     w_weapon = getweapon(#"bowie_knife");
     for (n_attacks = 0; n_attacks < 9; n_attacks++) {
-        s_result = undefined;
         s_result = var_ff4b3a13 waittill(#"damage");
         if (s_result.mod === #"mod_melee") {
         }
     }
     s_loc = struct::get(#"clottedcreamtea");
-    v_offset = vectorscale((0, 0, -1), 32);
+    v_offset = (0, 0, -32);
     var_55e11aa9 = util::spawn_model("tag_origin", var_ff4b3a13.origin + v_offset, var_ff4b3a13.angles);
     var_ff4b3a13 linkto(var_55e11aa9);
     v_offset = (0, 20, 24);
@@ -177,7 +176,6 @@ function function_c3a5f1fe(a_ents) {
     w_weapon = getweapon(#"ww_tricannon_earth_t8");
     var_eb115bf1 = getweapon(#"ww_tricannon_earth_t8_upgraded");
     while (true) {
-        s_result = undefined;
         s_result = e_raven waittill(#"damage");
         if (s_result.weapon === w_weapon || s_result.weapon === var_eb115bf1) {
             if (isalive(s_result.attacker) && isplayer(s_result.attacker)) {
@@ -243,7 +241,6 @@ function function_d3a41243() {
     t_damage = spawn("trigger_damage", struct::get(#"macaroni_boom").origin, 0, 6, 6);
     w_sticky = getweapon(#"eq_acid_bomb");
     while (true) {
-        s_result = undefined;
         s_result = t_damage waittill(#"damage");
         if (s_result.weapon === w_sticky) {
             mdl_fx = util::spawn_model("tag_origin", struct::get(#"macaroni_puddle").origin);
@@ -308,7 +305,6 @@ function function_ea0460f4() {
 // Size: 0xd4
 function function_aba430c2(s_unitrigger) {
     while (isdefined(self)) {
-        s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         e_player = s_result.e_who;
         if (isdefined(e_player) && !isdefined(e_player.var_68c35930)) {
@@ -327,7 +323,6 @@ function function_aba430c2(s_unitrigger) {
 // Size: 0x390
 function function_63c3fd24(var_314c1b5a) {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger_activated");
         e_player = s_result.e_who;
         if (isdefined(e_player)) {
@@ -389,7 +384,7 @@ function function_21a979f7() {
     self endon(#"hash_53eb32eaa511640c");
     while (true) {
         if (self.angles[0] < 360) {
-            self.angles = self.angles + vectorscale((1, 0, 0), 360);
+            self.angles = self.angles + (360, 0, 0);
         }
         self rotatepitch((self.angles[0] + 180) * -1, 2);
         self waittill(#"rotatedone");
@@ -404,7 +399,6 @@ function function_ad05f6f3() {
     self notify(#"hash_2b02b5a5a9af36e0");
     self endon(#"hash_2b02b5a5a9af36e0");
     while (isdefined(self)) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             break;
@@ -420,7 +414,7 @@ function function_ad05f6f3() {
 // Size: 0xa94
 function function_558936ed() {
     s_flag = struct::get(#"spin_cycle");
-    t_flag = spawn("trigger_damage", s_flag.origin - vectorscale((0, 0, 1), 10), 0, 12, 10);
+    t_flag = spawn("trigger_damage", s_flag.origin - (0, 0, 10), 0, 12, 10);
     mdl_flag = util::spawn_model(#"hash_2ce772d39f43cc44" + "a", s_flag.origin, s_flag.angles);
     mdl_flag setscale(0.18);
     mdl_flag function_7c9ab1ea(t_flag, "b");
@@ -509,7 +503,6 @@ function function_558936ed() {
 // Size: 0x1d2
 function function_7c9ab1ea(t_flag, var_f96aafd8) {
     while (true) {
-        s_result = undefined;
         s_result = t_flag waittill(#"trigger");
         if (isdefined(s_result.activator) && isplayer(s_result.activator)) {
             self rotateroll(360, 0.25);
@@ -733,12 +726,12 @@ function function_dc92e2d4(a_angles, var_21bb918c, var_c8279d50, str_letter) {
 function function_a7ae2066() {
     var_b1e4b9a0 = [];
     var_75d1ad4a = [];
-    var_b1e4b9a0[#"start"] = vectorscale((0, 1, 0), 270);
-    var_75d1ad4a[#"start"] = vectorscale((1, 1, 0), 90);
+    var_b1e4b9a0[#"start"] = (0, 270, 0);
+    var_75d1ad4a[#"start"] = (90, 90, 0);
     var_b1e4b9a0[#"space"] = (135, 90, 0);
     var_75d1ad4a[#"space"] = (135, 270, 0);
     var_b1e4b9a0[#"y"] = (45, 270, 0);
-    var_75d1ad4a[#"y"] = vectorscale((1, 1, 0), 90);
+    var_75d1ad4a[#"y"] = (90, 90, 0);
     var_b1e4b9a0[#"o"] = (90, 270, 0);
     var_75d1ad4a[#"o"] = (45, 270, 0);
     var_b1e4b9a0[#"u"] = (45, 270, 0);
@@ -747,7 +740,7 @@ function function_a7ae2066() {
     var_75d1ad4a[#"h"] = (135, 270, 0);
     var_b1e4b9a0[#"a"] = (135, 270, 0);
     var_75d1ad4a[#"a"] = (180, 90, 0);
-    var_b1e4b9a0[#"v"] = vectorscale((0, 1, 0), 270);
+    var_b1e4b9a0[#"v"] = (0, 270, 0);
     var_75d1ad4a[#"v"] = (135, 90, 0);
     var_b1e4b9a0[#"e"] = (180, 270, 0);
     var_75d1ad4a[#"e"] = (45, 90, 0);
@@ -756,24 +749,24 @@ function function_a7ae2066() {
     var_b1e4b9a0[#"s"] = (90, 270, 0);
     var_75d1ad4a[#"s"] = (135, 90, 0);
     var_b1e4b9a0[#"t"] = (45, 270, 0);
-    var_75d1ad4a[#"t"] = vectorscale((0, 1, 0), 90);
+    var_75d1ad4a[#"t"] = (0, 90, 0);
     var_b1e4b9a0[#"i"] = (45, 270, 0);
     var_75d1ad4a[#"i"] = (135, 270, 0);
     var_b1e4b9a0[#"n"] = (135, 270, 0);
     var_75d1ad4a[#"n"] = (135, 90, 0);
     var_b1e4b9a0[#"f"] = (180, 270, 0);
-    var_75d1ad4a[#"f"] = vectorscale((1, 1, 0), 90);
+    var_75d1ad4a[#"f"] = (90, 90, 0);
     var_b1e4b9a0[#"r"] = (90, 270, 0);
-    var_75d1ad4a[#"r"] = vectorscale((1, 1, 0), 90);
+    var_75d1ad4a[#"r"] = (90, 90, 0);
     var_b1e4b9a0[#"m"] = (135, 270, 0);
-    var_75d1ad4a[#"m"] = vectorscale((1, 1, 0), 90);
+    var_75d1ad4a[#"m"] = (90, 90, 0);
     var_b1e4b9a0[#"l"] = (135, 270, 0);
     var_75d1ad4a[#"l"] = (45, 90, 0);
     var_b1e4b9a0[#"k"] = (135, 270, 0);
-    var_75d1ad4a[#"k"] = vectorscale((0, 1, 0), 90);
+    var_75d1ad4a[#"k"] = (0, 90, 0);
     var_b1e4b9a0[#"w"] = (45, 90, 0);
-    var_75d1ad4a[#"w"] = vectorscale((1, 1, 0), 90);
-    var_b1e4b9a0[#"d"] = vectorscale((0, 1, 0), 270);
+    var_75d1ad4a[#"w"] = (90, 90, 0);
+    var_b1e4b9a0[#"d"] = (0, 270, 0);
     var_75d1ad4a[#"d"] = (180, 90, 0);
     a_return = [];
     a_return[#"left"] = var_b1e4b9a0;
@@ -789,7 +782,6 @@ function function_678d6318() {
     s_trigger_loc = struct::get(#"hash_2ca9b43546a096e3");
     s_unitrigger = s_trigger_loc zm_unitrigger::create(undefined, (180, 180, 64), &zm_unitrigger::function_69168e61, 0, 1);
     while (true) {
-        s_result = undefined;
         s_result = s_trigger_loc waittill(#"trigger_activated");
         player = s_result.e_who;
         if (isalive(player) && isplayer(player)) {

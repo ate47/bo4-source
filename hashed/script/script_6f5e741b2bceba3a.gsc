@@ -95,7 +95,6 @@ function is_active() {
 function private wallbuy_watcher() {
     level endon(#"hash_31c14df051f6c165", #"game_ended");
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"weapon_bought");
         e_player = s_notify.player;
         if (!isinarray(level.var_943b6e2b[e_player.clientid], s_notify.weapon)) {

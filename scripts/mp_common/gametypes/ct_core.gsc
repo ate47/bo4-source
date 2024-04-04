@@ -201,9 +201,7 @@ function function_6a1d53f3() {
 // Checksum 0x674950c0, Offset: 0xf18
 // Size: 0x80
 function function_edd52efc() {
-    /#
-        assert(player_role::is_valid(level.select_character));
-    #/
+    assert(player_role::is_valid(level.select_character));
     if (player_role::is_valid(level.select_character)) {
         self player_role::set(level.select_character);
     }
@@ -265,7 +263,6 @@ function function_f8f94589(gamedifficulty) {
     if (isdefined(level.var_49240db3)) {
         level thread [[ level.var_49240db3 ]](gamedifficulty);
     }
-    waitresult = undefined;
     waitresult = level waittill(#"combattraining_logic_finished");
     level flag::clear("combat_training_started");
     e_player = ct_utils::get_player();
@@ -297,7 +294,6 @@ function function_1e84c767() {
     var_60786cb4 = 0;
     if (util::function_8570168d()) {
         while (true) {
-            waitresult = undefined;
             waitresult = player waittill(#"menuresponse");
             menu = waitresult.menu;
             response = waitresult.response;
@@ -326,7 +322,6 @@ function function_1e84c767() {
             player function_3b91934f(player function_76785843(), #"tutorial_started");
             player function_ea859fe2();
         }
-        s_result = undefined;
         s_result = level waittill(#"combattraining_logic_finished");
         b_completed = s_result.success;
         level waittill(#"hash_699329b4df616aed");
@@ -370,16 +365,10 @@ function function_a217c7b4(b_success) {
         wait(2);
         e_player = getplayers(#"allies")[0];
         e_player val::set(#"potm", "freezecontrols", 1);
-        /#
-            println("<unknown string>");
-        #/
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
+        println("<unknown string>");
         level potm::function_b6a5e7fa();
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         e_player = getplayers(#"allies")[0];
         e_player val::reset(#"potm", "freezecontrols");
         wait(0.3);
@@ -443,11 +432,7 @@ function private function_95e72b33(moviefile) {
 // Checksum 0xa20938c4, Offset: 0x1e78
 // Size: 0x114
 function function_e9b83be8() {
-    /#
-        /#
-            assert(isdefined(level.select_character), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(level.select_character), "<unknown string>");
     fields = getcharacterfields(level.select_character, currentsessionmode());
     if (isdefined(fields) && isdefined(fields.intromovie) && function_a1fb023a(fields.var_5331abe0)) {
         e_player = getplayers(#"allies")[0];
@@ -462,11 +447,7 @@ function function_e9b83be8() {
 // Checksum 0xea7e6158, Offset: 0x1f98
 // Size: 0x114
 function function_588a84ce() {
-    /#
-        /#
-            assert(isdefined(level.select_character), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(level.select_character), "<unknown string>");
     fields = getcharacterfields(level.select_character, currentsessionmode());
     if (isdefined(fields) && isdefined(fields.var_55f31ab6) && function_a1fb023a(fields.var_148d6d91)) {
         e_player = getplayers(#"allies")[0];

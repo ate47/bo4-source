@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class czm_game_over : cluielem {
 
-    // Namespace czm_game_over/zm_game_over
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x24f0633c, Offset: 0x208
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_game_over/zm_game_over
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xa7c4a749, Offset: 0x438
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_game_over/zm_game_over
     // Params 2, eflags: 0x1 linked
     // Checksum 0x6b7ab323, Offset: 0x3f0
     // Size: 0x3c
     function set_rounds(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "rounds", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "rounds", value);
     }
 
     // Namespace czm_game_over/zm_game_over
@@ -38,18 +24,14 @@ class czm_game_over : cluielem {
     // Size: 0xbc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"gatewayopened" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_game_over/zm_game_over

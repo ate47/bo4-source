@@ -89,9 +89,7 @@ function function_f479a2ff(weapon) {
 // Checksum 0x334ead95, Offset: 0x538
 // Size: 0x8c
 function function_e3a30c69(weapon) {
-    /#
-        assert(isdefined(isdefined(level.killstreakweapons[weapon])));
-    #/
+    assert(isdefined(isdefined(level.killstreakweapons[weapon])));
     killstreak = level.killstreaks[level.killstreakweapons[weapon]];
     return isdefined(killstreak.script_bundle.var_a82b593f) ? killstreak.script_bundle.var_a82b593f : 0;
 }
@@ -118,9 +116,7 @@ function get_killstreak_weapon(killstreak) {
     if (!isdefined(killstreak)) {
         return level.weaponnone;
     }
-    /#
-        assert(isdefined(level.killstreaks[killstreak]));
-    #/
+    assert(isdefined(level.killstreaks[killstreak]));
     return level.killstreaks[killstreak].weapon;
 }
 

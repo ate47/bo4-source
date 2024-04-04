@@ -48,7 +48,6 @@ function __init__() {
 // Size: 0xd6
 function wait_and_set_revive_shader_constant() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittillmatch({#notetrack:"revive_shader_constant"}, #"notetrack");
         player = function_5c10bd79(waitresult.localclientnum);
         player mapshaderconstant(waitresult.localclientnum, 0, "scriptVector2", 0, 1, 0, getservertime(waitresult.localclientnum) / 1000);

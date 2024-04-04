@@ -30,9 +30,7 @@
 // Checksum 0x66f47c57, Offset: 0x3f8
 // Size: 0x54
 function notifyonplayercommand(command, key) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     self thread function_255e9614(command, key);
 }
 
@@ -233,9 +231,7 @@ function addupperrighthudelem(label, value, text, labelpc) {
 // Checksum 0x55d18b1, Offset: 0xe60
 // Size: 0x1e4
 function propcontrolshud() {
-    /#
-        assert(!isdefined(self.changepropkey));
-    #/
+    assert(!isdefined(self.changepropkey));
     if (self issplitscreen()) {
         self.currenthudy = -10;
     } else {
@@ -347,7 +343,6 @@ function propinputwatch() {
     self thread propcamerazoom();
     self.debugnextpropindex = 1;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"lock", #"spin", #"changeprop", #"settoslope", #"propability", #"cloneprop", #"hide");
         msg = waitresult._notify;
         if (!isdefined(msg)) {
@@ -405,7 +400,7 @@ function proplockunlock() {
 // Size: 0xd4
 function function_9bc7ac53() {
     self.propent unlink();
-    self.propent.angles = self.propent.angles + vectorscale((0, 1, 0), 45);
+    self.propent.angles = self.propent.angles + (0, 45, 0);
     self.propent.origin = self.propanchor.origin;
     if (self.slopelocked && isdefined(self.lock) && self.lock) {
         self.propent set_pitch_roll_for_ground_normal(self.prop);
@@ -796,7 +791,7 @@ function get_ground_normal(traceignore, debug) {
     avgnormal = (0, 0, 0);
     tracehitcount = 0;
     foreach (point in tracepoints) {
-        trace = bullettrace(point + vectorscale((0, 0, 1), 4), point + vectorscale((0, 0, -1), 16), 0, ignore);
+        trace = bullettrace(point + (0, 0, 4), point + (0, 0, -16), 0, ignore);
         tracehit = trace[#"fraction"] > 0 && trace[#"fraction"] < 1;
         if (tracehit) {
             avgnormal = avgnormal + trace[#"normal"];
@@ -944,11 +939,9 @@ function flashlockpropkey() {
 // Checksum 0x7c115f50, Offset: 0x32c0
 // Size: 0x72
 function function_56cae8fa() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     start = self.origin;
-    end = start + vectorscale((0, 0, -1), 2000);
+    end = start + (0, 0, -2000);
     return playerphysicstrace(start, end);
 }
 
@@ -957,11 +950,9 @@ function function_56cae8fa() {
 // Checksum 0xb2a4e3da, Offset: 0x3340
 // Size: 0x92
 function function_97f02d5c() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     start = self.origin;
-    end = start + vectorscale((0, 0, -1), 2000);
+    end = start + (0, 0, -2000);
     trace = bullettrace(start, end, 0, self.prop);
     return trace;
 }
@@ -1088,7 +1079,6 @@ function propcamerazoom() {
     var_fc464c9b = 10;
     self.thirdpersonrange = self.prop.info.proprange;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"zoomin", #"zoomout");
         zoom = waitresult._notify;
         if (!isdefined(zoom)) {
@@ -1123,9 +1113,7 @@ function setnewabilityhud() {
         self.abilitykey.label = #"mp_ph_flash";
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
 }
@@ -1149,9 +1137,7 @@ function setnewabilitycount(var_8c8fd413, count) {
         propsetclonesleft(count);
         break;
     default:
-        /#
-            assertmsg("<unknown string>" + var_8c8fd413);
-        #/
+        assertmsg("<unknown string>" + var_8c8fd413);
         break;
     }
 }
@@ -1175,7 +1161,6 @@ function flashtheprops(var_c8c9bf0f) {
     var_c8c9bf0f endon(#"disconnect");
     self thread endondeath();
     self endon(#"end_explode");
-    res = undefined;
     res = self waittill(#"explode");
     position = res.position;
     if (!isdefined(var_c8c9bf0f)) {
@@ -1192,7 +1177,7 @@ function flashenemies(var_c8c9bf0f = self, position = self.origin) {
     fwd = anglestoforward(var_c8c9bf0f getplayerangles());
     fwd = vectornormalize((fwd[0], fwd[1], 0));
     var_ec24ae95 = fwd * 60;
-    spawn_pos = position + vectorscale((0, 0, 1), 10) + fwd * 30;
+    spawn_pos = position + (0, 0, 10) + fwd * 30;
     concuss = var_c8c9bf0f magicmissile(getweapon(#"hash_25d3ed64dda487d"), spawn_pos, var_ec24ae95);
 }
 
@@ -1230,9 +1215,7 @@ function deletepropsifatmax() {
         }
         clones[clones.size] = clone;
     }
-    /#
-        assert(isdefined(var_ccb1dd7));
-    #/
+    assert(isdefined(var_ccb1dd7));
     var_ccb1dd7 notify(#"maxdelete");
     var_ccb1dd7 delete();
     self.propclones = clones;
@@ -1312,8 +1295,8 @@ function function_d1a1cc8d() {
     if (!isdefined(self.isdying)) {
         self.isdying = 1;
     }
-    playsoundatposition("wpn_flash_grenade_explode", self.origin + vectorscale((0, 0, 1), 4));
-    playfx(fx::get("propDeathFX"), self.origin + vectorscale((0, 0, 1), 4));
+    playsoundatposition("wpn_flash_grenade_explode", self.origin + (0, 0, 4));
+    playfx(fx::get("propDeathFX"), self.origin + (0, 0, 4));
     if (isdefined(self)) {
         self delete();
     }
@@ -1371,7 +1354,6 @@ function watchspecialgrenadethrow() {
     self notify(#"watchspecialgrenadethrow");
     self endon(#"watchspecialgrenadethrow");
     while (true) {
-        res = undefined;
         res = self waittill(#"grenade_fire");
         grenade = res.projectile;
         weapon = res.weapon;
@@ -1387,7 +1369,6 @@ function watchspecialgrenadethrow() {
 function trackgrenade(grenade, weapon) {
     level endon(#"game_ended");
     self endon(#"disconnect");
-    res = undefined;
     res = grenade waittill(#"explode");
     damageorigin = res.position;
     if (!isdefined(level.var_fe458fef)) {

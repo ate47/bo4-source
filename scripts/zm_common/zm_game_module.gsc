@@ -27,9 +27,7 @@ function register_game_module(index, module_name, pre_init_func, post_init_func,
             continue;
         }
         if (isdefined(level._game_modules[i].index) && level._game_modules[i].index == index) {
-            /#
-                assert(level._game_modules[i].index != index, "<unknown string>" + index + "<unknown string>");
-            #/
+            assert(level._game_modules[i].index != index, "<unknown string>" + index + "<unknown string>");
         }
     }
     level._game_modules[level._num_registered_game_modules] = spawnstruct();
@@ -55,9 +53,7 @@ function set_current_game_module(game_module_index) {
     }
     game_module = get_game_module(game_module_index);
     if (!isdefined(game_module)) {
-        /#
-            assert(isdefined(game_module), "<unknown string>" + game_module_index + "<unknown string>");
-        #/
+        assert(isdefined(game_module), "<unknown string>" + game_module_index + "<unknown string>");
         return;
     }
     level.current_game_module = game_module_index;

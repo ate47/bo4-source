@@ -86,7 +86,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     }
     dynent.var_1a909065 = 1;
     var_7580ce3e = spawnstruct();
-    var_7580ce3e.origin = dynent.origin + vectorscale((0, 0, 1), 32);
+    var_7580ce3e.origin = dynent.origin + (0, 0, 32);
     function_e2a06860(dynent, 2);
     wait(0.7);
     if (isdefined(dynent)) {
@@ -128,7 +128,7 @@ function function_7a1e21a9(v_loc) {
         n_y_offset = n_y_offset * -1;
     }
     v_loc = v_loc + (n_x_offset, n_y_offset, 0);
-    trace = bullettrace(v_loc + vectorscale((0, 0, 1), 40), v_loc + vectorscale((0, 0, -1), 150), 0, undefined);
+    trace = bullettrace(v_loc + (0, 0, 40), v_loc + (0, 0, -150), 0, undefined);
     if (trace[#"fraction"] < 1) {
         v_loc = trace[#"position"];
     }

@@ -103,12 +103,8 @@ function onuse(player) {
         return;
     }
     /#
-        /#
-            assert(isdefined(player.lastkillconfirmedtime));
-        #/
-        /#
-            assert(isdefined(player.lastkillconfirmedcount));
-        #/
+        assert(isdefined(player.lastkillconfirmedtime));
+        assert(isdefined(player.lastkillconfirmedcount));
     #/
     player.pers[#"killsconfirmed"]++;
     player.killsconfirmed = player.pers[#"killsconfirmed"];

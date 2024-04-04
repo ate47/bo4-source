@@ -55,7 +55,6 @@ function on_grenade_fired(s_params) {
         e_grenade.var_1a61db89 linkto(e_grenade);
         e_grenade.var_1a61db89 clientfield::set("" + #"hash_136e9d44e7e2e888", 1);
         e_grenade.weapon = s_params.weapon;
-        s_waitresult = undefined;
         s_waitresult = s_params.projectile waittill(#"stationary");
         if (e_grenade _second_compass_map_mp_ruins(self)) {
             e_grenade thread function_9d9bff80(s_waitresult.position, self);
@@ -72,7 +71,7 @@ function on_grenade_fired(s_params) {
 function function_9d9bff80(var_2fe3186e, attacker) {
     self endon(#"death");
     level endon(#"end_game");
-    var_b7fc8c3e = var_2fe3186e + vectorscale((0, 0, 1), 64);
+    var_b7fc8c3e = var_2fe3186e + (0, 0, 64);
     self playsound("vox_musicbox_start_sama_" + randomint(3));
     wait(1);
     e_sam = util::spawn_model("p8_zm_music_box_samantha_trap", self.var_1a61db89.origin, (0, self.angles[1] + 180, 0));
@@ -128,7 +127,7 @@ function function_9d9bff80(var_2fe3186e, attacker) {
             [[ level.var_14160fb0 ]]->waitinqueue(e_zombie);
             e_zombie startragdoll(1);
             var_23ef51ef = vectornormalize(e_zombie getcentroid() - var_b7fc8c3e) * randomfloatrange(150, 250);
-            e_zombie launchragdoll(var_23ef51ef + vectorscale((0, 0, 1), 32));
+            e_zombie launchragdoll(var_23ef51ef + (0, 0, 32));
             e_zombie dodamage(e_zombie.maxhealth, e_zombie.origin, attacker, self, 0, "MOD_GRENADE", 0, self.weapon);
             e_zombie clientfield::set("" + #"hash_4881cb6bc59fdc49", 1);
         }

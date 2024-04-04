@@ -227,12 +227,8 @@ function function_c79d744e(s_spawn_loc) {
     if (isdefined(s_spawn_loc.scriptbundlename)) {
         self zm_spawner::function_45bb11e4(s_spawn_loc);
     }
-    /#
-        assert(isdefined(self), "<unknown string>");
-    #/
-    /#
-        assert(isalive(self), "<unknown string>");
-    #/
+    assert(isdefined(self), "<unknown string>");
+    assert(isalive(self), "<unknown string>");
     self zombie_dog_util::zombie_setup_attack_properties_dog();
     wait(0.1);
     self show();
@@ -475,7 +471,7 @@ function function_50ec1ddf() {
 // Size: 0xa2
 function function_e91102ad() {
     foreach (player in getplayers()) {
-        if (player util::is_player_looking_at(self.origin + vectorscale((0, 0, 1), 64))) {
+        if (player util::is_player_looking_at(self.origin + (0, 0, 64))) {
             return true;
         }
     }

@@ -13,9 +13,7 @@ function init(str_flag, b_val = 0, b_is_trigger = 0) {
     }
     /#
         if (!isdefined(level.first_frame)) {
-            /#
-                assert(!isdefined(self.flag[str_flag]), "<unknown string>" + str_flag + "<unknown string>");
-            #/
+            assert(!isdefined(self.flag[str_flag]), "<unknown string>" + str_flag + "<unknown string>");
         }
     #/
     self.flag[str_flag] = b_val;
@@ -34,11 +32,7 @@ function exists(str_flag) {
 // Checksum 0x8d3f413f, Offset: 0x188
 // Size: 0x82
 function set(str_flag) {
-    /#
-        /#
-            assert(exists(str_flag), "<unknown string>" + function_9e72a96(str_flag) + "<unknown string>");
-        #/
-    #/
+    assert(exists(str_flag), "<unknown string>" + function_9e72a96(str_flag) + "<unknown string>");
     self.flag[str_flag] = 1;
     self notify(str_flag);
 }
@@ -81,9 +75,7 @@ function set_for_time(n_time, str_flag) {
 // Checksum 0x81d702b8, Offset: 0x338
 // Size: 0x76
 function clear(str_flag) {
-    /#
-        assert(exists(str_flag), "<unknown string>" + str_flag + "<unknown string>");
-    #/
+    assert(exists(str_flag), "<unknown string>" + str_flag + "<unknown string>");
     if (self.flag[str_flag]) {
         self.flag[str_flag] = 0;
         self notify(str_flag);
@@ -107,9 +99,7 @@ function toggle(str_flag) {
 // Checksum 0xdd02bece, Offset: 0x418
 // Size: 0x58
 function get(str_flag) {
-    /#
-        assert(exists(str_flag), "<unknown string>" + str_flag + "<unknown string>");
-    #/
+    assert(exists(str_flag), "<unknown string>" + str_flag + "<unknown string>");
     return self.flag[str_flag];
 }
 
@@ -282,8 +272,6 @@ function delete(str_flag) {
         self.flag[str_flag] = undefined;
         return;
     }
-    /#
-        println("<unknown string>" + str_flag);
-    #/
+    println("<unknown string>" + str_flag);
 }
 

@@ -48,7 +48,6 @@ function watchkillstreakweapondelay() {
     self endon(#"disconnect", #"death");
     while (true) {
         currentweapon = self getcurrentweapon();
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         newweapon = waitresult.weapon;
         if (level.roundstartkillstreakdelay < float(globallogic_utils::gettimepassed()) / 1000) {
@@ -152,9 +151,7 @@ function usecarriedkillstreakweapon(hardpointtype) {
     } else {
         killstreak_id = self.m32id;
     }
-    /#
-        assert(killstreak_id != -1);
-    #/
+    assert(killstreak_id != -1);
     self.firedkillstreakweapon = 0;
     self setblockweaponpickup(killstreakweapon, 1);
     if (isfrominventory) {
@@ -189,9 +186,7 @@ function usekillstreakweaponfromcrate(hardpointtype) {
     self.firedkillstreakweapon = 0;
     self setblockweaponpickup(killstreakweapon, 1);
     killstreak_id = self killstreakrules::killstreakstart(hardpointtype, self.team, 0, 0);
-    /#
-        assert(killstreak_id != -1);
-    #/
+    assert(killstreak_id != -1);
     if (issubstr(hardpointtype, "inventory")) {
         isfrominventory = 1;
     } else {
@@ -217,7 +212,6 @@ function watchkillstreakweaponswitch(killstreakweapon, killstreak_id, isfrominve
     miniguninventoryweapon = getweapon(#"inventory_minigun");
     while (true) {
         currentweapon = self getcurrentweapon();
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         newweapon = waitresult.weapon;
         if (level.infinalkillcam) {
@@ -360,7 +354,6 @@ function watchplayerdeath(killstreakweapon) {
 // Size: 0x122
 function watchkillstreakremoval(killstreaktype, killstreak_id) {
     self endon(#"disconnect", #"death", #"killstreak_weapon_switch");
-    waitresult = undefined;
     waitresult = self waittill(#"oldest_killstreak_removed");
     removedkillstreaktype = waitresult.type;
     removed_id = waitresult.id;

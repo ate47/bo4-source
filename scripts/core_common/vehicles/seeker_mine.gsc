@@ -113,15 +113,15 @@ function function_b23e4b45() {
         newpos = undefined;
         var_921106a1 = getclosestpointonnavmesh(self.origin, 250, 30);
         if (isdefined(var_921106a1)) {
-            results = groundtrace(var_921106a1 + vectorscale((0, 0, 1), 70), var_921106a1 + vectorscale((0, 0, -1), 70), 0, self);
+            results = groundtrace(var_921106a1 + (0, 0, 70), var_921106a1 + (0, 0, -70), 0, self);
             if (isdefined(results) && isdefined(results[#"position"])) {
                 var_921106a1 = results[#"position"];
-                if (bullettracepassed(self.origin + vectorscale((0, 0, 1), 10), var_921106a1, 0, self, self, 0, 0)) {
+                if (bullettracepassed(self.origin + (0, 0, 10), var_921106a1, 0, self, self, 0, 0)) {
                     /#
-                        recordline(self.origin + vectorscale((0, 0, 1), 10), var_921106a1, (0, 0, 1), "<unknown string>");
+                        recordline(self.origin + (0, 0, 10), var_921106a1, (0, 0, 1), "<unknown string>");
                     #/
                     /#
-                        recordsphere(self.origin + vectorscale((0, 0, 1), 10), 3, (0, 0, 1), "<unknown string>");
+                        recordsphere(self.origin + (0, 0, 10), 3, (0, 0, 1), "<unknown string>");
                     #/
                     /#
                         recordsphere(var_921106a1, 3, (0, 0, 1), "<unknown string>");
@@ -129,10 +129,10 @@ function function_b23e4b45() {
                     newpos = var_921106a1;
                 } else {
                     /#
-                        recordline(self.origin + vectorscale((0, 0, 1), 10), var_921106a1, (1, 0.5, 0), "<unknown string>");
+                        recordline(self.origin + (0, 0, 10), var_921106a1, (1, 0.5, 0), "<unknown string>");
                     #/
                     /#
-                        recordsphere(self.origin + vectorscale((0, 0, 1), 10), 3, (1, 0.5, 0), "<unknown string>");
+                        recordsphere(self.origin + (0, 0, 10), 3, (1, 0.5, 0), "<unknown string>");
                     #/
                     /#
                         recordsphere(var_921106a1, 3, (1, 0.5, 0), "<unknown string>");
@@ -146,7 +146,7 @@ function function_b23e4b45() {
             tacpoints = tacticalquery("mp_seeker_seek_no_enemy_fallback", self.origin, self, var_68860686, cylinder);
             if (isdefined(tacpoints) && tacpoints.size > 0) {
                 foreach (tacpoint in tacpoints) {
-                    if (function_96c81b85(tacpoint, self.origin + vectorscale((0, 0, 1), 30))) {
+                    if (function_96c81b85(tacpoint, self.origin + (0, 0, 30))) {
                         var_cc66f3f5 = getclosestpointonnavmesh(tacpoint.origin, 250, 30);
                         if (isdefined(var_cc66f3f5) && function_d15dd929(self getpathfindingradius(), var_cc66f3f5) && sighttracepassed(self.origin, var_cc66f3f5, 0, self)) {
                             newpos = var_cc66f3f5;
@@ -203,7 +203,7 @@ function defaultrole() {
 // Checksum 0xc2c86152, Offset: 0xda8
 // Size: 0x1a
 function function_d3a9800e() {
-    return self.origin + vectorscale((0, 0, 1), 30);
+    return self.origin + (0, 0, 30);
 }
 
 // Namespace seeker_mine/seeker_mine
@@ -211,7 +211,7 @@ function function_d3a9800e() {
 // Checksum 0x66c3d219, Offset: 0xdd0
 // Size: 0xae
 function private function_d39f1cf2() {
-    trace = groundtrace(self.origin + vectorscale((0, 0, 1), 70), self.origin + vectorscale((0, 0, -1), 100), 0, self);
+    trace = groundtrace(self.origin + (0, 0, 70), self.origin + (0, 0, -100), 0, self);
     if (isdefined(trace[#"entity"])) {
         entity = trace[#"entity"];
         if (entity ismovingplatform()) {
@@ -226,7 +226,7 @@ function private function_d39f1cf2() {
 // Checksum 0x53377ea3, Offset: 0xe88
 // Size: 0x4e
 function private function_23d1cec2() {
-    result = function_9cc082d2(self.origin + vectorscale((0, 0, 1), 100), 400);
+    result = function_9cc082d2(self.origin + (0, 0, 100), 400);
     if (isdefined(result)) {
         return true;
     }
@@ -315,7 +315,6 @@ function function_391d5d90(params) {
 // Size: 0x88
 function waittill_pathing_done(maxtime = 15) {
     self endon(#"death", #"change_state");
-    result = undefined;
     result = self waittilltimeout(maxtime, #"near_goal", #"hash_f6b2d6a37e22523", #"switch_enemy");
 }
 
@@ -571,7 +570,7 @@ function private function_82e5be34() {
 // Checksum 0x6c500fa4, Offset: 0x1ef0
 // Size: 0xae
 function function_d15dd929(radius, origin) {
-    result = function_9cc082d2(origin + vectorscale((0, 0, 1), 100), 200);
+    result = function_9cc082d2(origin + (0, 0, 100), 200);
     if (isdefined(result) && isdefined(result[#"materialflags"]) && result[#"materialflags"] & 2) {
         return false;
     }
@@ -595,10 +594,10 @@ function damage_armor_activati_(entity, tacpoints) {
                 continue;
             }
             /#
-                record3dtext("<unknown string>", tacpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "<unknown string>");
+                record3dtext("<unknown string>", tacpoint.origin + (0, 0, 40), (1, 1, 1), "<unknown string>");
             #/
             /#
-                recordline(tacpoint.origin + vectorscale((0, 0, 1), 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
+                recordline(tacpoint.origin + (0, 0, 40), tacpoint.origin, (1, 1, 1), "<unknown string>");
             #/
         }
     }
@@ -643,7 +642,7 @@ function function_3e16dec3(params) {
             tacpoints = damage_armor_activati_(self, tacpoints);
             if (isdefined(tacpoints) && tacpoints.size != 0) {
                 /#
-                    record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (1, 0, 0));
+                    record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0));
                 #/
                 newpos = tacpoints[0].origin;
                 newpos = getclosestpointonnavmesh(newpos, 500, self getpathfindingradius() * 1.2, self.var_6e9e073d);
@@ -667,7 +666,7 @@ function function_3e16dec3(params) {
                     tacpoints = damage_armor_activati_(self, tacpoints);
                     if (isdefined(tacpoints) && tacpoints.size != 0) {
                         /#
-                            record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (1, 0, 0));
+                            record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0));
                         #/
                         newpos = tacpoints[0].origin;
                         newpos = getclosestpointonnavmesh(newpos, 500, self getpathfindingradius() * 1.2);
@@ -692,7 +691,7 @@ function function_3e16dec3(params) {
 // Checksum 0x985b7abd, Offset: 0x26a0
 // Size: 0xc0
 function function_ab9a9770(target) {
-    results = groundtrace(target.origin + vectorscale((0, 0, 1), 70), target.origin + vectorscale((0, 0, -1), 100), 0, target);
+    results = groundtrace(target.origin + (0, 0, 70), target.origin + (0, 0, -100), 0, target);
     if (isdefined(results) && isdefined(results[#"entity"]) && results[#"entity"] ismovingplatform()) {
         return true;
     }
@@ -892,18 +891,18 @@ function function_d55a99f2(var_4700521d = 500, var_53050fec = 1, var_30336a7c = 
         return true;
     }
     /#
-        record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (1, 0, 0));
+        record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0));
     #/
     newpos = getclosestpointonnavmesh(self.origin, var_4700521d, self getpathfindingradius() * 1.2);
     if (isdefined(newpos)) {
-        trace = groundtrace(newpos + vectorscale((0, 0, 1), 70), newpos + vectorscale((0, 0, -1), 70), 0, undefined);
+        trace = groundtrace(newpos + (0, 0, 70), newpos + (0, 0, -70), 0, undefined);
         if (isdefined(trace[#"position"])) {
             newpos = trace[#"position"];
             if (var_30336a7c && !sighttracepassed(self.origin, newpos, 0, self)) {
                 return false;
             }
             /#
-                record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (0, 0, 1));
+                record3dtext("<unknown string>", self.origin - (0, 0, 20), (0, 0, 1));
             #/
             /#
                 recordline(newpos, self.origin, (0, 0, 1), "<unknown string>");
@@ -941,7 +940,6 @@ function watch_for_timeout(var_9d52f0b7, max_duration) {
 function function_313aa1b8() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         self playsound(#"veh_wasp_wall_imp");
     }

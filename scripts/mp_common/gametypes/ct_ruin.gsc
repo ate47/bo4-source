@@ -325,7 +325,6 @@ function function_4b5c96a0() {
             e_model clientfield::set("enemyobj_keyline_render", 1);
             b_keyline = 1;
         }
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         e_attacker = s_notify.attacker;
         e_weapon = s_notify.weapon;

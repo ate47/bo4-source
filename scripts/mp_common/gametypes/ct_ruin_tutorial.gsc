@@ -390,7 +390,6 @@ function function_cc2f8b4() {
     level.var_9d2a5e6d = 0;
     while (true) {
         e_player = getplayers()[0];
-        waitresult = undefined;
         waitresult = e_player waittill(#"hash_7550ae00cd28adcb");
         level.var_9d2a5e6d = 1;
     }
@@ -1101,7 +1100,6 @@ function function_e340db61() {
         level.var_54c1ce00 = level.var_32ae304;
         level.var_32ae304 = undefined;
         level thread function_1c78b967();
-        result = undefined;
         result = level waittill(#"hash_6308f4ed0b129e5d", #"dodge_the_hellstorm_objective_success");
         level.var_32ae304 = level.var_54c1ce00;
         if (result._notify == "dodge_the_hellstorm_objective_success") {
@@ -1175,7 +1173,7 @@ function function_1c78b967() {
     }
     if (isalive(e_player)) {
         targetpos = e_player.origin;
-        startpos = targetpos + vectorscale((0, 0, 1), 1000);
+        startpos = targetpos + (0, 0, 1000);
         rocket = magicbullet(getweapon(#"remote_missile_missile"), startpos, targetpos);
         rocket.forceonemissile = 1;
         forceanglevector = vectornormalize(targetpos - startpos);
@@ -1185,8 +1183,8 @@ function function_1c78b967() {
         rocket thread remotemissile::function_9761dd1d();
         rocket playsound("wpn_remote_missile_launch_npc");
         killstreak_detect::killstreaktargetset(rocket);
-        magicbullet(getweapon(#"hash_33be4792feeabece"), rocket.origin, rocket.origin + anglestoforward(rocket.angles + vectorscale((1, 0, 0), 20)) * 1000, rocket.owner);
-        magicbullet(getweapon(#"hash_33be4792feeabece"), rocket.origin, rocket.origin + anglestoforward(rocket.angles - vectorscale((1, 0, 0), 20)) * 1000, rocket.owner);
+        magicbullet(getweapon(#"hash_33be4792feeabece"), rocket.origin, rocket.origin + anglestoforward(rocket.angles + (20, 0, 0)) * 1000, rocket.owner);
+        magicbullet(getweapon(#"hash_33be4792feeabece"), rocket.origin, rocket.origin + anglestoforward(rocket.angles - (20, 0, 0)) * 1000, rocket.owner);
         e_player waittilltimeout(1, #"death");
     }
     level thread ct_utils::function_79957328(undefined);
@@ -1276,7 +1274,6 @@ function earn_the_hellstorm_objective() {
         e_player ct_utils::function_80bf685b(e_player.momentum);
         level thread update_momentum();
         var_ab60380 = "killstreak_quantity_" + #"remote_missile";
-        result = undefined;
         result = e_player waittilltimeout(var_40b03ff, #"death", var_ab60380);
         level notify(#"hash_271b3e8ba24ae2e2");
         setbombtimer("A", 0);
@@ -1374,8 +1371,8 @@ function function_356af630() {
     drone = undefined;
     while (true) {
         otherteam = util::getotherteam(e_player.team);
-        newpos = getclosestpointonnavmesh(e_player.origin + vectorscale((-1, -1, 0), 600), 800, 60);
-        drone = spawnvehicle(#"archetype_mini_quadtank_ct", newpos + vectorscale((0, 0, 1), 20), (0, 0, 0), "talon", undefined, 1);
+        newpos = getclosestpointonnavmesh(e_player.origin + (-600, -600, 0), 800, 60);
+        drone = spawnvehicle(#"archetype_mini_quadtank_ct", newpos + (0, 0, 20), (0, 0, 0), "talon", undefined, 1);
         drone.vehicletype = #"archetype_mini_quadtank_ct";
         ai_tank::function_9b13ebf(drone);
         drone.controlled = 0;
@@ -1479,7 +1476,6 @@ function function_bbdd4fa9() {
         ct_vo::function_831e0584(array("vox_tvoi_tutor_ruin_final_3_active"), 0);
         level notify(#"stop_nag");
         e_player = getplayers()[0];
-        result = undefined;
         result = e_player waittill(#"stopped_using_remote");
         level.play_taacom_dialog = undefined;
         level.var_4b6a7a3a = 1;

@@ -8,21 +8,7 @@
 // Method(s) 6 Total 13
 class cplayer_insertion_choice : cluielem {
 
-    // Namespace cplayer_insertion_choice/player_insertion_choice
-    // Params 0, eflags: 0x8
-    // Checksum 0x416897f9, Offset: 0x1d8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cplayer_insertion_choice/player_insertion_choice
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x37b3756, Offset: 0x418
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cplayer_insertion_choice/player_insertion_choice
     // Params 2, eflags: 0x0
@@ -30,26 +16,22 @@ class cplayer_insertion_choice : cluielem {
     // Size: 0x13c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"groundvehicle" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"halojump" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
         if (#"heli" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cplayer_insertion_choice/player_insertion_choice

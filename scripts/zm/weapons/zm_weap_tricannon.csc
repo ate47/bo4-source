@@ -56,7 +56,6 @@ function function_af90fb8c(localclientnum, oldval, newval, bnewent, binitialsnap
     if (newval) {
         if (self zm_utility::function_f8796df3(localclientnum)) {
             while (isalive(self)) {
-                s_result = undefined;
                 s_result = self waittill(#"notetrack", #"death");
                 if (s_result.notetrack === "fire" || s_result.notetrack === "rechamber") {
                     playviewmodelfx(localclientnum, level._effect[#"hash_48c846b3b589b3f9"], "tag_flash2");

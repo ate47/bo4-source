@@ -74,12 +74,8 @@ function add_igc(scriptid, alias) {
 // Checksum 0x4a79cfe0, Offset: 0x278
 // Size: 0xda
 function init_character(chrname, var_bd68a08e, var_f4aa7514 = 0) {
-    /#
-        assert(isentity(self), "<unknown string>");
-    #/
-    /#
-        assert(isplayer(self) || isdefined(chrname), "<unknown string>");
-    #/
+    assert(isentity(self), "<unknown string>");
+    assert(isplayer(self) || isdefined(chrname), "<unknown string>");
     if (isdefined(self)) {
         self.var_3975c22 = chrname;
         self.var_bd68a08e = var_bd68a08e;
@@ -154,17 +150,13 @@ function play(scriptkey, var_17ee4803 = undefined, var_7f436309 = 0) {
     if (!isdefined(self) || issentient(self) && !isalive(self)) {
         return false;
     }
-    /#
-        assert(isdefined(self.var_556f910a), "<unknown string>");
-    #/
+    assert(isdefined(self.var_556f910a), "<unknown string>");
     if (isstring(scriptkey)) {
         scriptkey = tolower(scriptkey);
     }
     alias = undefined;
     if (var_7f436309) {
-        /#
-            assert(isdefined(self.var_46b25f4f) && self.var_46b25f4f, "<unknown string>");
-        #/
+        assert(isdefined(self.var_46b25f4f) && self.var_46b25f4f, "<unknown string>");
         a_aliases = self function_5f8e1b94(scriptkey);
         if (isdefined(self.var_6946d662)) {
             var_ae215d05 = a_aliases.size == 1 && a_aliases[0] == self.var_6946d662;

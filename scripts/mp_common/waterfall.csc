@@ -46,7 +46,6 @@ function setupwaterfallmist(localclientnum) {
     level endon("setupWaterfallmist_waterfall_csc" + localclientnum);
     trigger = self;
     for (;;) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         trigplayer = waitresult.activator;
         if (!trigplayer function_21c0fa55()) {
@@ -72,7 +71,6 @@ function setupwaterfall(localclientnum, localowner) {
     level endon(#"setupwaterfall_waterfall_csc" + string(localclientnum));
     trigger = self;
     for (;;) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         trigplayer = waitresult.activator;
         if (!trigplayer function_21c0fa55()) {

@@ -259,14 +259,12 @@ function function_56db9cdc() {
         level.var_7d8bf93f function_e3921120(1);
         level flag::clear(#"hash_78cf83ad057b4f1f");
         if (level flag::get(#"hash_4898001eb77cb16f")) {
-            s_notify = undefined;
             s_notify = level waittill(#"hash_39b6629ce957cce9");
         } else if (level.var_7d8bf93f == level.var_9d121dce) {
             level flag::set(#"hash_3028604821838259");
             level thread function_50779c1f();
             level.var_ab11c23d playsound(#"hash_6a8b750c09391a81");
             playsoundatposition(#"hash_1172b7ba38df5cd4", (-105, -3451, 607));
-            s_notify = undefined;
             s_notify = level waittilltimeout(120, #"hash_39b6629ce957cce9");
             if (level flag::get(#"hash_2923f30473421396")) {
                 level waittill(#"hash_355e5e0bbf3760db");
@@ -276,7 +274,6 @@ function function_56db9cdc() {
             }
             level notify(#"hash_7cbd2282015eb30a");
         } else {
-            s_notify = undefined;
             s_notify = level waittilltimeout(180, #"hash_39b6629ce957cce9");
             if (level.var_7d8bf93f flag::get("Pack_A_Punch_on")) {
                 level.var_7d8bf93f flag::wait_till("pap_waiting_for_user");
@@ -602,7 +599,6 @@ function function_451e442e() {
 // Size: 0x114
 function function_feee6e66() {
     self endon(#"death");
-    s_results = undefined;
     s_results = self waittill(#"trigger_activated");
     zm_ui_inventory::function_7df6bb60("zm_orange_pap_rock", 1);
     self playsound(#"hash_5c0903506e9a705a");
@@ -630,7 +626,6 @@ function function_f001370f() {
 function function_5535522e() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"pap_taken");
         s_result.e_player thread zm_orange_util::function_51b752a9("vox_golden_pap_weapon");
     }

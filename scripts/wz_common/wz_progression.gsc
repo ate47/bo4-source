@@ -122,9 +122,7 @@ function on_contract_complete(params) {
 // Size: 0x31a
 function give_xp(var_c14ca2e6, xpstat, amount) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     var_60a35182 = 0;
     if (isdefined(player.pers) && isdefined(player.pers[#"plevel"]) && player.pers[#"plevel"] == level.maxprestige) {
         var_60a35182 = 1;
@@ -174,9 +172,7 @@ function function_ec3a8858() {
 // Size: 0xc4
 function private function_f874ca5e(placement_player) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (!isplayer(player)) {
         return;
     }
@@ -190,9 +186,7 @@ function private function_f874ca5e(placement_player) {
 // Checksum 0x62df5ab, Offset: 0x1280
 // Size: 0x13a
 function player_connected() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     player.pers[#"jointime"] = gettime();
     player.pers[#"deathtime"] = 0;
@@ -209,17 +203,13 @@ function player_connected() {
 // Checksum 0x9651a89d, Offset: 0x13c8
 // Size: 0x352
 function function_2c8aac6() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     if (!player stats::function_f94325d3() || isbot(player) || !isdefined(player.pers)) {
         return;
     }
     if (isdefined(player.pers[#"hash_39220b202c67c56b"]) && player.pers[#"hash_39220b202c67c56b"]) {
-        /#
-            println("<unknown string>" + (isdefined(player.name) ? player.name : "<unknown string>") + "<unknown string>");
-        #/
+        println("<unknown string>" + (isdefined(player.name) ? player.name : "<unknown string>") + "<unknown string>");
         return;
     }
     var_87ecbce6 = getdvarfloat(#"hash_138e4c481ef6cfb1", 0);
@@ -232,9 +222,7 @@ function function_2c8aac6() {
     player contracts::function_78083139();
     player challenges::function_659f7dc(var_1ef5a3ba, var_87ecbce6, var_7f6396f0);
     player function_4835d26a();
-    /#
-        println("<unknown string>" + (isdefined(player.name) ? player.name : "<unknown string>") + "<unknown string>" + player.pers[#"placement_player"] + "<unknown string>" + "<unknown string>" + player.pers[#"placement_team"] + "<unknown string>" + "<unknown string>" + player.pers[#"kills"] + "<unknown string>" + "<unknown string>" + player.pers[#"meritprogression"] + "<unknown string>");
-    #/
+    println("<unknown string>" + (isdefined(player.name) ? player.name : "<unknown string>") + "<unknown string>" + player.pers[#"placement_player"] + "<unknown string>" + "<unknown string>" + player.pers[#"placement_team"] + "<unknown string>" + "<unknown string>" + player.pers[#"kills"] + "<unknown string>" + "<unknown string>" + player.pers[#"meritprogression"] + "<unknown string>");
     player.pers[#"hash_39220b202c67c56b"] = 1;
 }
 
@@ -270,9 +258,7 @@ function player_disconnected() {
 // Size: 0x64
 function private function_fb20ad56() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player stats::function_d40764f3(#"hash_6d5e162204f447f4", 1);
 }
 
@@ -282,9 +268,7 @@ function private function_fb20ad56() {
 // Size: 0x64
 function private function_d61fdbef() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player stats::function_d40764f3(#"hash_25f4611fc9d40aa8", 1);
 }
 
@@ -294,9 +278,7 @@ function private function_d61fdbef() {
 // Size: 0x64
 function private function_67949803() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player stats::function_d40764f3(#"hash_63307a0460c698ac", 1);
 }
 
@@ -349,9 +331,7 @@ function private function_51cae91b(placement) {
 // Size: 0x64
 function private function_a0fea1a9() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player stats::function_d40764f3(#"hash_6429d1fccdef2c9", 1);
 }
 
@@ -361,9 +341,7 @@ function private function_a0fea1a9() {
 // Size: 0xec
 function private function_3217b0d2() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player stats::function_d40764f3(#"hash_7b8d2c77874a1c24", 1);
     if (player function_ec3a8858()) {
         player stats::function_d40764f3(#"hash_337e05385393e3a6", 1);
@@ -379,9 +357,7 @@ function private function_3217b0d2() {
 // Size: 0xfc
 function private function_6a7970fe() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player stats::function_d40764f3(#"hash_5e9a745460a10f80", 1);
     if (isdefined(player.avenger) && player.avenger) {
         player stats::function_d40764f3(#"hash_5387d5e6f15c6b55", 1);
@@ -397,18 +373,14 @@ function private function_6a7970fe() {
 // Size: 0x2b0
 function team_eliminated(team, team_placement) {
     if (!isdefined(team)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     a_players = getplayers(team);
     if (isdefined(level.var_29ab88df)) {
         level [[ level.var_29ab88df ]](a_players, team_placement);
     }
-    /#
-        println("<unknown string>" + (isdefined(team) ? team : "<unknown string>") + "<unknown string>" + team_placement + "<unknown string>");
-    #/
+    println("<unknown string>" + (isdefined(team) ? team : "<unknown string>") + "<unknown string>" + team_placement + "<unknown string>");
     foreach (player in a_players) {
         if (!isdefined(player.pers) || isdefined(player.pers[#"hash_2283e9384383a6e9"]) && player.pers[#"hash_2283e9384383a6e9"]) {
             continue;
@@ -436,9 +408,7 @@ function team_eliminated(team, team_placement) {
 // Checksum 0x29961453, Offset: 0x2288
 // Size: 0x5e0
 function function_5648f82(team) {
-    /#
-        println("<unknown string>" + (isdefined(team) ? team : "<unknown string>"));
-    #/
+    println("<unknown string>" + (isdefined(team) ? team : "<unknown string>"));
     if (isdefined(team)) {
         foreach (player in getplayers(team)) {
             if (!player stats::function_f94325d3()) {
@@ -736,9 +706,7 @@ function private function_a117c988() {
 // Size: 0x144
 function private on_player_killed(params) {
     victim = self;
-    /#
-        assert(isplayer(victim));
-    #/
+    assert(isplayer(victim));
     if (isdefined(victim)) {
         victim.pers[#"deathtime"] = gettime();
         player_counts = warzone::function_de15dc32(victim);
@@ -1126,9 +1094,7 @@ function function_14dae612() {
 // Size: 0x1dc
 function on_challenge_complete(params) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (!isplayer(player) || !isdefined(player.pers)) {
         return;
     }
@@ -1229,12 +1195,12 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
     if (dist < 3550) {
         return;
     }
-    targetangles = dynent.angles + vectorscale((0, 1, 0), 90);
+    targetangles = dynent.angles + (0, 90, 0);
     var_2bbc9717 = anglestoforward(targetangles);
     if (vectordot(var_2bbc9717, direction) >= 0) {
         return;
     }
-    var_f748425e = dynent.origin + vectorscale((0, 0, 1), 45);
+    var_f748425e = dynent.origin + (0, 0, 45);
     if (distance2dsquared(var_f748425e, position) > 5 * 5) {
         return;
     }
@@ -1248,7 +1214,7 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
 function function_f6dc1aa9() {
     /#
         while (true) {
-            var_f748425e = self.origin + vectorscale((0, 0, 1), 45);
+            var_f748425e = self.origin + (0, 0, 45);
             sphere(var_f748425e, 5, (1, 1, 0));
             waitframe(1);
         }

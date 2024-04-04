@@ -18,7 +18,7 @@ function private function_2c4d3d40() {
     var_3a1737b4 = getscriptbundles(#"itemspawnentry");
     var_cce250bc = function_d634ed59();
     index = 0;
-    offsetorigin = vectorscale((0, 0, -1), 64000);
+    offsetorigin = (0, 0, -64000);
     foreach (var_1461de43, var_28f8f6a9 in var_3a1737b4) {
         if (isdefined(level.var_de3d5d56)) {
             level.var_de3d5d56[var_1461de43] = var_28f8f6a9;
@@ -39,12 +39,8 @@ function private function_2c4d3d40() {
 // Checksum 0xae2d5339, Offset: 0x298
 // Size: 0x326
 function private function_440f0490(itemlistbundle) {
-    /#
-        assert(isdefined(itemlistbundle) && itemlistbundle.type === "<unknown string>");
-    #/
-    /#
-        assert(itemlistbundle.itemlist.size > 0, "<unknown string>" + itemlistbundle.name + "<unknown string>");
-    #/
+    assert(isdefined(itemlistbundle) && itemlistbundle.type === "<unknown string>");
+    assert(itemlistbundle.itemlist.size > 0, "<unknown string>" + itemlistbundle.name + "<unknown string>");
     if (itemlistbundle.itemlist.size <= 0) {
         return;
     }
@@ -67,9 +63,7 @@ function private function_440f0490(itemlistbundle) {
         currentweight = currentweight + weights[weightindex];
         if (var_d54615ef <= currentweight) {
             itemlistbundle = getscriptbundle(itemlistbundle.itemlist[weightindex].itementry);
-            /#
-                assert(itemlistbundle.type === "<unknown string>");
-            #/
+            assert(itemlistbundle.type === "<unknown string>");
             break;
         }
     }
@@ -90,16 +84,14 @@ function private function_6a5c090c() {
 // Size: 0x21a
 function function_9e9f43cd() {
     if (!level flagsys::get(#"hash_67b445a4b1d59922") && !level flagsys::get(#"hash_11c9cde7b522c5a9")) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     foreach (targetname, points in level.var_1d777960) {
         for (index = 0; index < points.size; index++) {
             origin = points[index].origin;
             angles = points[index].angles;
-            ground_pos = physicstraceex(origin + vectorscale((0, 0, 1), 24), origin - vectorscale((0, 0, 1), 96), (0, 0, 0), (0, 0, 0), undefined, 32);
+            ground_pos = physicstraceex(origin + (0, 0, 24), origin - (0, 0, 96), (0, 0, 0), (0, 0, 0), undefined, 32);
             position = ground_pos[#"position"];
             function_53a81463(position, angles, targetname, #"");
         }
@@ -116,14 +108,10 @@ function function_9e9f43cd() {
 // Size: 0x1e8
 function function_e88ecf7f() {
     if (!level flagsys::get(#"hash_67b445a4b1d59922") && !level flagsys::get(#"hash_11c9cde7b522c5a9")) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
-    /#
-        assert(level.var_bf9b06d3.size == level.var_8d50adaa.size);
-    #/
+    assert(level.var_bf9b06d3.size == level.var_8d50adaa.size);
     for (index = 0; index < level.var_bf9b06d3.size; index++) {
         points = function_abaeb170(level.var_bf9b06d3[index], undefined, undefined, level.var_8d50adaa[index], undefined, 0);
         for (pointindex = 0; pointindex < points.size; pointindex++) {
@@ -225,7 +213,7 @@ function private _spawn_item(point, row, stashitem = 0) {
                 forward = anglestoforward(angles) * level.var_69dda516[0];
                 offset = rotatepoint(forward, (0, level.var_cc113617[0], 0));
                 origin = origin + offset;
-                ground_pos = physicstraceex(origin + vectorscale((0, 0, 1), 24), origin - vectorscale((0, 0, 1), 96), (0, 0, 0), (0, 0, 0), undefined, 32);
+                ground_pos = physicstraceex(origin + (0, 0, 24), origin - (0, 0, 96), (0, 0, 0), (0, 0, 0), undefined, 32);
                 origin = ground_pos[#"position"];
                 normal = ground_pos[#"normal"];
                 angles = function_c1fa62a2(angles, normal);
@@ -287,16 +275,14 @@ function private function_f0e5262b(item_name, point, childindex, stashitem = 0, 
     angles = (0, 0, 0);
     origin = point.origin;
     if (!stashitem) {
-        /#
-            assert(childindex > 0 && childindex <= 5);
-        #/
+        assert(childindex > 0 && childindex <= 5);
         parentangles = (0, point.angles[1], 0);
         degree = level.var_cc113617[childindex];
         distance = level.var_69dda516[childindex];
         offset = (cos(degree) * distance, sin(degree) * distance, 0);
         offset = rotatepoint(offset, parentangles);
         origin = origin + offset;
-        ground_pos = physicstraceex(origin + vectorscale((0, 0, 1), 24), origin - vectorscale((0, 0, 1), 96), (0, 0, 0), (0, 0, 0), undefined, 32);
+        ground_pos = physicstraceex(origin + (0, 0, 24), origin - (0, 0, 96), (0, 0, 0), (0, 0, 0), undefined, 32);
         var_f05b52fe = (isdefined(itementry.positionoffsetx) ? itementry.positionoffsetx : 0, isdefined(itementry.positionoffsety) ? itementry.positionoffsety : 0, isdefined(itementry.positionoffsetz) ? itementry.positionoffsetz : 0);
         origin = ground_pos[#"position"] + var_f05b52fe;
         normal = ground_pos[#"normal"];
@@ -360,9 +346,7 @@ function private function_ea39d1fa(stash) {
             }
             var_1dd9b7f1 = getscriptbundle(var_ee110db8.replacement);
             if (var_1dd9b7f1.type !== #"itemspawnlist") {
-                /#
-                    assert(0, "<unknown string>" + var_ee110db8);
-                #/
+                assert(0, "<unknown string>" + var_ee110db8);
                 continue;
             }
             var_eff83f3 = var_1dd9b7f1;
@@ -553,12 +537,8 @@ function private _setup() {
     if (isdefined(self.itemlistbundle) && isdefined(level.var_fb9a8536[self.itemlistbundle.name])) {
         self.itemlistbundle = getscriptbundle(level.var_fb9a8536[self.itemlistbundle.name]);
     }
-    /#
-        assert(isdefined(self.itemlistbundle), "<unknown string>" + self.scriptbundlename + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(self.itemlistbundle.itemlist), "<unknown string>" + self.scriptbundlename + "<unknown string>");
-    #/
+    assert(isdefined(self.itemlistbundle), "<unknown string>" + self.scriptbundlename + "<unknown string>");
+    assert(isdefined(self.itemlistbundle.itemlist), "<unknown string>" + self.scriptbundlename + "<unknown string>");
     self.remaining = isdefined(self.count) ? self.count : 0;
     self.points = function_d0dc448b(self.target);
     self.var_8107154f = [];
@@ -566,9 +546,7 @@ function private _setup() {
         self.var_8107154f[pointid] = pointid;
     }
     if (!isdefined(level.var_28cd0b1f[self.target])) {
-        /#
-            assert(isdefined(self.points) && self.points.size > 0, "<unknown string>" + self.itemlistbundle.name + "<unknown string>" + self.target);
-        #/
+        assert(isdefined(self.points) && self.points.size > 0, "<unknown string>" + self.itemlistbundle.name + "<unknown string>" + self.target);
     }
     if (!isdefined(self.points)) {
         self.points = [];
@@ -613,12 +591,8 @@ function function_3095d12a() {
 // Checksum 0x2d915cda, Offset: 0x2ac0
 // Size: 0xa4
 function private function_9db93def() {
-    /#
-        assert(isdefined(self.target) && self.target != "<unknown string>", "<unknown string>" + self.origin + "<unknown string>");
-    #/
-    /#
-        assert(self.target !== self.targetname, "<unknown string>" + self.origin + "<unknown string>" + self.target + "<unknown string>");
-    #/
+    assert(isdefined(self.target) && self.target != "<unknown string>", "<unknown string>" + self.origin + "<unknown string>");
+    assert(self.target !== self.targetname, "<unknown string>" + self.origin + "<unknown string>" + self.target + "<unknown string>");
 }
 
 // Namespace namespace_65181344/namespace_65181344
@@ -635,9 +609,7 @@ function private function_6b9be08d() {
 // Size: 0x12fc
 function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &var_a1b91de4 = undefined) {
     if (!isstruct(self)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     /#
@@ -645,24 +617,12 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
             level.var_2e96a450[self.target] = self.points.size;
         }
     #/
-    /#
-        assert(isstruct(self));
-    #/
-    /#
-        assert(isarray(var_8107154f));
-    #/
-    /#
-        assert(isint(spawncount));
-    #/
-    /#
-        assert(isdefined(self.itemlistbundle));
-    #/
-    /#
-        assert(!(isdefined(self.vehiclespawner) && self.vehiclespawner));
-    #/
-    /#
-        assert(!(isdefined(self.supplystash) && self.supplystash));
-    #/
+    assert(isstruct(self));
+    assert(isarray(var_8107154f));
+    assert(isint(spawncount));
+    assert(isdefined(self.itemlistbundle));
+    assert(!(isdefined(self.vehiclespawner) && self.vehiclespawner));
+    assert(!(isdefined(self.supplystash) && self.supplystash));
     if (spawncount <= 0) {
         return;
     }
@@ -736,9 +696,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
     }
     arrayremovevalue(self.var_202d2992, 0, 1);
     arrayremovevalue(self.var_3ddde668, 0, 1);
-    /#
-        assert(self.var_43feff59 <= var_399d601b);
-    #/
+    assert(self.var_43feff59 <= var_399d601b);
     var_c499a7fa = getarraykeys(self.var_3ddde668);
     if (self.var_5d3a106 > 0) {
         for (pointindex = self.var_43feff59; pointindex < spawncount && self.var_5d3a106 > 0; pointindex++) {
@@ -764,9 +722,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
         waitframe(1);
         level.var_d0676b07 = getrealtime();
     }
-    /#
-        assert(self.var_43feff59 <= var_399d601b);
-    #/
+    assert(self.var_43feff59 <= var_399d601b);
     if (!isdefined(var_a1b91de4)) {
         var_a1b91de4 = getarraykeys(var_8107154f);
         for (index = 0; index < var_8107154f.size; index++) {
@@ -792,9 +748,7 @@ function private function_e25c9d12(&var_8107154f, spawncount, stashitem = 0, &va
         }
         var_75aa5cbb = arraykeys[var_f5111345];
         if (pointindex >= var_8107154f.size) {
-            /#
-                assert(var_a9826383 === 0);
-            #/
+            assert(var_a9826383 === 0);
             var_a9826383 = 1;
             pointindex = 0;
         }
@@ -1009,9 +963,7 @@ function reset_items() {
 // Checksum 0x71479441, Offset: 0x4890
 // Size: 0x3ee
 function function_50a2c746(&var_f38d5b52, reset = 1, var_87e9f374 = 0) {
-    /#
-        assert(isarray(var_f38d5b52));
-    #/
+    assert(isarray(var_f38d5b52));
     /#
         if (var_87e9f374) {
         }
@@ -1158,22 +1110,16 @@ function setup_groups(reset = 1) {
 // Size: 0x442
 function function_5eada592(scriptbundlename, linkto = 1) {
     if (!isdefined(self)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     if (!isdefined(scriptbundlename)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     self.itemlistbundle = getscriptbundle(scriptbundlename);
     if (!isdefined(self.itemlistbundle)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     items = [];
@@ -1230,21 +1176,15 @@ function function_5eada592(scriptbundlename, linkto = 1) {
 // Size: 0x1ea
 function function_fd87c780(scriptbundlename, itemcount) {
     if (!isdefined(self)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     if (!isdefined(scriptbundlename)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     if (!isint(itemcount) || itemcount <= 0) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     itemgroup = spawnstruct();

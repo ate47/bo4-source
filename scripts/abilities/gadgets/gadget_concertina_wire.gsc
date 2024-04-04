@@ -190,9 +190,7 @@ function function_e5fdca70(origin, angles, player) {
 // Checksum 0xd37c03e1, Offset: 0xdb0
 // Size: 0x428
 function function_6fe5a945(player) {
-    /#
-        assert(isdefined(level.var_87226c31.bundle.var_63aab046));
-    #/
+    assert(isdefined(level.var_87226c31.bundle.var_63aab046));
     if (!isdefined(player) || !isdefined(player.concertinawire)) {
         return 0;
     }
@@ -248,8 +246,8 @@ function function_6fe5a945(player) {
 function function_5ea6e77d(point, upangles) {
     var_2fa728ff = point + upangles * -10;
     var_71fcd06b = point + upangles * 10;
-    mins = vectorscale((-1, -1, -1), 10);
-    maxs = vectorscale((1, 1, 1), 10);
+    mins = (-10, -10, -10);
+    maxs = (10, 10, 10);
     var_e07c7e8 = physicstrace(var_71fcd06b, var_2fa728ff, mins, maxs, self, 1);
     return var_e07c7e8[#"fraction"] < 1;
 }
@@ -402,7 +400,7 @@ function function_8d89605(var_637dcf3d, traceresults) {
         }
         var_637dcf3d setanimtime(level.var_87226c31.bundle.deployanim, var_3dd315d6);
     }
-    var_637dcf3d.trigger = spawn("trigger_box_new", var_637dcf3d.origin + vectorscale((0, 0, 1), 30), getvehicletriggerflags() | getaitriggerflags(), 20, int(var_16482870 * traceresults.width * 0.8), 60);
+    var_637dcf3d.trigger = spawn("trigger_box_new", var_637dcf3d.origin + (0, 0, 30), getvehicletriggerflags() | getaitriggerflags(), 20, int(var_16482870 * traceresults.width * 0.8), 60);
     var_637dcf3d.trigger.angles = var_637dcf3d.angles;
     thread function_f067d867(var_637dcf3d);
 }
@@ -431,12 +429,8 @@ function function_fc4df41e(watcher, owner) {
     }
     self thread function_d82c03d4(player);
     var_637dcf3d clientfield::set("concertinaWire_placed", 1);
-    /#
-        assert(isdefined(level.var_87226c31), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level.var_87226c31.bundle), "<unknown string>");
-    #/
+    assert(isdefined(level.var_87226c31), "<unknown string>");
+    assert(isdefined(level.var_87226c31.bundle), "<unknown string>");
     var_637dcf3d influencers::create_entity_enemy_influencer("grenade", owner.team);
     var_637dcf3d util::make_sentient();
     if (isdefined(level.var_87226c31.bundle.deployanim)) {
@@ -473,7 +467,6 @@ function function_dd007be2() {
     level endon(#"game_ended");
     self.owner endon(#"disconnect", #"joined_team", #"changed_specialist");
     self endon(#"hash_c72d58e3d4735b");
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (!isdefined(self)) {
         return;
@@ -489,7 +482,6 @@ function ondamage() {
     self endon(#"death");
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (isdefined(waitresult.attacker) && isplayer(waitresult.attacker) && getdvarint(#"survival_prototype", 0) == 0) {
             if (waitresult.amount > 0 && damagefeedback::dodamagefeedback(waitresult.weapon, waitresult.attacker)) {
@@ -639,9 +631,7 @@ function function_dac69ad1(player, concertinawire) {
             return;
         }
         params = getstatuseffect(level.var_87226c31.bundle.var_1a6488fe);
-        /#
-            assert(isdefined(params), "<unknown string>");
-        #/
+        assert(isdefined(params), "<unknown string>");
         duration = params.var_77449e9;
         player.var_fee1c0df = gettime() + duration;
         if (var_1c365dd) {
@@ -691,7 +681,6 @@ function function_f067d867(concertinawire) {
     level endon(#"game_ended");
     concertinawire endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = concertinawire.trigger waittill(#"trigger");
         player = waitresult.activator;
         if (!isplayer(player)) {
@@ -807,18 +796,14 @@ function private function_2dd4aa9d(player) {
     }
     if (!isdefined(player.var_673f6995) || player.var_673f6995 < gettime()) {
         params = getstatuseffect(level.var_87226c31.bundle.var_f6fdbda7);
-        /#
-            assert(isdefined(params), "<unknown string>");
-        #/
+        assert(isdefined(params), "<unknown string>");
         duration = params.var_77449e9;
         player.var_673f6995 = gettime() + duration;
         player.var_fc55d553 = 0;
     }
     if (!isdefined(player.var_13d8a85d) || player.var_13d8a85d < gettime()) {
         params = getstatuseffect(level.var_87226c31.bundle.var_f6fdbda7);
-        /#
-            assert(isdefined(params), "<unknown string>");
-        #/
+        assert(isdefined(params), "<unknown string>");
         player status_effect::status_effect_apply(params, level.var_87226c31.var_3e7344ee, concertinawire.owner, 1, undefined, undefined, player.origin);
         endtime = player status_effect::function_2ba2756c(params.var_18d16a6b);
         player.var_13d8a85d = endtime - 75;
@@ -970,7 +955,6 @@ function function_18dd6b22(concertinawire) {
     level endon(#"game_ended");
     concertinawire endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = concertinawire waittill(#"broken");
         if (waitresult.type == "base_piece_broken") {
             concertinawire function_4ee7d46a(0);

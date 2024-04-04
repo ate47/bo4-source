@@ -92,7 +92,6 @@ function function_f820b73(weapon, var_e7c11b0c = 1) {
 function private function_c3f6fd96() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -169,8 +168,8 @@ function private function_70dbf9d1(player) {
     v_forward = player getweaponforwarddir();
     v_end = v_start + v_forward * 32;
     s_trace = groundtrace(v_start, v_end, 0, player);
-    v_start = s_trace[#"position"] + vectorscale((0, 0, 1), 5);
-    v_end = v_start + vectorscale((0, 0, -1), 200);
+    v_start = s_trace[#"position"] + (0, 0, 5);
+    v_end = v_start + (0, 0, -200);
     s_trace = groundtrace(v_start, v_end, 0, player);
     n_offset = v_end[2] + 96;
     v_drop = zm_utility::function_b0eeaada(s_trace[#"position"]);
@@ -183,7 +182,7 @@ function private function_70dbf9d1(player) {
         player.e_storm = util::spawn_model("tag_origin", player.origin);
         util::wait_network_frame();
     }
-    player.e_storm.origin = v_drop[#"point"] + vectorscale((0, 0, 1), 20);
+    player.e_storm.origin = v_drop[#"point"] + (0, 0, 20);
     player thread storm_think();
 }
 
@@ -477,9 +476,7 @@ function function_fd8e3604() {
 function storm_check(player) {
     player endon(#"disconnect", #"bled_out", #"death", #"storm_think");
     player.e_storm endon(#"death");
-    /#
-        assert(isdefined(player));
-    #/
+    assert(isdefined(player));
     var_359c1a94 = 10000;
     var_75ccefac = player.e_storm.origin;
     if (!isalive(self) || isdefined(self.takedamage) && !self.takedamage) {
@@ -618,7 +615,7 @@ function staff_lightning_arc_fx(e_source, ai_zombie) {
     if (!isdefined(ai_zombie)) {
         return;
     }
-    if (!bullet_trace_throttled(e_source.origin, ai_zombie.origin + vectorscale((0, 0, 1), 20), ai_zombie)) {
+    if (!bullet_trace_throttled(e_source.origin, ai_zombie.origin + (0, 0, 20), ai_zombie)) {
         return;
     }
     if (isdefined(e_source) && isdefined(ai_zombie) && isalive(ai_zombie)) {
@@ -864,7 +861,6 @@ function hammer_rumble(n_index) {
 // Size: 0xac
 function function_478a4910(w_hammer) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee_power_left");
     if (s_result.weapon == w_hammer) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_2", #"hammer");
@@ -877,7 +873,6 @@ function function_478a4910(w_hammer) {
 // Size: 0xac
 function function_68ff89f7(w_hammer) {
     self endon(#"weapon_change", #"disconnect", #"bled_out");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee");
     if (s_result.weapon === w_hammer) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"hammer");

@@ -301,9 +301,7 @@ function closemenus() {
 // Checksum 0xa658585d, Offset: 0xec0
 // Size: 0x144
 function beginclasschoice(forcenewchoice) {
-    /#
-        assert(isdefined(level.teams[self.pers[#"team"]]));
-    #/
+    assert(isdefined(level.teams[self.pers[#"team"]]));
     team = self.pers[#"team"];
     if (level.disablecac == 1) {
         self.pers[#"class"] = level.defaultclass;
@@ -322,9 +320,7 @@ function beginclasschoice(forcenewchoice) {
 // Checksum 0x6cb26a6f, Offset: 0x1010
 // Size: 0x9c
 function showmainmenuforteam() {
-    /#
-        assert(isdefined(level.teams[self.pers[#"team"]]));
-    #/
+    assert(isdefined(level.teams[self.pers[#"team"]]));
     team = self.pers[#"team"];
     self openmenu(game.menu["menu_changeclass_" + level.teams[team]]);
 }

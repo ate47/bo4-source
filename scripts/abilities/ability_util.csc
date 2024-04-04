@@ -209,7 +209,7 @@ function private do_aoe_fx(local_client_num, center, yaw_count, pitch, clientfie
         } else {
             /#
                 if (debug_aoe_traces) {
-                    line(fx_position + vectorscale((0, 0, 1), 50), fx_position - vectorscale((0, 0, 1), 50), (1, 0, 0), 1, 0, 300);
+                    line(fx_position + (0, 0, 50), fx_position - (0, 0, 50), (1, 0, 0), 1, 0, 300);
                     sphere(fx_position, sphere_size, (1, 0, 1), 1, 1, 8, 300);
                 }
             #/

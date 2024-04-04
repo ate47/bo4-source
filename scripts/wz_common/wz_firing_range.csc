@@ -36,9 +36,7 @@ function private init_target() {
         totalms = totalms + struct.script_int;
         struct = struct::get(struct.target, "targetname");
     } while (struct != var_dc0e8c88);
-    /#
-        assert(structs.size == 2);
-    #/
+    assert(structs.size == 2);
     self.structs = structs;
     self.totalms = totalms;
     return true;

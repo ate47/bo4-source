@@ -11,29 +11,15 @@
 // Method(s) 3 Total 3
 class ccontainer {
 
-    // Namespace ccontainer/containers_shared
-    // Params 0, eflags: 0x8
-    // Checksum 0x80f724d1, Offset: 0x180
-    // Size: 0x4
-    __constructor() {
-        
-    }
-
-    // Namespace ccontainer/containers_shared
-    // Params 0, eflags: 0x10
-    // Checksum 0x80f724d1, Offset: 0x190
-    // Size: 0x4
-    __destructor() {
-        
-    }
+    var m_e_container;
 
     // Namespace ccontainer/containers_shared
     // Params 3, eflags: 0x0
     // Checksum 0x44ecfc2, Offset: 0x1a0
     // Size: 0x5a
     function init_xmodel(str_xmodel = "script_origin", v_origin, v_angles) {
-        self.m_e_container = util::spawn_model(str_xmodel, v_origin, v_angles);
-        return self.m_e_container;
+        m_e_container = util::spawn_model(str_xmodel, v_origin, v_angles);
+        return m_e_container;
     }
 
 }
@@ -129,7 +115,6 @@ function setup_general_container_bundle(str_targetname, str_intel_vo, str_narrat
     level flag::wait_till("all_players_spawned");
     e_trigger = create_locker_trigger(s_struct.origin, 64, "Press [{+activate}] to open");
     if (!isdefined(force_open) || force_open == 0) {
-        waitresult = undefined;
         waitresult = e_trigger waittill(#"trigger");
         e_who = waitresult.activator;
     } else {
@@ -144,7 +129,7 @@ function setup_general_container_bundle(str_targetname, str_intel_vo, str_narrat
         }
     }
     if (isdefined(str_narrative_collectable_model)) {
-        v_pos = s_struct.origin + vectorscale((0, 0, 1), 30);
+        v_pos = s_struct.origin + (0, 0, 30);
         if (!isdefined(s_struct.angles)) {
             v_angles = (0, 0, 0);
         } else {
@@ -156,7 +141,6 @@ function setup_general_container_bundle(str_targetname, str_intel_vo, str_narrat
         e_collectable.angles = v_angles;
         wait(1);
         e_trigger = create_locker_trigger(s_struct.origin, 64, "Press [{+activate}] to pickup collectable");
-        waitresult = undefined;
         waitresult = e_trigger waittill(#"trigger");
         e_who = waitresult.activator;
         e_trigger delete();

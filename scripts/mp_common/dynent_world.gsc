@@ -70,7 +70,7 @@ function private on_player_killed() {
 // Checksum 0x954cbf42, Offset: 0x348
 // Size: 0x190
 function private create_use_trigger() {
-    usetrigger = spawn("trigger_radius_use", vectorscale((0, 0, -1), 10000), 0, 128, 64, 1);
+    usetrigger = spawn("trigger_radius_use", (0, 0, -10000), 0, 128, 64, 1);
     usetrigger triggerignoreteam();
     usetrigger setinvisibletoall();
     usetrigger setvisibletoplayer(self);

@@ -51,7 +51,6 @@ function init_serverfaceanim() {
 // Size: 0xe0
 function wait_for_face_event() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"face");
         face_notify = waitresult.face_notify;
         ent = waitresult.entity;

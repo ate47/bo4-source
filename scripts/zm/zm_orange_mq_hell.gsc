@@ -263,9 +263,9 @@ function spawn_guide() {
     }
     var_a41818b5.origin = level.var_5d5b7e8e.nd_start.origin;
     var_a41818b5.angles = level.var_5d5b7e8e.nd_start.angles;
-    var_a41818b5.mdl_lantern = util::spawn_model("p8_zm_ora_elemental_vessel", var_a41818b5.origin + vectorscale((0, 0, -1), 10));
+    var_a41818b5.mdl_lantern = util::spawn_model("p8_zm_ora_elemental_vessel", var_a41818b5.origin + (0, 0, -10));
     var_a41818b5.mdl_lantern linkto(var_a41818b5);
-    var_a41818b5.mdl_lantern thread rotate_forever(vectorscale((0, 1, 0), 45));
+    var_a41818b5.mdl_lantern thread rotate_forever((0, 45, 0));
     var_a41818b5.mdl_lantern clientfield::set("" + #"lantern_outline", 1);
     var_a41818b5 val::set(#"mq_hell", "takedamage", 0);
     var_a41818b5 clientfield::set("" + #"lantern_fx", 1);
@@ -539,9 +539,9 @@ function function_5e3a92e() {
             s_drop = struct::get(self.target);
             v_drop = s_drop.origin;
         }
-        v_ground = groundtrace(v_drop + vectorscale((1, 0, 0), 32) + vectorscale((0, 0, 1), 8), v_drop + vectorscale((1, 0, 0), 32) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+        v_ground = groundtrace(v_drop + (32, 0, 0) + (0, 0, 8), v_drop + (32, 0, 0) + (0, 0, -100000), 0, self)[#"position"];
         level thread zm_powerups::specific_powerup_drop("full_ammo", v_ground, undefined, undefined, undefined, undefined, undefined, undefined, undefined, 1);
-        v_ground = groundtrace(v_drop - vectorscale((1, 0, 0), 32) + vectorscale((0, 0, 1), 8), v_drop - vectorscale((1, 0, 0), 32) + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+        v_ground = groundtrace(v_drop - (32, 0, 0) + (0, 0, 8), v_drop - (32, 0, 0) + (0, 0, -100000), 0, self)[#"position"];
         level thread zm_powerups::specific_powerup_drop("carpenter", v_ground, undefined, undefined, undefined, undefined, undefined, undefined, undefined, 1);
     }
     function_cb00d0e9();
@@ -723,7 +723,7 @@ function lava_rock_init() {
     self.var_3a161b40 = self.origin;
     self.var_dfcc5d82 = spawn("trigger_radius_new", self.origin, 0, 384);
     self.var_dfcc5d82.e_rock = self;
-    self.origin = self.origin - vectorscale((0, 0, 1), 100);
+    self.origin = self.origin - (0, 0, 100);
     self.var_dfcc5d82 triggerenable(0);
 }
 
@@ -732,7 +732,7 @@ function lava_rock_init() {
 // Checksum 0x24724d21, Offset: 0x3308
 // Size: 0x5c
 function function_a8fd16d0() {
-    self.origin = self.var_3a161b40 - vectorscale((0, 0, 1), 16);
+    self.origin = self.var_3a161b40 - (0, 0, 16);
     self.var_dfcc5d82 thread function_8a1356b6();
     self.var_dfcc5d82 triggerenable(1);
 }

@@ -17,15 +17,9 @@ function deleteatlimit() {
 // Checksum 0xd7e94a10, Offset: 0x240
 // Size: 0x1be
 function lookatposition(looktargetpos, lookduration, lookspeed, eyesonly, interruptothers) {
-    /#
-        assert(isai(self), "<unknown string>");
-    #/
-    /#
-        assert(self.a.targetlookinitilized == 1, "<unknown string>");
-    #/
-    /#
-        assert(lookspeed == "<unknown string>" || lookspeed == "<unknown string>", "<unknown string>");
-    #/
+    assert(isai(self), "<unknown string>");
+    assert(self.a.targetlookinitilized == 1, "<unknown string>");
+    assert(lookspeed == "<unknown string>" || lookspeed == "<unknown string>", "<unknown string>");
     if (!isdefined(interruptothers) || interruptothers == "interrupt others" || gettime() > self.a.lookendtime) {
         self.a.looktargetpos = looktargetpos;
         self.a.lookendtime = gettime() + lookduration * 1000;
@@ -349,7 +343,6 @@ function handlenotetrack(note, flagname, customfunction, var1) {
 // Size: 0xa0
 function donotetracks(flagname, customfunction, var1) {
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(flagname);
         note = waitresult.notetrack;
         if (!isdefined(note)) {
@@ -379,9 +372,7 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
             returnednote = [[ notetracksfunc ]](flagname, customfunction, var1);
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
-                /#
-                    println(gettime() + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
-                #/
+                println(gettime() + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
                 wait(0.05 - timetaken);
             }
         }
@@ -470,7 +461,7 @@ function playfootstepeffect(foot, groundtype) {
             continue;
         }
         org = self gettagorigin(foot);
-        playfx(level._effect["step_" + anim.optionalstepeffects[i]], org, org + vectorscale((0, 0, 1), 100));
+        playfx(level._effect["step_" + anim.optionalstepeffects[i]], org, org + (0, 0, 100));
         return;
     }
 }
@@ -482,9 +473,7 @@ function playfootstepeffect(foot, groundtype) {
 function movetooriginovertime(origin, time) {
     self endon(#"killanimscript");
     if (distancesquared(self.origin, origin) > 256 && !self maymovetopoint(origin)) {
-        /#
-            println("<unknown string>" + origin + "<unknown string>");
-        #/
+        println("<unknown string>" + origin + "<unknown string>");
         return;
     }
     self.keepclaimednodeingoal = 1;

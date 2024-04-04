@@ -71,7 +71,7 @@ function register_clientfields() {
 // Size: 0x64
 function gravity_slam_down(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
-        self launchragdoll(vectorscale((0, 0, -1), 200));
+        self launchragdoll((0, 0, -200));
     }
 }
 

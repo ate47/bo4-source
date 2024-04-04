@@ -26,9 +26,7 @@ function autoexec __init__system__() {
 // Size: 0x104
 function __init__() {
     spawner::add_archetype_spawn_function(#"civilian", &function_e5ba4473);
-    /#
-        assert(isscriptfunctionptr(&function_b4b7cd20));
-    #/
+    assert(isscriptfunctionptr(&function_b4b7cd20));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"ispablo", &function_b4b7cd20);
     /#
         zm_devgui::function_c7dd7a17("<unknown string>");
@@ -134,7 +132,7 @@ function private function_dca53f1f(player_index) {
     var_9a149315 = (0, 0, 0);
     if (isdefined(level.var_8a8728c6)) {
         samantha = level.var_8a8728c6[0];
-        var_b8e7e5da = (-100, -12.5, 0) + vectorscale((-1, 0, 0), 5) * player_index;
+        var_b8e7e5da = (-100, -12.5, 0) + (-5, 0, 0) * player_index;
         var_9a149315 = samantha.origin + rotatepointaroundaxis(var_b8e7e5da, (0, 0, 1), samantha.angles[1]);
     }
     return var_9a149315;
@@ -152,9 +150,7 @@ function function_303ab700() {
             if (isdefined(player)) {
                 var_16a2c824 = player function_dca53f1f(player_index);
                 samantha = level.var_8a8728c6[0];
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 player.var_fa2d1151 = spawn("script_model", var_16a2c824);
                 player.var_fa2d1151.angles = samantha.angles;
                 wait(1);
@@ -163,9 +159,7 @@ function function_303ab700() {
                     player setorigin(var_16a2c824);
                     player setplayerangles(samantha.angles);
                     waitframe(1);
-                    /#
-                        println("<unknown string>" + player.name + "<unknown string>");
-                    #/
+                    println("<unknown string>" + player.name + "<unknown string>");
                     function_8e56bb21(player, player.var_fa2d1151, var_16a2c824, samantha.angles);
                     wait(1);
                 }

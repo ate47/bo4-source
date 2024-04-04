@@ -45,7 +45,6 @@ function on_vehicle_damage(var_bff7298b) {
 function main() {
     self endon(#"nodeath_thread", #"delete");
     while (isdefined(self)) {
-        waitresult = undefined;
         waitresult = self waittill(#"death");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;
@@ -182,7 +181,7 @@ function main() {
 function function_52abcd2e() {
     /#
         while (isdefined(self)) {
-            util::debug_sphere(self.origin, 5, vectorscale((1, 0, 0), 0.9), 0.9, 300);
+            util::debug_sphere(self.origin, 5, (0.9, 0, 0), 0.9, 300);
             waitframe(1);
         }
     #/
@@ -430,18 +429,16 @@ function helicopter_crash_zone_accel(dir) {
         torque = torque * 0.3;
     }
     while (isdefined(self)) {
-        /#
-            assert(isdefined(self.crash_zone));
-        #/
+        assert(isdefined(self.crash_zone));
         dist = distance2d(self.origin, self.crash_zone.origin);
         if (dist < self.crash_zone.radius) {
-            self setphysacceleration(vectorscale((0, 0, -1), 400));
+            self setphysacceleration((0, 0, -400));
             /#
                 circle(self.crash_zone.origin + (0, 0, self.crash_zone.height), self.crash_zone.radius, (0, 1, 0), 0, 2000);
             #/
             self.crash_accel = 0;
         } else {
-            self setphysacceleration(vectorscale((0, 0, -1), 50));
+            self setphysacceleration((0, 0, -50));
             /#
                 circle(self.crash_zone.origin + (0, 0, self.crash_zone.height), self.crash_zone.radius, (1, 0, 0), 0, 2);
             #/
@@ -484,7 +481,6 @@ function helicopter_crash_zone_accel(dir) {
 function helicopter_collision() {
     self endon(#"crash_done");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         normal = waitresult.normal;
         ang_vel = self getangularvelocity() * 0.5;
@@ -617,14 +613,14 @@ function helicopter_crash_move(point, dir) {
     self cancelaimove();
     self function_d4c687c9();
     self setturningability(0);
-    self setphysacceleration(vectorscale((0, 0, -1), 800));
+    self setphysacceleration((0, 0, -800));
     vel = self.velocity;
     dir = vectornormalize(dir);
     ang_vel = self getangularvelocity();
     ang_vel = (0, ang_vel[1] * randomfloatrange(1, 3), 0);
     self setangularvelocity(ang_vel);
     point_2d = (point[0], point[1], self.origin[2]);
-    torque = vectorscale((0, 1, 0), 720);
+    torque = (0, 720, 0);
     if (distance(self.origin, point_2d) > 5) {
         local_hit_point = point_2d - self.origin;
         dir_2d = (dir[0], dir[1], 0);
@@ -674,7 +670,7 @@ function boat_crash_movement(point, dir) {
     self endon(#"crash_move_done", #"death");
     self cancelaimove();
     self function_d4c687c9();
-    self setphysacceleration(vectorscale((0, 0, -1), 50));
+    self setphysacceleration((0, 0, -50));
     vel = self.velocity;
     dir = vectornormalize(dir);
     ang_vel = self getangularvelocity();
@@ -743,7 +739,6 @@ function crash_stop() {
 // Size: 0x15c
 function crash_collision_test() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"veh_collision");
     normal = waitresult.normal;
     self helicopter_explode();
@@ -868,7 +863,7 @@ function death_jolt(type, point, dir) {
         var_e8ac46d8 = self.var_46b047ff;
         var_3c985f6 = self.var_263fc892;
         var_9defc7df = self.var_c7029bb1;
-        self launchvehicle(vectorscale((0, 0, 1), 180) * num_launch_multiplier, (randomfloatrange(var_e8ac46d8, var_3c985f6), randomfloatrange(var_9defc7df * -1, var_9defc7df), 0), 1, 1);
+        self launchvehicle((0, 0, 180) * num_launch_multiplier, (randomfloatrange(var_e8ac46d8, var_3c985f6), randomfloatrange(var_9defc7df * -1, var_9defc7df), 0), 1, 1);
     }
 }
 
@@ -896,15 +891,9 @@ function deathrolloff() {
 // Checksum 0xccf1ceb5, Offset: 0x35c0
 // Size: 0xae
 function loop_fx_on_vehicle_tag(effect, looptime, tag) {
-    /#
-        assert(isdefined(effect));
-    #/
-    /#
-        assert(isdefined(tag));
-    #/
-    /#
-        assert(isdefined(looptime));
-    #/
+    assert(isdefined(effect));
+    assert(isdefined(tag));
+    assert(isdefined(looptime));
     self endon(#"stop_looping_death_fx");
     while (isdefined(self)) {
         playfxontag(effect, deathfx_ent(), tag);
@@ -984,7 +973,7 @@ function death_radius_damage(meansofdamage = "MOD_EXPLOSIVE", attacker, weapon) 
     if (!isdefined(self) || self.abandoned === 1 || self.damage_on_death === 0 || self.radiusdamageradius <= 0 || self.var_9d992ed1 === 1) {
         return;
     }
-    position = self.origin + vectorscale((0, 0, 1), 15);
+    position = self.origin + (0, 0, 15);
     radius = self.radiusdamageradius;
     damagemax = self.radiusdamagemax;
     damagemin = self.radiusdamagemin;
@@ -1102,7 +1091,7 @@ function ground_vehicle_crash() {
                 self resumespeed(5);
             }
             v_goal = self.origin + anglestoforward(self.angles + (0, n_modifier * 35, 0)) * 600;
-            a_trace = physicstraceex(v_goal + vectorscale((0, 0, 1), 200), v_goal - vectorscale((0, 0, 1), 1000));
+            a_trace = physicstraceex(v_goal + (0, 0, 200), v_goal - (0, 0, 1000));
             n_set_speed = n_current_speed * 3;
             self setspeed(n_set_speed, n_set_speed / 2);
             self function_a57c34b7(a_trace[#"position"], 0);
@@ -1205,7 +1194,6 @@ function is_crash_detour_nearby() {
 function monitor_ground_vehicle_crash_collision() {
     self endon(#"death", #"crash_done");
     waitresult = self thread ground_predicted_collision();
-    waitresult = undefined;
     waitresult = self waittill(#"veh_collision");
     normal = waitresult.normal;
     ent = waitresult.target;
@@ -1234,7 +1222,6 @@ function monitor_ground_vehicle_crash_collision() {
 function ground_predicted_collision() {
     self endon(#"crash_done", #"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         ent = waitresult.target;
         if (isdefined(ent) && self istouching(ent)) {
@@ -1304,7 +1291,6 @@ function vehicle_damage_filter_damage_watcher(driver, heavy_damage_threshold) {
         heavy_damage_threshold = 100;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         earthquake(0.25, 0.15, self.origin, 512, self);
         driver playrumbleonentity("damage_light");
@@ -1395,7 +1381,7 @@ function flipping_shooting_death(attacker, hitdir) {
 // Size: 0x26c
 function plane_crash() {
     self endon(#"death");
-    self setphysacceleration(vectorscale((0, 0, -1), 1000));
+    self setphysacceleration((0, 0, -1000));
     self.vehcheckforpredictedcrash = 1;
     forward = anglestoforward(self.angles);
     forward_mag = randomfloatrange(0, 300);
@@ -1423,13 +1409,13 @@ function plane_crash() {
 // Size: 0x234
 function barrel_rolling_crash() {
     self endon(#"death");
-    self setphysacceleration(vectorscale((0, 0, -1), 1000));
+    self setphysacceleration((0, 0, -1000));
     self.vehcheckforpredictedcrash = 1;
     forward = anglestoforward(self.angles);
     forward_mag = randomfloatrange(0, 250);
     forward_mag = forward_mag + math::sign(forward_mag) * 300;
     forward = forward * forward_mag;
-    new_vel = forward + vectorscale((0, 0, 1), 70);
+    new_vel = forward + (0, 0, 70);
     ang_vel = self getangularvelocity();
     yaw_vel = randomfloatrange(0, 60) * math::sign(ang_vel[1]);
     yaw_vel = yaw_vel + math::sign(yaw_vel) * 30;
@@ -1438,7 +1424,7 @@ function barrel_rolling_crash() {
     ang_vel = (randomfloatrange(-5, 5), yaw_vel, roll_vel);
     self.velocity_rotation_frac = 1;
     self.crash_accel = randomfloatrange(145, 210);
-    self setphysacceleration(vectorscale((0, 0, -1), 250));
+    self setphysacceleration((0, 0, -250));
     set_movement_and_accel(new_vel, ang_vel);
 }
 
@@ -1448,7 +1434,7 @@ function barrel_rolling_crash() {
 // Size: 0x2f4
 function random_crash(hitdir) {
     self endon(#"death");
-    self setphysacceleration(vectorscale((0, 0, -1), 1000));
+    self setphysacceleration((0, 0, -1000));
     self.vehcheckforpredictedcrash = 1;
     if (!isdefined(hitdir)) {
         hitdir = (1, 0, 0);
@@ -1462,7 +1448,7 @@ function random_crash(hitdir) {
     forward_mag = randomfloatrange(0, 300);
     forward_mag = forward_mag + math::sign(forward_mag) * 30;
     forward = forward * forward_mag;
-    new_vel = self.velocity * 1.2 + forward + side_dir + vectorscale((0, 0, 1), 50);
+    new_vel = self.velocity * 1.2 + forward + side_dir + (0, 0, 50);
     ang_vel = self getangularvelocity();
     ang_vel = (ang_vel[0] * 0.3, ang_vel[1], ang_vel[2] * 1.2);
     yaw_vel = randomfloatrange(0, 130) * math::sign(ang_vel[1]);
@@ -1495,7 +1481,6 @@ function set_movement_and_accel(new_vel, ang_vel) {
     if (randomint(100) < 40 && !isdefined(self.off) && self.variant !== "rocket") {
         self thread vehicle_ai::fire_for_time(randomfloatrange(0.7, 2));
     }
-    result = undefined;
     result = self waittilltimeout(15, #"crash_done");
     if (result._notify === "crash_done") {
         self vehicle::do_death_dynents();
@@ -1514,7 +1499,7 @@ function flipping_shooting_crash_movement(attacker, hitdir) {
     self cancelaimove();
     self function_d4c687c9();
     self vehclearlookat();
-    self setphysacceleration(vectorscale((0, 0, -1), 1000));
+    self setphysacceleration((0, 0, -1000));
     self.vehcheckforpredictedcrash = 1;
     if (!isdefined(hitdir)) {
         hitdir = (1, 0, 0);
@@ -1690,7 +1675,6 @@ function corpse_explode_fx() {
 function function_933d48a2() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_predictedcollision");
         if (isdefined(waitresult.target)) {
             vehiclecorpse = waitresult.target;

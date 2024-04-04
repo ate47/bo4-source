@@ -34,14 +34,10 @@ function function_6f198c81(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     if (bnewent) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
     }
     if (binitialsnap) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
     }
     playrumbleonposition(localclientnum, "explosion_generic", self.origin);
 }

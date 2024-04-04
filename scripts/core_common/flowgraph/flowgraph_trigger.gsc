@@ -10,7 +10,6 @@
 function ontriggerentered(x, e_trigger) {
     e_trigger endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = e_trigger waittill(#"trigger");
         self flowgraph::kick(array(1, waitresult.activator));
     }

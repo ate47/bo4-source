@@ -8,27 +8,11 @@
 class czm_towers_crowd_meter : cluielem {
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
-    // Params 0, eflags: 0x8
-    // Checksum 0x8664627d, Offset: 0x230
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x4ce8482b, Offset: 0x6c8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
     // Params 2, eflags: 0x0
     // Checksum 0xd6858549, Offset: 0x690
     // Size: 0x30
     function set_visible(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "visible", value);
+        set_data(localclientnum, "visible", value);
     }
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
@@ -37,58 +21,54 @@ class czm_towers_crowd_meter : cluielem {
     // Size: 0x2dc
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"crowd_server_paused" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"crowd_loathes" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"crowd_hates" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"crowd_no_love" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"crowd_warm_up" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"crowd_likes" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
         if (#"crowd_loves" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
+            set_data(localclientnum, "_state", 7);
             return;
         }
         if (#"crowd_power_up_available_good" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
+            set_data(localclientnum, "_state", 8);
             return;
         }
         if (#"crowd_power_up_available_bad" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
+            set_data(localclientnum, "_state", 9);
             return;
         }
         if (#"crowd_power_up_available_good_partial" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 10);
+            set_data(localclientnum, "_state", 10);
             return;
         }
         if (#"crowd_power_up_available_bad_partial" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 11);
+            set_data(localclientnum, "_state", 11);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter
@@ -105,8 +85,8 @@ class czm_towers_crowd_meter : cluielem {
     // Size: 0x60
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "visible", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "visible", 0);
     }
 
     // Namespace czm_towers_crowd_meter/zm_towers_crowd_meter

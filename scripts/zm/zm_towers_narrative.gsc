@@ -112,7 +112,6 @@ function function_c2e32573(str_notify, a_str_vo, var_4bb99e1c = 1, var_763c80f1,
         a_str_vo = array(a_str_vo);
     }
     foreach (str_vo in a_str_vo) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(str_notify);
         level flag::set(#"hash_64e187377acec152");
         v_origin = s_waitresult.v_origin;
@@ -158,7 +157,6 @@ function function_a38e222b() {
         return;
     }
     for (i = 0; i < 4; i++) {
-        waitresult = undefined;
         waitresult = level waittill(#"narrative_explore");
         level flag::set(#"hash_64e187377acec152");
         var_e25ba3b3 = spawn("script_origin", waitresult.v_origin);
@@ -337,7 +335,6 @@ function function_51f7da68() {
         self flag::clear(#"hash_6e4b1162d4626a6e");
     }
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"hash_3042a9bf2f57ea0a");
         v_origin = s_waitresult.var_814c9389;
         if (istouching(v_origin, self)) {
@@ -544,7 +541,6 @@ function function_341bdf82() {
     level endon(#"end_game");
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         w_weapon = s_waitresult.weapon;
         v_origin = s_waitresult.position;
@@ -600,7 +596,6 @@ function function_ca4e26c3() {
     self endon(#"disconnect");
     var_59795ba5 = array(level.hero_weapon[#"sword_pistol"][0].dualwieldweapon, level.hero_weapon[#"sword_pistol"][1].dualwieldweapon, level.hero_weapon[#"sword_pistol"][2].dualwieldweapon);
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_fired");
         w_weapon = s_waitresult.weapon;
         if (isdefined(w_weapon) && isinarray(var_59795ba5, w_weapon)) {
@@ -679,11 +674,9 @@ function function_e6f26f04() {
     self endon(#"death");
     str_id = self.script_string;
     while (true) {
-        var_33f252eb = undefined;
         var_33f252eb = level waittill(#"trap_activate");
         if (var_33f252eb === self) {
             level flag::set(#"hash_3e90f82a2802b3");
-            s_waitresult = undefined;
             s_waitresult = level waittill(#"traps_cooldown");
             str_off = s_waitresult.var_be3f58a;
             if (str_off === str_id) {

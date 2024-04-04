@@ -258,7 +258,6 @@ function freezegun_wait_for_shatter(params, shatter_trigger, crumple_trigger) {
     self endon(#"death");
     wait(0.1);
     orig_attacker = params.eattacker;
-    s_notify = undefined;
     s_notify = shatter_trigger waittill(#"damage");
     if (isdefined(s_notify.eattacker) && orig_attacker == s_notify.eattacker && s_notify.smeansofdeath == "MOD_PROJECTILE" && (s_notify.weapon == level.w_freezegun || s_notify.weapon == level.w_freezegun_upgraded)) {
         self thread freezegun_do_crumple(params, shatter_trigger, crumple_trigger);
@@ -538,7 +537,7 @@ function freezegun_debug_print(msg, color) {
         if (!isdefined(color)) {
             color = (1, 1, 1);
         }
-        print3d(self.origin + vectorscale((0, 0, 1), 60), msg, color, 1, 1, 40);
+        print3d(self.origin + (0, 0, 60), msg, color, 1, 1, 40);
     #/
 }
 

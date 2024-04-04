@@ -125,7 +125,7 @@ function function_7993c728(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0xac
 function zombie_breakout_func(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     util::playfxontag(localclientnum, level._effect[#"chaos_breakout"], self, "tag_origin");
-    playsound(localclientnum, #"hash_496f85c0590828ba", self.origin + vectorscale((0, 0, 1), 25));
+    playsound(localclientnum, #"hash_496f85c0590828ba", self.origin + (0, 0, 25));
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest

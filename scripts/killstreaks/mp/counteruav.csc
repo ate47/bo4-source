@@ -27,9 +27,7 @@ function __init__() {
 // Size: 0x11e
 function counteruavchanged(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     player = function_5c10bd79(localclientnum);
-    /#
-        assert(isdefined(player));
-    #/
+    assert(isdefined(player));
     player setenemyglobalscrambler(newval);
     if (isdefined(level.var_8c4291cb[localclientnum])) {
         function_d48752e(localclientnum, level.var_8c4291cb[localclientnum], 1);

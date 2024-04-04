@@ -81,7 +81,7 @@ function defaultrole() {
 // Checksum 0xdedc40e9, Offset: 0x508
 // Size: 0x1a
 function function_d3a9800e() {
-    return self.origin + vectorscale((0, 0, 1), 30);
+    return self.origin + (0, 0, 30);
 }
 
 // Namespace namespace_77b8863/namespace_77b8863
@@ -119,7 +119,7 @@ function function_f2fd92d1() {
 // Size: 0x7c
 function function_3f83eb6(params) {
     self.fxent unlink();
-    self.fxent linkto(self, "tag_origin", vectorscale((0, 0, 1), 50));
+    self.fxent linkto(self, "tag_origin", (0, 0, 50));
     self.fxent clientfield::set("towers_boss_dust_ball_fx", 3);
 }
 

@@ -8,27 +8,11 @@
 class cself_revive_visuals : cluielem {
 
     // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xd21dfa36, Offset: 0x258
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cself_revive_visuals/self_revive_visuals
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x803c3979, Offset: 0x458
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cself_revive_visuals/self_revive_visuals
     // Params 2, eflags: 0x1 linked
     // Checksum 0x4bca128, Offset: 0x420
     // Size: 0x30
     function set_revive_progress(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "revive_progress", value);
+        set_data(localclientnum, "revive_progress", value);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
@@ -36,7 +20,7 @@ class cself_revive_visuals : cluielem {
     // Checksum 0x3a66e582, Offset: 0x3e8
     // Size: 0x30
     function set_self_revive_progress_bar_fill(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "self_revive_progress_bar_fill", value);
+        set_data(localclientnum, "self_revive_progress_bar_fill", value);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals
@@ -53,8 +37,8 @@ class cself_revive_visuals : cluielem {
     // Size: 0x6c
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "self_revive_progress_bar_fill", 0);
-        [[ self ]]->set_data(localclientnum, "revive_progress", 0);
+        set_data(localclientnum, "self_revive_progress_bar_fill", 0);
+        set_data(localclientnum, "revive_progress", 0);
     }
 
     // Namespace cself_revive_visuals/self_revive_visuals

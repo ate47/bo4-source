@@ -951,9 +951,7 @@ function private strategyhasforcegoal(planner, constants) {
 // Checksum 0x1f504f09, Offset: 0x4710
 // Size: 0xf6
 function private function_790fb743(planner, constants) {
-    /#
-        assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     attribute = planner::getblackboardattribute(planner, constants[#"key"]);
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
@@ -966,9 +964,7 @@ function private function_790fb743(planner, constants) {
 // Checksum 0x38de5e8b, Offset: 0x4810
 // Size: 0x25a
 function private function_f6ec02a4(planner, constants) {
-    /#
-        assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     foreach (botinfo in planner::getblackboardattribute(planner, "doppelbots")) {
         bot = botinfo[#"__unsafe__"][#"bot"];
         if (!strategiccommandutility::isvalidbot(bot)) {
@@ -997,9 +993,7 @@ function private function_f6ec02a4(planner, constants) {
 // Checksum 0xca039b73, Offset: 0x4a78
 // Size: 0x254
 function private strategyhasbelowxammounsafe(planner, constants) {
-    /#
-        assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     foreach (botinfo in planner::getblackboardattribute(planner, "doppelbots")) {
         bot = botinfo[#"__unsafe__"][#"bot"];
         if (!strategiccommandutility::isvalidbot(bot)) {
@@ -1027,12 +1021,8 @@ function private strategyhasbelowxammounsafe(planner, constants) {
 // Checksum 0x19a969f7, Offset: 0x4cd8
 // Size: 0xf2
 function private strategyhasblackboardvalue(planner, constants) {
-    /#
-        assert(isarray(constants));
-    #/
-    /#
-        assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
-    #/
+    assert(isarray(constants));
+    assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
     value = planner::getblackboardattribute(planner, constants[#"name"]);
     return value == constants[#"value"];
 }
@@ -1138,9 +1128,7 @@ function private strategyrushammocacheinit(planner, params) {
 // Checksum 0xe412cea3, Offset: 0x5348
 // Size: 0x1f8
 function private function_a0f209b7(planner, constants) {
-    /#
-        assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isfloat(constants[#"percent"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     foreach (botinfo in planner::getblackboardattribute(planner, "doppelbots")) {
         bot = botinfo[#"__unsafe__"][#"bot"];
         if (!strategiccommandutility::isvalidbot(bot)) {
@@ -1266,9 +1254,7 @@ function private function_4c91e90d(planner, params) {
 // Checksum 0x14adcebd, Offset: 0x5b88
 // Size: 0x51e
 function private strategyrushammocacheparam(planner, constants) {
-    /#
-        assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"distance"]) || isfloat(constants[#"distance"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     params = spawnstruct();
     params.bots = [];
     botpositions = [];
@@ -1599,12 +1585,8 @@ function private strategyrushobjectiveupdate(planner, params) {
 // Checksum 0x4cd2f087, Offset: 0x7228
 // Size: 0x282
 function private function_e96dd96b(planner, constants) {
-    /#
-        assert(isarray(constants));
-    #/
-    /#
-        assert(isstring(constants[#"focus"]) || ishash(constants[#"focus"]));
-    #/
+    assert(isarray(constants));
+    assert(isstring(constants[#"focus"]) || ishash(constants[#"focus"]));
     target = planner::getblackboardattribute(planner, "target");
     if (isdefined(target)) {
         var_3d879b56 = target[#"strategy"];
@@ -1630,12 +1612,8 @@ function private function_e96dd96b(planner, constants) {
 // Checksum 0xc10c115, Offset: 0x74b8
 // Size: 0x148
 function private function_50c7bd5a(planner, constants) {
-    /#
-        assert(isarray(constants));
-    #/
-    /#
-        assert(isstring(constants[#"tactics"]) || ishash(constants[#"tactics"]));
-    #/
+    assert(isarray(constants));
+    assert(isstring(constants[#"tactics"]) || ishash(constants[#"tactics"]));
     var_e67e6f95 = constants[#"tactics"];
     target = planner::getblackboardattribute(planner, "target");
     if (isdefined(target)) {

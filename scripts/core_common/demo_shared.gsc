@@ -88,9 +88,7 @@ function bookmark(bookmarkname, time, var_81538b15, var_f28fb772, scoreeventprio
 function function_c6ae5fd6(bookmarkname, winningteamindex, losingteamindex) {
     bookmark = potm::function_5b1e9ed4(game.var_e9714926, bookmarkname, gettime(), undefined, undefined, 0);
     if (!isdefined(bookmark)) {
-        /#
-            println("<unknown string>" + bookmarkname + "<unknown string>");
-        #/
+        println("<unknown string>" + bookmarkname + "<unknown string>");
         return;
     }
     if (isdefined(winningteamindex)) {

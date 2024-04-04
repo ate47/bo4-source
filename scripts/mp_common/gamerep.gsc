@@ -257,9 +257,7 @@ function getparamvalueforplayer(playername, paramname) {
     if (isdefined(game.gamerep[#"players"][playername][paramname])) {
         return game.gamerep[#"players"][playername][paramname];
     }
-    /#
-        assertmsg("<unknown string>" + paramname + "<unknown string>");
-    #/
+    assertmsg("<unknown string>" + paramname + "<unknown string>");
 }
 
 // Namespace gamerep/gamerep
@@ -311,9 +309,7 @@ function getgamerepparamlimit(paramname) {
     if (isdefined(game.gamerep[#"gamelimit"][#"default"][paramname])) {
         return game.gamerep[#"gamelimit"][#"default"][paramname];
     }
-    /#
-        assertmsg("<unknown string>" + paramname + "<unknown string>");
-    #/
+    assertmsg("<unknown string>" + paramname + "<unknown string>");
 }
 
 // Namespace gamerep/gamerep

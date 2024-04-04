@@ -207,37 +207,21 @@ function on_brutus_killed(params) {
 // Checksum 0x2ec83c2, Offset: 0xb78
 // Size: 0x36c
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_3006441d));
-    #/
+    assert(isscriptfunctionptr(&function_3006441d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_df1d28cebbb75f6", &function_3006441d);
-    /#
-        assert(isscriptfunctionptr(&function_3bda3c55));
-    #/
+    assert(isscriptfunctionptr(&function_3bda3c55));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_d8653062b32a601", &function_3bda3c55);
-    /#
-        assert(isscriptfunctionptr(&function_4ec678fe));
-    #/
+    assert(isscriptfunctionptr(&function_4ec678fe));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_643443bf9243e4ff", &function_4ec678fe);
-    /#
-        assert(isscriptfunctionptr(&function_f4a61e6a));
-    #/
+    assert(isscriptfunctionptr(&function_f4a61e6a));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5800441474109ca6", &function_f4a61e6a);
-    /#
-        assert(isscriptfunctionptr(&function_5ca455a0));
-    #/
+    assert(isscriptfunctionptr(&function_5ca455a0));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_31bfd48e9c8557f0", &function_5ca455a0);
-    /#
-        assert(isscriptfunctionptr(&function_d996f07c));
-    #/
+    assert(isscriptfunctionptr(&function_d996f07c));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4fe62c9a1dbe75d3", &function_d996f07c);
-    /#
-        assert(isscriptfunctionptr(&function_e2ab1df7));
-    #/
+    assert(isscriptfunctionptr(&function_e2ab1df7));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_14196abc66fc78ee", &function_e2ab1df7);
-    /#
-        assert(isscriptfunctionptr(&function_1bd1ebe7));
-    #/
+    assert(isscriptfunctionptr(&function_1bd1ebe7));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6df8ee94ab700109", &function_1bd1ebe7);
     animationstatenetwork::registernotetrackhandlerfunction("hit_ground", &function_85e8940a);
 }
@@ -534,7 +518,6 @@ function function_b510a832() {
             }
             self.var_80780af2 = next_goal;
             self.var_9a79d89d = next_goal;
-            waitresult = undefined;
             waitresult = self waittilltimeout(30, #"goal");
             if (isdefined(self.var_50826790) && self.var_50826790) {
                 self.var_ef59b90 = 5;

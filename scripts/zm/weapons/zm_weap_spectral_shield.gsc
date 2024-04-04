@@ -210,7 +210,6 @@ function private function_ebe5f74b() {
     self notify("4c9754f8548fd6a6");
     self endon("4c9754f8548fd6a6");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"destroy_riotshield", #"weapon_change");
         if (s_result._notify == "destroy_riotshield" || isdefined(s_result.weapon) && !function_98890cd8(s_result.weapon)) {
             self thread function_401e4768();
@@ -287,7 +286,7 @@ function function_a8b4c2a7(einflictor, eattacker, idamage, flags, meansofdeath, 
 function private function_b952c1b(ai_zombie) {
     self endon(#"disconnect");
     v_pos = ai_zombie getcentroid();
-    var_88f24b00 = util::spawn_model("tag_origin", v_pos + vectorscale((0, 0, 1), 12), ai_zombie.angles);
+    var_88f24b00 = util::spawn_model("tag_origin", v_pos + (0, 0, 12), ai_zombie.angles);
     var_88f24b00 clientfield::set("" + #"hash_7a8b6df890ccc630", 1);
     var_88f24b00 playsound(#"zmb_sq_souls_release");
     n_dist = distance(var_88f24b00.origin, self function_7eae6d92(var_88f24b00));
@@ -324,7 +323,7 @@ function private function_b952c1b(ai_zombie) {
 // Checksum 0xa07c1f16, Offset: 0x1a40
 // Size: 0x72
 function private function_7eae6d92(var_88f24b00) {
-    n_pos = self.origin + vectorscale((0, 0, 1), 46) + anglestoright(self.angles) * 24 + anglestoforward(self.angles) * 70;
+    n_pos = self.origin + (0, 0, 46) + anglestoright(self.angles) * 24 + anglestoforward(self.angles) * 70;
     return n_pos;
 }
 
@@ -377,7 +376,6 @@ function function_5f950378() {
     }
     var_18138fac = self.var_f7c822b5 * 3;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_22a49f7903e394a5", #"hash_1a22e1dd781f58d6", #"weapon_change", #"weapon_change_complete");
         var_74e62fc6 = self clientfield::get("" + #"hash_e0f652f4a9ad8d5");
         if ((s_result._notify == "weapon_change" || s_result._notify == "weapon_change_complete") && !(isdefined(function_98890cd8(s_result.weapon)) && function_98890cd8(s_result.weapon))) {
@@ -1165,7 +1163,6 @@ function private function_b84d0267() {
         mdl_shield hidepart("tag_hellbox_lock");
     }
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"crafting_started");
         if (isdefined(s_result.unitrigger)) {
             s_result.unitrigger thread function_d0b3a2c6();
@@ -1181,7 +1178,6 @@ function function_d0b3a2c6() {
     self endon(#"death");
     if (isdefined(self.stub.blueprint) && isdefined(self.stub.blueprint.var_54a97edd) && self.stub.blueprint.var_54a97edd === level.var_d7e67022) {
         if (isdefined(self.stub.model)) {
-            s_progress = undefined;
             s_progress = self waittill(#"hash_6db03c91467a21f5");
             if (isdefined(s_progress.b_completed) && s_progress.b_completed) {
                 self.stub.model clientfield::increment("" + #"hash_6a04c04eae77e006");
@@ -1293,7 +1289,6 @@ function private function_e5ca1c8d() {
     self notify("29615d74ce832e90");
     self endon("29615d74ce832e90");
     self endon(#"death");
-    s_result = undefined;
     s_result = self waittilltimeout(5, #"hash_77d44943fb143b18");
     if (s_result._notify == #"hash_77d44943fb143b18" && function_98890cd8(s_result.weapon)) {
         self thread function_804309c();
@@ -1426,7 +1421,6 @@ function function_4df187a9(w_shield) {
         self endon(#"disconnect", #"hash_1f37709e96e62bf2");
         while (true) {
             self thread function_804309c();
-            s_result = undefined;
             s_result = self waittill(#"hash_5ac00f85b943ba5f", #"take_weapon");
             if (!self hasweapon(w_shield)) {
                 return;

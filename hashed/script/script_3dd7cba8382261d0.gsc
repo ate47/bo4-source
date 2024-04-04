@@ -8,28 +8,14 @@
 // Method(s) 6 Total 13
 class czm_arcade_keys : cluielem {
 
-    // Namespace czm_arcade_keys/zm_arcade_keys
-    // Params 0, eflags: 0x8
-    // Checksum 0x290e66b0, Offset: 0x1d0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_arcade_keys/zm_arcade_keys
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x75d4adfa, Offset: 0x310
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_arcade_keys/zm_arcade_keys
     // Params 2, eflags: 0x0
     // Checksum 0x5c61b4, Offset: 0x2c8
     // Size: 0x3c
     function set_key_count(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "key_count", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "key_count", value);
     }
 
     // Namespace czm_arcade_keys/zm_arcade_keys

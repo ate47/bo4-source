@@ -94,7 +94,6 @@ function function_f968291b(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     if (newval == 1) {
         while (true) {
-            s_result = undefined;
             s_result = self waittill(#"hash_593064545176ab53", #"hash_23e33f0aec28e476", #"hash_6ab654a4c018818c");
             if (s_result._notify == #"hash_6ab654a4c018818c") {
                 self.var_b55b7d2c = util::playfxontag(localclientnum, level._effect[#"portal_loop"], self, "tag_origin");
@@ -442,7 +441,6 @@ function function_fdd08c0e(localclientnum, oldval, newval, bnewent, binitialsnap
 function private function_44181c14(localclientnum, n_val) {
     self endon(#"disconnect", #"hash_59d521ca45c97f9d");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_756fa7ee0161ce3", #"hash_5d32c2a5e7a152f2");
         if (!(isdefined(self.var_351e0bdc) && self.var_351e0bdc)) {
             exploder::exploder("fxexp_buoy_light_0" + n_val);

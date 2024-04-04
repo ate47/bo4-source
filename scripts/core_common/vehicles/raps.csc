@@ -58,7 +58,7 @@ function do_side_death_fx(localclientnum, oldval, newval, bnewent, binitialsnap,
         up_direction = anglestoup(self.angles);
         origin = self gettagorigin(fxtag);
         if (!isdefined(origin)) {
-            origin = self.origin + vectorscale((0, 0, 1), 15);
+            origin = self.origin + (0, 0, 15);
         }
         right_direction = vectorcross(forward_direction, up_direction);
         right_direction = vectornormalize(right_direction);

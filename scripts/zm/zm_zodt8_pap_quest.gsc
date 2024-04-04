@@ -164,7 +164,6 @@ function function_11c3f280() {
 // Size: 0xd0
 function function_3efad767() {
     while (!(isdefined(self.stub.b_used) && self.stub.b_used)) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (player zm_utility::in_revive_trigger()) {
@@ -458,7 +457,7 @@ function function_1563bfc3() {
 function function_f7dc54d8() {
     a_ai_enemies = array::get_all_closest(self.origin, getaiteamarray(level.zombie_team), undefined, 40, 100);
     foreach (ai_zombie in a_ai_enemies) {
-        ai_zombie dodamage(ai_zombie.health + 100, ai_zombie.origin + vectorscale((0, 1, 0), 100));
+        ai_zombie dodamage(ai_zombie.health + 100, ai_zombie.origin + (0, 100, 0));
     }
 }
 
@@ -663,11 +662,11 @@ function function_a2a8d76e(var_c8407ea2) {
 function function_4944c76f() {
     /#
         level endon(#"pap_moved");
-        var_710f09a8 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 100);
-        var_737189c4 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 80);
-        var_c1f4ccaf = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 60);
-        var_743fd60c = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 40);
-        var_56692417 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + vectorscale((0, 0, 1), 20);
+        var_710f09a8 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 100);
+        var_737189c4 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 80);
+        var_c1f4ccaf = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 60);
+        var_743fd60c = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 40);
+        var_56692417 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 20);
         var_1e3527a8 = self.origin + vectornormalize(anglestoforward(self.angles)) * 160 + (0, 0, 0);
         while (true) {
             print3d(var_710f09a8, "<unknown string>" + self getzbarrierpiecestate(0));

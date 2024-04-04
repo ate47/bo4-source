@@ -369,9 +369,7 @@ function onspawnplayer(predictedspawn = 0) {
         }
     }
     if (!isdefined(spawn_origin)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         callback::abort_level();
     }
     if (predictedspawn) {
@@ -451,18 +449,10 @@ function get_best_spawnpoint(point_team, influencer_team, player, predictedspawn
         }
     }
     spawn_point = getbestspawnpoint(point_team, influencer_team, vis_team_mask, player, predictedspawn, lists);
-    /#
-        /#
-            assert(isdefined(spawn_point), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(spawn_point), "<unknown string>");
     if (!isdefined(spawn_point)) {
         spawn_point = getbestspawnpoint(point_team, influencer_team, vis_team_mask, player, predictedspawn, level.default_spawn_lists);
-        /#
-            /#
-                assert(isdefined(spawn_point), "<unknown string>");
-            #/
-        #/
+        assert(isdefined(spawn_point), "<unknown string>");
         if (!isdefined(spawn_point)) {
             spawn_point = [];
             spawn_point[#"origin"] = (0, 0, 0);
@@ -547,9 +537,7 @@ function private add_spawn_points_internal(team, spawnpoints, list = 0) {
 // Size: 0x238
 function clear_and_add_spawn_points(str_team, classnames, ...) {
     str_team = util::get_team_mapping(str_team);
-    /#
-        assert(vararg.size % 2 == 0, "<unknown string>");
-    #/
+    assert(vararg.size % 2 == 0, "<unknown string>");
     clear_spawn_points();
     team_array = array(str_team);
     classnames_array = array(classnames);
@@ -886,7 +874,6 @@ function private _disable_spawn_points() {
     self notify(#"end_disable_spawn_points");
     self endon(#"end_disable_spawn_points");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         self.spawnpoints_enabled = undefined;
         foreach (spawn_point in self.spawn_points_to_disable) {
@@ -909,7 +896,6 @@ function private _enable_spawn_points() {
     self notify(#"end_enable_spawn_points");
     self endon(#"end_enable_spawn_points");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         self.spawnpoints_enabled = 1;
         foreach (spawn_point in self.spawn_points_to_enable) {
@@ -952,12 +938,8 @@ function place_spawn_points(spawnpointname) {
     add_spawn_point_classname(spawnpointname);
     spawnpoints = get_spawnpoint_array(spawnpointname);
     if (!spawnpoints.size && level.requirespawnpointstoexistinlevel) {
-        /#
-            println("<unknown string>" + spawnpointname + "<unknown string>");
-        #/
-        /#
-            assert(spawnpoints.size, "<unknown string>" + spawnpointname + "<unknown string>");
-        #/
+        println("<unknown string>" + spawnpointname + "<unknown string>");
+        assert(spawnpoints.size, "<unknown string>" + spawnpointname + "<unknown string>");
         callback::abort_level();
         wait(1);
         return;
@@ -974,9 +956,7 @@ function place_spawn_points(spawnpointname) {
 function drop_spawn_points(spawnpointname) {
     spawnpoints = get_spawnpoint_array(spawnpointname);
     if (!spawnpoints.size) {
-        /#
-            println("<unknown string>" + spawnpointname + "<unknown string>");
-        #/
+        println("<unknown string>" + spawnpointname + "<unknown string>");
         return;
     }
     for (index = 0; index < spawnpoints.size; index++) {
@@ -1043,7 +1023,7 @@ function private spawnpoint_init() {
     }
     placespawnpoint(spawnpoint);
     spawnpoint.forward = anglestoforward(spawnpoint.angles);
-    spawnpoint.sighttracepoint = spawnpoint.origin + vectorscale((0, 0, 1), 50);
+    spawnpoint.sighttracepoint = spawnpoint.origin + (0, 0, 50);
     if (!isdefined(spawnpoint.enabled)) {
         spawnpoint.enabled = 1;
     }
@@ -1143,9 +1123,7 @@ function get_random_intermission_point() {
     if (!spawnpoints.size) {
         spawnpoints = get_spawnpoint_array("info_player_start");
     }
-    /#
-        assert(spawnpoints.size);
-    #/
+    assert(spawnpoints.size);
     spawnpoint = get_spawnpoint_random(spawnpoints, undefined, 1);
     return spawnpoint;
 }
@@ -1195,9 +1173,7 @@ function function_754c78a6(func_callback) {
 // Checksum 0x95994444, Offset: 0x44c8
 // Size: 0xda
 function function_4c00b132(func_callback) {
-    /#
-        assert(isdefined(level.var_811300ad) && level.var_811300ad.size, "<unknown string>");
-    #/
+    assert(isdefined(level.var_811300ad) && level.var_811300ad.size, "<unknown string>");
     foreach (index, func in level.var_811300ad) {
         if (func == func_callback) {
             arrayremoveindex(level.var_811300ad, index, 0);
@@ -1287,13 +1263,13 @@ function render_spawnpoints_triggers(trig) {
         box(trig.origin, trig getmins(), trig getmaxs(), 0, (0, 0, 1), 1, 0, 10);
         if (isdefined(trig.spawn_points_to_enable)) {
             foreach (spawn_point in trig.spawn_points_to_enable) {
-                box(spawn_point.origin, vectorscale((-1, -1, 0), 4), (4, 4, 8), 0, isdefined(spawn_point.disabled) && spawn_point.disabled ? (1, 0, 0) : (0, 1, 0), 1, 0, 10);
+                box(spawn_point.origin, (-4, -4, 0), (4, 4, 8), 0, isdefined(spawn_point.disabled) && spawn_point.disabled ? (1, 0, 0) : (0, 1, 0), 1, 0, 10);
                 line(trig.origin, spawn_point.origin, (0, 1, 0), 1, 0, 10);
             }
         }
         if (isdefined(trig.spawn_points_to_disable)) {
             foreach (spawn_point in trig.spawn_points_to_disable) {
-                box(spawn_point.origin, vectorscale((-1, -1, 0), 4), (4, 4, 8), 0, isdefined(spawn_point.disabled) && spawn_point.disabled ? (1, 0, 0) : (0, 1, 0), 1, 0, 10);
+                box(spawn_point.origin, (-4, -4, 0), (4, 4, 8), 0, isdefined(spawn_point.disabled) && spawn_point.disabled ? (1, 0, 0) : (0, 1, 0), 1, 0, 10);
                 line(trig.origin, spawn_point.origin, (1, 0, 0), 1, 0, 10);
             }
         }

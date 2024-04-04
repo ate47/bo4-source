@@ -72,7 +72,6 @@ function private function_7650d9fb(n_timer, var_f97d1a30) {
             wait(2);
         }
         self start_timer(n_timer, var_f97d1a30);
-        s_waitresult = undefined;
         s_waitresult = self waittilltimeout(n_timer, #"fasttravel_bought");
         self stop_timer();
         if (s_waitresult._notify == "timeout") {
@@ -80,7 +79,6 @@ function private function_7650d9fb(n_timer, var_f97d1a30) {
             level notify(#"hash_6223843ef1e3c6de");
             return;
         }
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"fasttravel_finished");
     }
 }

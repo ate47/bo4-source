@@ -692,7 +692,6 @@ function function_85d3d607(e_player) {
 function function_72d528e6() {
     self endon(#"death");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (isdefined(level.var_4f7df1ac) && level.var_4f7df1ac) {
@@ -838,7 +837,6 @@ function function_b00e24fb() {
 function function_fcbb2307() {
     level endon(#"hash_9a7b18e2622af5d");
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     level.var_9a8dee15 = waitresult.activator;
     level notify(#"hash_9a7b18e2622af5d");

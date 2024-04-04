@@ -198,7 +198,6 @@ function on_weapon_change(params) {
         }
         self thread stingerirtloop(weapon);
         if (weapon.noadslockoncheck) {
-            waitresult = undefined;
             waitresult = self waittill(#"weapon_change");
             weapon = self getappropriateplayerweapon(waitresult.weapon);
         } else {
@@ -281,9 +280,7 @@ function stingerirtloop(weapon) {
             if (timepassed < locklength) {
                 continue;
             }
-            /#
-                assert(isdefined(self.stingertarget));
-            #/
+            assert(isdefined(self.stingertarget));
             self notify(#"stop_lockon_sound");
             self.stingerlockfinalized = 1;
             self weaponlockfinalize(self.stingertarget, 0, self.stingersubtarget);
@@ -779,9 +776,7 @@ function initlockfield(target) {
 // Checksum 0xd64ce2ff, Offset: 0x2940
 // Size: 0x12a
 function lockingon(target, lock) {
-    /#
-        assert(isdefined(target.locking_on));
-    #/
+    assert(isdefined(target.locking_on));
     clientnum = self getentitynumber();
     if (lock) {
         if ((target.locking_on & 1 << clientnum) == 0) {
@@ -814,9 +809,7 @@ function watchclearlockingon(target, clientnum) {
 // Checksum 0xb4501774, Offset: 0x2b08
 // Size: 0x112
 function lockedon(target, lock) {
-    /#
-        assert(isdefined(target.locked_on));
-    #/
+    assert(isdefined(target.locked_on));
     clientnum = self getentitynumber();
     if (lock) {
         if ((target.locked_on & 1 << clientnum) == 0) {
@@ -835,9 +828,7 @@ function lockedon(target, lock) {
 // Checksum 0xaddcd9dc, Offset: 0x2c28
 // Size: 0xea
 function targetinghacking(target, lock) {
-    /#
-        assert(isdefined(target.locking_on_hacking));
-    #/
+    assert(isdefined(target.locking_on_hacking));
     clientnum = self getentitynumber();
     if (lock) {
         target notify(#"locking on hacking");
@@ -1092,9 +1083,7 @@ function _incomingmissiletracker(missile, attacker) {
     if (isdefined(attacker) && isplayer(attacker)) {
         attacker lockedon(self, 0);
     }
-    /#
-        assert(self.incoming_missile >= 0);
-    #/
+    assert(self.incoming_missile >= 0);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -1143,7 +1132,6 @@ function missiletarget_handleincomingmissile(responsefunc, endon1, endon2, allow
         self endon(endon2);
     }
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"stinger_fired_at_me");
         _incomingmissile(waitresult.projectile, waitresult.attacker);
         if (isdefined(responsefunc)) {
@@ -1285,7 +1273,7 @@ function missiletarget_deployflares(origin, angles) {
     velocity = (velocity[0], velocity[1], velocity[2] - randomintrange(10, 100));
     flareorigin = self.origin;
     flareorigin = flareorigin + vectorscale(flare_dir, randomintrange(600, 800));
-    flareorigin = flareorigin + vectorscale((0, 0, 1), 500);
+    flareorigin = flareorigin + (0, 0, 500);
     if (isdefined(self.flareoffset)) {
         flareorigin = flareorigin + self.flareoffset;
     }

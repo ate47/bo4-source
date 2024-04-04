@@ -8,27 +8,11 @@
 class czm_game_timer : cluielem {
 
     // Namespace czm_game_timer/zm_game_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0xbafc6c13, Offset: 0x280
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_game_timer/zm_game_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x201650c4, Offset: 0x4f0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_game_timer/zm_game_timer
     // Params 2, eflags: 0x0
     // Checksum 0x244b186e, Offset: 0x4b8
     // Size: 0x30
     function set_showzero(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "showzero", value);
+        set_data(localclientnum, "showzero", value);
     }
 
     // Namespace czm_game_timer/zm_game_timer
@@ -36,7 +20,7 @@ class czm_game_timer : cluielem {
     // Checksum 0x474eea73, Offset: 0x480
     // Size: 0x30
     function set_minutes(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "minutes", value);
+        set_data(localclientnum, "minutes", value);
     }
 
     // Namespace czm_game_timer/zm_game_timer
@@ -44,7 +28,7 @@ class czm_game_timer : cluielem {
     // Checksum 0x44eb424d, Offset: 0x448
     // Size: 0x30
     function set_seconds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "seconds", value);
+        set_data(localclientnum, "seconds", value);
     }
 
     // Namespace czm_game_timer/zm_game_timer
@@ -61,9 +45,9 @@ class czm_game_timer : cluielem {
     // Size: 0x78
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "seconds", 0);
-        [[ self ]]->set_data(localclientnum, "minutes", 0);
-        [[ self ]]->set_data(localclientnum, "showzero", 0);
+        set_data(localclientnum, "seconds", 0);
+        set_data(localclientnum, "minutes", 0);
+        set_data(localclientnum, "showzero", 0);
     }
 
     // Namespace czm_game_timer/zm_game_timer

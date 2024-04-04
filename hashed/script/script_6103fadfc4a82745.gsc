@@ -8,28 +8,14 @@
 // Method(s) 6 Total 13
 class cscavenger_icon : cluielem {
 
-    // Namespace cscavenger_icon/scavenger_icon
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x17567ab1, Offset: 0x1c8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cscavenger_icon/scavenger_icon
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x6f82f3c6, Offset: 0x300
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cscavenger_icon/scavenger_icon
     // Params 1, eflags: 0x1 linked
     // Checksum 0x86c117da, Offset: 0x2c0
     // Size: 0x34
     function increment_pulse(player) {
-        player clientfield::function_bb878fc3(self.var_47e79fc, "pulse");
+        player clientfield::function_bb878fc3(var_47e79fc, "pulse");
     }
 
     // Namespace cscavenger_icon/scavenger_icon

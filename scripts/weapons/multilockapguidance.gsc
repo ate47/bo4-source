@@ -158,9 +158,7 @@ function aplockloop(weapon) {
                     if (timepassed < locklength) {
                         continue;
                     }
-                    /#
-                        assert(isdefined(target.aptarget));
-                    #/
+                    assert(isdefined(target.aptarget));
                     target.aplockfinalized = 1;
                     target.aplocking = 0;
                     target.aplockpending = 0;

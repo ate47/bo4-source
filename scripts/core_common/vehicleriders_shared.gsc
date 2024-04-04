@@ -16,25 +16,24 @@
 // Method(s) 2 Total 2
 class class_358332cc {
 
+    var riders;
+    var var_3acc1a95;
+    var var_4301b21d;
+    var var_709c0a6f;
+    var var_9e2a2132;
+    var var_dad0959b;
+
     // Namespace class_358332cc/vehicleriders_shared
     // Params 0, eflags: 0x9 linked
     // Checksum 0x96b9ab5e, Offset: 0xa00
     // Size: 0x4a
-    __constructor() {
-        self.riders = [];
-        self.var_4301b21d = 0;
-        self.var_3acc1a95 = 0;
-        self.var_9e2a2132 = 0;
-        self.var_709c0a6f = 0;
-        self.var_dad0959b = 0;
-    }
-
-    // Namespace class_358332cc/vehicleriders_shared
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0xa58
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        riders = [];
+        var_4301b21d = 0;
+        var_3acc1a95 = 0;
+        var_9e2a2132 = 0;
+        var_709c0a6f = 0;
+        var_dad0959b = 0;
     }
 
 }
@@ -81,9 +80,7 @@ function private function_d64f1d30() {
 // Checksum 0xc606949f, Offset: 0x4f0
 // Size: 0x4c
 function function_196797c9(vehicle) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     if (isdefined(vehicle.vehicleridersbundle)) {
         return true;
     }
@@ -103,9 +100,7 @@ function private function_810a3de5(vehicle) {
 // Checksum 0xe5a923dc, Offset: 0x560
 // Size: 0xf0
 function private function_41cf7b1d(vehicle) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     var_4301b21d = function_999240f5(vehicle);
     bundle = struct::get_script_bundle("vehicleriders", vehicle.vehicleridersbundle);
     for (seat = 0; seat < var_4301b21d; seat++) {
@@ -122,9 +117,7 @@ function private function_41cf7b1d(vehicle) {
 // Checksum 0x664c819, Offset: 0x658
 // Size: 0xe6
 function private function_f7ce77b(vehicle) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     var_4301b21d = function_999240f5(vehicle);
     bundle = struct::get_script_bundle("vehicleriders", vehicle.vehicleridersbundle);
     for (seat = 0; seat < var_4301b21d; seat++) {
@@ -141,9 +134,7 @@ function private function_f7ce77b(vehicle) {
 // Checksum 0x7f9b887e, Offset: 0x748
 // Size: 0xe6
 function private function_2453a4a2(vehicle) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     var_4301b21d = function_999240f5(vehicle);
     bundle = struct::get_script_bundle("vehicleriders", vehicle.vehicleridersbundle);
     for (seat = 0; seat < var_4301b21d; seat++) {
@@ -160,9 +151,7 @@ function private function_2453a4a2(vehicle) {
 // Checksum 0x2569e966, Offset: 0x838
 // Size: 0xfa
 function private function_72b503cc(vehicle) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     var_4301b21d = function_999240f5(vehicle);
     var_3acc1a95 = 0;
     bundle = struct::get_script_bundle("vehicleriders", vehicle.vehicleridersbundle);
@@ -180,15 +169,11 @@ function private function_72b503cc(vehicle) {
 // Checksum 0x309b2800, Offset: 0x940
 // Size: 0xb6
 function function_999240f5(vehicle) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     if (!function_196797c9(vehicle)) {
         return 0;
     }
-    /#
-        assert(isdefined(vehicle.vehicleridersbundle));
-    #/
+    assert(isdefined(vehicle.vehicleridersbundle));
     var_4301b21d = struct::get_script_bundle("vehicleriders", vehicle.vehicleridersbundle).var_4301b21d;
     if (isdefined(var_4301b21d)) {
         return var_4301b21d;
@@ -201,9 +186,7 @@ function function_999240f5(vehicle) {
 // Checksum 0xa960864c, Offset: 0xaf8
 // Size: 0x448
 function private on_vehicle_spawned() {
-    /#
-        assert(isvehicle(self));
-    #/
+    assert(isvehicle(self));
     if (!function_196797c9(self)) {
         return;
     }
@@ -269,15 +252,9 @@ function private on_vehicle_spawned() {
 // Checksum 0x82c65603, Offset: 0xf48
 // Size: 0xe6
 function private function_e1008fbd(vehicle) {
-    /#
-        assert(isdefined(vehicle));
-    #/
-    /#
-        assert(isdefined(vehicle.var_761c973));
-    #/
-    /#
-        assert(isdefined(vehicle.var_761c973.var_3acc1a95));
-    #/
+    assert(isdefined(vehicle));
+    assert(isdefined(vehicle.var_761c973));
+    assert(isdefined(vehicle.var_761c973.var_3acc1a95));
     for (position = 1; position <= vehicle.var_761c973.var_3acc1a95; position++) {
         if (!vehicle flag::get("crew" + position + "_occupied")) {
             return ("crew" + position);
@@ -292,12 +269,8 @@ function private function_e1008fbd(vehicle) {
 // Size: 0xa4
 function private function_2cec1af6(vehicle, seat) {
     flag = seat + "_occupied";
-    /#
-        assert(vehicle flag::exists(flag));
-    #/
-    /#
-        assert(!vehicle flag::get(flag));
-    #/
+    assert(vehicle flag::exists(flag));
+    assert(!vehicle flag::get(flag));
     vehicle flag::set(flag);
 }
 
@@ -307,12 +280,8 @@ function private function_2cec1af6(vehicle, seat) {
 // Size: 0xa4
 function private function_2e28cc0(vehicle, seat) {
     flag = seat + "_occupied";
-    /#
-        assert(vehicle flag::exists(flag));
-    #/
-    /#
-        assert(!vehicle flag::get(flag));
-    #/
+    assert(vehicle flag::exists(flag));
+    assert(!vehicle flag::get(flag));
     vehicle flag::clear(flag);
 }
 
@@ -322,9 +291,7 @@ function private function_2e28cc0(vehicle, seat) {
 // Size: 0x6a
 function get_human_bundle(assertifneeded = 1) {
     if (assertifneeded) {
-        /#
-            assert(isdefined(self.vehicleridersbundle), "<unknown string>");
-        #/
+        assert(isdefined(self.vehicleridersbundle), "<unknown string>");
     }
     return struct::get_script_bundle("vehicleriders", self.vehicleridersbundle);
 }
@@ -335,9 +302,7 @@ function get_human_bundle(assertifneeded = 1) {
 // Size: 0x6a
 function get_robot_bundle(assertifneeded = 1) {
     if (assertifneeded) {
-        /#
-            assert(isdefined(self.vehicleridersrobotbundle), "<unknown string>");
-        #/
+        assert(isdefined(self.vehicleridersrobotbundle), "<unknown string>");
     }
     return struct::get_script_bundle("vehicleriders", self.vehicleridersrobotbundle);
 }
@@ -348,9 +313,7 @@ function get_robot_bundle(assertifneeded = 1) {
 // Size: 0x6a
 function get_warlord_bundle(assertifneeded = 1) {
     if (assertifneeded) {
-        /#
-            assert(isdefined(self.vehicleriderswarlordbundle), "<unknown string>");
-        #/
+        assert(isdefined(self.vehicleriderswarlordbundle), "<unknown string>");
     }
     return struct::get_script_bundle("vehicleriders", self.vehicleriderswarlordbundle);
 }
@@ -360,24 +323,16 @@ function get_warlord_bundle(assertifneeded = 1) {
 // Checksum 0x89ed7695, Offset: 0x1300
 // Size: 0x142
 function private function_e84837df(ai, vehicle) {
-    /#
-        assert(isactor(ai));
-    #/
-    /#
-        assert(isdefined(ai.archetype));
-    #/
-    /#
-        assert(function_196797c9(vehicle));
-    #/
+    assert(isactor(ai));
+    assert(isdefined(ai.archetype));
+    assert(function_196797c9(vehicle));
     if (ai.archetype == #"robot") {
         return vehicle get_robot_bundle();
     }
     if (ai.archetype == #"warlord") {
         return vehicle get_warlord_bundle();
     }
-    /#
-        assert(ai.archetype == #"human", "<unknown string>" + ai.archetype);
-    #/
+    assert(ai.archetype == #"human", "<unknown string>" + ai.archetype);
     return vehicle get_human_bundle();
 }
 
@@ -386,9 +341,7 @@ function private function_e84837df(ai, vehicle) {
 // Checksum 0x1ddeae75, Offset: 0x1450
 // Size: 0xee
 function function_b9342b7d(ai, vehicle, seat) {
-    /#
-        assert(isactor(ai));
-    #/
+    assert(isactor(ai));
     bundle = undefined;
     bundle = vehicle function_e84837df(ai, vehicle);
     foreach (s_rider in bundle.objects) {
@@ -403,31 +356,17 @@ function function_b9342b7d(ai, vehicle, seat) {
 // Checksum 0x9dbbae75, Offset: 0x1548
 // Size: 0x26c
 function private init_rider(ai, vehicle, seat) {
-    /#
-        assert(isdefined(vehicle));
-    #/
-    /#
-        assert(isactor(ai));
-    #/
-    /#
-        assert(!isdefined(ai.var_ec30f5da));
-    #/
+    assert(isdefined(vehicle));
+    assert(isactor(ai));
+    assert(!isdefined(ai.var_ec30f5da));
     ai.var_ec30f5da = function_b9342b7d(ai, vehicle, seat);
     ai.vehicle = vehicle;
     ai.var_5574287b = seat;
     if (isdefined(ai.var_ec30f5da.rideanim) && !isanimlooping(ai.var_ec30f5da.rideanim)) {
-        /#
-            /#
-                assertmsg("<unknown string>" + seat + "<unknown string>" + function_9e72a96(ai.vehicle.vehicletype) + "<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>" + seat + "<unknown string>" + function_9e72a96(ai.vehicle.vehicletype) + "<unknown string>");
     }
     if (isdefined(ai.var_ec30f5da.aligntag) && !isdefined(ai.vehicle gettagorigin(ai.var_ec30f5da.aligntag))) {
-        /#
-            /#
-                assertmsg("<unknown string>" + seat + "<unknown string>" + function_9e72a96(ai.vehicle.vehicletype) + "<unknown string>" + ai.var_ec30f5da.aligntag + "<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>" + seat + "<unknown string>" + function_9e72a96(ai.vehicle.vehicletype) + "<unknown string>" + ai.var_ec30f5da.aligntag + "<unknown string>");
     }
     ai flag::init("in_vehicle");
     ai flag::init("riding_vehicle");
@@ -438,21 +377,13 @@ function private init_rider(ai, vehicle, seat) {
 // Checksum 0xc552485a, Offset: 0x17c0
 // Size: 0x48e
 function fill_riders(a_ai, vehicle, seat) {
-    /#
-        assert(isvehicle(vehicle));
-    #/
+    assert(isvehicle(vehicle));
     if (!function_196797c9(vehicle)) {
-        /#
-            /#
-                assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
         return;
     }
     if (isdefined(seat)) {
-        /#
-            assert(seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>");
-        #/
+        assert(seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>");
     } else {
         seat = "all";
     }
@@ -512,15 +443,9 @@ function fill_riders(a_ai, vehicle, seat) {
 // Checksum 0x43ec07a3, Offset: 0x1c58
 // Size: 0x322
 function unload(seat) {
-    /#
-        assert(isvehicle(self));
-    #/
+    assert(isvehicle(self));
     if (!function_196797c9(self)) {
-        /#
-            /#
-                assertmsg("<unknown string>" + function_9e72a96(self.vehicletype) + "<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>" + function_9e72a96(self.vehicletype) + "<unknown string>");
         return;
     }
     if (isdefined(seat) && seat != "undefined") {
@@ -529,9 +454,7 @@ function unload(seat) {
         } else if (seat == "gunners") {
             seat = "gunner1";
         }
-        /#
-            assert(seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>");
-        #/
+        assert(seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>");
     } else {
         seat = "all";
     }
@@ -543,9 +466,7 @@ function unload(seat) {
         return;
     }
     var_4301b21d = self.var_761c973.var_4301b21d;
-    /#
-        assert(var_4301b21d > 0);
-    #/
+    assert(var_4301b21d > 0);
     switch (seat) {
     case #"driver":
         function_114d7bd3(self);
@@ -578,9 +499,7 @@ function private function_114d7bd3(vehicle) {
     }
     if (vehicle flag::get("driver_occupied") && isdefined(vehicle.var_761c973.riders[#"driver"]) && isalive(vehicle.var_761c973.riders[#"driver"])) {
         ai = vehicle.var_761c973.riders[#"driver"];
-        /#
-            assert(ai flag::get("<unknown string>"));
-        #/
+        assert(ai flag::get("<unknown string>"));
         closeanim = undefined;
         if (isdefined(ai.var_ec30f5da.vehiclecloseanim)) {
             closeanim = ai.var_ec30f5da.vehiclecloseanim;
@@ -603,9 +522,7 @@ function private function_b56639f2(vehicle) {
     }
     if (vehicle flag::get("passenger1_occupied") && isdefined(vehicle.var_761c973.riders[#"passenger1"]) && isalive(vehicle.var_761c973.riders[#"passenger1"])) {
         ai = vehicle.var_761c973.riders[#"passenger1"];
-        /#
-            assert(ai flag::get("<unknown string>"));
-        #/
+        assert(ai flag::get("<unknown string>"));
         closeanim = undefined;
         if (isdefined(ai.var_ec30f5da.vehiclecloseanim)) {
             closeanim = ai.var_ec30f5da.vehiclecloseanim;
@@ -628,9 +545,7 @@ function private function_2ef91b74(vehicle) {
     }
     if (vehicle flag::get("gunner1_occupied") && isdefined(vehicle.var_761c973.riders[#"gunner1"]) && isalive(vehicle.var_761c973.riders[#"gunner1"])) {
         ai = vehicle.var_761c973.riders[#"gunner1"];
-        /#
-            assert(ai flag::get("<unknown string>"));
-        #/
+        assert(ai flag::get("<unknown string>"));
         closeanim = undefined;
         if (isdefined(ai.var_ec30f5da.vehiclecloseanim)) {
             closeanim = ai.var_ec30f5da.vehiclecloseanim;
@@ -648,9 +563,7 @@ function private function_2ef91b74(vehicle) {
 // Checksum 0x1a61a6f6, Offset: 0x2528
 // Size: 0x374
 function private function_2ca26543(vehicle) {
-    /#
-        assert(isdefined(vehicle.var_761c973.var_4301b21d) && vehicle.var_761c973.var_4301b21d > 0);
-    #/
+    assert(isdefined(vehicle.var_761c973.var_4301b21d) && vehicle.var_761c973.var_4301b21d > 0);
     if (!isdefined(vehicle.var_761c973.var_3acc1a95)) {
         return;
     }
@@ -665,9 +578,7 @@ function private function_2ca26543(vehicle) {
         flag = seat + "_occupied";
         if (vehicle flag::get(flag) && isdefined(vehicle.var_761c973.riders[seat]) && isalive(vehicle.var_761c973.riders[seat])) {
             ai = vehicle.var_761c973.riders[seat];
-            /#
-                assert(ai flag::get("<unknown string>"));
-            #/
+            assert(ai flag::get("<unknown string>"));
             if (!isdefined(var_91b346cc)) {
                 if (isdefined(ai.var_ec30f5da.vehiclecloseanim)) {
                     n_crew_door_close_position = seat;
@@ -698,24 +609,12 @@ function private function_2ca26543(vehicle) {
 // Checksum 0x4a16ee5d, Offset: 0x28a8
 // Size: 0x458
 function get_out(vehicle, ai, seat) {
-    /#
-        assert(isdefined(ai));
-    #/
-    /#
-        assert(isalive(ai), "<unknown string>");
-    #/
-    /#
-        assert(isactor(ai), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(ai.vehicle), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(ai.var_ec30f5da));
-    #/
-    /#
-        assert(seat == "<unknown string>" || seat == "<unknown string>" || issubstr(seat, "<unknown string>") || seat == "<unknown string>");
-    #/
+    assert(isdefined(ai));
+    assert(isalive(ai), "<unknown string>");
+    assert(isactor(ai), "<unknown string>");
+    assert(isdefined(ai.vehicle), "<unknown string>");
+    assert(isdefined(ai.var_ec30f5da));
+    assert(seat == "<unknown string>" || seat == "<unknown string>" || issubstr(seat, "<unknown string>") || seat == "<unknown string>");
     ai notify(#"exiting_vehicle");
     if (isdefined(ai.var_ec30f5da.vehicleexitanim)) {
         ai.vehicle clientfield::increment(ai.var_ec30f5da.position + "_exit", 1);
@@ -751,9 +650,7 @@ function get_out(vehicle, ai, seat) {
         exit_variable(ai);
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     if (isdefined(ai)) {
@@ -771,18 +668,14 @@ function get_out(vehicle, ai, seat) {
 // Checksum 0xe3348436, Offset: 0x2d08
 // Size: 0x13c
 function exit_ground(ai) {
-    /#
-        assert(isdefined(ai));
-    #/
+    assert(isdefined(ai));
     ai endon(#"death");
     if (!isdefined(self.var_ec30f5da.exitgrounddeathanim)) {
         ai thread ragdoll_dead_exit_rider(ai);
     } else {
         ai animation::set_death_anim(ai.var_ec30f5da.exitgrounddeathanim);
     }
-    /#
-        assert(isdefined(ai.var_ec30f5da.exitgroundanim), "<unknown string>" + ai.var_ec30f5da.position + "<unknown string>");
-    #/
+    assert(isdefined(ai.var_ec30f5da.exitgroundanim), "<unknown string>" + ai.var_ec30f5da.position + "<unknown string>");
     if (isdefined(ai.var_ec30f5da.exitgroundanim)) {
         animation::play(ai.var_ec30f5da.exitgroundanim, ai.vehicle, ai.var_ec30f5da.aligntag);
     }
@@ -793,12 +686,8 @@ function exit_ground(ai) {
 // Checksum 0x2930376e, Offset: 0x2e50
 // Size: 0xf8
 function remove_riders_after_wait(vehicle, a_riders_to_remove) {
-    /#
-        assert(isdefined(vehicle) && isdefined(a_riders_to_remove));
-    #/
-    /#
-        assert(isdefined(vehicle.var_761c973.riders));
-    #/
+    assert(isdefined(vehicle) && isdefined(a_riders_to_remove));
+    assert(isdefined(vehicle.var_761c973.riders));
     if (isdefined(a_riders_to_remove)) {
         foreach (ai in a_riders_to_remove) {
             arrayremovevalue(vehicle.var_761c973.riders, ai, 1);
@@ -824,9 +713,7 @@ function private handle_falling_death() {
 // Checksum 0x60afad7e, Offset: 0x2fc8
 // Size: 0xc8
 function ragdoll_dead_exit_rider(ai) {
-    /#
-        assert(isactor(ai));
-    #/
+    assert(isactor(ai));
     ai endon(#"exited_vehicle");
     ai waittill(#"death");
     if (isdefined(ai) && !ai isragdoll()) {
@@ -844,7 +731,7 @@ function private forward_euler_integration(e_move, v_target_landing, n_initial_s
     landed = 0;
     position = self.origin;
     velocity = (0, 0, n_initial_speed * -1);
-    gravity = vectorscale((0, 0, -1), 385.8);
+    gravity = (0, 0, -385.8);
     while (!landed) {
         previousposition = position;
         velocity = velocity + gravity * 0.1;
@@ -869,16 +756,12 @@ function private forward_euler_integration(e_move, v_target_landing, n_initial_s
 // Checksum 0xb1dd1608, Offset: 0x3220
 // Size: 0x540
 function exit_variable(ai) {
-    /#
-        assert(isdefined(ai));
-    #/
+    assert(isdefined(ai));
     ai endon(#"death");
     ai notify(#"exiting_vehicle");
     ai thread handle_falling_death();
     ai animation::set_death_anim(ai.var_ec30f5da.exithighdeathanim);
-    /#
-        assert(isdefined(ai.var_ec30f5da.exithighanim), "<unknown string>" + ai.var_ec30f5da.position + "<unknown string>");
-    #/
+    assert(isdefined(ai.var_ec30f5da.exithighanim), "<unknown string>" + ai.var_ec30f5da.position + "<unknown string>");
     animation::play(ai.var_ec30f5da.exithighanim, ai.vehicle, ai.var_ec30f5da.aligntag, 1, 0, 0);
     ai animation::set_death_anim(ai.var_ec30f5da.exithighloopdeathanim);
     n_cur_height = get_height(ai.vehicle);
@@ -931,7 +814,7 @@ function exit_high_loop_anim(e_parent) {
 // Checksum 0x503ea0dd, Offset: 0x37d8
 // Size: 0xea
 function get_height(e_ignore = self) {
-    trace = groundtrace(self.origin + (0, 0, 10), self.origin + vectorscale((0, 0, -1), 10000), 0, e_ignore, 0);
+    trace = groundtrace(self.origin + (0, 0, 10), self.origin + (0, 0, -10000), 0, e_ignore, 0);
     /#
         recordline(self.origin + (0, 0, 10), trace[#"position"], (1, 0.5, 0), "<unknown string>", self);
     #/
@@ -956,20 +839,14 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
             seat = "crew";
         }
     }
-    /#
-        assert(isactor(ai));
-    #/
-    /#
-        assert(isdefined(seat) && (seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>"));
-    #/
+    assert(isactor(ai));
+    assert(isdefined(seat) && (seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>"));
     switch (seat) {
     case #"driver":
         if (vehicle.var_761c973.var_9e2a2132 && vehicle flag::get("driver_occupied")) {
             /#
                 if (var_7c3e4d44) {
-                    /#
-                        assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
-                    #/
+                    assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
                 }
             #/
             return 0;
@@ -980,9 +857,7 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
         if (vehicle.var_761c973.var_709c0a6f && vehicle flag::get("passenger1_occupied")) {
             /#
                 if (var_7c3e4d44) {
-                    /#
-                        assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
-                    #/
+                    assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
                 }
             #/
             return 0;
@@ -993,9 +868,7 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
         if (vehicle.var_761c973.var_dad0959b && vehicle flag::get("gunner1_occupied")) {
             /#
                 if (var_7c3e4d44) {
-                    /#
-                        assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
-                    #/
+                    assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
                 }
             #/
             return 0;
@@ -1007,9 +880,7 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
         if (var_b11e7fca == "none") {
             /#
                 if (var_7c3e4d44) {
-                    /#
-                        assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
-                    #/
+                    assertmsg("<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>");
                 }
             #/
             return 0;
@@ -1018,26 +889,14 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
         seat = var_b11e7fca;
         break;
     }
-    /#
-        assert(isdefined(ai.var_ec30f5da));
-    #/
-    /#
-        assert(isdefined(ai.vehicle));
-    #/
+    assert(isdefined(ai.var_ec30f5da));
+    assert(isdefined(ai.vehicle));
     if (!isdefined(ai.var_ec30f5da.rideanim)) {
-        /#
-            /#
-                assertmsg("<unknown string>" + seat + "<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>" + function_e84837df(ai, vehicle));
-            #/
-        #/
+        assertmsg("<unknown string>" + seat + "<unknown string>" + function_9e72a96(vehicle.vehicletype) + "<unknown string>" + function_e84837df(ai, vehicle));
         return;
     }
-    /#
-        assert(isdefined(vehicle.var_761c973.riders));
-    #/
-    /#
-        assert(!isdefined(vehicle.var_761c973.riders[seat]));
-    #/
+    assert(isdefined(vehicle.var_761c973.riders));
+    assert(!isdefined(vehicle.var_761c973.riders[seat]));
     vehicle.var_761c973.riders[seat] = ai;
     if (seat != "none") {
         function_2cec1af6(vehicle, seat);
@@ -1056,9 +915,7 @@ function get_in(ai, vehicle, seat, var_7c3e4d44 = 1) {
 function private handle_rider_death(ai, vehicle) {
     ai endon(#"death", #"exiting_vehicle");
     vehicle endon(#"death");
-    /#
-        assert(isdefined(ai.var_ec30f5da));
-    #/
+    assert(isdefined(ai.var_ec30f5da));
     if (isdefined(ai.var_ec30f5da.ridedeathanim)) {
         ai animation::set_death_anim(ai.var_ec30f5da.ridedeathanim);
     }
@@ -1133,9 +990,7 @@ function delete_rider_asap(entity) {
 // Checksum 0x76704f85, Offset: 0x43f8
 // Size: 0x2de
 function function_86c7bebb(seat = "all") {
-    /#
-        assert(isdefined(self) && isvehicle(self) && isdefined(seat));
-    #/
+    assert(isdefined(self) && isvehicle(self) && isdefined(seat));
     ais = [];
     if (!isdefined(self.var_761c973)) {
         return ais;
@@ -1149,9 +1004,7 @@ function function_86c7bebb(seat = "all") {
         } else if (seat == "gunners") {
             seat = "gunner1";
         }
-        /#
-            assert(seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>");
-        #/
+        assert(seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>" || seat == "<unknown string>");
     } else {
         seat = "all";
     }

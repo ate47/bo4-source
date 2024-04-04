@@ -28,9 +28,7 @@ function __init__() {
 // Checksum 0x4fdc61ca, Offset: 0x190
 // Size: 0x13c
 function private function_9abee270(model) {
-    /#
-        assert(isdefined(model));
-    #/
+    assert(isdefined(model));
     if (model.classname != "script_model" && model.classname != "script_brushmodel") {
         return;
     }

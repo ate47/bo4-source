@@ -8,27 +8,11 @@
 class cremote_missile_targets : cluielem {
 
     // Namespace cremote_missile_targets/remote_missile_targets
-    // Params 0, eflags: 0x8
-    // Checksum 0xbdec227e, Offset: 0x2e8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cremote_missile_targets/remote_missile_targets
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x416e4e0a, Offset: 0x5e0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cremote_missile_targets/remote_missile_targets
     // Params 2, eflags: 0x0
     // Checksum 0xf8c5d6a3, Offset: 0x5a8
     // Size: 0x30
     function set_extra_target_3(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "extra_target_3", value);
+        set_data(localclientnum, "extra_target_3", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -36,7 +20,7 @@ class cremote_missile_targets : cluielem {
     // Checksum 0xe7f7ca2a, Offset: 0x570
     // Size: 0x30
     function set_extra_target_2(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "extra_target_2", value);
+        set_data(localclientnum, "extra_target_2", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -44,7 +28,7 @@ class cremote_missile_targets : cluielem {
     // Checksum 0xbcc14938, Offset: 0x538
     // Size: 0x30
     function set_extra_target_1(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "extra_target_1", value);
+        set_data(localclientnum, "extra_target_1", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -52,7 +36,7 @@ class cremote_missile_targets : cluielem {
     // Checksum 0x5a20baeb, Offset: 0x500
     // Size: 0x30
     function set_player_target_active(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "player_target_active", value);
+        set_data(localclientnum, "player_target_active", value);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets
@@ -69,10 +53,10 @@ class cremote_missile_targets : cluielem {
     // Size: 0x94
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "player_target_active", 0);
-        [[ self ]]->set_data(localclientnum, "extra_target_1", 0);
-        [[ self ]]->set_data(localclientnum, "extra_target_2", 0);
-        [[ self ]]->set_data(localclientnum, "extra_target_3", 0);
+        set_data(localclientnum, "player_target_active", 0);
+        set_data(localclientnum, "extra_target_1", 0);
+        set_data(localclientnum, "extra_target_2", 0);
+        set_data(localclientnum, "extra_target_3", 0);
     }
 
     // Namespace cremote_missile_targets/remote_missile_targets

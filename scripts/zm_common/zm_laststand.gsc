@@ -293,7 +293,6 @@ function function_70fcc093() {
 // Size: 0x7c
 function auto_revive_on_notify() {
     self endon(#"death", #"player_revived");
-    s_result = undefined;
     s_result = self waittill(#"auto_revive", #"remote_revive");
     self thread auto_revive(s_result.reviver);
 }
@@ -337,7 +336,6 @@ function wait_and_revive() {
     var_3269dfa3 = (isdefined(self.var_b92e42da) ? self.var_b92e42da : getdvarfloat(#"player_laststandbleedouttime", 0)) * 0.25;
     var_3269dfa3 = getdvarfloat(#"hash_1d447d6b4492bf4f", var_3269dfa3);
     self thread laststand::revive_hud_show_n_fade(#"zombie/reviving_solo", var_3269dfa3);
-    var_c564fe97 = undefined;
     var_c564fe97 = level waittilltimeout(var_3269dfa3, #"end_of_round");
     if (var_c564fe97._notify === "end_of_round") {
         self thread laststand::revive_hud_show_n_fade(#"zombie/reviving_solo", 1);
@@ -494,9 +492,7 @@ function function_5ff83684() {
 // Checksum 0x1e67f601, Offset: 0x2240
 // Size: 0xb2
 function function_aac4b2c9(weapon) {
-    /#
-        assert(weapon.weapclass === "<unknown string>" || weapon.weapclass === "<unknown string>" || weapon.weapclass === "<unknown string>", "<unknown string>");
-    #/
+    assert(weapon.weapclass === "<unknown string>" || weapon.weapclass === "<unknown string>" || weapon.weapclass === "<unknown string>", "<unknown string>");
     level flagsys::wait_till(#"load_main_complete");
     level.pistol_values[level.pistol_values.size] = weapon;
 }
@@ -509,7 +505,6 @@ function function_6155752d() {
     self endon(#"disconnect");
     self.var_d84718d1 = [];
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_change_complete");
         if (isinarray(self.var_d84718d1, s_result.weapon) || laststand::player_is_in_laststand()) {
             continue;
@@ -676,12 +671,8 @@ function laststand_clean_up_reviving_any(e_revivee) {
 // Checksum 0x5e19dc0e, Offset: 0x2b98
 // Size: 0x7c
 function laststand_give_pistol() {
-    /#
-        assert(isdefined(self.laststandpistol));
-    #/
-    /#
-        assert(self.laststandpistol != level.weaponnone);
-    #/
+    assert(isdefined(self.laststandpistol));
+    assert(self.laststandpistol != level.weaponnone);
     function_25a89622();
     self thread wait_switch_weapon(1, self.laststandpistol);
 }
@@ -1104,9 +1095,7 @@ function revive_trigger_think(t_secondary) {
                     w_revive_tool = e_reviver.weaponrevivetool;
                 }
                 w_reviver = e_reviver getcurrentweapon();
-                /#
-                    assert(isdefined(w_reviver));
-                #/
+                assert(isdefined(w_reviver));
                 if (w_reviver == w_revive_tool) {
                     continue;
                 }
@@ -1257,10 +1246,10 @@ function can_revive(e_revivee, ignore_sight_checks = 0, ignore_touch_checks = 0)
         if (!self laststand::is_facing(e_revivee)) {
             return false;
         }
-        if (!sighttracepassed(self.origin + vectorscale((0, 0, 1), 50), e_revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+        if (!sighttracepassed(self.origin + (0, 0, 50), e_revivee.origin + (0, 0, 30), 0, undefined)) {
             return false;
         }
-        if (!bullettracepassed(self.origin + vectorscale((0, 0, 1), 50), e_revivee.origin + vectorscale((0, 0, 1), 30), 0, undefined)) {
+        if (!bullettracepassed(self.origin + (0, 0, 50), e_revivee.origin + (0, 0, 30), 0, undefined)) {
             return false;
         }
     }
@@ -1309,9 +1298,7 @@ function revive_get_revive_time(e_revivee) {
 // Checksum 0x26698a35, Offset: 0x4f80
 // Size: 0x470
 function revive_do_revive(e_revivee, w_reviver, w_revive_tool, t_secondary) {
-    /#
-        assert(self is_reviving(e_revivee, t_secondary));
-    #/
+    assert(self is_reviving(e_revivee, t_secondary));
     revivetime = self revive_get_revive_time(e_revivee);
     if (!isdefined(e_revivee.var_6fc48a11)) {
         e_revivee.var_6fc48a11 = 0;
@@ -1551,15 +1538,9 @@ function xp_revive_once_per_round(player_being_revived) {
 // Checksum 0x7020d18e, Offset: 0x5e70
 // Size: 0x8c
 function revive_force_revive(reviver) {
-    /#
-        assert(isdefined(self));
-    #/
-    /#
-        assert(isplayer(self));
-    #/
-    /#
-        assert(self laststand::player_is_in_laststand());
-    #/
+    assert(isdefined(self));
+    assert(isplayer(self));
+    assert(self laststand::player_is_in_laststand());
     self thread revive_success(reviver);
 }
 

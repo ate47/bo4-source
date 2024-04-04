@@ -22,8 +22,8 @@ function event_handler[level_init] main(eventstruct) {
     load::main();
     compass::setupminimap("");
     level.cleandepositpoints = array((138.5, -58.5, 60), (1904.5, 921.75, 8), (75, 1152, 0), (-1465.5, -1271, 8), (-106, -1500, 8));
-    spawncollision("collision_clip_wall_128x128x10", "collider", (-957, -1170, 104), vectorscale((0, 1, 0), 180));
-    spawncollision("collision_clip_wall_128x128x10", "collider", (-957, -1170, -24), vectorscale((0, 1, 0), 180));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-957, -1170, 104), (0, 180, 0));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (-957, -1170, -24), (0, 180, 0));
     function_2cdcf5c3();
 }
 

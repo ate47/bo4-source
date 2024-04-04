@@ -8,28 +8,14 @@
 // Method(s) 13 Total 20
 class czm_red_challenges_hud : cluielem {
 
-    // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x924a4a5f, Offset: 0x398
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x91b99d56, Offset: 0x8e0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
     // Params 2, eflags: 0x1 linked
     // Checksum 0x868e354e, Offset: 0x898
     // Size: 0x3c
     function set_challengefailing(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "challengeFailing", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "challengeFailing", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -37,7 +23,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xbc9ce00, Offset: 0x850
     // Size: 0x3c
     function set_rewardhidden(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "rewardHidden", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "rewardHidden", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -45,7 +31,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0x88b7c0a8, Offset: 0x808
     // Size: 0x3c
     function set_tributeavailable(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "tributeAvailable", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "tributeAvailable", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -53,7 +39,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0x4ba442a0, Offset: 0x7c8
     // Size: 0x34
     function increment_progress(player) {
-        player clientfield::function_bb878fc3(self.var_47e79fc, "progress");
+        player clientfield::function_bb878fc3(var_47e79fc, "progress");
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -61,7 +47,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xaa45b088, Offset: 0x780
     // Size: 0x3c
     function set_binlocation(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "bInLocation", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "bInLocation", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -69,7 +55,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xa4e318fc, Offset: 0x738
     // Size: 0x3c
     function set_bottomtext(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "bottomText", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "bottomText", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -77,7 +63,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xa114966d, Offset: 0x6f0
     // Size: 0x3c
     function set_challengetext(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "challengeText", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "challengeText", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -86,26 +72,22 @@ class czm_red_challenges_hud : cluielem {
     // Size: 0x13c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"visiblepc" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
         if (#"trials" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud

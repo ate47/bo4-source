@@ -303,7 +303,6 @@ function function_af2bf286(player) {
     var_8e76086 = mpdialog_value("warmachineThreatMinDistance", 100);
     var_8e76086 = var_8e76086 * var_8e76086;
     while (true) {
-        waitresult = undefined;
         waitresult = player waittill(#"weapon_fired");
         if (!isdefined(player)) {
             return;
@@ -356,7 +355,6 @@ function function_44b5e397() {
         nextweapon = self.currentweapon;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         if (waitresult.weapon == getweapon(#"hero_pineapplegun")) {
             self thread function_af2bf286(self);
@@ -627,7 +625,6 @@ function function_7139078d() {
     self notify("6b96a91e5ff2b8a7");
     self endon("6b96a91e5ff2b8a7");
     while (true) {
-        result = undefined;
         result = self waittill(#"bulletwhizby");
         if (self hasperk(#"specialty_quieter")) {
             continue;
@@ -1393,7 +1390,6 @@ function grenade_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
         weapon = waitresult.weapon;
@@ -1406,7 +1402,6 @@ function grenade_tracking() {
             case #"eq_slow_grenade":
             case #"eq_molotov":
             case #"concussion_grenade":
-                waitresult = undefined;
                 waitresult = grenade waittilltimeout(0.3, #"death");
                 if (waitresult._notify == "death" || !isdefined(grenade)) {
                     continue;
@@ -1443,7 +1438,6 @@ function missile_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"missile_fire");
         missile = waitresult.projectile;
         weapon = waitresult.weapon;
@@ -1465,9 +1459,7 @@ function missile_tracking() {
 function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
     level endon(#"game_ended");
     if (waittime <= 0) {
-        /#
-            assert(waittime > 0, "enemyContactAllyRadius");
-        #/
+        assert(waittime > 0, "enemyContactAllyRadius");
         return;
     }
     while (true) {
@@ -1500,7 +1492,6 @@ function sticky_grenade_tracking() {
     self endon(#"death");
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_stuck");
         grenade = waitresult.projectile;
         var_76d5e4ce = isalive(self) && isplayer(self) && !self hasperk(#"specialty_quieter");

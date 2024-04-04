@@ -54,9 +54,7 @@ function statechange(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 // Size: 0x14c
 function restartfx(localclientnum, blinkstage) {
     self notify(#"restart_fx");
-    /#
-        println("<unknown string>" + blinkstage);
-    #/
+    println("<unknown string>" + blinkstage);
     switch (blinkstage) {
     case 0:
         self spawn_solid_fx(localclientnum);
@@ -249,7 +247,6 @@ function blink_light(localclientnum) {
 function collisionhandler(localclientnum) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         hip = waitresult.velocity;
         hitn = waitresult.normal;
@@ -294,9 +291,7 @@ function getminimumflyheight() {
     if (isdefined(airsupport_height)) {
         planeflyheight = airsupport_height.origin[2];
     } else {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         planeflyheight = 850;
         if (isdefined(level.airsupportheightscale)) {
             level.airsupportheightscale = getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);

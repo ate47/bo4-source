@@ -46,7 +46,6 @@ function watchforproximityexplosion() {
     }
     weapon_proximity = getweapon(#"proximity_grenade");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"explode");
         weapon = waitresult.weapon;
         owner_cent = waitresult.owner_cent;

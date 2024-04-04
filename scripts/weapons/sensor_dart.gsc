@@ -189,7 +189,6 @@ function function_f4970a20(watcher, player) {
         player.sensor_darts = array(player.sensor_darts);
     }
     player.sensor_darts[player.sensor_darts.size] = self;
-    waitresult = undefined;
     waitresult = self waittilltimeout(5, #"stationary");
     if (waitresult._notify == #"timeout") {
         function_4db10465();
@@ -220,7 +219,6 @@ function function_f4970a20(watcher, player) {
 // Size: 0xec
 function private function_cb672f03() {
     owner = self.owner;
-    waitresult = undefined;
     waitresult = self waittill(#"picked_up", #"death");
     if (isdefined(owner) && isdefined(owner.sensor_darts)) {
         arrayremovevalue(owner.sensor_darts, undefined);
@@ -314,7 +312,6 @@ function function_55de888f(watcher) {
     self setmaxhealth(self.maxhealth);
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         profilestart();
         damage = waitresult.amount;

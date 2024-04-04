@@ -75,7 +75,7 @@ function function_e7a7ac96(localclientnum, oldval, newval, bnewent, binitialsnap
         return;
     }
     self endon(#"death", #"hash_5423f6c5db580daa");
-    self.var_d1f92a1c = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 4000));
+    self.var_d1f92a1c = util::spawn_model(localclientnum, "tag_origin", self.origin + (0, 0, 4000));
     str_beam = "beam8_zm_raygun2v_elec";
     if (newval > 1) {
         str_beam = "beam8_zm_raygun2v_ug_elec";

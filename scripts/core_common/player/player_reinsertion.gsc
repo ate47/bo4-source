@@ -490,7 +490,7 @@ function function_3c4884f1(var_819e1b79) {
     }
     if (isdefined(targetorigin)) {
         fwd = anglestoforward(targetangles);
-        spawnorigin = targetorigin - fwd * 1000 + vectorscale((0, 0, 1), 500);
+        spawnorigin = targetorigin - fwd * 1000 + (0, 0, 500);
         self setorigin(spawnorigin);
         self player_insertion::start_freefall(fwd * 1000, 0);
     }
@@ -568,9 +568,7 @@ function function_fec68e5c() {
     level.insertion flagsys::set(#"insertion_teleport_completed");
     level.insertion flagsys::wait_till_timeout(1 + 2.5 + 0.5, #"insertion_presentation_completed");
     level.reinsertion.vehicle player_insertion::function_bc16f3b4(level.insertion);
-    /#
-        assert(10 > 0);
-    #/
+    assert(10 > 0);
     wait(10);
     foreach (player in level.insertion.players) {
         if (!isdefined(player) || isdefined(player.var_97b0977) && player.var_97b0977) {
@@ -688,7 +686,7 @@ function function_9536aa3d() {
         }
         foreach (lucky in var_269add6e) {
             spawn_point = rotatepoint((radius, 0, 0), (0, randomint(360), 0));
-            lucky setorigin(center + spawn_point + vectorscale((0, 0, 1), 20000));
+            lucky setorigin(center + spawn_point + (0, 0, 20000));
             lucky function_2ffa8aaf(1, (0, 0, 0), 0);
         }
     #/

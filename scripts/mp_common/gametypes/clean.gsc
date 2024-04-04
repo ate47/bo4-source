@@ -310,7 +310,7 @@ function function_903c4eff(victim, attacker, pos, yawangle) {
         yawangle = randomint(360);
     }
     if (!isdefined(pos)) {
-        pos = victim.origin + vectorscale((0, 0, 1), 40);
+        pos = victim.origin + (0, 0, 40);
     }
     self.droptime = gettime();
     self.team = victim.team;
@@ -406,7 +406,7 @@ function registermp_multi_kill_medals_interface() {
     self clientfield::set("taco_flag", 0);
     self clientfield::set("taco_player_entnum", 15);
     self stoploopsound();
-    self.trigger.origin = vectorscale((0, 0, 1), 1000);
+    self.trigger.origin = (0, 0, 1000);
     self gameobjects::allow_use(#"none");
     waittillframeend();
     if (isdefined(self.var_2581d0d)) {
@@ -540,7 +540,7 @@ function function_fd08eb25() {
         deposithub thread function_b8a3dde4();
         enableinfluencer(deposithub.influencer, 1);
         if (isdefined(level.var_1940f14e)) {
-            level.var_1940f14e.origin = deposithub.origin - vectorscale((0, 0, 1), 8);
+            level.var_1940f14e.origin = deposithub.origin - (0, 0, 8);
             level.var_1940f14e show();
         }
         setmatchflag("bomb_timer_a", 1);

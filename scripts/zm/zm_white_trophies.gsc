@@ -83,7 +83,6 @@ function function_f37ba127() {
     level endon(#"game_ended", #"hash_5aa1c9627e8626e0");
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"hash_13f3f231b45420ef");
         if (waitresult.e_player === self) {
             /#
@@ -219,7 +218,6 @@ function function_5e1138a2() {
     level endon(#"hash_5aa1c9627e8626e0");
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"perk_bought");
         if (isdefined(waitresult.n_slot)) {
             self.var_c9f12812[waitresult.n_slot] = 1;
@@ -251,7 +249,6 @@ function function_5e1138a2() {
 function perk_watcher() {
     self endon(#"hash_1305a28597a2e439", #"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"perk_bought");
         if (isdefined(waitresult.n_slot)) {
             self.var_c9f12812[waitresult.n_slot] = 1;
@@ -279,7 +276,6 @@ function function_91cfddc4() {
 function function_df71a9b9() {
     level endon(#"game_ended", #"hash_5aa1c9627e8626e0");
     while (true) {
-        waitresults = undefined;
         waitresults = level waittill(#"hash_4543ba0bff75332e");
         e_attacker = waitresults.e_player;
         if (isplayer(e_attacker) && isdefined(e_attacker.var_5e47a087)) {

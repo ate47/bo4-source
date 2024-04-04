@@ -23,9 +23,7 @@ function registeraitypefootstepcb(archetype, callback) {
     if (!isdefined(level._footstepcbfuncs)) {
         level._footstepcbfuncs = [];
     }
-    /#
-        assert(!isdefined(level._footstepcbfuncs[archetype]), "<unknown string>" + archetype + "<unknown string>");
-    #/
+    assert(!isdefined(level._footstepcbfuncs[archetype]), "<unknown string>" + archetype + "<unknown string>");
     level._footstepcbfuncs[archetype] = callback;
 }
 
@@ -35,9 +33,7 @@ function registeraitypefootstepcb(archetype, callback) {
 // Size: 0xe2
 function playaifootstep(client_num, pos, surface, notetrack, bone) {
     if (!isdefined(self.archetype)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         footstepdoeverything();
         return;
     }

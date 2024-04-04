@@ -55,7 +55,6 @@ function function_131495a5() {
     level endon(#"end_game");
     self endon(#"disconnect");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         w_weapon = s_waitresult.weapon;
         if (zm_weap_crossbow::is_crossbow_upgraded(w_weapon)) {

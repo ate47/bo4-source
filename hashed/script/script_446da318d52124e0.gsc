@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class cct_timer_mod_ticks : cluielem {
 
-    // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
-    // Params 0, eflags: 0x8
-    // Checksum 0xc0db2d63, Offset: 0x208
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x789ec8aa, Offset: 0x578
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
     // Params 2, eflags: 0x0
     // Checksum 0xa389fedf, Offset: 0x530
     // Size: 0x3c
     function set_timemod(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "timeMod", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "timeMod", value);
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks
@@ -38,38 +24,34 @@ class cct_timer_mod_ticks : cluielem {
     // Size: 0x1fc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"plus" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"minus" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
         if (#"plus_destroyedobj" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
             return;
         }
         if (#"plus_dogkill" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
             return;
         }
         if (#"hash_654551b30d95836c" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 5);
             return;
         }
         if (#"plus_multikill" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_timer_mod_ticks/ct_timer_mod_ticks

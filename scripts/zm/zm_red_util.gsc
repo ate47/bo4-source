@@ -36,7 +36,6 @@ function barrier_impact() {
     self val::set("power_event", "takedamage", 1);
     self.health = 99999;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isdefined(s_result.amount)) {
             self.health = self.health + s_result.amount;
@@ -211,7 +210,7 @@ function can_see(v_pos, var_7b20e52b, n_dot = 0.7) {
     dp = vectordot(v_forward, v_dir);
     if (dp > n_dot) {
         if (isdefined(var_7b20e52b) && var_7b20e52b) {
-            trace = bullettrace(v_pos, self.origin + vectorscale((0, 0, 1), 40), 0, undefined);
+            trace = bullettrace(v_pos, self.origin + (0, 0, 40), 0, undefined);
             if (trace[#"fraction"] < 1) {
                 return false;
             }
@@ -331,11 +330,11 @@ function function_a94baf7b() {
     /#
         a_s_collectibles = struct::get_array("<unknown string>", "<unknown string>");
         foreach (s_collectibles in a_s_collectibles) {
-            sphere(s_collectibles.origin + vectorscale((0, 0, 1), 60), 12, (0, 1, 1), 0.7, 0, 16, 10000);
+            sphere(s_collectibles.origin + (0, 0, 60), 12, (0, 1, 1), 0.7, 0, 16, 10000);
         }
         a_s_scrolls = struct::get_array("<unknown string>", "<unknown string>");
         foreach (s_scrolls in a_s_scrolls) {
-            sphere(s_scrolls.origin + vectorscale((0, 0, 1), 60), 12, (1, 0.5, 0), 0.7, 0, 16, 10000);
+            sphere(s_scrolls.origin + (0, 0, 60), 12, (1, 0.5, 0), 0.7, 0, 16, 10000);
         }
     #/
 }

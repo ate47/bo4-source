@@ -8,21 +8,7 @@
 // Method(s) 6 Total 13
 class cct_shared_button_prompt : cluielem {
 
-    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
-    // Params 0, eflags: 0x8
-    // Checksum 0x5f5d0f30, Offset: 0x1d8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_button_prompt/ct_shared_button_prompt
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xade6e982, Offset: 0x758
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cct_shared_button_prompt/ct_shared_button_prompt
     // Params 2, eflags: 0x0
@@ -30,78 +16,74 @@ class cct_shared_button_prompt : cluielem {
     // Size: 0x47c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"smoke_button" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"frag_button" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
         if (#"hash_321379c3a0d01a39" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
             return;
         }
         if (#"hash_39ade572f801d7d0" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
             return;
         }
         if (#"x_button" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 5);
             return;
         }
         if (#"hash_554e932bc3ab8c3e" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
             return;
         }
         if (#"hash_15620c895dcec00e" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 7);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 7);
             return;
         }
         if (#"hash_2cb5a2ce94a6ee6d" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 8);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 8);
             return;
         }
         if (#"hash_4df4fd56580d5967" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 9);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 9);
             return;
         }
         if (#"hash_343bc60e8e1af20d" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 10);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 10);
             return;
         }
         if (#"hash_35030aa3c799fe40" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 11);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 11);
             return;
         }
         if (#"hash_2269874f1c7c7493" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 12);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 12);
             return;
         }
         if (#"square_button" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 13);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 13);
             return;
         }
         if (#"square_button_paused" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 14);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 14);
             return;
         }
         if (#"hash_1e3e2411c866b2a0" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 15);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 15);
             return;
         }
         if (#"hash_55f9c9d7bfc38059" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 16);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 16);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_button_prompt/ct_shared_button_prompt

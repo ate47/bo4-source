@@ -171,7 +171,6 @@ function player_set_shield_health(damage, max_damage) {
 function function_d987f765() {
     level endon(#"game_ended");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = level waittill(#"carpenter_started");
         if (zm_powerups::function_cfd04802(#"carpenter") && isplayer(s_waitresult.var_264cf1f9)) {
             if (isdefined(s_waitresult.var_264cf1f9.hasriotshield) && s_waitresult.var_264cf1f9.hasriotshield && isdefined(s_waitresult.var_264cf1f9.player_shield_reset_health)) {
@@ -236,9 +235,7 @@ function should_shield_absorb_damage(einflictor, eattacker, idamage, idflags, sm
                     return zombie_utility::function_d2dfacfd(#"riotshield_stowed_block_fraction");
                 }
             } else {
-                /#
-                    assert(!isdefined(self.riotshieldentity), "<unknown string>");
-                #/
+                assert(!isdefined(self.riotshieldentity), "<unknown string>");
             }
         }
     }
@@ -364,7 +361,6 @@ function player_watch_weapon_change() {
 function player_watch_shield_melee() {
     self endon(#"disconnect");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_melee");
         if (waitresult.weapon.isriotshield) {
             self [[ level.riotshield_melee ]](waitresult.weapon);
@@ -379,7 +375,6 @@ function player_watch_shield_melee() {
 function player_watch_shield_melee_power() {
     self endon(#"disconnect");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_melee_power");
         if (waitresult.weapon.isriotshield) {
             self [[ level.riotshield_melee_power ]](waitresult.weapon);

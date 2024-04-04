@@ -137,7 +137,6 @@ function function_95dff91b() {
 // Checksum 0x168a563e, Offset: 0xa30
 // Size: 0x54
 function function_afa2f621() {
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     playsoundatposition(#"hash_fdb4c0b271c6e36", self.origin);
 }
@@ -157,7 +156,6 @@ function setup_door_interact() {
 // Checksum 0x85d789c7, Offset: 0xb10
 // Size: 0x7c
 function door_think() {
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     level function_206702d8();
     if (level.var_98138d6b > 1) {
@@ -196,7 +194,6 @@ function function_16386d70() {
 // Checksum 0x9b6eb719, Offset: 0xd30
 // Size: 0x8c
 function shard_think() {
-    s_activation = undefined;
     s_activation = self waittill(#"trigger_activated");
     playsoundatposition(#"hash_2e9ec816b70bb70e", self.origin);
     self delete();
@@ -217,7 +214,6 @@ function shard_vo(e_who) {
 // Size: 0x178
 function function_d6a4619a() {
     for (b_hidden = 0; !b_hidden; b_hidden = 1) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.weapon.name === #"ww_tesla_sniper_t8" || s_result.weapon.name === #"ww_tesla_sniper_upgraded_t8") {
             if (self.targetname == "big_bird_wing_n") {

@@ -723,7 +723,6 @@ function function_c2b5b27c(local_client_num) {
     self endon(#"death");
     self.var_7122b2ff = 1;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"awareness_action");
         if (isdefined(waitresult.var_53714565)) {
             var_9f19a239 = waitresult.var_53714565;

@@ -25,15 +25,9 @@ function private autoexec init() {
 // Size: 0x674
 function register(name, step_name, var_e788cdd7, setup_func, cleanup_func, var_d6ca4caf, var_27465eb4) {
     /#
-        /#
-            assert(ishash(name), "<unknown string>");
-        #/
-        /#
-            assert(ishash(step_name), "<unknown string>");
-        #/
-        /#
-            assert(ishash(var_e788cdd7), "<unknown string>");
-        #/
+        assert(ishash(name), "<unknown string>");
+        assert(ishash(step_name), "<unknown string>");
+        assert(ishash(var_e788cdd7), "<unknown string>");
         if (!isdefined(name)) {
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
                 iprintlnbold("<unknown string>");
@@ -119,14 +113,8 @@ function start(name, var_9d8cf7f = 0) {
     if (!zm_utility::is_ee_enabled() && !var_9d8cf7f) {
         return;
     }
-    /#
-        assert(ishash(name), "<unknown string>");
-    #/
-    /#
-        /#
-            assert(isdefined(level._ee[name]), "<unknown string>" + function_9e72a96(name) + "<unknown string>");
-        #/
-    #/
+    assert(ishash(name), "<unknown string>");
+    assert(isdefined(level._ee[name]), "<unknown string>" + function_9e72a96(name) + "<unknown string>");
     if (level._ee[name].started) {
         /#
             if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
@@ -140,9 +128,7 @@ function start(name, var_9d8cf7f = 0) {
     var_5ea5c94d = 0;
     /#
         if (ee.skip_to_step > -1) {
-            /#
-                assert(0 <= ee.skip_to_step, "<unknown string>");
-            #/
+            assert(0 <= ee.skip_to_step, "<unknown string>");
             if (0 < ee.skip_to_step) {
                 var_5ea5c94d = 1;
             } else if (0 == ee.skip_to_step) {
@@ -158,14 +144,8 @@ function start(name, var_9d8cf7f = 0) {
 // Checksum 0x1a47757b, Offset: 0xa28
 // Size: 0xa2
 function is_complete(name) {
-    /#
-        assert(ishash(name), "<unknown string>");
-    #/
-    /#
-        /#
-            assert(isdefined(level._ee[name]), "<unknown string>" + function_9e72a96(name) + "<unknown string>");
-        #/
-    #/
+    assert(ishash(name), "<unknown string>");
+    assert(isdefined(level._ee[name]), "<unknown string>" + function_9e72a96(name) + "<unknown string>");
     return level._ee[name].completed;
 }
 
@@ -174,15 +154,9 @@ function is_complete(name) {
 // Checksum 0x1490abbf, Offset: 0xad8
 // Size: 0x142
 function function_9212ff4d(ee_name, step_name) {
-    /#
-        assert(ishash(ee_name), "<unknown string>");
-    #/
-    /#
-        assert(ishash(step_name), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level._ee[ee_name]), "<unknown string>" + ee_name + "<unknown string>");
-    #/
+    assert(ishash(ee_name), "<unknown string>");
+    assert(ishash(step_name), "<unknown string>");
+    assert(isdefined(level._ee[ee_name]), "<unknown string>" + ee_name + "<unknown string>");
     foreach (ee_index, ee_step in level._ee[ee_name].steps) {
         if (step_name == ee_step.name) {
             return ee_index;
@@ -207,7 +181,6 @@ function private run_step(ee, step, var_5ea5c94d) {
     step.started = 1;
     level thread function_3f795dc3(ee, step, var_5ea5c94d);
     if (!step.completed) {
-        waitresult = undefined;
         waitresult = level waittill(step.var_e788cdd7 + "_setup_completed", step.var_e788cdd7 + "_ended_early");
     }
     /#
@@ -243,9 +216,7 @@ function private run_step(ee, step, var_5ea5c94d) {
         /#
             if (ee.skip_to_step > -1) {
                 var_7f1ec3f3 = ee.current_step + 1;
-                /#
-                    assert(var_7f1ec3f3 <= ee.skip_to_step, "<unknown string>");
-                #/
+                assert(var_7f1ec3f3 <= ee.skip_to_step, "<unknown string>");
                 if (var_7f1ec3f3 < ee.skip_to_step) {
                     var_5ea5c94d = 1;
                 } else if (var_7f1ec3f3 == ee.skip_to_step) {
@@ -321,12 +292,8 @@ function private function_df365859(notifyhash) {
 // Size: 0x1de
 function function_f09763fd(ee_name, step_name) {
     /#
-        /#
-            assert(ishash(ee_name), "<unknown string>");
-        #/
-        /#
-            assert(isdefined(level._ee[ee_name]), "<unknown string>" + ee_name + "<unknown string>");
-        #/
+        assert(ishash(ee_name), "<unknown string>");
+        assert(isdefined(level._ee[ee_name]), "<unknown string>" + ee_name + "<unknown string>");
         var_da601d7f = function_44e256d8(ee_name);
         index = function_9212ff4d(ee_name, step_name);
         if (index == -1) {
@@ -346,9 +313,7 @@ function function_f09763fd(ee_name, step_name) {
 // Size: 0x66
 function function_44e256d8(ee_name) {
     /#
-        /#
-            assert(ishash(ee_name), "<unknown string>");
-        #/
+        assert(ishash(ee_name), "<unknown string>");
         return "<unknown string>" + function_9e72a96(ee_name) + "<unknown string>";
     #/
 }
@@ -359,9 +324,7 @@ function function_44e256d8(ee_name) {
 // Size: 0xc4
 function function_28aee167(ee_name) {
     /#
-        /#
-            assert(ishash(ee_name), "<unknown string>");
-        #/
+        assert(ishash(ee_name), "<unknown string>");
         ee_path = function_44e256d8(ee_name);
         util::waittill_can_add_debug_command();
         adddebugcommand("<unknown string>" + ee_path + "<unknown string>" + function_9e72a96(ee_name) + "<unknown string>");
@@ -374,12 +337,8 @@ function function_28aee167(ee_name) {
 // Size: 0x184
 function function_b3da1a16(ee_name, step_name) {
     /#
-        /#
-            assert(ishash(ee_name), "<unknown string>");
-        #/
-        /#
-            assert(ishash(step_name), "<unknown string>");
-        #/
+        assert(ishash(ee_name), "<unknown string>");
+        assert(ishash(step_name), "<unknown string>");
         step_path = function_f09763fd(ee_name, step_name);
         index = function_9212ff4d(ee_name, step_name);
         util::waittill_can_add_debug_command();
@@ -439,7 +398,6 @@ function function_f2dd8601(ee_name, var_f2c264bb) {
         if (function_87306f8a(ee_name, step.name)) {
             if (!step.started) {
                 wait_time = 10 * ee.steps.size;
-                waitresult = undefined;
                 waitresult = level waittilltimeout(wait_time, step.var_e788cdd7 + "<unknown string>");
                 if (waitresult._notify == #"timeout") {
                     if (getdvarint(#"hash_7919e37cd5d57659", 0)) {
@@ -644,7 +602,7 @@ function function_9bee49bf() {
 function function_1091b2a0(var_4f1c1316) {
     /#
         if (!var_4f1c1316.started) {
-            color = vectorscale((1, 1, 1), 0.75);
+            color = (0.75, 0.75, 0.75);
         } else if (!var_4f1c1316.completed) {
             color = (1, 0, 0);
         } else {

@@ -209,7 +209,7 @@ function function_127fb8f3(cymbal_monkey, attackingplayer) {
     cymbal_monkey endon(#"death");
     randangle = randomfloat(360);
     if (isdefined(level._equipment_emp_destroy_fx)) {
-        playfx(level._equipment_emp_destroy_fx, cymbal_monkey.origin + vectorscale((0, 0, 1), 5), (cos(randangle), sin(randangle), 0), anglestoup(cymbal_monkey.angles));
+        playfx(level._equipment_emp_destroy_fx, cymbal_monkey.origin + (0, 0, 5), (cos(randangle), sin(randangle), 0), anglestoup(cymbal_monkey.angles));
     }
     wait(1.1);
     playfx(#"hash_65c5042becfbaa7d", cymbal_monkey.origin);

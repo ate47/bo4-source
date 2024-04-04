@@ -739,12 +739,8 @@ function scoreeventplayerkill(data, time) {
         if (isdefined(var_21877ec1) && var_21877ec1) {
             processscoreevent(#"kill_enemy_with_armor", attacker, victim, weapon);
         }
-        /#
-            assert(isdefined(attacker));
-        #/
-        /#
-            assert(isdefined(attacker.tookweaponfrom), "MOD_IMPACT" + attacker getentnum() + "weapon_cqb");
-        #/
+        assert(isdefined(attacker));
+        assert(isdefined(attacker.tookweaponfrom), "MOD_IMPACT" + attacker getentnum() + "weapon_cqb");
         if (isdefined(attacker) && isdefined(attacker.tookweaponfrom) && isdefined(attacker.tookweaponfrom[weapon]) && isdefined(attacker.tookweaponfrom[weapon].previousowner)) {
             pickedupweapon = attacker.tookweaponfrom[weapon];
             if (pickedupweapon.previousowner == victim) {
@@ -1008,9 +1004,7 @@ function function_8fe4629e(killcount, weapon) {
 // Checksum 0x11282d5d, Offset: 0x5a80
 // Size: 0x3bc
 function multikill(killcount, weapon) {
-    /#
-        assert(killcount > 1);
-    #/
+    assert(killcount > 1);
     self challenges::multikill(killcount, weapon);
     if (killcount > 7) {
         processscoreevent(#"multikill_more_than_7", self, undefined, weapon);

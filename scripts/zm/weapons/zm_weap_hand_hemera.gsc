@@ -82,7 +82,6 @@ function on_player_connect() {
 function function_3f8da82c() {
     self endon(#"disconnect");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         if (s_notify.weapon === level.w_hand_hemera_uncharged) {
             continue;
@@ -269,7 +268,7 @@ function is_valid_target(e_target, n_range) {
     if (isdefined(e_target.marked_for_death) && e_target.marked_for_death) {
         return false;
     }
-    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 32), 0.3, 1, self))) {
+    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 32), 0.3, 1, self))) {
         return true;
     }
     if (isdefined(e_target.fake_death) && e_target.fake_death) {
@@ -282,7 +281,7 @@ function is_valid_target(e_target, n_range) {
         return false;
     }
     var_c060d2c8 = !(isdefined(level.var_58f509b6) && level.var_58f509b6);
-    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 28), 0.9, var_c060d2c8, self)) {
+    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 28), 0.9, var_c060d2c8, self)) {
         return false;
     }
     return true;
@@ -345,9 +344,9 @@ function function_8e7f5291(e_projectile, ai_zombie, n_damage) {
             v_end = var_2ed6f142 + v_forward * 100;
             var_a93a9211 = distance(self.origin, v_end);
             v_right = var_2ed6f142 + anglestoright(self.angles) * 50;
-            v_right_end = v_right + v_forward * 100 + vectorscale((0, 0, 1), 24);
+            v_right_end = v_right + v_forward * 100 + (0, 0, 24);
             v_left = var_2ed6f142 - anglestoright(self.angles) * 50;
-            v_left_end = v_left + v_forward * 100 + vectorscale((0, 0, -1), 24);
+            v_left_end = v_left + v_forward * 100 + (0, 0, -24);
             n_time = var_a93a9211 / 1500;
             if (n_time <= 0.1) {
                 n_time = 0.1;
@@ -391,7 +390,7 @@ function function_8e7f5291(e_projectile, ai_zombie, n_damage) {
                     if (isdefined(v_target)) {
                         v_end = v_target + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 8) {
-                            v_end = v_target + vectorscale((0, 0, 1), 8);
+                            v_end = v_target + (0, 0, 8);
                         }
                     }
                 }
@@ -561,7 +560,7 @@ function function_3f079da() {
 function player_charged_shot(weapon) {
     self endoncallback(&function_8a56ed15, #"death", #"disconnect", #"weapon_change", #"weapon_fired", #"stop_beaming");
     v_trace = self function_3f079da();
-    v_ground = groundtrace(v_trace + vectorscale((0, 0, 1), 200), v_trace + vectorscale((0, 0, -1), 1000), 0, self)[#"position"];
+    v_ground = groundtrace(v_trace + (0, 0, 200), v_trace + (0, 0, -1000), 0, self)[#"position"];
     if (!isdefined(self.mdl_beam)) {
         self.mdl_beam = util::spawn_model("tag_origin", v_ground);
         if (!isdefined(self.mdl_beam)) {
@@ -584,7 +583,7 @@ function player_charged_shot(weapon) {
         waitframe(2);
         v_trace = self function_3f079da();
         if (isdefined(v_trace)) {
-            v_ground = groundtrace(v_trace + vectorscale((0, 0, 1), 100), v_trace + vectorscale((0, 0, -1), 1000), 0, self)[#"position"];
+            v_ground = groundtrace(v_trace + (0, 0, 100), v_trace + (0, 0, -1000), 0, self)[#"position"];
         }
         if (isdefined(v_ground) && isdefined(self.mdl_beam)) {
             self.mdl_beam moveto(v_ground, 0.3);

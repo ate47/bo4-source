@@ -71,7 +71,6 @@ function bouncingbetty_detonating(localclientnum) {
 function watchforexplosionnotetracks(localclientnum, up, forward) {
     self endon(#"death");
     while (true) {
-        notetrack = undefined;
         notetrack = self waittill(#"explode_1st", #"explode_2nd", #"explode_main");
         switch (notetrack._notify) {
         case #"explode_1st":

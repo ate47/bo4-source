@@ -222,27 +222,22 @@ function function_d8b688e7(var_5ea5c94d, ended_early) {
 function function_5ce4f28f() {
     switch (level.var_33d3e84a) {
     case 0:
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         level.var_38ea4233 = waitresult.activator;
         level flag::set(#"hash_67df8b68575ba704");
     case 1:
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         level.var_38ea4233 = waitresult.activator;
         level flag::set(#"hash_10d5bcbc42acc9b");
     case 2:
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         level.var_38ea4233 = waitresult.activator;
         level flag::set(#"hash_1fa9f2f17d2cb5f9");
     case 3:
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         level.var_38ea4233 = waitresult.activator;
         level flag::set(#"hash_36e8f27bbd8b02d5");
     case 4:
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         level.var_38ea4233 = waitresult.activator;
         level flag::set(#"hash_1c296f8c578e2659");

@@ -8,27 +8,11 @@
 class czm_towers_pap_hud : cluielem {
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
-    // Params 0, eflags: 0x8
-    // Checksum 0x3722fd30, Offset: 0x2d8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_towers_pap_hud/zm_towers_pap_hud
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x352c067d, Offset: 0x5d0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_towers_pap_hud/zm_towers_pap_hud
     // Params 2, eflags: 0x0
     // Checksum 0x81955f91, Offset: 0x598
     // Size: 0x30
     function set_odin_acquired(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "odin_acquired", value);
+        set_data(localclientnum, "odin_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -36,7 +20,7 @@ class czm_towers_pap_hud : cluielem {
     // Checksum 0x530a0e0e, Offset: 0x560
     // Size: 0x30
     function set_zeus_acquired(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "zeus_acquired", value);
+        set_data(localclientnum, "zeus_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -44,7 +28,7 @@ class czm_towers_pap_hud : cluielem {
     // Checksum 0xc2e0b81a, Offset: 0x528
     // Size: 0x30
     function set_ra_acquired(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "ra_acquired", value);
+        set_data(localclientnum, "ra_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -52,7 +36,7 @@ class czm_towers_pap_hud : cluielem {
     // Checksum 0xbbcec54c, Offset: 0x4f0
     // Size: 0x30
     function set_danu_acquired(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "danu_acquired", value);
+        set_data(localclientnum, "danu_acquired", value);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud
@@ -69,10 +53,10 @@ class czm_towers_pap_hud : cluielem {
     // Size: 0x94
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "danu_acquired", 0);
-        [[ self ]]->set_data(localclientnum, "ra_acquired", 0);
-        [[ self ]]->set_data(localclientnum, "zeus_acquired", 0);
-        [[ self ]]->set_data(localclientnum, "odin_acquired", 0);
+        set_data(localclientnum, "danu_acquired", 0);
+        set_data(localclientnum, "ra_acquired", 0);
+        set_data(localclientnum, "zeus_acquired", 0);
+        set_data(localclientnum, "odin_acquired", 0);
     }
 
     // Namespace czm_towers_pap_hud/zm_towers_pap_hud

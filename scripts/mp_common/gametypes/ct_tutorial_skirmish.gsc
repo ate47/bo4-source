@@ -159,9 +159,7 @@ function function_5e1029a() {
 // Size: 0x94
 function function_edd52efc() {
     specialist = getplayers()[0] function_76785843();
-    /#
-        assert(player_role::is_valid(specialist));
-    #/
+    assert(player_role::is_valid(specialist));
     if (player_role::is_valid(specialist)) {
         self player_role::set(specialist);
     }
@@ -193,7 +191,6 @@ function function_8599f7cb() {
     var_d4002929 = 0;
     var_743bf28b = 0;
     level.b_movie = 1;
-    s_result = undefined;
     s_result = level waittill(#"result");
     player = getplayers()[0];
     if (s_result.outcome.team === player.team) {
@@ -254,7 +251,6 @@ function function_6cc515f7(str_difficulty) {
     level endon(#"check_skirmish");
     var_d4002929 = 0;
     level.b_movie = 0;
-    s_result = undefined;
     s_result = level waittill(#"result");
     player = getplayers()[0];
     specialist = player function_76785843();
@@ -355,9 +351,7 @@ function give_killstreaks(var_8be50b09) {
     for (killstreaknum = 0; killstreaknum < 3; killstreaknum++) {
         killstreakindex = level.killstreakindices[var_8be50b09[killstreaknum]];
         if (isdefined(killstreakindex) && killstreakindex > 0) {
-            /#
-                assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
-            #/
+            assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
             if (isdefined(level.tbl_killstreakdata[killstreakindex])) {
                 self.killstreak[currentkillstreak] = level.tbl_killstreakdata[killstreakindex];
                 if (isdefined(level.usingmomentum) && level.usingmomentum) {
@@ -430,9 +424,7 @@ function function_3ba6ee5d(weapon, amount) {
     }
     self setweaponammoclip(weapon, amount);
     diff = amount - self getweaponammoclip(weapon);
-    /#
-        assert(diff >= 0);
-    #/
+    assert(diff >= 0);
     self setweaponammostock(weapon, diff);
 }
 
@@ -685,13 +677,9 @@ function function_46f9c28e() {
 // Checksum 0x168f8166, Offset: 0x31a0
 // Size: 0x9c
 function function_9b717ff4() {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     if (self function_dd91e3dd() >= 30) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         self giveachievement("st_centennial");
         self function_ea859fe2();
     }

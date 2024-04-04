@@ -104,9 +104,7 @@ function function_7328ce94(b_pause, str_perk, str_result, n_slot) {
     if (isdefined(self.e_zombshell)) {
         self.e_zombshell delete();
     }
-    /#
-        assert(isdefined(self.var_849c3bcf), "<unknown string>");
-    #/
+    assert(isdefined(self.var_849c3bcf), "<unknown string>");
     if (isdefined(self.var_849c3bcf)) {
         self zm_perks::function_13880aa5(self.var_849c3bcf, 0, #"perk_zombshell");
         self.var_849c3bcf = undefined;
@@ -138,7 +136,7 @@ function shell_explosion(e_attacker, w_weapon) {
         e_attacker function_993d228c();
         return;
     }
-    v_origin = self.origin + vectorscale((0, 0, 1), 20);
+    v_origin = self.origin + (0, 0, 20);
     self clientfield::increment("" + #"zombshell_explosion");
     if (!isdefined(e_attacker.e_zombshell)) {
         e_attacker.e_zombshell = util::spawn_model("tag_origin", v_origin);
@@ -375,9 +373,7 @@ function reset_cooldown() {
     self notify(#"hash_4aaf55c36b37725e");
     self.var_69604b18 = 0;
     if (self hasperk(#"specialty_zombshell")) {
-        /#
-            assert(isdefined(self.var_849c3bcf), "<unknown string>");
-        #/
+        assert(isdefined(self.var_849c3bcf), "<unknown string>");
         if (isdefined(self.var_849c3bcf)) {
             self zm_perks::function_2ac7579(self.var_849c3bcf, 1, #"perk_zombshell");
             self zm_perks::function_13880aa5(self.var_849c3bcf, 1, #"perk_zombshell");

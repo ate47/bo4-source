@@ -539,9 +539,7 @@ function precache_mp_leaderboards() {
 // Size: 0xb2
 function compareteambygamestat(gamestat, teama, teamb, previous_winner_score) {
     winner = undefined;
-    /#
-        assert(teama !== "_ARENA");
-    #/
+    assert(teama !== "_ARENA");
     if (previous_winner_score == game.stat[gamestat][teamb]) {
         winner = undefined;
     } else if (game.stat[gamestat][teamb] > previous_winner_score) {
@@ -574,9 +572,7 @@ function determineteamwinnerbygamestat(gamestat) {
 // Checksum 0xfc8eb91c, Offset: 0x32e8
 // Size: 0x86
 function compareteambyteamscore(var_1ada49b5, teamb, var_2a5c5ccb) {
-    /#
-        assert(var_1ada49b5 !== "_ARENA");
-    #/
+    assert(var_1ada49b5 !== "_ARENA");
     teambscore = [[ level._getteamscore ]](teamb);
     if (teambscore == var_2a5c5ccb) {
         return undefined;
@@ -1410,21 +1406,11 @@ function gamehistoryplayerkicked() {
         scoreboardposition = level.players.size;
     }
     /#
-        /#
-            assert(isdefined(self.kills));
-        #/
-        /#
-            assert(isdefined(self.deaths));
-        #/
-        /#
-            assert(isdefined(self.score));
-        #/
-        /#
-            assert(isdefined(scoreboardposition));
-        #/
-        /#
-            assert(isdefined(teamscoreratio));
-        #/
+        assert(isdefined(self.kills));
+        assert(isdefined(self.deaths));
+        assert(isdefined(self.score));
+        assert(isdefined(scoreboardposition));
+        assert(isdefined(teamscoreratio));
     #/
     self gamehistoryfinishmatch(2, self.kills, self.deaths, self.score, scoreboardposition, teamscoreratio);
     if (isdefined(self.pers[#"matchesplayedstatstracked"])) {
@@ -1862,9 +1848,7 @@ function function_a3e3bd39(winning_team, var_c1e98979) {
         return;
     }
     level.var_23b92e65 = 1;
-    /#
-        assert(isdefined(winning_team));
-    #/
+    assert(isdefined(winning_team));
     if (function_8b4fc766(var_c1e98979)) {
         globallogic_score::giveteamscoreforobjective_delaypostprocessing(winning_team, 1);
     }
@@ -2251,12 +2235,8 @@ function function_4636deca(player) {
     }
     player player_record::function_7569c0fb();
     nemesis = player.pers[#"nemesis_name"];
-    /#
-        assert(isdefined(nemesis), " LB_MP_GM_FR_" + player.name);
-    #/
-    /#
-        assert(isstring(nemesis), "participation" + nemesis + "damage_dealt" + player.name);
-    #/
+    assert(isdefined(nemesis), " LB_MP_GM_FR_" + player.name);
+    assert(isstring(nemesis), "participation" + nemesis + "damage_dealt" + player.name);
     if (!isdefined(player.pers[#"killed_players"][nemesis])) {
         player.pers[#"killed_players"][nemesis] = 0;
     }
@@ -2632,9 +2612,7 @@ function removedisconnectedplayerfromplacement() {
         return;
     }
     level.placement[#"all"][numplayers - 1] = undefined;
-    /#
-        assert(level.placement[#"all"].size == numplayers - 1);
-    #/
+    assert(level.placement[#"all"].size == numplayers - 1);
     /#
         globallogic_utils::assertproperplacement();
     #/
@@ -2744,9 +2722,7 @@ function getplacementforplayer(player) {
 function istopscoringplayer(player) {
     topscoringplayer = 0;
     updateplacement();
-    /#
-        assert(level.placement[#"all"].size > 0);
-    #/
+    assert(level.placement[#"all"].size > 0);
     if (level.placement[#"all"].size == 0) {
         return 0;
     }
@@ -3064,9 +3040,7 @@ function updateallalivetimes() {
 // Checksum 0x5c0a15ee, Offset: 0xc710
 // Size: 0xd8
 function checkteamscorelimitsoon(team) {
-    /#
-        assert(isdefined(team));
-    #/
+    assert(isdefined(team));
     if (level.scorelimit <= 0) {
         return;
     }
@@ -3087,9 +3061,7 @@ function checkteamscorelimitsoon(team) {
 // Checksum 0x9831bca, Offset: 0xc7f0
 // Size: 0xe0
 function checkplayerscorelimitsoon() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (level.scorelimit <= 0) {
         return;
     }
@@ -3539,12 +3511,8 @@ function function_b9b7618() {
     setmatchflag("cg_drawSpectatorMessages", 1);
     setmatchflag("game_ended", 0);
     if (!isdefined(game.gamestarted)) {
-        /#
-            assert(isdefined(game.attackers) && isdefined(game.defenders));
-        #/
-        /#
-            assert(game.attackers != game.defenders);
-        #/
+        assert(isdefined(game.attackers) && isdefined(game.defenders));
+        assert(game.attackers != game.defenders);
         if (!isdefined(game.state)) {
             game.state = "pregame";
         }
@@ -3953,7 +3921,6 @@ function annihilatorgunplayerkilleffect(attacker, weapon, smeansofdeath) {
 // Checksum 0x49b7af31, Offset: 0x10020
 // Size: 0x16c
 function annihilatorgunactorkilleffect(attacker, weapon) {
-    waitresult = undefined;
     waitresult = self waittill(#"actor_corpse");
     body = waitresult.corpse;
     if (weapon.fusetime != 0) {
@@ -4021,7 +3988,6 @@ function bowplayerkilleffect() {
 // Checksum 0x54a100e8, Offset: 0x10338
 // Size: 0x104
 function pineapplegunactorkilleffect() {
-    waitresult = undefined;
     waitresult = self waittill(#"actor_corpse");
     body = waitresult.corpse;
     wait(0.75);

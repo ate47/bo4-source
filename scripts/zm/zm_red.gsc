@@ -596,7 +596,6 @@ function function_d2085d57() {
 function private function_d7831b0f() {
     level endon(#"end_game", #"hash_49085a6baf9c2c27");
     level thread function_a3e22935();
-    s_result = undefined;
     s_result = level waittill(#"end_of_round", #"hash_dc34ebe02d09532");
     level.no_powerups = undefined;
     level flag::set(#"round_one");
@@ -850,7 +849,6 @@ function function_fb3ab798(var_4e4cc9a9 = 1) {
     self val::set(#"hash_58d304d03782fc3c", "takedamage", 1);
     self.health = 99999999;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
         if (isplayer(e_attacker) && zm_utility::is_player_valid(e_attacker, 0, 0, 0)) {
@@ -1571,7 +1569,6 @@ function function_fbf0e632() {
     self endon(#"powerup_timedout", #"powerup_stolen", #"death");
     self playsound(#"hash_e3e5f7c83015171");
     self playloopsound(#"hash_2adfa98b79668366");
-    waitresult = undefined;
     waitresult = self waittill(#"powerup_grabbed");
     if (isdefined(waitresult.e_grabber) && isplayer(waitresult.e_grabber)) {
         waitresult.e_grabber playsound(#"hash_1c696244a9a3dbbf");

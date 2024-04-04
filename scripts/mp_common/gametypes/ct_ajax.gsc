@@ -335,7 +335,6 @@ function function_8f111670() {
 function function_7f166658() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         if (isdefined(waitresult.weapon) && waitresult.weapon == getweapon(#"sig_buckler_dw")) {
             level.var_8bd6a2ee = 1;

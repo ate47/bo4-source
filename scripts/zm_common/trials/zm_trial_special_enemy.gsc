@@ -78,9 +78,7 @@ function private on_end(round_reset) {
 // Size: 0x184
 function private on_ai_killed(params) {
     challenge = zm_trial::function_a36e8c38(#"special_enemy");
-    /#
-        assert(isdefined(challenge), "<unknown string>");
-    #/
+    assert(isdefined(challenge), "<unknown string>");
     if (challenge.enemy_type !== self.archetype) {
         return;
     }
@@ -124,16 +122,10 @@ function private spawn_enemy() {
         }
     }
     challenge = zm_trial::function_a36e8c38(#"special_enemy");
+    assert(isdefined(challenge));
     /#
-        assert(isdefined(challenge));
-    #/
-    /#
-        /#
-            assert(isdefined(level.var_1cc18005));
-        #/
-        /#
-            assert(isdefined(level.var_1cc18005[challenge.enemy_type]), "<unknown string>" + function_9e72a96(challenge.enemy_type));
-        #/
+        assert(isdefined(level.var_1cc18005));
+        assert(isdefined(level.var_1cc18005[challenge.enemy_type]), "<unknown string>" + function_9e72a96(challenge.enemy_type));
     #/
     spawn_callback = level.var_1cc18005[challenge.enemy_type];
     spawn_success = [[ spawn_callback ]]();
@@ -154,9 +146,7 @@ function function_95c1dd81(name, spawn_callback) {
     if (!isdefined(level.var_1cc18005)) {
         level.var_1cc18005 = [];
     }
-    /#
-        assert(!isdefined(level.var_1cc18005[name]), "<unknown string>" + name);
-    #/
+    assert(!isdefined(level.var_1cc18005[name]), "<unknown string>" + name);
     level.var_1cc18005[name] = spawn_callback;
 }
 

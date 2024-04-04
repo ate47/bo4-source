@@ -119,12 +119,8 @@ function private on_player_spawned() {
 // Checksum 0xdebe80e0, Offset: 0x660
 // Size: 0xb6
 function function_9d4db403(name, var_81f8ab0f, var_f1d1c3e6) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
-    /#
-        assert(isdefined(var_81f8ab0f), "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
+    assert(isdefined(var_81f8ab0f), "<unknown string>");
     level.bgb[name].var_81f8ab0f = var_81f8ab0f;
     level.bgb[name].var_f1d1c3e6 = var_f1d1c3e6;
 }
@@ -134,9 +130,7 @@ function function_9d4db403(name, var_81f8ab0f, var_f1d1c3e6) {
 // Checksum 0xbbeb70a9, Offset: 0x720
 // Size: 0x6a
 function function_430d063b(name) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_58860b3 = 1;
 }
 
@@ -145,9 +139,7 @@ function function_430d063b(name) {
 // Checksum 0xf342a385, Offset: 0x798
 // Size: 0x6a
 function function_a1194b9a(name) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_8fd0fb47 = 1;
 }
 
@@ -156,9 +148,7 @@ function function_a1194b9a(name) {
 // Checksum 0x8df2f08d, Offset: 0x810
 // Size: 0x6a
 function function_4de6c08a(name) {
-    /#
-        assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
-    #/
+    assert(isdefined(level.bgb[name]), "<unknown string>" + name + "<unknown string>");
     level.bgb[name].var_8b1ba43c = 1;
 }
 
@@ -504,7 +494,6 @@ function global_cooldown(n_index) {
             n_cooldown = function_b29fc421();
         }
     #/
-    result = undefined;
     result = self waittilltimeout(n_cooldown, #"hash_738988561a113fac");
     /#
         if (result._notify === "<unknown string>") {
@@ -610,7 +599,6 @@ function slot_cooldown(n_index) {
     #/
     self thread function_7dd2a9c9(n_index, n_cooldown);
     wait(0.05);
-    result = undefined;
     result = self waittilltimeout(n_cooldown, #"hash_738988561a113fac");
     /#
         if (result._notify === "<unknown string>") {

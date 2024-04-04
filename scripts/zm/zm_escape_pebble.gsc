@@ -212,7 +212,7 @@ function function_d74dcf11() {
         var_5bb38717 = struct::get("powerup_cell_" + i, "targetname");
         var_5bb38717.var_ce471a57 = var_d0686fde[i - 1];
         var_74e47e53 = level.zombie_powerups[var_d0686fde[i - 1]].model_name;
-        var_2f217f28 = util::spawn_model(var_74e47e53, var_5bb38717.origin + vectorscale((0, 0, 1), 40), var_5bb38717.angles);
+        var_2f217f28 = util::spawn_model(var_74e47e53, var_5bb38717.origin + (0, 0, 40), var_5bb38717.angles);
         var_2f217f28 thread function_468c20be();
         var_2f217f28 clientfield::set("powerup_fx", 1);
         var_5bb38717.var_2f217f28 = var_2f217f28;
@@ -341,7 +341,6 @@ function laundry_day(var_a276c861) {
     s_dryer.t_damage = spawn("trigger_damage", s_dryer.origin, 0, 64, 64);
     var_57724709 = 0;
     while (true) {
-        s_result = undefined;
         s_result = s_dryer.t_damage waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             s_dryer.t_damage playsound(#"hash_33b90d54346e57e" + var_57724709);
@@ -411,7 +410,6 @@ function private function_35a7187c() {
     t_damage = spawn("trigger_damage", var_3253d8db.origin, 0, 64, 64);
     v_end_pos = (-1052.89, 8901.02, 1362);
     while (true) {
-        s_result = undefined;
         s_result = t_damage waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             if (zm_weap_flamethrower::is_flamethrower_weapon(s_result.weapon, 3) && isdefined(s_result.attacker.var_be72e7c2)) {
@@ -431,7 +429,6 @@ function private function_7f53281f() {
     var_915a9896 = getent("graphic_02_mover", "targetname");
     t_damage = spawn("trigger_damage", var_915a9896.origin, 0, 64, 64);
     while (true) {
-        s_result = undefined;
         s_result = t_damage waittill(#"damage");
         if (isplayer(s_result.attacker) && s_result.attacker hasperk(#"specialty_electriccherry")) {
             if (s_result.weapon == getweapon(#"spoon_alcatraz") || s_result.weapon == getweapon(#"spork_alcatraz") || s_result.weapon == getweapon(#"spknifeork")) {
@@ -449,11 +446,10 @@ function private function_7f53281f() {
 // Size: 0x1bc
 function private function_62878c3d() {
     var_a6fa1406 = getent("graphic_03_mover", "targetname");
-    t_damage = spawn("trigger_damage", var_a6fa1406.origin + vectorscale((0, 0, -1), 10), 0, 64, 64);
+    t_damage = spawn("trigger_damage", var_a6fa1406.origin + (0, 0, -10), 0, 64, 64);
     v_end_pos = (-432, 9110, 1397);
     v_end_angles = (38, 90, 0);
     while (true) {
-        s_result = undefined;
         s_result = t_damage waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             if (s_result.weapon === getweapon(#"spork_alcatraz") || s_result.weapon == getweapon(#"spknifeork")) {
@@ -472,9 +468,8 @@ function private function_62878c3d() {
 // Size: 0x12c
 function private function_83abdd2b() {
     var_e33915d6 = getent("graphic_04", "targetname");
-    t_damage = spawn("trigger_damage", var_e33915d6.origin - vectorscale((0, 0, 1), 30), 0, 64, 64);
+    t_damage = spawn("trigger_damage", var_e33915d6.origin - (0, 0, 30), 0, 64, 64);
     while (true) {
-        s_result = undefined;
         s_result = t_damage waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             if (zm_weap_katana::function_c740060f(s_result.weapon, 2)) {
@@ -494,7 +489,6 @@ function private function_c7c805fa() {
     var_ffa14ea6 = getent("graphic_05", "targetname");
     v_end_pos = (139.543, 6704.51, 98.597);
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hero_weapon_activated");
         if (isplayer(s_result.e_player) && distance2d(s_result.e_player.origin, var_ffa14ea6.origin) <= 128) {
             break;
@@ -577,7 +571,6 @@ function function_6272b55b() {
     level endon(#"hash_3698278a3a5d8beb", #"hash_23a4d169a87154ff");
     mdl_lock = getent("box_lock", "targetname");
     while (isdefined(mdl_lock)) {
-        s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
         while (isdefined(e_tomahawk)) {
@@ -706,7 +699,6 @@ function function_f8c71bba() {
         }
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
         self thread function_766c869a(e_tomahawk);
@@ -880,7 +872,6 @@ function function_dab3dcc3() {
 function function_4d6642e9(var_c6b58daa) {
     self endoncallback(&function_1650b924, #"disconnect", #"hash_120fbb364796cd32");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_change");
         if (isdefined(var_c6b58daa.mdl_glyph)) {
             if (s_result.weapon == level.var_4e845c84 || s_result.weapon == level.var_58e17ce3) {
@@ -1042,7 +1033,7 @@ function function_90dac8fa() {
                     e_dog thread function_ef5a3a9d();
                     mdl_tomahawk = util::spawn_model(#"hash_2963eae43f30b9ed", var_3c29eed1.origin);
                     mdl_tomahawk.origin = e_dog gettagorigin("tag_mouth_fx");
-                    mdl_tomahawk.angles = e_dog.angles + vectorscale((1, 0, 1), 90);
+                    mdl_tomahawk.angles = e_dog.angles + (90, 0, 90);
                     mdl_tomahawk linkto(e_dog, "tag_mouth_fx");
                     e_dog.mdl_tomahawk = mdl_tomahawk;
                     mdl_tomahawk clientfield::set("" + #"hash_504d26c38b96651c", 1);
@@ -1112,7 +1103,7 @@ function function_3c089853(e_player) {
 function function_4d8d3da5(e_player) {
     self endon(#"death");
     for (i = 0; i <= 4; i++) {
-        var_ae8517dd = util::spawn_model("p7_zm_ctl_wolf_paw_print_escape", self.origin + vectorscale((0, 0, 1), 2), self.angles + (-90, 0, 180));
+        var_ae8517dd = util::spawn_model("p7_zm_ctl_wolf_paw_print_escape", self.origin + (0, 0, 2), self.angles + (-90, 0, 180));
         if (isdefined(var_ae8517dd)) {
             var_ae8517dd setscale(0.6);
             var_ae8517dd clientfield::set("" + #"hash_53586aa63ca15286", 1);
@@ -1197,7 +1188,6 @@ function function_c6472238(e_player) {
 function function_ef5a3a9d() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"blast_attack");
         e_attacker = s_result.e_player;
         if (isplayer(e_attacker) && isalive(e_attacker) && e_attacker == self.e_owner && e_attacker flag::get(#"hash_120fbb364796cd32") && !e_attacker flag::get(#"hash_11ab20934759ebc3")) {
@@ -1278,7 +1268,6 @@ function function_f5a3ba79() {
 function function_442fe4d3() {
     level endon(#"between_round_over");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator) && isalive(s_result.activator)) {
             var_24cc214c = array(getweapon(#"zhield_spectral_dw"), getweapon(#"zhield_spectral_dw_upgraded"), getweapon(#"zhield_spectral_turret"), getweapon(#"zhield_spectral_turret_upgraded"));
@@ -1357,7 +1346,6 @@ function function_ad132260(player) {
 // Size: 0x60
 function function_283deb4() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         self.stub.related_parent thread function_ed96eb60(s_result.activator);
     }
@@ -1527,7 +1515,6 @@ function function_63afa952(var_a276c861) {
     }
     level.var_bdd8273d clientfield::set("" + #"hash_59623b8b4fc694c8", 1);
     level.var_bdd8273d thread function_a852bfdc();
-    s_result = undefined;
     s_result = level waittill(#"hash_763832898999092c");
     level.var_bdd8273d playsound(#"hash_1588095b858588d");
     wait(0.5);
@@ -1565,7 +1552,6 @@ function function_a852bfdc() {
     level endon(#"hash_763832898999092c");
     self setcandamage(1);
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (isplayer(s_result.attacker)) {
             level notify(#"hash_763832898999092c", {#e_player:s_result.attacker});

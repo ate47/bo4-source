@@ -38,13 +38,9 @@ function autoexec __init__system__() {
 // Size: 0x264
 function __init__() {
     zm_score::function_e5d6e6dd(#"weeping_angel", 1);
-    /#
-        assert(isscriptfunctionptr(&function_f5d43a20));
-    #/
+    assert(isscriptfunctionptr(&function_f5d43a20));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2a1fbaa1c4a45a3f", &function_f5d43a20);
-    /#
-        assert(isscriptfunctionptr(&function_ad034041));
-    #/
+    assert(isscriptfunctionptr(&function_ad034041));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_64a769b6a696ad3e", &function_ad034041, 1);
     spawner::add_archetype_spawn_function(#"weeping_angel", &function_d8a99ae2);
     /#
@@ -112,7 +108,7 @@ function private function_e5ffb77c(start, end, duration, color) {
             line(start, end, color, 1, 1);
             sphere(end, 10, color, 1, 0, 8, 1);
             distance = distance(start, end);
-            print3d(end + vectorscale((0, 0, 1), 10), "<unknown string>" + distance, color, 1, 1, 1);
+            print3d(end + (0, 0, 10), "<unknown string>" + distance, color, 1, 1, 1);
         }
     #/
 }
@@ -124,7 +120,7 @@ function private function_e5ffb77c(start, end, duration, color) {
 function private function_78910888(player) {
     angles = player getplayerangles();
     forward = anglestoforward(angles);
-    result = player.origin + vectorscale((0, 0, 1), 30) + forward * 100;
+    result = player.origin + (0, 0, 30) + forward * 100;
     return result;
 }
 

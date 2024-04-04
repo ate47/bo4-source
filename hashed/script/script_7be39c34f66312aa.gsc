@@ -29,11 +29,7 @@ function get_location_from_chest_index(chest_index) {
             }
         }
     }
-    /#
-        /#
-            assertmsg("<unknown string>" + chest_index);
-        #/
-    #/
+    assertmsg("<unknown string>" + chest_index);
 }
 
 // Namespace namespace_6a81d072/namespace_6a81d072

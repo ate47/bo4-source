@@ -160,9 +160,7 @@ function initturret() {
 // Size: 0x84a
 function activateturret() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isdefined(player.var_c306ebe3)) {
         return false;
     }
@@ -180,7 +178,6 @@ function activateturret() {
         turret thread watchturretshutdown(player, killstreakid, player.team);
         turret thread util::ghost_wait_show_to_player(player);
         turret.othermodel thread util::ghost_wait_show_to_others(player);
-        event = undefined;
         event = turret waittill(#"placed", #"cancelled", #"death");
         if (event._notify != "placed") {
             return false;
@@ -199,7 +196,6 @@ function activateturret() {
         slot = player gadgetgetslot(var_e454da90);
         player gadgetpowerreset(slot);
         player gadgetpowerset(slot, 100);
-        waitresult = undefined;
         waitresult = player waittilltimeout(0.1, #"death");
         if (!isdefined(waitresult._notify) || waitresult._notify == "death") {
             if (isdefined(player)) {
@@ -211,7 +207,6 @@ function activateturret() {
         }
         player switchtoweapon(var_e454da90);
         player setoffhandvisible(1);
-        waitresult = undefined;
         waitresult = player waittill(#"death", #"weapon_change");
         if (!isdefined(waitresult._notify) || waitresult._notify == "death") {
             if (isdefined(player)) {
@@ -224,23 +219,18 @@ function activateturret() {
         }
     }
     if (isdefined(level.var_ed417bb9)) {
-        waitresult = undefined;
         waitresult = player waittill(#"ultimate_turret_deployed", #"death", #"weapon_change", #"weapon_fired");
     }
-    waitresult = undefined;
     waitresult = player waittill(#"ultimate_turret_deployed", #"death", #"weapon_change", #"weapon_fired");
     if (waitresult._notify === "weapon_change" && waitresult.last_weapon === var_e454da90 && waitresult.weapon === level.weaponnone) {
-        waitresult = undefined;
         waitresult = player waittilltimeout(2, #"ultimate_turret_deployed", #"death");
     } else if (waitresult._notify === "weapon_change" && waitresult.weapon === var_e454da90) {
-        waitresult = undefined;
         waitresult = player waittill(#"ultimate_turret_deployed", #"death", #"weapon_fired");
     }
     if (isdefined(player) && false) {
         player takeweapon(var_e454da90);
     }
     if (waitresult._notify === "weapon_fired") {
-        waitresult = undefined;
         waitresult = player waittill(#"ultimate_turret_deployed", #"death");
     }
     if (isdefined(player)) {
@@ -293,7 +283,7 @@ function function_3be2d17f(watcher, player) {
     player stats::function_e24eec31(self.weapon, #"used", 1);
     player notify(#"ultimate_turret_deployed", {#turret:self});
     self deployable::function_dd266e08(player);
-    self.origin = self.origin + vectorscale((0, 0, 1), 2);
+    self.origin = self.origin + (0, 0, 2);
     player onplaceturret(self);
     if (var_83ed455 && isdefined(player)) {
         player val::reset(#"ultimate_turret", "freezecontrols");
@@ -335,7 +325,6 @@ function function_b649601a() {
 // Size: 0x94
 function function_24910d60() {
     vehicle = self.vehicle;
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (waitresult._notify != "death") {
         return;
@@ -355,7 +344,6 @@ function function_24910d60() {
 function function_7f9eb7f() {
     owner = self.owner;
     owner endon(#"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"death", #"death_started");
     if (!isdefined(self)) {
         arrayremovevalue(owner.var_85988a58, undefined);
@@ -372,9 +360,7 @@ function function_7f9eb7f() {
 // Size: 0x930
 function onplaceturret(turret) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (isdefined(turret.vehicle)) {
         turret.vehicle.origin = turret.origin;
         turret.vehicle.angles = turret.angles;
@@ -763,7 +749,6 @@ function setup_death_watch_for_new_targets() {
     turretvehicle = self;
     turretvehicle endon(#"death");
     for (old_target = undefined; true; old_target = waitresult.target) {
-        waitresult = undefined;
         waitresult = turretvehicle waittill(#"has_new_target");
         if (isdefined(old_target)) {
             old_target notify(#"abort_death_watch");
@@ -1033,7 +1018,6 @@ function turretscanning() {
                     var_afae28e0 = !isdefined(var_fc9f290e) || !isalive(var_fc9f290e);
                     if (min_pause_time > 0 && !var_afae28e0) {
                         pause_time = min_pause_time > max_pause_time ? min_pause_time : randomfloatrange(min_pause_time, max_pause_time);
-                        waitresult = undefined;
                         waitresult = veh.turret_target waittilltimeout(pause_time, #"death", #"disconnect");
                         var_afae28e0 = waitresult._notify === "death";
                     }
@@ -1088,7 +1072,6 @@ function turretscanning() {
             veh turretsettargetangles(0, (-10, -360, 0));
             veh.scanpos = "left";
         }
-        waitresult = undefined;
         waitresult = veh waittilltimeout(3.5, #"enemy");
         if (waitresult._notify == #"enemy" && isdefined(veh.enemy)) {
             if (veh.var_aac73d6c && !isdefined(veh.enemylastseentime)) {
@@ -1234,7 +1217,7 @@ function function_31477582() {
             wait(1);
             continue;
         }
-        trace = physicstrace(self.origin + vectorscale((0, 0, 1), 15), self.origin + vectorscale((0, 0, -1), 10), (-3, -3, -1), (3, 3, 1), self.turret, 1 | 16);
+        trace = physicstrace(self.origin + (0, 0, 15), self.origin + (0, 0, -10), (-3, -3, -1), (3, 3, 1), self.turret, 1 | 16);
         if (trace[#"fraction"] > 0) {
             new_origin = trace[#"position"];
             self.origin = (new_origin[0], new_origin[1], self.origin[2] - min(max_delta, self.origin[2] - new_origin[2]));

@@ -509,7 +509,7 @@ function function_1428d95e(params) {
         spawn = player.origin + forward * 10;
         zombie = zm_devgui::devgui_zombie_spawn();
         if (isdefined(zombie)) {
-            zombie forceteleport(spawn, player.angles + vectorscale((0, 1, 0), 180));
+            zombie forceteleport(spawn, player.angles + (0, 180, 0));
             zombie pathmode("<unknown string>");
         }
     #/

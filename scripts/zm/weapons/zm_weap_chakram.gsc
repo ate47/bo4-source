@@ -101,7 +101,6 @@ function private function_1d807685() {
         var_cd7ab272 = 0;
     #/
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_change");
         wpn_cur = waitresult.weapon;
         wpn_prev = waitresult.last_weapon;
@@ -152,7 +151,6 @@ function private function_1d807685() {
 // Size: 0xec
 function private function_7bef3ea0(w_hero) {
     self endon(#"death");
-    s_result = undefined;
     s_result = self waittilltimeout(5, #"seeker_done", #"hero_chakram_activated");
     if (s_result._notify !== #"seeker_done") {
         self notify(#"seeker_done");
@@ -735,9 +733,7 @@ function private function_b475223e(weapon) {
 // Checksum 0xfa5445db, Offset: 0x3930
 // Size: 0xb0
 function private function_7d1739b8(var_201c5b1f) {
-    /#
-        assert(var_201c5b1f == #"round_reset");
-    #/
+    assert(var_201c5b1f == #"round_reset");
     foreach (player in getplayers()) {
         player function_892bdee2();
     }
@@ -856,7 +852,6 @@ function chakram_rumble(var_b2e05bae) {
 function function_68ff89f7(w_chakram) {
     self endon(#"disconnect", #"weapon_change", #"bled_out", #"entering_last_stand");
     level endoncallback(&function_7d1739b8, #"round_reset");
-    s_result = undefined;
     s_result = self waittill(#"weapon_melee");
     if (s_result.weapon === w_chakram) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"chakram");

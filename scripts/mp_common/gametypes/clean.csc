@@ -92,7 +92,7 @@ function function_81431153(localclientnum) {
 function function_d1834e16(localclientnum) {
     self endon(#"stopbounce");
     self endon(#"death");
-    toppos = self.origin + vectorscale((0, 0, 1), 12);
+    toppos = self.origin + (0, 0, 12);
     bottompos = self.origin;
     while (true) {
         self.var_47b256ef moveto(toppos, 0.5, 0, 0);

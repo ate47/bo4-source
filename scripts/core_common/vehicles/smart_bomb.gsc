@@ -20,9 +20,7 @@ function function_c6f75619() {
     self.delete_on_death = 1;
     self.health = self.healthdefault;
     self vehicle::friendly_fire_shield();
-    /#
-        assert(isdefined(self.scriptbundlesettings));
-    #/
+    assert(isdefined(self.scriptbundlesettings));
     self.settings = struct::get_script_bundle("vehiclecustomsettings", self.scriptbundlesettings);
     if (self.settings.aim_assist) {
         self enableaimassist();
@@ -370,7 +368,7 @@ function jump_detonate() {
     }
     if (isalive(self)) {
         self.is_jumping = 0;
-        trace = physicstrace(self.origin + (0, 0, self.radius * 2), self.origin - vectorscale((0, 0, 1), 1000), vectorscale((-1, -1, -1), 10), vectorscale((1, 1, 1), 10), self, 2);
+        trace = physicstrace(self.origin + (0, 0, self.radius * 2), self.origin - (0, 0, 1000), (-10, -10, -10), (10, 10, 10), self, 2);
         willfall = 1;
         if (trace[#"fraction"] < 1) {
             pos = trace[#"position"];

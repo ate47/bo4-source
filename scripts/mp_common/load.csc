@@ -25,9 +25,7 @@ function levelnotifyhandler(clientnum, state, oldstate) {
 // Checksum 0xf9811a36, Offset: 0x150
 // Size: 0x104
 function main() {
-    /#
-        assert(isdefined(level.first_frame), "<unknown string>");
-    #/
+    assert(isdefined(level.first_frame), "<unknown string>");
     level thread util::init_utility();
     util::registersystem("levelNotify", &levelnotifyhandler);
     register_clientfields();

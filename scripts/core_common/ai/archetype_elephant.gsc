@@ -32,23 +32,20 @@
 // Method(s) 2 Total 2
 class class_a504b9a3 {
 
+    var var_190509f3;
+    var var_6392c3a2;
+    var var_9177748f;
+    var var_9ab05afa;
+
     // Namespace class_a504b9a3/archetype_elephant
     // Params 0, eflags: 0x9 linked
     // Checksum 0xd63fc1a1, Offset: 0x7d48
     // Size: 0x32
-    __constructor() {
-        self.var_9ab05afa = 0;
-        self.var_6392c3a2 = 0;
-        self.var_190509f3 = 0;
-        self.var_9177748f = gettime();
-    }
-
-    // Namespace class_a504b9a3/archetype_elephant
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x7d88
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_9ab05afa = 0;
+        var_6392c3a2 = 0;
+        var_190509f3 = 0;
+        var_9177748f = gettime();
     }
 
 }
@@ -79,65 +76,35 @@ function autoexec main() {
 // Checksum 0x4efcbf10, Offset: 0xac0
 // Size: 0x7be
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_2c58bc39));
-    #/
+    assert(isscriptfunctionptr(&function_2c58bc39));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2f6e4a95b8974fcd", &function_2c58bc39);
-    /#
-        assert(isscriptfunctionptr(&function_10a75bb7));
-    #/
+    assert(isscriptfunctionptr(&function_10a75bb7));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_40d6b5994b49d7aa", &function_10a75bb7);
-    /#
-        assert(isscriptfunctionptr(&function_d3d560e9));
-    #/
+    assert(isscriptfunctionptr(&function_d3d560e9));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_9188ed9ed594c69", &function_d3d560e9);
-    /#
-        assert(isscriptfunctionptr(&elephantknockdownservice));
-    #/
+    assert(isscriptfunctionptr(&elephantknockdownservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"elephantknockdownservice", &elephantknockdownservice);
-    /#
-        assert(isscriptfunctionptr(&function_5db0f49a));
-    #/
+    assert(isscriptfunctionptr(&function_5db0f49a));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_7aace3e67f786b19", &function_5db0f49a);
-    /#
-        assert(isscriptfunctionptr(&function_1c0db2ec));
-    #/
+    assert(isscriptfunctionptr(&function_1c0db2ec));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_a14b98894f1d688", &function_1c0db2ec);
-    /#
-        assert(isscriptfunctionptr(&function_18e1bf30));
-    #/
+    assert(isscriptfunctionptr(&function_18e1bf30));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_4b225936ae91a204", &function_18e1bf30);
-    /#
-        assert(isscriptfunctionptr(&elephantshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&elephantshouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"elephantshouldmelee", &elephantshouldmelee);
-    /#
-        assert(isscriptfunctionptr(&elephantshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&elephantshouldmelee));
     behaviorstatemachine::registerbsmscriptapiinternal(#"elephantshouldmelee", &elephantshouldmelee);
-    /#
-        assert(isscriptfunctionptr(&function_9c076ff9));
-    #/
+    assert(isscriptfunctionptr(&function_9c076ff9));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_2cab44d162eb9a83", &function_9c076ff9);
-    /#
-        assert(isscriptfunctionptr(&function_69faa74));
-    #/
+    assert(isscriptfunctionptr(&function_69faa74));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_597ef06035bca069", &function_69faa74);
-    /#
-        assert(isscriptfunctionptr(&function_cd472d5));
-    #/
+    assert(isscriptfunctionptr(&function_cd472d5));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4e7335c0f98549c3", &function_cd472d5);
-    /#
-        assert(isscriptfunctionptr(&function_f2c697c7));
-    #/
+    assert(isscriptfunctionptr(&function_f2c697c7));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_4fbf554dacfacc1f", &function_f2c697c7);
-    /#
-        assert(isscriptfunctionptr(&function_f8145b00));
-    #/
+    assert(isscriptfunctionptr(&function_f8145b00));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_67699fc0b32fc954", &function_f8145b00);
-    /#
-        assert(isscriptfunctionptr(&function_2bfd3841));
-    #/
+    assert(isscriptfunctionptr(&function_2bfd3841));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_72b216f44f66e0ca", &function_2bfd3841);
     animationstatenetwork::registeranimationmocomp("mocomp_melee@towers_boss", &function_5e17ac7a, &function_e88518a1, &function_10296bfa);
     animationstatenetwork::registernotetrackhandlerfunction("towersboss_melee", &function_2328518e);
@@ -311,9 +278,7 @@ function function_106b6b29() {
 function function_8d7ad318(launchpos, trajectory, targetpos) {
     self endon(#"hash_79e095919e415a70", #"death");
     /#
-        /#
-            assert(trajectory.size);
-        #/
+        assert(trajectory.size);
         recordsphere(targetpos, 3, (0, 1, 1), "tag_char_align_d");
         recordline(launchpos, trajectory[0], (0, 1, 1), "tag_head_ws");
         while (true) {
@@ -337,9 +302,7 @@ function function_8d7ad318(launchpos, trajectory, targetpos) {
 // Checksum 0x1aa22383, Offset: 0x1dc0
 // Size: 0x3c0
 function function_4b28fc8c(entity) {
-    /#
-        assert(isdefined(entity.ai.var_a05929e4));
-    #/
+    assert(isdefined(entity.ai.var_a05929e4));
     launchpos = entity gettagorigin("j_head");
     var_d82e1fd1 = entity gettagangles("j_head");
     /#
@@ -353,12 +316,12 @@ function function_4b28fc8c(entity) {
     headproj setmodel("tag_origin");
     vectorfromenemy = vectornormalize(entity.origin - landpos);
     vectorfromenemy = vectorscale(vectorfromenemy, 250);
-    targetpos = landpos + vectorfromenemy + vectorscale((0, 0, 1), 200);
+    targetpos = landpos + vectorfromenemy + (0, 0, 200);
     headproj clientfield::set("towers_boss_head_proj_fx_cf", 1);
     trajectory = [];
     dirtotarget = targetpos - launchpos;
-    var_f1c85329 = vectorscale((0, 0, 1), 30);
-    var_62e75be4 = vectorscale((0, 0, 1), 200);
+    var_f1c85329 = (0, 0, 30);
+    var_62e75be4 = (0, 0, 200);
     trajectory[trajectory.size] = launchpos + dirtotarget * 0.85 + var_f1c85329;
     trajectory[trajectory.size] = launchpos + dirtotarget * 0.5 + var_62e75be4;
     trajectory[trajectory.size] = launchpos + dirtotarget * 0.15 + var_f1c85329;
@@ -585,7 +548,7 @@ function private function_7427c937(elephant, rider) {
     if (distsq < 200 * 200) {
         return false;
     }
-    if (!util::within_fov(rider.origin + vectorscale((0, 0, -1), 40), rider.angles, elephant.closestenemy.origin, cos(70))) {
+    if (!util::within_fov(rider.origin + (0, 0, -40), rider.angles, elephant.closestenemy.origin, cos(70))) {
         return false;
     }
     return true;
@@ -686,9 +649,7 @@ function private function_1cd7a6d7(elephant, rider) {
             rider.ai.inpain = 1;
             aligntag = rider.ai.var_4f12fc77;
             rider.ai.var_bd0ffccf = rider animmappingsearch(#"hash_2e52a646a71cee70");
-            /#
-                assert(isdefined(rider.ai.var_bd0ffccf));
-            #/
+            assert(isdefined(rider.ai.var_bd0ffccf));
             rider animation::play(rider.ai.var_bd0ffccf, elephant, aligntag, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
             rider.ai.inpain = 0;
             wait(randomintrange(3, 4));
@@ -746,9 +707,7 @@ function private function_2798bb2(elephant, rider) {
         rider.takedamage = 0;
         rider animation::play(rider.ai.var_61a678fe, alignstruct.origin, alignstruct.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
         rider.takedamage = 1;
-        /#
-            assert(isdefined(rider.ai.var_4f12fc77));
-        #/
+        assert(isdefined(rider.ai.var_4f12fc77));
         rider linkto(elephant, rider.ai.var_4f12fc77, (0, 0, 0), (0, 0, 0));
     }
     rider thread function_978a4592(elephant, rider);
@@ -769,9 +728,7 @@ function private function_2798bb2(elephant, rider) {
             continue;
         }
         rider.ai.var_6fe5490e = rider animmappingsearch(#"hash_3cfb620b1f6d2192");
-        /#
-            assert(isdefined(rider.ai.var_6fe5490e));
-        #/
+        assert(isdefined(rider.ai.var_6fe5490e));
         rider animation::play(rider.ai.var_6fe5490e, elephant, rider.ai.var_4f12fc77, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
     }
 }
@@ -787,9 +744,7 @@ function private function_e5f2ff53(elephant, var_a4946e52, targetname) {
     var_a02578 = self gettagorigin(var_a4946e52);
     var_cfdbb182 = self gettagangles(var_a4946e52);
     rider = spawnactor(#"hash_46a05f54d289c9d7", var_a02578, var_cfdbb182, targetname, 1);
-    /#
-        assert(isdefined(rider));
-    #/
+    assert(isdefined(rider));
     rider attach("p7_shr_weapon_spear_lrg", "tag_weapon_right");
     rider.var_c8ec4813 = 1;
     rider linkto(self, var_a4946e52, (0, 0, 0), (0, 0, 0));
@@ -800,21 +755,13 @@ function private function_e5f2ff53(elephant, var_a4946e52, targetname) {
         recordent(rider);
     #/
     rider.ai.var_6fe5490e = rider animmappingsearch(#"hash_3cfb620b1f6d2192");
-    /#
-        assert(isdefined(rider.ai.var_6fe5490e));
-    #/
+    assert(isdefined(rider.ai.var_6fe5490e));
     rider.ai.var_9ca71a12 = rider animmappingsearch(#"hash_52c3d7bee8eabebc");
-    /#
-        assert(isdefined(rider.ai.var_9ca71a12));
-    #/
+    assert(isdefined(rider.ai.var_9ca71a12));
     rider.ai.var_182e3181 = rider animmappingsearch(#"hash_4950e0c9a2675981");
-    /#
-        assert(isdefined(rider.ai.var_182e3181));
-    #/
+    assert(isdefined(rider.ai.var_182e3181));
     rider.ai.var_debedb6f = rider animmappingsearch(#"hash_37f92f1082115f74");
-    /#
-        assert(isdefined(rider.ai.var_debedb6f));
-    #/
+    assert(isdefined(rider.ai.var_debedb6f));
     n_health = 60000;
     for (i = 0; i < level.players.size - 1; i++) {
         n_health = n_health + 15000;
@@ -1123,9 +1070,7 @@ function function_74fba881(elephant) {
 // Checksum 0xd6e7e5f9, Offset: 0x5da8
 // Size: 0x186
 function function_c153d922(elephant, point, bonename) {
-    /#
-        assert(isdefined(point) && isdefined(bonename));
-    #/
+    assert(isdefined(point) && isdefined(bonename));
     weakpointpos = elephant gettagorigin(bonename);
     if (distancesquared(weakpointpos, point) <= 40 * 40) {
         /#
@@ -1191,9 +1136,7 @@ function function_498f147(elephant, point, boneindex) {
 // Checksum 0x68f72a25, Offset: 0x60c8
 // Size: 0x234
 function function_e864f0da(elephant, damage, attacker, point, dir, var_88cb1bf9) {
-    /#
-        assert(isdefined(elephant));
-    #/
+    assert(isdefined(elephant));
     self.var_265cb589 = 1;
     var_dd54fdb1 = namespace_81245006::function_37e3f011(elephant, "tag_carriage_ws_le");
     if (isdefined(var_dd54fdb1) && namespace_81245006::function_f29756fe(var_dd54fdb1) === 1) {
@@ -1261,9 +1204,7 @@ function function_ee23b15d(inflictor, attacker, damage, idflags, meansofdeath, w
         self.health = self.health + int(damage + 1);
         self.ai.var_37e9f736 = gettime();
     }
-    /#
-        assert(isdefined(self.ai.elephant));
-    #/
+    assert(isdefined(self.ai.elephant));
     if (isdefined(level.var_b394f92f)) {
         damage_scalar = [[ level.var_b394f92f ]](attacker, weapon, boneindex, hitloc, point);
         damage = damage * damage_scalar;
@@ -1448,9 +1389,7 @@ function private function_f51431a9(elephant) {
 // Checksum 0xb7bc4af8, Offset: 0x7008
 // Size: 0xba
 function private function_2e4487f6(elephant, stage) {
-    /#
-        assert(stage == #"hash_8e173ae91589439" || stage == #"hash_8e170ae91588f20");
-    #/
+    assert(stage == #"hash_8e173ae91589439" || stage == #"hash_8e170ae91588f20");
     elephant.ai.var_112ec817 = stage;
     switch (stage) {
     case #"hash_8e173ae91589439":
@@ -1516,7 +1455,7 @@ function function_ce8fe2b0(entity, splitorigin) {
     }
     closestpointonnavmesh = getclosestpointonnavmesh(launchpoint, 500, 200);
     if (isdefined(closestpointonnavmesh)) {
-        trace = groundtrace(closestpointonnavmesh + vectorscale((0, 0, 1), 200), closestpointonnavmesh + vectorscale((0, 0, -1), 200), 0, undefined);
+        trace = groundtrace(closestpointonnavmesh + (0, 0, 200), closestpointonnavmesh + (0, 0, -200), 0, undefined);
         if (isdefined(trace[#"position"])) {
             newpos = trace[#"position"];
         }
@@ -1736,15 +1675,9 @@ function private function_f2c697c7(entity) {
 // Size: 0x5d2
 function private function_f8145b00(entity) {
     if (isdefined(entity.favoriteenemy) && isalive(entity.favoriteenemy)) {
-        /#
-            assert(isdefined(entity.ai.var_a504b9a3));
-        #/
-        /#
-            assert(isdefined(entity.ai.var_a504b9a3.var_86d0fc5));
-        #/
-        /#
-            assert(isdefined(entity.ai.var_a504b9a3.var_6392c3a2));
-        #/
+        assert(isdefined(entity.ai.var_a504b9a3));
+        assert(isdefined(entity.ai.var_a504b9a3.var_86d0fc5));
+        assert(isdefined(entity.ai.var_a504b9a3.var_6392c3a2));
         /#
             recordsphere(entity.ai.var_a504b9a3.var_86d0fc5, 8, (1, 0, 0), "tag_head_ws");
         #/
@@ -1761,9 +1694,9 @@ function private function_f8145b00(entity) {
             if (var_3a73a0ae) {
                 threshold = entity.ai.var_a504b9a3.var_f84fafb2;
             }
-            if (var_ba63d54d <= threshold && sighttracepassed(entity.origin + vectorscale((0, 0, 1), 200), entity.favoriteenemy.origin + vectorscale((0, 0, 1), 100), 0, entity, entity.favoriteenemy)) {
+            if (var_ba63d54d <= threshold && sighttracepassed(entity.origin + (0, 0, 200), entity.favoriteenemy.origin + (0, 0, 100), 0, entity, entity.favoriteenemy)) {
                 /#
-                    recordline(entity.origin + vectorscale((0, 0, 1), 200), entity.favoriteenemy.origin + vectorscale((0, 0, 1), 200), (0, 1, 0), "tag_char_align_d");
+                    recordline(entity.origin + (0, 0, 200), entity.favoriteenemy.origin + (0, 0, 200), (0, 1, 0), "tag_char_align_d");
                 #/
                 targetpos = getclosestpointonnavmesh(entity.favoriteenemy.origin, 400, entity getpathfindingradius() * 1.2);
                 if (isdefined(targetpos)) {
@@ -1777,7 +1710,7 @@ function private function_f8145b00(entity) {
                         path = generatenavmeshpath(self.origin, targetpos, self);
                         if (!isdefined(path) || !isdefined(path.pathpoints) || path.pathpoints.size == 0) {
                             /#
-                                recordsphere(targetpos, 8, vectorscale((1, 1, 1), 0.1), "tag_head_ws");
+                                recordsphere(targetpos, 8, (0.1, 0.1, 0.1), "tag_head_ws");
                             #/
                         } else {
                             entity setgoal(targetpos);
@@ -1790,7 +1723,7 @@ function private function_f8145b00(entity) {
                         }
                     } else {
                         /#
-                            recordsphere(targetpos, 8, vectorscale((1, 1, 1), 0.1), "tag_head_ws");
+                            recordsphere(targetpos, 8, (0.1, 0.1, 0.1), "tag_head_ws");
                         #/
                     }
                 }
@@ -2000,7 +1933,7 @@ function spawn_elephant(phase) {
         elephant.ai.phase = phase;
         if (isdefined(elephant)) {
             wait(0.5);
-            elephant forceteleport(trace[#"position"], player.angles + vectorscale((0, 1, 0), 180));
+            elephant forceteleport(trace[#"position"], player.angles + (0, 180, 0));
         }
     #/
 }

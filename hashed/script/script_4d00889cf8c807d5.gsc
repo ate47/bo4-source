@@ -313,9 +313,7 @@ function private function_3ce1516d(a_s_spawn_locs) {
 // Checksum 0x699a8326, Offset: 0x12d8
 // Size: 0x7a
 function alloc_dynamic_buffer(origin, radius, half_height) {
-    /#
-        assert(self.archetype === #"skeleton", "<unknown string>");
-    #/
+    assert(self.archetype === #"skeleton", "<unknown string>");
     self.var_dbbbae12 = ai::t_cylinder(origin, radius, half_height);
 }
 
@@ -324,9 +322,7 @@ function alloc_dynamic_buffer(origin, radius, half_height) {
 // Checksum 0xc51fa8c1, Offset: 0x1360
 // Size: 0x46
 function function_9ac81c11() {
-    /#
-        assert(self.archetype === #"skeleton", "<unknown string>");
-    #/
+    assert(self.archetype === #"skeleton", "<unknown string>");
     self.var_dbbbae12 = undefined;
 }
 

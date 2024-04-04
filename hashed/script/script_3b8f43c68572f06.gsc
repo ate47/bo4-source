@@ -8,27 +8,11 @@
 class crevive_hud : cluielem {
 
     // Namespace crevive_hud/revive_hud
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xf160f090, Offset: 0x288
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace crevive_hud/revive_hud
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xbc2fe78d, Offset: 0x508
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace crevive_hud/revive_hud
     // Params 2, eflags: 0x1 linked
     // Checksum 0xfffa0b09, Offset: 0x4d0
     // Size: 0x30
     function set_fadetime(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "fadeTime", value);
+        set_data(localclientnum, "fadeTime", value);
     }
 
     // Namespace crevive_hud/revive_hud
@@ -36,7 +20,7 @@ class crevive_hud : cluielem {
     // Checksum 0xc098c761, Offset: 0x498
     // Size: 0x30
     function set_clientnum(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "clientNum", value);
+        set_data(localclientnum, "clientNum", value);
     }
 
     // Namespace crevive_hud/revive_hud
@@ -44,7 +28,7 @@ class crevive_hud : cluielem {
     // Checksum 0x3d1c9a0e, Offset: 0x460
     // Size: 0x30
     function set_text(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "text", value);
+        set_data(localclientnum, "text", value);
     }
 
     // Namespace crevive_hud/revive_hud
@@ -61,9 +45,9 @@ class crevive_hud : cluielem {
     // Size: 0x84
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "text", #"");
-        [[ self ]]->set_data(localclientnum, "clientNum", 0);
-        [[ self ]]->set_data(localclientnum, "fadeTime", 0);
+        set_data(localclientnum, "text", #"");
+        set_data(localclientnum, "clientNum", 0);
+        set_data(localclientnum, "fadeTime", 0);
     }
 
     // Namespace crevive_hud/revive_hud

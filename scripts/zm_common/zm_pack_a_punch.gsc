@@ -340,9 +340,7 @@ function private turn_on(origin, radius) {
         pap_machine = self;
     }
     if (!isdefined(pap_machine)) {
-        /#
-            assert(0, "<unknown string>");
-        #/
+        assert(0, "<unknown string>");
         return;
     }
     if (isdefined(level.pack_a_punch.custom_power_think)) {
@@ -353,19 +351,15 @@ function private turn_on(origin, radius) {
     if (zm_utility::get_story() != 1) {
         self clientfield::set("pap_idle_fx", 1);
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     var_45fd85a3 = vectornormalize(anglestoright(pap_machine.angles)) * level.pack_a_punch.var_11fdb083;
     level.pack_a_punch.var_fcdf795b = var_45fd85a3 + (0, 0, level.pack_a_punch.interaction_height);
     if (!isdefined(pap_machine.unitrigger_stub)) {
-        /#
-            assert(0, "<unknown string>");
-        #/
+        assert(0, "<unknown string>");
         return;
     }
     pap_machine.unitrigger_stub.origin = pap_machine.origin + level.pack_a_punch.var_fcdf795b;
-    pap_machine.unitrigger_stub.angles = pap_machine.angles + vectorscale((0, -1, 0), 90);
+    pap_machine.unitrigger_stub.angles = pap_machine.angles + (0, -90, 0);
     zm_unitrigger::register_static_unitrigger(pap_machine.unitrigger_stub, &function_72cf5db2);
     zm_unitrigger::function_c4a5fdf5(pap_machine.unitrigger_stub, 1);
     pap_machine flag::set("pap_waiting_for_user");
@@ -387,9 +381,7 @@ function private turn_off(origin, radius) {
         pap_machine = self.target;
     }
     if (!isdefined(pap_machine)) {
-        /#
-            assert(0, "<unknown string>");
-        #/
+        assert(0, "<unknown string>");
     }
     if (isdefined(level.pack_a_punch.custom_power_think)) {
         if (!pap_machine is_on()) {
@@ -400,9 +392,7 @@ function private turn_off(origin, radius) {
     if (zm_utility::get_story() != 1) {
         self clientfield::set("pap_idle_fx", 0);
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     zm_unitrigger::unregister_unitrigger(pap_machine.unitrigger_stub);
     pap_machine flag::set("Pack_A_Punch_off");
     pap_machine flag::clear("Pack_A_Punch_on");
@@ -472,7 +462,7 @@ function private function_64416c32(delta, origin, radius) {
         if (isdefined(self.target.trigger_off) && self.target.trigger_off) {
             paporigin = self.target.realorigin;
         } else if (isdefined(self.target.disabled) && self.target.disabled) {
-            paporigin = paporigin + vectorscale((0, 0, 1), 10000);
+            paporigin = paporigin + (0, 0, 10000);
         }
         if (distancesquared(paporigin, origin) < radius * radius) {
             return true;
@@ -521,7 +511,6 @@ function private function_72cf5db2() {
                 pap_machine.var_a86430cb = undefined;
                 pap_machine.var_9c076b6 = undefined;
                 pap_machine.var_aa0d72d4 = undefined;
-                waitresult = undefined;
                 waitresult = self waittill(#"trigger");
                 player = waitresult.activator;
                 /#
@@ -663,7 +652,6 @@ function private function_222c0292(current_weapon, packa_rollers, pap_machine, v
     pap_machine flag::clear("pap_taking_gun");
     pap_machine flag::set("pap_offering_gun");
     pap_machine thread wait_for_timeout(pap_machine.unitrigger_stub.current_weapon, pap_machine.packa_timer, self, pap_machine.var_a86430cb, var_9c076b6, var_aa0d72d4);
-    s_result = undefined;
     s_result = pap_machine waittill(#"pap_timeout", #"pap_taken");
     if (s_result._notify == "pap_taken") {
         weaponidx = undefined;
@@ -742,12 +730,12 @@ function private third_person_weapon_upgrade(current_weapon, current_weaponoptio
     origin_base = self.origin;
     angles_base = self.angles;
     origin_offset = level.pack_a_punch.var_fcdf795b;
-    angles_offset = vectorscale((0, 1, 0), 90);
+    angles_offset = (0, 90, 0);
     origin_base = pap_machine.origin;
     angles_base = pap_machine.angles;
     forward = anglestoforward(angles_base + angles_offset);
     interact_offset = origin_offset + forward * -25;
-    offsetdw = vectorscale((1, 1, 1), 3);
+    offsetdw = (3, 3, 3);
     var_397d50da = isdefined(level.var_fbca9d31) ? level.var_fbca9d31 : 3.35;
     if (self hasperk(#"specialty_cooldown")) {
         pap_machine playsound(#"hash_552a43efc3f770d");
@@ -787,16 +775,11 @@ function private wait_for_player_to_take(player, weapon, packa_timer, var_a86430
     pap_machine = self.stub.zbarrier;
     current_weapon = pap_machine.unitrigger_stub.current_weapon;
     upgrade_weapon = pap_machine.unitrigger_stub.upgrade_weapon;
-    /#
-        assert(isdefined(current_weapon), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(upgrade_weapon), "<unknown string>");
-    #/
+    assert(isdefined(current_weapon), "<unknown string>");
+    assert(isdefined(upgrade_weapon), "<unknown string>");
     pap_machine endon(#"pap_timeout", #"hash_672bc8ddbec0fa33");
     while (isdefined(player)) {
         packa_timer playloopsound(#"zmb_perks_packa_ticktock");
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         trigger_player = waitresult.activator;
         if (level.pack_a_punch.grabbable_by_anyone) {
@@ -956,9 +939,7 @@ function private wait_for_disconnect(player) {
     while (isdefined(player)) {
         wait(0.1);
     }
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     self notify(#"pap_player_disconnected");
 }
 

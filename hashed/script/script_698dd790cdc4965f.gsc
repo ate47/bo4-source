@@ -31,9 +31,7 @@ function __init__() {
 // Checksum 0xe66a79a2, Offset: 0x140
 // Size: 0x1c4
 function private on_begin() {
-    /#
-        assert(isdefined(level.zombie_weapons_upgraded));
-    #/
+    assert(isdefined(level.zombie_weapons_upgraded));
     level.var_af806901 = [];
     foreach (upgraded_weapon in getarraykeys(level.zombie_weapons_upgraded)) {
         level.var_af806901[upgraded_weapon.name] = upgraded_weapon;
@@ -91,9 +89,7 @@ function private function_33f0ddd3(eventstruct) {
 // Checksum 0xb57119c5, Offset: 0x568
 // Size: 0x1c0
 function private function_6a8979c9() {
-    /#
-        assert(isdefined(level.var_af806901));
-    #/
+    assert(isdefined(level.var_af806901));
     foreach (weapon in self getweaponslist(1)) {
         if (isdefined(level.var_af806901[weapon.name])) {
             self lockweapon(weapon);

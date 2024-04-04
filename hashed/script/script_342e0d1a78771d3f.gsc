@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class cremote_missile_target_lockon : cluielem {
 
-    // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
-    // Params 0, eflags: 0x8
-    // Checksum 0x27bfdba9, Offset: 0x290
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x4e6091bc, Offset: 0x520
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
     // Params 2, eflags: 0x0
     // Checksum 0x8b9bb7ed, Offset: 0x4d8
     // Size: 0x3c
     function set_killed(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "killed", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "killed", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
@@ -37,7 +23,7 @@ class cremote_missile_target_lockon : cluielem {
     // Checksum 0x759e8f5b, Offset: 0x490
     // Size: 0x3c
     function set_ishawktag(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "isHawkTag", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "isHawkTag", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
@@ -45,7 +31,7 @@ class cremote_missile_target_lockon : cluielem {
     // Checksum 0xf410146f, Offset: 0x448
     // Size: 0x3c
     function set_target_locked(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "target_locked", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "target_locked", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon
@@ -53,7 +39,7 @@ class cremote_missile_target_lockon : cluielem {
     // Checksum 0x4c625cda, Offset: 0x400
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "clientnum", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "clientnum", value);
     }
 
     // Namespace cremote_missile_target_lockon/remote_missile_target_lockon

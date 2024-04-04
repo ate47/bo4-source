@@ -380,9 +380,7 @@ function killserverpc() {
     level.hostforcedend = 1;
     level.killserver = 1;
     endstring = #"hash_cd63faed592da03";
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     thread endgame(winner, endstring);
 }
 
@@ -1038,9 +1036,7 @@ function removedisconnectedplayerfromplacement() {
         return;
     }
     level.placement[#"all"][numplayers - 1] = undefined;
-    /#
-        assert(level.placement[#"all"].size == numplayers - 1);
-    #/
+    assert(level.placement[#"all"].size == numplayers - 1);
     /#
         globallogic_utils::assertproperplacement();
     #/
@@ -1273,9 +1269,7 @@ function updateteamstatus(var_bdfe75a7) {
 // Checksum 0x3d47a59b, Offset: 0x4aa8
 // Size: 0xb0
 function checkteamscorelimitsoon(team) {
-    /#
-        assert(isdefined(team));
-    #/
+    assert(isdefined(team));
     if (level.scorelimit <= 0) {
         return;
     }
@@ -1296,9 +1290,7 @@ function checkteamscorelimitsoon(team) {
 // Checksum 0xccd53179, Offset: 0x4b60
 // Size: 0xb8
 function checkplayerscorelimitsoon() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (level.scorelimit <= 0) {
         return;
     }
@@ -1454,9 +1446,7 @@ function callback_startgametype() {
         if (!isdefined(game.defenders)) {
             game.defenders = #"axis";
         }
-        /#
-            assert(game.attackers != game.defenders);
-        #/
+        assert(game.attackers != game.defenders);
         foreach (team, _ in level.teams) {
             if (!isdefined(game.team)) {
                 game.team = "pmc";
@@ -1700,9 +1690,7 @@ function checkroundswitch() {
     if (!isdefined(level.onroundswitch)) {
         return false;
     }
-    /#
-        assert(game.roundsplayed > 0);
-    #/
+    assert(game.roundsplayed > 0);
     if (game.roundsplayed % level.roundswitch == 0) {
         [[ level.onroundswitch ]]();
         return true;

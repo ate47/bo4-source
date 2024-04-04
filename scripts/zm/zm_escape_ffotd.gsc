@@ -26,7 +26,7 @@ function __init__() {
 // Size: 0xcc
 function __main__() {
     spawncollision("collision_clip_ramp_256x24", "collider", (758, 6590, 495), (270, 0.2, 18.8));
-    spawncollision("collision_clip_wall_256x256x10", "collider", (-1382.5, 5724, 177.5), vectorscale((0, 1, 0), 11.6));
-    spawncollision("collision_clip_ramp_256x24", "collider", (376, 10144, 1568), vectorscale((1, 1, 0), 270));
+    spawncollision("collision_clip_wall_256x256x10", "collider", (-1382.5, 5724, 177.5), (0, 11.6, 0));
+    spawncollision("collision_clip_ramp_256x24", "collider", (376, 10144, 1568), (270, 270, 0));
 }
 

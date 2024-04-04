@@ -28,7 +28,6 @@ function create_item_pickup(var_3d455c82, var_4b1985dd, var_b4bbefe4, n_radius =
 function private item_think() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         if (!isdefined(self.var_4bac8510) || [[ self.var_4bac8510 ]](s_notify.e_who)) {
             level thread [[ self.var_b4a870af ]](self, s_notify.e_who);
@@ -66,7 +65,6 @@ function function_e8661563(func_callback, var_c12c30aa = 0) {
 // Size: 0x13c
 function private function_8769717c() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     s_stub = self.stub;
     if (isdefined(waitresult.activator) && s_stub.b_picked_up !== 1) {

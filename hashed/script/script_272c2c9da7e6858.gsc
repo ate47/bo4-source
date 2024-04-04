@@ -8,28 +8,14 @@
 // Method(s) 8 Total 15
 class clower_message : cluielem {
 
-    // Namespace clower_message/lower_message
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x32a4acee, Offset: 0x258
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace clower_message/lower_message
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x17ff3373, Offset: 0x538
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace clower_message/lower_message
     // Params 2, eflags: 0x1 linked
     // Checksum 0x6a3610b0, Offset: 0x4f0
     // Size: 0x3c
     function set_countdowntimeseconds(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "countdownTimeSeconds", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "countdownTimeSeconds", value);
     }
 
     // Namespace clower_message/lower_message
@@ -37,7 +23,7 @@ class clower_message : cluielem {
     // Checksum 0x951a891a, Offset: 0x4a8
     // Size: 0x3c
     function set_message(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "message", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "message", value);
     }
 
     // Namespace clower_message/lower_message
@@ -46,22 +32,18 @@ class clower_message : cluielem {
     // Size: 0xfc
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"hash_45bfcb1cd8c9b50a" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace clower_message/lower_message

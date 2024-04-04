@@ -62,12 +62,10 @@ function function_3088962c() {
     self endon(#"disconnect");
     while (true) {
         var_255fe317 = 0;
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change", #"hash_3cc002901b983064");
         if (s_notify._notify === #"weapon_change") {
             self clientfield::set_to_player("" + #"hash_6a4f537da00ae3f9", 0);
             self mansion_util::function_268efa09(0);
-            s_notify = undefined;
             s_notify = self waittilltimeout(1.2, #"weapon_change_complete");
         } else {
             var_255fe317 = 1;
@@ -92,7 +90,6 @@ function function_3088962c() {
 function function_766980a4() {
     level endon(#"end_game");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"blueprint_completed");
         if (s_result.produced == getweapon(#"hash_1d4928987b5f4f6e")) {
             level zm_ui_inventory::function_7df6bb60(#"hash_26da6ef83af4ba62", 1);
@@ -284,7 +281,6 @@ function function_252cf612(player) {
 function function_dad1960c() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         player = waitresult.e_who;
         n_cost = function_8051ebe7(player, player getcurrentweapon(), 1);
@@ -406,7 +402,6 @@ function function_5a2bd56f(var_e7b17c0d) {
         __s util::delay_notify(n_timeout, "timeout");
     }
     while (true) {
-        var_54a97edd = undefined;
         var_54a97edd = self waittill(#"weapon_give", #"pap_timeout");
         if (isdefined(var_54a97edd) && zm_weapons::function_93cd8e76(var_54a97edd) === var_e7b17c0d) {
             zm_utility::function_28ee38f4(var_54a97edd, 0, 0);

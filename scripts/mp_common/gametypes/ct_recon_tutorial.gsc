@@ -471,7 +471,6 @@ function function_6728bf85() {
     dir = vectornormalize(dir);
     velocity = vectorscale(dir, 1000);
     sensor_dart = level.var_2a5b7055 magicgrenadeplayer(getweapon(#"eq_sensor"), var_1d00e3e1.origin, velocity);
-    waitresult = undefined;
     waitresult = sensor_dart waittill(#"stationary");
     sensor_dart.hitnormal = waitresult.normal;
     sensor_dart.hitpos = waitresult.position;
@@ -526,7 +525,6 @@ function function_6728bf85() {
 function function_40e2147a() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         if (isdefined(self.waypoint)) {
@@ -713,7 +711,6 @@ function function_f6c6baf3() {
     level.var_e72728b8 = array(#"gadget_vision_pulse");
     level.var_5008031d = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = e_player waittill(#"hash_70f03cfbb15356c0");
         e_dart = waitresult.dart;
         level.var_5008031d = e_dart;
@@ -997,7 +994,6 @@ function spawn_blight_father(s_loc) {
 // Checksum 0x2242e6fa, Offset: 0x5e00
 // Size: 0x112
 function zombie_death_watcher() {
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (isdefined(waitresult.attacker) && !isbot(waitresult.attacker)) {
         e_player = ct_utils::get_player();

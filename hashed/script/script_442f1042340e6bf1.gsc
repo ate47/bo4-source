@@ -8,27 +8,11 @@
 class czm_zod_wonderweapon_quest : cluielem {
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
-    // Params 0, eflags: 0x8
-    // Checksum 0x5060e464, Offset: 0x2c0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x69472c9c, Offset: 0x5b8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
     // Params 2, eflags: 0x0
     // Checksum 0x7d953140, Offset: 0x580
     // Size: 0x30
     function set_decay(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "decay", value);
+        set_data(localclientnum, "decay", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -36,7 +20,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0x3d73eea, Offset: 0x548
     // Size: 0x30
     function set_purity(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "purity", value);
+        set_data(localclientnum, "purity", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -44,7 +28,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0x1abc56f0, Offset: 0x510
     // Size: 0x30
     function set_plasma(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "plasma", value);
+        set_data(localclientnum, "plasma", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -52,7 +36,7 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Checksum 0x642752f1, Offset: 0x4d8
     // Size: 0x30
     function set_radiance(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "radiance", value);
+        set_data(localclientnum, "radiance", value);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest
@@ -69,10 +53,10 @@ class czm_zod_wonderweapon_quest : cluielem {
     // Size: 0x94
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_data(localclientnum, "radiance", 0);
-        [[ self ]]->set_data(localclientnum, "plasma", 0);
-        [[ self ]]->set_data(localclientnum, "purity", 0);
-        [[ self ]]->set_data(localclientnum, "decay", 0);
+        set_data(localclientnum, "radiance", 0);
+        set_data(localclientnum, "plasma", 0);
+        set_data(localclientnum, "purity", 0);
+        set_data(localclientnum, "decay", 0);
     }
 
     // Namespace czm_zod_wonderweapon_quest/zm_zod_wonderweapon_quest

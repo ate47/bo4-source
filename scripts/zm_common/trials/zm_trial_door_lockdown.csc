@@ -68,7 +68,7 @@ function private zm_trial_door_lockdown(localclientnum, oldval, newval, bnewent,
             var_b1e1a2db = level._effect[#"hash_257bf4ae70b5a852"];
             break;
         }
-        self.var_958e3374 = playfx(localclientnum, var_b1e1a2db, self.origin - vectorscale((0, 0, 1), 48), v_forward);
+        self.var_958e3374 = playfx(localclientnum, var_b1e1a2db, self.origin - (0, 0, 48), v_forward);
         return;
     }
     if (isdefined(self.var_958e3374)) {

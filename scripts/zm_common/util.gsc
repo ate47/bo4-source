@@ -24,9 +24,7 @@ function brush_delete() {
     if (!isdefined(self.model)) {
         return;
     }
-    /#
-        assert(isdefined(self.model));
-    #/
+    assert(isdefined(self.model));
     if (!isdefined(self.v[#"fxid"]) || self.v[#"fxid"] == "No FX") {
         self.v[#"exploder"] = undefined;
     }
@@ -42,9 +40,7 @@ function brush_show() {
     if (isdefined(self.v[#"delay"])) {
         wait(self.v[#"delay"]);
     }
-    /#
-        assert(isdefined(self.model));
-    #/
+    assert(isdefined(self.model));
     self.model show();
     self.model solid();
 }
@@ -85,9 +81,7 @@ function brush_throw() {
 // Checksum 0x3f4ea379, Offset: 0x500
 // Size: 0x17e
 function playsoundonplayers(sound, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     if (level.splitscreen) {
         if (isdefined(level.players[0])) {
             level.players[0] playlocalsound(sound);
@@ -140,9 +134,7 @@ function waitrespawnbutton() {
 // Checksum 0x9426be9a, Offset: 0x740
 // Size: 0xd6
 function printonteam(text, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -156,9 +148,7 @@ function printonteam(text, team) {
 // Checksum 0x38781a1c, Offset: 0x820
 // Size: 0xd6
 function printboldonteam(text, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -172,9 +162,7 @@ function printboldonteam(text, team) {
 // Checksum 0xd42ba54e, Offset: 0x900
 // Size: 0xe6
 function printboldonteamarg(text, team, arg) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -216,9 +204,7 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
     shoulddosounds = isdefined(soundfriendly);
     shoulddoenemysounds = 0;
     if (isdefined(soundenemy)) {
-        /#
-            assert(shoulddosounds);
-        #/
+        assert(shoulddosounds);
         shoulddoenemysounds = 1;
     }
     if (!isdefined(printarg)) {
@@ -245,16 +231,12 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             }
         }
         if (shoulddosounds) {
-            /#
-                assert(level.splitscreen);
-            #/
+            assert(level.splitscreen);
             level.players[0] playlocalsound(soundfriendly);
         }
         return;
     }
-    /#
-        assert(shoulddosounds);
-    #/
+    assert(shoulddosounds);
     if (shoulddoenemysounds) {
         for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
@@ -324,9 +306,7 @@ function getotherteam(team) {
     } else {
         return #"allies";
     }
-    /#
-        assertmsg("<unknown string>" + team);
-    #/
+    assertmsg("<unknown string>" + team);
 }
 
 // Namespace util/util
@@ -360,9 +340,7 @@ function getotherteamsmask(skip_team) {
 // Checksum 0x312832a5, Offset: 0x1238
 // Size: 0x5c
 function getfx(fx) {
-    /#
-        assert(isdefined(level._effect[fx]), "<unknown string>" + fx + "<unknown string>");
-    #/
+    assert(isdefined(level._effect[fx]), "<unknown string>" + fx + "<unknown string>");
     return level._effect[fx];
 }
 
@@ -387,9 +365,7 @@ function iskillstreaksenabled() {
 // Checksum 0x28e3e234, Offset: 0x1308
 // Size: 0x32
 function getremotename() {
-    /#
-        assert(self isusingremote());
-    #/
+    assert(self isusingremote());
     return self.usingremote;
 }
 

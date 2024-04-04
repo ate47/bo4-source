@@ -240,18 +240,18 @@ function private start_step_2() {
         iprintlnbold("<unknown string>" + level.var_23674b8f.var_80284ca5[0].script_noteworthy + "<unknown string>" + level.var_23674b8f.var_80284ca5[1].script_noteworthy);
     #/
     s_canister = level.var_23674b8f.var_5dca8c75;
-    level.var_23674b8f.e_wisp = util::spawn_model(#"tag_origin", s_canister.origin - vectorscale((0, 0, 1), 64), s_canister.angles);
+    level.var_23674b8f.e_wisp = util::spawn_model(#"tag_origin", s_canister.origin - (0, 0, 64), s_canister.angles);
     e_wisp = level.var_23674b8f.e_wisp;
     e_wisp.e_model = util::spawn_model(#"p7_zm_ori_orb_wind", e_wisp.origin, e_wisp.angles);
     e_wisp.e_model linkto(e_wisp);
     e_wisp.e_model ghost();
     e_wisp clientfield::set("" + #"hash_b0298e980bd8da0", 1);
-    e_wisp moveto(s_canister.origin + vectorscale((0, 0, 1), 64), 0.75);
+    e_wisp moveto(s_canister.origin + (0, 0, 64), 0.75);
     e_wisp waittill(#"movedone");
     level thread function_eddc2ed3();
     wait(3);
     n_time = distance(e_wisp.origin, level.var_23674b8f.var_80284ca5[0].origin) / 400;
-    e_wisp moveto(level.var_23674b8f.var_80284ca5[0].origin + vectorscale((0, 0, 1), 64), n_time);
+    e_wisp moveto(level.var_23674b8f.var_80284ca5[0].origin + (0, 0, 64), n_time);
     e_wisp waittill(#"movedone");
     e_wisp thread function_fe82c566();
     level.var_23674b8f.e_player thread function_92344a03();
@@ -283,7 +283,6 @@ function private function_fe82c566() {
     while (true) {
         self.e_model setcandamage(1);
         self.e_model val::set("quest_mk2y", "allowDeath", 0);
-        s_notify = undefined;
         s_notify = self.e_model waittill(#"damage");
         self.e_model setcandamage(0);
         var_bc569584 = level.var_23674b8f.var_80284ca5[level.var_23674b8f.var_c8a6d360].origin;
@@ -301,8 +300,8 @@ function private function_fe82c566() {
         }
         self clientfield::set("" + #"hash_b0298e980bd8da0", 1);
         var_838db546 = level.var_23674b8f.var_80284ca5[level.var_23674b8f.var_c8a6d360].origin;
-        self.origin = var_838db546 - vectorscale((0, 0, 1), 64);
-        self moveto(var_838db546 + vectorscale((0, 0, 1), 64), 1);
+        self.origin = var_838db546 - (0, 0, 64);
+        self moveto(var_838db546 + (0, 0, 64), 1);
         wait(0.5);
         playfx(level._effect[#"portal_dest"], var_838db546, (1, 0, 0), (0, 0, 1));
         playsoundatposition(#"evt_teleporter_go", var_838db546);
@@ -337,7 +336,7 @@ function private function_92344a03() {
             e_wisp = level.var_23674b8f.e_wisp;
             var_59bd625c = self getcentroid() + 20 * vectornormalize(anglestoforward(self.angles));
             var_59bd625c = var_59bd625c + 2 * vectornormalize(anglestoright(self.angles));
-            var_59bd625c = var_59bd625c + vectorscale((0, 0, 1), 22);
+            var_59bd625c = var_59bd625c + (0, 0, 22);
             e_wisp.origin = var_59bd625c;
             e_wisp.angles = self.angles;
             e_wisp clientfield::set("" + #"hash_1e4555a911a24ab7", 1);
@@ -393,7 +392,7 @@ function start_step_3() {
     e_wisp.origin = level.var_23674b8f.e_player getcentroid();
     e_wisp.angles = level.var_23674b8f.e_player.angles;
     var_59bd625c = level.var_23674b8f.e_player getcentroid() + 96 * vectornormalize(anglestoforward(level.var_23674b8f.e_player.angles));
-    var_59bd625c = var_59bd625c + vectorscale((0, 0, 1), 32);
+    var_59bd625c = var_59bd625c + (0, 0, 32);
     e_wisp moveto(var_59bd625c, 0.5);
     e_wisp waittill(#"movedone");
     wait(3);
@@ -426,7 +425,7 @@ function private function_2b0060b8() {
         } else {
             self moveto(var_ae661658, 2, 1, 1);
         }
-        self rotatevelocity(vectorscale((0, 1, 0), 90), 4);
+        self rotatevelocity((0, 90, 0), 4);
         self waittill(#"movedone");
     }
 }
@@ -499,7 +498,6 @@ function private function_7015dc35(e_player) {
 function private function_2ac1278b() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (function_18a1849f(e_player)) {

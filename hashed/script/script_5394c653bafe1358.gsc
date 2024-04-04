@@ -8,28 +8,14 @@
 // Method(s) 8 Total 15
 class cmp_revive_prompt : cluielem {
 
-    // Namespace cmp_revive_prompt/mp_revive_prompt
-    // Params 0, eflags: 0x8
-    // Checksum 0xf5fe5705, Offset: 0x258
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_revive_prompt/mp_revive_prompt
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xa1d0cdd3, Offset: 0x478
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
     // Params 2, eflags: 0x0
     // Checksum 0x578d9f07, Offset: 0x430
     // Size: 0x3c
     function set_reviveprogress(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "reviveProgress", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "reviveProgress", value);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
@@ -37,7 +23,7 @@ class cmp_revive_prompt : cluielem {
     // Checksum 0x395535ff, Offset: 0x3e8
     // Size: 0x3c
     function set_health(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "health", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "health", value);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt
@@ -45,7 +31,7 @@ class cmp_revive_prompt : cluielem {
     // Checksum 0xd95b448d, Offset: 0x3a0
     // Size: 0x3c
     function set_clientnum(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "clientnum", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "clientnum", value);
     }
 
     // Namespace cmp_revive_prompt/mp_revive_prompt

@@ -27,25 +27,15 @@ function __init__() {
 // Checksum 0x49209e03, Offset: 0x140
 // Size: 0x244
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_e3151f98));
-    #/
+    assert(isscriptfunctionptr(&function_e3151f98));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_62335a0608a02309", &function_e3151f98);
-    /#
-        assert(isscriptfunctionptr(&function_e5f59cf0));
-    #/
+    assert(isscriptfunctionptr(&function_e5f59cf0));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4a938922d1af0c4d", &function_e5f59cf0);
-    /#
-        assert(isscriptfunctionptr(&function_3c677dcd));
-    #/
+    assert(isscriptfunctionptr(&function_3c677dcd));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4cc583c8bb841d4c", &function_3c677dcd);
-    /#
-        assert(isscriptfunctionptr(&function_994477c0));
-    #/
+    assert(isscriptfunctionptr(&function_994477c0));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3861dc092e2bcf88", &function_994477c0);
-    /#
-        assert(isscriptfunctionptr(&function_fb9f1f3b));
-    #/
+    assert(isscriptfunctionptr(&function_fb9f1f3b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_48334fe2b83169f2", &function_fb9f1f3b);
     animationstatenetwork::registeranimationmocomp("mocomp_swat_team_pain", &function_6edff1e1, undefined, &function_8acd749d);
 }

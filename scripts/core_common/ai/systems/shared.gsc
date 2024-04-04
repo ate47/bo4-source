@@ -60,21 +60,13 @@ function placeweaponon(weapon, position) {
         self init::initweapon(weapon);
     }
     curposition = self.weaponinfo[weapon.name].position;
-    /#
-        assert(curposition == "<unknown string>" || self.a.weaponpos[curposition] == weapon);
-    #/
+    assert(curposition == "<unknown string>" || self.a.weaponpos[curposition] == weapon);
     if (!isarray(self.a.weaponpos)) {
         self.a.weaponpos = [];
     }
-    /#
-        assert(isarray(self.a.weaponpos));
-    #/
-    /#
-        assert(position == "<unknown string>" || isdefined(self.a.weaponpos[position]), "<unknown string>" + position + "<unknown string>");
-    #/
-    /#
-        assert(isweapon(weapon));
-    #/
+    assert(isarray(self.a.weaponpos));
+    assert(position == "<unknown string>" || isdefined(self.a.weaponpos[position]), "<unknown string>" + position + "<unknown string>");
+    assert(isweapon(weapon));
     if (position != "none" && self.a.weaponpos[position] == weapon) {
         return;
     }
@@ -97,9 +89,7 @@ function placeweaponon(weapon, position) {
         self updatescriptweaponinfoandpos(weapon, position);
     }
     self updateattachedweaponmodels();
-    /#
-        assert(self.a.weaponpos[#"left"] == level.weaponnone || self.a.weaponpos[#"right"] == level.weaponnone);
-    #/
+    assert(self.a.weaponpos[#"left"] == level.weaponnone || self.a.weaponpos[#"right"] == level.weaponnone);
 }
 
 // Namespace shared/shared
@@ -175,9 +165,7 @@ function gettagforpos(position) {
     case #"hand":
         return "tag_inhand";
     default:
-        /#
-            assertmsg("<unknown string>" + position);
-        #/
+        assertmsg("<unknown string>" + position);
         break;
     }
 }
@@ -223,14 +211,10 @@ function dropaiweapon() {
         return;
     }
     if (isdefined(self.script_nodropsecondaryweapon) && self.script_nodropsecondaryweapon && self.weapon == self.initial_secondaryweapon) {
-        /#
-            println("<unknown string>" + self.weapon.name + "<unknown string>");
-        #/
+        println("<unknown string>" + self.weapon.name + "<unknown string>");
         return;
     } else if (isdefined(self.script_nodropsidearm) && self.script_nodropsidearm && self.weapon == self.sidearm) {
-        /#
-            println("<unknown string>" + self.weapon.name + "<unknown string>");
-        #/
+        println("<unknown string>" + self.weapon.name + "<unknown string>");
         return;
     }
     [[ level.ai_weapon_throttle ]]->waitinqueue(self);
@@ -283,15 +267,11 @@ function dropallaiweapons() {
                 self.weaponinfo[weapon.name].position = "none";
                 self.a.weaponpos[self.weapon_positions[index]] = level.weaponnone;
                 if (isdefined(self.script_nodropsecondaryweapon) && self.script_nodropsecondaryweapon && weapon == self.initial_secondaryweapon) {
-                    /#
-                        println("<unknown string>" + weapon.name + "<unknown string>");
-                    #/
+                    println("<unknown string>" + weapon.name + "<unknown string>");
                     continue;
                 }
                 if (isdefined(self.script_nodropsidearm) && self.script_nodropsidearm && weapon == self.sidearm) {
-                    /#
-                        println("<unknown string>" + weapon.name + "<unknown string>");
-                    #/
+                    println("<unknown string>" + weapon.name + "<unknown string>");
                     continue;
                 }
                 velocity = self getvelocity();
@@ -339,7 +319,6 @@ function handlenotetrack(note, flagname, customfunction, var1) {
 // Size: 0xa8
 function donotetracks(flagname, customfunction, debugidentifier, var1) {
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(flagname);
         note = waitresult.notetrack;
         if (!isdefined(note)) {
@@ -357,11 +336,8 @@ function donotetracks(flagname, customfunction, debugidentifier, var1) {
 // Checksum 0xd29a6d97, Offset: 0x14a8
 // Size: 0xe0
 function donotetracksintercept(flagname, interceptfunction, debugidentifier) {
-    /#
-        assert(isdefined(interceptfunction));
-    #/
+    assert(isdefined(interceptfunction));
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(flagname);
         note = waitresult.notetrack;
         if (!isdefined(note)) {
@@ -383,11 +359,8 @@ function donotetracksintercept(flagname, interceptfunction, debugidentifier) {
 // Checksum 0xc4679a55, Offset: 0x1590
 // Size: 0xb6
 function donotetrackspostcallback(flagname, postfunction) {
-    /#
-        assert(isdefined(postfunction));
-    #/
+    assert(isdefined(postfunction));
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(flagname);
         note = waitresult.notetrack;
         if (!isdefined(note)) {
@@ -438,9 +411,7 @@ function donotetracksforeverproc(notetracksfunc, flagname, killstring, customfun
             returnednote = [[ notetracksfunc ]](flagname, customfunction, debugidentifier);
             timetaken = gettime() - time;
             if (timetaken < 0.05) {
-                /#
-                    println(gettime() + "<unknown string>" + debugidentifier + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
-                #/
+                println(gettime() + "<unknown string>" + debugidentifier + "<unknown string>" + flagname + "<unknown string>" + returnednote + "<unknown string>");
                 wait(0.05 - timetaken);
             }
         }

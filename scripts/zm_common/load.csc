@@ -62,11 +62,7 @@ function warnmissilefired(localclientnum, set) {
 // Checksum 0x2150d358, Offset: 0x1e8
 // Size: 0x11c
 function main() {
-    /#
-        /#
-            assert(isdefined(level.first_frame), "<unknown string>");
-        #/
-    #/
+    assert(isdefined(level.first_frame), "<unknown string>");
     zm::init();
     level thread util::init_utility();
     util::register_system(#"levelnotify", &levelnotifyhandler);

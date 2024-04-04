@@ -87,8 +87,8 @@ function function_67fa988c(localclientnum, oldval, newval, bnewent, binitialsnap
 function function_9c964ccc(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval) {
         waitframe(1);
-        v_up = vectorscale((1, 0, 0), 360);
-        v_forward = vectorscale((0, 0, 1), 360);
+        v_up = (360, 0, 0);
+        v_forward = (0, 0, 360);
         if (isdefined(self)) {
             playfx(localclientnum, "maps/zm_white/fx8_monkey_bomb_reveal", self.origin, v_forward, v_up);
             self playsound(localclientnum, #"hash_21206f1b7fb27f81");

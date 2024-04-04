@@ -42,7 +42,6 @@ function monitorempgrenade() {
     self endon(#"disconnect", #"death", #"killempmonitor");
     self.empendtime = 0;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"emp_grenaded");
         attacker = waitresult.attacker;
         explosionpoint = waitresult.position;
@@ -51,9 +50,7 @@ function monitorempgrenade() {
         }
         hurtvictim = 1;
         hurtattacker = 0;
-        /#
-            assert(isdefined(self.team));
-        #/
+        assert(isdefined(self.team));
         if (level.teambased && isdefined(attacker) && isdefined(attacker.team) && !util::function_fbce7263(attacker.team, self.team) && attacker != self) {
             friendlyfire = [[ level.figure_out_friendly_fire ]](self, attacker);
             if (friendlyfire == 0) {
@@ -192,7 +189,6 @@ function watchempexplosion(owner, weapon) {
     owner endon(#"disconnect", #"team_changed");
     self endon(#"trophy_destroyed");
     owner stats::function_e24eec31(weapon, #"used", 1);
-    waitresult = undefined;
     waitresult = self waittill(#"explode", #"death");
     if (waitresult._notify == "explode") {
         level empexplosiondamageents(owner, weapon, waitresult.position, 425, 1);

@@ -522,12 +522,8 @@ function devgui_attachment_cycling_think() {
 // Size: 0x84c
 function devgui_give_weapon(weapon_name) {
     /#
-        /#
-            assert(isdefined(self));
-        #/
-        /#
-            assert(isplayer(self));
-        #/
+        assert(isdefined(self));
+        assert(isplayer(self));
         self notify(#"devgui_give_ammo");
         self endon(#"devgui_give_ammo");
         endtime = gettime() + 10000;
@@ -869,7 +865,7 @@ function function_7bef8d25() {
                 if (damage <= 0) {
                     player.health = remaining_health;
                 } else {
-                    player dodamage(damage, player.origin + vectorscale((1, 0, 0), 100));
+                    player dodamage(damage, player.origin + (100, 0, 0));
                 }
             }
             setdvar(#"hash_28af507d964c5802", 0);
@@ -942,7 +938,7 @@ function function_be0f9897() {
                         player.health = player.health + heal;
                     }
                 } else {
-                    player dodamage(damage, player.origin + vectorscale((1, 0, 0), 100));
+                    player dodamage(damage, player.origin + (100, 0, 0));
                 }
             }
             setdvar(#"scr_damage_health", 0);
@@ -1087,7 +1083,7 @@ function private function_57edec18() {
                     waitframe(1);
                     continue;
                 }
-                drone_camera = spawnvehicle("<unknown string>", player.origin + vectorscale((0, 0, 1), 150), player.angles, "<unknown string>");
+                drone_camera = spawnvehicle("<unknown string>", player.origin + (0, 0, 150), player.angles, "<unknown string>");
                 drone_camera.ignoreme = 1;
                 drone_camera usevehicle(player, 0);
                 level.drone_camera = drone_camera;

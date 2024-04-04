@@ -8,28 +8,14 @@
 // Method(s) 6 Total 13
 class cself_revive_visuals_rush : cluielem {
 
-    // Namespace cself_revive_visuals_rush/self_revive_visuals_rush
-    // Params 0, eflags: 0x8
-    // Checksum 0x86ec5c37, Offset: 0x1e0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cself_revive_visuals_rush/self_revive_visuals_rush
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xc1b63a66, Offset: 0x320
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cself_revive_visuals_rush/self_revive_visuals_rush
     // Params 2, eflags: 0x0
     // Checksum 0x21211ea8, Offset: 0x2d8
     // Size: 0x3c
     function set_revive_time(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "revive_time", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "revive_time", value);
     }
 
     // Namespace cself_revive_visuals_rush/self_revive_visuals_rush

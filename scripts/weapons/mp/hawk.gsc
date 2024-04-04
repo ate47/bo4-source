@@ -33,9 +33,7 @@ function __init__() {
     level.hawk_settings.spawn = &spawn_hawk;
     level.hawk_settings.weapon = getweapon(#"eq_hawk");
     level.hawk_settings.bundle = getscriptbundle("hawk_settings");
-    /#
-        assert(isdefined(level.hawk_settings.bundle));
-    #/
+    assert(isdefined(level.hawk_settings.bundle));
     callback::on_spawned(&on_player_spawned);
     callback::on_finalize_initialization(&function_3675de8b);
     globallogic_score::register_kill_callback(level.hawk_settings.weapon, &function_17b75237);
@@ -59,7 +57,7 @@ function function_3675de8b() {
 // Checksum 0xae79583, Offset: 0x488
 // Size: 0x4a
 function function_6ada73f(spawnpos) {
-    return physicstrace(self.origin, spawnpos, vectorscale((-1, -1, 0), 18), (18, 18, 12), undefined, 16 | 2);
+    return physicstrace(self.origin, spawnpos, (-18, -18, 0), (18, 18, 12), undefined, 16 | 2);
 }
 
 // Namespace hawk_mp/hawk
@@ -78,22 +76,22 @@ function spawn_hawk() {
     var_c7588ce0 = (0, playerangles[1], 0);
     forward = anglestoforward(var_c7588ce0);
     forward = forward * 20;
-    spawnpos = self.origin + vectorscale((0, 0, 1), 90) + forward;
+    spawnpos = self.origin + (0, 0, 90) + forward;
     trace = self function_6ada73f(spawnpos);
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 75) + forward;
+        spawnpos = self.origin + (0, 0, 75) + forward;
         trace = function_6ada73f(spawnpos);
     }
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 45) + forward;
+        spawnpos = self.origin + (0, 0, 45) + forward;
         trace = function_6ada73f(spawnpos);
     }
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 75);
+        spawnpos = self.origin + (0, 0, 75);
         trace = function_6ada73f(spawnpos);
     }
     if (trace[#"fraction"] < 1) {
-        spawnpos = self.origin + vectorscale((0, 0, 1), 45);
+        spawnpos = self.origin + (0, 0, 45);
     }
     if (!function_3238d10d(spawnpos)) {
         self.hawk = undefined;
@@ -468,7 +466,6 @@ function watch_timeout(duration) {
 // Size: 0xac
 function watch_team_change(hawk) {
     hawk endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"disconnect", #"joined_team", #"joined_spectator", #"changed_specialist", #"changed_specialist_death");
     if (!isdefined(hawk)) {
         return;
@@ -668,9 +665,9 @@ function targeting_hud_think(vehicle) {
     vehicle endon(#"death");
     level endon(#"game_ended");
     stance_offsets = [];
-    stance_offsets[#"stand"] = vectorscale((0, 0, 1), 60);
-    stance_offsets[#"crouch"] = vectorscale((0, 0, 1), 40);
-    stance_offsets[#"prone"] = vectorscale((0, 0, 1), 12);
+    stance_offsets[#"stand"] = (0, 0, 60);
+    stance_offsets[#"crouch"] = (0, 0, 40);
+    stance_offsets[#"prone"] = (0, 0, 12);
     player = self;
     targets = self getvalidtargets(vehicle, stance_offsets);
     framessincetargetscan = 0;

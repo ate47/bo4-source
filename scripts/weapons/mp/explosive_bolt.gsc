@@ -41,7 +41,6 @@ function begin_other_grenade_tracking() {
     self endon(#"bolttrackingstart");
     weapon_bolt = getweapon(#"explosive_bolt");
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
         weapon = waitresult.weapon;

@@ -67,7 +67,7 @@ function despawn_fx(localclientnum, oldval, newval, bnewent, binitialsnap, field
 // Size: 0x8c
 function function_3ad76adb(localclientnum) {
     if (isdefined(self)) {
-        playfx(localclientnum, level._effect[#"despawn_fx"], self.origin + vectorscale((0, 0, 1), 32), anglestoforward(self.angles), anglestoup(self.angles));
+        playfx(localclientnum, level._effect[#"despawn_fx"], self.origin + (0, 0, 32), anglestoforward(self.angles), anglestoup(self.angles));
     }
 }
 
@@ -77,7 +77,7 @@ function function_3ad76adb(localclientnum) {
 // Size: 0xbc
 function clue_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
-        self.var_eabea138 = playfx(localclientnum, level._effect[#"clue_fx"], self.origin - vectorscale((0, 0, 1), 6));
+        self.var_eabea138 = playfx(localclientnum, level._effect[#"clue_fx"], self.origin - (0, 0, 6));
         self callback::on_shutdown(&function_e3bb737c);
     }
 }

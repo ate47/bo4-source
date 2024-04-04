@@ -79,7 +79,6 @@ function trigger_think() {
     }
     if (is_look_trigger()) {
         level thread look_trigger(self);
-        s_info = undefined;
         s_info = self waittill(#"trigger_look");
         self thread callback::codecallback_trigger(s_info, 1);
     }
@@ -115,9 +114,7 @@ function get_trigger_look_target() {
         a_potential_target_structs = struct::get_array(self.target);
         a_targets = arraycombine(a_targets, a_potential_target_structs, 1, 0);
         if (a_targets.size > 0) {
-            /#
-                assert(a_targets.size == 1, "<unknown string>" + self.origin + "<unknown string>");
-            #/
+            assert(a_targets.size == 1, "<unknown string>" + self.origin + "<unknown string>");
             e_target = a_targets[0];
         }
     }
@@ -143,7 +140,6 @@ function look_trigger(trigger) {
     }
     b_ads_check = isinarray(a_parameters, "check_ads");
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         e_other = waitresult.activator;
         if (isplayer(e_other)) {
@@ -155,9 +151,7 @@ function look_trigger(trigger) {
             }
             continue;
         }
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     }
 }
 
@@ -173,9 +167,7 @@ function trigger_spawner(s_info) {
                 level thread vehicle::_vehicle_spawn(sp);
                 continue;
             }
-            /#
-                assert(isactorspawner(sp));
-            #/
+            assert(isactorspawner(sp));
             sp thread trigger_spawner_spawn();
         }
     }
@@ -269,13 +261,9 @@ function add_tokens_to_trigger_flags(tokens) {
 function friendly_respawn_trigger(trigger) {
     trigger endon(#"death");
     spawners = getentarray(trigger.target, "targetname");
-    /#
-        assert(spawners.size == 1, "<unknown string>" + trigger.target + "<unknown string>");
-    #/
+    assert(spawners.size == 1, "<unknown string>" + trigger.target + "<unknown string>");
     spawner = spawners[0];
-    /#
-        assert(!isdefined(spawner.script_forcecolor), "<unknown string>" + spawner.origin + "<unknown string>");
-    #/
+    assert(!isdefined(spawner.script_forcecolor), "<unknown string>" + spawner.origin + "<unknown string>");
     spawners = undefined;
     spawner endon(#"death");
     while (true) {
@@ -360,7 +348,6 @@ function _detect_touched() {
 // Size: 0x78
 function trigger_delete_on_touch(trigger) {
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         other = waitresult.activator;
         if (isdefined(other)) {
@@ -427,9 +414,7 @@ function is_trigger_of_type(...) {
 function wait_till(str_name, str_key = "targetname", e_entity, b_assert = 1) {
     if (isdefined(str_name)) {
         triggers = getentarray(str_name, str_key);
-        /#
-            assert(!b_assert || triggers.size > 0, "<unknown string>" + str_name + "<unknown string>" + str_key);
-        #/
+        assert(!b_assert || triggers.size > 0, "<unknown string>" + str_name + "<unknown string>" + str_key);
         if (triggers.size > 0) {
             if (triggers.size == 1) {
                 trigger_hit = triggers[0];
@@ -437,7 +422,6 @@ function wait_till(str_name, str_key = "targetname", e_entity, b_assert = 1) {
             } else {
                 s_tracker = spawnstruct();
                 array::thread_all(triggers, &_trigger_wait_think, s_tracker, e_entity);
-                waitresult = undefined;
                 waitresult = s_tracker waittill(#"trigger");
                 trigger_hit = waitresult.trigger;
                 trigger_hit.who = waitresult.activator;
@@ -464,18 +448,13 @@ function _trigger_wait(e_entity) {
     }
     /#
         if (is_look_trigger()) {
-            /#
-                assert(!isarray(e_entity), "<unknown string>");
-            #/
+            assert(!isarray(e_entity), "<unknown string>");
         } else if (self.classname === "<unknown string>") {
-            /#
-                assert(!isarray(e_entity), "<unknown string>");
-            #/
+            assert(!isarray(e_entity), "<unknown string>");
         }
     #/
     while (true) {
         if (is_look_trigger()) {
-            waitresult = undefined;
             waitresult = self waittill(#"trigger_look");
             wait(self.delaynotify);
             e_other = waitresult.activator;
@@ -485,7 +464,6 @@ function _trigger_wait(e_entity) {
                 }
             }
         } else if (self.classname === "trigger_damage") {
-            waitresult = undefined;
             waitresult = self waittill(#"trigger");
             wait(self.delaynotify);
             e_other = waitresult.activator;
@@ -495,7 +473,6 @@ function _trigger_wait(e_entity) {
                 }
             }
         } else {
-            waitresult = undefined;
             waitresult = self waittill(#"trigger");
             wait(self.delaynotify);
             e_other = waitresult.activator;
@@ -535,9 +512,7 @@ function use(str_name, str_key = "targetname", ent = getplayers()[0], b_assert =
         e_trig = getent(str_name, str_key);
         if (!isdefined(e_trig)) {
             if (b_assert) {
-                /#
-                    assertmsg("<unknown string>" + str_name + "<unknown string>" + str_key);
-                #/
+                assertmsg("<unknown string>" + str_name + "<unknown string>" + str_key);
             }
             return;
         }
@@ -646,9 +621,7 @@ function wait_till_any(...) {
     } else {
         a_str_targetnames = vararg;
     }
-    /#
-        assert(a_str_targetnames.size, "<unknown string>");
-    #/
+    assert(a_str_targetnames.size, "<unknown string>");
     a_triggers = [];
     a_triggers = arraycombine(a_triggers, getentarray(a_str_targetnames[0], "targetname"), 1, 0);
     for (i = 1; i < a_str_targetnames.size; i++) {
@@ -657,7 +630,6 @@ function wait_till_any(...) {
     for (i = 0; i < a_triggers.size; i++) {
         ent thread _ent_waits_for_trigger(a_triggers[i]);
     }
-    waitresult = undefined;
     waitresult = ent waittill(#"done");
     return waitresult.trigger;
 }

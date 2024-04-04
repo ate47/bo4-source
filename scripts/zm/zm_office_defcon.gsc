@@ -62,7 +62,6 @@ function defcon_sign_setup() {
         } else {
             self sethintstring(#"hash_734fe766ffad1d04");
         }
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
         self sethintstring("");

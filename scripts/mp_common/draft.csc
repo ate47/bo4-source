@@ -379,15 +379,9 @@ function function_6b532f83(localclientnum, var_de58f286, sessionmode) {
     weapongroupanim = function_bb0565d0(var_de58f286);
     if (isdefined(var_de58f286.var_625ec6da) && player_role::is_valid(var_de58f286.var_625ec6da.charactertype)) {
         if (!isdefined(var_de58f286) || !isdefined(var_de58f286.var_91065a59) || !isdefined(var_de58f286.var_3afd181d)) {
-            /#
-                assert(isdefined(var_de58f286));
-            #/
-            /#
-                assert(isdefined(var_de58f286.var_91065a59));
-            #/
-            /#
-                assert(isdefined(var_de58f286.var_3afd181d));
-            #/
+            assert(isdefined(var_de58f286));
+            assert(isdefined(var_de58f286.var_91065a59));
+            assert(isdefined(var_de58f286.var_3afd181d));
             return;
         }
         gender = getherogender(var_de58f286.var_625ec6da.charactertype, sessionmode);
@@ -688,7 +682,6 @@ function setup_team(localclientnum) {
 function watchupdate(localclientnum) {
     level endon(#"disconnect", #"draft_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_update", #"positiondraft_reject");
         if (localclientnum == waitresult.localclientnum) {
             if (shoutcaster::is_shoutcaster(localclientnum)) {
@@ -706,7 +699,6 @@ function watchupdate(localclientnum) {
 function watchteamchange(localclientnum) {
     self endon(#"disconnect", #"draft_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"team_changed");
         if (localclientnum == waitresult.localclientnum) {
             setup_team(localclientnum);
@@ -760,7 +752,6 @@ function function_9afd868e(localclientnum) {
 function function_ca03ab69() {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_open");
         localclientnum = waitresult.localclientnum;
         localplayer = function_5c10bd79(localclientnum);
@@ -776,7 +767,6 @@ function function_ca03ab69() {
 function function_91858511() {
     level endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"positiondraft_close");
         localclientnum = waitresult.localclientnum;
         if (isdefined(level.draftactive[localclientnum]) && level.draftactive[localclientnum]) {

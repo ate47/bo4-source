@@ -446,7 +446,6 @@ function function_c3076788(e_player) {
 function function_7d123028() {
     self endon(#"death");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
         if (isplayer(e_player) && e_player.currentweapon.isheroweapon === 0 && e_player.currentweapon.name !== #"hash_603fdd2e4ae5b2b0") {
@@ -803,7 +802,6 @@ function private on_disconnect() {
 function private pap_timeout_watcher() {
     level endon(#"end_game");
     while (true) {
-        s_notify = undefined;
         s_notify = level waittill(#"pap_timeout");
         w_upg = s_notify.var_5e879929.unitrigger_stub.upgrade_weapon;
         if (zm_white_util::function_c654e39a(w_upg)) {

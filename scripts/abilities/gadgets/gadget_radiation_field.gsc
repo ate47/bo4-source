@@ -223,7 +223,7 @@ function function_1503c832(weapon) {
     anchor clientfield::set("self_destruct_start", 0);
     anchor clientfield::set("self_destruct_end", 0);
     player.var_d44d1214 = anchor;
-    killcament = spawn("script_model", player.origin + vectorscale((0, 0, 1), 100));
+    killcament = spawn("script_model", player.origin + (0, 0, 100));
     killcament util::deleteaftertime(15);
     killcament.starttime = gettime();
     killcament linkto(anchor);

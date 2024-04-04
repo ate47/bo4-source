@@ -727,7 +727,6 @@ function function_aab4eb23() {
     self val::set(#"dormant_takedamage", "takedamage", 1);
     self.health = 99999999;
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"damage");
         e_attacker = s_waitresult.attacker;
         if (isplayer(e_attacker) && zm_utility::is_player_valid(e_attacker, 0, 0, 0)) {
@@ -746,7 +745,6 @@ function function_aab4eb23() {
 // Size: 0x19c
 function function_b3d827f() {
     level endon(#"end_game", #"hash_dc34ebe02d09532");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     e_player = s_result.e_who;
     if (zm_utility::is_player_valid(e_player)) {
@@ -976,7 +974,7 @@ function private function_9ead836c() {
 // Size: 0x3a4
 function pegasus_intro() {
     mdl_cloud = getent("pegasus_cloud", "targetname");
-    var_10d4f67d = util::spawn_model("c_t8_zmb_dlc2_pegasus_fb", mdl_cloud.origin + vectorscale((0, 0, -1), 285), mdl_cloud.angles);
+    var_10d4f67d = util::spawn_model("c_t8_zmb_dlc2_pegasus_fb", mdl_cloud.origin + (0, 0, -285), mdl_cloud.angles);
     var_10d4f67d.linkto = util::spawn_model("tag_origin", var_10d4f67d.origin, var_10d4f67d.angles);
     scene::add_scene_func("aib_zm_red_vign_peg_inair_flapattack_01", &function_4b198b8f, "play");
     var_10d4f67d.linkto thread scene::play("aib_zm_red_vign_peg_inair_flapattack_01", "start", var_10d4f67d);
@@ -1440,7 +1438,7 @@ function function_d8db57f6() {
     foreach (var_3e9d57b3 in var_71da3f5a) {
         v_origin = var_3e9d57b3.origin;
         v_angles = var_3e9d57b3.angles;
-        a_info = zm_utility::function_b0eeaada(v_origin + vectorscale((0, 0, 1), 64));
+        a_info = zm_utility::function_b0eeaada(v_origin + (0, 0, 64));
         if (isdefined(a_info) && isdefined(a_info[#"point"])) {
             v_origin = a_info[#"point"];
         }

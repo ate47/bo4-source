@@ -129,7 +129,7 @@ function self_destruct_end(localclientnum, oldval, newval, bnewent, binitialsnap
         } else {
             self endon(#"death");
             self util::waittill_dobj(localclientnum);
-            playsound(localclientnum, "mpl_rad_field_meltdown_3d", self.origin + vectorscale((0, 0, 1), 30));
+            playsound(localclientnum, "mpl_rad_field_meltdown_3d", self.origin + (0, 0, 30));
         }
         return;
     }

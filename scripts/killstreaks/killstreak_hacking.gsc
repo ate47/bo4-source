@@ -112,11 +112,7 @@ function get_hacked_timeout_duration_ms() {
     killstreak = self;
     timeout = killstreak killstreak_bundles::get_hack_timeout();
     if (!isdefined(timeout) || timeout <= 0) {
-        /#
-            /#
-                assertmsg("<unknown string>" + killstreak.killstreaktype + "<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>" + killstreak.killstreaktype + "<unknown string>");
         return;
     }
     return int(timeout * 1000);
@@ -145,9 +141,7 @@ function _update_health(hacker) {
     }
     if (issentient(killstreak)) {
         hackedhealth = killstreak_bundles::get_hacked_health(killstreak.killstreaktype);
-        /#
-            assert(isdefined(hackedhealth));
-        #/
+        assert(isdefined(hackedhealth));
         if (self.health > hackedhealth) {
             self.health = hackedhealth;
         }

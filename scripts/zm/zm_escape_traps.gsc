@@ -135,7 +135,6 @@ function function_ea490292() {
         level flag::wait_till("power_on");
     }
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"trap_activated");
         if (s_result.trap == self) {
             s_result.trap_activator zm_stats::increment_client_stat("prison_fan_trap_used", 0);
@@ -298,7 +297,6 @@ function fan_trap_timeout() {
 function fan_trap_rumble_think() {
     self endon(#"trap_finished");
     while (true) {
-        s_result = undefined;
         s_result = self.t_rumble waittill(#"trigger");
         if (isplayer(s_result.activator)) {
             if (!(isdefined(s_result.activator.fan_trap_rumble) && s_result.activator.fan_trap_rumble)) {
@@ -339,7 +337,6 @@ function fan_trap_damage() {
     }
     self endon(#"fan_trap_finished");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         if (isplayer(s_result.activator)) {
             s_result.activator thread player_fan_trap_damage();
@@ -478,7 +475,6 @@ function function_39f2d90f() {
     self zapper_light_red();
     level flag::wait_till("acid_trap_available");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"trap_activated");
         if (s_result.trap == self) {
             s_result.trap_activator zm_stats::increment_client_stat("prison_acid_trap_used", 0);
@@ -706,7 +702,6 @@ function function_dcd775a() {
         level flag::wait_till("power_on");
     }
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"trap_activated");
         if (s_result.trap == self) {
             s_result.trap_activator zm_stats::increment_client_stat("prison_spinning_trap_used", 0);
@@ -822,7 +817,7 @@ function function_1f7e661f(t_damage) {
             v_away_from_source = vectornormalize(self.origin - t_damage.origin);
             v_away_from_source = v_away_from_source * 128;
             v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
-            a_trace = physicstraceex(self.origin + vectorscale((0, 0, 1), 32), self.origin + v_away_from_source, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), self);
+            a_trace = physicstraceex(self.origin + (0, 0, 32), self.origin + v_away_from_source, (-16, -16, -16), (16, 16, 16), self);
             self setplayercollision(0);
             self startragdoll();
             self launchragdoll(150 * anglestoup(self.angles) + (v_away_from_source[0], v_away_from_source[1], 0));
@@ -904,7 +899,6 @@ function function_4a15e725() {
 function function_c3ac9950() {
     self endon(#"trap_finished");
     while (true) {
-        s_result = undefined;
         s_result = self.t_rumble waittill(#"trigger");
         if (isplayer(s_result.activator)) {
             if (!(isdefined(s_result.activator.b_spinning_trap_rumble) && s_result.activator.b_spinning_trap_rumble)) {

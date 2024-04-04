@@ -9,22 +9,6 @@
 class csuccess_screen : cluielem {
 
     // Namespace csuccess_screen/success_screen
-    // Params 0, eflags: 0x8
-    // Checksum 0xb78d7789, Offset: 0x190
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace csuccess_screen/success_screen
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x7bf540f9, Offset: 0x260
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace csuccess_screen/success_screen
     // Params 1, eflags: 0x0
     // Checksum 0x5858e354, Offset: 0x230
     // Size: 0x24

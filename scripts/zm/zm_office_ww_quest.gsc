@@ -236,7 +236,6 @@ function function_4bda6e6c() {
     self endon(#"death");
     level flag::wait_till("power_on");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         playsoundatposition(#"hash_5321ac1dbb962d10", level.s_code_machine.origin);
         level.s_code_machine function_ddc86041(waitresult.activator);
@@ -440,7 +439,6 @@ function function_2b049ee1(e_player) {
 function function_36664799() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         if (level.s_ww_quest_reward.var_5e34c88c) {
             e_player = waitresult.activator;
@@ -486,7 +484,6 @@ function function_73530998() {
 function function_1e479c72() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (!zm_weapons::is_weapon_upgraded(waitresult.weapon)) {
             continue;
@@ -525,7 +522,7 @@ function function_2375274a() {
     level.var_a5f666cc = getentarray("plaque_nameplate", "targetname");
     foreach (plaque in level.var_a5f666cc) {
         plaque.v_start = plaque.origin;
-        plaque moveto(plaque.v_start + vectorscale((0, 0, 1), 10), 0.5);
+        plaque moveto(plaque.v_start + (0, 0, 10), 0.5);
     }
     wait(0.3);
     level.plaque_door scene::play("fall");
@@ -560,7 +557,6 @@ function function_b32c1898(e_item) {
 // Size: 0x28c
 function function_3410748f() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     function_a4121dfa();
     waitframe(1);
@@ -602,7 +598,6 @@ function function_6ead7c1f() {
 function function_63572ef0() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         if (waitresult.mod === "MOD_GRENADE_SPLASH") {
             self function_4c07537f();
@@ -659,7 +654,6 @@ function function_3db792dd(e_player) {
 // Size: 0x84
 function function_e0c5fd41() {
     self endon(#"death");
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     function_85bd10();
     waitframe(1);
@@ -771,7 +765,6 @@ function function_f25bac74(trigger, alias) {
         var_849ee9f4 = getent(trigger, "targetname");
         if (isdefined(var_849ee9f4)) {
             level thread trigger::look_trigger(var_849ee9f4);
-            waitresult = undefined;
             waitresult = var_849ee9f4 waittill(#"trigger_look");
             var_849ee9f4 delete();
             waitresult.activator thread zm_vo::function_a2bd5a0c(alias);

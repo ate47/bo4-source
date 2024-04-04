@@ -126,7 +126,6 @@ function private function_d38bb58b(var_32e3ef04) {
     }
     var_b4fb8b2a = level.var_d225ea18[var_32e3ef04];
     var_b4fb8b2a thread function_109ebdc3(self);
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"hash_11371635986ba290", #"death", #"player_downed", #"fake_death");
     var_b4fb8b2a thread function_c9e7bec4(self);
     if (s_waitresult._notify == #"hash_11371635986ba290" && isdefined(s_waitresult.b_success) && s_waitresult.b_success) {

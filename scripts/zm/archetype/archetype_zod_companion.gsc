@@ -59,73 +59,39 @@ function autoexec main() {
 // Checksum 0x56f982b8, Offset: 0x780
 // Size: 0x664
 function registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&zodcompaniontacticalwalkactionstart));
-    #/
+    assert(isscriptfunctionptr(&zodcompaniontacticalwalkactionstart));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionTacticalWalkActionStart", &zodcompaniontacticalwalkactionstart);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionabletoshootcondition));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionabletoshootcondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionAbleToShoot", &zodcompanionabletoshootcondition);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionshouldtacticalwalk));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionshouldtacticalwalk));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionShouldTacticalWalk", &zodcompanionshouldtacticalwalk);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionmovement));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionmovement));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionMovement", &zodcompanionmovement);
-    /#
-        assert(isscriptfunctionptr(&zodcompaniondelaymovement));
-    #/
+    assert(isscriptfunctionptr(&zodcompaniondelaymovement));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionDelayMovement", &zodcompaniondelaymovement);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionsetdesiredstancetostand));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionsetdesiredstancetostand));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionSetDesiredStanceToStand", &zodcompanionsetdesiredstancetostand);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionfinishedsprinttransition));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionfinishedsprinttransition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionFinishedSprintTransition", &zodcompanionfinishedsprinttransition);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionsprinttransitioning));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionsprinttransitioning));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionSprintTransitioning", &zodcompanionsprinttransitioning);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionkeepscurrentmovementmode));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionkeepscurrentmovementmode));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionKeepsCurrentMovementMode", &zodcompanionkeepscurrentmovementmode);
-    /#
-        assert(isscriptfunctionptr(&zodcompanioncanjuke));
-    #/
+    assert(isscriptfunctionptr(&zodcompanioncanjuke));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionCanJuke", &zodcompanioncanjuke);
-    /#
-        assert(isscriptfunctionptr(&zodcompanioncanpreemptivejuke));
-    #/
+    assert(isscriptfunctionptr(&zodcompanioncanpreemptivejuke));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionCanPreemptiveJuke", &zodcompanioncanpreemptivejuke);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionjukeinitialize));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionjukeinitialize));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionJukeInitialize", &zodcompanionjukeinitialize);
-    /#
-        assert(isscriptfunctionptr(&zodcompanionpreemptivejuketerminate));
-    #/
+    assert(isscriptfunctionptr(&zodcompanionpreemptivejuketerminate));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionPreemptiveJukeTerminate", &zodcompanionpreemptivejuketerminate);
-    /#
-        assert(isscriptfunctionptr(&zodcompaniontargetservice));
-    #/
+    assert(isscriptfunctionptr(&zodcompaniontargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionTargetService", &zodcompaniontargetservice);
-    /#
-        assert(isscriptfunctionptr(&zodcompaniontryreacquireservice));
-    #/
+    assert(isscriptfunctionptr(&zodcompaniontryreacquireservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionTryReacquireService", &zodcompaniontryreacquireservice);
-    /#
-        assert(isscriptfunctionptr(&manage_companion_movement));
-    #/
+    assert(isscriptfunctionptr(&manage_companion_movement));
     behaviortreenetworkutility::registerbehaviortreescriptapi("manage_companion_movement", &manage_companion_movement);
-    /#
-        assert(isscriptfunctionptr(&zodcompanioncollisionservice));
-    #/
+    assert(isscriptfunctionptr(&zodcompanioncollisionservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("zodCompanionCollisionService", &zodcompanioncollisionservice);
 }
 
@@ -218,7 +184,7 @@ function zodcompanioncanpreemptivejuke(entity) {
     if (distancesquared(entity.origin, entity.enemy.origin) < 360000) {
         angledifference = absangleclamp180(entity.angles[1] - entity.enemy.angles[1]);
         /#
-            record3dtext(angledifference, entity.origin + vectorscale((0, 0, 1), 5), (0, 1, 0), "<unknown string>");
+            record3dtext(angledifference, entity.origin + (0, 0, 5), (0, 1, 0), "<unknown string>");
         #/
         if (angledifference > 135) {
             enemyangles = entity.enemy getgunangles();
@@ -226,7 +192,7 @@ function zodcompanioncanpreemptivejuke(entity) {
             forward = anglestoforward(enemyangles);
             dotproduct = abs(vectordot(vectornormalize(toenemy), forward));
             /#
-                record3dtext(acos(dotproduct), entity.origin + vectorscale((0, 0, 1), 10), (0, 1, 0), "<unknown string>");
+                record3dtext(acos(dotproduct), entity.origin + (0, 0, 10), (0, 1, 0), "<unknown string>");
             #/
             if (dotproduct > 0.9848) {
                 return zodcompanioncanjuke(entity);

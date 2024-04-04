@@ -92,9 +92,7 @@ function state_combat_update(params) {
     self setacceleration(isdefined(self.settings.default_move_acceleration) ? self.settings.default_move_acceleration : 10);
     heatseekingmissile::initlockfield(self);
     for (;;) {
-        /#
-            assert(isdefined(self.ai));
-        #/
+        assert(isdefined(self.ai));
         if (!isdefined(self.ai.var_88b0fd29)) {
             self.ai.var_88b0fd29 = gettime();
         }
@@ -140,9 +138,7 @@ function function_de11ece(drone) {
     drone setneargoalnotifydist(40);
     drone.fovcosine = 0;
     drone.fovcosinebusy = 0.574;
-    /#
-        assert(isdefined(drone.scriptbundlesettings));
-    #/
+    assert(isdefined(drone.scriptbundlesettings));
     drone.settings = struct::get_script_bundle("vehiclecustomsettings", drone.scriptbundlesettings);
     drone.goalheight = 512;
     drone setgoal(drone.origin, 0, drone.goalradius, drone.goalheight);

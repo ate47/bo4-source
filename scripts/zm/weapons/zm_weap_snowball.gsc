@@ -53,7 +53,6 @@ function on_grenade_fired(s_params) {
     if (s_params.weapon != level.w_snowball && s_params.weapon != level.w_snowball_upgraded && s_params.weapon != level.w_snowball_yellow && s_params.weapon != level.w_snowball_yellow_upgraded) {
         return;
     }
-    s_waitresult = undefined;
     s_waitresult = s_params.projectile waittill(#"projectile_impact_explode", #"explode");
     a_e_players = getplayers();
     a_e_players = arraysortclosest(a_e_players, s_waitresult.position, 4, 0, 64);

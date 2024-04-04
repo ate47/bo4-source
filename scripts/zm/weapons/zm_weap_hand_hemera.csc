@@ -216,8 +216,8 @@ function function_4662df7a(localclientnum, oldval, newval, bnewent, binitialsnap
     if (!isdefined(self.var_4cd8e6cb)) {
         self.var_4cd8e6cb = self playloopsound(#"hash_289b15dba7547241");
     }
-    v_trace = bullettrace(self.origin, self.origin + vectorscale((0, 0, 1), 4000), 0, self)[#"position"];
-    self.var_76385ab5 = util::spawn_model(localclientnum, "tag_origin", self.origin + vectorscale((0, 0, 1), 4000));
+    v_trace = bullettrace(self.origin, self.origin + (0, 0, 4000), 0, self)[#"position"];
+    self.var_76385ab5 = util::spawn_model(localclientnum, "tag_origin", self.origin + (0, 0, 4000));
     self.var_76385ab5 linkto(self);
     self.var_f53452ad = level beam::function_cfb2f62a(localclientnum, self.var_76385ab5, "tag_origin", self, "tag_origin", "beam8_zm_ww_hemera_ray");
 }

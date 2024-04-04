@@ -165,7 +165,6 @@ function function_1a9f3a91() {
         self.var_64f51f65 = undefined;
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_change", #"hash_29c66728ccd27f03");
         if (isdefined(self.laststandpistol)) {
             self clientfield::set_player_uimodel("hudItems.perks.additional_primary_weapon", 0);

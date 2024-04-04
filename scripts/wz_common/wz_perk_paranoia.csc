@@ -41,22 +41,20 @@ function function_930e5d42(localclientnum) {
 // Checksum 0x51b0fbec, Offset: 0x1b8
 // Size: 0x132
 function private function_dbd63244() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (self function_da43934d()) {
         return self geteye();
     }
     stance = self getstance();
     switch (stance) {
     case #"prone":
-        return (self.origin + vectorscale((0, 0, 1), 11));
+        return (self.origin + (0, 0, 11));
     case #"crouch":
-        return (self.origin + vectorscale((0, 0, 1), 40));
+        return (self.origin + (0, 0, 40));
     case #"stand":
-        return (self.origin + vectorscale((0, 0, 1), 60));
+        return (self.origin + (0, 0, 60));
     default:
-        return (self.origin + vectorscale((0, 0, 1), 60));
+        return (self.origin + (0, 0, 60));
     }
 }
 
@@ -65,7 +63,7 @@ function private function_dbd63244() {
 // Checksum 0x48682c0d, Offset: 0x2f8
 // Size: 0x1a
 function private function_c9d3a835() {
-    return self.origin + vectorscale((0, 0, 1), 36);
+    return self.origin + (0, 0, 36);
 }
 
 // Namespace wz_perk_paranoia/wz_perk_paranoia
@@ -121,19 +119,19 @@ function private function_3e9077b(localclientnum) {
             } else if (!isarray(test_points)) {
                 test_points = array(test_points);
             }
-            test_points[test_points.size] = self.origin + vectorscale((0, 0, 1), 11);
+            test_points[test_points.size] = self.origin + (0, 0, 11);
             if (!isdefined(test_points)) {
                 test_points = [];
             } else if (!isarray(test_points)) {
                 test_points = array(test_points);
             }
-            test_points[test_points.size] = self.origin + vectorscale((0, 0, 1), 40);
+            test_points[test_points.size] = self.origin + (0, 0, 40);
             if (!isdefined(test_points)) {
                 test_points = [];
             } else if (!isarray(test_points)) {
                 test_points = array(test_points);
             }
-            test_points[test_points.size] = self.origin + vectorscale((0, 0, 1), 60);
+            test_points[test_points.size] = self.origin + (0, 0, 60);
             los = 0;
             foreach (test_point in test_points) {
                 trace_dist = length(to_self) + 100;

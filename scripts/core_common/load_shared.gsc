@@ -204,14 +204,10 @@ function weapon_ammo() {
             }
             if (change_ammo) {
                 if (!isdefined(clip)) {
-                    /#
-                        assertmsg("<unknown string>" + weap.classname + "<unknown string>" + weap.origin + "<unknown string>");
-                    #/
+                    assertmsg("<unknown string>" + weap.classname + "<unknown string>" + weap.origin + "<unknown string>");
                 }
                 if (!isdefined(extra)) {
-                    /#
-                        assertmsg("<unknown string>" + weap.classname + "<unknown string>" + weap.origin + "<unknown string>");
-                    #/
+                    assertmsg("<unknown string>" + weap.classname + "<unknown string>" + weap.origin + "<unknown string>");
                 }
                 weap itemweaponsetammo(clip, extra);
                 weap itemweaponsetammo(clip, extra, 1);
@@ -287,13 +283,9 @@ function player_throwgrenade_timer() {
 // Checksum 0xf7eb9112, Offset: 0xe30
 // Size: 0x43a
 function water_think() {
-    /#
-        assert(isdefined(self.target));
-    #/
+    assert(isdefined(self.target));
     targeted = getent(self.target, "targetname");
-    /#
-        assert(isdefined(targeted));
-    #/
+    assert(isdefined(targeted));
     waterheight = targeted.origin[2];
     targeted = undefined;
     level.depth_allow_prone = 8;
@@ -309,7 +301,6 @@ function water_think() {
                 players[i] allowstand(1);
             }
         }
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         other = waitresult.activator;
         if (!isplayer(other)) {
@@ -331,9 +322,7 @@ function water_think() {
                     if (newspeed < 50) {
                         newspeed = 50;
                     }
-                    /#
-                        assert(newspeed <= 190);
-                    #/
+                    assert(newspeed <= 190);
                     if (abs(d) > level.depth_allow_crouch) {
                         players[i] allowcrouch(0);
                     } else {
@@ -375,9 +364,7 @@ function calculate_map_center() {
         }
         for (index = 0; index < nodes.size; index++) {
             if (nodes[index].type == #"bad node") {
-                /#
-                    println("<unknown string>", nodes[index].origin);
-                #/
+                println("<unknown string>", nodes[index].origin);
                 continue;
             }
             origin = nodes[index].origin;
@@ -385,9 +372,7 @@ function calculate_map_center() {
             level.nodesmaxs = math::expand_maxs(level.nodesmaxs, origin);
         }
         level.mapcenter = math::find_box_center(level.nodesmins, level.nodesmaxs);
-        /#
-            println("<unknown string>", level.mapcenter);
-        #/
+        println("<unknown string>", level.mapcenter);
         setmapcenter(level.mapcenter);
     }
 }
@@ -444,9 +429,7 @@ function set_fog_progress(progress) {
 // Checksum 0xd8f7849b, Offset: 0x1728
 // Size: 0x24
 function ascii_logo() {
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
 }
 
 // Namespace load/load_shared
@@ -491,7 +474,6 @@ function shock_onpain() {
     }
     while (true) {
         oldhealth = self.health;
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         mod = waitresult.mod;
         damage = waitresult.amount;

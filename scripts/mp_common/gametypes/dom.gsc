@@ -273,9 +273,7 @@ function domflags() {
     level.flagmodel[#"neutral"] = "tag_origin";
     primaryflags = getentarray("flag_primary", "targetname");
     if (primaryflags.size < 2) {
-        /#
-            println("");
-        #/
+        println("");
         callback::abort_level();
         return;
     }
@@ -355,8 +353,8 @@ function domflags() {
         }
         domflag gameobjects::set_objective_entity(visuals[0]);
         domflag gameobjects::set_owner_team(#"neutral");
-        tracestart = visuals[0].origin + vectorscale((0, 0, 1), 32);
-        traceend = visuals[0].origin + vectorscale((0, 0, -1), 32);
+        tracestart = visuals[0].origin + (0, 0, 32);
+        traceend = visuals[0].origin + (0, 0, -32);
         trace = bullettrace(tracestart, traceend, 0, undefined);
         upangles = vectortoangles(trace[#"normal"]);
         domflag.baseeffectforward = anglestoforward(upangles);
@@ -682,9 +680,7 @@ function onusewithneutralizingflag(sentient) {
         print("<unknown string>" + self.label);
     #/
     level.usestartspawns = 0;
-    /#
-        assert(team != #"neutral");
-    #/
+    assert(team != #"neutral");
     string = #"";
     if (oldteam == #"neutral") {
         level notify(#"flag_captured");
@@ -702,9 +698,7 @@ function onusewithneutralizingflag(sentient) {
         self update_spawn_influencers(#"neutral");
         self flagneutralized(team, oldteam);
     }
-    /#
-        assert(string != #"");
-    #/
+    assert(string != #"");
     touchlist = arraycopy(self.touchlist[team]);
     isbflag = 0;
     if (label == "_b") {
@@ -741,17 +735,13 @@ function onusewithoutneutralizingflag(sentient) {
     self gameobjects::set_owner_team(team);
     self.visuals[0] setmodel(level.flagmodel[team]);
     level.usestartspawns = 0;
-    /#
-        assert(team != #"neutral");
-    #/
+    assert(team != #"neutral");
     isbflag = 0;
     if (label == "_b") {
         isbflag = 1;
     }
     string = getdomflagusestring(label, 0);
-    /#
-        assert(string != #"");
-    #/
+    assert(string != #"");
     if (isdefined(getgametypesetting(#"contributioncapture")) && getgametypesetting(#"contributioncapture")) {
         var_1dbb2b2b = arraycopy(self.var_1dbb2b2b[team]);
         var_6d7ae157 = arraycopy(self.touchlist[team]);
@@ -816,7 +806,6 @@ function watchforbflagcap() {
     level endon(#"game_ended", #"endwatchforbflagcapaftertime");
     level thread endwatchforbflagcapaftertime(60);
     for (;;) {
-        waitresult = undefined;
         waitresult = level waittill(#"b_flag_captured");
         waitresult.player challenges::capturedbfirstminute();
     }
@@ -1620,15 +1609,9 @@ function createflagspawninfluencers() {
 // Checksum 0xe3edff0f, Offset: 0x7868
 // Size: 0x2cc
 function update_spawn_influencers(team) {
-    /#
-        assert(isdefined(self.neutral_flag_influencer));
-    #/
-    /#
-        assert(isdefined(self.owned_flag_influencer));
-    #/
-    /#
-        assert(isdefined(self.enemy_flag_influencer));
-    #/
+    assert(isdefined(self.neutral_flag_influencer));
+    assert(isdefined(self.owned_flag_influencer));
+    assert(isdefined(self.enemy_flag_influencer));
     if (team == #"neutral") {
         enableinfluencer(self.neutral_flag_influencer, 1);
         enableinfluencer(self.owned_flag_influencer, 0);

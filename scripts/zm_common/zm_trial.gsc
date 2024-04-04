@@ -78,9 +78,7 @@ function register_challenge(name, var_3b7ba215, var_6993ecb4) {
     if (!isdefined(level.var_75e93a54)) {
         level.var_75e93a54 = [];
     }
-    /#
-        assert(!isdefined(level.var_75e93a54[name]));
-    #/
+    assert(!isdefined(level.var_75e93a54[name]));
     info = {#name:name, #var_3b7ba215:var_3b7ba215, #var_6993ecb4:var_6993ecb4};
     level.var_75e93a54[name] = info;
 }
@@ -343,9 +341,7 @@ function function_ba9853db() {
 // Checksum 0xc120916, Offset: 0x1590
 // Size: 0x6c
 function function_fe2ecb6(count) {
-    /#
-        assert(count >= 0 && count <= 3);
-    #/
+    assert(count >= 0 && count <= 3);
     level.var_df8480a0 = count;
     clientfield::set_world_uimodel("ZMHudGlobal.trials.strikes", level.var_df8480a0);
 }
@@ -373,9 +369,7 @@ function function_5769f26a(var_c00ecbf1) {
             return i;
         }
     }
-    /#
-        assert(0, "<unknown string>" + var_c00ecbf1);
-    #/
+    assert(0, "<unknown string>" + var_c00ecbf1);
     return 0;
 }
 
@@ -529,11 +523,7 @@ function private function_23baf070(loadout) {
 function private function_bcd35efc() {
     foreach (player in getplayers()) {
         if (!isdefined(player.var_42a4759e)) {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            assertmsg("<unknown string>");
             continue;
         }
         player zm_trial_util::function_d37a769(player.var_42a4759e.var_8c5bddf5);
@@ -576,9 +566,7 @@ function private function_4dbf2663() {
     row = 0;
     while (row < var_e1617d73) {
         var_189d26ca = tablelookupcolumnforrow(table, row, 1);
-        /#
-            assert(!isdefined(function_d02ffd(var_189d26ca)));
-        #/
+        assert(!isdefined(function_d02ffd(var_189d26ca)));
         var_6d87ac05 = {#name:var_189d26ca, #rounds:[], #index:level.var_c556bb2e.size};
         level.var_c556bb2e[level.var_c556bb2e.size] = var_6d87ac05;
         do {
@@ -595,9 +583,7 @@ function private function_4dbf2663() {
                     round_info.desc_str = tablelookupcolumnforrow(table, row, 3);
                     round_info.challenges = [];
                 }
-                /#
-                    assert(isdefined(var_6d87ac05.rounds[round_index]));
-                #/
+                assert(isdefined(var_6d87ac05.rounds[round_index]));
                 round_info = var_6d87ac05.rounds[round_index];
                 challenge_name = tablelookupcolumnforrow(table, row, 5);
                 var_10a28798 = [];
@@ -643,19 +629,11 @@ function function_74872db6() {
     if (!is_trial_mode()) {
         return;
     }
-    /#
-        assert(isdefined(level.var_6d87ac05));
-    #/
-    /#
-        assert(!isdefined(level.var_d77a6967));
-    #/
-    /#
-        assert(!isdefined(level.var_3dd975d5));
-    #/
+    assert(isdefined(level.var_6d87ac05));
+    assert(!isdefined(level.var_d77a6967));
+    assert(!isdefined(level.var_3dd975d5));
     round_index = level.round_number - 1;
-    /#
-        assert(round_index >= 0);
-    #/
+    assert(round_index >= 0);
     if (round_index >= level.var_6d87ac05.rounds.size) {
         return;
     }
@@ -671,12 +649,8 @@ function function_74872db6() {
     level.var_d77a6967 = level.var_6d87ac05.rounds[round_index];
     for (i = 0; i < level.var_d77a6967.challenges.size; i++) {
         challenge = level.var_d77a6967.challenges[i];
-        /#
-            assert(isdefined(level.var_75e93a54));
-        #/
-        /#
-            assert(isdefined(level.var_75e93a54[challenge.name]));
-        #/
+        assert(isdefined(level.var_75e93a54));
+        assert(isdefined(level.var_75e93a54[challenge.name]));
         var_9cd2c51d = level.var_75e93a54[challenge.name];
         var_5285d066 = {#name:challenge.name, #row:challenge.row, #info:var_9cd2c51d, #params:challenge.params};
         array::add(level.var_3dd975d5, var_5285d066);
@@ -697,12 +671,8 @@ function on_round_end() {
     }
     level notify(#"hash_7646638df88a3656");
     playsoundatposition(#"hash_351022f2dd6aba77", (0, 0, 0));
-    /#
-        assert(isdefined(level.var_d77a6967));
-    #/
-    /#
-        assert(isdefined(level.var_3dd975d5));
-    #/
+    assert(isdefined(level.var_d77a6967));
+    assert(isdefined(level.var_3dd975d5));
     for (i = 0; i < level.var_3dd975d5.size; i++) {
         var_5285d066 = level.var_3dd975d5[i];
         if (isdefined(var_5285d066.info.var_6993ecb4)) {

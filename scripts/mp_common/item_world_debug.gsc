@@ -269,7 +269,7 @@ function private function_938d798a() {
                 } else {
                     v_player_pos = var_7099d03[level.var_eedfa327].origin;
                 }
-                var_543a44a5 = vectortoangles(var_7099d03[level.var_eedfa327].origin - v_player_pos + vectorscale((0, 0, 1), 36));
+                var_543a44a5 = vectortoangles(var_7099d03[level.var_eedfa327].origin - v_player_pos + (0, 0, 36));
                 player setorigin(v_player_pos);
                 player setplayerangles(var_543a44a5);
                 var_d4714efb = level.var_eedfa327;
@@ -314,7 +314,7 @@ function private function_f9efe895() {
             }
             if (n_index != var_d4714efb) {
                 v_player_pos = var_7f0b4b6b[n_index].origin + anglestoforward(var_7f0b4b6b[n_index].angles) * 96;
-                var_543a44a5 = vectortoangles(var_7f0b4b6b[n_index].origin - v_player_pos + vectorscale((0, 0, 1), 36));
+                var_543a44a5 = vectortoangles(var_7f0b4b6b[n_index].origin - v_player_pos + (0, 0, 36));
                 player setorigin(v_player_pos);
                 player setplayerangles(var_543a44a5);
                 var_d4714efb = n_index;
@@ -340,7 +340,7 @@ function private function_f0d72128() {
             level.var_99026891 = var_df1e5fef.size - 1;
         }
         var_d4714efb = 0;
-        v_offset = vectorscale((0, 0, 1), 50);
+        v_offset = (0, 0, 50);
         wait(1);
         iprintlnbold("<unknown string>");
         adddebugcommand("<unknown string>");
@@ -588,7 +588,7 @@ function private function_cdd9b388() {
                 origin = players[0].origin;
                 var_f4b807cb = item_world::function_2e3efdda(origin, undefined, 128, 2000);
                 foreach (item in var_f4b807cb) {
-                    print3d(item.origin + vectorscale((0, 0, 1), 10), "<unknown string>" + item.networkid + "<unknown string>" + item.itementry.name, (1, 0.5, 0), 1, 0.4);
+                    print3d(item.origin + (0, 0, 10), "<unknown string>" + item.networkid + "<unknown string>" + item.itementry.name, (1, 0.5, 0), 1, 0.4);
                 }
             }
             if (getdvarint(#"hash_326974dd9b8c3414", 0)) {
@@ -724,7 +724,7 @@ function private function_cdd9b388() {
                         if (distancesquared(origin, vehicle.origin) < var_84dd2a8b * var_84dd2a8b) {
                             radius = max(distance(origin, vehicle.origin) / var_84dd2a8b * radius, 1);
                         }
-                        sphere(vehicle.origin, radius, vectorscale((1, 1, 0), 0.501961), 1, 0, 10, 20);
+                        sphere(vehicle.origin, radius, (0.501961, 0.501961, 0), 1, 0, 10, 20);
                     }
                     foreach (vehicle in pbr_spawn) {
                         radius = 128;
@@ -737,7 +737,7 @@ function private function_cdd9b388() {
                 } else if (itemtype == 14) {
                     vehicles = getvehiclearray();
                     foreach (vehicle in vehicles) {
-                        color = vectorscale((1, 1, 1), 0.75);
+                        color = (0.75, 0.75, 0.75);
                         radius = 128;
                         var_84dd2a8b = 4096;
                         if (distancesquared(origin, vehicle.origin) < var_84dd2a8b * var_84dd2a8b) {
@@ -783,13 +783,13 @@ function private function_cdd9b388() {
                                     color = (0, 1, 0);
                                     break;
                                 case #"hash_ea6664e89a0bff6":
-                                    color = vectorscale((1, 1, 0), 0.501961);
+                                    color = (0.501961, 0.501961, 0);
                                     break;
                                 }
                                 sphere(point.origin, radius, color, 1, 0, 10, 20);
                                 continue;
                             }
-                            color = vectorscale((1, 1, 1), 0.75);
+                            color = (0.75, 0.75, 0.75);
                             sphere(point.origin, radius, color, 1, 0, 10, 20);
                         }
                     }
@@ -843,7 +843,7 @@ function private function_cdd9b388() {
                             color = (1, 0, 1);
                             sphere(item.origin, radius, color, 1, 0, 10, 20);
                             if (isdefined(item.targetname)) {
-                                print3d(item.origin + vectorscale((0, 0, 1), 32), function_9e72a96(item.targetname), color, 1, 0.3, 20);
+                                print3d(item.origin + (0, 0, 32), function_9e72a96(item.targetname), color, 1, 0.3, 20);
                             }
                             break;
                         case 2:
@@ -992,7 +992,6 @@ function function_91ef342() {
     /#
         level endon(#"game_ended");
         while (true) {
-            r = undefined;
             r = level waittill(#"devgui_bot");
             switch (r.args[0]) {
             case #"hash_29f59f6b62fdbf94":

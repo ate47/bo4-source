@@ -85,7 +85,6 @@ function function_a1b7b263(e_player) {
     e_player endon(#"death");
     var_51dacd00 = 0;
     var_4da5977e = (0, randomfloatrange(0, 360), 0);
-    s_waitresult = undefined;
     s_waitresult = self waittill(#"stationary");
     wait(1);
     while (var_51dacd00 < 6) {

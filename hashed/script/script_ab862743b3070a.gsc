@@ -95,9 +95,7 @@ function dog_spawner_init() {
         level.dog_spawners[i].is_enabled = 1;
         level.dog_spawners[i].script_forcespawn = 1;
     }
-    /#
-        assert(level.dog_spawners.size > 0);
-    #/
+    assert(level.dog_spawners.size > 0);
     level.dog_health = 100;
     array::thread_all(level.dog_spawners, &spawner::add_spawn_function, &dog_init);
 }
@@ -190,12 +188,8 @@ function dog_spawn_fx(ai, ent) {
     }
     ai dontinterpolate();
     ai forceteleport(ent.origin, angles);
-    /#
-        assert(isdefined(ai), "<unknown string>");
-    #/
-    /#
-        assert(isalive(ai), "<unknown string>");
-    #/
+    assert(isdefined(ai), "<unknown string>");
+    assert(isalive(ai), "<unknown string>");
     ai zombie_setup_attack_properties_dog();
     ai val::reset(#"dog_spawn", "allowdeath");
     wait(0.1);
@@ -537,7 +531,7 @@ function dog_death() {
     }
     self stoploopsound();
     if (self.var_9fde8624 != #"zombie_wolf" && !(isdefined(self.a.nodeath) && self.a.nodeath)) {
-        trace = groundtrace(self.origin + vectorscale((0, 0, 1), 10), self.origin - vectorscale((0, 0, 1), 30), 0, self);
+        trace = groundtrace(self.origin + (0, 0, 10), self.origin - (0, 0, 30), 0, self);
         if (trace[#"fraction"] < 1) {
             pitch = acos(vectordot(trace[#"normal"], (0, 0, 1)));
             if (pitch > 10) {

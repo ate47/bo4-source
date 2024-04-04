@@ -8,9 +8,7 @@
 function load(str_filename, str_table_start, b_convert_numbers = 1) {
     a_table = [];
     n_header_row = tablelookuprownum(str_filename, 0, str_table_start);
-    /#
-        assert(n_header_row > -1, "<unknown string>");
-    #/
+    assert(n_header_row > -1, "<unknown string>");
     a_headers = tablelookuprow(str_filename, n_header_row);
     n_row = n_header_row + 1;
     do {

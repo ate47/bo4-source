@@ -203,7 +203,7 @@ function marker_state_changed(localclientnum, oldval, newval, bnewent, binitials
     if (isdefined(player.markerfx)) {
         if (!isdefined(player.markerobj)) {
             player.markerobj = spawn(localclientnum, (0, 0, 0), "script_model");
-            player.markerobj.angles = vectorscale((1, 0, 0), 270);
+            player.markerobj.angles = (270, 0, 0);
             player.markerobj setmodel(#"wpn_t7_none_world");
             player.markerobj util::waittill_dobj(localclientnum);
             player thread updatemarkerthread(localclientnum);

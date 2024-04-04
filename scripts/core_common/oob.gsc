@@ -178,7 +178,6 @@ function resetoobtimer(is_host_migrating, b_disable_timekeep) {
 function waitforclonetouch() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         clone = waitresult.activator;
         if (isactor(clone) && isdefined(clone.isaiclone) && clone.isaiclone && !clone isplayinganimscripted()) {
@@ -208,7 +207,6 @@ function waitforplayertouch() {
         if (sessionmodeismultiplayergame() || sessionmodeiswarzonegame()) {
             hostmigration::waittillhostmigrationdone();
         }
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         entity = waitresult.activator;
         if (isplayer(entity)) {

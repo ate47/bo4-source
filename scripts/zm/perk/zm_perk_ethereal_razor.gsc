@@ -117,7 +117,6 @@ function function_6cedb75c(b_pause, str_perk, str_result, n_slot) {
 function function_f86e4c3d() {
     self endon(#"disconnect", #"specialty_etherealrazor" + "_take");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"weapon_melee", #"weapon_melee_charge");
         w_melee = waitresult.weapon;
         var_c34665fc = waitresult._notify;

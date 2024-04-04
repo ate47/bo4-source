@@ -8,27 +8,11 @@
 class cct_shared_warning : cluielem {
 
     // Namespace cct_shared_warning/ct_shared_warning
-    // Params 0, eflags: 0x8
-    // Checksum 0xa17d140a, Offset: 0x230
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_warning/ct_shared_warning
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xb1dbb652, Offset: 0x620
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_shared_warning/ct_shared_warning
     // Params 2, eflags: 0x0
     // Checksum 0xcecd049, Offset: 0x5e8
     // Size: 0x30
     function set_objpoints(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "objpoints", value);
+        set_data(localclientnum, "objpoints", value);
     }
 
     // Namespace cct_shared_warning/ct_shared_warning
@@ -37,46 +21,42 @@ class cct_shared_warning : cluielem {
     // Size: 0x234
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"warnheal_fadeout" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"hash_5e59fb81ffd2fd6b" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"hash_4d78e6d4caf789ce" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"warnheal" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"warnheal_cycle1" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"warnheal_cycle2" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
         if (#"hash_5ae2f5a909a5efa9" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
+            set_data(localclientnum, "_state", 7);
             return;
         }
         if (#"hash_5ae2f2a909a5ea90" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
+            set_data(localclientnum, "_state", 8);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_warning/ct_shared_warning
@@ -93,8 +73,8 @@ class cct_shared_warning : cluielem {
     // Size: 0x60
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "objpoints", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "objpoints", 0);
     }
 
     // Namespace cct_shared_warning/ct_shared_warning

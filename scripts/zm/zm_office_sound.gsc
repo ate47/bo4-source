@@ -43,7 +43,6 @@ function function_f71796ca() {
     }
     self zm_unitrigger::create(undefined, 40);
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"trigger_activated");
         playsoundatposition(str_alias, self.origin);
         level notify(#"hash_66f9802695ce6503", {#var_6831e121:self.script_int});
@@ -71,7 +70,6 @@ function function_bc327ddf() {
     level endon(#"end_game");
     var_f0f25516 = array(1, 2, 3, 4, 5);
     for (var_5ffc6bcc = 0; true; var_5ffc6bcc = 0) {
-        s_result = undefined;
         s_result = level waittill(#"hash_66f9802695ce6503");
         if (s_result.var_6831e121 === var_f0f25516[var_5ffc6bcc]) {
             if (var_5ffc6bcc >= 4) {

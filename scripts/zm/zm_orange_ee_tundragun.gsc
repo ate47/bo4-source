@@ -105,7 +105,6 @@ function private function_f16c0259() {
     self endon(#"death");
     level endon(#"end_game", #"hash_478e70a97b556206");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         level.var_97da986d.var_af9bf642 = s_notify.inflictor;
         var_b6d64a72 = isdefined(s_notify.weapon) && (s_notify.weapon.rootweapon === level.w_snowball || s_notify.weapon.rootweapon === level.w_snowball_upgraded || s_notify.weapon.rootweapon === level.w_snowball_yellow || s_notify.weapon.rootweapon === level.w_snowball_yellow_upgraded);
@@ -193,7 +192,7 @@ function ee_tundragun_step2_setup(var_5ea5c94d) {
     e_lid rotatepitch(-100, 1.5);
     e_lid waittill(#"rotatedone");
     if (isdefined(s_weapon_pickup)) {
-        e_weapon moveto(e_weapon.origin + vectorscale((0, 0, 1), 16), 1.5);
+        e_weapon moveto(e_weapon.origin + (0, 0, 16), 1.5);
         e_weapon waittill(#"movedone");
         level.var_97da986d.s_weapon_pickup.e_weapon zm_orange_util::start_zombies_collision_manager(getweapon("tundragun"), &function_37d390f8);
     }

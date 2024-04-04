@@ -138,7 +138,6 @@ function function_132e0bea() {
     level waittill(#"start_of_round");
     power_trig = getent("use_elec_switch", "targetname");
     if (isdefined(power_trig)) {
-        waitresult = undefined;
         waitresult = power_trig waittill(#"trigger");
         user = waitresult.activator;
         wait(2);

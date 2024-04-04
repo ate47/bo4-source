@@ -409,7 +409,6 @@ function function_3cdddd34() {
         self.var_714f6ae6 = 0;
     }
     while (!self.var_15ba8367 || !self.var_714f6ae6) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"weapon_change");
         w_new = s_waitresult.weapon;
         if (!self.var_15ba8367 && w_new === level.var_6fe89212) {
@@ -433,7 +432,6 @@ function function_3bd89e18() {
     self notify(#"noshield");
     self endon(#"disconnect", #"noshield", #"bled_out");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change", #"hash_459246e5bfcc3713", #"destroy_riotshield");
         if (mansion_util::is_shield(s_notify.weapon)) {
             self.var_c09a076a = 1;
@@ -481,7 +479,6 @@ function function_fa17b8da() {
 // Size: 0x23e
 function function_4972130a() {
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"component_collected");
         if (isdefined(waitresult.component.e_fx)) {
             waitresult.component.e_fx delete();
@@ -1005,7 +1002,6 @@ function function_2d164b86() {
         level thread scene::play("entrance_hall_exploding_door", "targetname");
         var_fdbbb780 = 1;
     }
-    s_result = undefined;
     s_result = level waittill(#"hash_3e80d503318a5674");
     if (zm_custom::function_901b751c(#"zmpowerstate") == 2) {
         level flag::set("power_on1");
@@ -1032,7 +1028,7 @@ function function_2d164b86() {
     mdl_artifact setmodel(#"hash_57d5802b9383f9c7");
     mdl_artifact clientfield::set("" + #"activate_mansion_artifact", 3);
     var_8a281f69 = getvehiclenode("power_on_projectile_path_1", "targetname");
-    v_pos = var_8a281f69.origin + vectorscale((0, 0, -1), 16);
+    v_pos = var_8a281f69.origin + (0, 0, -16);
     mdl_artifact moveto(v_pos, 1.5, 1, 0.5);
     mdl_artifact waittill(#"movedone");
     if (isalive(var_d11a4648)) {
@@ -1905,9 +1901,9 @@ function function_3f147b12(cmd) {
             var_99a245 = getent("<unknown string>", "power_on_impact");
             var_d8f56b29 = getent("<unknown string>", "power_on_impact");
             var_aa527474 = getent("<unknown string>", "power_on_impact");
-            var_99a245 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_99a245.origin + vectorscale((0, 0, 1), 24), (0, 0, 1), 0.1);
-            var_d8f56b29 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_d8f56b29.origin + vectorscale((0, 0, 1), 24), (0, 0, 1), 0.1);
-            var_aa527474 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_aa527474.origin + vectorscale((0, 0, 1), 24), (0, 0, 1), 0.1);
+            var_99a245 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_99a245.origin + (0, 0, 24), (0, 0, 1), 0.1);
+            var_d8f56b29 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_d8f56b29.origin + (0, 0, 24), (0, 0, 1), 0.1);
+            var_aa527474 magicgrenadetype(getweapon(#"eq_frag_grenade"), var_aa527474.origin + (0, 0, 24), (0, 0, 1), 0.1);
             if (cmd !== "<unknown string>") {
                 break;
             }
@@ -2349,7 +2345,7 @@ function function_ed41e7ca() {
             return;
         }
         level.var_ad214ed0 = util::spawn_model("<unknown string>", level.players[0].origin);
-        level.var_956b1da3 = util::spawn_model("<unknown string>", vectorscale((1, 1, 1), 100000));
+        level.var_956b1da3 = util::spawn_model("<unknown string>", (100000, 100000, 100000));
         level.var_ad214ed0 thread mansion_pap::function_d409a74f(level.var_956b1da3);
         level.var_ad214ed0 thread mansion_pap::function_c9c7a593();
     #/

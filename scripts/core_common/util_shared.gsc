@@ -66,9 +66,7 @@ function error(msg) {
             waitframe(1);
         }
         if (getdvar(#"debug", 0)) {
-            /#
-                assertmsg("<unknown string>");
-            #/
+            assertmsg("<unknown string>");
         }
     #/
 }
@@ -78,9 +76,7 @@ function error(msg) {
 // Checksum 0xe52b1d96, Offset: 0x600
 // Size: 0x34
 function warning(msg) {
-    /#
-        println("<unknown string>" + msg);
-    #/
+    println("<unknown string>" + msg);
 }
 
 // Namespace util/util_shared
@@ -208,7 +204,7 @@ function streamer_wait(n_stream_request_id, n_wait_frames = 0, n_timeout = 15, s
                 /#
                     if (n_timeout > 5) {
                         iprintln("<unknown string>");
-                        debug2dtext(vectorscale((1, 1, 0), 50), "<unknown string>", (1, 0, 0), 1, (0, 0, 0), 0, 2, 40);
+                        debug2dtext((50, 50, 0), "<unknown string>", (1, 0, 0), 1, (0, 0, 0), 0, 2, 40);
                     }
                 #/
                 break;
@@ -519,7 +515,7 @@ function break_glass(n_radius = 50) {
         v_origin_offset = (0, 0, 0);
         n_radius = 100;
     } else {
-        v_origin_offset = vectorscale((0, 0, 1), 40);
+        v_origin_offset = (0, 0, 40);
     }
     glassradiusdamage(self.origin + v_origin_offset, n_radius, 500, 500);
 }
@@ -606,7 +602,6 @@ function waittill_level_any_timeout(n_timeout, otherent, string1, string2, strin
         otherent thread waittill_string("death", ent);
     }
     ent thread _timeout(n_timeout);
-    waitresult = undefined;
     waitresult = ent waittill(#"returned");
     ent notify(#"die");
     return waitresult.msg;
@@ -627,12 +622,8 @@ function _timeout(delay) {
 // Checksum 0xe30d0275, Offset: 0x21f0
 // Size: 0x166
 function waittill_any_ents(ent1, string1, ent2, string2, ent3, string3, ent4, string4, ent5, string5, ent6, string6, ent7, string7) {
-    /#
-        assert(isdefined(ent1));
-    #/
-    /#
-        assert(isdefined(string1));
-    #/
+    assert(isdefined(ent1));
+    assert(isdefined(string1));
     if (isdefined(ent2) && isdefined(string2)) {
         ent2 endon(string2);
     }
@@ -659,12 +650,8 @@ function waittill_any_ents(ent1, string1, ent2, string2, ent3, string3, ent4, st
 // Checksum 0x76bc9fc2, Offset: 0x2360
 // Size: 0x80
 function waittill_any_ents_two(ent1, string1, ent2, string2) {
-    /#
-        assert(isdefined(ent1));
-    #/
-    /#
-        assert(isdefined(string1));
-    #/
+    assert(isdefined(ent1));
+    assert(isdefined(string1));
     if (isdefined(ent2) && isdefined(string2)) {
         ent2 endon(string2);
     }
@@ -780,9 +767,7 @@ function _single_func(entity, func, a_vars) {
         }
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
 }
@@ -863,11 +848,7 @@ function function_cf55c866(entity, func, arg1, arg2, &a_vars) {
 // Size: 0x9b2
 function _single_thread(entity, func, arg1, arg2, &a_vars) {
     _clean_up_arg_array(a_vars);
-    /#
-        /#
-            assert(isfunctionptr(func), "<unknown string>" + "<unknown string>");
-        #/
-    #/
+    assert(isfunctionptr(func), "<unknown string>" + "<unknown string>");
     if (!isfunctionptr(func)) {
         return;
     }
@@ -901,9 +882,7 @@ function _single_thread(entity, func, arg1, arg2, &a_vars) {
             entity thread [[ func ]](arg1, arg2);
             break;
         default:
-            /#
-                assertmsg("<unknown string>");
-            #/
+            assertmsg("<unknown string>");
             break;
         }
         return;
@@ -938,9 +917,7 @@ function _single_thread(entity, func, arg1, arg2, &a_vars) {
             entity thread [[ func ]](arg1);
             break;
         default:
-            /#
-                assertmsg("<unknown string>");
-            #/
+            assertmsg("<unknown string>");
             break;
         }
         return;
@@ -974,9 +951,7 @@ function _single_thread(entity, func, arg1, arg2, &a_vars) {
         entity thread [[ func ]]();
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
 }
@@ -1086,9 +1061,7 @@ function fileprint_chk(file, str) {
 // Checksum 0x1372da2b, Offset: 0x3b38
 // Size: 0xf4
 function fileprint_map_header(binclude_blank_worldspawn = 0) {
-    /#
-        assert(isdefined(level.fileprint));
-    #/
+    assert(isdefined(level.fileprint));
     /#
         fileprint_chk(level.fileprint, "<unknown string>");
         fileprint_chk(level.fileprint, "<unknown string>");
@@ -1108,9 +1081,7 @@ function fileprint_map_header(binclude_blank_worldspawn = 0) {
 // Size: 0x7c
 function fileprint_map_keypairprint(key1, key2) {
     /#
-        /#
-            assert(isdefined(level.fileprint));
-        #/
+        assert(isdefined(level.fileprint));
         fileprint_chk(level.fileprint, "<unknown string>" + key1 + "<unknown string>" + key2 + "<unknown string>");
     #/
 }
@@ -1121,13 +1092,9 @@ function fileprint_map_keypairprint(key1, key2) {
 // Size: 0xb8
 function fileprint_map_entity_start() {
     /#
-        /#
-            assert(!isdefined(level.fileprint_entitystart));
-        #/
+        assert(!isdefined(level.fileprint_entitystart));
         level.fileprint_entitystart = 1;
-        /#
-            assert(isdefined(level.fileprint));
-        #/
+        assert(isdefined(level.fileprint));
         fileprint_chk(level.fileprint, "<unknown string>" + level.fileprint_mapentcount);
         fileprint_chk(level.fileprint, "<unknown string>");
         level.fileprint_mapentcount++;
@@ -1140,12 +1107,8 @@ function fileprint_map_entity_start() {
 // Size: 0x74
 function fileprint_map_entity_end() {
     /#
-        /#
-            assert(isdefined(level.fileprint_entitystart));
-        #/
-        /#
-            assert(isdefined(level.fileprint));
-        #/
+        assert(isdefined(level.fileprint_entitystart));
+        assert(isdefined(level.fileprint));
         level.fileprint_entitystart = undefined;
         fileprint_chk(level.fileprint, "<unknown string>");
     #/
@@ -1157,9 +1120,7 @@ function fileprint_map_entity_end() {
 // Size: 0x262
 function fileprint_end() {
     /#
-        /#
-            assert(!isdefined(level.fileprint_entitystart));
-        #/
+        assert(!isdefined(level.fileprint_entitystart));
         saved = closefile(level.fileprint);
         if (saved != 1) {
             println("<unknown string>");
@@ -1276,9 +1237,7 @@ function _disableusability() {
 // Size: 0x54
 function _enableusability() {
     self.disabledusability--;
-    /#
-        assert(self.disabledusability >= 0);
-    #/
+    assert(self.disabledusability >= 0);
     if (!self.disabledusability) {
         self enableusability();
     }
@@ -1400,19 +1359,11 @@ function registerclientsys(ssysname) {
         level._clientsys = [];
     }
     if (level._clientsys.size >= 32) {
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     if (isdefined(level._clientsys[ssysname])) {
-        /#
-            /#
-                assertmsg("<unknown string>" + ssysname);
-            #/
-        #/
+        assertmsg("<unknown string>" + ssysname);
         return;
     }
     level._clientsys[ssysname] = spawnstruct();
@@ -1425,19 +1376,11 @@ function registerclientsys(ssysname) {
 // Size: 0x112
 function setclientsysstate(ssysname, ssysstate, player) {
     if (!isdefined(level._clientsys)) {
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     if (!isdefined(level._clientsys[ssysname])) {
-        /#
-            /#
-                assertmsg("<unknown string>" + ssysname);
-            #/
-        #/
+        assertmsg("<unknown string>" + ssysname);
         return;
     }
     if (isdefined(player)) {
@@ -1454,19 +1397,11 @@ function setclientsysstate(ssysname, ssysstate, player) {
 // Size: 0xce
 function getclientsysstate(ssysname) {
     if (!isdefined(level._clientsys)) {
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
         return "";
     }
     if (!isdefined(level._clientsys[ssysname])) {
-        /#
-            /#
-                assertmsg("<unknown string>" + ssysname + "<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>" + ssysname + "<unknown string>");
         return "";
     }
     if (isdefined(level._clientsys[ssysname].sysstate)) {
@@ -1502,9 +1437,7 @@ function coopgame() {
 // Checksum 0xd8e8350a, Offset: 0x4e30
 // Size: 0x1a6
 function is_looking_at(ent_or_org, n_dot_range = 0.9, do_trace = 0, v_offset) {
-    /#
-        assert(isdefined(ent_or_org), "<unknown string>");
-    #/
+    assert(isdefined(ent_or_org), "<unknown string>");
     v_point = isvec(ent_or_org) ? ent_or_org : ent_or_org.origin;
     if (isvec(v_offset)) {
         v_point = v_point + v_offset;
@@ -1558,9 +1491,7 @@ function spawn_model(model_name, origin = (0, 0, 0), angles = (0, 0, 0), n_spawn
         if (isdefined(model)) {
             break;
         } else {
-            /#
-                println("<unknown string>" + "<unknown string>" + model_name + "<unknown string>" + origin + "<unknown string>" + angles);
-            #/
+            println("<unknown string>" + "<unknown string>" + model_name + "<unknown string>" + origin + "<unknown string>" + angles);
         }
         waitframe(1);
     }
@@ -1620,9 +1551,7 @@ function waittill_player_not_looking_at(origin, dot, do_trace) {
 // Checksum 0x34365b1f, Offset: 0x5420
 // Size: 0x1b8
 function is_player_looking_at(v_origin, n_dot = 0.7, b_do_trace = 1, e_ignore) {
-    /#
-        assert(isplayer(self), "<unknown string>");
-    #/
+    assert(isplayer(self), "<unknown string>");
     if (isdefined(self.hijacked_vehicle_entity)) {
         v_eye = self.hijacked_vehicle_entity gettagorigin("tag_driver");
         v_view = anglestoforward(self.hijacked_vehicle_entity gettagangles("tag_driver"));
@@ -1794,12 +1723,8 @@ function delete_on_death_or_notify(e_to_delete, str_notify, str_clientfield = un
 // Checksum 0x783cb389, Offset: 0x5a50
 // Size: 0xa8
 function wait_till_not_touching(e_to_check, e_to_touch) {
-    /#
-        assert(isdefined(e_to_check), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(e_to_touch), "<unknown string>");
-    #/
+    assert(isdefined(e_to_check), "<unknown string>");
+    assert(isdefined(e_to_touch), "<unknown string>");
     e_to_check endon(#"death");
     e_to_touch endon(#"death");
     while (e_to_check istouching(e_to_touch)) {
@@ -1829,17 +1754,13 @@ function set_console_status() {
     if (!isdefined(level.console)) {
         level.console = getdvarstring(#"consolegame") == "true";
     } else {
-        /#
-            assert(level.console == getdvarstring(#"consolegame") == "<unknown string>", "<unknown string>");
-        #/
+        assert(level.console == getdvarstring(#"consolegame") == "<unknown string>", "<unknown string>");
     }
     if (!isdefined(level.consolexenon)) {
         level.xenon = getdvarstring(#"xenongame") == "true";
         return;
     }
-    /#
-        assert(level.xenon == getdvarstring(#"xenongame") == "<unknown string>", "<unknown string>");
-    #/
+    assert(level.xenon == getdvarstring(#"xenongame") == "<unknown string>", "<unknown string>");
 }
 
 // Namespace util/util_shared
@@ -1902,9 +1823,7 @@ function magic_bullet_shield(ent = self) {
         ent notify(#"_stop_magic_bullet_shield_debug");
         level thread debug_magic_bullet_shield_death(ent);
     #/
-    /#
-        assert(isalive(ent), "<unknown string>");
-    #/
+    assert(isalive(ent), "<unknown string>");
     if (isai(ent)) {
         if (isactor(ent)) {
             ent bloodimpact("hero");
@@ -1924,9 +1843,7 @@ function debug_magic_bullet_shield_death(guy) {
     }
     guy endon(#"stop_magic_bullet_shield", #"_stop_magic_bullet_shield_debug");
     guy waittill(#"death");
-    /#
-        assert(!isdefined(guy), "<unknown string>" + targetname);
-    #/
+    assert(!isdefined(guy), "<unknown string>" + targetname);
 }
 
 // Namespace util/util_shared
@@ -2307,9 +2224,7 @@ function function_fbce7263(team_a, team_b) {
 // Checksum 0x52bf3698, Offset: 0x6df0
 // Size: 0x4a
 function isenemyteam(team) {
-    /#
-        assert(isdefined(team));
-    #/
+    assert(isdefined(team));
     if (!isdefined(self)) {
         return 0;
     }
@@ -2482,12 +2397,8 @@ function note_raw_time(label = "unspecified") {
 // Checksum 0x41cc99ed, Offset: 0x74f8
 // Size: 0x4e
 function mayapplyscreeneffect() {
-    /#
-        assert(isdefined(self));
-    #/
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isdefined(self));
+    assert(isplayer(self));
     return !isdefined(self.viewlockedentity);
 }
 
@@ -2521,7 +2432,6 @@ function waittillrollingornotmoving() {
         waitframe(1);
         return "stationary";
     }
-    movestate = undefined;
     movestate = self waittill(#"stationary", #"rolling");
     return movestate._notify;
 }
@@ -2590,9 +2500,7 @@ function setusingremote(remotename, set_killstreak_delay_killcam = !sessionmodei
     if (isdefined(self.carryicon)) {
         self.carryicon.alpha = 0;
     }
-    /#
-        assert(!self isusingremote());
-    #/
+    assert(!self isusingremote());
     self.usingremote = remotename;
     if (set_killstreak_delay_killcam) {
         self.killstreak_delay_killcam = remotename;
@@ -2620,15 +2528,9 @@ function function_9a39538a() {
 // Checksum 0x7282d442, Offset: 0x7988
 // Size: 0x74
 function deleteaftertime(time) {
-    /#
-        assert(isdefined(self));
-    #/
-    /#
-        assert(isdefined(time));
-    #/
-    /#
-        assert(time >= 0.05);
-    #/
+    assert(isdefined(self));
+    assert(isdefined(time));
+    assert(time >= 0.05);
     self thread deleteaftertimethread(time);
 }
 
@@ -2671,9 +2573,7 @@ function waitfortimeandnetworkframe(time = 0) {
 // Checksum 0xe309ef26, Offset: 0x7b18
 // Size: 0x54
 function deleteaftertimeandnetworkframe(time) {
-    /#
-        assert(isdefined(self));
-    #/
+    assert(isdefined(self));
     waitfortimeandnetworkframe(time);
     self delete();
 }
@@ -2841,9 +2741,7 @@ function set_lighting_state(n_state) {
             self setlightingstate(self.lighting_state);
             return;
         }
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     }
 }
 
@@ -2870,9 +2768,7 @@ function set_sun_shadow_split_distance(f_distance) {
             self setsunshadowsplitdistance(self.sun_shadow_split_distance);
             return;
         }
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     }
 }
 
@@ -2902,9 +2798,7 @@ function function_7f49ffb7(var_bf01552a) {
             self function_61471b4a(self.var_bf01552a);
             return;
         }
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     }
 }
 
@@ -3495,9 +3389,7 @@ function delayed_notify(str_notify, f_delay_seconds) {
 // Checksum 0xca5c24dc, Offset: 0xa3b8
 // Size: 0x6c
 function delayed_delete(f_delay_seconds) {
-    /#
-        assert(isentity(self));
-    #/
+    assert(isentity(self));
     wait(f_delay_seconds);
     if (isdefined(self) && isentity(self)) {
         self delete();
@@ -3850,9 +3742,7 @@ function getotherteam(team) {
     } else {
         return #"allies";
     }
-    /#
-        assertmsg("<unknown string>" + team);
-    #/
+    assertmsg("<unknown string>" + team);
 }
 
 // Namespace util/util_shared
@@ -3904,9 +3794,7 @@ function get_players(team = #"any") {
     if (team == #"any") {
         return arraycopy(level.players);
     }
-    /#
-        assert(isdefined(level.teams[team]), "<unknown string>" + function_9e72a96(team) + "<unknown string>");
-    #/
+    assert(isdefined(level.teams[team]), "<unknown string>" + function_9e72a96(team) + "<unknown string>");
     players = [];
     foreach (player in level.players) {
         if (!isdefined(player)) {
@@ -3926,9 +3814,7 @@ function get_players(team = #"any") {
 function get_active_players(team = #"any") {
     /#
         if (team != #"any") {
-            /#
-                assert(isdefined(level.teams[team]), "<unknown string>" + function_9e72a96(team) + "<unknown string>");
-            #/
+            assert(isdefined(level.teams[team]), "<unknown string>" + function_9e72a96(team) + "<unknown string>");
         }
     #/
     arrayremovevalue(level.activeplayers, undefined, 0);
@@ -3953,9 +3839,7 @@ function function_81ccf6d3(team = #"any") {
     if (team == #"any") {
         return players;
     }
-    /#
-        assert(isdefined(level.teams[team]), "<unknown string>" + function_9e72a96(team) + "<unknown string>");
-    #/
+    assert(isdefined(level.teams[team]), "<unknown string>" + function_9e72a96(team) + "<unknown string>");
     enemies = [];
     foreach (player in players) {
         if (isdefined(player) && isdefined(player.team) && function_fbce7263(player.team, team)) {
@@ -4135,12 +4019,8 @@ function clearallcooldowns() {
 // Checksum 0xdf498b69, Offset: 0xbf28
 // Size: 0x64
 function private function_4627b63d(alias) {
-    /#
-        assert(isdefined(level.team_mapping_alias));
-    #/
-    /#
-        assert(isdefined(level.team_mapping_alias[alias]));
-    #/
+    assert(isdefined(level.team_mapping_alias));
+    assert(isdefined(level.team_mapping_alias[alias]));
     return level.team_mapping_alias[alias];
 }
 
@@ -4149,9 +4029,7 @@ function private function_4627b63d(alias) {
 // Checksum 0xc948931d, Offset: 0xbf98
 // Size: 0xc4
 function private function_3cb7a62d() {
-    /#
-        assert(isdefined(level.team_mapping));
-    #/
+    assert(isdefined(level.team_mapping));
     if (get_team_mapping("sidea") == #"allies" && get_team_mapping("sideb") == #"axis") {
         level clientfield::set("cf_team_mapping", 1);
         return;
@@ -4243,9 +4121,7 @@ function function_9b7092ef(team1, team2, team3, team4) {
 function set_team_mapping(var_b0dd114d, var_54495823) {
     var_b0dd114d = function_4627b63d(var_b0dd114d);
     var_54495823 = function_4627b63d(var_54495823);
-    /#
-        assert(var_b0dd114d != var_54495823, "<unknown string>");
-    #/
+    assert(var_b0dd114d != var_54495823, "<unknown string>");
     level.team_mapping[0] = var_b0dd114d;
     level.team_mapping[1] = var_54495823;
     flagsys::set(#"team_mapping_set");
@@ -4261,9 +4137,7 @@ function set_team_mapping(var_b0dd114d, var_54495823) {
 // Checksum 0xca4f0fc8, Offset: 0xc608
 // Size: 0x6a
 function function_d3e0802c(var_1dc5879e, var_128bf12b) {
-    /#
-        assert(var_1dc5879e != var_128bf12b, "<unknown string>");
-    #/
+    assert(var_1dc5879e != var_128bf12b, "<unknown string>");
     level.var_af68e94e[var_1dc5879e] = 0;
     level.var_af68e94e[var_128bf12b] = 1;
 }
@@ -4273,9 +4147,7 @@ function function_d3e0802c(var_1dc5879e, var_128bf12b) {
 // Checksum 0x48595d94, Offset: 0xc680
 // Size: 0x6a
 function function_c16f65a3(enemy_a, enemy_b) {
-    /#
-        assert(enemy_a != enemy_b, "<unknown string>");
-    #/
+    assert(enemy_a != enemy_b, "<unknown string>");
     level.team_enemy_mapping[enemy_a] = enemy_b;
     level.team_enemy_mapping[enemy_b] = enemy_a;
 }
@@ -4285,9 +4157,7 @@ function function_c16f65a3(enemy_a, enemy_b) {
 // Checksum 0x3f9904c2, Offset: 0xc6f8
 // Size: 0x82
 function function_9db3109f(team, alias) {
-    /#
-        assert(team == #"allies" || team == #"axis" || team == #"team3");
-    #/
+    assert(team == #"allies" || team == #"axis" || team == #"team3");
     level.team_mapping_alias[alias] = team;
 }
 
@@ -4296,12 +4166,8 @@ function function_9db3109f(team, alias) {
 // Checksum 0xa0e696d6, Offset: 0xc788
 // Size: 0xb2
 function get_team_mapping(team) {
-    /#
-        assert(isdefined(level.team_mapping));
-    #/
-    /#
-        assert(isdefined(level.var_af68e94e));
-    #/
+    assert(isdefined(level.team_mapping));
+    assert(isdefined(level.var_af68e94e));
     if (isdefined(team)) {
         if (isdefined(level.var_af68e94e[team])) {
             return level.team_mapping[level.var_af68e94e[team]];
@@ -4317,12 +4183,8 @@ function get_team_mapping(team) {
 // Checksum 0xa810279f, Offset: 0xc848
 // Size: 0xc4
 function function_310d70e2(team) {
-    /#
-        assert(isdefined(level.team_mapping));
-    #/
-    /#
-        assert(isdefined(level.var_af68e94e));
-    #/
+    assert(isdefined(level.team_mapping));
+    assert(isdefined(level.var_af68e94e));
     if (isdefined(team)) {
         if (team === level.team_mapping[level.var_af68e94e[#"sidea"]]) {
             return "sidea";
@@ -4920,7 +4782,6 @@ function function_d608a743() {
     self endon(#"hash_29bf696e43d4a08b", #"death");
     var_9bc12626 = getarraykeys(self.var_c18fbf49);
     while (true) {
-        s_result = undefined;
         s_result = self waittill(var_9bc12626);
         s_callback = self.var_c18fbf49[hash(s_result._notify)];
         if (isdefined(s_callback.params)) {

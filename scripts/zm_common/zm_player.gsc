@@ -328,20 +328,14 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     if (isplayer(self)) {
         startedinlaststand = self laststand::player_is_in_laststand();
     }
-    /#
-        println("<unknown string>" + idamage + "<unknown string>");
-    #/
+    println("<unknown string>" + idamage + "<unknown string>");
     if (isdefined(eattacker) && isplayer(eattacker) && eattacker.sessionteam == self.sessionteam && !eattacker hasperk(#"specialty_playeriszombie") && !(isdefined(self.is_zombie) && self.is_zombie)) {
         idamage = self process_friendly_fire_callbacks(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex);
         if (self != eattacker && !level.friendlyfire) {
-            /#
-                println("<unknown string>");
-            #/
+            println("<unknown string>");
             return;
         } else if (self == eattacker && smeansofdeath != "MOD_GRENADE_SPLASH" && smeansofdeath != "MOD_GRENADE" && smeansofdeath != "MOD_EXPLOSIVE" && smeansofdeath != "MOD_PROJECTILE" && smeansofdeath != "MOD_PROJECTILE_SPLASH" && smeansofdeath != "MOD_BURNED" && smeansofdeath != "MOD_SUICIDE" && smeansofdeath != "MOD_DOT") {
-            /#
-                println("<unknown string>");
-            #/
+            println("<unknown string>");
             return;
         }
     }
@@ -349,9 +343,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     if (isdefined(overrideplayerdamage)) {
         idamage = self [[ overrideplayerdamage ]](einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime);
     }
-    /#
-        assert(isdefined(idamage), "<unknown string>");
-    #/
+    assert(isdefined(idamage), "<unknown string>");
     if (isdefined(level.zm_bots_scale) && level.zm_bots_scale && isbot(self) && isdefined(einflictor) && isactor(einflictor)) {
         idamage = int(idamage / zm_bot::function_e16b5033(einflictor));
     }
@@ -407,9 +399,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     }
     idamage = int(idamage);
     self finishplayerdamagewrapper(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, boneindex, vsurfacenormal);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     var_ca70d16a = 0;
     if (isplayer(self)) {
         var_ca70d16a = !startedinlaststand && self laststand::player_is_in_laststand();
@@ -912,7 +902,6 @@ function player_grenade_multiattack_bookmark_watcher(grenade, weapon) {
     }
     killcam_entity_info = killcam::get_killcam_entity_info(self, grenade, weapon);
     einflictor = grenade;
-    ret_val = undefined;
     ret_val = grenade waittilltimeout(15, #"explode", #"death", #"disconnect");
     if (!isdefined(self) || isdefined(ret_val) && "timeout" == ret_val._notify) {
         return;
@@ -959,7 +948,6 @@ function player_grenade_watcher() {
     self.grenade_multiattack_count = 0;
     self.grenade_multikill_count = 0;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
         weapon = waitresult.weapon;
@@ -1024,7 +1012,6 @@ function player_revive_monitor() {
     self notify(#"stop_player_revive_monitor");
     self endon(#"stop_player_revive_monitor", #"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"player_revived");
         reviver = waitresult.reviver;
         self playsound(#"zmb_character_revived");
@@ -1047,9 +1034,7 @@ function player_revive_monitor() {
             } else if (points > 2500) {
                 points = 2500 + (points - 2500) * 0.5;
             }
-            /#
-                println("<unknown string>" + points);
-            #/
+            println("<unknown string>" + points);
             reviver zm_score::player_add_points("reviver", points);
             self.score_lost_when_downed = 0;
             if (isplayer(reviver) && reviver != self) {
@@ -1095,9 +1080,7 @@ function spawnspectator() {
     self.hasspawned = 1;
     self.spawntime = gettime();
     self.afk = 0;
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     self detachall();
     if (isdefined(level.var_7abfc4ea)) {
         self [[ level.var_7abfc4ea ]]();
@@ -1212,12 +1195,8 @@ function spectator_respawn_player() {
 // Checksum 0x79fb4ea9, Offset: 0x4bc0
 // Size: 0x2e8
 function spectator_respawn() {
-    /#
-        println("<unknown string>");
-    #/
-    /#
-        assert(isdefined(self.spectator_respawn));
-    #/
+    println("<unknown string>");
+    assert(isdefined(self.spectator_respawn));
     if (!isdefined(self) || !isdefined(self.spectator_respawn)) {
         return;
     }
@@ -1328,9 +1307,7 @@ function get_valid_spawn_location(revivee, spawn_points, closest_group, return_s
     spawn_array = struct::get_array(spawn_points[closest_group].target, "targetname");
     if (level flag::get("round_reset")) {
         spawn_point_index = revivee getentitynumber();
-        /#
-            assert(spawn_point_index >= 0 && spawn_point_index < spawn_array.size);
-        #/
+        assert(spawn_point_index >= 0 && spawn_point_index < spawn_array.size);
         if (isdefined(return_struct) && return_struct) {
             return spawn_array[spawn_point_index];
         } else {
@@ -1878,9 +1855,7 @@ function player_intermission() {
     if (!isdefined(points) || points.size == 0) {
         points = getentarray("info_intermission", "classname");
         if (points.size < 1) {
-            /#
-                println("<unknown string>");
-            #/
+            println("<unknown string>");
             return;
         }
     }
@@ -1988,9 +1963,7 @@ function slowdown(str_type, var_a47cf2b2) {
     }
     self notify(#"hash_31eac0065ba118f5");
     self endoncallback(&function_fe7a7d5b, #"hash_31eac0065ba118f5", #"death", #"hash_28af7943f07d93e2");
-    /#
-        assert(isdefined(level.var_f27112f9[str_type]), "<unknown string>" + str_type + "<unknown string>");
-    #/
+    assert(isdefined(level.var_f27112f9[str_type]), "<unknown string>" + str_type + "<unknown string>");
     if (!isdefined(self.a_n_slowdown_timeouts)) {
         self.a_n_slowdown_timeouts = [];
     }

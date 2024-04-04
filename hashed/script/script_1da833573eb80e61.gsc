@@ -8,22 +8,6 @@
 class cinitial_black : cluielem {
 
     // Namespace cinitial_black/initial_black
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xeb056e42, Offset: 0x1a8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cinitial_black/initial_black
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x62c6c2f, Offset: 0x290
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cinitial_black/initial_black
     // Params 1, eflags: 0x1 linked
     // Checksum 0x5367638, Offset: 0x258
     // Size: 0x2c

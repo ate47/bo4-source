@@ -501,12 +501,12 @@ function private function_31badd5d(missioncomponent, index) {
                         var_41dd65b0 = component.var_2956bff4;
                         function_20610c3(component.var_2956bff4, statuscolor, "<unknown string>");
                         recordline(origin, component.var_2956bff4.origin, statuscolor, "<unknown string>");
-                        record3dtext("<unknown string>", component.var_2956bff4.origin + vectorscale((0, 0, -1), 5), statuscolor, "<unknown string>");
+                        record3dtext("<unknown string>", component.var_2956bff4.origin + (0, 0, -5), statuscolor, "<unknown string>");
                     }
                     if (isdefined(component.var_6bc907c4)) {
                         function_20610c3(component.var_6bc907c4, statuscolor, "<unknown string>");
                         recordline(origin, component.var_6bc907c4.origin, statuscolor, "<unknown string>");
-                        record3dtext("<unknown string>", component.var_6bc907c4.origin + vectorscale((0, 0, 1), 5), statuscolor, "<unknown string>");
+                        record3dtext("<unknown string>", component.var_6bc907c4.origin + (0, 0, 5), statuscolor, "<unknown string>");
                     }
                 }
                 if (isdefined(var_41dd65b0)) {
@@ -520,7 +520,7 @@ function private function_31badd5d(missioncomponent, index) {
                 }
             } else if (missioncomponent flag::get("<unknown string>")) {
                 statustext = "<unknown string>";
-                statuscolor = vectorscale((1, 1, 1), 0.1);
+                statuscolor = (0.1, 0.1, 0.1);
             }
             textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
             function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, statustext, origintext, var_4fea471b, var_fabc86d6, var_f3fe7e2c, var_2aac6b87, tacpointtext, errortext);
@@ -584,7 +584,7 @@ function private function_3ed19fa3(gameobject, position) {
             }
             var_f3fe7e2c = "<unknown string>" + (isdefined(var_ea15be8) ? var_ea15be8 : "<unknown string>") + "<unknown string>" + var_7ddeb599;
             var_2aac6b87 = "<unknown string>" + (isdefined(var_da71cc36) ? var_da71cc36 : "<unknown string>") + "<unknown string>" + var_bd3388e8;
-            statuscolor = gameobject.type !== "<unknown string>" ? (1, 1, 1) : vectorscale((1, 1, 1), 0.1);
+            statuscolor = gameobject.type !== "<unknown string>" ? (1, 1, 1) : (0.1, 0.1, 0.1);
             if (isdefined(gameobject.trigger) && gameobject.trigger istriggerenabled()) {
                 points = tacticalquery(#"stratcom_tacquery_trigger", gameobject.trigger);
                 tacpointtext = "<unknown string>" + points.size + "<unknown string>";
@@ -594,7 +594,7 @@ function private function_3ed19fa3(gameobject, position) {
                 statuscolor = (0, 1, 1);
                 function_20610c3(gameobject.trigger, statuscolor, "<unknown string>");
                 recordline(origin, gameobject.trigger.origin, statuscolor, "<unknown string>");
-                record3dtext("<unknown string>", gameobject.trigger.origin + vectorscale((0, 0, 1), 5), statuscolor, "<unknown string>");
+                record3dtext("<unknown string>", gameobject.trigger.origin + (0, 0, 5), statuscolor, "<unknown string>");
             }
             textcolor = isdefined(errortext) ? (1, 0, 0) : (1, 1, 1);
             function_15462dcd(origin, textcolor, "<unknown string>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, var_4fea471b, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext);
@@ -742,9 +742,7 @@ function private function_35fd8254() {
 // Checksum 0x6298948, Offset: 0x39f8
 // Size: 0x10a
 function private function_7712a8e4(strategy, var_a5bd84a3, var_48ce643a, doppelbots = 1, companions = 1) {
-    /#
-        assert(isdefined(strategy));
-    #/
+    assert(isdefined(strategy));
     var_c4c7d0bc = strategy.(var_a5bd84a3) === 1;
     var_3b9048 = var_c4c7d0bc;
     if (strategy.("customizecompanions") === 1) {
@@ -765,9 +763,7 @@ function private function_7712a8e4(strategy, var_a5bd84a3, var_48ce643a, doppelb
 // Checksum 0x1997ef46, Offset: 0x3b10
 // Size: 0x2c8
 function function_700c578d(bundle) {
-    /#
-        assert(isdefined(bundle));
-    #/
+    assert(isdefined(bundle));
     var_389ef689 = spawnstruct();
     /#
         var_389ef689.name = bundle.name;
@@ -808,9 +804,7 @@ function function_700c578d(bundle) {
 // Checksum 0x63cb6474, Offset: 0x3de0
 // Size: 0xcc
 function function_2cce6a82(entity, bundle) {
-    /#
-        assert(isdefined(bundle));
-    #/
+    assert(isdefined(bundle));
     if (!function_9ab82e4f(entity)) {
         return;
     }
@@ -830,9 +824,7 @@ function function_2cce6a82(entity, bundle) {
 // Checksum 0x4dad5056, Offset: 0x3eb8
 // Size: 0x11a
 function function_704d5fbd(bot, component) {
-    /#
-        assert(isdefined(component));
-    #/
+    assert(isdefined(component));
     if (!function_9ab82e4f(bot)) {
         return;
     }
@@ -857,9 +849,7 @@ function function_704d5fbd(bot, component) {
 // Checksum 0xf0ceb9fc, Offset: 0x3fe0
 // Size: 0x134
 function calculatepathtogameobject(bot, gameobject) {
-    /#
-        assert(isdefined(gameobject));
-    #/
+    assert(isdefined(gameobject));
     if (!function_9ab82e4f(bot)) {
         return;
     }
@@ -883,9 +873,7 @@ function calculatepathtogameobject(bot, gameobject) {
 // Checksum 0x37a145f5, Offset: 0x4120
 // Size: 0xba
 function function_71866d71(bot, breadcrumb) {
-    /#
-        assert(isdefined(breadcrumb));
-    #/
+    assert(isdefined(breadcrumb));
     if (!function_9ab82e4f(bot)) {
         return;
     }
@@ -902,9 +890,7 @@ function function_71866d71(bot, breadcrumb) {
 // Checksum 0x7c8305c2, Offset: 0x41e8
 // Size: 0x19c
 function calculatepathtoobjective(bot, objective) {
-    /#
-        assert(isdefined(objective));
-    #/
+    assert(isdefined(objective));
     if (!function_9ab82e4f(bot)) {
         return;
     }
@@ -935,9 +921,7 @@ function calculatepathtoobjective(bot, objective) {
 // Checksum 0x44f3c3bb, Offset: 0x4390
 // Size: 0xd2
 function calculatepathtopoints(bot, points) {
-    /#
-        assert(isdefined(points));
-    #/
+    assert(isdefined(points));
     if (!function_9ab82e4f(bot)) {
         return;
     }
@@ -957,9 +941,7 @@ function calculatepathtopoints(bot, points) {
 // Checksum 0x81a2c116, Offset: 0x4470
 // Size: 0x132
 function calculatepathtoposition(entity, position, radius = 200, halfheight = 100) {
-    /#
-        assert(isdefined(position));
-    #/
+    assert(isdefined(position));
     if (!function_9ab82e4f(entity)) {
         return;
     }
@@ -1082,18 +1064,12 @@ function calculateprogressthrottling(lowerboundpercentile, upperboundpercentile,
 // Checksum 0x82eae158, Offset: 0x4b68
 // Size: 0x340
 function function_1e3c1b91(var_b7f15515, var_5e513205) {
-    /#
-        assert(isdefined(var_b7f15515));
-    #/
-    /#
-        assert(isdefined(var_5e513205));
-    #/
+    assert(isdefined(var_b7f15515));
+    assert(isdefined(var_5e513205));
     var_389ef689 = spawnstruct();
     var_6da809dc = array("doppelbotsignore", "doppelbotsallowair", "doppelbotsallowground", "doppelbotspriority", "doppelbotstactics", "doppelbotsfocus", "doppelbotsinteractions", "doppelbotsdistribution");
     var_e3e0ebe5 = array("companionsignore", "companionsallowair", "companionsallowground", "companionspriority", "companionstactics", "companionsfocus", "companionsinteractions", "companionsdistribution");
-    /#
-        assert(var_6da809dc.size == var_e3e0ebe5.size);
-    #/
+    assert(var_6da809dc.size == var_e3e0ebe5.size);
     foreach (kvp in var_6da809dc) {
         if (!isdefined(var_5e513205.(kvp)) || var_5e513205.(kvp) === #"hash_13275474a58f1175") {
             if (!isdefined(var_b7f15515.(kvp))) {
@@ -1132,9 +1108,7 @@ function function_1e3c1b91(var_b7f15515, var_5e513205) {
 // Checksum 0x97016d6e, Offset: 0x4eb0
 // Size: 0x532
 function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = undefined, gameobject = undefined) {
-    /#
-        assert(isstring(side));
-    #/
+    assert(isstring(side));
     strategy = function_d077c2b6(side);
     if (!isdefined(strategy)) {
         function_1852d313(#"default_strategicbundle", side);
@@ -1203,9 +1177,7 @@ function function_423cfbc1(side, var_ebfc3fac = undefined, missioncomponent = un
 // Checksum 0xe0b61343, Offset: 0x53f0
 // Size: 0x92
 function function_4b0c469d(vehicle) {
-    /#
-        assert(isdefined(vehicle) && isvehicle(vehicle));
-    #/
+    assert(isdefined(vehicle) && isvehicle(vehicle));
     switch (vehicle.vehicleclass) {
     case #"helicopter":
         return "air";
@@ -1248,12 +1220,8 @@ function function_a1edb007(team) {
 // Checksum 0x8784d1d1, Offset: 0x5610
 // Size: 0xca
 function function_5c2c9542(entity, component) {
-    /#
-        assert(isdefined(entity));
-    #/
-    /#
-        assert(isdefined(component));
-    #/
+    assert(isdefined(entity));
+    assert(isdefined(component));
     switch (component.m_str_type) {
     case #"destroy":
     case #"defend":
@@ -1271,9 +1239,7 @@ function function_5c2c9542(entity, component) {
 // Checksum 0xbef8d570, Offset: 0x56e8
 // Size: 0x9c
 function function_45c5edc6(side) {
-    /#
-        assert(isdefined(side));
-    #/
+    assert(isdefined(side));
     if (!isdefined(level.var_2731863e)) {
         level.var_2731863e = [];
     } else if (!isarray(level.var_2731863e)) {
@@ -1287,9 +1253,7 @@ function function_45c5edc6(side) {
 // Checksum 0x6e89f690, Offset: 0x5790
 // Size: 0x9c
 function function_d077c2b6(side) {
-    /#
-        assert(isdefined(side));
-    #/
+    assert(isdefined(side));
     if (!isdefined(level.var_aca184cd)) {
         level.var_aca184cd = [];
     } else if (!isarray(level.var_aca184cd)) {
@@ -1417,9 +1381,7 @@ function isvalidplayer(client) {
 // Size: 0x1c6
 function function_f867cce0(missioncomponent, commanderteam) {
     component = missioncomponent.var_36f0c06d;
-    /#
-        assert(commanderteam == #"any" || commanderteam == #"allies" || commanderteam == #"axis", "<unknown string>" + commanderteam + "<unknown string>");
-    #/
+    assert(commanderteam == #"any" || commanderteam == #"allies" || commanderteam == #"axis", "<unknown string>" + commanderteam + "<unknown string>");
     if (!isdefined(component)) {
         return false;
     }
@@ -1453,9 +1415,7 @@ function function_f867cce0(missioncomponent, commanderteam) {
 // Checksum 0xbf0d3e4d, Offset: 0x5f18
 // Size: 0x16c
 function querypointsaroundgameobject(bot, gameobject) {
-    /#
-        assert(isdefined(gameobject));
-    #/
+    assert(isdefined(gameobject));
     if (!function_9ab82e4f(bot)) {
         return;
     }
@@ -1478,9 +1438,7 @@ function querypointsaroundgameobject(bot, gameobject) {
 // Checksum 0x5d6dfaba, Offset: 0x6090
 // Size: 0x244
 function querypointsinsideobjective(bot, trigger) {
-    /#
-        assert(isdefined(trigger));
-    #/
+    assert(isdefined(trigger));
     if (!function_9ab82e4f(bot)) {
         return [];
     }
@@ -1511,9 +1469,7 @@ function querypointsinsideobjective(bot, trigger) {
 // Checksum 0xc460dfb4, Offset: 0x62e0
 // Size: 0x16c
 function querypointsinsideposition(bot, position, radius, halfheight) {
-    /#
-        assert(isdefined(position));
-    #/
+    assert(isdefined(position));
     if (!function_9ab82e4f(bot)) {
         return [];
     }
@@ -1555,9 +1511,7 @@ function private function_1891d0d2(points, obb) {
 // Checksum 0x84d9ec3d, Offset: 0x65b8
 // Size: 0x1c8
 function querypointsinsidetrigger(bot, trigger) {
-    /#
-        assert(isdefined(trigger));
-    #/
+    assert(isdefined(trigger));
     if (!function_9ab82e4f(bot)) {
         return [];
     }
@@ -1585,17 +1539,13 @@ function querypointsinsidetrigger(bot, trigger) {
 // Checksum 0xd4445dce, Offset: 0x6788
 // Size: 0x100
 function function_210f00bf(bot, trigger) {
-    /#
-        assert(isdefined(trigger));
-    #/
+    assert(isdefined(trigger));
     if (!function_9ab82e4f(bot)) {
         return [];
     }
     points = [];
     if (function_778568e2(bot)) {
-        /#
-            assert(0, "<unknown string>");
-        #/
+        assert(0, "<unknown string>");
     } else {
         obb = bot bot::function_52947b70(trigger);
         points = tacticalquery(#"stratcom_tacquery_trigger", obb);
@@ -1611,9 +1561,7 @@ function function_210f00bf(bot, trigger) {
 // Checksum 0x263dee8f, Offset: 0x6890
 // Size: 0xf4
 function function_ba05bd2(strategicbundle, side) {
-    /#
-        assert(isdefined(side));
-    #/
+    assert(isdefined(side));
     if (!isdefined(level.var_2731863e)) {
         level.var_2731863e = [];
     } else if (!isarray(level.var_2731863e)) {
@@ -1631,9 +1579,7 @@ function function_ba05bd2(strategicbundle, side) {
 // Checksum 0x50b52f2a, Offset: 0x6990
 // Size: 0x74
 function function_3837a75d(side) {
-    /#
-        assert(isdefined(side));
-    #/
+    assert(isdefined(side));
     if (isdefined(level.var_2731863e) && isdefined(level.var_2731863e[side])) {
         function_1852d313(level.var_2731863e[side], side);
     }
@@ -1644,9 +1590,7 @@ function function_3837a75d(side) {
 // Checksum 0xdc471f9f, Offset: 0x6a10
 // Size: 0xee
 function function_1852d313(strategicbundle, side) {
-    /#
-        assert(isdefined(side));
-    #/
+    assert(isdefined(side));
     if (!isdefined(level.var_aca184cd)) {
         level.var_aca184cd = [];
     } else if (!isarray(level.var_aca184cd)) {

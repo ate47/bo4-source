@@ -9,22 +9,6 @@
 class cwz_wingsuit_hud : cluielem {
 
     // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x85501c3, Offset: 0x190
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x308cae5d, Offset: 0x260
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cwz_wingsuit_hud/wz_wingsuit_hud
     // Params 1, eflags: 0x1 linked
     // Checksum 0xe7e68618, Offset: 0x230
     // Size: 0x24

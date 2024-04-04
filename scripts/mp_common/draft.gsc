@@ -168,9 +168,7 @@ function function_2c7b2ff() {
 // Size: 0x144
 function start_cooldown() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player endon(#"disconnect", #"hash_7fa9c275efb510e2");
     cooldowntime = getgametypesetting(#"hash_2b88c6ac064e9c59");
     var_e5e81b59 = cooldowntime * 1000 + gettime();
@@ -190,9 +188,7 @@ function start_cooldown() {
 // Size: 0x7c
 function clear_cooldown() {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     player notify(#"hash_7fa9c275efb510e2");
     player.var_7d68fce3 = 0;
     player clientfield::set_player_uimodel("PositionDraft.cooldown", 0);
@@ -252,9 +248,7 @@ function select_character(characterindex, forceselection, var_8a239568) {
     if (!player_role::is_valid(characterindex)) {
         return false;
     }
-    /#
-        assert(player_role::is_valid(characterindex));
-    #/
+    assert(player_role::is_valid(characterindex));
     if (!(isdefined(forceselection) && forceselection) && !can_select_character(characterindex)) {
         return false;
     }
@@ -329,9 +323,7 @@ function draft_initialize() {
 // Size: 0x64
 function function_c5394b83(starttime, seconds) {
     if (gettime() - starttime > int(seconds * 1000)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return true;
     }
     return false;
@@ -605,9 +597,7 @@ function assign_remaining_players(only_assign_player) {
         teams[player.team][teams[player.team].size] = player;
     }
     foreach (team in teams) {
-        /#
-            println("<unknown string>" + team[0].team);
-        #/
+        println("<unknown string>" + team[0].team);
         playersneedingassignment = [];
         foreach (character in validcharacters) {
             character.available = 0;
@@ -649,9 +639,7 @@ function assign_remaining_players(only_assign_player) {
                 playersneedingassignment[playersneedingassignment.size] = player;
             }
         }
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         foreach (player in playersneedingassignment) {
             categories = [];
             categorynames = getarraykeys(categorymap);
@@ -680,9 +668,7 @@ function assign_remaining_players(only_assign_player) {
                 selectedcharacter = array::random(selectedcategory);
             }
             if (validcharacters.size == 0) {
-                /#
-                    println("<unknown string>");
-                #/
+                println("<unknown string>");
                 globallogic::exit_level();
                 while (true) {
                     wait(10);
@@ -696,9 +682,7 @@ function assign_remaining_players(only_assign_player) {
             if (isdefined(oldspecialistindex) && oldspecialistindex != selectedcharacter) {
                 player.pers[#"class"] = undefined;
             }
-            /#
-                println("<unknown string>" + player.name + "<unknown string>" + selectedcharacter);
-            #/
+            println("<unknown string>" + player.name + "<unknown string>" + selectedcharacter);
             if (player select_character(selectedcharacter, 1, 1)) {
                 characters[selectedcharacter].available = 0;
             }
@@ -753,9 +737,7 @@ function draft_finalize() {
             assign_remaining_players(player);
         }
         if (player.sessionstate == "playing") {
-            /#
-                println("<unknown string>" + player.name + "<unknown string>" + player.curclass + "<unknown string>" + player getspecialistindex());
-            #/
+            println("<unknown string>" + player.name + "<unknown string>" + player.curclass + "<unknown string>" + player getspecialistindex());
             player loadout::give_loadout(player.team, player.curclass);
             player.pers[#"lastcurclass"] = player.curclass;
             player.pers[#"lastspecialistindex"] = player.curclass;
@@ -850,9 +832,7 @@ function start() {
     level thread watch_game_ended();
     level thread function_ca33311e();
     waitframe(1);
-    /#
-        println("<unknown string>");
-    #/
+    println("<unknown string>");
     set_draft_stage(1);
     set_draft_stage(3);
     if (level.var_5be52892 == 1) {
@@ -870,9 +850,7 @@ function start() {
 // Size: 0x19c
 function open() {
     player = self;
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (isdefined(level.var_edd52efc)) {
         self [[ level.var_edd52efc ]]();
         return;

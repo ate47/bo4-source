@@ -84,7 +84,6 @@ function on_player_connect() {
 function function_3f8da82c() {
     self endon(#"disconnect");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         if (s_notify.weapon == level.w_hand_gaia || s_notify.weapon == level.w_hand_gaia_upgraded) {
             level.var_a8472176 = 1;
@@ -245,7 +244,7 @@ function is_valid_target(e_target, n_range) {
     if (isdefined(e_target.marked_for_death) && e_target.marked_for_death) {
         return false;
     }
-    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 32), 0.3, 1, self))) {
+    if (distance2dsquared(self.origin, e_target.origin) <= 64 * 64 && (self zm_utility::is_player_looking_at(e_target getcentroid(), 0.3, 1, self) || self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 32), 0.3, 1, self))) {
         return true;
     }
     if (isdefined(e_target.fake_death) && e_target.fake_death) {
@@ -258,7 +257,7 @@ function is_valid_target(e_target, n_range) {
         return false;
     }
     var_c060d2c8 = !(isdefined(level.var_58f509b6) && level.var_58f509b6);
-    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + vectorscale((0, 0, 1), 28), 0.9, var_c060d2c8, self)) {
+    if (!self zm_utility::is_player_looking_at(e_target getcentroid(), 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target.origin, 0.9, var_c060d2c8, self) && !self zm_utility::is_player_looking_at(e_target getcentroid() + (0, 0, 28), 0.9, var_c060d2c8, self)) {
         return false;
     }
     return true;
@@ -362,7 +361,7 @@ function function_ce711b5c(e_projectile, ai_zombie, n_damage) {
                     if (isdefined(v_target)) {
                         v_end = v_target + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 8) {
-                            v_end = v_target + vectorscale((0, 0, 1), 8);
+                            v_end = v_target + (0, 0, 8);
                         }
                     }
                 }
@@ -548,7 +547,7 @@ function function_dd7bc108(weapon) {
         v_target = v_org + v_forward;
         v_ground = undefined;
         while (!isdefined(v_ground)) {
-            v_trace = groundtrace(v_target + vectorscale((0, 0, 1), 200), v_target + vectorscale((0, 0, -1), 2000), 0, self, 1)[#"position"];
+            v_trace = groundtrace(v_target + (0, 0, 200), v_target + (0, 0, -2000), 0, self, 1)[#"position"];
             v_trace = v_trace + (randomintrange(-10, 10), randomintrange(-10, 10), 0);
             v_on_navmesh = zm_utility::function_b0eeaada(v_trace);
             if (isdefined(v_on_navmesh)) {

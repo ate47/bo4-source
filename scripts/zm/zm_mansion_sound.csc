@@ -54,29 +54,25 @@ function soundloopthink() {
         self.script_sound = "zmb_spawn_walla";
     }
     notifyname = "";
-    /#
-        assert(isdefined(notifyname));
-    #/
+    assert(isdefined(notifyname));
     if (isdefined(self.script_string)) {
         notifyname = self.script_string;
     }
-    /#
-        assert(isdefined(notifyname));
-    #/
+    assert(isdefined(notifyname));
     started = 1;
     if (isdefined(self.script_int)) {
         started = self.script_int != 0;
     }
     if (started) {
-        soundloopemitter(self.script_sound, self.origin + vectorscale((0, 0, 1), 60));
+        soundloopemitter(self.script_sound, self.origin + (0, 0, 60));
     }
     if (notifyname != "") {
         for (;;) {
             level waittill(notifyname);
             if (started) {
-                soundstoploopemitter(self.script_sound, self.origin + vectorscale((0, 0, 1), 60));
+                soundstoploopemitter(self.script_sound, self.origin + (0, 0, 60));
             } else {
-                soundloopemitter(self.script_sound, self.origin + vectorscale((0, 0, 1), 60));
+                soundloopemitter(self.script_sound, self.origin + (0, 0, 60));
             }
             started = !started;
         }

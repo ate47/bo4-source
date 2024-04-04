@@ -99,12 +99,8 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
 // Checksum 0xa9e5484e, Offset: 0xc58
 // Size: 0x39e
 function private function_c0e398c4(bots, var_26b45a5e, bbkey, claimed = undefined) {
-    /#
-        assert(isarray(bots));
-    #/
-    /#
-        assert(isarray(var_26b45a5e));
-    #/
+    assert(isarray(bots));
+    assert(isarray(var_26b45a5e));
     var_f8d389a2 = [];
     if (bots.size <= 0 || var_26b45a5e.size <= 0) {
         return var_f8d389a2;
@@ -383,9 +379,7 @@ function private function_7e03c94a(commander) {
 // Checksum 0xbc582afe, Offset: 0x1eb0
 // Size: 0x9a
 function private function_cb29a211(commander, squad, constants) {
-    /#
-        assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isdefined(constants[#"maxage"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     if (gettime() > squad.createtime + constants[#"maxage"]) {
         return false;
     }
@@ -492,9 +486,7 @@ function private function_eb0a4e86(commander, squad, constants) {
 function private function_2f04f764(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
     commanderteam = planner::getblackboardattribute(planner, #"team");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     controlzones = planner::getblackboardattribute(planner, "mp_pathable_controlZones", squadindex);
     foreach (controlzone in controlzones) {
         zone = controlzone[#"controlzone"][#"__unsafe__"][#"controlzone"];
@@ -514,9 +506,7 @@ function private function_2f04f764(planner, constants) {
 // Size: 0x98
 function private function_34c0ebaf(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     controlzones = planner::getblackboardattribute(planner, "mp_pathable_controlZones", squadindex);
     return controlzones.size > 0;
 }
@@ -527,9 +517,7 @@ function private function_34c0ebaf(planner, constants) {
 // Size: 0x98
 function private function_68a32d83(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     domflags = planner::getblackboardattribute(planner, "mp_pathable_domFlags", squadindex);
     return domflags.size > 0;
 }
@@ -540,9 +528,7 @@ function private function_68a32d83(planner, constants) {
 // Size: 0x98
 function private function_380f4233(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     kothzone = planner::getblackboardattribute(planner, "mp_pathable_kothZone", squadindex);
     return kothzone.size > 0;
 }
@@ -553,9 +539,7 @@ function private function_380f4233(planner, constants) {
 // Size: 0xa2
 function private function_4792217e(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bomb = planner::getblackboardattribute(planner, "mp_pathable_sdBomb", squadindex);
     return isdefined(bomb) && bomb.size > 0;
 }
@@ -566,9 +550,7 @@ function private function_4792217e(planner, constants) {
 // Size: 0xa2
 function private function_97e7d0d8(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     zones = planner::getblackboardattribute(planner, "mp_pathable_sdBombZones", squadindex);
     return isdefined(zones) && zones.size > 0;
 }
@@ -579,9 +561,7 @@ function private function_97e7d0d8(planner, constants) {
 // Size: 0x138
 function private function_493ead90(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     for (i = 0; i < bots.size; i++) {
         bot = bots[0][#"__unsafe__"][#"bot"];
@@ -598,9 +578,7 @@ function private function_493ead90(planner, constants) {
 // Size: 0xa2
 function private function_cd5b7cc9(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     var_a13843cf = planner::getblackboardattribute(planner, "mp_pathable_sdDefuseObj", squadindex);
     return isdefined(var_a13843cf) && var_a13843cf.size > 0;
 }
@@ -619,9 +597,7 @@ function private function_efa74ce4(planner, constants) {
 // Size: 0x112
 function private function_b35625c2(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     controlzones = planner::getblackboardattribute(planner, "mp_controlZones");
     var_72d5b8ac = function_c0e398c4(bots, controlzones, "controlZone");
@@ -636,9 +612,7 @@ function private function_b35625c2(planner, constants) {
 function private function_a207b2e4(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
     commanderteam = planner::getblackboardattribute(planner, #"team");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     var_72d5b8ac = planner::getblackboardattribute(planner, "mp_pathable_controlZones", squadindex);
     if (!isarray(var_72d5b8ac) || var_72d5b8ac.size <= 0) {
         return spawnstruct();
@@ -684,9 +658,7 @@ function private function_a207b2e4(planner, constants) {
 // Size: 0x4fa
 function private function_9d8a9994(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     var_72d5b8ac = planner::getblackboardattribute(planner, "mp_pathable_controlZones", squadindex);
     if (!isarray(var_72d5b8ac) || var_72d5b8ac.size <= 0) {
         return spawnstruct();
@@ -744,9 +716,7 @@ function private function_9d8a9994(planner, constants) {
 // Size: 0x112
 function private function_913bffb1(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     domflags = planner::getblackboardattribute(planner, "mp_domFlags");
     pathabledomflags = function_c0e398c4(bots, domflags, "domFlag");
@@ -760,9 +730,7 @@ function private function_913bffb1(planner, constants) {
 // Size: 0x39a
 function private function_edf25221(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathabledomflags = planner::getblackboardattribute(planner, "mp_pathable_domFlags", squadindex);
     if (!isarray(pathabledomflags) || pathabledomflags.size <= 0) {
         return spawnstruct();
@@ -817,9 +785,7 @@ function private function_edf25221(planner, constants) {
 // Size: 0x112
 function private function_90af2101(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     kothzone = planner::getblackboardattribute(planner, "mp_kothZone");
     pathablekothzone = function_c0e398c4(bots, kothzone, "kothZone");
@@ -833,9 +799,7 @@ function private function_90af2101(planner, constants) {
 // Size: 0x122
 function private function_bca7d900(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathablekothzone = planner::getblackboardattribute(planner, "mp_pathable_kothZone", squadindex);
     if (!isarray(pathablekothzone) || pathablekothzone.size <= 0) {
         return spawnstruct();
@@ -850,9 +814,7 @@ function private function_bca7d900(planner, constants) {
 // Size: 0x192
 function private function_1cce4bb6(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     sdbomb = planner::getblackboardattribute(planner, "mp_sdBomb");
     if (!isdefined(sdbomb)) {
@@ -874,9 +836,7 @@ function private function_1cce4bb6(planner, constants) {
 // Size: 0x122
 function private function_f192ef84(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathablesdbomb = planner::getblackboardattribute(planner, "mp_pathable_sdBomb", squadindex);
     if (!isarray(pathablesdbomb) || pathablesdbomb.size <= 0) {
         return spawnstruct();
@@ -891,9 +851,7 @@ function private function_f192ef84(planner, constants) {
 // Size: 0x12a
 function private function_7a576970(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     bombzones = planner::getblackboardattribute(planner, "mp_sdBombZones");
     if (isdefined(bots) && isdefined(bombzones)) {
@@ -909,9 +867,7 @@ function private function_7a576970(planner, constants) {
 // Size: 0x242
 function private function_53600d78(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     var_154e2210 = planner::getblackboardattribute(planner, "mp_pathable_sdBombZones", squadindex);
     if (!isarray(var_154e2210) || var_154e2210.size <= 0) {
@@ -940,9 +896,7 @@ function private function_53600d78(planner, constants) {
 // Size: 0x132
 function private function_7a9a7a24(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     defuseobj = planner::getblackboardattribute(planner, "mp_sdDefuseObj");
     if (!isdefined(defuseobj)) {
@@ -959,9 +913,7 @@ function private function_7a9a7a24(planner, constants) {
 // Size: 0x14a
 function private function_b032f16b(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     bots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     var_a9e623b5 = planner::getblackboardattribute(planner, "mp_pathable_sdDefuseObj", squadindex);
     if (!isarray(var_a9e623b5) || var_a9e623b5.size <= 0) {
@@ -977,9 +929,7 @@ function private function_b032f16b(planner, constants) {
 // Size: 0xd2
 function private function_9c7e3773(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     numlanes = region_utility::function_9fe18733();
     lanenum = squadindex % numlanes;
     planner::setblackboardattribute(planner, "mp_laneNum", array(lanenum), squadindex);

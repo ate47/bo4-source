@@ -50,7 +50,6 @@ function activation() {
     self thread bgb::run_timer(15);
     self playsound(#"zmb_bgb_nysm_start");
     self clientfield::set_to_player("" + #"hash_18be2b4b3936ee1f", 1);
-    ret = undefined;
     ret = self waittilltimeout(14.5, #"bgb_about_to_take_on_bled_out", #"end_game", #"bgb_update", #"disconnect");
     self playsound(#"zmb_bgb_nysm_end");
     if ("timeout" != ret._notify) {

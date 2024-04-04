@@ -793,7 +793,7 @@ function function_a6b6f492() {
 // Size: 0xcc
 function function_dd64960c(a_ents) {
     if (isdefined(a_ents[#"prop 1"])) {
-        var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + vectorscale((0, 0, -1), 8);
+        var_7425591a = a_ents[#"prop 1"] gettagorigin("tarp_06_jnt") + (0, 0, -8);
         a_ents[#"prop 1"] waittill(#"physics_pulse", #"death");
         physicsexplosionsphere(var_7425591a, 1024, 1, 1);
     }

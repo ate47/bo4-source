@@ -73,9 +73,7 @@ function function_56813755() {
 // Checksum 0xd0cb1186, Offset: 0x380
 // Size: 0x62
 function private function_2772f623(id) {
-    /#
-        assert(isdefined(level.grapple_ids[id]) && level.grapple_ids[id] === 1);
-    #/
+    assert(isdefined(level.grapple_ids[id]) && level.grapple_ids[id] === 1);
     level.grapple_ids[id] = 0;
 }
 
@@ -84,9 +82,7 @@ function private function_2772f623(id) {
 // Checksum 0xc0cf91a7, Offset: 0x3f0
 // Size: 0x3ac
 function start_grapple(prone_2_run_roll, e_grapplee, n_type, n_speed = 1800) {
-    /#
-        assert(n_type == 2);
-    #/
+    assert(n_type == 2);
     e_source = create_mover(prone_2_run_roll function_f21c3519(), prone_2_run_roll.angles);
     e_beamend = create_mover(prone_2_run_roll function_f21c3519(), prone_2_run_roll.angles * -1);
     thread function_30a5f5c1(e_source, e_beamend);

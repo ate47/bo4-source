@@ -124,7 +124,7 @@ function private _debugsquad(squad) {
                         }
                         if (isdefined(targetpos)) {
                             recordsphere(targetpos, 20, (1, 0, 1));
-                            record3dtext("<unknown string>" + target[#"type"], targetpos + vectorscale((0, 0, 1), 21), (1, 0, 1), "<unknown string>", textscale);
+                            record3dtext("<unknown string>" + target[#"type"], targetpos + (0, 0, 21), (1, 0, 1), "<unknown string>", textscale);
                             if (isdefined(targettrigger)) {
                                 function_f301de44(targettrigger, (1, 0, 1), "<unknown string>");
                                 recordline(targetpos, targettrigger.origin, (1, 0, 1), "<unknown string>");
@@ -197,15 +197,9 @@ function private function_f301de44(trigger, color, channel) {
 // Checksum 0x283b6616, Offset: 0x12a0
 // Size: 0x2ce
 function private _executeplan(squad) {
-    /#
-        assert(isdefined(squad));
-    #/
-    /#
-        assert(isdefined(squad.plan), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(squad.plan.size), "<unknown string>");
-    #/
+    assert(isdefined(squad));
+    assert(isdefined(squad.plan), "<unknown string>");
+    assert(isdefined(squad.plan.size), "<unknown string>");
     if (!isdefined(squad.currentplanindex)) {
         squad.currentplanindex = 0;
     }
@@ -273,12 +267,8 @@ function private _plan(squad) {
 // Checksum 0xb1c915a3, Offset: 0x16e0
 // Size: 0xde
 function private _strategize(squad) {
-    /#
-        assert(isdefined(squad));
-    #/
-    /#
-        assert(isdefined(squad.planner));
-    #/
+    assert(isdefined(squad));
+    assert(isdefined(squad.planner));
     squad.planning = 1;
     [[ level.strategic_command_throttle ]]->waitinqueue(squad);
     squad.lastupdatetime = gettime();
@@ -297,9 +287,7 @@ function private _strategize(squad) {
 // Checksum 0xd376ca49, Offset: 0x17c8
 // Size: 0xe6
 function private _updateplanner(squad) {
-    /#
-        assert(isdefined(squad));
-    #/
+    assert(isdefined(squad));
     while (isdefined(squad) && !squad.shutdown) {
         [[ level.strategic_command_throttle ]]->waitinqueue(squad);
         time = gettime();
@@ -318,12 +306,8 @@ function private _updateplanner(squad) {
 // Checksum 0x53a286d3, Offset: 0x18b8
 // Size: 0x1f0
 function createsquad(blackboard, planner, updaterate = float(function_60d95f53()) / 1000 * 100, maxplannerframetime = 2) {
-    /#
-        assert(isstruct(blackboard));
-    #/
-    /#
-        assert(isstruct(planner));
-    #/
+    assert(isstruct(blackboard));
+    assert(isstruct(planner));
     squad = spawnstruct();
     squad.actionstatus = undefined;
     squad.blackboard = blackboard;

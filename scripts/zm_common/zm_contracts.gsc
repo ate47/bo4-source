@@ -310,7 +310,6 @@ function function_677a89c8() {
     level endon(#"hash_786860db94bcc0f3");
     self endon(#"disconnect");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         w_current = s_notify.weapon;
         if (zm_weapons::is_weapon_upgraded(w_current)) {

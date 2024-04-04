@@ -186,9 +186,7 @@ function spawn_archetype(str_archetype) {
         ai = namespace_df88241c::spawn_nova_crawler();
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
     return ai;

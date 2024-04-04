@@ -247,7 +247,7 @@ function ledge_traversal(endpos, ledgetop, normal) {
             record3dtext("<unknown string>", self.origin, (1, 1, 1), "<unknown string>", undefined, 0.5);
         }
     #/
-    trace = bullettrace(ledgetop, ledgetop - vectorscale((0, 0, 1), 1024), 0, self);
+    trace = bullettrace(ledgetop, ledgetop - (0, 0, 1024), 0, self);
     var_82c7381e = trace[#"position"];
     self botsetmovepoint(endpos);
     for (var_ccaaa590 = vectordot(self.origin - var_82c7381e, normal); var_ccaaa590 > 20; var_ccaaa590 = vectordot(self.origin - var_82c7381e, normal)) {

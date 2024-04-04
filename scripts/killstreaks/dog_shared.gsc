@@ -65,9 +65,7 @@ function deployed_off(slot, weapon) {
 // Checksum 0x1623f6c9, Offset: 0x480
 // Size: 0x268
 function spawned(type) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     playsoundatposition(#"hash_7245f25f5953631c", self.origin);
     player = self;
     bundle = level.killstreaks[type].script_bundle;
@@ -134,9 +132,7 @@ function function_4670789f(tacpoint) {
 // Checksum 0xebe54478, Offset: 0x870
 // Size: 0x10a
 function private function_9cb166cd(tacpoints) {
-    /#
-        assert(isdefined(tacpoints) && tacpoints.size);
-    #/
+    assert(isdefined(tacpoints) && tacpoints.size);
     filteredpoints = [];
     foreach (tacpoint in tacpoints) {
         if (!function_4670789f(tacpoint) && !function_a38d2d73(tacpoint) && ai_escort::function_d15dd929(tacpoint.origin)) {

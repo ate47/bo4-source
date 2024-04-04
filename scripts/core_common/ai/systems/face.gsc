@@ -30,9 +30,7 @@ function saygenericdialogue(typestring) {
         importance = 0.4;
         break;
     default:
-        /#
-            println("<unknown string>" + typestring);
-        #/
+        println("<unknown string>" + typestring);
         importance = 0.3;
         break;
     }
@@ -48,9 +46,7 @@ function saygenericdialoguewithimportance(typestring, importance) {
     if (isdefined(self.dds_characterid)) {
         soundalias = soundalias + self.dds_characterid;
     } else {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     soundalias = soundalias + "_" + typestring;
@@ -135,17 +131,13 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
                 if (self.a.facialsoundalias == str_script_alias) {
                     return;
                 }
-                /#
-                    println("<unknown string>" + self.a.facialsoundalias + "<unknown string>" + str_script_alias);
-                #/
+                println("<unknown string>" + self.a.facialsoundalias + "<unknown string>" + str_script_alias);
                 while (self.istalking) {
                     self waittill(#"done speaking");
                 }
             }
         } else {
-            /#
-                println("<unknown string>" + self.a.facialsoundalias + "<unknown string>" + str_script_alias);
-            #/
+            println("<unknown string>" + self.a.facialsoundalias + "<unknown string>" + str_script_alias);
             self stopsound(self.a.facialsoundalias);
             self notify(#"cancel speaking");
             while (self.istalking) {
@@ -153,21 +145,11 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
             }
         }
     }
-    /#
-        assert(self.a.facialsounddone);
-    #/
-    /#
-        assert(self.a.facialsoundalias == undefined);
-    #/
-    /#
-        assert(self.a.facialsoundnotify == undefined);
-    #/
-    /#
-        assert(self.a.currentdialogimportance == undefined);
-    #/
-    /#
-        assert(!self.istalking);
-    #/
+    assert(self.a.facialsounddone);
+    assert(self.a.facialsoundalias == undefined);
+    assert(self.a.facialsoundnotify == undefined);
+    assert(self.a.currentdialogimportance == undefined);
+    assert(!self.istalking);
     self notify(#"bc_interrupt");
     self.istalking = 1;
     self.a.facialsounddone = 0;

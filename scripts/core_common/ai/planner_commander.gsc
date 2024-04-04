@@ -79,12 +79,8 @@ function private _cloneblackboard(commander) {
 function private function_b1c3f0bd(commander, &blackboard) {
     pixbeginevent(#"commanderconstructtargetlist");
     aiprofile_beginentry("commanderConstructTargetList");
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(isarray(blackboard));
-    #/
+    assert(isstruct(commander));
+    assert(isarray(blackboard));
     possiblesquads = array();
     idlebots = blackboard[#"idle_doppelbots"];
     foreach (idlebot in idlebots) {
@@ -104,12 +100,8 @@ function private function_b1c3f0bd(commander, &blackboard) {
 function private function_12b9fafb(commander, &blackboard) {
     pixbeginevent(#"commanderconstructtargetlist");
     aiprofile_beginentry("commanderConstructTargetList");
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(isarray(blackboard));
-    #/
+    assert(isstruct(commander));
+    assert(isarray(blackboard));
     targets = array();
     priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
     foreach (priority in priorities) {
@@ -360,24 +352,18 @@ function private _disbandsquads(commander) {
 // Checksum 0x9b43cacd, Offset: 0x1ae8
 // Size: 0x332
 function private _evaluatefitness(commander, squad) {
-    /#
-        assert(isstruct(squad));
-    #/
+    assert(isstruct(squad));
     if (commander.squadevaluators.size == 0) {
         return 0;
     }
     scores = [];
     foreach (evaluatorentry in commander.squadevaluators) {
-        /#
-            assert(isarray(evaluatorentry));
-        #/
+        assert(isarray(evaluatorentry));
         pixbeginevent(evaluatorentry[0]);
         aiprofile_beginentry(evaluatorentry[0]);
         evaluatorfunc = plannercommanderutility::getutilityapifunction(evaluatorentry[0]);
         score = [[ evaluatorfunc ]](commander, squad, evaluatorentry[1]);
-        /#
-            assert(score >= 0 && score <= 1, "<unknown string>" + evaluatorentry[0] + "<unknown string>" + 0 + "<unknown string>" + 1 + "<unknown string>");
-        #/
+        assert(score >= 0 && score <= 1, "<unknown string>" + evaluatorentry[0] + "<unknown string>" + 0 + "<unknown string>" + 1 + "<unknown string>");
         scores[evaluatorentry[0]] = score;
         aiprofile_endentry();
         pixendevent();
@@ -487,9 +473,7 @@ function private _initializedaemonfunctions(functype) {
 // Checksum 0x7ceb3667, Offset: 0x27b0
 // Size: 0x64
 function private _initializedaemons(commander) {
-    /#
-        assert(!isdefined(commander.daemons), "<unknown string>");
-    #/
+    assert(!isdefined(commander.daemons), "<unknown string>");
     commander.daemons = [];
     commander thread _updateblackboarddaemons(commander);
 }
@@ -602,12 +586,8 @@ function private _plan(commander, &blackboard) {
 function private _reclaimescortparameters(commander, &blackboard) {
     pixbeginevent(#"commanderreclaimescortparameters");
     aiprofile_beginentry("commanderReclaimEscortParameters");
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(isarray(blackboard));
-    #/
+    assert(isstruct(commander));
+    assert(isarray(blackboard));
     players = blackboard[#"players"];
     for (index = 0; index < commander.squads.size; index++) {
         escorts = plannersquadutility::getblackboardattribute(commander.squads[index], "escorts");
@@ -659,12 +639,8 @@ function private _reclaimescortparameters(commander, &blackboard) {
 function private function_ac4ff936(commander, &blackboard) {
     pixbeginevent(#"commanderreclaimtargets");
     aiprofile_beginentry("commanderReclaimTargets");
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(isarray(blackboard));
-    #/
+    assert(isstruct(commander));
+    assert(isarray(blackboard));
     targets = blackboard[#"targets"];
     for (index = 0; index < commander.squads.size; index++) {
         gameobjects = plannersquadutility::getblackboardattribute(commander.squads[index], "gameobjects");
@@ -675,9 +651,7 @@ function private function_ac4ff936(commander, &blackboard) {
                     gameobject = gameobjectentry[#"__unsafe__"][#"object"];
                     if (isdefined(gameobject)) {
                         priority = strategy.("doppelbotspriority");
-                        /#
-                            assert(isstring(priority));
-                        #/
+                        assert(isstring(priority));
                         if (!isstring(priority)) {
                             continue;
                         }
@@ -853,12 +827,8 @@ function private function_d8b8afde(commander, &blackboard) {
 // Checksum 0x85170689, Offset: 0x4400
 // Size: 0x224
 function private _strategize(commander) {
-    /#
-        assert(isdefined(commander));
-    #/
-    /#
-        assert(isdefined(commander.planner));
-    #/
+    assert(isdefined(commander));
+    assert(isdefined(commander.planner));
     [[ level.strategic_command_throttle ]]->waitinqueue(commander);
     commander.cancel = 0;
     commander.lastupdatetime = gettime();
@@ -899,12 +869,8 @@ function private _strategize(commander) {
 // Checksum 0x1702e238, Offset: 0x4630
 // Size: 0x1f4
 function private _updateblackboarddaemons(commander) {
-    /#
-        assert(isdefined(commander));
-    #/
-    /#
-        assert(isarray(commander.daemons));
-    #/
+    assert(isdefined(commander));
+    assert(isarray(commander.daemons));
     var_9ff7cf36 = spawnstruct();
     while (isdefined(commander) && !commander.shutdown) {
         if (commander.pause) {
@@ -932,9 +898,7 @@ function private _updateblackboarddaemons(commander) {
 // Checksum 0xb33042d3, Offset: 0x4830
 // Size: 0x10c
 function private _updateplanner(commander) {
-    /#
-        assert(isdefined(commander));
-    #/
+    assert(isdefined(commander));
     while (isdefined(commander) && !commander.shutdown) {
         if (commander.pause) {
             _disbandallsquads(commander);
@@ -960,12 +924,8 @@ function private _updateplanner(commander) {
 // Checksum 0x91eaf60e, Offset: 0x4948
 // Size: 0x14e
 function adddaemon(commander, daemonname, updaterate = float(function_60d95f53()) / 1000 * 10) {
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(!isdefined(commander.daemons[daemonname]), "<unknown string>" + daemonname + "<unknown string>");
-    #/
+    assert(isstruct(commander));
+    assert(!isdefined(commander.daemons[daemonname]), "<unknown string>" + daemonname + "<unknown string>");
     daemonjob = spawnstruct();
     daemonjob.func = getdaemonapifunction(daemonname);
     daemonjob.daemonname = daemonname;
@@ -979,12 +939,8 @@ function adddaemon(commander, daemonname, updaterate = float(function_60d95f53()
 // Checksum 0x3b35a79, Offset: 0x4aa0
 // Size: 0xc6
 function addsquadevaluator(commander, evaluatorname, constants = []) {
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(isstring(evaluatorname) || ishash(evaluatorname));
-    #/
+    assert(isstruct(commander));
+    assert(isstring(evaluatorname) || ishash(evaluatorname));
     commander.squadevaluators[commander.squadevaluators.size] = array(evaluatorname, constants);
 }
 
@@ -993,18 +949,10 @@ function addsquadevaluator(commander, evaluatorname, constants = []) {
 // Checksum 0x5876719f, Offset: 0x4b70
 // Size: 0x436
 function createcommander(team, commanderplanner, squadplanner, commanderupdaterate = float(function_60d95f53()) / 1000 * 40, squadupdaterate = float(function_60d95f53()) / 1000 * 100, commandermaxframetime = 2, squadmaxplannerframetime = 2) {
-    /#
-        assert(isstruct(commanderplanner));
-    #/
-    /#
-        assert(isstruct(squadplanner));
-    #/
-    /#
-        assert(commandermaxframetime > 0);
-    #/
-    /#
-        assert(squadmaxplannerframetime > 0);
-    #/
+    assert(isstruct(commanderplanner));
+    assert(isstruct(squadplanner));
+    assert(commandermaxframetime > 0);
+    assert(squadmaxplannerframetime > 0);
     commander = spawnstruct();
     ai::createinterfaceforentity(commander);
     commander.archetype = hash("commander");
@@ -1052,21 +1000,11 @@ function createcommander(team, commanderplanner, squadplanner, commanderupdatera
 // Checksum 0x30cdea09, Offset: 0x4fb0
 // Size: 0x1ec
 function initializeenemythrottle(commander, enemycommander, upperbound, lowerbound, totalgameobjects = undefined, totalgameobjectsenemy = undefined) {
-    /#
-        assert(isstruct(commander));
-    #/
-    /#
-        assert(isstruct(enemycommander));
-    #/
-    /#
-        assert(upperbound >= -1 && upperbound <= 1);
-    #/
-    /#
-        assert(lowerbound >= -1 && lowerbound <= 1);
-    #/
-    /#
-        assert(lowerbound <= upperbound);
-    #/
+    assert(isstruct(commander));
+    assert(isstruct(enemycommander));
+    assert(upperbound >= -1 && upperbound <= 1);
+    assert(lowerbound >= -1 && lowerbound <= 1);
+    assert(lowerbound <= upperbound);
     blackboard::setstructblackboardattribute(commander, #"allow_progress_throttling", 1);
     blackboard::setstructblackboardattribute(commander, #"throttling_enemy_commander", enemycommander);
     blackboard::setstructblackboardattribute(commander, #"throttling_lower_bound", lowerbound);
@@ -1080,12 +1018,8 @@ function initializeenemythrottle(commander, enemycommander, upperbound, lowerbou
 // Checksum 0xa5b50f0b, Offset: 0x51a8
 // Size: 0xce
 function getdaemonapifunction(functionname) {
-    /#
-        assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
-    #/
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
+    assert(isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
     return level._daemonscriptfunctions[#"api"][functionname];
 }
 
@@ -1094,12 +1028,8 @@ function getdaemonapifunction(functionname) {
 // Checksum 0xcfe75193, Offset: 0x5280
 // Size: 0xce
 function getutilityapifunction(functionname) {
-    /#
-        assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    #/
-    /#
-        assert(isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
-    #/
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
+    assert(isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
     return level._squadutilityscriptfunctions[#"api"][functionname];
 }
 
@@ -1108,9 +1038,7 @@ function getutilityapifunction(functionname) {
 // Checksum 0xb726b0b3, Offset: 0x5358
 // Size: 0xa2
 function pausecommander(commander) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     if (!commander.pause) {
         /#
             team = blackboard::getstructblackboardattribute(commander, #"team");
@@ -1125,16 +1053,10 @@ function pausecommander(commander) {
 // Checksum 0x5cd67b39, Offset: 0x5408
 // Size: 0x134
 function registerdaemonapi(functionname, functionptr) {
-    /#
-        assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    #/
-    /#
-        assert(isfunctionptr(functionptr), "<unknown string>");
-    #/
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
+    assert(isfunctionptr(functionptr), "<unknown string>");
     plannercommander::_initializedaemonfunctions(#"api");
-    /#
-        assert(!isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
-    #/
+    assert(!isdefined(level._daemonscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
     level._daemonscriptfunctions[#"api"][functionname] = functionptr;
 }
 
@@ -1143,16 +1065,10 @@ function registerdaemonapi(functionname, functionptr) {
 // Checksum 0x69400c5d, Offset: 0x5548
 // Size: 0x134
 function registerutilityapi(functionname, functionptr) {
-    /#
-        assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
-    #/
-    /#
-        assert(isfunctionptr(functionptr), "<unknown string>");
-    #/
+    assert((isstring(functionname) || ishash(functionname)) && functionname != "<unknown string>", "<unknown string>");
+    assert(isfunctionptr(functionptr), "<unknown string>");
     plannercommander::_initializeutilityfunctions(#"api");
-    /#
-        assert(!isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
-    #/
+    assert(!isdefined(level._squadutilityscriptfunctions[#"api"][functionname]), "<unknown string>" + functionname + "<unknown string>");
     level._squadutilityscriptfunctions[#"api"][functionname] = functionptr;
 }
 
@@ -1161,9 +1077,7 @@ function registerutilityapi(functionname, functionptr) {
 // Checksum 0x22a27897, Offset: 0x5688
 // Size: 0xb2
 function function_2974807c(commander) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     if (commander.pause) {
         /#
             team = blackboard::getstructblackboardattribute(commander, #"team");
@@ -1178,9 +1092,7 @@ function function_2974807c(commander) {
 // Checksum 0x7b447b58, Offset: 0x5748
 // Size: 0x6c
 function setforcegoalattribute(commander, attribute, oldvalue, value) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     blackboard::setstructblackboardattribute(commander, #"force_goal", value);
 }
 
@@ -1189,9 +1101,7 @@ function setforcegoalattribute(commander, attribute, oldvalue, value) {
 // Checksum 0xd3d38641, Offset: 0x57c0
 // Size: 0x6c
 function setgoldenpathattribute(commander, attribute, oldvalue, value) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     blackboard::setstructblackboardattribute(commander, #"allow_golden_path", value);
 }
 
@@ -1200,9 +1110,7 @@ function setgoldenpathattribute(commander, attribute, oldvalue, value) {
 // Checksum 0xa50b4542, Offset: 0x5838
 // Size: 0x5c
 function shutdowncommander(commander) {
-    /#
-        assert(isstruct(commander));
-    #/
+    assert(isstruct(commander));
     commander.shutdown = 1;
     planner::cancel(commander.planner);
 }

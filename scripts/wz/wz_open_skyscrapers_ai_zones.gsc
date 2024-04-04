@@ -392,8 +392,7 @@ function function_36cc50(var_8667e69, maxcount, var_8a14a619) {
 function function_f910ed8a() {
     zombie_count = max(level.warzonezombiesmaxcount, 1);
     if (isdedicated()) {
-        iprintlnbold("Zombie count is " + zombie_count + "
-");
+        iprintlnbold("Zombie count is " + zombie_count + "\n");
     }
     var_c3bb4e09 = zombie_count;
     var_f1fbce84 = zombie_count;

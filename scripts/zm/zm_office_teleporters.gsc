@@ -221,7 +221,6 @@ function player_teleporting() {
     self endon(#"death");
     user = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         user = waitresult.activator;
         player_used = 0;
@@ -549,7 +548,6 @@ function enable_zone_portals_init() {
 // Checksum 0x709b64f2, Offset: 0x2780
 // Size: 0x9c
 function enable_zone_portals() {
-    waitresult = undefined;
     waitresult = self waittill(#"trigger");
     user = waitresult.activator;
     if ((laststand::player_is_in_laststand() || zm_utility::is_player_valid(user)) && isdefined(self.script_noteworthy)) {
@@ -834,7 +832,6 @@ function portal_think() {
     self endon(#"death");
     s_portal = self.stub.related_parent;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_user = waitresult.activator;
         if (array::contains(s_portal.a_e_users, e_user) || isdefined(self.stub.related_parent.var_cd2f1fed) && self.stub.related_parent.var_cd2f1fed) {

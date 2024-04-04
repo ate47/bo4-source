@@ -366,12 +366,12 @@ function createqrdrone(lifeid, owner, streakname, origin, angles, killstreak_id)
     qrdrone thread deleteonkillbrush(owner);
     target_set(qrdrone, (0, 0, 0));
     qrdrone.numflares = 0;
-    qrdrone.flareoffset = vectorscale((0, 0, -1), 100);
+    qrdrone.flareoffset = (0, 0, -100);
     qrdrone thread heatseekingmissile::missiletarget_lockonmonitor(self, "end_remote");
     qrdrone thread heatseekingmissile::missiletarget_proximitydetonateincomingmissile("crashing");
     qrdrone.emp_fx = spawn("script_model", self.origin);
     qrdrone.emp_fx setmodel(#"tag_origin");
-    qrdrone.emp_fx linkto(self, "tag_origin", vectorscale((0, 0, -1), 20) + anglestoforward(self.angles) * 6);
+    qrdrone.emp_fx linkto(self, "tag_origin", (0, 0, -20) + anglestoforward(self.angles) * 6);
     qrdrone influencers::create_entity_enemy_influencer("small_vehicle", qrdrone.team);
     qrdrone influencers::create_entity_enemy_influencer("qrdrone_cylinder", qrdrone.team);
     return qrdrone;
@@ -581,7 +581,7 @@ function deleteonkillbrush(player) {
             }
         }
         if (level.script == "mp_castaway") {
-            origin = self.origin - vectorscale((0, 0, 1), 12);
+            origin = self.origin - (0, 0, 12);
             water = getwaterheight(origin);
             if (water - origin[2] > 0) {
                 self touchedkillbrush();
@@ -654,7 +654,6 @@ function qrdrone_damagewatcher() {
     low_health = 0;
     damage_taken = 0;
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;
@@ -761,13 +760,13 @@ function qrdrone_crash_movement(attacker, hitdir) {
     self notify(#"crashing");
     self takeplayercontrol();
     self setmaxpitchroll(90, 180);
-    self setphysacceleration(vectorscale((0, 0, -1), 800));
+    self setphysacceleration((0, 0, -800));
     side_dir = vectorcross(hitdir, (0, 0, 1));
     side_dir_mag = randomfloatrange(-100, 100);
     side_dir_mag = side_dir_mag + math::sign(side_dir_mag) * 80;
     side_dir = side_dir * side_dir_mag;
     velocity = self getvelocity();
-    self setvehvelocity(velocity + vectorscale((0, 0, 1), 100) + vectornormalize(side_dir));
+    self setvehvelocity(velocity + (0, 0, 100) + vectornormalize(side_dir));
     ang_vel = self getangularvelocity();
     ang_vel = (ang_vel[0] * 0.3, ang_vel[1], ang_vel[2] * 0.3);
     yaw_vel = randomfloatrange(0, 210) * math::sign(ang_vel[1]);
@@ -857,7 +856,6 @@ function qrdrone_crash_accel() {
 function qrdrone_collision() {
     self endon(#"crash_done", #"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"veh_collision");
         velocity = waitresult.velocity;
         normal = waitresult.normal;
@@ -1232,7 +1230,7 @@ function qrdrone_blowup(attacker, weapon) {
     if (!isdefined(attacker)) {
         attacker = self.owner;
     }
-    origin = self.origin + vectorscale((0, 0, 1), 10);
+    origin = self.origin + (0, 0, 10);
     radius = 256;
     min_damage = 10;
     max_damage = 35;

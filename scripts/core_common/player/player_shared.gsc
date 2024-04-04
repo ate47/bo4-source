@@ -139,7 +139,7 @@ function last_valid_position(update_rate) {
                     continue;
                 }
             }
-            ground_pos = groundtrace(self.origin + vectorscale((0, 0, 1), 8), self.origin + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+            ground_pos = groundtrace(self.origin + (0, 0, 8), self.origin + (0, 0, -100000), 0, self)[#"position"];
             if (!isdefined(ground_pos)) {
                 wait(update_rate);
                 continue;
@@ -158,8 +158,8 @@ function last_valid_position(update_rate) {
             position = getclosestpointonnavmesh(self.origin, 100, playerradius);
             if (isdefined(position)) {
                 if (isdefined(level.var_2386648b) && level.var_2386648b) {
-                    player_position = self.origin + vectorscale((0, 0, 1), 20);
-                    var_f5df51f2 = position + vectorscale((0, 0, 1), 20);
+                    player_position = self.origin + (0, 0, 20);
+                    var_f5df51f2 = position + (0, 0, 20);
                     player_vehicle = undefined;
                     if (isvehicle(self getgroundent())) {
                         player_vehicle = self getgroundent();
@@ -726,9 +726,7 @@ function figure_out_attacker(eattacker) {
             eattacker = eattacker.owner;
         }
         if (isdefined(eattacker.var_97f1b32a) && eattacker.var_97f1b32a && isdefined(level.var_6ed50229)) {
-            /#
-                assert(isvehicle(eattacker));
-            #/
+            assert(isvehicle(eattacker));
             if (isvehicle(eattacker) && isdefined(eattacker.var_735382e) && isdefined(eattacker.var_a816f2cd)) {
                 driver = eattacker getseatoccupant(0);
                 if (!isdefined(driver)) {
@@ -748,9 +746,7 @@ function figure_out_attacker(eattacker) {
 // Checksum 0xed3293a0, Offset: 0x2a80
 // Size: 0x5e
 function function_4ca4d8c6(string, value) {
-    /#
-        assert(isdefined(string), "<unknown string>");
-    #/
+    assert(isdefined(string), "<unknown string>");
     if (isdefined(self) && isdefined(self.pers)) {
         self.pers[string] = value;
     }
@@ -761,9 +757,7 @@ function function_4ca4d8c6(string, value) {
 // Checksum 0xf9ee4994, Offset: 0x2ae8
 // Size: 0x78
 function function_2abc116(string, defaultval) {
-    /#
-        assert(isdefined(string), "<unknown string>");
-    #/
+    assert(isdefined(string), "<unknown string>");
     if (isdefined(self) && isdefined(self.pers) && isdefined(self.pers[string])) {
         return self.pers[string];
     }

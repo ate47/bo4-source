@@ -133,9 +133,7 @@ function function_3ad8c656() {
 // Checksum 0x48fb6073, Offset: 0x1568
 // Size: 0x7c
 function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
-        println("_active", localclientnum);
-    #/
+    println("_active", localclientnum);
     self thread postfx::playpostfxbundle("pstfx_zm_office_teleporter");
 }
 
@@ -144,9 +142,7 @@ function function_38a241a1(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0x9dfc7a42, Offset: 0x15f0
 // Size: 0x94
 function function_69108708(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
-        println("<unknown string>", localclientnum);
-    #/
+    println("<unknown string>", localclientnum);
     util::playfxontag(localclientnum, level._effect[#"teleport_depart"], self, "tag_origin");
 }
 
@@ -155,9 +151,7 @@ function function_69108708(localclientnum, oldval, newval, bnewent, binitialsnap
 // Checksum 0xdc300939, Offset: 0x1690
 // Size: 0x94
 function function_98cff177(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
-    /#
-        println("<unknown string>", localclientnum);
-    #/
+    println("<unknown string>", localclientnum);
     util::playfxontag(localclientnum, level._effect[#"teleport_arrive"], self, "tag_origin");
 }
 

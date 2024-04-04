@@ -195,10 +195,10 @@ function spawnflakrocket(missile, spawnpos, parent) {
         }
         /#
             if (debug_draw && isdefined(missile)) {
-                util::debug_sphere(missile.origin, 6, vectorscale((1, 0, 0), 0.9), 0.9, debug_duration);
+                util::debug_sphere(missile.origin, 6, (0.9, 0, 0), 0.9, debug_duration);
             }
             if (debug_draw && isdefined(rocket)) {
-                util::debug_sphere(rocket.origin, 6, vectorscale((0, 0, 1), 0.9), 0.9, debug_duration);
+                util::debug_sphere(rocket.origin, 6, (0, 0, 0.9), 0.9, debug_duration);
             }
         #/
         if (isdefined(parent)) {
@@ -214,9 +214,9 @@ function spawnflakrocket(missile, spawnpos, parent) {
             /#
                 if (debug_draw && isdefined(parent)) {
                     if (tooclosetopredictedparent && !(predicteddist < 0 || curdist > prevdist)) {
-                        util::debug_sphere(parent.origin, 18, vectorscale((1, 0, 1), 0.9), 0.9, debug_duration);
+                        util::debug_sphere(parent.origin, 18, (0.9, 0, 0.9), 0.9, debug_duration);
                     } else {
-                        util::debug_sphere(parent.origin, 18, vectorscale((0, 1, 0), 0.9), 0.9, debug_duration);
+                        util::debug_sphere(parent.origin, 18, (0, 0.9, 0), 0.9, debug_duration);
                     }
                 }
             #/
@@ -347,7 +347,7 @@ function spawn(parent, ondeathcallback) {
         #/
         return undefined;
     }
-    spawnpoint = parent.origin + vectorscale((0, 0, -1), 50);
+    spawnpoint = parent.origin + (0, 0, -50);
     drone = spawnvehicle("veh_flak_drone_mp", spawnpoint, parent.angles, "dynamic_spawn_ai");
     drone.death_callback = ondeathcallback;
     drone configureteam(parent, 0);
@@ -415,7 +415,6 @@ function watchparentmissiles() {
     drone = self;
     drone endon(#"death");
     drone.parent endon(#"death");
-    waitresult = undefined;
     waitresult = drone.parent waittill(#"stinger_fired_at_me");
     drone.incoming_missile = waitresult.projectile;
     drone.incoming_missile.target_weapon = waitresult.weapon;

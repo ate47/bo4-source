@@ -274,7 +274,6 @@ function function_144e61da(n_slot, str_endon) {
 function function_c3e3d15() {
     level endon(#"combattraining_logic_finished");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"hero_gadget_activated");
         waitresult.player.var_657a47ca = waitresult.weapon.name;
     }

@@ -510,7 +510,7 @@ function function_369cb1a5(actionparams) {
         #/
         return undefined;
     }
-    target = var_2b3b4fb.var_2cfdc66d + vectorscale((0, 0, 1), 55);
+    target = var_2b3b4fb.var_2cfdc66d + (0, 0, 55);
     if (distance2dsquared(target, self.origin) < 62500) {
         /#
             if (!isdefined(actionparams.debug)) {
@@ -676,7 +676,7 @@ function function_554a6177(actionparams) {
         #/
         return undefined;
     }
-    target = var_2b3b4fb.var_2cfdc66d + vectorscale((0, 0, 1), 100);
+    target = var_2b3b4fb.var_2cfdc66d + (0, 0, 100);
     if (distance2dsquared(target, self.origin) < 40000) {
         /#
             if (!isdefined(actionparams.debug)) {
@@ -879,7 +879,7 @@ function function_e43892c4(actionparams) {
         #/
         return undefined;
     }
-    target = var_2b3b4fb.var_2cfdc66d + vectorscale((0, 0, 1), 55);
+    target = var_2b3b4fb.var_2cfdc66d + (0, 0, 55);
     if (distance2dsquared(target, self.origin) < 40000) {
         /#
             if (!isdefined(actionparams.debug)) {
@@ -1159,7 +1159,7 @@ function function_d18123f8(actionparams) {
         #/
         return undefined;
     }
-    target = vectorlerp(var_2b3b4fb.var_2cfdc66d, var_2b3b4fb.var_c78b4464, 0.5) + vectorscale((0, 0, 1), 50);
+    target = vectorlerp(var_2b3b4fb.var_2cfdc66d, var_2b3b4fb.var_c78b4464, 0.5) + (0, 0, 50);
     eye = self geteye();
     trace = bullettrace(eye, target, 0, self);
     target = trace[#"position"];
@@ -1181,7 +1181,7 @@ function function_d18123f8(actionparams) {
         offsetvec = vectorscale(offsetvec, -1);
     }
     offsetvec = vectornormalize(offsetvec);
-    offsetvec = vectorscale(offsetvec, 200) + vectorscale((0, 0, 1), 25);
+    offsetvec = vectorscale(offsetvec, 200) + (0, 0, 25);
     actionparams.target = target;
     actionparams.target2 = target + offsetvec;
     return 100;
@@ -1437,9 +1437,9 @@ function function_d2107b(actionparams) {
         return undefined;
     }
     mask = 1;
-    from = var_c375900c.origin + vectorscale((0, 0, 1), 10);
-    to = var_c375900c.origin + vectorscale((0, 0, 1), 2000);
-    trace = physicstrace(from, to, vectorscale((-1, -1, 0), 50), (50, 50, 100), undefined, mask);
+    from = var_c375900c.origin + (0, 0, 10);
+    to = var_c375900c.origin + (0, 0, 2000);
+    trace = physicstrace(from, to, (-50, -50, 0), (50, 50, 100), undefined, mask);
     if (trace[#"fraction"] < 1) {
         /#
             if (!isdefined(actionparams.debug)) {
@@ -1451,7 +1451,7 @@ function function_d2107b(actionparams) {
         #/
         return undefined;
     }
-    actionparams.target = var_c375900c.origin + vectorscale((0, 0, 1), 20);
+    actionparams.target = var_c375900c.origin + (0, 0, 20);
     return 100;
 }
 
@@ -1475,7 +1475,7 @@ function function_f90909b9(actionparams) {
         #/
         return undefined;
     }
-    target = var_2b3b4fb.var_2cfdc66d + vectorscale((0, 0, 1), 55);
+    target = var_2b3b4fb.var_2cfdc66d + (0, 0, 55);
     if (distance2dsquared(target, self.origin) < 40000) {
         /#
             if (!isdefined(actionparams.debug)) {
@@ -1676,7 +1676,7 @@ function function_7d799351(actionparams) {
     }
     while (!self isinvehicle() && self getcurrentweapon() == scorestreakweapon) {
         if (isdefined(self.enemy)) {
-            actionparams.target = self.enemy.origin + vectorscale((0, 0, 1), 45);
+            actionparams.target = self.enemy.origin + (0, 0, 45);
         }
         if (isdefined(actionparams.target)) {
             self bot_action::function_8a2b82ad(actionparams);

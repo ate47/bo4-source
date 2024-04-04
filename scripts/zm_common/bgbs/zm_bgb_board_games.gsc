@@ -51,7 +51,6 @@ function disable() {
 function function_202a3d22() {
     self endon(#"disconnect", #"bled_out", #"bgb_update");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"boarding_window");
         s_window = waitresult;
         self bgb::do_one_shot_use();

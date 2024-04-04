@@ -8,28 +8,14 @@
 // Method(s) 7 Total 14
 class cct_shared_warning : cluielem {
 
-    // Namespace cct_shared_warning/ct_shared_warning
-    // Params 0, eflags: 0x8
-    // Checksum 0x1e73e7ae, Offset: 0x210
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_shared_warning/ct_shared_warning
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x795c67d6, Offset: 0x600
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cct_shared_warning/ct_shared_warning
     // Params 2, eflags: 0x0
     // Checksum 0x1b30b476, Offset: 0x5b8
     // Size: 0x3c
     function set_objpoints(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "objpoints", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "objpoints", value);
     }
 
     // Namespace cct_shared_warning/ct_shared_warning
@@ -38,46 +24,42 @@ class cct_shared_warning : cluielem {
     // Size: 0x27c
     function set_state(player, state_name) {
         if (#"defaultstate" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 0);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 0);
             return;
         }
         if (#"warnheal_fadeout" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 1);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 1);
             return;
         }
         if (#"hash_5e59fb81ffd2fd6b" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 2);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 2);
             return;
         }
         if (#"hash_4d78e6d4caf789ce" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 3);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 3);
             return;
         }
         if (#"warnheal" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 4);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 4);
             return;
         }
         if (#"warnheal_cycle1" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 5);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 5);
             return;
         }
         if (#"warnheal_cycle2" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 6);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 6);
             return;
         }
         if (#"hash_5ae2f5a909a5efa9" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 7);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 7);
             return;
         }
         if (#"hash_5ae2f2a909a5ea90" == state_name) {
-            player clientfield::function_9bf78ef8(self.var_47e79fc, "_state", 8);
+            player clientfield::function_9bf78ef8(var_47e79fc, "_state", 8);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_shared_warning/ct_shared_warning

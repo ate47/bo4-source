@@ -313,10 +313,9 @@ function cleanup_step_4(var_5ea5c94d, ended_early) {
 // Size: 0x1a0
 function function_55b79f54() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
-        if (!zm_utility::can_use(player) || isdefined(player.b_gazing) && player.b_gazing || isdefined(player.var_d049df11) && player.var_d049df11 || distancesquared(groundtrace(player.origin, player.origin + vectorscale((0, 0, -1), 128), 0, player)[#"position"], player.origin) > 16) {
+        if (!zm_utility::can_use(player) || isdefined(player.b_gazing) && player.b_gazing || isdefined(player.var_d049df11) && player.var_d049df11 || distancesquared(groundtrace(player.origin, player.origin + (0, 0, -128), 0, player)[#"position"], player.origin) > 16) {
             continue;
         }
         level thread mansion_pap::function_9e7129d2(player, self.stub.var_f0e6c7a2, 16, "ley");
@@ -366,7 +365,6 @@ function function_70d8a7cb() {
     self val::set("ley_source", "takedamage", 1);
     self.health = 99999;
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         a_players = util::get_active_players();
         if (isdefined(s_result.attacker) && isplayer(s_result.attacker) && s_result.attacker zm_utility::function_aa45670f(s_result.weapon, 0)) {
@@ -493,7 +491,6 @@ function function_57692917(s_ring) {
     player = undefined;
     while (true) {
         if (!isdefined(waitresult) || isalive(player) && (!player usebuttonpressed() || !player istouching(self))) {
-            waitresult = undefined;
             waitresult = self waittill(#"trigger");
             player = waitresult.activator;
         }
@@ -745,7 +742,6 @@ function function_250cf19b() {
         level.n_turns = 0;
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self.mdl_wheel waittill(#"trigger_activated");
         player = waitresult.e_who;
         if (!zm_utility::can_use(player)) {
@@ -820,7 +816,6 @@ function function_5164d716() {
     var_e0cc1e20 = getent("trigger_obs_wheel_lock", "targetname");
     var_e0cc1e20.health = 99999;
     while (true) {
-        s_notify = undefined;
         s_notify = var_e0cc1e20 waittill(#"damage");
         var_e0cc1e20.health = var_e0cc1e20.health + s_notify.amount;
         if (isdefined(s_notify.attacker) && isplayer(s_notify.attacker) && mansion_util::is_shield(s_notify.weapon) && s_notify.mod === "MOD_MELEE" && isdefined(level.n_turns) && level.n_turns > 15) {
@@ -875,7 +870,6 @@ function function_3f64b455() {
     s_result = undefined;
     while (true) {
         if (!isdefined(s_result) || isalive(s_result.e_who) && (!s_result.e_who usebuttonpressed() || isdefined(mdl_wheel.s_unitrigger.trigger) && !s_result.e_who istouching(mdl_wheel.s_unitrigger.trigger))) {
-            s_result = undefined;
             s_result = mdl_wheel waittill(#"trigger_activated");
         }
         if (isplayer(s_result.e_who)) {
@@ -997,7 +991,7 @@ function function_9513d3a6() {
             str_model = "p8_zm_man_zodiac_sign_capricorn";
             break;
         }
-        mdl_symbol = util::spawn_model(str_model, vectorscale((0, 0, -1), 400));
+        mdl_symbol = util::spawn_model(str_model, (0, 0, -400));
         mdl_symbol.script_int = n_symbol;
         mdl_symbol.s_loc = array::random(a_s_locs);
         arrayremovevalue(a_s_locs, mdl_symbol.s_loc);
@@ -1080,7 +1074,6 @@ function function_bfefc7aa() {
     mdl_base = getent("mdl_tel_base", "targetname");
     self.health = 99999;
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         self.health = self.health + s_notify.amount;
         if (level flag::get(#"combo_dialed") || !isdefined(level.var_779d8f63) || !isdefined(level.var_21d0f5ee) || isinarray(level.var_5c086e54, level.var_779d8f63)) {
@@ -1211,7 +1204,6 @@ function function_d5bfc8e8() {
     self.a_bashers = [];
     var_1a50a8c5 = undefined;
     do {
-        s_result = undefined;
         s_result = self waittill(#"damage");
         self.health = self.health + s_result.amount;
         e_player = s_result.inflictor;
@@ -1296,7 +1288,6 @@ function function_371e56be(e_trap) {
         self notify(#"hash_1e76041e9fa5f479");
     }
     while (isdefined(self.var_4ceff143) && self.var_4ceff143) {
-        s_result = undefined;
         s_result = self waittill(#"shield_timeout", #"weapon_change");
         if (s_result._notify !== "weapon_change" || !mansion_util::is_shield(s_result.weapon)) {
             self notify(#"hash_459246e5bfcc3713");
@@ -1375,7 +1366,7 @@ function function_c888f1f4() {
     mdl_door moveto(s_moveto.origin, 3, 0.1, 1.5);
     mdl_door playsound(#"hash_34b16f03c4ce4b97");
     mdl_door waittill(#"movedone");
-    mdl_door moveto(s_moveto.origin - vectorscale((0, 0, 1), 64), 3);
+    mdl_door moveto(s_moveto.origin - (0, 0, 64), 3);
     mdl_door playsound(#"hash_34b17003c4ce4d4a");
     mdl_door waittill(#"movedone");
     var_47323b73 = mdl_stone zm_unitrigger::create(undefined, 128);
@@ -1466,7 +1457,6 @@ function function_a8ddd91f() {
 // Size: 0xc0
 function function_c9ebaa3() {
     while (!level flag::get(#"greenhouse_open")) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::can_use(player)) {

@@ -23,13 +23,13 @@ function event_handler[level_init] main(eventstruct) {
 // Size: 0x224
 function function_89088577() {
     spawncollision("collision_clip_wall_128x128x10", "collider", (1179.08, -101.57, 1364), (270, 350.638, -25.7397));
-    spawncollision("collision_clip_wall_128x128x10", "collider", (1196.05, -54, 1364), vectorscale((1, 0, 0), 270));
-    spawncollision("collision_clip_wall_64x64x10", "collider", (1144, 16, 1364), vectorscale((1, 0, 0), 270));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (1196.05, -54, 1364), (270, 0, 0));
+    spawncollision("collision_clip_wall_64x64x10", "collider", (1144, 16, 1364), (270, 0, 0));
     spawncollision("collision_clip_wall_64x64x10", "collider", (1213.5, 17, 1364), (270, 17.7027, 17.796));
     spawncollision("collision_clip_wall_64x64x10", "collider", (1177, 51, 1364), (270, 44.9, 13.8969));
     spawncollision("collision_clip_wall_64x64x10", "collider", (1159.5, 62.5, 1364), (270, 333.635, 93.5613));
-    spawncollision("collision_clip_wall_32x32x10", "collider", (1128, 64, 1364), vectorscale((1, 0, 0), 270));
-    spawncollision("collision_clip_wall_32x32x10", "collider", (1128, 88, 1364), vectorscale((1, 0, 0), 270));
+    spawncollision("collision_clip_wall_32x32x10", "collider", (1128, 64, 1364), (270, 0, 0));
+    spawncollision("collision_clip_wall_32x32x10", "collider", (1128, 88, 1364), (270, 0, 0));
 }
 
 // Namespace mp_grind/mp_grind
@@ -51,7 +51,6 @@ function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
     }

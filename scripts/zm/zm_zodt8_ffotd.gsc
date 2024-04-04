@@ -24,6 +24,6 @@ function __init__() {
 // Checksum 0x1c80630a, Offset: 0x100
 // Size: 0x44
 function __main__() {
-    spawncollision("collision_clip_wall_128x128x10", "collider", (190, -3839, 1149), vectorscale((0, 1, 0), 270));
+    spawncollision("collision_clip_wall_128x128x10", "collider", (190, -3839, 1149), (0, 270, 0));
 }
 

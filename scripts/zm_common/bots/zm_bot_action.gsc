@@ -374,9 +374,7 @@ function function_2c6e5988(actionparams) {
 // Checksum 0xe2bf386c, Offset: 0x1600
 // Size: 0x142
 function function_d41104ab(interact) {
-    /#
-        assert(isbot(self));
-    #/
+    assert(isbot(self));
     if (!isdefined(interact)) {
         return;
     }

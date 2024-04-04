@@ -108,7 +108,7 @@ function function_c0101095(weapon, forward, var_62e5b78) {
     var_6b469265 = 31;
     var_87c01c60 = vectorscale(forward, var_6b469265);
     trace_start = player.origin + (0, 0, var_c346c56f + 5) + var_87c01c60;
-    trace_end = trace_start + vectorscale((0, 0, -1), 10);
+    trace_end = trace_start + (0, 0, -10);
     var_4f64fb6b = 3;
     trace = physicstrace(trace_start, trace_end, (var_4f64fb6b * -1, var_4f64fb6b * -1, 0), (var_4f64fb6b, var_4f64fb6b, 1), player, 1);
     if (trace[#"fraction"] < 1) {
@@ -170,7 +170,6 @@ function function_e870d33d() {
             continue;
         }
         if (player playerads() == 0) {
-            waitresult = undefined;
             waitresult = player waittill(#"weapon_switch_started", #"weapon_ads_started");
             if (waitresult._notify != "weapon_ads_started") {
                 continue;
@@ -357,9 +356,7 @@ function function_18a9a4e4(settings) {
 // Checksum 0x82854205, Offset: 0x1598
 // Size: 0xd4
 function function_7a677105(weapon) {
-    /#
-        assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
-    #/
+    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
     if (!isdefined(level.var_825acea)) {
         level.var_825acea = [];
     }
@@ -486,7 +483,7 @@ function stow_on_back(current) {
                 var_6a84bf5b = (0, 0, 0);
             } else if (var_ce671f2b === "heavy") {
                 v_link_offset = (30, 0, 20);
-                var_6a84bf5b = vectorscale((0, 1, 0), 90);
+                var_6a84bf5b = (0, 90, 0);
             }
             self.var_9ed9707e linkto(self, "tag_origin", v_link_offset, var_6a84bf5b);
             self.var_9ed9707e setplayercollision(0);
@@ -498,9 +495,7 @@ function stow_on_back(current) {
     } else if (currentweapon != level.weaponnone) {
         for (idx = 0; idx < self.weapon_array_primary.size; idx++) {
             temp_index_weapon = self.weapon_array_primary[idx];
-            /#
-                assert(isdefined(temp_index_weapon), "<unknown string>");
-            #/
+            assert(isdefined(temp_index_weapon), "<unknown string>");
             if (temp_index_weapon == currentweapon) {
                 continue;
             }
@@ -518,9 +513,7 @@ function stow_on_back(current) {
         if (index_weapon == level.weaponnone) {
             for (idx = 0; idx < self.weapon_array_sidearm.size; idx++) {
                 temp_index_weapon = self.weapon_array_sidearm[idx];
-                /#
-                    assert(isdefined(temp_index_weapon), "<unknown string>");
-                #/
+                assert(isdefined(temp_index_weapon), "<unknown string>");
                 if (temp_index_weapon == currentweapon) {
                     continue;
                 }

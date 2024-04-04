@@ -327,7 +327,6 @@ function blackscreen_watcher() {
     blackscreenuimodel = createuimodel(getglobaluimodel(), "hideWorldForStreamer");
     setuimodelvalue(blackscreenuimodel, 1);
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"streamer_change");
         var_d0b01271 = waitresult.var_d0b01271;
         setuimodelvalue(blackscreenuimodel, 1);
@@ -371,11 +370,8 @@ function handle_inspect_player(localclientnum, menu_name) {
     level thread function_b885d47c(menu_name, localclientnum);
     level thread function_37304ace(localclientnum, menu_name);
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"inspect_player");
-        /#
-            assert(isdefined(waitresult.xuid));
-        #/
+        assert(isdefined(waitresult.xuid));
         level childthread update_inspection_character(localclientnum, waitresult.xuid, menu_name);
     }
 }
@@ -462,28 +458,17 @@ function function_37304ace(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_6d381d5ecca233c6");
         if (isdefined(waitresult.clear_weapon) && waitresult.clear_weapon) {
             level.var_44011752 hide();
             level thread scene::stop(#"scene_frontend_inspection_weapon");
             continue;
         }
-        /#
-            assert(isdefined(waitresult.weapon));
-        #/
-        /#
-            assert(isdefined(waitresult.attachments));
-        #/
-        /#
-            assert(isdefined(waitresult.camoindex));
-        #/
-        /#
-            assert(isdefined(waitresult.paintjobslot));
-        #/
-        /#
-            assert(isdefined(waitresult.weaponmodelslot));
-        #/
+        assert(isdefined(waitresult.weapon));
+        assert(isdefined(waitresult.attachments));
+        assert(isdefined(waitresult.camoindex));
+        assert(isdefined(waitresult.paintjobslot));
+        assert(isdefined(waitresult.weaponmodelslot));
         level childthread function_daa3f7d0(localclientnum, waitresult, 1);
     }
 }
@@ -832,9 +817,7 @@ function function_fb399a61(localclientnum) {
         lui::createcustomcameramenu("<unknown string>", localclientnum, &function_4920c25a, 1, undefined, undefined, 0);
         lui::linktocustomcharacter("<unknown string>", localclientnum, "<unknown string>");
         target = struct::get(#"character_staging_extracam1");
-        /#
-            assert(isdefined(target));
-        #/
+        assert(isdefined(target));
         var_663588d = "<unknown string>";
         var_f4b452be = [1:"<unknown string>", 3:"<unknown string>", 0:"<unknown string>"];
         var_8d6e963c = ["<unknown string>", 2:"<unknown string>", 3:"<unknown string>", 4:"<unknown string>", 5:"<unknown string>", 6:"<unknown string>", 7:"<unknown string>"];
@@ -1008,9 +991,7 @@ function function_db3c4c69(localclientnum) {
     /#
         lui::createcustomcameramenu("<unknown string>", localclientnum, &function_f2c538de, 1, undefined, undefined, 0);
         target = struct::get(#"weapon_icon_staging");
-        /#
-            assert(isdefined(target));
-        #/
+        assert(isdefined(target));
         level.var_43aac701 = [];
         var_663588d = "<unknown string>";
         root_weapon = var_663588d + "<unknown string>";
@@ -1102,15 +1083,9 @@ function function_ea9a5e69(localclientnum) {
         foreach (type, name in var_2067e07) {
             adddebugcommand(localclientnum, "frontend" + "<unknown string>" + name + "<unknown string>" + "<unknown string>" + "<unknown string>" + -1 + "<unknown string>" + type + "1e968675840551ec");
         }
-        /#
-            assert(isdefined(getent(localclientnum, "<unknown string>", "<unknown string>")));
-        #/
-        /#
-            assert(isdefined(struct::get(#"fx_trail_start")));
-        #/
-        /#
-            assert(isdefined(struct::get(#"fx_trail_end")));
-        #/
+        assert(isdefined(getent(localclientnum, "<unknown string>", "<unknown string>")));
+        assert(isdefined(struct::get(#"fx_trail_start")));
+        assert(isdefined(struct::get(#"fx_trail_end")));
         jumpkits = namespace_eb06e24d::get_jumpkits();
         foreach (i, jumpkit in jumpkits) {
             name = function_9e72a96(jumpkit);
@@ -1297,9 +1272,7 @@ function function_deed1dbf(localclientnum) {
     } while (var_ca56648b == 0 && attempts < limit);
     selectable = array::filter(level.var_e362b5d9, 0, &function_70e963be, localclientnum);
     if (selectable.size == 0) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         selectable = level.var_e362b5d9;
     }
     if (var_ca56648b == 1) {
@@ -1365,9 +1338,7 @@ function function_a588eb2e(localclientnum) {
 // Checksum 0x57b67596, Offset: 0x7cc0
 // Size: 0x35c
 function localclientconnect(localclientnum) {
-    /#
-        println("<unknown string>" + localclientnum);
-    #/
+    println("<unknown string>" + localclientnum);
     var_acd4d941 = util::spawn_model(localclientnum, "tag_origin", (0, 0, 0), (0, 0, 0));
     var_acd4d941.targetname = "__masked_char";
     var_22f20461 = character_customization::function_dd295310(var_acd4d941, localclientnum, 0);
@@ -1607,11 +1578,8 @@ function personalize_characters_watch(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
     s_cam = struct::get(#"personalizehero_camera", "targetname");
-    /#
-        assert(isdefined(s_cam));
-    #/
+    assert(isdefined(s_cam));
     for (animtime = 0; true; animtime = 300) {
-        waitresult = undefined;
         waitresult = level waittill("camera_change" + localclientnum);
         pose = waitresult.pose;
         if (pose === "exploring") {
@@ -1636,12 +1604,9 @@ function function_d9a44ae1(localclientnum, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
     s_cam = struct::get(#"spawn_char_custom", "targetname");
-    /#
-        assert(isdefined(s_cam));
-    #/
+    assert(isdefined(s_cam));
     playmaincamxcam(localclientnum, #"ui_cam_character_customization", 0, "cam_helmet", "", s_cam.origin, s_cam.angles);
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill("choose_face_camera_change" + localclientnum);
         region = waitresult.param1;
         if (region === "face") {
@@ -1672,12 +1637,10 @@ function function_d9a44ae1(localclientnum, menu_name) {
 // Size: 0x1ac
 function choose_taunts_camera_watch(localclientnum, menu_name) {
     s_cam = struct::get(#"personalizehero_camera", "targetname");
-    /#
-        assert(isdefined(s_cam));
-    #/
+    assert(isdefined(s_cam));
     playmaincamxcam(localclientnum, #"ui_cam_character_customization", 300, "cam_topscorers", "", s_cam.origin, s_cam.angles);
     var_d0b01271 = lui::getcharacterdataformenu(menu_name, localclientnum);
-    [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 112));
+    [[ var_d0b01271 ]]->function_4240a39a(1, (0, 112, 0));
     level waittill(menu_name + "_closed");
     params = {#anim_name:[[ var_d0b01271 ]]->function_8144231c()};
     [[ var_d0b01271 ]]->update(params);
@@ -2027,7 +1990,6 @@ function function_f00ff0c7(localclientnum) {
     var_c7581878 = max(function_7c77108d(localclientnum, level.var_6f1da91a[1], "arena_player_"), var_c7581878);
     level.var_90fa1c3e = var_c7581878;
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"lobby_change");
         if (level.lastlobbystate === "matchmaking" || level.lastlobbystate === "zm_online" || level.lastlobbystate === #"lobby_pose") {
             var_68a9a63c = function_664bca26(localclientnum, 1, 0, 1);
@@ -2401,11 +2363,7 @@ function private function_70733b8c(session_mode, character_index) {
 function function_a71254a9(localclientnum, play, player_data, var_1c5551d6 = 0, scene_shot = undefined, var_ddc01a5 = 0, var_7318f7f0 = undefined) {
     self notify("6b72393916eafd89");
     self endon("6b72393916eafd89");
-    /#
-        /#
-            assert(!play || isdefined(player_data));
-        #/
-    #/
+    assert(!play || isdefined(player_data));
     if (play && (!isdefined(level.var_8013e6bd) || character_customization::function_aa5382ed(level.var_4e236556, player_data))) {
         while (!isdefined(level.var_7208b551)) {
             wait(0.1);
@@ -2651,7 +2609,6 @@ function function_98088878(localclientnum, menu_data) {
     weapon_model = getent(localclientnum, "quartermaster_weapon", "targetname");
     var_7ef44086 = struct::get("tag_align_quartermaster_weapon");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"qmweaponupdate");
         if (isdefined(level.var_324c3190[localclientnum])) {
             weapon_model stoprenderoverridebundle(level.var_324c3190[localclientnum]);
@@ -2685,7 +2642,7 @@ function function_837446a8(localclientnum, menu_name, state) {
     switch (state) {
     case #"character":
     case #"gesture":
-        [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
+        [[ var_d0b01271 ]]->function_4240a39a(1, (0, 90, 0));
         level thread character_customization::rotation_thread_spawner(localclientnum, var_d0b01271, "end_character_rotating" + localclientnum);
         [[ var_d0b01271 ]]->function_4240a39a(0);
         [[ var_d0b01271 ]]->show_model();
@@ -2693,7 +2650,7 @@ function function_837446a8(localclientnum, menu_name, state) {
         scene = #"scene_frontend_quartermaster_character";
         break;
     case #"character_full":
-        [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
+        [[ var_d0b01271 ]]->function_4240a39a(1, (0, 90, 0));
         level thread character_customization::rotation_thread_spawner(localclientnum, var_d0b01271, "end_character_rotating" + localclientnum);
         [[ var_d0b01271 ]]->function_4240a39a(0);
         [[ var_d0b01271 ]]->show_model();
@@ -2701,7 +2658,7 @@ function function_837446a8(localclientnum, menu_name, state) {
         scene = #"scene_frontend_quartermaster_character_full";
         break;
     case #"character_face":
-        [[ var_d0b01271 ]]->function_4240a39a(1, vectorscale((0, 1, 0), 90));
+        [[ var_d0b01271 ]]->function_4240a39a(1, (0, 90, 0));
         level thread character_customization::rotation_thread_spawner(localclientnum, var_d0b01271, "end_character_rotating" + localclientnum);
         [[ var_d0b01271 ]]->function_4240a39a(0);
         [[ var_d0b01271 ]]->show_model();
@@ -2818,7 +2775,6 @@ function function_914198cd(localclientnum, var_d0b01271, menu_name) {
     level endon(#"disconnect");
     level endon(menu_name + "_closed");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill("deathfx_update_" + localclientnum);
         switch (waitresult.event_name) {
         case #"updatecharacter":
@@ -2876,7 +2832,7 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
     }
     self function_ca43d336(localclientnum);
     var_1035f50c = (0, 0, 0);
-    v_forward = vectorscale((1, 0, 0), 90);
+    v_forward = (90, 0, 0);
     character_model = [[ self ]]->function_217b10ed();
     if (isdefined(character_model)) {
         var_5f26f63 = character_model gettagangles("j_spine4");
@@ -2968,9 +2924,7 @@ function function_73b8462a(localclientnum, menu_name, state) {
             break;
         }
     }
-    /#
-        assert(character_index);
-    #/
+    assert(character_index);
     fields = getcharacterfields(character_index, session_mode);
     if (isdefined(fields) && isdefined(fields.var_47c73c9d)) {
         level.var_c8fac6ea = fields.var_47c73c9d;

@@ -21,22 +21,33 @@
 // Method(s) 3 Total 3
 class class_7b5e0861 {
 
-    // Namespace class_7b5e0861/traps_deployable
-    // Params 0, eflags: 0x8
-    // Checksum 0x80f724d1, Offset: 0x4890
-    // Size: 0x4
-    __constructor() {
-        
-    }
+    var m_empdamage;
+    var m_health;
+    var m_model;
+    var m_name;
+    var m_placeimmediately;
+    var m_spawnsentity;
+    var m_timeout;
+    var m_type;
+    var m_vehicle;
+    var m_weapon;
+    var var_28f1ce55;
+    var var_31e7e66a;
+    var var_3efa7c17;
+    var var_656cbe2d;
+    var var_b4662b52;
+    var var_c59ba447;
+    var var_e84fc5dc;
+    var var_f81e0192;
 
     // Namespace class_7b5e0861/traps_deployable
     // Params 0, eflags: 0x10
     // Checksum 0x38c6a9f3, Offset: 0x48a0
     // Size: 0x4c
-    __destructor() {
+    destructor() {
         /#
             if (isdefined(level.trapddebug) && level.trapddebug) {
-                iprintlnbold("<unknown string>" + self.m_name);
+                iprintlnbold("<unknown string>" + m_name);
             }
         #/
     }
@@ -46,26 +57,26 @@ class class_7b5e0861 {
     // Checksum 0x587dcf6a, Offset: 0x48f8
     // Size: 0x19e
     function function_8df621c(bundle, var_a8539bf6) {
-        self.m_type = bundle.trap_type;
-        self.m_name = bundle.name;
-        self.m_weapon = bundle.weapon;
-        self.m_vehicle = bundle.vehicle;
-        self.m_model = bundle.model;
-        self.var_e84fc5dc = bundle.var_f495bc84;
-        self.var_28f1ce55 = bundle.var_90f05429;
-        self.m_spawnsentity = bundle.spawnsentity;
-        self.var_656cbe2d = bundle.var_28bb5240;
-        self.m_timeout = bundle.timeout;
-        self.m_health = bundle.health;
-        if (isdefined(self.m_health)) {
-            self.var_c59ba447 = self.m_health - int(self.m_health / 3);
+        m_type = bundle.trap_type;
+        m_name = bundle.name;
+        m_weapon = bundle.weapon;
+        m_vehicle = bundle.vehicle;
+        m_model = bundle.model;
+        var_e84fc5dc = bundle.var_f495bc84;
+        var_28f1ce55 = bundle.var_90f05429;
+        m_spawnsentity = bundle.spawnsentity;
+        var_656cbe2d = bundle.var_28bb5240;
+        m_timeout = bundle.timeout;
+        m_health = bundle.health;
+        if (isdefined(m_health)) {
+            var_c59ba447 = m_health - int(m_health / 3);
         }
-        self.m_empdamage = bundle.empdamage;
-        self.var_f81e0192 = bundle.str_place;
-        self.var_b4662b52 = bundle.var_6e2ae4a5;
-        self.m_placeimmediately = bundle.placeimmediately;
-        self.var_31e7e66a = bundle.var_d6011052;
-        self.var_3efa7c17 = var_a8539bf6;
+        m_empdamage = bundle.empdamage;
+        var_f81e0192 = bundle.str_place;
+        var_b4662b52 = bundle.var_6e2ae4a5;
+        m_placeimmediately = bundle.placeimmediately;
+        var_31e7e66a = bundle.var_d6011052;
+        var_3efa7c17 = var_a8539bf6;
     }
 
 }
@@ -213,9 +224,7 @@ function register_trap(var_2d727ba0) {
             function_2ce21754(var_2d727ba0.trap_type, &function_deb3cb22, &function_6ce6a400, &function_51d36222, &function_c66a11d0, &function_5c1d01, &function_6ef47474, &function_b501ff0b);
             break;
         default:
-            /#
-                assertmsg("<unknown string>" + var_2d727ba0.trap_type);
-            #/
+            assertmsg("<unknown string>" + var_2d727ba0.trap_type);
             /#
                 printerror("<unknown string>");
             #/
@@ -468,7 +477,6 @@ function function_69996073(var_3af54106) {
 function function_8ecf6615(var_3af54106) {
     var_5e63b00d = self;
     var_5e63b00d.var_a8539bf6.mdl_gameobject endon(#"destroyed_complete", #"death");
-    waitresult = undefined;
     waitresult = level waittill(var_5e63b00d.script_waittill);
     teamowner = waitresult.owner;
     team = waitresult.team;
@@ -724,12 +732,9 @@ function function_b501ff0b(damagecallback, destroyedcallback, var_1891d3cd, var_
 // Size: 0x46e
 function function_59a79a68(var_3af54106, damage_callback, destroyed_callback, emp_damage, emp_callback) {
     self endon(#"death", #"delete");
-    /#
-        assert(!isvehicle(self) || !issentient(self), "<unknown string>");
-    #/
+    assert(!isvehicle(self) || !issentient(self), "<unknown string>");
     while (true) {
         weapon_damage = undefined;
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         inflictor = waitresult.inflictor;
@@ -1218,9 +1223,7 @@ function function_f6ea9af9(flag) {
 // Checksum 0xf7ce4c7b, Offset: 0x4330
 // Size: 0x2c
 function printerror(message) {
-    /#
-        println("<unknown string>", message);
-    #/
+    println("<unknown string>", message);
 }
 
 // Namespace traps_deployable/traps_deployable
@@ -1228,9 +1231,7 @@ function printerror(message) {
 // Checksum 0xc5b8e74d, Offset: 0x4368
 // Size: 0x2c
 function printinfo(message) {
-    /#
-        println("<unknown string>", message);
-    #/
+    println("<unknown string>", message);
 }
 
 // Namespace traps_deployable/traps_deployable

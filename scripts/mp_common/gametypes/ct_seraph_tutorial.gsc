@@ -877,7 +877,6 @@ function function_b23a52d(n_start_delay, var_a9f1605c) {
     level.var_79c8245d = var_a9f1605c;
     wait(n_start_delay);
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         if (waitresult.intpayload < 0) {
             level.var_79c8245d = 0;
@@ -914,7 +913,6 @@ function function_1234c415() {
     level.var_fa06889a = 0;
     while (true) {
         e_player = getplayers()[0];
-        waitresult = undefined;
         waitresult = e_player waittill(#"menuresponse");
         menu = waitresult.menu;
         response = waitresult.response;
@@ -1149,7 +1147,7 @@ function function_d4bbc142() {
 // Size: 0x14c
 function function_6afc7a47(e_player) {
     self endon(#"death");
-    self.t_use = spawn("trigger_radius_use", self.origin + vectorscale((0, 0, 1), 20), 0, 80, 80);
+    self.t_use = spawn("trigger_radius_use", self.origin + (0, 0, 20), 0, 80, 80);
     self.t_use sethintstring(#"hash_33c0a447b3903430");
     self.t_use setcursorhint("HINT_NOICON");
     self.t_use setteamfortrigger(e_player.team);
@@ -1199,7 +1197,6 @@ function function_a623876e() {
     level endon(#"combattraining_logic_finished");
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         waitresult.attacker util::show_hit_marker(0);
     }
@@ -2053,7 +2050,6 @@ function function_2fa4efc2(waitresult) {
 function function_7e060369() {
     level endon(#"combattraining_logic_finished");
     while (true) {
-        waitresult = undefined;
         waitresult = level waittill(#"hash_31be1f8b27209ad0");
         e_beacon = waitresult.beacon.spawnbeacon;
         if (isdefined(e_beacon) && !isbot(waitresult.owner)) {

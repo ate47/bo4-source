@@ -131,7 +131,7 @@ function function_dfe17a5d(localclientnum, oldval, newval, bnewent, binitialsnap
         e_player = getentbynum(localclientnum, newval - 1);
         a_e_players = getlocalplayers();
         if (array::contains(a_e_players, e_player)) {
-            self.n_fx_id = playfx(localclientnum, level._effect[#"tomahawk_pickup"], self.origin - vectorscale((0, 0, 1), 24));
+            self.n_fx_id = playfx(localclientnum, level._effect[#"tomahawk_pickup"], self.origin - (0, 0, 24));
         }
     }
 }
@@ -166,7 +166,7 @@ function function_1302ffdd(localclientnum, oldval, newval, bnewent, binitialsnap
         self.n_tomahawk_pickup_fx = undefined;
     }
     if (newval) {
-        self.n_tomahawk_pickup_fx = playfx(localclientnum, level._effect[#"tomahawk_pickup"], var_4488630f.origin - vectorscale((0, 0, 1), 24));
+        self.n_tomahawk_pickup_fx = playfx(localclientnum, level._effect[#"tomahawk_pickup"], var_4488630f.origin - (0, 0, 24));
     }
 }
 
@@ -181,7 +181,7 @@ function function_c17bd665(localclientnum, oldval, newval, bnewent, binitialsnap
         self.n_tomahawk_pickup_fx = undefined;
     }
     if (newval) {
-        self.n_tomahawk_pickup_fx = playfx(localclientnum, level._effect[#"tomahawk_pickup_upgrade"], var_4488630f.origin - vectorscale((0, 0, 1), 24));
+        self.n_tomahawk_pickup_fx = playfx(localclientnum, level._effect[#"tomahawk_pickup_upgrade"], var_4488630f.origin - (0, 0, 24));
     }
 }
 

@@ -25,7 +25,7 @@ function __init__() {
 // Size: 0xec
 function __main__() {
     col_origin = (6512, 5109, 874);
-    var_a9430bbc = vectorscale((0, 1, 0), 324);
+    var_a9430bbc = (0, 324, 0);
     hack_col = spawncollision("collision_clip_wall_256x256x10", "hack_collider", col_origin, var_a9430bbc);
     hack_col disconnectpaths(0, 0);
     hack_col notsolid();

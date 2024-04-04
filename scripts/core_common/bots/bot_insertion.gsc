@@ -83,16 +83,13 @@ function function_a4f516ef() {
         self flagsys::wait_till_any(var_f9664338);
     }
     if (function_58a44f22()) {
-        waitresult = undefined;
         waitresult = self waittill(#"hash_3a41cbe85bdb81e1", #"hash_224cb97b8f682317");
         if (waitresult._notify != #"hash_224cb97b8f682317") {
             self flagsys::wait_till_timeout(function_8ed212d(), #"hash_224cb97b8f682317");
         }
         return;
     }
-    /#
-        assert(isdefined(self.var_33a2e995));
-    #/
+    assert(isdefined(self.var_33a2e995));
     self flagsys::wait_till_timeout(self.var_33a2e995, #"hash_224cb97b8f682317");
 }
 
@@ -126,9 +123,7 @@ function function_8ed212d() {
 // Checksum 0xbf32f833, Offset: 0x650
 // Size: 0x326
 function function_24ca8ecf(insertion) {
-    /#
-        assert(isstruct(insertion));
-    #/
+    assert(isstruct(insertion));
     bots = [];
     foreach (player in insertion.players) {
         if (isbot(player)) {
@@ -233,9 +228,7 @@ function function_233a1027(target_point, lead_player) {
 // Checksum 0x1356fc0f, Offset: 0xc18
 // Size: 0x1d8
 function function_13ba9cec(target_point, lead_player, var_282c0a8e) {
-    /#
-        assert(isdefined(var_282c0a8e));
-    #/
+    assert(isdefined(var_282c0a8e));
     if (self isonground()) {
         return false;
     }

@@ -43,7 +43,6 @@ function air_vehicle1_initialize() {
     self.first_weapon = self seatgetweapon(0);
     self.second_weapon = self seatgetweapon(1);
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"enter_vehicle");
         self thread weapon_switch_watcher(waitresult.player);
     }

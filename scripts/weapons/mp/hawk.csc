@@ -232,9 +232,7 @@ function function_2e07be71(localclientnum) {
     notifyparam = localclientnum + "_" + self getentitynumber();
     self notify("cfc7ae5c0a7a3ce" + notifyparam);
     self endon("cfc7ae5c0a7a3ce" + notifyparam);
-    /#
-        assert(isdefined(self.owner));
-    #/
+    assert(isdefined(self.owner));
     var_3216cebd = self.owner getentitynumber();
     self waittill(#"death");
     if (isdefined(var_3216cebd)) {
@@ -286,9 +284,9 @@ function function_5a1bf101(localclientnum) {
     var_8736e321 = 1;
     var_6c8b920a = [];
     stance_offsets = [];
-    stance_offsets[#"stand"] = vectorscale((0, 0, 1), 60);
-    stance_offsets[#"crouch"] = vectorscale((0, 0, 1), 40);
-    stance_offsets[#"prone"] = vectorscale((0, 0, 1), 12);
+    stance_offsets[#"stand"] = (0, 0, 60);
+    stance_offsets[#"crouch"] = (0, 0, 40);
+    stance_offsets[#"prone"] = (0, 0, 12);
     while (isdefined(hawk_owner) && isplayer(hawk_owner) && hawk_owner function_21c0fa55()) {
         if (hawk_owner isremotecontrolling(localclientnum)) {
             if (!isinvehicle(localclientnum, self) && isdefined(hawk_owner.weapon) && hawk_owner.weapon.statname == #"remote_missile") {
@@ -333,7 +331,7 @@ function function_5a1bf101(localclientnum) {
                 var_6c8b920a[ti] = now - 100 - 10;
             }
             var_4759b4d3 = project3dto2d(localclientnum, target_player.origin);
-            var_20a99afd = project3dto2d(localclientnum, target_player.origin + vectorscale((0, 0, 1), 60));
+            var_20a99afd = project3dto2d(localclientnum, target_player.origin + (0, 0, 60));
             screen_height = distance2d(var_4759b4d3, var_20a99afd);
             var_fcd926d5 = var_59d4144b * screen_height / 60;
             var_fcd926d5 = math::clamp(var_fcd926d5, var_e7c561e2, var_98977cea);

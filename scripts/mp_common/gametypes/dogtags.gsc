@@ -39,7 +39,7 @@ function spawn_dog_tag(victim, attacker, on_use_function, objectives_for_attacke
         visuals[1] = spawn("script_model", (0, 0, 0));
         visuals[1] setmodel(victim getfriendlydogtagmodel());
         trigger = spawn("trigger_radius", (0, 0, 0), 0, 32, 32);
-        level.dogtags[victim.entnum] = gameobjects::create_use_object(victim.team, trigger, visuals, vectorscale((0, 0, 1), 16), #"conf_dogtags");
+        level.dogtags[victim.entnum] = gameobjects::create_use_object(victim.team, trigger, visuals, (0, 0, 16), #"conf_dogtags");
         level.dogtags[victim.entnum] gameobjects::set_use_time(0);
         level.dogtags[victim.entnum].onuse = &onuse;
         level.dogtags[victim.entnum].custom_onuse = on_use_function;
@@ -49,7 +49,7 @@ function spawn_dog_tag(victim, attacker, on_use_function, objectives_for_attacke
         level thread clear_on_victim_disconnect(victim);
         victim thread team_updater(level.dogtags[victim.entnum]);
     }
-    pos = victim.origin + vectorscale((0, 0, 1), 14);
+    pos = victim.origin + (0, 0, 14);
     level.dogtags[victim.entnum].curorigin = pos;
     level.dogtags[victim.entnum].trigger.origin = pos;
     level.dogtags[victim.entnum].visuals[0].origin = pos;
@@ -158,10 +158,10 @@ function reset_tags() {
     self notify(#"reset");
     self.visuals[0] hide();
     self.visuals[1] hide();
-    self.curorigin = vectorscale((0, 0, 1), 1000);
-    self.trigger.origin = vectorscale((0, 0, 1), 1000);
-    self.visuals[0].origin = vectorscale((0, 0, 1), 1000);
-    self.visuals[1].origin = vectorscale((0, 0, 1), 1000);
+    self.curorigin = (0, 0, 1000);
+    self.trigger.origin = (0, 0, 1000);
+    self.visuals[0].origin = (0, 0, 1000);
+    self.visuals[1].origin = (0, 0, 1000);
     self.tacinsert = 0;
     self gameobjects::allow_use(#"none");
     objective_setstate(self.objectiveid, "invisible");
@@ -246,10 +246,10 @@ function time_out(victim) {
     level hostmigration::waitlongdurationwithhostmigrationpause(30);
     self.visuals[0] hide();
     self.visuals[1] hide();
-    self.curorigin = vectorscale((0, 0, 1), 1000);
-    self.trigger.origin = vectorscale((0, 0, 1), 1000);
-    self.visuals[0].origin = vectorscale((0, 0, 1), 1000);
-    self.visuals[1].origin = vectorscale((0, 0, 1), 1000);
+    self.curorigin = (0, 0, 1000);
+    self.trigger.origin = (0, 0, 1000);
+    self.visuals[0].origin = (0, 0, 1000);
+    self.visuals[1].origin = (0, 0, 1000);
     self.tacinsert = 0;
     self gameobjects::allow_use(#"none");
 }
@@ -262,7 +262,7 @@ function bounce() {
     level endon(#"game_ended");
     self endon(#"reset");
     bottompos = self.curorigin;
-    toppos = self.curorigin + vectorscale((0, 0, 1), 12);
+    toppos = self.curorigin + (0, 0, 12);
     while (true) {
         self.visuals[0] moveto(toppos, 0.5, 0.15, 0.15);
         self.visuals[0] rotateyaw(180, 0.5);

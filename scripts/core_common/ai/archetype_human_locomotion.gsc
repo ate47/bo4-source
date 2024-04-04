@@ -11,117 +11,61 @@
 // Checksum 0x6cf34694, Offset: 0x1d0
 // Size: 0xb64
 function autoexec registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&prepareformovement));
-    #/
+    assert(isscriptfunctionptr(&prepareformovement));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"prepareformovement", &prepareformovement);
-    /#
-        assert(isscriptfunctionptr(&prepareformovement));
-    #/
+    assert(isscriptfunctionptr(&prepareformovement));
     behaviorstatemachine::registerbsmscriptapiinternal(#"prepareformovement", &prepareformovement);
-    /#
-        assert(isscriptfunctionptr(&shouldtacticalarrivecondition));
-    #/
+    assert(isscriptfunctionptr(&shouldtacticalarrivecondition));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"shouldtacticalarrive", &shouldtacticalarrivecondition);
-    /#
-        assert(isscriptfunctionptr(&planhumanarrivalatcover));
-    #/
+    assert(isscriptfunctionptr(&planhumanarrivalatcover));
     behaviorstatemachine::registerbsmscriptapiinternal(#"planhumanarrivalatcover", &planhumanarrivalatcover);
-    /#
-        assert(isscriptfunctionptr(&shouldplanarrivalintocover));
-    #/
+    assert(isscriptfunctionptr(&shouldplanarrivalintocover));
     behaviorstatemachine::registerbsmscriptapiinternal(#"shouldplanarrivalintocover", &shouldplanarrivalintocover);
-    /#
-        assert(iscodefunctionptr(&btapi_shouldarriveexposed));
-    #/
+    assert(iscodefunctionptr(&btapi_shouldarriveexposed));
     behaviorstatemachine::registerbsmscriptapiinternal(#"btapi_shouldarriveexposed", &btapi_shouldarriveexposed);
-    /#
-        assert(isscriptfunctionptr(&shouldarriveexposed));
-    #/
+    assert(isscriptfunctionptr(&shouldarriveexposed));
     behaviorstatemachine::registerbsmscriptapiinternal(#"shouldarriveexposed", &shouldarriveexposed);
-    /#
-        assert(iscodefunctionptr(&btapi_humannoncombatlocomotionupdate));
-    #/
+    assert(iscodefunctionptr(&btapi_humannoncombatlocomotionupdate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"btapi_humannoncombatlocomotionupdate", &btapi_humannoncombatlocomotionupdate);
-    /#
-        assert(isscriptfunctionptr(&noncombatlocomotionupdate));
-    #/
+    assert(isscriptfunctionptr(&noncombatlocomotionupdate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"noncombatlocomotionupdate", &noncombatlocomotionupdate);
-    /#
-        assert(isscriptfunctionptr(&combatlocomotionstart));
-    #/
+    assert(isscriptfunctionptr(&combatlocomotionstart));
     behaviorstatemachine::registerbsmscriptapiinternal(#"combatlocomotionstart", &combatlocomotionstart);
-    /#
-        assert(iscodefunctionptr(&btapi_combatlocomotionupdate));
-    #/
+    assert(iscodefunctionptr(&btapi_combatlocomotionupdate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"btapi_combatlocomotionupdate", &btapi_combatlocomotionupdate);
-    /#
-        assert(isscriptfunctionptr(&combatlocomotionupdate));
-    #/
+    assert(isscriptfunctionptr(&combatlocomotionupdate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"combatlocomotionupdate", &combatlocomotionupdate);
-    /#
-        assert(iscodefunctionptr(&btapi_humannoncombatlocomotioncondition));
-    #/
+    assert(iscodefunctionptr(&btapi_humannoncombatlocomotioncondition));
     behaviorstatemachine::registerbsmscriptapiinternal(#"btapi_humannoncombatlocomotioncondition", &btapi_humannoncombatlocomotioncondition);
-    /#
-        assert(isscriptfunctionptr(&humannoncombatlocomotioncondition));
-    #/
+    assert(isscriptfunctionptr(&humannoncombatlocomotioncondition));
     behaviorstatemachine::registerbsmscriptapiinternal(#"humannoncombatlocomotioncondition", &humannoncombatlocomotioncondition);
-    /#
-        assert(iscodefunctionptr(&btapi_humancombatlocomotioncondition));
-    #/
+    assert(iscodefunctionptr(&btapi_humancombatlocomotioncondition));
     behaviorstatemachine::registerbsmscriptapiinternal(#"btapi_humancombatlocomotioncondition", &btapi_humancombatlocomotioncondition);
-    /#
-        assert(isscriptfunctionptr(&humancombatlocomotioncondition));
-    #/
+    assert(isscriptfunctionptr(&humancombatlocomotioncondition));
     behaviorstatemachine::registerbsmscriptapiinternal(#"humancombatlocomotioncondition", &humancombatlocomotioncondition);
-    /#
-        assert(iscodefunctionptr(&btapi_shouldswitchtotacticalwalkfromrun));
-    #/
+    assert(iscodefunctionptr(&btapi_shouldswitchtotacticalwalkfromrun));
     behaviorstatemachine::registerbsmscriptapiinternal(#"btapi_shouldswitchtotacticalwalkfromrun", &btapi_shouldswitchtotacticalwalkfromrun);
-    /#
-        assert(isscriptfunctionptr(&shouldswitchtotacticalwalkfromrun));
-    #/
+    assert(isscriptfunctionptr(&shouldswitchtotacticalwalkfromrun));
     behaviorstatemachine::registerbsmscriptapiinternal(#"shouldswitchtotacticalwalkfromrun", &shouldswitchtotacticalwalkfromrun);
-    /#
-        assert(isscriptfunctionptr(&preparetostopnearenemy));
-    #/
+    assert(isscriptfunctionptr(&preparetostopnearenemy));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"preparetostopnearenemy", &preparetostopnearenemy);
-    /#
-        assert(isscriptfunctionptr(&preparetostopnearenemy));
-    #/
+    assert(isscriptfunctionptr(&preparetostopnearenemy));
     behaviorstatemachine::registerbsmscriptapiinternal(#"preparetostopnearenemy", &preparetostopnearenemy);
-    /#
-        assert(isscriptfunctionptr(&preparetomoveawayfromnearbyenemy));
-    #/
+    assert(isscriptfunctionptr(&preparetomoveawayfromnearbyenemy));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"preparetomoveawayfromnearbyenemy", &preparetomoveawayfromnearbyenemy);
-    /#
-        assert(isscriptfunctionptr(&shouldtacticalwalkpain));
-    #/
+    assert(isscriptfunctionptr(&shouldtacticalwalkpain));
     behaviorstatemachine::registerbsmscriptapiinternal(#"shouldtacticalwalkpain", &shouldtacticalwalkpain);
-    /#
-        assert(isscriptfunctionptr(&begintacticalwalkpain));
-    #/
+    assert(isscriptfunctionptr(&begintacticalwalkpain));
     behaviorstatemachine::registerbsmscriptapiinternal(#"begintacticalwalkpain", &begintacticalwalkpain);
-    /#
-        assert(isscriptfunctionptr(&shouldcontinuetacticalwalkpain));
-    #/
+    assert(isscriptfunctionptr(&shouldcontinuetacticalwalkpain));
     behaviorstatemachine::registerbsmscriptapiinternal(#"shouldcontinuetacticalwalkpain", &shouldcontinuetacticalwalkpain);
-    /#
-        assert(isscriptfunctionptr(&shouldtacticalwalkscan));
-    #/
+    assert(isscriptfunctionptr(&shouldtacticalwalkscan));
     behaviorstatemachine::registerbsmscriptapiinternal(#"shouldtacticalwalkscan", &shouldtacticalwalkscan);
-    /#
-        assert(isscriptfunctionptr(&continuetacticalwalkscan));
-    #/
+    assert(isscriptfunctionptr(&continuetacticalwalkscan));
     behaviorstatemachine::registerbsmscriptapiinternal(#"continuetacticalwalkscan", &continuetacticalwalkscan);
-    /#
-        assert(isscriptfunctionptr(&tacticalwalkscanterminate));
-    #/
+    assert(isscriptfunctionptr(&tacticalwalkscanterminate));
     behaviorstatemachine::registerbsmscriptapiinternal(#"tacticalwalkscanterminate", &tacticalwalkscanterminate);
-    /#
-        assert(isscriptfunctionptr(&bsmlocomotionhasvalidpaininterrupt));
-    #/
+    assert(isscriptfunctionptr(&bsmlocomotionhasvalidpaininterrupt));
     behaviorstatemachine::registerbsmscriptapiinternal(#"bsmlocomotionhasvalidpaininterrupt", &bsmlocomotionhasvalidpaininterrupt);
 }
 
@@ -695,14 +639,14 @@ function private checkcoverarrivalconditions(coverenterpos, coverpos) {
     if (!awayfromenterpos) {
         return false;
     }
-    trace = groundtrace(coverenterpos + vectorscale((0, 0, 1), 72), coverenterpos + vectorscale((0, 0, -1), 72), 0, 0, 0);
+    trace = groundtrace(coverenterpos + (0, 0, 72), coverenterpos + (0, 0, -72), 0, 0, 0);
     if (isdefined(trace[#"position"]) && abs(trace[#"position"][2] - coverpos[2]) > 30) {
         /#
             if (getdvarint(#"ai_debugarrivals", 0)) {
                 recordcircle(coverenterpos, 1, (1, 0, 0), "<unknown string>");
                 record3dtext("<unknown string>", coverenterpos, (1, 0, 0), "<unknown string>", undefined, 0.4);
                 recordcircle(trace[#"position"], 1, (1, 0, 0), "<unknown string>");
-                record3dtext("<unknown string>" + int(abs(trace[#"position"][2] - coverpos[2])), trace[#"position"] + vectorscale((0, 0, 1), 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
+                record3dtext("<unknown string>" + int(abs(trace[#"position"][2] - coverpos[2])), trace[#"position"] + (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.4);
                 record3dtext("<unknown string>" + 30, trace[#"position"], (1, 0, 0), "<unknown string>", undefined, 0.4);
                 recordline(coverenterpos, trace[#"position"], (1, 0, 0), "<unknown string>");
             }
@@ -726,9 +670,7 @@ function private getarrivalsplittime(arrivalanim, isright) {
     bestsplit = -1;
     if (animhasnotetrack(arrivalanim, "cover_split")) {
         times = getnotetracktimes(arrivalanim, "cover_split");
-        /#
-            assert(times.size > 0);
-        #/
+        assert(times.size > 0);
         bestsplit = times[0];
     } else {
         bestsplit = 0.4;

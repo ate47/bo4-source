@@ -137,7 +137,7 @@ function function_9d65db70(einflictor, attacker, idamage, smeansofdeath, weapon,
         }
         if (weapon.name == #"gadget_radiation_field") {
             e_player = getplayers()[0];
-            trace = bullettrace(e_player.origin + vectorscale((0, 0, 1), 40), self.origin + vectorscale((0, 0, 1), 40), 0, self);
+            trace = bullettrace(e_player.origin + (0, 0, 40), self.origin + (0, 0, 40), 0, self);
             if (trace[#"fraction"] < 1) {
                 e_player thread ct_utils::function_d471f8fa(15, undefined, 1);
                 level thread function_db3dc2c2();

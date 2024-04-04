@@ -8,28 +8,14 @@
 // Method(s) 6 Total 13
 class cmp_infect_timer : cluielem {
 
-    // Namespace cmp_infect_timer/mp_infect_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0xef345fd7, Offset: 0x1e0
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cmp_infect_timer/mp_infect_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xa88732c1, Offset: 0x320
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace cmp_infect_timer/mp_infect_timer
     // Params 2, eflags: 0x0
     // Checksum 0x800210c9, Offset: 0x2d8
     // Size: 0x3c
     function function_8c8674a4(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "infectionTimeRemaining", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "infectionTimeRemaining", value);
     }
 
     // Namespace cmp_infect_timer/mp_infect_timer

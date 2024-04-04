@@ -76,7 +76,6 @@ function tomahawk_on_player_connect() {
 function private watch_for_tomahawk_throw() {
     self endon(#"disconnect");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"grenade_fire");
         e_grenade = s_result.projectile;
         w_weapon = s_result.weapon;
@@ -132,7 +131,6 @@ function private function_932e24b(w_weapon) {
 function private watch_for_tomahawk_charge() {
     self endon(#"disconnect");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"grenade_pullback");
         w_grenade = s_result.weapon;
         w_tomahawk = getweapon(#"tomahawk_t8");
@@ -356,7 +354,7 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
     }
     var_f500f73e = [];
     var_939f6f02 = 5 - var_65f2e452;
-    v_start_pos = self.origin + vectorscale((0, 0, 1), 50);
+    v_start_pos = self.origin + (0, 0, 50);
     e_ignore = self;
     do {
         s_trace = bullettrace(v_start_pos, v_start_pos + anglestoforward(self getplayerangles()) * 900, 1, e_ignore);
@@ -371,7 +369,7 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
                     var_f500f73e[var_f500f73e.size] = s_trace[#"entity"];
                 }
             }
-            v_start_pos = s_trace[#"entity"].origin + vectorscale((0, 0, 1), 50);
+            v_start_pos = s_trace[#"entity"].origin + (0, 0, 50);
             e_ignore = s_trace[#"entity"];
         }
         if (var_f500f73e.size >= var_939f6f02) {
@@ -381,7 +379,7 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
     } while (isdefined(s_trace[#"entity"]) && isinarray(a_ai_zombies, s_trace[#"entity"]));
     var_f500f73e = array::remove_undefined(var_f500f73e, 0);
     a_ai_zombies = array::remove_undefined(a_ai_zombies, 0);
-    v_start_pos = self.origin + vectorscale((0, 0, 1), 50);
+    v_start_pos = self.origin + (0, 0, 50);
     e_ignore = self;
     foreach (ai_zombie in a_ai_zombies) {
         if (var_f500f73e.size >= var_939f6f02) {
@@ -398,7 +396,7 @@ function private tomahawk_ricochet_attack(var_65f2e452, e_grenade, var_bc201c9e,
                     var_f500f73e[var_f500f73e.size] = ai_zombie;
                 }
             }
-            v_start_pos = ai_zombie.origin + vectorscale((0, 0, 1), 50);
+            v_start_pos = ai_zombie.origin + (0, 0, 50);
             e_ignore = ai_zombie;
         }
     }

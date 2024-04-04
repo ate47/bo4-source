@@ -111,7 +111,7 @@ function private function_848ff0cc(elephant, rider) {
             if (!isdefined(struct.inuse) || !struct.inuse) {
                 distsq = distancesquared(elephant.origin, struct.origin);
                 if (distsq > 200 * 200) {
-                    if (util::within_fov(rider.origin + vectorscale((0, 0, -1), 40), rider.angles, struct.origin, cos(70))) {
+                    if (util::within_fov(rider.origin + (0, 0, -40), rider.angles, struct.origin, cos(70))) {
                         array::add(validstructs, struct);
                     }
                 }
@@ -180,9 +180,7 @@ function private function_882f233() {
 // Checksum 0x25df1028, Offset: 0xa50
 // Size: 0x26e
 function private function_aef0aaa4() {
-    /#
-        assert(isdefined(self.ai.var_ed782d5));
-    #/
+    assert(isdefined(self.ai.var_ed782d5));
     forwarddir = anglestoforward(self.angles);
     var_a137cb9f = self gettagorigin("tag_weapon_right");
     if (isdefined(self.ai.var_c3f91959)) {
@@ -267,7 +265,6 @@ function private function_d13a21cb(entity, projectile) {
 // Size: 0x33c
 function private function_7d162bd0(projectile, var_e15d8b1f, var_c3f91959) {
     projectile endon(#"spear_death");
-    result = undefined;
     result = projectile waittill(#"projectile_impact_explode");
     if (!(isdefined(projectile.isdamaged) && projectile.isdamaged)) {
         if (isdefined(result.position)) {
@@ -286,9 +283,9 @@ function private function_7d162bd0(projectile, var_e15d8b1f, var_c3f91959) {
             }
             if (isdefined(function_9cc082d2(result.position, 30))) {
                 if (isdefined(var_c3f91959)) {
-                    aoe = zm_aoe::function_371b4147(id, var_f34f8a95, groundtrace(result.position + vectorscale((0, 0, 1), 8), result.position + vectorscale((0, 0, -1), 100000), 0, projectile)[#"position"], var_c3f91959);
+                    aoe = zm_aoe::function_371b4147(id, var_f34f8a95, groundtrace(result.position + (0, 0, 8), result.position + (0, 0, -100000), 0, projectile)[#"position"], var_c3f91959);
                 } else {
-                    aoe = zm_aoe::function_371b4147(id, var_f34f8a95, groundtrace(result.position + vectorscale((0, 0, 1), 8), result.position + vectorscale((0, 0, -1), 100000), 0, projectile)[#"position"]);
+                    aoe = zm_aoe::function_371b4147(id, var_f34f8a95, groundtrace(result.position + (0, 0, 8), result.position + (0, 0, -100000), 0, projectile)[#"position"]);
                 }
             }
             zombiesarray = getaiarchetypearray(#"zombie");
@@ -327,7 +324,6 @@ function private function_5ae551a6(enemy, projectile) {
 // Size: 0x56
 function private function_61d12301(projectile) {
     projectile endon(#"death");
-    result = undefined;
     result = projectile waittill(#"damage");
     projectile.isdamaged = 1;
 }

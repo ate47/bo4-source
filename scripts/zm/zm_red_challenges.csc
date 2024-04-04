@@ -106,7 +106,7 @@ function function_9ed71eeb(localclientnum, oldval, newval, bnewent, binitialsnap
         stopfx(localclientnum, self.var_9c32107c);
         self.var_9c32107c = undefined;
     }
-    v_pos = self.origin + vectorscale((0, 0, 1), 7);
+    v_pos = self.origin + (0, 0, 7);
     v_dir = anglestoforward(self.angles);
     v_pos = v_pos + v_dir * 9;
     v_up = (0, 0, 1);

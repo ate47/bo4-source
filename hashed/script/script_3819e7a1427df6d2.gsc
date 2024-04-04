@@ -9,53 +9,29 @@
 // Checksum 0x3da2e92c, Offset: 0x358
 // Size: 0x4e4
 function autoexec registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&explosivekilled));
-    #/
+    assert(isscriptfunctionptr(&explosivekilled));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"explosivekilled", &explosivekilled);
-    /#
-        assert(isscriptfunctionptr(&electrifiedkilled));
-    #/
+    assert(isscriptfunctionptr(&electrifiedkilled));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"electrifiedkilled", &electrifiedkilled);
-    /#
-        assert(isscriptfunctionptr(&burnedkilled));
-    #/
+    assert(isscriptfunctionptr(&burnedkilled));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"burnedkilled", &burnedkilled);
-    /#
-        assert(isscriptfunctionptr(&rapskilled));
-    #/
+    assert(isscriptfunctionptr(&rapskilled));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"rapskilled", &rapskilled);
-    /#
-        assert(isscriptfunctionptr(&tookflashbangdamage));
-    #/
+    assert(isscriptfunctionptr(&tookflashbangdamage));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"tookflashbangdamage", &tookflashbangdamage);
-    /#
-        assert(isscriptfunctionptr(&function_95482e2b));
-    #/
+    assert(isscriptfunctionptr(&function_95482e2b));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_5b6a2e66dc5bf7a7", &function_95482e2b);
-    /#
-        assert(isscriptfunctionptr(&function_f9a1ea10));
-    #/
+    assert(isscriptfunctionptr(&function_f9a1ea10));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_7e18cc452c8ecce8", &function_f9a1ea10);
-    /#
-        assert(isscriptfunctionptr(&function_ebf05a38));
-    #/
+    assert(isscriptfunctionptr(&function_ebf05a38));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_2bb2abb5b247ba91", &function_ebf05a38);
-    /#
-        assert(isscriptfunctionptr(&function_d63ff497));
-    #/
+    assert(isscriptfunctionptr(&function_d63ff497));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_49371f9efa84972e", &function_d63ff497);
-    /#
-        assert(isscriptfunctionptr(&function_26b6e27e));
-    #/
+    assert(isscriptfunctionptr(&function_26b6e27e));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_7c8fbf66eeb51ccb", &function_26b6e27e);
-    /#
-        assert(isscriptfunctionptr(&function_603389de));
-    #/
+    assert(isscriptfunctionptr(&function_603389de));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_1b92b6b5f1705db3", &function_603389de);
-    /#
-        assert(isscriptfunctionptr(&function_13b0963e));
-    #/
+    assert(isscriptfunctionptr(&function_13b0963e));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_62a8709f08c68d60", &function_13b0963e);
 }
 
@@ -286,9 +262,7 @@ function bb_actorgetdamagelocation() {
         possiblehitlocations[possiblehitlocations.size] = "chest";
         possiblehitlocations[possiblehitlocations.size] = "groin";
     }
-    /#
-        assert(possiblehitlocations.size > 0, possiblehitlocations.size);
-    #/
+    assert(possiblehitlocations.size > 0, possiblehitlocations.size);
     damagelocation = possiblehitlocations[randomint(possiblehitlocations.size)];
     return damagelocation;
 }
@@ -419,15 +393,9 @@ function bb_actorgetfataldamagelocation() {
 // Checksum 0xae6a2909, Offset: 0x1940
 // Size: 0x25e
 function addaioverridedamagecallback(entity, callback, addtofront) {
-    /#
-        assert(isentity(entity));
-    #/
-    /#
-        assert(isfunctionptr(callback));
-    #/
-    /#
-        assert(!isdefined(entity.aioverridedamage) || isarray(entity.aioverridedamage));
-    #/
+    assert(isentity(entity));
+    assert(isfunctionptr(callback));
+    assert(!isdefined(entity.aioverridedamage) || isarray(entity.aioverridedamage));
     if (!isdefined(entity.aioverridedamage)) {
         entity.aioverridedamage = [];
     } else if (!isarray(entity.aioverridedamage)) {
@@ -455,15 +423,9 @@ function addaioverridedamagecallback(entity, callback, addtofront) {
 // Checksum 0xd81da7cf, Offset: 0x1ba8
 // Size: 0x142
 function removeaioverridedamagecallback(entity, callback) {
-    /#
-        assert(isentity(entity));
-    #/
-    /#
-        assert(isfunctionptr(callback));
-    #/
-    /#
-        assert(isarray(entity.aioverridedamage));
-    #/
+    assert(isentity(entity));
+    assert(isfunctionptr(callback));
+    assert(isarray(entity.aioverridedamage));
     currentdamagecallbacks = entity.aioverridedamage;
     entity.aioverridedamage = [];
     foreach (value in currentdamagecallbacks) {
@@ -486,15 +448,9 @@ function clearaioverridedamagecallbacks(entity) {
 // Checksum 0x320f4f62, Offset: 0x1d20
 // Size: 0x12e
 function addaioverridekilledcallback(entity, callback) {
-    /#
-        assert(isentity(entity));
-    #/
-    /#
-        assert(isfunctionptr(callback));
-    #/
-    /#
-        assert(!isdefined(entity.aioverridekilled) || isarray(entity.aioverridekilled));
-    #/
+    assert(isentity(entity));
+    assert(isfunctionptr(callback));
+    assert(!isdefined(entity.aioverridekilled) || isarray(entity.aioverridekilled));
     if (!isdefined(entity.aioverridekilled)) {
         entity.aioverridekilled = [];
     } else if (!isarray(entity.aioverridekilled)) {

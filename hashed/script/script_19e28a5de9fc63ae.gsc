@@ -8,22 +8,6 @@
 class cfail_screen : cluielem {
 
     // Namespace cfail_screen/fail_screen
-    // Params 0, eflags: 0x8
-    // Checksum 0xeabad3f4, Offset: 0x1a8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cfail_screen/fail_screen
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xaec7d2d4, Offset: 0x290
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cfail_screen/fail_screen
     // Params 1, eflags: 0x0
     // Checksum 0x4247826b, Offset: 0x258
     // Size: 0x2c

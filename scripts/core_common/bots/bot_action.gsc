@@ -252,9 +252,7 @@ function register_weapon(weaponname, rankfunc) {
 function function_36052a7f(weaponname) {
     /#
         if (!isdefined(level.botweapons[weaponname])) {
-            /#
-                assertmsg("<unknown string>" + function_9e72a96(weaponname) + "<unknown string>");
-            #/
+            assertmsg("<unknown string>" + function_9e72a96(weaponname) + "<unknown string>");
         }
     #/
 }
@@ -564,7 +562,7 @@ function function_9e181b0f() {
             pixbeginevent(#"bot_record_action_eval");
             aiprofile_beginentry("<unknown string>");
             foreach (actionparams in self.bot.paramslist) {
-                color = vectorscale((1, 1, 1), 0.75);
+                color = (0.75, 0.75, 0.75);
                 headerstr = "<unknown string>";
                 recordrank = "<unknown string>";
                 recordweight = "<unknown string>";
@@ -1916,9 +1914,7 @@ function function_e73c8946(actionparams) {
 function function_22e2ba8c(actionparams) {
     weapon = actionparams.weapon;
     weaponclass = util::getweaponclass(weapon);
-    /#
-        assert(weaponclass == #"weapon_sniper");
-    #/
+    assert(weaponclass == #"weapon_sniper");
     while (!self function_cf788c22() && self is_target_enemy(actionparams) && self is_target_visible(actionparams) && self bot::weapon_loaded(weapon)) {
         self function_8a2b82ad(actionparams);
         self aim_at_target(actionparams);
@@ -2594,12 +2590,8 @@ function function_d2e41376(var_9d9ae85, eyes, fwd, right, up, var_ea5b64df, clos
         }
         var_18451fac = var_dafe1813 * 0.25;
         var_d83e24eb = var_dafe1813;
-        /#
-            assert(var_18451fac > 0);
-        #/
-        /#
-            assert(var_d83e24eb > 0);
-        #/
+        assert(var_18451fac > 0);
+        assert(var_d83e24eb > 0);
         var_b91ee594 = vectordot(var_24e5c8be, right) < 0;
         if (var_b91ee594) {
             aimoffset = right * randomfloatrange(var_d83e24eb * -1, var_18451fac);
@@ -2887,7 +2879,7 @@ function function_3a2f51fd(actionparams) {
     /#
         if (self bot::should_record("<unknown string>") && isdefined(actionparams.aimpoint)) {
             recordsphere(actionparams.aimpoint, 4, (1, 0, 0), "<unknown string>");
-            record3dtext("<unknown string>", actionparams.aimpoint + vectorscale((0, 0, 1), 5), (1, 0, 0), "<unknown string>", undefined, 0.5);
+            record3dtext("<unknown string>", actionparams.aimpoint + (0, 0, 5), (1, 0, 0), "<unknown string>", undefined, 0.5);
         }
     #/
 }
@@ -3008,7 +3000,7 @@ function look_at_point(point, var_e125ba43, debugcolor) {
     /#
         if (self bot::should_record("<unknown string>")) {
             recordsphere(point, 4, debugcolor, "<unknown string>");
-            record3dtext(var_e125ba43, point + vectorscale((0, 0, 1), 5), debugcolor, "<unknown string>", undefined, 0.5);
+            record3dtext(var_e125ba43, point + (0, 0, 5), debugcolor, "<unknown string>", undefined, 0.5);
         }
     #/
 }
@@ -3057,7 +3049,7 @@ function function_2b8f7067() {
                         }
                         continue;
                     }
-                    if (!function_96c81b85(var_7607a546, point.origin + vectorscale((0, 0, 1), 60))) {
+                    if (!function_96c81b85(var_7607a546, point.origin + (0, 0, 60))) {
                         if (!array::contains(var_4a39f740, currentpoint)) {
                             var_4a39f740[var_4a39f740.size] = currentpoint;
                         }

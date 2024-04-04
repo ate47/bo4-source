@@ -9,22 +9,6 @@
 class cbountyhunterbuy : cluielem {
 
     // Namespace cbountyhunterbuy/bountyhunterbuy
-    // Params 0, eflags: 0x8
-    // Checksum 0x1db036f, Offset: 0x190
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cbountyhunterbuy/bountyhunterbuy
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x6c9ce330, Offset: 0x260
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cbountyhunterbuy/bountyhunterbuy
     // Params 1, eflags: 0x0
     // Checksum 0x7e283f78, Offset: 0x230
     // Size: 0x24

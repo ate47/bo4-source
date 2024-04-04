@@ -164,12 +164,12 @@ function function_ca6698c6() {
     helicopter.do_scripted_crash = 0;
     helicopter thread helicopter::heli_health("overwatch_helicopter");
     helicopter setcandamage(1);
-    target_set(helicopter, vectorscale((0, 0, -1), 100));
+    target_set(helicopter, (0, 0, -100));
     target_setallowhighsteering(helicopter, 1);
     helicopter setrotorspeed(1);
     helicopter thread heatseekingmissile::missiletarget_proximitydetonateincomingmissile("death");
     helicopter.numflares = 1;
-    helicopter thread helicopter::create_flare_ent(vectorscale((0, 0, -1), 100));
+    helicopter thread helicopter::create_flare_ent((0, 0, -100));
     helicopter.totalrockethits = 0;
     helicopter.turretrockethits = 0;
     helicopter.overridevehicledamage = &function_a0068ca0;
@@ -343,7 +343,6 @@ function function_520df983(helicopter) {
 // Checksum 0xa802eb99, Offset: 0x1a90
 // Size: 0xb4
 function function_a9fc0ef6(helicopter) {
-    waitresult = undefined;
     waitresult = helicopter waittill(#"hash_3904c1a9ebdc27de");
     attacker = waitresult.attacker;
     if (!(isdefined(helicopter.var_570c07f9) && helicopter.var_570c07f9)) {
@@ -361,9 +360,7 @@ function function_a9fc0ef6(helicopter) {
 function watchplayerteamchangethread(helicopter) {
     helicopter notify(#"hash_73c07c54a285eb73");
     helicopter endon(#"hash_73c07c54a285eb73", #"overwatch_hacked");
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     player endon(#"overwatch_left");
     player waittill(#"joined_team", #"disconnect", #"joined_spectators");
@@ -464,7 +461,6 @@ function function_c4b00a04(startnode, protectdest, hardpointtype, heli_team) {
             self.var_478039e8 = 1;
         }
         var_520e3459 = randomintrange(level.var_739f9c79, level.var_b6d2e275);
-        waitresult = undefined;
         waitresult = self waittilltimeout(var_520e3459, #"locking on", #"locking on hacking", #"damage state");
         newdest = heli_get_protect_spot(protectdest, undefined, heli_team);
         self.protectdest = protectdest;
@@ -500,27 +496,19 @@ function function_af77f078(helicopter) {
 // Checksum 0x1552a7e2, Offset: 0x24c8
 // Size: 0x42e
 function heli_get_protect_spot(protectdest, var_551cf1b9, heli_team) {
-    /#
-        assert(isdefined(level.var_93215f31));
-    #/
+    assert(isdefined(level.var_93215f31));
     if (!isdefined(var_551cf1b9)) {
         var_551cf1b9 = level.var_93215f31;
     }
     min_radius = int(var_551cf1b9 * 0.6);
     max_radius = var_551cf1b9;
     groundpos = getclosestpointonnavmesh(protectdest, 10000);
-    /#
-        assert(isdefined(level.var_bf127508) && isdefined(level.var_5f6d1a12));
-    #/
-    /#
-        assert(isdefined(level.var_5f6d1a12 >= level.var_bf127508));
-    #/
+    assert(isdefined(level.var_bf127508) && isdefined(level.var_5f6d1a12));
+    assert(isdefined(level.var_5f6d1a12 >= level.var_bf127508));
     heightmin = level.var_bf127508;
     heightmax = level.var_5f6d1a12;
     if (heli_team == #"axis") {
-        /#
-            assert(isdefined(level.var_fb59767));
-        #/
+        assert(isdefined(level.var_fb59767));
         heightmin = heightmin + level.var_fb59767;
         heightmax = heightmax + level.var_fb59767;
     }
@@ -563,9 +551,7 @@ function heli_get_protect_spot(protectdest, var_551cf1b9, heli_team) {
 // Checksum 0x164b6fad, Offset: 0x2900
 // Size: 0x4de
 function function_ab667e1c(owner, helicopter) {
-    /#
-        assert(isdefined(helicopter));
-    #/
+    assert(isdefined(helicopter));
     owner.var_e60e2941 = [];
     helicopter.var_e60e2941 = [];
     aitypes = level.var_3c5cbd62[#"axis"];
@@ -593,13 +579,13 @@ function function_ab667e1c(owner, helicopter) {
         aiutility::addaioverridedamagecallback(swat_gunner, &swat_team::function_47cf421e);
         swat_gunner callback::function_d8abfc3d(#"on_ai_damage", &function_8338a92d);
         if (i == 0) {
-            swat_gunner linkto(helicopter, "tag_rider1", (0, 0, 0), vectorscale((0, 1, 0), 90));
+            swat_gunner linkto(helicopter, "tag_rider1", (0, 0, 0), (0, 90, 0));
             swat_gunner.ai.swat_gunner = 1;
             helicopter.leftgunner = swat_gunner;
             swat_gunner function_7fac6670(swat_gunner);
             swat_gunner thread function_64b435c4(swat_gunner);
         } else if (i == 1) {
-            swat_gunner linkto(helicopter, "tag_rider2", (0, 0, 0), vectorscale((0, -1, 0), 90));
+            swat_gunner linkto(helicopter, "tag_rider2", (0, 0, 0), (0, -90, 0));
             swat_gunner.ai.swat_gunner = 1;
             helicopter.var_e8b1fa34 = swat_gunner;
             swat_gunner function_7fac6670(swat_gunner);
@@ -633,9 +619,7 @@ function function_64b435c4(ai) {
                 continue;
             }
             type = isdefined(ai.classname) ? "" + ai.classname : "";
-            /#
-                println("<unknown string>" + type + "<unknown string>");
-            #/
+            println("<unknown string>" + type + "<unknown string>");
             playfxontag(sniper_glint, ai, "tag_eye");
         }
     }
@@ -652,7 +636,6 @@ function function_b8047055(swat_gunner, helicopter) {
         event = undefined;
         if (isdefined(self.enemy)) {
             enemy = self.enemy;
-            result = undefined;
             result = self waittill(#"enemy");
             if (isdefined(self.enemy)) {
                 event = "found_new_enemy";
@@ -660,7 +643,6 @@ function function_b8047055(swat_gunner, helicopter) {
                 event = "lost_enemy";
             }
         } else {
-            result = undefined;
             result = self waittill(#"enemy");
             event = "found_new_enemy";
         }

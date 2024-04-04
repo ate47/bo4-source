@@ -41,7 +41,6 @@ function event() {
     var_3c24cb96 = 0;
     self thread bgb::set_timer(3, 3);
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage", #"damage_armor");
         type = waitresult.mod;
         attacker = waitresult.attacker;

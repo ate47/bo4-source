@@ -31,7 +31,6 @@ function __init__() {
 function scriptstruct_debug_render() {
     /#
         while (true) {
-            waitresult = undefined;
             waitresult = level waittill(#"liveupdate");
             if (isdefined(waitresult.selected_struct)) {
                 level thread render_struct(waitresult.selected_struct);
@@ -50,7 +49,7 @@ function render_struct(selected_struct) {
     /#
         self endon(#"stop_struct_render");
         while (isdefined(selected_struct) && isdefined(selected_struct.origin)) {
-            box(selected_struct.origin, vectorscale((-1, -1, -1), 16), vectorscale((1, 1, 1), 16), 0, (1, 0.4, 0.4));
+            box(selected_struct.origin, (-16, -16, -16), (16, 16, 16), 0, (1, 0.4, 0.4));
             wait(0.01);
         }
     #/

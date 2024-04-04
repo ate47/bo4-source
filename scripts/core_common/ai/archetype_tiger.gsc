@@ -22,21 +22,16 @@
 // Method(s) 2 Total 2
 class class_c40841ac {
 
+    var adjustmentstarted;
+    var var_425c4c8b;
+
     // Namespace class_c40841ac/archetype_tiger
     // Params 0, eflags: 0x9 linked
     // Checksum 0x3a3aeb3f, Offset: 0x2cd0
     // Size: 0x1a
-    __constructor() {
-        self.adjustmentstarted = 0;
-        self.var_425c4c8b = 1;
-    }
-
-    // Namespace class_c40841ac/archetype_tiger
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x2cf8
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        adjustmentstarted = 0;
+        var_425c4c8b = 1;
     }
 
 }
@@ -47,87 +42,43 @@ class class_c40841ac {
 // Size: 0xa7c
 function autoexec registerbehaviorscriptfunctions() {
     spawner::add_archetype_spawn_function(#"tiger", &function_1637910a);
-    /#
-        assert(isscriptfunctionptr(&tigertargetservice));
-    #/
+    assert(isscriptfunctionptr(&tigertargetservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"tigertargetservice", &tigertargetservice);
-    /#
-        assert(isscriptfunctionptr(&tigershouldmelee));
-    #/
+    assert(isscriptfunctionptr(&tigershouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"tigershouldmelee", &tigershouldmelee);
-    /#
-        assert(isscriptfunctionptr(&tigershouldmelee));
-    #/
+    assert(isscriptfunctionptr(&tigershouldmelee));
     behaviorstatemachine::registerbsmscriptapiinternal(#"tigershouldmelee", &tigershouldmelee);
-    /#
-        assert(isscriptfunctionptr(&function_6dc4602d));
-    #/
+    assert(isscriptfunctionptr(&function_6dc4602d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_761781d8d1315760", &function_6dc4602d);
-    /#
-        assert(isscriptfunctionptr(&function_6dc4602d));
-    #/
+    assert(isscriptfunctionptr(&function_6dc4602d));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_761781d8d1315760", &function_6dc4602d);
-    /#
-        assert(isscriptfunctionptr(&function_36b5df8c));
-    #/
+    assert(isscriptfunctionptr(&function_36b5df8c));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_121b237a33ad1e99", &function_36b5df8c);
-    /#
-        assert(isscriptfunctionptr(&function_36b5df8c));
-    #/
+    assert(isscriptfunctionptr(&function_36b5df8c));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_121b237a33ad1e99", &function_36b5df8c);
-    /#
-        assert(isscriptfunctionptr(&function_fdde7116));
-    #/
+    assert(isscriptfunctionptr(&function_fdde7116));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6263cd4f7b34692e", &function_fdde7116);
-    /#
-        assert(isscriptfunctionptr(&function_fdde7116));
-    #/
+    assert(isscriptfunctionptr(&function_fdde7116));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_6263cd4f7b34692e", &function_fdde7116);
-    /#
-        assert(isscriptfunctionptr(&function_66063225));
-    #/
+    assert(isscriptfunctionptr(&function_66063225));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4068cafe20c75854", &function_66063225);
-    /#
-        assert(isscriptfunctionptr(&function_66063225));
-    #/
+    assert(isscriptfunctionptr(&function_66063225));
     behaviorstatemachine::registerbsmscriptapiinternal(#"hash_4068cafe20c75854", &function_66063225);
-    /#
-        assert(!isdefined(&function_e0f73303) || isscriptfunctionptr(&function_e0f73303));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_351bcb1b) || isscriptfunctionptr(&function_351bcb1b));
-    #/
+    assert(!isdefined(&function_e0f73303) || isscriptfunctionptr(&function_e0f73303));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_351bcb1b) || isscriptfunctionptr(&function_351bcb1b));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_374d5c1343974286", &function_e0f73303, undefined, &function_351bcb1b);
-    /#
-        assert(!isdefined(&function_37e8c141) || isscriptfunctionptr(&function_37e8c141));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&function_4c2b7bad) || isscriptfunctionptr(&function_4c2b7bad));
-    #/
+    assert(!isdefined(&function_37e8c141) || isscriptfunctionptr(&function_37e8c141));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&function_4c2b7bad) || isscriptfunctionptr(&function_4c2b7bad));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_2e58caee41c5d7a1", &function_37e8c141, undefined, &function_4c2b7bad);
-    /#
-        assert(!isdefined(&function_d65e3f15) || isscriptfunctionptr(&function_d65e3f15));
-    #/
-    /#
-        assert(!isdefined(&p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf) || isscriptfunctionptr(&p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf));
-    #/
-    /#
-        assert(!isdefined(&function_4fc73b37) || isscriptfunctionptr(&function_4fc73b37));
-    #/
+    assert(!isdefined(&function_d65e3f15) || isscriptfunctionptr(&function_d65e3f15));
+    assert(!isdefined(&p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf) || isscriptfunctionptr(&p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf));
+    assert(!isdefined(&function_4fc73b37) || isscriptfunctionptr(&function_4fc73b37));
     behaviortreenetworkutility::registerbehaviortreeaction(#"hash_167c243dad6945a8", &function_d65e3f15, &p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf, &function_4fc73b37);
-    /#
-        assert(isscriptfunctionptr(&function_40b8200d));
-    #/
+    assert(isscriptfunctionptr(&function_40b8200d));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_6d3bf729ded27272", &function_40b8200d);
-    /#
-        assert(isscriptfunctionptr(&function_1055f5e7));
-    #/
+    assert(isscriptfunctionptr(&function_1055f5e7));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_595b57a789c88ad7", &function_1055f5e7);
     animationstatenetwork::registeranimationmocomp("mocomp_tiger_pounce", &function_a4f5b046, &function_2e8439bf, &function_7467b3c0);
     animationstatenetwork::registeranimationmocomp("mocomp_tiger_melee", &function_5543b423, &function_345c8845, &function_933e34b9);
@@ -222,9 +173,7 @@ function getyaw(org) {
 // Checksum 0x7cf9b2aa, Offset: 0x10f8
 // Size: 0x92
 function absyawtoenemy() {
-    /#
-        assert(isdefined(self.enemy));
-    #/
+    assert(isdefined(self.enemy));
     yaw = self.angles[1] - getyaw(self.enemy.origin);
     yaw = angleclamp180(yaw);
     if (yaw < 0) {
@@ -656,7 +605,7 @@ function private p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67
     if (distancesquared(eye_pos, enemy_eye_pos) > entity.meleeweapon.aimeleerange * entity.meleeweapon.aimeleerange) {
         return 5;
     }
-    trace = physicstrace(eye_pos, enemy_eye_pos, vectorscale((-1, -1, -1), 15), vectorscale((1, 1, 1), 15), self);
+    trace = physicstrace(eye_pos, enemy_eye_pos, (-15, -15, -15), (15, 15, 15), self);
     if (trace[#"fraction"] < 1) {
         hit_ent = trace[#"entity"];
     }
@@ -783,9 +732,7 @@ function function_a4f5b046(entity, mocompanim, mocompanimblendouttime, mocompani
 // Checksum 0x2f4a36b5, Offset: 0x3178
 // Size: 0xa3c
 function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration) {
-    /#
-        assert(isdefined(self.meleeinfo));
-    #/
+    assert(isdefined(self.meleeinfo));
     currentanimtime = entity getanimtime(mocompanim);
     if (currentanimtime >= self.var_ce44ec9f && currentanimtime <= self.minigun_killstreak_minigun_inbound) {
         self.var_47c91780 = 1;
@@ -807,17 +754,17 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
         var_65cbfb52 = distancesquared(self.meleeinfo.var_9bfa8497, self.meleeinfo.adjustedendpos);
         if (var_776ddabf <= 35 * 35) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 <= 200 * 200) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         } else if (var_65cbfb52 >= 400 * 400) {
             /#
-                record3dtext("<unknown string>", entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                record3dtext("<unknown string>", entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
             #/
             self.meleeinfo.var_425c4c8b = 0;
         }
@@ -835,9 +782,9 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
             /#
                 reasons = "<unknown string>" + isvisible + "<unknown string>" + withinzrange + "<unknown string>" + withinfov;
                 if (var_425c4c8b) {
-                    record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (0, 1, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (0, 1, 0), "<unknown string>");
                 } else {
-                    record3dtext(reasons, entity.origin + vectorscale((0, 0, 1), 60), (1, 0, 0), "<unknown string>");
+                    record3dtext(reasons, entity.origin + (0, 0, 60), (1, 0, 0), "<unknown string>");
                 }
             #/
             if (var_425c4c8b) {
@@ -861,9 +808,7 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
         }
     }
     if (self.meleeinfo.adjustmentstarted && currentanimtime <= self.meleeinfo.var_6392c3a2) {
-        /#
-            assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
-        #/
+        assert(isdefined(self.meleeinfo.var_10b8b6d1) && isdefined(self.meleeinfo.var_8b9a15a6));
         /#
             recordsphere(self.meleeinfo.var_cb28f380, 3, (0, 1, 0), "<unknown string>");
             recordsphere(self.meleeinfo.adjustedendpos, 3, (0, 0, 1), "<unknown string>");
@@ -1061,7 +1006,7 @@ function function_5ee65256(entity) {
     }
     eye_pos = entity util::get_eye();
     enemy_eye_pos = entity util::get_eye();
-    trace = physicstrace(eye_pos, enemy_eye_pos, vectorscale((-1, -1, -1), 15), vectorscale((1, 1, 1), 15), self);
+    trace = physicstrace(eye_pos, enemy_eye_pos, (-15, -15, -15), (15, 15, 15), self);
     if (trace[#"fraction"] < 1) {
         hit_ent = trace[#"entity"];
     }

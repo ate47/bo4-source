@@ -333,7 +333,6 @@ function vo_on_damage(str_vo, var_f4b1cabb = 1, n_rest = 10, var_515667fb = #"ax
     e_player = get_player();
     e_player endon(#"death");
     do {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         var_17ec8061 = !isdefined(s_notify.attacker) || s_notify.attacker.team == var_515667fb;
         var_d8d43f9a = !isdefined(str_mod) || s_notify.mod === str_mod;

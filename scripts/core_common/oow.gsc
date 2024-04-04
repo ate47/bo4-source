@@ -39,9 +39,7 @@ function on_game_playing() {
         if (mapbundle.var_aa91547b != 0 || mapbundle.var_eac026ad != 0) {
             level.oow.height_min = isdefined(mapbundle.var_aa91547b) ? mapbundle.var_aa91547b : 0;
             level.oow.height_max = isdefined(mapbundle.var_eac026ad) ? mapbundle.var_eac026ad : 0;
-            /#
-                assert(level.oow.height_min <= level.oow.height_max);
-            #/
+            assert(level.oow.height_min <= level.oow.height_max);
             if (!(level.oow.height_min <= level.oow.height_max)) {
                 return;
             }

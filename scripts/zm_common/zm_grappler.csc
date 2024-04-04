@@ -39,9 +39,7 @@ function grappler_source(localclientnum, oldval, newval, bnewent, binitialsnap, 
     if (!isdefined(level.grappler_sources)) {
         level.grappler_sources = [];
     }
-    /#
-        assert(!isdefined(level.grappler_sources[newval]));
-    #/
+    assert(!isdefined(level.grappler_sources[newval]));
     level.grappler_sources[newval] = self;
     level notify("grapple_id_" + newval);
 }
@@ -58,9 +56,7 @@ function grappler_beam(localclientnum, oldval, newval, bnewent, binitialsnap, fi
     if (!isdefined(level.grappler_sources[newval])) {
         level waittilltimeout(1, "grapple_id_" + newval);
     }
-    /#
-        assert(isdefined(level.grappler_sources[newval]));
-    #/
+    assert(isdefined(level.grappler_sources[newval]));
     pivot = level.grappler_sources[newval];
     if (!isdefined(pivot)) {
         return;

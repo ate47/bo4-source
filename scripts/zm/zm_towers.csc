@@ -372,7 +372,7 @@ function fertilizer_smell(localclientnum, oldval, newval, bnewent, binitialsnap,
 function function_8fc72b02(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     s_fx = struct::get(#"hash_44451a49b3653789");
     if (newval) {
-        s_fx.var_c0a2fa6f = playfx(localclientnum, level._effect[#"hash_5a3e1454226ef7a4"], s_fx.origin + vectorscale((0, 0, 1), 4), anglestoforward(s_fx.angles), anglestoup(s_fx.angles));
+        s_fx.var_c0a2fa6f = playfx(localclientnum, level._effect[#"hash_5a3e1454226ef7a4"], s_fx.origin + (0, 0, 4), anglestoforward(s_fx.angles), anglestoup(s_fx.angles));
         audio::playloopat("zmb_funtime_fert_smell_lp", s_fx.origin);
         return;
     }
@@ -758,9 +758,7 @@ function crowd_react(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
 // Checksum 0x1d345ccd, Offset: 0x5990
 // Size: 0xfec
 function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
-    /#
-        assert(isdefined(var_eafa8a1a), "tag_eye");
-    #/
+    assert(isdefined(var_eafa8a1a), "tag_eye");
     var_55a37c48 = isdefined(var_55a37c48) ? var_55a37c48 : randomfloatrange(0.75, 1);
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
@@ -840,9 +838,7 @@ function function_628c5b1f(str_group, var_eafa8a1a, var_55a37c48) {
 // Checksum 0x370f30, Offset: 0x6988
 // Size: 0xbca
 function function_1e3bd96a(str_group, var_eafa8a1a, var_55a37c48) {
-    /#
-        assert(isdefined(var_eafa8a1a), "vox_plr_3_exert_punch_give");
-    #/
+    assert(isdefined(var_eafa8a1a), "vox_plr_3_exert_punch_give");
     var_55a37c48 = isdefined(var_55a37c48) ? var_55a37c48 : randomfloatrange(0.75, 1);
     switch (var_eafa8a1a) {
     case #"seated_to_angry":
@@ -1843,7 +1839,7 @@ function function_a7b41dea(localclientnum, oldval, newval, bnewent, binitialsnap
     if (!isdefined(level.var_25faefd0)) {
         v_origin = var_30f4bba7 gettagorigin("j_lid");
         v_angles = var_30f4bba7 gettagangles("j_lid");
-        v_angles = v_angles + vectorscale((0, 1, 0), 90);
+        v_angles = v_angles + (0, 90, 0);
         level.var_25faefd0 = util::spawn_model(localclientnum, "tag_origin", v_origin, v_angles);
         level.var_25faefd0 linkto(var_30f4bba7, "j_lid");
     }
@@ -2215,29 +2211,25 @@ function soundloopthink() {
         self.script_sound = "zmb_spawn_walla";
     }
     notifyname = "";
-    /#
-        assert(isdefined(notifyname));
-    #/
+    assert(isdefined(notifyname));
     if (isdefined(self.script_string)) {
         notifyname = self.script_string;
     }
-    /#
-        assert(isdefined(notifyname));
-    #/
+    assert(isdefined(notifyname));
     started = 1;
     if (isdefined(self.script_int)) {
         started = self.script_int != 0;
     }
     if (started) {
-        soundloopemitter(self.script_sound, self.origin + vectorscale((0, 0, 1), 60));
+        soundloopemitter(self.script_sound, self.origin + (0, 0, 60));
     }
     if (notifyname != "") {
         for (;;) {
             level waittill(notifyname);
             if (started) {
-                soundstoploopemitter(self.script_sound, self.origin + vectorscale((0, 0, 1), 60));
+                soundstoploopemitter(self.script_sound, self.origin + (0, 0, 60));
             } else {
-                soundloopemitter(self.script_sound, self.origin + vectorscale((0, 0, 1), 60));
+                soundloopemitter(self.script_sound, self.origin + (0, 0, 60));
             }
             started = !started;
         }

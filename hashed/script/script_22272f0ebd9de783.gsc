@@ -170,7 +170,6 @@ function function_45a2294f(str_id) {
 function function_6f34f900() {
     level endon(#"traps_cooldown");
     while (true) {
-        s_info = undefined;
         s_info = self waittill(#"trigger");
         e_player = s_info.activator;
         if (!isplayer(e_player)) {

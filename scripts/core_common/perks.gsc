@@ -12,12 +12,8 @@ function perk_setperk(str_perk) {
     if (!isdefined(self.var_fb3c9d6a[str_perk])) {
         self.var_fb3c9d6a[str_perk] = 0;
     }
-    /#
-        assert(self.var_fb3c9d6a[str_perk] >= 0, "<unknown string>");
-    #/
-    /#
-        assert(self.var_fb3c9d6a[str_perk] < 23, "<unknown string>");
-    #/
+    assert(self.var_fb3c9d6a[str_perk] >= 0, "<unknown string>");
+    assert(self.var_fb3c9d6a[str_perk] < 23, "<unknown string>");
     self.var_fb3c9d6a[str_perk]++;
     self setperk(str_perk);
 }
@@ -34,9 +30,7 @@ function perk_unsetperk(str_perk) {
         self.var_fb3c9d6a[str_perk] = 0;
     }
     self.var_fb3c9d6a[str_perk]--;
-    /#
-        assert(self.var_fb3c9d6a[str_perk] >= 0, "<unknown string>");
-    #/
+    assert(self.var_fb3c9d6a[str_perk] >= 0, "<unknown string>");
     if (self.var_fb3c9d6a[str_perk] <= 0) {
         self unsetperk(str_perk);
     }

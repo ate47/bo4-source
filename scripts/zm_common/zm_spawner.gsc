@@ -320,9 +320,7 @@ function should_skip_teardown(find_flesh_struct_string) {
 // Size: 0x1ea
 function zombie_think() {
     self endon(#"death");
-    /#
-        assert(!self.isdog);
-    #/
+    assert(!self.isdog);
     self.ai_state = "zombie_think";
     find_flesh_struct_string = undefined;
     if (isdefined(level.zombie_custom_think_logic)) {
@@ -339,7 +337,6 @@ function zombie_think() {
         } else {
             self thread do_zombie_spawn();
         }
-        waitresult = undefined;
         waitresult = self waittill(#"risen");
         find_flesh_struct_string = waitresult.find_flesh_struct_string;
     }
@@ -462,7 +459,6 @@ function zombie_assure_node() {
 // Checksum 0x5ce35259, Offset: 0x1ff0
 // Size: 0x50
 function zombie_bad_path() {
-    var_29b8f3d0 = undefined;
     var_29b8f3d0 = self waittilltimeout(2, #"bad_path");
     if (var_29b8f3d0._notify === "bad_path") {
         return true;
@@ -506,7 +502,6 @@ function do_a_taunt() {
 function taunt_notetracks(msg) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(msg);
         if (waitresult.notetrack == "end") {
             self forceteleport(self.old_origin);
@@ -563,7 +558,6 @@ function should_attack_player_thru_boards() {
 function window_notetracks(msg) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(msg);
         if (waitresult.notetrack == "end") {
             self teleport(self.old_origin);
@@ -646,7 +640,6 @@ function get_attack_spot_index(node) {
 function zombie_tear_notetracks(msg, chunk, node) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(msg);
         if (waitresult.notetrack == "end") {
             return;
@@ -1067,7 +1060,6 @@ function private flame_corpse_fx() {
         str_clientfield = "flame_corpse_fx";
     }
     self clientfield::set(str_clientfield, 1);
-    s_result = undefined;
     s_result = self waittilltimeout(10, #"actor_corpse", #"deleted");
     if (isdefined(self)) {
         self clientfield::set(str_clientfield, 0);
@@ -1092,7 +1084,6 @@ function private flame_corpse_fx() {
 // Size: 0x50
 function private function_2cc66() {
     level.var_d39e8272++;
-    s_result = undefined;
     s_result = self waittill(#"death", #"hash_244b83097f062847");
     level.var_d39e8272--;
 }
@@ -1140,9 +1131,7 @@ function player_using_hi_score_weapon(player) {
 // Checksum 0x4ce79a8a, Offset: 0x4bb8
 // Size: 0x2c
 function register_zombie_damage_callback(func) {
-    /#
-        assertmsg("<unknown string>");
-    #/
+    assertmsg("<unknown string>");
 }
 
 // Namespace zm_spawner/zm_spawner
@@ -1211,7 +1200,6 @@ function zombie_explodes_intopieces(random_gibs) {
 function zombie_death_event(zombie) {
     zombie.marked_for_recycle = 0;
     force_head_gib = 0;
-    waitresult = undefined;
     waitresult = zombie waittill(#"death");
     attacker = waitresult.attacker;
     time_of_death = gettime();
@@ -1255,9 +1243,7 @@ function zombie_death_event(zombie) {
             attacker zm_stats::increment_player_stat("melee_kills");
             attacker notify(#"melee_kill");
             attacker zm_stats::function_8f10788e("boas_melee_kills");
-            /#
-                println("<unknown string>");
-            #/
+            println("<unknown string>");
         }
         attacker demo::add_actor_bookmark_kill_time();
         attacker.kills++;
@@ -1602,11 +1588,7 @@ function do_zombie_spawn() {
     }
     if (spots.size == 0) {
         if (!level util::function_88c74107() && !level.gameended) {
-            /#
-                /#
-                    assertmsg("<unknown string>");
-                #/
-            #/
+            assertmsg("<unknown string>");
         }
         spots = struct::get_array("spawn_location", "script_noteworthy");
     }
@@ -1643,9 +1625,7 @@ function do_zombie_spawn() {
 // Checksum 0x8e27e25a, Offset: 0x7230
 // Size: 0x132
 function function_20e7d186(var_493c4730) {
-    /#
-        assert(var_493c4730.size > 0, "<unknown string>");
-    #/
+    assert(var_493c4730.size > 0, "<unknown string>");
     if (getdvarint(#"hash_32f24948d4a09f0e", 1)) {
         spawn_info = function_dce9f1a6(var_493c4730);
         var_cf6e6a44 = spawn_info.spot;
@@ -1685,7 +1665,7 @@ function draw_zone_spawned_from() {
     /#
         self endon(#"death");
         while (true) {
-            print3d(self.origin + vectorscale((0, 0, 1), 64), self.zone_spawned_from, (1, 1, 1));
+            print3d(self.origin + (0, 0, 64), self.zone_spawned_from, (1, 1, 1));
             waitframe(1);
         }
     #/
@@ -1941,7 +1921,6 @@ function function_45bb11e4(spot) {
 // Checksum 0xfa2f833f, Offset: 0x84b0
 // Size: 0x44
 function function_2d97cae1() {
-    waitresult = undefined;
     waitresult = self waittilltimeout(1, #"death");
     self function_fe3cb19a();
 }

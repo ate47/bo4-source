@@ -89,9 +89,7 @@ function gettweakabledvarvalue(category, name) {
         dvar = undefined;
         break;
     }
-    /#
-        assert(isdefined(dvar));
-    #/
+    assert(isdefined(dvar));
     value = getdvarint(dvar, 0);
     return value;
 }
@@ -130,9 +128,7 @@ function gettweakabledvar(category, name) {
         value = undefined;
         break;
     }
-    /#
-        assert(isdefined(value));
-    #/
+    assert(isdefined(value));
     return value;
 }
 
@@ -174,9 +170,7 @@ function gettweakablevalue(category, name) {
     if (getdvarstring(overridedvar) != "") {
         return getdvarint(overridedvar, 0);
     }
-    /#
-        assert(isdefined(value));
-    #/
+    assert(isdefined(value));
     return value;
 }
 
@@ -214,9 +208,7 @@ function gettweakablelastvalue(category, name) {
         value = undefined;
         break;
     }
-    /#
-        assert(isdefined(value));
-    #/
+    assert(isdefined(value));
     return value;
 }
 

@@ -9,12 +9,8 @@ function registerbehaviortreescriptapi(functionname, functionptr, allowedcallspe
     if (!isdefined(level._behaviortreescriptfunctions)) {
         level._behaviortreescriptfunctions = [];
     }
-    /#
-        assert(isdefined(functionname) && isdefined(functionptr), "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level._behaviortreescriptfunctions[functionname]), "<unknown string>");
-    #/
+    assert(isdefined(functionname) && isdefined(functionptr), "<unknown string>");
+    assert(!isdefined(level._behaviortreescriptfunctions[functionname]), "<unknown string>");
     level._behaviortreescriptfunctions[functionname] = functionptr;
     if (isdefined(allowedcallsperframe)) {
         registerlimitedbehaviortreeapi(functionname, allowedcallsperframe);
@@ -29,29 +25,19 @@ function registerbehaviortreeaction(actionname, startfuncptr, updatefuncptr, ter
     if (!isdefined(level._behaviortreeactions)) {
         level._behaviortreeactions = [];
     }
-    /#
-        assert(isdefined(actionname), "<unknown string>");
-    #/
-    /#
-        assert(!isdefined(level._behaviortreeactions[actionname]), "<unknown string>" + actionname + "<unknown string>");
-    #/
+    assert(isdefined(actionname), "<unknown string>");
+    assert(!isdefined(level._behaviortreeactions[actionname]), "<unknown string>" + actionname + "<unknown string>");
     level._behaviortreeactions[actionname] = array();
     if (isdefined(startfuncptr)) {
-        /#
-            assert(isfunctionptr(startfuncptr), "<unknown string>");
-        #/
+        assert(isfunctionptr(startfuncptr), "<unknown string>");
         level._behaviortreeactions[actionname][#"bhtn_action_start"] = startfuncptr;
     }
     if (isdefined(updatefuncptr)) {
-        /#
-            assert(isfunctionptr(updatefuncptr), "<unknown string>");
-        #/
+        assert(isfunctionptr(updatefuncptr), "<unknown string>");
         level._behaviortreeactions[actionname][#"bhtn_action_update"] = updatefuncptr;
     }
     if (isdefined(terminatefuncptr)) {
-        /#
-            assert(isfunctionptr(terminatefuncptr), "<unknown string>");
-        #/
+        assert(isfunctionptr(terminatefuncptr), "<unknown string>");
         level._behaviortreeactions[actionname][#"bhtn_action_terminate"] = terminatefuncptr;
     }
 }

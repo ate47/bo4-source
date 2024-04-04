@@ -112,7 +112,6 @@ function function_91fabcb(mdl_item, b_clean_up = 0) {
         self thread function_9aec1610(mdl_item);
     }
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         mdl_item clientfield::set("" + #"forcestream_crafted_item", 1);
         wait(3);
@@ -140,7 +139,6 @@ function function_9aec1610(mdl_item) {
 function function_25f97da0() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "spartan_monument") {
             self forcestreambundle(#"p8_fxanim_zm_red_drakaina_bundle");
@@ -157,7 +155,6 @@ function function_25f97da0() {
 function function_e968fd4f() {
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"hash_1c35eb15aa210d6");
         if (isdefined(s_result.var_9fa6220c) && isdefined(s_result.var_9fa6220c.script_string) && s_result.var_9fa6220c.script_string == "center_of_the_world") {
             level clientfield::set("" + #"hash_761511e09cb8324e", 1);

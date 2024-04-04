@@ -8,28 +8,14 @@
 // Method(s) 8 Total 15
 class czm_game_timer : cluielem {
 
-    // Namespace czm_game_timer/zm_game_timer
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x60b2e0d4, Offset: 0x240
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_game_timer/zm_game_timer
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x27a8a3e0, Offset: 0x460
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_game_timer/zm_game_timer
     // Params 2, eflags: 0x1 linked
     // Checksum 0xe0068f7c, Offset: 0x418
     // Size: 0x3c
     function set_showzero(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "showzero", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "showzero", value);
     }
 
     // Namespace czm_game_timer/zm_game_timer
@@ -37,7 +23,7 @@ class czm_game_timer : cluielem {
     // Checksum 0xf7ce0420, Offset: 0x3d0
     // Size: 0x3c
     function set_minutes(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "minutes", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "minutes", value);
     }
 
     // Namespace czm_game_timer/zm_game_timer
@@ -45,7 +31,7 @@ class czm_game_timer : cluielem {
     // Checksum 0xdd0cc3a0, Offset: 0x388
     // Size: 0x3c
     function set_seconds(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "seconds", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "seconds", value);
     }
 
     // Namespace czm_game_timer/zm_game_timer

@@ -751,7 +751,6 @@ function function_60878f7f(w_weapon) {
 function function_ac9f4b22() {
     self endon(#"hero_weapon_take", #"disconnect");
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"weapon_change");
         w_current = s_notify.weapon;
         w_previous = s_notify.last_weapon;

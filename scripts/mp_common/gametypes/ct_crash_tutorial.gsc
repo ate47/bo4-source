@@ -309,7 +309,6 @@ function function_6dd7691f() {
     level.var_e72728b8 = array(#"eq_localheal");
     level thread ct_vo::function_14b08e49(array(#"hash_563a706b0b3c4e8c"), "stop_resupply_nag");
     while (true) {
-        s_result = undefined;
         s_result = player waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
             level.var_57a0fc09 = s_result.pod.origin;
@@ -552,7 +551,6 @@ function function_8ab81320() {
         level thread ct_vo::function_14b08e49(array(#"hash_786dd82792eda658"), "stop_mantis_nag");
         var_fc51cece = level.players[0] gamepadusedlast() ? #"hash_4015899fc4930e7d" : #"hash_6731f4ac7ebfc213";
         level.players[0] ct_utils::function_61c3d59c(var_fc51cece, undefined);
-        s_result = undefined;
         s_result = level.mantis waittill(#"enter_vehicle", #"death");
         level.players[0] ct_utils::function_61c3d59c(#"hash_6d973e1934818fdc", undefined);
         level notify(#"stop_mantis_nag");
@@ -869,7 +867,6 @@ function function_57da4e0f() {
 // Size: 0xbc
 function function_27c1d990() {
     level endon(#"combattraining_logic_finished");
-    s_result = undefined;
     s_result = self waittill(#"death");
     level flag::set("mantis_failed");
     if (s_result.weapon === getweapon("tank_robot_launcher_turret_ct")) {
@@ -904,7 +901,6 @@ function function_457bfbbf() {
 // Size: 0x11e
 function function_2ba574d8() {
     level endon(#"combattraining_logic_finished", #"mantis_failed");
-    s_result = undefined;
     s_result = self waittill(#"death");
     level thread function_eabeced7();
     if (!level flag::get("mantis_failed")) {
@@ -1471,7 +1467,6 @@ function function_9ece6b44() {
 function function_779e90b6() {
     level endon(#"combattraining_logic_finished", #"supply_done");
     while (true) {
-        s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
             level.pod = s_result.pod;
@@ -1612,7 +1607,6 @@ function slo_mo() {
     self thread ct_utils::function_61c3d59c(var_e9cfe36e, undefined);
     level thread ct_vo::play_vo(#"hash_4ab0ccbfd177602f");
     setslowmotion(1, 0.2, 2);
-    s_result = undefined;
     s_result = level waittilltimeout(2.5, #"tak5_start");
     ct_utils::function_c2a10fc();
     setslowmotion(0.2, 1, 2);
@@ -1759,7 +1753,6 @@ function ammo_watch(str_event) {
     while (true) {
         var_75d65e7e = self getammocount(self.currentweapon);
         self.var_1e0b475b = 0;
-        s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
             level.pod = s_result.pod;
@@ -1868,7 +1861,6 @@ function function_885de242() {
     level notify(#"ammo_watch");
     level endon(#"combattraining_logic_finished", #"ammo_watch");
     while (true) {
-        s_result = undefined;
         s_result = level.players[0] waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
             level.var_cd01b270 = s_result.pod;
@@ -1975,7 +1967,6 @@ function function_6140f62e() {
     level endon(#"killstreak_ready");
     self endon(#"death");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"supplypod_placed");
         if (isdefined(s_result.pod)) {
             function_1089714c("ammo");

@@ -74,7 +74,6 @@ function init_vehicle() {
 function function_3c6cec8b() {
     remote_controlled = isdefined(self.control_initiated) && self.control_initiated || isdefined(self.controlled) && self.controlled;
     if (remote_controlled) {
-        notifystring = undefined;
         notifystring = self waittill(#"remote_weapon_end", #"shutdown");
         if (notifystring._notify == "remote_weapon_end") {
             self waittill(#"shutdown");
@@ -158,9 +157,7 @@ function can_activate(placement) {
 // Checksum 0x4373f091, Offset: 0x868
 // Size: 0x508
 function activate_vehicle(type) {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     player = self;
     if (!player killstreakrules::iskillstreakallowed(type, player.team)) {
         return false;
@@ -325,7 +322,7 @@ function function_e99d09a3() {
     self endon(#"shutdown");
     for (inwater = 0; !inwater; inwater = trace[#"fraction"] < 1) {
         wait(0.5);
-        trace = physicstrace(self.origin + vectorscale((0, 0, 1), 10), self.origin + vectorscale((0, 0, 1), 6), vectorscale((-1, -1, -1), 2), vectorscale((1, 1, 1), 2), self, 4);
+        trace = physicstrace(self.origin + (0, 0, 10), self.origin + (0, 0, 6), (-2, -2, -2), (2, 2, 2), self, 4);
     }
     self function_822e1f64();
 }
@@ -416,7 +413,7 @@ function function_584fb7a3() {
         vehicle waittill(#"remote_weapon_end", #"hash_59b25025ce93a142");
     }
     attacker = isdefined(vehicle.owner) ? vehicle.owner : undefined;
-    vehicle dodamage(vehicle.health + 1, vehicle.origin + vectorscale((0, 0, 1), 10), attacker, attacker, "none", "MOD_EXPLOSIVE", 0);
+    vehicle dodamage(vehicle.health + 1, vehicle.origin + (0, 0, 10), attacker, attacker, "none", "MOD_EXPLOSIVE", 0);
 }
 
 // Namespace killstreak_vehicle/killstreak_vehicle
@@ -427,7 +424,6 @@ function function_22528515() {
     vehicle = self;
     vehicle endon(#"shutdown");
     while (true) {
-        waitresult = undefined;
         waitresult = vehicle waittill(#"touch");
         ent = waitresult.entity;
         if (isdefined(ent.classname) && (ent.classname == "trigger_hurt_new" || ent.classname == "trigger_out_of_bounds")) {
@@ -609,7 +605,7 @@ function function_e94c2667() {
 // Size: 0x4a0
 function function_d75fbe15(origin, angles) {
     startheight = function_e94c2667();
-    mins = vectorscale((-1, -1, 0), 5);
+    mins = (-5, -5, 0);
     maxs = (5, 5, 10);
     startpoints = [];
     startangles = [];
@@ -619,16 +615,16 @@ function function_d75fbe15(origin, angles) {
     largestcountindex = 0;
     testangles = [];
     testangles[0] = (0, 0, 0);
-    testangles[1] = vectorscale((0, 1, 0), 20);
-    testangles[2] = vectorscale((0, -1, 0), 20);
-    testangles[3] = vectorscale((0, 1, 0), 45);
-    testangles[4] = vectorscale((0, -1, 0), 45);
+    testangles[1] = (0, 20, 0);
+    testangles[2] = (0, -20, 0);
+    testangles[3] = (0, 45, 0);
+    testangles[4] = (0, -45, 0);
     heightoffset = 5;
     for (i = 0; i < testangles.size; i++) {
         testcheck[i] = 0;
         startangles[i] = (0, angles[1], 0);
         startpoint = origin + vectorscale(anglestoforward(startangles[i] + testangles[i]), 70);
-        endpoint = startpoint - vectorscale((0, 0, 1), 100);
+        endpoint = startpoint - (0, 0, 100);
         startpoint = startpoint + (0, 0, startheight);
         mask = 1 | 2;
         trace = physicstrace(startpoint, endpoint, mins, maxs, self, mask);
@@ -703,7 +699,7 @@ function function_c82e14d2(origin, angles, heightoffset) {
 // Checksum 0xd6ba4eec, Offset: 0x2950
 // Size: 0x208
 function function_b4682bd6(origin, angles) {
-    liftedorigin = origin + vectorscale((0, 0, 1), 5);
+    liftedorigin = origin + (0, 0, 5);
     size = 12;
     height = 15;
     mins = (-1 * size, -1 * size, 0);

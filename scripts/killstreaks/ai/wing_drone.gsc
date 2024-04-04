@@ -99,7 +99,6 @@ function malfunction_update(params) {
     self setangularvelocity(ang_vel);
     self cancelaimove();
     self setphysacceleration((0, 0, 100 * -1));
-    waitresult = undefined;
     waitresult = self waittilltimeout(randomintrange(4, 6), #"veh_collision");
     self vehicle_ai::set_state("death");
 }
@@ -288,9 +287,7 @@ function function_ede09a4e(leader) {
 // Checksum 0x76a3b765, Offset: 0x10e8
 // Size: 0x47a
 function function_b0c75ada(leader) {
-    /#
-        assert(isdefined(leader));
-    #/
+    assert(isdefined(leader));
     distsq = distancesquared(self.origin, self.leader.origin);
     if (distsq <= 125 * 125) {
         return undefined;

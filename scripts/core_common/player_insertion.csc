@@ -299,9 +299,7 @@ function function_cbe63de1(localclientnum, delta_t) {
     }
     focuspos = level.var_88a92c26.origin;
     focusangles = level.var_88a92c26.angles;
-    /#
-        assert(isdefined(focusangles), "<unknown string>");
-    #/
+    assert(isdefined(focusangles), "<unknown string>");
     if (!isdefined(focusangles)) {
         focusangles = player getcamangles();
         if (!isdefined(focusangles)) {

@@ -110,7 +110,6 @@ function function_537f413d() {
 function function_3a563d3c(params) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (isplayer(e_player)) {
@@ -131,7 +130,6 @@ function function_3a563d3c(params) {
 function function_cd53088e(params) {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (isplayer(e_player) && e_player flag::get(#"hash_30ae3926b2d211db")) {

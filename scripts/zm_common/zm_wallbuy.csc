@@ -142,9 +142,7 @@ function is_wallbuy(w_to_check) {
 // Size: 0x1b4
 function wallbuy_player_connect(localclientnum) {
     keys = getarraykeys(level._active_wallbuys);
-    /#
-        println("<unknown string>" + localclientnum);
-    #/
+    println("<unknown string>" + localclientnum);
     for (i = 0; i < keys.size; i++) {
         wallbuy = level._active_wallbuys[keys[i]];
         fx = level._effect[#"870mcs_zm_fx"];
@@ -170,15 +168,9 @@ function wallbuy_callback(localclientnum, oldval, newval, bnewent, binitialsnap,
         }
     }
     struct = level._active_wallbuys[fieldname];
-    /#
-        println("<unknown string>" + localclientnum);
-    #/
+    println("<unknown string>" + localclientnum);
     if (!isdefined(struct) || !isdefined(struct.models[localclientnum]) || !isdefined(struct.models[localclientnum].parent_struct)) {
-        /#
-            /#
-                assertmsg("<unknown string>" + fieldname);
-            #/
-        #/
+        assertmsg("<unknown string>" + fieldname);
         return;
     }
     switch (newval) {

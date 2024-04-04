@@ -482,9 +482,7 @@ function on_player_connect() {
     }
     self.rankupdatetotal = 0;
     self.cur_ranknum = rankid;
-    /#
-        assert(isdefined(self.cur_ranknum), "<unknown string>" + rankid + "<unknown string>");
-    #/
+    assert(isdefined(self.cur_ranknum), "<unknown string>" + rankid + "<unknown string>");
     prestige = self stats::get_stat_global(#"plevel", 1);
     if (!isdefined(prestige)) {
         prestige = 0;
@@ -616,9 +614,7 @@ function event_handler[player_rankup] codecallback_rankup(eventstruct) {
 // Size: 0x68
 function getitemindex(refstring) {
     itemindex = getitemindexfromref(refstring);
-    /#
-        assert(itemindex > 0, "<unknown string>" + refstring + "<unknown string>" + itemindex);
-    #/
+    assert(itemindex > 0, "<unknown string>" + refstring + "<unknown string>" + itemindex);
     return itemindex;
 }
 

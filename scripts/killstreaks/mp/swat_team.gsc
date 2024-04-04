@@ -45,21 +45,16 @@
 // Method(s) 2 Total 2
 class class_60aca60a {
 
+    var currentstate;
+    var var_85a7b7d2;
+
     // Namespace class_60aca60a/swat_team
     // Params 0, eflags: 0x9 linked
     // Checksum 0xfbb6faf9, Offset: 0x2120
     // Size: 0x1e
-    __constructor() {
-        self.currentstate = "engage_center";
-        self.var_85a7b7d2 = gettime();
-    }
-
-    // Namespace class_60aca60a/swat_team
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x80f724d1, Offset: 0x2148
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        currentstate = "engage_center";
+        var_85a7b7d2 = gettime();
     }
 
 }
@@ -135,9 +130,7 @@ function function_fe5b1120(helicopter, attackingplayer) {
 // Size: 0x21e
 function createremoteweapontrigger(hintstring) {
     player = self;
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     weapon = spawnstruct();
     weapon.remoteowner = player;
     weapon.inittime = gettime();
@@ -161,9 +154,7 @@ function createremoteweapontrigger(hintstring) {
 // Checksum 0x85cf7077, Offset: 0x1100
 // Size: 0x44
 function function_944f0911(hintstring) {
-    /#
-        assert(isdefined(self.usetrigger));
-    #/
+    assert(isdefined(self.usetrigger));
     self.usetrigger sethintstring(hintstring);
 }
 
@@ -172,7 +163,7 @@ function function_944f0911(hintstring) {
 // Checksum 0xc57dc7a9, Offset: 0x1150
 // Size: 0xc0
 function function_ab9a9770(player) {
-    results = groundtrace(player.origin + vectorscale((0, 0, 1), 70), player.origin + vectorscale((0, 0, -1), 100), 0, player);
+    results = groundtrace(player.origin + (0, 0, 70), player.origin + (0, 0, -100), 0, player);
     if (isdefined(results) && isdefined(results[#"entity"]) && results[#"entity"] ismovingplatform()) {
         return true;
     }
@@ -224,7 +215,7 @@ function function_87bf6422(killstreak) {
 // Checksum 0x3c72c7a4, Offset: 0x1570
 // Size: 0x18c
 function function_6936559a(context) {
-    trace = groundtrace(self.origin + vectorscale((0, 0, 1), 50), self.origin + vectorscale((0, 0, -1), 100000), 0, self);
+    trace = groundtrace(self.origin + (0, 0, 50), self.origin + (0, 0, -100000), 0, self);
     if (isdefined(trace[#"position"]) && isdefined(trace[#"normal"])) {
         origin = trace[#"position"];
         angles = vectortoangles(trace[#"normal"]);
@@ -245,45 +236,25 @@ function function_6936559a(context) {
 // Checksum 0x38b04275, Offset: 0x1708
 // Size: 0x45c
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_7b12237f));
-    #/
+    assert(isscriptfunctionptr(&function_7b12237f));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_521ce9363e228cec", &function_7b12237f);
-    /#
-        assert(isscriptfunctionptr(&function_e3151f98));
-    #/
+    assert(isscriptfunctionptr(&function_e3151f98));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_62335a0608a02309", &function_e3151f98);
-    /#
-        assert(isscriptfunctionptr(&function_e5f59cf0));
-    #/
+    assert(isscriptfunctionptr(&function_e5f59cf0));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4a938922d1af0c4d", &function_e5f59cf0);
-    /#
-        assert(isscriptfunctionptr(&function_3c677dcd));
-    #/
+    assert(isscriptfunctionptr(&function_3c677dcd));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_4cc583c8bb841d4c", &function_3c677dcd);
-    /#
-        assert(isscriptfunctionptr(&function_994477c0));
-    #/
+    assert(isscriptfunctionptr(&function_994477c0));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_3861dc092e2bcf88", &function_994477c0, 1);
-    /#
-        assert(isscriptfunctionptr(&function_fb9f1f3b));
-    #/
+    assert(isscriptfunctionptr(&function_fb9f1f3b));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_48334fe2b83169f2", &function_fb9f1f3b, 1);
-    /#
-        assert(isscriptfunctionptr(&function_5bc83fac));
-    #/
+    assert(isscriptfunctionptr(&function_5bc83fac));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_44cbd2652f2bcafb", &function_5bc83fac);
-    /#
-        assert(isscriptfunctionptr(&function_5e207da3));
-    #/
+    assert(isscriptfunctionptr(&function_5e207da3));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_37de1d651cda8ede", &function_5e207da3);
-    /#
-        assert(isscriptfunctionptr(&swatshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&swatshouldmelee));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"swatshouldmelee", &swatshouldmelee);
-    /#
-        assert(isscriptfunctionptr(&swatshouldmelee));
-    #/
+    assert(isscriptfunctionptr(&swatshouldmelee));
     behaviorstatemachine::registerbsmscriptapiinternal(#"swatshouldmelee", &swatshouldmelee);
     animationstatenetwork::registeranimationmocomp("mocomp_swat_team_pain", &function_6edff1e1, undefined, &function_8acd749d);
 }
@@ -436,9 +407,7 @@ function private function_91228fe2(entity) {
 // Checksum 0x8e0033ab, Offset: 0x2258
 // Size: 0x74
 function private function_a72ef6ce(entity, newspot) {
-    /#
-        assert(isdefined(newspot));
-    #/
+    assert(isdefined(newspot));
     if (isdefined(entity.goalpos) && isdefined(entity.goalradius)) {
         if (entity isingoal(newspot)) {
             return true;
@@ -463,9 +432,7 @@ function private function_f046ec67(entity) {
 // Checksum 0x774a518d, Offset: 0x2350
 // Size: 0x6e
 function private function_615dc1b2(entity) {
-    /#
-        assert(isdefined(entity.ai.var_5cb410bc));
-    #/
+    assert(isdefined(entity.ai.var_5cb410bc));
     entity.ai.var_5cb410bc.var_85a7b7d2 = gettime() + randomintrange(1200, 2200);
 }
 
@@ -509,9 +476,7 @@ function private function_fb9f1f3b(entity) {
     if (gettime() < entity.ai.var_5cb410bc.var_85a7b7d2) {
         return false;
     }
-    /#
-        assert(isdefined(entity.ai.var_5cb410bc));
-    #/
+    assert(isdefined(entity.ai.var_5cb410bc));
     nextstate = "engage_center";
     switch (entity.ai.var_5cb410bc.currentstate) {
     case #"engage_center":
@@ -559,7 +524,7 @@ function private function_fb9f1f3b(entity) {
             entity function_a57c34b7(newspot);
             function_615dc1b2(entity);
             /#
-                record3dtext("heli" + direction, newspot + vectorscale((0, 0, 1), 10), (0, 0, 1), "generic");
+                record3dtext("heli" + direction, newspot + (0, 0, 10), (0, 0, 1), "generic");
                 recordline(entity.origin, newspot, (0, 0, 1), "generic");
                 recordcircle(newspot, 8, (0, 0, 1), "generic");
             #/
@@ -573,7 +538,7 @@ function private function_fb9f1f3b(entity) {
                 entity function_a57c34b7(tacpoint.origin);
                 function_615dc1b2(entity);
                 /#
-                    record3dtext("uber", tacpoint.origin + vectorscale((0, 0, 1), 10), (0, 0, 1), "generic");
+                    record3dtext("uber", tacpoint.origin + (0, 0, 10), (0, 0, 1), "generic");
                     recordline(entity.origin, tacpoint.origin, (0, 0, 1), "generic");
                     recordcircle(tacpoint.origin, 8, (0, 0, 1), "generic");
                 #/
@@ -760,9 +725,7 @@ function private function_b4f4603e() {
 // Checksum 0x89f50d71, Offset: 0x3740
 // Size: 0x1a2
 function private function_e69272bf() {
-    /#
-        assert(isdefined(self.script_owner));
-    #/
+    assert(isdefined(self.script_owner));
     if (!level.teambased) {
         team_mask = level.spawnsystem.ispawn_teammask_free;
         enemy_teams_mask = level.spawnsystem.ispawn_teammask_free;
@@ -820,8 +783,8 @@ function private function_ace0a9bc() {
             }
             if (isdefined(self.enemy)) {
                 /#
-                    recordline(self.origin + vectorscale((0, 0, 1), 70), self.enemy.origin + vectorscale((0, 0, 1), 70), (1, 0, 0), "generic");
-                    recordcircle(self.enemy.origin + vectorscale((0, 0, 1), 70), 8, (1, 0, 0), "generic");
+                    recordline(self.origin + (0, 0, 70), self.enemy.origin + (0, 0, 70), (1, 0, 0), "generic");
+                    recordcircle(self.enemy.origin + (0, 0, 70), 8, (1, 0, 0), "generic");
                     if (isplayer(self.enemy)) {
                         pathdata = generatenavmeshpath(self.origin, self.enemy.origin, self);
                         pathdistance = pathdata.pathdistance;
@@ -855,14 +818,10 @@ function private function_8fa2faa5(swat, helicopter, position) {
         ride_anim = "ai_swat_rifle_ent_litlbird_rappel_stn_base_03_idle";
         break;
     default:
-        /#
-            assertmsg("MOD_MELEE");
-        #/
+        assertmsg("MOD_MELEE");
         break;
     }
-    /#
-        assert(isdefined(ride_anim));
-    #/
+    assert(isdefined(ride_anim));
     if (isdefined(ride_anim)) {
         while (true) {
             if (isalive(swat) && swat hasanimtree()) {
@@ -879,7 +838,6 @@ function private function_8fa2faa5(swat, helicopter, position) {
 function private function_67260255(swat, helicopter, killstreak_id) {
     swat endon(#"swat_landed", #"death");
     helicopter endon(#"death");
-    params = undefined;
     params = helicopter waittill(#"hash_216c905d79c8bbea");
     if (isdefined(swat.script_owner)) {
         swat.script_owner notify(#"hash_216c905d79c8bbea");
@@ -932,14 +890,10 @@ function swat_deploy(swat, helicopter, position, var_a298d55b, var_eead001f) {
         deploy_anim = "ai_swat_rifle_ent_litlbird_rappel_stn_base_03";
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
-    /#
-        assert(isdefined(deploy_anim));
-    #/
+    assert(isdefined(deploy_anim));
     swat notify(#"stop_riding");
     swat pathmode("dont move");
     if (isalive(swat) && swat hasanimtree() && isdefined(deploy_anim)) {
@@ -1227,9 +1181,9 @@ function private spawn_swat_helicopter(owner, origin, angles, context) {
     helicopter killstreaks::configure_team("swat_team", context.killstreak_id, owner);
     context.helicopter = helicopter;
     helicopter.numflares = 1;
-    helicopter thread helicopter::create_flare_ent(vectorscale((0, 0, -1), 100));
-    helicopter.target_offset = vectorscale((0, 0, -1), 25);
-    target_set(helicopter, vectorscale((0, 0, -1), 25));
+    helicopter thread helicopter::create_flare_ent((0, 0, -100));
+    helicopter.target_offset = (0, 0, -25);
+    target_set(helicopter, (0, 0, -25));
     helicopter setrotorspeed(1);
     return helicopter;
 }
@@ -1264,13 +1218,9 @@ function function_11038a4a(einflictor, eattacker, idamage, idflags, smeansofdeat
 // Checksum 0x74b033d, Offset: 0x5738
 // Size: 0x10c
 function private function_ab26fd70(helicopter) {
-    /#
-        assert(!isdefined(helicopter.rope));
-    #/
+    assert(!isdefined(helicopter.rope));
     helicopter.rope = spawn("script_model", helicopter.origin);
-    /#
-        assert(isdefined(helicopter.rope));
-    #/
+    assert(isdefined(helicopter.rope));
     helicopter.rope useanimtree("generic");
     helicopter.rope setmodel("p8_fxanim_gp_vehicle_lb_swat_rappel_mod");
     helicopter.rope linkto(helicopter, "tag_origin");
@@ -1397,12 +1347,8 @@ function function_7fac6670(swat_gunner) {
 // Checksum 0xe580c2d, Offset: 0x5e20
 // Size: 0x334
 function function_ab667e1c(owner, helicopter) {
-    /#
-        assert(isdefined(owner.swat_team));
-    #/
-    /#
-        assert(isdefined(helicopter));
-    #/
+    assert(isdefined(owner.swat_team));
+    assert(isdefined(helicopter));
     aitypes = level.var_1e18ffa0[#"axis"];
     if (isdefined(owner.team) && owner.team == #"allies") {
         aitypes = level.var_1e18ffa0[#"allies"];
@@ -1530,12 +1476,12 @@ function private function_75277c27(tacpoint, context) {
 function private function_7d90f954(origin, context) {
     if (ispointonnavmesh(origin, 45)) {
         /#
-            recordsphere(origin + vectorscale((0, 0, 1), 10), 2, (0, 1, 0), "generic");
+            recordsphere(origin + (0, 0, 10), 2, (0, 1, 0), "generic");
         #/
         return true;
     }
     /#
-        recordsphere(origin + vectorscale((0, 0, 1), 10), 2, (1, 0, 0), "generic");
+        recordsphere(origin + (0, 0, 10), 2, (1, 0, 0), "generic");
     #/
     return false;
 }
@@ -1550,12 +1496,12 @@ function private function_9153c267(origin, context, verticaloffset) {
         var_baa92af9 = ispointinnavvolume(destination, "navvolume_big");
         if (var_baa92af9) {
             /#
-                recordsphere(origin + vectorscale((0, 0, 1), 20), 2, (0, 1, 0), "generic");
+                recordsphere(origin + (0, 0, 20), 2, (0, 1, 0), "generic");
             #/
             return true;
         }
         /#
-            recordsphere(origin + vectorscale((0, 0, 1), 20), 2, (1, 0, 0), "generic");
+            recordsphere(origin + (0, 0, 20), 2, (1, 0, 0), "generic");
         #/
         return false;
     }
@@ -1572,15 +1518,15 @@ function private function_accec5c5(origin, context, verticaloffset) {
     }
     mask = 1;
     radius = 30;
-    trace = physicstrace(origin + (0, 0, verticaloffset), origin + vectorscale((0, 0, 1), 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), mask);
+    trace = physicstrace(origin + (0, 0, verticaloffset), origin + (0, 0, 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), mask);
     if (trace[#"fraction"] < 1) {
         /#
-            recordsphere(origin + vectorscale((0, 0, 1), 20), 2, (1, 0, 0), "generic");
+            recordsphere(origin + (0, 0, 20), 2, (1, 0, 0), "generic");
         #/
         return false;
     }
     /#
-        recordsphere(origin + vectorscale((0, 0, 1), 20), 2, (0, 1, 0), "generic");
+        recordsphere(origin + (0, 0, 20), 2, (0, 1, 0), "generic");
     #/
     return true;
 }
@@ -1590,7 +1536,7 @@ function private function_accec5c5(origin, context, verticaloffset) {
 // Checksum 0x4873cb77, Offset: 0x6940
 // Size: 0x9e
 function function_d15dd929(origin) {
-    result = function_9cc082d2(origin + vectorscale((0, 0, 1), 100), 200);
+    result = function_9cc082d2(origin + (0, 0, 100), 200);
     if (isdefined(result[#"materialflags"]) && result[#"materialflags"] & 2) {
         return false;
     }
@@ -1608,10 +1554,10 @@ function debug_water(tpoint) {
     /#
         if (!function_d15dd929(tpoint.origin)) {
             /#
-                record3dtext("<unknown string>", tpoint.origin + vectorscale((0, 0, 1), 40), (1, 1, 1), "generic");
+                record3dtext("<unknown string>", tpoint.origin + (0, 0, 40), (1, 1, 1), "generic");
             #/
             /#
-                recordline(tpoint.origin + vectorscale((0, 0, 1), 40), tpoint.origin, (1, 1, 1), "generic");
+                recordline(tpoint.origin + (0, 0, 40), tpoint.origin, (1, 1, 1), "generic");
             #/
         }
     #/
@@ -1622,9 +1568,7 @@ function debug_water(tpoint) {
 // Checksum 0xbdab3cfc, Offset: 0x6ab0
 // Size: 0xf2
 function function_6dc6bc6b(origins, context, verticaloffset) {
-    /#
-        assert(isdefined(origins) && origins.size);
-    #/
+    assert(isdefined(origins) && origins.size);
     filteredpoints = [];
     foreach (origin in origins) {
         if (function_accec5c5(origin, context, verticaloffset)) {
@@ -1641,9 +1585,7 @@ function function_6dc6bc6b(origins, context, verticaloffset) {
 // Checksum 0x4907b75a, Offset: 0x6bb0
 // Size: 0x148
 function private function_fc826e6(tacpoints, context, verticaloffset) {
-    /#
-        assert(isdefined(tacpoints) && tacpoints.size);
-    #/
+    assert(isdefined(tacpoints) && tacpoints.size);
     filteredpoints = [];
     foreach (tacpoint in tacpoints) {
         /#
@@ -1661,9 +1603,7 @@ function private function_fc826e6(tacpoints, context, verticaloffset) {
 // Checksum 0xd8e3cd62, Offset: 0x6d00
 // Size: 0xbc
 function private function_187f6d8f(tacpoints) {
-    /#
-        assert(isdefined(tacpoints) && tacpoints.size);
-    #/
+    assert(isdefined(tacpoints) && tacpoints.size);
     points = [];
     foreach (tacpoint in tacpoints) {
         points[points.size] = tacpoint.origin;
@@ -1676,7 +1616,7 @@ function private function_187f6d8f(tacpoints) {
 // Checksum 0x5679455d, Offset: 0x6dc8
 // Size: 0x4e
 function function_3b759619(var_1c996690) {
-    result = function_9cc082d2(var_1c996690 + vectorscale((0, 0, 1), 100), 200);
+    result = function_9cc082d2(var_1c996690 + (0, 0, 100), 200);
     if (isdefined(result)) {
         return true;
     }
@@ -1714,13 +1654,13 @@ function function_263d3e9e(var_1c996690, context, owner, secondattempt = 0) {
                 filteredpoints = function_6dc6bc6b(tacpoints, context, verticaloffset);
                 if (isdefined(filteredpoints[0])) {
                     /#
-                        recordsphere(filteredpoints[0] + vectorscale((0, 0, 1), 70), 4, (1, 0.5, 0), "generic");
+                        recordsphere(filteredpoints[0] + (0, 0, 70), 4, (1, 0.5, 0), "generic");
                     #/
                     return filteredpoints[0];
                 } else {
                     var_c71b63fa = arraygetclosest(var_1c996690, tacpoints);
                     /#
-                        recordsphere(var_c71b63fa + vectorscale((0, 0, 1), 70), 4, (0, 1, 1), "generic");
+                        recordsphere(var_c71b63fa + (0, 0, 70), 4, (0, 1, 1), "generic");
                     #/
                     return var_c71b63fa;
                 }
@@ -1768,7 +1708,7 @@ function function_2bade425(owner, helicopter) {
         aitypes = level.var_1e18ffa0[#"allies"];
     }
     for (i = 0; i < 2; i++) {
-        swat = spawnactor(aitypes[i], vectorscale((-1, 0, 0), 1000), (0, 0, 0), "swat");
+        swat = spawnactor(aitypes[i], (-1000, 0, 0), (0, 0, 0), "swat");
         if (!isdefined(self.swat_team)) {
             self.swat_team = [];
         } else if (!isarray(self.swat_team)) {
@@ -1805,9 +1745,7 @@ function function_2bade425(owner, helicopter) {
 function private function_820e7c92(owner, var_1c996690, nodes, context) {
     owner endoncallback(&function_d524c2b8, #"disconnect", #"joined_team", #"joined_spectators");
     level endon(#"game_ended");
-    /#
-        assert(isdefined(var_1c996690));
-    #/
+    assert(isdefined(var_1c996690));
     var_1c996690 = function_263d3e9e(var_1c996690, context, owner);
     destination = getstartorigin(var_1c996690, (0, 0, 0), "ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2");
     var_6aa266d6 = helicopter::getvalidrandomstartnode(destination).origin;
@@ -1820,9 +1758,7 @@ function private function_820e7c92(owner, var_1c996690, nodes, context) {
     function_ab667e1c(owner, helicopter);
     function_2bade425(owner, helicopter);
     function_ab26fd70(helicopter);
-    /#
-        assert(isdefined(owner.swat_team));
-    #/
+    assert(isdefined(owner.swat_team));
     position = 0;
     foreach (swat in owner.swat_team) {
         if (isdefined(swat) && !function_3132f113(swat)) {
@@ -2095,7 +2031,6 @@ function function_8821879c(killstreak_id) {
         if (!isdefined(self.var_6c0553ea.remoteweapon.usetrigger)) {
             break;
         }
-        res = undefined;
         res = self.var_6c0553ea.remoteweapon.usetrigger waittill(#"trigger", #"death");
         if (res._notify == "death") {
             break;
@@ -2547,9 +2482,7 @@ function function_4670789f(tacpoint) {
 // Checksum 0xe571af60, Offset: 0xa6a0
 // Size: 0xec
 function private function_9cb166cd(tacpoints) {
-    /#
-        assert(isdefined(tacpoints) && tacpoints.size);
-    #/
+    assert(isdefined(tacpoints) && tacpoints.size);
     filteredpoints = [];
     foreach (tacpoint in tacpoints) {
         if (!function_4670789f(tacpoint) && !function_a38d2d73(tacpoint)) {
@@ -2763,7 +2696,7 @@ function private function_59f58b93(origin) {
         objective_setinvisibletoall(objid);
         objective_setvisibletoplayer(objid, self);
     }
-    self.var_6c0553ea.fx_marker = spawnfx(self.var_6c0553ea.fx_name, origin + vectorscale((0, 0, 1), 3), (0, 0, 1), (1, 0, 0));
+    self.var_6c0553ea.fx_marker = spawnfx(self.var_6c0553ea.fx_name, origin + (0, 0, 3), (0, 0, 1), (1, 0, 0));
     self.var_6c0553ea.fx_marker.team = self.team;
     triggerfx(self.var_6c0553ea.fx_marker);
     self.var_6c0553ea.fx_marker setinvisibletoall();
@@ -2825,14 +2758,14 @@ function function_4c0ed253(location, context) {
             mask = context.tracemask;
         }
         radius = context.radius;
-        trace = physicstrace(location + vectorscale((0, 0, 1), 5000), location + vectorscale((0, 0, 1), 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
+        trace = physicstrace(location + (0, 0, 5000), location + (0, 0, 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
         if (trace[#"fraction"] < 1) {
             if (!(isdefined(level.var_66da9c3c) && level.var_66da9c3c)) {
                 return false;
             }
         }
     }
-    result = function_9cc082d2(location + vectorscale((0, 0, 1), 100), 170);
+    result = function_9cc082d2(location + (0, 0, 100), 170);
     if (!isdefined(result)) {
         return false;
     }
@@ -2861,7 +2794,7 @@ function islocationgood(location, context) {
             mask = context.tracemask;
         }
         radius = context.radius;
-        trace = physicstrace(location + vectorscale((0, 0, 1), 5000), location + vectorscale((0, 0, 1), 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
+        trace = physicstrace(location + (0, 0, 5000), location + (0, 0, 10), (radius * -1, radius * -1, 0), (radius, radius, 2 * radius), undefined, mask);
         if (trace[#"fraction"] < 1) {
             if (!(isdefined(level.var_66da9c3c) && level.var_66da9c3c)) {
                 return 0;
@@ -2892,7 +2825,7 @@ function islocationgood(location, context) {
                 }
             } else {
                 sphere(closestpoint, context.max_dist_from_location, (0, 1, 0), 0.8, 0, 20, 1);
-                util::drawcylinder(closestpoint, context.radius, 8000, 0.0166667, undefined, vectorscale((0, 1, 0), 0.9), 0.7);
+                util::drawcylinder(closestpoint, context.radius, 8000, 0.0166667, undefined, (0, 0.9, 0), 0.7);
             }
         }
     #/

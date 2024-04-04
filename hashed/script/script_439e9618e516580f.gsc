@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class ccp_skip_scene_menu : cluielem {
 
-    // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xde9109b5, Offset: 0x298
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xb8872d06, Offset: 0x528
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
     // Params 2, eflags: 0x1 linked
     // Checksum 0xf75feb76, Offset: 0x4e0
     // Size: 0x3c
     function set_sceneskipendtime(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "sceneSkipEndTime", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "sceneSkipEndTime", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -37,7 +23,7 @@ class ccp_skip_scene_menu : cluielem {
     // Checksum 0x2c8af207, Offset: 0x498
     // Size: 0x3c
     function set_votedtoskip(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "votedToSkip", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "votedToSkip", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -45,7 +31,7 @@ class ccp_skip_scene_menu : cluielem {
     // Checksum 0x92e3eb95, Offset: 0x450
     // Size: 0x3c
     function set_hostisskipping(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "hostIsSkipping", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "hostIsSkipping", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu
@@ -53,7 +39,7 @@ class ccp_skip_scene_menu : cluielem {
     // Checksum 0x81dd097f, Offset: 0x408
     // Size: 0x3c
     function set_showskipbutton(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "showSkipButton", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "showSkipButton", value);
     }
 
     // Namespace ccp_skip_scene_menu/cp_skip_scene_menu

@@ -9,9 +9,7 @@
 // Size: 0x18e
 function register(str_name, func_preinit, func_postinit, reqs) {
     if (isdefined(level.system_funcs) && isdefined(level.system_funcs[str_name])) {
-        /#
-            assert(level.system_funcs[str_name].ignore, "<unknown string>" + function_9e72a96(str_name) + "<unknown string>");
-        #/
+        assert(level.system_funcs[str_name].ignore, "<unknown string>" + function_9e72a96(str_name) + "<unknown string>");
         return;
     }
     if (!isdefined(level.system_funcs)) {
@@ -48,22 +46,16 @@ function exec_post_system(func) {
 // Checksum 0xe664e6a2, Offset: 0x2c0
 // Size: 0x1e4
 function function_5095b2c6(func) {
-    /#
-        assert(func.predone || func.ignore, "<unknown string>");
-    #/
+    assert(func.predone || func.ignore, "<unknown string>");
     if (isdefined(func.reqs)) {
         if (isarray(func.reqs)) {
             foreach (req in func.reqs) {
-                /#
-                    assert(isdefined(req), "<unknown string>" + req + "<unknown string>");
-                #/
+                assert(isdefined(req), "<unknown string>" + req + "<unknown string>");
                 thread exec_post_system(level.system_funcs[req]);
             }
             return;
         }
-        /#
-            assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
-        #/
+        assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
         thread exec_post_system(level.system_funcs[func.reqs]);
     }
 }
@@ -106,16 +98,12 @@ function function_8dfa23e0(func) {
     if (isdefined(func.reqs)) {
         if (isarray(func.reqs)) {
             foreach (req in func.reqs) {
-                /#
-                    assert(isdefined(req), "<unknown string>" + req + "<unknown string>");
-                #/
+                assert(isdefined(req), "<unknown string>" + req + "<unknown string>");
                 thread exec_pre_system(level.system_funcs[req]);
             }
             return;
         }
-        /#
-            assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
-        #/
+        assert(isdefined(level.system_funcs[func.reqs]), "<unknown string>" + (ishash(func.reqs) ? function_9e72a96(func.reqs) : func.reqs) + "<unknown string>");
         thread exec_pre_system(level.system_funcs[func.reqs]);
     }
 }
@@ -144,9 +132,7 @@ function wait_till(required_systems) {
 // Checksum 0xb1f4f633, Offset: 0x8a0
 // Size: 0x9a
 function ignore(str_name) {
-    /#
-        assert(!isdefined(level.gametype), "<unknown string>");
-    #/
+    assert(!isdefined(level.gametype), "<unknown string>");
     if (!isdefined(level.system_funcs) || !isdefined(level.system_funcs[str_name])) {
         register(str_name, undefined, undefined, undefined);
     }

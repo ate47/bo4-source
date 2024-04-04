@@ -149,7 +149,6 @@ function function_d12e5ff9(e_player) {
 function electric_trap_think() {
     level endon(#"end_game");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger");
         e_who = s_waitresult.activator;
         if (!zm_utility::can_use(e_who)) {

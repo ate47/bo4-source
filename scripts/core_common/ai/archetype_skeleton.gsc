@@ -54,21 +54,13 @@ function private archetypeskeletononanimscriptedcallback(entity) {
 // Checksum 0x8399e345, Offset: 0x2f8
 // Size: 0x1f4
 function private registerbehaviorscriptfunctions() {
-    /#
-        assert(isscriptfunctionptr(&function_7ef4937e));
-    #/
+    assert(isscriptfunctionptr(&function_7ef4937e));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_2dafca553cbc289b", &function_7ef4937e, 1);
-    /#
-        assert(isscriptfunctionptr(&function_233f80e1));
-    #/
+    assert(isscriptfunctionptr(&function_233f80e1));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_22a1ab87ff6a9886", &function_233f80e1);
-    /#
-        assert(isscriptfunctionptr(&function_9eb31dff));
-    #/
+    assert(isscriptfunctionptr(&function_9eb31dff));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_5260937d1b37a1ab", &function_9eb31dff);
-    /#
-        assert(isscriptfunctionptr(&skeletondeathaction));
-    #/
+    assert(isscriptfunctionptr(&skeletondeathaction));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"skeletondeathaction", &skeletondeathaction);
     animationstatenetwork::registeranimationmocomp("mocomp_skeleton_run_melee", &function_7d1989aa, &function_5ff8994e, &function_9873c40e);
 }

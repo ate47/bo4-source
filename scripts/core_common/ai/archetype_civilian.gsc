@@ -34,67 +34,35 @@ function autoexec main() {
 function registerbehaviorscriptfunctions() {
     spawner::add_archetype_spawn_function(#"civilian", &civilianblackboardinit);
     spawner::add_archetype_spawn_function(#"civilian", &civilianinit);
-    /#
-        assert(!isdefined(&civilianmoveactioninitialize) || isscriptfunctionptr(&civilianmoveactioninitialize));
-    #/
-    /#
-        assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
-    #/
-    /#
-        assert(!isdefined(&civilianmoveactionfinalize) || isscriptfunctionptr(&civilianmoveactionfinalize));
-    #/
+    assert(!isdefined(&civilianmoveactioninitialize) || isscriptfunctionptr(&civilianmoveactioninitialize));
+    assert(!isdefined(undefined) || isscriptfunctionptr(undefined));
+    assert(!isdefined(&civilianmoveactionfinalize) || isscriptfunctionptr(&civilianmoveactionfinalize));
     behaviortreenetworkutility::registerbehaviortreeaction("civilianMoveAction", &civilianmoveactioninitialize, undefined, &civilianmoveactionfinalize);
-    /#
-        assert(isscriptfunctionptr(&civilianwanderservice));
-    #/
+    assert(isscriptfunctionptr(&civilianwanderservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianWanderService", &civilianwanderservice, 1);
-    /#
-        assert(isscriptfunctionptr(&civilianpanicescapechooseposition));
-    #/
+    assert(isscriptfunctionptr(&civilianpanicescapechooseposition));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianPanicEscapeChoosePosition", &civilianpanicescapechooseposition, 1);
-    /#
-        assert(isscriptfunctionptr(&rioterchoosepositionservice));
-    #/
+    assert(isscriptfunctionptr(&rioterchoosepositionservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("rioterChoosePositionService", &rioterchoosepositionservice, 1);
-    /#
-        assert(isscriptfunctionptr(&civilianfollowservice));
-    #/
+    assert(isscriptfunctionptr(&civilianfollowservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianFollowService", &civilianfollowservice, 1);
-    /#
-        assert(isscriptfunctionptr(&civiliancanthrowmolotovgrenade));
-    #/
+    assert(isscriptfunctionptr(&civiliancanthrowmolotovgrenade));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianCanThrowMolotovGrenade", &civiliancanthrowmolotovgrenade);
-    /#
-        assert(isscriptfunctionptr(&civilianpreparetothrowgrenade));
-    #/
+    assert(isscriptfunctionptr(&civilianpreparetothrowgrenade));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianPrepareToThrowGrenade", &civilianpreparetothrowgrenade);
-    /#
-        assert(isscriptfunctionptr(&civiliancleanuptothrowgrenade));
-    #/
+    assert(isscriptfunctionptr(&civiliancleanuptothrowgrenade));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianCleanUpToThrowGrenade", &civiliancleanuptothrowgrenade);
-    /#
-        assert(isscriptfunctionptr(&civilianispanicked));
-    #/
+    assert(isscriptfunctionptr(&civilianispanicked));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianIsPanicked", &civilianispanicked);
-    /#
-        assert(isscriptfunctionptr(&civilianarrivalallowed));
-    #/
+    assert(isscriptfunctionptr(&civilianarrivalallowed));
     behaviorstatemachine::registerbsmscriptapiinternal("civilianArrivalAllowed", &civilianarrivalallowed);
-    /#
-        assert(isscriptfunctionptr(&civilianareturnsallowed));
-    #/
+    assert(isscriptfunctionptr(&civilianareturnsallowed));
     behaviorstatemachine::registerbsmscriptapiinternal("civilianAreTurnsAllowed", &civilianareturnsallowed);
-    /#
-        assert(isscriptfunctionptr(&civilianisrioter));
-    #/
+    assert(isscriptfunctionptr(&civilianisrioter));
     behaviorstatemachine::registerbsmscriptapiinternal("civilianIsRioter", &civilianisrioter);
-    /#
-        assert(isscriptfunctionptr(&civilianisrioter));
-    #/
+    assert(isscriptfunctionptr(&civilianisrioter));
     behaviortreenetworkutility::registerbehaviortreescriptapi("civilianIsRioter", &civilianisrioter);
-    /#
-        assert(isscriptfunctionptr(&rioterreaquireservice));
-    #/
+    assert(isscriptfunctionptr(&rioterreaquireservice));
     behaviortreenetworkutility::registerbehaviortreescriptapi("rioterReaquireService", &rioterreaquireservice);
     /#
         mapname = util::get_map_name();
@@ -153,9 +121,7 @@ function private civilianblackboardinit() {
 // Checksum 0x2828501b, Offset: 0xe40
 // Size: 0x6c
 function function_49d80e54(civilian, attribute, oldvalue, value) {
-    /#
-        assert(issentient(civilian));
-    #/
+    assert(issentient(civilian));
     civilian setblackboardattribute("follow", value);
 }
 
@@ -222,9 +188,7 @@ function private rioterchoosepositionservice(entity) {
         return false;
     }
     if (forcedgoal) {
-        /#
-            assert(isdefined(goalinfo.goalpos));
-        #/
+        assert(isdefined(goalinfo.goalpos));
         entity function_a57c34b7(goalinfo.goalpos);
         aiutility::setnextfindbestcovertime(entity, undefined);
         return true;
@@ -311,9 +275,7 @@ function private civilianwanderservice(entity) {
         return false;
     }
     if (forcedgoal) {
-        /#
-            assert(isdefined(goalinfo.goalpos));
-        #/
+        assert(isdefined(goalinfo.goalpos));
         entity function_a57c34b7(goalinfo.goalpos);
         aiutility::setnextfindbestcovertime(entity, undefined);
         return true;

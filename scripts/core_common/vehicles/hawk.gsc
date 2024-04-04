@@ -182,7 +182,7 @@ function hawk_destroy(var_bb2c398b = 0) {
             owner val::set(#"hawk", "freezecontrols", 1);
             forward = anglestoforward(hawk.angles);
             moveamount = vectorscale(forward, 350 * -1);
-            trace = physicstrace(hawk.origin, hawk.origin + moveamount, vectorscale((-1, -1, -1), 4), vectorscale((1, 1, 1), 4), undefined, 1);
+            trace = physicstrace(hawk.origin, hawk.origin + moveamount, (-4, -4, -4), (4, 4, 4), undefined, 1);
             cam = spawn("script_model", trace[#"position"]);
             cam setmodel(#"tag_origin");
             cam linkto(hawk);

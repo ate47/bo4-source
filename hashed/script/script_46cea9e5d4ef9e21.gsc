@@ -285,7 +285,6 @@ function function_290d172d() {
     function_dae4ab9b(self, 0.05);
     a_s_tubes = struct::get_array("nixie_tubes", "script_noteworthy");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         a_s_tubes = struct::get_array("nixie_tubes", "script_noteworthy");
         foreach (s_tube in a_s_tubes) {
@@ -436,7 +435,7 @@ function private function_f2f53f97() {
         var_9c0bf2db moveto(s_target.origin, n_time);
         var_9c0bf2db waittill(#"movedone");
     }
-    e_powerup = zm_powerups::specific_powerup_drop("zombie_blood", var_9c0bf2db.origin - vectorscale((0, 0, 1), 40));
+    e_powerup = zm_powerups::specific_powerup_drop("zombie_blood", var_9c0bf2db.origin - (0, 0, 40));
     var_9c0bf2db delete();
     level thread function_25aaae40();
     e_powerup thread function_f50cec70();
@@ -481,7 +480,6 @@ function private function_f50cec70() {
     if (!isdefined(level.var_988ed695)) {
         level.var_988ed695 = 0;
     }
-    s_result = undefined;
     s_result = self waittill(#"powerup_timedout", #"powerup_grabbed");
     if (s_result._notify !== "powerup_grabbed" || level.var_988ed695 > 2) {
         return;

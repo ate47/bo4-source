@@ -208,7 +208,6 @@ function private cover_think() {
     self endon(#"death");
     trigger = getent(self.target, "targetname");
     while (true) {
-        s_result = undefined;
         s_result = trigger waittill(#"damage");
         if (isplayer(s_result.attacker) && s_result.mod == "MOD_MELEE") {
             break;

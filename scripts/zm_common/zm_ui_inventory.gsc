@@ -50,7 +50,6 @@ function private onconnect() {
 function private function_13ad9a60() {
     self endon(#"disconnect");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"menuresponse");
         response = waitresult.response;
         if (response == "zm_inventory_opened") {
@@ -69,9 +68,7 @@ function function_7df6bb60(fieldname, value, player) {
         self clientfield::set_world_uimodel(var_d5423fb8.var_cd35dfb2, value);
         return;
     }
-    /#
-        assert(isplayer(player));
-    #/
+    assert(isplayer(player));
     if (!isdefined(player)) {
         return;
     }

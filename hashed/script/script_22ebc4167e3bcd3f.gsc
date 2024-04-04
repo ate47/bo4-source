@@ -248,7 +248,6 @@ function function_1c670b79(var_217fca51) {
     self endon(#"death", #"disconnect");
     level endon(#"hash_2fd493c2a926e006", #"hash_66f358c0066d77d8");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
         if (!isdefined(e_tomahawk)) {
@@ -321,7 +320,6 @@ function function_88cbb4b3(player) {
 // Size: 0x156
 function function_c5e0a9a4() {
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (!e_player hasweapon(getweapon(#"spoon_alcatraz")) && !e_player hasweapon(getweapon(#"spork_alcatraz"))) {
@@ -401,11 +399,11 @@ function function_32fbad12(a_ents) {
             level.var_64f95ac4 = undefined;
             var_d147b93a = #"p7_tire_rubber_worn_wet";
             if (level flag::get(#"hash_dd62a8822ea4a38")) {
-                v_origin = var_965869c9 gettagorigin("tag_net_3") + vectorscale((1, 0, -1), 10);
-                v_angles = vectorscale((1, 0, 0), 324);
+                v_origin = var_965869c9 gettagorigin("tag_net_3") + (10, 0, -10);
+                v_angles = (324, 0, 0);
             } else {
                 v_origin = var_965869c9 gettagorigin("tag_net_3") + (0, -5, -12);
-                v_angles = vectorscale((1, 0, 0), 300);
+                v_angles = (300, 0, 0);
             }
         }
     }
@@ -438,11 +436,11 @@ function function_4afd150e(a_ents) {
     if (var_ef78f209 < 34) {
         var_d147b93a = #"p7_tire_rubber_worn_wet";
         if (level flag::get(#"hash_dd62a8822ea4a38")) {
-            v_origin = var_965869c9 gettagorigin("tag_net_3") + vectorscale((1, 0, -1), 10);
-            v_angles = vectorscale((1, 0, 0), 324);
+            v_origin = var_965869c9 gettagorigin("tag_net_3") + (10, 0, -10);
+            v_angles = (324, 0, 0);
         } else {
             v_origin = var_965869c9 gettagorigin("tag_net_3") + (0, -5, -12);
-            v_angles = vectorscale((1, 0, 0), 300);
+            v_angles = (300, 0, 0);
         }
     } else if (var_ef78f209 > 67) {
         var_d147b93a = #"p8_zm_vending_three_gun_sign";
@@ -513,7 +511,6 @@ function function_5753ae89() {
     self endon(#"disconnect");
     level.var_5c14fe03 endoncallback(&function_2084efc3, #"death", #"hash_4ecfa36be208fd5f");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"throwing_tomahawk");
         e_tomahawk = s_result.e_grenade;
         while (isdefined(e_tomahawk)) {

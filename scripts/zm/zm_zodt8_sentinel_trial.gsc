@@ -376,9 +376,7 @@ function function_bdf27083(str_script_noteworthy) {
             }
             continue;
         }
-        /#
-            assertmsg("loc4");
-        #/
+        assertmsg("loc4");
     }
     foreach (var_52330a61 in var_b64616b0) {
         if (isdefined(var_52330a61.script_zone)) {
@@ -387,9 +385,7 @@ function function_bdf27083(str_script_noteworthy) {
             }
             continue;
         }
-        /#
-            assertmsg("millionaire_suite_zone");
-        #/
+        assertmsg("millionaire_suite_zone");
     }
     var_c9a92ed0 = struct::get_array(var_c0028c4a.var_f8c16831, "script_noteworthy");
     foreach (var_e575d09e in var_c9a92ed0) {
@@ -564,9 +560,7 @@ function function_c76f5e7f() {
     if (isdefined(self.var_603d2311)) {
         self.var_397be8a2 = getent(self.var_603d2311, "script_noteworthy");
     } else {
-        /#
-            assertmsg("<unknown string>" + self.script_noteworthy);
-        #/
+        assertmsg("<unknown string>" + self.script_noteworthy);
     }
     if (isdefined(self.var_319221a5)) {
         self.var_b43ef4f9 = getent(self.var_319221a5, "script_noteworthy");
@@ -574,9 +568,7 @@ function function_c76f5e7f() {
     if (isdefined(self.var_f92ad94a)) {
         self.var_3501cf51 = getent(self.var_f92ad94a, "script_noteworthy");
     } else {
-        /#
-            assertmsg("<unknown string>" + self.script_noteworthy);
-        #/
+        assertmsg("<unknown string>" + self.script_noteworthy);
     }
     if (isdefined(self.var_9913bb72)) {
         self.var_9fb69ce = getent(self.var_9913bb72, "script_noteworthy");
@@ -588,7 +580,6 @@ function function_c76f5e7f() {
         self thread function_bc253abc();
     }
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger_activated");
         if (waitresult.e_who function_4a2a1b87(self)) {
             var_54e61ab7 = 1;
@@ -769,9 +760,7 @@ function function_3b0b73d9(b_clockwise) {
                 var_f583afd3 = 0;
                 break;
             default:
-                /#
-                    assertmsg("<unknown string>" + self.var_3d89d732);
-                #/
+                assertmsg("<unknown string>" + self.var_3d89d732);
                 break;
             }
         } else if (self.var_e9af6526 == 7) {
@@ -792,9 +781,7 @@ function function_3b0b73d9(b_clockwise) {
                 var_f583afd3 = 0;
                 break;
             default:
-                /#
-                    assertmsg("<unknown string>" + self.var_3d89d732);
-                #/
+                assertmsg("<unknown string>" + self.var_3d89d732);
                 break;
             }
         } else if (self.var_e9af6526 == 5) {
@@ -813,9 +800,7 @@ function function_3b0b73d9(b_clockwise) {
                 var_f583afd3 = 0;
                 break;
             default:
-                /#
-                    assertmsg("<unknown string>" + self.var_3d89d732);
-                #/
+                assertmsg("<unknown string>" + self.var_3d89d732);
                 break;
             }
         }
@@ -841,9 +826,7 @@ function function_3b0b73d9(b_clockwise) {
             var_f583afd3 = 0;
             break;
         default:
-            /#
-                assertmsg("<unknown string>" + self.var_3d89d732);
-            #/
+            assertmsg("<unknown string>" + self.var_3d89d732);
             break;
         }
     } else if (self.var_e9af6526 == 7) {
@@ -864,9 +847,7 @@ function function_3b0b73d9(b_clockwise) {
             var_f583afd3 = 0;
             break;
         default:
-            /#
-                assertmsg("<unknown string>" + self.var_3d89d732);
-            #/
+            assertmsg("<unknown string>" + self.var_3d89d732);
             break;
         }
     } else if (self.var_e9af6526 == 5) {
@@ -885,9 +866,7 @@ function function_3b0b73d9(b_clockwise) {
             var_f583afd3 = 0;
             break;
         default:
-            /#
-                assertmsg("<unknown string>" + self.var_3d89d732);
-            #/
+            assertmsg("<unknown string>" + self.var_3d89d732);
             break;
         }
     }
@@ -1174,7 +1153,7 @@ function function_3965c201(s_struct) {
 // Size: 0x21c
 function function_4d356dc0(s_struct, s_portal) {
     s_struct.var_b7273b77 = 1;
-    v_offset = vectorscale((0, 0, 1), 2);
+    v_offset = (0, 0, 2);
     n_scale = 0.1;
     mdl_portal = util::spawn_model(#"hash_15e8ba772c745d63", s_portal.origin + v_offset, s_portal.angles);
     s_portal.mdl_portal = mdl_portal;
@@ -1529,7 +1508,7 @@ function function_ad0eee44(str_element) {
     mdl_artifact playloopsound(#"hash_5c7e9911ac98f633");
     if (isdefined(s_moveto)) {
         wait(4);
-        v_offset = vectorscale((0, 0, -1), 16);
+        v_offset = (0, 0, -16);
         mdl_artifact moveto(s_moveto.origin + v_offset, 6, 1, 1);
         mdl_artifact waittill(#"movedone");
         if (s_artifact.angles != s_moveto.angles) {
@@ -1741,7 +1720,6 @@ function function_660987e() {
         __s util::delay_notify(15, "timeout");
     }
     do {
-        s_notify = undefined;
         s_notify = level waittill(#"transformation_complete", #"transformation_interrupted");
     } while (s_notify.id !== #"blight_father");
     return s_notify;
@@ -1938,7 +1916,6 @@ function function_9b60ef24() {
     w_earth = getweapon(#"ww_tricannon_earth_t8");
     var_15b49ebc = getweapon(#"ww_tricannon_earth_t8_upgraded");
     while (true) {
-        s_result = undefined;
         s_result = trigger waittill(#"trigger");
         if (isdefined(s_result.activator) && isplayer(s_result.activator)) {
             w_weapon = s_result.activator getcurrentweapon();
@@ -1983,7 +1960,7 @@ function function_22651585() {
     for (var_bfa067ca = 0; var_bfa067ca !== 1; var_bfa067ca = function_bdddfbe6()) {
     }
     v_spawn = level.pap_machine.origin + (0, -32, 40);
-    mdl_artifact = util::spawn_model(#"hash_2b14d34cb1bc161a", v_spawn, vectorscale((0, -1, 0), 90));
+    mdl_artifact = util::spawn_model(#"hash_2b14d34cb1bc161a", v_spawn, (0, -90, 0));
     mdl_artifact notsolid();
     mdl_artifact playsound(#"hash_2d125a0883ae10c4");
     mdl_artifact playloopsound(#"hash_66df9cab2c64f968");
@@ -2604,7 +2581,6 @@ function function_51054f59() {
     var_27805204 = struct::get(#"loc_sun");
     var_27805204 zm_unitrigger::create();
     while (!level flag::get(#"planet_step_completed")) {
-        s_result = undefined;
         s_result = var_27805204 waittill(#"trigger_activated");
         if (isdefined(s_result.e_who)) {
             s_result.e_who zm_audio::create_and_play_dialog(#"m_quest", #"hash_7ccac254437d97c2");
@@ -2646,7 +2622,6 @@ function function_51054f59() {
 // Size: 0xba
 function function_384c480f() {
     while (!level flag::get(#"planet_step_completed")) {
-        s_result = undefined;
         s_result = self waittill(#"trigger_activated", #"hash_3ff9c95fe61d398c");
         if (s_result._notify === "trigger_activated") {
             waitframe(1);
@@ -2767,7 +2742,6 @@ function function_53a78cbd() {
     var_d9ebae63 = gettime();
     var_82f4c12b = level.hero_weapon[#"chakram"];
     while (!level flag::get(#"hash_1a742576c41a0ab9")) {
-        s_result = undefined;
         s_result = self waittill(#"weapon_fired");
         if (!isdefined(level.a_planets) || level.a_planets.size == 0) {
             continue;
@@ -2871,7 +2845,7 @@ function function_acc65da4(mdl_planet) {
             n_accel = 1;
         }
         s_landing = struct::get(str_planet_name + "_coyote");
-        mdl_planet moveto(s_landing.origin + vectorscale((0, 0, 1), 20), n_move_time, n_accel, 0.5);
+        mdl_planet moveto(s_landing.origin + (0, 0, 20), n_move_time, n_accel, 0.5);
         mdl_planet waittill(#"movedone");
         mdl_planet clientfield::set("" + #"land_fx", 1);
         mdl_planet rotate((15, 50, 0));
@@ -2921,7 +2895,6 @@ function function_acc65da4(mdl_planet) {
 // Size: 0x8c
 function function_1f6c1c1f() {
     level endon(#"hash_77f76266b597a1f7");
-    s_result = undefined;
     s_result = self waittill(#"trigger_activated");
     if (isdefined(s_result.e_who)) {
         s_result.e_who thread zm_audio::create_and_play_dialog(#"m_quest", #"hash_75e9e3640a38273", 0, 1);
@@ -3125,8 +3098,8 @@ function function_5473a2b3(n_round) {
         level waittill(#"end_of_round");
     }
     s_reset = struct::get(#"sun_coyote");
-    mdl_sun = util::spawn_model("tag_origin", s_reset.origin + vectorscale((0, 0, 1), 90000));
-    mdl_sun moveto(s_reset.origin + vectorscale((0, 0, 1), 20), 9, 5, 0.5);
+    mdl_sun = util::spawn_model("tag_origin", s_reset.origin + (0, 0, 90000));
+    mdl_sun moveto(s_reset.origin + (0, 0, 20), 9, 5, 0.5);
     mdl_sun clientfield::set("" + #"essence_fx", 1);
     mdl_sun playloopsound(#"hash_5a4997dc84f6d680");
     mdl_sun waittill(#"movedone");
@@ -3205,7 +3178,6 @@ function function_a68ae7b5(s_blocker, n_health) {
     var_22733eff = int(n_health / (8 + util::get_active_players().size * 2));
     while (self.health > 0) {
         var_67ed7be7 = self.health;
-        s_result = undefined;
         s_result = self waittill(#"damage");
         if (s_result.amount >= var_22733eff) {
             self.health = self.health + s_result.amount - var_22733eff;
@@ -3390,7 +3362,7 @@ function function_353e1c69(mdl_blocker) {
             continue;
         }
         foreach (player in a_players) {
-            if (isdefined(player) && player util::is_looking_at(s_spawn.origin, undefined, 1, vectorscale((0, 0, 1), 32))) {
+            if (isdefined(player) && player util::is_looking_at(s_spawn.origin, undefined, 1, (0, 0, 32))) {
                 arrayremovevalue(var_af1d9eb1, s_spawn, 1);
                 continue;
             }
@@ -3456,11 +3428,7 @@ function stoker_cleanup() {
                 if (zm_utility::is_magic_bullet_shield_enabled(var_2b267dc2)) {
                     var_2b267dc2 util::stop_magic_bullet_shield();
                 }
-                /#
-                    /#
-                        assert(var_2b267dc2.allowdeath);
-                    #/
-                #/
+                assert(var_2b267dc2.allowdeath);
                 if (isdefined(var_2b267dc2.allowdeath) && var_2b267dc2.allowdeath) {
                     var_2b267dc2 kill();
                 }
@@ -3730,7 +3698,7 @@ function function_50128c10(var_79727c11, a_icebergs, var_c53a4cdc) {
 // Checksum 0xa776b41, Offset: 0x12068
 // Size: 0x6b0
 function function_28228fa2(s_tree) {
-    mdl_artifact = util::spawn_model(#"hash_3cdbd25e43a09930", s_tree.origin + vectorscale((-1, 0, 0), 48), s_tree.angles + vectorscale((0, 1, 0), 180));
+    mdl_artifact = util::spawn_model(#"hash_3cdbd25e43a09930", s_tree.origin + (-48, 0, 0), s_tree.angles + (0, 180, 0));
     mdl_artifact notsolid();
     mdl_artifact playloopsound(#"hash_e2c71c7dece38ee");
     mdl_artifact playsound(#"hash_7e9d06805545fcfe");

@@ -40,9 +40,7 @@ function __init__() {
 // Checksum 0x4acf442, Offset: 0x4d0
 // Size: 0x25e
 function private function_d805557c(weapon) {
-    /#
-        assert(weapon != level.weaponnone);
-    #/
+    assert(weapon != level.weaponnone);
     if (zm_loadout::function_2ff6913(weapon)) {
         return true;
     }
@@ -103,9 +101,7 @@ function private is_melee_allowed(weapon) {
     if (self function_d805557c(weapon)) {
         return 1;
     }
-    /#
-        assert(weapon != level.weaponnone);
-    #/
+    assert(weapon != level.weaponnone);
     if (zm_weapons::function_35746b9c(weapon)) {
         return 1;
     }
@@ -117,9 +113,7 @@ function private is_melee_allowed(weapon) {
 // Checksum 0x47eb4ef1, Offset: 0x988
 // Size: 0xf0
 function private function_6a8979c9() {
-    /#
-        assert(isdefined(level.var_526d919));
-    #/
+    assert(isdefined(level.var_526d919));
     foreach (weapon in self getweaponslist(1)) {
         self function_e14e7b75(weapon);
         if (weapon.isdualwield && weapon.dualwieldweapon != level.weaponnone) {
@@ -361,9 +355,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
         level zm_trial::function_44200d07(1);
         break;
     default:
-        /#
-            assert(0, "<unknown string>" + var_e097dc07);
-        #/
+        assert(0, "<unknown string>" + var_e097dc07);
         break;
     }
     level.var_526d919 = [];
@@ -574,9 +566,7 @@ function private function_e20ebcfd() {
 // Checksum 0x125b26c5, Offset: 0x3120
 // Size: 0x11c
 function private function_f3fdd8f7() {
-    /#
-        assert(isdefined(level.var_526d919));
-    #/
+    assert(isdefined(level.var_526d919));
     foreach (weapon in level.var_526d919) {
         if (self hasweapon(weapon, 1)) {
             return true;
@@ -595,9 +585,7 @@ function private function_f3fdd8f7() {
 function private monitor_objective(challenge) {
     self endon(#"disconnect");
     level endon(#"hash_7646638df88a3656");
-    /#
-        assert(isarray(challenge.a_n_objective_ids), "<unknown string>");
-    #/
+    assert(isarray(challenge.a_n_objective_ids), "<unknown string>");
     foreach (n_objective_id in challenge.a_n_objective_ids) {
         objective_setinvisibletoplayer(n_objective_id, self);
     }

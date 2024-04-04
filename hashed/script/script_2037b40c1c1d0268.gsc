@@ -8,75 +8,55 @@
 class cct_progressbar_status : cluielem {
 
     // Namespace cct_progressbar_status/ct_progressbar_status
-    // Params 0, eflags: 0x8
-    // Checksum 0x1e2fa6c8, Offset: 0x1e8
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cct_progressbar_status/ct_progressbar_status
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0xed15f7f8, Offset: 0x5c8
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cct_progressbar_status/ct_progressbar_status
     // Params 2, eflags: 0x0
     // Checksum 0x418b5ad4, Offset: 0x318
     // Size: 0x2a4
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"download_complete" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"downloading" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"connection_lost" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
         if (#"downloading1" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 4);
+            set_data(localclientnum, "_state", 4);
             return;
         }
         if (#"hash_42f8a09c2e0a99e3" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 5);
+            set_data(localclientnum, "_state", 5);
             return;
         }
         if (#"awaitingconnection" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 6);
+            set_data(localclientnum, "_state", 6);
             return;
         }
         if (#"hash_7f00f68e42b5b8f6" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 7);
+            set_data(localclientnum, "_state", 7);
             return;
         }
         if (#"sabotagedata" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 8);
+            set_data(localclientnum, "_state", 8);
             return;
         }
         if (#"sabotagedata1" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 9);
+            set_data(localclientnum, "_state", 9);
             return;
         }
         if (#"hash_7185fe2194047325" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 10);
+            set_data(localclientnum, "_state", 10);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace cct_progressbar_status/ct_progressbar_status
@@ -93,7 +73,7 @@ class cct_progressbar_status : cluielem {
     // Size: 0x44
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
+        set_state(localclientnum, #"defaultstate");
     }
 
     // Namespace cct_progressbar_status/ct_progressbar_status

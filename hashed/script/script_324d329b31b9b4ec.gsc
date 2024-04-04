@@ -117,7 +117,7 @@ function update_previs(localclientnum, invalid) {
         radius = 10;
         trace1 = bullettrace(eye_pos, eye_pos + vectorscale(forward, 300), 0, player, 1);
         if (trace1[#"fraction"] >= 1) {
-            trace1 = bullettrace(trace1[#"position"], trace1[#"position"] + vectorscale((0, 0, -1), 1000), 0, player, 1);
+            trace1 = bullettrace(trace1[#"position"], trace1[#"position"] + (0, 0, -1000), 0, player, 1);
         }
     } else {
         trace1 = function_e6ba3ec9(eye_pos, velocity, 0, weapon);

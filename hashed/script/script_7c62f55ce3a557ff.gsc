@@ -46,9 +46,7 @@ function __init__() {
     clientfield::register("actor", "brutus_lock_down", 1, 1, "int");
     level.var_d668eae7 = getentarray("brutus_zombie_spawner", "script_noteworthy");
     if (level.var_d668eae7.size == 0) {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         return;
     }
     /#
@@ -138,7 +136,6 @@ function brutus_spawning_logic() {
     level thread enable_brutus_rounds();
     level thread function_6340fe2();
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"spawn_brutus");
         n_spawn = s_result.n_spawn;
         if (n_spawn > 1) {
@@ -490,7 +487,6 @@ function brutus_death() {
     if (level.var_4d04bf1) {
         self thread brutus_cleanup_at_end_of_grief_round();
     }
-    s_result = undefined;
     s_result = self waittill(#"death");
     if (isdefined(s_result.weapon) && (s_result.weapon == getweapon(#"ww_blundergat_t8") || s_result.weapon == getweapon(#"ww_blundergat_t8_upgraded") || s_result.weapon == getweapon(#"ww_blundergat_fire_t8") || s_result.weapon == getweapon(#"ww_blundergat_fire_t8_upgraded") || s_result.weapon == getweapon(#"ww_blundergat_acid_t8") || s_result.weapon == getweapon(#"ww_blundergat_acid_t8_upgraded") || s_result.weapon == getweapon(#"hash_494f5501b3f8e1e9")) && isplayer(s_result.attacker)) {
         s_result.attacker notify(#"hash_2e36f5f4d9622bb3", {#weapon:s_result.weapon});
@@ -527,7 +523,7 @@ function brutus_death() {
             if (level.powerup_drop_count >= level.zombie_vars[#"zombie_powerup_drop_max_per_round"]) {
                 level.powerup_drop_count = level.zombie_vars[#"zombie_powerup_drop_max_per_round"] - 1;
             }
-            var_1f8ae158 = groundtrace(self.origin + vectorscale((0, 0, 1), 8), self.origin + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
+            var_1f8ae158 = groundtrace(self.origin + (0, 0, 8), self.origin + (0, 0, -100000), 0, self)[#"position"];
             level thread zm_powerups::powerup_drop(var_1f8ae158, undefined, 0);
         }
     }
@@ -564,10 +560,10 @@ function brutus_death() {
 // Checksum 0x4bfe8379, Offset: 0x23b8
 // Size: 0x16c
 function function_4621cb04(w_component) {
-    var_70f6878b = groundtrace(self.origin + vectorscale((0, 0, 1), 8), self.origin + vectorscale((0, 0, -1), 100000), 0, self)[#"position"];
-    mdl_key = util::spawn_model(w_component.worldmodel, var_70f6878b + vectorscale((0, 0, 1), 36), self.angles);
+    var_70f6878b = groundtrace(self.origin + (0, 0, 8), self.origin + (0, 0, -100000), 0, self)[#"position"];
+    mdl_key = util::spawn_model(w_component.worldmodel, var_70f6878b + (0, 0, 36), self.angles);
     mdl_key endon(#"death");
-    w_item = zm_items::spawn_item(w_component, var_70f6878b + vectorscale((0, 0, 1), 12), self.angles);
+    w_item = zm_items::spawn_item(w_component, var_70f6878b + (0, 0, 12), self.angles);
     w_item ghost();
     mdl_key thread function_f57a7d55(w_item);
     mdl_key thread function_69740610(w_item);
@@ -824,7 +820,7 @@ function brutus_lockdown_client_effects(delay) {
 // Checksum 0x4106727e, Offset: 0x30e0
 // Size: 0xae
 function private function_61263ebc() {
-    trace = groundtrace(self.origin + vectorscale((0, 0, 1), 70), self.origin + vectorscale((0, 0, -1), 100), 0, self);
+    trace = groundtrace(self.origin + (0, 0, 70), self.origin + (0, 0, -100), 0, self);
     if (isdefined(trace[#"entity"])) {
         entity = trace[#"entity"];
         if (entity ismovingplatform()) {

@@ -44,9 +44,7 @@ function update_dvars() {
 // Checksum 0x9a5bb72e, Offset: 0x198
 // Size: 0xaa
 function setup_arc(weapon, var_26b2b1bb) {
-    /#
-        assert(isdefined(weapon));
-    #/
+    assert(isdefined(weapon));
     if (!isdefined(level.var_8a74f7fc)) {
         level.var_8a74f7fc = [];
     }
@@ -77,9 +75,7 @@ function function_8d134256(var_26b2b1bb) {
 // Size: 0x8c
 function function_874bd25a(eattacker, einflictor, weapon, meansofdeath, damage) {
     var_26b2b1bb = level.var_8a74f7fc[weapon];
-    /#
-        assert(isdefined(var_26b2b1bb));
-    #/
+    assert(isdefined(var_26b2b1bb));
     self thread function_9b14bec4(eattacker, einflictor, weapon, meansofdeath, damage, var_26b2b1bb);
 }
 
@@ -171,14 +167,14 @@ function function_33d5b9a6(var_26b2b1bb, eattacker, arc_source, arc_source_origi
     }
     if (var_4d3cc1a7 && !distancecheck(var_26b2b1bb, target, self.origin, arc_source_origin)) {
         /#
-            record3dtext("<unknown string>", self.origin - vectorscale((0, 0, 1), 20), (1, 0, 0), "<unknown string>", undefined, 0.4);
+            record3dtext("<unknown string>", self.origin - (0, 0, 20), (1, 0, 0), "<unknown string>", undefined, 0.4);
         #/
         return false;
     }
     if (!damage::friendlyfirecheck(eattacker, target)) {
         return false;
     }
-    if (!target damageconetrace(self.origin + vectorscale((0, 0, 1), 10), self) && isdefined(var_26b2b1bb.var_8ce60046) && var_26b2b1bb.var_8ce60046) {
+    if (!target damageconetrace(self.origin + (0, 0, 10), self) && isdefined(var_26b2b1bb.var_8ce60046) && var_26b2b1bb.var_8ce60046) {
         return false;
     }
     if (isdefined(self.var_101a013c) && self.var_101a013c && isdefined(target.var_4233f7e5) && target.var_4233f7e5) {

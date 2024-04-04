@@ -75,7 +75,6 @@ function function_27b91fdb() {
     self flag::init(#"hash_4428586b42c7a522");
     while (true) {
         var_e7df750a = 0;
-        s_result = undefined;
         s_result = self waittill(#"weapon_change");
         var_3ba4bf7d = self getweaponslistprimaries();
         foreach (w_primary in var_3ba4bf7d) {
@@ -124,7 +123,6 @@ function function_4a81e337() {
     self thread function_292dd34f();
     self.health = 10000;
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {
             if (function_216d0545(s_notify)) {
@@ -177,7 +175,6 @@ function function_c9e23896() {
 // Size: 0xd8
 function function_6231b511() {
     while (!level flag::get("ww_lvl2_crafting_completed")) {
-        s_notify = undefined;
         s_notify = level waittill(#"blueprint_completed");
         if (s_notify.blueprint.name === "zblueprint_mansion_ww_lvl2") {
             level flag::set("ww_lvl2_crafting_completed");
@@ -232,7 +229,6 @@ function function_32573d2a(player) {
 // Size: 0x334
 function function_ea6f56ee() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
         if (!zm_utility::can_use(player) || level flag::get(#"hash_1462d174d4023e58")) {

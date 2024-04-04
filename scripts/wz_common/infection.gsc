@@ -102,7 +102,7 @@ function function_f488681f() {
     spawn_point = function_89116a1e();
     if (isdefined(spawn_point)) {
         spawn_point_origin = spawn_point.origin;
-        starttrace = physicstraceex(spawn_point_origin + vectorscale((0, 0, 1), 128), spawn_point_origin, vectorscale((-1, -1, -1), 0.5), vectorscale((1, 1, 1), 0.5), self, 1);
+        starttrace = physicstraceex(spawn_point_origin + (0, 0, 128), spawn_point_origin, (-0.5, -0.5, -0.5), (0.5, 0.5, 0.5), self, 1);
         spawn_point_origin = starttrace[#"position"];
         self.resurrect_origin = spawn_point_origin;
         self.resurrect_angles = spawn_point.angles;
@@ -161,9 +161,7 @@ function function_cc4a1b88() {
 // Size: 0x3a8
 function function_89116a1e() {
     if (!isplayer(self)) {
-        /#
-            assert(0);
-        #/
+        assert(0);
         return;
     }
     if (!isdefined(level.var_6990c489) || level.var_6990c489.size <= 0) {
@@ -216,9 +214,7 @@ function function_89116a1e() {
 // Checksum 0x99eabda7, Offset: 0xe60
 // Size: 0x124
 function function_b8c66122() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (!isplayer(self) || !isalive(self)) {
         return;
     }

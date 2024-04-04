@@ -75,7 +75,6 @@ function private on_end(round_reset) {
 function private function_c80f40af() {
     level endon(#"hash_7646638df88a3656");
     while (level.var_61541a89 < level.var_b07feb9b) {
-        s_result = undefined;
         s_result = level waittill(#"hash_1ba786f1661e3817");
         level.var_61541a89 = level.var_61541a89 + s_result.var_2ef2374;
         if (level.var_61541a89 < level.var_b07feb9b) {

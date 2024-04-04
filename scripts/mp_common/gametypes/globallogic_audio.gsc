@@ -514,9 +514,7 @@ function function_30f16f29(soundevent, var_8a6b001a, weapon) {
 // Checksum 0x9e958abd, Offset: 0x2248
 // Size: 0xe0
 function leader_dialog_for_other_teams(dialogkey, skipteam, objectivekey, killstreakid, dialogbufferkey) {
-    /#
-        assert(isdefined(skipteam));
-    #/
+    assert(isdefined(skipteam));
     foreach (team, _ in level.teams) {
         if (team != skipteam) {
             leader_dialog(dialogkey, team, undefined, objectivekey, killstreakid, dialogbufferkey);
@@ -529,9 +527,7 @@ function leader_dialog_for_other_teams(dialogkey, skipteam, objectivekey, killst
 // Checksum 0x98567c30, Offset: 0x2330
 // Size: 0x160
 function leader_dialog(dialogkey, team, excludelist, objectivekey, killstreakid, dialogbufferkey) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     foreach (player in level.players) {
         if (!isdefined(player.pers[#"team"])) {
             continue;
@@ -868,9 +864,7 @@ function announce_team_is_winning() {
 // Checksum 0x1cb9c5b5, Offset: 0x3560
 // Size: 0xd6
 function play_2d_on_team(alias, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -1034,9 +1028,7 @@ function sndmusictimelimitwatcher() {
 // Checksum 0x3b81e367, Offset: 0x3d08
 // Size: 0x198
 function set_music_on_team(state, team = "both", wait_time = 0, save_state = 0, return_state = 0) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     foreach (player in level.players) {
         if (team == "both") {
             player thread set_music_on_player(state, wait_time, save_state, return_state);
@@ -1054,9 +1046,7 @@ function set_music_on_team(state, team = "both", wait_time = 0, save_state = 0, 
 // Size: 0x104
 function set_music_on_player(state, wait_time = 0, save_state = 0, return_state = 0) {
     self endon(#"disconnect");
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (!isdefined(state)) {
         return;
     }

@@ -200,7 +200,6 @@ function function_35fa13e8(a_ents) {
     if (isdefined(fakeactor)) {
         level endon(#"game_ended");
         fakeactor setcandamage(1);
-        info = undefined;
         info = fakeactor waittill(#"damage", #"death");
         self util::delay(1, undefined, &scene::stop);
     }

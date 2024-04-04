@@ -185,7 +185,7 @@ function _fire(lifeid, player, team, killstreak_id) {
         level.var_46c23c0f = 0;
     }
     var_b984f2ed = (level.mapcenter[0] + (isdefined(level.var_5d4b4923) ? level.var_5d4b4923 : 0) + offset, level.mapcenter[1] + (isdefined(level.var_462a6e1e) ? level.var_462a6e1e : 0) + offset, startpos[2] + (isdefined(level.var_654c4b25) ? level.var_654c4b25 : 0));
-    startpos = var_b984f2ed - vectorscale((1, 0, 0), 5000);
+    startpos = var_b984f2ed - (5000, 0, 0);
     fwd = var_b984f2ed - startpos;
     startangles = vectortoangles(fwd);
     veh = spawn("script_model", startpos);
@@ -229,7 +229,7 @@ function _fire(lifeid, player, team, killstreak_id) {
     }
     thread function_203098f4(0.3);
     lui::screen_fade_out(0.1);
-    startpos = veh.origin - vectorscale((0, 0, 1), 30);
+    startpos = veh.origin - (0, 0, 30);
     rocket = magicbullet(getweapon(#"remote_missile_missile"), startpos, targetpos, player);
     rocket.forceonemissile = 1;
     forceanglevector = vectornormalize(targetpos - startpos);
@@ -351,7 +351,7 @@ function getbestspawnpoint(remotemissilespawnpoints) {
     foreach (spawnpoint in remotemissilespawnpoints) {
         foreach (player in spawnpoint.validplayers) {
             spawnpoint.spawnscore = spawnpoint.spawnscore + 1;
-            if (bullettracepassed(player.origin + vectorscale((0, 0, 1), 32), spawnpoint.origin, 0, player)) {
+            if (bullettracepassed(player.origin + (0, 0, 32), spawnpoint.origin, 0, player)) {
                 spawnpoint.spawnscore = spawnpoint.spawnscore + 3;
             }
             if (spawnpoint.spawnscore > bestspawn.spawnscore) {
@@ -627,7 +627,6 @@ function handledamage(killstreak_id) {
     self setcandamage(1);
     self.health = 99999;
     for (;;) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;
@@ -782,7 +781,7 @@ function getvalidtargets(rocket, trace, max_targets) {
         }
         if (distance2dsquared(player.origin, var_7650a84) < 810000 && !player hasperk(#"specialty_nokillstreakreticle")) {
             if (trace) {
-                if (bullettracepassed(player.origin + vectorscale((0, 0, 1), 60), player.origin + vectorscale((0, 0, 1), 1000), 0, player)) {
+                if (bullettracepassed(player.origin + (0, 0, 60), player.origin + (0, 0, 1000), 0, player)) {
                     targets[targets.size] = player;
                 }
             } else {
@@ -797,7 +796,7 @@ function getvalidtargets(rocket, trace, max_targets) {
     foreach (dog in dogs) {
         if (util::function_fbce7263(dog.team, self.team) && distance2dsquared(dog.origin, var_7650a84) < 810000) {
             if (trace) {
-                if (bullettracepassed(dog.origin + vectorscale((0, 0, 1), 60), dog.origin + vectorscale((0, 0, 1), 1000), 0, dog)) {
+                if (bullettracepassed(dog.origin + (0, 0, 60), dog.origin + (0, 0, 1000), 0, dog)) {
                     targets[targets.size] = dog;
                 }
             } else {
@@ -812,7 +811,7 @@ function getvalidtargets(rocket, trace, max_targets) {
     foreach (tank in tanks) {
         if (util::function_fbce7263(tank.team, self.team) && distance2dsquared(tank.origin, var_7650a84) < 810000) {
             if (trace) {
-                if (bullettracepassed(tank.origin + vectorscale((0, 0, 1), 60), tank.origin + vectorscale((0, 0, 1), 1000), 0, tank)) {
+                if (bullettracepassed(tank.origin + (0, 0, 60), tank.origin + (0, 0, 1000), 0, tank)) {
                     targets[targets.size] = tank;
                 }
             } else {
@@ -827,7 +826,7 @@ function getvalidtargets(rocket, trace, max_targets) {
     foreach (turret in turrets) {
         if (util::function_fbce7263(turret.team, self.team) && distance2dsquared(turret.origin, var_7650a84) < 810000) {
             if (trace) {
-                if (bullettracepassed(turret.origin + vectorscale((0, 0, 1), 60), turret.origin + vectorscale((0, 0, 1), 1000), 0, turret)) {
+                if (bullettracepassed(turret.origin + (0, 0, 60), turret.origin + (0, 0, 1000), 0, turret)) {
                     targets[targets.size] = turret;
                 }
             } else {
@@ -863,7 +862,7 @@ function getbesttarget(rocket, trace) {
         proj = rocket.origin + vectorscale(fwd, dot);
         dist2 = distancesquared(player.origin, proj);
         if (dist2 < best_dist2) {
-            if (trace && !bullettracepassed(player.origin + vectorscale((0, 0, 1), 60), player.origin + vectorscale((0, 0, 1), 1000), 0, player)) {
+            if (trace && !bullettracepassed(player.origin + (0, 0, 60), player.origin + (0, 0, 1000), 0, player)) {
                 continue;
             }
             best_target = player;
@@ -899,7 +898,7 @@ function checktarget(rocket) {
         proj = rocket.origin + vectorscale(fwd, dot);
         dist2 = distancesquared(target.origin, proj);
         if (dist2 < cutoff_dist2) {
-            if (!bullettracepassed(target.origin + vectorscale((0, 0, 1), 60), target.origin + vectorscale((0, 0, 1), 1000), 0, target)) {
+            if (!bullettracepassed(target.origin + (0, 0, 60), target.origin + (0, 0, 1000), 0, target)) {
                 target = undefined;
             }
         } else {
@@ -1033,9 +1032,7 @@ function targeting_hud_think(rocket) {
                     level.remote_missile_targets remote_missile_targets::set_extra_target_2(self, target getentitynumber());
                     continue;
                 }
-                /#
-                    assertmsg("<unknown string>");
-                #/
+                assertmsg("<unknown string>");
             }
         }
         enemies = getplayers();
@@ -1164,7 +1161,7 @@ function setup_bomblet(bomb) {
 // Size: 0x19c
 function fire_bomblet(weapon, rocket, target, waitframes) {
     origin = rocket.origin;
-    targetorigin = target.origin + vectorscale((0, 0, 1), 50);
+    targetorigin = target.origin + (0, 0, 50);
     waitframe(waitframes);
     if (isdefined(rocket)) {
         origin = rocket.origin;
@@ -1172,7 +1169,7 @@ function fire_bomblet(weapon, rocket, target, waitframes) {
     if (!isdefined(self) || !isdefined(target)) {
         return;
     }
-    bomb = magicbullet(weapon, origin, targetorigin, self, target, vectorscale((0, 0, 1), 30));
+    bomb = magicbullet(weapon, origin, targetorigin, self, target, (0, 0, 30));
     if (isdefined(rocket) && isdefined(bomb)) {
         if (!isdefined(rocket.bomblets)) {
             rocket.bomblets = [];

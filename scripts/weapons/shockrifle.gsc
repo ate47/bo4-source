@@ -129,7 +129,6 @@ function function_aa6e2f52(watcher, owner) {
     self.hit_ents = [];
     self.var_7471e7b7 = 0;
     self setcandamage(0);
-    waitresult = undefined;
     waitresult = self waittill(#"grenade_stuck");
     waitframe(2);
     if (!isdefined(waitresult.hitent)) {
@@ -189,7 +188,6 @@ function function_5fff8c45(watcher, hitent) {
     up = anglestoup(self.angles);
     traceorigin = self.origin + up;
     while (self.var_7471e7b7 < level.var_a5ff950.var_1fb6bd43) {
-        waitresult = undefined;
         waitresult = damagearea waittill(#"trigger");
         ent = waitresult.activator;
         if (isdefined(self.detonating) && self.detonating) {
@@ -499,7 +497,6 @@ function function_bcc47944(watcher) {
     self.damagetaken = 0;
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;

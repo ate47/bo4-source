@@ -136,7 +136,7 @@ function function_dbad2f5a() {
     self zm_orange_lighthouse::function_1b488412(vh_target.origin, 1);
     self.vh_target.e_spotlight = util::spawn_model("tag_origin", self.vh_target.origin);
     self.vh_target.e_spotlight enablelinkto();
-    self.vh_target.e_spotlight linkto(self.vh_target, "tag_origin", vectorscale((0, 0, 1), 390), vectorscale((1, 0, 0), 90));
+    self.vh_target.e_spotlight linkto(self.vh_target, "tag_origin", (0, 0, 390), (90, 0, 0));
     self waittill(#"rotatedone");
     level.var_ab11c23d clientfield::set("lighthouse_on", 3);
     self.vh_target.e_spotlight clientfield::set("" + #"trials_lighthouse_beam", 2);

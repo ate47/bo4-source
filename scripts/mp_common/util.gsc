@@ -48,9 +48,7 @@ function waitrespawnbutton() {
 // Checksum 0xc58e3fcc, Offset: 0x2d8
 // Size: 0xd6
 function printonteam(text, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -64,9 +62,7 @@ function printonteam(text, team) {
 // Checksum 0x774b5df5, Offset: 0x3b8
 // Size: 0xd6
 function printboldonteam(text, team) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -80,9 +76,7 @@ function printboldonteam(text, team) {
 // Checksum 0xcb1301d0, Offset: 0x498
 // Size: 0xe6
 function printboldonteamarg(text, team, arg) {
-    /#
-        assert(isdefined(level.players));
-    #/
+    assert(isdefined(level.players));
     for (i = 0; i < level.players.size; i++) {
         player = level.players[i];
         if (isdefined(player.pers[#"team"]) && player.pers[#"team"] == team) {
@@ -124,9 +118,7 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
     shoulddosounds = isdefined(soundfriendly);
     shoulddoenemysounds = 0;
     if (isdefined(soundenemy)) {
-        /#
-            assert(shoulddosounds);
-        #/
+        assert(shoulddosounds);
         shoulddoenemysounds = 1;
     }
     if (!isdefined(printarg)) {
@@ -153,16 +145,12 @@ function printandsoundoneveryone(team, enemyteam, printfriendly, printenemy, sou
             }
         }
         if (shoulddosounds) {
-            /#
-                assert(level.splitscreen);
-            #/
+            assert(level.splitscreen);
             level.players[0] playlocalsound(soundfriendly);
         }
         return;
     }
-    /#
-        assert(shoulddosounds);
-    #/
+    assert(shoulddosounds);
     if (shoulddoenemysounds) {
         for (i = 0; i < level.players.size; i++) {
             player = level.players[i];
@@ -232,9 +220,7 @@ function getotherteam(team) {
     } else {
         return #"allies";
     }
-    /#
-        assertmsg("<unknown string>" + team);
-    #/
+    assertmsg("<unknown string>" + team);
 }
 
 // Namespace util/util
@@ -247,9 +233,7 @@ function getteamenum(team) {
     } else if (team == #"axis") {
         return 2;
     }
-    /#
-        assertmsg("<unknown string>" + team);
-    #/
+    assertmsg("<unknown string>" + team);
 }
 
 // Namespace util/util
@@ -302,9 +286,7 @@ function wait_endon(waittime, endonstring, endonstring2, endonstring3, endonstri
 // Checksum 0x74761c02, Offset: 0xec8
 // Size: 0x5c
 function getfx(fx) {
-    /#
-        assert(isdefined(level._effect[fx]), "<unknown string>" + fx + "<unknown string>");
-    #/
+    assert(isdefined(level._effect[fx]), "<unknown string>" + fx + "<unknown string>");
     return level._effect[fx];
 }
 
@@ -662,9 +644,7 @@ function self_delete() {
 // Checksum 0x4bd7875d, Offset: 0x1e48
 // Size: 0x4a
 function use_button_pressed() {
-    /#
-        assert(isplayer(self), "<unknown string>");
-    #/
+    assert(isplayer(self), "<unknown string>");
     return self usebuttonpressed();
 }
 

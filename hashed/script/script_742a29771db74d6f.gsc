@@ -8,28 +8,14 @@
 // Method(s) 9 Total 16
 class czm_arcade_timer : cluielem {
 
-    // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0xbe2b6734, Offset: 0x840
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_arcade_timer/zm_arcade_timer
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0xb5c15fdc, Offset: 0xad0
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
+    var var_47e79fc;
 
     // Namespace czm_arcade_timer/zm_arcade_timer
     // Params 2, eflags: 0x1 linked
     // Checksum 0x8bbb9c26, Offset: 0xa88
     // Size: 0x3c
     function set_title(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "title", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "title", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -37,7 +23,7 @@ class czm_arcade_timer : cluielem {
     // Checksum 0x34526399, Offset: 0xa40
     // Size: 0x3c
     function set_minutes(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "minutes", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "minutes", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -45,7 +31,7 @@ class czm_arcade_timer : cluielem {
     // Checksum 0xcd47130b, Offset: 0x9f8
     // Size: 0x3c
     function set_seconds(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "seconds", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "seconds", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer
@@ -53,7 +39,7 @@ class czm_arcade_timer : cluielem {
     // Checksum 0xbd19b725, Offset: 0x9b0
     // Size: 0x3c
     function set_showzero(player, value) {
-        player clientfield::function_9bf78ef8(self.var_47e79fc, "showzero", value);
+        player clientfield::function_9bf78ef8(var_47e79fc, "showzero", value);
     }
 
     // Namespace czm_arcade_timer/zm_arcade_timer

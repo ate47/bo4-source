@@ -105,7 +105,6 @@ function playerzombie_player_damage() {
     self thread playerzombie_infinite_health();
     self.zombiehealth = level.zombie_health;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         amount = waitresult.amount;
@@ -269,9 +268,7 @@ function can_do_input(inputtype) {
         }
         break;
     default:
-        /#
-            assertmsg("<unknown string>" + inputtype);
-        #/
+        assertmsg("<unknown string>" + inputtype);
         break;
     }
     return cando;
@@ -291,9 +288,7 @@ function playerzombie_play_sound(alias) {
 // Size: 0x182
 function playerzombie_waitfor_buttonrelease(inputtype) {
     if (inputtype != "use" && inputtype != "attack" && inputtype != "ads") {
-        /#
-            assertmsg("<unknown string>" + inputtype + "<unknown string>");
-        #/
+        assertmsg("<unknown string>" + inputtype + "<unknown string>");
         return;
     }
     notifystring = "waitfor_buttonrelease_" + inputtype;

@@ -648,7 +648,7 @@ function update_swim() {
         self bottapbutton(67);
         return;
     }
-    bottomtrace = groundtrace(self.origin, self.origin + vectorscale((0, 0, -1), 1000), 0, self, 1);
+    bottomtrace = groundtrace(self.origin, self.origin + (0, 0, -1000), 0, self, 1);
     swimheight = self.origin[2] - bottomtrace[#"position"][2];
     if (swimheight < 25) {
         self bottapbutton(67);
@@ -1036,12 +1036,8 @@ function allow_all(allow) {
 // Checksum 0x1292514a, Offset: 0x3568
 // Size: 0x11a
 function function_f0c35734(trigger) {
-    /#
-        assert(isbot(self));
-    #/
-    /#
-        assert(isdefined(trigger));
-    #/
+    assert(isbot(self));
+    assert(isdefined(trigger));
     radius = self getpathfindingradius();
     height = self function_6a9ae71();
     heightoffset = (0, 0, height * -1 / 2);
@@ -1055,12 +1051,8 @@ function function_f0c35734(trigger) {
 // Checksum 0x89ca3795, Offset: 0x3690
 // Size: 0x152
 function function_52947b70(trigger) {
-    /#
-        assert(isbot(self));
-    #/
-    /#
-        assert(isstruct(trigger));
-    #/
+    assert(isbot(self));
+    assert(isstruct(trigger));
     radius = self getpathfindingradius();
     height = self function_6a9ae71();
     heightoffset = (0, 0, height * -1 / 2);
@@ -1385,7 +1377,7 @@ function function_2d5436be(origin, spiral) {
     spiral.radius = math::function_b1820790(a, b, c, spiral.angle);
     var_17e94d83 = rotatepointaroundaxis((spiral.radius, 0, 0), (0, 0, 1), spiral.angle + spiral.var_2b9d3922);
     spawn_point = var_17e94d83 + origin;
-    trace = bullettrace(spawn_point + vectorscale((0, 0, 1), 100), spawn_point, 0, self);
+    trace = bullettrace(spawn_point + (0, 0, 100), spawn_point, 0, self);
     return trace[#"position"];
 }
 
@@ -1403,7 +1395,7 @@ function devgui_add_fixed_spawn_bots(botarg, var_b27e53da, countarg) {
     }
     count = max(int(countarg), 1);
     bots = [];
-    offset = vectorscale((0, 0, 1), 5);
+    offset = (0, 0, 5);
     origin = trace[#"position"] + offset;
     if (!isdefined(bots)) {
         bots = [];

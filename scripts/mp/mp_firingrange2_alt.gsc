@@ -204,7 +204,6 @@ function watchkilltrigger() {
     level endon(#"game_ended");
     trigger = self;
     while (true) {
-        waitresult = undefined;
         waitresult = trigger waittill(#"trigger");
         waitresult.activator dodamage(1000, trigger.origin + (0, 0, 0), trigger, trigger, "none", "MOD_SUICIDE", 0);
     }
@@ -238,7 +237,6 @@ function vectoangles(vector) {
 function triggercheck(target) {
     self endon(#"game_ended");
     while (true) {
-        result = undefined;
         result = self waittill(#"trigger");
         distance = distance(target.origin, self.origin);
         if (distance <= 90) {

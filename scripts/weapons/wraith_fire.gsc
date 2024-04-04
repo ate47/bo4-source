@@ -76,9 +76,7 @@ function function_4dbceded() {
 // Size: 0x264
 function function_13f6636b(owner, weapon) {
     self endon(#"hacked", #"hash_51d0dcaebb5940a5");
-    /#
-        assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
-    #/
+    assert(isdefined(weapon.customsettings), "<unknown string>" + weapon.name);
     self thread function_4dbceded();
     team = self.team;
     killcament = spawn("script_model", self.origin);
@@ -89,7 +87,6 @@ function function_13f6636b(owner, weapon) {
     killcament setweapon(self.weapon);
     killcament killcam::store_killcam_entity_on_entity(self);
     self thread function_b66b2f4d();
-    waitresult = undefined;
     waitresult = self waittill(#"projectile_impact_explode", #"explode");
     if (waitresult._notify == "projectile_impact_explode") {
         if (isdefined(killcament)) {
@@ -179,8 +176,8 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
     var_fc031a6d = getweapon(#"hash_5624a55eb03372d0");
     if (normal[2] < -0.5) {
         var_36c22d1d = position + vectorscale(normal, 2);
-        var_8ae62b02 = var_36c22d1d - vectorscale((0, 0, 1), 240);
-        var_69d15ad0 = physicstrace(var_36c22d1d, var_8ae62b02, vectorscale((-1, -1, -1), 0.5), vectorscale((1, 1, 1), 0.5), self, 1);
+        var_8ae62b02 = var_36c22d1d - (0, 0, 240);
+        var_69d15ad0 = physicstrace(var_36c22d1d, var_8ae62b02, (-0.5, -0.5, -0.5), (0.5, 0.5, 0.5), self, 1);
         if (var_69d15ad0[#"fraction"] < 1) {
             position = var_69d15ad0[#"position"];
             if (var_69d15ad0[#"fraction"] > 0) {
@@ -198,8 +195,8 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
         }
     } else if (normal[2] < 0.5) {
         var_36c22d1d = position + vectorscale(var_493d36f9, 2);
-        var_8ae62b02 = var_36c22d1d - vectorscale((0, 0, 1), 20);
-        var_69d15ad0 = physicstrace(var_36c22d1d, var_8ae62b02, vectorscale((-1, -1, -1), 0.5), vectorscale((1, 1, 1), 0.5), self, 1);
+        var_8ae62b02 = var_36c22d1d - (0, 0, 20);
+        var_69d15ad0 = physicstrace(var_36c22d1d, var_8ae62b02, (-0.5, -0.5, -0.5), (0.5, 0.5, 0.5), self, 1);
         if (var_69d15ad0[#"fraction"] < 1) {
             position = var_36c22d1d;
             if (var_69d15ad0[#"fraction"] > 0) {
@@ -212,8 +209,8 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
     if (normal[2] < 0.5) {
         wall_normal = normal;
         var_36c22d1d = originalposition + vectorscale(var_493d36f9, 8);
-        var_8ae62b02 = var_36c22d1d - vectorscale((0, 0, 1), 300);
-        var_69d15ad0 = physicstrace(var_36c22d1d, var_8ae62b02, vectorscale((-1, -1, -1), 3), vectorscale((1, 1, 1), 3), self, 1);
+        var_8ae62b02 = var_36c22d1d - (0, 0, 300);
+        var_69d15ad0 = physicstrace(var_36c22d1d, var_8ae62b02, (-3, -3, -3), (3, 3, 3), self, 1);
         var_693f108f = var_69d15ad0[#"fraction"] * 300;
         var_959a2a8b = 0;
         if (var_693f108f > 10) {
@@ -251,16 +248,16 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
         }
     }
     startpos = position + function_7cbeb2f0(normal);
-    desiredendpos = startpos + vectorscale((0, 0, 1), 60);
+    desiredendpos = startpos + (0, 0, 60);
     function_85ff22aa(startpos, 20, (0, 1, 0), 0.6, 200);
-    phystrace = physicstrace(startpos, desiredendpos, vectorscale((-1, -1, -1), 4), vectorscale((1, 1, 1), 4), self, 1);
+    phystrace = physicstrace(startpos, desiredendpos, (-4, -4, -4), (4, 4, 4), self, 1);
     goalpos = phystrace[#"fraction"] > 1 ? desiredendpos : phystrace[#"position"];
     if (isdefined(killcament)) {
         killcament moveto(goalpos, 0.5);
     }
     rotation = randomint(360);
     if (normal[2] < 0.1 && !isdefined(var_e76400c0)) {
-        black = vectorscale((1, 1, 1), 0.1);
+        black = (0.1, 0.1, 0.1);
         trace = hitpos(startpos, startpos + normal * -1 * 70 + (0, 0, -1) * 70, black);
         traceposition = trace[#"position"];
         if (trace[#"fraction"] < 0.9) {
@@ -293,7 +290,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
     colorarray[colorarray.size] = (0.9, 0.2, 0.2);
     colorarray[colorarray.size] = (0.2, 0.9, 0.2);
     colorarray[colorarray.size] = (0.2, 0.2, 0.9);
-    colorarray[colorarray.size] = vectorscale((1, 1, 1), 0.9);
+    colorarray[colorarray.size] = (0.9, 0.9, 0.9);
     locations = [];
     locations[#"color"] = [];
     locations[#"loc"] = [];
@@ -380,7 +377,7 @@ function function_8a03d3f3(owner, impactpos, startpos, normal, multiplier, rotat
         forward = (0, 0, 1);
     }
     mdl_anchor = util::spawn_model("tag_origin", var_6b23e1c9);
-    s_trace = groundtrace(mdl_anchor.origin + vectorscale((0, 0, 1), 10), mdl_anchor.origin + vectorscale((0, 0, -1), 100), 0, mdl_anchor);
+    s_trace = groundtrace(mdl_anchor.origin + (0, 0, 10), mdl_anchor.origin + (0, 0, -100), 0, mdl_anchor);
     if (isdefined(s_trace[#"entity"]) && s_trace[#"entity"] ismovingplatform()) {
         mdl_anchor linkto(s_trace[#"entity"]);
     } else {

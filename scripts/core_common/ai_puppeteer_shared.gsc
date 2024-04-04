@@ -427,7 +427,7 @@ function ai_puppeteer_render_point(point, normal, forward, color) {
 function ai_puppeteer_render_node(node, color) {
     /#
         print3d(node.origin, node.type, color, 1, 0.35);
-        box(node.origin, vectorscale((-1, -1, 0), 16), vectorscale((1, 1, 1), 16), node.angles[1], color, 1, 1);
+        box(node.origin, (-16, -16, 0), (16, 16, 16), node.angles[1], color, 1, 1);
         nodeforward = anglestoforward(node.angles);
         nodeforward = vectorscale(nodeforward, 8);
         line(node.origin, node.origin + nodeforward, color, 1, 1);

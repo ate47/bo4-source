@@ -157,11 +157,7 @@ function _play(animation, v_origin_or_ent, v_angles_or_tag, n_rate, n_blend_in, 
         str_tag = v_angles_or_tag;
         v_origin = v_origin_or_ent gettagorigin(str_tag);
         v_angles = v_origin_or_ent gettagangles(str_tag);
-        /#
-            /#
-                assert(isdefined(v_origin) && isdefined(v_angles), "<unknown string>" + function_9e72a96(animation) + "<unknown string>" + v_origin_or_ent getentitynumber() + "<unknown string>" + v_angles_or_tag + "<unknown string>");
-            #/
-        #/
+        assert(isdefined(v_origin) && isdefined(v_angles), "<unknown string>" + function_9e72a96(animation) + "<unknown string>" + v_origin_or_ent getentitynumber() + "<unknown string>" + v_angles_or_tag + "<unknown string>");
     } else {
         v_angles = isdefined(v_origin_or_ent.angles) ? v_origin_or_ent.angles : (0, 0, 0);
     }
@@ -292,9 +288,7 @@ function _get_align_ent(e_align) {
 function _get_align_pos(v_origin_or_ent = self.origin, v_angles_or_tag = isdefined(self.angles) ? self.angles : (0, 0, 0)) {
     s = spawnstruct();
     if (isvec(v_origin_or_ent)) {
-        /#
-            assert(isvec(v_angles_or_tag), "<unknown string>");
-        #/
+        assert(isvec(v_angles_or_tag), "<unknown string>");
         s.origin = v_origin_or_ent;
         s.angles = v_angles_or_tag;
     } else {
@@ -450,9 +444,7 @@ function add_notetrack_func(funcname, func) {
     if (!isdefined(level._animnotifyfuncs)) {
         level._animnotifyfuncs = [];
     }
-    /#
-        assert(!isdefined(level._animnotifyfuncs[funcname]), "<unknown string>");
-    #/
+    assert(!isdefined(level._animnotifyfuncs[funcname]), "<unknown string>");
     level._animnotifyfuncs[funcname] = func;
 }
 
@@ -529,7 +521,6 @@ function setup_notetracks() {
 function handle_notetracks(animation) {
     self endon(#"death", #"new_scripted_anim");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(animation);
         str_note = waitresult.notetrack;
         if (isdefined(str_note)) {
@@ -640,9 +631,7 @@ function attach_weapon(weaponobject, tag = "tag_weapon_right") {
         if (self.item != level.weaponnone) {
             detach_weapon();
         }
-        /#
-            assert(isdefined(weaponobject.worldmodel));
-        #/
+        assert(isdefined(weaponobject.worldmodel));
         self attach(weaponobject.worldmodel, tag);
         self setentityweapon(weaponobject);
         self.gun_removed = undefined;
@@ -689,9 +678,7 @@ function fire_weapon() {
 // Checksum 0x6c0a644a, Offset: 0x2d30
 // Size: 0x26c
 function function_eb0aa7cf(n_pulse = 100, bone) {
-    /#
-        assert(!issentient(self), "<unknown string>");
-    #/
+    assert(!issentient(self), "<unknown string>");
     if (!isdefined(bone)) {
         bone = "tag_physics_pulse";
     }
@@ -702,7 +689,7 @@ function function_eb0aa7cf(n_pulse = 100, bone) {
         return;
     }
     var_cc487a10 = self gettagangles(bone);
-    var_236556ec = vectorscale((0, 0, 1), 100);
+    var_236556ec = (0, 0, 100);
     color = (1, 0, 0);
     if (isdefined(var_cc487a10)) {
         var_236556ec = vectorscale(anglestoforward(var_cc487a10), n_pulse);

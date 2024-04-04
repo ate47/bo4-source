@@ -56,7 +56,6 @@ function activation() {
     self playsound(#"zmb_bgb_plainsight_start");
     self thread bgb::run_timer(10);
     self clientfield::set_to_player("" + #"hash_321b58d22755af74", 1);
-    ret = undefined;
     ret = self waittilltimeout(9.5, #"bgb_about_to_take_on_bled_out", #"end_game", #"bgb_update", #"disconnect", #"scene_igc_shot_started");
     self playsound(#"zmb_bgb_plainsight_end");
     self clientfield::set_to_player("" + #"hash_321b58d22755af74", 0);

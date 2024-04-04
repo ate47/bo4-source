@@ -55,9 +55,7 @@ function _get_item(itemname) {
 // Checksum 0xc7d6ef93, Offset: 0x368
 // Size: 0xbc
 function function_a9b8fa06() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (!isplayer(self) || !isalive(self)) {
         return;
     }
@@ -77,9 +75,7 @@ function function_a9b8fa06() {
 // Checksum 0x8a1af9e1, Offset: 0x430
 // Size: 0x1da
 function function_3fed57dd() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (!isplayer(self) || !isalive(self)) {
         return;
     }
@@ -122,9 +118,7 @@ function function_3fed57dd() {
 // Checksum 0x7e5a4ad1, Offset: 0x618
 // Size: 0x16fa
 function function_9de0644f() {
-    /#
-        assert(isplayer(self));
-    #/
+    assert(isplayer(self));
     if (!isplayer(self) || !isalive(self)) {
         return;
     }

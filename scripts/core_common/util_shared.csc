@@ -254,12 +254,8 @@ function _waitlogic(s_tracker, notifies) {
 // Checksum 0xb6392dff, Offset: 0xbd0
 // Size: 0x166
 function waittill_any_ents(ent1, string1, ent2, string2, ent3, string3, ent4, string4, ent5, string5, ent6, string6, ent7, string7) {
-    /#
-        assert(isdefined(ent1));
-    #/
-    /#
-        assert(isdefined(string1));
-    #/
+    assert(isdefined(ent1));
+    assert(isdefined(string1));
     if (isdefined(ent2) && isdefined(string2)) {
         ent2 endon(string2);
     }
@@ -286,15 +282,9 @@ function waittill_any_ents(ent1, string1, ent2, string2, ent3, string3, ent4, st
 // Checksum 0xd0f2b581, Offset: 0xd40
 // Size: 0x12e
 function function_e532f5da(n_timeout, ent1, string1, ent2, string2, ent3, string3, ent4, string4, ent5, string5) {
-    /#
-        assert(isdefined(n_timeout));
-    #/
-    /#
-        assert(isdefined(ent1));
-    #/
-    /#
-        assert(isdefined(string1));
-    #/
+    assert(isdefined(n_timeout));
+    assert(isdefined(ent1));
+    assert(isdefined(string1));
     if (isdefined(ent2) && isdefined(string2)) {
         ent2 endon(string2);
     }
@@ -315,12 +305,8 @@ function function_e532f5da(n_timeout, ent1, string1, ent2, string2, ent3, string
 // Checksum 0xb6c232bf, Offset: 0xe78
 // Size: 0x80
 function waittill_any_ents_two(ent1, string1, ent2, string2) {
-    /#
-        assert(isdefined(ent1));
-    #/
-    /#
-        assert(isdefined(string1));
-    #/
+    assert(isdefined(ent1));
+    assert(isdefined(string1));
     if (isdefined(ent2) && isdefined(string2)) {
         ent2 endon(string2);
     }
@@ -414,9 +400,7 @@ function _single_func(entity, func, a_vars) {
         }
         break;
     default:
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
         break;
     }
 }
@@ -464,12 +448,8 @@ function call_func(s_func) {
 // Checksum 0xd95e78b9, Offset: 0x16a8
 // Size: 0x164
 function array_ent_thread(entities, func, arg1, arg2, arg3, arg4, arg5) {
-    /#
-        assert(isdefined(entities), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(func), "<unknown string>");
-    #/
+    assert(isdefined(entities), "<unknown string>");
+    assert(isdefined(func), "<unknown string>");
     if (isarray(entities)) {
         if (entities.size) {
             foreach (entity in entities) {
@@ -486,9 +466,7 @@ function array_ent_thread(entities, func, arg1, arg2, arg3, arg4, arg5) {
 // Checksum 0x616b1008, Offset: 0x1818
 // Size: 0x162
 function single_thread(entity, func, arg1, arg2, arg3, arg4, arg5, arg6) {
-    /#
-        assert(isdefined(entity), "<unknown string>");
-    #/
+    assert(isdefined(entity), "<unknown string>");
     if (isdefined(arg6)) {
         entity thread [[ func ]](arg1, arg2, arg3, arg4, arg5, arg6);
         return;
@@ -715,7 +693,7 @@ function get_eye() {
 // Checksum 0x1515ccc2, Offset: 0x2180
 // Size: 0xb0
 function spawn_player_arms() {
-    arms = spawn(self getlocalclientnumber(), self.origin + vectorscale((0, 0, -1), 1000), "script_model");
+    arms = spawn(self getlocalclientnumber(), self.origin + (0, 0, -1000), "script_model");
     if (isdefined(level.player_viewmodel)) {
         arms setmodel(level.player_viewmodel);
     } else {
@@ -769,12 +747,8 @@ function is_valid_type_for_callback(type) {
 // Checksum 0x26fd6eb2, Offset: 0x2480
 // Size: 0xa8
 function wait_till_not_touching(e_to_check, e_to_touch) {
-    /#
-        assert(isdefined(e_to_check), "<unknown string>");
-    #/
-    /#
-        assert(isdefined(e_to_touch), "<unknown string>");
-    #/
+    assert(isdefined(e_to_check), "<unknown string>");
+    assert(isdefined(e_to_touch), "<unknown string>");
     e_to_check endon(#"death");
     e_to_touch endon(#"death");
     while (e_to_check istouching(e_to_touch)) {
@@ -906,9 +880,7 @@ function get_other_team(str_team) {
     } else {
         return #"allies";
     }
-    /#
-        assertmsg("<unknown string>" + str_team);
-    #/
+    assertmsg("<unknown string>" + str_team);
 }
 
 // Namespace util/util_shared
@@ -941,9 +913,7 @@ function isenemyteam(team) {
 // Checksum 0x341a2899, Offset: 0x2ac0
 // Size: 0xba
 function isenemyplayer(player) {
-    /#
-        assert(isdefined(player));
-    #/
+    assert(isdefined(player));
     if (!isplayer(player)) {
         return false;
     }
@@ -1370,9 +1340,7 @@ function getnextobjid(localclientnum) {
         if (nextid > 31) {
             println("<unknown string>");
         }
-        /#
-            assert(nextid < 32);
-        #/
+        assert(nextid < 32);
     #/
     if (nextid > 31) {
         nextid = 31;
@@ -1385,9 +1353,7 @@ function getnextobjid(localclientnum) {
 // Checksum 0x5e918b78, Offset: 0x3cb8
 // Size: 0xb8
 function releaseobjid(localclientnum, objid) {
-    /#
-        assert(objid < level.numgametypereservedobjectives[localclientnum]);
-    #/
+    assert(objid < level.numgametypereservedobjectives[localclientnum]);
     for (i = 0; i < level.releasedobjectives[localclientnum].size; i++) {
         if (objid == level.releasedobjectives[localclientnum][i]) {
             return;
@@ -1588,9 +1554,7 @@ function lerp_generic(localclientnum, duration, callback, ...) {
 // Checksum 0x6d6e50b6, Offset: 0x4440
 // Size: 0x6a
 function function_c16f65a3(enemy_a, enemy_b) {
-    /#
-        assert(enemy_a != enemy_b, "<unknown string>");
-    #/
+    assert(enemy_a != enemy_b, "<unknown string>");
     level.team_enemy_mapping[enemy_a] = enemy_b;
     level.team_enemy_mapping[enemy_b] = enemy_a;
 }
@@ -1652,9 +1616,7 @@ function set_team_mapping(str_team_for_sidea, str_team_for_sideb) {
     } else if (str_team_for_sideb == #"allies") {
         str_team_for_sideb = #"allies";
     }
-    /#
-        assert(str_team_for_sidea != str_team_for_sideb, "<unknown string>");
-    #/
+    assert(str_team_for_sidea != str_team_for_sideb, "<unknown string>");
     level.team_mapping[#"sidea"] = str_team_for_sidea;
     level.team_mapping[#"sideb"] = str_team_for_sideb;
     level.team_mapping[#"attacker"] = str_team_for_sidea;
@@ -1673,9 +1635,7 @@ function set_team_mapping(str_team_for_sidea, str_team_for_sideb) {
 // Checksum 0x36d0b874, Offset: 0x49b0
 // Size: 0x62
 function get_team_mapping(str_team) {
-    /#
-        assert(isdefined(str_team));
-    #/
+    assert(isdefined(str_team));
     if (isdefined(level.team_mapping)) {
         result = level.team_mapping[str_team];
         if (isdefined(result)) {

@@ -923,9 +923,7 @@ function gadget_primed(slot, weapon) {
 // Checksum 0xce21df03, Offset: 0x38b8
 // Size: 0xfe
 function tutorial_timer(weapon, var_8be5aa55, var_de825ec6) {
-    /#
-        assert(isdefined(var_8be5aa55) && isstring(var_8be5aa55));
-    #/
+    assert(isdefined(var_8be5aa55) && isstring(var_8be5aa55));
     if (isdefined(var_de825ec6)) {
         tutorial_init(weapon);
         self.pers[#"ability_tutorial"][weapon].(var_8be5aa55) = gettime() + var_de825ec6 * 1000;

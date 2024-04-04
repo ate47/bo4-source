@@ -60,7 +60,6 @@ function function_fac87205(var_9d80e6ef, var_e0bc0661, var_98f0ce74 = 0, var_85b
     if (isdefined(var_85b3bba3) && var_85b3bba3) {
         unitrigger_force_per_player_triggers(s_unitrigger, 1);
     }
-    s_notify = undefined;
     s_notify = self waittill(#"trigger_activated");
     unregister_unitrigger(self.s_unitrigger);
     self.s_unitrigger = undefined;
@@ -74,7 +73,6 @@ function function_fac87205(var_9d80e6ef, var_e0bc0661, var_98f0ce74 = 0, var_85b
 function function_69168e61() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!zm_utility::can_use(e_player)) {
@@ -93,7 +91,6 @@ function function_69168e61() {
 function function_cf3f2bd8() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (!zm_utility::can_use(e_player, 1)) {
@@ -161,9 +158,7 @@ function function_28304f6a() {
 // Size: 0x442
 function private register_unitrigger_internal(unitrigger_stub, trigger_func) {
     if (!isdefined(unitrigger_stub.script_unitrigger_type)) {
-        /#
-            println("<unknown string>");
-        #/
+        println("<unknown string>");
         return;
     }
     if (isdefined(trigger_func)) {
@@ -204,9 +199,7 @@ function private register_unitrigger_internal(unitrigger_stub, trigger_func) {
         unitrigger_stub.test_radius_sq = (box_radius + 15) * (box_radius + 15);
         break;
     default:
-        /#
-            println("<unknown string>" + unitrigger_stub.targetname + "<unknown string>");
-        #/
+        println("<unknown string>" + unitrigger_stub.targetname + "<unknown string>");
         return;
     }
     if (unitrigger_stub.radius > level._unitriggers.largest_radius) {
@@ -299,7 +292,7 @@ function register_static_unitrigger(unitrigger_stub, trigger_func, recalculate_z
         thread function_3c84a41e(unitrigger_stub, unitrigger_stub.in_zone);
         return;
     }
-    heightoffset = vectorscale((0, 0, -1), 35);
+    heightoffset = (0, 0, -35);
     if (unitrigger_stub.script_unitrigger_type == "unitrigger_box_use" || unitrigger_stub.script_unitrigger_type == "unitrigger_box") {
         var_e790dc87 = (15, 15, 35);
         maxs = (unitrigger_stub.script_width / 2, unitrigger_stub.script_height / 2, unitrigger_stub.script_length / 2);
@@ -687,11 +680,7 @@ function private function_933f3bf3(s_stub, trigger, player) {
     if (isdefined(s_stub.prompt_and_visibility_func)) {
         usable = trigger [[ s_stub.prompt_and_visibility_func ]](player);
         if (!isdefined(usable)) {
-            /#
-                /#
-                    assertmsg("<unknown string>" + (isdefined(s_stub.targetname) ? s_stub.targetname : "<unknown string>") + "<unknown string>" + (isdefined(s_stub.origin) ? s_stub.origin : (0, 0, 0)) + "<unknown string>");
-                #/
-            #/
+            assertmsg("<unknown string>" + (isdefined(s_stub.targetname) ? s_stub.targetname : "<unknown string>") + "<unknown string>" + (isdefined(s_stub.origin) ? s_stub.origin : (0, 0, 0)) + "<unknown string>");
             usable = 0;
         }
         trigger triggerenable(usable);
@@ -796,7 +785,6 @@ function private function_358a2fc7() {
         self thread function_d7eef1bc(self.cached_zone, self.cached_zone_name);
     }
     while (isdefined(self)) {
-        waitresult = undefined;
         waitresult = self waittill(#"zone_change");
         self thread function_d7eef1bc(waitresult.zone, waitresult.zone_name);
     }
@@ -1112,9 +1100,9 @@ function debug_unitriggers() {
             if (getdvarint(#"debug_unitrigger", 0) > 0) {
                 for (i = 0; i < level._unitriggers.trigger_stubs.size; i++) {
                     triggerstub = level._unitriggers.trigger_stubs[i];
-                    color = vectorscale((1, 0, 0), 0.75);
+                    color = (0.75, 0, 0);
                     if (!isdefined(triggerstub.in_zone)) {
-                        color = vectorscale((1, 1, 0), 0.65);
+                        color = (0.65, 0.65, 0);
                     } else if (level.zones[triggerstub.in_zone].is_active) {
                         color = (1, 1, 0);
                     }
@@ -1229,7 +1217,7 @@ function private function_bb454fe6() {
             if (!isdefined(player)) {
                 continue;
             }
-            player_origin = player.origin + vectorscale((0, 0, 1), 35);
+            player_origin = player.origin + (0, 0, 35);
             trigger = level._unitriggers.trigger_pool[player getentitynumber()];
             old_trigger = undefined;
             closest = [];

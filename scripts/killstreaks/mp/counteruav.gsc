@@ -148,7 +148,7 @@ function initrotatingrig() {
         level.var_f6bf445b = spawn("script_model", airsupport::getmapcenter() + (isdefined(level.var_f2afd3a) ? level.var_f2afd3a : 0, isdefined(level.var_e500f46c) ? level.var_e500f46c : 0, 1200));
     }
     level.var_f6bf445b setmodel(#"tag_origin");
-    level.var_f6bf445b.angles = vectorscale((0, 1, 0), 115);
+    level.var_f6bf445b.angles = (0, 115, 0);
     level.var_f6bf445b hide();
     level.var_f6bf445b thread rotaterig();
     level.var_f6bf445b thread swayrig();
@@ -331,7 +331,6 @@ function buildoffsetlist(startoffset, depth, offset_x, offset_y) {
 // Size: 0x6c
 function function_af281272() {
     self endon(#"delete");
-    waitresult = undefined;
     waitresult = self waittill(#"death");
     if (!isdefined(self)) {
         return;
@@ -694,23 +693,17 @@ function removeactivecounteruav() {
 function resetactivecounteruav() {
     if (level.teambased) {
         level.activecounteruavs[self.team]--;
-        /#
-            assert(level.activecounteruavs[self.team] >= 0);
-        #/
+        assert(level.activecounteruavs[self.team] >= 0);
         if (level.activecounteruavs[self.team] < 0) {
             level.activecounteruavs[self.team] = 0;
         }
     } else if (isdefined(self.owner)) {
-        /#
-            assert(isdefined(self.ownerentnum));
-        #/
+        assert(isdefined(self.ownerentnum));
         if (!isdefined(self.ownerentnum)) {
             self.ownerentnum = self.owner getentitynumber();
         }
         level.activecounteruavs[self.ownerentnum]--;
-        /#
-            assert(level.activecounteruavs[self.ownerentnum] >= 0);
-        #/
+        assert(level.activecounteruavs[self.ownerentnum] >= 0);
         if (level.activecounteruavs[self.ownerentnum] < 0) {
             level.activecounteruavs[self.ownerentnum] = 0;
         }

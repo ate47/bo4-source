@@ -186,7 +186,6 @@ function function_2713a96a() {
     level endon(#"end_game");
     self endon(#"hash_762e0e4561d25aeb");
     while (true) {
-        s_waitresult = undefined;
         s_waitresult = self waittill(#"trigger_activated");
         e_who = s_waitresult.e_who;
         if (level.var_1537d233 > 0) {
@@ -227,7 +226,6 @@ function function_665b4fa6() {
     var_ba7236d5 = 0;
     self.var_3bc09679 thread function_e76a1a06();
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         b_using = 1;
@@ -403,7 +401,6 @@ function function_e82679f8(e_player) {
 function function_d41f7e0e() {
     level endon(#"end_game");
     while (true) {
-        s_activation = undefined;
         s_activation = self waittill(#"trigger_activated");
         e_who = s_activation.e_who;
         if (e_who.var_bf8dfaf4) {
@@ -642,7 +639,7 @@ function private function_85a2c43b() {
         speed = length(velocity);
         speed = speed * 0.0568182;
         /#
-            print3d(self.origin + player_forward * 100 + vectorscale((0, 0, 1), 60), "<unknown string>" + speed, (1, 0, 0), 1, 1, 1);
+            print3d(self.origin + player_forward * 100 + (0, 0, 60), "<unknown string>" + speed, (1, 0, 0), 1, 1, 1);
             record3dtext("<unknown string>" + speed, self.origin, (1, 0, 0), "<unknown string>");
         #/
     }

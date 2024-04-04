@@ -346,7 +346,6 @@ function function_dfd958e5() {
     self endon(#"death");
     level endon(#"flag_gegenees_set_intro");
     while (true) {
-        s_result = undefined;
         s_result = self waittill(#"trigger");
         e_player = s_result.activator;
         if (zm_utility::is_player_valid(e_player)) {
@@ -573,7 +572,7 @@ function function_38a41b56(w_component, ai) {
     }
     w_item = undefined;
     while (!isdefined(w_item)) {
-        w_item = zm_items::spawn_item(w_component, var_19383ecc + vectorscale((0, 0, 1), 32), var_5a0fa917, 1);
+        w_item = zm_items::spawn_item(w_component, var_19383ecc + (0, 0, 32), var_5a0fa917, 1);
         waitframe(1);
     }
     w_item.e_linkto = util::spawn_model("tag_origin", w_item.origin);
@@ -870,7 +869,6 @@ function function_99fbe723(e_player) {
 function function_2bcbbab7() {
     level endon(#"hash_3a69eb760c3b12e7");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (level flag::get(#"hash_148f48be55e871df") && !level flag::get(#"hash_32ff7a456732ef09") && level flag::get(#"hash_3764b0cb106568ec")) {
@@ -1059,7 +1057,6 @@ function function_852915f8(e_player) {
 // Size: 0x1dc
 function function_e11818f4() {
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (level flag::get(#"hash_32ff7a456732ef09") && level.var_9ab86086) {
@@ -1260,7 +1257,6 @@ function function_e45ae8f4(a_ents) {
     level lui::screen_fade_out(0, "black");
     playsoundatposition("bik_zm_red_pegride_kill_audio", (0, 0, 0));
     level flag::set(#"hash_1981012de509765d");
-    s_result = undefined;
     s_result = level waittilltimeout(2.5, #"crash_land");
     level lui::screen_fade_in(0.5);
 }
@@ -1495,7 +1491,6 @@ function function_c20c157a(str_loc) {
     self thread function_8be22ba8(str_flag);
     self thread function_ffabd9dd(str_flag);
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isdefined(s_notify.weapon) && s_notify.weapon.isheroweapon === 1) {
             level notify(#"hash_4fb1eb2c137a7955", {#e_player:s_notify.attacker});
@@ -1531,7 +1526,6 @@ function function_8be22ba8(str_flag) {
     self endon(#"death");
     level endon(str_flag);
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hero_weapon_hit");
         if (s_result.e_entity === self) {
             if (str_flag == #"hash_61de3b8fe6f6a35") {
@@ -1556,7 +1550,6 @@ function function_bb898a46() {
     self val::set("cage", "takedamage", 1);
     self.health = 99999;
     while (true) {
-        s_notify = undefined;
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {
             level.var_10e70c82 = level.var_10e70c82 - s_notify.amount;
@@ -1574,7 +1567,6 @@ function function_bb898a46() {
 function function_7d85e8ea() {
     level endon(#"cage_dropped");
     while (true) {
-        s_result = undefined;
         s_result = level waittill(#"hero_weapon_hit");
         if (s_result.e_entity === self) {
             level flag::set(#"cage_dropped");
@@ -1723,7 +1715,7 @@ function function_d8db57f6() {
         if (isdefined(var_3e9d57b3)) {
             v_origin = var_3e9d57b3.origin;
             v_angles = var_3e9d57b3.angles;
-            a_info = zm_utility::function_b0eeaada(v_origin + vectorscale((0, 0, 1), 64));
+            a_info = zm_utility::function_b0eeaada(v_origin + (0, 0, 64));
             if (isdefined(a_info) && isdefined(a_info[#"point"])) {
                 v_origin = a_info[#"point"];
             }
@@ -2274,7 +2266,6 @@ function function_951bdb49() {
     t_pap = getent("trigger_pap_defend", "targetname");
     mdl_blocker = getent("pap_arena_blocker", "targetname");
     while (true) {
-        s_result = undefined;
         s_result = t_pap waittill(#"trigger");
         if (isdefined(s_result.activator) && isplayer(s_result.activator)) {
             player = s_result.activator;

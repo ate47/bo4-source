@@ -9,22 +9,6 @@
 class cprototype_defend_timer : cluielem {
 
     // Namespace cprototype_defend_timer/prototype_defend_timer
-    // Params 0, eflags: 0x8
-    // Checksum 0x8946405d, Offset: 0x198
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace cprototype_defend_timer/prototype_defend_timer
-    // Params 0, eflags: 0x90 class_linked
-    // Checksum 0x2400ac18, Offset: 0x268
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace cprototype_defend_timer/prototype_defend_timer
     // Params 1, eflags: 0x0
     // Checksum 0x626b8e2b, Offset: 0x238
     // Size: 0x24

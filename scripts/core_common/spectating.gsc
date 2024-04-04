@@ -325,9 +325,7 @@ function function_7ad5ad8() {
     if (self.team == #"spectator") {
         return undefined;
     }
-    /#
-        assert(isdefined(level.aliveplayers[self.team]));
-    #/
+    assert(isdefined(level.aliveplayers[self.team]));
     teammates = level.aliveplayers[self.team];
     player = function_18b8b7e4(teammates, self.origin);
     if (!isdefined(player) && isdefined(level.var_df67ea13)) {

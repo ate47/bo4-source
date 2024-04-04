@@ -40,10 +40,10 @@ function private __init__() {
 function function_e963e37d() {
     var_7a23c03b = getentarray("pickup_health", "targetname");
     foreach (pickup in var_7a23c03b) {
-        pickup.trigger = spawn("trigger_radius_use", pickup.origin + vectorscale((0, 0, 1), 15), 0, 120, 100);
+        pickup.trigger = spawn("trigger_radius_use", pickup.origin + (0, 0, 15), 0, 120, 100);
         pickup.trigger setcursorhint("HINT_INTERACTIVE_PROMPT");
         pickup.trigger triggerignoreteam();
-        pickup.gameobject = gameobjects::create_use_object(#"neutral", pickup.trigger, [], vectorscale((0, 0, 1), 60), "pickup_health");
+        pickup.gameobject = gameobjects::create_use_object(#"neutral", pickup.trigger, [], (0, 0, 60), "pickup_health");
         pickup.gameobject gameobjects::set_objective_entity(pickup.gameobject);
         pickup.gameobject gameobjects::set_visible_team(#"any");
         pickup.gameobject gameobjects::allow_use(#"any");

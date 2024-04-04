@@ -119,7 +119,6 @@ function function_58c4bf12(localclientnum) {
     self endoncallback(&function_c8066972, #"death");
     self function_c8066972();
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"notetrack");
         str_notetrack = waitresult.notetrack;
         if (str_notetrack === "razor_fx_on" && self hasperk(localclientnum, #"specialty_etherealrazor")) {

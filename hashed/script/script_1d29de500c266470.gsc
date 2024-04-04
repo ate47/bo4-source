@@ -26,12 +26,8 @@ function function_3045dd71() {
 // Size: 0xb2
 function function_550c6257(var_ff60755f) {
     jumpkits = get_jumpkits();
-    /#
-        assert(jumpkits.size > 0);
-    #/
-    /#
-        assert(isdefined(jumpkits[0]));
-    #/
+    assert(jumpkits.size > 0);
+    assert(isdefined(jumpkits[0]));
     if (var_ff60755f < 0 || var_ff60755f >= jumpkits.size || !isdefined(jumpkits[var_ff60755f])) {
         var_ff60755f = 0;
     }

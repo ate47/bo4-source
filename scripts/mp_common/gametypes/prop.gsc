@@ -1002,9 +1002,7 @@ function handleprop() {
     self.healthregendisabled = 1;
     self.concussionimmune = undefined;
     self.var_f16a71ae = 1;
-    /#
-        assert(!isdefined(self.prop));
-    #/
+    assert(!isdefined(self.prop));
     self thread setupprop();
     self thread prop_controls::setupkeybindings();
     self thread setupdamage();
@@ -1049,9 +1047,7 @@ function getthirdpersonrangeforsize(propsize) {
     case 350:
         return 320;
     default:
-        /#
-            assertmsg("destruct/fx8_dest_prop_lg" + propsize);
-        #/
+        assertmsg("destruct/fx8_dest_prop_lg" + propsize);
         break;
     }
     return 120;
@@ -1074,9 +1070,7 @@ function getthirdpersonheightoffsetforsize(propsize) {
     case 350:
         return 40;
     default:
-        /#
-            assertmsg("destruct/fx8_dest_prop_lg" + propsize);
-        #/
+        assertmsg("destruct/fx8_dest_prop_lg" + propsize);
         break;
     }
     return 0;
@@ -1150,7 +1144,7 @@ function propwhistle() {
                     continue;
                 }
                 if (player util::isprop() && isalive(player)) {
-                    playsoundatposition("mpl_phunt_char_whistle", player.origin + vectorscale((0, 0, 1), 60));
+                    playsoundatposition("mpl_phunt_char_whistle", player.origin + (0, 0, 60));
                     hostmigration::waitlongdurationwithhostmigrationpause(1.5);
                 }
             }
@@ -1221,7 +1215,6 @@ function function_aa8db165(damagecallback) {
     level endon(#"game_ended");
     self endon(#"death");
     while (true) {
-        res = undefined;
         res = self waittill(#"damage");
         self thread [[ damagecallback ]](res.amount, res.attacker, res.direction, res.position, res.mod, res.model_name, res.bone_name, res.part_name, res.weapon, res.flags);
     }
@@ -1305,9 +1298,7 @@ function function_d43d7033(propsize) {
         case 350:
             return "propDeathFX_l";
         default:
-            /#
-                assertmsg("destruct/fx8_dest_prop_lg" + propsize);
-            #/
+            assertmsg("destruct/fx8_dest_prop_lg" + propsize);
             break;
         }
     }
@@ -1323,9 +1314,9 @@ function propwatchdeath() {
     self endon(#"disconnect");
     self waittill(#"death");
     corpse = self.body;
-    playsoundatposition("wpn_flash_grenade_explode", self.prop.origin + vectorscale((0, 0, 1), 4));
+    playsoundatposition("wpn_flash_grenade_explode", self.prop.origin + (0, 0, 4));
     var_7659ae6f = function_d43d7033(self.prop.info.propsize);
-    playfx(fx::get(var_7659ae6f), self.prop.origin + vectorscale((0, 0, 1), 4));
+    playfx(fx::get(var_7659ae6f), self.prop.origin + (0, 0, 4));
     if (isdefined(corpse)) {
         corpse delete();
     }
@@ -1756,9 +1747,7 @@ function getpropsize(propsizetext) {
     default:
         mapname = getmapname();
         var_a01224f2 = "gamedata/tables/mp/" + mapname + "_ph.csv";
-        /#
-            assertmsg("<unknown string>" + propsizetext + "<unknown string>" + var_a01224f2 + "<unknown string>");
-        #/
+        assertmsg("<unknown string>" + propsizetext + "<unknown string>" + var_a01224f2 + "<unknown string>");
         propsize = 75;
         break;
     }
@@ -2000,9 +1989,7 @@ function choosebestpropforkillcam(var_545f0775, var_57713248) {
     var_66c9ce36 = undefined;
     var_910c4a2e = 1073741824;
     foreach (prop in var_545f0775) {
-        /#
-            assert(isalive(prop));
-        #/
+        assert(isalive(prop));
         var_e2abfc9e = undefined;
         var_9916cef = 1073741824;
         foreach (hunter in var_57713248) {
@@ -2076,7 +2063,6 @@ function function_3ea2519e(team) {
     level endon(#"game_ended");
     self endon(#"disconnect", #"showplayer");
     while (true) {
-        res = undefined;
         res = level waittill(#"connected");
         player = res.player;
         self thread function_8e69759(player, team);
@@ -3355,7 +3341,7 @@ function movetarget() {
     self.isdying = 1;
     waitframe(1);
     self.fakehealth = 50;
-    fxent = playfx(fx::get("propDeathFX"), self.origin + vectorscale((0, 0, 1), 4));
+    fxent = playfx(fx::get("propDeathFX"), self.origin + (0, 0, 4));
     fxent hide();
     foreach (player in level.players) {
         if (player function_84793f03()) {
@@ -3420,7 +3406,7 @@ function function_e63a6b8b() {
         }
         location.var_59abaf85 = newlocation;
     }
-    origin = location.var_59abaf85 + vectorscale((0, 0, 1), 40);
+    origin = location.var_59abaf85 + (0, 0, 40);
     level.var_1103f74e.nextindex++;
     return origin;
 }
@@ -3463,7 +3449,7 @@ function function_f6f7aa90(titlelabel) {
     y = var_ed243a5d;
     level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_first", (1, 0.843, 0));
     y = y + var_15c99f84;
-    level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_second", vectorscale((1, 1, 1), 0.3));
+    level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_second", (0.3, 0.3, 0.3));
     y = y + var_15c99f84;
     level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_third", (0.804, 0.498, 0.196));
     level.var_1103f74e.var_b746be43 = spawnstruct();
@@ -3584,7 +3570,7 @@ function s_teleport_start_decaystartsupersprint() {
     origin = self.origin + vectorscale(forward, 100);
     origin = getclosestpointonnavmesh(origin, 600);
     clone = spawnactor("spawner_bo3_robot_grunt_assault_mp", origin, self.angles, "", 1);
-    clone.var_297617fa = function_944a25ed(origin + vectorscale((0, 0, 1), 40));
+    clone.var_297617fa = function_944a25ed(origin + (0, 0, 40));
     clone.var_297617fa linkto(clone);
     level.var_23661cff[level.var_23661cff.size] = clone;
     function_2a7250f0(clone, self, forward);

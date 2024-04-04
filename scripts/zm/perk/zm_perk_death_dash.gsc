@@ -211,7 +211,7 @@ function function_b1d12202() {
     self clientfield::set("death_dash_trail", 1);
     self clientfield::set_to_player("death_dash_dash_postfx", 1);
     self.var_d675d730.n_kill_count = 0;
-    var_8e317f6c = vectornormalize(anglestoforward(self.angles) + vectorscale((0, 0, -1), 0.66));
+    var_8e317f6c = vectornormalize(anglestoforward(self.angles) + (0, 0, -0.66));
     var_8e317f6c = var_8e317f6c * 1500;
     self thread function_aeda9580(var_8e317f6c);
     self thread function_749be7c5();
@@ -264,7 +264,7 @@ function function_aeda9580(var_8e317f6c) {
 // Checksum 0xb91b6b92, Offset: 0x1210
 // Size: 0x9e
 function function_d5fc01cc() {
-    s_trace = groundtrace(self.origin, self.origin + vectorscale((0, 0, -1), 96), 0, self);
+    s_trace = groundtrace(self.origin, self.origin + (0, 0, -96), 0, self);
     v_pos = s_trace[#"position"];
     n_dist = self.origin[2] - v_pos[2];
     if (n_dist >= 48) {
@@ -404,9 +404,7 @@ function reset_cooldown() {
         self.var_d675d730.var_d566ea4 = 0;
     }
     if (self hasperk(#"specialty_death_dash")) {
-        /#
-            assert(isdefined(self.var_d675d730.var_775a4a2a), "<unknown string>");
-        #/
+        assert(isdefined(self.var_d675d730.var_775a4a2a), "<unknown string>");
         if (isdefined(self.var_d675d730.var_775a4a2a)) {
             self zm_perks::function_2ac7579(self.var_d675d730.var_775a4a2a, 1, #"perk_death_dash");
             self zm_perks::function_13880aa5(self.var_d675d730.var_775a4a2a, 1, #"perk_death_dash");

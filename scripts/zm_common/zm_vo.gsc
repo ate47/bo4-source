@@ -515,7 +515,7 @@ function function_18d309e5(n_timeout, var_ec88b612, a_players) {
 function function_5c82f986(var_97beaf8b, var_ccac9966) {
     if (distancesquared(var_97beaf8b.origin, var_ccac9966.origin) < 589824) {
         if (abs(var_97beaf8b.origin[2] - var_ccac9966.origin[2]) < 96) {
-            if (sighttracepassed(var_97beaf8b.origin + vectorscale((0, 0, 1), 64), var_ccac9966.origin + vectorscale((0, 0, 1), 64), 0, var_97beaf8b, var_ccac9966)) {
+            if (sighttracepassed(var_97beaf8b.origin + (0, 0, 64), var_ccac9966.origin + (0, 0, 64), 0, var_97beaf8b, var_ccac9966)) {
                 return true;
             }
         }
@@ -567,9 +567,7 @@ function _vo_clear(str_endon) {
 // Checksum 0xd620785a, Offset: 0x2238
 // Size: 0x80
 function private function_95b99c5b(n_max, var_50bb7db7) {
-    /#
-        assert(!isdefined(var_50bb7db7) || var_50bb7db7 < n_max, "<unknown string>");
-    #/
+    assert(!isdefined(var_50bb7db7) || var_50bb7db7 < n_max, "<unknown string>");
     do {
         n_new_value = randomint(n_max);
     } while (n_new_value === var_50bb7db7);
@@ -662,11 +660,7 @@ function is_player_speaking(e_player) {
 // Checksum 0x4a810016, Offset: 0x25c8
 // Size: 0x1b4
 function function_a2bd5a0c(var_cadd3b0c, n_delay = 0, b_wait_if_busy = 0, n_priority = 0, var_34e7887 = 0, var_d7714e4e = 0, var_67fee570 = 0) {
-    /#
-        /#
-            assert(isplayer(self), "<unknown string>" + "<unknown string>");
-        #/
-    #/
+    assert(isplayer(self), "<unknown string>" + "<unknown string>");
     if (!isdefined(self) || !isplayer(self)) {
         return;
     }
@@ -862,11 +856,7 @@ function function_82f9bc9f() {
     if (isdefined(fields) && isdefined(fields.chrname) && fields.chrname != "") {
         return fields.chrname;
     }
-    /#
-        /#
-            assert("<unknown string>");
-        #/
-    #/
+    assert("<unknown string>");
     return "NONE";
 }
 

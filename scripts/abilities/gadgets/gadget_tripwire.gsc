@@ -165,7 +165,6 @@ function on_tripwire_spawn(watcher, player) {
     self.var_2d045452 = watcher;
     self.weapon = level.var_c27600b0;
     self setweapon(level.var_c27600b0);
-    waitresult = undefined;
     waitresult = self waittill(#"stationary");
     self util::make_sentient();
     self.hitnormal = waitresult.normal;
@@ -720,7 +719,6 @@ function function_7a905654(watcher) {
     self.damagetaken = 0;
     attacker = undefined;
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"damage");
         attacker = waitresult.attacker;
         weapon = waitresult.weapon;

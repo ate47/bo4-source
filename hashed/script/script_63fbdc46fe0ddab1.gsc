@@ -8,27 +8,11 @@
 class czm_red_challenges_hud : cluielem {
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x934443ee, Offset: 0x400
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_red_challenges_hud/zm_red_challenges_hud
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x59784cca, Offset: 0xa48
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_red_challenges_hud/zm_red_challenges_hud
     // Params 2, eflags: 0x1 linked
     // Checksum 0x75587eca, Offset: 0xa10
     // Size: 0x30
     function set_challengefailing(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "challengeFailing", value);
+        set_data(localclientnum, "challengeFailing", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -36,7 +20,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xcb869cf8, Offset: 0x9d8
     // Size: 0x30
     function set_rewardhidden(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "rewardHidden", value);
+        set_data(localclientnum, "rewardHidden", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -44,7 +28,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0x20e0b5b4, Offset: 0x9a0
     // Size: 0x30
     function set_tributeavailable(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "tributeAvailable", value);
+        set_data(localclientnum, "tributeAvailable", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -52,9 +36,9 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0x329e8760, Offset: 0x928
     // Size: 0x6c
     function increment_progress(localclientnum) {
-        current_val = [[ self ]]->get_data(localclientnum, "progress");
+        current_val = get_data(localclientnum, "progress");
         new_val = (current_val + 1) % 2;
-        [[ self ]]->set_data(localclientnum, "progress", new_val);
+        set_data(localclientnum, "progress", new_val);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -62,7 +46,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xa29d17e0, Offset: 0x8f0
     // Size: 0x30
     function set_binlocation(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "bInLocation", value);
+        set_data(localclientnum, "bInLocation", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -70,7 +54,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0xad417280, Offset: 0x8b8
     // Size: 0x30
     function set_bottomtext(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "bottomText", value);
+        set_data(localclientnum, "bottomText", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -78,7 +62,7 @@ class czm_red_challenges_hud : cluielem {
     // Checksum 0x6ec53cab, Offset: 0x880
     // Size: 0x30
     function set_challengetext(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "challengeText", value);
+        set_data(localclientnum, "challengeText", value);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -87,26 +71,22 @@ class czm_red_challenges_hud : cluielem {
     // Size: 0x11c
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"visible" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
         if (#"visiblepc" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 2);
+            set_data(localclientnum, "_state", 2);
             return;
         }
         if (#"trials" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 3);
+            set_data(localclientnum, "_state", 3);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud
@@ -123,14 +103,14 @@ class czm_red_challenges_hud : cluielem {
     // Size: 0x120
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "challengeText", #"");
-        [[ self ]]->set_data(localclientnum, "bottomText", #"");
-        [[ self ]]->set_data(localclientnum, "bInLocation", 0);
-        [[ self ]]->set_data(localclientnum, "progress", 0);
-        [[ self ]]->set_data(localclientnum, "tributeAvailable", 0);
-        [[ self ]]->set_data(localclientnum, "rewardHidden", 0);
-        [[ self ]]->set_data(localclientnum, "challengeFailing", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "challengeText", #"");
+        set_data(localclientnum, "bottomText", #"");
+        set_data(localclientnum, "bInLocation", 0);
+        set_data(localclientnum, "progress", 0);
+        set_data(localclientnum, "tributeAvailable", 0);
+        set_data(localclientnum, "rewardHidden", 0);
+        set_data(localclientnum, "challengeFailing", 0);
     }
 
     // Namespace czm_red_challenges_hud/zm_red_challenges_hud

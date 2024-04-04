@@ -148,9 +148,7 @@ function private _handledestructcallbacks(localclientnum, entity, piecenumber) {
 // Checksum 0x311f091f, Offset: 0xc30
 // Size: 0xde
 function adddestructpiececallback(localclientnum, entity, piecenumber, callbackfunction) {
-    /#
-        assert(isfunctionptr(callbackfunction));
-    #/
+    assert(isfunctionptr(callbackfunction));
     if (!isdefined(entity._destructcallbacks)) {
         entity._destructcallbacks = [];
     }

@@ -210,7 +210,6 @@ function function_aa539d7b() {
 function function_5b8a557f() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         e_trap = self.stub.e_trap;
@@ -354,7 +353,6 @@ function function_2a5a929(str_location, var_b7eee573) {
 function function_b1bd4115() {
     self endon(#"death");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"trigger");
         e_player = waitresult.activator;
         if (zm_utility::is_player_valid(e_player)) {
@@ -613,7 +611,6 @@ function function_21fd7c39() {
     self.bulletclip setcandamage(1);
     b_friendly = 0;
     while (!b_friendly) {
-        s_notify = undefined;
         s_notify = self.bulletclip waittill(#"damage");
         if (s_notify.weapon === level.var_74cf08b1 || s_notify.weapon === level.var_4b14202f) {
             b_friendly = 1;

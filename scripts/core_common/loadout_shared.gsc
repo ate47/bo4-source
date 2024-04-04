@@ -97,9 +97,7 @@ function function_3ba6ee5d(weapon, amount) {
     }
     self setweaponammoclip(weapon, amount);
     diff = amount - self getweaponammoclip(weapon);
-    /#
-        assert(diff >= 0);
-    #/
+    assert(diff >= 0);
     self setweaponammostock(weapon, diff);
 }
 

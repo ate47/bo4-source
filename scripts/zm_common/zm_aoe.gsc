@@ -14,22 +14,18 @@
 // Method(s) 2 Total 2
 class areaofeffect {
 
+    var spawntime;
+    var state;
+    var var_be1913ae;
+
     // Namespace areaofeffect/zm_aoe
     // Params 0, eflags: 0x9 linked
     // Checksum 0xb9ae6375, Offset: 0x1c8
     // Size: 0x2a
-    __constructor() {
-        self.spawntime = gettime();
-        self.state = 0;
-        self.var_be1913ae = gettime() + 100;
-    }
-
-    // Namespace areaofeffect/zm_aoe
-    // Params 0, eflags: 0x11 linked
-    // Checksum 0x80f724d1, Offset: 0x200
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        spawntime = gettime();
+        state = 0;
+        var_be1913ae = gettime() + 100;
     }
 
 }
@@ -38,20 +34,14 @@ class areaofeffect {
 // Method(s) 2 Total 2
 class class_698343df {
 
+    var var_9a08bb02;
+
     // Namespace class_698343df/zm_aoe
     // Params 0, eflags: 0x9 linked
     // Checksum 0xc9ddea3, Offset: 0x2a0
     // Size: 0xe
-    __constructor() {
-        self.var_9a08bb02 = [];
-    }
-
-    // Namespace class_698343df/zm_aoe
-    // Params 0, eflags: 0x11 linked
-    // Checksum 0x80f724d1, Offset: 0x2b8
-    // Size: 0x4
-    __destructor() {
-        
+    constructor() {
+        var_9a08bb02 = [];
     }
 
 }
@@ -92,9 +82,7 @@ function private __main__() {
 // Checksum 0x480fe14e, Offset: 0x580
 // Size: 0x98
 function private function_e969e75(type) {
-    /#
-        assert(isdefined(level.var_400ae143));
-    #/
+    assert(isdefined(level.var_400ae143));
     arraykeys = getarraykeys(level.var_400ae143);
     if (isinarray(arraykeys, hash(type))) {
         return level.var_400ae143[hash(type)];
@@ -111,14 +99,10 @@ function function_15dea507(aoeid, type, var_3a11a165, lifetime, var_f2cd3aad, da
         level.var_400ae143 = [];
     }
     arraykeys = getarraykeys(level.var_400ae143);
-    /#
-        assert(!isinarray(arraykeys, hash(type)));
-    #/
+    assert(!isinarray(arraykeys, hash(type)));
     var_508aaded = new class_698343df();
     level.var_400ae143[type] = var_508aaded;
-    /#
-        assert(damagemin <= damagemax, "<unknown string>");
-    #/
+    assert(damagemin <= damagemax, "<unknown string>");
     var_508aaded.type = type;
     var_508aaded.var_3a11a165 = var_3a11a165;
     var_508aaded.lifetime = lifetime;
@@ -140,15 +124,11 @@ function function_15dea507(aoeid, type, var_3a11a165, lifetime, var_f2cd3aad, da
 // Size: 0x192
 function function_371b4147(aoeid, type, position, userdata) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isdefined(var_46f1b5eb), "<unknown string>");
-    #/
+    assert(isdefined(var_46f1b5eb), "<unknown string>");
     if (var_46f1b5eb.var_9a08bb02.size >= var_46f1b5eb.var_3a11a165) {
         function_2c33d107(type);
     }
-    /#
-        assert(var_46f1b5eb.var_9a08bb02.size < var_46f1b5eb.var_3a11a165);
-    #/
+    assert(var_46f1b5eb.var_9a08bb02.size < var_46f1b5eb.var_3a11a165);
     aoe = new areaofeffect();
     aoe.position = position;
     aoe.endtime = gettime() + var_46f1b5eb.lifetime;
@@ -167,13 +147,9 @@ function function_371b4147(aoeid, type, position, userdata) {
 // Size: 0xa4
 function private function_668a9b2d(aoe, type) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isdefined(var_46f1b5eb), "<unknown string>");
-    #/
+    assert(isdefined(var_46f1b5eb), "<unknown string>");
     array::add(var_46f1b5eb.var_9a08bb02, aoe);
-    /#
-        assert(var_46f1b5eb.var_9a08bb02.size <= var_46f1b5eb.var_3a11a165);
-    #/
+    assert(var_46f1b5eb.var_9a08bb02.size <= var_46f1b5eb.var_3a11a165);
 }
 
 // Namespace zm_aoe/zm_aoe
@@ -182,9 +158,7 @@ function private function_668a9b2d(aoe, type) {
 // Size: 0x104
 function private function_87bbe4fc(type) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isdefined(var_46f1b5eb), "<unknown string>");
-    #/
+    assert(isdefined(var_46f1b5eb), "<unknown string>");
     if (var_46f1b5eb.var_9a08bb02.size) {
         oldest = var_46f1b5eb.var_9a08bb02[0];
         foreach (aoe in var_46f1b5eb.var_9a08bb02) {
@@ -202,16 +176,12 @@ function private function_87bbe4fc(type) {
 // Size: 0x104
 function private function_fa03204a(aoe, type) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isinarray(var_46f1b5eb.var_9a08bb02, aoe));
-    #/
+    assert(isinarray(var_46f1b5eb.var_9a08bb02, aoe));
     if (isdefined(aoe.userdata) && isdefined(level.var_6efc944c)) {
         [[ level.var_6efc944c ]](aoe);
     }
     arrayremovevalue(var_46f1b5eb.var_9a08bb02, aoe);
-    /#
-        assert(var_46f1b5eb.var_9a08bb02.size < var_46f1b5eb.var_3a11a165);
-    #/
+    assert(var_46f1b5eb.var_9a08bb02.size < var_46f1b5eb.var_3a11a165);
     thread function_4f0db8cf(aoe.entity);
 }
 
@@ -241,9 +211,7 @@ function private function_2c33d107(type) {
 // Size: 0x23a
 function private function_ccf8f659(aoe, forceend = 0) {
     var_46f1b5eb = function_e969e75(aoe.type);
-    /#
-        assert(isdefined(var_46f1b5eb));
-    #/
+    assert(isdefined(var_46f1b5eb));
     if (forceend) {
         aoe.entity clientfield::set("aoe_state", 4);
         aoe.state = 4;
@@ -298,9 +266,7 @@ function function_3690781e() {
 // Size: 0x180
 function private function_e5950b1e(type) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isdefined(var_46f1b5eb));
-    #/
+    assert(isdefined(var_46f1b5eb));
     var_2aad0cec = [];
     foreach (aoe in var_46f1b5eb.var_9a08bb02) {
         function_ccf8f659(aoe);
@@ -319,15 +285,11 @@ function private function_e5950b1e(type) {
 // Size: 0x300
 function private function_bea2e288(type) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isdefined(var_46f1b5eb));
-    #/
+    assert(isdefined(var_46f1b5eb));
     players = getplayers();
     foreach (aoe in var_46f1b5eb.var_9a08bb02) {
         foreach (player in players) {
-            /#
-                assert(isdefined(aoe.entity));
-            #/
+            assert(isdefined(aoe.entity));
             dist = distance(aoe.entity.origin, player.origin);
             withinrange = dist <= var_46f1b5eb.radius;
             var_c0af03ae = 0;
@@ -353,9 +315,7 @@ function private function_bea2e288(type) {
 // Size: 0xa6
 function private function_60bb02f3(type) {
     var_46f1b5eb = function_e969e75(type);
-    /#
-        assert(isdefined(var_46f1b5eb));
-    #/
+    assert(isdefined(var_46f1b5eb));
     while (true) {
         if (!var_46f1b5eb.var_9a08bb02.size) {
             waitframe(1);

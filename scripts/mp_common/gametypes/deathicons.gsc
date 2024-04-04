@@ -65,12 +65,8 @@ function add(entity, dyingplayer, team) {
     dyingplayer endon(#"spawned_player", #"disconnect");
     waitframe(1);
     util::waittillslowprocessallowed();
-    /#
-        assert(isdefined(level.teams[team]));
-    #/
-    /#
-        assert(isdefined(level.teamindex[team]));
-    #/
+    assert(isdefined(level.teams[team]));
+    assert(isdefined(level.teamindex[team]));
     if (getdvarint(#"ui_hud_showdeathicons", 1) == 0) {
         return;
     }

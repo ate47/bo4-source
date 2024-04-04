@@ -111,7 +111,6 @@ function ongrenadethrow() {
     self endon(#"disconnect");
     level endon(#"game_ended");
     while (true) {
-        waitresult = undefined;
         waitresult = self waittill(#"grenade_fire");
         grenade = waitresult.projectile;
         weapon = waitresult.weapon;
@@ -226,12 +225,8 @@ function create_entity_masked_enemy_influencer(name, team_mask) {
 // Checksum 0xdced60e8, Offset: 0xd60
 // Size: 0x254
 function create_player_influencers() {
-    /#
-        assert(!isdefined(self.influencers));
-    #/
-    /#
-        assert(!isdefined(self.influencers));
-    #/
+    assert(!isdefined(self.influencers));
+    assert(!isdefined(self.influencers));
     if (!level.teambased) {
         team_mask = level.spawnsystem.ispawn_teammask_free;
         other_team_mask = level.spawnsystem.ispawn_teammask_free;
@@ -285,7 +280,6 @@ function watch_remove_influencer() {
     self endon(#"death");
     self notify(#"watch_remove_influencer");
     self endon(#"watch_remove_influencer");
-    waitresult = undefined;
     waitresult = self waittill(#"influencer_removed");
     arrayremovevalue(self.influencers, waitresult.index);
     arrayremovevalue(self.influencersfriendly, waitresult.index);
@@ -382,9 +376,7 @@ function create_map_placed_influencer(influencer_entity) {
         team_mask = util::getteammask(influencer_entity.script_team);
         level create_enemy_influencer(influencer_entity.script_noteworty, influencer_entity.origin, team_mask);
     } else {
-        /#
-            assertmsg("<unknown string>");
-        #/
+        assertmsg("<unknown string>");
     }
     return influencer_id;
 }

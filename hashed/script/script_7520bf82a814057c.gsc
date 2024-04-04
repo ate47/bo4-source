@@ -8,27 +8,11 @@
 class czm_game_over : cluielem {
 
     // Namespace czm_game_over/zm_game_over
-    // Params 0, eflags: 0x9 linked
-    // Checksum 0x3d67b3f7, Offset: 0x230
-    // Size: 0x14
-    __constructor() {
-        cluielem::__constructor();
-    }
-
-    // Namespace czm_game_over/zm_game_over
-    // Params 0, eflags: 0x91 linked class_linked
-    // Checksum 0x39e2c2b0, Offset: 0x498
-    // Size: 0x14
-    __destructor() {
-        cluielem::__destructor();
-    }
-
-    // Namespace czm_game_over/zm_game_over
     // Params 2, eflags: 0x1 linked
     // Checksum 0x6c3857f, Offset: 0x460
     // Size: 0x30
     function set_rounds(localclientnum, value) {
-        [[ self ]]->set_data(localclientnum, "rounds", value);
+        set_data(localclientnum, "rounds", value);
     }
 
     // Namespace czm_game_over/zm_game_over
@@ -37,18 +21,14 @@ class czm_game_over : cluielem {
     // Size: 0xac
     function set_state(localclientnum, state_name) {
         if (#"defaultstate" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 0);
+            set_data(localclientnum, "_state", 0);
             return;
         }
         if (#"gatewayopened" == state_name) {
-            [[ self ]]->set_data(localclientnum, "_state", 1);
+            set_data(localclientnum, "_state", 1);
             return;
         }
-        /#
-            /#
-                assertmsg("<unknown string>");
-            #/
-        #/
+        assertmsg("<unknown string>");
     }
 
     // Namespace czm_game_over/zm_game_over
@@ -65,8 +45,8 @@ class czm_game_over : cluielem {
     // Size: 0x60
     function function_fa582112(localclientnum) {
         cluielem::function_fa582112(localclientnum);
-        [[ self ]]->set_state(localclientnum, #"defaultstate");
-        [[ self ]]->set_data(localclientnum, "rounds", 0);
+        set_state(localclientnum, #"defaultstate");
+        set_data(localclientnum, "rounds", 0);
     }
 
     // Namespace czm_game_over/zm_game_over

@@ -60,7 +60,6 @@ function function_48a634b7(localclientnum, oldval, newval, bnewent, binitialsnap
 // Size: 0x8c
 function pareidolia_ee() {
     t_pareidolia = getent(0, "t_pareidolia", "targetname");
-    waitresult = undefined;
     waitresult = t_pareidolia waittill(#"trigger");
     playsound(0, #"mus_pareidolia", (-7053, -24906, 222));
 }

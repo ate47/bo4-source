@@ -188,9 +188,7 @@ function private _calculatealliedteams(team) {
 // Checksum 0xaefbe91, Offset: 0x1bb8
 // Size: 0xe0
 function private _calculatebotscentroid(doppelbots) {
-    /#
-        assert(isarray(doppelbots));
-    #/
+    assert(isarray(doppelbots));
     centroid = (0, 0, 0);
     foreach (doppelbot in doppelbots) {
         centroid = centroid + doppelbot[#"origin"];
@@ -206,12 +204,8 @@ function private _calculatebotscentroid(doppelbots) {
 // Checksum 0x34aa0f8, Offset: 0x1ca0
 // Size: 0x146
 function private _calculateclosestgameobject(position, gameobjects) {
-    /#
-        assert(isvec(position));
-    #/
-    /#
-        assert(isarray(gameobjects));
-    #/
+    assert(isvec(position));
+    assert(isarray(gameobjects));
     if (gameobjects.size <= 0) {
         return undefined;
     }
@@ -232,12 +226,8 @@ function private _calculateclosestgameobject(position, gameobjects) {
 // Checksum 0xfc237b04, Offset: 0x1df0
 // Size: 0x2da
 function private function_65b16924(doppelbots, components) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(components));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(components));
     var_1a9886d3 = array();
     if (doppelbots.size <= 0 || components.size <= 0) {
         return var_1a9886d3;
@@ -280,12 +270,8 @@ function private function_65b16924(doppelbots, components) {
 // Checksum 0x93143356, Offset: 0x20d8
 // Size: 0x3a4
 function private _calculateallpathablegameobjects(planner, doppelbots, gameobjects) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(gameobjects));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(gameobjects));
     pathablegameobjects = [];
     if (gameobjects.size <= 0) {
         return pathablegameobjects;
@@ -346,12 +332,8 @@ function private _calculateallpathablegameobjects(planner, doppelbots, gameobjec
 // Checksum 0x5521abe0, Offset: 0x2488
 // Size: 0x40c
 function private function_816f4052(planner, doppelbots, bundles) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(bundles));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(bundles));
     pathablebundles = [];
     if (bundles.size <= 0) {
         return pathablebundles;
@@ -423,12 +405,8 @@ function private function_816f4052(planner, doppelbots, bundles) {
 // Checksum 0xc4c28362, Offset: 0x28a0
 // Size: 0x52c
 function private function_77cd4593(planner, doppelbots, components) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(components));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(components));
     pathablecomponents = [];
     if (components.size <= 0) {
         return pathablecomponents;
@@ -520,12 +498,8 @@ function private function_77cd4593(planner, doppelbots, components) {
 // Checksum 0x5f69e1c4, Offset: 0x2dd8
 // Size: 0x34a
 function private function_98bde2b6(doppelbots, entities) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(entities));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(entities));
     var_afb9d067 = [];
     if (entities.size <= 0) {
         return var_afb9d067;
@@ -579,12 +553,8 @@ function private function_98bde2b6(doppelbots, entities) {
 // Checksum 0x8b428574, Offset: 0x3130
 // Size: 0x26a
 function private _calculateallpathableobjectives(doppelbots, objectives) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(objectives));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(objectives));
     pathableobjectives = [];
     if (objectives.size <= 0) {
         return pathableobjectives;
@@ -629,12 +599,8 @@ function private _calculateallpathableobjectives(doppelbots, objectives) {
 // Checksum 0x8e8d804f, Offset: 0x33a8
 // Size: 0x3da
 function private _calculateallpathableclients(doppelbots, clients) {
-    /#
-        assert(isarray(doppelbots));
-    #/
-    /#
-        assert(isarray(clients));
-    #/
+    assert(isarray(doppelbots));
+    assert(isarray(clients));
     pathableclients = [];
     if (clients.size <= 0) {
         return pathableclients;
@@ -975,9 +941,7 @@ function private function_7706a6fa(commander) {
                 if (isdefined(component.var_c68dc48c) || isdefined(component.var_b95bcdc6)) {
                     var_b313868d[#"type"] = "goto";
                 } else {
-                    /#
-                        println("order_escort_rearguard" + missioncomponent.origin + "<unknown string>");
-                    #/
+                    println("order_escort_rearguard" + missioncomponent.origin + "<unknown string>");
                     continue;
                 }
                 break;
@@ -1103,9 +1067,7 @@ function private daemonupdateobjective(commander) {
 // Checksum 0x4fb76f2, Offset: 0x5928
 // Size: 0xf6
 function function_790fb743(planner, constants) {
-    /#
-        assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     attribute = planner::getblackboardattribute(planner, constants[#"key"]);
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
@@ -1118,9 +1080,7 @@ function function_790fb743(planner, constants) {
 // Checksum 0xf8747714, Offset: 0x5a28
 // Size: 0xbc
 function private function_a05a08bf(planner, constants) {
-    /#
-        assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return isdefined(planner::getblackboardattribute(planner, constants[#"key"]));
 }
 
@@ -1129,9 +1089,7 @@ function private function_a05a08bf(planner, constants) {
 // Checksum 0x10c0cb6c, Offset: 0x5af0
 // Size: 0xc0
 function private strategyblackboardvalueistrue(planner, constants) {
-    /#
-        assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return planner::getblackboardattribute(planner, constants[#"key"]) == 1;
 }
 
@@ -1140,20 +1098,14 @@ function private strategyblackboardvalueistrue(planner, constants) {
 // Checksum 0xe6bd1fd5, Offset: 0x5bb8
 // Size: 0x20e
 function private function_a75b29d8(planner, constants) {
-    /#
-        assert(isstring(constants[#"focus"]) || ishash(constants[#"focus"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"focus"]) || ishash(constants[#"focus"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     target = planner::getblackboardattribute(planner, #"current_target");
-    /#
-        assert(isdefined(target));
-    #/
+    assert(isdefined(target));
     if (!isdefined(target)) {
         return false;
     }
     strategy = target[#"strategy"];
-    /#
-        assert(isstruct(strategy));
-    #/
+    assert(isstruct(strategy));
     if (!isstruct(strategy)) {
         return false;
     }
@@ -1174,16 +1126,12 @@ function private function_a75b29d8(planner, constants) {
 function private function_e0092cfc(planner, constant) {
     planner::setblackboardattribute(planner, #"current_target", undefined);
     targets = planner::getblackboardattribute(planner, #"targets");
-    /#
-        assert(isarray(targets));
-    #/
+    assert(isarray(targets));
     if (!isarray(targets)) {
         return spawnstruct();
     }
     priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
-    /#
-        assert(isarray(priorities));
-    #/
+    assert(isarray(priorities));
     foreach (priority in priorities) {
         if (targets[priority].size > 0) {
             planner::setblackboardattribute(planner, #"current_target", targets[priority][0]);
@@ -1313,25 +1261,19 @@ function private function_14c766b3(planner, constant) {
 // Size: 0x2aa
 function private function_52012b78(planner, constant) {
     target = planner::getblackboardattribute(planner, #"current_target");
-    /#
-        assert(isdefined(target));
-    #/
+    assert(isdefined(target));
     if (!isdefined(target)) {
         return spawnstruct();
     }
     strategy = target[#"strategy"];
-    /#
-        assert(isstruct(strategy));
-    #/
+    assert(isstruct(strategy));
     if (!isstruct(strategy)) {
         return spawnstruct();
     }
     distribution = strategy.("doppelbotsdistribution");
     priority = strategy.("doppelbotspriority");
     targets = planner::getblackboardattribute(planner, #"targets");
-    /#
-        assert(isarray(targets));
-    #/
+    assert(isarray(targets));
     if (!isarray(targets)) {
         return spawnstruct();
     }
@@ -1346,9 +1288,7 @@ function private function_52012b78(planner, constant) {
         arrayremoveindex(targets[priority], 0);
         break;
     default:
-        /#
-            assert(0);
-        #/
+        assert(0);
         break;
     }
     planner::setblackboardattribute(planner, #"targets", targets);
@@ -1361,9 +1301,7 @@ function private function_52012b78(planner, constant) {
 // Size: 0x2b2
 function private function_34464159(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     doppelbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     target = planner::getblackboardattribute(planner, "target", squadindex);
     bundle = target[#"__unsafe__"][#"bundle"];
@@ -1399,9 +1337,7 @@ function private function_34464159(planner, constant) {
 // Size: 0x10a
 function private strategysquadcalculatepathableobjectivesparam(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     doppelbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     objectives = planner::getblackboardattribute(planner, #"objectives");
     pathableobjectives = _calculateallpathableobjectives(doppelbots, objectives);
@@ -1415,9 +1351,7 @@ function private strategysquadcalculatepathableobjectivesparam(planner, constant
 // Size: 0x10a
 function private strategysquadcalculatepathableplayersparam(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     doppelbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     players = planner::getblackboardattribute(planner, #"players");
     pathableescorts = _calculateallpathableclients(doppelbots, players);
@@ -1430,12 +1364,8 @@ function private strategysquadcalculatepathableplayersparam(planner, constant) {
 // Checksum 0x2bb147ac, Offset: 0x7200
 // Size: 0xf4
 function private strategyincrementblackboardvalue(planner, constants) {
-    /#
-        assert(isarray(constants));
-    #/
-    /#
-        assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
-    #/
+    assert(isarray(constants));
+    assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
     planner::setblackboardattribute(planner, constants[#"name"], planner::getblackboardattribute(planner, constants[#"name"]) + 1);
 }
 
@@ -1445,9 +1375,7 @@ function private strategyincrementblackboardvalue(planner, constants) {
 // Size: 0x354
 function private function_166d74b2(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex > 0, "<unknown string>");
-    #/
+    assert(squadindex > 0, "<unknown string>");
     currentsquad = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     possiblesquads = planner::getblackboardattribute(planner, #"possible_squads");
     for (i = 0; i < possiblesquads.size; i++) {
@@ -1480,9 +1408,7 @@ function private function_166d74b2(planner, constants) {
     }
     /#
         var_26ae1214 = planner::getblackboardattribute(planner, #"idle_doppelbots").size;
-        /#
-            assert(var_26ae1214 > idlebots.size, "<unknown string>");
-        #/
+        assert(var_26ae1214 > idlebots.size, "<unknown string>");
     #/
     planner::setblackboardattribute(planner, #"idle_doppelbots", idlebots);
 }
@@ -1494,9 +1420,7 @@ function private function_166d74b2(planner, constants) {
 function private function_f162255b(planner, constants) {
     targets = planner::getblackboardattribute(planner, #"targets");
     priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
-    /#
-        assert(isarray(priorities));
-    #/
+    assert(isarray(priorities));
     foreach (priority in priorities) {
         if (targets[priority].size > 0) {
             arrayremoveindex(targets[priority], 0);
@@ -1511,12 +1435,8 @@ function private function_f162255b(planner, constants) {
 // Checksum 0x22d674df, Offset: 0x7830
 // Size: 0xdc
 function private strategysetblackboardvalue(planner, constants) {
-    /#
-        assert(isarray(constants));
-    #/
-    /#
-        assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
-    #/
+    assert(isarray(constants));
+    assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
     planner::setblackboardattribute(planner, constants[#"name"], constants[#"value"]);
 }
 
@@ -1525,12 +1445,8 @@ function private strategysetblackboardvalue(planner, constants) {
 // Checksum 0x2d925baa, Offset: 0x7918
 // Size: 0xe4
 function private function_20de0d52(planner, constants) {
-    /#
-        assert(isarray(constants));
-    #/
-    /#
-        assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
-    #/
+    assert(isarray(constants));
+    assert(isstring(constants[#"name"]) || ishash(constants[#"name"]));
     planner::setblackboardattribute(planner, constants[#"name"], array());
 }
 
@@ -1594,12 +1510,8 @@ function private strategyshouldthrottleprogress(planner, constant) {
 // Size: 0x122
 function private strategysquadorderparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
-    /#
-        assert(isstring(constants[#"order"]) || ishash(constants[#"order"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
+    assert(isstring(constants[#"order"]) || ishash(constants[#"order"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     planner::setblackboardattribute(planner, "order", constants[#"order"], squadindex);
     return spawnstruct();
 }
@@ -1610,9 +1522,7 @@ function private strategysquadorderparam(planner, constants) {
 // Size: 0xc2
 function private strategysquadassignforcegoalparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     forcegoal = planner::getblackboardattribute(planner, #"force_goal");
     planner::setblackboardattribute(planner, "force_goal", forcegoal, squadindex);
     return spawnstruct();
@@ -1624,9 +1534,7 @@ function private strategysquadassignforcegoalparam(planner, constants) {
 // Size: 0x26a
 function private strategysquadassignpathableescortparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathableescorts = planner::getblackboardattribute(planner, "pathable_escorts", squadindex);
     if (!isarray(pathableescorts) || pathableescorts.size <= 0) {
         return spawnstruct();
@@ -1655,9 +1563,7 @@ function private strategysquadassignpathableescortparam(planner, constants) {
 // Size: 0x2c2
 function private strategysquadassignpathableobjectparam(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathablegameobjects = planner::getblackboardattribute(planner, "pathable_gameobjects", squadindex);
     prioritynames = planner::getblackboardattribute(planner, #"gameobjects_priority");
     gameobject = undefined;
@@ -1690,9 +1596,7 @@ function private strategysquadassignpathableobjectparam(planner, constant) {
 // Size: 0x192
 function private strategysquadassignpathableobjectiveparam(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathableobjectives = planner::getblackboardattribute(planner, "pathable_objectives", squadindex);
     shortestpath = pathableobjectives[0][#"distance"];
     objective = pathableobjectives[0][#"objective"];
@@ -1713,9 +1617,7 @@ function private strategysquadassignpathableobjectiveparam(planner, constant) {
 // Size: 0x32a
 function private strategysquadassignpathableunclaimedobjectparam(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     pathablegameobjects = planner::getblackboardattribute(planner, "pathable_gameobjects", squadindex);
     prioritynames = planner::getblackboardattribute(planner, #"gameobjects_priority");
     gameobject = undefined;
@@ -1748,13 +1650,9 @@ function private strategysquadassignpathableunclaimedobjectparam(planner, consta
 // Size: 0xda
 function private function_b77887e(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     currenttarget = planner::getblackboardattribute(planner, #"current_target");
-    /#
-        assert(isdefined(currenttarget), "<unknown string>");
-    #/
+    assert(isdefined(currenttarget), "<unknown string>");
     planner::setblackboardattribute(planner, "target", currenttarget, squadindex);
     return spawnstruct();
 }
@@ -1765,9 +1663,7 @@ function private function_b77887e(planner, constants) {
 // Size: 0x9a
 function private strategysquadassignwanderparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     planner::setblackboardattribute(planner, "order", "order_wander", squadindex);
     return spawnstruct();
 }
@@ -1778,13 +1674,9 @@ function private strategysquadassignwanderparam(planner, constants) {
 // Size: 0x142
 function private strategysquadclaimobjectparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     gameobjects = planner::getblackboardattribute(planner, "gameobjects", squadindex);
-    /#
-        assert(gameobjects.size > 0, "<unknown string>");
-    #/
+    assert(gameobjects.size > 0, "<unknown string>");
     foreach (gameobject in gameobjects) {
         gameobject[#"claimed"] = 1;
     }
@@ -1796,16 +1688,10 @@ function private strategysquadclaimobjectparam(planner, constants) {
 // Checksum 0x12516e7c, Offset: 0x8cd8
 // Size: 0x1c4
 function private strategysquadcopyblackboardvalue(planner, constants) {
-    /#
-        assert(isstring(constants[#"from"]) || ishash(constants[#"from"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isstring(constants[#"to"]) || ishash(constants[#"to"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"from"]) || ishash(constants[#"from"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isstring(constants[#"to"]) || ishash(constants[#"to"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     value = planner::getblackboardattribute(planner, constants[#"from"], squadindex);
     planner::setblackboardattribute(planner, constants[#"to"], value, squadindex);
 }
@@ -1815,17 +1701,11 @@ function private strategysquadcopyblackboardvalue(planner, constants) {
 // Checksum 0x3b984550, Offset: 0x8ea8
 // Size: 0x1c4
 function private function_86c0732e(planner, constants) {
-    /#
-        assert(isstring(constants[#"from"]) || ishash(constants[#"from"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
-    /#
-        assert(isstring(constants[#"to"]) || ishash(constants[#"to"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isstring(constants[#"from"]) || ishash(constants[#"from"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
+    assert(isstring(constants[#"to"]) || ishash(constants[#"to"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     value = planner::getblackboardattribute(planner, constants[#"from"]);
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     planner::setblackboardattribute(planner, constants[#"to"], value, squadindex);
 }
 
@@ -1851,12 +1731,8 @@ function private function_45f841ea(planner, constants) {
 // Size: 0x2c2
 function private function_faa6dd57(planner, constants, var_92812a91) {
     squads = planner::getblackboardattribute(planner, var_92812a91);
-    /#
-        assert(isarray(squads));
-    #/
-    /#
-        assert(squads.size > 0, "<unknown string>" + var_92812a91 + "<unknown string>");
-    #/
+    assert(isarray(squads));
+    assert(squads.size > 0, "<unknown string>" + var_92812a91 + "<unknown string>");
     if (!isarray(squads)) {
         return spawnstruct();
     }
@@ -1870,9 +1746,7 @@ function private function_faa6dd57(planner, constants, var_92812a91) {
         var_d91b9923[bot getentitynumber()] = 1;
     }
     squadindex = planner::createsubblackboard(planner);
-    /#
-        assert(squadindex <= 17, "<unknown string>");
-    #/
+    assert(squadindex <= 17, "<unknown string>");
     planner::setblackboardattribute(planner, #"current_squad", squadindex);
     planner::setblackboardattribute(planner, "doppelbots", var_75ff48f8[#"squad"], squadindex);
     team = planner::getblackboardattribute(planner, #"team");
@@ -1885,13 +1759,9 @@ function private function_faa6dd57(planner, constants, var_92812a91) {
 // Checksum 0xbb81c77b, Offset: 0x93e0
 // Size: 0x2c2
 function private strategysquadcreateofsizexparam(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     doppelbots = planner::getblackboardattribute(planner, #"idle_doppelbots");
-    /#
-        assert(doppelbots.size >= constants[#"amount"], "<unknown string>" + constants[#"amount"] + "<unknown string>");
-    #/
+    assert(doppelbots.size >= constants[#"amount"], "<unknown string>" + constants[#"amount"] + "<unknown string>");
     enlisteddoppelbots = array();
     idledoppelbots = array();
     for (index = 0; index < constants[#"amount"]; index++) {
@@ -1902,9 +1772,7 @@ function private strategysquadcreateofsizexparam(planner, constants) {
     }
     planner::setblackboardattribute(planner, #"idle_doppelbots", idledoppelbots);
     squadindex = planner::createsubblackboard(planner);
-    /#
-        assert(squadindex <= 17, "<unknown string>");
-    #/
+    assert(squadindex <= 17, "<unknown string>");
     planner::setblackboardattribute(planner, #"current_squad", squadindex);
     planner::setblackboardattribute(planner, "doppelbots", enlisteddoppelbots, squadindex);
     team = planner::getblackboardattribute(planner, #"team");
@@ -1918,9 +1786,7 @@ function private strategysquadcreateofsizexparam(planner, constants) {
 // Size: 0x1ba
 function private strategysquadescortassignmainguardparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     squadbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     foreach (escort in escorts) {
@@ -1937,9 +1803,7 @@ function private strategysquadescortassignmainguardparam(planner, constants) {
 // Size: 0x1ba
 function private strategysquadescortassignrearguardparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     squadbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     foreach (escort in escorts) {
@@ -1956,9 +1820,7 @@ function private strategysquadescortassignrearguardparam(planner, constants) {
 // Size: 0x1ba
 function private strategysquadescortassignvanguardparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     squadbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     foreach (escort in escorts) {
@@ -1975,13 +1837,9 @@ function private strategysquadescortassignvanguardparam(planner, constants) {
 // Size: 0x11a
 function private strategysquadescortcalculatepathablepoiparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
-    /#
-        assert(isarray(escorts) && escorts.size > 0, "<unknown string>");
-    #/
+    assert(isarray(escorts) && escorts.size > 0, "<unknown string>");
     escortpoi = array();
     planner::setblackboardattribute(planner, "escort_poi", escortpoi, squadindex);
     return spawnstruct();
@@ -1993,9 +1851,7 @@ function private strategysquadescortcalculatepathablepoiparam(planner, constants
 // Size: 0x10e
 function private strategysquadescorthasnomainguard(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     foreach (escort in escorts) {
         if (escort[#"escortmainguard"].size > 0) {
@@ -2011,9 +1867,7 @@ function private strategysquadescorthasnomainguard(planner, constants) {
 // Size: 0x10c
 function private strategysquadescorthasnorearguard(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     foreach (escort in escorts) {
         if (escort[#"escortrearguard"].size > 0) {
@@ -2029,9 +1883,7 @@ function private strategysquadescorthasnorearguard(planner, constants) {
 // Size: 0x10c
 function private strategysquadescorthasnovanguard(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     foreach (escort in escorts) {
         if (escort[#"escortvanguard"].size > 0) {
@@ -2047,9 +1899,7 @@ function private strategysquadescorthasnovanguard(planner, constants) {
 // Size: 0x19c
 function private strategysquadsortescortpoi(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escortpois = planner::getblackboardattribute(planner, "escort_poi", squadindex);
     if (escortpois.size > 0) {
         for (index = 0; index < escortpois.size; index++) {
@@ -2073,12 +1923,8 @@ function private strategysquadsortescortpoi(planner, constants) {
 // Size: 0x146
 function private bunker_exposure_scale(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
-    /#
-        assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
+    assert(isstring(constants[#"key"]) || ishash(constants[#"key"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     attribute = planner::getblackboardattribute(planner, constants[#"key"], squadindex);
     if (isdefined(attribute) && isarray(attribute)) {
         return (attribute.size > 0);
@@ -2092,9 +1938,7 @@ function private bunker_exposure_scale(planner, constants) {
 // Size: 0x98
 function private strategysquadhaspathableescort(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "pathable_escorts", squadindex);
     return escorts.size > 0;
 }
@@ -2105,9 +1949,7 @@ function private strategysquadhaspathableescort(planner, constants) {
 // Size: 0xa2
 function private strategysquadhaspathableobject(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     gameobjects = planner::getblackboardattribute(planner, "pathable_gameobjects", squadindex);
     return isdefined(gameobjects) && gameobjects.size > 0;
 }
@@ -2118,9 +1960,7 @@ function private strategysquadhaspathableobject(planner, constants) {
 // Size: 0x98
 function private strategysquadhaspathableobjective(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     objectives = planner::getblackboardattribute(planner, "pathable_objectives", squadindex);
     return objectives.size > 0;
 }
@@ -2131,9 +1971,7 @@ function private strategysquadhaspathableobjective(planner, constants) {
 // Size: 0xee
 function private strategysquadhaspathableunclaimedobject(planner, constant) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     gameobjects = planner::getblackboardattribute(planner, "pathable_gameobjects", squadindex);
     for (index = 0; index < gameobjects.size; index++) {
         if (!gameobjects[index][#"gameobject"][#"claimed"]) {
@@ -2148,9 +1986,7 @@ function private strategysquadhaspathableunclaimedobject(planner, constant) {
 // Checksum 0x2ea818a3, Offset: 0xa658
 // Size: 0xa2
 function private strategyhasatleastxassaultobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return planner::getblackboardattribute(planner, #"gameobjects_assault").size >= constants[#"amount"];
 }
 
@@ -2159,9 +1995,7 @@ function private strategyhasatleastxassaultobjects(planner, constants) {
 // Checksum 0x2edfed4c, Offset: 0xa708
 // Size: 0xa2
 function private strategyhasatleastxdefendobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return planner::getblackboardattribute(planner, #"gameobjects_defend").size >= constants[#"amount"];
 }
 
@@ -2170,9 +2004,7 @@ function private strategyhasatleastxdefendobjects(planner, constants) {
 // Checksum 0xeb6fd23d, Offset: 0xa7b8
 // Size: 0xa2
 function private strategyhasatleastxobjectives(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return planner::getblackboardattribute(planner, #"objectives").size >= constants[#"amount"];
 }
 
@@ -2181,9 +2013,7 @@ function private strategyhasatleastxobjectives(planner, constants) {
 // Checksum 0x5da7ebb0, Offset: 0xa868
 // Size: 0xa2
 function private strategyhasatleastxplayers(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return planner::getblackboardattribute(planner, #"players").size >= constants[#"amount"];
 }
 
@@ -2192,9 +2022,7 @@ function private strategyhasatleastxplayers(planner, constants) {
 // Checksum 0x28d70af3, Offset: 0xa918
 // Size: 0x21e
 function private strategyhasatleastxpriorityassaultobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     if (strategyhasatleastxassaultobjects(planner, constants)) {
         prioritynames = planner::getblackboardattribute(planner, #"gameobjects_priority");
         prioritymap = [];
@@ -2218,9 +2046,7 @@ function private strategyhasatleastxpriorityassaultobjects(planner, constants) {
 // Checksum 0x3b7f891e, Offset: 0xab40
 // Size: 0x21e
 function private strategyhasatleastxprioritydefendobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     if (strategyhasatleastxassaultobjects(planner, constants)) {
         prioritynames = planner::getblackboardattribute(planner, #"gameobjects_priority");
         prioritymap = [];
@@ -2244,9 +2070,7 @@ function private strategyhasatleastxprioritydefendobjects(planner, constants) {
 // Checksum 0x9ef6ecc, Offset: 0xad68
 // Size: 0xa2
 function private strategyhasatleastxunassignedbots(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     return planner::getblackboardattribute(planner, #"idle_doppelbots").size >= constants[#"amount"];
 }
 
@@ -2255,9 +2079,7 @@ function private strategyhasatleastxunassignedbots(planner, constants) {
 // Checksum 0xfb435738, Offset: 0xae18
 // Size: 0x13a
 function strategyhasatleastxunclaimedassaultobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     unclaimedobjects = 0;
     gameobjects = planner::getblackboardattribute(planner, #"gameobjects_assault");
     foreach (gameobject in gameobjects) {
@@ -2273,9 +2095,7 @@ function strategyhasatleastxunclaimedassaultobjects(planner, constants) {
 // Checksum 0xe06dbe3, Offset: 0xaf60
 // Size: 0x13a
 function strategyhasatleastxunclaimeddefendobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     unclaimedobjects = 0;
     gameobjects = planner::getblackboardattribute(planner, #"gameobjects_defend");
     foreach (gameobject in gameobjects) {
@@ -2291,9 +2111,7 @@ function strategyhasatleastxunclaimeddefendobjects(planner, constants) {
 // Checksum 0x955290e9, Offset: 0xb0a8
 // Size: 0x236
 function strategyhasatleastxunclaimedpriorityassaultobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     if (strategyhasatleastxassaultobjects(planner, constants)) {
         prioritynames = planner::getblackboardattribute(planner, #"gameobjects_priority");
         prioritymap = [];
@@ -2317,9 +2135,7 @@ function strategyhasatleastxunclaimedpriorityassaultobjects(planner, constants) 
 // Checksum 0x73fe3214, Offset: 0xb2e8
 // Size: 0x236
 function strategyhasatleastxunclaimedprioritydefendobjects(planner, constants) {
-    /#
-        assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
-    #/
+    assert(isint(constants[#"amount"]), "<unknown string>" + "<unknown string>" + "<unknown string>");
     if (strategyhasatleastxassaultobjects(planner, constants)) {
         prioritynames = planner::getblackboardattribute(planner, #"gameobjects_priority");
         prioritymap = [];
@@ -2352,16 +2168,12 @@ function strategyhasforcegoal(planner, constants) {
 // Size: 0x1dc
 function function_f6a3c6d5(planner, constants) {
     targets = planner::getblackboardattribute(planner, #"targets");
-    /#
-        assert(isarray(targets));
-    #/
+    assert(isarray(targets));
     if (!isarray(targets)) {
         return false;
     }
     priorities = array(#"hash_179ccf9d7cfd1e31", #"hash_254689c549346d57", #"hash_4bd86f050b36e1f6", #"hash_19c0ac460bdb9928", #"hash_160b01bbcd78c723", #"hash_c045a5aa4ac7c1d", #"hash_47fd3da20e90cd01", #"hash_64fc5c612a94639c", #"(-4) unimportant");
-    /#
-        assert(isarray(priorities));
-    #/
+    assert(isarray(priorities));
     foreach (priority in priorities) {
         if (targets[priority].size > 0) {
             return true;
@@ -2483,9 +2295,7 @@ function private strategypathingaddobjectivesparam(planner, constants) {
 // Size: 0xc2
 function private strategypathingaddsquadbotsparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     doppelbots = planner::getblackboardattribute(planner, "doppelbots", squadindex);
     planner::setblackboardattribute(planner, #"pathing_requested_bots", doppelbots);
     return spawnstruct();
@@ -2497,9 +2307,7 @@ function private strategypathingaddsquadbotsparam(planner, constants) {
 // Size: 0x19a
 function private strategypathingaddsquadescortsparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     escorts = planner::getblackboardattribute(planner, "escorts", squadindex);
     for (index = 0; index < escorts.size; index++) {
         player = escorts[index][#"__unsafe__"][#"player"];
@@ -2518,9 +2326,7 @@ function private strategypathingaddsquadescortsparam(planner, constants) {
 // Size: 0x142
 function private strategypathingaddtosquadcalculatedgameobjectsparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     calculatedgameobjects = planner::getblackboardattribute(planner, #"pathing_calculated_gameobjects");
     gameobjects = planner::getblackboardattribute(planner, "gameobjects", squadindex);
     if (!isdefined(gameobjects)) {
@@ -2539,9 +2345,7 @@ function private strategypathingaddtosquadcalculatedgameobjectsparam(planner, co
 // Size: 0x142
 function private strategypathingaddtosquadcalculatedobjectivesparam(planner, constants) {
     squadindex = planner::getblackboardattribute(planner, #"current_squad");
-    /#
-        assert(squadindex >= 0, "<unknown string>");
-    #/
+    assert(squadindex >= 0, "<unknown string>");
     calculatedobjectives = planner::getblackboardattribute(planner, #"pathing_calculated_objectives");
     objectives = planner::getblackboardattribute(planner, "objectives", squadindex);
     if (!isdefined(objectives)) {
@@ -2563,18 +2367,10 @@ function private strategypathingcalculatepathtorequestedpointsparam(planner, con
     bots = planner::getblackboardattribute(planner, #"pathing_requested_bots");
     pointindex = planner::getblackboardattribute(planner, #"pathing_current_point_index");
     botindex = planner::getblackboardattribute(planner, #"pathing_current_bot_index");
-    /#
-        assert(bots.size > 0);
-    #/
-    /#
-        assert(requestedpoints.size > 0);
-    #/
-    /#
-        assert(pointindex < requestedpoints.size);
-    #/
-    /#
-        assert(botindex < bots.size);
-    #/
+    assert(bots.size > 0);
+    assert(requestedpoints.size > 0);
+    assert(pointindex < requestedpoints.size);
+    assert(botindex < bots.size);
     if (bots.size > 0 && requestedpoints.size > 0 && pointindex < requestedpoints.size && botindex < bots.size) {
         bot = bots[botindex][#"__unsafe__"][#"bot"];
         goalpoints = array();

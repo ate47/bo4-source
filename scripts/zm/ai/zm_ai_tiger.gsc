@@ -61,17 +61,11 @@ function __main__() {
 // Checksum 0x710542d1, Offset: 0x2e8
 // Size: 0x144
 function private function_d5ccdca1() {
-    /#
-        assert(isscriptfunctionptr(&function_10687511));
-    #/
+    assert(isscriptfunctionptr(&function_10687511));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zmtigertargetservice", &function_10687511, 1);
-    /#
-        assert(isscriptfunctionptr(&function_8709c761));
-    #/
+    assert(isscriptfunctionptr(&function_8709c761));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"zmtigershouldmelee", &function_8709c761);
-    /#
-        assert(isscriptfunctionptr(&function_6c513e36));
-    #/
+    assert(isscriptfunctionptr(&function_6c513e36));
     behaviortreenetworkutility::registerbehaviortreescriptapi(#"hash_70607ec85c34b86f", &function_6c513e36);
 }
 

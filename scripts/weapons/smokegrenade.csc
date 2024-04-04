@@ -45,7 +45,6 @@ function on_local_player_spawned(local_client_num) {
 function track_grenades(local_client_num) {
     self notify(#"track_grenades");
     self endon(#"track_grenades", #"death", #"disconnect");
-    waitresult = undefined;
     waitresult = self waittill(#"grenade_fire");
     grenade = waitresult.projectile;
     weapon = waitresult.weapon;
@@ -78,7 +77,6 @@ function monitor_smoke(local_client_num) {
     }
     radius = function_709fad19();
     while (isdefined(var_d3f60df1)) {
-        waitresult = undefined;
         waitresult = var_d3f60df1 waittilltimeout(0.25, #"death");
         players = getplayers(local_client_num);
         foreach (player in players) {
@@ -178,9 +176,7 @@ function function_62ec0142(local_client_num, bundle) {
     weapon = getweapon("eq_smoke");
     if (isdefined(weapon.customsettings)) {
         var_ed9e87ac = getscriptbundle(weapon.customsettings);
-        /#
-            assert(isdefined(var_ed9e87ac));
-        #/
+        assert(isdefined(var_ed9e87ac));
         if (!(isdefined(var_ed9e87ac.var_563d4859) ? var_ed9e87ac.var_563d4859 : 0)) {
             return false;
         }
@@ -212,9 +208,7 @@ function function_28db726(local_client_num, bundle) {
     weapon = getweapon("eq_smoke");
     if (isdefined(weapon.customsettings)) {
         var_ed9e87ac = getscriptbundle(weapon.customsettings);
-        /#
-            assert(isdefined(var_ed9e87ac));
-        #/
+        assert(isdefined(var_ed9e87ac));
         if ((isdefined(var_ed9e87ac.var_ae2b2941) ? var_ed9e87ac.var_ae2b2941 : 0) && self function_6c32d092(local_client_num, #"talent_coldblooded")) {
             return false;
         }
