@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e7fe4f558a0962f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_man_tornado_nfrtu_start",

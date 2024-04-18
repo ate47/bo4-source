@@ -5,7 +5,7 @@
         }
     ],
     "description": "#hash_57dec6e03d01eb93",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#wpn_t8_sniper_power_semi_scope_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_1c067a1967345eb9",

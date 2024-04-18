@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_2c223c64a38aa4d7",
     "ready": "#hash_29efaa7e8202e3b3",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_straferun",

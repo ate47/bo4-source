@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_621db6ce8dfc1b87",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "off"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_red_vapor_altar_ra_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "on"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_621db6ce8dfc1b87",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "disable"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_vapor_altar_ra_bundle",

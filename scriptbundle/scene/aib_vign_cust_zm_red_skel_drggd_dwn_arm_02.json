@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c6e45d8980f7bbc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -22,7 +22,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_skel_drggd_dwn_arm_02",

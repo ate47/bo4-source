@@ -1,7 +1,7 @@
 {
     "amount": 60,
     "description": "#hash_21159a051530cd1c",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#p8_wz_ammo_pickup_338",
     "weapon": "weapon#hash_3a56659cea54a13",
     "type": "itemspawnentry",

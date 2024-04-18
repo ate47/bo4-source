@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_142e3ee12ac7522e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_towers_trap_acid_loop_anim",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4408879367e8cd33",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -37,7 +37,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_towers_trap_acid_02_bundle",

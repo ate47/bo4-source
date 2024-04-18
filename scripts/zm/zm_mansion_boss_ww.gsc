@@ -1158,8 +1158,8 @@ function function_3aa2bc7a(v_blast_origin) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x20421d57, Offset: 0x5610
 // Size: 0xc6
-function function_f25a51e4(var_91308236, v_origin) {
-    if (var_91308236) {
+function function_f25a51e4(b_captured, v_origin) {
+    if (b_captured) {
         level.s_boss.var_b65df36.origin = v_origin;
         level.s_boss.var_b65df36 disconnectpaths();
         return;

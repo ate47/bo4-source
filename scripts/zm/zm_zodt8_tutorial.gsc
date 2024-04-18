@@ -1471,7 +1471,7 @@ function function_e35fa479() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x860c75bd, Offset: 0x7d78
 // Size: 0x84
-function function_85d01969() {
+function power_reset() {
     self function_204dd117("tutorial_power_start");
     function_fac53b63(array("tutorial_zm_spawner_power_1", "tutorial_zm_spawner_power_2", "tutorial_zm_spawner_power_3", "tutorial_zm_spawner_power_4", "tutorial_zm_spawner_power_5"));
     level.var_d0bc9e33 thread function_e35fa479();
@@ -1483,7 +1483,7 @@ function function_85d01969() {
 // Size: 0x262
 function power() {
     level thread function_68da8e33(#"hash_2e0db4c834d8111c", 1);
-    function_6e9fe428(&function_85d01969);
+    function_6e9fe428(&power_reset);
     self.reset_score = self.score;
     e_power = function_9152aa67("p8_fxanim_zm_zod_sentinel_chaos_wheel_mod");
     e_power clientfield::set("tutorial_keyline_fx", 1);
@@ -1965,8 +1965,8 @@ function function_9152aa67(str_model_name) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0x71dd8dd8, Offset: 0x9a58
 // Size: 0x138
-function function_1cc39f51(var_d76c2d40, str_model, var_811aae17 = 1) {
-    a_models = getentarray(var_d76c2d40, "targetname");
+function function_1cc39f51(str_door, str_model, var_811aae17 = 1) {
+    a_models = getentarray(str_door, "targetname");
     foreach (e_model in a_models) {
         if (isdefined(e_model.model) && e_model.model == str_model) {
             if (isdefined(var_811aae17) && var_811aae17) {

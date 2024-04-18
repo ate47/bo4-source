@@ -1,6 +1,6 @@
 {
     "callingtask": "#kills_melee",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_callings_knife",
     "dailytarget": 75,
     "name": "closeandpersonal_task_holiday",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#pb_rifle_male_draft_ch_select_3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "edit"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_blackmarket_character",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "edit"
@@ -35,7 +35,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

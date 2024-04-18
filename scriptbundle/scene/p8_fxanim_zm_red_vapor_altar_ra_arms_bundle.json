@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cc0504bfc782617",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init_idle"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3dcf468d237f7bf2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "give_ankh"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_45b1939ca8698b10",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "aim_staff"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_34828ccb9d15048a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shoot_staff"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5309c3630779d27c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "lower_staff"
@@ -54,7 +54,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_vapor_altar_ra_arms_bundle",

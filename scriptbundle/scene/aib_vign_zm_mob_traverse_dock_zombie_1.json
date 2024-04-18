@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13750b2ba8f414a6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "main"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_traverse_dock_zombie_1",

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_2046d307dd330226",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#hash_712ebe79f7da6d58",
     "type": "itemspawnentry",
     "name": "wraithfire_wz_item",

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_141e4964026f335d",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -6,
     "var_3e688854": -2,
     "weapon": "weapon#lmg_stealth_t8_wz",

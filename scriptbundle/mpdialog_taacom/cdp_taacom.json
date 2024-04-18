@@ -17,7 +17,7 @@
     "dogweapontimeout": "#hash_26cb8ab40070fdf7",
     "counteruavdialogbundle": "cdp_taacom_kls_counteruav",
     "supplydropdialogbundle": "cdp_taacom_kls_carepackage",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_1272d29f": "cdp_pilot1_kls_overwatch_helicopter",
     "var_d93fd150": "cdp_taacom_kls_swat_team",
     "airspacefull": "#hash_7b20c80d6aabab01",

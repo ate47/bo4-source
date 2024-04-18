@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#ai_t8_werewolf_cust_trv_jump_down_zm_mnsn_main_hall",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -18,7 +18,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_mnsn_wrwlf_cust_trv_jump_dn_main_hall",

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_1f7f88873901a537",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_3e688854": -2,
     "weapon": "weapon#smg_fastburst_t8_wz",
     "attachslotbody": 1,

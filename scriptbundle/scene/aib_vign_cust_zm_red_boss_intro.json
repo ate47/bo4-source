@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s01_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_01",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s02_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_02",
@@ -26,7 +26,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s03_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_03",
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s04_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_04",
@@ -46,7 +46,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s05_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_05",
@@ -56,7 +56,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s06_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_06",
@@ -66,7 +66,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_cust_zm_red_boss_intro_s07_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot_07",
@@ -83,7 +83,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b019eb0e2ef841d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_01",
@@ -93,7 +93,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5625856fff6655e8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_02",
@@ -107,7 +107,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3999e516a3c4a6ee",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -117,7 +117,7 @@
                     "entry": [
                         {
                             "anim": "#hash_64f29f38f3882f69",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_05",
@@ -127,7 +127,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1d52b8ea4eee3834",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -158,7 +158,7 @@
                     "entry": [
                         {
                             "anim": "#hash_24036b1a3446e4ee",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -168,7 +168,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3999e416a3c4a53b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -178,7 +178,7 @@
                     "entry": [
                         {
                             "anim": "#hash_64f29c38f3882a50",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_05",
@@ -188,7 +188,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1d52bbea4eee3d4d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_06",
@@ -198,7 +198,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d7e7867e47700fa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_07",
@@ -224,7 +224,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60b2e6aa011026a8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -234,7 +234,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6fa30c9ae1a7fda7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -244,7 +244,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3b02b270b33562fe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_05",
@@ -254,7 +254,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f8476418bf8c25d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_06",
@@ -264,7 +264,7 @@
                     "entry": [
                         {
                             "anim": "#hash_124435e7e9e7bfc4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_07",
@@ -290,7 +290,7 @@
                     "entry": [
                         {
                             "anim": "#hash_627f1faa4a8b3313",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -300,7 +300,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e93179aaa2caa80",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -310,7 +310,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f6907709a6ebda1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_05",
@@ -320,7 +320,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43cf2d41e042ae1e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_06",
@@ -330,7 +330,7 @@
                     "entry": [
                         {
                             "anim": "#hash_397a46e76f0c54ef",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_07",
@@ -348,7 +348,7 @@
                     "entry": [
                         {
                             "anim": "#hash_791cc64020062736",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_01",
@@ -358,7 +358,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1099844d4c26de5f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_02",
@@ -368,7 +368,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4eb3fec881a53094",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -378,7 +378,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2be0119ac3e73cd5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -408,7 +408,7 @@
                     "entry": [
                         {
                             "anim": "#hash_45a26ac1ba162334",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_01",
@@ -418,7 +418,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36e6001622e8eea9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_02",
@@ -428,7 +428,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c943225e804193e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -438,7 +438,7 @@
                     "entry": [
                         {
                             "anim": "#hash_50a6033464341443",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -468,7 +468,7 @@
                     "entry": [
                         {
                             "anim": "#hash_ad4c3ae272a653d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_01",
@@ -478,7 +478,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1b138ab3de2fc700",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_02",
@@ -488,7 +488,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7279908ba3fe7b0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -498,7 +498,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3f989b0690c55242",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -528,7 +528,7 @@
                     "entry": [
                         {
                             "anim": "#hash_134756b7dea64988",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_01",
@@ -538,7 +538,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35906b8d3cf1e3b1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_02",
@@ -548,7 +548,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5e13de0f7fcc982a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_03",
@@ -558,7 +558,7 @@
                     "entry": [
                         {
                             "anim": "#hash_78c87850cadfc643",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_04",
@@ -612,7 +612,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d7e7767e476ff47",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -626,7 +626,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss_intro",

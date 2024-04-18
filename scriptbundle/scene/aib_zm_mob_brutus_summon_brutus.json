@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ea791565cd4f139",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_62ef419a195f3501",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -28,7 +28,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_zm_mob_brutus_summon_brutus",

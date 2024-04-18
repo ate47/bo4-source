@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_01",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_02",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_base_03",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#ai_swat_rifle_ent_litlbird_rappel_stn_vehicle2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -74,7 +74,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "ai_swat_rifle_ent_litlbird_rappel_stn",

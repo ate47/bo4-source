@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_1c96f39a878e18d3",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_3e688854": -4,
     "weapon": "weapon#launcher_standard_t8_wz",
     "type": "itemspawnentry",

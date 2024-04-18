@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_boss_prom_pipes_02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_487171f8223a83ec",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_prom_icicles_02_bundle",

@@ -325,7 +325,7 @@
     ],
     "objectivebackground": "#hash_3f90f155c7e4e6d2",
     "var_b79de608": 12,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_aa76b7dd": 1,
     "var_6fa1ca44": 3,
     "type": "zminventory",

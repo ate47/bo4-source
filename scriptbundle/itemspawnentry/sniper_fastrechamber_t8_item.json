@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_29317a827be61b95",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -10,
     "var_3e688854": -2,
     "weapon": "weapon#sniper_fastrechamber_t8_wz",

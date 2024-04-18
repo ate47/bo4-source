@@ -66,7 +66,7 @@
     "var_f181b86b": "bot_tacquery_space_seeds",
     "shortrange": 200,
     "yawsensitivity": 0.6,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "inaccuracy": 160,
     "var_19019506": 0.76,
     "pacifistwait": 1,

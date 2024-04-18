@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_393b8cafa41ff062",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "anim": "#hash_130ee936fb41990f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -31,7 +31,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_mnsn_crmsn_nfrtu_spawn_01",

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_2e1be7bb1bd0ae45",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -6,
     "var_3e688854": -2,
     "weapon": "weapon#sniper_quickscope_t8_wz",

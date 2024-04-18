@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_weapon_camo_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -18,7 +18,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

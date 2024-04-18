@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e4c101493ca4152",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -21,7 +21,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43eea9be9a11fa12",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -33,7 +33,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "crash_end_game_scene",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p7_fxanim_gp_fan_electric_vintage_wall_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -18,7 +18,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_mp_cosmo_vintage_fan_bundle",

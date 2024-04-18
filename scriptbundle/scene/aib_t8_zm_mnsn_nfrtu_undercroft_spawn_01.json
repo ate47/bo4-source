@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7dbad9d30fa78985",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_mnsn_nfrtu_undercroft_spawn_01",

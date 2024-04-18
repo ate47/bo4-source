@@ -210,7 +210,7 @@ function function_532dfc0b(localclientnum, lerpduration) {
 // Checksum 0x86edb503, Offset: 0x43e8
 // Size: 0x3c
 function function_e79c182b(localclientnum, lerpduration) {
-    show_cam(localclientnum, level.var_bbb8810e, "cam_draft_ingame", lerpduration);
+    show_cam(localclientnum, level.draftxcam, "cam_draft_ingame", lerpduration);
 }
 
 // Namespace draft/draft

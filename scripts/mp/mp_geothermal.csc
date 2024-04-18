@@ -15,7 +15,7 @@
 // Size: 0x13c
 function event_handler[level_init] main(eventstruct) {
     clientfield::register("toplayer", "toggle_player_steam", 1, 1, "int", &toggle_player_steam, 0, 0);
-    level.var_bbb8810e = #"ui_cam_draft_common";
+    level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     callback::on_localclient_connect(&on_localclient_connect);
     callback::on_gameplay_started(&on_gameplay_started);

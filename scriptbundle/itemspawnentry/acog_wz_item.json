@@ -5,7 +5,7 @@
         }
     ],
     "description": "#hash_291880ef1dd7599d",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#attach_t8_optic_acog_world",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_acog",

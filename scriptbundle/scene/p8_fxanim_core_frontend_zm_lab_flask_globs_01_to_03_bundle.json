@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2399d9345457cb0e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state1_idle"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_68456bc89fc5bff8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state1_exit"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6df9eb3171ed2757",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state2_idle"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3f733a91515f668d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state2_exit"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1bb45247e8bce290",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state3_idle"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c3e0eccdcba00e2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state3_exit"
@@ -64,7 +64,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

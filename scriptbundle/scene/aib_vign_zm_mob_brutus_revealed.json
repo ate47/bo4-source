@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_vign_zm_mob_brutus_reveal_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_645a5cd7102d79f8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_65c488bacdd7ef68",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -53,7 +53,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

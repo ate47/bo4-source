@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_16dd18372ca12c8a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4a8631b8c25752e6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_183ca901b9c7ca74",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -28,7 +28,7 @@
                     "entry": [
                         {
                             "anim": "#hash_157f8ae03e90ebc9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -41,7 +41,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_tplt_zm_arm_grasp_01",

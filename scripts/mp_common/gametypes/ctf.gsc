@@ -346,10 +346,10 @@ function function_ef8d5fb5() {
     self.visuals[1] setvisibletoteam(#"axis");
     if (isdefined(self.var_94885886)) {
         self.var_94885886 setinvisibletoall();
-        self.var_94885886 setvisibletoteam(self.var_f4496288);
+        self.var_94885886 setvisibletoteam(self.ctf_team);
     }
     if (isdefined(self.var_fa01a5fa)) {
-        otherteam = util::get_enemy_team(self.var_f4496288);
+        otherteam = util::get_enemy_team(self.ctf_team);
         self.var_fa01a5fa setinvisibletoall();
         self.var_fa01a5fa setvisibletoteam(otherteam);
     }
@@ -484,7 +484,7 @@ function ctf() {
         trigger = flag_triggers[index];
         flag = createflag(trigger);
         team = flag gameobjects::get_owner_team();
-        flag.var_f4496288 = team;
+        flag.ctf_team = team;
         level.flags[level.flags.size] = flag;
         level.teamflags[team] = flag;
     }
@@ -974,7 +974,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
             dist = distance2dsquared(self.origin, flagorigin);
             if (dist < level.defaultoffenseradiussq) {
                 inflagradius = 1;
-                if (level.flags[index].var_f4496288 == attacker.pers[#"team"]) {
+                if (level.flags[index].ctf_team == attacker.pers[#"team"]) {
                     defendedflag = 1;
                 } else {
                     offendedflag = 1;
@@ -983,7 +983,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
             dist = distance2dsquared(attacker.origin, flagorigin);
             if (dist < level.defaultoffenseradiussq) {
                 inflagradius = 1;
-                if (level.flags[index].var_f4496288 == attacker.pers[#"team"]) {
+                if (level.flags[index].ctf_team == attacker.pers[#"team"]) {
                     defendedflag = 1;
                 } else {
                     offendedflag = 1;
@@ -1039,7 +1039,7 @@ function onplayerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, vd
         if (isdefined(self.flagcarried)) {
             for (index = 0; index < level.flags.size; index++) {
                 currentflag = level.flags[index];
-                if (currentflag.var_f4496288 == self.team) {
+                if (currentflag.ctf_team == self.team) {
                     if (currentflag.curorigin == currentflag.trigger.baseorigin) {
                         dist = distance2dsquared(self.origin, currentflag.curorigin);
                         if (dist < level.defaultoffenseradiussq) {

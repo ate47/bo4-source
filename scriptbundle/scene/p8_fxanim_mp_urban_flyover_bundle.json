@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_33834dcc178b0922",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75bf2a11aa7e7d39",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_39a803c30937d08d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -56,7 +56,7 @@
                     "entry": [
                         {
                             "anim": "#hash_197d010f5c630296",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -68,7 +68,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_mp_urban_flyover_bundle",

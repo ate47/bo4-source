@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4f04d6926b32d267",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#p8_fxanim_zm_esc_shockbox_off_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "desactivated"
@@ -19,11 +19,11 @@
                     "entry": [
                         {
                             "anim": "#hash_197aeae099bb3d1e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#p8_fxanim_zm_esc_shockbox_on_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "activated"
@@ -35,7 +35,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_shockbox_bundle",

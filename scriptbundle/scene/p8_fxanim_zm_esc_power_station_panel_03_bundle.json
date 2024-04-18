@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_esc_power_station_panel_03_off_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "off"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6579659bf8d5c63f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#p8_fxanim_zm_esc_power_station_panel_03_on_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 0.15,
@@ -32,7 +32,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "polishing",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_power_station_panel_03_bundle",

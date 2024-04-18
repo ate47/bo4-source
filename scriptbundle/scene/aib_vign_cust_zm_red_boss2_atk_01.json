@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_61d50703fd3ae421",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a0275b4caa813d5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -26,7 +26,7 @@
                     "entry": [
                         {
                             "anim": "#hash_22b83337efcd1070",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_start"
@@ -35,7 +35,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5b753f0206ee9226",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_loop"
@@ -44,7 +44,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7cdd8187498cc745",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_end"
@@ -60,7 +60,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss2_atk_01",

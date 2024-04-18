@@ -12,7 +12,7 @@
 // Checksum 0x46fa6a1e, Offset: 0x138
 // Size: 0xce
 function event_handler[level_init] main(eventstruct) {
-    level.var_bbb8810e = #"ui_cam_draft_common";
+    level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     mp_offshore_alt_fx::main();
     mp_offshore_alt_sound::main();

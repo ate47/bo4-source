@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4114d6ce3151b93c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_509b6922c208ad5e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_36469f71371a7d60",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5b2073b2c63f9e93",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -45,7 +45,7 @@
                     "entry": [
                         {
                             "anim": "#hash_291963619cb23cdf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -58,7 +58,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_towers_banner_achievement_red_bundle",

@@ -1,6 +1,6 @@
 {
     "callingtask": "#survive_rounds",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_calling_tasks_rndssurvived",
     "dailytarget": 30,
     "name": "survivor_task",

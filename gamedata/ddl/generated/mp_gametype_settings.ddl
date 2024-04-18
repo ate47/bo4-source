@@ -23,7 +23,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -155,7 +155,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -180,7 +180,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -375,7 +375,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -1491,7 +1491,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -1623,7 +1623,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -1648,7 +1648,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -1843,7 +1843,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -2959,7 +2959,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -3091,7 +3091,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -3116,7 +3116,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -3311,7 +3311,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -4427,7 +4427,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -4559,7 +4559,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -4584,7 +4584,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -4779,7 +4779,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -5895,7 +5895,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -6027,7 +6027,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -6052,7 +6052,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -6247,7 +6247,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -7349,7 +7349,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -7481,7 +7481,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -7506,7 +7506,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -7701,7 +7701,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -8797,7 +8797,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -8929,7 +8929,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -8954,7 +8954,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -9149,7 +9149,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -10245,7 +10245,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -10377,7 +10377,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -10402,7 +10402,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -10597,7 +10597,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -11693,7 +11693,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -11825,7 +11825,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -11850,7 +11850,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -12045,7 +12045,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -13140,7 +13140,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -13272,7 +13272,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -13297,7 +13297,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -13492,7 +13492,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -14576,7 +14576,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -14708,7 +14708,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -14733,7 +14733,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -14928,7 +14928,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -16006,7 +16006,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -16137,7 +16137,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -16162,7 +16162,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -16358,7 +16358,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -17436,7 +17436,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -17567,7 +17567,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -17592,7 +17592,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -17788,7 +17788,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -18866,7 +18866,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -18997,7 +18997,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -19022,7 +19022,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -19217,7 +19217,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -20295,7 +20295,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -20426,7 +20426,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -20451,7 +20451,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -20646,7 +20646,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -21724,7 +21724,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -21855,7 +21855,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -21880,7 +21880,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -22075,7 +22075,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -23154,7 +23154,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -23285,7 +23285,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -23310,7 +23310,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -23505,7 +23505,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -24584,7 +24584,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -24715,7 +24715,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -24740,7 +24740,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -24935,7 +24935,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -26000,7 +26000,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -26130,7 +26130,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -26155,7 +26155,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -26350,7 +26350,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -27415,7 +27415,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -27545,7 +27545,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -27570,7 +27570,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -27765,7 +27765,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -28825,7 +28825,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -28955,7 +28955,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -28980,7 +28980,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -29175,7 +29175,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -30235,7 +30235,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -30365,7 +30365,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -30390,7 +30390,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -30585,7 +30585,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -31645,7 +31645,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -31775,7 +31775,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -31800,7 +31800,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -31995,7 +31995,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -33020,7 +33020,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -33150,7 +33150,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -33175,7 +33175,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -33370,7 +33370,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -34390,7 +34390,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -34520,7 +34520,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -34545,7 +34545,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -34740,7 +34740,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -35753,7 +35753,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -35883,7 +35883,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -35908,7 +35908,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -36103,7 +36103,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -37110,7 +37110,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -37240,7 +37240,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -37265,7 +37265,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -37460,7 +37460,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -38467,7 +38467,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -38597,7 +38597,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -38622,7 +38622,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -38817,7 +38817,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -39824,7 +39824,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -39954,7 +39954,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -39979,7 +39979,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -40174,7 +40174,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -41181,7 +41181,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -41311,7 +41311,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -41336,7 +41336,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -41531,7 +41531,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -42544,7 +42544,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -42674,7 +42674,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -42699,7 +42699,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -42894,7 +42894,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -43907,7 +43907,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -44037,7 +44037,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -44062,7 +44062,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -44257,7 +44257,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -45270,7 +45270,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -45400,7 +45400,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -45425,7 +45425,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -45620,7 +45620,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -46633,7 +46633,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -46763,7 +46763,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -46788,7 +46788,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -46983,7 +46983,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -47995,7 +47995,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -48125,7 +48125,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -48150,7 +48150,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -48345,7 +48345,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -49355,7 +49355,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -49485,7 +49485,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -49510,7 +49510,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -49705,7 +49705,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -50708,7 +50708,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -50838,7 +50838,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -50863,7 +50863,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -51058,7 +51058,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -52061,7 +52061,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -52191,7 +52191,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -52216,7 +52216,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -52411,7 +52411,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -53409,7 +53409,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -53538,7 +53538,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -53560,7 +53560,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
@@ -53755,7 +53755,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -54753,7 +54753,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -54989,7 +54989,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -55024,7 +55024,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -55393,7 +55393,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -56391,7 +56391,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -56627,7 +56627,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -56662,7 +56662,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -57031,7 +57031,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -58029,7 +58029,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -58263,7 +58263,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -58298,7 +58298,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -58667,7 +58667,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -59665,7 +59665,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -59899,7 +59899,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -59934,7 +59934,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -60302,7 +60302,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -61300,7 +61300,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -61534,7 +61534,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -61569,7 +61569,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -61936,7 +61936,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -62934,7 +62934,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -63168,7 +63168,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -63203,7 +63203,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -63571,7 +63571,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -64569,7 +64569,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -64803,7 +64803,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -64838,7 +64838,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -65206,7 +65206,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -66204,7 +66204,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -66438,7 +66438,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -66473,7 +66473,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -66840,7 +66840,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -67838,7 +67838,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -68072,7 +68072,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -68107,7 +68107,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -68473,7 +68473,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -69470,7 +69470,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -69704,7 +69704,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -69739,7 +69739,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -70105,7 +70105,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -71102,7 +71102,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -71336,7 +71336,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -71371,7 +71371,7 @@ struct gametypesettings {
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
     uint3 platooncount;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -71735,7 +71735,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -72733,7 +72733,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -72967,7 +72967,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -73001,7 +73001,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -73364,7 +73364,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -74362,7 +74362,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -74596,7 +74596,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -74630,7 +74630,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -74993,7 +74993,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -75988,7 +75988,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -76222,7 +76222,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -76256,7 +76256,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -76619,7 +76619,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -77609,7 +77609,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -77843,7 +77843,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -77877,7 +77877,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -78240,7 +78240,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -79208,7 +79208,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -79442,7 +79442,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -79476,7 +79476,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -79839,7 +79839,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -80802,7 +80802,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -81036,7 +81036,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -81070,7 +81070,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -81433,7 +81433,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -82391,7 +82391,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -82625,7 +82625,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -82659,7 +82659,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -83022,7 +83022,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -83980,7 +83980,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -84214,7 +84214,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -84248,7 +84248,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -84611,7 +84611,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -85569,7 +85569,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -85803,7 +85803,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -85837,7 +85837,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -86200,7 +86200,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -87158,7 +87158,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -87392,7 +87392,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -87426,7 +87426,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -87789,7 +87789,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -88747,7 +88747,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -88981,7 +88981,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -89015,7 +89015,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -89378,7 +89378,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -90336,7 +90336,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -90570,7 +90570,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -90604,7 +90604,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -90967,7 +90967,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -91925,7 +91925,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -92159,7 +92159,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -92193,7 +92193,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -92555,7 +92555,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -93513,7 +93513,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -93747,7 +93747,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -93781,7 +93781,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -94143,7 +94143,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -95087,7 +95087,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -95321,7 +95321,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -95355,7 +95355,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -95717,7 +95717,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -96656,7 +96656,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -96890,7 +96890,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -96924,7 +96924,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -97284,7 +97284,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -98223,7 +98223,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -98457,7 +98457,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -98491,7 +98491,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -98851,7 +98851,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -99770,7 +99770,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -100004,7 +100004,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -100038,7 +100038,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -100397,7 +100397,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -101316,7 +101316,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -101548,7 +101548,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -101582,7 +101582,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -101941,7 +101941,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -102860,7 +102860,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -103090,7 +103090,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -103124,7 +103124,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -103483,7 +103483,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -104402,7 +104402,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -104632,7 +104632,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -104666,7 +104666,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -105025,7 +105025,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -105944,7 +105944,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -106176,7 +106176,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -106210,7 +106210,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -106569,7 +106569,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -107488,7 +107488,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -107718,7 +107718,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -107752,7 +107752,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -108111,7 +108111,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -109030,7 +109030,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -109260,7 +109260,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -109294,7 +109294,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -109653,7 +109653,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -110566,7 +110566,7 @@ struct gametypesettings {
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -110796,7 +110796,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -110830,7 +110830,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -111188,7 +111188,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -112099,7 +112099,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -112328,7 +112328,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -112361,7 +112361,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -112718,7 +112718,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -113629,7 +113629,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -113858,7 +113858,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -113891,7 +113891,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -114248,7 +114248,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -115154,7 +115154,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -115383,7 +115383,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -115416,7 +115416,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -115773,7 +115773,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -116679,7 +116679,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -116908,7 +116908,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -116941,7 +116941,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -117298,7 +117298,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -117994,7 +117994,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -118223,7 +118223,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -118256,7 +118256,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -118612,7 +118612,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -119309,7 +119309,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -119538,7 +119538,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -119571,7 +119571,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     hash_26bfa3e2a06623a1 hash_26bfa3e2a06623a1;
@@ -119926,7 +119926,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -120623,7 +120623,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -120852,7 +120852,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -120885,7 +120885,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -121238,7 +121238,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -121317,7 +121317,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -121546,7 +121546,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -121579,7 +121579,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -121931,7 +121931,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -122010,7 +122010,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -122238,7 +122238,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -122271,7 +122271,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -122622,7 +122622,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -122701,7 +122701,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -122929,7 +122929,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -122962,7 +122962,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -123313,7 +123313,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -123392,7 +123392,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -123620,7 +123620,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -123653,7 +123653,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -124004,7 +124004,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -124083,7 +124083,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -124310,7 +124310,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -124343,7 +124343,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -124693,7 +124693,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -124772,7 +124772,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -124999,7 +124999,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -125032,7 +125032,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -125382,7 +125382,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -125461,7 +125461,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -125686,7 +125686,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -125719,7 +125719,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -126069,7 +126069,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -126148,7 +126148,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -126373,7 +126373,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -126406,7 +126406,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -126756,7 +126756,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -126835,7 +126835,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -127060,7 +127060,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -127093,7 +127093,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -127443,7 +127443,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -127522,7 +127522,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -127747,7 +127747,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -127780,7 +127780,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -128130,7 +128130,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -128209,7 +128209,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -128434,7 +128434,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -128467,7 +128467,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -128817,7 +128817,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -128896,7 +128896,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -129121,7 +129121,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -129154,7 +129154,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -129504,7 +129504,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -129583,7 +129583,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -129808,7 +129808,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -129841,7 +129841,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -130191,7 +130191,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -130269,7 +130269,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -130494,7 +130494,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -130527,7 +130527,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -130877,7 +130877,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -130955,7 +130955,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -131179,7 +131179,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -131212,7 +131212,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -131562,7 +131562,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -131640,7 +131640,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -131866,7 +131866,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -131899,7 +131899,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -132249,7 +132249,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -132327,7 +132327,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -132553,7 +132553,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -132586,7 +132586,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -132936,7 +132936,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -133014,7 +133014,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -133240,7 +133240,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -133273,7 +133273,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -133623,7 +133623,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -133701,7 +133701,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -133927,7 +133927,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -133960,7 +133960,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -134310,7 +134310,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -134388,7 +134388,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -134612,7 +134612,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -134645,7 +134645,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -134995,7 +134995,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -135073,7 +135073,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -135297,7 +135297,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -135330,7 +135330,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -135680,7 +135680,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -135758,7 +135758,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -135981,7 +135981,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -136014,7 +136014,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -136364,7 +136364,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -136442,7 +136442,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -136665,7 +136665,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -136698,7 +136698,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -137048,7 +137048,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -137126,7 +137126,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -137349,7 +137349,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -137382,7 +137382,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -137731,7 +137731,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -137809,7 +137809,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -138032,7 +138032,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -138065,7 +138065,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -138412,7 +138412,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -138489,7 +138489,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -138712,7 +138712,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -138745,7 +138745,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -139092,7 +139092,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -139169,7 +139169,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -139392,7 +139392,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -139425,7 +139425,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint2 hash_37e511d10344e691;
     uint2 hash_37e510d10344e4de;
     uint5 pointsperprimarykill;
@@ -139771,7 +139771,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -139849,7 +139849,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -139959,7 +139959,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -139979,7 +139979,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -140143,7 +140143,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -140221,7 +140221,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint8 hash_613785a993624133;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -140331,7 +140331,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -140351,7 +140351,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -140514,7 +140514,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -140591,7 +140591,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -140700,7 +140700,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -140720,7 +140720,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -140882,7 +140882,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -140959,7 +140959,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -141068,7 +141068,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -141088,7 +141088,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -141250,7 +141250,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -141327,7 +141327,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -141436,7 +141436,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -141456,7 +141456,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -141618,7 +141618,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -141695,7 +141695,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -141804,7 +141804,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -141824,7 +141824,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -141986,7 +141986,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -142063,7 +142063,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -142172,7 +142172,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -142192,7 +142192,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -142354,7 +142354,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -142431,7 +142431,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -142540,7 +142540,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -142560,7 +142560,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -142722,7 +142722,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -142798,7 +142798,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -142906,7 +142906,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -142926,7 +142926,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -143085,7 +143085,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -143161,7 +143161,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -143269,7 +143269,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -143289,7 +143289,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -143448,7 +143448,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -143524,7 +143524,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -143632,7 +143632,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -143652,7 +143652,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -143811,7 +143811,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -143887,7 +143887,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -143995,7 +143995,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -144015,7 +144015,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -144174,7 +144174,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -144250,7 +144250,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -144358,7 +144358,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -144378,7 +144378,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -144537,7 +144537,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -144613,7 +144613,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -144721,7 +144721,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -144741,7 +144741,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -144899,7 +144899,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -144975,7 +144975,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -145083,7 +145083,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -145103,7 +145103,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -145260,7 +145260,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -145336,7 +145336,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -145444,7 +145444,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -145463,7 +145463,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -145621,7 +145621,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -145696,7 +145696,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -145805,7 +145805,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -145824,7 +145824,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -145980,7 +145980,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -146055,7 +146055,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -146164,7 +146164,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -146183,7 +146183,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -146339,7 +146339,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -146414,7 +146414,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -146519,7 +146519,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -146538,7 +146538,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -146694,7 +146694,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -146769,7 +146769,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -146874,7 +146874,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -146893,7 +146893,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -147049,7 +147049,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -147124,7 +147124,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -147228,7 +147228,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -147247,7 +147247,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -147403,7 +147403,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -147478,7 +147478,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -147582,7 +147582,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -147601,7 +147601,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -147757,7 +147757,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -147833,7 +147833,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -147934,7 +147934,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -147953,7 +147953,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -148108,7 +148108,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -148184,7 +148184,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -148284,7 +148284,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -148303,7 +148303,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -148457,7 +148457,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -148533,7 +148533,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -148632,7 +148632,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -148651,7 +148651,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -148802,7 +148802,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -148878,7 +148878,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -148975,7 +148975,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -148994,7 +148994,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -149144,7 +149144,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -149220,7 +149220,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -149317,7 +149317,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -149336,7 +149336,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -149486,7 +149486,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -149567,7 +149567,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -149664,7 +149664,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -149683,7 +149683,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -149832,7 +149832,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -149913,7 +149913,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -150010,7 +150010,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -150029,7 +150029,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -150178,7 +150178,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -150259,7 +150259,7 @@ struct gametypesettings {
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
     uint8 laststandrevivehealth;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -150356,7 +150356,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -150375,7 +150375,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -150522,7 +150522,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -150602,7 +150602,7 @@ struct gametypesettings {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -150691,7 +150691,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -150709,7 +150709,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -150853,7 +150853,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -150933,7 +150933,7 @@ struct gametypesettings {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint5 pointsperweaponkill;
     uint6 maxteamplayers;
@@ -151022,7 +151022,7 @@ struct gametypesettings {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -151040,7 +151040,7 @@ struct gametypesettings {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -151184,7 +151184,7 @@ struct gametypesettings {
     bit use_doors;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;

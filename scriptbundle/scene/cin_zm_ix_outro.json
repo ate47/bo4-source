@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh010_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot010",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh020_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot020"
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh030_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot030"
@@ -34,7 +34,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh040_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot040"
@@ -43,7 +43,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh050_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot050",
@@ -53,7 +53,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh060_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot060",
@@ -64,7 +64,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh070_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot070",
@@ -74,7 +74,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh080_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot080"
@@ -83,7 +83,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh100_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot100"
@@ -92,7 +92,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh110_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot110"
@@ -101,7 +101,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh120_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot120",
@@ -111,7 +111,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh135",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh135",
@@ -122,7 +122,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh138",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh138",
@@ -133,7 +133,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh140_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot140",
@@ -143,7 +143,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh145",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh145"
@@ -152,7 +152,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh150_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot150"
@@ -161,7 +161,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh160_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot160"
@@ -170,7 +170,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh165_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh165"
@@ -179,7 +179,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh168_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh168",
@@ -189,7 +189,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh170",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot170",
@@ -200,7 +200,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_ix_outro_sh180_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot180",
@@ -240,7 +240,7 @@
                     "entry": [
                         {
                             "anim": "#hash_26b6ae45ea0a5f00",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -281,7 +281,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1ebace6452ef7a79",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -342,7 +342,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2c2d230958a990fc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -362,7 +362,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4881f3219580b7fa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -390,7 +390,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3aae928cef1f1141",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -446,7 +446,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5a8244cf76c8bf91",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot060",
@@ -457,7 +457,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4675147d1585eed2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot070",
@@ -467,7 +467,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7560564e5089bf9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -477,7 +477,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2bc80a6e94a5c73e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -487,7 +487,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7bd7342e05d8dabd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot110"
@@ -520,7 +520,7 @@
                     "entry": [
                         {
                             "anim": "#hash_41f37843fb6a5224",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -578,7 +578,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4ab2dbae7f96db99",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -592,7 +592,7 @@
                     "entry": [
                         {
                             "anim": "#hash_107d9d6342182665",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -621,7 +621,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74253e94304e5f89",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -720,7 +720,7 @@
                     "entry": [
                         {
                             "anim": "#hash_278c4d6ca27e3b73",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh145"
@@ -732,7 +732,7 @@
                     "entry": [
                         {
                             "anim": "#hash_174ac685485b46a6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot160"
@@ -741,7 +741,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5bc292a293eef49d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -751,7 +751,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a18ec3fcda0dce",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -853,7 +853,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d08e4380091f56",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -871,7 +871,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30720ce21730319",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -881,7 +881,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13a9eac9d432e71c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot020"
@@ -890,7 +890,7 @@
                     "entry": [
                         {
                             "anim": "#hash_25f7f54e535c18cb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot030"
@@ -899,7 +899,7 @@
                     "entry": [
                         {
                             "anim": "#hash_89706697c2d7916",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot040"
@@ -908,7 +908,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e92c86164acdf8d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1011,7 +1011,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21e46b7259e32001",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot060",
@@ -1022,7 +1022,7 @@
                     "entry": [
                         {
                             "anim": "#hash_be3fafaed0ca15a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot070",
@@ -1032,7 +1032,7 @@
                     "entry": [
                         {
                             "anim": "#hash_28de49288638cdf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1048,7 +1048,7 @@
                     "entry": [
                         {
                             "anim": "#hash_70ebc7c4bc80af37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1070,7 +1070,7 @@
                     "entry": [
                         {
                             "anim": "#hash_733665d69065782a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1088,7 +1088,7 @@
                     "entry": [
                         {
                             "anim": "#hash_69af21d8c404e514",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1140,7 +1140,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21e4687259e31ae8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot060",
@@ -1151,7 +1151,7 @@
                     "entry": [
                         {
                             "anim": "#hash_be3f9faed0c9fa7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot070",
@@ -1161,7 +1161,7 @@
                     "entry": [
                         {
                             "anim": "#hash_28de59288638e92",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1171,7 +1171,7 @@
                     "entry": [
                         {
                             "anim": "#hash_273bc77220a2852b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1181,7 +1181,7 @@
                     "entry": [
                         {
                             "anim": "#hash_20f3dbec21870e3c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1191,7 +1191,7 @@
                     "entry": [
                         {
                             "anim": "#hash_70ebc6c4bc80ad84",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1213,7 +1213,7 @@
                     "entry": [
                         {
                             "anim": "#hash_733664d690657677",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1231,7 +1231,7 @@
                     "entry": [
                         {
                             "anim": "#hash_69af24d8c404ea2d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1288,7 +1288,7 @@
                     "entry": [
                         {
                             "anim": "#hash_be3f8faed0c9df4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1302,7 +1302,7 @@
                     "entry": [
                         {
                             "anim": "#hash_273bc67220a28378",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1395,7 +1395,7 @@
                     "entry": [
                         {
                             "anim": "#hash_be3f7faed0c9c41",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1436,7 +1436,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5eeede4027d49d2a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1496,7 +1496,7 @@
                     "entry": [
                         {
                             "anim": "#hash_be3f6faed0c9a8e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1537,7 +1537,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5eeedf4027d49edd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1597,7 +1597,7 @@
                     "entry": [
                         {
                             "anim": "#hash_be3f5faed0c98db",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1717,7 +1717,7 @@
                     "entry": [
                         {
                             "anim": "#hash_63e10f0b6e8d42a1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1731,7 +1731,7 @@
                     "entry": [
                         {
                             "anim": "#hash_59fd3cdfe590ae34",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1741,7 +1741,7 @@
                     "entry": [
                         {
                             "anim": "#hash_23f82fa131485643",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1764,7 +1764,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51b31678ad526149",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1857,7 +1857,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51b31378ad525c30",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -1949,7 +1949,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51b31478ad525de3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -2041,7 +2041,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51b31978ad526662",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -2133,7 +2133,7 @@
                     "entry": [
                         {
                             "anim": "#hash_23e5c5144623ffd8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -2225,7 +2225,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13bbc067bb0a1344",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -2317,7 +2317,7 @@
                     "entry": [
                         {
                             "anim": "#hash_62376ea3415ebc2d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -2409,7 +2409,7 @@
                     "entry": [
                         {
                             "anim": "#hash_424db13493c38716",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -2427,7 +2427,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d773557a343278",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -2437,7 +2437,7 @@
                     "entry": [
                         {
                             "anim": "#hash_9e524cf923004fd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot020"
@@ -2446,7 +2446,7 @@
                     "entry": [
                         {
                             "anim": "#hash_18d9a8af3891169a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot030"
@@ -2455,7 +2455,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7090e9164b4a454f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot040"
@@ -2538,7 +2538,7 @@
                     "entry": [
                         {
                             "anim": "#hash_458c68acb08b9367",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -2630,7 +2630,7 @@
                     "entry": [
                         {
                             "anim": "#hash_458c64acb08b8c9b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -2722,7 +2722,7 @@
                     "entry": [
                         {
                             "anim": "#hash_458c66acb08b9001",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -2814,7 +2814,7 @@
                     "entry": [
                         {
                             "anim": "#hash_458c67acb08b91b4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -2906,7 +2906,7 @@
                     "entry": [
                         {
                             "anim": "#hash_458c65acb08b8e4e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -2998,7 +2998,7 @@
                     "entry": [
                         {
                             "anim": "#hash_458c69acb08b951a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot010",
@@ -3097,7 +3097,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5c38717d989627f3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot030"
@@ -3192,7 +3192,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c8e5a6e63da54a2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot040"
@@ -3318,7 +3318,7 @@
                     "entry": [
                         {
                             "anim": "#hash_27bb081117b3cfa6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh138",
@@ -3333,7 +3333,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e079551c8abcdbe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh145"
@@ -3345,7 +3345,7 @@
                     "entry": [
                         {
                             "anim": "#hash_557004438df4c0cb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot160"
@@ -3354,7 +3354,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3548f9f61cb116a0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3373,7 +3373,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c82d454c56b3365",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3414,7 +3414,7 @@
                     "entry": [
                         {
                             "anim": "#hash_25176de525bc561f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot070",
@@ -3424,7 +3424,7 @@
                     "entry": [
                         {
                             "anim": "#hash_384e6b2ebbdca35a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot080"
@@ -3433,7 +3433,7 @@
                     "entry": [
                         {
                             "anim": "#hash_31fca1e4ed4ab17b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot100"
@@ -3442,7 +3442,7 @@
                     "entry": [
                         {
                             "anim": "#hash_217b52d7470b010c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot110"
@@ -3455,7 +3455,7 @@
                     "entry": [
                         {
                             "anim": "#hash_78164ab1180e9f2f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh135",
@@ -3491,7 +3491,7 @@
                     "entry": [
                         {
                             "anim": "#hash_319996b5d054af06",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot170",
@@ -3502,7 +3502,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53bbb6862fb87db3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot180",
@@ -3542,7 +3542,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2775e798fc42cb39",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3559,7 +3559,7 @@
                     "entry": [
                         {
                             "anim": "#hash_46a927f3cdc1ff78",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3594,7 +3594,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48c452bd93d12605",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3651,7 +3651,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3870c672c80f97b6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3685,7 +3685,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ed92c55f1ceb726",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3752,7 +3752,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6c900f8adbbc286f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3845,7 +3845,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52de2448fbffeef7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3912,7 +3912,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

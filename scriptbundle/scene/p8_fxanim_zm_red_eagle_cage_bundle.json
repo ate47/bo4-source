@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5e2eae294570af63",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_18759cf25362e442",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -32,7 +32,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5e2eae294570af63",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_18759cf25362e442",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_db56b14f3499122",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -67,7 +67,7 @@
                     "entry": [
                         {
                             "anim": "#hash_61ee02b790d04347",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -80,7 +80,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_eagle_cage_bundle",

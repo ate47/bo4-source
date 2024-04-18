@@ -46,7 +46,7 @@
             "statname": "#doublekill"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "activecamoinfo",
     "vmtype": "both",
     "name": "activecamoinfo_t8_gold_classic",

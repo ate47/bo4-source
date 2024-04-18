@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_6067ee4630b093db",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#flare_gun_veh_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 90,

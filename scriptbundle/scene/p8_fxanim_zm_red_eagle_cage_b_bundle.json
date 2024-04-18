@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f97b4af7cd2a322",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_32793eb4f96dcf98",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58ae74de265b3b77",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f97b4af7cd2a322",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -50,7 +50,7 @@
                     "entry": [
                         {
                             "anim": "#hash_32793eb4f96dcf98",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -59,7 +59,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58ae74de265b3b77",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -76,7 +76,7 @@
                     "entry": [
                         {
                             "anim": "#hash_ca2a7d5c1a6f467",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -85,7 +85,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1cda2d87ca942c45",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -94,7 +94,7 @@
                     "entry": [
                         {
                             "anim": "#hash_16f1da161c58c356",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -107,7 +107,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_eagle_cage_b_bundle",

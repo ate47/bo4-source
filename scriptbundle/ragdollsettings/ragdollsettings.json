@@ -1,6 +1,6 @@
 {
     "var_2d50617": "#pb_death_base_pose",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "ragdollsettings",
     "var_4790d8dd": "#ai_robot_base_stn_exposed_dth_pose",
     "var_91d279ad": "#ai_wrlrd_stn_combat_dth_pose",

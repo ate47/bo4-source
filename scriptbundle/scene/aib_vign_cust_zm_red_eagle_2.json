@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_393fd701fef71da3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f0deef4f6ff68c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fly_to_hover"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1ac4706d8813f389",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "hover_idle"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4599527a7f013b9b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "hover_attack"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1d9a6c73ed9407a3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "hover_exit"
@@ -55,7 +55,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_eagle_2",

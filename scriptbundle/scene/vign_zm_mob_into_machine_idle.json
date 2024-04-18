@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6890c69d4778d7d7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,7 +19,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "vign_zm_mob_into_machine_idle",

@@ -1140,16 +1140,16 @@ function function_610d3790(einflictor, victim, idamage, weapon) {
             var_7901de48 = (flag.radius + 350) * (flag.radius + 350);
             dist = distance2dsquared(einflictor.origin, flag.origin);
             if (dist < var_7901de48) {
-                var_19041061 = 1;
+                awardscore = 1;
             } else {
                 continue;
             }
         } else {
-            var_19041061 = 1;
+            awardscore = 1;
         }
         victim thread globallogic_score::function_7d830bc(einflictor, attacker, weapon, flag, flag.radius, flag.useobj.ownerteam, flag.useobj);
     }
-    if (!(isdefined(var_19041061) && var_19041061)) {
+    if (!(isdefined(awardscore) && awardscore)) {
         return;
     }
     if (isdefined(attacker) && isplayer(attacker)) {
@@ -1819,9 +1819,9 @@ function function_1609a882(var_c1e98979) {
             var_9669dd4c = var_9669dd4c + domflag.var_249009fd[var_be3d50b0];
         }
         if (domflag.var_249009fd.size != 0) {
-            var_3458097 = var_9669dd4c / domflag.var_249009fd.size;
+            averagetime = var_9669dd4c / domflag.var_249009fd.size;
         }
-        var_93746b40 = {#gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #var_afd986ce:isdefined(var_3458097) ? var_3458097 : 0, #var_a248f0a8:domflag.var_a248f0a8};
+        var_93746b40 = {#gametime:function_f8d53445(), #round:game.roundsplayed, #label:domflag gameobjects::get_label(), #firstcapture:domflag.firstcapture, #var_afd986ce:isdefined(averagetime) ? averagetime : 0, #var_a248f0a8:domflag.var_a248f0a8};
         function_92d1707f(#"hash_4b747d11b8ad1b23", var_93746b40);
     }
 }

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_7cf9f4e2680e1323",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -4,
     "var_3e688854": -2,
     "worldfx": "#hash_10138d6ad6687c27",
@@ -19,7 +19,7 @@
     "rarity": "Common",
     "var_47f145b4": 1,
     "attachslotbarrel": 1,
-    "var_456aa154": "shotgun_semiauto_t8_item",
+    "actionregisterweapon": "shotgun_semiauto_t8_item",
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "pickupicon": "#ui_icon_weapon_hud_shotgun_semiauto",

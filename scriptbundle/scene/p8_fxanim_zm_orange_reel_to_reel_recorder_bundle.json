@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_42b67c357eedaa78",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4cbf7864e2bc349c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -27,7 +27,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_orange_reel_to_reel_recorder_bundle",

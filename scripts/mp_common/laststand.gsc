@@ -48,7 +48,7 @@ function __init__() {
     level.var_97c6ee7c = &playerlaststand;
     level.var_b1ad0b64 = &function_b1ad0b64;
     level.skiplaststand = getgametypesetting(#"skiplaststand");
-    level.var_25364e47 = getgametypesetting(#"hash_83f11b8abac148f");
+    level.laststandlives = getgametypesetting(#"hash_83f11b8abac148f");
     level.var_5c13c13f = getgametypesetting(#"hash_4c7c8c4bd1b2a58b");
     level.var_57e7d5a = getgametypesetting(#"hash_67d54bbc52811921");
     level.var_b5087de4 = getgametypesetting(#"hash_3e13b420d6773b4c");
@@ -405,7 +405,7 @@ function playerlaststand(einflictor, attacker, idamage, smeansofdeath, weapon, v
     if (self isplayerswimming() || isdefined(self.enteredvehicle) && self.enteredvehicle) {
         var_2066d96d = 1;
     }
-    if (level.var_25364e47 && self.laststandcount > level.var_25364e47) {
+    if (level.laststandlives && self.laststandcount > level.laststandlives) {
         var_2066d96d = 1;
     }
     if (isdefined(self.last_valid_position) && self.last_valid_position[2] - self.origin[2] > 200) {

@@ -1546,8 +1546,8 @@ function specialistmedalachievement() {
 // Size: 0x246
 function specialiststatabilityusage(usagesinglegame, multitrackperlife) {
     self endon(#"disconnect");
-    self notify(#"hash_f92aeaeaf35ba82");
-    self endon(#"hash_f92aeaeaf35ba82");
+    self notify(#"updatethread specialiststatabilityusage");
+    self endon(#"updatethread specialiststatabilityusage");
     isroulette = self.isroulette === 1;
     if (isdefined(self.heroability) && !isroulette) {
         self function_be7a08a8(self.heroability, 1);

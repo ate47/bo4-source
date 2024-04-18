@@ -167,7 +167,7 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
 function function_72ba0df6(einflictor, attacker, idamage, smeansofdeath, weapon, vdir, shitloc, psoffsettime, deathanimduration) {
     if (self.team == #"allies") {
         if (!isbot(self) && isdefined(level.e_dog) && isalive(level.e_dog) && level.var_ad7c0539 >= 5) {
-            level.e_dog function_747a6ed6();
+            level.e_dog abort_dog();
         }
         if (isdefined(level.var_ad7c0539)) {
             switch (level.var_ad7c0539) {
@@ -712,7 +712,7 @@ function function_2e9a1486() {
     wait(0.1);
     ct_utils::function_d00e0eeb();
     if (isalive(level.e_dog)) {
-        level.e_dog function_747a6ed6();
+        level.e_dog abort_dog();
     }
     level.var_e72728b8 = array(#"ability_dog", #"eq_tripwire");
     ct_utils::function_9aca2fa0("ct_action");
@@ -1603,7 +1603,7 @@ function function_f9d20586(v_origin, n_radius) {
 // Params 0, eflags: 0x0
 // Checksum 0xbce38fc3, Offset: 0x7f88
 // Size: 0x26
-function function_747a6ed6() {
+function abort_dog() {
     level.e_dog delete();
     level.e_dog = undefined;
 }

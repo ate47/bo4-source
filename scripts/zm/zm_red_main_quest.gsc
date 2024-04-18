@@ -60,7 +60,7 @@ function init() {
     init_split();
     function_3ffc2c9e();
     init_light();
-    function_fd38f0c2();
+    init_play();
     init_blood();
     init_cleanse();
     init_steps();
@@ -3617,7 +3617,7 @@ function function_59ef31c5() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x2f40efbf, Offset: 0x115b8
 // Size: 0x454
-function function_fd38f0c2() {
+function init_play() {
     s_play = spawnstruct();
     level.var_28dcf408 = s_play;
     var_38e73d19[#"death"] = "" + #"hash_4aeb7fcdd8302eaa";

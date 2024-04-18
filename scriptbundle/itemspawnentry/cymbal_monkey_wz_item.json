@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_235c7fa5f5e676c2",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#cymbal_monkey_wz",
     "type": "itemspawnentry",
     "name": "cymbal_monkey_wz_item",

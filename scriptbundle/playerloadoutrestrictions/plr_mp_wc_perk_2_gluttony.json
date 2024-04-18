@@ -1,5 +1,5 @@
 {
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "playerloadoutrestrictions",
     "name": "plr_mp_wc_perk_2_gluttony",
     "var_9bb0ceab": "#bonuscard_perk_2_gluttony",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ec9289e25612bbd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ec9259e256126a4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_57e1deced266e0eb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -53,7 +53,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_pap_ghosts_remove",

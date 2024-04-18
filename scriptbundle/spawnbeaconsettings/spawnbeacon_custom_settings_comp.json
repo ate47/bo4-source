@@ -24,7 +24,7 @@
     "var_a0db3d4d": "mpl_spawn_beacon_loop_npc",
     "var_c2aa4ca6": "#hash_37605398dce96965",
     "var_4f37dfe9": "spawnbeacondeployedenemy",
-    "var_ac922159": 60,
+    "rechargetime": 60,
     "var_40d2181e": "#hash_16c1e258e6127807",
     "var_7609eee": "spawnbeacon",
     "ksrocketstokill": 1,

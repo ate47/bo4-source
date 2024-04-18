@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_468680bcf9dd0054",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2366d9a5845bdd4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "melt"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_853590a95aff05",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "freeze"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_pap_ice_bundle",

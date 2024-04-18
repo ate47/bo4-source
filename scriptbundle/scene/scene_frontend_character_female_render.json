@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_fullbody_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "fullbody"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_head_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "head"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_headgear_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "headgear"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_torso_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "torso"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_warpaint_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "warpaint"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_arms_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "arms"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_char_customization_legs_render",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "legs"
@@ -76,7 +76,7 @@
                     "entry": [
                         {
                             "anim": "#pb_texture_pose_female",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fullbody"
@@ -85,7 +85,7 @@
                     "entry": [
                         {
                             "anim": "#pb_texture_pose_female",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "head"
@@ -94,7 +94,7 @@
                     "entry": [
                         {
                             "anim": "#pb_texture_pose_female",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "headgear"
@@ -103,7 +103,7 @@
                     "entry": [
                         {
                             "anim": "#pb_texture_pose_female",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "torso"
@@ -112,7 +112,7 @@
                     "entry": [
                         {
                             "anim": "#pb_texture_pose_female",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "warpaint"
@@ -121,7 +121,7 @@
                     "entry": [
                         {
                             "anim": "#hash_510c2d072762f78a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "arms"
@@ -130,7 +130,7 @@
                     "entry": [
                         {
                             "anim": "#pb_texture_pose_female",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "legs"
@@ -142,7 +142,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

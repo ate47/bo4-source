@@ -11,7 +11,7 @@
             "effecttype": "concussion"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "weapondamageeffectype",
     "name": "damageeffecttype_concussion",
     "var_c672f15f": 2

@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1d1730f5440fbf62",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2c107f5bb910588",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47584fbf1db850cb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -31,7 +31,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_hook_trap_zombie",

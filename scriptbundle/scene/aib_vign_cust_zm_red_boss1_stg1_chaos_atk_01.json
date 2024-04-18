@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_27dceec02c1fc6ab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_11334e9d34893f3a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -38,7 +38,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d02d1ed9c746c70",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -50,7 +50,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg1_chaos_atk_01",

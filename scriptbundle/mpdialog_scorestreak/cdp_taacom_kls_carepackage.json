@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_36cb59b8d58a6e8",
     "ready": "#hash_6aba05afc6217ee0",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_carepackage",

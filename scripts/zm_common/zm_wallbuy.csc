@@ -280,14 +280,14 @@ function function_51f5fb94(localclientnum, oldval, newval, bnewent, binitialsnap
             stopfx(localclientnum, self.var_e51fbce7);
             self.var_e51fbce7 = undefined;
         }
-        if (!isdefined(self.var_907b36d0)) {
-            self.var_907b36d0 = util::playfxontag(localclientnum, level._effect[#"wallbuy_ambient_fx"], self, "tag_fx_wall_buy");
+        if (!isdefined(self.ambient_fx_id)) {
+            self.ambient_fx_id = util::playfxontag(localclientnum, level._effect[#"wallbuy_ambient_fx"], self, "tag_fx_wall_buy");
         }
         return;
     }
-    if (isdefined(self.var_907b36d0)) {
-        stopfx(localclientnum, self.var_907b36d0);
-        self.var_907b36d0 = undefined;
+    if (isdefined(self.ambient_fx_id)) {
+        stopfx(localclientnum, self.ambient_fx_id);
+        self.ambient_fx_id = undefined;
     }
     if (!isdefined(self.var_e51fbce7)) {
         self.var_e51fbce7 = util::playfxontag(localclientnum, level._effect[#"hash_6928ec90dff78e0c"], self, "tag_fx_wall_buy");

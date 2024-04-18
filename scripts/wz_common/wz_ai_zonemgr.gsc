@@ -1533,7 +1533,7 @@ function function_250e9641(ai_zone, category) {
 // Params 2, eflags: 0x0
 // Checksum 0x58146c67, Offset: 0x6bc8
 // Size: 0x214
-function function_678fdc65(category, var_c8e3e6bc) {
+function function_678fdc65(category, last_zone) {
     level endon(#"game_ended", #"hash_12a8f2c59a67e4fc", #"hash_329c3f546e49cb9f");
     possible_zones = [];
     foreach (ai_zone in level.var_5b357434) {
@@ -1545,7 +1545,7 @@ function function_678fdc65(category, var_c8e3e6bc) {
                 }
             }
             if (!islocked && function_250e9641(ai_zone, category)) {
-                if (!isdefined(var_c8e3e6bc) || ai_zone != var_c8e3e6bc) {
+                if (!isdefined(last_zone) || ai_zone != last_zone) {
                     possible_zones[possible_zones.size] = ai_zone;
                 }
             }
@@ -1752,14 +1752,14 @@ function function_41101f23(zone, var_d42412dc) {
 // Size: 0xf6
 function function_1c8ea11(category) {
     level endon(#"game_ended", #"hash_12a8f2c59a67e4fc", #"hash_329c3f546e49cb9f", #"hash_4168bee802274065");
-    var_c8e3e6bc = undefined;
+    last_zone = undefined;
     while (isdefined(level.var_e147d7b8) && level.var_e147d7b8) {
-        zone = function_678fdc65(category, var_c8e3e6bc);
+        zone = function_678fdc65(category, last_zone);
         if (!isdefined(zone)) {
             break;
         }
         zone.lock_zone = 1;
-        var_c8e3e6bc = zone;
+        last_zone = zone;
         wait(2);
         function_41101f23(zone, 0);
         waitframe(1);

@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_9baf9ad2f9d90ab",
     "ready": "#hash_38b0b57e567b8f17",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_swat_team",

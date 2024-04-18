@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_38663b3b52a691fc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -21,7 +21,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1e46b68775a1f81a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -37,7 +37,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ad2943ba5c4d470",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -49,7 +49,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "battery_end_game_scene",

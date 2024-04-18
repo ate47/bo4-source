@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_whi_ceiling_fan_trap_idle_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_61b3a69ecafeb97d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "intro"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_whi_ceiling_fan_trap_loop_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "loop"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_8a786cfac538612",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "outro"
@@ -45,7 +45,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_whi_ceiling_fan_trap_bundle",

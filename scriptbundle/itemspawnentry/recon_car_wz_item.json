@@ -1,6 +1,6 @@
 {
     "amount": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#veh_t8_drone_recon_wz",
     "weapon": "weapon#hash_3c9c275a76da54d3",
     "type": "itemspawnentry",

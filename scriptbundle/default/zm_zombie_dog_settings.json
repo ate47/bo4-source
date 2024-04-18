@@ -1,7 +1,7 @@
 {
     "var_10460f1e": 1,
     "scoreevent": "#kill_dog",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "maxhealth": 100,
     "var_fc420d71": 1,
     "name": "zm_zombie_dog_settings",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d408b3ff573446d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58d0c31627ae5fbc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -38,7 +38,7 @@
                     "entry": [
                         {
                             "anim": "#hash_38b7ca2fee384aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -50,7 +50,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg1_meteor_strike_01",

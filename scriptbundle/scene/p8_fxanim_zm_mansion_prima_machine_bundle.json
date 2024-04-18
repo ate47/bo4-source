@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_mansion_prima_machine_idle_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_71b9a1e4979cee19",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_mansion_prima_machine_start_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c380a8b2d15f17d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "finish"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c49cb51212581c5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "close"
@@ -59,7 +59,7 @@
                     "entry": [
                         {
                             "anim": "#hash_39aa95f613dc2f43",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -68,7 +68,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2dcfaee5af6612d0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -77,7 +77,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3963518cfe95563b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -86,7 +86,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7e75f2f6bd2fd76c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "finish"
@@ -95,7 +95,7 @@
                     "entry": [
                         {
                             "anim": "#hash_283cb033c96dcd10",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "close"
@@ -107,7 +107,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_mansion_prima_machine_bundle",

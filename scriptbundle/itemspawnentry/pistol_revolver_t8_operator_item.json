@@ -21,7 +21,7 @@
     ],
     "amount": 1,
     "description": "#hash_6ffea799c6e28841",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -4,
     "var_3e688854": -1,
     "weapon": "weapon#pistol_revolver_t8_operator_wz",

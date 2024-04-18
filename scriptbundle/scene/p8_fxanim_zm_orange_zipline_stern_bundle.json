@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_42db4cd86f11b9a6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd373a50e1246b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_0"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd363a50e122b8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_1"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd393a50e127d1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_2"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd383a50e1261e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_3"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd3b3a50e12b37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_4"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd3a3a50e12984",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_5"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd3d3a50e12e9d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_6"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd3c3a50e12cea",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_7"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd2f3a50e116d3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_8"
@@ -96,7 +96,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ffd2e3a50e11520",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_9"
@@ -108,7 +108,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_orange_zipline_stern_bundle",

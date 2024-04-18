@@ -1,6 +1,6 @@
 {
     "mod": "MOD_MELEE_ASSASSINATE",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_melee_assassinate",
     "displayname": "#hash_7de533f7739da407",

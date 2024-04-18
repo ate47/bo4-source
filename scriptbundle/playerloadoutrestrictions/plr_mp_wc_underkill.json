@@ -1,6 +1,6 @@
 {
     "var_ab1984e9": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "numprimaryweapons": -1,
     "type": "playerloadoutrestrictions",
     "name": "plr_mp_wc_underkill",

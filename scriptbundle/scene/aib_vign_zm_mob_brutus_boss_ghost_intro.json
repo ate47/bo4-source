@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ff97ee1d694355b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "anim": "#hash_59918aa7b3ee8b19",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -44,7 +44,7 @@
                     "entry": [
                         {
                             "anim": "#hash_599187a7b3ee8600",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -63,7 +63,7 @@
                     "entry": [
                         {
                             "anim": "#hash_599188a7b3ee87b3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -82,7 +82,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5263579e0a9c424b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -96,7 +96,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_brutus_boss_ghost_intro",

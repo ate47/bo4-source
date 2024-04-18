@@ -9,7 +9,7 @@
     "var_10460f1e": 1,
     "var_e61d73b0": 180,
     "scoreevent": "#kill_nosferatu",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "maxhealth": 50000,
     "chargemeleedist": 250,
     "var_e3ee7606": 1,

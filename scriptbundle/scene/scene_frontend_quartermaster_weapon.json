@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_cam_blackmarket_weapon",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "edit",
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3689442490c2e5dd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "edit"
@@ -38,7 +38,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

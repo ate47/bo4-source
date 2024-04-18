@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f2636b48c3d20c5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -21,7 +21,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_zod_catalyst_plasma_spawn_pre_split",

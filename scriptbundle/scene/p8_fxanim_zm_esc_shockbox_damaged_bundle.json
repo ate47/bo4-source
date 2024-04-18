@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2031d25087850050",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,7 +19,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_shockbox_damaged_bundle",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21abe3893efc61f4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "anim": "#hash_566262c930731698",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "atk_end"
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7bd9db25c7e93ede",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_start"
@@ -34,7 +34,7 @@
                     "entry": [
                         {
                             "anim": "#hash_67217698a66fc858",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_end"
@@ -52,7 +52,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5df5779a2f7866af",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -61,7 +61,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5755bf0d7df7b563",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "atk_end"
@@ -70,7 +70,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cf714e7c2dcabe9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_start"
@@ -79,7 +79,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74d1eb159e91f263",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_end"
@@ -95,7 +95,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75de30131db0404f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -104,7 +104,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c603d78c185803b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "atk_end"
@@ -113,7 +113,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3a110b859dc82d09",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_start"
@@ -122,7 +122,7 @@
                     "entry": [
                         {
                             "anim": "#hash_503d9f43cf21cf3b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail_end"
@@ -134,7 +134,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg3_chrg_atk_01",

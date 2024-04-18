@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_61b571b983c44bc4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c83396f25f00d15",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_786cacc3bad855ba",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 5,
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_32dddbd5ab09a16e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d61c42e96be36bf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6240218ef2fe258",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 5,
@@ -74,7 +74,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_mp_cosmo_rocket_cradle_bundle",

@@ -16,7 +16,7 @@
             "health": 1
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#c_t8_zmb_dlc0_zombie_marauder_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gladiator_mar_weakpoint_def",

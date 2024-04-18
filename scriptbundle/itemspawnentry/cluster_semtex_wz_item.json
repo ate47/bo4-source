@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_274dde55e72757fc",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#hash_6696d36c3e11b19e",
     "type": "itemspawnentry",
     "name": "cluster_semtex_wz_item",

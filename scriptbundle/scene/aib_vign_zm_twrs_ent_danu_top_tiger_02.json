@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_ce4acf2417168ef",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -25,7 +25,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_twrs_ent_danu_top_tiger_02",

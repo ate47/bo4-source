@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh005_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh005"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh010_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh010"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh020_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh020"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh030_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh030"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh040_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh040"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh050_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh050"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh060_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh060"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh070_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh070"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh080_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh080"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh090_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh090"
@@ -96,7 +96,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh100_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh100"
@@ -105,7 +105,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh120_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh120"
@@ -114,7 +114,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh130_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh130"
@@ -123,7 +123,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh140_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh140"
@@ -132,7 +132,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh150_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh150"
@@ -141,7 +141,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh160_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh160"
@@ -150,7 +150,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh170_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh170"
@@ -159,7 +159,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh175_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh175"
@@ -168,7 +168,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh180_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh180"
@@ -177,7 +177,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh190_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh190"
@@ -186,7 +186,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh200_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh200"
@@ -195,7 +195,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh210_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh210",
@@ -205,7 +205,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh220_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh220"
@@ -214,7 +214,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh230_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh230",
@@ -224,7 +224,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh240_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh240"
@@ -233,7 +233,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh250_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh250",
@@ -243,7 +243,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh260_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh260"
@@ -252,7 +252,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh270_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh270"
@@ -261,7 +261,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh280_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh280",
@@ -271,7 +271,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh290_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh290",
@@ -281,7 +281,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh300_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh300"
@@ -290,7 +290,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh310_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh310"
@@ -299,7 +299,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh320_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh320"
@@ -308,7 +308,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh330_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh330"
@@ -317,7 +317,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh340_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh340"
@@ -333,7 +333,7 @@
                     "entry": [
                         {
                             "anim": "#hash_157019e1ec5186a3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -343,7 +343,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7a78ff837e1c2655",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -356,7 +356,7 @@
                     "entry": [
                         {
                             "anim": "#hash_181b6bb5f4b1856f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -370,7 +370,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1b671c3243b06519",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -380,7 +380,7 @@
                     "entry": [
                         {
                             "anim": "#hash_10e77568e30fa2bc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -393,7 +393,7 @@
                     "entry": [
                         {
                             "anim": "#hash_56dc561a29c0b6de",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -403,7 +403,7 @@
                     "entry": [
                         {
                             "anim": "#hash_559f76d393a8545d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh090"
@@ -412,7 +412,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d6ed2bfd13602bf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh100"
@@ -421,7 +421,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f45e80f82b9bd65",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh120"
@@ -430,7 +430,7 @@
                     "entry": [
                         {
                             "anim": "#hash_39e1aa856e47d0c6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh130"
@@ -439,7 +439,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca038ff4276b63",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh140"
@@ -448,7 +448,7 @@
                     "entry": [
                         {
                             "anim": "#hash_24f14127c74ebf4c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh150"
@@ -457,7 +457,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35f30ced8e3552a9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh160"
@@ -466,7 +466,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6f4f30d56419d86a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -479,7 +479,7 @@
                     "entry": [
                         {
                             "anim": "#hash_20f5e20203923d67",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -489,7 +489,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3a05c6d7fe321ec0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh190"
@@ -498,7 +498,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51a2bcb3dbb5ef20",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -512,7 +512,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6838d432c6d617ce",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -527,7 +527,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35f1891990ccf5f4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -542,7 +542,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4488c2e1bdf00152",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -564,7 +564,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3cf215973882aac9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -574,7 +574,7 @@
                     "entry": [
                         {
                             "anim": "#hash_496dfe1b5a9b5d0a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh310"
@@ -583,7 +583,7 @@
                     "entry": [
                         {
                             "anim": "#hash_62bd12fcfe25d183",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -607,7 +607,7 @@
                     "entry": [
                         {
                             "anim": "#hash_441f59cbda5c9473",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -617,7 +617,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6e9a335a404e2d7d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -630,7 +630,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1a09be510c452c07",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -644,7 +644,7 @@
                     "entry": [
                         {
                             "anim": "#hash_491f6d55a039a419",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -654,7 +654,7 @@
                     "entry": [
                         {
                             "anim": "#hash_740d97491389c7fe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -667,7 +667,7 @@
                     "entry": [
                         {
                             "anim": "#hash_557d8ca26d7f8740",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -684,7 +684,7 @@
                     "entry": [
                         {
                             "anim": "#hash_17d7ef94f2096bed",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -701,7 +701,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1a796907b14b092e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -711,7 +711,7 @@
                     "entry": [
                         {
                             "anim": "#hash_412af4f76eb9f949",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -724,7 +724,7 @@
                     "entry": [
                         {
                             "anim": "#hash_681bb8f494e5a997",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -734,7 +734,7 @@
                     "entry": [
                         {
                             "anim": "#hash_426b90f44e9acadf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -750,7 +750,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bba2eabd3d8793f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -765,7 +765,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60c99afbafa9875",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -780,7 +780,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4d714379d594e93b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -798,7 +798,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b129d5c419476c2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -809,7 +809,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43513a76af654557",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -941,7 +941,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f86fcd914fe4332",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -978,7 +978,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e65b124b994d687",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -996,7 +996,7 @@
                     "entry": [
                         {
                             "anim": "#hash_16c43a6cc144b8e4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1018,7 +1018,7 @@
                     "entry": [
                         {
                             "anim": "#hash_56ea6f1eba48437",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1028,7 +1028,7 @@
                     "entry": [
                         {
                             "anim": "#hash_10bf9f26b28b6f7d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1041,7 +1041,7 @@
                     "entry": [
                         {
                             "anim": "#hash_33589d5c69085293",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1051,7 +1051,7 @@
                     "entry": [
                         {
                             "anim": "#hash_65f5a196281c3c94",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1064,7 +1064,7 @@
                     "entry": [
                         {
                             "anim": "#hash_34578d22a4a65c92",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1078,7 +1078,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3fcf0100dbd51b0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1088,7 +1088,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5122a46b5c52c2a0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh190"
@@ -1097,7 +1097,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52ca5a11f34df00",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1125,7 +1125,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d07627b6909e66a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1135,7 +1135,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e6b1a8b70fdbfb1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1153,7 +1153,7 @@
                     "entry": [
                         {
                             "anim": "#hash_317414c336a9dad9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1287,7 +1287,7 @@
                     "entry": [
                         {
                             "anim": "#hash_274795b7050af36c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1297,7 +1297,7 @@
                     "entry": [
                         {
                             "anim": "#hash_190270555563a405",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1415,7 +1415,7 @@
                     "entry": [
                         {
                             "anim": "#hash_537dfcd37f534eb3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1425,7 +1425,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2b439537c32c9bb4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1435,7 +1435,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f886eb1a74d811d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1519,7 +1519,7 @@
                     "entry": [
                         {
                             "anim": "#hash_77ec5049aeeeae1e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1534,7 +1534,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7466cf8bf6028dcc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1585,7 +1585,7 @@
                     "entry": [
                         {
                             "anim": "#hash_737af4fc27f89452",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1602,7 +1602,7 @@
                     "entry": [
                         {
                             "anim": "#hash_98e7a862ddfdde",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1616,7 +1616,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6c47e711ff458298",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1626,7 +1626,7 @@
                     "entry": [
                         {
                             "anim": "#hash_79e6efc3d2193feb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1639,7 +1639,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2512fffe85010185",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1656,7 +1656,7 @@
                     "entry": [
                         {
                             "anim": "#hash_78c793887e93bfd4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1670,7 +1670,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3413024d8f7f6912",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1684,7 +1684,7 @@
                     "entry": [
                         {
                             "anim": "#hash_475621f4bcb0c468",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1701,7 +1701,7 @@
                     "entry": [
                         {
                             "anim": "#hash_54608463f4b34086",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1718,7 +1718,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3196b6e6aa1534e6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1733,7 +1733,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4938723d17e0d5ac",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1748,7 +1748,7 @@
                     "entry": [
                         {
                             "anim": "#hash_18ec33ec5e46ee6a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1766,7 +1766,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60ca2bfd072e5b17",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1777,7 +1777,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4980744fcf48c9ce",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1810,7 +1810,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60e05c0fad75ab3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1827,7 +1827,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3becbae58587cb8f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1850,7 +1850,7 @@
                     "entry": [
                         {
                             "anim": "#hash_370cc02474a59dec",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1867,7 +1867,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ff1632e8fed1e4d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1884,7 +1884,7 @@
                     "entry": [
                         {
                             "anim": "#hash_371c9c29ea2a2a6a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1894,7 +1894,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c168fcc7cb3381",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1910,7 +1910,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6635ccfc0856eae7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1927,7 +1927,7 @@
                     "entry": [
                         {
                             "anim": "#hash_38fe6ab875919147",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1942,7 +1942,7 @@
                     "entry": [
                         {
                             "anim": "#hash_71eaedd12fae64f5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1957,7 +1957,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36b0cff1e25ac77b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1975,7 +1975,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5d80194106306496",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1986,7 +1986,7 @@
                     "entry": [
                         {
                             "anim": "#hash_552a4da98e7bfb9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2028,7 +2028,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4fe606b3be567d8a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2038,7 +2038,7 @@
                     "entry": [
                         {
                             "anim": "#hash_70c2508b713cc8e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2051,7 +2051,7 @@
                     "entry": [
                         {
                             "anim": "#hash_617aa6c4310c41f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2061,7 +2061,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6e3f67d8e78e1736",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2074,7 +2074,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7d66d803c16cdbd8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2084,7 +2084,7 @@
                     "entry": [
                         {
                             "anim": "#hash_546d30d445b0fa9a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2097,7 +2097,7 @@
                     "entry": [
                         {
                             "anim": "#hash_773efa7ace929dc9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2111,7 +2111,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2cce8bd542bed62f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2125,7 +2125,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3fe4351d936cd6f5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2139,7 +2139,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1afc62e47a4eac42",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2153,7 +2153,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f7051e099a5405b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2168,7 +2168,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21915467096e43f1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2183,7 +2183,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d483270fad8e9d7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2198,7 +2198,7 @@
                     "entry": [
                         {
                             "anim": "#hash_69de2a7474bb799d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2208,7 +2208,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bb326f37affcc84",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2226,7 +2226,7 @@
                     "entry": [
                         {
                             "anim": "#hash_390000c2d5c0dbfc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2236,7 +2236,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35bea73a88aec315",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2252,7 +2252,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5532001dae9940c0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2273,7 +2273,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ccc605d8d62ccb6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2287,7 +2287,7 @@
                     "entry": [
                         {
                             "anim": "#hash_710ce8708cb344ec",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2310,7 +2310,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1617c41cd4c466ab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2320,7 +2320,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3a0880705e066d1e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh090"
@@ -2329,7 +2329,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1afb9fed79f341bc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2342,7 +2342,7 @@
                     "entry": [
                         {
                             "anim": "#hash_28155a67e6984ed3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2364,7 +2364,7 @@
                     "entry": [
                         {
                             "anim": "#hash_686856c4496ad9b7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2378,7 +2378,7 @@
                     "entry": [
                         {
                             "anim": "#hash_68cf13173dc85e44",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2388,7 +2388,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a7684067f422749",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh190"
@@ -2397,7 +2397,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3baf0b65fe7beb29",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2411,7 +2411,7 @@
                     "entry": [
                         {
                             "anim": "#hash_62ba33fc7e01459b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2426,7 +2426,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30c1d7c3e99f6c2d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2441,7 +2441,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e716b0b0f56bf3f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2466,7 +2466,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3a9b0d404c32fdd7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2544,7 +2544,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13b1724ad253ccf1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2564,7 +2564,7 @@
                     "entry": [
                         {
                             "anim": "#hash_176f338e78f62e39",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2579,7 +2579,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4d6a95430c755b3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2594,7 +2594,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f85252c4a31d6a5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2612,7 +2612,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4efd96eb2417d06c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2623,7 +2623,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2b5f26bfc3b370b1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2719,7 +2719,7 @@
                     "entry": [
                         {
                             "anim": "#hash_64523b00075df820",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2734,7 +2734,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f2f614b3cf55bc2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2749,7 +2749,7 @@
                     "entry": [
                         {
                             "anim": "#hash_57379845c18f6a34",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2767,7 +2767,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1ed338d985d37961",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2778,7 +2778,7 @@
                     "entry": [
                         {
                             "anim": "#hash_70e188a556bc0188",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2888,7 +2888,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3a9a10f725e3d319",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2910,7 +2910,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4aefae478ac63aa5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3021,7 +3021,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21527d49a7c2f74c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3043,7 +3043,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5a485d6958cfd1e0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3168,7 +3168,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4aefab478ac6358c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3211,7 +3211,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3c61ab0d78eb567f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3228,7 +3228,7 @@
                     "entry": [
                         {
                             "anim": "#hash_66a30c2ff41112ba",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3245,7 +3245,7 @@
                     "entry": [
                         {
                             "anim": "#hash_625565ea314c9750",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3255,7 +3255,7 @@
                     "entry": [
                         {
                             "anim": "#hash_433add5c4cef1cf2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3268,7 +3268,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2edbd92c43030ffc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3282,7 +3282,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4285dbd2c8ed822a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3296,7 +3296,7 @@
                     "entry": [
                         {
                             "anim": "#hash_195f7594e10830df",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3310,7 +3310,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13fb4aabf5e33e4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3324,7 +3324,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ff32e78f38295cd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3339,7 +3339,7 @@
                     "entry": [
                         {
                             "anim": "#hash_fd9dfd3d08b4c03",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3361,7 +3361,7 @@
                     "entry": [
                         {
                             "anim": "#hash_67437814b34181db",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3386,7 +3386,7 @@
                     "entry": [
                         {
                             "anim": "#hash_26d1f87337bd7ab3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3403,7 +3403,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4631141a4a8d05a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3430,7 +3430,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3c83bf0d79085ee1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3447,7 +3447,7 @@
                     "entry": [
                         {
                             "anim": "#hash_66a9f82ff4170f6c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3467,7 +3467,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36e8d83234fce031",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3481,7 +3481,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f41ed2c4359e52a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3495,7 +3495,7 @@
                     "entry": [
                         {
                             "anim": "#hash_421fc7d2c896acfc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3515,7 +3515,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13fb7aabf5e38fd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3550,7 +3550,7 @@
                     "entry": [
                         {
                             "anim": "#hash_67437914b341838e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3575,7 +3575,7 @@
                     "entry": [
                         {
                             "anim": "#hash_26d1f97337bd7c66",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3592,7 +3592,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4631041a4a8cea7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3716,7 +3716,7 @@
                     "entry": [
                         {
                             "anim": "#hash_26d1fa7337bd7e19",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3733,7 +3733,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4630f41a4a8ccf4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3833,7 +3833,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35cd8d568914d662",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3865,7 +3865,7 @@
                     "entry": [
                         {
                             "anim": "#hash_26d1fb7337bd7fcc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3882,7 +3882,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4630e41a4a8cb41",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3909,7 +3909,7 @@
                     "entry": [
                         {
                             "anim": "#hash_27e01a488198838e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3926,7 +3926,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5a079f9191deaa0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3943,7 +3943,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60e9eb5771fdc004",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3953,7 +3953,7 @@
                     "entry": [
                         {
                             "anim": "#hash_301cf56fa9daf0de",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -3966,7 +3966,7 @@
                     "entry": [
                         {
                             "anim": "#hash_41fc581521c79161",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3980,7 +3980,7 @@
                     "entry": [
                         {
                             "anim": "#hash_78499e33a6a9ff9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3994,7 +3994,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5cce4cb554d1856e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4008,7 +4008,7 @@
                     "entry": [
                         {
                             "anim": "#hash_188ba8f7cba47163",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4043,7 +4043,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3e5dbaefe1f71856",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4068,7 +4068,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51eeadfc7cd6500e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4085,7 +4085,7 @@
                     "entry": [
                         {
                             "anim": "#hash_8934857df6da389",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4112,7 +4112,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2795164881589148",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4129,7 +4129,7 @@
                     "entry": [
                         {
                             "anim": "#hash_59bcb391919ee091",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4146,7 +4146,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6118df5772251c62",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4156,7 +4156,7 @@
                     "entry": [
                         {
                             "anim": "#hash_303ef16fa9f7d078",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -4169,7 +4169,7 @@
                     "entry": [
                         {
                             "anim": "#hash_41da441521aa88ff",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4183,7 +4183,7 @@
                     "entry": [
                         {
                             "anim": "#hash_786bb233a6c70801",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4203,7 +4203,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d63cc98c966e16c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4217,7 +4217,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7e8cb0da7c0704e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4246,7 +4246,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c82ef91e8be7a2b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4271,7 +4271,7 @@
                     "entry": [
                         {
                             "anim": "#hash_65f7dc4aa0808983",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4288,7 +4288,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2c45fb851781efea",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4373,7 +4373,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52b9ec3839bb0089",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4388,7 +4388,7 @@
                     "entry": [
                         {
                             "anim": "#hash_68184ed725d36147",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4420,7 +4420,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1e24a18e037cb4ec",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4437,7 +4437,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e4a3102d0ddd06e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4522,7 +4522,7 @@
                     "entry": [
                         {
                             "anim": "#hash_38a9714c7f210ab4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4537,7 +4537,7 @@
                     "entry": [
                         {
                             "anim": "#hash_680442d725c2a3d9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4569,7 +4569,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4968d2051d0fc859",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4586,7 +4586,7 @@
                     "entry": [
                         {
                             "anim": "#hash_230c20104e59e863",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4634,7 +4634,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d4be380fe81d2b6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -4644,7 +4644,7 @@
                     "entry": [
                         {
                             "anim": "#hash_15c07774d292bfa0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -4756,7 +4756,7 @@
                     "entry": [
                         {
                             "anim": "#hash_70f503ba583a66c4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -4895,7 +4895,7 @@
                     "entry": [
                         {
                             "anim": "#hash_54a122a77a6d7cb9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -4983,7 +4983,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53fe8aef8fd1cfb3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh005"
@@ -5022,7 +5022,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d71b75bff91e980",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -5164,7 +5164,7 @@
                     "entry": [
                         {
                             "anim": "#hash_42e530b75163eb3b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -5368,7 +5368,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7140fe8bf2e9954d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -5486,7 +5486,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5829817b608f08f8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -5515,7 +5515,7 @@
                     "entry": [
                         {
                             "anim": "#hash_218c70acf53e65e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -5625,7 +5625,7 @@
                     "entry": [
                         {
                             "anim": "#hash_788296f0707f28e2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -5642,7 +5642,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f382f68ee8b60e3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -5665,7 +5665,7 @@
                     "entry": [
                         {
                             "anim": "#hash_22471c78f130f2a6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -5752,7 +5752,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

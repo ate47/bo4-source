@@ -1,6 +1,6 @@
 {
     "amount": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#melee_amuletfist_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 180,

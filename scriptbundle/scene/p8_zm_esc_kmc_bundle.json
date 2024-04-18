@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3e94339cc4c8984",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "up"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_41302b85a0857691",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "down"
@@ -27,7 +27,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "final",
     "type": "scene",
     "name": "p8_zm_esc_kmc_bundle",

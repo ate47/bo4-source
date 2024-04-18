@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_54b89e97cbc7fe0c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ba9af476cd56fee",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "loop"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1ac8ac28a2194755",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "end"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_zm_red_vign_peg_inair_flapattack_01",

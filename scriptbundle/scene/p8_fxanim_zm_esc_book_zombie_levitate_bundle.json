@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6642309781e37eac",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6642309781e37eac",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -24,11 +24,11 @@
                     "entry": [
                         {
                             "anim": "#hash_5f1ab9bc01723a47",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_ad7c30a297f74d0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "in"
@@ -37,7 +37,7 @@
                     "entry": [
                         {
                             "anim": "#hash_63e68939c8552b9a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "out"
@@ -55,7 +55,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5771dad788327738",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -64,7 +64,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5771dad788327738",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -73,11 +73,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4eaa47c83b91ba23",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_47b8c2589b3f575c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "in"
@@ -86,7 +86,7 @@
                     "entry": [
                         {
                             "anim": "#hash_64ae749344989afe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "out"
@@ -99,7 +99,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_book_zombie_levitate_bundle",

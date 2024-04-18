@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7533027aa665dece",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "feather02_float"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7346c663ed37ee05",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "feather02_gust"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3aa2c0aa6570aa93",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "feather02_fall"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bdf72617cd24829",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "feather02_slot02"
@@ -45,7 +45,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_ouranos_feather_02_bundle",

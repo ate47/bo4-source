@@ -9,7 +9,7 @@
                     "entry": [
                         {
                             "anim": "#hash_199538f20fe6b7fc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -27,7 +27,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58a05a3b76fab682",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "anim": "#hash_97ec57cff49c5ab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -50,7 +50,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_spoon_ghost_stab",

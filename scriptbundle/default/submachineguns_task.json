@@ -1,6 +1,6 @@
 {
     "callingtask": "#kills_smg",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_callings_smg",
     "dailytarget": 750,
     "name": "submachineguns_task",

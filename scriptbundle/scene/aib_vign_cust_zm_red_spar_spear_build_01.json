@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6b23db8f232f0eea",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_6b23db8f232f0eea",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#ai_t8_zm_red_spar_spear_rebuild_01",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "rebuild"
@@ -34,7 +34,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_spar_spear_build_01",

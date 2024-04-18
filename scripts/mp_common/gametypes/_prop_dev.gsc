@@ -253,7 +253,7 @@ function function_93440c52() {
                 function_34a7562e();
             }
             if (getdvarint(#"hash_745b5ef88dd291e1", 0) != 0) {
-                function_f06fb157();
+                showplayers();
             }
             if (getdvarint(#"hash_3c0e90252ca92099", 0) != 0) {
                 showtargets();
@@ -1326,7 +1326,7 @@ function function_5e0d41c4() {
 // Params 0, eflags: 0x0
 // Checksum 0x7dc6d40d, Offset: 0x6ad8
 // Size: 0xd8
-function function_f06fb157() {
+function showplayers() {
     /#
         if (!isdefined(level.players)) {
             return;

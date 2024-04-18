@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_cargo_hold_net_idle_02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_cargo_hold_net_fall_02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6922a2e585493823",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1fb1c1badca9714c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -49,7 +49,7 @@
                     "entry": [
                         {
                             "anim": "#hash_203e9f6a1fd8c3d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5c6b89c8357a36f1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -70,7 +70,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "server",

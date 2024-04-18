@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_44e93ffb70521181",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7700ac54a44e3401",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -34,7 +34,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "scene_frontend_t8_epic_fem",

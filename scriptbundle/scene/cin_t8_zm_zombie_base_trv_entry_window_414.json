@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_10120cf8e1328f20",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e292e15107bf79c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crawler"
@@ -29,7 +29,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "cin_t8_zm_zombie_base_trv_entry_window_414",

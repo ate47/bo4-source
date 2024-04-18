@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_3c49bb4da34b082a",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "worldfx": "#hash_10138d6ad6687c27",
@@ -16,7 +16,7 @@
     "modelscale": 1,
     "rarity": "Common",
     "var_47f145b4": 1,
-    "var_456aa154": "tr_leveraction_t8_item",
+    "actionregisterweapon": "tr_leveraction_t8_item",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#ui_icon_weapon_hud_tr_leveraction",
     "var_37cd55af": "#hash_355d8db7f649041c",

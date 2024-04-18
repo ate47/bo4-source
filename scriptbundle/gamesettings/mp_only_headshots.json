@@ -1,6 +1,6 @@
 {
     "hinttext": "#hash_56b4b91bdbe9dd24",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "mp_only_headshots",
     "displayname": "#hash_4bedc13a6fa34084",

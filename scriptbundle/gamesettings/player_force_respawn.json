@@ -1,6 +1,6 @@
 {
     "hinttext": "#hash_974ecb9b3fef83b",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "player_force_respawn",
     "displayname": "#hash_63372429fcb6b315",

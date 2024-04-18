@@ -85,7 +85,7 @@
             "exithighanim": "#ai_crew_vtol_8_norope_drop_intro"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#veh_t7_mil_vtol_dropship_troopcarrier",
     "type": "vehicleriders",
     "vmtype": "both",

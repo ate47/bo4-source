@@ -18,7 +18,7 @@
     ],
     "amount": 1,
     "description": "#hash_2308a5c6e21b0f7d",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_3e688854": -2,
     "weapon": "weapon#hash_48f78710d951fa6b",
     "type": "itemspawnentry",

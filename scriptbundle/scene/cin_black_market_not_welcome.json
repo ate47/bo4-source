@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_672a411cb68a5e23",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_37241fb8476a851e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_372420b8476a86d1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_37241db8476a81b8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_37241eb8476a836b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_372423b8476a8bea",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_372424b8476a8d9d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_372421b8476a8884",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 7"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_372422b8476a8a37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 8"
@@ -90,7 +90,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

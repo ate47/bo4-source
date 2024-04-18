@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_5a2051365c3cb043",
     "ready": "#hash_125b9b4bf555607f",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_ult_turret"

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_esc_power_switch_off_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "off"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_esc_power_switch_on_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_3f341eed31266f59",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "on"
@@ -28,7 +28,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3366acda3892ecb4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fake_off"
@@ -37,7 +37,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3f341eed31266f59",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fake_on"
@@ -50,7 +50,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "polishing",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_power_switch_bundle",

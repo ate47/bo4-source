@@ -5,7 +5,7 @@
         }
     ],
     "description": "#hash_ec3f7fa67575be",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#attach_t8_wz_pickup_ext_fast_mag",
     "type": "itemspawnentry",
     "hintstring": "#hash_47f9d805f8f35f0e",

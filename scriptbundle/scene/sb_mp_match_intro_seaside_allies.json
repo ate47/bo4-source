@@ -129,7 +129,7 @@
     ],
     "scenetype": "scene",
     "cameraswitcher": "ui_cam_match_intro_seaside_allies",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

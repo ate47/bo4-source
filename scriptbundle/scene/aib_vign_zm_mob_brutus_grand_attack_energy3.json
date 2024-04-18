@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_2c80faff940c1ecb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_3eee1a4c31fa909c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2be226b4a79df6a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -28,7 +28,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2be226b4a79df6a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -41,7 +41,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_brutus_grand_attack_energy3",

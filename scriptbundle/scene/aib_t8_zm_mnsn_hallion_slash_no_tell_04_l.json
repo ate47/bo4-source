@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_77465dc2191afdc5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_mnsn_hallion_slash_no_tell_04_l",

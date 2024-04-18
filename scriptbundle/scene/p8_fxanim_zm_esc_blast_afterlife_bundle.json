@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2a54f1e9f64cafc8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot_1"
@@ -19,7 +19,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

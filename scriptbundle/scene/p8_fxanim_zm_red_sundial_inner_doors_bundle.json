@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_a5841790d950bae",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_01_open"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2b36d1f86eba07c2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_01_close"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_699a37288a343abb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_02_open"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_572d802ec680a0f9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_02_close"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7211379392dc0524",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_03_open"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_44155555b4500948",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_03_close"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_10a36aeafe8c3589",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_04_open"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52c4810a893a69e7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inner_04_close"
@@ -82,7 +82,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_sundial_inner_doors_bundle",

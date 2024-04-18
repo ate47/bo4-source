@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_73be82a6974b008b",
     "ready": "#hash_3c03503dce11eff7",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_uav",

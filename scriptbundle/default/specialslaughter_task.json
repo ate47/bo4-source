@@ -1,6 +1,6 @@
 {
     "callingtask": "#kills_equipment",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_calling_tasks_specialweapon",
     "dailytarget": 100,
     "name": "specialslaughter_task",

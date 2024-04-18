@@ -1,6 +1,6 @@
 {
     "var_99ec7d60": "zmb_pegasus_aoe_end",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "areaofeffect",
     "earthquakescale": 0.5,
     "effectradius": 350,

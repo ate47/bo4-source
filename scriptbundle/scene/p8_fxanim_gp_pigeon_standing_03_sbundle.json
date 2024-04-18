@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7b23dced8c816c5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 1,
@@ -17,7 +17,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43581ab456bdada1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.1,
@@ -37,7 +37,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_gp_pigeon_standing_03_sbundle",

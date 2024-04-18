@@ -5,7 +5,7 @@
     "chain": "#hash_4f56d4d19d13e31c",
     "max_range": 320,
     "var_8ceb67db": "j_spineupper",
-    "var_cf824f71": 250,
+    "fx_delay": 250,
     "name": "seeker_mine_arc_settings",
     "var_755593b1": 1,
     "var_8ce60046": 1,

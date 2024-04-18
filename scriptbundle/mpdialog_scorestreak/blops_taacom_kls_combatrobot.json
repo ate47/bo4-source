@@ -2,7 +2,7 @@
     "destroyed": "#hash_653c2c8a75187c15",
     "ready": "#hash_228d5da7058d7331",
     "beinghacked": "#hash_2bf20144c43f3dba",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_combatrobot",

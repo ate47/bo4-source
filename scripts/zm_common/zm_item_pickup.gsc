@@ -50,7 +50,7 @@ function function_d6812b9d() {
 // Params 2, eflags: 0x0
 // Checksum 0xfa332f41, Offset: 0x290
 // Size: 0xaa
-function function_e8661563(func_callback, var_c12c30aa = 0) {
+function item_pickup_init(func_callback, var_c12c30aa = 0) {
     if (var_c12c30aa && !zm_utility::is_ee_enabled()) {
         return;
     }

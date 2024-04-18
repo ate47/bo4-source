@@ -1,6 +1,6 @@
 {
     "mod": "MOD_UNKNOWN",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_unknown",
     "displayname": "#hash_7cceb74accb55241",

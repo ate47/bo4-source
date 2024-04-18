@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4676fc35f298c306",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "_outro"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p_zm_seer_stone_s_out_female",

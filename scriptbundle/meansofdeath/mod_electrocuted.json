@@ -1,6 +1,6 @@
 {
     "mod": "MOD_ELECTROCUTED",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_electrocuted",
     "displayname": "#hash_6e7fd636da841524",

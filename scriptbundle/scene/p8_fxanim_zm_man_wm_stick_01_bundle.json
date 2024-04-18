@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_34f9575c60ca9d1c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_194f509e92f16702",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -28,7 +28,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_wm_stick_01_bundle",

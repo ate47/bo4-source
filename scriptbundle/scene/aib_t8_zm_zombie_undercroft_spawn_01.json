@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#ai_t8_zm_zombie_undercroft_spawn_01",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_9ab5771d81d1a94",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crawler"
@@ -29,7 +29,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_zombie_undercroft_spawn_01",

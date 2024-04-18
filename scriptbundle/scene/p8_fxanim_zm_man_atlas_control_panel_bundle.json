@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4245264eb3ced748",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_man_atlas_control_panel_idle_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5a5aa288e6b0059b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "wheel_left"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_49de62535d590576",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "wheel_right"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c399268d66da14",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "close"
@@ -55,7 +55,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_atlas_control_panel_bundle",

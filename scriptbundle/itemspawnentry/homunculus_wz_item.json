@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_44d6863447b03eff",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#homunculus_wz",
     "type": "itemspawnentry",
     "name": "homunculus_wz_item",

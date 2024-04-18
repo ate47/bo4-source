@@ -107,7 +107,7 @@
             "statname": "#kills"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "activecamoinfo",
     "var_ad038bf4": "#hash_1b03c0fc3a12bbdb",
     "vmtype": "both",

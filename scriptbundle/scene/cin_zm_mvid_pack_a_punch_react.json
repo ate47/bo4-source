@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mvid_pack_a_punch_react_cam1",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_502ff37ce4c75d17",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -38,7 +38,7 @@
                     "entry": [
                         {
                             "anim": "#hash_22243ad8e796ab87",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -50,7 +50,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "cin_zm_mvid_pack_a_punch_react",

@@ -23,7 +23,7 @@
     "var_bd8e85e7": 0.2,
     "var_5fb501b2": -0.2,
     "var_5e937f7f": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_c83371f4": "#c_t8_zmb_dlc2_skeleton_sword",
     "var_bc7af88d": 2,
     "type": "destructiblecharacterdef",

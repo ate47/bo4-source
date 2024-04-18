@@ -28,7 +28,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -157,7 +157,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -189,7 +189,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -549,7 +549,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -599,7 +599,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -728,7 +728,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -760,7 +760,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -1119,7 +1119,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -1169,7 +1169,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -1297,7 +1297,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -1329,7 +1329,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -1689,7 +1689,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -1739,7 +1739,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -1867,7 +1867,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -1899,7 +1899,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -2258,7 +2258,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -2308,7 +2308,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -2436,7 +2436,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -2468,7 +2468,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -2824,7 +2824,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -2874,7 +2874,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -3002,7 +3002,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -3034,7 +3034,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -3389,7 +3389,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -3438,7 +3438,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -3566,7 +3566,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -3598,7 +3598,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -3952,7 +3952,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -4002,7 +4002,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -4130,7 +4130,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -4162,7 +4162,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -4515,7 +4515,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -4565,7 +4565,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -4693,7 +4693,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -4725,7 +4725,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -5077,7 +5077,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -5127,7 +5127,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -5255,7 +5255,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -5287,7 +5287,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -5639,7 +5639,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -5688,7 +5688,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -5815,7 +5815,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -5844,7 +5844,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -6196,7 +6196,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -6245,7 +6245,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -6372,7 +6372,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -6401,7 +6401,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -6746,7 +6746,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -6795,7 +6795,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -6920,7 +6920,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -6949,7 +6949,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -7294,7 +7294,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -7343,7 +7343,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -7468,7 +7468,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -7497,7 +7497,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -7841,7 +7841,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -7890,7 +7890,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -8015,7 +8015,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -8044,7 +8044,7 @@ struct gametypesettings {
     uint3 platooncount;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -8387,7 +8387,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -8436,7 +8436,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -8561,7 +8561,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -8589,7 +8589,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -8931,7 +8931,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -8980,7 +8980,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -9102,7 +9102,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -9130,7 +9130,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -9471,7 +9471,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -9520,7 +9520,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -9642,7 +9642,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -9670,7 +9670,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -10010,7 +10010,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -10059,7 +10059,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -10181,7 +10181,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -10209,7 +10209,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -10548,7 +10548,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -10597,7 +10597,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -10719,7 +10719,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -10747,7 +10747,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -11083,7 +11083,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -11132,7 +11132,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -11254,7 +11254,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -11282,7 +11282,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -11616,7 +11616,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -11665,7 +11665,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -11785,7 +11785,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -11813,7 +11813,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -12147,7 +12147,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -12196,7 +12196,7 @@ struct gametypesettings {
     uint2 zmmysteryboxstate;
     fixedpoint hash_35e9fc8eee6881e0;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -12316,7 +12316,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -12344,7 +12344,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -12677,7 +12677,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -12725,7 +12725,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint2 zmmysteryboxstate;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -12844,7 +12844,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -12871,7 +12871,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -13203,7 +13203,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -13251,7 +13251,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint2 zmmysteryboxstate;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -13370,7 +13370,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -13397,7 +13397,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -13728,7 +13728,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;
@@ -13776,7 +13776,7 @@ struct gametypesettings {
     uint8 maxplayerdefensive;
     uint2 zmmysteryboxstate;
     uint8 hash_613785a993624133;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint16 hash_6024ee628431415;
     uint32 zmpapenabled;
     uint5 pointsperweaponkill;
@@ -13894,7 +13894,7 @@ struct gametypesettings {
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
     uint5 zmpowerupslimitround;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint7 zmroundcap;
     uint2 hash_37698d5973834ce8;
@@ -13921,7 +13921,7 @@ struct gametypesettings {
     uint4 hash_4635a26c94b56725;
     uint3 zmhealthregenrate;
     uint2 zmzombiemaxspeed;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -14251,7 +14251,7 @@ struct gametypesettings {
     bit zmelixirarsenalaccelerator;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit deathzones;

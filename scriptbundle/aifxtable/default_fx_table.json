@@ -1,6 +1,6 @@
 {
     "surfacefxtable_vtollanding": "#hash_1cc16e61f7f6ee88",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "aifxtable",
     "vmtype": "client",
     "surfacefxtable_footstep": "#player_footstep",

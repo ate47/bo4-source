@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_19406d58d804cb58",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f1f162425f38f6e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -27,7 +27,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_white_raygun_case_bundle",

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_57bc92edd66d4a75",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#p8_wz_spray_can_camo_single",
     "type": "itemspawnentry",
     "hintstring": "#hash_71f5a4b28e790da2",

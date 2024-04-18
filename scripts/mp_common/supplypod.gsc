@@ -254,7 +254,7 @@ function supplypod_spawned(watcher, owner) {
             owner notify(#"supplypod");
         }
         self waittilltimeout(0.05, #"stationary");
-        if (!owner deployable::function_f8fe102f()) {
+        if (!owner deployable::location_valid()) {
             owner setriotshieldfailhint();
             self delete();
             return;

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ab6d7f6f85eba55",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b2102c8f449476e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mob_power_ghost_opperate_success",

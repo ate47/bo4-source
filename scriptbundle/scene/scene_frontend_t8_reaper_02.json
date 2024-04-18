@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_reaper_play",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_reaper_play3",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_reaper_play5",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play3"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_reaper_play2",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play4"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_reaper_play4",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play5"
@@ -59,7 +59,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e33fcc0e596e98a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play1"
@@ -68,7 +68,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e33fcc0e596e98a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -77,7 +77,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e33fcc0e596e98a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -86,7 +86,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e33fcc0e596e98a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -95,7 +95,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e33fcc0e596e98a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -111,7 +111,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cd452a707075df9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play1"
@@ -120,7 +120,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cd452a707075df9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -129,7 +129,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cd452a707075df9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -138,7 +138,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cd452a707075df9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -147,7 +147,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cd452a707075df9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -160,7 +160,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

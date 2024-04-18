@@ -330,7 +330,7 @@ function private function_6654310c(weapon) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x97dbcc73, Offset: 0x1258
 // Size: 0xc
-function function_f8fe102f() {
+function location_valid() {
     return isdefined(self.var_b8878ba9);
 }
 

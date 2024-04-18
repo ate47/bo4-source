@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_62fcc6112f023431",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "weapon": "weapon#tr_powersemi_t8_wz",

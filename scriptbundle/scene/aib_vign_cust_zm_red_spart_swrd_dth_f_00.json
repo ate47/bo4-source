@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1f772cd409796112",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2b99709bc1330cbd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "collapse"
@@ -24,7 +24,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_spart_swrd_dth_f_00",

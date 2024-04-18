@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4706092509ffab82",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "off"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51ffdc0f47af0d64",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "on"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f0f409b9843c5d5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "disable"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_17f40753c3905f10",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "use1"
@@ -45,7 +45,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_perk_vending_tonic_bundle",

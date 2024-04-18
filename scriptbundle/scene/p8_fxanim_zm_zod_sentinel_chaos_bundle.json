@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_sentinel_chaos_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6fb11b1917874b07",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -39,7 +39,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c1711016d3f9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -55,7 +55,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c2711016d5ac",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -71,7 +71,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c7711016de2b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8bf711016d093",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -103,7 +103,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c0711016d246",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -119,7 +119,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c3711016d75f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -135,7 +135,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c4711016d912",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -151,7 +151,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c5711016dac5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -167,7 +167,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ca8c6711016dc78",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -179,7 +179,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "both",

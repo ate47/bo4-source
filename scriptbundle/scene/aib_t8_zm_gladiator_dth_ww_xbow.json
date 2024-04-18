@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_2318e2126f742901",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_b043ba035453ebb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1dac15a6fa51212a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "outro"
@@ -35,7 +35,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_gladiator_dth_ww_xbow",

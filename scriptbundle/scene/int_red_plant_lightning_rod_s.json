@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_cce5e432f8e05f3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6543b4f6a99bee3d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "int_red_plant_lightning_rod_s",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7279e07cbfd7b9e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df7ade15fcd25",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_0"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df6ade15fcb72",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_1"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df5ade15fc9bf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_2"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df4ade15fc80c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_3"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df3ade15fc659",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_4"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df2ade15fc4a6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_5"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df1ade15fc2f3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_6"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6df0ade15fc140",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_7"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6dffade15fdabd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_8"
@@ -96,7 +96,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a6dfeade15fd90a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "move_down_9"
@@ -108,7 +108,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_orange_zipline_bow_bundle",

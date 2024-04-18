@@ -58,7 +58,7 @@ function __init__() {
         clientfield::register("clientuimodel", "huditems.killedByAttachment" + index, 1, 6, "int", undefined, 0, 0);
     }
     clientfield::register("toplayer", "thermal_sight", 1, 1, "int", &function_765b7c63, 0, 0);
-    clientfield::register("toplayer", "strobe_light", 1, 1, "int", &function_e1af467, 0, 0);
+    clientfield::register("toplayer", "strobe_light", 1, 1, "int", &fireflykillcam, 0, 0);
     clientfield::register("allplayers", "cold_blooded", 1, 1, "int", &function_194072a7, 0, 0);
     level.var_20369084 = #"rob_sonar_set_enemy_cold";
     level._effect[#"annihilate_explosion"] = #"hash_17591c79f2960fba";
@@ -224,7 +224,7 @@ function function_765b7c63(local_client_num, oldval, newval, bnewent, binitialsn
 // Params 7, eflags: 0x0
 // Checksum 0xa495db5f, Offset: 0x16b0
 // Size: 0xcc
-function function_e1af467(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function fireflykillcam(local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (function_1cbf351b(local_client_num)) {
         return;
     }

@@ -1,6 +1,6 @@
 {
     "var_2ecceeab": "#attack_chopper_kill",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "helicopter_comlink_mp_scoreevents",

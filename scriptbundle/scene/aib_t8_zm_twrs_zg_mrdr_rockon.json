@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4284d62a1797928b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4f2920ed5e6dab15",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_485de37ae65b7ff1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -32,7 +32,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_twrs_zg_mrdr_rockon",

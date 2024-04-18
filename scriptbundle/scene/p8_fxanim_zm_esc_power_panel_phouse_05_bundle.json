@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_esc_power_panel_phouse_05_off_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "off"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_41e61c6d91e5d7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#p8_fxanim_zm_esc_power_panel_phouse_05_on_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "on"
@@ -28,7 +28,7 @@
                     "entry": [
                         {
                             "anim": "#hash_705b3bf1b1d4f205",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "green"
@@ -37,11 +37,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4d1abcd02be135e9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#p8_fxanim_zm_esc_power_panel_phouse_05_on_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "reset"
@@ -53,7 +53,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_power_panel_phouse_05_bundle",

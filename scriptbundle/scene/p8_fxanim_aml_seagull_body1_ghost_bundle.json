@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52fb23118864b1a2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "loop_anim"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_22bb2c122bf59c49",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_flying_loop"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_49ef6ebda468bab0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "dissolve"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2849a083d4a34029",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "materialize"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_225a002601457b8e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "attack"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60595d9e25021bef",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fly_off"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2a3a9b35e7d0591b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_grounded_loop"
@@ -72,7 +72,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_aml_seagull_body1_ghost_bundle",

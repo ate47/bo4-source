@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_b5a9e121eb22e9",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#ray_gun_mk2_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 90,

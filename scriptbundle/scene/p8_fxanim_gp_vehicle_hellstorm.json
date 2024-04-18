@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b6a7686ae8c1f16",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -14,7 +14,7 @@
                 {
                     "entry": [
                         {
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -26,7 +26,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_gp_vehicle_hellstorm",

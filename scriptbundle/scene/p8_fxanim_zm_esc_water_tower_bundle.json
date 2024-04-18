@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_5406bc11418b4d69",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_60588ad0b075bfc0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "main & idle loop out"
@@ -22,7 +22,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_water_tower_bundle",

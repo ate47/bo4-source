@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5540ecbdb7e2bd37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5540ecbdb7e2bd37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5540ecbdb7e2bd37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5540ecbdb7e2bd37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -48,7 +48,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_zero_play",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -57,7 +57,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_zero_play2",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 2"
@@ -66,7 +66,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_zero_play3",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 3"
@@ -75,7 +75,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_zero_play5",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 5"
@@ -91,7 +91,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4725dacb4b99ec45",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -100,7 +100,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4725dacb4b99ec45",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -109,7 +109,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4725dacb4b99ec45",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -118,7 +118,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4725dacb4b99ec45",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -130,7 +130,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

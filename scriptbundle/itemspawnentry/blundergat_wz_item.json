@@ -42,7 +42,7 @@
     ],
     "amount": 1,
     "description": "#hash_7d77ead59bf31420",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_eda4062b": 3,
     "var_e8b98a8a": "#hash_31b5340e9a1b398c",
     "weapon": "weapon#ww_blundergat_t8_wz",

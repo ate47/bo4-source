@@ -1,6 +1,6 @@
 {
     "amount": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#p7_medical_gauze_roll_sealed",
     "weapon": "weapon#hash_5bc82db27bb51d8e",
     "type": "itemspawnentry",

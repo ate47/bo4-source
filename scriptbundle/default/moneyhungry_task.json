@@ -1,6 +1,6 @@
 {
     "callingtask": "#zearned",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_calling_tasks_zearned",
     "dailytarget": 100000,
     "name": "moneyhungry_task",

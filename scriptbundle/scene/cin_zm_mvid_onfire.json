@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_mvid_onfire_cam1",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ec048e905c6756d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -38,7 +38,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b35aad71abf3484",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -54,7 +54,7 @@
                     "entry": [
                         {
                             "anim": "#hash_716d804248949493",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -70,7 +70,7 @@
                     "entry": [
                         {
                             "anim": "#hash_716d814248949646",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -82,7 +82,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "cin_zm_mvid_onfire",

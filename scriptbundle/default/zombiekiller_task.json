@@ -1,6 +1,6 @@
 {
     "callingtask": "#kills",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#zm_calling_tasks_xkills",
     "dailytarget": 1200,
     "name": "zombiekiller_task",

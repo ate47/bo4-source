@@ -300,9 +300,9 @@ function function_76ad6828(position, is_end_position = 0) {
         var_bda7a712 = self.script_noteworthy + "_vehicle";
         var_5a7b0b8 = self.script_noteworthy + "_player_top";
         var_68dc3bdf = getent(var_a91da4b7, "targetname");
-        var_42611516 = getent(var_bda7a712, "targetname");
+        t_damage_vehicle = getent(var_bda7a712, "targetname");
         var_caa01373 = getent(var_5a7b0b8, "targetname");
-        if (isdefined(var_68dc3bdf) && isdefined(var_42611516) && isdefined(var_caa01373)) {
+        if (isdefined(var_68dc3bdf) && isdefined(t_damage_vehicle) && isdefined(var_caa01373)) {
             var_d011282b = distancesquared(self.origin, position.origin);
             while (var_d011282b > 16) {
                 var_d011282b = distancesquared(self.origin, position.origin);
@@ -314,7 +314,7 @@ function function_76ad6828(position, is_end_position = 0) {
                     }
                 } else if (var_d011282b <= 5000) {
                     self thread function_777e012d(var_68dc3bdf);
-                    self thread function_26ab1b5e(var_42611516);
+                    self thread function_26ab1b5e(t_damage_vehicle);
                     self thread elevator_kill_player(var_68dc3bdf);
                 }
                 waitframe(1);

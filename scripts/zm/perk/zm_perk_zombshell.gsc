@@ -153,7 +153,7 @@ function shell_explosion(e_attacker, w_weapon) {
         util::wait_network_frame();
     }
     physicsexplosionsphere(v_origin, 128, 0, 5, 500, 500);
-    e_attacker thread function_4e547cfd(e_attacker.e_zombshell.origin);
+    e_attacker thread aoe_think(e_attacker.e_zombshell.origin);
     if (e_attacker hasperk(#"specialty_mod_zombshell")) {
         wait(8);
     } else {
@@ -193,7 +193,7 @@ function zombie_death_gib(e_attacker, w_weapon) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd6745b94, Offset: 0xde8
 // Size: 0x114
-function function_4e547cfd(var_4eaa1f4c) {
+function aoe_think(var_4eaa1f4c) {
     self endon(#"death", #"zombshell_aoe", #"scene_ready", #"specialty_zombshell" + "_take");
     while (true) {
         array::thread_all(level.activeplayers, &function_279e31b8, self);

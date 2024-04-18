@@ -365,14 +365,14 @@ function private function_a938fba7(player, position, angles, itementry, var_74e7
     zoffset = 64;
     if (isplayer(player) && player isinvehicle()) {
         occupiedvehicle = player getvehicleoccupied();
-        var_6246b3c7 = 0;
+        dontignore = 0;
         foreach (vehicle in array(#"tactical_raft_wz")) {
             if (isdefined(occupiedvehicle.scriptvehicletype) && vehicle == occupiedvehicle.scriptvehicletype) {
-                var_6246b3c7 = 1;
+                dontignore = 1;
                 break;
             }
         }
-        if (!var_6246b3c7) {
+        if (!dontignore) {
             ignoreent = occupiedvehicle;
         } else {
             ignoreent = undefined;

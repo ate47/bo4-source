@@ -168,21 +168,21 @@ function function_89116a1e() {
         return;
     }
     zones = level.var_6990c489;
-    var_3fe45e06 = [];
+    validzones = [];
     if (isdefined(level.deathcircle) && isdefined(level.deathcircle.nextcircle)) {
         var_5b345622 = min(level.deathcircle.radius - level.deathcircle.nextcircle.radius, 10000);
-        var_3fe45e06 = [];
+        validzones = [];
         var_89e77f16 = (level.deathcircle.radius - var_5b345622) * (level.deathcircle.radius - var_5b345622);
         nextorigin = level.deathcircle.origin;
         for (index = 0; index < zones.size; index++) {
             zone = zones[index];
             if (distance2dsquared(nextorigin, zone.origin) <= var_89e77f16) {
-                var_3fe45e06[var_3fe45e06.size] = zone;
+                validzones[validzones.size] = zone;
             }
         }
     }
-    if (var_3fe45e06.size > 0) {
-        zones = var_3fe45e06;
+    if (validzones.size > 0) {
+        zones = validzones;
     } else if (isdefined(level.deathcircle)) {
         closestzone = zones[0];
         var_42c5fb9a = distance2dsquared(level.deathcircle.origin, closestzone.origin);

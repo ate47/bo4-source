@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_bridge_blockade_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_bridge_blockade_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -38,7 +38,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f01d67602dc1c67",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -47,7 +47,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f01d67602dc1c67",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -56,11 +56,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1290feedb3ee8d54",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2653add61c4b3565",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "boat_break",
@@ -80,7 +80,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_bridge_chunk02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -89,7 +89,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_bridge_chunk02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -111,7 +111,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -120,7 +120,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -144,7 +144,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_damage_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -153,7 +153,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_damage_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -175,7 +175,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_foredeck_ice_chunks_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -184,7 +184,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_foredeck_ice_chunks_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -206,7 +206,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_deck_damage_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -215,7 +215,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_deck_damage_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -240,11 +240,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_cranes_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_439a107e7455babc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -270,7 +270,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_bridge_planks_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -295,7 +295,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_avalanche_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -321,7 +321,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_bridge_chunk01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -346,7 +346,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_deck_rt_dmg_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -373,11 +373,11 @@
                     "entry": [
                         {
                             "anim": "#hash_177b50f1363f63d6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_6f13a31f5b2b9616",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -402,11 +402,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_cranes_no_cargo_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_6857fbdbd6743417",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -431,11 +431,11 @@
                     "entry": [
                         {
                             "anim": "#hash_639ca86090660c3b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f67c1a31ee4ae7b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -460,7 +460,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_iceberg_forecastle_damage_ice_chunks_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "iceberg_impact"
@@ -478,7 +478,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_iceberg_bundle",

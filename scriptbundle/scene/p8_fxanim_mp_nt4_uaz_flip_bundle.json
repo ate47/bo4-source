@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_202f92472e46d17b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_mp_nt4_uaz_flip_bundle",

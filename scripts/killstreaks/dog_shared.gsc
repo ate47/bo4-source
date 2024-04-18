@@ -213,7 +213,7 @@ function spawn_dog(bundle, owner) {
     dog set_state(1, 1);
     owner thread function_458bc8de(dog);
     owner thread function_2f6f43cf(dog, bundle.ksweapon);
-    dog thread killstreaks::function_fff56140(owner, &function_747a6ed6);
+    dog thread killstreaks::function_fff56140(owner, &abort_dog);
     dog callback::function_d8abfc3d(#"on_end_game", &function_a1b9ccf1);
     if (isdefined(bundle.ksduration)) {
         dog thread killstreaks::waitfortimeout(bundle.var_d3413870, bundle.ksduration, &timeout, "death");
@@ -353,7 +353,7 @@ function function_a1b9ccf1() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xcd28ac3c, Offset: 0x15d8
 // Size: 0x44
-function function_747a6ed6() {
+function abort_dog() {
     self.ignoreall = 1;
     self set_state(2, 0);
     self delete();

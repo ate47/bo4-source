@@ -9,7 +9,7 @@
 // Checksum 0xc87be761, Offset: 0x128
 // Size: 0x176
 function event_handler[level_init] main(eventstruct) {
-    level.var_bbb8810e = #"ui_cam_draft_common";
+    level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     setsaveddvar(#"enable_global_wind", 1);
     setsaveddvar(#"wind_global_vector", "88 0 0");

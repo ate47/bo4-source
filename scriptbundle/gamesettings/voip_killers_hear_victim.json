@@ -1,6 +1,6 @@
 {
     "hinttext": "#hash_7d22e5d1f3edacec",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "voip_killers_hear_victim",
     "displayname": "#hash_14a9695ab64cef1c",

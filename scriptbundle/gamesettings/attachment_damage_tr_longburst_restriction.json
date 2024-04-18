@@ -1,5 +1,5 @@
 {
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "attachment_damage_tr_longburst_restriction",
     "displayname": "#weapon/tr_longburst_t8",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh590",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh590"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh600",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh600"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh610",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh610"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh620",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh620",
@@ -44,7 +44,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh630",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh630"
@@ -53,7 +53,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh640",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh640",
@@ -71,7 +71,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ef765bfe4cb59c7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -108,7 +108,7 @@
                     "entry": [
                         {
                             "anim": "#hash_68259e558213d388",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -148,7 +148,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5339af46e12c40f7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -158,7 +158,7 @@
                     "entry": [
                         {
                             "anim": "#hash_9f29fd527c59e50",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh610"
@@ -167,7 +167,7 @@
                     "entry": [
                         {
                             "anim": "#hash_328e3bc2a698bb3d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh620",
@@ -178,7 +178,7 @@
                     "entry": [
                         {
                             "anim": "#hash_627f12033565a7be",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh630"
@@ -187,7 +187,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3e91a78653fcdc1b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -206,7 +206,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b78886e63bf44d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -220,7 +220,7 @@
                     "entry": [
                         {
                             "anim": "#hash_382489e8d9306b54",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -251,7 +251,7 @@
                     "entry": [
                         {
                             "anim": "#hash_10750ada7ebeadf9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -291,7 +291,7 @@
                     "entry": [
                         {
                             "anim": "#hash_324daff20aa02fdb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -301,7 +301,7 @@
                     "entry": [
                         {
                             "anim": "#hash_446d43f0d5cbab0c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh610"
@@ -310,7 +310,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5dd38477598da925",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh620",
@@ -343,7 +343,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7340cbde791dccee",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -353,7 +353,7 @@
                     "entry": [
                         {
                             "anim": "#hash_484b2cf1f15ecfeb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh620",
@@ -394,7 +394,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5553ed369c64c024",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -404,7 +404,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c3bb71dc64a191",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -437,7 +437,7 @@
                     "entry": [
                         {
                             "anim": "#hash_20f15364ab35cf05",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -447,7 +447,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4a77fcdb8ec95b94",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -480,7 +480,7 @@
                     "entry": [
                         {
                             "anim": "#hash_747bde3697588245",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -490,7 +490,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3e32e8d69876b6e8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -523,7 +523,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7e2008953e30f75c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -533,7 +533,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6839bad29454c39d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -548,7 +548,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_25f0076dd9406c3a",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#hash_3f8cbb548898a466",
     "type": "itemspawnentry",
     "name": "smoke_grenade_wz_item_spring_holiday",

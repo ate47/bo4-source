@@ -9,7 +9,7 @@
             "health": 2
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#c_t8_zmb_dlc2_skeleton_fb",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_skeleton_weakpoint_def",

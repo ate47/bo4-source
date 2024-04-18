@@ -2,7 +2,7 @@
     "destroyed": "#hash_5c6c6b2320341f25",
     "ready": "#hash_7760b53a67b3bbc1",
     "beinghacked": "#hash_3370e7332df5c90a",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_guardian",

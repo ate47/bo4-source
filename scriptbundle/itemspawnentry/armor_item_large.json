@@ -10,7 +10,7 @@
     "description": "#hash_2443dac0d8af3240",
     "var_a3aa1ca2": 100,
     "armorshards": 5,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_22c3ab38": 0.5,
     "model": "#p8_mp_spe_armor_heavy",
     "type": "itemspawnentry",

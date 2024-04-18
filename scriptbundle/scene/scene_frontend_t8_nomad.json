@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_nomad_play",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_nomad_play2",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_nomad_play5",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play5"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_nomad_play4",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play4"
@@ -50,7 +50,7 @@
                     "entry": [
                         {
                             "anim": "#hash_15f909425c5b6b40",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -59,7 +59,7 @@
                     "entry": [
                         {
                             "anim": "#hash_15f909425c5b6b40",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -68,7 +68,7 @@
                     "entry": [
                         {
                             "anim": "#hash_15f909425c5b6b40",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -77,7 +77,7 @@
                     "entry": [
                         {
                             "anim": "#hash_15f909425c5b6b40",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -92,7 +92,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f190060c4418aab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -101,7 +101,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f190060c4418aab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -110,7 +110,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f190060c4418aab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -119,7 +119,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f190060c4418aab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -136,7 +136,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1be9dd23242a6380",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -145,7 +145,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1be9dd23242a6380",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -154,7 +154,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1be9dd23242a6380",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -163,7 +163,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1be9dd23242a6380",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -180,7 +180,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -189,7 +189,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -198,7 +198,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -207,7 +207,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -224,7 +224,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -233,7 +233,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -242,7 +242,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -251,7 +251,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -271,7 +271,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -280,7 +280,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -289,7 +289,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -298,7 +298,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -321,7 +321,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -330,7 +330,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -339,7 +339,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -348,7 +348,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -371,7 +371,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -380,7 +380,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -389,7 +389,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -398,7 +398,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -421,7 +421,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -430,7 +430,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -439,7 +439,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -448,7 +448,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -471,7 +471,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -480,7 +480,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -489,7 +489,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -498,7 +498,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -521,7 +521,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -530,7 +530,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -539,7 +539,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -548,7 +548,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -571,7 +571,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -580,7 +580,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -589,7 +589,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -598,7 +598,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -621,7 +621,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -630,7 +630,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -639,7 +639,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -648,7 +648,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -671,7 +671,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -680,7 +680,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -689,7 +689,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -698,7 +698,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -721,7 +721,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -730,7 +730,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -739,7 +739,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -748,7 +748,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -771,7 +771,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -780,7 +780,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -789,7 +789,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -798,7 +798,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -821,7 +821,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -830,7 +830,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -839,7 +839,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -848,7 +848,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -870,7 +870,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -879,7 +879,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -888,7 +888,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -897,7 +897,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -919,7 +919,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -928,7 +928,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -937,7 +937,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -946,7 +946,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -968,7 +968,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -977,7 +977,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -986,7 +986,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -995,7 +995,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1018,7 +1018,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1027,7 +1027,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1036,7 +1036,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1045,7 +1045,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1068,7 +1068,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1077,7 +1077,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1086,7 +1086,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1095,7 +1095,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1118,7 +1118,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1127,7 +1127,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1136,7 +1136,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1145,7 +1145,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1168,7 +1168,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1177,7 +1177,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1186,7 +1186,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1195,7 +1195,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1218,7 +1218,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1227,7 +1227,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1236,7 +1236,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1245,7 +1245,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1268,7 +1268,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1277,7 +1277,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1286,7 +1286,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1295,7 +1295,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1317,7 +1317,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1326,7 +1326,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1335,7 +1335,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1344,7 +1344,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1366,7 +1366,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1375,7 +1375,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1384,7 +1384,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1393,7 +1393,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1416,7 +1416,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1425,7 +1425,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1434,7 +1434,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1443,7 +1443,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1466,7 +1466,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1475,7 +1475,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1484,7 +1484,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1493,7 +1493,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1516,7 +1516,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1525,7 +1525,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1534,7 +1534,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1543,7 +1543,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1566,7 +1566,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1575,7 +1575,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1584,7 +1584,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1593,7 +1593,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1616,7 +1616,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1625,7 +1625,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1634,7 +1634,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1643,7 +1643,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1666,7 +1666,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -1675,7 +1675,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play2"
@@ -1684,7 +1684,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -1693,7 +1693,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play4"
@@ -1712,7 +1712,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

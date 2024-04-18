@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_62d916e47515ce99",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -21,7 +21,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74b6a4e5473138f8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -33,7 +33,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "seraph_end_game_pose",

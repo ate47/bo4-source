@@ -43,7 +43,7 @@
             "colorid": "#hash_6f55f70f7a2c4822"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "teamcolorfx",
     "vmtype": "both",
     "name": "teamcolorfx_koth_edge_marker"

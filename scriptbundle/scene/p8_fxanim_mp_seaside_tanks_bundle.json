@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d77b8326975301c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_534ba6a0daa69b33",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_395f881c27619c42",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -56,7 +56,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_mp_seaside_tanks_bundle",

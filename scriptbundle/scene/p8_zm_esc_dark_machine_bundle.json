@@ -9,11 +9,11 @@
                     "entry": [
                         {
                             "anim": "#hash_d796100327cfca4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "cameraswitcher": "c_vign_zm_mob_richtofen_into_machine",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "rich_in"
@@ -30,7 +30,7 @@
                     "entry": [
                         {
                             "anim": "#hash_740567ac443aa4fb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle"
@@ -39,11 +39,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4633cab332c57c6f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_3a7fe54367adb3a2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "rich_in"
@@ -55,7 +55,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "polishing",
     "type": "scene",
     "name": "p8_zm_esc_dark_machine_bundle",

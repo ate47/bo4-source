@@ -118,7 +118,7 @@
             "var_85589312": 15
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "deathcircle",
     "name": "wz_open_skyscraper_death_circles_default",
     "var_7a60538a": 7,

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_spectre_play",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_spectre_play5",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 5"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_spectre_play6",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 6"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_spectre_play4",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 4",
@@ -52,7 +52,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75e3339b9d9845aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -61,7 +61,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75e3339b9d9845aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -70,7 +70,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75e3339b9d9845aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -79,7 +79,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75e3339b9d9845aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -97,7 +97,7 @@
                     "entry": [
                         {
                             "anim": "#hash_bc6cdd57578a11b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -106,7 +106,7 @@
                     "entry": [
                         {
                             "anim": "#hash_bc6cdd57578a11b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -115,7 +115,7 @@
                     "entry": [
                         {
                             "anim": "#hash_bc6cdd57578a11b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -124,7 +124,7 @@
                     "entry": [
                         {
                             "anim": "#hash_bc6cdd57578a11b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -143,7 +143,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36888ae4e8f7c4c2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -152,7 +152,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36888ae4e8f7c4c2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -161,7 +161,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36888ae4e8f7c4c2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -170,7 +170,7 @@
                     "entry": [
                         {
                             "anim": "#hash_36888ae4e8f7c4c2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -189,7 +189,7 @@
                     "entry": [
                         {
                             "anim": "#hash_368889e4e8f7c30f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -198,7 +198,7 @@
                     "entry": [
                         {
                             "anim": "#hash_368889e4e8f7c30f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -207,7 +207,7 @@
                     "entry": [
                         {
                             "anim": "#hash_368889e4e8f7c30f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -216,7 +216,7 @@
                     "entry": [
                         {
                             "anim": "#hash_368889e4e8f7c30f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -235,7 +235,7 @@
                     "entry": [
                         {
                             "anim": "#hash_185be674961567da",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -244,7 +244,7 @@
                     "entry": [
                         {
                             "anim": "#hash_185be674961567da",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -253,7 +253,7 @@
                     "entry": [
                         {
                             "anim": "#hash_185be674961567da",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -262,7 +262,7 @@
                     "entry": [
                         {
                             "anim": "#hash_185be674961567da",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -281,7 +281,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5001e13394dd374e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -290,7 +290,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5001e13394dd374e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -299,7 +299,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5001e13394dd374e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -308,7 +308,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5001e13394dd374e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -323,7 +323,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

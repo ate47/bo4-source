@@ -6,7 +6,7 @@
             "effecttype": "normal"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "weapondamageeffectype",
     "name": "damageeffecttype_normal",
     "var_c672f15f": 1

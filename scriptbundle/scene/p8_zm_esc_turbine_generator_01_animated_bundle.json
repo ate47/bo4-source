@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4bb48287128a87a1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1c61477afcbcf058",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_50f8383ced35d1a5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -32,7 +32,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_zm_esc_turbine_generator_01_animated_bundle",

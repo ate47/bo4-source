@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53bb7d970f369bd0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a2ece7ba58573fb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3b1ef1925070fbd3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -57,7 +57,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53bb80970f36a0e9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -71,7 +71,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg1_to_stg2_01",

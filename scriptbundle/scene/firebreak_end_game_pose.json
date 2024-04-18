@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2546553dfc2e096f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -21,7 +21,7 @@
                     "entry": [
                         {
                             "anim": "#hash_9d8c85c079f18bb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -33,7 +33,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "firebreak_end_game_pose",

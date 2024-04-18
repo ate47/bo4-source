@@ -147,8 +147,8 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
                     struct.var_7a993bec = playsound(0, #"hash_6ee08a10b9c18ba7", struct.origin);
                     continue;
                 }
-                var_94450cf4 = var_ffe2b6da - 1;
-                sound_alias = #"hash_5ae0628f3d30469e" + var_94450cf4;
+                sound_id = var_ffe2b6da - 1;
+                sound_alias = #"hash_5ae0628f3d30469e" + sound_id;
                 struct.var_7a993bec = playsound(0, sound_alias, struct.origin);
             }
             var_e668b651 = 0;
@@ -176,8 +176,8 @@ function function_44e1ce2e(var_ffe2b6da = 0) {
                     struct.var_7a993bec = playsound(0, #"hash_6ee08a10b9c18ba7", struct.origin);
                     continue;
                 }
-                var_94450cf4 = var_ffe2b6da - 1;
-                sound_alias = #"hash_59821865a3dff39c" + var_94450cf4;
+                sound_id = var_ffe2b6da - 1;
+                sound_alias = #"hash_59821865a3dff39c" + sound_id;
                 struct.var_7a993bec = playsound(0, sound_alias, struct.origin);
             }
             var_e668b651 = 0;

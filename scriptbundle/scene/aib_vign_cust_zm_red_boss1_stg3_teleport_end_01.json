@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3d93bfbb31079ecf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_256f39ab0903ccae",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2085cd201a9bd7cc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -52,7 +52,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg3_teleport_end_01",

@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1790eb30a2b66540",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4fbb9524a3748abc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_54588538675f3d45",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "outro"
@@ -35,7 +35,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_blightfather_dth_ww_xbow",

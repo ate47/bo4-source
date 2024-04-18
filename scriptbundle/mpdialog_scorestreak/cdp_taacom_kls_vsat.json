@@ -2,7 +2,7 @@
     "destroyed": "#hash_2485bb778c7c43d4",
     "ready": "#hash_4e1f3571ebbbb30c",
     "beinghacked": "#hash_158c8aa1a3e0a0a1",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "timecheck": "#hash_4017fa18bc45184b",

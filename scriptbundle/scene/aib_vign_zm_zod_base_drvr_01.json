@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2aa522437292029f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5453e4c6ed4bd8cf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_640cdaf1ff67a0fb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a28afdad4a0e00b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -56,7 +56,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_zod_base_drvr_01",

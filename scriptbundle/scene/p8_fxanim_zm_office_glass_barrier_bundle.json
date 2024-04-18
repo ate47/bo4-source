@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e08c69998202ceb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 1,
@@ -18,7 +18,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c7d73b59cc0b8db",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.85,
@@ -30,7 +30,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c7d74b59cc0ba8e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.7,
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c7d75b59cc0bc41",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.55,
@@ -54,7 +54,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c7d76b59cc0bdf4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.4,
@@ -66,7 +66,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c7d77b59cc0bfa7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.25,
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c7d78b59cc0c15a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.05,
@@ -98,7 +98,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "both",

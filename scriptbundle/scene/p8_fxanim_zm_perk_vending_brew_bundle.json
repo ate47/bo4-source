@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53e7adfb531fbe73",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "off"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21fe97733d3a7147",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "on"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_de6eb4ef1555330",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "disable"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1e654d3a520969dd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "use1"
@@ -45,7 +45,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_perk_vending_brew_bundle",

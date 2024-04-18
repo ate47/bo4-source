@@ -428,7 +428,7 @@ function function_6db15645(target) {
     forward = anglestoforward(target.angles);
     pos = pos - forward * 5;
     self thread function_a78e666b(target, tag, pos, 1);
-    target thread function_9cf3b3a0(self);
+    target thread watchtargetdeath(self);
 }
 
 // Namespace seeker_mine_mp/seeker_mine
@@ -502,7 +502,7 @@ function function_9a66b97b(target, tag, offset = (0, 0, 0), tagpos, seekermine) 
 // Params 1, eflags: 0x1 linked
 // Checksum 0x642dc697, Offset: 0x2270
 // Size: 0x164
-function function_9cf3b3a0(seekermine) {
+function watchtargetdeath(seekermine) {
     seekermine endon(#"death");
     params = self waittill(#"death");
     var_86e4cf17 = isdefined(params.attacker) && isplayer(params.attacker) && isdefined(seekermine.owner) && seekermine.owner == params.attacker;
@@ -545,7 +545,7 @@ function function_7fe95ae0(var_1a9a5cee) {
 // Params 3, eflags: 0x1 linked
 // Checksum 0xfbd2af2e, Offset: 0x24a8
 // Size: 0x156
-function function_724e8f1c(var_26b2b1bb, var_a1bf3237, depth) {
+function function_724e8f1c(var_26b2b1bb, arcsource, depth) {
     /#
         if (isgodmode(self)) {
             return 0;
@@ -553,14 +553,14 @@ function function_724e8f1c(var_26b2b1bb, var_a1bf3237, depth) {
     #/
     if (isplayer(self)) {
         if (!(isdefined(self.var_cf18d244) && self.var_cf18d244)) {
-            self function_3653370a(var_26b2b1bb, var_a1bf3237);
+            self function_3653370a(var_26b2b1bb, arcsource);
         } else {
             self.var_dda9b735.isshocked = 1;
             self thread function_e380fde7(undefined, "gestable_shocked_reaction", level.var_9d47488.tunables.var_1f80b74 + level.var_9d47488.tunables.var_9abfd5cf, 1, 0);
-            self.seekermine = var_a1bf3237;
+            self.seekermine = arcsource;
             self.var_8103e91a = var_26b2b1bb;
         }
-        function_1750438e(level.var_9d47488.tunables.var_1aab44e0, var_a1bf3237.arcweapon, var_a1bf3237.owner);
+        function_1750438e(level.var_9d47488.tunables.var_1aab44e0, arcsource.arcweapon, arcsource.owner);
         return self.seeker_mine_se.var_77449e9;
     }
     return 0;

@@ -5,7 +5,7 @@
         }
     ],
     "description": "#hash_5f1c07e495c6fe3d",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#attach_t8_wz_pickup_pistol_grip",
     "attachslotbody": 1,
     "type": "itemspawnentry",

@@ -2451,12 +2451,12 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
     }
     itementry = item.itementry;
     itemid = item.id;
-    if (isdefined(item.itementry.var_456aa154)) {
-        var_456aa154 = getscriptbundle(item.itementry.var_456aa154);
-        if (isdefined(var_456aa154)) {
-            itementry = var_456aa154;
+    if (isdefined(item.itementry.actionregisterweapon)) {
+        actionregisterweapon = getscriptbundle(item.itementry.actionregisterweapon);
+        if (isdefined(actionregisterweapon)) {
+            itementry = actionregisterweapon;
         }
-        var_8c36ae16 = function_4ba8fde(item.itementry.var_456aa154);
+        var_8c36ae16 = function_4ba8fde(item.itementry.actionregisterweapon);
         if (isdefined(var_8c36ae16)) {
             itemid = var_8c36ae16.id;
         }

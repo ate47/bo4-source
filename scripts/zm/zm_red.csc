@@ -223,7 +223,7 @@ function function_ef690ed4(localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 1, eflags: 0x1 linked
 // Checksum 0x1200bb11, Offset: 0x12b0
 // Size: 0xf4
-function function_ade26abd(var_f9d0a510) {
+function function_ade26abd(str_dir) {
     self endon(#"death");
     var_10d4f67d = level.var_1c8295a8;
     if (!isdefined(var_10d4f67d)) {
@@ -231,7 +231,7 @@ function function_ade26abd(var_f9d0a510) {
     }
     var_10d4f67d endon(#"death");
     str_tag = "j_wingulna_le";
-    if (var_f9d0a510 == #"right") {
+    if (str_dir == #"right") {
         str_tag = "j_wingulna_ri";
     }
     level beam::launch(var_10d4f67d, str_tag, self, "j_spine4", "beam8_zm_red_peg_lightning_strike", 1);

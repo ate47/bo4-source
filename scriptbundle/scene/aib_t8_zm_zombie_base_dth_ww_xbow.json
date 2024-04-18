@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#ai_t8_zm_zombie_base_dth_ww_xbow_intro",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#ai_t8_zm_zombie_base_dth_ww_xbow_loop",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -26,7 +26,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_zombie_base_dth_ww_xbow",

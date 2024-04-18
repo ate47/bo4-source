@@ -5,7 +5,7 @@
     "var_68bb30c1": "#hash_4ac6094df6a00dd",
     "exertpainunderwater": "#vox_marl_exert_underwater_air_low",
     "exertpaindrowning": "#vox_marl_exert_underwater_air_low",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "exertbreathesprinting": "#hash_10abd8aa0f0804b9",
     "type": "mpdialog_player",
     "exertradiationselfend": "#hash_e1964a1fd8dd810",

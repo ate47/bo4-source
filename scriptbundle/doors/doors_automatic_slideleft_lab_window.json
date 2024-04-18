@@ -5,7 +5,7 @@
     "var_e182494f": 1,
     "door_unlock_method": "default",
     "var_66bbc6d6": "1.0",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_bbbdcca7": "1.0",
     "model": "#p8_usa_door_glass_sliding_left_01",
     "type": "doors",

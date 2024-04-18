@@ -127,7 +127,7 @@ function function_c11071a8() {
 // Params 2, eflags: 0x0
 // Checksum 0xb7a62c82, Offset: 0x858
 // Size: 0x9c
-function function_3b69388(weapon, slot) {
+function abilities_give(weapon, slot) {
     if (isdefined(self._gadgets_player[slot]) && self hasweapon(self._gadgets_player[slot])) {
         self gadgetpowerreset(slot, 1);
         self takeweapon(self._gadgets_player[slot]);

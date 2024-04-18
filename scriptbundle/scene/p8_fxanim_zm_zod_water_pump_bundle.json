@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_77f084260d41c12d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_a5994b0edf7a830",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "on"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6c1c8aff6df2a5ce",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "end"
@@ -37,7 +37,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_water_pump_bundle",

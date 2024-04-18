@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3f5f9cede367e24b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_333c74912f4eb9bd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_639dfede93db4c8f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "opening_withpart"
@@ -28,11 +28,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1a36cdc20da7315f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_936d4d0391b8494",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "removepart_close"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_936d4d0391b8494",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "closed_nopart"
@@ -50,7 +50,7 @@
                     "entry": [
                         {
                             "anim": "#hash_29ed5acf5c7c5f0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open_nopart"
@@ -59,11 +59,11 @@
                     "entry": [
                         {
                             "anim": "#hash_a87d5bcedd44ede",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_13f301f1d17e69f3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "addpart_close"
@@ -72,7 +72,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13f301f1d17e69f3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "closed_withpart"
@@ -81,7 +81,7 @@
                     "entry": [
                         {
                             "anim": "#hash_639dfede93db4c8f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open_withpart"
@@ -90,7 +90,7 @@
                     "entry": [
                         {
                             "anim": "#hash_791cca47776db067",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "closing_nopart"
@@ -99,7 +99,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6696c423aee36f42",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "opening_nopart"
@@ -111,7 +111,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_whi_server_bundle",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3475f0b9b2ad7422",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "intro"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_257b70dc93fcf65b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "loop"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_c374b87ebb4961d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "release"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "scene_zm_mansn_wm_fem_fullsequence",

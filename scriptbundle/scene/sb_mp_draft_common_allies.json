@@ -134,7 +134,7 @@
     ],
     "scenetype": "scene",
     "cameraswitcher": "ui_cam_draft_common",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

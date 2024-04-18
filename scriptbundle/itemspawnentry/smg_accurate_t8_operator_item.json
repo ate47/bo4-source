@@ -21,7 +21,7 @@
     ],
     "amount": 1,
     "description": "#hash_6748c04dd47af798",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_3e688854": -2,
     "weapon": "weapon#smg_accurate_t8_operator_wz",
     "attachslotbody": 1,

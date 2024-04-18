@@ -376,7 +376,7 @@ function function_ac06ab3a() {
     level.var_804a56e3 = 0;
     level.var_ba07f1de = zm_hms_util::function_bffcedde("white_audio_reel", "targetname", "script_int");
     foreach (var_2e2b46e8 in level.var_ba07f1de) {
-        var_2e2b46e8 zm_item_pickup::function_e8661563(&function_1792ae3, 1);
+        var_2e2b46e8 zm_item_pickup::item_pickup_init(&function_1792ae3, 1);
     }
     level.var_e046b238 = struct::get(#"hash_5201d44a6f57e32a");
     level.var_94b00cff = spawn("script_model", level.var_e046b238.origin);

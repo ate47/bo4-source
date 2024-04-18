@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_29605567280479a4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1322357d1955dda0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1d852f44192de9db",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.5,
@@ -40,7 +40,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "both",

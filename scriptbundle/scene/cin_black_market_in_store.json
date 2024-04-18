@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf5200ce03f05b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf5100ce03eea8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf5400ce03f3c1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_15508fb4dd9d57c1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_155090b4dd9d5974",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf5500ce03f574",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf5800ce03fa8d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 7"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf5700ce03f8da",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 8"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf4a00ce03e2c3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 9"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecf4900ce03e110",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 10"
@@ -96,7 +96,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecbcc00ce00d6d2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 11"
@@ -105,7 +105,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecbcd00ce00d885",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 12"
@@ -114,7 +114,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ecbca00ce00d36c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 13"
@@ -172,7 +172,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

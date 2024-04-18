@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5cbbbe1e7b021ef1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ca33d71689e20ac",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "stop",
@@ -32,7 +32,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5d9710cc5d4d5a8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_69b430eda214515f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "stop",
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75e304d593de369b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -67,7 +67,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ae79c7a8e9d44e6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "stop",
@@ -80,7 +80,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_engine_pistons_full_speed_01_bundle",

@@ -590,17 +590,17 @@ function function_da10fc8f(localclientnum, var_da239274) {
 // Params 4, eflags: 0x0
 // Checksum 0x93fb08eb, Offset: 0x3ef8
 // Size: 0x254
-function function_93ccf33d(var_62d90151, var_71bac06, &var_37451b86, &var_7f0244ba) {
+function function_93ccf33d(var_62d90151, entrytype, &var_37451b86, &var_7f0244ba) {
     /#
         foreach (i, item in var_62d90151) {
-            entry = {#index:i, #type:var_71bac06, #item:item};
+            entry = {#index:i, #type:entrytype, #item:item};
             if (isdefined(var_37451b86[item.name])) {
-                if (!isdefined(var_37451b86[item.name].options[var_71bac06])) {
-                    var_37451b86[item.name].options[var_71bac06] = [];
-                } else if (!isarray(var_37451b86[item.name].options[var_71bac06])) {
-                    var_37451b86[item.name].options[var_71bac06] = array(var_37451b86[item.name].options[var_71bac06]);
+                if (!isdefined(var_37451b86[item.name].options[entrytype])) {
+                    var_37451b86[item.name].options[entrytype] = [];
+                } else if (!isarray(var_37451b86[item.name].options[entrytype])) {
+                    var_37451b86[item.name].options[entrytype] = array(var_37451b86[item.name].options[entrytype]);
                 }
-                var_37451b86[item.name].options[var_71bac06][var_37451b86[item.name].options[var_71bac06].size] = entry;
+                var_37451b86[item.name].options[entrytype][var_37451b86[item.name].options[entrytype].size] = entry;
                 continue;
             }
             if (i != 0) {

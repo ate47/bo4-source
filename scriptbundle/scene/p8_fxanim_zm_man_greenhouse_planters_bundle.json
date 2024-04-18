@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_ddae2170766a28a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7bbbda4d61ec67e1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2db32e7028d42180",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b0e56365ca012f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -76,7 +76,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6024dd7aa1307706",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -94,7 +94,7 @@
                     "entry": [
                         {
                             "anim": "#hash_50aad7a8342662bd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -112,7 +112,7 @@
                     "entry": [
                         {
                             "anim": "#hash_257a9975dc40a183",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -130,7 +130,7 @@
                     "entry": [
                         {
                             "anim": "#hash_79eb064b8513b040",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -144,7 +144,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_greenhouse_planters_bundle",

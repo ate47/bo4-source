@@ -1,5 +1,5 @@
 {
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "scope_mms_smg_capacity_restriction",
     "displayname": "#weapon/smg_capacity_t8",

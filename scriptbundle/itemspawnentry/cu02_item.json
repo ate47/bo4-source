@@ -29,7 +29,7 @@
         }
     ],
     "description": "#hash_4a80e30eedb8e675",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_eda4062b": 4,
     "var_e8b98a8a": "#hash_104a9e123cb916f8",
     "model": "#p8_wz_cu_handwritten_note",

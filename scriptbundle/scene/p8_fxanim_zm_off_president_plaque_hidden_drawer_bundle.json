@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -14,7 +14,7 @@
                     "entry": [
                         {
                             "anim": "#hash_fb9d3fe955cbfd4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fall"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_18fceb39e20f03dd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -35,7 +35,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_off_president_plaque_hidden_drawer_bundle",

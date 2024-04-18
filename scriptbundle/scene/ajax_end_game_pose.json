@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_34c4d82f2166c712",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -21,7 +21,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5318a36ff725299b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -37,7 +37,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2b837266ac884c6d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -49,7 +49,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "ajax_end_game_pose",

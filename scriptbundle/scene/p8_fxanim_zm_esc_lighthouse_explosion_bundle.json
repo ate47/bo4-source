@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_esc_lighthouse_explosion_pristine_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_esc_lighthouse_explosion_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_45f3ba9d498d523c",
@@ -31,7 +31,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_lighthouse_explosion_bundle",

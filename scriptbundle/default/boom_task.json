@@ -1,6 +1,6 @@
 {
     "callingtask": "#explosions",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_calling_tasks_explosion",
     "dailytarget": 100,
     "name": "boom_task",

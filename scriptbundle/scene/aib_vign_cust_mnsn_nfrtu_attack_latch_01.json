@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60541806f8a05274",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30a3ae992c453f0c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -38,7 +38,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_mnsn_nfrtu_attack_latch_01",

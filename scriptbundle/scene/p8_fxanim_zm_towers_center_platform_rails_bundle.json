@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2912a47045c877d8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a07eac1dcfc681b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_76ce4243149dd4f4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -57,7 +57,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3414202a76ec6057",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -74,7 +74,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f1a3b5d766f55e7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -91,7 +91,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6c8025cc49dceec4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -104,7 +104,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_towers_center_platform_rails_bundle",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_cargo_hold_net_idle_02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_cargo_hold_net_fall_02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6922a2e585493823",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_cargo_hold_net_idle_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -49,7 +49,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_zod_cargo_hold_net_fall_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_69877a7c894a3e60",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -74,7 +74,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_idle_03_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -83,7 +83,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_fall_03_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -92,7 +92,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_rise_03_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -109,7 +109,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_idle_02_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -118,7 +118,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_fall_02_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -127,7 +127,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_rise_02_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -144,7 +144,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_idle_01_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -153,7 +153,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_fall_01_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -162,7 +162,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_debris_rise_01_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -179,7 +179,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_idle_03_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -188,7 +188,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_fall_03_smod",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -197,7 +197,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_rise_03_smod",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -214,7 +214,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_rope_idle_01_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -223,7 +223,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_rope_fall_01_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -232,7 +232,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_rope_rise_01_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -249,7 +249,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_idle_05_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -258,7 +258,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_fall_05_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -267,7 +267,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_rise_05_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -284,7 +284,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_idle_04_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -293,7 +293,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_fall_04_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -302,7 +302,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_rise_04_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -319,7 +319,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_idle_06_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -328,7 +328,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_fall_06_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -337,7 +337,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_rise_06_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -354,7 +354,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_idle_07_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -363,7 +363,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_fall_07_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -372,7 +372,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_zod_cargo_hold_net_rise_07_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -385,7 +385,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

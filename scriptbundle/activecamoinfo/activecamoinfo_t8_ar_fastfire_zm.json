@@ -54,7 +54,7 @@
         }
     ],
     "var_e0b0d8cc": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "activecamoinfo",
     "vmtype": "both",
     "name": "activecamoinfo_t8_ar_fastfire_zm",

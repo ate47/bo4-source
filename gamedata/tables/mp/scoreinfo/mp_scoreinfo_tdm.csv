@@ -257,7 +257,7 @@
 #shroud_shutdown,0,50,50,0,0,false,0,false,#hash_6cd4f1372be03b62,#stats_shroud_shutdown,#,true,true,true,#,#,#,#,#,false,false,50,?0,0
 #hash_2cc3287407441d3e,0,50,50,0,0,false,0,false,#hash_705d7813dd1e1775,#stats_seeker_destroy,#,true,true,true,#,#,#,#,#,false,false,50,?0,0
 #hash_707b29867fba333d,0,50,50,0,0,false,0,false,#hash_617265d2c4d8d9ac,#stats_assault_pack_destroy,#,true,true,true,#,#,#,#,#,false,false,50,?0,0
-#hash_17d04d85285582ab,0,50,50,0,0,false,0,false,#hash_7f6eeb72160f9576,#stats_tac_deploy_destroy,#,true,true,true,#,#,#,#,#,false,false,50,?0,0
+#forward_spawn_deactivated,0,50,50,0,0,false,0,false,#hash_7f6eeb72160f9576,#stats_tac_deploy_destroy,#,true,true,true,#,#,#,#,#,false,false,50,?0,0
 #hawk_destroyed,0,50,50,0,0,false,0,false,#hash_3e33bac767c32427,#hash_15247715242be695,#,true,true,true,#,#,#,#,#,false,false,50,?0,0
 #killed_attacker,0,25,25,0,0,false,0,true,#hash_29c0e1300a537937,#stats_killed_attacker,#,true,true,false,#,#,#,#,#,false,false,0,?0,0
 #killed_defender,0,25,25,0,0,false,0,true,#hash_3487bb65b11c038f,#stats_killed_defender,#,true,true,false,#,#,#,#,#,false,false,0,?0,0

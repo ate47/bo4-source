@@ -397,7 +397,7 @@ function iskillstreaksenabled() {
 function private function_78e3e07b(team, index, objective_strings) {
     setobjectivetext(team, objective_strings.text);
     if (level.splitscreen) {
-        setobjectivescoretext(team, objective_strings.var_27a7a289);
+        setobjectivescoretext(team, objective_strings.score_text);
     } else {
         setobjectivescoretext(team, objective_strings.var_4687634f);
     }

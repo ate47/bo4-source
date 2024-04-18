@@ -1,8 +1,8 @@
 {
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mission_settings",
     "var_b70a22c2": "ctf",
-    "var_86f2a56": 2,
+    "msbatterycount": 2,
     "vmtype": "both",
     "name": "mission_settings_ctf"
 }

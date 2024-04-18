@@ -337,14 +337,14 @@ function function_76ad6828(position) {
         var_a91da4b7 = self.script_noteworthy + "_player";
         var_bda7a712 = self.script_noteworthy + "_vehicle";
         var_68dc3bdf = getent(var_a91da4b7, "targetname");
-        var_42611516 = getent(var_bda7a712, "targetname");
-        if (isdefined(var_68dc3bdf) && isdefined(var_42611516)) {
+        t_damage_vehicle = getent(var_bda7a712, "targetname");
+        if (isdefined(var_68dc3bdf) && isdefined(t_damage_vehicle)) {
             var_d011282b = distancesquared(self.origin, position.origin);
             while (var_d011282b > 16) {
                 var_d011282b = distancesquared(self.origin, position.origin);
                 if (var_d011282b <= 5000) {
                     self thread function_777e012d(var_68dc3bdf);
-                    self thread function_26ab1b5e(var_42611516);
+                    self thread function_26ab1b5e(t_damage_vehicle);
                     self thread elevator_kill_player(var_68dc3bdf);
                 }
                 waitframe(1);

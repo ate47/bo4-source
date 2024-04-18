@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_19aa392811e15d37",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crumble"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4238bce772879302",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "rise",
@@ -29,7 +29,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_ka01_bundle",

@@ -1,6 +1,6 @@
 {
     "mod": "MOD_TRIGGER_HURT",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_trigger_hurt",
     "displayname": "#hash_2b01f6e0ab206ffd",

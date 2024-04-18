@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_54ea8570e0244ea4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_zombie_base_trv_bow_mantle_420",

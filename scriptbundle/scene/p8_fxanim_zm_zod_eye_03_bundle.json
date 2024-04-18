@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_532417549af66d4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "ilde"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_38b27576336531d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle1"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6a75c26877f3e5e6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle2"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1aac8126dbc153d6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "roar"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3b984857d9eb63",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "roar1"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53aba2b7c90243a0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "roar2"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_24f221de31f87832",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pain"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_45d4746e9d677506",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "charge"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_493cdfb7c852b2ad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "charge_blast"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47214f0bad95310a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "arrive",
@@ -97,7 +97,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43a4009f0a2b6378",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "leave",
@@ -107,7 +107,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1b5216b6e376e933",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_4458b3c865174731",
@@ -118,7 +118,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4473544a8b6b64c3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crack_leave",
@@ -128,7 +128,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ce2f3501a78ff8f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crack_arrive",
@@ -138,7 +138,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3e3435a5c4a60400",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_5d304a67420d3dcc",
@@ -149,7 +149,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52041fcbb75b4cea",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "break_arrive",
@@ -159,7 +159,7 @@
                     "entry": [
                         {
                             "anim": "#hash_64ba63f274cbb658",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "break_leave",
@@ -169,7 +169,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3cb37942fcb53600",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "death",
@@ -182,7 +182,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_eye_03_bundle",

@@ -1,6 +1,6 @@
 {
     "var_2ecceeab": "#overwatch_helicopter_kill",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "overwatch_helicopter_scoreevents",

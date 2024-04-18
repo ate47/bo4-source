@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4f4c43b7c296ebb4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_40c843c63e919617",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d536437fc80ff6e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_376658b03a576149",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2b3342110b984848",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6cdfe66f1bf8158b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7525628cfab225b2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 7"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_17971b2bd4d6ed6d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 8"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_61996d35fdda82dc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 9"
@@ -90,7 +90,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_telescope_control_gears_bundle",

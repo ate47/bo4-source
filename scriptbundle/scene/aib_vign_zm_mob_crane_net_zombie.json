@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3b1db5a85673abd0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "devstate": "initial",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "anim": "#hash_22c7807cff7cd6be",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.1,
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

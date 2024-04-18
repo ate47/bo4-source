@@ -304,7 +304,7 @@ function drop_robot() {
     drop_origin = movetrigger.origin;
     drop_height = isdefined(level.escort_drop_height) ? level.escort_drop_height : supplydrop::getdropheight(drop_origin);
     heli_drop_goal = (drop_origin[0], drop_origin[1], drop_height);
-    level.var_234c4109 = drop_origin;
+    level.robotstart = drop_origin;
     goalpath = undefined;
     dropoffset = (0, -120, 0);
     goalpath = supplydrop::supplydrophelistartpath_v2_setup(heli_drop_goal, dropoffset);
@@ -655,8 +655,8 @@ function function_dd7755c1() {
         if (isdefined(self.beingmicrowavedby) && self.beingmicrowavedby.size > 0) {
             var_628b766f = getarraykeys(self.beingmicrowavedby);
             foreach (var_318fa3a5 in var_628b766f) {
-                var_24c04bd9 = getentbynum(var_318fa3a5);
-                if (isdefined(var_24c04bd9) && isdefined(var_24c04bd9.weapon) && var_24c04bd9.weapon.name === #"ability_smart_cover") {
+                barrierent = getentbynum(var_318fa3a5);
+                if (isdefined(barrierent) && isdefined(barrierent.weapon) && barrierent.weapon.name === #"ability_smart_cover") {
                     animrate = animrate - 0.3;
                     break;
                 }
@@ -940,13 +940,13 @@ function function_ba95878f() {
         if (self.moving) {
             distance = 0;
             if (self.pathindex > 0) {
-                distance = distance + distance(level.var_234c4109, self.patharray[0]);
+                distance = distance + distance(level.robotstart, self.patharray[0]);
                 for (i = 1; i < self.pathindex; i++) {
                     distance = distance + distance(self.patharray[i - 1], self.patharray[i]);
                 }
                 distance = distance + distance(self.patharray[self.pathindex - 1], self.origin);
             } else {
-                distance = distance + distance(level.var_234c4109, self.origin);
+                distance = distance + distance(level.robotstart, self.origin);
             }
             if (distance > self.distancetraveled) {
                 self.distancetraveled = distance;

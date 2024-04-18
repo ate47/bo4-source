@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7e2b68590d0095bf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43581ab456bdada1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "damagethreshold": 0.1,
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43e898ce83559711",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 1,
@@ -57,7 +57,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_gp_pigeon_roof_slanted_01_sbundle",

@@ -440,7 +440,7 @@ function updateteamclientfield() {
 // Params 1, eflags: 0x4
 // Checksum 0x804aaa24, Offset: 0x2158
 // Size: 0x58
-function private function_62dd771f(gameobject) {
+function private iszonecontested(gameobject) {
     if (gameobject.touchlist[game.attackers].size > 0 && gameobject.touchlist[game.defenders].size > 0) {
         return true;
     }
@@ -456,7 +456,7 @@ function onupdateuserate() {
         self.iscontested = 0;
         self.var_464f0169 = 0;
     }
-    self.iscontested = function_62dd771f(self);
+    self.iscontested = iszonecontested(self);
     if (self.iscontested) {
         if (!self.var_464f0169) {
             foreach (playerlist in self.touchlist) {
@@ -485,7 +485,7 @@ function onupdateuserate() {
 function ontouchuse(sentient) {
     if (isplayer(sentient)) {
         self.var_464f0169 = self.iscontested;
-        if (function_62dd771f(self) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
+        if (iszonecontested(self) && (isdefined(sentient.var_c8d27c06) ? sentient.var_c8d27c06 : 0) < gettime()) {
             sentient playsoundtoplayer(#"hash_5daa27b37c13bc01", sentient);
             sentient.var_c8d27c06 = gettime() + 5000;
         }

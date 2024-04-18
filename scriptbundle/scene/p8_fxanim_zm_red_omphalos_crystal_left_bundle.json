@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3b950381754fa214",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "break01"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_55a06e514996cdf7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "break02"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1a9e8667e6e7d24e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "destroy"
@@ -37,7 +37,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_omphalos_crystal_left_bundle",

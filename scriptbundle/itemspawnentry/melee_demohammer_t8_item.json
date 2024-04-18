@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_7b56826ef42529f5",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#melee_demohammer_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 180,

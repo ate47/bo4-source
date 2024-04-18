@@ -11,7 +11,7 @@
             "effecttype": "flash"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "weapondamageeffectype",
     "name": "damageeffecttype_flash",
     "var_c672f15f": 2

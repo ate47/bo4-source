@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_pegasus_ride_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -22,7 +22,7 @@
                     "entry": [
                         {
                             "anim": "#hash_248375178d5cc98e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_334406affbfb42e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d1425fdf872a0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -72,7 +72,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "cin_zm_red_pegasus_ride",

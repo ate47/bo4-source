@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_t8_zm_mnsn_hallion_ent_over_wall_shot_01",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_t8_zm_mnsn_hallion_ent_over_wall_shot_02",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 2"
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_t8_zm_mnsn_hallion_ent_over_wall_shot_03",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 3"
@@ -34,7 +34,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_t8_zm_mnsn_hallion_ent_over_wall_shot_04",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 4",
@@ -52,7 +52,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f3bc0107e6a65a0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -62,7 +62,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f3bc3107e6a6ab9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -71,7 +71,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f3bc2107e6a6906",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -80,7 +80,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f3bc5107e6a6e1f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -95,7 +95,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_mnsn_hallion_intro",

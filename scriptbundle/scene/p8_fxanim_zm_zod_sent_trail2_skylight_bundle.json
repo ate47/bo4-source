@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2a39abe03980e309",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_2a39abe03980e309",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4982d9b1e85bb3ca",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "impact"
@@ -32,7 +32,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_sent_trail2_skylight_bundle",

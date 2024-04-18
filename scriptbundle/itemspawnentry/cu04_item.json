@@ -26,7 +26,7 @@
         }
     ],
     "description": "#hash_13d8fcc067f4d014",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_eda4062b": 3,
     "var_e8b98a8a": "#hash_31ed753676e47763",
     "model": "#p8_wz_cu_coin_fortune_bag_full",

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d3a4877062c98f6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 0.5,
@@ -17,7 +17,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3df6ef85a8578f3e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_132c9791": 1,
@@ -39,7 +39,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74a549ca9ab4c47f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -54,7 +54,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_gp_raven_eating_die_01_bundle",

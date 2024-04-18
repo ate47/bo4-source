@@ -16,7 +16,7 @@
     "var_aa7fbf8b": "tag_weapon_right",
     "var_20a1cc0c": 0.1,
     "var_5e937f7f": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_c83371f4": "#c_t8_zmb_dlc2_skeleton_spear",
     "type": "destructiblecharacterdef",
     "var_9fdd055b": "j_head",

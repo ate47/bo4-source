@@ -97,7 +97,7 @@
             "damagescale": 0.5
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "maxhealth": 180000,
     "var_e3ee7606": 12,
     "var_fc420d71": 0.1,

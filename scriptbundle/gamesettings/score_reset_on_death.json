@@ -1,6 +1,6 @@
 {
     "hinttext": "#hash_1ee60c43757662c4",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "score_reset_on_death",
     "displayname": "#hash_199f1ece5f588e4",

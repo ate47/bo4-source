@@ -5,7 +5,7 @@
         }
     ],
     "description": "#hash_532bf3ddcd502e01",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#attach_t8_optic_float_dot_world",
     "type": "itemspawnentry",
     "hintstring": "#hash_25c8019a42576b8f",

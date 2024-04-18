@@ -92,10 +92,10 @@ function private create_use_trigger() {
 // Size: 0x18e
 function private update_loop() {
     level endon(#"game_ended");
-    var_1a1c0d86 = 0;
+    updatepass = 0;
     while (true) {
         foreach (i, player in getplayers()) {
-            if (i % 5 == var_1a1c0d86) {
+            if (i % 5 == updatepass) {
                 if (!isdefined(player.var_8a022726)) {
                     continue;
                 }
@@ -106,7 +106,7 @@ function private update_loop() {
                 player function_2f394f36();
             }
         }
-        var_1a1c0d86 = (var_1a1c0d86 + 1) % 5;
+        updatepass = (updatepass + 1) % 5;
         waitframe(1);
     }
 }

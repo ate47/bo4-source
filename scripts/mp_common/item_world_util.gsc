@@ -404,7 +404,7 @@ function function_f73bc33(item) {
 // Checksum 0x9e6508a0, Offset: 0x19d8
 // Size: 0x4a
 function get_itemtype(itementry) {
-    return isdefined(itementry.var_456aa154) ? getscriptbundle(itementry.var_456aa154).name : itementry.name;
+    return isdefined(itementry.actionregisterweapon) ? getscriptbundle(itementry.actionregisterweapon).name : itementry.name;
 }
 
 // Namespace item_world_util/item_world_util

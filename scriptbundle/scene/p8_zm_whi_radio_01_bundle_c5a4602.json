@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_48db03e94fe48500",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_48db03e94fe48500",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_0"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74560cbcf88b1c2c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_0"
@@ -28,7 +28,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7f45d2262b64c886",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "forward_to_1"
@@ -37,7 +37,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4d840a09d7179f66",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "forward_to_2"
@@ -46,7 +46,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5665946f8f996ed6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "forward_to_3"
@@ -55,7 +55,7 @@
                     "entry": [
                         {
                             "anim": "#hash_257d64533c0538be",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "forward_to_4"
@@ -64,7 +64,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60aeb9859498344e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "forward_to_5"
@@ -73,7 +73,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ddf717f629168e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "forward_to_6"
@@ -82,7 +82,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1fd3640cc45ec148",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "backward_to_5"
@@ -91,7 +91,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ddf517f6291328",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "backward_to_4"
@@ -100,7 +100,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60aebb85949837b4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "backward_to_3"
@@ -109,7 +109,7 @@
                     "entry": [
                         {
                             "anim": "#hash_257d66533c053c24",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "backward_to_2"
@@ -118,7 +118,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5665926f8f996b70",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "backward_to_1"
@@ -127,7 +127,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4d840809d7179c00",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "backward_to_0"
@@ -136,7 +136,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48db04e94fe486b3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_1"
@@ -145,7 +145,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48db05e94fe48866",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_2"
@@ -154,7 +154,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48db06e94fe48a19",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_3"
@@ -163,7 +163,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48db07e94fe48bcc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_4"
@@ -172,7 +172,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48db08e94fe48d7f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_5"
@@ -181,7 +181,7 @@
                     "entry": [
                         {
                             "anim": "#hash_48db09e94fe48f32",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_off_6"
@@ -190,7 +190,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74560dbcf88b1ddf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_1"
@@ -199,7 +199,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74560ebcf88b1f92",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_2"
@@ -208,7 +208,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74560fbcf88b2145",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_3"
@@ -217,7 +217,7 @@
                     "entry": [
                         {
                             "anim": "#hash_745608bcf88b1560",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_4"
@@ -226,7 +226,7 @@
                     "entry": [
                         {
                             "anim": "#hash_745609bcf88b1713",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_5"
@@ -235,7 +235,7 @@
                     "entry": [
                         {
                             "anim": "#hash_74560abcf88b18c6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle_on_6"
@@ -247,7 +247,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "server",

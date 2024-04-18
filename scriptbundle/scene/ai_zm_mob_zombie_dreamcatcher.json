@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#ai_zombie_dreamcatcher_wallconsume_align_r",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -44,7 +44,7 @@
                     "entry": [
                         {
                             "anim": "#ai_zombie_dreamcatcher_wallconsume_align_f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -55,7 +55,7 @@
                     "entry": [
                         {
                             "anim": "#ai_zombie_dreamcatcher_wallconsume_align_l",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -79,7 +79,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_intro",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -88,7 +88,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_intro",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -97,7 +97,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_idle",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "idle",
@@ -107,11 +107,11 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_idle_twitch_scan",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#o_zombie_dreamcatcher_idle",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "scan",
@@ -121,11 +121,11 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_idle_twitch_shake",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#o_zombie_dreamcatcher_idle",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shake",
@@ -135,11 +135,11 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_idle_twitch_yawn",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#o_zombie_dreamcatcher_idle",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "yawn",
@@ -149,7 +149,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_wallconsume_pre_eat_r",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "look right",
@@ -159,7 +159,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_wallconsume_pre_eat_f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "look front",
@@ -169,7 +169,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_wallconsume_pre_eat_l",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "look left",
@@ -179,7 +179,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_wallconsume_align_r",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "eat right",
@@ -189,7 +189,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_wallconsume_align_f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "eat front",
@@ -199,7 +199,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_wallconsume_align_l",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "eat left",
@@ -209,7 +209,7 @@
                     "entry": [
                         {
                             "anim": "#o_zombie_dreamcatcher_outtro",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "depart",
@@ -223,7 +223,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "ai_zm_mob_zombie_dreamcatcher",

@@ -1,5 +1,5 @@
 {
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "scope_acog_sniper_quickscope_restriction",
     "displayname": "#weapon/sniper_quickscope_t8",

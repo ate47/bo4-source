@@ -1,6 +1,6 @@
 {
     "descriptionimage": "#ui_icon_gear_p8_mp_spe_armor_medium",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",

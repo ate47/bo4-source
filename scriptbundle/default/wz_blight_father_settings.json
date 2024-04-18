@@ -253,7 +253,7 @@
     "var_9e5ebf3c": 0.05,
     "scoreevent": "#kill_blightfather",
     "var_2c6cfada": 1000,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_bd058b07": 500,
     "var_f2b96a9e": 20,
     "var_b30a945": 512,

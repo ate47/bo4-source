@@ -2,7 +2,7 @@
     "destroyed": "#hash_40b620ae06d908e0",
     "ready": "#hash_30af7c63959e7bc8",
     "beinghacked": "#hash_348c095dec590e55",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_empcore",

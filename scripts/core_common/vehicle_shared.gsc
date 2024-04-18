@@ -2345,7 +2345,7 @@ function is_destructible() {
 // Checksum 0xd4852871, Offset: 0x8720
 // Size: 0x2cc
 function attack_group_think() {
-    self endon(#"death", #"hash_bfb3547eac174da", #"killed all targets");
+    self endon(#"death", #"switch group", #"killed all targets");
     if (isdefined(self.script_vehicleattackgroupwait)) {
         wait(self.script_vehicleattackgroupwait);
     }

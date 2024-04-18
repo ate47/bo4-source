@@ -35,7 +35,7 @@
             "altarname": "#zombie/tonic"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "name": "zm_altars_info",
     "var_2f3a811a": 4,
     "var_fa1596d1": 4

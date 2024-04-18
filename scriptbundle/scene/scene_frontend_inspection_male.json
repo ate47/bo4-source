@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3c3e85a375b15f19",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "inspection_full"
@@ -21,7 +21,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

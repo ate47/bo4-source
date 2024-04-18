@@ -86,7 +86,7 @@ function function_b540b576() {
     level.var_ba07f1de = zm_hms_util::function_bffcedde("office_audio_reel", "targetname", "script_int");
     level.var_804a56e3 = 0;
     foreach (var_2e2b46e8 in level.var_ba07f1de) {
-        var_2e2b46e8 zm_item_pickup::function_e8661563(&function_1792ae3, 1);
+        var_2e2b46e8 zm_item_pickup::item_pickup_init(&function_1792ae3, 1);
     }
     screen_a = getent("projecter_screen_a", "targetname");
     screen_b = getent("projecter_screen_b", "targetname");

@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_2735cedffef30ddf",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -6,
     "var_3e688854": -4,
     "worldfx": "#hash_10138d6ad6687c27",
@@ -16,7 +16,7 @@
     "modelscale": 1,
     "rarity": "Common",
     "var_47f145b4": 1,
-    "var_456aa154": "lmg_double_t8_item",
+    "actionregisterweapon": "lmg_double_t8_item",
     "handler": "#hash_50375e5de228e9fc",
     "pickupicon": "#hash_4fd3ede5dcc78c34",
     "var_37cd55af": "#hash_355d8db7f649041c",

@@ -1,6 +1,6 @@
 {
     "var_2ecceeab": "#rcxd_kill",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "vmtype": "both",
     "name": "recon_car_scoreevents",

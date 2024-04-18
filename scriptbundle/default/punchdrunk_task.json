@@ -1,6 +1,6 @@
 {
     "callingtask": "#hash_5d3dce1c38a95835",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#zm_calling_tasks_killspacked",
     "dailytarget": 750,
     "name": "punchdrunk_task",

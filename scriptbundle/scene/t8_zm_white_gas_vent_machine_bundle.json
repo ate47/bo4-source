@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f6068458aadda28",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7baade5a5da5d98a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start_goop"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f4b9fdc57f5abad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_00"
@@ -33,11 +33,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e485fd64de991c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b9edc57f5a9fa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_01"
@@ -46,11 +46,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e488fd64de9e35",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b9ddc57f5a847",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_02"
@@ -59,11 +59,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e487fd64de9c82",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b9cdc57f5a694",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_03"
@@ -72,11 +72,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e482fd64de9403",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b9bdc57f5a4e1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_04"
@@ -85,11 +85,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e481fd64de9250",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b9adc57f5a32e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_05"
@@ -98,11 +98,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e484fd64de9769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b99dc57f5a17b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_06"
@@ -111,11 +111,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e483fd64de95b6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b98dc57f59fc8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_07"
@@ -124,11 +124,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e48efd64dea867",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b97dc57f59e15",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_08"
@@ -137,11 +137,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e48dfd64dea6b4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b96dc57f59c62",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_09"
@@ -150,11 +150,11 @@
                     "entry": [
                         {
                             "anim": "#hash_12e100fd64db8146",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4819dc57f29224",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "gauge_10"
@@ -163,11 +163,11 @@
                     "entry": [
                         {
                             "anim": "#hash_3834620a3194b6fa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1f4b9fdc57f5abad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "regoop"
@@ -176,7 +176,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5aa93b9e6344725f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "stopped"
@@ -189,7 +189,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "t8_zm_white_gas_vent_machine_bundle",

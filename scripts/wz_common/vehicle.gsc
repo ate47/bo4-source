@@ -2687,7 +2687,7 @@ function function_2e3fb54c(params) {
         params.var_52c5850b = 25;
     }
     if (isdefined(params.var_6249a386) && params.var_6249a386) {
-        params.var_746f2b2f = 1;
+        params.nopitch = 1;
         params.var_96a3f4c7 = 1;
     }
     targetyaw = randomintrange(50, 150);
@@ -2700,7 +2700,7 @@ function function_2e3fb54c(params) {
     if (!(isdefined(params.var_96a3f4c7) && params.var_96a3f4c7)) {
         roll = targetyaw * -1 * randomfloatrange(0.125, 0.25);
     }
-    if (!(isdefined(params.var_746f2b2f) && params.var_746f2b2f)) {
+    if (!(isdefined(params.nopitch) && params.nopitch)) {
         pitch = abs(targetyaw) * randomfloatrange(0.075, 0.15);
     }
     starttime = gettime();

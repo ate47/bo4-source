@@ -9,7 +9,7 @@ struct root {
     uint4 lastconsolesave;
     hash_6962b6aa0c4853f4 facialfeatureproperties[5];
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
@@ -370,7 +370,7 @@ struct root {
     uint4 lastconsolesave;
     hash_6962b6aa0c4853f4 facialfeatureproperties[5];
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
@@ -731,7 +731,7 @@ struct root {
     uint4 lastconsolesave;
     hash_6962b6aa0c4853f4 facialfeatureproperties[5];
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];
@@ -1092,7 +1092,7 @@ struct root {
     uint4 lastconsolesave;
     hash_6962b6aa0c4853f4 facialfeatureproperties[5];
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     hash_503eb0de8f9cf7c2 gamehistory[2];

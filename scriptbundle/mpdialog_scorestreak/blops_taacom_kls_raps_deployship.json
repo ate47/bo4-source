@@ -2,7 +2,7 @@
     "destroyed": "#hash_35d659b7bdd235af",
     "ready": "#hash_2ee5710c548a8bbb",
     "beinghacked": "#hash_62b18415b96995c4",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_raps_deployship",

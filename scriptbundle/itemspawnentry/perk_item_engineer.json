@@ -7,7 +7,7 @@
     "amount": 1,
     "duration": 240,
     "description": "#hash_b19dc90d9ca6405",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#p8_wz_perk_pickups_engineer",
     "type": "itemspawnentry",
     "hintstring": "#hash_4baf5d49abad672",

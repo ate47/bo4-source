@@ -5832,7 +5832,7 @@ gesturetable,hash_574c1059ac378b5e,294cd9bde18
 gesturetable,hash_73c524ecdadd3e26,294cd9bdc78
 gesturetable,hash_7536af97ffdb774e,294cd9bdce0
 gesturetable,hash_7e8743a2c914c5a2,294cd9bdd48
-rumble,hash_1bcf955eebde13e,294cf2ba1d8
+rumble,combat_robot_land,294cf2ba1d8
 rumble,damage_light,294cf2ba220
 rumble,hash_449520f94829141,294cf2ba268
 rumble,hash_4ceacd890f3b6ec,294cf2ba2b0
@@ -5970,7 +5970,7 @@ shellshock,hash_6768c27b2b9cef48,294cf34a380
 shellshock,explosion_shock,294cf34a440
 shellshock,default,294cf349180
 shellshock,mp_radiation_high,294cf34a500
-shellshock,hash_744f05ef804479a7,294cf34a5c0
+shellshock,weapon_butt,294cf34a5c0
 shellshock,heat_wave,294cf34a680
 statuseffect,dot_wraith_fire,294cf34ed70
 statuseffect,blind,294cf34d400

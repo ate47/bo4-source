@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_405c0526242e69bd",
     "ready": "#hash_26934d6d61101909",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_attack_chopper",

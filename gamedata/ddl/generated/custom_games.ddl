@@ -110,7 +110,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -276,7 +276,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -454,7 +454,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -620,7 +620,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -798,7 +798,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -964,7 +964,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -1142,7 +1142,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -1308,7 +1308,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -1486,7 +1486,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -1651,7 +1651,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -1830,7 +1830,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -1995,7 +1995,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -2174,7 +2174,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -2339,7 +2339,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -2518,7 +2518,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -2683,7 +2683,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -2862,7 +2862,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -3027,7 +3027,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -3206,7 +3206,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -3371,7 +3371,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -3550,7 +3550,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -3715,7 +3715,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -3894,7 +3894,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -4059,7 +4059,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -4238,7 +4238,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -4403,7 +4403,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -4582,7 +4582,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -4747,7 +4747,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -4926,7 +4926,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -5089,7 +5089,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -5268,7 +5268,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -5431,7 +5431,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -5610,7 +5610,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -5773,7 +5773,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -5952,7 +5952,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -6115,7 +6115,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -6294,7 +6294,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -6455,7 +6455,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -6634,7 +6634,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -6795,7 +6795,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -6974,7 +6974,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -7135,7 +7135,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -7314,7 +7314,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -7475,7 +7475,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -7654,7 +7654,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -7815,7 +7815,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -7994,7 +7994,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -8155,7 +8155,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -8334,7 +8334,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -8495,7 +8495,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -8674,7 +8674,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -8835,7 +8835,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -9012,7 +9012,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -9173,7 +9173,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -9350,7 +9350,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -9511,7 +9511,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -9688,7 +9688,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -9849,7 +9849,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -10026,7 +10026,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -10187,7 +10187,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -10364,7 +10364,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -10525,7 +10525,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -10702,7 +10702,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -10863,7 +10863,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -11040,7 +11040,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -11201,7 +11201,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -11378,7 +11378,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -11539,7 +11539,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -11716,7 +11716,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -11877,7 +11877,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -12053,7 +12053,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -12214,7 +12214,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -12390,7 +12390,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -12551,7 +12551,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -12727,7 +12727,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -12888,7 +12888,7 @@ struct hash_2565a0443b27b26c {
     bit zmdifficulty;
     bit pvponly;
     bit forwardspawnteamspecificspawns;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -12983,7 +12983,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -13067,7 +13067,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -13086,7 +13086,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -13232,7 +13232,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -13327,7 +13327,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -13411,7 +13411,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -13430,7 +13430,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -13575,7 +13575,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -13670,7 +13670,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -13754,7 +13754,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -13773,7 +13773,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -13918,7 +13918,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -14013,7 +14013,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -14097,7 +14097,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -14116,7 +14116,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -14260,7 +14260,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -14355,7 +14355,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -14439,7 +14439,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -14458,7 +14458,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -14602,7 +14602,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -14697,7 +14697,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -14781,7 +14781,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -14800,7 +14800,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -14944,7 +14944,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -15039,7 +15039,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -15123,7 +15123,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -15142,7 +15142,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -15286,7 +15286,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;
@@ -15382,7 +15382,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint capturetime;
     uint5 gameadvertisementruleroundswon;
     uint8 maxplayerdefensive;
-    int32 hash_616f9d68c4625db8;
+    int32 deployablebarrierdestroytime;
     uint5 pointsperweaponkill;
     fixedpoint hash_1ca4d65346568642;
     uint4 draftrequiredclients;
@@ -15466,7 +15466,7 @@ struct hash_2565a0443b27b26c {
     fixedpoint gameadvertisementruletimeleft;
     uint8 hash_6a48bbfb703d5c9c;
     uint4 hash_239b391c77ebf8c1;
-    uint11 hash_6ed5202f53b93d4e;
+    uint11 objectivehealth;
     uint6 spawnsuicidepenalty;
     uint2 robotspeed;
     uint3 hash_467be34402dad274;
@@ -15485,7 +15485,7 @@ struct hash_2565a0443b27b26c {
     uint6 teamkillscore;
     uint5 hash_102aeddad113f70c;
     uint4 hash_4635a26c94b56725;
-    int32 hash_58993d506c8c8eab;
+    int32 deployablebarrierhealth;
     uint5 pointsperprimarykill;
     uint5 teamscoreperheadshot;
     uint7 hash_1908ad844e6c3e37;
@@ -15629,7 +15629,7 @@ struct hash_2565a0443b27b26c {
     bit pvponly;
     bit forwardspawnteamspecificspawns;
     bit hash_50b56d2635cbb74b;
-    bit hash_7047e337df590ff2;
+    bit forwardspawntakesdamage;
     bit allowingameteamchange;
     bit hash_297b69789a6283b4;
     bit classicmode;

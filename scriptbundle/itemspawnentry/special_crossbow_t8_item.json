@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_5061feb7eb006041",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#special_crossbow_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 35,

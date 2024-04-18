@@ -634,7 +634,7 @@ function private function_dc15ad60() {
         waitframe(1);
     }
     var_f4d9a132 = gettime() + int(level.deathcircle.damageinterval * 1000);
-    var_1a1c0d86 = 0;
+    updatepass = 0;
     while (isdefined(level.deathcircle)) {
         radiussq = level.deathcircle.radius * level.deathcircle.radius;
         origin = level.deathcircle.origin;
@@ -642,7 +642,7 @@ function private function_dc15ad60() {
         level.var_a8077fea = [];
         time = gettime();
         foreach (i, player in getplayers()) {
-            if (isdefined(level.deathcircle.scaling) && level.deathcircle.scaling && i % 5 == var_1a1c0d86) {
+            if (isdefined(level.deathcircle.scaling) && level.deathcircle.scaling && i % 5 == updatepass) {
                 player function_ba02cfb5();
             }
             if (!isalive(player)) {
@@ -707,7 +707,7 @@ function private function_dc15ad60() {
         if (dodamage) {
             var_f4d9a132 = gettime() + int(level.deathcircle.damageinterval * 1000);
         }
-        var_1a1c0d86 = (var_1a1c0d86 + 1) % 5;
+        updatepass = (updatepass + 1) % 5;
         waitframe(1);
     }
 }

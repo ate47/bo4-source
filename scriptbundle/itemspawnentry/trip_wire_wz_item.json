@@ -1,7 +1,7 @@
 {
     "amount": 4,
     "description": "#hash_45c5cd656e3bc648",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#eq_tripwire_wz",
     "type": "itemspawnentry",
     "angleoffsetz": -65,

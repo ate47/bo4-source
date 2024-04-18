@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_32034ec805413214",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_32034ec805413214",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "clump01_rise"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c0eb997d9885df7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -53,7 +53,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c0eb997d9885df7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "clump02_rise"
@@ -76,7 +76,7 @@
                     "entry": [
                         {
                             "anim": "#hash_110cd1ae76d9624e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -91,7 +91,7 @@
                     "entry": [
                         {
                             "anim": "#hash_110cd1ae76d9624e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "clump03_rise"
@@ -123,7 +123,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4af37851c408abad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "trails"
@@ -153,7 +153,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5d12a01b69831cb6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "trails"
@@ -182,7 +182,7 @@
                     "entry": [
                         {
                             "anim": "#hash_54166eb9fb42891f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "trails"
@@ -195,7 +195,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_ooze_clump_bundle",

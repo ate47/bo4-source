@@ -20,7 +20,7 @@ function init() {
     level thread function_ca03ab69();
     level thread function_91858511();
     level.var_368aaeb9 = "";
-    level.var_bbb8810e = #"ui_cam_draft_common";
+    level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     level.var_df72fe54 = undefined;
     level.draftcharacters = [];
@@ -183,7 +183,7 @@ function function_532dfc0b(localclientnum, lerpduration, force) {
 // Checksum 0xd842026e, Offset: 0xbd0
 // Size: 0x44
 function function_e79c182b(localclientnum, lerpduration, force) {
-    show_cam(localclientnum, level.var_bbb8810e, "cam_draft_ingame", lerpduration, force);
+    show_cam(localclientnum, level.draftxcam, "cam_draft_ingame", lerpduration, force);
 }
 
 // Namespace draft/frontend_draft
@@ -372,10 +372,10 @@ function setup_team(localclientnum) {
     sessionmode = currentsessionmode();
     targetname = "draftCharacter";
     if (sessionmode == 3) {
-        level.var_bbb8810e = #"hash_2598b6f5e72695c7";
+        level.draftxcam = #"hash_2598b6f5e72695c7";
         targetname = "WZdraftCharacter";
     } else if (sessionmode == 0) {
-        level.var_bbb8810e = #"hash_590b617ac1441b1b";
+        level.draftxcam = #"hash_590b617ac1441b1b";
         targetname = "ZMdraftCharacter";
     }
     var_9b6e828a = array::randomize(array(#"pb_launcher_alt_endgame_1stplace_idle", #"pb_sniper_endgame_1stplace_idle", #"pb_lmg_endgame_1stplace_idle"));

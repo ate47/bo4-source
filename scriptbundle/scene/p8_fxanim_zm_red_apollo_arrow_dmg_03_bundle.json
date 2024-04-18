@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_793332df85992fcf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "impact"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7a41c8a7fbd7ee96",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "break"
@@ -28,7 +28,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_apollo_arrow_dmg_03_bundle",

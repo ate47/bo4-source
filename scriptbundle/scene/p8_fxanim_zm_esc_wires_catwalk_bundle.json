@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_esc_wires_catwalk_loop_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "loop"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_esc_wires_catwalk_shocked_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "p8_fxanim_zm_esc_wires_catwalk_loop_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shocked"
@@ -32,7 +32,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "polishing",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_wires_catwalk_bundle",

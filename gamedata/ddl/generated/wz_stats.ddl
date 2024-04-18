@@ -13,7 +13,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -412,7 +412,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -811,7 +811,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -1210,7 +1210,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -1609,7 +1609,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -2008,7 +2008,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -2407,7 +2407,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -2806,7 +2806,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -3205,7 +3205,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -3604,7 +3604,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -4003,7 +4003,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -4402,7 +4402,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -4801,7 +4801,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -5200,7 +5200,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -5599,7 +5599,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -5998,7 +5998,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -6397,7 +6397,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -6796,7 +6796,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -7195,7 +7195,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -7594,7 +7594,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -7993,7 +7993,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -8392,7 +8392,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -8791,7 +8791,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -9182,7 +9182,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -9573,7 +9573,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -9964,7 +9964,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -10355,7 +10355,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -10746,7 +10746,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -11136,7 +11136,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -11526,7 +11526,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -11916,7 +11916,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -12306,7 +12306,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -12696,7 +12696,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];
@@ -13085,7 +13085,7 @@ struct root {
     hash_72a4ed0fc3efdcc weaponcontractdata;
     uint64 player_xuid;
     uint5 selectedcustomclass;
-    hash_5ef0b8418736fce5 hash_42a4964bbd0c65a9[10];
+    hash_5ef0b8418736fce5 recentearnings[10];
     uint32 hashlen;
     uint64 hash_37aeca4d39214e62;
     byte extrabytes[16];

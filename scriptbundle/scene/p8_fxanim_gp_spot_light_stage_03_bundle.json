@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6b31da4475e24f30",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 2,
@@ -19,7 +19,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_gp_spot_light_stage_03_bundle",

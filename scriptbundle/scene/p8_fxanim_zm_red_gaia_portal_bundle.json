@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7142408016fd44df",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "grow"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5664e6b67531c803",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "retreat"
@@ -28,7 +28,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_gaia_portal_bundle",

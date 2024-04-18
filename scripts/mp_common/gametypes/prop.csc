@@ -14,7 +14,7 @@
 // Size: 0x3ac
 function event_handler[gametype_init] main(eventstruct) {
     clientfield::register("allplayers", "hideTeamPlayer", 16000, 2, "int", &function_abaafe9a, 0, 0);
-    clientfield::register("allplayers", "pingHighlight", 16000, 1, "int", &function_3c95ba87, 0, 0);
+    clientfield::register("allplayers", "pingHighlight", 16000, 1, "int", &highlightplayer, 0, 0);
     clientfield::register("toplayer", "PROP.change_prop", 16000, 1, "int", &propchange, 0, 0);
     clientfield::register("toplayer", "PROP.cameraHeight", 16000, 8, "int", &cameraheightchange, 0, 0);
     clientfield::register("toplayer", "PROP.cameraRange", 16000, 8, "int", &camerarangechange, 0, 0);
@@ -184,7 +184,7 @@ function function_15e0dfb8(localclientnum, var_dc9f0c39) {
 // Params 7, eflags: 0x0
 // Checksum 0xe7a92dc, Offset: 0xf38
 // Size: 0xa4
-function function_3c95ba87(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
+function highlightplayer(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 0) {
         self notify(#"hash_3fe34dcd29fd6a0f");
         self duplicate_render::update_dr_flag(localclientnum, "prop_clone", 0);

@@ -19,7 +19,7 @@ function event_handler[level_init] main(eventstruct) {
     setsaveddvar(#"wind_global_low_altitude", 0);
     setsaveddvar(#"wind_global_hi_altitude", 10000);
     setsaveddvar(#"wind_global_low_strength_percent", 100);
-    level.var_bbb8810e = #"ui_cam_draft_common";
+    level.draftxcam = #"ui_cam_draft_common";
     level.var_482af62e = #"hash_12263e5d70551bf9";
     mp_firingrange2_fx::main();
     mp_firingrange2_sound::main();

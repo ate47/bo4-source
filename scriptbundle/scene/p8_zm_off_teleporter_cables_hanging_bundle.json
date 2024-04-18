@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_52dd4a24d10f7054",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -18,7 +18,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_zm_off_teleporter_cables_hanging_bundle",

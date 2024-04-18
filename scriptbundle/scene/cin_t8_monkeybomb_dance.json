@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_231c51987f2797a9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "devstate": "placeholder",
@@ -23,7 +23,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "server",

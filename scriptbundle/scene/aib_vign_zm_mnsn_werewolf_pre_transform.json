@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_12d5398c601c7c6f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -19,7 +19,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_zm_mnsn_werewolf_pre_transform",

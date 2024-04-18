@@ -120,15 +120,15 @@ function power_debris_bought_fx(localclientnum, oldval, newval, bnewent, binitia
 // Size: 0xe4
 function function_aa07bb71(str_fx_name, var_bd367366, var_6142f944, n_new_val) {
     if (n_new_val) {
-        if (isdefined(self) && !isdefined(self.var_907b36d0)) {
-            self.var_907b36d0 = util::playfxontag(var_6142f944, str_fx_name, self, "tag_origin");
+        if (isdefined(self) && !isdefined(self.ambient_fx_id)) {
+            self.ambient_fx_id = util::playfxontag(var_6142f944, str_fx_name, self, "tag_origin");
         }
         audio::playloopat(var_bd367366, self.origin);
         return;
     }
-    if (isdefined(self.var_907b36d0)) {
-        killfx(var_6142f944, self.var_907b36d0);
-        self.var_907b36d0 = undefined;
+    if (isdefined(self.ambient_fx_id)) {
+        killfx(var_6142f944, self.ambient_fx_id);
+        self.ambient_fx_id = undefined;
     }
     audio::stoploopat(var_bd367366, self.origin);
 }

@@ -1,6 +1,6 @@
 {
     "callingtask": "#rush_points",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#personalize_t7_hud_mp_weapon_hero_chemgun",
     "name": "makeyourpoint_task",
     "taskname": "#hash_200c0216b858b7",

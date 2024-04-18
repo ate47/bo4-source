@@ -6,7 +6,7 @@
     ],
     "amount": 1,
     "description": "#hash_62cb1047e69b0d4e",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#sig_blade_wz",
     "type": "itemspawnentry",
     "angleoffsetx": 165,

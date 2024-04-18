@@ -1,6 +1,6 @@
 {
     "callingtask": "#hash_2333d2f2b7271a56",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_calling_tasks_sniperrifle",
     "dailytarget": 375,
     "name": "sniperrifles_task",

@@ -1091,11 +1091,11 @@ function function_aae68385(s_loc) {
         self thread ct_utils::function_5b59f3b7(s_loc.origin, s_loc.angles, 32, 0, 0, 1);
     }
     self thread function_80ad1ef6();
-    for (var_bfb8f3ce = 0; !var_bfb8f3ce; var_bfb8f3ce = var_7caea647 || var_9b1a9f00 <= 350 && e_player ct_utils::is_facing(self, 0.7, 1)) {
+    for (var_bfb8f3ce = 0; !var_bfb8f3ce; var_bfb8f3ce = b_cansee || var_9b1a9f00 <= 350 && e_player ct_utils::is_facing(self, 0.7, 1)) {
         wait(randomfloatrange(0.1, 0.3));
         if (isalive(e_player)) {
             var_9b1a9f00 = distance2d(self.origin, e_player.origin);
-            var_7caea647 = e_player cansee(self);
+            b_cansee = e_player cansee(self);
         }
     }
     e_player notify(#"hash_5d67cd17870cf7b6");

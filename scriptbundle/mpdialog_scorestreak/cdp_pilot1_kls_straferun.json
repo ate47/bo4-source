@@ -1,7 +1,7 @@
 {
     "damageevaded": "#hash_6dcac6a796318875",
     "wavestartfinal": "#hash_a912ffe7dee03f3",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "killmultiple": "#hash_695192c6178e01d7",
     "vmtype": "both",

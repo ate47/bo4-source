@@ -15,7 +15,7 @@
             "health": 0.05
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#c_t8_zmb_dlc1_werewolf_fb1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_werewolf_weakpoint_def",

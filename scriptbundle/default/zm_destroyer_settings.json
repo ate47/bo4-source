@@ -104,7 +104,7 @@
     ],
     "var_10460f1e": 1,
     "scoreevent": "#kill_destroyer",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "maxhealth": 12000,
     "var_e3ee7606": 12,
     "var_fc420d71": 1,

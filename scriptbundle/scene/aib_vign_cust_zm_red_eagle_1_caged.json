@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_55aaa3298be9d9d6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5dede068477c57b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cage_drop"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bdc413ee767d7e3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "ground_waiting"
@@ -37,7 +37,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_eagle_1_caged",

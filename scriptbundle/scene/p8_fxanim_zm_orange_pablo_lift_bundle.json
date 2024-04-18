@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_639f4a9fe36e5af8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6c9c94935254fa9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "lower"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_75c2ceb3d7263e46",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "raise"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_orange_pablo_lift_bundle",

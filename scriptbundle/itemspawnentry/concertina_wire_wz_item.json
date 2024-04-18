@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_3fbc31728dcf625e",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#hash_6d6d1c6a7ce007e8",
     "type": "itemspawnentry",
     "angleoffsetz": -90,

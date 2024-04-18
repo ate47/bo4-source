@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_40b0dd59aade3e1a",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -2,
     "var_3e688854": -2,
     "weapon": "weapon#tr_midburst_t8_wz",

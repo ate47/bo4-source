@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3ec0d74f51045c49",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -18,7 +18,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_zm_red_vign_pgs_wng_fld_idle",

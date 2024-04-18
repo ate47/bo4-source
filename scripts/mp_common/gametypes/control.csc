@@ -302,7 +302,7 @@ function warzone(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
                 level.visuals[zi] = struct::get_array(level.zones[zi].target, "targetname");
             }
             level.zones[zi].objectiveid = serverobjective_getobjective(localclientnum, "control_" + zi);
-            level.zones[zi].var_6d7365a9 = spawn(0, level.zones[zi].origin, "script_origin");
+            level.zones[zi].objectiveentity = spawn(0, level.zones[zi].origin, "script_origin");
             level.zones[zi].var_ce6accbd = 0;
         }
         level notify(#"zone_initialization");
@@ -357,21 +357,21 @@ function function_185b0894(localclientnum, oldval, newval) {
                 continue;
             }
             progress = serverobjective_getobjectiveprogress(localclientnum, zone.objectiveid);
-            change = progress - (isdefined(zone.var_cbf4cb85) ? zone.var_cbf4cb85 : 0);
+            change = progress - (isdefined(zone.lastprogress) ? zone.lastprogress : 0);
             if (change <= 0) {
                 if (zone.var_ce6accbd) {
-                    zone.var_6d7365a9 stoploopsound(zone.soundid);
+                    zone.objectiveentity stoploopsound(zone.soundid);
                     zone.var_ce6accbd = 0;
                 }
             } else {
                 if (!zone.var_ce6accbd) {
-                    zone.soundid = zone.var_6d7365a9 playloopsound(#"hash_5a0b392405d5f148");
+                    zone.soundid = zone.objectiveentity playloopsound(#"hash_5a0b392405d5f148");
                     zone.var_ce6accbd = 1;
                 }
                 newpitch = basepitch + var_9a7dc638 * progress * progresspercentage;
                 setsoundpitch(zone.soundid, newpitch);
             }
-            zone.var_cbf4cb85 = progress;
+            zone.lastprogress = progress;
         }
         wait(0.25);
     }

@@ -1,7 +1,7 @@
 {
     "rightdownanim": "#hash_11f1cd87d3552dd1",
     "leftdownanim": "#hash_1bf147ff7f881fee",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "leftstraightanim": "#hash_69cd3b9633c22a1e",
     "leftupanim": "#hash_1e69b9caca935d8f",
     "type": "turretanims",

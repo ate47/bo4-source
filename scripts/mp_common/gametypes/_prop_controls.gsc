@@ -110,13 +110,13 @@ function function_255e9614(command, key) {
 // Params 2, eflags: 0x0
 // Checksum 0x5670318a, Offset: 0x8d8
 // Size: 0x5c
-function function_9024fce3(var_59b87232, command) {
+function function_9024fce3(buttonfunc, command) {
     while (true) {
-        while (!self [[ var_59b87232 ]]()) {
+        while (!self [[ buttonfunc ]]()) {
             waitframe(1);
         }
         self notify(command);
-        while (self [[ var_59b87232 ]]()) {
+        while (self [[ buttonfunc ]]()) {
             waitframe(1);
         }
     }
@@ -126,12 +126,12 @@ function function_9024fce3(var_59b87232, command) {
 // Params 2, eflags: 0x0
 // Checksum 0x4b99ad1a, Offset: 0x940
 // Size: 0x5c
-function function_21e5a72f(var_59b87232, command) {
+function function_21e5a72f(buttonfunc, command) {
     while (true) {
-        while (!self [[ var_59b87232 ]]()) {
+        while (!self [[ buttonfunc ]]()) {
             waitframe(1);
         }
-        while (self [[ var_59b87232 ]]()) {
+        while (self [[ buttonfunc ]]()) {
             waitframe(1);
         }
         self notify(command);

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d1474b0b8e7da7a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2f36d19c6d5eb655",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -40,7 +40,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e267e5ae854c9fd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start"
@@ -52,7 +52,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_vign_cust_zm_red_boss1_stg3_to_dth_01",

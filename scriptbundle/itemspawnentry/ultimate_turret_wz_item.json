@@ -1,6 +1,6 @@
 {
     "amount": 1,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#veh_t8_turret_mini",
     "weapon": "weapon#ultimate_turret_wz",
     "type": "itemspawnentry",

@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6edd32b60a6ff2cc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2cc0ccea95bb75e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "enter"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_60be10f6005450fb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -29,7 +29,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2cc0ccea95bb75e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "skip_to_idle"
@@ -46,11 +46,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1f1a0b5cc0650919",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4b66cff4f5b41cb0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "enter"
@@ -59,7 +59,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d39eee50f245482",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b66cff4f5b41cb0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "skip_to_idle"
@@ -85,11 +85,11 @@
                     "entry": [
                         {
                             "anim": "#hash_42ae91ab6ab0082a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_230060884927d077",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "enter"
@@ -98,7 +98,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4596856ad92facad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -108,7 +108,7 @@
                     "entry": [
                         {
                             "anim": "#hash_230060884927d077",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "skip_to_idle"
@@ -120,7 +120,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

@@ -297,10 +297,10 @@ function function_2b77bc35() {
 // Params 1, eflags: 0x0
 // Checksum 0x50d44cc2, Offset: 0x1608
 // Size: 0xf0
-function function_fb02bdd4(var_17a89b1) {
+function function_fb02bdd4(friendly_teams) {
     enemy_teams = [];
     foreach (team, _ in level.teams) {
-        if (!isinarray(var_17a89b1, team)) {
+        if (!isinarray(friendly_teams, team)) {
             if (!isdefined(enemy_teams)) {
                 enemy_teams = [];
             } else if (!isarray(enemy_teams)) {
@@ -726,8 +726,8 @@ function laststand_bleedout_damage() {
         if (playermelee) {
             self.bleedout_time = 0;
         } else {
-            var_47b2d26b = waitresult.idamage / self.var_969fabf4;
-            damagetime = self.var_84c0402e * var_47b2d26b;
+            damagefrac = waitresult.idamage / self.var_969fabf4;
+            damagetime = self.var_84c0402e * damagefrac;
             self.bleedout_time = self.bleedout_time - damagetime;
         }
         if (self.bleedout_time <= 0) {
@@ -1584,8 +1584,8 @@ function function_b1ad0b64(idamage, smeansofdeath) {
     if (playermelee) {
         return true;
     }
-    var_47b2d26b = idamage / self.var_969fabf4;
-    damagetime = self.var_84c0402e * var_47b2d26b;
+    damagefrac = idamage / self.var_969fabf4;
+    damagetime = self.var_84c0402e * damagefrac;
     return self.bleedout_time <= damagetime;
 }
 

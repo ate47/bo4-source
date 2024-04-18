@@ -738,9 +738,9 @@ function function_9ace0fb6(targets) {
             var_4ef4e267 = target getentitynumber();
             ti = player.var_13c51aa5[var_4ef4e267];
             if (!isdefined(ti) && player.var_13c51aa5.size < 6) {
-                for (var_6665225 = 5; var_6665225 >= 0; var_6665225--) {
-                    if (!isinarray(player.var_13c51aa5, var_6665225)) {
-                        ti = var_6665225;
+                for (newti = 5; newti >= 0; newti--) {
+                    if (!isinarray(player.var_13c51aa5, newti)) {
+                        ti = newti;
                         player.var_13c51aa5[var_4ef4e267] = ti;
                         break;
                     }

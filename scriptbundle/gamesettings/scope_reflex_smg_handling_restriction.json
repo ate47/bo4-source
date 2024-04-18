@@ -1,5 +1,5 @@
 {
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "scope_reflex_smg_handling_restriction",
     "displayname": "#weapon/smg_handling_t8",

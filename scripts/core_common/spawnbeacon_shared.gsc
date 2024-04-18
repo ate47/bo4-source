@@ -210,7 +210,7 @@ function beacon_spawned(watcher, owner) {
     }
     owner notify(#"hash_31be1f8b27209ad0", {#player:owner, #beacon:self});
     level notify(#"hash_31be1f8b27209ad0", {#player:owner, #beacon:self});
-    if (!owner deployable::function_f8fe102f()) {
+    if (!owner deployable::location_valid()) {
         owner deployable::function_416f03e6(level.spawnbeaconsettings.beaconweapon);
         self delete();
         return;

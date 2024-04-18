@@ -7,7 +7,7 @@
     "amount": 1,
     "duration": 300,
     "description": "#hash_1649dc9ad9b89284",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#hash_7c69898af0d8781b",
     "type": "itemspawnentry",
     "hintstring": "#hash_328a07093267e5d5",

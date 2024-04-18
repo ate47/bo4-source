@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_6e5e92f05297a27a",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#melee_zombiearm_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetx": -5,

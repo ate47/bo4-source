@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_58dd986229b8b8c4",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#trophy_system_wz",
     "type": "itemspawnentry",
     "name": "trophy_system_wz_item",

@@ -56,7 +56,7 @@
             "health": 0.1
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#c_t8_zmb_dlc0_zombie_gladiator_body1",
     "type": "characterweakpointsettings",
     "name": "c_t8_zmb_gladiator_dst_weakpoint_def",

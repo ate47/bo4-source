@@ -244,7 +244,7 @@
     "var_10460f1e": 1,
     "var_1be2be91": 150,
     "scoreevent": "#kill_gegenees",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "maxhealth": 50000,
     "var_e3ee7606": 30,
     "var_fc420d71": 1,

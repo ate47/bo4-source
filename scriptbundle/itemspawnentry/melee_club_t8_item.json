@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_634245daf5ef8d9c",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#melee_club_t8_wz",
     "type": "itemspawnentry",
     "angleoffsetz": 90,

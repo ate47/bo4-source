@@ -1,6 +1,6 @@
 {
     "mod": "MOD_BURNED",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_burned",
     "displayname": "#hash_4a5036425c59b91",

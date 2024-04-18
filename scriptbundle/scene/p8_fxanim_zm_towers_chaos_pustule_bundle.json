@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_zm_towers_chaos_pustule_idle_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "anim": "#hash_23cc2bd16dc43807",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "damage01",
@@ -26,7 +26,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f1478ab63c00e64",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "damage02",
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5615e16d97b5775",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -51,7 +51,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_towers_chaos_pustule_bundle",

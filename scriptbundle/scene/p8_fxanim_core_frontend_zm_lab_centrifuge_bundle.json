@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21021d42848b9f9c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_blue"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53bef4494c8bd6e1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_blue"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_76910dac60cba6b1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_green"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1800a32400803f2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_green"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2dc6fe6affe1609",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_grey"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_45c6927177e55500",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_grey"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_160872c9224e717e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_orange"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c9bcd41ef78a427",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_orange"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_302c30f246d6fc0e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_purple"
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5e81560f1e1fd3f7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_purple"
@@ -96,7 +96,7 @@
                     "entry": [
                         {
                             "anim": "#hash_51d92644e412da27",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_white"
@@ -105,7 +105,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2fe44d2271ecd450",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_white"
@@ -114,7 +114,7 @@
                     "entry": [
                         {
                             "anim": "#hash_72fe554fe460f60a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_show_gold"
@@ -123,7 +123,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6e95533e49e43e0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "cent_spin_gold"
@@ -136,7 +136,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

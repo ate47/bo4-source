@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_12be1775f606b2cd",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#p7_pro_card_key_access",
     "type": "itemspawnentry",
     "hintstring": "#hash_29cb4e88079890ea",

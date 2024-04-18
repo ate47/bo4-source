@@ -363,7 +363,7 @@ function function_28126982(a_str_vo) {
 // Params 8, eflags: 0x0
 // Checksum 0x5807fd00, Offset: 0x1240
 // Size: 0x28e
-function function_625a37f9(vo, _notify, var_531cd749 = 1, var_cd53c705 = 1, var_dfbbbce6 = 10, var_352fef28 = 0, var_37338add = 1, var_8e9dbdf9 = 1) {
+function function_625a37f9(vo, _notify, b_once = 1, var_cd53c705 = 1, var_dfbbbce6 = 10, var_352fef28 = 0, var_37338add = 1, var_8e9dbdf9 = 1) {
     level endoncallback(&function_dae6df54, #"combattraining_logic_finished", #"hash_4c2e751dd9e2bb57");
     e_player = get_player();
     if (isdefined(var_8e9dbdf9) && var_8e9dbdf9) {
@@ -371,7 +371,7 @@ function function_625a37f9(vo, _notify, var_531cd749 = 1, var_cd53c705 = 1, var_
     }
     var_e8ee1cd1 = 0;
     if (isdefined(var_352fef28) && var_352fef28) {
-        var_531cd749 = 0;
+        b_once = 0;
     }
     do {
         level waittill(_notify);
@@ -394,7 +394,7 @@ function function_625a37f9(vo, _notify, var_531cd749 = 1, var_cd53c705 = 1, var_
             e_player function_3820390e(array(vo), 1);
         }
         wait(var_dfbbbce6);
-    } while (!(isdefined(var_531cd749) && var_531cd749));
+    } while (!(isdefined(b_once) && b_once));
 }
 
 // Namespace ct_vo/ct_vo

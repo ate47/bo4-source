@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_28080f5c94e41ee0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2b09a0204a9f0f09",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "part_open"
@@ -19,11 +19,11 @@
                     "entry": [
                         {
                             "anim": "#hash_7d6eb6d9eb630402",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_46b807883715aa0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "reset",
@@ -33,11 +33,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4374532a1169c188",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_685a198afc299ce1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "open"
@@ -50,7 +50,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_dome_crank_bundle",

@@ -106,7 +106,7 @@
             "var_fd18521e": 0.4
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "activecamoinfo",
     "var_3c82240b": "#hash_70b9723e40288f9d",
     "vmtype": "both",

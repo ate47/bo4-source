@@ -11,7 +11,7 @@
             "effecttype": "fire"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "weapondamageeffectype",
     "name": "damageeffecttype_fire",
     "var_c672f15f": 2

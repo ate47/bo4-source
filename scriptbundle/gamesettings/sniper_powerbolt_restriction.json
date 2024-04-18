@@ -1,6 +1,6 @@
 {
     "descriptionimage": "#ui_icon_weapon_sniper_powerbolt_render_xl",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "value2": "1",
     "value1": "0",
     "type": "gamesettings",

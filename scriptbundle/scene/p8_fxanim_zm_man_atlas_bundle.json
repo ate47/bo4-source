@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_65476b19894a5df8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_710cd8bd693329c4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "melt"
@@ -32,7 +32,7 @@
                     "entry": [
                         {
                             "anim": "#hash_25536ba8b6ab911b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_25536ba8b6ab911b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "melt"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_a2b8977eabd515c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -67,7 +67,7 @@
                     "entry": [
                         {
                             "anim": "#hash_a2b8977eabd515c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "melt"
@@ -80,7 +80,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_man_atlas_bundle",

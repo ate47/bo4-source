@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_3aeaefe5c418adef",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_272b0bf7ae3fb76e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_68632e6c521ef1f4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -35,7 +35,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_zm_flame_tornado_miniboss_scene",

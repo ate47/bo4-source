@@ -23,7 +23,7 @@
     "scoreevent": "#kill_werewolf",
     "var_e5f93adc": 550,
     "var_6d4b0dd6": 4,
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_bd87ef4d": 10,
     "var_96b9b674": 25,
     "maxhealth": 100000,

@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#ai_zombie_dreamcatch_impact",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "impact"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4086971904817218",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "rise",
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "anim": "#ai_zombie_dreamcatch_shrink_a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shrink",
@@ -42,7 +42,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "ai_zm_ora_zombie_music_box_rise",

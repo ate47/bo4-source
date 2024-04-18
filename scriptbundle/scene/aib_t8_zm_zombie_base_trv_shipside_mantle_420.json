@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7f8c0f051334e59",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -20,7 +20,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_zombie_base_trv_shipside_mantle_420",

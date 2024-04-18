@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7517f638f5890638",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state10_idle"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_fba6871480913aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "state10_exit"
@@ -28,7 +28,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

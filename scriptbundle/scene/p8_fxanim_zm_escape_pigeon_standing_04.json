@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5e605b8347ea0b32",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 1,
@@ -25,7 +25,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "server",

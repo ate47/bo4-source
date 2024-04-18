@@ -1,6 +1,6 @@
 {
     "mod": "MOD_IMPACT",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_impact",
     "displayname": "#hash_394a326a7d3d139f",

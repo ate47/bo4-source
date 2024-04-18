@@ -113,7 +113,7 @@ function event_handler[gametype_init] main(eventstruct) {
 // Params 0, eflags: 0x0
 // Checksum 0xfee2bf62, Offset: 0x1120
 // Size: 0x1fc
-function function_fcee7d01() {
+function updatespawns() {
     globallogic_spawn::function_c40af6fa();
     globallogic_spawn::addsupportedspawnpointtype("control");
     var_66eb1393 = [];
@@ -439,7 +439,7 @@ function private use_start_spawns() {
 function on_start_gametype() {
     level.usingextratime = 0;
     level.wartotalsecondsinzone = 0;
-    level.var_83f7fa3b = undefined;
+    level.round_winner = undefined;
     setup_objectives();
     globallogic_score::resetteamscores();
     level.zonemask = 0;
@@ -447,7 +447,7 @@ function on_start_gametype() {
     thread use_start_spawns();
     userspawnselection::supressspawnselectionmenuforallplayers();
     setup_zones();
-    function_fcee7d01();
+    updatespawns();
     thread set_ui_team();
     thread main_loop();
     thread function_caff2d60();
@@ -1109,7 +1109,7 @@ function private on_zone_capture(sentient) {
         round::set_winner(game.attackers);
         level thread globallogic::end_round(1);
     }
-    thread function_fcee7d01();
+    thread updatespawns();
 }
 
 // Namespace mission_koth/control

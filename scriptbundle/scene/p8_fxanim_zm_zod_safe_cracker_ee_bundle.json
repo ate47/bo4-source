@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_351542355ff09424",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "combo_1404"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4f60abf3f38a8f38",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "combo_1912"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_555aac7a4206edfa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "combo_2340"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3506ea998fd8b5ca",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "combo_4250"
@@ -47,7 +47,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_safe_cracker_ee_bundle",

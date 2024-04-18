@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4983812e5cc3f6c1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "enter"
@@ -19,7 +19,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e9844522176a36f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "exit"
@@ -28,7 +28,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4983812e5cc3f6c1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "skip_to_idle"
@@ -45,11 +45,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_720d30de839de8fc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "enter"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_f0de3d6818caab6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "exit"
@@ -67,7 +67,7 @@
                     "entry": [
                         {
                             "anim": "#hash_720d30de839de8fc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "skip_to_idle"
@@ -84,11 +84,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_7c9f3a2a36404293",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "enter"
@@ -97,7 +97,7 @@
                     "entry": [
                         {
                             "anim": "#hash_797440f6c61c3bf1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "exit"
@@ -106,7 +106,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c9f3a2a36404293",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "skip_to_idle"
@@ -119,7 +119,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

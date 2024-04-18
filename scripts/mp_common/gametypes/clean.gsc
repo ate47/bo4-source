@@ -76,11 +76,11 @@ function event_handler[gametype_init] main(eventstruct) {
     level.var_c5e28dc5 = getgametypesetting(#"hash_5cc4c3042b7d4935");
     stockpileorders = isdefined(level.var_c5e28dc5) && level.var_c5e28dc5 ? undefined : "stockpileOrders";
     globallogic_audio::set_leader_gametype_dialog("startStockpile", "hcStartStockpile", stockpileorders, stockpileorders, "bbStartStockpile", "hcbbStartStockpile");
-    level.var_11d8b3ba = "ui/fx8_fracture_deposit_point";
+    level.goalfx = "ui/fx8_fracture_deposit_point";
     level.var_6c5ba305 = "ui/fx8_fracture_deposit_point_end";
     level.var_dfce3f1c = #"clean_deposit";
     if (isdefined(level.var_c5e28dc5) && level.var_c5e28dc5) {
-        level.var_11d8b3ba = "ui/fx8_fracture_deposit_point_ire";
+        level.goalfx = "ui/fx8_fracture_deposit_point_ire";
         level.var_6c5ba305 = "ui/fx8_fracture_deposit_point_end_ire";
         level.var_dfce3f1c = #"hash_6c8a4a73bc07da57";
     }
@@ -489,7 +489,7 @@ function function_bad2b0d4(origin) {
 // Size: 0x17a
 function function_b8a3dde4() {
     level endon(#"game_ended");
-    self.baseeffect = spawnfx(level.var_11d8b3ba, self.effectorigin);
+    self.baseeffect = spawnfx(level.goalfx, self.effectorigin);
     self.baseeffect.team = #"none";
     triggerfx(self.baseeffect, 0.001);
     wait_time = level.cleandepositonlinetime;

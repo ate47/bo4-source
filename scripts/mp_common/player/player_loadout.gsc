@@ -1444,10 +1444,10 @@ function function_53b62db1(newclass) {
 // Params 2, eflags: 0x0
 // Checksum 0x9c60ab97, Offset: 0x5fc0
 // Size: 0x1b4
-function function_d7c205b9(newclass, var_eead10f0 = #"unspecified") {
+function function_d7c205b9(newclass, calledfrom = #"unspecified") {
     loadoutindex = isdefined(newclass) ? get_class_num(newclass) : undefined;
     self.pers[#"loadoutindex"] = loadoutindex;
-    var_45843e9a = var_eead10f0 == #"give_loadout";
+    var_45843e9a = calledfrom == #"give_loadout";
     var_7f8c24df = 0;
     if (!var_45843e9a) {
         var_7f8c24df = isdefined(game) && isdefined(game.state) && game.state == "playing" && isalive(self);

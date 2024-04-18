@@ -1,6 +1,6 @@
 {
     "callingtask": "#kills_pistol",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "image": "#ui_icon_zm_callings_pistol",
     "dailytarget": 500,
     "name": "pistols_task",

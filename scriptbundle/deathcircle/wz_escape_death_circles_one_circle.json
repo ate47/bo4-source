@@ -33,7 +33,7 @@
             "var_85589312": 60
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "deathcircle",
     "name": "wz_escape_death_circles_one_circle",
     "var_7a60538a": 2,

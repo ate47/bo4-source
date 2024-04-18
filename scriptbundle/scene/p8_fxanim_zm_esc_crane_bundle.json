@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_923a7a2394d952d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_7c8b9c6664f8eae6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,11 +19,11 @@
                     "entry": [
                         {
                             "anim": "#hash_3fbc33140c093c0d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_72f44185bdb806",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -43,11 +43,11 @@
                     "entry": [
                         {
                             "anim": "#hash_723de8fe18c0fc5e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_5f8145b0a91d21ab",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -56,11 +56,11 @@
                     "entry": [
                         {
                             "anim": "#hash_674b424a6a1acdf8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_59851d9a10666d01",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -69,11 +69,11 @@
                     "entry": [
                         {
                             "anim": "#hash_2bf732b76b5383ba",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_76d875acaac6408f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -92,7 +92,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_crane_bundle",

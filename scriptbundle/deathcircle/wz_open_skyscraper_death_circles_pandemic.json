@@ -67,7 +67,7 @@
             "var_85589312": 30
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "deathcircle",
     "name": "wz_open_skyscraper_death_circles_pandemic",
     "var_7a60538a": 4,

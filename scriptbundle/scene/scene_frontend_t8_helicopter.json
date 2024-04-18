@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_helicopter",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_helicopter2",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 2"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_helicopter3",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 3"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_helicopter4",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 4"
@@ -49,7 +49,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bafcdaccda5152a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -58,7 +58,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bafcdaccda5152a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -67,7 +67,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bafcdaccda5152a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -76,7 +76,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6bafcdaccda5152a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -92,7 +92,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b4dbb96dc38203e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -101,7 +101,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b4dbb96dc38203e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -110,7 +110,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b4dbb96dc38203e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -119,7 +119,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b4dbb96dc38203e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -136,7 +136,7 @@
                     "entry": [
                         {
                             "anim": "#hash_450212a4a35fecfc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -145,7 +145,7 @@
                     "entry": [
                         {
                             "anim": "#hash_450212a4a35fecfc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -154,7 +154,7 @@
                     "entry": [
                         {
                             "anim": "#hash_450212a4a35fecfc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -163,7 +163,7 @@
                     "entry": [
                         {
                             "anim": "#hash_450212a4a35fecfc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -180,7 +180,7 @@
                     "entry": [
                         {
                             "anim": "#hash_71d86a7e53c9c626",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -189,7 +189,7 @@
                     "entry": [
                         {
                             "anim": "#hash_71d86a7e53c9c626",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -198,7 +198,7 @@
                     "entry": [
                         {
                             "anim": "#hash_71d86a7e53c9c626",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -207,7 +207,7 @@
                     "entry": [
                         {
                             "anim": "#hash_71d86a7e53c9c626",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -224,7 +224,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b5aa53195353735",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -233,7 +233,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b5aa53195353735",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -242,7 +242,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b5aa53195353735",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -251,7 +251,7 @@
                     "entry": [
                         {
                             "anim": "#hash_b5aa53195353735",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -268,7 +268,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b606b8552c331",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -277,7 +277,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b606b8552c331",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -286,7 +286,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b606b8552c331",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -295,7 +295,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b606b8552c331",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -312,7 +312,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b5f6b8552c17e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -321,7 +321,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b5f6b8552c17e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -330,7 +330,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b5f6b8552c17e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -339,7 +339,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d6b5f6b8552c17e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -356,7 +356,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ac4f719dc3de49c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -365,7 +365,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ac4f719dc3de49c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -374,7 +374,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ac4f719dc3de49c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -383,7 +383,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ac4f719dc3de49c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -396,7 +396,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

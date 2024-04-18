@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh350",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh350",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh360",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh360",
@@ -26,7 +26,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh370",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh370",
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_zm_mansion_outro_sh380",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh380",
@@ -53,7 +53,7 @@
                     "entry": [
                         {
                             "anim": "#hash_79e04e8545449fa5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -64,7 +64,7 @@
                     "entry": [
                         {
                             "anim": "#hash_27697069452a40d8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh360",
@@ -74,7 +74,7 @@
                     "entry": [
                         {
                             "anim": "#hash_81851540fd817ff",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh370",
@@ -84,7 +84,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1d2e27facdd74ab2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -110,7 +110,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1784be8ad9fa6163",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -121,7 +121,7 @@
                     "entry": [
                         {
                             "anim": "#hash_56c70866223b68f2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -143,7 +143,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30d418ca43484ffc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -170,7 +170,7 @@
                     "entry": [
                         {
                             "anim": "#hash_28d22ea977ee88be",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -201,7 +201,7 @@
                     "entry": [
                         {
                             "anim": "#hash_28f42aa9780b6858",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -228,7 +228,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

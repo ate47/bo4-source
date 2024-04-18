@@ -1,6 +1,6 @@
 {
     "mod": "MOD_TELEFRAG",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_telefrag",
     "displayname": "#hash_7b89f94e5abd475",

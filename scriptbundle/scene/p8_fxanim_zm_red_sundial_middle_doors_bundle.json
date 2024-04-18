@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_153788fed1d4c9ef",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_01_open"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_29fe22b9c72b1975",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_01_close"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6fb75493a4ac6eb2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_02_open"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2302a7496c96993e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_02_close"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_11b290d7c6fb5909",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_03_open"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_ea572631e13bc67",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_03_close"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_73205d805b4b28a4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_04_open"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ff646ae49295bc8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mid_04_close"
@@ -82,7 +82,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_sundial_middle_doors_bundle",

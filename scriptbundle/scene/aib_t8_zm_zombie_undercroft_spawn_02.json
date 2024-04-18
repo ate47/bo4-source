@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#ai_t8_zm_zombie_undercroft_spawn_02",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_9ab5a71d81d1fad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crawler"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_543cfe4c33e5900d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "nova_crawler"
@@ -38,7 +38,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "aib_t8_zm_zombie_undercroft_spawn_02",

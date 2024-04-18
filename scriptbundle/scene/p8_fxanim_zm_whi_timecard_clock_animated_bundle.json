@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e52234d0701d23b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_0_to_1_slow"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e5b68266446a55b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_1_to_2_slow"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3dbcf6d513a46d7f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_2_to_3_slow"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2a7bb6cae6ef58b7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_3_to_4_slow"
@@ -42,7 +42,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d31e3306591b08a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_0_to_1_fast"
@@ -51,7 +51,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4f99d749dded6a6a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_1_to_2_fast"
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6755a0e14eef1f8e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_2_to_3_fast"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6d66daa98f6665c6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "pos_3_to_4_fast"
@@ -78,7 +78,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e7dab7c5a570abe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -90,7 +90,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_whi_timecard_clock_animated_bundle",

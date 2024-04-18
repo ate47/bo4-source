@@ -1,6 +1,6 @@
 {
     "mod": "MOD_HEAD_SHOT",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_head_shot",
     "displayname": "#hash_874506d3bfcc38c",

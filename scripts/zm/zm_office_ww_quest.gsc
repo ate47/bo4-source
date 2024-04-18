@@ -537,7 +537,7 @@ function function_d486a10() {
     level.s_code_drawer.e_drawer = getent("code_drawer", "targetname");
     key = getent("code2_key", "targetname");
     if (util::get_game_type() != #"zstandard") {
-        key zm_item_pickup::function_e8661563(&function_b32c1898);
+        key zm_item_pickup::item_pickup_init(&function_b32c1898);
     }
 }
 

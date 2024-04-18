@@ -253,7 +253,7 @@
     ],
     "objectivebackground": "#hash_7caa43a24c715df",
     "var_5a90928f": "#zm_towers_challenges",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_aa76b7dd": 6,
     "var_6fa1ca44": 1,
     "type": "zminventory",

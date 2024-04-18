@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f152090f657bfe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -15,11 +15,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6f7a3a7c471df0f2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2e86999bc8c4290d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2"
@@ -28,11 +28,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6f7a397c471def3f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2e86969bc8c423f4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -41,11 +41,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6f7a387c471ded8c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2e86979bc8c425a7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4"
@@ -54,11 +54,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6f7a377c471debd9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2e86949bc8c4208e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 5"
@@ -67,11 +67,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6f7a367c471dea26",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_2e86959bc8c42241",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 6"
@@ -80,11 +80,11 @@
                     "entry": [
                         {
                             "anim": "#hash_6f7a357c471de873",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_4a67388210398d52",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 7"
@@ -93,11 +93,11 @@
                     "entry": [
                         {
                             "anim": "#hash_4e65f766225b67df",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_5f152090f657bfe",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 8"
@@ -109,7 +109,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_bathtub_filling_bundle",

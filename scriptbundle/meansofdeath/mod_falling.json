@@ -1,6 +1,6 @@
 {
     "mod": "MOD_FALLING",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_falling",
     "displayname": "#hash_27657f0b2dbad9e0",

@@ -15,7 +15,7 @@
     ],
     "amount": 1,
     "description": "#hash_7cf9f4e2680e1323",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -4,
     "var_3e688854": -2,
     "weapon": "weapon#hash_56ab98b062adb7f5",

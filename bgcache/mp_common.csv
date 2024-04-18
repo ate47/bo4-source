@@ -1948,7 +1948,7 @@ gesturetable,hash_6d72aa747b61008f,294cd9bf408
 gesturetable,hash_72d84003e8e8ab35,294cd9bebe8
 gesturetable,gestable_command_taunt,294cd9be7d8
 gesturetable,gestable_battle_cry,294cd9be840
-rumble,hash_1bcf955eebde13e,294cf2ba1d8
+rumble,combat_robot_land,294cf2ba1d8
 rumble,hash_449520f94829141,294cf2ba268
 rumble,defaultweapon_melee,294cf2ba2f8
 rumble,grenade_launcher_fire,294cf2bc0c8

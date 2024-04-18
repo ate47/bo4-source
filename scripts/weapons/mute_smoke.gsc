@@ -53,7 +53,7 @@ function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, total
     var_16ae7522 = isdefined(waitresult.position) ? waitresult.position : self.origin;
     startpos = var_16ae7522 + onefoot;
     smokeweapon = getweapon(grenadeweaponname);
-    function_3d455aca(owner, statweapon, smokeweapon, var_16ae7522, 250, totaltime, duration);
+    smoke_detonate(owner, statweapon, smokeweapon, var_16ae7522, 250, totaltime, duration);
     /#
         function_9dddd194(var_16ae7522, (0, 0, 0.9));
     #/
@@ -63,7 +63,7 @@ function function_3c893ac6(owner, statweapon, grenadeweaponname, duration, total
 // Params 7, eflags: 0x1 linked
 // Checksum 0xf81ba633, Offset: 0x430
 // Size: 0x160
-function function_3d455aca(owner, statweapon, smokeweapon, position, radius, effectlifetime, smokeblockduration) {
+function smoke_detonate(owner, statweapon, smokeweapon, position, radius, effectlifetime, smokeblockduration) {
     dir_up = (0, 0, 1);
     ent = spawntimedfx(smokeweapon, position, dir_up, effectlifetime);
     ent setteam(owner.team);

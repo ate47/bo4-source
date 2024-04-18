@@ -1,7 +1,7 @@
 {
     "amount": 20,
     "description": "#hash_1ef25920b42565f3",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#hash_2a16aa22e8874d06",
     "weapon": "weapon#waterballoon_wz",
     "type": "itemspawnentry",

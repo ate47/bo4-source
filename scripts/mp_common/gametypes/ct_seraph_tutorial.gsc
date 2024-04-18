@@ -2164,8 +2164,8 @@ function function_7746c49c(n_radius) {
     }
     v_loc = level.var_2b87f134.origin;
     var_e3256b6c = randomfloatrange(n_radius * -1, n_radius);
-    var_47a4d489 = randomfloatrange(n_radius * -1, n_radius);
-    v_loc = (v_loc[0] + var_e3256b6c, v_loc[1] + var_47a4d489, v_loc[2]);
+    n_yoff = randomfloatrange(n_radius * -1, n_radius);
+    v_loc = (v_loc[0] + var_e3256b6c, v_loc[1] + n_yoff, v_loc[2]);
     v_loc = getclosestpointonnavmesh(v_loc, n_radius);
     if (isdefined(v_loc)) {
         n_height_diff = abs(level.var_2b87f134.origin[2] - v_loc[2]);

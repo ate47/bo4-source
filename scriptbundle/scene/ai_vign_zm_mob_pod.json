@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1eeb3cead60313f8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "cameraswitcher": "c_sh010_vign_zm_mob_richtofen_cryopod_cam1",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 1",
@@ -20,11 +20,11 @@
                     "entry": [
                         {
                             "anim": "#hash_7102a1fdfdd0487f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "cameraswitcher": "c_sh020_vign_zm_mob_richtofen_cryopod_cam2",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 2",
@@ -34,7 +34,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2625fc5498237f17",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -52,7 +52,7 @@
                     "entry": [
                         {
                             "anim": "#hash_68af72666b0aac50",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -62,7 +62,7 @@
                     "entry": [
                         {
                             "anim": "#hash_588151575bd16515",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -83,7 +83,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b483767917cf812",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1",
@@ -93,7 +93,7 @@
                     "entry": [
                         {
                             "anim": "#hash_41e1927f85febf09",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -103,7 +103,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7a69309ef2cb908c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3"
@@ -117,7 +117,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "final",
     "type": "scene",
     "name": "ai_vign_zm_mob_pod",

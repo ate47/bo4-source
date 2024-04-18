@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1befba7f0455b5af",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "default"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_567336dc673a0a5b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crawler"
@@ -29,7 +29,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "cin_t8_zm_zombie_base_trv_entry_climb_496",

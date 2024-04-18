@@ -1,6 +1,6 @@
 {
     "hinttext": "#hash_1a1bb142b2aaa0eb",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "gamesettings",
     "name": "killstreaks_give_game_score",
     "displayname": "#hash_229999258e9176a5",

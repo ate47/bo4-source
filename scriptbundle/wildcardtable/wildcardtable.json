@@ -49,7 +49,7 @@
             "playerloadoutrestrictions": "#plr_mp_wc_secondary_gunfighter_3"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "wildcardtable",
     "name": "wildcardtable",
     "var_e78add03": 16

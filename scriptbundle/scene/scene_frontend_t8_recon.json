@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_recon_play",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_recon_play3",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play3"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_recon_play5",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play5"
@@ -33,7 +33,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_recon_play6",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play6"
@@ -50,7 +50,7 @@
                     "entry": [
                         {
                             "anim": "#hash_33e5da551c9134c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -59,7 +59,7 @@
                     "entry": [
                         {
                             "anim": "#hash_33e5da551c9134c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -68,7 +68,7 @@
                     "entry": [
                         {
                             "anim": "#hash_33e5da551c9134c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -77,7 +77,7 @@
                     "entry": [
                         {
                             "anim": "#hash_33e5da551c9134c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -92,7 +92,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7135c4dad133b20e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -101,7 +101,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7135c4dad133b20e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -110,7 +110,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7135c4dad133b20e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -119,7 +119,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7135c4dad133b20e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -136,7 +136,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -145,7 +145,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -154,7 +154,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -163,7 +163,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -183,7 +183,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -192,7 +192,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -201,7 +201,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -210,7 +210,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -230,7 +230,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -239,7 +239,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -248,7 +248,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -257,7 +257,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -277,7 +277,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -286,7 +286,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -295,7 +295,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -304,7 +304,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -324,7 +324,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -333,7 +333,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -342,7 +342,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -351,7 +351,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -371,7 +371,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -380,7 +380,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -389,7 +389,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -398,7 +398,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -418,7 +418,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -427,7 +427,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -436,7 +436,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -445,7 +445,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -465,7 +465,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -474,7 +474,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -483,7 +483,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -492,7 +492,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -512,7 +512,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -521,7 +521,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -530,7 +530,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -539,7 +539,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -559,7 +559,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -568,7 +568,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -577,7 +577,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -586,7 +586,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -606,7 +606,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -615,7 +615,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -624,7 +624,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -633,7 +633,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -652,7 +652,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -661,7 +661,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -670,7 +670,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -679,7 +679,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -699,7 +699,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -708,7 +708,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -717,7 +717,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -726,7 +726,7 @@
                     "entry": [
                         {
                             "anim": "#hash_d255bf14e98e579",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -746,7 +746,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3327bff33be22101",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -755,7 +755,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3327bff33be22101",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play3"
@@ -764,7 +764,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3327bff33be22101",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play5"
@@ -773,7 +773,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3327bff33be22101",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play6"
@@ -786,7 +786,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

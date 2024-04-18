@@ -524,14 +524,14 @@ function function_dd7bc108(weapon) {
         return;
     }
     if (isdefined(a_trace[#"entity"])) {
-        var_b1e75cec = a_trace[#"entity"].origin;
+        v_on_nav = a_trace[#"entity"].origin;
         if (isdefined(a_trace[#"position"])) {
             v_hit = a_trace[#"position"];
         }
     } else {
-        var_b1e75cec = getclosestpointonnavmesh(a_trace[#"position"], 128, 32);
-        if (isdefined(var_b1e75cec)) {
-            v_hit = var_b1e75cec;
+        v_on_nav = getclosestpointonnavmesh(a_trace[#"position"], 128, 32);
+        if (isdefined(v_on_nav)) {
+            v_hit = v_on_nav;
         } else {
             v_hit = a_trace[#"position"];
         }
@@ -541,8 +541,8 @@ function function_dd7bc108(weapon) {
         e_projectile function_39e6dc29(a_trace[#"position"]);
         wait(0.1);
     }
-    if (isdefined(var_b1e75cec)) {
-        var_330f37da = var_b1e75cec;
+    if (isdefined(v_on_nav)) {
+        var_330f37da = v_on_nav;
     } else {
         return;
     }

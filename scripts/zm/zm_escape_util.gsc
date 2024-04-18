@@ -74,7 +74,7 @@ function init_clientfields() {
 // Checksum 0x9216f0f7, Offset: 0x6d0
 // Size: 0x246
 function function_28d0cf11(str_script_noteworthy) {
-    var_95380627 = 0;
+    audioaudio_cleanup = 0;
     switch (level.activeplayers.size) {
     case 1:
         n_multiplier = 3;
@@ -119,9 +119,9 @@ function function_28d0cf11(str_script_noteworthy) {
     }
     var_d8036031 = zombie_utility::get_current_zombie_count();
     if (var_d8036031 > var_637f088d) {
-        var_95380627 = 1;
+        audioaudio_cleanup = 1;
     }
-    return var_95380627;
+    return audioaudio_cleanup;
 }
 
 // Namespace zm_escape_util/zm_escape_util

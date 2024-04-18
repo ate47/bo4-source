@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_67cf596b7814a53",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init",
@@ -16,11 +16,11 @@
                     "entry": [
                         {
                             "anim": "#hash_1663d6a2e4ed5901",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_13a945eea7f84e99",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start_drum"
@@ -29,7 +29,7 @@
                     "entry": [
                         {
                             "anim": "#hash_13574f5b3b4024f1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "end_drum",
@@ -48,7 +48,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c25b4d28409b914",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -57,11 +57,11 @@
                     "entry": [
                         {
                             "anim": "#hash_103e137770471d2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_25f7c7d539823c5a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start_drum"
@@ -70,7 +70,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2932e4ebbd264682",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "end_drum",
@@ -87,7 +87,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7c25b7d28409be2d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "spacermin": 4,
@@ -98,11 +98,11 @@
                     "entry": [
                         {
                             "anim": "#hash_103e0377704701f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_25f7c6d539823aa7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "start_drum"
@@ -111,7 +111,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2932e3ebbd2644cf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "end_drum",
@@ -124,7 +124,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "server",

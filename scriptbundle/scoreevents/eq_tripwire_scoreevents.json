@@ -2,7 +2,7 @@
     "var_d58bd0e9": "#hash_b2a70d9381b0ced",
     "var_67b4a761": "#hash_b2a6cd9381b0621",
     "var_2ecceeab": "#tripwire_ied_kill",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "scoreevents",
     "var_1253685d": "#hash_3ebb81687fc929dd",
     "vmtype": "both",

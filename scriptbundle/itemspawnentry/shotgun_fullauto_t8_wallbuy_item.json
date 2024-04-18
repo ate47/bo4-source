@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_3d9f688f7bd6c910",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "worldfx": "#hash_10138d6ad6687c27",
@@ -20,7 +20,7 @@
     "rarity": "Common",
     "var_47f145b4": 1,
     "attachslotbarrel": 1,
-    "var_456aa154": "shotgun_fullauto_t8_item",
+    "actionregisterweapon": "shotgun_fullauto_t8_item",
     "handler": "#hash_50375e5de228e9fc",
     "attachslotoptics": 1,
     "attachslotrail": 1,

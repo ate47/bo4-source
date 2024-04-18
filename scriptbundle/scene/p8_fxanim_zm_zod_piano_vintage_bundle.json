@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_730583e9530d65fd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "fail"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_311268ac2190b763",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sample"
@@ -24,7 +24,7 @@
                     "entry": [
                         {
                             "anim": "#hash_42167166fbb2007e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "song"
@@ -36,7 +36,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_zod_piano_vintage_bundle",

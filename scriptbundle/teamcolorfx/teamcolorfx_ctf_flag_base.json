@@ -43,7 +43,7 @@
             "colorid": "#hash_2dc7d7e3f0d56e1a"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "teamcolorfx",
     "vmtype": "both",
     "name": "teamcolorfx_ctf_flag_base"

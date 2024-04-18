@@ -1,6 +1,6 @@
 {
     "mod": "MOD_DOWNED",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_downed",
     "displayname": "#hash_1c9e9c00440d97c4",

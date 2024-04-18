@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_deb8a6fd8a87f93",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "b_to_a"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3f78f6d6c9b89f09",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "a_to_b"
@@ -27,7 +27,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_zm_off_panel_electric_box_03_bundle",

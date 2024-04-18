@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_esc_gondola_wires_transition_in_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "p8_fxanim_zm_esc_gondola_wires_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 1"
@@ -19,11 +19,11 @@
                     "entry": [
                         {
                             "anim": "p8_fxanim_zm_esc_gondola_wires_transition_out_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "p8_fxanim_zm_esc_gondola_wires_idle_sanim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -37,7 +37,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_gondola_wires_bundle",

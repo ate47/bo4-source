@@ -6,11 +6,11 @@
                     "entry": [
                         {
                             "anim": "#pb_rifle_endgame_2ndplace_idle",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "cameraswitcher": "ui_cam_mp_endgame_common",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sb_mp_endgame_player_02_play"
@@ -27,7 +27,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

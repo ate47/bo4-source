@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7e40bb9e5f0bb91",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "out"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_546c2be2cf6ee7ce",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "in"
@@ -28,7 +28,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_wall_roots_01_bundle",

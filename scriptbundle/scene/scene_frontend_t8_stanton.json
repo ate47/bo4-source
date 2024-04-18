@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_stanton_main",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play"
@@ -23,7 +23,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6c576a03d629c9b4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -38,7 +38,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35a33a1cfbae3dd5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -54,7 +54,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35a3371cfbae38bc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -70,7 +70,7 @@
                     "entry": [
                         {
                             "anim": "#hash_710132b54c34e674",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -86,7 +86,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2075b8413f5dc25b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -102,7 +102,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1ee94d3f26f64847",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -118,7 +118,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2d75d22e5c84270e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play"
@@ -130,7 +130,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

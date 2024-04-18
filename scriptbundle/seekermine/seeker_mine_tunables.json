@@ -1,7 +1,7 @@
 {
     "var_c0c99398": 7,
     "var_292fba11": "shock_seeker_fail",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_b9cf9139": 0.15,
     "var_7553d738": "shock_seeker_no_response",
     "type": "seekermine",

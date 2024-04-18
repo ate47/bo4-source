@@ -1,6 +1,6 @@
 {
     "mod": "MOD_POST_GAME",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "meansofdeath",
     "name": "mod_post_game",
     "displayname": "#hash_280335ca3bf62f82",

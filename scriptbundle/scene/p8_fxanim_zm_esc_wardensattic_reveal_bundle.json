@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_55c8bd2c7f4014d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -15,7 +15,7 @@
                     "entry": [
                         {
                             "anim": "#hash_32b13c90c94b5fed",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "main & idle loop out"
@@ -32,7 +32,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4c5f55ed83785e44",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -41,7 +41,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ad91ca56817be0e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_5b7e58a36965d339",
@@ -60,7 +60,7 @@
                     "entry": [
                         {
                             "anim": "#hash_347a27023d7e58e0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -69,7 +69,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6303a1315c4ae8f2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_b75edbc7cb84245",
@@ -88,7 +88,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5e86d4db42429dc6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -97,7 +97,7 @@
                     "entry": [
                         {
                             "anim": "#hash_95be7883cd30a04",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_c0be606b929d4b3",
@@ -116,7 +116,7 @@
                     "entry": [
                         {
                             "anim": "#hash_44123800a8a26694",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -125,7 +125,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7cb4d35ef992311e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_52beecfecb853d49",
@@ -144,7 +144,7 @@
                     "entry": [
                         {
                             "anim": "#hash_25c6562c46485115",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "init"
@@ -153,7 +153,7 @@
                     "entry": [
                         {
                             "anim": "#hash_70cdb6116af51cb5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "var_64c0ee5a": "#hash_7ba9ec5340fc5c30",
@@ -168,7 +168,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_esc_wardensattic_reveal_bundle",

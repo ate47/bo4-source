@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_ruin_sitting_bull",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "play",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_ruin_sitting_bull3",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 3",
@@ -26,7 +26,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_ruin_sitting_bull4",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 4",
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "ui_scene_cam_ruin_sitting_bull2",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "shot 2",
@@ -55,7 +55,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30e55486759debc2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -65,7 +65,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30e55486759debc2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -75,7 +75,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30e55486759debc2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -85,7 +85,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30e55486759debc2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -106,7 +106,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b619354206fd9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -116,7 +116,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b619354206fd9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -126,7 +126,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b619354206fd9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -136,7 +136,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b619354206fd9f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -159,7 +159,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b61a354206ff52",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -169,7 +169,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b61a354206ff52",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -179,7 +179,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b61a354206ff52",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -189,7 +189,7 @@
                     "entry": [
                         {
                             "anim": "#hash_53b61a354206ff52",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -211,7 +211,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -221,7 +221,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -231,7 +231,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -241,7 +241,7 @@
                     "entry": [
                         {
                             "anim": "#hash_451eae86195c7769",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -263,7 +263,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9a15b43a7e5c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -273,7 +273,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9a15b43a7e5c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -283,7 +283,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9a15b43a7e5c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -293,7 +293,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9a15b43a7e5c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -316,7 +316,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9d15b43a8375",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "play",
@@ -326,7 +326,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9d15b43a8375",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 3",
@@ -336,7 +336,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9d15b43a8375",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 4",
@@ -346,7 +346,7 @@
                     "entry": [
                         {
                             "anim": "#hash_665d9d15b43a8375",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "shot 2",
@@ -365,7 +365,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "looping": 1,
     "devstate": "placeholder",
     "type": "scene",

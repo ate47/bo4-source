@@ -1,7 +1,7 @@
 {
     "destroyed": "#hash_10c39c57317b32f7",
     "ready": "#hash_4db3df0f6899b4d3",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_rcxd"

@@ -5,7 +5,7 @@
         }
     ],
     "description": "#hash_2110259747020da9",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#attach_t8_wz_pickup_foregrip",
     "type": "itemspawnentry",
     "hintstring": "#wz/attach_foregrip",

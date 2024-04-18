@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_372f03c7e091433",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "crush",
@@ -21,7 +21,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "name": "p8_fxanim_zm_red_omphalos_egg_bundle",

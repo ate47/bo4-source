@@ -25,7 +25,7 @@
             "position": "crew2"
         }
     ],
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "model": "#veh_t7_mil_apc",
     "type": "vehicleriders",
     "vmtype": "both",

@@ -95,7 +95,7 @@ function init_quest() {
     level.var_a035a0b9 = zm_hms_util::function_bffcedde("office_punch_card", "targetname", "script_int");
     level.var_3d015a65 = 0;
     foreach (var_453ce50f in level.var_a035a0b9) {
-        var_453ce50f zm_item_pickup::function_e8661563(&function_e8d6a81b, 1);
+        var_453ce50f zm_item_pickup::item_pickup_init(&function_e8d6a81b, 1);
     }
     var_453ce50f = getent("punch_card_anim", "targetname");
     assert(isdefined(var_453ce50f), "<unknown string>");

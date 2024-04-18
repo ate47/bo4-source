@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_5981cb1c7f338e81",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_5dc4470b": -8,
     "var_3e688854": -2,
     "model": "#wpn_t8_zm_mp40_world",

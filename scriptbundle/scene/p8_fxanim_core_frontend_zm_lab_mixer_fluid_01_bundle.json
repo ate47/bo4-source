@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e3981d181e20323",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_idle",
@@ -16,11 +16,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_core_frontend_zm_lab_mixer_fluid_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_48563df821f838e8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_activate",
@@ -30,11 +30,11 @@
                     "entry": [
                         {
                             "anim": "#hash_5739684472f1dde3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_411d90ba997a1cba",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_fill_finish",
@@ -44,7 +44,7 @@
                     "entry": [
                         {
                             "anim": "#hash_182cc7c43fc382da",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -62,7 +62,7 @@
                     "entry": [
                         {
                             "anim": "#hash_534248d6df094db",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_idle",
@@ -72,11 +72,11 @@
                     "entry": [
                         {
                             "anim": "#p8_fxanim_core_frontend_zm_lab_mixer_01_anim",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_5d0fad9c90950507",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_activate",
@@ -86,11 +86,11 @@
                     "entry": [
                         {
                             "anim": "#hash_7173b30930bbf5e8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         },
                         {
                             "anim": "#hash_1fc86b9f5113b461",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_fill_finish",
@@ -100,7 +100,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21a6be2d54a77f39",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "mixer_drain",
@@ -113,7 +113,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "client",

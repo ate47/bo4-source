@@ -42,15 +42,15 @@ function init() {
         function_e938f117();
     } else {
         level.zoneindex = level.var_3622eea1;
-        level.var_6ea26cee = [];
-        level.var_6ea26cee[0] = &function_c41ad9f9;
-        level.var_6ea26cee[1] = &function_53f0d046;
-        level.var_6ea26cee[2] = &function_864a9dec;
+        level.zone_setups = [];
+        level.zone_setups[0] = &function_c41ad9f9;
+        level.zone_setups[1] = &function_53f0d046;
+        level.zone_setups[2] = &function_864a9dec;
         if (isdefined(level.var_d06e67bc) && level.var_d06e67bc) {
-            level.zoneindex = randomintrange(0, level.var_6ea26cee.size);
+            level.zoneindex = randomintrange(0, level.zone_setups.size);
         }
-        if (isdefined(level.var_6ea26cee[level.zoneindex])) {
-            [[ level.var_6ea26cee[level.zoneindex] ]]();
+        if (isdefined(level.zone_setups[level.zoneindex])) {
+            [[ level.zone_setups[level.zoneindex] ]]();
         } else {
             function_c41ad9f9();
         }

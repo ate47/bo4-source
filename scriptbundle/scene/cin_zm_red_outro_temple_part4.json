@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh400_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh400",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh405_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh405",
@@ -26,7 +26,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh408_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh408",
@@ -36,7 +36,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh410_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh410",
@@ -46,7 +46,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh415_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh415"
@@ -55,7 +55,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh420_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh420"
@@ -64,7 +64,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh430_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh430"
@@ -73,7 +73,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh440_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh440"
@@ -82,7 +82,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh450_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh450"
@@ -91,7 +91,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh460_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh460"
@@ -100,7 +100,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh465_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh465"
@@ -109,7 +109,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh470_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh470"
@@ -118,7 +118,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh480_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh480"
@@ -127,7 +127,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh490_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh490"
@@ -136,7 +136,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh500_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh500"
@@ -145,7 +145,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh510_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh510"
@@ -154,7 +154,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh520_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh520"
@@ -163,7 +163,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh530_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh530",
@@ -173,7 +173,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh540_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh540"
@@ -182,7 +182,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh550_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh550"
@@ -191,7 +191,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh560_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh560"
@@ -200,7 +200,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh570_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh570"
@@ -209,7 +209,7 @@
                     "entry": [
                         {
                             "cameraswitcher": "c_cin_zm_red_outro_sh580_cam",
-                            "var_71bac06": "cameraswitcher"
+                            "entrytype": "cameraswitcher"
                         }
                     ],
                     "name": "sh580"
@@ -241,7 +241,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1a9fc0cd685a8ff4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -336,7 +336,7 @@
                     "entry": [
                         {
                             "anim": "#hash_637f2bb669c27acb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -346,7 +346,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7461de624ca4973e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh440"
@@ -355,7 +355,7 @@
                     "entry": [
                         {
                             "anim": "#hash_680408646e4c55d5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -368,7 +368,7 @@
                     "entry": [
                         {
                             "anim": "#hash_726ec5ba302ee285",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -382,7 +382,7 @@
                     "entry": [
                         {
                             "anim": "#hash_42fb8791c9d1fe12",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -392,7 +392,7 @@
                     "entry": [
                         {
                             "anim": "#hash_bdb56d4e8499a39",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -405,7 +405,7 @@
                     "entry": [
                         {
                             "anim": "#hash_ab94a95ee4bfd1c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -415,7 +415,7 @@
                     "entry": [
                         {
                             "anim": "#hash_118e79cfa7433701",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -429,7 +429,7 @@
                     "entry": [
                         {
                             "anim": "#hash_647191cf8e31d7bf",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -439,7 +439,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1cad39c0bf9a2a10",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh550"
@@ -448,7 +448,7 @@
                     "entry": [
                         {
                             "anim": "#hash_a7d17da92cab0c5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh560"
@@ -457,7 +457,7 @@
                     "entry": [
                         {
                             "anim": "#hash_43c689cda6d2822e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -494,7 +494,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2b61e9f24c1bd3ac",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -508,7 +508,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f24261a190df40b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -518,7 +518,7 @@
                     "entry": [
                         {
                             "anim": "#hash_65a6a568283696ee",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh440"
@@ -527,7 +527,7 @@
                     "entry": [
                         {
                             "anim": "#hash_65b3e90394644ced",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh450"
@@ -536,7 +536,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3510baf1e5637c40",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh460"
@@ -545,7 +545,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2a3e14fdc491afd",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -564,7 +564,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5ee4e565ba70e1b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -597,7 +597,7 @@
                     "entry": [
                         {
                             "anim": "#hash_148f30a3ea038f73",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -634,7 +634,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7cd8da3c11f98bd6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -648,7 +648,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30d48376fce532b0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -668,7 +668,7 @@
                     "entry": [
                         {
                             "anim": "#hash_427a02d14090e35f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -685,7 +685,7 @@
                     "entry": [
                         {
                             "anim": "#hash_554afee38a11ca4b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -718,7 +718,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5c330c8d4623b5a3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -744,7 +744,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5a3203a44b910af1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -755,7 +755,7 @@
                     "entry": [
                         {
                             "anim": "#hash_401fdb3710cc1620",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -839,7 +839,7 @@
                     "entry": [
                         {
                             "anim": "#hash_14f00ca064fc148",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -850,7 +850,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3c6612bfb6ed3dc9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -926,7 +926,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58b71368b4ae58c5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -937,7 +937,7 @@
                     "entry": [
                         {
                             "anim": "#hash_14d31464a825c088",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh405",
@@ -947,7 +947,7 @@
                     "entry": [
                         {
                             "anim": "#hash_79fb6c5db69ec9ad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1001,7 +1001,7 @@
                     "entry": [
                         {
                             "anim": "#hash_306c55ece3d47375",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1035,7 +1035,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5810515bcf88f5ed",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1051,7 +1051,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ee42affb2d2a8e5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1106,7 +1106,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ff63976c5e98f5d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1140,7 +1140,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58104e5bcf88f0d4",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1156,7 +1156,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ee427ffb2d2a3cc",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1211,7 +1211,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7ff63676c5e98a44",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1245,7 +1245,7 @@
                     "entry": [
                         {
                             "anim": "#hash_58104f5bcf88f287",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1261,7 +1261,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ee428ffb2d2a57f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1350,7 +1350,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2ee425ffb2d2a066",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1431,7 +1431,7 @@
                     "entry": [
                         {
                             "anim": "#hash_468e651ae13a2e86",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1447,7 +1447,7 @@
                     "entry": [
                         {
                             "anim": "#hash_21b31ac1d79bf3ae",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1528,7 +1528,7 @@
                     "entry": [
                         {
                             "anim": "#hash_713fc12c6e35e387",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1544,7 +1544,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6faffd579ef6db0f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1637,7 +1637,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b4751e578135f5f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1745,7 +1745,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7d2bfff27e04ea2a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1755,7 +1755,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4533f45d401ac723",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh465"
@@ -1764,7 +1764,7 @@
                     "entry": [
                         {
                             "anim": "#hash_82a8e04a4f847b1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh470"
@@ -1773,7 +1773,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7a36ca521a4d1040",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh480"
@@ -1782,7 +1782,7 @@
                     "entry": [
                         {
                             "anim": "#hash_398087aeed247c7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1795,7 +1795,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5f6f9bd075f18a96",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1805,7 +1805,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1351f213bb086eef",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1819,7 +1819,7 @@
                     "entry": [
                         {
                             "anim": "#hash_30d6e0da052776e1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1829,7 +1829,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2e94f94fa9e0971a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh550"
@@ -1838,7 +1838,7 @@
                     "entry": [
                         {
                             "anim": "#hash_745eec895de118e3",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh560"
@@ -1847,7 +1847,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6ef346e916dd626c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh570"
@@ -1856,7 +1856,7 @@
                     "entry": [
                         {
                             "anim": "#hash_44f4e2dedc27e7f5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1925,7 +1925,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47c3004cb9fb452e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -1935,7 +1935,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c22d258433811b5",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh530",
@@ -1945,7 +1945,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e11128b3507deb8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh540"
@@ -1954,7 +1954,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1cd1b1ad9094b20f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -1967,7 +1967,7 @@
                     "entry": [
                         {
                             "anim": "#hash_342d74b5921064e1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2040,7 +2040,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47c2ff4cb9fb437b",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2050,7 +2050,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c22cf5843380c9c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh530",
@@ -2060,7 +2060,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e11158b3507e3d1",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2076,7 +2076,7 @@
                     "entry": [
                         {
                             "anim": "#hash_342d71b592105fc8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2149,7 +2149,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47c2fe4cb9fb41c8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2159,7 +2159,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c22d05843380e4f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh530",
@@ -2169,7 +2169,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e11148b3507e21e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2250,7 +2250,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47c3054cb9fb4dad",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2260,7 +2260,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c22cd5843380936",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2345,7 +2345,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47c3044cb9fb4bfa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2355,7 +2355,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c22ce5843380ae9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2440,7 +2440,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47c3034cb9fb4a47",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2450,7 +2450,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1c22cb58433805d0",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2548,7 +2548,7 @@
                     "entry": [
                         {
                             "anim": "#hash_715e04ff11df01aa",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2636,7 +2636,7 @@
                     "entry": [
                         {
                             "anim": "#hash_715e03ff11defff7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2659,7 +2659,7 @@
                     "entry": [
                         {
                             "anim": "#hash_158beabd1bf14845",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2674,7 +2674,7 @@
                     "entry": [
                         {
                             "anim": "#hash_146cb8ba2fd8454d",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2729,7 +2729,7 @@
                     "entry": [
                         {
                             "anim": "#hash_7a48150a968f1c95",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -2788,7 +2788,7 @@
                     "entry": [
                         {
                             "anim": "#hash_78655b5b134ef711",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanuphide": 1,
@@ -2879,7 +2879,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2904cbc897a38e67",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh450"
@@ -2888,7 +2888,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4a6b970e44870844",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh460"
@@ -2897,7 +2897,7 @@
                     "entry": [
                         {
                             "anim": "#hash_489c540ff85397d7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh465"
@@ -2978,7 +2978,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1a32e9fd605dceb7",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh450"
@@ -2987,7 +2987,7 @@
                     "entry": [
                         {
                             "anim": "#hash_e6d15a79613ac2e",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh460"
@@ -2996,7 +2996,7 @@
                     "entry": [
                         {
                             "anim": "#hash_3b79f8eb0b3bf467",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh465"
@@ -3083,7 +3083,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2a0a27dbd3a0b13c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh465"
@@ -3092,7 +3092,7 @@
                     "entry": [
                         {
                             "anim": "#hash_50f2c04e1ca960ca",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -3177,7 +3177,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4d3fef202bf6bb6c",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh465"
@@ -3186,7 +3186,7 @@
                     "entry": [
                         {
                             "anim": "#hash_447d36ebf09b688a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "cleanupdelete": 1,
@@ -3305,7 +3305,7 @@
                     "entry": [
                         {
                             "anim": "#hash_47a7dfee2fe603c6",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh570"
@@ -3314,7 +3314,7 @@
                     "entry": [
                         {
                             "anim": "#hash_76d1f56bb7eed0e9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh580"
@@ -3398,7 +3398,7 @@
                     "entry": [
                         {
                             "anim": "#hash_2405d48aad3c5cf8",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh570"
@@ -3407,7 +3407,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4b98e0a083aeaab9",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh580"
@@ -3435,7 +3435,7 @@
                     "entry": [
                         {
                             "anim": "#hash_6f653bb1b35fa4a2",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh410",
@@ -3445,7 +3445,7 @@
                     "entry": [
                         {
                             "anim": "#hash_280dbfc86d397d17",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh415"
@@ -3454,7 +3454,7 @@
                     "entry": [
                         {
                             "anim": "#hash_41220675a59979eb",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "sh420"
@@ -3553,7 +3553,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5fc69eda817e6420",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3567,7 +3567,7 @@
                     "entry": [
                         {
                             "anim": "#hash_4e72fb700100bc8f",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3609,7 +3609,7 @@
                     "entry": [
                         {
                             "anim": "#hash_35701168ba2f9343",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "prepareshow": 1,
@@ -3622,7 +3622,7 @@
         }
     ],
     "scenetype": "scene",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "dontthrottle": 1,
     "devstate": "placeholder",
     "type": "scene",

@@ -21,7 +21,7 @@
     ],
     "amount": 1,
     "description": "#hash_282d02d9d27da287",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "var_3e688854": -2,
     "weapon": "weapon#hash_77f82adf7d4872f7",
     "attachslotbody": 1,

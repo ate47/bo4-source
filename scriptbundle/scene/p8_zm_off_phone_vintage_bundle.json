@@ -6,7 +6,7 @@
                     "entry": [
                         {
                             "anim": "#hash_5331c3d8d8696302",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "devstate": "initial",
@@ -16,7 +16,7 @@
                     "entry": [
                         {
                             "anim": "#hash_1f63e2565ea41705",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "name": "blinking"
@@ -25,7 +25,7 @@
                     "entry": [
                         {
                             "anim": "#hash_20b4c4193393834a",
-                            "var_71bac06": "anim"
+                            "entrytype": "anim"
                         }
                     ],
                     "devstate": "polishing",
@@ -38,7 +38,7 @@
         }
     ],
     "scenetype": "fxanim",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "devstate": "placeholder",
     "type": "scene",
     "vmtype": "both",

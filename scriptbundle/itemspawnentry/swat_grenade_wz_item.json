@@ -1,7 +1,7 @@
 {
     "amount": 1,
     "description": "#hash_560d256b9ff2b04e",
-    "var_922067c4": "scriptbundle",
+    "configstringfiletype": "scriptbundle",
     "weapon": "weapon#hash_3a19eaf2033c6fae",
     "type": "itemspawnentry",
     "name": "swat_grenade_wz_item",
