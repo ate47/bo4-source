@@ -374,7 +374,7 @@ function enemy_threat() {
         if (distancesquared(self.origin, closest_ally.origin) < allyradius * allyradius) {
             eyepoint = self geteye();
             dir = anglestoforward(self getplayerangles());
-            dir = dir * mpdialog_value("enemyContactDistance", 0);
+            dir *= mpdialog_value("enemyContactDistance", 0);
             endpoint = eyepoint + dir;
             traceresult = bullettrace(eyepoint, endpoint, 1, self);
             if (isdefined(traceresult[#"entity"]) && traceresult[#"entity"].classname == "player" && util::function_fbce7263(traceresult[#"entity"].team, self.team)) {
@@ -562,7 +562,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
     while (true) {
         wait(waittime);
         if (waittime > 0.2) {
-            waittime = waittime / 2;
+            waittime /= 2;
         }
         if (!isdefined(projectile)) {
             return;
@@ -609,7 +609,7 @@ function heavy_weapon_success_reaction() {
     }
     allies = [];
     allyradiussq = mpdialog_value("playerVoiceRadius", 0);
-    allyradiussq = allyradiussq * allyradiussq;
+    allyradiussq *= allyradiussq;
     foreach (player in level.players) {
         if (!isdefined(player) || !isalive(player) || player.sessionstate != "playing" || player == self || util::function_fbce7263(player.team, self.team)) {
             continue;
@@ -845,7 +845,7 @@ function play_dialog(dialogkey, dialogflags, dialogbuffer, enemy) {
         }
         dialogalias = dialogalias + "_0" + self.stolendialogindex;
         self.stolendialogindex++;
-        self.stolendialogindex = self.stolendialogindex % 4;
+        self.stolendialogindex %= 4;
     }
     if (dialogflags & 2) {
         self playsoundontag(dialogalias, "J_Head");
@@ -1031,7 +1031,7 @@ function play_gadget_ready(weapon, userflip = 0) {
             delaykey = "rouletteFlipDelay";
         }
         waittime = mpdialog_value(delaykey, minwaittime);
-        dialogflags = dialogflags + 64;
+        dialogflags += 64;
     } else {
         if (isdefined(self.isthief) && self.isthief) {
             generickey = "thiefWeaponReady";
@@ -1053,7 +1053,7 @@ function play_gadget_ready(weapon, userflip = 0) {
             if (self.laststolengadget === weapon && self.laststolengadgettime + int(mpdialog_value(repeatthresholdkey, 0) * 1000) > gettime()) {
                 dialogkey = repeatkey;
             } else {
-                dialogflags = dialogflags + 64;
+                dialogflags += 64;
             }
         }
     }
@@ -1193,7 +1193,7 @@ function play_gadget_success(weapon, waitkey, victim) {
     if (isdefined(waitkey)) {
         waittime = mpdialog_value(waitkey, 0);
     }
-    dialogkey = dialogkey + "0";
+    dialogkey += "0";
     self.playedgadgetsuccess = 1;
     self thread wait_play_dialog(waittime, dialogkey, 1, undefined, victim);
 }

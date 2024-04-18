@@ -237,7 +237,7 @@ function function_8d44707e(var_7112190, var_fc65696c) {
     var_1be13a31 = self ai::function_9139c839().var_854eebd;
     n_health = n_min + var_cc83a31d * (isdefined(var_fc65696c) ? var_fc65696c : level.round_number);
     if (isdefined(var_1be13a31) && var_7112190 && level.players.size > 1) {
-        n_health = n_health + n_health * (level.players.size - 1) * var_1be13a31;
+        n_health += n_health * (level.players.size - 1) * var_1be13a31;
     }
     return int(math::clamp(n_health, n_min, n_max));
 }
@@ -324,19 +324,19 @@ function function_422fdfd4(entity, attacker, weapon, var_5457dc44, hitloc, point
         has_weakpoints = isdefined(namespace_81245006::function_fab3ee3e(self));
         if (var_30362eca && attacker hasperk(#"specialty_mod_awareness")) {
             if (var_b1c1c5cf < 1) {
-                var_b1c1c5cf = var_b1c1c5cf + 0.2;
+                var_b1c1c5cf += 0.2;
             } else {
-                var_b1c1c5cf = var_b1c1c5cf * 1.2;
+                var_b1c1c5cf *= 1.2;
             }
         } else if (registerzombie_bgb_used_reinforce && var_84ed9a13.type == #"armor" && weaponhasattachment(weapon, "fmj2")) {
             if (self.var_6f84b820 == #"boss") {
-                var_b1c1c5cf = var_b1c1c5cf * 1.1;
+                var_b1c1c5cf *= 1.1;
             } else {
                 var_b1c1c5cf = min(1, var_b1c1c5cf + 0.1);
             }
         } else if (has_weakpoints && !registerzombie_bgb_used_reinforce && weaponhasattachment(weapon, "fmj") && var_b1c1c5cf < 1) {
             if (self.var_6f84b820 == #"boss") {
-                var_b1c1c5cf = var_b1c1c5cf * 1.1;
+                var_b1c1c5cf *= 1.1;
             } else {
                 var_b1c1c5cf = min(1, var_b1c1c5cf + 0.1);
             }

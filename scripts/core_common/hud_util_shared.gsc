@@ -221,8 +221,8 @@ function setpoint(point, relativepoint, xoffset, yoffset, movetime) {
             }
         }
         self.y = element.y + offsety * yfactor;
-        self.x = self.x + self.xoffset;
-        self.y = self.y + self.yoffset;
+        self.x += self.xoffset;
+        self.y += self.yoffset;
         switch (self.elemtype) {
         case #"bar":
             setpointbar(point, relativepoint, xoffset, yoffset);

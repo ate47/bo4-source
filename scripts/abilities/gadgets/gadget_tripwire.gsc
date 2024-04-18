@@ -603,8 +603,8 @@ function function_9e546fb3(attacker, weapon, target, var_2f6adbe3, tripper) {
             }
             if (isdefined(tripper) && isvehicle(tripper)) {
                 if (isdefined(var_2f6adbe3)) {
-                    maxdamage = maxdamage * 1.5;
-                    mindamage = mindamage * 1.5;
+                    maxdamage *= 1.5;
+                    mindamage *= 1.5;
                 }
                 self radiusdamage(self.origin + self.hitnormal * 5, explosiondist * 0.75, maxdamage, mindamage, self.owner, "MOD_EXPLOSIVE", self.weapon);
             } else if (!isdefined(var_2f6adbe3)) {
@@ -749,7 +749,7 @@ function function_7a905654(watcher) {
         if (type == "MOD_MELEE" || weapon.isemp || weapon.destroysequipment) {
             self.damagetaken = damagemax;
         } else {
-            self.damagetaken = self.damagetaken + damage;
+            self.damagetaken += damage;
         }
         if (self.damagetaken >= damagemax) {
             watcher thread weaponobjects::waitanddetonate(self, 0.05, attacker, weapon);

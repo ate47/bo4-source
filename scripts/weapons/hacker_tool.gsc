@@ -320,12 +320,12 @@ function hackertooltargetloop(weapon) {
                 continue;
             }
             if (self.hackertoollostsightlinetime == 0) {
-                self.hackertoollocktimeelapsed = self.hackertoollocktimeelapsed + 0.1 * hackingtimescale(self.hackertooltarget);
+                self.hackertoollocktimeelapsed += 0.1 * hackingtimescale(self.hackertooltarget);
                 hackpercentage = self.hackertoollocktimeelapsed / lockontime * 100;
                 self setweaponhackpercent(weapon, hackpercentage);
                 heatseekingmissile::setfriendlyflags(weapon, self.hackertooltarget);
             } else {
-                self.hackertoollocktimeelapsed = self.hackertoollocktimeelapsed - 0.1 * hackingtimenolineofsightscale(self.hackertooltarget);
+                self.hackertoollocktimeelapsed -= 0.1 * hackingtimenolineofsightscale(self.hackertooltarget);
                 if (self.hackertoollocktimeelapsed < 0) {
                     self.hackertoollocktimeelapsed = 0;
                     self clearhackertarget(weapon, 0, 0);

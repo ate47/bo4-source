@@ -500,7 +500,7 @@ function function_5716ed83(e_player) {
 function function_d4fea86c(zbarrier_magicbox) {
     if (zbarrier_magicbox.weapon === level.w_tricannon_base) {
         v_offset = vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 16;
-        self.origin = self.origin + v_offset;
+        self.origin += v_offset;
     }
     v_float = anglestoup(self.angles) * 40;
     self thread zm_magicbox::timer_til_despawn(v_float);

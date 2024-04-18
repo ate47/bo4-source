@@ -209,9 +209,9 @@ function function_6b3512d() {
         wait(1);
     }
     wait(0.1);
-    level.zombie_total = level.zombie_total + 40;
+    level.zombie_total += 40;
     if (isdefined(level.var_e2aef122)) {
-        level.var_e2aef122 = level.var_e2aef122 + 40;
+        level.var_e2aef122 += 40;
     }
     level.var_dc22f98 = level.fn_custom_round_ai_spawn;
     level.fn_custom_round_ai_spawn = &function_fe02a12f;
@@ -282,7 +282,7 @@ function function_fe3507a6() {
     ai = function_dd836251();
     if (isdefined(ai)) {
         ai.var_faab7250 = 1;
-        ai._starting_round_number = ai._starting_round_number + 15;
+        ai._starting_round_number += 15;
         level.var_4b9c09fd--;
     }
     return ai;

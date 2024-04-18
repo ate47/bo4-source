@@ -80,7 +80,7 @@ function planeturn(localclientnum, plane, yaw, halflife, starttime, isturningrig
         if (minroll != -1 && plane.angles[2] >= minroll * turndirection) {
             rollz = 0;
         }
-        accumturn = accumturn + yawy;
+        accumturn += yawy;
         if (accumturn <= maxyaw * turndirection) {
             yawy = 0;
         }
@@ -97,8 +97,8 @@ function planeturn(localclientnum, plane, yaw, halflife, starttime, isturningrig
         }
         waitformovedone = plane rewindobjects::servertimedmoveto(localclientnum, plane.origin, endpoint, starttime, waitamount);
         plane rewindobjects::servertimedrotateto(localclientnum, angles, starttime, waitamount);
-        looptime = looptime + waitamount;
-        starttime = starttime + int(waitamount * 1000);
+        looptime += waitamount;
+        starttime += int(waitamount * 1000);
     }
     yawy = getdvarfloat(#"scr_planeyaw2", 1.5);
     rollz = getdvarfloat(#"scr_planeroll2", -0.9);
@@ -117,7 +117,7 @@ function planeturn(localclientnum, plane, yaw, halflife, starttime, isturningrig
         if (minroll != -1 && plane.angles[2] >= 0) {
             rollz = 0;
         }
-        accumturn = accumturn + yawy;
+        accumturn += yawy;
         if (accumturn >= maxyaw) {
             yawy = 0;
         }
@@ -134,8 +134,8 @@ function planeturn(localclientnum, plane, yaw, halflife, starttime, isturningrig
         }
         waitformovedone = plane rewindobjects::servertimedmoveto(localclientnum, plane.origin, endpoint, starttime, waitamount);
         plane rewindobjects::servertimedrotateto(localclientnum, angles, starttime, waitamount);
-        looptime = looptime + waitamount;
-        starttime = starttime + int(waitamount * 1000);
+        looptime += waitamount;
+        starttime += int(waitamount * 1000);
     }
 }
 
@@ -158,12 +158,12 @@ function doabarrelroll(localclientnum, plane, endpoint, flytime, starttime) {
     timeelapsed = 0;
     degreesrolled = 0;
     waitamount = 0.1;
-    loopheight = loopheight + randomfloatrange(0 - loopheightrand, loopheightrand);
+    loopheight += randomfloatrange(0 - loopheightrand, loopheightrand);
     waitformovedone = 0;
     angles = plane.angles;
     originalroll = plane.angles[2];
     while (timeelapsed < flytime) {
-        timeelapsed = timeelapsed + waitamount;
+        timeelapsed += waitamount;
         if (timeelapsed > loopwaittime && degreesrolled < degreestoroll) {
             pitch = degreesrolled / 8;
             if (pitch > 22.5) {
@@ -175,7 +175,7 @@ function doabarrelroll(localclientnum, plane, endpoint, flytime, starttime) {
                 plane.angles[1] = 0;
             }
             angles = (0 - pitch, plane.angles[1], originalroll + degreesrolled);
-            degreesrolled = degreesrolled + rollz;
+            degreesrolled += rollz;
         }
         ratio = timeelapsed / flytime / 2;
         nextpoint = rewindobjects::getpointonline(origin, endpoint, ratio);
@@ -186,7 +186,7 @@ function doabarrelroll(localclientnum, plane, endpoint, flytime, starttime) {
         }
         waitformovedone = plane rewindobjects::servertimedmoveto(localclientnum, plane.origin, nextpoint, starttime, waitamount);
         plane rewindobjects::servertimedrotateto(localclientnum, angles, starttime, waitamount);
-        starttime = starttime + int(waitamount * 1000);
+        starttime += int(waitamount * 1000);
     }
 }
 

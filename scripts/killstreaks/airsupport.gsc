@@ -178,10 +178,10 @@ function getminimumflyheight() {
         planeflyheight = 850;
         if (isdefined(level.airsupportheightscale)) {
             level.airsupportheightscale = getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
-            planeflyheight = planeflyheight * getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
+            planeflyheight *= getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
         }
         if (isdefined(level.forceairsupportmapheight)) {
-            planeflyheight = planeflyheight + level.forceairsupportmapheight;
+            planeflyheight += level.forceairsupportmapheight;
         }
     }
     return planeflyheight;
@@ -779,7 +779,7 @@ function entlosradiusdamage(ent, pos, radius, max, min, owner, einflictor) {
                 /#
                     debug_star((pos[0], pos[1], head_height), (0, 1, 0), debug_display_time);
                 #/
-                dist = dist * 4;
+                dist *= 4;
                 if (dist > radius) {
                     return false;
                 }
@@ -793,7 +793,7 @@ function entlosradiusdamage(ent, pos, radius, max, min, owner, einflictor) {
                     /#
                         debug_star(pos, (0, 1, 0), debug_display_time);
                     #/
-                    dist = dist * 4;
+                    dist *= 4;
                     if (dist > radius) {
                         return false;
                     }
@@ -927,7 +927,7 @@ function flattenyaw(goal) {
     self endon(#"death");
     increment = 3;
     if (self.angles[1] > goal) {
-        increment = increment * -1;
+        increment *= -1;
     }
     while (abs(self.angles[1] - goal) > 3) {
         self.angles = (self.angles[0], self.angles[1] + increment, self.angles[2]);
@@ -964,10 +964,10 @@ function leave(duration) {
         if (isdefined(nfz)) {
             if (tries != 1) {
                 if (tries % 2 == 1) {
-                    yaw = yaw * -1;
+                    yaw *= -1;
                 } else {
-                    yaw = yaw + 10;
-                    yaw = yaw * -1;
+                    yaw += 10;
+                    yaw *= -1;
                 }
             }
             tries--;
@@ -997,7 +997,7 @@ function getrandomhelicopterstartorigin() {
     pathrandomness = 100;
     direction = (0, randomintrange(-2, 3), 0);
     start_origin = anglestoforward(direction) * dist;
-    start_origin = start_origin + ((randomfloat(2) - 1) * pathrandomness, (randomfloat(2) - 1) * pathrandomness, 0);
+    start_origin += ((randomfloat(2) - 1) * pathrandomness, (randomfloat(2) - 1) * pathrandomness, 0);
     /#
         if (getdvarint(#"scr_noflyzones_debug", 0)) {
             if (level.noflyzones.size) {
@@ -1305,7 +1305,7 @@ function monitorspeed(spawnprotectiontime) {
         velocity = self getvelocity();
         speedsq = lengthsquared(velocity);
         if (speedsq < minspeedsq) {
-            self.nottargettedai_underminspeedtimer = self.nottargettedai_underminspeedtimer + waitperiodmilliseconds;
+            self.nottargettedai_underminspeedtimer += waitperiodmilliseconds;
         } else {
             self.nottargettedai_underminspeedtimer = 0;
         }

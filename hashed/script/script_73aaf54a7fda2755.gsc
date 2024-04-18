@@ -139,7 +139,7 @@ function private function_79e38cc4(origin) {
             }
         }
         wait(time_step);
-        var_74d136f5 = var_74d136f5 + time_step;
+        var_74d136f5 += time_step;
     }
 }
 

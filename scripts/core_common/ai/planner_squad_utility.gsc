@@ -114,7 +114,7 @@ function private _calculateadjustedpathsegments(params) {
             distancetonextpoint = distance2d(currentpoint, nextpoint);
             totaldistance = currentdistance + distancetonextpoint;
             if (totaldistance < segmentlength) {
-                currentdistance = currentdistance + distancetonextpoint;
+                currentdistance += distancetonextpoint;
                 currentpoint = nextpoint;
                 continue;
             }

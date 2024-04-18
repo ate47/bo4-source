@@ -100,9 +100,9 @@ function function_bc7ec9a1(spawngroup) {
     var_fbc43d99 = 0;
     var_4f210458 = 0;
     foreach (spawn in spawns) {
-        var_164af2a6 = var_164af2a6 + spawn.origin.x;
-        var_98dd92c = var_98dd92c + spawn.origin.y;
-        var_fbc43d99 = var_fbc43d99 + spawn.origin.z;
+        var_164af2a6 += spawn.origin.x;
+        var_98dd92c += spawn.origin.y;
+        var_fbc43d99 += spawn.origin.z;
     }
     return var_98dd92c;
 }

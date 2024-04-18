@@ -172,7 +172,7 @@ function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, 
     turretvehicle = self;
     empdamage = int(idamage + turretvehicle.maxhealth * 1 + 0.5);
     idamage = turretvehicle killstreaks::ondamageperweapon("ultimate_turret", eattacker, idamage, idflags, smeansofdeath, weapon, turretvehicle.maxhealth, undefined, turretvehicle.maxhealth * 0.4, undefined, empdamage, undefined, 1, 1, 1);
-    turretvehicle.damagetaken = turretvehicle.damagetaken + idamage;
+    turretvehicle.damagetaken += idamage;
     if (isdefined(einflictor) && isvehicle(einflictor) && issentient(einflictor)) {
         if (is_valid_target(einflictor, turretvehicle.team)) {
             turretvehicle.favoriteenemy = einflictor;

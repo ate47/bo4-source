@@ -216,7 +216,7 @@ function crane_shock_box() {
         wait(1.6);
         var_217fca51 thread scene::play("Shot 2");
         n_anim_length = getanimlength(#"hash_3fbc33140c093c0d");
-        n_anim_length = n_anim_length - 3.9;
+        n_anim_length -= 3.9;
         wait(n_anim_length);
         level flag::set(#"hash_6f71660057a5952f");
         if (!level flag::get(#"hash_66f358c0066d77d8") && level flag::get(#"hash_dd62a8822ea4a38")) {
@@ -496,7 +496,7 @@ function function_d0bb3c35() {
         n_wait_time = n_time;
     }
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
-        n_wait_time = n_wait_time + 30;
+        n_wait_time += 30;
     }
     wait(n_wait_time);
     self zm_powerups::hide_and_show(&zm_powerups::powerup_hide, &zm_powerups::powerup_show);

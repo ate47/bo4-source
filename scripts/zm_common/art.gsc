@@ -61,7 +61,7 @@ function strtok_loc(string, par1) {
             indexstring = "";
             continue;
         }
-        indexstring = indexstring + string[i];
+        indexstring += string[i];
     }
     if (indexstring.size) {
         stringlist[stringlist.size] = indexstring;

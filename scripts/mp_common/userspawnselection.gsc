@@ -652,9 +652,9 @@ function private setupspawnlistforspawngroup(spawngroupkey, spawnlistname, team)
             spawn.enabled = -1;
         }
         array::add(self.spawns, spawn);
-        var_38345be7 = var_38345be7 + spawn.origin[0];
-        var_496cfe58 = var_496cfe58 + spawn.origin[1];
-        var_12de913c = var_12de913c + spawn.origin[2];
+        var_38345be7 += spawn.origin[0];
+        var_496cfe58 += spawn.origin[1];
+        var_12de913c += spawn.origin[2];
         var_3cc38ddd++;
     }
     var_b5d9fb3a = undefined;

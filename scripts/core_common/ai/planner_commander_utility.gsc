@@ -191,7 +191,7 @@ function private _calculatebotscentroid(doppelbots) {
     assert(isarray(doppelbots));
     centroid = (0, 0, 0);
     foreach (doppelbot in doppelbots) {
-        centroid = centroid + doppelbot[#"origin"];
+        centroid += doppelbot[#"origin"];
     }
     if (doppelbots.size > 0) {
         return (centroid / doppelbots.size);
@@ -663,7 +663,7 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
     path = undefined;
     longestpath = 0;
     if (queryresult.data.size > 0) {
-        for (index = 0; index < queryresult.data.size; index = index + 16) {
+        for (index = 0; index < queryresult.data.size; index += 16) {
             goalpoints = [];
             for (goalindex = index; goalindex - index < 16 && goalindex < queryresult.data.size; goalindex++) {
                 goalpoints[goalpoints.size] = queryresult.data[goalindex].origin;
@@ -724,7 +724,7 @@ function private _updatehistoricalgameobjects(commander) {
             gameobjecttotal++;
         }
     }
-    gameobjecttotal = gameobjecttotal + destroyedgameobjecttotal;
+    gameobjecttotal += destroyedgameobjecttotal;
     blackboard::setstructblackboardattribute(commander, #"gameobjects_assault_destroyed", destroyedgameobjecttotal);
     blackboard::setstructblackboardattribute(commander, #"gameobjects_assault_total", gameobjecttotal);
 }

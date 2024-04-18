@@ -119,7 +119,7 @@ function onprecachegametype() {
 function sd_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon) {
     teamkill_penalty = globallogic_defaults::default_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon);
     if (isdefined(self.isdefusing) && self.isdefusing || isdefined(self.isplanting) && self.isplanting) {
-        teamkill_penalty = teamkill_penalty * level.teamkillpenaltymultiplier;
+        teamkill_penalty *= level.teamkillpenaltymultiplier;
     }
     return teamkill_penalty;
 }
@@ -131,7 +131,7 @@ function sd_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon) {
 function sd_getteamkillscore(einflictor, attacker, smeansofdeath, weapon) {
     teamkill_score = rank::getscoreinfovalue("team_kill");
     if (isdefined(self.isdefusing) && self.isdefusing || isdefined(self.isplanting) && self.isplanting) {
-        teamkill_score = teamkill_score * level.teamkillscoremultiplier;
+        teamkill_score *= level.teamkillscoremultiplier;
     }
     return int(teamkill_score);
 }
@@ -444,7 +444,7 @@ function givelastattackerwarning(team) {
         if (self.health != self.maxhealth) {
             fullhealthtime = 0;
         } else {
-            fullhealthtime = fullhealthtime + interval;
+            fullhealthtime += interval;
         }
         wait(interval);
         if (self.health == self.maxhealth && fullhealthtime >= 3) {
@@ -575,7 +575,7 @@ function bombs() {
         level.var_b10236da[level.var_b10236da.size] = var_69bc8821;
         bombzone.bombdefusetrig = getent(visuals[0].target, "targetname");
         assert(isdefined(bombzone.bombdefusetrig));
-        bombzone.bombdefusetrig.origin = bombzone.bombdefusetrig.origin + (0, 0, -10000);
+        bombzone.bombdefusetrig.origin += (0, 0, -10000);
         bombzone.bombdefusetrig.label = label;
     }
     for (index = 0; index < level.bombzones.size; index++) {

@@ -20,7 +20,7 @@ function __init__() {
     level.platoon = {#count:isdefined(getgametypesetting(#"platooncount")) ? getgametypesetting(#"platooncount") : 0, #assignment:isdefined(getgametypesetting(#"platoonassignment")) ? getgametypesetting(#"platoonassignment") : 0, #max_players:0};
     level.platoon.max_players = function_bb1ab64b();
     if (level.platoon.count) {
-        level.platoon.max_players = level.platoon.max_players / level.platoon.count;
+        level.platoon.max_players /= level.platoon.count;
     }
     callback::on_start_gametype(&on_start_gametype);
 }

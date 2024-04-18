@@ -790,7 +790,7 @@ function function_c1f603e(var_12230d08, n_cooldown, var_8d5d092c) {
     }
     self.var_9c7b96ed[var_8d5d092c] = 1;
     if (self hasperk(#"specialty_cooldown")) {
-        n_cooldown = n_cooldown * 0.5;
+        n_cooldown *= 0.5;
     }
     if (isdefined(var_12230d08)) {
         var_12230d08 waittilltimeout(n_cooldown, #"cancel_fasttravel_cooldown");

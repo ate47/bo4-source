@@ -43,7 +43,7 @@ function updatetimerpausedness() {
     if (level.timerstopped && !shouldbestopped) {
         level.timerstopped = 0;
         level.playabletimerstopped = 0;
-        level.discardtime = level.discardtime + gettime() - level.timerpausetime;
+        level.discardtime += gettime() - level.timerpausetime;
     }
 }
 
@@ -60,7 +60,7 @@ function pausetimer() {
 // Checksum 0x56e5439b, Offset: 0x318
 // Size: 0x2a
 function resumetimer() {
-    level.discardtime = level.discardtime + gettime() - level.migrationtimerpausetime;
+    level.discardtime += gettime() - level.migrationtimerpausetime;
 }
 
 // Namespace hostmigration/hostmigration_shared
@@ -73,7 +73,7 @@ function locktimer() {
         currtime = gettime();
         waitframe(1);
         if (!level.timerstopped && isdefined(level.discardtime)) {
-            level.discardtime = level.discardtime + gettime() - currtime;
+            level.discardtime += gettime() - currtime;
         }
     }
 }
@@ -212,7 +212,7 @@ function waitlongdurationwithhostmigrationpause(duration) {
     }
     assert(duration > 0);
     starttime = gettime();
-    for (endtime = gettime() + int(duration * 1000); gettime() < endtime; endtime = endtime + timepassed) {
+    for (endtime = gettime() + int(duration * 1000); gettime() < endtime; endtime += timepassed) {
         waittillhostmigrationstarts(float(endtime - gettime()) / 1000);
         if (isdefined(level.hostmigrationtimer)) {
             timepassed = waittillhostmigrationdone();
@@ -244,7 +244,7 @@ function waitlongdurationwithhostmigrationpauseemp(duration) {
         if (isdefined(level.hostmigrationtimer)) {
             timepassed = waittillhostmigrationdone();
             if (isdefined(empendtime)) {
-                empendtime = empendtime + timepassed;
+                empendtime += timepassed;
             }
         }
     }
@@ -272,7 +272,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
     while (gettime() < endtime) {
         waittillhostmigrationstarts(float(endtime - gettime()) / 1000);
         while (isdefined(level.hostmigrationtimer)) {
-            endtime = endtime + 1000;
+            endtime += 1000;
             setgameendtime(int(endtime));
             wait(1);
         }
@@ -283,7 +283,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
         }
     #/
     while (isdefined(level.hostmigrationtimer)) {
-        endtime = endtime + 1000;
+        endtime += 1000;
         setgameendtime(int(endtime));
         wait(1);
     }

@@ -465,7 +465,7 @@ function adjustments_for_solo() {
 // Size: 0xcc
 function door_price_reduction_for_solo() {
     if (self.zombie_cost >= 750) {
-        self.zombie_cost = self.zombie_cost - 250;
+        self.zombie_cost -= 250;
         if (isdefined(level.var_d0b54199)) {
             self thread [[ level.var_d0b54199 ]](self, self.zombie_cost);
             return;

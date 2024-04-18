@@ -52,7 +52,7 @@ function function_4827d817(weapon) {
     if (!isdefined(maxammo) || maxammo == 0) {
         maxammo = weapon.maxammo / weapon.clipsize;
         if (weapon.clipsize == 1) {
-            maxammo = maxammo + 1;
+            maxammo += 1;
         }
     }
     clipammo = self getweaponammoclip(weapon);
@@ -64,7 +64,7 @@ function function_4827d817(weapon) {
         if (currentammo >= maxammo) {
             return false;
         }
-        currentammo = currentammo + var_e6e3de63;
+        currentammo += var_e6e3de63;
         if (currentammo > maxammo) {
             currentammo = maxammo;
         }

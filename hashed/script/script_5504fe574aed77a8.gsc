@@ -262,7 +262,7 @@ function safe_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
             v_forward = anglestoforward(self.angles);
             v_right = anglestoright(self.angles);
             v_loc = self.origin + v_right * 7;
-            v_loc = v_loc + v_forward * -8;
+            v_loc += v_forward * -8;
             self.fx = playfx(localclientnum, level._effect[#"safe_fx"], v_loc, v_forward, anglestoup(self.angles));
         }
         return;

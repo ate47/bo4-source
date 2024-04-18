@@ -324,7 +324,7 @@ function indent(depth) {
     /#
         indent = "<unknown string>";
         for (i = 0; i < depth; i++) {
-            indent = indent + "<unknown string>";
+            indent += "<unknown string>";
         }
         return indent;
     #/

@@ -123,7 +123,7 @@ function activatedart(killstreaktype) {
 // Size: 0x42
 function cleanup_grenade() {
     self thread waitthendelete(0.05);
-    self.origin = self.origin + (0, 0, 1000);
+    self.origin += (0, 0, 1000);
 }
 
 // Namespace dart/dart

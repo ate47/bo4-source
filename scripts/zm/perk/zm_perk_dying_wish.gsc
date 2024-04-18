@@ -181,7 +181,7 @@ function function_eeb3bf92(var_1483b30b) {
     self zm_perks::function_13880aa5(self.var_95df0a1b, 1, #"perk_dying_wish");
     while (n_time_left > 0) {
         wait(0.1);
-        n_time_left = n_time_left - 0.1;
+        n_time_left -= 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_1483b30b);
         n_percentage = n_time_left / var_1483b30b;
         n_percentage = math::clamp(n_percentage, 0.02, var_1483b30b);
@@ -221,7 +221,7 @@ function function_2ca96414() {
     self zm_perks::function_f0ac059f(self.var_95df0a1b, self.var_eb319d10, #"perk_dying_wish");
     self thread function_d2bbaa76(self.var_740ffad6);
     self.var_30d7498d++;
-    self.var_740ffad6 = self.var_740ffad6 + 60 * self.var_30d7498d;
+    self.var_740ffad6 += 60 * self.var_30d7498d;
     self clientfield::set("" + #"hash_10f459edea6b3eb", 0);
 }
 
@@ -231,7 +231,7 @@ function function_2ca96414() {
 // Size: 0x18e
 function function_ab41c8ab(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     if (isdefined(attacker.var_eb319d10) && attacker.var_eb319d10 && meansofdeath === "MOD_MELEE") {
-        damage = damage * 6;
+        damage *= 6;
         if (!isdefined(self.var_6f84b820)) {
             return damage;
         }
@@ -246,7 +246,7 @@ function function_ab41c8ab(inflictor, attacker, damage, flags, meansofdeath, wea
         case #"heavy":
         case #"miniboss":
         case #"boss":
-            damage = damage + 7000;
+            damage += 7000;
             break;
         }
     }
@@ -278,7 +278,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self zm_perks::function_13880aa5(self.var_95df0a1b, 0, #"perk_dying_wish");
     while (true) {
         wait(0.1);
-        self.var_3e48c35a = self.var_3e48c35a - 0.1;
+        self.var_3e48c35a -= 0.1;
         self.var_3e48c35a = math::clamp(self.var_3e48c35a, 0, var_85dcb56c);
         n_percentage = 1 - self.var_3e48c35a / var_85dcb56c;
         n_percentage = math::clamp(n_percentage, 0.02, var_85dcb56c);

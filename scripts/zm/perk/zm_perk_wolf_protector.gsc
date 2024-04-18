@@ -156,7 +156,7 @@ function on_ai_damaged(s_params) {
             player thread function_f3cd6eac();
             return;
         }
-        player.var_2dc0d63c = player.var_2dc0d63c + var_c7364922;
+        player.var_2dc0d63c += var_c7364922;
     }
 }
 
@@ -364,7 +364,7 @@ function function_eb6d99d7(var_1483b30b) {
     self zm_perks::function_13880aa5(self.var_7d46fb46, 1, #"perk_wolf_protector");
     while (n_time_left > 0) {
         wait(0.1);
-        n_time_left = n_time_left - 0.1;
+        n_time_left -= 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_1483b30b);
         n_percentage = n_time_left / var_1483b30b;
         n_percentage = math::clamp(n_percentage, 0.02, var_1483b30b);
@@ -399,7 +399,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self zm_perks::function_13880aa5(self.var_7d46fb46, 0, #"perk_wolf_protector");
     while (true) {
         wait(0.1);
-        self.var_72c60d5 = self.var_72c60d5 - 0.1;
+        self.var_72c60d5 -= 0.1;
         self.var_72c60d5 = math::clamp(self.var_72c60d5, 0, var_85dcb56c);
         n_percentage = 1 - self.var_72c60d5 / var_85dcb56c;
         n_percentage = math::clamp(n_percentage, 0.02, var_85dcb56c);

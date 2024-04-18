@@ -657,7 +657,7 @@ function limited_weapon_below_quota(weapon, ignore_player) {
         }
         if (isdefined(level.custom_limited_weapon_checks)) {
             foreach (check in level.custom_limited_weapon_checks) {
-                count = count + [[ check ]](weapon);
+                count += [[ check ]](weapon);
             }
             if (count >= limit) {
                 return false;
@@ -1390,7 +1390,7 @@ function ammo_give(weapon, b_purchased = 1) {
                     if (weapon == getweapon(#"pistol_topbreak_t8_upgraded")) {
                         n_ammo_max = n_ammo_max * 2 - var_98f6dae8;
                     }
-                    var_b8624c26 = var_b8624c26 + var_4052eae0;
+                    var_b8624c26 += var_4052eae0;
                 }
                 var_6ec34556 = isdefined(weapon.iscliponly) && weapon.iscliponly ? var_98f6dae8 : n_ammo_max + var_98f6dae8 + var_4052eae0;
                 if (var_b8624c26 >= var_6ec34556) {

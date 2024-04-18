@@ -85,7 +85,7 @@ function player_freeze_trap_post_fx(localclientnum, oldval, newval, bnewent, bin
         return;
     }
     while (isalive(self) && self.var_b2ea9ecc > 0.5) {
-        self.var_b2ea9ecc = self.var_b2ea9ecc - 0.325 / 20;
+        self.var_b2ea9ecc -= 0.325 / 20;
         if (self.var_b2ea9ecc < 0.5) {
             self.var_b2ea9ecc = 0.5;
         }

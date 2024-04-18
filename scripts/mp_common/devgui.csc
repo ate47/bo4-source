@@ -82,34 +82,34 @@ function add_blackjack_contract(localclientnum) {
         cmds = stat_write + "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
         cmds = stat_write + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + stat_write + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + set_blackjack + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + set_blackjack + "<unknown string>";
+        cmds += next_cmd;
+        cmds += stat_write + "<unknown string>";
+        cmds += next_cmd;
+        cmds += set_blackjack + "<unknown string>";
+        cmds += next_cmd;
+        cmds += set_blackjack + "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
         cmds = stat_write + "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
         cmds = stat_write + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + stat_write + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + set_blackjack + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + set_blackjack + "<unknown string>";
+        cmds += next_cmd;
+        cmds += stat_write + "<unknown string>";
+        cmds += next_cmd;
+        cmds += set_blackjack + "<unknown string>";
+        cmds += next_cmd;
+        cmds += set_blackjack + "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
         side_bet_root = "<unknown string>";
         stat_write_bjc = "<unknown string>";
         stat_write_bjc_master = "<unknown string>";
         for (i = 0; i <= 6; i++) {
             cmds = stat_write_bjc + "<unknown string>" + i;
-            cmds = cmds + next_cmd;
-            cmds = cmds + stat_write_bjc + "<unknown string>" + i;
-            cmds = cmds + next_cmd;
-            cmds = cmds + stat_write_bjc_master + "<unknown string>" + (i == 6 ? 1 : 0);
-            cmds = cmds + next_cmd;
-            cmds = cmds + stat_write_bjc_master + "<unknown string>" + (i == 6 ? 1 : 0);
+            cmds += next_cmd;
+            cmds += stat_write_bjc + "<unknown string>" + i;
+            cmds += next_cmd;
+            cmds += stat_write_bjc_master + "<unknown string>" + (i == 6 ? 1 : 0);
+            cmds += next_cmd;
+            cmds += stat_write_bjc_master + "<unknown string>" + (i == 6 ? 1 : 0);
             add_devgui_cmd(localclientnum, side_bet_root + "<unknown string>" + i, cmds);
         }
     #/
@@ -138,22 +138,22 @@ function add_contract_slot(localclientnum, slot) {
         add_daily = 1;
         switch (slot) {
         case 0:
-            root = root + "<unknown string>";
+            root += "<unknown string>";
             add_daily = 0;
             break;
         case 1:
-            root = root + "<unknown string>";
+            root += "<unknown string>";
             add_daily = 0;
             break;
         case 2:
-            root = root + "<unknown string>";
+            root += "<unknown string>";
             add_weekly = 0;
             break;
         default:
-            root = root + "<unknown string>";
+            root += "<unknown string>";
             break;
         }
-        root = root + "<unknown string>" + slot + "<unknown string>";
+        root += "<unknown string>" + slot + "<unknown string>";
         table = #"gamedata/tables/mp/mp_contracttable.csv";
         num_rows = tablelookuprowcount(table);
         stat_write = "<unknown string>" + slot;
@@ -183,14 +183,14 @@ function add_contract_slot(localclientnum, slot) {
                 submenu_name = title + "<unknown string>" + table_index + "<unknown string>";
                 challenge_type = is_weekly_index ? "<unknown string>" : "<unknown string>";
                 cmds = stat_write + "<unknown string>" + table_index;
-                cmds = cmds + next_cmd;
-                cmds = cmds + stat_write + "<unknown string>";
-                cmds = cmds + next_cmd;
-                cmds = cmds + stat_write + "<unknown string>";
-                cmds = cmds + next_cmd;
-                cmds = cmds + stat_write + "<unknown string>";
-                cmds = cmds + next_cmd;
-                cmds = cmds + "<unknown string>";
+                cmds += next_cmd;
+                cmds += stat_write + "<unknown string>";
+                cmds += next_cmd;
+                cmds += stat_write + "<unknown string>";
+                cmds += next_cmd;
+                cmds += stat_write + "<unknown string>";
+                cmds += next_cmd;
+                cmds += "<unknown string>";
                 cmds = wrap_dvarconfig_cmds(cmds);
                 if (add_daily && add_weekly) {
                     by_index_name = "<unknown string>";
@@ -212,8 +212,8 @@ function add_contract_slot(localclientnum, slot) {
             }
         }
         cmds = stat_write + "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + stat_write + "<unknown string>";
+        cmds += next_cmd;
+        cmds += stat_write + "<unknown string>";
         add_devgui_cmd(localclientnum, root + "<unknown string>", cmds);
     #/
 }
@@ -255,8 +255,8 @@ function add_devgui_scheduler(localclientnum) {
 function add_watched_devgui_cmd(localclientnum, root, cmds) {
     /#
         next_cmd = "<unknown string>";
-        cmds = cmds + next_cmd;
-        cmds = cmds + "<unknown string>";
+        cmds += next_cmd;
+        cmds += "<unknown string>";
         add_devgui_cmd(localclientnum, root, cmds);
     #/
 }
@@ -269,8 +269,8 @@ function add_contract_scheduler_daily_duration(localclientnum, root, label, dail
     /#
         next_cmd = "<unknown string>";
         cmds = "<unknown string>" + daily_duration;
-        cmds = cmds + next_cmd;
-        cmds = cmds + "<unknown string>";
+        cmds += next_cmd;
+        cmds += "<unknown string>";
         cmds = wrap_dvarconfig_cmds(cmds);
         add_devgui_cmd(localclientnum, root + label, cmds);
     #/
@@ -284,8 +284,8 @@ function wrap_dvarconfig_cmds(cmds) {
     /#
         next_cmd = "<unknown string>";
         newcmds = "<unknown string>";
-        newcmds = newcmds + next_cmd;
-        newcmds = newcmds + cmds;
+        newcmds += next_cmd;
+        newcmds += cmds;
         return newcmds;
     #/
 }
@@ -314,7 +314,7 @@ function calculate_schedule_start_time(ref_time) {
         schedule_duration = weekly_duration * 8;
         max_multiple = int(ref_time / schedule_duration);
         half_max_multiple = int(max_multiple / 2);
-        new_start_time = new_start_time - half_max_multiple * schedule_duration;
+        new_start_time -= half_max_multiple * schedule_duration;
         return new_start_time;
     #/
 }

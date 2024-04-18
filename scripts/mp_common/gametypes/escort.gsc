@@ -598,11 +598,11 @@ function auto_reboot_robot(time) {
             rate = float(function_60d95f53()) / 1000;
             if (friendlycount > 1) {
                 bonusrate = (friendlycount - 1) * float(function_60d95f53()) / 1000 * 0;
-                rate = rate + bonusrate;
+                rate += bonusrate;
             }
         }
         if (rate > 0) {
-            shutdowntime = shutdowntime + rate;
+            shutdowntime += rate;
             percent = min(1, shutdowntime / time);
             objective_setprogress(level.moveobject.objectiveid, percent);
         }
@@ -649,7 +649,7 @@ function function_dd7755c1() {
     while (true) {
         animrate = 1;
         if (isdefined(self.var_85c3882d) && self.var_85c3882d) {
-            animrate = animrate - 0.3;
+            animrate -= 0.3;
             self.var_85c3882d = 0;
         }
         if (isdefined(self.beingmicrowavedby) && self.beingmicrowavedby.size > 0) {
@@ -657,7 +657,7 @@ function function_dd7755c1() {
             foreach (var_318fa3a5 in var_628b766f) {
                 barrierent = getentbynum(var_318fa3a5);
                 if (isdefined(barrierent) && isdefined(barrierent.weapon) && barrierent.weapon.name === #"ability_smart_cover") {
-                    animrate = animrate - 0.3;
+                    animrate -= 0.3;
                     break;
                 }
             }
@@ -708,7 +708,7 @@ function calc_robot_path_length(robotorigin, patharray) {
     distance = 0;
     lastpoint = robotorigin;
     for (i = 0; i < patharray.size; i++) {
-        distance = distance + distance(lastpoint, patharray[i]);
+        distance += distance(lastpoint, patharray[i]);
         lastpoint = patharray[i];
     }
     println("<unknown string>" + distance);
@@ -721,7 +721,7 @@ function calc_robot_path_length(robotorigin, patharray) {
 // Size: 0x458
 function spawn_robot(position, angles) {
     robot = spawnactor("spawner_bo3_robot_grunt_assault_mp_escort", position, angles, "", 1);
-    robot.pathablematerial = robot.pathablematerial | 2;
+    robot.pathablematerial |= 2;
     robot.enableterrainik = 1;
     robot ai::set_behavior_attribute("rogue_allow_pregib", 0);
     robot ai::set_behavior_attribute("rogue_allow_predestruct", 0);
@@ -786,12 +786,12 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
     if (!weapon_damage) {
         return false;
     }
-    self.shutdowndamage = self.shutdowndamage + weapon_damage;
+    self.shutdowndamage += weapon_damage;
     self notify(#"robot_damaged");
     if (!isdefined(eattacker.damagerobot)) {
         eattacker.damagerobot = 0;
     }
-    eattacker.damagerobot = eattacker.damagerobot + weapon_damage;
+    eattacker.damagerobot += weapon_damage;
     if (self.shutdowndamage >= level.shutdowndamage) {
         origin = (0, 0, 0);
         if (isplayer(eattacker)) {
@@ -848,7 +848,7 @@ function robot_damage(einflictor, eattacker, idamage, idflags, smeansofdeath, we
             }
         }
     }
-    self.health = self.health + 1;
+    self.health += 1;
     return true;
 }
 
@@ -940,13 +940,13 @@ function function_ba95878f() {
         if (self.moving) {
             distance = 0;
             if (self.pathindex > 0) {
-                distance = distance + distance(level.robotstart, self.patharray[0]);
+                distance += distance(level.robotstart, self.patharray[0]);
                 for (i = 1; i < self.pathindex; i++) {
-                    distance = distance + distance(self.patharray[i - 1], self.patharray[i]);
+                    distance += distance(self.patharray[i - 1], self.patharray[i]);
                 }
-                distance = distance + distance(self.patharray[self.pathindex - 1], self.origin);
+                distance += distance(self.patharray[self.pathindex - 1], self.origin);
             } else {
-                distance = distance + distance(level.robotstart, self.origin);
+                distance += distance(level.robotstart, self.origin);
             }
             if (distance > self.distancetraveled) {
                 self.distancetraveled = distance;
@@ -1182,7 +1182,7 @@ function robot_wait_next_point() {
             self thread watch_becoming_blocked_at_goal();
         }
         if (distancesquared(self.origin, get_current_goal()) < 24 * 24) {
-            self.pathindex = self.pathindex + (isdefined(self.immediategoaloverride) ? 0 : 1);
+            self.pathindex += isdefined(self.immediategoaloverride) ? 0 : 1;
             self.immediategoaloverride = undefined;
         }
         while (self.pathindex < self.patharray.size && distancesquared(self.origin, self.patharray[self.pathindex]) < (48 + 1) * (48 + 1)) {
@@ -1232,7 +1232,7 @@ function get_closest_point_on_nav_mesh(point) {
         lowerpoint = point - (0, 0, 36);
         while (!isdefined(closestpathpoint) && itercount < 5) {
             closestpathpoint = getclosestpointonnavmesh(lowerpoint, 48, 15);
-            lowerpoint = lowerpoint - (0, 0, 36);
+            lowerpoint -= (0, 0, 36);
             itercount++;
         }
     }
@@ -1277,7 +1277,7 @@ function is_path_distance_to_goal_too_long(&patharray, toolongthreshold) {
     goaldistance = 0;
     lastindextocheck = patharray.size - 1;
     for (i = 0; i < lastindextocheck; i++) {
-        goaldistance = goaldistance + distance(patharray[i], patharray[i + 1]);
+        goaldistance += distance(patharray[i], patharray[i + 1]);
         if (goaldistance >= toolongthreshold) {
             return true;
         }

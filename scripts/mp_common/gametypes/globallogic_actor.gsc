@@ -54,7 +54,7 @@ function callback_actordamage(einflictor, eattacker, idamage, idflags, smeansofd
     self.idflagstime = gettime();
     eattacker = player::figure_out_attacker(eattacker);
     if (!isdefined(vdir)) {
-        idflags = idflags | 4;
+        idflags |= 4;
     }
     friendly = 0;
     if (self.health == self.maxhealth || !isdefined(self.attackers)) {

@@ -54,7 +54,7 @@ function __main__() {
 function function_fe4c8547() {
     self thread function_94c9b195();
     var_1751372a = zm_ai_utility::function_8d44707e(0);
-    var_1751372a = var_1751372a * (isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1);
+    var_1751372a *= isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1;
     var_1751372a = int(var_1751372a);
     self.health = var_1751372a;
     self.maxhealth = var_1751372a;
@@ -128,7 +128,7 @@ function function_cbfb0da4() {
         break;
     }
     if (zm_trial_add_special::is_active(#"tiger")) {
-        var_ed61bfaa = var_ed61bfaa * 4;
+        var_ed61bfaa *= 4;
     }
     return var_ed61bfaa;
 }

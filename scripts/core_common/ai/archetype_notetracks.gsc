@@ -72,7 +72,7 @@ function private notetrackstaircasestep1(entity) {
 // Size: 0x64
 function private notetrackstaircasestep2(entity) {
     numsteps = entity getblackboardattribute("_staircase_num_steps");
-    numsteps = numsteps + 2;
+    numsteps += 2;
     entity setblackboardattribute("_staircase_num_steps", numsteps);
 }
 

@@ -661,7 +661,7 @@ function function_ccc079bc(var_b876e1f5) {
             if (level.var_4d8e32c8[i].script_noteworthy == var_b876e1f5) {
                 n_index = i - 1;
                 if (n_index < 0) {
-                    n_index = n_index + 4;
+                    n_index += 4;
                 }
                 break;
             }

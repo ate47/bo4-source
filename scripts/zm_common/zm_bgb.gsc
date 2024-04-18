@@ -962,7 +962,7 @@ function run_timer(max) {
             continue;
         }
         if (!(isdefined(self.var_4b0fb2fb) && self.var_4b0fb2fb)) {
-            current = current - float(function_60d95f53()) / 1000;
+            current -= float(function_60d95f53()) / 1000;
         }
     }
     self notify(#"hash_347d2afccb8337ab");

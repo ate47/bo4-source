@@ -217,7 +217,7 @@ function function_323c6715() {
                     score = 0;
                     break;
                 }
-                var_29da3a57 = var_29da3a57 + score * (isdefined(stat.var_26568428) ? stat.var_26568428 : 0);
+                var_29da3a57 += score * (isdefined(stat.var_26568428) ? stat.var_26568428 : 0);
                 var_6ad8c73b[var_6ad8c73b.size] = score;
             }
             for (index = 0; index < 3; index++) {
@@ -266,7 +266,7 @@ function private function_cd851b02(stat, var_9b4eeccc, ddl) {
         score = self stats::get_stat(ddl, stat.var_82670522, #"statvalue") - self.pers[#"hvo"][#"base"][stat.var_82670522];
     } else {
         score = isdefined(self.pers[#"hvo"][var_9b4eeccc][stat.var_82670522]) ? self.pers[#"hvo"][var_9b4eeccc][stat.var_82670522] : 0;
-        score = score + self stats::get_stat(ddl, stat.var_82670522, #"statvalue") - self.pers[#"hvo"][#"current"][stat.var_82670522];
+        score += self stats::get_stat(ddl, stat.var_82670522, #"statvalue") - self.pers[#"hvo"][#"current"][stat.var_82670522];
     }
     return score;
 }
@@ -293,7 +293,7 @@ function private function_1fa30a47(stat, currentscore, var_9b4eeccc) {
         score = currentscore - self.pers[#"hvo"][#"base"][stat.stattype];
     } else {
         score = isdefined(self.pers[#"hvo"][var_9b4eeccc][stat.stattype]) ? self.pers[#"hvo"][var_9b4eeccc][stat.stattype] : 0;
-        score = score + currentscore - self.pers[#"hvo"][#"current"][stat.stattype];
+        score += currentscore - self.pers[#"hvo"][#"current"][stat.stattype];
     }
     return score;
 }

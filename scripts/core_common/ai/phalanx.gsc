@@ -95,7 +95,7 @@ class phalanx {
         forward = vectornormalize(destination - origin);
         foreach (tiername in array("phalanx_tier1", "phalanx_tier2", "phalanx_tier3")) {
             sentienttiers_[tiername] = _createphalanxtier(phalanxtype, tiername, origin, forward, maxtiersize, tierspawners[tiername]);
-            startsentientcount_ = startsentientcount_ + sentienttiers_[tiername].size;
+            startsentientcount_ += sentienttiers_[tiername].size;
         }
         _assignphalanxstance(sentienttiers_[#"phalanx_tier1"], "crouch");
         foreach (name, tier in sentienttiers_) {
@@ -141,7 +141,7 @@ class phalanx {
         currentsentientcount_ = 0;
         foreach (name, tier in sentienttiers_) {
             sentienttiers_[name] = _prunedead(tier);
-            currentsentientcount_ = currentsentientcount_ + sentienttiers_[name].size;
+            currentsentientcount_ += sentienttiers_[name].size;
         }
         if (currentsentientcount_ <= startsentientcount_ - breakingpoint_) {
             scatterphalanx();

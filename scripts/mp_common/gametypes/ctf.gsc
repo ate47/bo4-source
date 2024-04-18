@@ -224,7 +224,7 @@ function shouldplayovertimeround() {
 // Size: 0xd0
 function minutesandsecondsstring(milliseconds) {
     minutes = floor(float(milliseconds) / 60000);
-    milliseconds = milliseconds - minutes * 60000;
+    milliseconds -= minutes * 60000;
     seconds = floor(float(milliseconds) / 1000);
     if (seconds < 10) {
         return (minutes + ":0" + seconds);
@@ -1126,7 +1126,7 @@ function createflagspawninfluencer(entityteam) {
 function ctf_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon) {
     teamkill_penalty = globallogic_defaults::default_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon);
     if (isdefined(self.isflagcarrier) && self.isflagcarrier) {
-        teamkill_penalty = teamkill_penalty * level.teamkillpenaltymultiplier;
+        teamkill_penalty *= level.teamkillpenaltymultiplier;
     }
     return teamkill_penalty;
 }
@@ -1138,7 +1138,7 @@ function ctf_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon) {
 function ctf_getteamkillscore(einflictor, attacker, smeansofdeath, weapon) {
     teamkill_score = attacker rank::getscoreinfovalue("kill");
     if (isdefined(self.isflagcarrier) && self.isflagcarrier) {
-        teamkill_score = teamkill_score * level.teamkillscoremultiplier;
+        teamkill_score *= level.teamkillscoremultiplier;
     }
     return int(teamkill_score);
 }

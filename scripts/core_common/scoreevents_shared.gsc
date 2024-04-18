@@ -104,7 +104,7 @@ function processscoreevent(event, player, victim, weapon, var_36f23f1f) {
     if (sessionmodeiscampaigngame() && isdefined(xp_difficulty_multiplier)) {
         if (isdefined(victim) && isdefined(victim.team)) {
             if (victim.team == #"axis" || victim.team == #"team3") {
-                scoregiven = scoregiven * xp_difficulty_multiplier;
+                scoregiven *= xp_difficulty_multiplier;
             }
         }
     }
@@ -204,9 +204,9 @@ function function_2b96d7dc() {
     if (args.size) {
         table_name = "";
         foreach (index, arg in args) {
-            table_name = table_name + arg;
+            table_name += arg;
             if (index < args.size - 1) {
-                table_name = table_name + "/";
+                table_name += "/";
             }
         }
     }

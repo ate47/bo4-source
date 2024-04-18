@@ -515,7 +515,7 @@ function setup_models() {
         v_pos = s_bowl.origin;
         if (!(isdefined(s_bowl.var_b4a48463) && s_bowl.var_b4a48463)) {
             v_dir = anglestoforward(s_info.angles);
-            v_pos = v_pos + v_dir * -9;
+            v_pos += v_dir * -9;
         }
         s_info.var_9d32404 = util::spawn_model(#"tag_origin", v_pos, s_bowl.angles);
         s_info.var_1a34d8e = level.var_3e72dc3c[n_index].var_9d32404.origin + (0, 0, 35);
@@ -1247,7 +1247,7 @@ function function_bf582bc8(var_ecffa2a8, n_damage) {
             n_delta = self.health - n_start_health;
             if (n_delta >= 50) {
                 self namespace_f8f28e08::function_53a333a8(level.s_active_challenge.n_id, undefined, n_damage);
-                n_start_health = n_start_health + 50;
+                n_start_health += 50;
             }
         }
         waitframe(1);

@@ -91,7 +91,7 @@ function function_158a3a18(attacker, mod, weapon, var_e1ec1eee = 0) {
     } else {
         var_1b767d36 = zm_weapons::get_base_weapon(weapon);
         var_fa87e189 = var_1b767d36.firetime;
-        self.var_cbf4894c = self.var_cbf4894c - var_fa87e189 * 1.5;
+        self.var_cbf4894c -= var_fa87e189 * 1.5;
         if (self.var_cbf4894c <= 0.4) {
             self.var_cbf4894c = 0.4;
         }
@@ -111,7 +111,7 @@ function function_dab102b8(e_attacker, weapon) {
     self endon(#"hash_6f92e6943e40092b", #"death");
     for (i = 0; i < 8; i++) {
         wait(0.375);
-        self.var_cbf4894c = self.var_cbf4894c + 0.125;
+        self.var_cbf4894c += 0.125;
         if (self.var_cbf4894c >= 1) {
             break;
         }

@@ -73,79 +73,79 @@ function function_731497bb() {
     i = 0;
     if (isdefined(getgametypesetting(#"hash_2e8be75aaeb34d13")) ? getgametypesetting(#"hash_2e8be75aaeb34d13") : 0) {
         level.var_6f535d7f[i] = #"open_areas";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_418601236eb2ed88")) ? getgametypesetting(#"hash_418601236eb2ed88") : 0) {
         level.var_6f535d7f[i] = "array_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_4297c2e4ff31ffd0")) ? getgametypesetting(#"hash_4297c2e4ff31ffd0") : 0) {
         level.var_6f535d7f[i] = "asylum_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_5ea3cb15587cb277")) ? getgametypesetting(#"hash_5ea3cb15587cb277") : 0) {
         level.var_6f535d7f[i] = "boxing_gym_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_631e99de856ff41c")) ? getgametypesetting(#"hash_631e99de856ff41c") : 0) {
         level.var_6f535d7f[i] = "clearing_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_5c4b6e44d8ccc5aa")) ? getgametypesetting(#"hash_5c4b6e44d8ccc5aa") : 0) {
         level.var_6f535d7f[i] = "construction_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_63adbcc59d938119")) ? getgametypesetting(#"hash_63adbcc59d938119") : 0) {
         level.var_6f535d7f[i] = "diner_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_664db8b87ce69945")) ? getgametypesetting(#"hash_664db8b87ce69945") : 0) {
         level.var_6f535d7f[i] = "docks_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_4bf33add6108efdc")) ? getgametypesetting(#"hash_4bf33add6108efdc") : 0) {
         level.var_6f535d7f[i] = "estates_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_7de6d9552df081ff")) ? getgametypesetting(#"hash_7de6d9552df081ff") : 0) {
         level.var_6f535d7f[i] = "factory_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_7d6a9fa4f88f659d")) ? getgametypesetting(#"hash_7d6a9fa4f88f659d") : 0) {
         level.var_6f535d7f[i] = "firing_range_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_2d9fdec301de5f90")) ? getgametypesetting(#"hash_2d9fdec301de5f90") : 0) {
         level.var_6f535d7f[i] = "fracking_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_bcd95788af03810")) ? getgametypesetting(#"hash_bcd95788af03810") : 0) {
         level.var_6f535d7f[i] = "graveyard_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_14ae69b26e41df2a")) ? getgametypesetting(#"hash_14ae69b26e41df2a") : 0) {
         level.var_6f535d7f[i] = "hijacked_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_3aa0d0e28c1f837")) ? getgametypesetting(#"hash_3aa0d0e28c1f837") : 0) {
         level.var_6f535d7f[i] = "hydro_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_52e1e26442d1fbc3")) ? getgametypesetting(#"hash_52e1e26442d1fbc3") : 0) {
         level.var_6f535d7f[i] = "lighthouse_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_6110c70d45bde13e")) ? getgametypesetting(#"hash_6110c70d45bde13e") : 0) {
         level.var_6f535d7f[i] = "nuketown_island_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_15a720f5ee3c1492")) ? getgametypesetting(#"hash_15a720f5ee3c1492") : 0) {
         level.var_6f535d7f[i] = "turbine_final_circle";
-        i = i + 1;
+        i += 1;
     }
     if (isdefined(getgametypesetting(#"hash_41ac3c30d0114266")) ? getgametypesetting(#"hash_41ac3c30d0114266") : 0) {
         level.var_6f535d7f[i] = "ghost_town_final_circle";
-        i = i + 1;
+        i += 1;
     }
 }
 

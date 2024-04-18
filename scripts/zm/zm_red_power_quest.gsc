@@ -110,7 +110,7 @@ function function_bda82828() {
     callback::on_connect(&function_8efba1b4);
     array::thread_all(getplayers(), &function_8efba1b4);
     var_3e910f73 = getent("mdl_power_bullet", "targetname");
-    var_3e910f73.origin = var_3e910f73.origin + (0, 0, 2048);
+    var_3e910f73.origin += (0, 0, 2048);
     var_3e910f73 thread zm_red_util::barrier_impact();
     var_4ec3364d = getent("perseus_amphitheater_clip", "targetname");
     var_4ec3364d notsolid();
@@ -154,7 +154,7 @@ function function_bda82828() {
     s_loc.s_unitrigger = undefined;
     s_loc struct::delete();
     zm_powerups::function_74b8ec6b(#"nuke");
-    var_3e910f73.origin = var_3e910f73.origin - (0, 0, 2048);
+    var_3e910f73.origin -= (0, 0, 2048);
     var_4ec3364d solid();
     var_4ec3364d thread zm_red_util::barrier_impact();
     exploder::exploder("Fxexp_barrier_amph");
@@ -246,7 +246,7 @@ function function_77dd379a() {
         mdl_glyph hide();
     }
     var_3e910f73 = getent("mdl_power_bullet", "targetname");
-    var_3e910f73.origin = var_3e910f73.origin + (0, 0, 2048);
+    var_3e910f73.origin += (0, 0, 2048);
     mdl_blocker = getent("mdl_power_blocker", "targetname");
     mdl_blocker delete();
     hide_skeletons();
@@ -1379,8 +1379,8 @@ function reinforcements_think(str_spawns, var_f153be86 = 0, var_a294702 = 0) {
             ai_zombie.var_12745932 = 1;
             ai_zombie.var_ae4569d5 = 1;
             if (var_f153be86) {
-                ai_zombie.maxhealth = ai_zombie.maxhealth * 2;
-                ai_zombie.health = ai_zombie.health * 2;
+                ai_zombie.maxhealth *= 2;
+                ai_zombie.health *= 2;
             }
             ai_zombie thread function_2a80a9cc();
         }

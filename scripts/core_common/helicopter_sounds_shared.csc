@@ -503,7 +503,7 @@ function heli_idle_run_transition(heli_type, heli_part, wait_time, updown) {
                 self.qrdrone_z_difference = 0;
             }
             run_volume_vertical = audio::scale_speed(5, 50, 0, 1, abs(self.qrdrone_z_difference));
-            run_volume = run_volume - run_volume_vertical;
+            run_volume -= run_volume_vertical;
         }
         if (isdefined(run_volume) && isdefined(run_pitch)) {
             heli_bone.run setloopstate(heli_bone.run.alias, run_volume, run_pitch, 1, 0.15);

@@ -114,10 +114,10 @@ function function_2297363d(localclientnum) {
                 doearthquake = 0;
             }
             player mapshaderconstant(localclientnum, 0, "scriptVector1", var_30f9f328, 0, 0, 0);
-            var_30f9f328 = var_30f9f328 + 0.05;
+            var_30f9f328 += 0.05;
         } else if (function_fd33f2ef(localclientnum) == 0) {
             player mapshaderconstant(localclientnum, 0, "scriptVector1", var_30f9f328, 0, 0, 0);
-            var_30f9f328 = var_30f9f328 - 0.05;
+            var_30f9f328 -= 0.05;
         } else {
             player mapshaderconstant(localclientnum, 0, "scriptVector1", 0, 0, 0, 0);
             if (isdefined(player.grappleeq)) {

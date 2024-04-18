@@ -256,7 +256,7 @@ function function_568f7563() {
 function getnumtouching() {
     numtouching = 0;
     foreach (team, _ in level.teams) {
-        numtouching = numtouching + self.numtouching[team];
+        numtouching += self.numtouching[team];
     }
     return numtouching;
 }

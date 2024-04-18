@@ -587,7 +587,7 @@ function function_5545acc1(newval) {
             var_8b7c6b64 = 0;
             debug2dtext(v_pos, "<unknown string>", (0, 1, 0));
             foreach (i, n_step in level.var_d23472c9) {
-                var_8b7c6b64 = var_8b7c6b64 + n_offset;
+                var_8b7c6b64 += n_offset;
                 debug2dtext(v_pos + (0, var_8b7c6b64, 0), function_9e72a96(i) + "<unknown string>" + n_step, (0, 1, 0));
             }
             waitframe(1);

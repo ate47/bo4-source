@@ -376,7 +376,7 @@ function defend_areas() {
             var_837cd1b4 = 0;
         }
         str_next_defend = zm_utility::function_40ef77ab(str_next_defend);
-        n_wait_time = n_wait_time - 2.5;
+        n_wait_time -= 2.5;
         if (n_wait_time < 30) {
             n_wait_time = 30;
         }

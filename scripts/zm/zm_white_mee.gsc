@@ -459,8 +459,8 @@ function function_edcadf04() {
         angles = e_head.angles;
         origin = e_head.origin;
         force = vectornormalize(origin - waitresult.position);
-        force = force + (0, 0, randomfloatrange(0.4, 0.6));
-        force = force * randomfloatrange(0.4, 0.6);
+        force += (0, 0, randomfloatrange(0.4, 0.6));
+        force *= randomfloatrange(0.4, 0.6);
         head_model = "p8_zm_white_mannequin_female_01_head_dyn";
         if (self.male_head) {
             head_model = "p8_zm_white_mannequin_male_01_head_dyn";

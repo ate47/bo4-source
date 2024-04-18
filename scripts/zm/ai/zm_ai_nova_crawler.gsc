@@ -71,7 +71,7 @@ function __main__() {
 // Size: 0x1b6
 function function_1d34f2b6() {
     var_626a6a36 = zm_ai_utility::function_8d44707e(1);
-    var_626a6a36 = var_626a6a36 * (isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1);
+    var_626a6a36 *= isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1;
     self.maxhealth = int(var_626a6a36);
     self.health = self.maxhealth;
     self.meleedamage = ai::function_9139c839().var_f2367046;
@@ -239,7 +239,7 @@ function private function_d79b3357(entity, origin) {
 // Size: 0x1cc
 function private function_4632879c(entity) {
     effectarea = spawn("trigger_radius", entity.origin, 0, 125, 100);
-    for (gas_time = 0; gas_time <= 7; gas_time = gas_time + 1) {
+    for (gas_time = 0; gas_time <= 7; gas_time += 1) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (players[i] istouching(effectarea)) {

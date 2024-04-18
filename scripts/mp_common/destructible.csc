@@ -40,7 +40,7 @@ function doexplosion(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     physics_explosion = 0;
     if (newval & 1 << 9) {
         physics_explosion = 1;
-        newval = newval - (1 << 9);
+        newval -= 1 << 9;
     }
     physics_force = 0.3;
     if (physics_explosion && newval > 0) {

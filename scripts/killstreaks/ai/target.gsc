@@ -135,7 +135,7 @@ function function_84235351(var_ff716a93, var_edc20efd) {
     if (!self is_target_valid(least_hunted)) {
         return undefined;
     }
-    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    least_hunted.hunted_by += 1;
     return least_hunted;
 }
 

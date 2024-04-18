@@ -63,7 +63,7 @@ function function_3711499d(vehicle, deployable_weapon, traceresult) {
 // Size: 0xc2
 function function_371a151b(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
     if (smeansofdeath == "MOD_CRUSH" && self isvehicleusable()) {
-        self.idflags = self.idflags | 8192;
+        self.idflags |= 8192;
     }
     return idamage;
 }
@@ -148,8 +148,8 @@ function private function_b96833b2(vehicle) {
                     self clientfield::set_to_player("recon_out_of_circle", 0);
                 }
                 var_e96a9222 = min(var_a71a8383, int(3 * 1000));
-                var_e96a9222 = var_e96a9222 / int(3 * 1000);
-                var_e96a9222 = var_e96a9222 * 31;
+                var_e96a9222 /= int(3 * 1000);
+                var_e96a9222 *= 31;
                 self clientfield::set_to_player("recon_out_of_circle", int(var_e96a9222));
                 waitframe(1);
             } else {

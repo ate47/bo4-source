@@ -184,7 +184,7 @@ function private do_aoe_fx(local_client_num, center, yaw_count, pitch, clientfie
         randomoffsetyaw = randomint(30) - 15;
         angles = (pitch + randomoffsetpitch, currentyaw + randomoffsetyaw, 0);
         tracedir = anglestoforward(angles);
-        currentyaw = currentyaw + 360 / yaw_count;
+        currentyaw += 360 / yaw_count;
         fx_position = center + tracedir * aoe_fx_info.explosion_radius;
         trace = bullettrace(center, fx_position, 0, self);
         sphere_size = 5;

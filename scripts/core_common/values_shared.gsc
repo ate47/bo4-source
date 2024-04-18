@@ -546,9 +546,9 @@ function display_value(index, str_name, str_id, value, b_valid, on_hud) {
         if ((isdefined(str_name) ? "<unknown string>" + str_name : "<unknown string>") != "<unknown string>") {
             str_value = string::rjust(str_name, 20);
             if (isdefined(value)) {
-                str_value = str_value + "<unknown string>" + value;
+                str_value += "<unknown string>" + value;
             }
-            str_value = str_value + "<unknown string>" + string::ljust(isdefined(str_id) ? "<unknown string>" + str_id : "<unknown string>", 30);
+            str_value += "<unknown string>" + string::ljust(isdefined(str_id) ? "<unknown string>" + str_id : "<unknown string>", 30);
         }
         color = b_valid ? (1, 1, 1) : (1, 0, 0);
         if (on_hud) {

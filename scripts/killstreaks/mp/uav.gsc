@@ -257,7 +257,7 @@ function activateuav() {
     xoffset = cos(angle) * radiusoffset;
     yoffset = sin(angle) * radiusoffset;
     anglevector = vectornormalize((xoffset, yoffset, zoffset));
-    anglevector = anglevector * zoffset;
+    anglevector *= zoffset;
     anglevector = (anglevector[0], anglevector[1], zoffset - rotator.origin[2]);
     uav linkto(rotator, "tag_origin", anglevector, (0, angle + attach_angle, 0));
     self stats::function_e24eec31(getweapon("uav"), #"used", 1);

@@ -237,7 +237,7 @@ function vectoangles(vector) {
     }
     yaw = atan(vecx / vecy);
     if (vecy < 0) {
-        yaw = yaw + 180;
+        yaw += 180;
     }
     return 90 - yaw;
 }

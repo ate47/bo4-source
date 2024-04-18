@@ -1839,7 +1839,7 @@ function function_a7b41dea(localclientnum, oldval, newval, bnewent, binitialsnap
     if (!isdefined(level.var_25faefd0)) {
         v_origin = var_30f4bba7 gettagorigin("j_lid");
         v_angles = var_30f4bba7 gettagangles("j_lid");
-        v_angles = v_angles + (0, 90, 0);
+        v_angles += (0, 90, 0);
         level.var_25faefd0 = util::spawn_model(localclientnum, "tag_origin", v_origin, v_angles);
         level.var_25faefd0 linkto(var_30f4bba7, "j_lid");
     }
@@ -2185,7 +2185,7 @@ function startzmbspawnersoundloops() {
         #/
         for (i = 0; i < loopers.size; i++) {
             loopers[i] thread soundloopthink();
-            delay = delay + 1;
+            delay += 1;
             if (delay % 20 == 0) {
                 waitframe(1);
             }

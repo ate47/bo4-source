@@ -490,8 +490,8 @@ function function_4da7bee9(localclientnum, oldval, newval, bnewent, binitialsnap
     for (var_1e7db62f = 0; var_1e7db62f < 2; var_1e7db62f++) {
         oldvalue = oldval & 1;
         value = newval & 1;
-        newval = newval >> 1;
-        oldval = oldval >> 1;
+        newval >>= 1;
+        oldval >>= 1;
         if (oldvalue == value && !binitialsnap) {
             continue;
         }

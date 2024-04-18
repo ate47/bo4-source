@@ -347,7 +347,7 @@ function roundtonearestfive(score) {
 // Checksum 0x9048ac92, Offset: 0x13f8
 // Size: 0x394
 function giveplayermomentumnotification(score, label, descvalue, countstowardrampage, weapon, combatefficiencybonus = 0, eventindex, event, var_36f23f1f) {
-    score = score + combatefficiencybonus;
+    score += combatefficiencybonus;
     if (isdefined(level.var_5ee570bd) && level.var_5ee570bd) {
         score = rank::function_bcb5e246(event);
         if (!isdefined(score)) {
@@ -697,11 +697,11 @@ function function_889ed975(player, score_add, var_252f7989, var_f8258842) {
     score = player.pers[#"score"] + score_add;
     var_e21e8076 = player.pers[#"objscore"];
     if (isdefined(var_252f7989)) {
-        var_e21e8076 = var_e21e8076 + var_252f7989;
+        var_e21e8076 += var_252f7989;
     }
     var_53c3aa0b = player.pers[#"rolescore"];
     if (isdefined(var_f8258842)) {
-        var_53c3aa0b = var_53c3aa0b + var_f8258842;
+        var_53c3aa0b += var_f8258842;
     }
     _setplayerscore(player, score, var_e21e8076, var_53c3aa0b);
 }
@@ -784,7 +784,7 @@ function _setplayermomentum(player, momentum, updatescore = 1) {
         _giveplayerkillstreakinternal(player, momentum, oldmomentum, killstreaktypearray);
         while (highestmomentumcost > 0 && momentum >= highestmomentumcost) {
             oldmomentum = 0;
-            momentum = momentum - highestmomentumcost;
+            momentum -= highestmomentumcost;
             _giveplayerkillstreakinternal(player, momentum, oldmomentum, killstreaktypearray);
         }
     }
@@ -1628,7 +1628,7 @@ function default_iskillboosting() {
 function givekillstats(smeansofdeath, weapon, evictim, var_e7a369ea) {
     self endon(#"disconnect");
     if (self === var_e7a369ea) {
-        self.kills = self.kills + 1;
+        self.kills += 1;
     }
     laststandparams = undefined;
     if (isdefined(evictim)) {

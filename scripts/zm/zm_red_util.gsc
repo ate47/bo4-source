@@ -38,7 +38,7 @@ function barrier_impact() {
     while (true) {
         s_result = self waittill(#"damage");
         if (isdefined(s_result.amount)) {
-            self.health = self.health + s_result.amount;
+            self.health += s_result.amount;
         }
         if (isdefined(s_result.position) && isdefined(s_result.attacker)) {
             playfx(level._effect[#"barrier_impact"], s_result.position, anglestoforward(s_result.attacker.angles) * -1);
@@ -503,7 +503,7 @@ function function_eb6f144(str_line, mdl_collectible) {
 function function_d24a0f09(str_vo_line, var_e688ce8f = 0) {
     n_duration = soundgetplaybacktime(str_vo_line);
     n_duration = float(n_duration) / 1000;
-    n_duration = n_duration - var_e688ce8f;
+    n_duration -= var_e688ce8f;
     if (n_duration > 0) {
         wait(n_duration);
     }

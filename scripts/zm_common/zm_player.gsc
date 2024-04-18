@@ -206,7 +206,7 @@ function player_track_ammo_count() {
             if (isdefined(level.var_142dc1b8) && isdefined(level.var_142dc1b8[weapon.name])) {
                 var_89557197 = level.var_142dc1b8[weapon.name];
             } else if (ammostock < 1) {
-                var_89557197 = var_89557197 + 10;
+                var_89557197 += 10;
             }
             if (ammocount > var_89557197 || self laststand::player_is_in_laststand()) {
                 ammooutcount = 0;
@@ -321,7 +321,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     }
     if (isdefined(eattacker) && isplayer(eattacker) && !weapon_utils::ismeleemod(smeansofdeath)) {
         var_8f516911 = function_b576d3d(weapon, shitloc);
-        idamage = idamage * var_8f516911;
+        idamage *= var_8f516911;
     }
     idamage = function_182d09fd(eattacker, idamage);
     startedinlaststand = 0;
@@ -362,7 +362,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     self callback::callback(#"on_player_damage", params);
     if (isdefined(self.magic_bullet_shield) && self.magic_bullet_shield) {
         maxhealth = self.maxhealth;
-        self.health = self.health + int(idamage);
+        self.health += int(idamage);
         self.maxhealth = maxhealth;
     }
     if (isdefined(level.prevent_player_damage) && !level.friendlyfire) {
@@ -370,7 +370,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
             return;
         }
     }
-    idflags = idflags | level.idflags_no_knockback;
+    idflags |= level.idflags_no_knockback;
     if (idamage > 0 && shitloc == "riotshield") {
         shitloc = "torso_upper";
     }
@@ -427,19 +427,19 @@ function function_182d09fd(eattacker, idamage) {
         return int(idamage);
     }
     if (eattacker.archetype === #"zombie" && isdefined(level.var_c739ead9)) {
-        idamage = idamage * level.var_c739ead9;
+        idamage *= level.var_c739ead9;
     }
     if (isdefined(eattacker.archetype) && isinarray(array(#"blight_father", #"brutus", #"gegenees"), eattacker.archetype) && isdefined(level.var_1bb1a2fb)) {
-        idamage = idamage * level.var_1bb1a2fb;
+        idamage *= level.var_1bb1a2fb;
     }
     if (isdefined(eattacker.archetype) && isinarray(array(#"stoker", #"gladiator", #"gladiator_marauder", #"gladiator_destroyer", #"werewolf"), eattacker.archetype) && isdefined(level.var_4d7e8b66)) {
-        idamage = idamage * level.var_4d7e8b66;
+        idamage *= level.var_4d7e8b66;
     }
     if (isdefined(eattacker.archetype) && isinarray(array(#"bat", #"dog", #"zombie_dog"), eattacker.archetype) && isdefined(level.var_5db2341c)) {
-        idamage = idamage * level.var_5db2341c;
+        idamage *= level.var_5db2341c;
     }
     if (isdefined(eattacker.archetype) && isinarray(array(#"nosferatu", #"skeleton", #"nova_crawler", #"tiger", #"catalyst", #"catalyst_corrosive", #"catalyst_electric", #"catalyst_plasma", #"catalyst_water"), eattacker.archetype) && isdefined(level.var_53c7ca1d)) {
-        idamage = idamage * level.var_53c7ca1d;
+        idamage *= level.var_53c7ca1d;
     }
     return int(idamage);
 }
@@ -472,7 +472,7 @@ function register_player_friendly_fire_callback(callback) {
 }
 
 // Namespace zm_player/zm_player
-// Params 11, eflags: 0x1 linked
+// Params b, eflags: 0x1 linked
 // Checksum 0x326c6e41, Offset: 0x21b8
 // Size: 0x10e
 function process_friendly_fire_callbacks(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex) {
@@ -976,11 +976,11 @@ function player_prevent_damage(einflictor, eattacker, idamage, idflags, smeansof
         if (isdefined(self.bgb_in_plain_sight_active) && self.bgb_in_plain_sight_active) {
             str = "<unknown string>";
             if (isai(eattacker)) {
-                str = str + function_9e72a96(eattacker.archetype);
+                str += function_9e72a96(eattacker.archetype);
             } else if (isdefined(eattacker)) {
                 str = str + "<unknown string>" + eattacker getentitynumber();
             } else {
-                str = str + "<unknown string>";
+                str += "<unknown string>";
             }
             println(str);
             println("<unknown string>" + (isdefined(self.ignoreme) && self.ignoreme ? "<unknown string>" : "<unknown string>"));

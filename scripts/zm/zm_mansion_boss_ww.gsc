@@ -698,13 +698,13 @@ function function_bb612e31(n_stage, var_c962047c) {
     var_2aaf6cdb = 0.5;
     a_players = util::get_active_players();
     foreach (player in a_players) {
-        var_2aaf6cdb = var_2aaf6cdb + 0.52;
+        var_2aaf6cdb += 0.52;
     }
     if (isdefined(var_c962047c)) {
         var_2aaf6cdb = 0.5;
         a_players = util::get_active_players();
         foreach (player in a_players) {
-            var_2aaf6cdb = var_2aaf6cdb + 0.52;
+            var_2aaf6cdb += 0.52;
         }
         if (var_c962047c > 0) {
             level.s_boss.var_c962047c = var_2aaf6cdb * var_c962047c;
@@ -931,28 +931,28 @@ function function_f433c7f5(n_stage) {
             var_51e58a97 = 2;
             var_6bbd958f = "2";
             if (int(var_2839690f[6]) < 4) {
-                var_6bbd958f = var_6bbd958f + "_l";
+                var_6bbd958f += "_l";
             }
             break;
         case 2:
             var_51e58a97 = 1;
             var_6bbd958f = "1";
             if (int(var_2839690f[6]) < 5) {
-                var_6bbd958f = var_6bbd958f + "_l";
+                var_6bbd958f += "_l";
             }
             break;
         case 3:
             var_51e58a97 = 4;
             var_6bbd958f = "4";
             if (int(var_2839690f[6]) < 5) {
-                var_6bbd958f = var_6bbd958f + "_l";
+                var_6bbd958f += "_l";
             }
             break;
         case 4:
             var_51e58a97 = 3;
             var_6bbd958f = "3";
             if (int(var_2839690f[6]) < 4) {
-                var_6bbd958f = var_6bbd958f + "_l";
+                var_6bbd958f += "_l";
             }
             break;
         }
@@ -1165,7 +1165,7 @@ function function_f25a51e4(b_captured, v_origin) {
         return;
     }
     level.s_boss.var_b65df36 connectpaths();
-    level.s_boss.var_b65df36.origin = level.s_boss.var_b65df36.origin - (0, 0, 9999);
+    level.s_boss.var_b65df36.origin -= (0, 0, 9999);
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww
@@ -1228,12 +1228,12 @@ function function_bb528a4b(n_stage) {
             continue;
         }
         if (w_weapon.weapclass === "rocketlauncher") {
-            n_damage = n_damage * 0.15;
+            n_damage *= 0.15;
             var_17c6835 = 1;
         }
         if (!var_17c6835) {
             if (ability_util::is_hero_weapon(w_weapon)) {
-                n_damage = n_damage * 0.1;
+                n_damage *= 0.1;
                 var_17c6835 = 1;
             }
         }
@@ -1254,17 +1254,17 @@ function function_bb528a4b(n_stage) {
             }
         }
         if (isdefined(w_weapon) && zm_weapons::is_wonder_weapon(w_weapon)) {
-            n_damage = n_damage * 0.3;
+            n_damage *= 0.3;
             var_17c6835 = 1;
         }
         if (!var_17c6835) {
             continue;
         }
         if (isdefined(w_weapon) && (w_weapon.name === #"stake_knife" || w_weapon.name === #"bowie_knife")) {
-            n_damage = n_damage * 0.1;
+            n_damage *= 0.1;
         }
         if (isplayer(e_inflictor) && isdefined(w_weapon) && isdefined(e_inflictor zm_utility::function_aa45670f(w_weapon, 0)) && e_inflictor zm_utility::function_aa45670f(w_weapon, 0)) {
-            n_damage = n_damage * 1.05;
+            n_damage *= 1.05;
         }
         if (isdefined(w_weapon) && w_weapon.weapclass === "rocketlauncher") {
             var_6e859516 = 800;
@@ -1286,8 +1286,8 @@ function function_bb528a4b(n_stage) {
         } else {
             self.var_a58d72c0 = 0;
         }
-        self.var_18acfe18 = self.var_18acfe18 + n_damage;
-        self.var_57badb98 = self.var_57badb98 + n_damage;
+        self.var_18acfe18 += n_damage;
+        self.var_57badb98 += n_damage;
         if (self.var_57badb98 >= self.var_c962047c) {
             var_2721aeff = 1;
         } else if (self.var_57badb98 >= self.var_c962047c * 0.75) {
@@ -1620,7 +1620,7 @@ function function_64000eab() {
         var_32573a68 = 3;
         break;
     }
-    var_32573a68 = var_32573a68 + 0.1;
+    var_32573a68 += 0.1;
     wait(var_32573a68);
     function_a3a00f3a(1);
 }

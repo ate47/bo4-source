@@ -26,7 +26,7 @@ function autoexec __init__system__() {
 function __init__() {
     init_shared();
     function_f5632baf(&function_fc3478b7);
-    level.var_392ddea = &function_19041061;
+    level.var_392ddea = &awardscore;
 }
 
 // Namespace gadget_vision_pulse/gadget_vision_pulse
@@ -70,7 +70,7 @@ function function_c0520f6f(victim, waittime) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xd89c9687, Offset: 0x348
 // Size: 0x210
-function function_19041061() {
+function awardscore() {
     self endon(#"disconnect", #"death", #"emp_vp_jammed");
     waittime = level.weaponvisionpulse.gadget_pulse_duration / 3;
     radius = level.weaponvisionpulse.gadget_pulse_max_range;

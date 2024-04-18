@@ -609,7 +609,7 @@ function private function_515b4a87(inflictor, attacker, damage, flags, meansofda
         if (!isdefined(self.var_cdc2bec8)) {
             self.var_cdc2bec8 = 0;
         }
-        self.var_cdc2bec8 = self.var_cdc2bec8 + damage;
+        self.var_cdc2bec8 += damage;
         if (function_2ed4a174(self)) {
             self.e_glidin = inflictor;
         }
@@ -1060,7 +1060,7 @@ function private function_f9d9f198(entity) {
     animname = animationstatenetworkutility::searchanimationmap(entity, var_bee929e7[#"animation"]);
     tag_pos = getanimtagorigin(animname, 0, "tag_tongue");
     var_2db07c66 = rotatepoint(tag_pos, entity gettagangles("tag_origin"));
-    var_2db07c66 = var_2db07c66 + entity.origin;
+    var_2db07c66 += entity.origin;
     return var_2db07c66;
 }
 
@@ -1720,7 +1720,7 @@ function private function_1d2646(entity) {
     }
     if (!var_78a5a6c3 && entity.var_e6c8672d < ai::function_9139c839().var_4afa14d6) {
         if (math::cointoss()) {
-            entity.var_e6c8672d = entity.var_e6c8672d + 2;
+            entity.var_e6c8672d += 2;
         } else {
             entity.var_e6c8672d++;
         }
@@ -2448,7 +2448,7 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
             var_892397fd thread function_124486ee(0);
         } else {
             var_892397fd function_1974d26f(var_3fa92868, var_b446b077, var_eb325a79);
-            var_892397fd.var_f3d1c928 = var_892397fd.var_f3d1c928 + 1;
+            var_892397fd.var_f3d1c928 += 1;
         }
         wait(var_eb325a79);
     }
@@ -2474,7 +2474,7 @@ function function_b2be1340(starting_health) {
     while (self.n_health > 0) {
         s_notify = self.trigger waittill(#"damage");
         if (isdefined(s_notify.attacker) && isplayer(s_notify.attacker) && s_notify.amount > 0) {
-            self.n_health = self.n_health - s_notify.amount;
+            self.n_health -= s_notify.amount;
         }
     }
     self thread function_124486ee(0);
@@ -2557,8 +2557,8 @@ function private function_1974d26f(var_3fa92868, var_10ed5867, var_eb325a79) {
         if (ratio > 1) {
             ratio = 1;
         }
-        new_vector = new_vector * ratio;
-        new_vector = new_vector + self.var_209ff2fa;
+        new_vector *= ratio;
+        new_vector += self.var_209ff2fa;
         normal_vector = vectornormalize(new_vector);
     } else {
         normal_vector = self.var_209ff2fa;
@@ -2853,7 +2853,7 @@ function function_a24ee603() {
     a_ai_blight_father = array::remove_dead(a_ai_blight_father);
     var_8e350fd9 = a_ai_blight_father.size;
     if (isarray(level.var_b175714d) && isdefined(level.var_b175714d[#"blight_father"]) && isdefined(level.var_b175714d[#"blight_father"].var_33e393a7)) {
-        var_8e350fd9 = var_8e350fd9 + level.var_b175714d[#"blight_father"].var_33e393a7;
+        var_8e350fd9 += level.var_b175714d[#"blight_father"].var_33e393a7;
     }
     return var_8e350fd9;
 }

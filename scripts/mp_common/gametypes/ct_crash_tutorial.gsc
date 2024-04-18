@@ -138,18 +138,18 @@ function function_62afa484() {
 function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str_means_of_death, weapon, v_point, v_dir, str_hit_loc, n_psoffsettime, var_8b69d5cf) {
     if (level.var_ad7c0539 === 1 && self.team == #"allies" && isbot(self)) {
         if (self.health > int(self.health_start * 0.3)) {
-            n_damage = n_damage * 1.5;
+            n_damage *= 1.5;
         }
     }
     if (level.var_ad7c0539 === 4 && self.team == #"allies") {
-        n_damage = n_damage * 0.1;
+        n_damage *= 0.1;
     } else if (self.health < int(self.health_start * 0.3) && self.team == #"allies" && isbot(self)) {
         n_damage = 0;
     } else if (isbot(e_attacker)) {
-        n_damage = n_damage * 0.2;
+        n_damage *= 0.2;
     }
     if (level.var_ad7c0539 === 2 && self.team == #"axis") {
-        n_damage = n_damage * 4;
+        n_damage *= 4;
     }
     return int(n_damage);
 }
@@ -615,7 +615,7 @@ function function_89bb199b() {
 // Size: 0x66
 function function_2a6fb094(params) {
     if (params.weapon === getweapon("tank_robot_launcher_turret") && self === params.eattacker) {
-        self.health = self.health + params.idamage;
+        self.health += params.idamage;
     }
 }
 
@@ -717,12 +717,12 @@ function function_1089714c(str_type) {
         } else {
             n_points = 25;
         }
-        level.var_37591676 = level.var_37591676 + n_points;
+        level.var_37591676 += n_points;
         event = #"ekia";
         eventindex = level.scoreinfo[event][#"row"];
         level.players[0] globallogic_score::giveplayermomentumnotification(n_points, #"hash_480234a872bd64ac", undefined, 0, level.players[0].currentweapon, 0, eventindex, event, undefined);
     } else {
-        level.var_37591676 = level.var_37591676 + 100;
+        level.var_37591676 += 100;
     }
     if (level.var_37591676 < 1000) {
         level.players[0] ct_utils::function_80bf685b(level.var_37591676);
@@ -765,8 +765,8 @@ function function_9b2c973f() {
     var_ca0b6cf8 = 0;
     var_600f40b6 = 0;
     foreach (bot in a_bots) {
-        n_start_health = n_start_health + bot.health;
-        var_c378327e = var_c378327e + bot getammocount(bot.currentweapon);
+        n_start_health += bot.health;
+        var_c378327e += bot getammocount(bot.currentweapon);
     }
     var_9192acd9 = int(n_start_health * 0.5);
     var_8fe4b14 = int(var_c378327e * 0.5);
@@ -774,8 +774,8 @@ function function_9b2c973f() {
         if (isalive(self)) {
             a_bots = self ct_bots::function_71ec2b36();
             foreach (bot in a_bots) {
-                n_current_health = n_current_health + bot.health;
-                var_2cf11630 = var_2cf11630 + bot getammocount(bot.currentweapon);
+                n_current_health += bot.health;
+                var_2cf11630 += bot getammocount(bot.currentweapon);
             }
             if (!(isdefined(a_bots.size) && a_bots.size)) {
                 level flag::set("squad_dead");
@@ -1355,7 +1355,7 @@ function function_c1069664() {
     player thread function_c3ff6f27();
     while (true) {
         foreach (bot in a_bots) {
-            n_current_health = n_current_health + bot.health;
+            n_current_health += bot.health;
         }
         if (n_current_health <= var_a12cbae4) {
             level flag::set("squad_health_70");
@@ -1378,12 +1378,12 @@ function function_c93a1ee3() {
     n_start_health = 0;
     n_current_health = 0;
     foreach (bot in a_bots) {
-        n_start_health = n_start_health + bot.health;
+        n_start_health += bot.health;
     }
     level flag::wait_till("second_battle_over");
     a_bots = self ct_bots::function_71ec2b36();
     foreach (bot in a_bots) {
-        n_current_health = n_current_health + bot.health;
+        n_current_health += bot.health;
     }
     if (n_current_health < n_start_health) {
         level flag::set("heal_squad");

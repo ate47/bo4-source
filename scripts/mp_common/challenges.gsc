@@ -1841,17 +1841,17 @@ function tu7_fix_mastery_perk_2() {
         return;
     }
     perk_2_tally = 1;
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(100, #"destroy_ai_scorestreak_coldblooded");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(100, #"kills_counteruav_emp_hardline");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(200, #"kill_after_resupply");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(100, #"kills_after_sprint_fasthands");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(200, #"kill_detect_tracker");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(10, #"earn_5_scorestreaks_anteup");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(25, #"kill_scavenger_tracker_resupply");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(25, #"kill_hardwired_coldblooded");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(25, #"kill_anteup_overclock_scorestreak_specialist");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(50, #"kill_fasthands_gungho_sprint");
-    perk_2_tally = perk_2_tally + player tally_completed_challenge(50, #"kill_tracker_sixthsense");
+    perk_2_tally += player tally_completed_challenge(100, #"destroy_ai_scorestreak_coldblooded");
+    perk_2_tally += player tally_completed_challenge(100, #"kills_counteruav_emp_hardline");
+    perk_2_tally += player tally_completed_challenge(200, #"kill_after_resupply");
+    perk_2_tally += player tally_completed_challenge(100, #"kills_after_sprint_fasthands");
+    perk_2_tally += player tally_completed_challenge(200, #"kill_detect_tracker");
+    perk_2_tally += player tally_completed_challenge(10, #"earn_5_scorestreaks_anteup");
+    perk_2_tally += player tally_completed_challenge(25, #"kill_scavenger_tracker_resupply");
+    perk_2_tally += player tally_completed_challenge(25, #"kill_hardwired_coldblooded");
+    perk_2_tally += player tally_completed_challenge(25, #"kill_anteup_overclock_scorestreak_specialist");
+    perk_2_tally += player tally_completed_challenge(50, #"kill_fasthands_gungho_sprint");
+    perk_2_tally += player tally_completed_challenge(50, #"kill_tracker_sixthsense");
     if (mastery_perk_2 < perk_2_tally) {
         player stats::function_dad108fa(#"mastery_perk_2", 1);
     }

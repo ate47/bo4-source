@@ -566,7 +566,7 @@ function move_box(n_duration, n_dist) {
     trace = bullettrace(self.origin, end_point, 0, self);
     if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
         end_point = trace[#"position"] - (0, 0, 50);
-        n_duration = n_duration * trace[#"fraction"];
+        n_duration *= trace[#"fraction"];
     }
     self clientfield::set("magicboxflag", 2);
     if (n_duration < 0.25) {
@@ -593,7 +593,7 @@ function function_9e142fa2(n_duration, n_dist) {
     trace = bullettrace(self.origin, end_point, 0, self);
     if (isdefined(trace[#"position"]) && trace[#"surfacetype"] != #"none") {
         end_point = trace[#"position"] - (0, 0, 50);
-        n_duration = n_duration * trace[#"fraction"];
+        n_duration *= trace[#"fraction"];
     }
     self clientfield::set("magicboxflag", 4);
     if (n_duration < 0.25) {
@@ -737,7 +737,7 @@ function function_bd19c3a8() {
         }
     }
     if (!getdvarint(#"survival_prototype", 0)) {
-        level.startinghealth = level.startinghealth + level.deathcircleindex * 100;
+        level.startinghealth += level.deathcircleindex * 100;
         all_ai = getaiteamarray(#"world");
         if (isdefined(all_ai) && all_ai.size > 0) {
             foreach (ai in all_ai) {
@@ -1253,7 +1253,7 @@ function function_432787e(ai_zone, enable = 1) {
         dynentarray = function_c79d31c4(var_dfd3d5d9.targetname);
         if (isdefined(dynentarray)) {
             foreach (dynent in dynentarray) {
-                var_fae4f67c = var_fae4f67c | dynent.health > 0;
+                var_fae4f67c |= dynent.health > 0;
             }
         }
         if (var_fae4f67c) {
@@ -1500,7 +1500,7 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
                 if (eventstruct.ent.health > 0) {
                     forward = anglestoforward(eventstruct.ent.angles);
                     if (eventstruct.state == 2) {
-                        forward = forward * -1;
+                        forward *= -1;
                     }
                     function_d9a69cf2(eventstruct.ent.origin, forward);
                 }

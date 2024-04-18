@@ -454,9 +454,9 @@ function color(value) {
         b = 0;
         color = (0, 0, 0);
         if (value > 0) {
-            r = r - value;
+            r -= value;
         } else {
-            g = g + value;
+            g += value;
         }
         c = (r, g, b);
         return c;

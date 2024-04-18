@@ -175,10 +175,10 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
     }
     if (!isbot(self)) {
         if (isdefined(level.var_bf4ff87f)) {
-            n_damage = n_damage * level.var_bf4ff87f;
+            n_damage *= level.var_bf4ff87f;
         }
         if (weapon === getweapon(#"tank_robot_launcher_turret_ct")) {
-            n_damage = n_damage * 0.4;
+            n_damage *= 0.4;
         }
         if (isdefined(level.var_3a0d2784) && level.var_3a0d2784) {
             n_damage = 0;
@@ -988,7 +988,7 @@ function function_8e068518() {
 // Checksum 0x4819c952, Offset: 0x5f50
 // Size: 0xec
 function function_86610592() {
-    level.var_ff7ed5c8 = level.var_ff7ed5c8 + 100;
+    level.var_ff7ed5c8 += 100;
     if (level.var_ff7ed5c8 < 900) {
         level.players[0] ct_utils::function_80bf685b(level.var_ff7ed5c8);
     } else {

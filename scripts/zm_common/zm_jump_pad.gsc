@@ -164,12 +164,12 @@ function jump_pad_start(ent_player, endon_condition) {
         z_dist = end_spot[2] - start_point.origin[2];
         jump_velocity = end_spot - start_point.origin;
         if (z_dist > 40 && z_dist < 135) {
-            z_dist = z_dist * 2.5;
+            z_dist *= 2.5;
             forward_scaling = 1.1;
             /#
                 if (getdvarint(#"jump_pad_tweaks", 0)) {
                     if (getdvarstring(#"jump_pad_z_dist") != "<unknown string>") {
-                        z_dist = z_dist * getdvarfloat(#"jump_pad_z_dist", 0);
+                        z_dist *= getdvarfloat(#"jump_pad_z_dist", 0);
                     }
                     if (getdvarstring(#"jump_pad_forward") != "<unknown string>") {
                         forward_scaling = getdvarfloat(#"jump_pad_forward", 0);
@@ -177,12 +177,12 @@ function jump_pad_start(ent_player, endon_condition) {
                 }
             #/
         } else if (z_dist >= 135) {
-            z_dist = z_dist * 2.7;
+            z_dist *= 2.7;
             forward_scaling = 1.3;
             /#
                 if (getdvarint(#"jump_pad_tweaks", 0)) {
                     if (getdvarstring(#"jump_pad_z_dist") != "<unknown string>") {
-                        z_dist = z_dist * getdvarfloat(#"jump_pad_z_dist", 0);
+                        z_dist *= getdvarfloat(#"jump_pad_z_dist", 0);
                     }
                     if (getdvarstring(#"jump_pad_forward") != "<unknown string>") {
                         forward_scaling = getdvarfloat(#"jump_pad_forward", 0);
@@ -190,12 +190,12 @@ function jump_pad_start(ent_player, endon_condition) {
                 }
             #/
         } else if (z_dist < 0) {
-            z_dist = z_dist * 2.4;
+            z_dist *= 2.4;
             forward_scaling = 1;
             /#
                 if (getdvarint(#"jump_pad_tweaks", 0)) {
                     if (getdvarstring(#"jump_pad_z_dist") != "<unknown string>") {
-                        z_dist = z_dist * getdvarfloat(#"jump_pad_z_dist", 0);
+                        z_dist *= getdvarfloat(#"jump_pad_z_dist", 0);
                     }
                     if (getdvarstring(#"jump_pad_forward") != "<unknown string>") {
                         forward_scaling = getdvarfloat(#"jump_pad_forward", 0);
@@ -211,16 +211,16 @@ function jump_pad_start(ent_player, endon_condition) {
         #/
         z_velocity = n_reduction * 2 * z_dist * world_gravity;
         if (z_velocity < 0) {
-            z_velocity = z_velocity * -1;
+            z_velocity *= -1;
         }
         if (z_dist < 0) {
-            z_dist = z_dist * -1;
+            z_dist *= -1;
         }
         jump_time = sqrt(2 * pad_dist / world_gravity);
         jump_time_2 = sqrt(2 * z_dist / world_gravity);
-        jump_time = jump_time + jump_time_2;
+        jump_time += jump_time_2;
         if (jump_time < 0) {
-            jump_time = jump_time * -1;
+            jump_time *= -1;
         }
         x = jump_velocity[0] * forward_scaling / jump_time;
         y = jump_velocity[1] * forward_scaling / jump_time;

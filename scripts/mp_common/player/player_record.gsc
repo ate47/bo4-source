@@ -23,9 +23,9 @@ function private function_685505ce(inputarray) {
         return targetstring;
     }
     for (i = 0; i < inputarray.size; i++) {
-        targetstring = targetstring + inputarray[i];
+        targetstring += inputarray[i];
         if (i != inputarray.size - 1) {
-            targetstring = targetstring + ",";
+            targetstring += ",";
         }
     }
     return targetstring;

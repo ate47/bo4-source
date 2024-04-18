@@ -194,7 +194,7 @@ function function_b5d4a59b(n_new_value) {
 // Size: 0x44
 function function_b128ee4f() {
     n_new_value = self.n_value + 1;
-    n_new_value = n_new_value % 10;
+    n_new_value %= 10;
     self function_b5d4a59b(n_new_value);
 }
 

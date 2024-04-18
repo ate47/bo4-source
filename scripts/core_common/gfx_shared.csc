@@ -12,9 +12,9 @@ function setstage(localclientnum, bundle, filterid, stageprefix, stagelength, ac
     for (constidx = 0; constidx < num_consts; constidx++) {
         constprefix = stageprefix + "c";
         if (constidx < 10) {
-            constprefix = constprefix + "0";
+            constprefix += "0";
         }
-        constprefix = constprefix + constidx + "_";
+        constprefix += constidx + "_";
         startvalue = getshaderconstantvalue(bundle, constprefix, "start", 0);
         endvalue = getshaderconstantvalue(bundle, constprefix, "end", 0);
         delays = getshaderconstantvalue(bundle, constprefix, "delay", 1);
@@ -46,11 +46,11 @@ function setstage(localclientnum, bundle, filterid, stageprefix, stagelength, ac
                     lerpratio = timeratio * -1 * (timeratio - 2);
                     break;
                 case #"ease inout":
-                    timeratio = timeratio * 2;
+                    timeratio *= 2;
                     if (timeratio < 1) {
                         lerpratio = 0.5 * lerpratio * lerpratio;
                     } else {
-                        timeratio = timeratio - 1;
+                        timeratio -= 1;
                         lerpratio = -0.5 * (lerpratio * (lerpratio - 2) - 1);
                     }
                     break;

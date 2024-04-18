@@ -396,7 +396,7 @@ function function_bcb4c0e3() {
         wait(1);
         n_total_charges = self function_fc256a55();
         if (self.var_a33a5a37 < n_total_charges) {
-            self.var_8376b1a = self.var_8376b1a + 1 / 60;
+            self.var_8376b1a += 1 / 60;
             if (self.var_8376b1a >= 1) {
                 self.var_a33a5a37++;
                 self.var_8376b1a = 0;

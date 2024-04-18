@@ -636,7 +636,7 @@ function give_if_streak_count_matches(index, killstreak, streakcount) {
         killstreaklevel = get_level(index, killstreak);
         if (self hasperk(#"specialty_killstreak")) {
             reduction = getdvarint(#"perk_killstreakreduction", 0);
-            killstreaklevel = killstreaklevel - reduction;
+            killstreaklevel -= reduction;
             if (killstreaklevel <= 0) {
                 killstreaklevel = 1;
             }
@@ -665,7 +665,7 @@ function give_for_streak() {
     }
     given = 0;
     for (i = 0; i < self.killstreak.size; i++) {
-        given = given | give_if_streak_count_matches(i, self.killstreak[i], self.pers[#"cur_kill_streak"]);
+        given |= give_if_streak_count_matches(i, self.killstreak[i], self.pers[#"cur_kill_streak"]);
     }
 }
 
@@ -1101,7 +1101,7 @@ function change_killstreak_quantity(killstreakweapon, delta) {
     }
     quantity = get_killstreak_quantity(killstreakweapon);
     previousquantity = quantity;
-    quantity = quantity + delta;
+    quantity += delta;
     if (quantity > level.scorestreaksmaxstacking) {
         quantity = level.scorestreaksmaxstacking;
     }
@@ -2233,7 +2233,7 @@ function monitordamage(killstreak_ref, max_health, destroyed_callback, low_healt
             }
             self challenges::trackassists(attacker, weapon_damage, 0);
         }
-        self.damagetaken = self.damagetaken + weapon_damage;
+        self.damagetaken += weapon_damage;
         if (!issentient(self) && weapon_damage > 0) {
             self.attacker = attacker;
         }
@@ -3284,31 +3284,31 @@ function update_player_threat(player) {
     heli = self;
     player.threatlevel = 0;
     dist = distance(player.origin, heli.origin);
-    player.threatlevel = player.threatlevel + (level.heli_visual_range - dist) / level.heli_visual_range * 100;
+    player.threatlevel += (level.heli_visual_range - dist) / level.heli_visual_range * 100;
     if (isdefined(heli.attacker) && player == heli.attacker) {
-        player.threatlevel = player.threatlevel + 100;
+        player.threatlevel += 100;
     }
     if (isdefined(player.carryobject)) {
-        player.threatlevel = player.threatlevel + 200;
+        player.threatlevel += 200;
     }
     if (isdefined(player.score)) {
-        player.threatlevel = player.threatlevel + player.score * 2;
+        player.threatlevel += player.score * 2;
     }
     if (player weapons::has_launcher()) {
         if (player weapons::has_lockon(heli)) {
-            player.threatlevel = player.threatlevel + 1000;
+            player.threatlevel += 1000;
         } else {
-            player.threatlevel = player.threatlevel + 500;
+            player.threatlevel += 500;
         }
     }
     if (player weapons::has_heavy_weapon()) {
-        player.threatlevel = player.threatlevel + 300;
+        player.threatlevel += 300;
     }
     if (player weapons::has_lmg()) {
-        player.threatlevel = player.threatlevel + 200;
+        player.threatlevel += 200;
     }
     if (isdefined(player.antithreat)) {
-        player.threatlevel = player.threatlevel - player.antithreat;
+        player.threatlevel -= player.antithreat;
     }
     if (player.threatlevel <= 0) {
         player.threatlevel = 1;
@@ -3323,7 +3323,7 @@ function update_non_player_threat(non_player) {
     heli = self;
     non_player.threatlevel = 0;
     dist = distance(non_player.origin, heli.origin);
-    non_player.threatlevel = non_player.threatlevel + (level.heli_visual_range - dist) / level.heli_visual_range * 100;
+    non_player.threatlevel += (level.heli_visual_range - dist) / level.heli_visual_range * 100;
     if (non_player.threatlevel <= 0) {
         non_player.threatlevel = 1;
     }
@@ -3337,19 +3337,19 @@ function update_actor_threat(actor) {
     heli = self;
     actor.threatlevel = 0;
     dist = distance(actor.origin, heli.origin);
-    actor.threatlevel = actor.threatlevel + (level.heli_visual_range - dist) / level.heli_visual_range * 100;
+    actor.threatlevel += (level.heli_visual_range - dist) / level.heli_visual_range * 100;
     if (isdefined(actor.owner)) {
         if (isdefined(heli.attacker) && actor.owner == heli.attacker) {
-            actor.threatlevel = actor.threatlevel + 100;
+            actor.threatlevel += 100;
         }
         if (isdefined(actor.owner.carryobject)) {
-            actor.threatlevel = actor.threatlevel + 200;
+            actor.threatlevel += 200;
         }
         if (isdefined(actor.owner.score)) {
-            actor.threatlevel = actor.threatlevel + actor.owner.score * 4;
+            actor.threatlevel += actor.owner.score * 4;
         }
         if (isdefined(actor.owner.antithreat)) {
-            actor.threatlevel = actor.threatlevel - actor.owner.antithreat;
+            actor.threatlevel -= actor.owner.antithreat;
         }
     }
     if (actor.threatlevel <= 0) {
@@ -3365,7 +3365,7 @@ function update_dog_threat(dog) {
     heli = self;
     dog.threatlevel = 0;
     dist = distance(dog.origin, heli.origin);
-    dog.threatlevel = dog.threatlevel + (level.heli_visual_range - dist) / level.heli_visual_range * 100;
+    dog.threatlevel += (level.heli_visual_range - dist) / level.heli_visual_range * 100;
 }
 
 // Namespace killstreaks/killstreaks_shared
@@ -3390,17 +3390,17 @@ function missile_valid_target_check(missiletarget) {
 function update_missile_player_threat(player) {
     player.missilethreatlevel = 0;
     dist = distance(player.origin, self.origin);
-    player.missilethreatlevel = player.missilethreatlevel + (level.heli_missile_range - dist) / level.heli_missile_range * 100;
+    player.missilethreatlevel += (level.heli_missile_range - dist) / level.heli_missile_range * 100;
     if (self missile_valid_target_check(player) == 0) {
         player.missilethreatlevel = 1;
         return;
     }
     if (isdefined(self.attacker) && player == self.attacker) {
-        player.missilethreatlevel = player.missilethreatlevel + 100;
+        player.missilethreatlevel += 100;
     }
-    player.missilethreatlevel = player.missilethreatlevel + player.score * 4;
+    player.missilethreatlevel += player.score * 4;
     if (isdefined(player.antithreat)) {
-        player.missilethreatlevel = player.missilethreatlevel - player.antithreat;
+        player.missilethreatlevel -= player.antithreat;
     }
     if (player.missilethreatlevel <= 0) {
         player.missilethreatlevel = 1;

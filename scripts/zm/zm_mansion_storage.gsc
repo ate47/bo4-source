@@ -998,7 +998,7 @@ function function_840d0d56() {
     while (true) {
         n_players_in_zone = 0;
         foreach (str_zone in var_8259b1e9) {
-            n_players_in_zone = n_players_in_zone + zm_zonemgr::get_players_in_zone(str_zone, 0);
+            n_players_in_zone += zm_zonemgr::get_players_in_zone(str_zone, 0);
         }
         if (!n_players_in_zone) {
             /#

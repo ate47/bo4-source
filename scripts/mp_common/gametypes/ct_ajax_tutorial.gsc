@@ -136,11 +136,11 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
     }
     if (!isbot(self)) {
         if (isdefined(weapon) && (weapon.name == #"recon_car" || weapon.name == #"hash_38ffd09564931482")) {
-            self.health = self.health + 1;
+            self.health += 1;
             n_damage = 1;
         }
         if (isdefined(level.var_bf4ff87f)) {
-            n_damage = n_damage * level.var_bf4ff87f;
+            n_damage *= level.var_bf4ff87f;
         }
     }
     return n_damage;
@@ -1136,7 +1136,7 @@ function wait_for_car() {
 // Size: 0x5c
 function function_c3ccdcf5() {
     e_player = ct_utils::get_player();
-    level.var_3fe23421 = level.var_3fe23421 + level.var_28cfc859;
+    level.var_3fe23421 += level.var_28cfc859;
     e_player ct_utils::function_80bf685b(level.var_3fe23421);
 }
 

@@ -135,7 +135,7 @@ function player_init_shield_health(weapon, var_cd9d17e0 = 0) {
     }
     var_2aaf6cdb = zombie_utility::function_d2dfacfd(#"hash_cc85b961f25c2ff");
     if (isdefined(var_2aaf6cdb)) {
-        level.var_7bcfc873 = level.var_7bcfc873 * var_2aaf6cdb;
+        level.var_7bcfc873 *= var_2aaf6cdb;
     }
     damagemax = int(weapon.weaponstarthitpoints);
     shieldhealth = self damageriotshield(0);
@@ -509,7 +509,7 @@ function riotshield_get_enemies_in_range(riotshield_knockdown_range, riotshield_
                 dist_mult = (fling_range_squared - test_range_squared) / fling_range_squared;
                 fling_vec = vectornormalize(test_origin - view_pos);
                 if (5000 < test_range_squared) {
-                    fling_vec = fling_vec + vectornormalize(test_origin - radial_origin);
+                    fling_vec += vectornormalize(test_origin - radial_origin);
                 }
                 fling_vec = (fling_vec[0], fling_vec[1], fling_force_v * abs(fling_vec[2]));
                 fling_vec = vectorscale(fling_vec, fling_force + fling_force * dist_mult);
@@ -583,9 +583,9 @@ function riotshield_melee(weapon, riotshield_knockdown_range, riotshield_gib_ran
             level.riotshield_fling_enemies[i] thread riotshield_fling_zombie(self, level.riotshield_fling_vecs[i], i);
             var_d3f92d4d = zombie_utility::function_d2dfacfd(#"riotshield_fling_damage_shield");
             if (self hasperk(#"specialty_mod_shield")) {
-                var_d3f92d4d = var_d3f92d4d * 0.66;
+                var_d3f92d4d *= 0.66;
             }
-            shield_damage = shield_damage + var_d3f92d4d;
+            shield_damage += var_d3f92d4d;
         }
     }
     for (i = 0; i < level.riotshield_knockdown_enemies.size; i++) {
@@ -594,7 +594,7 @@ function riotshield_melee(weapon, riotshield_knockdown_range, riotshield_gib_ran
             continue;
         }
         level.riotshield_knockdown_enemies[i] thread riotshield_knockdown_zombie(self, level.riotshield_knockdown_gib[i]);
-        shield_damage = shield_damage + zombie_utility::function_d2dfacfd(#"riotshield_knockdown_damage_shield");
+        shield_damage += zombie_utility::function_d2dfacfd(#"riotshield_knockdown_damage_shield");
     }
     foreach (ai_enemy in level.var_21ffc192) {
         switch (ai_enemy.var_6f84b820) {
@@ -608,9 +608,9 @@ function riotshield_melee(weapon, riotshield_knockdown_range, riotshield_gib_ran
             break;
         }
         if (self hasperk(#"specialty_mod_shield")) {
-            var_d3f92d4d = var_d3f92d4d * 0.66;
+            var_d3f92d4d *= 0.66;
         }
-        shield_damage = shield_damage + var_d3f92d4d;
+        shield_damage += var_d3f92d4d;
     }
     level.riotshield_knockdown_enemies = [];
     level.riotshield_knockdown_gib = [];

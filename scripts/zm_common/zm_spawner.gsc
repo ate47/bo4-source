@@ -274,7 +274,7 @@ function zombie_damage_failsafe() {
         v_starting_origin = self.enemy.origin;
         var_f2ca854b = self.enemy.health;
         var_65a69eba = undefined;
-        for (var_f3a1b629 = 0; isalive(self.enemy) && isplayer(self.enemy) && e_enemy == self.enemy && self istouching(self.enemy) && !self.enemy laststand::player_is_in_laststand(); var_f3a1b629 = var_f3a1b629 + 0.5) {
+        for (var_f3a1b629 = 0; isalive(self.enemy) && isplayer(self.enemy) && e_enemy == self.enemy && self istouching(self.enemy) && !self.enemy laststand::player_is_in_laststand(); var_f3a1b629 += 0.5) {
             if (distancesquared(v_starting_origin, self.enemy.origin) > 60 * 60) {
                 break;
             }
@@ -1268,7 +1268,7 @@ function zombie_death_event(zombie) {
         return;
     }
     if (isplayer(attacker) && isdefined(attacker.n_health_on_kill)) {
-        attacker.health = attacker.health + attacker.n_health_on_kill;
+        attacker.health += attacker.n_health_on_kill;
         if (attacker.health >= attacker.maxhealth) {
             attacker zm_utility::set_max_health(1);
         }
@@ -1279,7 +1279,7 @@ function zombie_death_event(zombie) {
                 continue;
             }
             if (isdefined(player.n_health_on_kill)) {
-                player.health = player.health + player.n_health_on_kill;
+                player.health += player.n_health_on_kill;
                 if (player.health >= player.maxhealth) {
                     player zm_utility::set_max_health(1);
                 }
@@ -1690,7 +1690,7 @@ function do_zombie_rise(spot) {
     }
     anim_org = spot.origin;
     anim_ang = spot.angles;
-    anim_org = anim_org + (0, 0, 0);
+    anim_org += (0, 0, 0);
     self ghost();
     self.anchor moveto(anim_org, 0.05);
     self.anchor waittill(#"movedone");
@@ -1805,7 +1805,7 @@ function zombie_rise_dust_fx(ai_zombie) {
             break;
         }
     }
-    for (t = 0; t < 5.5; t = t + 0.3) {
+    for (t = 0; t < 5.5; t += 0.3) {
         playfxontag(level._effect[str_fx], ai_zombie, "J_SpineUpper");
         wait(0.3);
     }

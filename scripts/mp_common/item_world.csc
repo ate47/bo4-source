@@ -361,7 +361,7 @@ function private function_78bf134c(localclientnum, clientdata, networkid, model,
         }
     }
     if (isdefined(player) && isdefined(renderbundle) && player function_237888bb(localclientnum)) {
-        renderbundle = renderbundle + "_looter";
+        renderbundle += "_looter";
     }
     if (isdefined(networkid) && isdefined(clientdata) && isdefined(clientdata.var_ffc1c0e1)) {
         if (isdefined(clientdata.var_ffc1c0e1[networkid]) && clientdata.var_ffc1c0e1[networkid].servertime > getservertime(localclientnum, 1)) {
@@ -390,7 +390,7 @@ function private function_78bf134c(localclientnum, clientdata, networkid, model,
     if (isdefined(itementry) && isdefined(itementry.worldfx) && !isdefined(model.modelfx) && !model ishidden()) {
         originoffset = (isdefined(itementry.var_5dc4470b) ? itementry.var_5dc4470b : 0, isdefined(itementry.var_54a3b4ca) ? itementry.var_54a3b4ca : 0, isdefined(itementry.var_3e688854) ? itementry.var_3e688854 : 0);
         originoffset = rotatepoint(originoffset * -1, model.angles);
-        originoffset = originoffset + rotatepoint((isdefined(itementry.var_22d128f2) ? itementry.var_22d128f2 : 0, isdefined(itementry.var_48907470) ? itementry.var_48907470 : 0, isdefined(itementry.var_702943a1) ? itementry.var_702943a1 : 0), model.angles);
+        originoffset += rotatepoint((isdefined(itementry.var_22d128f2) ? itementry.var_22d128f2 : 0, isdefined(itementry.var_48907470) ? itementry.var_48907470 : 0, isdefined(itementry.var_702943a1) ? itementry.var_702943a1 : 0), model.angles);
         angles = combineangles(model.angles, (isdefined(itementry.var_15b88fde) ? itementry.var_15b88fde : 0, isdefined(itementry.var_8c9a7dc8) ? itementry.var_8c9a7dc8 : 0, isdefined(itementry.var_7a51d937) ? itementry.var_7a51d937 : 0));
         forward = anglestoforward(angles);
         up = anglestoup(angles);
@@ -492,8 +492,8 @@ function private _draw(localclientnum, draworigin) {
             model.angles = item.angles;
             model function_e082e650(localclientnum, item, function_78a9fd5f(item), item.itementry.modelscale);
             shouldshow = item_world_util::function_da09de95(item.networkid) && item_world_util::can_pick_up(item, servertime);
-            shouldshow = shouldshow | (item.networkid < function_8322cf16() && item_world_util::can_pick_up(function_b1702735(item.networkid), servertime));
-            shouldshow = shouldshow & !(isdefined(item.type) && item.type === #"missile");
+            shouldshow |= item.networkid < function_8322cf16() && item_world_util::can_pick_up(function_b1702735(item.networkid), servertime);
+            shouldshow &= !(isdefined(item.type) && item.type === #"missile");
             if (shouldshow) {
                 model show();
             } else {
@@ -501,7 +501,7 @@ function private _draw(localclientnum, draworigin) {
                 function_2990e5f(localclientnum, model);
             }
             originoffset = (isdefined(item.itementry.var_5dc4470b) ? item.itementry.var_5dc4470b : 0, isdefined(item.itementry.var_54a3b4ca) ? item.itementry.var_54a3b4ca : 0, isdefined(item.itementry.var_3e688854) ? item.itementry.var_3e688854 : 0);
-            model.origin = model.origin + rotatepoint(originoffset, model.angles);
+            model.origin += rotatepoint(originoffset, model.angles);
             if (item_world_util::function_da09de95(item.networkid)) {
                 model linkto(item);
             }
@@ -1533,19 +1533,19 @@ function private function_48ca0bbb(localclientnum) {
                 if (itementry.itemtype == #"attachment") {
                     var_77055f15 = 1;
                     if (item_inventory::function_ad4c6116(localclientnum, itementry)) {
-                        var_77055f15 = var_77055f15 | 32;
+                        var_77055f15 |= 32;
                     }
                 } else if (itementry.itemtype == #"weapon") {
                     var_a4250c2b = self item_inventory::function_d768ea30(localclientnum);
                     if (namespace_a0d533d1::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
-                        var_77055f15 = var_77055f15 | 512;
+                        var_77055f15 |= 512;
                     }
                 }
             } else if (itementry.itemtype == #"weapon") {
                 var_77055f15 = 2;
                 var_a4250c2b = self item_inventory::function_d768ea30(localclientnum);
                 if (namespace_a0d533d1::function_4bd83c04(self.var_9b882d22) && self item_inventory::has_attachments(localclientnum, var_a4250c2b)) {
-                    var_77055f15 = var_77055f15 | 512;
+                    var_77055f15 |= 512;
                 }
             } else {
                 var_fa3df96 = self item_inventory::function_78ed4455(localclientnum, itementry);
@@ -1554,7 +1554,7 @@ function private function_48ca0bbb(localclientnum) {
                     if (itementry.itemtype == #"attachment") {
                         var_fa3df96 = undefined;
                         if (item_inventory::function_ad4c6116(localclientnum, itementry)) {
-                            var_77055f15 = var_77055f15 | 32;
+                            var_77055f15 |= 32;
                         }
                     }
                 } else if (!item_inventory::function_ad4c6116(localclientnum, itementry)) {
@@ -1564,11 +1564,11 @@ function private function_48ca0bbb(localclientnum) {
                         var_77055f15 = 4;
                     }
                     if (itementry.itemtype == #"equipment" || itementry.itemtype == #"health") {
-                        var_77055f15 = var_77055f15 | 1024;
+                        var_77055f15 |= 1024;
                     }
                 } else if (itementry.itemtype == #"equipment" || itementry.itemtype == #"health") {
                     if (item_inventory::function_ad4c6116(localclientnum, itementry)) {
-                        var_77055f15 = var_77055f15 | 256;
+                        var_77055f15 |= 256;
                     }
                 }
             }

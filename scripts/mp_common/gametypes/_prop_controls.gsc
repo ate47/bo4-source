@@ -222,7 +222,7 @@ function addupperrighthudelem(label, value, text, labelpc) {
     if (isdefined(value)) {
         hudelem setvalue(value);
     }
-    self.currenthudy = self.currenthudy - 20;
+    self.currenthudy -= 20;
     return hudelem;
 }
 
@@ -240,7 +240,7 @@ function propcontrolshud() {
     self.abilitykey = addupperrighthudelem();
     self.clonekey = addupperrighthudelem(#"hash_2f560292a2fb7eab");
     self.changepropkey = addupperrighthudelem(#"mp_ph_change", 0);
-    self.currenthudy = self.currenthudy - 20;
+    self.currenthudy -= 20;
     self.var_8e3b5c8c = addupperrighthudelem(#"hash_fb73fdc2aff963f");
     self.matchslopekey = addupperrighthudelem(#"hash_7f59350f5f223501", undefined, undefined, #"hash_4c7fbb5c1ccd5107");
     self.lockpropkey = addupperrighthudelem(#"mp_ph_lock");
@@ -400,7 +400,7 @@ function proplockunlock() {
 // Size: 0xd4
 function function_9bc7ac53() {
     self.propent unlink();
-    self.propent.angles = self.propent.angles + (0, 45, 0);
+    self.propent.angles += (0, 45, 0);
     self.propent.origin = self.propanchor.origin;
     if (self.slopelocked && isdefined(self.lock) && self.lock) {
         self.propent set_pitch_roll_for_ground_normal(self.prop);
@@ -779,8 +779,8 @@ function get_ground_normal(traceignore, debug) {
     }
     tracepoints = array(self.origin);
     if (getdvarint(#"hash_32aee631b4444f90", 1)) {
-        for (i = -1; i <= 1; i = i + 2) {
-            for (j = -1; j <= 1; j = j + 2) {
+        for (i = -1; i <= 1; i += 2) {
+            for (j = -1; j <= 1; j += 2) {
                 corner = ignore getpointinbounds(i, j, 0);
                 corner = (corner[0], corner[1], self.origin[2]);
                 tracepoints[tracepoints.size] = corner;
@@ -794,7 +794,7 @@ function get_ground_normal(traceignore, debug) {
         trace = bullettrace(point + (0, 0, 4), point + (0, 0, -16), 0, ignore);
         tracehit = trace[#"fraction"] > 0 && trace[#"fraction"] < 1;
         if (tracehit) {
-            avgnormal = avgnormal + trace[#"normal"];
+            avgnormal += trace[#"normal"];
             tracehitcount++;
         }
         /#
@@ -809,7 +809,7 @@ function get_ground_normal(traceignore, debug) {
     }
     function_c0665212(0);
     if (tracehitcount > 0) {
-        avgnormal = avgnormal / tracehitcount;
+        avgnormal /= tracehitcount;
         /#
             if (debug) {
                 line(self.origin, self.origin + avgnormal * 20, (1, 1, 1));
@@ -1088,7 +1088,7 @@ function propcamerazoom() {
             if (self.thirdpersonrange - var_fc464c9b < 50) {
                 continue;
             }
-            self.thirdpersonrange = self.thirdpersonrange - var_fc464c9b;
+            self.thirdpersonrange -= var_fc464c9b;
             self setclientthirdperson(1);
             continue;
         }
@@ -1097,7 +1097,7 @@ function propcamerazoom() {
             if (self.thirdpersonrange + var_fc464c9b > var_70fc228b) {
                 continue;
             }
-            self.thirdpersonrange = self.thirdpersonrange + var_fc464c9b;
+            self.thirdpersonrange += var_fc464c9b;
             self setclientthirdperson(1);
         }
     }
@@ -1272,13 +1272,13 @@ function damageclonewatch(damage, attacker, direction_vec, point, meansofdeath, 
         }
         attacker thread damagefeedback::update();
         self.lastattacker = attacker;
-        self.fakehealth = self.fakehealth - damage;
+        self.fakehealth -= damage;
         if (self.fakehealth <= 0) {
             self function_d1a1cc8d();
             return;
         }
     }
-    self.health = self.health + damage;
+    self.health += damage;
 }
 
 // Namespace prop_controls/_prop_controls
@@ -1358,7 +1358,7 @@ function watchspecialgrenadethrow() {
         grenade = res.projectile;
         weapon = res.weapon;
         self thread trackgrenade(grenade, weapon);
-        self.thrownspecialcount = self.thrownspecialcount + 1;
+        self.thrownspecialcount += 1;
     }
 }
 

@@ -190,7 +190,7 @@ function regen_health(weapon, source_player, var_7b8559d4) {
         maxhealth = player.var_66cb03ad + var_7b8559d4 * 25;
         var_c993fb53 = min(level.var_c34a20f5.var_9131fe6b, maxhealth);
         diff = int(max(maxhealth - var_c993fb53, 0) / 25);
-        var_7b8559d4 = var_7b8559d4 - diff;
+        var_7b8559d4 -= diff;
     }
     if (var_7b8559d4 <= 0) {
         player.health = self.var_66cb03ad;
@@ -214,9 +214,9 @@ function regen_health(weapon, source_player, var_7b8559d4) {
         player status_effect::function_408158ef(var_d3c0f4a7.setype, var_d3c0f4a7.var_18d16a6b);
         if (player != source_player) {
             scoreevents::processscoreevent(#"tak5_boosted", source_player, player, weapon);
-            source_player.localheal.var_e2e4899c = source_player.localheal.var_e2e4899c + 1;
+            source_player.localheal.var_e2e4899c += 1;
         }
-        player.localheal.var_21de13e3 = player.localheal.var_21de13e3 + var_7b8559d4;
+        player.localheal.var_21de13e3 += var_7b8559d4;
         if (player.localheal.var_21de13e3 > 2) {
             player.localheal.var_21de13e3 = 2;
         }

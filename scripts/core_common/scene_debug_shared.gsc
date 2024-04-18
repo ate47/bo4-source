@@ -80,10 +80,10 @@ function run_scene_tests() {
                     setdvar(#"run_scene", "<unknown string>");
                     b_series = str_mode == "<unknown string>";
                     if (str_mode == "<unknown string>" || str_mode == "<unknown string>") {
-                        str_mode = str_mode + "<unknown string>" + getdvarstring(#"hash_3018c0b9207d1c", "<unknown string>");
-                        str_mode = str_mode + "<unknown string>" + getdvarstring(#"hash_51617678bebb961a", "<unknown string>");
-                        str_mode = str_mode + "<unknown string>" + getdvarstring(#"hash_4bf15ae7a6fbf73c", "<unknown string>");
-                        str_mode = str_mode + "<unknown string>" + getdvarstring(#"hash_7b946c8966b56a8e", "<unknown string>");
+                        str_mode += "<unknown string>" + getdvarstring(#"hash_3018c0b9207d1c", "<unknown string>");
+                        str_mode += "<unknown string>" + getdvarstring(#"hash_51617678bebb961a", "<unknown string>");
+                        str_mode += "<unknown string>" + getdvarstring(#"hash_4bf15ae7a6fbf73c", "<unknown string>");
+                        str_mode += "<unknown string>" + getdvarstring(#"hash_7b946c8966b56a8e", "<unknown string>");
                     }
                     level thread test_play(str_scene, str_shot, str_mode);
                 }
@@ -334,7 +334,7 @@ function display_scene_menu(str_type, str_scene) {
                 }
             } else if (level.host util::up_button_held()) {
                 held = 1;
-                selected = selected - 10;
+                selected -= 10;
             } else if (!level.host util::up_button_pressed()) {
                 held = 0;
                 up_pressed = 0;
@@ -349,7 +349,7 @@ function display_scene_menu(str_type, str_scene) {
                 }
             } else if (level.host util::down_button_held()) {
                 held = 1;
-                selected = selected + 10;
+                selected += 10;
             } else if (!level.host util::down_button_pressed()) {
                 held = 0;
                 down_pressed = 0;
@@ -526,7 +526,7 @@ function private _scene_list_settext(strings, n_selected, str_title, b_shot_menu
             }
             str_scene = text;
             if (isdefined(level.last_scene_state) && isdefined(level.last_scene_state[text])) {
-                text = text + "<unknown string>" + level.last_scene_state[text] + "<unknown string>";
+                text += "<unknown string>" + level.last_scene_state[text] + "<unknown string>";
             }
             if (i == 5) {
                 text = "<unknown string>" + text + "<unknown string>";
@@ -625,7 +625,7 @@ function test_play(arg1, arg2, str_mode) {
     /#
         n_skipto = getdvarfloat(#"scr_scene_skipto_time", 0);
         if (n_skipto > 0) {
-            str_mode = str_mode + "<unknown string>" + n_skipto;
+            str_mode += "<unknown string>" + n_skipto;
         }
         var_a572f325 = spawnstruct();
         var_a572f325.name = arg1;

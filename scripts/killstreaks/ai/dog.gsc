@@ -184,7 +184,7 @@ function function_8f876521() {
                 continue;
             }
             if (self cansee(player)) {
-                self.health = self.health + 1;
+                self.health += 1;
                 self dodamage(1, player.origin, undefined, undefined, "torso_lower", "MOD_UNKNOWN", 0, getweapon("eq_swat_grenade"), 0, 1);
                 self.ai.var_e90b47c1 = gettime() + randomintrange(6000, 13000);
                 break;
@@ -914,7 +914,7 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
         if (isplayer(entity.enemy)) {
             velocity = entity.enemy getvelocity();
             if (length(velocity) > 0) {
-                predictedenemypos = predictedenemypos + vectorscale(velocity, 0.25);
+                predictedenemypos += vectorscale(velocity, 0.25);
             }
         }
         entity.meleeinfo.adjustedendpos = predictedenemypos;
@@ -927,7 +927,7 @@ function function_a5923bea(entity, mocompanim, mocompanimblendouttime, mocompani
         var_535d098c = 0;
         if (isdefined(traceresult[#"hitloc"]) && traceresult[#"hitloc"] == "riotshield") {
             var_cc075bd0 = vectornormalize(entity.origin - entity.meleeinfo.adjustedendpos);
-            entity.meleeinfo.adjustedendpos = entity.meleeinfo.adjustedendpos + vectorscale(var_cc075bd0, 50);
+            entity.meleeinfo.adjustedendpos += vectorscale(var_cc075bd0, 50);
             var_535d098c = 1;
         }
         if (!var_201660e6) {

@@ -324,7 +324,7 @@ function function_9d166ae8(w_minigun) {
             wait(1.35);
             self thread zm_hero_weapon::function_4e984e83(w_minigun, 1);
             var_79db2feb = self gettagorigin("tag_weapon_right");
-            var_79db2feb = var_79db2feb + (0, 0, 15);
+            var_79db2feb += (0, 0, 15);
             v_forward_angles = anglestoforward(self getplayerangles());
             var_70346f17 = v_forward_angles[0] * 850;
             var_5a76439b = v_forward_angles[1] * 850;
@@ -391,7 +391,7 @@ function function_13409329(v_end_pos, w_minigun) {
         }
         if (a_ai_zombies[i].var_6f84b820 == #"basic" || a_ai_zombies[i].var_6f84b820 == #"popcorn" || a_ai_zombies[i].var_6f84b820 == #"enhanced") {
             if (isdefined(a_ai_zombies[i].var_f256a4d9)) {
-                var_1ae49e8d = var_1ae49e8d + a_ai_zombies[i].var_f256a4d9;
+                var_1ae49e8d += a_ai_zombies[i].var_f256a4d9;
                 a_ai_zombies[i].var_f256a4d9 = 0;
             }
             a_ai_zombies[i].marked_for_death = 1;

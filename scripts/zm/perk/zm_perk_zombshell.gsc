@@ -164,7 +164,7 @@ function shell_explosion(e_attacker, w_weapon) {
     e_attacker function_993d228c();
     e_attacker thread zombshell_cooldown(e_attacker.var_c0832831);
     e_attacker.var_491bd66d++;
-    e_attacker.var_c0832831 = e_attacker.var_c0832831 + 15;
+    e_attacker.var_c0832831 += 15;
     wait(0.1);
     if (isdefined(e_attacker.e_zombshell)) {
         e_attacker.e_zombshell delete();
@@ -355,7 +355,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self zm_perks::function_13880aa5(self.var_849c3bcf, 0, #"perk_zombshell");
     while (true) {
         wait(0.1);
-        self.var_fc63c7bc = self.var_fc63c7bc - 0.1;
+        self.var_fc63c7bc -= 0.1;
         self.var_fc63c7bc = math::clamp(self.var_fc63c7bc, 0, var_85dcb56c);
         n_percentage = 1 - self.var_fc63c7bc / var_85dcb56c;
         n_percentage = math::clamp(n_percentage, 0.02, var_85dcb56c);

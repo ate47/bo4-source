@@ -81,7 +81,7 @@ function function_b07539aa() {
         if (!isdefined(level.var_c70c6768)) {
             level.var_c70c6768 = 0;
         } else {
-            level.var_c70c6768 = level.var_c70c6768 + 1;
+            level.var_c70c6768 += 1;
         }
         self.turret_id = string(level.var_c70c6768);
         badplace_cylinder("turret_bad_place_" + self.turret_id, 0, self.origin, self.settings.var_9493f6dc, self.settings.var_c9c01aa4, #"axis", #"allies", #"neutral");
@@ -194,9 +194,9 @@ function state_unaware_update(params) {
         scanning_arc = min(scanning_arc, limits[1] - 0.1);
         if (scanning_arc > 179) {
             if (self.turretontarget) {
-                relativeangle = relativeangle + 90;
+                relativeangle += 90;
                 if (relativeangle > 180) {
-                    relativeangle = relativeangle - 360;
+                    relativeangle -= 360;
                 }
             }
             scanning_arc = relativeangle;
@@ -205,7 +205,7 @@ function state_unaware_update(params) {
                 turret_left = !turret_left;
             }
             if (!turret_left) {
-                scanning_arc = scanning_arc * -1;
+                scanning_arc *= -1;
             }
         }
         scanning_pitch = self.settings.scanning_pitch;
@@ -308,7 +308,7 @@ function sentry_turret_fire_for_time(totalfiretime, enemy) {
     while (time < totalfiretime) {
         self fireweapon(0, enemy);
         wait(firetime);
-        time = time + firetime;
+        time += firetime;
     }
     if (is_minigun) {
         self setturretspinning(0);

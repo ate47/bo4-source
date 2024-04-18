@@ -71,7 +71,7 @@ function zombie_coast_adjust_percent() {
         level waittill(#"between_round_over");
         level waittill(#"between_round_over");
         if (level.var_b0a3611a > 0.1) {
-            level.var_b0a3611a = level.var_b0a3611a - 0.05;
+            level.var_b0a3611a -= 0.05;
             if (level.var_b0a3611a <= 0.1) {
                 level.var_b0a3611a = 0.1;
                 break;
@@ -642,7 +642,7 @@ function function_e8485ac0() {
     n_counter = 0;
     while (true) {
         wait(0.1);
-        n_counter = n_counter + 0.1;
+        n_counter += 0.1;
         if (n_counter >= 1) {
             self.var_1ed2984a = 0;
             return;

@@ -49,7 +49,7 @@ function init_spawn_system() {
     count = 1;
     foreach (team, _ in level.teams) {
         spawnsystem.ispawn_teammask[team] = 1 << count;
-        all = all | spawnsystem.ispawn_teammask[team];
+        all |= spawnsystem.ispawn_teammask[team];
         count++;
     }
     spawnsystem.ispawn_teammask[#"all"] = all;
@@ -346,7 +346,7 @@ function create_grenade_influencers(parent_team, weapon, grenade) {
         } else {
             weapon_team_mask = util::getotherteamsmask(parent_team);
             if (level.friendlyfire) {
-                weapon_team_mask = weapon_team_mask | util::getteammask(parent_team);
+                weapon_team_mask |= util::getteammask(parent_team);
             }
         }
         grenade create_entity_masked_enemy_influencer(spawn_influencer, weapon_team_mask);
@@ -469,7 +469,7 @@ function get_debug_spawnpoint(player) {
     if (team == "free") {
         spawn_counts = 0;
         foreach (team, _ in level.teams) {
-            spawn_counts = spawn_counts + level.unified_spawn_points[team].a.size;
+            spawn_counts += level.unified_spawn_points[team].a.size;
         }
         if (level.test_spawn_point_index >= spawn_counts) {
             level.test_spawn_point_index = 0;
@@ -480,7 +480,7 @@ function get_debug_spawnpoint(player) {
             if (level.test_spawn_point_index < count + size) {
                 return level.unified_spawn_points[team].a[level.test_spawn_point_index - count];
             }
-            count = count + size;
+            count += size;
         }
         return;
     }

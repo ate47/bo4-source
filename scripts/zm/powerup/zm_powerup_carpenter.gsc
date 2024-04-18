@@ -257,7 +257,7 @@ function get_num_window_destroyed() {
     num = 0;
     for (i = 0; i < level.exterior_goals.size; i++) {
         if (zm_utility::all_chunks_destroyed(level.exterior_goals[i], level.exterior_goals[i].barrier_chunks)) {
-            num = num + 1;
+            num += 1;
         }
     }
     return num;

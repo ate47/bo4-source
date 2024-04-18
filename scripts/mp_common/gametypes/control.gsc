@@ -667,11 +667,11 @@ function setup_objectives() {
 // Size: 0xd4
 function toggle_zone_effects(enabled) {
     if (enabled) {
-        level.zonemask = level.zonemask | 1 << self.zone_index;
+        level.zonemask |= 1 << self.zone_index;
     } else {
-        level.zonemask = level.zonemask & ~(1 << self.zone_index);
+        level.zonemask &= ~(1 << self.zone_index);
     }
-    level.zonestatemask = level.zonestatemask & ~(3 << self.zone_index);
+    level.zonestatemask &= ~(3 << self.zone_index);
     level clientfield::set("warzone", level.zonemask);
     level clientfield::set("warzonestate", level.zonestatemask);
 }
@@ -829,7 +829,7 @@ function capture_loop(zone) {
 function private get_num_touching() {
     numtouching = 0;
     foreach (team, _ in level.teams) {
-        numtouching = numtouching + self.numtouching[team];
+        numtouching += self.numtouching[team];
     }
     return numtouching;
 }
@@ -1553,7 +1553,7 @@ function private update_team_client_field() {
                 state = 1;
             }
         }
-        level.zonestatemask = level.zonestatemask | state << zi * 2;
+        level.zonestatemask |= state << zi * 2;
         gameobj gameobjects::set_flags(flags);
     }
     level clientfield::set("warzonestate", level.zonestatemask);

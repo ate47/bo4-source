@@ -207,7 +207,7 @@ function end_round() {
 // Checksum 0xc291bd9, Offset: 0xc38
 // Size: 0x34
 function function_d89bf8aa() {
-    level.var_37769559 = level.var_37769559 + 5;
+    level.var_37769559 += 5;
     level thread round_spawning();
 }
 

@@ -45,7 +45,7 @@ function on_player_connect() {
 function playnotifyloop(duration) {
     playnotifyloop = spawn("script_origin", (0, 0, 0));
     playnotifyloop playloopsound(#"uin_notify_data_loop");
-    duration = duration - 4;
+    duration -= 4;
     if (duration < 1) {
         duration = 1;
     }

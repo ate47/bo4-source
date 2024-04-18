@@ -293,7 +293,7 @@ function fx_artifact_pulse_thread(localclientnum) {
     while (isdefined(self)) {
         shader_amount = sin(getrealtime() * 0.2);
         if (shader_amount < 0) {
-            shader_amount = shader_amount * -1;
+            shader_amount *= -1;
         }
         shader_amount = 0.75 - shader_amount * 0.75;
         self.artifact_glow_setting = shader_amount;

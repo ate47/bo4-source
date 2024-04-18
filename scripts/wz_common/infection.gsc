@@ -364,7 +364,7 @@ function private function_cabd9ff3(eventstruct) {
     }
     dynent.var_5059b11f++;
     if (dynent.var_5059b11f >= 2) {
-        dynent.health = dynent.health - dynent.health;
+        dynent.health -= dynent.health;
     }
 }
 

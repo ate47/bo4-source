@@ -1640,7 +1640,7 @@ function scavenger_think() {
         stock = player getweaponammostock(weapon);
         start = player getfractionstartammo(weapon);
         clip = weapon.clipsize;
-        clip = clip * getdvarfloat(#"scavenger_clip_multiplier", 1);
+        clip *= getdvarfloat(#"scavenger_clip_multiplier", 1);
         clip = int(clip);
         maxammo = weapon.maxammo;
         if (stock < maxammo - clip) {
@@ -1724,7 +1724,7 @@ function drop_limited_weapon(weapon, owner, item) {
     if (limited_info.weapon != weapon) {
         return;
     }
-    limited_info.drops = limited_info.drops - 1;
+    limited_info.drops -= 1;
     owner.limited_info = undefined;
     item thread limited_pickup(limited_info);
 }
@@ -1765,7 +1765,7 @@ function ninebang_doninebang(attacker, weapon, cooktime) {
     cookstages = min(floor(cooktime / weapon.cookoffholdtime * maxstages), maxstages);
     intervaltime = float(weapon.var_1c0e3cb7) / 1000;
     var_9729fdb9 = float(weapon.var_4941de5) / 1000;
-    cookstages = cookstages * 3;
+    cookstages *= 3;
     if (!cookstages) {
         cookstages = 3;
     }

@@ -37,7 +37,7 @@ function init() {
     level.var_2a66053e = getent("jfk_room_oscar_right_1", "targetname");
     level.var_a83c1620 hide();
     level.var_2a66053e hide();
-    level.var_3830a0d3.angles = level.var_3830a0d3.angles + (20, 0, 0);
+    level.var_3830a0d3.angles += (20, 0, 0);
     level flag::init(#"hash_7b1fd4fc459e497c");
     zm_sq::register(#"hash_6039fc2dd130edf5", #"step_1", #"hash_5873576264199a27", &function_4ac6cf37, &function_cb27a665);
     zm_sq::start(#"hash_6039fc2dd130edf5");
@@ -82,7 +82,7 @@ function function_7a7d15c8(var_4f61dc22) {
     level.var_143be9f3++;
     var_637c224f = getent(var_4f61dc22, "targetname");
     array::add(level.var_41770f71, var_637c224f);
-    var_637c224f.angles = var_637c224f.angles + (20, 0, 0);
+    var_637c224f.angles += (20, 0, 0);
     var_637c224f.e_trigger = getent(var_4f61dc22 + "_trigger", "targetname");
 }
 

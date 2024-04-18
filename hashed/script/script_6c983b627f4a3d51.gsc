@@ -55,7 +55,7 @@ function function_9c8540b4(e_player, n_amount) {
         return;
     }
     if (isdefined(n_amount)) {
-        level.var_7faa1e46 = level.var_7faa1e46 + n_amount;
+        level.var_7faa1e46 += n_amount;
         if (level.var_7faa1e46 >= level.var_ba3adfd9[level.var_705db276]) {
             while (level.var_7faa1e46 >= level.var_ba3adfd9[level.var_705db276]) {
                 level.var_705db276++;

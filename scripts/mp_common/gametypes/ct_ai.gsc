@@ -152,7 +152,7 @@ function function_1495c8c(v_origin, v_angles, anim_name) {
     }
     anim_org = v_origin;
     anim_ang = v_angles;
-    anim_org = anim_org + (0, 0, 0);
+    anim_org += (0, 0, 0);
     self ghost();
     self.anchor moveto(anim_org, 0.05);
     self.anchor waittill(#"movedone");

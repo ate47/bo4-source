@@ -887,7 +887,7 @@ function function_5d904e7d(var_dcc985c4, var_a6c68ee8 = 1, var_cc91eb05 = 0) {
         var_dcc985c4.mdl_book clientfield::set("" + #"hash_6e2f9a57d1bc4b6a", 1);
     }
     if (isdefined(s_book) && !var_cc91eb05) {
-        var_dcc985c4.mdl_origin.origin = var_dcc985c4.mdl_origin.origin - (0, 0, 5);
+        var_dcc985c4.mdl_origin.origin -= (0, 0, 5);
     }
 }
 
@@ -2066,12 +2066,12 @@ function private function_5526beaa() {
     while (n_total_time < 12) {
         self playrumbleonentity("damage_light");
         if (n_total_time >= 12 * 0.61) {
-            n_time_increment = n_time_increment + 0.5;
+            n_time_increment += 0.5;
         }
         if (n_total_time >= 6 && self clientfield::get_to_player("" + #"hash_1ee540924e569350")) {
             self clientfield::set_to_player("" + #"hash_1ee540924e569350", 0);
         }
-        n_move_speed = n_move_speed + 0.1;
+        n_move_speed += 0.1;
         if (n_move_speed > 1) {
             n_move_speed = 1;
         }
@@ -2822,7 +2822,7 @@ function private function_c482e40a() {
     a_str_zones = array("zone_cellblock_entrance", "zone_cellblock_east", "zone_start", "zone_library", "zone_cellblock_west", "zone_broadway_floor_2", "zone_cellblock_west_gondola");
     var_34f95e28 = 0;
     foreach (str_zone in a_str_zones) {
-        var_34f95e28 = var_34f95e28 + zm_zonemgr::get_players_in_zone(str_zone);
+        var_34f95e28 += zm_zonemgr::get_players_in_zone(str_zone);
     }
     return var_34f95e28;
 }
@@ -3783,7 +3783,7 @@ function boss_fight_setup() {
         for (i = 2; i <= 26; i++) {
             if (i >= 10) {
                 n_old_health = level.var_69ff31e1;
-                level.var_69ff31e1 = level.var_69ff31e1 + int(level.var_69ff31e1 * level.zombie_vars[#"zombie_health_increase_multiplier"]);
+                level.var_69ff31e1 += int(level.var_69ff31e1 * level.zombie_vars[#"zombie_health_increase_multiplier"]);
                 if (level.var_69ff31e1 < n_old_health) {
                     level.var_69ff31e1 = n_old_health;
                     break;
@@ -4461,8 +4461,8 @@ function function_f2c42deb() {
 // Size: 0xa2
 function function_9a1e357b(n_multiplier = 1) {
     n_wait = 0.9;
-    n_wait = n_wait * n_multiplier;
-    n_wait = n_wait - (util::get_active_players().size - 1) * 0.2;
+    n_wait *= n_multiplier;
+    n_wait -= (util::get_active_players().size - 1) * 0.2;
     if (n_wait < 0.2) {
         n_wait = 0.2;
     }

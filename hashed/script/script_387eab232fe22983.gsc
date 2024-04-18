@@ -186,7 +186,7 @@ function get_favorite_enemy() {
     if (!zm_utility::is_player_valid(least_hunted)) {
         return undefined;
     }
-    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    least_hunted.hunted_by += 1;
     return least_hunted;
 }
 

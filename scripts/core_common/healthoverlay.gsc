@@ -161,7 +161,7 @@ function player_health_regen_t7() {
                     veryhurttime = int(veryhurttime / getdvarfloat(#"perk_healthregenmultiplier", 0));
                 }
                 if (gettime() > hurttime + veryhurttime) {
-                    newhealth = newhealth + regenrate;
+                    newhealth += regenrate;
                 }
             } else if (usetrueregen) {
                 newhealth = ratio + regenrate;
@@ -305,23 +305,23 @@ function private function_8ca62ae3() {
     if (regen_rate == 0) {
         regen_rate = isdefined(self.n_regen_rate) ? self.n_regen_rate : self.playerrole.healthhealrate;
         if (self hasperk(#"specialty_quickrevive")) {
-            regen_rate = regen_rate * 1.5;
+            regen_rate *= 1.5;
         }
         if (isdefined(self.var_5762241e)) {
-            regen_rate = regen_rate + self.var_5762241e;
+            regen_rate += self.var_5762241e;
         }
-        regen_rate = regen_rate * self function_4e64ede5();
+        regen_rate *= self function_4e64ede5();
     }
     if (isdefined(level.specialisthealspeed)) {
         switch (level.specialisthealspeed) {
         case 0:
-            regen_rate = regen_rate * 0.5;
+            regen_rate *= 0.5;
             break;
         case 1:
         default:
             break;
         case 2:
-            regen_rate = regen_rate * 2;
+            regen_rate *= 2;
             break;
         case 3:
             regen_rate = 2147483647;
@@ -623,7 +623,7 @@ function player_heartbeat_sound(healthcap) {
         player playlocalsound(#"mpl_player_heartbeat");
         wait(self.hearbeatwait);
         if (self.hearbeatwait <= 0.6) {
-            self.hearbeatwait = self.hearbeatwait + 0.1;
+            self.hearbeatwait += 0.1;
         }
     }
 }

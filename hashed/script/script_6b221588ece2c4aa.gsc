@@ -270,7 +270,7 @@ function function_e98cee52(player, station) {
     primary_weapons = player getweaponslistprimaries();
     var_c20b09e1 = 0;
     foreach (weapon in primary_weapons) {
-        var_c20b09e1 = var_c20b09e1 | player function_61bdb626(weapon);
+        var_c20b09e1 |= player function_61bdb626(weapon);
     }
     if (!var_c20b09e1) {
         return;
@@ -328,10 +328,10 @@ function delayedspikedetonation(attacker, weapon) {
     }
     delaytime = self.owner.spikedelay;
     owner = self.owner;
-    self.owner.spikedelay = self.owner.spikedelay + 0.3;
+    self.owner.spikedelay += 0.3;
     waittillframeend();
     wait(delaytime);
-    owner.spikedelay = owner.spikedelay - 0.3;
+    owner.spikedelay -= 0.3;
     if (isdefined(self)) {
         self weapondetonate(attacker, weapon);
     }

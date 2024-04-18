@@ -241,7 +241,7 @@ function function_e40e9d94(n_eating_anim, ai_zombie, e_activator) {
     }
     var_678e573f thread scene::play(#"hash_7ab2e0d1b8b97d93", "shrink", ai_zombie);
     var_391fd0d5 = scene::function_8582657c(#"hash_7ab2e0d1b8b97d93", "shrink");
-    var_391fd0d5 = var_391fd0d5 / 2;
+    var_391fd0d5 /= 2;
     v_pos = var_3e1900e4 gettagorigin("tag_mouth_fx");
     if (!isdefined(v_pos)) {
         v_pos = self.s_scene.origin;

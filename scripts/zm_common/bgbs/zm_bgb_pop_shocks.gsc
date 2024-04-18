@@ -76,7 +76,7 @@ function function_40383770(target) {
         return;
     }
     self bgb::do_one_shot_use();
-    self.var_727695ba = self.var_727695ba - 1;
+    self.var_727695ba -= 1;
     self bgb::set_timer(self.var_727695ba, 5);
     self playsound(#"zmb_bgb_popshocks_impact");
     zombie_list = getaiteamarray(level.zombie_team);

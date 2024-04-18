@@ -1242,14 +1242,14 @@ function function_8c2bda65(n_rate, b_drain) {
     if (b_drain) {
         self.fx_handle clientfield::set("soul_capture_filled", 0);
         while (self.n_captured > 2) {
-            self.n_captured = self.n_captured - int(self.n_captured / n_rate);
+            self.n_captured -= int(self.n_captured / n_rate);
             wait(1);
         }
         self.n_captured = 0;
         return;
     }
     while (self.n_captured < 26) {
-        self.n_captured = self.n_captured + int(28 / n_rate);
+        self.n_captured += int(28 / n_rate);
         wait(1);
     }
     self.n_captured = 28;

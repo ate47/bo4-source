@@ -255,7 +255,7 @@ function notify_stage_tickets_updated(team, stage) {
 function get_total_tickets(team, total_stages) {
     team_total = 0;
     for (i = 0; i < total_stages; i++) {
-        team_total = team_total + get_stage_tickets(team, i);
+        team_total += get_stage_tickets(team, i);
     }
     return team_total;
 }

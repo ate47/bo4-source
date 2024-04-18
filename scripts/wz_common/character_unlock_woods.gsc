@@ -118,7 +118,7 @@ function function_6a61388f(vehicle) {
             self character_unlock::function_c8beca5e(#"woods_unlock", #"hash_17a4baf5ec553be7", 1);
             return;
         }
-        self.var_1e8d9480 = self.var_1e8d9480 + 0.5;
+        self.var_1e8d9480 += 0.5;
         wait(0.5);
     }
 }

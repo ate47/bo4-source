@@ -132,7 +132,7 @@ function startwaterdive() {
     filter::set_filter_water_scuba_dive_speed(self, 1, 0.25);
     filter::set_filter_water_wash_color(self, 1, 0.16, 0.5, 0.9);
     filter::set_filter_water_wash_reveal_dir(self, 1, -1);
-    for (i = 0; i < 0.05; i = i + 0.01) {
+    for (i = 0; i < 0.05; i += 0.01) {
         filter::set_filter_water_dive_bubbles(self, 1, i / 0.05);
         wait(0.01);
     }
@@ -140,13 +140,13 @@ function startwaterdive() {
     filter::set_filter_water_scuba_bubble_attitude(self, 1, -1);
     filter::set_filter_water_scuba_bubbles(self, 1, 1);
     filter::set_filter_water_wash_reveal_dir(self, 1, 1);
-    for (i = 0.2; i > 0; i = i - 0.01) {
+    for (i = 0.2; i > 0; i -= 0.01) {
         filter::set_filter_water_dive_bubbles(self, 1, i / 0.2);
         wait(0.01);
     }
     filter::set_filter_water_dive_bubbles(self, 1, 0);
     wait(0.1);
-    for (i = 0.2; i > 0; i = i - 0.01) {
+    for (i = 0.2; i > 0; i -= 0.01) {
         filter::set_filter_water_scuba_bubbles(self, 1, i / 0.2);
         wait(0.01);
     }
@@ -163,7 +163,7 @@ function startwatersheeting() {
     filter::enable_filter_water_sheeting(self, 1);
     filter::set_filter_water_sheet_reveal(self, 1, 1);
     filter::set_filter_water_sheet_speed(self, 1, 1);
-    for (i = 2; i > 0; i = i - 0.01) {
+    for (i = 2; i > 0; i -= 0.01) {
         filter::set_filter_water_sheet_reveal(self, 1, i / 2);
         filter::set_filter_water_sheet_speed(self, 1, i / 2);
         rivulet1 = i / 2 - 0.19;

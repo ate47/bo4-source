@@ -1422,12 +1422,12 @@ function updateoneshotmultikills(victim, weapon, firsttimedamaged, meansofdeath)
                 switch (var_35635206) {
                 case 1:
                     if (var_f9d69b3b < 50) {
-                        var_413c3e61 = var_413c3e61 + 50;
+                        var_413c3e61 += 50;
                     }
                     break;
                 case 2:
                     if (var_f9d69b3b < 150) {
-                        var_413c3e61 = var_413c3e61 + 150;
+                        var_413c3e61 += 150;
                     }
                     break;
                 }

@@ -316,7 +316,7 @@ function private function_535a5a06(localclientnum, var_6e51c00) {
     if (!isdefined(quickconsumeindex)) {
         quickconsumeindex = 0;
     }
-    quickconsumeindex = quickconsumeindex + var_6e51c00;
+    quickconsumeindex += var_6e51c00;
     if (quickconsumeindex >= var_be32fa6d) {
         quickconsumeindex = 0;
     } else if (quickconsumeindex < 0) {
@@ -1079,7 +1079,7 @@ function private function_1a99656a(localclientnum, inventoryitem, networkid, ite
             if (data.inventory.items[i].networkid != 32767) {
                 if (data.inventory.items[i].availableaction == 1 || data.inventory.items[i].availableaction == 4 || data.inventory.items[i].availableaction == 2 || data.inventory.items[i].availableaction == 6) {
                     if (isdefined(data.inventory.items[i].quickequip) && data.inventory.items[i].quickequip) {
-                        canusequickinventory = canusequickinventory | 1;
+                        canusequickinventory |= 1;
                     }
                 }
                 filledslots++;
@@ -1088,7 +1088,7 @@ function private function_1a99656a(localclientnum, inventoryitem, networkid, ite
         shardcount = 0;
         if (data.inventory.items[16].networkid != 32767 && data.inventory.items[16].count > 0) {
             filledslots++;
-            canusequickinventory = canusequickinventory | 1;
+            canusequickinventory |= 1;
         }
         setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory.filledSlots"), filledslots);
         setuimodelvalue(createuimodel(getuimodelforcontroller(localclientnum), "hudItems.inventory.canUseQuickInventory"), canusequickinventory);
@@ -1777,7 +1777,7 @@ function function_9c4460e0(localclientnum, itemid, count = 1, slotid = undefined
     }
     assert(isdefined(inventoryitem));
     totalcount = function_bba770de(localclientnum, itementry);
-    totalcount = totalcount + count;
+    totalcount += count;
     player function_1a99656a(localclientnum, inventoryitem, networkid, itemid, count, totalcount, availableaction);
 }
 
@@ -1824,7 +1824,7 @@ function function_bba770de(localclientnum, itementry) {
             continue;
         }
         if (name == (isdefined(inventoryitem.itementry.parentname) ? inventoryitem.itementry.parentname : inventoryitem.itementry.name)) {
-            count = count + inventoryitem.count;
+            count += inventoryitem.count;
         }
     }
     return count;
@@ -1908,7 +1908,7 @@ function consume_item(localclientnum, networkid) {
     }
     consumeditem = function_85645978(data, item);
     if (isdefined(consumeditem)) {
-        consumeditem.endtime = consumeditem.endtime + duration;
+        consumeditem.endtime += duration;
         for (index = 0; index < 10; index++) {
             inventoryitem = data.inventory.items[index];
             if (!isdefined(inventoryitem.endtime)) {
@@ -2552,7 +2552,7 @@ function function_c6ff0aa2(localclientnum, networkid) {
                 }
             }
             remaining = consumeditem.endtime - gettime();
-            consumeditem.endtime = consumeditem.endtime - remaining / var_ee0e9af9.size;
+            consumeditem.endtime -= remaining / var_ee0e9af9.size;
             for (index = 0; index < var_ee0e9af9.size; index++) {
                 inventoryitem = var_ee0e9af9[index];
                 inventoryitem.starttime = consumeditem.starttime;
@@ -2686,7 +2686,7 @@ function update_inventory_item(localclientnum, networkid, count) {
         if (inventoryitem.networkid === networkid) {
             var_338e8597 = isdefined(inventoryitem.count) ? inventoryitem.count : 0;
             totalcount = function_bba770de(localclientnum, inventoryitem.itementry);
-            totalcount = totalcount + max(0, count - var_338e8597);
+            totalcount += max(0, count - var_338e8597);
             function_1a99656a(localclientnum, inventoryitem, inventoryitem.networkid, inventoryitem.id, count, totalcount, inventoryitem.availableaction);
             function_8063170(inventoryitem, function_6d9d9cd7(inventoryslot));
             break;

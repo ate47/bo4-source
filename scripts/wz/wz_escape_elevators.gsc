@@ -129,8 +129,8 @@ function function_211e7277(point, var_8bd17d7d) {
             if (distance(player.origin, point.origin) < 16 && player.sessionstate == "playing") {
                 var_93a4284 = 1;
                 n_forward = var_8bd17d7d;
-                n_forward = n_forward * (32, 32, 0);
-                move_pos = move_pos + n_forward;
+                n_forward *= (32, 32, 0);
+                move_pos += n_forward;
                 break;
             }
             var_93a4284 = 0;
@@ -253,7 +253,7 @@ function function_26ab1b5e(t_damage) {
         if (e_vehicle istouching(t_damage) && isalive(e_vehicle)) {
             var_38ae32ff = e_vehicle.origin - t_damage.origin;
             var_8fa58819 = var_38ae32ff[2];
-            var_8fa58819 = var_8fa58819 * var_8fa58819;
+            var_8fa58819 *= var_8fa58819;
             if (var_8fa58819 < 32 || e_vehicle.scriptvehicletype === #"helicopter_light") {
                 a_players = e_vehicle getvehoccupants();
                 e_vehicle.takedamage = 1;
@@ -402,12 +402,12 @@ function function_d7b6ee00(activator, laststate, state) {
         right = anglestoright(self.angles);
         bounds = function_c440d28e(self.var_15d44120);
         start = self.origin + (0, 0, 35);
-        start = start - right * (bounds.mins[1] + bounds.maxs[1]) * 0.5;
+        start -= right * (bounds.mins[1] + bounds.maxs[1]) * 0.5;
         if (state == 1) {
-            start = start + forward * 5;
+            start += forward * 5;
             end = start + forward * 35;
         } else {
-            start = start - forward * 5;
+            start -= forward * 5;
             end = start - forward * 35;
         }
         /#

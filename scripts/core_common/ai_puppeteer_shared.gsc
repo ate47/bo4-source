@@ -219,7 +219,7 @@ function ai_puppet_manager() {
             }
             if (isdefined(level.ai_puppet)) {
                 if (self buttonpressed("<unknown string>")) {
-                    level.ai_puppet.goalradius = level.ai_puppet.goalradius + 64;
+                    level.ai_puppet.goalradius += 64;
                     level.ai_puppet.goalheight = level.ai_puppet.goalradius;
                 } else if (self buttonpressed("<unknown string>")) {
                     radius = level.ai_puppet.goalradius - 64;
@@ -465,7 +465,7 @@ function ai_puppeteer_highlight_point(point, normal, forward, color) {
         timer = 0;
         while (timer < 0.7) {
             ai_puppeteer_render_point(point, normal, forward, color);
-            timer = timer + 0.15;
+            timer += 0.15;
             wait(0.15);
         }
         level.ai_puppet_highlighting = 0;
@@ -484,7 +484,7 @@ function ai_puppeteer_highlight_node(node) {
         timer = 0;
         while (timer < 0.7) {
             ai_puppeteer_render_node(node, (0, 1, 0));
-            timer = timer + 0.15;
+            timer += 0.15;
             wait(0.15);
         }
         level.ai_puppet_highlighting = 0;
@@ -503,7 +503,7 @@ function ai_puppeteer_highlight_ai(ai, color) {
         timer = 0;
         while (timer < 0.7 && isdefined(ai)) {
             ai_puppeteer_render_ai(ai, color);
-            timer = timer + 0.15;
+            timer += 0.15;
             wait(0.15);
         }
         level.ai_puppet_highlighting = 0;

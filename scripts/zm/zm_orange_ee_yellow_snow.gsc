@@ -178,7 +178,7 @@ function function_f77c5d83() {
     while (!b_hidden) {
         s_result = self waittill(#"damage");
         if (s_result.weapon.name === #"snowball" || s_result.weapon.name === #"snowball_upgraded") {
-            level.var_c2dce33e = level.var_c2dce33e - 1;
+            level.var_c2dce33e -= 1;
             self hide();
             self setcandamage(0);
             b_hidden = 1;
@@ -462,10 +462,10 @@ function function_68789b17() {
     while (level.var_74f3565a < 30) {
         if (zm_utility::is_player_valid(level.var_733d6b98) && level.var_733d6b98.b_in_water === 1) {
             if (level.var_74f3565a > 0) {
-                level.var_74f3565a = level.var_74f3565a - 0.2;
+                level.var_74f3565a -= 0.2;
             }
         } else {
-            level.var_74f3565a = level.var_74f3565a + 0.1;
+            level.var_74f3565a += 0.1;
         }
         wait(0.1);
     }

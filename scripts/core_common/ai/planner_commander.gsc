@@ -220,18 +220,18 @@ function private _debugcommander(commander) {
                 }
                 recordtext(function_9e72a96(commander.planner.name) + "<unknown string>" + function_9e72a96(team) + "<unknown string>" + commander.planstarttime + "<unknown string>" + commander.planfinishtime + "<unknown string>" + int((commander.planfinishtime - commander.planstarttime) / int(float(function_60d95f53()) / 1000 * 1000) + 1) + "<unknown string>", position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
             #/
-            xoffset = xoffset + 15;
+            xoffset += 15;
             /#
                 side = strategiccommandutility::function_a1edb007(team);
                 var_b5dfd8a6 = strategiccommandutility::function_45c5edc6(side);
                 if (!isdefined(var_b5dfd8a6)) {
                     var_b5dfd8a6 = #"default_strategicbundle";
                 }
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 recordtext("<unknown string>" + var_b5dfd8a6, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
             #/
             for (index = 0; index < commander.plan.size; index++) {
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 /#
                     recordtext(function_9e72a96(commander.plan[index].name), position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
                 #/
@@ -378,7 +378,7 @@ function private _evaluatefitness(commander, squad) {
     }
     fitness = 1;
     foreach (score in scores) {
-        fitness = fitness * score;
+        fitness *= score;
     }
     return fitness;
 }

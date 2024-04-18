@@ -226,11 +226,11 @@ function function_e8ad1d81(position, owner, normal, velocity, killcament, weapon
             x = originalposition[0];
             y = originalposition[1];
             lowestz = var_69d15ad0[#"position"][2];
-            for (z = originalposition[2]; z > lowestz; z = z - randomintrange(20, 30)) {
+            for (z = originalposition[2]; z > lowestz; z -= randomintrange(20, 30)) {
                 newpos = (x, y, z);
                 water_depth = get_water_depth(newpos);
                 if (function_a66ba8cc(water_depth) || is_under_water(newpos)) {
-                    newpos = newpos - (0, 0, water_depth);
+                    newpos -= (0, 0, water_depth);
                     level thread function_42b9fdbe(molotovsteamweapon, newpos, (0, 0, 1), int(customsettings.var_b79d64a9), team);
                     break;
                 }

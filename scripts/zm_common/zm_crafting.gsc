@@ -636,14 +636,14 @@ function function_987a472(modelname, blueprint) {
         s_model = struct::get(s_crafting.target, "targetname");
         if (isdefined(s_model)) {
             m_spawn = spawn("script_model", s_model.origin);
-            m_spawn.origin = m_spawn.origin + blueprint.v_offset;
+            m_spawn.origin += blueprint.v_offset;
             if (isdefined(s_crafting.v_origin_offset)) {
-                m_spawn.origin = m_spawn.origin + s_crafting.v_origin_offset;
+                m_spawn.origin += s_crafting.v_origin_offset;
             }
             m_spawn.angles = s_model.angles;
-            m_spawn.angles = m_spawn.angles + blueprint.v_angles;
+            m_spawn.angles += blueprint.v_angles;
             if (isdefined(s_crafting.v_angle_offset)) {
-                m_spawn.angles = m_spawn.angles + s_crafting.v_angle_offset;
+                m_spawn.angles += s_crafting.v_angle_offset;
             }
             m_spawn setmodel(modelname);
             s_crafting.model = m_spawn;
@@ -1093,11 +1093,11 @@ function private function_3c45b116() {
         if (isdefined(s_model)) {
             v_origin = s_model.origin;
             if (isdefined(self.v_origin_offset)) {
-                v_origin = v_origin + self.v_origin_offset;
+                v_origin += self.v_origin_offset;
             }
             v_angles = s_model.angles;
             if (isdefined(self.v_angle_offset)) {
-                v_angles = v_angles + self.v_angle_offset;
+                v_angles += self.v_angle_offset;
             }
         }
     } else {
@@ -1120,11 +1120,11 @@ function private function_230f6303() {
         if (isdefined(s_model)) {
             v_origin = s_model.origin;
             if (isdefined(self.v_origin_offset)) {
-                v_origin = v_origin + self.v_origin_offset;
+                v_origin += self.v_origin_offset;
             }
             v_angles = s_model.angles;
             if (isdefined(self.v_angle_offset)) {
-                v_angles = v_angles + self.v_angle_offset;
+                v_angles += self.v_angle_offset;
             }
         }
     } else {
@@ -1196,7 +1196,7 @@ function private function_9693e041(player) {
 // Size: 0x3c
 function function_c9163c5d(str) {
     if (isdefined(str) && str != "") {
-        str = str + "_KEYBOARD";
+        str += "_KEYBOARD";
     }
     return str;
 }
@@ -1243,7 +1243,7 @@ function function_ceac3bf9(player, b_repaired = 0) {
         n_cost = player function_86cab486();
         break;
     }
-    n_cost = n_cost - var_a185bd91;
+    n_cost -= var_a185bd91;
     if (n_cost < 100) {
         n_cost = 100;
     }
@@ -1630,16 +1630,16 @@ function function_fe738a08(table_id) {
         plorigin = origin + 48 * forward;
         switch (entnum) {
         case 0:
-            plorigin = plorigin + 16 * right;
+            plorigin += 16 * right;
             break;
         case 1:
-            plorigin = plorigin + 16 * forward;
+            plorigin += 16 * forward;
             break;
         case 2:
-            plorigin = plorigin - 16 * right;
+            plorigin -= 16 * right;
             break;
         case 3:
-            plorigin = plorigin - 16 * forward;
+            plorigin -= 16 * forward;
             break;
         }
         self setorigin(plorigin);

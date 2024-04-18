@@ -151,10 +151,10 @@ function private debug_think() {
                     str_name = var_dcd6c23.var_556afb3d;
                     if (var_dcd6c23 flag::get("<unknown string>")) {
                         /#
-                            var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                            var_c708e6e1 += n_y_offset;
                             str_text = str_name + "<unknown string>";
                             debug2dtext((800, var_c708e6e1, 0), str_text, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
-                            var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                            var_c708e6e1 += n_y_offset;
                             debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                         #/
                         waitframe(1);
@@ -166,7 +166,7 @@ function private debug_think() {
                     }
                     str_team = var_dcd6c23.m_str_team;
                     /#
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     if (isdefined(var_dcd6c23.var_f68bc980) && var_dcd6c23.var_f68bc980) {
@@ -177,10 +177,10 @@ function private debug_think() {
                         str_status = "<unknown string>";
                     }
                     /#
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         str_text = str_name + "<unknown string>" + str_status + "<unknown string>";
                         debug2dtext((800, var_c708e6e1, 0), str_text, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     if (function_a2115dc4(var_dcd6c23, var_dcd6c23.var_4417045b)) {
@@ -192,24 +192,24 @@ function private debug_think() {
                     }
                     /#
                         str_text = "<unknown string>" + var_dcd6c23.var_4417045b + "<unknown string>" + var_dcd6c23.var_592f8f7f + "<unknown string>" + str_status + "<unknown string>";
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), str_text, (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     n_total_count = 0;
                     var_a549e716 = 0;
                     foreach (var_c21b798e in var_dcd6c23.var_376c2c29) {
-                        n_total_count = n_total_count + var_c21b798e.var_23791f08;
-                        var_a549e716 = var_a549e716 + var_c21b798e.var_a4202481;
+                        n_total_count += var_c21b798e.var_23791f08;
+                        var_a549e716 += var_c21b798e.var_a4202481;
                     }
                     /#
                         str_text = "<unknown string>" + n_total_count + "<unknown string>" + var_a549e716 + "<unknown string>";
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), str_text, (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         debug2dtext((800, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
                     #/
                     if (isdefined(var_dcd6c23.var_376c2c29)) {
-                        var_c708e6e1 = var_c708e6e1 + n_y_offset;
+                        var_c708e6e1 += n_y_offset;
                         var_1d3b29d6 = 1;
                         foreach (var_c21b798e in var_dcd6c23.var_376c2c29) {
                             if (function_f77ad8a3(var_c21b798e)) {
@@ -222,7 +222,7 @@ function private debug_think() {
                             /#
                                 str_text = "<unknown string>" + var_1d3b29d6 + "<unknown string>" + var_c21b798e.var_bcd4e683 + "<unknown string>" + var_c21b798e.var_23791f08 + "<unknown string>" + str_status + "<unknown string>";
                                 debug2dtext((800, var_c708e6e1, 0), str_text, (1, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
-                                var_c708e6e1 = var_c708e6e1 + var_90fbd845;
+                                var_c708e6e1 += var_90fbd845;
                             #/
                             var_1d3b29d6++;
                         }
@@ -666,7 +666,7 @@ function private think(var_dcd6c23) {
                 var_179ea866 = 0;
                 foreach (var_c21b798e in var_dcd6c23.var_376c2c29) {
                     if (isdefined(var_c21b798e.var_bb290b79)) {
-                        var_179ea866 = var_179ea866 + var_c21b798e.var_bb290b79.size;
+                        var_179ea866 += var_c21b798e.var_bb290b79.size;
                     }
                 }
                 if (var_179ea866 > var_4e56e285) {
@@ -824,18 +824,18 @@ function private function_7909260f(var_dcd6c23, n_wave, var_bced2a83) {
                     var_1c88138f = var_c21b798e.var_23791f08 - var_c21b798e.var_bcd4e683;
                     if (isdefined(var_c21b798e.var_bb290b79)) {
                         var_c21b798e.var_bb290b79 = array::remove_dead(var_c21b798e.var_bb290b79);
-                        var_1c88138f = var_1c88138f + var_c21b798e.var_bb290b79.size;
+                        var_1c88138f += var_c21b798e.var_bb290b79.size;
                     }
-                    n_spawns = n_spawns + var_1c88138f;
+                    n_spawns += var_1c88138f;
                 }
             } else {
                 foreach (var_a2b4b991 in var_dcd6c23.m_s_bundle.waves[i - 1].spawns) {
-                    n_spawns = n_spawns + (isdefined(var_a2b4b991.totalcount) ? var_a2b4b991.totalcount : 1);
+                    n_spawns += isdefined(var_a2b4b991.totalcount) ? var_a2b4b991.totalcount : 1;
                 }
             }
             if (!var_bced2a83) {
                 if (isdefined(var_dcd6c23.m_s_bundle.waves[i - 1].transitioncount)) {
-                    n_spawns = n_spawns - var_dcd6c23.m_s_bundle.waves[i - 1].transitioncount;
+                    n_spawns -= var_dcd6c23.m_s_bundle.waves[i - 1].transitioncount;
                 }
             }
         }
@@ -1307,12 +1307,12 @@ function private function_bf55c711(n_wave, var_bced2a83) {
         }
         var_b4d30f09 = 0;
         foreach (var_a2b4b991 in s_wave.spawns) {
-            var_b4d30f09 = var_b4d30f09 + (isdefined(var_a2b4b991.totalcount) ? var_a2b4b991.totalcount : 1);
+            var_b4d30f09 += isdefined(var_a2b4b991.totalcount) ? var_a2b4b991.totalcount : 1;
         }
         if (!var_bced2a83 && isdefined(s_wave.transitioncount)) {
-            var_b4d30f09 = var_b4d30f09 - s_wave.transitioncount;
+            var_b4d30f09 -= s_wave.transitioncount;
         }
-        n_ai_count = n_ai_count + var_b4d30f09;
+        n_ai_count += var_b4d30f09;
     }
     return n_ai_count;
 }
@@ -1538,10 +1538,10 @@ function function_6893f05b(kvp, n_wave, var_bced2a83 = 1) {
     var_a1f4e09d = 0;
     foreach (s_wave_manager in a_s_wave_managers) {
         if (isdefined(s_wave_manager.var_dcd6c23)) {
-            var_a1f4e09d = var_a1f4e09d + wave_manager_sys::function_7909260f(s_wave_manager.var_dcd6c23, n_wave, var_bced2a83);
+            var_a1f4e09d += wave_manager_sys::function_7909260f(s_wave_manager.var_dcd6c23, n_wave, var_bced2a83);
             continue;
         }
-        var_a1f4e09d = var_a1f4e09d + s_wave_manager wave_manager_sys::function_bf55c711(n_wave, var_bced2a83);
+        var_a1f4e09d += s_wave_manager wave_manager_sys::function_bf55c711(n_wave, var_bced2a83);
     }
     return var_a1f4e09d;
 }

@@ -75,11 +75,11 @@ function event_handler[event_9673dc9a] function_3981d015(eventstruct) {
             if (isdefined(newstate.var_8725802) && newstate.var_8725802) {
                 gametime = gettime();
                 if (isdefined(newstate.var_e23400ad) && newstate.var_e23400ad) {
-                    gametime = gametime + abs(dynent.origin[0] + dynent.origin[1] + dynent.origin[2]);
+                    gametime += abs(dynent.origin[0] + dynent.origin[1] + dynent.origin[2]);
                 }
                 animlength = int(getanimlength(newstate.stateanim) * 1000);
                 starttime = gametime / animlength / rate;
-                starttime = starttime - int(starttime);
+                starttime -= int(starttime);
             } else if (teleport && !isanimlooping(0, newstate.stateanim)) {
                 starttime = 1;
             }

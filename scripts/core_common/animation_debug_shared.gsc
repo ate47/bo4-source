@@ -71,17 +71,17 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag, va
             str_extra_info = "<unknown string>";
             color = (1, 1, 0);
             if (flagsys::get(#"firstframe")) {
-                str_extra_info = str_extra_info + "<unknown string>";
+                str_extra_info += "<unknown string>";
             }
             var_13edeb1f = getanimframecount(animation);
             var_7b160393 = self getanimtime(animation) * var_13edeb1f;
             var_958054e5 = getanimlength(animation);
             var_f667af2f = self getanimtime(animation) * var_958054e5;
-            str_extra_info = str_extra_info + "<unknown string>" + var_f667af2f + "<unknown string>" + var_958054e5 + "<unknown string>" + var_7b160393 + "<unknown string>" + var_13edeb1f + "<unknown string>";
+            str_extra_info += "<unknown string>" + var_f667af2f + "<unknown string>" + var_958054e5 + "<unknown string>" + var_7b160393 + "<unknown string>" + var_13edeb1f + "<unknown string>";
             if (isarray(var_f4b34dc1) && var_f4b34dc1.size) {
                 var_1c56a327 = "<unknown string>";
                 foreach (var_21c1ba1, str_anim in var_f4b34dc1) {
-                    var_1c56a327 = var_1c56a327 + "<unknown string>" + var_21c1ba1 + "<unknown string>" + str_anim;
+                    var_1c56a327 += "<unknown string>" + var_21c1ba1 + "<unknown string>" + str_anim;
                 }
             }
             s_pos = _get_align_pos(v_origin_or_ent, v_angles_or_tag);

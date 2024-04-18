@@ -307,7 +307,7 @@ function private hascloseaivsaienemy(behaviortreeentity) {
     if (behaviortreeentity haspath()) {
         selfpredictedpos = behaviortreeentity.origin;
         moveangle = behaviortreeentity.angles[1] + behaviortreeentity getmotionangle();
-        selfpredictedpos = selfpredictedpos + (cos(moveangle), sin(moveangle), 0) * 200 * 0.2;
+        selfpredictedpos += (cos(moveangle), sin(moveangle), 0) * 200 * 0.2;
         /#
             record3dtext("<unknown string>" + distance(selfpredictedpos, animationstartorigin), behaviortreeentity.origin, (1, 0.5, 0), "<unknown string>", behaviortreeentity, 0.4);
         #/

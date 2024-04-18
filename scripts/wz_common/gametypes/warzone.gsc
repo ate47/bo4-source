@@ -351,7 +351,7 @@ function private function_23600e7d() {
                     timeleft = level.var_8ca0499;
                     println("<unknown string>" + level.var_8ca0499);
                     while (timeleft > 0) {
-                        timeleft = timeleft - 1;
+                        timeleft -= 1;
                         wait(1);
                         if (level.activeplayers.size >= level.var_8fcd8a61) {
                             break;
@@ -396,7 +396,7 @@ function private function_23600e7d() {
                 if (level.var_a132ca2b < level.var_8fcd8a61 - level.maxteamplayers) {
                     var_b0c8b797 = level.var_a132ca2b - level.activeplayers.size;
                     if (var_b0c8b797 < 4 * level.maxteamplayers) {
-                        level.var_a132ca2b = level.var_a132ca2b + level.maxteamplayers;
+                        level.var_a132ca2b += level.maxteamplayers;
                         println("<unknown string>" + level.var_a132ca2b);
                     }
                 }
@@ -411,14 +411,14 @@ function private function_23600e7d() {
         println("<unknown string>" + level.evolution_interval);
         timeleft = level.evolution_interval;
         while (timeleft > 0) {
-            timeleft = timeleft - 1;
+            timeleft -= 1;
             wait(1);
             if (level.activeplayers.size >= level.var_a132ca2b) {
                 break;
             }
         }
         if (level.activeplayers.size < level.var_a132ca2b) {
-            level.var_a132ca2b = level.var_a132ca2b - level.player_reduction;
+            level.var_a132ca2b -= level.player_reduction;
             if (level.var_a132ca2b < level.var_e9d6c52f) {
                 level.var_a132ca2b = level.var_e9d6c52f;
             }
@@ -847,7 +847,7 @@ function function_94203702(team, players) {
 function function_7e309c84(team, players) {
     team_kills = 0;
     foreach (player in players) {
-        team_kills = team_kills + player.kills;
+        team_kills += player.kills;
     }
     return team_kills;
 }
@@ -859,7 +859,7 @@ function function_7e309c84(team, players) {
 function function_3915e148(team, players) {
     damage_done = 0;
     foreach (player in players) {
-        damage_done = damage_done + player.damagedone;
+        damage_done += player.damagedone;
     }
     return damage_done;
 }
@@ -1462,13 +1462,13 @@ function function_de15dc32(killed_player, disconnected_player) {
                 }
             }
         }
-        player_count.alive = player_count.alive + var_40073db2;
+        player_count.alive += var_40073db2;
         if (!isdefined(player_count.alive_platoons[platoon])) {
             player_count.alive_platoons[platoon] = 0;
         }
         player_count.alive_platoons[platoon] = player_count.alive_platoons[platoon] + var_40073db2;
         if (var_77cfc33d && level.var_c2cc011f && var_40073db2 > 0) {
-            player_count.alive = player_count.alive + var_ead60f69;
+            player_count.alive += var_ead60f69;
             player_count.alive_platoons[platoon] = player_count.alive_platoons[platoon] + var_ead60f69;
         }
     }
@@ -1577,7 +1577,7 @@ function function_c14f7557() {
             }
         }
         if (!level.var_c2cc011f || var_40073db2 > 0) {
-            count = count + var_ead60f69;
+            count += var_ead60f69;
         }
     }
     return count;

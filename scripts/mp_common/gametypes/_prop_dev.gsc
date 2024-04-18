@@ -484,7 +484,7 @@ function function_ea8e45a8(val) {
         hudelem = self.var_28df7051[self.placementindex];
         hudelem.alpha = 0.5;
         hudelem.fontscale = 1;
-        self.placementindex = self.placementindex + val;
+        self.placementindex += val;
         if (self.placementindex >= self.var_28df7051.size) {
             self.placementindex = 0;
         } else if (self.placementindex < 0) {
@@ -576,7 +576,7 @@ function function_75154360(val) {
                     break;
                 }
             }
-            index = index + val;
+            index += val;
             if (index < 0) {
                 index = sizes.size - 1;
             } else if (index >= sizes.size) {
@@ -594,7 +594,7 @@ function function_75154360(val) {
             var_dfa19677 = 0.1;
             var_34b4cc47 = 10;
             var_59913b42 = 0.01;
-            self.prop.info.propscale = self.prop.info.propscale + var_59913b42 * val;
+            self.prop.info.propscale += var_59913b42 * val;
             self.prop.info.propscale = math::clamp(self.prop.info.propscale, var_dfa19677, var_34b4cc47);
             self.prop setscale(self.prop.info.propscale);
             self.var_5ee5df03 setvalue(self.prop.info.propscale);
@@ -650,7 +650,7 @@ function function_75154360(val) {
         }
         if (hudelem == self.var_35eb52f1) {
             adjust = 10;
-            self.prop.info.propheight = self.prop.info.propheight + adjust * val;
+            self.prop.info.propheight += adjust * val;
             self.prop.info.propheight = math::clamp(self.prop.info.propheight, -30, 40);
             self.thirdpersonheightoffset = self.prop.info.propheight;
             self setclientthirdperson(1);
@@ -659,7 +659,7 @@ function function_75154360(val) {
         }
         if (hudelem == self.var_a2f59097) {
             adjust = 10;
-            self.prop.info.proprange = self.prop.info.proprange + adjust * val;
+            self.prop.info.proprange += adjust * val;
             self.prop.info.proprange = math::clamp(self.prop.info.proprange, 50, 360);
             self.thirdpersonrange = self.prop.info.proprange;
             self setclientthirdperson(1);
@@ -761,24 +761,24 @@ function function_2dc5c497(file, propinfo) {
     /#
         propstr = "<unknown string>" + propinfo.modelname + "<unknown string>" + propinfo.propsizetext + "<unknown string>" + propinfo.propscale;
         if (function_cbef3d63(propinfo.xyzoffset)) {
-            propstr = propstr + "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
+            propstr += "<unknown string>" + propinfo.xyzoffset[0] + "<unknown string>" + propinfo.xyzoffset[1] + "<unknown string>" + propinfo.xyzoffset[2];
         } else {
-            propstr = propstr + "<unknown string>";
+            propstr += "<unknown string>";
         }
         if (function_cbef3d63(propinfo.anglesoffset)) {
-            propstr = propstr + "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
+            propstr += "<unknown string>" + propinfo.anglesoffset[0] + "<unknown string>" + propinfo.anglesoffset[1] + "<unknown string>" + propinfo.anglesoffset[2];
         } else {
-            propstr = propstr + "<unknown string>";
+            propstr += "<unknown string>";
         }
         if (function_a840713e(propinfo)) {
-            propstr = propstr + "<unknown string>" + propinfo.propheight;
+            propstr += "<unknown string>" + propinfo.propheight;
         } else {
-            propstr = propstr + "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
+            propstr += "<unknown string>" + prop::getthirdpersonheightoffsetforsize(propinfo.propsize);
         }
         if (function_7a3672a6(propinfo)) {
-            propstr = propstr + "<unknown string>" + propinfo.proprange;
+            propstr += "<unknown string>" + propinfo.proprange;
         } else {
-            propstr = propstr + "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
+            propstr += "<unknown string>" + prop::getthirdpersonrangeforsize(propinfo.propsize);
         }
         fprintln(file, propstr);
     #/
@@ -1180,10 +1180,10 @@ function function_ed0598d(propinfo, origin, angles) {
         forward = anglestoforward(angles) * prop.xyzoffset[0];
         right = anglestoright(angles) * prop.xyzoffset[1];
         up = anglestoup(angles) * prop.xyzoffset[2];
-        prop.origin = prop.origin + forward;
-        prop.origin = prop.origin + right;
-        prop.origin = prop.origin + up;
-        prop.angles = prop.angles + prop.anglesoffset;
+        prop.origin += forward;
+        prop.origin += right;
+        prop.origin += up;
+        prop.angles += prop.anglesoffset;
         prop linkto(propent);
         propent.prop = prop;
         propent.propinfo = propinfo;
@@ -1206,14 +1206,14 @@ function function_89b4b4c() {
             foreach (category in level.proplist) {
                 foreach (propinfo in category) {
                     level.var_98714fa7[level.var_98714fa7.size] = function_ed0598d(propinfo, origin, angles);
-                    origin = origin + dir * 60;
+                    origin += dir * 60;
                 }
             }
             return;
         }
         foreach (propent in level.var_98714fa7) {
             propent.origin = origin;
-            origin = origin + dir * 60;
+            origin += dir * 60;
         }
     #/
 }
@@ -1298,7 +1298,7 @@ function function_5646cd5c() {
         foreach (category in level.proplist) {
             foreach (propinfo in category) {
                 level.var_2ebdcb74[level.var_2ebdcb74.size] = function_cded003e(propinfo, origin, angles, util::getotherteam(player.team));
-                origin = origin + dir * 60;
+                origin += dir * 60;
             }
         }
     #/

@@ -267,7 +267,7 @@ function random_spread(ent) {
         } else {
             ent.origin = self.manual_target.origin;
         }
-        ent.origin = ent.origin + (20 - randomfloat(40), 20 - randomfloat(40), 20 - randomfloat(60));
+        ent.origin += (20 - randomfloat(40), 20 - randomfloat(40), 20 - randomfloat(60));
         wait(0.2);
     }
 }

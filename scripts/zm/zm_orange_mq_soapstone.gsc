@@ -350,7 +350,7 @@ function function_9961d00() {
                 self show();
                 level function_88a86ef8(2);
                 self playsound(#"hash_7605be4297c1ed23");
-                level.s_soapstone.var_b6e5b65f = level.s_soapstone.var_b6e5b65f - 1;
+                level.s_soapstone.var_b6e5b65f -= 1;
                 self.is_placed = 1;
                 level flag::clear(#"hash_57d2cbf7d6c2035a");
                 level flag::set(#"hash_3a8a317fc0b5e5b0");
@@ -364,7 +364,7 @@ function function_9961d00() {
                 self show();
                 level function_88a86ef8(4);
                 self playsound(#"hash_7605be4297c1ed23");
-                level.s_soapstone.var_b6e5b65f = level.s_soapstone.var_b6e5b65f - 1;
+                level.s_soapstone.var_b6e5b65f -= 1;
                 self.is_placed = 1;
                 level flag::set(#"hash_238e5c8b416f855");
             } else if (level.s_soapstone.is_charged && level.s_soapstone.is_hot) {
@@ -372,7 +372,7 @@ function function_9961d00() {
                 self show();
                 level function_88a86ef8(0);
                 self playsound(#"hash_69b229acb5e3a598");
-                level.s_soapstone.var_b6e5b65f = level.s_soapstone.var_b6e5b65f - 1;
+                level.s_soapstone.var_b6e5b65f -= 1;
                 self.is_placed = 1;
                 level flag::set(#"hash_57d2cbf7d6c2035a");
             } else {
@@ -385,7 +385,7 @@ function function_9961d00() {
                 self show();
                 level function_88a86ef8(2);
                 self playsound(#"hash_69b229acb5e3a598");
-                level.s_soapstone.var_b6e5b65f = level.s_soapstone.var_b6e5b65f - 1;
+                level.s_soapstone.var_b6e5b65f -= 1;
                 self.is_placed = 1;
                 level flag::clear(#"hash_238e5c8b416f855");
                 level flag::set(#"hash_3a8a317fc0b5e5b0");

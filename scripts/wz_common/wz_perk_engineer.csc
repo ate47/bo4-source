@@ -65,7 +65,7 @@ function private function_7800b9c2(localclientnum) {
     while (true) {
         var_94c264dd = self hasperk(localclientnum, #"specialty_showenemyequipment");
         if (!var_94c264dd && isdefined(self.var_53204996)) {
-            var_94c264dd = var_94c264dd | self [[ self.var_53204996 ]](localclientnum);
+            var_94c264dd |= self [[ self.var_53204996 ]](localclientnum);
         }
         if (!var_94c264dd && self.var_100abb43.size == 0) {
             wait(0.2);

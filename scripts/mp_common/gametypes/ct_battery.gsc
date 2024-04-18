@@ -398,7 +398,7 @@ function function_62449dad() {
                 self notify(#"turret reloading");
                 wait(level.heli_turretreloadtime);
                 if (isdefined(self.turrettarget) && isalive(self.turrettarget)) {
-                    antithreat = antithreat + 100;
+                    antithreat += 100;
                     self.turrettarget.antithreat = antithreat;
                 }
                 if (!isdefined(self.primarytarget) || isdefined(self.turrettarget) && isdefined(self.primarytarget) && self.primarytarget != self.turrettarget) {
@@ -448,7 +448,7 @@ function function_303fcbd8() {
                 } else {
                     break;
                 }
-                antithreat = antithreat + 100;
+                antithreat += 100;
                 self.missiletarget.antithreat = antithreat;
                 wait(level.heli_missile_rof);
                 if (!isdefined(self.secondarytarget) || isdefined(self.secondarytarget) && self.missiletarget != self.secondarytarget) {
@@ -532,8 +532,8 @@ function function_560c5174(currentnode, startwait, hardpointtype) {
             heli_accel = self.n_accel + randomint(5);
         }
         if (isdefined(self.pathspeedscale)) {
-            heli_speed = heli_speed * self.pathspeedscale;
-            heli_accel = heli_accel * self.pathspeedscale;
+            heli_speed *= self.pathspeedscale;
+            heli_accel *= self.pathspeedscale;
         }
         if (!isdefined(nextnode.target)) {
             stop = 1;
@@ -558,7 +558,7 @@ function function_560c5174(currentnode, startwait, hardpointtype) {
             #/
             n_wait = nextnode.script_delay;
             if (isdefined(self.var_e55eb7b9)) {
-                n_wait = n_wait + self.var_e55eb7b9;
+                n_wait += self.var_e55eb7b9;
             }
             self function_ab637f96(n_wait);
         }
@@ -675,7 +675,7 @@ function private function_4e049216(einflictor, eattacker, idamage, idflags, smea
         }
     } else if (smeansofdeath === "MOD_IMPACT" && weapon === getweapon(#"hero_pineapplegun")) {
         level notify(#"hash_788c0d72802f35af", {#v_loc:vpoint});
-        self.damagetaken = self.damagetaken + 751;
+        self.damagetaken += 751;
     } else if (weapon === getweapon(#"eq_cluster_semtex_grenade") && !(isdefined(self.var_21c8bc5f) && self.var_21c8bc5f)) {
         self.var_21c8bc5f = 1;
         level notify(#"hash_18859ff9fe569290", {#v_loc:vpoint});
@@ -683,7 +683,7 @@ function private function_4e049216(einflictor, eattacker, idamage, idflags, smea
         if (!isdefined(self.damagetaken)) {
             self.damagetaken = 0;
         }
-        self.damagetaken = self.damagetaken + 1501;
+        self.damagetaken += 1501;
     }
     if (self.damagetaken >= self.maxhealth && !isdefined(self.about_to_die)) {
         self.about_to_die = 1;
@@ -771,9 +771,9 @@ function private function_1f04fda(einflictor, eattacker, idamage, idflags, smean
     if (weapon === w_pineapple) {
         level notify(#"hash_788c0d72802f35af", {#v_loc:vpoint});
     } else if (smeansofdeath !== "MOD_IMPACT" && weapon === w_cluster) {
-        self.damagetaken = self.damagetaken + 1501;
+        self.damagetaken += 1501;
     } else if (smeansofdeath !== "MOD_IMPACT" && weapon === var_60350909) {
-        self.damagetaken = self.damagetaken + 751;
+        self.damagetaken += 751;
     }
     if (self.damagetaken >= self.maxhealth) {
         idamage = self.maxhealth + 1000;
@@ -922,7 +922,7 @@ function function_52d196f2(n_difficulty = 2) {
     var_c005d40b = array(10, 15, 30);
     var_44092575 = 0;
     foreach (n_count in var_88e49d60) {
-        var_44092575 = var_44092575 + n_count;
+        var_44092575 += n_count;
     }
     e_player thread function_9be2d75f();
     a_parms = [];

@@ -92,7 +92,7 @@ function event_handler[gametype_init] main(eventstruct) {
         level.var_aad1f6f2 = var_6b6c4ce;
     }
     if (level.var_aad1f6f2 == level.var_8ce231e3) {
-        level.var_8ce231e3 = level.var_8ce231e3 + 0.001;
+        level.var_8ce231e3 += 0.001;
     }
     assert(level.var_aad1f6f2 <= level.var_8ce231e3);
     level.var_73a7a457 = max(getgametypesetting(#"hash_381587a813feab3e"), 1);
@@ -180,7 +180,7 @@ function private onconnect() {
                 }
                 if (player.team == self.team) {
                     numteammates++;
-                    var_69c2bc0d = var_69c2bc0d + player.pers[#"money_earned"];
+                    var_69c2bc0d += player.pers[#"money_earned"];
                 }
             }
             if (numteammates) {
@@ -267,7 +267,7 @@ function private onstartgametype() {
     level thread function_8cac4c76();
     var_b1f5f155 = game.roundsplayed + 1;
     if (var_b1f5f155 == game.var_b40d8319) {
-        game.var_b40d8319 = game.var_b40d8319 + getgametypesetting(#"hash_7e30d3849ca91b60");
+        game.var_b40d8319 += getgametypesetting(#"hash_7e30d3849ca91b60");
         thread function_bdba96e1();
     }
     level.var_7e7897b8 = function_b3faa437();
@@ -492,12 +492,12 @@ function private function_a981417() {
     while (game.state == "playing") {
         if (isdefined(level.var_ad7774db)) {
             if (isdefined(level.var_ad7774db.keyobject[0].carrier) && level.var_ad7774db.keyobject[0].carrier istouching(level.var_ad7774db.trigger)) {
-                level.var_ad7774db.userate = level.var_ad7774db.userate * level.var_6938f270;
-                level.var_ad7774db.autodecaytime = level.var_ad7774db.autodecaytime / level.var_6938f270;
+                level.var_ad7774db.userate *= level.var_6938f270;
+                level.var_ad7774db.autodecaytime /= level.var_6938f270;
                 if (level.var_ad7774db.autodecaytime < 0.001) {
                     level.var_ad7774db.autodecaytime = 0.001;
                 }
-                level.var_6938f270 = level.var_6938f270 + 0.1 * float(level.var_9fee970c) / 1000;
+                level.var_6938f270 += 0.1 * float(level.var_9fee970c) / 1000;
             }
         }
         waitframe(1);
@@ -773,7 +773,7 @@ function private givelastattackerwarning(team) {
         if (self.health != self.maxhealth) {
             fullhealthtime = 0;
         } else {
-            fullhealthtime = fullhealthtime + interval;
+            fullhealthtime += interval;
         }
         wait(interval);
         if (self.health == self.maxhealth && fullhealthtime >= 3) {
@@ -907,7 +907,7 @@ function private function_319af5a2(player) {
             }
         }
         wait(level.var_651c849);
-        level.var_3e14d8dd = level.var_3e14d8dd - level.var_16fd9420;
+        level.var_3e14d8dd -= level.var_16fd9420;
         if (level.var_3e14d8dd < level.var_714ddf4a) {
             level.var_3e14d8dd = level.var_714ddf4a;
         } else if (level.var_3e14d8dd > level.var_3e14d8dd) {
@@ -935,7 +935,7 @@ function private function_62d627a0(player) {
     }
     player setmovespeedscale(1);
     level.var_a5221eec = undefined;
-    level.var_3e14d8dd = level.var_3e14d8dd - level.var_d4fe7ba9;
+    level.var_3e14d8dd -= level.var_d4fe7ba9;
     self gameobjects::set_visible_team(#"any");
     level thread popups::displayteammessagetoall(#"hash_5e8cd98e9533c77d", player);
     player clientfield::set_player_uimodel("hudItems.BountyCarryingBag", 0);
@@ -1606,7 +1606,7 @@ function private function_bdba96e1() {
     waitframe(1);
     droplocations = struct::get_array("bounty_drop", "variantname");
     droppoint = droplocations[randomint(droplocations.size)].origin;
-    droppoint = droppoint + (0, 0, 2000);
+    droppoint += (0, 0, 2000);
     startpoint = helicopter::getvalidrandomstartnode(droppoint).origin;
     startpoint = (startpoint[0], startpoint[1], droppoint[2]);
     timer = randomintrange(level.var_8e8e80c6, level.var_374a483e);

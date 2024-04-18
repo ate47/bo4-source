@@ -1476,7 +1476,7 @@ class csceneobject {
     function run_wait(wait_time) {
         wait_start_time = 0;
         while (wait_start_time < wait_time && !is_skipping_scene()) {
-            wait_start_time = wait_start_time + float(function_60d95f53()) / 1000;
+            wait_start_time += float(function_60d95f53()) / 1000;
             waitframe(1);
         }
     }
@@ -2747,7 +2747,7 @@ class cscene {
                 if (var_8b188654) {
                     var_43cf9254 = 0;
                     while (!flagsys::get(#"shot_skip_completed") || var_43cf9254 > 5) {
-                        var_43cf9254 = var_43cf9254 + float(function_60d95f53()) / 1000;
+                        var_43cf9254 += float(function_60d95f53()) / 1000;
                         waitframe(1);
                     }
                     flagsys::clear(#"shot_skip_completed");
@@ -3027,10 +3027,10 @@ class cscene {
             b_play_from_time = 1;
             _str_mode = "";
             if (issubstr(args[0], "noai")) {
-                _str_mode = _str_mode + "noai";
+                _str_mode += "noai";
             }
             if (issubstr(args[0], "noplayers")) {
-                _str_mode = _str_mode + "noplayers";
+                _str_mode += "noplayers";
             }
         }
         if (!isdefined(level.active_scenes[_str_name])) {
@@ -3865,7 +3865,7 @@ class cscene {
                 a_shots = scene::get_all_shot_names(_str_name, 1);
                 foreach (str_shot_name in _s.a_str_shot_names) {
                     if (str_shot_name != str_shot) {
-                        var_82bbc872 = var_82bbc872 + ceil(scene::function_8582657c(_s, str_shot_name) * 30);
+                        var_82bbc872 += ceil(scene::function_8582657c(_s, str_shot_name) * 30);
                         continue;
                     }
                     break;
@@ -3880,7 +3880,7 @@ class cscene {
                     var_204b44d3 = var_9d90ef8b * n_frame_counter / ceil(var_9d90ef8b * 30);
                     var_962ef8af = "<unknown string>" + n_frame_counter + "<unknown string>" + ceil(var_9d90ef8b * 30) + "<unknown string>" + var_204b44d3 + "<unknown string>" + var_9d90ef8b + "<unknown string>";
                     debug2dtext(v_pos, var_962ef8af, undefined, undefined, undefined, 1, 0.8);
-                    v_pos = v_pos + (0, 20, 0) * 2;
+                    v_pos += (0, 20, 0) * 2;
                     foreach (obj in _a_objects) {
                         if (!isdefined(obj._e) || !isdefined(obj._str_current_anim)) {
                             continue;
@@ -3899,9 +3899,9 @@ class cscene {
                         var_2e63fccd = obj._str_name + "<unknown string>" + function_9e72a96(animation);
                         var_1cae5962 = "<unknown string>" + str_shot + "<unknown string>" + var_7b160393 + "<unknown string>" + var_13edeb1f + "<unknown string>" + var_f667af2f + "<unknown string>" + var_958054e5 + "<unknown string>";
                         debug2dtext(v_pos, var_2e63fccd, undefined, undefined, undefined, 1, 0.8);
-                        v_pos = v_pos + (0, 20, 0);
+                        v_pos += (0, 20, 0);
                         debug2dtext(v_pos, var_1cae5962, undefined, undefined, undefined, 1, 0.8);
-                        v_pos = v_pos + (0, 20, 0) * 1.25;
+                        v_pos += (0, 20, 0) * 1.25;
                         n_frame_counter = var_82bbc872 + var_7b160393;
                     }
                     waitframe(1);

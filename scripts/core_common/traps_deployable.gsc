@@ -781,7 +781,7 @@ function function_59a79a68(var_3af54106, damage_callback, destroyed_callback, em
             }
             self challenges::trackassists(attacker, weapon_damage, 0);
         }
-        self.damagetaken = self.damagetaken + weapon_damage;
+        self.damagetaken += weapon_damage;
         if (!issentient(self) && weapon_damage > 0) {
             self.attacker = attacker;
         }
@@ -989,7 +989,7 @@ function turret_activate(var_3af54106, owner, team, vehicle, origin, angles, par
         if (!isdefined(level.var_c70c6768)) {
             level.var_c70c6768 = 0;
         } else {
-            level.var_c70c6768 = level.var_c70c6768 + 1;
+            level.var_c70c6768 += 1;
         }
         vehicle.turret_id = string(level.var_c70c6768);
         badplace_cylinder("turret_bad_place_" + vehicle.turret_id, 0, vehicle.origin, vehicle.settings.var_9493f6dc, vehicle.settings.var_c9c01aa4, #"axis", #"allies", #"neutral");

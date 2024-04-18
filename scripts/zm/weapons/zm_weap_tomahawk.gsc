@@ -115,7 +115,7 @@ function private function_932e24b(w_weapon) {
     n_total_time = 0;
     n_power = 0;
     while (n_total_time < 8) {
-        n_power = n_power + var_eec22f7e;
+        n_power += var_eec22f7e;
         self gadgetpowerset(self gadgetgetslot(w_weapon), n_power);
         wait(0.25);
         n_current_time = gettime();
@@ -163,7 +163,7 @@ function private play_charge_fx(w_grenade) {
             } else {
                 self clientfield::increment("tomahawk_charge_up_fx", 1);
             }
-            var_673471b1 = var_673471b1 + 1000;
+            var_673471b1 += 1000;
             self playrumbleonentity("reload_small");
         }
         if (var_673471b1 > 2400 && self.var_4f8fb07f != #"tomahawk_t8_upgraded") {
@@ -633,11 +633,11 @@ function private calculate_tomahawk_damage(ai_target_zombie, n_tomahawk_power, t
         return (ai_target_zombie.health + 1);
     }
     if (level.round_number >= 10 && level.round_number < 13 && tomahawk.low_level_instant_kill_charge <= 3) {
-        tomahawk.low_level_instant_kill_charge = tomahawk.low_level_instant_kill_charge + 1;
+        tomahawk.low_level_instant_kill_charge += 1;
         return (ai_target_zombie.health + 1);
     }
     if (level.round_number >= 13 && level.round_number < 15 && tomahawk.low_level_instant_kill_charge <= 2) {
-        tomahawk.low_level_instant_kill_charge = tomahawk.low_level_instant_kill_charge + 1;
+        tomahawk.low_level_instant_kill_charge += 1;
         return (ai_target_zombie.health + 1);
     }
     return 1000 * n_tomahawk_power;

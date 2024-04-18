@@ -124,7 +124,7 @@ function onoutofboundschange(localclientnum, oldval, newval, bnewent, binitialsn
         if (!isdefined(self.oob_active_duration)) {
             self.oob_active_duration = 0;
         }
-        self.oob_active_duration = self.oob_active_duration + self.oob_end_time - self.oob_start_time;
+        self.oob_active_duration += self.oob_end_time - self.oob_start_time;
     }
     if (isdefined(self.nonplayeroobusage) && self.nonplayeroobusage) {
         self.oob_active_duration = undefined;

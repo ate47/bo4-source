@@ -179,7 +179,7 @@ function private function_9ddb4115(var_1d83d08d) {
         newstart = var_1d83d08d.start;
         toend = vectornormalize(var_1d83d08d.end - var_1d83d08d.start);
         for (var_164fe5c9 = distance2dsquared(newstart, initcircle.origin); var_164fe5c9 > initcircle.radius * initcircle.radius; var_164fe5c9 = var_c820832) {
-            newstart = newstart + toend * 1000;
+            newstart += toend * 1000;
             var_c820832 = distance2dsquared(newstart, initcircle.origin);
             if (var_c820832 > var_164fe5c9) {
                 break;
@@ -189,7 +189,7 @@ function private function_9ddb4115(var_1d83d08d) {
         var_1b8e09d2 = var_1d83d08d.end;
         tostart = toend * -1;
         for (var_164fe5c9 = distance2dsquared(var_1b8e09d2, initcircle.origin); var_164fe5c9 > initcircle.radius * initcircle.radius; var_164fe5c9 = var_c820832) {
-            var_1b8e09d2 = var_1b8e09d2 + tostart * 1000;
+            var_1b8e09d2 += tostart * 1000;
             var_c820832 = distance2dsquared(var_1b8e09d2, initcircle.origin);
             if (var_c820832 > var_164fe5c9) {
                 break;
@@ -752,7 +752,7 @@ function function_57d4a011(insertion) {
                 z_pos = 20000;
                 portal_vehicle.origin = (x_pos, y_pos, z_pos);
                 portal_vehicle.angle_step = angle;
-                angle = angle + step_size;
+                angle += step_size;
                 target = var_8a2c40d0.origin - portal_vehicle.origin;
                 target = vectornormalize(target);
                 angles = vectortoangles(target);
@@ -823,7 +823,7 @@ function function_7bf9c38f(reinserting) {
     if (isdefined(level.deathcircleindex)) {
         circleindex = level.deathcircleindex + 2;
     }
-    speed = speed / circleindex;
+    speed /= circleindex;
     self unlink();
     var_180a7b48 = self function_ec7cfdb();
     /#
@@ -1171,7 +1171,7 @@ function function_c4f5c468(insertion) {
     assert(isstruct(insertion));
     teammask = getteammask(self.team);
     for (teamindex = 0; teammask > 1; teamindex++) {
-        teammask = teammask >> 1;
+        teammask >>= 1;
     }
     planeindex = teamindex % insertion.var_41091905.size;
     return insertion.var_41091905[planeindex];
@@ -1525,7 +1525,7 @@ function function_d9dfa25() {
     var_86cb4eb8[#"right"] = array((1200, 2300, 0), (-200, 2300, 0), (-1600, 2300, 0), (-3000, 2300, 0));
     var_5637e595 = {#var_c85ebc15:4, #var_f5cff63:array("gunship_spawner", "gunship_spawner", "gunship_spawner", "gunship_spawner"), #hoverparams:array((192, 192, 192), (192, 192, 192), (192, 192, 192), (192, 192, 192)), #var_86255b48:array(2, 2, 2, 2)};
     s_formation = array::random(a_formations);
-    s_formation.var_c85ebc15 = s_formation.var_c85ebc15 + var_5637e595.var_c85ebc15;
+    s_formation.var_c85ebc15 += var_5637e595.var_c85ebc15;
     s_formation.var_f5cff63 = arraycombine(s_formation.var_f5cff63, var_5637e595.var_f5cff63, 1, 0);
     s_formation.var_86cb4eb8 = arraycombine(s_formation.var_86cb4eb8, var_86cb4eb8[s_formation.alignment], 1, 0);
     s_formation.hoverparams = arraycombine(s_formation.hoverparams, var_5637e595.hoverparams, 1, 0);
@@ -1713,7 +1713,7 @@ function function_ab6af198() {
         x = abs(var_6024133d[0].origin[0] - var_6024133d[1].origin[0]);
         y = abs(var_6024133d[0].origin[1] - var_6024133d[1].origin[1]);
         max_width = max(x, y);
-        max_width = max_width * 0.75;
+        max_width *= 0.75;
         return math::clamp(max_width, 10000, max_width);
     }
     return 10000;

@@ -76,7 +76,7 @@ function private function_c80f40af() {
     level endon(#"hash_7646638df88a3656");
     while (level.var_61541a89 < level.var_b07feb9b) {
         s_result = level waittill(#"hash_1ba786f1661e3817");
-        level.var_61541a89 = level.var_61541a89 + s_result.var_2ef2374;
+        level.var_61541a89 += s_result.var_2ef2374;
         if (level.var_61541a89 < level.var_b07feb9b) {
             level zm_trial_util::function_2976fa44(level.var_b07feb9b);
             level zm_trial_util::function_dace284(level.var_61541a89);

@@ -185,7 +185,7 @@ function lightninggun_find_arc_targets(eattacker, arc_source, arc_source_origin,
                 tagorigin = enemy.origin;
             }
             level thread lightninggun_arc(delay, eattacker, arc_source, arc_source_origin, arc_source_pos, enemy, tagorigin, distancesq);
-            delay = delay + 0.05;
+            delay += 0.05;
         }
     }
 }

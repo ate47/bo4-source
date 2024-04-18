@@ -734,8 +734,8 @@ function private forward_euler_integration(e_move, v_target_landing, n_initial_s
     gravity = (0, 0, -385.8);
     while (!landed) {
         previousposition = position;
-        velocity = velocity + gravity * 0.1;
-        position = position + velocity * 0.1;
+        velocity += gravity * 0.1;
+        position += velocity * 0.1;
         if (position[2] + velocity[2] * 0.1 <= v_target_landing[2]) {
             landed = 1;
             position = v_target_landing;

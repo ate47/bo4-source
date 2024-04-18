@@ -112,7 +112,7 @@ function watch_player_drowning() {
         waitframe(1);
         underwater = (game.state == "pregame" || game.state == "playing") && self isplayerunderwater();
         var_790acff6 = isdefined(level.var_8e910e84) && level.var_8e910e84 && self inlaststand() && getwaterheight(self.origin) > self getplayercamerapos()[2];
-        underwater = underwater | var_790acff6;
+        underwater |= var_790acff6;
         if (underwater && !(isdefined(self.var_f07d3654) && self.var_f07d3654)) {
             if (!(isdefined(self.wasunderwater) && self.wasunderwater)) {
                 self.wasunderwater = 1;
@@ -127,7 +127,7 @@ function watch_player_drowning() {
                 if (isdefined(level.var_9f155bf4)) {
                     self thread [[ level.var_9f155bf4 ]]("MOD_DROWN");
                 }
-                var_c1e8fa5d = var_c1e8fa5d - int(self.playerrole.var_f0886300 * 1000);
+                var_c1e8fa5d -= int(self.playerrole.var_f0886300 * 1000);
             }
             if (gettime() - self.lastwaterdamagetime > n_swimtime - level.drown_pre_damage_stage_time && self.drownstage == 0) {
                 self.drownstage++;
@@ -138,7 +138,7 @@ function watch_player_drowning() {
                 self.lastwaterdamagetime = gettime() - n_swimtime + int(self.playerrole.var_f0886300 * 1000);
             }
             if (gettime() - self.lastwaterdamagetime > n_swimtime) {
-                self.lastwaterdamagetime = self.lastwaterdamagetime + int(self.playerrole.var_f0886300 * 1000);
+                self.lastwaterdamagetime += int(self.playerrole.var_f0886300 * 1000);
                 self dodamage(self.playerrole.swimdamage, self.origin, undefined, undefined, undefined, "MOD_DROWN", 6);
                 self activate_player_health_visionset();
                 if (self.drownstage < 4) {

@@ -681,8 +681,8 @@ function do_gib(model, tag) {
         self._gib_vel = undefined;
     } else {
         forward = vectornormalize(end_pos - start_pos);
-        forward = forward * randomfloatrange(0.6, 1);
-        forward = forward + (0, 0, randomfloatrange(0.4, 0.7));
+        forward *= randomfloatrange(0.6, 1);
+        forward += (0, 0, randomfloatrange(0.4, 0.7));
     }
     createdynentandlaunch(0, model, end_pos, angles, start_pos, forward, level._effect[#"animscript_gibtrail_fx"], 1);
     if (isdefined(self)) {
@@ -1076,7 +1076,7 @@ function rise_dust_fx(clientnum, type, billow_fx, burst_fx) {
     } else if (type == "none") {
         return;
     }
-    for (t = 0; t < dust_time; t = t + dust_interval) {
+    for (t = 0; t < dust_time; t += dust_interval) {
         if (!isdefined(self)) {
             return;
         }
@@ -1119,13 +1119,13 @@ function last_stand_thread(clientnum) {
         setsoundvolume(id, vol);
         wait(pause);
         if (pause < 2) {
-            pause = pause * 1.05;
+            pause *= 1.05;
             if (pause > 2) {
                 pause = 2;
             }
         }
         if (vol < 1) {
-            vol = vol * 1.05;
+            vol *= 1.05;
             if (vol > 1) {
             }
         }

@@ -454,7 +454,7 @@ function private manage_companion_movement(entity) {
                         entity.var_345d40 = 0;
                         return;
                     }
-                    entity.var_345d40 = entity.var_345d40 + 1;
+                    entity.var_345d40 += 1;
                 }
             }
         }
@@ -545,7 +545,7 @@ function private function_a2ba1ce8(target_entity, max_distance) {
         if (currentseglength + segmentlength > max_distance) {
             return false;
         }
-        segmentlength = segmentlength + currentseglength;
+        segmentlength += currentseglength;
     }
     return true;
 }

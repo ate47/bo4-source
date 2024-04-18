@@ -135,7 +135,7 @@ function deactivate() {
 // Checksum 0x32c03b94, Offset: 0x6c0
 // Size: 0x84
 function do_damage(damage) {
-    self.health = self.health - damage;
+    self.health -= damage;
     self notify(#"attackable_damaged");
     if (self.health <= 0) {
         self notify(#"attackable_deactivated");

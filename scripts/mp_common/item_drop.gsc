@@ -343,10 +343,10 @@ function private function_2734eea3(player) {
     }
     var_24242c8e = 0;
     if (isdefined(player.laststandparams) && isdefined(player.laststandparams.attacker) && isplayer(player.laststandparams.attacker) && player.laststandparams.attacker != player) {
-        var_24242c8e = var_24242c8e | !util::function_fbce7263(player.laststandparams.attacker.team, player.team);
+        var_24242c8e |= !util::function_fbce7263(player.laststandparams.attacker.team, player.team);
     }
     if (!var_24242c8e && isdefined(player.var_a1d415ee) && isdefined(player.var_a1d415ee.attacker) && isplayer(player.var_a1d415ee.attacker) && player.var_a1d415ee.attacker != player) {
-        var_24242c8e = var_24242c8e | !util::function_fbce7263(player.var_a1d415ee.attacker.team, player.team);
+        var_24242c8e |= !util::function_fbce7263(player.var_a1d415ee.attacker.team, player.team);
     }
     return var_24242c8e;
 }
@@ -379,7 +379,7 @@ function private function_a938fba7(player, position, angles, itementry, var_74e7
         }
         vehicle = player getvehicleoccupied();
         if (vehicle getoccupantseat(player) == 0) {
-            zoffset = zoffset + abs(player.origin[2] - vehicle.origin[2]);
+            zoffset += abs(player.origin[2] - vehicle.origin[2]);
         }
     }
     origin = function_23b6897(player, position);
@@ -404,7 +404,7 @@ function private function_a938fba7(player, position, angles, itementry, var_74e7
             }
             if (isdefined(itementry)) {
                 originoffset = function_feb1473(itementry, var_ba40b4c1);
-                origin = origin + originoffset;
+                origin += originoffset;
             }
             normal = var_708a2754[#"normal"];
             angles = function_3b2b6383(origin, angles, normal, itementry, var_ba40b4c1);

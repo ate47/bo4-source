@@ -982,7 +982,7 @@ function function_bba770de(itementry) {
             continue;
         }
         if (name == (isdefined(inventoryitem.itementry.parentname) ? inventoryitem.itementry.parentname : inventoryitem.itementry.name)) {
-            count = count + inventoryitem.count;
+            count += inventoryitem.count;
         }
     }
     return count;
@@ -1101,7 +1101,7 @@ function consume_item(item) {
     item.starttime = starttime;
     item.endtime = endtime;
     if (isdefined(consumeditem)) {
-        consumeditem.endtime = consumeditem.endtime + duration;
+        consumeditem.endtime += duration;
         for (index = 0; index < 10; index++) {
             inventoryitem = self.inventory.items[index];
             if (!isdefined(inventoryitem.endtime)) {
@@ -1163,7 +1163,7 @@ function function_6d647220(item) {
         }
     }
     if (isdefined(self.var_3f1410dd)) {
-        self.var_3f1410dd.var_2b021e34 = self.var_3f1410dd.var_2b021e34 + int(min(isdefined(armoritem.itementry.var_a3aa1ca2) ? armoritem.itementry.var_a3aa1ca2 : 0, self.maxarmor - self.armor));
+        self.var_3f1410dd.var_2b021e34 += int(min(isdefined(armoritem.itementry.var_a3aa1ca2) ? armoritem.itementry.var_a3aa1ca2 : 0, self.maxarmor - self.armor));
         self.var_3f1410dd.var_7352c057++;
     }
     self.armor = int(min(self.armor + (isdefined(armoritem.itementry.var_a3aa1ca2) ? armoritem.itementry.var_a3aa1ca2 : 0), self.maxarmor));
@@ -1574,7 +1574,7 @@ function drop_inventory_item(networkid, stashitem = 0, var_7cab8e12 = undefined,
                         }
                     }
                     remaining = consumeditem.endtime - gettime();
-                    consumeditem.endtime = consumeditem.endtime - remaining / (var_ee0e9af9.size + 1);
+                    consumeditem.endtime -= remaining / (var_ee0e9af9.size + 1);
                     for (index = 0; index < var_ee0e9af9.size; index++) {
                         inventoryitem = var_ee0e9af9[index];
                         inventoryitem.starttime = consumeditem.starttime;
@@ -2491,7 +2491,7 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
                 if (isdefined(inventoryweapon)) {
                     self function_c6be9f7f(inventoryweapon, self.inventory.items[i].count);
                 }
-                itemcount = itemcount - var_8c6165fc;
+                itemcount -= var_8c6165fc;
                 assert(itemcount >= 0);
                 if (itemcount <= 0) {
                     self function_b00db06(4, itemid, 0);
@@ -2523,7 +2523,7 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
             var_92d652f2.charmindex = undefined;
             var_92d652f2.deathfxindex = undefined;
             self function_b00db06(4, item.id, var_8c6165fc, slotid + 1);
-            itemcount = itemcount - var_8c6165fc;
+            itemcount -= var_8c6165fc;
             assert(itemcount >= 0);
             if (itemcount <= 0) {
                 if (isdefined(item.attachments)) {
@@ -2592,7 +2592,7 @@ function give_inventory_item(item, itemcount = 1, var_aec6fa7f = 0, slotid = und
             self.inventory.items[i].endtime = undefined;
             namespace_a0d533d1::function_6e9e7169(self.inventory.items[i]);
             self function_b00db06(4, item.id, var_8c6165fc, i + 1);
-            itemcount = itemcount - var_8c6165fc;
+            itemcount -= var_8c6165fc;
             assert(itemcount >= 0);
             if (itemcount <= 0) {
                 break;
@@ -3627,7 +3627,7 @@ function use_killstreak(networkid, item) {
         vehicle = spawnvehicle(vehicletype, spawnorigin, traceresults.angles);
         if (isdefined(vehicle)) {
             if (isdefined(vehicle.vehicleclass) && vehicle.vehicleclass == #"helicopter") {
-                vehicle.origin = vehicle.origin + (0, 0, vehicle.height);
+                vehicle.origin += (0, 0, vehicle.height);
             }
             level.item_vehicles[level.item_vehicles.size] = vehicle;
         }
@@ -3682,7 +3682,7 @@ function function_3d113bfb() {
         if (!isdefined(item) || !isstruct(item.itementry) || item.itementry.itemtype !== #"cash") {
             continue;
         }
-        cash = cash + (isdefined(item.itementry.amount) ? item.itementry.amount : 0);
+        cash += isdefined(item.itementry.amount) ? item.itementry.amount : 0;
     }
     self.var_a097ccb7 = cash;
     if (self.var_a097ccb7 > 0) {

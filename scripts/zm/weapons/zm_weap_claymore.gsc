@@ -269,7 +269,7 @@ function function_cbb2f05b(watcher) {
         type = waitresult.mod;
         idflags = waitresult.flags;
         damage = weapons::function_74bbb3fa(damage, weapon, self.weapon);
-        self.var_18acfe18 = self.var_18acfe18 + damage;
+        self.var_18acfe18 += damage;
         if (!isplayer(attacker) && isdefined(attacker.owner)) {
             attacker = attacker.owner;
         }

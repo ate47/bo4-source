@@ -702,7 +702,7 @@ function function_2858e671(var_c34665fc, e_boss) {
             continue;
         }
         if (isdefined(n_damage) && n_damage > 0) {
-            level.s_boss_battle.var_5dc26e42 = level.s_boss_battle.var_5dc26e42 + n_damage;
+            level.s_boss_battle.var_5dc26e42 += n_damage;
             if (level.s_boss_battle.n_stage == 1) {
                 if (level.s_boss_battle.var_5dc26e42 >= level.s_boss_battle.var_7fc7f236 / 2) {
                     level flag::set(#"hash_15ba89b2357ff618");
@@ -1297,16 +1297,16 @@ function function_21ef9bb7(a_ents) {
             e_boss function_4c17036d(e_attacker);
         }
         if (var_653b9351) {
-            level.s_boss_battle.var_36f0e240 = level.s_boss_battle.var_36f0e240 + s_waitresult.amount;
+            level.s_boss_battle.var_36f0e240 += s_waitresult.amount;
         } else if (zm_weapons::function_35746b9c(s_waitresult.weapon)) {
-            level.s_boss_battle.var_ad3f929f = level.s_boss_battle.var_ad3f929f + 50;
+            level.s_boss_battle.var_ad3f929f += 50;
             /#
                 if (getdvarint(#"zm_debug_ee", 0)) {
                     s_waitresult.amount = 50;
                 }
             #/
         } else {
-            level.s_boss_battle.var_ad3f929f = level.s_boss_battle.var_ad3f929f + s_waitresult.amount;
+            level.s_boss_battle.var_ad3f929f += s_waitresult.amount;
         }
         /#
             if (getdvarint(#"zm_debug_ee", 0)) {
@@ -1381,7 +1381,7 @@ function private function_732c74f7(n_max_time) {
     n_time = 0;
     while (!isdefined(str_target_zone)) {
         wait(0.3);
-        n_time = n_time + 0.3;
+        n_time += 0.3;
         if (isdefined(n_max_time)) {
             if (n_time > n_max_time) {
                 /#
@@ -1781,7 +1781,7 @@ function function_d899c62c(base_health, round_number) {
     for (i = 2; i <= round_number; i++) {
         if (i >= 10 && !(isdefined(level.var_50dd0ec5) && level.var_50dd0ec5)) {
             old_health = var_d082c739;
-            var_d082c739 = var_d082c739 + int(var_d082c739 * zombie_utility::function_d2dfacfd(#"zombie_health_increase_multiplier"));
+            var_d082c739 += int(var_d082c739 * zombie_utility::function_d2dfacfd(#"zombie_health_increase_multiplier"));
             if (var_d082c739 < old_health) {
                 var_d082c739 = old_health;
                 break;

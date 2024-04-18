@@ -115,13 +115,13 @@ function doreveal(local_client_num, direction) {
     while (startval >= 0 && startval <= 1) {
         self mapshaderconstant(local_client_num, 0, "scriptVector0", startval, 0, 0, 0);
         if (direction) {
-            startval = startval + 0.032;
+            startval += 0.032;
             if (priorvalue < 0.5 && startval >= 0.5) {
                 self duplicate_render::set_dr_flag("hide_model", 1);
                 self duplicate_render::change_dr_flags(local_client_num);
             }
         } else {
-            startval = startval - 0.032;
+            startval -= 0.032;
             if (priorvalue > 0.5 && startval <= 0.5) {
                 self duplicate_render::set_dr_flag("hide_model", 0);
                 self duplicate_render::change_dr_flags(local_client_num);

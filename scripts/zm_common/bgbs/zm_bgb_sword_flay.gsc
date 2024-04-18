@@ -56,7 +56,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
                 damage = self.health + damage * 5;
                 break;
             default:
-                damage = damage * 5;
+                damage *= 5;
                 break;
             }
         }
@@ -70,7 +70,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
 // Size: 0xa0
 function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
     if (smeansofdeath === "MOD_MELEE") {
-        idamage = idamage * 5;
+        idamage *= 5;
     }
     return idamage;
 }

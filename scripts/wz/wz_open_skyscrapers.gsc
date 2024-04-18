@@ -589,8 +589,8 @@ function function_f567f0cd() {
             n_total = 0;
             var_bd9acc19 = 176;
             foreach (var_f0ffe8b2 in level.var_6eef6733) {
-                var_bd9acc19 = var_bd9acc19 + 24;
-                n_total = n_total + var_f0ffe8b2.size;
+                var_bd9acc19 += 24;
+                n_total += var_f0ffe8b2.size;
                 foreach (var_3ed342fe in var_f0ffe8b2) {
                     if (isvehicle(var_3ed342fe) && isdefined(var_f0ffe8b2) && isdefined(var_f0ffe8b2[0]) && isdefined(var_f0ffe8b2[0].vehicletype)) {
                         debug2dtext((810, var_bd9acc19, 0), function_9e72a96(var_f0ffe8b2[0].vehicletype) + "<unknown string>" + var_f0ffe8b2.size, var_3ed342fe function_b2775b52());
@@ -977,7 +977,7 @@ function function_9cc59537() {
                         } else {
                             for (i = 0; i < 8; i++) {
                                 var_7cb887a8[i] = point.origin + (0, 0, 16) + vectorscale(anglestoforward(v_angles), var_47748885);
-                                v_angles = v_angles + (0, var_3e832e74, 0);
+                                v_angles += (0, var_3e832e74, 0);
                             }
                         }
                         var_2e0e7774 = arraysortclosest(spawn_points, point.origin, 20, 1, var_c5330f11);
@@ -1107,13 +1107,13 @@ function function_5ef515a6(var_1d9375fc) {
     /#
         n_total = 0;
         foreach (group in var_1d9375fc) {
-            n_total = n_total + group.debug_spawnpoints.size;
+            n_total += group.debug_spawnpoints.size;
         }
         while (getdvarint(#"hash_4701ef1aeafb2f3", 0)) {
             var_bd9acc19 = 50;
             foreach (group in var_1d9375fc) {
                 if (isstring(group.target)) {
-                    var_bd9acc19 = var_bd9acc19 + 24;
+                    var_bd9acc19 += 24;
                     debug2dtext((1300, var_bd9acc19, 0), group.target + "<unknown string>" + group.debug_spawnpoints.size, (1, 1, 1), 1, (0, 0, 0), 0.75);
                 }
             }
@@ -1194,7 +1194,7 @@ function function_e8f0335f() {
         while (getdvarint(#"hash_15ce8723d2ead5ef", 1)) {
             waitframe(1);
             if (self weaponswitchbuttonpressed()) {
-                var_b3a9e916 = var_b3a9e916 + 1;
+                var_b3a9e916 += 1;
                 if (var_b3a9e916 > 2) {
                     var_b3a9e916 = 0;
                 }
@@ -1228,7 +1228,7 @@ function function_e8f0335f() {
             if (var_b3a9e916 != 0) {
                 for (i = 0; i < 8; i++) {
                     var_7cb887a8[i] = origin + (0, 0, 12) + vectorscale(anglestoforward(v_angles), 32);
-                    v_angles = v_angles + (0, var_3e832e74, 0);
+                    v_angles += (0, var_3e832e74, 0);
                 }
                 foreach (v_test in var_7cb887a8) {
                     a_trace = bullettrace(origin + (0, 0, 12), v_test, 0, level.players[0]);
@@ -1349,11 +1349,11 @@ function function_13a77bfa() {
                     sphere(spawn.origin, 10, (1, 0.752941, 0.796078), 1, 0, 4, 12);
                     print3d(spawn.origin + (0, 0, 12), function_9e72a96(spawn.targetname), (1, 0.752941, 0.796078), 0.9, 0.5, 12);
                 }
-                total_spawns = total_spawns + spawns.size;
-                var_ad802a37 = var_ad802a37 + (0, 28, 0);
+                total_spawns += spawns.size;
+                var_ad802a37 += (0, 28, 0);
                 debug2dtext(var_ad802a37, influencer.target + "<unknown string>" + spawns.size, (1, 0.752941, 0.796078), 1, (0, 0, 0), 0.5, 1, 12);
             }
-            var_ad802a37 = var_ad802a37 + (0, 28, 0);
+            var_ad802a37 += (0, 28, 0);
             debug2dtext(var_ad802a37, "<unknown string>" + total_spawns, (1, 0.752941, 0.796078), 1, (0, 0, 0), 0.5, 1.3, 12);
         } while (getdvarint(#"hash_43f2306cde703585", 0));
     #/
@@ -1428,7 +1428,7 @@ function function_2e72f24d(tracepoint, weapon) {
         i = 0;
         while (true) {
             new_vel = vel - vel * vel * 0.5 * var_b9090b50 * var_c587700f * var_97ed9e7a / var_b62fd725 * 6.47989e-05 * 16 / 1000;
-            distance = distance + (vel + new_vel) / 2 * 16 / 1000;
+            distance += (vel + new_vel) / 2 * 16 / 1000;
             vel = new_vel;
             var_bf960c5 = vel / var_71c007dd * var_44345100;
             damage = base_damage * var_bf960c5;

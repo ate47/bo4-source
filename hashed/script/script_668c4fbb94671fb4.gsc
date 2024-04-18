@@ -902,7 +902,7 @@ function private function_e5801a77() {
     self.var_7fbed236 = 0;
     while (true) {
         s_result = self waittill(#"hash_7b36770a2988e5d1");
-        self.var_7fbed236 = self.var_7fbed236 + 15;
+        self.var_7fbed236 += 15;
         self notify(#"hash_2499fc5cec93bec8");
     }
 }
@@ -1077,7 +1077,7 @@ function private function_e1137e13(var_c34665fc) {
 function private function_4c8b4a87() {
     var_39633c28 = zombie_utility::get_current_zombie_count();
     if (var_39633c28 + level.zombie_total < 4) {
-        level.zombie_total = level.zombie_total + 5;
+        level.zombie_total += 5;
     }
 }
 

@@ -509,7 +509,7 @@ function function_1989cfaf(tacbundle, params, node) {
     }
     distsq = distance2dsquared(self.origin, node.origin);
     mindistsq = isdefined(tacbundle.var_1f5429aa) ? tacbundle.var_1f5429aa : 0;
-    mindistsq = mindistsq * mindistsq;
+    mindistsq *= mindistsq;
     if (distsq < mindistsq) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");
@@ -517,7 +517,7 @@ function function_1989cfaf(tacbundle, params, node) {
         return 0;
     }
     maxdistsq = isdefined(tacbundle.var_48aa05a1) ? tacbundle.var_48aa05a1 : 0;
-    maxdistsq = maxdistsq * maxdistsq;
+    maxdistsq *= maxdistsq;
     if (distsq > maxdistsq) {
         /#
             self bot::record_text("<unknown string>", (1, 0, 0), "<unknown string>");

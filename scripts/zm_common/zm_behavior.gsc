@@ -684,7 +684,7 @@ function zombieupdategoal() {
                             }
                             break;
                         }
-                        segmentlength = segmentlength + currentseglength;
+                        segmentlength += currentseglength;
                     }
                 }
             }
@@ -758,7 +758,7 @@ function zombieupdategoalcode() {
                         }
                         break;
                     }
-                    segmentlength = segmentlength + currentseglength;
+                    segmentlength += currentseglength;
                 }
             }
         }
@@ -1624,7 +1624,7 @@ function barricadeentermocompstart(entity, mocompanim, mocompanimblendouttime, m
         angles = getstartangles(zbarrier_origin, var_f4b27846, mocompanim);
     }
     if (isdefined(entity.mocomp_barricade_offset)) {
-        origin = origin + anglestoforward(angles) * entity.mocomp_barricade_offset;
+        origin += anglestoforward(angles) * entity.mocomp_barricade_offset;
     }
     entity forceteleport(origin, angles, 1);
     entity animmode("noclip", 0);
@@ -1672,7 +1672,7 @@ function barricadeentermocompnozstart(entity, mocompanim, mocompanimblendouttime
         angles = getstartangles(zbarrier_origin, var_f4b27846, mocompanim);
     }
     if (isdefined(entity.mocomp_barricade_offset)) {
-        origin = origin + anglestoforward(angles) * entity.mocomp_barricade_offset;
+        origin += anglestoforward(angles) * entity.mocomp_barricade_offset;
     }
     entity forceteleport(origin, angles, 1);
     entity animmode("noclip", 0);

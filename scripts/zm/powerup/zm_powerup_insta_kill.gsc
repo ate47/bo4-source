@@ -79,7 +79,7 @@ function insta_kill_powerup(drop_item, player) {
     zombie_utility::function_c7ab6cbc(#"zombie_insta_kill", team, 1);
     n_wait_time = 30;
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
-        n_wait_time = n_wait_time + 30;
+        n_wait_time += 30;
     }
     wait(n_wait_time);
     zombie_utility::function_c7ab6cbc(#"zombie_insta_kill", team, 0);

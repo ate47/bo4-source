@@ -333,7 +333,7 @@ function bb_getparametrictraversaltype() {
             if (sessionmodeiswarzonegame()) {
                 entity.traveseheightoverride = function_b882ba71(entity, entity.traversestartnode, entity.traverseendnode, entity.traversemantlenode);
                 if (traversaltype == "jump_down_mantle_traversal") {
-                    entity.traveseheightoverride = entity.traveseheightoverride * -1;
+                    entity.traveseheightoverride *= -1;
                 }
             }
             return traversaltype;
@@ -599,7 +599,7 @@ function actorgetpredictedyawtoenemy(entity, lookaheadtime) {
     }
     selfpredictedpos = entity.origin;
     moveangle = entity.angles[1] + entity getmotionangle();
-    selfpredictedpos = selfpredictedpos + (cos(moveangle), sin(moveangle), 0) * 200 * lookaheadtime;
+    selfpredictedpos += (cos(moveangle), sin(moveangle), 0) * 200 * lookaheadtime;
     yaw = vectortoangles(entity lastknownpos(entity.enemy) - selfpredictedpos)[1] - entity.angles[1];
     yaw = absangleclamp360(yaw);
     entity.predictedyawtoenemy = yaw;
@@ -698,7 +698,7 @@ function bb_actorgetreactyaw() {
 function getangleusingdirection(direction) {
     directionyaw = vectortoangles(direction)[1];
     yawdiff = directionyaw - self.angles[1];
-    yawdiff = yawdiff * 0.00277778;
+    yawdiff *= 0.00277778;
     flooredyawdiff = floor(yawdiff + 0.5);
     turnangle = (yawdiff - flooredyawdiff) * 360;
     return absangleclamp360(turnangle);
@@ -1064,13 +1064,13 @@ function updatefrustrationlevel(entity) {
             if (!hasseenenemy) {
                 entity.ai.frustrationlevel++;
             } else if (!hasattackedenemyrecently) {
-                entity.ai.frustrationlevel = entity.ai.frustrationlevel + 2;
+                entity.ai.frustrationlevel += 2;
             }
             entity.ai.frustrationlevel = clampfrustration(entity.ai.frustrationlevel);
             return true;
         }
         if (hasattackedenemyrecently) {
-            entity.ai.frustrationlevel = entity.ai.frustrationlevel - 2;
+            entity.ai.frustrationlevel -= 2;
             entity.ai.frustrationlevel = clampfrustration(entity.ai.frustrationlevel);
             return true;
         } else if (hasseenenemy) {
@@ -1885,7 +1885,7 @@ function meleereleasemutex(behaviortreeentity) {
     if (isdefined(behaviortreeentity.meleeenemy)) {
         if (isplayer(behaviortreeentity.meleeenemy)) {
             if (isdefined(behaviortreeentity.meleeenemy.meleeattackers)) {
-                behaviortreeentity.meleeenemy.meleeattackers = behaviortreeentity.meleeenemy.meleeattackers - 1;
+                behaviortreeentity.meleeenemy.meleeattackers -= 1;
                 if (behaviortreeentity.meleeenemy.meleeattackers <= 0) {
                     behaviortreeentity.meleeenemy.meleeattackers = undefined;
                 }

@@ -1531,9 +1531,9 @@ function private function_395ef176() {
             return;
         }
         if (self.team == #"allies") {
-            var_e6caaa48 = var_e6caaa48 - 1;
+            var_e6caaa48 -= 1;
         } else if (self.team == #"axis") {
-            var_5724b72f = var_5724b72f - 1;
+            var_5724b72f -= 1;
         }
         if (var_e6caaa48 > 0 && var_5724b72f > 0) {
             foreach (player in level.activeplayers) {
@@ -1860,10 +1860,10 @@ function private start_explosive_ragdoll(dir, weapon) {
         }
     } else {
         if (math::cointoss()) {
-            x = x * -1;
+            x *= -1;
         }
         if (math::cointoss()) {
-            y = y * -1;
+            y *= -1;
         }
     }
     self startragdoll();

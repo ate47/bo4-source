@@ -141,7 +141,7 @@ function function_c2e32573(str_notify, a_str_vo, var_4bb99e1c = 1, var_763c80f1,
 function function_d24a0f09(str_vo, var_e688ce8f = 0) {
     n_duration = soundgetplaybacktime(str_vo);
     n_duration = float(n_duration) / 1000;
-    n_duration = n_duration - var_e688ce8f;
+    n_duration -= var_e688ce8f;
     if (n_duration > 0) {
         wait(n_duration);
     }

@@ -202,7 +202,7 @@ function unhide_quickrevive() {
     if (isdefined(level.quick_revive_linked_ent)) {
         org = level.quick_revive_linked_ent.origin;
         if (isdefined(level.quick_revive_linked_ent_offset)) {
-            org = org + level.quick_revive_linked_ent_offset;
+            org += level.quick_revive_linked_ent_offset;
         }
     }
     if (!(isdefined(level.quick_revive_linked_ent_moves) && level.quick_revive_linked_ent_moves) && level.quick_revive_machine.origin != org) {
@@ -214,7 +214,7 @@ function unhide_quickrevive() {
         if (isdefined(level.quick_revive_linked_ent)) {
             org = level.quick_revive_linked_ent.origin;
             if (isdefined(level.quick_revive_linked_ent_offset)) {
-                org = org + level.quick_revive_linked_ent_offset;
+                org += level.quick_revive_linked_ent_offset;
             }
             level.quick_revive_machine.origin = org;
         }

@@ -919,11 +919,11 @@ function function_66365668(a_code) {
 // Size: 0xb8
 function function_da24090c(n_code) {
     a_code[0] = floor(n_code / 1000);
-    n_code = n_code % 1000;
+    n_code %= 1000;
     a_code[1] = floor(n_code / 100);
-    n_code = n_code % 100;
+    n_code %= 100;
     a_code[2] = floor(n_code / 10);
-    n_code = n_code % 10;
+    n_code %= 10;
     a_code[3] = n_code;
     return a_code;
 }

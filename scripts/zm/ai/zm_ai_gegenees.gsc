@@ -256,20 +256,20 @@ function function_7fe60e9e(entity) {
     var_ad804014 = 5;
     if (distancesquared(targetpos, entity.origin) > 250 * 250) {
         velocity = entity.favoriteenemy getvelocity();
-        targetpos = targetpos + velocity * 0.5;
+        targetpos += velocity * 0.5;
         var_a76a363d = math::randomsign() * randomint(var_ad804014);
         var_9b241db1 = math::randomsign() * randomint(var_ad804014);
-        targetpos = targetpos + (var_a76a363d, var_9b241db1, 0);
+        targetpos += (var_a76a363d, var_9b241db1, 0);
         speed = length(velocity);
         if (speed > 0) {
             var_7ee6937e = vectornormalize((targetpos[0], targetpos[1], 0) - (launchpos[0], launchpos[1], 0));
             dot = vectordot(-1 * var_7ee6937e, velocity / speed);
             if (dot >= 0.8) {
-                targetpos = targetpos + var_7ee6937e * dot * speed * 0.5;
+                targetpos += var_7ee6937e * dot * speed * 0.5;
             }
         }
     }
-    targetpos = targetpos + (0, 0, 36);
+    targetpos += (0, 0, 36);
     var_872c6826 = vectortoangles(targetpos - launchpos);
     angles = function_cc68801f(launchpos, targetpos, 1110, getdvarfloat(#"bg_lowgravity", 0));
     if (isdefined(angles) && angles[#"lowangle"] > 0) {
@@ -968,9 +968,9 @@ function private function_ca5688e3(inflictor, attacker, damage, idflags, meansof
     if (!isdefined(self.shielddamage)) {
         self.shielddamage = adjusted_damage;
     } else {
-        self.shielddamage = self.shielddamage + adjusted_damage;
+        self.shielddamage += adjusted_damage;
     }
-    self.var_a9716e54 = self.var_a9716e54 + adjusted_damage;
+    self.var_a9716e54 += adjusted_damage;
     if (self.var_a9716e54 >= 500) {
         self.var_a9716e54 = 0;
         self function_9a05389e();

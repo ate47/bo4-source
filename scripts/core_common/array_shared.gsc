@@ -494,7 +494,7 @@ function reverse(array) {
 function slice(&array, var_12692bcf = 0, var_d88b3814 = 2147483647, n_increment = 1) {
     var_d88b3814 = min(var_d88b3814, array.size - 1);
     a_ret = [];
-    for (i = var_12692bcf; i <= var_d88b3814; i = i + n_increment) {
+    for (i = var_12692bcf; i <= var_d88b3814; i += n_increment) {
         a_ret[a_ret.size] = array[i];
     }
     return a_ret;

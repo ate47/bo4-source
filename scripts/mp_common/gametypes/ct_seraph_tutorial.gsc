@@ -179,7 +179,7 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
             switch (level.var_ad7c0539) {
             case 10:
                 if (self.team == #"axis" && isdefined(e_inflictor) && isbot(e_inflictor)) {
-                    n_damage = n_damage * 4;
+                    n_damage *= 4;
                 }
                 break;
             }

@@ -396,7 +396,7 @@ function getbestweightedspawnpoint(spawnpoints) {
                 bestspawnpoint.spawndata[bestspawnpoint.spawndata.size] = "<unknown string>" + penalty;
             }
         #/
-        bestspawnpoint.weight = bestspawnpoint.weight - penalty;
+        bestspawnpoint.weight -= penalty;
         bestspawnpoint.lastsighttracetime = gettime();
     }
 }
@@ -465,14 +465,14 @@ function storespawndata(spawnpoints, useweights, bestspawnpoint) {
         for (i = 0; i < spawnpoints.size; i++) {
             str = vectostr(spawnpoints[i].origin) + "<unknown string>";
             if (spawnpoints[i] == bestspawnpoint) {
-                str = str + "<unknown string>";
+                str += "<unknown string>";
             } else {
-                str = str + "<unknown string>";
+                str += "<unknown string>";
             }
             if (!useweights) {
-                str = str + "<unknown string>";
+                str += "<unknown string>";
             } else {
-                str = str + spawnpoints[i].weight + "<unknown string>";
+                str += spawnpoints[i].weight + "<unknown string>";
             }
             if (!isdefined(spawnpoints[i].spawndata)) {
                 spawnpoints[i].spawndata = [];
@@ -480,13 +480,13 @@ function storespawndata(spawnpoints, useweights, bestspawnpoint) {
             if (!isdefined(spawnpoints[i].sightchecks)) {
                 spawnpoints[i].sightchecks = [];
             }
-            str = str + spawnpoints[i].spawndata.size + "<unknown string>";
+            str += spawnpoints[i].spawndata.size + "<unknown string>";
             for (j = 0; j < spawnpoints[i].spawndata.size; j++) {
-                str = str + spawnpoints[i].spawndata[j] + "<unknown string>";
+                str += spawnpoints[i].spawndata[j] + "<unknown string>";
             }
-            str = str + spawnpoints[i].sightchecks.size + "<unknown string>";
+            str += spawnpoints[i].sightchecks.size + "<unknown string>";
             for (j = 0; j < spawnpoints[i].sightchecks.size; j++) {
-                str = str + spawnpoints[i].sightchecks[j].penalty + "<unknown string>" + vectostr(spawnpoints[i].origin) + "<unknown string>";
+                str += spawnpoints[i].sightchecks[j].penalty + "<unknown string>" + vectostr(spawnpoints[i].origin) + "<unknown string>";
             }
             fprintfields(file, str);
         }
@@ -500,11 +500,11 @@ function storespawndata(spawnpoints, useweights, bestspawnpoint) {
                 continue;
             }
             numallies++;
-            str = str + vectostr(obj.allies[i].origin) + "<unknown string>";
+            str += vectostr(obj.allies[i].origin) + "<unknown string>";
         }
         for (i = 0; i < obj.enemies.size; i++) {
             numenemies++;
-            str = str + vectostr(obj.enemies[i].origin) + "<unknown string>";
+            str += vectostr(obj.enemies[i].origin) + "<unknown string>";
         }
         str = numallies + "<unknown string>" + numenemies + "<unknown string>" + str;
         fprintfields(file, str);
@@ -530,7 +530,7 @@ function storespawndata(spawnpoints, useweights, bestspawnpoint) {
         }
         str = otherdata.size + "<unknown string>";
         for (i = 0; i < otherdata.size; i++) {
-            str = str + vectostr(otherdata[i].origin) + "<unknown string>" + otherdata[i].text + "<unknown string>";
+            str += vectostr(otherdata[i].origin) + "<unknown string>" + otherdata[i].text + "<unknown string>";
         }
         fprintfields(file, str);
         closefile(file);
@@ -625,7 +625,7 @@ function readspawndata(desiredid, relativepos) {
                 data.maxweight = 0;
             }
             if (data.minweight == data.maxweight) {
-                data.minweight = data.minweight - 1;
+                data.minweight -= 1;
             }
             if (freadln(file) <= 0) {
                 break;
@@ -724,18 +724,18 @@ function drawspawndata() {
                 orig = sp.sighttracepoint;
                 if (sp.winner) {
                     print3d(orig, level.curspawndata.playername + "<unknown string>", (0.5, 0.5, 1), 1, 2);
-                    orig = orig + textoffset;
+                    orig += textoffset;
                 }
                 amnt = (sp.weight - level.curspawndata.minweight) / (level.curspawndata.maxweight - level.curspawndata.minweight);
                 print3d(orig, "<unknown string>" + sp.weight, (1 - amnt, amnt, 0.5));
-                orig = orig + textoffset;
+                orig += textoffset;
                 for (j = 0; j < sp.data.size; j++) {
                     print3d(orig, sp.data[j], (1, 1, 1));
-                    orig = orig + textoffset;
+                    orig += textoffset;
                 }
                 for (j = 0; j < sp.sightchecks.size; j++) {
                     print3d(orig, "<unknown string>" + sp.sightchecks[j].penalty, (1, 0.5, 0.5));
-                    orig = orig + textoffset;
+                    orig += textoffset;
                 }
             }
             waitframe(1);
@@ -990,10 +990,10 @@ function getspawnpoint_dm(spawnpoints) {
             for (j = 0; j < aliveplayers.size; j++) {
                 dist = distance(spawnpoints[i].origin, aliveplayers[j].origin);
                 if (dist < baddist) {
-                    nearbybadamount = nearbybadamount + (baddist - dist) / baddist;
+                    nearbybadamount += (baddist - dist) / baddist;
                 }
                 distfromideal = abs(dist - idealdist);
-                totaldistfromideal = totaldistfromideal + distfromideal;
+                totaldistfromideal += distfromideal;
             }
             avgdistfromideal = totaldistfromideal / aliveplayers.size;
             welldistancedamount = (idealdist - avgdistfromideal) / idealdist;
@@ -1040,16 +1040,16 @@ function getspawnpoint_turned(spawnpoints, idealdist, baddist, idealdistteam, ba
                 distfromideal = 0;
                 if (aliveplayers[j].team == myteam) {
                     if (dist < baddistteam) {
-                        nearbybadamount = nearbybadamount + (baddistteam - dist) / baddistteam;
+                        nearbybadamount += (baddistteam - dist) / baddistteam;
                     }
                     distfromideal = abs(dist - idealdistteam);
                 } else {
                     if (dist < baddist) {
-                        nearbybadamount = nearbybadamount + (baddist - dist) / baddist;
+                        nearbybadamount += (baddist - dist) / baddist;
                     }
                     distfromideal = abs(dist - idealdist);
                 }
-                totaldistfromideal = totaldistfromideal + distfromideal;
+                totaldistfromideal += distfromideal;
             }
             avgdistfromideal = totaldistfromideal / aliveplayers.size;
             welldistancedamount = (idealdist - avgdistfromideal) / idealdist;
@@ -1444,11 +1444,11 @@ function spawnweightdebug(spawnpoints) {
                 }
                 orig = spawnpoints[i].origin + (0, 0, 80);
                 print3d(orig, int(spawnpoints[i].weight), (1, amnt, 0.5));
-                orig = orig + textoffset;
+                orig += textoffset;
                 if (isdefined(spawnpoints[i].spawndata)) {
                     for (j = 0; j < spawnpoints[i].spawndata.size; j++) {
                         print3d(orig, spawnpoints[i].spawndata[j], (0.5, 0.5, 0.5));
-                        orig = orig + textoffset;
+                        orig += textoffset;
                     }
                 }
                 if (isdefined(spawnpoints[i].sightchecks)) {
@@ -1457,7 +1457,7 @@ function spawnweightdebug(spawnpoints) {
                             continue;
                         }
                         print3d(orig, "<unknown string>" + spawnpoints[i].sightchecks[j].penalty, (0.5, 0.5, 0.5));
-                        orig = orig + textoffset;
+                        orig += textoffset;
                     }
                 }
             }
@@ -1618,7 +1618,7 @@ function getnonteamsum(skip_team, sums) {
         if (team == skip_team) {
             continue;
         }
-        value = value + sums[team];
+        value += sums[team];
     }
     return value;
 }
@@ -1852,7 +1852,7 @@ function avoidvisibleenemies(spawnpoints, teambased) {
             if (mindist < nearbyenemyouterrange * 2) {
                 penalty = nearbyenemyminorpenalty * (1 - mindist / nearbyenemyouterrange * 2);
                 if (mindist < nearbyenemyouterrange) {
-                    penalty = penalty + nearbyenemypenalty * (1 - mindist / nearbyenemyouterrange);
+                    penalty += nearbyenemypenalty * (1 - mindist / nearbyenemyouterrange);
                 }
                 if (penalty > 0) {
                     spawnpoints[i].weight = spawnpoints[i].weight - penalty;
@@ -1894,7 +1894,7 @@ function avoidspawnreuse(spawnpoints, teambased) {
             distsq = distancesquared(spawnpoint.lastspawnedplayer.origin, spawnpoint.origin);
             if (distsq < maxdistsq) {
                 worsen = 5000 * (1 - distsq / maxdistsq) * (1 - timepassed / maxtime);
-                spawnpoint.weight = spawnpoint.weight - worsen;
+                spawnpoint.weight -= worsen;
                 /#
                     if (level.storespawndata || level.debugspawning) {
                         spawnpoint.spawndata[spawnpoint.spawndata.size] = "<unknown string>" + worsen;

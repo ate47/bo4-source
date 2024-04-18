@@ -35,7 +35,7 @@ function __init__() {
 function function_b79dc4e7(player) {
     teammask = getteammask(player.team);
     for (teamindex = 0; teammask > 1; teamindex++) {
-        teammask = teammask >> 1;
+        teammask >>= 1;
     }
     if (teamindex % 2) {
         return "blops_taacom";

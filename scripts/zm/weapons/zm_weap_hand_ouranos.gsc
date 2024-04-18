@@ -358,7 +358,7 @@ function function_1fc2378f(e_projectile, ai_zombie, n_damage) {
                 v_target = function_30239376(ai_zombie);
                 n_dist = distance(e_projectile.origin, ai_zombie.origin);
                 if (n_dist > var_7fd007f9) {
-                    var_4d8b7233 = var_4d8b7233 - 10;
+                    var_4d8b7233 -= 10;
                     if (e_projectile.n_index === 1) {
                         v_horz = v_target + anglestoright(ai_zombie.angles) * 100;
                     } else if (e_projectile.n_index === 2) {
@@ -470,7 +470,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, v_to_t
             if (isdefined(b_charged)) {
                 self thread function_7a1456c5(e_target);
             } else {
-                n_damage = n_damage * 0.75;
+                n_damage *= 0.75;
             }
             break;
         case #"miniboss":

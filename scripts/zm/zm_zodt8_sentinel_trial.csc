@@ -274,7 +274,7 @@ function function_1697bc59(localclientnum, oldval, newval, bnewent, binitialsnap
             waitframe(1);
         }
         s_loc = struct::get(#"hash_1f307b5cf6d83aff");
-        for (n_z_offset = 400; level flag::get(#"hash_13dc8f128d50bada"); n_z_offset = n_z_offset * -1) {
+        for (n_z_offset = 400; level flag::get(#"hash_13dc8f128d50bada"); n_z_offset *= -1) {
             physicsexplosionsphere(localclientnum, s_loc.origin + (0, 0, n_z_offset), 3200, 32, 0.1, undefined, undefined, 1, 1, 1);
             wait(randomintrange(3, 6));
         }
@@ -322,7 +322,7 @@ function function_c6880d07(localclientnum, oldval, newval, bnewent, binitialsnap
         while (n_val <= 0.33) {
             self function_116b95e5(#"pstfx_frost_loop", "Reveal Threshold", n_val);
             wait(0.25);
-            n_val = n_val + 0.01;
+            n_val += 0.01;
         }
         return;
     }
@@ -380,7 +380,7 @@ function function_bcb676b9() {
         s_result = level waittilltimeout(20, #"hash_5010527c7518e767");
         if (isalive(self) && s_result._notify == #"hash_5010527c7518e767") {
             self function_116b95e5(#"pstfx_frost_loop", "Reveal Threshold", n_val);
-            n_val = n_val + 0.1;
+            n_val += 0.1;
             if (n_val > 1) {
                 break;
             }
@@ -389,10 +389,10 @@ function function_bcb676b9() {
         break;
     }
     waitframe(1);
-    n_val = n_val - 0.1;
+    n_val -= 0.1;
     while (n_val > 0) {
         self function_116b95e5(#"pstfx_frost_loop", "Reveal Threshold", n_val);
-        n_val = n_val - 0.1;
+        n_val -= 0.1;
         wait(3);
     }
     self postfx::stoppostfxbundle(#"pstfx_frost_loop");
@@ -707,14 +707,14 @@ function function_14dcccc6(localclientnum, oldval, newval, bnewent, binitialsnap
         n_pulse_increment = (1 - 0.4) / n_cycle_time / 0.1;
         while (n_pulse < 1 && isdefined(self)) {
             self mapshaderconstant(0, 0, "scriptVector0", 1, n_pulse, 0, 0);
-            n_pulse = n_pulse + n_pulse_increment;
+            n_pulse += n_pulse_increment;
             wait(0.1);
         }
         n_cycle_time = randomfloatrange(2, 8);
         n_pulse_increment = (1 - 0.4) / n_cycle_time / 0.1;
         while (0.4 < n_pulse && isdefined(self)) {
             self mapshaderconstant(0, 0, "scriptVector0", 1, n_pulse, 0, 0);
-            n_pulse = n_pulse - n_pulse_increment;
+            n_pulse -= n_pulse_increment;
             wait(0.1);
         }
     }

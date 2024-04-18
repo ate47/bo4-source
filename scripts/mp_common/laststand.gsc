@@ -157,7 +157,7 @@ function function_4e612708() {
 function on_player_damage(params) {
     if (self is_reviving_any()) {
         if (isdefined(self.reviving_player) && isdefined(self.reviving_player.var_d75a6ff5)) {
-            self.reviving_player.var_d75a6ff5.var_d733f8d7 = self.reviving_player.var_d75a6ff5.var_d733f8d7 + params.idamage;
+            self.reviving_player.var_d75a6ff5.var_d733f8d7 += params.idamage;
             if (self.health <= params.idamage) {
                 self.reviving_player.var_d75a6ff5.var_bb36e277 = 1;
             }
@@ -354,7 +354,7 @@ function function_ce726eb4() {
                 angles = host getplayerangles();
                 dir = anglestoforward(angles);
                 eye = host geteye();
-                dir = dir * 500;
+                dir *= 500;
                 trace = bullettrace(eye, eye + dir, 1, host);
                 target = trace[#"entity"];
                 if (!isdefined(target) || !isplayer(target)) {
@@ -587,7 +587,7 @@ function laststand_bleedout_damage() {
         if (waitresult.smeansofdeath == "MOD_MELEE") {
             self.var_969fabf4 = 0;
         } else {
-            self.var_969fabf4 = self.var_969fabf4 - waitresult.idamage;
+            self.var_969fabf4 -= waitresult.idamage;
         }
         if (self.var_969fabf4 <= 0) {
             self.bleedout_time = 0;
@@ -597,7 +597,7 @@ function laststand_bleedout_damage() {
             self notify(#"update_bleedout");
         }
         if (isdefined(self.var_d75a6ff5)) {
-            self.var_d75a6ff5.damage = self.var_d75a6ff5.damage + int(waitresult.idamage);
+            self.var_d75a6ff5.damage += int(waitresult.idamage);
         }
         self function_a6872ca5(waitresult.idamage, waitresult.eattacker, waitresult.idflags, waitresult.smeansofdeath, waitresult.weapon, waitresult.vpoint, waitresult.shitloc, waitresult.vdamageorigin, waitresult.boneindex, waitresult.vsurfacenormal, self.var_969fabf4 <= 0);
     }
@@ -620,7 +620,7 @@ function laststand_bleedout(bleedouttime, var_969fabf4) {
             time = gettime();
             if (time >= var_9da219f5) {
                 self.var_2d19ce3c = self.bleedout_time / bleedouttime;
-                self.bleedout_time = self.bleedout_time - 1;
+                self.bleedout_time -= 1;
                 self clientfield::set_player_uimodel("hudItems.laststand.progress", self.var_2d19ce3c);
                 var_9da219f5 = time + 1000;
             }
@@ -1136,7 +1136,7 @@ function revive_do_revive(playerbeingrevived) {
             break;
         }
         self clientfield::set_player_uimodel("hudItems.laststand.reviveProgress", playerbeingrevived.reviveprogress);
-        timer = timer + float(function_60d95f53()) / 1000;
+        timer += float(function_60d95f53()) / 1000;
         waitframe(1);
     }
     self clientfield::set_player_uimodel("hudItems.laststand.reviveProgress", 0);

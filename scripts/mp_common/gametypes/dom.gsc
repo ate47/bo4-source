@@ -996,13 +996,13 @@ function updatedomscores() {
             level.clampscorelimit = 0;
         }
         numflags = getteamflagcount(#"allies");
-        numownedflags = numownedflags + numflags;
+        numownedflags += numflags;
         if (numflags) {
             scoring_teams[scoring_teams.size] = #"allies";
             globallogic_score::giveteamscoreforobjective_delaypostprocessing(#"allies", numflags);
         }
         numflags = getteamflagcount(#"axis");
-        numownedflags = numownedflags + numflags;
+        numownedflags += numflags;
         if (numflags) {
             scoring_teams[scoring_teams.size] = #"axis";
             globallogic_score::giveteamscoreforobjective_delaypostprocessing(#"axis", numflags);
@@ -1102,7 +1102,7 @@ function onscoreclosemusic() {
     if (isdefined(level.roundscorelimit)) {
         halfwayscore = level.roundscorelimit * 0.5;
         if (game.roundsplayed == 1) {
-            halfwayscore = halfwayscore + level.roundscorelimit;
+            halfwayscore += level.roundscorelimit;
         }
     }
     if ((axisscore >= halfwayscore || alliedscore >= halfwayscore) && !level.sndhalfway) {
@@ -1816,7 +1816,7 @@ function function_1609a882(var_c1e98979) {
         domflag = level.domflags[var_268d0315];
         var_9669dd4c = 0;
         for (var_be3d50b0 = 0; var_be3d50b0 < domflag.var_249009fd.size; var_be3d50b0++) {
-            var_9669dd4c = var_9669dd4c + domflag.var_249009fd[var_be3d50b0];
+            var_9669dd4c += domflag.var_249009fd[var_be3d50b0];
         }
         if (domflag.var_249009fd.size != 0) {
             averagetime = var_9669dd4c / domflag.var_249009fd.size;

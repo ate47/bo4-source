@@ -133,7 +133,7 @@ function state_combat_update(params) {
                     point._scoredebug[#"disttoorigin"].score = mapfloat(0, 200, 0, 100, point.disttoorigin2d);
                     point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
                 #/
-                point.score = point.score + mapfloat(0, 200, 0, 100, point.disttoorigin2d);
+                point.score += mapfloat(0, 200, 0, 100, point.disttoorigin2d);
                 if (point.inclaimedlocation) {
                     /#
                         if (!isdefined(point._scoredebug)) {
@@ -145,7 +145,7 @@ function state_combat_update(params) {
                         point._scoredebug[#"inclaimedlocation"].score = -500;
                         point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
                     #/
-                    point.score = point.score + -500;
+                    point.score += -500;
                 }
                 /#
                     if (!isdefined(point._scoredebug)) {
@@ -157,7 +157,7 @@ function state_combat_update(params) {
                     point._scoredebug[#"random"].score = randomfloatrange(0, 50);
                     point._scoredebug[#"random"].scorename = "<unknown string>";
                 #/
-                point.score = point.score + randomfloatrange(0, 50);
+                point.score += randomfloatrange(0, 50);
                 if (isdefined(self.prevmovedir)) {
                     movedir = vectornormalize(point.origin - self.origin);
                     if (vectordot(movedir, self.prevmovedir) > 0.64) {
@@ -171,7 +171,7 @@ function state_combat_update(params) {
                             point._scoredebug[#"currentmovedir"].score = randomfloatrange(50, 150);
                             point._scoredebug[#"currentmovedir"].scorename = "<unknown string>";
                         #/
-                        point.score = point.score + randomfloatrange(50, 150);
+                        point.score += randomfloatrange(50, 150);
                     }
                 }
                 if (point.score > best_score) {
@@ -258,7 +258,7 @@ function hunt_enemy() {
                     point._scoredebug[#"disttoorigin"].score = mapfloat(0, 200, 0, -200, distance(point.origin, queryresult.origin));
                     point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
                 #/
-                point.score = point.score + mapfloat(0, 200, 0, -200, distance(point.origin, queryresult.origin));
+                point.score += mapfloat(0, 200, 0, -200, distance(point.origin, queryresult.origin));
                 /#
                     if (!isdefined(point._scoredebug)) {
                         point._scoredebug = [];
@@ -269,7 +269,7 @@ function hunt_enemy() {
                     point._scoredebug[#"heighttoorigin"].score = mapfloat(50, 200, 0, -200, abs(point.origin[2] - queryresult.origin[2]));
                     point._scoredebug[#"heighttoorigin"].scorename = "<unknown string>";
                 #/
-                point.score = point.score + mapfloat(50, 200, 0, -200, abs(point.origin[2] - queryresult.origin[2]));
+                point.score += mapfloat(50, 200, 0, -200, abs(point.origin[2] - queryresult.origin[2]));
                 if (point.inclaimedlocation === 1) {
                     /#
                         if (!isdefined(point._scoredebug)) {
@@ -281,7 +281,7 @@ function hunt_enemy() {
                         point._scoredebug[#"inclaimedlocation"].score = -500;
                         point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
                     #/
-                    point.score = point.score + -500;
+                    point.score += -500;
                 }
                 if (point.score > best_score) {
                     best_score = point.score;
@@ -360,7 +360,7 @@ function jump_detonate() {
     self launchvehicle((0, 0, 1) * self.jumpforce, (0, 0, 0), 1);
     self.is_jumping = 1;
     wait(0.4);
-    for (time_to_land = 0.6; time_to_land > 0; time_to_land = time_to_land - 0.05) {
+    for (time_to_land = 0.6; time_to_land > 0; time_to_land -= 0.05) {
         if (check_detonation_dist(self.origin, self.enemy)) {
             self detonate();
         }
@@ -459,7 +459,7 @@ function function_ded83def(lastenemy) {
         if (disttoenemysquared < lastdisttoenemysquared) {
             lastdisttoenemysquared = disttoenemysquared;
         }
-        lastdisttoenemysquared = lastdisttoenemysquared + 10 * 10;
+        lastdisttoenemysquared += 10 * 10;
     }
 }
 
@@ -577,14 +577,14 @@ function function_dcecac3c() {
         enemy_vel_offset = enemy getvelocity() * 0.5;
         enemy_look_dir_offset = anglestoforward(enemy.angles);
         if (distance2dsquared(self.origin, enemy.origin) > 500 * 500) {
-            enemy_look_dir_offset = enemy_look_dir_offset * 110;
+            enemy_look_dir_offset *= 110;
         } else {
-            enemy_look_dir_offset = enemy_look_dir_offset * 35;
+            enemy_look_dir_offset *= 35;
         }
         offset = enemy_vel_offset + enemy_look_dir_offset;
         offset = (offset[0], offset[1], 0);
         if (tracepassedonnavmesh(target_pos_onnavmesh, target_pos + offset)) {
-            target_pos = target_pos + offset;
+            target_pos += offset;
         } else {
             target_pos = target_pos_onnavmesh;
         }

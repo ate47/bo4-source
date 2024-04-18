@@ -99,7 +99,7 @@ function giveplayermomentumnotification(score, label, descvalue, countstowardram
     if (score != 0) {
         self luinotifyevent(#"score_event", 4, label, score, rampagebonus, combat_efficiency_factor);
     }
-    score = score + rampagebonus;
+    score += rampagebonus;
     if (score > 0 && self hasperk(#"specialty_earnmoremomentum")) {
         score = roundtonearestfive(int(score * getdvarfloat(#"perk_killstreakmomentummultiplier", 0) + 0.5));
     }

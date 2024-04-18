@@ -531,7 +531,7 @@ function check_point_in_enabled_zone(origin, zone_is_active, player_zones, playe
 function round_up_to_ten(score) {
     new_score = score - score % 10;
     if (new_score < score) {
-        new_score = new_score + 10;
+        new_score += 10;
     }
     return new_score;
 }
@@ -544,7 +544,7 @@ function round_up_score(score, value) {
     score = int(score);
     new_score = score - score % value;
     if (new_score < score) {
-        new_score = new_score + value;
+        new_score += value;
     }
     return new_score;
 }
@@ -554,7 +554,7 @@ function round_up_score(score, value) {
 // Checksum 0xd738ce77, Offset: 0x1df0
 // Size: 0x3a
 function halve_score(n_score) {
-    n_score = n_score / 2;
+    n_score /= 2;
     n_score = round_up_score(n_score, 10);
     return n_score;
 }
@@ -723,7 +723,7 @@ function generated_radius_attract_positions(forward, offset, num_positions, attr
     self endon(#"death");
     failed = 0;
     degs_per_pos = 360 / num_positions;
-    for (i = offset; i < 360 + offset; i = i + degs_per_pos) {
+    for (i = offset; i < 360 + offset; i += degs_per_pos) {
         altforward = forward * attract_radius;
         rotated_forward = (cos(i) * altforward[0] - sin(i) * altforward[1], sin(i) * altforward[0] + cos(i) * altforward[1], altforward[2]);
         if (isdefined(level.poi_positioning_func)) {
@@ -846,7 +846,7 @@ function get_zombie_point_of_interest(origin, poi_array) {
             continue;
         }
         dist = distancesquared(origin, ent_array[i].origin);
-        dist = dist - ent_array[i].added_poi_value;
+        dist -= ent_array[i].added_poi_value;
         if (isdefined(ent_array[i].poi_radius)) {
             curr_radius = ent_array[i].poi_radius;
         }
@@ -1549,7 +1549,7 @@ function get_number_of_valid_players() {
     num_player_valid = 0;
     for (i = 0; i < players.size; i++) {
         if (is_player_valid(players[i])) {
-            num_player_valid = num_player_valid + 1;
+            num_player_valid += 1;
         }
     }
     return num_player_valid;
@@ -2336,7 +2336,7 @@ function float_print3d(msg, time) {
         time = gettime() + time * 1000;
         offset = (0, 0, 72);
         while (gettime() < time) {
-            offset = offset + (0, 0, 2);
+            offset += (0, 0, 2);
             print3d(self.origin + offset, msg, (1, 1, 1));
             waitframe(1);
         }
@@ -4787,9 +4787,9 @@ function function_9f7fd525(var_c61df77f = "zombie_location", a_str_zones, var_a6
 function function_7618c8ef(var_6e4c63cc = 0.0667) {
     n_damage_multiplier = 1;
     if (isdefined(self.ignore_health_regen_delay) && self.ignore_health_regen_delay) {
-        n_damage_multiplier = n_damage_multiplier + 1.25;
+        n_damage_multiplier += 1.25;
         if (self hasperk(#"specialty_quickrevive")) {
-            n_damage_multiplier = n_damage_multiplier + 0.75;
+            n_damage_multiplier += 0.75;
         }
     }
     var_16e6b8ea = int(self.maxhealth * var_6e4c63cc * n_damage_multiplier);

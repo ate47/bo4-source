@@ -490,7 +490,7 @@ function function_58439640() {
         #/
         var_e2d0a89 = vectornormalize(var_44a24b57 - self.origin);
         var_e2d0a89 = (var_e2d0a89[0], var_e2d0a89[1], 0);
-        var_e2d0a89 = var_e2d0a89 * (self.origin[2] - var_44a24b57[2]) * 0.8;
+        var_e2d0a89 *= (self.origin[2] - var_44a24b57[2]) * 0.8;
         return var_e2d0a89;
     }
 }
@@ -981,7 +981,7 @@ function function_6f3f4e18(s_loc) {
     util::wait_network_frame();
     s_loc.mdl_pickup clientfield::set("" + #"hash_62ee80337662b3cd", 1);
     playsoundatposition(#"zmb_sq_souls_release", s_loc.mdl_pickup.origin);
-    s_loc.origin = s_loc.origin + (0, 0, 8);
+    s_loc.origin += (0, 0, 8);
     e_holder = s_loc zm_unitrigger::function_fac87205(&function_fdc93dd2, 64);
     if (!level flag::get("flag_player_grabbed_nosferatu_material")) {
         e_holder thread zm_vo::function_a2bd5a0c(#"hash_31e2f2fbfc612834", 1);

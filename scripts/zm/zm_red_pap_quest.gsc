@@ -1552,7 +1552,7 @@ function function_bb898a46() {
     while (true) {
         s_notify = self waittill(#"damage");
         if (isplayer(s_notify.attacker)) {
-            level.var_10e70c82 = level.var_10e70c82 - s_notify.amount;
+            level.var_10e70c82 -= s_notify.amount;
             if (level.var_10e70c82 < 9500 || s_notify.weapon === getweapon("shotgun_trenchgun_t8_upgraded")) {
                 level flag::set(#"cage_dropped");
             }
@@ -2004,7 +2004,7 @@ function function_2db78acd() {
         var_ad728f = s_pos;
         level thread function_8ef5055b(s_pos);
         wait(n_time);
-        n_time = n_time - 0.5;
+        n_time -= 0.5;
         if (n_time <= 0) {
             n_time = 0.25;
         }
@@ -2503,7 +2503,7 @@ function function_7250e6b9(var_838aa9c4) {
 function function_df55fcc8(e_player) {
     self endon(#"death");
     can_use = zm_utility::can_use(e_player);
-    can_use = can_use & !e_player hasweapon(level.w_thunderstorm);
+    can_use &= !e_player hasweapon(level.w_thunderstorm);
     if (can_use) {
         str = self.stub.blueprint.var_391591d0;
         var_e7ed2264 = self.stub.blueprint.var_391591d0 + "_KEYBOARD";

@@ -75,7 +75,7 @@ function private function_b8f6e02f() {
 // Size: 0x454
 function private function_67189b6b(localclientnum, newval) {
     stashitem = (newval & 4) != 0;
-    newval = newval & -5;
+    newval &= -5;
     if (newval == 0) {
         if (isdefined(self) && isdefined(self.networkid) && isdefined(level.item_spawn_drops[self.networkid])) {
             arrayremoveindex(level.item_spawn_drops, self.networkid, 1);

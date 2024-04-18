@@ -445,7 +445,7 @@ function function_bf5c4d90() {
                 self.var_c467c182 = undefined;
                 return;
             }
-            level.var_284fdd1c = level.var_284fdd1c + 0.1;
+            level.var_284fdd1c += 0.1;
             level.var_cbcb0078 = 1;
             if (!(isdefined(self.var_e6828594) && self.var_e6828594)) {
                 level thread function_57e457f2();

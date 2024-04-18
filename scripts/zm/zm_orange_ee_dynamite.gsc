@@ -139,7 +139,7 @@ function function_e93a8e82(v_pos, v_angles) {
         v_drop = zm_hms_util::function_6d41bab8(v_pos, 360);
         if (isdefined(v_drop)) {
             v_ground = groundtrace(v_drop + (0, 0, 64) + (0, 0, 8), v_drop + (0, 0, 64) + (0, 0, -100000), 0, self)[#"position"];
-            v_ground = v_ground + (0, 0, 36);
+            v_ground += (0, 0, 36);
             w_part = level.var_1f17f9bb[0];
             if (isdefined(w_part)) {
                 e_dynamite = util::spawn_model(w_part.worldmodel, v_ground);

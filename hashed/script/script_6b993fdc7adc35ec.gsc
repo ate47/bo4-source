@@ -167,7 +167,7 @@ function function_d8cebda3(itementry) {
         var_b80d223d = array("doubleinventory", "double9mm", "double45cal", "double556mm", "double762mm", "double338cal", "double50cal", "double12gauge", "doublerocket", "doublesmallhealth", "doublemediumhealth", "doublelargehealth", "doublesquadhealth", "doublelethalgrenades", "doubletacticalgrenades", "doubleequipment", "doubleperk");
         for (index = 0; index < var_b80d223d.size; index++) {
             if (isdefined(itementry.(var_b80d223d[index])) && itementry.(var_b80d223d[index])) {
-                mutators = mutators | 1 << index;
+                mutators |= 1 << index;
             }
         }
     }
@@ -200,7 +200,7 @@ function function_2879cbe0(mutators, ammoweapon) {
     maxammo = ammoweapon.maxammo;
     var_6f2df38a = level.var_98c8f260[ammoweapon.ammoindex];
     if (isdefined(var_6f2df38a) && mutators & var_6f2df38a) {
-        maxammo = maxammo * 2;
+        maxammo *= 2;
     }
     return maxammo;
 }

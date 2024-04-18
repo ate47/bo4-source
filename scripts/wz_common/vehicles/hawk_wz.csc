@@ -314,7 +314,7 @@ function private function_9ace0fb6(localclientnum) {
         info.var_1fe906d8 = time;
         tagtime = int(bundle.tag_time * 1000);
         if (target hasperk(localclientnum, #"specialty_nokillstreakreticle")) {
-            tagtime = tagtime * bundle.var_59b7880b;
+            tagtime *= bundle.var_59b7880b;
         }
         if (info.var_1fe906d8 - info.first_visible > tagtime) {
             if (isdefined(self.owner) && target function_21c0fa55() && !info.var_aaf744fe && !function_f95544c4(self.owner.team, target.team)) {

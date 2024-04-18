@@ -161,7 +161,7 @@ function setcategorytypeweight(category, type, weight) {
         namekey = cratenamekeys[cratename];
         if (level.cratetypes[category][namekey].type == type) {
             count++;
-            totalweight = totalweight + level.cratetypes[category][namekey].weight;
+            totalweight += level.cratetypes[category][namekey].weight;
             if (!isdefined(startindex)) {
                 startindex = cratename;
             }
@@ -247,7 +247,7 @@ function getrandomcratetype(category, gambler_crate_name) {
             }
             cratetypestart = level.categorytypeweight[category][typekey].startindex;
             randomweightend = randomint(level.categorytypeweight[category][typekey].totalcrateweight) + 1;
-            randomweightend = randomweightend + level.cratetypes[category][cratenamekeys[cratetypestart]].previousweight;
+            randomweightend += level.cratetypes[category][cratenamekeys[cratetypestart]].previousweight;
             break;
         }
     }
@@ -1169,7 +1169,7 @@ function cratephysics() {
     forcepointx = randomfloatrange(0 - forcepointvariance, forcepointvariance);
     forcepointy = randomfloatrange(0 - forcepointvariance, forcepointvariance);
     forcepoint = (forcepointx, forcepointy, 0);
-    forcepoint = forcepoint + self.origin;
+    forcepoint += self.origin;
     initialvelocityz = randomfloatrange(vertvelocitymin, vertvelocitymax);
     initialvelocity = (0, 0, initialvelocityz);
     self physicslaunch(forcepoint, initialvelocity);
@@ -1553,7 +1553,7 @@ function loop_sound(alias, interval) {
     while (true) {
         playsoundatposition(alias, self.origin);
         wait(interval);
-        interval = interval / 1.2;
+        interval /= 1.2;
         if (interval < 0.08) {
             break;
         }
@@ -1962,8 +1962,8 @@ function useholdthinkloop(player) {
     self.owner endon(#"crate_use_interrupt");
     timedout = 0;
     while (self continueholdthinkloop(player)) {
-        timedout = timedout + 0.05;
-        self.curprogress = self.curprogress + level.var_9fee970c * self.userate;
+        timedout += 0.05;
+        self.curprogress += level.var_9fee970c * self.userate;
         self.userate = 1;
         if (self.curprogress >= self.usetime) {
             self.inuse = 0;
@@ -2178,7 +2178,7 @@ function gethelistart(drop_origin, drop_direction) {
     pathrandomness = 100;
     direction = drop_direction + (0, randomintrange(-2, 3), 0);
     start_origin = drop_origin + anglestoforward(direction) * dist;
-    start_origin = start_origin + ((randomfloat(2) - 1) * pathrandomness, (randomfloat(2) - 1) * pathrandomness, 0);
+    start_origin += ((randomfloat(2) - 1) * pathrandomness, (randomfloat(2) - 1) * pathrandomness, 0);
     /#
         if (getdvarint(#"scr_noflyzones_debug", 0)) {
             if (level.noflyzones.size) {
@@ -2207,7 +2207,7 @@ function getheliend(drop_origin, drop_direction) {
     }
     direction = drop_direction + (0, turn, 0);
     end_origin = drop_origin + anglestoforward(direction) * dist;
-    end_origin = end_origin + ((randomfloat(2) - 1) * pathrandomness, (randomfloat(2) - 1) * pathrandomness, 0);
+    end_origin += ((randomfloat(2) - 1) * pathrandomness, (randomfloat(2) - 1) * pathrandomness, 0);
     return end_origin;
 }
 
@@ -2605,7 +2605,7 @@ function helidelivercrate(origin, weapon, owner, team, killstreak_id, package_co
     } else {
         drop_height = getdropheight(drop_origin);
     }
-    drop_height = drop_height + level.zoffsetcounter * 350;
+    drop_height += level.zoffsetcounter * 350;
     level.zoffsetcounter++;
     if (level.zoffsetcounter >= 5) {
         level.zoffsetcounter = 0;

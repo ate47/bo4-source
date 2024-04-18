@@ -238,7 +238,7 @@ function private function_bb17ec5a() {
                 }
                 n_dist = distancesquared(self.origin, enemy.origin);
                 n_time = n_dist / 48400;
-                n_time = n_time * 0.5;
+                n_time *= 0.5;
                 self function_c8f642f6(enemy, n_time);
             }
             waitframe(1);

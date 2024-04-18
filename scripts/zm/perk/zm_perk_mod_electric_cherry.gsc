@@ -209,7 +209,7 @@ function function_a2ba8a6c(n_time) {
 function function_4debd1a8() {
     self zm_perks::function_c8c7bc5(3, self.var_dbaad7dd > 0, #"perk_electric_cherry");
     n_counter = math::clamp(self.var_dbaad7dd, 0, 10);
-    n_counter = n_counter / 10;
+    n_counter /= 10;
     self zm_perks::function_13880aa5(3, n_counter, #"perk_electric_cherry");
 }
 
@@ -253,10 +253,10 @@ function function_857ced89() {
     self zm_perks::function_13880aa5(3, var_8b3ae2d6, #"perk_electric_cherry");
     while (true) {
         wait(0.1);
-        n_time_left = n_time_left - 0.1;
+        n_time_left -= 0.1;
         n_time_left = math::clamp(n_time_left, 0, var_9ade76c0);
         n_percentage = n_time_left / var_9ade76c0;
-        n_percentage = n_percentage * var_8b3ae2d6;
+        n_percentage *= var_8b3ae2d6;
         n_percentage = math::clamp(n_percentage, 0.02, var_9ade76c0);
         self zm_perks::function_13880aa5(3, n_percentage, #"perk_electric_cherry");
     }

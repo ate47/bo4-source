@@ -226,7 +226,7 @@ function private splatter(localclientnum) {
         elapsedtime = now - lasttime;
         if (elapsedtime > 0) {
             fadeduration = math::clamp(getdvarint(#"hash_34e60a4256fbc184", 5000), 10, 88000);
-            splatter_opacity = splatter_opacity - elapsedtime / fadeduration;
+            splatter_opacity -= elapsedtime / fadeduration;
             splatter_opacity = math::clamp(splatter_opacity, 0, 1);
             lasttime = now;
         }
@@ -244,7 +244,7 @@ function private splatter(localclientnum) {
         elapsedtime = now - lasttime;
         if (elapsedtime > 0) {
             fadeduration = math::clamp(getdvarint(#"hash_34e60d4256fbc69d", 500), 10, 88000);
-            splatter_opacity = splatter_opacity - elapsedtime / fadeduration;
+            splatter_opacity -= elapsedtime / fadeduration;
             splatter_opacity = math::clamp(splatter_opacity, 0, 1);
             lasttime = now;
         }

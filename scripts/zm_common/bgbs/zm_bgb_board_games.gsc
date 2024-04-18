@@ -75,7 +75,7 @@ function function_c2342058(s_window) {
             break;
         }
         s_window thread zm_blockers::replace_chunk(s_window, chunk, undefined, 1);
-        self.rebuild_barrier_reward = self.rebuild_barrier_reward + 10;
+        self.rebuild_barrier_reward += 10;
         if (self.rebuild_barrier_reward < zombie_utility::function_d2dfacfd(#"rebuild_barrier_cap_per_round")) {
             self zm_score::player_add_points("rebuild_board", 10);
             self zm_utility::play_sound_on_ent("purchase");

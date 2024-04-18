@@ -181,7 +181,7 @@ function function_8a707841(n_loop_time) {
     while (n_time_elapsed < n_loop_time) {
         self clientfield::increment("" + #"hash_6c84cb8d22df46f0", 1);
         wait(n_wait_time);
-        n_time_elapsed = n_time_elapsed + n_wait_time;
+        n_time_elapsed += n_wait_time;
         n_wait_time = max(n_wait_time * 0.85, 0.1);
     }
 }

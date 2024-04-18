@@ -118,16 +118,16 @@ function private event_handler[event_cf200f34] function_209450ae(eventstruct) {
 function function_7a1e21a9(v_loc) {
     self endon(#"death");
     self.origin = v_loc;
-    self.angles = self.angles + (0, randomint(360), 0);
+    self.angles += (0, randomint(360), 0);
     n_x_offset = randomintrange(8, 32);
     n_y_offset = randomintrange(8, 32);
     if (math::cointoss(50)) {
-        n_x_offset = n_x_offset * -1;
+        n_x_offset *= -1;
     }
     if (math::cointoss(50)) {
-        n_y_offset = n_y_offset * -1;
+        n_y_offset *= -1;
     }
-    v_loc = v_loc + (n_x_offset, n_y_offset, 0);
+    v_loc += (n_x_offset, n_y_offset, 0);
     trace = bullettrace(v_loc + (0, 0, 40), v_loc + (0, 0, -150), 0, undefined);
     if (trace[#"fraction"] < 1) {
         v_loc = trace[#"position"];

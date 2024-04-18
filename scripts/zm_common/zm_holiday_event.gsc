@@ -175,7 +175,7 @@ function function_23287dd() {
                 level.var_23d44713 moveto(ai_zombie.origin + (0, 0, 60), n_move_time);
                 wait(0.1);
                 if (n_move_time > 0.1) {
-                    n_move_time = n_move_time - 0.1;
+                    n_move_time -= 0.1;
                 }
             }
             if (isalive(ai_zombie)) {
@@ -238,7 +238,7 @@ function function_ded808d5() {
     for (i = 0; i < 6; i++) {
         mdl_soul movez(n_move_dist, 0.1);
         mdl_soul waittill(#"movedone");
-        n_move_dist = n_move_dist * -1;
+        n_move_dist *= -1;
     }
     mdl_soul movez(9999, 4);
     mdl_soul waittill(#"movedone");

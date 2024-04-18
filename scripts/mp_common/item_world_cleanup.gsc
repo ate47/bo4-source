@@ -230,7 +230,7 @@ function private function_ada16428(deathcircle, var_898879a6) {
             if (!isdefined(vehicle.var_a6b3cbdc)) {
                 delay = 60000;
                 if (isdefined(vehicle.var_8e382c5f)) {
-                    delay = delay + 300000;
+                    delay += 300000;
                 }
                 vehicle.var_a6b3cbdc = time + delay;
             }

@@ -125,13 +125,13 @@ function function_593774d0() {
         level.var_a92623b1 = undefined;
     }
     if (level.var_e7d39108 < 8) {
-        level.var_e7d39108 = level.var_e7d39108 + 0.25;
+        level.var_e7d39108 += 0.25;
     }
     if (level.var_16c6de62 > 4) {
-        level.var_16c6de62 = level.var_16c6de62 - 0.25;
+        level.var_16c6de62 -= 0.25;
     }
     if (level.var_9930160c > 4) {
-        level.var_16c6de62 = level.var_16c6de62 - 0.25;
+        level.var_16c6de62 -= 0.25;
     }
     if (isdefined(level.var_2d307e50) && level.var_2d307e50) {
         level.var_a92623b1 = spawnstruct();

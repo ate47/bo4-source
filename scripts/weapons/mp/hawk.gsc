@@ -75,7 +75,7 @@ function spawn_hawk() {
     var_865c71c9 = (playerangles[0], playerangles[1], 0);
     var_c7588ce0 = (0, playerangles[1], 0);
     forward = anglestoforward(var_c7588ce0);
-    forward = forward * 20;
+    forward *= 20;
     spawnpos = self.origin + (0, 0, 90) + forward;
     trace = self function_6ada73f(spawnpos);
     if (trace[#"fraction"] < 1) {
@@ -756,7 +756,7 @@ function function_9ace0fb6(targets) {
                 player clientfield::function_9bf78ef8("hawk_target_lockon" + ti, "target_visible", 1);
                 tagtime = int(bundle.tag_time * 1000);
                 if (target hasperk(#"specialty_nokillstreakreticle")) {
-                    tagtime = tagtime * bundle.var_59b7880b;
+                    tagtime *= bundle.var_59b7880b;
                 }
                 if (info.var_1fe906d8 - info.first_visible > tagtime) {
                     if (!isdefined(info.var_a7e1d732) || time - info.var_a7e1d732 > var_fe38768b && isdefined(isdefined(player.hawk)) && isdefined(player.hawk.vehicle)) {

@@ -33,7 +33,7 @@ function private init_target() {
             return false;
         }
         structs[structs.size] = struct;
-        totalms = totalms + struct.script_int;
+        totalms += struct.script_int;
         struct = struct::get(struct.target, "targetname");
     } while (struct != var_dc0e8c88);
     assert(structs.size == 2);
@@ -66,12 +66,12 @@ function private follow_path() {
     }
     endtime = starttime;
     while (true) {
-        endtime = endtime + self.structs[0].script_int;
+        endtime += self.structs[0].script_int;
         movetime = function_5bab934a(self.structs[0], endtime);
         self function_49ed8678(self.structs[1].origin, movetime);
         wait(movetime);
         playsound(0, #"amb_target_stop", self.origin);
-        endtime = endtime + self.structs[1].script_int;
+        endtime += self.structs[1].script_int;
         movetime = function_5bab934a(self.structs[1], endtime);
         self function_49ed8678(self.structs[0].origin, movetime);
         wait(movetime);

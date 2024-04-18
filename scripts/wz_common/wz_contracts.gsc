@@ -435,7 +435,7 @@ function increment_wz_contract(var_38280f2f, delta = 1) {
 function private function_902ef0de(var_38280f2f, delta) {
     /#
         if (getdvarint(#"scr_contract_debug_multiplier", 0) > 0) {
-            delta = delta * getdvarint(#"scr_contract_debug_multiplier", 1);
+            delta *= getdvarint(#"scr_contract_debug_multiplier", 1);
         }
     #/
     if (delta <= 0) {

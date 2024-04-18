@@ -311,7 +311,7 @@ function function_54389019(var_a99ac828, startat) {
                     level.zdraw.color = (1, 1, 1);
                     function_96c207f("<unknown string>" + var_a99ac828[startat]);
                 }
-                startat = startat + 1;
+                startat += 1;
             }
         }
         return startat;
@@ -499,7 +499,7 @@ function revive_getdvar(var_a99ac828, startat) {
         if (isdefined(var_a99ac828[startat])) {
             if (function_b0f457f2(var_a99ac828[startat])) {
                 level.zdraw.var_f78505a1 = float(var_a99ac828[startat]);
-                startat = startat + 1;
+                startat += 1;
             }
         }
         return startat;
@@ -514,7 +514,7 @@ function function_7bf700e4(var_a99ac828, startat) {
     /#
         if (isdefined(var_a99ac828[startat])) {
             level.zdraw.var_d15c03f8 = var_a99ac828[startat];
-            startat = startat + 1;
+            startat += 1;
         }
         return startat;
     #/

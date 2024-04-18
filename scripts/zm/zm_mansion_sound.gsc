@@ -148,7 +148,7 @@ function private function_21a979f7() {
     self endon(#"hash_53eb32eaa511640c");
     while (true) {
         if (self.angles[0] < 360) {
-            self.angles = self.angles + (360, 0, 0);
+            self.angles += (360, 0, 0);
         }
         self rotatepitch((self.angles[0] + 180) * -1, 2);
         self waittill(#"rotatedone");

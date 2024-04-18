@@ -183,9 +183,9 @@ function function_1f7c6bb9(w_melee, var_2b9d3880, var_48e9b3cc, is_lunge = 0) {
             if (self hasperk(#"specialty_mod_etherealrazor") && (e_target.var_6f84b820 === #"basic" || e_target.var_6f84b820 === #"popcorn" || e_target.var_6f84b820 === #"enhanced")) {
                 n_total_damage = e_target.health + 666;
             } else if (self hasperk(#"specialty_mod_etherealrazor")) {
-                n_total_damage = n_total_damage + 4000;
+                n_total_damage += 4000;
             } else {
-                n_total_damage = n_total_damage + 1000;
+                n_total_damage += 1000;
             }
         }
         e_target.var_39c64392 = undefined;

@@ -76,7 +76,7 @@ function ambient_flak_think(point) {
     level thread ambient_flak_rotate(point);
     level thread ambient_flak_flash(point, min_burst_time, max_burst_time);
     for (;;) {
-        for (timer = randomfloatrange(min_burst_time, max_burst_time); timer > 0; timer = timer - 0.2) {
+        for (timer = randomfloatrange(min_burst_time, max_burst_time); timer > 0; timer -= 0.2) {
             point.is_firing = 1;
             playfx(0, level._effect[point.fx_id], point.origin, point.forward, point.up);
             thread sound::play_in_space(0, "wpn_triple25_fire", point.origin);
@@ -108,8 +108,8 @@ function ambient_flak_rotate(point) {
         diff_forward = (forward - point.forward) / steps;
         diff_up = (up - point.up) / steps;
         for (i = 0; i < steps; i++) {
-            point.forward = point.forward + diff_forward;
-            point.up = point.up + diff_up;
+            point.forward += diff_forward;
+            point.up += diff_up;
             wait(0.1);
         }
         point.forward = forward;
@@ -318,7 +318,7 @@ function clocks_init(clientnum) {
     curr_time = getsystemtime();
     hours = curr_time[0];
     if (hours > 12) {
-        hours = hours - 12;
+        hours -= 12;
     }
     if (hours == 0) {
         hours = 12;
@@ -410,10 +410,10 @@ function clock_run(time_values) {
             break;
         }
         if (hour < 1) {
-            hour = hour + 12;
+            hour += 12;
         }
         if (hour > 12) {
-            hour = hour - 12;
+            hour -= 12;
         }
         time_values[#"hand_time"] = hour;
     }

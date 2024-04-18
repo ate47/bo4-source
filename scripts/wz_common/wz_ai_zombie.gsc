@@ -201,7 +201,7 @@ function function_b0503d98(params) {
 function custom_melee_fire() {
     idflags = 0;
     if (isdefined(self.enemy) && isdefined(self.enemy.armor) && self.enemy.armor) {
-        idflags = idflags | 2048;
+        idflags |= 2048;
     }
     melee_dir = undefined;
     if (isdefined(self.attackable)) {
@@ -559,7 +559,7 @@ function private function_c75fae30(einflictor, eattacker, idamage, idflags, smea
         return 0;
     }
     if (isheadshot(shitloc)) {
-        idamage = idamage * 2;
+        idamage *= 2;
     }
     if (isdefined(weapon) && smeansofdeath !== "MOD_DOT") {
         dot_params = function_f74d2943(weapon, 7);
@@ -698,7 +698,7 @@ function private zombieshouldmelee(entity) {
         test_origin = isdefined(entity.enemy.last_valid_position) ? entity.enemy.last_valid_position : entity.enemy.origin;
     }
     if (isdefined(enemy_vehicle) && isdefined(entity.var_cbc65493)) {
-        meleedistsq = meleedistsq * entity.var_cbc65493;
+        meleedistsq *= entity.var_cbc65493;
     }
     if (abs(entity.origin[2] - test_origin[2]) > (isdefined(entity.var_737e8510) ? entity.var_737e8510 : 64)) {
         return false;
@@ -2912,7 +2912,7 @@ function zombie_gib(amount, attacker, direction_vec, point, type, tagname, model
             self allowpitchangle(1);
             self setpitchorient();
             health = self.health;
-            health = health * 0.1;
+            health *= 0.1;
         }
     }
 }
@@ -3337,7 +3337,7 @@ function zmbaivox_playvox(zombie, type, override, priority, delayambientvox = 0)
             playbacktime = 1;
         }
         if (playbacktime >= 0) {
-            playbacktime = playbacktime * 0.001;
+            playbacktime *= 0.001;
         } else {
             playbacktime = 1;
         }

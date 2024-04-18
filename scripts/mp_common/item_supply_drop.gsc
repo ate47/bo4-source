@@ -609,7 +609,7 @@ function private function_8234217e(var_faa1ea31, vectors) {
         }
     }
     if (bestdot < 0) {
-        var_54b25053 = var_54b25053 * -1;
+        var_54b25053 *= -1;
     }
     return var_54b25053;
 }
@@ -722,7 +722,7 @@ function function_ab6af198() {
         x = abs(var_6024133d[0].origin[0] - var_6024133d[1].origin[0]);
         y = abs(var_6024133d[0].origin[1] - var_6024133d[1].origin[1]);
         max_width = max(x, y);
-        max_width = max_width * 0.75;
+        max_width *= 0.75;
         return math::clamp(max_width, 10000, max_width);
     }
     return 10000;
@@ -854,7 +854,7 @@ function function_418e26fe(var_2118f785 = undefined, helicopter = 0, voiceevent 
     } else {
         var_729c4495 = 20000;
     }
-    var_729c4495 = var_729c4495 + var_541c190b;
+    var_729c4495 += var_541c190b;
     var_94f13d8b = 2000 + var_729c4495;
     mapcenter = player_insertion::function_15945f95();
     mapwidth = player_insertion::function_ab6af198();

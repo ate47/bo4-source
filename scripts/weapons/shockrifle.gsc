@@ -248,7 +248,7 @@ function function_a64504d2() {
     if (isplayer(self)) {
         var_341cbc9e = self function_aa61b0b();
         if (var_341cbc9e) {
-            shockduration = shockduration * var_341cbc9e;
+            shockduration *= var_341cbc9e;
         }
     }
     return shockduration;
@@ -527,7 +527,7 @@ function function_bcc47944(watcher) {
         if (type == "MOD_MELEE" || weapon.isemp || weapon.destroysequipment) {
             self.damagetaken = damagemax;
         } else {
-            self.damagetaken = self.damagetaken + damage;
+            self.damagetaken += damage;
         }
         if (self.damagetaken >= damagemax) {
             watcher thread weaponobjects::waitanddetonate(self, 0.05, attacker, weapon);

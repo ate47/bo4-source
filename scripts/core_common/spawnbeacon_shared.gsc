@@ -348,7 +348,7 @@ function function_41a037e6() {
         foreach (var_25d50c8b in level.spawnbeaconsettings.var_613ff100) {
             distance = distancesquared(spawnbeacon.origin, player.origin);
             if (distance <= var_25d50c8b.zonemax && distance > var_25d50c8b.zonemin) {
-                spawnbeacon.threatlevel = spawnbeacon.threatlevel + var_25d50c8b.points;
+                spawnbeacon.threatlevel += var_25d50c8b.points;
             }
         }
     }
@@ -784,7 +784,7 @@ function function_438ca4e0() {
 // Size: 0x36
 function function_9c87725b() {
     currentid = game.spawnbeaconid;
-    game.spawnbeaconid = game.spawnbeaconid + 1;
+    game.spawnbeaconid += 1;
     return currentid;
 }
 

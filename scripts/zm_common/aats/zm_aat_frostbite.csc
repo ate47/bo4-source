@@ -72,9 +72,9 @@ function function_d84b013b(localclientnum, b_freeze) {
     while (true) {
         self function_78233d29("rob_test_character_ice", "", "Threshold", self.var_82fb67e7);
         if (b_freeze) {
-            self.var_82fb67e7 = self.var_82fb67e7 + 0.2;
+            self.var_82fb67e7 += 0.2;
         } else {
-            self.var_82fb67e7 = self.var_82fb67e7 - 0.05;
+            self.var_82fb67e7 -= 0.05;
         }
         if (b_freeze && (self.var_82fb67e7 >= var_875c79c1 || self.var_82fb67e7 >= 1)) {
             break;

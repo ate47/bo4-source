@@ -1273,7 +1273,7 @@ function function_442fe4d3() {
             var_24cc214c = array(getweapon(#"zhield_spectral_dw"), getweapon(#"zhield_spectral_dw_upgraded"), getweapon(#"zhield_spectral_turret"), getweapon(#"zhield_spectral_turret_upgraded"));
             w_current = s_result.activator.currentweapon;
             if (array::contains(var_24cc214c, w_current)) {
-                s_result.activator.var_9fd623ed = s_result.activator.var_9fd623ed + 12;
+                s_result.activator.var_9fd623ed += 12;
                 s_result.activator.var_9fd623ed = math::clamp(s_result.activator.var_9fd623ed, 0, s_result.activator.var_f7c822b5 * 3);
                 s_result.activator thread zm_weap_spectral_shield::function_804309c();
                 s_result.activator notify(#"hash_22a49f7903e394a5");

@@ -469,7 +469,7 @@ function precache_mp_anticheat_leaderboards() {
     }
     anticheatleaderboard = "LB_MP_ANTICHEAT_" + level.gametype + postfix;
     if (level.gametype != "fr") {
-        anticheatleaderboard = anticheatleaderboard + " LB_MP_ANTICHEAT_GLOBAL";
+        anticheatleaderboard += " LB_MP_ANTICHEAT_GLOBAL";
     }
     precacheleaderboards(anticheatleaderboard);
 }
@@ -1039,7 +1039,7 @@ function showobjectivenotificationuiforallplayers(missiontype, delay) {
     if (sessionmodeismultiplayergame()) {
         menudelay = getgametypesetting(#"bountypurchasephaseduration");
         if (isdefined(menudelay)) {
-            delay = delay + menudelay;
+            delay += menudelay;
         }
     }
     wait(delay);
@@ -1154,7 +1154,7 @@ function wavespawntimer() {
         time = gettime();
         notified = 0;
         foreach (team, _ in level.teams) {
-            notified = notified | notifyteamwavespawn(team, time);
+            notified |= notifyteamwavespawn(team, time);
         }
         if (notified) {
             level callback::callback(#"hash_3be1213f454fa90e");
@@ -1218,10 +1218,10 @@ function getteamscoreratio() {
         if (team == playerteam) {
             continue;
         }
-        otherteamscore = otherteamscore + getteamscore(team);
+        otherteamscore += getteamscore(team);
     }
     if (level.teams.size > 1) {
-        otherteamscore = otherteamscore / (level.teams.size - 1);
+        otherteamscore /= level.teams.size - 1;
     }
     if (otherteamscore != 0) {
         return (float(score) / float(otherteamscore));
@@ -1604,7 +1604,7 @@ function awardotherlootxp() {
         if (!isdefined(func)) {
             continue;
         }
-        lootxp = lootxp + player [[ func ]]();
+        lootxp += player [[ func ]]();
     }
     return lootxp;
 }
@@ -2788,7 +2788,7 @@ function sortdeadplayers(team) {
 function totalalivecount() {
     count = 0;
     foreach (team, _ in level.teams) {
-        count = count + level.alivecount[team];
+        count += level.alivecount[team];
     }
     return count;
 }
@@ -2800,7 +2800,7 @@ function totalalivecount() {
 function totalplayerlives() {
     count = 0;
     foreach (team, _ in level.teams) {
-        count = count + level.playerlives[team];
+        count += level.playerlives[team];
     }
     return count;
 }
@@ -2979,14 +2979,14 @@ function updatealivetimes(team) {
                     continue;
                 }
                 if (time != 0) {
-                    average_time = average_time + time;
+                    average_time += time;
                     count++;
                 }
             }
         }
         if (count) {
-            total_value_count = total_value_count + count;
-            average_player_spawn_time = average_player_spawn_time + average_time / count;
+            total_value_count += count;
+            average_player_spawn_time += average_time / count;
             total_player_count++;
         }
     }
@@ -3002,14 +3002,14 @@ function updatealivetimes(team) {
                     continue;
                 }
                 if (time != 0) {
-                    average_time = average_time + time;
+                    average_time += time;
                     count++;
                 }
             }
         }
         if (count) {
-            total_value_count = total_value_count + count;
-            average_player_spawn_time = average_player_spawn_time + average_time / count;
+            total_value_count += count;
+            average_player_spawn_time += average_time / count;
             total_player_count++;
         }
     }
@@ -3713,7 +3713,7 @@ function function_b9b7618() {
     }
     level.inprematchperiod = 1;
     if (level.prematchperiod > 2 && level.rankedmatch) {
-        level.prematchperiod = level.prematchperiod + randomfloat(4) - 2;
+        level.prematchperiod += randomfloat(4) - 2;
     }
     if (level.numlives || anyteamhaswavedelay() || level.playerqueuedrespawn) {
         level.graceperiod = 15;

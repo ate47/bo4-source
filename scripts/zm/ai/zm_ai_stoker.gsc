@@ -365,7 +365,7 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
         if (!isdefined(self.var_5dc26e42) || self.var_5dc26e42 >= 1000) {
             self.var_5dc26e42 = 0;
         }
-        self.var_5dc26e42 = self.var_5dc26e42 + damagedone;
+        self.var_5dc26e42 += damagedone;
     }
     if (smeansofdeath != "MOD_PROJECTILE_SPLASH") {
         if (!var_ae30c5b0) {
@@ -421,7 +421,7 @@ function function_a96d8bd7(einflictor, eattacker, idamage, idflags, smeansofdeat
                 }
             } else if (var_dd54fdb1.hitloc === self.var_a056e24) {
                 if (self.var_5274eb5f) {
-                    self.var_dc32e381 = self.var_dc32e381 + damagedone;
+                    self.var_dc32e381 += damagedone;
                 }
                 if (damagedone >= self.health) {
                     self.var_6f3ba226 = 1;
@@ -464,7 +464,7 @@ function private function_c9116e0f(armorinfo, damage) {
     /#
         function_752a64b8("<unknown string>" + damage + "<unknown string>" + armorinfo.position);
     #/
-    armorinfo.health = armorinfo.health - damage;
+    armorinfo.health -= damage;
     if (armorinfo.health <= 0) {
         armorinfo.active = 0;
     }
@@ -852,20 +852,20 @@ function function_b2602782(entity) {
     var_ad804014 = entity ai::function_9139c839().var_accd767d;
     if (distancesquared(targetpos, entity.origin) > entity ai::function_9139c839().var_bf28a226 * entity ai::function_9139c839().var_bf28a226) {
         velocity = entity.enemy getvelocity();
-        targetpos = targetpos + velocity * entity ai::function_9139c839().var_10a1d059;
+        targetpos += velocity * entity ai::function_9139c839().var_10a1d059;
         var_a76a363d = math::randomsign() * randomint(var_ad804014);
         var_9b241db1 = math::randomsign() * randomint(var_ad804014);
-        targetpos = targetpos + (var_a76a363d, var_9b241db1, 0);
+        targetpos += (var_a76a363d, var_9b241db1, 0);
         speed = length(velocity);
         if (speed > 0) {
             var_7ee6937e = vectornormalize((targetpos[0], targetpos[1], 0) - (launchpos[0], launchpos[1], 0));
             dot = vectordot(-1 * var_7ee6937e, velocity / speed);
             if (dot >= entity ai::function_9139c839().var_cd8b7a6c) {
-                targetpos = targetpos + var_7ee6937e * dot * speed * entity ai::function_9139c839().var_322773b9;
+                targetpos += var_7ee6937e * dot * speed * entity ai::function_9139c839().var_322773b9;
             }
         }
     }
-    targetpos = targetpos + (0, 0, entity ai::function_9139c839().var_f227d0d0);
+    targetpos += (0, 0, entity ai::function_9139c839().var_f227d0d0);
     var_872c6826 = vectortoangles(targetpos - launchpos);
     angles = function_cc68801f(launchpos, targetpos, entity ai::function_9139c839().var_81da787, getdvarfloat(#"bg_lowgravity", 0));
     if (isdefined(angles) && angles[#"lowangle"] > 0) {
@@ -1089,7 +1089,7 @@ function function_cf5ef033(n_round_number) {
             break;
         case 3:
         case 4:
-            level.var_ac8e1955 = level.var_ac8e1955 + 2;
+            level.var_ac8e1955 += 2;
             break;
         default:
             level.var_ac8e1955 = undefined;

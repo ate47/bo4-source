@@ -159,7 +159,7 @@ function private function_1129876d() {
 // Size: 0x114
 function private function_d41d20b1() {
     v_force = anglestoforward(self.angles);
-    v_force = v_force * 0.2;
+    v_force *= 0.2;
     createdynentandlaunch(self.dyn, self.origin, self.angles, self.origin, v_force);
     exploder::stop_exploder("fxexp_quest_raygun_m2_v_stage_1" + level.var_9eccff99.s_start.exploder_id);
     s_unitrigger = level.var_9eccff99.var_fead3ae9 zm_item_pickup::create_item_pickup(&function_9d66ea6f, &function_f6048ee, &function_5b4f9f76);

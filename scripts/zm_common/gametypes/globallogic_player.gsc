@@ -330,9 +330,9 @@ function inform_clientvm_of_migration() {
 function arraytostring(inputarray) {
     targetstring = "";
     for (i = 0; i < inputarray.size; i++) {
-        targetstring = targetstring + inputarray[i];
+        targetstring += inputarray[i];
         if (i != inputarray.size - 1) {
-            targetstring = targetstring + ",";
+            targetstring += ",";
         }
     }
     return targetstring;
@@ -426,7 +426,7 @@ function callback_playerdisconnect() {
         /#
             print("<unknown string>" + self.pers[#"team"] + "<unknown string>" + self.score);
         #/
-        level.dropteam = level.dropteam + 1;
+        level.dropteam += 1;
     }
     [[ level.onplayerdisconnect ]]();
     lpselfnum = self getentitynumber();

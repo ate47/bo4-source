@@ -521,7 +521,7 @@ function qrdrone_playerexit(qrdrone) {
     while (true) {
         timeused = 0;
         while (self usebuttonpressed()) {
-            timeused = timeused + 0.05;
+            timeused += 0.05;
             if (timeused > 0.75) {
                 qrdrone thread qrdrone_leave();
                 return;
@@ -670,15 +670,15 @@ function qrdrone_damagewatcher() {
         if (mod == "MOD_RIFLE_BULLET" || mod == "MOD_PISTOL_BULLET") {
             if (isplayer(attacker)) {
                 if (attacker hasperk(#"specialty_armorpiercing")) {
-                    damage = damage + int(damage * level.cac_armorpiercing_data);
+                    damage += int(damage * level.cac_armorpiercing_data);
                 }
             }
             if (weapon.weapclass == "spread") {
-                damage = damage * 2;
+                damage *= 2;
             }
         }
         if (weapon.isemp && mod == "MOD_GRENADE_SPLASH") {
-            damage_taken = damage_taken + 225;
+            damage_taken += 225;
             damage = 0;
         }
         if (!self.isstunned) {
@@ -689,7 +689,7 @@ function qrdrone_damagewatcher() {
         }
         self.attacker = attacker;
         self.owner sendkillstreakdamageevent(int(damage));
-        damage_taken = damage_taken + damage;
+        damage_taken += damage;
         if (damage_taken >= 225) {
             self.owner sendkillstreakdamageevent(200);
             self qrdrone_death(attacker, weapon, dir, mod);
@@ -763,15 +763,15 @@ function qrdrone_crash_movement(attacker, hitdir) {
     self setphysacceleration((0, 0, -800));
     side_dir = vectorcross(hitdir, (0, 0, 1));
     side_dir_mag = randomfloatrange(-100, 100);
-    side_dir_mag = side_dir_mag + math::sign(side_dir_mag) * 80;
-    side_dir = side_dir * side_dir_mag;
+    side_dir_mag += math::sign(side_dir_mag) * 80;
+    side_dir *= side_dir_mag;
     velocity = self getvelocity();
     self setvehvelocity(velocity + (0, 0, 100) + vectornormalize(side_dir));
     ang_vel = self getangularvelocity();
     ang_vel = (ang_vel[0] * 0.3, ang_vel[1], ang_vel[2] * 0.3);
     yaw_vel = randomfloatrange(0, 210) * math::sign(ang_vel[1]);
-    yaw_vel = yaw_vel + math::sign(yaw_vel) * 180;
-    ang_vel = ang_vel + (randomfloatrange(-100, 100), yaw_vel, randomfloatrange(-200, 200));
+    yaw_vel += math::sign(yaw_vel) * 180;
+    ang_vel += (randomfloatrange(-100, 100), yaw_vel, randomfloatrange(-200, 200));
     self setangularvelocity(ang_vel);
     self.crash_accel = randomfloatrange(75, 110);
     self thread qrdrone_crash_accel();
@@ -814,7 +814,7 @@ function qrdrone_fire_for_time(totalfiretime) {
         self fireweapon();
         firecount++;
         wait(firetime);
-        time = time + firetime;
+        time += firetime;
     }
 }
 
@@ -828,13 +828,13 @@ function qrdrone_crash_accel() {
     while (true) {
         velocity = self getvelocity();
         self setvehvelocity(velocity + anglestoup(self.angles) * self.crash_accel);
-        self.crash_accel = self.crash_accel * 0.98;
+        self.crash_accel *= 0.98;
         wait(0.1);
         count++;
         if (count % 8 == 0) {
             if (randomint(100) > 40) {
                 if (velocity[2] > 150) {
-                    self.crash_accel = self.crash_accel * 0.75;
+                    self.crash_accel *= 0.75;
                     continue;
                 }
                 if (velocity[2] < 40 && count < 60) {
@@ -889,7 +889,7 @@ function qrdrone_watch_distance(zoffset, minheightoverride) {
         self.maxheight = int(airsupport::getminimumflyheight());
     }
     if (isdefined(zoffset)) {
-        self.maxheight = self.maxheight + zoffset;
+        self.maxheight += zoffset;
     }
     self.maxdistance = 12800;
     self.minheight = level.mapcenter[2] - 800;
@@ -946,7 +946,7 @@ function qrdrone_in_range() {
 function qrdrone_staticfade(staticalpha) {
     self endon(#"death");
     while (self qrdrone_in_range()) {
-        staticalpha = staticalpha - 0.05;
+        staticalpha -= 0.05;
         if (staticalpha < 0) {
             self.owner set_static_alpha(staticalpha, self);
             break;
@@ -1086,7 +1086,7 @@ function qrdrone_watch_for_exit() {
     while (true) {
         timeused = 0;
         while (self.owner qrdrone_exit_button_pressed()) {
-            timeused = timeused + 0.05;
+            timeused += 0.05;
             if (timeused > 0.25) {
                 self clientfield::set("qrdrone_state", 3);
                 watcher = self.owner weaponobjects::getweaponobjectwatcher("qrdrone");

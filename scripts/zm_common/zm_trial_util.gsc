@@ -511,7 +511,7 @@ function function_96e10d88(successful) {
 function function_1e223bce(players) {
     bitarray = 0;
     foreach (player in players) {
-        bitarray = bitarray | 1 << player getentitynumber();
+        bitarray |= 1 << player getentitynumber();
     }
     return bitarray;
 }
@@ -522,7 +522,7 @@ function function_1e223bce(players) {
 // Size: 0x3e
 function function_85d088ed(player) {
     bitarray = 0;
-    bitarray = bitarray | 1 << player getentitynumber();
+    bitarray |= 1 << player getentitynumber();
     return bitarray;
 }
 

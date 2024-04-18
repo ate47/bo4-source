@@ -43,23 +43,23 @@ function monitor() {
 function function_d35f877a(player, weapon, statname, value = 0) {
     if (isdefined(player.var_3dc66299)) {
         if (statname == #"shots") {
-            player.var_3dc66299.shots = player.var_3dc66299.shots + value;
+            player.var_3dc66299.shots += value;
             return;
         }
         if (statname == #"hits") {
-            player.var_3dc66299.hits = player.var_3dc66299.hits + value;
+            player.var_3dc66299.hits += value;
             return;
         }
         if (statname == #"kills") {
-            player.var_3dc66299.kills = player.var_3dc66299.kills + value;
+            player.var_3dc66299.kills += value;
             return;
         }
         if (statname == #"deathsduringuse") {
-            player.var_3dc66299.deathsduringuse = player.var_3dc66299.deathsduringuse + value;
+            player.var_3dc66299.deathsduringuse += value;
             return;
         }
         if (statname == #"headshots") {
-            player.var_3dc66299.headshots = player.var_3dc66299.headshots + value;
+            player.var_3dc66299.headshots += value;
         }
     }
 }
@@ -250,7 +250,7 @@ function private wall_run() {
         }
         self.lastwallrunstarttime = gettime();
         notification = self waittill(#"wallrun_end", #"death", #"disconnect", #"stop_player_monitor_wall_run");
-        self.timespentwallrunninginlife = self.timespentwallrunninginlife + gettime() - self.lastwallrunstarttime;
+        self.timespentwallrunninginlife += gettime() - self.lastwallrunstarttime;
         if (notification._notify == "death") {
             break;
         }
@@ -274,7 +274,7 @@ function private swimming() {
         }
         self.lastswimmingstarttime = gettime();
         notification = self waittill(#"swimming_end", #"death", #"disconnect", #"stop_player_monitor_swimming");
-        self.timespentswimminginlife = self.timespentswimminginlife + gettime() - self.lastswimmingstarttime;
+        self.timespentswimminginlife += gettime() - self.lastswimmingstarttime;
         if (notification._notify == "death") {
             break;
         }

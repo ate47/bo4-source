@@ -397,7 +397,7 @@ function dog_round_stop(var_d25bbdd5) {
     level flag::clear("dog_clips");
     level thread zm_audio::sndmusicsystem_playstate("dog_end");
     zm::increment_dog_round_stat("finished");
-    level.dog_round_count = level.dog_round_count + 1;
+    level.dog_round_count += 1;
     wait(5);
     if (isdefined(level.var_539f36cd)) {
         [[ level.var_539f36cd ]]();
@@ -471,7 +471,7 @@ function dog_init() {
     self setavoidancemask("avoid none");
     self collidewithactors(1);
     health_multiplier = getdvarfloat(#"scr_dog_health_walk_multiplier", 4);
-    health_multiplier = health_multiplier * (isdefined(level.var_570d178a) ? level.var_570d178a : 1);
+    health_multiplier *= isdefined(level.var_570d178a) ? level.var_570d178a : 1;
     self.maxhealth = int(level.dog_health * health_multiplier);
     self.health = int(level.dog_health * health_multiplier);
     self.freezegun_damage = 0;

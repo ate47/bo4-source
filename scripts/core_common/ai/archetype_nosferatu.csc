@@ -37,7 +37,7 @@ function function_5b1f1713(localclientnum, oldval, newval, bnewent, binitialsnap
     n_dist = distancesquared(self.origin, e_player.origin);
     var_56cb57e3 = 200 * 200;
     n_scale = (var_56cb57e3 - n_dist) / var_56cb57e3;
-    n_scale = n_scale * 0.75;
+    n_scale *= 0.75;
     if (n_scale > 0.01) {
         earthquake(localclientnum, n_scale, 0.1, self.origin, n_dist);
         if (n_scale >= 0.5) {

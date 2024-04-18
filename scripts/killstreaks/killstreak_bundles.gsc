@@ -385,7 +385,7 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
             if (shotstokill == 0) {
             } else if (shotstokill > 0) {
                 if (isdefined(chargeshotlevel) && chargeshotlevel > 0) {
-                    shotstokill = shotstokill / chargeshotlevel;
+                    shotstokill /= chargeshotlevel;
                 }
                 weapon_damage = maxhealth / shotstokill + 1;
             } else {
@@ -427,7 +427,7 @@ function function_dd7587e4(bundle, maxhealth, attacker, weapon, type, damage, fl
                     if (rocketstokill == 0) {
                     } else if (rocketstokill > 0) {
                         if (weapon.rootweapon.name == "launcher_multi") {
-                            rocketstokill = rocketstokill * 2;
+                            rocketstokill *= 2;
                         }
                         weapon_damage = maxhealth / rocketstokill + 1;
                     } else {

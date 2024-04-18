@@ -1229,7 +1229,7 @@ function private function_bb454fe6() {
                 trigger_still_valid = 0;
                 if (distance2dsquared(player_origin, origin) < dst) {
                     if (isdefined(trigger.reassess_time)) {
-                        trigger.reassess_time = trigger.reassess_time - 0.05;
+                        trigger.reassess_time -= 0.05;
                         if (trigger.reassess_time > 0) {
                             continue;
                         }

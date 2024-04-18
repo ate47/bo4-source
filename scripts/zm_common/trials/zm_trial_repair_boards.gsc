@@ -88,7 +88,7 @@ function private function_738e3a43() {
             zombie_utility::set_zombie_var(#"rebuild_barrier_cap_per_round", self.var_358e6a29);
         }
         if (isdefined(waitresult.points)) {
-            self.var_28433a54 = self.var_28433a54 - waitresult.points;
+            self.var_28433a54 -= waitresult.points;
         }
         self.var_28433a54 = math::clamp(self.var_28433a54, 0, 1000);
         zm_trial_util::function_dace284(int(self.var_358e6a29 - self.var_28433a54));

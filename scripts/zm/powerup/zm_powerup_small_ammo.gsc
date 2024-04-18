@@ -143,7 +143,7 @@ function function_7374e868(weapon) {
                 n_ammo_max = var_ef0714fa;
             }
             if (weapon.isdualwield) {
-                n_ammo_max = n_ammo_max * 2;
+                n_ammo_max *= 2;
             }
             if (var_b8624c26 >= n_ammo_max + n_clip_size + var_5916b9ab) {
                 var_cd9d17e0 = 0;

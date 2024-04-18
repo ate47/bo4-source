@@ -324,7 +324,7 @@ function _get_default_target_offset(e_target, n_index) {
                 if (!isdefined(z_offset)) {
                     z_offset = 0;
                 }
-                z_offset = z_offset + e_target.z_target_offset_override;
+                z_offset += e_target.z_target_offset_override;
             }
         }
     }
@@ -334,7 +334,7 @@ function _get_default_target_offset(e_target, n_index) {
     v_offset = (0, 0, z_offset);
     if ((isdefined(s_turret.n_target_leading_factor) ? s_turret.n_target_leading_factor : 0) != 0 && isdefined(e_target) && issentient(self) && issentient(e_target) && !isvehicle(e_target)) {
         velocity = e_target getvelocity();
-        v_offset = v_offset + velocity * s_turret.n_target_leading_factor;
+        v_offset += velocity * s_turret.n_target_leading_factor;
     }
     return v_offset;
 }
@@ -445,7 +445,7 @@ function fire_for_time(n_time, n_index = 0) {
     while (n_time > 0 || b_fire_forever) {
         n_burst_time = _burst_fire(n_time, n_index);
         if (!b_fire_forever) {
-            n_time = n_time - n_burst_time;
+            n_time -= n_burst_time;
         }
     }
 }
@@ -567,7 +567,7 @@ function pause(time, n_index) {
         time = int(time * 1000);
     }
     if (isdefined(s_turret.pause)) {
-        s_turret.pause_time = s_turret.pause_time + time;
+        s_turret.pause_time += time;
         return;
     }
     s_turret.pause = 1;
@@ -638,7 +638,7 @@ function _turret_think(n_index, v_offset) {
             if (!(isdefined(s_turret.disable_ai_getoff) && s_turret.disable_ai_getoff)) {
                 bwasplayertarget = isdefined(s_turret.e_last_target) && s_turret.e_last_target.health > 0 && isplayer(s_turret.e_last_target);
                 if (bwasplayertarget) {
-                    occupy_time = occupy_time / 4;
+                    occupy_time /= 4;
                 }
             } else {
                 bwasplayertarget = 0;
@@ -825,18 +825,18 @@ function _debug_turret_think(n_index) {
             e_target = s_turret.e_next_target;
             if (isdefined(e_target)) {
                 if (isactor(e_target)) {
-                    str_target = str_target + "<unknown string>";
+                    str_target += "<unknown string>";
                 } else if (isplayer(e_target)) {
-                    str_target = str_target + "<unknown string>";
+                    str_target += "<unknown string>";
                 } else if (isvehicle(e_target)) {
-                    str_target = str_target + "<unknown string>";
+                    str_target += "<unknown string>";
                 } else if (isdefined(e_target.targetname) && e_target.targetname == "<unknown string>") {
-                    str_target = str_target + "<unknown string>";
+                    str_target += "<unknown string>";
                 } else if (isdefined(e_target.classname)) {
-                    str_target = str_target + e_target.classname;
+                    str_target += e_target.classname;
                 }
             } else {
-                str_target = str_target + "<unknown string>";
+                str_target += "<unknown string>";
             }
             str_debug = self getentnum() + "<unknown string>" + str_team + "<unknown string>" + str_target;
             record3dtext(str_debug, self.origin, v_color, "<unknown string>", self);
@@ -982,15 +982,15 @@ function _burst_fire(n_max_time, n_index) {
             wait(n_burst_wait - n_time_since_last_shot);
         }
     } else {
-        n_burst_time = n_burst_time - s_turret.n_burst_fire_time;
+        n_burst_time -= s_turret.n_burst_fire_time;
     }
     w_weapon = get_weapon(n_index);
     n_fire_time = w_weapon.firetime;
     n_total_time = 0;
     while (n_total_time < n_burst_time) {
         fire(n_index);
-        n_total_time = n_total_time + n_fire_time;
-        s_turret.n_burst_fire_time = s_turret.n_burst_fire_time + n_fire_time;
+        n_total_time += n_fire_time;
+        s_turret.n_burst_fire_time += n_fire_time;
         wait(n_fire_time);
     }
     if (n_burst_wait > 0) {
@@ -1103,7 +1103,7 @@ function trace_test(e_target, v_offset = (0, 0, 0), n_index) {
         v_start_org = self gettagorigin(s_turret.str_tag_pivot);
         if (e_target sightconetrace(v_start_org, self) > 0.2) {
             v_target = e_target.origin + v_offset;
-            v_start_org = v_start_org + vectornormalize(v_target - v_start_org) * 50;
+            v_start_org += vectornormalize(v_target - v_start_org) * 50;
             a_trace = bullettrace(v_start_org, v_target, 1, s_turret.e_trace_ignore, 0, 1);
             if (a_trace[#"fraction"] > 0.6) {
                 return true;
@@ -1121,8 +1121,8 @@ function trace_test(e_target, v_offset = (0, 0, 0), n_index) {
         return true;
     }
     v_dir_to_target = vectornormalize(v_target - v_start_org);
-    v_start_org = v_start_org + v_dir_to_target * 50;
-    v_target = v_target - v_dir_to_target * 75;
+    v_start_org += v_dir_to_target * 50;
+    v_target -= v_dir_to_target * 75;
     if (sighttracepassed(v_start_org, v_target, 0, self, e_target)) {
         return true;
     }

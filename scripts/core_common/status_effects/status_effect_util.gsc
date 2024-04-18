@@ -145,9 +145,9 @@ function status_effect_apply(var_756fda07, weapon, applicant, isadditive, durati
         return;
     }
     if (isdefined(var_894859a2)) {
-        var_756fda07.var_77449e9 = var_756fda07.var_77449e9 * var_894859a2;
+        var_756fda07.var_77449e9 *= var_894859a2;
         if (isdefined(durationoverride)) {
-            durationoverride = durationoverride * var_894859a2;
+            durationoverride *= var_894859a2;
         }
     }
     register_status_effect(var_756fda07.setype);
@@ -438,7 +438,7 @@ function function_7f14a56f(status_effect_type) {
     var_e2997f02 = 0;
     foreach (effect in self.var_121392a1) {
         if (effect.setype == 7) {
-            var_e2997f02 = var_e2997f02 + effect.var_adb1692a * effect.var_5cf129b8 / 1000;
+            var_e2997f02 += effect.var_adb1692a * effect.var_5cf129b8 / 1000;
         }
     }
     return var_e2997f02;
@@ -548,7 +548,7 @@ function private function_57f33b96(var_756fda07, var_b0144580, durationoverride,
             if (maxduration && newduration > maxduration) {
                 newduration = maxduration;
             }
-            self.duration = self.duration + newduration;
+            self.duration += newduration;
             self.endtime = gettime() + newduration;
         } else {
             self.duration = newduration;
@@ -590,7 +590,7 @@ function function_150a8541() {
         currtime = level.time;
         if (newres != var_eff9d37f) {
             timeremaining = self.endtime - currtime;
-            timeremaining = timeremaining * newres;
+            timeremaining *= newres;
             self.endtime = int(currtime + timeremaining);
             self.duration = int(timeremaining);
         }

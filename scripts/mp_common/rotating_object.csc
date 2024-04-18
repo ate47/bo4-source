@@ -53,8 +53,8 @@ function rotating_object_think() {
         rotate_time = 12;
     }
     if (rotate_time < 0) {
-        direction = direction * -1;
-        rotate_time = rotate_time * -1;
+        direction *= -1;
+        rotate_time *= -1;
     }
     if (isdefined(self.angles)) {
         angles = self.angles;

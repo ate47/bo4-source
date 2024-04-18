@@ -419,7 +419,7 @@ function startsoundloops() {
             loopers[i].angles = undefined;
             loopers[i].script_label = undefined;
             loopers[i] thread soundloopthink();
-            delay = delay + 1;
+            delay += 1;
             if (delay % 20 == 0) {
                 waitframe(1);
             }
@@ -450,7 +450,7 @@ function startlineemitters() {
             lineemitters[i].angles = undefined;
             lineemitters[i].script_label = undefined;
             lineemitters[i] thread soundlinethink();
-            delay = delay + 1;
+            delay += 1;
             if (delay % 20 == 0) {
                 waitframe(1);
             }
@@ -475,7 +475,7 @@ function startrattles() {
         delay = 0;
         for (i = 0; i < rattles.size; i++) {
             soundrattlesetup(rattles[i].script_sound, rattles[i].origin);
-            delay = delay + 1;
+            delay += 1;
             if (delay % 20 == 0) {
                 waitframe(1);
             }
@@ -606,7 +606,7 @@ function trig_enter_audio_step_trigger(trigplayer) {
     }
     if (isdefined(self.script_step_alias)) {
         trigplayer.step_sound = self.script_step_alias;
-        trigplayer.insteptrigger = trigplayer.insteptrigger + 1;
+        trigplayer.insteptrigger += 1;
         trigplayer setsteptriggersound(self.script_step_alias + suffix);
     }
     if (isdefined(self.script_step_alias_enter) && trigplayer getmovementtype() == "sprint") {
@@ -630,7 +630,7 @@ function trig_leave_audio_step_trigger(trigplayer) {
         trigplayer playsound(localclientnum, self.script_step_alias_exit + suffix, self.origin, volume);
     }
     if (isdefined(self.script_step_alias)) {
-        trigplayer.insteptrigger = trigplayer.insteptrigger - 1;
+        trigplayer.insteptrigger -= 1;
     }
     if (trigplayer.insteptrigger < 0) {
         println("<unknown string>");
@@ -684,7 +684,7 @@ function trig_enter_bump(ent) {
     volume = get_vol_from_speed(ent);
     if (!sessionmodeiszombiesgame()) {
         if (isplayer(ent) && ent hasperk(localclientnum, "specialty_quieter")) {
-            volume = volume / 2;
+            volume /= 2;
         }
     }
     if (isdefined(self.script_bump_alias) && self.script_activated) {

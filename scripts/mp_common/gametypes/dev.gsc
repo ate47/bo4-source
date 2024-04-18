@@ -326,8 +326,8 @@ function updatedevsettingszm() {
                 averageorigin = (0, 0, 0);
                 averageangles = (0, 0, 0);
                 foreach (spawnpoint in spawnpoints) {
-                    averageorigin = averageorigin + spawnpoint.origin / numpoints;
-                    averageangles = averageangles + spawnpoint.angles / numpoints;
+                    averageorigin += spawnpoint.origin / numpoints;
+                    averageangles += spawnpoint.angles / numpoints;
                 }
                 level.players[0] setplayerangles(averageangles);
                 level.players[0] setorigin(averageorigin);
@@ -610,8 +610,8 @@ function updatedevsettings() {
                     averageorigin = (0, 0, 0);
                     averageangles = (0, 0, 0);
                     foreach (spawnpoint in level.spawn_start[teamname]) {
-                        averageorigin = averageorigin + spawnpoint.origin / numpoints;
-                        averageangles = averageangles + spawnpoint.angles / numpoints;
+                        averageorigin += spawnpoint.origin / numpoints;
+                        averageangles += spawnpoint.angles / numpoints;
                     }
                     level.players[0] setplayerangles(averageangles);
                     level.players[0] setorigin(averageorigin);
@@ -1447,7 +1447,7 @@ function engagement_distance_debug_init() {
         level.realtimeengagedist_value.y = level.debug_ypos;
         level.realtimeengagedist_value.color = level.white;
         level.realtimeengagedist_value setvalue(0);
-        xpos = xpos + 37;
+        xpos += 37;
         level.realtimeengagedist_middle = newdebughudelem();
         level.realtimeengagedist_middle.alignx = "<unknown string>";
         level.realtimeengagedist_middle.fontscale = level.debug_fontscale;
@@ -1455,7 +1455,7 @@ function engagement_distance_debug_init() {
         level.realtimeengagedist_middle.y = level.debug_ypos;
         level.realtimeengagedist_middle.color = level.white;
         level.realtimeengagedist_middle settext("<unknown string>");
-        xpos = xpos + 105;
+        xpos += 105;
         level.realtimeengagedist_offvalue = newdebughudelem();
         level.realtimeengagedist_offvalue.alignx = "<unknown string>";
         level.realtimeengagedist_offvalue.fontscale = level.debug_fontscale;
@@ -2275,7 +2275,7 @@ function devstraferunpathdebugdraw() {
                     nodes[nodes.size] = new_node;
                     node = new_node;
                 }
-                drawtime = drawtime - 0.05;
+                drawtime -= 0.05;
                 if (drawtime < 0) {
                     drawtime = maxdrawtime;
                 }
@@ -2346,7 +2346,7 @@ function devhelipathdebugdraw() {
                         }
                     }
                 }
-                drawtime = drawtime - 0.05;
+                drawtime -= 0.05;
                 if (drawtime < 0) {
                     drawtime = maxdrawtime;
                 }
@@ -2467,7 +2467,7 @@ function drawpathsegment(enttarget, linecolor, textcolor, textalpha, textscale, 
             }
             line(self.origin, enttarget.origin, linecolor);
             self drawspeedacceltext(textcolor, textalpha, textscale, textoffset);
-            drawtime = drawtime - 0.05;
+            drawtime -= 0.05;
             waitframe(1);
         }
     #/

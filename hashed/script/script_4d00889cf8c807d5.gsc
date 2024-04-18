@@ -243,7 +243,7 @@ function get_favorite_enemy() {
     if (!zm_utility::is_player_valid(e_least_hunted)) {
         return undefined;
     }
-    e_least_hunted.hunted_by = e_least_hunted.hunted_by + 1;
+    e_least_hunted.hunted_by += 1;
     return e_least_hunted;
 }
 

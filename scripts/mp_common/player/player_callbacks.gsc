@@ -49,7 +49,7 @@ function function_74b6d714(attacker, effectname, var_894859a2, durationoverride,
 // Size: 0x84
 function callback_playershielddamageblocked(damage) {
     previous_shield_damage = self.shielddamageblocked;
-    self.shielddamageblocked = self.shielddamageblocked + damage;
+    self.shielddamageblocked += damage;
     if (self.shielddamageblocked % 200 < previous_shield_damage % 200) {
         score_event = "shield_blocked_damage";
         scoreevents::processscoreevent(score_event, self, undefined, self.currentweapon);

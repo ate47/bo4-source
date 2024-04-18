@@ -79,9 +79,9 @@ function function_a2279366() {
 function function_cd4de84f(doors) {
     centerposition = (0, 0, 0);
     foreach (door in doors) {
-        centerposition = centerposition + door.origin;
+        centerposition += door.origin;
     }
-    centerposition = centerposition / doors.size;
+    centerposition /= doors.size;
     /#
         sphere(centerposition, 12, (1, 0, 0), 1, 0, 12, 100);
     #/

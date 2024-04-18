@@ -97,7 +97,7 @@ function hit_alert_sfx_cp(mod, inflictor, perkfeedback, weapon, victim, psoffset
             hitalias = #"chr_hitmarker_human";
         }
         if (isdefined(hitalias)) {
-            hitalias = hitalias + suffix;
+            hitalias += suffix;
         }
     }
     return hitalias;

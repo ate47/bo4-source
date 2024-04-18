@@ -960,7 +960,7 @@ function function_45a968e4() {
 // Size: 0x2e
 function function_134670b9(n_delay) {
     if (isdefined(self.var_9f43786e)) {
-        self.var_9f43786e = self.var_9f43786e + n_delay;
+        self.var_9f43786e += n_delay;
     }
 }
 

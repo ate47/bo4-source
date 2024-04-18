@@ -229,7 +229,7 @@ function function_e870d33d() {
             var_80a327fb = var_37c33d3b >= 36 ? "stand" : "crouch";
             exit_origin = player.origin;
             vehicle_origin = player.origin + vectorscale(vectornormalize((player_forward[0], player_forward[1], 0)), float(isdefined(settings.var_4207321e) ? settings.var_4207321e : 16));
-            vehicle_origin = vehicle_origin + (0, 0, var_5035eb1b);
+            vehicle_origin += (0, 0, var_5035eb1b);
             player.var_2d23ee07 = var_5035eb1b;
             vehicle = spawnvehicle(var_13ab34e1, vehicle_origin, var_a3a6eba5);
             vehicle.team = player.team;
@@ -646,12 +646,12 @@ function function_9568854f(weapon, attachmentname) {
 // Size: 0x90
 function function_74bbb3fa(damage, weapon, target) {
     if (weapon.var_eb19d8cb) {
-        damage = damage * weapon.var_eb19d8cb;
+        damage *= weapon.var_eb19d8cb;
     }
     if (isdefined(target)) {
         if (function_9568854f(weapon, "fmj2")) {
             if (target.var_1f13c7f1) {
-                damage = damage * target.var_1f13c7f1;
+                damage *= target.var_1f13c7f1;
             }
         }
     }

@@ -256,7 +256,7 @@ function function_e8a9e948(localclientnum, var_695a7111) {
             if (isdefined(angles)) {
                 viewpitch = angles[0];
                 if (viewpitch > 180) {
-                    viewpitch = viewpitch - 360;
+                    viewpitch -= 360;
                 }
             }
             if (speed < 2552) {

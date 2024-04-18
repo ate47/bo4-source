@@ -620,7 +620,7 @@ function function_2444772e(n_time, var_94629f1a = 50) {
     self thread ct_utils::function_b42ce622(#"sabotagedata");
     self thread function_67a32c1c();
     while (var_4089242a > 0) {
-        level.var_33682199 = level.var_33682199 + var_386b47e6;
+        level.var_33682199 += var_386b47e6;
         var_4089242a--;
         wait(var_6f0549ed);
     }

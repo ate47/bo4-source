@@ -181,7 +181,7 @@ function function_af9fb8d1() {
             if (distancesquared(self.origin, e_player.origin) > n_radius_sqr) {
                 n_damage = 10 * e_player.var_1547e779;
                 e_player dodamage(n_damage, e_player.origin);
-                e_player.var_1547e779 = e_player.var_1547e779 * 1.2;
+                e_player.var_1547e779 *= 1.2;
                 continue;
             }
             if (e_player.var_1547e779 > 1) {
@@ -723,7 +723,7 @@ function lava_rock_init() {
     self.var_3a161b40 = self.origin;
     self.var_dfcc5d82 = spawn("trigger_radius_new", self.origin, 0, 384);
     self.var_dfcc5d82.e_rock = self;
-    self.origin = self.origin - (0, 0, 100);
+    self.origin -= (0, 0, 100);
     self.var_dfcc5d82 triggerenable(0);
 }
 

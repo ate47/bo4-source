@@ -1770,7 +1770,7 @@ function function_b0d64cce(v_pos, v_angles) {
             v_drop = v_pos;
         }
         v_ground = groundtrace(v_drop + (0, 0, 64) + (0, 0, 8), v_drop + (0, 0, 64) + (0, 0, -100000), 0, self)[#"position"];
-        v_ground = v_ground + (0, 0, 36);
+        v_ground += (0, 0, 36);
         e_brain = util::spawn_model("p8_zm_esc_warden_organs_brain", v_ground);
         waitframe(1);
         s_unitrigger = e_brain zm_item_pickup::create_item_pickup(&function_4626ec3, &function_fde99ac6, undefined, 96);
@@ -2156,7 +2156,7 @@ function function_e2a25377(w_reward) {
 // Checksum 0xe8fc0067, Offset: 0x8468
 // Size: 0x172
 function function_eaf6e39e(n_count = 1) {
-    self.n_current_progress = self.n_current_progress + n_count;
+    self.n_current_progress += n_count;
     if (self.n_current_progress >= self.n_goal) {
         self.n_current_progress = self.n_goal;
     }

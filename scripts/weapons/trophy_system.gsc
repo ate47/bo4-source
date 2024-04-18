@@ -374,7 +374,7 @@ function function_3170d645(projectile, trophy) {
             if (!isdefined(useobj) || !_the_root_zurich_spawners(useobj, trophy)) {
                 continue;
             }
-            var_2e36557f = var_2e36557f | (useobj.userate && (!player util::isenemyteam(useobj.claimteam) || useobj.interactteam === #"enemy"));
+            var_2e36557f |= useobj.userate && (!player util::isenemyteam(useobj.claimteam) || useobj.interactteam === #"enemy");
             if (var_2e36557f) {
                 break;
             }
@@ -390,7 +390,7 @@ function function_3170d645(projectile, trophy) {
             if (!isdefined(useobj) || !_the_root_zurich_spawners(useobj, trophy)) {
                 continue;
             }
-            var_2e36557f = var_2e36557f | (useobj.userate && (!player util::isenemyteam(useobj.claimteam) || useobj.interactteam === #"enemy"));
+            var_2e36557f |= useobj.userate && (!player util::isenemyteam(useobj.claimteam) || useobj.interactteam === #"enemy");
             if (var_2e36557f) {
                 break;
             }
@@ -405,7 +405,7 @@ function function_3170d645(projectile, trophy) {
             if (!isdefined(useobj) || !_the_root_zurich_spawners(useobj, trophy)) {
                 continue;
             }
-            var_2e36557f = var_2e36557f | (useobj.userate && (!player util::isenemyteam(useobj.claimteam) || useobj.interactteam === #"enemy"));
+            var_2e36557f |= useobj.userate && (!player util::isenemyteam(useobj.claimteam) || useobj.interactteam === #"enemy");
             if (var_2e36557f) {
                 break;
             }
@@ -493,7 +493,7 @@ function watchtrophysystemdamage(watcher) {
         if (type == "MOD_MELEE" || weapon.isemp || weapon.destroysequipment) {
             self.damagetaken = damagemax;
         } else {
-            self.damagetaken = self.damagetaken + damage;
+            self.damagetaken += damage;
         }
         if (self.damagetaken >= damagemax) {
             watcher thread weaponobjects::waitanddetonate(self, 0.05, attacker, weapon);

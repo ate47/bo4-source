@@ -345,14 +345,14 @@ function getbestspawnpoint(remotemissilespawnpoints) {
                 bestspawnpoint = spawnpoint;
             }
         }
-        bestspawnpoint.spawnscore = bestspawnpoint.spawnscore + 2;
+        bestspawnpoint.spawnscore += 2;
     }
     bestspawn = remotemissilespawnpoints[0];
     foreach (spawnpoint in remotemissilespawnpoints) {
         foreach (player in spawnpoint.validplayers) {
-            spawnpoint.spawnscore = spawnpoint.spawnscore + 1;
+            spawnpoint.spawnscore += 1;
             if (bullettracepassed(player.origin + (0, 0, 32), spawnpoint.origin, 0, player)) {
-                spawnpoint.spawnscore = spawnpoint.spawnscore + 3;
+                spawnpoint.spawnscore += 3;
             }
             if (spawnpoint.spawnscore > bestspawn.spawnscore) {
                 bestspawn = spawnpoint;

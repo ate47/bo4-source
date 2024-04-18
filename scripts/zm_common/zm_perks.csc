@@ -244,8 +244,8 @@ function perk_start_up() {
         if (isdefined(level._custom_perks[self.script_noteworthy]) && isdefined(level._custom_perks[self.script_noteworthy].machine_light_effect)) {
             self thread vending_machine_flicker_light(level._custom_perks[self.script_noteworthy].machine_light_effect, duration);
         }
-        timer = timer + duration;
-        duration = duration + 0.2;
+        timer += duration;
+        duration += 0.2;
         if (timer >= 3) {
             break;
         }
@@ -555,7 +555,7 @@ function function_5b123b68(localclientnum, b_show, b_use_offset = 0) {
         v_angles = self gettagangles("fx_tag_base_emblem");
         v_origin = self gettagorigin("fx_tag_base_emblem");
         if (b_use_offset && isdefined(self.var_7ad76c54)) {
-            v_origin = v_origin - anglestoforward(v_angles) * self.var_7ad76c54;
+            v_origin -= anglestoforward(v_angles) * self.var_7ad76c54;
         }
         self.var_d67a4862 = playfx(localclientnum, self.var_be82764e, v_origin, anglestoforward(v_angles));
         return;

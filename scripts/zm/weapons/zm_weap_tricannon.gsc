@@ -210,8 +210,8 @@ function function_54d03fdd(weapon, b_packed) {
         }
         n_launch = 75;
         if (b_packed) {
-            n_damage = n_damage * 1.75;
-            n_launch = n_launch * 1.5;
+            n_damage *= 1.75;
+            n_launch *= 1.5;
             n_damage = int(n_damage);
         }
         if (ai getentitytype() === 6) {
@@ -332,7 +332,7 @@ function function_2d6e2fb(e_shot) {
 // Checksum 0x41b540b9, Offset: 0x1858
 // Size: 0x1fc
 function function_cee7424b(v_impact, var_bdbde2d2, n_duration) {
-    for (n_time_passed = 0; n_time_passed <= n_duration; n_time_passed = n_time_passed + 0.25) {
+    for (n_time_passed = 0; n_time_passed <= n_duration; n_time_passed += 0.25) {
         var_ae51959e = getaiteamarray(level.zombie_team);
         var_ae51959e = arraysortclosest(var_ae51959e, v_impact, undefined, undefined, 112);
         foreach (ai in var_ae51959e) {

@@ -69,7 +69,7 @@ function function_7036ef4() {
     level thread ct_utils::function_6b71f442();
     a_col_torque_tut_fin_ground = getentarray("col_torque_tut_fin_ground", "targetname");
     foreach (col_torque_tut_fin_ground in a_col_torque_tut_fin_ground) {
-        col_torque_tut_fin_ground.origin = col_torque_tut_fin_ground.origin + (0, 0, 1024);
+        col_torque_tut_fin_ground.origin += (0, 0, 1024);
     }
     wait(1);
     foreach (var_29bfcd7c in a_col_torque_tut_fin_ground) {
@@ -1322,9 +1322,9 @@ function fin1_escalate() {
         var_648823c3 util::stop_magic_bullet_shield();
         var_648823c3 flag::set("ally_vulnerable");
         var_648823c3 thread function_1633d58c();
-        level.var_ff8d53af = level.var_ff8d53af + 1;
-        level.var_f0293ecb = level.var_f0293ecb + 1;
-        level.var_9a350e30 = level.var_9a350e30 - 0.2;
+        level.var_ff8d53af += 1;
+        level.var_f0293ecb += 1;
+        level.var_9a350e30 -= 0.2;
         level notify(#"hash_3ce5abc259d8b041");
         wait(1);
         level thread function_e96cc63f(level.var_f0293ecb, "s_fin_enemy", 1, level.var_9a350e30, 2, 1, "bot_fin1_escalate");
@@ -1913,7 +1913,7 @@ function function_e96cc63f(n_count = 3, spawnpts, var_810b40e6 = 1, var_4837ee77
                 n_to_spawn = var_810b40e6;
             }
             ct_bots::activate_bots(n_to_spawn, #"axis", str_targetname);
-            var_d24d310 = var_d24d310 + n_to_spawn;
+            var_d24d310 += n_to_spawn;
             /#
                 var_1411e20e = e_player ct_bots::function_dde6edbd();
             #/
@@ -2473,7 +2473,7 @@ function function_1df46b8d(n_percentage = 0.25) {
         s_notify = self waittill(#"damage");
         if (s_notify.mod == "MOD_MELEE_WEAPON_BUTT") {
             e_player = s_notify.attacker;
-            e_player.health = e_player.health + int(s_notify.amount / 2);
+            e_player.health += int(s_notify.amount / 2);
             if (e_player.health > e_player.maxhealth) {
                 e_player.health = e_player.maxhealth;
             }

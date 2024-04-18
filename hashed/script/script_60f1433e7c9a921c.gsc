@@ -77,7 +77,7 @@ function private _calculatepositionquerypath(queryresult, position, entity) {
     path = undefined;
     longestpath = 0;
     if (queryresult.data.size > 0) {
-        for (index = 0; index < queryresult.data.size; index = index + 16) {
+        for (index = 0; index < queryresult.data.size; index += 16) {
             goalpoints = [];
             for (goalindex = index; goalindex - index < 16 && goalindex < queryresult.data.size; goalindex++) {
                 goalpoints[goalpoints.size] = queryresult.data[goalindex].origin;

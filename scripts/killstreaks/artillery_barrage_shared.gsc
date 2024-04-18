@@ -194,7 +194,7 @@ function getteamcenter(team) {
         if (!isalive(teammate)) {
             continue;
         }
-        var_f44bf438 = var_f44bf438 + teammate.origin;
+        var_f44bf438 += teammate.origin;
         totalaliveplayers++;
     }
     if (totalaliveplayers == 0) {
@@ -671,10 +671,10 @@ function function_6cd200d2() {
         goalx = randomfloatrange(650, 700);
         goaly = randomfloatrange(650, 700);
         if (randomintrange(0, 2) > 0) {
-            goalx = goalx * -1;
+            goalx *= -1;
         }
         if (randomintrange(0, 2) > 0) {
-            goaly = goaly * -1;
+            goaly *= -1;
         }
         planedir = anglestoforward(plane.angles);
         plane setplanegoalpos(plane.origin + (goalx, goaly, randomfloatrange(600, 700) * -1) + vectorscale(planedir, 3500));

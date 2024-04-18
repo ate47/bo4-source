@@ -268,8 +268,8 @@ function function_3b6be5ed(localclientnum) {
 function function_91bb8595(gib_origin) {
     start_pos = self.origin;
     force = vectornormalize(gib_origin - start_pos);
-    force = force + (0, 0, randomfloatrange(0.4, 0.6));
-    force = force * randomfloatrange(0.8, 1.2);
+    force += (0, 0, randomfloatrange(0.4, 0.6));
+    force *= randomfloatrange(0.8, 1.2);
     return force;
 }
 

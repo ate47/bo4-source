@@ -87,7 +87,7 @@ function private function_889abd74() {
         }
         waitframe(1);
         if (var_da67715 > 0) {
-            var_da67715 = var_da67715 - float(function_60d95f53()) / 1000;
+            var_da67715 -= float(function_60d95f53()) / 1000;
         }
     }
 }

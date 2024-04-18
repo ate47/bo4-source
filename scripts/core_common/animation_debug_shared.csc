@@ -48,11 +48,11 @@ function anim_info_render_thread(animation, v_origin_or_ent, v_angles_or_tag) {
             str_extra_info = "<unknown string>";
             color = (0, 1, 1);
             if (flagsys::get(#"firstframe")) {
-                str_extra_info = str_extra_info + "<unknown string>";
+                str_extra_info += "<unknown string>";
             }
             var_958054e5 = getanimlength(animation);
             var_f667af2f = self getanimtime(animation) * var_958054e5;
-            str_extra_info = str_extra_info + "<unknown string>" + var_f667af2f + "<unknown string>" + var_958054e5 + "<unknown string>";
+            str_extra_info += "<unknown string>" + var_f667af2f + "<unknown string>" + var_958054e5 + "<unknown string>";
             s_pos = _get_align_pos(v_origin_or_ent, v_angles_or_tag);
             self anim_origin_render(s_pos.origin, s_pos.angles);
             line(self.origin, s_pos.origin, color, 0.5, 1);

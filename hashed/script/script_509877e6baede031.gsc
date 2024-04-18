@@ -153,7 +153,7 @@ function function_a546fd97() {
             /#
                 getplayers()[0] iprintln("<unknown string>");
             #/
-            level.var_2363fbdb = level.var_2363fbdb + 1;
+            level.var_2363fbdb += 1;
             self.e_phone scene::play("ring");
             if (level.var_2363fbdb == 3) {
                 wait(1);
@@ -182,7 +182,7 @@ function function_7dbe8985() {
         zm_hms_util::function_e308175e(#"hash_1678ea887d624d95", self.origin);
         level flag::set(#"hash_51ae2a56153f7f83");
     }
-    level.var_c2e6ed5a = level.var_c2e6ed5a + 1;
+    level.var_c2e6ed5a += 1;
 }
 
 // Namespace namespace_3417f8d2/namespace_3417f8d2

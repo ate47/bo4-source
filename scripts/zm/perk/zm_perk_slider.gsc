@@ -144,7 +144,7 @@ function function_dc9a257a(n_slot) {
         v_start_position = self.origin;
         self waittill(#"slide_end");
         n_distance = distance(v_start_position, self.origin);
-        self.var_f354086e = self.var_f354086e + n_distance;
+        self.var_f354086e += n_distance;
         self zm_perks::function_13880aa5(n_slot, min(1, self.var_f354086e / 550), #"perk_slider");
         if (!function_2772480a()) {
             continue;
@@ -182,7 +182,7 @@ function slide_explosion(n_slot) {
         var_fd11502e = 1200;
         var_e9571d8b = self.var_e9571d8b;
         if (isdefined(var_e9571d8b)) {
-            var_fd11502e = var_fd11502e + var_e9571d8b * 6;
+            var_fd11502e += var_e9571d8b * 6;
             var_fd11502e = int(var_fd11502e);
         }
         var_1574e1cf = [];

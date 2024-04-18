@@ -457,7 +457,7 @@ function function_8fd1207a() {
         }
         mdl_valve thread function_49200079(n_mod);
         mdl_valve waittill(#"hash_21146570fad885f3");
-        n_mod = n_mod * -1;
+        n_mod *= -1;
     }
 }
 
@@ -736,7 +736,7 @@ function fishy_offering_step_1_setup(var_5ea5c94d) {
                 if (s_landing.var_cdcee58e === 1 && level flag::get(#"water_drained_aft")) {
                     fx::play(#"hash_708765aa3f48456d", s_landing.origin + (0, 0, 20), (270, 180, 180));
                 }
-                s_landing.origin = s_landing.origin + (0, 0, 48);
+                s_landing.origin += (0, 0, 48);
                 e_activator = s_landing zm_unitrigger::function_fac87205();
                 e_fish playsound(#"hash_62d7c979858b9326");
                 e_activator zm_audio::create_and_play_dialog(#"fish", #"retrieve_first");
@@ -877,10 +877,10 @@ function function_bf250d60() {
                 str_targetname = s_landing.target;
                 s_landing struct::delete();
                 s_landing = struct::get(str_targetname);
-                self.angles = self.angles - (360, 360, 360);
+                self.angles -= (360, 360, 360);
                 continue;
             }
-            s_landing.origin = s_landing.origin + (0, 0, 32);
+            s_landing.origin += (0, 0, 32);
             e_who = s_landing zm_unitrigger::function_fac87205();
             e_who zm_audio::create_and_play_dialog(#"component_pickup", #"generic");
             playsoundatposition(#"hash_47aa0fa4a084903b", self.origin);
@@ -2597,23 +2597,23 @@ function function_281b6803(zbarrier_magicbox) {
     case #"hero_hammer_lv3":
     case #"hero_hammer_lv2":
     case #"hero_hammer_lv1":
-        self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 8;
-        self.angles = self.angles + (90, 0, 0);
+        self.origin += vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 8;
+        self.angles += (90, 0, 0);
         break;
     case #"hero_scepter_lv3":
     case #"hero_scepter_lv2":
     case #"hero_scepter_lv1":
-        self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 24;
+        self.origin += vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 24;
         break;
     case #"hero_sword_pistol_lv2":
     case #"hero_sword_pistol_lv3":
     case #"hero_sword_pistol_lv1":
         if (self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl1_world" || self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl2_world" || self.model === #"wpn_t8_zm_melee_dw_hand_cannon_lvl3_world") {
-            self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 10;
-            self.origin = self.origin + vectornormalize(anglestoup(zbarrier_magicbox.angles)) * 4;
+            self.origin += vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 10;
+            self.origin += vectornormalize(anglestoup(zbarrier_magicbox.angles)) * 4;
         } else {
-            self.origin = self.origin + vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 16;
-            self.angles = self.angles + (90, 0, 0);
+            self.origin += vectornormalize(anglestoforward(zbarrier_magicbox.angles)) * 16;
+            self.angles += (90, 0, 0);
         }
         break;
     default:

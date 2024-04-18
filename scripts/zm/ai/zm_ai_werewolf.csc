@@ -109,7 +109,7 @@ function private function_f4b140ab(localclientnum, pos, surface, notetrack, bone
     n_dist = distancesquared(pos, e_player.origin);
     var_107019dc = 1000 * 1000;
     n_scale = (var_107019dc - n_dist) / var_107019dc;
-    n_scale = n_scale * 0.25;
+    n_scale *= 0.25;
     if (n_scale <= 0.01) {
         return;
     }

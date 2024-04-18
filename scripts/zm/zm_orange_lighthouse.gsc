@@ -799,7 +799,7 @@ function soapstone_watcher() {
     var_dac21b13 = 0;
     while (true) {
         if (isdefined(level.s_soapstone) && isdefined(level.s_soapstone.s_placement) && level.s_soapstone.s_placement.e_stone istouching(self)) {
-            var_76b556c9 = var_76b556c9 + 0.1;
+            var_76b556c9 += 0.1;
             if (var_76b556c9 >= 1) {
                 if (!level.s_soapstone.is_charged || !level.s_soapstone.is_hot) {
                     level thread zm_orange_util::function_fd24e47f("vox_soap_stones_heat", -1, 1, 0);

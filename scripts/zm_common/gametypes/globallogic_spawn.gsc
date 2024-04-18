@@ -117,7 +117,7 @@ function timeuntilwavespawn(minimumwait) {
     numwaves = ceil(numwavespassedearliestspawntime);
     timeofspawn = lastwavetime + numwaves * wavedelay;
     if (isdefined(self.wavespawnindex)) {
-        timeofspawn = timeofspawn + 50 * self.wavespawnindex;
+        timeofspawn += 50 * self.wavespawnindex;
     }
     return (timeofspawn - gettime()) / 1000;
 }
@@ -449,7 +449,7 @@ function spawnintermission(usedefaultcallback) {
                 self playlocalsound(#"mus_contract_complete");
             }
             self closeingamemenu();
-            for (waittime = 4; waittime; waittime = waittime - 0.25) {
+            for (waittime = 4; waittime; waittime -= 0.25) {
                 wait(0.25);
             }
         }
@@ -618,10 +618,10 @@ function waitandspawnclient(timealreadypassed) {
     }
     timeuntilspawn = timeuntilspawn(0);
     if (timeuntilspawn > timealreadypassed) {
-        timeuntilspawn = timeuntilspawn - timealreadypassed;
+        timeuntilspawn -= timealreadypassed;
         timealreadypassed = 0;
     } else {
-        timealreadypassed = timealreadypassed - timeuntilspawn;
+        timealreadypassed -= timeuntilspawn;
         timeuntilspawn = 0;
     }
     if (timeuntilspawn > 0) {

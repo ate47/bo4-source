@@ -157,7 +157,7 @@ function function_4bbed101(e_player) {
         self thread function_3d9b6ed6(e_player);
         self thread function_c38e2c52();
         wait(0.1);
-        n_total_time = n_total_time + 0.1;
+        n_total_time += 0.1;
     }
     if (isdefined(level.s_soapstone) && isdefined(level.s_soapstone.s_placement) && level.s_soapstone.var_e15f0d15 === 1) {
         if (!level.s_soapstone.is_charged || level.s_soapstone.is_hot) {

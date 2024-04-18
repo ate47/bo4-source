@@ -36,7 +36,7 @@ function function_c5343206(eattacker, einflictor, idamage, smeansofdeath, weapon
         self.attackers[self.attackers.size] = eattacker;
         self.attackerdata[attackerclientid] = 0;
     } else {
-        var_ca60c93e.damage = var_ca60c93e.damage + idamage;
+        var_ca60c93e.damage += idamage;
         if (!isdefined(var_ca60c93e.time)) {
             var_ca60c93e.time = time;
         }
@@ -302,7 +302,7 @@ function trackattackerdamage(eattacker, idamage, smeansofdeath, weapon) {
         self.attackers[self.attackers.size] = eattacker;
         self.attackerdata[attackerclientid] = 0;
     } else {
-        var_ca60c93e.damage = var_ca60c93e.damage + idamage;
+        var_ca60c93e.damage += idamage;
         var_ca60c93e.meansofdeath = smeansofdeath;
         var_ca60c93e.weapon = weapon;
         if (!isdefined(var_ca60c93e.time)) {

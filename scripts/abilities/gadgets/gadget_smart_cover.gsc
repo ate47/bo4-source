@@ -1098,7 +1098,7 @@ function microwaveentity(entity) {
         }
         damage = (isdefined(level.smartcoversettings.bundle.var_d2369c5a) ? level.smartcoversettings.bundle.var_d2369c5a : 0) * damagescalar;
         if (level.hardcoremode) {
-            damage = damage * (isdefined(level.smartcoversettings.bundle.var_78c1e37b) ? level.smartcoversettings.bundle.var_78c1e37b : 0.25);
+            damage *= isdefined(level.smartcoversettings.bundle.var_78c1e37b) ? level.smartcoversettings.bundle.var_78c1e37b : 0.25;
         }
         if (!isai(entity) && entity util::mayapplyscreeneffect()) {
             if (!isdefined(entity.microwavepoisoning) || !entity.microwavepoisoning) {

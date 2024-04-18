@@ -1059,7 +1059,7 @@ function create_carry_object(ownerteam, trigger, visuals, offset, objectivename,
     if (carryobject function_4ea98a09()) {
         assert(isdefined(objectivename), "pack");
         carryobject.objid = [];
-        level.objidstart = level.objidstart + 2;
+        level.objidstart += 2;
         carryobject.objectiveid = get_next_obj_id();
         objective_add(carryobject.objectiveid, "invisible", carryobject.curorigin, objectivename);
     }
@@ -1430,7 +1430,7 @@ function set_trigger_origin(origin) {
     offset = (self.maxs[2] - self.mins[2]) / 2;
     self.origin = (origin[0], origin[1], origin[2] + offset);
     if (isvec(self.trigger_offset)) {
-        self.origin = self.origin + self.trigger_offset;
+        self.origin += self.trigger_offset;
     }
 }
 
@@ -2533,7 +2533,7 @@ function use_object_prox_think() {
             } else if (self.usetime && (!self.mustmaintainclaim || self get_owner_team() != self get_claim_team())) {
                 if (self.decayprogress && !self.numtouching[self.claimteam]) {
                     if (isdefined(self.autodecaytime) && self.autodecaytime > 0 && self.curprogress > 0) {
-                        self.curprogress = self.curprogress - level.var_9fee970c * self.usetime / int(self.autodecaytime * 1000);
+                        self.curprogress -= level.var_9fee970c * self.usetime / int(self.autodecaytime * 1000);
                         deltaprogress = self.curprogress - previousprogress;
                         function_72307b09(deltaprogress);
                         self update_current_progress();
@@ -2561,7 +2561,7 @@ function use_object_prox_think() {
                     if (self.var_98bb0715 && isdefined(self.decaytime) && self.decaytime > 0) {
                         decayscale = self.usetime / self.decaytime;
                     }
-                    self.curprogress = self.curprogress - level.var_9fee970c * self.userate * decayscale;
+                    self.curprogress -= level.var_9fee970c * self.userate * decayscale;
                     deltaprogress = self.curprogress - previousprogress;
                     function_72307b09(deltaprogress);
                     if (isdefined(self.decayprogressmin) && self.curprogress < self.decayprogressmin) {
@@ -2603,7 +2603,7 @@ function use_object_prox_think() {
                     function_4783042a();
                 } else {
                     self.inuse = 1;
-                    self.curprogress = self.curprogress + level.var_9fee970c * self.userate;
+                    self.curprogress += level.var_9fee970c * self.userate;
                     deltaprogress = self.curprogress - previousprogress;
                     function_72307b09(deltaprogress);
                     self update_current_progress();
@@ -2959,7 +2959,7 @@ function trigger_touch_think(object) {
         player_use_rate = self.playerrole.gameobjectuserate;
     }
     if (isdefined(self.gametypeuseratecallback)) {
-        player_use_rate = player_use_rate * self [[ self.gametypeuseratecallback ]](object);
+        player_use_rate *= self [[ self.gametypeuseratecallback ]](object);
     }
     object.touchinguserate[team] = object.touchinguserate[team] + player_use_rate;
     touchname = self getentitynumber();
@@ -3059,7 +3059,7 @@ function get_num_touching_except_team(ignoreteam) {
         if (ignoreteam == team) {
             continue;
         }
-        numtouching = numtouching + self.numtouching[team];
+        numtouching += self.numtouching[team];
     }
     return numtouching;
 }
@@ -3082,7 +3082,7 @@ function get_touching_use_rate_except_team(ignoreteam) {
         if (ignoreteam == team) {
             continue;
         }
-        numtouching = numtouching + get_team_use_rate(team);
+        numtouching += get_team_use_rate(team);
     }
     return numtouching;
 }
@@ -3354,14 +3354,14 @@ function use_hold_think_loop(player) {
     waitforweapon = 1;
     timedout = 0;
     while (self continue_hold_think_loop(player, waitforweapon, timedout, self.usetime)) {
-        timedout = timedout + 0.05;
+        timedout += 0.05;
         if (!isdefined(useweapon) || useweapon == level.weaponnone || player getcurrentweapon() == useweapon) {
             playerusemultiplier = 1;
             if (isdefined(self.getuseratemultiplier)) {
                 playerusemultiplier = self [[ self.getuseratemultiplier ]](player);
             }
             previousprogress = self.curprogress;
-            self.curprogress = self.curprogress + level.var_9fee970c * self.userate * playerusemultiplier;
+            self.curprogress += level.var_9fee970c * self.userate * playerusemultiplier;
             deltaprogress = self.curprogress - previousprogress;
             if (isdefined(self.var_5c196da4) && self.var_5c196da4 && isdefined(self.var_1dbb2b2b)) {
                 function_72307b09(deltaprogress);
@@ -4533,7 +4533,7 @@ function create_pack_object(ownerteam, trigger, visuals, offset, objectivename, 
     if (packobject function_4ea98a09()) {
         assert(isdefined(objectivename), "pack");
         packobject.objid = [];
-        level.objidstart = level.objidstart + 2;
+        level.objidstart += 2;
         packobject.objectiveid = get_next_obj_id();
         objective_add(packobject.objectiveid, "invisible", packobject.curorigin, objectivename);
     }

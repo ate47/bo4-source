@@ -69,7 +69,7 @@ function function_c5ea0b0() {
     if (isdefined(self.var_552afb80) && self.var_552afb80.size > 0) {
         var_65e4173d = (0, 0, 0);
         foreach (delta in self.var_552afb80) {
-            var_65e4173d = var_65e4173d + delta;
+            var_65e4173d += delta;
         }
         vectorscale(var_65e4173d, 1 / self.var_552afb80.size);
         return var_65e4173d;
@@ -518,7 +518,7 @@ function function_766c006e(debug_info) {
         }
         time_left = max(self.var_d18573c9 - gettime(), 0);
         returnstring = debug_info.name + "<unknown string>" + (time_left < 0 ? "<unknown string>" : "<unknown string>");
-        returnstring = returnstring + time_left;
+        returnstring += time_left;
         return returnstring;
     #/
 }
@@ -559,7 +559,7 @@ function function_af31614c() {
                         level.var_3d62686d = array(level.var_3d62686d);
                     }
                     level.var_3d62686d[level.var_3d62686d.size] = var_aa917a22;
-                    current_y = current_y + 10;
+                    current_y += 10;
                     if (type == "<unknown string>") {
                         current_x = 0;
                         foreach (player in level.players) {
@@ -571,9 +571,9 @@ function function_af31614c() {
                                 level.var_3d62686d = array(level.var_3d62686d);
                             }
                             level.var_3d62686d[level.var_3d62686d.size] = var_aa917a22;
-                            current_x = current_x + 110;
+                            current_x += 110;
                         }
-                        current_y = current_y + 10;
+                        current_y += 10;
                     }
                     foreach (var_dc66eccb in var_42e5f033) {
                         current_x = 0;
@@ -588,7 +588,7 @@ function function_af31614c() {
                                     level.var_3d62686d = array(level.var_3d62686d);
                                 }
                                 level.var_3d62686d[level.var_3d62686d.size] = var_aa917a22;
-                                current_x = current_x + 110;
+                                current_x += 110;
                             }
                         } else {
                             var_aa917a22 = create_hudelem(current_y);
@@ -601,7 +601,7 @@ function function_af31614c() {
                             }
                             level.var_3d62686d[level.var_3d62686d.size] = var_aa917a22;
                         }
-                        current_y = current_y + 10;
+                        current_y += 10;
                     }
                 }
             }

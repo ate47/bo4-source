@@ -509,8 +509,8 @@ function heli_get_protect_spot(protectdest, var_551cf1b9, heli_team) {
     heightmax = level.var_5f6d1a12;
     if (heli_team == #"axis") {
         assert(isdefined(level.var_fb59767));
-        heightmin = heightmin + level.var_fb59767;
-        heightmax = heightmax + level.var_fb59767;
+        heightmin += level.var_fb59767;
+        heightmax += level.var_fb59767;
     }
     hoverheight = heightmin + (heightmax - heightmin) / 2;
     radius = 10000;

@@ -331,7 +331,7 @@ function state_idgun_crush_update(params) {
             }
             self.crush_anim_started = 1;
         }
-        fly_ent.origin = fly_ent.origin + veh_to_black_hole_vec * 8;
+        fly_ent.origin += veh_to_black_hole_vec * 8;
         wait(0.1);
     }
 }

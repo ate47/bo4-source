@@ -693,7 +693,7 @@ function weaponobjectdamage(watcher) {
         type = waitresult.mod;
         idflags = waitresult.flags;
         damage = weapons::function_74bbb3fa(damage, weapon, self.weapon);
-        self.damagetaken = self.damagetaken + damage;
+        self.damagetaken += damage;
         if (!isplayer(attacker) && isdefined(attacker.owner)) {
             attacker = attacker.owner;
         }
@@ -2148,7 +2148,7 @@ function private function_c9fc5521(player, weapon) {
 function private get_ammo(player, weapon) {
     ammo = player getweaponammoclip(weapon);
     if (!weapon.iscliponly) {
-        ammo = ammo + player getweaponammostock(weapon);
+        ammo += player getweaponammostock(weapon);
     }
     return ammo;
 }
@@ -2411,7 +2411,7 @@ function function_57152a5(watcher, player, origin) {
     height = 50;
     if (isdefined(watcher.weapon) && isdefined(watcher.weapon.var_ac36c1db) && watcher.weapon.var_ac36c1db > 0) {
         height = watcher.weapon.var_ac36c1db;
-        origin = origin - (0, 0, height * 0.5);
+        origin -= (0, 0, height * 0.5);
     }
     self.pickuptrigger = function_d5e8c3d0(origin, 50, 50);
     self.pickuptrigger.claimedby = player;

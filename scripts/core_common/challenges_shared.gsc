@@ -715,27 +715,27 @@ function function_90185171(totaltimeplayed, credits, casexp) {
         }
         if (getdvarint(#"loot_enableblackmarket", 1)) {
             credit_multiplier = max(player function_c52bcf79(), getdvarfloat(#"scr_credit_scale", 1));
-            credits = credits * credit_multiplier;
+            credits *= credit_multiplier;
             tier_boost = player stats::function_ff8f4f17(#"tier_boost");
             if (isdefined(tier_boost) && tier_boost > 0) {
                 tier_boost = min(tier_boost, getdvarint(#"hash_20997c814ed4b7ed", 25));
-                credits = credits + credits * tier_boost / 100;
+                credits += credits * tier_boost / 100;
                 println("<unknown string>" + player.name + "<unknown string>" + tier_boost);
             }
             bo_pass_tier_boost = player stats::function_ff8f4f17(#"bo_pass_tier_boost");
             if (isdefined(bo_pass_tier_boost) && bo_pass_tier_boost > 0) {
-                credits = credits + credits * bo_pass_tier_boost / 100;
+                credits += credits * bo_pass_tier_boost / 100;
                 println("<unknown string>" + player.name + "<unknown string>" + bo_pass_tier_boost);
             }
             bo_pass_party_tier_boost = player stats::function_ff8f4f17(#"bo_pass_party_tier_boost");
             if (isdefined(bo_pass_party_tier_boost) && bo_pass_party_tier_boost > 0) {
-                credits = credits + credits * bo_pass_party_tier_boost / 100;
+                credits += credits * bo_pass_party_tier_boost / 100;
                 println("<unknown string>" + player.name + "<unknown string>" + bo_pass_party_tier_boost);
             }
             println("<unknown string>" + player.name + "<unknown string>" + totaltimeplayed + "<unknown string>" + credits + "<unknown string>" + casexp);
             if (player function_875e4dbc()) {
                 var_91503b6f = getdvarfloat(#"hash_4da039b4bc312fc1", 1.1);
-                credits = credits * var_91503b6f;
+                credits *= var_91503b6f;
             }
             var_1ed920ee = 0;
             var_5f508856 = 0;
@@ -1303,7 +1303,7 @@ function getlosersteamscores(winner) {
         if (team == winner) {
             continue;
         }
-        teamscores = teamscores + game.stat[#"teamscores"][team];
+        teamscores += game.stat[#"teamscores"][team];
     }
     return teamscores;
 }
@@ -1748,10 +1748,10 @@ function playerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, shit
             data.ownerweaponatlaunch = einflictor.ownerweaponatlaunch;
         }
         if (isdefined(einflictor.locking_on)) {
-            waslockingon = waslockingon | einflictor.locking_on;
+            waslockingon |= einflictor.locking_on;
         }
         if (isdefined(einflictor.locked_on)) {
-            waslockingon = waslockingon | einflictor.locked_on;
+            waslockingon |= einflictor.locked_on;
         }
         washacked = einflictor util::ishacked();
         if (isdefined(einflictor.stucktoplayer) && isdefined(einflictor.originalowner) && einflictor.stucktoplayer == self && einflictor.originalowner == attacker) {
@@ -1759,7 +1759,7 @@ function playerkilled(einflictor, attacker, idamage, smeansofdeath, weapon, shit
         }
     }
     victimentnum = victim getentitynumber();
-    waslockingon = waslockingon & 1 << victimentnum;
+    waslockingon &= 1 << victimentnum;
     if (waslockingon != 0) {
         data.waslockingon = 1;
     } else {

@@ -100,7 +100,7 @@ function damageeffectarea(owner, position, radius, height, killcament) {
         owner thread [[ level.dogsonflashdogs ]](gaseffectarea);
     }
     loopwaittime = 0.5;
-    for (durationoftabun = level.tabungasduration; durationoftabun > 0; durationoftabun = durationoftabun - loopwaittime) {
+    for (durationoftabun = level.tabungasduration; durationoftabun > 0; durationoftabun -= loopwaittime) {
         players = getplayers();
         for (i = 0; i < players.size; i++) {
             if (level.friendlyfire == 0) {
@@ -345,7 +345,7 @@ function spawnalllocs(owner, startpos) {
         }
     }
     onefoot = (0, 0, 12);
-    startpos = startpos - onefoot;
+    startpos -= onefoot;
     thread playtabunsound(startpos);
     if (singleeffect == 1) {
         singlelocation(startpos, owner);
@@ -384,11 +384,11 @@ function setuptabunfx(owner, locations, count) {
     fxtoplay = undefined;
     previous = count - 1;
     if (previous < 0) {
-        previous = previous + locations[#"loc"].size;
+        previous += locations[#"loc"].size;
     }
     next = count + 1;
     if (next >= locations[#"loc"].size) {
-        next = next - locations[#"loc"].size;
+        next -= locations[#"loc"].size;
     }
     effect0dist = level.fx_tabun_radius0 * level.fx_tabun_radius0;
     effect1dist = level.fx_tabun_radius1 * level.fx_tabun_radius1;
@@ -415,7 +415,7 @@ function setuptabunfx(owner, locations, count) {
 function getcenteroflocations(locations) {
     centroid = (0, 0, 0);
     for (i = 0; i < locations[#"loc"].size; i++) {
-        centroid = centroid + locations[#"loc"][i] / locations[#"loc"].size;
+        centroid += locations[#"loc"][i] / locations[#"loc"].size;
     }
     /#
         level.tabun_debug = getdvarint(#"scr_tabun_debug", 0);

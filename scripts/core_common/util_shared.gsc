@@ -438,7 +438,7 @@ function function_6844bea4(radius1, radius2, time, color, origin, normal) {
         angletoplayer = vectortoangles(normal);
         for (i = 0; i < circleres; i++) {
             plotpoints[plotpoints.size] = origin + vectorscale(anglestoforward(angletoplayer + (rad, 90, 0)), radius);
-            rad = rad + circleinc;
+            rad += circleinc;
         }
         plot_points(plotpoints, color[0], color[1], color[2], time);
     #/
@@ -1440,7 +1440,7 @@ function is_looking_at(ent_or_org, n_dot_range = 0.9, do_trace = 0, v_offset) {
     assert(isdefined(ent_or_org), "<unknown string>");
     v_point = isvec(ent_or_org) ? ent_or_org : ent_or_org.origin;
     if (isvec(v_offset)) {
-        v_point = v_point + v_offset;
+        v_point += v_offset;
     }
     b_can_see = 0;
     b_use_tag_eye = 0;
@@ -1780,18 +1780,18 @@ function script_wait() {
     if (isdefined(self.script_wait)) {
         wait(self.script_wait);
         if (isdefined(self.script_wait_add)) {
-            self.script_wait = self.script_wait + self.script_wait_add;
+            self.script_wait += self.script_wait_add;
         }
     }
     n_min = isdefined(self.script_wait_min) ? self.script_wait_min : 0;
     n_max = isdefined(self.script_wait_max) ? self.script_wait_max : 0;
     if (n_max > n_min) {
         wait(randomfloatrange(n_min, n_max));
-        self.script_wait_min = self.script_wait_min + (isdefined(self.script_wait_add) ? self.script_wait_add : 0);
-        self.script_wait_max = self.script_wait_max + (isdefined(self.script_wait_add) ? self.script_wait_add : 0);
+        self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
+        self.script_wait_max += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     } else if (n_min > 0) {
         wait(n_min);
-        self.script_wait_min = self.script_wait_min + (isdefined(self.script_wait_add) ? self.script_wait_add : 0);
+        self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     }
     return gettime() - n_time;
 }
@@ -2300,7 +2300,7 @@ function note_elapsed_time(start_time, label = "unspecified") {
         if (!isdefined(start_time)) {
             return;
         }
-        elapsed_time = elapsed_time * 0.001;
+        elapsed_time *= 0.001;
         if (!level.orbis) {
             elapsed_time = int(elapsed_time);
         }
@@ -2342,8 +2342,8 @@ function note_elapsed_times(&elapsed_time_array, label = "unspecified") {
         smallest_elapsed_time = 2147483647;
         largest_elapsed_time = 0;
         foreach (elapsed_time in elapsed_time_array) {
-            elapsed_time = elapsed_time * 0.001;
-            total_elapsed_time = total_elapsed_time + elapsed_time;
+            elapsed_time *= 0.001;
+            total_elapsed_time += elapsed_time;
             if (elapsed_time < smallest_elapsed_time) {
                 smallest_elapsed_time = elapsed_time;
             }
@@ -2377,7 +2377,7 @@ function get_elapsed_time(start_time, end_time = getmicrosecondsraw()) {
     }
     elapsed_time = end_time - start_time;
     if (elapsed_time < 0) {
-        elapsed_time = elapsed_time + -2147483648;
+        elapsed_time += -2147483648;
     }
     return elapsed_time;
 }
@@ -2821,8 +2821,8 @@ function auto_delete(n_mode = 1, n_min_time_alive = 0, n_dist_horizontal = 0, n_
         return;
     }
     if (n_mode & 16 || n_mode == 1 || n_mode == 8) {
-        n_mode = n_mode | 2;
-        n_mode = n_mode | 4;
+        n_mode |= 2;
+        n_mode |= 4;
     }
     n_think_time = 1;
     n_tests_to_do = 2;
@@ -2985,9 +2985,9 @@ function function_2146bd83(weapon) {
     var_2f3a032e = "";
     for (i = 0; i < weapon.attachments.size; i++) {
         if (!i) {
-            var_2f3a032e = var_2f3a032e + "+";
+            var_2f3a032e += "+";
         }
-        var_2f3a032e = var_2f3a032e + weapon.attachments[i];
+        var_2f3a032e += weapon.attachments[i];
     }
     return var_2f3a032e;
 }
@@ -3064,7 +3064,7 @@ function positionquery_pointarray(origin, minsearchradius, maxsearchradius, half
 function totalplayercount() {
     count = 0;
     foreach (team, _ in level.teams) {
-        count = count + level.playercount[team];
+        count += level.playercount[team];
     }
     return count;
 }
@@ -3316,7 +3316,7 @@ function getotherteamsroundswon(str_skip_team) {
         if (team === str_skip_team) {
             continue;
         }
-        roundswon = roundswon + game.stat[#"roundswon"][team];
+        roundswon += game.stat[#"roundswon"][team];
     }
     return roundswon;
 }
@@ -3644,8 +3644,8 @@ function trackwallrunningdistance() {
         starttime = gettime();
         self.movementtracking.wallrunning.count++;
         self waittill(#"wallrun_end");
-        self.movementtracking.wallrunning.distance = self.movementtracking.wallrunning.distance + distance(startpos, self.origin);
-        self.movementtracking.wallrunning.time = self.movementtracking.wallrunning.time + gettime() - starttime;
+        self.movementtracking.wallrunning.distance += distance(startpos, self.origin);
+        self.movementtracking.wallrunning.time += gettime() - starttime;
     }
 }
 
@@ -3665,8 +3665,8 @@ function tracksprintdistance() {
         starttime = gettime();
         self.movementtracking.sprinting.count++;
         self waittill(#"sprint_end");
-        self.movementtracking.sprinting.distance = self.movementtracking.sprinting.distance + distance(startpos, self.origin);
-        self.movementtracking.sprinting.time = self.movementtracking.sprinting.time + gettime() - starttime;
+        self.movementtracking.sprinting.distance += distance(startpos, self.origin);
+        self.movementtracking.sprinting.time += gettime() - starttime;
     }
 }
 
@@ -3686,8 +3686,8 @@ function trackdoublejumpdistance() {
         starttime = gettime();
         self.movementtracking.doublejump.count++;
         self waittill(#"doublejump_end");
-        self.movementtracking.doublejump.distance = self.movementtracking.doublejump.distance + distance(startpos, self.origin);
-        self.movementtracking.doublejump.time = self.movementtracking.doublejump.time + gettime() - starttime;
+        self.movementtracking.doublejump.distance += distance(startpos, self.origin);
+        self.movementtracking.doublejump.time += gettime() - starttime;
     }
 }
 
@@ -3759,7 +3759,7 @@ function getotherteamsmask(str_skip_team) {
         if (team === str_skip_team) {
             continue;
         }
-        mask = mask | getteammask(team);
+        mask |= getteammask(team);
     }
     return mask;
 }

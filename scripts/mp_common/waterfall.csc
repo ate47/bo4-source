@@ -137,7 +137,7 @@ function trig_enter_waterfall_mist(localplayer) {
             filter::disable_filter_sprite_rain(localplayer, 0);
             break;
         }
-        localplayer.rainopacity = localplayer.rainopacity + 0.003;
+        localplayer.rainopacity += 0.003;
         if (localplayer.rainopacity > 1) {
             localplayer.rainopacity = 1;
         }
@@ -161,7 +161,7 @@ function trig_leave_waterfall_mist(localplayer) {
                 filter::disable_filter_sprite_rain(localplayer, 0);
                 break;
             }
-            localplayer.rainopacity = localplayer.rainopacity - 0.005;
+            localplayer.rainopacity -= 0.005;
             filter::set_filter_sprite_rain_opacity(localplayer, 0, localplayer.rainopacity);
             filter::set_filter_sprite_rain_elapsed(localplayer, 0, localplayer getclienttime());
             waitframe(1);

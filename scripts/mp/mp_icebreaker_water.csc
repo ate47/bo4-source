@@ -50,7 +50,7 @@ function toggle_player_freezing_water(localclientnum, oldval, newval, bnewent, b
         self.var_b5c65495 = 0;
         wait(1);
         while (isalive(self) && !(isdefined(self.var_b5c65495) && self.var_b5c65495) && isdefined(self.var_f809ca21) && self.var_f809ca21 > 0) {
-            self.var_f809ca21 = self.var_f809ca21 - 0.2;
+            self.var_f809ca21 -= 0.2;
             if (self.var_f809ca21 < 0) {
                 self.var_f809ca21 = 0;
             }
@@ -67,7 +67,7 @@ function toggle_player_freezing_water(localclientnum, oldval, newval, bnewent, b
         self postfx::playpostfxbundle("pstfx_frost_loop_fullscreen");
     }
     while (isalive(self) && isdefined(self.var_b5c65495) && self.var_b5c65495 && isdefined(self.var_f809ca21) && self.var_f809ca21 < 1) {
-        self.var_f809ca21 = self.var_f809ca21 + 0.1;
+        self.var_f809ca21 += 0.1;
         if (self.var_f809ca21 > 1) {
             self.var_f809ca21 = 1;
         }

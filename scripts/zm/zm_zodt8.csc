@@ -619,8 +619,8 @@ function function_b7fc06b2(localclientnum, oldval, newval, bnewent, binitialsnap
     n_time = 0;
     var_1713b028 = (4 - 1) / (45 - 25) / 1;
     while (var_17623425 > 1) {
-        n_time = n_time + 1;
-        var_17623425 = var_17623425 - var_1713b028;
+        n_time += 1;
+        var_17623425 -= var_1713b028;
         function_17e1650c(var_17623425);
         wait(1);
     }

@@ -79,7 +79,7 @@ function function_ee150fcc(team, team_players) {
     }
     var_6195506c = 0;
     foreach (count in var_ab9e77bf) {
-        var_6195506c = var_6195506c + count;
+        var_6195506c += count;
     }
     return level.maxteamplayers - var_6195506c;
 }
@@ -621,7 +621,7 @@ function function_a9822793() {
                 if (team == #"none") {
                     continue;
                 }
-                for (current_count = level.maxteamplayers - var_a787dfe7; current_count < level.maxteamplayers; current_count = current_count + function_78db0e06(var_6f782d8f, team)) {
+                for (current_count = level.maxteamplayers - var_a787dfe7; current_count < level.maxteamplayers; current_count += function_78db0e06(var_6f782d8f, team)) {
                     var_6f782d8f = function_b25f48bf(team, var_a787dfe7, distribution[platoon], var_ed0a1ecc[platoon]);
                     if (!isdefined(var_6f782d8f)) {
                         break;
@@ -679,18 +679,18 @@ function private function_6c66cc64(team) {
         }
         voip = "<unknown string>";
         if (isdefined(level.var_75dffa9f[team])) {
-            voip = voip + (level.var_75dffa9f[team] == #"game" ? "<unknown string>" : "<unknown string>");
+            voip += level.var_75dffa9f[team] == #"game" ? "<unknown string>" : "<unknown string>";
         } else {
-            voip = voip + "<unknown string>";
+            voip += "<unknown string>";
         }
         platoon = getteamplatoon(team);
         platoon_name = "<unknown string>";
         if (platoon == #"invalid") {
-            platoon_name = platoon_name + "<unknown string>";
+            platoon_name += "<unknown string>";
         } else if (platoon == #"none") {
-            platoon_name = platoon_name + "<unknown string>";
+            platoon_name += "<unknown string>";
         } else if (isdefined(level.platoons[platoon])) {
-            platoon_name = platoon_name + level.platoons[platoon].name;
+            platoon_name += level.platoons[platoon].name;
         }
         println("<unknown string>" + "<unknown string>" + platoon_name + "<unknown string>" + team_str + "<unknown string>" + voip);
         foreach (player in players) {

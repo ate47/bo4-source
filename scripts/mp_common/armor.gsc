@@ -152,7 +152,7 @@ function get_armor() {
         total_armor = self.armor;
     }
     if (isdefined(self.lightarmor) && isdefined(self.lightarmor.amount)) {
-        total_armor = total_armor + self.lightarmor.amount;
+        total_armor += self.lightarmor.amount;
     }
     return total_armor;
 }
@@ -228,7 +228,7 @@ function boost_armor(bars_to_give, damage_time_threshold_ms) {
     if (empty_bars < bars_to_give) {
         player update_max_armor(1);
     }
-    player.armor = player.armor + int(bars_to_give * player.armorperbar);
+    player.armor += int(bars_to_give * player.armorperbar);
 }
 
 // Namespace armor/armor
@@ -366,7 +366,7 @@ function apply_damage(weapon, damage, smeansofdeath, eattacker, shitloc) {
     if (!isdefined(self.var_59a874a7)) {
         self function_9c8b5737();
     }
-    var_737c8f6e = var_737c8f6e * (isdefined(weapon.var_ed6ea786) && weapon.var_ed6ea786 ? self.var_59a874a7.var_e6683a43 : self.var_59a874a7.var_cdeeec29);
+    var_737c8f6e *= isdefined(weapon.var_ed6ea786) && weapon.var_ed6ea786 ? self.var_59a874a7.var_e6683a43 : self.var_59a874a7.var_cdeeec29;
     var_2274e560 = weapon.var_7b0ea85;
     if (getdvarint(#"survival_prototype", 0)) {
         var_2274e560 = self.var_59a874a7.var_5164d2e2;
@@ -377,21 +377,21 @@ function apply_damage(weapon, damage, smeansofdeath, eattacker, shitloc) {
     } else {
         if (smeansofdeath == "MOD_MELEE") {
             if (weapon_utils::ispunch(weapon)) {
-                var_2274e560 = var_2274e560 * self.var_59a874a7.var_22c3ab38;
+                var_2274e560 *= self.var_59a874a7.var_22c3ab38;
             } else {
-                var_2274e560 = var_2274e560 * self.var_59a874a7.var_9f307988;
+                var_2274e560 *= self.var_59a874a7.var_9f307988;
             }
         } else if (smeansofdeath == "MOD_MELEE_WEAPON_BUTT") {
             if (function_7538fede(weapon)) {
-                var_2274e560 = var_2274e560 * self.var_59a874a7.var_9f307988;
+                var_2274e560 *= self.var_59a874a7.var_9f307988;
             } else {
-                var_2274e560 = var_2274e560 * self.var_59a874a7.var_7a80f06e;
+                var_2274e560 *= self.var_59a874a7.var_7a80f06e;
             }
         } else {
-            var_2274e560 = var_2274e560 * (weapon.var_ed6ea786 ? self.var_59a874a7.var_5164d2e2 : self.var_59a874a7.var_2274e560);
+            var_2274e560 *= weapon.var_ed6ea786 ? self.var_59a874a7.var_5164d2e2 : self.var_59a874a7.var_2274e560;
         }
         if (isdefined(self.var_59a874a7) && isdefined(self.var_59a874a7.var_735ae1ee)) {
-            var_2274e560 = var_2274e560 + (1 - var_2274e560) * (1 - self.var_59a874a7.var_735ae1ee.(shitloc));
+            var_2274e560 += (1 - var_2274e560) * (1 - self.var_59a874a7.var_735ae1ee.(shitloc));
         }
     }
     var_aacd5df1 = damage * var_737c8f6e;
@@ -401,12 +401,12 @@ function apply_damage(weapon, damage, smeansofdeath, eattacker, shitloc) {
         var_e27873f2 = damage * (1 - var_2274e560);
         var_b1417997 = math::clamp(var_aacd5df1 - self.armor, 0, var_aacd5df1);
         var_9bb721d3 = var_e27873f2 * var_b1417997 / var_aacd5df1;
-        self.armor = self.armor - int(ceil(armor_damage));
+        self.armor -= int(ceil(armor_damage));
         if (isdefined(self.var_3f1410dd)) {
-            self.var_3f1410dd.damage_taken = self.var_3f1410dd.damage_taken + int(ceil(armor_damage));
+            self.var_3f1410dd.damage_taken += int(ceil(armor_damage));
         }
         if (var_9bb721d3 > 0) {
-            var_9bb721d3 = var_9bb721d3 * self function_e95ae03(#"hash_47245d009e766628");
+            var_9bb721d3 *= self function_e95ae03(#"hash_47245d009e766628");
         }
     }
     self update_max_armor();
@@ -469,7 +469,7 @@ function function_386de852() {
     self clientfield::set_player_uimodel("hudItems.armorIsOnCooldown", 1);
     while (isdefined(self.var_a06951b7) && self.var_a06951b7 > gettime()) {
         if (!isalive(self) && self function_725b4d91() == 0) {
-            self.var_a06951b7 = self.var_a06951b7 + 250;
+            self.var_a06951b7 += 250;
         }
         wait(0.25);
     }

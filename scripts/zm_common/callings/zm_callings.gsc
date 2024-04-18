@@ -88,8 +88,8 @@ function function_f3393d6a() {
         self.var_d0b65bbe = hash(self stats::get_stat(#"playercalling", #"currentfaction"));
         var_3afde5e2 = hash(self stats::get_stat(#"playercalling", #"seasons", self.var_e06cb519, #"hash_7e597fbe41270a4d"));
         var_51fe014e = level.var_314051a1.var_2e61f0ce[self.var_e06cb519].var_ecb4fc1[var_3afde5e2].var_642e4919 - 1;
-        var_51fe014e = var_51fe014e + self.var_bf6f8ec3;
-        var_51fe014e = var_51fe014e % level.var_314051a1.factioncallings.size;
+        var_51fe014e += self.var_bf6f8ec3;
+        var_51fe014e %= level.var_314051a1.factioncallings.size;
         if (zm_utility::is_classic()) {
             var_98a2d658 = level.var_314051a1.factioncallings[var_51fe014e].classicpact;
             foreach (task in var_98a2d658) {
@@ -149,7 +149,7 @@ function private function_66714869(var_d1017f27, var_e06cb519, var_bf6f8ec3, n_i
     if (!isdefined(var_d1017f27.var_1020847d)) {
         var_d1017f27.var_1020847d = 0;
     }
-    var_d1017f27.var_1020847d = var_d1017f27.var_1020847d + n_inc;
+    var_d1017f27.var_1020847d += n_inc;
 }
 
 // Namespace zm_callings/zm_callings

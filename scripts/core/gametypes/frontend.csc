@@ -1167,7 +1167,7 @@ function function_4cd43ca2(localclientnum, menu_name, state) {
                     step_size = direction / getdvarint(#"hash_522e5987825dd16e", 100);
                     for (var_d7f46807 = 0; var_d7f46807 <= getdvarint(#"hash_522e5987825dd16e", 100); var_d7f46807++) {
                         waitframe(1);
-                        var_351da865.origin = var_351da865.origin + step_size;
+                        var_351da865.origin += step_size;
                     }
                     function_da10fc8f(localclientnum, "<unknown string>" + function_9e72a96(var_4132246d) + "<unknown string>" + function_9e72a96(trail.name) + "<unknown string>");
                     killfx(localclientnum, handle);
@@ -1268,7 +1268,7 @@ function function_deed1dbf(localclientnum) {
     do {
         wait(1);
         var_ca56648b = function_3d72f7e7(localclientnum);
-        attempts = attempts + 1;
+        attempts += 1;
     } while (var_ca56648b == 0 && attempts < limit);
     selectable = array::filter(level.var_e362b5d9, 0, &function_70e963be, localclientnum);
     if (selectable.size == 0) {
@@ -2336,9 +2336,9 @@ function pulse_controller_color() {
     t = 1;
     while (true) {
         setallcontrollerslightbarcolor((1 * t, 0.2 * t, 0));
-        t = t + delta_t;
+        t += delta_t;
         if (t < 0.2 || t > 0.99) {
-            delta_t = delta_t * -1;
+            delta_t *= -1;
         }
         waitframe(1);
     }
@@ -2838,8 +2838,8 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
         var_5f26f63 = character_model gettagangles("j_spine4");
         var_46abe989 = character_model gettagorigin("j_spine4");
         if (isdefined(var_5f26f63) && isdefined(var_46abe989)) {
-            var_5f26f63 = var_5f26f63 + v_forward;
-            var_46abe989 = var_46abe989 + anglestoforward((0, var_5f26f63[1], 0));
+            var_5f26f63 += v_forward;
+            var_46abe989 += anglestoforward((0, var_5f26f63[1], 0));
             [[ self ]]->function_82e05d64().var_d35ebd8e = playfx(localclientnum, var_cc8a3490, var_46abe989, anglestoforward(var_5f26f63), anglestoup(var_5f26f63));
             wait(0.3);
         }
@@ -2849,8 +2849,8 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
         var_bee5328d = character_model gettagangles("j_neck");
         var_78a78382 = character_model gettagorigin("j_neck");
         if (isdefined(var_bee5328d) && isdefined(var_78a78382)) {
-            var_bee5328d = var_bee5328d + v_forward;
-            var_78a78382 = var_78a78382 + anglestoforward((0, var_bee5328d[1], 0));
+            var_bee5328d += v_forward;
+            var_78a78382 += anglestoforward((0, var_bee5328d[1], 0));
             [[ self ]]->function_82e05d64().var_bef648d0 = playfx(localclientnum, var_7d89d45, var_78a78382, anglestoforward(var_bee5328d), anglestoup(var_bee5328d));
             wait(0.5);
         }
@@ -2860,8 +2860,8 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
         var_7110530b = character_model gettagangles("j_head");
         var_ad65ea66 = character_model gettagorigin("j_head");
         if (isdefined(var_7110530b) && isdefined(var_ad65ea66)) {
-            var_7110530b = var_7110530b + v_forward;
-            var_ad65ea66 = var_ad65ea66 + anglestoforward((0, var_7110530b[1], 0));
+            var_7110530b += v_forward;
+            var_ad65ea66 += anglestoforward((0, var_7110530b[1], 0));
             [[ self ]]->function_82e05d64().var_21cb8ea6 = playfx(localclientnum, var_e04a6c21, var_ad65ea66, anglestoforward(var_7110530b), anglestoup(var_7110530b));
         }
     }

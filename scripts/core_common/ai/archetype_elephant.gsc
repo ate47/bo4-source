@@ -764,7 +764,7 @@ function private function_e5f2ff53(elephant, var_a4946e52, targetname) {
     assert(isdefined(rider.ai.var_debedb6f));
     n_health = 60000;
     for (i = 0; i < level.players.size - 1; i++) {
-        n_health = n_health + 15000;
+        n_health += 15000;
     }
     rider.maxhealth = n_health;
     rider.health = n_health;
@@ -864,7 +864,7 @@ function private function_4c731a08() {
     self.lightning_chain_immune = 1;
     self.maxhealth = self ai::function_9139c839().minhealth;
     for (i = 0; i < level.players.size - 1; i++) {
-        self.maxhealth = self.maxhealth + int(self ai::function_9139c839().minhealth * self ai::function_9139c839().var_854eebd);
+        self.maxhealth += int(self ai::function_9139c839().minhealth * self ai::function_9139c839().var_854eebd);
     }
     self.health = self.maxhealth;
     self setrepairpaths(0);
@@ -1172,7 +1172,7 @@ function function_e864f0da(elephant, damage, attacker, point, dir, var_88cb1bf9)
 function private function_c62e8244(damage) {
     n_scalar = 1.5;
     for (i = 0; i < level.players.size; i++) {
-        n_scalar = n_scalar - 0.07;
+        n_scalar -= 0.07;
     }
     return int(damage * n_scalar);
 }
@@ -1201,13 +1201,13 @@ function function_ee23b15d(inflictor, attacker, damage, idflags, meansofdeath, w
         return 0;
     }
     if (self.health - damage <= 0) {
-        self.health = self.health + int(damage + 1);
+        self.health += int(damage + 1);
         self.ai.var_37e9f736 = gettime();
     }
     assert(isdefined(self.ai.elephant));
     if (isdefined(level.var_b394f92f)) {
         damage_scalar = [[ level.var_b394f92f ]](attacker, weapon, boneindex, hitloc, point);
-        damage = damage * damage_scalar;
+        damage *= damage_scalar;
     }
     function_e864f0da(self.ai.elephant, damage, attacker, point, dir);
     level notify(#"basket_hit");
@@ -1338,7 +1338,7 @@ function private function_4d479d22(elephant) {
     elephant function_cd989dbb();
     elephant.maxhealth = elephant ai::function_9139c839().minhealth;
     for (i = 0; i < level.players.size - 1; i++) {
-        elephant.maxhealth = elephant.maxhealth + int(elephant ai::function_9139c839().minhealth * elephant ai::function_9139c839().var_854eebd);
+        elephant.maxhealth += int(elephant ai::function_9139c839().minhealth * elephant ai::function_9139c839().var_854eebd);
     }
     elephant.health = elephant.maxhealth;
     elephant animation::play("ch_vign_tplt_inbtl_hllpht_evlve_2_stg_2_00_hllpht", undefined, undefined, 1, 0.2, 0.1, undefined, undefined, undefined, 0);
@@ -1704,7 +1704,7 @@ function private function_f8145b00(entity) {
                         recordsphere(targetpos, 8, (0, 1, 1), "tag_head_ws");
                     #/
                     dirtoenemy = vectornormalize(targetpos - self.origin);
-                    targetpos = targetpos + vectorscale(dirtoenemy * -1, 170);
+                    targetpos += vectorscale(dirtoenemy * -1, 170);
                     targetpos = getclosestpointonnavmesh(targetpos, 400, entity getpathfindingradius() * 1.2);
                     if (isdefined(targetpos)) {
                         path = generatenavmeshpath(self.origin, targetpos, self);

@@ -275,7 +275,7 @@ function function_55625f76(spot_origin, spot_angles, anim_name, var_16dd87ad) {
     }
     anim_org = spot_origin;
     anim_ang = spot_angles;
-    anim_org = anim_org + (0, 0, 0);
+    anim_org += (0, 0, 0);
     self ghost();
     self.anchor moveto(anim_org, 0.05);
     self.anchor waittill(#"movedone");

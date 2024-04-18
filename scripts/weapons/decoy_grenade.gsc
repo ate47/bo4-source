@@ -83,11 +83,11 @@ function function_e9d18b65() {
     var_fa7f044f = 0;
     while (true) {
         burst_time = randomfloatrange(grenade.var_f64cb8d.var_5cae5968, grenade.var_f64cb8d.var_bbed619f);
-        burst_time = burst_time * 1000;
+        burst_time *= 1000;
         var_f370a5d5 = gettime() + burst_time;
         while (gettime() <= var_f370a5d5) {
             grenade playsound(#"wpn_ar_standard_fire_plr");
-            var_fa7f044f = var_fa7f044f + 1;
+            var_fa7f044f += 1;
             if (var_fa7f044f >= weapon.clipsize) {
                 var_fa7f044f = 0;
                 grenade function_7c24c60f(weapon.reloadtime);
@@ -154,7 +154,7 @@ function on_damage(watcher) {
         if (type == "MOD_MELEE" || type == "MOD_MELEE_WEAPON_BUTT" || weapon.isemp || weapon.destroysequipment) {
             self.damagetaken = damagemax;
         } else {
-            self.damagetaken = self.damagetaken + damage;
+            self.damagetaken += damage;
         }
         if (self.damagetaken >= damagemax) {
             self detonate();

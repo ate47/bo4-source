@@ -285,13 +285,13 @@ function private _gibpiecetag(localclientnum, entity, gibflag) {
 function private function_ba120c50(gibflags) {
     var_ec7623a6 = 0;
     if (gibflags & 12) {
-        var_ec7623a6 = var_ec7623a6 | 1;
+        var_ec7623a6 |= 1;
     }
     if (gibflags & 48) {
-        var_ec7623a6 = var_ec7623a6 | 2;
+        var_ec7623a6 |= 2;
     }
     if (gibflags & 384) {
-        var_ec7623a6 = var_ec7623a6 | 4;
+        var_ec7623a6 |= 4;
     }
     return var_ec7623a6;
 }
@@ -351,7 +351,7 @@ function private _gibentity(localclientnum, gibflags, shouldspawngibs) {
             }
             _handlegibcallbacks(localclientnum, entity, currentgibflag);
         }
-        currentgibflag = currentgibflag << 1;
+        currentgibflag <<= 1;
     }
 }
 
@@ -471,7 +471,7 @@ function _gibpiece(localclientnum, entity, gibmodel, gibtag, gibfx, gibdir, gibd
     if (isdefined(gibdir) && !isdefined(gibdirscale)) {
         startposition = (0, 0, 0);
         forwardvector = gibdir;
-        forwardvector = forwardvector * randomfloatrange(100, 500);
+        forwardvector *= randomfloatrange(100, 500);
     } else {
         waitframe(1);
         if (isdefined(entity)) {
@@ -491,8 +491,8 @@ function _gibpiece(localclientnum, entity, gibmodel, gibtag, gibfx, gibdir, gibd
             scale = gibdirscale;
         }
         forwardvector = vectornormalize(endposition - startposition);
-        forwardvector = forwardvector * scale;
-        forwardvector = forwardvector + dir;
+        forwardvector *= scale;
+        forwardvector += dir;
     }
     if (isdefined(entity)) {
         gibentity = createdynentandlaunch(localclientnum, gibmodel, endposition, endangles, startposition, forwardvector, gibfx, 1, !(isdefined(level.var_2f78f66c) && level.var_2f78f66c));

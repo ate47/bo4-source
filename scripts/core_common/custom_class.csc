@@ -619,9 +619,9 @@ function update_weapon_script_model(localclientnum, newweaponstring, var_f020955
                 var_f020955 = "";
                 for (i = 0; i < attachments.size; i++) {
                     if (i > 0) {
-                        var_f020955 = var_f020955 + "+";
+                        var_f020955 += "+";
                     }
-                    var_f020955 = var_f020955 + attachments[i];
+                    var_f020955 += attachments[i];
                 }
                 level.var_8ad413c[localclientnum] = var_f020955;
             }
@@ -707,7 +707,7 @@ function get_attachments_intersection(oldweapon, var_314432b2, var_6714c3a0) {
     var_a014270e = var_95e90a5e[0];
     for (i = 1; i < var_95e90a5e.size; i++) {
         if (isinarray(var_3f8fbddf, var_95e90a5e[i])) {
-            var_a014270e = var_a014270e + "+" + var_95e90a5e[i];
+            var_a014270e += "+" + var_95e90a5e[i];
         }
     }
     return var_a014270e;

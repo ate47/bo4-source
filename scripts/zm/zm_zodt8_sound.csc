@@ -29,7 +29,7 @@ function startzmbspawnersoundloops() {
         #/
         for (i = 0; i < loopers.size; i++) {
             loopers[i] thread soundloopthink();
-            delay = delay + 1;
+            delay += 1;
             if (delay % 20 == 0) {
                 waitframe(1);
             }

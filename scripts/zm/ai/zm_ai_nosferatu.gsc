@@ -209,7 +209,7 @@ function private function_c12f7b53() {
     self.completed_emerging_into_playable_area = 1;
     self.ignorepathenemyfightdist = 1;
     var_eb297ead = zm_ai_utility::function_8d44707e(0);
-    var_eb297ead = var_eb297ead * (isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1);
+    var_eb297ead *= isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1;
     self.health = int(var_eb297ead);
     self.maxhealth = int(var_eb297ead);
     self.is_zombie = 1;
@@ -566,7 +566,7 @@ function get_favorite_enemy() {
     if (!zm_utility::is_player_valid(e_least_hunted)) {
         return undefined;
     }
-    e_least_hunted.hunted_by = e_least_hunted.hunted_by + 1;
+    e_least_hunted.hunted_by += 1;
     return e_least_hunted;
 }
 

@@ -116,7 +116,7 @@ function function_fa0d912f(var_7b4ae7d1) {
             do {
                 role_index = randomintrange(1, var_5ec2386a);
                 fields = getcharacterfields(role_index, currentsessionmode());
-                count = count + 1;
+                count += 1;
                 if (isdefined(fields) && isdefined(fields.var_49a55967) && fields.var_49a55967) {
                     break;
                 }
@@ -393,7 +393,7 @@ function debug_bots(var_841324bd) {
         level.var_6414a791.y = ypos;
         level.var_6414a791.color = level.red;
         level.var_6414a791 setvalue(var_841324bd);
-        ypos = ypos + level.debug_yinc;
+        ypos += level.debug_yinc;
         level.var_ef165a8f = newdebughudelem();
         level.var_ef165a8f.alignx = "<unknown string>";
         level.var_ef165a8f.fontscale = level.debug_fontscale;
@@ -408,7 +408,7 @@ function debug_bots(var_841324bd) {
         level.var_82bc4b98.y = ypos;
         level.var_82bc4b98.color = level.red;
         level.var_82bc4b98 setvalue(0);
-        ypos = ypos + level.debug_yinc;
+        ypos += level.debug_yinc;
         level.var_c55c071b = newdebughudelem();
         level.var_c55c071b.alignx = "<unknown string>";
         level.var_c55c071b.fontscale = level.debug_fontscale;

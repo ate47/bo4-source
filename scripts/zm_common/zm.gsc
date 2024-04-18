@@ -1052,7 +1052,7 @@ function register_vehicle_damage_callback(func) {
 }
 
 // Namespace zm/zm
-// Params 15, eflags: 0x1 linked
+// Params f, eflags: 0x1 linked
 // Checksum 0x55cbf8e, Offset: 0x5b40
 // Size: 0x214
 function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
@@ -1062,7 +1062,7 @@ function vehicle_damage_override(einflictor, eattacker, idamage, idflags, smeans
         }
     }
     if (isdefined(self.var_1e7e5205) && self.var_1e7e5205) {
-        idamage = idamage * 2;
+        idamage *= 2;
     }
     self thread zm_score::function_89db94b3(eattacker, idamage);
     self globallogic_vehicle::callback_vehicledamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal);
@@ -1138,7 +1138,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
         level notify(#"hash_3fdaafe712252cf5");
     }
     if (isdefined(self.var_1e7e5205) && self.var_1e7e5205) {
-        damage = damage * 2;
+        damage *= 2;
     }
     if (isdefined(level.zm_bots_scale) && level.zm_bots_scale && isbot(attacker)) {
         damage = int(damage * zm_bot::function_e16b5033(self));
@@ -1185,7 +1185,7 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
         if (meansofdeath == "MOD_CRUSH") {
             if (isdefined(inflictor.enemy) && inflictor.enemy != self || isdefined(inflictor._glaive_must_return_to_owner) && inflictor._glaive_must_return_to_owner) {
                 if (isdefined(self.archetype) && self.archetype != #"margwa") {
-                    final_damage = final_damage + self.health;
+                    final_damage += self.health;
                     if (isactor(self)) {
                         self zombie_utility::gib_random_parts();
                     }
@@ -1799,11 +1799,11 @@ function to_mins(seconds) {
     if (seconds > 59) {
         minutes = int(seconds / 60);
         seconds = int(seconds * 1000) % 60000;
-        seconds = seconds * 0.001;
+        seconds *= 0.001;
         if (minutes > 59) {
             hours = int(minutes / 60);
             minutes = int(minutes * 1000) % 60000;
-            minutes = minutes * 0.001;
+            minutes *= 0.001;
         }
     }
     if (hours < 10) {
@@ -2061,16 +2061,16 @@ function precache_zombie_leaderboards() {
         return;
     }
     globalleaderboards = "LB_ZM_GB_BULLETS_FIRED_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_BULLETS_HIT_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_DISTANCE_TRAVELED_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_DOORS_PURCHASED_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_GRENADE_KILLS_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_HEADSHOTS_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_KILLS_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_PERKS_DRANK_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_REVIVES_AT ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_KILLSTATS_MR ";
-    globalleaderboards = globalleaderboards + "LB_ZM_GB_GAMESTATS_MR ";
+    globalleaderboards += "LB_ZM_GB_BULLETS_HIT_AT ";
+    globalleaderboards += "LB_ZM_GB_DISTANCE_TRAVELED_AT ";
+    globalleaderboards += "LB_ZM_GB_DOORS_PURCHASED_AT ";
+    globalleaderboards += "LB_ZM_GB_GRENADE_KILLS_AT ";
+    globalleaderboards += "LB_ZM_GB_HEADSHOTS_AT ";
+    globalleaderboards += "LB_ZM_GB_KILLS_AT ";
+    globalleaderboards += "LB_ZM_GB_PERKS_DRANK_AT ";
+    globalleaderboards += "LB_ZM_GB_REVIVES_AT ";
+    globalleaderboards += "LB_ZM_GB_KILLSTATS_MR ";
+    globalleaderboards += "LB_ZM_GB_GAMESTATS_MR ";
     if (!level.rankedmatch && getdvarint(#"zm_private_rankedmatch", 0) == 0) {
         precacheleaderboards(globalleaderboards);
         return;
@@ -2131,31 +2131,31 @@ function function_a2b54d42() {
     if (zm_utility::is_standard()) {
         switch (level.players.size) {
         case 1:
-            n_multiplier = n_multiplier * 0.55;
+            n_multiplier *= 0.55;
             break;
         case 2:
-            n_multiplier = n_multiplier * 0.75;
+            n_multiplier *= 0.75;
             break;
         case 3:
-            n_multiplier = n_multiplier * 0.9;
+            n_multiplier *= 0.9;
             break;
         case 4:
-            n_multiplier = n_multiplier * 1.1;
+            n_multiplier *= 1.1;
             break;
         }
     } else {
         switch (level.players.size) {
         case 1:
-            n_multiplier = n_multiplier * 0.63;
+            n_multiplier *= 0.63;
             break;
         case 2:
-            n_multiplier = n_multiplier * 0.75;
+            n_multiplier *= 0.75;
             break;
         case 3:
-            n_multiplier = n_multiplier * 0.8;
+            n_multiplier *= 0.8;
             break;
         case 4:
-            n_multiplier = n_multiplier * 0.95;
+            n_multiplier *= 0.95;
             break;
         }
     }
@@ -2169,27 +2169,27 @@ function function_a2b54d42() {
 function printhashids() {
     /#
         outputstring = "<unknown string>";
-        outputstring = outputstring + "<unknown string>";
+        outputstring += "<unknown string>";
         foreach (powerup in level.zombie_powerups) {
-            outputstring = outputstring + powerup.powerup_name + "<unknown string>" + powerup.hash_id + "<unknown string>";
+            outputstring += powerup.powerup_name + "<unknown string>" + powerup.hash_id + "<unknown string>";
         }
-        outputstring = outputstring + "<unknown string>";
+        outputstring += "<unknown string>";
         if (isdefined(level.aat_in_use) && level.aat_in_use) {
             foreach (aat in level.aat) {
                 if (!isdefined(aat) || !isdefined(aat.name) || aat.name == "<unknown string>") {
                     continue;
                 }
-                outputstring = outputstring + aat.name + "<unknown string>" + aat.hash_id + "<unknown string>";
+                outputstring += aat.name + "<unknown string>" + aat.hash_id + "<unknown string>";
             }
         }
-        outputstring = outputstring + "<unknown string>";
+        outputstring += "<unknown string>";
         foreach (perk in level._custom_perks) {
             if (!isdefined(perk) || !isdefined(perk.alias)) {
                 continue;
             }
-            outputstring = outputstring + function_9e72a96(perk.alias) + "<unknown string>" + perk.alias + "<unknown string>";
+            outputstring += function_9e72a96(perk.alias) + "<unknown string>" + perk.alias + "<unknown string>";
         }
-        outputstring = outputstring + "<unknown string>";
+        outputstring += "<unknown string>";
         println(outputstring);
     #/
 }

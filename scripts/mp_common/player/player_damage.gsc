@@ -68,7 +68,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     weapon = function_f4f77cfb(weapon, einflictor);
     pixbeginevent(#"hash_5a86c546901702e2");
     if (!isdefined(vdir)) {
-        idflags = idflags | 4;
+        idflags |= 4;
     }
     attackerishittingteammate = isplayer(eattacker) && self util::isenemyplayer(eattacker) == 0;
     attackerishittingself = isplayer(eattacker) && self == eattacker;
@@ -95,7 +95,7 @@ function callback_playerdamage(einflictor, eattacker, idamage, idflags, smeansof
     }
     if (isdefined(eattacker) && isplayer(eattacker) && !weapon_utils::ismeleemod(smeansofdeath)) {
         var_8f516911 = function_b576d3d(weapon, shitloc);
-        idamage = idamage * var_8f516911;
+        idamage *= var_8f516911;
     }
     var_f16d7bc8 = isdefined(self.armor) ? self.armor : 0;
     armor_damage = apply_damage_to_armor(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, shitloc, friendlyfire, ignore_round_start_friendly_fire);
@@ -330,7 +330,7 @@ function private function_961fe569(einflictor, eattacker, idamage, idflags, smea
             if (!isdefined(eattacker.damagedone)) {
                 eattacker.damagedone = 0;
             }
-            eattacker.damagedone = eattacker.damagedone + damagedone;
+            eattacker.damagedone += damagedone;
             eattacker.pers[#"damagedone"] = eattacker.damagedone;
             eattacker weapons::function_b1d41bd5(weapon, damagedone);
             eattacker contracts::player_contract_event(#"damagedone", damagedone);
@@ -358,7 +358,7 @@ function private function_961fe569(einflictor, eattacker, idamage, idflags, smea
     if ((isdefined(self.var_213b4a61) && (smeansofdeath == "MOD_BURNED" || smeansofdeath == "MOD_DOT") || var_e31583b3) && self !== eattacker) {
         var_9277fb8e = idamage;
         if (self.var_e00c085f === gettime()) {
-            var_9277fb8e = var_9277fb8e + self.var_9277fb8e;
+            var_9277fb8e += self.var_9277fb8e;
         }
         var_e6544856 = max(self.maxhealth, self.health);
         var_7c61c7a1 = var_e6544856 - self.health + var_9277fb8e;
@@ -620,9 +620,9 @@ function private does_player_completely_avoid_damage(idflags, shitloc, weapon, f
             var_a0c3f41d = isdefined(self.currentweapon.var_e2b40cd5) ? self.currentweapon.var_e2b40cd5 : 0;
             if (var_a0c3f41d > 0) {
                 blockeddamage = idamage;
-                blockeddamage = blockeddamage * (1 - var_a0c3f41d);
+                blockeddamage *= 1 - var_a0c3f41d;
                 function_56dc620b(einflictor, eattacker, int(blockeddamage), weapon, getscriptbundle(self.currentweapon.customsettings));
-                idamage = idamage * var_a0c3f41d;
+                idamage *= var_a0c3f41d;
                 return int(idamage);
             }
             function_56dc620b(einflictor, eattacker, idamage, weapon, getscriptbundle(self.currentweapon.customsettings));
@@ -643,7 +643,7 @@ function private does_player_completely_avoid_damage(idflags, shitloc, weapon, f
 // Size: 0x2b4
 function function_56dc620b(einflictor, eattacker, idamage, weapon, customsettings) {
     previous_shield_damage = self.shielddamageblocked;
-    self.shielddamageblocked = self.shielddamageblocked + idamage;
+    self.shielddamageblocked += idamage;
     if (self.shielddamageblocked % 200 < previous_shield_damage % 200) {
         if (isdefined(einflictor) && !isplayer(einflictor)) {
             if (!isdefined(einflictor.var_a6cf412b)) {
@@ -793,13 +793,13 @@ function private apply_damage_to_armor(einflictor, eattacker, idamage, idflags, 
     idamage = victim armor::function_a77114f2(einflictor, eattacker, idamage, smeansofdeath, weapon, shitloc);
     armor_damaged = armor != self armor::get_armor();
     if (armor_damaged) {
-        idflags = idflags | 2048;
+        idflags |= 2048;
         if (gear_armor > 0 && self.armor <= 0) {
             self.var_426947c4 = 1;
         }
     }
     if (isdefined(self.power_armor_took_damage) && self.power_armor_took_damage) {
-        idflags = idflags | 1024;
+        idflags |= 1024;
     }
     return {#idflags:idflags, #idamage:idamage};
 }
@@ -811,7 +811,7 @@ function private apply_damage_to_armor(einflictor, eattacker, idamage, idflags, 
 function private make_sure_damage_is_not_zero(idamage, armor_damaged) {
     if (idamage < 1) {
         if ((armor_damaged || self ability_util::gadget_power_armor_on() || self armor::has_armor()) && isdefined(self.maxhealth) && self.health < self.maxhealth) {
-            self.health = self.health + 1;
+            self.health += 1;
         }
         idamage = 1;
     }
@@ -862,7 +862,7 @@ function private modify_player_damage(einflictor, eattacker, idamage, idflags, s
     if (isdefined(eattacker)) {
         idamage = loadout::cac_modified_damage(self, eattacker, idamage, smeansofdeath, weapon, einflictor, shitloc);
         if (isdefined(eattacker.pickup_damage_scale) && eattacker.pickup_damage_scale_time > gettime()) {
-            idamage = idamage * eattacker.pickup_damage_scale;
+            idamage *= eattacker.pickup_damage_scale;
         }
     }
     idamage = custom_gamemodes_modified_damage(self, eattacker, idamage, smeansofdeath, weapon, einflictor, shitloc);
@@ -886,7 +886,7 @@ function private modify_player_damage(einflictor, eattacker, idamage, idflags, s
     if (shitloc == "riotshield") {
         if (idflags & 32) {
             if (!(idflags & 64)) {
-                idamage = idamage * 0;
+                idamage *= 0;
             }
         } else if (idflags & 128) {
             if (isdefined(einflictor) && isdefined(einflictor.stucktoplayer) && einflictor.stucktoplayer == self) {
@@ -901,7 +901,7 @@ function private modify_player_damage(einflictor, eattacker, idamage, idflags, s
         dir = vectornormalize((dirtoplayer[0], dirtoplayer[1], 0));
         dot = vectordot(forward, dir);
         if (dot < -0.7) {
-            idamage = idamage * weapon.var_6844746b;
+            idamage *= weapon.var_6844746b;
         }
     }
     return int(idamage);
@@ -1179,7 +1179,7 @@ function private custom_gamemodes_modified_damage(victim, eattacker, idamage, sm
         return idamage;
     }
     if (isdefined(eattacker) && isdefined(eattacker.damagemodifier)) {
-        idamage = idamage * eattacker.damagemodifier;
+        idamage *= eattacker.damagemodifier;
     }
     if (smeansofdeath == "MOD_PISTOL_BULLET" || smeansofdeath == "MOD_RIFLE_BULLET") {
         idamage = int(idamage * level.bulletdamagescalar);

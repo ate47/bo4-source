@@ -596,7 +596,7 @@ function function_6222e98f() {
     self thread function_7f19d274();
     self.n_cooldown_time = 25;
     while (isdefined(self) && self.n_cooldown_time > 0 && isdefined(self.var_1ea09849) && self.var_1ea09849) {
-        self.n_cooldown_time = self.n_cooldown_time - 0.5;
+        self.n_cooldown_time -= 0.5;
         wait(0.5);
     }
     if (!isdefined(self)) {
@@ -694,7 +694,7 @@ function function_7f19d274() {
         s_result = self waittill(#"weapon_fired");
         if (s_result.weapon == getweapon(#"ww_blundergat_fire_t8_unfinished")) {
             assert(isdefined(self.n_cooldown_time), "<unknown string>");
-            self.n_cooldown_time = self.n_cooldown_time - 6;
+            self.n_cooldown_time -= 6;
             self clientfield::increment_to_player("" + #"hash_39d19b76b846a27f");
             self givemaxammo(getweapon(#"ww_blundergat_fire_t8_unfinished"));
         }
@@ -749,7 +749,7 @@ function function_3e6b7a2d() {
                 if (e_player.n_cooldown_time + n_power > 25) {
                     e_player.n_cooldown_time = 25;
                 } else {
-                    e_player.n_cooldown_time = e_player.n_cooldown_time + n_power;
+                    e_player.n_cooldown_time += n_power;
                 }
             }
             var_d249c0e6 = 0;

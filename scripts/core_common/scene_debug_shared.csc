@@ -252,7 +252,7 @@ function display_scene_menu(str_type, str_scene) {
                 }
             } else if (level.localplayers[0] util::up_button_held()) {
                 held = 1;
-                selected = selected - 10;
+                selected -= 10;
             } else if (!level.localplayers[0] util::up_button_pressed()) {
                 held = 0;
                 up_pressed = 0;
@@ -267,7 +267,7 @@ function display_scene_menu(str_type, str_scene) {
                 }
             } else if (level.localplayers[0] util::down_button_held()) {
                 held = 1;
-                selected = selected + 10;
+                selected += 10;
             } else if (!level.localplayers[0] util::down_button_pressed()) {
                 held = 0;
                 down_pressed = 0;
@@ -390,10 +390,10 @@ function _scene_list_settext(strings, n_selected, str_title, var_444abf97) {
                 text = "<unknown string>";
             }
             if (is_scene_playing(text)) {
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 str_color = (0, 1, 0);
             } else if (is_scene_initialized(text)) {
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 str_color = (0, 1, 0);
             } else {
                 str_color = (1, 1, 1);

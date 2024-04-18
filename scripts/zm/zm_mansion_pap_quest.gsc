@@ -1685,7 +1685,7 @@ function function_b7e42989() {
     n_time = 40;
     while (n_time > 0) {
         wait(0.05);
-        n_time = n_time - 0.05;
+        n_time -= 0.05;
         if (!level flag::get("nosferatu_defend")) {
             level flag::wait_till("nosferatu_defend");
         }
@@ -1923,7 +1923,7 @@ function function_d409a74f(mdl_symbol) {
                 self.mdl_body thread scene::play(#"aib_vign_zm_mnsn_ghost_idle_01", self.mdl_head);
             }
             self moveto(self.origin, 0.05);
-            n_timer = n_timer + 0.25;
+            n_timer += 0.25;
         } else if (isdefined(n_dist) && n_dist > 22500) {
             /#
                 if (getdvarint(#"hash_512a591aa90d3f39", 0)) {
@@ -2309,7 +2309,7 @@ function function_24bd273(n_scale) {
     self setscale(n_scale);
     while (isdefined(self) && n_scale < 1) {
         waitframe(1);
-        n_scale = n_scale + 0.01;
+        n_scale += 0.01;
         if (n_scale > 1) {
             n_scale = 1;
         }
@@ -2788,8 +2788,8 @@ function function_3088c773(str_flag) {
             var_a780e211 = 0;
         }
         wait(0.05);
-        n_time = n_time - 0.05;
-        var_a780e211 = var_a780e211 + 0.05;
+        n_time -= 0.05;
+        var_a780e211 += 0.05;
         if (!level flag::get("clock_defend")) {
             level flag::wait_till("clock_defend");
         }

@@ -225,7 +225,7 @@ function function_970b8d86(player, slotid, attachmentoffset = undefined) {
     assert(isplayer(player));
     if (isdefined(attachmentoffset)) {
         assert(attachmentoffset <= 6);
-        slotid = slotid + attachmentoffset;
+        slotid += attachmentoffset;
     }
     assert(slotid >= 0 && slotid < 16 + 1 + 6 + 1 + 6 + 1);
     entnum = player getentitynumber();

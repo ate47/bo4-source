@@ -268,7 +268,7 @@ function forloop(x, i_begin, i_end) {
     if (i_end < i_begin) {
         i_step = -1;
     }
-    for (i = i_begin; i != i_end; i = i + i_step) {
+    for (i = i_begin; i != i_end; i += i_step) {
         self flowgraph::kick(array(1, i), 1);
     }
 }

@@ -136,7 +136,7 @@ function powerup_hud_monitor() {
             flashing_timer = flashing_timer - flashing_delta_time - 0.05;
             flashing_value = 2;
         } else {
-            flashing_timer = flashing_timer - flashing_delta_time;
+            flashing_timer -= flashing_delta_time;
             flashing_value = 3;
         }
         flashing_timers[flashing_timers.size] = flashing_timer;
@@ -362,12 +362,12 @@ function function_2ff352cc() {
     }
     n_kill_count = randomintrangeinclusive(zombie_utility::function_d2dfacfd(#"hash_434b3261c607850" + n_players), zombie_utility::function_d2dfacfd(#"zombie_powerup_drop_max_" + n_players));
     if (zm_custom::function_901b751c(#"zmpowerupfrequency") == 0) {
-        n_kill_count = n_kill_count * 2;
+        n_kill_count *= 2;
     } else if (zm_custom::function_901b751c(#"zmpowerupfrequency") == 2) {
         n_kill_count = floor(n_kill_count / 2);
     }
     if (zm_trial_no_powerups::is_active()) {
-        n_kill_count = n_kill_count / zm_trial_no_powerups::function_2fc5f13();
+        n_kill_count /= zm_trial_no_powerups::function_2fc5f13();
     }
     if (n_kill_count < 1) {
         n_kill_count = 1;
@@ -1427,7 +1427,7 @@ function powerup_timeout() {
         wait_time = time;
     }
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
-        wait_time = wait_time + 30;
+        wait_time += 30;
     }
     wait(wait_time);
     self hide_and_show(&powerup_hide, &powerup_show);

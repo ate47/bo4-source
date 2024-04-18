@@ -186,25 +186,25 @@ function function_eb7664aa(inflictor, attacker, damage, flags, meansofdeath, wea
         if (isdefined(self) && isdefined(self.archetype)) {
             switch (self.archetype) {
             case #"zombie":
-                n_multi = n_multi + 0.25;
+                n_multi += 0.25;
                 break;
             case #"werewolf":
-                n_multi = n_multi + 1;
+                n_multi += 1;
                 break;
             case #"zombie_dog":
-                n_multi = n_multi + 0.5;
+                n_multi += 0.5;
                 break;
             case #"blight_father":
-                n_multi = n_multi + 0.25;
+                n_multi += 0.25;
                 break;
             case #"catalyst":
-                n_multi = n_multi + 0.25;
+                n_multi += 0.25;
                 break;
             case #"bat":
-                n_multi = n_multi + 0.25;
+                n_multi += 0.25;
                 break;
             case #"nosferatu":
-                n_multi = n_multi + 0.5;
+                n_multi += 0.5;
                 break;
             }
             n_damage = int(damage * n_multi);

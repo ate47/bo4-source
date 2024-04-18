@@ -206,7 +206,7 @@ function function_e8f819b0() {
     self solid();
     while (true) {
         s_notify = self waittill(#"damage");
-        self.health = self.health + s_notify.amount;
+        self.health += s_notify.amount;
         if (isplayer(s_notify.attacker)) {
             self stoploopsound();
             self hide();
@@ -904,7 +904,7 @@ function function_31e641f5() {
             }
             self clientfield::set("" + #"stone_glow", 1);
             wait(0.1);
-            n_time = n_time + 0.1;
+            n_time += 0.1;
         }
         if (b_using == 1) {
             self playsound(#"hash_41620678756defa6");

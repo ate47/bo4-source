@@ -219,7 +219,7 @@ function function_c24cc26a() {
                 break;
             }
             var_50eb39dc = distancesquared(currentnode.origin, nextnode.origin);
-            var_661ad37a = var_661ad37a + var_50eb39dc;
+            var_661ad37a += var_50eb39dc;
             currentnode = nextnode;
         }
         if (var_4c8f226e) {
@@ -288,13 +288,13 @@ function watchdamage() {
         #/
         if (!isdefined(weapon) || weapons::getbaseweapon(weapon) != level.weaponflechette) {
             if (mod == "MOD_PROJECTILE" || mod == "MOD_PROJECTILE_SPLASH" || mod == "MOD_EXPLOSIVE") {
-                damage = damage + 5400;
+                damage += 5400;
             }
         }
         if (!issentient(self) && damage > 0) {
             self.attacker = attacker;
         }
-        damage_taken = damage_taken + damage;
+        damage_taken += damage;
         if (damage_taken >= 5400) {
             self thread explode();
             if (self.owner util::isenemyplayer(attacker)) {
@@ -455,7 +455,7 @@ function startstrafe() {
     weaponshoottime = level.straferungunweapon.firetime;
     for (;;) {
         gunorigin = self gettagorigin("tag_flash");
-        gunorigin = gunorigin + (0, 0, self.straferungunoffset);
+        gunorigin += (0, 0, self.straferungunoffset);
         forward = anglestoforward(self.angles);
         forwardnoz = vectornormalize((forward[0], forward[1], 0));
         right = vectorcross(forwardnoz, (0, 0, 1));

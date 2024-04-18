@@ -556,7 +556,7 @@ function watchplayerexitrequestthread(player) {
     while (true) {
         timeused = 0;
         while (player usebuttonpressed()) {
-            timeused = timeused + 0.05;
+            timeused += 0.05;
             if (timeused > 0.25) {
                 ac130 killstreaks::play_pilot_dialog_on_owner("remoteOperatorRemoved", "ac130", ac130.killstreak_id);
                 player thread function_8721028e(player, owner);
@@ -750,7 +750,7 @@ function function_8721028e(player, ownerleft, var_dbcb1965 = 0) {
         level.ac130 function_60d50ea4();
     }
     if (var_dbcb1965) {
-        var_15f570c1 = var_15f570c1 + (0, 0, -8000);
+        var_15f570c1 += (0, 0, -8000);
     }
     level.ac130 thread helicopter::heli_leave(var_15f570c1, 1);
     level.ac130 thread audio::sndupdatevehiclecontext(0);
@@ -1103,9 +1103,9 @@ function updateareanodes(areanodes, forcemove) {
         }
         helinode = getent(node.target, "targetname");
         foreach (player in node.validplayers) {
-            node.nodescore = node.nodescore + 1;
+            node.nodescore += 1;
             if (bullettracepassed(player.origin + (0, 0, 32), helinode.origin, 0, player)) {
-                node.nodescore = node.nodescore + 3;
+                node.nodescore += 3;
             }
         }
         if (forcemove && distancesquared(level.ac130.origin, helinode.origin) < 40000) {
@@ -1165,12 +1165,12 @@ function getoriginoffsets(goalnode) {
     for (traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self); distancesquared(traceorigin[#"position"], endorigin + traceoffset) > 10 && numtraces < maxtraces; traceorigin = bullettrace(startorigin + traceoffset, endorigin + traceoffset, 0, self)) {
         println("<unknown string>" + distancesquared(traceorigin[#"position"], endorigin + traceoffset));
         if (startorigin[2] < endorigin[2]) {
-            startorigin = startorigin + (0, 0, 128);
+            startorigin += (0, 0, 128);
         } else if (startorigin[2] > endorigin[2]) {
-            endorigin = endorigin + (0, 0, 128);
+            endorigin += (0, 0, 128);
         } else {
-            startorigin = startorigin + (0, 0, 128);
-            endorigin = endorigin + (0, 0, 128);
+            startorigin += (0, 0, 128);
+            endorigin += (0, 0, 128);
         }
         numtraces++;
     }
@@ -1344,10 +1344,10 @@ function function_60e3edcc() {
         goalx = randomfloatrange(650, 700);
         goaly = randomfloatrange(650, 700);
         if (randomintrange(0, 2) > 0) {
-            goalx = goalx * -1;
+            goalx *= -1;
         }
         if (randomintrange(0, 2) > 0) {
-            goaly = goaly * -1;
+            goaly *= -1;
         }
         var_8518e93e = randomfloatrange(3, 4);
         plane setplanebarrelroll(randomfloatrange(0.0833333, 0.111111), randomfloatrange(4, 5));

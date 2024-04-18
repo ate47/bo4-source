@@ -781,16 +781,16 @@ function private function_55bb9c72(attacker, damage, weapon, var_81dcad68, damag
     if (!(isdefined(self.hashelmet) && self.hashelmet)) {
         if (isdefined(attacker) && isplayer(attacker) && attacker hasperk(#"specialty_mod_awareness")) {
             if (self.var_6f84b820 === #"boss") {
-                damage = damage * 1.1;
+                damage *= 1.1;
             } else {
-                damage = damage * 1.2;
+                damage *= 1.2;
             }
         }
         return (damage * (damageoverride ? damagemultiplier : var_81dcad68));
     }
     if (weaponhasattachment(weapon, "fmj2")) {
         if (self.var_6f84b820 === #"boss") {
-            damagemultiplier = damagemultiplier * 1.1;
+            damagemultiplier *= 1.1;
         } else {
             damagemultiplier = min(1, damagemultiplier + 0.1);
         }
@@ -827,14 +827,14 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
         var_81dcad68 = 2;
     }
     if (isdefined(weapon) && weapon.weapclass == "spread") {
-        var_9000ab2 = var_9000ab2 * var_127e9e7d;
-        var_81dcad68 = var_81dcad68 * var_127e9e7d;
+        var_9000ab2 *= var_127e9e7d;
+        var_81dcad68 *= var_127e9e7d;
     }
     if (zm_utility::is_explosive_damage(meansofdeath)) {
         if (!isdefined(self.explosivedmgtaken)) {
             self.explosivedmgtaken = 0;
         }
-        self.explosivedmgtaken = self.explosivedmgtaken + damage;
+        self.explosivedmgtaken += damage;
         scaler = var_9000ab2;
         if (self.explosivedmgtaken >= self.explosive_dmg_req && isdefined(self.hashelmet) && self.hashelmet) {
             self function_530c54e3();
@@ -848,7 +848,7 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
     if (shitloc !== "head" && shitloc !== "helmet") {
         if (weaponhasattachment(weapon, "fmj") && var_9000ab2 < 1) {
             if (self.var_6f84b820 == #"boss") {
-                var_9000ab2 = var_9000ab2 * 1.1;
+                var_9000ab2 *= 1.1;
             } else {
                 var_9000ab2 = min(1, var_9000ab2 + 0.1);
             }

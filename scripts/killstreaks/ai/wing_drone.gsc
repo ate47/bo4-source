@@ -95,7 +95,7 @@ function malfunction_update(params) {
     pitch_vel = math::randomsign() * randomfloatrange(200, 250);
     yaw_vel = math::randomsign() * randomfloatrange(200, 250);
     roll_vel = math::randomsign() * randomfloatrange(200, 250);
-    ang_vel = ang_vel + (pitch_vel, yaw_vel, roll_vel);
+    ang_vel += (pitch_vel, yaw_vel, roll_vel);
     self setangularvelocity(ang_vel);
     self cancelaimove();
     self setphysacceleration((0, 0, 100 * -1));
@@ -235,7 +235,7 @@ function function_789652f2(origin, owner, innerradius, outerradius, halfheight, 
                 point._scoredebug[#"no visibility"].score = -5000;
                 point._scoredebug[#"no visibility"].scorename = "<unknown string>";
             #/
-            point.score = point.score + -5000;
+            point.score += -5000;
         }
     }
     if (queryresult.data.size > 0) {
@@ -303,7 +303,7 @@ function function_b0c75ada(leader) {
     groundpos = getclosestpointonnavmesh(var_b4debf4a, 10000);
     if (isdefined(groundpos)) {
         self.var_d6acaac4 = groundpos;
-        groundpos = groundpos + (0, 0, randomintrange(30, 70));
+        groundpos += (0, 0, randomintrange(30, 70));
         goalpos = getclosestpointonnavvolume(groundpos, "navvolume_small", 2000);
     }
     if (isdefined(goalpos)) {
@@ -321,7 +321,7 @@ function function_b0c75ada(leader) {
                     point._scoredebug[#"no visibility"].score = -5000;
                     point._scoredebug[#"no visibility"].scorename = "<unknown string>";
                 #/
-                point.score = point.score + -5000;
+                point.score += -5000;
             }
         }
         if (queryresult.data.size > 0) {
@@ -430,7 +430,7 @@ function function_9bbb40ab(einflictor, eattacker, idamage, idflags, smeansofdeat
             idamage = self.maxhealth;
         }
     }
-    self.damagetaken = self.damagetaken + idamage;
+    self.damagetaken += idamage;
     return idamage;
 }
 

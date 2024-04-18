@@ -310,9 +310,9 @@ function helicopter_crash_movement(point, dir) {
             vec_to_crash_zone = crash_zones[i].origin - self.origin;
             vec_to_crash_zone = (vec_to_crash_zone[0], vec_to_crash_zone[1], 0);
             dist = length(vec_to_crash_zone);
-            vec_to_crash_zone = vec_to_crash_zone / dist;
+            vec_to_crash_zone /= dist;
             veloctiy_scale = vectordot(self.velocity, vec_to_crash_zone) * -1;
-            dist = dist + 500 * veloctiy_scale;
+            dist += 500 * veloctiy_scale;
             if (dist < best_dist) {
                 best_dist = dist;
                 best_idx = i;
@@ -331,9 +331,9 @@ function helicopter_crash_movement(point, dir) {
         }
         side_dir = vectorcross(dir, (0, 0, 1));
         side_dir_mag = randomfloatrange(mag * -1, mag);
-        side_dir_mag = side_dir_mag + math::sign(side_dir_mag) * 60;
-        side_dir = side_dir * side_dir_mag;
-        side_dir = side_dir + (0, 0, 0);
+        side_dir_mag += math::sign(side_dir_mag) * 60;
+        side_dir *= side_dir_mag;
+        side_dir += (0, 0, 0);
         self setphysacceleration((randomintrange(mag * -1, mag), randomintrange(mag * -1, mag), -500));
         vel = self.velocity + side_dir;
         self setvehvelocity((vel[0], vel[1], 0));
@@ -382,7 +382,7 @@ function helicopter_crash_rotation(point, dir) {
     point_2d = (point[0], point[1], self.origin[2]);
     torque = (0, randomintrange(90, 180), 0);
     if (self getangularvelocity()[1] < 0) {
-        torque = torque * -1;
+        torque *= -1;
     }
     if (distance(self.origin, point_2d) > 5) {
         local_hit_point = point_2d - self.origin;
@@ -397,7 +397,7 @@ function helicopter_crash_rotation(point, dir) {
     }
     while (true) {
         ang_vel = self getangularvelocity();
-        ang_vel = ang_vel + torque * 0.05;
+        ang_vel += torque * 0.05;
         if (ang_vel[1] < 360 * -1) {
             ang_vel = (ang_vel[0], 360 * -1, ang_vel[2]);
         } else if (ang_vel[1] > 360) {
@@ -416,7 +416,7 @@ function helicopter_crash_zone_accel(dir) {
     self endon(#"crash_done", #"crash_move_done");
     torque = (0, randomintrange(90, 150), 0);
     ang_vel = self getangularvelocity();
-    torque = torque * math::sign(ang_vel[1]);
+    torque *= math::sign(ang_vel[1]);
     /#
         if (isdefined(self.crash_zone.height)) {
             self.crash_zone.height = 0;
@@ -426,7 +426,7 @@ function helicopter_crash_zone_accel(dir) {
         self.angles = (self.angles[0], self.angles[1], randomintrange(3, 6) * math::sign(self.angles[2]));
     }
     if (self.var_71b64420) {
-        torque = torque * 0.3;
+        torque *= 0.3;
     }
     while (isdefined(self)) {
         assert(isdefined(self.crash_zone));
@@ -446,20 +446,20 @@ function helicopter_crash_zone_accel(dir) {
         self.crash_vel = self.crash_zone.origin - self.origin;
         self.crash_vel = (self.crash_vel[0], self.crash_vel[1], 0);
         self.crash_vel = vectornormalize(self.crash_vel);
-        self.crash_vel = self.crash_vel * self getmaxspeed() * 0.5;
+        self.crash_vel *= self getmaxspeed() * 0.5;
         if (self.var_71b64420) {
-            self.crash_vel = self.crash_vel * 0.5;
+            self.crash_vel *= 0.5;
         }
         crash_vel_forward = anglestoup(self.angles) * self getmaxspeed() * 2;
         crash_vel_forward = (crash_vel_forward[0], crash_vel_forward[1], 0);
-        self.crash_vel = self.crash_vel + crash_vel_forward;
+        self.crash_vel += crash_vel_forward;
         vel_x = difftrack(self.crash_vel[0], self.velocity[0], 1, 0.1);
         vel_y = difftrack(self.crash_vel[1], self.velocity[1], 1, 0.1);
         vel_z = difftrack(self.crash_vel[2], self.velocity[2], 1, 0.1);
         self setvehvelocity((vel_x, vel_y, vel_z));
         ang_vel = self getangularvelocity();
         ang_vel = (0, ang_vel[1], 0);
-        ang_vel = ang_vel + torque * 0.1;
+        ang_vel += torque * 0.1;
         max_angluar_vel = 200;
         if (self.var_71b64420) {
             max_angluar_vel = 100;
@@ -582,7 +582,7 @@ function aircraft_crash_move(point, dir) {
     }
     while (isdefined(self)) {
         ang_vel = self getangularvelocity();
-        ang_vel = ang_vel + torque * 0.05;
+        ang_vel += torque * 0.05;
         if (ang_vel[2] < 500 * -1) {
             ang_vel = (ang_vel[0], ang_vel[1], 500 * -1);
         } else if (ang_vel[2] > 500) {
@@ -634,7 +634,7 @@ function helicopter_crash_move(point, dir) {
     }
     while (true) {
         ang_vel = self getangularvelocity();
-        ang_vel = ang_vel + torque * 0.05;
+        ang_vel += torque * 0.05;
         if (ang_vel[1] < 360 * -1) {
             ang_vel = (ang_vel[0], 360 * -1, ang_vel[2]);
         } else if (ang_vel[1] > 360) {
@@ -680,7 +680,7 @@ function boat_crash_movement(point, dir) {
     self thread boat_crash_monitor(point, dir, 4);
     while (true) {
         ang_vel = self getangularvelocity();
-        ang_vel = ang_vel + torque * 0.05;
+        ang_vel += torque * 0.05;
         if (ang_vel[1] < 360 * -1) {
             ang_vel = (ang_vel[0], 360 * -1, ang_vel[2]);
         } else if (ang_vel[1] > 360) {
@@ -718,10 +718,10 @@ function crash_stop() {
     speed = self getspeedmph();
     while (speed > 2) {
         velocity = self.velocity;
-        velocity = velocity * 0.9;
+        velocity *= 0.9;
         self setvehvelocity(velocity);
         angular_velocity = self getangularvelocity();
-        angular_velocity = angular_velocity * 0.9;
+        angular_velocity *= 0.9;
         self setangularvelocity(angular_velocity);
         speed = self getspeedmph();
         waitframe(1);
@@ -1385,16 +1385,16 @@ function plane_crash() {
     self.vehcheckforpredictedcrash = 1;
     forward = anglestoforward(self.angles);
     forward_mag = randomfloatrange(0, 300);
-    forward_mag = forward_mag + math::sign(forward_mag) * 400;
-    forward = forward * forward_mag;
+    forward_mag += math::sign(forward_mag) * 400;
+    forward *= forward_mag;
     new_vel = forward + self.velocity * 0.2;
     ang_vel = self getangularvelocity();
     yaw_vel = randomfloatrange(0, 130) * math::sign(ang_vel[1]);
-    yaw_vel = yaw_vel + math::sign(yaw_vel) * 20;
+    yaw_vel += math::sign(yaw_vel) * 20;
     ang_vel = (randomfloatrange(-1, 1), yaw_vel, 0);
     roll_amount = abs(ang_vel[1]) / 150 * 30;
     if (ang_vel[1] > 0) {
-        roll_amount = roll_amount * -1;
+        roll_amount *= -1;
     }
     self.angles = (self.angles[0], self.angles[1], roll_amount);
     ang_vel = (ang_vel[0], ang_vel[1], roll_amount * 0.9);
@@ -1413,14 +1413,14 @@ function barrel_rolling_crash() {
     self.vehcheckforpredictedcrash = 1;
     forward = anglestoforward(self.angles);
     forward_mag = randomfloatrange(0, 250);
-    forward_mag = forward_mag + math::sign(forward_mag) * 300;
-    forward = forward * forward_mag;
+    forward_mag += math::sign(forward_mag) * 300;
+    forward *= forward_mag;
     new_vel = forward + (0, 0, 70);
     ang_vel = self getangularvelocity();
     yaw_vel = randomfloatrange(0, 60) * math::sign(ang_vel[1]);
-    yaw_vel = yaw_vel + math::sign(yaw_vel) * 30;
+    yaw_vel += math::sign(yaw_vel) * 30;
     roll_vel = randomfloatrange(-200, 200);
-    roll_vel = roll_vel + math::sign(roll_vel) * 300;
+    roll_vel += math::sign(roll_vel) * 300;
     ang_vel = (randomfloatrange(-5, 5), yaw_vel, roll_vel);
     self.velocity_rotation_frac = 1;
     self.crash_accel = randomfloatrange(145, 210);
@@ -1442,18 +1442,18 @@ function random_crash(hitdir) {
     hitdir = vectornormalize(hitdir);
     side_dir = vectorcross(hitdir, (0, 0, 1));
     side_dir_mag = randomfloatrange(-280, 280);
-    side_dir_mag = side_dir_mag + math::sign(side_dir_mag) * 150;
-    side_dir = side_dir * side_dir_mag;
+    side_dir_mag += math::sign(side_dir_mag) * 150;
+    side_dir *= side_dir_mag;
     forward = anglestoforward(self.angles);
     forward_mag = randomfloatrange(0, 300);
-    forward_mag = forward_mag + math::sign(forward_mag) * 30;
-    forward = forward * forward_mag;
+    forward_mag += math::sign(forward_mag) * 30;
+    forward *= forward_mag;
     new_vel = self.velocity * 1.2 + forward + side_dir + (0, 0, 50);
     ang_vel = self getangularvelocity();
     ang_vel = (ang_vel[0] * 0.3, ang_vel[1], ang_vel[2] * 1.2);
     yaw_vel = randomfloatrange(0, 130) * math::sign(ang_vel[1]);
-    yaw_vel = yaw_vel + math::sign(yaw_vel) * 50;
-    ang_vel = ang_vel + (randomfloatrange(-5, 5), yaw_vel, randomfloatrange(-18, 18));
+    yaw_vel += math::sign(yaw_vel) * 50;
+    ang_vel += (randomfloatrange(-5, 5), yaw_vel, randomfloatrange(-18, 18));
     self.velocity_rotation_frac = randomfloatrange(0.3, 0.99);
     self.crash_accel = randomfloatrange(65, 90);
     set_movement_and_accel(new_vel, ang_vel);
@@ -1551,15 +1551,15 @@ function flipping_shooting_crash_accel() {
     }
     while (true) {
         self setvehvelocity(self.velocity + anglestoup(self.angles) * self.crash_accel);
-        self.crash_accel = self.crash_accel * 0.98;
+        self.crash_accel *= 0.98;
         new_velocity = self.velocity;
-        new_velocity = new_velocity - prev_forward * prev_forward_vel;
+        new_velocity -= prev_forward * prev_forward_vel;
         forward = anglestoforward(self.angles);
-        new_velocity = new_velocity + forward * prev_forward_vel;
+        new_velocity += forward * prev_forward_vel;
         prev_forward = forward;
         prev_forward_vel = vectordot(new_velocity, prev_forward) * self.velocity_rotation_frac;
         if (prev_forward_vel < 10) {
-            new_velocity = new_velocity + forward * 40;
+            new_velocity += forward * 40;
             prev_forward_vel = 0;
         }
         self setvehvelocity(new_velocity);
@@ -1567,7 +1567,7 @@ function flipping_shooting_crash_accel() {
         count++;
         if (count % 8 == 0 && randomint(100) > 40) {
             if (self.velocity[2] > 130) {
-                self.crash_accel = self.crash_accel * 0.75;
+                self.crash_accel *= 0.75;
                 continue;
             }
             if (self.velocity[2] < 40 && count < 60) {

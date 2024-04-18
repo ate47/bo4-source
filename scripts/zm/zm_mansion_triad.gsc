@@ -887,7 +887,7 @@ function function_d409a74f(mdl_symbol) {
             var_2f07de84 = self.var_7988eee5.origin + (randomintrange(60 * -1, 60), randomintrange(60 * -1, 60), 0);
             v_moveto = getclosestpointonnavmesh(var_2f07de84, 64, 16);
             if (isdefined(v_moveto)) {
-                v_moveto = v_moveto + (0, 0, 46);
+                v_moveto += (0, 0, 46);
                 n_dist = distance2dsquared(self.origin, v_moveto);
             }
         } else {
@@ -899,7 +899,7 @@ function function_d409a74f(mdl_symbol) {
         }
         if (isdefined(n_dist) && n_dist > 22500 * 4.5) {
             self.var_199faf5e = 0;
-            n_timer = n_timer + 0.25;
+            n_timer += 0.25;
         } else if (isdefined(n_dist) && n_dist > 22500) {
             self moveto(v_moveto, 1.35);
             self thread function_7e316825();
@@ -1436,7 +1436,7 @@ function function_31e641f5() {
             }
             self clientfield::set("" + #"stone_glow", 1);
             wait(0.1);
-            n_time = n_time + 0.1;
+            n_time += 0.1;
         }
         if (b_using == 1) {
             self playsound(#"hash_c8be5b775b7ca39");
@@ -1880,7 +1880,7 @@ function trigger_forest_entrance() {
         self waittill(#"trigger_activated");
         e_door playsound(#"hash_4a0656a938f60847");
         b_using = 1;
-        for (n_time = 0; n_time < 2.5; n_time = n_time + 0.1) {
+        for (n_time = 0; n_time < 2.5; n_time += 0.1) {
             foreach (player in getplayers()) {
                 if (!player usebuttonpressed() || !zm_utility::can_use(player) || !isdefined(self.s_unitrigger) || !isdefined(self.s_unitrigger.trigger) || !player istouching(self.s_unitrigger.trigger)) {
                     b_using = 0;

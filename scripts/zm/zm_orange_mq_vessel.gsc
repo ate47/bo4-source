@@ -214,7 +214,7 @@ function private cover_think() {
         }
     }
     v_force = anglestoforward(self.angles);
-    v_force = v_force * 0.2;
+    v_force *= 0.2;
     self hide();
     if (isdefined(self.dyn) && !isdefined(self.var_f0d6ee1f)) {
         self.var_f0d6ee1f = 1;

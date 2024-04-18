@@ -222,7 +222,7 @@ function private function_f35d7cf3(playereyepos, vehicle) {
 // Size: 0x62
 function on_vehicle_damage(params) {
     if (params.smeansofdeath === "MOD_CRUSH" && self isvehicleusable()) {
-        self.idflags = self.idflags | 8192;
+        self.idflags |= 8192;
     }
     return params.idamage;
 }
@@ -361,8 +361,8 @@ function private function_d13b1540(vehicle) {
                     self clientfield::set_to_player("recon_out_of_circle", 0);
                 }
                 var_e96a9222 = min(var_a71a8383, int(3 * 1000));
-                var_e96a9222 = var_e96a9222 / int(3 * 1000);
-                var_e96a9222 = var_e96a9222 * 31;
+                var_e96a9222 /= int(3 * 1000);
+                var_e96a9222 *= 31;
                 self clientfield::set_to_player("recon_out_of_circle", int(var_e96a9222));
                 waitframe(1);
             } else {

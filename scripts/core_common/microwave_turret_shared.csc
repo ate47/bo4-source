@@ -185,8 +185,8 @@ function startmicrowavefx(localclientnum) {
             }
         #/
         need_to_rebuild = microwavefxent microwavefxhash(trace, origin, "center");
-        need_to_rebuild = need_to_rebuild | microwavefxent microwavefxhash(traceright, origin, "right");
-        need_to_rebuild = need_to_rebuild | microwavefxent microwavefxhash(traceleft, origin, "left");
+        need_to_rebuild |= microwavefxent microwavefxhash(traceright, origin, "right");
+        need_to_rebuild |= microwavefxent microwavefxhash(traceleft, origin, "left");
         level.last_microwave_turret_fx_trace = gettime();
         if (!need_to_rebuild) {
             wait(1);
@@ -231,12 +231,12 @@ function microwavefxhash(trace, origin, name) {
         tracedistsq = distancesquared(origin, trace[#"position"]);
         if (tracedistsq >= endofhalffxsq || i == 0) {
             if (tracedistsq < endoffullfxsq) {
-                hash = hash + 1;
+                hash += 1;
             } else {
-                hash = hash + counter;
+                hash += counter;
             }
         }
-        counter = counter * 2;
+        counter *= 2;
     }
     if (!isdefined(self.fxhashs[name])) {
         self.fxhashs[name] = 0;

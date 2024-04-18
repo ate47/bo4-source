@@ -73,14 +73,14 @@ function add_to_player_score_override(points, str_awarded_by, zm_scr_spawner_loc
         return points;
     }
     var_67a898af = self getweaponammostock(w_current);
-    var_67a898af = var_67a898af + var_f32fbbf5;
+    var_67a898af += var_f32fbbf5;
     if (self hasperk(#"specialty_extraammo")) {
         var_6ec34556 = w_current.maxammo;
     } else {
         var_6ec34556 = w_current.startammo;
     }
     if (w_current.isdualwield) {
-        var_6ec34556 = var_6ec34556 * 2;
+        var_6ec34556 *= 2;
     }
     var_67a898af = math::clamp(var_67a898af, 0, var_6ec34556);
     self setweaponammostock(w_current, var_67a898af);

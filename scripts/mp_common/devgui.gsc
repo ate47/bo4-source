@@ -473,11 +473,11 @@ function devgui_attachment_cycling_update() {
             if ("<unknown string>" == originalattachments[i]) {
                 continue;
             }
-            msg = msg + textcolor[i];
-            msg = msg + i;
-            msg = msg + "<unknown string>";
-            msg = msg + originalattachments[i];
-            msg = msg + "<unknown string>";
+            msg += textcolor[i];
+            msg += i;
+            msg += "<unknown string>";
+            msg += originalattachments[i];
+            msg += "<unknown string>";
         }
         iprintlnbold(msg);
         self takeweapon(currentweapon);
@@ -781,7 +781,7 @@ function function_6a24e58f() {
         cmd = "<unknown string>";
         util::add_devgui(path + "<unknown string>", cmd + "<unknown string>");
         for (minutes = 0; minutes < 10; minutes++) {
-            for (seconds = 0; seconds < 60; seconds = seconds + 15) {
+            for (seconds = 0; seconds < 60; seconds += 15) {
                 var_99cfbb07 = "<unknown string>" + seconds;
                 totalseconds = minutes * 60 + seconds;
                 if (seconds == 0) {
@@ -935,7 +935,7 @@ function function_be0f9897() {
                     if (player.health + heal > var_66cb03ad) {
                         player.health = var_66cb03ad;
                     } else {
-                        player.health = player.health + heal;
+                        player.health += heal;
                     }
                 } else {
                     player dodamage(damage, player.origin + (100, 0, 0));

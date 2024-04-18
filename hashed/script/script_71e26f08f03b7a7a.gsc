@@ -44,7 +44,7 @@ function private function_2d47ee1e(var_6ed927a6, var_caba78c2, waittime, var_ef5
     voiceevent = !var_ef5e1b44.var_7f40d76c;
     var_ef5e1b44.var_7f40d76c = 1;
     level thread item_supply_drop::function_418e26fe(var_6ed927a6, vehicledrop, voiceevent, var_ef5e1b44.heightoffset, vehicledrop, vehicletype);
-    var_ef5e1b44.heightoffset = var_ef5e1b44.heightoffset + 600;
+    var_ef5e1b44.heightoffset += 600;
 }
 
 // Namespace namespace_3d2704b3/namespace_3d2704b3
@@ -89,14 +89,14 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
             minwaittime[key] = minwaittime[key] * level.deathcircletimescale;
         }
     } else {
-        minwaittime = minwaittime * level.deathcircletimescale;
+        minwaittime *= level.deathcircletimescale;
     }
     if (isarray(var_fe6b2eab)) {
         foreach (key, value in var_fe6b2eab) {
             var_fe6b2eab[key] = var_fe6b2eab[key] * level.deathcircletimescale;
         }
     } else {
-        var_fe6b2eab = var_fe6b2eab / level.deathcircletimescale;
+        var_fe6b2eab /= level.deathcircletimescale;
     }
     var_b2003e21 = 0;
     if (!isarray(supplydrops)) {
@@ -107,7 +107,7 @@ function start(supplydrops = 1, minwaittime = 20, var_fe6b2eab = 20) {
         }
     } else {
         for (index = 0; index < supplydrops.size; index++) {
-            var_b2003e21 = var_b2003e21 + supplydrops[index];
+            var_b2003e21 += supplydrops[index];
         }
     }
     var_7003bde7 = [];
@@ -226,14 +226,14 @@ function start_vehicle(vehicletype, supplydrops = 1, minwaittime = 20, var_fe6b2
             minwaittime[key] = minwaittime[key] * level.deathcircletimescale;
         }
     } else {
-        minwaittime = minwaittime * level.deathcircletimescale;
+        minwaittime *= level.deathcircletimescale;
     }
     if (isarray(var_fe6b2eab)) {
         foreach (key, value in var_fe6b2eab) {
             var_fe6b2eab[key] = var_fe6b2eab[key] * level.deathcircletimescale;
         }
     } else {
-        var_fe6b2eab = var_fe6b2eab / level.deathcircletimescale;
+        var_fe6b2eab /= level.deathcircletimescale;
     }
     var_b2003e21 = 0;
     if (!isarray(supplydrops)) {
@@ -244,7 +244,7 @@ function start_vehicle(vehicletype, supplydrops = 1, minwaittime = 20, var_fe6b2
         }
     } else {
         for (index = 0; index < supplydrops.size; index++) {
-            var_b2003e21 = var_b2003e21 + supplydrops[index];
+            var_b2003e21 += supplydrops[index];
         }
     }
     var_77c44f00 = 0;

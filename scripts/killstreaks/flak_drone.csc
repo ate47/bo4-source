@@ -46,9 +46,9 @@ function doreveal(localclientnum, direction) {
     while (startval >= 0 && startval <= 1) {
         self mapshaderconstant(localclientnum, 0, "scriptVector0", startval, 0, 0, 0);
         if (direction) {
-            startval = startval - 0.032;
+            startval -= 0.032;
         } else {
-            startval = startval + 0.032;
+            startval += 0.032;
         }
         waitframe(1);
     }

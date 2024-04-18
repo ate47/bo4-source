@@ -47,7 +47,7 @@ function callback_playerdisconnect() {
         /#
             print("<unknown string>" + self.pers[#"team"] + "<unknown string>" + self.score);
         #/
-        level.dropteam = level.dropteam + 1;
+        level.dropteam += 1;
     }
     [[ level.onplayerdisconnect ]]();
     lpselfnum = self getentitynumber();

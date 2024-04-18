@@ -108,7 +108,7 @@ function private function_e0b64358(player, item) {
         if (!isdefined(stash.var_80b1d504)) {
             stash.var_80b1d504 = 0;
         }
-        stash.var_80b1d504 = stash.var_80b1d504 + 1;
+        stash.var_80b1d504 += 1;
     }
 }
 
@@ -342,7 +342,7 @@ function private function_a712496a(item, player, networkid, itemid, itemcount, v
     assert(isplayer(self));
     if (item_inventory::get_weapon_count() == 2) {
         stashitem = item.hidetime === -1;
-        stashitem = stashitem & ~(isdefined(item.deathstash) ? item.deathstash : 0);
+        stashitem &= ~(isdefined(item.deathstash) ? item.deathstash : 0);
         weaponitem = item_inventory::function_230ceec4(player.currentweapon);
         if (!isdefined(weaponitem)) {
             player takeweapon(player.currentweapon);
@@ -459,7 +459,7 @@ function private function_f7fb8a17(reset = 1) {
     match_record::set_stat(#"item_spawn_seed", seedvalue);
     setdvar(#"hash_21e070fbb56cf0f", 0);
     var_6937495e = seedvalue << 1;
-    var_6937495e = var_6937495e | (reset ? 1 : 0);
+    var_6937495e |= reset ? 1 : 0;
     level clientfield::set("item_world_seed", var_6937495e);
     level namespace_f0884ae5::setup(seedvalue, reset);
     level flagsys::set(#"item_world_initialized");
@@ -1560,7 +1560,7 @@ function function_de2018e3(item, player, slotid = undefined) {
             profilestart();
             var_c5781c22 = player [[ handlerfunc ]](item, player, item.networkid, item.id, var_8cd447d8, var_aec6fa7f, slotid);
             profilestop();
-            var_c5781c22 = var_c5781c22 + var_d72b1a4b - var_8cd447d8;
+            var_c5781c22 += var_d72b1a4b - var_8cd447d8;
             assert(isint(var_c5781c22) && var_c5781c22 >= 0);
             if (itementry.itemtype == #"ammo" && var_d72b1a4b === var_c5781c22) {
             } else if (var_c5781c22 == var_d72b1a4b) {
@@ -1621,7 +1621,7 @@ function pickup_item(item, var_22be503 = 1, var_26a492bc = 0) {
         var_d72b1a4b = function_c8ab2022(item, 0);
         var_8cd447d8 = function_c8ab2022(item, 1);
         remainingitems = function_de2018e3(item, self);
-        remainingitems = remainingitems + var_d72b1a4b - var_8cd447d8;
+        remainingitems += var_d72b1a4b - var_8cd447d8;
         if (remainingitems == 0) {
             if (item.itementry.itemtype != #"armor") {
                 if (isdefined(item) && isdefined(item.itementry)) {
@@ -1632,7 +1632,7 @@ function pickup_item(item, var_22be503 = 1, var_26a492bc = 0) {
             return 1;
         } else if (remainingitems < var_8cd447d8 && !isentity(item) && item.itementry.itemtype != #"ammo") {
             stashitem = item.hidetime === -1;
-            stashitem = stashitem & ~(isdefined(item.deathstash) ? item.deathstash : 0);
+            stashitem &= ~(isdefined(item.deathstash) ? item.deathstash : 0);
             dropitem = self item_drop::drop_item(item.itementry.weapon, remainingitems, item.amount, item.id, item.origin, item.angles, stashitem, undefined, isdefined(item.targetnamehash) ? item.targetnamehash : item.targetname, undefined, undefined, 0);
             if (isdefined(dropitem)) {
                 dropitem.origin = item.origin;
@@ -1701,7 +1701,7 @@ function function_83ddce0f(item, inventoryslot) {
     var_8acbe1d0 = self item_inventory::function_550fcb41(item) || item.itementry.itemtype == #"armor_shard" || item.itementry.itemtype == #"resource" || item.itementry.itemtype == #"ammo" || item.itementry.itemtype == #"backpack" && !self item_inventory::has_backpack();
     stashitem = item.hidetime === -1;
     deathstashitem = isdefined(item.deathstash) ? item.deathstash : 0;
-    stashitem = stashitem & ~deathstashitem;
+    stashitem &= ~deathstashitem;
     dropitem = undefined;
     if (!var_8acbe1d0 && self item_inventory::has_inventory_item(inventoryslot)) {
         var_69944179 = self.inventory.items[inventoryslot];

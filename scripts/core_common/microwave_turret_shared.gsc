@@ -193,7 +193,7 @@ function microwaveentity(entity) {
         }
         damage = 15 * damagescalar;
         if (level.hardcoremode) {
-            damage = damage / 2;
+            damage /= 2;
         }
         if (!isai(entity) && entity util::mayapplyscreeneffect()) {
             if (!isdefined(entity.microwavepoisoning) || !entity.microwavepoisoning) {

@@ -143,7 +143,7 @@ function gadgets_save_power(game_ended) {
         deployed = self function_36dfc05f(slot);
         if (game_ended && (deployed || util::gadget_is_in_use(slot))) {
             if (gadgetweapon.gadget_power_round_end_active_penalty > 0) {
-                powerleft = powerleft - gadgetweapon.gadget_power_round_end_active_penalty;
+                powerleft -= gadgetweapon.gadget_power_round_end_active_penalty;
                 powerleft = max(0, powerleft);
             }
         }
@@ -1136,7 +1136,7 @@ function abilities_devgui_add_power(add_cmd_with_root, pid, menu_index) {
         root = add_cmd_with_root + "<unknown string>" + menu_index + "<unknown string>";
         abilities_devgui_add_player_command(root, pid, "<unknown string>", 1, "<unknown string>", "<unknown string>");
         abilities_devgui_add_player_command(root, pid, "<unknown string>", 2, "<unknown string>", "<unknown string>");
-        for (power = 0; power <= 1; power = power + 0.25) {
+        for (power = 0; power <= 1; power += 0.25) {
             abilities_devgui_add_player_command(root, pid, "<unknown string>" + power, 2, "<unknown string>", "<unknown string>" + power);
             abilities_devgui_add_player_command(root, pid, "<unknown string>" + power, 2, "<unknown string>", "<unknown string>" + power);
         }
@@ -1171,7 +1171,7 @@ function function_2e0162e9(add_cmd_with_root, pid, menu_index) {
             var_eb49090f = function_9e72a96(function_b14806c6(i, session_mode));
             var_4f6b7b98 = var_1a27a47a + "<unknown string>" + (isdefined(var_eb49090f) ? var_eb49090f : "<unknown string>") + "<unknown string>";
             if (!isdefined(var_d59b8ebf.enabled) || var_d59b8ebf.enabled == 0) {
-                var_4f6b7b98 = var_4f6b7b98 + "<unknown string>";
+                var_4f6b7b98 += "<unknown string>";
             }
             abilities_devgui_add_player_command(root, pid, var_4f6b7b98, i, "<unknown string>", i);
         }
@@ -1750,7 +1750,7 @@ function function_b4f43681(var_a5c8eb94) {
             startindex = self player_role::get();
             index = startindex;
             do {
-                index = index + 1;
+                index += 1;
                 if (index == startindex) {
                     return;
                 }
@@ -1762,7 +1762,7 @@ function function_b4f43681(var_a5c8eb94) {
             startindex = self player_role::get();
             index = startindex;
             do {
-                index = index - 1;
+                index -= 1;
                 if (index == startindex) {
                     return;
                 }

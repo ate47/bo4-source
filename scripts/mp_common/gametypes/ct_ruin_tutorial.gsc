@@ -120,17 +120,17 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
     }
     if (!isbot(self)) {
         if (isdefined(level.var_e70f7774) && level.var_e70f7774) {
-            self.health = self.health + 1;
+            self.health += 1;
             n_damage = 1;
         }
         switch (level.var_ad7c0539) {
         case 6:
             if (isdefined(e_attacker) && isbot(e_attacker)) {
-                n_damage = n_damage * 0.75;
+                n_damage *= 0.75;
             }
             break;
         case 9:
-            n_damage = n_damage * 0.5;
+            n_damage *= 0.5;
             break;
         }
     }

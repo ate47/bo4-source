@@ -1373,7 +1373,7 @@ function function_2d5436be(origin, spiral) {
     min = getdvarfloat(#"hash_6eab9c95ab563fcb", 50);
     radius = max(spiral.radius, min);
     degrees = spacing * 360 / 6.28319 * radius;
-    spiral.angle = spiral.angle + degrees;
+    spiral.angle += degrees;
     spiral.radius = math::function_b1820790(a, b, c, spiral.angle);
     var_17e94d83 = rotatepointaroundaxis((spiral.radius, 0, 0), (0, 0, 1), spiral.angle + spiral.var_2b9d3922);
     spawn_point = var_17e94d83 + origin;

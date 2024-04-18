@@ -328,7 +328,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
                 v_target = function_30239376(ai_zombie);
                 n_dist = distance(e_projectile.origin, v_target);
                 if (n_dist > var_7fd007f9) {
-                    var_4d8b7233 = var_4d8b7233 + 20;
+                    var_4d8b7233 += 20;
                     if (e_projectile.n_index === 1) {
                         v_horz = v_target + anglestoright(ai_zombie.angles) * 100;
                     } else if (e_projectile.n_index === 2) {
@@ -340,7 +340,7 @@ function function_26819e32(e_projectile, ai_zombie, n_damage) {
                         v_end = v_horz + (0, 0, var_4d8b7233);
                     }
                 } else {
-                    var_4d8b7233 = var_4d8b7233 - 20;
+                    var_4d8b7233 -= 20;
                     if (isdefined(v_target)) {
                         v_end = v_target + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 8) {
@@ -512,7 +512,7 @@ function function_dd7bc108(weapon) {
         n_ammo = self getweaponammoclip(level.w_hand_charon);
     }
     if (n_ammo >= 2) {
-        n_ammo = n_ammo - 2;
+        n_ammo -= 2;
     }
     if (self.currentweapon === level.w_hand_charon_upgraded) {
         self setweaponammoclip(level.w_hand_charon_upgraded, n_ammo);

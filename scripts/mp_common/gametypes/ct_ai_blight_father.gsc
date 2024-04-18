@@ -755,7 +755,7 @@ function private function_afce1cf(inflictor, attacker, damage, flags, meansofdam
         entity kill(origin, attacker, inflictor, weapon, 0, 1);
         final_damage = 0;
     } else {
-        final_damage = final_damage * 1 / entity.var_2703428f;
+        final_damage *= 1 / entity.var_2703428f;
     }
     return final_damage;
 }
@@ -769,7 +769,7 @@ function private function_f9d9f198(entity) {
     animname = animationstatenetworkutility::searchanimationmap(entity, var_bee929e7[#"animation"]);
     tag_pos = getanimtagorigin(animname, 0, "tag_tongue");
     var_2db07c66 = rotatepoint(tag_pos, entity gettagangles("tag_origin"));
-    var_2db07c66 = var_2db07c66 + entity.origin;
+    var_2db07c66 += entity.origin;
     return var_2db07c66;
 }
 
@@ -1020,7 +1020,7 @@ function private blightfatherlaunchchaosmissile(var_f794172e, var_61622673, var_
             var_892397fd thread function_124486ee(0);
         } else {
             var_892397fd function_1974d26f(var_3fa92868, var_b446b077, var_eb325a79);
-            var_892397fd.var_f3d1c928 = var_892397fd.var_f3d1c928 + 1;
+            var_892397fd.var_f3d1c928 += 1;
         }
         wait(var_eb325a79);
     }
@@ -1046,7 +1046,7 @@ function function_b2be1340(starting_health) {
     while (self.n_health > 0) {
         s_notify = self.trigger waittill(#"damage");
         if (isdefined(s_notify.attacker) && isplayer(s_notify.attacker) && s_notify.amount > 0) {
-            self.n_health = self.n_health - s_notify.amount;
+            self.n_health -= s_notify.amount;
         }
     }
     self thread function_124486ee(0);
@@ -1133,8 +1133,8 @@ function private function_1974d26f(var_3fa92868, var_10ed5867, var_eb325a79) {
         if (ratio > 1) {
             ratio = 1;
         }
-        new_vector = new_vector * ratio;
-        new_vector = new_vector + self.var_209ff2fa;
+        new_vector *= ratio;
+        new_vector += self.var_209ff2fa;
         normal_vector = vectornormalize(new_vector);
     } else {
         normal_vector = self.var_209ff2fa;

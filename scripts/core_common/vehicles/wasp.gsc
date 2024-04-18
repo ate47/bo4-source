@@ -173,7 +173,7 @@ function state_emped_update(params) {
     pitch_vel = math::randomsign() * randomfloatrange(200, 250);
     yaw_vel = math::randomsign() * randomfloatrange(200, 250);
     roll_vel = math::randomsign() * randomfloatrange(200, 250);
-    ang_vel = ang_vel + (pitch_vel, yaw_vel, roll_vel);
+    ang_vel += (pitch_vel, yaw_vel, roll_vel);
     self setangularvelocity(ang_vel);
     if (ispointinnavvolume(self.origin, "navvolume_small")) {
         self.position_before_fall = self.origin;
@@ -196,7 +196,7 @@ function state_emped_update(params) {
     self.abnormal_status.emped = 0;
     self vehicle::toggle_emp_fx(0);
     self vehicle_ai::emp_startup_fx();
-    for (bootup_timer = 1.6; bootup_timer > 0; bootup_timer = bootup_timer - 0.8) {
+    for (bootup_timer = 1.6; bootup_timer > 0; bootup_timer -= 0.8) {
         self vehicle::lights_on();
         wait(0.4);
         self vehicle::lights_off();
@@ -278,13 +278,13 @@ function fall_and_bounce(killonimpact_speed, killonimpact_time, killonimpact = 0
         vel_hitdirup = vectorprojection(vel_hitdir, (0, 0, 1));
         velscale = min(bouncescale * (bouncedtime + 1), 0.9);
         newvelocity = (oldvelocity - vectorprojection(oldvelocity, vel_hitdir)) * (1 - velocityloss);
-        newvelocity = newvelocity + vel_hitdir * velscale;
+        newvelocity += vel_hitdir * velscale;
         shouldbounce = vectordot(normal, (0, 0, 1)) > 0.76;
         if (shouldbounce) {
             velocitylengthsqr = lengthsquared(newvelocity);
             stablizescale = mapfloat(5 * 5, 60 * 60, 0.1, 1, velocitylengthsqr);
             ang_vel = self getangularvelocity();
-            ang_vel = ang_vel * angularvelstablizeparams * stablizescale;
+            ang_vel *= angularvelstablizeparams * stablizescale;
             self setangularvelocity(ang_vel);
             angles = self.angles;
             anglesstablizescale = min(anglesstablizeinitialscale - bouncedtime * anglesstablizeincrement, 0.1);
@@ -294,7 +294,7 @@ function fall_and_bounce(killonimpact_speed, killonimpact_time, killonimpact = 0
             surfaceangles = vectortoangles(normal);
             surfaceroll = surfaceangles[2];
             if (pitch < maxangle * -1 || pitch > maxangle) {
-                pitch = pitch * anglesstablizescale;
+                pitch *= anglesstablizescale;
             }
             if (roll < surfaceroll - maxangle || roll > surfaceroll + maxangle) {
                 roll = lerpfloat(surfaceroll, roll, anglesstablizescale);
@@ -777,7 +777,7 @@ function wait_till_something_happens(timeout) {
             }
         }
         wait(0.3);
-        time = time - 0.3;
+        time -= 0.3;
     }
 }
 
@@ -1019,7 +1019,7 @@ function getnextmoveposition_wander() {
     foreach (point in queryresult.data) {
         randomscore = randomfloatrange(0, 100);
         disttooriginscore = point.disttoorigin2d * 0.2;
-        point.score = point.score + randomscore + disttooriginscore;
+        point.score += randomscore + disttooriginscore;
         /#
             if (!isdefined(point._scoredebug)) {
                 point._scoredebug = [];
@@ -1030,7 +1030,7 @@ function getnextmoveposition_wander() {
             point._scoredebug[#"disttoorigin"].score = disttooriginscore;
             point._scoredebug[#"disttoorigin"].scorename = "<unknown string>";
         #/
-        point.score = point.score + disttooriginscore;
+        point.score += disttooriginscore;
         if (point.score > best_score) {
             best_score = point.score;
             best_point = point;
@@ -1082,7 +1082,7 @@ function getnextmoveposition_tactical() {
                             point._scoredebug[#"visowner"].score = 300;
                             point._scoredebug[#"visowner"].scorename = "<unknown string>";
                         #/
-                        point.score = point.score + 300;
+                        point.score += 300;
                     }
                     if (point.visenemy === 1) {
                         /#
@@ -1095,7 +1095,7 @@ function getnextmoveposition_tactical() {
                             point._scoredebug[#"visenemy"].score = 300;
                             point._scoredebug[#"visenemy"].scorename = "<unknown string>";
                         #/
-                        point.score = point.score + 300;
+                        point.score += 300;
                     }
                 }
             }
@@ -1135,7 +1135,7 @@ function getnextmoveposition_tactical() {
             point._scoredebug[#"random"].score = randomfloatrange(0, randomness);
             point._scoredebug[#"random"].scorename = "<unknown string>";
         #/
-        point.score = point.score + randomfloatrange(0, randomness);
+        point.score += randomfloatrange(0, randomness);
         /#
             if (!isdefined(point._scoredebug)) {
                 point._scoredebug = [];
@@ -1146,7 +1146,7 @@ function getnextmoveposition_tactical() {
             point._scoredebug[#"engagementdist"].score = point.distawayfromengagementarea * -1;
             point._scoredebug[#"engagementdist"].scorename = "<unknown string>";
         #/
-        point.score = point.score + point.distawayfromengagementarea * -1;
+        point.score += point.distawayfromengagementarea * -1;
         /#
             if (!isdefined(point._scoredebug)) {
                 point._scoredebug = [];
@@ -1157,7 +1157,7 @@ function getnextmoveposition_tactical() {
             point._scoredebug[#"height"].score = point.distengagementheight * -1 * 1.4;
             point._scoredebug[#"height"].scorename = "<unknown string>";
         #/
-        point.score = point.score + point.distengagementheight * -1 * 1.4;
+        point.score += point.distengagementheight * -1 * 1.4;
         if (point.disttoorigin2d < 120) {
             /#
                 if (!isdefined(point._scoredebug)) {
@@ -1169,7 +1169,7 @@ function getnextmoveposition_tactical() {
                 point._scoredebug[#"tooclosetoself"].score = (120 - point.disttoorigin2d) * -1.5;
                 point._scoredebug[#"tooclosetoself"].scorename = "<unknown string>";
             #/
-            point.score = point.score + (120 - point.disttoorigin2d) * -1.5;
+            point.score += (120 - point.disttoorigin2d) * -1.5;
         }
         foreach (location in avoid_locations) {
             if (distancesquared(point.origin, location) < avoid_radius * avoid_radius) {
@@ -1183,7 +1183,7 @@ function getnextmoveposition_tactical() {
                     point._scoredebug[#"tooclosetoothers"].score = avoid_radius * -1;
                     point._scoredebug[#"tooclosetoothers"].scorename = "<unknown string>";
                 #/
-                point.score = point.score + avoid_radius * -1;
+                point.score += avoid_radius * -1;
             }
         }
         if (point.inclaimedlocation) {
@@ -1197,7 +1197,7 @@ function getnextmoveposition_tactical() {
                 point._scoredebug[#"inclaimedlocation"].score = -500;
                 point._scoredebug[#"inclaimedlocation"].scorename = "<unknown string>";
             #/
-            point.score = point.score + -500;
+            point.score += -500;
         }
         if (point.score > best_score) {
             best_score = point.score;

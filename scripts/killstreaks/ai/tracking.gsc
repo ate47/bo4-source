@@ -83,11 +83,11 @@ function get_velocity() {
     for (index = breadcrumb_count - 2; index >= 0; index--) {
         crumb_index--;
         if (crumb_index < 0) {
-            crumb_index = crumb_index + breadcrumb_count;
+            crumb_index += breadcrumb_count;
         }
         crumb = self.tracking.breadcrumbs[crumb_index];
-        travel = travel + last_point - crumb.point;
-        total_time = total_time + last_time - crumb.time;
+        travel += last_point - crumb.point;
+        total_time += last_time - crumb.time;
         last_point = crumb.point;
         last_time = crumb.time;
     }

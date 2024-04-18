@@ -1794,7 +1794,7 @@ function tank_damage_think() {
             if (!isdefined(emp_damage_to_apply)) {
                 emp_damage_to_apply = maxhealth / 2;
             }
-            self.damagetaken = self.damagetaken + emp_damage_to_apply;
+            self.damagetaken += emp_damage_to_apply;
             damage = 0;
             if (!self.isstunned && emp_damage_to_apply > 0) {
                 self.isstunned = 1;
@@ -1813,9 +1813,9 @@ function tank_damage_think() {
             weapon_damage = killstreaks::get_old_damage(attacker, weapon, mod, damage, 1);
         }
         if (isdefined(level.var_30264985)) {
-            weapon_damage = weapon_damage * 2;
+            weapon_damage *= 2;
         }
-        self.damagetaken = self.damagetaken + weapon_damage;
+        self.damagetaken += weapon_damage;
         if (self.controlled && isdefined(self.owner)) {
             self.owner sendkillstreakdamageevent(int(weapon_damage));
             self.owner vehicle::update_damage_as_occupant(self.damagetaken, maxhealth);
@@ -1859,7 +1859,7 @@ function tank_low_health_fx() {
 // Size: 0x5c
 function function_aa61ec2b(weapon_damage) {
     if (!self.var_b61a6415) {
-        self.var_cff05bbd = self.var_cff05bbd + weapon_damage;
+        self.var_cff05bbd += weapon_damage;
         if (self.var_cff05bbd >= 1000) {
             self.var_cff05bbd = 0;
             self thread tank_immobile();
@@ -1936,7 +1936,7 @@ function function_4110f8dd(isjammed) {
     self function_d4c687c9();
     forward = anglestoforward(self.angles);
     forward = self.origin + forward * 128;
-    forward = forward - (0, 0, 64);
+    forward -= (0, 0, 64);
     self turretsettarget(0, forward);
     self disablegunnerfiring(0, 1);
     self laseroff();
@@ -2019,7 +2019,7 @@ function emp_crazy_death() {
                 }
             }
         }
-        time = time + 0.05;
+        time += 0.05;
         waitframe(1);
     }
     if (isdefined(self)) {
@@ -2382,7 +2382,7 @@ function tank_rocket_watch(player) {
                 var_e3a3ecd3 = player shoot_targets(waitresult.projectile, self.numberrockets);
             }
         }
-        self.numberrockets = self.numberrockets - var_e3a3ecd3;
+        self.numberrockets -= var_e3a3ecd3;
         self update_client_ammo(self.numberrockets);
         self perform_recoil_missile_turret(player);
         if (self.numberrockets <= 0) {

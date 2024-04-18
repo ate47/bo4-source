@@ -65,7 +65,7 @@ function function_c7d4845() {
         if (math::cointoss()) {
             e_who thread zm_audio::create_and_play_dialog(#"component_pickup", #"generic");
         }
-        level.var_389d1b12 = level.var_389d1b12 + 1;
+        level.var_389d1b12 += 1;
         self.is_collected = 1;
         self.var_453ce50f delete();
     }
@@ -83,7 +83,7 @@ function function_445e3d3d() {
         if (level.var_b53764f7 < level.var_389d1b12) {
             level.var_da4b53f8 function_7a70f281();
             wait(3);
-            level.var_b53764f7 = level.var_b53764f7 + 1;
+            level.var_b53764f7 += 1;
             /#
                 iprintlnbold("<unknown string>" + level.var_b53764f7);
             #/
@@ -190,11 +190,11 @@ function function_22393009() {
         var_5f67ea2f = 0;
         if (e_who function_626095c1(self.scene)) {
             if (self.var_8ace5ace > 0) {
-                self.var_8ace5ace = self.var_8ace5ace - 1;
+                self.var_8ace5ace -= 1;
                 self.scene thread scene::play("backward_to_" + string(self.var_8ace5ace));
             }
         } else if (self.var_8ace5ace < 5) {
-            self.var_8ace5ace = self.var_8ace5ace + 1;
+            self.var_8ace5ace += 1;
             self.scene thread scene::play("forward_to_" + string(self.var_8ace5ace));
         }
         self.scene.var_a64d570 = self.var_8ace5ace;

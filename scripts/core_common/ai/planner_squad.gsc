@@ -58,27 +58,27 @@ function private _debugsquad(squad) {
                 foreach (botentry in bots) {
                     bot = botentry[#"__unsafe__"][#"bot"];
                     if (strategiccommandutility::isvalidbot(bot)) {
-                        bottext = bottext + "<unknown string>" + bot getentitynumber() + "<unknown string>" + bot.name;
+                        bottext += "<unknown string>" + bot getentitynumber() + "<unknown string>" + bot.name;
                     }
                 }
                 team = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
                 side = strategiccommandutility::function_a1edb007(team);
                 recordtext(side + bottext, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                xoffset = xoffset + 15;
-                yoffset = yoffset + 13;
+                xoffset += 15;
+                yoffset += 13;
                 timing = "<unknown string>" + squad.planstarttime + "<unknown string>" + squad.planfinishtime + "<unknown string>" + int((squad.planfinishtime - squad.planstarttime) / float(function_60d95f53()) / 1000 * 1000 + 1) + "<unknown string>";
                 recordtext(timing, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                xoffset = xoffset + 15;
+                xoffset += 15;
                 target = plannersquadutility::getblackboardattribute(squad, "<unknown string>");
                 if (isdefined(target)) {
                     var_3d879b56 = target[#"strategy"];
                     if (isdefined(var_3d879b56)) {
                         if (isdefined(var_3d879b56.sdebug)) {
                             foreach (str in var_3d879b56.sdebug) {
-                                yoffset = yoffset + 13;
+                                yoffset += 13;
                                 recordtext(str, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
                             }
-                            xoffset = xoffset + 15;
+                            xoffset += 15;
                         }
                         var_45c7238e = function_101999aa(var_3d879b56, "<unknown string>", array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"), position + (500, 10, 0), (1, 1, 1), "<unknown string>", textscale);
                         function_101999aa(var_3d879b56, "<unknown string>", array("<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>", "<unknown string>"), position + (500, 10 + var_45c7238e, 0), (1, 1, 1), "<unknown string>", textscale);
@@ -119,7 +119,7 @@ function private _debugsquad(squad) {
                             bundle = target[#"__unsafe__"][#"bundle"];
                             targetpos = bundle.var_27726d51.origin;
                         } else {
-                            yoffset = yoffset + 13;
+                            yoffset += 13;
                             recordtext("<unknown string>" + target[#"type"], position + (xoffset, yoffset, 0), (1, 0, 0), "<unknown string>", textscale);
                         }
                         if (isdefined(targetpos)) {
@@ -131,16 +131,16 @@ function private _debugsquad(squad) {
                                 record3dtext("<unknown string>", targettrigger.origin, (1, 0, 1), "<unknown string>", textscale);
                             }
                         } else {
-                            yoffset = yoffset + 13;
+                            yoffset += 13;
                             recordtext("<unknown string>", position + (xoffset, yoffset, 0), (1, 0, 0), "<unknown string>", textscale);
                         }
                     }
                 } else {
-                    yoffset = yoffset + 13;
+                    yoffset += 13;
                     recordtext("<unknown string>", position + (xoffset, yoffset, 0), (1, 0, 0), "<unknown string>", textscale);
                 }
                 for (index = 0; index < squad.plan.size; index++) {
-                    yoffset = yoffset + 13;
+                    yoffset += 13;
                     recordtext(function_9e72a96(squad.plan[index].name), position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
                 }
             }
@@ -161,12 +161,12 @@ function private function_101999aa(strategy, header, fieldlist, position, color,
         xoffset = 0;
         yoffset = 0;
         recordtext(header, position, color, channel, textscale);
-        xoffset = xoffset + 15;
+        xoffset += 15;
         foreach (field in fieldlist) {
-            yoffset = yoffset + 13;
+            yoffset += 13;
             recordtext(field + "<unknown string>" + strategy.(field), position + (xoffset, yoffset, 0), color, channel, textscale);
         }
-        yoffset = yoffset + 13;
+        yoffset += 13;
         return yoffset;
     #/
 }

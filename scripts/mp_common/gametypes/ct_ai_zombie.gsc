@@ -62,7 +62,7 @@ function private __init__() {
 function custom_melee_fire() {
     idflags = 0;
     if (isdefined(self.enemy) && isdefined(self.enemy.armor) && self.enemy.armor) {
-        idflags = idflags | 2048;
+        idflags |= 2048;
     }
     self function_f3813b8a(idflags);
 }
@@ -218,7 +218,7 @@ function isheadshot(shitloc) {
 // Size: 0x9c
 function private function_c75fae30(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, damagefromunderneath, modelindex, partname) {
     if (isheadshot(shitloc)) {
-        idamage = idamage * 2;
+        idamage *= 2;
     }
     return idamage;
 }
@@ -1040,7 +1040,7 @@ function zombie_gib(amount, attacker, direction_vec, point, type, tagname, model
             self allowpitchangle(1);
             self setpitchorient();
             health = self.health;
-            health = health * 0.1;
+            health *= 0.1;
         }
     }
 }
@@ -1370,7 +1370,7 @@ function zmbaivox_playvox(zombie, type, override, priority, delayambientvox = 0)
             playbacktime = 1;
         }
         if (playbacktime >= 0) {
-            playbacktime = playbacktime * 0.001;
+            playbacktime *= 0.001;
         } else {
             playbacktime = 1;
         }

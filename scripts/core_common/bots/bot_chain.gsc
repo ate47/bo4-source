@@ -113,7 +113,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.targetname, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_set)) {
             if (level flag::get(var_72284260.script_flag_set)) {
@@ -121,7 +121,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_set, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_set)) {
             if (level flag::get(var_72284260.script_flag_set)) {
@@ -129,7 +129,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_set, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_wait)) {
             if (level flag::get(var_72284260.script_flag_wait)) {
@@ -137,7 +137,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_wait, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_clear)) {
             if (level flag::get(var_72284260.script_flag_wait)) {
@@ -145,7 +145,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_clear, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_flag_activate)) {
             if (level flag::get(var_72284260.script_flag_activate)) {
@@ -153,7 +153,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_flag_activate, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_aigroup)) {
             if (level flag::exists(var_72284260.script_aigroup) && level flag::get(var_72284260.script_aigroup)) {
@@ -161,15 +161,15 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
             } else {
                 print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_aigroup, (1, 0.5, 0), 1, 0.2, duration);
             }
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_ent_flag_set)) {
             print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_ent_flag_set, (1, 1, 1), 1, 0.2, duration);
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (isdefined(var_72284260.script_ent_flag_clear)) {
             print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>" + var_72284260.script_ent_flag_clear, (1, 1, 1), 1, 0.2, duration);
-            drawheight = drawheight + 4;
+            drawheight += 4;
         }
         if (!active) {
             return targetstructs;
@@ -229,7 +229,7 @@ function private function_8ded619(var_72284260, targetstructs = undefined, durat
                     searchradius = goal.radius;
                 } else {
                     print3d(var_72284260.origin + (0, 0, drawheight), "<unknown string>", (1, 0, 0), 1, 0.2);
-                    drawheight = drawheight + 4;
+                    drawheight += 4;
                 }
                 circle(goal.origin, searchradius, (0, 1, 0), 0, 1, duration);
                 line(var_72284260.origin, goal.origin, (0, 1, 0), 1, 0, duration);

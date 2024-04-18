@@ -579,32 +579,32 @@ function private function_3af5bab0(node) {
     /#
         text = node.type;
         if (isdefined(node.name)) {
-            text = text + "<unknown string>" + node.name;
+            text += "<unknown string>" + node.name;
         }
         if (isdefined(node.api)) {
-            text = text + "<unknown string>" + node.api;
+            text += "<unknown string>" + node.api;
         }
         if (isdefined(node.constants)) {
-            text = text + "<unknown string>";
+            text += "<unknown string>";
             first = 1;
             foreach (key, value in node.constants) {
                 if (!first) {
-                    text = text + "<unknown string>";
+                    text += "<unknown string>";
                 }
                 if (isint(value) || isfloat(value)) {
-                    text = text + key + "<unknown string>" + value;
+                    text += key + "<unknown string>" + value;
                 } else if (isstring(value)) {
-                    text = text + key + "<unknown string>" + value + "<unknown string>";
+                    text += key + "<unknown string>" + value + "<unknown string>";
                 } else if (isarray(value)) {
-                    text = text + key + "<unknown string>";
+                    text += key + "<unknown string>";
                 } else if (!isdefined(value)) {
-                    text = text + key + "<unknown string>";
+                    text += key + "<unknown string>";
                 }
                 first = 0;
             }
         }
         if (isdefined(node.name) || isdefined(node.api)) {
-            text = text + "<unknown string>";
+            text += "<unknown string>";
         }
         return text;
     #/
@@ -619,12 +619,12 @@ function private _printplannernode(file, plannernode, indent, printid) {
         assert(isstruct(plannernode));
         indentspace = "<unknown string>";
         for (index = 0; index < indent; index++) {
-            indentspace = indentspace + "<unknown string>";
+            indentspace += "<unknown string>";
         }
         text = "<unknown string>";
         if (plannernode.printid === printid) {
-            text = text + "<unknown string>";
-            text = text + function_3af5bab0(plannernode);
+            text += "<unknown string>";
+            text += function_3af5bab0(plannernode);
             fprintln(file, indentspace + text);
             return;
         }

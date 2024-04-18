@@ -2384,10 +2384,10 @@ function sndplayerhitalert(e_victim, str_meansofdeath, e_inflictor, weapon, shit
         return;
     }
     if (e_victim zm_utility::is_headshot(weapon, shitloc, str_meansofdeath)) {
-        str_alias = str_alias + "_headshot";
+        str_alias += "_headshot";
     }
     if (isfatal(e_victim, damage)) {
-        str_alias = str_alias + "_fatal";
+        str_alias += "_fatal";
     }
     self thread sndplayerhitalert_playsound(str_alias);
 }

@@ -321,7 +321,7 @@ function private function_5b8256ca(package, isammo = 0, var_e120a933 = undefined
     if (money < cost) {
         return false;
     }
-    money = money - cost;
+    money -= cost;
     self clientfield::set_to_player("bountyMoney", money);
     self.pers[#"money"] = money;
     return true;

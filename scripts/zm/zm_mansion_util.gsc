@@ -302,7 +302,7 @@ function waittill_player_nearby(e_player, var_5a365909 = 0) {
             }
         }
         wait(0.1);
-        var_9d3d31a = var_9d3d31a + 0.1;
+        var_9d3d31a += 0.1;
         if (var_9d3d31a > 5) {
             level notify(#"hash_5ed8f262549ea460");
         }
@@ -454,7 +454,7 @@ function function_e7d4e4f0() {
     util::wait_network_frame();
     self.mdl_pickup clientfield::set("" + #"hash_487e544e29aa8e45", 1);
     playsoundatposition(#"zmb_sq_souls_release", self.mdl_pickup.origin);
-    self.origin = self.origin + (0, 0, 8);
+    self.origin += (0, 0, 8);
     e_holder = self zm_unitrigger::function_fac87205(&function_f3d694d6, (64, 64, 100));
     if (!level flag::get("flag_player_grabbed_werewolf_material")) {
         e_holder thread zm_vo::function_a2bd5a0c(#"hash_161206ddd7dcc321", 1);
@@ -801,7 +801,7 @@ function function_bb613572(a_s_spawns, a_str_endons, n_spawn_delay = 1, n_round 
     if (n_players < 1) {
         n_players = 1;
     }
-    n_spawn_delay = n_spawn_delay / n_players;
+    n_spawn_delay /= n_players;
     var_e8711f44 = 14 + n_players * 2;
     a_sp_zombies = getspawnerarray("spawner_zm_zombie", "targetname");
     var_7c332548 = arraycopy(a_s_spawns);

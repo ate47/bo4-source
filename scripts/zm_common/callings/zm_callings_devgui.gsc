@@ -21,7 +21,7 @@ function function_9f47471() {
         foreach (var_acbd7392 in var_94237d8) {
             var_31e48984 = "<unknown string>" + function_9e72a96(var_acbd7392);
             adddebugcommand("<unknown string>" + function_9e72a96(var_acbd7392) + "<unknown string>" + i + "<unknown string>" + var_31e48984 + "<unknown string>");
-            i = i + 1;
+            i += 1;
         }
         adddebugcommand("<unknown string>");
     #/

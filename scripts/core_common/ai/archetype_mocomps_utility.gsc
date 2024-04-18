@@ -39,7 +39,7 @@ function private drawtraversal(traversal, entity, animation, mocompanimblendoutt
     currentposition = traversal.startposition;
     nextposition = currentposition;
     segments = 0;
-    for (segmenttime = 0; segmenttime <= animlength; segmenttime = segmenttime + float(function_60d95f53()) / 1000) {
+    for (segmenttime = 0; segmenttime <= animlength; segmenttime += float(function_60d95f53()) / 1000) {
         nexttime = segmenttime + float(function_60d95f53()) / 1000;
         if (nexttime > animlength) {
             nexttime = animlength;
@@ -95,7 +95,7 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
     nextposition = currentposition;
     segments = 0;
     deltatoendtotal = (0, 0, 0);
-    for (segmenttime = section.starttime; segmenttime <= section.endtime; segmenttime = segmenttime + float(function_60d95f53()) / 1000) {
+    for (segmenttime = section.starttime; segmenttime <= section.endtime; segmenttime += float(function_60d95f53()) / 1000) {
         nexttime = segmenttime + float(function_60d95f53()) / 1000;
         if (nexttime > section.endtime) {
             nexttime = section.endtime;
@@ -104,11 +104,11 @@ function private drawtraversalsection(section, entity, animation, mocompanimblen
         nextposition = currentposition + rotatepoint(movedelta, section.startangles);
         if (nexttime >= section.mocompstarttime && lengthsquared(deltatoendtotal) < lengthsquared(section.deltatoendposition)) {
             adjusteddeltaperframe = section.adjusteddeltaperframe;
-            deltatoendtotal = deltatoendtotal + adjusteddeltaperframe;
+            deltatoendtotal += adjusteddeltaperframe;
             if (lengthsquared(deltatoendtotal) > lengthsquared(section.deltatoendposition)) {
-                adjusteddeltaperframe = adjusteddeltaperframe - deltatoendtotal - section.deltatoendposition;
+                adjusteddeltaperframe -= deltatoendtotal - section.deltatoendposition;
             }
-            nextposition = nextposition + adjusteddeltaperframe;
+            nextposition += adjusteddeltaperframe;
             /#
                 recordline(currentposition, nextposition, (0, 1, 0), "<unknown string>", entity);
             #/
@@ -440,21 +440,21 @@ function mocomptraversalproceduralpivotupdate(entity, mocompanim, mocompanimblen
     if (traversal.lastanimtime >= section.mocompstarttime && lengthsquared(section.deltatoendtotal) < lengthsquared(section.deltatoendposition)) {
         animationtimedelta = (animationnextsteptime - traversal.lastanimtime) / float(function_60d95f53()) / 1000;
         adjusteddeltaperframe = section.adjusteddeltaperframe * animationtimedelta;
-        section.deltatoendtotal = section.deltatoendtotal + adjusteddeltaperframe;
+        section.deltatoendtotal += adjusteddeltaperframe;
         if (traversal.lastanimtime <= section.mocompendtime && section.deltatoendmocompmultiplier < 1 && !(isdefined(level.var_881e464e) && level.var_881e464e)) {
             animationrate = traversal.initialanimationrate * section.deltatoendmocompmultiplier;
         }
         if (lengthsquared(section.deltatoendtotal) > lengthsquared(section.deltatoendposition)) {
-            adjusteddeltaperframe = adjusteddeltaperframe - section.deltatoendtotal - section.deltatoendposition;
+            adjusteddeltaperframe -= section.deltatoendtotal - section.deltatoendposition;
         }
     }
     traversal.lastanimtime = animationnextsteptime;
-    traversal.var_98d8ca66 = traversal.var_98d8ca66 + adjusteddeltaperframe;
+    traversal.var_98d8ca66 += adjusteddeltaperframe;
     newentityorigin = traversal.startposition + rotatepoint(movedelta, traversal.startangles) + traversal.var_98d8ca66;
     if (isdefined(traversal.endnodeparent)) {
         parentdelta = traversal.endnodeparent.origin - traversal.lastendnodeparentorigin;
         traversal.lastendnodeparentorigin = traversal.endnodeparent.origin;
-        newentityorigin = newentityorigin + parentdelta;
+        newentityorigin += parentdelta;
     }
     if (isactor(entity)) {
         if (!(isdefined(entity.ai.var_8a9efbb6) && entity.ai.var_8a9efbb6)) {

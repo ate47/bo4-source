@@ -548,15 +548,15 @@ class class_727456f3 {
         v_angles = var_a2f96f78.angles;
         if (v_offset[0]) {
             v_side = anglestoforward(v_angles);
-            v_pos = v_pos + v_offset[0] * v_side;
+            v_pos += v_offset[0] * v_side;
         }
         if (v_offset[1]) {
             v_dir = anglestoright(v_angles);
-            v_pos = v_pos + v_offset[1] * v_dir;
+            v_pos += v_offset[1] * v_dir;
         }
         if (v_offset[2]) {
             v_up = anglestoup(v_angles);
-            v_pos = v_pos + v_offset[2] * v_up;
+            v_pos += v_offset[2] * v_up;
         }
         m_e_trigger = spawn("trigger_radius", v_pos, 16384 | 4096, var_a2f96f78.var_517fb95d, var_a2f96f78.var_394cdd7c);
         m_e_trigger enablelinkto();

@@ -561,7 +561,7 @@ function function_422acb4c() {
 function function_7aa50bb7(e_player) {
     self endon(#"death");
     can_use = zm_utility::can_use(e_player);
-    can_use = can_use & !e_player hasweapon(level.w_stake_knife);
+    can_use &= !e_player hasweapon(level.w_stake_knife);
     if (can_use) {
         self sethintstring(self.stub.blueprint.var_391591d0);
     } else {

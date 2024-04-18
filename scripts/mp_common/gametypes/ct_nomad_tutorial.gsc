@@ -130,7 +130,7 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
             case 2:
             case 4:
                 if (str_means_of_death !== "MOD_TRIGGER_HURT") {
-                    self.health = self.health + 1;
+                    self.health += 1;
                     n_damage = 1;
                 }
                 break;

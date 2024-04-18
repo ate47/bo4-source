@@ -570,7 +570,7 @@ function private function_2b5c33a8(planner, constants) {
         for (i = 0; i < var_2bd3822d.size; i++) {
             flag = var_2bd3822d[i];
             if (flag gameobjects::get_owner_team() === bot.team) {
-                var_44114a0e = var_44114a0e + "d";
+                var_44114a0e += "d";
                 if (!isdefined(var_e2b90cdd)) {
                     var_e2b90cdd = [];
                 } else if (!isarray(var_e2b90cdd)) {
@@ -579,7 +579,7 @@ function private function_2b5c33a8(planner, constants) {
                 var_e2b90cdd[var_e2b90cdd.size] = flag;
                 continue;
             }
-            var_44114a0e = var_44114a0e + "a";
+            var_44114a0e += "a";
             if (!isdefined(var_d637f1b0)) {
                 var_d637f1b0 = [];
             } else if (!isarray(var_d637f1b0)) {

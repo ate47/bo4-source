@@ -213,7 +213,7 @@ function private function_47fdbfbb() {
         self.var_17a22c08 = self ai::function_9139c839().var_ead9d81d;
         break;
     }
-    health_multiplier = health_multiplier * (isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1);
+    health_multiplier *= isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1;
     round_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), isdefined(self._starting_round_number) ? self._starting_round_number : level.round_number);
     self.maxhealth = int(max(round_health * health_multiplier, 1));
     self.health = int(max(self.maxhealth * (isdefined(self.var_d67de8a4) ? self.var_d67de8a4 : 1), 1));
@@ -1233,7 +1233,7 @@ function function_439c457c(inflictor, attacker, damage, flags, meansofdeath, wea
     if (isdefined(attacker) && isplayer(attacker) && isdefined(self.catalyst_type) && isdefined(weapon) && isdefined(attacker.var_b01de37)) {
         weapon_root = aat::function_702fb333(weapon);
         if (self.catalyst_type === attacker.var_b01de37[weapon_root]) {
-            damage = damage * 2;
+            damage *= 2;
             if (damage >= self.health || attacker zm_powerups::is_insta_kill_active()) {
                 self.var_85387c5b = 1;
             }

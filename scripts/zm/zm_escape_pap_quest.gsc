@@ -304,7 +304,7 @@ function function_ccb1f009() {
             }
             var_bfcb0a68[var_bfcb0a68.size] = var_74afc0d5;
         }
-        var_d40e1ced = var_d40e1ced + 0.1;
+        var_d40e1ced += 0.1;
     }
     level thread function_2d70fe2b(var_bfcb0a68);
 }
@@ -320,7 +320,7 @@ function function_1f54733b(var_d40e1ced = 0) {
     foreach (e_part in a_e_parts) {
         if (isdefined(e_part.script_noteworthy)) {
             self thread function_1106e7e8(e_part, var_d40e1ced);
-            var_d40e1ced = var_d40e1ced + 0.1;
+            var_d40e1ced += 0.1;
         }
     }
     self notify(#"hash_21e36726a7f30458");

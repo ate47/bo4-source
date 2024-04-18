@@ -1698,7 +1698,7 @@ function _vehicle_bad_place() {
             bp_radius = 500;
         }
         if (isdefined(self.badplacemodifier)) {
-            bp_radius = bp_radius * self.badplacemodifier;
+            bp_radius *= self.badplacemodifier;
         }
         v_turret_angles = self gettagangles("tag_turret");
         if (hasturret && isdefined(v_turret_angles)) {
@@ -1767,7 +1767,7 @@ function set_goal_pos(origin, bstop) {
         return;
     }
     if (isdefined(self.originheightoffset)) {
-        origin = origin + (0, 0, self.originheightoffset);
+        origin += (0, 0, self.originheightoffset);
     }
     self function_a57c34b7(origin, bstop);
 }
@@ -1853,7 +1853,7 @@ function unload_node_helicopter(node) {
         drop_offset_tag = self.drop_offset_tag;
     }
     drop_offset = self gettagorigin("tag_origin") - self gettagorigin(drop_offset_tag);
-    goal = goal + (drop_offset[0], drop_offset[1], 0);
+    goal += (drop_offset[0], drop_offset[1], 0);
     self function_a57c34b7(goal, 1);
     self waittill(#"goal");
     self notify(#"unload", {#who:self.nextnode.script_unload});
@@ -2605,7 +2605,7 @@ function function_fa4236af(params) {
     driver endon(#"death", #"disconnect");
     if (isdefined(self.var_42cfec27) && self.var_42cfec27 != "") {
         var_b0c85051 = soundgetplaybacktime(self.var_42cfec27) * 0.001;
-        var_b0c85051 = var_b0c85051 - 0.5;
+        var_b0c85051 -= 0.5;
         if (var_b0c85051 > 0) {
             var_b0c85051 = math::clamp(var_b0c85051, 0.25, 1.5);
             self takeplayercontrol();
@@ -2911,7 +2911,7 @@ function get_closest_attacker_with_missile_locked_on_to_me(monitored_entity) {
     remaining_locked_on_flags = 0;
     foreach (target_ent in monitored_entity.target_group) {
         if (isdefined(target_ent) && isdefined(target_ent.locked_on)) {
-            remaining_locked_on_flags = remaining_locked_on_flags | target_ent.locked_on;
+            remaining_locked_on_flags |= target_ent.locked_on;
         }
     }
     for (i = 0; remaining_locked_on_flags && i < level.players.size; i++) {
@@ -2925,7 +2925,7 @@ function get_closest_attacker_with_missile_locked_on_to_me(monitored_entity) {
                     closest_attacker = attacker;
                     closest_attacker_dot = attacker_dot;
                 }
-                remaining_locked_on_flags = remaining_locked_on_flags & ~client_flag;
+                remaining_locked_on_flags &= ~client_flag;
             }
         }
     }
@@ -3072,7 +3072,7 @@ function vehicle_spawner_tool() {
                 dynamic_spawn_dummy_model = spawn("<unknown string>", (0, 0, 0));
                 while (getdvarint(#"debug_vehicle_spawn", 0) > 0) {
                     origin = player.origin + anglestoforward(player getplayerangles()) * 270;
-                    origin = origin + (0, 0, 40);
+                    origin += (0, 0, 40);
                     if (player usebuttonpressed()) {
                         dynamic_spawn_dummy_model hide();
                         vehicle = spawnvehicle(vehicleassets[type_index].name, origin, player.angles, "<unknown string>");
@@ -3234,7 +3234,7 @@ function function_93844822(e_player, b_skip_scene, b_enter = 1) {
                 str_scene = self.settings.var_fbbdbf11;
                 if (!isdefined(e_player.companion)) {
                     var_3966de80 = str_scene;
-                    var_3966de80 = var_3966de80 + "_solo";
+                    var_3966de80 += "_solo";
                     scene = getscriptbundle(var_3966de80);
                     if (isdefined(scene)) {
                         str_scene = var_3966de80;
@@ -3258,7 +3258,7 @@ function function_93844822(e_player, b_skip_scene, b_enter = 1) {
                 str_scene = self.settings.var_ffbed7fd;
                 if (!isdefined(e_player.companion)) {
                     var_3966de80 = str_scene;
-                    var_3966de80 = var_3966de80 + "_solo";
+                    var_3966de80 += "_solo";
                     scene = getscriptbundle(var_3966de80);
                     if (isdefined(scene)) {
                         str_scene = var_3966de80;
@@ -3670,14 +3670,14 @@ function function_e863c9af(owner, var_8fbb46cd, var_abfdfad5) {
         var_538c5a93 = vectornormalize((ownerforward[0], ownerforward[1], 0));
         velocity = var_538c5a93 * 1000;
         var_43fa4fb6 = vectornormalize((var_8fbb46cd[0], var_8fbb46cd[1], 0));
-        velocity = velocity + function_7786cb5e(var_43fa4fb6, owner getvelocity()) * 1.2;
+        velocity += function_7786cb5e(var_43fa4fb6, owner getvelocity()) * 1.2;
     } else {
         ownerforward = vectornormalize(ownerforward);
         velocity = ownerforward * 1000;
         var_8fbb46cd = vectornormalize(var_8fbb46cd);
-        velocity = velocity + owner getvelocity() * 1.2;
+        velocity += owner getvelocity() * 1.2;
     }
-    velocity = velocity + (0, 0, 1) * 275;
+    velocity += (0, 0, 1) * 275;
     return velocity;
 }
 
@@ -3689,7 +3689,7 @@ function function_7786cb5e(var_95d2171d, vector) {
     vector2d = (vector[0], vector[1], 0);
     dot = vectordot(var_95d2171d, vector2d);
     if (dot < 0) {
-        vector2d = vector2d - var_95d2171d * dot;
+        vector2d -= var_95d2171d * dot;
     }
     return vector2d;
 }
@@ -3722,13 +3722,13 @@ function move_flare(owner, gravity, var_2434a7ac, var_2d0d8b66, max_time, flare_
             velocity = lerpvector(velocity, var_40a3c87d, 0.5);
             newvelocity = velocity;
         }
-        newvelocity = newvelocity + gravity * (gettime() - start_time) / 1000;
+        newvelocity += gravity * (gettime() - start_time) / 1000;
         movetopos = self.origin + newvelocity * var_2d0d8b66;
         traceresult = bullettrace(self.origin, movetopos, 0, owner, 0, 0, self);
         if (traceresult[#"fraction"] < 1) {
             if (traceresult[#"fraction"] > 0) {
                 movetopos = traceresult[#"position"] + traceresult[#"normal"] * 0.1;
-                var_2d0d8b66 = var_2d0d8b66 * traceresult[#"fraction"];
+                var_2d0d8b66 *= traceresult[#"fraction"];
                 self moveto(movetopos, var_2d0d8b66);
                 self waittill(#"movedone");
             }
@@ -3866,7 +3866,7 @@ function function_f2fa0421(n_health) {
     }
     var_ab73d707 = int(self.healthdefault * 0.0083);
     while (self.health < n_health) {
-        self.health = self.health + var_ab73d707;
+        self.health += var_ab73d707;
         if (self.health >= n_health) {
             self.health = n_health;
         }

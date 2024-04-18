@@ -599,7 +599,7 @@ function function_fa0a1b19() {
 function private function_23494ff7(e_revivee) {
     if (!(isdefined(e_revivee.var_4fc8bf2a) && e_revivee.var_4fc8bf2a)) {
         if (self !== e_revivee) {
-            e_revivee.var_ec334996 = e_revivee.var_ec334996 + 100;
+            e_revivee.var_ec334996 += 100;
         }
         e_revivee.get_revive_time = &override_revive_time;
         e_revivee.var_84280a99 = self;
@@ -625,9 +625,9 @@ function private function_9c510b18(e_revivee) {
 function override_revive_time(e_revivee) {
     n_time = 3;
     if (self hasperk(#"specialty_quickrevive")) {
-        n_time = n_time / 4;
+        n_time /= 4;
     } else {
-        n_time = n_time / 2;
+        n_time /= 2;
     }
     return n_time;
 }
@@ -719,9 +719,9 @@ function plant_gravity_trap(var_4052dd74) {
     v_spawn_pos_right = self.origin + (0, 0, 32);
     v_spawn_pos_left = v_spawn_pos_right;
     a_trace = physicstraceex(v_spawn_pos_right, v_spawn_pos_right + v_right * 24, (-16, -16, -16), (16, 16, 16), self);
-    v_spawn_pos_right = v_spawn_pos_right + v_right * a_trace[#"fraction"] * 24;
+    v_spawn_pos_right += v_right * a_trace[#"fraction"] * 24;
     a_trace = physicstraceex(v_spawn_pos_left, v_spawn_pos_left + v_right * -24, (-16, -16, -16), (16, 16, 16), self);
-    v_spawn_pos_left = v_spawn_pos_left + v_right * a_trace[#"fraction"] * -24;
+    v_spawn_pos_left += v_right * a_trace[#"fraction"] * -24;
     var_f4daeb3f = util::function_97cf7eb0(v_spawn_pos_right, 1000, 24);
     var_d7061a0d = util::function_97cf7eb0(v_spawn_pos_left, 1000, 24);
     a_s_spawn_pos = array(var_f4daeb3f, var_d7061a0d);
@@ -1047,11 +1047,11 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
         self thread track_lifted_for_ragdoll_count();
         v_centroid = self getcentroid();
         v_away_from_source = vectornormalize(v_centroid - v_attack_source);
-        v_away_from_source = v_away_from_source * n_push_away;
+        v_away_from_source *= n_push_away;
         v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
         a_trace = physicstraceex(v_centroid + (0, 0, 32), v_centroid + v_away_from_source, (-16, -16, -16), (16, 16, 16), self);
         v_lift = a_trace[#"fraction"] * v_away_from_source;
-        v_lift = v_lift + v_lift_offset;
+        v_lift += v_lift_offset;
         if (!(isdefined(bullettracepassed(v_centroid, v_centroid + v_lift, 0, self)) && bullettracepassed(v_centroid, v_centroid + v_lift, 0, self))) {
             v_trace_pos = bullettrace(v_centroid, v_centroid + v_lift, 0, self)[#"position"];
             if (isdefined(v_trace_pos)) {

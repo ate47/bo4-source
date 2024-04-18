@@ -255,7 +255,7 @@ function round_spawning() {
         level.var_9427911d = level.zombie_total;
         level.var_412516cb = level.var_2125984b;
         level.zombie_respawns = level.var_2125984b;
-        level.zombie_total = level.zombie_total + level.var_2125984b;
+        level.zombie_total += level.var_2125984b;
         level notify(#"zombie_total_set");
         waittillframeend();
     }
@@ -370,12 +370,12 @@ function get_zombie_count_for_round(n_round, n_player_count) {
         multiplier = 1;
     }
     if (n_round >= 10) {
-        multiplier = multiplier * n_round * zombie_utility::function_d2dfacfd(#"hash_607bc50072c2a386");
+        multiplier *= n_round * zombie_utility::function_d2dfacfd(#"hash_607bc50072c2a386");
     }
     if (n_player_count == 1) {
-        max = max + int(zombie_utility::function_d2dfacfd(#"hash_67b3cbf79292e047") * zombie_utility::function_d2dfacfd(#"zombie_ai_per_player") * multiplier);
+        max += int(zombie_utility::function_d2dfacfd(#"hash_67b3cbf79292e047") * zombie_utility::function_d2dfacfd(#"zombie_ai_per_player") * multiplier);
     } else {
-        max = max + int((n_player_count - 1) * zombie_utility::function_d2dfacfd(#"zombie_ai_per_player") * multiplier);
+        max += int((n_player_count - 1) * zombie_utility::function_d2dfacfd(#"zombie_ai_per_player") * multiplier);
     }
     if (!isdefined(level.max_zombie_func)) {
         level.max_zombie_func = &zombie_utility::default_max_zombie_func;
@@ -393,16 +393,16 @@ function function_c112af8e(n_zombie_count) {
         return n_zombie_count;
     }
     if (isdefined(level.var_a2831281) && level.var_a2831281) {
-        n_zombie_count = n_zombie_count * (isdefined(level.var_928a4995) ? level.var_928a4995 : 1);
+        n_zombie_count *= isdefined(level.var_928a4995) ? level.var_928a4995 : 1;
         n_zombie_count = int(max(n_zombie_count * 0.1 + 0.5, 1));
     } else if (isdefined(level.var_76934955) && level.var_76934955) {
-        n_zombie_count = n_zombie_count * (isdefined(level.var_cd345b49) ? level.var_cd345b49 : 1);
+        n_zombie_count *= isdefined(level.var_cd345b49) ? level.var_cd345b49 : 1;
         n_zombie_count = int(max(n_zombie_count * 0.2 + 0.5, 1));
     } else if (isdefined(level.var_2b94ce72) && level.var_2b94ce72) {
-        n_zombie_count = n_zombie_count * (isdefined(level.var_9d9b2113) ? level.var_9d9b2113 : 1);
+        n_zombie_count *= isdefined(level.var_9d9b2113) ? level.var_9d9b2113 : 1;
         n_zombie_count = int(max(n_zombie_count, 1));
     } else if (isdefined(level.var_4a03b294) && level.var_4a03b294) {
-        n_zombie_count = n_zombie_count * (isdefined(level.var_71bc2e8f) ? level.var_71bc2e8f : 1);
+        n_zombie_count *= isdefined(level.var_71bc2e8f) ? level.var_71bc2e8f : 1;
         n_zombie_count = int(max(n_zombie_count, 1));
     }
     return n_zombie_count;
@@ -949,7 +949,7 @@ function get_zombie_spawn_delay(n_round) {
         break;
     }
     for (i = 1; i < n_round; i++) {
-        n_delay = n_delay * 0.95;
+        n_delay *= 0.95;
         if (n_delay <= 0.1) {
             n_delay = 0.1;
             break;

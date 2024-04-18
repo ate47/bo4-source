@@ -54,7 +54,7 @@ function __main__() {
 function private function_8c0ab720() {
     n_hp = zm_ai_utility::function_8d44707e(1) * (isdefined(level.var_1b0cc4f5) ? level.var_1b0cc4f5 : 1);
     if (self.var_9fde8624 == #"gladiator_marauder") {
-        n_hp = n_hp * 0.7;
+        n_hp *= 0.7;
         self.var_17a22c08 = 150;
         self playsound(#"zmb_ai_gladiator_spawn_mar");
     } else {

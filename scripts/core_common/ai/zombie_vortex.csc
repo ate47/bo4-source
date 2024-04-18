@@ -37,7 +37,7 @@ function start_vortex(localclientnum, oldval, newval, bnewent, binitialsnap, fie
     }
     e_player = function_5c10bd79(localclientnum);
     vposition = self.origin;
-    newval = newval - oldval;
+    newval -= oldval;
     if (newval == 2) {
         registerplayer_lift_clipbamfupdate = "zombie/fx_idgun_vortex_ug_zod_zmb";
         fx_vortex_explosion = "zombie/fx_idgun_vortex_explo_ug_zod_zmb";

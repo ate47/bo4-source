@@ -239,7 +239,7 @@ function function_665b4fa6() {
                 self.e_crank rotateroll(-36, 0.1);
                 wait(0.1);
                 playsoundatposition(#"hash_12cbe85436ddc720", self.origin);
-                self.var_191e6b71 = self.var_191e6b71 - 0.1;
+                self.var_191e6b71 -= 0.1;
                 var_ba7236d5++;
                 if (var_ba7236d5 % 5 == 0) {
                     self.var_3bc09679.play_queue++;
@@ -637,7 +637,7 @@ function private function_85a2c43b() {
         player_forward = anglestoforward(self.angles) * (0, 1, 0);
         velocity = self.var_b20b0960 getvelocity();
         speed = length(velocity);
-        speed = speed * 0.0568182;
+        speed *= 0.0568182;
         /#
             print3d(self.origin + player_forward * 100 + (0, 0, 60), "<unknown string>" + speed, (1, 0, 0), 1, 1, 1);
             record3dtext("<unknown string>" + speed, self.origin, (1, 0, 0), "<unknown string>");

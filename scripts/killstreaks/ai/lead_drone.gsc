@@ -433,7 +433,7 @@ function function_1c4cd527(origin, owner, innerradius, outerradius, halfheight, 
                 point._scoredebug[#"no visibility"].score = -5000;
                 point._scoredebug[#"no visibility"].scorename = "<unknown string>";
             #/
-            point.score = point.score + -5000;
+            point.score += -5000;
         }
     }
     if (queryresult.data.size > 0) {
@@ -457,7 +457,7 @@ function function_ede09a4e(owner) {
     protectdest = undefined;
     if (isdefined(owner)) {
         groundpos = getclosestpointonnavmesh(owner.origin, 10000);
-        groundpos = groundpos + vectorscale(anglestoforward(owner.angles), randomintrange(100, 200));
+        groundpos += vectorscale(anglestoforward(owner.angles), randomintrange(100, 200));
         if (isdefined(groundpos)) {
             self.var_d6acaac4 = groundpos;
             pos = groundpos + (0, 0, randomintrange(150, 300));
@@ -562,7 +562,7 @@ function function_9bbb40ab(einflictor, eattacker, idamage, idflags, smeansofdeat
             idamage = self.maxhealth;
         }
     }
-    self.damagetaken = self.damagetaken + idamage;
+    self.damagetaken += idamage;
     return idamage;
 }
 

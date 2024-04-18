@@ -346,21 +346,21 @@ function function_fe09cd56() {
     pos = start_pos;
     for (i = 0; i < n_length; i++) {
         spawncollision("collision_clip_wall_512x512x10", "collider", pos, angle);
-        pos = pos + (512, 0, 0);
+        pos += (512, 0, 0);
     }
     angle = (0, 270, 0);
     start_pos = (-8752, 50216, 1784);
     pos = start_pos;
     for (i = 0; i < n_length; i++) {
         spawncollision("collision_clip_wall_512x512x10", "collider", pos, angle);
-        pos = pos + (512, 0, 0);
+        pos += (512, 0, 0);
     }
     angle = (90, 0, 0);
     start_pos = (-8752, 50456, 2040);
     pos = start_pos;
     for (i = 0; i < n_length; i++) {
         spawncollision("collision_clip_wall_512x512x10", "collider", pos, angle);
-        pos = pos + (512, 0, 0);
+        pos += (512, 0, 0);
     }
     angle = (0, 0, 0);
     start_pos = (-3656, 50456, 1792);

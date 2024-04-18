@@ -538,7 +538,7 @@ function function_5ef70b0b(e_player) {
 // Size: 0x324
 function function_2ae8eabe(n_current_progress, var_8d9da2cd) {
     var_9667b963 = n_current_progress / var_8d9da2cd;
-    var_9667b963 = var_9667b963 * 100;
+    var_9667b963 *= 100;
     var_9134e5d2 = self.targetname;
     switch (var_9134e5d2) {
     case #"odin_brazier":

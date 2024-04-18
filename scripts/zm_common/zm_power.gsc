@@ -548,12 +548,12 @@ function get_local_power_cost(localpower) {
     cost = 0;
     if (isdefined(localpower) && isdefined(localpower.enabled_list)) {
         foreach (powered in localpower.enabled_list) {
-            cost = cost + powered get_powered_item_cost();
+            cost += powered get_powered_item_cost();
         }
     }
     if (isdefined(localpower) && isdefined(localpower.added_list)) {
         foreach (powered in localpower.added_list) {
-            cost = cost + powered get_powered_item_cost();
+            cost += powered get_powered_item_cost();
         }
     }
     return cost;
@@ -720,7 +720,7 @@ function cost_door() {
         if (!isdefined(self.one_time_cost)) {
             self.one_time_cost = 0;
         }
-        self.one_time_cost = self.one_time_cost + self.target.power_cost;
+        self.one_time_cost += self.target.power_cost;
         self.target.power_cost = 0;
     }
     if (isdefined(self.one_time_cost)) {
@@ -791,7 +791,7 @@ function perk_range(delta, origin, radius) {
         if (isdefined(self.target.trigger_off) && self.target.trigger_off) {
             perkorigin = self.target.realorigin;
         } else if (isdefined(self.target.disabled) && self.target.disabled) {
-            perkorigin = perkorigin + (0, 0, 10000);
+            perkorigin += (0, 0, 10000);
         }
         if (distancesquared(perkorigin, origin) < radius * radius) {
             return true;

@@ -81,7 +81,7 @@ function function_9af806be(var_c5b25bc5) {
         if (!isdefined(self.n_regen_delay)) {
             self.n_regen_delay = zombie_utility::function_d2dfacfd("player_health_regen_delay");
         }
-        self.n_regen_delay = self.n_regen_delay + 1;
+        self.n_regen_delay += 1;
         break;
     }
 }
@@ -114,7 +114,7 @@ function function_2a94cd59() {
             break;
         case 6:
             self zm_laststand::function_409dc98e(1, 0);
-            self.n_regen_delay = self.n_regen_delay - 1;
+            self.n_regen_delay -= 1;
             break;
         }
     #/
@@ -139,17 +139,17 @@ function actor_damage_override(inflictor, attacker, damage, flags, meansofdeath,
     switch (attacker.var_2fe40b9d) {
     case 1:
         if (attacker zm_weapons::function_f5a0899d(weapon, 0)) {
-            damage = damage * 1.15;
+            damage *= 1.15;
         }
         break;
     case 3:
         if (attacker zm_weapons::function_f5a0899d(weapon, 0)) {
-            damage = damage * 0.85;
+            damage *= 0.85;
         }
         break;
     case 6:
         if (meansofdeath == "MOD_MELEE" && isdefined(weapon) && !weapon.isriotshield && !zm_loadout::is_hero_weapon(weapon)) {
-            damage = damage + 200;
+            damage += 200;
         }
         break;
     }
@@ -178,7 +178,7 @@ function function_c3f3716() {
 // Size: 0x60
 function function_863dc0ef(n_cost) {
     if (self function_6a7a1533(-1000)) {
-        n_cost = n_cost + -1000;
+        n_cost += -1000;
         return int(max(n_cost, 0));
     }
     return n_cost;

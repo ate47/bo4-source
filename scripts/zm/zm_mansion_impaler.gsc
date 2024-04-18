@@ -1294,7 +1294,7 @@ function function_9a05e3c2(e_player, e_bolt, str_hitloc, str_meansofdeath) {
     self allowpitchangle(1);
     self setpitchorient();
     health = self.health;
-    health = health * 0.1;
+    health *= 0.1;
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler

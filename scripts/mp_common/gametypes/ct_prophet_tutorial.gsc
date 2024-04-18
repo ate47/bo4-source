@@ -832,7 +832,7 @@ function function_67483f8c() {
     level.var_da5432a2 = 0;
     level thread ct_bots::activate_bots(level.var_72c3ea74.size, #"axis");
     self thread ct_vo::function_831e0584(array("vox_tvoi_tutor_prop_tempest_chain_0", "vox_tvoi_tutor_prop_tempest_chain_1"));
-    for (i = 3; i <= 7; i = i + 2) {
+    for (i = 3; i <= 7; i += 2) {
         str_loc = "s_prophet_tempest_battle_" + i + "_loc";
         self thread ct_vo::function_261ed63c("vox_tvoi_tutor_prop_slide_2_nag", 20, 20);
         ct_utils::function_93c86846(undefined, str_loc, array(#"eq_seeker_mine", #"shock_rifle"), 0, undefined, 25);

@@ -735,7 +735,7 @@ function private function_e00eae6(e_player) {
             break;
         }
         if (function_81d8403b(var_9102824b)) {
-            var_be9badbc = var_be9badbc + "_upgraded";
+            var_be9badbc += "_upgraded";
         }
         w_weapon = getweapon(var_be9badbc);
         e_player giveweapon(w_weapon);
@@ -794,7 +794,7 @@ function private function_4facba35(str_drop, v_origin, v_spawn) {
         str_prompt = zm_utility::function_d6046228(#"hash_1fe854f6441b337e", #"hash_1b7e2d2bbc1de36a");
         var_a071ccba sethintstring(str_prompt);
         var_abf1e2f7 setmodel(#"c_t8_zmb_concentrated_catalyst_heart");
-        v_origin = v_origin + (0, 0, 5);
+        v_origin += (0, 0, 5);
         break;
     case #"concentrated_plasma":
         str_prompt = zm_utility::function_d6046228(#"hash_1da4ec6fc5b6b9e6", #"hash_2eb14d935f8e39c2");

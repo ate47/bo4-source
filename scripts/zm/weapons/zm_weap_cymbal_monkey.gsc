@@ -214,7 +214,7 @@ function show_briefly(showtime) {
     self.show_for_time = showtime;
     self setvisibletoall();
     while (self.show_for_time > 0) {
-        self.show_for_time = self.show_for_time - 0.05;
+        self.show_for_time -= 0.05;
         waitframe(1);
     }
     self setvisibletoallexceptteam(level.zombie_team);

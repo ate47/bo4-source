@@ -96,7 +96,7 @@ function function_a2c43fea(var_d42c8aaa = 2000) {
         n_score_total = 0;
         foreach (player in getplayers()) {
             if (isalive(player)) {
-                n_score_total = n_score_total + (isdefined(player.score) ? player.score : 0);
+                n_score_total += isdefined(player.score) ? player.score : 0;
             }
             if (n_score_total >= var_d42c8aaa) {
                 level.var_894a83d8 = 1;

@@ -1138,59 +1138,59 @@ function function_f3cff6ff(entity) {
             color = (1, 0, 0);
             switch (var_ca00d79a.reason) {
             case 0:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 1:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 2:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 3:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 4:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 5:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 6:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 8:
-                text = text + "<unknown string>" + var_ca00d79a.args[0];
+                text += "<unknown string>" + var_ca00d79a.args[0];
                 break;
             case 9:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 7:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 11:
-                text = text + "<unknown string>" + var_ca00d79a.args[0];
+                text += "<unknown string>" + var_ca00d79a.args[0];
                 break;
             case 10:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 color = (0, 1, 0);
                 break;
             case 13:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 14:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 recordstar(var_ca00d79a.args[0], (0, 1, 1));
                 recordstar(var_ca00d79a.args[1].origin, (1, 0, 1));
                 recordline(var_ca00d79a.args[1].origin, var_ca00d79a.args[1].origin + anglestoforward(var_ca00d79a.args[1].angles) * 10, (1, 1, 0));
                 break;
             case 15:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 16:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             case 17:
-                text = text + "<unknown string>";
+                text += "<unknown string>";
                 break;
             }
             recordstar(var_ca00d79a.stub.origin, (1, 1, 0));

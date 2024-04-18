@@ -286,7 +286,7 @@ function watchriotshielddeploy() {
 function riotshielddistancetest(origin) {
     assert(isdefined(origin));
     min_dist_squared = getdvarfloat(#"riotshield_deploy_limit_radius", 0);
-    min_dist_squared = min_dist_squared * min_dist_squared;
+    min_dist_squared *= min_dist_squared;
     for (i = 0; i < level.players.size; i++) {
         if (isdefined(level.players[i].riotshieldentity)) {
             dist_squared = distancesquared(level.players[i].riotshieldentity.origin, origin);
@@ -347,17 +347,17 @@ function watchdeployedriotshielddamage() {
             }
         }
         if (type == "MOD_MELEE" || type == "MOD_MELEE_ASSASSINATE") {
-            damage = damage * getdvarfloat(#"riotshield_melee_damage_scale", 0);
+            damage *= getdvarfloat(#"riotshield_melee_damage_scale", 0);
         } else if (type == "MOD_PISTOL_BULLET" || type == "MOD_RIFLE_BULLET") {
-            damage = damage * getdvarfloat(#"riotshield_bullet_damage_scale", 0);
+            damage *= getdvarfloat(#"riotshield_bullet_damage_scale", 0);
         } else if (type == "MOD_GRENADE" || type == "MOD_GRENADE_SPLASH" || type == "MOD_EXPLOSIVE" || type == "MOD_EXPLOSIVE_SPLASH" || type == "MOD_PROJECTILE" || type == "MOD_PROJECTILE_SPLASH") {
-            damage = damage * getdvarfloat(#"riotshield_explosive_damage_scale", 0);
+            damage *= getdvarfloat(#"riotshield_explosive_damage_scale", 0);
         } else if (type == "MOD_IMPACT") {
-            damage = damage * getdvarfloat(#"riotshield_projectile_damage_scale", 0);
+            damage *= getdvarfloat(#"riotshield_projectile_damage_scale", 0);
         } else if (type == "MOD_CRUSH") {
             damage = damagemax;
         }
-        self.damagetaken = self.damagetaken + damage;
+        self.damagetaken += damage;
         if (self.damagetaken >= damagemax) {
             self thread damagethendestroyriotshield(attacker, weapon);
             break;

@@ -846,11 +846,11 @@ function getverticaltan(startorigin, endorigin) {
     vector = endorigin - startorigin;
     opposite = startorigin[2] - endorigin[2];
     if (opposite < 0) {
-        opposite = opposite * 1;
+        opposite *= 1;
     }
     adjacent = distance2d(startorigin, endorigin);
     if (adjacent < 0) {
-        adjacent = adjacent * 1;
+        adjacent *= 1;
     }
     if (adjacent < 0.01) {
         adjacent = 0.01;
@@ -1223,7 +1223,7 @@ function heli_damage_monitor(hardpointtype) {
         if (!isdefined(weapon_damage)) {
             weapon_damage = killstreaks::get_old_damage(attacker, weapon, type, damage, 1, level.var_926d9f1);
         }
-        self.damagetaken = self.damagetaken + weapon_damage;
+        self.damagetaken += weapon_damage;
         playercontrolled = 0;
         if (self.damagetaken > self.maxhealth && !isdefined(self.xpgiven)) {
             self.xpgiven = 1;
@@ -1404,7 +1404,7 @@ function heli_set_active_camo_state(state) {
 function heli_active_camo_damage_update(damage) {
     self endon(#"death", #"crashing");
     heli = self;
-    heli.active_camo_damage = heli.active_camo_damage + damage;
+    heli.active_camo_damage += damage;
     if (heli.active_camo_damage > 100) {
         heli.active_camo_disabled = 1;
         heli thread heli_active_camo_damage_disable();
@@ -2021,8 +2021,8 @@ function heli_fly(currentnode, startwait, hardpointtype) {
             heli_accel = 10 + randomint(5);
         }
         if (isdefined(self.pathspeedscale)) {
-            heli_speed = heli_speed * self.pathspeedscale;
-            heli_accel = heli_accel * self.pathspeedscale;
+            heli_speed *= self.pathspeedscale;
+            heli_accel *= self.pathspeedscale;
         }
         if (!isdefined(nextnode.target)) {
             stop = 1;
@@ -2223,8 +2223,8 @@ function heli_get_protect_spot(protectdest, var_551cf1b9, heli_team) {
     heightmax = level.var_c2bbc18f;
     if (heli_team == #"axis") {
         assert(isdefined(level.var_d9c77d70));
-        heightmin = heightmin + level.var_d9c77d70;
-        heightmax = heightmax + level.var_d9c77d70;
+        heightmin += level.var_d9c77d70;
+        heightmax += level.var_d9c77d70;
     }
     hoverheight = heightmin + (heightmax - heightmin) / 2;
     radius = 10000;
@@ -2350,8 +2350,8 @@ function heli_random_point_in_radius(protectdest, nodeheight) {
     distance = randomintrange(min_distance, level.heli_protect_radius);
     x = cos(direction);
     y = sin(direction);
-    x = x * distance;
-    y = y * distance;
+    x *= distance;
+    y *= distance;
     return (protectdest[0] + x, protectdest[1] + y, nodeheight);
 }
 
@@ -2571,7 +2571,7 @@ function attack_secondary(hardpointtype) {
                 } else {
                     break;
                 }
-                antithreat = antithreat + 100;
+                antithreat += 100;
                 self.missiletarget.antithreat = antithreat;
                 wait(level.heli_missile_rof);
                 if (!isdefined(self.secondarytarget) || isdefined(self.secondarytarget) && self.missiletarget != self.secondarytarget) {
@@ -2595,11 +2595,11 @@ function turret_target_check(turrettarget, attackangle) {
     targetyaw = math::get_2d_yaw(self.origin, turrettarget.origin);
     chopperyaw = self.angles[1];
     if (targetyaw < 0) {
-        targetyaw = targetyaw * -1;
+        targetyaw *= -1;
     }
     targetyaw = int(targetyaw) % 360;
     if (chopperyaw < 0) {
-        chopperyaw = chopperyaw * -1;
+        chopperyaw *= -1;
     }
     chopperyaw = int(chopperyaw) % 360;
     if (chopperyaw > targetyaw) {
@@ -2734,7 +2734,7 @@ function attack_primary(hardpointtype) {
                 wait(level.heli_turretreloadtime);
                 self heli_set_active_camo_state(1);
                 if (isdefined(self.turrettarget) && isalive(self.turrettarget)) {
-                    antithreat = antithreat + 100;
+                    antithreat += 100;
                     self.turrettarget.antithreat = antithreat;
                 }
                 if (!isdefined(self.primarytarget) || isdefined(self.turrettarget) && isdefined(self.primarytarget) && self.primarytarget != self.turrettarget) {

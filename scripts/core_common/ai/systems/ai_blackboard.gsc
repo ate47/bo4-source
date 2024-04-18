@@ -29,7 +29,7 @@ function private _updateevents() {
         foreach (eventname, events in level.__ai_blackboard) {
             liveevents = [];
             foreach (event in events) {
-                event.ttl = event.ttl - updatemillis;
+                event.ttl -= updatemillis;
                 if (event.ttl > 0) {
                     liveevents[liveevents.size] = event;
                 }

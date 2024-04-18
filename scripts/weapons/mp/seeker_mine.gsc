@@ -426,7 +426,7 @@ function function_6db15645(target) {
     tag = "tag_origin";
     pos = (0, 0, target getplayerviewheight() - 10);
     forward = anglestoforward(target.angles);
-    pos = pos - forward * 5;
+    pos -= forward * 5;
     self thread function_a78e666b(target, tag, pos, 1);
     target thread watchtargetdeath(self);
 }
@@ -448,7 +448,7 @@ function function_a78e666b(target, tag, offset = (0, 0, 0), var_9bd28e34) {
     if (!isdefined(pos)) {
         pos = (0, 0, 0);
     }
-    pos = pos + offset;
+    pos += offset;
     var_1a9a5cee = spawn("script_model", pos);
     var_1a9a5cee setmodel("tag_origin");
     beam = beamlaunch(self, var_1a9a5cee, tagfx, "tag_origin", self.arcweapon);
@@ -485,7 +485,7 @@ function function_9a66b97b(target, tag, offset = (0, 0, 0), tagpos, seekermine) 
         if (!isdefined(pos)) {
             pos = (0, 0, 0);
         }
-        pos = pos + offset;
+        pos += offset;
         self.origin = pos;
         dir = pos - tagpos;
         dir = vectornormalize(dir);

@@ -120,7 +120,7 @@ function private function_e3a084cd(localclientnum) {
                 self.angles = vectortoangles(self.origin - startorigin);
                 var_354c76a5 = atan(radius / distance);
                 if (var_3d3d7bb1 > 0) {
-                    var_354c76a5 = var_354c76a5 * (250 - var_3d3d7bb1) / 250;
+                    var_354c76a5 *= (250 - var_3d3d7bb1) / 250;
                     self function_5e00861(0);
                 } else {
                     self function_5e00861(radius / 200 * 0.6);

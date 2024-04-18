@@ -1320,9 +1320,9 @@ function function_e588f057(inflictor, attacker, damage, idflags, meansofdeath, w
     if (isdefined(attacker) && attacker.team != self.team) {
         var_b25a1274 = function_cc3b1643(weapon, hitloc, meansofdeath);
         if (var_b25a1274) {
-            damage = damage * 1.2;
+            damage *= 1.2;
         } else {
-            damage = damage * 0.3;
+            damage *= 0.3;
         }
         if (damage < 0) {
             damage = 0;
@@ -1442,7 +1442,7 @@ function function_18a9058c() {
                 continue;
             }
             if (self cansee(player)) {
-                self.health = self.health + 1;
+                self.health += 1;
                 self dodamage(1, player.origin, undefined, undefined, "torso_lower", "MOD_UNKNOWN", 0, getweapon("eq_swat_grenade"), 0, 1);
                 self.ai.var_e90b47c1 = gettime() + randomintrange(6000, 13000);
                 break;

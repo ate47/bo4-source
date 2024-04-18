@@ -193,7 +193,7 @@ function on_joined_team(params) {
     self endon(#"disconnect");
     teammask = getteammask(self.team);
     for (teamindex = 0; teammask > 1; teamindex++) {
-        teammask = teammask >> 1;
+        teammask >>= 1;
     }
     if (teamindex % 2) {
         self set_blops_dialog();
@@ -301,7 +301,7 @@ function function_af2bf286(player) {
     self endon(#"death", #"disconnect", #"weapon_change");
     level endon(#"game_ended");
     var_8e76086 = mpdialog_value("warmachineThreatMinDistance", 100);
-    var_8e76086 = var_8e76086 * var_8e76086;
+    var_8e76086 *= var_8e76086;
     while (true) {
         waitresult = player waittill(#"weapon_fired");
         if (!isdefined(player)) {
@@ -893,7 +893,7 @@ function enemy_threat() {
         }
         eyepoint = self geteye();
         dir = anglestoforward(self getplayerangles());
-        dir = dir * mpdialog_value("enemyContactDistance", 0);
+        dir *= mpdialog_value("enemyContactDistance", 0);
         endpoint = eyepoint + dir;
         traceresult = bullettrace(eyepoint, endpoint, 1, self);
         if (isdefined(traceresult[#"entity"]) && util::function_fbce7263(traceresult[#"entity"].team, self.team)) {
@@ -1465,7 +1465,7 @@ function incoming_projectile_alert(thrower, projectile, dialogkey, waittime) {
     while (true) {
         wait(waittime);
         if (waittime > 0.2) {
-            waittime = waittime / 2;
+            waittime /= 2;
         }
         if (!isdefined(projectile)) {
             return;
@@ -1523,7 +1523,7 @@ function heavy_weapon_success_reaction() {
     }
     allies = [];
     allyradiussq = mpdialog_value("playerVoiceRadius", 0);
-    allyradiussq = allyradiussq * allyradiussq;
+    allyradiussq *= allyradiussq;
     foreach (player in level.players) {
         if (!isdefined(player) || !isalive(player) || player.sessionstate != "playing" || player == self || player hasperk(#"specialty_quieter") || util::function_fbce7263(player.team, self.team)) {
             continue;
@@ -1894,7 +1894,7 @@ function play_dialog(dialogkey, dialogflags, dialogbuffer, enemy) {
         }
         dialogalias = dialogalias + "_0" + self.stolendialogindex;
         self.stolendialogindex++;
-        self.stolendialogindex = self.stolendialogindex % 4;
+        self.stolendialogindex %= 4;
     }
     if (dialogflags & 2) {
         if (self function_1339f3f3()) {
@@ -2212,7 +2212,7 @@ function play_gadget_ready(weapon, userflip = 0) {
             delaykey = "rouletteFlipDelay";
         }
         waittime = mpdialog_value(delaykey, minwaittime);
-        dialogflags = dialogflags + 64;
+        dialogflags += 64;
     } else {
         if (isdefined(self.isthief) && self.isthief) {
             generickey = playerbundle.thiefweaponready;
@@ -2234,7 +2234,7 @@ function play_gadget_ready(weapon, userflip = 0) {
             if (self.laststolengadget === weapon && self.laststolengadgettime + int(mpdialog_value(repeatthresholdkey, 0) * 1000) > gettime()) {
                 dialogkey = repeatkey;
             } else {
-                dialogflags = dialogflags + 64;
+                dialogflags += 64;
             }
         }
     }

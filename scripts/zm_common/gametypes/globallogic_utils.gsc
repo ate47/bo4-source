@@ -158,16 +158,16 @@ function playtickingsound(gametype_tick_sound) {
     while (true) {
         self playsound(gametype_tick_sound);
         if (time > 10) {
-            time = time - 1;
+            time -= 1;
             wait(1);
         } else if (time > 4) {
-            time = time - 0.5;
+            time -= 0.5;
             wait(0.5);
         } else if (time > 1) {
-            time = time - 0.4;
+            time -= 0.4;
             wait(0.4);
         } else {
-            time = time - 0.3;
+            time -= 0.3;
             wait(0.3);
         }
         hostmigration::waittillhostmigrationdone();
@@ -192,13 +192,13 @@ function gametimer() {
     level.starttime = gettime();
     level.discardtime = 0;
     if (isdefined(game.roundmillisecondsalreadypassed)) {
-        level.starttime = level.starttime - game.roundmillisecondsalreadypassed;
+        level.starttime -= game.roundmillisecondsalreadypassed;
         game.roundmillisecondsalreadypassed = undefined;
     }
     prevtime = gettime();
     while (game.state == "playing") {
         if (!level.timerstopped) {
-            game.timepassed = game.timepassed + gettime() - prevtime;
+            game.timepassed += gettime() - prevtime;
         }
         prevtime = gettime();
         wait(1);
@@ -240,7 +240,7 @@ function resumetimer() {
         return;
     }
     level.timerstopped = 0;
-    level.discardtime = level.discardtime + gettime() - level.timerpausetime;
+    level.discardtime += gettime() - level.timerpausetime;
 }
 
 // Namespace globallogic_utils/globallogic_utils

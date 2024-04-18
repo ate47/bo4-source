@@ -247,10 +247,10 @@ function player_damage(t_damage) {
     if (self getstance() == "stand" && !self issliding()) {
         n_damage = 50;
         if (zm_utility::is_standard()) {
-            n_damage = n_damage * 0.5;
+            n_damage *= 0.5;
         }
         if (zm_utility::is_ee_enabled() && self flag::get(#"hash_6757075afacfc1b4")) {
-            n_damage = n_damage * 0.5;
+            n_damage *= 0.5;
         }
         self dodamage(n_damage, self.origin, undefined, t_damage);
         wait(0.1);

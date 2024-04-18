@@ -298,7 +298,7 @@ function private get_favorite_enemy(tiger) {
     if (!is_target_valid(tiger, least_hunted)) {
         return undefined;
     }
-    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    least_hunted.hunted_by += 1;
     return least_hunted;
 }
 
@@ -744,7 +744,7 @@ function function_2e8439bf(entity, mocompanim, mocompanimblendouttime, mocompani
         if (isplayer(entity.enemy)) {
             velocity = entity.enemy getvelocity();
             if (length(velocity) >= 0) {
-                predictedenemypos = predictedenemypos + vectorscale(velocity, 0.25);
+                predictedenemypos += vectorscale(velocity, 0.25);
             }
         }
         var_83fd29ee = vectornormalize(predictedenemypos - entity.origin);

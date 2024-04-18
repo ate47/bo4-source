@@ -430,7 +430,7 @@ function private function_e9819a23(entity) {
         predictedenemypos = entity.enemy.origin;
         velocity = entity.enemy getvelocity();
         if (length(velocity) > 0) {
-            predictedenemypos = predictedenemypos + vectorscale(velocity, 0.25);
+            predictedenemypos += vectorscale(velocity, 0.25);
         }
         distancesq = distancesquared(entity.origin, predictedenemypos);
         if (distancesq <= 128 * 128) {
@@ -487,7 +487,7 @@ function private function_85d8b15d(entity) {
         predictedenemypos = entity.enemy.origin;
         velocity = entity.enemy getvelocity();
         if (length(velocity) > 0) {
-            predictedenemypos = predictedenemypos + vectorscale(velocity, 0.25);
+            predictedenemypos += vectorscale(velocity, 0.25);
         }
         distancesq = distancesquared(entity.origin, predictedenemypos);
         if (distancesq <= 128 * 128) {
@@ -733,7 +733,7 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
         predictedenemypos = entity.enemy.origin;
         velocity = entity.enemy getvelocity();
         if (length(velocity) > 0) {
-            predictedenemypos = predictedenemypos + vectorscale(velocity, 0.25);
+            predictedenemypos += vectorscale(velocity, 0.25);
         }
         entity.meleeinfo.adjustedendpos = predictedenemypos;
         var_cf699df5 = distancesquared(entity.meleeinfo.var_9bfa8497, entity.meleeinfo.var_cb28f380);
@@ -745,7 +745,7 @@ function function_3511ecd1(entity, mocompanim, mocompanimblendouttime, mocompani
         var_535d098c = 0;
         if (isdefined(traceresult[#"hitloc"]) && traceresult[#"hitloc"] == "riotshield") {
             var_cc075bd0 = vectornormalize(entity.origin - entity.meleeinfo.adjustedendpos);
-            entity.meleeinfo.adjustedendpos = entity.meleeinfo.adjustedendpos + vectorscale(var_cc075bd0, 50);
+            entity.meleeinfo.adjustedendpos += vectorscale(var_cc075bd0, 50);
             var_535d098c = 1;
         }
         if (traceresult[#"fraction"] < 0.9) {

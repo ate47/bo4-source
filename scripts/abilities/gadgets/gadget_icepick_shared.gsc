@@ -547,7 +547,7 @@ function private function_aaf0a382(entities, player, max) {
         }
         if (!isplayer(entity)) {
             entityweapon = findweapon(entity);
-            var_e8e3cc00 = var_e8e3cc00 + entityweapon.var_df381b5d;
+            var_e8e3cc00 += entityweapon.var_df381b5d;
         }
         if (isdefined(max) && var_e8e3cc00 > max) {
             break;
@@ -599,7 +599,7 @@ function private function_2b2ed159(entity, attackingplayer) {
         var_50c86c4 = var_3d69d460 / var_87bdc7d3;
         attackingplayer clientfield::set_player_uimodel("IcePickInfo.currentHackProgress", var_50c86c4);
         timediff = gettime() - lasttime;
-        var_3d69d460 = var_3d69d460 + timediff * (isdefined(attackingplayer.var_6704e6fa) ? attackingplayer.var_6704e6fa : 1);
+        var_3d69d460 += timediff * (isdefined(attackingplayer.var_6704e6fa) ? attackingplayer.var_6704e6fa : 1);
         lasttime = gettime();
         waitframe(1);
     }
@@ -781,7 +781,7 @@ function private function_aadad2c(attackingplayer, var_11a83c3a) {
     duration = var_559f4f0a.var_77449e9;
     if (var_11a83c3a.var_20183706) {
         settingsbundle = function_13f4415c();
-        duration = duration * (isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1);
+        duration *= isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1;
     }
     var_11a83c3a.hackendtime = gettime() + duration;
     if (isdefined(var_11a83c3a.var_1f5ab061) ? var_11a83c3a.var_1f5ab061 : 0) {
@@ -820,7 +820,7 @@ function private function_bf744a1e(attackingplayer, var_11a83c3a) {
     var_e7af1dd4 = var_11a83c3a function_6c32d092(#"talent_resistance") ? isdefined(settingsbundle.var_4624074e) ? settingsbundle.var_4624074e : 1 : 1;
     statuseffect = getstatuseffect("hacked");
     additionaltime = statuseffect.var_77449e9 * var_e7af1dd4 * (isdefined(settingsbundle.var_9b5b082d) ? settingsbundle.var_9b5b082d : 1);
-    var_11a83c3a.hackendtime = var_11a83c3a.hackendtime + additionaltime;
+    var_11a83c3a.hackendtime += additionaltime;
     var_11a83c3a status_effect::status_effect_apply(statuseffect, icepickweapon, attackingplayer, 0, additionaltime);
 }
 

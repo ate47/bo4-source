@@ -478,11 +478,11 @@ function play_next_killstreak_dialog() {
     }
     waittime = 0;
     if (isdefined(nextdialog.soundevent) && isdefined(nextdialog.var_8a6b001a) && isalive(nextdialog.var_8a6b001a)) {
-        waittime = waittime + battlechatter::mpdialog_value("taacomHackAndReplyDialogBuffer", 0);
+        waittime += battlechatter::mpdialog_value("taacomHackAndReplyDialogBuffer", 0);
         self thread function_30f16f29(nextdialog.soundevent, nextdialog.var_8a6b001a, nextdialog.weapon);
     } else {
         self playlocalsound(dialogalias);
-        waittime = waittime + battlechatter::mpdialog_value("killstreakDialogBuffer", 0);
+        waittime += battlechatter::mpdialog_value("killstreakDialogBuffer", 0);
     }
     self.currentkillstreakdialog = nextdialog;
     self thread wait_next_killstreak_dialog(waittime);

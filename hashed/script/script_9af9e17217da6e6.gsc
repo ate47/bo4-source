@@ -817,7 +817,7 @@ function function_5164d716() {
     var_e0cc1e20.health = 99999;
     while (true) {
         s_notify = var_e0cc1e20 waittill(#"damage");
-        var_e0cc1e20.health = var_e0cc1e20.health + s_notify.amount;
+        var_e0cc1e20.health += s_notify.amount;
         if (isdefined(s_notify.attacker) && isplayer(s_notify.attacker) && mansion_util::is_shield(s_notify.weapon) && s_notify.mod === "MOD_MELEE" && isdefined(level.n_turns) && level.n_turns > 15) {
             mdl_wheel = function_b1b02a54();
             mdl_wheel scene::play(#"p8_fxanim_zm_man_dome_crank_wheel_bundle", mdl_wheel);
@@ -1075,7 +1075,7 @@ function function_bfefc7aa() {
     self.health = 99999;
     while (true) {
         s_notify = self waittill(#"damage");
-        self.health = self.health + s_notify.amount;
+        self.health += s_notify.amount;
         if (level flag::get(#"combo_dialed") || !isdefined(level.var_779d8f63) || !isdefined(level.var_21d0f5ee) || isinarray(level.var_5c086e54, level.var_779d8f63)) {
             continue;
         }
@@ -1205,7 +1205,7 @@ function function_d5bfc8e8() {
     var_1a50a8c5 = undefined;
     do {
         s_result = self waittill(#"damage");
-        self.health = self.health + s_result.amount;
+        self.health += s_result.amount;
         e_player = s_result.inflictor;
         var_989dd232 = 0;
         if (isplayer(e_player)) {
@@ -1403,7 +1403,7 @@ function function_31e641f5() {
             }
             self clientfield::set("" + #"stone_glow", 1);
             wait(0.1);
-            n_time = n_time + 0.1;
+            n_time += 0.1;
         }
         if (b_using == 1) {
             self playsound(#"hash_e1ac3a86a1144fc");

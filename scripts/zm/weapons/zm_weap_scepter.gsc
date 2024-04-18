@@ -181,7 +181,7 @@ function private function_4521ac7e(w_curr, n_lvl) {
         var_43b42a60 = 1;
         do {
             waitframe(1);
-            var_43b42a60 = var_43b42a60 - float(function_60d95f53()) / 1000;
+            var_43b42a60 -= float(function_60d95f53()) / 1000;
             if (var_43b42a60 <= 0) {
                 self notify(#"ammo_reduction", {#weapon:w_curr});
                 var_43b42a60 = 1;
@@ -695,7 +695,7 @@ function function_1f6199f0(e_reviver) {
             n_health_regen = int(self.health + 5);
             self.health = math::clamp(n_health_regen, 1, self.var_66cb03ad);
             self clientfield::increment("" + #"zombie_scepter_heal", 1);
-            e_reviver.var_ec334996 = e_reviver.var_ec334996 + 1;
+            e_reviver.var_ec334996 += 1;
         }
     }
     waitframe(1);
@@ -709,7 +709,7 @@ function function_1f6199f0(e_reviver) {
 function function_fa095da6(e_reviver) {
     if (!(isdefined(self.var_4fc8bf2a) && self.var_4fc8bf2a) && !(isdefined(self.var_7b2f6755) && self.var_7b2f6755)) {
         if (self != e_reviver) {
-            e_reviver.var_ec334996 = e_reviver.var_ec334996 + 100;
+            e_reviver.var_ec334996 += 100;
             e_reviver zm_stats::increment_challenge_stat(#"scepter_revives", undefined, 1);
         }
         self.get_revive_time = &override_revive_time;
@@ -727,9 +727,9 @@ function function_fa095da6(e_reviver) {
 function override_revive_time(e_revivee) {
     n_time = 3;
     if (self hasperk(#"specialty_quickrevive")) {
-        n_time = n_time / 4;
+        n_time /= 4;
     } else {
-        n_time = n_time / 2;
+        n_time /= 2;
     }
     return n_time;
 }
@@ -909,7 +909,7 @@ function function_b603ab34(w_beacon) {
         v_forward = anglestoforward(self.angles);
         v_spawn_pos = self.origin + (0, 0, 32);
         a_trace = physicstraceex(v_spawn_pos, v_spawn_pos + v_forward * 24, (-16, -16, -16), (16, 16, 16), self);
-        v_spawn_pos = v_spawn_pos + v_forward * a_trace[#"fraction"] * 24;
+        v_spawn_pos += v_forward * a_trace[#"fraction"] * 24;
         var_4eaa1f4c = util::ground_position(v_spawn_pos, 1000, 12);
     } else {
         var_4eaa1f4c = self.origin + (0, 0, 12);

@@ -74,7 +74,7 @@ function private cleanup_main() {
         if (level.zombie_total == 0 && zombie_utility::get_current_zombie_count() < 3) {
             n_override_cleanup_dist_sq = 2250000;
         }
-        n_next_eval = n_next_eval + 3000;
+        n_next_eval += 3000;
         a_ai_enemies = getaiteamarray(#"axis");
         foreach (ai_enemy in a_ai_enemies) {
             if (level.n_cleanups_processed_this_frame >= 1) {

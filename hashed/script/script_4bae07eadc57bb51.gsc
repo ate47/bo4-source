@@ -680,7 +680,7 @@ function function_9209d032() {
 // Size: 0xc4
 function function_db17af3a() {
     self endon(#"death");
-    for (n_timer = 0; n_timer < 1; n_timer = n_timer + 0.1) {
+    for (n_timer = 0; n_timer < 1; n_timer += 0.1) {
         if (zm_office_floors::function_9dd97963(self)) {
             var_8c6394e3 = self zombie_utility::function_33da7a07();
             if (var_8c6394e3 == "walk" || var_8c6394e3 == "run") {
@@ -879,7 +879,7 @@ function function_55ca39d8() {
 // Checksum 0x500832d, Offset: 0x35b0
 // Size: 0x4c
 function function_fa3de51f() {
-    self.origin = self.origin + (0, 0, 1000);
+    self.origin += (0, 0, 1000);
     self waittill(#"movedone");
     self delete();
 }

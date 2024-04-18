@@ -83,7 +83,7 @@ function function_5e412e4a(var_ae6c2bbe) {
 // Size: 0x5e
 function function_d81873aa(delaysec) {
     assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
-    delaysec = delaysec * level.var_1f8ac687;
+    delaysec *= level.var_1f8ac687;
     level.var_a425ed89 = delaysec;
 }
 
@@ -93,7 +93,7 @@ function function_d81873aa(delaysec) {
 // Size: 0x5e
 function function_114f128a(delaysec) {
     assert(delaysec >= 0, "<unknown string>" + "<unknown string>");
-    delaysec = delaysec * level.var_1f8ac687;
+    delaysec *= level.var_1f8ac687;
     level.var_eb37cf2e = delaysec;
 }
 
@@ -105,8 +105,8 @@ function add_circle(var_3b9f4abf, mapwidth = 0, mapheight = 0, radius = 0, damag
     assert(radius <= 150000, "<unknown string>" + "<unknown string>" + radius + "<unknown string>" + 150000);
     var_55ad5e4 = int(var_55ad5e4 * 1000);
     var_c3bf31b = int(var_c3bf31b * 1000);
-    waitsec = waitsec * level.var_326f5774;
-    scalesec = scalesec * level.deathcircletimescale;
+    waitsec *= level.var_326f5774;
+    scalesec *= level.deathcircletimescale;
     circle = {#var_3b9f4abf:var_3b9f4abf, #mapwidth:mapwidth, #mapheight:mapheight, #origin:var_3b9f4abf, #radius:radius, #radiussq:radius * radius, #damage:damage, #damageinterval:damageinterval, #waitsec:waitsec, #scalesec:scalesec, #var_227b1773:var_227b1773, #var_42682706:var_42682706, #var_83c673f5:var_83c673f5, #var_55ad5e4:var_55ad5e4, #var_c3bf31b:var_c3bf31b, #var_18fa918d:var_18fa918d};
     level.deathcircles[level.deathcircles.size] = circle;
     level thread shuffle_circles();
@@ -566,12 +566,12 @@ function private function_9229c3b3(scalesec, newradius, neworigin) {
     progress = 0;
     var_6e09d4b7 = 1 / frames;
     while (time < endtime) {
-        self.radius = self.radius + framedelta;
+        self.radius += framedelta;
         if (self.radius <= 0) {
             break;
         }
         self setscale(self.radius / 15000);
-        progress = progress + var_6e09d4b7;
+        progress += var_6e09d4b7;
         level clientfield::set_world_uimodel("hudItems.warzone.collapseProgress", progress);
         waitframe(1);
         time = gettime();
@@ -668,7 +668,7 @@ function private function_dc15ad60() {
                     player.var_b8328141 = time + level.deathcircle.var_c3bf31b;
                 }
                 if (time >= player.var_b8328141) {
-                    player.var_6cd69660 = player.var_6cd69660 + level.deathcircle.var_18fa918d;
+                    player.var_6cd69660 += level.deathcircle.var_18fa918d;
                     player.var_b8328141 = time + level.deathcircle.var_c3bf31b;
                 }
                 player.deathcircledamage = damage + player.var_6cd69660;
@@ -850,7 +850,7 @@ function function_27d5d349() {
 function function_49443399() {
     time = 0;
     for (i = 0; i < level.deathcircles.size - 1; i++) {
-        time = time + level.deathcircles[i].scalesec + level.deathcircles[i].waitsec;
+        time += level.deathcircles[i].scalesec + level.deathcircles[i].waitsec;
     }
     return time;
 }
@@ -1150,21 +1150,21 @@ function private draw_circle(circle, index, var_36b41a8, color, groundtrace) {
         printoffset = (0, 0, -15 * var_36b41a8);
         printorigin = origin;
         print3d(printorigin, index, (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + circle.radius, (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + circle.damage, (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + circle.damageinterval, (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + (isdefined(circle.var_227b1773) ? circle.var_227b1773 : "<unknown string>"), (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + (isdefined(circle.waitsec) ? circle.waitsec : "<unknown string>") + "<unknown string>" + (isdefined(circle.var_42682706) ? circle.var_42682706 : "<unknown string>") + "<unknown string>", (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + (isdefined(circle.scalesec) ? circle.scalesec : "<unknown string>") + "<unknown string>" + (isdefined(circle.var_83c673f5) ? circle.var_83c673f5 : "<unknown string>") + "<unknown string>", (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         print3d(printorigin, "<unknown string>" + (isdefined(circle.attempts) ? circle.attempts : "<unknown string>"), (1, 1, 1), 1, var_36b41a8);
-        printorigin = printorigin + printoffset;
+        printorigin += printoffset;
         sphere(origin, var_e96493f7, color);
         circle(origin, circle.radius, color, 0, 1);
         if (isdefined(circle.var_3b9f4abf) && isdefined(circle.mapwidth) && isdefined(circle.mapheight)) {
@@ -1207,7 +1207,7 @@ function circle_color(circleindex, maxindex) {
             return colorscale[0];
         }
         var_30de3274 = circleindex * colorscale.size / maxindex;
-        var_30de3274 = var_30de3274 - 1;
+        var_30de3274 -= 1;
         colorindex = int(var_30de3274);
         colorfrac = var_30de3274 - colorindex;
         utilitycolor = vectorlerp(colorscale[colorindex], colorscale[colorindex + 1], colorfrac);

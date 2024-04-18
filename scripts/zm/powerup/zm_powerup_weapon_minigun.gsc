@@ -154,7 +154,7 @@ function minigun_damage_adjust(inflictor, attacker, damage, flags, meansofdeath,
         }
     }
     if (isdefined(n_percent_damage)) {
-        damage = damage + n_percent_damage;
+        damage += n_percent_damage;
     }
     return damage;
 }

@@ -651,20 +651,20 @@ function monitor_detectnearbyenemies(local_client_num) {
                     var_c729e60c = 2;
                 }
                 if (cosangle > 0.707107) {
-                    enemydetectedbitfield = enemydetectedbitfield | var_c729e60c << 0;
+                    enemydetectedbitfield |= var_c729e60c << 0;
                     continue;
                 }
                 if (cosangle < -0.707107) {
-                    enemydetectedbitfield = enemydetectedbitfield | var_c729e60c << 9;
+                    enemydetectedbitfield |= var_c729e60c << 9;
                     continue;
                 }
                 localplayeranglestoright = anglestoright(playerangles);
                 var_21060744 = vectordot(vectorflat, localplayeranglestoright) < 0;
                 if (cosangle > 0) {
-                    enemydetectedbitfield = enemydetectedbitfield | var_c729e60c << (var_21060744 ? 15 : 3);
+                    enemydetectedbitfield |= var_c729e60c << (var_21060744 ? 15 : 3);
                     continue;
                 }
-                enemydetectedbitfield = enemydetectedbitfield | var_c729e60c << (var_21060744 ? 12 : 6);
+                enemydetectedbitfield |= var_c729e60c << (var_21060744 ? 12 : 6);
             }
         }
         if (enemydetectedbitfield) {
@@ -673,7 +673,7 @@ function monitor_detectnearbyenemies(local_client_num) {
                 bitfields = enemydetectedbitfield;
                 for (i = 0; i < 6; i++) {
                     self thread function_c90f8547(var_c948d7f9[i], bitfields & (1 << 4) - 1, bundle.var_a3d426e6);
-                    bitfields = bitfields >> 3;
+                    bitfields >>= 3;
                 }
                 enemynearbytime = 0;
                 diff = enemydetectedbitfield ^ previousenemydetectedbitfield;
@@ -687,7 +687,7 @@ function monitor_detectnearbyenemies(local_client_num) {
                 }
                 previousenemydetectedbitfield = enemydetectedbitfield;
             }
-            enemynearbytime = enemynearbytime + 0.05;
+            enemynearbytime += 0.05;
         } else {
             enemynearbytime = 0;
             if (previousenemydetectedbitfield != 0 && enemylosttime >= 0.05) {
@@ -696,7 +696,7 @@ function monitor_detectnearbyenemies(local_client_num) {
                 }
                 previousenemydetectedbitfield = 0;
             }
-            enemylosttime = enemylosttime + 0.05;
+            enemylosttime += 0.05;
         }
         wait(0.05);
     }

@@ -104,14 +104,14 @@ function dragons_breath(e_attacker, n_damage, weapon) {
     self.var_f6291271[self.var_f6291271.size] = e_attacker;
     self thread function_ddda26e(e_attacker);
     if (self.archetype === #"zombie") {
-        n_damage = n_damage + 100;
+        n_damage += 100;
         if (n_damage < self.health) {
             self namespace_9ff9f642::burn(#"hash_72a155025f3da562", e_attacker, weapon);
         } else {
             self.var_b364c165 = 1;
         }
     } else {
-        n_damage = n_damage + 200;
+        n_damage += 200;
     }
     return n_damage;
 }

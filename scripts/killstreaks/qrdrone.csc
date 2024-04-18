@@ -123,7 +123,7 @@ function blink_fx_and_sound(localclientnum, soundalias) {
         util::server_wait(localclientnum, self.interval / 2);
         self notify(#"stopfx");
         util::server_wait(localclientnum, self.interval / 2);
-        self.interval = self.interval / 1.17;
+        self.interval /= 1.17;
         if (self.interval < 0.1) {
             self.interval = 0.1;
         }
@@ -190,7 +190,7 @@ function loop_local_sound(localclientnum, alias, interval, fx) {
         util::server_wait(localclientnum, self.interval / 2);
         self notify(#"stopfx");
         util::server_wait(localclientnum, self.interval / 2);
-        self.interval = self.interval / 1.17;
+        self.interval /= 1.17;
         if (self.interval < 0.1) {
             self.interval = 0.1;
         }
@@ -295,10 +295,10 @@ function getminimumflyheight() {
         planeflyheight = 850;
         if (isdefined(level.airsupportheightscale)) {
             level.airsupportheightscale = getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
-            planeflyheight = planeflyheight * getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
+            planeflyheight *= getdvarint(#"scr_airsupportheightscale", level.airsupportheightscale);
         }
         if (isdefined(level.forceairsupportmapheight)) {
-            planeflyheight = planeflyheight + level.forceairsupportmapheight;
+            planeflyheight += level.forceairsupportmapheight;
         }
     }
     return planeflyheight;
@@ -365,7 +365,7 @@ function qrdrone_in_range() {
 function qrdrone_staticfade(staticalpha, sndent, sid) {
     self endon(#"death");
     while (self qrdrone_in_range()) {
-        staticalpha = staticalpha - 0.05;
+        staticalpha -= 0.05;
         if (staticalpha <= 0) {
             sndent stopallloopsounds(0.5);
             self vehicle::set_static_amount(0);

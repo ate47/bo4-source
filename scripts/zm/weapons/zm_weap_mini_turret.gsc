@@ -135,7 +135,7 @@ function function_3be2d17f(watcher, player) {
     self waittill(#"stationary");
     player stats::function_e24eec31(self.weapon, #"used", 1);
     self deployable::function_dd266e08(player);
-    self.origin = self.origin + (0, 0, 2);
+    self.origin += (0, 0, 2);
     player onplaceturret(self);
     if (isdefined(player)) {
         player val::reset(#"mini_turret", "freezecontrols");
@@ -258,7 +258,7 @@ function onplaceturret(turret) {
 function onturretdamage(einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal) {
     empdamage = int(idamage + self.healthdefault * 1 + 0.5);
     var_820fb5ae = self.damagetaken;
-    self.damagetaken = self.damagetaken + idamage;
+    self.damagetaken += idamage;
     if (self.controlled) {
         self.owner vehicle::update_damage_as_occupant(self.damagetaken, self.maxhealth);
     }
@@ -568,7 +568,7 @@ function function_31477582() {
         if (trace[#"fraction"] > 0) {
             new_origin = trace[#"position"];
             self.origin = (new_origin[0], new_origin[1], self.origin[2] - min(max_delta, self.origin[2] - new_origin[2]));
-            max_delta = max_delta + var_463c449d;
+            max_delta += var_463c449d;
             waitframe(1);
             continue;
         }

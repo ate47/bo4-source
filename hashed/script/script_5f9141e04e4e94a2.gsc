@@ -335,8 +335,8 @@ function private function_92344a03() {
             wait(0.1);
             e_wisp = level.var_23674b8f.e_wisp;
             var_59bd625c = self getcentroid() + 20 * vectornormalize(anglestoforward(self.angles));
-            var_59bd625c = var_59bd625c + 2 * vectornormalize(anglestoright(self.angles));
-            var_59bd625c = var_59bd625c + (0, 0, 22);
+            var_59bd625c += 2 * vectornormalize(anglestoright(self.angles));
+            var_59bd625c += (0, 0, 22);
             e_wisp.origin = var_59bd625c;
             e_wisp.angles = self.angles;
             e_wisp clientfield::set("" + #"hash_1e4555a911a24ab7", 1);
@@ -392,7 +392,7 @@ function start_step_3() {
     e_wisp.origin = level.var_23674b8f.e_player getcentroid();
     e_wisp.angles = level.var_23674b8f.e_player.angles;
     var_59bd625c = level.var_23674b8f.e_player getcentroid() + 96 * vectornormalize(anglestoforward(level.var_23674b8f.e_player.angles));
-    var_59bd625c = var_59bd625c + (0, 0, 32);
+    var_59bd625c += (0, 0, 32);
     e_wisp moveto(var_59bd625c, 0.5);
     e_wisp waittill(#"movedone");
     wait(3);

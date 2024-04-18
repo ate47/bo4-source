@@ -147,8 +147,8 @@ function function_c3eed624() {
     origin = self.origin;
     if (self function_490dc3d3()) {
         forward = anglestoforward(self.angles);
-        origin = origin + forward * self function_85d25868();
-        origin = origin - (0, 0, isdefined(self.var_2d23ee07) ? self.var_2d23ee07 : 0);
+        origin += forward * self function_85d25868();
+        origin -= (0, 0, isdefined(self.var_2d23ee07) ? self.var_2d23ee07 : 0);
     }
     return origin;
 }

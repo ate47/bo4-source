@@ -469,7 +469,7 @@ function trap_activate_rotating() {
     }
     wait(5);
     step = 1.5;
-    for (t = 0; t < self._trap_duration; t = t + step) {
+    for (t = 0; t < self._trap_duration; t += step) {
         for (i = 0; i < self._trap_movers.size; i++) {
             self._trap_movers[i] rotateyaw(360, step);
         }
@@ -998,7 +998,7 @@ function function_19d61a68() {
 // Size: 0x54
 function function_da13db45(n_cooldown, e_player) {
     if (isdefined(e_player) && e_player hasperk(#"specialty_cooldown")) {
-        n_cooldown = n_cooldown * 0.5;
+        n_cooldown *= 0.5;
     }
     return n_cooldown;
 }

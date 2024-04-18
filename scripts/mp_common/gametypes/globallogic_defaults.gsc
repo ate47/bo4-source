@@ -231,7 +231,7 @@ function default_gettimelimit() {
 function default_getteamkillpenalty(einflictor, attacker, smeansofdeath, weapon) {
     teamkill_penalty = 1;
     if (killstreaks::is_killstreak_weapon(weapon)) {
-        teamkill_penalty = teamkill_penalty * killstreaks::get_killstreak_team_kill_penalty_scale(weapon);
+        teamkill_penalty *= killstreaks::get_killstreak_team_kill_penalty_scale(weapon);
     }
     return teamkill_penalty;
 }

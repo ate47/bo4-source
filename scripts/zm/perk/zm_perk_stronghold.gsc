@@ -204,7 +204,7 @@ function function_c25b980c() {
     if (!isdefined(self.var_807f94d7)) {
         self.var_807f94d7 = 0;
     }
-    self.var_807f94d7 = self.var_807f94d7 + 1;
+    self.var_807f94d7 += 1;
     self.var_807f94d7 = math::clamp(self.var_807f94d7, 0, 15);
 }
 
@@ -214,7 +214,7 @@ function function_c25b980c() {
 // Size: 0x98
 function function_11154900(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     if (isdefined(attacker.var_807f94d7)) {
-        damage = damage + damage * attacker.var_807f94d7 / 100;
+        damage += damage * attacker.var_807f94d7 / 100;
     }
     return damage;
 }

@@ -400,7 +400,7 @@ function function_2cc4144b(var_83225a27) {
     }
     level.bottle_spawn_location = util::spawn_model("tag_origin", self.origin, self.angles);
     if (isdefined(level.bottle_spawn_location)) {
-        level.bottle_spawn_location.origin = level.bottle_spawn_location.origin + (0, 0, 15);
+        level.bottle_spawn_location.origin += (0, 0, 15);
         wait(1);
         self notify(#"bottle_spawned");
         self thread start_perk_bottle_cycling();
@@ -458,7 +458,7 @@ function perk_bottle_motion() {
     level.bottle_spawn_location.origin = self.origin;
     level.bottle_spawn_location.angles = self.angles;
     level.bottle_spawn_location moveto(level.bottle_spawn_location.origin + (0, 0, 30), 3, 3 * 0.5);
-    level.bottle_spawn_location.angles = level.bottle_spawn_location.angles + (0, 0, 10);
+    level.bottle_spawn_location.angles += (0, 0, 10);
     level.bottle_spawn_location rotateyaw(720, 3, 3 * 0.5);
     self waittill(#"done_cycling");
     level.bottle_spawn_location.angles = self.angles;

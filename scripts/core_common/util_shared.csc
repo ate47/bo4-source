@@ -986,7 +986,7 @@ function note_elapsed_time(start_time, label = "unspecified") {
         if (!isdefined(start_time)) {
             return;
         }
-        elapsed_time = elapsed_time * 0.001;
+        elapsed_time *= 0.001;
         if (!isdefined(level.orbis)) {
             level.orbis = getdvarstring(#"orbisgame") == "<unknown string>";
         }
@@ -1034,8 +1034,8 @@ function note_elapsed_times(&elapsed_time_array, label = "unspecified") {
         smallest_elapsed_time = 2147483647;
         largest_elapsed_time = 0;
         foreach (elapsed_time in elapsed_time_array) {
-            elapsed_time = elapsed_time * 0.001;
-            total_elapsed_time = total_elapsed_time + elapsed_time;
+            elapsed_time *= 0.001;
+            total_elapsed_time += elapsed_time;
             if (elapsed_time < smallest_elapsed_time) {
                 smallest_elapsed_time = elapsed_time;
             }
@@ -1069,7 +1069,7 @@ function get_elapsed_time(start_time, end_time = getmicrosecondsraw()) {
     }
     elapsed_time = end_time - start_time;
     if (elapsed_time < 0) {
-        elapsed_time = elapsed_time + -2147483648;
+        elapsed_time += -2147483648;
     }
     return elapsed_time;
 }
@@ -1786,18 +1786,18 @@ function script_wait() {
     if (isdefined(self.script_wait)) {
         wait(self.script_wait);
         if (isdefined(self.script_wait_add)) {
-            self.script_wait = self.script_wait + self.script_wait_add;
+            self.script_wait += self.script_wait_add;
         }
     }
     n_min = isdefined(self.script_wait_min) ? self.script_wait_min : 0;
     n_max = isdefined(self.script_wait_max) ? self.script_wait_max : 0;
     if (n_max > n_min) {
         wait(randomfloatrange(n_min, n_max));
-        self.script_wait_min = self.script_wait_min + (isdefined(self.script_wait_add) ? self.script_wait_add : 0);
-        self.script_wait_max = self.script_wait_max + (isdefined(self.script_wait_add) ? self.script_wait_add : 0);
+        self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
+        self.script_wait_max += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     } else if (n_min > 0) {
         wait(n_min);
-        self.script_wait_min = self.script_wait_min + (isdefined(self.script_wait_add) ? self.script_wait_add : 0);
+        self.script_wait_min += isdefined(self.script_wait_add) ? self.script_wait_add : 0;
     }
     return gettime() - n_time;
 }
@@ -1848,8 +1848,8 @@ function function_48e57e36(var_1f1d12d8) {
     decimal = 0;
     for (i = var_1f1d12d8.size - 1; i >= 0; i--) {
         if (var_1f1d12d8[i] >= "0" && var_1f1d12d8[i] <= "9") {
-            decimal = decimal + int(var_1f1d12d8[i]) * base;
-            base = base * 16;
+            decimal += int(var_1f1d12d8[i]) * base;
+            base *= 16;
             continue;
         }
         if (var_1f1d12d8[i] >= "a" && var_1f1d12d8[i] <= "f") {
@@ -1866,8 +1866,8 @@ function function_48e57e36(var_1f1d12d8) {
             } else if (var_1f1d12d8[i] == "f") {
                 number = 15;
             }
-            decimal = decimal + number * base;
-            base = base * 16;
+            decimal += number * base;
+            base *= 16;
         }
     }
     return decimal;

@@ -154,15 +154,15 @@ class cdoor {
         v_pos = v_origin;
         if (v_offset[0]) {
             v_side = anglestoforward(v_angles);
-            v_pos = v_pos + v_offset[0] * v_side;
+            v_pos += v_offset[0] * v_side;
         }
         if (v_offset[1]) {
             v_dir = anglestoright(v_angles);
-            v_pos = v_pos + v_offset[1] * v_dir;
+            v_pos += v_offset[1] * v_dir;
         }
         if (v_offset[2]) {
             v_up = anglestoup(v_angles);
-            v_pos = v_pos + v_offset[2] * v_up;
+            v_pos += v_offset[2] * v_up;
         }
         return v_pos;
     }
@@ -426,15 +426,15 @@ class cdoor {
         if (isdefined(v_offset)) {
             if (v_offset[0]) {
                 v_side = anglestoforward(v_angles);
-                v_pos = v_pos + v_offset[0] * v_side;
+                v_pos += v_offset[0] * v_side;
             }
             if (v_offset[1]) {
                 v_dir = anglestoright(v_angles);
-                v_pos = v_pos + v_offset[1] * v_dir;
+                v_pos += v_offset[1] * v_dir;
             }
             if (v_offset[2]) {
                 v_up = anglestoup(v_angles);
-                v_pos = v_pos + v_offset[2] * v_up;
+                v_pos += v_offset[2] * v_up;
             }
         }
         return v_pos;

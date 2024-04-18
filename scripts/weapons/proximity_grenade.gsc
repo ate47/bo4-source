@@ -300,7 +300,7 @@ function proximitygrenadechain(eattacker, einflictor, killcament, weapon, meanso
         proximitychain.proximitychainent = einflictor.proximitychainent;
         proximitychain.proximitychainent.chains[proximitychain.proximitychainent.chains.size] = proximitychain;
     }
-    proximitychain.chaineventnum = proximitychain.chaineventnum + 1;
+    proximitychain.chaineventnum += 1;
     if (proximitychain.chaineventnum >= weapon.chaineventmax) {
         return;
     }

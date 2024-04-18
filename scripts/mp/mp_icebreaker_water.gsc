@@ -107,7 +107,7 @@ function function_aa962363(e_player) {
 // Size: 0x20e
 function function_394e1244(e_player) {
     while (isalive(e_player) && e_player.var_6754f1c5 && e_player.var_653ea26 < 1) {
-        e_player.var_653ea26 = e_player.var_653ea26 + 0.1;
+        e_player.var_653ea26 += 0.1;
         if (e_player.var_653ea26 > 1) {
             e_player.var_653ea26 = 1;
         }
@@ -142,7 +142,7 @@ function function_394e1244(e_player) {
 function function_553ca6ce(e_player) {
     wait(1);
     while (isalive(e_player) && !e_player.var_6754f1c5 && e_player.var_653ea26 > 0) {
-        e_player.var_653ea26 = e_player.var_653ea26 - 0.2;
+        e_player.var_653ea26 -= 0.2;
         if (e_player.var_653ea26 < 0) {
             e_player.var_653ea26 = 0;
         }

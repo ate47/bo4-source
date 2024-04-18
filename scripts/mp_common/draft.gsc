@@ -424,7 +424,7 @@ function decrement(timeremaining) {
             return timeremaining;
         }
     #/
-    level.var_b318d3d1 = level.var_b318d3d1 - 1;
+    level.var_b318d3d1 -= 1;
     function_ee80d2e8(int(max(0, level.var_b318d3d1)));
     return timeremaining - 1;
 }

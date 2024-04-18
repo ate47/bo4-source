@@ -660,7 +660,7 @@ function function_715588b3() {
     while (true) {
         self waittill(#"trigger");
         b_using = 1;
-        for (n_time = 0; n_time < 0.5; n_time = n_time + 0.1) {
+        for (n_time = 0; n_time < 0.5; n_time += 0.1) {
             foreach (player in util::get_active_players()) {
                 if (player util::is_spectating()) {
                     continue;

@@ -169,7 +169,7 @@ function watchplayerexitrequestthread(player) {
     while (true) {
         timeused = 0;
         while (player usebuttonpressed()) {
-            timeused = timeused + 0.05;
+            timeused += 0.05;
             if (timeused > 0.25) {
                 player unlink();
                 return;

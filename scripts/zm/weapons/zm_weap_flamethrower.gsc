@@ -750,7 +750,7 @@ function private function_72601dd2(e_player, var_ab287846, n_push_away, n_lift_h
         self playsound(#"zmb_zombie_head_gib");
         self zombie_utility::gib_random_parts();
         v_away_from_source = vectornormalize(self.origin - v_origin);
-        v_away_from_source = v_away_from_source * n_push_away;
+        v_away_from_source *= n_push_away;
         v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
         if (!(isdefined(level.ignore_gravityspikes_ragdoll) && level.ignore_gravityspikes_ragdoll)) {
             self startragdoll();

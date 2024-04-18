@@ -404,7 +404,7 @@ function lerp_trigger_dvar_value(trigger, dvar, value, time) {
     curr_value = getdvarfloat(dvar, 0);
     diff = (curr_value - value) / steps;
     for (i = 0; i < steps; i++) {
-        curr_value = curr_value - diff;
+        curr_value -= diff;
         setsaveddvar(dvar, curr_value);
         waitframe(1);
     }

@@ -114,7 +114,7 @@ function crowd_damage_trigger() {
         s_waitresult = self waittill(#"damage");
         player = s_waitresult.attacker;
         if (isplayer(player)) {
-            player.var_7df228aa.var_56b97916 = player.var_7df228aa.var_56b97916 + s_waitresult.amount;
+            player.var_7df228aa.var_56b97916 += s_waitresult.amount;
             b_explosive_damage = 0;
             if (isdefined(s_waitresult.mod)) {
                 switch (s_waitresult.mod) {
@@ -413,7 +413,7 @@ function function_5d6119de() {
         level.var_8cdff3aa = 20;
         while (level.var_8cdff3aa > 0 && !level flag::get("crowd_throw_item_immediate")) {
             wait(1);
-            level.var_8cdff3aa = level.var_8cdff3aa - 1;
+            level.var_8cdff3aa -= 1;
         }
         var_be79df4d = [];
         var_f8b181cf = [];
@@ -454,7 +454,7 @@ function function_5d6119de() {
         }
         str_player_zone = e_target_player zm_zonemgr::get_player_zone();
         var_2bd26cff = e_target_player.var_7df228aa.var_def266a8;
-        for (n_time = 10; isalive(e_target_player) && !level flag::get(#"crowd_throw_item_immediate") && n_time > 0; n_time = n_time - 1) {
+        for (n_time = 10; isalive(e_target_player) && !level flag::get(#"crowd_throw_item_immediate") && n_time > 0; n_time -= 1) {
             if (str_player_zone === "zone_starting_area_ra" || str_player_zone === "zone_starting_area_odin" || str_player_zone === "zone_starting_area_danu" || str_player_zone === "zone_starting_area_zeus") {
                 break;
             }
@@ -821,7 +821,7 @@ function function_b8dfa139(str_event) {
     if (self.var_7df228aa.var_def266a8 <= 0 && self.var_7df228aa.var_def266a8 + var_9c93ba8f >= 0 || self.var_7df228aa.var_def266a8 >= 0 && self.var_7df228aa.var_def266a8 + var_9c93ba8f <= 0) {
         var_ac39950d = 1;
     }
-    self.var_7df228aa.var_def266a8 = self.var_7df228aa.var_def266a8 + var_9c93ba8f;
+    self.var_7df228aa.var_def266a8 += var_9c93ba8f;
     self.var_7df228aa.var_def266a8 = math::clamp(self.var_7df228aa.var_def266a8, -50, 50);
     self thread function_9da7999d(var_9c93ba8f, var_ac39950d, str_event);
 }

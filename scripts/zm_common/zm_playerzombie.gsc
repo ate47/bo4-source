@@ -112,7 +112,7 @@ function playerzombie_player_damage() {
             waitframe(1);
             continue;
         }
-        self.zombiehealth = self.zombiehealth - amount;
+        self.zombiehealth -= amount;
         if (self.zombiehealth <= 0) {
             self thread playerzombie_downed_state();
             self waittill(#"playerzombie_downed_state_done");

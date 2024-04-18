@@ -474,7 +474,7 @@ function private function_ebf85268(inflictor, attacker, damage, idflags, meansof
         }
     #/
     if (isdefined(self.var_c59e2dbf)) {
-        self.var_c59e2dbf = self.var_c59e2dbf + final_damage;
+        self.var_c59e2dbf += final_damage;
     } else {
         self.var_c59e2dbf = final_damage;
     }
@@ -1090,7 +1090,7 @@ function function_8b63ee0e(entity, mocompanim, mocompanimblendouttime, mocompani
         isvisible = traceresult[#"fraction"] == 1;
         var_535d098c = 0;
         if (isdefined(traceresult[#"hitloc"]) && traceresult[#"hitloc"] == "riotshield") {
-            entity.meleeinfo.adjustedendpos = entity.meleeinfo.adjustedendpos + vectorscale(var_cc075bd0, 50);
+            entity.meleeinfo.adjustedendpos += vectorscale(var_cc075bd0, 50);
             var_535d098c = 1;
         }
         if (!var_201660e6) {

@@ -394,7 +394,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
     traversal.endpoint1 = traversal.endnode.origin;
     if (endiswallrun) {
         facenormal = getnavmeshfacenormal(traversal.endpoint1, 30);
-        traversal.endpoint1 = traversal.endpoint1 + facenormal * 30 / 2;
+        traversal.endpoint1 += facenormal * 30 / 2;
     }
     if (!isdefined(traversal.endpoint1)) {
         traversal.endpoint1 = traversal.endnode.origin;
@@ -418,9 +418,9 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
     traversal.startpoint2 = entity.origin + (0, 0, heightoffset);
     traversal.endpoint2 = traversal.endpoint1 + (0, 0, heightoffset);
     if (traversal.startpoint1[2] < traversal.endpoint1[2]) {
-        traversal.startpoint2 = traversal.startpoint2 + (0, 0, traversal.absheighttoend);
+        traversal.startpoint2 += (0, 0, traversal.absheighttoend);
     } else {
-        traversal.endpoint2 = traversal.endpoint2 + (0, 0, traversal.absheighttoend);
+        traversal.endpoint2 += (0, 0, traversal.absheighttoend);
     }
     if (startiswallrun || endiswallrun) {
         startdirection = robotstartjumpdirection();
@@ -441,7 +441,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
             direction = _calculatewallrundirection(traversal.startnode.origin, traversal.endnode.origin);
             movedirection = vectorcross(facenormal, (0, 0, 1));
             if (direction == "right") {
-                movedirection = movedirection * -1;
+                movedirection *= -1;
             }
             traversal.angles = vectortoangles(movedirection);
         }
@@ -450,7 +450,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
         } else {
             traversal.landingdistance = 60;
         }
-        traversal.speedoncurve = traversal.speedoncurve * 1.2;
+        traversal.speedoncurve *= 1.2;
     }
     /#
         recordline(traversal.startpoint1, traversal.startpoint2, (1, 0.5, 0), "robotScriptRequiresToSprint", entity);
@@ -468,7 +468,7 @@ function private robotcalcproceduraltraversal(entity, asmstatename) {
         /#
             recordline(previouspoint, nextpoint, (0, 1, 0), "robotScriptRequiresToSprint", entity);
         #/
-        traversal.curvelength = traversal.curvelength + distance(previouspoint, nextpoint);
+        traversal.curvelength += distance(previouspoint, nextpoint);
         previouspoint = nextpoint;
     }
     traversal.starttime = gettime();
@@ -576,7 +576,7 @@ function private mocomprobotstartwallrunupdate(entity, mocompanim, mocompanimble
         facenormal = vectornormalize(facenormal);
         movedirection = vectorcross(facenormal, (0, 0, 1));
         if (direction == "right") {
-            movedirection = movedirection * -1;
+            movedirection *= -1;
         }
         forwardpositiononwall = getclosestpointonnavmesh(positiononwall + movedirection * 12, 30, 0);
         anglestoend = vectortoangles(forwardpositiononwall - positiononwall);
@@ -628,7 +628,7 @@ function private mocomprobotstarttraversalinit(entity, mocompanim, mocompanimble
         direction = _calculatewallrundirection(startnode.origin, endnode.origin);
         movedirection = vectorcross(facenormal, (0, 0, 1));
         if (direction == "right") {
-            movedirection = movedirection * -1;
+            movedirection *= -1;
         }
         /#
             recordline(endnode.origin, endnode.origin + facenormal * 20, (1, 0, 0), "robotScriptRequiresToSprint", entity);
@@ -683,7 +683,7 @@ function private mocomprobotproceduraltraversalupdate(entity, mocompanim, mocomp
     traversal = entity.traversal;
     if (isdefined(traversal)) {
         if (entity ispaused()) {
-            traversal.starttime = traversal.starttime + int(float(function_60d95f53()) / 1000 * 1000);
+            traversal.starttime += int(float(function_60d95f53()) / 1000 * 1000);
             return;
         }
         endiswallrun = traversal.endnode.spawnflags & 2048;
@@ -1640,7 +1640,7 @@ function private movetoplayerupdate(entity, asmstatename) {
                         }
                         break;
                     }
-                    segmentlength = segmentlength + currentseglength;
+                    segmentlength += currentseglength;
                 }
             }
         }
@@ -2083,7 +2083,7 @@ function private _robotguardposition(entity) {
             positionquery_filter_inclaimedlocation(queryresult, entity);
             if (queryresult.data.size > 0) {
                 minimumdistancesq = entity.goalradius * 0.2;
-                minimumdistancesq = minimumdistancesq * minimumdistancesq;
+                minimumdistancesq *= minimumdistancesq;
                 distantpoints = [];
                 foreach (point in queryresult.data) {
                     if (distancesquared(entity.origin, point.origin) > minimumdistancesq) {

@@ -366,7 +366,7 @@ function function_c1a0ea97(n_round_number) {
             break;
         case 3:
         case 4:
-            level.var_a5355505 = level.var_a5355505 + 2;
+            level.var_a5355505 += 2;
             break;
         default:
             level.var_a5355505 = undefined;

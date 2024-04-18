@@ -812,11 +812,11 @@ function private function_7615515e(entity) {
         }
     }
     if (player_in_range) {
-        entity.var_52a38d7d = entity.var_52a38d7d + float(function_60d95f53()) / 1000;
+        entity.var_52a38d7d += float(function_60d95f53()) / 1000;
         entity.var_8db49d5e = 0;
         return;
     }
-    entity.var_8db49d5e = entity.var_8db49d5e + float(function_60d95f53()) / 1000;
+    entity.var_8db49d5e += float(function_60d95f53()) / 1000;
     if (entity.var_8db49d5e >= 1) {
         entity.var_52a38d7d = 0;
     }

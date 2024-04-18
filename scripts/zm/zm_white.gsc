@@ -458,7 +458,7 @@ function function_6762e94d() {
         e_who = self waittill(#"trigger_activated");
         if (!self.s_unitrigger.is_on) {
             self.s_unitrigger.is_on = 1;
-            level.var_74c82857 = level.var_74c82857 + 1;
+            level.var_74c82857 += 1;
             var_df155a8 = getentarray("pap_light_" + self.script_noteworthy + "_green", "targetname");
             foreach (var_c2147f5e in var_df155a8) {
                 var_c2147f5e show();

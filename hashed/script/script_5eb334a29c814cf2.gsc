@@ -77,26 +77,26 @@ function function_65ed0370(origin, angles) {
 function function_f1be5640(inflictor, attacker, damage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype) {
     n_base_damage = self.maxhealth;
     if (isdefined(meansofdeath) && meansofdeath != "MOD_MELEE") {
-        n_base_damage = n_base_damage / 4;
+        n_base_damage /= 4;
     }
     var_7e0e6341 = self ai::function_9139c839();
     if (isdefined(var_7e0e6341)) {
         var_b1c1c5cf = var_7e0e6341.damagescale;
         if (var_b1c1c5cf > 0 && var_b1c1c5cf < 1) {
             var_64cc5e50 = 1 / var_b1c1c5cf;
-            n_base_damage = n_base_damage * var_64cc5e50;
+            n_base_damage *= var_64cc5e50;
         }
     }
     if (isdefined(self.var_6f84b820)) {
         switch (self.var_6f84b820) {
         case #"heavy":
-            n_base_damage = n_base_damage * 0.2;
+            n_base_damage *= 0.2;
             break;
         case #"miniboss":
-            n_base_damage = n_base_damage * 0.1;
+            n_base_damage *= 0.1;
             break;
         case #"boss":
-            n_base_damage = n_base_damage * 0.05;
+            n_base_damage *= 0.05;
             break;
         default:
             break;

@@ -62,10 +62,10 @@ function devgui_test_chart_think() {
                 level.test_chart_model.angles = (0, direction[1], 0) + (0, 90, 0);
                 level.test_chart_model.origin = player geteye() + direction_vec;
                 if (player meleebuttonpressed()) {
-                    scale = scale + 10;
+                    scale += 10;
                 }
                 if (player sprintbuttonpressed()) {
-                    scale = scale - 10;
+                    scale -= 10;
                 }
             }
             old_val = val;
@@ -130,16 +130,16 @@ function updateminimapsetting() {
                             mapaspectratio = disttoside / disttotop;
                             if (mapaspectratio < requiredmapaspectratio) {
                                 incr = requiredmapaspectratio / mapaspectratio;
-                                disttoside = disttoside * incr;
+                                disttoside *= incr;
                                 addvec = vecscale(eastvector, vectordot(eastvector, maxcorner - viewpos) * (incr - 1));
-                                mincorner = mincorner - addvec;
-                                maxcorner = maxcorner + addvec;
+                                mincorner -= addvec;
+                                maxcorner += addvec;
                             } else {
                                 incr = mapaspectratio / requiredmapaspectratio;
-                                disttotop = disttotop * incr;
+                                disttotop *= incr;
                                 addvec = vecscale(northvector, vectordot(northvector, maxcorner - viewpos) * (incr - 1));
-                                mincorner = mincorner - addvec;
-                                maxcorner = maxcorner + addvec;
+                                mincorner -= addvec;
+                                maxcorner += addvec;
                             }
                         }
                         if (level.console) {
@@ -220,10 +220,10 @@ function drawminimapbounds(viewpos, mincorner, maxcorner) {
         diaglen = length(mincorner - maxcorner);
         mincorneroffset = mincorner - viewpos;
         mincorneroffset = vectornormalize((mincorneroffset[0], mincorneroffset[1], 0));
-        mincorner = mincorner + vecscale(mincorneroffset, diaglen * 1 / 800);
+        mincorner += vecscale(mincorneroffset, diaglen * 1 / 800);
         maxcorneroffset = maxcorner - viewpos;
         maxcorneroffset = vectornormalize((maxcorneroffset[0], maxcorneroffset[1], 0));
-        maxcorner = maxcorner + vecscale(maxcorneroffset, diaglen * 1 / 800);
+        maxcorner += vecscale(maxcorneroffset, diaglen * 1 / 800);
         diagonal = maxcorner - mincorner;
         side = vecscale(north, vectordot(diagonal, north));
         sidenorth = vecscale(north, abs(vectordot(diagonal, north)));

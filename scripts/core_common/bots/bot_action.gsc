@@ -1024,7 +1024,7 @@ function utility_color(utility, targetutility) {
             return colorscale[0];
         }
         utilityindex = utility * colorscale.size / targetutility;
-        utilityindex = utilityindex - 1;
+        utilityindex -= 1;
         colorindex = int(utilityindex);
         colorfrac = utilityindex - colorindex;
         utilitycolor = vectorlerp(colorscale[colorindex], colorscale[colorindex + 1], colorfrac);
@@ -2564,12 +2564,12 @@ function function_7355c240(actionparams) {
             self.bot.var_9492fdcb = var_9492fdcb;
         }
         if (isdefined(aimoffset) || isdefined(var_9492fdcb)) {
-            self.bot.var_ea5b64df = self.bot.var_ea5b64df * randomfloatrange(0.8, 0.9);
+            self.bot.var_ea5b64df *= randomfloatrange(0.8, 0.9);
             self.bot.var_d7771ac3 = gettime() + randomintrange(300, 600);
         }
     }
-    actionparams.aimpoint = actionparams.aimpoint + self.bot.aimoffset;
-    actionparams.var_97065630 = actionparams.var_97065630 + self.bot.var_9492fdcb;
+    actionparams.aimpoint += self.bot.aimoffset;
+    actionparams.var_97065630 += self.bot.var_9492fdcb;
 }
 
 // Namespace bot_action/bot_action
@@ -2583,7 +2583,7 @@ function function_d2e41376(var_9d9ae85, eyes, fwd, right, up, var_ea5b64df, clos
     if (vectordot(fwd, var_df4809a5) > 0.7) {
         var_dafe1813 = min(var_ea5b64df, length(var_24e5c8be) * 0.25);
         if (close) {
-            var_dafe1813 = var_dafe1813 * 0.5;
+            var_dafe1813 *= 0.5;
         }
         if (var_dafe1813 == 0) {
             return (0, 0, 0);
@@ -2955,7 +2955,7 @@ function look_along_path() {
         debugcolor = self.goalforced ? (0, 1, 1) : (0, 1, 0);
     }
     viewheight = self getplayerviewheight();
-    lookpoint = lookpoint + (0, 0, viewheight);
+    lookpoint += (0, 0, viewheight);
     self look_at_point(lookpoint, var_e125ba43, debugcolor);
 }
 
@@ -2975,17 +2975,17 @@ function function_412e04fa(node) {
     if (var_208965cf && var_a26a51ba) {
         if (isfullcovernode(node)) {
             if (vectordot(noderight, self.origin - node.origin) >= 0) {
-                rotation = rotation * -1;
+                rotation *= -1;
             }
         } else if (isdefined(self.enemylastseenpos)) {
             if (vectordot(noderight, self.enemylastseenpos - self.origin) >= 0) {
-                rotation = rotation * -1;
+                rotation *= -1;
             }
         } else if (randomint(2) > 0) {
-            rotation = rotation * -1;
+            rotation *= -1;
         }
     } else if (var_a26a51ba) {
-        rotation = rotation * -1;
+        rotation *= -1;
     }
     lookangles = (node.angles[0], node.angles[1] + rotation, node.angles[2]);
     self botsetlookangles(lookangles);

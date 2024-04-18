@@ -203,8 +203,8 @@ function updatedevsettingszm() {
                 averageorigin = (0, 0, 0);
                 averageangles = (0, 0, 0);
                 foreach (spawnpoint in spawnpoints) {
-                    averageorigin = averageorigin + spawnpoint.origin / numpoints;
-                    averageangles = averageangles + spawnpoint.angles / numpoints;
+                    averageorigin += spawnpoint.origin / numpoints;
+                    averageangles += spawnpoint.angles / numpoints;
                 }
                 level.players[0] setplayerangles(averageangles);
                 level.players[0] setorigin(averageorigin);
@@ -362,8 +362,8 @@ function updatedevsettings() {
                     averageorigin = (0, 0, 0);
                     averageangles = (0, 0, 0);
                     foreach (spawnpoint in level.spawn_start[teamname]) {
-                        averageorigin = averageorigin + spawnpoint.origin / numpoints;
-                        averageangles = averageangles + spawnpoint.angles / numpoints;
+                        averageorigin += spawnpoint.origin / numpoints;
+                        averageangles += spawnpoint.angles / numpoints;
                     }
                     level.players[0] setplayerangles(averageangles);
                     level.players[0] setorigin(averageorigin);
@@ -770,15 +770,15 @@ function showonespawnpoint(spawn_point, color, notification, height, print) {
         thread lineuntilnotified(b, b + (0, 0, height), color, 0, notification);
         thread lineuntilnotified(c, c + (0, 0, height), color, 0, notification);
         thread lineuntilnotified(d, d + (0, 0, height), color, 0, notification);
-        a = a + (0, 0, height);
-        b = b + (0, 0, height);
-        c = c + (0, 0, height);
-        d = d + (0, 0, height);
+        a += (0, 0, height);
+        b += (0, 0, height);
+        c += (0, 0, height);
+        d += (0, 0, height);
         thread lineuntilnotified(a, b, color, 0, notification);
         thread lineuntilnotified(b, c, color, 0, notification);
         thread lineuntilnotified(c, d, color, 0, notification);
         thread lineuntilnotified(d, a, color, 0, notification);
-        center = center + (0, 0, height / 2);
+        center += (0, 0, height / 2);
         arrow_forward = anglestoforward(spawn_point.angles);
         arrowhead_forward = anglestoforward(spawn_point.angles);
         arrowhead_right = anglestoright(spawn_point.angles);
@@ -1172,7 +1172,7 @@ function devstraferunpathdebugdraw() {
                     nodes[nodes.size] = new_node;
                     node = new_node;
                 }
-                drawtime = drawtime - 0.05;
+                drawtime -= 0.05;
                 if (drawtime < 0) {
                     drawtime = maxdrawtime;
                 }
@@ -1243,7 +1243,7 @@ function devhelipathdebugdraw() {
                         }
                     }
                 }
-                drawtime = drawtime - 0.05;
+                drawtime -= 0.05;
                 if (drawtime < 0) {
                     drawtime = maxdrawtime;
                 }
@@ -1364,7 +1364,7 @@ function drawpathsegment(enttarget, linecolor, textcolor, textalpha, textscale, 
             }
             line(self.origin, enttarget.origin, linecolor);
             self drawspeedacceltext(textcolor, textalpha, textscale, textoffset);
-            drawtime = drawtime - 0.05;
+            drawtime -= 0.05;
             waitframe(1);
         }
     #/

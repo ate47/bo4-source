@@ -386,7 +386,7 @@ function aoe_friendlies(weapon, aoe) {
         profile_start_time = util::get_start_time();
         profile_elapsed_times = [];
         extra_profile_time = 1000;
-        end_time = end_time + extra_profile_time;
+        end_time += extra_profile_time;
     }
     has_reapply_check = isdefined(aoe.check_reapply_time_func);
     aoe_team = self.team;

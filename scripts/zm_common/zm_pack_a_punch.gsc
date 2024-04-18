@@ -462,7 +462,7 @@ function private function_64416c32(delta, origin, radius) {
         if (isdefined(self.target.trigger_off) && self.target.trigger_off) {
             paporigin = self.target.realorigin;
         } else if (isdefined(self.target.disabled) && self.target.disabled) {
-            paporigin = paporigin + (0, 0, 10000);
+            paporigin += (0, 0, 10000);
         }
         if (distancesquared(paporigin, origin) < radius * radius) {
             return true;

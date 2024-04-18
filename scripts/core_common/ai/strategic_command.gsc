@@ -49,7 +49,7 @@ function private function_ee3d20f5(entity, points) {
     path = undefined;
     shortestpath = undefined;
     start = entity getclosestpointonnavvolume(entity.origin, 200);
-    for (index = 0; index < points.size; index = index + 16) {
+    for (index = 0; index < points.size; index += 16) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
             goalpoints[goalpoints.size] = entity getclosestpointonnavvolume(points[goalindex].origin, 200);
@@ -75,7 +75,7 @@ function private _calculatepathtopoints(entity, points) {
     shortestpath = undefined;
     entradius = entity getpathfindingradius();
     entposition = getclosestpointonnavmesh(entity.origin, 200, entradius);
-    for (index = 0; index < points.size; index = index + 16) {
+    for (index = 0; index < points.size; index += 16) {
         goalpoints = [];
         for (goalindex = index; goalindex - index < 16 && goalindex < points.size; goalindex++) {
             if (ispointonnavmesh(points[goalindex].origin, entradius)) {
@@ -256,15 +256,15 @@ function private function_7c3d768e(var_1b2a0645, var_d695a79f, commander) {
         paused = isdefined(commander.pause) && commander.pause;
         squadcount = commander.squads.size;
         debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + function_9e72a96(team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
-        var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-        var_d695a79f = var_d695a79f + yspacing;
-        var_1b2a0645 = var_1b2a0645 + 25;
+        var_1b2a0645 += var_6e868cb7;
+        var_d695a79f += yspacing;
+        var_1b2a0645 += 25;
         debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + squadcount, !paused && squadcount > 0 || paused && squadcount == 0 ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-        var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-        var_d695a79f = var_d695a79f + yspacing;
+        var_1b2a0645 += var_6e868cb7;
+        var_d695a79f += yspacing;
         debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (paused ? "<unknown string>" : "<unknown string>"), paused ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-        var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-        var_d695a79f = var_d695a79f + yspacing;
+        var_1b2a0645 += var_6e868cb7;
+        var_d695a79f += yspacing;
     #/
     return var_d695a79f;
 }
@@ -287,73 +287,73 @@ function private function_df74a8f3(var_1b2a0645, var_d695a79f, members, commande
         foreach (member in members) {
             yoffset = var_d695a79f;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + member getentitynumber() + "<unknown string>" + member.name + "<unknown string>" + function_9e72a96(member.team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
-            var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + yspacing;
-            var_1b2a0645 = var_1b2a0645 + var_96e1d277;
+            var_1b2a0645 += var_6e868cb7;
+            var_d695a79f += yspacing;
+            var_1b2a0645 += var_96e1d277;
             var_78caba27 = function_65b80a10(commander, member);
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member isplayinganimscripted() ? "<unknown string>" : "<unknown string>"), member isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-            var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + yspacing;
+            var_1b2a0645 += var_6e868cb7;
+            var_d695a79f += yspacing;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
-            var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + yspacing;
+            var_1b2a0645 += var_6e868cb7;
+            var_d695a79f += yspacing;
             var_52cace54 = function_741d9796(member, undefined, commander, var_78caba27);
             if (isdefined(var_52cace54)) {
-                var_1b2a0645 = var_1b2a0645 + var_96e1d277;
+                var_1b2a0645 += var_96e1d277;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), var_52cace54, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
-                var_1b2a0645 = var_1b2a0645 - var_96e1d277;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
+                var_1b2a0645 -= var_96e1d277;
             }
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.ignoreme ? "<unknown string>" : "<unknown string>"), member.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-            var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + yspacing;
+            var_1b2a0645 += var_6e868cb7;
+            var_d695a79f += yspacing;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.ignoreall ? "<unknown string>" : "<unknown string>"), member.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-            var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + yspacing;
+            var_1b2a0645 += var_6e868cb7;
+            var_d695a79f += yspacing;
             debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (member.takedamage ? "<unknown string>" : "<unknown string>"), member.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-            var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-            var_d695a79f = var_d695a79f + yspacing;
+            var_1b2a0645 += var_6e868cb7;
+            var_d695a79f += yspacing;
             newyoffset = var_d695a79f;
             if (member isinvehicle()) {
                 vehicle = member getvehicleoccupied();
                 seatnum = vehicle getoccupantseat(member);
                 var_d695a79f = yoffset;
-                var_1b2a0645 = var_1b2a0645 + var_4fe31551;
+                var_1b2a0645 += var_4fe31551;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + vehicle getentitynumber() + "<unknown string>" + vehicle.scriptvehicletype + "<unknown string>" + function_9e72a96(vehicle.team) + "<unknown string>", textcolor, textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
-                var_1b2a0645 = var_1b2a0645 + var_96e1d277;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
+                var_1b2a0645 += var_96e1d277;
                 var_78caba27 = function_65b80a10(commander, member, vehicle);
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle isplayinganimscripted() ? "<unknown string>" : "<unknown string>"), vehicle isplayinganimscripted() ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + var_78caba27, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
                 var_52cace54 = function_741d9796(member, vehicle, commander, var_78caba27);
                 if (isdefined(var_52cace54)) {
-                    var_1b2a0645 = var_1b2a0645 + var_96e1d277;
+                    var_1b2a0645 += var_96e1d277;
                     debug2dtext((var_1b2a0645, var_d695a79f, 0), var_52cace54, function_41c81572(var_78caba27), textalpha, backgroundcolor, backgroundalpha, textsize);
-                    var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                    var_d695a79f = var_d695a79f + yspacing;
-                    var_1b2a0645 = var_1b2a0645 - var_96e1d277;
+                    var_1b2a0645 += var_6e868cb7;
+                    var_d695a79f += yspacing;
+                    var_1b2a0645 -= var_96e1d277;
                 }
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.ignoreme ? "<unknown string>" : "<unknown string>"), vehicle.ignoreme ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.ignoreall ? "<unknown string>" : "<unknown string>"), vehicle.ignoreall ? (1, 0.5, 0) : (0, 1, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
                 debug2dtext((var_1b2a0645, var_d695a79f, 0), "<unknown string>" + (vehicle.takedamage ? "<unknown string>" : "<unknown string>"), vehicle.takedamage ? (0, 1, 0) : (1, 0.5, 0), textalpha, backgroundcolor, backgroundalpha, textsize);
-                var_1b2a0645 = var_1b2a0645 + var_6e868cb7;
-                var_d695a79f = var_d695a79f + yspacing;
+                var_1b2a0645 += var_6e868cb7;
+                var_d695a79f += yspacing;
                 var_d695a79f = newyoffset;
-                var_1b2a0645 = var_1b2a0645 - var_4fe31551;
-                var_1b2a0645 = var_1b2a0645 - var_96e1d277;
+                var_1b2a0645 -= var_4fe31551;
+                var_1b2a0645 -= var_96e1d277;
             }
-            var_1b2a0645 = var_1b2a0645 - var_96e1d277;
-            var_d695a79f = var_d695a79f + 10;
+            var_1b2a0645 -= var_96e1d277;
+            var_d695a79f += 10;
         }
     #/
     return var_d695a79f;
@@ -383,7 +383,7 @@ function private function_75df771f() {
                 var_6854a979 = 0;
                 if (var_f3ac248f != 3) {
                     var_6854a979 = function_7c3d768e(var_1b2a0645, var_d695a79f, level.alliescommander);
-                    var_1b2a0645 = var_1b2a0645 + var_2f7868e6;
+                    var_1b2a0645 += var_2f7868e6;
                 }
                 if (var_f3ac248f != 2) {
                     var_6854a979 = function_7c3d768e(var_1b2a0645, var_d695a79f, level.axiscommander);
@@ -393,7 +393,7 @@ function private function_75df771f() {
                 if (var_f3ac248f != 3) {
                     allies = function_45857dbe(util::get_bot_players(#"allies"));
                     function_df74a8f3(var_1b2a0645, var_d695a79f, allies, level.alliescommander);
-                    var_1b2a0645 = var_1b2a0645 + var_2f7868e6;
+                    var_1b2a0645 += var_2f7868e6;
                     var_d695a79f = var_6854a979 + var_608ee9cd;
                 }
                 if (var_f3ac248f != 2) {
@@ -551,9 +551,9 @@ function private function_3ed19fa3(gameobject, position) {
             var_bd3388e8 = "<unknown string>";
             var_d8e00365 = "<unknown string>";
             if (isdefined(gameobject.identifier)) {
-                var_d8e00365 = var_d8e00365 + gameobject.identifier;
+                var_d8e00365 += gameobject.identifier;
             }
-            var_d8e00365 = var_d8e00365 + "<unknown string>";
+            var_d8e00365 += "<unknown string>";
             var_ea15be8 = undefined;
             var_da71cc36 = undefined;
             if (isdefined(gameobject.e_object)) {
@@ -650,7 +650,7 @@ function private function_15462dcd(pos, color, channel, ...) {
                 if (!isdefined(str)) {
                     continue;
                 }
-                recordstr = recordstr + str + "<unknown string>";
+                recordstr += str + "<unknown string>";
             }
             record3dtext(recordstr, pos, color, channel);
         #/
@@ -698,7 +698,7 @@ function private function_35fd8254() {
                     var_69548289 = level.var_b3d6ba87.size;
                 }
                 recordtext("<unknown string>" + var_69548289, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 assaultobjects = 0;
                 defendobjects = 0;
                 botcount = 0;
@@ -706,29 +706,29 @@ function private function_35fd8254() {
                 targetcount = 0;
                 for (index = 0; index < var_69548289; index++) {
                     commander = level.var_b3d6ba87[index];
-                    assaultobjects = assaultobjects + blackboard::getstructblackboardattribute(commander, #"gameobjects_assault").size;
-                    defendobjects = defendobjects + blackboard::getstructblackboardattribute(commander, #"gameobjects_defend").size;
-                    botcount = botcount + blackboard::getstructblackboardattribute(commander, #"doppelbots").size;
-                    objectivecount = objectivecount + blackboard::getstructblackboardattribute(commander, #"objectives").size;
-                    targetcount = targetcount + commander.var_6365d720;
+                    assaultobjects += blackboard::getstructblackboardattribute(commander, #"gameobjects_assault").size;
+                    defendobjects += blackboard::getstructblackboardattribute(commander, #"gameobjects_defend").size;
+                    botcount += blackboard::getstructblackboardattribute(commander, #"doppelbots").size;
+                    objectivecount += blackboard::getstructblackboardattribute(commander, #"objectives").size;
+                    targetcount += commander.var_6365d720;
                 }
-                xoffset = xoffset + 15;
+                xoffset += 15;
                 recordtext("<unknown string>" + botcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 recordtext("<unknown string>" + objectivecount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 recordtext("<unknown string>" + assaultobjects, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 recordtext("<unknown string>" + defendobjects, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                yoffset = yoffset + 13;
+                yoffset += 13;
                 recordtext("<unknown string>" + targetcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
-                yoffset = yoffset + 13;
-                yoffset = yoffset + 13;
-                xoffset = xoffset - 15;
+                yoffset += 13;
+                yoffset += 13;
+                xoffset -= 15;
                 squadcount = 0;
                 for (index = 0; index < var_69548289; index++) {
                     commander = level.var_b3d6ba87[index];
-                    squadcount = squadcount + commander.squads.size;
+                    squadcount += commander.squads.size;
                 }
                 recordtext("<unknown string>" + squadcount, position + (xoffset, yoffset, 0), (1, 1, 1), "<unknown string>", textscale);
             }

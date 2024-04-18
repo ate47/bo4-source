@@ -91,7 +91,7 @@ function private _destructhandler(localclientnum, oldvalue, newvalue, bnewent, b
         if (destructflags & currentdestructflag) {
             _destructpiece(localclientnum, entity, piecenumber, shouldspawngibs);
         }
-        currentdestructflag = currentdestructflag << 1;
+        currentdestructflag <<= 1;
     }
     entity._destruct_state = newvalue;
 }

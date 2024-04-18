@@ -239,16 +239,16 @@ function playerlaststand(einflictor, attacker, idamage, smeansofdeath, weapon, v
     if (!isdefined(self.n_downs)) {
         self.n_downs = 0;
     }
-    self.n_downs = self.n_downs + 1;
+    self.n_downs += 1;
     bleedout_time = getdvarfloat(#"hash_1116ba0f929df636", isdefined(self.var_b92e42da) ? self.var_b92e42da : getdvarfloat(#"player_laststandbleedouttime", 0));
     if (zm_custom::function_901b751c(#"zmlimiteddownsamount") && self.n_downs > zm_custom::function_901b751c(#"zmlimiteddownsamount")) {
         bleedout_time = 0;
     }
     if (isdefined(self.n_bleedout_time_multiplier)) {
-        bleedout_time = bleedout_time * self.n_bleedout_time_multiplier;
+        bleedout_time *= self.n_bleedout_time_multiplier;
     }
     if (isdefined(self.var_5c4f1263)) {
-        bleedout_time = bleedout_time * self.var_5c4f1263;
+        bleedout_time *= self.var_5c4f1263;
     }
     self thread laststand_bleedout(bleedout_time);
     demo::bookmark(#"player_downed", gettime(), self);
@@ -717,7 +717,7 @@ function laststand_bleedout(delay) {
     level.var_ff482f76 zm_laststand_client::set_num_downs(self, self.n_downs);
     level.var_ff482f76 zm_laststand_client::set_revive_progress(self, 0);
     while (self.bleedout_time > 0) {
-        self.bleedout_time = self.bleedout_time - 1;
+        self.bleedout_time -= 1;
         level clientfield::set("laststand_update" + self getentitynumber(), self.bleedout_time / delay);
         level.var_ff482f76 zm_laststand_client::set_bleedout_progress(self, self.bleedout_time / delay);
         wait(1);
@@ -867,8 +867,8 @@ function function_618fd37e() {
 // Size: 0x9c
 function function_3a00302e(n_count = 1, var_d47c52b4 = 1) {
     if (var_d47c52b4) {
-        self.var_d66589da = self.var_d66589da + n_count;
-        self.var_5d4c5daf = self.var_5d4c5daf + n_count;
+        self.var_d66589da += n_count;
+        self.var_5d4c5daf += n_count;
     }
     self function_3d685b5f(self function_618fd37e() + n_count);
 }
@@ -879,7 +879,7 @@ function function_3a00302e(n_count = 1, var_d47c52b4 = 1) {
 // Size: 0x84
 function function_409dc98e(n_count = 1, b_revived = 1) {
     if (b_revived) {
-        self.var_308dc243 = self.var_308dc243 + n_count;
+        self.var_308dc243 += n_count;
     }
     self function_3d685b5f(self function_618fd37e() - n_count);
 }
@@ -1004,7 +1004,7 @@ function function_73d6c609(n_duration) {
     while (true) {
         while (self function_550c4ac4()) {
             waitframe(1);
-            var_722c6f25 = var_722c6f25 + 0.05;
+            var_722c6f25 += 0.05;
             level.var_1c957023 self_revive_visuals::set_revive_progress(self, var_722c6f25 / n_duration);
             if (var_722c6f25 >= n_duration) {
                 b_success = 1;
@@ -1321,11 +1321,11 @@ function revive_do_revive(e_revivee, w_reviver, w_revive_tool, t_secondary) {
     if (!isdefined(self.revive_progress)) {
         self.revive_progress = 0;
     }
-    self.revive_progress = self.revive_progress + 1;
+    self.revive_progress += 1;
     self thread check_for_failed_revive(e_revivee);
     while (isdefined(self) && self is_reviving(e_revivee, t_secondary)) {
         waitframe(1);
-        e_revivee.var_6fc48a11 = e_revivee.var_6fc48a11 + 0.05;
+        e_revivee.var_6fc48a11 += 0.05;
         level.var_ff482f76 zm_laststand_client::set_revive_progress(e_revivee, e_revivee.var_6fc48a11 / revivetime);
         if (isdefined(e_revivee.revivetrigger.auto_revive) && e_revivee.revivetrigger.auto_revive) {
             break;
@@ -1373,7 +1373,7 @@ function revive_do_revive(e_revivee, w_reviver, w_revive_tool, t_secondary) {
 function function_2cc9a315(revivetime) {
     self endon(#"player_being_revived", #"player_revived", #"disconnect", #"bled_out");
     while (!(isdefined(self.var_c6a6f334) && self.var_c6a6f334) && isdefined(self.var_6fc48a11) && self.var_6fc48a11 >= 0) {
-        self.var_6fc48a11 = self.var_6fc48a11 - 0.05;
+        self.var_6fc48a11 -= 0.05;
         level.var_ff482f76 zm_laststand_client::set_revive_progress(self, self.var_6fc48a11 / revivetime);
         waitframe(1);
     }

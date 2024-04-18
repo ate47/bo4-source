@@ -130,7 +130,7 @@ function private function_687146d() {
     if (isdefined(self.inventory) && isdefined(self.inventory.items)) {
         foreach (item in self.inventory.items) {
             if (isdefined(item.itementry) && item.itementry.itemtype === #"health") {
-                var_4862d883 = var_4862d883 + item.count;
+                var_4862d883 += item.count;
             }
         }
     }

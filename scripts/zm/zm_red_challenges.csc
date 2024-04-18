@@ -108,7 +108,7 @@ function function_9ed71eeb(localclientnum, oldval, newval, bnewent, binitialsnap
     }
     v_pos = self.origin + (0, 0, 7);
     v_dir = anglestoforward(self.angles);
-    v_pos = v_pos + v_dir * 9;
+    v_pos += v_dir * 9;
     v_up = (0, 0, 1);
     v_forward = (1, 0, 0);
     switch (newval) {
@@ -271,7 +271,7 @@ function function_c63a4f32(localclientnum, oldval, newval, bnewent, binitialsnap
 function fake_physicslaunch(target_pos, power, var_4862f668) {
     start_pos = self.origin;
     gravity = getdvarint(#"bg_gravity", 0) * -1;
-    gravity = gravity * var_4862f668;
+    gravity *= var_4862f668;
     dist = distance(start_pos, target_pos);
     time = dist / power;
     delta = target_pos - start_pos;
@@ -310,13 +310,13 @@ function function_4eff20ff() {
             break;
         }
         self function_78233d29("rob_zm_red_cin_coals", "", "Alpha", level.var_75ca8fda);
-        level.var_75ca8fda = level.var_75ca8fda + level.var_6437d5e7;
+        level.var_75ca8fda += level.var_6437d5e7;
         if (level.var_75ca8fda >= 1) {
             level.var_75ca8fda = 1;
-            level.var_6437d5e7 = level.var_6437d5e7 * -1;
+            level.var_6437d5e7 *= -1;
         } else if (level.var_75ca8fda <= 0.2) {
             level.var_75ca8fda = 0.2;
-            level.var_6437d5e7 = level.var_6437d5e7 * -1;
+            level.var_6437d5e7 *= -1;
         }
         waitframe(1);
     }
@@ -332,7 +332,7 @@ function function_23333a90() {
     }
     self endon(#"death");
     while (level.var_75ca8fda > 0) {
-        level.var_75ca8fda = level.var_75ca8fda - 0.002;
+        level.var_75ca8fda -= 0.002;
         if (level.var_75ca8fda < 0) {
             level.var_75ca8fda = 0;
         }

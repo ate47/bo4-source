@@ -483,7 +483,7 @@ function getnodeorigin() {
 // Size: 0x54
 function safemod(a, b) {
     result = int(a) % b;
-    result = result + b;
+    result += b;
     return result % b;
 }
 
@@ -679,7 +679,7 @@ function showdebugproc(frompoint, topoint, color, printtime) {
     /#
         self endon(#"death");
         timer = printtime * 20;
-        for (i = 0; i < timer; i = i + 1) {
+        for (i = 0; i < timer; i += 1) {
             waitframe(1);
             line(frompoint, topoint, color);
         }
@@ -799,12 +799,12 @@ function anim_array(animarray, animweights) {
     weights = 0;
     total_weight = 0;
     for (i = 0; i < total_anims; i++) {
-        total_weight = total_weight + animweights[i];
+        total_weight += animweights[i];
     }
     anim_play = randomfloat(total_weight);
     current_weight = 0;
     for (i = 0; i < total_anims; i++) {
-        current_weight = current_weight + animweights[i];
+        current_weight += animweights[i];
         if (anim_play >= current_weight) {
             continue;
         }
@@ -854,7 +854,7 @@ function print3drise(org, msg, color, alpha, scale) {
         up = 0;
         org = org;
         for (i = 0; i < newtime; i++) {
-            up = up + 0.5;
+            up += 0.5;
             print3d(org + (0, 0, up), msg, color, alpha, scale);
             waitframe(1);
         }
@@ -918,12 +918,12 @@ function random_weight(array) {
     if (array.size > 1) {
         anim_weight = 0;
         for (i = 0; i < array.size; i++) {
-            anim_weight = anim_weight + array[i];
+            anim_weight += array[i];
         }
         anim_play = randomfloat(anim_weight);
         anim_weight = 0;
         for (i = 0; i < array.size; i++) {
-            anim_weight = anim_weight + array[i];
+            anim_weight += array[i];
             if (anim_play < anim_weight) {
                 idleanim = i;
                 break;
@@ -1736,7 +1736,7 @@ function ai_calculate_health(base_health, round_number) {
     for (i = 2; i <= round_number; i++) {
         if (i >= 10 && !(isdefined(level.var_50dd0ec5) && level.var_50dd0ec5)) {
             old_health = var_d082c739;
-            var_d082c739 = var_d082c739 + int(var_d082c739 * function_d2dfacfd(#"zombie_health_increase_multiplier"));
+            var_d082c739 += int(var_d082c739 * function_d2dfacfd(#"zombie_health_increase_multiplier"));
             if (var_d082c739 < old_health) {
                 var_d082c739 = old_health;
                 break;
@@ -2075,9 +2075,9 @@ function get_current_actor_count() {
     count = 0;
     actors = getaispeciesarray(level.zombie_team, "all");
     if (isdefined(actors)) {
-        count = count + actors.size;
+        count += actors.size;
     }
-    count = count + get_current_corpse_count();
+    count += get_current_corpse_count();
     return count;
 }
 
@@ -2175,7 +2175,7 @@ function zombie_gib(amount, attacker, direction_vec, point, type, tagname, model
             self allowpitchangle(1);
             self setpitchorient();
             health = self.health;
-            health = health * 0.1;
+            health *= 0.1;
             if (isdefined(self.crawl_anim_override)) {
                 self [[ self.crawl_anim_override ]]();
             }
@@ -2593,7 +2593,7 @@ function makezombiecrawler(b_both_legs) {
     self allowpitchangle(1);
     self setpitchorient();
     health = self.health;
-    health = health * 0.1;
+    health *= 0.1;
 }
 
 // Namespace zombie_utility/zombie_utility

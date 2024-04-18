@@ -335,7 +335,7 @@ function electric_cherry_cooldown_timer(current_weapon) {
     self endon(#"disconnect", #"electric_cherry_cooldown_started");
     n_reload_time = 0.25;
     if (self hasperk(#"specialty_fastreload")) {
-        n_reload_time = n_reload_time * getdvarfloat(#"perk_weapreloadmultiplier", 0);
+        n_reload_time *= getdvarfloat(#"perk_weapreloadmultiplier", 0);
     }
     n_cooldown_time = n_reload_time + 3;
     wait(n_cooldown_time);

@@ -389,7 +389,7 @@ function function_eef4fa8c(var_8d5d092c, var_418e2265) {
         } else {
             n_cooldown = 30;
             if (isplayer(var_418e2265) && var_418e2265 hasperk(#"specialty_cooldown")) {
-                n_cooldown = n_cooldown * 0.5;
+                n_cooldown *= 0.5;
             }
         }
         level waittilltimeout(n_cooldown, #"hash_3c3c6b906f6bbd6");

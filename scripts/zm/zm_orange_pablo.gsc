@@ -467,7 +467,7 @@ function function_e435077() {
         if (var_23cd9374) {
             var_a3992d9c = 0;
         } else {
-            var_a3992d9c = var_a3992d9c + 1;
+            var_a3992d9c += 1;
         }
         wait(1);
     }

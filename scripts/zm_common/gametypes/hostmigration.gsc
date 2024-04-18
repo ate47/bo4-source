@@ -50,7 +50,7 @@ function updatetimerpausedness() {
     }
     if (level.timerstopped && !shouldbestopped) {
         level.timerstopped = 0;
-        level.discardtime = level.discardtime + gettime() - level.timerpausetime;
+        level.discardtime += gettime() - level.timerpausetime;
     }
 }
 
@@ -92,7 +92,7 @@ function pausetimer() {
 // Checksum 0x5a98ba96, Offset: 0x570
 // Size: 0x2a
 function resumetimer() {
-    level.discardtime = level.discardtime + gettime() - level.migrationtimerpausetime;
+    level.discardtime += gettime() - level.migrationtimerpausetime;
 }
 
 // Namespace hostmigration/hostmigration
@@ -105,7 +105,7 @@ function locktimer() {
         currtime = gettime();
         waitframe(1);
         if (!level.timerstopped && isdefined(level.discardtime)) {
-            level.discardtime = level.discardtime + gettime() - currtime;
+            level.discardtime += gettime() - currtime;
         }
     }
 }
@@ -391,7 +391,7 @@ function waitlongdurationwithhostmigrationpause(duration) {
     }
     assert(duration > 0);
     starttime = gettime();
-    for (endtime = gettime() + duration * 1000; gettime() < endtime; endtime = endtime + timepassed) {
+    for (endtime = gettime() + duration * 1000; gettime() < endtime; endtime += timepassed) {
         waittillhostmigrationstarts((endtime - gettime()) / 1000);
         if (isdefined(level.hostmigrationtimer)) {
             timepassed = waittillhostmigrationdone();
@@ -418,7 +418,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
     while (gettime() < endtime) {
         waittillhostmigrationstarts((endtime - gettime()) / 1000);
         while (isdefined(level.hostmigrationtimer)) {
-            endtime = endtime + 1000;
+            endtime += 1000;
             setgameendtime(int(endtime));
             wait(1);
         }
@@ -429,7 +429,7 @@ function waitlongdurationwithgameendtimeupdate(duration) {
         }
     #/
     while (isdefined(level.hostmigrationtimer)) {
-        endtime = endtime + 1000;
+        endtime += 1000;
         setgameendtime(int(endtime));
         wait(1);
     }

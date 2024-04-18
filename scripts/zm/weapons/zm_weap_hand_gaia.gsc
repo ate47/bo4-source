@@ -345,7 +345,7 @@ function function_ce711b5c(e_projectile, ai_zombie, n_damage) {
                 v_target = function_30239376(ai_zombie);
                 n_dist = distance(e_projectile.origin, v_target);
                 if (n_dist > var_7fd007f9) {
-                    var_4d8b7233 = var_4d8b7233 + 20;
+                    var_4d8b7233 += 20;
                     if (e_projectile.n_index === 1) {
                         v_horz = v_target + anglestoright(ai_zombie.angles) * 100;
                     } else if (e_projectile.n_index === 2) {
@@ -357,7 +357,7 @@ function function_ce711b5c(e_projectile, ai_zombie, n_damage) {
                         v_end = v_horz + (0, 0, var_4d8b7233);
                     }
                 } else {
-                    var_4d8b7233 = var_4d8b7233 - 20;
+                    var_4d8b7233 -= 20;
                     if (isdefined(v_target)) {
                         v_end = v_target + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 8) {
@@ -531,7 +531,7 @@ function function_dd7bc108(weapon) {
         n_ammo = self getweaponammoclip(self.currentweapon);
     }
     if (n_ammo >= 2) {
-        n_ammo = n_ammo - 2;
+        n_ammo -= 2;
     } else {
         return;
     }
@@ -548,7 +548,7 @@ function function_dd7bc108(weapon) {
         v_ground = undefined;
         while (!isdefined(v_ground)) {
             v_trace = groundtrace(v_target + (0, 0, 200), v_target + (0, 0, -2000), 0, self, 1)[#"position"];
-            v_trace = v_trace + (randomintrange(-10, 10), randomintrange(-10, 10), 0);
+            v_trace += (randomintrange(-10, 10), randomintrange(-10, 10), 0);
             v_on_navmesh = zm_utility::function_b0eeaada(v_trace);
             if (isdefined(v_on_navmesh)) {
                 v_ground = v_on_navmesh[#"point"];
@@ -561,7 +561,7 @@ function function_dd7bc108(weapon) {
             mdl_spike thread scene::play("p8_fxanim_zm_red_gaia_spikes_bundle", "rise", mdl_spike);
             mdl_spike thread function_33f9ab00(a_e_targets, self.currentweapon);
         }
-        n_inc = n_inc + 50;
+        n_inc += 50;
         wait(0.1);
         if (isdefined(mdl_spike) && isdefined(mdl_spike.var_6fe9ec3f) && mdl_spike.var_6fe9ec3f) {
             var_d29931f9++;

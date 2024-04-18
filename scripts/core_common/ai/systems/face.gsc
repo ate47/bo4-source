@@ -44,12 +44,12 @@ function saygenericdialogue(typestring) {
 function saygenericdialoguewithimportance(typestring, importance) {
     soundalias = "dds_";
     if (isdefined(self.dds_characterid)) {
-        soundalias = soundalias + self.dds_characterid;
+        soundalias += self.dds_characterid;
     } else {
         println("<unknown string>");
         return;
     }
-    soundalias = soundalias + "_" + typestring;
+    soundalias += "_" + typestring;
     if (soundexists(soundalias)) {
         self thread playfacethread(undefined, soundalias, importance);
     }
@@ -157,7 +157,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
     self.a.facialsoundalias = str_script_alias;
     self.a.currentdialogimportance = importance;
     if (importance == 1) {
-        level.numberofimportantpeopletalking = level.numberofimportantpeopletalking + 1;
+        level.numberofimportantpeopletalking += 1;
     }
     /#
         if (level.numberofimportantpeopletalking > 1) {
@@ -165,7 +165,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
         }
     #/
     uniquenotify = notifystring + " " + level.talknotifyseed;
-    level.talknotifyseed = level.talknotifyseed + 1;
+    level.talknotifyseed += 1;
     if (isdefined(level.scr_sound) && isdefined(level.scr_sound[#"generic"])) {
         str_vox_file = level.scr_sound[#"generic"][str_script_alias];
     }
@@ -192,7 +192,7 @@ function playfacethread(facialanim, str_script_alias, importance, notifystring, 
     }
     self waittill(#"death", #"cancel speaking", uniquenotify);
     if (importance == 1) {
-        level.numberofimportantpeopletalking = level.numberofimportantpeopletalking - 1;
+        level.numberofimportantpeopletalking -= 1;
         level.importantpeopletalkingtime = gettime();
     }
     if (isdefined(self)) {

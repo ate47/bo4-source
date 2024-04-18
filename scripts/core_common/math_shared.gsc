@@ -115,7 +115,7 @@ function random_vector(max_length) {
 function angle_dif(oldangle, newangle) {
     outvalue = (oldangle - newangle) % 360;
     if (outvalue < 0) {
-        outvalue = outvalue + 360;
+        outvalue += 360;
     }
     if (outvalue > 180) {
         outvalue = (outvalue - 360) * -1;
@@ -258,7 +258,7 @@ function array_average(array) {
     assert(array.size > 0);
     total = 0;
     for (i = 0; i < array.size; i++) {
-        total = total + array[i];
+        total += array[i];
     }
     return total / array.size;
 }
@@ -276,7 +276,7 @@ function array_std_deviation(array, mean) {
     }
     total = 0;
     for (i = 0; i < tmp.size; i++) {
-        total = total + tmp[i];
+        total += tmp[i];
     }
     return sqrt(total / array.size);
 }
@@ -433,7 +433,7 @@ function vec_to_angles(vector) {
     }
     yaw = atan(vecx / vecy);
     if (vecy < 0) {
-        yaw = yaw + 180;
+        yaw += 180;
     }
     return 90 - yaw;
 }
@@ -448,7 +448,7 @@ function pow(base, exp) {
     }
     result = base;
     for (i = 0; i < exp - 1; i++) {
-        result = result * base;
+        result *= base;
     }
     return result;
 }

@@ -1154,7 +1154,7 @@ function sortdeadplayers(team) {
 function totalalivecount() {
     count = 0;
     foreach (team, _ in level.teams) {
-        count = count + level.alivecount[team];
+        count += level.alivecount[team];
     }
     return count;
 }
@@ -1166,7 +1166,7 @@ function totalalivecount() {
 function totalplayerlives() {
     count = 0;
     foreach (team, _ in level.teams) {
-        count = count + level.playerlives[team];
+        count += level.playerlives[team];
     }
     return count;
 }
@@ -1602,7 +1602,7 @@ function callback_startgametype() {
     }
     level.inprematchperiod = 1;
     if (level.prematchperiod > 2) {
-        level.prematchperiod = level.prematchperiod + randomfloat(4) - 2;
+        level.prematchperiod += randomfloat(4) - 2;
     }
     if (level.numlives || anyteamhaswavedelay() || level.playerqueuedrespawn) {
         level.graceperiod = 15;

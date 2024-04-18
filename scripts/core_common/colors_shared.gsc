@@ -402,7 +402,7 @@ function draw_color_friendlies() {
                 overlay.color = rgb[colors[i]];
                 level.debug_color_huds[level.debug_color_huds.size] = overlay;
             }
-            y = y + 25;
+            y += 25;
         }
     #/
 }
@@ -1439,7 +1439,7 @@ function get_color_spawner(classname, fromcolor) {
 function getclasscolorhash(classname, fromcolor) {
     classcolorhash = classname;
     if (isdefined(fromcolor)) {
-        classcolorhash = classcolorhash + "##" + fromcolor;
+        classcolorhash += "##" + fromcolor;
     }
     return classcolorhash;
 }

@@ -756,7 +756,7 @@ function function_bbdde10e(b_skipped) {
 // Checksum 0xdf119b2e, Offset: 0x3538
 // Size: 0x64
 function function_40f77b4a(b_skipped, var_19e802fa) {
-    level.var_1028e128.origin = level.var_1028e128.origin + (0, 0, 2048);
+    level.var_1028e128.origin += (0, 0, 2048);
     waitframe(1);
     level.var_6d6bbd67 delete();
 }

@@ -103,7 +103,7 @@ function private function_b6824ff0(entity, player, duration, color) {
 // Size: 0x116
 function private function_e5ffb77c(start, end, duration, color) {
     /#
-        for (current_time = duration * 20; current_time > 0; current_time = current_time - 1) {
+        for (current_time = duration * 20; current_time > 0; current_time -= 1) {
             waitframe(1);
             line(start, end, color, 1, 1);
             sphere(end, 10, color, 1, 0, 8, 1);

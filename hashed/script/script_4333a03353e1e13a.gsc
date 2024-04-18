@@ -308,7 +308,7 @@ function function_b5fc069b() {
     while (true) {
         wait(0.1);
         if (self function_385a554d()) {
-            self.var_cd75ce36 = self.var_cd75ce36 - 0.1;
+            self.var_cd75ce36 -= 0.1;
             if (self.var_cd75ce36 <= 0) {
                 if (self.str_location == "facility") {
                     a_v_flingers = array::randomize(level.a_v_flingers);
@@ -407,7 +407,7 @@ function function_4578fdfd() {
         wait(0.1);
         s_touching = self function_1036f994();
         if (level flag::get(#"hash_3028604821838259") && s_touching.var_50d20c23) {
-            self.var_cd75ce36 = self.var_cd75ce36 - 0.1;
+            self.var_cd75ce36 -= 0.1;
             if (self.var_cd75ce36 <= 0) {
                 if (level flag::get(#"hash_f14d343f59fc897")) {
                     zm_orange_zones::function_3b77181c(1);

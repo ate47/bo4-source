@@ -604,10 +604,10 @@ function derriesezombiespawnnavmeshtest(params, inrat) {
         if (inrat) {
             errmsg = "<unknown string>";
             for (i = 0; i < size; i++) {
-                errmsg = errmsg + "<unknown string>" + failed_spawn_origin[i] + "<unknown string>" + failed_node_origin[i] + "<unknown string>";
+                errmsg += "<unknown string>" + failed_spawn_origin[i] + "<unknown string>" + failed_node_origin[i] + "<unknown string>";
             }
             for (i = 0; i < failed_attack_spot_size; i++) {
-                errmsg = errmsg + "<unknown string>" + failed_attack_spot_spawn_origin[i] + "<unknown string>" + failed_attack_spot[i] + "<unknown string>";
+                errmsg += "<unknown string>" + failed_attack_spot_spawn_origin[i] + "<unknown string>" + failed_attack_spot[i] + "<unknown string>";
             }
             if (size > 0 || failed_attack_spot_size > 0) {
                 ratreportcommandresult(params._id, 0, errmsg);

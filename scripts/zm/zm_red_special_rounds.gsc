@@ -131,7 +131,7 @@ function function_ec882ff(n_max) {
     var_2506688 = 1;
     n_num_to_spawn = randomintrangeinclusive(int(var_2506688), var_1797c23a);
     if (level.var_4c6c91cf < level.var_9b1fafcf) {
-        level.var_4c6c91cf = level.var_4c6c91cf + n_num_to_spawn;
+        level.var_4c6c91cf += n_num_to_spawn;
         return n_num_to_spawn;
     }
     return 0;
@@ -159,7 +159,7 @@ function function_57fd9735(n_max) {
     var_2506688 = 1;
     n_num_to_spawn = randomintrangeinclusive(int(var_2506688), var_1797c23a);
     if (level.var_4c6c91cf < level.var_9b1fafcf) {
-        level.var_4c6c91cf = level.var_4c6c91cf + n_num_to_spawn;
+        level.var_4c6c91cf += n_num_to_spawn;
         return n_num_to_spawn;
     }
     return 0;
@@ -203,7 +203,7 @@ function function_a0488ba8() {
         }
     }
     if (isarray(level.var_b175714d) && isdefined(level.var_b175714d[#"blight_father"]) && isdefined(level.var_b175714d[#"blight_father"].var_33e393a7)) {
-        var_a128313 = var_a128313 + level.var_b175714d[#"blight_father"].var_33e393a7;
+        var_a128313 += level.var_b175714d[#"blight_father"].var_33e393a7;
     }
     return var_a128313;
 }

@@ -104,7 +104,7 @@ function play_base_fx(localclientnum, flag, fx_name, team) {
 function update_base_fx(localclientnum, flag, team) {
     fx_name = get_base_fx(flag, team);
     if (shoutcaster::is_shoutcaster(localclientnum) && team != #"neutral") {
-        fx_name = fx_name + (team == #"allies" ? "_shoutcaster_allies" : "_shoutcaster_axis");
+        fx_name += team == #"allies" ? "_shoutcaster_allies" : "_shoutcaster_axis";
     }
     if (team == #"neutral") {
         play_base_fx(localclientnum, flag, fx_name, team);
@@ -146,7 +146,7 @@ function update_cap_fx(localclientnum, flag, team, progress) {
     }
     fx_name = get_cap_fx(flag, team);
     if (shoutcaster::is_shoutcaster(localclientnum) && team != #"neutral") {
-        fx_name = fx_name + (team == #"allies" ? "_shoutcaster_allies" : "_shoutcaster_axis");
+        fx_name += team == #"allies" ? "_shoutcaster_allies" : "_shoutcaster_axis";
     }
     play_cap_fx(localclientnum, flag, fx_name, team);
     flag.last_progress = progress;

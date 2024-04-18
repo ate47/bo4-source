@@ -345,13 +345,13 @@ function get_brutus_spawn_pos_val(var_ed72e56b) {
     for (i = 0; i < a_players_in_zone.size; i++) {
         if (self findpath(var_ed72e56b.origin, a_players_in_zone[i].origin, 0, 0)) {
             n_dist = distance2d(var_ed72e56b.origin, a_players_in_zone[i].origin);
-            n_score_addition = n_score_addition + math::linear_map(n_dist, 128, 4016, 0, level.var_549a1590);
+            n_score_addition += math::linear_map(n_dist, 128, 4016, 0, level.var_549a1590);
         }
     }
     if (n_score_addition > level.var_549a1590) {
         n_score_addition = level.var_549a1590;
     }
-    n_score = n_score + n_score_addition;
+    n_score += n_score_addition;
     return n_score;
 }
 
@@ -399,7 +399,7 @@ function brutus_round_tracker() {
         level waittill(#"between_round_over");
         players = getplayers();
         if (isdefined(level.next_dog_round) && level.next_dog_round == level.var_33be9958) {
-            level.var_33be9958 = level.var_33be9958 + 2;
+            level.var_33be9958 += 2;
         }
         if (level.round_number < 6 && isdefined(level.is_forever_solo_game) && level.is_forever_solo_game && !(isdefined(level.var_cab8d080) && level.var_cab8d080)) {
             if (level.var_33be9958 < 6) {
@@ -680,7 +680,7 @@ function wait_on_box_alarm() {
                 continue;
             }
             if (level.var_cc879537 < level.var_49efbc6d) {
-                level.var_cc879537 = level.var_cc879537 + level.var_5ade4e2f;
+                level.var_cc879537 += level.var_5ade4e2f;
             }
         }
     }
@@ -793,7 +793,7 @@ function private function_9a78baba(var_1cc3df76) {
             least_hunted = var_1cc3df76[i];
         }
     }
-    least_hunted.hunted_by = least_hunted.hunted_by + 1;
+    least_hunted.hunted_by += 1;
     return least_hunted;
 }
 

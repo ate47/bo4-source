@@ -315,7 +315,7 @@ function function_9e88e881(local_client_num) {
     var_f998f517 = 0;
     foreach (var_20651f4 in hackableitems[1]) {
         var_b095c57b = function_b2755499(var_20651f4.weapon, var_20651f4);
-        var_f998f517 = var_f998f517 + var_b095c57b.var_df381b5d;
+        var_f998f517 += var_b095c57b.var_df381b5d;
         if (var_f998f517 > var_9b81203) {
             break;
         }
@@ -327,7 +327,7 @@ function function_9e88e881(local_client_num) {
     var_f998f517 = 0;
     foreach (var_20651f4 in hackableitems[2]) {
         var_b095c57b = function_b2755499(var_20651f4.weapon, var_20651f4);
-        var_f998f517 = var_f998f517 + var_b095c57b.var_df381b5d;
+        var_f998f517 += var_b095c57b.var_df381b5d;
         if (var_f998f517 > var_9b81203) {
             break;
         }

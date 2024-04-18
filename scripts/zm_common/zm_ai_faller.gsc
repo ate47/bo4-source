@@ -336,7 +336,7 @@ function zombie_fall_get_vicitims(spot) {
     ret = [];
     players = getplayers();
     checkdist2 = 40;
-    checkdist2 = checkdist2 * checkdist2;
+    checkdist2 *= checkdist2;
     for (i = 0; i < players.size; i++) {
         player = players[i];
         if (player laststand::player_is_in_laststand()) {
@@ -424,7 +424,7 @@ function _damage_mod_to_damage_type(type) {
     }
     returnstr = toks[1];
     for (i = 2; i < toks.size; i++) {
-        returnstr = returnstr + toks[i];
+        returnstr += toks[i];
     }
     returnstr = tolower(returnstr);
     return returnstr;
@@ -467,7 +467,7 @@ function zombie_fall_dust_fx(zombie) {
     self thread stop_zombie_fall_dust_fx(zombie);
     dust_time = 4.5;
     dust_interval = 0.3;
-    for (t = 0; t < dust_time; t = t + dust_interval) {
+    for (t = 0; t < dust_time; t += dust_interval) {
         playfxontag(level._effect[#"rise_dust"], zombie, dust_tag);
         wait(dust_interval);
     }
@@ -615,7 +615,7 @@ function zombie_emerge_dust_fx(zombie) {
     self thread stop_zombie_fall_dust_fx(zombie);
     dust_time = 3.5;
     dust_interval = 0.5;
-    for (t = 0; t < dust_time; t = t + dust_interval) {
+    for (t = 0; t < dust_time; t += dust_interval) {
         playfxontag(level._effect[#"rise_dust"], zombie, dust_tag);
         wait(dust_interval);
     }

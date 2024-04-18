@@ -206,7 +206,7 @@ function function_17b07f6c(e_player) {
         self thread function_9c9d3bdc(e_player);
         self thread function_17f9c268();
         wait(0.1);
-        n_total_time = n_total_time + 0.1;
+        n_total_time += 0.1;
     }
     self thread shower_trap_fx(0);
 }
@@ -439,7 +439,7 @@ function fire_trap_activate(e_player) {
         self thread function_bd117af1(e_player);
         self thread function_956ddb52();
         wait(0.1);
-        n_total_time = n_total_time + 0.1;
+        n_total_time += 0.1;
     }
     self thread fire_trap_fx(0);
 }
@@ -672,7 +672,7 @@ function spinning_trap_activate(e_player) {
         self thread function_b45556a4(e_player);
         self thread function_fcac4b4e();
         wait(0.1);
-        n_total_time = n_total_time + 0.1;
+        n_total_time += 0.1;
     }
     self notify(#"spinning_trap_complete");
     level.s_spinning_trap.e_volume playsound(#"hash_632248542476cd73");
@@ -794,7 +794,7 @@ function function_bcfd9acb(s_trap) {
 function function_63e5e387(s_trap) {
     n_lift_height = randomintrange(8, 64);
     v_away_from_source = vectornormalize(self.origin - s_trap.e_volume.origin);
-    v_away_from_source = v_away_from_source * 128;
+    v_away_from_source *= 128;
     v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
     a_trace = physicstraceex(self.origin + (0, 0, 32), self.origin + v_away_from_source, (-16, -16, -16), (16, 16, 16), self);
     self setplayercollision(0);

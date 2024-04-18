@@ -285,7 +285,7 @@ function function_5a8becdc(localclientnum, player, buildinfo, var_4b1c8937) {
     var_b963136f = int(buildinfo.width / cellwidth);
     var_227adab7 = buildinfo.width - cellwidth * var_b963136f;
     if (var_227adab7 > 0 && var_227adab7 / 2 < level.smartcoversettings.bundle.var_3dfbdbeb && var_b963136f + 2 <= level.smartcoversettings.bundle.var_b118698f) {
-        var_b963136f = var_b963136f + 2;
+        var_b963136f += 2;
     }
     var_9de92bd5 = int(buildinfo.height / cellheight);
     var_2582dbd = buildinfo.height - cellheight * var_9de92bd5;
@@ -381,8 +381,8 @@ function startmicrowavefx(localclientnum) {
             }
         #/
         need_to_rebuild = microwavefxent microwavefxhash(trace, origin, "center");
-        need_to_rebuild = need_to_rebuild | microwavefxent microwavefxhash(traceright, origin, "right");
-        need_to_rebuild = need_to_rebuild | microwavefxent microwavefxhash(traceleft, origin, "left");
+        need_to_rebuild |= microwavefxent microwavefxhash(traceright, origin, "right");
+        need_to_rebuild |= microwavefxent microwavefxhash(traceleft, origin, "left");
         level.last_microwave_turret_fx_trace = gettime();
         if (!need_to_rebuild) {
             wait(1);
@@ -408,12 +408,12 @@ function microwavefxhash(trace, origin, name) {
         tracedistsq = distancesquared(origin, trace[#"position"]);
         if (tracedistsq >= endofhalffxsq || i == 0) {
             if (tracedistsq < endoffullfxsq) {
-                hash = hash + 1;
+                hash += 1;
             } else {
-                hash = hash + counter;
+                hash += counter;
             }
         }
-        counter = counter * 2;
+        counter *= 2;
     }
     if (!isdefined(self.fxhashs[name])) {
         self.fxhashs[name] = 0;

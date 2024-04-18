@@ -369,10 +369,10 @@ function function_a6d4d86b(params) {
 function function_cecf7c3d() {
     /#
         if (isdefined(self.bot)) {
-            level.rat.var_cd4fd549 = level.rat.var_cd4fd549 + 1;
+            level.rat.var_cd4fd549 += 1;
             return;
         }
-        level.rat.playerskilled = level.rat.playerskilled + 1;
+        level.rat.playerskilled += 1;
     #/
 }
 

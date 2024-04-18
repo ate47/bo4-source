@@ -331,7 +331,7 @@ function function_175e4696(var_1e30344b) {
     self.n_rotation = 0;
     while (true) {
         self waittill(#"rotate_lock");
-        self.n_rotation = self.n_rotation + 1;
+        self.n_rotation += 1;
         if (self.n_rotation == 4) {
             self.n_rotation = 0;
         }

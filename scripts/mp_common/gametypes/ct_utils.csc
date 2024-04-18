@@ -146,7 +146,7 @@ function area_arrows(localclientnum, oldval, newval, bnewent, binitialsnap, fiel
     if (newval) {
         var_b29c151c = level.var_84c5e66d;
         if (!(isdefined(level.var_8c3d6a40) && level.var_8c3d6a40)) {
-            var_b29c151c = var_b29c151c + newval;
+            var_b29c151c += newval;
         } else if (newval == 4) {
             level.var_57b466e9 = level._effect[#"zoneedgemarker"][3];
         } else if (newval == 3) {
@@ -192,9 +192,9 @@ function function_3827fca4(localclientnum) {
     var_8813211c = getlocalplayers()[0];
     time = 0;
     while (true) {
-        time = time + 0.0166667;
+        time += 0.0166667;
         val = distance(var_8813211c.origin, self.origin);
-        val = val / 500;
+        val /= 500;
         if (val > 1) {
             val = 1;
         }

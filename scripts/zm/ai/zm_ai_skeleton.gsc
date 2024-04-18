@@ -119,7 +119,7 @@ function private function_902ba58c() {
 // Size: 0x124
 function private function_e75e796() {
     var_cbba4cd0 = zm_ai_utility::function_8d44707e(0, self.var_5da51be0);
-    var_cbba4cd0 = var_cbba4cd0 * (isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1);
+    var_cbba4cd0 *= isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1;
     self.maxhealth = int(var_cbba4cd0);
     self.health = self.maxhealth;
     self.var_490042cd = gettime();

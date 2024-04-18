@@ -964,7 +964,7 @@ function function_6fd396() {
             level.phwhistletimer.alpha = 0;
         }
         timepassed = int(hostmigration::waittillhostmigrationdone() / 1000);
-        totaltimepassed = totaltimepassed + timepassed;
+        totaltimepassed += timepassed;
         timepassed = totaltimepassed;
         var_af091f9e = var_fb3f700 + timepassed - int(gettime() / 1000);
         level.phcountdowntimer settimer(var_af091f9e);
@@ -1088,9 +1088,9 @@ function applyxyzoffset() {
     forward = anglestoforward(self.prop.angles) * self.prop.xyzoffset[0];
     right = anglestoright(self.prop.angles) * self.prop.xyzoffset[1];
     up = anglestoup(self.prop.angles) * self.prop.xyzoffset[2];
-    self.prop.origin = self.prop.origin + forward;
-    self.prop.origin = self.prop.origin + right;
-    self.prop.origin = self.prop.origin + up;
+    self.prop.origin += forward;
+    self.prop.origin += right;
+    self.prop.origin += up;
 }
 
 // Namespace prop/prop
@@ -1102,7 +1102,7 @@ function applyanglesoffset() {
         return;
     }
     self.prop.angles = self.angles;
-    self.prop.angles = self.prop.angles + self.prop.anglesoffset;
+    self.prop.angles += self.prop.anglesoffset;
     self.isangleoffset = 1;
 }
 
@@ -1159,7 +1159,7 @@ function propwhistle() {
                     if (useprophudserver()) {
                         level.phwhistletimer.label = #"mp_ph_final_whistle";
                     }
-                    var_2baed43 = var_2baed43 + getteamplayersalive(game.defenders) * 2500;
+                    var_2baed43 += getteamplayersalive(game.defenders) * 2500;
                 }
                 if (useprophudserver()) {
                     level.phwhistletimer settimer(int(whistletime / 1000));
@@ -1397,19 +1397,19 @@ function randgetpropsizetoallocate() {
     if (randomval < var_7e9c5521) {
         return 50;
     }
-    randomval = randomval - var_7e9c5521;
+    randomval -= var_7e9c5521;
     if (randomval < var_640cfc88) {
         return 75;
     }
-    randomval = randomval - var_640cfc88;
+    randomval -= var_640cfc88;
     if (randomval < var_dade57fb) {
         return 150;
     }
-    randomval = randomval - var_dade57fb;
+    randomval -= var_dade57fb;
     if (randomval < var_bc337198) {
         return 250;
     }
-    randomval = randomval - var_bc337198;
+    randomval -= var_bc337198;
     return 350;
 }
 
@@ -1886,7 +1886,7 @@ function waittillrecoveredhealth(time, interval) {
         if (self.health != self.maxhealth) {
             fullhealthtime = 0;
         } else {
-            fullhealthtime = fullhealthtime + interval;
+            fullhealthtime += interval;
         }
         wait(interval);
         if (self.health == self.maxhealth && fullhealthtime >= time) {
@@ -2339,7 +2339,7 @@ function function_70d75619() {
         starttime = gettime();
         level waittill(#"host_migration_end");
         passedtime = gettime() - starttime;
-        level.var_ac79a938 = level.var_ac79a938 + passedtime;
+        level.var_ac79a938 += passedtime;
     }
 }
 
@@ -2438,7 +2438,7 @@ function attackerinitammo() {
         }
         weapon = level.phsettings.var_86fda1fd;
         var_11858e48 = self getweaponammostock(weapon);
-        var_11858e48 = var_11858e48 - self.thrownspecialcount;
+        var_11858e48 -= self.thrownspecialcount;
         var_11858e48 = int(max(var_11858e48, 0));
         self setweaponammostock(weapon, var_11858e48);
         roundbased = !util::isoneround();
@@ -2912,7 +2912,7 @@ function function_cd48b338(eattacker, einflictor, weapon, meansofdeath, damage, 
         }
         radius = weapon.explosionradius;
         if (self == eattacker) {
-            radius = radius * 0.5;
+            radius *= 0.5;
         }
         damageorigin = einflictor.origin;
         if (isdefined(point)) {
@@ -2929,7 +2929,7 @@ function function_cd48b338(eattacker, einflictor, weapon, meansofdeath, damage, 
         waitframe(1);
         if (meansofdeath != "MOD_IMPACT") {
             if (self hasperk("specialty_stunprotection")) {
-                time = time * 0.1;
+                time *= 0.1;
             } else if (self util::mayapplyscreeneffect()) {
                 self shellshock("concussion_grenade_mp", time, 0);
             }
@@ -3324,13 +3324,13 @@ function function_c3c0cc83(damage, attacker, direction_vec, point, meansofdeath,
         }
         attacker thread damagefeedback::update();
         self.lastattacker = attacker;
-        self.fakehealth = self.fakehealth - damage;
+        self.fakehealth -= damage;
         if (self.fakehealth <= 0) {
             function_45080877(attacker);
             self thread movetarget();
         }
     }
-    self.health = self.health + damage;
+    self.health += damage;
 }
 
 // Namespace prop/prop
@@ -3393,7 +3393,7 @@ function function_e63a6b8b() {
             if (!function_fbe5e14d(newlocation)) {
                 break;
             }
-            rand = rand - 0.1;
+            rand -= 0.1;
             if (rand < 0) {
                 newlocation = location.origin;
                 break;
@@ -3448,9 +3448,9 @@ function function_f6f7aa90(titlelabel) {
     x = 5;
     y = var_ed243a5d;
     level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_first", (1, 0.843, 0));
-    y = y + var_15c99f84;
+    y += var_15c99f84;
     level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_second", (0.3, 0.3, 0.3));
-    y = y + var_15c99f84;
+    y += var_15c99f84;
     level.var_1103f74e.var_e72e24b4[level.var_1103f74e.var_e72e24b4.size] = function_f4a88299(x, y, #"mp_ph_minigame_third", (0.804, 0.498, 0.196));
     level.var_1103f74e.var_b746be43 = spawnstruct();
     level.var_1103f74e.var_b746be43.label = titlelabel;
@@ -3480,7 +3480,7 @@ function function_58fbc880() {
 function function_45080877(player) {
     var_1cb9af94 = gettime() - level.starttime - level.var_ac79a938;
     player.var_5f355eed++;
-    player.var_5e8990b6 = player.var_5e8990b6 + var_1cb9af94;
+    player.var_5e8990b6 += var_1cb9af94;
     player thread function_49a6ce84();
     function_2e77fae3();
 }
@@ -3765,7 +3765,7 @@ function function_80334286(damage, attacker, direction_vec, point, meansofdeath,
         self.lastattacker = attacker;
         function_45080877(attacker);
     }
-    self.health = self.health + damage;
+    self.health += damage;
 }
 
 // Namespace prop/prop

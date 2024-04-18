@@ -94,7 +94,7 @@ function function_9d347621(w_check) {
     n_ammo_total = 0;
     n_ammo_stock = self getweaponammostock(w_check);
     n_ammo_clip = self getweaponammoclip(w_check);
-    n_ammo_total = n_ammo_total + n_ammo_stock + n_ammo_clip;
+    n_ammo_total += n_ammo_stock + n_ammo_clip;
     if (n_ammo_total == 0) {
         self setweaponammoclip(w_check, 1);
     }

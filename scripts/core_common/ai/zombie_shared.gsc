@@ -481,7 +481,7 @@ function movetooriginovertime(origin, time) {
     frames = int(time * 20);
     offsetreduction = vectorscale(offset, 1 / frames);
     for (i = 0; i < frames; i++) {
-        offset = offset - offsetreduction;
+        offset -= offsetreduction;
         self teleport(origin + offset);
         waitframe(1);
     }

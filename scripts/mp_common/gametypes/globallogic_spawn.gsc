@@ -427,16 +427,16 @@ function timeuntilspawn(includeteamkilldelay) {
             respawndelay = level.playerrespawndelay;
         }
         if (isdefined(level.playerincrementalrespawndelay) && isdefined(self.pers[#"spawns"])) {
-            respawndelay = respawndelay + level.playerincrementalrespawndelay * self.pers[#"spawns"];
+            respawndelay += level.playerincrementalrespawndelay * self.pers[#"spawns"];
         }
         if (isdefined(self.suicide) && self.suicide && level.suicidespawndelay > 0) {
-            respawndelay = respawndelay + level.suicidespawndelay;
+            respawndelay += level.suicidespawndelay;
         }
         if (isdefined(self.teamkilled) && self.teamkilled && level.teamkilledspawndelay > 0) {
-            respawndelay = respawndelay + level.teamkilledspawndelay;
+            respawndelay += level.teamkilledspawndelay;
         }
         if (includeteamkilldelay && isdefined(self.teamkillpunish) && self.teamkillpunish) {
-            respawndelay = respawndelay + player::function_821200bb();
+            respawndelay += player::function_821200bb();
         }
     }
     if (isdefined(level.deathcirclerespawn) && level.deathcirclerespawn) {
@@ -544,7 +544,7 @@ function timeuntilwavespawn(minimumwait) {
     numwaves = ceil(numwavespassedearliestspawntime);
     timeofspawn = lastwavetime + numwaves * wavedelay;
     if (isdefined(self.wavespawnindex)) {
-        timeofspawn = timeofspawn + 50 * self.wavespawnindex;
+        timeofspawn += 50 * self.wavespawnindex;
     }
     return float(timeofspawn - gettime()) / 1000;
 }
@@ -1179,10 +1179,10 @@ function waitandspawnclient(timealreadypassed) {
     if (isdefined(self.teamkillpunish) && self.teamkillpunish) {
         var_821200bb = player::function_821200bb();
         if (var_821200bb > timealreadypassed) {
-            var_821200bb = var_821200bb - timealreadypassed;
+            var_821200bb -= timealreadypassed;
             timealreadypassed = 0;
         } else {
-            timealreadypassed = timealreadypassed - var_821200bb;
+            timealreadypassed -= var_821200bb;
             var_821200bb = 0;
         }
         if (var_821200bb > 0) {
@@ -1199,10 +1199,10 @@ function waitandspawnclient(timealreadypassed) {
     }
     timeuntilspawn = timeuntilspawn(0);
     if (timeuntilspawn > timealreadypassed) {
-        timeuntilspawn = timeuntilspawn - timealreadypassed;
+        timeuntilspawn -= timealreadypassed;
         timealreadypassed = 0;
     } else {
-        timealreadypassed = timealreadypassed - timeuntilspawn;
+        timealreadypassed -= timeuntilspawn;
         timeuntilspawn = 0;
     }
     if (timeuntilspawn > 0) {
@@ -1268,7 +1268,7 @@ function function_6c23d45b(time, notifyname) {
         } else {
             wait(1);
         }
-        timeleft = timeleft - 1;
+        timeleft -= 1;
     }
 }
 

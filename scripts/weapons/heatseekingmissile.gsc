@@ -529,7 +529,7 @@ function calclockonradius(target, subtarget, weapon) {
     if (isdefined(level.lockoncloserange) && isdefined(level.lockoncloseradiusscaler)) {
         dist2 = distancesquared(target.origin, self.origin);
         if (dist2 < level.lockoncloserange * level.lockoncloserange) {
-            radius = radius * level.lockoncloseradiusscaler;
+            radius *= level.lockoncloseradiusscaler;
         }
     }
     return radius;
@@ -547,7 +547,7 @@ function calclockonlossradius(target, subtarget, weapon) {
     if (isdefined(level.lockoncloserange) && isdefined(level.lockoncloseradiusscaler)) {
         dist2 = distancesquared(target.origin, self.origin);
         if (dist2 < level.lockoncloserange * level.lockoncloserange) {
-            radius = radius * level.lockoncloseradiusscaler;
+            radius *= level.lockoncloseradiusscaler;
         }
     }
     return radius;
@@ -781,7 +781,7 @@ function lockingon(target, lock) {
     if (lock) {
         if ((target.locking_on & 1 << clientnum) == 0) {
             target notify(#"locking on");
-            target.locking_on = target.locking_on | 1 << clientnum;
+            target.locking_on |= 1 << clientnum;
             self thread watchclearlockingon(target, clientnum);
             if (isdefined(level.playkillstreakthreat)) {
                 self thread [[ level.playkillstreakthreat ]](target);
@@ -790,7 +790,7 @@ function lockingon(target, lock) {
         return;
     }
     self notify(#"locking_on_cleared");
-    target.locking_on = target.locking_on & ~(1 << clientnum);
+    target.locking_on &= ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -801,7 +801,7 @@ function watchclearlockingon(target, clientnum) {
     target endon(#"death");
     self endon(#"locking_on_cleared");
     self waittill(#"death", #"disconnect");
-    target.locking_on = target.locking_on & ~(1 << clientnum);
+    target.locking_on &= ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -813,14 +813,14 @@ function lockedon(target, lock) {
     clientnum = self getentitynumber();
     if (lock) {
         if ((target.locked_on & 1 << clientnum) == 0) {
-            target.locked_on = target.locked_on | 1 << clientnum;
+            target.locked_on |= 1 << clientnum;
             self notify(#"lock_on_acquired");
             self thread watchclearlockedon(target, clientnum);
         }
         return;
     }
     self notify(#"locked_on_cleared");
-    target.locked_on = target.locked_on & ~(1 << clientnum);
+    target.locked_on &= ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -832,12 +832,12 @@ function targetinghacking(target, lock) {
     clientnum = self getentitynumber();
     if (lock) {
         target notify(#"locking on hacking");
-        target.locking_on_hacking = target.locking_on_hacking | 1 << clientnum;
+        target.locking_on_hacking |= 1 << clientnum;
         self thread watchclearhacking(target, clientnum);
         return;
     }
     self notify(#"locking_on_hacking_cleared");
-    target.locking_on_hacking = target.locking_on_hacking & ~(1 << clientnum);
+    target.locking_on_hacking &= ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -848,7 +848,7 @@ function watchclearhacking(target, clientnum) {
     target endon(#"death");
     self endon(#"locking_on_hacking_cleared");
     self waittill(#"death", #"disconnect");
-    target.locking_on_hacking = target.locking_on_hacking & ~(1 << clientnum);
+    target.locking_on_hacking &= ~(1 << clientnum);
 }
 
 // Namespace heatseekingmissile/heatseekingmissile
@@ -904,10 +904,10 @@ function setfriendlyflags(weapon, target) {
                         if (remaininghealth > 0) {
                             missilesremaining = int(ceil(remaininghealth / damageperrocket));
                             if (isdefined(target.numflares) && target.numflares > 0) {
-                                missilesremaining = missilesremaining + target.numflares;
+                                missilesremaining += target.numflares;
                             }
                             if (isdefined(target.flak_drone)) {
-                                missilesremaining = missilesremaining + 1;
+                                missilesremaining += 1;
                             }
                             self settargetedmissilesremaining(weapon, missilesremaining);
                         }
@@ -932,7 +932,7 @@ function setfriendlyhacking(weapon, target) {
         if (isdefined(friendlyhackingmask) && self hasweapon(weapon)) {
             friendlyhacking = 0;
             clientnum = self getentitynumber();
-            friendlyhackingmask = friendlyhackingmask & ~(1 << clientnum);
+            friendlyhackingmask &= ~(1 << clientnum);
             if (friendlyhackingmask != 0) {
                 friendlyhacking = 1;
             }
@@ -951,7 +951,7 @@ function setfriendlytargetting(weapon, target) {
         if (isdefined(friendlytargetingmask) && self hasweapon(weapon)) {
             friendlytargeting = 0;
             clientnum = self getentitynumber();
-            friendlytargetingmask = friendlytargetingmask & ~(1 << clientnum);
+            friendlytargetingmask &= ~(1 << clientnum);
             if (friendlytargetingmask != 0) {
                 friendlytargeting = 1;
             }
@@ -971,7 +971,7 @@ function setfriendlytargetlocked(weapon, target) {
         if (isdefined(friendlylockingonmask)) {
             friendlytargetlocked = 0;
             clientnum = self getentitynumber();
-            friendlylockingonmask = friendlylockingonmask & ~(1 << clientnum);
+            friendlylockingonmask &= ~(1 << clientnum);
             if (friendlylockingonmask != 0) {
                 friendlytargetlocked = 1;
             }
@@ -991,7 +991,7 @@ function watchclearlockedon(target, clientnum) {
     self endon(#"locked_on_cleared");
     self waittill(#"death", #"disconnect");
     if (isdefined(target)) {
-        target.locked_on = target.locked_on & ~(1 << clientnum);
+        target.locked_on &= ~(1 << clientnum);
     }
 }
 
@@ -1272,10 +1272,10 @@ function missiletarget_deployflares(origin, angles) {
     velocity = vectorscale(flare_dir, randomintrange(200, 400));
     velocity = (velocity[0], velocity[1], velocity[2] - randomintrange(10, 100));
     flareorigin = self.origin;
-    flareorigin = flareorigin + vectorscale(flare_dir, randomintrange(600, 800));
-    flareorigin = flareorigin + (0, 0, 500);
+    flareorigin += vectorscale(flare_dir, randomintrange(600, 800));
+    flareorigin += (0, 0, 500);
     if (isdefined(self.flareoffset)) {
-        flareorigin = flareorigin + self.flareoffset;
+        flareorigin += self.flareoffset;
     }
     flareobject = spawn("script_origin", flareorigin);
     flareobject.angles = self.angles;

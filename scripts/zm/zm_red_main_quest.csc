@@ -1613,7 +1613,7 @@ function function_83a7c416(localclientnum) {
     level endon(#"end_game");
     s_fx = struct::get(#"hash_3ad02ac72362ec5c");
     b_swap = 0;
-    for (var_43997e53 = 2; !(isdefined(level.var_656b74db) && level.var_656b74db); var_43997e53 = var_43997e53 + n_random_wait) {
+    for (var_43997e53 = 2; !(isdefined(level.var_656b74db) && level.var_656b74db); var_43997e53 += n_random_wait) {
         n_offset = randomfloatrange(128 * -1, 128);
         v_fx = s_fx.origin + (n_offset, n_offset, 0);
         mdl_fx = util::spawn_model(localclientnum, #"tag_origin", v_fx);

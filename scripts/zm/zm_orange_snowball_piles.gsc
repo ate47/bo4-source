@@ -23,7 +23,7 @@ function init() {
             s_snowball_pile.e_model = util::spawn_model(s_snowball_pile.model, s_snowball_pile.origin, s_snowball_pile.angles);
         }
         s_snowball_pile zm_unitrigger::create(&function_dd028fcb, 64);
-        s_snowball_pile.s_unitrigger.origin = s_snowball_pile.s_unitrigger.origin + (0, 0, 32);
+        s_snowball_pile.s_unitrigger.origin += (0, 0, 32);
         s_snowball_pile thread function_608b90b4();
         s_snowball_pile.var_1c1b4398 = 0;
     }

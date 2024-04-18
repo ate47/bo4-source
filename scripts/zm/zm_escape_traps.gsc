@@ -284,7 +284,7 @@ function private function_1395e596() {
 // Size: 0x66
 function fan_trap_timeout() {
     self endon(#"trap_finished");
-    for (n_duration = 0; n_duration < 25; n_duration = n_duration + 0.05) {
+    for (n_duration = 0; n_duration < 25; n_duration += 0.05) {
         wait(0.05);
     }
     self notify(#"trap_finished");
@@ -815,7 +815,7 @@ function function_1f7e661f(t_damage) {
         } else {
             n_lift_height = randomintrange(8, 64);
             v_away_from_source = vectornormalize(self.origin - t_damage.origin);
-            v_away_from_source = v_away_from_source * 128;
+            v_away_from_source *= 128;
             v_away_from_source = (v_away_from_source[0], v_away_from_source[1], n_lift_height);
             a_trace = physicstraceex(self.origin + (0, 0, 32), self.origin + v_away_from_source, (-16, -16, -16), (16, 16, 16), self);
             self setplayercollision(0);
@@ -886,7 +886,7 @@ function private function_c846fd12() {
 // Size: 0x66
 function function_4a15e725() {
     self endon(#"trap_finished");
-    for (n_duration = 0; n_duration < 25; n_duration = n_duration + 0.05) {
+    for (n_duration = 0; n_duration < 25; n_duration += 0.05) {
         wait(0.05);
     }
     self notify(#"trap_finished");

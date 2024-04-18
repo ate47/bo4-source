@@ -626,9 +626,9 @@ function function_9774bbc6() {
                 mdl_grinder zm_weap_crossbow::function_6d8527c2(s_waitresult, #"p8_fxanim_zm_towers_grinder_bundle", "completed");
             }
             if (zm_weap_crossbow::is_crossbow_upgraded(s_waitresult.weapon)) {
-                level.var_5cb7d214.var_cdbfd18f = level.var_5cb7d214.var_cdbfd18f + 1.5;
+                level.var_5cb7d214.var_cdbfd18f += 1.5;
             } else {
-                level.var_5cb7d214.var_cdbfd18f = level.var_5cb7d214.var_cdbfd18f + 1;
+                level.var_5cb7d214.var_cdbfd18f += 1;
             }
             if (level.var_5cb7d214.var_cdbfd18f >= 3) {
                 mdl_grinder hidepart("skull_jnt");
@@ -2227,7 +2227,7 @@ function function_10cf7d43(b_skipped, var_19e802fa) {
 // Size: 0x6c
 function function_c2185b42() {
     var_af417f12 = getent("mdl_maelstrom_initiate_on", "targetname");
-    var_af417f12.origin = var_af417f12.origin - (0, 0, 2048);
+    var_af417f12.origin -= (0, 0, 2048);
     var_af417f12 stoploopsound();
 }
 
@@ -2243,7 +2243,7 @@ function function_315666fb() {
     level flag::set(#"hash_1d004da0a75202bc");
     var_1a698d0f = getent("mdl_maelstrom_initiate", "targetname");
     var_af417f12 = getent("mdl_maelstrom_initiate_on", "targetname");
-    var_af417f12.origin = var_af417f12.origin + (0, 0, 2048);
+    var_af417f12.origin += (0, 0, 2048);
     waitframe(1);
     var_af417f12 playloopsound(#"hash_62bd783a0737ec6a");
     var_1a698d0f delete();
@@ -2297,7 +2297,7 @@ function function_d6a5d146() {
             n_damage = n_health;
             n_health = 0;
         } else {
-            n_health = n_health - n_damage;
+            n_health -= n_damage;
         }
         self thread function_99da1b77(n_damage);
         var_49c750a8 flag::set(#"hash_66eb0aa5f179e140");
@@ -2347,8 +2347,8 @@ function function_99da1b77(n_damage) {
     var_a9a7f568 = 32 * n_percent;
     var_49c750a8 = getent(self.target, "targetname");
     var_49c750a8 playsound(#"hash_6f34e8badf2c9a9");
-    self.origin = self.origin + (0, 0, var_a9a7f568);
-    var_49c750a8.origin = var_49c750a8.origin + (0, 0, var_a9a7f568);
+    self.origin += (0, 0, var_a9a7f568);
+    var_49c750a8.origin += (0, 0, var_a9a7f568);
 }
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
@@ -2552,7 +2552,7 @@ function function_af7564d9(s_params) {
             n_charges = 9 - mdl_spike.var_57f2374d;
         }
     }
-    mdl_spike.var_57f2374d = mdl_spike.var_57f2374d + n_charges;
+    mdl_spike.var_57f2374d += n_charges;
     for (i = 0; i < n_charges; i++) {
         level thread function_29a062fa(v_fx_origin, mdl_spike);
         if (i + 1 < n_charges) {
@@ -2656,15 +2656,15 @@ function function_fd901116(b_skipped, var_19e802fa) {
 function disable_challenges() {
     level flag::set(#"hash_4f26632e308bd2e6");
     foreach (t_trigger in level.var_38935e23) {
-        t_trigger.origin = t_trigger.origin - (0, 0, 2048);
+        t_trigger.origin -= (0, 0, 2048);
     }
     a_str_structs = array("danu_brazier", "ra_brazier", "odin_brazier", "zeus_brazier");
     foreach (str_struct in a_str_structs) {
         s_struct = struct::get(str_struct);
-        s_struct.origin = s_struct.origin - (0, 0, 2048);
+        s_struct.origin -= (0, 0, 2048);
         mdl_reward = s_struct.mdl_reward;
         if (isdefined(mdl_reward)) {
-            mdl_reward.origin = mdl_reward.origin - (0, 0, 2048);
+            mdl_reward.origin -= (0, 0, 2048);
         }
     }
 }
@@ -2679,15 +2679,15 @@ function enable_challenges() {
     }
     level flag::clear(#"hash_4f26632e308bd2e6");
     foreach (t_trigger in level.var_38935e23) {
-        t_trigger.origin = t_trigger.origin + (0, 0, 2048);
+        t_trigger.origin += (0, 0, 2048);
     }
     a_str_structs = array("danu_brazier", "ra_brazier", "odin_brazier", "zeus_brazier");
     foreach (str_struct in a_str_structs) {
         s_struct = struct::get(str_struct);
-        s_struct.origin = s_struct.origin + (0, 0, 2048);
+        s_struct.origin += (0, 0, 2048);
         mdl_reward = s_struct.mdl_reward;
         if (isdefined(mdl_reward)) {
-            mdl_reward.origin = mdl_reward.origin + (0, 0, 2048);
+            mdl_reward.origin += (0, 0, 2048);
         }
     }
 }
@@ -3319,11 +3319,11 @@ function function_2bcefa9c() {
         n_y = 1024;
         switch (i) {
         case 1:
-            n_x = n_x * -1;
+            n_x *= -1;
             break;
         case 2:
             n_x = 0;
-            n_y = n_y * -1;
+            n_y *= -1;
             break;
         }
         v_end = (n_x, n_y, -256);
@@ -3883,7 +3883,7 @@ function private defend_timer() {
     var_fc655932 = 0;
     while (level.var_ec9554ad <= n_total_time) {
         wait(0.1);
-        level.var_ec9554ad = level.var_ec9554ad + 0.1;
+        level.var_ec9554ad += 0.1;
         if (isdefined(level.var_34a4aede[0]) && level.var_ec9554ad >= level.var_34a4aede[0].time) {
             level notify(#"hash_54e0394dae6dd7");
         }
@@ -4029,7 +4029,7 @@ function private defend_spawn(var_4bf95f4c) {
         }
         for (i = 0; i < var_4bf95f4c.quantity; i++) {
             while (level.ai[#"axis"].size >= 24) {
-                level.var_ec9554ad = level.var_ec9554ad - 0.1;
+                level.var_ec9554ad -= 0.1;
                 waitframe(1);
             }
             var_6454115e = array::random(var_97f729b);
@@ -4145,7 +4145,7 @@ function private function_c12ff921() {
                 if (!isdefined(ai_enemy.var_77e280cb)) {
                     ai_enemy.var_77e280cb = 0;
                 }
-                ai_enemy.var_77e280cb = ai_enemy.var_77e280cb + 0.01;
+                ai_enemy.var_77e280cb += 0.01;
                 if (ai_enemy.var_77e280cb > 12 && isdefined(ai_enemy.allowdeath) && ai_enemy.allowdeath) {
                     ai_enemy kill();
                 }
@@ -5137,12 +5137,12 @@ function function_a2e1777c() {
         var_db8426a8 = e_door.var_b1fb019a;
         if (isdefined(var_db8426a8)) {
             var_91380a90 = getent(var_db8426a8, "targetname");
-            var_91380a90.origin = var_91380a90.origin - (0, 0, 2048);
+            var_91380a90.origin -= (0, 0, 2048);
             e_door.var_f81e73f7 = var_91380a90;
             continue;
         }
         e_door.var_a7e81bb1 = 1;
-        e_door.origin = e_door.origin - (0, 0, 2048);
+        e_door.origin -= (0, 0, 2048);
         foreach (s_symbol in a_s_symbols) {
             s_symbol struct::delete();
         }
@@ -5168,7 +5168,7 @@ function function_41c15ae9(a_str_script_flags) {
             t_door.var_58586c26 = 1;
             if (isdefined(t_door.var_a7e81bb1) && t_door.var_a7e81bb1) {
                 mdl_clip = t_door;
-                mdl_clip.origin = mdl_clip.origin + (0, 0, 2048);
+                mdl_clip.origin += (0, 0, 2048);
                 mdl_clip.var_521a200d = [];
                 var_f2d40d83 = mdl_clip.var_bdb8b028;
                 var_5a4087b = mdl_clip.var_d7553777;
@@ -5199,7 +5199,7 @@ function function_41c15ae9(a_str_script_flags) {
                 continue;
             }
             if (!(isdefined(t_door.has_been_opened) && t_door.has_been_opened)) {
-                t_door.origin = t_door.origin - (0, 0, 2048);
+                t_door.origin -= (0, 0, 2048);
                 a_mdl_parts = getentarray(t_door.target, "targetname");
                 var_d7c93da1 = [];
                 foreach (mdl_part in a_mdl_parts) {
@@ -5210,7 +5210,7 @@ function function_41c15ae9(a_str_script_flags) {
                             var_d12e791f = util::spawn_model("p8_zm_power_door_symbol_01", mdl_part.origin, mdl_part.angles);
                             var_d12e791f clientfield::set("power_door_ambient_fx", 1);
                             mdl_part clientfield::set("doorbuy_ambient_fx", 0);
-                            mdl_part.origin = mdl_part.origin - (0, 0, 2048);
+                            mdl_part.origin -= (0, 0, 2048);
                             if (!isdefined(var_d7c93da1)) {
                                 var_d7c93da1 = [];
                             } else if (!isarray(var_d7c93da1)) {
@@ -5225,7 +5225,7 @@ function function_41c15ae9(a_str_script_flags) {
                 t_door.var_521a200d = var_d7c93da1;
                 continue;
             }
-            t_door.var_f81e73f7.origin = t_door.var_f81e73f7.origin + (0, 0, 2048);
+            t_door.var_f81e73f7.origin += (0, 0, 2048);
             t_door.var_521a200d = [];
             var_f2d40d83 = t_door.var_bdb8b028;
             var_5a4087b = t_door.var_d7553777;
@@ -5276,7 +5276,7 @@ function function_1efe04ba(a_str_script_flags) {
             t_door.var_58586c26 = 0;
             if (isdefined(t_door.var_a7e81bb1) && t_door.var_a7e81bb1) {
                 mdl_clip = t_door;
-                mdl_clip.origin = mdl_clip.origin - (0, 0, 2048);
+                mdl_clip.origin -= (0, 0, 2048);
                 var_d7c93da1 = mdl_clip.var_521a200d;
                 foreach (var_595eaa96 in var_d7c93da1) {
                     var_595eaa96 clientfield::set("power_door_ambient_fx", 0);
@@ -5285,7 +5285,7 @@ function function_1efe04ba(a_str_script_flags) {
                 continue;
             }
             if (!(isdefined(t_door.has_been_opened) && t_door.has_been_opened)) {
-                t_door.origin = t_door.origin + (0, 0, 2048);
+                t_door.origin += (0, 0, 2048);
                 var_d7c93da1 = t_door.var_521a200d;
                 foreach (var_595eaa96 in var_d7c93da1) {
                     var_595eaa96 clientfield::set("power_door_ambient_fx", 0);
@@ -5297,7 +5297,7 @@ function function_1efe04ba(a_str_script_flags) {
                     case #"symbol_back":
                     case #"symbol_front":
                         if (isdefined(mdl_part.var_381e124d) && mdl_part.var_381e124d) {
-                            mdl_part.origin = mdl_part.origin + (0, 0, 2048);
+                            mdl_part.origin += (0, 0, 2048);
                             waitframe(1);
                             mdl_part clientfield::set("doorbuy_ambient_fx", 1);
                             mdl_part.var_381e124d = 0;
@@ -5307,7 +5307,7 @@ function function_1efe04ba(a_str_script_flags) {
                 }
                 continue;
             }
-            t_door.var_f81e73f7.origin = t_door.var_f81e73f7.origin - (0, 0, 2048);
+            t_door.var_f81e73f7.origin -= (0, 0, 2048);
             foreach (mdl_symbol in t_door.var_521a200d) {
                 mdl_symbol clientfield::set("power_door_ambient_fx", 0);
                 mdl_symbol delete();

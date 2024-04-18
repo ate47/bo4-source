@@ -525,8 +525,8 @@ function function_78083139() {
         if (isdefined(var_5ceb23d0.current_value)) {
             var_5ceb23d0.var_59cb904f = var_5ceb23d0.current_value;
         }
-        var_5ceb23d0.var_1bd1ecbb = var_5ceb23d0.var_1bd1ecbb + var_4b67585c;
-        var_5ceb23d0.var_c7d05ecd = var_5ceb23d0.var_c7d05ecd + var_2de8a050;
+        var_5ceb23d0.var_1bd1ecbb += var_4b67585c;
+        var_5ceb23d0.var_c7d05ecd += var_2de8a050;
     }
 }
 
@@ -551,21 +551,21 @@ function function_507247e8(var_9224acc) {
     flags = 0;
     xpscale = player getxpscale();
     if (xpscale > 1) {
-        flags = flags | 1;
+        flags |= 1;
     }
     lootxpscale = player function_c52bcf79();
     if (sessionmodeiszombiesgame()) {
         if (max(lootxpscale, float(getdvarint(#"hash_1624faaee3c04f09", 1))) > 1) {
-            flags = flags | 2;
+            flags |= 2;
         }
     } else if (lootxpscale > 1) {
-        flags = flags | 2;
+        flags |= 2;
     }
     if (var_9224acc) {
-        flags = flags | 8;
+        flags |= 8;
     }
     if (getdvarint(#"lootcontracts_daily_tier_skip", 0) != 0) {
-        flags = flags | 16;
+        flags |= 16;
     }
     return flags;
 }

@@ -74,7 +74,7 @@ function is_encounter() {
 function round_up_to_ten(score) {
     new_score = score - score % 10;
     if (new_score < score) {
-        new_score = new_score + 10;
+        new_score += 10;
     }
     return new_score;
 }
@@ -87,7 +87,7 @@ function round_up_score(score, value) {
     score = int(score);
     new_score = score - score % value;
     if (new_score < score) {
-        new_score = new_score + value;
+        new_score += value;
     }
     return new_score;
 }
@@ -97,7 +97,7 @@ function round_up_score(score, value) {
 // Checksum 0x6868c432, Offset: 0x4e8
 // Size: 0x3a
 function halve_score(n_score) {
-    n_score = n_score / 2;
+    n_score /= 2;
     n_score = round_up_score(n_score, 10);
     return n_score;
 }
@@ -436,7 +436,7 @@ function zm_zone_edge_marker_count(localclientnum, oldval, newval, bnewent, bini
         v_forward = anglestoforward(self.angles);
         v_right = anglestoright(self.angles);
         v_spacing = (0, 0, 0);
-        self.origin = self.origin + v_right * 6;
+        self.origin += v_right * 6;
         for (i = 1; i <= newval; i++) {
             var_a05a609b = playfx(localclientnum, level._effect[#"zm_zone_edge_marker"], self.origin + v_spacing, v_forward);
             if (!isdefined(self.var_dd1709dd)) {

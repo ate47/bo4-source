@@ -79,7 +79,7 @@ function function_ed4d5d4(var_38282db8) {
                     waitframe(1);
                 }
             } else {
-                n_distance_traveled = n_distance_traveled + var_abf38d09;
+                n_distance_traveled += var_abf38d09;
             }
         }
         if (n_distance_traveled < var_38282db8) {

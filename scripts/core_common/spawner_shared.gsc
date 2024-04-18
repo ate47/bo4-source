@@ -732,18 +732,18 @@ function aigroup_debug() {
             var_c708e6e1 = 120;
             if (var_d4f26db9 != "<unknown string>") {
                 debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
-                var_c708e6e1 = var_c708e6e1 + 22;
+                var_c708e6e1 += 22;
                 if (isdefined(level._ai_group) && isdefined(level._ai_group[var_d4f26db9]) && isdefined(level._ai_group[var_d4f26db9].ai)) {
                     ais = get_ai_group_ai(var_d4f26db9);
                     spawners = get_ai_group_spawner_count(var_d4f26db9);
                     debug2dtext((150, var_c708e6e1, 0), "<unknown string>" + var_d4f26db9, (1, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
-                    var_c708e6e1 = var_c708e6e1 + 22;
+                    var_c708e6e1 += 22;
                     debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
-                    var_c708e6e1 = var_c708e6e1 + 22;
+                    var_c708e6e1 += 22;
                     debug2dtext((150, var_c708e6e1, 0), "<unknown string>" + ais.size, (1, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
-                    var_c708e6e1 = var_c708e6e1 + 22;
+                    var_c708e6e1 += 22;
                     debug2dtext((150, var_c708e6e1, 0), "<unknown string>" + spawners, (1, 0, 0), 1, (0, 0, 0), 0.9, 1, 1);
-                    var_c708e6e1 = var_c708e6e1 + 22;
+                    var_c708e6e1 += 22;
                     if (isdefined(level.flag[var_d4f26db9 + "<unknown string>"])) {
                         flag = level flag::get(var_d4f26db9 + "<unknown string>");
                         if (flag) {
@@ -751,7 +751,7 @@ function aigroup_debug() {
                         } else {
                             debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         }
-                        var_c708e6e1 = var_c708e6e1 + 22;
+                        var_c708e6e1 += 22;
                     }
                     if (isdefined(level.flag[var_d4f26db9 + "<unknown string>"])) {
                         flag = level flag::get(var_d4f26db9 + "<unknown string>");
@@ -760,10 +760,10 @@ function aigroup_debug() {
                         } else {
                             debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 0), 1, (0, 0, 0), 0.9, 1, 1);
                         }
-                        var_c708e6e1 = var_c708e6e1 + 22;
+                        var_c708e6e1 += 22;
                     }
                     debug2dtext((150, var_c708e6e1, 0), "<unknown string>", (0, 1, 1), 1, (0, 0, 0), 0.9, 1, 1);
-                    var_c708e6e1 = var_c708e6e1 + 22;
+                    var_c708e6e1 += 22;
                     foreach (ai in ais) {
                         sphere(ai.origin + (0, 0, 72), 4, (1, 1, 0), 1, 0, 8, 1);
                         line(ai.origin + (0, 0, 72), ai.origin + (0, 0, 92), (1, 1, 0), 1, 1);
@@ -1200,7 +1200,7 @@ function get_ai_group_spawner_count(aigroup) {
     n_count = 0;
     foreach (sp in level._ai_group[aigroup].spawners) {
         if (isdefined(sp) && sp.count > 0) {
-            n_count = n_count + sp.count;
+            n_count += sp.count;
         }
     }
     return n_count;

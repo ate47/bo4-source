@@ -347,7 +347,7 @@ function watchremotecontroldeactivate() {
     while (true) {
         timeused = 0;
         while (weapon.remoteowner usebuttonpressed()) {
-            timeused = timeused + 0.05;
+            timeused += 0.05;
             if (timeused > 0.25) {
                 weapon thread endremotecontrolweaponuse(1);
                 weapon.lastusetime = gettime();
@@ -459,7 +459,7 @@ function fadetoblackandbackin() {
 function stunstaticfx(duration) {
     self endon(#"remove_remote_weapon");
     wait(duration - 0.5);
-    for (time = duration - 0.5; time < duration; time = time + 0.05) {
+    for (time = duration - 0.5; time < duration; time += 0.05) {
         waitframe(1);
     }
 }

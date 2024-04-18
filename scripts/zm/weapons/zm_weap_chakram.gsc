@@ -456,7 +456,7 @@ function private function_e3ad524a() {
                     level notify(#"hero_weapon_hit", {#player:self, #e_entity:a_trace[#"entity"], #var_80e17549:self.currentweapon, #v_position:a_trace[#"position"]});
                 }
                 v_start = v_end;
-                v_forward = v_forward - 2 * a_trace[#"normal"] * vectordot(v_forward, a_trace[#"normal"]);
+                v_forward -= 2 * a_trace[#"normal"] * vectordot(v_forward, a_trace[#"normal"]);
                 n_dist = var_e68de849 - n_dist;
                 v_end = v_start + v_forward * n_dist;
                 a_trace = bullettrace(v_start, v_end, 0, self);
@@ -554,7 +554,7 @@ function private function_3adb0798(e_target, n_kills) {
     if (!isdefined(e_target)) {
         e_target = self;
         var_fc51fa3d = level.hero_weapon_stats[#"chakram"][#"kill_limit"][self.var_72d6f15d];
-        var_ece935b3 = var_ece935b3 / 2;
+        var_ece935b3 /= 2;
     }
     while (true) {
         if (!isdefined(e_target)) {

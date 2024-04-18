@@ -648,7 +648,7 @@ function treasure_chest_think() {
         if (!isdefined(level.var_bcd3620a)) {
             level.var_bcd3620a = 0;
         }
-        level.var_bcd3620a = level.var_bcd3620a + 1;
+        level.var_bcd3620a += 1;
         if (level.var_bcd3620a >= zm_custom::function_901b751c(#"zmmysteryboxlimit")) {
             zm_powerups::powerup_remove_from_regular_drops("fire_sale");
             level thread function_7d384b90();
@@ -659,7 +659,7 @@ function treasure_chest_think() {
             level.var_40f4f72d = 1;
             level.var_fc02e2df = level.round_number;
         } else {
-            level.var_40f4f72d = level.var_40f4f72d + 1;
+            level.var_40f4f72d += 1;
         }
     }
     if (isdefined(self.chest_lid)) {
@@ -774,7 +774,7 @@ function treasure_chest_think() {
         self.grab_weapon_hint = 0;
         self.zbarrier notify(#"weapon_grabbed");
         if (!(isdefined(self._box_opened_by_fire_sale) && self._box_opened_by_fire_sale)) {
-            level.chest_accessed = level.chest_accessed + 1;
+            level.chest_accessed += 1;
         }
         thread zm_unitrigger::unregister_unitrigger(self.unitrigger_stub);
         if (isdefined(self.chest_lid)) {
@@ -979,7 +979,7 @@ function treasure_chest_move(player_vox) {
             wait(0.1);
         }
     } else {
-        post_selection_wait_duration = post_selection_wait_duration + 5;
+        post_selection_wait_duration += 5;
     }
     level.verify_chest = 0;
     if (isdefined(level.chests[level.chest_index].box_hacks[#"summon_box"])) {
@@ -1958,7 +1958,7 @@ function function_4873c058() {
             if (!isdefined(chest.zone_name)) {
                 var_bbab3105 = vectornormalize(anglestoright(chest.zbarrier.angles)) * -64;
                 chest.zone_name = zm_zonemgr::get_zone_from_position(chest.zbarrier.origin + var_bbab3105, 1);
-                for (n_z_offset = 8; !isdefined(chest.zone_name) && n_z_offset <= 64; n_z_offset = n_z_offset + 8) {
+                for (n_z_offset = 8; !isdefined(chest.zone_name) && n_z_offset <= 64; n_z_offset += 8) {
                     chest.zone_name = zm_zonemgr::get_zone_from_position(chest.zbarrier.origin + var_bbab3105 + (0, 0, n_z_offset), 1);
                 }
                 if (!isdefined(chest.zone_name)) {
@@ -2000,7 +2000,7 @@ function function_4873c058() {
             level.chests[0].zbarrier clientfield::set("force_stream_magicbox", 0);
         }
         if (level.var_9c9ba8d5) {
-            var_f6497afb = var_f6497afb + 0.3;
+            var_f6497afb += 0.3;
             if (var_f6497afb > 120) {
                 level.var_9c9ba8d5 = 0;
                 var_f6497afb = 0;

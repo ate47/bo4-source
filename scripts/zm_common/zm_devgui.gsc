@@ -721,7 +721,7 @@ function zone_adjacencies_validation() {
                     }
                     if (isdefined(level.zones[str_zone].adjacent_zones[key])) {
                         if (level.zones[str_zone].adjacent_zones[key].is_connected) {
-                            offset = offset + 10;
+                            offset += 10;
                             draw_zone_adjacencies_validation(level.zones[key], 1, key, level.zones[str_zone], offset);
                         } else {
                             draw_zone_adjacencies_validation(level.zones[key], 0, key);
@@ -2178,7 +2178,7 @@ function devgui_make_crawler() {
             zombie allowpitchangle(1);
             zombie setpitchorient();
             health = zombie.health;
-            health = health * 0.1;
+            health *= 0.1;
             zombie thread zombie_death::do_gib();
         }
     #/
@@ -2400,16 +2400,16 @@ function function_4bb7eb36() {
         plorigin = origin - 48 * right;
         switch (entnum) {
         case 0:
-            plorigin = plorigin + 16 * right;
+            plorigin += 16 * right;
             break;
         case 1:
-            plorigin = plorigin + 16 * forward;
+            plorigin += 16 * forward;
             break;
         case 2:
-            plorigin = plorigin - 16 * right;
+            plorigin -= 16 * right;
             break;
         case 3:
-            plorigin = plorigin - 16 * forward;
+            plorigin -= 16 * forward;
             break;
         }
         self setorigin(plorigin);
@@ -2436,16 +2436,16 @@ function function_84f0a909() {
         plorigin = origin + 72 * right;
         switch (entnum) {
         case 0:
-            plorigin = plorigin - 16 * right;
+            plorigin -= 16 * right;
             break;
         case 1:
-            plorigin = plorigin + 16 * forward;
+            plorigin += 16 * forward;
             break;
         case 2:
-            plorigin = plorigin + 16 * right;
+            plorigin += 16 * right;
             break;
         case 3:
-            plorigin = plorigin - 16 * forward;
+            plorigin -= 16 * forward;
             break;
         }
         self setorigin(plorigin);
@@ -3802,15 +3802,15 @@ function showonespawnpoint(spawn_point, color, notification, height, print) {
         thread lineuntilnotified(b, b + (0, 0, height), color, 0, notification);
         thread lineuntilnotified(c, c + (0, 0, height), color, 0, notification);
         thread lineuntilnotified(d, d + (0, 0, height), color, 0, notification);
-        a = a + (0, 0, height);
-        b = b + (0, 0, height);
-        c = c + (0, 0, height);
-        d = d + (0, 0, height);
+        a += (0, 0, height);
+        b += (0, 0, height);
+        c += (0, 0, height);
+        d += (0, 0, height);
         thread lineuntilnotified(a, b, color, 0, notification);
         thread lineuntilnotified(b, c, color, 0, notification);
         thread lineuntilnotified(c, d, color, 0, notification);
         thread lineuntilnotified(d, a, color, 0, notification);
-        center = center + (0, 0, height / 2);
+        center += (0, 0, height / 2);
         arrow_forward = anglestoforward(spawn_point.angles);
         arrowhead_forward = anglestoforward(spawn_point.angles);
         arrowhead_right = anglestoright(spawn_point.angles);
@@ -4562,32 +4562,32 @@ function function_15ee6847() {
         while (true) {
             teststring = "<unknown string>";
             foreach (player in level.players) {
-                teststring = teststring + "<unknown string>" + player getentitynumber() + "<unknown string>";
+                teststring += "<unknown string>" + player getentitynumber() + "<unknown string>";
                 if (player.sessionstate == "<unknown string>") {
-                    teststring = teststring + "<unknown string>";
+                    teststring += "<unknown string>";
                     continue;
                 }
                 if (isdefined(self.hostmigrationcontrolsfrozen) && self.hostmigrationcontrolsfrozen) {
-                    teststring = teststring + "<unknown string>";
+                    teststring += "<unknown string>";
                     continue;
                 }
                 if (player zm_player::in_life_brush()) {
-                    teststring = teststring + "<unknown string>";
+                    teststring += "<unknown string>";
                     continue;
                 }
                 if (player zm_player::in_kill_brush()) {
-                    teststring = teststring + "<unknown string>";
+                    teststring += "<unknown string>";
                     continue;
                 }
                 if (!player zm_player::in_enabled_playable_area()) {
-                    teststring = teststring + "<unknown string>";
+                    teststring += "<unknown string>";
                     continue;
                 }
                 if (isdefined(level.player_out_of_playable_area_override) && !(isdefined(player [[ level.player_out_of_playable_area_override ]]()) && player [[ level.player_out_of_playable_area_override ]]())) {
-                    teststring = teststring + "<unknown string>";
+                    teststring += "<unknown string>";
                     continue;
                 }
-                teststring = teststring + "<unknown string>";
+                teststring += "<unknown string>";
             }
             debug2dtext((400, 100, 0), teststring, (1, 1, 0), undefined, (0, 0, 0), 0.75, 1, 1);
             waitframe(1);
@@ -4843,8 +4843,8 @@ function function_2cde0af9(text, color, start, velocity, frames) {
         alpha = 1;
         for (i = 0; i < frames; i++) {
             print3d(location, text, color, alpha, 0.6, 1);
-            location = location + velocity;
-            alpha = alpha - 1 / frames * 2;
+            location += velocity;
+            alpha -= 1 / frames * 2;
             waitframe(1);
         }
     #/

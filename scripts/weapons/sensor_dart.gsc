@@ -338,7 +338,7 @@ function function_55de888f(watcher) {
         if (type == "MOD_MELEE" || type == "MOD_MELEE_WEAPON_BUTT" || weapon.isemp || weapon.destroysequipment) {
             self.damagetaken = damagemax;
         } else {
-            self.damagetaken = self.damagetaken + damage;
+            self.damagetaken += damage;
         }
         if (self.damagetaken >= damagemax) {
             watcher thread weaponobjects::waitanddetonate(self, 0.05, attacker, weapon);

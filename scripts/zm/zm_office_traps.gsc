@@ -35,7 +35,7 @@ function init_flags() {
 // Size: 0x14c
 function function_a28f0b21(e_holder, w_item) {
     self playsound(#"hash_230737b2535a3374");
-    level.var_e2103f01 = level.var_e2103f01 + 1;
+    level.var_e2103f01 += 1;
     if (function_8b1a219a()) {
         level.var_51823720[0] sethintstring(#"hash_323a35945e51c09a");
         level.var_51823720[1] sethintstring(#"hash_323a35945e51c09a");
@@ -52,7 +52,7 @@ function function_a28f0b21(e_holder, w_item) {
 // Size: 0x12c
 function function_af5c24bb(e_holder, w_item) {
     self playsound(#"hash_230737b2535a3374");
-    level.var_e2103f01 = level.var_e2103f01 + 1;
+    level.var_e2103f01 += 1;
     if (function_8b1a219a()) {
         level.var_51823720[0] sethintstring(#"hash_323a35945e51c09a");
         level.var_51823720[1] sethintstring(#"hash_323a35945e51c09a");
@@ -105,7 +105,7 @@ function function_cebfdd08() {
                 if (isdefined(level.var_e2103f01) && level.var_e2103f01 > 0) {
                     self playsound("zmb_battery_insert");
                     level flag::set(self.script_flag_wait);
-                    level.var_e2103f01 = level.var_e2103f01 - 1;
+                    level.var_e2103f01 -= 1;
                     if (level.var_e2103f01 == 0) {
                         level.var_51823720[0] sethintstring(#"hash_100d349fbdcacb2b");
                         level.var_51823720[1] sethintstring(#"hash_100d349fbdcacb2b");

@@ -512,7 +512,7 @@ function zombieupdatezigzaggoal() {
                     }
                     break;
                 }
-                segmentlength = segmentlength + currentseglength;
+                segmentlength += currentseglength;
             }
         }
         if (isdefined(level._zombiezigzagtimemin) && isdefined(level._zombiezigzagtimemax)) {
@@ -1087,7 +1087,7 @@ function zombieidgundeathupdate(entity, mocompanim, mocompanimblendouttime, moco
             if (isdefined(v_nearest_navmesh_point)) {
                 f_distance = distance(entity.damageorigin, v_nearest_navmesh_point);
                 if (f_distance < 41) {
-                    entity.damageorigin = entity.damageorigin + (0, 0, 36);
+                    entity.damageorigin += (0, 0, 36);
                 }
             }
         }
@@ -1109,7 +1109,7 @@ function zombieidgundeathupdate(entity, mocompanim, mocompanimblendouttime, moco
             return;
         }
         if (entity.hole_pull_speed < 12) {
-            entity.hole_pull_speed = entity.hole_pull_speed + 0.5;
+            entity.hole_pull_speed += 0.5;
             if (entity.hole_pull_speed > 12) {
                 entity.hole_pull_speed = 12;
             }

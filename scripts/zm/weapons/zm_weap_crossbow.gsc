@@ -585,7 +585,7 @@ function function_e1c4ab06(params) {
             break;
         }
         wait(1);
-        n_time = n_time - 1;
+        n_time -= 1;
     }
     a_zombies = array::exclude(getaiteamarray(level.zombie_team), level.var_7cfd8159);
     foreach (ai in a_zombies) {

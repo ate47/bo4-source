@@ -269,7 +269,7 @@ function private function_e5ffb77c(start, end, duration) {
             sphere(end, 2, (1, 0, 0), 1, 0, 4, 1);
             distance = distance(start, end);
             print3d(end + (0, 0, 30), "<unknown string>" + distance, (1, 0, 0), 1, 1, 1);
-            current_time = current_time - 1;
+            current_time -= 1;
         }
     #/
 }
@@ -284,7 +284,7 @@ function private function_debf98ad(location, radius, duration) {
         while (current_time > 0) {
             waitframe(1);
             sphere(location, radius, (0, 1, 0), 0.1, 0, 8, 1);
-            current_time = current_time - 1;
+            current_time -= 1;
         }
     #/
 }
@@ -863,7 +863,7 @@ function private function_5c3c88fe(location) {
     var_d0feb0fe thread function_3ec863f5();
     while (n_gas_time <= 7) {
         wait(1);
-        n_gas_time = n_gas_time + 1;
+        n_gas_time += 1;
     }
     var_d0feb0fe delete();
 }
@@ -1102,7 +1102,7 @@ function private function_b262d632(start, end, duration) {
             waitframe(1);
             line(start, end, (0, 1, 0), 1, 1);
             sphere(self.origin, 3, (1, 1, 0), 1, 0, 8, 1);
-            current_time = current_time - 1;
+            current_time -= 1;
         }
     #/
 }

@@ -249,7 +249,7 @@ function function_aaf2d8(player, weapon, b_weapon_supports_aat, var_a86430cb) {
         }
     }
     if (isdefined(player.talisman_weapon_reducepapcost) && player.talisman_weapon_reducepapcost) {
-        var_376755db = var_376755db - player.talisman_weapon_reducepapcost;
+        var_376755db -= player.talisman_weapon_reducepapcost;
     }
     var_376755db = int(max(10, var_376755db));
     if (isdefined(level.var_66153d2c)) {
@@ -412,7 +412,7 @@ function function_6d45375a(weapon) {
     weapon = zm_weapons::function_93cd8e76(weapon);
     n_multiplier = 1;
     if (isdefined(self.var_2843d3cc) && isdefined(self.var_2843d3cc[weapon])) {
-        n_multiplier = n_multiplier + (2 - 1) * self.var_2843d3cc[weapon] / 4;
+        n_multiplier += (2 - 1) * self.var_2843d3cc[weapon] / 4;
     }
     return n_multiplier;
 }

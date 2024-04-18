@@ -476,7 +476,7 @@ function global_cooldown(n_index) {
     self function_a1f97e79(1, n_index);
     n_cooldown = 30;
     if (self hasperk(#"specialty_mod_cooldown")) {
-        n_cooldown = n_cooldown * 0.9;
+        n_cooldown *= 0.9;
     }
     switch (zm_custom::function_901b751c(#"zmelixirscooldown")) {
     case 1:
@@ -486,7 +486,7 @@ function global_cooldown(n_index) {
         n_cooldown = floor(n_cooldown / 2);
         break;
     case 0:
-        n_cooldown = n_cooldown * 2;
+        n_cooldown *= 2;
         break;
     }
     /#
@@ -583,11 +583,11 @@ function slot_cooldown(n_index) {
         n_cooldown = floor(n_cooldown / 2);
         break;
     case 0:
-        n_cooldown = n_cooldown * 2;
+        n_cooldown *= 2;
         break;
     }
     if (self hasperk(#"specialty_mod_cooldown")) {
-        n_cooldown = n_cooldown * 0.9;
+        n_cooldown *= 0.9;
     }
     if (isdefined(level.bgb[str_elixir].var_81f8ab0f)) {
         n_cooldown = level.bgb[str_elixir].var_81f8ab0f;
@@ -634,7 +634,7 @@ function function_7dd2a9c9(n_index, n_cooldown) {
         while (var_729b3c2f <= 1) {
             wait(0.05);
             n_count++;
-            var_729b3c2f = var_729b3c2f + n_step;
+            var_729b3c2f += n_step;
             var_729b3c2f = math::clamp(var_729b3c2f, 0, 1);
             self.var_2d8082a0[n_index] = n_cooldown - n_cooldown * var_729b3c2f;
             if (!self.var_bd0d5874) {
@@ -653,7 +653,7 @@ function private function_d84ec5ee(var_707fd977) {
     self endon(#"disconnect", #"hash_738988561a113fac");
     n_cooldown = 30;
     if (self hasperk(#"specialty_mod_cooldown")) {
-        n_cooldown = n_cooldown * 0.9;
+        n_cooldown *= 0.9;
     }
     /#
         if (isdefined(level.var_7c3d4959) && level.var_7c3d4959) {
@@ -668,7 +668,7 @@ function private function_d84ec5ee(var_707fd977) {
         while (var_729b3c2f < 1) {
             wait(0.05);
             n_count++;
-            var_729b3c2f = var_729b3c2f + n_step;
+            var_729b3c2f += n_step;
             var_729b3c2f = math::clamp(var_729b3c2f, 0, 1);
             self function_4650bb90(var_729b3c2f);
         }

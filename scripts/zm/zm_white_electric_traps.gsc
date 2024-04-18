@@ -247,7 +247,7 @@ function function_193dbfbb() {
             self thread function_fae74a9e(n_sequence);
             wait(n_check_time);
         }
-        n_total_time = n_total_time + 2;
+        n_total_time += 2;
     }
     if (isdefined(var_34e4f6b8)) {
         playsoundatposition(#"hash_3819c6cd06a27f15", var_34e4f6b8.origin);
@@ -330,7 +330,7 @@ function function_6ae39b5() {
         self thread function_a01c3869();
         self thread function_fae74a9e();
         wait(n_check_time);
-        n_total_time = n_total_time + n_check_time;
+        n_total_time += n_check_time;
     }
     self function_8f250fa1();
 }

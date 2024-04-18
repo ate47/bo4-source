@@ -440,15 +440,15 @@ function private function_83a6d3ae(inflictor, attacker, damage, flags, meansofde
         }
     }
     if (isdefined(weapon) && weapon.weapclass == "spread") {
-        var_9000ab2 = var_9000ab2 * 1.2;
-        var_81dcad68 = var_81dcad68 * 1.2;
+        var_9000ab2 *= 1.2;
+        var_81dcad68 *= 1.2;
     }
     final_damage = 0;
     if (isdefined(meansofdeath) && (meansofdeath == "MOD_GRENADE" || meansofdeath == "MOD_GRENADE_SPLASH" || meansofdeath == "MOD_PROJECTILE" || meansofdeath == "MOD_PROJECTILE_SPLASH" || meansofdeath == "MOD_EXPLOSIVE")) {
         if (!isdefined(self.explosivedmgtaken)) {
             self.explosivedmgtaken = 0;
         }
-        self.explosivedmgtaken = self.explosivedmgtaken + damage;
+        self.explosivedmgtaken += damage;
         scaler = var_9000ab2;
         if (self.explosivedmgtaken >= self.explosive_dmg_req && isdefined(self.hashelmet) && self.hashelmet) {
             self function_530c54e3();

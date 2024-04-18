@@ -424,7 +424,7 @@ function private on_vehicle_collision(params) {
         if (isdefined(params.normal) && params.normal[2] < -0.5) {
             impactdot = vectordot(anglestoup(self.angles), -1 * params.normal);
             if (impactdot > var_a1805d6e) {
-                applydamage = applydamage * 0.1;
+                applydamage *= 0.1;
             }
         }
         if (isdefined(params.entity) && isvehicle(params.entity)) {
@@ -606,15 +606,15 @@ function on_vehicle_damage(params) {
         if (isdefined(params.eattacker) && isdefined(params.eattacker.isplayervehicle) && params.eattacker.isplayervehicle) {
             var_364c1a03 = params.eattacker;
             if (var_364c1a03 == vehicle) {
-                vehicle.session.var_309ad81f = vehicle.session.var_309ad81f + params.idamage;
+                vehicle.session.var_309ad81f += params.idamage;
                 return;
             } else if (isdefined(var_364c1a03.session)) {
-                var_364c1a03.session.var_ecd1fe60 = var_364c1a03.session.var_ecd1fe60 + params.idamage;
-                vehicle.session.var_770fd50d = vehicle.session.var_770fd50d + params.idamage;
+                var_364c1a03.session.var_ecd1fe60 += params.idamage;
+                vehicle.session.var_770fd50d += params.idamage;
                 return;
             }
         }
-        vehicle.session.var_5ba0df6e = vehicle.session.var_5ba0df6e + params.idamage;
+        vehicle.session.var_5ba0df6e += params.idamage;
     }
     if (isdefined(params) && isplayer(params.eattacker) && isdefined(params.idamage)) {
         params.eattacker stats::function_d40764f3(#"vehicle_damage", int(params.idamage));
@@ -693,7 +693,7 @@ function on_player_damage(params) {
     if (isdefined(victim) && isdefined(victim.usingvehicle) && victim.usingvehicle) {
         vehicle = victim getvehicleoccupied();
         if (isdefined(vehicle) && isdefined(vehicle.session)) {
-            vehicle.session.var_ffb0c509 = vehicle.session.var_ffb0c509 + params.idamage;
+            vehicle.session.var_ffb0c509 += params.idamage;
         }
     }
     if (isdefined(attacker) && isdefined(attacker.usingvehicle) && attacker.usingvehicle && isplayer(attacker)) {
@@ -701,7 +701,7 @@ function on_player_damage(params) {
         if (isdefined(vehicle)) {
             if (params.smeansofdeath == "MOD_CRUSH") {
                 if (isdefined(vehicle.session)) {
-                    vehicle.session.var_33f48e5a = vehicle.session.var_33f48e5a + params.idamage;
+                    vehicle.session.var_33f48e5a += params.idamage;
                 }
                 if (isdefined(victim)) {
                     victim playsound("veh_body_impact_flesh");
@@ -725,7 +725,7 @@ function on_player_damage(params) {
                 return;
             }
             if (isdefined(vehicle.session)) {
-                vehicle.session.var_45bf3627 = vehicle.session.var_45bf3627 + params.idamage;
+                vehicle.session.var_45bf3627 += params.idamage;
             }
         }
     }
@@ -1818,8 +1818,8 @@ function private function_17949e01() {
                 time = gettime();
                 if (time > var_80831eb5 && waitresult.pm_flags & 128) {
                     force = anglestoforward(waitresult.entity getplayerangles());
-                    force = force * mag;
-                    force = force + (0, 0, height);
+                    force *= mag;
+                    force += (0, 0, height);
                     self launchvehicle(force, self.origin);
                     var_80831eb5 = time + 1500;
                 }
@@ -2692,7 +2692,7 @@ function function_2e3fb54c(params) {
     }
     targetyaw = randomintrange(50, 150);
     if (targetyaw % 2 == 0) {
-        targetyaw = targetyaw * -1;
+        targetyaw *= -1;
     }
     pitch = 0;
     roll = 0;
@@ -2926,9 +2926,9 @@ function private function_479389f3() {
             continue;
         }
         if (trace[#"fraction"] < 1) {
-            var_b0e8278f = var_b0e8278f + var_33a206d0[tag];
-            var_4c962569 = var_4c962569 + trace[#"position"][2] - var_33a206d0[tag][2];
-            avgnormal = avgnormal + trace[#"normal"];
+            var_b0e8278f += var_33a206d0[tag];
+            var_4c962569 += trace[#"position"][2] - var_33a206d0[tag][2];
+            avgnormal += trace[#"normal"];
             var_e10b67f7[tag] = trace;
         }
     }
@@ -2939,14 +2939,14 @@ function private function_479389f3() {
             continue;
         }
         if (trace[#"fraction"] < 1) {
-            var_b0e8278f = var_b0e8278f + var_8fc02d3b[tag];
-            var_4c962569 = var_4c962569 + trace[#"position"][2] - var_8fc02d3b[tag][2];
-            avgnormal = avgnormal + trace[#"normal"];
+            var_b0e8278f += var_8fc02d3b[tag];
+            var_4c962569 += trace[#"position"][2] - var_8fc02d3b[tag][2];
+            avgnormal += trace[#"normal"];
             var_d3532cfe[tag] = trace;
         }
     }
     if (var_e10b67f7.size > 0 || var_d3532cfe.size > 0) {
-        avgnormal = avgnormal / (var_d3532cfe.size + var_e10b67f7.size);
+        avgnormal /= var_d3532cfe.size + var_e10b67f7.size;
         self.var_eb4e4182 = avgnormal;
     }
     if (avgnormal[2] < 0.94) {
@@ -2958,11 +2958,11 @@ function private function_479389f3() {
     if (var_d643c4fc) {
         return false;
     }
-    var_4c962569 = var_4c962569 / (var_d3532cfe.size + var_e10b67f7.size + 1);
+    var_4c962569 /= var_d3532cfe.size + var_e10b67f7.size + 1;
     if (var_4c962569 > 20) {
         return false;
     }
-    var_b0e8278f = var_b0e8278f / (var_d3532cfe.size + var_e10b67f7.size);
+    var_b0e8278f /= var_d3532cfe.size + var_e10b67f7.size;
     self.helilandingorigin = var_b0e8278f;
     self.var_6fac6f50 = var_4c962569;
     self.var_67136cb0 = avgnormal;

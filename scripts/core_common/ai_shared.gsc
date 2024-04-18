@@ -263,7 +263,7 @@ function shoot_at_target(mode, target, tag, duration, sethealth, ignorefirstshot
         if (duration >= 0) {
             elapsed = 0;
             while (isdefined(target) && target.health > 0 && elapsed <= duration) {
-                elapsed = elapsed + 0.05;
+                elapsed += 0.05;
                 if (!(isdefined(self.start_duration_comp) && self.start_duration_comp)) {
                     elapsed = 0;
                 }

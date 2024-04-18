@@ -105,7 +105,7 @@ function function_6c223039() {
     self.var_ff6d7c88 = self.var_ec0d66ce * self.var_ec0d66ce;
     self thread vehicle_ai::nudge_collision();
     var_134ac8f9 = int(zm_ai_utility::function_8d44707e(0));
-    var_134ac8f9 = var_134ac8f9 * (isdefined(level.var_570d178a) ? level.var_570d178a : 1);
+    var_134ac8f9 *= isdefined(level.var_570d178a) ? level.var_570d178a : 1;
     self.health = int(var_134ac8f9);
     self.maxhealth = int(var_134ac8f9);
     defaultrole();
@@ -118,7 +118,7 @@ function function_6c223039() {
 // Size: 0xbc
 function function_141c342b() {
     var_134ac8f9 = int(zm_ai_utility::function_8d44707e(0));
-    var_134ac8f9 = var_134ac8f9 * (isdefined(level.var_570d178a) ? level.var_570d178a : 1);
+    var_134ac8f9 *= isdefined(level.var_570d178a) ? level.var_570d178a : 1;
     self.health = int(var_134ac8f9);
     self.maxhealth = int(var_134ac8f9);
     self disableaimassist();
@@ -199,7 +199,7 @@ function private function_1076a2e0() {
             self.var_c4e19d3 = undefined;
         } else {
             self.var_c4e19d3 = target;
-            self.var_c4e19d3.hunted_by = self.var_c4e19d3.hunted_by + 1;
+            self.var_c4e19d3.hunted_by += 1;
             self vehlookat(self.var_c4e19d3);
             self turretsettarget(0, self.var_c4e19d3);
         }
@@ -313,7 +313,7 @@ function private function_1b029905() {
         waitresult = level waittill(#"transformation_complete");
         if (waitresult.id === #"hash_791d597ac0457860" && isdefined(waitresult.data)) {
             newai = waitresult.new_ai[0];
-            newai.maxhealth = newai.maxhealth * waitresult.data.healthmultiplier;
+            newai.maxhealth *= waitresult.data.healthmultiplier;
             newai.health = newai.maxhealth;
         }
         wait(0.1);
@@ -524,7 +524,7 @@ function function_1c4cd527(origin, owner, innerradius, outerradius, halfheight, 
                 point._scoredebug[#"no visibility"].score = -5000;
                 point._scoredebug[#"no visibility"].scorename = "<unknown string>";
             #/
-            point.score = point.score + -5000;
+            point.score += -5000;
         }
     }
     if (queryresult.data.size > 0) {

@@ -199,7 +199,7 @@ function apd_trap_activate(e_player) {
             }
         }
         wait(3);
-        n_total_time = n_total_time + 3;
+        n_total_time += 3;
     }
 }
 

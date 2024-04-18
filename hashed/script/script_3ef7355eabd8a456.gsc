@@ -193,7 +193,7 @@ function function_a546fd97() {
         s_notify = self waittill(#"damage");
         add_outtime = s_notify.attacker aat::getaatonweapon(s_notify.weapon);
         if (isdefined(add_outtime) && add_outtime.name === "zm_aat_kill_o_watt") {
-            var_863c08bb = var_863c08bb + s_notify.amount;
+            var_863c08bb += s_notify.amount;
             var_9ce2f88b = var_863c08bb / 15000;
             var_5c3100f7 = int(min(floor(var_9ce2f88b * level.var_9c0c4b0d.size), level.var_9c0c4b0d.size));
             for (i = 0; i < var_5c3100f7; i++) {

@@ -337,7 +337,7 @@ function function_7e94450c() {
         if (s_waitresult.mod === "MOD_MELEE") {
             break;
         }
-        self.n_health = self.n_health - s_waitresult.amount;
+        self.n_health -= s_waitresult.amount;
         if (self.n_health <= 9400) {
             break;
         }
@@ -1930,7 +1930,7 @@ function function_e6e126b4(e_target, w_weapon) {
             exploder::exploder("exp_lgt_riverglow");
         } else {
             level flag::wait_till("river_turned_on");
-            s_quest.var_95a4f81a = s_quest.var_95a4f81a + n_increase;
+            s_quest.var_95a4f81a += n_increase;
             foreach (e_light in a_e_lights) {
                 e_light setlightintensity(function_5d783702(s_quest.var_95a4f81a));
             }
@@ -2161,7 +2161,7 @@ function function_4771e682(var_542837e6) {
             n_time = n_dist / 1500;
             n_time = n_dist / 1500;
             if (n_time >= 0.1) {
-                n_time = n_time - 0.1;
+                n_time -= 0.1;
             }
             wait(n_time);
             self thread function_2a290bb7(var_542837e6, s_result.v_position, s_result.player);
@@ -2520,7 +2520,7 @@ function light_countdown(n_time) {
     self endon(#"hash_3f0faacb0cc98a9");
     n_duration = 1;
     while (true) {
-        n_time = n_time - n_duration;
+        n_time -= n_duration;
         if (n_time <= 0) {
             self notify(#"hash_3f0faacb0cc98a9", {#b_success:0});
             break;
@@ -2800,7 +2800,7 @@ function function_381519d9(var_8290a028, mdl_feather, n_max_height, s_original) 
     n_dist_to_target = distance2d(var_2ed6f142, var_8290a028.origin);
     n_time = n_dist_to_target / 1500;
     if (n_time >= 0.1) {
-        n_time = n_time - 0.1;
+        n_time -= 0.1;
     }
     wait(n_time);
     var_8290a028 clientfield::increment("" + #"ouranos_feather_hit_fx");
@@ -2893,7 +2893,7 @@ function function_68080923(var_52666e80, mdl_tree) {
         n_dist = distance(v_orig, s_result.v_position);
         n_time = n_dist / 1500;
         if (n_time >= 0.05) {
-            n_time = n_time - 0.05;
+            n_time -= 0.05;
         }
         wait(n_time);
         if (s_result.e_entity === self) {
@@ -3179,7 +3179,7 @@ function function_fd3d477c() {
         mdl_plant = util::spawn_model("p8_zm_red_gaia_bush_01_sprout_01", v_spawn_pos, (0, 0, 0));
         mdl_plant setscale(n_scale);
         while (n_scale > 0.1) {
-            n_scale = n_scale - 0.05;
+            n_scale -= 0.05;
             mdl_plant setscale(n_scale);
             waitframe(1);
         }
@@ -3421,7 +3421,7 @@ function function_88edd220(e_player, w_charged) {
 function function_8ad28be8(e_player) {
     e_player endon(#"disconnect", #"hash_4d89e2bb8e3d1eb3");
     e_player.var_ac8a5779 = 0;
-    for (n_time = 0; n_time < 120 && !level flag::get("round_reset"); n_time = n_time + 0.5) {
+    for (n_time = 0; n_time < 120 && !level flag::get("round_reset"); n_time += 0.5) {
         if (e_player.var_ac8a5779 > 60) {
             break;
         }

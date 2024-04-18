@@ -192,7 +192,7 @@ function generaterandompoints(count) {
     for (i = 0; i < count; i++) {
         point = airsupport::getrandommappoint(isdefined(level.cuav_map_x_offset) ? level.cuav_map_x_offset : 0, isdefined(level.cuav_map_y_offset) ? level.cuav_map_y_offset : 0, isdefined(level.cuav_map_x_percentage) ? level.cuav_map_x_percentage : 0.5, isdefined(level.cuav_map_y_percentage) ? level.cuav_map_y_percentage : 0.5);
         minflyheight = airsupport::getminimumflyheight();
-        point = point + (0, 0, minflyheight + (isdefined(level.counter_uav_position_z_offset) ? level.counter_uav_position_z_offset : 1000));
+        point += (0, 0, minflyheight + (isdefined(level.counter_uav_position_z_offset) ? level.counter_uav_position_z_offset : 1000));
         points[i] = point;
     }
     return points;
@@ -317,7 +317,7 @@ function buildoffsetlist(startoffset, depth, offset_x, offset_y) {
             if (itemcount > 1) {
                 y = i * offset_y;
                 total_y = offset_y * startingindex;
-                y = y - total_y / 2;
+                y -= total_y / 2;
             }
             offsets[startingindex + i] = startoffset + (x, y, 0);
         }
@@ -382,7 +382,7 @@ function function_7c61ce31() {
     xoffset = cos(angle) * radiusoffset;
     yoffset = sin(angle) * radiusoffset;
     anglevector = vectornormalize((xoffset, yoffset, zoffset));
-    anglevector = anglevector * zoffset;
+    anglevector *= zoffset;
     anglevector = (anglevector[0], anglevector[1], zoffset - level.var_f6bf445b.origin[2]);
     self linkto(level.var_f6bf445b, "tag_origin", anglevector, (0, angle + 90, 0));
 }

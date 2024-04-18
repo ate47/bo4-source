@@ -108,7 +108,7 @@ function trap_damage(t_trap) {
     if (isdefined(self.var_5c8ac43e) && self.var_5c8ac43e) {
         n_percent = 100;
     }
-    n_percent = n_percent / 100;
+    n_percent /= 100;
     n_damage = int(self.maxhealth * n_percent);
     if (n_damage >= self.health) {
         level notify(#"trap_kill", {#e_victim:self, #e_trap:t_trap});

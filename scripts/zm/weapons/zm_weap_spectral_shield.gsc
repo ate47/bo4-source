@@ -614,7 +614,7 @@ function function_750abd36() {
             dist_mult = (n_fling_range_sq - var_a155935) / n_fling_range_sq;
             fling_vec = vectornormalize(v_zombie_origin - var_2ed6f142);
             if (5000 < var_a155935) {
-                fling_vec = fling_vec + vectornormalize(v_zombie_origin - radial_origin);
+                fling_vec += vectornormalize(v_zombie_origin - radial_origin);
             }
             fling_vec = (fling_vec[0], fling_vec[1], abs(fling_vec[2]));
             fling_vec = vectorscale(fling_vec, 50 + 50 * dist_mult);

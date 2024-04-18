@@ -112,7 +112,7 @@ function ammo_pouch_think() {
         stock = player getweaponammostock(weapon);
         start = player getfractionstartammo(weapon);
         clip = weapon.clipsize;
-        clip = clip * getdvarfloat(#"scavenger_clip_multiplier", 1);
+        clip *= getdvarfloat(#"scavenger_clip_multiplier", 1);
         clip = int(clip);
         maxammo = weapon.maxammo;
         if (stock < maxammo - clip * 3) {

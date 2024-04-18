@@ -181,9 +181,9 @@ function function_abb55703(spawnbeacon, var_d8f817bc) {
     player = self;
     spawnbeacon.spawncount++;
     if (level.gametype === "dm" || level.gametype === "dm_hc") {
-        spawnbeacon.health = spawnbeacon.health - (isdefined(level.spawnbeaconsettings.settingsbundle.var_ebe18d92) ? level.spawnbeaconsettings.settingsbundle.var_ebe18d92 : 0);
+        spawnbeacon.health -= isdefined(level.spawnbeaconsettings.settingsbundle.var_ebe18d92) ? level.spawnbeaconsettings.settingsbundle.var_ebe18d92 : 0;
     } else {
-        spawnbeacon.health = spawnbeacon.health - (isdefined(level.spawnbeaconsettings.settingsbundle.var_f9dea783) ? level.spawnbeaconsettings.settingsbundle.var_f9dea783 : 0);
+        spawnbeacon.health -= isdefined(level.spawnbeaconsettings.settingsbundle.var_f9dea783) ? level.spawnbeaconsettings.settingsbundle.var_f9dea783 : 0;
     }
     if (isdefined(spawnbeacon.owner) && player != spawnbeacon.owner) {
         spawnbeacon.owner luinotifyevent(#"spawn_beacon_used");

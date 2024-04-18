@@ -277,7 +277,7 @@ function private function_af59b7a5(entity) {
                     if (!isdefined(player_owner.var_772b4ad2)) {
                         player_owner.var_772b4ad2 = 0;
                     }
-                    player_owner.var_772b4ad2 = player_owner.var_772b4ad2 + 1;
+                    player_owner.var_772b4ad2 += 1;
                 } else {
                     player_owner.var_15da7e3f = undefined;
                     player_owner.var_772b4ad2 = undefined;
@@ -288,7 +288,7 @@ function private function_af59b7a5(entity) {
         }
         if (var_3050773c <= 300 && entity.var_951e8469 < 1.5) {
             player_owner.var_15da7e3f = undefined;
-            entity.var_951e8469 = entity.var_951e8469 + float(function_60d95f53()) / 1000;
+            entity.var_951e8469 += float(function_60d95f53()) / 1000;
             entity setgoal(entity.origin);
             return;
         }
@@ -412,19 +412,19 @@ function private function_f7c7a416(entity) {
                     var_b1c1c5cf = var_7e0e6341.damagescale;
                     if (var_b1c1c5cf > 0 && var_b1c1c5cf < 1) {
                         var_64cc5e50 = 1 / var_b1c1c5cf;
-                        n_base_damage = n_base_damage * var_64cc5e50;
+                        n_base_damage *= var_64cc5e50;
                     }
                 }
                 if (isdefined(hit_enemy.var_6f84b820)) {
                     switch (hit_enemy.var_6f84b820) {
                     case #"heavy":
-                        n_base_damage = n_base_damage * 0.2;
+                        n_base_damage *= 0.2;
                         break;
                     case #"miniboss":
-                        n_base_damage = n_base_damage * 0.1;
+                        n_base_damage *= 0.1;
                         break;
                     case #"boss":
-                        n_base_damage = n_base_damage * 0.05;
+                        n_base_damage *= 0.05;
                         break;
                     default:
                         break;
@@ -442,7 +442,7 @@ function private function_f7c7a416(entity) {
                     if (force != (0, 0, 1) && force != (0, 0, -1)) {
                         side = vectorcross(force, (0, 0, 1));
                         force = rotatepointaroundaxis(force, side, randomfloatrange(0, 75));
-                        force = force * randomfloatrange(30, 85);
+                        force *= randomfloatrange(30, 85);
                     }
                     hit_enemy startragdoll();
                     hit_enemy launchragdoll(force);
@@ -613,7 +613,7 @@ function function_e023eac9(entity, mocompanim, mocompanimblendouttime, mocompani
             animlength = getanimlength(mocompanim) * 1000;
             var_16c6aa5b = entity.meleeinfo.var_6392c3a2 * animlength - entity.meleeinfo.var_98bc84b7 * animlength;
             var_b1145e11 = vectorscale(velocity, var_16c6aa5b / 1000);
-            predictedenemypos = predictedenemypos + var_b1145e11;
+            predictedenemypos += var_b1145e11;
         }
         entity.meleeinfo.adjustedendpos = predictedenemypos;
         /#
@@ -633,7 +633,7 @@ function function_e023eac9(entity, mocompanim, mocompanimblendouttime, mocompani
         var_535d098c = 0;
         if (isdefined(traceresult[#"hitloc"]) && traceresult[#"hitloc"] == "riotshield") {
             var_cc075bd0 = vectornormalize(entity.origin - entity.meleeinfo.adjustedendpos);
-            entity.meleeinfo.adjustedendpos = entity.meleeinfo.adjustedendpos + vectorscale(var_cc075bd0, 50);
+            entity.meleeinfo.adjustedendpos += vectorscale(var_cc075bd0, 50);
             var_535d098c = 1;
         }
         if (!var_201660e6) {

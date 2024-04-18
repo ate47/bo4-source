@@ -425,7 +425,7 @@ function function_e268297c(e_captive) {
     v_dir = anglestoforward(e_captive.var_57f1bd45.angles);
     var_6c9efff0 = e_captive.var_57f1bd45.origin + v_dir * 150;
     self.var_9a79d89d = var_6c9efff0;
-    v_dir = v_dir * -1;
+    v_dir *= -1;
     v_angles = vectortoangles(v_dir);
     self.var_5ab7c19c = v_angles;
     var_e47f9e94 = 0;

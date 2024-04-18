@@ -1129,32 +1129,32 @@ function _debug_zones() {
                 var_28686bb1 = "";
                 var_871522b2 = "";
                 for (i = 0; i < n_spacer - zone.name.size; i++) {
-                    var_871522b2 = var_871522b2 + " ";
+                    var_871522b2 += " ";
                 }
-                var_28686bb1 = var_28686bb1 + zone.name + var_871522b2 + " | ";
+                var_28686bb1 += zone.name + var_871522b2 + " | ";
                 if (zone.is_enabled) {
-                    var_28686bb1 = var_28686bb1 + "Enabled | ";
+                    var_28686bb1 += "Enabled | ";
                 } else {
-                    var_28686bb1 = var_28686bb1 + "        | ";
+                    var_28686bb1 += "        | ";
                 }
                 if (zone.is_active) {
-                    var_28686bb1 = var_28686bb1 + "Active | ";
+                    var_28686bb1 += "Active | ";
                 } else {
-                    var_28686bb1 = var_28686bb1 + "       | ";
+                    var_28686bb1 += "       | ";
                 }
                 if (zone.is_occupied) {
-                    var_28686bb1 = var_28686bb1 + "Occupied | ";
+                    var_28686bb1 += "Occupied | ";
                     occupied_zone = zone;
                 } else {
-                    var_28686bb1 = var_28686bb1 + "         | ";
+                    var_28686bb1 += "         | ";
                 }
                 if (zone.is_spawning_allowed) {
-                    var_28686bb1 = var_28686bb1 + "SpawnOK | ";
+                    var_28686bb1 += "SpawnOK | ";
                 } else {
-                    var_28686bb1 = var_28686bb1 + "        | ";
+                    var_28686bb1 += "        | ";
                 }
                 /#
-                    var_28686bb1 = var_28686bb1 + zone.a_loc_types[#"zombie_location"].size + "<unknown string>" + zone.total_spawn_count + "<unknown string>" + zone.round_spawn_count;
+                    var_28686bb1 += zone.a_loc_types[#"zombie_location"].size + "<unknown string>" + zone.total_spawn_count + "<unknown string>" + zone.round_spawn_count;
                     v_pos = 100 + 18 * n;
                     debug2dtext((400, v_pos, 0), var_28686bb1, (1, 1, 0), undefined, (0, 0, 0), 0.75, 0.85, 2);
                 #/
@@ -1229,9 +1229,9 @@ function private function_8a9003ae() {
             if (zone.is_enabled) {
                 var_db6c400c = (0, 0, 0);
                 for (index = 0; index < zone.a_loc_types[var_4b0b7fff].size; index++) {
-                    var_db6c400c = var_db6c400c + zone.a_loc_types[var_4b0b7fff][index].origin;
+                    var_db6c400c += zone.a_loc_types[var_4b0b7fff][index].origin;
                 }
-                var_db6c400c = var_db6c400c / zone.a_loc_types[var_4b0b7fff].size;
+                var_db6c400c /= zone.a_loc_types[var_4b0b7fff].size;
                 /#
                     print3d(var_db6c400c, zone_text, (1, 1, 1), 1, 1);
                 #/

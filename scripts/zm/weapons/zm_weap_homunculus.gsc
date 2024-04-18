@@ -334,7 +334,7 @@ function function_cc9535d0(var_c4a5788c, var_bbab4f84, var_2f916462) {
                     if (isalive(a_ai_zombies[i])) {
                         n_dist = distancesquared(self.origin, a_ai_zombies[i].origin);
                         n_time = n_dist / 48400;
-                        n_time = n_time * 0.5;
+                        n_time *= 0.5;
                         self.var_69e642c7 function_9ef23dc0(a_ai_zombies[i], n_time, self.thrower, self);
                     }
                 }

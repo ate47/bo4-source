@@ -811,7 +811,7 @@ function function_bbcf6af(attacker, yawangle) {
     self clientfield::set_player_uimodel("hudItems.cleanCarryCount", self.carriedtacos);
     self function_fccce038();
     /#
-        dropcount = dropcount + getdvarint(#"extratacos", 0);
+        dropcount += getdvarint(#"extratacos", 0);
     #/
     var_8a33c2ea = 360 / (dropcount + 1);
     for (i = 0; i < dropcount; i++) {
@@ -819,7 +819,7 @@ function function_bbcf6af(attacker, yawangle) {
         if (!isdefined(taco)) {
             return;
         }
-        yawangle = yawangle + var_8a33c2ea;
+        yawangle += var_8a33c2ea;
         randomyaw = 0.8 * var_8a33c2ea;
         randomyaw = randomfloatrange(randomyaw * -1, randomyaw);
         taco function_903c4eff(self, attacker, undefined, yawangle + randomyaw);

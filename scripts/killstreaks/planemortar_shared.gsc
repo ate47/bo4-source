@@ -203,7 +203,7 @@ function dobombrun(position, yaw, team) {
     startpoint = position + vectorscale(direction, -12000);
     endpoint = position + vectorscale(direction, 18000);
     height = airsupport::getnoflyzoneheightcrossed(startpoint, endpoint, height);
-    height = height + randomfloatrange(-200, 200);
+    height += randomfloatrange(-200, 200);
     startpoint = (startpoint[0], startpoint[1], height);
     position = (position[0], position[1], height);
     endpoint = (endpoint[0], endpoint[1], height);

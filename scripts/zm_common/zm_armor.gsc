@@ -81,20 +81,20 @@ function add(var_7c8fcded, var_3ed63752, var_28066539, var_df7ee5d1 = #"hash_208
     if (isdefined(var_28066539)) {
         var_d7de78d3 = var_28066539 - self get(var_7c8fcded);
         if (var_3ed63752 <= var_d7de78d3) {
-            self.armor = self.armor + var_3ed63752;
+            self.armor += var_3ed63752;
             var_4812bba2 = var_3ed63752;
         } else {
-            self.armor = self.armor + var_d7de78d3;
+            self.armor += var_d7de78d3;
             var_4812bba2 = var_d7de78d3;
         }
     } else {
-        self.armor = self.armor + var_3ed63752;
+        self.armor += var_3ed63752;
         var_4812bba2 = var_3ed63752;
     }
     if (var_4812bba2 > 0) {
         self playsound(var_df7ee5d1);
     }
-    var_4812bba2 = var_4812bba2 + self get(var_7c8fcded);
+    var_4812bba2 += self get(var_7c8fcded);
     self.var_9555ebfb[var_7c8fcded] = var_4812bba2;
 }
 
@@ -105,12 +105,12 @@ function add(var_7c8fcded, var_3ed63752, var_28066539, var_df7ee5d1 = #"hash_208
 function remove(var_7c8fcded, var_2cd89ceb = 0) {
     if (isdefined(self.var_9555ebfb[var_7c8fcded]) && self.var_9555ebfb[var_7c8fcded] > 0) {
         if (var_2cd89ceb) {
-            self.armor = self.armor - self.var_9555ebfb[var_7c8fcded];
+            self.armor -= self.var_9555ebfb[var_7c8fcded];
             a_keys = getarraykeys(level.var_9555ebfb);
             var_d42adc5 = 0;
             foreach (key in a_keys) {
                 if (key !== var_7c8fcded && (level.var_9555ebfb[key] || isdefined(self.var_bacee63b) && self.var_bacee63b && key == #"hero_weapon_armor")) {
-                    var_d42adc5 = var_d42adc5 + get(key);
+                    var_d42adc5 += get(key);
                 }
             }
             var_d42adc5 = min(var_d42adc5, 100);
@@ -154,7 +154,7 @@ function damage(n_damage, mod_type, e_attacker) {
     } else {
         var_ee47fd1b = 0;
     }
-    self.armor = self.armor - var_ee47fd1b;
+    self.armor -= var_ee47fd1b;
     var_c5aebd9f = 0;
     for (n_index = 0; var_c5aebd9f < var_ee47fd1b && n_index < a_keys.size; n_index++) {
         str_armor = a_keys[n_index];
@@ -162,12 +162,12 @@ function damage(n_damage, mod_type, e_attacker) {
         if (var_2a0d4230 > var_ee47fd1b) {
             var_34ada56f = var_2a0d4230 - var_ee47fd1b - var_c5aebd9f;
             self.var_9555ebfb[str_armor] = var_34ada56f;
-            var_c5aebd9f = var_c5aebd9f + var_ee47fd1b;
+            var_c5aebd9f += var_ee47fd1b;
             n_index++;
             continue;
         }
         if (var_2a0d4230 > 0) {
-            var_c5aebd9f = var_c5aebd9f + var_2a0d4230;
+            var_c5aebd9f += var_2a0d4230;
             self remove(str_armor);
             if (self.armor <= 0) {
                 self playsound(#"hash_2817ca3f96127e62");

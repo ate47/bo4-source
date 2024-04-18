@@ -42,7 +42,7 @@ function function_5d6ee8e9(var_5ea5c94d) {
             var_ca7809eb = 20000;
             while (isdefined(e_player) && !var_87706f3b && e_player istouching(var_21569a93)) {
                 if (e_player util::is_looking_at(s_lookat.origin, 0.99)) {
-                    var_ca7809eb = var_ca7809eb - gettime() - var_2c116c59;
+                    var_ca7809eb -= gettime() - var_2c116c59;
                     var_2c116c59 = gettime();
                     if (var_ca7809eb <= 0) {
                         /#

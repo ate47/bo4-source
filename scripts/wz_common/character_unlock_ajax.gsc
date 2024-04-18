@@ -97,7 +97,7 @@ function private function_b854ffba() {
         foreach (item in self.inventory.items) {
             itementry = item.itementry;
             if (isdefined(itementry) && itementry.name === #"cu01_item") {
-                var_b6015a5d = var_b6015a5d + item.count;
+                var_b6015a5d += item.count;
             }
         }
     }

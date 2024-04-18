@@ -211,7 +211,7 @@ function thundergun_get_enemies_in_range() {
             dist_mult = (fling_range_squared - test_range_squared) / fling_range_squared;
             fling_vec = vectornormalize(test_origin - view_pos);
             if (5000 < test_range_squared) {
-                fling_vec = fling_vec + vectornormalize(test_origin - radial_origin);
+                fling_vec += vectornormalize(test_origin - radial_origin);
             }
             fling_vec = (fling_vec[0], fling_vec[1], abs(fling_vec[2]));
             fling_vec = vectorscale(fling_vec, 100 + 100 * dist_mult);

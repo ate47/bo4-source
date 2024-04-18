@@ -537,16 +537,16 @@ function vending_trigger_think() {
         }
         current_cost = cost;
         if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
-            current_cost = current_cost - player.talisman_perk_reducecost_1;
+            current_cost -= player.talisman_perk_reducecost_1;
         }
         if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
-            current_cost = current_cost - player.talisman_perk_reducecost_2;
+            current_cost -= player.talisman_perk_reducecost_2;
         }
         if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
-            current_cost = current_cost - player.talisman_perk_reducecost_3;
+            current_cost -= player.talisman_perk_reducecost_3;
         }
         if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
-            current_cost = current_cost - player.talisman_perk_reducecost_4;
+            current_cost -= player.talisman_perk_reducecost_4;
         }
         if (!player zm_score::can_player_purchase(current_cost)) {
             zm_utility::play_sound_on_ent("no_purchase");
@@ -1552,7 +1552,7 @@ function players_are_in_perk_area(perk_machine) {
     if (isdefined(perk_machine._linked_ent)) {
         perk_area_origin = perk_machine._linked_ent.origin;
         if (isdefined(perk_machine._linked_ent_offset)) {
-            perk_area_origin = perk_area_origin + perk_machine._linked_ent_offset;
+            perk_area_origin += perk_machine._linked_ent_offset;
         }
     }
     in_area = 0;
@@ -2087,16 +2087,16 @@ function function_b7f2c635(player) {
             }
         }
         if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
-            n_cost = n_cost - player.talisman_perk_reducecost_1;
+            n_cost -= player.talisman_perk_reducecost_1;
         }
         if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
-            n_cost = n_cost - player.talisman_perk_reducecost_2;
+            n_cost -= player.talisman_perk_reducecost_2;
         }
         if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
-            n_cost = n_cost - player.talisman_perk_reducecost_3;
+            n_cost -= player.talisman_perk_reducecost_3;
         }
         if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
-            n_cost = n_cost - player.talisman_perk_reducecost_4;
+            n_cost -= player.talisman_perk_reducecost_4;
         }
         n_cost = player namespace_e38c57c1::function_863dc0ef(n_cost);
         n_cost = int(max(n_cost, 0));
@@ -2162,16 +2162,16 @@ function function_f5da744e() {
         }
         current_cost = n_cost;
         if (n_slot == 0 && isdefined(player.talisman_perk_reducecost_1) && player.talisman_perk_reducecost_1) {
-            current_cost = current_cost - player.talisman_perk_reducecost_1;
+            current_cost -= player.talisman_perk_reducecost_1;
         }
         if (n_slot == 1 && isdefined(player.talisman_perk_reducecost_2) && player.talisman_perk_reducecost_2) {
-            current_cost = current_cost - player.talisman_perk_reducecost_2;
+            current_cost -= player.talisman_perk_reducecost_2;
         }
         if (n_slot == 2 && isdefined(player.talisman_perk_reducecost_3) && player.talisman_perk_reducecost_3) {
-            current_cost = current_cost - player.talisman_perk_reducecost_3;
+            current_cost -= player.talisman_perk_reducecost_3;
         }
         if (n_slot == 3 && isdefined(player.talisman_perk_reducecost_4) && player.talisman_perk_reducecost_4) {
-            current_cost = current_cost - player.talisman_perk_reducecost_4;
+            current_cost -= player.talisman_perk_reducecost_4;
         }
         current_cost = player namespace_e38c57c1::function_863dc0ef(current_cost);
         current_cost = int(max(current_cost, 0));
@@ -3294,7 +3294,7 @@ function private set_bleedout_progress(var_bbb2c705, var_b0696a17) {
             n_time_elapsed = 0;
             var_73db1c5d++;
         }
-        n_time_elapsed = n_time_elapsed + 0.05;
+        n_time_elapsed += 0.05;
         wait(0.05);
     }
 }

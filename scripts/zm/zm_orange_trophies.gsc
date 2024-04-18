@@ -109,7 +109,7 @@ function function_790e5d6() {
     var_a3404ecb = 0;
     while (!var_a3404ecb) {
         self waittill(#"hash_2a12c37201945891");
-        self.var_c4baf001 = self.var_c4baf001 + 1;
+        self.var_c4baf001 += 1;
         if (self.var_c4baf001 >= 4) {
             self notify(#"bells_complete");
             /#
@@ -157,7 +157,7 @@ function function_c28621d7(s_params) {
 // Size: 0x112
 function function_b9f47977(e_zombie) {
     self endon(#"hash_402140b7cdc4bca1");
-    self.var_79447139 = self.var_79447139 + 1;
+    self.var_79447139 += 1;
     if (self.var_79447139 >= 10) {
         /#
             iprintlnbold("<unknown string>" + "<unknown string>");
@@ -168,7 +168,7 @@ function function_b9f47977(e_zombie) {
         self notify(#"hash_402140b7cdc4bca1");
     }
     e_zombie function_e140ff5c();
-    self.var_79447139 = self.var_79447139 - 1;
+    self.var_79447139 -= 1;
 }
 
 // Namespace zm_orange_trophies/zm_orange_trophies
@@ -188,7 +188,7 @@ function function_e140ff5c() {
 // Size: 0x14c
 function function_4ff2cfd9(s_result) {
     if (self.archetype == #"zombie_dog" && zm_orange_util::function_fe8ee9f0(s_result.weapon, 0) && !level flag::get(#"hash_6046825f3ec27c48")) {
-        s_result.eattacker.var_59c409c3 = s_result.eattacker.var_59c409c3 + 1;
+        s_result.eattacker.var_59c409c3 += 1;
         if (s_result.eattacker.var_59c409c3 >= 5) {
             /#
                 iprintlnbold("<unknown string>" + "<unknown string>");

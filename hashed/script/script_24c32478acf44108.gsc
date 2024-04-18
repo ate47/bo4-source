@@ -121,7 +121,7 @@ function private function_8aefaae3(s_burn) {
                 n_dps = level.var_981dd9cf[#"burn"][str_type].n_dps;
             }
             if (n_time_remaining > 1) {
-                var_39d0f0a8.n_time_remaining = var_39d0f0a8.n_time_remaining - 1;
+                var_39d0f0a8.n_time_remaining -= 1;
                 n_damage = n_dps * 1;
             } else if (n_time_remaining > 0) {
                 var_39d0f0a8.n_time_remaining = 0;
@@ -132,7 +132,7 @@ function private function_8aefaae3(s_burn) {
                 var_2af3b934 = var_39d0f0a8.e_owner;
                 weapon = var_39d0f0a8.weapon;
             }
-            n_total_damage = n_total_damage + n_damage;
+            n_total_damage += n_damage;
             if (var_39d0f0a8.n_time_remaining <= 0) {
                 self.var_88421cc2[str_type] = undefined;
             }

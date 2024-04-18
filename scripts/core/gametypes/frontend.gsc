@@ -181,9 +181,9 @@ function function_1c289498(...) {
         }
         cmd = "<unknown string>";
         for (i = 0; i < vararg.size; i++) {
-            cmd = cmd + vararg[i] + "<unknown string>";
+            cmd += vararg[i] + "<unknown string>";
         }
-        cmd = cmd + "<unknown string>";
+        cmd += "<unknown string>";
         adddebugcommand(cmd);
     #/
 }

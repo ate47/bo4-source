@@ -96,9 +96,9 @@ function private function_ba459d03(team) {
             }
             voip = "<unknown string>";
             if (isdefined(level.var_75dffa9f[team])) {
-                voip = voip + (level.var_75dffa9f[team] == #"game" ? "<unknown string>" : "<unknown string>");
+                voip += level.var_75dffa9f[team] == #"game" ? "<unknown string>" : "<unknown string>";
             } else {
-                voip = voip + "<unknown string>";
+                voip += "<unknown string>";
             }
             println("<unknown string>" + "<unknown string>" + self.name + "<unknown string>" + team_str + "<unknown string>" + voip);
         }

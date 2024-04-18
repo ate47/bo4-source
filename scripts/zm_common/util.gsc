@@ -330,7 +330,7 @@ function getotherteamsmask(skip_team) {
         if (team == skip_team) {
             continue;
         }
-        mask = mask | getteammask(team);
+        mask |= getteammask(team);
     }
     return mask;
 }

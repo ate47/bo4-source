@@ -21,8 +21,8 @@ function animate_crack(localclientnum, vectorname, delay, duration, start, end) 
     timestep = 0.01 * direction;
     value = start;
     self mapshaderconstant(localclientnum, 0, vectorname, value, 0, 0, 0);
-    for (i = 0; i < durationseconds; i = i + timestep) {
-        value = value + valstep;
+    for (i = 0; i < durationseconds; i += timestep) {
+        value += valstep;
         wait(0.01);
         self mapshaderconstant(localclientnum, 0, vectorname, value, 0, 0, 0);
     }

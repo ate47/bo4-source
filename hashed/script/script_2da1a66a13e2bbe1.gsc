@@ -319,7 +319,7 @@ function soda() {
 function function_28e2ddd5(n_perk_cost, var_c6ce6ade) {
     assert(isdefined(level.var_1b64d570), "<unknown string>");
     if (var_c6ce6ade == level.var_1b64d570) {
-        n_perk_cost = n_perk_cost * 0.5;
+        n_perk_cost *= 0.5;
     }
     return int(max(n_perk_cost, 0));
 }

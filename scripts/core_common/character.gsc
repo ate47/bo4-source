@@ -122,7 +122,7 @@ function get_random_character(amount) {
         if (!isdefined(index)) {
         }
     }
-    for (index = randomint(5000); index >= amount; index = index - amount) {
+    for (index = randomint(5000); index >= amount; index -= amount) {
     }
     level.character_index_cache[prefix][group][index]++;
     return index;

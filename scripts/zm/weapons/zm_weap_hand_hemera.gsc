@@ -373,7 +373,7 @@ function function_8e7f5291(e_projectile, ai_zombie, n_damage) {
                 n_dist = distance(e_projectile.origin, v_target);
                 if (n_dist > var_7fd007f9) {
                     if (var_4d8b7233 <= 100) {
-                        var_4d8b7233 = var_4d8b7233 + 20;
+                        var_4d8b7233 += 20;
                     }
                     if (e_projectile.n_index === 1) {
                         v_horz = v_target + anglestoright(ai_zombie.angles) * 100;
@@ -386,7 +386,7 @@ function function_8e7f5291(e_projectile, ai_zombie, n_damage) {
                         v_end = v_horz + (0, 0, var_4d8b7233);
                     }
                 } else {
-                    var_4d8b7233 = var_4d8b7233 - 20;
+                    var_4d8b7233 -= 20;
                     if (isdefined(v_target)) {
                         v_end = v_target + (0, 0, var_4d8b7233);
                         if (v_end[2] < v_target[2] + 8) {
@@ -489,7 +489,7 @@ function function_dced5aef(e_target, weapon = level.weaponnone, n_damage, b_char
             break;
         case #"heavy":
             if (!isdefined(b_charged)) {
-                n_damage = n_damage * 0.75;
+                n_damage *= 0.75;
             }
             e_target dodamage(n_damage, self.origin, self, undefined, "none", "MOD_UNKNOWN", 0, weapon);
             break;

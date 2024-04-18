@@ -332,7 +332,7 @@ function apply_filter(localclientnum, filter, filterset = "framebuffer") {
                     name = "<unknown string>" + self.name;
                 }
             } else if (isdefined(self.model)) {
-                name = name + "<unknown string>" + self.model;
+                name += "<unknown string>" + self.model;
             }
             msg = "<unknown string>" + filter.name + "<unknown string>" + name + "<unknown string>" + filterset;
             println(msg);

@@ -300,7 +300,7 @@ function machine_think() {
     level.bottle_spawn_location = spawn("script_model", self.origin);
     level.bottle_spawn_location setmodel(#"tag_origin");
     level.bottle_spawn_location.angles = self.angles;
-    level.bottle_spawn_location.origin = level.bottle_spawn_location.origin + (0, 0, 65);
+    level.bottle_spawn_location.origin += (0, 0, 65);
     while (true) {
         waitresult = self waittill(#"trigger");
         player = waitresult.activator;
@@ -505,9 +505,9 @@ function perk_bottle_motion() {
     v_float = anglestoforward(self.angles - (0, 90, 0)) * 10;
     level.bottle_spawn_location.origin = self.origin + (0, 0, 53);
     level.bottle_spawn_location.angles = self.angles;
-    level.bottle_spawn_location.origin = level.bottle_spawn_location.origin - v_float;
+    level.bottle_spawn_location.origin -= v_float;
     level.bottle_spawn_location moveto(level.bottle_spawn_location.origin + v_float, putouttime, putouttime * 0.5);
-    level.bottle_spawn_location.angles = level.bottle_spawn_location.angles + (0, 0, 10);
+    level.bottle_spawn_location.angles += (0, 0, 10);
     level.bottle_spawn_location rotateyaw(720, putouttime, putouttime * 0.5);
     self waittill(#"done_cycling");
     level.bottle_spawn_location.angles = self.angles;

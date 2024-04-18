@@ -641,7 +641,7 @@ class class_7da27482 {
         }
         var_56293673 = 1;
         foreach (model in var_9e7c4fde) {
-            var_56293673 = var_56293673 & function_c358189(model);
+            var_56293673 &= function_c358189(model);
         }
         function_62dd99d6(var_ff2bed36);
         if (isdefined(params.var_c76f3e47) && params.var_c76f3e47 && !var_c31e86ed && !var_ff2bed36 isstreamed(params.var_5bd51249, params.var_13fb1841)) {
@@ -680,7 +680,7 @@ class class_7da27482 {
                     waitframe(1);
                     var_e2e2ee90 = 1;
                     foreach (model in var_cf2f5fb7) {
-                        var_e2e2ee90 = var_e2e2ee90 & function_c358189(model, var_a9916921, 0);
+                        var_e2e2ee90 &= function_c358189(model, var_a9916921, 0);
                     }
                 } while (!var_e2e2ee90);
                 function_91cd5499(util::spawn_model(var_f141235b, var_867954ad, _origin, _angles), 0, 0);
@@ -883,7 +883,7 @@ class class_7da27482 {
     function set_character_outfit_item(item_index, item_type) {
         assert(_i_mode != 4);
         if (var_f5c0467b[item_type] != item_index) {
-            var_b627749c = var_b627749c | (item_type == 0 || item_type == 2 || item_type == 3 || item_type == 4 || item_type == 6);
+            var_b627749c |= item_type == 0 || item_type == 2 || item_type == 3 || item_type == 4 || item_type == 6;
             var_f5c0467b[item_type] = item_index;
         }
     }
@@ -1812,7 +1812,7 @@ function private update_model_rotation_for_right_stick(localclientnum, var_d0b01
                 change = isdefined(pos[#"rightstick"]) ? pos[#"rightstick"][0] : pos[#"look"][0];
                 if (ispc()) {
                     pos = getxcammousecontrol(data_lcn);
-                    change = change - pos[#"yaw"];
+                    change -= pos[#"yaw"];
                 }
                 if (abs(change) > 0.0001) {
                     model.angles = (model.angles[0], absangleclamp360(model.angles[1] + change * 3), model.angles[2]);

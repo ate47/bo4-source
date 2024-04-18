@@ -31,7 +31,7 @@ function function_f468d9a5(spawnpoint) {
     hold_angles = vectortoangles(vectornormalize(spawnpoint.origin - pos));
     vec = anglestoforward(hold_angles);
     vec = vectornormalize(vec);
-    vec = vec * velocity;
+    vec *= velocity;
     return {#origin:hold_origin, #angles:hold_angles, #freefall:vec};
 }
 
@@ -120,7 +120,7 @@ function override_spawn(ispredictedspawn) {
     }
     teammask = getteammask(self.team);
     for (teamindex = 0; teammask > 1; teamindex++) {
-        teammask = teammask >> 1;
+        teammask >>= 1;
     }
     destindex = teamindex % level.var_7767cea8.size;
     dest = level.var_7767cea8[destindex];

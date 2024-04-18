@@ -153,7 +153,7 @@ function init_teams() {
     }
     foreach (team, _ in level.teams) {
         spawnsystem.ispawn_teammask[team] = 1 << count;
-        all = all | spawnsystem.ispawn_teammask[team];
+        all |= spawnsystem.ispawn_teammask[team];
         count++;
     }
     spawnsystem.ispawn_teammask[#"all"] = all;
@@ -720,9 +720,9 @@ function private has_player_explored_spawn_point(spawnpoint, player) {
 // Checksum 0x70e18cc7, Offset: 0x2c28
 // Size: 0x8a
 function private set_player_explored_spawn_point(spawnpoint, player) {
-    spawnpoint.explored = spawnpoint.explored | 1 << player getentitynumber();
+    spawnpoint.explored |= 1 << player getentitynumber();
     if (isdefined(player.companion)) {
-        spawnpoint.explored = spawnpoint.explored | 1 << player.companion getentitynumber();
+        spawnpoint.explored |= 1 << player.companion getentitynumber();
     }
 }
 
@@ -744,10 +744,10 @@ function clear_all_spawn_point_explored() {
 // Size: 0x9a
 function clear_spawn_point_explored_for_player(spawnpoint, player) {
     if (isdefined(spawnpoint.explored)) {
-        spawnpoint.explored = spawnpoint.explored & ~(1 << player getentitynumber());
+        spawnpoint.explored &= ~(1 << player getentitynumber());
     }
     if (isdefined(player.companion)) {
-        spawnpoint.explored = spawnpoint.explored & ~(1 << player.companion getentitynumber());
+        spawnpoint.explored &= ~(1 << player.companion getentitynumber());
     }
 }
 

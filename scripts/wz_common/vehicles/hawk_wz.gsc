@@ -93,7 +93,7 @@ function spawn_hawk(itemid) {
     var_865c71c9 = (playerangles[0], playerangles[1], 0);
     var_c7588ce0 = (0, playerangles[1], 0);
     forward = anglestoforward(var_c7588ce0);
-    forward = forward * 20;
+    forward *= 20;
     spawnpos = self.origin + (0, 0, 90) + forward;
     trace = self function_6ada73f(spawnpos);
     if (trace[#"fraction"] < 1) {

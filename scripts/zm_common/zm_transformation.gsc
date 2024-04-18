@@ -842,7 +842,7 @@ function private setup_status() {
         colors = array((1, 1, 1));
         var_e859a426 = create_hudelem(y);
         var_e859a426 settext("<unknown string>");
-        y = y + 10;
+        y += 10;
         var_735311f0 = create_hudelem(y);
         var_af5fbf35 = create_hudelem(y, 160);
         var_af5fbf35 settext("<unknown string>");
@@ -856,7 +856,7 @@ function private setup_status() {
         level.var_deb567a8[level.var_deb567a8.size] = {#title:var_e859a426, #var_d189697d:var_af5fbf35, #var_b99573ec:var_f4676cb4, #var_735311f0:var_735311f0};
         i = 0;
         foreach (id, transformation in level.var_b175714d) {
-            y = y + 10;
+            y += 10;
             current_color = colors[i % colors.size];
             id_elem = create_hudelem(y);
             id_elem settext(function_9e72a96(id));
@@ -960,10 +960,10 @@ function private function_dfd1a1c0() {
             var_c2624dfc = 200;
             var_b010a959 = 100;
             debug2dtext((var_c2624dfc, var_b010a959, 0), "<unknown string>", (1, 1, 0), 1, (0, 0, 0), 0.8, 1);
-            var_b010a959 = var_b010a959 + 25;
+            var_b010a959 += 25;
             foreach (pauser in level.var_50f7dbd5) {
                 debug2dtext((var_c2624dfc, var_b010a959, 0), function_9e72a96(pauser), (1, 1, 1), 1, (0, 0, 0), 0.8, 1);
-                var_b010a959 = var_b010a959 + 25;
+                var_b010a959 += 25;
             }
             waitframe(1);
         }

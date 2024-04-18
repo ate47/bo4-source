@@ -848,7 +848,7 @@ function function_3f15e557(entity, mocompanim, mocompanimblendouttime, mocompani
         if (isplayer(entity.favoriteenemy)) {
             velocity = entity.favoriteenemy getvelocity();
             if (length(velocity) >= 0) {
-                predictedenemypos = predictedenemypos + vectorscale(velocity, 0.25);
+                predictedenemypos += vectorscale(velocity, 0.25);
             }
         }
         var_83fd29ee = vectornormalize(predictedenemypos - entity.origin);
@@ -1137,7 +1137,7 @@ function private function_75f32da6(inflictor, attacker, damage, idflags, meansof
         if (!isdefined(self.var_5dc26e42) || self.var_5dc26e42 >= 1000) {
             self.var_5dc26e42 = 0;
         }
-        self.var_5dc26e42 = self.var_5dc26e42 + adjusted_damage;
+        self.var_5dc26e42 += adjusted_damage;
     }
     if (isdefined(var_dd54fdb1)) {
         if (isdefined(var_dd54fdb1.var_8223b0cf) && var_dd54fdb1.var_8223b0cf > 0) {
@@ -1259,7 +1259,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
     var_ecc54f32 = self gettagangles(var_a4388d06);
     invert = 1;
     if (isdefined(spin_dir)) {
-        invert = invert * spin_dir;
+        invert *= spin_dir;
     }
     var_ecc54f32 = (0, self.angles[1], 0);
     axe = util::spawn_model("tag_origin", var_23f0c5b3, var_ecc54f32);
@@ -1317,7 +1317,7 @@ function private function_fbc2806e(var_a4388d06, spin_dir) {
         }
         axe moveto(move_pos, 0.1);
         wait(0.1);
-        total_dist = total_dist + interval_dist;
+        total_dist += interval_dist;
         if (total_dist >= max_dist) {
             break;
         }
@@ -1670,7 +1670,7 @@ function function_831dd6bd() {
                         }
                         break;
                     }
-                    segmentlength = segmentlength + currentseglength;
+                    segmentlength += currentseglength;
                 }
             }
         }

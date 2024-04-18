@@ -93,7 +93,7 @@ function on_player_spawned() {
 function player_damage_override(einflictor, eattacker, idamage, idflags, mod, weapon, vpoint, vdir, shitloc, modelindex, psoffsettime) {
     if (isdefined(self.var_d44d1214)) {
         if (mod == "MOD_BULLET" || mod == "MOD_RIFLE_BULLET" || mod == "MOD_PISTOL_BULLET" || mod == "MOD_HEAD_SHOT") {
-            idamage = idamage * (isdefined(level.radiationfield_bundle.var_ebea02e3) ? level.radiationfield_bundle.var_ebea02e3 : 1);
+            idamage *= isdefined(level.radiationfield_bundle.var_ebea02e3) ? level.radiationfield_bundle.var_ebea02e3 : 1;
             fx = level.radiationfield_bundle.var_befbf4c5;
             if (isdefined(fx)) {
                 fxhandle = playfx(fx, vpoint, vdir * -1);
@@ -121,7 +121,7 @@ function sndonoverride_eye_() {
     player notify(#"hash_477083bb681cce64");
     while (true) {
         wait(rate);
-        cur_time = cur_time + rate;
+        cur_time += rate;
         percent = min(1, cur_time / total_time);
         if (isdefined(player.var_e9791ff9)) {
             objective_setprogress(player.var_e9791ff9, percent * redline);
@@ -149,7 +149,7 @@ function sndonoverride_eye_() {
     cur_time = 0;
     while (true) {
         wait(rate);
-        cur_time = cur_time + rate;
+        cur_time += rate;
         percent = min(1, 1 - player.health / start_health);
         value = redline + percent * (1 - redline);
         value = math::clamp(value, 0, 0.99);
@@ -206,7 +206,7 @@ function function_1503c832(weapon) {
     player callback::function_d8abfc3d(#"on_player_killed_with_params", &on_player_killed);
     fwd = vecscale(vectornormalize(anglestoforward(player.angles)), 20);
     player.var_ab42e44e = player.origin;
-    player.var_ab42e44e = player.var_ab42e44e + fwd;
+    player.var_ab42e44e += fwd;
     player.var_e9791ff9 = gameobjects::get_next_obj_id();
     objective_add(player.var_e9791ff9, "active", (player.var_ab42e44e[0], player.var_ab42e44e[1], player.var_ab42e44e[2]), #"hash_1bf4e9e4ba326a9");
     objective_setteam(player.var_e9791ff9, player.team);
@@ -321,8 +321,8 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
     while (true) {
         fwd = vecscale(vectornormalize(anglestoforward(player.angles)), 20);
         player.var_ab42e44e = player.origin;
-        player.var_ab42e44e = player.var_ab42e44e + fwd;
-        radius = radius + player_radius;
+        player.var_ab42e44e += fwd;
+        radius += player_radius;
         radius2 = radius * radius;
         if (isdefined(var_327bdee)) {
             player thread status_effect::status_effect_apply(var_327bdee, weapon, player, 0);
@@ -362,7 +362,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
                     health = level.killstreakbundle[#"dog"].kshealth;
                     lifetime = isdefined(level.killstreakbundle[#"dog"].var_b45a7714) ? level.killstreakbundle[#"dog"].var_b45a7714 : 3;
                     var_ae727111 = health / lifetime;
-                    var_ae727111 = var_ae727111 * dt;
+                    var_ae727111 *= dt;
                     var_a3ca7cb2 dodamage(var_ae727111, var_a3ca7cb2.origin, player, player, "none", "MOD_BURNED");
                 } else {
                     if (!isdefined(var_a3ca7cb2.var_15359864)) {
@@ -391,10 +391,10 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
                         dot_scaler = 1 - t + level.radiationfield_bundle.var_c3e28ba8 * t;
                     }
                     if (level.hardcoremode) {
-                        dot_scaler = dot_scaler * (isdefined(level.radiationfield_bundle.var_78c1e37b) ? level.radiationfield_bundle.var_78c1e37b : 0.25);
+                        dot_scaler *= isdefined(level.radiationfield_bundle.var_78c1e37b) ? level.radiationfield_bundle.var_78c1e37b : 0.25;
                     }
                     if (isplayer(var_a3ca7cb2)) {
-                        dot_scaler = dot_scaler * var_a3ca7cb2 function_4e7b9eed();
+                        dot_scaler *= var_a3ca7cb2 function_4e7b9eed();
                     }
                     var_65939bc3 = var_adf90433.dotdamage;
                     var_a2755834 = var_adf90433.var_44ff1a4;
@@ -403,7 +403,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
                     if (!isdefined(player.radiationdamage)) {
                         player.radiationdamage = 0;
                     }
-                    player.radiationdamage = player.radiationdamage + var_adf90433.dotdamage;
+                    player.radiationdamage += var_adf90433.dotdamage;
                     var_adf90433.killcament = killcament;
                     var_a3ca7cb2 thread status_effect::status_effect_apply(var_adf90433, weapon, player, 0);
                     if (isdefined(level.var_ac6052e9)) {
@@ -441,7 +441,7 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
                             lifetime = isdefined(level.killstreakbundle[#"tank_robot"].var_b45a7714) ? level.killstreakbundle[#"tank_robot"].var_b45a7714 : 3;
                         }
                         var_ae727111 = health / lifetime;
-                        var_ae727111 = var_ae727111 * dt;
+                        var_ae727111 *= dt;
                         veh dodamage(var_ae727111, veh.origin, player, player, "none", "MOD_BURNED");
                     }
                 }
@@ -463,8 +463,8 @@ function damage_state(state_id, weapon, min_radius, max_radius, min_height, max_
             }
         }
         wait(dt);
-        radius = radius + radius_delta;
-        half_height = half_height + var_a9e00cb3;
+        radius += radius_delta;
+        half_height += var_a9e00cb3;
         if (radius > max_radius) {
             radius = max_radius;
         }

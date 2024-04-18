@@ -1956,18 +1956,18 @@ function private function_172decfc() {
         for (i = 0; i < var_325bac97.size; i++) {
             var_2f572bbb = "<unknown string>";
             for (j = 0; j < var_ecc27a73 - var_325bac97[i].size; j++) {
-                var_2f572bbb = var_2f572bbb + "<unknown string>";
+                var_2f572bbb += "<unknown string>";
             }
-            var_2f572bbb = var_2f572bbb + var_325bac97[i].name + "<unknown string>";
+            var_2f572bbb += var_325bac97[i].name + "<unknown string>";
             if (var_325bac97[i].state[0] != "<unknown string>" && isdefined(var_325bac97[i].state[int(getgametypesetting(var_325bac97[i].name))])) {
-                var_2f572bbb = var_2f572bbb + var_325bac97[i].state[int(getgametypesetting(var_325bac97[i].name))];
+                var_2f572bbb += var_325bac97[i].state[int(getgametypesetting(var_325bac97[i].name))];
                 for (j = 0; j < 13 - var_325bac97[i].state[int(getgametypesetting(var_325bac97[i].name))].size; j++) {
-                    var_2f572bbb = var_2f572bbb + "<unknown string>";
+                    var_2f572bbb += "<unknown string>";
                 }
             } else {
-                var_2f572bbb = var_2f572bbb + getgametypesetting(var_325bac97[i].name);
+                var_2f572bbb += getgametypesetting(var_325bac97[i].name);
                 for (j = 0; j < 13 - string(getgametypesetting(var_325bac97[i].name)).size; j++) {
-                    var_2f572bbb = var_2f572bbb + "<unknown string>";
+                    var_2f572bbb += "<unknown string>";
                 }
             }
             array::add(var_32d62863, var_2f572bbb);
@@ -1979,7 +1979,7 @@ function private function_172decfc() {
                 if (floor(getgametypesetting(var_325bac97[i].name)) != var_325bac97[i].default_val) {
                     var_5f0a1940++;
                     if (var_5f0a1940 > 29) {
-                        var_5f0a1940 = var_5f0a1940 - 29;
+                        var_5f0a1940 -= 29;
                         var_af35ffa2++;
                     }
                     v_pos = 300 + 18 * var_5f0a1940;

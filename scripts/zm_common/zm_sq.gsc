@@ -537,17 +537,17 @@ function function_5df75220() {
             }
             ee.debug_hudelem settext(function_9e72a96(ee.name));
             ee.debug_hudelem.fontscale = 1.5;
-            current_x = current_x + 5;
+            current_x += 5;
             step_string = "<unknown string>";
             foreach (step in ee.steps) {
-                current_y = current_y + 15;
+                current_y += 15;
                 if (!isdefined(step.debug_hudelem)) {
                     step.debug_hudelem = create_hudelem(current_y, current_x);
                 }
                 step.debug_hudelem settext(step_string + function_9e72a96(step.name));
                 step.debug_hudelem.fontscale = 1.5;
             }
-            current_y = current_y + 30;
+            current_y += 30;
         }
         level.var_7f2ca392 = 1;
     #/

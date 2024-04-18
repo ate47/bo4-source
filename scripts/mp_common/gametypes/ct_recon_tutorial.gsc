@@ -102,13 +102,13 @@ function callback_player_damage(e_inflictor, e_attacker, n_damage, n_dflags, str
             switch (level.var_ad7c0539) {
             case 7:
                 if (!isbot(self)) {
-                    n_damage = n_damage * 1.5;
+                    n_damage *= 1.5;
                 }
                 break;
             case 8:
             case 9:
                 if (!isbot(self)) {
-                    n_damage = n_damage * 0.8;
+                    n_damage *= 0.8;
                 }
                 break;
             }
@@ -903,7 +903,7 @@ function function_a5f160e7(einflictor, eattacker, idamage, idflags, smeansofdeat
     if (isdefined(einflictor) && einflictor.team == #"allies" && isbot(einflictor)) {
         idamage = 1;
         if (randomint(100) < 80) {
-            self.health = self.health + 1;
+            self.health += 1;
         }
     }
     return idamage;
@@ -942,7 +942,7 @@ function function_bb44f289(var_7e6c18d7, var_d8036031, var_8a787b15) {
         }
         if (level.var_6f71c916 == 0 && var_70ff5c3a == 0) {
             if (isdefined(var_8a787b15) && var_8a787b15) {
-                level.var_6f71c916 = level.var_6f71c916 + 1;
+                level.var_6f71c916 += 1;
             } else {
                 break;
             }
@@ -955,7 +955,7 @@ function function_bb44f289(var_7e6c18d7, var_d8036031, var_8a787b15) {
                 var_4001313 = 0;
             }
             spawn_zombie(s_loc);
-            level.var_6f71c916 = level.var_6f71c916 - 1;
+            level.var_6f71c916 -= 1;
             wait(1);
         }
         waitframe(1);
@@ -1002,9 +1002,9 @@ function zombie_death_watcher() {
         }
         e_player thread ct_utils::function_80bf685b(e_player.pers[#"momentum"]);
     } else {
-        level.var_6f71c916 = level.var_6f71c916 + 1;
+        level.var_6f71c916 += 1;
     }
-    level.var_6cd64bc3 = level.var_6cd64bc3 + 1;
+    level.var_6cd64bc3 += 1;
 }
 
 // Namespace ct_recon_tutorial/ct_recon_tutorial

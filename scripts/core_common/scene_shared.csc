@@ -1303,7 +1303,7 @@ class csceneobject : cscriptbundleobjectbase {
     function run_wait(wait_time) {
         wait_start_time = 0;
         while (wait_start_time < wait_time && !is_skipping_scene()) {
-            wait_start_time = wait_start_time + 0.016;
+            wait_start_time += 0.016;
             waitframe(1);
         }
     }
@@ -1724,17 +1724,17 @@ function postfx_igc(localclientnum, oldval, newval, bnewent, binitialsnap, field
     filter::set_filter_base_frame_transition_boost(self, 5, 1);
     n_hex = 0;
     b_streamer_wait = 1;
-    for (i = 0; i < 2000; i = i + int(0.016 * 1000)) {
+    for (i = 0; i < 2000; i += int(0.016 * 1000)) {
         st = float(i) / 1000;
         if (b_streamer_wait && st >= 0.65) {
-            for (n_streamer_time_total = 0; !isstreamerready() && n_streamer_time_total < 5000; n_streamer_time_total = n_streamer_time_total + gettime() - n_streamer_time) {
+            for (n_streamer_time_total = 0; !isstreamerready() && n_streamer_time_total < 5000; n_streamer_time_total += gettime() - n_streamer_time) {
                 n_streamer_time = gettime();
-                for (j = int(0.65 * 1000); j < 1150; j = j + int(0.016 * 1000)) {
+                for (j = int(0.65 * 1000); j < 1150; j += int(0.016 * 1000)) {
                     jt = float(j) / 1000;
                     filter::set_filter_frame_transition_heavy_hexagons(self, 5, mapfloat(0.65, 1.15, 0, 1, jt));
                     waitframe(1);
                 }
-                for (j = int(1.15 * 1000); j < 650; j = j - int(0.016 * 1000)) {
+                for (j = int(1.15 * 1000); j < 650; j -= int(0.016 * 1000)) {
                     jt = float(j) / 1000;
                     filter::set_filter_frame_transition_heavy_hexagons(self, 5, mapfloat(0.65, 1.15, 0, 1, jt));
                     waitframe(1);
@@ -1859,7 +1859,7 @@ function postfx_igc_short(localclientnum, oldval, newval, bnewent, binitialsnap,
     filter::enable_filter_frame_transition(self, 5);
     filter::set_filter_frame_transition_iris(self, 5, 0);
     b_streamer_wait = 1;
-    for (i = 0; i < 850; i = i + int(0.016 * 1000)) {
+    for (i = 0; i < 850; i += int(0.016 * 1000)) {
         st = float(i) / 1000;
         if (st <= 0.5) {
             filter::set_filter_frame_transition_iris(self, 5, mapfloat(0, 0.5, 0, 1, st));
@@ -2708,11 +2708,11 @@ function function_1eab8670(obj, str_shot) {
             if (s_shot.name === str_shot && isdefined(s_shot.entry)) {
                 foreach (s_entry in s_shot.entry) {
                     if (isdefined(s_entry.cameraswitcher)) {
-                        var_5a162d58 = var_5a162d58 + float(getcamanimtime(s_entry.cameraswitcher)) / 1000;
+                        var_5a162d58 += float(getcamanimtime(s_entry.cameraswitcher)) / 1000;
                         continue;
                     }
                     if (isdefined(s_entry.("anim"))) {
-                        n_anim_length = n_anim_length + getanimlength(s_entry.("anim"));
+                        n_anim_length += getanimlength(s_entry.("anim"));
                     }
                 }
                 break;
@@ -2747,7 +2747,7 @@ function function_dde5f483(str_scenedef, n_elapsed_time) {
             var_8b21886e.var_3486c904 = (n_elapsed_time - var_219aac3f) / var_958bccd3;
             return var_8b21886e;
         }
-        var_7a2504a = var_7a2504a + var_958bccd3;
+        var_7a2504a += var_958bccd3;
     }
     var_8b21886e.var_ef711d04 = a_shots[a_shots.size - 1];
     var_8b21886e.var_3486c904 = 0.9;
@@ -2783,7 +2783,7 @@ function function_12479eba(str_scenedef) {
     a_shots = get_all_shot_names(str_scenedef, undefined, 1);
     var_9d90ef8b = 0;
     foreach (str_shot in a_shots) {
-        var_9d90ef8b = var_9d90ef8b + function_8582657c(s_scenedef, str_shot);
+        var_9d90ef8b += function_8582657c(s_scenedef, str_shot);
     }
     return var_9d90ef8b;
 }
@@ -2941,7 +2941,7 @@ function _play_instance(s_tracker, str_scenedef = self.scriptbundlename, a_ents,
         var_8b21886e = function_d1abba8b(str_scenedef, str_mode, n_time);
         str_shot = var_8b21886e.var_ef711d04;
         var_dd2b75b = var_8b21886e.var_3486c904;
-        str_mode = str_mode + ":" + var_dd2b75b;
+        str_mode += ":" + var_dd2b75b;
     }
     if (str_mode === "init") {
         str_shot = function_de6a7579(str_scenedef, str_mode, self);

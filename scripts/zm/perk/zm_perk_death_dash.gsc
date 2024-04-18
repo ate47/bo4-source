@@ -212,7 +212,7 @@ function function_b1d12202() {
     self clientfield::set_to_player("death_dash_dash_postfx", 1);
     self.var_d675d730.n_kill_count = 0;
     var_8e317f6c = vectornormalize(anglestoforward(self.angles) + (0, 0, -0.66));
-    var_8e317f6c = var_8e317f6c * 1500;
+    var_8e317f6c *= 1500;
     self thread function_aeda9580(var_8e317f6c);
     self thread function_749be7c5();
     var_23322f89 = lerpfloat(0.1, 0.5, self.var_d675d730.var_ec50ac8e);
@@ -384,7 +384,7 @@ function function_7d72c6f9(var_85dcb56c) {
     self zm_perks::function_13880aa5(self.var_d675d730.var_775a4a2a, 0, #"perk_dying_wish");
     while (true) {
         wait(0.1);
-        self.var_d675d730.var_471d9402 = self.var_d675d730.var_471d9402 - 0.1;
+        self.var_d675d730.var_471d9402 -= 0.1;
         self.var_d675d730.var_471d9402 = math::clamp(self.var_d675d730.var_471d9402, 0, var_85dcb56c);
         n_percentage = 1 - self.var_d675d730.var_471d9402 / var_85dcb56c;
         n_percentage = math::clamp(n_percentage, 0.02, var_85dcb56c);

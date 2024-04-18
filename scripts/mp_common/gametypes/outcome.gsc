@@ -82,7 +82,7 @@ function function_2e00fa44(outcome) {
     flags = 0;
     foreach (var_b4a9554f in level.var_9b671c3c) {
         if (outcome flagsys::get(var_b4a9554f.flag)) {
-            flags = flags | var_b4a9554f.code_flag;
+            flags |= var_b4a9554f.code_flag;
         }
     }
     return flags;
