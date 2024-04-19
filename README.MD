@@ -83,6 +83,7 @@ Thanks to these people for the hashes.
 
 - Serious and the others from the [t8-src](https://github.com/shiversoftdev/t8-src) repository.
 - Scobalula and the others from the [Greyhound package index](https://github.com/Scobalula/GreyhoundPackageIndex) repository.
+- Richkiller, we wish him all the best where he can be.
 - Jek47
 - Luisete2105
 - All the others I forgot to mention.
