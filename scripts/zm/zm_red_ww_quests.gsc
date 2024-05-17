@@ -1770,9 +1770,9 @@ function function_bce6357e() {
     self.var_4d532f57 = 1;
     s_portal_loc = struct::get("s_ww_quests_death_portal_pos", "targetname");
     do {
-        self.var_40af6972 = util::spawn_model("tag_origin", s_portal_loc.origin, s_portal_loc.angles);
+        self.e_portal_fx = util::spawn_model("tag_origin", s_portal_loc.origin, s_portal_loc.angles);
         waitframe(1);
-    } while (!isdefined(self.var_40af6972));
+    } while (!isdefined(self.e_portal_fx));
     self thread function_4e2445e0();
     e_player thread zm_vo::vo_say(#"hash_61fe324f03dd16d7", 0, 1, 9999, 1, 1);
     foreach (mdl_coin in a_mdl_coins) {
@@ -3732,8 +3732,8 @@ function function_4cd29565(s_quest) {
 // Checksum 0x23c3a3, Offset: 0x12b78
 // Size: 0x17c
 function function_530d7ea0(var_bcf66490, e_player) {
-    if (isdefined(self.var_40af6972)) {
-        self.var_40af6972 clientfield::set(self.var_a04ebe57, var_bcf66490);
+    if (isdefined(self.e_portal_fx)) {
+        self.e_portal_fx clientfield::set(self.var_a04ebe57, var_bcf66490);
     } else if (isdefined(self.var_f94ca998)) {
         if (isdefined(var_bcf66490) && var_bcf66490) {
             exploder::exploder(self.var_f94ca998);

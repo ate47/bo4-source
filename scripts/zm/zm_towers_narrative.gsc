@@ -594,11 +594,11 @@ function function_ca4e26c3() {
     self endon("45c9a4f55b11e032");
     level endon(#"end_game", #"hash_aab8ed14df98649");
     self endon(#"disconnect");
-    var_59795ba5 = array(level.hero_weapon[#"sword_pistol"][0].dualwieldweapon, level.hero_weapon[#"sword_pistol"][1].dualwieldweapon, level.hero_weapon[#"sword_pistol"][2].dualwieldweapon);
+    a_w_pistols = array(level.hero_weapon[#"sword_pistol"][0].dualwieldweapon, level.hero_weapon[#"sword_pistol"][1].dualwieldweapon, level.hero_weapon[#"sword_pistol"][2].dualwieldweapon);
     while (true) {
         s_waitresult = self waittill(#"weapon_fired");
         w_weapon = s_waitresult.weapon;
-        if (isdefined(w_weapon) && isinarray(var_59795ba5, w_weapon)) {
+        if (isdefined(w_weapon) && isinarray(a_w_pistols, w_weapon)) {
             v_origin = self getweaponmuzzlepoint();
             v_dir = self getweaponforwarddir();
             n_range = level.hero_weapon_stats[#"sword_pistol"][#"hash_579056d441d637d"];

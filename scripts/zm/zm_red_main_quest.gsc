@@ -440,7 +440,7 @@ function function_630766ac() {
             if (!isbot(self)) {
                 self clientfield::increment_to_player("" + #"hash_7343b1cdab1f31c5");
             }
-            self riotshield::player_damage_shield(25 / zombie_utility::function_d2dfacfd(#"hash_cc85b961f25c2ff"), undefined, undefined, undefined, 0);
+            self riotshield::player_damage_shield(25 / zombie_utility::get_zombie_var(#"hash_cc85b961f25c2ff"), undefined, undefined, undefined, 0);
         }
     }
 }
@@ -1520,10 +1520,10 @@ function function_3ffc2c9e() {
     a_s_roots[#"medium"] = struct::get_array(#"hash_7262d5ff710a3d2c");
     a_s_roots[#"hard"] = struct::get_array(#"hash_3686ffef2f4fe836");
     s_prophecy.a_s_roots = a_s_roots;
-    var_61bf8b71[#"outer"] = getent("mdl_prophecy_code_easy", "targetname");
-    var_61bf8b71[#"middle"] = getent("mdl_prophecy_code_medium", "targetname");
-    var_61bf8b71[#"inner"] = getent("mdl_prophecy_code_hard", "targetname");
-    s_prophecy.var_61bf8b71 = var_61bf8b71;
+    a_mdl_sundial[#"outer"] = getent("mdl_prophecy_code_easy", "targetname");
+    a_mdl_sundial[#"middle"] = getent("mdl_prophecy_code_medium", "targetname");
+    a_mdl_sundial[#"inner"] = getent("mdl_prophecy_code_hard", "targetname");
+    s_prophecy.a_mdl_sundial = a_mdl_sundial;
     var_7bb826c5 = getent("mdl_prophecy_block", "targetname");
     if (!zm_utility::is_ee_enabled()) {
         var_7bb826c5 delete();
@@ -1983,9 +1983,9 @@ function sundial_puzzle_cleanup(b_skipped, var_19e802fa) {
     if (isdefined(var_625d23b8)) {
         var_625d23b8 show();
     }
-    var_14d5aa56 = s_prophecy.var_14d5aa56;
-    if (isdefined(var_14d5aa56)) {
-        array::delete_all(var_14d5aa56);
+    a_mdl_symbols = s_prophecy.a_mdl_symbols;
+    if (isdefined(a_mdl_symbols)) {
+        array::delete_all(a_mdl_symbols);
     }
     s_unitrigger = struct::get(#"hash_1deabdaf47d6a78");
     if (isdefined(s_unitrigger)) {
@@ -2023,13 +2023,13 @@ function function_4c903aa5() {
     level thread function_ade40c4a();
     level thread function_3ddff1b4();
     s_prophecy = level.var_cc9c60d2;
-    var_61bf8b71 = s_prophecy.var_61bf8b71;
+    a_mdl_sundial = s_prophecy.a_mdl_sundial;
     var_3ab52107 = array(2, 3, 4, 5, 6, 7, 8);
     b_clockwise = math::cointoss();
     s_unitrigger = struct::get(#"hash_1deabdaf47d6a78");
     s_unitrigger zm_unitrigger::create(&function_63b805db, 96);
     s_unitrigger thread function_8e8da19a();
-    foreach (str_ring, mdl_ring in var_61bf8b71) {
+    foreach (str_ring, mdl_ring in a_mdl_sundial) {
         switch (str_ring) {
         case #"outer":
             var_dcc2eee3 = 0.5;
@@ -3506,9 +3506,9 @@ function function_f10904df() {
     while (!isdefined(s_light.var_19d2da88)) {
         waitframe(1);
     }
-    var_8127aa11 = s_light.var_19d2da88;
-    mdl_fx = util::spawn_model(#"tag_origin", var_8127aa11 gettagorigin("fx_tag_ra_scepter"), var_8127aa11 gettagangles("fx_tag_ra_scepter"));
-    mdl_fx linkto(var_8127aa11, "fx_tag_ra_scepter");
+    mdl_arms = s_light.var_19d2da88;
+    mdl_fx = util::spawn_model(#"tag_origin", mdl_arms gettagorigin("fx_tag_ra_scepter"), mdl_arms gettagangles("fx_tag_ra_scepter"));
+    mdl_fx linkto(mdl_arms, "fx_tag_ra_scepter");
     mdl_fx clientfield::set("" + #"hash_431f319e4b8fe9db", 1);
 }
 
@@ -5722,12 +5722,12 @@ function mid_igc_setup(b_skipped) {
                 break;
             }
         }
-        var_c7410412 = e_actor.var_fd05e363;
-        if (isdefined(var_c7410412)) {
-            n_slot = e_actor gadgetgetslot(var_c7410412);
+        w_hero_weapon = e_actor.var_fd05e363;
+        if (isdefined(w_hero_weapon)) {
+            n_slot = e_actor gadgetgetslot(w_hero_weapon);
             if (e_actor gadgetisactive(n_slot) || e_actor function_36dfc05f(n_slot)) {
                 e_actor.var_b0df5e59 = n_slot;
-                e_actor thread zm_hero_weapon::hero_weapon_off(n_slot, var_c7410412);
+                e_actor thread zm_hero_weapon::hero_weapon_off(n_slot, w_hero_weapon);
             }
         }
     }
@@ -6376,8 +6376,8 @@ function function_7b4b880f() {
     w_thunderstorm = getweapon(#"thunderstorm");
     while (true) {
         while (true) {
-            var_291db748 = self._gadgets_player;
-            if (isdefined(var_291db748) && isinarray(var_291db748, w_thunderstorm)) {
+            a_w_gadgets = self._gadgets_player;
+            if (isdefined(a_w_gadgets) && isinarray(a_w_gadgets, w_thunderstorm)) {
                 break;
             }
             waitframe(1);
@@ -6385,8 +6385,8 @@ function function_7b4b880f() {
         self ability_util::function_e8aa75b8(w_thunderstorm);
         self.var_69c1f71b = 1;
         while (true) {
-            var_291db748 = self._gadgets_player;
-            if (isdefined(var_291db748) && !isinarray(var_291db748, w_thunderstorm)) {
+            a_w_gadgets = self._gadgets_player;
+            if (isdefined(a_w_gadgets) && !isinarray(a_w_gadgets, w_thunderstorm)) {
                 break;
             }
             waitframe(1);

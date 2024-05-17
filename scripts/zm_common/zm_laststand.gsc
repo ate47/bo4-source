@@ -892,8 +892,8 @@ function function_b7c101fa() {
     self endon(#"disconnect");
     self.var_72249004 = 0;
     self.var_308dc243 = 0;
-    self.var_d66589da = int(zombie_utility::function_d2dfacfd(#"hash_67ae1b8cbb7c985"));
-    self.var_5d4c5daf = int(zombie_utility::function_d2dfacfd(#"hash_3098c53bba6402d3"));
+    self.var_d66589da = int(zombie_utility::get_zombie_var(#"hash_67ae1b8cbb7c985"));
+    self.var_5d4c5daf = int(zombie_utility::get_zombie_var(#"hash_3098c53bba6402d3"));
     level thread function_4d3cb10();
     self waittill(#"spawned");
     level flag::wait_till("start_zombie_round_logic");

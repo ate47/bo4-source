@@ -1228,7 +1228,7 @@ function private function_34c2aeb5() {
         var_d75008e3 = -3;
         break;
     }
-    n_target = int(max(zombie_utility::function_d2dfacfd(#"player_base_health") + 50 * var_d75008e3, 1));
+    n_target = int(max(zombie_utility::get_zombie_var(#"player_base_health") + 50 * var_d75008e3, 1));
     n_mod = math::clamp(n_target - player.var_66cb03ad, 0, n_target);
     player player::function_2a67df65(#"custom_settings", n_mod);
     player.var_66cb03ad = n_target;
@@ -1240,7 +1240,7 @@ function private function_34c2aeb5() {
         player.n_regen_delay = 2;
         break;
     case 1:
-        player.n_regen_delay = zombie_utility::function_d2dfacfd("player_health_regen_delay");
+        player.n_regen_delay = zombie_utility::get_zombie_var("player_health_regen_delay");
         break;
     case 2:
         player.n_regen_delay = 8;
@@ -1254,7 +1254,7 @@ function private function_34c2aeb5() {
         player.n_regen_rate = 50;
         break;
     case 2:
-        player.n_regen_rate = zombie_utility::function_d2dfacfd("player_health_regen_rate");
+        player.n_regen_rate = zombie_utility::get_zombie_var("player_health_regen_rate");
         break;
     case 3:
         player.n_regen_rate = 12.5;

@@ -30,7 +30,7 @@ function __init__() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x971c913f, Offset: 0x1d8
 // Size: 0xf4
-function function_e31bc59d(var_3245778e, weapon) {
+function function_e31bc59d(abilityslot, weapon) {
     if (weapon != getweapon(#"sig_buckler_dw")) {
         return;
     }
@@ -51,7 +51,7 @@ function function_e31bc59d(var_3245778e, weapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xefc7823b, Offset: 0x2d8
 // Size: 0x1e
-function linkcable_off_tele(var_3245778e, weapon) {
+function linkcable_off_tele(abilityslot, weapon) {
     self.var_4233f7e5 = 0;
 }
 

@@ -312,9 +312,9 @@ function function_599013ad(e_player, var_98fbd60e) {
 // Checksum 0xd6604167, Offset: 0x1b38
 // Size: 0xb8
 function function_a057cdf0() {
-    foreach (var_a2a0a44e in level.var_8e6fc65e) {
-        var_a2a0a44e setmodel("p8_zm_esc_skull_sgl");
-        var_a2a0a44e clientfield::set("" + #"hash_5f7eb9d1316d02a7", 0);
+    foreach (mdl_skull in level.var_8e6fc65e) {
+        mdl_skull setmodel("p8_zm_esc_skull_sgl");
+        mdl_skull clientfield::set("" + #"hash_5f7eb9d1316d02a7", 0);
     }
 }
 
@@ -340,9 +340,9 @@ function function_817977d1() {
 function function_d586e457() {
     level endon(#"hash_fd8be2ffb55eaf7");
     var_ec3ff08c = array::sort_by_script_int(level.var_8e6fc65e, 0);
-    foreach (var_a2a0a44e in var_ec3ff08c) {
-        var_a2a0a44e setmodel("p8_zm_esc_skull_sgl");
-        var_a2a0a44e clientfield::set("" + #"hash_5f7eb9d1316d02a7", 0);
+    foreach (mdl_skull in var_ec3ff08c) {
+        mdl_skull setmodel("p8_zm_esc_skull_sgl");
+        mdl_skull clientfield::set("" + #"hash_5f7eb9d1316d02a7", 0);
         wait(0.5);
     }
     wait(0.5);
@@ -469,16 +469,16 @@ function function_9689b55c(var_88f24b00) {
     self endon(#"death");
     var_88f24b00 endon(#"death");
     var_39662a63 = int(5);
-    foreach (var_a2a0a44e in level.var_8e6fc65e) {
-        if (var_a2a0a44e.script_int == 0) {
-            var_ddbc98df = var_a2a0a44e;
+    foreach (mdl_skull in level.var_8e6fc65e) {
+        if (mdl_skull.script_int == 0) {
+            var_ddbc98df = mdl_skull;
             continue;
         }
-        if (var_a2a0a44e.script_int == 1) {
-            var_f697c38 = var_a2a0a44e;
+        if (mdl_skull.script_int == 1) {
+            var_f697c38 = mdl_skull;
             continue;
         }
-        var_b9484ff7 = var_a2a0a44e;
+        var_b9484ff7 = mdl_skull;
     }
     while (true) {
         s_result = self waittill(#"trigger");
@@ -1069,9 +1069,9 @@ function function_ecc34f71(e_player) {
     function function_6f4823a9(cmd) {
         switch (cmd) {
         case #"hash_2406dff55d52785a":
-            foreach (var_a2a0a44e in level.var_8e6fc65e) {
-                var_a2a0a44e setmodel("<unknown string>");
-                var_a2a0a44e clientfield::set("<unknown string>" + #"hash_5f7eb9d1316d02a7", 1);
+            foreach (mdl_skull in level.var_8e6fc65e) {
+                mdl_skull setmodel("<unknown string>");
+                mdl_skull clientfield::set("<unknown string>" + #"hash_5f7eb9d1316d02a7", 1);
             }
             level flag::set(#"hash_3fb7d58b07b04333");
             break;

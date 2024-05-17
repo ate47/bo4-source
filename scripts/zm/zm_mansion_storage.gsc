@@ -321,9 +321,9 @@ function function_941b297c(var_22c00989) {
         return;
     }
     wait(3.4);
-    var_9c0bf2db = zm_powerups::specific_powerup_drop("bonus_points_player", self.var_872e2994.origin, undefined, undefined, undefined, 1);
+    mdl_powerup = zm_powerups::specific_powerup_drop("bonus_points_player", self.var_872e2994.origin, undefined, undefined, undefined, 1);
     /#
-        if (!isdefined(var_9c0bf2db)) {
+        if (!isdefined(mdl_powerup)) {
             assert(0, "<unknown string>");
         }
     #/
@@ -539,8 +539,8 @@ function function_410dd5a6(s_pos) {
 // Checksum 0xb21b4101, Offset: 0x2838
 // Size: 0x1c6
 function function_f2ca3ec8(s_pos) {
-    var_9b6698a3 = array(#"lmg_double_t8", #"lmg_heavy_t8", #"lmg_spray_t8", #"lmg_standard_t8");
-    str_weapon = array::random(var_9b6698a3);
+    a_str_lmgs = array(#"lmg_double_t8", #"lmg_heavy_t8", #"lmg_spray_t8", #"lmg_standard_t8");
+    str_weapon = array::random(a_str_lmgs);
     w_reward = getweapon(str_weapon);
     var_a76c9d75 = level.a_s_barrels[level.a_s_barrels.size - 1].e_attacker;
     if (!isdefined(var_a76c9d75)) {

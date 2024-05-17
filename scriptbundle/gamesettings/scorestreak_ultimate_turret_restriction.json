@@ -7,7 +7,7 @@
     "name": "scorestreak_ultimate_turret_restriction",
     "displayname": "#hash_7a37b2fcb855abe4",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__ultimate_turret__restricted"
 }

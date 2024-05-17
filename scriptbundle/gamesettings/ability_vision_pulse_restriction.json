@@ -7,7 +7,7 @@
     "name": "ability_vision_pulse_restriction",
     "displayname": "#hash_604bdaeea37546c9",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__gadget_vision_pulse__restricted"
 }

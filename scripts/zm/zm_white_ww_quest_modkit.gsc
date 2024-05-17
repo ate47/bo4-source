@@ -135,7 +135,7 @@ function modkit_hint(e_player) {
         self sethintstring(#"hash_385e1ce240650791");
     } else {
         str_weapon_name = level.var_57f4595b[e_player.var_f7694097].displayname;
-        if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"hash_603fdd2e4ae5b2b0") {
+        if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"zhield_riot_dw") {
             self sethintstring("");
         } else if (isdefined(var_2c09b688)) {
             self sethintstring(zm_utility::function_d6046228(#"hash_172253c9314825fc", #"hash_71016e43b6fe0570"), str_weapon_name, var_2c09b688.displayname);
@@ -155,7 +155,7 @@ function modkit_think() {
     while (true) {
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
-        if (isdefined(e_player.var_f7694097) && e_player.var_382b64f2 === 1 && e_player.currentweapon.isheroweapon === 0 && e_player.currentweapon.name !== #"hash_603fdd2e4ae5b2b0") {
+        if (isdefined(e_player.var_f7694097) && e_player.var_382b64f2 === 1 && e_player.currentweapon.isheroweapon === 0 && e_player.currentweapon.name !== #"zhield_riot_dw") {
             self thread function_584d6092(e_player);
         }
     }

@@ -7,7 +7,7 @@
     "name": "operator_dragonbreath_restriction",
     "displayname": "#hash_458a2d11552744fe",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__shotgun_pump_t8__attachments__uber"
 }

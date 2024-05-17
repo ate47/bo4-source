@@ -1114,7 +1114,7 @@ function function_e340db61() {
     }
     ct_vo::function_3ca1b77d();
     ct_utils::function_9aca2fa0("ct_action");
-    level thread ct_utils::function_c561377e();
+    level thread ct_utils::kill_all_bots();
     e_player thread ct_bots::function_26d45f32(1);
     level.fx_warlord_igc_ = undefined;
 }
@@ -1188,7 +1188,7 @@ function function_1c78b967() {
         e_player waittilltimeout(1, #"death");
     }
     level thread ct_utils::function_79957328(undefined);
-    level thread ct_utils::function_c561377e(undefined);
+    level thread ct_utils::kill_all_bots(undefined);
     level notify(#"tutorial_goto_end");
     level thread ct_vo::function_831e0584(array("vox_tvoi_tutor_ruin_final_1_hell_fail"), 0);
     level notify(#"hash_6308f4ed0b129e5d");
@@ -1289,13 +1289,13 @@ function earn_the_hellstorm_objective() {
             ct_utils::function_79957328(undefined);
         }
         level notify(#"earn_the_hellstorm_objective");
-        level thread ct_utils::function_c561377e();
+        level thread ct_utils::kill_all_bots();
     }
     level.var_e72728b8 = array(#"eq_gravityslam");
     level notify(#"earn_the_hellstorm_objective");
     level.var_e6db911d = 1;
     waitframe(1);
-    level thread ct_utils::function_c561377e();
+    level thread ct_utils::kill_all_bots();
     level thread ct_utils::function_9aca2fa0("ct_action");
     e_player thread ct_utils::function_61c3d59c(#"hash_68aa241db4edd9fa", undefined);
     ct_vo::function_831e0584(array("vox_tvoi_tutor_ruin_final_2_comp"), 1);
@@ -1479,7 +1479,7 @@ function function_bbdd4fa9() {
         result = e_player waittill(#"stopped_using_remote");
         level.play_taacom_dialog = undefined;
         level.var_4b6a7a3a = 1;
-        ct_utils::function_c561377e(undefined, undefined, 0);
+        ct_utils::kill_all_bots(undefined, undefined, 0);
         if (result._notify == "stopped_using_remote") {
         }
         if (!isalive(e_player)) {
@@ -1494,7 +1494,7 @@ function function_bbdd4fa9() {
         }
         ct_vo::function_831e0584(array("vox_tvoi_tutor_ruin_final_3_miss_nag"), 1);
     }
-    ct_utils::function_c561377e();
+    ct_utils::kill_all_bots();
     ct_utils::function_9aca2fa0("ct_endgame");
     ct_vo::function_831e0584(array("vox_tvoi_tutor_ruin_final_3_comp_0", "vox_tvoi_tutor_ruin_final_3_comp_1"), 1);
     level.play_taacom_dialog = level.var_bbd2b179;

@@ -7,7 +7,7 @@
     "name": "wc_perk1gluttony_restriction",
     "displayname": "#hash_4fbc28c18c79c87a",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__bonuscard_perk_1_gluttony__restricted"
 }

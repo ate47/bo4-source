@@ -761,7 +761,7 @@ function init_levelvars() {
     level.speed_change_max = 0;
     level.speed_change_num = 0;
     zm_round_logic::set_round_number(level.round_number);
-    zm_score::function_e5d6e6dd(#"zombie", zombie_utility::function_d2dfacfd(#"zombie_score_kill"));
+    zm_score::function_e5d6e6dd(#"zombie", zombie_utility::get_zombie_var(#"zombie_score_kill"));
 }
 
 // Namespace zm/zm
@@ -1507,7 +1507,7 @@ function function_d723e40() {
     level endon(#"resume_end_game");
     wait(1);
     luinotifyevent(#"hash_1fc4832b89307895", 0);
-    wait(zombie_utility::function_d2dfacfd(#"hash_6bae95928bbe8f1"));
+    wait(zombie_utility::get_zombie_var(#"hash_6bae95928bbe8f1"));
     level notify(#"resume_end_game");
 }
 
@@ -1702,7 +1702,7 @@ function end_game() {
         level thread zm_trial_util::function_f79b96ac();
     }
     if (potm::function_afe21831() == 0) {
-        wait(zombie_utility::function_d2dfacfd(#"zombie_intermission_time"));
+        wait(zombie_utility::get_zombie_var(#"zombie_intermission_time"));
     }
     players = getplayers();
     for (i = 0; i < players.size; i++) {
@@ -2129,7 +2129,7 @@ function is_idgun_damage(weapon) {
 // Checksum 0x4715e2ec, Offset: 0xa128
 // Size: 0x1a6
 function function_a2b54d42() {
-    n_multiplier = zombie_utility::function_d2dfacfd(#"hash_1ab42b4d7db4cb3c");
+    n_multiplier = zombie_utility::get_zombie_var(#"hash_1ab42b4d7db4cb3c");
     if (zm_utility::is_standard()) {
         switch (level.players.size) {
         case 1:

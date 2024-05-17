@@ -2223,9 +2223,9 @@ function function_44776cd(var_f3aa6dfe, s_loc, n_range = 24) {
     var_df82cc86[2] = 2;
     var_df82cc86[1] = 0;
     self function_b512a9bf(var_df82cc86[var_f3aa6dfe]);
-    var_b0d4d7bc = [];
-    var_b0d4d7bc[2] = "smartcover_placed";
-    var_b0d4d7bc[1] = "razorwire_placed";
+    a_str_wait = [];
+    a_str_wait[2] = "smartcover_placed";
+    a_str_wait[1] = "razorwire_placed";
     var_b4c85699 = [];
     var_b4c85699[2] = &smart_cover::function_b11be5dc;
     var_b4c85699[1] = &function_400149db;
@@ -2254,7 +2254,7 @@ function function_44776cd(var_f3aa6dfe, s_loc, n_range = 24) {
     playfx("player/fx8_plyr_spawn_distortion", v_pos, v_fwd * -1);
     n_range_sq = n_range * n_range;
     do {
-        self waittill(var_b0d4d7bc[var_f3aa6dfe]);
+        self waittill(a_str_wait[var_f3aa6dfe]);
         wait(0.5);
         e_cover = self function_6e4b6ccc(var_f3aa6dfe);
         var_af9bc380 = e_cover function_9326b2b2(var_f3aa6dfe, s_loc);
@@ -2595,10 +2595,10 @@ function function_6e4b6ccc(var_f3aa6dfe) {
 // Checksum 0x8272e803, Offset: 0xd0e0
 // Size: 0xa4
 function function_b512a9bf(n_slot) {
-    var_dee68e3f = [];
-    var_dee68e3f[2] = #"ability_smart_cover";
-    var_dee68e3f[0] = #"eq_concertina_wire";
-    str_gadget = var_dee68e3f[n_slot];
+    a_str_gadgets = [];
+    a_str_gadgets[2] = #"ability_smart_cover";
+    a_str_gadgets[0] = #"eq_concertina_wire";
+    str_gadget = a_str_gadgets[n_slot];
     if (isdefined(level.var_e72728b8)) {
         arrayremovevalue(level.var_e72728b8, str_gadget);
     }

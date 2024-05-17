@@ -1,7 +1,7 @@
 {
     "name": "#hash_198d7067115d11d4",
     "baseWeapon": "#smg_handling_t8_upgraded_dw",
-    "displayname": "#hash_66352f7214d614ac",
+    "displayname": "#zmweapon/smg_handling_t8_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

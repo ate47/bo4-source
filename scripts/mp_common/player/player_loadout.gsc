@@ -389,7 +389,7 @@ function function_97d216fa(response) {
 // Params 2, eflags: 0x4
 // Checksum 0x9cc437fa, Offset: 0x1f28
 // Size: 0xe4
-function private function_f8157311(weaponclass, killstreaknum) {
+function private get_killstreak_index(weaponclass, killstreaknum) {
     killstreaknum++;
     killstreakstring = "killstreak" + killstreaknum;
     if (getdvarint(#"custom_killstreak_mode", 0) == 2) {
@@ -435,7 +435,7 @@ function give_killstreaks() {
     sortedkillstreaks = [];
     currentkillstreak = 0;
     for (killstreaknum = 0; killstreaknum < level.maxkillstreaks; killstreaknum++) {
-        killstreakindex = function_f8157311(classnum, killstreaknum);
+        killstreakindex = get_killstreak_index(classnum, killstreaknum);
         if (isdefined(killstreakindex) && killstreakindex > 0) {
             assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
             if (isdefined(level.tbl_killstreakdata[killstreakindex])) {
@@ -721,7 +721,7 @@ function private function_2ada6938(slot) {
     if (weapon.iscarriedkillstreak) {
         weapon = level.weaponnull;
     }
-    var_348d3044 = weapon.name;
+    current_weapon_name = weapon.name;
     if (slot == "primary" || slot == "secondary") {
         var_4d371861 = self getweaponoptic(weapon);
     }

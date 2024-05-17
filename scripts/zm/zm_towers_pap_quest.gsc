@@ -758,7 +758,7 @@ function function_499b080d(str_tower, str_encounter) {
     level zm_ui_inventory::function_7df6bb60(str_clientfield, 2);
     level.var_c22016cf++;
     level thread function_7590a833();
-    n_scalar = zombie_utility::function_6403cf83(#"zombie_point_scalar", #"allies");
+    n_scalar = zombie_utility::get_zombie_var_team(#"zombie_point_scalar", #"allies");
     foreach (e_player in level.players) {
         e_player zm_score::add_to_player_score(500 * n_scalar);
     }

@@ -127,7 +127,7 @@ function function_45cfd64e(e_activator) {
 // Checksum 0xf4acabdc, Offset: 0xd08
 // Size: 0x1c8
 function function_d99e105f() {
-    var_b70abd9d = array("fxexp_top_fountain_01", "");
+    a_exploders = array("fxexp_top_fountain_01", "");
     a_s_buttons = struct::get_array("fountain_button");
     var_ebd977d = getentarray("fountain_button_panel", "script_interact_group");
     foreach (s_button in a_s_buttons) {
@@ -148,11 +148,11 @@ function function_d99e105f() {
 // Checksum 0x9ca7da44, Offset: 0xed8
 // Size: 0x224
 function function_393b459a(e_activator) {
-    var_b70abd9d = array("fxexp_top_fountain_01", "fxexp_top_fountain_02", "fxexp_top_fountain_03", "fxexp_top_fountain_04", "fxexp_fountain_jet_01", "fxexp_fountain_jet_02", "fxexp_fountain_jet_03", "fxexp_fountain_jet_04", "fxexp_fountain_jet_05", "fxexp_fountain_jet_06", "fxexp_fountain_jet_07", "fxexp_fountain_jet_08");
+    a_exploders = array("fxexp_top_fountain_01", "fxexp_top_fountain_02", "fxexp_top_fountain_03", "fxexp_top_fountain_04", "fxexp_fountain_jet_01", "fxexp_fountain_jet_02", "fxexp_fountain_jet_03", "fxexp_fountain_jet_04", "fxexp_fountain_jet_05", "fxexp_fountain_jet_06", "fxexp_fountain_jet_07", "fxexp_fountain_jet_08");
     array::thread_all(self.a_s_buttons, &gameobjects::disable_object);
     level thread function_9940fbb9(self.var_ebd977d, "busy");
     for (i = 0; i < 5; i++) {
-        foreach (str_exploder in var_b70abd9d) {
+        foreach (str_exploder in a_exploders) {
             util::delay(randomfloat(0.6), undefined, &exploder::exploder, str_exploder);
         }
         wait(1.4);

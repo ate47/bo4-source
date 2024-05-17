@@ -427,7 +427,7 @@ function function_c3076788(e_player) {
     case 9:
         return false;
     }
-    if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"hash_603fdd2e4ae5b2b0") {
+    if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"zhield_riot_dw") {
         self sethintstring("");
     } else if (isdefined(var_45d63569)) {
         self sethintstring(zm_utility::function_d6046228(str_hint, var_306b9dd6), var_339390e4, var_45d63569);
@@ -448,7 +448,7 @@ function function_7d123028() {
     while (true) {
         s_notify = self waittill(#"trigger_activated");
         e_player = s_notify.e_who;
-        if (isplayer(e_player) && e_player.currentweapon.isheroweapon === 0 && e_player.currentweapon.name !== #"hash_603fdd2e4ae5b2b0") {
+        if (isplayer(e_player) && e_player.currentweapon.isheroweapon === 0 && e_player.currentweapon.name !== #"zhield_riot_dw") {
             function_75e61716(e_player);
         }
     }

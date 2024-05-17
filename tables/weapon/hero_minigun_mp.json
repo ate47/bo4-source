@@ -1,7 +1,7 @@
 {
     "name": "#hero_minigun_mp",
     "baseWeapon": "#hero_minigun",
-    "displayname": "#hash_58dbb47ef8a2b88a",
+    "displayname": "#weapon/hero_minigun",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

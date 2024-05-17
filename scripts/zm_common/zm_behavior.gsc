@@ -108,7 +108,7 @@ function private __main__() {
 // Size: 0x20e
 function function_57d3b5eb() {
     if (isdefined(self._starting_round_number)) {
-        self.maxhealth = int(zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), self._starting_round_number) * (isdefined(level.var_46e03bb6) ? level.var_46e03bb6 : 1));
+        self.maxhealth = int(zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), self._starting_round_number) * (isdefined(level.var_46e03bb6) ? level.var_46e03bb6 : 1));
         self.health = self.maxhealth;
     } else {
         self zm_cleanup::function_aa5726f2();

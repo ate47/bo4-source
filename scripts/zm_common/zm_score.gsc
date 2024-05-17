@@ -237,7 +237,7 @@ function player_add_points(event, mod, hit_location, e_target, zombie_team, dama
             if (!var_e6e61503) {
                 scoreevents::processscoreevent("transform_kill", self, undefined, damage_weapon);
             }
-            player_points = zombie_utility::function_d2dfacfd(#"hash_68aa9b4c8de33261");
+            player_points = zombie_utility::get_zombie_var(#"hash_68aa9b4c8de33261");
             break;
         default:
             assert(0, "<unknown string>");
@@ -282,7 +282,7 @@ function private function_e31cf9d5(str_score_event) {
 // Checksum 0x4defc801, Offset: 0x1098
 // Size: 0xf2
 function get_points_multiplier(player) {
-    multiplier = isdefined(player zombie_utility::function_73061b82(#"zombie_point_scalar")) ? player zombie_utility::function_73061b82(#"zombie_point_scalar") : zombie_utility::function_6403cf83(#"zombie_point_scalar", player.team);
+    multiplier = isdefined(player zombie_utility::get_zombie_var_player(#"zombie_point_scalar")) ? player zombie_utility::get_zombie_var_player(#"zombie_point_scalar") : zombie_utility::get_zombie_var_team(#"zombie_point_scalar", player.team);
     if (isdefined(level.current_game_module) && level.current_game_module == 2) {
         if (isdefined(level._race_team_double_points) && level._race_team_double_points == player._race_team) {
             return multiplier;
@@ -314,7 +314,7 @@ function player_add_points_kill_bonus(mod, hit_location, weapon, player_points =
     if (mod == "MOD_MELEE" && (!isdefined(weapon) || !weapon.isriotshield && !zm_loadout::is_hero_weapon(weapon))) {
         self score_cf_increment_info("death_melee", var_e6e61503);
         scoreevents::processscoreevent("melee_kill", self, undefined, weapon);
-        return zombie_utility::function_d2dfacfd(#"zombie_score_bonus_melee");
+        return zombie_utility::get_zombie_var(#"zombie_score_bonus_melee");
     }
     if (isdefined(player_points)) {
         score = player_points;
@@ -327,7 +327,7 @@ function player_add_points_kill_bonus(mod, hit_location, weapon, player_points =
         case #"helmet":
         case #"neck":
             self score_cf_increment_info("death_head", var_e6e61503);
-            score = zombie_utility::function_d2dfacfd(#"zombie_score_bonus_head");
+            score = zombie_utility::get_zombie_var(#"zombie_score_bonus_head");
             break;
         default:
             break;
@@ -360,7 +360,7 @@ function player_reduce_points(event, n_amount) {
             percent = zm_custom::function_901b751c(#"zmpointlossonteammatedeath") / 100;
             points = self.score * percent;
         } else if (level.round_number >= 50) {
-            percent = zombie_utility::function_d2dfacfd(#"penalty_no_revive");
+            percent = zombie_utility::get_zombie_var(#"penalty_no_revive");
             points = self.score * percent;
         }
         break;
@@ -369,7 +369,7 @@ function player_reduce_points(event, n_amount) {
             percent = zm_custom::function_901b751c(#"zmpointlossondeath") / 100;
             points = self.score * percent;
         } else if (level.round_number >= 50) {
-            percent = zombie_utility::function_d2dfacfd(#"penalty_died");
+            percent = zombie_utility::get_zombie_var(#"penalty_died");
             points = self.score * percent;
         }
         break;
@@ -379,8 +379,8 @@ function player_reduce_points(event, n_amount) {
         } else if (zm_custom::function_901b751c(#"zmpointlossondown")) {
             percent = zm_custom::function_901b751c(#"zmpointlossondown") / 100;
         } else {
-            percent = zombie_utility::function_d2dfacfd(#"penalty_downed");
-            step = zombie_utility::function_d2dfacfd(#"hash_3037a1f286b662e6");
+            percent = zombie_utility::get_zombie_var(#"penalty_downed");
+            step = zombie_utility::get_zombie_var(#"hash_3037a1f286b662e6");
             if (step > 0) {
                 percent *= int(self.score / step);
             }
@@ -578,7 +578,7 @@ function function_89db94b3(e_attacker, n_damage, e_inflictor) {
     if (n_points > self.var_f256a4d9) {
         n_points = self.var_f256a4d9;
     }
-    if (isdefined(e_attacker zombie_utility::function_73061b82(#"zombie_insta_kill")) && e_attacker zombie_utility::function_73061b82(#"zombie_insta_kill") || isdefined(zombie_utility::function_6403cf83(#"zombie_insta_kill", e_attacker.team)) && zombie_utility::function_6403cf83(#"zombie_insta_kill", e_attacker.team)) {
+    if (isdefined(e_attacker zombie_utility::get_zombie_var_player(#"zombie_insta_kill")) && e_attacker zombie_utility::get_zombie_var_player(#"zombie_insta_kill") || isdefined(zombie_utility::get_zombie_var_team(#"zombie_insta_kill", e_attacker.team)) && zombie_utility::get_zombie_var_team(#"zombie_insta_kill", e_attacker.team)) {
         n_points = self.var_f256a4d9;
     }
     if (n_points) {

@@ -65,12 +65,12 @@ function __main__() {
         if (!zm_weapons::is_weapon_included(level.w_thundergun)) {
             return;
         }
-        setdvar(#"scr_thundergun_cylinder_radius", zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius"));
-        setdvar(#"scr_thundergun_fling_range", zombie_utility::function_d2dfacfd(#"thundergun_fling_range"));
-        setdvar(#"scr_thundergun_gib_range", zombie_utility::function_d2dfacfd(#"thundergun_gib_range"));
-        setdvar(#"scr_thundergun_gib_damage", zombie_utility::function_d2dfacfd(#"thundergun_gib_damage"));
-        setdvar(#"scr_thundergun_knockdown_range", zombie_utility::function_d2dfacfd(#"thundergun_knockdown_range"));
-        setdvar(#"scr_thundergun_knockdown_damage", zombie_utility::function_d2dfacfd(#"thundergun_knockdown_damage"));
+        setdvar(#"scr_thundergun_cylinder_radius", zombie_utility::get_zombie_var(#"thundergun_cylinder_radius"));
+        setdvar(#"scr_thundergun_fling_range", zombie_utility::get_zombie_var(#"thundergun_fling_range"));
+        setdvar(#"scr_thundergun_gib_range", zombie_utility::get_zombie_var(#"thundergun_gib_range"));
+        setdvar(#"scr_thundergun_gib_damage", zombie_utility::get_zombie_var(#"thundergun_gib_damage"));
+        setdvar(#"scr_thundergun_knockdown_range", zombie_utility::get_zombie_var(#"thundergun_knockdown_range"));
+        setdvar(#"scr_thundergun_knockdown_damage", zombie_utility::get_zombie_var(#"thundergun_knockdown_damage"));
         for (;;) {
             zombie_utility::set_zombie_var(#"thundergun_cylinder_radius", getdvarint(#"scr_thundergun_cylinder_radius", 0));
             zombie_utility::set_zombie_var(#"thundergun_fling_range", getdvarint(#"scr_thundergun_fling_range", 0));
@@ -165,22 +165,22 @@ function thundergun_affect_ais() {
 // Size: 0x756
 function thundergun_get_enemies_in_range() {
     view_pos = self getweaponmuzzlepoint();
-    zombies = array::get_all_closest(view_pos, getaiteamarray(level.zombie_team), undefined, undefined, zombie_utility::function_d2dfacfd(#"thundergun_knockdown_range"));
+    zombies = array::get_all_closest(view_pos, getaiteamarray(level.zombie_team), undefined, undefined, zombie_utility::get_zombie_var(#"thundergun_knockdown_range"));
     if (!isdefined(zombies)) {
         return;
     }
-    knockdown_range_squared = zombie_utility::function_d2dfacfd(#"thundergun_knockdown_range") * zombie_utility::function_d2dfacfd(#"thundergun_knockdown_range");
-    gib_range_squared = zombie_utility::function_d2dfacfd(#"thundergun_gib_range") * zombie_utility::function_d2dfacfd(#"thundergun_gib_range");
-    fling_range_squared = zombie_utility::function_d2dfacfd(#"thundergun_fling_range") * zombie_utility::function_d2dfacfd(#"thundergun_fling_range");
-    cylinder_radius_squared = zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius") * zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius");
+    knockdown_range_squared = zombie_utility::get_zombie_var(#"thundergun_knockdown_range") * zombie_utility::get_zombie_var(#"thundergun_knockdown_range");
+    gib_range_squared = zombie_utility::get_zombie_var(#"thundergun_gib_range") * zombie_utility::get_zombie_var(#"thundergun_gib_range");
+    fling_range_squared = zombie_utility::get_zombie_var(#"thundergun_fling_range") * zombie_utility::get_zombie_var(#"thundergun_fling_range");
+    cylinder_radius_squared = zombie_utility::get_zombie_var(#"thundergun_cylinder_radius") * zombie_utility::get_zombie_var(#"thundergun_cylinder_radius");
     forward_view_angles = self getweaponforwarddir();
-    end_pos = view_pos + vectorscale(forward_view_angles, zombie_utility::function_d2dfacfd(#"thundergun_knockdown_range"));
+    end_pos = view_pos + vectorscale(forward_view_angles, zombie_utility::get_zombie_var(#"thundergun_knockdown_range"));
     /#
         if (2 == getdvarint(#"scr_thundergun_debug", 0)) {
             near_circle_pos = view_pos + vectorscale(forward_view_angles, 2);
-            circle(near_circle_pos, zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius"), (1, 0, 0), 0, 0, 100);
+            circle(near_circle_pos, zombie_utility::get_zombie_var(#"thundergun_cylinder_radius"), (1, 0, 0), 0, 0, 100);
             line(near_circle_pos, end_pos, (0, 0, 1), 1, 0, 100);
-            circle(end_pos, zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius"), (1, 0, 0), 0, 0, 100);
+            circle(end_pos, zombie_utility::get_zombie_var(#"thundergun_cylinder_radius"), (1, 0, 0), 0, 0, 100);
         }
     #/
     for (i = 0; i < zombies.size; i++) {
@@ -240,11 +240,11 @@ function thundergun_get_enemies_in_range() {
 function function_742cb66e() {
     view_pos = self getweaponmuzzlepoint();
     forward_view_angles = self getweaponforwarddir();
-    end_pos = view_pos + vectorscale(forward_view_angles, zombie_utility::function_d2dfacfd(#"thundergun_fling_range"));
-    fling_range_squared = zombie_utility::function_d2dfacfd(#"thundergun_fling_range") * zombie_utility::function_d2dfacfd(#"thundergun_fling_range");
-    cylinder_radius_squared = zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius") * zombie_utility::function_d2dfacfd(#"thundergun_cylinder_radius");
-    var_566b3847 = getentitiesinradius(view_pos, zombie_utility::function_d2dfacfd(#"thundergun_fling_range"));
-    var_d87c5b04 = array::get_all_closest(view_pos, trigger::get_all(), undefined, undefined, zombie_utility::function_d2dfacfd(#"thundergun_fling_range"));
+    end_pos = view_pos + vectorscale(forward_view_angles, zombie_utility::get_zombie_var(#"thundergun_fling_range"));
+    fling_range_squared = zombie_utility::get_zombie_var(#"thundergun_fling_range") * zombie_utility::get_zombie_var(#"thundergun_fling_range");
+    cylinder_radius_squared = zombie_utility::get_zombie_var(#"thundergun_cylinder_radius") * zombie_utility::get_zombie_var(#"thundergun_cylinder_radius");
+    var_566b3847 = getentitiesinradius(view_pos, zombie_utility::get_zombie_var(#"thundergun_fling_range"));
+    var_d87c5b04 = array::get_all_closest(view_pos, trigger::get_all(), undefined, undefined, zombie_utility::get_zombie_var(#"thundergun_fling_range"));
     var_550c20e0 = arraycombine(var_566b3847, var_d87c5b04, 0, 0);
     foreach (var_c006f5e9 in var_550c20e0) {
         if (!isactor(var_c006f5e9) && !isvehicle(var_c006f5e9)) {
@@ -321,7 +321,7 @@ function zombie_knockdown(player, gib) {
         self [[ level.override_thundergun_damage_func ]](player, gib);
         return;
     }
-    damage = zombie_utility::function_d2dfacfd(#"thundergun_knockdown_damage");
+    damage = zombie_utility::get_zombie_var(#"thundergun_knockdown_damage");
     self playsound(#"fly_thundergun_forcehit");
     self.thundergun_handle_pain_notetracks = &handle_thundergun_pain_notetracks;
     self dodamage(damage, player.origin, player);

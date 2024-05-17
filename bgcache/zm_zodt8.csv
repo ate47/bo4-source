@@ -1095,7 +1095,7 @@ model,c_zom_der_zombie_head3,2a886c93068
 model,c_zom_der_zombie_head2,2a886d03a78
 model,c_t8_zmb_3rdclass_female_body2_g_blegsoff,2a886c7d0a8
 model,p8_fxanim_zm_zod_ship_wheel_idle_mod,2a886c82f28
-model,hash_7aa78b0e8183d9ae,2a886d41ff8
+model,wpn_t8_zm_broadside_cannon_world,2a886d41ff8
 model,p8_fxanim_zm_zod_smokestack_02_mod,2a886d7c3d8
 model,hash_7b143cf936fab7c5,2a886c76658
 model,c_t8_zmb_dlc0_zombie_male_body1_skin2,2a886c63098
@@ -1262,14 +1262,14 @@ xmodelalias,hash_612e15b05a54b6c5,2a88a524be0
 xmodelalias,hash_683f1f1d5213b61d,2a88a524f20
 weapon,hash_726a96c6b362512,2a88902d138
 weapon,ww_tricannon_earth_t8_zm,2a8891222b8
-weapon,hash_ad8382f0c5ff125,2a88907cff8
+weapon,ww_tricannon_fire_t8_upgraded_zm,2a88907cff8
 weapon,ww_tricannon_air_t8_zm,2a88905bb28
 weapon,lmg_double_t8_zm,2a88913f798
-weapon,hash_d319a123a19e3e7,2a889094f98
+weapon,ww_tricannon_air_t8_upgraded_zm,2a889094f98
 weapon,hash_d8bf08126fcee6b,2a8891960e8
 weapon,hash_104589e98c7f2ab1,2a8891776b8
-weapon,hash_106cec8c2246bc87,2a8890510a8
-weapon,hash_1189cbd2be3400c5,2a889194b98
+weapon,ww_tricannon_earth_t8_upgraded_zm,2a8890510a8
+weapon,zhield_dw_zm,2a889194b98
 weapon,hash_13188921c711b031,2a8891edf88
 weapon,ww_tricannon_t8_zm,2a8891a20b8
 weapon,zhield_lh_zm,2a8890cb968
@@ -1288,7 +1288,7 @@ weapon,hash_6285efec2b6f8e80,2a8891df518
 weapon,hash_676d89f4d74ee486,2a889023c08
 weapon,zombie_ai_defaultmelee,2a88906fad8
 weapon,hash_6a40892d11e16a06,2a889071028
-weapon,hash_6a4aad7bf9fdd82a,2a889061068
+weapon,ww_tricannon_water_t8_upgraded_zm,2a889061068
 weapon,blight_father_melee,2a889080fe8
 weapon,stoker_melee,2a8890e3908
 weapon,hash_7ddad715ea3e6421,2a88902bbe8
@@ -3773,7 +3773,7 @@ string,mpui/stalker,0
 string,hash_95c5021b448b56,0
 string,hash_9b21599b0be92c,0
 string,hash_9b8af453a6a410,0
-string,hash_fa9588f770eaf9,0
+string,zmweapon/ww_tricannon_t8,0
 string,hash_1164f7d8857e245,0
 string,hash_14ad824a233eedc,0
 string,hash_1fa0254afe1fa66,0
@@ -3781,10 +3781,10 @@ string,mpui/dualoptic,0
 string,hash_23a9baa5b7fb1b8,0
 string,hash_2eca6fba714f086,0
 string,hash_32f76fa42f85198,0
-string,hash_3862a3ce16fff4a,0
+string,zmweapon/ww_tricannon_t8_upgraded,0
 string,hash_38a2cf22c48d6c3,0
 string,hash_38c04b840a758d4,0
-string,hash_3a379acfc384dc2,0
+string,zmweapon/riotshield,0
 string,hash_40c47b72c083914,0
 string,hash_43b319457bc818e,0
 string,hash_4722942539bdd37,0
@@ -3792,7 +3792,7 @@ string,hash_47e1955bea1fc19,0
 string,hash_49b2e832f765cb5,0
 string,mpui/extclip2,0
 string,hash_51f6634f54cd9d8,0
-string,hash_58edafaed1ca2ac,0
+string,zmweapon/ww_tricannon_earth_t8,0
 string,hash_5be026b2781b8c9,0
 string,hash_5d7eb1442a4f213,0
 string,hash_5f80d9ba2fc090a,0
@@ -3952,7 +3952,7 @@ string,hash_2bed1c6d7afa4192,0
 string,hash_2c3e9e30064c8db6,0
 string,hash_2c454eb3fec22798,0
 string,hash_2cab672fd372f942,0
-string,hash_2cd67dcef35aaddf,0
+string,zmweapon/ww_tricannon_fire_t8_upgraded,0
 string,hash_2cf50844ee21f73c,0
 string,hash_2d003d6a1240093c,0
 string,hash_2d85a60f366822d1,0
@@ -3982,7 +3982,7 @@ string,hash_33f013eacb53964c,0
 string,hash_3427b86de4fb527b,0
 string,hash_344916eb222ad1b6,0
 string,hash_34b52b88e2ff0049,0
-string,hash_34ba5acdb1339da6,0
+string,zmweapon/ww_tricannon_fire_t8,0
 string,hash_34dfed25a796d563,0
 string,hash_34f83c239da58b2d,0
 string,hash_35000bfda3024a1f,0
@@ -4018,7 +4018,7 @@ string,hash_3ad0e7a1cbad4cb7,0
 string,hash_3ae42f7d6eabab5a,0
 string,hash_3bad41af24cc7ed5,0
 string,hash_3ca968dee9e5dc02,0
-string,hash_3caad55c1e4f1acc,0
+string,zmweapon/ww_tricannon_air_t8,0
 string,hash_3cbdafac7f4a7bd2,0
 string,hash_3d26eb8dafae98e9,0
 string,hash_3d6f9490b9f55db5,0
@@ -4059,7 +4059,7 @@ string,hash_43dec5d78cfbe549,0
 string,hash_43f817fb61bda3c8,0
 string,hash_44149fa37d4d853f,0
 string,hash_448bba92cdb05ab3,0
-string,hash_44b68859a1136f31,0
+string,zmweapon/ww_tricannon_water_t8,0
 string,mpui/suppressed,0
 string,hash_452fd06faf792671,0
 string,hash_4574336eada006f0,0
@@ -4097,7 +4097,7 @@ string,hash_4d048d939c70cad9,0
 string,hash_4d2905316e1e4044,0
 string,mpui/quickdraw,0
 string,hash_4d68f71cebb352a8,0
-string,hash_4df32082bac97235,0
+string,zmweapon/bowie,0
 string,hash_4dff11036295b59f,0
 string,hash_4e21f45a939d9031,0
 string,hash_4e6660ce01be0ca8,0
@@ -4179,7 +4179,7 @@ string,hash_629d187300caa85d,0
 string,hash_62ae1c4f8ac4e714,0
 string,hash_6370b5a97249c317,0
 string,hash_639a907fae7467b1,0
-string,hash_63be834e231b3295,0
+string,zmweapon/ww_tricannon_earth_t8_upgraded,0
 string,mpui/clantag,0
 string,hash_64096a5a5d944158,0
 string,hash_6443239d452b1e8d,0
@@ -4229,11 +4229,11 @@ string,hash_7028ec2236ab3e73,0
 string,hash_705b2c8817bf3775,0
 string,hash_7085044e7b80d5a3,0
 string,hash_709fb6b7fdde6aa8,0
-string,hash_70dca5c83bb0e2a2,0
+string,zmweapon/ww_tricannon_water_t8_upgraded,0
 string,hash_714cce81de873f11,0
 string,mpui/acog,0
 string,mpui/damage2,0
-string,hash_71ac4c66b4766475,0
+string,zmweapon/ww_tricannon_air_t8_upgraded,0
 string,hash_71bf3704c3ae5a0e,0
 string,hash_7217a104b05f83df,0
 string,hash_7361752642f5d7cf,0

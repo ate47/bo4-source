@@ -7,7 +7,7 @@
     "name": "perk_tracker_restriction",
     "displayname": "#talent/tracker",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__talent_tracker__restricted"
 }

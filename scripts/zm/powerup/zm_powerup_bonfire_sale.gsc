@@ -64,11 +64,11 @@ function start_bonfire_sale(item) {
     level thread toggle_bonfire_sale_on();
     zombie_utility::set_zombie_var(#"zombie_powerup_bonfire_sale_time", 30);
     if (bgb::is_team_enabled("zm_bgb_temporal_gift")) {
-        zombie_utility::set_zombie_var(#"zombie_powerup_bonfire_sale_time", zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_time") + 30);
+        zombie_utility::set_zombie_var(#"zombie_powerup_bonfire_sale_time", zombie_utility::get_zombie_var(#"zombie_powerup_bonfire_sale_time") + 30);
     }
-    while (zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_time") > 0) {
+    while (zombie_utility::get_zombie_var(#"zombie_powerup_bonfire_sale_time") > 0) {
         waitframe(1);
-        zombie_utility::set_zombie_var(#"zombie_powerup_bonfire_sale_time", zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_time") - 0.05);
+        zombie_utility::set_zombie_var(#"zombie_powerup_bonfire_sale_time", zombie_utility::get_zombie_var(#"zombie_powerup_bonfire_sale_time") - 0.05);
     }
     zombie_utility::set_zombie_var(#"zombie_powerup_bonfire_sale_on", 0);
     level notify(#"bonfire_sale_off");
@@ -85,10 +85,10 @@ function start_bonfire_sale(item) {
 // Size: 0x9c
 function toggle_bonfire_sale_on() {
     level endon(#"powerup bonfire sale");
-    if (!isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_on"))) {
+    if (!isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_bonfire_sale_on"))) {
         return;
     }
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_on")) {
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_bonfire_sale_on")) {
         if (isdefined(level.bonfire_init_func)) {
             level thread [[ level.bonfire_init_func ]]();
         }
@@ -104,13 +104,13 @@ function setup_bonfiresale_audio() {
     wait(2);
     intercom = getentarray("intercom", "targetname");
     while (true) {
-        while (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") == 0) {
+        while (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") == 0) {
             wait(0.2);
         }
         for (i = 0; i < intercom.size; i++) {
             intercom[i] thread play_bonfiresale_audio();
         }
-        while (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") == 1) {
+        while (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") == 1) {
             wait(0.1);
         }
         level notify(#"firesale_over");

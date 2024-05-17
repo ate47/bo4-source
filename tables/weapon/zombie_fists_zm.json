@@ -1,7 +1,7 @@
 {
     "name": "#zombie_fists_zm",
     "baseWeapon": "#zombie_fists",
-    "displayname": "#hash_4b5e48902d452e97",
+    "displayname": "#zmweapon/none",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

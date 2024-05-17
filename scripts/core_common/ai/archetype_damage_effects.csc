@@ -114,8 +114,8 @@ function private _burntag(localclientnum, tag, postfix, prefix) {
     if (isdefined(self) && self hasdobj(localclientnum)) {
         fx_to_play = undefined;
         if (isdefined(level.var_60a09d68) && isdefined(level.var_60a09d68[self.archetype])) {
-            var_f02438b2 = prefix + tag + postfix;
-            fx_to_play = level.var_60a09d68[self.archetype][var_f02438b2];
+            fxitem = prefix + tag + postfix;
+            fx_to_play = level.var_60a09d68[self.archetype][fxitem];
             if (isdefined(fx_to_play)) {
                 return util::playfxontag(localclientnum, fx_to_play, self, tag);
             }

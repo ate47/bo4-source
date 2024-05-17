@@ -1,7 +1,7 @@
 {
     "name": "#thunderstorm_zm",
     "baseWeapon": "#thunderstorm",
-    "displayname": "#hash_57e35af86e3ae713",
+    "displayname": "#zombie/thunderstorm",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

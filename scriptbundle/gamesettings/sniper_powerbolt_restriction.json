@@ -7,7 +7,7 @@
     "name": "sniper_powerbolt_restriction",
     "displayname": "#weapon/sniper_powerbolt_t8",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__sniper_powerbolt_t8__restricted"
 }

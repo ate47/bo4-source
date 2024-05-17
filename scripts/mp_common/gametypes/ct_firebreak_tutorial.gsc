@@ -1813,10 +1813,10 @@ function function_9f1d8637(var_f54b52b3) {
 // Size: 0xb4
 function function_b512a9bf(n_slot) {
     level endon(#"combattraining_logic_finished");
-    var_dee68e3f = [];
-    var_dee68e3f[2] = #"hero_flamethrower";
-    var_dee68e3f[0] = #"gadget_radiation_field";
-    str_gadget = var_dee68e3f[n_slot];
+    a_str_gadgets = [];
+    a_str_gadgets[2] = #"hero_flamethrower";
+    a_str_gadgets[0] = #"gadget_radiation_field";
+    str_gadget = a_str_gadgets[n_slot];
     if (isdefined(level.var_e72728b8)) {
         arrayremovevalue(level.var_e72728b8, str_gadget);
     }

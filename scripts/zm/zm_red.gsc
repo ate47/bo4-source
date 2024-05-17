@@ -255,8 +255,8 @@ function private function_95db9900(weapon) {
 function private function_269f27a9() {
     level.var_ab5b85bf = "bonus_points_team";
     n_players = getplayers().size;
-    var_b67b53e8 = zombie_utility::function_d2dfacfd(#"hash_434b3261c607850" + n_players);
-    var_ee327079 = zombie_utility::function_d2dfacfd(#"zombie_powerup_drop_max_" + n_players);
+    var_b67b53e8 = zombie_utility::get_zombie_var(#"hash_434b3261c607850" + n_players);
+    var_ee327079 = zombie_utility::get_zombie_var(#"zombie_powerup_drop_max_" + n_players);
     zombie_utility::set_zombie_var(#"hash_434b3261c607850" + n_players, n_players * 5);
     zombie_utility::set_zombie_var(#"zombie_powerup_drop_max_" + n_players, n_players * 5);
     level.var_1dce56cc = n_players * 5;

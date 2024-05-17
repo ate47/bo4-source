@@ -171,16 +171,16 @@ function private function_5a6c0fea() {
 // Params 1, eflags: 0x5 linked
 // Checksum 0xe2932e40, Offset: 0xf38
 // Size: 0x154
-function private function_e0537f19(var_4052dd74) {
+function private function_e0537f19(w_gravityspikes) {
     self notify("3e6e1fb0a555c2a5");
     self endon("3e6e1fb0a555c2a5");
     self endon(#"disconnect");
-    n_slot = self gadgetgetslot(var_4052dd74);
+    n_slot = self gadgetgetslot(w_gravityspikes);
     if (self function_36dfc05f(n_slot)) {
         for (var_966dad48 = self gadgetpowerget(n_slot); var_966dad48 > 0; var_966dad48 = self gadgetpowerget(n_slot)) {
             waitframe(1);
         }
-        self ability_player::function_f2250880(var_4052dd74);
+        self ability_player::function_f2250880(w_gravityspikes);
         self.var_80612bea = 0;
     }
     self update_gravityspikes_state(0);
@@ -196,7 +196,7 @@ function private function_e0537f19(var_4052dd74) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x248bb878, Offset: 0x1098
 // Size: 0x128
-function gravityspikes_attack_watcher(var_4052dd74, n_level) {
+function gravityspikes_attack_watcher(w_gravityspikes, n_level) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired");
     while (true) {
         if (n_level >= 3) {
@@ -204,7 +204,7 @@ function gravityspikes_attack_watcher(var_4052dd74, n_level) {
         } else {
             s_result = self waittill(#"weapon_melee_power", #"weapon_melee");
         }
-        if (s_result.weapon == var_4052dd74) {
+        if (s_result.weapon == w_gravityspikes) {
             self playrumbleonentity("talon_spike");
             self thread knockdown_zombies_slam(1);
             self thread no_damage_gravityspikes_slam();
@@ -335,14 +335,14 @@ function private gravityspikes_stuck_above_zombie_watcher() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xf3a63e55, Offset: 0x1a20
 // Size: 0x122
-function gravityspikes_altfire_watcher(var_4052dd74) {
+function gravityspikes_altfire_watcher(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spike_planted");
     while (true) {
         s_result = self waittill(#"weapon_melee_power_left");
-        if (s_result.weapon == var_4052dd74 && !(isdefined(self.var_de01b5c2) && self.var_de01b5c2)) {
+        if (s_result.weapon == w_gravityspikes && !(isdefined(self.var_de01b5c2) && self.var_de01b5c2)) {
             self.var_de01b5c2 = 1;
             self playrumbleonentity("damage_heavy");
-            self thread function_26a4b7f5(var_4052dd74);
+            self thread function_26a4b7f5(w_gravityspikes);
             self waittilltimeout(5, #"stop_shockwave");
             self.var_de01b5c2 = undefined;
         }
@@ -353,7 +353,7 @@ function gravityspikes_altfire_watcher(var_4052dd74) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x9599611d, Offset: 0x1b50
 // Size: 0x334
-function private function_26a4b7f5(var_4052dd74) {
+function private function_26a4b7f5(w_gravityspikes) {
     self endon(#"disconnect", #"gravity_spike_expired", #"gravity_spike_planted");
     self clientfield::set("gravity_shock_wave_fx", 1);
     while (isdefined(self.var_de01b5c2) && self.var_de01b5c2) {
@@ -372,12 +372,12 @@ function private function_26a4b7f5(var_4052dd74) {
         }
         if (var_b735005c.var_6f84b820 == #"basic" || var_b735005c.var_6f84b820 == #"popcorn" || var_b735005c.var_6f84b820 == #"enhanced") {
             while (isalive(var_b735005c)) {
-                var_b735005c thread function_6a21cc79(self, var_4052dd74);
+                var_b735005c thread function_6a21cc79(self, w_gravityspikes);
                 wait(0.2);
             }
             continue;
         }
-        var_b735005c thread function_6a21cc79(self, var_4052dd74);
+        var_b735005c thread function_6a21cc79(self, w_gravityspikes);
         wait(0.2);
     }
     self clientfield::set("gravity_shock_wave_fx", 0);
@@ -387,7 +387,7 @@ function private function_26a4b7f5(var_4052dd74) {
 // Params 2, eflags: 0x5 linked
 // Checksum 0xbaf28221, Offset: 0x1e90
 // Size: 0x30c
-function private function_6a21cc79(e_player, var_4052dd74) {
+function private function_6a21cc79(e_player, w_gravityspikes) {
     self endon(#"death");
     if (self.var_6f84b820 == #"basic" || self.var_6f84b820 == #"enhanced") {
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
@@ -397,25 +397,25 @@ function private function_6a21cc79(e_player, var_4052dd74) {
             e_player thread electrocute_actor(self);
             return;
         } else {
-            self dodamage(n_damage, self.origin, e_player, e_player, "torso_upper", "MOD_ELECTROCUTED", 0, var_4052dd74);
+            self dodamage(n_damage, self.origin, e_player, e_player, "torso_upper", "MOD_ELECTROCUTED", 0, w_gravityspikes);
         }
         return;
     }
     if (self.var_6f84b820 == #"popcorn") {
         self clientfield::increment("gravity_aoe_impact_tu6");
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
-        self dodamage(self.health + 100, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+        self dodamage(self.health + 100, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
         return;
     }
     if (self.var_6f84b820 == #"miniboss" || self.var_6f84b820 == #"boss") {
         self clientfield::increment("gravity_aoe_impact_tu6");
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
-        self dodamage(self.maxhealth * 0.1, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+        self dodamage(self.maxhealth * 0.1, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
         return;
     }
     self clientfield::increment("gravity_aoe_impact_tu6");
     [[ level.ai_gravity_throttle ]]->waitinqueue(self);
-    self dodamage(self.maxhealth * 0.2, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+    self dodamage(self.maxhealth * 0.2, self.origin, e_player, e_player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
 }
 
 // Namespace zm_weap_gravityspikes/zm_weap_gravityspikes
@@ -505,16 +505,16 @@ function private function_cc9e1996() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xbdc01303, Offset: 0x25f0
 // Size: 0x154
-function function_28be8532(var_4052dd74) {
+function function_28be8532(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"hash_55b145e95edc2ebe");
     while (true) {
         s_result = self waittill(#"weapon_melee");
-        if (s_result.weapon === var_4052dd74 && isdefined(self gravity_spike_position_valid()) && self gravity_spike_position_valid()) {
+        if (s_result.weapon === w_gravityspikes && isdefined(self gravity_spike_position_valid()) && self gravity_spike_position_valid()) {
             if (isdefined(self.var_de01b5c2) && self.var_de01b5c2) {
                 self notify(#"stop_shockwave");
                 self.var_de01b5c2 = undefined;
             }
-            self thread plant_gravity_trap(var_4052dd74);
+            self thread plant_gravity_trap(w_gravityspikes);
             continue;
         }
         self playsound(#"zmb_trap_deny");
@@ -708,10 +708,10 @@ function function_1049648d(e_reviver, var_84280a99) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x34aebb74, Offset: 0x2f58
 // Size: 0x472
-function plant_gravity_trap(var_4052dd74) {
+function plant_gravity_trap(w_gravityspikes) {
     self endoncallback(&function_c9830e97, #"bled_out", #"death");
     self notify(#"hash_55b145e95edc2ebe");
-    self thread zm_hero_weapon::function_4e984e83(var_4052dd74, 0.35);
+    self thread zm_hero_weapon::function_4e984e83(w_gravityspikes, 0.35);
     self.var_80612bea = 1;
     self thread zm_audio::create_and_play_dialog(#"hero_level_3", #"gravityspikes");
     v_forward = anglestoforward(self.angles);
@@ -735,7 +735,7 @@ function plant_gravity_trap(var_4052dd74) {
     self.b_gravity_trap_spikes_in_ground = 1;
     self thread player_near_gravity_vortex();
     self thread destroy_gravity_trap_spikes_in_ground();
-    self thread gravity_trap_loop(var_4052dd74);
+    self thread gravity_trap_loop(w_gravityspikes);
     zm_utility::function_3e549e65();
     self waittill(#"gravity_spike_expired");
     zm_utility::function_b7e5029f();
@@ -762,11 +762,11 @@ function function_c9830e97(var_c34665fc) {
 // Params 1, eflags: 0x5 linked
 // Checksum 0x50c6c1e2, Offset: 0x3418
 // Size: 0x14c
-function private gravity_trap_loop(var_4052dd74) {
+function private gravity_trap_loop(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death");
     is_gravity_trap_fx_on = 1;
     while (true) {
-        if (self gadgetpowerget(self gadgetgetslot(var_4052dd74)) > 0) {
+        if (self gadgetpowerget(self gadgetgetslot(w_gravityspikes)) > 0) {
             a_zombies = getaiteamarray(level.zombie_team);
             a_zombies = array::filter(a_zombies, 0, &gravityspikes_target_filtering);
             array::thread_all(a_zombies, &gravity_trap_check, self);
@@ -962,7 +962,7 @@ function private gravityspikes_target_filtering(ai_enemy) {
 // Size: 0xf64
 function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height, v_lift_offset, n_lift_speed) {
     self endon(#"death");
-    var_4052dd74 = player.var_fd05e363;
+    w_gravityspikes = player.var_fd05e363;
     if (isdefined(self.zombie_lift_override)) {
         self thread [[ self.zombie_lift_override ]](player, v_attack_source, n_push_away, n_lift_height, v_lift_offset, n_lift_speed);
         return;
@@ -973,14 +973,14 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
     if (self.var_6f84b820 === #"popcorn") {
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         self.no_powerups = 1;
-        self dodamage(self.health + 100, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+        self dodamage(self.health + 100, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
         self playsound("wpn_dg4_electrocution_impact");
         return;
     }
     if (self.var_6f84b820 === #"miniboss") {
         [[ level.ai_gravity_throttle ]]->waitinqueue(self);
         if (isalive(self) && isdefined(self.b_melee_kill) && self.b_melee_kill && !(isdefined(self.var_5bf7575e) && self.var_5bf7575e) && !(isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground)) {
-            self dodamage(self.maxhealth * 0.1, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+            self dodamage(self.maxhealth * 0.1, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
             self.var_5bf7575e = 1;
             self.b_melee_kill = undefined;
             self ai::stun();
@@ -989,7 +989,7 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
             self ai::clear_stun();
         } else if (isalive(self) && !(isdefined(self.var_42d5176d) && self.var_42d5176d) && isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground) {
             [[ level.ai_gravity_throttle ]]->waitinqueue(self);
-            self dodamage(self.maxhealth * 0.1, self.origin, player, player, "torso_upper", "MOD_ELECTROCUTED", 0, var_4052dd74);
+            self dodamage(self.maxhealth * 0.1, self.origin, player, player, "torso_upper", "MOD_ELECTROCUTED", 0, w_gravityspikes);
             self thread track_lifted_for_ragdoll_count();
             self.var_42d5176d = 1;
             self val::set(#"trap_ignore", "ignoreall", 1);
@@ -1025,14 +1025,14 @@ function private zombie_lift(player, v_attack_source, n_push_away, n_lift_height
     if (self.var_6f84b820 === #"boss") {
         if (isalive(self) && isdefined(self.b_melee_kill) && self.b_melee_kill && !(isdefined(self.var_5bf7575e) && self.var_5bf7575e) && !(isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground)) {
             [[ level.ai_gravity_throttle ]]->waitinqueue(self);
-            self dodamage(self.maxhealth * 0.05, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+            self dodamage(self.maxhealth * 0.05, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
             self.var_5bf7575e = 1;
             self.b_melee_kill = undefined;
             wait(1);
             self.var_5bf7575e = undefined;
         } else if (isalive(self) && !(isdefined(self.var_42d5176d) && self.var_42d5176d) && isdefined(player.b_gravity_trap_spikes_in_ground) && player.b_gravity_trap_spikes_in_ground) {
             [[ level.ai_gravity_throttle ]]->waitinqueue(self);
-            self dodamage(self.maxhealth * 0.05, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, var_4052dd74);
+            self dodamage(self.maxhealth * 0.05, self.origin, player, player, "head", "MOD_ELECTROCUTED", 0, w_gravityspikes);
             self.var_42d5176d = 1;
             self waittill(#"death", #"gravity_trap_complete");
             self.var_42d5176d = undefined;
@@ -1176,16 +1176,16 @@ function private zombie_lift_wacky_rotate(n_lift_time, player) {
 function private zombie_kill_and_gib(player) {
     self endon(#"death");
     if (isdefined(player) && isdefined(player.var_fd05e363)) {
-        var_4052dd74 = player.var_fd05e363;
+        w_gravityspikes = player.var_fd05e363;
     } else {
-        var_4052dd74 = undefined;
+        w_gravityspikes = undefined;
     }
     [[ level.ai_gravity_throttle ]]->waitinqueue(self);
     if (isdefined(level.no_gib_in_wolf_area) && isdefined(self [[ level.no_gib_in_wolf_area ]]()) && self [[ level.no_gib_in_wolf_area ]]()) {
         self.no_gib = 1;
     }
     self.no_powerups = 1;
-    self dodamage(self.health + 100, self.origin, player, player, "torso_upper", "MOD_ELECTROCUTED", 0, var_4052dd74);
+    self dodamage(self.health + 100, self.origin, player, player, "torso_upper", "MOD_ELECTROCUTED", 0, w_gravityspikes);
     waitframe(1);
     if (!(isdefined(self.no_gib) && self.no_gib)) {
         n_random = randomint(100);
@@ -1264,10 +1264,10 @@ function private gravity_spike_melee_kill(v_position, player, var_52b14308) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0xd082ab86, Offset: 0x5670
 // Size: 0xcc
-function function_478a4910(var_4052dd74) {
+function function_478a4910(w_gravityspikes) {
     self endon(#"disconnect", #"bled_out", #"death", #"gravity_spike_expired", #"gravity_spike_planted");
     s_result = self waittill(#"weapon_melee_power_left");
-    if (s_result.weapon == var_4052dd74) {
+    if (s_result.weapon == w_gravityspikes) {
         self thread zm_audio::create_and_play_dialog(#"hero_level_2", #"gravityspikes");
     }
 }

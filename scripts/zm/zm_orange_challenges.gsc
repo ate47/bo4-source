@@ -413,7 +413,7 @@ function function_561fda29() {
 // Checksum 0xd1c8e324, Offset: 0x2140
 // Size: 0xb2
 function function_54e8826c(e_player) {
-    if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"hash_603fdd2e4ae5b2b0") {
+    if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"zhield_riot_dw") {
         return 0;
     }
     str_hint = zm_utility::function_d6046228(#"hash_509dd10b32275ac6", #"hash_1fbdd38541c13a62");

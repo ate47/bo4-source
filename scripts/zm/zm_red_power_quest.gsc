@@ -1418,7 +1418,7 @@ function function_2a80a9cc(b_run = 0, b_sprint = 0) {
 function function_75c83fbf(s_params) {
     e_attacker = s_params.eattacker;
     if (isplayer(e_attacker) && isdefined(self.var_ae4569d5) && self.var_ae4569d5) {
-        if (zombie_utility::function_6403cf83(#"zombie_powerup_double_points_on", #"allies")) {
+        if (zombie_utility::get_zombie_var_team(#"zombie_powerup_double_points_on", #"allies")) {
             n_points = 20;
         } else {
             n_points = 10;

@@ -45,7 +45,7 @@ function init_shared(var_4b51853b) {
     clientfield::register("scriptmover", "concertinaWireDestroyed", 1, 1, "int");
     clientfield::register("scriptmover", "concertinaWireDroopyBits", 1, 3, "int");
     level.var_87226c31.var_ff1a491d = level.var_87226c31.bundle.var_76d79155 * level.var_87226c31.bundle.var_76d79155;
-    level.var_87226c31.var_17a4fddd = getweapon(#"sig_buckler_turret");
+    level.var_87226c31.bucklerweapon = getweapon(#"sig_buckler_turret");
     setdvar(#"hash_753335900deb89ea", 25);
 }
 
@@ -713,7 +713,7 @@ function function_f067d867(concertinawire) {
         player.var_85c3882d = 1;
         var_50487836 = isdefined(concertinawire.owner) && (!level.teambased || util::function_fbce7263(player.team, concertinawire.owner.team)) && player != concertinawire.owner;
         var_da47eedd = 0;
-        if (level.var_87226c31.var_17a4fddd === player.currentweapon) {
+        if (level.var_87226c31.bucklerweapon === player.currentweapon) {
             var_da47eedd = 1;
         }
         var_434fa90d = var_da47eedd || player isslamming() || player isjuking();

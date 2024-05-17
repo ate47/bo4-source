@@ -76,7 +76,7 @@ function __init__() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x6e259b0d, Offset: 0x8d8
 // Size: 0xee
-function function_65a59ce0(w_current, var_5738ae72 = 0) {
+function is_shield_weapon(w_current, var_5738ae72 = 0) {
     if (var_5738ae72) {
         if (w_current == level.var_c9d375dc.melee_weapon_upgraded) {
             return true;
@@ -299,7 +299,7 @@ function function_fbe77fa4(weapon) {
         [[ level.var_2677b8bb ]]->waitinqueue(level.riotshield_fling_enemies[i]);
         if (isdefined(level.riotshield_fling_enemies[i])) {
             level.riotshield_fling_enemies[i] thread riotshield::riotshield_fling_zombie(self, level.riotshield_fling_vecs[i], i);
-            shield_damage += zombie_utility::function_d2dfacfd(#"riotshield_fling_damage_shield");
+            shield_damage += zombie_utility::get_zombie_var(#"riotshield_fling_damage_shield");
         }
     }
     for (i = 0; i < level.riotshield_knockdown_enemies.size; i++) {
@@ -308,7 +308,7 @@ function function_fbe77fa4(weapon) {
             continue;
         }
         level.riotshield_knockdown_enemies[i] thread riotshield::riotshield_knockdown_zombie(self, level.riotshield_knockdown_gib[i], weapon);
-        shield_damage += zombie_utility::function_d2dfacfd(#"riotshield_knockdown_damage_shield");
+        shield_damage += zombie_utility::get_zombie_var(#"riotshield_knockdown_damage_shield");
     }
     level.riotshield_knockdown_enemies = [];
     level.riotshield_knockdown_gib = [];

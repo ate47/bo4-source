@@ -1781,14 +1781,14 @@ function function_d899c62c(base_health, round_number) {
     for (i = 2; i <= round_number; i++) {
         if (i >= 10 && !(isdefined(level.var_50dd0ec5) && level.var_50dd0ec5)) {
             old_health = var_d082c739;
-            var_d082c739 += int(var_d082c739 * zombie_utility::function_d2dfacfd(#"zombie_health_increase_multiplier"));
+            var_d082c739 += int(var_d082c739 * zombie_utility::get_zombie_var(#"zombie_health_increase_multiplier"));
             if (var_d082c739 < old_health) {
                 var_d082c739 = old_health;
                 break;
             }
             continue;
         }
-        var_d082c739 = int(var_d082c739 + zombie_utility::function_d2dfacfd(#"zombie_health_increase"));
+        var_d082c739 = int(var_d082c739 + zombie_utility::get_zombie_var(#"zombie_health_increase"));
     }
     return var_d082c739;
 }

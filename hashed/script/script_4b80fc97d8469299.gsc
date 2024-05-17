@@ -196,10 +196,10 @@ function private defend_event() {
     zm_orange_pablo::function_b9e15919(1);
     level.musicsystemoverride = 1;
     music::setmusicstate("lighthouse_defend");
-    var_d1ec2571 = level.round_number + 1;
-    var_898a45da = level.var_45827161[var_d1ec2571];
+    n_next_round = level.round_number + 1;
+    var_898a45da = level.var_45827161[n_next_round];
     if (isdefined(var_898a45da)) {
-        zm_round_spawning::function_43aed0ca(var_d1ec2571);
+        zm_round_spawning::function_43aed0ca(n_next_round);
     }
     level.var_eacf25e4 = level.func_get_delay_between_rounds;
     level.func_get_delay_between_rounds = &function_f85d3d98;

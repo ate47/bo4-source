@@ -1,6 +1,6 @@
 {
     "name": "#hash_43d06c2d7ba1eac4",
-    "baseWeapon": "#hash_5b707509eefe3f9c",
+    "baseWeapon": "#pistol_topbreak_t8_oic",
     "displayname": "#weapon/pistol_topbreak_t8",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
@@ -8,7 +8,7 @@
     "altWeaponIndex": 0,
     "reticle": "",
     "unk60": "#hash_742873882276263",
-    "unk70": "#hash_5b707509eefe3f9c",
+    "unk70": "#pistol_topbreak_t8_oic",
     "unk80": "#hash_63745db9b7dad5ee",
     "unkc80": "#hash_4ec326755bb805e2",
     "unkc88": "#hash_36479a6885575e5f",

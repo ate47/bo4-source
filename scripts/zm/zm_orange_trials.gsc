@@ -260,7 +260,7 @@ function function_b4bd25ef() {
         break;
     }
     self bgb_pack::function_ac9cb612(0);
-    self.var_be3224e6 = 0;
+    self.bgb_disabled = 0;
     self bgb::resume_weapon_cycling();
     self enableoffhandweapons();
     self enableoffhandspecial();

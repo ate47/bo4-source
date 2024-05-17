@@ -180,15 +180,15 @@ function private function_882f233() {
 // Checksum 0x25df1028, Offset: 0xa50
 // Size: 0x26e
 function private function_aef0aaa4() {
-    assert(isdefined(self.ai.var_ed782d5));
+    assert(isdefined(self.ai.spearweapon));
     forwarddir = anglestoforward(self.angles);
     var_a137cb9f = self gettagorigin("tag_weapon_right");
     if (isdefined(self.ai.var_c3f91959)) {
         var_eb549b4f = self.ai.var_c3f91959.origin;
-        projectile = magicbullet(self.ai.var_ed782d5, var_a137cb9f, var_eb549b4f, self.ai.elephant);
+        projectile = magicbullet(self.ai.spearweapon, var_a137cb9f, var_eb549b4f, self.ai.elephant);
     } else if (isdefined(self.ai.elephant.favoriteenemy)) {
         var_eb549b4f = self.ai.elephant.favoriteenemy.origin;
-        projectile = magicbullet(self.ai.var_ed782d5, var_a137cb9f, var_eb549b4f, self.ai.elephant, self.ai.elephant.favoriteenemy);
+        projectile = magicbullet(self.ai.spearweapon, var_a137cb9f, var_eb549b4f, self.ai.elephant, self.ai.elephant.favoriteenemy);
     } else {
         return;
     }

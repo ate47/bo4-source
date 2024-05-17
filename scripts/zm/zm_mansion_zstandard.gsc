@@ -377,13 +377,13 @@ function function_ac904e5e() {
     zm_utility::function_742f2c18(13, #"zombie", 16, 12);
     zm_utility::function_742f2c18(14, #"zombie", 20, 12);
     zm_utility::function_742f2c18(15, #"zombie", 30, 12);
-    var_a535d72c = 12;
+    n_zombie_min = 12;
     for (n_round = 10; n_round < 255; n_round++) {
-        zm_utility::function_742f2c18(n_round, #"zombie", undefined, var_a535d72c);
+        zm_utility::function_742f2c18(n_round, #"zombie", undefined, n_zombie_min);
         if (math::cointoss()) {
-            var_a535d72c++;
+            n_zombie_min++;
         }
-        var_a535d72c = math::clamp(var_a535d72c, 8, 24);
+        n_zombie_min = math::clamp(n_zombie_min, 8, 24);
     }
 }
 
@@ -412,9 +412,9 @@ function function_f3859095() {
 // Size: 0x2ae
 function function_fe69176c() {
     a_w_component = array();
-    a_w_component[0] = zm_crafting::get_component(#"hash_1d492d987b5f57ed");
-    a_w_component[1] = zm_crafting::get_component(#"hash_1d492a987b5f52d4");
-    a_w_component[2] = zm_crafting::get_component(#"hash_1d492b987b5f5487");
+    a_w_component[0] = zm_crafting::get_component(#"zitem_silver_bullet_part_1");
+    a_w_component[1] = zm_crafting::get_component(#"zitem_silver_bullet_part_2");
+    a_w_component[2] = zm_crafting::get_component(#"zitem_silver_bullet_part_3");
     a_w_component[3] = zm_crafting::get_component(#"hash_11ae647a1f0d9704");
     a_w_component[4] = zm_crafting::get_component(#"hash_11ae677a1f0d9c1d");
     a_w_component[5] = zm_crafting::get_component(#"hash_11ae667a1f0d9a6a");

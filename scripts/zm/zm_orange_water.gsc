@@ -496,7 +496,7 @@ function function_bad6907c() {
     self bgb::suspend_weapon_cycling();
     self disableweaponcycling();
     self bgb_pack::function_ac9cb612(1);
-    self.var_be3224e6 = 1;
+    self.bgb_disabled = 1;
     if (isdefined(level.var_526d919)) {
         w_current = self getcurrentweapon();
         if (isdefined(level.var_526d919[w_current.name])) {
@@ -540,7 +540,7 @@ function function_46c3bbf7() {
         }
     }
     self bgb_pack::function_ac9cb612(0);
-    self.var_be3224e6 = 0;
+    self.bgb_disabled = 0;
     self bgb::resume_weapon_cycling();
     self enableweaponcycling();
     self stopshellshock();

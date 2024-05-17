@@ -674,9 +674,9 @@ function enable_zone(zone, is_enabled = 1) {
 function function_ff416940() {
     a_e_players = getplayers();
     foreach (e_player in a_e_players) {
-        var_ac6ee9a0 = e_player zm_loadout::get_player_lethal_grenade();
-        if (var_ac6ee9a0.isgadget) {
-            n_slot = e_player gadgetgetslot(var_ac6ee9a0);
+        w_lethal = e_player zm_loadout::get_player_lethal_grenade();
+        if (w_lethal.isgadget) {
+            n_slot = e_player gadgetgetslot(w_lethal);
             e_player gadgetpowerreset(n_slot, 0);
         }
     }

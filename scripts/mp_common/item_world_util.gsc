@@ -339,9 +339,9 @@ function can_pick_up(item, servertime = undefined) {
 // Params 4, eflags: 0x0
 // Checksum 0xbb3442ce, Offset: 0x1698
 // Size: 0x2f6
-function function_4cbb6617(inventory, itemtype, var_da328e7b, var_bcc2655a) {
+function function_4cbb6617(inventory, itemtype, prioritylist, var_bcc2655a) {
     assert(ishash(itemtype));
-    assert(isarray(var_da328e7b));
+    assert(isarray(prioritylist));
     if (!isdefined(var_bcc2655a)) {
         return;
     }
@@ -369,20 +369,20 @@ function function_4cbb6617(inventory, itemtype, var_da328e7b, var_bcc2655a) {
         }
     }
     listitems = [];
-    for (currentindex = 0; currentindex < var_da328e7b.size; currentindex++) {
-        if (var_da328e7b[currentindex] == var_c7837092) {
+    for (currentindex = 0; currentindex < prioritylist.size; currentindex++) {
+        if (prioritylist[currentindex] == var_c7837092) {
             break;
         }
     }
-    for (index = currentindex + 1; index < var_da328e7b.size; index++) {
-        var_b74300d3 = var_da328e7b[index];
+    for (index = currentindex + 1; index < prioritylist.size; index++) {
+        var_b74300d3 = prioritylist[index];
         if (isdefined(items[var_b74300d3])) {
             listitems[listitems.size] = items[var_b74300d3];
         }
     }
-    if (currentindex < var_da328e7b.size) {
+    if (currentindex < prioritylist.size) {
         for (index = 0; index < currentindex; index++) {
-            var_b74300d3 = var_da328e7b[index];
+            var_b74300d3 = prioritylist[index];
             if (isdefined(items[var_b74300d3])) {
                 listitems[listitems.size] = items[var_b74300d3];
             }

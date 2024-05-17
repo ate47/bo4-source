@@ -811,11 +811,11 @@ xmodelalias,hash_67d844747eaa7dc6,2a88a525740
 xmodelalias,hash_683f1f1d5213b61d,2a88a525a80
 weapon,hash_a818bb5ce1077b4,2a8891776b8
 weapon,hash_cbca54286491987,2a88906fad8
-weapon,hash_e5a7b3272612bd8,2a88909e4c8
+weapon,zhield_zword_dw_zm,2a88909e4c8
 weapon,incendiary_fire_zm,2a88904d0b8
 weapon,hash_1783057563ce1ca2,2a889098f88
 weapon,pistol_topbreak_t8_zm,2a8890e23b8
-weapon,hash_2d2d56cdd426fd6d,2a8890d4e98
+weapon,zhield_zword_turret_zm,2a8890d4e98
 weapon,hash_2d84f8802baf21b2,2a88908e508
 weapon,hash_357e452940a24480,2a88908fa58
 weapon,hash_38048fbc30bcd541,2a88904e608
@@ -823,13 +823,13 @@ weapon,gladiator_melee,2a889086528
 weapon,hash_392389373e7f5e32,2a8890a0f68
 weapon,buildable_piece_zm,2a88903d0f8
 weapon,ww_crossbow_t8_zm,2a8890ab9e8
-weapon,hash_45fee366c74ae3c3,2a88917b6a8
+weapon,zhield_zword_lh_zm,2a88917b6a8
 weapon,hash_479f8de44d618b68,2a88916cc38
 weapon,eq_molotov_zm,2a888ed5698
-weapon,hash_51fec66e67edeb3e,2a889172178
+weapon,ww_crossbow_t8_upgraded_zm,2a889172178
 weapon,riotshield_zm,2a8890a64a8
 weapon,hash_596a3e1585cc3eb7,2a889084fd8
-weapon,hash_5a0c9c99cd4df553,2a889082538
+weapon,ww_crossbow_charged_t8_upgraded_zm,2a889082538
 weapon,hash_631a4fc6401a7656,2a88904a618
 weapon,zombie_ai_defaultmelee,2a889023c08
 weapon,blight_father_melee,2a889043b88
@@ -3364,7 +3364,7 @@ string,hash_2eca6fba714f086,0
 string,hash_32f76fa42f85198,0
 string,hash_379a16a53bc4ebf,0
 string,hash_38a2cf22c48d6c3,0
-string,hash_3a379acfc384dc2,0
+string,zmweapon/riotshield,0
 string,hash_40c47b72c083914,0
 string,hash_43b319457bc818e,0
 string,hash_47e1955bea1fc19,0
@@ -3464,7 +3464,7 @@ string,hash_1e6964fc2922d01a,0
 string,hash_1eafdb1b0b12fa11,0
 string,hash_208eb7d41301aac0,0
 string,hash_21868d247829d827,0
-string,hash_21a781af97d8bc6d,0
+string,zmweapon/ww_crossbow_t8,0
 string,hash_226442eca8affe87,0
 string,hash_22ec60cd78b8277f,0
 string,hash_23184906a849ac54,0
@@ -3616,7 +3616,7 @@ string,hash_468014d28365550c,0
 string,hash_4741e74c4ca6f8ce,0
 string,hash_4758a78b4732480d,0
 string,hash_49281fa933339a32,0
-string,hash_49425885c154d9e6,0
+string,zmweapon/ww_crossbow_t8_upgraded,0
 string,hash_4973da5ba484b2ae,0
 string,hash_49e88c8053d4f73e,0
 string,hash_4a324d42cf256472,0

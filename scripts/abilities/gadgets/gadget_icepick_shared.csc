@@ -461,11 +461,11 @@ function private function_34aba8d8(local_client_num, targetid, newval) {
         if (newval == 1) {
             if (!isplayer(self)) {
                 var_b095c57b = function_b2755499(self.weapon, self);
-                var_cce9de60 = var_b095c57b.var_77b46a8c;
+                flavortext = var_b095c57b.var_77b46a8c;
             } else {
-                var_cce9de60 = #"";
+                flavortext = #"";
             }
-            setuimodelvalue(getuimodel(itemuimodel, "hackableFlavorText"), var_cce9de60);
+            setuimodelvalue(getuimodel(itemuimodel, "hackableFlavorText"), flavortext);
         } else if (newval == 2) {
             self notify(#"icepickhacked");
         }

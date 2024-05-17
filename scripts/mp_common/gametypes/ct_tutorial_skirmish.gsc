@@ -332,15 +332,15 @@ function challenges_init() {
 // Size: 0x5c
 function player_weapons() {
     specialist = self function_76785843();
-    var_8be50b09 = self function_b958401e(specialist);
-    self give_killstreaks(var_8be50b09);
+    a_str_killstreaks = self function_b958401e(specialist);
+    self give_killstreaks(a_str_killstreaks);
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish
 // Params 1, eflags: 0x1 linked
 // Checksum 0x64e8454b, Offset: 0x15d0
 // Size: 0x59e
-function give_killstreaks(var_8be50b09) {
+function give_killstreaks(a_str_killstreaks) {
     self loadout::clear_killstreaks();
     if (!level.loadoutkillstreaksenabled) {
         return;
@@ -349,7 +349,7 @@ function give_killstreaks(var_8be50b09) {
     sortedkillstreaks = [];
     currentkillstreak = 0;
     for (killstreaknum = 0; killstreaknum < 3; killstreaknum++) {
-        killstreakindex = level.killstreakindices[var_8be50b09[killstreaknum]];
+        killstreakindex = level.killstreakindices[a_str_killstreaks[killstreaknum]];
         if (isdefined(killstreakindex) && killstreakindex > 0) {
             assert(isdefined(level.tbl_killstreakdata[killstreakindex]), "<unknown string>" + killstreakindex + "<unknown string>");
             if (isdefined(level.tbl_killstreakdata[killstreakindex])) {
@@ -435,40 +435,40 @@ function function_3ba6ee5d(weapon, amount) {
 function function_b958401e(n_index) {
     switch (n_index) {
     case 1:
-        var_8be50b09 = array(#"uav", #"recon_car", #"supplydrop_marker");
+        a_str_killstreaks = array(#"uav", #"recon_car", #"supplydrop_marker");
         break;
     case 2:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"planemortar");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"planemortar");
         break;
     case 3:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"ai_tank_marker");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"ai_tank_marker");
         break;
     case 4:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"straferun");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"straferun");
         break;
     case 5:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"ultimate_turret");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"ultimate_turret");
         break;
     case 6:
-        var_8be50b09 = array(#"uav", #"recon_car", #"supplydrop_marker");
+        a_str_killstreaks = array(#"uav", #"recon_car", #"supplydrop_marker");
         break;
     case 7:
-        var_8be50b09 = array(#"uav", #"dart", #"supplydrop_marker");
+        a_str_killstreaks = array(#"uav", #"dart", #"supplydrop_marker");
         break;
     case 8:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"overwatch_helicopter");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"overwatch_helicopter");
         break;
     case 9:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"remote_missile");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"remote_missile");
         break;
     case 10:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"ac130");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"ac130");
         break;
     case 11:
-        var_8be50b09 = array(#"uav", #"supplydrop_marker", #"swat_team");
+        a_str_killstreaks = array(#"uav", #"supplydrop_marker", #"swat_team");
         break;
     }
-    return var_8be50b09;
+    return a_str_killstreaks;
 }
 
 // Namespace ct_tutorial_skirmish/ct_tutorial_skirmish

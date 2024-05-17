@@ -53,7 +53,7 @@ function function_6fd6ae61(e_powerup, player) {
     player notify(#"powerup points scaled");
     player endon(#"powerup points scaled", #"disconnect");
     player thread zm_powerups::function_5091b029("double_points");
-    player zombie_utility::function_826f5e98(#"zombie_point_scalar", 2);
+    player zombie_utility::set_zombie_var_player(#"zombie_point_scalar", 2);
     player clientfield::set_player_uimodel("hudItems.doublePointsActive", 1);
     if (player bgb::is_enabled(#"zm_bgb_temporal_gift")) {
         n_wait_time = 60;
@@ -61,7 +61,7 @@ function function_6fd6ae61(e_powerup, player) {
         n_wait_time = 30;
     }
     level waittilltimeout(n_wait_time, #"end_game");
-    player zombie_utility::function_826f5e98(#"zombie_point_scalar", undefined);
+    player zombie_utility::set_zombie_var_player(#"zombie_point_scalar", undefined);
     player clientfield::set_player_uimodel("hudItems.doublePointsActive", 0);
 }
 
@@ -83,7 +83,7 @@ function double_points_powerup(drop_item, player) {
             }
         }
     }
-    zombie_utility::function_c7ab6cbc(#"zombie_point_scalar", team, 2);
+    zombie_utility::set_zombie_var_team(#"zombie_point_scalar", team, 2);
     players = getplayers();
     for (player_index = 0; player_index < players.size; player_index++) {
         if (team == players[player_index].team) {
@@ -95,7 +95,7 @@ function double_points_powerup(drop_item, player) {
         n_wait += 30;
     }
     wait(n_wait);
-    zombie_utility::function_c7ab6cbc(#"zombie_point_scalar", team, 1);
+    zombie_utility::set_zombie_var_team(#"zombie_point_scalar", team, 1);
     level._race_team_double_points = undefined;
     players = getplayers();
     for (player_index = 0; player_index < players.size; player_index++) {

@@ -73,7 +73,7 @@ function zombify_player() {
         self [[ level.func_clone_plant_respawn ]]();
         return;
     }
-    if (!isdefined(zombie_utility::function_d2dfacfd(#"zombify_player")) || !zombie_utility::function_d2dfacfd(#"zombify_player")) {
+    if (!isdefined(zombie_utility::get_zombie_var(#"zombify_player")) || !zombie_utility::get_zombie_var(#"zombify_player")) {
         self thread zm_player::spawnspectator();
         return;
     }

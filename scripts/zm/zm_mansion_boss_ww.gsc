@@ -189,9 +189,9 @@ function init_boss() {
         s_loc = struct::get(str_targetname, "targetname");
     } while (isdefined(s_loc));
     level.s_boss.var_da2d7834 = [];
-    var_186c542d = getent("boss_atk_sp_pos_center", "targetname");
+    e_area = getent("boss_atk_sp_pos_center", "targetname");
     s_area_def = spawnstruct();
-    s_area_def.var_186c542d = var_186c542d;
+    s_area_def.e_area = e_area;
     s_area_def.var_6f05a409 = array(0, 1, 2, 3);
     if (!isdefined(level.s_boss.var_da2d7834)) {
         level.s_boss.var_da2d7834 = [];
@@ -200,10 +200,10 @@ function init_boss() {
     }
     level.s_boss.var_da2d7834[level.s_boss.var_da2d7834.size] = s_area_def;
     n_index = 0;
-    var_186c542d = getent("boss_atk_sp_pos_quad_" + n_index, "targetname");
+    e_area = getent("boss_atk_sp_pos_quad_" + n_index, "targetname");
     do {
         s_area_def = spawnstruct();
-        s_area_def.var_186c542d = var_186c542d;
+        s_area_def.e_area = e_area;
         s_area_def.var_6f05a409 = [];
         if (!isdefined(level.s_boss.var_da2d7834)) {
             level.s_boss.var_da2d7834 = [];
@@ -212,14 +212,14 @@ function init_boss() {
         }
         level.s_boss.var_da2d7834[level.s_boss.var_da2d7834.size] = s_area_def;
         n_index++;
-        var_186c542d = getent("boss_atk_sp_pos_quad_" + n_index, "targetname");
-    } while (isdefined(var_186c542d));
+        e_area = getent("boss_atk_sp_pos_quad_" + n_index, "targetname");
+    } while (isdefined(e_area));
     n_index = 0;
     for (n_index = 0; n_index < level.s_boss.var_f4aac79b.size; n_index++) {
         var_f7d81ece = level.s_boss.var_f4aac79b[n_index];
         foreach (var_aa39009c in level.s_boss.var_da2d7834) {
             foreach (var_fce1bc14 in var_f7d81ece.var_5d259c63) {
-                if (istouching(var_fce1bc14.origin, var_aa39009c.var_186c542d)) {
+                if (istouching(var_fce1bc14.origin, var_aa39009c.e_area)) {
                     if (!isdefined(var_aa39009c.var_6f05a409)) {
                         var_aa39009c.var_6f05a409 = [];
                     } else if (!isarray(var_aa39009c.var_6f05a409)) {
@@ -379,7 +379,7 @@ function function_92a12286() {
     while (true) {
         var_4935908f = 0;
         foreach (s_area in level.s_boss.var_da2d7834) {
-            if (self istouching(s_area.var_186c542d)) {
+            if (self istouching(s_area.e_area)) {
                 var_4935908f = 1;
                 break;
             }
@@ -867,7 +867,7 @@ function function_f433c7f5(n_stage) {
         e_target = level function_a676dbd7();
         var_2f36c41d = array::randomize(level.s_boss.var_da2d7834);
         foreach (var_aa39009c in var_2f36c41d) {
-            if (e_target istouching(var_aa39009c.var_186c542d)) {
+            if (e_target istouching(var_aa39009c.e_area)) {
                 var_ec5e7149 = var_aa39009c;
                 break;
             }
@@ -1219,7 +1219,7 @@ function function_bb528a4b(n_stage) {
     self.var_35eb7b2a = gettime() + 1000;
     self.var_a58d72c0 = 0;
     while (true) {
-        var_17c6835 = 0;
+        b_damaged = 0;
         s_notify = e_damage waittill(#"damage");
         n_damage = s_notify.amount;
         w_weapon = s_notify.weapon;
@@ -1229,35 +1229,35 @@ function function_bb528a4b(n_stage) {
         }
         if (w_weapon.weapclass === "rocketlauncher") {
             n_damage *= 0.15;
-            var_17c6835 = 1;
+            b_damaged = 1;
         }
-        if (!var_17c6835) {
+        if (!b_damaged) {
             if (ability_util::is_hero_weapon(w_weapon)) {
                 n_damage *= 0.1;
-                var_17c6835 = 1;
+                b_damaged = 1;
             }
         }
-        if (!var_17c6835) {
+        if (!b_damaged) {
             var_26943d66 = e_damage gettagorigin("tag_chest_ws");
             if (isdefined(var_26943d66)) {
                 if (distancesquared(s_notify.position, var_26943d66) <= 324) {
-                    var_17c6835 = 1;
+                    b_damaged = 1;
                 }
             }
         }
-        if (!var_17c6835) {
+        if (!b_damaged) {
             v_back = e_damage gettagorigin("tag_back_ws");
             if (isdefined(v_back)) {
                 if (distancesquared(s_notify.position, v_back) <= 256) {
-                    var_17c6835 = 1;
+                    b_damaged = 1;
                 }
             }
         }
         if (isdefined(w_weapon) && zm_weapons::is_wonder_weapon(w_weapon)) {
             n_damage *= 0.3;
-            var_17c6835 = 1;
+            b_damaged = 1;
         }
-        if (!var_17c6835) {
+        if (!b_damaged) {
             continue;
         }
         if (isdefined(w_weapon) && (w_weapon.name === #"stake_knife" || w_weapon.name === #"bowie_knife")) {

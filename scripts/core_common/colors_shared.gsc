@@ -42,8 +42,8 @@ function __init__() {
         if (isdefined(nodes[i].script_color_axis)) {
             nodes[i] add_node_to_global_arrays(nodes[i].script_color_axis, #"axis");
         }
-        if (isdefined(nodes[i].var_15eb6ad5)) {
-            nodes[i] add_node_to_global_arrays(nodes[i].var_15eb6ad5, #"team3");
+        if (isdefined(nodes[i].script_color_team3)) {
+            nodes[i] add_node_to_global_arrays(nodes[i].script_color_team3, #"team3");
         }
     }
     for (i = 0; i < volumes.size; i++) {
@@ -53,8 +53,8 @@ function __init__() {
         if (isdefined(volumes[i].script_color_axis)) {
             volumes[i] add_volume_to_global_arrays(volumes[i].script_color_axis, #"axis");
         }
-        if (isdefined(volumes[i].var_15eb6ad5)) {
-            volumes[i] add_volume_to_global_arrays(volumes[i].var_15eb6ad5, #"team3");
+        if (isdefined(volumes[i].script_color_team3)) {
+            volumes[i] add_volume_to_global_arrays(volumes[i].script_color_team3, #"team3");
         }
     }
     /#
@@ -142,8 +142,8 @@ function __main__() {
         if (isdefined(trig.script_color_axis)) {
             trig thread trigger_issues_orders(trig.script_color_axis, #"axis");
         }
-        if (isdefined(trig.var_15eb6ad5)) {
-            trig thread trigger_issues_orders(trig.var_15eb6ad5, #"team3");
+        if (isdefined(trig.script_color_team3)) {
+            trig thread trigger_issues_orders(trig.script_color_team3, #"team3");
         }
     }
 }
@@ -550,7 +550,7 @@ function activate_color_trigger(var_cc966c56) {
         str_color = self.script_color_axis;
         break;
     case #"team3":
-        str_color = self.var_15eb6ad5;
+        str_color = self.script_color_team3;
         break;
     default:
         return;
@@ -640,7 +640,7 @@ function function_f06ea88(node, var_f9350db6, var_cc966c56) {
         str_color = node.script_color_axis;
         break;
     case #"team3":
-        str_color = node.var_15eb6ad5;
+        str_color = node.script_color_team3;
         break;
     default:
         return;
@@ -813,8 +813,8 @@ function color_node_finds_a_user() {
     if (isdefined(self.script_color_axis)) {
         color_node_finds_user_from_colorcodes(self.script_color_axis, #"axis");
     }
-    if (isdefined(self.var_15eb6ad5)) {
-        color_node_finds_user_from_colorcodes(self.var_15eb6ad5, #"team3");
+    if (isdefined(self.script_color_team3)) {
+        color_node_finds_user_from_colorcodes(self.script_color_team3, #"team3");
     }
 }
 
@@ -1155,7 +1155,7 @@ function removespawnerfromcolornumberarray() {
         str_color = self.script_color_axis;
         break;
     case #"team3":
-        str_color = self.var_15eb6ad5;
+        str_color = self.script_color_team3;
         break;
     default:
         return;
@@ -1163,9 +1163,9 @@ function removespawnerfromcolornumberarray() {
     if (!isdefined(str_color)) {
         return;
     }
-    var_9986d9d6 = strtok(str_color, " ");
-    for (i = 0; i < var_9986d9d6.size; i++) {
-        arrayremovevalue(level.arrays_of_colorcoded_spawners[self.team][var_9986d9d6[i]], self);
+    a_str_colors = strtok(str_color, " ");
+    for (i = 0; i < a_str_colors.size; i++) {
+        arrayremovevalue(level.arrays_of_colorcoded_spawners[self.team][a_str_colors[i]], self);
     }
 }
 
@@ -1589,7 +1589,7 @@ function has_color() {
     } else if (self.team == #"axis") {
         return (isdefined(self.script_color_axis) || isdefined(self.script_forcecolor));
     } else if (self.team == #"team3") {
-        return (isdefined(self.var_15eb6ad5) || isdefined(self.script_forcecolor));
+        return (isdefined(self.script_color_team3) || isdefined(self.script_forcecolor));
     }
     return false;
 }

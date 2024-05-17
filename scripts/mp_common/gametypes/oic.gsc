@@ -57,20 +57,20 @@ function event_handler[gametype_init] main(eventstruct) {
     level.onplayerdamage = &onplayerdamage;
     level.onendgame = &onendgame;
     player::function_cf3aa03d(&onplayerkilled);
-    var_a7caf947 = [];
-    if (!isdefined(var_a7caf947)) {
-        var_a7caf947 = [];
-    } else if (!isarray(var_a7caf947)) {
-        var_a7caf947 = array(var_a7caf947);
+    oic_perks = [];
+    if (!isdefined(oic_perks)) {
+        oic_perks = [];
+    } else if (!isarray(oic_perks)) {
+        oic_perks = array(oic_perks);
     }
-    var_a7caf947[var_a7caf947.size] = "specialty_sprint";
-    if (!isdefined(var_a7caf947)) {
-        var_a7caf947 = [];
-    } else if (!isarray(var_a7caf947)) {
-        var_a7caf947 = array(var_a7caf947);
+    oic_perks[oic_perks.size] = "specialty_sprint";
+    if (!isdefined(oic_perks)) {
+        oic_perks = [];
+    } else if (!isarray(oic_perks)) {
+        oic_perks = array(oic_perks);
     }
-    var_a7caf947[var_a7caf947.size] = "specialty_slide";
-    level.var_a7caf947 = var_a7caf947;
+    oic_perks[oic_perks.size] = "specialty_slide";
+    level.oic_perks = oic_perks;
     globallogic_spawn::addsupportedspawnpointtype("ffa");
     var_1f99b9e8 = [];
     if (!isdefined(var_1f99b9e8)) {
@@ -191,7 +191,7 @@ function givecustomloadout() {
 // Size: 0xb0
 function giveperks() {
     self clearperks();
-    foreach (perkname in level.var_a7caf947) {
+    foreach (perkname in level.oic_perks) {
         if (!self hasperk(perkname)) {
             self setperk(perkname);
         }

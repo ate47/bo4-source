@@ -1662,10 +1662,10 @@ function overridedamage_player(e_inflictor, e_attacker, n_damage, n_dflags, str_
 // Checksum 0xb78def9a, Offset: 0x85d0
 // Size: 0xbc
 function function_b512a9bf(n_slot) {
-    var_dee68e3f = [];
-    var_dee68e3f[0] = #"eq_seeker_mine";
-    var_dee68e3f[2] = #"shock_rifle";
-    str_gadget = var_dee68e3f[n_slot];
+    a_str_gadgets = [];
+    a_str_gadgets[0] = #"eq_seeker_mine";
+    a_str_gadgets[2] = #"shock_rifle";
+    str_gadget = a_str_gadgets[n_slot];
     if (isinarray(level.var_e72728b8, str_gadget)) {
         arrayremovevalue(level.var_e72728b8, str_gadget);
     }

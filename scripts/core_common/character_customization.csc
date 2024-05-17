@@ -924,7 +924,7 @@ class class_7da27482 {
     // Params 0, eflags: 0x1 linked
     // Checksum 0xb0a85254, Offset: 0x1698
     // Size: 0xa
-    function function_9004475c() {
+    function get_character_index() {
         return var_1d73bad9;
     }
 

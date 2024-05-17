@@ -427,7 +427,7 @@ function function_91a84161(w_weapon, n_total_ammo) {
 // Size: 0xdc
 function function_2ba419ee(var_53458a86 = 1, round = level.round_number) {
     level.zombie_total = 0;
-    level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), round);
+    level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), round);
     zm_round_logic::set_round_number(round);
     level notify(#"kill_round");
     level zm_utility::function_9ad5aeb1(1, 1, 0, var_53458a86, 1);

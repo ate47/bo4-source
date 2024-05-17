@@ -1,6 +1,6 @@
 {
     "name": "#hash_7563d8d066991bc4",
-    "baseWeapon": "#hash_26a980c3ce2fd29c",
+    "baseWeapon": "#pistol_fullauto_t8_oic",
     "displayname": "#weapon/pistol_fullauto_t8",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
@@ -8,7 +8,7 @@
     "altWeaponIndex": 0,
     "reticle": "",
     "unk60": "#hash_66fcfc84e10fd06b",
-    "unk70": "#hash_26a980c3ce2fd29c",
+    "unk70": "#pistol_fullauto_t8_oic",
     "unk80": "#hash_721b3c15e283c0ee",
     "unkc80": "#hash_a5567d0168ae02f",
     "unkc88": "#hash_a5567d0168ae02f",

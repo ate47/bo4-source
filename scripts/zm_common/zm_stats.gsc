@@ -266,13 +266,13 @@ function player_stats_init() {
         var_87b499fb = self stats::get_stat(#"hash_18e3320ccf4091e5", #"hash_487f0fce798b3a4b");
         var_8962d9b1 = isdefined(level.var_d479261a) ? level.var_d479261a : 0;
         self stats::set_stat(#"hash_18e3320ccf4091e5", #"hash_487f0fce798b3a4b", var_8962d9b1);
-        var_327c034e = self stats::get_stat(#"hash_18e3320ccf4091e5", #"calling_timestamp");
-        var_d0ad64e3 = getutc();
-        var_222b02a1 = var_d0ad64e3 - var_327c034e;
+        previousutc = self stats::get_stat(#"hash_18e3320ccf4091e5", #"calling_timestamp");
+        currentutc = getutc();
+        var_222b02a1 = currentutc - previousutc;
         var_ee21b34b = 86400;
-        if (var_87b499fb !== var_8962d9b1 || var_327c034e == 0 || var_222b02a1 > var_ee21b34b) {
+        if (var_87b499fb !== var_8962d9b1 || previousutc == 0 || var_222b02a1 > var_ee21b34b) {
             self stats::set_stat(#"hash_18e3320ccf4091e5", #"progress", 0);
-            self stats::set_stat(#"hash_18e3320ccf4091e5", #"calling_timestamp", var_d0ad64e3);
+            self stats::set_stat(#"hash_18e3320ccf4091e5", #"calling_timestamp", currentutc);
         }
     }
     if (getdvarint(#"hash_11da02ca40639de5", 0)) {

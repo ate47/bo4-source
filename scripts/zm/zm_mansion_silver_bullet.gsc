@@ -91,7 +91,7 @@ function function_766980a4() {
     level endon(#"end_game");
     while (true) {
         s_result = level waittill(#"blueprint_completed");
-        if (s_result.produced == getweapon(#"hash_1d4928987b5f4f6e")) {
+        if (s_result.produced == getweapon(#"zitem_silver_bullet_part_4")) {
             level zm_ui_inventory::function_7df6bb60(#"hash_26da6ef83af4ba62", 1);
             break;
         }
@@ -164,12 +164,12 @@ function function_8051ebe7(e_player, w_weapon, var_7e18912e) {
 // Checksum 0x448e7d58, Offset: 0x930
 // Size: 0xb4
 function function_bdddc37c(w_weapon) {
-    var_2af07147 = zm_weapons::get_base_weapon(w_weapon);
-    if (isdefined(var_2af07147)) {
-        if (var_2af07147 == getweapon("pistol_topbreak_t8")) {
+    w_base_weapon = zm_weapons::get_base_weapon(w_weapon);
+    if (isdefined(w_base_weapon)) {
+        if (w_base_weapon == getweapon("pistol_topbreak_t8")) {
             return 380;
         }
-        n_cost = zm_weapons::get_weapon_cost(var_2af07147) * 0.75;
+        n_cost = zm_weapons::get_weapon_cost(w_base_weapon) * 0.75;
         if (isdefined(n_cost)) {
             return zm_utility::round_up_to_ten(int(n_cost));
         }

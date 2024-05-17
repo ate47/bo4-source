@@ -282,10 +282,10 @@ function function_7fe60e9e(entity) {
     if (isdefined(entity.var_e946c8e8) && entity.var_e946c8e8) {
         var_1a3b2274 = "gegenees_golden_spear_projectile";
     }
-    var_ed782d5 = getweapon(var_1a3b2274);
+    spearweapon = getweapon(var_1a3b2274);
     var_a137cb9f = entity gettagorigin("tag_inhand");
     var_eb549b4f = entity.favoriteenemy.origin;
-    projectile = magicbullet(var_ed782d5, var_a137cb9f, var_eb549b4f, entity, entity.favoriteenemy);
+    projectile = magicbullet(spearweapon, var_a137cb9f, var_eb549b4f, entity, entity.favoriteenemy);
     projectile thread function_7d162bd0(projectile, entity);
     entity function_59e9f77b();
 }

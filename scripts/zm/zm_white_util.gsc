@@ -570,10 +570,10 @@ function function_afbd7223(oldweapondata, newweapondata) {
     var_2153c223 = newweapondata[#"weapon"];
     if (isinarray(level.var_65b6264d, w_current) && isinarray(level.var_65b6264d, var_2153c223)) {
         weapondata = [];
-        var_8500c3b7 = array(level.a_w_ray_guns[3], level.a_w_ray_guns[1], level.a_w_ray_guns[2], level.a_w_ray_guns[0]);
-        foreach (var_9fbd6e74 in var_8500c3b7) {
-            if (w_current == var_9fbd6e74 || var_2153c223 == var_9fbd6e74) {
-                weapondata[#"weapon"] = var_9fbd6e74;
+        a_w_test = array(level.a_w_ray_guns[3], level.a_w_ray_guns[1], level.a_w_ray_guns[2], level.a_w_ray_guns[0]);
+        foreach (w_test in a_w_test) {
+            if (w_current == w_test || var_2153c223 == w_test) {
+                weapondata[#"weapon"] = w_test;
                 break;
             }
         }

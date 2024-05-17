@@ -1,7 +1,7 @@
 {
     "name": "#homunculus_zm",
     "baseWeapon": "#homunculus",
-    "displayname": "#hash_1b5597f01c38c550",
+    "displayname": "#zmweapon/homunculus",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

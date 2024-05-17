@@ -78,7 +78,7 @@ function shield_on_hud(drop_item, player_team) {
     /#
         self endon(#"disconnect");
         hudelem = hud::function_f5a689d("<unknown string>", 2);
-        hudelem hud::setpoint("<unknown string>", undefined, 0, zombie_utility::function_d2dfacfd(#"zombie_timer_offset") - zombie_utility::function_d2dfacfd(#"zombie_timer_offset_interval") * 2);
+        hudelem hud::setpoint("<unknown string>", undefined, 0, zombie_utility::get_zombie_var(#"zombie_timer_offset") - zombie_utility::get_zombie_var(#"zombie_timer_offset_interval") * 2);
         hudelem.sort = 0.5;
         hudelem.alpha = 0;
         hudelem fadeovertime(0.5);

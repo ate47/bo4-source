@@ -548,7 +548,7 @@ function function_22f94688(notifyhash) {
         self.var_f22c83f5 = 0;
         self.var_e75517b1 = 0;
         self val::reset(#"fasttravel", "ignoreme");
-        self.var_be3224e6 = 0;
+        self.bgb_disabled = 0;
         self bgb::resume_weapon_cycling();
         self allowsprint(1);
         self allowcrouch(1);
@@ -585,7 +585,7 @@ function function_6cbea0ea() {
     self.var_e75517b1 = 1;
     self val::set(#"fasttravel", "ignoreme", 1);
     self bgb::suspend_weapon_cycling();
-    self.var_be3224e6 = 1;
+    self.bgb_disabled = 1;
     self val::set(#"fasttravel", "takedamage", 0);
     self allowsprint(0);
     self allowcrouch(0);
@@ -616,7 +616,7 @@ function function_4a54c378() {
     self.var_f22c83f5 = 0;
     self.var_e75517b1 = 0;
     self val::reset(#"fasttravel", "ignoreme");
-    self.var_be3224e6 = 0;
+    self.bgb_disabled = 0;
     self bgb::resume_weapon_cycling();
     self val::reset(#"fasttravel", "takedamage");
     self allowsprint(1);
@@ -637,7 +637,7 @@ function function_9d729023(notifyhash) {
         self.var_f22c83f5 = 0;
         self.var_e75517b1 = 0;
         self val::reset(#"fasttravel", "ignoreme");
-        self.var_be3224e6 = 0;
+        self.bgb_disabled = 0;
         self bgb::resume_weapon_cycling();
         self allowsprint(1);
         self allowcrouch(1);

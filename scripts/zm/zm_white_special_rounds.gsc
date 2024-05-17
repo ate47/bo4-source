@@ -1217,7 +1217,7 @@ function function_2791c411() {
     if (!(zm_custom::function_901b751c(#"zmpowerdoorstate") == 2 || zm_custom::function_901b751c(#"zmpowerstate") == 2)) {
         level flag::wait_till(#"bunker_beds_to_bunker_power");
     }
-    level.var_9808f4d = zombie_utility::function_d2dfacfd(#"hash_7d5a25e2463f7fc5");
+    level.var_9808f4d = zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
     while (!level flag::get(#"hash_40856b65dff0f6eb")) {
         level function_2330b278();
     }

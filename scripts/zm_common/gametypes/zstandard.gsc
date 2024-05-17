@@ -1284,7 +1284,7 @@ function init_powerups() {
     zombie_utility::set_zombie_var(#"hash_8b7ff80184dc96a", 10);
     zombie_utility::set_zombie_var(#"hash_4d2cc817490bcca", 8);
     zombie_utility::set_zombie_var(#"hash_4edd68174a79580", 14);
-    level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange(zombie_utility::function_d2dfacfd(#"hash_4d2cc817490bcca"), zombie_utility::function_d2dfacfd(#"hash_4edd68174a79580"));
+    level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange(zombie_utility::get_zombie_var(#"hash_4d2cc817490bcca"), zombie_utility::get_zombie_var(#"hash_4edd68174a79580"));
     zm_powerups::add_zombie_powerup("bonus_points_player", #"p8_zm_powerup_rush_point", #"zombie_powerup_bonus_points", &zm_powerups::func_should_never_drop, 1, 0, 0);
     zm_powerups::powerup_remove_from_regular_drops("hero_weapon_power");
     zm_powerups::powerup_remove_from_regular_drops("bonus_points_team");
@@ -1559,7 +1559,7 @@ function function_51e47b48(var_e5fb46a8, str_name, n_time_ms) {
 // Checksum 0x2a697713, Offset: 0x6068
 // Size: 0x9c
 function function_51ed4d8b(e_player) {
-    if (isdefined(e_player zombie_utility::function_73061b82(#"zombie_powerup_fire_sale_on")) && e_player zombie_utility::function_73061b82(#"zombie_powerup_fire_sale_on")) {
+    if (isdefined(e_player zombie_utility::get_zombie_var_player(#"zombie_powerup_fire_sale_on")) && e_player zombie_utility::get_zombie_var_player(#"zombie_powerup_fire_sale_on")) {
         function_51e47b48(e_player, "default_treasure_chest", 0);
         return;
     }

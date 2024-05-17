@@ -1529,7 +1529,7 @@ weapon,hash_3066555aa3af79a2,294cdc98c08
 weapon,hash_30a69ce5312ed1a5,294cdbba4d8
 weapon,hash_30c16b73e79d048f,294cdc9b6a8
 weapon,drone_squadron_mp,294cdc26328
-weapon,hash_319b3ebb72c381c9,294cdc70ca8
+weapon,pistol_revolver_t8_oic_mp,294cdc70ca8
 weapon,inventory_uav_mp,294cdc3f818
 weapon,hash_338b9a5ff94807aa,294cdc821b8
 weapon,hash_33f8277c32c07d53,294cdc38d88
@@ -1622,7 +1622,7 @@ weapon,hash_60856f188aa19d7f,294cdccb5e8
 weapon,hash_60a14d3f595a08c7,294cdc422b8
 weapon,willy_pete_mp,294cdc0ce38
 weapon,scavenger_item_mp,294cdc92178
-weapon,hash_622c992c8fb19257,294cdcccb38
+weapon,pistol_standard_t8_oic_mp,294cdcccb38
 weapon,hash_62d42f125540cdf5,294cdc3b828
 weapon,hash_62fb4f8a9caa979a,294cdbf4e98
 weapon,hash_63aad3bc732f36cd,294cdccf5d8
@@ -7968,7 +7968,7 @@ string,hash_4bb5d3c1eded548b,0
 string,hash_4bc9eb282022bb61,0
 string,hash_4bd6eabc52f9148b,0
 string,hash_4beba6ce2b7174c7,0
-string,hash_4c262ac058202d38,0
+string,weapon/mini_turret,0
 string,hash_4c2bbe6f91c1ca94,0
 string,hash_4c5c212bf1d426c4,0
 string,hash_4c6cfe7bf6bdab6d,0
@@ -8097,7 +8097,7 @@ string,hash_58a2a5bf8163e55a,0
 string,hash_58b28a271da6d740,0
 string,hash_58b7aeee47f428da,0
 string,hash_58ce4aa1038595d4,0
-string,hash_58dbb47ef8a2b88a,0
+string,weapon/hero_minigun,0
 string,hash_58e6d4ccac9cb26f,0
 string,hash_58e8b14d44df49ce,0
 string,hash_58f22446fa93e6ab,0
@@ -8169,7 +8169,7 @@ string,hash_5f8076551c7e0e73,0
 string,hash_5f8e0aa3002dd023,0
 string,hash_5fadc5cf57233ef4,0
 string,hash_5fc4460a0ad75031,0
-string,hash_5fe1e4f4cfb91755,0
+string,weapon/noweapon,0
 string,hash_5ff6323be2fa24ee,0
 string,hash_6007593bdb6e884e,0
 string,hash_600af0ac4af0b090,0

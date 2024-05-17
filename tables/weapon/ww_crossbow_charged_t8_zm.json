@@ -1,7 +1,7 @@
 {
     "name": "#ww_crossbow_charged_t8_zm",
     "baseWeapon": "#ww_crossbow_charged_t8",
-    "displayname": "#hash_21a781af97d8bc6d",
+    "displayname": "#zmweapon/ww_crossbow_t8",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

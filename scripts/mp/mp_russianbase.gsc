@@ -163,15 +163,15 @@ function function_4dd23d6e() {
 function function_80c5243b(e_activator) {
     crane = self.crane;
     if (crane.location == #"end") {
-        var_3d17caa5 = 0;
+        b_kill = 0;
         crane.location = #"start";
         destination = crane.startpoint;
     } else {
-        var_3d17caa5 = 1;
+        b_kill = 1;
         crane.location = #"end";
         destination = crane.endpoint;
     }
-    crane.veh_kill.var_1654952d = 1;
+    crane.veh_kill.do_kill = 1;
     crane function_e0954c11();
     exploder::stop_exploder("fxexp_gantry_on");
     exploder::exploder("fxexp_gantry_off");
@@ -183,11 +183,11 @@ function function_80c5243b(e_activator) {
     crane moveto(destination, 4);
     crane playsound("evt_gantry_start");
     wait(3.35);
-    if (var_3d17caa5) {
+    if (b_kill) {
         crane.kill_trig.var_2563dc55 = 1;
     }
     wait(0.65);
-    crane.veh_kill.var_1654952d = 0;
+    crane.veh_kill.do_kill = 0;
     crane.kill_trig.var_2563dc55 = 0;
     crane function_e0954c11();
     exploder::stop_exploder("fxexp_gantry_off");
@@ -220,7 +220,7 @@ function function_147c1726(s_info) {
 // Size: 0x84
 function function_51905d68(s_info) {
     var_afae757d = s_info.activator;
-    if (isvehicle(var_afae757d) && isdefined(self.var_1654952d) && self.var_1654952d) {
+    if (isvehicle(var_afae757d) && isdefined(self.do_kill) && self.do_kill) {
         var_afae757d dodamage(100000, var_afae757d.origin, undefined, undefined, undefined, "MOD_EXPLOSIVE");
     }
 }

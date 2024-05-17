@@ -464,10 +464,10 @@ function private function_bdc03d88() {
 // Params 3, eflags: 0x4
 // Checksum 0xbef2bbf4, Offset: 0x2100
 // Size: 0x2cc
-function private function_434d0c2b(itemtype, var_da328e7b, var_ab9610ad = undefined) {
+function private function_434d0c2b(itemtype, prioritylist, var_ab9610ad = undefined) {
     assert(isplayer(self));
     assert(ishash(itemtype));
-    assert(isarray(var_da328e7b));
+    assert(isarray(prioritylist));
     items = [];
     var_e3c48c83 = item_world_util::get_itemtype(var_ab9610ad);
     foreach (item in self.inventory.items) {
@@ -488,7 +488,7 @@ function private function_434d0c2b(itemtype, var_da328e7b, var_ab9610ad = undefi
             items[var_b74300d3] = item;
         }
     }
-    foreach (var_b74300d3 in var_da328e7b) {
+    foreach (var_b74300d3 in prioritylist) {
         if (isdefined(items[var_b74300d3])) {
             return items[var_b74300d3];
         }
@@ -504,10 +504,10 @@ function private function_434d0c2b(itemtype, var_da328e7b, var_ab9610ad = undefi
 // Params 3, eflags: 0x4
 // Checksum 0x658930f9, Offset: 0x23d8
 // Size: 0x2cc
-function private _cycle_item(itemtype, var_da328e7b, var_bcc2655a) {
+function private _cycle_item(itemtype, prioritylist, var_bcc2655a) {
     assert(isplayer(self));
     assert(ishash(itemtype));
-    assert(isarray(var_da328e7b));
+    assert(isarray(prioritylist));
     if (!isdefined(var_bcc2655a)) {
         return;
     }
@@ -528,20 +528,20 @@ function private _cycle_item(itemtype, var_da328e7b, var_bcc2655a) {
             items[var_b74300d3] = item;
         }
     }
-    for (currentindex = 0; currentindex < var_da328e7b.size; currentindex++) {
-        if (var_da328e7b[currentindex] == var_c7837092) {
+    for (currentindex = 0; currentindex < prioritylist.size; currentindex++) {
+        if (prioritylist[currentindex] == var_c7837092) {
             break;
         }
     }
-    for (index = currentindex + 1; index < var_da328e7b.size; index++) {
-        var_b74300d3 = var_da328e7b[index];
+    for (index = currentindex + 1; index < prioritylist.size; index++) {
+        var_b74300d3 = prioritylist[index];
         if (isdefined(items[var_b74300d3])) {
             return items[var_b74300d3];
         }
     }
-    if (currentindex < var_da328e7b.size) {
+    if (currentindex < prioritylist.size) {
         for (index = 0; index < currentindex; index++) {
-            var_b74300d3 = var_da328e7b[index];
+            var_b74300d3 = prioritylist[index];
             if (isdefined(items[var_b74300d3])) {
                 return items[var_b74300d3];
             }

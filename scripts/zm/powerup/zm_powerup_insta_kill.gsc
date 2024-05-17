@@ -57,9 +57,9 @@ function function_d7a1e6a8(e_powerup, player) {
         n_wait_time = 30;
     }
     player thread zm_powerups::function_5091b029("insta_kill");
-    player zombie_utility::function_826f5e98(#"zombie_insta_kill", 1);
+    player zombie_utility::set_zombie_var_player(#"zombie_insta_kill", 1);
     level waittilltimeout(n_wait_time, #"end_game");
-    player zombie_utility::function_826f5e98(#"zombie_insta_kill", 0);
+    player zombie_utility::set_zombie_var_player(#"zombie_insta_kill", 0);
     player notify(#"insta_kill_over");
 }
 
@@ -76,13 +76,13 @@ function insta_kill_powerup(drop_item, player) {
     }
     team = player.team;
     level thread zm_powerups::show_on_hud(team, "insta_kill");
-    zombie_utility::function_c7ab6cbc(#"zombie_insta_kill", team, 1);
+    zombie_utility::set_zombie_var_team(#"zombie_insta_kill", team, 1);
     n_wait_time = 30;
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
         n_wait_time += 30;
     }
     wait(n_wait_time);
-    zombie_utility::function_c7ab6cbc(#"zombie_insta_kill", team, 0);
+    zombie_utility::set_zombie_var_team(#"zombie_insta_kill", team, 0);
     players = getplayers(team);
     for (i = 0; i < players.size; i++) {
         if (isdefined(players[i])) {

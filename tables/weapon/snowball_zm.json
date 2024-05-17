@@ -10,7 +10,7 @@
     "unk70": "#snowball",
     "unk80": "#hash_1cd87cbf76fc03e1",
     "gadgetIconAvailable": "#ui_icon_equipment_zm_snowball",
-    "gadgetIconUnavailable": "#hash_45a7f9ad40d25dce",
+    "gadgetIconUnavailable": "#ui_icon_equipment_zm_snowball_dark",
     "viewmodel": "#wpn_t8_zm_snowball_view",
     "worldModel": "#wpn_t8_zm_snowball_world",
     "projectilemodel": "#wpn_t8_zm_snowball_world",

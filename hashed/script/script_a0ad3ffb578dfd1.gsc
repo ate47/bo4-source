@@ -201,8 +201,8 @@ function function_59ecbee4() {
         b_show = 0;
         if (!(isdefined(level.var_7f5f5e6b) && level.var_7f5f5e6b)) {
             foreach (player in util::get_players()) {
-                if (isdefined(player.var_6afa034c) && isdefined(player.var_d6fe2916) && player.var_d6fe2916) {
-                    if (distancesquared(player.var_6afa034c.origin, var_5c608f55.origin) < 57600) {
+                if (isdefined(player.mdl_beacon) && isdefined(player.var_d6fe2916) && player.var_d6fe2916) {
+                    if (distancesquared(player.mdl_beacon.origin, var_5c608f55.origin) < 57600) {
                         b_show = 1;
                         break;
                     }

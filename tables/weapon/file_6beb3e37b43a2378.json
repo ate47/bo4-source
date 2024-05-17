@@ -1,7 +1,7 @@
 {
     "name": "#hash_6beb3e37b43a2378",
     "baseWeapon": "#gun_ultimate_turret",
-    "displayname": "#hash_4c262ac058202d38",
+    "displayname": "#weapon/mini_turret",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

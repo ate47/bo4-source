@@ -11,7 +11,7 @@
     "unk80": "#hash_711f1e7a51d98a4e",
     "viewmodel": "#wpn_t8_zm_akud_view",
     "worldModel": "#wpn_t8_zm_akud_world",
-    "clipmodel": "#hash_7c35bce741f6388b",
+    "clipmodel": "#wpn_t8_zm_akud_clip_world",
     "projectilemodel": "#tag_flash",
     "sound90": "#hash_1842954b617ff408",
     "firesound": "#hash_4ecfba47ecf213df",

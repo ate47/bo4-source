@@ -1,7 +1,7 @@
 {
     "name": "#galvaknuckles_t8_zm",
     "baseWeapon": "#galvaknuckles_t8",
-    "displayname": "#hash_2b09faf662a05e81",
+    "displayname": "#zmweapon/galvaknuckles_t8",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

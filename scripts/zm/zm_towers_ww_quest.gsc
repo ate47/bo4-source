@@ -767,11 +767,11 @@ function function_40f77b4a(b_skipped, var_19e802fa) {
 // Size: 0x192
 function function_ab13e06(b_skipped) {
     level.disable_firesale_drop = 1;
-    var_5804e911 = zm_powerups::get_powerups();
-    if (isarray(var_5804e911)) {
-        foreach (var_9c0bf2db in arraycopy(var_5804e911)) {
-            if (isdefined(var_9c0bf2db) && var_9c0bf2db.powerup_name === "fire_sale") {
-                var_9c0bf2db thread zm_powerups::powerup_delete();
+    a_mdl_powerups = zm_powerups::get_powerups();
+    if (isarray(a_mdl_powerups)) {
+        foreach (mdl_powerup in arraycopy(a_mdl_powerups)) {
+            if (isdefined(mdl_powerup) && mdl_powerup.powerup_name === "fire_sale") {
+                mdl_powerup thread zm_powerups::powerup_delete();
             }
         }
     }
@@ -981,7 +981,7 @@ function function_1da98a12() {
 // Checksum 0xbff530d6, Offset: 0x41b0
 // Size: 0x152
 function function_6919af04(e_player) {
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") === 1 || e_player hasweapon(level.w_crossbow) || e_player hasweapon(level.w_crossbow_upgraded) || e_player hasweapon(level.w_crossbow_charged) || e_player hasweapon(level.w_crossbow_charged_upgraded)) {
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") === 1 || e_player hasweapon(level.w_crossbow) || e_player hasweapon(level.w_crossbow_upgraded) || e_player hasweapon(level.w_crossbow_charged) || e_player hasweapon(level.w_crossbow_charged_upgraded)) {
         self sethintstringforplayer(e_player, "");
         return 0;
     }

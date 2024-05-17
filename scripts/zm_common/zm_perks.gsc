@@ -466,7 +466,7 @@ function function_f29c0595() {
             level.revive_machine_is_solo = 1;
         }
     }
-    cost = zombie_utility::function_d2dfacfd(#"zombie_perk_cost");
+    cost = zombie_utility::get_zombie_var(#"zombie_perk_cost");
     if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].cost)) {
         if (isint(level._custom_perks[perk].cost)) {
             cost = level._custom_perks[perk].cost;
@@ -1258,7 +1258,7 @@ function function_5296af32(player) {
             self.stub.hint_string = #"zombie/need_power";
             self.stub.hint_parm1 = undefined;
         } else {
-            cost = zombie_utility::function_d2dfacfd(#"zombie_perk_cost");
+            cost = zombie_utility::get_zombie_var(#"zombie_perk_cost");
             if (isdefined(level._custom_perks[perk]) && isdefined(level._custom_perks[perk].cost)) {
                 if (isint(level._custom_perks[perk].cost)) {
                     cost = level._custom_perks[perk].cost;
@@ -3198,7 +3198,7 @@ function function_28ac0614(var_bbb2c705, var_613b7621 = 0) {
     } else {
         var_cd5d9345 = [];
     }
-    var_cd0340f4 = isdefined(var_bbb2c705) && zombie_utility::function_d2dfacfd("perks_decay") && zm_custom::function_901b751c(#"zmperkdecay") == 1;
+    var_cd0340f4 = isdefined(var_bbb2c705) && zombie_utility::get_zombie_var("perks_decay") && zm_custom::function_901b751c(#"zmperkdecay") == 1;
     if (var_cd0340f4) {
         self function_dc10fc94(var_cd5d9345, var_bbb2c705);
         foreach (var_d105825e in var_cd5d9345) {

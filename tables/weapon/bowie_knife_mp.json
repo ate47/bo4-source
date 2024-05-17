@@ -1,7 +1,7 @@
 {
     "name": "#bowie_knife_mp",
     "baseWeapon": "#bowie_knife",
-    "displayname": "#hash_4df32082bac97235",
+    "displayname": "#zmweapon/bowie",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

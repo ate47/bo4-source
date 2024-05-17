@@ -1,7 +1,7 @@
 {
     "name": "#hash_5b10080871ad106c",
     "baseWeapon": "#gun_mini_turret",
-    "displayname": "#hash_4c262ac058202d38",
+    "displayname": "#weapon/mini_turret",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

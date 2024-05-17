@@ -7,7 +7,7 @@
     "name": "equipment_sensordart_restriction",
     "displayname": "#hash_504ad2d8233fb0ac",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__eq_sensor__restricted"
 }

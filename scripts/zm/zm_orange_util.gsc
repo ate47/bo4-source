@@ -493,10 +493,10 @@ function is_wonder_weapon(w_weapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd30ff51f, Offset: 0x20a0
 // Size: 0x74
-function function_5cd05b9(var_6a82f66f, var_78c892fa) {
-    var_e8d0313a = zm_weapons::get_base_weapon(var_6a82f66f);
-    var_db8e96b7 = zm_weapons::get_base_weapon(var_78c892fa);
-    return isdefined(var_e8d0313a) && isdefined(var_db8e96b7) && var_e8d0313a == var_db8e96b7;
+function function_5cd05b9(w_weapon_1, w_weapon_2) {
+    w_base_1 = zm_weapons::get_base_weapon(w_weapon_1);
+    w_base_2 = zm_weapons::get_base_weapon(w_weapon_2);
+    return isdefined(w_base_1) && isdefined(w_base_2) && w_base_1 == w_base_2;
 }
 
 // Namespace zm_orange_util/zm_orange_util
@@ -512,7 +512,7 @@ function function_adb657dd(e_player) {
         } else {
             self sethintstring(zm_utility::function_d6046228(#"hash_172253c9314825fc", #"hash_71016e43b6fe0570"), w_give.displayname, w_take.displayname);
         }
-    } else if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"hash_603fdd2e4ae5b2b0") {
+    } else if (e_player.currentweapon.isheroweapon === 1 || e_player.currentweapon.name === #"zhield_riot_dw") {
         return false;
     } else {
         self sethintstring(zm_utility::function_d6046228(#"hash_314a7588b45256eb", #"hash_6831cfd35264e1"), w_give.displayname);
@@ -606,10 +606,10 @@ function function_afbd7223(oldweapondata, newweapondata) {
     var_2153c223 = newweapondata[#"weapon"];
     if (isinarray(level.var_65b6264d, w_current) && isinarray(level.var_65b6264d, var_2153c223)) {
         weapondata = [];
-        var_8500c3b7 = array(level.a_w_ray_guns[3], level.a_w_ray_guns[1], level.a_w_ray_guns[2], level.a_w_ray_guns[0]);
-        foreach (var_9fbd6e74 in var_8500c3b7) {
-            if (w_current == var_9fbd6e74 || var_2153c223 == var_9fbd6e74) {
-                weapondata[#"weapon"] = var_9fbd6e74;
+        a_w_test = array(level.a_w_ray_guns[3], level.a_w_ray_guns[1], level.a_w_ray_guns[2], level.a_w_ray_guns[0]);
+        foreach (w_test in a_w_test) {
+            if (w_current == w_test || var_2153c223 == w_test) {
+                weapondata[#"weapon"] = w_test;
                 break;
             }
         }

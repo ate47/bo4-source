@@ -303,7 +303,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
         break;
     case #"special":
         var_e7beaa5 = array(#"hero_chakram_lv1", #"hero_chakram_lv2", #"hero_chakram_lv3", #"hero_chakram_lh_lv1", #"hero_chakram_lh_lv2", #"hero_chakram_lh_lv3", #"hero_hammer_lv1", #"hero_hammer_lv2", #"hero_hammer_lv3", #"hero_scepter_lv1", #"hero_scepter_lv2", #"hero_scepter_lv3", #"hero_sword_pistol_lv1", #"hero_sword_pistol_lv2", #"hero_sword_pistol_lv3", #"hero_sword_pistol_lh_lv1", #"hero_sword_pistol_lh_lv2", #"hero_sword_pistol_lh_lv3", #"hero_flamethrower_t8_lv1", #"hero_flamethrower_t8_lv2", #"hero_flamethrower_t8_lv3", #"hero_gravityspikes_t8_lv1", #"hero_gravityspikes_t8_lv2", #"hero_gravityspikes_t8_lv3", #"hero_katana_t8_lv1", #"hero_katana_t8_lv2", #"hero_katana_t8_lv3", #"hero_minigun_t8_lv1", #"hero_minigun_t8_lv2", #"hero_minigun_t8_lv3");
-        level.var_869ea5a = 1;
+        level.b_special_weapons = 1;
         level zm_trial::function_cdcce681(1);
         break;
     case #"shield":
@@ -319,7 +319,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
         level zm_trial::function_25ee130(1);
         break;
     case #"spoon":
-        var_e7beaa5 = array(#"spoon_alcatraz", #"spork_alcatraz", #"zhield_spectral_dw", #"hash_42895043be26dc73", #"hash_2182349b1e42e1a4", #"zhield_spectral_dw_upgraded", #"zhield_spectral_turret", #"zhield_spectral_turret_upgraded", "tomahawk_t8", "tomahawk_t8_upgraded");
+        var_e7beaa5 = array(#"spoon_alcatraz", #"spork_alcatraz", #"zhield_spectral_dw", #"zhield_spectral_lh", #"zhield_spectral_lh_upgraded", #"zhield_spectral_dw_upgraded", #"zhield_spectral_turret", #"zhield_spectral_turret_upgraded", "tomahawk_t8", "tomahawk_t8_upgraded");
         level zm_trial::function_8e2a923(1);
         level zm_trial::function_44200d07(1);
         break;
@@ -347,7 +347,7 @@ function private on_begin(var_e097dc07, var_f5300808) {
         break;
     case #"no_attachments":
         level.var_4400c4f7 = 1;
-        level.var_869ea5a = 1;
+        level.b_special_weapons = 1;
         break;
     case #"snowballs":
         var_e7beaa5 = array(#"snowball", #"snowball_upgraded", #"snowball_yellow", #"snowball_yellow_upgraded");
@@ -416,7 +416,7 @@ function private on_end(round_reset) {
         }
         self.a_n_objective_ids = undefined;
     }
-    level.var_869ea5a = undefined;
+    level.b_special_weapons = undefined;
     callback::function_824d206(&function_33f0ddd3);
     callback::remove_on_weapon_change(&zm_trial_util::function_79518194);
     challenge = zm_trial::function_a36e8c38(#"restrict_loadout");
@@ -514,7 +514,7 @@ function function_937e218c() {
 // Checksum 0x1c7a43cd, Offset: 0x2e20
 // Size: 0x72
 function is_active(var_1eb3fec6 = 0) {
-    if (var_1eb3fec6 && isdefined(level.var_869ea5a) && level.var_869ea5a) {
+    if (var_1eb3fec6 && isdefined(level.b_special_weapons) && level.b_special_weapons) {
         return false;
     }
     challenge = zm_trial::function_a36e8c38(#"restrict_loadout");

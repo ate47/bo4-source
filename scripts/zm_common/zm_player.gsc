@@ -1154,7 +1154,7 @@ function last_stand_revive() {
 // Size: 0xf8
 function spectators_respawn() {
     level endon(#"between_round_over", #"end_game");
-    if (!isdefined(zombie_utility::function_d2dfacfd(#"spectators_respawn")) || !zombie_utility::function_d2dfacfd(#"spectators_respawn")) {
+    if (!isdefined(zombie_utility::get_zombie_var(#"spectators_respawn")) || !zombie_utility::get_zombie_var(#"spectators_respawn")) {
         return;
     }
     while (true) {

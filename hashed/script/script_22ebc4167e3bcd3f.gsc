@@ -546,11 +546,11 @@ function function_48e7a1d7(e_grenade, n_grenade_charge_power) {
         level.var_5c14fe03 ghost();
         mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
         mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
-        var_9c0bf2db = util::spawn_model(level.var_5c14fe03.model, e_grenade.origin);
-        var_9c0bf2db.str_powerup = level.var_5c14fe03.str_powerup;
-        var_9c0bf2db linkto(mdl_tomahawk);
+        mdl_powerup = util::spawn_model(level.var_5c14fe03.model, e_grenade.origin);
+        mdl_powerup.str_powerup = level.var_5c14fe03.str_powerup;
+        mdl_powerup linkto(mdl_tomahawk);
         self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
-        self thread function_be995f48(mdl_tomahawk, var_9c0bf2db);
+        self thread function_be995f48(mdl_tomahawk, mdl_powerup);
         return 1;
     }
     return 0;
@@ -560,13 +560,13 @@ function function_48e7a1d7(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x6c5ae905, Offset: 0x28c8
 // Size: 0xc4
-function function_be995f48(mdl_tomahawk, var_9c0bf2db) {
+function function_be995f48(mdl_tomahawk, mdl_powerup) {
     self endon(#"disconnect");
     while (isdefined(mdl_tomahawk)) {
         waitframe(1);
     }
-    str_powerup = var_9c0bf2db.str_powerup;
-    var_9c0bf2db delete();
+    str_powerup = mdl_powerup.str_powerup;
+    mdl_powerup delete();
     level.var_5c14fe03 delete();
     arrayremovevalue(level.a_tomahawk_pickup_funcs, &function_48e7a1d7);
     zm_powerups::specific_powerup_drop(str_powerup, self.origin);

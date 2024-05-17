@@ -77,7 +77,7 @@ function private function_cef412a7(einflictor, eattacker, idamage, idflags, smea
 // Checksum 0x8f2f25b8, Offset: 0x588
 // Size: 0x274
 function function_b9d56970() {
-    self callback::function_d8abfc3d(#"on_ai_melee", &wz_ai_zombie::function_b8eb5dea);
+    self callback::function_d8abfc3d(#"on_ai_melee", &wz_ai_zombie::zombie_on_melee);
     self callback::function_d8abfc3d(#"hash_45b50cc48ee7f9d8", &function_69c3e2ac);
     self callback::function_d8abfc3d(#"on_ai_killed", &on_dog_killed);
     self callback::function_d8abfc3d(#"hash_3bb51ce51020d0eb", &wz_ai_utils::function_16e2f075);

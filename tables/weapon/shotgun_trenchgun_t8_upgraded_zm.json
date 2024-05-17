@@ -1,7 +1,7 @@
 {
     "name": "#shotgun_trenchgun_t8_upgraded_zm",
     "baseWeapon": "#shotgun_trenchgun_t8_upgraded",
-    "displayname": "#hash_16d475d6aa2d7c0c",
+    "displayname": "#zmweapon/shotgun_trenchgun_t8_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 354,
     "dualWieldWeaponIndex": 142,

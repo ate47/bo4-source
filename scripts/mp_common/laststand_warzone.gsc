@@ -69,7 +69,7 @@ function __init__() {
     callback::on_player_killed(&on_player_killed);
     callback::on_disconnect(&on_player_disconnect);
     /#
-        level thread function_ce726eb4();
+        level thread force_last_stand();
     #/
     setdvar(#"g_revivetime", getgametypesetting(#"laststandrevivetime"));
 }
@@ -404,7 +404,7 @@ function function_d5db8d2e(attacker, weapon) {
     // Params 0, eflags: 0x0
     // Checksum 0x9b6905d1, Offset: 0x1c68
     // Size: 0x1b8
-    function function_ce726eb4() {
+    function force_last_stand() {
         level endon(#"game_ended");
         while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {

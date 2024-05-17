@@ -116,7 +116,7 @@
             "damagescale": 0.1
         },
         {
-            "var_fe55d685": "#hash_2c6f972743e02431",
+            "var_fe55d685": "#ww_hand_c_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_c",
             "var_628192b0": 0.5,
@@ -124,7 +124,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_14950d710b3d3778",
+            "var_fe55d685": "#ww_hand_c_upgraded_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_c_upgraded",
             "var_628192b0": 0.5,
@@ -132,7 +132,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_53b2b708d6f3408d",
+            "var_fe55d685": "#ww_hand_g_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_g",
             "var_628192b0": 0.5,
@@ -140,7 +140,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_4d4aff017c2e2e9c",
+            "var_fe55d685": "#ww_hand_g_upgraded_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_g_upgraded",
             "var_628192b0": 0.5,
@@ -148,7 +148,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_78f376ef8e52b12e",
+            "var_fe55d685": "#ww_hand_h_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_h",
             "var_628192b0": 0.5,
@@ -156,7 +156,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_7570d1b608819be5",
+            "var_fe55d685": "#ww_hand_h_upgraded_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_h_upgraded",
             "var_628192b0": 0.5,
@@ -164,7 +164,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_490f76c5d6979055",
+            "var_fe55d685": "#ww_hand_o_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_o",
             "var_628192b0": 0.5,
@@ -172,7 +172,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_73e4103ad6947124",
+            "var_fe55d685": "#ww_hand_o_upgraded_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_o_upgraded",
             "var_628192b0": 0.5,
@@ -180,7 +180,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_64c28e159e811e6b",
+            "var_fe55d685": "#ww_hand_c_uncharged_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_c_uncharged",
             "var_628192b0": 0.5,
@@ -188,7 +188,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_14950d710b3d3778",
+            "var_fe55d685": "#ww_hand_c_upgraded_zm",
             "var_fc420d71": 0.7,
             "weaponid": "#ww_hand_c_upgraded",
             "var_628192b0": 0.7,
@@ -196,7 +196,7 @@
             "damagescale": 0.7
         },
         {
-            "var_fe55d685": "#hash_74124298e23f9a17",
+            "var_fe55d685": "#ww_hand_g_uncharged_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_g_uncharged",
             "var_628192b0": 0.5,
@@ -204,7 +204,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_4d4aff017c2e2e9c",
+            "var_fe55d685": "#ww_hand_g_upgraded_zm",
             "var_fc420d71": 0.7,
             "weaponid": "#ww_hand_g_upgraded",
             "var_628192b0": 0.7,
@@ -212,7 +212,7 @@
             "damagescale": 0.7
         },
         {
-            "var_fe55d685": "#hash_73ada1cc177c3f98",
+            "var_fe55d685": "#ww_hand_h_uncharged_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_h_uncharged",
             "var_628192b0": 0.5,
@@ -220,7 +220,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_7570d1b608819be5",
+            "var_fe55d685": "#ww_hand_h_upgraded_zm",
             "var_fc420d71": 0.7,
             "weaponid": "#ww_hand_h_upgraded",
             "var_628192b0": 0.7,
@@ -228,7 +228,7 @@
             "damagescale": 0.7
         },
         {
-            "var_fe55d685": "#hash_6330ce44163194cf",
+            "var_fe55d685": "#ww_hand_o_uncharged_zm",
             "var_fc420d71": 0.5,
             "weaponid": "#ww_hand_o_uncharged",
             "var_628192b0": 0.5,
@@ -236,7 +236,7 @@
             "damagescale": 0.5
         },
         {
-            "var_fe55d685": "#hash_73e4103ad6947124",
+            "var_fe55d685": "#ww_hand_o_upgraded_zm",
             "var_fc420d71": 0.7,
             "weaponid": "#ww_hand_o_upgraded",
             "var_628192b0": 0.7,

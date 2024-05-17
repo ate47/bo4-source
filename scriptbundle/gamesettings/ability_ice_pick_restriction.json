@@ -7,7 +7,7 @@
     "name": "ability_ice_pick_restriction",
     "displayname": "#hash_48c19a59d96859f3",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__gadget_icepick__restricted"
 }

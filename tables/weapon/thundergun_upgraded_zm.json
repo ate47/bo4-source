@@ -1,7 +1,7 @@
 {
     "name": "#thundergun_upgraded_zm",
     "baseWeapon": "#thundergun_upgraded",
-    "displayname": "#hash_410fa47c46097366",
+    "displayname": "#zmweapon/thundergun_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

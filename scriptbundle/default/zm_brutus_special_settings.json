@@ -1,7 +1,7 @@
 {
     "weapondamagescaleoverrides": [
         {
-            "var_fe55d685": "#hash_664ed6b81eca9e0b",
+            "var_fe55d685": "#ww_blundergat_t8_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_t8",
             "var_628192b0": 0.3,
@@ -9,7 +9,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_4ba57e1ab543ae5a",
+            "var_fe55d685": "#ww_blundergat_t8_upgraded_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_t8_upgraded",
             "var_628192b0": 0.3,
@@ -17,7 +17,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_42091433870f2e63",
+            "var_fe55d685": "#ww_blundergat_acid_t8_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_acid_t8",
             "var_628192b0": 0.3,
@@ -25,7 +25,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_1384ddfe5d885112",
+            "var_fe55d685": "#ww_blundergat_acid_t8_upgraded_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_acid_t8_upgraded",
             "var_628192b0": 0.3,
@@ -33,7 +33,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_61939ddbdf40d266",
+            "var_fe55d685": "#ww_blundergat_fire_t8_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_fire_t8",
             "var_628192b0": 0.3,
@@ -41,7 +41,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_2aaac48402d446dd",
+            "var_fe55d685": "#ww_blundergat_fire_t8_upgraded_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_fire_t8_upgraded",
             "var_628192b0": 0.3,
@@ -49,7 +49,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_1d861ae1ddd5c62",
+            "var_fe55d685": "#ww_blundergat_fire_t8_unfinished_zm",
             "var_fc420d71": 0.3,
             "weaponid": "#ww_blundergat_fire_t8_unfinished",
             "var_628192b0": 0.3,
@@ -89,7 +89,7 @@
             "damagescale": 0.3
         },
         {
-            "var_fe55d685": "#hash_5d0f8c192ceaf1dd",
+            "var_fe55d685": "#hero_flamethrower_t8_lv1_zm",
             "var_fc420d71": 0.12,
             "weaponid": "#hero_flamethrower_t8_lv1",
             "var_628192b0": 0.12,
@@ -97,7 +97,7 @@
             "damagescale": 0.12
         },
         {
-            "var_fe55d685": "#hash_3400ac24778b9fa2",
+            "var_fe55d685": "#hero_flamethrower_t8_lv2_zm",
             "var_fc420d71": 0.16,
             "weaponid": "#hero_flamethrower_t8_lv2",
             "var_628192b0": 0.16,
@@ -105,7 +105,7 @@
             "damagescale": 0.16
         },
         {
-            "var_fe55d685": "#hash_5e1e882ad7564337",
+            "var_fe55d685": "#hero_flamethrower_t8_lv3_zm",
             "var_fc420d71": 0.2,
             "weaponid": "#hero_flamethrower_t8_lv3",
             "var_628192b0": 0.2,
@@ -113,7 +113,7 @@
             "damagescale": 0.2
         },
         {
-            "var_fe55d685": "#hash_49df56a07d91d21a",
+            "var_fe55d685": "#hero_gravityspikes_t8_lv1_zm",
             "var_fc420d71": 1,
             "weaponid": "#hero_gravityspikes_t8_lv1",
             "var_628192b0": 1,
@@ -121,7 +121,7 @@
             "damagescale": 1
         },
         {
-            "var_fe55d685": "#hash_1fcf569a1dd32eb5",
+            "var_fe55d685": "#hero_gravityspikes_t8_lv2_zm",
             "var_fc420d71": 1,
             "weaponid": "#hero_gravityspikes_t8_lv2",
             "var_628192b0": 1,
@@ -129,7 +129,7 @@
             "damagescale": 1
         },
         {
-            "var_fe55d685": "#hash_463a12927fb4b868",
+            "var_fe55d685": "#hero_gravityspikes_t8_lv3_zm",
             "var_fc420d71": 1,
             "weaponid": "#hero_gravityspikes_t8_lv3",
             "var_628192b0": 1,
@@ -137,7 +137,7 @@
             "damagescale": 1
         },
         {
-            "var_fe55d685": "#hash_6117b744f36b74f1",
+            "var_fe55d685": "#hero_katana_t8_lv1_zm",
             "var_fc420d71": 0.29,
             "weaponid": "#hero_katana_t8_lv1",
             "var_628192b0": 0.29,
@@ -145,7 +145,7 @@
             "damagescale": 0.29
         },
         {
-            "var_fe55d685": "#hash_ec3b74b563ad0c6",
+            "var_fe55d685": "#hero_katana_t8_lv2_zm",
             "var_fc420d71": 0.29,
             "weaponid": "#hero_katana_t8_lv2",
             "var_628192b0": 0.29,
@@ -153,7 +153,7 @@
             "damagescale": 0.29
         },
         {
-            "var_fe55d685": "#hash_39b0935565759c5b",
+            "var_fe55d685": "#hero_katana_t8_lv3_zm",
             "var_fc420d71": 0.29,
             "weaponid": "#hero_katana_t8_lv3",
             "var_628192b0": 0.29,
@@ -161,7 +161,7 @@
             "damagescale": 0.29
         },
         {
-            "var_fe55d685": "#hash_545fd158bb58c964",
+            "var_fe55d685": "#hero_minigun_t8_lv1_zm",
             "var_fc420d71": 0.1,
             "weaponid": "#hero_minigun_t8_lv1",
             "var_628192b0": 0.1,
@@ -169,7 +169,7 @@
             "damagescale": 0.1
         },
         {
-            "var_fe55d685": "#hash_328f170c89ff11b",
+            "var_fe55d685": "#hero_minigun_t8_lv2_zm",
             "var_fc420d71": 0.1,
             "weaponid": "#hero_minigun_t8_lv2",
             "var_628192b0": 0.1,
@@ -177,7 +177,7 @@
             "damagescale": 0.1
         },
         {
-            "var_fe55d685": "#hash_1b7156ba163d086",
+            "var_fe55d685": "#hero_minigun_t8_lv3_zm",
             "var_fc420d71": 0.1,
             "weaponid": "#hero_minigun_t8_lv3",
             "var_628192b0": 0.1,

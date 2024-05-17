@@ -307,8 +307,8 @@ function cleanup_step_5(var_5ea5c94d, ended_early) {
     exploder::exploder_stop("exp_lgt_crypt_darker");
     exploder::exploder("exp_lgt_crypt_normal");
     mansion_util::function_5904a8e1();
-    var_14d5aa56 = getentarray("imp_floor_symbols", "script_noteworthy");
-    foreach (mdl_symbol in var_14d5aa56) {
+    a_mdl_symbols = getentarray("imp_floor_symbols", "script_noteworthy");
+    foreach (mdl_symbol in a_mdl_symbols) {
         mdl_symbol delete();
     }
 }

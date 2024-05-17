@@ -1,7 +1,7 @@
 {
     "name": "#hash_707f69e75becede9",
     "baseWeapon": "#hero_sword_pistol_lh_lv2",
-    "displayname": "#hash_1ef82642b903da22",
+    "displayname": "#weapon/hero_sword_pistol",
     "sessionMode": "multiplayer",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

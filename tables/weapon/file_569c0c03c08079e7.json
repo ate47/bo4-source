@@ -1,7 +1,7 @@
 {
     "name": "#hash_569c0c03c08079e7",
     "baseWeapon": "#ww_freezegun_t8_upgraded",
-    "displayname": "#hash_599704b7a9318e3d",
+    "displayname": "#zmweapon/ww_freezegun_t8_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

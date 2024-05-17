@@ -7,7 +7,7 @@
     "name": "lmg_heavy_restriction",
     "displayname": "#weapon/lmg_heavy_t8",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__lmg_heavy_t8__restricted"
 }

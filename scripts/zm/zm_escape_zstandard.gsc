@@ -457,11 +457,11 @@ function function_ac904e5e() {
     zm_utility::function_742f2c18(13, #"zombie", 20, 16);
     zm_utility::function_742f2c18(14, #"zombie", 30, 16);
     zm_utility::function_742f2c18(15, #"zombie", 40, 16);
-    var_a535d72c = 16;
+    n_zombie_min = 16;
     for (n_round = 16; n_round < 255; n_round++) {
-        zm_utility::function_742f2c18(n_round, #"zombie", undefined, var_a535d72c);
-        var_a535d72c++;
-        var_a535d72c = math::clamp(var_a535d72c, 16, 24);
+        zm_utility::function_742f2c18(n_round, #"zombie", undefined, n_zombie_min);
+        n_zombie_min++;
+        n_zombie_min = math::clamp(n_zombie_min, 16, 24);
     }
 }
 

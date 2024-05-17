@@ -369,7 +369,7 @@ function switch_from_alt_weapon(weapon) {
 // Checksum 0xa606c387, Offset: 0x1140
 // Size: 0xcc
 function give_start_weapons(takeallweapons, alreadyspawned) {
-    if (isdefined(self.s_loadout) && zombie_utility::function_d2dfacfd("retain_weapons") && zm_custom::function_901b751c(#"zmretainweapons")) {
+    if (isdefined(self.s_loadout) && zombie_utility::get_zombie_var("retain_weapons") && zm_custom::function_901b751c(#"zmretainweapons")) {
         self player_give_loadout(self.s_loadout, 1, 0);
         self.s_loadout = undefined;
         return;

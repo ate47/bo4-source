@@ -7,7 +7,7 @@
     "name": "operator_bayonet_restriction",
     "displayname": "#hash_45fc17522d5fa559",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__ar_stealth_t8__attachments__uber"
 }

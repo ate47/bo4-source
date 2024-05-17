@@ -206,7 +206,7 @@ function event_handler[gametype_init] main(eventstruct) {
     util::set_dvar_int_if_unset("scr_prop_minigame", 1);
     /#
         level.var_a7997034 = 0;
-        thread prop_dev::function_93440c52();
+        thread prop_dev::propdevgui();
     #/
     clientfield::register("allplayers", "hideTeamPlayer", 16000, 2, "int");
     clientfield::register("allplayers", "pingHighlight", 16000, 1, "int");

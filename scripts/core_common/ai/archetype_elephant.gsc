@@ -749,7 +749,7 @@ function private function_e5f2ff53(elephant, var_a4946e52, targetname) {
     rider.var_c8ec4813 = 1;
     rider linkto(self, var_a4946e52, (0, 0, 0), (0, 0, 0));
     array::add(elephant.ai.riders, rider);
-    rider.ai.var_ed782d5 = getweapon("rider_spear_projectile");
+    rider.ai.spearweapon = getweapon("rider_spear_projectile");
     rider.ai.elephant = elephant;
     /#
         recordent(rider);
@@ -857,7 +857,7 @@ function private function_4c731a08() {
     self setavoidancemask("avoid none");
     self.ai.var_5c1cc6e9 = gettime() + 3000;
     self.ai.var_c53cce81 = gettime() + randomintrange(3500, 4000);
-    self.ai.var_a05929e4 = getweapon(#"hash_8a4d8f38ca65ff0");
+    self.ai.var_a05929e4 = getweapon(#"elephant_eye_projectile");
     self.ai.var_4622f7a9 = gettime() + randomintrange(1500, 2000);
     self.b_ignore_cleanup = 1;
     self.ignore_nuke = 1;

@@ -1677,7 +1677,7 @@ function function_f00765ad(localclientnum, xuid, var_87c045d1, index, var_3f0e79
     force_update = 0;
     iterations = 0;
     var_a65df30 = [[ var_87c045d1 ]]->function_e599283f();
-    current_index = [[ var_87c045d1 ]]->function_9004475c();
+    current_index = [[ var_87c045d1 ]]->get_character_index();
     [[ var_87c045d1 ]]->show_model();
     [[ var_87c045d1 ]]->set_xuid(xuid);
     [[ var_87c045d1 ]]->set_character_mode(session_mode);
@@ -1846,8 +1846,8 @@ function function_79b4e640(localclientnum) {
         level waittill(#"hash_5661859119127749");
         if (isdefined(level.var_202758dc) && isdefined(level.var_723bf922)) {
             function_a71254a9(localclientnum, 0, undefined, 1);
-            var_2c72511b = [[ level.cycle_frozen_moment_char_current ]]->function_9004475c();
-            var_f5bfdfe7 = [[ level.cycle_frozen_moment_char_next ]]->function_9004475c();
+            var_2c72511b = [[ level.cycle_frozen_moment_char_current ]]->get_character_index();
+            var_f5bfdfe7 = [[ level.cycle_frozen_moment_char_next ]]->get_character_index();
             temp = level.cycle_frozen_moment_char_current;
             level.cycle_frozen_moment_char_current = level.cycle_frozen_moment_char_next;
             level.cycle_frozen_moment_char_next = temp;
@@ -2363,7 +2363,7 @@ function function_a71254a9(localclientnum, play, player_data, var_1c5551d6 = 0, 
             [[ level.frozen_moment_character ]]->function_15a8906a(player_data);
             params = {#scene:var_53511779, #var_c76f3e47:1, #var_d8cb38a9:1, #var_8d3b5f69:1, #scene_shot:scene_shot};
             [[ level.frozen_moment_character ]]->update(params);
-            character_index = [[ level.frozen_moment_character ]]->function_9004475c();
+            character_index = [[ level.frozen_moment_character ]]->get_character_index();
             character_mode = [[ level.frozen_moment_character ]]->get_character_mode();
             var_6d8e8e31 = isdefined(function_3dc16db1(character_mode, character_index)) ? function_3dc16db1(character_mode, character_index) : 0;
             level.var_8013e6bd = var_53511779;
@@ -2801,7 +2801,7 @@ function function_317ab257(localclientnum, menu_name, var_83a11058) {
         var_e04a6c21 = isdefined(var_2ae2bfde.var_e04a6c21) ? var_2ae2bfde.var_e04a6c21 : #"hash_4c04b62047703a60";
     }
     self function_ca43d336(localclientnum);
-    var_1035f50c = (0, 0, 0);
+    v_default = (0, 0, 0);
     v_forward = (90, 0, 0);
     character_model = [[ self ]]->function_217b10ed();
     if (isdefined(character_model)) {

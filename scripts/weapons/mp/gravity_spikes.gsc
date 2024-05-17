@@ -27,7 +27,7 @@ function __init__() {
 // Params 2, eflags: 0x0
 // Checksum 0x6cf4a9b7, Offset: 0x140
 // Size: 0xe2
-function function_20bb376d(var_3245778e, weapon) {
+function function_20bb376d(abilityslot, weapon) {
     self battlechatter::function_bd715920(weapon, undefined, self geteye(), self);
     playfx("weapon/fx8_hero_grvity_slam_takeoff_3p", self.origin);
     if (isdefined(self.var_ea1458aa)) {

@@ -37,7 +37,7 @@ function activation() {
 // Checksum 0xb9cfc586, Offset: 0x198
 // Size: 0x72
 function function_1efaba5e() {
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") === 1 || isdefined(level.disable_firesale_drop) && level.disable_firesale_drop || !self bgb::function_9d8118f5()) {
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") === 1 || isdefined(level.disable_firesale_drop) && level.disable_firesale_drop || !self bgb::function_9d8118f5()) {
         return false;
     }
     return true;

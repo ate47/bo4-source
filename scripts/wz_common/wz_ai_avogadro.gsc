@@ -73,7 +73,7 @@ function private function_f34df3c() {
     self.var_8f61d7f4 = 1;
     self wz_ai_utils::function_9758722("walk");
     self callback::function_d8abfc3d(#"on_ai_damage", &function_ce2bd83c);
-    self callback::function_d8abfc3d(#"on_ai_melee", &wz_ai_zombie::function_b8eb5dea);
+    self callback::function_d8abfc3d(#"on_ai_melee", &wz_ai_zombie::zombie_on_melee);
     self callback::function_d8abfc3d(#"hash_7140c3848cbefaa1", &function_e44ef704);
     self callback::function_d8abfc3d(#"hash_3bb51ce51020d0eb", &wz_ai_utils::function_16e2f075);
     self function_5ff730c7();

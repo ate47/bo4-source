@@ -210,11 +210,11 @@ function function_f559e439(localclientnum, menu_data, state) {
     }
     if (level.var_cf24a85f.var_ce1b87cf !== var_ce1b87cf || level.var_cf24a85f.var_61de15c5 !== var_61de15c5) {
         level scene_stop(level.var_cf24a85f.var_ce1b87cf, 1, localclientnum);
-        if (!isdefined(var_ce1b87cf) && isdefined(level.var_cf24a85f.var_b70abd9d)) {
-            foreach (var_e153c1aa in level.var_cf24a85f.var_b70abd9d) {
+        if (!isdefined(var_ce1b87cf) && isdefined(level.var_cf24a85f.a_exploders)) {
+            foreach (var_e153c1aa in level.var_cf24a85f.a_exploders) {
                 exploder::kill_exploder(var_e153c1aa);
             }
-            level.var_cf24a85f.var_b70abd9d = undefined;
+            level.var_cf24a85f.a_exploders = undefined;
         }
     }
     if (isdefined(var_ce1b87cf)) {
@@ -352,18 +352,18 @@ function function_2f3c1d65(localclientnum, menu_data, state) {
         function_f559e439(localclientnum, menu_data, "loot_crate_open");
         break;
     }
-    if (!isdefined(level.var_cf24a85f.var_b70abd9d)) {
-        level.var_cf24a85f.var_b70abd9d = [];
+    if (!isdefined(level.var_cf24a85f.a_exploders)) {
+        level.var_cf24a85f.a_exploders = [];
     }
     var_24282d8c = function_feaafe07(localclientnum, state);
     foreach (var_e153c1aa in var_24282d8c) {
-        if (!isdefined(level.var_cf24a85f.var_b70abd9d)) {
-            level.var_cf24a85f.var_b70abd9d = [];
-        } else if (!isarray(level.var_cf24a85f.var_b70abd9d)) {
-            level.var_cf24a85f.var_b70abd9d = array(level.var_cf24a85f.var_b70abd9d);
+        if (!isdefined(level.var_cf24a85f.a_exploders)) {
+            level.var_cf24a85f.a_exploders = [];
+        } else if (!isarray(level.var_cf24a85f.a_exploders)) {
+            level.var_cf24a85f.a_exploders = array(level.var_cf24a85f.a_exploders);
         }
-        if (!isinarray(level.var_cf24a85f.var_b70abd9d, var_e153c1aa)) {
-            level.var_cf24a85f.var_b70abd9d[level.var_cf24a85f.var_b70abd9d.size] = var_e153c1aa;
+        if (!isinarray(level.var_cf24a85f.a_exploders, var_e153c1aa)) {
+            level.var_cf24a85f.a_exploders[level.var_cf24a85f.a_exploders.size] = var_e153c1aa;
         }
         exploder::exploder(var_e153c1aa);
     }
@@ -385,11 +385,11 @@ function function_99278be8(localclientnum, menu_data) {
     level.var_cf24a85f.var_6b569619 = undefined;
     level scene_stop(level.var_cf24a85f.var_ce1b87cf, 1, localclientnum);
     level.var_cf24a85f.var_ce1b87cf = undefined;
-    if (isdefined(level.var_cf24a85f.var_b70abd9d)) {
-        foreach (var_e153c1aa in level.var_cf24a85f.var_b70abd9d) {
+    if (isdefined(level.var_cf24a85f.a_exploders)) {
+        foreach (var_e153c1aa in level.var_cf24a85f.a_exploders) {
             exploder::kill_exploder(var_e153c1aa);
         }
-        level.var_cf24a85f.var_b70abd9d = undefined;
+        level.var_cf24a85f.a_exploders = undefined;
     }
     level.var_cf24a85f = undefined;
     function_66b6e720(#"scene_frontend_blackjack_reserves");

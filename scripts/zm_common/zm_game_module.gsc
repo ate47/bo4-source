@@ -159,7 +159,7 @@ function zombie_goto_round(target_round) {
         target_round = 1;
     }
     level.zombie_total = 0;
-    level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), target_round);
+    level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), target_round);
     zm_round_logic::set_round_number(target_round);
     enemies = getaiteamarray(level.zombie_team);
     if (isdefined(enemies)) {

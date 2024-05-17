@@ -11,15 +11,15 @@
 // Params 1, eflags: 0x0
 // Checksum 0xdfeb399a, Offset: 0xe0
 // Size: 0x76
-function function_f2f3407(var_1c5778ef) {
+function function_f2f3407(gadget_name) {
     if (isdefined(level.var_43ac3b33) && level.var_43ac3b33) {
         return false;
     }
-    if (!isdefined(var_1c5778ef)) {
+    if (!isdefined(gadget_name)) {
         return false;
     }
     if (isdefined(level.var_e72728b8)) {
-        if (isinarray(level.var_e72728b8, var_1c5778ef)) {
+        if (isinarray(level.var_e72728b8, gadget_name)) {
             return false;
         }
     }

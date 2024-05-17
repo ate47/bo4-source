@@ -1,7 +1,7 @@
 {
     "name": "#hash_25c3b1ea7a485f69",
     "baseWeapon": "#ray_gun_mk2",
-    "displayname": "#hash_7c6a44fc7edc8003",
+    "displayname": "#zmweapon/ray_gun_mk2",
     "sessionMode": "zombies",
     "itemIndex": 395,
     "dualWieldWeaponIndex": 0,

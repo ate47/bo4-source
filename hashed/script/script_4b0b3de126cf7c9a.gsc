@@ -104,16 +104,16 @@ function function_40935801() {
     var_e8145621 = self getweaponslistprimaries();
     w_current_weapon = self getcurrentweapon();
     foreach (w_upgraded in var_e8145621) {
-        var_2af07147 = self zm_weapons::get_base_weapon(w_upgraded);
+        w_base_weapon = self zm_weapons::get_base_weapon(w_upgraded);
         n_clip = self getweaponammoclip(w_upgraded);
         n_stock = self getweaponammostock(w_upgraded);
         if (w_current_weapon == w_upgraded) {
-            var_147bd2 = var_2af07147;
+            var_147bd2 = w_base_weapon;
         }
         self zm_weapons::weapon_take(w_upgraded);
-        self zm_weapons::weapon_give(var_2af07147, 1, 0);
-        self setweaponammoclip(var_2af07147, n_clip);
-        self setweaponammostock(var_2af07147, n_stock);
+        self zm_weapons::weapon_give(w_base_weapon, 1, 0);
+        self setweaponammoclip(w_base_weapon, n_clip);
+        self setweaponammostock(w_base_weapon, n_stock);
     }
     if (isdefined(var_147bd2)) {
         self shoulddoinitialweaponraise(var_147bd2, 0);
@@ -165,17 +165,17 @@ function private function_d0ea0364(w_upgrade_weapon) {
     var_75c77fa = self zm_weapons::get_base_weapon(w_upgrade_weapon);
     a_w_weapons = self getweaponslist();
     foreach (w_weapon in a_w_weapons) {
-        var_2af07147 = self zm_weapons::get_base_weapon(w_weapon);
-        if (var_2af07147 == var_75c77fa) {
-            var_2af07147 = self zm_weapons::get_base_weapon(w_upgrade_weapon);
+        w_base_weapon = self zm_weapons::get_base_weapon(w_weapon);
+        if (w_base_weapon == var_75c77fa) {
+            w_base_weapon = self zm_weapons::get_base_weapon(w_upgrade_weapon);
             n_clip = self getweaponammoclip(w_upgrade_weapon);
             n_stock = self getweaponammostock(w_upgrade_weapon);
             self zm_weapons::weapon_take(w_upgrade_weapon);
-            self zm_weapons::weapon_give(var_2af07147, 1, 0);
-            self shoulddoinitialweaponraise(var_2af07147, 0);
-            self switchtoweaponimmediate(var_2af07147);
-            self setweaponammoclip(var_2af07147, n_clip);
-            self setweaponammostock(var_2af07147, n_stock);
+            self zm_weapons::weapon_give(w_base_weapon, 1, 0);
+            self shoulddoinitialweaponraise(w_base_weapon, 0);
+            self switchtoweaponimmediate(w_base_weapon);
+            self setweaponammoclip(w_base_weapon, n_clip);
+            self setweaponammostock(w_base_weapon, n_stock);
             break;
         }
     }

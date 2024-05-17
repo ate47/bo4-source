@@ -1335,7 +1335,7 @@ function function_dd64960c(a_ents) {
                     function_5f4dc2fe();
                 }
                 break;
-            case #"hash_3d97ab05bb8c72ad":
+            case #"zombies_kill_all":
                 if (isdefined(level.a_ai_zombies) && level.a_ai_zombies.size > 0) {
                     while (level.a_ai_zombies.size > 0) {
                         ai_zombie = level.a_ai_zombies[0];

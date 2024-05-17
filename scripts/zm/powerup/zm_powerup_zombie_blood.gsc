@@ -65,7 +65,7 @@ function grab_zombie_blood(e_player) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x1170e05b, Offset: 0x4b8
 // Size: 0x4c0
-function zombie_blood_powerup(var_9c0bf2db, e_player) {
+function zombie_blood_powerup(mdl_powerup, e_player) {
     e_player notify(#"zombie_blood");
     e_player endon(#"disconnect", #"zombie_blood");
     e_player thread zm_powerups::powerup_vo("zombie_blood");

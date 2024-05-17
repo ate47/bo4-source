@@ -353,7 +353,7 @@ function function_a39e7a56() {
             ai = zombie_utility::spawn_zombie(getentarray("zombie_spawner", "script_noteworthy")[0], undefined, s_spawn_point);
         }
         if (isdefined(ai)) {
-            n_delay = isdefined(zombie_utility::function_d2dfacfd(#"zombie_spawn_delay")) ? zombie_utility::function_d2dfacfd(#"zombie_spawn_delay") : zombie_utility::function_d2dfacfd(#"hash_7d5a25e2463f7fc5");
+            n_delay = isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
             level.defend_spawns++;
             wait(n_delay);
             return true;
@@ -479,11 +479,11 @@ function function_ac904e5e() {
     zm_utility::function_742f2c18(15, #"zombie", 16, 14);
     zm_utility::function_742f2c18(16, #"zombie", 20, 14);
     zm_utility::function_742f2c18(17, #"zombie", 24, 14);
-    var_a535d72c = 16;
+    n_zombie_min = 16;
     for (n_round = 18; n_round < 255; n_round++) {
-        zm_utility::function_742f2c18(n_round, #"zombie", undefined, var_a535d72c);
-        var_a535d72c++;
-        var_a535d72c = math::clamp(var_a535d72c, 16, 24);
+        zm_utility::function_742f2c18(n_round, #"zombie", undefined, n_zombie_min);
+        n_zombie_min++;
+        n_zombie_min = math::clamp(n_zombie_min, 16, 24);
     }
 }
 

@@ -10,7 +10,7 @@
     "label": "#menu/x_kills",
     "name": "mp_teamkill_punish_count",
     "displayname": "#hash_6282ba98e4fbf3c5",
-    "label1": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/disabled",
     "label2": "#menu/1_kill",
     "var_9de86f42": 5,
     "setting": "specialistTeamKillsAllowed_allies_1"

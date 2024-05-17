@@ -465,7 +465,7 @@ function function_5dbd6a40(s_zipline_use) {
     self util::magic_bullet_shield();
     self zm_audio::create_and_play_dialog(#"zipline", #"activate");
     current_weapon = self getcurrentweapon();
-    var_478a6888 = array(#"hash_2b4e93e32a29b66b", #"hash_603fdd2e4ae5b2b0", #"launcher_standard_t8", #"launcher_standard_t8_upgraded");
+    var_478a6888 = array(#"zhield_riot_turret", #"zhield_riot_dw", #"launcher_standard_t8", #"launcher_standard_t8_upgraded");
     if (isinarray(var_478a6888, current_weapon.name) || current_weapon.isheroweapon) {
         self.var_479965f7 = undefined;
         self notify(#"hero_weapon_power_off");
@@ -600,7 +600,7 @@ function function_fc9707f4(vnd_start, s_zipline_use) {
     self bgb::suspend_weapon_cycling();
     self disableweaponcycling();
     self bgb_pack::function_ac9cb612(1);
-    self.var_be3224e6 = 1;
+    self.bgb_disabled = 1;
     self clientfield::set_to_player("hide_player_legs", 1);
     self allowsprint(0);
     self allowcrouch(0);
@@ -687,7 +687,7 @@ function function_994538a5(s_zipline_use) {
     self.var_f22c83f5 = 0;
     self.var_e75517b1 = 0;
     self bgb_pack::function_ac9cb612(0);
-    self.var_be3224e6 = 0;
+    self.bgb_disabled = 0;
     self bgb::resume_weapon_cycling();
     self enableweaponcycling();
     self util::stop_magic_bullet_shield();

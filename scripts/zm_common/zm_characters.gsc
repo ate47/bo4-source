@@ -133,7 +133,7 @@ function set_character(character) {
     get_characters();
     if (isdefined(character)) {
         if (isarray(character)) {
-            self.characterindex = function_9004475c(character);
+            self.characterindex = get_character_index(character);
         } else {
             self.characterindex = character;
         }
@@ -293,7 +293,7 @@ function get_characters() {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x353b70c1, Offset: 0x2220
 // Size: 0xd6
-function function_9004475c(character) {
+function get_character_index(character) {
     fields = zm_maptable::function_10672567();
     foreach (var_c81b1496 in fields.zmcharacters) {
         if (isinarray(character, var_c81b1496.name)) {

@@ -487,7 +487,7 @@ function function_4ccc033d(localclientnum, draftcharacter) {
 // Params 2, eflags: 0x0
 // Checksum 0xb9977d82, Offset: 0x7258
 // Size: 0x35e
-function function_a1c71160(localclientnum, draftcharacter) {
+function update_player_weapon(localclientnum, draftcharacter) {
     changed = 0;
     if (function_4ccc033d(localclientnum, draftcharacter)) {
         function_2dfe152c(localclientnum, draftcharacter, [[ draftcharacter ]]->function_82e05d64().activeweapon, [[ draftcharacter ]]->function_82e05d64().primaryweapon);
@@ -526,7 +526,7 @@ function function_71a9fb67(localclientnum, draftcharacter) {
     if (function_93a4f3c5(localclientnum, draftcharacter)) {
         update = 1;
     }
-    if (function_a1c71160(localclientnum, draftcharacter)) {
+    if (update_player_weapon(localclientnum, draftcharacter)) {
         update = 1;
     }
     if (update) {

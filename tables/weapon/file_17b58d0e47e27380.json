@@ -1,7 +1,7 @@
 {
     "name": "#hash_17b58d0e47e27380",
     "baseWeapon": "#hash_757f77da119c3c18",
-    "displayname": "#hash_718a9c197a2f142b",
+    "displayname": "#zmweapon/special_ballisticknife_t8_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,
@@ -17,7 +17,7 @@
     "firesoundplayer": "#hash_3ccecda12a8b881d",
     "sound240": "#hash_5993e31af4dd53ec",
     "sound250": "#hash_55a9361a61a0ccad",
-    "sound740": "#hash_561054189d3439f9",
+    "sound740": "#special_ballisticknife_t8_dw_upgraded_zm",
     "sound800": "#hash_41b8cf5f69b41ad4",
     "sound810": "#hash_41b8cf5f69b41ad4",
     "sound820": "#hash_279da5cfe15ceafc",

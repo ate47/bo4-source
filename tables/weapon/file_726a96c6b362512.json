@@ -1,7 +1,7 @@
 {
     "name": "#hash_726a96c6b362512",
     "baseWeapon": "#ww_tricannon_t8_upgraded",
-    "displayname": "#hash_3862a3ce16fff4a",
+    "displayname": "#zmweapon/ww_tricannon_t8_upgraded",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,
@@ -10,7 +10,7 @@
     "unk70": "#ww_tricannon_t8",
     "unk80": "#hash_5c2b93f896d260f4",
     "viewmodel": "#wpn_t8_zm_broadside_cannon_view",
-    "worldModel": "#hash_7aa78b0e8183d9ae",
+    "worldModel": "#wpn_t8_zm_broadside_cannon_world",
     "clipmodel": "#hash_2dafd6fb83616e",
     "firesound": "#hash_67e7eab205432bbe",
     "firesoundplayer": "#hash_563599b1fb21ff43",

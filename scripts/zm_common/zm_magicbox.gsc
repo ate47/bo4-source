@@ -641,7 +641,7 @@ function treasure_chest_think() {
     }
     self._box_open = 1;
     self._box_opened_by_fire_sale = 0;
-    if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && !isdefined(self.auto_open) && self [[ level._zombiemode_check_firesale_loc_valid_func ]]()) {
+    if (isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") && !isdefined(self.auto_open) && self [[ level._zombiemode_check_firesale_loc_valid_func ]]()) {
         self._box_opened_by_fire_sale = 1;
     }
     if (zm_custom::function_901b751c(#"zmmysteryboxlimit")) {
@@ -683,7 +683,7 @@ function treasure_chest_think() {
             user zm_score::add_to_player_score(user_cost, 0, "magicbox_bear");
         }
     }
-    if (level flag::get("moving_chest_now") && !zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && !self._box_opened_by_fire_sale) {
+    if (level flag::get("moving_chest_now") && !zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") && !self._box_opened_by_fire_sale) {
         self thread treasure_chest_move(self.chest_user);
     } else {
         if (!(isdefined(self.unbearable_respin) && self.unbearable_respin) && !(isdefined(self.var_afba7c1f) && self.var_afba7c1f)) {
@@ -788,7 +788,7 @@ function treasure_chest_think() {
         } else {
             wait(3);
         }
-        if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && self [[ level._zombiemode_check_firesale_loc_valid_func ]]() || zm_custom::function_901b751c(#"zmmysteryboxstate") == 3 || zm_custom::function_901b751c(#"zmmysteryboxstate") == 1 || self == level.chests[level.chest_index]) {
+        if (isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") && self [[ level._zombiemode_check_firesale_loc_valid_func ]]() || zm_custom::function_901b751c(#"zmmysteryboxstate") == 3 || zm_custom::function_901b751c(#"zmmysteryboxstate") == 1 || self == level.chests[level.chest_index]) {
             thread zm_unitrigger::register_static_unitrigger(self.unitrigger_stub, &magicbox_unitrigger_think);
         }
     }
@@ -970,12 +970,12 @@ function treasure_chest_move(player_vox) {
     } else {
         default_box_move_logic();
     }
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") == 1 && self [[ level._zombiemode_check_firesale_loc_valid_func ]]()) {
-        current_sale_time = zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time");
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") == 1 && self [[ level._zombiemode_check_firesale_loc_valid_func ]]()) {
+        current_sale_time = zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time");
         util::wait_network_frame();
         self thread fire_sale_fix();
         zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", current_sale_time);
-        while (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time") > 0) {
+        while (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time") > 0) {
             wait(0.1);
         }
     } else {
@@ -1014,10 +1014,10 @@ function function_f81251c9() {
 // Checksum 0x289dc28c, Offset: 0x4a20
 // Size: 0x18c
 function fire_sale_fix() {
-    if (!isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on"))) {
+    if (!isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on"))) {
         return;
     }
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) {
         self.old_cost = 950;
         self thread show_chest();
         self.zombie_cost = 10;
@@ -1357,7 +1357,7 @@ function clean_up_hacked_box() {
 // Checksum 0x5b764206, Offset: 0x5be0
 // Size: 0x4c
 function treasure_chest_firesale_active() {
-    return isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on");
+    return isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on");
 }
 
 // Namespace zm_magicbox/zm_magicbox
@@ -1607,7 +1607,7 @@ function treasure_chest_weapon_spawn(chest, player, respin) {
             self.weapon_model_dw = util::spawn_model(dweapon.worldmodel, self.weapon_model.origin - (3, 3, 3), self.weapon_model.angles);
         }
     }
-    if (move_the_box && !(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") && self [[ level._zombiemode_check_firesale_loc_valid_func ]]())) {
+    if (move_the_box && !(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") && self [[ level._zombiemode_check_firesale_loc_valid_func ]]())) {
         self.weapon_model setmodel(level.chest_joker_model);
         if (isdefined(self.weapon_model_dw)) {
             self.weapon_model_dw delete();

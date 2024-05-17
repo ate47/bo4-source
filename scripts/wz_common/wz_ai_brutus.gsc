@@ -104,7 +104,7 @@ function function_debbd9da() {
     self function_517fd069();
     self wz_ai_utils::function_9758722("walk");
     aiutility::addaioverridedamagecallback(self, &function_83a6d3ae);
-    self callback::function_d8abfc3d(#"on_ai_melee", &wz_ai_zombie::function_b8eb5dea);
+    self callback::function_d8abfc3d(#"on_ai_melee", &wz_ai_zombie::zombie_on_melee);
     self callback::function_d8abfc3d(#"on_ai_killed", &on_brutus_killed);
     self callback::function_d8abfc3d(#"hash_4e449871617e2c25", &function_6a482c74);
     self callback::function_d8abfc3d(#"hash_3bb51ce51020d0eb", &wz_ai_utils::function_16e2f075);

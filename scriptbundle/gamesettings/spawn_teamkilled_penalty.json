@@ -22,7 +22,7 @@
     "label": "#hash_22a7b89757514dfb",
     "name": "spawn_teamkilled_penalty",
     "displayname": "#hash_5f26a3f604835a41",
-    "label1": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/disabled",
     "label2": "#hash_7201503206ce2d27",
     "var_9de86f42": 17,
     "setting": "spawnteamkilledpenalty"

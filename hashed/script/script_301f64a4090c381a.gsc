@@ -79,7 +79,7 @@ function function_9af806be(var_c5b25bc5) {
     case 6:
         self zm_laststand::function_3a00302e(1);
         if (!isdefined(self.n_regen_delay)) {
-            self.n_regen_delay = zombie_utility::function_d2dfacfd("player_health_regen_delay");
+            self.n_regen_delay = zombie_utility::get_zombie_var("player_health_regen_delay");
         }
         self.n_regen_delay += 1;
         break;

@@ -203,7 +203,7 @@ function trinket_quest_cleanup(var_a276c861, var_19e802fa) {
 // Checksum 0x4fe0f70c, Offset: 0x1390
 // Size: 0x1bc
 function function_a4e86068() {
-    var_d1ec2571 = level.round_number + 1;
+    n_next_round = level.round_number + 1;
     b_delayed = 0;
     do {
         if (false) {
@@ -211,15 +211,15 @@ function function_a4e86068() {
             wait(1);
             continue;
         }
-        var_d1ec2571 = level.round_number + 1;
+        n_next_round = level.round_number + 1;
         b_delayed = 0;
     } while (b_delayed);
-    var_898a45da = level.var_45827161[var_d1ec2571];
+    var_898a45da = level.var_45827161[n_next_round];
     if (isdefined(var_898a45da)) {
-        zm_round_spawning::function_43aed0ca(var_d1ec2571);
+        zm_round_spawning::function_43aed0ca(n_next_round);
     }
     level.zombie_round_start_delay = 0;
-    zm_round_spawning::function_b4a8f95a(#"zombie_electric", var_d1ec2571, &function_a092874, &function_a1b4b25d, &function_c83f59db, &function_5bfaa04, 0);
+    zm_round_spawning::function_b4a8f95a(#"zombie_electric", n_next_round, &function_a092874, &function_a1b4b25d, &function_c83f59db, &function_5bfaa04, 0);
     if (zm_round_spawning::function_40229072(level.round_number) && !level flag::get("special_round")) {
         level waittill(#"special_round");
     } else if (!level flag::get("begin_spawning")) {

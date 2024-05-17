@@ -9,7 +9,7 @@
     "name": "friendly_fire_type",
     "displayname": "#hash_51d585e182917910",
     "var_684ccd4c": "#menu/shared",
-    "label1": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/disabled",
     "var_71b6e020": "#mpui/reflect",
     "label2": "#menu/enabled",
     "var_9de86f42": 4,

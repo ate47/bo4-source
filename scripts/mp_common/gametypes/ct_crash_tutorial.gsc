@@ -955,7 +955,7 @@ function function_58c62280(b_keyline, b_ignoreall) {
     self.n_wait = s_loc.script_wait;
     self.n_index = s_loc.script_int;
     self ct_bots::function_fd2d220e(0);
-    self thread function_f9803d74();
+    self thread give_bot_weapon();
     self thread ct_utils::function_61d750d4(s_loc.origin, s_loc.angles);
     switch (level.var_ad7c0539) {
     case 1:
@@ -1434,7 +1434,7 @@ function function_592ec7be() {
 // Params 0, eflags: 0x0
 // Checksum 0x6022166e, Offset: 0x7828
 // Size: 0xa4
-function function_f9803d74() {
+function give_bot_weapon() {
     self endon(#"death");
     wait(0.2);
     if (math::cointoss()) {

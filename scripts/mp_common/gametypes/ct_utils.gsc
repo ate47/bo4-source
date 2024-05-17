@@ -3999,7 +3999,7 @@ function function_cac2512f(str_weapon) {
 // Params 3, eflags: 0x0
 // Checksum 0x59486df3, Offset: 0xe350
 // Size: 0x94
-function function_c561377e(n_delay, var_b1a0d102 = 0, b_play_fx = 1) {
+function kill_all_bots(n_delay, var_b1a0d102 = 0, b_play_fx = 1) {
     if (isdefined(n_delay)) {
         wait(n_delay);
     }
@@ -4041,7 +4041,7 @@ function get_roleindex(name) {
 // Params 3, eflags: 0x0
 // Checksum 0xbdfbd574, Offset: 0xe538
 // Size: 0x20c
-function function_e44c5b8e(var_68945a8a, var_88d2d0b2 = 10, var_baf3556b = 0) {
+function function_e44c5b8e(str_killstreak, var_88d2d0b2 = 10, var_baf3556b = 0) {
     level.usingscorestreaks = 1;
     level.disablescoreevents = 1;
     level.disablemomentum = 0;
@@ -4050,9 +4050,9 @@ function function_e44c5b8e(var_68945a8a, var_88d2d0b2 = 10, var_baf3556b = 0) {
     level.var_dd8875fe = var_88d2d0b2;
     e_player = get_player();
     if (e_player.killstreak.size == 0) {
-        level.var_b4a06c5b = var_68945a8a;
+        level.var_b4a06c5b = str_killstreak;
         setdvar(#"custom_killstreak_mode", 2);
-        setdvar(#"custom_killstreak1", level.killstreakindices[var_68945a8a]);
+        setdvar(#"custom_killstreak1", level.killstreakindices[str_killstreak]);
         setdvar(#"custom_killstreak2", 0);
         setdvar(#"custom_killstreak3", 0);
         self.pers[#"killstreak_quantity"] = [];

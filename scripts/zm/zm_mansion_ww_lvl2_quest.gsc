@@ -200,8 +200,8 @@ function function_514a3f80() {
     }
     struct::get("s_prima_material_device") zm_unitrigger::create(&function_32573d2a, 64, &function_ea6f56ee);
     zm_items::function_4d230236(zm_crafting::get_component(#"hash_5dba850c6ed3ebee"), &function_b9cbdac6);
-    zm_items::function_4d230236(zm_crafting::get_component(#"hash_3f639544c52d4fa3"), &function_b9cbdac6);
-    zm_items::function_4d230236(zm_crafting::get_component(#"hash_3f639644c52d5156"), &function_b9cbdac6);
+    zm_items::function_4d230236(zm_crafting::get_component(#"zitem_chaos_lvl3_part_1"), &function_b9cbdac6);
+    zm_items::function_4d230236(zm_crafting::get_component(#"zitem_chaos_lvl3_part_2"), &function_b9cbdac6);
     level flagsys::wait_till_any(array(#"power_on1", #"hash_2daf5bdda85cc660"));
     wait(randomintrange(20, 30));
     s_machine = struct::get("s_pr_mach");
@@ -242,12 +242,12 @@ function function_ea6f56ee() {
             level.var_9332cecc = 1;
             level zm_ui_inventory::function_7df6bb60(#"ww_p1_2", 0);
         } else if (level flag::get("flag_player_grabbed_catalyst_material") && !level flag::get("flag_player_grabbed_bat_prima")) {
-            var_21839a96 = #"hash_3f639544c52d4fa3";
+            var_21839a96 = #"zitem_chaos_lvl3_part_1";
             level thread function_29f66f1a(var_21839a96, var_57ec466d);
             level.var_f6a6ddae = 1;
             level zm_ui_inventory::function_7df6bb60(#"ww_p2_2", 0);
         } else if (level flag::get("flag_player_grabbed_nosferatu_material") && !level flag::get("flag_player_grabbed_nosferatu_prima")) {
-            var_21839a96 = #"hash_3f639644c52d5156";
+            var_21839a96 = #"zitem_chaos_lvl3_part_2";
             level thread function_29f66f1a(var_21839a96, var_57ec466d);
             level.var_ea58030a = 1;
             level zm_ui_inventory::function_7df6bb60(#"ww_p2_3", 0);
@@ -315,11 +315,11 @@ function function_b9cbdac6(e_holder, w_item) {
         level zm_ui_inventory::function_7df6bb60(#"ww_p1_2", 2);
         level flag::set("flag_player_grabbed_werewolf_prima");
         break;
-    case #"hash_3f639544c52d4fa3":
+    case #"zitem_chaos_lvl3_part_1":
         level zm_ui_inventory::function_7df6bb60(#"ww_p2_2", 2);
         level flag::set("flag_player_grabbed_bat_prima");
         break;
-    case #"hash_3f639644c52d5156":
+    case #"zitem_chaos_lvl3_part_2":
         level zm_ui_inventory::function_7df6bb60(#"ww_p2_3", 5);
         level flag::set("flag_player_grabbed_nosferatu_prima");
         break;

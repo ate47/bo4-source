@@ -1221,7 +1221,7 @@ function function_6a7cfd6() {
     if (zm_custom::function_901b751c(#"zmmysteryboxstate") != 2) {
         return;
     }
-    if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
+    if (isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) {
         level waittill(#"fire_sale_off");
     }
     foreach (chest in level.chests) {
@@ -1236,7 +1236,7 @@ function function_6a7cfd6() {
         level.chests[level.chest_index] thread zm_magicbox::show_chest();
     }
     level flag::wait_till(#"zm_red_fasttravel_open");
-    if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
+    if (isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) {
         level waittill(#"fire_sale_off");
     }
     var_4c502980 = level.chests[level.chest_index];
@@ -2050,7 +2050,7 @@ function function_8bdbbbf7(params) {
     if (isdefined(self.var_799d54ae) && self.var_799d54ae) {
         level.var_7906c5af--;
         if (isdefined(params.eattacker) && isplayer(params.eattacker)) {
-            if (zombie_utility::function_6403cf83(#"zombie_powerup_double_points_on", #"allies")) {
+            if (zombie_utility::get_zombie_var_team(#"zombie_powerup_double_points_on", #"allies")) {
                 n_points = 20;
             } else {
                 n_points = 10;

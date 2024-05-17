@@ -142,18 +142,18 @@ function event_handler[weapon_change] function_edc4ebe8(eventstruct) {
     if (!isdefined(self.var_ea1458aa)) {
         return;
     }
-    var_f2b25a4e = self isusingoffhand() ? self getcurrentoffhand() : eventstruct.weapon;
-    if (var_f2b25a4e.var_76ce72e8) {
+    challengeweapon = self isusingoffhand() ? self getcurrentoffhand() : eventstruct.weapon;
+    if (challengeweapon.var_76ce72e8) {
         self.var_ea1458aa.var_59ac2f5 = undefined;
-        scoreevents = globallogic_score::function_3cbc4c6c(var_f2b25a4e.var_2e4a8800);
+        scoreevents = globallogic_score::function_3cbc4c6c(challengeweapon.var_2e4a8800);
         if (isdefined(scoreevents) && scoreevents.var_fcd2ff3a === 1) {
             self.var_ea1458aa.var_59ac2f5 = 0;
         }
         return;
     }
-    if (!isdefined(level.var_ca4ce464) || level.var_ca4ce464[var_f2b25a4e] !== 1) {
+    if (!isdefined(level.var_ca4ce464) || level.var_ca4ce464[challengeweapon] !== 1) {
         self.var_ea1458aa.var_96d50420 = undefined;
-        if (var_f2b25a4e.issignatureweapon) {
+        if (challengeweapon.issignatureweapon) {
             self.var_ea1458aa.var_96d50420 = 0;
         }
     }

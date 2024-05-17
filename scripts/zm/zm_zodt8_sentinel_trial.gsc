@@ -577,7 +577,7 @@ function function_c76f5e7f() {
     }
     var_52c5bb4 = struct::get(self.var_46f0b81a, "script_noteworthy");
     a_s_telegraphs = struct::get_array(#"s_telegraph");
-    var_14d5aa56 = getentarray(self.var_f8c16831, "script_noteworthy");
+    a_mdl_symbols = getentarray(self.var_f8c16831, "script_noteworthy");
     if (self.script_noteworthy === #"hash_5db5a7e2cb1cab66" || self.script_noteworthy === #"hash_3f671b17f96b861a") {
         self thread function_bc253abc();
     }
@@ -618,7 +618,7 @@ function function_c76f5e7f() {
                 if (self.var_3d89d732 == self.var_d0b3106f) {
                     self flag::set_val(self.script_flag, 1);
                     if (var_52c5bb4 flag::get(var_52c5bb4.script_flag)) {
-                        foreach (mdl_symbol in var_14d5aa56) {
+                        foreach (mdl_symbol in a_mdl_symbols) {
                             mdl_symbol flag::set_val(mdl_symbol.script_flag, 1);
                         }
                     }
@@ -644,7 +644,7 @@ function function_c76f5e7f() {
                 if (self flag::get(self.script_flag)) {
                     self flag::set_val(self.script_flag, 0);
                     if (var_52c5bb4 flag::get(var_52c5bb4.script_flag)) {
-                        foreach (mdl_symbol in var_14d5aa56) {
+                        foreach (mdl_symbol in a_mdl_symbols) {
                             mdl_symbol flag::set_val(mdl_symbol.script_flag, 0);
                         }
                     }
@@ -3258,7 +3258,7 @@ function function_365aa198() {
     level thread stoker_cleanup();
     level endon(#"spawn_zombies", #"hash_349bc60cedc7491e");
     n_round_number = max(level.round_number, 20);
-    n_max = zombie_utility::function_d2dfacfd(#"zombie_max_ai");
+    n_max = zombie_utility::get_zombie_var(#"zombie_max_ai");
     var_e8ebec1d = array(#"transform1", #"transform2", #"transform3", #"transform4");
     level.var_8a64ef3a = 0;
     while (true) {

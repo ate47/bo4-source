@@ -806,7 +806,7 @@ function function_34696b67() {
         waypoint ct_utils::function_f9ed304d();
         if (b_timeout) {
             level notify(#"bomb_cleanup");
-            ct_utils::function_c561377e();
+            ct_utils::kill_all_bots();
             level thread ct_vo::function_831e0584(array(#"hash_26c398139ec1094b"), 1);
             e_bomb.gameobject gameobjects::disable_object();
             e_player = getplayers()[0];
@@ -924,7 +924,7 @@ function function_76739a65() {
     }
     level.var_e6db911d = 1;
     waitframe(1);
-    ct_utils::function_c561377e();
+    ct_utils::kill_all_bots();
     setdvar(#"hash_3e06b14c41136e95", 1);
     level.var_28cfc859 = undefined;
     ct_vo::function_831e0584(array(#"hash_66d8097a378fccfb", #"hash_66d8087a378fcb48"), 1);
@@ -987,7 +987,7 @@ function function_eadc9c91() {
                 e_player = getplayers()[0];
                 if (!isalive(e_player)) {
                     level.var_e6db911d = 1;
-                    ct_utils::function_c561377e();
+                    ct_utils::kill_all_bots();
                     ct_utils::function_c2a10fc();
                     ct_utils::function_fdfeb384();
                     setmatchflag("bomb_timer_a", 0);
@@ -1028,7 +1028,7 @@ function function_eadc9c91() {
         }
         level.var_e6db911d = 1;
         waitframe(1);
-        ct_utils::function_c561377e();
+        ct_utils::kill_all_bots();
     }
     level.var_6aeec601 = undefined;
     ct_vo::function_831e0584(array(#"hash_3892b48206cac33f"), 1);

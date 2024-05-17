@@ -185,9 +185,9 @@ function function_aa539d7b() {
         self flag::set(#"enabled");
         level flag::set(self.script_flag_wait);
         array::thread_all(self.var_3d6b88c4, &function_e714e3a8, "green");
-        foreach (var_4a416ea9 in self.var_3d6b88c4) {
-            var_fe316a03 = util::spawn_model(#"p8_zm_man_fire_trap_power_core_on", var_4a416ea9 gettagorigin("energy_core_tag"), var_4a416ea9 gettagangles("energy_core_tag"));
-            var_fe316a03 linkto(var_4a416ea9, "energy_core_tag");
+        foreach (mdl_console in self.var_3d6b88c4) {
+            var_fe316a03 = util::spawn_model(#"p8_zm_man_fire_trap_power_core_on", mdl_console gettagorigin("energy_core_tag"), mdl_console gettagangles("energy_core_tag"));
+            var_fe316a03 linkto(mdl_console, "energy_core_tag");
         }
         return;
     }
@@ -197,9 +197,9 @@ function function_aa539d7b() {
     sound_ent playloopsound(#"hash_39e79a32dcbea912");
     level flag::set(self.script_flag_wait);
     array::thread_all(self.var_3d6b88c4, &function_e714e3a8, "green");
-    foreach (var_4a416ea9 in self.var_3d6b88c4) {
-        var_fe316a03 = util::spawn_model(#"p8_zm_man_fire_trap_power_core_on", var_4a416ea9 gettagorigin("energy_core_tag"), var_4a416ea9 gettagangles("energy_core_tag"));
-        var_fe316a03 linkto(var_4a416ea9, "energy_core_tag");
+    foreach (mdl_console in self.var_3d6b88c4) {
+        var_fe316a03 = util::spawn_model(#"p8_zm_man_fire_trap_power_core_on", mdl_console gettagorigin("energy_core_tag"), mdl_console gettagangles("energy_core_tag"));
+        var_fe316a03 linkto(mdl_console, "energy_core_tag");
     }
 }
 
@@ -329,7 +329,7 @@ function function_a8f79714() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xd314a96e, Offset: 0x16b0
 // Size: 0x1a6
-function function_2a5a929(str_location, var_b7eee573) {
+function function_2a5a929(str_location, mdl_orb) {
     a_s_locs = struct::get_array("s_firegate_energy_src_" + str_location, "targetname");
     for (var_d0ed2a4c = 0; !var_d0ed2a4c; var_d0ed2a4c = 1) {
         s_loc = array::random(a_s_locs);

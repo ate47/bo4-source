@@ -71,7 +71,7 @@ function __init__() {
     level.var_701f2ed4[#"axis"] = 0;
     level.var_701f2ed4[#"allies"] = 0;
     /#
-        level thread function_ce726eb4();
+        level thread force_last_stand();
     #/
     setdvar(#"g_revivetime", getgametypesetting(#"laststandrevivetime"));
 }
@@ -345,7 +345,7 @@ function function_d5db8d2e(attacker, weapon) {
     // Params 0, eflags: 0x0
     // Checksum 0x829d07e4, Offset: 0x1810
     // Size: 0x1c0
-    function function_ce726eb4() {
+    function force_last_stand() {
         level endon(#"game_ended");
         while (true) {
             if (getdvarstring(#"scr_last_stand", "<unknown string>") == "<unknown string>") {

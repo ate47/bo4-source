@@ -7,7 +7,7 @@
     "name": "scorestreak_helicopter_comlink_restriction",
     "displayname": "#hash_6c753e4261a11107",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__helicopter_comlink__restricted"
 }

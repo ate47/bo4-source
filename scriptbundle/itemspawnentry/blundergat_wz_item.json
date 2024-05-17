@@ -49,7 +49,7 @@
     "type": "itemspawnentry",
     "angleoffsetz": 90,
     "name": "blundergat_wz_item",
-    "displayname": "#hash_7acfa1a35ed86e41",
+    "displayname": "#zmweapon/blundergat",
     "icon": "#hash_6492d731da11b0af",
     "modelscale": 1,
     "rarity": "None",

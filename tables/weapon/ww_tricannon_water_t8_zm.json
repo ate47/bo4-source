@@ -1,7 +1,7 @@
 {
     "name": "#ww_tricannon_water_t8_zm",
     "baseWeapon": "#ww_tricannon_water_t8",
-    "displayname": "#hash_44b68859a1136f31",
+    "displayname": "#zmweapon/ww_tricannon_water_t8",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,
@@ -10,7 +10,7 @@
     "unk70": "#ww_tricannon_t8",
     "unk80": "#hash_36e01b24104594e7",
     "viewmodel": "#wpn_t8_zm_broadside_cannon_view",
-    "worldModel": "#hash_7aa78b0e8183d9ae",
+    "worldModel": "#wpn_t8_zm_broadside_cannon_world",
     "clipmodel": "#hash_7db0fe6b44d48431",
     "firesound": "#hash_4a4aded9cceccb4c",
     "firesoundplayer": "#hash_466131d939b1f70d",

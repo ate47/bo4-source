@@ -9,7 +9,7 @@
     "name": "player_health_regen_time",
     "displayname": "#hash_107587a7d443aa95",
     "var_684ccd4c": "#menu/fast",
-    "label1": "#hash_94eb0e3329edf5f",
+    "label1": "#menu/disabled",
     "var_71b6e020": "#menu/normal",
     "label2": "#menu/slow",
     "var_9de86f42": 4,

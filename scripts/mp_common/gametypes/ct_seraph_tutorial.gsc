@@ -483,7 +483,7 @@ function function_9f3fe320() {
                     break;
                 } else {
                     ct_vo::function_41e59aeb(array(#"hash_4983032b661f79cf"), 1);
-                    level thread ct_utils::function_c561377e(0.5, 1);
+                    level thread ct_utils::kill_all_bots(0.5, 1);
                     ct_utils::function_79957328(undefined);
                     level thread ct_vo::function_14b08e49(array(#"hash_337fb17d0fb110ef"), "stop_nag");
                     break;
@@ -616,7 +616,7 @@ function function_f36aa3f0() {
                 break;
             }
         }
-        ct_utils::function_c561377e(undefined);
+        ct_utils::kill_all_bots(undefined);
         ct_utils::function_c2a10fc();
         ct_vo::function_3ca1b77d();
         level thread ct_vo::function_831e0584(array(#"hash_3fbc06328c14736e"), 1);
@@ -843,7 +843,7 @@ function function_c8e681c8() {
     level.var_f3fb470f = 1;
     level.var_4a4cff9b = 1;
     wait(2);
-    ct_utils::function_c561377e(undefined);
+    ct_utils::kill_all_bots(undefined);
     level.var_32ae304 = level.var_54c1ce00;
     level notify(#"hash_4c9c5fbc89779e64");
     ct_utils::function_e9ab1003("s_seraph_soldier_loc_5_2");
@@ -1052,7 +1052,7 @@ function function_f036b362() {
     level.var_b4bf4d49 = undefined;
     level notify(#"courtyard_battle_complete");
     wait(0.1);
-    ct_utils::function_c561377e();
+    ct_utils::kill_all_bots();
     ct_utils::function_9aca2fa0("ct_action");
     wait(0.1);
 }
@@ -1282,7 +1282,7 @@ function function_4bb467a() {
     level notify(#"kill_friendly_spawn_beacons");
     level notify(#"friendly_spawn_beacon");
     wait(0.1);
-    ct_utils::function_c561377e(undefined, 0);
+    ct_utils::kill_all_bots(undefined, 0);
     ct_utils::function_9aca2fa0("ct_action");
     level.b_hardpoint_complete = undefined;
     level.var_e72728b8 = array(#"gadget_spawnbeacon");
@@ -1432,7 +1432,7 @@ function function_c43189cd() {
             }
             if (var_4eb6b3e4) {
                 level.var_e6db911d = 1;
-                ct_utils::function_c561377e(undefined);
+                ct_utils::kill_all_bots(undefined);
                 ct_vo::function_3ca1b77d();
                 level.var_de284b17 = 0;
                 level thread ct_vo::function_831e0584(array(#"hash_d186ec624023680"), 1);
@@ -1451,7 +1451,7 @@ function function_c43189cd() {
         level notify(#"ac130_available");
         waitframe(1);
         level thread ct_vo::function_831e0584(array(#"hash_36816442279da155"), 1);
-        ct_utils::function_c561377e(undefined);
+        ct_utils::kill_all_bots(undefined);
         setdvar(#"hash_3e06b14c41136e95", 0);
         while (true) {
             e_player = ct_utils::get_player();
@@ -1480,13 +1480,13 @@ function function_c43189cd() {
         ct_utils::function_c2a10fc();
         level notify(#"gunship_event");
         wait(0.1);
-        ct_utils::function_c561377e();
+        ct_utils::kill_all_bots();
         while (true) {
             b_success = gunship_event();
             if (b_success) {
                 level.var_e6db911d = 1;
                 waitframe(1);
-                ct_utils::function_c561377e();
+                ct_utils::kill_all_bots();
                 level.var_77e9434e = 0;
                 ct_vo::function_831e0584(array(#"hash_2cb81e56a3c996e8"), 1);
                 var_a05f35f3 = 1;
@@ -1637,7 +1637,7 @@ function gunship_event() {
     level notify(#"stop_flood_spawners");
     ct_utils::function_9aca2fa0("ct_endgame");
     waitframe(1);
-    ct_utils::function_c561377e();
+    ct_utils::kill_all_bots();
     ct_utils::function_c2a10fc();
     setbombtimer("A", 0);
     setmatchflag("bomb_timer_a", 0);
@@ -2163,9 +2163,9 @@ function function_7746c49c(n_radius) {
         return undefined;
     }
     v_loc = level.var_2b87f134.origin;
-    var_e3256b6c = randomfloatrange(n_radius * -1, n_radius);
+    n_xoff = randomfloatrange(n_radius * -1, n_radius);
     n_yoff = randomfloatrange(n_radius * -1, n_radius);
-    v_loc = (v_loc[0] + var_e3256b6c, v_loc[1] + n_yoff, v_loc[2]);
+    v_loc = (v_loc[0] + n_xoff, v_loc[1] + n_yoff, v_loc[2]);
     v_loc = getclosestpointonnavmesh(v_loc, n_radius);
     if (isdefined(v_loc)) {
         n_height_diff = abs(level.var_2b87f134.origin[2] - v_loc[2]);

@@ -1,7 +1,7 @@
 {
     "name": "#riotshield_zm",
     "baseWeapon": "#riotshield",
-    "displayname": "#hash_3a379acfc384dc2",
+    "displayname": "#zmweapon/riotshield",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

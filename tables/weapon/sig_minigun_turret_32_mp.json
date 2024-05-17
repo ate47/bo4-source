@@ -1,6 +1,6 @@
 {
     "name": "#sig_minigun_turret_32_mp",
-    "baseWeapon": "#hash_5a382ef4b8ca397b",
+    "baseWeapon": "#sig_minigun_turret_32",
     "displayname": "#hash_28e56245387c39fd",
     "sessionMode": "multiplayer",
     "itemIndex": 0,

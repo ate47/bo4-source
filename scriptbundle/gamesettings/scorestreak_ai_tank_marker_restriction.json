@@ -7,7 +7,7 @@
     "name": "scorestreak_ai_tank_marker_restriction",
     "displayname": "#hash_780c03071ddf119d",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__ai_tank_marker__restricted"
 }

@@ -3357,7 +3357,7 @@ weapon,hash_44b7ccdf19718604,294cdb85058
 weapon,hero_gravityspikes_t8_lv3_mp,294cdb426b8
 weapon,sig_buckler_dw_mp,294cdbf3948
 weapon,hero_sword_pistol_lv1_mp,294cdb4bbe8
-weapon,hash_49ae14adfe946918,294cdb7a5d8
+weapon,smg_thompson_t8_mp,294cdb7a5d8
 weapon,hero_gravityspikes_t8_lv1_mp,294cdbc4f58
 weapon,hash_4d021fb99c9b6e22,294cdbc24b8
 weapon,gadget_icepick_mp,294cdbdcef8
@@ -7676,7 +7676,7 @@ menu,popup_leavegame,0
 menu,credit_fullscreen,0
 string,mpui/stalker,0
 string,hash_95c5021b448b56,0
-string,hash_96088f91c5906f,0
+string,zmweapon/smg_thompson,0
 string,hash_9b21599b0be92c,0
 string,hash_9b8af453a6a410,0
 string,hash_120652f9a8f8597,0
@@ -7785,7 +7785,7 @@ string,hash_1dffea8c96fdc0fe,0
 string,hash_1e64c9725959f217,0
 string,mpui/steadyaim2,0
 string,hash_1e993a7261c62997,0
-string,hash_1ef82642b903da22,0
+string,weapon/hero_sword_pistol,0
 string,hash_1f52e9c8ba353d74,0
 string,hash_208eb7d41301aac0,0
 string,weapon/hero_lightninggun,0
@@ -7961,7 +7961,7 @@ string,hash_4b68602edde787af,0
 string,hash_4b85c8dc83baccf8,0
 string,hash_4be7ed3dd8f5f48e,0
 string,hash_4c159fefaeadfde8,0
-string,hash_4c262ac058202d38,0
+string,weapon/mini_turret,0
 string,hash_4c2bbe6f91c1ca94,0
 string,hash_4d048d939c70cad9,0
 string,hash_4d309810414b0cf0,0
@@ -7970,7 +7970,7 @@ string,hash_4d309b10414b1209,0
 string,mpui/quickdraw,0
 string,hash_4d67a60ce9f4fe5e,0
 string,hash_4da78007c05f23e5,0
-string,hash_4df32082bac97235,0
+string,zmweapon/bowie,0
 string,hash_4dff11036295b59f,0
 string,hash_4ecfa703971b8aae,0
 string,hash_4ed6dfbae4e23b52,0

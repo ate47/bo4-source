@@ -1,7 +1,7 @@
 {
     "name": "#downed_wz",
     "baseWeapon": "#downed",
-    "displayname": "#hash_5fe1e4f4cfb91755",
+    "displayname": "#weapon/noweapon",
     "sessionMode": "warzone",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

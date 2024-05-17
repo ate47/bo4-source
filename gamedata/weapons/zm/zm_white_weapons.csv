@@ -1,7 +1,7 @@
 #bowie_knife_story_1,#,false,3000,#bowie,#,0,false,false,false,false,false,0,0,false,false,melee,false,false,0
 #galvaknuckles_t8,#,false,5000,#galva,#,0,false,false,false,false,false,0,0,false,false,melee,false,false,0
 #cymbal_monkey,#,false,250,#homunculus,#,250,false,false,true,false,false,0,0,false,false,equipment,false,false,0
-#hash_603fdd2e4ae5b2b0,#,false,1500,#shield,#,0,false,false,false,false,false,0,0,false,false,shield,false,false,0
+#zhield_riot_dw,#,false,1500,#shield,#,0,false,false,false,false,false,0,0,false,false,shield,false,false,0
 #ray_gun,#ray_gun_upgraded,false,10000,#raygun,#,0,false,false,true,false,false,0,0,false,true,special,false,true,0
 #ray_gun_mk2,#ray_gun_mk2_upgraded,false,10000,#raygun,#,0,false,false,true,false,false,0,0,false,true,special,false,true,0
 #ray_gun_mk2x,#ray_gun_mk2x_dw,true,10000,#raygun,#,0,false,false,false,false,false,0,0,false,true,special,false,true,0

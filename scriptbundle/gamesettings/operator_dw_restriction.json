@@ -7,7 +7,7 @@
     "name": "operator_dw_restriction",
     "displayname": "#mpui/dw",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "attachmentRestrictions__dw"
 }

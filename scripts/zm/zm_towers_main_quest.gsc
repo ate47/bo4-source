@@ -253,8 +253,8 @@ function function_24479f38() {
     level.var_5cb7d214.var_5170a4f8 = array("danu_basement_to_bottom_floor", "danu_bottom_floor_to_top_floor", "connect_starting_area_to_danu_hallway", "connect_danu_tower", "connect_danu_basement_to_danu_ra_tunnel", "connect_danu_ra_bridge");
     a_mdl_pieces = getentarray("fertilizer_pieces", "script_noteworthy");
     array::run_all(a_mdl_pieces, &hide);
-    var_40a1ab08 = getent("fertilizer_hop", "targetname");
-    var_40a1ab08 hide();
+    mdl_glow = getent("fertilizer_hop", "targetname");
+    mdl_glow hide();
     level scene::add_scene_func("p8_fxanim_zm_towers_odin_cauldron_chain_shackle_bundle", &function_4e1d219c, "play");
 }
 
@@ -791,10 +791,10 @@ function fertilizer_explosion() {
 // Size: 0xb4
 function place_fertilizer_cleanup(b_skipped, var_19e802fa) {
     level flag::set(#"place_fertilizer_completed");
-    var_40a1ab08 = getent("fertilizer_hop", "targetname");
-    var_40a1ab08 show();
-    var_40a1ab08 playsound(#"hash_bde75843d826490");
-    var_40a1ab08 playloopsound(#"hash_63dcc2bd59631940");
+    mdl_glow = getent("fertilizer_hop", "targetname");
+    mdl_glow show();
+    mdl_glow playsound(#"hash_bde75843d826490");
+    mdl_glow playloopsound(#"hash_63dcc2bd59631940");
 }
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
@@ -1210,7 +1210,7 @@ function function_51c4285f(var_95f17a69) {
     self endon(#"death");
     while (true) {
         s_info = self waittill(#"damage");
-        if (namespace_52d8d460::function_65a59ce0(s_info.weapon)) {
+        if (namespace_52d8d460::is_shield_weapon(s_info.weapon)) {
             playfx(level._effect[#"brazier_fire"], var_95f17a69.origin);
             var_95f17a69 playsound(#"hash_419d268160428733");
             level.var_7ad3f55c++;
@@ -2897,11 +2897,11 @@ function function_40f8980d() {
     util::set_lighting_state(1);
     wait(2);
     foreach (e_player in util::get_active_players()) {
-        var_c7410412 = e_player.var_fd05e363;
-        if (isdefined(var_c7410412)) {
-            e_player ability_util::function_36a15b60(var_c7410412);
+        w_hero_weapon = e_player.var_fd05e363;
+        if (isdefined(w_hero_weapon)) {
+            e_player ability_util::function_36a15b60(w_hero_weapon);
             if (!e_player gadgetisactive(level.var_a53a05b5) && !e_player function_36dfc05f(level.var_a53a05b5)) {
-                e_player switchtoweaponimmediate(var_c7410412, 1);
+                e_player switchtoweaponimmediate(w_hero_weapon, 1);
             }
         }
     }
@@ -3276,9 +3276,9 @@ function function_7dba31c1(s_params) {
     e_attacker = s_params.eattacker;
     self clientfield::increment("" + #"maelstrom_death");
     if (isplayer(e_attacker)) {
-        var_c7410412 = e_attacker.var_fd05e363;
-        if (isdefined(var_c7410412)) {
-            e_attacker ability_util::function_36a15b60(var_c7410412);
+        w_hero_weapon = e_attacker.var_fd05e363;
+        if (isdefined(w_hero_weapon)) {
+            e_attacker ability_util::function_36a15b60(w_hero_weapon);
         }
     }
     arrayremovevalue(level.var_4bd942f3, self);

@@ -322,9 +322,9 @@ function function_6941c919() {
     w_shield = getweapon(#"zhield_dw");
     while (true) {
         s_waitresult = self.t_damage waittill(#"damage");
-        var_2af07147 = zm_weapons::get_base_weapon(s_waitresult.weapon);
+        w_base_weapon = zm_weapons::get_base_weapon(s_waitresult.weapon);
         if (isplayer(s_waitresult.attacker)) {
-            if (var_2af07147 === level.w_bowie_knife) {
+            if (w_base_weapon === level.w_bowie_knife) {
                 level.var_d5f74526 notify(#"hash_15ccd1fdda38284a", {#var_c8407ea2:self.script_int, #attacker:s_waitresult.attacker});
                 continue;
             }

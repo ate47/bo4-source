@@ -48,7 +48,7 @@ function __init__() {
 // Checksum 0xef8d2d17, Offset: 0x3e8
 // Size: 0x9c
 function result(death, attacker, mod, weapon) {
-    if (!isdefined(zombie_utility::function_d2dfacfd(#"tesla_head_gib_chance"))) {
+    if (!isdefined(zombie_utility::get_zombie_var(#"tesla_head_gib_chance"))) {
         zombie_utility::set_zombie_var(#"tesla_head_gib_chance", 50);
     }
     level.var_7fe61e7a.weapon = weapon;

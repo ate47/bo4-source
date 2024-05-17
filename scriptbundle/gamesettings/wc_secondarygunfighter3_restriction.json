@@ -7,7 +7,7 @@
     "name": "wc_secondarygunfighter3_restriction",
     "displayname": "#hash_729cecc9c33aba71",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__bonuscard_secondary_gunfighter_3__restricted"
 }

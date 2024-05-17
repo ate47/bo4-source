@@ -7,7 +7,7 @@
     "name": "ability_smart_cover_restriction",
     "displayname": "#hash_3bf437dd2e981df1",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__ability_smart_cover__restricted"
 }

@@ -467,7 +467,7 @@ function private function_81349d20(entity, mocompanim, mocompanimblendouttime, m
 // Checksum 0x6069acea, Offset: 0x33e8
 // Size: 0x482
 function private function_cf051788() {
-    self callback::function_d8abfc3d(#"on_ai_melee", &function_b8eb5dea);
+    self callback::function_d8abfc3d(#"on_ai_melee", &zombie_on_melee);
     self callback::function_d8abfc3d(#"hash_3bb51ce51020d0eb", &wz_ai_utils::function_16e2f075);
     if (getdvarint(#"survival_prototype", 0) || getdvarint(#"cluster_awareness", 0)) {
         self callback::function_d8abfc3d(#"hash_10ab46b52df7967a", &function_bb3c1175);
@@ -831,7 +831,7 @@ function private function_638581d2(entity) {
 // Params 0, eflags: 0x0
 // Checksum 0xb845bbd0, Offset: 0x4a98
 // Size: 0xea
-function function_b8eb5dea() {
+function zombie_on_melee() {
     var_d54999e4 = ee_head(self, 1.5);
     foreach (dynent in var_d54999e4) {
         if (function_8f57dc52(dynent)) {

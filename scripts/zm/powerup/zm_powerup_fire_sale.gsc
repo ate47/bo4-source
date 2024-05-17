@@ -57,10 +57,10 @@ function function_3ceac0e1(e_powerup, player) {
     self endon("602aa2e210cb16a0");
     player endon(#"disconnect");
     player thread zm_powerups::function_5091b029("fire_sale");
-    player zombie_utility::function_826f5e98(#"zombie_powerup_fire_sale_on", 1);
-    player zombie_utility::function_826f5e98(#"zombie_powerup_fire_sale_time", 30);
+    player zombie_utility::set_zombie_var_player(#"zombie_powerup_fire_sale_on", 1);
+    player zombie_utility::set_zombie_var_player(#"zombie_powerup_fire_sale_time", 30);
     level waittilltimeout(30, #"end_game");
-    player zombie_utility::function_826f5e98(#"zombie_powerup_fire_sale_on", 0);
+    player zombie_utility::set_zombie_var_player(#"zombie_powerup_fire_sale_on", 0);
 }
 
 // Namespace zm_powerup_fire_sale/zm_powerup_fire_sale
@@ -73,8 +73,8 @@ function start_fire_sale(item) {
             waitframe(1);
         }
     }
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time") > 0 && isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
-        zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time") + 30);
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time") > 0 && isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) {
+        zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time") + 30);
         return;
     }
     level notify(#"powerup_fire_sale");
@@ -85,11 +85,11 @@ function start_fire_sale(item) {
     level thread toggle_fire_sale_on();
     zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", 30);
     if (bgb::is_team_enabled(#"zm_bgb_temporal_gift")) {
-        zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time") + 30);
+        zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time") + 30);
     }
-    while (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time") > 0) {
+    while (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time") > 0) {
         waitframe(1);
-        zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_time") - 0.05);
+        zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_time", zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_time") - 0.05);
     }
     level thread check_to_clear_fire_sale();
     zombie_utility::set_zombie_var(#"zombie_powerup_fire_sale_on", 0);
@@ -130,7 +130,7 @@ function firesale_chest_is_leaving() {
 // Size: 0x2b4
 function toggle_fire_sale_on() {
     level endon(#"powerup_fire_sale");
-    if (!isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on"))) {
+    if (!isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on"))) {
         return;
     }
     if (!isdefined(level.chest_index)) {
@@ -192,7 +192,7 @@ function remove_temp_chest(chest_index) {
     while (isdefined(level.chests[chest_index]) && (isdefined(level.chests[chest_index].chest_user) || isdefined(level.chests[chest_index]._box_open) && level.chests[chest_index]._box_open == 1)) {
         util::wait_network_frame();
     }
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) {
         level.chests[chest_index].was_temp = 1;
         level.chests[chest_index].zombie_cost = 10;
         level.chests[chest_index].being_removed = 0;
@@ -216,7 +216,7 @@ function remove_temp_chest(chest_index) {
 // Checksum 0xc2828cb3, Offset: 0xe18
 // Size: 0x92
 function func_should_drop_fire_sale() {
-    if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 0 || zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on") == 1 || level.chest_moves < 1 || isdefined(level.disable_firesale_drop) && level.disable_firesale_drop) {
+    if (zm_custom::function_901b751c(#"zmmysteryboxstate") == 0 || zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on") == 1 || level.chest_moves < 1 || isdefined(level.disable_firesale_drop) && level.disable_firesale_drop) {
         return false;
     }
     return true;

@@ -7,7 +7,7 @@
     "name": "smg_standard_restriction",
     "displayname": "#weapon/smg_standard",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__smg_standard_t8__restricted"
 }

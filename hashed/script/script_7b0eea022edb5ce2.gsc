@@ -219,7 +219,7 @@ function function_376cd4f6(weapon) {
         [[ level.var_2677b8bb ]]->waitinqueue(level.riotshield_fling_enemies[i]);
         if (isdefined(level.riotshield_fling_enemies[i])) {
             level.riotshield_fling_enemies[i] thread riotshield::riotshield_fling_zombie(self, level.riotshield_fling_vecs[i], i);
-            var_d3f92d4d = zombie_utility::function_d2dfacfd(#"riotshield_fling_damage_shield");
+            var_d3f92d4d = zombie_utility::get_zombie_var(#"riotshield_fling_damage_shield");
             if (self hasperk(#"specialty_mod_shield")) {
                 var_d3f92d4d *= 0.66;
             }
@@ -232,17 +232,17 @@ function function_376cd4f6(weapon) {
             continue;
         }
         level.riotshield_knockdown_enemies[i] thread riotshield::riotshield_knockdown_zombie(self, level.riotshield_knockdown_gib[i]);
-        shield_damage += zombie_utility::function_d2dfacfd(#"riotshield_knockdown_damage_shield");
+        shield_damage += zombie_utility::get_zombie_var(#"riotshield_knockdown_damage_shield");
     }
     foreach (ai_enemy in level.var_21ffc192) {
         switch (ai_enemy.var_6f84b820) {
         case #"heavy":
         case #"miniboss":
         case #"boss":
-            var_d3f92d4d = zombie_utility::function_d2dfacfd(#"hash_bfdf728041b626a");
+            var_d3f92d4d = zombie_utility::get_zombie_var(#"hash_bfdf728041b626a");
             break;
         default:
-            var_d3f92d4d = zombie_utility::function_d2dfacfd(#"hash_6835f7c5524585f3");
+            var_d3f92d4d = zombie_utility::get_zombie_var(#"hash_6835f7c5524585f3");
             break;
         }
         if (self hasperk(#"specialty_mod_shield")) {

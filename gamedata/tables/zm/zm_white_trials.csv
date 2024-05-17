@@ -9,7 +9,7 @@
 8,#population_control,#hash_6269f77516f2736e,#hash_f1198f8984cdf5e,#,#population_control,#33,#66,#99,#99,#hash_21228d40f4860929,#,#,#
 9,#hash_2a5fb4f6bae2e180,#hash_6269f87516f27521,#hash_3661a8e8a8a5365b,#,#flag_check,#hash_2a5fb4f6bae2e180,#hash_6b8356cd47c953f3,#,#,#,#,#,#
 10,#block_party,#hash_626d757516f57f5f,#hash_3852e5ce7f95a8f1,#,#defend_area,#hash_523319dddf00e183,#hash_75b783e73aebbac1,#hash_2a017f92951267d2,#zone_culdesac_green,#zone_culdesac_yellow,#zone_street_mid,#zone_street_start,#
-10,#shield_kills,#,#,#,#hash_53a5a75770adb550,#15,#10,#8,#8,#hash_2b4e93e32a29b66b,#hash_6024dc2e4acee945,#hash_603fdd2e4ae5b2b0,#
+10,#shield_kills,#,#,#,#hash_53a5a75770adb550,#15,#10,#8,#8,#zhield_riot_turret,#zhield_riot_lh,#zhield_riot_dw,#
 10,#,#,#,#,#give_reward,#hash_20e770cec441c9f2,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_6aedbad63da100db,#,#,#,#
 11,#hash_4618bdd6ab5de60c,#hash_626d747516f57dac,#hash_75f98ebcf669654,#,#upgrade_multiple,#1,#,#,#,#,#,#,#
 12,#hash_f8903260c5d2a1,#hash_626d777516f582c5,#hash_5c29c4800541018f,#,#special_enemy,#nova_crawler,#60,#200,#,#,#,#,#

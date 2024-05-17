@@ -959,9 +959,9 @@ function function_ad3de341(e_attacker) {
         }
     }
     while (true) {
-        var_e3256b6c = randomfloatrange(-600, 600);
+        n_xoff = randomfloatrange(-600, 600);
         n_yoff = randomfloatrange(-600, 600);
-        v_loc = self.origin + (var_e3256b6c, n_yoff, 0);
+        v_loc = self.origin + (n_xoff, n_yoff, 0);
         v_loc = getclosestpointonnavmesh(v_loc, 64, 16);
         if (isdefined(v_loc)) {
             str_zone = zm_zonemgr::get_zone_from_position(v_loc, 1);

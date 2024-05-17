@@ -46,7 +46,7 @@ function private on_begin(var_60bdad5f, var_36c3cc24, var_4ee27b15, var_3bc46181
         break;
     }
     self.var_358e6a29 = self.var_28433a54;
-    self.var_e6e7a65d = isdefined(zombie_utility::function_d2dfacfd(#"rebuild_barrier_cap_per_round")) ? zombie_utility::function_d2dfacfd(#"rebuild_barrier_cap_per_round") : 0;
+    self.var_e6e7a65d = isdefined(zombie_utility::get_zombie_var(#"rebuild_barrier_cap_per_round")) ? zombie_utility::get_zombie_var(#"rebuild_barrier_cap_per_round") : 0;
     zombie_utility::set_zombie_var(#"rebuild_barrier_cap_per_round", self.var_28433a54);
     self.var_a84ac7c8 = var_60bdad5f;
     zm_trial_util::function_2976fa44(self.var_358e6a29);
@@ -83,8 +83,8 @@ function private function_738e3a43() {
             var_c7ff10eb = 1;
             var_812095a3 = 0;
         }
-        if (self.var_358e6a29 > zombie_utility::function_d2dfacfd(#"rebuild_barrier_cap_per_round")) {
-            self.var_e6e7a65d = zombie_utility::function_d2dfacfd(#"rebuild_barrier_cap_per_round");
+        if (self.var_358e6a29 > zombie_utility::get_zombie_var(#"rebuild_barrier_cap_per_round")) {
+            self.var_e6e7a65d = zombie_utility::get_zombie_var(#"rebuild_barrier_cap_per_round");
             zombie_utility::set_zombie_var(#"rebuild_barrier_cap_per_round", self.var_358e6a29);
         }
         if (isdefined(waitresult.points)) {

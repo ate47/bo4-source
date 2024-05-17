@@ -1,7 +1,7 @@
 {
     "name": "#bowie_knife_zm",
     "baseWeapon": "#bowie_knife",
-    "displayname": "#hash_4df32082bac97235",
+    "displayname": "#zmweapon/bowie",
     "sessionMode": "zombies",
     "itemIndex": 260,
     "dualWieldWeaponIndex": 0,

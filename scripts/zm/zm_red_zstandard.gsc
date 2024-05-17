@@ -370,13 +370,13 @@ function function_ac904e5e() {
     zm_utility::function_742f2c18(13, #"zombie", 16, 12);
     zm_utility::function_742f2c18(14, #"zombie", 20, 12);
     zm_utility::function_742f2c18(15, #"zombie", 30, 12);
-    var_a535d72c = 12;
+    n_zombie_min = 12;
     for (n_round = 10; n_round < 255; n_round++) {
-        zm_utility::function_742f2c18(n_round, #"zombie", undefined, var_a535d72c);
+        zm_utility::function_742f2c18(n_round, #"zombie", undefined, n_zombie_min);
         if (math::cointoss()) {
-            var_a535d72c++;
+            n_zombie_min++;
         }
-        var_a535d72c = math::clamp(var_a535d72c, 8, 24);
+        n_zombie_min = math::clamp(n_zombie_min, 8, 24);
     }
 }
 

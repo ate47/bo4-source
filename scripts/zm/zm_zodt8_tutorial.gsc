@@ -275,27 +275,27 @@ function function_7573a994() {
 // Size: 0x1de
 function on_player_spawned() {
     if (isbot(self)) {
-        assert(!isdefined(level.var_d0bc9e33));
-        level.var_d0bc9e33 = self;
+        assert(!isdefined(level.tutorialbot));
+        level.tutorialbot = self;
         self.dontspeak = 1;
         self endon(#"disconnect");
         self zm_laststand::function_3d685b5f(0);
         self ai::set_behavior_attribute("control", "autonomous");
         self zm_audio::function_654ec86b();
         self waittill(#"death");
-        level.var_d0bc9e33 = undefined;
+        level.tutorialbot = undefined;
         return;
     }
     if (isplayer(self)) {
-        assert(!isdefined(level.var_6e2a2ea1));
-        level.var_6e2a2ea1 = self;
+        assert(!isdefined(level.tutorialplayer));
+        level.tutorialplayer = self;
         self endon(#"disconnect");
         self bgb_pack::function_da912bff(0, 1);
         self bgb_pack::function_da912bff(1, 1);
         self bgb_pack::function_da912bff(3, 1);
         self thread function_57bf8455();
         self waittill(#"death");
-        level.var_6e2a2ea1 = undefined;
+        level.tutorialplayer = undefined;
     }
 }
 
@@ -458,7 +458,7 @@ function function_cf5f5964(spawnerstr, ignore = 0, bot = undefined, b_play_fx = 
             level.var_a4ad706d[level.var_a4ad706d.size] = zombie;
             array::remove_undefined(level.var_a4ad706d);
         }
-        zombie.favoriteenemy = level.var_6e2a2ea1;
+        zombie.favoriteenemy = level.tutorialplayer;
         if (spawnerstr == "tutorial_catalyst_spawner") {
             zombie setcandamage(0);
             zombie.var_f256a4d9 = 0;
@@ -511,8 +511,8 @@ function function_fb2e7309() {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x99c576b8, Offset: 0x3480
 // Size: 0xa4
-function function_5ea0763f(var_50e34230, activator = undefined) {
-    trig = getent(var_50e34230, "targetname");
+function waittill_trigger(trig_name, activator = undefined) {
+    trig = getent(trig_name, "targetname");
     while (true) {
         eventstruct = trig waittill(#"trigger");
         if (!isdefined(activator) || activator == eventstruct.activator) {
@@ -550,7 +550,7 @@ function function_3fe47ed7(weaponname) {
 // Params 1, eflags: 0x1 linked
 // Checksum 0x4641e, Offset: 0x3620
 // Size: 0x54
-function function_c9f9f3bb(nodename) {
+function set_bot_goal(nodename) {
     node = getnode(nodename, "targetname");
     self setgoal(node, 1);
 }
@@ -607,7 +607,7 @@ function tutorial() {
     function_b40c8992(0);
     level.player_out_of_playable_area_monitor = 0;
     level flag::wait_till("all_players_connected");
-    level.var_6e2a2ea1 function_f761f5e4();
+    level.tutorialplayer function_f761f5e4();
     zombie_utility::set_zombie_var(#"zombie_use_failsafe", 0);
     level flag::set(#"disable_fast_travel");
     function_d1dabace();
@@ -616,15 +616,15 @@ function tutorial() {
     level function_f1376337(0);
     level flag::wait_till("start_zombie_round_logic");
     waittillframeend();
-    level.var_6e2a2ea1 zm_laststand::function_3d685b5f(0);
+    level.tutorialplayer zm_laststand::function_3d685b5f(0);
     switch (level.var_ecdc2cb1) {
     case 0:
-        level.var_6e2a2ea1 function_513e90cf();
+        level.tutorialplayer function_513e90cf();
     case 1:
-        level.var_6e2a2ea1 function_bfd3a7b1();
+        level.tutorialplayer function_bfd3a7b1();
         break;
     }
-    level.var_6e2a2ea1 function_e0c7d69(0);
+    level.tutorialplayer function_e0c7d69(0);
     self thread lui::screen_fade_out(3);
     clientfield::set_world_uimodel("hudItems.ztut.showLocation", 0);
     wait(1);
@@ -687,7 +687,7 @@ function function_513e90cf() {
     self function_2b4bf122(2500);
     self freeze_player_controls();
     self thread function_5bc503b1();
-    self function_2517cb55();
+    self shoot_zombie();
     self function_c3b8207f();
     self wallbuy();
     self points();
@@ -750,7 +750,7 @@ function function_16c8867e(e_player) {
 // Params 0, eflags: 0x1 linked
 // Checksum 0x5143c558, Offset: 0x43c8
 // Size: 0x384
-function function_2517cb55() {
+function shoot_zombie() {
     function_269d9f82("blocker_shoot_zombie");
     self.reset_score = self.score;
     function_b12c3aec();
@@ -793,12 +793,12 @@ function function_c3b8207f() {
         self thread function_261ed63c(#"hash_7e3f37003051a94c", 8, "crouch_completed");
         self thread function_3e1e39f8(#"hash_1544925c6fc2b561", "crouch_completed", &function_78dbf7e8, 9999);
     }
-    function_5ea0763f("tutorial_finish_crouch");
+    waittill_trigger("tutorial_finish_crouch");
     self notify(#"crouch_completed");
     level flag::wait_till_clear("tutorial_vo_playing");
     level thread function_68da8e33(#"hash_3af16170dcb577e5", 0.5);
     self thread function_3e1e39f8(#"hash_2e816a34f4c828df", "sprint_completed", &function_40050d3e, 8);
-    function_5ea0763f("tutorial_finish_pronesprint");
+    waittill_trigger("tutorial_finish_pronesprint");
     level flag::wait_till_clear("tutorial_vo_playing");
 }
 
@@ -913,7 +913,7 @@ function function_c55bfc51() {
 // Checksum 0xf9b07d98, Offset: 0x50a8
 // Size: 0x3c4
 function function_ec7139ac() {
-    function_5ea0763f("tutorial_start_barrierrepair");
+    waittill_trigger("tutorial_start_barrierrepair");
     zm_blockers::open_all_zbarriers();
     self.reset_score = self.score;
     self.is_drinking = 1;
@@ -945,7 +945,7 @@ function function_ec7139ac() {
     function_68da8e33(#"hash_c9ac443532e923d");
     function_a09d93d9();
     function_269d9f82("blocker_pre_repair", 0);
-    function_5ea0763f("tutorial_finish_barrierrepair");
+    waittill_trigger("tutorial_finish_barrierrepair");
     function_269d9f82("blocker_post_repair");
     function_269d9f82("blocker_post_wall_buy", 0);
 }
@@ -1058,14 +1058,14 @@ function function_bfd3a7b1() {
     self perks();
     self equipment();
     self bot();
-    self function_2d18e4c9();
+    self revive_bot();
     self catalyst();
     self cooperative();
     self crafting();
     self power();
     music::setmusicstate("tutorial_intermediate_end");
     self lui::screen_fade_out(5);
-    level thread bot::remove_bot(level.var_d0bc9e33);
+    level thread bot::remove_bot(level.tutorialbot);
     zm_characters::set_character(array(#"hash_3e63362aea484e09", #"hash_5a906d7137467771"));
     self function_204dd117("tutorial_advanced_start");
     self.is_drinking = 0;
@@ -1090,7 +1090,7 @@ function function_bfd3a7b1() {
     self freeze_player_controls();
     self function_2b4bf122(5500);
     self function_e326c0a();
-    self function_a2e9f78b();
+    self special_weapons();
     self elixirs();
     self pap();
     self fast_travel();
@@ -1222,7 +1222,7 @@ function function_a52087a1() {
         level.var_634ee380 delete();
     }
     level.var_634ee380 = undefined;
-    zombie = function_cf5f5964("tutorial_zm_spawner_bot_1", 1, level.var_d0bc9e33, 1);
+    zombie = function_cf5f5964("tutorial_zm_spawner_bot_1", 1, level.tutorialbot, 1);
     zombie thread function_2d2a2ec6();
     function_fac53b63(array("tutorial_zm_spawner_bot_2", "tutorial_zm_spawner_bot_3", "tutorial_zm_spawner_bot_4", "tutorial_zm_spawner_bot_5"), 1);
     foreach (ai_zombie in level.var_a4ad706d) {
@@ -1259,14 +1259,14 @@ function bot() {
     for (bot = bot::add_bot(#"allies", "J. Blundell [bot]"); !isdefined(bot); bot = bot::add_bot(#"allies", "J. Blundell [bot]")) {
         waitframe(1);
     }
-    bot.var_29b433bd = int(zm_characters::function_9004475c(array(#"hash_7180c6cf382f6010", #"hash_14e91ceb9a7b3eb6")));
+    bot.var_29b433bd = int(zm_characters::get_character_index(array(#"hash_7180c6cf382f6010", #"hash_14e91ceb9a7b3eb6")));
     bot bot::allow_all(0);
     bot thread bot::fixed_spawn_override(var_7d37d68d.origin, var_7d37d68d.angles[1], bot bot::get_nearest_node(var_7d37d68d.origin));
     waitframe(1);
-    level.var_d0bc9e33 thread function_b375d3c3();
-    level.var_d0bc9e33 function_2b4bf122(2000);
-    level.var_d0bc9e33 dodamage(level.var_d0bc9e33.health, level.var_d0bc9e33.origin);
-    zombie = function_cf5f5964("tutorial_zm_spawner_bot_1", 1, level.var_d0bc9e33, 1);
+    level.tutorialbot thread function_b375d3c3();
+    level.tutorialbot function_2b4bf122(2000);
+    level.tutorialbot dodamage(level.tutorialbot.health, level.tutorialbot.origin);
+    zombie = function_cf5f5964("tutorial_zm_spawner_bot_1", 1, level.tutorialbot, 1);
     zombie thread function_2d2a2ec6();
     waitframe(3);
     function_fac53b63(array("tutorial_zm_spawner_bot_2", "tutorial_zm_spawner_bot_3", "tutorial_zm_spawner_bot_4", "tutorial_zm_spawner_bot_5"), 1);
@@ -1307,14 +1307,14 @@ function function_c0a37283() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe0cfd266, Offset: 0x7118
 // Size: 0xfc
-function function_2d18e4c9() {
+function revive_bot() {
     level thread function_68da8e33(#"hash_21c376fa208dc2c", 4);
-    level.var_d0bc9e33 waittill(#"stop_revive_trigger");
+    level.tutorialbot waittill(#"stop_revive_trigger");
     level thread function_68da8e33(#"hash_409bd11382c2e617");
-    level.var_d0bc9e33 function_3fe47ed7("ar_damage_t8");
-    level.var_d0bc9e33 function_c9f9f3bb("tutorial_bot_ramp");
-    function_5ea0763f("tutorial_finish_bot_revive", self);
-    level.var_d0bc9e33 function_c9f9f3bb("tutorial_bot_upper_deck");
+    level.tutorialbot function_3fe47ed7("ar_damage_t8");
+    level.tutorialbot set_bot_goal("tutorial_bot_ramp");
+    waittill_trigger("tutorial_finish_bot_revive", self);
+    level.tutorialbot set_bot_goal("tutorial_bot_upper_deck");
     function_269d9f82("barrier_post_revive");
 }
 
@@ -1323,18 +1323,18 @@ function function_2d18e4c9() {
 // Checksum 0x67be8e2a, Offset: 0x7220
 // Size: 0x1ae
 function catalyst() {
-    level.var_d0bc9e33 ai::set_behavior_attribute("revive", 0);
+    level.tutorialbot ai::set_behavior_attribute("revive", 0);
     level.player_death_override = undefined;
     level thread function_68da8e33(#"hash_19f5dd3aa8491df1");
-    function_cf5f5964("tutorial_catalyst_spawner", 1, level.var_d0bc9e33, 1);
+    function_cf5f5964("tutorial_catalyst_spawner", 1, level.tutorialbot, 1);
     level waittill(#"hash_528115ad9eebc84f");
     self dodamage(self.health + 100, self.origin);
-    level.var_d0bc9e33 function_c9f9f3bb("tutorial_bot_before_revive");
+    level.tutorialbot set_bot_goal("tutorial_bot_before_revive");
     function_68da8e33(#"hash_6698f554bf7a9501");
     function_68da8e33(#"hash_6698f454bf7a934e");
-    level.var_d0bc9e33 ai::set_behavior_attribute("revive", 1);
-    level.var_d0bc9e33 setgoal(self, 1);
-    level.var_d0bc9e33 bot::set_revive_target(self);
+    level.tutorialbot ai::set_behavior_attribute("revive", 1);
+    level.tutorialbot setgoal(self, 1);
+    level.tutorialbot bot::set_revive_target(self);
     self waittill(#"stop_revive_trigger");
     level.player_death_override = &tutorial_reset;
 }
@@ -1344,15 +1344,15 @@ function catalyst() {
 // Checksum 0x4705c8f4, Offset: 0x73d8
 // Size: 0x114
 function cooperative() {
-    level.var_d0bc9e33 function_c9f9f3bb("tutorial_bot_open_door");
-    function_5ea0763f("tutorial_bot_open_door_trigger", level.var_d0bc9e33);
+    level.tutorialbot set_bot_goal("tutorial_bot_open_door");
+    waittill_trigger("tutorial_bot_open_door_trigger", level.tutorialbot);
     function_68da8e33(#"hash_3c5d16448b5aa5db");
     open_door("library_boat_deck_door");
     function_269d9f82("barrier_pre_shield");
-    level.var_d0bc9e33 zm_score::player_reduce_points("take_specified", 1500);
+    level.tutorialbot zm_score::player_reduce_points("take_specified", 1500);
     wait(1);
     level thread function_68da8e33(#"hash_3c5d15448b5aa428");
-    level.var_d0bc9e33 function_c9f9f3bb("tutorial_bot_shield_part");
+    level.tutorialbot set_bot_goal("tutorial_bot_shield_part");
     function_b12c3aec();
 }
 
@@ -1388,7 +1388,7 @@ function crafting() {
     self waittill(#"zm_inventory_menu_opened");
     function_269d9f82("barrier_pre_shield", 0);
     function_269d9f82("barrier_post_shield");
-    level.var_d0bc9e33 function_c9f9f3bb("tutorial_bot_crafting");
+    level.tutorialbot set_bot_goal("tutorial_bot_crafting");
     var_6b69f12a = getent("tutorial_table", "targetname");
     if (isdefined(var_6b69f12a)) {
         var_6b69f12a clientfield::set("tutorial_keyline_fx", 1);
@@ -1455,7 +1455,7 @@ function function_e35fa479() {
     level endon(#"tutorial_reset");
     self val::set(#"devgui", "ignoreme");
     self val::set(#"devgui", "takedamage", 0);
-    self function_c9f9f3bb("tutorial_bot_before_power");
+    self set_bot_goal("tutorial_bot_before_power");
     self waittill(#"goal");
     function_1eaaceab(level.var_a4ad706d);
     while (level.var_a4ad706d.size > 0) {
@@ -1474,7 +1474,7 @@ function function_e35fa479() {
 function power_reset() {
     self function_204dd117("tutorial_power_start");
     function_fac53b63(array("tutorial_zm_spawner_power_1", "tutorial_zm_spawner_power_2", "tutorial_zm_spawner_power_3", "tutorial_zm_spawner_power_4", "tutorial_zm_spawner_power_5"));
-    level.var_d0bc9e33 thread function_e35fa479();
+    level.tutorialbot thread function_e35fa479();
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1490,11 +1490,11 @@ function power() {
     s_objective = struct::get("objective_pos_power", "targetname");
     s_objective function_384bed55();
     function_fac53b63(array("tutorial_zm_spawner_power_1", "tutorial_zm_spawner_power_2", "tutorial_zm_spawner_power_3", "tutorial_zm_spawner_power_4", "tutorial_zm_spawner_power_5"));
-    level.var_d0bc9e33 thread function_e35fa479();
+    level.tutorialbot thread function_e35fa479();
     function_fb2e7309();
     function_269d9f82("barrier_pre_power", 0);
     function_a09d93d9();
-    level.var_d0bc9e33 thread function_4491a7c();
+    level.tutorialbot thread function_4491a7c();
     level thread function_68da8e33(#"hash_2e0db5c834d812cf", 1.5);
     level flag::wait_till("power_on");
     music::setmusicstate("tutorial_intermediate_sentinel");
@@ -1514,7 +1514,7 @@ function function_4491a7c() {
     s_pos = struct::get("tutorial_zm_spawner_power_4", "targetname");
     self setgoal(s_pos.origin, 1);
     self waittill(#"goal");
-    self function_c9f9f3bb("tutorial_bot_power");
+    self set_bot_goal("tutorial_bot_power");
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1536,7 +1536,7 @@ function function_23dadcc9() {
 // Params 0, eflags: 0x1 linked
 // Checksum 0xe1f9a970, Offset: 0x8268
 // Size: 0x354
-function function_a2e9f78b() {
+function special_weapons() {
     function_f1376337(4);
     self.reset_score = self.score;
     level flag::init("special_weapon_activated");
@@ -1695,7 +1695,7 @@ function fast_travel() {
 // Size: 0xa4
 function function_edf32a3b(n_round_number) {
     playsoundatposition(#"hash_58df62ae7fa7b42b", (0, 0, 0));
-    level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), n_round_number);
+    level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), n_round_number);
     zm_round_logic::set_round_number(n_round_number);
     setroundsplayed(n_round_number);
 }

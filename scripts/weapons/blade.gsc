@@ -54,7 +54,7 @@ function function_d6805ff5(weapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x4b6a120d, Offset: 0x288
 // Size: 0x1b6
-function function_a1aa3b85(var_3245778e, weapon) {
+function function_a1aa3b85(abilityslot, weapon) {
     if (weapon !== level.weaponsigblade && weapon !== level.weaponsigbladeprojectile) {
         return;
     }
@@ -86,7 +86,7 @@ function function_a1aa3b85(var_3245778e, weapon) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0x9ca51857, Offset: 0x448
 // Size: 0x5a
-function function_b0105ee8(var_3245778e, weapon) {
+function function_b0105ee8(abilityslot, weapon) {
     if (isdefined(self)) {
         self clientfield::set_player_uimodel("hudItems.abilityHintIndex", 0);
         self notify(#"bladeended");

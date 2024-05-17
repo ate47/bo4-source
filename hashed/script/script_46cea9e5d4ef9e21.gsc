@@ -428,15 +428,15 @@ function private function_f2f53f97() {
     }
     level.var_461a9705 = 1;
     s_spawn_location = struct::get("nixie_tube_zombie_blood_start");
-    var_9c0bf2db = util::spawn_model(s_spawn_location.model, s_spawn_location.origin, s_spawn_location.angles);
-    var_9c0bf2db clientfield::set("" + #"hash_3e57db9b106dff0a", 1);
+    mdl_powerup = util::spawn_model(s_spawn_location.model, s_spawn_location.origin, s_spawn_location.angles);
+    mdl_powerup clientfield::set("" + #"hash_3e57db9b106dff0a", 1);
     for (s_target = struct::get(s_spawn_location.target); isdefined(s_target); s_target = struct::get(s_target.target)) {
-        n_time = distance(var_9c0bf2db.origin, s_target.origin) / 300;
-        var_9c0bf2db moveto(s_target.origin, n_time);
-        var_9c0bf2db waittill(#"movedone");
+        n_time = distance(mdl_powerup.origin, s_target.origin) / 300;
+        mdl_powerup moveto(s_target.origin, n_time);
+        mdl_powerup waittill(#"movedone");
     }
-    e_powerup = zm_powerups::specific_powerup_drop("zombie_blood", var_9c0bf2db.origin - (0, 0, 40));
-    var_9c0bf2db delete();
+    e_powerup = zm_powerups::specific_powerup_drop("zombie_blood", mdl_powerup.origin - (0, 0, 40));
+    mdl_powerup delete();
     level thread function_25aaae40();
     e_powerup thread function_f50cec70();
 }

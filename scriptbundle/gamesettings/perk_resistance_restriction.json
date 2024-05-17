@@ -7,7 +7,7 @@
     "name": "perk_resistance_restriction",
     "displayname": "#hash_78bebf6517dcd233",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__talent_resistance__restricted"
 }

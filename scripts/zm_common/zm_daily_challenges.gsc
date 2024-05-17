@@ -438,7 +438,7 @@ function private rebuild_timer() {
 // Checksum 0xf9d4d0de, Offset: 0x1698
 // Size: 0x104
 function increment_magic_box() {
-    if (isdefined(zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) && zombie_utility::function_d2dfacfd(#"zombie_powerup_fire_sale_on")) {
+    if (isdefined(zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) && zombie_utility::get_zombie_var(#"zombie_powerup_fire_sale_on")) {
         self zm_stats::increment_challenge_stat(#"zm_daily_purchase_fire_sale_magic_box");
         /#
             debug_print("<unknown string>");

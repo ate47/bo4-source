@@ -632,7 +632,7 @@ function function_7a607f29(var_12230d08) {
         self val::set(#"fasttravel", "disable_weapons", 1);
     }
     self bgb::suspend_weapon_cycling();
-    self.var_be3224e6 = 1;
+    self.bgb_disabled = 1;
     self util::magic_bullet_shield();
 }
 
@@ -645,7 +645,7 @@ function function_e61d152a() {
     self.var_e75517b1 = 0;
     self val::reset(#"fasttravel", "ignoreme");
     self val::reset(#"fasttravel", "disable_weapons");
-    self.var_be3224e6 = 0;
+    self.bgb_disabled = 0;
     self bgb::resume_weapon_cycling();
     self util::stop_magic_bullet_shield();
 }

@@ -1258,7 +1258,7 @@ function setup_end_igc(var_24486b2e = 1) {
     // Size: 0x118
     function function_9dc8cf3() {
         foreach (e_player in level.activeplayers) {
-            if (namespace_52d8d460::function_65a59ce0(e_player getcurrentweapon())) {
+            if (namespace_52d8d460::is_shield_weapon(e_player getcurrentweapon())) {
                 e_player.var_c9d375dc.n_charge_level++;
                 e_player clientfield::set("<unknown string>" + #"charge_gem", e_player.var_c9d375dc.n_charge_level);
                 if (e_player.var_c9d375dc.n_charge_level >= 3) {

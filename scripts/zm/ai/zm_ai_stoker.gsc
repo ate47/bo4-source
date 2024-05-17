@@ -1120,9 +1120,9 @@ function function_b381320(var_dbce0c44) {
         return 0;
     }
     if (level.players.size == 1) {
-        var_1797c23a = 1 + max(0, floor((level.round_number - zombie_utility::function_d2dfacfd(#"hash_2374f3ef775ac2c3")) / 4));
+        var_1797c23a = 1 + max(0, floor((level.round_number - zombie_utility::get_zombie_var(#"hash_2374f3ef775ac2c3")) / 4));
     } else {
-        var_1797c23a = 1 + max(0, floor((level.round_number - zombie_utility::function_d2dfacfd(#"hash_3b4ad7449c039d1b")) / 3));
+        var_1797c23a = 1 + max(0, floor((level.round_number - zombie_utility::get_zombie_var(#"hash_3b4ad7449c039d1b")) / 3));
     }
     var_2506688 = var_1797c23a < 8 ? max(var_1797c23a - 3, 0) : var_1797c23a * 0.75;
     return randomintrangeinclusive(int(var_2506688), int(min(var_8cf00d40, var_1797c23a)));

@@ -2942,7 +2942,7 @@ function private function_bd132295() {
     }
     while (true) {
         wait(randomfloatrange(3, 15));
-        if (zombie_utility::get_current_zombie_count() < zombie_utility::function_d2dfacfd(#"zombie_max_ai")) {
+        if (zombie_utility::get_current_zombie_count() < zombie_utility::get_zombie_var(#"zombie_max_ai")) {
             ai_dog = zombie_utility::spawn_zombie(level.dog_spawners[0]);
         }
     }
@@ -3338,19 +3338,19 @@ function private function_56e41aa6(var_7df17d61) {
 // Checksum 0xabe74262, Offset: 0x10528
 // Size: 0x226
 function private function_252499a3(v_pos) {
-    var_b7eee573 = util::spawn_model(#"p8_zm_esc_orb_red_small", v_pos + (0, 0, 5));
-    var_b7eee573 setscale(4);
-    var_b7eee573 playsound(#"hash_748c338212771d3");
-    var_b7eee573.t_interact = spawn("trigger_radius_use", v_pos + (0, 0, 20), 0, 64, 64);
-    var_b7eee573.t_interact sethintstring(#"");
-    var_b7eee573.t_interact setcursorhint("HINT_NOICON");
-    var_b7eee573.t_interact triggerignoreteam();
-    while (isdefined(var_b7eee573)) {
-        s_result = var_b7eee573.t_interact waittill(#"trigger");
+    mdl_orb = util::spawn_model(#"p8_zm_esc_orb_red_small", v_pos + (0, 0, 5));
+    mdl_orb setscale(4);
+    mdl_orb playsound(#"hash_748c338212771d3");
+    mdl_orb.t_interact = spawn("trigger_radius_use", v_pos + (0, 0, 20), 0, 64, 64);
+    mdl_orb.t_interact sethintstring(#"");
+    mdl_orb.t_interact setcursorhint("HINT_NOICON");
+    mdl_orb.t_interact triggerignoreteam();
+    while (isdefined(mdl_orb)) {
+        s_result = mdl_orb.t_interact waittill(#"trigger");
         if (isplayer(s_result.activator)) {
-            playsoundatposition(#"hash_6aa220e65103f345", var_b7eee573.origin);
-            var_b7eee573.t_interact delete();
-            var_b7eee573 delete();
+            playsoundatposition(#"hash_6aa220e65103f345", mdl_orb.origin);
+            mdl_orb.t_interact delete();
+            mdl_orb delete();
             s_result.activator thread zm_audio::create_and_play_dialog(#"generic", #"response_positive");
             return 1;
         }

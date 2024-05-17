@@ -229,16 +229,16 @@ function function_f11b8d1d(localclientnum, oldval, newval, bnewent, binitialsnap
 function beacon_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump) {
     if (newval == 1) {
         self.b_beacon_fx = 1;
-        if (!isdefined(level.var_9b66c01)) {
-            level.var_9b66c01 = [];
+        if (!isdefined(level.a_mdl_beacons)) {
+            level.a_mdl_beacons = [];
         }
-        if (!isinarray(level.var_9b66c01, self)) {
-            if (!isdefined(level.var_9b66c01)) {
-                level.var_9b66c01 = [];
-            } else if (!isarray(level.var_9b66c01)) {
-                level.var_9b66c01 = array(level.var_9b66c01);
+        if (!isinarray(level.a_mdl_beacons, self)) {
+            if (!isdefined(level.a_mdl_beacons)) {
+                level.a_mdl_beacons = [];
+            } else if (!isarray(level.a_mdl_beacons)) {
+                level.a_mdl_beacons = array(level.a_mdl_beacons);
             }
-            level.var_9b66c01[level.var_9b66c01.size] = self;
+            level.a_mdl_beacons[level.a_mdl_beacons.size] = self;
         }
         if (isdefined(self.b_beacon_fx) && self.b_beacon_fx) {
             self.n_beacon_fx = util::playfxontag(localclientnum, level._effect[#"scepter_bubble"], self, "tag_origin");
@@ -251,7 +251,7 @@ function beacon_fx(localclientnum, oldval, newval, bnewent, binitialsnap, fieldn
         util::playfxontag(localclientnum, level._effect[#"hash_4c17911c3aed59ae"], self, "tag_origin");
         self.n_beacon_fx = undefined;
     }
-    arrayremovevalue(level.var_9b66c01, self);
+    arrayremovevalue(level.a_mdl_beacons, self);
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter

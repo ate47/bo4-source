@@ -222,7 +222,7 @@ function update_hint_string(player) {
 // Size: 0x230
 function function_aaf2d8(player, weapon, b_weapon_supports_aat, var_a86430cb) {
     var_6224cea8 = player function_7352d8cc(weapon);
-    if (zombie_utility::function_d2dfacfd(#"zombie_powerup_bonfire_sale_on")) {
+    if (zombie_utility::get_zombie_var(#"zombie_powerup_bonfire_sale_on")) {
         var_376755db = 1000;
         if (b_weapon_supports_aat && var_a86430cb) {
             if (var_6224cea8) {

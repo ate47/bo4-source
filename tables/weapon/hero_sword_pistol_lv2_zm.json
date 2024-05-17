@@ -1,7 +1,7 @@
 {
     "name": "#hero_sword_pistol_lv2_zm",
     "baseWeapon": "#hero_sword_pistol_lv2",
-    "displayname": "#hash_1ef82642b903da22",
+    "displayname": "#weapon/hero_sword_pistol",
     "sessionMode": "zombies",
     "itemIndex": 349,
     "dualWieldWeaponIndex": 0,
@@ -18,7 +18,7 @@
     "gadgetreadysoundplayer": "#hash_44d51c9753d17a7a",
     "var_fb22040b": "#hash_6aa35ab86c22666e",
     "sound660": "#hash_315685483901984c",
-    "sound740": "#hash_705984e75bcc4c8d",
+    "sound740": "#hero_sword_pistol_lh_lv2_zm",
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
     "properties": {

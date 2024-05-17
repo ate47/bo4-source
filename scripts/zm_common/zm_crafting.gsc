@@ -56,7 +56,7 @@ function __main__() {
     function_7a8f3cbd();
     function_60a6c623();
     setup_tables();
-    if (zombie_utility::function_d2dfacfd(#"highlight_craftables") || zm_custom::function_901b751c(#"zmcraftingkeyline")) {
+    if (zombie_utility::get_zombie_var(#"highlight_craftables") || zm_custom::function_901b751c(#"zmcraftingkeyline")) {
         level thread function_40f32480();
     }
     /#

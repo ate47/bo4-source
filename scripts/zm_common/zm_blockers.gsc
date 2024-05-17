@@ -1752,7 +1752,7 @@ function handle_post_board_repair_rewards(cost, zbarrier) {
         self.rebuild_barrier_reward = 0;
     }
     self.rebuild_barrier_reward += cost;
-    if (self.rebuild_barrier_reward <= zombie_utility::function_d2dfacfd(#"rebuild_barrier_cap_per_round")) {
+    if (self.rebuild_barrier_reward <= zombie_utility::get_zombie_var(#"rebuild_barrier_cap_per_round")) {
         if (isdefined(self.var_7e008e0c) && self.var_7e008e0c > 0) {
             cost *= self.var_7e008e0c;
         }

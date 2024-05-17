@@ -4754,9 +4754,9 @@ function register_custom_callback(str_name, str_kvp, func) {
 function function_d608a743() {
     self notify(#"hash_29bf696e43d4a08b");
     self endon(#"hash_29bf696e43d4a08b", #"death");
-    var_9bc12626 = getarraykeys(self.var_c18fbf49);
+    a_str_notifies = getarraykeys(self.var_c18fbf49);
     while (true) {
-        s_result = self waittill(var_9bc12626);
+        s_result = self waittill(a_str_notifies);
         s_callback = self.var_c18fbf49[hash(s_result._notify)];
         if (isdefined(s_callback.params)) {
             util::single_thread_argarray(self, s_callback.func, s_callback.params);

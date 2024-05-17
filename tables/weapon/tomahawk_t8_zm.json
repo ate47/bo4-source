@@ -1,7 +1,7 @@
 {
     "name": "#tomahawk_t8_zm",
     "baseWeapon": "#tomahawk_t8",
-    "displayname": "#hash_d34a0aa9273f87f",
+    "displayname": "#zmweapon/tomahawk",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

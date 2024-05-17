@@ -38,7 +38,7 @@
     // Params 0, eflags: 0x0
     // Checksum 0x578ab1c, Offset: 0x1a0
     // Size: 0x1866
-    function function_93440c52() {
+    function propdevgui() {
         var_6631295a = 0;
         var_e68b7091 = 0;
         var_28c934a0 = 0;

@@ -1,7 +1,7 @@
 {
     "name": "#homunculus_wz",
     "baseWeapon": "#homunculus",
-    "displayname": "#hash_1b5597f01c38c550",
+    "displayname": "#zmweapon/homunculus",
     "sessionMode": "warzone",
     "itemIndex": 74,
     "dualWieldWeaponIndex": 0,

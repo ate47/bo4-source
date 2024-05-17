@@ -54,15 +54,15 @@ function wait_for_initial_conditions() {
     level.sq_bg_macguffins = [];
     a_s_mcguffin = struct::get_array("struct_sq_bg_macguffin", "targetname");
     foreach (struct in a_s_mcguffin) {
-        var_a2a0a44e = util::spawn_model("p8_zm_esc_skull_afterlife_glass", struct.origin, struct.angles);
-        var_a2a0a44e.targetname = "sq_bg_macguffin";
+        mdl_skull = util::spawn_model("p8_zm_esc_skull_afterlife_glass", struct.origin, struct.angles);
+        mdl_skull.targetname = "sq_bg_macguffin";
         if (!isdefined(level.sq_bg_macguffins)) {
             level.sq_bg_macguffins = [];
         } else if (!isarray(level.sq_bg_macguffins)) {
             level.sq_bg_macguffins = array(level.sq_bg_macguffins);
         }
-        if (!isinarray(level.sq_bg_macguffins, var_a2a0a44e)) {
-            level.sq_bg_macguffins[level.sq_bg_macguffins.size] = var_a2a0a44e;
+        if (!isinarray(level.sq_bg_macguffins, mdl_skull)) {
+            level.sq_bg_macguffins[level.sq_bg_macguffins.size] = mdl_skull;
         }
     }
     array::thread_all(level.sq_bg_macguffins, &sq_bg_macguffin_think);
@@ -131,20 +131,20 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
     if (!isdefined(e_grenade)) {
         return false;
     }
-    foreach (var_a2a0a44e in level.sq_bg_macguffins) {
-        if (!isdefined(var_a2a0a44e)) {
+    foreach (mdl_skull in level.sq_bg_macguffins) {
+        if (!isdefined(mdl_skull)) {
             continue;
         }
-        if (!(isdefined(var_a2a0a44e.b_collected) && var_a2a0a44e.b_collected) && distancesquared(var_a2a0a44e.origin, e_grenade.origin) < 100 * 100) {
-            var_a2a0a44e.b_collected = 1;
+        if (!(isdefined(mdl_skull.b_collected) && mdl_skull.b_collected) && distancesquared(mdl_skull.origin, e_grenade.origin) < 100 * 100) {
+            mdl_skull.b_collected = 1;
             mdl_tomahawk = zm_weap_tomahawk::tomahawk_spawn(e_grenade.origin);
             mdl_tomahawk.n_grenade_charge_power = n_grenade_charge_power;
-            var_a2a0a44e notify(#"caught_by_tomahawk");
-            var_a2a0a44e.origin = e_grenade.origin;
-            var_a2a0a44e linkto(mdl_tomahawk);
-            var_a2a0a44e clientfield::set("" + #"hash_3c8cd47650fbb324", 2);
+            mdl_skull notify(#"caught_by_tomahawk");
+            mdl_skull.origin = e_grenade.origin;
+            mdl_skull linkto(mdl_tomahawk);
+            mdl_skull clientfield::set("" + #"hash_3c8cd47650fbb324", 2);
             self thread zm_weap_tomahawk::tomahawk_return_player(mdl_tomahawk, undefined, 800);
-            self thread give_player_macguffin_upon_receipt(mdl_tomahawk, var_a2a0a44e);
+            self thread give_player_macguffin_upon_receipt(mdl_tomahawk, mdl_skull);
             return true;
         }
     }
@@ -155,14 +155,14 @@ function tomahawk_the_macguffin(e_grenade, n_grenade_charge_power) {
 // Params 2, eflags: 0x1 linked
 // Checksum 0xa92ad890, Offset: 0xa80
 // Size: 0xc8
-function give_player_macguffin_upon_receipt(mdl_tomahawk, var_a2a0a44e) {
+function give_player_macguffin_upon_receipt(mdl_tomahawk, mdl_skull) {
     v_org = self.origin;
     while (isdefined(mdl_tomahawk)) {
         waitframe(1);
     }
-    var_a2a0a44e notify(#"sq_bg_macguffin_received_by_player");
-    arrayremovevalue(level.sq_bg_macguffins, var_a2a0a44e);
-    var_a2a0a44e delete();
+    mdl_skull notify(#"sq_bg_macguffin_received_by_player");
+    arrayremovevalue(level.sq_bg_macguffins, mdl_skull);
+    mdl_skull delete();
     zm_utility::play_sound_at_pos("purchase", v_org);
     level notify(#"sq_bg_macguffin_collected", {#e_player:self});
 }

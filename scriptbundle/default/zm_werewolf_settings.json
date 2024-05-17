@@ -12,7 +12,7 @@
     ],
     "weapondamagescaleoverrides": [
         {
-            "var_fe55d685": "#hash_5934c9d135820910",
+            "var_fe55d685": "#ww_crossbow_impaler_t8_zm",
             "weaponid": "#ww_crossbow_impaler_t8",
             "var_628192b0": 16,
             "damagescale": 8

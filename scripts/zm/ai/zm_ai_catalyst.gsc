@@ -214,7 +214,7 @@ function private function_47fdbfbb() {
         break;
     }
     health_multiplier *= isdefined(level.var_1eb98fb1) ? level.var_1eb98fb1 : 1;
-    round_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), isdefined(self._starting_round_number) ? self._starting_round_number : level.round_number);
+    round_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), isdefined(self._starting_round_number) ? self._starting_round_number : level.round_number);
     self.maxhealth = int(max(round_health * health_multiplier, 1));
     self.health = int(max(self.maxhealth * (isdefined(self.var_d67de8a4) ? self.var_d67de8a4 : 1), 1));
     self zm_score::function_82732ced();

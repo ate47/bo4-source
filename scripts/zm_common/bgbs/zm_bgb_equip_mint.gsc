@@ -30,10 +30,10 @@ function __init__() {
 // Checksum 0x48e35a7b, Offset: 0x168
 // Size: 0x11c
 function activation() {
-    var_ac6ee9a0 = self zm_loadout::get_player_lethal_grenade();
-    if (var_ac6ee9a0.isgadget) {
-        n_slot = self gadgetgetslot(var_ac6ee9a0);
-        if (var_ac6ee9a0 == getweapon(#"tomahawk_t8") || var_ac6ee9a0 == getweapon(#"tomahawk_t8_upgraded")) {
+    w_lethal = self zm_loadout::get_player_lethal_grenade();
+    if (w_lethal.isgadget) {
+        n_slot = self gadgetgetslot(w_lethal);
+        if (w_lethal == getweapon(#"tomahawk_t8") || w_lethal == getweapon(#"tomahawk_t8_upgraded")) {
             self notify(#"hash_3d73720d4588203c");
             self gadgetpowerset(n_slot, 100);
         } else {
@@ -48,12 +48,12 @@ function activation() {
 // Checksum 0xbb5c41a1, Offset: 0x290
 // Size: 0x142
 function validation() {
-    var_ac6ee9a0 = self zm_loadout::get_player_lethal_grenade();
-    n_stock_size = self getweaponammostock(var_ac6ee9a0);
-    n_clip_size = self getweaponammoclipsize(var_ac6ee9a0);
-    n_slot = self gadgetgetslot(var_ac6ee9a0);
+    w_lethal = self zm_loadout::get_player_lethal_grenade();
+    n_stock_size = self getweaponammostock(w_lethal);
+    n_clip_size = self getweaponammoclipsize(w_lethal);
+    n_slot = self gadgetgetslot(w_lethal);
     n_power = self gadgetpowerget(n_slot);
-    if ((var_ac6ee9a0 == getweapon(#"tomahawk_t8") || var_ac6ee9a0 == getweapon(#"tomahawk_t8_upgraded")) && self function_36dfc05f(n_slot)) {
+    if ((w_lethal == getweapon(#"tomahawk_t8") || w_lethal == getweapon(#"tomahawk_t8_upgraded")) && self function_36dfc05f(n_slot)) {
         return false;
     }
     if (n_stock_size < n_clip_size || n_power < 100) {

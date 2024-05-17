@@ -7,7 +7,7 @@
     "name": "operator_beltfeed_restriction",
     "displayname": "#hash_5b241d3d4fdd92e5",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__smg_capacity_t8__attachments__uber"
 }

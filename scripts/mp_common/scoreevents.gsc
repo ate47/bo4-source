@@ -850,9 +850,9 @@ function heavyweaponkill(attacker, victim, weapon) {
         break;
     case #"sig_minigun_alt":
     case #"sig_minigun":
-    case #"hash_5a34a2f4b8c715c0":
+    case #"sig_minigun_turret_28":
     case #"hash_5a34aef4b8c72a24":
-    case #"hash_5a382ef4b8ca397b":
+    case #"sig_minigun_turret_32":
     case #"hash_5a3832f4b8ca4047":
     case #"hash_5a492ef4b8d8acae":
     case #"hash_5a4932f4b8d8b37a":

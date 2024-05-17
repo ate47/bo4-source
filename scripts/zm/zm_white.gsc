@@ -479,7 +479,7 @@ function function_6762e94d() {
 // Checksum 0x79317323, Offset: 0x29d0
 // Size: 0x2c
 function function_9f50079d() {
-    zm_loadout::register_tactical_grenade_for_level(#"hash_603fdd2e4ae5b2b0", 1);
+    zm_loadout::register_tactical_grenade_for_level(#"zhield_riot_dw", 1);
 }
 
 // Namespace zm_white/zm_white

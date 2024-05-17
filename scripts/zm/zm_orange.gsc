@@ -219,7 +219,7 @@ function event_handler[level_init] main(eventstruct) {
 // Checksum 0xe059aebb, Offset: 0x1758
 // Size: 0x2c
 function function_9f50079d() {
-    zm_loadout::register_tactical_grenade_for_level(#"hash_603fdd2e4ae5b2b0", 1);
+    zm_loadout::register_tactical_grenade_for_level(#"zhield_riot_dw", 1);
 }
 
 // Namespace zm_orange/zm_orange

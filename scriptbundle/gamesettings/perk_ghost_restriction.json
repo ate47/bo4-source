@@ -7,7 +7,7 @@
     "name": "perk_ghost_restriction",
     "displayname": "#hash_3df7b1d6be866b29",
     "label1": "#menu/enabled",
-    "label2": "#hash_94eb0e3329edf5f",
+    "label2": "#menu/disabled",
     "var_9de86f42": 2,
     "setting": "itemRestrictions__talent_ghost__restricted"
 }

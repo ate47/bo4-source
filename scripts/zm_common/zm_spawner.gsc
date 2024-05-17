@@ -202,7 +202,7 @@ function zombie_spawn_init() {
     }
     self zm_utility::disable_react();
     if (!isdefined(level.zombie_health)) {
-        level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), level.round_number);
+        level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), level.round_number);
     }
     self.maxhealth = int(level.zombie_health * (isdefined(level.var_46e03bb6) ? level.var_46e03bb6 : 1));
     self.health = self.maxhealth;
@@ -1830,7 +1830,7 @@ function zombie_tesla_head_gib() {
     if (self.animname === "quad_zombie") {
         return;
     }
-    if (randomint(100) < zombie_utility::function_d2dfacfd(#"tesla_head_gib_chance")) {
+    if (randomint(100) < zombie_utility::get_zombie_var(#"tesla_head_gib_chance")) {
         wait(randomfloatrange(0.53, 1));
         self zombie_utility::zombie_head_gib();
         return;

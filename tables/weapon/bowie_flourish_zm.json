@@ -1,7 +1,7 @@
 {
     "name": "#bowie_flourish_zm",
     "baseWeapon": "#bowie_flourish",
-    "displayname": "#hash_4df32082bac97235",
+    "displayname": "#zmweapon/bowie",
     "sessionMode": "zombies",
     "itemIndex": 0,
     "dualWieldWeaponIndex": 0,

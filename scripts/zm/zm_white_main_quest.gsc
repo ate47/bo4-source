@@ -882,8 +882,8 @@ function function_643d9747() {
         var_6be675b7.s_unitrigger.is_rotating = 0;
         var_6be675b7 thread function_2193794();
     }
-    var_d1ec2571 = zm_round_logic::get_round_number() + 1;
-    while (zm_round_logic::get_round_number() < var_d1ec2571 && !(isdefined(level.intermission) && level.intermission)) {
+    n_next_round = zm_round_logic::get_round_number() + 1;
+    while (zm_round_logic::get_round_number() < n_next_round && !(isdefined(level.intermission) && level.intermission)) {
         wait(1);
     }
     level flag::set(#"hash_58b6a09577af5b6d");
@@ -1919,13 +1919,13 @@ function zm_white_mq_crawler_cleanup(var_5ea5c94d, ended_early) {
 // Checksum 0xc7b21dfa, Offset: 0xaa40
 // Size: 0xb0
 function function_612f03f0() {
-    var_d1ec2571 = zm_round_logic::get_round_number();
+    n_next_round = zm_round_logic::get_round_number();
     while (!level flag::get(#"crawler_step_complete")) {
-        var_d1ec2571 += 1;
-        if (zm_round_spawning::function_40229072(var_d1ec2571)) {
-            zm_round_spawning::function_43aed0ca(var_d1ec2571, 1);
+        n_next_round += 1;
+        if (zm_round_spawning::function_40229072(n_next_round)) {
+            zm_round_spawning::function_43aed0ca(n_next_round, 1);
         }
-        while (var_d1ec2571 > zm_round_logic::get_round_number()) {
+        while (n_next_round > zm_round_logic::get_round_number()) {
             wait(1);
         }
     }
@@ -3897,13 +3897,13 @@ function mannequin_step() {
 // Checksum 0xa313164b, Offset: 0x12d10
 // Size: 0xb0
 function function_dd76c634() {
-    var_d1ec2571 = zm_round_logic::get_round_number();
+    n_next_round = zm_round_logic::get_round_number();
     while (!level flag::get(#"hash_3b808ddcae9fea60")) {
-        var_d1ec2571 += 1;
-        if (zm_round_spawning::function_40229072(var_d1ec2571)) {
-            zm_round_spawning::function_43aed0ca(var_d1ec2571, 1);
+        n_next_round += 1;
+        if (zm_round_spawning::function_40229072(n_next_round)) {
+            zm_round_spawning::function_43aed0ca(n_next_round, 1);
         }
-        while (var_d1ec2571 > zm_round_logic::get_round_number()) {
+        while (n_next_round > zm_round_logic::get_round_number()) {
             wait(1);
         }
     }

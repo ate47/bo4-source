@@ -167,7 +167,7 @@ function function_1bc491ab() {
     if (isdefined(ai)) {
         ai.health = int(ai.health * 2);
         level.zombie_total--;
-        n_delay = isdefined(zombie_utility::function_d2dfacfd(#"zombie_spawn_delay")) ? zombie_utility::function_d2dfacfd(#"zombie_spawn_delay") : zombie_utility::function_d2dfacfd(#"hash_7d5a25e2463f7fc5");
+        n_delay = isdefined(zombie_utility::get_zombie_var(#"zombie_spawn_delay")) ? zombie_utility::get_zombie_var(#"zombie_spawn_delay") : zombie_utility::get_zombie_var(#"hash_7d5a25e2463f7fc5");
         wait(n_delay);
         return true;
     }

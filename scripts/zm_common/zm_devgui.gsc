@@ -2949,7 +2949,7 @@
         }
         level.devcheater = 1;
         level.zombie_total = 0;
-        level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::function_d2dfacfd(#"zombie_health_start"), target_round);
+        level.zombie_health = zombie_utility::ai_calculate_health(zombie_utility::get_zombie_var(#"zombie_health_start"), target_round);
         zm_round_logic::set_round_number(target_round - 1);
         level notify(#"kill_round");
         wait(1);
@@ -3030,7 +3030,7 @@
         var_names = getarraykeys(level.zombie_vars);
         for (i = 0; i < level.zombie_vars.size; i++) {
             key = var_names[i];
-            println(key + "<unknown string>" + zombie_utility::function_d2dfacfd(key));
+            println(key + "<unknown string>" + zombie_utility::get_zombie_var(key));
         }
         println("<unknown string>");
     }

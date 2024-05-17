@@ -1545,8 +1545,8 @@ function function_4366bf50(params) {
     }
     level.var_82eb1dab[level.var_82eb1dab.size] = deathmodel;
     var_b65967e = randomintrange(-10, 10);
-    var_9a1e332d = randomintrange(15, 25);
-    deathmodel physicslaunch((0, var_b65967e, 0), (0, 0, var_9a1e332d));
+    up_force = randomintrange(15, 25);
+    deathmodel physicslaunch((0, var_b65967e, 0), (0, 0, up_force));
     deathmodel clientfield::set("tank_deathfx", 1);
 }
 
